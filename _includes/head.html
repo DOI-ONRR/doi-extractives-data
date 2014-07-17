@@ -1,0 +1,54 @@
+<!-- Basic  Page Needs
+================================================== -->
+<meta charset="utf-8">
+<title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.name }}</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+
+<!-- Mobile Specific Metas
+================================================== -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<!-- CSS
+================================================== -->
+<link href="{{ site.baseurl }}/static/css/normalize.css" rel="stylesheet">
+<link href="{{ site.baseurl }}/static/css/styles.css?c={{ site.cachebuster }}" rel="stylesheet">
+
+<!-- JS
+================================================== -->
+
+<!--[if lte IE 7]>
+  <style>body { display: none !important; }</style>
+  <script type="text/javascript">
+    window.location.href = '/static/oldie.html';
+  </script>
+<![endif]-->
+
+<!--[if lte IE 8]> ######CHECK ON IE8 STUFF, NOT UPDATED FROM NOTALONE#######
+<script type="text/javascript" src="{{ site.baseurl }}/static/bower_components/respond/respond.min.js"></script>
+  <link href="{{ site.baseurl }}/static/css/ie8.css" rel="stylesheet">
+<![endif]-->
+<!--[if IE]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- jQuery -->
+<script src="{{ site.baseurl }}/static/js/min/jquery.min.js"></script>
+
+<!-- ######CHECK ON IE9/jquery STUFF BELOW, NOT UPDATED FROM NOTALONE####### 
+<script src="{{ site.baseurl }}/static/js/min/iecors.min.js"></script> -->
+<!--[if lte IE 9]>
+<script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/jquery-ajaxtransport-xdomainrequest/1.0.0/jquery.xdomainrequest.min.js'></script>
+<![endif]-->
+
+<script src="{{ site.url }}static/js/where.js"></script>
+
+<!-- For Mapbox
+================================================== -->
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
+<script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.css' rel='stylesheet' />
+
+

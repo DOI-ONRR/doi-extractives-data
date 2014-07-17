@@ -1,0 +1,21 @@
+  <style>
+  .leaflet-popup-close-button {
+  display: none;
+  }
+  .leaflet-popup-content-wrapper {
+  pointer-events: none;
+  }
+  </style>
+  <script src='{{ site.url }}static/data/revenue2013.json'></script>
+  <script src='{{ site.url }}static/js/onrrmap.js'></script>
+
+  <!-- #### below here from NotAlone #### REVIEW -->
+  <script src="{{ site.baseurl }}/static/js/min/init.min.js?c={{ site.cachebuster }}"></script>
+  {% for include in site.data.js-includes %}
+  {% for node in include.pages %}
+  {% if node == page.title %}
+  <script src="{{ site.baseurl }}{{ include.src }}?c={{ site.cachebuster }}"></script>
+  {% endif %}
+  {% endfor %}
+  {% endfor %}
+  <script src="{{ site.baseurl }}/static/js/min/federated.analytics.min.js"></script>

@@ -1,0 +1,48 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    A project of 18F -- @18F
+    Michelle Hertzfeld -- Designer and Developer -- 18F
+    Nick Bristow -- Developer -- 18F
+    Chris Cairns -- Product Manager -- 18F
+    Jon Swedin -- Data wrangler -- Department of the Interior, Office of Natural Resources Revenue
+    Chris Mentasti -- Data wrangler -- Department of the Interior, Office of Natural Resources Revenue
+    Robert Kronebusch -- Data wrangler -- Department of the Interior, Office of Natural Resources Revenue
+
+# CREDITS - ICONS
+    
+    Oil by Edward Boatman from The Noun Project
+    Dog Tags by Simon Child from The Noun Project
+    Education by Thibault Geffroy from The Noun Project
+    City by Thibault Geffroy from The Noun Project
+    Oil Platform by Thibault Geffroy from The Noun Project
+    Rock by Anuar Zhumaev from The Noun Project
+    Share by Wayne Middleton from The Noun Project
+    Farm by Jane Pellicciotto from The Noun Project
+    Vertical Ellipsis by Stephan Langenegger from The Noun Project
+    Landscape by José Campos from The Noun Project
+    Playground by Yi Chen from The Noun Project
+    Baseball Field by Erik Wagner from The Noun Project
+    Schoolhouse by Paul Souders from The Noun Project
+    Video Camera by Roll Studio from The Noun Project
+
+    All other icons in the public domain
+
+# THANKS
+
+    Many helpful instructions and blog posts on teh interwebz!
+    Based on work done by the 18F NotAlone.gov team: https://github.com/18F/notalone
+
+# TECHNOLOGY COLOPHON
+
+    Standards: HTML5, CSS3
+    Components: 
+        Bourbon, a simple and lightwieght mixin library for Sass: bourbon.io
+        Neat, a lightweight semantic grid framework for Sass and Bourbon: neat.bourbon.io
+        Bitters, scaffold styles, variables and structure for Bourbon projects: bitters.bourbon.io
+            All developed and maintained by Thoughtbot: thoughtbot.com
+    Software: Sass, Jekyll
+    Typography: Lato and Raleway
+

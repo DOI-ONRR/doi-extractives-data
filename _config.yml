@@ -1,0 +1,12 @@
+name: Natural Resource Revenue from U.S. Federal Lands
+description: The U.S. earns revenue on natural resources extracted from its lands. This is a major source of revenue for the country and for local municipalities. Find information on this sector here.
+
+markdown: kramdown
+pygments: true
+
+baseurl: /campus
+
+kramdown:
+  parse_block_html: true
+
+cachebuster: '0426131729'

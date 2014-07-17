@@ -1,0 +1,190 @@
+---
+layout: default
+title: Home
+description: This is a sample beta site for Federal natural resource revenues.
+---
+
+<aside class="usa">
+  <div class="container">
+    <p>
+      An official website of the United States Government <img class="flag" src="{{ site.url }}static/img/us_flag_small.png">
+    </p>
+  </div>
+</aside>
+
+<section class="splash">
+  <div class="container">
+    <div class="title">
+      <h1>Natural Resource Revenue</h1>
+      <h1><span class="small">from</span> U.S. Federal Lands</h1>
+    </div>
+  </div>
+  <div class="container">
+    <div class="intro">
+      <p>The U.S. earns revenue on natural resources extracted from its lands. This is a major source of revenue for the country and for local municipalities. Find information on this sector here.</p>
+      <img src="{{ site.url }}static/img/scroll-down.png" alt="You should scroll down. There is more to learn!" class="moreDown">
+      <p>Learn more by scrolling down.</p>
+    </div>
+  </div>
+    {% include nav.html %}
+</section>
+
+<main role="main" itemscope itemprop="mainContentOfSite">
+
+<!-- START Section 'Sectors' -->
+<section class="section light-gray">
+  <div class="container">
+
+    <div class="sectors">
+      <h1>Revenue from the sale of natural resources on Federal lands averaged
+      <span class="sectors-big-text">$11.7</span> billion/year over the last 10 years.</h1>
+      <h2>Learn about U.S. natural resource sectors:</h2>
+      
+      <img src="{{ site.url }}static/img/icon_375.svg" alt="Barrel of oil" class="sectors-img">
+      <p>Oil. Some nice summary facts here about the oil sector with a link to more information.</p>
+      
+      <img src="{{ site.url }}static/img/icon_5846.svg" alt="Lump of coal" class="sectors-img">
+      <p>Coal. Some nice summary facts here about the coal sector with a link to more information.</p>
+
+      <img src="{{ site.url }}static/img/icon_2070.svg" alt="Geothermal plant" class="sectors-img">
+      <p>Geothermal. Some nice summary facts here about the geothermal sector with a link to more information.</p>
+
+      <img src="{{ site.url }}static/img/icon_12555.svg" alt="Flame" class="sectors-img">
+      <p>Natural gas. Some nice summary facts here about the gas sector with a link to more information.</p>
+
+      <img src="{{ site.url }}static/img/icon_29006.svg" alt="Vertical ellipses" class="sectors-img">
+      <p>Other revenues. Some nice summary facts here about other sectors with a link to more information.</p>
+
+    </div>
+    <div class="sectors-chart aboutText pad50right">
+      <a href="{{ site.url }}vizone.html" alt="Link to working prototype"><img src="{{ site.url }}static/img/viz_sample.png"></a>
+    </div>
+    <div class="sectors-social">
+      <img src="{{ site.url }}static/img/icon_4501.svg" alt="Download" class="share">
+      <img src="{{ site.url }}static/img/icon_7584.svg" alt="Share" class="share">
+    </div>
+
+  </div>
+</section>
+<!-- END Section 'Sectors' -->
+
+<section class="section break">
+<img class="down" src="{{ site.url }}static/img/scroll-down.png" alt="You should scroll down. There is more to learn!">
+</section>
+
+<!-- START Section 'Where Does the Money Go' -->
+<section class="section medium-gray where">
+  <div class="container">
+    <h1><span>So where do these revenues go?<br/>
+    The answer is</span>
+    <span>it depends.</span>
+    <span>Laws treat revenues from offshore natural resources and onshore natural resources differently. There are set percentages and amounts from each that go certain places every year.</span></h1>
+
+    <section class="offshore">
+      <h1>Where do <span>offshore</span> revenues go?</h1>
+      <div class="stats-offshore">
+        <div rel="0">
+          <h1>U.S. Treasury</h1>
+          <p>remainder</p>
+          <i>+</i>
+        </div>
+        <div rel="1">
+          <h1>States</h1>
+          <p>27%</p>
+          <i>+</i>
+        </div>
+        <div rel="2">
+          <h1>Historic Preservation Fund</h1>
+          <p>$150 mill.</p>
+          <i>+</i>
+        </div>
+        <div rel="3">
+          <h1>Land &amp; Water Conservation Fund</h1>
+          <p>up to <br/>$900 mill.</p>
+          <i>+</i>
+        </div>
+      </div>
+      <div id="offshore" class="where-info">
+        <h2>Offshore Revenues</h2>
+        <p>For natural resource revenues from offshore locations, 27% goes to the state that the revenues came from, $150 million goes to the Historic Preservation Fund, up to $900 million goes to the Land &amp; Water Conservation Fund, and the remainder goes to the U.S. Treasury. <span class="click-me">Click on a square to find out what those revenues are used for.</span>
+        </p>
+        <div id="payimgs-off" class="container where-info-examples">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container onshore">
+      <h1>Where do <span class="orange">onshore</span> revenues go?</h1>
+      <div class="stats-onshore">
+        <div rel="0">
+          <h1>States</h1>
+          <p>49%</p>
+          <i>+</i>
+        </div>
+        <div rel="1">
+          <h1>Reclamation Fund</h1>
+          <p>40%</p>
+          <i>+</i>
+        </div>
+        <div rel="2">
+          <h1>U.S. Treasury</h1>
+          <p>10%</p>
+          <i>+</i>
+        </div>
+      </div>
+      <!--<div class="row">
+        <div class="eight columns">
+          <p>Onshore revenue proportions change depending on where you are. Try choosing Alaksa to see the difference:</p>
+        </div>
+        <div class="four columns">
+          <img src="{{ site.url }}assets/img/tree-toggle-mock.png" alt="Mockup of toggle to switch data display.">
+        </div>
+      </div>-->
+      <div id="onshore" class="where-info">
+        <h2>Onshore Revenues</h2>
+        <p>For natural resource revenues from onshore locations, for most parts of the country 49% goes to the state that the revenues came from, 40% goes to the Reclamation Fund, and 10% goes to the U.S. Treasury. For revenues from Alaska, 90% goes to the state. <span class="click-me">Click on a square to find out what those revenues are used for.</span></p>
+        <div id="payimgs-on1" class="container">
+          <div class="where-info-examples-small"></div>
+          <div class="where-info-examples-large"></div>
+        </div>
+        <div id="payimgs-on2" class="container">
+          <div class="where-info-examples-large textRight"></div>
+          <div class="where-info-examples-small"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container dollars">
+      <h1>What does this mean in dollars?</h1>
+      <img src="{{ site.url }}static/img/dollars-mock.png" alt="Mockup of dollar slider">
+    </section>
+    <div class="sectors-social">
+      <img src="{{ site.url }}static/img/icon_4501.svg" alt="Download" class="share">
+      <img src="{{ site.url }}static/img/icon_7584.svg" alt="Share" class="share">
+    </div>
+  </div>
+</section>
+<!-- END Section 'Where Does the Money Go' -->
+
+<section class="section break">
+<img class="down" src="{{ site.url }}static/img/scroll-down.png" alt="You should scroll down. There is more to learn!">
+</section>
+
+<!-- START Map Section 'How do natural resources become Federal revenue?' -->
+<section class="section light-gray how">
+  <div class="container">
+    <h1>How do natural resources become<br/> Federal revenue?</h1>
+    <p>If there are natural resources under (or even suspected of being under) Federal lands, the U.S. Department of the Interior grants leases to companies to explore for and extract these products to be sold.</p>
+    <p>In return, part of the sales value is paid to the Federal government for the benefit of the American people. These are called “royalties.” There are other revenues involved, such as rents, fees, and penalties, but by far most of the money comes from these royalties.</p>
+    <h1 class="large">Explore natural resource leases</h1>
+    <div class="contain">
+      <div id='map'></div>
+    </div>
+  </div>
+</section>
+<!-- END Map Section 'How do natural resources become Federal revenue?' -->
+
+</main>

@@ -4,7 +4,7 @@ description: The U.S. earns revenue on natural resources extracted from its land
 markdown: kramdown
 pygments: true
 
-baseurl: /campus
+baseurl: /doi-extractives-data
 
 kramdown:
   parse_block_html: true

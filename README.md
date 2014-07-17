@@ -1,17 +1,17 @@
 U.S. Federal Extractive Industries Data and Information
 =======================================================
 
-++What
+##What
 
 A website to include both curated content and raw data that will inform the national and international conversation around extractive industries revenue. It will provide a valuable resource for data and information analysis and visualizations that can be readily understood and accessed by the public for re-use through other media and applications.
 
-++Why
+##Why
 
 This effort is part of the President’s [Open Government Partnership National Action Plan](http://www.whitehouse.gov/blog/2013/12/06/united-states-releases-its-second-open-government-national-action-plan), which commits the U.S. to ensuring that taxpayers are receiving every dollar due for extraction of the U.S.’s natural resources.
 
 The U.S. also recently became a part of an international standard called the [Extractive Industries Transparency Initiative (EITI)](http://www.eiti.org/). EITI is a global coalition of governments, companies and civil society working together to improve openness and accountable management of revenues from natural resources. For more information on the U.S. process of implementing the EITI standard, see the [USEITI homepage](http://www.doi.gov/eiti). The U.S. will be the first developed country to sign on to and follow the standard.
 
-++About this website
+##About this website
 
 doi-extractives-data is a static HTML/CSS/JS site built with a templating language called Jekyll. It also uses Sass as a preprocessor for its CSS.
 
@@ -21,7 +21,7 @@ GitHub is our CMS for this project. Content editors have GitHub accounts, edit t
 
 The site's interactive features are all JavaScript components, making Ajax (CORS) calls to external data sources. Search is powered by Beckley. The curated list of searchable resources is in /_data.-->
 
-++Compiling and publishing changes
+##Compiling and publishing changes
 
 We depend on a few Ruby gems:
 
@@ -42,11 +42,11 @@ To keep our code updating continuously as we edit, we use `jekyll serve --baseur
 
 <!-- Markdown and YAML editing happens in the `gh-pages` branch, so the [preview page](https://18f.github.io/doi-extractives-data) is automatically updated as we commit edits. The static compiled HTML is updated into the `master` branch. To generate the static files and push them to `master`, we run `rake publish`. (See the `Rakefile` in the root directory for details on how this works.) -->
 
-++Contributing
+##Contributing
 
 Content and feature suggestions are welcome via GitHub Issues. Code contributions are welcome via pull request, although of course we cannot guarantee your changes will be included in the site.
 
-++License
+##License
 <p xmlns:dct="http://purl.org/dc/terms/" xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#">
   <a rel="license"
      href="http://creativecommons.org/publicdomain/zero/1.0/">

@@ -61,7 +61,8 @@ d3.csv("data.csv",function(resource_data){
 		.width(500).height(200)
 		.group(totalByYear)
 		.dimension(yearDimension)
-		.colors(['red',"blue"])
+		.centerBar(false)		
+		//.colors(['red',"blue"])
 		/*.renderlet(function(chart){
 			var expenseColors = ["#fde0dd","#fa9fb5","#e7e1ef","#d4b9da","#c994c7","#fcc5c0","#df65b0","#e7298a","#ce1256", "#f768a1","#dd3497","#e78ac3","#f1b6da"];
 			var i=0;
@@ -76,26 +77,28 @@ d3.csv("data.csv",function(resource_data){
 		.xUnits(dc.units.ordinal)
         .x(d3.scale.ordinal().domain(["2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013"]))
 		.margins({top: 10, right: -2, bottom: 20, left:-2})
-		.centerBar(true)
+
+		
 		//.xUnits(function(){return 15;})
-		.yAxis().tickFormat(function(v){return "";})
+		.yAxis().tickFormat(function(v){return "";});
 
 	
-	barChart.xAxis();
+	//barChart.xAxis();
 
 	pieChart.width(300)
+		.colors(d3.scale.ordinal().range(["#815678","#70D4C4","#F96161","#ADAA97","#6D9DC8"]))
 		.height(300)
 		.transitionDuration(750)
 		.radius(105)
 		//.innerRadius(60)
 		.dimension(typeDimension)
 		.group(totalByType)
-		.renderLabel(true)
-		.minAngleForLabel(0)
-		.label(function(d) { return d.data.key + "(" + Math.floor(d.data.value / all.value() * 100) + "%)"; })
+		.legend(dc.legend().x(280).y(70).itemHeight(13).gap(5))
+		.renderLabel(false)
+		//.minAngleForLabel(0)
+		//.label(function(d) { return d.data.key + "(" + Math.floor(d.data.value / all.value() * 100) + "%)"; })
 		.renderlet(function(d){
 			d3.select("#pie-chart-center-text h4").html('Total:<br /> $' +text_money(all.value()));
-			d3.select()
 		});
 
 	

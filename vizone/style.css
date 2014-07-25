@@ -8,8 +8,10 @@
     margin-top:25%;
     position: absolute;
     opacity: 0.8;
-    top:0;
-    left:0;
+    top:-25;
+    left:-23;
+    -moz-box-shadow: 0 0 5px 2px #999;
+    -webkit-box-shadow: 0 0 5px 2px #999;
 }   
 
 #pie-chart-center-text{
@@ -24,4 +26,8 @@
 
 #revenue_types {
 	position: relative;
+}
+
+#revenue_types svg {
+    width:400px;
 }

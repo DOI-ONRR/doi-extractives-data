@@ -1,10 +1,10 @@
 
 
-var barChart = dc.barChart("#revenue_totals");
-var pieChart = dc.pieChart("#revenue_types");
+var barChart = dc.barChart("#sector-revenue-bar-chart");
+var pieChart = dc.pieChart("#sector-revenue-pie-chart");
 
 //d3.csv("https://docs.google.com/spreadsheet/pub?key=0AjPWVMj9wWa6dGw3b1c3ZHRSMW92UTJlNXRLTXZ0RUE&single=true&gid=0&output=csv",function(resource_data){
-d3.csv("data.csv",function(resource_data){
+d3.csv("static/data/data-sectors-revenue.csv",function(resource_data){
 	
 
 	var ndx = crossfilter(resource_data);

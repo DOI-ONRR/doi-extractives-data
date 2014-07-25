@@ -1,0 +1,25 @@
+/*
+Errno::ENOENT: No such file or directory @ rb_sysopen - sass/styles.scss
+
+Backtrace:
+/Users/richardbristow/.rvm/gems/ruby-2.1.2/gems/sass-3.3.10/lib/sass/plugin/compiler.rb:369:in `read'
+/Users/richardbristow/.rvm/gems/ruby-2.1.2/gems/sass-3.3.10/lib/sass/plugin/compiler.rb:369:in `update_stylesheet'
+/Users/richardbristow/.rvm/gems/ruby-2.1.2/gems/sass-3.3.10/lib/sass/plugin/compiler.rb:189:in `block in update_stylesheets'
+/Users/richardbristow/.rvm/gems/ruby-2.1.2/gems/sass-3.3.10/lib/sass/plugin/compiler.rb:186:in `each'
+/Users/richardbristow/.rvm/gems/ruby-2.1.2/gems/sass-3.3.10/lib/sass/plugin/compiler.rb:186:in `update_stylesheets'
+/Users/richardbristow/.rvm/gems/ruby-2.1.2/gems/sass-3.3.10/lib/sass/plugin/compiler.rb:221:in `watch'
+/Users/richardbristow/.rvm/gems/ruby-2.1.2/gems/sass-3.3.10/lib/sass/plugin.rb:108:in `method_missing'
+/Users/richardbristow/.rvm/gems/ruby-2.1.2/gems/sass-3.3.10/lib/sass/exec.rb:509:in `watch_or_update'
+/Users/richardbristow/.rvm/gems/ruby-2.1.2/gems/sass-3.3.10/lib/sass/exec.rb:346:in `process_result'
+/Users/richardbristow/.rvm/gems/ruby-2.1.2/gems/sass-3.3.10/lib/sass/exec.rb:43:in `parse'
+/Users/richardbristow/.rvm/gems/ruby-2.1.2/gems/sass-3.3.10/lib/sass/exec.rb:22:in `parse!'
+/Users/richardbristow/.rvm/gems/ruby-2.1.2/gems/sass-3.3.10/bin/sass:13:in `<top (required)>'
+/Users/richardbristow/.rvm/gems/ruby-2.1.2/bin/sass:23:in `load'
+/Users/richardbristow/.rvm/gems/ruby-2.1.2/bin/sass:23:in `<main>'
+/Users/richardbristow/.rvm/gems/ruby-2.1.2/bin/ruby_executable_hooks:15:in `eval'
+/Users/richardbristow/.rvm/gems/ruby-2.1.2/bin/ruby_executable_hooks:15:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Errno::ENOENT: No such file or directory @ rb_sysopen - sass/styles.scss"; }

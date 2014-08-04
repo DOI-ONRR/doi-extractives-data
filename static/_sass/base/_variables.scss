@@ -1,0 +1,75 @@
+// Fonts
+@include font-face(Lato, '../fonts/Lato/lato-reg-webfont', normal);
+@include font-face(Lato, '../fonts/Lato/lato-bol-webfont', 500);
+@include font-face(Lato, '../fonts/Lato/lato-bla-webfont', 700);
+@include font-face(Raleway, '../fonts/Raleway/raleway-regular-webfont', normal);
+@include font-face(Raleway, '../fonts/Raleway/raleway-bold-webfont', 500);
+@include font-face(Raleway, '../fonts/Raleway/raleway-heavy-webfont', 800);
+//###remove extra font weights once you decide which ones you need for Raleway
+
+// Typography
+$sans-serif: Lato;
+$serif: $georgia;
+$base-font-family: $sans-serif;
+$header-font-family: $base-font-family;
+$secondary-font-family: Raleway;
+
+// Sizes
+$base-font-size: 1em;
+$base-line-height: $base-font-size * 1.5;
+$unitless-line-height: $base-line-height / ($base-line-height * 0 + 1); // Strip units from line-height: https://developer.mozilla.org/en-US/docs/Web/CSS/line-height#Prefer_unitless_numbers_for_line-height_values
+$header-line-height: $base-font-size * 1.25;
+$base-border-radius: em(3);
+
+// Colors
+$blue: #7EA0B7;
+$red: #d54740;
+$dark-gray: #4d4b4b;
+$medium-gray: #bcbfc4;
+$light-gray: #eaedf1;
+$light-red: #FBE3E4;
+$light-yellow: #FFF6BF;
+$light-green: #E6EFC2;
+
+$purple1: #7f5078;
+$purple2: #9b6a94;
+$purple3: #b282ab;
+$purple4: #b694b1;
+$deep-purple: #452941;
+
+$orange1: #CA4F4A;
+$orange2: #E16762;
+$orange3: #E68F8B;
+$deep-orange: #7E3533;
+
+// Background Color
+$base-background-color: white;
+
+// Font Colors
+$base-font-color: black;
+$base-accent-color: $blue;
+
+// Link Colors
+$base-link-color: $base-accent-color;
+$hover-link-color: darken($base-accent-color, 15);
+$base-button-color: $base-link-color;
+$hover-button-color: $hover-link-color;
+
+// Border color
+$base-border-color: $light-gray;
+
+// Flash Colors
+$alert-color: $light-yellow;
+$error-color: $light-red;
+$notice-color: $light-yellow;
+$success-color: $light-green;
+
+// Forms
+$form-border-color: $base-border-color;
+$form-border-color-hover: darken($base-border-color, 10);
+$form-border-color-focus: $base-accent-color;
+$form-border-radius: $base-border-radius;
+$form-box-shadow: inset 0 1px 3px rgba(0,0,0,0.06);
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px rgba(darken($form-border-color-focus, 5), 0.7);
+$form-font-size: $base-font-size;
+$form-font-family: $base-font-family;

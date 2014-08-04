@@ -47,3 +47,28 @@ function text_money(f){
 	s=s.replace(",",".");
 	return s+=" "+t;
 }
+
+function sort_dataTable(dataTable, dataField, that)
+{
+	dataTable.sortBy(function(d){return d[dataField]});
+	if (dataTable.order() == d3.ascending)
+		dataTable.order(d3.descending);
+	else
+		dataTable.order(d3.ascending);
+	dc.renderAll();
+	graphCustomizations();
+}
+
+function text_filter(dim,q){
+	dashTable.filterAll();
+	var re = new RegExp(q,"i")
+	if (q!='')
+	{
+		dim.filter(function(d){
+			if (d.search(re)==0)
+				return d;
+		});
+	}
+	dc.redrawAll();
+	graphCustomizations();
+}

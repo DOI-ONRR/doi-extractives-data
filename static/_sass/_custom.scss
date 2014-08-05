@@ -184,6 +184,17 @@ Homepage Infographic Sections
 }
 .sectors-chart {
 	@include span-columns(7);
+    background-color: #F8F8F8;
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 15px;
+    h1 {
+        color: $dark-gray;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-size: rem(18);
+        border-bottom: 2px solid $dark-gray;
+    }
 }
 .sectors-social {
 	@include span-columns(11);
@@ -200,30 +211,34 @@ Homepage Infographic Sections
 	font-weight: 800;
 }
 
-//revenue by sector
-
 #pie-chart-center {
-    height: 150px;
-    width: 150px;
+    height: 160px;
+    width: 160px;
     background: white;
+    border: 5px solid $medium-gray;
     border-radius: 100px;
-    margin-left: 25%;
-    margin-top: 25%;
+    margin-left: 24%;
+    margin-top: 24%;
     position: absolute;
     opacity: 0.8;
     top: -25px;
     left: -23px;
-    box-shadow: 0 0 5px 2px $medium-gray;
 }   
 
 #pie-chart-center-text {
     opacity: 1;
     color: $dark-gray;
     position: absolute;
-    top: 105px;
+    top: 117px;
     left: 77px;
     width: 150px;
     text-align: center;
+    h4 {
+        font-size: 22px;
+        font-size: rem(22);
+        font-family: $secondary-font-family;
+        font-weight: 800;
+    }
 }
 
 #sector-revenue-pie-chart {

@@ -202,28 +202,27 @@ Homepage Infographic Sections
 
 //revenue by sector
 
-#pie-chart-center{
-  height:150px;
-    width:150px;
-    background:white;
-    -moz-border-radius: 100px;
-    -webkit-border-radius: 100px;
-    margin-left:25%;
-    margin-top:25%;
+#pie-chart-center {
+    height: 150px;
+    width: 150px;
+    background: white;
+    border-radius: 100px;
+    margin-left: 25%;
+    margin-top: 25%;
     position: absolute;
     opacity: 0.8;
-    top:-25px;
-    left:-23px;
-    -moz-box-shadow: 0 0 5px 2px #999;
-    -webkit-box-shadow: 0 0 5px 2px #999;
+    top: -25px;
+    left: -23px;
+    box-shadow: 0 0 5px 2px $medium-gray;
 }   
 
-#pie-chart-center-text{
+#pie-chart-center-text {
     opacity: 1;
-    color:#615F5F;
-    position:absolute;top:105px;
-    left:77px;
-    width:150;
+    color: $dark-gray;
+    position: absolute;
+    top: 105px;
+    left: 77px;
+    width: 150px;
     text-align: center;
 }
 
@@ -232,14 +231,13 @@ Homepage Infographic Sections
     margin: 0px auto;
     width: 400px;
     float: center;
-}
-
-#sector-revenue-pie-chart svg {
-    width:400px;
+    svg {
+        width: 400px;
+    }
 }
 
 #sector-revenue-bar-chart{
-    float:center;
+    float: center;
 }
 
 //where does the money go?

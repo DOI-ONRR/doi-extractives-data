@@ -219,20 +219,19 @@ Homepage Infographic Sections
 }   
 
 #pie-chart-center-text{
-  opacity: 1;
-  color:#615F5F;
-  position:absolute;
-  top:105px;
-  left:77px;
-  width:150;
-  text-align: center;
+    opacity: 1;
+    color:#615F5F;
+    position:absolute;top:105px;
+    left:77px;
+    width:150;
+    text-align: center;
 }
 
 #sector-revenue-pie-chart {
-  position: relative;
-  margin:0px auto;
-  width:400px;
-  float:center;
+    position: relative;
+    margin: 0px auto;
+    width: 400px;
+    float: center;
 }
 
 #sector-revenue-pie-chart svg {
@@ -240,7 +239,7 @@ Homepage Infographic Sections
 }
 
 #sector-revenue-bar-chart{
-  float:center;
+    float:center;
 }
 
 //where does the money go?

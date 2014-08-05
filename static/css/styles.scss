@@ -19,6 +19,16 @@ neat.bourbon.io
 */
 @import "neat/neat"; 
 
+/*
+dc-js.github.io/dc.js/
+*/
+@import "dc";
+
+/*
+d3 tooltips
+*/
+@import "d3-tip"; 
+
 // Custom styles for this site 
 // NB: not sure if all the custom will be here, or some in 
 // our version of bitters (ie, base/base). May leave most there. 

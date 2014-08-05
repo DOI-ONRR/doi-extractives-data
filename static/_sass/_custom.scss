@@ -1,8 +1,4 @@
 /*============================================
-CUSTOM STYLES
-============================================*/
-
-/*============================================
 Mixins
 ============================================*/
 
@@ -202,6 +198,49 @@ Homepage Infographic Sections
 	@include large-type(1.625rem);
 	font-family: Raleway, sans-serif;
 	font-weight: 800;
+}
+
+//revenue by sector
+
+#pie-chart-center{
+  height:150px;
+    width:150px;
+    background:white;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    margin-left:25%;
+    margin-top:25%;
+    position: absolute;
+    opacity: 0.8;
+    top:-25px;
+    left:-23px;
+    -moz-box-shadow: 0 0 5px 2px #999;
+    -webkit-box-shadow: 0 0 5px 2px #999;
+}   
+
+#pie-chart-center-text{
+  opacity: 1;
+  color:#615F5F;
+  position:absolute;
+  top:105px;
+  left:77px;
+  width:150;
+  text-align: center;
+}
+
+#sector-revenue-pie-chart {
+  position: relative;
+  margin:0px auto;
+  width:400px;
+  float:center;
+}
+
+#sector-revenue-pie-chart svg {
+    width:400px;
+}
+
+#sector-revenue-bar-chart{
+  float:center;
 }
 
 //where does the money go?

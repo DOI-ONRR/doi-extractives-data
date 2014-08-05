@@ -60,15 +60,17 @@ function sort_dataTable(dataTable, dataField, that)
 }
 
 function text_filter(dim,q){
-	dashTable.filterAll();
 	var re = new RegExp(q,"i")
-	if (q!='')
-	{
-		dim.filter(function(d){
-			if (d.search(re)==0)
-				return d;
-		});
+	if (q != '') {
+    dim.filter(function(d) {
+        return 0 == d.search(re);
+    });
+	} else {
+	    dim.filterAll();
 	}
+
+
+
 	dc.redrawAll();
 	graphCustomizations();
 }

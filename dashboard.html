@@ -34,12 +34,60 @@ description: Description text
 <!-- START Section 'Dashboard' -->
 <section class="section light-gray">
   <div class="container">
-    <h1 class="large">Dashboard y'all</h1>
+    <h1 class="large">Dashboard</h1>
     <div class="container">
-      
-      <div id='dashboard-bar-rev-by-energy'><h4>Total Revenue<br>by Energy</h4></div>
-      
-      <div id='dashboard-bar-rev-by-other' style="background:white;"><h4>Total Revenue<br>by Other</h4></div>
+      <div style="float:left" id="OptionsList"> 
+        <input type="checkbox" name="commodity" value="Coal" id="chk-coal" checked>
+          <label for="chk-coal">Coal</label>
+        </input>
+        <input type="checkbox" name="commodity" value="Gas" id="chk-gas" checked>
+          <label for="chk-gas">Gas</label>
+        </input>
+        <input type="checkbox" name="commodity" value="Oil & Gas" id="chk-oilgas" checked>
+          <label for="chk-oilgas">Oil & Gas</label>
+        </input>
+        <input type="checkbox" name="commodity" value="Oil" id="chk-oil" checked>
+          <label for="chk-oil">Oil</label>
+        </input>
+        <input type="checkbox" name="commodity" value="Other Commodities" id="chk-other" checked>
+          <label for="chk-other">Other Commodities</label>
+        </input>
+        <input type="checkbox" name="commodity" value="Clay" id="chk-clay" checked>
+          <label for="chk-clay">Clay</label>
+        </input>
+         <input type="checkbox" name="commodity" value="Geothermal" id="chk-Geothermal" checked>
+          <label for="chk-Geothermal">Geothermal</label>
+        </input>
+        <input type="checkbox" name="commodity" value="Copper" id="chk-Copper" checked>
+          <label for="chk-Copper">Copper</label>
+        </input>
+        <input type="checkbox" name="commodity" value="Gilsonite" id="chk-Gilsonite" checked>
+          <label for="chk-Gilsonite">Gilsonite</label>
+        </input>
+        <input type="checkbox" name="commodity" value="Hardrock" id="chk-Hardrock" checked>
+          <label for="chk-Hardrock">Hardrock</label>
+        </input>
+        <input type="checkbox" name="commodity" value="Oil Shale" id="chk-OilShale" checked>
+          <label for="chk-OilShale">Oil Shale</label>
+        </input>
+        <input type="checkbox" name="commodity" value="Phosphate" id="chk-Phosphate" checked>
+          <label for="chk-Phosphate">Phosphate</label>
+        </input>
+        <input type="checkbox" name="commodity" value="Sodium" id="chk-Sodium" checked>
+          <label for="chk-Sodium">Sodium</label>
+        </input>
+        <input type="checkbox" name="commodity" value="Potassium" id="chk-Potassium" checked>
+          <label for="chk-Potassium">Potassium</label>
+        </input>
+        <input type="checkbox" name="commodity" value="Wind" id="chk-Wind" checked>
+          <label for="chk-Wind">Wind</label>
+        </input>
+        <input type="checkbox" name="commodity" value="n/a" id="chk-na" checked>
+          <label for="chk-na">n/a</label>
+        </input>
+
+      </div>
+      <div id='dashboard-bar-rev-by-commodity'><h4>Total Revenue<br>by Commodity</h4> </div>
       
       <div id="dashboard-bar-rev-source"><h4>Total Revenue<br>by Revenue Source</h4></div>
       
@@ -90,6 +138,9 @@ description: Description text
 <script type="text/javascript">
  $("#table-search").on('input',function(){
    text_filter(companyDimension,this.value);
+ });
+ $("#OptionsList input").change(function(){
+    update_graph_options($("#OptionsList input"), dash_bar_rev_by_commodity,"Commodity","Revenue");
  });
 
 </script>

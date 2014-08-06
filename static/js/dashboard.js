@@ -1,13 +1,14 @@
 
 
-var dash_bar_rev_by_energy = dc.barChart("#dashboard-bar-rev-by-energy");
-var dash_bar_rev_by_other = dc.barChart("#dashboard-bar-rev-by-other");
+var dash_bar_rev_by_commodity = dc.barChart("#dashboard-bar-rev-by-commodity");
+//var dash_bar_rev_by_other = dc.barChart("#dashboard-bar-rev-by-other");
 var dash_bar_by_rev_source = dc.barChart("#dashboard-bar-rev-source")
 var dash_bar_avg_by_rev_source = dc.barChart('#dashboard-bar-avg-by-rev-source');
 var dash_bar_avg_by_commodity = dc.barChart('#dashboard-bar-avg-by-commodity');
 //var barChartTwo = dc.pieChart("#dashboard-bar-chart-two");
 var dashTable   = dc.dataTable("#dashboard-table");
 var companyDimension;
+var typeDimension;
 //var typeDimension;
 //d3.csv("https://docs.google.com/spreadsheet/pub?key=0AjPWVMj9wWa6dGw3b1c3ZHRSMW92UTJlNXRLTXZ0RUE&single=true&gid=0&output=csv",function(resource_data){
 d3.csv("static/data/uni_dummySet_apr17.csv",function(resource_data){
@@ -23,7 +24,7 @@ d3.csv("static/data/uni_dummySet_apr17.csv",function(resource_data){
     companyDimension = ndx.dimension(function(d){
         return d["Company Name"];
     });
-    var typeDimension = ndx.dimension(function(d){
+    typeDimension = ndx.dimension(function(d){
         return d["Commodity"];
     });
     var otherTypeDimension = ndx.dimension(function(d){
@@ -35,15 +36,15 @@ d3.csv("static/data/uni_dummySet_apr17.csv",function(resource_data){
 
     //Groups
     var typeDimensionEnergyGroup = typeDimension.group().reduceSum(function(d){
-        var c = d["Commodity"];
-        if (c=="Oil" || c=="Oil & Gas" || c=="Coal" || c=="Gas" || c=="Other Commodities")
+        //var c = d["Commodity"];
+       // if (c=="Oil" || c=="Oil & Gas" || c=="Coal" || c=="Gas" || c=="Other Commodities")
             return d["Revenue"];
     });
-    var typeDimensionOtherGroup = otherTypeDimension.group().reduceSum(function(d){
-        var c = d["Commodity"];
-        if (c!="Oil" & c!="Oil & Gas" & c!="Coal" & c!="Gas" & c!="Other Commodities" & c!="n/a" & c!="Geothermal"  & c!="Wind")
-            return d["Revenue"];
-    });
+    // var typeDimensionOtherGroup = otherTypeDimension.group().reduceSum(function(d){
+    //     var c = d["Commodity"];
+    //     if (c!="Oil" & c!="Oil & Gas" & c!="Coal" & c!="Gas" & c!="Other Commodities" & c!="n/a" & c!="Geothermal"  & c!="Wind")
+    //         return d["Revenue"];
+    // });
 
     var revDimensionGroup = revDimension.group().reduceSum(function(d){
         return d["Revenue"]
@@ -110,8 +111,8 @@ d3.csv("static/data/uni_dummySet_apr17.csv",function(resource_data){
         );
 
     //Graphs
-    dash_bar_rev_by_energy
-        .width(300).height(400)
+    dash_bar_rev_by_commodity
+        .width(600).height(400)
         .group(typeDimensionEnergyGroup)
         .dimension(typeDimension)
         .centerBar(false)       
@@ -120,29 +121,29 @@ d3.csv("static/data/uni_dummySet_apr17.csv",function(resource_data){
         .turnOnControls(true)
         //.x(d3.time.scale().domain([minDate,maxDate]))
         .xUnits(dc.units.ordinal)
-        .x(d3.scale.ordinal().domain(["Coal","Gas","Oil & Gas","Oil","Other Commodities"]))
+        .x(d3.scale.ordinal().domain(["Coal", "Gas", "Oil & Gas", "Oil", "Other Commodities", "Clay", "Geothermal", "Copper", "Gilsonite", "Hardrock", "Oil Shale", "Phosphate", "Sodium", "Potassium", "Wind", "n/a"]))
         .margins({top: 10, right: 10, bottom: 75, left:100})
         .yAxis().tickFormat(function(v){return "$"+ v;});
-    dash_bar_rev_by_energy.on("filtered", function (chart) {
+    dash_bar_rev_by_commodity.on("filtered", function (chart) {
                 dc.events.trigger(function () {
                 });});
 
-    dash_bar_rev_by_other
-        .width(600).height(400)
-        .group(typeDimensionOtherGroup)
-        .dimension(otherTypeDimension)
-        .centerBar(false)       
-        .elasticY(true)
-        .brushOn(false)
-        .renderHorizontalGridLines(true)
-        //.x(d3.time.scale().domain([minDate,maxDate]))
-        .xUnits(dc.units.ordinal)
-        .x(d3.scale.ordinal().domain(["Clay","Copper","Gilsonite","Hardrock","Oil Shale","Phosphate","Sodium",'Potassium']))//.domain(["Coal","Gas","Oil & Gas","Oil"]))
-        .margins({top: 10, right: 10, bottom: 75, left:100})
-        .yAxis().tickFormat(function(v){return "$"+ v;});
-    dash_bar_rev_by_other.on("filtered", function (chart) {
-                dc.events.trigger(function () {
-                });});
+    // dash_bar_rev_by_other
+    //     .width(600).height(400)
+    //     .group(typeDimensionOtherGroup)
+    //     .dimension(otherTypeDimension)
+    //     .centerBar(false)       
+    //     .elasticY(true)
+    //     .brushOn(false)
+    //     .renderHorizontalGridLines(true)
+    //     //.x(d3.time.scale().domain([minDate,maxDate]))
+    //     .xUnits(dc.units.ordinal)
+    //     .x(d3.scale.ordinal().domain(["Clay","Copper","Gilsonite","Hardrock","Oil Shale","Phosphate","Sodium",'Potassium']))//.domain(["Coal","Gas","Oil & Gas","Oil"]))
+    //     .margins({top: 10, right: 10, bottom: 75, left:100})
+    //     .yAxis().tickFormat(function(v){return "$"+ v;});
+    // dash_bar_rev_by_other.on("filtered", function (chart) {
+    //             dc.events.trigger(function () {
+    //             });});
 
     dash_bar_by_rev_source
         .width(300).height(400)

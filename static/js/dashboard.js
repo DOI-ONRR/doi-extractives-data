@@ -11,7 +11,7 @@ var companyDimension;
 var typeDimension;
 //var typeDimension;
 //d3.csv("https://docs.google.com/spreadsheet/pub?key=0AjPWVMj9wWa6dGw3b1c3ZHRSMW92UTJlNXRLTXZ0RUE&single=true&gid=0&output=csv",function(resource_data){
-d3.csv("static/data/uni_dummySet_apr17.csv",function(resource_data){
+d3.csv("../static/data/uni_dummySet_apr17.csv",function(resource_data){
     
     resource_data.forEach(function(d){
         d["Revenue"] = clean_monetary_float(d["Revenue"]);

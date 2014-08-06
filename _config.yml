@@ -18,6 +18,8 @@ markdown: kramdown
 highlighter: pygments
 
 baseurl: /doi-extractives-data
+url:http://18f.github.io/doi-extractives-data/
+
 # uncomment when working locally
 #url:  http://localhost:4000/
 

@@ -31,57 +31,116 @@ description: This is a sample beta site for Federal natural resource revenues.
 
 <main role="main" itemscope itemprop="mainContentOfSite">
 
-<!-- START Section 'Sectors' -->
+<!-- START Section 'Dashboard' -->
 <section class="section light-gray">
   <div class="container">
+    <h1 class="large">Dashboard</h1>
+    <div class="container">
+      <div style="float:left" id="OptionsList"> 
+        <input type="checkbox" name="commodity" value="Coal" id="chk-coal" checked>
+          <label for="chk-coal">Coal</label>
+        </input>
+        <input type="checkbox" name="commodity" value="Gas" id="chk-gas" checked>
+          <label for="chk-gas">Gas</label>
+        </input>
+        <input type="checkbox" name="commodity" value="Oil & Gas" id="chk-oilgas" checked>
+          <label for="chk-oilgas">Oil & Gas</label>
+        </input>
+        <input type="checkbox" name="commodity" value="Oil" id="chk-oil" checked>
+          <label for="chk-oil">Oil</label>
+        </input>
+        <input type="checkbox" name="commodity" value="Other Commodities" id="chk-other" checked>
+          <label for="chk-other">Other Commodities</label>
+        </input>
+        <input type="checkbox" name="commodity" value="Clay" id="chk-clay" checked>
+          <label for="chk-clay">Clay</label>
+        </input>
+         <input type="checkbox" name="commodity" value="Geothermal" id="chk-Geothermal" checked>
+          <label for="chk-Geothermal">Geothermal</label>
+        </input>
+        <input type="checkbox" name="commodity" value="Copper" id="chk-Copper" checked>
+          <label for="chk-Copper">Copper</label>
+        </input>
+        <input type="checkbox" name="commodity" value="Gilsonite" id="chk-Gilsonite" checked>
+          <label for="chk-Gilsonite">Gilsonite</label>
+        </input>
+        <input type="checkbox" name="commodity" value="Hardrock" id="chk-Hardrock" checked>
+          <label for="chk-Hardrock">Hardrock</label>
+        </input>
+        <input type="checkbox" name="commodity" value="Oil Shale" id="chk-OilShale" checked>
+          <label for="chk-OilShale">Oil Shale</label>
+        </input>
+        <input type="checkbox" name="commodity" value="Phosphate" id="chk-Phosphate" checked>
+          <label for="chk-Phosphate">Phosphate</label>
+        </input>
+        <input type="checkbox" name="commodity" value="Sodium" id="chk-Sodium" checked>
+          <label for="chk-Sodium">Sodium</label>
+        </input>
+        <input type="checkbox" name="commodity" value="Potassium" id="chk-Potassium" checked>
+          <label for="chk-Potassium">Potassium</label>
+        </input>
+        <input type="checkbox" name="commodity" value="Wind" id="chk-Wind" checked>
+          <label for="chk-Wind">Wind</label>
+        </input>
+        <input type="checkbox" name="commodity" value="n/a" id="chk-na" checked>
+          <label for="chk-na">n/a</label>
+        </input>
 
-    <div class="sectors">
-      <h1>Revenue from the sale of natural resources on Federal lands averaged
-      <span class="sectors-big-text">$11.7</span> billion/year over the last 10 years.</h1>
-      <h2>Learn about U.S. natural resource sectors:</h2>
-      
-      <img src="{{ site.url }}static/img/icon_375.svg" alt="Barrel of oil" class="sectors-img">
-      <p>Oil. Some nice summary facts here about the oil sector with a link to more information.</p>
-      
-      <img src="{{ site.url }}static/img/icon_5846.svg" alt="Lump of coal" class="sectors-img">
-      <p>Coal. Some nice summary facts here about the coal sector with a link to more information.</p>
-
-      <img src="{{ site.url }}static/img/icon_2070.svg" alt="Geothermal plant" class="sectors-img">
-      <p>Geothermal. Some nice summary facts here about the geothermal sector with a link to more information.</p>
-
-      <img src="{{ site.url }}static/img/icon_12555.svg" alt="Flame" class="sectors-img">
-      <p>Natural gas. Some nice summary facts here about the gas sector with a link to more information.</p>
-
-      <img src="{{ site.url }}static/img/icon_29006.svg" alt="Vertical ellipses" class="sectors-img">
-      <p>Other revenues. Some nice summary facts here about other sectors with a link to more information.</p>
-
-    </div>
-    <div class="sectors-chart aboutText pad50right">
-      <h1>Natural Resource Revenues by Sector</h1>
-      <div id="sector-revenue-pie-chart">
-        <div id="pie-chart-center"></div>
-        <div id="pie-chart-center-text">
-          <h4></h4>
-        </div>
       </div>
-      <div id="sector-revenue-bar-chart"></div>
+      <div id='dashboard-bar-rev-by-commodity'><h4>Total Revenue<br>by Commodity</h4> </div>
       
-      <a href="javascript:javascript:barChart.filterAll();pieChart.filterAll();dc.redrawAll();">reset</a>
+      <div id="dashboard-bar-rev-source"><h4>Total Revenue<br>by Revenue Source</h4></div>
+      
+      <div id="dashboard-bar-avg-by-rev-source"><h4>Average Revenue<br>by Revenue Source</h4></div>
+      
+      <div id="dashboard-bar-avg-by-commodity"><h4>Average Revenue<br>by Commodity<h4></div>
+      <div class="clearfix"></div>
+      <div id="totals">Total Revenue: <span></span></div>
+      <div class="clearfix"></div>
+      <input type="text" id="table-search"></input>
+      <table class='table table-hover dc-data-table' id='dashboard-table'>
+        
+        <thead>
+          <tr class="header">
+            <th>
+              <a href="javascript:sort_dataTable(dashTable,'Company Name');">
+                Company name
+              </a>
+            </th>
+            <th>
+              <a href="javascript:sort_dataTable(dashTable,'Revenue Source');">
+                Revenue Source
+              </a>
+            </th>
+            <th>
+              <a href="javascript:sort_dataTable(dashTable,'Commodity');">
+                Commodity
+              </a>
+            </th>
+            <th>
+              <a href="javascript:sort_dataTable(dashTable,'Revenue');">
+                Revenue
+              </a>
+            </th>
+          </tr>
+        </thead>
+      </table>
 
-
-    </div>
-    <div class="sectors-social">
-      <img src="{{ site.url }}static/img/icon_4501.svg" alt="Download" class="share">
-      <img src="{{ site.url }}static/img/icon_7584.svg" alt="Share" class="share">
     </div>
 
   </div>
 </section>
-<!-- END Section 'Sectors' -->
-
-<section class="section break">
-<img class="down" src="{{ site.url }}static/img/scroll-down.png" alt="You should scroll down. There is more to learn!">
-</section>
+<!-- END Section 'Dashboard' -->
 
 
 </main>
+<script src='{{ site.url }}static/js/dashboard.js'></script>
+<script type="text/javascript">
+ $("#table-search").on('input',function(){
+   text_filter(companyDimension,this.value);
+ });
+ $("#OptionsList input").change(function(){
+    update_graph_options($("#OptionsList input"), dash_bar_rev_by_commodity,"Commodity","Revenue");
+ });
+
+</script>

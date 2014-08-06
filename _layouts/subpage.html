@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en" class="no-js" itemscope itemtype="http://schema.org/Product">
+  <head>
+    {% include head.html %}
+  </head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+
+ 	<aside class="usa">
+	  <div class="container">
+	    <p>
+	      An official website of the United States Government <img class="flag" src="{{ site.url }}static/img/us_flag_small.png">
+	    </p>
+	  </div>
+	</aside>
+
+	<section class="splash splash-short">
+	  <div class="container">
+	    <div class="title subpage">
+	      <h1>Natural Resource Revenue</h1>
+	      <h1><span class="small">from</span> U.S. Federal Lands</h1>
+	    </div>
+	  </div>
+	    {% include nav.html %}
+	</section>
+
+    {{ content }}
+
+    {% include footer.html %}
+
+    {% include scripts.html %}
+
+  </body>
+</html>

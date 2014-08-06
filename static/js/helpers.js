@@ -47,3 +47,60 @@ function text_money(f){
 	s=s.replace(",",".");
 	return s+=" "+t;
 }
+
+function sort_dataTable(dataTable, dataField, that)
+{
+	dataTable.sortBy(function(d){return d[dataField]});
+	if (dataTable.order() == d3.ascending)
+		dataTable.order(d3.descending);
+	else
+		dataTable.order(d3.ascending);
+	dc.renderAll();
+	graphCustomizations();
+}
+
+function text_filter(dim,q){
+	var re = new RegExp(q,"i")
+	if (q != '') {
+    dim.filter(function(d) {
+        return 0 == d.search(re);
+    });
+	} else {
+	    dim.filterAll();
+	}
+
+
+
+	dc.redrawAll();
+	graphCustomizations();
+}
+
+function update_graph_options(elem,chart,dimension,groupDimension){
+	var a=[];
+	elem.each(function(){
+		if ($(this).is(':checked')){
+			a.push($(this).val());
+		}
+	});
+	chart.x(d3.scale.ordinal().domain(a));
+	console.log(a);
+	var dim=chart.dimension();
+	var newGroup=dim.group().reduceSum(function(d){
+		if (a.indexOf(d[dimension]) > -1)
+			return d[groupDimension];
+	});
+	chart.group(newGroup);
+
+	dim.filter(function(d){	
+			if (a.indexOf(d) > -1)
+			{
+				return true;
+			}
+	})
+	
+
+
+	dc.renderAll();
+	graphCustomizations();
+}
+

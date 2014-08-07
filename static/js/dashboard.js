@@ -123,7 +123,7 @@ d3.csv("../static/data/uni_dummySet_apr17.csv",function(resource_data){
         .xUnits(dc.units.ordinal)
         .x(d3.scale.ordinal().domain(["Coal", "Gas", "Oil & Gas", "Oil", "Other Commodities", "Clay", "Geothermal", "Copper", "Gilsonite", "Hardrock", "Oil Shale", "Phosphate", "Sodium", "Potassium", "Wind", "n/a"]))
         .margins({top: 10, right: 10, bottom: 75, left:100})
-        .yAxis().tickFormat(function(v){return "$"+ v;});
+        .yAxis().tickFormat(function(v){return "$"+ parseFloat(v).formatMoney(0,'.',',')});
     dash_bar_rev_by_commodity.on("filtered", function (chart) {
                 dc.events.trigger(function () {
                 });});
@@ -157,7 +157,7 @@ d3.csv("../static/data/uni_dummySet_apr17.csv",function(resource_data){
         .xUnits(dc.units.ordinal)
         .x(d3.scale.ordinal())//.domain(["Coal","Gas","Oil & Gas","Oil"]))
         .margins({top: 10, right: 10, bottom: 75, left:100})
-        .yAxis().tickFormat(function(v){return "$"+ v;});
+        .yAxis().tickFormat(function(v){return "$"+ parseFloat(v).formatMoney(0,'.',',')});
     dash_bar_by_rev_source.on("filtered", function (chart) {
                 dc.events.trigger(function () {
                 });});
@@ -176,7 +176,7 @@ d3.csv("../static/data/uni_dummySet_apr17.csv",function(resource_data){
         .xUnits(dc.units.ordinal)
         .x(d3.scale.ordinal())
         .margins({top: 10, right: 10, bottom: 75, left:100})
-        .yAxis().tickFormat(function(v){return "$"+ v;});
+        .yAxis().tickFormat(function(v){return "$"+ parseFloat(v).formatMoney(0,'.',',')});
     dash_bar_avg_by_rev_source.on("filtered", function (chart) {
                 dc.events.trigger(function () {
                 });});
@@ -196,7 +196,7 @@ d3.csv("../static/data/uni_dummySet_apr17.csv",function(resource_data){
         .xUnits(dc.units.ordinal)
         .x(d3.scale.ordinal())
         .margins({top: 10, right: 10, bottom: 75, left:100})
-        .yAxis().tickFormat(function(v){return "$"+ v;});
+        .yAxis().tickFormat(function(v){return "$"+ parseFloat(v).formatMoney(0,'.',',')});
     dash_bar_avg_by_commodity.on("filtered", function (chart) {
                 dc.events.trigger(function () {
                 });});
@@ -227,19 +227,38 @@ dashTable
             d3.select("#totals span").html('$' +all.value().formatMoney(0,'.',','));
         });
 
+
     
     dc.renderAll();
     graphCustomizations();
+
     
     
 
 });
+
+var barTip = d3.tip()
+      .attr('class', 'd3-tip')
+      .offset([-10, 0])
+      .html(function(d) {
+        if (typeof(d.data.value)=="object" )
+            var value = parseFloat(d.data.value["average"]).formatMoney(2,'.',',');
+        else
+            var value = parseFloat(d.data.value).formatMoney(2,'.',',');
+        return "<strong>Revenue:</strong> <span style='color:red'>$"+value+"</span>";
+      });
 
 var graphCustomizations = function(){
         d3.selectAll("g.x text")
         .attr("class", "campusLabel")
         .style("text-anchor", "end") 
         .attr("transform", "translate(-10,0)rotate(315)");
+
+        d3.selectAll(".bar").call(barTip);
+        d3.selectAll(".bar").on('mouseover', barTip.show)
+        .on('mouseout', barTip.hide);
+
+        //d3.selectAll(".bar").attr("tabindex",0);
     };
 
 

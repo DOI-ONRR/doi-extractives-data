@@ -6,74 +6,118 @@ description: This is a sample beta site for Federal natural resource revenues.
 
 <main role="main" itemscope itemprop="mainContentOfSite">
 
-<!-- START Section 'Dashboard' -->
-<section class="section light-gray">
-  <div class="container">
-    <h1 class="large">Dashboard</h1>
+<section class="section light-gray dashboard">
+<!-- START Side Options Nav -->
+  <div class="side-nav" id="OptionsList"> 
     <div class="container">
-      <div style="float:left" id="OptionsList"> 
-        <input type="checkbox" name="commodity" value="Coal" id="chk-coal" checked>
-          <label for="chk-coal">Coal</label>
-        </input>
-        <input type="checkbox" name="commodity" value="Gas" id="chk-gas" checked>
-          <label for="chk-gas">Gas</label>
-        </input>
-        <input type="checkbox" name="commodity" value="Oil & Gas" id="chk-oilgas" checked>
-          <label for="chk-oilgas">Oil & Gas</label>
-        </input>
-        <input type="checkbox" name="commodity" value="Oil" id="chk-oil" checked>
-          <label for="chk-oil">Oil</label>
-        </input>
-        <input type="checkbox" name="commodity" value="Other Commodities" id="chk-other" checked>
-          <label for="chk-other">Other Commodities</label>
-        </input>
-        <input type="checkbox" name="commodity" value="Clay" id="chk-clay" checked>
-          <label for="chk-clay">Clay</label>
-        </input>
-         <input type="checkbox" name="commodity" value="Geothermal" id="chk-Geothermal" checked>
-          <label for="chk-Geothermal">Geothermal</label>
-        </input>
-        <input type="checkbox" name="commodity" value="Copper" id="chk-Copper" checked>
-          <label for="chk-Copper">Copper</label>
-        </input>
-        <input type="checkbox" name="commodity" value="Gilsonite" id="chk-Gilsonite" checked>
-          <label for="chk-Gilsonite">Gilsonite</label>
-        </input>
-        <input type="checkbox" name="commodity" value="Hardrock" id="chk-Hardrock" checked>
-          <label for="chk-Hardrock">Hardrock</label>
-        </input>
-        <input type="checkbox" name="commodity" value="Oil Shale" id="chk-OilShale" checked>
-          <label for="chk-OilShale">Oil Shale</label>
-        </input>
-        <input type="checkbox" name="commodity" value="Phosphate" id="chk-Phosphate" checked>
-          <label for="chk-Phosphate">Phosphate</label>
-        </input>
-        <input type="checkbox" name="commodity" value="Sodium" id="chk-Sodium" checked>
-          <label for="chk-Sodium">Sodium</label>
-        </input>
-        <input type="checkbox" name="commodity" value="Potassium" id="chk-Potassium" checked>
-          <label for="chk-Potassium">Potassium</label>
-        </input>
-        <input type="checkbox" name="commodity" value="Wind" id="chk-Wind" checked>
-          <label for="chk-Wind">Wind</label>
-        </input>
-        <input type="checkbox" name="commodity" value="n/a" id="chk-na" checked>
-          <label for="chk-na">n/a</label>
-        </input>
-
+      <h1>Energy</h1>
+      <div class="side-nav-left">
+        <label class="label-switch" for="chk-coal">Coal
+          <input type="checkbox" name="commodity" value="Coal" id="chk-coal" checked />
+          <div class="checkbox"></div>
+        </label>
+        <label class="label-switch" for="chk-gas">Gas
+          <input type="checkbox" name="commodity" value="Gas" id="chk-gas" checked />
+          <div class="checkbox"></div>
+        </label>
+        <label class="label-switch" for="chk-oilgas">Oil & Gas
+          <input type="checkbox" name="commodity" value="Oil & Gas" id="chk-oilgas" checked />
+          <div class="checkbox"></div>
+        </label>
       </div>
-      <div id='dashboard-bar-rev-by-commodity'><h4>Total Revenue<br>by Commodity</h4> </div>
-      
-      <div id="dashboard-bar-rev-source"><h4>Total Revenue<br>by Revenue Source</h4></div>
-      
+      <div class="side-nav-right">
+        <label class="label-switch" for="chk-oil">Oil
+          <input type="checkbox" name="commodity" value="Oil" id="chk-oil" checked />
+          <div class="checkbox"></div>
+        </label>
+        <label class="label-switch" for="chk-other">Other <!--Commodities-->
+          <input type="checkbox" name="commodity" value="Other Commodities" id="chk-other" checked />
+          <div class="checkbox"></div>
+        </label>
+      </div>
+    </div> 
+    <div class="container">
+      <h1>Minerals</h1>
+      <div class="side-nav-left">
+        <label class="label-switch" for="chk-clay">Clay
+          <input type="checkbox" name="commodity" value="Clay" id="chk-clay" checked />
+          <div class="checkbox"></div>
+        </label>
+        <label class="label-switch" for="chk-Copper">Copper
+          <input type="checkbox" name="commodity" value="Copper" id="chk-Copper" checked />
+          <div class="checkbox"></div>
+        </label>
+        <label class="label-switch" for="chk-Gilsonite">Gilsonite
+          <input type="checkbox" name="commodity" value="Gilsonite" id="chk-Gilsonite" checked />
+          <div class="checkbox"></div>
+        </label>
+        <label class="label-switch" for="chk-Hardrock">Hardrock
+          <input type="checkbox" name="commodity" value="Hardrock" id="chk-Hardrock" checked />
+          <div class="checkbox"></div>
+        </label>
+      </div>
+      <div class="side-nav-right">
+        <label class="label-switch" for="chk-OilShale">Oil Shale
+          <input type="checkbox" name="commodity" value="Oil Shale" id="chk-OilShale" checked />
+          <div class="checkbox"></div>
+        </label>
+        <label class="label-switch" for="chk-Phosphate">Phosphate 
+          <input type="checkbox" name="commodity" value="Phosphate" id="chk-Phosphate" checked />
+          <div class="checkbox"></div>
+        </label>
+        <label class="label-switch" for="chk-Sodium">Sodium
+          <input type="checkbox" name="commodity" value="Sodium" id="chk-Sodium" checked />
+          <div class="checkbox"></div>
+        </label>
+        <label class="label-switch" for="chk-Potassium">Potassium
+          <input type="checkbox" name="commodity" value="Potassium" id="chk-Potassium" checked />
+          <div class="checkbox"></div>
+        </label>
+      </div>
+    </div>
+    <div class="container">
+      <h1>Renewables</h1>
+      <div class="side-nav-left">
+        <label class="label-switch" for="chk-Wind">Wind
+          <input type="checkbox" name="commodity" value="Wind" id="chk-Wind" checked />
+          <div class="checkbox"></div>
+        </label>
+      </div>
+      <div class="side-nav-right">
+        <label class="label-switch" for="chk-Geothermal">Geothermal
+         <input type="checkbox" name="commodity" value="Geothermal" id="chk-Geothermal" checked />
+         <div class="checkbox"></div>
+        </label>
+        <label class="label-switch" for="chk-na">n/a
+          <input type="checkbox" name="commodity" value="n/a" id="chk-na" checked />
+          <div class="checkbox"></div>
+        </label>
+      </div>
+    </div>
+  </div>
+<!-- END Side Options Nav -->
+
+<!-- START Main Data Dashboard -->
+  <div class="container dashboard-face">
+    <h1>Natural Resources Revenue Data Dashboard</h1>
+    <h2 style="font-size: 1.2em;">[PLACEHOLDER] Choose dataset</h2>
+
+    <div class="container">
+      <div class="rev-by-commodity" id='dashboard-bar-rev-by-commodity'>
+        <h4>Total Revenues by Commodity</h4>
+      </div>
+      <!-- <div id="dashboard-bar-rev-source"><h4>Total Revenue<br>by Revenue Source</h4></div>
       <div id="dashboard-bar-avg-by-rev-source"><h4>Average Revenue<br>by Revenue Source</h4></div>
-      
-      <div id="dashboard-bar-avg-by-commodity"><h4>Average Revenue<br>by Commodity<h4></div>
-      <div class="clearfix"></div>
-      <div id="totals">Total Revenue: <span></span></div>
-      <div class="clearfix"></div>
+      <div id="dashboard-bar-avg-by-commodity"><h4>Average Revenue<br>by Commodity<h4></div> -->
+      <div class="total-rev" id="totals">
+        <h1>Total Revenue: <span></span></h1>
+      </div>
+    </div>
+
+    <div class="container dashboard-search">
+      <h4>Search:</h4>
       <input type="text" id="table-search"></input>
-      <a href="javascript:download_data(companyDimension)">Download CSV Data </a>
+      <a href="javascript:download_data(companyDimension)">Download Data (CSV) </a>
       <table class='table table-hover dc-data-table' id='dashboard-table'>
         
         <thead>
@@ -101,13 +145,13 @@ description: This is a sample beta site for Federal natural resource revenues.
           </tr>
         </thead>
       </table>
+    </div>
 
     </div>
 
   </div>
 </section>
-<!-- END Section 'Dashboard' -->
-
+<!-- END Main Data Dashboard -->
 
 </main>
 <script src='{{ site.url }}static/js/dashboard.js'></script>

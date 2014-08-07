@@ -31,6 +31,10 @@ Utility
 .textLeft {
 	text-align: left;
 }
+.clearfix {
+    clear:both;
+    width:100%;
+}
 
 /*============================================
 Homepage Splash
@@ -554,6 +558,137 @@ Mapbox
     margin-right: 10px;
 }
 
+/*===============================================
+Data Dashboard
+================================================*/
+.dashboard {
+    @include row();
+}
+
+.label-switch {
+  $switch-width: 52px;
+  $switch-padding: 2px;
+  $switch-height: 32px;
+  $switch-radius: $switch-height;
+  $knob-height: $switch-height - ($switch-padding * 2);
+  $knob-width: $knob-height;
+  $knob-radius: $switch-height - ($switch-padding * 2);
+
+  align-self: center;
+  border-radius: $switch-radius;
+  cursor: pointer;
+  display: inline;
+  height: $switch-height;
+  position: relative;
+  vertical-align: middle;
+  width: $switch-width;
+  @include box-sizing(border-box);
+
+  input[type="checkbox"] {
+    display: none;
+
+  + .checkbox {
+    background: #e5e5e5;
+    border: none;
+    border-radius: $switch-radius;
+    cursor: pointer;
+    height: $switch-height;
+    margin: 0 0 15px 0;
+    padding: 0;
+    position: relative;
+    width: $switch-width;
+    z-index: 0;
+    @include box-sizing(border-box);
+    @include transition(all 0.3s ease);
+
+    &:before {
+      background: $light-gray;
+      border-radius: $switch-radius;
+      content: ' ';
+      height: $knob-radius;
+      width: $switch-width - ($switch-padding * 2);
+      z-index: 1;
+      @include box-sizing(border-box);
+      @include position(absolute, 2px 0 0 2px);
+      @include transition(all 0.3s ease);
+      @include transform(scale(1));
+    }
+
+    &:after {
+      background: $light-gray;
+      border-radius: $knob-radius;
+      content: ' ';
+      height: $knob-height;
+      width: $knob-width;
+      z-index: 2;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+      @include position(absolute, 2px 0 0 2px);
+      @include transition(all 0.3s ease);
+    }
+  }
+
+  &:checked {
+    + .checkbox {
+      background: $blue;
+        
+        &:before {
+          @include transform(scale(0));
+        }
+
+        &:after {
+          left: $switch-width - $knob-width - ($switch-padding);
+        }
+      }
+    }
+  }
+}
+
+.side-nav {
+    @include span-columns(2);
+    // display:block;
+    // float: left;
+    // position:relative;
+    // top: -40px;
+    // width: 250px;
+    height: 100%;
+    background-color: $dark-gray;
+    color: white;
+    padding: 15px 15px 15px 30px;
+    label {
+        font-weight: 300;
+    }
+    h1 {
+        font-size: 26px;
+        font-size: rem(26);
+        line-height: 1em;
+        border-bottom: 1px solid white;
+        margin: 10px 0 10px 0;
+    }
+    .side-nav-left {
+        @include span-columns(6);
+    }
+    .side-nav-right {
+        @include span-columns(6);
+    }
+}
+
+.dashboard-face {
+    @include span-columns(9);
+    h2 {
+        margin-bottom: 20px;
+    }
+}
+.rev-by-commodity {
+    @include span-columns(6);
+}
+.total-rev {
+    @include span-columns(6);
+}
+.dashboard-search {
+    margin-top: 20px;
+}
+
+
 /*============================================
 Footer
 ============================================*/
@@ -588,12 +723,3 @@ Footer
     }
 }
 
-
-/*===============================================
-DashBoard
-================================================*/
-
-.clearfix{
-    clear:both;
-    width:100%;
-}

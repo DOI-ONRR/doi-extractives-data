@@ -104,3 +104,38 @@ function update_graph_options(elem,chart,dimension,groupDimension){
 	graphCustomizations();
 }
 
+function download_data(dimension){
+	var f=eval(dimension);
+	if (typeof(f.length) != "undefined") {}else{}
+	if (typeof(f.top) != "undefined") {f=f.top(Infinity);}else{}
+	if (typeof(f.dimension) != "undefined") {f=f.dimension(function(d) { return "";}).top(Infinity);}else{}
+	f.reverse();
+	//print_filter(f);
+	//console.log(f[0]["Company Name"]);
+	var keys = Object.keys(f[0]);
+	if (keys.indexOf('')>-1)
+		keys.splice(keys.indexOf('',1));
+	if (keys.indexOf('undefined')>-1)
+		keys.splice(keys.indexOf('undefined',1));
+	if (keys.indexOf(' ')>-1)
+		keys.splice(keys.indexOf(' ',1));
+	var csv="data:text/csv;charset=utf-8,";
+	for (var i=0;i<keys.length;i++)
+	{
+			csv +=keys[i]+",";
+	}
+		
+	csv += "\n";
+
+	f.forEach(function(d){
+		for (var n=0; n<keys.length;n++)
+			csv += d[keys[n]]+",";
+		csv+="\n";
+	});
+	var encodeUri = encodeURI(csv);
+	window.open(encodeUri);
+}
+
+
+
+

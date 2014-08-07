@@ -258,7 +258,7 @@ var graphCustomizations = function(){
         d3.selectAll(".bar").on('mouseover', barTip.show)
         .on('mouseout', barTip.hide);
 
-        d3.selectAll(".bar").attr("tabindex",0);
+        //d3.selectAll(".bar").attr("tabindex",0);
     };
 
 

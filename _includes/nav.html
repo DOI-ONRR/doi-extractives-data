@@ -1,9 +1,8 @@
-<nav class="nav" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+<nav {% if page.title != "Home" %} class="nav nav-short" {% else %} class="nav"  {% endif %}role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
   <div class="container">
     <ul class="menu">
       <a href="{{ site.baseurl }}/about/" itemprop="url"><li itemprop="name">About This Site</li></a>
       <a href="{{ site.baseurl }}/sectors/" itemprop="url"><li itemprop="name">U.S. Natural Resource Sectors</li></a>
-      <a href="#" itemprop="url"><li itemprop="name">Something Else</li></a>
       <a href="{{ site.baseurl }}/data/"><li itemprop="name">Filter &amp; Download Data</li></a>
       {% if page.title != "Home" %}<a href="{{ site.url }}" itemprop="url"><li itemprop="name">Home</li></a>{% endif %}
     </ul>

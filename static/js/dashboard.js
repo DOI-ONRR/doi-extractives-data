@@ -7,8 +7,10 @@ var dash_bar_avg_by_rev_source = dc.barChart('#dashboard-bar-avg-by-rev-source')
 var dash_bar_avg_by_commodity = dc.barChart('#dashboard-bar-avg-by-commodity');
 //var barChartTwo = dc.pieChart("#dashboard-bar-chart-two");
 var dashTable   = dc.dataTable("#dashboard-table");
-var companyDimension;
-var typeDimension;
+var companyDimension; //dimension on company name
+var typeDimension; //dimension on commodity type
+var typeDimensionHelper; //Extra commodity dimension for use by helper functions. Allows it to be filter on by other things
+var ndx; //crossfilter object
 //var typeDimension;
 //d3.csv("https://docs.google.com/spreadsheet/pub?key=0AjPWVMj9wWa6dGw3b1c3ZHRSMW92UTJlNXRLTXZ0RUE&single=true&gid=0&output=csv",function(resource_data){
 d3.csv("../static/data/uni_dummySet_apr17.csv",function(resource_data){
@@ -17,7 +19,7 @@ d3.csv("../static/data/uni_dummySet_apr17.csv",function(resource_data){
         d["Revenue"] = clean_monetary_float(d["Revenue"]);
     });
 
-    var ndx = crossfilter(resource_data);
+    ndx = crossfilter(resource_data);
 
 
     //Dimensions 
@@ -27,6 +29,11 @@ d3.csv("../static/data/uni_dummySet_apr17.csv",function(resource_data){
     typeDimension = ndx.dimension(function(d){
         return d["Commodity"];
     });
+
+    typeDimensionHelper = ndx.dimension(function(d){
+        return d["Commodity"];
+    });
+
     var otherTypeDimension = ndx.dimension(function(d){
         return d["Commodity"];
     })
@@ -91,6 +98,16 @@ d3.csv("../static/data/uni_dummySet_apr17.csv",function(resource_data){
                 p.count++;
                 p.sum+= v["Revenue"];
                 p.average = p.sum/p.count;
+                var rs = v["Revenue Source"];
+                var r = v["Revenue"];
+                if (rs == "Bonus")
+                    p.bonus_rev += r;
+                if (rs == "Rents")
+                    p.rent_rev += r;
+                if (rs == "Royalties")
+                    p.royalties_rev += r;
+                if (rs == "Other Revenues")
+                    p.other_rev += r;
                 return p;
             },
             //remove
@@ -102,19 +119,37 @@ d3.csv("../static/data/uni_dummySet_apr17.csv",function(resource_data){
                 p.count--;
                 p.sum-= v["Revenue"];
                 p.average = p.sum/p.count;
+                var rs = v["Revenue Source"];
+                var r = v["Revenue"];
+                if (rs == "Bonus")
+                    p.bonus_rev -= r;
+                if (rs == "Rents")
+                    p.rent_rev -= r;
+                if (rs == "Royalties")
+                    p.royalties_rev -= r;
+                if (rs == "Other Revenues")
+                    p.other_rev -= r;
                 return p;
             },
             //init
             function(p,v){
-                return {name : "", revenue : 0, type : "", revenueSource : "", count: 0, sum: 0, average: 0};
+                return {name : "", revenue : 0, type : "", revenueSource : "", 
+                    count: 0, sum: 0, average: 0, bonus_rev : 0, rent_rev : 0, royalties_rev : 0, other_rev : 0};
             }
         );
 
     //Graphs
     dash_bar_rev_by_commodity
         .width(600).height(400)
-        .group(typeDimensionEnergyGroup)
+        .group(typeDimension_allGroup, "Rent")
         .dimension(typeDimension)
+        .valueAccessor(function (d){
+            return d.value.rent_rev;
+        })
+        .stack(typeDimension_allGroup, "Bonus", function(d){return d.value.bonus_rev})
+        .stack(typeDimension_allGroup, "Royalties", function(d){return d.value.royalties_rev})
+        .stack(typeDimension_allGroup, "Other Revenues", function(d){return d.value.other_rev})
+        .legend(dc.legend().x(500).y(100))
         .centerBar(false)       
         .elasticY(true)
         .brushOn(false)
@@ -241,11 +276,22 @@ var barTip = d3.tip()
       .attr('class', 'd3-tip')
       .offset([-10, 0])
       .html(function(d) {
-        if (typeof(d.data.value)=="object" )
-            var value = parseFloat(d.data.value["average"]).formatMoney(2,'.',',');
-        else
-            var value = parseFloat(d.data.value).formatMoney(2,'.',',');
-        return "<strong>Revenue:</strong> <span style='color:red'>$"+value+"</span>";
+        if (typeof(d.data.value)=="object" )//bonus_rev : 0, rent_rev : 0, royalties_rev : 0, other_rev : 0
+        {
+            var s = "";
+            if (d.data.value.bonus_rev != 0)
+                s+= "<br /><div style='float:left'><strong>Bonus Revenue:</strong></div><div style='float:right'><span style='color:red'>$"+parseFloat(d.data.value.bonus_rev).formatMoney(2,'.',',')+"</span></div>";
+            if (d.data.value.rent_rev != 0)
+                s+= "<br /><div style='float:left'><strong>Rent Revenue:</strong></div><div style='float:right'><span style='color:red'>$"+parseFloat(d.data.value.rent_rev).formatMoney(2,'.',',')+"</span></div>";
+            if (d.data.value.royalties_rev != 0)
+                s+= "<br /><div style='float:left'><strong>Royalties Revenue:</strong></div><div style='float:right'><span style='color:red'>$"+parseFloat(d.data.value.royalties_rev).formatMoney(2,'.',',')+"</span></div>";
+            if (d.data.value.other_rev != 0)
+                s+= "<br /><div style='float:left'><strong>Rent Revenue:</strong></div><div style='float:right'><span style='color:red'>$"+parseFloat(d.data.value.other_rev).formatMoney(2,'.',',')+"</span></div>";
+            s+= "<hr>";
+            s+= "<div style='float:left'><strong>Total Revenue:</strong></div><div style='float:right'><span style='color:red'>$"+parseFloat(d.data.value.sum).formatMoney(2,'.',',')+"</span></div>";
+
+            return s;
+        }
       });
 
 var graphCustomizations = function(){

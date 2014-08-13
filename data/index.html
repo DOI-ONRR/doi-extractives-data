@@ -10,86 +10,95 @@ description: This is a sample beta site for Federal natural resource revenues.
 <!-- START Side Options Nav -->
   <div class="side-nav" id="OptionsList"> 
     <div class="container">
-      <h1>Energy</h1>
+      <h1><label class="label-switch" for="chk-energy">Energy
+        <input class="groupCheckbox" type="checkbox" name="energygroup" value="energy" id="chk-energy" checked />
+        <div class="checkbox"></div>
+      </label></h1>
       <div class="side-nav-left">
         <label class="label-switch" for="chk-coal">Coal
-          <input type="checkbox" name="commodity" value="Coal" id="chk-coal" checked />
+          <input class="energy commodity" type="checkbox" name="energy" value="Coal" id="chk-coal" checked />
           <div class="checkbox"></div>
         </label>
         <label class="label-switch" for="chk-gas">Gas
-          <input type="checkbox" name="commodity" value="Gas" id="chk-gas" checked />
+          <input class="energy commodity" type="checkbox" name="energy" value="Gas" id="chk-gas" checked />
           <div class="checkbox"></div>
         </label>
         <label class="label-switch" for="chk-oilgas">Oil & Gas
-          <input type="checkbox" name="commodity" value="Oil & Gas" id="chk-oilgas" checked />
+          <input class="energy commodity" type="checkbox" name="energy" value="Oil & Gas" id="chk-oilgas" checked />
           <div class="checkbox"></div>
         </label>
       </div>
       <div class="side-nav-right">
         <label class="label-switch" for="chk-oil">Oil
-          <input type="checkbox" name="commodity" value="Oil" id="chk-oil" checked />
+          <input class="energy commodity" type="checkbox" name="commodity" value="Oil" id="chk-oil" checked />
           <div class="checkbox"></div>
         </label>
         <label class="label-switch" for="chk-other">Other <!--Commodities-->
-          <input type="checkbox" name="commodity" value="Other Commodities" id="chk-other" checked />
+          <input class="energy commodity" type="checkbox" name="commodity" value="Other Commodities" id="chk-other" checked />
           <div class="checkbox"></div>
         </label>
       </div>
     </div> 
     <div class="container">
-      <h1>Minerals</h1>
+      <h1><label class="label-switch" for="chk-minerals">Minerals
+        <input class="groupCheckbox" type="checkbox" name="energygroup" value="minerals" id="chk-minerals" checked />
+        <div class="checkbox"></div>
+      </label></h1>
       <div class="side-nav-left">
         <label class="label-switch" for="chk-clay">Clay
-          <input type="checkbox" name="commodity" value="Clay" id="chk-clay" checked />
+          <input class="minerals commodity" type="checkbox" name="commodity" value="Clay" id="chk-clay" checked />
           <div class="checkbox"></div>
         </label>
         <label class="label-switch" for="chk-Copper">Copper
-          <input type="checkbox" name="commodity" value="Copper" id="chk-Copper" checked />
+          <input class="minerals commodity" type="checkbox" name="commodity" value="Copper" id="chk-Copper" checked />
           <div class="checkbox"></div>
         </label>
         <label class="label-switch" for="chk-Gilsonite">Gilsonite
-          <input type="checkbox" name="commodity" value="Gilsonite" id="chk-Gilsonite" checked />
+          <input class="minerals commodity" type="checkbox" name="commodity" value="Gilsonite" id="chk-Gilsonite" checked />
           <div class="checkbox"></div>
         </label>
         <label class="label-switch" for="chk-Hardrock">Hardrock
-          <input type="checkbox" name="commodity" value="Hardrock" id="chk-Hardrock" checked />
+          <input class="minerals commodity" type="checkbox" name="commodity" value="Hardrock" id="chk-Hardrock" checked />
           <div class="checkbox"></div>
         </label>
       </div>
       <div class="side-nav-right">
         <label class="label-switch" for="chk-OilShale">Oil Shale
-          <input type="checkbox" name="commodity" value="Oil Shale" id="chk-OilShale" checked />
+          <input class="minerals commodity" type="checkbox" name="commodity" value="Oil Shale" id="chk-OilShale" checked />
           <div class="checkbox"></div>
         </label>
         <label class="label-switch" for="chk-Phosphate">Phosphate 
-          <input type="checkbox" name="commodity" value="Phosphate" id="chk-Phosphate" checked />
+          <input class="minerals commodity" type="checkbox" name="commodity" value="Phosphate" id="chk-Phosphate" checked />
           <div class="checkbox"></div>
         </label>
         <label class="label-switch" for="chk-Sodium">Sodium
-          <input type="checkbox" name="commodity" value="Sodium" id="chk-Sodium" checked />
+          <input class="minerals commodity" type="checkbox" name="commodity" value="Sodium" id="chk-Sodium" checked />
           <div class="checkbox"></div>
         </label>
         <label class="label-switch" for="chk-Potassium">Potassium
-          <input type="checkbox" name="commodity" value="Potassium" id="chk-Potassium" checked />
+          <input class="minerals commodity" type="checkbox" name="commodity" value="Potassium" id="chk-Potassium" checked />
           <div class="checkbox"></div>
         </label>
       </div>
     </div>
     <div class="container">
-      <h1>Renewables</h1>
+      <h1><label class="label-switch" for="chk-renewables">Renewables
+        <input class="groupCheckbox" type="checkbox" name="energygroup" value="renewables" id="chk-renewables" checked />
+        <div class="checkbox"></div>
+      </label></h1>
       <div class="side-nav-left">
         <label class="label-switch" for="chk-Wind">Wind
-          <input type="checkbox" name="commodity" value="Wind" id="chk-Wind" checked />
+          <input class="renewables commodity" type="checkbox" name="commodity" value="Wind" id="chk-Wind" checked />
           <div class="checkbox"></div>
         </label>
       </div>
       <div class="side-nav-right">
         <label class="label-switch" for="chk-Geothermal">Geothermal
-         <input type="checkbox" name="commodity" value="Geothermal" id="chk-Geothermal" checked />
+         <input class="renewables commodity" type="checkbox" name="commodity" value="Geothermal" id="chk-Geothermal" checked />
          <div class="checkbox"></div>
         </label>
         <label class="label-switch" for="chk-na">n/a
-          <input type="checkbox" name="commodity" value="n/a" id="chk-na" checked />
+          <input class="renewables commodity" type="checkbox" name="commodity" value="n/a" id="chk-na" checked />
           <div class="checkbox"></div>
         </label>
       </div>
@@ -159,7 +168,16 @@ description: This is a sample beta site for Federal natural resource revenues.
  $("#table-search").on('input',function(){
    text_filter(companyDimension,this.value);
  });
- $("#OptionsList input").change(function(){
+ $("input.commodity").change(function(){
+    update_graph_options($("#OptionsList input"), typeDimensionHelper);
+ });
+
+ $('input.groupCheckbox').change(function(){
+    console.log($(this).is(":checked"));
+    var bool = $(this).is(":checked");
+    $('input.'+$(this).attr("value")).each(function(){
+      $(this).prop("checked",bool);
+    });
     update_graph_options($("#OptionsList input"), typeDimensionHelper);
  });
 

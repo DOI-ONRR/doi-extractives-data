@@ -7,8 +7,10 @@ var dash_bar_avg_by_rev_source = dc.barChart('#dashboard-bar-avg-by-rev-source')
 var dash_bar_avg_by_commodity = dc.barChart('#dashboard-bar-avg-by-commodity');
 //var barChartTwo = dc.pieChart("#dashboard-bar-chart-two");
 var dashTable   = dc.dataTable("#dashboard-table");
-var companyDimension;
-var typeDimension;
+var companyDimension; //dimension on company name
+var typeDimension; //dimension on commodity type
+var typeDimensionHelper; //Extra commodity dimension for use by helper functions. Allows it to be filter on by other things
+var ndx; //crossfilter object
 //var typeDimension;
 //d3.csv("https://docs.google.com/spreadsheet/pub?key=0AjPWVMj9wWa6dGw3b1c3ZHRSMW92UTJlNXRLTXZ0RUE&single=true&gid=0&output=csv",function(resource_data){
 d3.csv("../static/data/uni_dummySet_apr17.csv",function(resource_data){
@@ -17,7 +19,7 @@ d3.csv("../static/data/uni_dummySet_apr17.csv",function(resource_data){
         d["Revenue"] = clean_monetary_float(d["Revenue"]);
     });
 
-    var ndx = crossfilter(resource_data);
+    ndx = crossfilter(resource_data);
 
 
     //Dimensions 
@@ -27,6 +29,11 @@ d3.csv("../static/data/uni_dummySet_apr17.csv",function(resource_data){
     typeDimension = ndx.dimension(function(d){
         return d["Commodity"];
     });
+
+    typeDimensionHelper = ndx.dimension(function(d){
+        return d["Commodity"];
+    });
+
     var otherTypeDimension = ndx.dimension(function(d){
         return d["Commodity"];
     })

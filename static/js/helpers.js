@@ -75,23 +75,16 @@ function text_filter(dim,q){
 	graphCustomizations();
 }
 
-function update_graph_options(elem,chart,dimension,groupDimension){
+function update_graph_options(elem,dimension){
 	var a=[];
 	elem.each(function(){
 		if ($(this).is(':checked')){
 			a.push($(this).val());
 		}
 	});
-	//chart.x(d3.scale.ordinal().domain(a));
 	console.log(a);
-	var dim=chart.dimension();
-	var newGroup=dim.group().reduceSum(function(d){
-		if (a.indexOf(d[dimension]) > -1)
-			return d[groupDimension];
-	});
-	//chart.group(newGroup);
-	dim.filterAll();
-	dim.filter(function(d){	
+	dimension.filterAll();
+	dimension.filter(function(d){	
 			if (a.indexOf(d) > -1)
 			{
 				return true;
@@ -102,7 +95,7 @@ function update_graph_options(elem,chart,dimension,groupDimension){
 	
 
 
-	dc.renderAll();
+	dc.redrawAll();
 	graphCustomizations();
 }
 

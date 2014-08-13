@@ -160,7 +160,7 @@ description: This is a sample beta site for Federal natural resource revenues.
    text_filter(companyDimension,this.value);
  });
  $("#OptionsList input").change(function(){
-    update_graph_options($("#OptionsList input"), dash_bar_rev_by_commodity,"Commodity","Revenue");
+    update_graph_options($("#OptionsList input"), typeDimensionHelper);
  });
 
 </script>

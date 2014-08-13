@@ -82,21 +82,23 @@ function update_graph_options(elem,chart,dimension,groupDimension){
 			a.push($(this).val());
 		}
 	});
-	chart.x(d3.scale.ordinal().domain(a));
+	//chart.x(d3.scale.ordinal().domain(a));
 	console.log(a);
 	var dim=chart.dimension();
 	var newGroup=dim.group().reduceSum(function(d){
 		if (a.indexOf(d[dimension]) > -1)
 			return d[groupDimension];
 	});
-	chart.group(newGroup);
-
+	//chart.group(newGroup);
+	dim.filterAll();
 	dim.filter(function(d){	
 			if (a.indexOf(d) > -1)
 			{
 				return true;
 			}
-	})
+			else 
+				return false;
+	});
 	
 
 

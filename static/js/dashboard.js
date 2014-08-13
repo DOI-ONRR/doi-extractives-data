@@ -91,6 +91,16 @@ d3.csv("../static/data/uni_dummySet_apr17.csv",function(resource_data){
                 p.count++;
                 p.sum+= v["Revenue"];
                 p.average = p.sum/p.count;
+                var rs = v["Revenue Source"];
+                var r = v["Revenue"];
+                if (rs == "Bonus")
+                    p.bonus_rev += r;
+                if (rs == "Rents")
+                    p.rent_rev += r;
+                if (rs == "Royalties")
+                    p.royalties_rev += r;
+                if (rs == "Other Revenues")
+                    p.other_rev += r;
                 return p;
             },
             //remove
@@ -102,19 +112,37 @@ d3.csv("../static/data/uni_dummySet_apr17.csv",function(resource_data){
                 p.count--;
                 p.sum-= v["Revenue"];
                 p.average = p.sum/p.count;
+                var rs = v["Revenue Source"];
+                var r = v["Revenue"];
+                if (rs == "Bonus")
+                    p.bonus_rev -= r;
+                if (rs == "Rents")
+                    p.rent_rev -= r;
+                if (rs == "Royalties")
+                    p.royalties_rev -= r;
+                if (rs == "Other Revenues")
+                    p.other_rev -= r;
                 return p;
             },
             //init
             function(p,v){
-                return {name : "", revenue : 0, type : "", revenueSource : "", count: 0, sum: 0, average: 0};
+                return {name : "", revenue : 0, type : "", revenueSource : "", 
+                    count: 0, sum: 0, average: 0, bonus_rev : 0, rent_rev : 0, royalties_rev : 0, other_rev : 0};
             }
         );
 
     //Graphs
     dash_bar_rev_by_commodity
         .width(600).height(400)
-        .group(typeDimensionEnergyGroup)
+        .group(typeDimension_allGroup, "Rent")
         .dimension(typeDimension)
+        .valueAccessor(function (d){
+            return d.value.rent_rev;
+        })
+        .stack(typeDimension_allGroup, "Bonus", function(d){return d.value.bonus_rev})
+        .stack(typeDimension_allGroup, "Royalties", function(d){return d.value.royalties_rev})
+        .stack(typeDimension_allGroup, "Other Revenues", function(d){return d.value.other_rev})
+        .legend(dc.legend().x(500).y(100))
         .centerBar(false)       
         .elasticY(true)
         .brushOn(false)
@@ -241,11 +269,22 @@ var barTip = d3.tip()
       .attr('class', 'd3-tip')
       .offset([-10, 0])
       .html(function(d) {
-        if (typeof(d.data.value)=="object" )
-            var value = parseFloat(d.data.value["average"]).formatMoney(2,'.',',');
-        else
-            var value = parseFloat(d.data.value).formatMoney(2,'.',',');
-        return "<strong>Revenue:</strong> <span style='color:red'>$"+value+"</span>";
+        if (typeof(d.data.value)=="object" )//bonus_rev : 0, rent_rev : 0, royalties_rev : 0, other_rev : 0
+        {
+            var s = "";
+            if (d.data.value.bonus_rev != 0)
+                s+= "<br /><div style='float:left'><strong>Bonus Revenue:</strong></div><div style='float:right'><span style='color:red'>$"+parseFloat(d.data.value.bonus_rev).formatMoney(2,'.',',')+"</span></div>";
+            if (d.data.value.rent_rev != 0)
+                s+= "<br /><div style='float:left'><strong>Rent Revenue:</strong></div><div style='float:right'><span style='color:red'>$"+parseFloat(d.data.value.rent_rev).formatMoney(2,'.',',')+"</span></div>";
+            if (d.data.value.royalties_rev != 0)
+                s+= "<br /><div style='float:left'><strong>Royalties Revenue:</strong></div><div style='float:right'><span style='color:red'>$"+parseFloat(d.data.value.royalties_rev).formatMoney(2,'.',',')+"</span></div>";
+            if (d.data.value.other_rev != 0)
+                s+= "<br /><div style='float:left'><strong>Rent Revenue:</strong></div><div style='float:right'><span style='color:red'>$"+parseFloat(d.data.value.other_rev).formatMoney(2,'.',',')+"</span></div>";
+            s+= "<hr>";
+            s+= "<div style='float:left'><strong>Total Revenue:</strong></div><div style='float:right'><span style='color:red'>$"+parseFloat(d.data.value.sum).formatMoney(2,'.',',')+"</span></div>";
+
+            return s;
+        }
       });
 
 var graphCustomizations = function(){

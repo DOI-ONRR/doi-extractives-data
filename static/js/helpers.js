@@ -11,7 +11,6 @@ function clean_monetary_float (f){
 	f = f.replace(/,/g , '');
 	f= f.replace('(','-');
 	f=f.replace(')','');
-	console.log(parseFloat(f.replace("$","")));
 	return parseFloat(f.replace("$",""));
 }
 
@@ -85,7 +84,6 @@ function update_graph_options(elem,dimension){
 			a.push($(this).val());
 		}
 	});
-	console.log(a);
 	dimension.filterAll();
 	dimension.filter(function(d){	
 			if (a.indexOf(d) > -1)

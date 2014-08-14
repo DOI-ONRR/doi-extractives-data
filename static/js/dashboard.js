@@ -109,8 +109,6 @@ d3.csv("../static/data/Updated_Consolidated_Revenue_Data_with_Fake_Names.csv",fu
                     p.royalties_rev = parseFloat((p.royalties_rev + r).toFixed(2));
                 if (rs == "Other Revenues")
                     p.other_rev     = parseFloat((p.other_rev + r).toFixed(2));
-
-                print_filter(p);
                 return p;
             },
             //remove

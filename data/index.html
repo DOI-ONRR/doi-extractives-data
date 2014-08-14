@@ -157,7 +157,7 @@ description: This is a sample beta site for Federal natural resource revenues.
                 </a>
               </th>
               <th>
-                <a href="javascript:sort_dataTable(dashTable,'Revenue Source');">
+                <a href="javascript:sort_dataTable(dashTable,'Revenue Type');">
                   Revenue Type
                 </a>
               </th>
@@ -193,7 +193,6 @@ description: This is a sample beta site for Federal natural resource revenues.
  });
 
  $('input.groupCheckbox').change(function(){
-    console.log($(this).is(":checked"));
     var bool = $(this).is(":checked");
     $('input.'+$(this).attr("value")).each(function(){
       $(this).prop("checked",bool);

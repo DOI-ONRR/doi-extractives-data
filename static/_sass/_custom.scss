@@ -31,6 +31,9 @@ Utility
 .textLeft {
 	text-align: left;
 }
+.floatRight {
+    float: right;
+}
 .clearfix {
     clear:both;
     width:100%;
@@ -561,8 +564,44 @@ Mapbox
 /*===============================================
 Data Dashboard
 ================================================*/
+
+$max-width: 100%; //this is setting the width of outer-container.
+//find this variable elsewhere and change it
+//what about the rest of the site that is not full-width?
+
 .dashboard {
-    @include row();
+    @include outer-container;
+}
+.dashboard-nav {
+    @include span-columns(12);
+    background: shade($orange1, 20%);
+    padding-left: 10px;
+    a {
+        color:white;
+    }
+}
+.last { //refactor to remove this helper class
+    @include omega();
+}
+.dashboard-head {
+    @include span-columns(12);
+    background: $orange1;
+    color: white;
+    padding: 10px 0 10px 10px;
+    div:first-child {
+        @include span-columns(4 of 12);
+    }
+    div:last-child {
+        @include omega();
+    }
+    .dashboard-choices {
+    padding-top: 4%;
+    @include span-columns(4 of 12);
+        h1 {
+            font-size: 20px;
+            font-size: rem(20);
+        }
+    }
 }
 
 .label-switch {
@@ -588,7 +627,7 @@ Data Dashboard
     display: none;
 
   + .checkbox {
-    background: #e5e5e5;
+    background: tint($orange1, 30%);
     border: none;
     border-radius: $switch-radius;
     cursor: pointer;
@@ -602,7 +641,7 @@ Data Dashboard
     @include transition(all 0.3s ease);
 
     &:before {
-      background: $light-gray;
+      background: tint($orange1, 30%);
       border-radius: $switch-radius;
       content: ' ';
       height: $knob-radius;
@@ -615,7 +654,7 @@ Data Dashboard
     }
 
     &:after {
-      background: $light-gray;
+      background: tint($orange1, 65%);
       border-radius: $knob-radius;
       content: ' ';
       height: $knob-height;
@@ -629,7 +668,7 @@ Data Dashboard
 
   &:checked {
     + .checkbox {
-      background: $blue;
+      background: $orange1;
         
         &:before {
           @include transform(scale(0));
@@ -642,51 +681,70 @@ Data Dashboard
     }
   }
 }
-
 .side-nav {
-    @include span-columns(2);
-    // display:block;
-    // float: left;
-    // position:relative;
-    // top: -40px;
-    // width: 250px;
+    @include span-columns(3);
     height: 100%;
     background-color: $dark-gray;
-    color: white;
-    padding: 15px 15px 15px 30px;
+    color: tint($orange1, 50%);
+    padding: 10px 30px 15px 30px;
     label {
         font-weight: 300;
     }
     h1 {
-        font-size: 26px;
-        font-size: rem(26);
+        @include span-columns(3 of 3);
+        @include omega();
+        font-size: 24px;
+        font-size: rem(24px);
         line-height: 1em;
-        border-bottom: 1px solid white;
-        margin: 10px 0 10px 0;
+        border-top: 1px solid tint($orange1, 50%);
+        margin: 30px 0 10px 0;
+        padding-top: 3px;
+        .checkbox {
+            float: right;
+        }
     }
     .side-nav-left {
-        @include span-columns(6);
+        @include span-columns(1 of 3);
+    }
+    .side-nav-middle {
+        @include span-columns(1 of 3);
+    }
+    .side-nav-middle-plus {
+        @include span-columns(2 of 3);
+        @include omega();
     }
     .side-nav-right {
-        @include span-columns(6);
+        @include span-columns(1 of 3);
+        @include omega();
     }
 }
-
 .dashboard-face {
     @include span-columns(9);
+    padding-top: 30px;
     h2 {
         margin-bottom: 20px;
     }
+    .rev-by-commodity {
+        @include span-columns(6 of 9);
+    }
+    .total-rev {
+        @include span-columns(3 of 9);
+        @include omega();
+        h1 {
+            margin-top: 10px;
+        }
+    }
+    .dashboard-search {
+        @include span-columns(8 of 9);
+        @include omega();
+        margin-top: 20px;
+    }
 }
-.rev-by-commodity {
-    @include span-columns(6);
+.dashboard-button {
+    @include button(shade($blue, 10%));
+    margin-bottom: 15px;
 }
-.total-rev {
-    @include span-columns(6);
-}
-.dashboard-search {
-    margin-top: 20px;
-}
+
 
 
 /*============================================

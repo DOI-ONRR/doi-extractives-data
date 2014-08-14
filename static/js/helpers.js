@@ -129,7 +129,11 @@ function download_data(dimension){
 		csv+="\n";
 	});
 	var encodeUri = encodeURI(csv);
-	window.open(encodeUri);
+	var link=document.createElement("a");
+	link.setAttribute("href",encodeUri);
+	link.setAttribute("download","filtered_data.csv");
+	link.click();
+	
 }
 
 

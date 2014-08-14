@@ -57,7 +57,7 @@ function sort_dataTable(dataTable, dataField, that)
 		dataTable.order(d3.descending);
 	else
 		dataTable.order(d3.ascending);
-	dc.renderAll();
+	dc.redrawAll();
 	graphCustomizations();
 }
 

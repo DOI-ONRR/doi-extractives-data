@@ -11,9 +11,10 @@ var typeDimensionHelper; //Extra commodity dimension for use by helper functions
 var ndx; //crossfilter object
 //var typeDimension;
 //d3.csv("https://docs.google.com/spreadsheet/pub?key=0AjPWVMj9wWa6dGw3b1c3ZHRSMW92UTJlNXRLTXZ0RUE&single=true&gid=0&output=csv",function(resource_data){
-d3.csv("../static/data/uni_dummySet_apr17.csv", function(resource_data) {
 
-    resource_data.forEach(function(d) {
+d3.csv("../static/data/Updated_Consolidated_Revenue_Data_with_Fake_Names.csv",function(resource_data){
+    
+    resource_data.forEach(function(d){
         d["Revenue"] = clean_monetary_float(d["Revenue"]);
     });
 
@@ -35,8 +36,8 @@ d3.csv("../static/data/uni_dummySet_apr17.csv", function(resource_data) {
     var otherTypeDimension = ndx.dimension(function(d) {
         return d["Commodity"];
     })
-    var revDimension = ndx.dimension(function(d) {
-        return d["Revenue Source"];
+    var revDimension = ndx.dimension(function(d){
+        return d["Revenue Type"];
     })
 
     //Groups
@@ -60,102 +61,85 @@ d3.csv("../static/data/uni_dummySet_apr17.csv", function(resource_data) {
     });
 
     var revDimension_allGroup = revDimension.group().reduce(
-        //add
-        function(p, v) {
-            p.name = v["Company Name"];
-            p.revenue = v["Revenue"];
-            p.type = v["Commodity"]
-            p.revenueSource = v["Revenue Source"];
-            p.count++;
-            p.sum += v["Revenue"];
-            p.average = p.sum / p.count;
-            return p;
-        },
-        //remove
-        function(p, v) {
-            p.name = v["Company Name"];
-            p.revenue = v["Revenue"];
-            p.type = v["Commodity"]
-            p.revenueSource = v["Revenue Source"];
-            p.count--;
-            p.sum -= v["Revenue"];
-            p.average = p.sum / p.count;
-            return p;
-        },
-        //init
-        function(p, v) {
-            return {
-                name: "",
-                revenue: 0,
-                type: "",
-                revenueSource: "",
-                count: 0,
-                sum: 0,
-                average: 0
-            };
-        }
-    );
+            //add
+            function(p,v){
+                p.name = v["Company Name"];
+                p.revenue = v["Revenue"];
+                p.type = v["Commodity"]
+                p.revenueSource = v["Revenue Type"];
+                p.count++;
+                p.sum+= v["Revenue"];
+                p.average = p.sum/p.count;
+                return p;
+            },
+            //remove
+            function(p,v){
+                p.name = v["Company Name"];
+                p.revenue = v["Revenue"];
+                p.type = v["Commodity"]
+                p.revenueSource = v["Revenue Type"];
+                p.count--;
+                p.sum-= v["Revenue"];
+                p.average = p.sum/p.count;
+                return p;
+            },
+            //init
+            function(p,v){
+                return {name : "", revenue : 0, type : "", revenueSource : "", count: 0, sum: 0, average: 0};
+            }
+        );
 
     var typeDimension_allGroup = typeDimension.group().reduce(
-        //add
-        function(p, v) {
-            p.name = v["Company Name"];
-            p.revenue = v["Revenue"];
-            p.type = v["Commodity"]
-            p.revenueSource = v["Revenue Source"];
-            p.count++;
-            p.sum += v["Revenue"];
-            p.average = p.sum / p.count;
-            var rs = v["Revenue Source"];
-            var r = v["Revenue"];
-            if (rs == "Bonus")
-                p.bonus_rev += r;
-            if (rs == "Rents")
-                p.rent_rev += r;
-            if (rs == "Royalties")
-                p.royalties_rev += r;
-            if (rs == "Other Revenues")
-                p.other_rev += r;
-            return p;
-        },
-        //remove
-        function(p, v) {
-            p.name = v["Company Name"];
-            p.revenue = v["Revenue"];
-            p.type = v["Commodity"]
-            p.revenueSource = v["Revenue Source"];
-            p.count--;
-            p.sum -= v["Revenue"];
-            p.average = p.sum / p.count;
-            var rs = v["Revenue Source"];
-            var r = v["Revenue"];
-            if (rs == "Bonus")
-                p.bonus_rev -= r;
-            if (rs == "Rents")
-                p.rent_rev -= r;
-            if (rs == "Royalties")
-                p.royalties_rev -= r;
-            if (rs == "Other Revenues")
-                p.other_rev -= r;
-            return p;
-        },
-        //init
-        function(p, v) {
-            return {
-                name: "",
-                revenue: 0,
-                type: "",
-                revenueSource: "",
-                count: 0,
-                sum: 0,
-                average: 0,
-                bonus_rev: 0,
-                rent_rev: 0,
-                royalties_rev: 0,
-                other_rev: 0
-            };
-        }
-    );
+            //add
+            function(p,v){
+                p.name = v["Company Name"];
+                p.revenue = v["Revenue"];
+                p.type = v["Commodity"]
+                p.revenueSource = v["Revenue Type"];
+                p.count++;
+                p.sum= parseFloat((p.sum + v["Revenue"]).toFixed(2));
+                p.average = p.sum/p.count;
+                var rs = v["Revenue Type"];
+                var r = parseFloat(v["Revenue"]);
+                if (rs == "Bonus")
+                    p.bonus_rev     = parseFloat((p.bonus_rev + r).toFixed(2));
+                if (rs == "Rents")
+                    p.rent_rev      = parseFloat((p.rent_rev + r).toFixed(2));
+                if (rs == "Royalties")
+                    p.royalties_rev = parseFloat((p.royalties_rev + r).toFixed(2));
+                if (rs == "Other Revenues")
+                    p.other_rev     = parseFloat((p.other_rev + r).toFixed(2));
+                return p;
+            },
+            //remove
+            function(p,v){
+                p.name = v["Company Name"];
+                p.revenue = v["Revenue"];
+                p.type = v["Commodity"]
+                p.revenueSource = v["Revenue Type"];
+                p.count--;
+                p.sum= parseFloat((p.sum - v["Revenue"]).toFixed(2));
+                p.average = p.sum/p.count;
+                var rs = v["Revenue Type"];
+                var r = parseFloat(v["Revenue"]);
+                if (rs == "Bonus")
+                    p.bonus_rev     = parseFloat((p.bonus_rev - r).toFixed(2));
+                if (rs == "Rents")
+                    p.rent_rev      = parseFloat((p.rent_rev - r).toFixed(2));
+                if (rs == "Royalties")
+                    p.royalties_rev = parseFloat((p.royalties_rev - r).toFixed(2));
+                if (rs == "Other Revenues")
+                    p.other_rev     = parseFloat((p.other_rev - r).toFixed(2));
+
+
+                return p;
+            },
+            //init
+            function(p,v){
+                return {name : "", revenue : 0.00, type : "", revenueSource : "", 
+                    count: 0, sum: 0.00, average: 0, bonus_rev : 0.00, rent_rev : 0.00, royalties_rev : 0.00, other_rev : 0.00};
+            }
+        );
 
     //Graphs
     dash_bar_rev_by_commodity
@@ -179,21 +163,13 @@ d3.csv("../static/data/uni_dummySet_apr17.csv", function(resource_data) {
         .elasticY(true)
         .brushOn(false)
         .turnOnControls(true)
-    //.x(d3.time.scale().domain([minDate,maxDate]))
-    .xUnits(dc.units.ordinal)
-        .x(d3.scale.ordinal().domain(["Coal", "Gas", "Oil & Gas", "Oil", "Other Commodities", "Clay", "Geothermal", "Copper", "Gilsonite", "Hardrock", "Oil Shale", "Phosphate", "Sodium", "Potassium", "Wind", "n/a"]))
-        .margins({
-            top: 10,
-            right: 10,
-            bottom: 75,
-            left: 100
-        })
-        .yAxis().tickFormat(function(v) {
-            return "$" + parseFloat(v).formatMoney(0, '.', ',')
-        });
-    dash_bar_rev_by_commodity.on("filtered", function(chart) {
-        dc.events.trigger(function() {});
-    });
+        .xUnits(dc.units.ordinal)
+        .x(d3.scale.ordinal())
+        .margins({top: 10, right: 10, bottom: 75, left:100})
+        .yAxis().tickFormat(function(v){return "$"+ parseFloat(v).formatMoney(0,'.',',')});
+    dash_bar_rev_by_commodity.on("filtered", function (chart) {
+                dc.events.trigger(function () {
+                });});
 
     // dash_bar_rev_by_other
     //     .width(600).height(400)
@@ -303,27 +279,16 @@ d3.csv("../static/data/uni_dummySet_apr17.csv", function(resource_data) {
         })
         .size(1774)
         .columns([
-
-            function(d) {
-                return d["Company Name"];
-            },
-            function(d) {
-                return d["Revenue Source"];
-            },
-            function(d) {
-                return d["Commodity"];
-            },
-            function(d) {
-                return "$" + parseFloat(d["Revenue"]).formatMoney(0, '.', ',');
-            }
-        ])
-        .sortBy(function(d) {
-            return d["Company Name"]
-        })
+                function(d){return d["Company Name"]; },
+                function(d){return d["Revenue Type"];},
+                function(d){return d["Commodity"];},
+                function(d){return "$"+parseFloat(d["Revenue"]).formatMoney(0,'.',',');}
+            ])
+        .sortBy(function(d){return d["Company Name"]})
         .order(d3.ascending);
-    dashTable
-        .renderlet(function(d) {
-            d3.select("#totals span").html('$' + all.value().formatMoney(0, '.', ','));
+dashTable
+    .renderlet(function(d){
+            d3.select("#totals span").html('$' +parseFloat(all.value().toFixed(0)).formatMoney(0,'.',','));
         });
 
 
@@ -350,9 +315,9 @@ var barTip = d3.tip()
             if (d.data.value.royalties_rev != 0)
                 s += "<br /><div style='float:left'><strong>Royalties Revenue:</strong></div><div style='float:right'><span style='color:red'>$" + parseFloat(d.data.value.royalties_rev).formatMoney(2, '.', ',') + "</span></div>";
             if (d.data.value.other_rev != 0)
-                s += "<br /><div style='float:left'><strong>Rent Revenue:</strong></div><div style='float:right'><span style='color:red'>$" + parseFloat(d.data.value.other_rev).formatMoney(2, '.', ',') + "</span></div>";
-            s += "<hr>";
-            s += "<div style='float:left'><strong>Total Revenue:</strong></div><div style='float:right'><span style='color:red'>$" + parseFloat(d.data.value.sum).formatMoney(2, '.', ',') + "</span></div>";
+                s+= "<br /><div style='float:left'><strong>Other Revenue:</strong></div><div style='float:right'><span style='color:red'>$"+parseFloat(d.data.value.other_rev).formatMoney(2,'.',',')+"</span></div>";
+            s+= "<hr>";
+            s+= "<div style='float:left'><strong>Total Revenue:</strong></div><div style='float:right'><span style='color:red'>$"+parseFloat(d.data.value.sum).formatMoney(2,'.',',')+"</span></div>";
 
             return s;
         }

@@ -56,9 +56,70 @@ d3.csv("../static/data/Updated_Consolidated_Revenue_Data_with_Fake_Names.csv",fu
         return d["Revenue"]
     });
 
-    var all = ndx.groupAll().reduceSum(function(d) {
-        return d["Revenue"];
-    });
+    var all = ndx.groupAll().reduce(
+        //add
+        function(p,v){
+            p.sum += v["Revenue"];
+            p.count++;
+            if (v["Company Name"] in p.companies)
+            {
+                p.companies[v["Company Name"]]++;
+
+            }
+            else
+            {
+                p.companies[v["Company Name"]]=1
+                p.company_count++;
+            }
+                
+
+            p.average = p.sum/p.company_count;
+            return p;
+        },
+        //remove
+        function(p,v){
+            p.sum -=v["Revenue"];
+            p.count--;
+            p.companies[v["Company Name"]]--;
+            if (p.companies[v["Company Name"]] === 0)
+            {
+                p.company_count--;
+                delete p.companies[v["Company Name"]];
+            }
+            if (p.company_count>0)
+                p.average = p.sum/p.company_count;
+            else
+                p.average = 0;
+            return p;
+        },
+        //int
+        function(p,v){
+            return {average : 0, sum : 0, count : 0, company_count:0, companies:{}}
+        }
+    );
+
+    var companyDimensionGroup = companyDimension.group().reduce(
+        //add
+        function(p,v){
+            p.name = v["Company Name"];
+            p.sum += v["Revenue"];
+            p.count++;
+            p.average = p.sum/p.count;
+            return p;
+        },
+        //remove
+        function(p,v){
+            p.name = v["Company Name"]
+            p.sum -=v["Revenue"];
+            p.count--;
+            p.average = p.sum/p.count;
+            return p;
+        },
+        //int
+        function(p,v){
+            return {name:"",average : 0, sum : 0, count : 0}
+        }
+    );
 
     var revDimension_allGroup = revDimension.group().reduce(
             //add
@@ -170,6 +231,7 @@ d3.csv("../static/data/Updated_Consolidated_Revenue_Data_with_Fake_Names.csv",fu
     dash_bar_rev_by_commodity.on("filtered", function (chart) {
                 dc.events.trigger(function () {
                 });});
+    
 
     // dash_bar_rev_by_other
     //     .width(600).height(400)
@@ -286,12 +348,21 @@ d3.csv("../static/data/Updated_Consolidated_Revenue_Data_with_Fake_Names.csv",fu
             ])
         .sortBy(function(d){return d["Company Name"]})
         .order(d3.ascending);
-dashTable
-    .renderlet(function(d){
-            d3.select("#totals span").html('$' +parseFloat(all.value().toFixed(0)).formatMoney(0,'.',','));
+    //Table related Facts (Averages, Totals, etc)
+    //These items are tied to the dashTable so they will be updated when it is updated
+    dashTable
+        .renderlet(function(d){
+            d3.select("#total_revenue").html('$' +parseFloat(all.value().sum.toFixed(0)).formatMoney(0,'.',','));
         });
-
-
+    dashTable
+        .renderlet(function(d){
+            d3.select("#average_revenue").html('$' +parseFloat(all.value().average.toFixed(0)).formatMoney(0,'.',','));
+        });
+    dashTable
+        .renderlet(function(d){
+            d3.select("#company_count").html(all.value().company_count);
+            print_filter(companyDimensionGroup);
+        })
 
     dc.renderAll();
     graphCustomizations();

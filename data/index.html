@@ -122,6 +122,10 @@ description: This is a sample beta site for Federal natural resource revenues.
         <input class="other commodity" type="checkbox" name="commodity" value="Sodium" id="chk-Sodium" checked />
         <div class="checkbox"></div>
       </label>
+      <label class="label-switch" for="chk-Other_Commodities">Other Commodities
+        <input class="other commodity" type="checkbox" name="commodity" value="Other Commodities" id="chk-Other_Commodities" checked />
+        <div class="checkbox"></div>
+      </label>
     </div>
     
   </div>
@@ -138,9 +142,9 @@ description: This is a sample beta site for Federal natural resource revenues.
       <div class="total-rev" id="totals">
         <a class="dashboard-button" href="{{site:url}}static/data/{{site:unilatteral_data}}">Download Full Dataset (CSV) </a>
         <a class="dashboard-button" href="javascript:download_data(companyDimension)">Download Filtered Data (CSV) </a>
-        <h1>Total Revenue: <span></span></h1>
-        <h1>Average Revenue: <span>$1,000,000</span></h1>
-        <h1>Other Stat: <span>$1,000,000</span></h1>
+        <h1>Total Revenue: <span id="total_revenue"></span></h1>
+        <h1>Average Revenue: <span id="average_revenue">$1,000,000</span></h1>
+        <h1>Number of Companies: <span id="company_count">$1,000,000</span></h1>
       </div>
 
       <div class="dashboard-search">

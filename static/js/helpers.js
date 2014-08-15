@@ -115,7 +115,8 @@ function download_data(dimension){
 		keys.splice(keys.indexOf('undefined',1));
 	if (keys.indexOf(' ')>-1)
 		keys.splice(keys.indexOf(' ',1));
-	var csv="data:text/csv;charset=utf-8,";
+	//var csv="data:text/csv;charset=utf-8,";
+	var csv ='';
 	for (var i=0;i<keys.length;i++)
 	{
 			csv +=keys[i]+",";
@@ -130,10 +131,11 @@ function download_data(dimension){
 	});
 	var encodeUri = encodeURI(csv);
 	var link=document.createElement("a");
-	link.setAttribute("href",encodeUri);
-	link.setAttribute("download","filtered_data.csv");
+	var blob = new Blob([csv],{type: 'text/csv;charset=utf-8'});
+	var url = URL.createObjectURL(blob);
+	link.href = url;
+	link.setAttribute('download','filteredData.csv');
 	link.click();
-	
 }
 
 

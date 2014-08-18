@@ -589,13 +589,13 @@ $max-width: 100%; //this is setting the width of outer-container.
     color: white;
     padding: 10px 0 10px 10px;
     div:first-child {
-        @include span-columns(4 of 12);
+        @include span-columns(3 of 12);
     }
     div:last-child {
         @include omega();
     }
     .dashboard-choices {
-    padding-top: 4%;
+    margin-left: -0.4%;
     @include span-columns(4 of 12);
         h1 {
             font-size: 20px;
@@ -627,7 +627,7 @@ $max-width: 100%; //this is setting the width of outer-container.
     display: none;
 
   + .checkbox {
-    background: tint($orange1, 30%);
+    background: lighten($blue, 20%);
     border: none;
     border-radius: $switch-radius;
     cursor: pointer;
@@ -641,7 +641,7 @@ $max-width: 100%; //this is setting the width of outer-container.
     @include transition(all 0.3s ease);
 
     &:before {
-      background: tint($orange1, 30%);
+      background: lighten($blue, 20%);
       border-radius: $switch-radius;
       content: ' ';
       height: $knob-radius;
@@ -654,7 +654,7 @@ $max-width: 100%; //this is setting the width of outer-container.
     }
 
     &:after {
-      background: tint($orange1, 65%);
+      background: lighten($blue, 10%);
       border-radius: $knob-radius;
       content: ' ';
       height: $knob-height;
@@ -668,7 +668,7 @@ $max-width: 100%; //this is setting the width of outer-container.
 
   &:checked {
     + .checkbox {
-      background: $orange1;
+      background: white;
         
         &:before {
           @include transform(scale(0));
@@ -685,7 +685,7 @@ $max-width: 100%; //this is setting the width of outer-container.
     @include span-columns(3);
     height: 100%;
     background-color: $dark-gray;
-    color: tint($orange1, 50%);
+    color: white;
     padding: 10px 30px 15px 30px;
     label {
         font-weight: 300;
@@ -696,7 +696,7 @@ $max-width: 100%; //this is setting the width of outer-container.
         font-size: 24px;
         font-size: rem(24px);
         line-height: 1em;
-        border-top: 1px solid tint($orange1, 50%);
+        border-top: 1px solid white;
         margin: 30px 0 10px 0;
         padding-top: 3px;
         .checkbox {
@@ -743,6 +743,9 @@ $max-width: 100%; //this is setting the width of outer-container.
 .dashboard-button {
     @include button(shade($blue, 10%));
     margin-bottom: 15px;
+    &:hover, &:focus {
+        color: $medium-gray;
+    }
 }
 
 

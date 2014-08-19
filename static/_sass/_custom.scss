@@ -40,6 +40,57 @@ Utility
 }
 
 /*============================================
+Alpha Alert
+============================================*/
+
+#burst-12 {
+    background: $red;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 18px;
+    right: 22px;
+    text-align: center;
+    &:before, &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 80px;
+        width: 80px;
+        background: $red;
+    }
+    &:before {
+        @include transform(rotate(30deg));
+    }
+    &:after {
+        @include transform(rotate(60deg));
+    }
+    &.burst-blue {
+        background: $blue;
+        &:before, &:after {
+            background: $blue;
+        }
+    }
+}
+
+#burst-text {
+    position: absolute;
+    top: 36px;
+    right: 24px;
+    color: white;
+    text-align: center;
+    p {
+        margin-bottom: 0px;
+        font-size: 14px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+}
+
+
+/*============================================
 Homepage Splash
 ============================================*/
 .usa {

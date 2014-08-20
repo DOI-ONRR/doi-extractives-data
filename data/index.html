@@ -151,8 +151,26 @@ description: This is a sample beta site for Federal natural resource revenues.
       <div class="dashboard-search">
         <h4>Filter by Company:</h4>
         <input type="text" id="table-search"></input>
+        <div><a href="javascript:toggle_divs('#toggleDivLink','#dashboard-totals-table','#dashboard-table','Show Full Table','Show Table by Company')" id="toggleDivLink">Show Full Table</a></div>
+        <table class='table table-hover dc-data-table' id='dashboard-totals-table'>
+          
+          <thead>
+            <tr class="header">
+              <th>
+                <a href="javascript:sort_dataTable(dashTotalsTable,'Company Name');">
+                  Company name
+                </a>
+              </th>
+              <th>
+                <a href="javascript:sort_dataTable(dashTotalsTable,'Total Revenue');">
+                  Total Revenue
+                </a>
+              </th>
+            </tr>
+          </thead>
+        </table>
         
-        <table class='table table-hover dc-data-table' id='dashboard-table'>
+        <table class='table table-hover dc-data-table' id='dashboard-table' style="display:none">
           
           <thead>
             <tr class="header">

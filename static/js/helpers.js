@@ -71,8 +71,7 @@ function text_filter(dim,q){
 	    dim.filterAll();
 	}
 
-
-
+	draw_totals_table();
 	dc.redrawAll();
 	graphCustomizations();
 }
@@ -95,7 +94,7 @@ function update_graph_options(elem,dimension){
 	});
 	
 
-
+	draw_totals_table();
 	dc.redrawAll();
 	graphCustomizations();
 }
@@ -138,6 +137,56 @@ function download_data(dimension){
 	link.click();
 }
 
+function draw_totals_table(){
+	var jsonData =[];//will hold the new data structure
+
+	//Create a new JSON Object with just the data currently filtered on companyDimension
+	var tempData = companyDimension.top(Infinity);
+	//Put this new JSON object in a crossfilter
+	var tdx = crossfilter(tempData);
+	var d = tdx.dimension(function(d){
+		return d["Company Name"];
+	});
+	//Reduce this demension down to get a total some
+	var g = d.group().reduceSum(function(d){
+		return d["Revenue"]
+	});
+	//Get the data from the new group and assign to d
+	var d = g.top(Infinity);
+
+	//Take JSON in d and put in jsonData with new structure for ease of use 
+	d.forEach(function(d){
+		if (d.value != 0)
+			jsonData.push({"Company Name" : d.key, "Total Revenue" : d.value});
+	});
+	
+	//Add jsonData to a crossfilter
+	var jdx = crossfilter(jsonData);
+	//Set dimension to Company Name
+    var jdxDimension = jdx.dimension(function(d){
+        return d["Company Name"];
+    });
+    //Render table
+    dashTotalsTable.width(800).height(800)
+        .dimension(jdxDimension)
+        .group(function(d) {
+            return "List of all Selected Companies Total Revenue";
+        })
+        .size(1774)
+        .columns([
+                function(d){return d["Company Name"]; },
+                function(d){return "$"+parseFloat(d["Total Revenue"]).formatMoney(0,'.',',');}
+            ]);
+}
+
+function toggle_divs(that, div1, div2, linkText1, linkText2){
+	$(div1).toggle();
+	$(div2).toggle();
+	if ($(that).html()==linkText1)
+		$(that).html(linkText2);
+	else
+		$(that).html(linkText1)
+}
 
 
 

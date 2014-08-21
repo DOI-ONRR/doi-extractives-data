@@ -5,7 +5,9 @@ var dash_bar_avg_by_rev_source = dc.barChart('#dashboard-bar-avg-by-rev-source')
 var dash_bar_avg_by_commodity = dc.barChart('#dashboard-bar-avg-by-commodity');
 //var barChartTwo = dc.pieChart("#dashboard-bar-chart-two");
 var dashTable = dc.dataTable("#dashboard-table");
+var dashTotalsTable = dc.dataTable("#dashboard-totals-table")
 var companyDimension; //dimension on company name
+var companyDimensionGroup;
 var typeDimension; //dimension on commodity type
 var typeDimensionHelper; //Extra commodity dimension for use by helper functions. Allows it to be filter on by other things
 var ndx; //crossfilter object
@@ -98,13 +100,33 @@ d3.csv("../static/data/Updated_Consolidated_Revenue_Data_with_Fake_Names.csv",fu
         }
     );
 
-    var companyDimensionGroup = companyDimension.group().reduce(
+    companyDimensionGroup = companyDimension.group().reduce(
         //add
         function(p,v){
             p.name = v["Company Name"];
             p.sum += v["Revenue"];
             p.count++;
             p.average = p.sum/p.count;
+            var rs = v["Revenue Type"];
+            var r = parseFloat(v["Revenue"]);
+            var c = v["Commodity"];
+            if (rs == "Bonus")
+                p.bonus_rev     = parseFloat((p.bonus_rev + r).toFixed(2));
+            if (rs == "Rents")
+                p.rent_rev      = parseFloat((p.rent_rev + r).toFixed(2));
+            if (rs == "Royalties")
+                p.royalties_rev = parseFloat((p.royalties_rev + r).toFixed(2));
+            if (rs == "Other Revenues")
+                p.other_rev     = parseFloat((p.other_rev + r).toFixed(2));
+            if (c in p.revenue_types)
+            {
+                p.revenue_types[c] = (parseFloat(p.revenue_types[c])+parseFloat(r)).toFixed(2);
+            }
+            else
+            {
+                p.revenue_types[c] = parseFloat(r).toFixed(2);
+            }
+
             return p;
         },
         //remove
@@ -113,11 +135,29 @@ d3.csv("../static/data/Updated_Consolidated_Revenue_Data_with_Fake_Names.csv",fu
             p.sum -=v["Revenue"];
             p.count--;
             p.average = p.sum/p.count;
+            var rs = v["Revenue Type"];
+            var r = parseFloat(v["Revenue"]);
+            var c = v["Commodity"];
+            if (rs == "Bonus")
+                p.bonus_rev     = parseFloat((p.bonus_rev - r).toFixed(2));
+            if (rs == "Rents")
+                p.rent_rev      = parseFloat((p.rent_rev - r).toFixed(2));
+            if (rs == "Royalties")
+                p.royalties_rev = parseFloat((p.royalties_rev - r).toFixed(2));
+            if (rs == "Other Revenues")
+                p.other_rev     = parseFloat((p.other_rev - r).toFixed(2));
+
+            p.revenue_types[c] = (parseFloat(p.revenue_types[c])-parseFloat(r)).toFixed(2);
+            if(p.revenue_types[c] === 0.00)
+            {
+                delete p.revenue_types[c];
+            }
+
             return p;
         },
         //int
         function(p,v){
-            return {name:"",average : 0, sum : 0, count : 0}
+            return {name:"",average : 0, sum : 0, count : 0, revenue_types:{}}
         }
     );
 
@@ -361,11 +401,25 @@ d3.csv("../static/data/Updated_Consolidated_Revenue_Data_with_Fake_Names.csv",fu
     dashTable
         .renderlet(function(d){
             d3.select("#company_count").html(all.value().company_count);
-            print_filter(companyDimensionGroup);
+            //print_filter(companyDimensionGroup);
         })
+    //var dcGroupTable = new DCGroupTable("Company Name", "Total Revenue", 'sum');
+    //dcGroupTable.draw(companyDimensionGroup)
+   //dcGroupTable.drawTable();
+   //console.log(companyDimensionGroup.top(Infinity));
+   draw_totals_table();
+   dashTotalsTable
+    .sortBy(function(d){return d["Company Name"]})
+    .order(d3.ascending);
+   
+    
+    for (var i = 0; i < dc.chartRegistry.list().length; i++) {
+        var chartI = dc.chartRegistry.list()[i];
+        chartI.on("filtered", draw_totals_table);
+    }
 
-    dc.renderAll();
-    graphCustomizations();
+   dc.renderAll();
+   graphCustomizations();
 
 
 

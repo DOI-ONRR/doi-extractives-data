@@ -388,7 +388,7 @@ Homepage Infographic Sections
 
 	}
 }
-.offshore {
+/*.offshore {
     min-height: 580px;
     position:relative;
     top: 30px;
@@ -430,7 +430,6 @@ Homepage Infographic Sections
 }
 .stats-offshore, .stats-onshore {
     width: 100%;
-    height: 270px;
     @include span-columns(6);
 }
 
@@ -561,7 +560,7 @@ Homepage Infographic Sections
 
 .stats-onshore > div i {
     color: $deep-orange;
-}
+}*/
 .dollars {
     margin-top: -30px;
     h1 {
@@ -834,4 +833,29 @@ Footer
       }
     }
 }
+
+
+/*============================================
+Disbursment Graph
+============================================*/
+
+.disbursement_bubble{
+    border-radius: 1000px;
+    background-color: teal;
+    float:left;
+    text-align: center;
+    margin: 5px;
+    display: table;
+    position: relative;
+    width:auto;
+    height:auto;
+    padding:1px;
+}
+
+.disbursement_bubble div{
+    display: table-cell;
+    vertical-align: middle;
+    color:white;
+}
+
 

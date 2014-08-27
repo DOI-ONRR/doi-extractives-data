@@ -334,7 +334,7 @@ Homepage Infographic Sections
 Disbursment Bubble Graph
 ============================================*/
 
-.where {
+.disbursement {
 	h1 { 
 		font-size: 26px;
 		font-size: rem(26);
@@ -368,15 +368,15 @@ Disbursment Bubble Graph
     }
 }
 
-.where-info {
-    @include span-columns(12);
-    img {
-        height: 70px;
-    }
-	p {
-		margin-top: 20px;
-	}
-}
+// .where-info {
+//     @include span-columns(12);
+//     img {
+//         height: 70px;
+//     }
+// 	p {
+// 		margin-top: 20px;
+// 	}
+// }
 
 .dollars {
     margin-top: -30px;
@@ -412,40 +412,42 @@ Disbursment Bubble Graph
     img {
         height: 70px;
     }
-    div {
+    > div {
         border-radius: 1000px;
         margin: 2px;
         padding: 1px;
+        border: 2px solid transparent; 
+        &:hover {
+           border: 2px solid $highlight;
+           cursor: pointer; cursor: hand; 
+        }
     }
-    div:hover{
-        border:1px solid yellow;
-    }
-    div:nth-of-type(1) {
-        background-color: $purple1;
+    > div:nth-of-type(1) {
+        background-color: $purple2;
         margin-left: 10%;
         margin-top: 6%;
-        div {
+        > div {
             font-size: 14px;
             font-size: rem(14);
         }
     }
-    div:nth-of-type(2) {
-        background-color: $purple2;
+    > div:nth-of-type(2) {
+        background-color: $purple3;
         margin-top: 5%;
-        div {
+        > div {
             line-height: 12px;
             font-size: 12px;
             font-size: rem(12);
         }
     }
-    div:nth-of-type(3) {
-        background-color: $purple3;
+    > div:nth-of-type(3) {
+        background-color: $purple1;
     }
-    div:nth-of-type(4) {
-        background-color: $purple4;
+    > div:nth-of-type(4) {
+        background-color: lighten($deep-purple, 10%);
         margin-top: -8%;
     }
-    div:nth-of-type(5) {
+    > div:nth-of-type(5) {
         background-color: $purple4;
         margin-left: -4%;
     }
@@ -455,35 +457,38 @@ Disbursment Bubble Graph
     img {
         height: 70px;
     }
-    div {
+    > div {
         border-radius: 1000px;
         margin: 2px;
         padding: 1px;
+        border: 2px solid transparent; 
+        &:hover {
+           border: 2px solid $highlight;
+           cursor: pointer; cursor: hand; 
+        }
     }
-    div:hover{
-        border:1px solid yellow;
-    }
-    div:nth-of-type(1) {
+    > div:nth-of-type(1) {
         background-color: $orange1;
         margin-top: 37%;
     }
-    div:nth-of-type(2) {
-        background-color: $orange2;
-        margin-top: 23%;
+    > div:nth-of-type(2) {
+        background-color: lighten($orange1, 10%);
+        margin-top: 3%;
+        margin-top: 24%;
     }
-    div:nth-of-type(3) {
+    > div:nth-of-type(3) {
         background-color: $orange3;
         margin-left: -39%;
         margin-top: 21%;
     }
-    div:nth-of-type(4) {
-        background-color: $orange2;
-        margin-left: -1%;
+    > div:nth-of-type(4) {
+        background-color: $orange1;
+        margin-left: -0.5%;
     }
-    div:nth-of-type(5) {
-        background-color: $orange3;
+    > div:nth-of-type(5) {
+        background-color: lighten($deep-orange, 10%);
         margin-left: -16%;
-        margin-top: -7%;
+        margin-top: -6%;
     }
 }
 
@@ -503,11 +508,23 @@ Disbursment Bubble Graph
 }
 div.disbursement_bubble_rollover {
     position: absolute;
+    top: 65%; left: 25%;
     z-index: 100;
     display: none;
-    padding:10px;
-    margin: 2px;
+    padding: 10px;
+    background-color: $dark-gray;
+    border: 1px solid $deep-purple;
+    opacity: 0.85;
+    border-radius: 3px;
+    font-size: 14px;
+    font-size: rem(14);
+    text-align: left;
+    .statsOnshore {
+        border: 1px solid $deep-orange;
+    }
 }
+
+
 
 /*============================================
 Map

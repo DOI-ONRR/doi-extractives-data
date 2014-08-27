@@ -68,7 +68,8 @@ d3.csv("/static/data/disbursement-summary-data.csv",function(disbursement_data){
             return restrict_size(d["Total"],.00000005,50,300);
         })
         .html(function(d){
-            return "<div>" + d["Bubble Name"] +"</div>";
+            return "<div class='disbursement_bubble_content'>" + d["Bubble Name"] +"</div>"
+                    +"<div class='disbursement_bubble_rollover'>Total: $"+parseFloat(d["Total"]).formatMoney(2,'.',',')+"</div>";
         });
 
     d3.select(".stats-onshore").selectAll("div")
@@ -83,7 +84,8 @@ d3.csv("/static/data/disbursement-summary-data.csv",function(disbursement_data){
             return restrict_size(d["Total"],.00000005,50,300);
         })
         .html(function(d){
-            return "<div>" + d["Bubble Name"] +"</div>";
+            return "<div class='disbursement_bubble_content'>" + d["Bubble Name"] +"</div>"
+                    +"<div class='disbursement_bubble_rollover'>Total: $"+parseFloat(d["Total"]).formatMoney(2,'.',',')+"</div>";
         });
 
     var circleTip = d3.tip()
@@ -121,15 +123,24 @@ d3.csv("/static/data/disbursement-summary-data.csv",function(disbursement_data){
             return (min+n)+"px";
         return n+"px";
     };
-
+    //displays the disbursement_bubble_rollover div
+    $(".disbursement_bubble").on('mouseover',function(){
+        $('div.disbursement_bubble_rollover', this).toggle();
+    });
+    //hides the disbursement_bubble_rollover div
+    $(".disbursement_bubble").on('mouseout',function(){
+        $('div.disbursement_bubble_rollover', this).toggle();
+    });
+    //Click Functionality for the bubble divs
     $(".disbursement_bubble").click(function(){
         var newSize = 500;//new size of circle
-        var dTime = 500; //duration time
-        var thisClass = $(this).hasClass('statsOffshore') ? 'statsOffshore' : 'statsOnshore';
-        var thisContentDiv = $('div',this);
-        console.log(thisContentDiv.html())
-        var thisRel = typeof( $(this).attr('rel') ) != 'undefined' ? $(this).attr('rel') : findRel($(this),thisClass,thisContentDiv.html(), where_stats_data);
-        //This checks the json object for Img
+        var dTime = 500; //duration time for the animation
+        var thisClass = $(this).hasClass('statsOffshore') ? 'statsOffshore' : 'statsOnshore';//Figures out if the bubble is offshore or onshore
+        var thisContentDiv = $('div.disbursement_bubble_content',this);//Gets the content div of the bubble
+        var thisRel = typeof( $(this).attr('rel') ) != 'undefined' ? $(this).attr('rel') : findRel($(this),thisClass,thisContentDiv.html(), where_stats_data);//gets rel attribute of bubble, sets if not found
+        
+        //This checks the json object for Img3 to determine which object variables to access.
+        //There is probably a better way of doing this.
         var thisDetail = where_stats_data[thisClass][thisRel]['Content']['Img3'] ? 
                             where_stats_data[thisClass][thisRel]['Content']+
                             where_stats_data[thisClass][thisRel]['Img1']+
@@ -141,15 +152,18 @@ d3.csv("/static/data/disbursement-summary-data.csv",function(disbursement_data){
                             where_stats_data[thisClass][thisRel]['Img1Cap']+
                             where_stats_data[thisClass][thisRel]['Img2']+
                             where_stats_data[thisClass][thisRel]['Img2Cap'];
-        var thisName = where_stats_data[thisClass][thisRel]['Title'];
+
+        var thisName = where_stats_data[thisClass][thisRel]['Title'];//Get the name of the bubble, IE the text for the content div when the bubble is shrunk
         
+        //setting a special attribute called prevSize so I can reset the bubble to its original side without accessing the data again
         if (!$(this).attr('prevSize'))
             $(this).attr('prevSize', $(this).width());
 
+        //This is called to shrink all the other bubbles when a different bubble is clicked. So you don't end up with multiple expanded bubbles
         $(this).siblings(".disbursement_bubble").each(function(){
             if ($(this).attr('prevSize'))
             {
-                $('div',this).html(where_stats_data[thisClass][$(this).attr('rel')]['Title']);
+                $('div.disbursement_bubble_content',this).html(where_stats_data[thisClass][$(this).attr('rel')]['Title']);
                 $(this).animate(
                 {
                     width: $(this).attr('prevSize'),
@@ -164,6 +178,7 @@ d3.csv("/static/data/disbursement-summary-data.csv",function(disbursement_data){
             }
         })
 
+        //The size isn't exactly the new size because of padding and margin, add some buffer (-10) and grow it to the new size with an animate call
         if ($(this).width() < newSize-10)//Grow bubble on click
         {
             $(this).animate(
@@ -174,7 +189,7 @@ d3.csv("/static/data/disbursement-summary-data.csv",function(disbursement_data){
             {
                 duration: dTime,
                 complete: function(){
-                   thisContentDiv.html(thisDetail)
+                   thisContentDiv.html(thisDetail)//after the animation is done, insert the new text into the content div
                 }
             })
         }
@@ -189,7 +204,7 @@ d3.csv("/static/data/disbursement-summary-data.csv",function(disbursement_data){
             {
                 duration: dTime,
                 complete: function(){
-                   
+                   //Placeholder, may want to call another function after the animation has shrunk the bubble
                 }
             });
         }
@@ -197,6 +212,10 @@ d3.csv("/static/data/disbursement-summary-data.csv",function(disbursement_data){
 
 });
 
+/***************************
+/Function: findRel
+/Description: Finds the array position in the JSON object and sets the elements rel value to that index
+***************************/
 function findRel(that,thatClass,searchTerm,obj){
     rel = '';
     for (var i =0; i<obj[thatClass].length; i++)

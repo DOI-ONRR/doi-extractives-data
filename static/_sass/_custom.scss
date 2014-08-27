@@ -417,6 +417,9 @@ Disbursment Bubble Graph
         margin: 2px;
         padding: 1px;
     }
+    div:hover{
+        border:1px solid yellow;
+    }
     div:nth-of-type(1) {
         background-color: $purple1;
         margin-left: 10%;
@@ -457,6 +460,9 @@ Disbursment Bubble Graph
         margin: 2px;
         padding: 1px;
     }
+    div:hover{
+        border:1px solid yellow;
+    }
     div:nth-of-type(1) {
         background-color: $orange1;
         margin-top: 37%;
@@ -494,6 +500,13 @@ Disbursment Bubble Graph
     display: table-cell;
     vertical-align: middle;
     color: white;
+}
+div.disbursement_bubble_rollover {
+    position: absolute;
+    z-index: 100;
+    display: none;
+    padding:10px;
+    margin: 2px;
 }
 
 /*============================================

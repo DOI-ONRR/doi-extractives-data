@@ -322,7 +322,7 @@ Homepage Infographic Sections
     width: 400px;
     float: center;
     svg {
-        width: 410px; //Controlls width of pie chart graphic
+        width: 410px; //Controls width of pie chart graphic
     }
 }
 
@@ -330,7 +330,10 @@ Homepage Infographic Sections
     float: center;
 }
 
-//where does the money go?
+/*============================================
+Disbursment Bubble Graph
+============================================*/
+
 .where {
 	h1 { 
 		font-size: 26px;
@@ -350,217 +353,31 @@ Homepage Infographic Sections
 			cursor: pointer;
 		}
 	}
-	span.click-me {
-        font-weight: 900;
+    span:first-of-type {
+        @include span-columns(12);
+        padding-bottom: 15px;
     }
-	span:first-of-type {
-		@include span-columns(12);
-		padding-bottom: 15px;
-	}
-	span:nth-of-type(2){
-		@include span-columns(3);
-		font-size: 34px;
-		font-size: rem(34);
-		padding-left: 5%;
-	}
-	span:nth-of-type(3){
-		@include span-columns(9);
-	}
+    span:nth-of-type(2){
+        @include span-columns(3);
+        font-size: 34px;
+        font-size: rem(34);
+        padding-left: 5%;
+    }
+    span:nth-of-type(3){
+        @include span-columns(9);
+    }
 }
+
 .where-info {
-    @include span-columns(6);
+    @include span-columns(12);
     img {
         height: 70px;
     }
-    h2 {
-        font-size: 16px;
-        font-size: rem(16);
-        text-transform: uppercase;
-        color: $purple1;
-        border-bottom: 2px solid $purple1;
-	}
-	.onshore h2 {
-		color: $orange1;
-        border-bottom: 2px solid $orange1;
-	}
 	p {
 		margin-top: 20px;
-
 	}
 }
-/*.offshore {
-    min-height: 580px;
-    position:relative;
-    top: 30px;
-    h1 {
-        padding: 20px 0 5px 0;
-    }
-	span:first-of-type {
-		color: $purple1;
-		float: none;
-		display: inline;
-	}
-	.where-info-examples > div {
-		@include span-columns(4);
-		text-align: center;
-	}
-}
-.onshore {
-    min-height: 370px;
-    margin-top: -20px;
-    h2, h3, a {
-        color: $orange1;
-        border-bottom-color: $orange1;
-	}
-	span:first-of-type {
-		color: $orange1;
-		float: none;
-		display: inline;
-	}
-	.where-info-examples-small {
-		@include span-columns(3);
-		text-align: right;
-	}
-	.where-info-examples-large {
-		@include span-columns(9);
-		p {
-			margin-top: 6px;
-		}
-	}
-}
-.stats-offshore, .stats-onshore {
-    width: 100%;
-    @include span-columns(6);
-}
 
-.stats-offshore > div, .stats-onshore > div {
-    position: relative;
-    margin-right: 0.5%;
-    padding: 10px;
-    p {
-        font-family: $secondary-font-family, sans-serif;
-        font-weight: 800;
-        font-size: 26px;
-        font-size: rem(26);
-        line-height: 1em;
-    }
-    &:hover, &:focus {
-        opacity: 0.75;
-    }
-}
-
-.stats-offshore div:nth-child(1), .stats-onshore div:nth-child(1) {
-    width: 49.5%;
-    background-color: #7E5177;
-    float: left;
-    height: 100%;
-}
-
-.stats-offshore div:nth-child(2) {
-    width: 49.5%;
-    background-color: #9A6B93;
-    float: right;
-    height: 63.5%;
-    margin-bottom: .5%;
-    p {
-        font-size: 50px;
-        font-size: rem(50);
-    }
-}
-
-.stats-offshore div:nth-child(3) {
-    width: 22.5%;
-    background-color: #B595B0;
-    float: right;
-    height: 35.5%;
-    padding-left: 5px;
-    p {
-        font-size: 18px;
-        font-size: rem(18);
-    }
-}
-
-.stats-offshore div:nth-child(4) {
-    width: 26.5%;
-    background-color: #B183AA;
-    float: right;
-    height: 35.5%;
-    padding-left: 5px;
-    padding-right: 0px;
-    p {
-        font-size: 15px;
-        font-size: rem(15);
-        margin: -0.8em auto auto 34%;
-    }
-}
-
-.stats-offshore > div h1, .stats-onshore > div h1 {
-    margin: 0;
-    padding-top: 0;
-    padding-bottom: 0.5em;
-    font-size: 18px;
-    font-size: rem(18);
-    text-transform: uppercase;
-    font-weight: 500;
-}
-
-.stats-offshore div:nth-child(3) h1, .stats-offshore div:nth-child(4) h1 {
-    padding-top: 1.8em;
-    padding-bottom: 0.25em;
-    font-size: 0.8em;
-}
-
-.stats-offshore > div i, .stats-onshore > div i {
-    position: absolute;
-    text-align: right;
-    font-family: $base-font-family;
-    font-weight: 800;
-    font-size: 50px;
-    font-size:	rem(50);
-    color: $deep-purple;
-    top: -18px;
-    right: 5px;
-    font-style: normal;
-}
-
-.stats-onshore div:nth-child(1) {
-    background-color: $orange1;
-    p {
-        font-size: 50px;
-        font-size: rem(50);
-    }
-}
-
-.stats-onshore div:nth-child(2) {
-    width: 49.5%;
-    background-color: $orange2;
-    float: right;
-    height: 73.5%;
-    margin-bottom: .5%;
-    p {
-        font-size: 50px;
-        font-style: rem(50);
-    }
-}
-
-.stats-onshore div:nth-child(3) {
-    width: 49.5%;
-    background-color: $orange3;
-    float: right;
-    height: 25.5%;
-    p {
-        font-size: 24px;
-        font-style: rem(24);
-    }
-}
-
-.stats-onshore div:nth-child(3) h1 {
-    padding-bottom: 0.25em;
-}
-
-.stats-onshore > div i {
-    color: $deep-orange;
-}*/
 .dollars {
     margin-top: -30px;
     h1 {
@@ -568,16 +385,131 @@ Homepage Infographic Sections
     }
 }
 
+.bubbles {
+    @include span-columns(12);
+    .offshore {
+        @include span-columns(6 of 12);
+    }
+    .onshore {
+        @include span-columns(6 of 12);
+    }
+    h1 {
+        font-size: 16px;
+        font-size: rem(16);
+        text-transform: uppercase;
+        color: $purple1;
+        border-top: 2px solid $purple1;
+        margin-top: 15px;
+        margin-bottom: 25px;
+    }
+    .onshore h1 {
+        color: $orange1;
+        border-top: 2px solid $orange1;
+    }
+}
+.stats-offshore {
+    line-height: 15px;
+    img {
+        height: 70px;
+    }
+    div {
+        border-radius: 1000px;
+        margin: 2px;
+        padding: 1px;
+    }
+    div:nth-of-type(1) {
+        background-color: $purple1;
+        margin-left: 10%;
+        margin-top: 6%;
+        div {
+            font-size: 14px;
+            font-size: rem(14);
+        }
+    }
+    div:nth-of-type(2) {
+        background-color: $purple2;
+        margin-top: 5%;
+        div {
+            line-height: 12px;
+            font-size: 12px;
+            font-size: rem(12);
+        }
+    }
+    div:nth-of-type(3) {
+        background-color: $purple3;
+    }
+    div:nth-of-type(4) {
+        background-color: $purple4;
+        margin-top: -8%;
+    }
+    div:nth-of-type(5) {
+        background-color: $purple4;
+        margin-left: -4%;
+    }
+}
+.stats-onshore {
+    line-height: 15px;
+    img {
+        height: 70px;
+    }
+    div {
+        border-radius: 1000px;
+        margin: 2px;
+        padding: 1px;
+    }
+    div:nth-of-type(1) {
+        background-color: $orange1;
+        margin-top: 37%;
+    }
+    div:nth-of-type(2) {
+        background-color: $orange2;
+        margin-top: 23%;
+    }
+    div:nth-of-type(3) {
+        background-color: $orange3;
+        margin-left: -39%;
+        margin-top: 21%;
+    }
+    div:nth-of-type(4) {
+        background-color: $orange2;
+        margin-left: -1%;
+    }
+    div:nth-of-type(5) {
+        background-color: $orange3;
+        margin-left: -16%;
+        margin-top: -7%;
+    }
+}
+
+.disbursement_bubble {
+    float: left;
+    text-align: center;
+    display: table;
+    position: relative;
+    width: auto;
+    height: auto;
+}
+
+.disbursement_bubble div {
+    display: table-cell;
+    vertical-align: middle;
+    color: white;
+}
+
+/*============================================
+Map
+============================================*/
+
 //how do natural resources become Federal revenue?
 .how {
     h1 {
-    	@include span-columns(12);
+        @include span-columns(12);
     }
     h1:first-of-type {
-    	font-size: 26px;
-    	font-size: rem(26);
-    	line-height: 1em;
-    	padding-bottom: 10px;
+        font-size: 26px;
+        font-size: rem(26);
+        line-height: 1em;
+        padding-bottom: 10px;
     }
     p {
         @include span-columns(6);
@@ -588,9 +520,6 @@ Homepage Infographic Sections
     }
 }
 
-/*============================================
-Mapbox
-============================================*/
 #map {
     position: absolute;
     top: 0;
@@ -835,27 +764,6 @@ Footer
 }
 
 
-/*============================================
-Disbursment Graph
-============================================*/
 
-.disbursement_bubble{
-    border-radius: 1000px;
-    background-color: teal;
-    float:left;
-    text-align: center;
-    margin: 5px;
-    display: table;
-    position: relative;
-    width:auto;
-    height:auto;
-    padding:1px;
-}
-
-.disbursement_bubble div{
-    display: table-cell;
-    vertical-align: middle;
-    color:white;
-}
 
 

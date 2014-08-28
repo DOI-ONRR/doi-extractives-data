@@ -1,4 +1,4 @@
-d3.csv("./doi-extractives-data/static/data/disbursement-summary-data.csv", function(disbursement_data) {
+d3.csv("./static/data/disbursement-summary-data.csv", function(disbursement_data) {
     var onshoreX = crossfilter(disbursement_data);
     var offshoreX = crossfilter(disbursement_data);
 

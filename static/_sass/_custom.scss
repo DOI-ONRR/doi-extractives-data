@@ -340,18 +340,24 @@ Disbursment Bubble Graph
 		font-size: rem(26);
 		line-height: 1em;
 	}
-	h3 {
+	h2 {
 		text-transform: uppercase;
-		font-size: 13px;
+        font-size: 11px;
+        font-size: rem(11);
 		font-weight: 800;
-	}
-	h3, a {
-		color: $purple1;
-		text-decoration: underline;
-		&:hover, &:focus{
-			text-decoration: none;
-			cursor: pointer;
-		}
+        margin-top: 4px;
+        padding-left: 3px;
+        border-left: 2px solid black;
+        &:hover, &:focus {
+            border-left: none;
+        }
+        a {
+            color: black;
+            &:hover, &:focus{
+                text-decoration: none;
+                cursor: pointer;
+            }
+        }
 	}
     span:first-of-type {
         @include span-columns(12);
@@ -504,7 +510,29 @@ Disbursment Bubble Graph
 .disbursement_bubble div {
     display: table-cell;
     vertical-align: middle;
-    color: white;
+    color: black;
+    .disbursement_bubble_details {
+        @include span-columns(9);
+        @include shift(2);
+        text-align: left;
+        h1 {
+            border: none;
+            color: black;
+            text-transform: none;
+            font-size: 32px;
+            font-size: rem(32);
+
+        }
+        p {
+            font-size: 16px;
+            font-size: rem(16);
+            line-height: 22px;
+            line-height: rem(22);
+        }
+        .disbursement_bubble_details_images {
+            @include span-columns(3 of 9);
+        }
+    }
 }
 div.disbursement_bubble_rollover {
     position: absolute;
@@ -512,6 +540,7 @@ div.disbursement_bubble_rollover {
     z-index: 100;
     display: none;
     padding: 10px;
+    color: $light-gray;
     background-color: $dark-gray;
     border: 1px solid $deep-purple;
     opacity: 0.85;

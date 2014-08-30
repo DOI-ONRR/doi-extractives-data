@@ -28,7 +28,25 @@
 	    {% include nav.html %}
 	</section>
 
-    {{ content }}
+	<main role="main" itemscope itemprop="mainContentOfSite">
+
+	<section class="section light-gray">
+	  <div class="container">
+	  	<article class="article">
+
+    	{{ content }}
+
+    	</article>
+      </div>
+	</section>
+
+
+	<section class="section break">
+	<img class="down" src="{{ site.url }}static/img/scroll-down.png" alt="You should scroll down. There is more to learn!">
+	</section>
+
+
+	</main>
 
     {% include footer.html %}
 

@@ -602,6 +602,153 @@ Map
 /*===============================================
 Data Dashboard
 ================================================*/
+article {
+    @include span-columns(8);
+    font-size: 18px;
+    font-size: rem(18);
+    p {
+        line-height: 23px;
+        line-height: rem(23);
+    }
+    .credit {
+        font-size: 14px;
+        font-size: rem(14);
+        line-height: 18px;
+        line-height: rem(18);
+        color: $dark-gray;
+        font-style: italic;
+    }
+    blockquote {
+        font-family: $secondary-font-family;
+        color: $red;
+        margin: 0 auto 0 20px;
+        font-size: 20px;
+        font-size: rem(20);
+        font-style: italic;
+        p {
+            line-height: 26px;
+            line-height: rem(26);
+        }
+    }
+    h1 {
+        padding-bottom: 24px;
+    }
+    h2 {
+        font-family: $secondary-font-family;
+        color: $red;
+        font-size: 25px;
+        font-size: rem(25);
+        font-weight: 300;
+        padding: 18px 0 12px 0;
+    }
+    h3 {
+        font-family: $secondary-font-family;
+        color: $dark-gray;
+        border-bottom: 1px solid $red;
+        font-size: 20px;
+        font-size: rem(20);
+        margin-bottom: 5px;
+        padding-top: 13px;
+
+    }
+    h4 {
+        font-family: $secondary-font-family;
+        color: $dark-gray;
+        font-size: 20px;
+        font-size: rem(20);
+        font-weight: 300;
+    }
+    ul {
+        margin-bottom: 13.5px;
+        font-size: 14px;
+        font-size: rem(14);
+    }
+    li {
+        margin-bottom: 3px;
+        padding-left: 3px;
+    }
+    ul:nth-of-type(1) {
+        li:nth-of-type(1) {
+            width: 31% * 4.5;
+            background: $purple4;
+        }
+        li:nth-of-type(2) {
+            width: 10% * 4.5;
+            background: $purple3;
+        }
+        li:nth-of-type(3), li:nth-of-type(4) {
+            width: 8% * 4.5;
+            background: $purple2;
+        }
+        li:nth-of-type(5) {
+            width: 4% * 4.5;
+            background: $purple1;
+        }
+    }
+    ul:nth-of-type(2) {
+        li:nth-of-type(1) {
+            width: 29% * 4.5;
+            background: $purple4;
+        }
+        li:nth-of-type(2) {
+            width: 13% * 4.5;
+            background: $purple3;
+        }
+        li:nth-of-type(3) {
+            width: 9% * 4.5;
+            background: $purple2;
+        }
+        li:nth-of-type(4), li:nth-of-type(5) {
+            width: 8% * 4.7;
+            background: $purple1;
+        }
+    }
+    ul:nth-of-type(3) {
+        li:nth-of-type(1) {
+            width: 9.1% * 10;
+            background: $purple4;
+        }
+        li:nth-of-type(2) {
+            width: 7.1% * 10;
+            background: $purple3;
+        }
+        li:nth-of-type(3) {
+            width: 4.2% * 10;
+            background: $purple2;
+        }
+        li:nth-of-type(4) {
+            width: 2.9% * 10;
+            background: $purple1;
+        }
+    }
+    ul:nth-of-type(4) {
+        li:nth-of-type(1) {
+            width: 78% * 1.6;
+            background: $purple4;
+        }
+        li:nth-of-type(2) {
+            width: 17% * 2.5;
+            background: $purple3;
+        }
+        li:nth-of-type(3), li:nth-of-type(4) {
+            width: 2% * 8;
+            background: $purple2;
+        }
+        li:nth-of-type(5), li:nth-of-type(6) {
+            width: 1% * 13;
+            background: $purple1;
+        }
+    }
+    ol {
+        margin-bottom: 13.5px;
+        list-style-type: decimal;
+        list-style-position: inside;
+    }
+}
+
+/*===============================================
+Data Dashboard
+================================================*/
 
 $max-width: 100%; //this is setting the width of outer-container.
 //find this variable elsewhere and change it

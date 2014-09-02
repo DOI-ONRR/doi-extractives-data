@@ -259,7 +259,7 @@ d3.csv("../static/data/Updated_Consolidated_Revenue_Data_with_Fake_Names.csv",fu
         .stack(typeDimension_allGroup, "Other Revenues", function(d) {
             return d.value.other_rev
         })
-        .legend(dc.legend().x(500).y(100))
+        .legend(dc.legend().x(470).y(100))
         .centerBar(false)
         .elasticY(true)
         .brushOn(false)

@@ -1,8 +1,10 @@
-d3.csv("./static/data/disbursement-summary-data.csv", function(disbursement_data) {
+var offshoreYearDim;
+var onshoreYearDim;
+d3.csv("/static/data/disbursement-summary-data.csv",function(disbursement_data){
     var onshoreX = crossfilter(disbursement_data);
     var offshoreX = crossfilter(disbursement_data);
 
-    var onshoreYearDim = onshoreX.dimension(function(d) {
+    onshoreYearDim = onshoreX.dimension(function(d){
         return d["Year"]
     });
     onshoreYearDim.filter(function(d) {
@@ -10,8 +12,8 @@ d3.csv("./static/data/disbursement-summary-data.csv", function(disbursement_data
             return true;
     })
 
-    var offshoreYearDim = offshoreX.dimension(function(d) {
-        return d["Year"]
+    offshoreYearDim = offshoreX.dimension(function(d){
+       return d["Year"]
     });
 
     offshoreYearDim.filter(function(d) {
@@ -37,8 +39,6 @@ d3.csv("./static/data/disbursement-summary-data.csv", function(disbursement_data
             return true;
     });
 
-    console.log("Offshore data");
-    print_filter(offshoreYearDim.top(Infinity));
 
     var w = 500;
     var h = 500;
@@ -54,8 +54,8 @@ d3.csv("./static/data/disbursement-summary-data.csv", function(disbursement_data
     //            .attr("r",function(d){
     //                 return restrict_size(d["Total"],.00000005,50,300);
     //            });
-
-    d3.select(".stats-offshore").selectAll("div")
+    console.log(offshoreYearDim.top(Infinity))
+    var offShoreChart = d3.select(".stats-offshore").selectAll("div.disbursement_bubble")
         .data(offshoreYearDim.top(Infinity))
         .enter()
         .append("div")
@@ -71,7 +71,7 @@ d3.csv("./static/data/disbursement-summary-data.csv", function(disbursement_data
             return "<div class='disbursement_bubble_content'>" + d["Bubble Name"] + "</div>" + "<div class='disbursement_bubble_rollover'>Total: $" + parseFloat(d["Total"]).formatMoney(2, '.', ',') + "</div>";
         });
 
-    d3.select(".stats-onshore").selectAll("div")
+    var onShoreChart = d3.select(".stats-onshore").selectAll("div.disbursement_bubble")
         .data(onshoreShoreDim.top(Infinity))
         .enter()
         .append("div")
@@ -85,7 +85,7 @@ d3.csv("./static/data/disbursement-summary-data.csv", function(disbursement_data
         .html(function(d) {
             return "<div class='disbursement_bubble_content'>" + d["Bubble Name"] + "</div>" + "<div class='disbursement_bubble_rollover'>Total: $" + parseFloat(d["Total"]).formatMoney(2, '.', ',') + "</div>";
         });
-
+    
     var circleTip = d3.tip()
         .attr('class', 'd3-tip')
         .offset([-10, 0])
@@ -121,14 +121,76 @@ d3.csv("./static/data/disbursement-summary-data.csv", function(disbursement_data
             return (min + n) + "px";
         return n + "px";
     };
+    //Setup year select links
+    $("#disbursement_year_select a").click(function(){
+        var year = $(this).attr('data-year');
+        onshoreYearDim.filterAll();
+        offshoreYearDim.filterAll();
+        onshoreShoreDim.filter(function(d){
+            if(d == year)
+                return d; 
+        });
+        offshoreYearDim.filter(function(d){
+            if(d == year)
+                return d;
+        });
+        var statsOffshore = d3.selectAll(".stats-offshore").selectAll(".disbursement_bubble");
+        statsOffshore.data(offshoreYearDim.top(Infinity))
+                     .style("height", function(d) {
+                        return restrict_size(d["Total"],.00000005,50,300);
+                    })
+                    .style("width",function(d){
+                        return restrict_size(d["Total"],.00000005,50,300);
+                    });
+        statsOffshore.html(function(d){
+            return "<div class='disbursement_bubble_content'>" + d["Bubble Name"] +"</div>"
+                    +"<div class='disbursement_bubble_rollover'>Total: $"+parseFloat(d["Total"]).formatMoney(2,'.',',')+"</div>";
+        });
+
+        var statsOnshore = d3.selectAll(".stats-onshore").selectAll(".disbursement_bubble");
+        statsOnshore.data(offshoreYearDim.top(Infinity))
+                     .style("height", function(d) {
+                        return restrict_size(d["Total"],.00000005,50,300);
+                    })
+                    .style("width",function(d){
+                        return restrict_size(d["Total"],.00000005,50,300);
+                    });
+        statsOnshore.html(function(d){
+            return "<div class='disbursement_bubble_content'>" + d["Bubble Name"] +"</div>"
+                    +"<div class='disbursement_bubble_rollover'>Total: $"+parseFloat(d["Total"]).formatMoney(2,'.',',')+"</div>";
+        });
+
+
+        print_filter(offshoreYearDim)
+        
+
+    });
     //displays the disbursement_bubble_rollover div
-    $(".disbursement_bubble").on('mouseover', function() {
-        $('div.disbursement_bubble_rollover', this).toggle();
+    $(".disbursement_bubble").on('mouseover',function(){
+        $('div.disbursement_bubble_rollover', this).show();
     });
     //hides the disbursement_bubble_rollover div
-    $(".disbursement_bubble").on('mouseout', function() {
-        $('div.disbursement_bubble_rollover', this).toggle();
+    $(".disbursement_bubble").on('mouseout',function(){
+        $('div.disbursement_bubble_rollover', this).hide();
     });
+    $(".info_bubble").click(function(){
+        var dTime = 500; //duration time for the animation
+        $(this).siblings(".disbursement_bubble").animate({
+            opacity:1.0
+        });
+        $(this).animate({
+            width:0,
+            height:0
+        },
+        {
+            duration:dTime,
+            complete:function(){
+                $(this).hide();
+                $(this).children().html("");
+            }
+        });
+
+    })
     //Click Functionality for the bubble divs
     $(".disbursement_bubble").click(function() {
         var newSize = 500; //new size of circle
@@ -139,30 +201,29 @@ d3.csv("./static/data/disbursement-summary-data.csv", function(disbursement_data
 
         //This checks the json object for Img3 to determine which object variables to access.
         //There is probably a better way of doing this.
-        var thisDetail = where_stats_data[thisClass][thisRel]['Content']['Img3'] ?
-            where_stats_data[thisClass][thisRel]['Content'] +
-            where_stats_data[thisClass][thisRel]['Img1'] +
-            where_stats_data[thisClass][thisRel]['Img2'] +
-            where_stats_data[thisClass][thisRel]['Img3'] :
-            where_stats_data[thisClass][thisRel]['Content'] +
-            where_stats_data[thisClass][thisRel]['Img1'] +
-            where_stats_data[thisClass][thisRel]['Img1Cap'] +
-            where_stats_data[thisClass][thisRel]['Img2'] +
-            where_stats_data[thisClass][thisRel]['Img2Cap'];
+        var thisDetail = where_stats_data[thisClass][thisRel]['Content'];
 
         var thisName = where_stats_data[thisClass][thisRel]['Title']; //Get the name of the bubble, IE the text for the content div when the bubble is shrunk
 
         //setting a special attribute called prevSize so I can reset the bubble to its original side without accessing the data again
         if (!$(this).attr('prevSize'))
             $(this).attr('prevSize', $(this).width());
+        $(this).siblings(".info_bubble").hide();
+        $(this).siblings(".info_bubble").css("width","0");
+        $(this).siblings(".info_bubble").css("height","0")
+        $(this).siblings(".info_bubble").children().html("");
 
         //This is called to shrink all the other bubbles when a different bubble is clicked. So you don't end up with multiple expanded bubbles
-        $(this).siblings(".disbursement_bubble").each(function() {
-            if ($(this).attr('prevSize')) {
-                $('div.disbursement_bubble_content', this).html(where_stats_data[thisClass][$(this).attr('rel')]['Title']);
-                $(this).animate({
-                    width: $(this).attr('prevSize'),
-                    height: $(this).attr('prevSize')
+        $(this).siblings(".disbursement_bubble").each(function(){
+            if ($(this).attr('prevSize'))
+            {
+               // $(this).css({"position":"relative", "z-index":"1"});
+                $('div.disbursement_bubble_content',this).html(where_stats_data[thisClass][$(this).attr('rel')]['Title']);
+                $(this).animate(
+                {
+                    // width: $(this).attr('prevSize'),
+                    // height: $(this).attr('prevSize')
+                    opacity:1.0
                 }, {
                     duration: dTime,
                     complete: function() {
@@ -175,21 +236,31 @@ d3.csv("./static/data/disbursement-summary-data.csv", function(disbursement_data
         //The size isn't exactly the new size because of padding and margin, add some buffer (-10) and grow it to the new size with an animate call
         if ($(this).width() < newSize - 10) //Grow bubble on click
         {
-            $(this).animate({
+            //$(this).css({"position":"absolute","z-index":"100"});
+            $(this).siblings(".info_bubble").show();
+            $(this).siblings(".info_bubble").animate({
                 width: newSize,
-                height: newSize,
+                height: newSize
+            });
+            $(this).animate(
+            {
+                // width: newSize,
+                // height: newSize,
+                opacity:0.0
             }, {
                 duration: dTime,
                 complete: function() {
-                    thisContentDiv.html(thisDetail) //after the animation is done, insert the new text into the content div
+                    $(this).siblings("div.info_bubble").children().html(thisDetail) //after the animation is done, insert the new text into the content div
                 }
             })
         } else //Shrink clicked bubble 
         {
+            //$(this).css({"position":"relative", "z-index":"1"});
             thisContentDiv.html(thisName)
             $(this).animate({
-                width: $(this).attr('prevSize'),
-                height: $(this).attr('prevSize'),
+                // width: $(this).attr('prevSize'),
+                // height: $(this).attr('prevSize'),
+                opacity:1.0
             }, {
                 duration: dTime,
                 complete: function() {

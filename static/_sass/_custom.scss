@@ -333,7 +333,6 @@ Homepage Infographic Sections
 /*============================================
 Disbursment Bubble Graph
 ============================================*/
-
 .disbursement {
 	h1 { 
 		font-size: 26px;
@@ -364,30 +363,46 @@ Disbursment Bubble Graph
         padding-bottom: 15px;
     }
     span:nth-of-type(2){
-        @include span-columns(3);
+        @include span-columns(3 of 12);
         font-size: 34px;
         font-size: rem(34);
         padding-left: 5%;
     }
     span:nth-of-type(3){
-        @include span-columns(9);
+        @include span-columns(9 of 12);
     }
 }
 
-// .where-info {
-//     @include span-columns(12);
-//     img {
-//         height: 70px;
+// #disbursement_year_select{
+//     width:100%;
+//     div{
+//         float:left;
 //     }
-// 	p {
-// 		margin-top: 20px;
-// 	}
+//     .bar{
+//         position: relative;
+//         text-align: center;
+//     }
+//     .bar:after{
+//         content: "";
+//         position: absolute;
+//         z-index: -1;
+//         top:50%;
+//         border-top: 2px solid;
+//     }
 // }
 
 .dollars {
-    margin-top: -30px;
+    @include span-columns(12);
+    margin: 20px 0 10px 0;
     h1 {
-        padding: 40px 0 20px 0;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-size: rem(18);
+        float: left;
+        padding: 9px 8px 0 0;
+    }
+    a {
+        @include button(pill, $medium-gray);
     }
 }
 
@@ -415,8 +430,13 @@ Disbursment Bubble Graph
 }
 .stats-offshore {
     line-height: 15px;
+    position: relative;
     img {
         height: 70px;
+    }
+    .info_bubble {
+        border: 2px solid $highlight;
+        background-color: $purple1;
     }
     > div {
         border-radius: 1000px;
@@ -428,12 +448,12 @@ Disbursment Bubble Graph
            cursor: pointer; cursor: hand; 
         }
     }
-    > div:nth-of-type(1) {
+    > div:nth-of-type(2) {
         background-color: $purple2;
         margin-left: 10%;
         margin-top: 6%;
     }
-    > div:nth-of-type(2) {
+    > div:nth-of-type(3) {
         background-color: $purple3;
         margin-top: 5%;
         > div {
@@ -442,22 +462,27 @@ Disbursment Bubble Graph
             font-size: rem(12);
         }
     }
-    > div:nth-of-type(3) {
+    > div:nth-of-type(4) {
         background-color: $purple1;
     }
-    > div:nth-of-type(4) {
+    > div:nth-of-type(5) {
         background-color: lighten($deep-purple, 10%);
         margin-top: -8%;
     }
-    > div:nth-of-type(5) {
+    > div:nth-of-type(6) {
         background-color: $purple4;
         margin-left: -4%;
     }
 }
 .stats-onshore {
     line-height: 15px;
+    position: relative;
     img {
         height: 70px;
+    }
+    .info_bubble {
+        border: 2px solid $highlight;
+        background-color: $orange1;
     }
     > div {
         border-radius: 1000px;
@@ -469,25 +494,25 @@ Disbursment Bubble Graph
            cursor: pointer; cursor: hand; 
         }
     }
-    > div:nth-of-type(1) {
+    > div:nth-of-type(2) {
         background-color: $orange1;
         margin-top: 37%;
     }
-    > div:nth-of-type(2) {
+    > div:nth-of-type(3) {
         background-color: lighten($orange1, 10%);
         margin-top: 3%;
         margin-top: 24%;
     }
-    > div:nth-of-type(3) {
+    > div:nth-of-type(4) {
         background-color: $orange3;
         margin-left: -39%;
         margin-top: 21%;
     }
-    > div:nth-of-type(4) {
+    > div:nth-of-type(5) {
         background-color: $orange1;
         margin-left: -0.5%;
     }
-    > div:nth-of-type(5) {
+    > div:nth-of-type(6) {
         background-color: lighten($deep-orange, 10%);
         margin-left: -16%;
         margin-top: -6%;
@@ -501,16 +526,45 @@ Disbursment Bubble Graph
     position: relative;
     width: auto;
     height: auto;
+    div {
+        display: table-cell;
+        vertical-align: middle;
+        color: black;
+    }
 }
 
-.disbursement_bubble div {
-    display: table-cell;
-    vertical-align: middle;
-    color: black;
+div.disbursement_bubble_rollover {
+    position: absolute;
+    top: 65%; left: 25%;
+    z-index: 100;
+    display: none;
+    padding: 10px;
+    color: $light-gray;
+    background-color: $dark-gray;
+    border: 1px solid $deep-purple;
+    opacity: 0.85;
+    border-radius: 3px;
+    font-size: 14px;
+    font-size: rem(14);
+    text-align: left;
+    .statsOnshore {
+        border: 1px solid $deep-orange;
+    }
+}
+
+.info_bubble {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    width: 0px;
+    height: 0px;
+    z-index: 1000;
+    display: none;
     .disbursement_bubble_details {
         @include span-columns(9);
         @include shift(2);
         text-align: left;
+        margin-top: 9%;
         h1 {
             border: none;
             color: black;
@@ -528,24 +582,6 @@ Disbursment Bubble Graph
         .disbursement_bubble_details_images {
             @include span-columns(3 of 9);
         }
-    }
-}
-div.disbursement_bubble_rollover {
-    position: absolute;
-    top: 65%; left: 25%;
-    z-index: 100;
-    display: none;
-    padding: 10px;
-    color: $light-gray;
-    background-color: $dark-gray;
-    border: 1px solid $deep-purple;
-    opacity: 0.85;
-    border-radius: 3px;
-    font-size: 14px;
-    font-size: rem(14);
-    text-align: left;
-    .statsOnshore {
-        border: 1px solid $deep-orange;
     }
 }
 

@@ -217,6 +217,10 @@ d3.csv("/static/data/disbursement-summary-data.csv",function(disbursement_data){
         //setting a special attribute called prevSize so I can reset the bubble to its original side without accessing the data again
         if (!$(this).attr('prevSize'))
             $(this).attr('prevSize', $(this).width());
+        $(this).siblings(".info_bubble").hide();
+        $(this).siblings(".info_bubble").css("width","0");
+        $(this).siblings(".info_bubble").css("height","0")
+        $(this).siblings(".info_bubble").children().html("");
 
         //This is called to shrink all the other bubbles when a different bubble is clicked. So you don't end up with multiple expanded bubbles
         $(this).siblings(".disbursement_bubble").each(function(){

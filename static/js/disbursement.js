@@ -54,8 +54,8 @@ d3.csv("/static/data/disbursement-summary-data.csv",function(disbursement_data){
     //            .attr("r",function(d){
     //                 return restrict_size(d["Total"],.00000005,50,300);
     //            });
-    
-    var offShoreChart = d3.select(".stats-offshore").selectAll("div")
+    console.log(offshoreYearDim.top(Infinity))
+    var offShoreChart = d3.select(".stats-offshore").selectAll("div.disbursement_bubble")
         .data(offshoreYearDim.top(Infinity))
         .enter()
         .append("div")
@@ -71,7 +71,7 @@ d3.csv("/static/data/disbursement-summary-data.csv",function(disbursement_data){
             return "<div class='disbursement_bubble_content'>" + d["Bubble Name"] + "</div>" + "<div class='disbursement_bubble_rollover'>Total: $" + parseFloat(d["Total"]).formatMoney(2, '.', ',') + "</div>";
         });
 
-    var onShoreChart = d3.select(".stats-onshore").selectAll("div")
+    var onShoreChart = d3.select(".stats-onshore").selectAll("div.disbursement_bubble")
         .data(onshoreShoreDim.top(Infinity))
         .enter()
         .append("div")
@@ -174,13 +174,22 @@ d3.csv("/static/data/disbursement-summary-data.csv",function(disbursement_data){
         $('div.disbursement_bubble_rollover', this).hide();
     });
     $(".info_bubble").click(function(){
+        var dTime = 500; //duration time for the animation
         $(this).siblings(".disbursement_bubble").animate({
             opacity:1.0
         });
         $(this).animate({
             width:0,
             height:0
-        })
+        },
+        {
+            duration:dTime,
+            complete:function(){
+                $(this).hide();
+                $(this).children().html("");
+            }
+        });
+
     })
     //Click Functionality for the bubble divs
     $(".disbursement_bubble").click(function() {

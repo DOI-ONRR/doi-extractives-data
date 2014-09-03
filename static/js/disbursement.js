@@ -204,12 +204,13 @@ d3.csv("/static/data/disbursement-summary-data.csv",function(disbursement_data){
         $(this).siblings(".disbursement_bubble").each(function(){
             if ($(this).attr('prevSize'))
             {
-                $(this).css({"position":"relative", "z-index":"1"});
+               // $(this).css({"position":"relative", "z-index":"1"});
                 $('div.disbursement_bubble_content',this).html(where_stats_data[thisClass][$(this).attr('rel')]['Title']);
                 $(this).animate(
                 {
-                    width: $(this).attr('prevSize'),
-                    height: $(this).attr('prevSize')
+                    // width: $(this).attr('prevSize'),
+                    // height: $(this).attr('prevSize')
+                    opacity:1.0
                 }, {
                     duration: dTime,
                     complete: function() {
@@ -222,24 +223,31 @@ d3.csv("/static/data/disbursement-summary-data.csv",function(disbursement_data){
         //The size isn't exactly the new size because of padding and margin, add some buffer (-10) and grow it to the new size with an animate call
         if ($(this).width() < newSize - 10) //Grow bubble on click
         {
-            $(this).css({"position":"absolute","z-index":"100"});
+            //$(this).css({"position":"absolute","z-index":"100"});
+            $(this).siblings(".info_bubble").show();
+            $(this).siblings(".info_bubble").animate({
+                width: newSize,
+                height: newSize
+            });
             $(this).animate(
             {
-                width: newSize,
-                height: newSize,
+                // width: newSize,
+                // height: newSize,
+                opacity:0.0
             }, {
                 duration: dTime,
                 complete: function() {
-                    thisContentDiv.html(thisDetail) //after the animation is done, insert the new text into the content div
+                    $(this).siblings("div.info_bubble").children().html(thisDetail) //after the animation is done, insert the new text into the content div
                 }
             })
         } else //Shrink clicked bubble 
         {
-            $(this).css({"position":"relative", "z-index":"1"});
+            //$(this).css({"position":"relative", "z-index":"1"});
             thisContentDiv.html(thisName)
             $(this).animate({
-                width: $(this).attr('prevSize'),
-                height: $(this).attr('prevSize'),
+                // width: $(this).attr('prevSize'),
+                // height: $(this).attr('prevSize'),
+                opacity:1.0
             }, {
                 duration: dTime,
                 complete: function() {

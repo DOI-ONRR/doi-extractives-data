@@ -333,6 +333,23 @@ Homepage Infographic Sections
 /*============================================
 Disbursment Bubble Graph
 ============================================*/
+#disbursement_year_select{
+    width:100%;
+    div{
+        float:left;
+    }
+    .bar{
+        position: relative;
+        text-align: center;
+    }
+    .bar:after{
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top:50%;
+        border-top: 2px solid;
+    }
+}
 
 .disbursement {
 	h1 { 
@@ -415,6 +432,7 @@ Disbursment Bubble Graph
 }
 .stats-offshore {
     line-height: 15px;
+    position: relative;
     img {
         height: 70px;
     }
@@ -456,6 +474,7 @@ Disbursment Bubble Graph
 }
 .stats-onshore {
     line-height: 15px;
+    position: relative;
     img {
         height: 70px;
     }
@@ -547,6 +566,19 @@ div.disbursement_bubble_rollover {
     .statsOnshore {
         border: 1px solid $deep-orange;
     }
+}
+
+div.info_bubble{
+    position: absolute;
+    top:0;
+    left:0;
+    width:0px;
+    height:0px;
+    color:black;
+    background-color:white;
+    border-radius: 1000px;
+    z-index: 1000;
+    display: none;
 }
 
 

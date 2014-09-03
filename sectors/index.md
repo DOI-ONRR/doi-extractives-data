@@ -45,6 +45,8 @@ As of 2012, about 20% of U.S. crude oil was produced from wells located offshore
 
 Although total U.S. crude oil production generally declined between 1985 and 2008, it has been increasing since 2008. More cost effective drilling technology has helped boost production, especially in North Dakota, Texas, and the offshore Gulf of Mexico.
 
+For more information on oil, including how it is formed, what products use oil, and the refining process, visit the [Energy Information Agency](http://www.eia.gov/kids/energy.cfm?page=oil_home).
+
 ###Natural Gas Plant Liquids
 Natural gas plant liquids (NGPL) are liquids that are separated from natural gas at processing plants and are important ingredients for manufacturing plastics and gasoline. Propane is the only NGPL that is widely used for heating and cooking. Production of NGPL fluctuates with natural gas production, but their share of total U.S. petroleum production has increased from 8% in 1950 to 27% in 2012.
 
@@ -69,8 +71,8 @@ Reliance on natural gas imports has declined in recent years due to a surge in n
 
 Natural gas can be transported in two ways:
 
-1. **Via pipeline.** There are more than 210 natural gas pipeline systems.
-2. **Via ship.** Natural gas is shipped in the form of liquefied natural gas (LNG).
+1. **By pipeline.** There are more than 210 natural gas pipeline systems.
+2. **By ship.** Natural gas is shipped in the form of liquefied natural gas (LNG).
 
 In 2012, 94% of net imports came by pipeline, primarily from Canada, and 10% came by liquefied natural gas (LNG) tankers carrying gas from around the world.
 
@@ -88,6 +90,8 @@ The major consumers of natural gas in the United States in 2012 included:
 + Commercial sector (2.9 Tcf)
 
 Natural gas is used throughout the United States, but the top natural gas consuming states in 2011 were Texas, California, Louisiana, Florida, New York, and Illinois.
+
+For more information on natural gas, including how it is formed, how it is transported, and the impact of natural gas extraction on the environment, visit the [Energy Information Agency](http://www.eia.gov/kids/energy.cfm?page=natural_gas_home).
 
 ###Coal
 Coal is a nonrenewable energy source because it takes millions of years to develop. The energy in coal comes from the energy stored by plants that lived hundreds of millions of years ago when the earth was partly covered with swampy forests. Coal is classified into four main types, or ranks (anthracite, bituminous, subbituminous, and lignite). Classification depends on the amounts and types of carbon the coal contains and on the amount of heat energy the coal can produce. The rank of a deposit of coal depends on the pressure and heat that acted on the plant debris as it sank deeper and deeper over millions of years. For the most part, the higher ranks of coal contain more heat-producing energy.
@@ -111,6 +115,8 @@ Coal is used to create about 39% of all the electricity generated in the United 
 
 In addition to companies in the electric power sector, industries and businesses with their own power plants use coal to generate electricity.
 
+For more information on coal, including how it is formed, types of coal, and the impact of coal mining on the environment, visit the [Energy Information Agency](http://www.eia.gov/kids/energy.cfm?page=coal_home).
+
 
 ##Renewable Energy
 
@@ -120,6 +126,7 @@ Over half of renewable energy goes to producing electricity. The next largest us
 
 Renewable energy plays an important role in the supply of energy. When renewable energy sources are used, the demand for fossil fuels is reduced. Unlike fossil fuels, non-biomass renewable sources of energy (hydropower, geothermal, wind, and solar) do not directly emit greenhouse gases.
 
+###Geothermal Energy
 Most of the geothermal power plants in the United States are located in the western states and in Hawaii where geothermal energy resources are close to the earth's surface. California generates the most electricity from geothermal energy. [The Geysers](http://en.wikipedia.org/wiki/The_Geysers) dry steam reservoir in northern California is the largest known dry steam field in the world and has been producing electricity since 1960.
 
 The United States leads the world in the amount of electricity generated with geothermal energy. In 2013, U.S. geothermal power plants produced about 17 billion kilowatthours (kWh), 0.4% of total U.S. electricity generation. In 2013, six states had geothermal power plants.
@@ -133,16 +140,18 @@ Share of U.S. geothermal electricity produced by each state in 2013:
 + Oregon (1%)
 + Idaho	(1%)
 
+For more information on renewable energy, including background on the major types of renewable energy such as biomass, hydropower, geothermal, wind, and solar, visit the [Energy Information Agency](http://www.eia.gov/kids/energy.cfm?page=renewable_home-basics).
+
 
 ##Other Products: Non‐fuel Minerals
 
-Federal lands produce a wide variety of minerals. For example, in 2013 it is estimated that about 2.4 million ounces of gold were produced from Federal lands in Nevada (and the average price of gold in 2013 was $1,400 per ounce). Non‐fuel mineral production was associated with an estimated value-added of $7.9 billion, estimated economic output of $12.5 billion, and estimated employment of about 45,900 jobs. <span class="credit">U.S. Department of the Interior Economic Report FY 2013 DRAFT</span>
+Federal lands produce a wide variety of minerals. For example, in 2013 it is estimated that about 2.4 million ounces of gold were produced from Federal lands in Nevada (and the average price of gold in 2013 was $1,400 per ounce). Non‐fuel mineral production was associated with an estimated value-added of $7.9 billion, estimated economic output of $12.5 billion, and estimated employment of about 45,900 jobs. For further information on the economic impact of minerals, please see the [U.S. Department of the Interior Economic Report](http://www.doi.gov/ppa/economic_analysis/economic-report.cfm).
 
-Some of the most important minerals mined in the U.S. include gold and copper. For example, in 2011 the value of nonfuel mineral commodity production for the following 14 mined commodities (in descending order of production value) was greater than $1 billion: gold, stone (crushed), copper, sand and gravel (construction), cement (portland), iron ore (usable shipped), molybdenum concentrates, phosphate rock (marketable), lime, sand and gravel (industrial), salt, zinc, soda ash, and silver. They accounted for 90% of the U.S. total production value. <span class="credit">U.S. Geological Survey, U.S. Department of the Interior, 2011 Minerals Yearbook - Statistical Summary. NB: the 2012 report should be released by December, update when available.</span>
+Some of the most important minerals mined in the U.S. include gold and copper. For example, in 2011 the value of nonfuel mineral commodity production for the following 14 mined commodities (in descending order of production value) was greater than $1 billion: gold, stone (crushed), copper, sand and gravel (construction), cement (portland), iron ore (usable shipped), molybdenum concentrates, phosphate rock (marketable), lime, sand and gravel (industrial), salt, zinc, soda ash, and silver. They accounted for 90% of the U.S. total production value.
 
-In terms of location, the value of nonfuel mineral commodity production in the following 21 States, in descending order of production value, was greater than $1 billion in 2011: Nevada, Arizona, Minnesota, Utah, Alaska, Florida, California, Texas, Michigan, Missouri, Wyoming, Colorado, Pennsylvania, Georgia, Montana, New York, Idaho, New Mexico, Virginia, Kansas, and Illinois. They accounted for 82% of the U.S. total production. <span class="credit">U.S. Geological Survey, U.S. Department of the Interior, 2011 Minerals Yearbook - Statistical Summary. NB: the 2012 report should be released by December, update when available.</span>
+In terms of location, the value of nonfuel mineral commodity production in the following 21 States, in descending order of production value, was greater than $1 billion in 2011: Nevada, Arizona, Minnesota, Utah, Alaska, Florida, California, Texas, Michigan, Missouri, Wyoming, Colorado, Pennsylvania, Georgia, Montana, New York, Idaho, New Mexico, Virginia, Kansas, and Illinois. They accounted for 82% of the U.S. total production.
 
-For detailed information on each mineral commodity, please see the [U.S. Geological Survey  Mineral Commodity Summaries](http://minerals.usgs.gov/minerals/pubs/mcs/2014/mcs2014.pdf) (pdf). Each chapter provides information on events, trends, and issues for each mineral commodity as well as discussions and tabular presentations on domestic industry structure, government programs, tariffs, 5-year salient statistics, and world production and resources. More than 90 individual minerals and materials are covered by two-page synopses.
+For more statistics on mineral and material industries, visit the [U.S. Geological Survey Minerals Yearbook](http://minerals.usgs.gov/minerals/pubs/myb.html). This and similar summary information is available in its [Statistical Summary](http://minerals.usgs.gov/minerals/pubs/commodity/statistical_summary/index.html#myb).
 
 
 ###Significant Events, Trends, and Issues
@@ -153,4 +162,4 @@ The estimated value of mineral raw materials produced at mines in the United Sta
 
 The estimated value of U.S. metal mine production in 2013 was $32.0 billion, about 8% less than that of 2012. Principal contributors to the total value of metal mine production in 2013 were gold (32%), copper (29%), iron ore (17%), molybdenum (10%), and zinc (5%). Average prices for most domestically mined metals decreased in 2013. The yearly average price of gold decreased for the first time since 2001. The estimated value of U.S. industrial minerals mine production in 2013 was $42.3 billion, about 3% more than that of 2012. The value of industrial minerals mine production in 2013 was dominated by crushed stone (28%), cement (16%), and construction sand and gravel (16%). In general, industrial minerals prices were relatively stable, with modest price variations. Mine production of 14 mineral commodities was worth more than $1 billion each in the United States in 2013. These were, in decreasing order of value, crushed stone, gold, copper, cement, construction sand and gravel, iron ore (shipped), molybdenum concentrates, phosphate rock, industrial sand and gravel, lime, soda ash, salt, zinc, and clays (all types).
 
-<p class="credit">Except where noted, information on this page is from the Energy Information Agency (EIA). [ADD LINK AND INFO HERE]</p>
+For detailed information on each mineral commodity and futher trend analysis, please see the [U.S. Geological Survey  Mineral Commodity Summaries](http://minerals.usgs.gov/minerals/pubs/mcs/2014/mcs2014.pdf) (pdf). Each chapter provides information on events, trends, and issues for each mineral commodity as well as discussions and tabular presentations on domestic industry structure, government programs, tariffs, 5-year salient statistics, and world production and resources. More than 90 individual minerals and materials are covered by two-page synopses.

@@ -333,24 +333,6 @@ Homepage Infographic Sections
 /*============================================
 Disbursment Bubble Graph
 ============================================*/
-#disbursement_year_select{
-    width:100%;
-    div{
-        float:left;
-    }
-    .bar{
-        position: relative;
-        text-align: center;
-    }
-    .bar:after{
-        content: "";
-        position: absolute;
-        z-index: -1;
-        top:50%;
-        border-top: 2px solid;
-    }
-}
-
 .disbursement {
 	h1 { 
 		font-size: 26px;
@@ -381,30 +363,46 @@ Disbursment Bubble Graph
         padding-bottom: 15px;
     }
     span:nth-of-type(2){
-        @include span-columns(3);
+        @include span-columns(3 of 12);
         font-size: 34px;
         font-size: rem(34);
         padding-left: 5%;
     }
     span:nth-of-type(3){
-        @include span-columns(9);
+        @include span-columns(9 of 12);
     }
 }
 
-// .where-info {
-//     @include span-columns(12);
-//     img {
-//         height: 70px;
+// #disbursement_year_select{
+//     width:100%;
+//     div{
+//         float:left;
 //     }
-// 	p {
-// 		margin-top: 20px;
-// 	}
+//     .bar{
+//         position: relative;
+//         text-align: center;
+//     }
+//     .bar:after{
+//         content: "";
+//         position: absolute;
+//         z-index: -1;
+//         top:50%;
+//         border-top: 2px solid;
+//     }
 // }
 
 .dollars {
-    margin-top: -30px;
+    @include span-columns(12);
+    margin: 20px 0 10px 0;
     h1 {
-        padding: 40px 0 20px 0;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-size: rem(18);
+        float: left;
+        padding: 9px 8px 0 0;
+    }
+    a {
+        @include button(pill, $medium-gray);
     }
 }
 

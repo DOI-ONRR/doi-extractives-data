@@ -244,8 +244,8 @@ var where_stats_data = {
             "Content": "<div class=\"disbursement_bubble_details\"><h1>Land &amp; Water Conservation Fund</h1><p>The <a href=\"http\://www.nps.gov/lwcf/\">Land & Water Conservation Fund</a> provides matching grants to states and local governments to buy and develop public outdoor recreation areas. It has supported projects in all 50 states and U.S. territories, creating community parks and trails and protecting clean water sources. Here are a few places that were funded by the LWCF:</p><div class=\"disbursement_bubble_details_images\"><img src=\"http://meiqimichelle.github.io/d3-minihack/assets/img/icon_16251.svg\" alt=\"Mountains\"><h2><a href=\"http\://www.emnrd.state.nm.us/SPD/eaglenestlakestatepark.html\">Eagle Nest Lake State Park, New Mexico</a></h2></div><div class=\"disbursement_bubble_details_images\"><img src=\"http://meiqimichelle.github.io/d3-minihack/assets/img/icon_26235.svg\" alt=\"Playground\"><h2><a href=\"http\://www.mitchellparkdc.org/history.html\">Mitchell Park, District of Columbia</a></h2></div><div class=\"disbursement_bubble_details_images\"><img src=\"http://meiqimichelle.github.io/d3-minihack/assets/img/icon_25079.svg\" alt=\"Baseball field\"><h2><a href=\"http\://www.ofallon.org/parks/pages/family-sports-park\">Family Sports Park, Illinois</a></h2></div></div>",
         }, {
             //Array ID -> 2
-            "Title": "BOEM/BSEE",
-            "Content": "<div class=\"disbursement_bubble_details\"><h1>BOEM/BSEE</h1><p>Information coming soon!</p></div>",
+            "Title": "Other Funds",
+            "Content": "<div class=\"disbursement_bubble_details\"><h1>Other Funds</h1><p>Some revenue from offshore locations returns to the Federal agency that manages the area.</p><div class=\"disbursement_bubble_details_images\"><h2><a href=\"http://www.boem.gov/\">Bureau of Ocean Energy Management</a></h2></div><div class=\"disbursement_bubble_details_images\"><h2><a href=\"http://www.bsee.gov/\">Bureau of Safety and Environmental Enforcement</a></h2></div></div>",
         },
     ],
 

@@ -173,6 +173,15 @@ d3.csv("/static/data/disbursement-summary-data.csv",function(disbursement_data){
     $(".disbursement_bubble").on('mouseout',function(){
         $('div.disbursement_bubble_rollover', this).hide();
     });
+    $(".info_bubble").click(function(){
+        $(this).siblings(".disbursement_bubble").animate({
+            opacity:1.0
+        });
+        $(this).animate({
+            width:0,
+            height:0
+        })
+    })
     //Click Functionality for the bubble divs
     $(".disbursement_bubble").click(function() {
         var newSize = 500; //new size of circle

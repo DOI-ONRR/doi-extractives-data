@@ -520,35 +520,13 @@ Disbursment Bubble Graph
     position: relative;
     width: auto;
     height: auto;
-}
-
-.disbursement_bubble div {
-    display: table-cell;
-    vertical-align: middle;
-    color: black;
-    .disbursement_bubble_details {
-        @include span-columns(9);
-        @include shift(2);
-        text-align: left;
-        h1 {
-            border: none;
-            color: black;
-            text-transform: none;
-            font-size: 32px;
-            font-size: rem(32);
-
-        }
-        p {
-            font-size: 16px;
-            font-size: rem(16);
-            line-height: 22px;
-            line-height: rem(22);
-        }
-        .disbursement_bubble_details_images {
-            @include span-columns(3 of 9);
-        }
+    div {
+        display: table-cell;
+        vertical-align: middle;
+        color: black;
     }
 }
+
 div.disbursement_bubble_rollover {
     position: absolute;
     top: 65%; left: 25%;
@@ -568,7 +546,7 @@ div.disbursement_bubble_rollover {
     }
 }
 
-div.info_bubble{
+.info_bubble{
     position: absolute;
     top:0;
     left:0;
@@ -579,6 +557,29 @@ div.info_bubble{
     border-radius: 1000px;
     z-index: 1000;
     display: none;
+    .disbursement_bubble_details {
+        @include span-columns(9);
+        @include shift(2);
+        text-align: left;
+        margin-top: 9%;
+        h1 {
+            border: none;
+            color: black;
+            text-transform: none;
+            font-size: 32px;
+            font-size: rem(32);
+
+        }
+        p {
+            font-size: 16px;
+            font-size: rem(16);
+            line-height: 22px;
+            line-height: rem(22);
+        }
+        .disbursement_bubble_details_images {
+            @include span-columns(3 of 9);
+        }
+    }
 }
 
 

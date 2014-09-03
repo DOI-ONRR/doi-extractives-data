@@ -436,6 +436,10 @@ Disbursment Bubble Graph
     img {
         height: 70px;
     }
+    .info_bubble {
+        border: 2px solid $highlight;
+        background-color: $purple1;
+    }
     > div {
         border-radius: 1000px;
         margin: 2px;
@@ -446,12 +450,12 @@ Disbursment Bubble Graph
            cursor: pointer; cursor: hand; 
         }
     }
-    > div:nth-of-type(1) {
+    > div:nth-of-type(2) {
         background-color: $purple2;
         margin-left: 10%;
         margin-top: 6%;
     }
-    > div:nth-of-type(2) {
+    > div:nth-of-type(3) {
         background-color: $purple3;
         margin-top: 5%;
         > div {
@@ -460,14 +464,14 @@ Disbursment Bubble Graph
             font-size: rem(12);
         }
     }
-    > div:nth-of-type(3) {
+    > div:nth-of-type(4) {
         background-color: $purple1;
     }
-    > div:nth-of-type(4) {
+    > div:nth-of-type(5) {
         background-color: lighten($deep-purple, 10%);
         margin-top: -8%;
     }
-    > div:nth-of-type(5) {
+    > div:nth-of-type(6) {
         background-color: $purple4;
         margin-left: -4%;
     }
@@ -478,6 +482,10 @@ Disbursment Bubble Graph
     img {
         height: 70px;
     }
+    .info_bubble {
+        border: 2px solid $highlight;
+        background-color: $orange1;
+    }
     > div {
         border-radius: 1000px;
         margin: 2px;
@@ -488,25 +496,25 @@ Disbursment Bubble Graph
            cursor: pointer; cursor: hand; 
         }
     }
-    > div:nth-of-type(1) {
+    > div:nth-of-type(2) {
         background-color: $orange1;
         margin-top: 37%;
     }
-    > div:nth-of-type(2) {
+    > div:nth-of-type(3) {
         background-color: lighten($orange1, 10%);
         margin-top: 3%;
         margin-top: 24%;
     }
-    > div:nth-of-type(3) {
+    > div:nth-of-type(4) {
         background-color: $orange3;
         margin-left: -39%;
         margin-top: 21%;
     }
-    > div:nth-of-type(4) {
+    > div:nth-of-type(5) {
         background-color: $orange1;
         margin-left: -0.5%;
     }
-    > div:nth-of-type(5) {
+    > div:nth-of-type(6) {
         background-color: lighten($deep-orange, 10%);
         margin-left: -16%;
         margin-top: -6%;
@@ -546,15 +554,12 @@ div.disbursement_bubble_rollover {
     }
 }
 
-.info_bubble{
+.info_bubble {
     position: absolute;
-    top:0;
-    left:0;
-    width:0px;
-    height:0px;
-    color:black;
-    background-color:white;
-    border-radius: 1000px;
+    top: 20%;
+    left: 0;
+    width: 0px;
+    height: 0px;
     z-index: 1000;
     display: none;
     .disbursement_bubble_details {

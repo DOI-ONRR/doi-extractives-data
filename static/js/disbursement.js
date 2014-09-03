@@ -201,16 +201,7 @@ d3.csv("/static/data/disbursement-summary-data.csv",function(disbursement_data){
 
         //This checks the json object for Img3 to determine which object variables to access.
         //There is probably a better way of doing this.
-        var thisDetail = where_stats_data[thisClass][thisRel]['Content']['Img3'] ?
-            where_stats_data[thisClass][thisRel]['Content'] +
-            where_stats_data[thisClass][thisRel]['Img1'] +
-            where_stats_data[thisClass][thisRel]['Img2'] +
-            where_stats_data[thisClass][thisRel]['Img3'] :
-            where_stats_data[thisClass][thisRel]['Content'] +
-            where_stats_data[thisClass][thisRel]['Img1'] +
-            where_stats_data[thisClass][thisRel]['Img1Cap'] +
-            where_stats_data[thisClass][thisRel]['Img2'] +
-            where_stats_data[thisClass][thisRel]['Img2Cap'];
+        var thisDetail = where_stats_data[thisClass][thisRel]['Content'];
 
         var thisName = where_stats_data[thisClass][thisRel]['Title']; //Get the name of the bubble, IE the text for the content div when the bubble is shrunk
 

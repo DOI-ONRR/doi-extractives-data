@@ -43,18 +43,6 @@ d3.csv("static/data/disbursement-summary-data.csv",function(disbursement_data){
     var w = 500;
     var h = 500;
 
-    // var offShoreSVG = d3.select(".stats-offshore")
-    //                     .append("svg")
-    //                     .attr("width",w)
-    //                     .attr("height",h);
-    // offShoreSVG.selectAll("circle")
-    //            .data(offshoreYearDim.top(Infinity))
-    //            .enter()
-    //            .append("circle")
-    //            .attr("r",function(d){
-    //                 return restrict_size(d["Total"],.00000005,50,300);
-    //            });
-    console.log(offshoreYearDim.top(Infinity))
     var offShoreChart = d3.select(".stats-offshore").selectAll("div.disbursement_bubble")
         .data(offshoreYearDim.top(Infinity))
         .enter()
@@ -93,24 +81,6 @@ d3.csv("static/data/disbursement-summary-data.csv",function(disbursement_data){
             return "$" + parseFloat(d["Total"]).formatMoney(2, '.', ',');
         });
 
-    // var svg = d3.selectAll(".disbursement > div")
-    //             .append("svg")
-    //             .attr("width",50)
-    //             .attr("height",50)
-    //             .attry("style","position:absolute")
-    //             .data(offshoreYearDim.top(Infinity))
-    //             .enter();
-    // svg.selectAll("circle")
-    //    .data(offshoreYearDim.top(Infinity))
-    //    .enter()
-    //    .append("circle")
-    //    .attr("r",function(d){
-    //         return restrict_size(d["Total"],.00000005,50,300);
-    //    });
-    // d3.selectAll(".disbursement div").call(circleTip);
-    // d3.selectAll(".disbursement div").on('mouseover', circleTip.show)
-    //     .on('mouseout', circleTip.hide);
-
     function restrict_size(d, s, min, max) {
         var n = d * s;
         n = n * 3;
@@ -121,22 +91,31 @@ d3.csv("static/data/disbursement-summary-data.csv",function(disbursement_data){
             return (min + n) + "px";
         return n + "px";
     };
-    //Setup year select links
+
+    /*************************
+    Setup Year Select Links
+    *************************/
+    $("#disbursement_year_select a:first").css("font-weight","Bold");
     $("#disbursement_year_select a").click(function(){
+        $(this).css("font-weight","Bold");
+        $(this).siblings().css("font-weight","Normal");
         var year = $(this).attr('data-year');
         onshoreYearDim.filterAll();
         offshoreYearDim.filterAll();
-        onshoreShoreDim.filter(function(d){
+        onshoreYearDim.filter(function(d){
+            console.log("On Shore d="+d+"year="+year);
             if(d == year)
                 return d; 
         });
         offshoreYearDim.filter(function(d){
+            console.log("Off Shore d="+d+"year="+year);
             if(d == year)
                 return d;
         });
         var statsOffshore = d3.selectAll(".stats-offshore").selectAll(".disbursement_bubble");
         statsOffshore.data(offshoreYearDim.top(Infinity))
-                     .style("height", function(d) {
+                    .transition()
+                    .style("height", function(d) {
                         return restrict_size(d["Total"],.00000005,50,300);
                     })
                     .style("width",function(d){
@@ -146,25 +125,24 @@ d3.csv("static/data/disbursement-summary-data.csv",function(disbursement_data){
             return "<div class='disbursement_bubble_content'>" + d["Bubble Name"] +"</div>"
                     +"<div class='disbursement_bubble_rollover'>Total: $"+parseFloat(d["Total"]).formatMoney(2,'.',',')+"</div>";
         });
-
         var statsOnshore = d3.selectAll(".stats-onshore").selectAll(".disbursement_bubble");
-        statsOnshore.data(offshoreYearDim.top(Infinity))
-                     .style("height", function(d) {
-                        return restrict_size(d["Total"],.00000005,50,300);
-                    })
-                    .style("width",function(d){
-                        return restrict_size(d["Total"],.00000005,50,300);
-                    });
+        statsOnshore.data(onshoreYearDim.top(Infinity))
+            .transition()
+            .style("height",function(d){
+                return restrict_size(d["Total"],.00000005,50,300);
+            })
+            .style("width",function(d){
+                return restrict_size(d["Total"],.00000005,50,300);
+            });
         statsOnshore.html(function(d){
             return "<div class='disbursement_bubble_content'>" + d["Bubble Name"] +"</div>"
                     +"<div class='disbursement_bubble_rollover'>Total: $"+parseFloat(d["Total"]).formatMoney(2,'.',',')+"</div>";
         });
-
-
-        print_filter(offshoreYearDim)
-        
-
     });
+    /*************************
+    End Year Select link Setup
+    *************************/
+
     //displays the disbursement_bubble_rollover div
     $(".disbursement_bubble").on('mouseover',function(){
         $('div.disbursement_bubble_rollover', this).show();

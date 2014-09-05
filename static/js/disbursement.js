@@ -134,6 +134,18 @@ d3.csv("static/data/disbursement-summary-data.csv",function(disbursement_data){
     *************************/
     $("#disbursement_year_select a:first").css("font-weight","Bold");
     $("#disbursement_year_select a").click(function(){
+        function get_total(data, data2){
+            var r=0.0;
+            for(var i = 0; i<data.length; i++)
+            {
+                r+=parseFloat(data[i]["Total"]);
+            }
+            for(var i = 0; i<data2.length; i++)
+            {
+                r+=parseFloat(data2[i]["Total"]);
+            }
+            return r;
+        }
         $(this).css("font-weight","Bold");
         $(this).siblings().css("font-weight","Normal");
         var year = $(this).attr('data-year');
@@ -191,7 +203,7 @@ d3.csv("static/data/disbursement-summary-data.csv",function(disbursement_data){
             .html(function(d){
                 return "$"+parseFloat(d["Total"]).formatMoney(0,'.',',');
             })
-            .transition
+            .transition()
             .style("width", function(d){
                 return (d["Total"]/get_total(offshoreYearDim.top(Infinity),onshoreYearDim.top(Infinity)))*94+"%";
             });

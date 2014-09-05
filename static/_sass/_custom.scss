@@ -585,6 +585,25 @@ div.disbursement_bubble_rollover {
     }
 }
 
+#disbursment_totals_bar{
+    div.offshore_bar{
+        div.disbursement_bar{
+            margin: 2px;
+            background-color: purple;
+            height: 20px;
+            float: left;
+        }
+        
+    }
+    div.onshore_bar{
+        div.disbursement_bar{
+            margin: 2px;
+            background-color: orange;
+            height: 20px;
+            float: left;
+        }
+    }
+}
 
 
 /*============================================

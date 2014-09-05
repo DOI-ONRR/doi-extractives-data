@@ -39,9 +39,46 @@ d3.csv("static/data/disbursement-summary-data.csv",function(disbursement_data){
             return true;
     });
 
+    function get_total(data, data2){
+        var r=0.0;
+        for(var i = 0; i<data.length; i++)
+        {
+            r+=parseFloat(data[i]["Total"]);
+        }
+        for(var i = 0; i<data2.length; i++)
+        {
+            r+=parseFloat(data2[i]["Total"]);
+        }
+        return r;
+    }
+
 
     var w = 500;
     var h = 500;
+    var offshoreBarChart = d3.select("#disbursment_totals_bar > div.offshore_bar").selectAll("div.disbursement_bar")
+        .data(offshoreYearDim.top(Infinity))
+        .enter()
+        .append("div")
+        .attr("class", "disbursement_bar")
+        .style("width", function(d){
+            return (d["Total"]/get_total(offshoreYearDim.top(Infinity),onshoreYearDim.top(Infinity)))*94+"%";
+        })
+        .html(function(d){
+            return "$"+parseFloat(d["Total"]).formatMoney(0,'.',',');
+        });
+
+    var onshoreBarChart = d3.select("#disbursment_totals_bar > div.onshore_bar").selectAll("div.disbursement_bar")
+        .data(onshoreYearDim.top(Infinity))
+        .enter()
+        .append("div")
+        .attr("class", "disbursement_bar")
+        .style("width", function(d){
+            return (d["Total"]/get_total(offshoreYearDim.top(Infinity),onshoreYearDim.top(Infinity)))*94+"%";
+        })
+        .html(function(d){
+            return "$"+parseFloat(d["Total"]).formatMoney(0,'.',',');
+        });
+
 
     var offShoreChart = d3.select(".stats-offshore").selectAll("div.disbursement_bubble")
         .data(offshoreYearDim.top(Infinity))
@@ -138,6 +175,27 @@ d3.csv("static/data/disbursement-summary-data.csv",function(disbursement_data){
             return "<div class='disbursement_bubble_content'>" + d["Bubble Name"] +"</div>"
                     +"<div class='disbursement_bubble_rollover'>Total: $"+parseFloat(d["Total"]).formatMoney(2,'.',',')+"</div>";
         });
+
+        var offshoreBarChart = d3.select("#disbursment_totals_bar > div.offshore_bar").selectAll("div.disbursement_bar")
+            .data(offshoreYearDim.top(Infinity))
+            .html(function(d){
+                return "$"+parseFloat(d["Total"]).formatMoney(0,'.',',');
+            })
+            .transition()
+            .style("width", function(d){
+                return (d["Total"]/get_total(offshoreYearDim.top(Infinity),onshoreYearDim.top(Infinity)))*94+"%";
+            });
+
+        var onshoreBarChart = d3.select("#disbursment_totals_bar > div.onshore_bar").selectAll("div.disbursement_bar")
+            .data(onshoreYearDim.top(Infinity))
+            .html(function(d){
+                return "$"+parseFloat(d["Total"]).formatMoney(0,'.',',');
+            })
+            .transition
+            .style("width", function(d){
+                return (d["Total"]/get_total(offshoreYearDim.top(Infinity),onshoreYearDim.top(Infinity)))*94+"%";
+            });
+
     });
     /*************************
     End Year Select link Setup

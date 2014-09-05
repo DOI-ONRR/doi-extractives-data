@@ -61,7 +61,7 @@ d3.csv("static/data/disbursement-summary-data.csv",function(disbursement_data){
         .append("div")
         .attr("class", "disbursement_bar")
         .style("width", function(d){
-            return (d["Total"]/get_total(offshoreYearDim.top(Infinity),onshoreYearDim.top(Infinity)))*94+"%";
+            return (d["Total"]/get_total(offshoreYearDim.top(Infinity),onshoreYearDim.top(Infinity)))*.94*960+"px";
         })
         .html(function(d){
             return "$"+parseFloat(d["Total"]).formatMoney(0,'.',',');
@@ -73,7 +73,7 @@ d3.csv("static/data/disbursement-summary-data.csv",function(disbursement_data){
         .append("div")
         .attr("class", "disbursement_bar")
         .style("width", function(d){
-            return (d["Total"]/get_total(offshoreYearDim.top(Infinity),onshoreYearDim.top(Infinity)))*94+"%";
+            return (d["Total"]/get_total(offshoreYearDim.top(Infinity),onshoreYearDim.top(Infinity)))*.94*960+"px";
         })
         .html(function(d){
             return "$"+parseFloat(d["Total"]).formatMoney(0,'.',',');
@@ -195,7 +195,7 @@ d3.csv("static/data/disbursement-summary-data.csv",function(disbursement_data){
             })
             .transition()
             .style("width", function(d){
-                return (d["Total"]/get_total(offshoreYearDim.top(Infinity),onshoreYearDim.top(Infinity)))*94+"%";
+                return (d["Total"]/get_total(offshoreYearDim.top(Infinity),onshoreYearDim.top(Infinity)))*.94*960+"px";
             });
 
         var onshoreBarChart = d3.select("#disbursment_totals_bar > div.onshore_bar").selectAll("div.disbursement_bar")
@@ -205,7 +205,7 @@ d3.csv("static/data/disbursement-summary-data.csv",function(disbursement_data){
             })
             .transition()
             .style("width", function(d){
-                return (d["Total"]/get_total(offshoreYearDim.top(Infinity),onshoreYearDim.top(Infinity)))*94+"%";
+                return (d["Total"]/get_total(offshoreYearDim.top(Infinity),onshoreYearDim.top(Infinity)))*.94*960+"px";
             });
 
     });

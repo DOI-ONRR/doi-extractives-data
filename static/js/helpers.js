@@ -25,6 +25,10 @@ var n = this,
    return s + (j ? i.substr(0, j) + t : "") + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + t) + (c ? d + Math.abs(n - i).toFixed(c).slice(2) : "");
  };
 
+ String.prototype.capitalize = function(){
+ 	return this.charAt(0).toUpperCase() + this.slice(1);
+ }
+
 function text_money(f){
 	f = parseFloat(f);
 	var s = f.formatMoney(2,'.',',');

@@ -393,7 +393,7 @@ Disbursment Bubble Graph
 
 .dollars {
     @include span-columns(12);
-    margin: 20px 0 10px 0;
+    margin: 20px 0 60px 0;
     h1 {
         text-transform: uppercase;
         font-size: 18px;
@@ -406,7 +406,17 @@ Disbursment Bubble Graph
     }
 }
 
+
 #disbursment_totals_bar{
+    margin-top: 20px;
+    p {
+        margin-top: 16px;
+        padding-left: 8px;
+        transform-origin: 0 0;
+        transform: rotate(30deg);
+        font-size: 13px;
+        font-size: rem(13);
+    }
     div.offshore_bar{
         div.disbursement_bar{
             margin: 2px;
@@ -415,16 +425,16 @@ Disbursment Bubble Graph
             background-color: white;
         }
         > div:nth-of-type(1) {
-            background-color: $purple3;
+            background-color: $purple0;
         }
         > div:nth-of-type(2) {
-            background-color: $purple2;
-        }
-        > div:nth-of-type(3) {
             background-color: $purple1;
         }
+        > div:nth-of-type(3) {
+            background-color: $purple2;
+        }
         > div:nth-of-type(4) {
-            background-color: $purple0;
+            background-color: $purple3;
         }
         > div:nth-of-type(5) {
             background-color: $purple4;
@@ -438,19 +448,19 @@ Disbursment Bubble Graph
             float: left;
         }
         > div:nth-of-type(1) {
-            background-color: $orange4;
+            background-color: $orange0;
         }
         > div:nth-of-type(2) {
-            background-color: $orange3;
+            background-color: $orange1;
         }
         > div:nth-of-type(3) {
             background-color: $orange2;
         }
         > div:nth-of-type(4) {
-            background-color: $orange1;
+            background-color: $orange3;
         }
         > div:nth-of-type(5) {
-            background-color: $orange0;
+            background-color: $orange4;
         }
     }
 }

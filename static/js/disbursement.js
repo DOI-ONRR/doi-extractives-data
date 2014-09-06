@@ -67,6 +67,9 @@ d3.csv("static/data/disbursement-summary-data.csv",function(disbursement_data){
         .enter()
         .append("div")
         .attr("class", "disbursement_bar")
+        .attr("title", function(d){
+            return d["Bubble Name"]
+        })
         .style("width", function(d){
             return (d["Total"]/get_total(offshoreYearDim.top(Infinity),onshoreYearDim.top(Infinity)))*.94*960+"px";
         })
@@ -79,6 +82,9 @@ d3.csv("static/data/disbursement-summary-data.csv",function(disbursement_data){
         .enter()
         .append("div")
         .attr("class", "disbursement_bar")
+        .attr("title", function(d){
+            return d["Bubble Name"]
+        })
         .style("width", function(d){
             return (d["Total"]/get_total(offshoreYearDim.top(Infinity),onshoreYearDim.top(Infinity)))*.94*960+"px";
         })
@@ -159,12 +165,10 @@ d3.csv("static/data/disbursement-summary-data.csv",function(disbursement_data){
         onshoreYearDim.filterAll();
         offshoreYearDim.filterAll();
         onshoreYearDim.filter(function(d){
-            console.log("On Shore d="+d+"year="+year);
             if(d == year)
                 return d; 
         });
         offshoreYearDim.filter(function(d){
-            console.log("Off Shore d="+d+"year="+year);
             if(d == year)
                 return d;
         });
@@ -341,7 +345,6 @@ function findRel(that, thatClass, searchTerm, obj) {
         }
 
     }
-    console.log("rel=" + rel)
     that.attr('rel', rel);
     return rel;
 }

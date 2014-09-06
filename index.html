@@ -89,13 +89,25 @@ description: This is a sample beta site for Federal natural resource revenues.
 <!-- START Section 'Where Does the Money Go' -->
 <section class="section medium-gray disbursement">
   <div class="container">
-    <h1><span>So where do these revenues go?<br/>
-    The answer is</span>
-    <span>it depends.</span>
-    <span>Laws treat revenues from offshore natural resources and onshore natural resources differently. There are set percentages and amounts from each that go certain places every year.</span></h1>
+    <div class="disbursement-intro">
+      <h1>So where do these revenues go?</h1>
+      <h2><span>The answer is</span><br/>
+      <span>it depends.</span>
+      <span>Laws treat revenues from offshore natural resources and onshore natural resources differently. There are set percentages and amounts from each that go certain places every year.</span></h2>
+    </div>
+
+    <section class="bubbles">
+      <div class="offshore">
+        <h1>Where do <span>offshore</span> revenues go?</h1>
+        <p>For natural resource revenues from <a href="http://www.boem.gov/Outer-Continental-Shelf/">offshore locations</a>, 27% of revenues from within <a href="http://statistics.onrr.gov/PDF/FAQs.pdf">8(g) boundaries (pdf)</a> goes to the state that the revenues came from, $150 million goes to the <a href="http://www.nps.gov/history/hpg/">Historic Preservation Fund</a>, up to $900 million goes to the <a href="http://www.nps.gov/lwcf/">Land &amp; Water Conservation Fund</a>, some goes to the Federal agency that manages the area, and the remainder goes to the U.S. Treasury.</p>
+      </div>
+      <div class="onshore">
+        <h1>Where do <span>onshore</span> revenues go?</h1>
+        <p>For natural resource revenues from <a href="https://www.google.com/search?q=us+federal+land+interior&rlz=1C5CHFA_enUS545US546&es_sm=91&biw=1577&bih=870&source=lnms&tbm=isch&sa=X&ei=xX0LVNCSEMmlyAS7tIKoDg&ved=0CAYQ_AUoAQ#tbm=isch&q=us+federal+land">onshore Federal land</a>, for most parts of the country 49% goes to the state that the revenues came from, 40% goes to the <a href="http://www.nps.gov/nr/travel/ReclamationDamsAndWaterProjects/Mission_of_the_Bureau_of_Reclamation.html">Reclamation Fund</a>, some goes to the agency that manages the land, and 11% goes to the U.S. Treasury. For revenues from Alaska, 89% goes to the state. For revenues from Indian Country, 100% of revenues are returned to the Tribes or individual Indian land owner.</p>
+      </div>
+    </section>
 
     <section class="container dollars">
-      <!-- <img src="{{ site.url }}static/img/dollars-mock.png" alt="Mockup of dollar slider"> -->
       <div id="disbursement_year_select">
         <h1>Choose Year</h1>
         <div class="background-bar">
@@ -110,17 +122,7 @@ description: This is a sample beta site for Federal natural resource revenues.
     </section>
 
     <section class="bubbles">
-      <!-- <div id="disbursement_year_select" class="year">
-        <h1>CHOOSE YEAR </h1>
-        <div class="background-bar">
-          <a data-year="2012">2012</a>
-          <a data-year="2013">2013</a>
-        </div>
-      </div>
-      <div class="clearfix"></div> -->
       <div class="offshore">
-        <h1>Where do offshore revenues go?</h1>
-        <p>For natural resource revenues from offshore locations, 27% of revenues from within 8(g) boundaries goes to the state that the revenues came from, $150 million goes to the Historic Preservation Fund, up to $900 million goes to the Land &amp; Water Conservation Fund, and the remainder goes to the U.S. Treasury.</p>
         <div class="stats-offshore">
           <div class="info_bubble">
             <div class="disbursement_bubble_content"></div>
@@ -128,8 +130,6 @@ description: This is a sample beta site for Federal natural resource revenues.
         </div>
       </div>
       <div class="onshore">
-        <h1>Where do onshore revenues go?</h1>
-        <p>For natural resource revenues from onshore locations, for most parts of the country 49% goes to the state that the revenues came from, 40% goes to the Reclamation Fund, and 11% goes to the U.S. Treasury. For revenues from Alaska, 89% goes to the state. For revenues from Indian Country, 100% of revenues are returned to the Tribes or individual Indian land owner.</p>
         <div class="stats-onshore">
           <div class="info_bubble">
             <div class="disbursement_bubble_content"></div>

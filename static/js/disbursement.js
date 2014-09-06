@@ -52,11 +52,18 @@ d3.csv("static/data/disbursement-summary-data.csv",function(disbursement_data){
         return r;
     }
 
+    function order_data(data, key){
+       
+        return data.sort(function(a,b){
+            return parseFloat(b[key])-parseFloat(a[key]);
+        });
+    }
+
 
     var w = 500;
     var h = 500;
     var offshoreBarChart = d3.select("#disbursment_totals_bar > div.offshore_bar").selectAll("div.disbursement_bar")
-        .data(offshoreYearDim.top(Infinity))
+        .data(order_data(offshoreYearDim.top(Infinity),"Total"))
         .enter()
         .append("div")
         .attr("class", "disbursement_bar")
@@ -68,7 +75,7 @@ d3.csv("static/data/disbursement-summary-data.csv",function(disbursement_data){
         });
 
     var onshoreBarChart = d3.select("#disbursment_totals_bar > div.onshore_bar").selectAll("div.disbursement_bar")
-        .data(onshoreYearDim.top(Infinity))
+        .data(order_data(onshoreYearDim.top(Infinity), "Total"))
         .enter()
         .append("div")
         .attr("class", "disbursement_bar")
@@ -189,7 +196,7 @@ d3.csv("static/data/disbursement-summary-data.csv",function(disbursement_data){
         });
 
         var offshoreBarChart = d3.select("#disbursment_totals_bar > div.offshore_bar").selectAll("div.disbursement_bar")
-            .data(offshoreYearDim.top(Infinity))
+            .data(order_data(offshoreYearDim.top(Infinity), "Total"))
             .html(function(d){
                 return "<p>$"+parseFloat(d["Total"]).formatMoney(0,'.',',')+"</p>";
             })
@@ -199,7 +206,7 @@ d3.csv("static/data/disbursement-summary-data.csv",function(disbursement_data){
             });
 
         var onshoreBarChart = d3.select("#disbursment_totals_bar > div.onshore_bar").selectAll("div.disbursement_bar")
-            .data(onshoreYearDim.top(Infinity))
+            .data(order_data(onshoreYearDim.top(Infinity), "Total"))
             .html(function(d){
                 return "<p>$"+parseFloat(d["Total"]).formatMoney(0,'.',',')+"</p>";
             })

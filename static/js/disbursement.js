@@ -64,7 +64,7 @@ d3.csv("static/data/disbursement-summary-data.csv",function(disbursement_data){
             return (d["Total"]/get_total(offshoreYearDim.top(Infinity),onshoreYearDim.top(Infinity)))*.94*960+"px";
         })
         .html(function(d){
-            return "$"+parseFloat(d["Total"]).formatMoney(0,'.',',');
+            return "<p>$"+parseFloat(d["Total"]).formatMoney(0,'.',',')+"</p>";
         });
 
     var onshoreBarChart = d3.select("#disbursment_totals_bar > div.onshore_bar").selectAll("div.disbursement_bar")
@@ -76,7 +76,7 @@ d3.csv("static/data/disbursement-summary-data.csv",function(disbursement_data){
             return (d["Total"]/get_total(offshoreYearDim.top(Infinity),onshoreYearDim.top(Infinity)))*.94*960+"px";
         })
         .html(function(d){
-            return "$"+parseFloat(d["Total"]).formatMoney(0,'.',',');
+            return "<p>$"+parseFloat(d["Total"]).formatMoney(0,'.',',')+"</p>";
         });
 
 
@@ -191,7 +191,7 @@ d3.csv("static/data/disbursement-summary-data.csv",function(disbursement_data){
         var offshoreBarChart = d3.select("#disbursment_totals_bar > div.offshore_bar").selectAll("div.disbursement_bar")
             .data(offshoreYearDim.top(Infinity))
             .html(function(d){
-                return "$"+parseFloat(d["Total"]).formatMoney(0,'.',',');
+                return "<p>$"+parseFloat(d["Total"]).formatMoney(0,'.',',')+"</p>";
             })
             .transition()
             .style("width", function(d){
@@ -201,7 +201,7 @@ d3.csv("static/data/disbursement-summary-data.csv",function(disbursement_data){
         var onshoreBarChart = d3.select("#disbursment_totals_bar > div.onshore_bar").selectAll("div.disbursement_bar")
             .data(onshoreYearDim.top(Infinity))
             .html(function(d){
-                return "$"+parseFloat(d["Total"]).formatMoney(0,'.',',');
+                return "<p>$"+parseFloat(d["Total"]).formatMoney(0,'.',',')+"</p>";
             })
             .transition()
             .style("width", function(d){

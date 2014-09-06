@@ -334,62 +334,37 @@ Homepage Infographic Sections
 Disbursment Bubble Graph
 ============================================*/
 .disbursement {
-	h1 { 
+    a:hover, a:active {
+        text-decoration: underline;    
+    }
+}
+.disbursement-intro {
+    @include span-columns(12);
+    margin-bottom: 20px;
+    h1 {
+        @include span-columns(12 of 12);
+        padding-bottom: 15px;
+    }
+	h1, h2 { 
 		font-size: 26px;
 		font-size: rem(26);
 		line-height: 1em;
-	}
-	h2 {
-		text-transform: uppercase;
-        font-size: 11px;
-        font-size: rem(11);
-		font-weight: 800;
-        margin-top: 4px;
-        padding-left: 3px;
-        border-left: 2px solid black;
-        &:hover, &:focus {
-            border-left: none;
-        }
-        a {
-            color: black;
-            &:hover, &:focus{
-                text-decoration: none;
-                cursor: pointer;
-            }
-        }
-	}
-    span:first-of-type {
-        @include span-columns(12);
-        padding-bottom: 15px;
+	}	
+    span:nth-of-type(1) {
+        @include span-columns(12 of 12);
+        padding-bottom: 5px;
     }
     span:nth-of-type(2){
         @include span-columns(3 of 12);
-        font-size: 34px;
-        font-size: rem(34);
-        padding-left: 5%;
+        font-size: 37px;
+        font-size: rem(37);
+        padding-left: 4%;
     }
     span:nth-of-type(3){
         @include span-columns(9 of 12);
+        padding-top: 3px;
     }
 }
-
-// #disbursement_year_select{
-//     width:100%;
-//     div{
-//         float:left;
-//     }
-//     .bar{
-//         position: relative;
-//         text-align: center;
-//     }
-//     .bar:after{
-//         content: "";
-//         position: absolute;
-//         z-index: -1;
-//         top:50%;
-//         border-top: 2px solid;
-//     }
-// }
 
 .dollars {
     @include span-columns(12);
@@ -406,18 +381,19 @@ Disbursment Bubble Graph
     }
 }
 
-
 #disbursment_totals_bar{
     margin-top: 20px;
     p {
-        margin-top: 16px;
-        padding-left: 8px;
-        transform-origin: 0 0;
-        transform: rotate(30deg);
         font-size: 13px;
         font-size: rem(13);
+        transform-origin: 0 0;
     }
     div.offshore_bar{
+        p {
+            margin-top: 15px;
+            padding-left: 8px;
+            transform: rotate(30deg);
+        }
         div.disbursement_bar{
             margin: 2px;
             height: 20px;
@@ -432,16 +408,33 @@ Disbursment Bubble Graph
         }
         > div:nth-of-type(3) {
             background-color: $purple2;
+            p {
+               position: relative;
+               left: -4px;
+            }
         }
         > div:nth-of-type(4) {
             background-color: $purple3;
+            p {
+               position: relative;
+               left: -1px;
+            }
         }
         > div:nth-of-type(5) {
             background-color: $purple4;
+            p {
+               position: relative;
+               left: 7px;
+            }
         }
         
     }
     div.onshore_bar{
+        p {
+            margin-top: -14px;
+            padding-left: -1px;
+            transform: rotate(-30deg);
+        }
         div.disbursement_bar{
             margin: 2px;
             height: 20px;
@@ -474,17 +467,39 @@ Disbursment Bubble Graph
         @include span-columns(6 of 12);
     }
     h1 {
-        font-size: 16px;
-        font-size: rem(16);
-        text-transform: uppercase;
-        color: $purple1;
+        font-size: 24px;
+        font-size: rem(24);
+        span {
+            color: $purple1;
+        }
         border-top: 2px solid $purple1;
-        margin-top: 15px;
-        margin-bottom: 25px;
+        margin-top: 20px;
+        margin-bottom: 10px;
     }
     .onshore h1 {
-        color: $orange1;
+        span {
+            color: $orange1;
+        }
         border-top: 2px solid $orange1;
+    }
+    h2 {
+        text-transform: uppercase;
+        font-size: 11px;
+        font-size: rem(11);
+        font-weight: 800;
+        margin-top: 4px;
+        padding-left: 3px;
+        border-left: 2px solid black;
+        &:hover, &:focus {
+            border-left: none;
+        }
+        a {
+            color: black;
+            &:hover, &:focus{
+                text-decoration: none;
+                cursor: pointer;
+            }
+        }
     }
 }
 .stats-offshore {
@@ -495,7 +510,7 @@ Disbursment Bubble Graph
     }
     .info_bubble {
         border: 2px solid $highlight;
-        background-color: $purple1;
+        background-color: $purple3;
     }
     > div {
         border-radius: 1000px;
@@ -541,7 +556,7 @@ Disbursment Bubble Graph
     }
     .info_bubble {
         border: 2px solid $highlight;
-        background-color: $orange1;
+        background-color: $orange3;
     }
     > div {
         border-radius: 1000px;
@@ -563,7 +578,7 @@ Disbursment Bubble Graph
         margin-top: 24%;
     }
     > div:nth-of-type(4) {
-        background-color: $orange4; //tint($orange2,47%);
+        background-color: $orange4;
         margin-left: -39%;
         margin-top: 21%;
     }
@@ -630,7 +645,8 @@ div.disbursement_bubble_rollover {
             text-transform: none;
             font-size: 32px;
             font-size: rem(32);
-
+            line-height: 30px;
+            line-height: rem(30);
         }
         p {
             font-size: 16px;

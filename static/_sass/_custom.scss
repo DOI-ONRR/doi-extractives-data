@@ -410,14 +410,16 @@ Disbursment Bubble Graph
 #disbursment_totals_bar{
     margin-top: 20px;
     p {
-        margin-top: 16px;
-        padding-left: 8px;
-        transform-origin: 0 0;
-        transform: rotate(30deg);
         font-size: 13px;
         font-size: rem(13);
+        transform-origin: 0 0;
     }
     div.offshore_bar{
+        p {
+            margin-top: 15px;
+            padding-left: 8px;
+            transform: rotate(30deg);
+        }
         div.disbursement_bar{
             margin: 2px;
             height: 20px;
@@ -432,16 +434,33 @@ Disbursment Bubble Graph
         }
         > div:nth-of-type(3) {
             background-color: $purple2;
+            p {
+               position: relative;
+               left: -4px;
+            }
         }
         > div:nth-of-type(4) {
             background-color: $purple3;
+            p {
+               position: relative;
+               left: -1px;
+            }
         }
         > div:nth-of-type(5) {
             background-color: $purple4;
+            p {
+               position: relative;
+               left: 7px;
+            }
         }
         
     }
     div.onshore_bar{
+        p {
+            margin-top: -14px;
+            padding-left: -1px;
+            transform: rotate(-30deg);
+        }
         div.disbursement_bar{
             margin: 2px;
             height: 20px;

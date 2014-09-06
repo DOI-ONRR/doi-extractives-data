@@ -39,9 +39,53 @@ d3.csv("static/data/disbursement-summary-data.csv",function(disbursement_data){
             return true;
     });
 
+    function get_total(data, data2){
+        var r=0.0;
+        for(var i = 0; i<data.length; i++)
+        {
+            r+=parseFloat(data[i]["Total"]);
+        }
+        for(var i = 0; i<data2.length; i++)
+        {
+            r+=parseFloat(data2[i]["Total"]);
+        }
+        return r;
+    }
+
+    function order_data(data, key){
+       
+        return data.sort(function(a,b){
+            return parseFloat(b[key])-parseFloat(a[key]);
+        });
+    }
+
 
     var w = 500;
     var h = 500;
+    var offshoreBarChart = d3.select("#disbursment_totals_bar > div.offshore_bar").selectAll("div.disbursement_bar")
+        .data(order_data(offshoreYearDim.top(Infinity),"Total"))
+        .enter()
+        .append("div")
+        .attr("class", "disbursement_bar")
+        .style("width", function(d){
+            return (d["Total"]/get_total(offshoreYearDim.top(Infinity),onshoreYearDim.top(Infinity)))*.94*960+"px";
+        })
+        .html(function(d){
+            return "<p>$"+parseFloat(d["Total"]).formatMoney(0,'.',',')+"</p>";
+        });
+
+    var onshoreBarChart = d3.select("#disbursment_totals_bar > div.onshore_bar").selectAll("div.disbursement_bar")
+        .data(order_data(onshoreYearDim.top(Infinity), "Total"))
+        .enter()
+        .append("div")
+        .attr("class", "disbursement_bar")
+        .style("width", function(d){
+            return (d["Total"]/get_total(offshoreYearDim.top(Infinity),onshoreYearDim.top(Infinity)))*.94*960+"px";
+        })
+        .html(function(d){
+            return "<p>$"+parseFloat(d["Total"]).formatMoney(0,'.',',')+"</p>";
+        });
+
 
     var offShoreChart = d3.select(".stats-offshore").selectAll("div.disbursement_bubble")
         .data(offshoreYearDim.top(Infinity))
@@ -97,6 +141,18 @@ d3.csv("static/data/disbursement-summary-data.csv",function(disbursement_data){
     *************************/
     $("#disbursement_year_select a:first").css("font-weight","Bold");
     $("#disbursement_year_select a").click(function(){
+        function get_total(data, data2){
+            var r=0.0;
+            for(var i = 0; i<data.length; i++)
+            {
+                r+=parseFloat(data[i]["Total"]);
+            }
+            for(var i = 0; i<data2.length; i++)
+            {
+                r+=parseFloat(data2[i]["Total"]);
+            }
+            return r;
+        }
         $(this).css("font-weight","Bold");
         $(this).siblings().css("font-weight","Normal");
         var year = $(this).attr('data-year');
@@ -138,6 +194,27 @@ d3.csv("static/data/disbursement-summary-data.csv",function(disbursement_data){
             return "<div class='disbursement_bubble_content'>" + d["Bubble Name"] +"</div>"
                     +"<div class='disbursement_bubble_rollover'>Total: $"+parseFloat(d["Total"]).formatMoney(2,'.',',')+"</div>";
         });
+
+        var offshoreBarChart = d3.select("#disbursment_totals_bar > div.offshore_bar").selectAll("div.disbursement_bar")
+            .data(order_data(offshoreYearDim.top(Infinity), "Total"))
+            .html(function(d){
+                return "<p>$"+parseFloat(d["Total"]).formatMoney(0,'.',',')+"</p>";
+            })
+            .transition()
+            .style("width", function(d){
+                return (d["Total"]/get_total(offshoreYearDim.top(Infinity),onshoreYearDim.top(Infinity)))*.94*960+"px";
+            });
+
+        var onshoreBarChart = d3.select("#disbursment_totals_bar > div.onshore_bar").selectAll("div.disbursement_bar")
+            .data(order_data(onshoreYearDim.top(Infinity), "Total"))
+            .html(function(d){
+                return "<p>$"+parseFloat(d["Total"]).formatMoney(0,'.',',')+"</p>";
+            })
+            .transition()
+            .style("width", function(d){
+                return (d["Total"]/get_total(offshoreYearDim.top(Infinity),onshoreYearDim.top(Infinity)))*.94*960+"px";
+            });
+
     });
     /*************************
     End Year Select link Setup

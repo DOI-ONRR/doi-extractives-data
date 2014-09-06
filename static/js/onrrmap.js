@@ -11,6 +11,11 @@
       onEachFeature: onEachFeature
   }).addTo(mapdataviz);
 
+  var GOMLayer = L.geoJson(GOMNAD_dissolve,  {
+      style: getStyle,
+      onEachFeature: onEachFeature
+  }).addTo(mapdataviz);
+
   function getStyle(feature) {
       return {
           weight: 2,

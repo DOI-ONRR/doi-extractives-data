@@ -406,6 +406,55 @@ Disbursment Bubble Graph
     }
 }
 
+#disbursment_totals_bar{
+    div.offshore_bar{
+        div.disbursement_bar{
+            margin: 2px;
+            height: 20px;
+            float: left;
+            background-color: white;
+        }
+        > div:nth-of-type(1) {
+            background-color: $purple3;
+        }
+        > div:nth-of-type(2) {
+            background-color: $purple2;
+        }
+        > div:nth-of-type(3) {
+            background-color: $purple1;
+        }
+        > div:nth-of-type(4) {
+            background-color: $purple0;
+        }
+        > div:nth-of-type(5) {
+            background-color: $purple4;
+        }
+        
+    }
+    div.onshore_bar{
+        div.disbursement_bar{
+            margin: 2px;
+            height: 20px;
+            float: left;
+        }
+        > div:nth-of-type(1) {
+            background-color: $orange4;
+        }
+        > div:nth-of-type(2) {
+            background-color: $orange3;
+        }
+        > div:nth-of-type(3) {
+            background-color: $orange2;
+        }
+        > div:nth-of-type(4) {
+            background-color: $orange1;
+        }
+        > div:nth-of-type(5) {
+            background-color: $orange0;
+        }
+    }
+}
+
 .bubbles {
     @include span-columns(12);
     .offshore {
@@ -466,7 +515,7 @@ Disbursment Bubble Graph
         background-color: $purple1;
     }
     > div:nth-of-type(5) {
-        background-color: lighten($deep-purple, 10%);
+        background-color: $purple0;
         margin-top: -8%;
     }
     > div:nth-of-type(6) {
@@ -495,16 +544,16 @@ Disbursment Bubble Graph
         }
     }
     > div:nth-of-type(2) {
-        background-color: $orange1;
+        background-color: $orange3;
         margin-top: 37%;
     }
     > div:nth-of-type(3) {
-        background-color: lighten($orange1, 10%);
+        background-color: $orange2;
         margin-top: 3%;
         margin-top: 24%;
     }
     > div:nth-of-type(4) {
-        background-color: $orange3;
+        background-color: $orange4; //tint($orange2,47%);
         margin-left: -39%;
         margin-top: 21%;
     }
@@ -513,7 +562,7 @@ Disbursment Bubble Graph
         margin-left: -0.5%;
     }
     > div:nth-of-type(6) {
-        background-color: lighten($deep-orange, 10%);
+        background-color: $orange0;
         margin-left: -16%;
         margin-top: -6%;
     }
@@ -581,26 +630,6 @@ div.disbursement_bubble_rollover {
         }
         .disbursement_bubble_details_images {
             @include span-columns(3 of 9);
-        }
-    }
-}
-
-#disbursment_totals_bar{
-    div.offshore_bar{
-        div.disbursement_bar{
-            margin: 2px;
-            background-color: purple;
-            height: 20px;
-            float: left;
-        }
-        
-    }
-    div.onshore_bar{
-        div.disbursement_bar{
-            margin: 2px;
-            background-color: orange;
-            height: 20px;
-            float: left;
         }
     }
 }

@@ -711,6 +711,11 @@ Map
   z-index: 10000;
   }
 
+  path {
+  -webkit-transition:fill 200ms;
+          transition:fill 200ms;
+  }
+
 /*===============================================
 Data Dashboard
 ================================================*/

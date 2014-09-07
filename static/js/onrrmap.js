@@ -17,9 +17,11 @@ var variables = [
     'gas',
     'coal',
     'other',
-    'geothermal'];
+    'geothermal',
+    'wind'];
 
 var ranges ={};
+var dataLayers=[];
 
 var $select = $('<select></select>')
               .appendTo($('#variables'))
@@ -38,9 +40,31 @@ for (var i = 0; i<variables.length; i++)
   // statesData comes from the 'revenue2013.json' included above
   var statesLayer = L.geoJson(statesData, {
     onEachFeature : onEachFeature
-  })
-      .addTo(mapdataviz);
+  }).addTo(mapdataviz);
+
+  var gomLayer = L.geoJson(GOMNAD_dissolve,{
+    onEachFeature: onEachFeature
+  }).addTo(mapdataviz);
+
+  var atlanticLayer = L.geoJson(ATLNAD83,{
+    onEachFeature: onEachFeature
+  }).addTo(mapdataviz);
+
+  var pacificLayer = L.geoJson(PCNAD83,{
+    onEachFeature: onEachFeature
+  }).addTo(mapdataviz);
+
+
+  setRange(GOMNAD_dissolve);
   setRange(statesData);
+  setRange(ATLNAD83);
+  setRange(PCNAD83);
+
+  dataLayers.push(statesLayer);
+  dataLayers.push(gomLayer);
+  dataLayers.push(atlanticLayer);
+  dataLayers.push(pacificLayer);
+
   setVariable(variables[0])
 
 
@@ -51,58 +75,61 @@ for (var i = 0; i<variables.length; i++)
         for (var n= 0 ; n<variables.length; n++)
         {
           if (data.features[i].properties.commodities[variables[n]])
-            if (ranges[variables[n]].max < data.features[i].properties.commodities[variables[n]].revenue)
+            if (ranges[variables[n]].max < data.features[i].properties.commodities[variables[n]].revenue && data.features[i].properties.commodities[variables[n]].revenue < 1000000000.00)
               ranges[variables[n]].max = data.features[i].properties.commodities[variables[n]].revenue
-            else if (ranges[variables[n]].min > data.features[i].properties.commodities[variables[n]].revenue)
-              ranges[variables[n]].min = data.features[i].properties.commodities[variables[n]].revenue
         }
       }
     }
-    console.log(ranges)
   }
 
   function setVariable(name) {
-    var scale = ranges[name];
-    statesLayer.eachLayer(function(layer) {
-      var value =0;
-      if (layer.feature.properties.commodities)
-      {
-        if (layer.feature.properties.commodities[name])
+    for (var i=0; i<dataLayers.length; i++)
+    {
+      var scale = ranges[name];
+      dataLayers[i].eachLayer(function(layer) {
+        var value =0;
+        if (layer.feature.properties.commodities)
         {
-          value = layer.feature.properties.commodities[name].revenue;
-          //console.log("State=" + layer.feature.properties.name + "Revenue for " + name+ " amount = "+layer.feature.properties.commodities[name].revenue)
+          if (layer.feature.properties.commodities[name])
+          {
+            value = layer.feature.properties.commodities[name].revenue;
+            //console.log("State=" + layer.feature.properties.name + "Revenue for " + name+ " amount = "+layer.feature.properties.commodities[name].revenue)
+          }
+            
         }
           
-      }
-        
 
-        // Decide the color for each state by finding its
-        // place between min & max, and choosing a particular
-        // color as index.
-        var mathScale =(hues.length - 1) *
-            ((value - scale.min) /
-            (scale.max - scale.min));
-        if (mathScale > 0 && mathScale < 2)
-          var division = 1;
-        else 
-          var division = Math.floor(
-            (hues.length - 1) *
-            ((value - scale.min) /
-            (scale.max - scale.min)));
+          // Decide the color for each state by finding its
+          // place between min & max, and choosing a particular
+          // color as index.
+          var mathScale =(hues.length - 1) *
+              ((value - scale.min) /
+              (scale.max - scale.min));
+          if (mathScale > 0 && mathScale < 2)
+            var division = 1;
+          else 
+            var division = Math.floor(
+              (hues.length - 1) *
+              ((value - scale.min) /
+              (scale.max - scale.min)));
 
-        console.log(layer.feature.properties.name + " divions = "+  (hues.length - 1) *
-            ((value - scale.min) /
-            (scale.max - scale.min)))
-        if (division < 0)
-          division = 0;
-        // See full path options at
-        // http://leafletjs.com/reference.html#path
-        layer.setStyle({
-            fillColor: hues[division],
-            fillOpacity: 0.8,
-            weight: 0.5
-        });
-    });
+          console.log(layer.feature.properties.name + " divions = "+  (hues.length - 1) *
+              ((value - scale.min) /
+              (scale.max - scale.min)))
+          if (division < 0)
+            division = 0;
+          // See full path options at
+          // http://leafletjs.com/reference.html#path
+          var newColor = hues[division];
+          if (value > 1000000000.00)
+            newColor = '#243649';
+          layer.setStyle({
+              fillColor: newColor,
+              fillOpacity: 0.8,
+              weight: 0.5
+          });
+      });
+    }
   }
 
   // function loadData(){
@@ -204,11 +231,19 @@ for (var i = 0; i<variables.length; i++)
           var revenueAmt = 0.0;
         }
         var revenueType = selected.val().capitalize();
-        return revenueType+" Revenue: $"+revenueAmt.formatMoney(2,'.',',');
+        var returnString ="<div>"+revenueType+" Revenue: $"+revenueAmt.formatMoney(2,'.',',')+"</div>";
+        if (selected.val() == 'oil' || selected.val() == 'gas')
+        {
+          if (layer.feature.properties.leases)
+          {
+            returnString +="<div>Active Leases: "+layer.feature.properties.leases.active+"</div>";
+            returnString +="<div>Total Leases: "+ layer.feature.properties.leases.total+"</div>";
+          }
+        }
+        return returnString;
       })();
       popup.setLatLng(e.latlng);
-      popup.setContent('<div class="marker-title">' + layer.feature.properties.name + '</div>' + 
-          '<div>'+Revenue_String+'</div>');
+      popup.setContent('<div class="marker-title">' + layer.feature.properties.name + '</div>' + Revenue_String);
 
       if (!popup._map) popup.openOn(mapdataviz);
       window.clearTimeout(closeTooltip);

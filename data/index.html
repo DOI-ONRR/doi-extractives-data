@@ -138,6 +138,7 @@ description: This is a sample beta site for Federal natural resource revenues.
 
 <!-- START Main Data Dashboard -->
     <div class="dashboard-face">
+      <div id="company-name"><h1></h1></div>
       <div class="rev-by-commodity" id='dashboard-bar-rev-by-commodity'>
         <h4>Total Revenues by Commodity</h4>
       </div>
@@ -147,9 +148,9 @@ description: This is a sample beta site for Federal natural resource revenues.
       <div class="total-rev" id="totals">
         <a class="dashboard-button" href="{{site:url}}static/data/{{site:unilatteral_data}}">Download Full Dataset (CSV) </a>
         <a class="dashboard-button" href="javascript:download_data(companyDimension)">Download Filtered Data (CSV) </a>
-        <h1>Total Revenue: <span id="total_revenue"></span></h1>
-        <h1>Average Revenue: <span id="average_revenue">$1,000,000</span></h1>
-        <h1>Number of Companies: <span id="company_count">$1,000,000</span></h1>
+        <h1 id="total-revenue-h1">Total Revenue: <span id="total_revenue"></span></h1>
+        <h1 id="average-revenue-h1">Average Revenue: <span id="average_revenue">$1,000,000</span></h1>
+        <h1 id="number-of-companies-h1">Number of Companies: <span id="company_count">$1,000,000</span></h1>
       </div>
 
       <div class="dashboard-search">

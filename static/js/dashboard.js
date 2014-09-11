@@ -1,16 +1,27 @@
 var dash_bar_rev_by_commodity = dc.barChart("#dashboard-bar-rev-by-commodity");
+var dash_pie_rev_by_commodity;
 //var dash_bar_rev_by_other = dc.barChart("#dashboard-bar-rev-by-other");
-var dash_bar_by_rev_source = dc.barChart("#dashboard-bar-rev-source")
-var dash_bar_avg_by_rev_source = dc.barChart('#dashboard-bar-avg-by-rev-source');
-var dash_bar_avg_by_commodity = dc.barChart('#dashboard-bar-avg-by-commodity');
+// var dash_bar_by_rev_source = dc.barChart("#dashboard-bar-rev-source")
+// var dash_bar_avg_by_rev_source = dc.barChart('#dashboard-bar-avg-by-rev-source');
+// var dash_bar_avg_by_commodity = dc.barChart('#dashboard-bar-avg-by-commodity');
 //var barChartTwo = dc.pieChart("#dashboard-bar-chart-two");
-var dashTable = dc.dataTable("#dashboard-table");
-var dashTotalsTable = dc.dataTable("#dashboard-totals-table")
+var dashTable;
+var dashTotalsTable;
 var companyDimension; //dimension on company name
 var companyDimensionGroup;
 var typeDimension; //dimension on commodity type
 var typeDimensionHelper; //Extra commodity dimension for use by helper functions. Allows it to be filter on by other things
 var ndx; //crossfilter object
+var companyPage =  QueryString.company ? true : false;//Boolean: if this is a company specific dashboard or not. 
+if (!companyPage)
+{
+    dashTable = dc.dataTable("#dashboard-table");
+    dashTotalsTable = dc.dataTable("#dashboard-totals-table");
+}
+else
+{
+   // dash_pie_rev_by_commodity = dc.pieChart('#dashboard-pie-rev-by-commodity')
+}
 //var typeDimension;
 //d3.csv("https://docs.google.com/spreadsheet/pub?key=0AjPWVMj9wWa6dGw3b1c3ZHRSMW92UTJlNXRLTXZ0RUE&single=true&gid=0&output=csv",function(resource_data){
 
@@ -27,6 +38,17 @@ d3.csv("../static/data/Updated_Consolidated_Revenue_Data_with_Fake_Names.csv",fu
     companyDimension = ndx.dimension(function(d) {
         return d["Company Name"];
     });
+    
+    if (companyPage)
+        {
+            companyDimension.filter(function(d){
+            if (d == QueryString.company)
+                return true;
+            else 
+                return false;
+            });
+        }
+
     typeDimension = ndx.dimension(function(d) {
         return d["Commodity"];
     });
@@ -242,7 +264,9 @@ d3.csv("../static/data/Updated_Consolidated_Revenue_Data_with_Fake_Names.csv",fu
             }
         );
 
-    //Graphs
+    /****************************
+    Graph:Bar Graph, by commodity
+    *****************************/
     dash_bar_rev_by_commodity
         .width(600).height(400)
         .group(typeDimension_allGroup, "Rent")
@@ -271,8 +295,39 @@ d3.csv("../static/data/Updated_Consolidated_Revenue_Data_with_Fake_Names.csv",fu
     dash_bar_rev_by_commodity.on("filtered", function (chart) {
                 dc.events.trigger(function () {
                 });});
+    /*****************************
+    End: dash_bar_rev_by_commodity
+    *****************************/
+
+    /*****************************
+    Graph: Pie Graph, by commodity
+    *****************************/
+    // if (companyPage)
+    // {
+    //     dash_pie_rev_by_commodity.width(300)
+    //        // .colors(d3.scale.ordinal().range(["#815678","#70D4C4","#F96161","#ADAA97","#6D9DC8"]))
+    //         .height(300)
+    //         .transitionDuration(750)
+    //         .radius(105)
+    //         .dimension(typeDimension)
+    //         .group(typeDimensionEnergyGroup)
+    //         //.legend(dc.legend().x(280).y(70).itemHeight(13).gap(5))
+    //         .renderLabel(true)
+    //         //.minAngleForLabel(0)
+    //         //.label(function(d) { return d.data.key + "(" + Math.floor(d.data.value / all.value() * 100) + "%)"; })
+    //         .renderlet(function(d){
+    //             d3.select("#pie-chart-center-text h4").html('Total:<br /> $' +text_money(all.value()));
+    //         });
+    // }
+    /******************************
+    End: Pie Graph by commodity
+    ******************************/
     
 
+    
+    /****************************************
+    Alternate graphs not currently being used
+    *****************************************/
     // dash_bar_rev_by_other
     //     .width(600).height(400)
     //     .group(typeDimensionOtherGroup)
@@ -290,133 +345,158 @@ d3.csv("../static/data/Updated_Consolidated_Revenue_Data_with_Fake_Names.csv",fu
     //             dc.events.trigger(function () {
     //             });});
 
-    dash_bar_by_rev_source
-        .width(300).height(400)
-        .group(revDimensionGroup)
-        .dimension(revDimension)
-        .centerBar(false)
-        .elasticY(true)
-        .brushOn(false)
-        .renderHorizontalGridLines(true)
-    //.x(d3.time.scale().domain([minDate,maxDate]))
-    .xUnits(dc.units.ordinal)
-        .x(d3.scale.ordinal()) //.domain(["Coal","Gas","Oil & Gas","Oil"]))
-    .margins({
-        top: 10,
-        right: 10,
-        bottom: 75,
-        left: 100
-    })
-        .yAxis().tickFormat(function(v) {
-            return "$" + parseFloat(v).formatMoney(0, '.', ',')
-        });
-    dash_bar_by_rev_source.on("filtered", function(chart) {
-        dc.events.trigger(function() {});
-    });
+    // dash_bar_by_rev_source
+    //     .width(300).height(400)
+    //     .group(revDimensionGroup)
+    //     .dimension(revDimension)
+    //     .centerBar(false)
+    //     .elasticY(true)
+    //     .brushOn(false)
+    //     .renderHorizontalGridLines(true)
+    //     .xUnits(dc.units.ordinal)
+    //         .x(d3.scale.ordinal())
+    //     .margins({
+    //         top: 10,
+    //         right: 10,
+    //         bottom: 75,
+    //         left: 100
+    //     })
+    //     .yAxis().tickFormat(function(v) {
+    //         return "$" + parseFloat(v).formatMoney(0, '.', ',')
+    //     });
+    // dash_bar_by_rev_source.on("filtered", function(chart) {
+    //     dc.events.trigger(function() {});
+    // });
 
-    dash_bar_avg_by_rev_source
-        .width(300).height(400)
-        .group(revDimension_allGroup)
-        .dimension(revDimension)
-        .centerBar(false)
-        .elasticY(true)
-        .brushOn(false)
-        .renderHorizontalGridLines(true)
-        .valueAccessor(function(p) {
-            return p.value.average;
-        })
-        .xUnits(dc.units.ordinal)
-        .x(d3.scale.ordinal())
-        .margins({
-            top: 10,
-            right: 10,
-            bottom: 75,
-            left: 100
-        })
-        .yAxis().tickFormat(function(v) {
-            return "$" + parseFloat(v).formatMoney(0, '.', ',')
-        });
-    dash_bar_avg_by_rev_source.on("filtered", function(chart) {
-        dc.events.trigger(function() {});
-    });
+    // dash_bar_avg_by_rev_source
+    //     .width(300).height(400)
+    //     .group(revDimension_allGroup)
+    //     .dimension(revDimension)
+    //     .centerBar(false)
+    //     .elasticY(true)
+    //     .brushOn(false)
+    //     .renderHorizontalGridLines(true)
+    //     .valueAccessor(function(p) {
+    //         return p.value.average;
+    //     })
+    //     .xUnits(dc.units.ordinal)
+    //     .x(d3.scale.ordinal())
+    //     .margins({
+    //         top: 10,
+    //         right: 10,
+    //         bottom: 75,
+    //         left: 100
+    //     })
+    //     .yAxis().tickFormat(function(v) {
+    //         return "$" + parseFloat(v).formatMoney(0, '.', ',')
+    //     });
+    // dash_bar_avg_by_rev_source.on("filtered", function(chart) {
+    //     dc.events.trigger(function() {});
+    // });
 
-    dash_bar_avg_by_commodity
-        .width(600).height(400)
-        .group(typeDimension_allGroup)
-        .dimension(typeDimension)
-        .centerBar(false)
-        .elasticY(true)
-        .brushOn(false)
-        .renderHorizontalGridLines(true)
-        .valueAccessor(function(p) {
-            return p.value.average;
-        })
-    //.x(d3.time.scale().domain([minDate,maxDate]))
-    .xUnits(dc.units.ordinal)
-        .x(d3.scale.ordinal())
-        .margins({
-            top: 10,
-            right: 10,
-            bottom: 75,
-            left: 100
-        })
-        .yAxis().tickFormat(function(v) {
-            return "$" + parseFloat(v).formatMoney(0, '.', ',')
-        });
-    dash_bar_avg_by_commodity.on("filtered", function(chart) {
-        dc.events.trigger(function() {});
-    });
-
-    //dash_bar_rev_by_energy.y(d3.scale.sqrt().nice().domain([0.0,7000000000.0]));
-    //dash_bar_rev_by_other.y(d3.scale.sqrt().nice().domain([-5000,28000000.0]));
+    // dash_bar_avg_by_commodity
+    //     .width(600).height(400)
+    //     .group(typeDimension_allGroup)
+    //     .dimension(typeDimension)
+    //     .centerBar(false)
+    //     .elasticY(true)
+    //     .brushOn(false)
+    //     .renderHorizontalGridLines(true)
+    //     .valueAccessor(function(p) {
+    //         return p.value.average;
+    //     })
+    // .xUnits(dc.units.ordinal)
+    //     .x(d3.scale.ordinal())
+    //     .margins({
+    //         top: 10,
+    //         right: 10,
+    //         bottom: 75,
+    //         left: 100
+    //     })
+    //     .yAxis().tickFormat(function(v) {
+    //         return "$" + parseFloat(v).formatMoney(0, '.', ',')
+    //     });
+    // dash_bar_avg_by_commodity.on("filtered", function(chart) {
+    //     dc.events.trigger(function() {});
+    // });
 
 
 
 
-    //Table
-    dashTable.width(800).height(800)
-        .dimension(companyDimension)
-        .group(function(d) {
-            return "List of all Selected Companies";
-        })
-        .size(1774)
-        .columns([
-                function(d){return d["Company Name"]; },
-                function(d){return d["Revenue Type"];},
-                function(d){return d["Commodity"];},
-                function(d){return "$"+parseFloat(d["Revenue"]).formatMoney(0,'.',',');}
-            ])
-        .sortBy(function(d){return d["Company Name"]})
-        .order(d3.ascending);
-    //Table related Facts (Averages, Totals, etc)
-    //These items are tied to the dashTable so they will be updated when it is updated
-    dashTable
+    /*******************************************************************
+    Main Table Setup
+    Setups table with company name, commodity, revenue, and revenue type
+    *******************************************************************/
+    if (!companyPage)
+    {
+        dashTable.width(800).height(800)
+            .dimension(companyDimension)
+            .group(function(d) {
+                return "List of all Selected Companies";
+            })
+            .size(1774)
+            .columns([
+                    function(d){ 
+                        return '<a href="./?company='+
+                                d["Company Name"]+
+                                '">'+
+                                d["Company Name"]+
+                                '</a>' ;
+                    },
+                    function(d){return d["Revenue Type"];},
+                    function(d){return d["Commodity"];},
+                    function(d){return "$test"+parseFloat(d["Revenue"]).formatMoney(0,'.',',');}
+                ])
+            .sortBy(function(d){return d["Company Name"]})
+            .order(d3.ascending);
+    }
+    
+    /****************************
+    End: Main Table Setup
+    ****************************/
+
+    /*********************************************************************************
+    Table related Facts (Averages, Totals, etc)
+    These items are tied to the dashTable so they will be updated when it is updated
+    *********************************************************************************/
+    dash_bar_rev_by_commodity
         .renderlet(function(d){
             d3.select("#total_revenue").html('$' +parseFloat(all.value().sum.toFixed(0)).formatMoney(0,'.',','));
         });
-    dashTable
+    dash_bar_rev_by_commodity
         .renderlet(function(d){
             d3.select("#average_revenue").html('$' +parseFloat(all.value().average.toFixed(0)).formatMoney(0,'.',','));
         });
-    dashTable
+    dash_bar_rev_by_commodity
         .renderlet(function(d){
             d3.select("#company_count").html(all.value().company_count);
-            //print_filter(companyDimensionGroup);
         })
-    //var dcGroupTable = new DCGroupTable("Company Name", "Total Revenue", 'sum');
-    //dcGroupTable.draw(companyDimensionGroup)
-   //dcGroupTable.drawTable();
-   //console.log(companyDimensionGroup.top(Infinity));
-   draw_totals_table();
-   dashTotalsTable
-    .sortBy(function(d){return d["Company Name"]})
-    .order(d3.ascending);
-   
     
-    for (var i = 0; i < dc.chartRegistry.list().length; i++) {
-        var chartI = dc.chartRegistry.list()[i];
-        chartI.on("filtered", draw_totals_table);
+    /***************************
+    End Table Related Functions
+    ***************************/
+
+
+    /****************************************************
+    Set up special table for company grouping by revenue
+    ****************************************************/
+    if(!companyPage)
+    {
+        draw_totals_table();
+        dashTotalsTable
+            .sortBy(function(d){return d["Company Name"]})
+            .order(d3.ascending);
+       
+        
+        for (var i = 0; i < dc.chartRegistry.list().length; i++) {
+            var chartI = dc.chartRegistry.list()[i];
+            chartI.on("filtered", draw_totals_table);
+        }    
     }
+    
+    /***************************
+    End: Special Table Set up
+    ***************************/
 
    dc.renderAll();
    graphCustomizations();
@@ -425,7 +505,23 @@ d3.csv("../static/data/Updated_Consolidated_Revenue_Data_with_Fake_Names.csv",fu
 
 
 });
+/****************************
+End: d3 csv
+****************************/
 
+if(companyPage)
+{
+    $('.dashboard-search').hide();
+    $('#average-revenue-h1').hide();
+    $('#number-of-companies-h1').hide();
+    $('#company-name').prepend('<a href="./">Back</a>');
+    $('#company-name > h1').html(QueryString.company);
+}
+
+
+/*****************************
+Creates d3 tip for bar graphs
+*****************************/
 var barTip = d3.tip()
     .attr('class', 'd3-tip')
     .offset([-10, 0])
@@ -447,7 +543,17 @@ var barTip = d3.tip()
             return s;
         }
     });
+/*****************************
+End: barTip()
+*****************************/
 
+
+/*********************************
+graphCustomizations
+Function: Performs post processing
+    on graphs to add styling and 
+    other effects, rollovers
+**********************************/
 var graphCustomizations = function() {
     d3.selectAll("g.x text")
         .attr("class", "campusLabel")
@@ -457,6 +563,8 @@ var graphCustomizations = function() {
     d3.selectAll(".bar").call(barTip);
     d3.selectAll(".bar").on('mouseover', barTip.show)
         .on('mouseout', barTip.hide);
-
-    //d3.selectAll(".bar").attr("tabindex",0);
 };
+/************************
+End: graphCustomizations
+************************/
+

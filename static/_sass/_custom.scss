@@ -706,10 +706,228 @@ Map
 }
 .menu-ui {
   position:absolute;
-  top:10px;
-  right:10px;
+  top:60px;
+  left:10px;
   z-index: 10000;
   }
+.map-info-pane{
+    position: absolute;
+    padding: 5px;
+    top:10px;
+    right:10px;
+    z-index: 10000;
+    min-height: 50px;
+    min-width:150px;
+    max-width:200px;
+    background-color: white;
+    display: none;
+}
+.map-comodities-pane{
+    position: absolute;
+    bottom:10px;
+    left:10px;
+    width: 150px;
+    z-index: 10000;
+    div {
+        width: 75px;
+        height: 75px;
+        float:left;
+        border: 1px solid black;
+        font-size: 10pt;
+        position: relative;
+        span{
+            position: absolute;
+            bottom: -3px;
+            right: 2px;
+        }
+    }
+    div.oil{
+        background: url(../img/icon_375.svg);
+        background-size: 35px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #D8D8D8;
+        &:hover{
+            color: white;
+            background: url(../img/icon_375_white.svg);
+            background-size: 35px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color:#444343;
+        }
+    }
+    div.oil-selected{
+        background: url(../img/icon_375_white.svg);
+        background-size: 35px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: black;
+        color:white;
+        &:hover{
+            color: white;
+            background: url(../img/icon_375_white.svg);
+            background-size: 35px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color:#444343;
+        }
+    }
+    div.ngl{
+        background: url(../img/icon_12555.svg);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #D8D8D8;
+        &:hover{
+            color:white;
+            background: url(../img/icon_12555_white.svg);
+            background-size: 25px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: #444343;
+        }
+    }
+    div.ngl-selected{
+        background: url(../img/icon_12555_white.svg);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: black;
+        color:white;
+        &:hover{
+            color:white;
+            background: url(../img/icon_12555_white.svg);
+            background-size: 25px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: #444343;
+        }
+    }
+    div.coal{
+        background: url(../img/icon_5846.svg);
+        background-size: 45px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #D8D8D8;
+        &:hover{
+            color:white;
+            background: url(../img/icon_5846_white.svg);
+            background-size: 45px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: #444343;
+        }
+    }
+    div.coal-selected{
+        background: url(../img/icon_5846_white.svg);
+        background-size: 45px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: black;
+        color:white;
+        &:hover{
+            color:white;
+            background: url(../img/icon_5846_white.svg);
+            background-size: 45px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: #444343;
+        }
+    }
+    div.other{
+        background: url(../img/icon_29006.svg);
+        background-size: 18px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #D8D8D8;
+        &:hover{
+            color:white;
+            background: url(../img/icon_29006_white.svg);
+            background-size: 18px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: #444343;
+        }
+    }
+    div.other-selected{
+        background: url(../img/icon_29006_white.svg);
+        background-size: 18px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: black;
+        color:white;
+        &:hover{
+            color:white;
+            background: url(../img/icon_29006_white.svg);
+            background-size: 18px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: #444343;
+        }
+    }
+    div.geo{
+        background: url(../img/icon_2070.svg);
+        background-size: 35px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #D8D8D8;
+        &:hover{
+            color:white;
+            background: url(../img/icon_2070_white.svg);
+            background-size: 35px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: #444343;
+        }
+    }
+    div.geo-selected{
+        background: url(../img/icon_2070_white.svg);
+        background-size: 35px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: black;
+        color:white;
+        &:hover{
+            color:white;
+            background: url(../img/icon_2070_white.svg);
+            background-size: 35px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: #444343;
+        }
+    }
+    div.wind{
+        background: url(../img/icon_25208.svg);
+        background-size: 35px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #D8D8D8;
+        &:hover{
+            color:white;
+            background: url(../img/icon_25208_white.svg);
+            background-size: 35px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: #444343;
+        }
+    }
+    div.wind-selected{
+        background: url(../img/icon_25208_white.svg);
+        background-size: 35px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: black;
+        color:white;
+        &:hover{
+            color:white;
+            background: url(../img/icon_25208_white.svg);
+            background-size: 35px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: #444343;
+        }
+    }
+}
 
   path {
   -webkit-transition:fill 200ms;

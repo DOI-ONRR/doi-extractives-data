@@ -242,14 +242,14 @@ $('#map-comodities-pane div').each(function(i){
           {
             returnString +="<div>Active Leases: "+layer.feature.properties.leases.active+"</div>";
             returnString +="<div>Total Leases: "+ layer.feature.properties.leases.total+"</div>";
-            returnString +="<div><strong>Active leases</strong> are pieces of federal land that are currently producing a commodity<br>"+
-                            "<strong>Total leases</strong> include both active leases and leases that have been sold, but are not producing any commodities.</div>";
+            returnString +="<aside><strong>Active leases</strong> are pieces of federal land that are currently producing a commodity.</br>"+
+                            "<strong>Total leases</strong> include both active leases and leases that have been sold, but are not producing any commodities.</aside>";
           }
         }
         return returnString;
       })();
 
-      $('#map-info-pane').html('<div class="marker-title"><h3>'+layer.feature.properties.name + '</h3></div>' + Revenue_String).show();
+      $('#map-info-pane').html('<h1>'+layer.feature.properties.name + '</h1>' + Revenue_String).show();
       //popup.setLatLng(e.latlng);
       //popup.setContent('<div class="marker-title">' + layer.feature.properties.name + '</div>' + Revenue_String);
 

@@ -712,15 +712,34 @@ Map
 }
 .map-info-pane {
     position: absolute;
-    padding: 5px;
-    top:10px;
-    right:10px;
+    line-height: 20px;
+    line-height: rem(20);
+    padding: 10px;
+    top: 10px;
+    right: 10px;
     z-index: 10000;
     min-height: 50px;
     min-width: 150px;
     max-width: 200px;
     background-color: white;
+    border: 1px solid $medium-gray;
+    border-radius: 3px;
     display: none;
+    h1 {
+        font-family: $base-font-family;
+        font-weight: 400;
+    }
+    div:first-of-type {
+        margin-bottom: 9px;
+    }
+    aside {
+        margin-top: 11px;
+        font-style: italic;
+        font-size: 12px;
+        font-size: rem(12);
+        line-height: 13px;
+        line-height: rem(13);
+    }
 }
 .map-comodities-pane {
     position: absolute;

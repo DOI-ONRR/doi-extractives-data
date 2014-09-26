@@ -44,7 +44,7 @@
   function mousemove_oil(e) {
       var layer = e.target;
       popup.setLatLng(e.latlng);
-      popup.setContent('<div class="marker-title">' + layer.feature.properties.name + '</div>' + 
+      popup.setContent('<h1>' + layer.feature.properties.name + '</h1>' + 
           '<div> Oil Revenue: $' + layer.feature.properties.commodities.oil.revenue.formatMoney(2,'.',',') +'</div>') ;
 
       if (!popup._map) popup.openOn(mapdataviz);

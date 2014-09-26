@@ -157,7 +157,29 @@ Homepage Splash
     width: 30px;
     float: left;
     margin: -5px 4px auto -14px;
+    
 }
+@-webkit-keyframes breathe {
+    0%, 100% { width: 30px; }
+    50% { width: 32px; }
+}
+@-moz-keyframes breathe {
+    0%, 100% { width: 30px; }
+    50% { width: 32px; }
+}
+@-o-keyframes breathe {
+    0%, 100% { width: 30px; }
+    50% { width: 32px; }
+}
+@keyframes breathe {
+    0%, 100% { width: 30px; }
+    50% { width: 32px; }
+}
+.breathe {
+    @include prefixer(animation, breathe 3s infinite, webkit moz o spec);
+    @include prefixer(animation-timing-function, ease, webkit moz o spec);
+}
+
 
 /*============================================
 Nav

@@ -17,25 +17,29 @@ var variables = [
     'gas',
     'coal',
     'other',
-    'geothermal',
-    'wind'];
+    'wind',
+    'geothermal'];
 
 var ranges ={};
 var dataLayers=[];
 
-var $select = $('<select></select>')
-              .appendTo($('#variables'))
-              .on('change',function(){
-                setVariable($(this).val());
-              });
 for (var i = 0; i<variables.length; i++)
 {
   ranges[variables[i]] = {min: 0, max: -Infinity};
-  $('<option></option>')
-    .text(variables[i].capitalize())
-    .attr('value',variables[i])
-    .appendTo($select);
 }
+$('#map-comodities-pane div').each(function(i){
+  $(this).attr('data-value',variables[i]);
+  
+  $(this).click(function(){
+    setVariable($(this).attr('data-value'));
+    
+    $('#map-comodities-pane div').each(function(n){
+      $(this).attr('class',$(this).attr('class').replace('-selected','').replace(' selected',''));
+    });
+
+    $(this).attr('class',$(this).attr('class')+'-selected selected');
+  })
+});
 
   // statesData comes from the 'revenue2013.json' included above
   var statesLayer = L.geoJson(statesData, {
@@ -218,11 +222,11 @@ for (var i = 0; i<variables.length; i++)
   function mousemove(e) {
       var layer = e.target;
       var Revenue_String = (function(){
-        var selected = $('#variables select option:selected');
+        var selected = $('#map-comodities-pane div.selected').attr('data-value');
         if (layer.feature.properties.commodities)
         {
-          if (layer.feature.properties.commodities[selected.val()])
-            var revenueAmt = layer.feature.properties.commodities[selected.val()].revenue;
+          if (layer.feature.properties.commodities[selected])
+            var revenueAmt = layer.feature.properties.commodities[selected].revenue;
           else 
             var revenueAmt = 0.0;
         }
@@ -230,34 +234,38 @@ for (var i = 0; i<variables.length; i++)
         {
           var revenueAmt = 0.0;
         }
-        var revenueType = selected.val().capitalize();
-        var returnString ="<div>"+revenueType+" Revenue: $"+revenueAmt.formatMoney(2,'.',',')+"</div>";
-        if (selected.val() == 'oil' || selected.val() == 'gas')
+        var revenueType = selected.capitalize();
+        var returnString ="<div>"+revenueType+" Revenue:<br />$"+revenueAmt.formatMoney(2,'.',',')+"</div>";
+        if (selected == 'oil' || selected == 'gas')
         {
           if (layer.feature.properties.leases)
           {
             returnString +="<div>Active Leases: "+layer.feature.properties.leases.active+"</div>";
             returnString +="<div>Total Leases: "+ layer.feature.properties.leases.total+"</div>";
+            returnString +="<aside><strong>Active leases</strong> are pieces of federal land that are currently producing a commodity.</br>"+
+                            "<strong>Total leases</strong> include both active leases and leases that have been sold, but are not producing any commodities.</aside>";
           }
         }
         return returnString;
       })();
-      popup.setLatLng(e.latlng);
-      popup.setContent('<div class="marker-title">' + layer.feature.properties.name + '</div>' + Revenue_String);
 
-      if (!popup._map) popup.openOn(mapdataviz);
-      window.clearTimeout(closeTooltip);
+      $('#map-info-pane').html('<h1>'+layer.feature.properties.name + '</h1>' + Revenue_String).show();
+      //popup.setLatLng(e.latlng);
+      //popup.setContent('<div class="marker-title">' + layer.feature.properties.name + '</div>' + Revenue_String);
 
-      // highlight feature
-      // layer.setStyle({
-      //     weight: 3,
-      //     opacity: 0.3,
-      //     fillOpacity: 0.9
-      // });
+      // if (!popup._map) popup.openOn(mapdataviz);
+      // window.clearTimeout(closeTooltip);
 
-      if (!L.Browser.ie && !L.Browser.opera) {
-          layer.bringToFront();
-      }
+      // // highlight feature
+      // // layer.setStyle({
+      // //     weight: 3,
+      // //     opacity: 0.3,
+      // //     fillOpacity: 0.9
+      // // });
+
+      // if (!L.Browser.ie && !L.Browser.opera) {
+      //     layer.bringToFront();
+      // }
   }
 
   function mouseout(e) {
@@ -265,6 +273,7 @@ for (var i = 0; i<variables.length; i++)
       closeTooltip = window.setTimeout(function() {
           mapdataviz.closePopup();
       }, 100);
+      $('#map-info-pane').hide();
   }
 
   function zoomToFeature(e) {

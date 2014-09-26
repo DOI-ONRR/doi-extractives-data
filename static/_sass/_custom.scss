@@ -706,10 +706,143 @@ Map
 }
 .menu-ui {
   position:absolute;
-  top:10px;
-  right:10px;
+  top: 60px;
+  left: 10px;
   z-index: 10000;
-  }
+}
+.map-info-pane {
+    position: absolute;
+    line-height: 20px;
+    line-height: rem(20);
+    padding: 10px;
+    top: 10px;
+    right: 10px;
+    z-index: 10000;
+    min-height: 50px;
+    min-width: 150px;
+    max-width: 200px;
+    background-color: white;
+    border: 1px solid $medium-gray;
+    border-radius: 3px;
+    display: none;
+    h1 {
+        font-family: $base-font-family;
+        font-weight: 400;
+    }
+    div:first-of-type {
+        margin-bottom: 9px;
+    }
+    aside {
+        margin-top: 11px;
+        font-style: italic;
+        font-size: 12px;
+        font-size: rem(12);
+        line-height: 13px;
+        line-height: rem(13);
+    }
+}
+.map-comodities-pane {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 150px;
+    z-index: 10000;
+    div {
+        width: 75px;
+        height: 75px;
+        float:left;
+        border: 1px solid black;
+        font-size: 10pt;
+        position: relative;
+        span{
+            position: absolute;
+            bottom: -3px;
+            right: 2px;
+        }
+        &:hover, &:focus {
+            color: white;
+            cursor: pointer;
+        }
+    }
+    div.oil, div.oil-selected {
+        background: $dark-medium-gray url(../img/icon_375.svg) no-repeat center;
+        background-size: 31px;
+        &:hover, &:focus {
+            background: $darker-gray url(../img/icon_375_white.svg) no-repeat center;
+            background-size: 31px;
+        }
+    }
+    div.oil-selected {
+        background: black url(../img/icon_375_white.svg) no-repeat center;
+        background-size: 31px;
+        color: white;
+    }
+    div.ngl, div.ngl-selected {
+        background: $dark-medium-gray url(../img/icon_12555.svg) no-repeat center;
+        background-size: 23px;
+        &:hover, &:focus {
+            background: $darker-gray url(../img/icon_12555_white.svg) no-repeat center;
+            background-size: 23px;
+        }
+    }
+    div.ngl-selected {
+        background: black url(../img/icon_12555_white.svg) no-repeat center;
+        background-size: 23px;
+        color: white;
+    }
+    div.coal, div.coal-selected {
+        background: $dark-medium-gray url(../img/icon_5846.svg) no-repeat center;
+        background-size: 45px;
+        &:hover, &:focus {
+            background: $darker-gray url(../img/icon_5846_white.svg) no-repeat center;
+            background-size: 45px;
+        }
+    }
+    div.coal-selected {
+        background: black url(../img/icon_5846_white.svg) no-repeat center;
+        background-size: 45px;
+        color: white;
+    }
+    div.other, div.other-selected {
+        background: $dark-medium-gray url(../img/icon_29006.svg) no-repeat center;
+        background-size: 14px;
+        &:hover, &:focus {
+            background: $darker-gray url(../img/icon_29006_white.svg) no-repeat center;
+            background-size: 14px;
+        }
+    }
+    div.other-selected {
+        background: black url(../img/icon_29006_white.svg) no-repeat center;
+        background-size: 14px;
+        color: white;
+    }
+    div.geo, div.geo-selected {
+        background: $dark-medium-gray url(../img/icon_2070.svg) no-repeat center;
+        background-size: 35px;
+        &:hover, &:focus {
+            background: $darker-gray url(../img/icon_2070_white.svg) no-repeat center;
+            background-size: 35px;
+        }
+    }
+    div.geo-selected {
+        background: black url(../img/icon_2070_white.svg) no-repeat center;
+        background-size: 35px;
+        color: white;
+    }
+    div.wind, div.wind-selected {
+        background: $dark-medium-gray url(../img/icon_25208.svg) no-repeat center;
+        background-size: 35px;
+        &:hover, &:focus {
+            background: $darker-gray url(../img/icon_25208_white.svg) no-repeat center;
+            background-size: 35px;
+        }
+    }
+    div.wind-selected {
+        background: black url(../img/icon_25208_white.svg) no-repeat center;
+        background-size: 35px;
+        color: white;
+    }
+}
 
   path {
   -webkit-transition:fill 200ms;

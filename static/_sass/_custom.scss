@@ -706,26 +706,26 @@ Map
 }
 .menu-ui {
   position:absolute;
-  top:60px;
-  left:10px;
+  top: 60px;
+  left: 10px;
   z-index: 10000;
-  }
-.map-info-pane{
+}
+.map-info-pane {
     position: absolute;
     padding: 5px;
     top:10px;
     right:10px;
     z-index: 10000;
     min-height: 50px;
-    min-width:150px;
-    max-width:200px;
+    min-width: 150px;
+    max-width: 200px;
     background-color: white;
     display: none;
 }
-.map-comodities-pane{
+.map-comodities-pane {
     position: absolute;
-    bottom:10px;
-    left:10px;
+    bottom: 10px;
+    left: 10px;
     width: 150px;
     z-index: 10000;
     div {
@@ -740,192 +740,88 @@ Map
             bottom: -3px;
             right: 2px;
         }
-    }
-    div.oil{
-        background: url(../img/icon_375.svg);
-        background-size: 35px;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-color: #D8D8D8;
-        &:hover{
+        &:hover, &:focus {
             color: white;
-            background: url(../img/icon_375_white.svg);
-            background-size: 35px;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-color:#444343;
+            cursor: pointer;
         }
     }
-    div.oil-selected{
-        background: url(../img/icon_375_white.svg);
-        background-size: 35px;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-color: black;
-        color:white;
-        &:hover{
-            color: white;
-            background: url(../img/icon_375_white.svg);
-            background-size: 35px;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-color:#444343;
+    div.oil, div.oil-selected {
+        background: $dark-medium-gray url(../img/icon_375.svg) no-repeat center;
+        background-size: 31px;
+        &:hover, &:focus {
+            background: $darker-gray url(../img/icon_375_white.svg) no-repeat center;
+            background-size: 31px;
         }
     }
-    div.ngl{
-        background: url(../img/icon_12555.svg);
-        background-size: 25px;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-color: #D8D8D8;
-        &:hover{
-            color:white;
-            background: url(../img/icon_12555_white.svg);
-            background-size: 25px;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-color: #444343;
+    div.oil-selected {
+        background: black url(../img/icon_375_white.svg) no-repeat center;
+        background-size: 31px;
+        color: white;
+    }
+    div.ngl, div.ngl-selected {
+        background: $dark-medium-gray url(../img/icon_12555.svg) no-repeat center;
+        background-size: 23px;
+        &:hover, &:focus {
+            background: $darker-gray url(../img/icon_12555_white.svg) no-repeat center;
+            background-size: 23px;
         }
     }
-    div.ngl-selected{
-        background: url(../img/icon_12555_white.svg);
-        background-size: 25px;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-color: black;
-        color:white;
-        &:hover{
-            color:white;
-            background: url(../img/icon_12555_white.svg);
-            background-size: 25px;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-color: #444343;
-        }
+    div.ngl-selected {
+        background: black url(../img/icon_12555_white.svg) no-repeat center;
+        background-size: 23px;
+        color: white;
     }
-    div.coal{
-        background: url(../img/icon_5846.svg);
+    div.coal, div.coal-selected {
+        background: $dark-medium-gray url(../img/icon_5846.svg) no-repeat center;
         background-size: 45px;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-color: #D8D8D8;
-        &:hover{
-            color:white;
-            background: url(../img/icon_5846_white.svg);
+        &:hover, &:focus {
+            background: $darker-gray url(../img/icon_5846_white.svg) no-repeat center;
             background-size: 45px;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-color: #444343;
         }
     }
-    div.coal-selected{
-        background: url(../img/icon_5846_white.svg);
+    div.coal-selected {
+        background: black url(../img/icon_5846_white.svg) no-repeat center;
         background-size: 45px;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-color: black;
-        color:white;
-        &:hover{
-            color:white;
-            background: url(../img/icon_5846_white.svg);
-            background-size: 45px;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-color: #444343;
+        color: white;
+    }
+    div.other, div.other-selected {
+        background: $dark-medium-gray url(../img/icon_29006.svg) no-repeat center;
+        background-size: 14px;
+        &:hover, &:focus {
+            background: $darker-gray url(../img/icon_29006_white.svg) no-repeat center;
+            background-size: 14px;
         }
     }
-    div.other{
-        background: url(../img/icon_29006.svg);
-        background-size: 18px;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-color: #D8D8D8;
-        &:hover{
-            color:white;
-            background: url(../img/icon_29006_white.svg);
-            background-size: 18px;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-color: #444343;
-        }
+    div.other-selected {
+        background: black url(../img/icon_29006_white.svg) no-repeat center;
+        background-size: 14px;
+        color: white;
     }
-    div.other-selected{
-        background: url(../img/icon_29006_white.svg);
-        background-size: 18px;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-color: black;
-        color:white;
-        &:hover{
-            color:white;
-            background: url(../img/icon_29006_white.svg);
-            background-size: 18px;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-color: #444343;
-        }
-    }
-    div.geo{
-        background: url(../img/icon_2070.svg);
+    div.geo, div.geo-selected {
+        background: $dark-medium-gray url(../img/icon_2070.svg) no-repeat center;
         background-size: 35px;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-color: #D8D8D8;
-        &:hover{
-            color:white;
-            background: url(../img/icon_2070_white.svg);
+        &:hover, &:focus {
+            background: $darker-gray url(../img/icon_2070_white.svg) no-repeat center;
             background-size: 35px;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-color: #444343;
         }
     }
-    div.geo-selected{
-        background: url(../img/icon_2070_white.svg);
+    div.geo-selected {
+        background: black url(../img/icon_2070_white.svg) no-repeat center;
         background-size: 35px;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-color: black;
-        color:white;
-        &:hover{
-            color:white;
-            background: url(../img/icon_2070_white.svg);
+        color: white;
+    }
+    div.wind, div.wind-selected {
+        background: $dark-medium-gray url(../img/icon_25208.svg) no-repeat center;
+        background-size: 35px;
+        &:hover, &:focus {
+            background: $darker-gray url(../img/icon_25208_white.svg) no-repeat center;
             background-size: 35px;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-color: #444343;
         }
     }
-    div.wind{
-        background: url(../img/icon_25208.svg);
+    div.wind-selected {
+        background: black url(../img/icon_25208_white.svg) no-repeat center;
         background-size: 35px;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-color: #D8D8D8;
-        &:hover{
-            color:white;
-            background: url(../img/icon_25208_white.svg);
-            background-size: 35px;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-color: #444343;
-        }
-    }
-    div.wind-selected{
-        background: url(../img/icon_25208_white.svg);
-        background-size: 35px;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-color: black;
-        color:white;
-        &:hover{
-            color:white;
-            background: url(../img/icon_25208_white.svg);
-            background-size: 35px;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-color: #444343;
-        }
+        color: white;
     }
 }
 

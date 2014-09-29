@@ -1,6 +1,6 @@
 var mapdataviz = L.mapbox.map('map', 'mhertzfeld.i8l68af5')
     .setView([37.8, -91], 4);
-
+mapdataviz.scrollWheelZoom.disable();
   var popup = new L.Popup({ autoPan: false });
 
   var hues = [
@@ -116,10 +116,6 @@ $('#map-comodities-pane div').each(function(i){
               (hues.length - 1) *
               ((value - scale.min) /
               (scale.max - scale.min)));
-
-          console.log(layer.feature.properties.name + " divions = "+  (hues.length - 1) *
-              ((value - scale.min) /
-              (scale.max - scale.min)))
           if (division < 0)
             division = 0;
           // See full path options at
@@ -310,5 +306,7 @@ $('#map-comodities-pane div').each(function(i){
   // L.control.layers(null,overlays, {
   //     collapsed:false,
   //   }).addTo(mapdataviz);
+
+console.log(mapdataviz);
 
 

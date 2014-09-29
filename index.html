@@ -11,10 +11,12 @@ description: This is a sample beta site for Federal natural resource revenues.
     <p>
       An official website of the United States Government <img class="flag" src="{{ site.url }}static/img/us_flag_small.png" alt="U.S. Flag">
     </p>
+
   </div>
 </aside>
 
 <section class="splash">
+  {% include nav.html %} 
   <div class="container">
     <div class="title">
       <h1>Natural Resource Revenue</h1>
@@ -28,8 +30,9 @@ description: This is a sample beta site for Federal natural resource revenues.
       <p>Learn more by scrolling down.</p>
     </div>
   </div>
-    {% include nav.html %}
 </section>
+
+
 
 <main role="main" itemscope itemprop="mainContentOfSite">
 

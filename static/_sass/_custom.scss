@@ -1,7 +1,5 @@
-/*============================================
-Mixins
-============================================*/
-
+// Mixins
+//============================================
 // shrinks designated text and aligns it with x-height of neighboring text
 // must insert size of neighboring text in em as variable
 @mixin small-type($parent-font-size) {
@@ -19,9 +17,8 @@ Mixins
 	font-size: 2.1 * $parent-font-size;
 }
 
-/*============================================
-Utility
-============================================*/
+// Utility
+//============================================
 .container {
 	@include outer-container;
 }
@@ -39,10 +36,8 @@ Utility
     width:100%;
 }
 
-/*============================================
-Alpha Alert
-============================================*/
-
+// Alpha Alert
+//============================================
 #burst-12 {
     background: $red;
     width: 80px;
@@ -89,10 +84,45 @@ Alpha Alert
     }
 }
 
+// Nav
+//============================================
+ul.menu a.active li {
+  color: lighten($blue, 35%);
+  &:hover, &:focus {
+      color: white;
+  }
+}
+ul.menu a.active li::before {
+  content: "\2605 ";
+}
+.nav {
+    background: #8dc2e7;
+    background: rgba(141, 194, 231, 0.65);
+    border-top: 6px solid rgba(0, 0, 0, 0.3);
+    ul {
+        width: 100%;
+        float: left;
+        list-style: none;
+    }
+    li {
+        font-weight: 500;
+        float: left;
+        padding: 5px 3px 3px 3px;
+        margin-right: 32px;
+        border-left: 1px solid black;
+        display: block;
+    }
+    a {
+        color: black;
+        text-decoration: none;
+        &:hover, &:focus {
+            color: white;
+        }
+    }
+}
 
-/*============================================
-Homepage Splash
-============================================*/
+// Homepage Splash
+//============================================
 .usa {
 	@include span-columns(12);
 	background-color: $blue;
@@ -103,9 +133,12 @@ Homepage Splash
     p {
     font-family: Lato, sans-serif;}
 }
+
 .splash {
-	padding: 50px 0px 0px 0px;
-    background: url(../img/oil_blur.jpg) no-repeat top center fixed;
+	padding: 18px 0px 0px 0px;
+    border-bottom: 6px solid rgba(0, 0, 0, 0.3);
+    background: url(../img/oil-pump.jpg) no-repeat center center fixed;
+    @include prefixer(background-size, cover, webkit moz o spec);
     color: white;
     .title {
     	@include span-columns(7);
@@ -123,6 +156,9 @@ Homepage Splash
         padding-left: 20px;
         padding-right: 20px;
         margin-bottom: 10px;
+        &:first-of-type {
+            margin-top: 100px;
+        }
     }
     h1 + h1 {
         margin-bottom: -6px;
@@ -132,11 +168,18 @@ Homepage Splash
         font-size: rem(22);
         padding-left: 10px;
         padding-right: 10px;
+        &:first-of-type {
+            margin-top: 15px;
+        }
+        + h1 {
+            margin-bottom: 10px;
+        }
     }
     .intro {
     	@include span-columns(9);
         background-color: transparentize(black, 0.55);
         margin-left: 20px;
+        margin-bottom: 250px;
         padding: 20px 50px 15px 30px;
         p {
         	font-size: $base-font-size + .1em;
@@ -149,9 +192,6 @@ Homepage Splash
     .small {
     	@include small-type(2.16em);
     }
-}
-.splash-short {
-    padding: 30px 0px 0px 0px;
 }
 .moreDown {
     width: 30px;
@@ -180,52 +220,8 @@ Homepage Splash
     @include prefixer(animation-timing-function, ease, webkit moz o spec);
 }
 
-
-/*============================================
-Nav
-============================================*/
-ul.menu a.active li {
-  color: lighten($blue, 35%);
-  &:hover, &:focus {
-      color: white;
-  }
-}
-ul.menu a.active li::before {
-  content: "\2605 ";
-}
-.nav {
-    background: #8dc2e7;
-    background: rgba(141, 194, 231, 0.65);
-    border-top: 6px solid rgba(0, 0, 0, 0.3);
-    margin-top: 40px;
-    ul {
-        width: 100%;
-        float: left;
-        list-style: none;
-    }
-    li {
-        font-weight: 500;
-        float: left;
-        padding: 5px 3px 3px 3px;
-        margin-right: 32px;
-        border-left: 1px solid black;
-        display: block;
-    }
-    a {
-        color: black;
-        text-decoration: none;
-        &:hover, &:focus {
-            color: white;
-        }
-    }
-}
-.nav-short {
-    margin-top: 15px;
-}
-
-/*============================================
-Homepage Infographic Sections
-============================================*/
+// Homepage Infographic Sections
+//============================================
 .section {
 	padding: 40px 0 50px 0;
     overflow: hidden;
@@ -352,9 +348,8 @@ Homepage Infographic Sections
     float: center;
 }
 
-/*============================================
-Disbursment Bubble Graph
-============================================*/
+// Disbursment Bubble Graph
+//============================================
 .disbursement {
     a:hover, a:active {
         text-decoration: underline;    
@@ -683,10 +678,8 @@ div.disbursement_bubble_rollover {
 }
 
 
-/*============================================
-Map
-============================================*/
-
+// Map
+//============================================
 //how do natural resources become Federal revenue?
 .how {
     h1 {
@@ -871,9 +864,8 @@ Map
           transition:fill 200ms;
   }
 
-/*===============================================
-Data Dashboard
-================================================*/
+// Data Dashboard
+//===============================================
 article {
     @include span-columns(8);
     font-size: 18px;
@@ -1018,10 +1010,8 @@ article {
     }
 }
 
-/*===============================================
-Data Dashboard
-================================================*/
-
+// Data Dashboard
+//===============================================
 $max-width: 100%; //this is setting the width of outer-container.
 //find this variable elsewhere and change it
 //what about the rest of the site that is not full-width?
@@ -1060,7 +1050,6 @@ $max-width: 100%; //this is setting the width of outer-container.
         }
     }
 }
-
 .label-switch {
   $switch-width: 52px;
   $switch-padding: 2px;
@@ -1082,7 +1071,6 @@ $max-width: 100%; //this is setting the width of outer-container.
 
   input[type="checkbox"] {
     display: none;
-
   + .checkbox {
     background: lighten($blue, 20%);
     border: none;
@@ -1109,7 +1097,6 @@ $max-width: 100%; //this is setting the width of outer-container.
       @include transition(all 0.3s ease);
       @include transform(scale(1));
     }
-
     &:after {
       background: lighten($blue, 10%);
       border-radius: $knob-radius;
@@ -1122,15 +1109,12 @@ $max-width: 100%; //this is setting the width of outer-container.
       @include transition(all 0.3s ease);
     }
   }
-
   &:checked {
     + .checkbox {
       background: white;
-        
         &:before {
           @include transform(scale(0));
         }
-
         &:after {
           left: $switch-width - $knob-width - ($switch-padding);
         }
@@ -1205,11 +1189,8 @@ $max-width: 100%; //this is setting the width of outer-container.
     }
 }
 
-
-
-/*============================================
-Footer
-============================================*/
+// Footer
+//============================================
 .footer {
     h1 {
       font-size: 16px;
@@ -1240,8 +1221,3 @@ Footer
       }
     }
 }
-
-
-
-
-

@@ -39,6 +39,12 @@ $('#map-comodities-pane div').each(function(i){
 
     $(this).attr('class',$(this).attr('class')+'-selected selected');
   })
+  $(this).mousemove(function(){
+    $('div',this).show();
+  });
+  $(this).mouseout(function(){
+    $('div',this).hide();
+  });
 });
 
   // statesData comes from the 'revenue2013.json' included above

@@ -760,12 +760,22 @@ div.disbursement_bubble_rollover {
         line-height: rem(13);
     }
 }
+div.comoditeis-rollover{
+    position: absolute;
+    right: -90px;
+    width: 50px;
+    height: 50px;   
+    background-color: #9B9B9B; 
+    z-index: 999;
+    display: none;
+    padding: 2px;    
+}
 .map-comodities-pane {
     position: absolute;
     bottom: 10px;
     left: 10px;
     width: 150px;
-    z-index: 10000;
+    z-index: 998;
     div {
         width: 75px;
         height: 75px;

@@ -37,6 +37,17 @@
     	{{ content }}
 
     	</article>
+    	{% if page.title == "Natural Resource Sectors in the U.S." %}
+    		<nav id="sticky-secondary-nav" class="article-nav" role="navigation" aria-label="secondary" itemscope itemtype="https://schema.org/SiteNavigationElement">
+    			<h1>On this page</h1>
+    			<ul>
+    				<a href="#nonrenewable" itemprop="url"><li itemprop="name">Nonrenewable Energy</li></a>
+    				<a href="#renewable" itemprop="url"><li itemprop="name">Renewable Energy</li></a>
+    				<a href="#non-fuel" itemprop="url"><li itemprop="name">Other Products:<br/>Non-fuel Minerals</li></a>
+    				<a href="#top" itemprop="url"><li itemprop="name">&#8593; Back to Top</li></a>
+    			</ul>
+    		</nav>
+    	{% endif %}
       </div>
 	</section>
 

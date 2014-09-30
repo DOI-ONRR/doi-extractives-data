@@ -4,7 +4,7 @@ title: "Natural Resource Sectors in the U.S."
 description: This is a sample beta site for Federal natural resource revenues.
 ---
 
-U.S. Natural Resource Sectors
+<a name="top"></a>U.S. Natural Resource Sectors
 =============================
 
 <!-- ##Renewable Energy
@@ -22,7 +22,7 @@ In FY 2013, Interior‐managed lands and waters produced 652 million barrels of 
 
 
 
-##Nonrenewable Energy
+##<a name="nonrenewable"></a>Nonrenewable Energy
 
 Coal, petroleum, natural gas, and propane are all considered fossil fuels because they were formed from the buried remains of plants and animals that lived millions of years ago. Uranium ore, a solid, is mined and converted to a fuel used at nuclear power plants. Uranium is not a fossil fuel, but is a nonrenewable fuel.
 
@@ -118,7 +118,7 @@ In addition to companies in the electric power sector, industries and businesses
 For more information on coal, including how it is formed, types of coal, and the impact of coal mining on the environment, visit the [Energy Information Agency](http://www.eia.gov/kids/energy.cfm?page=coal_home).
 
 
-##Renewable Energy
+##<a name="renewable"></a>Renewable Energy
 
 In 2012, consumption of renewable sources in the United States totaled about 9 quadrillion Btu (1 quadrillion is a number 1 followed by 15 zeros) or about 9% of all energy used nationally. About 12% of U.S. electricity was generated from renewable sources in 2012.
 
@@ -143,7 +143,7 @@ Share of U.S. geothermal electricity produced by each state in 2013:
 For more information on renewable energy, including background on the major types of renewable energy such as biomass, hydropower, geothermal, wind, and solar, visit the [Energy Information Agency](http://www.eia.gov/kids/energy.cfm?page=renewable_home-basics).
 
 
-##Other Products: Non‐fuel Minerals
+##<a name="non-fuel"></a>Other Products: Non‐fuel Minerals
 
 Federal lands produce a wide variety of minerals. For example, in 2013 it is estimated that about 2.4 million ounces of gold were produced from Federal lands in Nevada (and the average price of gold in 2013 was $1,400 per ounce). Non‐fuel mineral production was associated with an estimated value-added of $7.9 billion, estimated economic output of $12.5 billion, and estimated employment of about 45,900 jobs. For further information on the economic impact of minerals, please see the [U.S. Department of the Interior Economic Report](http://www.doi.gov/ppa/economic_analysis/economic-report.cfm).
 

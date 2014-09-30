@@ -36,6 +36,12 @@
     width:100%;
 }
 
+// Site-wide
+//============================================
+a:hover, a:focus {
+    text-decoration: underline;
+}
+
 // Alpha Alert
 //============================================
 #burst-12 {
@@ -862,7 +868,7 @@ div.disbursement_bubble_rollover {
           transition:fill 200ms;
   }
 
-// Data Dashboard
+// Subpage Layout
 //===============================================
 article {
     @include span-columns(8);
@@ -895,7 +901,7 @@ article {
     h1 {
         padding-bottom: 24px;
     }
-    h2 {
+    h2, h2 a {
         font-family: $secondary-font-family;
         color: $red;
         font-size: 25px;
@@ -1005,6 +1011,23 @@ article {
         margin-bottom: 13.5px;
         list-style-type: decimal;
         list-style-position: inside;
+    }
+}
+.article-nav {
+    @include span-columns(3);
+    border: 1px solid white;
+    background-color: darken($light-gray, 5%);
+    margin-left: 20px;
+    padding: 10px;
+    h1 {
+        font-size: 1em;
+        font-style: italic;
+        color: $dark-gray;
+        padding-bottom: 5px;
+    }
+    ul li {
+        line-height: 1em;
+        padding: 4px;
     }
 }
 

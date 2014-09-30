@@ -1,10 +1,18 @@
 <nav id="sticky-nav" class="nav" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
   <div class="container">
     <ul class="menu">
-    <a href="{{ site.url }}" itemprop="url"><li itemprop="name">Home</li></a>
-    <a href="{{ site.baseurl }}/about/" itemprop="url"><li itemprop="name">About This Site</li></a>
-    <a href="{{ site.baseurl }}/sectors/" itemprop="url"><li itemprop="name">U.S. Natural Resource Sectors</li></a>
-    <a href="{{ site.baseurl }}/data/"><li itemprop="name">Filter &amp; Download Data</li></a> 
+    <a href="{{ site.url }}" itemprop="url" {% if page.title == "Home" %}class="active" {% endif %}>
+    	<li itemprop="name">Home</li>
+    </a>
+    <a href="{{ site.baseurl }}/about/" itemprop="url" {% if page.title == "About" %}class="active" {% endif %}>
+    	<li itemprop="name">About This Site</li>
+    </a>
+    <a href="{{ site.baseurl }}/sectors/" itemprop="url" {% if page.title == "Natural Resource Sectors in the U.S." %}class="active" {% endif %}>
+    	<li itemprop="name">U.S. Natural Resource Sectors</li>
+    </a>
+    <a href="{{ site.baseurl }}/data/" {% if page.title == "Data" %}class="active" {% endif %}>
+    	<li itemprop="name">Filter &amp; Download Data</li>
+    </a> 
     </ul>
   </div>
 </nav>

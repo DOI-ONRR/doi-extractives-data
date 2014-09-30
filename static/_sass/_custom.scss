@@ -87,13 +87,10 @@
 // Nav
 //============================================
 ul.menu a.active li {
-  color: lighten($blue, 35%);
+  border-bottom: 3px solid $red;
   &:hover, &:focus {
       color: white;
   }
-}
-ul.menu a.active li::before {
-  content: "\2605 ";
 }
 .nav {
     background: #8dc2e7;
@@ -110,6 +107,7 @@ ul.menu a.active li::before {
         padding: 5px 3px 3px 3px;
         margin-right: 32px;
         border-left: 1px solid black;
+        border-bottom: 3px solid black;
         display: block;
     }
     a {

@@ -1,6 +1,6 @@
 ---
 layout: subpage
-title: Natural Resource Sectors in the U.S.
+title: "Natural Resource Sectors in the U.S."
 description: This is a sample beta site for Federal natural resource revenues.
 ---
 

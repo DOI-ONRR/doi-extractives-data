@@ -847,7 +847,7 @@ div.comodities-rollover{
             font-weight: 300;
             font-family: $base-font-family;
         }
-        h1:last-of-type {
+        .small { //for long commodity names
             font-size: 0.9em;
         }
         &:hover, &:focus {

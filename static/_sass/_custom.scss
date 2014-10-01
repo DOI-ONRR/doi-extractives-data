@@ -41,6 +41,12 @@
 a:hover, a:focus {
     text-decoration: underline;
 }
+sup, sub {
+   vertical-align: baseline;
+   position: relative;
+   top: -0.4em;
+}
+sub { top: 0.4em; }
 
 // Alpha Alert
 //============================================
@@ -702,6 +708,30 @@ div.disbursement_bubble_rollover {
         padding-left: 0px;
         line-height: 1.2em;
     }
+    ol {
+        @include span-columns(5);
+        list-style-type: decimal;
+        margin-left: 1em;
+        margin-top: 5px;
+        font-size: 0.8em;
+        line-height: 1.1em;
+        li {
+            padding-bottom: 8px;
+        }
+        span {
+            font-weight: 600;
+        }
+    }
+}
+.map-notes {
+    color: $dark-gray;
+    margin-top: 50px;
+    font-style: italic;
+    h1 {
+        font-size: 1em;
+        font-weight: 300;
+        font-family: $base-font-family;
+    }
 }
 
 #map {
@@ -711,10 +741,11 @@ div.disbursement_bubble_rollover {
     width: 100%;
 }
 
-.contain {
+.map-container {
 	@include span-columns(12);
     position: relative;
     height: 400px;
+    margin-bottom: 15px;
 }
 
 .map-legend .swatch {
@@ -810,11 +841,14 @@ div.comodities-rollover{
         position: relative;
         h1 {
             position: absolute;
-            bottom: -3px;
+            bottom: -1px;
             right: 2px;
             font-size: 1em;
             font-weight: 300;
             font-family: $base-font-family;
+        }
+        .small { //for long commodity names
+            font-size: 0.9em;
         }
         &:hover, &:focus {
             color: white;

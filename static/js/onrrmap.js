@@ -38,12 +38,22 @@ $('#map-comodities-pane>div').each(function(i){
 
     $(this).attr('class',$(this).attr('class')+'-selected selected');
   })
-  $(this).mousemove(function(){
-    $('div',this).show();
+
+
+  $('h1',this).mousemove(function(){
+   $(this).siblings('div').show();
   });
-  $(this).mouseout(function(){
-    $('div',this).hide();
+  $('h1',this).mouseout(function(){
+   $(this).siblings('div').hide();
   });
+
+
+  // $(this).mousemove(function(){
+  //   $('div',this).show();
+  // });
+  // $(this).mouseout(function(){
+  //   $('div',this).hide();
+  // });
 });
 
   // statesData comes from the 'revenue2013.json' included above

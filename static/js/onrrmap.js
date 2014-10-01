@@ -27,18 +27,33 @@ for (var i = 0; i<variables.length; i++)
 {
   ranges[variables[i]] = {min: 0, max: -Infinity};
 }
-$('#map-comodities-pane div').each(function(i){
+$('#map-comodities-pane>div').each(function(i){
   $(this).attr('data-value',variables[i]);
   
   $(this).click(function(){
     setVariable($(this).attr('data-value'));
-    
     $('#map-comodities-pane div').each(function(n){
       $(this).attr('class',$(this).attr('class').replace('-selected','').replace(' selected',''));
     });
 
     $(this).attr('class',$(this).attr('class')+'-selected selected');
   })
+
+
+  $('h1',this).mousemove(function(){
+   $(this).siblings('div').show();
+  });
+  $('h1',this).mouseout(function(){
+   $(this).siblings('div').hide();
+  });
+
+
+  // $(this).mousemove(function(){
+  //   $('div',this).show();
+  // });
+  // $(this).mouseout(function(){
+  //   $('div',this).hide();
+  // });
 });
 
   // statesData comes from the 'revenue2013.json' included above

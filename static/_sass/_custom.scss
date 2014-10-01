@@ -686,10 +686,10 @@ div.disbursement_bubble_rollover {
 //============================================
 //how do natural resources become Federal revenue?
 .how {
-    h1 {
+    > h1 {
         @include span-columns(12);
     }
-    h1:first-of-type {
+    > h1:first-of-type {
         font-size: 26px;
         font-size: rem(26);
         line-height: 1em;
@@ -760,23 +760,61 @@ div.disbursement_bubble_rollover {
         line-height: rem(13);
     }
 }
+div.comodities-rollover{
+    position: absolute;
+    width: 150px;
+    padding: 10px;
+    margin-left: 85px;
+    margin-top: 40px;
+    background-color: #9B9B9B;
+    border: 1px solid $medium-gray;
+    border-radius: 3px;
+    color: black;
+    padding: 10px;
+    font-size: 0.9em;
+    font-style: italic;
+    line-height: 1em;
+    z-index: 999;
+    display: none;
+    &:before, &:after {
+        content: "";
+        position: absolute;
+        border-top: 8px solid transparent;
+        border-bottom: 8px solid transparent;
+        top: 20%;
+        margin-left: -18px;
+    }
+    &:before {
+        border-right: 8px solid #9B9B9B;
+        margin-top: 5px;
+    }
+    &:after {
+        border-right: 8px solid $medium-gray;
+        margin-left: -73px;
+        margin-top: 5px;
+        z-index: -1;
+    }
+}
 .map-comodities-pane {
     position: absolute;
     bottom: 10px;
     left: 10px;
     width: 150px;
-    z-index: 10000;
-    div {
+    z-index: 998;
+    > div {
         width: 75px;
         height: 75px;
         float:left;
         border: 1px solid black;
         font-size: 10pt;
         position: relative;
-        span{
+        h1 {
             position: absolute;
             bottom: -3px;
             right: 2px;
+            font-size: 1em;
+            font-weight: 300;
+            font-family: $base-font-family;
         }
         &:hover, &:focus {
             color: white;

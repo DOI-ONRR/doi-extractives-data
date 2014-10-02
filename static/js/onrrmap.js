@@ -4,14 +4,11 @@ mapdataviz.scrollWheelZoom.disable();
   var popup = new L.Popup({ autoPan: false });
 
   var hues = [
-    '#eff3ff',
-    '#bdd7e7',
-    '#6baed6',
-    '#64A4CB',
-    '#3182bd',
-    '#2C78AF',
-    '#08519c',
-    '#05396F'];
+    '#efaeab',
+    '#7e3533'
+    // '#EFF3FF',
+    // '#243649'
+  ];
 var variables = [
     'oil',
     'gas',
@@ -118,31 +115,28 @@ $('#map-comodities-pane>div').each(function(i){
         }
           
 
-          // Decide the color for each state by finding its
-          // place between min & max, and choosing a particular
-          // color as index.
-          var mathScale =(hues.length - 1) *
-              ((value - scale.min) /
-              (scale.max - scale.min));
-          if (mathScale > 0 && mathScale < 2)
-            var division = 1;
-          else 
-            var division = Math.floor(
-              (hues.length - 1) *
-              ((value - scale.min) /
-              (scale.max - scale.min)));
-          if (division < 0)
-            division = 0;
-          // See full path options at
-          // http://leafletjs.com/reference.html#path
-          var newColor = hues[division];
-          if (value > 1000000000.00)
-            newColor = '#243649';
-          layer.setStyle({
-              fillColor: newColor,
-              fillOpacity: 0.8,
+          
+          var percent = (value / scale.max) * 100;
+          var newColor = makeGradientColor(hues[0],hues[1],percent);
+          if (percent == 0)
+          {
+            layer.setStyle({
+              fillColor: newColor.cssColor,
+              fillOpacity: 0.0,
               weight: 0.5
-          });
+            })
+          }
+          else
+          {
+            layer.setStyle({
+              fillColor: newColor.cssColor,
+              fillOpacity: 1.0,
+              weight: 0.5
+            });
+          }
+          
+
+          
       });
     }
   }
@@ -253,8 +247,8 @@ $('#map-comodities-pane>div').each(function(i){
           {
             returnString +="<div>Active Leases: "+layer.feature.properties.leases.active+"</div>";
             returnString +="<div>Total Leases: "+ layer.feature.properties.leases.total+"</div>";
-            returnString +="<aside><strong>Active leases</strong> are pieces of federal land that are currently producing a commodity.</br>"+
-                            "<strong>Total leases</strong> include both active leases and leases that have been sold, but are not producing any commodities.</aside>";
+            returnString +="<aside><p><strong>Active leases</strong> are leased federal lands that are producing one or more commodities.</p>"+
+                            "<p><strong>Total leases</strong> include both active leases and leases that have been sold, but are not producing any commodities.</p></aside>";
           }
         }
         return returnString;

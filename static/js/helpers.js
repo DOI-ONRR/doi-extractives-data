@@ -228,5 +228,52 @@ var QueryString = function () {
     return query_string;
 } ();
 
+/***********************************************************************************************
+From: http://stackoverflow.com/questions/8732401/how-to-figure-out-all-colors-in-a-gradient
+***********************************************************************************************/
+
+function makeGradientColor(color1, color2, percent) {
+    if (color1.search('#')!= -1)
+    	color1 = hexToRGB(color1);
+    if (color2.search('#')!=-1)
+    	color2 = hexToRGB(color2);
+    var newColor = {};
+
+    function makeChannel(a, b) {
+        return(a + Math.round((b-a)*(percent/100)));
+    }
+
+    function makeColorPiece(num) {
+        num = Math.min(num, 255);   // not more than 255
+        num = Math.max(num, 0);     // not less than 0
+        var str = num.toString(16);
+        if (str.length < 2) {
+            str = "0" + str;
+        }
+        return(str);
+    }
+
+    newColor.r = makeChannel(color1.r, color2.r);
+    newColor.g = makeChannel(color1.g, color2.g);
+    newColor.b = makeChannel(color1.b, color2.b);
+    newColor.cssColor = "#" + 
+                        makeColorPiece(newColor.r) + 
+                        makeColorPiece(newColor.g) + 
+                        makeColorPiece(newColor.b);
+    return(newColor);
+}
+function hexToRGB(color){
+	var newColor = {};
+	newColor.r = hexToR(color);
+	newColor.g = hexToG(color);
+	newColor.b = hexToB(color);
+	return newColor;
+
+	function hexToR(h) {return parseInt((cutHex(h)).substring(0,2),16)}
+	function hexToG(h) {return parseInt((cutHex(h)).substring(2,4),16)}
+	function hexToB(h) {return parseInt((cutHex(h)).substring(4,6),16)}
+	function cutHex(h) {return (h.charAt(0)=="#") ? h.substring(1,7):h}
+}
+
 
 

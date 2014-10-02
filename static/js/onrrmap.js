@@ -4,8 +4,10 @@ mapdataviz.scrollWheelZoom.disable();
   var popup = new L.Popup({ autoPan: false });
 
   var hues = [
-    '#EFF3FF',
-    '#243649'
+    '#efaeab',
+    '#7e3533'
+    // '#EFF3FF',
+    // '#243649'
   ];
 var variables = [
     'oil',
@@ -120,8 +122,8 @@ $('#map-comodities-pane>div').each(function(i){
           {
             layer.setStyle({
               fillColor: newColor.cssColor,
-              fillOpacity: 0.3,
-              weight: 0.3
+              fillOpacity: 0.0,
+              weight: 0.0
             })
           }
           else

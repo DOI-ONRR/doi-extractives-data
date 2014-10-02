@@ -123,7 +123,7 @@ $('#map-comodities-pane>div').each(function(i){
             layer.setStyle({
               fillColor: newColor.cssColor,
               fillOpacity: 0.0,
-              weight: 0.0
+              weight: 0.5
             })
           }
           else
@@ -247,8 +247,8 @@ $('#map-comodities-pane>div').each(function(i){
           {
             returnString +="<div>Active Leases: "+layer.feature.properties.leases.active+"</div>";
             returnString +="<div>Total Leases: "+ layer.feature.properties.leases.total+"</div>";
-            returnString +="<aside><strong>Active leases</strong> are pieces of federal land that are currently producing a commodity.</br>"+
-                            "<strong>Total leases</strong> include both active leases and leases that have been sold, but are not producing any commodities.</aside>";
+            returnString +="<aside><p><strong>Active leases</strong> are leased federal lands that are producing one or more commodities.</p>"+
+                            "<p><strong>Total leases</strong> include both active leases and leases that have been sold, but are not producing any commodities.</p></aside>";
           }
         }
         return returnString;

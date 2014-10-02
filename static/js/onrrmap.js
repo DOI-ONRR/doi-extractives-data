@@ -22,7 +22,7 @@ var dataLayers=[];
 
 for (var i = 0; i<variables.length; i++)
 {
-  ranges[variables[i]] = {min: 0, max: -Infinity};
+  ranges[variables[i]] = {min: Infinity, max: -Infinity};
 }
 $('#map-comodities-pane>div').each(function(i){
   $(this).attr('data-value',variables[i]);
@@ -91,14 +91,24 @@ $('#map-comodities-pane>div').each(function(i){
         for (var n= 0 ; n<variables.length; n++)
         {
           if (data.features[i].properties.commodities[variables[n]])
-            if (ranges[variables[n]].max < data.features[i].properties.commodities[variables[n]].revenue && data.features[i].properties.commodities[variables[n]].revenue < 1000000000.00)
+          {
+            if (ranges[variables[n]].max < data.features[i].properties.commodities[variables[n]].revenue && data.features[i].properties.commodities[variables[n]].revenue < 100000000000000.00)
               ranges[variables[n]].max = data.features[i].properties.commodities[variables[n]].revenue
+            if (ranges[variables[n]].min > data.features[i].properties.commodities[variables[n]].revenue && data.features[i].properties.commodities[variables[n]].revenue > 1000.00)
+              {
+                ranges[variables[n]].min = data.features[i].properties.commodities[variables[n]].revenue
+              }
+              
+          }
+            
         }
       }
     }
   }
 
   function setVariable(name) {
+    $('div.map-scale-min').html('$'+ranges[name].min.formatMoney(0,'.',','));
+    $('div.map-scale-max').html('$'+ranges[name].max.formatMoney(0,'.',','));
     for (var i=0; i<dataLayers.length; i++)
     {
       var scale = ranges[name];
@@ -118,6 +128,7 @@ $('#map-comodities-pane>div').each(function(i){
           
           var percent = (value / scale.max) * 100;
           var newColor = makeGradientColor(hues[0],hues[1],percent);
+        
           if (percent == 0)
           {
             layer.setStyle({
@@ -316,6 +327,5 @@ $('#map-comodities-pane>div').each(function(i){
   //     collapsed:false,
   //   }).addTo(mapdataviz);
 
-console.log(mapdataviz);
 
 

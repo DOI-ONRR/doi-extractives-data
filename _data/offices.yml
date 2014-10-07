@@ -28,7 +28,7 @@
 - name: BSEE
   full: Bureau of Safety and Environmental Enforcement
   mission: "BSEE works to promote safety, protect the environment, and conserve resources offshore through vigorous regulatory oversight and enforcement."
-  mark: static/img/marks/BSEE-mark.jpg
+  mark: static/img/marks/BSEE-mark.png
   homepage: http://www.bsee.gov/
 
 - name: NPS

@@ -1,0 +1,25 @@
+---
+layout: subpage
+title: About
+description: This is a sample beta site for Federal natural resource revenues.
+---
+
+<h1>About this site</h1>
+
+<p>In support of the U.S. implementation of the international <a href="http://eiti.org/">Extractive Industries Transparency Initiative</a>, the Department of the Interior is providing this public data portal that tells the story of natural resource revenues from Federal lands. This website aligns with the principles of <a href="http://project-open-data.github.io/">Project Open Data</a> and the goals of the <a href="http://www.whitehouse.gov/blog/2013/12/06/united-states-releases-its-second-open-government-national-action-plan">U.S. National Action Plan for the Open Government Partnership</a>.</p>
+
+<section class="offices">
+	<h1>Contributing Agencies and Offices</h1>
+	{% for name in site.data.offices %}
+	<article>
+		<div>
+			<img src="{{ site.baseurl }}{{ name.mark }}" alt="{{ name.name }}">
+		</div>
+		<div>
+			<h1>{{ name.full }}</h1>
+			<p>{{ name.mission }}</p>
+			<p><a href="{{ name.homepage }}">Go to the {{ name.name }} website &#8594;</a></p>
+		</div>
+	</article>
+	{% endfor %}
+</section>

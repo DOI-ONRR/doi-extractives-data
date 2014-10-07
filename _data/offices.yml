@@ -1,0 +1,63 @@
+# Departments, agencies and offices
+# contributing to this site
+
+- name: BIA
+  full: Bureau of Indian Affairs
+  mission: "Mission: to enhance the quality of life, to promote economic opportunity, and to carry out the responsibility to protect and improve the trust assets of American Indians, Indian tribes, and Alaska Natives."
+  mark: /static/img/marks/bia-mark.svg
+  homepage: http://www.bia.gov/
+
+- name: BLM
+  full: Bureau of Land Management
+  mission: "Mission: to sustain the health, diversity, and productivity of the public lands for the use and enjoyment of present and future generations."
+  mark: /static/img/marks/blm-mark.svg
+  homepage: http://www.blm.gov/
+
+- name: BOEM
+  full: Bureau of Ocean Energy Management
+  mission: "BOEM promotes energy independence, environmental protection and economic development through responsible, science-based management of offshore conventional and renewable energy and marine mineral resources."
+  mark: /static/img/marks/boem-mark.png
+  homepage: http://www.boem.gov/
+
+- name: USBR
+  full: Bureau of Reclamation
+  mission: "Mission: to manage, develop, and protect water and related resources in an environmentally and economically sound manner in the interest of the American public."
+  mark: /static/img/marks/usbr-mark.svg
+  homepage: http://www.usbr.gov/
+
+- name: BSEE
+  full: Bureau of Safety and Environmental Enforcement
+  mission: "BSEE works to promote safety, protect the environment, and conserve resources offshore through vigorous regulatory oversight and enforcement."
+  mark: /static/img/marks/bsee-mark.jpg
+  homepage: http://www.bsee.gov/
+
+- name: NPS
+  full: National Park Service
+  mission: "The National Park Service preserves unimpaired the natural and cultural resources and values of the national park system for the enjoyment, education, and inspiration of this and future generations. The Park Service cooperates with partners to extend the benefits of natural and cultural resource conservation and outdoor recreation throughout this country and the world."
+  mark: /static/img/marks/nps-mark.svg
+  homepage: http://www.nps.gov/
+
+- name: ONRR
+  full: Office of Natural Resources Revenue
+  mission: "Mission: to collect, disburse, and verify Federal and Indian energy and other natural resource revenues on behalf of all Americans."
+  mark: /static/img/marks/doi-mark.png
+  homepage: http://www.onrr.gov/
+
+- name: OSMRE
+  full: "Office of Surface Mining, Reclamation and Enforcement"
+  mission: "Since 1977, OSMRE has protected the environment and people while regulating surface coal mining in the United States, and funded the restoration of abandoned coal mines."
+  mark: /static/img/marks/osmre-mark.png
+  homepage: http://www.osmre.gov/
+
+- name: USFWS
+  full: United States Fish and Wildlife Service
+  mission: "Mission: to work with others to conserve, protect and enhance fish, wildlife, and plants and their habitats for the continuing benefit of the American people."
+  mark: /static/img/marks/usfws-mark.svg
+  homepage: http://www.fws.gov/
+
+- name: USGS
+  full: United States Geological Survey
+  mission: "The USGS serves the Nation by providing reliable scientific information to describe and understand the Earth; minimize loss of life and property from natural disasters; manage water, biological, energy, and mineral resources; and enhance and protect our quality of life."
+  mark: /static/img/marks/usgs-mark.svg
+  homepage: http://www.usgs.gov/
+

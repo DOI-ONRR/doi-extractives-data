@@ -1,5 +1,15 @@
-var mapdataviz = L.mapbox.map('map', 'mhertzfeld.i8l68af5')
-    .setView([37.8, -91], 4);
+// var mapdataviz = L.mapbox.map('map', 'mhertzfeld.i8l68af5')
+//     .setView([37.8, -91], 4);
+
+var mapdataviz = L.map('map', {
+    scrollWheelZoom: false
+  }).setView([39.8282, -98.5795], 4);
+L.tileLayer('http://a.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: 'Tiles Courtesy of <a href="http://www.mapquest.com/" target="_blank">MapQuest</a>',
+    maxZoom: 18,
+    subdomains: [1, 2, 3, 4]
+  }).addTo(mapdataviz);
+
 mapdataviz.scrollWheelZoom.disable();
   var popup = new L.Popup({ autoPan: false });
 

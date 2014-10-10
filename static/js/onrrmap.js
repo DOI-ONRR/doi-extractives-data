@@ -124,6 +124,8 @@ $('#map-comodities-pane>div').each(function(i){
       var scale = ranges[name];
       dataLayers[i].eachLayer(function(layer) {
         var value =0;
+        //console.log('layers=');
+        //console.log(layer);
         if (layer.feature.properties.commodities)
         {
           if (layer.feature.properties.commodities[name])
@@ -144,7 +146,8 @@ $('#map-comodities-pane>div').each(function(i){
             layer.setStyle({
               fillColor: newColor.cssColor,
               fillOpacity: 0.0,
-              weight: 0.5
+              weight: 0.5,
+              data_revenue: value
             })
           }
           else
@@ -152,7 +155,8 @@ $('#map-comodities-pane>div').each(function(i){
             layer.setStyle({
               fillColor: newColor.cssColor,
               fillOpacity: 1.0,
-              weight: 0.5
+              weight: 0.5,
+              data_revenue: value
             });
           }
           
@@ -160,6 +164,7 @@ $('#map-comodities-pane>div').each(function(i){
           
       });
     }
+    calculateHeights();
   }
 
   // function loadData(){
@@ -336,6 +341,55 @@ $('#map-comodities-pane>div').each(function(i){
   // L.control.layers(null,overlays, {
   //     collapsed:false,
   //   }).addTo(mapdataviz);
+  
+  function calculateHeights(){
+    $('g[id*="map_stack_sector"]').each(function(){
+      $(this).remove(); 
+    });
+    var count = 0;
+    var idCount=0;
+    var maxDepth = 15;
+    var overlayLayer = $('svg.leaflet-zoom-animated');
+    var snap = Snap('svg.leaflet-zoom-animated');
+    // var revenue=[];
+    // for (var i=0; i<dataLayers.length; i++)
+    // {
+    //   var scale = ranges[name];
+    //   dataLayers[i].eachLayer(function(layer) {
+    //     if (layer.feature.properties.commodities)
+    //     {
+    //       if (layer.feature.properties.commodities[name])
+    //       {
+    //         revenue.push(layer.feature.properties.commodities[name].revenue);
+    //       }
+    //       else 
+    //         revenue.push(0.00);
+    //     }
+    //     else
+    //       revenue.push(0.00);
+    //   });
+    // }
 
+    $('g',overlayLayer).each(function(index){
 
+      var layerColor = $('path',$(this)).attr('fill');
+      //console.log(getColorPercent(layerColor,hues[1],hues[0]));
+      var depth = Math.round(getColorPercent(layerColor,hues[1],hues[0]) * maxDepth);
+      //console.log('Depth='+depth);
+      //console.log(color);
+      //var depth = Math.floor((Math.random() * 9) + 1);
+      while(count < depth && $('path', $(this)).attr('fill-opacity') > 0)
+      {
+        $(this).clone()
+        .appendTo($(this).parent())
+        .attr('id','map_stack_sector'+idCount)
+        .css('pointer-events','none');
+        var snapSelect = snap.select('#map_stack_sector'+idCount);
+        snapSelect.animate({transform: 't'+count+',' + -count},100);
+        count++;
+        idCount++;
+      }
+      count = 0;
+    });
+  }
 

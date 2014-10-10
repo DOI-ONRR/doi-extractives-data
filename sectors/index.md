@@ -7,32 +7,18 @@ description: This is a sample beta site for Federal natural resource revenues.
 <a name="top"></a>U.S. Natural Resource Sectors
 =============================
 
-<!-- ##Renewable Energy
-
-In FY 2013, Interior lands and facilities produced 40 million MWh of hydropower. Also, in FY 2013, Interior approved the installation of 826 MW of wind capacity and 1,000 MW of solar power projects on public lands. Renewable energy activities were estimated to contribute about $5 billion in output and support over 20,000 jobs. In aggregate, generating electricity with renewable energy reduces the amount of electricity supplied by fossil fuel plants, along with the associated emissions, and reduces our Nation’s dependence on foreign oil.
-
-Market values of power typically do not reflect the adverse environmental and health costs to
-society associated with fossil fuel pollution or the corresponding benefits to society from
-substituting cleaner sources of energy.
-
-##Fossil Fuel Energy
-
-In FY 2013, Interior‐managed lands and waters produced 652 million barrels of crude oil, 4 trillion cubic feet of natural gas, and 420 million tons of coal. Some average prices in FY 2013 included $101/bbl for oil, $3.72/mcf of natural gas, and $11 per ton of Powder River Basin coal. Oil, gas and coal produced from Interior lands were estimated to provide value added of $121 billion; estimated economic output contribution of $220 billion; and an estimated 1 million jobs. External costs are associated with the development of oil, gas, and coal produced from Interior lands, and with the production and the use of these resources. Market prices do not fully reflect these costs. Various regulations and other requirements designed to minimize adverse environmental impacts internalize some (but not all) of these external costs. -->
-
-
-
+There are many different types of natural resources produced in the United States. A subset of these are produced on Federal lands. Most of the data on this site is about natural resources from Federal lands. However, the information below provides a broad overview of U.S. natural resource sectors, including those sourced from Federal, state and privately-owned land.
 
 ##<a name="nonrenewable"></a>Nonrenewable Energy
 
-Coal, petroleum, natural gas, and propane are all considered fossil fuels because they were formed from the buried remains of plants and animals that lived millions of years ago. Uranium ore, a solid, is mined and converted to a fuel used at nuclear power plants. Uranium is not a fossil fuel, but is a nonrenewable fuel.
+Coal, petroleum, natural gas, and propane are all types of nonrenewable energy. They are also all called fossil fuels because they were formed from the buried remains of plants and animals that lived millions of years ago. Uranium ore, a solid, is another type of nonrenewable energy source, and is mined and converted to a fuel used at nuclear power plants. Uranium is not a fossil fuel, but is a nonrenewable fuel.
 
 >Fossil Fuels Are Nonrenewable, but <br/>
 >Not All Nonrenewable Energy Sources Are Fossil Fuels
 
-Nonrenewable energy sources come out of the ground as liquids, gases, and solids. Crude oil (petroleum) is the only commercial nonrenewable fuel that is naturally in liquid form. Natural gas and propane are normally gases, and coal is a solid.
+Nonrenewable energy sources come out of the ground as liquids, gases, and solids depending on the type. Crude oil (petroleum) is the only commercial nonrenewable fuel that is naturally in liquid form. Natural gas and propane are normally gases, and coal is a solid.
 
-
-###Crude Oil
+###<a name="oil"></a>Oil
 Crude oil is produced in 31 states and U.S. coastal waters. In 2012, 61% of U.S. crude oil production came from five states:
 
 + Texas (31%)
@@ -45,12 +31,25 @@ As of 2012, about 20% of U.S. crude oil was produced from wells located offshore
 
 Although total U.S. crude oil production generally declined between 1985 and 2008, it has been increasing since 2008. More cost effective drilling technology has helped boost production, especially in North Dakota, Texas, and the offshore Gulf of Mexico.
 
-For more information on oil, including how it is formed, what products use oil, and the refining process, visit the [Energy Information Agency](http://www.eia.gov/kids/energy.cfm?page=oil_home).
-
-###Natural Gas Plant Liquids
 Natural gas plant liquids (NGPL) are liquids that are separated from natural gas at processing plants and are important ingredients for manufacturing plastics and gasoline. Propane is the only NGPL that is widely used for heating and cooking. Production of NGPL fluctuates with natural gas production, but their share of total U.S. petroleum production has increased from 8% in 1950 to 27% in 2012.
 
 In 2012, the United States relied on net imports (imports minus exports) for about 40% of the petroleum that we used.
+
+For more information on oil, including how it is formed, what products use oil, and the refining process, visit the [Energy Information Agency](http://www.eia.gov/kids/energy.cfm?page=oil_home).
+
+###<a name="ngl"></a>Natural Gas Liquids
+Natural gas is used to produce steel, glass, paper, clothing, brick, electricity, and is an essential raw material for many common products. Some products that use natural gas as a raw material are: paints, fertilizer, plastics, antifreeze, dyes, photographic film, medicines, and explosives.
+
+Slightly more than half of the homes in the United States use natural gas as their main heating fuel. Natural gas is also used in homes to fuel stoves, water heaters, clothes dryers, and other household appliances.
+
+The major consumers of natural gas in the United States in 2012 included:
+
++ Electric power sector (9.1 trillion cubic feet, or Tcf)
++ Industrial sector (7.1 Tcf)
++ Residential sector (4.2 Tcf)
++ Commercial sector (2.9 Tcf)
+
+Natural gas is used throughout the United States, but the top natural gas consuming states in 2011 were Texas, California, Louisiana, Florida, New York, and Illinois.
 
 U.S. natural gas production and consumption were nearly in balance through 1986. After that, consumption began to outpace production, and imports of natural gas rose to meet U.S. demand for the fuel. Production increased from 2006 through 2011, when it reached the highest recorded annual total since 1973. The increases in production were the result of more efficient, cost-effective drilling techniques, notably in the production of natural gas from shale formations.
 
@@ -78,23 +77,10 @@ In 2012, 94% of net imports came by pipeline, primarily from Canada, and 10% cam
 
 About 25% of energy used in the United States came from natural gas in 2012. The United States used 25.46 trillion cubic feet (Tcf) of natural gas in 2012.
 
-Natural gas is used to produce steel, glass, paper, clothing, brick, electricity, and as an essential raw material for many common products. Some products that use natural gas as a raw material are: paints, fertilizer, plastics, antifreeze, dyes, photographic film, medicines, and explosives.
-
-Slightly more than half of the homes in the United States use natural gas as their main heating fuel. Natural gas is also used in homes to fuel stoves, water heaters, clothes dryers, and other household appliances.
-
-The major consumers of natural gas in the United States in 2012 included:
-
-+ Electric power sector (9.1 trillion cubic feet, or Tcf)
-+ Industrial sector (7.1 Tcf)
-+ Residential sector (4.2 Tcf)
-+ Commercial sector (2.9 Tcf)
-
-Natural gas is used throughout the United States, but the top natural gas consuming states in 2011 were Texas, California, Louisiana, Florida, New York, and Illinois.
-
 For more information on natural gas, including how it is formed, how it is transported, and the impact of natural gas extraction on the environment, visit the [Energy Information Agency](http://www.eia.gov/kids/energy.cfm?page=natural_gas_home).
 
-###Coal
-Coal is a nonrenewable energy source because it takes millions of years to develop. The energy in coal comes from the energy stored by plants that lived hundreds of millions of years ago when the earth was partly covered with swampy forests. Coal is classified into four main types, or ranks (anthracite, bituminous, subbituminous, and lignite). Classification depends on the amounts and types of carbon the coal contains and on the amount of heat energy the coal can produce. The rank of a deposit of coal depends on the pressure and heat that acted on the plant debris as it sank deeper and deeper over millions of years. For the most part, the higher ranks of coal contain more heat-producing energy.
+###<a name="coal"></a>Coal
+Coal is a nonrenewable energy source because it takes millions of years to develop. The energy in coal comes from the energy stored by plants that lived hundreds of millions of years ago when the earth was partly covered with swampy forests. Coal is classified into four main types, or ranks: anthracite, bituminous, subbituminous, and lignite. Classification depends on the amounts and types of carbon the coal contains and on the amount of heat energy the coal can produce. The rank of a deposit of coal depends on the pressure and heat that acted on the plant debris as it sank deeper and deeper over millions of years. For the most part, the higher ranks of coal contain more heat-producing energy.
 
 In 2012, 1,016.4 million short tons of coal were mined in 25 states. Wyoming mined the most coal, followed by West Virginia, Kentucky, Pennsylvania, and Illinois.
 
@@ -102,8 +88,7 @@ In 2012, 1,016.4 million short tons of coal were mined in 25 states. Wyoming min
 > the Appalachian coal region, the Interior coal region, and <br/>
 > the Western coal region (which includes the Powder River Basin).
 
-**Appalachian coal region.** Almost 29% of the coal produced in the United States comes from the Appalachian coal region.
-West Virginia is the largest coal-producing state in the region, and the second-largest coal-producing state in the United States. Coal mined in the Appalachian coal region is primarily used for steam generation for electricity, coke production, and for export.
+**Appalachian coal region.** Almost 29% of the coal produced in the United States comes from the Appalachian coal region. West Virginia is the largest coal-producing state in the region, and the second-largest coal-producing state in the United States. Coal mined in the Appalachian coal region is primarily used for steam generation for electricity, coke production, and for export.
 
 **Interior coal region.** Illinois is the largest coal producer in the Interior coal region, accounting for more than a fourth, or almost 27% of the region's coal production. The Interior coal region has mid-sized surface mines.
 
@@ -126,7 +111,11 @@ Over half of renewable energy goes to producing electricity. The next largest us
 
 Renewable energy plays an important role in the supply of energy. When renewable energy sources are used, the demand for fossil fuels is reduced. Unlike fossil fuels, non-biomass renewable sources of energy (hydropower, geothermal, wind, and solar) do not directly emit greenhouse gases.
 
-###Geothermal Energy
+For more information on renewable energy, including background on the major types of renewable energy such as biomass, hydropower, geothermal, wind, and solar, visit the [Energy Information Agency](http://www.eia.gov/kids/energy.cfm?page=renewable_home-basics).
+
+###<a name="geothermal"></a>Geothermal Energy
+Geothermal energy is heat from within the earth. We can recover this heat as steam or as hot water and use it to heat buildings or to generate electricity. It is a renewable energy source because the heat is continuously produced inside the earth.
+
 Most of the geothermal power plants in the United States are located in the western states and in Hawaii where geothermal energy resources are close to the earth's surface. California generates the most electricity from geothermal energy. [The Geysers](http://en.wikipedia.org/wiki/The_Geysers) dry steam reservoir in northern California is the largest known dry steam field in the world and has been producing electricity since 1960.
 
 The United States leads the world in the amount of electricity generated with geothermal energy. In 2013, U.S. geothermal power plants produced about 17 billion kilowatthours (kWh), 0.4% of total U.S. electricity generation. In 2013, six states had geothermal power plants.
@@ -140,21 +129,50 @@ Share of U.S. geothermal electricity produced by each state in 2013:
 + Oregon (1%)
 + Idaho	(1%)
 
-For more information on renewable energy, including background on the major types of renewable energy such as biomass, hydropower, geothermal, wind, and solar, visit the [Energy Information Agency](http://www.eia.gov/kids/energy.cfm?page=renewable_home-basics).
+For more information on geothermal energy, including background on how geothermal energy is created, different types of geothermal power plants and the environmental impact of geothermal power, visit the [Energy Information Agency](http://www.eia.gov/kids/energy.cfm?page=geothermal_home).
+
+###<a name="wind"></a>Wind Energy
+Wind energy takes advantage of the daily wind cycle. During the day, the air above the land heats up faster than the air over water. The warm air over the land expands and rises, and the heavier, cooler air rushes in to take its place, creating wind. At night, the winds are reversed because the air cools more rapidly over land than over water.
+
+Today, wind energy is mainly used to generate electricity, although water pumping windmills were once used throughout the United States.
+
+In 2013, wind turbines in the United States generated about 4% of total U.S. electricity generation. Although this is a small share of the country's total electricity production, it was equal to the electricity use of about 15 million households in 2012.
+
+The amount of electricity generated from wind has grown significantly in recent years. Electricity generation from wind in the United States increased from about 6 billion kilowatthours (kWh) in 2000, to about 168 billion kWh in 2013. In fact, in 2008, 2009, and 2012, wind was the [fastest growing source of electricity production](http://www.eia.gov/todayinenergy/detail.cfm?id=9931) in the United States.
+
+Large wind turbines (sometimes called wind machines) generated electricity in 36 different states in 2011.
+
+> The top five states with the largest generation of <br/>
+> electricity from wind were Texas, Iowa, California, Minnesota, and Illinois.
+
+Wind power plants, or wind farms, as they are sometimes called, are clusters of wind machines used to produce electricity. A wind farm usually has dozens of wind machines scattered over a large area. The world's largest wind farm, the Horse Hollow Wind Energy Center in Texas, has 421 wind turbines that generate enough electricity to power 220,000 homes per year.
+
+For more information on wind energy, including background on wind turbines, considerations for placing wind turbines and the environmental impact of wind energy, visit the [Energy Information Agency](http://www.eia.gov/kids/energy.cfm?page=wind_home).
+
+###<a name="hydro"></a>Hydropower
+Hydropower is the largest renewable energy source for electricity generation in the United States. In 2013, hydropower accounted for about 6% of total U.S. electricity generation and 52% of generation from all renewables.
+
+Most U.S. hydropower is in the West. Over half of U.S. hydroelectric capacity for electricity generation is concentrated in Washington, Oregon, and California. Approximately 29% of total U.S. hydropower was generated in Washington in 2013 where the Grand Coulee Dam, the largest hydroelectric facility in the United States, is located.
+
+However, most dams were not built for power generation. Only a small percentage of dams in the United States produce electricity. Most dams were constructed for irrigation and flood control.
+
+Not all hydropower comes from dams. There are also tidal fences, tital turbines and many methods to harness the power of waves.
+
+For more information on hydropower, including background on types of dams and turbines, alternative sources of hydropower such as wave energy, and the environmental impact of solar energy, visit the [Energy Information Agency](http://www.eia.gov/kids/energy.cfm?page=hydropower_home).
 
 
 ##<a name="non-fuel"></a>Other Products: Non‐fuel Minerals
-
-Federal lands produce a wide variety of minerals. For example, in 2013 it is estimated that about 2.4 million ounces of gold were produced from Federal lands in Nevada (and the average price of gold in 2013 was $1,400 per ounce). Non‐fuel mineral production was associated with an estimated value-added of $7.9 billion, estimated economic output of $12.5 billion, and estimated employment of about 45,900 jobs. For further information on the economic impact of minerals, please see the [U.S. Department of the Interior Economic Report](http://www.doi.gov/ppa/economic_analysis/economic-report.cfm).
 
 Some of the most important minerals mined in the U.S. include gold and copper. For example, in 2011 the value of nonfuel mineral commodity production for the following 14 mined commodities (in descending order of production value) was greater than $1 billion: gold, stone (crushed), copper, sand and gravel (construction), cement (portland), iron ore (usable shipped), molybdenum concentrates, phosphate rock (marketable), lime, sand and gravel (industrial), salt, zinc, soda ash, and silver. They accounted for 90% of the U.S. total production value.
 
 In terms of location, the value of nonfuel mineral commodity production in the following 21 States, in descending order of production value, was greater than $1 billion in 2011: Nevada, Arizona, Minnesota, Utah, Alaska, Florida, California, Texas, Michigan, Missouri, Wyoming, Colorado, Pennsylvania, Georgia, Montana, New York, Idaho, New Mexico, Virginia, Kansas, and Illinois. They accounted for 82% of the U.S. total production.
 
+Federal lands in particular produce a wide variety of minerals. For example, in 2013 it is estimated that about 2.4 million ounces of gold were produced from Federal lands in Nevada (and the average price of gold in 2013 was $1,400 per ounce). Non‐fuel mineral production was associated with an estimated value-added of $7.9 billion, estimated economic output of $12.5 billion, and estimated employment of about 45,900 jobs. For further information on the economic impact of minerals, please see the [U.S. Department of the Interior Economic Report](http://www.doi.gov/ppa/economic_analysis/economic-report.cfm).
+
 For more statistics on mineral and material industries, visit the [U.S. Geological Survey Minerals Yearbook](http://minerals.usgs.gov/minerals/pubs/myb.html). This and similar summary information is available in its [Statistical Summary](http://minerals.usgs.gov/minerals/pubs/commodity/statistical_summary/index.html#myb).
 
 
-###Significant Events, Trends, and Issues
+###<a name="trends"></a>Significant Events, Trends, and Issues
 
 In 2013, the estimated value of mineral production decreased in the United States after 3 consecutive years of increases. Production increased for most industrial mineral commodities mined in the United States, and overall, prices remained stable. Production of most metals was relatively stable compared with that of 2012, but lower metal prices resulted in an overall reduction in the value of mineral production in the United States. Minerals remained fundamental to the U.S. economy, contributing to the real gross domestic product (GDP) at several levels, including mining, processing, and manufacturing finished products. Following the reduction in construction activity that began with the 2008–09 recession and continued through 2011, the construction industry began to show signs of recovery in 2012, and that trend continued in 2013, with increased production and consumption of cement, construction sand and gravel, crushed stone, and gypsum, mineral commodities that are used almost exclusively in construction.
 

@@ -1,5 +1,62 @@
 // var mapdataviz = L.mapbox.map('map', 'mhertzfeld.i8l68af5')
 //     .setView([37.8, -91], 4);
+var statesDrawOrder = ["Alabama", 
+                          "Alaska", 
+                          "Arizona", 
+                          "Arkansas", 
+                          "California", 
+                           
+                          "Connecticut", 
+                          "Delaware",
+                          "District of Columbia", 
+                          "Florida", 
+                          "Georgia", 
+                          "Hawaii", 
+                          "Idaho", 
+                          "Illinois", 
+                          "Indiana", 
+                          "Iowa", 
+                          "Kansas", 
+                          "Kentucky", 
+                          "Louisiana", 
+                          "Maine", 
+                          "Maryland", 
+                          "Massachusetts", 
+                          "Michigan", 
+                          "Minnesota", 
+                          "Mississippi", 
+                          "Missouri", 
+                          "Montana", 
+                          "Nebraska", 
+                          "Oregon",
+                          
+                          
+                          "New Hampshire", 
+                          "New Jersey", 
+                          
+                          "New York",
+                          "North Carolina", 
+                          "North Dakota",
+                          "Ohio", 
+                          "Oklahoma", 
+                          "Pennsylvania", 
+                          "Rhode Island",
+                          "South Carolina",
+                          "South Dakota",
+                          "Tennessee", 
+                          "Texas", 
+                           
+                          "Vermont", 
+                          "Virginia", 
+                          "Washington", 
+                          "West Virginia", 
+                          "Wisconsin", 
+                          "Wyoming",
+                          "Utah",
+                          "Nevada", 
+                          "Colorado",
+                          "New Mexico"];
+
 
 var mapdataviz = L.map('map', {
     scrollWheelZoom: false
@@ -64,6 +121,8 @@ $('#map-comodities-pane>div').each(function(i){
 });
 
   // statesData comes from the 'revenue2013.json' included above
+  console.log(statesDrawOrder);
+  statesData = sortGeoJson(statesData,statesDrawOrder);
   var statesLayer = L.geoJson(statesData, {
     onEachFeature : onEachFeature
   }).addTo(mapdataviz);
@@ -393,3 +452,35 @@ $('#map-comodities-pane>div').each(function(i){
     });
   }
 
+
+
+
+
+
+
+
+
+
+
+
+  /****************************
+  Draw orders
+  *****************************/
+  function sortGeoJson(geoJson, drawOrder){
+    var geoJsonArray = geoJson.features;
+    //console.log(geoJsonArray);
+    var newArray=[];
+    for(var i=0; i<geoJsonArray.length; i++)
+    {
+      //console.log(drawOrder);
+      //console.log(drawOrder.indexOf(geoJsonArray[i].properties.name));
+
+      if (drawOrder.indexOf(geoJsonArray[i].properties.name) == -1)
+        console.log('Sort Geo JSON ERROR Not Found - '+geoJsonArray[i].properties.name);
+      newArray[drawOrder.indexOf(geoJsonArray[i].properties.name)] = geoJsonArray[i];
+    }
+    geoJson.features = newArray;
+    return geoJson;
+  }
+  
+  

@@ -35,7 +35,7 @@ Natural gas plant liquids (NGPL) are liquids that are separated from natural gas
 
 In 2012, the United States relied on net imports (imports minus exports) for about 40% of the petroleum that we used.
 
-For more information on oil, including how it is formed, what products use oil, and the refining process, visit the [Energy Information Agency](http://www.eia.gov/kids/energy.cfm?page=oil_home).
+For more information on oil, including how it is formed, what products use oil, and the refining process, visit the [Energy Information Administration](http://www.eia.gov/kids/energy.cfm?page=oil_home).
 
 ###<a name="ngl"></a>Natural Gas Liquids
 Natural gas is used to produce steel, glass, paper, clothing, brick, electricity, and is an essential raw material for many common products. Some products that use natural gas as a raw material are: paints, fertilizer, plastics, antifreeze, dyes, photographic film, medicines, and explosives.
@@ -77,7 +77,7 @@ In 2012, 94% of net imports came by pipeline, primarily from Canada, and 10% cam
 
 About 25% of energy used in the United States came from natural gas in 2012. The United States used 25.46 trillion cubic feet (Tcf) of natural gas in 2012.
 
-For more information on natural gas, including how it is formed, how it is transported, and the impact of natural gas extraction on the environment, visit the [Energy Information Agency](http://www.eia.gov/kids/energy.cfm?page=natural_gas_home).
+For more information on natural gas, including how it is formed, how it is transported, and the impact of natural gas extraction on the environment, visit the [Energy Information Administration](http://www.eia.gov/kids/energy.cfm?page=natural_gas_home).
 
 ###<a name="coal"></a>Coal
 Coal is a nonrenewable energy source because it takes millions of years to develop. The energy in coal comes from the energy stored by plants that lived hundreds of millions of years ago when the earth was partly covered with swampy forests. Coal is classified into four main types, or ranks: anthracite, bituminous, subbituminous, and lignite. Classification depends on the amounts and types of carbon the coal contains and on the amount of heat energy the coal can produce. The rank of a deposit of coal depends on the pressure and heat that acted on the plant debris as it sank deeper and deeper over millions of years. For the most part, the higher ranks of coal contain more heat-producing energy.
@@ -100,7 +100,7 @@ Coal is used to create about 39% of all the electricity generated in the United 
 
 In addition to companies in the electric power sector, industries and businesses with their own power plants use coal to generate electricity.
 
-For more information on coal, including how it is formed, types of coal, and the impact of coal mining on the environment, visit the [Energy Information Agency](http://www.eia.gov/kids/energy.cfm?page=coal_home).
+For more information on coal, including how it is formed, types of coal, and the impact of coal mining on the environment, visit the [Energy Information Administration](http://www.eia.gov/kids/energy.cfm?page=coal_home).
 
 
 ##<a name="renewable"></a>Renewable Energy
@@ -111,7 +111,7 @@ Over half of renewable energy goes to producing electricity. The next largest us
 
 Renewable energy plays an important role in the supply of energy. When renewable energy sources are used, the demand for fossil fuels is reduced. Unlike fossil fuels, non-biomass renewable sources of energy (hydropower, geothermal, wind, and solar) do not directly emit greenhouse gases.
 
-For more information on renewable energy, including background on the major types of renewable energy such as biomass, hydropower, geothermal, wind, and solar, visit the [Energy Information Agency](http://www.eia.gov/kids/energy.cfm?page=renewable_home-basics).
+For more information on renewable energy, including background on the major types of renewable energy such as biomass, hydropower, geothermal, wind, and solar, visit the [Energy Information Administration](http://www.eia.gov/kids/energy.cfm?page=renewable_home-basics).
 
 ###<a name="geothermal"></a>Geothermal Energy
 Geothermal energy is heat from within the earth. We can recover this heat as steam or as hot water and use it to heat buildings or to generate electricity. It is a renewable energy source because the heat is continuously produced inside the earth.
@@ -129,7 +129,7 @@ Share of U.S. geothermal electricity produced by each state in 2013:
 + Oregon (1%)
 + Idaho	(1%)
 
-For more information on geothermal energy, including background on how geothermal energy is created, different types of geothermal power plants and the environmental impact of geothermal power, visit the [Energy Information Agency](http://www.eia.gov/kids/energy.cfm?page=geothermal_home).
+For more information on geothermal energy, including background on how geothermal energy is created, different types of geothermal power plants and the environmental impact of geothermal power, visit the [Energy Information Administration](http://www.eia.gov/kids/energy.cfm?page=geothermal_home).
 
 ###<a name="wind"></a>Wind Energy
 Wind energy takes advantage of the daily wind cycle. During the day, the air above the land heats up faster than the air over water. The warm air over the land expands and rises, and the heavier, cooler air rushes in to take its place, creating wind. At night, the winds are reversed because the air cools more rapidly over land than over water.
@@ -147,7 +147,7 @@ Large wind turbines (sometimes called wind machines) generated electricity in 36
 
 Wind power plants, or wind farms, as they are sometimes called, are clusters of wind machines used to produce electricity. A wind farm usually has dozens of wind machines scattered over a large area. The world's largest wind farm, the Horse Hollow Wind Energy Center in Texas, has 421 wind turbines that generate enough electricity to power 220,000 homes per year.
 
-For more information on wind energy, including background on wind turbines, considerations for placing wind turbines and the environmental impact of wind energy, visit the [Energy Information Agency](http://www.eia.gov/kids/energy.cfm?page=wind_home).
+For more information on wind energy, including background on wind turbines, considerations for placing wind turbines and the environmental impact of wind energy, visit the [Energy Information Administration](http://www.eia.gov/kids/energy.cfm?page=wind_home).
 
 ###<a name="hydro"></a>Hydropower
 Hydropower is the largest renewable energy source for electricity generation in the United States. In 2013, hydropower accounted for about 6% of total U.S. electricity generation and 52% of generation from all renewables.
@@ -158,7 +158,7 @@ However, most dams were not built for power generation. Only a small percentage 
 
 Not all hydropower comes from dams. There are also tidal fences, tital turbines and many methods to harness the power of waves.
 
-For more information on hydropower, including background on types of dams and turbines, alternative sources of hydropower such as wave energy, and the environmental impact of solar energy, visit the [Energy Information Agency](http://www.eia.gov/kids/energy.cfm?page=hydropower_home).
+For more information on hydropower, including background on types of dams and turbines, alternative sources of hydropower such as wave energy, and the environmental impact of solar energy, visit the [Energy Information Administration](http://www.eia.gov/kids/energy.cfm?page=hydropower_home).
 
 
 ##<a name="non-fuel"></a>Other Products: Non‐fuel Minerals

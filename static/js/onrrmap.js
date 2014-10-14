@@ -1,5 +1,62 @@
 // var mapdataviz = L.mapbox.map('map', 'mhertzfeld.i8l68af5')
 //     .setView([37.8, -91], 4);
+var statesDrawOrder = ["Alabama", 
+                          "Alaska", 
+                          "Arizona", 
+                          "Arkansas", 
+                          "California", 
+                           
+                          "Connecticut", 
+                          "Delaware",
+                          "District of Columbia", 
+                          "Florida", 
+                          "Georgia", 
+                          "Hawaii", 
+                          "Idaho", 
+                          "Illinois", 
+                          "Indiana", 
+                          "Iowa", 
+                          "Kansas", 
+                          "Kentucky", 
+                          "Louisiana", 
+                          "Maine", 
+                          "Maryland", 
+                          "Massachusetts", 
+                          "Michigan", 
+                          "Minnesota", 
+                          "Mississippi", 
+                          "Missouri", 
+                          "Montana", 
+                          "Nebraska", 
+                          "Oregon",
+                          
+                          
+                          "New Hampshire", 
+                          "New Jersey", 
+                          
+                          "New York",
+                          "North Carolina", 
+                          "North Dakota",
+                          "Ohio", 
+                          "Oklahoma", 
+                          "Pennsylvania", 
+                          "Rhode Island",
+                          "South Carolina",
+                          "South Dakota",
+                          "Tennessee", 
+                          "Texas", 
+                           
+                          "Vermont", 
+                          "Virginia", 
+                          "Washington", 
+                          "West Virginia", 
+                          "Wisconsin", 
+                          "Wyoming",
+                          "Utah",
+                          "Nevada", 
+                          "Colorado",
+                          "New Mexico"];
+
 
 var mapdataviz = L.map('map', {
     scrollWheelZoom: false
@@ -64,6 +121,8 @@ $('#map-comodities-pane>div').each(function(i){
 });
 
   // statesData comes from the 'revenue2013.json' included above
+  console.log(statesDrawOrder);
+  statesData = sortGeoJson(statesData,statesDrawOrder);
   var statesLayer = L.geoJson(statesData, {
     onEachFeature : onEachFeature
   }).addTo(mapdataviz);
@@ -124,6 +183,8 @@ $('#map-comodities-pane>div').each(function(i){
       var scale = ranges[name];
       dataLayers[i].eachLayer(function(layer) {
         var value =0;
+        //console.log('layers=');
+        //console.log(layer);
         if (layer.feature.properties.commodities)
         {
           if (layer.feature.properties.commodities[name])
@@ -144,7 +205,8 @@ $('#map-comodities-pane>div').each(function(i){
             layer.setStyle({
               fillColor: newColor.cssColor,
               fillOpacity: 0.0,
-              weight: 0.5
+              weight: 0.5,
+              data_revenue: value
             })
           }
           else
@@ -152,7 +214,8 @@ $('#map-comodities-pane>div').each(function(i){
             layer.setStyle({
               fillColor: newColor.cssColor,
               fillOpacity: 1.0,
-              weight: 0.5
+              weight: 0.5,
+              data_revenue: value
             });
           }
           
@@ -160,6 +223,7 @@ $('#map-comodities-pane>div').each(function(i){
           
       });
     }
+    calculateHeights();
   }
 
   // function loadData(){
@@ -336,6 +400,87 @@ $('#map-comodities-pane>div').each(function(i){
   // L.control.layers(null,overlays, {
   //     collapsed:false,
   //   }).addTo(mapdataviz);
+  
+  function calculateHeights(){
+    $('g[id*="map_stack_sector"]').each(function(){
+      $(this).remove(); 
+    });
+    var count = 0;
+    var idCount=0;
+    var maxDepth = 15;
+    var overlayLayer = $('svg.leaflet-zoom-animated');
+    var snap = Snap('svg.leaflet-zoom-animated');
+    // var revenue=[];
+    // for (var i=0; i<dataLayers.length; i++)
+    // {
+    //   var scale = ranges[name];
+    //   dataLayers[i].eachLayer(function(layer) {
+    //     if (layer.feature.properties.commodities)
+    //     {
+    //       if (layer.feature.properties.commodities[name])
+    //       {
+    //         revenue.push(layer.feature.properties.commodities[name].revenue);
+    //       }
+    //       else 
+    //         revenue.push(0.00);
+    //     }
+    //     else
+    //       revenue.push(0.00);
+    //   });
+    // }
+
+    $('g',overlayLayer).each(function(index){
+
+      var layerColor = $('path',$(this)).attr('fill');
+      //console.log(getColorPercent(layerColor,hues[1],hues[0]));
+      var depth = Math.round(getColorPercent(layerColor,hues[1],hues[0]) * maxDepth);
+      //console.log('Depth='+depth);
+      //console.log(color);
+      //var depth = Math.floor((Math.random() * 9) + 1);
+      while(count < depth && $('path', $(this)).attr('fill-opacity') > 0)
+      {
+        $(this).clone()
+        .appendTo($(this).parent())
+        .attr('id','map_stack_sector'+idCount)
+        .css('pointer-events','none');
+        var snapSelect = snap.select('#map_stack_sector'+idCount);
+        snapSelect.animate({transform: 't'+count+',' + -count},100);
+        count++;
+        idCount++;
+      }
+      count = 0;
+    });
+  }
 
 
 
+
+
+
+
+
+
+
+
+
+  /****************************
+  Draw orders
+  *****************************/
+  function sortGeoJson(geoJson, drawOrder){
+    var geoJsonArray = geoJson.features;
+    //console.log(geoJsonArray);
+    var newArray=[];
+    for(var i=0; i<geoJsonArray.length; i++)
+    {
+      //console.log(drawOrder);
+      //console.log(drawOrder.indexOf(geoJsonArray[i].properties.name));
+
+      if (drawOrder.indexOf(geoJsonArray[i].properties.name) == -1)
+        console.log('Sort Geo JSON ERROR Not Found - '+geoJsonArray[i].properties.name);
+      newArray[drawOrder.indexOf(geoJsonArray[i].properties.name)] = geoJsonArray[i];
+    }
+    geoJson.features = newArray;
+    return geoJson;
+  }
+  
+  

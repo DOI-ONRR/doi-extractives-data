@@ -275,5 +275,14 @@ function hexToRGB(color){
 	function cutHex(h) {return (h.charAt(0)=="#") ? h.substring(1,7):h}
 }
 
+function getColorPercent(color,range1,range2){
+	//console.log('Layer color='+color)
+	color  = hexToRGB(color);
+	range1 = hexToRGB(range1);
+	range2 = hexToRGB(range2);
+	//console.log('percent='+(color.r-range2.r)/(range1.r-range2.r))
+	return (color.r-range2.r)/(range1.r-range2.r);
+}
+
 
 

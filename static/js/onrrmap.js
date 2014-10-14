@@ -444,7 +444,7 @@ $('#map-comodities-pane>div').each(function(i){
         .attr('id','map_stack_sector'+idCount)
         .css('pointer-events','none');
         var snapSelect = snap.select('#map_stack_sector'+idCount);
-        snapSelect.animate({transform: 't'+count+',' + -count},100);
+        snapSelect.animate({transform: 't'+count+',' + -count},300);
         count++;
         idCount++;
       }

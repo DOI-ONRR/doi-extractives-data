@@ -91,12 +91,12 @@ for (var i = 0; i<variables.length; i++)
 {
   ranges[variables[i]] = {min: Infinity, max: -Infinity};
 }
-$('#map-comodities-pane>div').each(function(i){
+$('#map-comodities-pane>a').each(function(i){
   $(this).attr('data-value',variables[i]);
   
   $(this).click(function(){
     setVariable($(this).attr('data-value'));
-    $('#map-comodities-pane div').each(function(n){
+    $('#map-comodities-pane a').each(function(n){
       $(this).attr('class',$(this).attr('class').replace('-selected','').replace(' selected',''));
     });
 

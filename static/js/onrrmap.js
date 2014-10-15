@@ -121,7 +121,6 @@ $('#map-comodities-pane>div').each(function(i){
 });
 
   // statesData comes from the 'revenue2013.json' included above
-  console.log(statesDrawOrder);
   statesData = sortGeoJson(statesData,statesDrawOrder);
   var statesLayer = L.geoJson(statesData, {
     onEachFeature : onEachFeature
@@ -174,7 +173,15 @@ $('#map-comodities-pane>div').each(function(i){
       }
     }
   }
-
+  /**********************************
+  function: setVariable
+  This function loops through the layers
+  and assigns new colors to each layer
+  based on the value of the currently 
+  selected commodity. 
+  This function then calls calculateHeights
+  to draw the 3d effect.
+  ***********************************/
   function setVariable(name) {
     $('div.map-scale-min').html('$'+ranges[name].min.formatMoney(0,'.',','));
     $('div.map-scale-max').html('$'+ranges[name].max.formatMoney(0,'.',','));
@@ -401,6 +408,15 @@ $('#map-comodities-pane>div').each(function(i){
   //     collapsed:false,
   //   }).addTo(mapdataviz);
   
+
+  /*******************************
+  function: calculateHeights
+  Looks at the map and based on color, 
+  draws repeated shapes at an angle to 
+  create a 3d effect.
+  The new shapes have css set to allow
+  mouse events to pass through
+  *********************************/
   function calculateHeights(){
     $('g[id*="map_stack_sector"]').each(function(){
       $(this).remove(); 
@@ -410,33 +426,11 @@ $('#map-comodities-pane>div').each(function(i){
     var maxDepth = 15;
     var overlayLayer = $('svg.leaflet-zoom-animated');
     var snap = Snap('svg.leaflet-zoom-animated');
-    // var revenue=[];
-    // for (var i=0; i<dataLayers.length; i++)
-    // {
-    //   var scale = ranges[name];
-    //   dataLayers[i].eachLayer(function(layer) {
-    //     if (layer.feature.properties.commodities)
-    //     {
-    //       if (layer.feature.properties.commodities[name])
-    //       {
-    //         revenue.push(layer.feature.properties.commodities[name].revenue);
-    //       }
-    //       else 
-    //         revenue.push(0.00);
-    //     }
-    //     else
-    //       revenue.push(0.00);
-    //   });
-    // }
 
     $('g',overlayLayer).each(function(index){
 
       var layerColor = $('path',$(this)).attr('fill');
-      //console.log(getColorPercent(layerColor,hues[1],hues[0]));
       var depth = Math.round(getColorPercent(layerColor,hues[1],hues[0]) * maxDepth);
-      //console.log('Depth='+depth);
-      //console.log(color);
-      //var depth = Math.floor((Math.random() * 9) + 1);
       while(count < depth && $('path', $(this)).attr('fill-opacity') > 0)
       {
         $(this).clone()
@@ -451,6 +445,21 @@ $('#map-comodities-pane>div').each(function(i){
       count = 0;
     });
   }
+  
+  /**************************************
+  Sets function on the zoom control for the map
+  Clears the 3d sections, then redraws after a second delay
+  which gives the map enough time to reset
+  ***************************************/
+  $('.leaflet-control-zoom-in, .leaflet-control-zoom-out').click(function(){
+    $('g[id*="map_stack_sector"]').each(function(){
+      $(this).remove(); 
+    });
+    var timeout = setInterval(function(){
+      calculateHeights();
+      clearTimeout(timeout);
+    },1000);
+  })
 
 
 
@@ -464,17 +473,15 @@ $('#map-comodities-pane>div').each(function(i){
 
 
   /****************************
-  Draw orders
+  Function: sortGeoJson
+  Takes a geoJson and sorts based on
+  an array which matches the name properties in the geoJson
   *****************************/
   function sortGeoJson(geoJson, drawOrder){
     var geoJsonArray = geoJson.features;
-    //console.log(geoJsonArray);
     var newArray=[];
     for(var i=0; i<geoJsonArray.length; i++)
     {
-      //console.log(drawOrder);
-      //console.log(drawOrder.indexOf(geoJsonArray[i].properties.name));
-
       if (drawOrder.indexOf(geoJsonArray[i].properties.name) == -1)
         console.log('Sort Geo JSON ERROR Not Found - '+geoJsonArray[i].properties.name);
       newArray[drawOrder.indexOf(geoJsonArray[i].properties.name)] = geoJsonArray[i];

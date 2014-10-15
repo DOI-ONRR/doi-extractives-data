@@ -60,3 +60,11 @@
   - Park Service
   - historic
   - preservation
+
+- title: U.S. Census Bureau Energy and Utilities Statistics
+  url: http://www.census.gov/compendia/statab/cats/energy_utilities.html
+  description: "Statistics on fuel resources, energy production and consumption, electric energy, hydroelectric power, nuclear power, solar energy, wood energy, and the electric and gas utility industries."
+  tag:
+  - energy
+  - utilities
+  - statistics

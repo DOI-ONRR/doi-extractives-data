@@ -22,6 +22,7 @@
 .container {
 	@include outer-container;
 }
+//remove these below later - lazy coding
 .textRight {
 	text-align: right;
 }
@@ -38,8 +39,11 @@
 
 // Site-wide
 //============================================
-a:hover, a:focus {
+a {
     text-decoration: underline;
+}
+a:hover, a:focus {
+    text-decoration: none;
 }
 sup, sub {
    vertical-align: baseline;

@@ -1127,6 +1127,10 @@ article {
         margin-bottom: 13.5px;
         list-style-type: decimal;
         list-style-position: inside;
+        li { 
+            color: black;
+            text-shadow: none;
+        }
     }
 }
 .article-nav {

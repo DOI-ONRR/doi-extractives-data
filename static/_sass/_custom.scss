@@ -48,6 +48,15 @@ sup, sub {
 }
 sub { top: 0.4em; }
 
+.credit {
+    font-size: 14px;
+    font-size: rem(14);
+    line-height: 18px;
+    line-height: rem(18);
+    color: $dark-gray;
+    font-style: italic;
+}
+
 // Alpha Alert
 //============================================
 #burst-12 {
@@ -1043,14 +1052,6 @@ article {
         line-height: 23px;
         line-height: rem(23);
     }
-    .credit {
-        font-size: 14px;
-        font-size: rem(14);
-        line-height: 18px;
-        line-height: rem(18);
-        color: $dark-gray;
-        font-style: italic;
-    }
     blockquote {
         font-family: $secondary-font-family;
         color: $red;
@@ -1064,32 +1065,17 @@ article {
         }
     }
     h1 {
-        padding-bottom: 24px;
+        @extend %heading-primary;
     }
     h2, h2 a, .offices h1 {
-        font-family: $secondary-font-family;
-        color: $red;
-        font-size: 25px;
-        font-size: rem(25);
-        font-weight: 300;
-        padding: 18px 0 12px 0;
+        @extend %heading-secondary;
     }
     h3 {
-        font-family: $secondary-font-family;
-        color: $dark-gray;
-        border-bottom: 1px solid $red;
-        font-size: 20px;
-        font-size: rem(20);
-        margin-bottom: 5px;
-        padding-top: 13px;
+        @extend %heading-terciary;
 
     }
     h4 {
-        font-family: $secondary-font-family;
-        color: $dark-gray;
-        font-size: 20px;
-        font-size: rem(20);
-        font-weight: 300;
+        @extend %heading-quad;
     }
     ul {
         margin-bottom: 13.5px;
@@ -1405,6 +1391,38 @@ $max-width: 100%; //this is setting the width of outer-container.
     margin-bottom: 15px;
     &:hover, &:focus {
         color: $medium-gray;
+    }
+}
+
+// Search
+//============================================
+.search-results {
+
+    .credit {
+        text-align: right;
+    }
+}
+
+.search-header {
+    p {
+        @include span-columns(6);
+    }
+    p:last-of-type {
+        text-align: right;
+    }
+}
+
+.resource-cite {
+    font-size: 12px;
+    font-size: rem(12);
+    text-align: right;
+}
+
+.search-result-list {
+    @include span-columns(8 of 8);
+    h1,
+    h1 a {
+        @extend %heading-secondary;
     }
 }
 

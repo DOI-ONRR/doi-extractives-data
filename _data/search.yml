@@ -1,0 +1,62 @@
+- title: "Energy Information Agency (EIA) State profiles and energy estimates"
+  url: http://www.eia.gov/state/
+  description: "U.S. state energy information including overviews, rankings, data and analyses."
+  tag:
+  - energy
+  - states
+
+- title: "Energy Information Agency (EIA) Energy Markets and Finance"
+  url: http://www.eia.gov/finance/ 
+  description: "Financial market analysis and financial data for major energy companies."
+  tag:
+  - energy
+  - markets
+  - finance
+  - oil
+  - gas
+
+- title: "Energy Information Agency (EIA) Annual Energy Outlook"
+  url: http://www.eia.gov/analysis/projection-data.cfm#annualproj
+  description: "Data from forecast models on crude oil and petroleum liquids, gasoline, diesel, natural gas, electricity, coal prices, supply, and demand projections as well as interactive tables."
+  tag: 
+  - energy
+  - oil
+  - gas
+  - coal
+
+- title: "Energy Information Agency (EIA) Total Energy"
+  url: http://www.eia.gov/totalenergy/
+  description: "Comprehensive data summaries, comparisons, analysis and projections integrated across all energy sources."
+  tag:
+  - energy
+
+- title: "Energy Information Agency (EIA) Renewable & Alternative Fuels"
+  url: http://www.eia.gov/renewable/
+  description: "This site includes information on hydropower, solar, wind, geothermal, biomass and ethanol."
+  tag:
+  - energy
+  - renewable
+  - fuel
+
+- title:  Energy Information Agency (EIA) Coal
+  url: http://www.eia.gov/coal/
+  description: "Reserves, production, prices, employment and productivity, distribution, stocks, imports and exports."
+  tag:
+  - energy
+  - coal
+
+- title: Land and Water Conservation Fund (LWCF)
+  url: http://www.nps.gov/lwcf/index.htm
+  description: "The National Park Service LWCF Program provides matching grants to States and local governments for the acquisition and development of public outdoor recreation areas and facilities (as well as funding for shared federal land acquisition and conservation strategies)."
+  tag:
+  - Park Service
+  - conservation
+  - grants
+
+- title: National Historic Preservation Fund
+  url: http://www.nps.gov/history/hpg/
+  description: "The National Park Service home page for the Historic Preservation Fund."
+  tag:
+  - Park Service
+  - historic
+  - preservation

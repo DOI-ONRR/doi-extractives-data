@@ -1048,6 +1048,8 @@ article {
     li {
         margin-bottom: 3px;
         padding-left: 3px;
+        color: white;
+        text-shadow: 1px 1px $dark-gray;
     }
     ul:nth-of-type(1) {
         li:nth-of-type(1) {

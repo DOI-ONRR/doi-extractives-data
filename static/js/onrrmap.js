@@ -60,7 +60,7 @@ var statesDrawOrder = ["Alabama",
 
 var mapdataviz = L.map('map', {
     scrollWheelZoom: false
-  }).setView([39.8282, -98.5795], 4);
+  }).setView([37.9282, -99.5795], 4);
 L.tileLayer('http://a.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: 'Tiles Courtesy of <a href="http://www.mapquest.com/" target="_blank">MapQuest</a>',
     maxZoom: 18,

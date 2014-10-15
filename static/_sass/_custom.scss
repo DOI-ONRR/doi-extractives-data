@@ -138,6 +138,14 @@ ul.menu a.active li {
     form {
         display: block;
     }
+    label {
+        position: absolute;
+        color: $dark-gray;
+        font-weight: 300;
+        font-family: $base-font-family;
+        font-size: 0.8em;
+        padding: 5px;
+    }
     input {
         border-radius: 0;
         border-color: black;
@@ -148,39 +156,32 @@ ul.menu a.active li {
         margin-bottom: 0;
         float: left;
     }
-    input[type=text] {
+    input[type=search] {
         width: 210px;
     }
-    input[type=text]:focus { 
+    input[type=search]:focus { 
         border-top: 1px solid black; 
         border-right: 1px solid black;   
         border-bottom: 3px solid $red;
     }
-    input[type=text]:hover {
+    input[type=search]:hover {
         border-top: 1px solid black; 
         border-right: 1px solid black; 
         border-bottom: 3px solid black;
     }
-    input[type=button] {
+    input[type=submit] {
         color: $dark-gray;
+        padding: 0 8px 0 10px;
         float: right;
         border-top: 1px solid black; 
-        border-right: 1px solid black; 
+        border-right: 1px solid black;   
+        border-bottom: 3px solid black;
         &:hover, &:focus {
             color: $red;
             border-bottom-color: $red;
             background-color: $light-gray;
         }
     }
-}
-.input-prompt {
-    position: absolute;
-    font-style: italic;
-    color: $dark-gray;
-    font-weight: 300;
-    font-family: $base-font-family;
-    font-size: 0.8em;
-    padding: 5px;
 }
 
 // Homepage Splash

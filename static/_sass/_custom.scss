@@ -122,6 +122,12 @@ ul.menu a.active li {
         border-bottom: 3px solid black;
         display: block;
     }
+    .last {
+        border-bottom: none;
+        margin-right: 0;
+        padding: 5px 0 0 0;
+
+    }
     a {
         color: black;
         text-decoration: none;
@@ -129,6 +135,52 @@ ul.menu a.active li {
             color: white;
         }
     }
+    form {
+        display: block;
+    }
+    input {
+        border-radius: 0;
+        border-color: black;
+        border-left: none;
+        border-bottom-width: 3px;
+        background-color: #f8f8f8;
+        height: 30px;
+        margin-bottom: 0;
+        float: left;
+    }
+    input[type=text] {
+        width: 210px;
+    }
+    input[type=text]:focus { 
+        border-top: 1px solid black; 
+        border-right: 1px solid black;   
+        border-bottom: 3px solid $red;
+    }
+    input[type=text]:hover {
+        border-top: 1px solid black; 
+        border-right: 1px solid black; 
+        border-bottom: 3px solid black;
+    }
+    input[type=button] {
+        color: $dark-gray;
+        float: right;
+        border-top: 1px solid black; 
+        border-right: 1px solid black; 
+        &:hover, &:focus {
+            color: $red;
+            border-bottom-color: $red;
+            background-color: $light-gray;
+        }
+    }
+}
+.input-prompt {
+    position: absolute;
+    font-style: italic;
+    color: $dark-gray;
+    font-weight: 300;
+    font-family: $base-font-family;
+    font-size: 0.8em;
+    padding: 5px;
 }
 
 // Homepage Splash

@@ -12,7 +12,13 @@
     </a>
     <a href="{{ site.baseurl }}/data/" {% if page.title == "Data" %}class="active" {% endif %}>
     	<li itemprop="name">Filter &amp; Download Data</li>
-    </a> 
+    </a>
+    <li class="last" itemprop="name">
+        <form role="form" id="search-form" action="{{ site.baseurl }}/search" method="GET">
+            <input type="text" class="form-control" id="q" name="q" title="Search our archives...">
+            <input type="button" value="&#10095;">
+        </form>
+    </li>
     </ul>
   </div>
 </nav>

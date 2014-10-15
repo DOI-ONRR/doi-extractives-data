@@ -1,0 +1,27 @@
+---
+layout: subpage
+class: search
+---
+
+{{ content }}
+
+<!--[if lte IE 8]>
+  <style>
+  #search-results {display: none !important;}
+  .no-js-message {display: block; margin: auto; text-align: center; font-weight: bold;}
+  </style>
+<![endif]-->
+<span class="no-js-message">Whoops! It does not appear that your browser supports searching.</span>
+<div id="search-results" class="js-required">
+  <form role="form" id="search-form" class="js-required" action="{{ site.baseurl }}/search" method="GET">
+    <label class="sr-only" for="q">Search</label>
+    <div class="input-icon-group">
+      <span class="glyphicon glyphicon-search"></span>
+      <input type="search" class="form-control" id="q" name="q">
+    </div>
+    <p class="search-action-tip">Press Enter to Search <span class="search-action-tip-example">For example: name of a resource or city.</span></p>
+  </form>
+  <div id="search-result-list">
+  </div>
+<div class="resource-cite">Powered by Beckley Beta</div>
+</div>

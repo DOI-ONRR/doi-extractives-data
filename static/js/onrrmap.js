@@ -319,7 +319,7 @@ $('#map-comodities-pane>a').each(function(i){
   function mousemove(e) {
       var layer = e.target;
       var Revenue_String = (function(){
-        var selected = $('#map-comodities-pane div.selected').attr('data-value');
+        var selected = $('#map-comodities-pane a.selected').attr('data-value');
         if (layer.feature.properties.commodities)
         {
           if (layer.feature.properties.commodities[selected])

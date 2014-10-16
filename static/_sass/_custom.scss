@@ -137,30 +137,35 @@ ul.menu a.active li {
 
 // Vertical scroll nav
 //============================================
+
 #scroll {
     position: fixed;
-    top: 50%;
-    right: 30px;
+    top: 42%;
+    right: 15px;
     z-index: 999;
 }
+
 .scroll_item {
     border: 2px solid black;
-    width: 15px;
-    height: 15px;
+    width: 10px;
+    height: 10px;
     margin: 10px;
     @include transition(all 0.3s ease);
 }
+
 .scroll_item:hover{
     background: $red;
     cursor: pointer;
 }
+
 .scroll_item_active {
     border: 2px solid black;
-    width: 15px;
-    height: 15px;
+    width: 10px;
+    height: 10px;
     margin: 10px;
     background-color: $red;
 }
+
 .tooltip-item {
   $tooltip-background: $medium-gray;
   $tooltip-color: $base-font-color;
@@ -184,7 +189,6 @@ ul.menu a.active li {
     font-size: .9em; // Make sure you use -webkit-backface-visibility: hidden; on the body element to prevent 1px nudging bugs.
     line-height: 1.5em;
     margin-right: 30px;
-    // margin-left: -($tooltip-width/2);
     opacity: 0;
     padding: 0.7em 0.4em 0.5em 0.4em;
     box-shadow: $tooltip-shadow;
@@ -202,7 +206,6 @@ ul.menu a.active li {
 
     &:after {
       @include position(absolute, 0 0 0 95%);
-      
       border: $tooltip-arrow-width solid transparent;
       color: $tooltip-background;
       content: '►';

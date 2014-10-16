@@ -135,6 +135,85 @@ ul.menu a.active li {
     }
 }
 
+// Vertical scroll nav
+//============================================
+#scroll {
+    position: fixed;
+    top: 50%;
+    right: 30px;
+    z-index: 999;
+}
+.scroll_item {
+    border: 2px solid black;
+    width: 15px;
+    height: 15px;
+    margin: 10px;
+    @include transition(all 0.3s ease);
+}
+.scroll_item:hover{
+    background: $red;
+    cursor: pointer;
+}
+.scroll_item_active {
+    border: 2px solid black;
+    width: 15px;
+    height: 15px;
+    margin: 10px;
+    background-color: $red;
+}
+.tooltip-item {
+  $tooltip-background: $medium-gray;
+  $tooltip-color: $base-font-color;
+  $tooltip-width: 10em;
+  $tooltip-arrow-width: 6px;
+  $tooltip-shadow: 0 1px 0 $dark-gray;
+  $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
+
+  position: relative;
+
+  &:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .tooltip {
+    @include position(absolute, -9px 0 0 -160px);
+    @include box-sizing(border-box);
+    background-color: $tooltip-background;
+    color: $tooltip-color;
+    font-size: .9em; // Make sure you use -webkit-backface-visibility: hidden; on the body element to prevent 1px nudging bugs.
+    line-height: 1.5em;
+    margin-right: 30px;
+    // margin-left: -($tooltip-width/2);
+    opacity: 0;
+    padding: 0.7em 0.4em 0.5em 0.4em;
+    box-shadow: $tooltip-shadow;
+    text-align: center;
+    visibility: hidden;
+    min-width: $tooltip-width;
+    height: 30px;
+    z-index: 10;
+
+    p {
+      font-size: 0.8em;
+      line-height: 1em;
+      margin-bottom: 0;
+    }
+
+    &:after {
+      @include position(absolute, 0 0 0 95%);
+      
+      border: $tooltip-arrow-width solid transparent;
+      color: $tooltip-background;
+      content: '►';
+      text-shadow: $tooltip-shadow;
+      font-size: 1.1em;
+      pointer-events: none;
+    }
+  }
+}
+
+
 // Homepage Splash
 //============================================
 .usa {

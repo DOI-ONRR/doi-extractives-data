@@ -111,7 +111,7 @@ ul.menu a.active li {
 .nav {
     background: #8dc2e7;
     background: rgba(141, 194, 231, 0.9);
-    border-top: 6px solid rgba(0, 0, 0, 0.3);
+    border-top: 4px solid rgba(0, 0, 0, 0.3);
     ul {
         width: 100%;
         float: left;
@@ -141,11 +141,16 @@ ul.menu a.active li {
 	@include span-columns(12);
 	background-color: $blue;
 	text-align: center;
-    height: 20px;
-    font-size: 14px;
-    font-size: rem(13);
+    height: 18px;
+    font-size: 12px;
+    font-size: rem(12);
+    img {
+        padding-left: 5px;
+        padding-top: 3px;
+    }
     p {
-    font-family: Lato, sans-serif;}
+        font-family: Lato, sans-serif;
+    }
 }
 
 .splash {
@@ -252,7 +257,7 @@ ul.menu a.active li {
 
 //section background color options
 .light-gray { background-color: $light-gray; }
-.medium-gray { background-color: $medium-gray; }
+.medium-gray { background-color: lighten($medium-gray, 10%); }
 .blue { background-color: $blue; }
 
 //adjustments for infographic in each section
@@ -365,7 +370,7 @@ ul.menu a.active li {
 // Disbursment Bubble Graph
 //============================================
 .disbursement {
-    a:hover, a:active {
+    a:active {
         text-decoration: underline;    
     }
 }
@@ -1144,6 +1149,12 @@ article {
     margin-left: 20px;
     padding: 10px;
     width: 190px;
+    a {
+        text-decoration: none;
+        &:hover, &:focus {
+            text-decoration: underline;
+        }
+    }
     h1 {
         font-size: 1em;
         font-style: italic;

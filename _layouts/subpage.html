@@ -1,73 +1,71 @@
 <!doctype html>
+
 <html lang="en" class="no-js" itemscope itemtype="http://schema.org/Product">
-  <head>
-    {% include head.html %}
-  </head>
+
+  {% include head.html %}
+
   <body itemscope itemtype="http://schema.org/WebPage">
-  <div id="burst-12"></div>
-  <div id="burst-text">
-  	<p>This site is in</p>
-  	<h1>Alpha</h1>
-  </div>
 
- 	<aside class="usa">
-	  <div class="container">
-	    <p>
-	      An official website of the United States Government <img class="flag" src="{{ site.url }}static/img/us_flag_small.png">
-	    </p>
-	  </div>
-	</aside>
+    {% include alpha.html %}
 
-	<section class="splash">
-	{% include nav.html %}
-	  <div class="container">
-	    <div class="title subpage">
-	      <h1>Natural Resource Revenue</h1>
-	      <h1><span class="small">from</span> U.S. Federal Lands</h1>
-	    </div>
-	  </div>
-	</section>
+   	{% include usa-bug.html %}
 
-	<main role="main" itemscope itemprop="mainContentOfSite">
+  	<section class="splash">
 
-	<section class="section light-gray">
-	  <div class="container">
-	  	<article class="article">
+      {% include nav.html %}
+  	  
+      <div class="container">
+  	    <div class="title subpage">
+  	      <h1>Natural Resource Revenue</h1>
+  	      <h1><span class="small">from</span> U.S. Federal Lands</h1>
+  	    </div>
+  	  </div>
 
-    	{{ content }}
+  	</section>
 
-    	</article>
-    	{% if page.title == "Natural Resource Sectors in the U.S." %}
-    		<nav id="sticky-secondary-nav" class="article-nav" role="navigation" aria-label="secondary" itemscope itemtype="https://schema.org/SiteNavigationElement">
-    			<h1>On this page</h1>
-    			<ul>
-    				<a href="#nonrenewable" itemprop="url"><li itemprop="name">Nonrenewable Energy
-              <ul>
-                <a href="#oil" itemprop="url"><li>Oil</li></a>
-                <a href="#ngl" itemprop="url"><li>Natural Gas Liquids</li></a>
-                <a href="#coal" itemprop="url"><li>Coal</li></a>
-              </ul>
-            </li></a>
-    				<a href="#renewable" itemprop="url"><li itemprop="name">Renewable Energy
-              <ul>
-                <a href="#geothermal" itemprop="url"><li>Geothermal</li></a>
-                <a href="#wind" itemprop="url"><li>Wind</li></a>
-                <a href="#hydro" itemprop="url"><li>Hydropower</li></a>
-              </ul>
-            </li></a>
-    				<a href="#non-fuel" itemprop="url"><li itemprop="name">Other Products:<br/>Non-fuel Minerals
-              <ul>
-                <a href="#trends" itemprop="url"><li>Significant Events, Trends, and Issues</li></a>
-              </ul>
-            </li></a>
-    				<a href="#top" itemprop="url"><li itemprop="name">&#8593; Back to Top</li></a>
-    			</ul>
-    		</nav>
-    	{% endif %}
-      </div>
-	</section>
+  	<main role="main" itemscope itemprop="mainContentOfSite">
 
-	</main>
+    	<section class="section light-gray">
+    	  <div class="container">
+
+    	  	<article class="article">
+
+        	 {{ content }}
+
+        	</article>
+
+        	{% if page.title == "Natural Resource Sectors in the U.S." %}
+        		<nav id="sticky-secondary-nav" class="article-nav" role="navigation" aria-label="secondary" itemscope itemtype="https://schema.org/SiteNavigationElement">
+        			<h1>On this page</h1>
+        			<ul>
+        				<a href="#nonrenewable" itemprop="url"><li itemprop="name">Nonrenewable Energy
+                  <ul>
+                    <a href="#oil" itemprop="url"><li itemprop="name">Oil</li></a>
+                    <a href="#ngl" itemprop="url"><li itemprop="name">Natural Gas Liquids</li></a>
+                    <a href="#coal" itemprop="url"><li itemprop="name">Coal</li></a>
+                  </ul>
+                </li></a>
+        				<a href="#renewable" itemprop="url"><li itemprop="name">Renewable Energy
+                  <ul>
+                    <a href="#geothermal" itemprop="url"><li itemprop="name">Geothermal</li></a>
+                    <a href="#wind" itemprop="url"><li itemprop="name">Wind</li></a>
+                    <a href="#hydro" itemprop="url"><li itemprop="name">Hydropower</li></a>
+                  </ul>
+                </li></a>
+        				<a href="#non-fuel" itemprop="url"><li itemprop="name">Other Products:<br/>Non-fuel Minerals
+                  <ul>
+                    <a href="#trends" itemprop="url"><li itemprop="name">Significant Events, Trends, and Issues</li></a>
+                  </ul>
+                </li></a>
+        				<a href="#top" itemprop="url"><li itemprop="name">&#8593; Back to Top</li></a>
+        			</ul>
+        		</nav>
+        	{% endif %}
+
+        </div>
+    	</section>
+
+  	</main>
 
     {% include footer.html %}
 

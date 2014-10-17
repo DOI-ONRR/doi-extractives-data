@@ -375,6 +375,13 @@ $('#map-comodities-pane>a').each(function(i){
 
   function zoomToFeature(e) {
       mapdataviz.fitBounds(e.target.getBounds());
+      $('g[id*="map_stack_sector"]').each(function(){
+        $(this).remove(); 
+      });
+      var timeout = setInterval(function(){
+        calculateHeights();
+        clearTimeout(timeout);
+      },1000);
   }
 
   // mapdataviz.legendControl.addLegend(getLegendHTML());

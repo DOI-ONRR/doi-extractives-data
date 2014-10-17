@@ -12,12 +12,34 @@ description: This is a sample beta site for Federal natural resource revenues.
       An official website of the United States Government
       <img src="{{ site.url }}static/img/us_flag_small.png" alt="U.S. Flag">
     </p>
-    
-
   </div>
 </aside>
 
-<section class="splash">
+<!-- vertical scroll nav -->
+<div id="scroll">
+    <div id="first" class="scroll_item tooltip-item">&nbsp;
+      <div class="tooltip">
+        <p>Beginning</p>
+      </div>
+    </div>
+    <div id="second" class="scroll_item tooltip-item">&nbsp;
+      <div class="tooltip">
+        <p>U.S. Resource Sectors</p>
+      </div>
+    </div>
+    <div id="third" class="scroll_item tooltip-item">&nbsp;
+      <div class="tooltip">
+        <p>Where does the money go?</p>
+      </div>
+    </div>
+    <div id="fourth" class="scroll_item tooltip-item">&nbsp;
+      <div class="tooltip">
+        <p>Explore by location</p>
+      </div>
+    </div>
+</div>
+
+<section id="first1" class="splash">
   {% include nav.html %} 
   <div class="container">
     <div class="title">
@@ -39,7 +61,7 @@ description: This is a sample beta site for Federal natural resource revenues.
 <main role="main" itemscope itemprop="mainContentOfSite">
 
 <!-- START Section 'Sectors' -->
-<section class="section light-gray">
+<section id="second1" class="section light-gray">
   <div class="container">
 
     <div class="sectors">
@@ -91,7 +113,7 @@ description: This is a sample beta site for Federal natural resource revenues.
 </section>
 
 <!-- START Section 'Where Does the Money Go' -->
-<section class="section medium-gray disbursement">
+<section id="third1" class="section medium-gray disbursement">
   <div class="container">
     <div class="disbursement-intro">
       <h1>So where do these revenues go?</h1>
@@ -156,7 +178,7 @@ description: This is a sample beta site for Federal natural resource revenues.
 </section>
 
 <!-- START Map Section 'How do natural resources become Federal revenue?' -->
-<section class="section light-gray how">
+<section id="fourth1" class="section light-gray how">
   <div class="container">
     <h1>How do natural resources become<br/> Federal revenue?</h1>
     <p>If there are natural resources under (or even suspected of being under) Federal lands, the U.S. Department of the Interior grants leases to companies to explore for and extract these products to be sold.</p>

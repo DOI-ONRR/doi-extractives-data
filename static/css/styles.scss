@@ -1,40 +1,10 @@
 ---
 ---
 
-
-// *******************************************
-// Import all scss, ending with custom styles
-// *******************************************
-
-// Bourbon.io and related styles 
 @import 'bourbon/bourbon';
-
-/* 
-bitters.bourbon.io
-*/
+@import 'base/grid-settings';
+@import 'neat/neat'; 
 @import 'base/base';
-
-/*
-neat.bourbon.io
-*/
-@import "neat/neat"; 
-
-/*
-dc-js.github.io/dc.js/
-*/
-@import "dc";
-
-/*
-d3 tooltips
-*/
-@import "d3-tip"; 
-
-// Custom styles for this site 
-// NB: not sure if all the custom will be here, or some in 
-// our version of bitters (ie, base/base). May leave most there. 
-// If yes, readjust names to make this clear.
-
-/*
-custom styles
-*/
-@import "custom";
+@import 'dc';
+@import 'd3-tip';
+@import 'custom';

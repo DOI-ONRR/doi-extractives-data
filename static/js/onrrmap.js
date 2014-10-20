@@ -97,10 +97,10 @@ $('#map-comodities-pane>a').each(function(i){
   $(this).click(function(){
     setVariable($(this).attr('data-value'));
     $('#map-comodities-pane a').each(function(n){
-      $(this).attr('class',$(this).attr('class').replace('-selected','').replace(' selected',''));
+      $(this).attr('aria-pressed','false');
     });
 
-    $(this).attr('class',$(this).attr('class')+'-selected selected');
+    $(this).attr('aria-pressed','true');
   })
 
 

@@ -320,8 +320,13 @@ $('#map-comodities-pane>a').each(function(i){
 
   function mousemove(e) {
       var layer = e.target;
+
       var Revenue_String = (function(){
-        var selected = $('#map-comodities-pane a.selected').attr('data-value');
+        var selected; 
+        $('#map-comodities-pane a').each(function(){
+          if ($(this).attr('aria-pressed')=='true')
+            selected = $(this).attr('data-value');
+        });
         if (layer.feature.properties.commodities)
         {
           if (layer.feature.properties.commodities[selected])

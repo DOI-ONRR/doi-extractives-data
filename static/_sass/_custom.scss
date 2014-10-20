@@ -16,6 +16,7 @@ sub {
 sub {
   top: 0.4em;
 }
+
 // Utility
 //============================================
 .container {
@@ -75,10 +76,12 @@ sub {
   text-align: center;
   p {
     margin-bottom: 0px;
-    font-size: 14px;
+    @include rem-fallback(font-size, $base-font-size * 0.86);
   }
   h1 {
     font-size: 20px;
+    font-size: rem(20);
+    color: white;
   }
 }
 // Nav
@@ -144,7 +147,8 @@ ul.menu a.active li {
 .tooltip-item {
   $tooltip-background: $medium-gray;
   $tooltip-color: $base-font-color;
-  $tooltip-width: 10em;
+  $tooltip-width: 160px;
+  $tooltip-width: 10rem;
   $tooltip-arrow-width: 6px;
   $tooltip-shadow: 0 1px 0 $dark-gray;
   $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
@@ -158,11 +162,11 @@ ul.menu a.active li {
     @include box-sizing(border-box);
     background-color: $tooltip-background;
     color: $tooltip-color;
-    font-size: .9em; // Make sure you use -webkit-backface-visibility: hidden; on the body element to prevent 1px nudging bugs.
-    line-height: 1.5em;
+    @include rem-fallback(font-size, 0.9);
+    line-height: 1.5;
     margin-right: 30px;
     opacity: 0;
-    padding: 0.7em 0.4em 0.5em 0.4em;
+    @include rem-fallback(padding, 0.7, 0.4, 0.5, 0.4);
     box-shadow: $tooltip-shadow;
     text-align: center;
     visibility: hidden;
@@ -170,8 +174,8 @@ ul.menu a.active li {
     height: 30px;
     z-index: 10;
     p {
-      font-size: 0.8em;
-      line-height: 1em;
+      @include rem-fallback(font-size, 0.8);
+      line-height: 1;
       margin-bottom: 0;
     }
     &:after {
@@ -180,11 +184,12 @@ ul.menu a.active li {
       color: $tooltip-background;
       content: '►';
       text-shadow: $tooltip-shadow;
-      font-size: 1.1em;
+      @include rem-fallback(font-size, 1.1);    
       pointer-events: none;
     }
   }
 }
+
 // Homepage Splash
 //============================================
 .usa {
@@ -192,12 +197,12 @@ ul.menu a.active li {
   background-color: $blue;
   text-align: center;
   height: 18px;
-  font-size: em(12);
   img {
     padding-left: 5px;
     padding-top: 3px;
   }
   p {
+    @include rem-fallback(font-size, $base-font-size * 0.8);
     font-family: Lato, sans-serif;
   }
 }
@@ -208,16 +213,25 @@ ul.menu a.active li {
   @include prefixer(background-size, cover, webkit moz o spec);
   color: white;
   .title {
-    @include span-columns(7);
+    @include span-columns(12);
+    @include respond-to(small-up) { 
+      @include span-columns(7);
+    }
   }
   .subpage {
-    @include span-columns(5);
+    @include span-columns(12);
+    @include respond-to(small-up) { 
+      @include span-columns(5);
+    }
   }
   h1 {
     display: inline-block;
     color: white;
-    font-size: 2.16em;
-    line-height: 1.6em;
+    @include rem-fallback(font-size, $base-font-size * 2.16);
+    line-height: 1.2;
+    @include respond-to(small-up) { 
+      line-height: 1.6;
+    }
     font-weight: 500;
     background-color: $red;
     padding-left: 20px;
@@ -231,7 +245,7 @@ ul.menu a.active li {
     margin-bottom: -6px;
   }
   .subpage h1 {
-    font-size: em(22);
+    @include rem-fallback(font-size, 1.3);
     padding-left: 10px;
     padding-right: 10px;
     &:first-of-type {
@@ -248,15 +262,15 @@ ul.menu a.active li {
     margin-bottom: 250px;
     padding: 20px 50px 15px 30px;
     p {
-      font-size: $base-font-size + .1em;
-      line-height: 1.3em;
+      @include rem-fallback(font-size, $base-font-size * 1.2);
+      line-height: 1.3;
     }
     a {
       color: white;
     }
   }
   .small {
-    @include small-type(2.16em);
+    @include small-type(2.16);
   }
 }
 .moreDown {
@@ -300,10 +314,12 @@ ul.menu a.active li {
   @include prefixer(animation, breathe 3s infinite, webkit moz o spec);
   @include prefixer(animation-timing-function, ease, webkit moz o spec);
 }
+
 // Homepage Infographic Sections
 //============================================
 .section {
   padding: 40px 0 50px 0;
+  background-color: $light-gray;
   overflow: hidden;
 }
 .break {
@@ -316,37 +332,25 @@ ul.menu a.active li {
   }
 }
 //section background color options
-.light-gray {
-  background-color: $light-gray;
-}
 .medium-gray {
   background-color: lighten($medium-gray, 10%);
 }
-.blue {
-  background-color: $blue;
-}
+
 //adjustments for infographic in each section
 .sectors {
   @include span-columns(4);
   h1 {
-    padding-bottom: 40px;
-    font-size: em(26);
-    line-height: 1em;
-    font-weight: 800;
+    @extend .h1;
+    @include rem-fallback(font-size, 1.9);
+    line-height: 1;
   }
   h2 {
-    display: block;
-    color: $dark-gray;
-    font-size: em(18);
-    line-height: 1.1em;
-    font-weight: 800;
-    border-bottom: 2px solid $dark-gray;
-    margin-bottom: 15px;
-    padding-bottom: 5px;
+    @extend .h3;
+    @include rem-fallback(font-size, 1.2);
   }
   p {
-    font-size: 0.82em;
-    line-height: 1em;
+    @include rem-fallback(font-size, 0.82);
+    line-height: 1;
     padding-left: 5px;
     @include span-columns(9);
   }
@@ -378,7 +382,7 @@ ul.menu a.active li {
   }
 }
 .sectors-big-text {
-  @include large-type(1.625rem);
+  @include large-type(1.625);
   font-family: Raleway, sans-serif;
   font-weight: 800;
 }
@@ -405,7 +409,7 @@ ul.menu a.active li {
   width: 150px;
   text-align: center;
   h4 {
-    font-size: em(22);
+    @include rem-fallback(font-size, 1.3);
     font-family: $secondary-font-family;
     font-weight: 800;
   }
@@ -422,10 +426,11 @@ ul.menu a.active li {
 #sector-revenue-bar-chart {
   float: center;
 }
+
 // Disbursment Bubble Graph
 //============================================
 .disbursement {
-  a: active {
+  a:active {
     text-decoration: underline;
   }
 }
@@ -438,8 +443,9 @@ ul.menu a.active li {
   }
   h1,
   h2 {
-    font-size: em(26);
-    line-height: 1em;
+    @extend .h1;
+    @include rem-fallback(font-size, 1.7);
+    line-height: 1;
   }
   span:nth-of-type(1) {
     @include span-columns(12 of 12);
@@ -447,7 +453,7 @@ ul.menu a.active li {
   }
   span:nth-of-type(2) {
     @include span-columns(3 of 12);
-    font-size: em(37);
+    @include rem-fallback(font-size, 2.3);
     padding-left: 4%;
   }
   span:nth-of-type(3) {
@@ -460,7 +466,7 @@ ul.menu a.active li {
   margin: 20px 0 60px 0;
   h1 {
     text-transform: uppercase;
-    font-size: em(18);
+    @include rem-fallback(font-size, 1.2);
     float: left;
     padding: 9px 8px 0 0;
   }
@@ -471,7 +477,7 @@ ul.menu a.active li {
 #disbursment_totals_bar {
   margin-top: 20px;
   p {
-    font-size: em(13);
+    @include rem-fallback(font-size, 0.8);
     transform-origin: 0 0;
   }
   div.offshore_bar {
@@ -551,7 +557,7 @@ ul.menu a.active li {
     @include span-columns(6 of 12);
   }
   h1 {
-    font-size: em(24);
+    @include rem-fallback(font-size, 1.4);
     span {
       color: $purple1;
     }
@@ -567,7 +573,7 @@ ul.menu a.active li {
   }
   h2 {
     text-transform: uppercase;
-    font-size: em(11);
+    @include rem-fallback(font-size, 0.9);
     font-weight: 800;
     margin-top: 4px;
     padding-left: 3px;
@@ -614,8 +620,8 @@ ul.menu a.active li {
     background-color: $purple3;
     margin-top: 5%;
     > div {
-      line-height: 12px;
-      font-size: em(12);
+      line-height: 1;
+      @include rem-fallback(font-size, 0.9);
     }
   }
   > div:nth-of-type(4) {
@@ -700,7 +706,7 @@ div.disbursement_bubble_rollover {
   border: 1px solid $deep-purple;
   opacity: 0.85;
   border-radius: 3px;
-  font-size: em(14);
+  @include rem-fallback(font-size, 0.9);
   text-align: left;
   .statsOnshore {
     border: 1px solid $deep-orange;
@@ -710,8 +716,8 @@ div.disbursement_bubble_rollover {
   position: absolute;
   top: 20%;
   left: 0;
-  width: 0px;
-  height: 0px;
+  width: 0;
+  height: 0;
   z-index: 1000;
   display: none;
   .disbursement_bubble_details {
@@ -723,18 +729,19 @@ div.disbursement_bubble_rollover {
       border: none;
       color: black;
       text-transform: none;
-      font-size: em(32);
-      line-height: 30;
+      @include rem-fallback(font-size, 1.5);
+      line-height: 1.1
     }
     p {
-      font-size: em(16);
-      line-height: 22;
+      @include rem-fallback(font-size, 1);
+      line-height: 1.1
     }
     .disbursement_bubble_details_images {
       @include span-columns(3 of 9);
     }
   }
 }
+
 // Map
 //============================================
 //how do natural resources become Federal revenue?
@@ -743,24 +750,24 @@ div.disbursement_bubble_rollover {
     @include span-columns(12);
   }
   > h1:first-of-type {
-    font-size: em(26);
-    line-height: 1em;
+    font-size: rem(26);
+    line-height: 1;
     padding-bottom: 10px;
   }
   p {
     @include span-columns(6);
     margin-right: 1%;
-    font-size: 16px;
-    padding-left: 0px;
-    line-height: 1.2em;
+    @include rem-fallback(font-size, 1);
+    padding-left: 0;
+    line-height: 1.2;
   }
   ol {
     @include span-columns(5);
     list-style-type: decimal;
-    margin-left: 1em;
+    @include rem-fallback(margin-left, 1);
     margin-top: 5px;
-    font-size: 0.8em;
-    line-height: 1.1em;
+    @include rem-fallback(font-size, 0.8);
+    line-height: 1.1;
     li {
       padding-bottom: 8px;
     }
@@ -774,7 +781,7 @@ div.disbursement_bubble_rollover {
   margin-top: 50px;
   font-style: italic;
   h1 {
-    font-size: 1em;
+    @include rem-fallback(font-size, 1å);
     font-weight: 300;
     font-family: $base-font-family;
   }
@@ -805,7 +812,7 @@ div.disbursement_bubble_rollover {
 }
 .map-info-pane {
   position: absolute;
-  line-height: 20;
+  line-height: 1.1;
   padding: 10px;
   top: 10px;
   right: 10px;
@@ -819,7 +826,7 @@ div.disbursement_bubble_rollover {
   display: none;
   h1 {
     font-family: $base-font-family;
-    font-size: em(24);
+    @include rem-fallback(font-size, 1.3);
     line-height: 1;
     font-weight: 400;
     padding-bottom: 10px;
@@ -834,15 +841,15 @@ div.disbursement_bubble_rollover {
       margin-bottom: 0px;
       color: lighten($dark-gray, 15%);
       font-style: italic;
-      font-size: em(12);
-      line-height: 13;
+      @include rem-fallback(font-size, 0.8);
+      line-height: 1.1;
     }
     p+p {
       margin-top: 8px;
     }
   }
 }
-div.comodities-rollover {
+.comodities-rollover {
   position: absolute;
   width: 150px;
   padding: 10px;
@@ -853,9 +860,9 @@ div.comodities-rollover {
   border-radius: 3px;
   color: black;
   padding: 10px;
-  font-size: 0.9em;
+  @include rem-fallback(font-size, 0.9);
   font-style: italic;
-  line-height: 1em;
+  line-height: 1;
   z-index: 999;
   display: none;
   &:before, &:after {
@@ -894,20 +901,27 @@ div.comodities-rollover {
     transition: none;
     h1 {
       position: absolute;
-      bottom: -1px;
+      bottom: -8px;
       right: 2px;
-      font-size: 1em;
+      @include rem-fallback(font-size, 0.8);
       font-weight: 300;
       font-family: $base-font-family;
     }
     .small {
       //for long commodity names
-      font-size: 0.9em;
+      @include rem-fallback(font-size, 0.72);
     }
     &:hover,
-    &:focus {
+    &:focus,
+    &[aria-pressed="true"] {
       color: white;
       cursor: pointer;
+      h1 {
+        color: white;
+      }
+    }
+    &[aria-pressed="true"] {
+      background-color: black;
     }
   }
   a.oil,
@@ -1002,7 +1016,7 @@ div.comodities-rollover {
   z-index: 999;
   h1 {
     font-family: $base-font-family;
-    font-size: em(16);
+    font-size: rem(16);
     line-height: 1;
     font-weight: 400;
     padding-bottom: 4px;
@@ -1034,29 +1048,17 @@ path {
   -webkit-transition: fill 200ms;
   transition: fill 200ms;
 }
+
 // Subpage Layout
 //===============================================
 article {
   @include span-columns(8);
-  font-size: em(18);
-  p {
-    line-height: 23;
-  }
+  @include rem-fallback(font-size, 18);
   .credit {
-    font-size: em(14);
-    line-height: 18;
+    @include rem-fallback(font-size, 14);
+    line-height: 1.1;
     color: $dark-gray;
     font-style: italic;
-  }
-  blockquote {
-    font-family: $secondary-font-family;
-    color: $red;
-    margin: 0 auto 0 20px;
-    font-size: em(20);
-    font-style: italic;
-    p {
-      line-height: 26;
-    }
   }
   h1 {
     padding-bottom: 24px;
@@ -1064,38 +1066,29 @@ article {
   h2,
   h2 a,
   .offices h1 {
-    font-family: $secondary-font-family;
-    color: $red;
-    font-size: em(25);
-    font-weight: 300;
-    padding: 18px 0 12px 0;
+    @extend .h2;
+  }
+  .offices h1 {
+    margin-top: 0;
   }
   h3 {
-    font-family: $secondary-font-family;
-    color: $dark-gray;
-    border-bottom: 1px solid $red;
-    font-size: em(20);
-    margin-bottom: 5px;
-    padding-top: 13px;
+    @extend .h3;
   }
   h4 {
-    font-family: $secondary-font-family;
-    color: $dark-gray;
-    font-size: em(20);
-    font-weight: 300;
+    @extend .h4;
   }
   ul {
     margin-bottom: 13.5px;
-    font-size: em(14);
   }
   li {
+    @include rem-fallback(font-size, 0.87);
     margin-bottom: 3px;
     padding-left: 3px;
     color: white;
     text-shadow: 1px 1px $dark-gray;
   }
   ul:nth-of-type(1) {
-    li: nth-of-type(1) {
+    li:nth-of-type(1) {
       width: 31% * 4.5;
       background: $purple4;
     }
@@ -1114,7 +1107,7 @@ article {
     }
   }
   ul:nth-of-type(2) {
-    li: nth-of-type(1) {
+    li:nth-of-type(1) {
       width: 9.1% * 10;
       background: $purple4;
     }
@@ -1132,7 +1125,7 @@ article {
     }
   }
   ul:nth-of-type(3) {
-    li: nth-of-type(1) {
+    li:nth-of-type(1) {
       width: 29% * 4.5;
       background: $purple4;
     }
@@ -1151,7 +1144,7 @@ article {
     }
   }
   ul:nth-of-type(4) {
-    li: nth-of-type(1) {
+    li:nth-of-type(1) {
       width: 78% * 1.6;
       background: $purple4;
     }
@@ -1194,19 +1187,19 @@ article {
     }
   }
   h1 {
-    font-size: 1em;
+    @include rem-fallback(font-size, 1);
     font-style: italic;
     color: $dark-gray;
     padding-bottom: 5px;
   }
   ul li {
-    line-height: 1em;
+    line-height: 1;
     padding: 4px;
     > ul {
       padding-top: 5px;
       li {
-        font-size: 0.8em;
-        padding-top: 0px;
+        @include rem-fallback(font-size, 0.8);
+        padding-top: 0;
       }
     }
   }
@@ -1214,7 +1207,7 @@ article {
 .offices {
   article {
     @include span-columns(12);
-    div: nth-of-type(1) {
+    div:nth-of-type(1) {
       @include span-columns(2);
     }
     div:nth-of-type(2) {
@@ -1229,11 +1222,12 @@ article {
     div > h1 {
       font-family: $secondary-font-family;
       color: $dark-gray;
-      font-size: em(20);
+      font-size: rem(20);
       font-weight: 300;
     }
   }
 }
+
 // Data Dashboard
 //===============================================
 $max-width: 100%; //this is setting the width of outer-container.
@@ -1259,7 +1253,7 @@ $max-width: 100%; //this is setting the width of outer-container.
   background: $orange1;
   color: white;
   padding: 10px 0 10px 10px;
-  div: first-child {
+  div:first-child {
     @include span-columns(3 of 12);
   }
   div:last-child {
@@ -1269,7 +1263,7 @@ $max-width: 100%; //this is setting the width of outer-container.
     margin-left: -0.4%;
     @include span-columns(4 of 12);
     h1 {
-      font-size: em(20);
+      font-size: rem(20);
     }
   }
 }
@@ -1354,7 +1348,7 @@ $max-width: 100%; //this is setting the width of outer-container.
   h1 {
     @include span-columns(3 of 3);
     @include omega();
-    font-size: em(24);
+    font-size: rem(24);
     line-height: 1;
     border-top: 1px solid white;
     margin: 30px 0 10px 0;
@@ -1407,11 +1401,12 @@ $max-width: 100%; //this is setting the width of outer-container.
     color: $medium-gray;
   }
 }
+
 // Footer
 //============================================
 .footer {
   h1 {
-    font-size: em(16);
+    font-size: rem(16);
   }
   img {
     width: 80px;
@@ -1422,7 +1417,7 @@ $max-width: 100%; //this is setting the width of outer-container.
     @include span-columns(6);
   }
   li:nth-of-type(1) {
-    padding-top: 1.7em;
+    padding-top: 1.7rem;
   }
   li {
     font-family: $base-font-family;

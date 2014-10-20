@@ -41,7 +41,7 @@ description: This is a sample beta site for Federal natural resource revenues.
   </div>
   <div class="container">
     <div class="intro">
-      <p>The U.S. earns revenue on natural resources extracted from its lands. This is a major source of revenue for the country and for local municipalities. Find information on this sector here.</p>
+      <p>The U.S. earns revenue on natural resources extracted from its lands. This is a major source of revenue for the country and for local municipalities.</p>
       <img src="{{ site.url }}static/img/scroll-down.png" alt="You should scroll down. There is more to learn!" class="moreDown breathe">
       <p>Learn more by scrolling down.</p>
     </div>
@@ -52,7 +52,7 @@ description: This is a sample beta site for Federal natural resource revenues.
 <main role="main" itemscope itemprop="mainContentOfSite">
 
 <!-- Sectors -->
-<section id="second1" class="section light-gray">
+<section id="second1" class="section">
   <div class="container">
 
     <div class="sectors">
@@ -163,7 +163,7 @@ description: This is a sample beta site for Federal natural resource revenues.
 {% include section-break.html %}
 
 <!-- Map -->
-<section id="fourth1" class="section light-gray how">
+<section id="fourth1" class="section how">
 
   <div class="container">
     <h1>How do natural resources become<br/> Federal revenue?</h1>
@@ -176,27 +176,27 @@ description: This is a sample beta site for Federal natural resource revenues.
       <div id='map'></div>
       <div id='map-info-pane' class='map-info-pane'></div>
       <div id='map-comodities-pane' class='map-comodities-pane'>
-        <a href='javascript:' class='oil-selected selected' data-value='oil' tabindex='0'>
+        <a href='javascript:' class='oil-selected selected' data-value='oil' tabindex='0' role="button" aria-pressed="true">
           <h1>Oil<sup> 1</sup></h1>
           <div class='comodities-rollover'>Oil means natural gas liquids. Have more info here on that and direct people to footnote for more info.</div>
         </a>
-        <a href='javascript:' class='ngl' tabindex='0'>
-          <h1>NGL<sup> 2</sup></h1>
+        <a href='javascript:' class='ngl' tabindex='0' role="button" aria-pressed="false">
+          <h1>Gas<sup> 2</sup></h1>
           <div class='comodities-rollover'>NGL means natural gas liquids. Have more info here on that and direct people to footnote for more info.</div>
         </a>
-        <a href='javascript:' class='coal' tabindex='0'>
+        <a href='javascript:' class='coal' tabindex='0' role="button" aria-pressed="false">
           <h1>Coal<sup> 2</sup></h1>
           <div class='comodities-rollover'>Coal means natural gas liquids. Have more info here on that and direct people to footnote for more info.</div>
         </a>
-        <a href='javascript:' class='other' tabindex='0'>
+        <a href='javascript:' class='other' tabindex='0' role="button" aria-pressed="false">
           <h1>Other<sup> 3</sup></h1>
           <div class='comodities-rollover'>Other means natural gas liquids. Have more info here on that and direct people to footnote for more info.</div>
         </a>
-        <a href='javascript:' class='wind' tabindex='0'>
+        <a href='javascript:' class='wind' tabindex='0' role="button" aria-pressed="false">
           <h1>Wind<sup> 4</sup></h1>
           <div class='comodities-rollover'>Wind means natural gas liquids. Have more info here on that and direct people to footnote for more info.</div>
         </a>
-        <a href='javascript:' class='geo' tabindex='0'>
+        <a href='javascript:' class='geo' tabindex='0' role="button" aria-pressed="false">
           <h1 class="small">Geothermal<sup> 5</sup></h1>
           <div class='comodities-rollover'>Geothermal means natural gas liquids. Have more info here on that and direct people to footnote for more info.</div>
         </a>

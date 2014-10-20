@@ -52,6 +52,15 @@ sup, sub {
 }
 sub { top: 0.4em; }
 
+.credit {
+    font-size: 14px;
+    font-size: rem(14);
+    line-height: 18px;
+    line-height: rem(18);
+    color: $dark-gray;
+    font-style: italic;
+}
+
 // Alpha Alert
 //============================================
 #burst-12 {
@@ -126,11 +135,64 @@ ul.menu a.active li {
         border-bottom: 3px solid black;
         display: block;
     }
+    .last {
+        border-bottom: none;
+        margin-right: 0;
+        padding: 5px 0 0 0;
+
+    }
     a {
         color: black;
         text-decoration: none;
         &:hover, &:focus {
             color: white;
+        }
+    }
+    form {
+        display: block;
+    }
+    label {
+        position: absolute;
+        color: $dark-gray;
+        font-weight: 300;
+        font-family: $base-font-family;
+        font-size: 0.8em;
+        padding: 5px;
+    }
+    input {
+        border-radius: 0;
+        border-color: black;
+        border-left: none;
+        border-bottom-width: 3px;
+        background-color: #f8f8f8;
+        height: 30px;
+        margin-bottom: 0;
+        float: left;
+    }
+    input[type=search] {
+        width: 210px;
+    }
+    input[type=search]:focus { 
+        border-top: 1px solid black; 
+        border-right: 1px solid black;   
+        border-bottom: 3px solid $red;
+    }
+    input[type=search]:hover {
+        border-top: 1px solid black; 
+        border-right: 1px solid black; 
+        border-bottom: 3px solid black;
+    }
+    input[type=submit] {
+        color: $dark-gray;
+        padding: 0 8px 0 10px;
+        float: right;
+        border-top: 1px solid black; 
+        border-right: 1px solid black;   
+        border-bottom: 3px solid black;
+        &:hover, &:focus {
+            color: $red;
+            border-bottom-color: $red;
+            background-color: $light-gray;
         }
     }
 }
@@ -1083,14 +1145,6 @@ article {
         line-height: 23px;
         line-height: rem(23);
     }
-    .credit {
-        font-size: 14px;
-        font-size: rem(14);
-        line-height: 18px;
-        line-height: rem(18);
-        color: $dark-gray;
-        font-style: italic;
-    }
     blockquote {
         font-family: $secondary-font-family;
         color: $red;
@@ -1104,32 +1158,17 @@ article {
         }
     }
     h1 {
-        padding-bottom: 24px;
+        @extend %heading-primary;
     }
     h2, h2 a, .offices h1 {
-        font-family: $secondary-font-family;
-        color: $red;
-        font-size: 25px;
-        font-size: rem(25);
-        font-weight: 300;
-        padding: 18px 0 12px 0;
+        @extend %heading-secondary;
     }
     h3 {
-        font-family: $secondary-font-family;
-        color: $dark-gray;
-        border-bottom: 1px solid $red;
-        font-size: 20px;
-        font-size: rem(20);
-        margin-bottom: 5px;
-        padding-top: 13px;
+        @extend %heading-terciary;
 
     }
     h4 {
-        font-family: $secondary-font-family;
-        color: $dark-gray;
-        font-size: 20px;
-        font-size: rem(20);
-        font-weight: 300;
+        @extend %heading-quad;
     }
     ul {
         margin-bottom: 13.5px;
@@ -1457,6 +1496,38 @@ $max-width: 100%; //this is setting the width of outer-container.
     margin-bottom: 15px;
     &:hover, &:focus {
         color: $medium-gray;
+    }
+}
+
+// Search
+//============================================
+.search-results {
+
+    .credit {
+        text-align: right;
+    }
+}
+
+.search-header {
+    p {
+        @include span-columns(6);
+    }
+    p:last-of-type {
+        text-align: right;
+    }
+}
+
+.resource-cite {
+    font-size: 12px;
+    font-size: rem(12);
+    text-align: right;
+}
+
+.search-result-list {
+    @include span-columns(8 of 8);
+    h1,
+    h1 a {
+        @extend %heading-secondary;
     }
 }
 

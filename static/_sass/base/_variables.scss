@@ -33,7 +33,6 @@ $light-red: #FBE3E4;
 $light-yellow: #FFF6BF;
 $light-green: #E6EFC2;
 
-
 $deep-purple: #452941;
 $purple0: #653c5f;
 $purple1: #7f5078;
@@ -81,3 +80,33 @@ $form-box-shadow: inset 0 1px 3px rgba(0,0,0,0.06);
 $form-box-shadow-focus: $form-box-shadow, 0 0 5px rgba(darken($form-border-color-focus, 5), 0.7);
 $form-font-size: $base-font-size;
 $form-font-family: $base-font-family;
+
+//Headings
+%heading-primary {
+	padding-bottom: 24px;
+}
+%heading-secondary {
+	font-family: $secondary-font-family;
+    color: $red;
+    font-size: 25px;
+    font-size: rem(25);
+    font-weight: 300;
+    padding: 18px 0 12px 0;
+}
+%heading-terciary {
+	font-family: $secondary-font-family;
+    color: $dark-gray;
+    border-bottom: 1px solid $red;
+    font-size: 20px;
+    font-size: rem(20);
+    margin-bottom: 5px;
+    padding-top: 13px;
+}
+%heading-quad {
+	font-family: $secondary-font-family;
+    color: $dark-gray;
+    font-size: 20px;
+    font-size: rem(20);
+    font-weight: 300;
+}
+

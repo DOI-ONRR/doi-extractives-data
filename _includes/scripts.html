@@ -46,10 +46,6 @@ $(document).ready(function () {
     });
 
     $(window).scroll(function (event) {
-      console.log('second offset height = ' + $("#second1").offset().top);
-      console.log('window scroll top = '+ $(window).scrollTop());
-      console.log('window outerHeight ='+ $(window).outerHeight());
-      console.log('total='+($(window).scrollTop()+$(window).outerHeight()))
         if ($("#first1").offset().top < $(window).scrollTop() + $(window).outerHeight()) {
             $("#first").addClass('scroll_item_active');
             $("#second").removeClass('scroll_item_active');

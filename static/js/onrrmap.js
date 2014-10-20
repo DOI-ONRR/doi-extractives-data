@@ -1,5 +1,6 @@
 // var mapdataviz = L.mapbox.map('map', 'mhertzfeld.i8l68af5')
 //     .setView([37.8, -91], 4);
+var map_draw_init = false;
 var statesDrawOrder = ["Alabama", 
                           "Alaska", 
                           "Arizona", 
@@ -230,7 +231,8 @@ $('#map-comodities-pane>a').each(function(i){
           
       });
     }
-    calculateHeights();
+    if (map_draw_init)
+      calculateHeights();
   }
 
   // function loadData(){
@@ -496,5 +498,19 @@ $('#map-comodities-pane>a').each(function(i){
     geoJson.features = newArray;
     return geoJson;
   }
+
+
+  /******************************
+  Functionality: Draw map height
+  on scroll
+  *******************************/
+  $(window).scroll(function (event) {
+        if (map_draw_init)
+          return;
+        if ($("#fourth1").offset().top < $(window).scrollTop() + 150) {
+            map_draw_init = true;
+            calculateHeights();
+        }
+    });
   
   

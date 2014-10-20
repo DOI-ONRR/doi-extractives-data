@@ -903,6 +903,7 @@ div.disbursement_bubble_rollover {
     z-index: -1;
   }
 }
+
 .map-comodities-pane {
   position: absolute;
   top: -75px;
@@ -914,12 +915,12 @@ div.disbursement_bubble_rollover {
   }
   z-index: 998;
   > a {
+    position: relative;
+    float: left;
     width: 75px;
     height: 75px;
-    float: left;
+    background-color: $dark-medium-gray;
     border: 1px solid black;
-    font-size: 10pt;
-    position: relative;
     color: black;
     transition: none;
     h1 {
@@ -930,108 +931,42 @@ div.disbursement_bubble_rollover {
       font-weight: 300;
       font-family: $base-font-family;
     }
-    .small {
-      //for long commodity names
+    .small { //for long commodity names
       @include rem-fallback(font-size, 0.72);
     }
+    svg {
+      width: 57px;
+      height: 57px;
+      padding-top: 15px;
+      padding-left: 15px;
+      display: inline-block;
+      fill: black;
+    }
     &:hover,
-    &:focus,
-    &[aria-pressed="true"] {
-      color: white;
+    &:focus {
+      background-color: $darker-gray;
       cursor: pointer;
       h1 {
         color: white;
       }
+      svg {
+        fill: white;
+      }
     }
     &[aria-pressed="true"] {
       background-color: black;
+      cursor: pointer;
+      outline: none;
+      h1 {
+        color: white;
+      }
+      svg {
+        fill: white;
+      }
     }
-  }
-  a.oil,
-  a.oil-selected {
-    background: $dark-medium-gray url(../img/icon_375.svg) no-repeat center;
-    background-size: 31px;
-    &:hover, &:focus {
-      background: $darker-gray url(../img/icon_375_white.svg) no-repeat center;
-      background-size: 31px;
-    }
-  }
-  a.oil-selected {
-    background: black url(../img/icon_375_white.svg) no-repeat center;
-    background-size: 31px;
-    color: white;
-  }
-  a.ngl,
-  a.ngl-selected {
-    background: $dark-medium-gray url(../img/icon_12555.svg) no-repeat center;
-    background-size: 23px;
-    &:hover, &:focus {
-      background: $darker-gray url(../img/icon_12555_white.svg) no-repeat center;
-      background-size: 23px;
-    }
-  }
-  a.ngl-selected {
-    background: black url(../img/icon_12555_white.svg) no-repeat center;
-    background-size: 23px;
-    color: white;
-  }
-  a.coal,
-  a.coal-selected {
-    background: $dark-medium-gray url(../img/icon_5846.svg) no-repeat center;
-    background-size: 45px;
-    &:hover, &:focus {
-      background: $darker-gray url(../img/icon_5846_white.svg) no-repeat center;
-      background-size: 45px;
-    }
-  }
-  a.coal-selected {
-    background: black url(../img/icon_5846_white.svg) no-repeat center;
-    background-size: 45px;
-    color: white;
-  }
-  a.other,
-  a.other-selected {
-    background: $dark-medium-gray url(../img/icon_29006.svg) no-repeat center;
-    background-size: 14px;
-    &:hover, &:focus {
-      background: $darker-gray url(../img/icon_29006_white.svg) no-repeat center;
-      background-size: 14px;
-    }
-  }
-  a.other-selected {
-    background: black url(../img/icon_29006_white.svg) no-repeat center;
-    background-size: 14px;
-    color: white;
-  }
-  a.geo,
-  a.geo-selected {
-    background: $dark-medium-gray url(../img/icon_2070.svg) no-repeat center;
-    background-size: 35px;
-    &:hover, &:focus {
-      background: $darker-gray url(../img/icon_2070_white.svg) no-repeat center;
-      background-size: 35px;
-    }
-  }
-  a.geo-selected {
-    background: black url(../img/icon_2070_white.svg) no-repeat center;
-    background-size: 35px;
-    color: white;
-  }
-  a.wind,
-  a.wind-selected {
-    background: $dark-medium-gray url(../img/icon_25208.svg) no-repeat center;
-    background-size: 35px;
-    &:hover, &:focus {
-      background: $darker-gray url(../img/icon_25208_white.svg) no-repeat center;
-      background-size: 35px;
-    }
-  }
-  a.wind-selected {
-    background: black url(../img/icon_25208_white.svg) no-repeat center;
-    background-size: 35px;
-    color: white;
   }
 }
+
 #map-scale-pane {
   position: absolute;
   right: 10px;

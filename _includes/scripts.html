@@ -46,26 +46,30 @@ $(document).ready(function () {
     });
 
     $(window).scroll(function (event) {
+      console.log('second offset height = ' + $("#second1").offset().top);
+      console.log('window scroll top = '+ $(window).scrollTop());
+      console.log('window outerHeight ='+ $(window).outerHeight());
+      console.log('total='+($(window).scrollTop()+$(window).outerHeight()))
         if ($("#first1").offset().top < $(window).scrollTop() + $(window).outerHeight()) {
             $("#first").addClass('scroll_item_active');
             $("#second").removeClass('scroll_item_active');
             $("#third").removeClass('scroll_item_active');
             $("#fourth").removeClass('scroll_item_active');
         }
-        if ($("#second1").offset().top < $(window).scrollTop() + $(window).outerHeight()) {
+        if ($("#second1").offset().top < $(window).scrollTop() + 150 && $(window).scrollTop()!= 0) {
             $("#second").addClass('scroll_item_active');
             $("#first").removeClass('scroll_item_active');
             $("#third").removeClass('scroll_item_active');
             $("#fourth").removeClass('scroll_item_active');
             
         }
-        if ($("#third1").offset().top < $(window).scrollTop() + $(window).outerHeight()) {
+        if ($("#third1").offset().top < $(window).scrollTop() + 150) {
             $("#third").addClass('scroll_item_active');
            $("#first").removeClass('scroll_item_active');
             $("#second").removeClass('scroll_item_active');
             $("#fourth").removeClass('scroll_item_active');
         }
-         if ($("#fourth1").offset().top < $(window).scrollTop() + $(window).outerHeight()) {
+        if ($("#fourth1").offset().top < $(window).scrollTop() + 150) {
             $("#fourth").addClass('scroll_item_active');
            $("#first").removeClass('scroll_item_active');
             $("#second").removeClass('scroll_item_active');

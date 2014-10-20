@@ -175,32 +175,47 @@ description: This is a sample beta site for Federal natural resource revenues.
   <div class="map-container">
       <div id='map'></div>
       <div id='map-info-pane' class='map-info-pane'></div>
+      
       <div id='map-comodities-pane' class='map-comodities-pane'>
-        <a href='javascript:' class='oil-selected selected' data-value='oil' tabindex='0' role="button" aria-pressed="true">
+
+        <a href='javascript:' class='oil' data-value='oil' tabindex='0' role="button" aria-pressed="true">
+          <svg class="eiti-icon-oil"><use xlink:href="{{ site.url }}static/fonts/EITI/icons.svg#eiti-icon-oil"></use></svg>
           <h1>Oil<sup> 1</sup></h1>
           <div class='comodities-rollover'>Oil means natural gas liquids. Have more info here on that and direct people to footnote for more info.</div>
         </a>
+
         <a href='javascript:' class='ngl' tabindex='0' role="button" aria-pressed="false">
+          <svg class="eiti-icon-gas"><use xlink:href="{{ site.url }}static/fonts/EITI/icons.svg#eiti-icon-gas"></use></svg>
           <h1>Gas<sup> 2</sup></h1>
           <div class='comodities-rollover'>NGL means natural gas liquids. Have more info here on that and direct people to footnote for more info.</div>
         </a>
+
         <a href='javascript:' class='coal' tabindex='0' role="button" aria-pressed="false">
+          <svg class="eiti-icon-coal"><use xlink:href="{{ site.url }}static/fonts/EITI/icons.svg#eiti-icon-coal"></use></svg>
           <h1>Coal<sup> 2</sup></h1>
           <div class='comodities-rollover'>Coal means natural gas liquids. Have more info here on that and direct people to footnote for more info.</div>
         </a>
+
         <a href='javascript:' class='other' tabindex='0' role="button" aria-pressed="false">
+          <svg class="eiti-icon-other"><use xlink:href="{{ site.url }}static/fonts/EITI/icons.svg#eiti-icon-other"></use></svg>
           <h1>Other<sup> 3</sup></h1>
           <div class='comodities-rollover'>Other means natural gas liquids. Have more info here on that and direct people to footnote for more info.</div>
         </a>
+
         <a href='javascript:' class='wind' tabindex='0' role="button" aria-pressed="false">
+          <svg class="eiti-icon-wind"><use xlink:href="{{ site.url }}static/fonts/EITI/icons.svg#eiti-icon-wind"></use></svg>
           <h1>Wind<sup> 4</sup></h1>
           <div class='comodities-rollover'>Wind means natural gas liquids. Have more info here on that and direct people to footnote for more info.</div>
         </a>
+
         <a href='javascript:' class='geo' tabindex='0' role="button" aria-pressed="false">
+          <svg class="eiti-icon-geo"><use xlink:href="{{ site.url }}static/fonts/EITI/icons.svg#eiti-icon-geo"></use></svg>
           <h1 class="small">Geothermal<sup> 5</sup></h1>
           <div class='comodities-rollover'>Geothermal means natural gas liquids. Have more info here on that and direct people to footnote for more info.</div>
         </a>
+
       </div>
+
       <div id='map-scale-pane'>
         <h1>Revenue</h1>
         <div></div>

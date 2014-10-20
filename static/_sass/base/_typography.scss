@@ -196,7 +196,7 @@ cite {
   text-align: center;
 
   @include media($tiny-down) {
-    font-size: $base-font-size & 1.424;
+    font-size: $base-font-size;
   }
 }
 

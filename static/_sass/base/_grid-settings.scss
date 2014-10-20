@@ -1,15 +1,35 @@
 @import '../neat/neat-helpers';
-// @import 'neat-helpers'; // or '../neat/neat-helpers' when not in Rails
 
-// Neat Overrides
-// $column: 90px;
-// $gutter: 30px;
-// $grid-columns: 12;
- $max-width: em(960); //1088
+$max-width: rem(960); //1088
 
 // Neat Breakpoints
-$medium-screen: em(640);
-$large-screen: em(860);
+$tiny: rem(480);
+$small: rem(600);
+$medium: rem(768);
+$large: rem(990);
+$largest: rem(1088);
 
-$medium-screen-up: new-breakpoint(min-width $medium-screen 4);
-$large-screen-up: new-breakpoint(min-width $large-screen 8);
+$tiny-down: new-breakpoint(max-width $tiny);
+$tiny-up: new-breakpoint(min-width $tiny);
+$small-up: new-breakpoint(min-width $small);
+$medium-up: new-breakpoint(min-width $medium);
+$large-up: new-breakpoint(min-width $large);
+$largest-up: new-breakpoint(min-width $largest);
+
+@mixin respond-to($media) {
+  @if $media == tiny-down {
+    @media only screen and (max-width: $tiny) { @content; }
+  }
+  @else if $media == tiny-up {
+    @media only screen and (min-width: $tiny) { @content; }
+  }
+  @else if $media == small-up {
+    @media only screen and (min-width: $small) { @content; }
+  }
+  @else if $media == medium-up {
+    @media only screen and (min-width: $medium) { @content; }
+  }
+  @else if $media == large-up {
+    @media only screen and (min-width: $large) { @content; }
+  }
+}

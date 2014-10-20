@@ -1,45 +1,146 @@
+// Typography mixins
+
+// REM to px fallback
+// Thanks to Karl Merkli
+// via http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
+@function strip-unit($num) {
+  @return $num / ($num * 0 + 1);
+}
+
+@mixin rem-fallback($property, $values...) {
+  $max: length($values);
+  $pxValues: '';
+  $remValues: '';
+
+  @for $i from 1 through $max {
+    $value: strip-unit(nth($values, $i));
+    $pxValues: #{$pxValues + $value*16}px;
+
+    @if $i < $max {
+      $pxValues: #{$pxValues + " "};
+    }
+  } 
+
+  @for $i from 1 through $max {
+    $value: strip-unit(nth($values, $i));
+    $remValues: #{$remValues + $value}rem;
+
+    @if $i < $max {
+      $remValues: #{$remValues + " "};
+    }
+  } 
+  
+  #{$property}: $pxValues; 
+  #{$property}: $remValues; 
+}
+
+// shrinks designated text and aligns it with x-height of neighboring text
+@mixin small-type($parent-font-size) {
+  position: relative;
+  top: -2 * (.2 * $parent-font-size) + em;
+  @include rem-fallback(font-size, 0.5 * $parent-font-size);
+}
+
+// enlarges designated text
+@mixin large-type($parent-font-size) {
+  position: relative;
+  display: inline-block;
+  @include rem-fallback(font-size, 2.1 * $parent-font-size);
+}
+
 body {
   -webkit-font-smoothing: antialiased;
   background-color: $base-background-color;
   color: $base-font-color;
   font-family: $base-font-family;
-  font-size: $base-font-size;
+  @include rem-fallback(font-size, $base-font-size);
   line-height: $unitless-line-height;
 }
 
-h1, h2, h3, h4, h5, h6 {
+// Typeographic multipliers
+$h1: 2.441;
+$h2: 1.953;
+$h3: 1.563;
+$h4: 1.25;
+
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4 {
   font-family: $header-font-family;
-  line-height: $header-line-height;
-  margin: 0;
+  @include rem-fallback(margin, 1.414, 0, 0.5);
+  font-weight: inherit;
+  line-height: 1.2;
   text-rendering: optimizeLegibility; // Fix the character spacing for headings
 }
 
-h1 {
-  font-size: $base-font-size * 2.25; // 16 * 2.25 = 36px
+h1,
+.h1 {
+  @include rem-fallback(font-size, $base-font-size * $h1);
+  font-weight: 700;
+  margin-top: 0;
+  color: black;
 }
 
-h2 {
-  font-size: $base-font-size * 2; // 16 * 2 = 32px
+h2,
+.h2 {
+  @include rem-fallback(font-size, $base-font-size * $h2);
+  font-family: $secondary-font-family;
+  font-weight: 600;
+  color: $red;
+  font-weight: 300;
+  padding: 18px 0 12px 0;
 }
 
-h3 {
-  font-size: $base-font-size * 1.75; // 16 * 1.75 = 28px
+h3,
+.h3 {
+  @include rem-fallback(font-size, $base-font-size * $h3);
+  font-family: $secondary-font-family;
+  color: $dark-gray;
+  border-bottom: 1px solid $red;
+  font-weight: 300;
+  margin-bottom: 5px;
+  padding-top: 13px;
+  padding-bottom: 0;
+  line-height: 1;
 }
 
-h4 {
-  font-size: $base-font-size * 1.5; // 16 * 1.5 = 24px
+h4,
+.h4 {
+  @include rem-fallback(font-size, $base-font-size * $h4);
+  font-family: $secondary-font-family;
+  font-weight: 300;
+  margin-top: 0;
 }
 
-h5 {
-  font-size: $base-font-size * 1.25; // 16 * 1.25 = 20px
-}
+//For phones
+@include media($tiny-down) {
+  h1,
+  .display {
+    @include rem-fallback(font-size, $base-font-size * 1.602);
+  }
 
-h6 {
-  font-size: $base-font-size;
+  h2,
+  .call-out,
+  .sub-headline {
+    @include rem-fallback(font-size, $base-font-size * 1.424);
+  }
+
+  h3 {
+    @include rem-fallback(font-size, $base-font-size * 1.266);
+  }
+
+  h4 {
+    @include rem-fallback(font-size, $base-font-size * 1.125);
+  }
+
+  p,
+  li {
+    @include rem-fallback(font-size, $base-font-size);
+  }
 }
 
 p {
-  margin: 0 0 ($base-line-height * .5);
+  margin: 0 0 ($base-line-height * .75);
 }
 
 a {
@@ -51,9 +152,8 @@ a {
     color: $hover-link-color;
   }
 
-  &:active, &:focus {
+  &:active {
     color: $hover-link-color;
-    outline: none;
   }
 }
 
@@ -70,11 +170,13 @@ img {
   max-width: 100%;
 }
 
-blockquote {
-  border-left: 2px solid $base-border-color;
-  color: lighten($base-font-color, 15);
-  margin: $base-line-height 0;
-  padding-left: $base-line-height / 2;
+blockquote,
+blockquote p {
+  font-family: $secondary-font-family;
+  color: $red;
+  @include rem-fallback(font-size, $base-font-size * 1.2);
+  @include rem-fallback(margin, 0, 0, 0.8, 1.5);
+  font-style: italic;
 }
 
 cite {
@@ -85,3 +187,146 @@ cite {
     content: '\2014 \00A0';
   }
 }
+
+.call-out {
+  @extend .h2;
+  color: $base-font-color;
+  font-weight: 400;
+  margin: 0 0 $base-line-height 0;
+  text-align: center;
+
+  @include media($tiny-down) {
+    font-size: $base-font-size & 1.424;
+  }
+}
+
+.display {
+  @extend .h1;
+  font-weight: 600;
+  display: block;
+  line-height: 1;
+  margin-bottom: 0;
+}
+
+.sub-headline {
+  @extend .call-out;
+  display: block;
+  margin: 0;
+  font-weight: 400;
+  color: $red;
+}
+
+
+p,
+li {
+  font-size: $base-font-size;
+}
+
+.lead-text {
+  font-size: $base-font-size * 1.2;
+}
+
+.small-text {
+  font-size: $base-font-size * .75;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.light {
+  font-weight: 300;
+}
+
+// Fontawesome
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+
+// below here original Bitters styles
+// h1, h2, h3, h4, h5, h6 {
+//   font-family: $header-font-family;
+//   line-height: $header-line-height;
+//   margin: 0;
+//   text-rendering: optimizeLegibility; // Fix the character spacing for headings
+// }
+
+// h1 {
+//   font-size: $base-font-size * 2.25; // 16 * 2.25 = 36px
+// }
+
+// h2 {
+//   font-size: $base-font-size * 2; // 16 * 2 = 32px
+// }
+
+// h3 {
+//   font-size: $base-font-size * 1.75; // 16 * 1.75 = 28px
+// }
+
+// h4 {
+//   font-size: $base-font-size * 1.5; // 16 * 1.5 = 24px
+// }
+
+// h5 {
+//   font-size: $base-font-size * 1.25; // 16 * 1.25 = 20px
+// }
+
+// h6 {
+//   font-size: $base-font-size;
+// }
+
+// p {
+//   margin: 0 0 ($base-line-height * .5);
+// }
+
+// a {
+//   @include transition(color 0.1s linear);
+//   color: $base-link-color;
+//   text-decoration: none;
+
+//   &:hover {
+//     color: $hover-link-color;
+//   }
+
+//   &:active, &:focus {
+//     color: $hover-link-color;
+//     outline: none;
+//   }
+// }
+
+// hr {
+//   border-bottom: 1px solid $base-border-color;
+//   border-left: none;
+//   border-right: none;
+//   border-top: none;
+//   margin: $base-line-height 0;
+// }
+
+// img {
+//   margin: 0;
+//   max-width: 100%;
+// }
+
+// blockquote {
+//   border-left: 2px solid $base-border-color;
+//   color: lighten($base-font-color, 15);
+//   margin: $base-line-height 0;
+//   padding-left: $base-line-height / 2;
+// }
+
+// cite {
+//   color: lighten($base-font-color, 25);
+//   font-style: italic;
+
+//   &:before {
+//     content: '\2014 \00A0';
+//   }
+// }

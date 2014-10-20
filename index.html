@@ -4,16 +4,7 @@ title: Home
 description: This is a sample beta site for Federal natural resource revenues.
 ---
 
-
-
-<aside class="usa">
-  <div class="container">
-    <p>
-      An official website of the United States Government
-      <img src="{{ site.url }}static/img/us_flag_small.png" alt="U.S. Flag">
-    </p>
-  </div>
-</aside>
+{% include usa-bug.html %}
 
 <!-- vertical scroll nav -->
 <div id="scroll">
@@ -29,7 +20,7 @@ description: This is a sample beta site for Federal natural resource revenues.
     </div>
     <div id="third" class="scroll_item tooltip-item">&nbsp;
       <div class="tooltip">
-        <p>Where does the money go?</p>
+        <p>Where does money go?</p>
       </div>
     </div>
     <div id="fourth" class="scroll_item tooltip-item">&nbsp;
@@ -39,6 +30,7 @@ description: This is a sample beta site for Federal natural resource revenues.
     </div>
 </div>
 
+<!-- splash -->
 <section id="first1" class="splash">
   {% include nav.html %} 
   <div class="container">
@@ -49,7 +41,7 @@ description: This is a sample beta site for Federal natural resource revenues.
   </div>
   <div class="container">
     <div class="intro">
-      <p>The U.S. earns revenue on natural resources extracted from its lands. This is a major source of revenue for the country and for local municipalities. Find information on this sector here.</p>
+      <p>The U.S. earns revenue on natural resources extracted from its lands. This is a major source of revenue for the country and for local municipalities.</p>
       <img src="{{ site.url }}static/img/scroll-down.png" alt="You should scroll down. There is more to learn!" class="moreDown breathe">
       <p>Learn more by scrolling down.</p>
     </div>
@@ -57,11 +49,10 @@ description: This is a sample beta site for Federal natural resource revenues.
 </section>
 
 
-
 <main role="main" itemscope itemprop="mainContentOfSite">
 
-<!-- START Section 'Sectors' -->
-<section id="second1" class="section light-gray">
+<!-- Sectors -->
+<section id="second1" class="section">
   <div class="container">
 
     <div class="sectors">
@@ -83,9 +74,10 @@ description: This is a sample beta site for Federal natural resource revenues.
 
       <img src="{{ site.url }}static/img/icon_29006.svg" alt="Vertical ellipses" class="sectors-img">
       <p><strong>Other revenues.</strong> In 2013, Federal lands produced a wide variety of minerals. For example, it is estimated that about 2.4 million ounces of gold were produced from Federal lands in Nevada...<a href="{{ site.baseurl }}/sectors/" itemprop="url">more&#8594;</a></p>
-
     </div>
+
     <div class="sectors-chart aboutText pad50right">
+
       <h1>Explore Federal Natural Resource Revenues</h1>
       <div id="sector-revenue-pie-chart">
         <div id="pie-chart-center"></div>
@@ -93,26 +85,22 @@ description: This is a sample beta site for Federal natural resource revenues.
           <h4></h4>
         </div>
       </div>
+
       <div id="sector-revenue-bar-chart"></div>
-      
       <a href="javascript:javascript:barChart.filterAll();pieChart.filterAll();dc.redrawAll();">reset</a>
 
-
     </div>
+
     <div class="sectors-social">
       <img src="{{ site.url }}static/img/icon_4501.svg" alt="Download" class="share">
       <img src="{{ site.url }}static/img/icon_7584.svg" alt="Share" class="share">
     </div>
 
-  </div>
-</section>
-<!-- END Section 'Sectors' -->
-
-<section class="section break">
-<img class="down" src="{{ site.url }}static/img/scroll-down.png" alt="You should scroll down. There is more to learn!">
 </section>
 
-<!-- START Section 'Where Does the Money Go' -->
+{% include section-break.html %}
+
+<!-- Disbursement -->
 <section id="third1" class="section medium-gray disbursement">
   <div class="container">
     <div class="disbursement-intro">
@@ -163,53 +151,52 @@ description: This is a sample beta site for Federal natural resource revenues.
         </div>
       </div>
     </section>
-
     
     <div class="sectors-social">
       <img src="{{ site.url }}static/img/icon_4501.svg" alt="Download" class="share">
       <img src="{{ site.url }}static/img/icon_7584.svg" alt="Share" class="share">
     </div>
+
   </div>
 </section>
-<!-- END Section 'Where Does the Money Go' -->
 
-<section class="section break">
-<img class="down" src="{{ site.url }}static/img/scroll-down.png" alt="You should scroll down. There is more to learn!">
-</section>
+{% include section-break.html %}
 
-<!-- START Map Section 'How do natural resources become Federal revenue?' -->
-<section id="fourth1" class="section light-gray how">
+<!-- Map -->
+<section id="fourth1" class="section how">
+
   <div class="container">
-    <h1>How do natural resources become<br/> Federal revenue?</h1>
+    <h1>How do natural resources become Federal revenue?</h1>
     <p>If there are natural resources under (or even suspected of being under) Federal lands, the U.S. Department of the Interior grants leases to companies to explore for and extract these products to be sold.</p>
     <p>In return, part of the sales value is paid to the Federal government for the benefit of the American people. These are called “royalties.” There are other revenues involved, such as rents, fees, and penalties, but by far most of the money comes from these royalties.</p>
-    <h1 class="large">Explore natural resources by location</h1>
+    <h2>Explore natural resources by location</h2>
   </div>
+
   <div class="map-container">
       <div id='map'></div>
       <div id='map-info-pane' class='map-info-pane'></div>
       <div id='map-comodities-pane' class='map-comodities-pane'>
-        <a href='javascript:' class='oil-selected selected' data-value='oil' tabindex='0'>
+        <a href='javascript:' class='oil-selected selected' data-value='oil' tabindex='0' role="button" aria-pressed="true">
           <h1>Oil<sup> 1</sup></h1>
           <div class='comodities-rollover'>Oil means natural gas liquids. Have more info here on that and direct people to footnote for more info.</div>
         </a>
-        <a href='javascript:' class='ngl' tabindex='0'>
-          <h1>NGL<sup> 2</sup></h1>
+        <a href='javascript:' class='ngl' tabindex='0' role="button" aria-pressed="false">
+          <h1>Gas<sup> 2</sup></h1>
           <div class='comodities-rollover'>NGL means natural gas liquids. Have more info here on that and direct people to footnote for more info.</div>
         </a>
-        <a href='javascript:' class='coal' tabindex='0'>
+        <a href='javascript:' class='coal' tabindex='0' role="button" aria-pressed="false">
           <h1>Coal<sup> 2</sup></h1>
           <div class='comodities-rollover'>Coal means natural gas liquids. Have more info here on that and direct people to footnote for more info.</div>
         </a>
-        <a href='javascript:' class='other' tabindex='0'>
+        <a href='javascript:' class='other' tabindex='0' role="button" aria-pressed="false">
           <h1>Other<sup> 3</sup></h1>
           <div class='comodities-rollover'>Other means natural gas liquids. Have more info here on that and direct people to footnote for more info.</div>
         </a>
-        <a href='javascript:' class='wind' tabindex='0'>
+        <a href='javascript:' class='wind' tabindex='0' role="button" aria-pressed="false">
           <h1>Wind<sup> 4</sup></h1>
           <div class='comodities-rollover'>Wind means natural gas liquids. Have more info here on that and direct people to footnote for more info.</div>
         </a>
-        <a href='javascript:' class='geo' tabindex='0'>
+        <a href='javascript:' class='geo' tabindex='0' role="button" aria-pressed="false">
           <h1 class="small">Geothermal<sup> 5</sup></h1>
           <div class='comodities-rollover'>Geothermal means natural gas liquids. Have more info here on that and direct people to footnote for more info.</div>
         </a>
@@ -221,6 +208,7 @@ description: This is a sample beta site for Federal natural resource revenues.
         <div class="map-scale-max">$20000</div>
       </div>
   </div>
+
   <div class="container map-notes">
     <h1>Notes.</h1>
     <ol>
@@ -234,8 +222,8 @@ description: This is a sample beta site for Federal natural resource revenues.
       <li><span>Geothermal.</span> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi</li>
     </ol>
   </div>
+
 </section>
-<!-- END Map Section 'How do natural resources become Federal revenue?' -->
 
 </main>
 

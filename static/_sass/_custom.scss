@@ -125,12 +125,18 @@ ul.menu a.active li {
   top: 42%;
   right: 15px;
   z-index: 999;
+  display: none;
+  @include respond-to(small-up) {
+    display: block;
+  }
 }
 .scroll_item {
   border: 2px solid black;
+  background-color: white;
   width: 10px;
   height: 10px;
   margin: 10px;
+  border-radius: 50%;
   @include transition(all 0.3s ease);
 }
 .scroll_item:hover {
@@ -150,7 +156,7 @@ ul.menu a.active li {
   $tooltip-width: 160px;
   $tooltip-width: 10rem;
   $tooltip-arrow-width: 6px;
-  $tooltip-shadow: 0 1px 0 $dark-gray;
+  $tooltip-shadow: 1px 0 0 $dark-gray;
   $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
   position: relative;
   &:hover .tooltip {
@@ -158,15 +164,15 @@ ul.menu a.active li {
     visibility: visible;
   }
   .tooltip {
-    @include position(absolute, -9px 0 0 -160px);
+    @include position(absolute, -15px 0 0 -175px);
     @include box-sizing(border-box);
     background-color: $tooltip-background;
     color: $tooltip-color;
-    @include rem-fallback(font-size, 0.9);
+    @include rem-fallback(font-size, 0.8);
     line-height: 1.5;
     margin-right: 30px;
     opacity: 0;
-    @include rem-fallback(padding, 0.7, 0.4, 0.5, 0.4);
+    @include rem-fallback(padding, 0.6, 0.4, 0.5, 0.4);
     box-shadow: $tooltip-shadow;
     text-align: center;
     visibility: hidden;
@@ -179,12 +185,12 @@ ul.menu a.active li {
       margin-bottom: 0;
     }
     &:after {
-      @include position(absolute, 0 0 0 95%);
+      @include position(absolute, -2px 0 0 152px);
       border: $tooltip-arrow-width solid transparent;
       color: $tooltip-background;
       content: '►';
       text-shadow: $tooltip-shadow;
-      @include rem-fallback(font-size, 1.1);    
+      @include rem-fallback(font-size, 1);    
       pointer-events: none;
     }
   }
@@ -749,20 +755,24 @@ div.disbursement_bubble_rollover {
   > h1 {
     @include span-columns(12);
   }
-  > h1:first-of-type {
-    font-size: rem(26);
-    line-height: 1;
-    padding-bottom: 10px;
-  }
   p {
-    @include span-columns(6);
+    @include span-columns(12);
+    @include respond-to(small-up) { 
+      @include span-columns(6);
+      + p {
+        @include omega();
+      }
+    }
     margin-right: 1%;
     @include rem-fallback(font-size, 1);
     padding-left: 0;
     line-height: 1.2;
   }
   ol {
-    @include span-columns(5);
+    @include span-columns(12);
+    @include respond-to(small-up) { 
+      @include span-columns(5);
+    }
     list-style-type: decimal;
     @include rem-fallback(margin-left, 1);
     margin-top: 5px;
@@ -781,7 +791,7 @@ div.disbursement_bubble_rollover {
   margin-top: 50px;
   font-style: italic;
   h1 {
-    @include rem-fallback(font-size, 1å);
+    @include rem-fallback(font-size, 1);
     font-weight: 300;
     font-family: $base-font-family;
   }
@@ -793,6 +803,10 @@ div.disbursement_bubble_rollover {
   width: 100%;
 }
 .map-container {
+  margin-top: 85px;
+  @include respond-to(small-up) {
+    margin-top: 0;
+  }
   @include span-columns(12);
   position: relative;
   height: 400px;
@@ -812,14 +826,19 @@ div.disbursement_bubble_rollover {
 }
 .map-info-pane {
   position: absolute;
+  top: 399px;
+  right: 10px;
+  min-height: 50px;
+  width: 99%;
+  @include respond-to(small-up) {
+    top: 10px;
+    min-height: 50px;
+    min-width: 150px;
+    max-width: 200px;
+  }
   line-height: 1.1;
   padding: 10px;
-  top: 10px;
-  right: 10px;
   z-index: 10000;
-  min-height: 50px;
-  min-width: 150px;
-  max-width: 200px;
   background-color: white;
   border: 1px solid $medium-gray;
   border-radius: 3px;
@@ -886,9 +905,13 @@ div.disbursement_bubble_rollover {
 }
 .map-comodities-pane {
   position: absolute;
-  bottom: 10px;
+  top: -75px;
   left: 10px;
-  width: 150px;
+  width: 100%;
+  @include respond-to(small-up) {
+    top: 165px;
+    width: 150px;
+  }
   z-index: 998;
   > a {
     width: 75px;
@@ -1013,13 +1036,16 @@ div.disbursement_bubble_rollover {
   position: absolute;
   right: 10px;
   bottom: 35px;
+  background-color: white;
+  border: 1px solid $medium-gray;
+  padding: 3px;
+  border-radius: 3px;
   z-index: 999;
   h1 {
     font-family: $base-font-family;
-    font-size: rem(16);
+    @include rem-fallback(font-size, 1);
     line-height: 1;
     font-weight: 400;
-    padding-bottom: 4px;
   }
   div:first-of-type {
     width: 250px;

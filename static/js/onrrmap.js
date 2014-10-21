@@ -305,15 +305,15 @@ $('#map-comodities-pane>a').each(function(i){
           var revenueAmt = 0.0;
         }
         var revenueType = selected.capitalize();
-        var returnString ="<div>"+revenueType+" Revenue:<br />$"+revenueAmt.formatMoney(2,'.',',')+"</div>";
+        var returnString ="<div>"+revenueType+" Royalties:<br />$"+revenueAmt.formatMoney(2,'.',',')+"</div>";
         if (selected == 'oil' || selected == 'gas')
         {
           if (layer.feature.properties.leases)
           {
-            returnString +="<div>Active Leases: "+layer.feature.properties.leases.active+"</div>";
-            returnString +="<div>Total Leases: "+ layer.feature.properties.leases.total+"</div>";
-            returnString +="<aside><p><strong>Active leases</strong> are leased federal lands that are producing one or more commodities.</p>"+
-                            "<p><strong>Total leases</strong> include both active leases and leases that have been sold, but are not producing any commodities.</p></aside>";
+            returnString +="<div>Producing Leases: "+layer.feature.properties.leases.active+"</div>";
+            returnString +="<div>Non-producing Leases: "+ layer.feature.properties.leases.total+"</div>";
+            returnString +="<aside><p><strong>Producing leases</strong> are leased federal lands that are producing one or more commodities.</p>"+
+                            "<p><strong>Non-producing leases</strong> are leases that have been sold, but are not producing any commodities.</p></aside>";
           }
         }
         return returnString;

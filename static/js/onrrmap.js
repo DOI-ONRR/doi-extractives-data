@@ -1,59 +1,12 @@
 // var mapdataviz = L.mapbox.map('map', 'mhertzfeld.i8l68af5')
 //     .setView([37.8, -91], 4);
 var map_draw_init = false;
-var statesDrawOrder = ["Alabama", 
-                          "Alaska", 
-                          "Arizona", 
-                          "Arkansas", 
-                          
-                           
-                          "Connecticut", 
-                          "Delaware",
-                          "District of Columbia", 
-                          "Florida", 
-                          "Georgia", 
-                          "Hawaii", 
-                          "Idaho", 
-                          "Illinois", 
-                          "Indiana", 
-                          "Iowa", 
-                          "Kansas", 
-                          "Kentucky", 
-                          "Louisiana", 
-                          "Maine", 
-                          "Maryland", 
-                          "Massachusetts", 
-                          "Michigan", 
-                          "Minnesota", 
-                          "Mississippi", 
-                          "Missouri", 
-                          "Montana", 
-                          "Nebraska", 
-                          "Oregon",
-                          "New Hampshire", 
-                          "New Jersey", 
-                          "New York",
-                          "North Carolina", 
-                          "North Dakota",
-                          "Ohio", 
-                          "Oklahoma", 
-                          "Pennsylvania", 
-                          "Rhode Island",
-                          "South Carolina",
-                          "South Dakota",
-                          "Tennessee", 
-                          "Texas", 
-                          "Vermont", 
-                          "Virginia", 
-                          "Washington", 
-                          "West Virginia", 
-                          "Wisconsin", 
-                          "Wyoming",
-                          "Utah",
-                          "Nevada", 
-                          "California", 
-                          "Colorado",
-                          "New Mexico"];
+var statesDrawOrder = ["Alabama","Alaska","Arizona", "Arkansas", "Connecticut", "Delaware","District of Columbia", 
+  "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", 
+  "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", 
+  "Oregon","New Hampshire", "New Jersey", "New York","North Carolina", "North Dakota","Ohio", "Oklahoma", 
+  "Pennsylvania", "Rhode Island","South Carolina","South Dakota","Tennessee", "Texas", "Vermont", "Virginia", 
+  "Washington", "West Virginia", "Wisconsin", "Wyoming","Utah","Nevada", "California", "Colorado","New Mexico"];
 var atlanticDrawOrder = [ 'North Atlantic','Mid-Atlantic' ,'South Atlantic','Straights of Florida' ];
 var gomDrawOrder = ['Eastern Gulf of Mexico','Central Gulf of Mexico','Western Gulf of Mexico']
 
@@ -140,7 +93,7 @@ $('#map-comodities-pane>a').each(function(i){
     onEachFeature: onEachFeature
   }).addTo(mapdataviz);
 
-  var AKLayer = L.geoJson(AK_Plan_area_webMerc,{
+  var AKLayer = L.geoJson(AK_NAD83_simp,{
     onEachFeature: onEachFeature
   }).addTo(mapdataviz);
 
@@ -149,7 +102,7 @@ $('#map-comodities-pane>a').each(function(i){
   setRange(statesData);
   setRange(ATL_NAD83_simp);
   setRange(PC_NAD83_simp);
-  setRange(AK_Plan_area_webMerc);
+  setRange(AK_NAD83_simp);
 
 
   dataLayers.push(statesLayer);

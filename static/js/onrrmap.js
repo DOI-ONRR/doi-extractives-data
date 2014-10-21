@@ -1,62 +1,14 @@
 // var mapdataviz = L.mapbox.map('map', 'mhertzfeld.i8l68af5')
 //     .setView([37.8, -91], 4);
 var map_draw_init = false;
-var statesDrawOrder = ["Alabama", 
-                          "Alaska", 
-                          "Arizona", 
-                          "Arkansas", 
-                          "California", 
-                           
-                          "Connecticut", 
-                          "Delaware",
-                          "District of Columbia", 
-                          "Florida", 
-                          "Georgia", 
-                          "Hawaii", 
-                          "Idaho", 
-                          "Illinois", 
-                          "Indiana", 
-                          "Iowa", 
-                          "Kansas", 
-                          "Kentucky", 
-                          "Louisiana", 
-                          "Maine", 
-                          "Maryland", 
-                          "Massachusetts", 
-                          "Michigan", 
-                          "Minnesota", 
-                          "Mississippi", 
-                          "Missouri", 
-                          "Montana", 
-                          "Nebraska", 
-                          "Oregon",
-                          
-                          
-                          "New Hampshire", 
-                          "New Jersey", 
-                          
-                          "New York",
-                          "North Carolina", 
-                          "North Dakota",
-                          "Ohio", 
-                          "Oklahoma", 
-                          "Pennsylvania", 
-                          "Rhode Island",
-                          "South Carolina",
-                          "South Dakota",
-                          "Tennessee", 
-                          "Texas", 
-                           
-                          "Vermont", 
-                          "Virginia", 
-                          "Washington", 
-                          "West Virginia", 
-                          "Wisconsin", 
-                          "Wyoming",
-                          "Utah",
-                          "Nevada", 
-                          "Colorado",
-                          "New Mexico"];
+var statesDrawOrder = ["Alabama","Alaska","Arizona", "Arkansas", "Connecticut", "Delaware","District of Columbia", 
+  "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", 
+  "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", 
+  "Oregon","New Hampshire", "New Jersey", "New York","North Carolina", "North Dakota","Ohio", "Oklahoma", 
+  "Pennsylvania", "Rhode Island","South Carolina","South Dakota","Tennessee", "Texas", "Vermont", "Virginia", 
+  "Washington", "West Virginia", "Wisconsin", "Wyoming","Utah","Nevada", "California", "Colorado","New Mexico"];
+var atlanticDrawOrder = [ 'North Atlantic','Mid-Atlantic' ,'South Atlantic','Straights of Florida' ];
+var gomDrawOrder = ['Eastern Gulf of Mexico','Central Gulf of Mexico','Western Gulf of Mexico']
 
 
 var mapdataviz = L.map('map', {
@@ -127,32 +79,46 @@ $('#map-comodities-pane>a').each(function(i){
     onEachFeature : onEachFeature
   }).addTo(mapdataviz);
 
-  var gomLayer = L.geoJson(GOMNAD_dissolve,{
+  GOM_NAD27_simp = sortGeoJson(GOM_NAD27_simp, gomDrawOrder);
+  var gomLayer = L.geoJson(GOM_NAD27_simp,{
     onEachFeature: onEachFeature
   }).addTo(mapdataviz);
 
-  var atlanticLayer = L.geoJson(ATLNAD83,{
+  ATL_NAD83_simp = sortGeoJson(ATL_NAD83_simp ,atlanticDrawOrder);
+  var atlanticLayer = L.geoJson(ATL_NAD83_simp,{
     onEachFeature: onEachFeature
   }).addTo(mapdataviz);
 
-  var pacificLayer = L.geoJson(PCNAD83,{
+  var pacificLayer = L.geoJson(PC_NAD83_simp,{
+    onEachFeature: onEachFeature
+  }).addTo(mapdataviz);
+
+  var AKLayer = L.geoJson(AK_NAD83_simp,{
     onEachFeature: onEachFeature
   }).addTo(mapdataviz);
 
 
-  setRange(GOMNAD_dissolve);
+  setRange(GOM_NAD27_simp);
   setRange(statesData);
-  setRange(ATLNAD83);
-  setRange(PCNAD83);
+  setRange(ATL_NAD83_simp);
+  setRange(PC_NAD83_simp);
+  setRange(AK_NAD83_simp);
+
 
   dataLayers.push(statesLayer);
   dataLayers.push(gomLayer);
   dataLayers.push(atlanticLayer);
   dataLayers.push(pacificLayer);
+  dataLayers.push(AKLayer);
 
   setVariable(variables[0])
 
-
+  function loadGeoJson(data, map)
+  {
+    return  L.geoJson(data, {
+      onEachFeature: onEachFeature
+    }).addTo(map);
+  }
   function setRange(data){
     for (var i=0; i<data.features.length; i++)
     {

@@ -20,12 +20,12 @@ description: This is a sample beta site for Federal natural resource revenues.
     </div>
     <div id="third" class="scroll_item tooltip-item">&nbsp;
       <div class="tooltip">
-        <p>Where does money go?</p>
+        <p>Explore by location</p>
       </div>
     </div>
     <div id="fourth" class="scroll_item tooltip-item">&nbsp;
       <div class="tooltip">
-        <p>Explore by location</p>
+        <p>Where does money go?</p>
       </div>
     </div>
 </div>
@@ -35,15 +35,17 @@ description: This is a sample beta site for Federal natural resource revenues.
   {% include nav.html %} 
   <div class="container">
     <div class="title">
-      <h1>Natural Resource Revenue</h1>
+      <h1>Natural Resource Revenues</h1>
       <h1><span class="small">from</span> U.S. Federal Lands</h1>
     </div>
   </div>
   <div class="container">
     <div class="intro">
       <p>The U.S. earns revenue on natural resources extracted from its lands. This is a major source of revenue for the country and for local municipalities.</p>
+      <p>Learn about U.S. natural resource sectors, how resources become revenues, and where the money goes. Go on, scroll down.
       <img src="{{ site.url }}static/img/scroll-down.png" alt="You should scroll down. There is more to learn!" class="moreDown breathe">
-      <p>Learn more by scrolling down.</p>
+
+      </p>
     </div>
   </div>
 </section>
@@ -58,27 +60,28 @@ description: This is a sample beta site for Federal natural resource revenues.
     <div class="sectors">
       <h1>Revenue from the sale of natural resources on Federal lands totaled
       <span class="sectors-big-text">$97.5</span> billion between 2003 to 2013.</h1>
+
       <h2>Learn about U.S. natural resources:</h2>
       
       <img src="{{ site.url }}static/img/icon_375.svg" alt="Barrel of oil" class="sectors-img">
-      <p><strong>Oil.</strong> Crude oil is produced in 31 states and U.S. coastal waters. In 2012, 61% of U.S. crude oil production came from five states...<a href="{{ site.baseurl }}/sectors/" itemprop="url">more&#8594;</a></p>
+      <p><strong>Oil.</strong> Crude oil is produced in 31 states and U.S. coastal waters. In 2012, 61% of&#133; <a href="{{ site.baseurl }}/sectors/" itemprop="url">more&#8594;</a></p>
 
       <img src="{{ site.url }}static/img/icon_12555.svg" alt="Flame" class="sectors-img">
-      <p><strong>Natural gas.</strong> In 2012, about 25% of energy used in the U. S. came from natural gas, and the U.S. used 25.46 trillion cubic feet (Tcf) of natural gas...<a href="{{ site.baseurl }}/sectors/" itemprop="url">more&#8594;</a></p>
+      <p><strong>Natural gas.</strong> In 2012, about 25% of energy used in the U. S. came from natural gas, and the&#133; <a href="{{ site.baseurl }}/sectors/" itemprop="url">more&#8594;</a></p>
       
       <img src="{{ site.url }}static/img/icon_5846.svg" alt="Lump of coal" class="sectors-img">
-      <p><strong>Coal.</strong> In 2012, 1,016.4 million short tons of coal were mined in 25 states. Wyoming mined the most coal, followed by...<a href="{{ site.baseurl }}/sectors/" itemprop="url">more&#8594;</a></p>
+      <p><strong>Coal.</strong> In 2012, 1,016.4 million short tons of coal were mined in 25 states. Wyoming&#133; <a href="{{ site.baseurl }}/sectors/" itemprop="url">more&#8594;</a></p>
 
       <img src="{{ site.url }}static/img/icon_2070.svg" alt="Geothermal plant" class="sectors-img">
-      <p><strong>Geothermal.</strong> In 2013, U.S. geothermal power plants produced about 17 billion kilowatthours (kWh), 0.4% of total U.S. electricity generation...<a href="{{ site.baseurl }}/sectors/" itemprop="url">more&#8594;</a></p>
+      <p><strong>Geothermal.</strong> In 2013, U.S. geothermal power plants produced about 17 billion kilowatthours&#133; <a href="{{ site.baseurl }}/sectors/" itemprop="url">more&#8594;</a></p>
 
       <img src="{{ site.url }}static/img/icon_29006.svg" alt="Vertical ellipses" class="sectors-img">
-      <p><strong>Other revenues.</strong> In 2013, Federal lands produced a wide variety of minerals. For example, it is estimated that about 2.4 million ounces of gold were produced from Federal lands in Nevada...<a href="{{ site.baseurl }}/sectors/" itemprop="url">more&#8594;</a></p>
+      <p><strong>Other revenues.</strong> In 2013, Federal lands produced a wide variety of minerals. For example&#133; <a href="{{ site.baseurl }}/sectors/" itemprop="url">more&#8594;</a></p>
     </div>
 
     <div class="sectors-chart aboutText pad50right">
 
-      <h1>Explore Federal Natural Resource Revenues</h1>
+      <h1>Revenues by Sector</h1>
       <div id="sector-revenue-pie-chart">
         <div id="pie-chart-center"></div>
         <div id="pie-chart-center-text">
@@ -98,17 +101,137 @@ description: This is a sample beta site for Federal natural resource revenues.
 
 </section>
 
-{% include section-break.html %}
+<!-- Map -->
+<section id="third1" class="section map-frame">
+  <div class="container">
+    <h1>How do natural resources become Federal revenue?</h1>
+    <div class="intro">
+      <p>If there are natural resources under (or even suspected of being under) approved Federal lands, the U.S. Department of the Interior or the U.S. Department of Agriculture grants leases to explore for and extract these products for sale.</p>
+      <p>In return, part of the sales value for many commodities is paid to the Federal government for the benefit of the American people. These are called “royalties.” There are other revenues involved, such as rents, fees, and penalties, but by far most of the money comes from these royalties.</p>
+    </div>
+    <div class="container viz-title">
+      <h1>Resource royalties by location</h1>
+    </div>
+  </div>
+</section>
+
+<section class="section how">
+  <div class="map-container">
+      <div id='map'></div>
+      <div id='map-info-pane' class='map-info-pane'></div>
+      
+      <div id='map-comodities-pane' class='map-comodities-pane'>
+
+        <a href='javascript:' class='oil' data-value='oil' tabindex='0' role="button" aria-pressed="true">
+          <svg class="eiti-icon-oil"><use xlink:href="{{ site.url }}static/fonts/EITI/icons.svg#eiti-icon-oil"></use></svg>
+          <div class="tooltip-item">
+          <h1>Oil<sup> 1</sup></h1>
+            <!-- <div class="tooltip">
+              <p>Includes various crude oil products such as condensate, drip and scrubber condensate, and fuel oil.</p>
+            </div> -->
+          </div>
+        </a>
+
+        <a href='javascript:' class='ngl' tabindex='0' role="button" aria-pressed="false">
+          <svg class="eiti-icon-gas"><use xlink:href="{{ site.url }}static/fonts/EITI/icons.svg#eiti-icon-gas"></use></svg>
+          <div class="tooltip-item">
+          <h1>Gas<sup> 2</sup></h1>
+            <!-- <div class="tooltip">
+              <p>Gas includes X, Y, and Z. Have more info here on that and direct people to footnote for more info.</p>
+            </div> -->
+          </div>
+        </a>
+
+        <a href='javascript:' class='coal' tabindex='0' role="button" aria-pressed="false">
+          <svg class="eiti-icon-coal"><use xlink:href="{{ site.url }}static/fonts/EITI/icons.svg#eiti-icon-coal"></use></svg>
+          <div class="tooltip-item">
+          <h1>Coal<sup> 2</sup></h1>
+            <!-- <div class="tooltip">
+              <p>Coal includes X, Y, and Z. Have more info here on that and direct people to footnote for more info.</p>
+            </div> -->
+          </div>
+        </a>
+
+        <a href='javascript:' class='other' tabindex='0' role="button" aria-pressed="false">
+          <svg class="eiti-icon-other"><use xlink:href="{{ site.url }}static/fonts/EITI/icons.svg#eiti-icon-other"></use></svg>
+          <div class="tooltip-item">
+          <h1>Other<sup> 3</sup></h1>
+            <!-- <div class="tooltip">
+              <p>Other includes X, Y, and Z. Have more info here on that and direct people to footnote for more info.</p>
+            </div> -->
+          </div>
+        </a>
+
+        <a href='javascript:' class='wind' tabindex='0' role="button" aria-pressed="false">
+          <svg class="eiti-icon-wind"><use xlink:href="{{ site.url }}static/fonts/EITI/icons.svg#eiti-icon-wind"></use></svg>
+          <div class="tooltip-item">
+          <h1>Wind<sup> 4</sup></h1>
+            <!-- <div class="tooltip">
+              <p>Wind includes X, Y, and Z. Have more info here on that and direct people to footnote for more info.</p>
+            </div> -->
+          </div>
+        </a>
+
+        <a href='javascript:' class='geo' tabindex='0' role="button" aria-pressed="false">
+          <svg class="eiti-icon-geo"><use xlink:href="{{ site.url }}static/fonts/EITI/icons.svg#eiti-icon-geo"></use></svg>
+          <div class="tooltip-item">
+            <h1 class="small">Geothermal<sup> 5</sup></h1>
+            <!-- <div class="tooltip">
+              <p>Geothermal includes X, Y, and Z. Have more info here on that and direct people to footnote for more info.</p>
+            </div> -->
+          </div>
+        </a>
+
+      </div>
+
+      <div id='map-scale-pane'>
+        <h1>Royalties</h1>
+        <div></div>
+        <div class="map-scale-min">$1000</div>
+        <div class="map-scale-max">$20000</div>
+      </div>
+  </div>
+
+  <div class="container map-notes">
+    <h1>Map notes.</h1>
+    <ol>
+      <li><span>Oil.</span> Includes various crude oil products such as condensate, drip and scrubber condensate, and fuel oil.</li>
+      <li><span>Gas.</span> Includes various natural gas products such as processed and unprocessed gas, nitrogen, flash gas, fuel gas, and coal bed methane.</li>
+      <li><span>Coal.</span> Includes various processed and unprocessed coal products such as anthracite, bituminous, subbituminous, and lignite.</li>
+    </ol>
+    <ol start="4">
+      <li><span>Other.</span> Includes a wide variety of solid mineral and other products such as copper, zinc, tar sands, clay, borax, and potassium.</li>
+      <li><span>Wind.</span> Includes bonus and rental payments from offshore wind turbine projects.</li>
+      <li><span>Geothermal.</span> Includes royalties from geothermal electrical generation and the resulting byproducts.</li>
+    </ol>
+  </div>
+
+</section>
+
 
 <!-- Disbursement -->
-<section id="third1" class="section medium-gray disbursement">
+<section id="fourth1" class="section disbursement-frame">
   <div class="container">
-    <div class="disbursement-intro">
+    <h1>Where do these revenues go?</h1>
+    <div class="intro">
+      <p>The answer is: <strong>it depends</strong></p>
+      <p>Laws treat revenues from offshore natural resources and onshore natural resources differently. There are set percentages and amounts from each that go certain places every year.</p>
+      <p>Laws also treat different commodities differently. For example, for oil and gas, Federal and local governments get royalties that are a percentage of sales. For many minerals such as gold, copper and silver, the governments get mining claim fees but no ongoing royalties.</p>
+    </div>
+    <div class="container viz-title">
+      <h1>Oil &amp; Gas Revenue Flow</h1>
+    </div>
+  </div>
+</section>
+
+<section class="section medium-gray disbursement">
+  <div class="container">
+    <!-- <div class="disbursement-intro">
       <h1>So where do these revenues go?</h1>
       <h2><span>The answer is</span><br/>
       <span>it depends.</span>
       <span>Laws treat revenues from offshore natural resources and onshore natural resources differently. There are set percentages and amounts from each that go certain places every year.</span></h2>
-    </div>
+    </div> -->
 
     <section class="bubbles">
       <div class="offshore">
@@ -160,109 +283,7 @@ description: This is a sample beta site for Federal natural resource revenues.
   </div>
 </section>
 
-{% include section-break.html %}
 
-<!-- Map -->
-<section id="fourth1" class="section how">
-
-  <div class="container">
-    <h1>How do natural resources become Federal revenue?</h1>
-    <p>If there are natural resources under (or even suspected of being under) Federal lands, the U.S. Department of the Interior grants leases to companies to explore for and extract these products to be sold.</p>
-    <p>In return, part of the sales value is paid to the Federal government for the benefit of the American people. These are called “royalties.” There are other revenues involved, such as rents, fees, and penalties, but by far most of the money comes from these royalties.</p>
-    <h2>Explore natural resources by location</h2>
-  </div>
-
-  <div class="map-container">
-      <div id='map'></div>
-      <div id='map-info-pane' class='map-info-pane'></div>
-      
-      <div id='map-comodities-pane' class='map-comodities-pane'>
-
-        <a href='javascript:' class='oil' data-value='oil' tabindex='0' role="button" aria-pressed="true">
-          <svg class="eiti-icon-oil"><use xlink:href="{{ site.url }}static/fonts/EITI/icons.svg#eiti-icon-oil"></use></svg>
-          <div class="tooltip-item">
-          <h1>Oil<sup> 1</sup></h1>
-            <div class="tooltip">
-              <p>Oil includes X, Y, and Z. Have more info here on that and direct people to footnote for more info.</p>
-            </div>
-          </div>
-        </a>
-
-        <a href='javascript:' class='ngl' tabindex='0' role="button" aria-pressed="false">
-          <svg class="eiti-icon-gas"><use xlink:href="{{ site.url }}static/fonts/EITI/icons.svg#eiti-icon-gas"></use></svg>
-          <div class="tooltip-item">
-          <h1>Gas<sup> 2</sup></h1>
-            <div class="tooltip">
-              <p>Gas includes X, Y, and Z. Have more info here on that and direct people to footnote for more info.</p>
-            </div>
-          </div>
-        </a>
-
-        <a href='javascript:' class='coal' tabindex='0' role="button" aria-pressed="false">
-          <svg class="eiti-icon-coal"><use xlink:href="{{ site.url }}static/fonts/EITI/icons.svg#eiti-icon-coal"></use></svg>
-          <div class="tooltip-item">
-          <h1>Coal<sup> 2</sup></h1>
-            <div class="tooltip">
-              <p>Coal includes X, Y, and Z. Have more info here on that and direct people to footnote for more info.</p>
-            </div>
-          </div>
-        </a>
-
-        <a href='javascript:' class='other' tabindex='0' role="button" aria-pressed="false">
-          <svg class="eiti-icon-other"><use xlink:href="{{ site.url }}static/fonts/EITI/icons.svg#eiti-icon-other"></use></svg>
-          <div class="tooltip-item">
-          <h1>Other<sup> 3</sup></h1>
-            <div class="tooltip">
-              <p>Other includes X, Y, and Z. Have more info here on that and direct people to footnote for more info.</p>
-            </div>
-          </div>
-        </a>
-
-        <a href='javascript:' class='wind' tabindex='0' role="button" aria-pressed="false">
-          <svg class="eiti-icon-wind"><use xlink:href="{{ site.url }}static/fonts/EITI/icons.svg#eiti-icon-wind"></use></svg>
-          <div class="tooltip-item">
-          <h1>Wind<sup> 4</sup></h1>
-            <div class="tooltip">
-              <p>Wind includes X, Y, and Z. Have more info here on that and direct people to footnote for more info.</p>
-            </div>
-          </div>
-        </a>
-
-        <a href='javascript:' class='geo' tabindex='0' role="button" aria-pressed="false">
-          <svg class="eiti-icon-geo"><use xlink:href="{{ site.url }}static/fonts/EITI/icons.svg#eiti-icon-geo"></use></svg>
-          <div class="tooltip-item">
-            <h1 class="small">Geothermal<sup> 5</sup></h1>
-            <div class="tooltip">
-              <p>Geothermal includes X, Y, and Z. Have more info here on that and direct people to footnote for more info.</p>
-            </div>
-          </div>
-        </a>
-
-      </div>
-
-      <div id='map-scale-pane'>
-        <h1>Royalties</h1>
-        <div></div>
-        <div class="map-scale-min">$1000</div>
-        <div class="map-scale-max">$20000</div>
-      </div>
-  </div>
-
-  <div class="container map-notes">
-    <h1>Notes.</h1>
-    <ol>
-      <li><span>Oil.</span> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi</li>
-      <li><span>NGL.</span> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi</li>
-      <li><span>Coal.</span> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi</li>
-    </ol>
-    <ol start="4">
-      <li><span>Other.</span> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi</li>
-      <li><span>Wind.</span> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi</li>
-      <li><span>Geothermal.</span> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi</li>
-    </ol>
-  </div>
-
-</section>
 
 </main>
 

@@ -223,10 +223,13 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
     font-family: Lato, sans-serif;
   }
 }
+
 .splash {
   padding: 18px 0px 0px 0px;
-  border-bottom: 6px solid rgba(0, 0, 0, 0.3);
-  background: url(../img/oil-pump.jpg) no-repeat center center fixed;
+  border-bottom: $section-border;
+  min-width: 100%;
+  min-height: 100%;
+  background: url(../img/oil-pump.jpg) no-repeat 100% 100% fixed;
   @include prefixer(background-size, cover, webkit moz o spec);
   color: white;
   .title {
@@ -272,27 +275,70 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
       margin-bottom: 10px;
     }
   }
-  .intro {
-    @include span-columns(9);
-    background-color: transparentize(black, 0.55);
-    margin-left: 20px;
-    margin-bottom: 250px;
-    padding: 20px 50px 15px 30px;
-    p {
-      @include rem-fallback(font-size, $base-font-size * 1.2);
-      line-height: 1.3;
-    }
-    a {
-      color: white;
-    }
-  }
   .small {
     @include small-type(2.16);
   }
 }
+.intro {
+  @include span-columns(9);
+  background-color: transparentize(black, 0.55);
+  margin-left: 20px;
+  margin-bottom: 250px;
+  padding: 20px 50px 15px 30px;
+  color: white;
+  p {
+    @include rem-fallback(font-size, $base-font-size * 1.28);
+    line-height: 1.35;
+  }
+  a {
+    color: white;
+  }
+}
+
+.map-frame {
+  padding: 100px 0 100px 0;
+  background: url(../img/fall-outside-denver.jpg) no-repeat 100% 100%;
+  background-size: cover;
+  border-top: $section-border;
+  h1 {
+    padding-top: 30px;
+    text-shadow: 1px 1px 2px $light-gray;
+  }
+  .intro {
+    margin-bottom: 200px;
+  }
+}
+
+.disbursement-frame {
+  padding: 100px 0 100px 0;
+  background: url(../img/salton-sea.jpg) no-repeat 100% 100%;
+  background-size: cover;
+  border-top: $section-border;
+  h1 {
+    padding-top: 30px;
+    text-shadow: 1px 1px 2px $light-gray;
+  }
+  .intro {
+    margin-bottom: 200px;
+  }
+}
+
+.viz-title {
+  position: absolute;
+  margin-top: 35%;
+  z-index: 10;
+  h1 {
+    @extend .h2;
+    color: white;
+    background-color: $red;
+    padding: 10px;
+    text-shadow: none;
+  }
+}
+
 .moreDown {
   width: 30px;
-  float: left;
+  float: right;
   margin: -5px 4px auto -14px;
 }
 @-webkit-keyframes breathe {
@@ -763,6 +809,8 @@ div.disbursement_bubble_rollover {
 //============================================
 //how do natural resources become Federal revenue?
 .how {
+  padding-top: 0;
+  background-color: #f5e5e4;
   > h1 {
     @include span-columns(12);
   }
@@ -798,13 +846,16 @@ div.disbursement_bubble_rollover {
   }
 }
 .map-notes {
-  color: $dark-gray;
+  color: black;
   margin-top: 50px;
   font-style: italic;
   h1 {
-    @include rem-fallback(font-size, 1);
+    @include rem-fallback(font-size, 0.8);
     font-weight: 300;
     font-family: $base-font-family;
+  }
+  ol li {
+    @include rem-fallback(font-size, 0.8);
   }
 }
 #map {
@@ -820,7 +871,7 @@ div.disbursement_bubble_rollover {
   }
   @include span-columns(12);
   position: relative;
-  height: 400px;
+  height: 600px;
   margin-bottom: 15px;
 }
 .map-legend .swatch {

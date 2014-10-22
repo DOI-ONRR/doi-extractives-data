@@ -39,7 +39,7 @@
 
 - name: ONRR
   full: Office of Natural Resources Revenue
-  mission: "Mission: to collect, disburse, and verify Federal and Indian energy and other natural resource revenues on behalf of all Americans."
+  mission: "ONRR is responsible for the efficient, timely, and accurate collection and disbursement of all royalty payments, rentals, bonuses, fines, penalties, assessments, and other revenue due the Federal Government, American Indian Tribes and allottees, States and the American people from the leasing and production of natural resources from Federal and Indian lands onshore and the Outer Continental Shelf."
   mark: static/img/marks/DOI-mark.png
   homepage: http://www.onrr.gov/
 

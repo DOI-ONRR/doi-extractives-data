@@ -2,8 +2,8 @@
 # contributing to this site
 
 - name: BIA
-  full: Indian Affairs
-  mission: "Indian Affairs fulfills Indian trust responsibilities; promotes self-determination on behalf of 566 federally recognized Indian tribes; funds compacts and contracts to support natural resource education, law enforcement, and social service programs that are delivered by tribes; operates 182 elementary and secondary schools and dormitories, providing educational services to 42,000 students in 23 states; supports 29 tribally controlled community colleges, universities, and post-secondary schools. <em>Note: Indian Affairs includes the Bureau of Indian Affairs and the <a href='http://www.bie.edu/'>Bureau of Indian Education</a>.</em>"
+  full: Bureau of Indian Affairs
+  mission: "Indian Affairs fulfills Indian trust responsibilities; promotes self-determination on behalf of 566 federally recognized Indian tribes; and funds compacts and contracts to support natural resource education, law enforcement, and social service programs that are delivered by tribes."
   mark: static/img/marks/BIA-mark.svg
   homepage: http://www.bia.gov/
 

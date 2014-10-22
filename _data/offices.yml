@@ -39,7 +39,7 @@
 
 - name: ONRR
   full: Office of Natural Resources Revenue
-  mission: "ONRR is responsible for the efficient, timely, and accurate collection and disbursement of all royalty payments, rentals, bonuses, fines, penalties, assessments, and other revenue due the Federal Government, American Indian Tribes and allottees, States and the American people from the leasing and production of natural resources from Federal and Indian lands onshore and the Outer Continental Shelf."
+  mission: "ONRR is responsible for the efficient, timely, and accurate collection and disbursement of all royalty payments, rentals, bonuses, fines, penalties, assessments, and other revenue due the Federal Government, American Indian Tribes and allottees, States and the American people from the leasing and production of natural resources from Federal and Indian lands onshore and the Outer Continental Shelf. Every American benefits from these revenues, either directly through payments to tribes and Indian mineral owners or indirectly through contributions to the Historic Preservation Fund, the Land and Water Conservation Fund, the Reclamation Fund, and disbursements to States and the General Fund of the U.S. Treasury."
   mark: static/img/marks/DOI-mark.png
   homepage: http://www.onrr.gov/
 
@@ -57,7 +57,7 @@
 
 - name: USGS
   full: United States Geological Survey
-  mission: "The USGS serves the Nation by providing reliable scientific information to describe and understand the Earth; minimize loss of life and property from natural disasters; manage water, biological, energy, and mineral resources; and enhance and protect our quality of life. It conducts scientific research in ecosystems, climate and land use change, mineral assessments, environmental health, and water resources to inform effective decision making and planning; produces information to increase understanding of natural hazards such as earthquakes, volcanoes, and landslides; conducts research on oil, gas, and alternative energy potential, production, consumption, and environmental effects; leads the effort on climate change science research for the Department of the Interior; and provides access to natural science information to support decisions about how to respond to natural risks and manage natural resources"
+  mission: "The USGS serves the Nation by providing reliable scientific information to describe and understand the Earth; minimize loss of life and property from natural disasters; manage water, biological, energy, and mineral resources; and enhance and protect our quality of life. It conducts scientific research in ecosystems, climate and land use change, mineral assessments, environmental health, and water resources to inform effective decision making and planning; produces information to increase understanding of natural hazards such as earthquakes, volcanoes, and landslides; conducts research on oil, gas, and alternative energy potential, production, consumption, and environmental effects; leads the effort on climate change science research for the Department of the Interior; and provides access to natural science information to support decisions about how to respond to natural risks and manage natural resources."
   mark: static/img/marks/USGS-mark.svg
   homepage: http://www.usgs.gov/
 

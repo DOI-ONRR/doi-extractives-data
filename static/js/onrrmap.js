@@ -200,7 +200,7 @@ $('#map-comodities-pane>a').each(function(i){
 
   function mousemove(e) {
       var layer = e.target;
-
+      setStrokeWeight(layer,'3.0');
       var Revenue_String = (function(){
         var selected; 
         $('#map-comodities-pane a').each(function(){
@@ -238,6 +238,8 @@ $('#map-comodities-pane>a').each(function(i){
 
   function mouseout(e) {
       statesLayer.resetStyle(e.target);
+      var layer = e.target;
+      setStrokeWeight(layer,'0.5')
       closeTooltip = window.setTimeout(function() {
           mapdataviz.closePopup();
       }, 100);
@@ -278,6 +280,7 @@ $('#map-comodities-pane>a').each(function(i){
 
       var layerColor = $('path',$(this)).attr('fill');
       var depth = Math.round(getColorPercent(layerColor,hues[1],hues[0]) * maxDepth);
+      $(this).attr('data-3d-layers','heightIdentifier'+index);
       while(count < depth && $('path', $(this)).attr('fill-opacity') > 0)
       {
         $(this).clone()
@@ -359,6 +362,15 @@ function isScrolledIntoView(elem)
     if ($(elem).offset().top < $(window).scrollTop() + 10)
       return true;
     return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+}
+
+function setStrokeWeight(layer,weight){
+  // layer.setStyle({
+  //   weight: 3.0
+  // });
+  $("g[data-3d-layers='"+$(layer._container).attr('data-3d-layers')+"'] path").each(function(){
+      $(this).attr('stroke-width',weight);
+    });
 }
   
   

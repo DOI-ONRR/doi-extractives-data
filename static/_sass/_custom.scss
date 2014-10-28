@@ -326,9 +326,10 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
   }
 }
 
+$section-margin-top: 40px;
 .viz-title {
   position: absolute;
-  margin-top: 35%;
+  margin-top: -$section-margin-top - ($section-margin-top * 1.2);
   z-index: 10;
   h1 {
     @extend .h2;
@@ -337,6 +338,12 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
     padding: 10px;
     text-shadow: none;
   }
+}
+
+.viz-title-map {
+  @extend .viz-title;
+  $section-margin-top: 23px;
+  margin-top: -$section-margin-top - ($section-margin-top * 1.2);
 }
 
 .moreDown {
@@ -376,6 +383,7 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
     width: 32px;
   }
 }
+
 .breathe {
   @include prefixer(animation, breathe 3s infinite, webkit moz o spec);
   @include prefixer(animation-timing-function, ease, webkit moz o spec);
@@ -383,8 +391,9 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
 
 // Homepage Infographic Sections
 //============================================
+
 .section {
-  padding: 40px 0 50px 0;
+  padding: $section-margin-top 0 50px 0;
   background-color: $light-gray;
   overflow: hidden;
 }

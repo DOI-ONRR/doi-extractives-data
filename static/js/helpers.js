@@ -141,6 +141,78 @@ function download_data(dimension){
 	link.click();
 }
 
+function download_map_data(data){
+	var csv='Name,Coal,Gas,Oil,Other,Active Leases,Total Leases,\n';
+	for (var i = 0; i<data.length; i++)
+	{
+		if (!data[i].hasOwnProperty('features'))
+			continue;	
+		var featuresArray = data[i].features;
+		for(var n = 0; n<featuresArray.length; n++)
+		{
+			if (featuresArray[n].hasOwnProperty('properties'))
+				var obj=featuresArray[n].properties;
+			else
+				continue;	
+			var propArray = [];
+			if (obj.name)
+			{
+				propArray.push(obj.name);
+			}
+			else
+				propArray.push('');
+			if(obj.hasOwnProperty('commodities'))
+			{
+				if(obj.commodities.hasOwnProperty('coal'))
+					propArray.push(obj.commodities.coal.revenue);
+				else
+					propArray.push('');
+				if(obj.commodities.gas)
+					propArray.push(obj.commodities.gas.revenue);
+				else
+					propArray.push('');
+				if(obj.commodities.oil)
+					propArray.push(obj.commodities.oil.revenue);
+				else
+					propArray.push('')
+				if(obj.commodities.other)
+					propArray.push(obj.commodities.other.revenue)
+				else
+					propArray.push('')
+			}
+			else
+				propArray.push('','','','')
+			if(obj.hasOwnProperty('leases'))
+			{
+				if(obj.leases.active)
+					propArray.push(obj.leases.active)
+				else
+					propArray.push('')
+				if(obj.leases.total)
+					propArray.push(obj.leases.total)
+				else
+					propArray.push('')
+			}
+			else
+				propArray.push('','');
+
+			for (var x = 0; x<propArray.length; x++)
+			{
+				csv+=propArray[x]+',';
+			}
+			csv+='\n';
+		}
+	}
+	var encodeUri = encodeURI(csv);
+	var link=document.createElement("a");
+	var blob = new Blob([csv],{type: 'text/csv;charset=utf-8'});
+	var url = URL.createObjectURL(blob);
+	link.href = url;
+	link.setAttribute('download','eiti_map_data.csv');
+	link.click();
+
+}
+
 function draw_totals_table(){
 	var jsonData =[];//will hold the new data structure
 

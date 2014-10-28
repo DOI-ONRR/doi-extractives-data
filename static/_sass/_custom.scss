@@ -904,9 +904,8 @@ div.disbursement_bubble_rollover {
   line-height: 1.1;
   padding: 10px;
   z-index: 10000;
-  background-color: white;
-  border: 1px solid $medium-gray;
-  border-radius: 3px;
+  background-color: $dark-medium-gray;
+  border: 1px solid $dark-gray;
   display: none;
   h1 {
     font-family: $base-font-family;
@@ -923,7 +922,7 @@ div.disbursement_bubble_rollover {
       @include span-columns(12);
       margin-top: 11px;
       margin-bottom: 0px;
-      color: lighten($dark-gray, 15%);
+      color: lighten($dark-gray, 5%);
       font-style: italic;
       @include rem-fallback(font-size, 0.8);
       line-height: 1.1;
@@ -1032,14 +1031,13 @@ div.disbursement_bubble_rollover {
   position: absolute;
   right: 10px;
   bottom: 35px;
-  background-color: white;
-  border: 1px solid $medium-gray;
+  background-color: $dark-medium-gray;
+  border: 1px solid $dark-gray;
   padding: 3px;
-  border-radius: 3px;
   z-index: 999;
   h1 {
     font-family: $base-font-family;
-    @include rem-fallback(font-size, 1);
+    @include rem-fallback(font-size, 1.1);
     line-height: 1;
     font-weight: 400;
   }

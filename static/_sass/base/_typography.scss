@@ -175,8 +175,11 @@ blockquote p {
   font-family: $secondary-font-family;
   color: $red;
   @include rem-fallback(font-size, $base-font-size * 1.2);
-  @include rem-fallback(margin, 0, 0, 0.8, 1.5);
+  @include rem-fallback(margin, 0, 0, 0.8, 0.3);
   font-style: italic;
+  @include respond-to(medium-up) {
+    @include rem-fallback(margin, 0, 0, 0.8, 1.5);
+  }
 }
 
 cite {

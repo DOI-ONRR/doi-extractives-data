@@ -1097,6 +1097,7 @@ div.disbursement_bubble_rollover {
   width: 100%;
   @include respond-to(small-up) {
     top: 10px;
+    right: 10px;
     min-height: 50px;
     min-width: 150px;
     max-width: 200px;
@@ -1136,10 +1137,11 @@ div.disbursement_bubble_rollover {
 .map-comodities-pane {
   position: absolute;
   top: -75px;
-  left: 0px;
+  left: 0;
   width: 100%;
   @include respond-to(small-up) {
     top: 165px;
+    left: 10px;
     width: 150px;
   }
   z-index: 998;

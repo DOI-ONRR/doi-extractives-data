@@ -1684,31 +1684,27 @@ $max-width: 100%; //this is setting the width of outer-container.
 // Footer
 //============================================
 .footer {
+  border-top: $section-border;
   h1 {
-    font-size: rem(16);
+    @extend .h4;
+    font-weight: 500;
   }
   img {
-    width: 80px;
-    padding-right: 10px;
-    float: left;
+    width: 120px;
+    margin-top: -15px;
+    //padding-right: 10px;
+    float: right;
   }
-  ul {
-    @include span-columns(6);
-  }
-  li:nth-of-type(1) {
-    padding-top: 1.7rem;
-  }
-  li {
-    font-family: $base-font-family;
-    font-weight: 700;
-    line-height: 1.2;
-    a {
-      color: black;
-      text-decoration: underline;
-      &:hover, &:focus {
-        color: $dark-gray;
-        text-decoration: none;
-      }
+  a {
+    color: black;
+    text-decoration: underline;
+    &:hover, &:focus {
+      color: $red;
+      text-decoration: none;
     }
   }
+}
+
+.footer-column {
+  @include span-columns(6);
 }

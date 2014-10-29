@@ -411,6 +411,10 @@ $section-margin-top: 40px;
     background-color: $red;
     padding: 10px;
     text-shadow: none;
+    @include rem-fallback(font-size, $base-font-size * ($h2 * 0.8));
+    @include respond-to(small-up) {
+      @include rem-fallback(font-size, $base-font-size * $h2);
+    }
   }
 }
 
@@ -951,16 +955,13 @@ div.disbursement_bubble_rollover {
 
 #map {
   position: absolute;
-  top: 0px;
-  @include respond-to(small-up) {
-    top: 0;
-  }
+  top: 0;
   bottom: 0;
   width: 100%;
 }
 
 .map-container {
-  margin-top: 150px;
+  margin-top: 130px;
   @include respond-to(small-up) {
     margin-top: 0;
   }
@@ -1064,7 +1065,7 @@ div.disbursement_bubble_rollover {
         @include rem-fallback(font-size, 0.8);
         padding: 0;
       }
-      @include rem-fallback(font-size, 1.2);
+      @include rem-fallback(font-size, 1.1);
       font-weight: 300;
       font-family: $base-font-family;
     }

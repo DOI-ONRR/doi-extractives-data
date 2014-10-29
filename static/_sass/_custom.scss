@@ -237,13 +237,13 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
   color: white;
   .title {
     @include span-columns(12);
-    @include respond-to(small-up) { 
+    @include respond-to(medium-up) { 
       @include span-columns(7);
     }
   }
   .subpage {
     @include span-columns(12);
-    @include respond-to(small-up) { 
+    @include respond-to(medium-up) { 
       @include span-columns(5);
     }
   }
@@ -283,7 +283,10 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
   }
 }
 .intro {
-  @include span-columns(9);
+  @include span-columns(11);
+  @include respond-to(small-up) {
+    @include span-columns(9);
+  }
   background-color: transparentize(black, 0.55);
   margin-left: 20px;
   margin-bottom: 250px;
@@ -308,7 +311,10 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
     text-shadow: 1px 1px 2px $light-gray;
   }
   .intro {
-    margin-bottom: 200px;
+    margin-bottom: 70px;
+    @include respond-to(small-up) {
+      margin-bottom: 200px;
+    }
   }
 }
 
@@ -322,7 +328,10 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
     text-shadow: 1px 1px 2px $light-gray;
   }
   .intro {
-    margin-bottom: 200px;
+    margin-bottom: 70px;
+    @include respond-to(small-up) {
+      margin-bottom: 200px;
+    }
   }
 }
 
@@ -393,9 +402,13 @@ $section-margin-top: 40px;
 //============================================
 
 .section {
-  padding: $section-margin-top 0 50px 0;
+  padding: $section-margin-top 10px 50px 10px;
   background-color: $light-gray;
   overflow: hidden;
+  @include respond-to(large-up) {
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 .break {
   padding: 8px 20px 0px 20px;

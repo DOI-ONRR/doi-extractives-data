@@ -32,7 +32,7 @@ description: This is a sample beta site for Federal natural resource revenues.
 
 <!-- splash -->
 <section id="first1" class="splash">
-  {% include nav.html %} 
+  {% include nav.html %}
   <div class="container">
     <div class="title">
       <h1>Natural Resource Revenues</h1>
@@ -43,7 +43,7 @@ description: This is a sample beta site for Federal natural resource revenues.
     <div class="intro">
       <p>The U.S. earns revenue on natural resources extracted from its lands. This is a major source of revenue for the country and for local municipalities.</p>
       <p>Learn about U.S. natural resource sectors, how resources become revenues, and where the money goes. Go on, scroll down.
-      <img src="{{ site.url }}static/img/scroll-down.png" alt="You should scroll down. There is more to learn!" class="moreDown breathe">
+      <img src="{{ site.baseurl }}/static/img/scroll-down.png" alt="You should scroll down. There is more to learn!" class="moreDown breathe">
 
       </p>
     </div>
@@ -62,20 +62,20 @@ description: This is a sample beta site for Federal natural resource revenues.
       <span class="sectors-big-text">$97.5</span> billion between 2003 to 2013.</h1>
 
       <h2>Learn about U.S. natural resources:</h2>
-      
-      <img src="{{ site.url }}static/img/icon_375.svg" alt="Barrel of oil" class="sectors-img">
+
+      <img src="{{ site.baseurl }}/static/img/icon_375.svg" alt="Barrel of oil" class="sectors-img">
       <p><strong>Oil.</strong> Crude oil is produced in 31 states and U.S. coastal waters. In 2012, 61% of&#133; <a href="{{ site.baseurl }}/sectors/" itemprop="url">more&#8594;</a></p>
 
-      <img src="{{ site.url }}static/img/icon_12555.svg" alt="Flame" class="sectors-img">
+      <img src="{{ site.baseurl }}/static/img/icon_12555.svg" alt="Flame" class="sectors-img">
       <p><strong>Natural gas.</strong> In 2012, about 25% of energy used in the U. S. came from natural gas, and the&#133; <a href="{{ site.baseurl }}/sectors/" itemprop="url">more&#8594;</a></p>
-      
-      <img src="{{ site.url }}static/img/icon_5846.svg" alt="Lump of coal" class="sectors-img">
+
+      <img src="{{ site.baseurl }}/static/img/icon_5846.svg" alt="Lump of coal" class="sectors-img">
       <p><strong>Coal.</strong> In 2012, 1,016.4 million short tons of coal were mined in 25 states. Wyoming&#133; <a href="{{ site.baseurl }}/sectors/" itemprop="url">more&#8594;</a></p>
 
-      <img src="{{ site.url }}static/img/icon_2070.svg" alt="Geothermal plant" class="sectors-img">
+      <img src="{{ site.baseurl }}/static/img/icon_2070.svg" alt="Geothermal plant" class="sectors-img">
       <p><strong>Geothermal.</strong> In 2013, U.S. geothermal power plants produced about 17 billion kilowatthours&#133; <a href="{{ site.baseurl }}/sectors/" itemprop="url">more&#8594;</a></p>
 
-      <img src="{{ site.url }}static/img/icon_29006.svg" alt="Vertical ellipses" class="sectors-img">
+      <img src="{{ site.baseurl }}/static/img/icon_29006.svg" alt="Vertical ellipses" class="sectors-img">
       <p><strong>Other revenues.</strong> In 2013, Federal lands produced a wide variety of minerals. For example&#133; <a href="{{ site.baseurl }}/sectors/" itemprop="url">more&#8594;</a></p>
     </div>
 
@@ -95,8 +95,8 @@ description: This is a sample beta site for Federal natural resource revenues.
     </div>
 
     <div class="sectors-social">
-      <img src="{{ site.url }}static/img/icon_4501.svg" alt="Download" class="share">
-      <img src="{{ site.url }}static/img/icon_7584.svg" alt="Share" class="share">
+      <img src="{{ site.baseurl }}/static/img/icon_4501.svg" alt="Download" class="share">
+      <img src="{{ site.baseurl }}/static/img/icon_7584.svg" alt="Share" class="share">
     </div>
 
 </section>
@@ -123,11 +123,11 @@ description: This is a sample beta site for Federal natural resource revenues.
   <div class="map-container">
       <div id='map'></div>
       <div id='map-info-pane' class='map-info-pane'></div>
-      
+
       <div id='map-comodities-pane' class='map-comodities-pane'>
 
         <a href='javascript:' class='oil' data-value='oil' tabindex='0' role="button" aria-pressed="true">
-          <svg class="eiti-icon-oil"><use xlink:href="{{ site.url }}static/fonts/EITI/icons.svg#eiti-icon-oil"></use></svg>
+          <svg class="eiti-icon-oil"><use xlink:href="{{ site.baseurl }}/static/fonts/EITI/icons.svg#eiti-icon-oil"></use></svg>
           <div class="tooltip-item">
           <h1>Oil<sup> 1</sup></h1>
             <!-- <div class="tooltip">
@@ -137,7 +137,7 @@ description: This is a sample beta site for Federal natural resource revenues.
         </a>
 
         <a href='javascript:' class='ngl' tabindex='0' role="button" aria-pressed="false">
-          <svg class="eiti-icon-gas"><use xlink:href="{{ site.url }}static/fonts/EITI/icons.svg#eiti-icon-gas"></use></svg>
+          <svg class="eiti-icon-gas"><use xlink:href="{{ site.baseurl }}/static/fonts/EITI/icons.svg#eiti-icon-gas"></use></svg>
           <div class="tooltip-item">
           <h1>Gas<sup> 2</sup></h1>
             <!-- <div class="tooltip">
@@ -147,7 +147,7 @@ description: This is a sample beta site for Federal natural resource revenues.
         </a>
 
         <a href='javascript:' class='coal' tabindex='0' role="button" aria-pressed="false">
-          <svg class="eiti-icon-coal"><use xlink:href="{{ site.url }}static/fonts/EITI/icons.svg#eiti-icon-coal"></use></svg>
+          <svg class="eiti-icon-coal"><use xlink:href="{{ site.baseurl }}/static/fonts/EITI/icons.svg#eiti-icon-coal"></use></svg>
           <div class="tooltip-item">
           <h1>Coal<sup> 2</sup></h1>
             <!-- <div class="tooltip">
@@ -157,7 +157,7 @@ description: This is a sample beta site for Federal natural resource revenues.
         </a>
 
         <a href='javascript:' class='other' tabindex='0' role="button" aria-pressed="false">
-          <svg class="eiti-icon-other"><use xlink:href="{{ site.url }}static/fonts/EITI/icons.svg#eiti-icon-other"></use></svg>
+          <svg class="eiti-icon-other"><use xlink:href="{{ site.baseurl }}/static/fonts/EITI/icons.svg#eiti-icon-other"></use></svg>
           <div class="tooltip-item">
           <h1>Other<sup> 3</sup></h1>
             <!-- <div class="tooltip">
@@ -167,7 +167,7 @@ description: This is a sample beta site for Federal natural resource revenues.
         </a>
 
         <a href='javascript:' class='wind' tabindex='0' role="button" aria-pressed="false">
-          <svg class="eiti-icon-wind"><use xlink:href="{{ site.url }}static/fonts/EITI/icons.svg#eiti-icon-wind"></use></svg>
+          <svg class="eiti-icon-wind"><use xlink:href="{{ site.baseurl }}/static/fonts/EITI/icons.svg#eiti-icon-wind"></use></svg>
           <div class="tooltip-item">
           <h1>Wind<sup> 4</sup></h1>
             <!-- <div class="tooltip">
@@ -177,7 +177,7 @@ description: This is a sample beta site for Federal natural resource revenues.
         </a>
 
         <a href='javascript:' class='geo' tabindex='0' role="button" aria-pressed="false">
-          <svg class="eiti-icon-geo"><use xlink:href="{{ site.url }}static/fonts/EITI/icons.svg#eiti-icon-geo"></use></svg>
+          <svg class="eiti-icon-geo"><use xlink:href="{{ site.baseurl }}/static/fonts/EITI/icons.svg#eiti-icon-geo"></use></svg>
           <div class="tooltip-item">
             <h1 class="small">Geothermal<sup> 5</sup></h1>
             <!-- <div class="tooltip">
@@ -232,7 +232,7 @@ description: This is a sample beta site for Federal natural resource revenues.
 </section>
 
 <section class="section medium-gray disbursement">
-  
+
   <div class="container">
     <div class=" viz-title">
       <h1>Oil &amp; Gas Revenue Flow</h1>
@@ -286,10 +286,10 @@ description: This is a sample beta site for Federal natural resource revenues.
         </div>
       </div>
     </section>
-    
+
     <div class="sectors-social">
-      <img src="{{ site.url }}static/img/icon_4501.svg" alt="Download" class="share">
-      <img src="{{ site.url }}static/img/icon_7584.svg" alt="Share" class="share">
+      <img src="{{ site.baseurl }}/static/img/icon_4501.svg" alt="Download" class="share">
+      <img src="{{ site.baseurl }}/static/img/icon_7584.svg" alt="Share" class="share">
     </div>
 
   </div>
@@ -300,14 +300,14 @@ description: This is a sample beta site for Federal natural resource revenues.
 </main>
 
 <!--Graph scripts-->
-<script src='{{ site.url }}static/data/revenue2013.json'></script>
-<script src='{{ site.url }}static/data/0_GOM-planarea-NAD27-simp.geojson'></script>
-<script src='{{ site.url }}static/data/0_PC-planarea-NAD83-simp.geojson'></script>
-<script src='{{ site.url }}static/data/0_AK-planarea-NAD83-simp.geojson'></script>
-<script src='{{ site.url }}static/data/0_ATL-planarea-NAD83-simp.geojson'></script>
-<script src='{{ site.url }}static/js/onrrmap.js'></script>
-<script src='{{ site.url }}static/js/sectors-revenue.js'></script>
-<script src='{{ site.url }}static/js/disbursement.js'></script>
+<script src='{{ site.baseurl }}/static/data/revenue2013.json'></script>
+<script src='{{ site.baseurl }}/static/data/0_GOM-planarea-NAD27-simp.geojson'></script>
+<script src='{{ site.baseurl }}/static/data/0_PC-planarea-NAD83-simp.geojson'></script>
+<script src='{{ site.baseurl }}/static/data/0_AK-planarea-NAD83-simp.geojson'></script>
+<script src='{{ site.baseurl }}/static/data/0_ATL-planarea-NAD83-simp.geojson'></script>
+<script src='{{ site.baseurl }}/static/js/onrrmap.js'></script>
+<script src='{{ site.baseurl }}/static/js/sectors-revenue.js'></script>
+<script src='{{ site.baseurl }}/static/js/disbursement.js'></script>
 
 <script>
 document.querySelector( "#nav-toggle" ).addEventListener( "click", function() {

@@ -15,12 +15,12 @@ function clean_monetary_float (f){
 }
 
 Number.prototype.formatMoney = function(c, d, t){
-var n = this, 
-    c = isNaN(c = Math.abs(c)) ? 2 : c, 
-    d = d == undefined ? "." : d, 
-    t = t == undefined ? "," : t, 
-    s = n < 0 ? "-" : "", 
-    i = parseInt(n = Math.abs(+n || 0).toFixed(c)) + "", 
+var n = this,
+    c = isNaN(c = Math.abs(c)) ? 2 : c,
+    d = d == undefined ? "." : d,
+    t = t == undefined ? "," : t,
+    s = n < 0 ? "-" : "",
+    i = parseInt(n = Math.abs(+n || 0).toFixed(c)) + "",
     j = (j = i.length) > 3 ? j % 3 : 0;
    return s + (j ? i.substr(0, j) + t : "") + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + t) + (c ? d + Math.abs(n - i).toFixed(c).slice(2) : "");
  };
@@ -88,15 +88,15 @@ function update_graph_options(elem,dimension){
 		}
 	});
 	dimension.filterAll();
-	dimension.filter(function(d){	
+	dimension.filter(function(d){
 			if (a.indexOf(d) > -1)
 			{
 				return true;
 			}
-			else 
+			else
 				return false;
 	});
-	
+
 
 	draw_totals_table();
 	dc.redrawAll();
@@ -124,7 +124,7 @@ function download_data(dimension){
 	{
 			csv +=keys[i]+",";
 	}
-		
+
 	csv += "\n";
 
 	f.forEach(function(d){
@@ -146,14 +146,14 @@ function download_map_data(data){
 	for (var i = 0; i<data.length; i++)
 	{
 		if (!data[i].hasOwnProperty('features'))
-			continue;	
+			continue;
 		var featuresArray = data[i].features;
 		for(var n = 0; n<featuresArray.length; n++)
 		{
 			if (featuresArray[n].hasOwnProperty('properties'))
 				var obj=featuresArray[n].properties;
 			else
-				continue;	
+				continue;
 			var propArray = [];
 			if (obj.name)
 			{
@@ -230,12 +230,12 @@ function draw_totals_table(){
 	//Get the data from the new group and assign to d
 	var d = g.top(Infinity);
 
-	//Take JSON in d and put in jsonData with new structure for ease of use 
+	//Take JSON in d and put in jsonData with new structure for ease of use
 	d.forEach(function(d){
 		if (d.value != 0)
 			jsonData.push({"Company Name" : d.key, "Total Revenue" : d.value});
 	});
-	
+
 	//Add jsonData to a crossfilter
 	var jdx = crossfilter(jsonData);
 	//Set dimension to Company Name
@@ -273,11 +273,11 @@ function toggle_divs(that, div1, div2, linkText1, linkText2){
 
 /********************************************************************************
 From:
-http://stackoverflow.com/questions/979975/how-to-get-the-value-from-url-parameter
+https://stackoverflow.com/questions/979975/how-to-get-the-value-from-url-parameter
 Used to get url paramaters
 ********************************************************************************/
 var QueryString = function () {
-  // This function is anonymous, is executed immediately and 
+  // This function is anonymous, is executed immediately and
   // the return value is assigned to QueryString!
   var query_string = {};
   var query = window.location.search.substring(1);
@@ -296,12 +296,12 @@ var QueryString = function () {
     } else {
       query_string[pair[0]].push(pair[1]);
     }
-  } 
+  }
     return query_string;
 } ();
 
 /***********************************************************************************************
-From: http://stackoverflow.com/questions/8732401/how-to-figure-out-all-colors-in-a-gradient
+From: https://stackoverflow.com/questions/8732401/how-to-figure-out-all-colors-in-a-gradient
 ***********************************************************************************************/
 
 function makeGradientColor(color1, color2, percent) {
@@ -328,9 +328,9 @@ function makeGradientColor(color1, color2, percent) {
     newColor.r = makeChannel(color1.r, color2.r);
     newColor.g = makeChannel(color1.g, color2.g);
     newColor.b = makeChannel(color1.b, color2.b);
-    newColor.cssColor = "#" + 
-                        makeColorPiece(newColor.r) + 
-                        makeColorPiece(newColor.g) + 
+    newColor.cssColor = "#" +
+                        makeColorPiece(newColor.r) +
+                        makeColorPiece(newColor.g) +
                         makeColorPiece(newColor.b);
     return(newColor);
 }

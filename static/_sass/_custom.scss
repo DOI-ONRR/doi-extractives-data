@@ -853,7 +853,7 @@ div.disbursement_bubble_rollover {
     line-height: 1.2;
   }
   ol {
-    @include span-columns(12);
+    @include span-columns(11);
     @include respond-to(small-up) { 
       @include span-columns(5);
     }
@@ -883,34 +883,45 @@ div.disbursement_bubble_rollover {
     @include rem-fallback(font-size, 0.8);
   }
 }
+
 #map {
   position: absolute;
-  top: 0;
+  top: 0px;
+  @include respond-to(small-up) {
+    top: 0;
+  }
   bottom: 0;
   width: 100%;
 }
+
 .map-container {
-  margin-top: 85px;
+  margin-top: 150px;
   @include respond-to(small-up) {
     margin-top: 0;
   }
   @include span-columns(12);
   position: relative;
-  height: 600px;
+  height: 400px;
+  @include respond-to(small-up) {
+    height: 600px;
+  }
   margin-bottom: 15px;
 }
+
 .map-legend .swatch {
   width: 20px;
   height: 20px;
   float: left;
   margin-right: 10px;
 }
+
 .menu-ui {
   position: absolute;
   top: 60px;
   left: 10px;
   z-index: 10000;
 }
+
 .map-info-pane {
   position: absolute;
   top: 399px;
@@ -958,7 +969,7 @@ div.disbursement_bubble_rollover {
 .map-comodities-pane {
   position: absolute;
   top: -75px;
-  left: 10px;
+  left: 0px;
   width: 100%;
   @include respond-to(small-up) {
     top: 165px;
@@ -968,30 +979,46 @@ div.disbursement_bubble_rollover {
   > a {
     position: relative;
     float: left;
-    width: 75px;
-    height: 75px;
+    width: 33%;
+    height: 40px;
+    @include respond-to(small-up) {
+      width: 75px;
+      height: 75px;
+    }
     background-color: $dark-medium-gray;
     border: 1px solid black;
     color: black;
     transition: none;
     h1 {
       position: absolute;
-      bottom: -18px;
-      right: 2px;
-      @include rem-fallback(font-size, 0.8);
+      padding-top: 9px;
+      padding-left: 6px;
+      @include respond-to(small-up) {
+        bottom: -18px;
+        right: 2px;
+        @include rem-fallback(font-size, 0.8);
+        padding: 0;
+      }
+      @include rem-fallback(font-size, 1.2);
       font-weight: 300;
       font-family: $base-font-family;
     }
     .small { //for long commodity names
-      @include rem-fallback(font-size, 0.72);
+      @include rem-fallback(font-size, 1.2);
+      @include respond-to(small-up) {
+        @include rem-fallback(font-size, 0.72);
+      }
     }
     svg {
-      width: 57px;
-      height: 57px;
-      padding-top: 15px;
-      padding-left: 15px;
-      display: inline-block;
-      fill: black;
+      display: none;
+      @include respond-to(small-up) {
+        width: 57px;
+        height: 57px;
+        padding-top: 15px;
+        padding-left: 15px;
+        display: inline-block;
+        fill: black;
+      }
     }
     &:hover,
     &:focus {

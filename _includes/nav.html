@@ -2,7 +2,7 @@
   <a id="nav-toggle" href="#"><span></span></a>
   <div class="container">
     <ul class="menu">
-    <a href="{{ site.url }}" itemprop="url" {% if page.title == "Home" %}class="active" {% endif %}>
+    <a href="{{ site.baseurl }}" itemprop="url" {% if page.title == "Home" %}class="active" {% endif %}>
     	<li itemprop="name">Home</li>
     </a>
     <a href="{{ site.baseurl }}/about/" itemprop="url" {% if page.title == "About" %}class="active" {% endif %}>
@@ -22,7 +22,7 @@
                 <input type="submit" value="&#10095;">
             </div>
         </form>
-    </li> 
+    </li>
     </ul>
   </div>
 </nav>

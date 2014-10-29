@@ -14,7 +14,7 @@ $("#escape").hover(
   }
 );
 $("#escape").on('click', function(){
-  window.location = "http://www.google.com/";
+  window.location = "https://www.google.com";
 });
 
 // Quick Tooltip for Search Form Use
@@ -58,7 +58,7 @@ $(function() {
     $collapsibles.last().nextUntil('footer').last()
       .after('<div class="close-collapsible"><button class="btn">Close</button></div>');
     $collapsibles.addClass('collapsible').nextUntil('h2,footer').addClass('inactive');
-    
+
     $collapsibles.on('click', function() {
       $collapsibles.not(this).removeClass('selected').nextUntil('h2,footer').addClass('inactive');
       $(this).toggleClass('selected');
@@ -73,7 +73,7 @@ $(function() {
       var $section_header = $(this).parent().prevUntil('h2').last().prev();
       $section_header.toggleClass('selected'); // un-select section header
       $(window).scrollTop(last_scrollTop); // scroll to where you were when you expanded this section
-    }); 
+    });
     if (window.location.hash != '') {
       $(window.location.hash).nextUntil('h2,footer').removeClass('inactive');
       $(window.location.hash).toggleClass('selected');
@@ -94,7 +94,7 @@ $(function() {
       }
     }
   });
-  
+
   if (window.location.hash != '') {
     var target = window.location.hash;
     $(target).addClass('hash-scrolled');

@@ -95,18 +95,30 @@ ul.menu a.active li {
     color: white;
   }
 }
+
+.menu {
+  display: none;
+  @include respond-to(small-up) {
+    display: block;
+  }
+}
+
 .nav {
   background: #8dc2e7;
   background: rgba(141, 194, 231, 0.9);
   border-top: 4px solid rgba(0, 0, 0, 0.3);
   ul {
     width: 100%;
-    float: left;
     list-style: none;
+    @include respond-to(small-up) {
+      float: left;
+    }
   }
   li {
     font-weight: 500;
-    float: left;
+    @include respond-to(small-up) {
+      float: left;
+    }
     padding: 5px 3px 3px 3px;
     margin-right: 32px;
     border-left: 1px solid black;
@@ -120,6 +132,59 @@ ul.menu a.active li {
       color: white;
     }
   }
+}
+
+// Animated hamburger icon
+// http://www.elijahmanor.com/css-animated-hamburger-icon/
+#nav-toggle { 
+  cursor: pointer;
+  padding: 10px 35px 16px 0;
+  position: relative;
+  left: 0;
+  top: -11px;
+  @include respond-to(small-up) {
+    display: none;
+  }
+}
+
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 2px;
+  height: 4px;
+  width: 35px;
+  background: $dark-gray;
+  position: absolute;
+  display: block;
+  content: '';
+}
+
+#nav-toggle span:before {
+  top: -8px; 
+}
+
+#nav-toggle span:after {
+  bottom: -8px;
+}
+
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+  transition: all 500ms ease-in-out;
+}
+
+#nav-toggle.active span {
+  background-color: transparent;
+}
+
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+  top: 0;
+}
+
+#nav-toggle.active span:before {
+  transform: rotate(45deg);
+}
+
+#nav-toggle.active span:after {
+  transform: translateY(-10px) rotate(-45deg);
+  top: 10px;
 }
 
 // Vertical scroll nav

@@ -39,6 +39,7 @@ var variables = [
 
 var ranges ={};
 var dataLayers=[];
+var selectedCommodity = 'oil'
 
 for (var i = 0; i<variables.length; i++)
 {
@@ -48,6 +49,7 @@ $('#map-comodities-pane>a').each(function(i){
   $(this).attr('data-value',variables[i]);
   
   $(this).click(function(){
+    selectedCommodity= $(this).attr('data-value');
     setVariable($(this).attr('data-value'));
     $('#map-comodities-pane a').each(function(n){
       $(this).attr('aria-pressed','false');
@@ -148,36 +150,7 @@ $('#map-comodities-pane>a').each(function(i){
     {
       var scale = ranges[name];
       dataLayers[i].eachLayer(function(layer) {
-        var value =0;
-        if (layer.feature.properties.commodities)
-        {
-          if (layer.feature.properties.commodities[name])
-          {
-            value = layer.feature.properties.commodities[name].revenue;
-          }
-            
-        }
-        var percent = (value / scale.max) * 100;
-        var newColor = makeGradientColor(hues[0],hues[1],percent);
-      
-        if (percent == 0)
-        {
-          layer.setStyle({
-            fillColor: newColor.cssColor,
-            fillOpacity: 0.0,
-            weight: 0.5,
-            data_revenue: value
-          })
-        }
-        else
-        {
-          layer.setStyle({
-            fillColor: newColor.cssColor,
-            fillOpacity: 1.0,
-            weight: 0.5,
-            data_revenue: value
-          });
-        }
+        setLayerColor(layer);  
       });
     }
     /**********************
@@ -200,7 +173,8 @@ $('#map-comodities-pane>a').each(function(i){
 
   function mousemove(e) {
       var layer = e.target;
-      setStrokeWeight(layer,'3.0');
+      //setStrokeWeight(layer,'3.0');
+      setFillColor(layer,'#D8D8D8')
       var Revenue_String = (function(){
         var selected; 
         $('#map-comodities-pane a').each(function(){
@@ -239,7 +213,8 @@ $('#map-comodities-pane>a').each(function(i){
   function mouseout(e) {
       statesLayer.resetStyle(e.target);
       var layer = e.target;
-      setStrokeWeight(layer,'0.5')
+      //setStrokeWeight(layer,'0.5')
+      setLayerColor(layer);
       closeTooltip = window.setTimeout(function() {
           mapdataviz.closePopup();
       }, 100);
@@ -281,6 +256,7 @@ $('#map-comodities-pane>a').each(function(i){
       var layerColor = $('path',$(this)).attr('fill');
       var depth = Math.round(getColorPercent(layerColor,hues[1],hues[0]) * maxDepth);
       $(this).attr('data-3d-layers','heightIdentifier'+index);
+      $(this).attr('data-fill-color' , $(this).attr('fill'));
       while(count < depth && $('path', $(this)).attr('fill-opacity') > 0)
       {
         $(this).clone()
@@ -372,5 +348,52 @@ function setStrokeWeight(layer,weight){
       $(this).attr('stroke-width',weight);
     });
 }
+function setFillColor(layer,color){
+  $("g[data-3d-layers='"+$(layer._container).attr('data-3d-layers')+"'] path").each(function(){
+      $(this).attr('fill-opacity',1.0);
+      $(this).attr('fill',color);
+    });
+
+}
+
+function setLayerColor(layer){
+  var scale = ranges[selectedCommodity];
+  var value =0;
+  var name = selectedCommodity;
+      if (layer.feature.properties.commodities)
+      {
+        if (layer.feature.properties.commodities[name])
+        {
+          value = layer.feature.properties.commodities[name].revenue;
+          console.log(value);
+        }
+          
+      }
+      console.log(value);
+      var percent = (value / scale.max) * 100;
+      var newColor = makeGradientColor(hues[0],hues[1],percent);
+      $("g[data-3d-layers='"+$(layer._container).attr('data-3d-layers')+"'] path").each(function(){
+        $(this).attr('fill',newColor.cssColor);
+      });
+      if (percent == 0)
+      {
+        layer.setStyle({
+          fillColor: '#D8D8D8',
+          fillOpacity: 0.0,
+          weight: 0.5,
+          data_revenue: value
+        })
+      }
+      else
+      {
+        layer.setStyle({
+          fillColor: newColor.cssColor,
+          fillOpacity: 1.0,
+          weight: 0.5,
+          data_revenue: value
+        });
+      }
+}
+
   
   

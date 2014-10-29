@@ -991,9 +991,9 @@ div.disbursement_bubble_rollover {
 .map-info-pane {
   position: absolute;
   top: 399px;
-  right: 10px;
+  right: 0;
   min-height: 50px;
-  width: 99%;
+  width: 100%;
   @include respond-to(small-up) {
     top: 10px;
     min-height: 50px;
@@ -1144,8 +1144,14 @@ div.disbursement_bubble_rollover {
 
 #map-scale-pane {
   position: absolute;
-  right: 10px;
-  bottom: 35px;
+  right: 0;
+  bottom: -80px;
+  display: none;
+  @include respond-to(small-up) {
+    display: block;
+    right: 10px;
+    bottom: 35px;
+  }
   background-color: $dark-medium-gray;
   border: 1px solid $dark-gray;
   padding: 3px;

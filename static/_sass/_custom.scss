@@ -177,6 +177,8 @@ ul.menu a.active li {
   }
   input[type=search] {
     width: 210px;
+    @include rem-fallback(font-size, $base-font-size * 0.7);
+    font-weight: 300;
   }
   input[type=search]:focus { 
     border-top: 1px solid black; 

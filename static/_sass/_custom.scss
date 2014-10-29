@@ -1683,6 +1683,7 @@ $max-width: 100%; //this is setting the width of outer-container.
 
 // Footer
 //============================================
+
 .footer {
   border-top: $section-border;
   h1 {
@@ -1692,7 +1693,6 @@ $max-width: 100%; //this is setting the width of outer-container.
   img {
     width: 120px;
     margin-top: -15px;
-    //padding-right: 10px;
     float: right;
   }
   a {

@@ -1,21 +1,26 @@
 // Site-wide
 //============================================
+
 a {
   text-decoration: underline;
 }
+
 a:hover,
 a:focus {
   text-decoration: none;
 }
+
 sup,
 sub {
   vertical-align: baseline;
   position: relative;
   top: -0.4em;
 }
+
 sub {
   top: 0.4em;
 }
+
 .download {
   margin-top: 10px;
 }
@@ -55,6 +60,7 @@ sub {
 
 // Alpha Alert
 //============================================
+
 #burst-12 {
   background: $red;
   width: 80px;

@@ -1,0 +1,100 @@
+<section id="third1" class="section map-frame">
+
+  <div class="container">
+    <h1>How do natural resources become Federal revenue?</h1>
+    <div class="intro">
+      <p>If there are natural resources under (or even suspected of being under) approved Federal lands, the U.S. Department of the Interior or the U.S. Department of Agriculture grants leases to explore for and extract these products for sale.</p>
+      <p>In return, part of the sales value for many commodities is paid to the Federal government for the benefit of the American people. These are called “royalties.” There are other revenues involved, such as rents, fees, and penalties, but by far most of the money comes from these royalties.</p>
+    </div>
+  </div>
+
+</section>
+
+<section class="section how">
+
+  <div class="container">
+    <div class="viz-title-map">
+      <h1>Resource revenues by location</h1>
+    </div>
+  </div>
+
+  <div class="map-container">
+    <div id='map'></div>
+    <div id='map-info-pane' class='map-info-pane'></div>
+
+    <div id='map-comodities-pane' class='map-comodities-pane'>
+
+      <a href='javascript:' class='oil' data-value='oil' tabindex='0' role="button" aria-pressed="true">
+        <svg class="eiti-icon-oil"><use xlink:href="{{ site.baseurl }}/static/fonts/EITI/icons.svg#eiti-icon-oil"></use></svg>
+        <div class="tooltip-item">
+        <h1>Oil<sup> 1</sup></h1>
+        </div>
+      </a>
+
+      <a href='javascript:' class='ngl' tabindex='0' role="button" aria-pressed="false">
+        <svg class="eiti-icon-gas"><use xlink:href="{{ site.baseurl }}/static/fonts/EITI/icons.svg#eiti-icon-gas"></use></svg>
+        <div class="tooltip-item">
+        <h1>Gas<sup> 2</sup></h1>
+        </div>
+      </a>
+
+      <a href='javascript:' class='coal' tabindex='0' role="button" aria-pressed="false">
+        <svg class="eiti-icon-coal"><use xlink:href="{{ site.baseurl }}/static/fonts/EITI/icons.svg#eiti-icon-coal"></use></svg>
+        <div class="tooltip-item">
+        <h1>Coal<sup> 2</sup></h1>
+        </div>
+      </a>
+
+      <a href='javascript:' class='other' tabindex='0' role="button" aria-pressed="false">
+        <svg class="eiti-icon-other"><use xlink:href="{{ site.baseurl }}/static/fonts/EITI/icons.svg#eiti-icon-other"></use></svg>
+        <div class="tooltip-item">
+        <h1>Other<sup> 3</sup></h1>
+        </div>
+      </a>
+
+      <a href='javascript:' class='wind' tabindex='0' role="button" aria-pressed="false">
+        <svg class="eiti-icon-wind"><use xlink:href="{{ site.baseurl }}/static/fonts/EITI/icons.svg#eiti-icon-wind"></use></svg>
+        <div class="tooltip-item">
+        <h1>Wind<sup> 4</sup></h1>
+        </div>
+      </a>
+
+      <a href='javascript:' class='geo' tabindex='0' role="button" aria-pressed="false">
+        <svg class="eiti-icon-geo"><use xlink:href="{{ site.baseurl }}/static/fonts/EITI/icons.svg#eiti-icon-geo"></use></svg>
+        <div class="tooltip-item">
+          <h1 class="small">Geothermal<sup> 5</sup></h1>
+        </div>
+      </a>
+
+    </div>
+
+    <div id='map-scale-pane'>
+      <h1>Royalties</h1>
+      <div></div>
+      <div class="map-scale-min">$1000</div>
+      <div class="map-scale-max">$20000</div>
+    </div>
+      
+  </div>
+
+  <div class="container map-notes">
+    <h1>Map notes.</h1>
+    <ol>
+      <li><span>Oil.</span> Includes various crude oil products such as condensate, drip and scrubber condensate, and fuel oil.</li>
+      <li><span>Gas.</span> Includes various natural gas products such as processed and unprocessed gas, nitrogen, flash gas, fuel gas, and coal bed methane.</li>
+      <li><span>Coal.</span> Includes various processed and unprocessed coal products such as anthracite, bituminous, subbituminous, and lignite.</li>
+    </ol>
+    <ol start="4">
+      <li><span>Other.</span> Includes a wide variety of solid mineral and other products such as copper, zinc, tar sands, clay, borax, and potassium.</li>
+      <li><span>Wind.</span> Includes bonus and rental payments from offshore wind turbine projects.</li>
+      <li><span>Geothermal.</span> Includes royalties from geothermal electrical generation and the resulting byproducts.</li>
+    </ol>
+  </div>
+
+  <div class="container download">
+    <p>
+      <a href="javascript:download_map_data([statesData,AK_NAD83_simp,ATL_NAD83_simp,GOM_NAD27_simp,PC_NAD83_simp])">&#8615; Download Map Data (CSV)</a>
+    </p>
+  </div>
+
+</section>

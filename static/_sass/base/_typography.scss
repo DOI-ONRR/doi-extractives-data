@@ -116,21 +116,21 @@ h4,
 @include media($tiny-down) {
   h1,
   .display {
-    @include rem-fallback(font-size, $base-font-size * 1.602);
+    @include rem-fallback(font-size, $base-font-size * ($h1 * 0.85));
   }
 
   h2,
   .call-out,
   .sub-headline {
-    @include rem-fallback(font-size, $base-font-size * 1.424);
+    @include rem-fallback(font-size, $base-font-size * ($h2 * 0.85));
   }
 
   h3 {
-    @include rem-fallback(font-size, $base-font-size * 1.266);
+    @include rem-fallback(font-size, $base-font-size * ($h3 * 0.85));
   }
 
   h4 {
-    @include rem-fallback(font-size, $base-font-size * 1.125);
+    @include rem-fallback(font-size, $base-font-size * ($h4 * 0.85));
   }
 
   p,
@@ -175,8 +175,11 @@ blockquote p {
   font-family: $secondary-font-family;
   color: $red;
   @include rem-fallback(font-size, $base-font-size * 1.2);
-  @include rem-fallback(margin, 0, 0, 0.8, 1.5);
+  @include rem-fallback(margin, 0, 0, 0.8, 0.3);
   font-style: italic;
+  @include respond-to(medium-up) {
+    @include rem-fallback(margin, 0, 0, 0.8, 1.5);
+  }
 }
 
 cite {

@@ -309,4 +309,18 @@ description: This is a sample beta site for Federal natural resource revenues.
 <script src='{{ site.url }}static/js/sectors-revenue.js'></script>
 <script src='{{ site.url }}static/js/disbursement.js'></script>
 
+<script>
+document.querySelector( "#nav-toggle" ).addEventListener( "click", function() {
+  this.classList.toggle( "active" );
+});
+</script>
+
+<script>
+$(document).ready(function() {
+        $('#nav-toggle').click(function() {
+                $('.menu').slideToggle("fast");
+        });
+    });
+</script>
+
 

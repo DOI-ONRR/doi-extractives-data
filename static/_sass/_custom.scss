@@ -353,7 +353,10 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
     }
   }
   .small {
-    @include small-type(1.6);
+    @include small-type(1.5);
+    @include respond-to(small-up) {
+      @include small-type(2.16);
+    }
   }
 }
 .intro {

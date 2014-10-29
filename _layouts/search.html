@@ -17,21 +17,13 @@ class: search
 
   <div class="container search-header">
     <p>Search results for <strong>energy information</strong></p>
-    <p>3 results</p>
+    <p id="search-results-count"></p>
   </div>
 
-  <div class="container">
-  {% for title in site.data.search limit:3 %}
-    <article class="search-result-list">
-      <h1><a href="{{ title.url }}">{{ title.title }} &#8594;</a></h1>
-      <p>{{ title.description }}</p>
-      <p>Tagged / 
-        {% for item in title.tag %}
-          <a>{{ item }}</a> /
-        {% endfor %}
-      </p>
-    </article>
-  {% endfor %}
+  <div class="container" id="search-results-container">
+  <!--MHZ you can change this loading to anything, with a loading class-->
+  <h1 class='loading'>Loading...</h1>
+  
   </div>
   
   <div class="container">
@@ -39,3 +31,4 @@ class: search
   </div>
 
 </div>
+<script type="text/javascript" src='{{ site.url }}static/js/search.js'></script>

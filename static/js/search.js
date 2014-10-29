@@ -14,32 +14,32 @@ $( document ).ready(function() {
         return sParameterName[1];
       }
     }
-  }​
+  }
   
   var query = GetURLParameter('q');
   
   if(query) {
+    console.log('query found')
     $("input#q").val(query);
     $("#search-result-list").append('<div class="loading"><span class="glyphicon glyphicon-refresh"></span> Loading</div>');
     $.ajax({
-      url: "//api.data.gov/beckley/v0/resources/notalone/?q=" + query + "&size=200&from=0&api_key=TRuYxi0630m5Y4D3ECUjxzdaVNaShjxq6u68MkGx",
+      url: "//api.data.gov/beckley/v0/resources/eiti/?q=" + query + "&size=200&from=0&api_key=YYyGvaNdO6UF5qGfZXgHxOnOVD002wYxcBrbSvgQ",
       cache: false,
       dataType: "json"
     })
       .done(function(json) {
+        console.log(json);
         $(".loading").remove();
-        $("#search-form").append('<div class="search-results-total"><span class="search-result-number">' + json.hits.total + '</span> Search Results</div>');
+        $("#search-results-count").append( json.hits.total + ' Search Results');
         $.each(json.hits.hits, function(i, hit){
           
         var result_description = hit._source.description;
           
           var tags = '';
           if(hit._source.tags) {
-            tags+='<div class="search-result-tags">Tags:<ul>'
             $.each(hit._source.tags, function(i, tag) {
-              tags+='<li><a href="/search/?q=' + tag + '">' + tag + '</a></li>'
+              tags+='<a href="/search/?q=' + tag + '">' + tag + '</a> /'
             });
-            tags+="</ul></div>"
           }
           
           var content_type = "";
@@ -52,27 +52,18 @@ $( document ).ready(function() {
           else {
             content_type = '<span class="glyphicon glyphicon-file"></span> ' + hit._source.content_type + '';
           }
-          $("#search-result-list").append('
-          <article class="search-result">
-            <header class="search-result-header">
-              <a href="' + hit._source.url + '" target="_blank">' + hit._source.title + '</a>
-            </header>
-            <div class="search-result-content">
-              ' + result_description + '
-              ' + tags + '
-            </div>
-            <div class="search-result-meta">
-              <div class="search-result-meta-item">
-                </div>
-                <div class="search-result-meta-item-content">
-                  ' + content_type + '
-                </div>
-                <div class="search-result-meta-item-content">
-                  <span class="glyphicon glyphicon-arrow-right"></span> <a href="' + hit._source.url + '" target="_blank">View Document</a>
-                </div>
-              </div>
-            </div>
-          </article>');
+          $("#search-results-container").append('<article class="search-result-list"><h1><a href="' 
+            + hit._source.url 
+            + '" target="_blank">' 
+            + hit._source.title 
+            + '</a></h1>'
+            +'<p>' 
+            + result_description 
+            + '</p>'
+            +'<p>Tagged /' 
+            + tags 
+            +'</p>'
+            +'</article>');
         });
       });
   }

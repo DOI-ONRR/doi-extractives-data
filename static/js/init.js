@@ -18,12 +18,12 @@ $("#escape").on('click', function(){
 });
 
 // Quick Tooltip for Search Form Use
-$( "#search-form #q" ).focusin(function() {
-  $(".search-action-tip").toggleClass( "active" );
-});
-$( "#search-form #q" ).focusout(function() {
-  $(".search-action-tip").toggleClass( "active" );
-});
+// $( "#search-form #q" ).focusin(function() {
+//   $(".search-action-tip").toggleClass( "active" );
+// });
+// $( "#search-form #q" ).focusout(function() {
+//   $(".search-action-tip").toggleClass( "active" );
+// });
 
 // Navigation
 //// Add the mobile nav option

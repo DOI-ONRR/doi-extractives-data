@@ -365,11 +365,9 @@ function setLayerColor(layer){
         if (layer.feature.properties.commodities[name])
         {
           value = layer.feature.properties.commodities[name].revenue;
-          console.log(value);
         }
           
       }
-      console.log(value);
       var percent = (value / scale.max) * 100;
       var newColor = makeGradientColor(hues[0],hues[1],percent);
       $("g[data-3d-layers='"+$(layer._container).attr('data-3d-layers')+"'] path").each(function(){

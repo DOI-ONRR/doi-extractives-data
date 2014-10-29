@@ -6,10 +6,10 @@ owner:
   twitter: DOIONRR
   facebook: DOIONRR
   # For Google Authorship https://plus.google.com/authorship
-  google_plus: 
+  google_plus:
 
-google_analytics:   
-google_verify:  
+google_analytics:
+google_verify:
 
 sass:
   sass_dir: static/_sass
@@ -18,11 +18,9 @@ markdown: kramdown
 highlighter: pygments
 
 baseurl: /doi-extractives-data
-url: http://18f.github.io/doi-extractives-data/
 
-# uncomment when working locally
-
-#url:  http://localhost:4000/
+# only use when absolute URL is absolutely necessary
+url: https://18f.github.io/doi-extractives-data
 
 kramdown:
   parse_block_html: true

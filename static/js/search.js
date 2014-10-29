@@ -15,14 +15,14 @@ $( document ).ready(function() {
       }
     }
   }​
-  
+
   var query = GetURLParameter('q');
-  
+
   if(query) {
     $("input#q").val(query);
     $("#search-result-list").append('<div class="loading"><span class="glyphicon glyphicon-refresh"></span> Loading</div>');
     $.ajax({
-      url: "//api.data.gov/beckley/v0/resources/notalone/?q=" + query + "&size=200&from=0&api_key=TRuYxi0630m5Y4D3ECUjxzdaVNaShjxq6u68MkGx",
+      url: "https://api.data.gov/beckley/v0/resources/notalone/?q=" + query + "&size=200&from=0&api_key=TRuYxi0630m5Y4D3ECUjxzdaVNaShjxq6u68MkGx",
       cache: false,
       dataType: "json"
     })
@@ -30,9 +30,9 @@ $( document ).ready(function() {
         $(".loading").remove();
         $("#search-form").append('<div class="search-results-total"><span class="search-result-number">' + json.hits.total + '</span> Search Results</div>');
         $.each(json.hits.hits, function(i, hit){
-          
+
         var result_description = hit._source.description;
-          
+
           var tags = '';
           if(hit._source.tags) {
             tags+='<div class="search-result-tags">Tags:<ul>'
@@ -41,7 +41,7 @@ $( document ).ready(function() {
             });
             tags+="</ul></div>"
           }
-          
+
           var content_type = "";
           if(hit._source.content_type == "text/html") {
             content_type = '<span class="glyphicon glyphicon-link"></span> Website';

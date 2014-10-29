@@ -13,7 +13,7 @@ description: This is a sample beta site for Federal natural resource revenues.
 	{% for name in site.data.offices %}
 	<article>
 		<div>
-			<img src="{{ site.url }}{{ name.mark }}" alt="{{ name.name }}">
+			<img src="{{ site.baseurl }}{{ name.mark }}" alt="{{ name.name }}">
 		</div>
 		<div>
 			<h1>{{ name.full }}</h1>

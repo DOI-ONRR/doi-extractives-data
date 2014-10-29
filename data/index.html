@@ -10,7 +10,7 @@ description: This is a sample beta site for Federal natural resource revenues.
 <div class="dashboard">
 
   <nav class="dashboard-nav">
-    <a href="{{ site.url }}" itemprop="url">&#8592; Home </a>
+    <a href="{{ site.baseurl }}" itemprop="url">&#8592; Home </a>
     &#124; Natural Resource Revenue from U.S. Federal Lands
   </nav>
 
@@ -20,10 +20,10 @@ description: This is a sample beta site for Federal natural resource revenues.
     <div class="dashboard-choices"><h1>Choose a year [2012]</h1></div>
   </div>
 
-  
+
 <!-- START Side Options Nav -->
-  <div class="side-nav" id="OptionsList"> 
-    
+  <div class="side-nav" id="OptionsList">
+
     <h1><label class="label-switch last" for="chk-energy">Oil &amp; Gas
       <input class="groupCheckbox" type="checkbox" name="energygroup" value="energy" id="chk-energy" checked />
       <div class="checkbox"></div>
@@ -61,7 +61,7 @@ description: This is a sample beta site for Federal natural resource revenues.
         <div class="checkbox"></div>
       </label>
     </div>
-  
+
     <h1><label class="label-switch last" for="chk-renewables">Renewables
       <input class="groupCheckbox" type="checkbox" name="renewables" value="renewables" id="chk-renewables" checked />
       <div class="checkbox"></div>
@@ -82,7 +82,7 @@ description: This is a sample beta site for Federal natural resource revenues.
         <div class="checkbox"></div>
       </label> -->
     </div>
-  
+
     <h1><label class="label-switch" for="chk-minerals">Other
       <input class="groupCheckbox" type="checkbox" name="energygroup" value="other" id="chk-minerals" checked />
       <div class="checkbox"></div>
@@ -119,7 +119,7 @@ description: This is a sample beta site for Federal natural resource revenues.
       </label>
     </div>
     <div class="side-nav-right">
-      <label class="label-switch" for="chk-Phosphate">Phosphate 
+      <label class="label-switch" for="chk-Phosphate">Phosphate
         <input class="other commodity" type="checkbox" name="commodity" value="Phosphate" id="chk-Phosphate" checked />
         <div class="checkbox"></div>
       </label>
@@ -132,7 +132,7 @@ description: This is a sample beta site for Federal natural resource revenues.
         <div class="checkbox"></div>
       </label>
     </div>
-    
+
   </div>
 <!-- END Side Options Nav --
 
@@ -158,7 +158,7 @@ description: This is a sample beta site for Federal natural resource revenues.
         <input type="text" id="table-search"></input>
         <div><a href="javascript:toggle_divs('#toggleDivLink','#dashboard-totals-table','#dashboard-table','Show Full Table','Show Table by Company')" id="toggleDivLink">Show Full Table</a></div>
         <table class='table table-hover dc-data-table' id='dashboard-totals-table'>
-          
+
           <thead>
             <tr class="header">
               <th>
@@ -174,9 +174,9 @@ description: This is a sample beta site for Federal natural resource revenues.
             </tr>
           </thead>
         </table>
-        
+
         <table class='table table-hover dc-data-table' id='dashboard-table' style="display:none">
-          
+
           <thead>
             <tr class="header">
               <th>
@@ -211,7 +211,7 @@ description: This is a sample beta site for Federal natural resource revenues.
 <!-- END Main Data Dashboard -->
 
 </main>
-<script src='{{ site.url }}static/js/dashboard.js'></script>
+<script src='{{ site.baseurl }}/static/js/dashboard.js'></script>
 <script type="text/javascript">
  $("#table-search").on('input',function(){
    text_filter(companyDimension,this.value);

@@ -1,11 +1,11 @@
 // var mapdataviz = L.mapbox.map('map', 'mhertzfeld.i8l68af5')
 //     .setView([37.8, -91], 4);
 var map_draw_init = false;
-var statesDrawOrder = ["Alabama","Alaska","Arizona", "Arkansas", "Connecticut", "Delaware","District of Columbia", 
-  "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", 
-  "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", 
-  "Oregon","New Hampshire", "New Jersey", "New York","North Carolina", "North Dakota","Ohio", "Oklahoma", 
-  "Pennsylvania", "Rhode Island","South Carolina","South Dakota","Tennessee", "Texas", "Vermont", "Virginia", 
+var statesDrawOrder = ["Alabama","Alaska","Arizona", "Arkansas", "Connecticut", "Delaware","District of Columbia",
+  "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine",
+  "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska",
+  "Oregon","New Hampshire", "New Jersey", "New York","North Carolina", "North Dakota","Ohio", "Oklahoma",
+  "Pennsylvania", "Rhode Island","South Carolina","South Dakota","Tennessee", "Texas", "Vermont", "Virginia",
   "Washington", "West Virginia", "Wisconsin", "Wyoming","Utah","Nevada", "California", "Colorado","New Mexico"];
 var atlanticDrawOrder = [ 'North Atlantic','Mid-Atlantic' ,'South Atlantic','Straights of Florida' ];
 var gomDrawOrder = ['Eastern Gulf of Mexico','Central Gulf of Mexico','Western Gulf of Mexico']
@@ -14,8 +14,8 @@ var gomDrawOrder = ['Eastern Gulf of Mexico','Central Gulf of Mexico','Western G
 var mapdataviz = L.map('map', {
     scrollWheelZoom: false
   }).setView([41.5, -99.5795], 4);
-L.tileLayer('http://a.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: 'Tiles Courtesy of <a href="http://www.mapquest.com/" target="_blank">MapQuest</a>',
+L.tileLayer('https://a.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: 'Tiles Courtesy of <a href="https://www.mapquest.com/" target="_blank">MapQuest</a>',
     maxZoom: 18,
     subdomains: [1, 2, 3, 4]
   }).addTo(mapdataviz);
@@ -47,7 +47,7 @@ for (var i = 0; i<variables.length; i++)
 }
 $('#map-comodities-pane>a').each(function(i){
   $(this).attr('data-value',variables[i]);
-  
+
   $(this).click(function(){
     selectedCommodity= $(this).attr('data-value');
     setVariable($(this).attr('data-value'));
@@ -127,9 +127,9 @@ $('#map-comodities-pane>a').each(function(i){
               {
                 ranges[variables[n]].min = data.features[i].properties.commodities[variables[n]].revenue
               }
-              
+
           }
-            
+
         }
       }
     }
@@ -138,8 +138,8 @@ $('#map-comodities-pane>a').each(function(i){
   function: setVariable
   This function loops through the layers
   and assigns new colors to each layer
-  based on the value of the currently 
-  selected commodity. 
+  based on the value of the currently
+  selected commodity.
   This function then calls calculateHeights
   to draw the 3d effect.
   ***********************************/
@@ -150,7 +150,7 @@ $('#map-comodities-pane>a').each(function(i){
     {
       var scale = ranges[name];
       dataLayers[i].eachLayer(function(layer) {
-        setLayerColor(layer);  
+        setLayerColor(layer);
       });
     }
     /**********************
@@ -176,7 +176,7 @@ $('#map-comodities-pane>a').each(function(i){
       //setStrokeWeight(layer,'3.0');
       setFillColor(layer,'#D8D8D8')
       var Revenue_String = (function(){
-        var selected; 
+        var selected;
         $('#map-comodities-pane a').each(function(){
           if ($(this).attr('aria-pressed')=='true')
             selected = $(this).attr('data-value');
@@ -185,10 +185,10 @@ $('#map-comodities-pane>a').each(function(i){
         {
           if (layer.feature.properties.commodities[selected])
             var revenueAmt = layer.feature.properties.commodities[selected].revenue;
-          else 
+          else
             var revenueAmt = 0.0;
         }
-        else 
+        else
         {
           var revenueAmt = 0.0;
         }
@@ -224,26 +224,26 @@ $('#map-comodities-pane>a').each(function(i){
   function zoomToFeature(e) {
       mapdataviz.fitBounds(e.target.getBounds());
       $('g[id*="map_stack_sector"]').each(function(){
-        $(this).remove(); 
+        $(this).remove();
       });
       var timeout = setInterval(function(){
         calculateHeights();
         clearTimeout(timeout);
       },1000);
   }
-  
+
 
   /*******************************
   function: calculateHeights
-  Looks at the map and based on color, 
-  draws repeated shapes at an angle to 
+  Looks at the map and based on color,
+  draws repeated shapes at an angle to
   create a 3d effect.
   The new shapes have css set to allow
   mouse events to pass through
   *********************************/
   function calculateHeights(){
     $('g[id*="map_stack_sector"]').each(function(){
-      $(this).remove(); 
+      $(this).remove();
     });
     var count = 0;
     var idCount=0;
@@ -271,7 +271,7 @@ $('#map-comodities-pane>a').each(function(i){
       count = 0;
     });
   }
-  
+
   /**************************************
   Sets function on the zoom control for the map
   Clears the 3d sections, then redraws after a second delay
@@ -279,7 +279,7 @@ $('#map-comodities-pane>a').each(function(i){
   ***************************************/
   $('.leaflet-control-zoom-in, .leaflet-control-zoom-out').click(function(){
     $('g[id*="map_stack_sector"]').each(function(){
-      $(this).remove(); 
+      $(this).remove();
     });
     var timeout = setInterval(function(){
       calculateHeights();
@@ -367,7 +367,7 @@ function setLayerColor(layer){
           value = layer.feature.properties.commodities[name].revenue;
           console.log(value);
         }
-          
+
       }
       console.log(value);
       var percent = (value / scale.max) * 100;
@@ -395,5 +395,5 @@ function setLayerColor(layer){
       }
 }
 
-  
-  
+
+

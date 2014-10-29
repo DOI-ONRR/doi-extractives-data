@@ -15,77 +15,108 @@
   });
 </script>
 
-<!-- vertical scroll nav -->
-<!-- http://jsfiddle.net/sarathsprakash/8cj7C/7/ -->
+<!-- nav toggle at smaller sizes -->
 <script>
-$(document).ready(function () {
-    $("#first").addClass('scroll_item_active');
-    var main = main = $('#scroll');
-    $('.scroll_item').click(function (event) {
-
-        event.preventDefault();
-        var trgt = $(this).attr('id') + "1";
-        target_offset = $('#' + trgt).offset(),
-        target_top = target_offset.top;
-        $('html, body').animate({
-            scrollTop: target_top
-        }, 500);
-        main.children().removeClass('scroll_item_active');
-
-        $(this).addClass('scroll_item_active');
-
-    });
-
-    $(window).scroll(function (event) {
-        if ($("#first1").offset().top < $(window).scrollTop() + $(window).outerHeight()) {
-            $("#first").addClass('scroll_item_active');
-            $("#second").removeClass('scroll_item_active');
-            $("#third").removeClass('scroll_item_active');
-            $("#fourth").removeClass('scroll_item_active');
-        }
-        if ($("#second1").offset().top < $(window).scrollTop() + 150 && $(window).scrollTop()!= 0) {
-            $("#second").addClass('scroll_item_active');
-            $("#first").removeClass('scroll_item_active');
-            $("#third").removeClass('scroll_item_active');
-            $("#fourth").removeClass('scroll_item_active');
-            
-        }
-        if ($("#third1").offset().top < $(window).scrollTop() + 150) {
-            $("#third").addClass('scroll_item_active');
-           $("#first").removeClass('scroll_item_active');
-            $("#second").removeClass('scroll_item_active');
-            $("#fourth").removeClass('scroll_item_active');
-        }
-        if ($("#fourth1").offset().top < $(window).scrollTop() + 150) {
-            $("#fourth").addClass('scroll_item_active');
-           $("#first").removeClass('scroll_item_active');
-            $("#second").removeClass('scroll_item_active');
-            $("#third").removeClass('scroll_item_active');
-        }
-    });
+document.querySelector( "#nav-toggle" ).addEventListener( "click", function() {
+  this.classList.toggle( "active" );
 });
 </script>
 
+<script>
+$(document).ready(function() {
+        $('#nav-toggle').click(function() {
+                $('.menu').slideToggle("fast");
+        });
+    });
+</script>
 
+{% if page.title == "Home" %}
 
-  <!-- #### below here from NotAlone #### REVIEW -->
-  <script src="{{ site.baseurl }}/static/js/min/init.min.js?c={{ site.cachebuster }}"></script>
-  {% for include in site.data.js-includes %}
-  {% for node in include.pages %}
-  {% if node == page.title %}
-  <script src="{{ site.baseurl }}{{ include.src }}?c={{ site.cachebuster }}"></script>
-  {% endif %}
-  {% endfor %}
-  {% endfor %}
-  <script src="{{ site.baseurl }}/static/js/min/federated.analytics.min.js"></script>
-  <!-- 18F Google Analytics code --> 
+  <!-- vertical scroll nav -->
+  <!-- http://jsfiddle.net/sarathsprakash/8cj7C/7/ -->
   <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  $(document).ready(function () {
+      $("#first").addClass('scroll_item_active');
+      var main = main = $('#scroll');
+      $('.scroll_item').click(function (event) {
 
-  ga('create', 'UA-48605964-8', 'auto');
-  ga('send', 'pageview');
+          event.preventDefault();
+          var trgt = $(this).attr('id') + "1";
+          target_offset = $('#' + trgt).offset(),
+          target_top = target_offset.top;
+          $('html, body').animate({
+              scrollTop: target_top
+          }, 500);
+          main.children().removeClass('scroll_item_active');
+
+          $(this).addClass('scroll_item_active');
+
+      });
+
+      $(window).scroll(function (event) {
+          if ($("#first1").offset().top < $(window).scrollTop() + $(window).outerHeight()) {
+              $("#first").addClass('scroll_item_active');
+              $("#second").removeClass('scroll_item_active');
+              $("#third").removeClass('scroll_item_active');
+              $("#fourth").removeClass('scroll_item_active');
+          }
+          if ($("#second1").offset().top < $(window).scrollTop() + 150 && $(window).scrollTop()!= 0) {
+              $("#second").addClass('scroll_item_active');
+              $("#first").removeClass('scroll_item_active');
+              $("#third").removeClass('scroll_item_active');
+              $("#fourth").removeClass('scroll_item_active');
+              
+          }
+          if ($("#third1").offset().top < $(window).scrollTop() + 150) {
+              $("#third").addClass('scroll_item_active');
+             $("#first").removeClass('scroll_item_active');
+              $("#second").removeClass('scroll_item_active');
+              $("#fourth").removeClass('scroll_item_active');
+          }
+          if ($("#fourth1").offset().top < $(window).scrollTop() + 150) {
+              $("#fourth").addClass('scroll_item_active');
+             $("#first").removeClass('scroll_item_active');
+              $("#second").removeClass('scroll_item_active');
+              $("#third").removeClass('scroll_item_active');
+          }
+      });
+  });
+  </script>
+
+  <!-- sectors -->
+  <script src='{{ site.baseurl }}/static/js/sectors-revenue.js'></script>
+
+  <!-- map -->
+  <script src='{{ site.baseurl }}/static/data/revenue2013.json'></script>
+  <script src='{{ site.baseurl }}/static/data/0_GOM-planarea-NAD27-simp.geojson'></script>
+  <script src='{{ site.baseurl }}/static/data/0_PC-planarea-NAD83-simp.geojson'></script>
+  <script src='{{ site.baseurl }}/static/data/0_AK-planarea-NAD83-simp.geojson'></script>
+  <script src='{{ site.baseurl }}/static/data/0_ATL-planarea-NAD83-simp.geojson'></script>
+  <script src='{{ site.baseurl }}/static/js/onrrmap.js'></script>
+
+  <!-- disbursement -->
+  <script src='{{ site.baseurl }}/static/js/disbursement.js'></script>
+
+{% endif %}
+
+<!-- #### below here from NotAlone #### REVIEW -->
+<script src="{{ site.baseurl }}/static/js/min/init.min.js?c={{ site.cachebuster }}"></script>
+{% for include in site.data.js-includes %}
+{% for node in include.pages %}
+{% if node == page.title %}
+<script src="{{ site.baseurl }}{{ include.src }}?c={{ site.cachebuster }}"></script>
+{% endif %}
+{% endfor %}
+{% endfor %}
+<script src="{{ site.baseurl }}/static/js/min/federated.analytics.min.js"></script>
+<!-- 18F Google Analytics code --> 
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-48605964-8', 'auto');
+ga('send', 'pageview');
 
 </script>

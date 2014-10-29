@@ -427,6 +427,11 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
       @include small-type(2.16);
     }
   }
+  .subpage {
+    .small {
+      @include small-type(1.6);
+    }
+  }
 }
 .intro {
   @include span-columns(11);

@@ -371,6 +371,9 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
     background: url(../img/oil-pump.jpg) no-repeat 60% 100% fixed;
   }
   @include respond-to(large-up) { 
+    background: url(../img/oil-pump.jpg) no-repeat 50% 80% fixed;
+  }
+  @include respond-to(largest-up) { 
     background: url(../img/oil-pump.jpg) no-repeat 100% 100% fixed;
   }
   @include prefixer(background-size, cover, webkit moz o spec);

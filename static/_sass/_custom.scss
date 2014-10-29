@@ -71,6 +71,7 @@ sub {
     }
   }
 }
+
 #burst-text {
   position: absolute;
   top: 36px;
@@ -87,8 +88,10 @@ sub {
     color: white;
   }
 }
+
 // Nav
 //============================================
+
 ul.menu a.active li {
   border-bottom: 3px solid $red;
   &:hover, &:focus {
@@ -297,7 +300,13 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
   border-bottom: $section-border;
   min-width: 100%;
   min-height: 100%;
-  background: url(../img/oil-pump.jpg) no-repeat 100% 100% fixed;
+  background: url(../img/oil-pump.jpg) no-repeat 50% 50% fixed;
+  @include respond-to(medium-up) { 
+    background: url(../img/oil-pump.jpg) no-repeat 60% 100% fixed;
+  }
+  @include respond-to(large-up) { 
+    background: url(../img/oil-pump.jpg) no-repeat 100% 100% fixed;
+  }
   @include prefixer(background-size, cover, webkit moz o spec);
   color: white;
   .title {
@@ -351,11 +360,12 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
   @include span-columns(11);
   @include respond-to(small-up) {
     @include span-columns(9);
+    padding-right: 50px;
   }
   background-color: transparentize(black, 0.55);
   margin-left: 20px;
   margin-bottom: 250px;
-  padding: 20px 50px 15px 30px;
+  padding: 20px 15px 15px 30px;
   color: white;
   p {
     @include rem-fallback(font-size, $base-font-size * 1.28);
@@ -479,6 +489,7 @@ $section-margin-top: 40px;
     padding-left: 0;
   }
 }
+
 .break {
   padding: 8px 20px 0px 20px;
   background: url(../img/unsplash_fuzzy_lights.jpg) no-repeat center center fixed;
@@ -488,6 +499,7 @@ $section-margin-top: 40px;
     width: 36px;
   }
 }
+
 //section background color options
 .medium-gray {
   background-color: lighten($medium-gray, 10%);
@@ -512,10 +524,12 @@ $section-margin-top: 40px;
     @include span-columns(9);
   }
 }
+
 .sectors-img {
   height: 40px;
   @include span-columns(2);
 }
+
 .sectors-chart {
   @include span-columns(7);
   background-color: #F8F8F8;
@@ -529,6 +543,7 @@ $section-margin-top: 40px;
     border-bottom: 2px solid $dark-gray;
   }
 }
+
 .sectors-social {
   @include span-columns(11);
   img {
@@ -538,11 +553,13 @@ $section-margin-top: 40px;
     margin-bottom: 20px;
   }
 }
+
 .sectors-big-text {
   @include large-type(1.625);
   font-family: Raleway, sans-serif;
   font-weight: 800;
 }
+
 // sectors viz
 #pie-chart-center {
   height: 160px;
@@ -557,6 +574,7 @@ $section-margin-top: 40px;
   top: -25px;
   left: -23px;
 }
+
 #pie-chart-center-text {
   opacity: 1;
   color: $dark-gray;
@@ -571,6 +589,7 @@ $section-margin-top: 40px;
     font-weight: 800;
   }
 }
+
 #sector-revenue-pie-chart {
   position: relative;
   margin: 0px auto;
@@ -580,17 +599,20 @@ $section-margin-top: 40px;
     width: 410px; //Controls width of pie chart graphic
   }
 }
+
 #sector-revenue-bar-chart {
   float: center;
 }
 
 // Disbursment Bubble Graph
 //============================================
+
 .disbursement {
   a:active {
     text-decoration: underline;
   }
 }
+
 .disbursement-intro {
   @include span-columns(12);
   margin-bottom: 20px;
@@ -618,6 +640,7 @@ $section-margin-top: 40px;
     padding-top: 3px;
   }
 }
+
 .dollars {
   @include span-columns(12);
   margin: 20px 0 60px 0;
@@ -631,6 +654,7 @@ $section-margin-top: 40px;
     @include button(pill, $medium-gray);
   }
 }
+
 #disbursment_totals_bar {
   margin-top: 20px;
   p {

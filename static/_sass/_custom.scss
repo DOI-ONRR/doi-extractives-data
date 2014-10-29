@@ -608,11 +608,10 @@ $section-margin-top: 40px;
     padding-left: 5px;
     @include span-columns(9);
   }
-}
-
-.sectors-img {
-  height: 40px;
-  @include span-columns(2);
+  svg {
+    height: 40px;
+    @include span-columns(2);
+  }
 }
 
 .sectors-chart {

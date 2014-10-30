@@ -31,6 +31,12 @@ $( document ).ready(function() {
       .done(function(json) {
         $(".loading").remove();
         $("#search-results-count").append( json.hits.total + ' Search Results');
+        if (json.hits.total == 0){
+          $("#search-no-results").show();
+        }
+        else
+          $("#search-no-results").remove();
+
         $.each(json.hits.hits, function(i, hit){
 
         var result_description = hit._source.description;
@@ -38,7 +44,7 @@ $( document ).ready(function() {
           var tags = '';
           if(hit._source.tag) {
             $.each(hit._source.tag, function(i, tag) {
-              tags+='&nbsp;<a href="../search/?q=' + tag + '">' + tag + '</a>&nbsp;/'
+              tags+='&nbsp;<a href="../search/?q=' + tag + '" title="Search for '+tag+'">' + tag + '</a>&nbsp;/'
             });
           }
 

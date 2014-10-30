@@ -24,7 +24,7 @@ class: search
     <h1 class="loading">Loading...</h1>
   </div>
 
-  <div class="container search-no-results" id="search-no-results">
+  <div class="container search-no-results" id="search-no-results" style="display:none;">
     <h1>Sorry, no results were found for your search.</h1>
     <h2>Try a new search:</h2>
     <form role="form" id="search" action="{{ site.baseurl }}/search" method="GET">
@@ -35,9 +35,9 @@ class: search
       </div>
     </form>
     <p><strong>Or, try one of these popular searches </strong>
-      / <a href="#">energy</a> / 
-      <a href="#">oil</a> / 
-      <a href="#">conservation</a> / 
+      / <a href="../search/?q=energy" title="Search for energy">energy</a> / 
+      <a href="../search/?q=oil" title="Search for oil">oil</a> / 
+      <a href="../search/?q=conservation" title="Search for conservation">conservation</a> / 
     </p>
   </div>
   

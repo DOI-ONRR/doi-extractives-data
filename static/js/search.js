@@ -17,6 +17,8 @@ $( document ).ready(function() {
   }
   
   var query = GetURLParameter('q');
+  $(".search-string").append(query);
+  $("#site-search-text").attr('value',query);
 
   if(query) {
     $("input#q").val(query);
@@ -36,7 +38,7 @@ $( document ).ready(function() {
           var tags = '';
           if(hit._source.tag) {
             $.each(hit._source.tag, function(i, tag) {
-              tags+='<a href="/search/?q=' + tag + '">' + tag + '</a> /'
+              tags+='&nbsp;<a href="../search/?q=' + tag + '">' + tag + '</a>&nbsp;/'
             });
           }
 
@@ -58,7 +60,7 @@ $( document ).ready(function() {
             +'<p>' 
             + result_description 
             + '</p>'
-            +'<p>Tagged /' 
+            +'<p>Tagged&nbsp;/' 
             + tags 
             +'</p>'
             +'</article>');

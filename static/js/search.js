@@ -19,7 +19,6 @@ $( document ).ready(function() {
   var query = GetURLParameter('q');
 
   if(query) {
-    console.log('query found')
     $("input#q").val(query);
     $("#search-result-list").append('<div class="loading"><span class="glyphicon glyphicon-refresh"></span> Loading</div>');
     $.ajax({
@@ -28,7 +27,6 @@ $( document ).ready(function() {
       dataType: "json"
     })
       .done(function(json) {
-        console.log(json);
         $(".loading").remove();
         $("#search-results-count").append( json.hits.total + ' Search Results');
         $.each(json.hits.hits, function(i, hit){
@@ -36,8 +34,8 @@ $( document ).ready(function() {
         var result_description = hit._source.description;
 
           var tags = '';
-          if(hit._source.tags) {
-            $.each(hit._source.tags, function(i, tag) {
+          if(hit._source.tag) {
+            $.each(hit._source.tag, function(i, tag) {
               tags+='<a href="/search/?q=' + tag + '">' + tag + '</a> /'
             });
           }

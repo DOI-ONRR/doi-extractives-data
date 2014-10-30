@@ -17,8 +17,8 @@ $( document ).ready(function() {
   }
   
   var query = GetURLParameter('q');
-  $(".search-string").append(query);
-  $("#site-search-text").attr('value',query);
+  $(".search-string").append(query.replace(/%20/g,' '));
+  $("#site-search-text").attr('value',query.replace(/%20/g,' '));
 
   if(query) {
     $("input#q").val(query);

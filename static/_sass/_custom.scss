@@ -1,21 +1,26 @@
 // Site-wide
 //============================================
+
 a {
   text-decoration: underline;
 }
+
 a:hover,
 a:focus {
   text-decoration: none;
 }
+
 sup,
 sub {
   vertical-align: baseline;
   position: relative;
   top: -0.4em;
 }
+
 sub {
   top: 0.4em;
 }
+
 .download {
   margin-top: 10px;
 }
@@ -55,6 +60,7 @@ sub {
 
 // Alpha Alert
 //============================================
+
 #burst-12 {
   background: $red;
   width: 80px;
@@ -177,6 +183,8 @@ ul.menu a.active li {
   }
   input[type=search] {
     width: 210px;
+    @include rem-fallback(font-size, $base-font-size * 0.7);
+    font-weight: 300;
   }
   input[type=search]:focus { 
     border-top: 1px solid black; 
@@ -600,11 +608,10 @@ $section-margin-top: 40px;
     padding-left: 5px;
     @include span-columns(9);
   }
-}
-
-.sectors-img {
-  height: 40px;
-  @include span-columns(2);
+  svg {
+    height: 40px;
+    @include span-columns(2);
+  }
 }
 
 .sectors-chart {
@@ -1676,32 +1683,28 @@ $max-width: 100%; //this is setting the width of outer-container.
 
 // Footer
 //============================================
+
 .footer {
+  border-top: $section-border;
   h1 {
-    font-size: rem(16);
+    @extend .h4;
+    font-weight: 500;
   }
   img {
-    width: 80px;
-    padding-right: 10px;
-    float: left;
+    width: 120px;
+    margin-top: -15px;
+    float: right;
   }
-  ul {
-    @include span-columns(6);
-  }
-  li:nth-of-type(1) {
-    padding-top: 1.7rem;
-  }
-  li {
-    font-family: $base-font-family;
-    font-weight: 700;
-    line-height: 1.2;
-    a {
-      color: black;
-      text-decoration: underline;
-      &:hover, &:focus {
-        color: $dark-gray;
-        text-decoration: none;
-      }
+  a {
+    color: black;
+    text-decoration: underline;
+    &:hover, &:focus {
+      color: $red;
+      text-decoration: none;
     }
   }
+}
+
+.footer-column {
+  @include span-columns(6);
 }

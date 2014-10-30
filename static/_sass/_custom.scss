@@ -202,6 +202,20 @@ ul.menu a.active li {
       background-color: $light-gray;
     }
   }
+  ::-webkit-input-placeholder { /* WebKit browsers */
+    color: $dark-gray;
+  }
+  :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: $dark-gray;
+    opacity:  1;
+  }
+  ::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: $dark-gray;
+    opacity: 1;
+  }
+  :-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: $dark-gray;
+  }
 }
 
 // Animated hamburger icon
@@ -1722,6 +1736,20 @@ $max-width: 100%; //this is setting the width of outer-container.
       border-bottom-color: $red;
       background-color: $light-gray;
     }
+  }
+  ::-webkit-input-placeholder { /* WebKit browsers */
+    color: $dark-gray;
+  }
+  :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: $dark-gray;
+    opacity:  1;
+  }
+  ::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: $dark-gray;
+    opacity: 1;
+  }
+  :-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: $dark-gray;
   }
 }
 

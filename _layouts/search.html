@@ -21,9 +21,24 @@ class: search
   </div>
 
   <div class="container" id="search-results-container">
-  <!--MHZ you can change this loading to anything, with a loading class-->
-  <h1 class='loading'>Loading...</h1>
-  
+    <h1 class="loading">Loading...</h1>
+  </div>
+
+  <div class="container search-no-results" id="search-no-results" style="display:none;">
+    <h1>Sorry, no results were found for your search.</h1>
+    <h2>Try a new search:</h2>
+    <form role="form" id="search" action="{{ site.baseurl }}/search" method="GET">
+      <div class="search-content search-new">
+          <label for="site-search-text">Search our resources...</label>
+          <input type="search" class="form-control" id="site-search-text" name="q" title="Search" role="search" placeholder="Search our resources...">
+          <input type="submit" value="&#10095;" title="Submit Search">
+      </div>
+    </form>
+    <p><strong>Or, try one of these popular searches </strong>
+      / <a href="../search/?q=energy" title="Search for energy">energy</a> / 
+      <a href="../search/?q=oil" title="Search for oil">oil</a> / 
+      <a href="../search/?q=conservation" title="Search for conservation">conservation</a> / 
+    </p>
   </div>
   
   <div class="container">

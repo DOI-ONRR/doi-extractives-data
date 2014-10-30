@@ -165,42 +165,34 @@ ul.menu a.active li {
   }
   label {
     position: absolute;
-    color: $dark-gray;
-    font-weight: 300;
-    font-family: $base-font-family;
-    font-size: 0.8em;
-    padding: 5px;
+    left:-999px
   }
   input {
+    background-color: #f8f8f8;
     border-radius: 0;
     border-color: black;
     border-left: none;
     border-bottom-width: 3px;
-    background-color: #f8f8f8;
     height: 30px;
     margin-bottom: 0;
-    float: left;
   }
   input[type=search] {
     width: 210px;
     @include rem-fallback(font-size, $base-font-size * 0.7);
     font-weight: 300;
     color: black;
-  }
-  input[type=search]:focus { 
-    border-top: 1px solid black; 
-    border-right: 1px solid black;   
-    border-bottom: 3px solid $red;
+    float: left;
   }
   input[type=search]:hover {
-    border-top: 1px solid black; 
-    border-right: 1px solid black; 
-    border-bottom: 3px solid black;
+    border-color: $medium-gray;
+  }
+  input[type=search]:focus { 
+    border-color: $red;
   }
   input[type=submit] {
     color: $dark-gray;
     padding: 0 8px 0 10px;
-    float: right;
+    float: left;
     border-top: 1px solid black; 
     border-right: 1px solid black;   
     border-bottom: 3px solid black;
@@ -209,6 +201,20 @@ ul.menu a.active li {
       border-bottom-color: $red;
       background-color: $light-gray;
     }
+  }
+  ::-webkit-input-placeholder { /* WebKit browsers */
+    color: $dark-gray;
+  }
+  :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: $dark-gray;
+    opacity:  1;
+  }
+  ::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: $dark-gray;
+    opacity: 1;
+  }
+  :-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: $dark-gray;
   }
 }
 
@@ -1653,6 +1659,7 @@ $max-width: 100%; //this is setting the width of outer-container.
 
 // Search
 //============================================
+
 .search-results {
   .credit {
       text-align: right;
@@ -1679,6 +1686,70 @@ $max-width: 100%; //this is setting the width of outer-container.
   h1,
   h1 a {
       @extend .h2;
+  }
+}
+
+.search-no-results {
+  h1 {
+    @extend .h2;
+  }
+  h2 {
+    @extend .h3;
+    border-bottom: none;
+  }
+}
+
+.search-new {
+  @include clearfix;
+  label {
+    position: absolute;
+    left:-999px
+  }
+  input {
+    display: inline;
+    border-radius: 0;
+  }
+  input[type=search] {
+    float: left;
+    width: 400px;
+    border-top: 1px solid black; 
+    border-right: 1px solid black;
+    border-left: 1px solid black;   
+    border-bottom: 3px solid black;
+    &:hover {
+      border-color: $medium-gray;
+    }
+    &:focus {
+      border-color: $red;
+    }
+  }
+  input[type=submit] {
+    float: left;
+    color: $dark-gray;
+    background-color: white;
+    padding: 9px 10px 9px 10px;
+    border-top: 1px solid black; 
+    border-right: 1px solid black;   
+    border-bottom: 3px solid black;
+    &:hover, &:focus {
+      color: $red;
+      border-bottom-color: $red;
+      background-color: $light-gray;
+    }
+  }
+  ::-webkit-input-placeholder { /* WebKit browsers */
+    color: $dark-gray;
+  }
+  :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: $dark-gray;
+    opacity:  1;
+  }
+  ::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: $dark-gray;
+    opacity: 1;
+  }
+  :-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: $dark-gray;
   }
 }
 

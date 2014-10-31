@@ -1662,7 +1662,8 @@ $max-width: 100%; //this is setting the width of outer-container.
 
 .search-results {
   .credit {
-      text-align: right;
+    margin-top: 40px;
+    text-align: right;
   }
 }
 
@@ -1673,12 +1674,6 @@ $max-width: 100%; //this is setting the width of outer-container.
   p:last-of-type {
       text-align: right;
   }
-}
-
-.resource-cite {
-  font-size: 12px;
-  font-size: rem(12);
-  text-align: right;
 }
 
 .search-result-list {

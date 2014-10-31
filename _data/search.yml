@@ -1,11 +1,11 @@
-- title: "Energy Information Agency (EIA) State profiles and energy estimates"
+- title: "Energy Information Administration (EIA) State profiles and energy estimates"
   url: http://www.eia.gov/state/
   description: "U.S. state energy information including overviews, rankings, data and analyses."
   tag:
   - energy
   - states
 
-- title: "Energy Information Agency (EIA) Energy Markets and Finance"
+- title: "Energy Information Administration (EIA) Energy Markets and Finance"
   url: http://www.eia.gov/finance/ 
   description: "Financial market analysis and financial data for major energy companies."
   tag:
@@ -15,7 +15,7 @@
   - oil
   - gas
 
-- title: "Energy Information Agency (EIA) Annual Energy Outlook"
+- title: "Energy Information Administration (EIA) Annual Energy Outlook"
   url: http://www.eia.gov/analysis/projection-data.cfm#annualproj
   description: "Data from forecast models on crude oil and petroleum liquids, gasoline, diesel, natural gas, electricity, coal prices, supply, and demand projections as well as interactive tables."
   tag: 
@@ -24,13 +24,13 @@
   - gas
   - coal
 
-- title: "Energy Information Agency (EIA) Total Energy"
+- title: "Energy Information Administration (EIA) Total Energy"
   url: http://www.eia.gov/totalenergy/
   description: "Comprehensive data summaries, comparisons, analysis and projections integrated across all energy sources."
   tag:
   - energy
 
-- title: "Energy Information Agency (EIA) Renewable & Alternative Fuels"
+- title: "Energy Information Administration (EIA) Renewable & Alternative Fuels"
   url: http://www.eia.gov/renewable/
   description: "This site includes information on hydropower, solar, wind, geothermal, biomass and ethanol."
   tag:
@@ -38,7 +38,7 @@
   - renewable
   - fuel
 
-- title:  Energy Information Agency (EIA) Coal
+- title:  Energy Information Administration (EIA) Coal
   url: http://www.eia.gov/coal/
   description: "Reserves, production, prices, employment and productivity, distribution, stocks, imports and exports."
   tag:
@@ -68,3 +68,95 @@
   - energy
   - utilities
   - statistics
+
+- title: Advisory Council on Historic Preservation
+  url: http://www.achp.gov/nhpp.html
+  description: "The Advisory Council’s home page for the National Historic Preservation Program."
+  tag:
+  - historic
+  - preservation
+
+- title: U.S. Geological Survey (USGS) Energy and Minerals Circular 1383-D
+  url: http://pubs.usgs.gov/circ/1383d/
+  description: "U.S. Geological Survey Energy and Minerals Science Strategy—A Resource Lifecycle Approach."
+  tag:
+  - energy
+  - minerals
+  - geological
+
+- title: U.S Geological Survey (USGS) Energy and Minerals Program
+  url: http://www.usgs.gov/energy_minerals/
+  description: "The USGS, Energy and Minerals Mission Area conducts research and assessments on the location, quantity, and quality of mineral and energy resources, including the economic and environmental effects of resource extraction and use."
+  tag:
+  - energy
+  - minerals
+  - geological
+
+- title: Bureau of Land Management (BLM) Energy Home Page
+  url: http://www.blm.gov/wo/st/en/prog/energy.html
+  description: "Learn more about BLM managing Federal onshore oil, gas and coal operations that make significant contributions to the domestic energy supply and more about BLM State Energy Offices."
+  tag:
+  - energy
+  - federal
+  - oil
+  - gas
+  - coal
+
+- title: "Office of Surface Mining, Reclamation and Enforcement (OSMRE)"
+  url: http://www.osmre.gov/index.shtm
+  description: "Learn more about OSMRE, created in 1977, when Congress enacted the Surface Mining Control and Reclamation Act. The OSMRE works with states and tribes to ensure that citizens and the environment are protected during coal mining and that the land is restored to beneficial use when mining is finished."
+  tag:
+  - mining
+  - coal
+  - reclamation
+
+- title: U.S. Census Bureau Energy and Utilities Statistics
+  url: http://www.census.gov/compendia/statab/cats/energy_utilities.html
+  description: "Statistics on fuel resources, energy production and consumption, electric energy, hydroelectric power, nuclear power, solar energy, wood energy, and the electric and gas utility industries."
+  tag:
+  - energy
+  - utilities
+  - statistics
+
+- title: Bureau of Ocean Energy Management (BOEM) Oil and Gas Energy Program
+  url:  http://www.boem.gov/Oil-and-Gas-Energy-Program/
+  description: "Learn more about BOEM’s Oil and Gas Energy Program, which includes: leasing, resource evaluation, exploration and development plans, energy economics, mapping and data and the five year program."
+  tag:
+  - energy
+  - ocean
+  - oil
+  - gas
+
+- title: Bureau of Ocean Energy Management (BOEM) Renewable Energy Program
+  url: http://www.boem.gov/Renewable-Energy/
+  description: "Learn more about BOEM’s Renewable Energy Program, which includes: regulatory framework and guidelines, lease and grant information, stakeholder engagement, state activities, studies, mapping & data, historic preservation activities and fact sheets."
+  tag:
+  - ocean
+  - renewable
+  - energy
+
+- title: Bureau of Safety and Environmental Enforcement (BSEE) Offshore Statistics and Facts
+  url: http://www.bsee.gov/BSEE-Newsroom/Offshore-Stats-and-Facts/Offshore-Stats-and-Facts/
+  description: "BSEE, responsible for managing offshore public lands, provides the public with technical information about all facets of offshore activities such as leases, production and operators."
+  tag:
+  - ocean
+  - energy
+  - leases
+  - production
+
+- title: "Department of the Interior, Office of Natural Resources Revenue (ONRR)"
+  url: http://www.onrr.gov/
+  description: "This site contains information on royalties, rents, bonuses, and other revenues that mineral royalty payors report to ONRR and payments that ONRR makes to American Indian Tribes and allottees; states and their counties, parishes, and boroughs; federal agencies; various special purpose funds; and the U.S. Treasury. Disbursements come from collected revenues."
+  tag:
+  - minerals
+  - revenue
+
+- title: Department of Energy
+  url: http://energy.gov/science-innovation/energy-sources
+  description: "Information on primary energy sources, including nuclear energy, fossil energy -- like oil, coal and natural gas -- and renewable sources like wind, solar and hydropower."
+  tag:
+  - energy
+  - oil
+  - gas
+  - coal
+  - renewable

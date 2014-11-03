@@ -74,6 +74,9 @@ $( document ).ready(function() {
       });
   }
   else {
-    console.log('no query!');
+    $("#search-no-results").show();
+    $(".loading").remove();
+    $("#search-results-count").append( 0 + ' Search Results');
+
   }
 });

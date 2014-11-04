@@ -12,7 +12,8 @@ var gomDrawOrder = ['Eastern Gulf of Mexico','Central Gulf of Mexico','Western G
 
 
 var mapdataviz;
-if ($(document).width() <= 550)
+var mobile = $(document).width() <= 550;
+if (mobile)
 {
   mapdataviz = L.map('map', {
     scrollWheelZoom: false
@@ -80,27 +81,56 @@ $('#map-comodities-pane>a').each(function(i){
 
   // statesData comes from the 'revenue2013.json' included above
   statesData = sortGeoJson(statesData,statesDrawOrder);
-  var statesLayer = L.geoJson(statesData, {
+  var statesLayer, gomLayer, atlanticLayer, pacificLayer, AKLayer;
+  if (!mobile)
+  {
+    statesLayer = L.geoJson(statesData, {
     onEachFeature : onEachFeature
-  }).addTo(mapdataviz);
+    }).addTo(mapdataviz);
 
-  GOM_NAD27_simp = sortGeoJson(GOM_NAD27_simp, gomDrawOrder);
-  var gomLayer = L.geoJson(GOM_NAD27_simp,{
-    onEachFeature: onEachFeature
-  }).addTo(mapdataviz);
+    GOM_NAD27_simp = sortGeoJson(GOM_NAD27_simp, gomDrawOrder);
+    gomLayer = L.geoJson(GOM_NAD27_simp,{
+      onEachFeature: onEachFeature
+    }).addTo(mapdataviz);
 
-  ATL_NAD83_simp = sortGeoJson(ATL_NAD83_simp ,atlanticDrawOrder);
-  var atlanticLayer = L.geoJson(ATL_NAD83_simp,{
-    onEachFeature: onEachFeature
-  }).addTo(mapdataviz);
+    ATL_NAD83_simp = sortGeoJson(ATL_NAD83_simp ,atlanticDrawOrder);
+    atlanticLayer = L.geoJson(ATL_NAD83_simp,{
+      onEachFeature: onEachFeature
+    }).addTo(mapdataviz);
 
-  var pacificLayer = L.geoJson(PC_NAD83_simp,{
-    onEachFeature: onEachFeature
-  }).addTo(mapdataviz);
+    pacificLayer = L.geoJson(PC_NAD83_simp,{
+      onEachFeature: onEachFeature
+    }).addTo(mapdataviz);
 
-  var AKLayer = L.geoJson(AK_NAD83_simp,{
-    onEachFeature: onEachFeature
-  }).addTo(mapdataviz);
+    AKLayer = L.geoJson(AK_NAD83_simp,{
+      onEachFeature: onEachFeature
+    }).addTo(mapdataviz);
+  }
+  else
+  {
+    statesLayer = L.geoJson(statesData, {
+    onEachFeature : onEachFeatureMobile
+    }).addTo(mapdataviz);
+
+    GOM_NAD27_simp = sortGeoJson(GOM_NAD27_simp, gomDrawOrder);
+    gomLayer = L.geoJson(GOM_NAD27_simp,{
+      onEachFeature: onEachFeatureMobile
+    }).addTo(mapdataviz);
+
+    ATL_NAD83_simp = sortGeoJson(ATL_NAD83_simp ,atlanticDrawOrder);
+    atlanticLayer = L.geoJson(ATL_NAD83_simp,{
+      onEachFeature: onEachFeatureMobile
+    }).addTo(mapdataviz);
+
+    pacificLayer = L.geoJson(PC_NAD83_simp,{
+      onEachFeature: onEachFeatureMobile
+    }).addTo(mapdataviz);
+
+    AKLayer = L.geoJson(AK_NAD83_simp,{
+      onEachFeature: onEachFeatureMobile
+    }).addTo(mapdataviz);
+  }
+  
 
 
   setRange(GOM_NAD27_simp);
@@ -120,9 +150,19 @@ $('#map-comodities-pane>a').each(function(i){
 
   function loadGeoJson(data, map)
   {
-    return  L.geoJson(data, {
-      onEachFeature: onEachFeature
-    }).addTo(map);
+    if (!mobile)
+    {
+      return  L.geoJson(data, {
+        onEachFeature: onEachFeature
+      }).addTo(map);  
+    }
+    else
+    {
+      return  L.geoJson(data, {
+        onEachFeature: onEachFeatureMobile
+      }).addTo(map);
+    }
+    
   }
   function setRange(data){
     for (var i=0; i<data.features.length; i++)
@@ -179,10 +219,23 @@ $('#map-comodities-pane>a').each(function(i){
           click: zoomToFeature
       });
   }
+  function onEachFeatureMobile(feature, layer) {
+      layer.on({
+          mousemove: mousemove,
+          mouseout: mouseout,
+          click: mousemove
+      });
+  }
 
   var closeTooltip;
-
+  var lastAreaViewed = false;
   function mousemove(e) {
+      if (mobile)
+      {
+        if (lastAreaViewed)
+          mouseout(lastAreaViewed);
+        lastAreaViewed = e;
+      }
       var layer = e.target;
       //setStrokeWeight(layer,'3.0');
       setFillColor(layer,'#D8D8D8')

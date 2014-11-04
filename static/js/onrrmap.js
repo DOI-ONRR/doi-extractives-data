@@ -11,9 +11,20 @@ var atlanticDrawOrder = [ 'North Atlantic','Mid-Atlantic' ,'South Atlantic','Str
 var gomDrawOrder = ['Eastern Gulf of Mexico','Central Gulf of Mexico','Western Gulf of Mexico']
 
 
-var mapdataviz = L.map('map', {
+var mapdataviz;
+if ($(document).width() <= 550)
+{
+  mapdataviz = L.map('map', {
+    scrollWheelZoom: false
+    }).setView([41.5, -99.5795], 3);
+}
+else
+{
+  mapdataviz = L.map('map', {
     scrollWheelZoom: false
   }).setView([41.5, -99.5795], 4);
+}
+
 L.tileLayer('https://a.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: 'Tiles Courtesy of <a href="https://www.mapquest.com/" target="_blank">MapQuest</a>',
     maxZoom: 18,

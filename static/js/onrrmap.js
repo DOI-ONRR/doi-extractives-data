@@ -221,8 +221,7 @@ $('#map-comodities-pane>a').each(function(i){
   }
   function onEachFeatureMobile(feature, layer) {
       layer.on({
-          mousemove: mousemove,
-          mouseout: mouseout,
+          
           click: mousemove
       });
   }
@@ -456,6 +455,19 @@ function setLayerColor(layer){
         });
       }
 }
+
+$(document).ready(function(){
+  var mobile = $(document).width() <= 550;
+  if (mobile)
+  {
+     var pane = $('#map-info-pane');
+     pane.toggleClass("map-info-pane-minimized");
+     pane.click(function(e){
+      $(this).toggleClass("map-info-pane-minimized");
+      $(this).toggleClass("map-info-pane-expanded");
+     })
+  }
+})
 
 
 

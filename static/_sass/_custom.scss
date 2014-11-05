@@ -1784,5 +1784,8 @@ $max-width: 100%; //this is setting the width of outer-container.
 }
 
 .footer-column {
-  @include span-columns(6);
+@include span-columns(12);
+  @include respond-to(small-up) {
+    @include span-columns(6);
+  }
 }

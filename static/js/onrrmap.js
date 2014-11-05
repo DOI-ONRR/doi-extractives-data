@@ -461,7 +461,6 @@ $(document).ready(function(){
   if (mobile)
   {
      var pane = $('#map-info-pane');
-     pane.toggleClass("map-info-pane-minimized");
      pane.click(function(e){
       $(this).toggleClass("map-info-pane-minimized");
       $(this).toggleClass("map-info-pane-expanded");

@@ -1116,16 +1116,39 @@ div.disbursement_bubble_rollover {
 
 .map-info-pane {
   position: absolute;
-  top: 399px;
   right: 0;
-  min-height: 50px;
   width: 100%;
+  @include prefixer(transition, height 2s, webkit moz spec);
+  .map-info-pane-minimized {
+    top: 360px;
+    height: 43px;
+    overflow: hidden;
+    span {
+      float: right;
+      &:after {
+        content: '▲';
+      }
+    }
+  }
+  .map-info-pane-expanded {
+    top: 190px;
+    min-height: 50px;
+    overflow: visible;
+    span {
+      &:after {
+        content: '▼';
+      }
+    }
+  }
   @include respond-to(small-up) {
     top: 10px;
     right: 10px;
     min-height: 50px;
     min-width: 150px;
     max-width: 200px;
+    span {
+      display: none;
+    }
   }
   line-height: 1.1;
   padding: 10px;

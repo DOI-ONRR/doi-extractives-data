@@ -271,7 +271,7 @@ $('#map-comodities-pane>a').each(function(i){
         return returnString;
       })();
 
-      $('#map-info-pane').html('<h1>'+layer.feature.properties.name + '</h1>' + Revenue_String).show();
+      $('#map-info-pane').html('<h1>'+layer.feature.properties.name + '<span></span></h1>' + Revenue_String).show();
   }
 
   function mouseout(e) {

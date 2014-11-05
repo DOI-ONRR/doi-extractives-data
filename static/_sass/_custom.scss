@@ -1494,6 +1494,191 @@ article {
   }
 }
 
+// Data v2
+//===============================================
+$max-width: 100%; //this is setting the width of outer-container.
+//find this variable elsewhere and change it
+//what about the rest of the site that is not full-width?
+.portal {
+  @include outer-container;
+}
+
+.portal-main {
+  @include span-columns(11);
+}
+
+.portal-controls {
+  @include span-columns(1);
+  @include omega();
+  background: $orange0;
+}
+
+.dashboard-nav {
+  @include span-columns(12);
+  background: shade($orange1, 20%);
+  padding-left: 10px;
+  a {
+    color: white;
+  }
+}
+.last {
+  //refactor to remove this helper class
+  @include omega();
+}
+.dashboard-head {
+  @include span-columns(12);
+  background: $orange1;
+  color: white;
+  padding: 10px 0 10px 10px;
+  div:first-child {
+    @include span-columns(3 of 12);
+  }
+  div:last-child {
+    @include omega();
+  }
+  .dashboard-choices {
+    margin-left: -0.4%;
+    @include span-columns(4 of 12);
+    h1 {
+      font-size: rem(20);
+    }
+  }
+}
+.label-switch {
+  $switch-width: 52px;
+  $switch-padding: 2px;
+  $switch-height: 32px;
+  $switch-radius: $switch-height;
+  $knob-height: $switch-height - ($switch-padding * 2);
+  $knob-width: $knob-height;
+  $knob-radius: $switch-height - ($switch-padding * 2);
+  align-self: center;
+  border-radius: $switch-radius;
+  cursor: pointer;
+  display: inline;
+  height: $switch-height;
+  position: relative;
+  vertical-align: middle;
+  width: $switch-width;
+  @include box-sizing(border-box);
+  input[type="checkbox"] {
+    display: none;
+    + .checkbox {
+      background: lighten($blue, 20%);
+      border: none;
+      border-radius: $switch-radius;
+      cursor: pointer;
+      height: $switch-height;
+      margin: 0 0 15px 0;
+      padding: 0;
+      position: relative;
+      width: $switch-width;
+      z-index: 0;
+      @include box-sizing(border-box);
+      @include transition(all 0.3s ease);
+      &:before {
+        background: lighten($blue, 20%);
+        border-radius: $switch-radius;
+        content: ' ';
+        height: $knob-radius;
+        width: $switch-width - ($switch-padding * 2);
+        z-index: 1;
+        @include box-sizing(border-box);
+        @include position(absolute, 2px 0 0 2px);
+        @include transition(all 0.3s ease);
+        @include transform(scale(1));
+      }
+      &:after {
+        background: lighten($blue, 10%);
+        border-radius: $knob-radius;
+        content: ' ';
+        height: $knob-height;
+        width: $knob-width;
+        z-index: 2;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+        @include position(absolute, 2px 0 0 2px);
+        @include transition(all 0.3s ease);
+      }
+    }
+    &:checked {
+      + .checkbox {
+        background: white;
+        &:before {
+          @include transform(scale(0));
+        }
+        &:after {
+          left: $switch-width - $knob-width - ($switch-padding);
+        }
+      }
+    }
+  }
+}
+.side-nav {
+  @include span-columns(3);
+  height: 100%;
+  background-color: $dark-gray;
+  color: white;
+  padding: 10px 30px 15px 30px;
+  label {
+    font-weight: 300;
+  }
+  h1 {
+    @include span-columns(3 of 3);
+    @include omega();
+    font-size: rem(24);
+    line-height: 1;
+    border-top: 1px solid white;
+    margin: 30px 0 10px 0;
+    padding-top: 3px;
+    .checkbox {
+      float: right;
+    }
+  }
+  .side-nav-left {
+    @include span-columns(1 of 3);
+  }
+  .side-nav-middle {
+    @include span-columns(1 of 3);
+  }
+  .side-nav-middle-plus {
+    @include span-columns(2 of 3);
+    @include omega();
+  }
+  .side-nav-right {
+    @include span-columns(1 of 3);
+    @include omega();
+  }
+}
+.dashboard-face {
+  @include span-columns(9);
+  padding-top: 30px;
+  h2 {
+    margin-bottom: 20px;
+  }
+  .rev-by-commodity {
+    @include span-columns(6 of 9);
+  }
+  .total-rev {
+    @include span-columns(3 of 9);
+    @include omega();
+    h1 {
+      margin-top: 10px;
+    }
+  }
+  .dashboard-search {
+    @include span-columns(8 of 9);
+    @include omega();
+    margin-top: 20px;
+  }
+}
+.dashboard-button {
+  @include button(shade($blue, 10%));
+  margin-bottom: 15px;
+  &:hover, &:focus {
+    color: $medium-gray;
+  }
+}
+
 // Data Dashboard
 //===============================================
 $max-width: 100%; //this is setting the width of outer-container.

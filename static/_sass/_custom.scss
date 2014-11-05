@@ -57,6 +57,16 @@ sub {
   font-style: italic;
 }
 
+.stage-bug {
+  display: block;
+  background: $light-gray;
+  color: $dark-gray;
+  border-top: none;
+  text-align: center;
+  @include rem-fallback(font-size, 0.85);
+  padding: .3em 0;
+}
+
 
 // Alpha Alert
 //============================================
@@ -377,7 +387,8 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
 }
 
 .splash {
-  padding: 18px 0px 0px 0px;
+  // padding: 18 0 0 0; for usa bug
+  padding: 0;
   border-bottom: $section-border;
   min-width: 100%;
   min-height: 100%;

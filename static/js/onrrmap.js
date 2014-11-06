@@ -68,6 +68,7 @@ $('#map-comodities-pane>a').each(function(i){
     });
 
     $(this).attr('aria-pressed','true');
+    $('#map-scale-pane > h1').html(function(){return selectedCommodity == 'wind' || selectedCommodity == 'geothermal' ? 'Revenues' : 'Royalties';});
   })
 
 

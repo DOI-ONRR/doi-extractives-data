@@ -256,7 +256,8 @@ $('#map-comodities-pane>a').each(function(i){
           var revenueAmt = 0.0;
         }
         var revenueType = selected.capitalize();
-        var returnString ="<div>"+revenueType+" Royalties:<br />$"+revenueAmt.formatMoney(2,'.',',')+"</div>";
+        var roy_rev = revenueType == 'Wind' || revenueType == 'Geothermal' ? ' Revenues' : ' Royalties';
+        var returnString ="<div>"+revenueType+roy_rev+":<br />$"+revenueAmt.formatMoney(2,'.',',')+"</div>";
         if (selected == 'oil' || selected == 'gas')
         {
           if (layer.feature.properties.leases)

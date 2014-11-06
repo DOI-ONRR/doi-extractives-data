@@ -1162,14 +1162,11 @@ div.disbursement_bubble_rollover {
 }
 
 .map-info-pane-minimized {
-  top: 360px;
-  height: 43px;
+  bottom: 0px;
+  
   overflow: hidden;
   span {
     float: right;
-    &:after {
-      content: '▲';
-    }
   }
 }
 

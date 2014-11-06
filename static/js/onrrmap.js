@@ -270,7 +270,13 @@ $('#map-comodities-pane>a').each(function(i){
         return returnString;
       })();
 
-      $('#map-info-pane').html('<h1>'+layer.feature.properties.name + '<span></span></h1>' + Revenue_String).show();
+      //$('#map-info-pane').html('<h1>'+layer.feature.properties.name + '<span></span></h1>' + Revenue_String).show();
+      $('#map-info-pane > h1').html(function(){
+          return mobile ? layer.feature.properties.name + "<span>▲</span>" : layer.feature.properties.name + "<span></span>" 
+        }
+      );
+      $('#map-info-pane > div').html(Revenue_String);
+      $('#map-info-pane').show();
   }
 
   function mouseout(e) {
@@ -461,9 +467,15 @@ $(document).ready(function(){
   if (mobile)
   {
      var pane = $('#map-info-pane');
+     pane.addClass('map-info-pane-minimized');
+     $("#map-info-pane > div").css('display','none');
      pane.click(function(e){
-      $(this).toggleClass("map-info-pane-minimized");
-      $(this).toggleClass("map-info-pane-expanded");
+      $content = $("#map-info-pane > div");
+      $content.slideToggle(500, function(){
+        $('#map-info-pane > h1 > span').text(function(){
+          return $content.is(":visible") ? "▼":"▲"; 
+        })  
+      });
      })
   }
 })

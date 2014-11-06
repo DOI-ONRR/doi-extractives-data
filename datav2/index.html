@@ -8,275 +8,52 @@ description: This is a sample beta site for Federal natural resource revenues.
 
 <div class="portal">
 
-  {% include nav.html %}
+  <!-- {% include nav.html %} -->
 
   <div class="portal-main">
-    <h1>Filter &amp; Download</h1>
-  </div>
 
-  <div class="portal-controls" id="OptionsList">
-
-    <h1><label for="chk-energy">Oil &amp; Gas
-      <input class="groupCheckbox" type="checkbox" name="energygroup" value="energy" id="chk-energy" checked />
-    </label></h1>
-    <!-- <div class="side-nav-left">
-      <label class="label-switch" for="chk-gas">Gas
-        <input class="energy commodity" type="checkbox" name="energy" value="Gas" id="chk-gas" checked />
-        <div class="checkbox"></div>
-      </label>
-    </div>
-    <div class="side-nav-middle">
-      <label class="label-switch" for="chk-oil">Oil
-        <input class="energy commodity" type="checkbox" name="oil" value="Oil" id="chk-oil" checked />
-        <div class="checkbox"></div>
-      </label>
-    </div>
-    <div class="side-nav-right last">
-      <label class="label-switch" for="chk-oilgas">Oil &amp; Gas
-        <input class="energy commodity" type="checkbox" name="energy" value="Oil & Gas" id="chk-oilgas" checked />
-        <div class="checkbox"></div>
-      </label> -->
-      <!-- <label class="label-switch" for="chk-other">Other
-        <input class="energy commodity" type="checkbox" name="commodity" value="Other Commodities" id="chk-other" checked />
-        <div class="checkbox"></div>
-      </label> -->
-
-    <h1><label for="chk-coal">Coal
-      <input class="groupCheckbox" type="checkbox" name="coalgroup" value="coalgroup" id="chk-coal" checked />
-    </label></h1>
-    <!-- <div class="last">
-      <label class="label-switch" for="chk-coal">Coal
-        <input class="coalgroup commodity" type="checkbox" name="coal" value="Coal" id="chk-coal" checked />
-        <div class="checkbox"></div>
-      </label>
-    </div> -->
-
-    <h1><label for="chk-renewables">Renewables
-      <input class="groupCheckbox" type="checkbox" name="renewables" value="renewables" id="chk-renewables" checked />
-    </label></h1>
-    <!-- <div class="side-nav-left">
-      <label class="label-switch" for="chk-Wind">Wind
-        <input class="renewables commodity" type="checkbox" name="wind" value="Wind" id="chk-Wind" checked />
-        <div class="checkbox"></div>
-      </label>
-    </div>
-    <div class="side-nav-middle-plus">
-      <label class="label-switch" for="chk-Geothermal">Geothermal
-       <input class="renewables commodity" type="checkbox" name="geothermal" value="Geothermal" id="chk-Geothermal" checked />
-       <div class="checkbox"></div>
-      </label> -->
-      <!-- <label class="label-switch" for="chk-na">n/a
-        <input class="renewables commodity" type="checkbox" name="commodity" value="n/a" id="chk-na" checked />
-        <div class="checkbox"></div>
-      </label> -->
-
-    <h1><label for="chk-minerals">Other
-      <input class="groupCheckbox" type="checkbox" name="energygroup" value="other" id="chk-minerals" checked />
-      <div class="checkbox"></div>
-    </label></h1>
-    <!-- <div class="side-nav-left">
-      <label class="label-switch" for="chk-clay">Clay
-        <input class="other commodity" type="checkbox" name="commodity" value="Clay" id="chk-clay" checked />
-        <div class="checkbox"></div>
-      </label>
-      <label class="label-switch" for="chk-Copper">Copper
-        <input class="other commodity" type="checkbox" name="commodity" value="Copper" id="chk-Copper" checked />
-        <div class="checkbox"></div>
-      </label>
-      <label class="label-switch" for="chk-Potassium">Potassium
-        <input class="other commodity" type="checkbox" name="commodity" value="Potassium" id="chk-Potassium" checked />
-        <div class="checkbox"></div>
-      </label>
-      <label class="label-switch" for="chk-Other_Commodities">Other Commodities
-        <input class="other commodity" type="checkbox" name="commodity" value="Other Commodities" id="chk-Other_Commodities" checked />
-        <div class="checkbox"></div>
-      </label>
-    </div>
-    <div class="side-nav-middle">
-      <label class="label-switch" for="chk-Gilsonite">Gilsonite
-        <input class="other commodity" type="checkbox" name="commodity" value="Gilsonite" id="chk-Gilsonite" checked />
-        <div class="checkbox"></div>
-      </label>
-      <label class="label-switch" for="chk-Hardrock">Hardrock
-        <input class="other commodity" type="checkbox" name="commodity" value="Hardrock" id="chk-Hardrock" checked />
-        <div class="checkbox"></div>
-      <label class="label-switch" for="chk-OilShale">Oil Shale
-        <input class="other commodity" type="checkbox" name="commodity" value="Oil Shale" id="chk-OilShale" checked />
-        <div class="checkbox"></div>
-      </label>
-    </div>
-    <div class="side-nav-right">
-      <label class="label-switch" for="chk-Phosphate">Phosphate
-        <input class="other commodity" type="checkbox" name="commodity" value="Phosphate" id="chk-Phosphate" checked />
-        <div class="checkbox"></div>
-      </label>
-      <label class="label-switch" for="chk-Sodium">Sodium
-        <input class="other commodity" type="checkbox" name="commodity" value="Sodium" id="chk-Sodium" checked />
-        <div class="checkbox"></div>
-      </label>
-      <label class="label-switch" for="chk-Sulfur">Sulfur
-        <input class="other commodity" type="checkbox" name="commodity" value="Sulfur" id="chk-Sulfur" checked />
-        <div class="checkbox"></div>
-      </label>
-    </div>
-  </div> -->
-</div>
-
-  <div class="dashboard-head">
-    <div><h1>Explore Our Data</h1></div>
-    <div class="dashboard-choices"><h1>Natural Resource Revenues from U.S. Federal and Indian Lands by Company, Commodity, and Revenue Type</h1></div>
-    <div class="dashboard-choices"><h1>Choose a year [2012]</h1></div>
-  </div>
-
-
-<!-- START Side Options Nav -->
-  <div class="side-nav" id="OptionsList">
-
-    <h1><label class="label-switch last" for="chk-energy">Oil &amp; Gas
-      <input class="groupCheckbox" type="checkbox" name="energygroup" value="energy" id="chk-energy" checked />
-      <div class="checkbox"></div>
-    </label></h1>
-    <div class="side-nav-left">
-      <label class="label-switch" for="chk-gas">Gas
-        <input class="energy commodity" type="checkbox" name="energy" value="Gas" id="chk-gas" checked />
-        <div class="checkbox"></div>
-      </label>
-    </div>
-    <div class="side-nav-middle">
-      <label class="label-switch" for="chk-oil">Oil
-        <input class="energy commodity" type="checkbox" name="oil" value="Oil" id="chk-oil" checked />
-        <div class="checkbox"></div>
-      </label>
-    </div>
-    <div class="side-nav-right last">
-      <label class="label-switch" for="chk-oilgas">Oil &amp; Gas
-        <input class="energy commodity" type="checkbox" name="energy" value="Oil & Gas" id="chk-oilgas" checked />
-        <div class="checkbox"></div>
-      </label>
-      <!-- <label class="label-switch" for="chk-other">Other
-        <input class="energy commodity" type="checkbox" name="commodity" value="Other Commodities" id="chk-other" checked />
-        <div class="checkbox"></div>
-      </label> -->
+    <div class="portal-title">
+      <a href="{{ site.baseurl }}">
+        <h1>Natural Resource Revenue</h1>
+        <h1><span class="small">from</span> U.S. Federal Lands</h1>
+      </a>
     </div>
 
-    <h1><label class="label-switch last" for="chk-coal">Coal
-      <input class="groupCheckbox" type="checkbox" name="coalgroup" value="coalgroup" id="chk-coal" checked />
-      <div class="checkbox"></div>
-    </label></h1>
-    <div class="last">
-      <label class="label-switch" for="chk-coal">Coal
-        <input class="coalgroup commodity" type="checkbox" name="coal" value="Coal" id="chk-coal" checked />
-        <div class="checkbox"></div>
-      </label>
+    <div class="portal-further-title">
+      <h1>Filter &amp; Download Data</h1>
+      <p>Natural Resource Revenues from U.S. Federal and Indian Lands by Company, Commodity, and Revenue Type. <br/>
+      Calendar year 2012 data.</p>
     </div>
 
-    <h1><label class="label-switch last" for="chk-renewables">Renewables
-      <input class="groupCheckbox" type="checkbox" name="renewables" value="renewables" id="chk-renewables" checked />
-      <div class="checkbox"></div>
-    </label></h1>
-    <div class="side-nav-left">
-      <label class="label-switch" for="chk-Wind">Wind
-        <input class="renewables commodity" type="checkbox" name="wind" value="Wind" id="chk-Wind" checked />
-        <div class="checkbox"></div>
-      </label>
-    </div>
-    <div class="side-nav-middle-plus">
-      <label class="label-switch" for="chk-Geothermal">Geothermal
-       <input class="renewables commodity" type="checkbox" name="geothermal" value="Geothermal" id="chk-Geothermal" checked />
-       <div class="checkbox"></div>
-      </label>
-      <!-- <label class="label-switch" for="chk-na">n/a
-        <input class="renewables commodity" type="checkbox" name="commodity" value="n/a" id="chk-na" checked />
-        <div class="checkbox"></div>
-      </label> -->
+    <div class="portal-chart" id='dashboard-bar-rev-by-commodity'>
+      <h1>Total Revenues by Commodity</h1>
     </div>
 
-    <h1><label class="label-switch" for="chk-minerals">Other
-      <input class="groupCheckbox" type="checkbox" name="energygroup" value="other" id="chk-minerals" checked />
-      <div class="checkbox"></div>
-    </label></h1>
-    <div class="side-nav-left">
-      <label class="label-switch" for="chk-clay">Clay
-        <input class="other commodity" type="checkbox" name="commodity" value="Clay" id="chk-clay" checked />
-        <div class="checkbox"></div>
-      </label>
-      <label class="label-switch" for="chk-Copper">Copper
-        <input class="other commodity" type="checkbox" name="commodity" value="Copper" id="chk-Copper" checked />
-        <div class="checkbox"></div>
-      </label>
-      <label class="label-switch" for="chk-Potassium">Potassium
-        <input class="other commodity" type="checkbox" name="commodity" value="Potassium" id="chk-Potassium" checked />
-        <div class="checkbox"></div>
-      </label>
-      <label class="label-switch" for="chk-Other_Commodities">Other Commodities
-        <input class="other commodity" type="checkbox" name="commodity" value="Other Commodities" id="chk-Other_Commodities" checked />
-        <div class="checkbox"></div>
-      </label>
-    </div>
-    <div class="side-nav-middle">
-      <label class="label-switch" for="chk-Gilsonite">Gilsonite
-        <input class="other commodity" type="checkbox" name="commodity" value="Gilsonite" id="chk-Gilsonite" checked />
-        <div class="checkbox"></div>
-      </label>
-      <label class="label-switch" for="chk-Hardrock">Hardrock
-        <input class="other commodity" type="checkbox" name="commodity" value="Hardrock" id="chk-Hardrock" checked />
-        <div class="checkbox"></div>
-      <label class="label-switch" for="chk-OilShale">Oil Shale
-        <input class="other commodity" type="checkbox" name="commodity" value="Oil Shale" id="chk-OilShale" checked />
-        <div class="checkbox"></div>
-      </label>
-    </div>
-    <div class="side-nav-right">
-      <label class="label-switch" for="chk-Phosphate">Phosphate
-        <input class="other commodity" type="checkbox" name="commodity" value="Phosphate" id="chk-Phosphate" checked />
-        <div class="checkbox"></div>
-      </label>
-      <label class="label-switch" for="chk-Sodium">Sodium
-        <input class="other commodity" type="checkbox" name="commodity" value="Sodium" id="chk-Sodium" checked />
-        <div class="checkbox"></div>
-      </label>
-      <label class="label-switch" for="chk-Sulfur">Sulfur
-        <input class="other commodity" type="checkbox" name="commodity" value="Sulfur" id="chk-Sulfur" checked />
-        <div class="checkbox"></div>
-      </label>
-    </div>
+    <div class="portal-companies">
 
-  </div>
-<!-- END Side Options Nav -->
+      <h1>Total Revenues by Company</h1>
 
-<!-- START Main Data Dashboard -->
-    <div class="dashboard-face">
-      <div id="company-name"><h1></h1></div>
-      <div class="rev-by-commodity" id='dashboard-bar-rev-by-commodity'>
-        <h4>Total Revenues by Commodity</h4>
-      </div>
-      <!-- <div id="dashboard-bar-rev-source"><h4>Total Revenue<br>by Revenue Type</h4></div>
-      <div id="dashboard-bar-avg-by-rev-source"><h4>Average Revenue<br>by Revenue Source</h4></div>
-      <div id="dashboard-bar-avg-by-commodity"><h4>Average Revenue<br>by Commodity<h4></div> -->
-      <div class="total-rev" id="totals">
-        <a class="dashboard-button" href="{{site:url}}/static/data/{{site:unilatteral_data}}">Download Full Dataset (CSV) </a>
-        <a class="dashboard-button" href="javascript:download_data(companyDimension)">Download Filtered Data (CSV) </a>
-        <h1 id="total-revenue-h1">Total Revenue: <span id="total_revenue"></span></h1>
-        <h1 id="average-revenue-h1">Average Revenue: <span id="average_revenue">$1,000,000</span></h1>
-        <h1 id="number-of-companies-h1">Number of Companies: <span id="company_count">$1,000,000</span></h1>
+      <div class="portal-table-filter">
+        <label for="table-search">Filter by company...</label>
+        <input type="text" id="table-search" placeholder="Filter by company..."></input>
       </div>
 
-      <div class="dashboard-search">
-        <h4>Filter by Company:</h4>
-        <input type="text" id="table-search"></input>
-        <div><a href="javascript:toggle_divs('#toggleDivLink','#dashboard-totals-table','#dashboard-table','Show Full Table','Show Table by Company')" id="toggleDivLink">Show Full Table</a></div>
-        <table class='table table-hover dc-data-table' id='dashboard-totals-table'>
+      <div class="portal-table-toggle">
+        <a href="javascript:toggle_divs('#toggleDivLink','#dashboard-totals-table','#dashboard-table','Show Extended Table','Hide Extended Table')" id="toggleDivLink">Show Extended Table</a>
+      </div>
 
+      <div class="portal-table">
+        <table class="table table-hover dc-data-table" id="dashboard-totals-table">
           <thead>
             <tr class="header">
               <th>
                 <a href="javascript:sort_dataTable(dashTotalsTable,'Company Name');">
-                  Company name
+                  Company name &#8597;
                 </a>
               </th>
               <th>
                 <a href="javascript:sort_dataTable(dashTotalsTable,'Total Revenue');">
-                  Total Revenue
+                  Total Revenue &#8597;
                 </a>
               </th>
             </tr>
@@ -284,27 +61,26 @@ description: This is a sample beta site for Federal natural resource revenues.
         </table>
 
         <table class='table table-hover dc-data-table' id='dashboard-table' style="display:none">
-
           <thead>
             <tr class="header">
               <th>
                 <a href="javascript:sort_dataTable(dashTable,'Company Name');">
-                  Company name
+                  Company name &#8597;
                 </a>
               </th>
               <th>
                 <a href="javascript:sort_dataTable(dashTable,'Revenue Type');">
-                  Revenue Type
+                  Revenue Type &#8597;
                 </a>
               </th>
               <th>
                 <a href="javascript:sort_dataTable(dashTable,'Commodity');">
-                  Commodity
+                  Commodity &#8597;
                 </a>
               </th>
               <th>
                 <a href="javascript:sort_dataTable(dashTable,'Revenue');">
-                  Revenue
+                  Revenue &#8597;
                 </a>
               </th>
             </tr>
@@ -313,10 +89,59 @@ description: This is a sample beta site for Federal natural resource revenues.
       </div>
 
     </div>
+  
+  </div>
+
+  <div class="portal-controls" id="OptionsList">
+
+    <div>
+      <h1>Commodity Groups</h1>
+
+      <a href='javascript:' class='oil' data-value='oil' tabindex='0' role="button" aria-pressed="true">
+        <svg class="eiti-icon-oil" role="img" aria-label="Oil"><use xlink:href="{{ site.baseurl }}/static/fonts/EITI/icons.svg#eiti-icon-oil"></use></svg>
+        <svg class="eiti-icon-gas" role="img" aria-label="Gas"><use xlink:href="{{ site.baseurl }}/static/fonts/EITI/icons.svg#eiti-icon-gas"></use></svg>
+        <h1>Oil &amp; Gas</h1>
+      </a>
+
+      <a href='javascript:' class='coal' tabindex='0' role="button" aria-pressed="true">
+        <svg class="eiti-icon-coal" role="img" aria-label="Coal"><use xlink:href="{{ site.baseurl }}/static/fonts/EITI/icons.svg#eiti-icon-coal"></use></svg>
+        <h1>Coal</h1>
+      </a>
+
+      <a href='javascript:' class='wind' tabindex='0' role="button" aria-pressed="true">
+        <svg class="eiti-icon-wind" role="img" aria-label="Wind"><use xlink:href="{{ site.baseurl }}/static/fonts/EITI/icons.svg#eiti-icon-wind"></use></svg>
+        <svg class="eiti-icon-geo" role="img" aria-label="Geothermal"><use xlink:href="{{ site.baseurl }}/static/fonts/EITI/icons.svg#eiti-icon-geo"></use></svg>
+        <h1>Renewables</h1>
+      </a>
+
+      <a href='javascript:' class='other' tabindex='0' role="button" aria-pressed="true">
+        <svg class="eiti-icon-other" role="img" aria-label="Other Commodities"><use xlink:href="{{ site.baseurl }}/static/fonts/EITI/icons.svg#eiti-icon-other"></use></svg>
+        <h1>Other</h1>
+      </a>
+    </div>
+
+    <div class="portal-revenue-types">
+      <h1>Revenue Types</h1>
+      <a href='#' class="rent">
+        <h1>Rent</h1>
+      </a>
+      <a href='#' class="bonus">
+        <h1>Bonus</h1>
+      </a>
+      <a href='#' class="royalty">
+        <h1>Royalties</h1>
+      </a>
+      <a href='#' class="other">
+        <h1>Other</h1>
+      </a>
+    </div>
 
   </div>
+
 </div>
-<!-- END Main Data Dashboard -->
+
+
+
 
 </main>
 <script src='{{ site.baseurl }}/static/js/dashboard.js'></script>

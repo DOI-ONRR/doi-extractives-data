@@ -56,6 +56,7 @@ d3.csv("static/data/data-sectors-revenue.csv",function(resource_data){
 		.html(function (d) { return "<span style='color: #f0027f'>" +  d.data.key + "</span>: $"  + parseFloat(d.data.value).formatMoney(2,'.',',')
 		});
 
+
 	
 	barChart
 		.width(500).height(200)
@@ -114,10 +115,7 @@ d3.csv("static/data/data-sectors-revenue.csv",function(resource_data){
 
 
 	d3.selectAll(".pie-slice").call(pieTip);
-	d3.selectAll(".pie-slice").on('mouseover', pieTip.show).on('mouseout', pieTip.hide);
-
-
-	
+	d3.selectAll(".pie-slice").on('mouseover', pieTip.show).on('mouseout', pieTip.hide);	
 });
 
 

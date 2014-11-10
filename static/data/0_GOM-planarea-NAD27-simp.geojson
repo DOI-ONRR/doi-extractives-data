@@ -17,13 +17,13 @@ var GOM_NAD27_simp = {
 	"name": "Western Gulf of Mexico",
 	"commodities": {
 		"oil": {
-			"revenue":   5040578020.19, //should be 'royalties'
+			"revenue":   180540899.97,
 		},
 		"gas": {
-			"revenue":   596435849.73, //should be 'royalties'
+			"revenue":   63687293.07,
 		},
 		"other": {
-			"revenue":   4122.09,
+			"revenue":   0,
 		},
 	},
 	"leases": { 
@@ -38,13 +38,13 @@ var GOM_NAD27_simp = {
 	"name": "Central Gulf of Mexico",
 	"commodities": {
 		"oil": {
-			"revenue":   180540899.97, //should be 'royalties'
+			"revenue":   5040578020.19,
 		},
 		"gas": {
-			"revenue":   63687293.07, //should be 'royalties'
+			"revenue":   596435849.73,
 		},
 		"other": {
-			"revenue":  0,
+			"revenue":   4122.09,
 		},
 	},
 	"leases": { 

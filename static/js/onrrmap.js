@@ -11,7 +11,7 @@ $(document).ready(function(){
   var atlanticDrawOrder = [ 'North Atlantic','Mid-Atlantic' ,'South Atlantic','Straights of Florida' ];
   var gomDrawOrder = ['Eastern Gulf of Mexico','Central Gulf of Mexico','Western Gulf of Mexico']
   var mapdataviz;//Holds map object
-  var mobile = $(document).width() <= 550;//Boolean for mobile screen widths
+  var mobile = (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent));//Boolean for mobile screen widths
   var hues = ['#efaeab','#7e3533']; // Range of colors for map
   //List of commodities on map
   var variables = [
@@ -478,7 +478,7 @@ $(document).ready(function(){
 
 
 $(document).ready(function(){
-  var mobile = $(document).width() <= 550;
+  var mobile = (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent));//Boolean for mobile screen widths
   if (mobile)
   {
      var pane = $('#map-info-pane');

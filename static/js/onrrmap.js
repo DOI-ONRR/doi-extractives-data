@@ -75,7 +75,7 @@ $(document).ready(function(){
       });
 
       $(this).attr('aria-pressed','true');
-      $('#map-scale-pane > h1').html(function(){return selectedCommodity == 'wind' || selectedCommodity == 'geothermal' ? 'Revenues' : 'Royalties';});
+      $('#map-scale-pane > h1').html(function(){return selectedCommodity == 'wind' ? 'Revenues' : 'Royalties';});
     })
 
 
@@ -268,7 +268,7 @@ $(document).ready(function(){
             var revenueAmt = 0.0;
           }
           var revenueType = selected.capitalize();
-          var roy_rev = revenueType == 'Wind' || revenueType == 'Geothermal' ? ' Revenues' : ' Royalties';
+          var roy_rev = revenueType == 'Wind' ? ' Revenues' : ' Royalties';
           var returnString ="<div>"+revenueType+roy_rev+":<br />$"+revenueAmt.formatMoney(2,'.',',')+"</div>";
           if (selected == 'oil' || selected == 'gas')
           {

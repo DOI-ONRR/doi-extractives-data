@@ -478,7 +478,7 @@ $(document).ready(function(){
 
 
 $(document).ready(function(){
-  var mobile = (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent));//Boolean for mobile screen widths
+  var mobile = $(document).width() <= 550;
   if (mobile)
   {
      var pane = $('#map-info-pane');

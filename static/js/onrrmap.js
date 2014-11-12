@@ -431,11 +431,24 @@ $(document).ready(function(){
       });
   }
   function setFillColor(layer,color){
-    $("g[data-3d-layers='"+$(layer._container).attr('data-3d-layers')+"'] path").each(function(){
+    //console.log(layer);
+    if (layer.hasOwnProperty('_layers'))
+    {
+      for(var key in layer._layers)
+      {
+        $("g[data-3d-layers='"+$(layer._layers[key]._container).attr('data-3d-layers')+"'] path").each(function(){
+          $(this).attr('fill-opacity',1.0);
+          $(this).attr('fill',color);
+        });
+      }
+    }
+    else
+    {
+      $("g[data-3d-layers='"+$(layer._container).attr('data-3d-layers')+"'] path").each(function(){
         $(this).attr('fill-opacity',1.0);
         $(this).attr('fill',color);
       });
-
+    }
   }
 
   function setLayerColor(layer){

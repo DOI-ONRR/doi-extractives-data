@@ -242,8 +242,7 @@ $(document).ready(function(){
     function onEachFeature(feature, layer) {
         layer.on({
             mousemove: mousemove,
-            mouseout: mouseout,
-            click: zoomToFeature
+            mouseout: mouseout
         });
     }
     function onEachFeatureMobile(feature, layer) {

@@ -6,26 +6,25 @@ var statesData= {
         "properties": {
             "name": "Alabama",
             "density": 94.65,
-            "revenue": 18794015.15,
-            "revenueTitle": "$18,794,015.15",
+            "revenue": 4198652.79,
         	"commodities": {
         		"oil": {
-        			"revenue": 332595.41, //can be calculated from map-data/2013-revnues-by-state-commodity
+        			"revenue": 318163.13,
         		},
         		"gas": {
-        			"revenue": 191605.45, //can be calculated from map-data/2013-revnues-by-state-commodity
+        			"revenue": 200507.39,
         		},
         		"coal": {
-        			"revenue": 13008.00, //can be calculated from map-data/2013-revnues-by-state-commodity
+        			"revenue": 3677302.59,
         		},
 
         		"other": {
-        			"revenue": 3100.63, //can be calculated from map-data/2013-revnues-by-state-commodity
+        			"revenue": 2679.68,
         		},
         	},
-        	"leases": { //info about oil and gas leases
-        		"total": 138, //from map-data/numberofleasesineffect.xlsx
-        		"active": 23, //from map-data/numberofproducingleases.xlsx
+        	"leases": {
+        		"total": 138,
+        		"active": 23,
         	},
         },
         "geometry": {
@@ -74,20 +73,16 @@ var statesData= {
         "properties": {
             "name": "Alaska",
             "density": 1.264,
-            "revenue": 33569391.24,
-            "revenueTitle": "$33,569,391.24",
+            "revenue": 13586470.22,
             "commodities": {
         		"oil": {
-        			"revenue": 6023448.03, //can be calculated from map-data/2013-revnues-by-state-commodity
+        			"revenue": 6598210.68,
         		},
         		"gas": {
-        			"revenue": 9052677.52, //can be calculated from map-data/2013-revnues-by-state-commodity
-        		},
-        		"geothermal": {
-        			"revenue": 7680.00, //can be calculated from map-data/2013-revnues-by-state-commodity
+        			"revenue": 6988259.54,
         		},
         	},
-        	"leases": { //info about oil and gas leases
+        	"leases": {
         		"total": 222, //from map-data/numberofleasesineffect.xlsx
         		"active": 29, //from map-data/numberofproducingleases.xlsx
         	},
@@ -1333,22 +1328,15 @@ var statesData= {
         "properties": {
             "name": "Arizona",
             "density": 57.05,
-            "revenue": 75330260.15,
-            "revenueTitle": "$75,330,260.15",
+            "revenue": 4224.65,
             "commodities": {
-        		"oil": {
-        			"revenue": 869268.15, //can be calculated from map-data/2013-revnues-by-state-commodity
-        		},
         		"other": {
-        			"revenue": 1001203.27, //can be calculated from map-data/2013-revnues-by-state-commodity
-        		},
-        		"coal": {
-        			"revenue": 43697561.26, //can be calculated from map-data/2013-revnues-by-state-commodity
+        			"revenue": 4224.65,
         		},
         	},
-        	"leases": { //info about oil and gas leases
-        		"total": 27, //from map-data/numberofleasesineffect.xlsx
-        		"active": 0, //from map-data/numberofproducingleases.xlsx
+        	"leases": {
+        		"total": 27,
+        		"active": 0,
         	},
         },
         "geometry": {
@@ -1396,22 +1384,21 @@ var statesData= {
         "properties": {
             "name": "Arkansas",
             "density": 56.43,
-            "revenue": 5193889.85,
-            "revenueTitle": "$5,193,889.85",
+            "revenue": 5083901.90,
             "commodities": {
         		"oil": {
-        			"revenue": 15.64, //can be calculated from map-data/2013-revnues-by-state-commodity
+        			"revenue": 7.87,
         		},
         		"gas": {
-        			"revenue": 4592717.71, //can be calculated from map-data/2013-revnues-by-state-commodity
+        			"revenue": 5083889.58,
         		},
         		"other": {
-        			"revenue": 8.60, //can be calculated from map-data/2013-revnues-by-state-commodity
+        			"revenue": 4.45,
         		},
         	},
-        	"leases": { //info about oil and gas leases
-        		"total": 742, //from map-data/numberofleasesineffect.xlsx
-        		"active": 248, //from map-data/numberofproducingleases.xlsx
+        	"leases": {
+        		"total": 742,
+        		"active": 248,
         	},
         },
         "geometry": {
@@ -1464,25 +1451,24 @@ var statesData= {
         "properties": {
             "name": "California",
             "density": 241.7,
-            "revenue": 267156553.34,
-            "revenueTitle": "$267,156,553.34",
+            "revenue": 206395329.25,
             "commodities": {
         		"oil": {
-        			"revenue": 184925258.27, //can be calculated from map-data/2013-revnues-by-state-commodity
+        			"revenue": 183762630.38,
         		},
         		"gas": {
-        			"revenue": 4544674.57, //can be calculated from map-data/2013-revnues-by-state-commodity
+        			"revenue": 4584038.53,
         		},
         		"other": {
-        			"revenue": 18227425.07, //can be calculated from map-data/2013-revnues-by-state-commodity
+        			"revenue": 8742199.96,
         		},
         		"geothermal": {
-        			"revenue": 156480.00, //can be calculated from map-data/2013-revnues-by-state-commodity
+        			"revenue": 9306460.38,
         		},
         	},
-        	"leases": { //info about oil and gas leases
-        		"total": 600, //from map-data/numberofleasesineffect.xlsx
-        		"active": 325, //from map-data/numberofproducingleases.xlsx
+        	"leases": {
+        		"total": 600,
+        		"active": 325,
         	},
         },
         "geometry": {
@@ -1591,28 +1577,24 @@ var statesData= {
         "properties": {
             "name": "Colorado",
             "density": 49.33,
-            "revenue": 351459821.70,
-            "revenueTitle": "$351,459,821.70",
+            "revenue": 289211548.58,
             "commodities": {
         		"oil": {
-        			"revenue": 48480527.89, //can be calculated from map-data/2013-revnues-by-state-commodity
+        			"revenue": 47276400.22,
         		},
         		"gas": {
-        			"revenue": 205050765.69, //can be calculated from map-data/2013-revnues-by-state-commodity
+        			"revenue": 152944370.02,
         		},
         		"coal": {
-        			"revenue": 26878866.14, //can be calculated from map-data/2013-revnues-by-state-commodity
+        			"revenue": 26242242.2,
         		},
         		"other": {
-        			"revenue": 59439132.56, //can be calculated from map-data/2013-revnues-by-state-commodity
-        		},
-        		"geothermal": {
-        			"revenue": 61678.00, //can be calculated from map-data/2013-revnues-by-state-commodity
+        			"revenue": 62748536.14,
         		},
         	},
-        	"leases": { //info about oil and gas leases
-        		"total": 4963, //from map-data/numberofleasesineffect.xlsx
-        		"active": 2180, //from map-data/numberofproducingleases.xlsx
+        	"leases": {
+        		"total": 4963,
+        		"active": 2180,
         	},
         },
         "geometry": {
@@ -1645,7 +1627,6 @@ var statesData= {
             "name": "Connecticut",
             "density": 739.1,
             "revenue": 0,
-            "revenueTitle": "0"
         },
         "geometry": {
             "type": "Polygon",
@@ -1677,7 +1658,6 @@ var statesData= {
             "name": "Delaware",
             "density": 464.3,
             "revenue": 0,
-            "revenueTitle": "0"
         },
         "geometry": {
             "type": "Polygon",
@@ -1706,7 +1686,6 @@ var statesData= {
             "name": "District of Columbia",
             "density": 10065,
             "revenue": 0,
-            "revenueTitle": "0"
         },
         "geometry": {
             "type": "Polygon",
@@ -1726,11 +1705,10 @@ var statesData= {
         "properties": {
             "name": "Florida",
             "density": 353.4,
-            "revenue": 1069288.65,
-            "revenueTitle": "$1,069,288.65",
+            "revenue": 285731.37,
             "commodities": {
         		"other": {
-        			"revenue": 1055233.12, //can be calculated from map-data/2013-revnues-by-state-commodity
+        			"revenue": 285731.37,
         		},
         	},
         },
@@ -1826,7 +1804,6 @@ var statesData= {
             "name": "Georgia",
             "density": 169.5,
             "revenue": 0,
-            "revenueTitle": "0"
         },
         "geometry": {
             "type": "Polygon",
@@ -1893,7 +1870,6 @@ var statesData= {
             "name": "Hawaii",
             "density": 214.1,
             "revenue": 0,
-            "revenueTitle": "0"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -1975,19 +1951,15 @@ var statesData= {
         "properties": {
             "name": "Idaho",
             "density": 19.15,
-            "revenue": 10222811.58,
-            "revenueTitle": "$10,222,811.58",
+            "revenue": 9818112.1,
             "commodities": {
         		"other": {
-        			"revenue": 9927659.08, //can be calculated from map-data/2013-revnues-by-state-commodity
-        		},
-        		"geothermal": {
-        			"revenue": 166718.00, //can be calculated from map-data/2013-revnues-by-state-commodity
+        			"revenue": 9818112.1,
         		},
         	},
-        	"leases": { //info about oil and gas leases
-        		"total": 4, //from map-data/numberofleasesineffect.xlsx
-        		"active": 0, //from map-data/numberofproducingleases.xlsx
+        	"leases": {
+        		"total": 4,
+        		"active": 0,
         	},
         },
         "geometry": {
@@ -2069,16 +2041,15 @@ var statesData= {
         "properties": {
             "name": "Illinois",
             "density": 231.5,
-            "revenue": 297987.43,
-            "revenueTitle": "$297,987.43",
+            "revenue": 302424.64,
             "commodities": {
         		"oil": {
-        			"revenue": 297987.43, //can be calculated from map-data/2013-revnues-by-state-commodity
+        			"revenue": 302424.64,
         		},
         	},
-        	"leases": { //info about oil and gas leases
-        		"total": 9, //from map-data/numberofleasesineffect.xlsx
-        		"active": 9, //from map-data/numberofproducingleases.xlsx
+        	"leases": {
+        		"total": 9,
+        		"active": 9,
         	},
         },
         "geometry": {
@@ -2161,16 +2132,15 @@ var statesData= {
         "properties": {
             "name": "Indiana",
             "density": 181.7,
-            "revenue": 45703.18,
-            "revenueTitle": "$45,703.18",
+            "revenue": 17820.38,
             "commodities": {
         		"oil": {
-        			"revenue": 26914.91, //can be calculated from map-data/2013-revnues-by-state-commodity
+        			"revenue": 17820.38,
         		},
         	},
-        	"leases": { //info about oil and gas leases
-        		"total": 9, //from map-data/numberofleasesineffect.xlsx
-        		"active": 2, //from map-data/numberofproducingleases.xlsx
+        	"leases": {
+        		"total": 9,
+        		"active": 2,
         	},
         },
         "geometry": {
@@ -2233,7 +2203,6 @@ var statesData= {
             "name": "Iowa",
             "density": 54.81,
             "revenue": 0,
-            "revenueTitle": "0"
         },
         "geometry": {
             "type": "Polygon",
@@ -2298,22 +2267,21 @@ var statesData= {
         "properties": {
             "name": "Kansas",
             "density": 35.09,
-            "revenue": 5715465.67,
-            "revenueTitle": "$5,715,465.67",
+            "revenue": 5718983.20,
             "commodities": {
         		"oil": {
-        			"revenue": 2653436.53, //can be calculated from map-data/2013-revnues-by-state-commodity
+        			"revenue": 2628624.21,
         		},
         		"gas": {
-        			"revenue": 3016433.75, //can be calculated from map-data/2013-revnues-by-state-commodity
+        			"revenue": 3090359.21,
         		},
         		"other": {
-        			"revenue": -2.41, //can be calculated from map-data/2013-revnues-by-state-commodity
+        			"revenue": -0.22,
         		},
         	},
-        	"leases": { //info about oil and gas leases
-        		"total": 482, //from map-data/numberofleasesineffect.xlsx
-        		"active": 439, //from map-data/numberofproducingleases.xlsx
+        	"leases": {
+        		"total": 482,
+        		"active": 439,
         	},
         },
         "geometry": {
@@ -2342,22 +2310,21 @@ var statesData= {
         "properties": {
             "name": "Kentucky",
             "density": 110,
-            "revenue": 2041734.15,
-            "revenueTitle": "$2,041,734.15",
+            "revenue": 1706300.10,
             "commodities": {
         		"oil": {
-        			"revenue": 153487.23, //can be calculated from map-data/2013-revnues-by-state-commodity
+        			"revenue": 160773.22,
         		},
         		"gas": {
-        			"revenue": 49960.29, //can be calculated from map-data/2013-revnues-by-state-commodity
+        			"revenue": 46424.16,
         		},
         		"coal": {
-        			"revenue": 1780536.23, //can be calculated from map-data/2013-revnues-by-state-commodity
+        			"revenue": 1499102.72,
         		},
         	},
-        	"leases": { //info about oil and gas leases
-        		"total": 69, //from map-data/numberofleasesineffect.xlsx
-        		"active": 55, //from map-data/numberofproducingleases.xlsx
+        	"leases": {
+        		"total": 69,
+        		"active": 55,
         	},
         },
         "geometry": {
@@ -2448,19 +2415,18 @@ var statesData= {
         "properties": {
             "name": "Louisiana",
             "density": 105,
-            "revenue": 186597252.28,
-            "revenueTitle": "$186,597,252.28",
+            "revenue": 13520507.37,
             "commodities": {
         		"oil": {
-        			"revenue": 4851613.97, //can be calculated from map-data/2013-revnues-by-state-commodity
+        			"revenue": 4128046.98,
         		},
         		"gas": {
-        			"revenue": 9627926.00, //can be calculated from map-data/2013-revnues-by-state-commodity
+        			"revenue": 9392460.39,
         		},
         	},
-        	"leases": { //info about oil and gas leases
-        		"total": 525, //from map-data/numberofleasesineffect.xlsx
-        		"active": 165, //from map-data/numberofproducingleases.xlsx
+        	"leases": {
+        		"total": 525,
+        		"active": 165,
         	},
         },
         "geometry": {
@@ -2553,7 +2519,6 @@ var statesData= {
             "name": "Maine",
             "density": 43.04,
             "revenue": 0,
-            "revenueTitle": "0"
         },
         "geometry": {
             "type": "Polygon",
@@ -2634,11 +2599,10 @@ var statesData= {
         "properties": {
             "name": "Maryland",
             "density": 596.3,
-            "revenue": 7531.88,
-            "revenueTitle": "$7,531.88",
-            "leases": { //info about oil and gas leases
-        		"total": 4, //from map-data/numberofleasesineffect.xlsx
-        		"active": 0, //from map-data/numberofproducingleases.xlsx
+            "revenue": 0,
+            "leases": {
+        		"total": 4,
+        		"active": 0,
         	},
         },
         "geometry": {
@@ -2724,8 +2688,7 @@ var statesData= {
         "properties": {
             "name": "Massachusetts",
             "density": 840.2,
-            "revenue": 88278.00,
-            "revenueTitle": "$88,278.00"
+            "revenue": 0,
         },
         "geometry": {
             "type": "Polygon",
@@ -2775,19 +2738,18 @@ var statesData= {
         "properties": {
             "name": "Michigan",
             "density": 173.9,
-            "revenue": 1478018.16,
-            "revenueTitle": "$1,478,018.16",
+            "revenue": 1079099.02,
             "commodities": {
         		"oil": {
-        			"revenue": 353282.61, //can be calculated from map-data/2013-revnues-by-state-commodity
+        			"revenue": 372243.04,
         		},
         		"gas": {
-        			"revenue": 716381.09, //can be calculated from map-data/2013-revnues-by-state-commodity
+        			"revenue": 706855.98,
         		},
         	},
-        	"leases": { //info about oil and gas leases
-        		"total": 170, //from map-data/numberofleasesineffect.xlsx
-        		"active": 64, //from map-data/numberofproducingleases.xlsx
+        	"leases": {
+        		"total": 170,
+        		"active": 64,
         	},
         },
         "geometry": {
@@ -2969,8 +2931,7 @@ var statesData= {
         "properties": {
             "name": "Minnesota",
             "density": 67.14,
-            "revenue": 74134.50,
-            "revenueTitle": "$74,134.50"
+            "revenue": 0,
         },
         "geometry": {
             "type": "Polygon",
@@ -3068,19 +3029,18 @@ var statesData= {
         "properties": {
             "name": "Mississippi",
             "density": 63.50,
-            "revenue": 11227660.03,
-            "revenueTitle": "$11,227,660.03",
+            "revenue": 5033461.59,
             "commodities": {
         		"oil": {
-        			"revenue": 4714754.03, //can be calculated from map-data/2013-revnues-by-state-commodity
+        			"revenue": 4759241.28,
         		},
         		"gas": {
-        			"revenue": 305133.44, //can be calculated from map-data/2013-revnues-by-state-commodity
+        			"revenue": 274220.31,
         		},
         	},
-        	"leases": { //info about oil and gas leases
-        		"total": 849, //from map-data/numberofleasesineffect.xlsx
-        		"active": 75, //from map-data/numberofproducingleases.xlsx
+        	"leases": {
+        		"total": 849,
+        		"active": 75,
         	},
         },
         "geometry": {
@@ -3142,11 +3102,10 @@ var statesData= {
         "properties": {
             "name": "Missouri",
             "density": 87.26,
-            "revenue": 9374829.72,
-            "revenueTitle": "$9,374,829.72",
+            "revenue": 9356915.72,
             "commodities": {
         		"other": {
-        			"revenue": 9357932.72, //can be calculated from map-data/2013-revnues-by-state-commodity
+        			"revenue": 9356915.72,
         		},
         	},
         },
@@ -3216,25 +3175,24 @@ var statesData= {
         "properties": {
             "name": "Montana",
             "density": 6.858,
-            "revenue": 95413594.63,
-            "revenueTitle": "$95,413,594.63",
+            "revenue": 74760752.63,
             "commodities": {
         		"oil": {
-        			"revenue": 31322022.30, //can be calculated from map-data/2013-revnues-by-state-commodity
+        			"revenue": 25245245.64,
         		},
         		"gas": {
-        			"revenue": 5826552.56, //can be calculated from map-data/2013-revnues-by-state-commodity
+        			"revenue": 4620714.47,
         		},
         		"coal": {
-        			"revenue": 46039334.34, //can be calculated from map-data/2013-revnues-by-state-commodity
+        			"revenue": 44889477.56,
         		},
         		"other": {
-        			"revenue": 6260.12, //can be calculated from map-data/2013-revnues-by-state-commodity
+        			"revenue": 5314.96,
         		},
         	},
-        	"leases": { //info about oil and gas leases
-        		"total": 3488, //from map-data/numberofleasesineffect.xlsx
-        		"active": 1440, //from map-data/numberofproducingleases.xlsx
+        	"leases": {
+        		"total": 3488,
+        		"active": 1440,
         	},
         },
         "geometry": {
@@ -3302,23 +3260,18 @@ var statesData= {
         "properties": {
             "name": "Nebraska",
             "density": 23.97,
-            "revenue": 348155.38,
-            "revenueTitle": "$348,155.38",
+            "revenue": 298226.42,
             "commodities": {
         		"oil": {
-        			"revenue": 284187.80, //can be calculated from map-data/2013-revnues-by-state-commodity
-        			"leases-total": 138, //from map-data/numberofleasesineffect.xlsx, actually for "Oil&Gas" together
-        			"leases-active": 23, //from map-data/numberofproducingleases.xlsx, actually for "Oil&Gas" together
+        			"revenue": 292938.04,
         		},
         		"gas": {
-        			"revenue": 12264.83, //can be calculated from map-data/2013-revnues-by-state-commodity
-        			"leases-total": 138, //from map-data/numberofleasesineffect.xlsx, actually for "Oil&Gas" together
-        			"leases-active": 23, //from map-data/numberofproducingleases.xlsx, actually for "Oil&Gas" together
+        			"revenue": 5288.38,
         		},
         	},
-        	"leases": { //info about oil and gas leases
-        		"total": 30, //from map-data/numberofleasesineffect.xlsx
-        		"active": 19, //from map-data/numberofproducingleases.xlsx
+        	"leases": {
+        		"total": 30,
+        		"active": 19,
         	},
         },
         "geometry": {
@@ -3363,22 +3316,18 @@ var statesData= {
         "properties": {
             "name": "Nevada",
             "density": 24.80,
-            "revenue": 17304928.20,
-            "revenueTitle": "$17,304,928.20",
+            "revenue": 6344473.35,
             "commodities": {
         		"oil": {
-        			"revenue": 3661956.85, //can be calculated from map-data/2013-revnues-by-state-commodity
-        		},
-        		"other": {
-        			"revenue": 3116757.56, //can be calculated from map-data/2013-revnues-by-state-commodity
+        			"revenue": 3613728.95,
         		},
         		"geothermal": {
-        			"revenue": 1593792.67, //can be calculated from map-data/2013-revnues-by-state-commodity
+        			"revenue": 2730744.4,
         		},
         	},
-        	"leases": { //info about oil and gas leases
-        		"total": 1881, //from map-data/numberofleasesineffect.xlsx
-        		"active": 31, //from map-data/numberofproducingleases.xlsx
+        	"leases": {
+        		"total": 1881,
+        		"active": 31,
         	},
         },
         "geometry": {
@@ -3416,7 +3365,6 @@ var statesData= {
             "name": "New Hampshire",
             "density": 147,
             "revenue": 0,
-            "revenueTitle": "0"
         },
         "geometry": {
             "type": "Polygon",
@@ -3460,7 +3408,6 @@ var statesData= {
             "name": "New Jersey",
             "density": 1189,
             "revenue": 0,
-            "revenueTitle": "0"
         },
         "geometry": {
             "type": "Polygon",
@@ -3507,32 +3454,24 @@ var statesData= {
         "properties": {
             "name": "New Mexico",
             "density": 17.16,
-            "revenue": 1116383744.30,
-            "revenueTitle": "$1,116,383,744.30",
+            "revenue": 997059936.98,
             "commodities": {
         		"oil": {
-        			"revenue": 543231301.92, //can be calculated from map-data/2013-revnues-by-state-commodity
-        			"leases-total": 138, //from map-data/numberofleasesineffect.xlsx, actually for "Oil&Gas" together
-        			"leases-active": 23, //from map-data/numberofproducingleases.xlsx, actually for "Oil&Gas" together
+        			"revenue": 568253428.80,
         		},
         		"gas": {
-        			"revenue": 417045212.40, //can be calculated from map-data/2013-revnues-by-state-commodity
-        			"leases-total": 138, //from map-data/numberofleasesineffect.xlsx, actually for "Oil&Gas" together
-        			"leases-active": 23, //from map-data/numberofproducingleases.xlsx, actually for "Oil&Gas" together
+        			"revenue": 391537911.6,
         		},
         		"coal": {
-        			"revenue": 47431882.13, //can be calculated from map-data/2013-revnues-by-state-commodity
+        			"revenue": 14827533.41,
         		},
         		"other": {
-        			"revenue": 24272261.09, //can be calculated from map-data/2013-revnues-by-state-commodity
-        		},
-        		"geothermal": {
-        			"revenue": 112985.00, //can be calculated from map-data/2013-revnues-by-state-commodity
+        			"revenue": 22441063.17,
         		},
         	},
-        	"leases": { //info about oil and gas leases
-        		"total": 8348, //from map-data/numberofleasesineffect.xlsx
-        		"active": 6535, //from map-data/numberofproducingleases.xlsx
+        	"leases": {
+        		"total": 8348,
+        		"active": 6535,
         	},
         },
         "geometry": {
@@ -3565,16 +3504,15 @@ var statesData= {
         "properties": {
             "name": "New York",
             "density": 412.3,
-            "revenue": 5052.87,
-            "revenueTitle": "$5,052.87",
+            "revenue": 5222.81,
             "commodities": {
         		"gas": {
-        			"revenue": 5052.87, //can be calculated from map-data/2013-revnues-by-state-commodity
+        			"revenue": 5222.81,
         		},
         	},
-        	"leases": { //info about oil and gas leases
-        		"total": 5, //from map-data/numberofleasesineffect.xlsx
-        		"active": 5, //from map-data/numberofproducingleases.xlsx
+        	"leases": {
+        		"total": 5,
+        		"active": 5,
         	},
         },
         "geometry": {
@@ -3658,8 +3596,7 @@ var statesData= {
         "properties": {
             "name": "North Carolina",
             "density": 198.2,
-            "revenue": 158.00,
-            "revenueTitle": "$158.00"
+            "revenue": 0,
         },
         "geometry": {
             "type": "Polygon",
@@ -3735,25 +3672,24 @@ var statesData= {
         "properties": {
             "name": "North Dakota",
             "density": 9.916,
-            "revenue": 768476637.55,
-            "revenueTitle": "$768,476,637.55",
+            "revenue": 192491576.13,
             "commodities": {
         		"oil": {
-        			"revenue": 663938505.96, //can be calculated from map-data/2013-revnues-by-state-commodity
+        			"revenue": 180649260.32,
         		},
         		"gas": {
-        			"revenue": 19656485.97, //can be calculated from map-data/2013-revnues-by-state-commodity
+        			"revenue": 9889342.29,
         		},
         		"coal": {
-        			"revenue": 1791485.44, //can be calculated from map-data/2013-revnues-by-state-commodity
+        			"revenue": 1903263.85,
         		},
         		"other": {
-        			"revenue": 31045.56, //can be calculated from map-data/2013-revnues-by-state-commodity
+        			"revenue": 49709.67,
         		},
         	},
-        	"leases": { //info about oil and gas leases
-        		"total": 2061, //from map-data/numberofleasesineffect.xlsx
-        		"active": 1127, //from map-data/numberofproducingleases.xlsx
+        	"leases": {
+        		"total": 2061,
+        		"active": 1127,
         	},
         },
         "geometry": {
@@ -3785,19 +3721,18 @@ var statesData= {
         "properties": {
             "name": "Ohio",
             "density": 281.9,
-            "revenue": 461564.77,
-            "revenueTitle": "$461,564.77",
+            "revenue": 446948.81,
             "commodities": {
         		"oil": {
-        			"revenue": 211506.62, //can be calculated from map-data/2013-revnues-by-state-commodity
+        			"revenue": 235422.98,
         		},
         		"gas": {
-        			"revenue": 194402.99, //can be calculated from map-data/2013-revnues-by-state-commodity
+        			"revenue": 211525.83,
         		},
         	},
-        	"leases": { //info about oil and gas leases
-        		"total": 267, //from map-data/numberofleasesineffect.xlsx
-        		"active": 233, //from map-data/numberofproducingleases.xlsx
+        	"leases": {
+        		"total": 267,
+        		"active": 233,
         	},
         },
         "geometry": {
@@ -3860,25 +3795,24 @@ var statesData= {
         "properties": {
             "name": "Oklahoma",
             "density": 55.22,
-            "revenue": 52981183.80,
-            "revenueTitle": "$52,981,183.80",
+            "revenue": 11715312.79,
             "commodities": {
         		"oil": {
-        			"revenue": 22378447.60, //can be calculated from map-data/2013-revnues-by-state-commodity
+        			"revenue": 4998979.90,
         		},
         		"gas": {
-        			"revenue": 27228984.26, //can be calculated from map-data/2013-revnues-by-state-commodity
+        			"revenue": 5754151.36,
         		},
         		"coal": {
-        			"revenue": 927731.63, //can be calculated from map-data/2013-revnues-by-state-commodity
+        			"revenue": 962180.33,
         		},
         		"other": {
-        			"revenue": 36534.27, //can be calculated from map-data/2013-revnues-by-state-commodity
+        			"revenue": 1.20,
         		},
         	},
-        	"leases": { //info about oil and gas leases
-        		"total": 1284, //from map-data/numberofleasesineffect.xlsx
-        		"active": 912, //from map-data/numberofproducingleases.xlsx
+        	"leases": {
+        		"total": 1284,
+        		"active": 912,
         	},
         },
         "geometry": {
@@ -3939,16 +3873,10 @@ var statesData= {
         "properties": {
             "name": "Oregon",
             "density": 40.33,
-            "revenue": 620809.00,
-            "revenueTitle": "$620,809.00",
-            "commodities": {
-        		"geothermal": {
-        			"revenue": 253425.00, //can be calculated from map-data/2013-revnues-by-state-commodity
-        		},
-        	},
-        	"leases": { //info about oil and gas leases
-        		"total": 112, //from map-data/numberofleasesineffect.xlsx
-        		"active": 0, //from map-data/numberofproducingleases.xlsx
+            "revenue": 0,
+        	"leases": {
+        		"total": 112,
+        		"active": 0,
         	},
         },
         "geometry": {
@@ -4020,19 +3948,18 @@ var statesData= {
         "properties": {
             "name": "Pennsylvania",
             "density": 284.3,
-            "revenue": 110555.73,
-            "revenueTitle": "$110,555.73",
+            "revenue": 32920.23,
             "commodities": {
         		"oil": {
-        			"revenue": 16605.40, //can be calculated from map-data/2013-revnues-by-state-commodity
+        			"revenue": 20669.77,
         		},
         		"gas": {
-        			"revenue": 46835.92, //can be calculated from map-data/2013-revnues-by-state-commodity
+        			"revenue": 12250.46,
         		},
         	},
-        	"leases": { //info about oil and gas leases
-        		"total": 69, //from map-data/numberofleasesineffect.xlsx
-        		"active": 69, //from map-data/numberofproducingleases.xlsx
+        	"leases": {
+        		"total": 69,
+        		"active": 69,
         	},
         },
         "geometry": {
@@ -4082,7 +4009,6 @@ var statesData= {
             "name": "Rhode Island",
             "density": 1006,
             "revenue": 0,
-            "revenueTitle": "0"
         },
         "geometry": {
             "type": "MultiPolygon",
@@ -4119,7 +4045,6 @@ var statesData= {
             "name": "South Carolina",
             "density": 155.4,
             "revenue": 0,
-            "revenueTitle": "0"
         },
         "geometry": {
             "type": "Polygon",
@@ -4178,19 +4103,18 @@ var statesData= {
         "properties": {
             "name": "South Dakota",
             "density": 98.07,
-            "revenue": 2426357.40,
-            "revenueTitle": "$2,426,357.40",
+            "revenue": 2051908.86,
             "commodities": {
         		"oil": {
-        			"revenue": 2121861.43, //can be calculated from map-data/2013-revnues-by-state-commodity
+        			"revenue": 2004620.58,
         		},
         		"gas": {
-        			"revenue": 46490.95, //can be calculated from map-data/2013-revnues-by-state-commodity
+        			"revenue": 47288.28,
         		},
         	},
-        	"leases": { //info about oil and gas leases
-        		"total": 303, //from map-data/numberofleasesineffect.xlsx
-        		"active": 79, //from map-data/numberofproducingleases.xlsx
+        	"leases": {
+        		"total": 303,
+        		"active": 79,
         	},
         },
         "geometry": {
@@ -4236,10 +4160,9 @@ var statesData= {
             "name": "Tennessee",
             "density": 88.08,
             "revenue": 0,
-            "revenueTitle": "0",
-        	"leases": { //info about oil and gas leases
-        		"total": 2, //from map-data/numberofleasesineffect.xlsx
-        		"active": 2, //from map-data/numberofproducingleases.xlsx
+        	"leases": {
+        		"total": 2,
+        		"active": 2,
         	},
         },
         "geometry": {
@@ -4298,19 +4221,18 @@ var statesData= {
         "properties": {
             "name": "Texas",
             "density": 98.07,
-            "revenue": 48333602.04,
-            "revenueTitle": "$48,333,602.04",
+            "revenue": 24424852.87,
             "commodities": {
         		"oil": {
-        			"revenue": 3952250.11, //can be calculated from map-data/2013-revnues-by-state-commodity
+        			"revenue": 3167054.00,
         		},
         		"gas": {
-        			"revenue": 27141543.06, //can be calculated from map-data/2013-revnues-by-state-commodity
+        			"revenue": 21257798.87,
         		},
         	},
-        	"leases": { //info about oil and gas leases
-        		"total": 683, //from map-data/numberofleasesineffect.xlsx
-        		"active": 253, //from map-data/numberofproducingleases.xlsx
+        	"leases": {
+        		"total": 683,
+        		"active": 253,
         	},
         },
         "geometry": {
@@ -4478,28 +4400,27 @@ var statesData= {
         "properties": {
             "name": "Utah",
             "density": 34.30,
-            "revenue": 465436483.48,
-            "revenueTitle": "$465,436,483.48",
+            "revenue": 305859119.15,
             "commodities": {
         		"oil": {
-        			"revenue": 243824309.09, //can be calculated from map-data/2013-revnues-by-state-commodity
+        			"revenue": 130370575.67,
         		},
         		"gas": {
-        			"revenue": 146733292.48, //can be calculated from map-data/2013-revnues-by-state-commodity
+        			"revenue": 132418429.67,
         		},
         		"coal": {
-        			"revenue": 35641043.02, //can be calculated from map-data/2013-revnues-by-state-commodity
+        			"revenue": 39455178.73,
         		},
         		"other": {
-        			"revenue": 3592592.53, //can be calculated from map-data/2013-revnues-by-state-commodity
+        			"revenue": 3311181.70,
         		},
         		"geothermal": {
-        			"revenue": 371509.00, //can be calculated from map-data/2013-revnues-by-state-commodity
+        			"revenue": 303753.38,
         		},
         	},
-        	"leases": { //info about oil and gas leases
-        		"total": 3574, //from map-data/numberofleasesineffect.xlsx
-        		"active": 1473, //from map-data/numberofproducingleases.xlsx
+        	"leases": {
+        		"total": 3574,
+        		"active": 1473,
         	},
         },
         "geometry": {
@@ -4528,7 +4449,6 @@ var statesData= {
             "name": "Vermont",
             "density": 67.73,
             "revenue": 0,
-            "revenueTitle": "0"
         },
         "geometry": {
             "type": "Polygon",
@@ -4571,21 +4491,21 @@ var statesData= {
         "properties": {
             "name": "Virginia",
             "density": 204.5,
-            "revenue": 151943.95,
-            "revenueTitle": "$151,943.95",
+            "revenue": 116210.95,
             "commodities": {
+                "oil": {
+                    "revenue": 91.93,
+                },
         		"gas": {
-        			"revenue": 51978.44, //can be calculated from map-data/2013-revnues-by-state-commodity
-        			"leases-total": 138, //from map-data/numberofleasesineffect.xlsx, actually for "Oil&Gas" together
-        			"leases-active": 23, //from map-data/numberofproducingleases.xlsx, actually for "Oil&Gas" together
+        			"revenue": 55416.50,
         		},
         		"other": {
-        			"revenue": 65722.01, //can be calculated from map-data/2013-revnues-by-state-commodity
+        			"revenue": 60702.52,
         		},
         	},
-        	"leases": { //info about oil and gas leases
-        		"total": 39, //from map-data/numberofleasesineffect.xlsx
-        		"active": 16, //from map-data/numberofproducingleases.xlsx
+        	"leases": {
+        		"total": 39,
+        		"active": 16,
         	},
         },
         "geometry": {
@@ -4691,19 +4611,10 @@ var statesData= {
         "properties": {
             "name": "Washington",
             "density": 102.6,
-            "revenue": 902628.00,
-            "revenueTitle": "$902,628.00",
-            "commodities": {
-        		"other": {
-        			"revenue": 606124.60, //can be calculated from map-data/2013-revnues-by-state-commodity
-        		},
-        		"geothermal": {
-        			"revenue": 8437.00, //can be calculated from map-data/2013-revnues-by-state-commodity
-        		},
-        	},
-        	"leases": { //info about oil and gas leases
-        		"total": 2, //from map-data/numberofleasesineffect.xlsx
-        		"active": 0, //from map-data/numberofproducingleases.xlsx
+            "revenue": 0,
+        	"leases": {
+        		"total": 2,
+        		"active": 0,
         	},
         },
         "geometry": {
@@ -4801,16 +4712,15 @@ var statesData= {
         "properties": {
             "name": "West Virginia",
             "density": 77.06,
-            "revenue": 553152.47,
-            "revenueTitle": "$553,152.47",
+            "revenue": 71158.95,
             "commodities": {
         		"gas": {
-        			"revenue": 87213.02, //can be calculated from map-data/2013-revnues-by-state-commodity
+        			"revenue": 71158.95,
         		},
         	},
-        	"leases": { //info about oil and gas leases
-        		"total": 257, //from map-data/numberofleasesineffect.xlsx
-        		"active": 153, //from map-data/numberofproducingleases.xlsx
+        	"leases": {
+        		"total": 257,
+        		"active": 153,
         	},
         },
         "geometry": {
@@ -4892,7 +4802,6 @@ var statesData= {
             "name": "Wisconsin",
             "density": 105.2,
             "revenue": 0,
-            "revenueTitle": "0"
         },
         "geometry": {
             "type": "Polygon",
@@ -4982,25 +4891,24 @@ var statesData= {
         "properties": {
             "name": "Wyoming",
             "density": 5.851,
-            "revenue": 2041025997.61,
-            "revenueTitle": "$2,041,025,997.61",
+            "revenue": 1479403551.58,
             "commodities": {
         		"oil": {
-        			"revenue": 357515508.93,
+        			"revenue": 341686585.41,
         		},
         		"gas": {
-        			"revenue": 555068854.09,
+        			"revenue": 560494767.31,
         		},
         		"coal": {
-        			"revenue": 567458140.25,
+        			"revenue": 534226397.09,
         		},
         		"other": {
-        			"revenue": 48430656.29,
+        			"revenue": 42995801.77,
         		},
         	},
-        	"leases": { //info about oil and gas leases
-        		"total": 16209, //from map-data/numberofleasesineffect.xlsx
-        		"active": 7546, //from map-data/numberofproducingleases.xlsx
+        	"leases": {
+        		"total": 16209,
+        		"active": 7546,
         	},
         },
         "geometry": {

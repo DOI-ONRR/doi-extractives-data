@@ -242,7 +242,8 @@ $(document).ready(function(){
     function onEachFeature(feature, layer) {
         layer.on({
             mousemove: mousemove,
-            mouseout: mouseout
+            mouseout: mouseout,
+            click:zoomToFeature
         });
     }
     function onEachFeatureMobile(feature, layer) {
@@ -323,7 +324,7 @@ $(document).ready(function(){
     }
 
     function zoomToFeature(e) {
-        mapdataviz.fitBounds(e.target.getBounds());
+        //mapdataviz.fitBounds(e.target.getBounds());
     }
 
 

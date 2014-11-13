@@ -28,6 +28,8 @@ $(document).ready(function(){
   //Default selected commodity
   var selectedCommodity = 'oil';
 
+
+
   //Initilize Map
   (function(){
     if (mobile)
@@ -42,7 +44,20 @@ $(document).ready(function(){
         scrollWheelZoom: false
       }).setView([41.5, -99.5795], 4);
     }
+    mapdataviz.on('zoomstart',function(){
+      $('g[id*="map_stack_sector"]').each(function(){
+          
+          $(this).remove();
+      });
+    });
+    mapdataviz.on('zoomend',function(){
+      var zoomTimeout = setInterval(function(){
+        calculateHeights();
+        clearTimeout(zoomTimeout);
+      },1000);
+    });
   })();
+
 
   //Set Title layer, Text at bottom of map
   L.tileLayer('https://a.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -241,6 +256,11 @@ $(document).ready(function(){
     var closeTooltip;
     var lastAreaViewed = false;
     function mousemove(e) {
+        if(!map_draw_init)
+        {
+          map_draw_init = true;
+          calculateHeights();
+        }
         if (mobile)
         {
           if (lastAreaViewed)
@@ -305,13 +325,6 @@ $(document).ready(function(){
 
     function zoomToFeature(e) {
         mapdataviz.fitBounds(e.target.getBounds());
-        $('g[id*="map_stack_sector"]').each(function(){
-          $(this).remove();
-        });
-        var timeout = setInterval(function(){
-          calculateHeights();
-          clearTimeout(timeout);
-        },1000);
     }
 
 
@@ -354,20 +367,7 @@ $(document).ready(function(){
       });
     }
 
-    /**************************************
-    Sets function on the zoom control for the map
-    Clears the 3d sections, then redraws after a second delay
-    which gives the map enough time to reset
-    ***************************************/
-    $('.leaflet-control-zoom-in, .leaflet-control-zoom-out').click(function(){
-      $('g[id*="map_stack_sector"]').each(function(){
-        $(this).remove();
-      });
-      var timeout = setInterval(function(){
-        calculateHeights();
-        clearTimeout(timeout);
-      },1000);
-    })
+   
 
     /****************************
     Function: sortGeoJson
@@ -487,6 +487,7 @@ $(document).ready(function(){
           });
         }
   }
+  
 });//End document ready
 
 
@@ -506,7 +507,8 @@ $(document).ready(function(){
       });
      })
   }
-})
+});
+
 
 
 

@@ -1,5 +1,3 @@
-// var mapdataviz = L.mapbox.map('map', 'mhertzfeld.i8l68af5')
-//     .setView([37.8, -91], 4);
 $(document).ready(function(){
   var map_draw_init = false;
   var statesDrawOrder = ["Alabama","Alaska","Arizona", "Arkansas", "Connecticut", "Delaware","District of Columbia",

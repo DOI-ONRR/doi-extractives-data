@@ -142,7 +142,8 @@ function download_data(dimension){
 }
 
 function download_map_data(data){
-	var csv='Name,Coal,Gas,Oil,Other,Active Leases,Total Leases,\n';
+	data = alphabitizeGeoJson(data);
+	var csv='Name,Coal,Gas,Oil,Other,Wind,Geothermal,Active Leases,Total Leases,\n';
 	for (var i = 0; i<data.length; i++)
 	{
 		if (!data[i].hasOwnProperty('features'))
@@ -167,21 +168,34 @@ function download_map_data(data){
 					propArray.push(obj.commodities.coal.revenue);
 				else
 					propArray.push('');
+
 				if(obj.commodities.gas)
 					propArray.push(obj.commodities.gas.revenue);
 				else
 					propArray.push('');
+
 				if(obj.commodities.oil)
 					propArray.push(obj.commodities.oil.revenue);
 				else
-					propArray.push('')
+					propArray.push('');
+
 				if(obj.commodities.other)
-					propArray.push(obj.commodities.other.revenue)
+					propArray.push(obj.commodities.other.revenue);
 				else
-					propArray.push('')
+					propArray.push('');
+
+				if(obj.commodities.wind)
+					propArray.push(obj.commodities.wind.revenue);
+				else
+					propArray.push('');
+
+				if(obj.commodities.geothermal)
+					propArray.push(obj.commodities.geothermal.revenue);
+				else
+					propArray.push('');
 			}
 			else
-				propArray.push('','','','')
+				propArray.push('','','','','','')
 			if(obj.hasOwnProperty('leases'))
 			{
 				if(obj.leases.active)
@@ -354,6 +368,22 @@ function getColorPercent(color,range1,range2){
 	range2 = hexToRGB(range2);
 	//console.log('percent='+(color.r-range2.r)/(range1.r-range2.r))
 	return (color.r-range2.r)/(range1.r-range2.r);
+}
+function alphabitizeGeoJson(geoJson){
+  
+  for (var i=0;i<geoJson.length;i++)
+  {
+  	geoJson[i].features.sort(function(a,b){
+	  	if(a.properties.name < b.properties.name)
+	  		return -1;
+	  	if(a.properties.name > b.properties.name)
+	  		return 1;
+	  	else return 0;
+	  });
+  }
+  
+  
+  return geoJson;
 }
 
 

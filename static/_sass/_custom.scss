@@ -438,6 +438,11 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
   }
 }
 
+.splash-subpage {
+  border-bottom: none;
+  background: none;
+}
+
 .map-frame {
   padding: 100px 0 100px 0;
   background: url(../img/fall-outside-denver.jpg) no-repeat 100% 100%;

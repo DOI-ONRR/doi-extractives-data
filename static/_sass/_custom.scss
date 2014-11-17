@@ -92,6 +92,7 @@ ul.menu a.active li {
   display: none;
   @include respond-to(small-up) {
     display: block;
+    height: 30px;
   }
 }
 
@@ -108,19 +109,24 @@ ul.menu a.active li {
   }
   li {
     font-weight: 500;
+    @include rem-fallback(font-size, $base-font-size * 0.86);
     @include respond-to(small-up) {
       float: left;
     }
-    padding: 5px 3px 3px 3px;
-    margin-right: 32px;
+    padding: 4px 2px 2px 3px;
+    margin-right: 28px;
     border-left: 1px solid black;
     border-bottom: 3px solid black;
     display: block;
   }
+  .nav-space {
+    margin-right: 180px; //temporary fix -- needs to be float-right and responsive
+  }
   .last {
     border-bottom: none;
+    border-left: none;
     margin-right: 0;
-    padding: 5px 0 0 0;
+    padding: 0 0 0 0;
   }
   a {
     color: black;
@@ -140,13 +146,12 @@ ul.menu a.active li {
     background-color: #f8f8f8;
     border-radius: 0;
     border-color: black;
-    border-left: none;
     border-bottom-width: 3px;
     height: 30px;
     margin-bottom: 0;
   }
   input[type=search] {
-    width: 210px;
+    width: 180px;
     @include rem-fallback(font-size, $base-font-size * 0.7);
     font-weight: 300;
     color: black;
@@ -162,8 +167,9 @@ ul.menu a.active li {
     color: $dark-gray;
     padding: 0 8px 0 10px;
     float: left;
-    border-top: 1px solid black; 
-    border-right: 1px solid black;   
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;   
     border-bottom: 3px solid black;
     &:hover, &:focus {
       color: $red;

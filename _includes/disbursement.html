@@ -5,7 +5,11 @@
     <div class="intro">
       <p>The answer is: <strong>it depends</strong></p>
       <p>Laws treat revenues from offshore natural resources and onshore natural resources differently. There are set percentages and amounts from each that go certain places every year.</p>
-      <p>Laws also treat different commodities differently. For example, for oil and gas, Federal and local governments get royalties that are a percentage of sales. For many minerals such as gold, copper and silver, the governments get mining claim fees but no ongoing royalties.</p>
+      <p>Laws also treat different commodities differently. For example, for oil and gas, Federal and local governments get 
+      {% for term in site.data.terms %} {% if term.term == "royalty" %}
+        <span class="term-tooltip" title="{{ term.definition }}" tabindex="0" role="tooltip">royalties<i class="fa fa-question"></i></span>
+      {% endif %} {% endfor %} 
+      that are a percentage of sales. For many minerals such as gold, copper and silver, the governments get mining claim fees but no ongoing royalties.</p>
     </div>
   </div>
   
@@ -16,7 +20,7 @@
   <div class="container">
 
     <div class=" viz-title">
-      <h1>Oil &amp; Gas Revenue Flow</h1>
+      <h1>Oil &amp; Gas Revenue Disbursements</h1>
     </div>
 
     <section class="bubbles">

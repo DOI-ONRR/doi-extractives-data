@@ -1,0 +1,31 @@
+# U.S. extractive industries terms and definitions
+
+- term: bonus
+  definition: "The amount paid by the highest successful bidder for a mineral lease. The winning bid."
+
+- term: rent
+  definition: "A mineral lease might not produce anything in paying quantities for some time after it is sold. Until it does, periodic payments are made for the right to continue exploration and development of the land for future mineral production. These payments are called rent."
+
+- term: royalty
+  definition: "A mineral lease owner pays royalties after the lease starts producing a commodity in paying quantities. The amount is based on a percentage of the revenue from the commodity sold. The exact percentage is set in the original lease document that went along with the lease sale."
+
+- term: "other revenues"
+  definition: "This category includes revenues that are not included in the royalty, rent, or bonus categories, such as minimum royalties, estimated royalties, settlement agreements, and interest."
+
+- term: "fiscal year"
+  definition: "The U.S. Federal government’s fiscal year starts on October 1 and ends on September 30."
+
+- term: "calendar year"
+  definition: "The U.S. calendar year starts on January 1 and ends on December 31."
+
+- term: "data accounting"
+  definition: "This data is summarized based on accounting date (which is the date the revenue was reported to and accepted into ONRR’s financial system). Since companies can adjust and correct data up to seven years after a transaction takes place, this accounting year data includes corrections for sales that took place in previous years. This type of data is therefore most useful when analyzing dollars ONRR collected and disbursed in a given year."
+
+- term: "other commodities"
+  definition: "This category consists of products that are not included in the Oil & Gas, Coal, or Renewable categories. DOI collects revenues on over 60 different products, and the revenue collections from “Other Commodities” typically represents less than two percent of total collections. For a complete listing of revenues by product, please visit statistics.onrr.gov."
+
+- term: "below threshold"
+  definition: "The U.S. Extractive Industries Transparency Initiative agreed to an annual reporting threshold of $100,000 because these aggregated payments make up less than one quarter of one percent of total payments. Many of the companies that fall below this threshold are individuals and family trusts. Payments made by companies that reported less than $100,000 are aggregated (rolled up) into this category."
+
+- term: "one mine one product"
+  definition: "Disclosing payments of solid mineral companies who only produce and sell one product from one mine can reveal proprietary sales price and contracting information, and cause competitive harm to small companies. The Department of the Interior is legally obligated through the Trades Secrets Act to safeguard this data, so payments from these companies are aggregated (rolled up) in this category. These aggregated payments make up less than three thousandths of one percent of all payments."

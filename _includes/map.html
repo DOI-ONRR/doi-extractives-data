@@ -87,14 +87,42 @@
   <div class="container map-notes">
     <h1>Map notes. Calendar year 2013 data.</h1>
     <ol>
-      <li><span>Oil.</span> Royalties. Includes various crude oil products such as condensate, drip and scrubber condensate, and fuel oil.</li>
-      <li><span>Gas.</span> Royalties. Includes various natural gas products such as processed and unprocessed gas, natural gas liquids (NGL), nitrogen, flash gas, fuel gas, and coal bed methane.</li>
-      <li><span>Coal.</span> Royalties. Includes various processed and unprocessed coal products such as anthracite, bituminous, subbituminous, and lignite.</li>
+      <li><span>Oil.</span> 
+        {% for term in site.data.terms %} {% if term.term == "royalty" %}
+          <span class="term-tooltip" title="{{ term.definition }}">Royalties.<i class="fa fa-question"></i></span>
+        {% endif %} {% endfor %}
+         Includes various crude oil products such as condensate, drip and scrubber condensate, and fuel oil.</li>
+      <li><span>Gas.</span>
+        {% for term in site.data.terms %} {% if term.term == "royalty" %}
+          <span class="term-tooltip" title="{{ term.definition }}">Royalties.<i class="fa fa-question"></i></span>
+        {% endif %} {% endfor %}
+        Includes various natural gas products such as processed and unprocessed gas, natural gas liquids (NGL), nitrogen, flash gas, fuel gas, and coal bed methane.</li>
+      <li><span>Coal.</span>
+        {% for term in site.data.terms %} {% if term.term == "royalty" %}
+          <span class="term-tooltip" title="{{ term.definition }}">Royalties.<i class="fa fa-question"></i></span>
+        {% endif %} {% endfor %}
+        Includes various processed and unprocessed coal products such as anthracite, bituminous, subbituminous, and lignite.</li>
     </ol>
     <ol start="4">
-      <li><span>Other.</span> Royalties. Includes a wide variety of solid mineral and other products such as copper, zinc, tar sands, clay, borax, and potassium.</li>
-      <li><span>Wind.</span> Bonus and rents from offshore wind turbine projects. These leases have not started producing wind in paying quanitities so there are no royalties yet.</li>
-      <li><span>Geothermal.</span> Royalties. Includes royalties from geothermal electrical generation and the resulting byproducts.</li>
+      <li><span>Other.</span> 
+        {% for term in site.data.terms %} {% if term.term == "royalty" %}
+          <span class="term-tooltip" title="{{ term.definition }}">Royalties.<i class="fa fa-question"></i></span>
+        {% endif %} {% endfor %}
+        Includes a wide variety of solid mineral and other products such as copper, zinc, tar sands, clay, borax, and potassium.</li>
+      <li><span>Wind.</span> 
+        {% for term in site.data.terms %} {% if term.term == "bonus" %}
+          <span class="term-tooltip" title="{{ term.definition }}">Bonus<i class="fa fa-question"></i></span>
+        {% endif %} {% endfor %}
+         and 
+        {% for term in site.data.terms %} {% if term.term == "rent" %}
+          <span class="term-tooltip" title="{{ term.definition }}">rents<i class="fa fa-question"></i></span> 
+        {% endif %} {% endfor %}
+        from offshore wind turbine projects. These leases have not started producing wind in paying quanitities so there are no royalties yet.</li>
+      <li><span>Geothermal.</span> 
+        {% for term in site.data.terms %} {% if term.term == "royalty" %}
+          <span class="term-tooltip" title="{{ term.definition }}">Royalties.<i class="fa fa-question"></i></span>
+        {% endif %} {% endfor %}
+        Includes royalties from geothermal electrical generation and the resulting byproducts.</li>
     </ol>
   </div>
 

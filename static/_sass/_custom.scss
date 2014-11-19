@@ -29,7 +29,6 @@ sub {
   i {
    vertical-align: super;
    @include rem-fallback(font-size, 0.97);
-   padding-left: 2px;
   }
   &:hover,
   &:focus {
@@ -1072,7 +1071,7 @@ div.disbursement_bubble_rollover {
     li {
       padding-bottom: 8px;
     }
-    span {
+    span:first-of-type {
       font-weight: 600;
     }
   }
@@ -1088,6 +1087,11 @@ div.disbursement_bubble_rollover {
   }
   ol li {
     @include rem-fallback(font-size, 0.8);
+  }
+  .term-tooltip {
+    i {
+      @include rem-fallback(font-size, 0.7);
+    }
   }
 }
 

@@ -1327,6 +1327,11 @@ div.disbursement_bubble_rollover {
     
     // background: linear-gradient(to right, #efaeab, #7e3533);
     /* Standard syntax (must be last) */
+
+    div.step {
+      display: inline-block;
+      height: 100%;
+    }
   }
   div.map-scale-min {
     float: left;

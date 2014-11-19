@@ -30,6 +30,19 @@ $(document).ready(function() {
     });
 </script>
 
+<!-- term definition tooltips -->
+<script type="text/javascript">
+  $(document).ready(function() {
+    Tipped.create('.term-tooltip', { 
+      position: 'topright', 
+      radius: false,
+      maxWidth: 200,
+      offset: { y: 5 },
+      shadow: false,
+    });
+  });
+</script>
+
 <!-- extra space at top for hash links -->
 <!-- http://stackoverflow.com/questions/17534661/make-anchor-link-go-some-pixels-above-where-its-linked-to -->
 <script>

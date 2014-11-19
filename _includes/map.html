@@ -4,7 +4,11 @@
     <h1>How do natural resources become Federal revenue?</h1>
     <div class="intro">
       <p>If there are natural resources under (or even suspected of being under) approved Federal lands, the U.S. Department of the Interior or the U.S. Department of Agriculture grants leases to explore for and extract these products for sale.</p>
-      <p>In return, part of the sales value for many commodities is paid to the Federal government for the benefit of the American people. These are called “royalties.” There are other revenues involved, such as rents, fees, and penalties, but by far most of the money comes from these royalties.</p>
+      <p>In return, part of the sales value for many commodities is paid to the Federal government for the benefit of the American people. These are called “royalties.” There are other revenues involved, such as 
+        {% for term in site.data.terms %} {% if term.term == "rent" %}
+          <span class="term-tooltip" title="{{ term.definition }}">rents</span>, 
+        {% endif %} {% endfor %}
+      fees<i class="fa fa-question"></i>, and penalties, but by far most of the money comes from these royalties.</p>
     </div>
   </div>
 

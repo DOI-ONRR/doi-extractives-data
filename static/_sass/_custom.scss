@@ -25,6 +25,18 @@ sub {
   margin-top: 10px;
 }
 
+.term-tooltip {
+  i {
+   vertical-align: super;
+   @include rem-fallback(font-size, 0.97);
+   padding-left: 2px;
+  }
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
 // Utility
 //============================================
 

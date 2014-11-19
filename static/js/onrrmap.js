@@ -10,7 +10,7 @@ $(document).ready(function(){
   var gomDrawOrder = ['Eastern Gulf of Mexico','Central Gulf of Mexico','Western Gulf of Mexico']
   var mapdataviz;//Holds map object
   var mobile = (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent));//Boolean for mobile screen widths
-  var hues = ['#efaeab','#7e3533']; // Range of colors for map
+
   //List of commodities on map
   var variables = [
       'oil',
@@ -26,7 +26,37 @@ $(document).ready(function(){
   //Default selected commodity
   var selectedCommodity = 'oil';
 
+  // these fixed color classes are from ColorBrewer: http://colorbrewer2.org/
+  var mapColors = ['rgb(255,247,236)','rgb(254,232,200)','rgb(253,212,158)','rgb(253,187,132)','rgb(252,141,89)','rgb(239,101,72)','rgb(215,48,31)','rgb(179,0,0)','rgb(127,0,0)'];
 
+  /*
+   * This is a quantized color, meaning that it will always return
+   * one of the colors in mapColors[]. Usage:
+   *
+   * mapColorScale.domain([min, max]);
+   * var color = mapColorScale(value);
+   */
+  var mapColorScale = d3.scale.quantize()
+    .domain([0, 100])
+    .range(mapColors);
+
+  // Create one div.step for each map color, and insert them
+  // into #map-scale-pane > .map-scale
+  var mapScaleSteps = d3.select("#map-scale-pane .map-scale")
+    .selectAll("div.step")
+    .data(mapColors)
+    .enter()
+    .append("div")
+      .attr("class", "step")
+      .style("background", function(d) { return d; })
+      .style("width", (100 / mapColors.length).toFixed(3) + "%");
+  // (their width is 100% / the number of colors)
+
+  // dollar formatting (for color step HTML titles)
+  var commaFormat = d3.format(",");
+  var dollarFormat = function(dollars) {
+    return "$" + commaFormat(Math.floor(dollars));
+  };
 
   //Initilize Map
   (function(){
@@ -81,14 +111,14 @@ $(document).ready(function(){
     $(this).attr('data-value',variables[i]);
 
     $(this).click(function(){
-      selectedCommodity= $(this).attr('data-value');
+      selectedCommodity = $(this).attr('data-value');
       setVariable($(this).attr('data-value'));
+
       $('#map-comodities-pane a').each(function(n){
         $(this).attr('aria-pressed','false');
       });
 
       $(this).attr('aria-pressed','true');
-      $('#map-scale-pane > h1').html(function(){return selectedCommodity == 'wind' ? 'Revenues' : 'Royalties';});
     })
 
 
@@ -220,11 +250,18 @@ $(document).ready(function(){
     to draw the 3d effect.
     ***********************************/
     function setVariable(name) {
-      $('div.map-scale-min').html('$'+ranges[name].min.formatMoney(0,'.',','));
-      $('div.map-scale-max').html('$'+ranges[name].max.formatMoney(0,'.',','));
-      for (var i=0; i<dataLayers.length; i++)
+      var range = ranges[name];
+      $('div.map-scale-min').html('$' + range.min.formatMoney(0,'.',','));
+      $('div.map-scale-max').html('$' + range.max.formatMoney(0,'.',','));
+      $('#map-scale-pane > h1').html(selectedCommodity == 'wind' ? 'Revenues' : 'Royalties');
+
+      // update the (input) domain of the color scale,
+      // according to the new variable's range, affecting
+      // subsequent calls to mapColorScale(value)
+      mapColorScale.domain([range.min, range.max]);
+
+      for (var i = 0; i < dataLayers.length; i++)
       {
-        var scale = ranges[name];
         dataLayers[i].eachLayer(function(layer) {
           setLayerColor(layer);
         });
@@ -235,20 +272,23 @@ $(document).ready(function(){
       ***********************/
       if (map_draw_init)
         calculateHeights();
+
+      // update the map scale each time the variable changes
+      updateMapScale();
     }
 
     function onEachFeature(feature, layer) {
-        layer.on({
-            mousemove: mousemove,
-            mouseout: mouseout,
-            click: zoomToFeature
-        });
+      layer.on({
+        mousemove: mousemove,
+        mouseout: mouseout,
+        click: zoomToFeature
+      });
     }
+
     function onEachFeatureMobile(feature, layer) {
-        layer.on({
-            
-            click: mousemove
-        });
+      layer.on({
+        click: mousemove
+      });
     }
 
     var closeTooltip;
@@ -347,7 +387,7 @@ $(document).ready(function(){
       $('g',overlayLayer).each(function(index){
 
         var layerColor = $('path',$(this)).attr('fill');
-        var depth = Math.round(getColorPercent(layerColor,hues[1],hues[0]) * maxDepth);
+        var depth = getMapColorDepth(layerColor);
         $(this).attr('data-3d-layers','heightIdentifier'+index);
         $(this).attr('data-fill-color' , $(this).attr('fill'));
         while(count < depth && $('path', $(this)).attr('fill-opacity') > 0)
@@ -450,43 +490,49 @@ $(document).ready(function(){
   }
 
   function setLayerColor(layer){
-    var scale = ranges[selectedCommodity];
-    var value =0;
+    var value = 0;
     var name = selectedCommodity;
-        if (layer.feature.properties.commodities)
-        {
-          if (layer.feature.properties.commodities[name])
-          {
-            value = layer.feature.properties.commodities[name].revenue;
-          }
+    if (layer.feature.properties.commodities)
+    {
+      if (layer.feature.properties.commodities[name])
+      {
+        value = layer.feature.properties.commodities[name].revenue;
+      }
 
-        }
-        var percent = (value / scale.max) * 100;
-        var newColor = makeGradientColor(hues[0],hues[1],percent);
-        $("g[data-3d-layers='"+$(layer._container).attr('data-3d-layers')+"'] path").each(function(){
-          $(this).attr('fill',newColor.cssColor);
-        });
-        if (percent == 0)
-        {
-          layer.setStyle({
-            fillColor: '#D8D8D8',
-            fillOpacity: 0.0,
-            weight: 0.5,
-            data_revenue: value
-          })
-        }
-        else
-        {
-          layer.setStyle({
-            fillColor: newColor.cssColor,
-            fillOpacity: 1.0,
-            weight: 0.5,
-            data_revenue: value
-          });
-        }
+    }
+
+    var newColor = mapColorScale(value);
+    $("g[data-3d-layers='"+$(layer._container).attr('data-3d-layers')+"'] path").each(function(){
+      $(this).attr('fill', newColor);
+    });
+
+    var opacity = (value > 0) ? 1 : 0;
+    layer.setStyle({
+      fillColor: newColor,
+      fillOpacity: opacity,
+      weight: 0.5,
+      data_revenue: value
+    });
   }
-  
-});//End document ready
+
+  /*
+   * Update the map scale by setting the title attribute of each of
+   * the color steps.
+   */
+  function updateMapScale() {
+    mapScaleSteps
+      .attr("title", function(color, i) {
+        var extent = mapColorScale.invertExtent(color);
+        return extent.map(dollarFormat).join(" - ");
+      });
+  }
+
+  // get the 3D "depth" for a given map color
+  function getMapColorDepth(color) {
+    return Math.max(mapColors.indexOf(color), 0);
+  }
+
+}); // End document ready
 
 
 $(document).ready(function(){

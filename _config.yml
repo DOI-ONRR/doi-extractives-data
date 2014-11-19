@@ -11,7 +11,7 @@ owner:
 google_analytics:
 google_verify:
 
-logo: /doi-extractives-data/static/img/favicon/favicon-152.png
+logo: /static/img/favicon/favicon-152.png
 
 sass:
   sass_dir: static/_sass

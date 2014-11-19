@@ -6,7 +6,7 @@
       <p>If there are natural resources under (or even suspected of being under) approved Federal lands, the U.S. Department of the Interior or the U.S. Department of Agriculture grants leases to explore for and extract these products for sale.</p>
       <p>In return, part of the sales value for many commodities is paid to the Federal government for the benefit of the American people. These are called “royalties.” There are other revenues involved, such as 
         {% for term in site.data.terms %} {% if term.term == "rent" %}
-          <span class="term-tooltip" title="{{ term.definition }}">rents<i class="fa fa-question"></i></span>, 
+          <span class="term-tooltip" title="{{ term.definition }}" tabindex="0" role="tooltip">rents<i class="fa fa-question"></i></span>, 
         {% endif %} {% endfor %}
       fees, and penalties, but by far most of the money comes from these royalties.</p>
     </div>
@@ -89,38 +89,38 @@
     <ol>
       <li><span>Oil.</span> 
         {% for term in site.data.terms %} {% if term.term == "royalty" %}
-          <span class="term-tooltip" title="{{ term.definition }}">Royalties.<i class="fa fa-question"></i></span>
+          <span class="term-tooltip" title="{{ term.definition }}" tabindex="0" role="tooltip">Royalties.<i class="fa fa-question"></i></span>
         {% endif %} {% endfor %}
          Includes various crude oil products such as condensate, drip and scrubber condensate, and fuel oil.</li>
       <li><span>Gas.</span>
         {% for term in site.data.terms %} {% if term.term == "royalty" %}
-          <span class="term-tooltip" title="{{ term.definition }}">Royalties.<i class="fa fa-question"></i></span>
+          <span class="term-tooltip" title="{{ term.definition }}" tabindex="0" role="tooltip">Royalties.<i class="fa fa-question"></i></span>
         {% endif %} {% endfor %}
         Includes various natural gas products such as processed and unprocessed gas, natural gas liquids (NGL), nitrogen, flash gas, fuel gas, and coal bed methane.</li>
       <li><span>Coal.</span>
         {% for term in site.data.terms %} {% if term.term == "royalty" %}
-          <span class="term-tooltip" title="{{ term.definition }}">Royalties.<i class="fa fa-question"></i></span>
+          <span class="term-tooltip" title="{{ term.definition }}" tabindex="0" role="tooltip">Royalties.<i class="fa fa-question"></i></span>
         {% endif %} {% endfor %}
         Includes various processed and unprocessed coal products such as anthracite, bituminous, subbituminous, and lignite.</li>
     </ol>
     <ol start="4">
       <li><span>Other.</span> 
         {% for term in site.data.terms %} {% if term.term == "royalty" %}
-          <span class="term-tooltip" title="{{ term.definition }}">Royalties.<i class="fa fa-question"></i></span>
+          <span class="term-tooltip" title="{{ term.definition }}" tabindex="0" role="tooltip">Royalties.<i class="fa fa-question"></i></span>
         {% endif %} {% endfor %}
         Includes a wide variety of solid mineral and other products such as copper, zinc, tar sands, clay, borax, and potassium.</li>
       <li><span>Wind.</span> 
         {% for term in site.data.terms %} {% if term.term == "bonus" %}
-          <span class="term-tooltip" title="{{ term.definition }}">Bonus<i class="fa fa-question"></i></span>
+          <span class="term-tooltip" title="{{ term.definition }}" tabindex="0" role="tooltip">Bonus<i class="fa fa-question"></i></span>
         {% endif %} {% endfor %}
          and 
         {% for term in site.data.terms %} {% if term.term == "rent" %}
-          <span class="term-tooltip" title="{{ term.definition }}">rents<i class="fa fa-question"></i></span> 
+          <span class="term-tooltip" title="{{ term.definition }}" tabindex="0" role="tooltip">rents<i class="fa fa-question"></i></span> 
         {% endif %} {% endfor %}
         from offshore wind turbine projects. These leases have not started producing in paying quanitities so there are no royalties yet.</li>
       <li><span>Geothermal.</span> 
         {% for term in site.data.terms %} {% if term.term == "royalty" %}
-          <span class="term-tooltip" title="{{ term.definition }}">Royalties.<i class="fa fa-question"></i></span>
+          <span class="term-tooltip" title="{{ term.definition }}" tabindex="0" role="tooltip">Royalties.<i class="fa fa-question"></i></span>
         {% endif %} {% endfor %}
         Includes royalties from geothermal electrical generation and the resulting byproducts.</li>
     </ol>

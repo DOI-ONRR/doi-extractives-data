@@ -27,7 +27,7 @@ $(document).ready(function(){
   var selectedCommodity = 'oil';
 
   // these fixed color classes are from ColorBrewer: http://colorbrewer2.org/
-  var mapColors = ['rgb(255,247,236)','rgb(254,232,200)','rgb(253,212,158)','rgb(253,187,132)','rgb(252,141,89)','rgb(239,101,72)','rgb(215,48,31)','rgb(179,0,0)','rgb(127,0,0)'];
+  var mapColors = ['rgb(255,245,240)','rgb(254,224,210)','rgb(252,187,161)','rgb(252,146,114)','rgb(251,106,74)','rgb(239,59,44)','rgb(203,24,29)','rgb(153,0,13)'];
 
   /*
    * This is a quantized color, meaning that it will always return

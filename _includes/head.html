@@ -12,7 +12,7 @@
 	<meta property="og:locale" content="en_US">
 	<meta property="og:type" content="website" />
 	<meta property="og:site_name" content="{{ site.name }}" />
-	<meta property="og:url" content="{{ site.url }}{% if page.title != "Home" %}{{ page.url }}{% endif %}">
+	<meta property="og:url" content="{{ site.url }}{% if page.title != "Home" %}{{ page.permalink }}{% endif %}">
 	
 	<meta name="twitter:title" content="{{ site.name }} - {{ page.title }}">
 	<meta property="og:title" content="{{ site.name }} - {{ page.title }}">
@@ -26,9 +26,11 @@
 	{% if page.image %}
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:image" content="{{ site.url }}/static/img/{{ page.image }}">
+	<meta property="og:image" content="{{ site.url }}/static/img/{{ page.image }}">
 	{% else %}
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:image" content="{{ site.url }}{{ site.logo }}">
+	<meta property="og:image" content="{{ site.url }}{{ site.logo }}">
 	{% endif %}
 
 	{% capture canonical %}{{ site.url }}{% if site.permalink contains '.html' %}{{ page.url }}{% else %}{{ page.url | remove:'index.html' | strip_slash }}{% endif %}{% endcapture %}

@@ -193,6 +193,7 @@ d3.json("static/data/disbursement-summary-data.json",function(error,root){
     };
 });
 
+//Setup onclick for year tabs
 $(document).ready(function(){
     $('div.bubble_tabs a').each(function(){
         $(this).click(function(){

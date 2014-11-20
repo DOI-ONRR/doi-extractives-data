@@ -1,7 +1,8 @@
 ---
 layout: subpage
 title: "Natural Resource Sectors in the U.S."
-description: This is a sample beta site for Federal natural resource revenues.
+description: "There are many different types of natural resources produced in the United States. A subset of these are produced on Federal lands. Most of the data on this site is about natural resources from Federal lands. However, the information below provides a broad overview of U.S. natural resource sectors, including those sourced from Federal, state and privately-owned land."
+permalink: /sectors/
 ---
 
 <a name="top"></a>U.S. Natural Resource Sectors

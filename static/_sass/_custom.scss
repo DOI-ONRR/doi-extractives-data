@@ -797,11 +797,85 @@ $section-margin-top: 40px;
 
 .bubbles-onshore-words {
   margin-top: 20px;
+  margin-bottom: 40px;
   h1 {
     background: $useiti-green;
   }
 }
 
+.tipsy-inner {
+  text-align: left;
+  padding: 15px;
+  h1 {
+    font-family: Lato;
+    font-weight: 400;
+    @include rem-fallback(font-size, 1.7);
+  }
+  h2 {
+    font-family: Lato;
+    font-weight: 200;
+    margin-top: 0;
+    padding-bottom: 0;
+    color: black;
+    @include rem-fallback(font-size, 1);
+  }
+  p {
+    font-weight: 200;
+    line-height: 1.4;
+  }
+  p:first-of-type {
+    margin-bottom: 10px;
+  }
+  img {
+    width: 40px;
+    margin-right: 10px;
+  }
+  .sub {
+    text-align: center;
+  }
+}
+
+.test {
+  //@include span-columns(12);
+}
+
+.tipsy-more {
+  border-top: 1px solid $deep-gray;
+  margin-top: 20px;
+  margin-bottom: 0;
+  text-align: center;
+  a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+    color: $deep-gray;
+    text-decoration: none;
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+      background-color: $light-gray;
+    }
+  }
+}
+
+.disbursement_bubble_details {
+  h1 {
+    font-weight: 300;
+    @include rem-fallback(font-size, 1.1);
+  }
+  p {
+    @include rem-fallback(font-size, 0.9);
+    line-height: 1.4;
+  }
+}
+
+.disbursement_bubble_details_images {
+  width: 30%;
+  display: inline-block;
+}
+.disbursement-bubble-img-containter {
+  text-align: center;
+}
 
 
 //old stuff below here

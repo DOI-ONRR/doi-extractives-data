@@ -1,8 +1,8 @@
 var diameter = 760,
     format = d3.format(",d"),
     color = d3.scale.category20c()
-    color_offshore = "3397C2"
-    color_onshore = "9FA730";
+    color_offshore = "#3397C2"
+    color_onshore = "#9FA730";
 var bubbles = [];
 
 bubbles['2012'] = d3.layout.pack()
@@ -35,10 +35,10 @@ d3.json("static/data/disbursement-summary-data.json",function(error,root){
         .enter().append("g")
         .attr("class","node")
         .attr("transform",function(d){ return "translate(" + d.x + "," + d.y + ")"; });
-
+        console.log(color_onshore);
         node.append("circle")
             .attr("r",function(d){return d.r; })
-            .style("fill",function(d){ if(d.shore == 'Onshore') return color_onshore; else return color_offshore;});
+            .attr("fill",function(d){ if(d.shore == 'Onshore') return color_onshore; else return color_offshore;});
 
         //Controls text on circle    
         node.append("text")
@@ -73,8 +73,6 @@ d3.json("static/data/disbursement-summary-data.json",function(error,root){
         }
       });
 
-    var mouseOverToolTip = false;
-    var mouseOverToolTip_function = false;
     $("section.bubbles svg circle").on("mouseover",function(){
         $('section.bubbles svg text').each(function(){
             $(this).tipsy('hide');

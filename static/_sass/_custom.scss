@@ -722,8 +722,50 @@ $section-margin-top: 40px;
 
 .disburse {
   background-color: $mid-gray;
+  padding-top: 20px;
+  padding-bottom: 0;
+  h1 {
+    font-family: Lato;
+    font-weight: 100;
+    color: white;
+    margin-bottom: 15px;
+  }
+  .bubble_tabs {
+    margin-left: 40px;
+    @include rem-fallback(font-size, 1.3);
+    a {
+      font-weight: 200;
+      padding: 5px 13px 17px 13px;
+      text-decoration: none;
+      color: black;
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      } 
+    }
+    .active {
+      color: white;
+      background: $deep-gray;
+    }
+  }
 }
 
+.bubbles {
+  background: $deep-gray;
+}
+
+.bubbles-viz {
+  @include span-columns(8);
+  background-color: blue;
+}
+
+.bubbles-onshore-offshore {
+  @include span-columns(4);
+  background-color: red;
+}
+
+
+//old stuff below here
 .disbursement {
   a:active {
     text-decoration: underline;

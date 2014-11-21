@@ -1,4 +1,4 @@
-var diameter = 760,
+var diameter = 620,
     format = d3.format(",d"),
     color = d3.scale.category20c()
     color_offshore = "3397C2"
@@ -7,23 +7,23 @@ var bubbles = [];
 
 bubbles['2012'] = d3.layout.pack()
         .sort(null)
-        .size([diameter, diameter-300])
+        .size([diameter, diameter])
         .padding(1.5);
 bubbles['2013'] = d3.layout.pack()
         .sort(null)
-        .size([diameter, diameter-300])
+        .size([diameter, diameter])
         .padding(1.5);
 bubbles_svg = [];
 
 //SVG in document is setup here
 bubbles_svg['2012'] = d3.select("#disbursement_2012").append("svg")
 .attr("width", diameter)
-.attr("height", diameter-300)
+.attr("height", diameter)
 .attr("class", "bubble");
 
 bubbles_svg['2013'] = d3.select("#disbursement_2013").append("svg")
 .attr("width", diameter)
-.attr("height", diameter-300)
+.attr("height", diameter)
 .attr("class", "bubble");
 
 d3.json("static/data/disbursement-summary-data.json",function(error,root){

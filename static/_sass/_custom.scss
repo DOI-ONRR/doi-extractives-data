@@ -720,6 +720,10 @@ $section-margin-top: 40px;
 // Disbursment Bubble Graph
 //============================================
 
+.disburse {
+  background-color: $mid-gray;
+}
+
 .disbursement {
   a:active {
     text-decoration: underline;
@@ -842,8 +846,9 @@ $section-margin-top: 40px;
     }
   }
 }
+
 .bubbles {
-  @include span-columns(12);
+  //@include span-columns(12);
   .offshore {
     @include span-columns(6 of 12);
   }

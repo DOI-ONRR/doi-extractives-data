@@ -15,11 +15,32 @@
   
 </section>
 
-<section class="section medium-gray disbursement">
+<section class="section disburse">
 
   <div class="container">
 
-    <div class=" viz-title">
+    <h1>Oil &amp; Gas Revenue Disbursements</h1>
+
+    <div class="bubble_tabs">
+      <a href="javascript:$('#disbursement_2012').show();$('#disbursement_2013').hide();" title="Show 2012 Disbursement Graph">2012</a>
+      <a href="javascript:$('#disbursement_2013').show();$('#disbursement_2012').hide();" title="Show 2013 Disbursement Graph">2013</a>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="bubbles" style="background:black;">
+  
+    <div class="disbursement_container">
+      <div id="disbursement_2012"></div>
+      <div id="disbursement_2013" style="display:none;"></div>
+    </div>
+ 
+</section>
+
+
+    <!-- <div class=" viz-title">
       <h1>Oil &amp; Gas Revenue Disbursements</h1>
     </div>
 
@@ -45,12 +66,4 @@
 
       </div>
       
-    </section>
-
-    <div class="sectors-social">
-      <img src="{{ site.baseurl }}/static/img/icon_4501.svg" alt="Download" class="share">
-      <img src="{{ site.baseurl }}/static/img/icon_7584.svg" alt="Share" class="share">
-    </div>
-
-  </div>
-</section>
+    </section> -->

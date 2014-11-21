@@ -29,7 +29,7 @@ var n = this,
  	return this.charAt(0).toUpperCase() + this.slice(1);
  }
 
-function text_money(f){
+function text_money(f,c){
 	f = parseFloat(f);
 	var s = f.formatMoney(2,'.',',');
 	var t;
@@ -51,6 +51,8 @@ function text_money(f){
 	}
 	s=s.substring(0,s.search(',')+2);
 	s=s.replace(",",".");
+	if (c)
+		return s+=" <span class='"+c + "'>"+t+"</span>";
 	return s+=" "+t;
 }
 

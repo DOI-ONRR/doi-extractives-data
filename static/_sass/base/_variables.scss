@@ -1,11 +1,22 @@
 // Fonts
-@include font-face(Lato, '../fonts/Lato/lato-reg-webfont', normal);
-@include font-face(Lato, '../fonts/Lato/lato-bol-webfont', 500);
-@include font-face(Lato, '../fonts/Lato/lato-bla-webfont', 700);
+@include font-face(Lato, '../fonts/Lato/lato-thin-webfont', 100, normal);
+@include font-face(Lato, '../fonts/Lato/lato-thinitalic-webfont', 100, italic);
+@include font-face(Lato, '../fonts/Lato/lato-light-webfont', 200, normal);
+@include font-face(Lato, '../fonts/Lato/lato-lightitalic-webfont', 200, italic);
+@include font-face(Lato, '../fonts/Lato/lato-regular-webfont', 300, normal);
+@include font-face(Lato, '../fonts/Lato/lato-italic-webfont', 300, italic);
+@include font-face(Lato, '../fonts/Lato/lato-medium-webfont', 400, normal);
+@include font-face(Lato, '../fonts/Lato/lato-mediumitalic-webfont', 400, italic);
+@include font-face(Lato, '../fonts/Lato/lato-semibold-webfont', 500, normal);
+@include font-face(Lato, '../fonts/Lato/lato-semibolditalic-webfont', 500, italic);
+@include font-face(Lato, '../fonts/Lato/lato-bold-webfont', 600, normal);
+@include font-face(Lato, '../fonts/Lato/lato-bolditalic-webfont', 600, italic);
+@include font-face(Lato, '../fonts/Lato/lato-black-webfont', 700, normal);
+
 @include font-face(Raleway, '../fonts/Raleway/raleway-regular-webfont', normal);
 @include font-face(Raleway, '../fonts/Raleway/raleway-bold-webfont', 500);
 @include font-face(Raleway, '../fonts/Raleway/raleway-heavy-webfont', 800);
-//###remove extra font weights once you decide which ones you need for Raleway
+//###remove extra font weights once you decide which ones you need
 
 // Typography
 $sans-serif: Lato;
@@ -33,6 +44,11 @@ $light-gray: #eaedf1;
 $light-red: #FBE3E4;
 $light-yellow: #FFF6BF;
 $light-green: #E6EFC2;
+
+$mid-gray: #5a5a5a;
+$deep-gray: #313131;
+$useiti-green: #9fa731;
+$useiti-blue: #3397c2;
 
 
 $deep-purple: #452941;

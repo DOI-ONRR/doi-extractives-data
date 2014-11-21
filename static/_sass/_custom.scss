@@ -756,13 +756,52 @@ $section-margin-top: 40px;
 
 .bubbles-viz {
   @include span-columns(8);
-  background-color: blue;
+  text {
+    color: white;
+  }
 }
 
 .bubbles-onshore-offshore {
   @include span-columns(4);
-  background-color: red;
+  margin-top: 20px;
+  > div {
+    background: white;
+    padding-top: 10px;
+    padding-bottom: 1px;
+  }
+  h1 {
+    font-family: Lato;
+    font-weight: 700;
+    color: white;
+    padding: 10px;
+    margin-right: 10px;
+    margin-left: -10px;
+    @include rem-fallback(font-size, 1);
+  }
+  p {
+    margin-right: 25px;
+    margin-left: 25px;
+    font-weight: 200;
+    @include rem-fallback(font-size, 0.9);
+    line-height: 1.4;
+  }
 }
+
+.bubbles-offshore-words {
+  margin-left: -20px;
+  margin-right: 20px;
+  h1 {
+    background: $useiti-blue;
+  }
+}
+
+.bubbles-onshore-words {
+  margin-top: 20px;
+  h1 {
+    background: $useiti-green;
+  }
+}
+
 
 
 //old stuff below here
@@ -889,48 +928,48 @@ $section-margin-top: 40px;
   }
 }
 
-.bubbles {
-  //@include span-columns(12);
-  .offshore {
-    @include span-columns(6 of 12);
-  }
-  .onshore {
-    @include span-columns(6 of 12);
-  }
-  h1 {
-    @include rem-fallback(font-size, 1.4);
-    span {
-      color: $purple1;
-    }
-    border-top: 2px solid $purple1;
-    margin-top: 20px;
-    margin-bottom: 10px;
-  }
-  .onshore h1 {
-    span {
-      color: $orange1;
-    }
-    border-top: 2px solid $orange1;
-  }
-  h2 {
-    text-transform: uppercase;
-    @include rem-fallback(font-size, 0.9);
-    font-weight: 800;
-    margin-top: 4px;
-    padding-left: 3px;
-    border-left: 2px solid black;
-    &:hover, &:focus {
-      border-left: none;
-    }
-    a {
-      color: black;
-      &:hover, &:focus {
-        text-decoration: none;
-        cursor: pointer;
-      }
-    }
-  }
-}
+// .bubbles {
+//   //@include span-columns(12);
+//   .offshore {
+//     @include span-columns(6 of 12);
+//   }
+//   .onshore {
+//     @include span-columns(6 of 12);
+//   }
+//   h1 {
+//     @include rem-fallback(font-size, 1.4);
+//     span {
+//       color: $purple1;
+//     }
+//     border-top: 2px solid $purple1;
+//     margin-top: 20px;
+//     margin-bottom: 10px;
+//   }
+//   .onshore h1 {
+//     span {
+//       color: $orange1;
+//     }
+//     border-top: 2px solid $orange1;
+//   }
+//   h2 {
+//     text-transform: uppercase;
+//     @include rem-fallback(font-size, 0.9);
+//     font-weight: 800;
+//     margin-top: 4px;
+//     padding-left: 3px;
+//     border-left: 2px solid black;
+//     &:hover, &:focus {
+//       border-left: none;
+//     }
+//     a {
+//       color: black;
+//       &:hover, &:focus {
+//         text-decoration: none;
+//         cursor: pointer;
+//       }
+//     }
+//   }
+// }
 .stats-offshore {
   line-height: 15px;
   position: relative;

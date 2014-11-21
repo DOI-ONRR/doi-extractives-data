@@ -1,29 +1,29 @@
 var diameter = 620,
     format = d3.format(",d"),
     color = d3.scale.category20c()
-    color_offshore = "#3397C2"
-    color_onshore = "#9FA730";
+    color_offshore = "#3397c2"
+    color_onshore = "#9fa731";
 var bubbles = [];
 
 bubbles['2012'] = d3.layout.pack()
         .sort(null)
-        .size([diameter, diameter])
-        .padding(1.5);
+        .size([diameter-15, diameter-15])
+        .padding(5);
 bubbles['2013'] = d3.layout.pack()
         .sort(null)
-        .size([diameter, diameter])
-        .padding(1.5);
+        .size([diameter-15, diameter-15])
+        .padding(5);
 bubbles_svg = [];
 
 //SVG in document is setup here
 bubbles_svg['2012'] = d3.select("#disbursement_2012").append("svg")
-.attr("width", diameter)
-.attr("height", diameter)
+.attr("width", diameter-15)
+.attr("height", diameter-15)
 .attr("class", "bubble");
 
 bubbles_svg['2013'] = d3.select("#disbursement_2013").append("svg")
-.attr("width", diameter)
-.attr("height", diameter)
+.attr("width", diameter-15)
+.attr("height", diameter-15)
 .attr("class", "bubble");
 
 d3.json("static/data/disbursement-summary-data.json",function(error,root){
@@ -38,12 +38,18 @@ d3.json("static/data/disbursement-summary-data.json",function(error,root){
         console.log(color_onshore);
         node.append("circle")
             .attr("r",function(d){return d.r; })
-            .attr("fill",function(d){ if(d.shore == 'Onshore') return color_onshore; else return color_offshore;});
+            .attr("fill",function(d){ if(d.shore == 'Onshore') return color_onshore; else return color_offshore;})
+            .attr("stroke",function(d){ if(d.shore == 'Onshore') return color_onshore; else return color_offshore;})
+            .attr("stroke-width","3");
 
         //Controls text on circle    
         node.append("text")
-            .attr("dy", ".3em")
-            .style("text-anchor", "middle")
+            .attr("dy", ".2em")
+            .attr("x", "0")
+            .attr("y", "0")
+            .attr("fill", "#ffffff")
+            .style("text-anchor", "end")
+            .style("font-weight", "300")
             .text(function(d) { if (d.className)
                                 return d.className.substring(0, d.r / 3);
                                 else 
@@ -76,7 +82,11 @@ d3.json("static/data/disbursement-summary-data.json",function(error,root){
     $("section.bubbles svg circle").on("mouseover",function(){
         $('section.bubbles svg text').each(function(){
             $(this).tipsy('hide');
+            $(this).siblings('circle').attr('stroke','');
+            $(this).siblings('circle').attr('stroke-width','');
         });
+        $(this).attr('stroke','white');
+        $(this).attr('stroke-width','3');
         $(this).siblings('text').tipsy('show');
         var that = $(this).siblings('text');
         $('a#disbursement_link').click(function(){
@@ -198,6 +208,9 @@ $(document).ready(function(){
             $('section.bubbles svg text').each(function(){
                 $(this).tipsy('hide');
             });
+            if(!$(this).hasClass('active'))
+                $(this).addClass('active');
+            $(this).siblings('a').removeClass('active');
         });
     });
 });

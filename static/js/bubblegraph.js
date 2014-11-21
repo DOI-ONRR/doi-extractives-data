@@ -48,16 +48,15 @@ d3.json("static/data/disbursement-summary-data.json",function(error,root){
             .attr("x", "0")
             .attr("y", "0")
             .attr("fill", "#ffffff")
-            .style("text-anchor", "end")
+            .style("text-anchor", "middle")
+            .style("pointer-events","none")
             .style("font-weight", "300")
-            .text(function(d) { if (d.className)
-                                return d.className.substring(0, d.r / 3);
-                                else 
-                                {
-                                    console.log(d)
-                                    return "No name";
-                                } 
-                            });    
+            .attr('data-id',function(d){
+                return d.className+d.shore+d.year;
+            })
+            .text(function(d) { 
+                    return d.className.substring(0, d.r / 4); 
+            });   
     }
     $("section.bubbles svg text").tipsy({ 
         gravity: 'w', 
@@ -66,7 +65,7 @@ d3.json("static/data/disbursement-summary-data.json",function(error,root){
         opacity:"1.0",
         offset:20,
         title: function() {
-          var rev = text_money(this.__data__.value);
+          var rev = text_money(this.__data__.value,'monetary_amount');
           var year = this.__data__.year;
           var shore = this.__data__.shore;
           return '<h1> $'+rev+'</h1>'+
@@ -82,11 +81,10 @@ d3.json("static/data/disbursement-summary-data.json",function(error,root){
     $("section.bubbles svg circle").on("mouseover",function(){
         $('section.bubbles svg text').each(function(){
             $(this).tipsy('hide');
-            $(this).siblings('circle').attr('stroke','');
-            $(this).siblings('circle').attr('stroke-width','');
+            var fill = $(this).siblings('circle').attr('fill');
+            $(this).siblings('circle').attr('stroke',fill);
         });
         $(this).attr('stroke','white');
-        $(this).attr('stroke-width','3');
         $(this).siblings('text').tipsy('show');
         var that = $(this).siblings('text');
         $('a#disbursement_link').click(function(){

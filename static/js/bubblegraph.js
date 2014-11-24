@@ -209,7 +209,7 @@ d3.json("static/data/disbursement-summary-data.json",function(error,root){
             , 
                 //Array ID -> 2
                 "U.S. Treasury" : {
-                    content : "<div class=\"disbursement_bubble_details\"><h1>U.S. Treasury</h1><p>Some offshore revenue goes into the <a href=\"http://www.gasb.org/cs/ContentServer?pagename=GASB/GASBContent_C/UsersArticlePage&cid=1176156735732\">U.S. General Fund</a>, which is the same place that money from individual and corporate income taxes go. A general fund is a government's basic operating fund and accounts for everything not accounted for in another fund. The U.S. General Fund pays for roughly two-thirds of all federal expenditures, including the U.S. military, parks and schools.</p></div>"
+                    content : "<div class=\"disbursement_bubble_details\"><h1>U.S. Treasury</h1><p>Some onshore revenue goes into the <a href=\"http://www.gasb.org/cs/ContentServer?pagename=GASB/GASBContent_C/UsersArticlePage&cid=1176156735732\">U.S. General Fund</a>, which is the same place that money from individual and corporate income taxes go. A general fund is a government's basic operating fund and accounts for everything not accounted for in another fund. The U.S. General Fund pays for roughly two-thirds of all federal expenditures, including the U.S. military, parks and schools.</p></div>"
                     ,
                     images : "<img src=\"https://meiqimichelle.github.io/d3-minihack/assets/img/icon_1397.svg\" alt=\"Dogtags\"><img src=\"https://meiqimichelle.github.io/d3-minihack/assets/img/icon_13130.svg\" alt=\"Park\"><img src=\"https://meiqimichelle.github.io/d3-minihack/assets/img/icon_1567.svg\" alt=\"Book and test tube\">"
                 }

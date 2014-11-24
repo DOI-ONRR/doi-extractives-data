@@ -1,3 +1,20 @@
+/***********************************************
+Random Helper function for formating
+************************************************/
+var insertLinebreaks = function (d) {
+            var el = d3.select(this);
+            var words = d.className.replace('Funds','').replace('Fund','').split(' ');
+            el.text('');
+
+            for (var i = 0; i < words.length; i++) {
+                var tspan = el.append('tspan').text(words[i]);
+                if (i > 0)
+                    tspan.attr('x', 0).attr('dy', '15');
+            }
+        }; 
+/***********************************************
+***********************************************/
+
 var diameter = 620,
     format = d3.format(",d"),
     color = d3.scale.category20c()
@@ -6,13 +23,13 @@ var diameter = 620,
 var bubbles = [];
 
 bubbles['2012'] = d3.layout.pack()
-        .sort(null)
+        .sort(d3.ascending)
         .size([diameter-15, diameter-15])
-        .padding(5);
+        .padding(25);
 bubbles['2013'] = d3.layout.pack()
-        .sort(null)
+        .sort(d3.ascending)
         .size([diameter-15, diameter-15])
-        .padding(5);
+        .padding(25);
 bubbles_svg = [];
 
 //SVG in document is setup here
@@ -37,7 +54,21 @@ d3.json("static/data/disbursement-summary-data.json",function(error,root){
         .attr("transform",function(d){ return "translate(" + d.x + "," + d.y + ")"; });
         console.log(color_onshore);
         node.append("circle")
-            .attr("r",function(d){return d.r; })
+            .attr("r",function(d)
+                {
+                    //Adjusting the bubble size to at least the size of the largest word. 
+                    var words = d.className.split(' ');
+                    var maxLegnth=0;
+                    for(var i=0;i<words.length;i++)
+                    {
+                        if (maxLegnth < words[i].length)
+                            maxLegnth = words[i].length;
+                    }
+                    if (maxLegnth*4 > d.r)
+                        return maxLegnth*4;
+                    else 
+                        return d.r; 
+                })
             .attr("fill",function(d){ if(d.shore == 'onshore') return color_onshore; else return color_offshore;})
             .attr("stroke",function(d){ if(d.shore == 'onshore') return color_onshore; else return color_offshore;})
             .attr("stroke-width","3");
@@ -55,8 +86,9 @@ d3.json("static/data/disbursement-summary-data.json",function(error,root){
                 return d.className+d.shore+d.year;
             })
             .text(function(d) { 
-                    return d.className.substring(0, d.r / 4); 
-            });   
+                    return d.className.replace('Funds','').replace('Fund','');//.substring(0, d.r / 4); 
+            });
+        node.selectAll("g text").each(insertLinebreaks);
     }
     $("section.bubbles svg text").tipsy({ 
         gravity: 'w', 
@@ -109,6 +141,7 @@ d3.json("static/data/disbursement-summary-data.json",function(error,root){
       recurse(null, root);
       return {children: classes};
     }
+    
 
     d3.select(self.frameElement).style("height", diameter + "px");
 

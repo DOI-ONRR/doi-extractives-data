@@ -761,6 +761,32 @@ $section-margin-top: 40px;
   text {
     color: white;
   }
+
+  svg.pack {
+    margin-top: 40px;
+
+    g.node text {
+      fill: white;
+      @include rem-fallback(font-size, .9);
+    }
+
+    g.node circle {
+      stroke: transparent;
+      stroke-width: 2;
+    }
+
+    g.node:hover circle {
+      stroke: white;
+    }
+
+    g.node.onshore circle {
+      fill: $useiti-green;
+    }
+
+    g.node.offshore circle {
+      fill: $useiti-blue;
+    }
+  }
 }
 
 .bubbles-onshore-offshore {

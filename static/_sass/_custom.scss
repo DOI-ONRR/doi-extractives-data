@@ -1785,6 +1785,7 @@ article {
     }
   }
 }
+
 .offices {
   article {
     @include span-columns(12);
@@ -1805,6 +1806,23 @@ article {
       color: $dark-gray;
       font-size: rem(20);
       font-weight: 300;
+    }
+  }
+}
+
+.terms {
+  h1 {
+    @extend .h2;
+  }
+  dl {
+    @include span-columns(9);
+    margin-top: 0;
+    dt {
+      font-family: $secondary-font-family;
+      color: $dark-gray;
+      font-size: rem(20);
+      font-weight: 300;
+      margin-top: 20px;
     }
   }
 }

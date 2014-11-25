@@ -12,6 +12,7 @@ var companyDimensionGroup;
 var typeDimension; //dimension on commodity type
 var typeGroupDimension;
 var typeDimensionHelper; //Extra commodity dimension for use by helper functions. Allows it to be filter on by other things
+var revDimension;
 var ndx; //crossfilter object
 var companyPage =  QueryString.company ? true : false;//Boolean: if this is a company specific dashboard or not. 
 if (!companyPage)
@@ -78,7 +79,7 @@ d3.csv("../static/data/Updated_Consolidated_Revenue_Data_with_Fake_Names.csv",fu
     var otherTypeDimension = ndx.dimension(function(d) {
         return d["Commodity"];
     })
-    var revDimension = ndx.dimension(function(d){
+    revDimension = ndx.dimension(function(d){
         return d["Revenue Type"];
     })
 
@@ -368,6 +369,7 @@ d3.csv("../static/data/Updated_Consolidated_Revenue_Data_with_Fake_Names.csv",fu
         .turnOnControls(true)
         .xUnits(dc.units.ordinal)
         .x(d3.scale.ordinal())
+        .y(d3.scale.log().nice().domain([1, 12500000000]))
         .margins({top: 10, right: 10, bottom: 75, left:100})
         .yAxis().tickFormat(function(v){return "$"+ parseFloat(v).formatMoney(0,'.',',')});
     dash_bar_rev_by_commodity.on("filtered", function (chart) {
@@ -645,4 +647,11 @@ var graphCustomizations = function() {
 /************************
 End: graphCustomizations
 ************************/
+
+$(document).ready(function(){
+    $('#OptionsList input').on('change',function(){
+        var label = $("label[for='"+$(this).attr('id')+"']");
+        update_graph_options($('#OptionsList input'), revDimension);
+    })
+})
 

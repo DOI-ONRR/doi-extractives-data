@@ -24,117 +24,14 @@ permalink: /data/
 
 <!-- START Side Options Nav -->
   <div class="side-nav" id="OptionsList">
-
-    <h1><label class="label-switch last" for="chk-energy">Oil &amp; Gas
-      <input class="groupCheckbox" type="checkbox" name="energygroup" value="energy" id="chk-energy" checked />
-      <div class="checkbox"></div>
-    </label></h1>
-    <div class="side-nav-left">
-      <label class="label-switch" for="chk-gas">Gas
-        <input class="energy commodity" type="checkbox" name="energy" value="Gas" id="chk-gas" checked />
-        <div class="checkbox"></div>
-      </label>
-    </div>
-    <div class="side-nav-middle">
-      <label class="label-switch" for="chk-oil">Oil
-        <input class="energy commodity" type="checkbox" name="oil" value="Oil" id="chk-oil" checked />
-        <div class="checkbox"></div>
-      </label>
-    </div>
-    <div class="side-nav-right last">
-      <label class="label-switch" for="chk-oilgas">Oil &amp; Gas
-        <input class="energy commodity" type="checkbox" name="energy" value="Oil & Gas" id="chk-oilgas" checked />
-        <div class="checkbox"></div>
-      </label>
-      <!-- <label class="label-switch" for="chk-other">Other
-        <input class="energy commodity" type="checkbox" name="commodity" value="Other Commodities" id="chk-other" checked />
-        <div class="checkbox"></div>
-      </label> -->
-    </div>
-
-    <h1><label class="label-switch last" for="chk-coal">Coal
-      <input class="groupCheckbox" type="checkbox" name="coalgroup" value="coalgroup" id="chk-coal" checked />
-      <div class="checkbox"></div>
-    </label></h1>
-    <div class="last">
-      <label class="label-switch" for="chk-coal">Coal
-        <input class="coalgroup commodity" type="checkbox" name="coal" value="Coal" id="chk-coal" checked />
-        <div class="checkbox"></div>
-      </label>
-    </div>
-
-    <h1><label class="label-switch last" for="chk-renewables">Renewables
-      <input class="groupCheckbox" type="checkbox" name="renewables" value="renewables" id="chk-renewables" checked />
-      <div class="checkbox"></div>
-    </label></h1>
-    <div class="side-nav-left">
-      <label class="label-switch" for="chk-Wind">Wind
-        <input class="renewables commodity" type="checkbox" name="wind" value="Wind" id="chk-Wind" checked />
-        <div class="checkbox"></div>
-      </label>
-    </div>
-    <div class="side-nav-middle-plus">
-      <label class="label-switch" for="chk-Geothermal">Geothermal
-       <input class="renewables commodity" type="checkbox" name="geothermal" value="Geothermal" id="chk-Geothermal" checked />
-       <div class="checkbox"></div>
-      </label>
-      <!-- <label class="label-switch" for="chk-na">n/a
-        <input class="renewables commodity" type="checkbox" name="commodity" value="n/a" id="chk-na" checked />
-        <div class="checkbox"></div>
-      </label> -->
-    </div>
-
-    <h1><label class="label-switch" for="chk-minerals">Other
-      <input class="groupCheckbox" type="checkbox" name="energygroup" value="other" id="chk-minerals" checked />
-      <div class="checkbox"></div>
-    </label></h1>
-    <div class="side-nav-left">
-      <label class="label-switch" for="chk-clay">Clay
-        <input class="other commodity" type="checkbox" name="commodity" value="Clay" id="chk-clay" checked />
-        <div class="checkbox"></div>
-      </label>
-      <label class="label-switch" for="chk-Copper">Copper
-        <input class="other commodity" type="checkbox" name="commodity" value="Copper" id="chk-Copper" checked />
-        <div class="checkbox"></div>
-      </label>
-      <label class="label-switch" for="chk-Potassium">Potassium
-        <input class="other commodity" type="checkbox" name="commodity" value="Potassium" id="chk-Potassium" checked />
-        <div class="checkbox"></div>
-      </label>
-      <label class="label-switch" for="chk-Other_Commodities">Other Commodities
-        <input class="other commodity" type="checkbox" name="commodity" value="Other Commodities" id="chk-Other_Commodities" checked />
-        <div class="checkbox"></div>
-      </label>
-    </div>
-    <div class="side-nav-middle">
-      <label class="label-switch" for="chk-Gilsonite">Gilsonite
-        <input class="other commodity" type="checkbox" name="commodity" value="Gilsonite" id="chk-Gilsonite" checked />
-        <div class="checkbox"></div>
-      </label>
-      <label class="label-switch" for="chk-Hardrock">Hardrock
-        <input class="other commodity" type="checkbox" name="commodity" value="Hardrock" id="chk-Hardrock" checked />
-        <div class="checkbox"></div>
-      <label class="label-switch" for="chk-OilShale">Oil Shale
-        <input class="other commodity" type="checkbox" name="commodity" value="Oil Shale" id="chk-OilShale" checked />
-        <div class="checkbox"></div>
-      </label>
-    </div>
-    <div class="side-nav-right">
-      <label class="label-switch" for="chk-Phosphate">Phosphate
-        <input class="other commodity" type="checkbox" name="commodity" value="Phosphate" id="chk-Phosphate" checked />
-        <div class="checkbox"></div>
-      </label>
-      <label class="label-switch" for="chk-Sodium">Sodium
-        <input class="other commodity" type="checkbox" name="commodity" value="Sodium" id="chk-Sodium" checked />
-        <div class="checkbox"></div>
-      </label>
-      <label class="label-switch" for="chk-Sulfur">Sulfur
-        <input class="other commodity" type="checkbox" name="commodity" value="Sulfur" id="chk-Sulfur" checked />
-        <div class="checkbox"></div>
-      </label>
-    </div>
-
+    <input type="checkbox" checked id="graphOption_rent" value="Rents"/> <label for="graphOption_rent">Rent</label>
+    <input type="checkbox" checked id="graphOption_bonus" value="Bonus"/> <label for="graphOption_bonus">Bonus</label>
+    <input type="checkbox" checked id="graphOption_royalties" value="Royalties"/> <label for="graphOption_royalties">Royalties</label>
+    <input type="checkbox" checked id="graphOption_other" value="Other Revenues"/> <label for="graphOption_other">Other</label>
   </div>
+
+   
+
 <!-- END Side Options Nav --
 
 <!-- START Main Data Dashboard -->

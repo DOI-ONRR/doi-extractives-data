@@ -98,8 +98,11 @@ ul.menu a.active li {
 
 .nav {
   background: #8dc2e7;
-  background: rgba(141, 194, 231, 0.9);
   border-top: 4px solid rgba(0, 0, 0, 0.3);
+  height: 34px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
   ul {
     width: 100%;
     list-style: none;
@@ -119,14 +122,14 @@ ul.menu a.active li {
     border-bottom: 3px solid black;
     display: block;
   }
-  .nav-space {
-    margin-right: 180px; //temporary fix -- needs to be float-right and responsive
-  }
-  .last {
+  .nav-last {
     border-bottom: none;
     border-left: none;
     margin-right: 0;
     padding: 0 0 0 0;
+  }
+  .nav-right {
+    float: right;
   }
   a {
     color: black;

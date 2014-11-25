@@ -10,6 +10,7 @@ var dashTotalsTable;
 var companyDimension; //dimension on company name
 var companyDimensionGroup;
 var typeDimension; //dimension on commodity type
+var typeGroupDimension;
 var typeDimensionHelper; //Extra commodity dimension for use by helper functions. Allows it to be filter on by other things
 var ndx; //crossfilter object
 var companyPage =  QueryString.company ? true : false;//Boolean: if this is a company specific dashboard or not. 
@@ -29,6 +30,19 @@ d3.csv("../static/data/Updated_Consolidated_Revenue_Data_with_Fake_Names.csv",fu
     
     resource_data.forEach(function(d){
         d["Revenue"] = clean_monetary_float(d["Revenue"]);
+        d["GroupName"] = (function(d){
+            var commodity = d["Commodity"]; 
+            if (commodity == "Gas" || commodity == "Oil" || commodity == "Oil & Gas")
+                return "Oil & Gas";
+            else if (commodity == "Wind" || commodity == "Geothermal")
+                return "Renewables";
+            else if (commodity == "Clay" || commodity == "Gilsonite" || commodity == "Phosphate" || commodity == "Copper" || commodity == "Hardrock" || commodity == "Sodium" || commodity == "Potassium" || commodity == "Oil Shale" || commodity == "Sulfur" || commodity == "Other Commodities")
+                return "Other";
+            else if (commodity == 'Coal')
+                return "Coal";
+            else
+                console.log(commodity);
+        })(d);
     });
 
     ndx = crossfilter(resource_data);
@@ -49,9 +63,13 @@ d3.csv("../static/data/Updated_Consolidated_Revenue_Data_with_Fake_Names.csv",fu
             });
         }
 
-    typeDimension = ndx.dimension(function(d) {
-        return d["Commodity"];
+    // typeDimension = ndx.dimension(function(d) {
+    //     return d["Commodity"];
+    // });
+    typeGroupDimension = ndx.dimension(function(d){
+        return d["GroupName"];
     });
+    console.log(typeGroupDimension.top(100));
 
     typeDimensionHelper = ndx.dimension(function(d) {
         return d["Commodity"];
@@ -65,11 +83,11 @@ d3.csv("../static/data/Updated_Consolidated_Revenue_Data_with_Fake_Names.csv",fu
     })
 
     //Groups
-    var typeDimensionEnergyGroup = typeDimension.group().reduceSum(function(d) {
-        //var c = d["Commodity"];
-        // if (c=="Oil" || c=="Oil & Gas" || c=="Coal" || c=="Gas" || c=="Other Commodities")
-        return d["Revenue"];
-    });
+    // var typeDimensionEnergyGroup = typeDimension.group().reduceSum(function(d) {
+    //     //var c = d["Commodity"];
+    //     // if (c=="Oil" || c=="Oil & Gas" || c=="Coal" || c=="Gas" || c=="Other Commodities")
+    //     return d["Revenue"];
+    // });
     // var typeDimensionOtherGroup = otherTypeDimension.group().reduceSum(function(d){
     //     var c = d["Commodity"];
     //     if (c!="Oil" & c!="Oil & Gas" & c!="Coal" & c!="Gas" & c!="Other Commodities" & c!="n/a" & c!="Geothermal"  & c!="Wind")
@@ -212,18 +230,78 @@ d3.csv("../static/data/Updated_Consolidated_Revenue_Data_with_Fake_Names.csv",fu
             }
         );
 
-    var typeDimension_allGroup = typeDimension.group().reduce(
+    // var typeDimension_allGroup = typeDimension.group().reduce(
+    //         //add
+    //         function(p,v){
+    //             var rs = v["Revenue Type"];
+    //             var r = parseFloat(v["Revenue"]);
+
+    //             p.name = v["Company Name"];
+    //             p.revenue = v["Revenue"];
+    //             p.type = v["Commodity"];
+    //             p.revenueSource = v["Revenue Type"];
+    //             p.count++;
+    //             p.sum= parseFloat((p.sum + v["Revenue"]).toFixed(2));
+    //             p.average = p.sum/p.count;
+                
+    //             p.oilGroup = (p.type == "Gas" || p.type == "Oil" || p.type == "Oil & Gas") ? p.oilGroup+r.toFixed(2) : p.oilGroup;
+    //             p.coalGroup = (p.type == "Coal") ? p.coalGroup+r.toFixed(2) : p.coalGroup;
+    //             p.renewableGroup = (p.type == "Wind" || p.type == "Geothermal") ? p.renewableGroup+r.toFixed(2) : p.renewableGroup;
+    //             p.otherGroup = (p.type == "Clay" || p.type == "Gilsonite" || p.type == "Phosphate" || p.type == "Copper" || p.type == "Hardrock" || p.type == "Sodium" || p.type == "Potassium" || p.type == "Oil Shale" || p.type == "Sulfur" || p.type == "Other Commodities") ? p.otherGroup+r.toFixed(2) : p.otherGroup;
+                
+    //             if (rs == "Bonus")
+    //                 p.bonus_rev     = parseFloat((p.bonus_rev + r).toFixed(2));
+    //             if (rs == "Rents")
+    //                 p.rent_rev      = parseFloat((p.rent_rev + r).toFixed(2));
+    //             if (rs == "Royalties")
+    //                 p.royalties_rev = parseFloat((p.royalties_rev + r).toFixed(2));
+    //             if (rs == "Other Revenues")
+    //                 p.other_rev     = parseFloat((p.other_rev + r).toFixed(2));
+    //             return p;
+    //         },
+    //         //remove
+    //         function(p,v){
+    //             p.name = v["Company Name"];
+    //             p.revenue = v["Revenue"];
+    //             p.type = v["Commodity"]
+    //             p.revenueSource = v["Revenue Type"];
+    //             p.count--;
+    //             p.sum= parseFloat((p.sum - v["Revenue"]).toFixed(2));
+    //             p.average = p.sum/p.count;
+    //             var rs = v["Revenue Type"];
+    //             var r = parseFloat(v["Revenue"]);
+    //             if (rs == "Bonus")
+    //                 p.bonus_rev     = parseFloat((p.bonus_rev - r).toFixed(2));
+    //             if (rs == "Rents")
+    //                 p.rent_rev      = parseFloat((p.rent_rev - r).toFixed(2));
+    //             if (rs == "Royalties")
+    //                 p.royalties_rev = parseFloat((p.royalties_rev - r).toFixed(2));
+    //             if (rs == "Other Revenues")
+    //                 p.other_rev     = parseFloat((p.other_rev - r).toFixed(2));
+
+
+    //             return p;
+    //         },
+    //         //init
+    //         function(p,v){
+    //             return {name : "", revenue : 0.00, type : "", revenueSource : "", 
+    //                 count: 0, sum: 0.00, average: 0, bonus_rev : 0.00, rent_rev : 0.00, royalties_rev : 0.00, other_rev : 0.00};
+    //         }
+    //     );
+    var typeGroupDimension_allGroup = typeGroupDimension.group().reduce(
             //add
             function(p,v){
+                var rs = v["Revenue Type"];
+                var r = parseFloat(v["Revenue"]);
+
                 p.name = v["Company Name"];
                 p.revenue = v["Revenue"];
-                p.type = v["Commodity"]
+                p.type = v["Commodity"];
                 p.revenueSource = v["Revenue Type"];
                 p.count++;
                 p.sum= parseFloat((p.sum + v["Revenue"]).toFixed(2));
                 p.average = p.sum/p.count;
-                var rs = v["Revenue Type"];
-                var r = parseFloat(v["Revenue"]);
+                
                 if (rs == "Bonus")
                     p.bonus_rev     = parseFloat((p.bonus_rev + r).toFixed(2));
                 if (rs == "Rents")
@@ -269,18 +347,18 @@ d3.csv("../static/data/Updated_Consolidated_Revenue_Data_with_Fake_Names.csv",fu
     *****************************/
     dash_bar_rev_by_commodity
         .width(600).height(400)
-        .group(typeDimension_allGroup, "Rent")
-        .dimension(typeDimension)
+        .dimension(typeGroupDimension)
+        .group(typeGroupDimension_allGroup, "Rent")
         .valueAccessor(function(d) {
             return d.value.rent_rev;
         })
-        .stack(typeDimension_allGroup, "Bonus", function(d) {
+        .stack(typeGroupDimension_allGroup, "Bonus", function(d) {
             return d.value.bonus_rev
         })
-        .stack(typeDimension_allGroup, "Royalties", function(d) {
+        .stack(typeGroupDimension_allGroup, "Royalties", function(d) {
             return d.value.royalties_rev
         })
-        .stack(typeDimension_allGroup, "Other Revenues", function(d) {
+        .stack(typeGroupDimension_allGroup, "Other Revenues", function(d) {
             return d.value.other_rev
         })
         .legend(dc.legend().x(470).y(100))

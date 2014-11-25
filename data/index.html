@@ -217,16 +217,16 @@ permalink: /data/
  $("#table-search").on('input',function(){
    text_filter(companyDimension,this.value);
  });
- $("input.commodity").change(function(){
-    update_graph_options($("#OptionsList input"), typeDimensionHelper);
- });
+ // $("input.commodity").change(function(){
+ //    update_graph_options($("#OptionsList input"), typeDimensionHelper);
+ // });
 
- $('input.groupCheckbox').change(function(){
-    var bool = $(this).is(":checked");
-    $('input.'+$(this).attr("value")).each(function(){
-      $(this).prop("checked",bool);
-    });
-    update_graph_options($("#OptionsList input"), typeDimensionHelper);
- });
+ // $('input.groupCheckbox').change(function(){
+ //    var bool = $(this).is(":checked");
+ //    $('input.'+$(this).attr("value")).each(function(){
+ //      $(this).prop("checked",bool);
+ //    });
+ //    update_graph_options($("#OptionsList input"), typeDimensionHelper);
+ // });
 
 </script>

@@ -38,7 +38,7 @@ In 2012, the United States relied on net imports (imports minus exports) for abo
 
 For more information on oil, including how it is formed, what products use oil, and the refining process, visit the [Energy Information Administration](http://www.eia.gov/kids/energy.cfm?page=oil_home).
 
-###<a name="ngl"></a>Natural Gas Liquids
+###<a name="ngl"></a>Natural Gas
 Natural gas is used to produce steel, glass, paper, clothing, brick, electricity, and is an essential raw material for many common products. Some products that use natural gas as a raw material are: paints, fertilizer, plastics, antifreeze, dyes, photographic film, medicines, and explosives.
 
 Slightly more than half of the homes in the United States use natural gas as their main heating fuel. Natural gas is also used in homes to fuel stoves, water heaters, clothes dryers, and other household appliances.

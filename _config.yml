@@ -29,3 +29,4 @@ kramdown:
 
 cachebuster: '0426131729'
 unilatteral_data: 'Updated_Consolidated_Revenue_Data_with_Fake_Names.csv'
+exclude: [Gemfile*]

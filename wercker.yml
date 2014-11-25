@@ -11,7 +11,7 @@ build:
     # that actually builds the jekyll site
     - script:
         name: generate site
-        code: bundle exec jekyll build --trace
+        code: bundle exec jekyll build --config _config.yml,_config.wercker.yml
 deploy:
   steps:
     - s3sync:

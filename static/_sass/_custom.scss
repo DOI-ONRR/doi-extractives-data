@@ -1367,6 +1367,9 @@ div.disbursement_bubble_rollover {
     left: 10px;
     width: 150px;
   }
+  h1 {
+    @extend .h4;
+  }
   z-index: 998;
   > a {
     position: relative;

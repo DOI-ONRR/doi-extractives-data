@@ -1,0 +1,14 @@
+# our build should run within a Ruby box
+box: wercker/rvm@2.3.0
+build:
+  steps:
+    # Run a smart version of bundle install
+    # which improves build execution time of
+    # future builds
+    - bundle-install
+
+    # A custom script step
+    # that actually builds the jekyll site
+    - script:
+        name: generate site
+        code: bundle exec jekyll build --trace

@@ -35,6 +35,7 @@
         .size([size, size])
         .padding(10);
 
+  // visual data tweaks, by element id
   var tweaks = {
     "bubble_2012_U_S__Treasury_onshore": {
       wrap: true
@@ -56,8 +57,19 @@
     }
   };
 
-  // load the data...
-  d3.json("static/data/disbursement-summary-data.json", function(error, data) {
+  // icon id: name mapping
+  var iconMeta = {
+    "eiti-oil": "Oil"
+    // TODO: flesh out
+  };
+
+  queue([
+    "static/data/fund-metadata.json",
+    "static/data/disbursement-summary-data.json"
+  ], function(error, fundMeta, data) {
+
+    console.log("fund metadata:", fundMeta);
+    console.log("disbursements:", data);
 
     // create an <svg> for each section
     var svg = sections.append("svg")
@@ -69,10 +81,14 @@
       .attr("class", "info")
       .attr("id", function(d) {
         return "bubble-info-" + d.year;
-      })
-      .text(function(d) {
-        return "TODO: info for year " + d.year;
       });
+
+    info.append("h1")
+      .attr("class", "name");
+    info.append("div")
+      .attr("class", "icons");
+    info.append("p")
+      .attr("class", "content");
 
     // and a root <g.nodes> for all of its contents
     var g = svg.append("g")
@@ -99,9 +115,20 @@
           return "translate(" + [d.x, d.y] + ")";
         })
         .on("mouseover", function(d) {
-          // move to front on mouseover
+          try {
+            var meta = fundMeta[d.name][d.shore];
+          } catch (error) {
+            console.error("no fund metadata:", d.name, d.shore, "in:", fundMeta);
+          }
+
           d3.select("#bubble-info-" + d.year)
-            .text("TODO: info for " + d.name);
+            .datum({
+              name:     d.name,
+              shore:    d.shore,
+              icons:    meta.icons,
+              content:  meta.content
+            })
+            .call(updateMetadata);
         });
 
     node.sort(function(a, b) {
@@ -177,7 +204,8 @@
      * before hiding the enclosing div w/`display: none`)
      */
     selectYear(years[0]);
-  });
+
+  }); // end load data in parallel
 
   // select a disbursement year (Number)
   function selectYear(year) {
@@ -234,6 +262,63 @@
 
     recurse(null, root);
     return {children: nodes};
+  }
+
+  function updateMetadata(selection) {
+    console.log("updateMetadata():", selection.node());
+    selection.select(".name")
+      .html(function(d) { return d.name; });
+    selection.select(".content")
+      .html(function(d) { return d.content; });
+
+    var icons = selection.select(".icons")
+      .selectAll(".icon")
+        .data(function(d) { return d.icons || []; });
+
+    icons.exit()
+      .remove();
+
+    icons.enter()
+      .append("svg")
+        .attr("role", "img")
+        .attr("class", "icon")
+        .append("use");
+
+    icons
+      .attr("class", function(id) { return id; })
+      .attr("aria-label", function(id) {
+        return iconMeta[id] ? iconMeta[id].label : id;
+      })
+      .select("use")
+        .attr("xlink:href", function(id) {
+          return window.site.baseurl + "/static/fonts/EITI/icons.svg#" + id;
+        });
+  }
+
+  /*
+   * This is a super-dirty little hack to load multiple JSON URLs in parallel,
+   * substituting positional arguments for the data returned in each URL.
+   *
+   * queue(["foo.json", "bar.json"], function(error, foo, bar) {
+   *   if (error) {
+   *     // do something and bail
+   *     return;
+   *   }
+   *   // do something with `foo` and `bar`
+   * });
+   */
+  function queue(urls, callback) {
+    var data = [],
+        count = urls.length;
+    return reqs = urls.map(function(url, i) {
+      return d3.json(url, function(error, res) {
+        if (error) return callback(error);
+        data[i] = res;
+        if (--count === 0) {
+          callback.apply(null, [null].concat(data));
+        }
+      });
+    });
   }
 
 })();

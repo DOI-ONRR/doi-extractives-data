@@ -4,7 +4,7 @@ var barChart = dc.barChart("#sector-revenue-bar-chart");
 var pieChart = dc.pieChart("#sector-revenue-pie-chart");
 
 //d3.csv("https://docs.google.com/spreadsheet/pub?key=0AjPWVMj9wWa6dGw3b1c3ZHRSMW92UTJlNXRLTXZ0RUE&single=true&gid=0&output=csv",function(resource_data){
-d3.csv("static/data/data-sectors-revenue.csv",function(resource_data){
+d3.csv("static/data/2003-2013-royalty-data.csv",function(resource_data){
 	
 
 	var ndx = crossfilter(resource_data);
@@ -19,7 +19,7 @@ d3.csv("static/data/data-sectors-revenue.csv",function(resource_data){
 		d["Gas"]			= clean_monetary_float(d["Gas"]);
 		d["Oil"]			= clean_monetary_float(d["Oil"]);
 		d["Year"]			= parseDate(d["Year"]);*/
-		d["Revenue"]		= clean_monetary_float(d["Revenue"]);
+		d["Royalty"]		= clean_monetary_float(d["Royalty"]);
 		//d["Year"]			= parseDate(d["Year"]);
 
 	});
@@ -32,13 +32,13 @@ d3.csv("static/data/data-sectors-revenue.csv",function(resource_data){
 		return d["Commodity"];
 	})
 	var totalByYear = yearDimension.group().reduceSum(function(d){
-		return d["Revenue"];
+		return d["Royalty"];
 	});
 
 	var totalByType = typeDimension.group().reduceSum(function(d){
-		return d["Revenue"];
+		return d["Royalty"];
 	});
-	var all=ndx.groupAll().reduceSum(function(d){return d["Revenue"];});
+	var all=ndx.groupAll().reduceSum(function(d){return d["Royalty"];});
 
 
 	var minDate = yearDimension.bottom(1)[0]['Year'];
@@ -89,7 +89,7 @@ d3.csv("static/data/data-sectors-revenue.csv",function(resource_data){
 	//barChart.xAxis();
 
 	pieChart.width(300)
-		.colors(d3.scale.ordinal().range(["#d54740","#3397c2","#9fa731","#865daa","#5a5a5a"]))
+		.colors(d3.scale.ordinal().range(["#d54740","#3397c2","#865daa","#9fa731","#5a5a5a"]))
 		.height(300)
 		.transitionDuration(750)
 		.radius(130)

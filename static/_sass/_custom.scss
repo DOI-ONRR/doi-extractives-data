@@ -566,7 +566,7 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
   }
   p {
     @include rem-fallback(font-size, 1.1);
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
 }
 

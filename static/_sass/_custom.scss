@@ -1152,6 +1152,7 @@ div.disbursement_bubble_rollover {
 //how do natural resources become Federal revenue?
 .how {
   padding-top: 20px;
+  padding-bottom: 0;
   background-color: $mid-gray;
   .map-title { //remove once the new styles become global variables
     h1 {
@@ -1195,9 +1196,15 @@ div.disbursement_bubble_rollover {
     }
   }
 }
+
+.map-canvas {
+  background-color: $deep-gray;
+}
+
 .map-notes {
   color: white;
   margin-top: 50px;
+  padding-bottom: 30px;
   font-style: italic;
   h1 {
     @include rem-fallback(font-size, 0.8);

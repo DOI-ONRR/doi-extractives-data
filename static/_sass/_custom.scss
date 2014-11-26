@@ -606,16 +606,6 @@ $section-margin-top: 40px;
   }
 }
 
-.break {
-  padding: 8px 20px 0px 20px;
-  background: url(../img/unsplash_fuzzy_lights.jpg) no-repeat center center fixed;
-  background-size: cover;
-  text-align: center;
-  .down {
-    width: 36px;
-  }
-}
-
 //section background color options
 .medium-gray {
   background-color: lighten($medium-gray, 10%);

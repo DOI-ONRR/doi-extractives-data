@@ -206,13 +206,31 @@ d3.csv("../static/data/Updated_Consolidated_Revenue_Data_with_Fake_Names.csv",fu
     var revDimension_allGroup = revDimension.group().reduce(
             //add
             function(p,v){
+                var rs = v["Revenue Type"];
+                var r = parseFloat(v["Revenue"]);
+
                 p.name = v["Company Name"];
                 p.revenue = v["Revenue"];
-                p.type = v["Commodity"]
+                p.type = v["Commodity"];
                 p.revenueSource = v["Revenue Type"];
                 p.count++;
-                p.sum+= v["Revenue"];
+                p.sum= parseFloat((p.sum + v["Revenue"]).toFixed(2));
                 p.average = p.sum/p.count;
+                
+                if (rs == "Bonus")
+                    p.bonus_rev     = parseFloat((p.bonus_rev + r).toFixed(2));
+                if (rs == "Rents")
+                    p.rent_rev      = parseFloat((p.rent_rev + r).toFixed(2));
+                if (rs == "Royalties")
+                    p.royalties_rev = parseFloat((p.royalties_rev + r).toFixed(2));
+                if (rs == "Other Revenues")
+                    p.other_rev     = parseFloat((p.other_rev + r).toFixed(2));
+                if (p.type == "Oil")
+                    p.oil_rev = parseFloat((p.oil_rev + r).toFixed(2));
+                if (p.type == "Gas")
+                    p.gas_rev = parseFloat((p.gas_rev + r).toFixed(2));
+                if (p.type == "Oil & Gas")
+                    p.oilandgas_rev = parseFloat((p.oilandgas_rev + r).toFixed(2));
                 return p;
             },
             //remove
@@ -222,13 +240,34 @@ d3.csv("../static/data/Updated_Consolidated_Revenue_Data_with_Fake_Names.csv",fu
                 p.type = v["Commodity"]
                 p.revenueSource = v["Revenue Type"];
                 p.count--;
-                p.sum-= v["Revenue"];
+                p.sum= parseFloat((p.sum - v["Revenue"]).toFixed(2));
                 p.average = p.sum/p.count;
+                var rs = v["Revenue Type"];
+                var r = parseFloat(v["Revenue"]);
+                if (rs == "Bonus")
+                    p.bonus_rev     = parseFloat((p.bonus_rev - r).toFixed(2));
+                if (rs == "Rents")
+                    p.rent_rev      = parseFloat((p.rent_rev - r).toFixed(2));
+                if (rs == "Royalties")
+                    p.royalties_rev = parseFloat((p.royalties_rev - r).toFixed(2));
+                if (rs == "Other Revenues")
+                    p.other_rev     = parseFloat((p.other_rev - r).toFixed(2));
+                if (p.type == "Oil")
+                    p.oil_rev = parseFloat((p.oil_rev - r).toFixed(2));
+                if (p.type == "Gas")
+                    p.gas_rev = parseFloat((p.gas_rev - r).toFixed(2));
+                if (p.type == "Oil & Gas")
+                    p.oilandgas_rev = parseFloat((p.oilandgas_rev - r).toFixed(2));
+
+
                 return p;
             },
             //init
             function(p,v){
-                return {name : "", revenue : 0, type : "", revenueSource : "", count: 0, sum: 0, average: 0};
+                return {name : "", revenue : 0.00, type : "", revenueSource : "", 
+                    count: 0, sum: 0.00, average: 0, bonus_rev : 0.00, rent_rev : 0.00, 
+                    royalties_rev : 0.00, other_rev : 0.00, 
+                    oil_rev: 0.00, gas_rev: 0.00, oilandgas_rev: 0.00};
             }
         );
 
@@ -382,9 +421,9 @@ d3.csv("../static/data/Updated_Consolidated_Revenue_Data_with_Fake_Names.csv",fu
     dash_bar_rev_by_revenue_type
         .width(600).height(400)
         .dimension(revDimension)
-        .group(revDimensionGroup)
+        .group(revDimension_allGroup, 'junk')
         .valueAccessor(function(d) {
-            return d.value;
+            return d.value.rent_rev;
         })
         .legend(dc.legend().x(470).y(100))
         .centerBar(false)
@@ -601,18 +640,26 @@ d3.csv("../static/data/Updated_Consolidated_Revenue_Data_with_Fake_Names.csv",fu
 
    dc.renderAll();
    graphCustomizations();
-   $('#dashboard-bar-rev-by-commodity-group svg g g.x g.tick text').each(function(){
-        console.log($(this).html());
-        $(this).on('click',function(){
-            alert('test');
-            $('#dashboard-bar-rev-by-commodity-group').hide();
-            $('#dashboard-bar-rev-by-revenue-type').toggle();
-            
+   
+   /***************************
+   Setup Graph switching
+   ***************************/
+   (function(){
+        $('#dashboard-bar-rev-by-commodity-group svg g g.x g.tick text').each(function(){
+            $(this).on('click',function(){
+                $('#dashboard-bar-rev-by-commodity-group').toggle();
+                $('#dashboard-bar-rev-by-revenue-type').toggle();
+            });
         });
-    });
-
-
-
+       var $newDiv = $('<div>');
+       var $link = $('<a href="javascript:void(0);">back</a>');
+       $link.click(function(){
+            $('#dashboard-bar-rev-by-commodity-group').toggle();
+            $('#dashboard-bar-rev-by-revenue-type').toggle();
+       });
+       $newDiv.append($link);
+       $('#dashboard-bar-rev-by-revenue-type').append($newDiv);
+   })();
 
 });
 /****************************

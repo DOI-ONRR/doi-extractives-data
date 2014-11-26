@@ -136,17 +136,28 @@
       .attr("height", size);
 
     var info = sections.append("div")
-      .attr("class", "info")
+      .attr("class", "bubble-info")
       .attr("id", function(d) {
         return "bubble-info-" + d.year;
-      });
+      })
+      .style("display", "none");
 
-    info.append("h1")
+    var infoH1 = info.append("h1")
+    infoH1.append("span")
       .attr("class", "name");
+    infoH1.append("span")
+      .attr("class", "context")
+      .html('<span class="year">(year)</span> <span class="shore">(shore)</span> revenues of');
+
+    info.append("h2")
+      .html('<b>$<span class="revenue"></span> Billion</b>, which helped fund');
+
     info.append("div")
       .attr("class", "icons");
+    /*
     info.append("p")
       .attr("class", "content");
+    */
 
     // and a root <g.nodes> for all of its contents
     var g = svg.append("g")
@@ -179,10 +190,15 @@
             console.error("no fund metadata:", d.name, d.shore, "in:", fundMeta);
           }
 
+          // bind the data for the bubble and the fund metadata to the
+          // corresponding info bubble div, then call updateMetadata() on it
           d3.select("#bubble-info-" + d.year)
+            .style("display", null)
             .datum({
               name:     d.name,
+              year:     d.year,
               shore:    d.shore,
+              revenue:  d.value,
               icons:    meta.icons,
               content:  meta.content
             })
@@ -323,9 +339,20 @@
   }
 
   function updateMetadata(selection) {
-    console.log("updateMetadata():", selection.node());
+    var format = d3.format(".3f"),
+        billion = 1e9;
     selection.select(".name")
-      .html(function(d) { return d.name; });
+      .text(function(d) { return d.name; });
+    selection.select(".context")
+      .attr("class", function(d) {
+        return ["context", d.shore].join(" ");
+      });
+    selection.select(".year")
+      .text(function(d) { return d.year; });
+    selection.select(".shore")
+      .text(function(d) { return d.shore; });
+    selection.select(".revenue")
+      .text(function(d) { return format(d.revenue / billion); });
     selection.select(".content")
       .html(function(d) { return d.content; });
 

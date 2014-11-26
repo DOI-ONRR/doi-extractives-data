@@ -1662,43 +1662,70 @@ article {
 
 // Data Dashboard
 //===============================================
+
 $max-width: 100%; //this is setting the width of outer-container.
 //find this variable elsewhere and change it
 //what about the rest of the site that is not full-width?
+
 .dashboard {
-  @include outer-container;
-}
-.dashboard-nav {
-  @include span-columns(12);
-  background: shade($orange1, 20%);
-  padding-left: 10px;
-  a {
+  background-color: $mid-gray;
+  padding-top: 20px;
+  padding-bottom: 0;
+  h1 {
+    font-family: Lato;
+    font-weight: 100;
     color: white;
+    margin-bottom: 15px;
   }
-}
-.last {
-  //refactor to remove this helper class
-  @include omega();
-}
-.dashboard-head {
-  @include span-columns(12);
-  background: $orange1;
-  color: white;
-  padding: 10px 0 10px 10px;
-  div:first-child {
-    @include span-columns(3 of 12);
-  }
-  div:last-child {
-    @include omega();
-  }
-  .dashboard-choices {
-    margin-left: -0.4%;
-    @include span-columns(4 of 12);
-    h1 {
-      font-size: rem(20);
+  .dashboard_tabs {
+    margin-left: 60%;
+    @include rem-fallback(font-size, 1);
+    a {
+      font-weight: 300;
+      padding: 5px 17px 17px 17px;
+      text-decoration: none;
+      color: black;
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      } 
+    }
+    .active {
+      color: white;
+      background: $deep-gray;
     }
   }
 }
+
+.dashboard-head {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.dashboard-canvas {
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: $deep-gray;
+  @include span-columns(12);
+}
+
+.dashboard-search {
+  @include span-columns(4 of 12);
+}
+
+.dashboard-revenue {
+  @include span-columns(2 of 12); 
+}
+
+.dashboard-chart {
+  @include span-columns(4 of 12);
+}
+
+
+//old stuff below here
+
+
+
 .label-switch {
   $switch-width: 52px;
   $switch-padding: 2px;

@@ -10,24 +10,89 @@ permalink: /data/
 
 <div class="dashboard">
 
-  <div class="dashboard-head">
-    <div><h1>Explore Our Data</h1></div>
-    <div class="dashboard-choices"><h1>Natural Resource Revenues from U.S. Federal Lands by Company, Commodity, and Revenue Type</h1></div>
-    <div class="dashboard-choices"><h1>Choose a year [2012]</h1></div>
-  </div>
+  <section class="dashboard-head">
+  
+    <h1>filter and download data</h1>
 
+    <div class="dashboard_tabs">
+      <a href="#" title="Show data by company" class="active">company</a>
+      <a href="#" title="Show data by location">location</a>
+      <a href="#" title="Show data over time">over time</a>
+    </div>
 
-<!-- START Side Options Nav -->
-  <div class="side-nav" id="OptionsList">
-    <input type="checkbox" checked id="graphOption_rent" value="Rents"/> <label for="graphOption_rent">Rent</label>
-    <input type="checkbox" checked id="graphOption_bonus" value="Bonus"/> <label for="graphOption_bonus">Bonus</label>
-    <input type="checkbox" checked id="graphOption_royalties" value="Royalties"/> <label for="graphOption_royalties">Royalties</label>
-    <input type="checkbox" checked id="graphOption_other" value="Other Revenues"/> <label for="graphOption_other">Other</label>
-  </div>
+  </section>
 
-   
+  <section class="dashboard-canvas">
 
-<!-- END Side Options Nav --
+    <!-- company table -->
+    <div class="dashboard-search">
+      <h4>Filter by Company:</h4>
+      <input type="text" id="table-search"></input>
+      <div><a href="javascript:toggle_divs('#toggleDivLink','#dashboard-totals-table','#dashboard-table','Show Full Table','Show Table by Company')" id="toggleDivLink">Show Full Table</a></div>
+      <table class='table table-hover dc-data-table' id='dashboard-totals-table'>
+
+        <thead>
+          <tr class="header">
+            <th>
+              <a href="javascript:sort_dataTable(dashTotalsTable,'Company Name');">
+                Company name
+              </a>
+            </th>
+            <th>
+              <a href="javascript:sort_dataTable(dashTotalsTable,'Total Revenue');">
+                Total Revenue
+              </a>
+            </th>
+          </tr>
+        </thead>
+      </table>
+
+      <table class='table table-hover dc-data-table' id='dashboard-table' style="display:none">
+
+        <thead>
+          <tr class="header">
+            <th>
+              <a href="javascript:sort_dataTable(dashTable,'Company Name');">
+                Company name
+              </a>
+            </th>
+            <th>
+              <a href="javascript:sort_dataTable(dashTable,'Revenue Type');">
+                Revenue Type
+              </a>
+            </th>
+            <th>
+              <a href="javascript:sort_dataTable(dashTable,'Commodity');">
+                Commodity
+              </a>
+            </th>
+            <th>
+              <a href="javascript:sort_dataTable(dashTable,'Revenue');">
+                Revenue
+              </a>
+            </th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+
+    <!-- revenue types -->
+    <div class="dashboard-revenue" id="OptionsList">
+      <input type="checkbox" checked id="graphOption_rent" value="Rents"/> <label for="graphOption_rent">Rent</label>
+      <input type="checkbox" checked id="graphOption_bonus" value="Bonus"/> <label for="graphOption_bonus">Bonus</label>
+      <input type="checkbox" checked id="graphOption_royalties" value="Royalties"/> <label for="graphOption_royalties">Royalties</label>
+      <input type="checkbox" checked id="graphOption_other" value="Other Revenues"/> <label for="graphOption_other">Other</label>
+    </div>
+
+    <!-- chart -->
+    <div class="dashboard-chart rev-by-commodity" id='dashboard-bar-rev-by-commodity'>
+      <h4>Total Revenues by Commodity</h4>
+    </div>
+
+  </section>
+
+</div>
+
 
 <!-- START Main Data Dashboard -->
     <div class="dashboard-face">
@@ -35,66 +100,12 @@ permalink: /data/
       <div class="rev-by-commodity" id='dashboard-bar-rev-by-commodity'>
         <h4>Total Revenues by Commodity</h4>
       </div>
-      <!-- <div id="dashboard-bar-rev-source"><h4>Total Revenue<br>by Revenue Type</h4></div>
-      <div id="dashboard-bar-avg-by-rev-source"><h4>Average Revenue<br>by Revenue Source</h4></div>
-      <div id="dashboard-bar-avg-by-commodity"><h4>Average Revenue<br>by Commodity<h4></div> -->
       <div class="total-rev" id="totals">
         <a class="dashboard-button" href="{{site:url}}/static/data/{{site:unilatteral_data}}">Download Full Dataset (CSV) </a>
         <a class="dashboard-button" href="javascript:download_data(companyDimension)">Download Filtered Data (CSV) </a>
         <h1 id="total-revenue-h1">Total Revenue: <span id="total_revenue"></span></h1>
         <h1 id="average-revenue-h1">Average Revenue: <span id="average_revenue">$1,000,000</span></h1>
         <h1 id="number-of-companies-h1">Number of Companies: <span id="company_count">$1,000,000</span></h1>
-      </div>
-
-      <div class="dashboard-search">
-        <h4>Filter by Company:</h4>
-        <input type="text" id="table-search"></input>
-        <div><a href="javascript:toggle_divs('#toggleDivLink','#dashboard-totals-table','#dashboard-table','Show Full Table','Show Table by Company')" id="toggleDivLink">Show Full Table</a></div>
-        <table class='table table-hover dc-data-table' id='dashboard-totals-table'>
-
-          <thead>
-            <tr class="header">
-              <th>
-                <a href="javascript:sort_dataTable(dashTotalsTable,'Company Name');">
-                  Company name
-                </a>
-              </th>
-              <th>
-                <a href="javascript:sort_dataTable(dashTotalsTable,'Total Revenue');">
-                  Total Revenue
-                </a>
-              </th>
-            </tr>
-          </thead>
-        </table>
-
-        <table class='table table-hover dc-data-table' id='dashboard-table' style="display:none">
-
-          <thead>
-            <tr class="header">
-              <th>
-                <a href="javascript:sort_dataTable(dashTable,'Company Name');">
-                  Company name
-                </a>
-              </th>
-              <th>
-                <a href="javascript:sort_dataTable(dashTable,'Revenue Type');">
-                  Revenue Type
-                </a>
-              </th>
-              <th>
-                <a href="javascript:sort_dataTable(dashTable,'Commodity');">
-                  Commodity
-                </a>
-              </th>
-              <th>
-                <a href="javascript:sort_dataTable(dashTable,'Revenue');">
-                  Revenue
-                </a>
-              </th>
-            </tr>
-          </thead>
-        </table>
       </div>
 
     </div>
@@ -104,6 +115,7 @@ permalink: /data/
 <!-- END Main Data Dashboard -->
 
 </main>
+
 <script src='{{ site.baseurl }}/static/js/dashboard.js'></script>
 <script type="text/javascript">
  $("#table-search").on('input',function(){

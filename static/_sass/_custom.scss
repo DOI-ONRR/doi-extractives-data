@@ -78,58 +78,6 @@ sub {
   padding: .3em 0;
 }
 
-
-// Alpha Alert
-//============================================
-
-#burst-12 {
-  background: $red;
-  width: 80px;
-  height: 80px;
-  position: absolute;
-  top: 18px;
-  right: 22px;
-  text-align: center;
-  &:before, &:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 80px;
-    width: 80px;
-    background: $red;
-  }
-  &:before {
-    @include transform(rotate(30deg));
-  }
-  &:after {
-    @include transform(rotate(60deg));
-  }
-  &.burst-blue {
-    background: $blue;
-    &:before, &:after {
-      background: $blue;
-    }
-  }
-}
-
-#burst-text {
-  position: absolute;
-  top: 36px;
-  right: 24px;
-  color: white;
-  text-align: center;
-  p {
-    margin-bottom: 0px;
-    @include rem-fallback(font-size, $base-font-size * 0.86);
-  }
-  h1 {
-    font-size: 20px;
-    font-size: rem(20);
-    color: white;
-  }
-}
-
 // Nav
 //============================================
 
@@ -380,7 +328,7 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
   }
 }
 
-// Homepage Splash
+// Splash sections
 //============================================
 .usa {
   @include span-columns(12);
@@ -526,30 +474,6 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
   }
 }
 
-$section-margin-top: 40px;
-.viz-title {
-  position: absolute;
-  margin-top: -$section-margin-top - ($section-margin-top * 1.2);
-  z-index: 10;
-  h1 {
-    @extend .h2;
-    color: white;
-    background-color: $red;
-    padding: 10px;
-    text-shadow: none;
-    @include rem-fallback(font-size, $base-font-size * ($h2 * 0.8));
-    @include respond-to(small-up) {
-      @include rem-fallback(font-size, $base-font-size * $h2);
-    }
-  }
-}
-
-.viz-title-map {
-  @extend .viz-title;
-  $section-margin-top: 23px;
-  margin-top: -$section-margin-top - ($section-margin-top * 1.2);
-}
-
 .moreDown {
   width: 30px;
   float: right;
@@ -597,7 +521,7 @@ $section-margin-top: 40px;
 //============================================
 
 .section {
-  padding: $section-margin-top 10px 50px 10px;
+  padding: 40px 10px 50px 10px;
   background-color: $light-gray;
   overflow: hidden;
   @include respond-to(large-up) {
@@ -606,57 +530,48 @@ $section-margin-top: 40px;
   }
 }
 
-//section background color options
-.medium-gray {
-  background-color: lighten($medium-gray, 10%);
+// Sectors pie chart
+//============================================
+
+.sectors {
+  background-color: $mid-gray;
+  padding-top: 20px;
+  padding-bottom: 0;
+  h1 {
+    font-family: Lato;
+    font-weight: 100;
+    color: white;
+    margin-bottom: 15px;
+  }
 }
 
-//adjustments for infographic in each section
-.sectors {
-  @include span-columns(4);
-  h1 {
-    @extend .h1;
-    @include rem-fallback(font-size, 1.9);
-    line-height: 1;
-  }
-  h2 {
-    @extend .h3;
-    @include rem-fallback(font-size, 1.2);
-  }
-  p {
-    @include rem-fallback(font-size, 0.82);
-    line-height: 1;
-    padding-left: 5px;
-    @include span-columns(9);
+.sectors-canvas {
+  background-color: $deep-gray;
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.sectors-text {
+  @include span-columns(5);
+  padding-right: 30px;
+  a {
+    color: white;
   }
   svg {
-    height: 40px;
-    @include span-columns(2);
-  }
-}
-
-.sectors-chart {
-  @include span-columns(7);
-  background-color: #F8F8F8;
-  border: 1px solid white;
-  border-radius: 3px;
-  padding: 15px;
-  h1 {
-    color: $dark-gray;
-    text-transform: uppercase;
-    font-size: em(18);
-    border-bottom: 2px solid $dark-gray;
-  }
-}
-
-.sectors-social {
-  @include span-columns(11);
-  img {
-    float: right;
+    width: 35px;
     height: 35px;
-    padding-left: 20px;
-    margin-bottom: 20px;
+    fill: white;
   }
+}
+
+.sectors-splash-text {
+  @extend .h1;
+  color: white;
+  font-weight: 300;
+  @include rem-fallback(font-size, 1.9);
+  line-height: 1.2;
+  padding-bottom: 30px;
 }
 
 .sectors-big-text {
@@ -665,37 +580,30 @@ $section-margin-top: 40px;
   font-weight: 800;
 }
 
-// sectors viz
-#pie-chart-center {
-  height: 160px;
-  width: 160px;
-  background: white;
-  border: 5px solid $medium-gray;
-  border-radius: 100px;
-  margin-left: 24%;
-  margin-top: 24%;
-  position: absolute;
-  opacity: 0.8;
-  top: -25px;
-  left: -23px;
-}
-
-#pie-chart-center-text {
-  opacity: 1;
-  color: $dark-gray;
-  position: absolute;
-  top: 117px;
-  left: 77px;
-  width: 150px;
-  text-align: center;
-  h4 {
-    @include rem-fallback(font-size, 1.3);
-    font-family: $secondary-font-family;
-    font-weight: 800;
+.sectors-icons {
+  display: block;
+  float: left;
+  &:last-of-type {
+    margin-right: 7px;
   }
 }
 
-#sector-revenue-pie-chart {
+.sectors-chart {
+  @include span-columns(7);
+  @include omega();
+  padding: 15px;
+  h1 {
+    color: $dark-gray;
+    text-transform: uppercase;
+    font-size: em(18);
+    border-bottom: 2px solid $dark-gray;
+  }
+  text {
+    fill: white;
+  }
+}
+
+.sectors-chart-pie {
   position: relative;
   margin: 0px auto;
   width: 400px;
@@ -705,9 +613,38 @@ $section-margin-top: 40px;
   }
 }
 
-#sector-revenue-bar-chart {
+.sectors-chart-pie-center {
+  height: 200px;
+  width: 200px;
+  background: white;
+  border-radius: 100px;
+  position: absolute;
+  opacity: 0.75;
+  top: 50px;
+  left: 50px;
+}
+
+.sectors-chart-pie-center-text {
+  opacity: 1;
+  color: black;
+  position: absolute;
+  top: 117px;
+  left: 77px;
+  width: 150px;
+  text-align: center;
+  h1 {
+    @extend .h4;
+    @include rem-fallback(font-size, 1.3);
+    font-family: Lato;
+    font-weight: 400;
+  }
+}
+
+.sectors-chart-bar {
   float: center;
 }
+
+
 
 // Disbursment Bubble Graph
 //============================================

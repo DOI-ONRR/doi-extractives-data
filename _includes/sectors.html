@@ -1,47 +1,76 @@
-<section id="second1" class="section">
+<section id="second1" class="section sectors">
 
   <div class="container">
 
-    <div class="sectors">
-      <h1>Royalties from the sale of natural resources on Federal lands totaled
-      <span class="sectors-big-text">$97.5</span> billion between 2003 to 2013.</h1>
-      
-      <h2>Learn about U.S. natural resources:</h2>
+    <h1>Federal resource royalties by sector</h1>
+  </div>
 
-      <svg class="eiti-oil" role="img" aria-label="Oil"><use xlink:href="{{ site.baseurl }}/static/fonts/EITI/icons.svg#eiti-oil"></use>
-      <p><strong>Oil.</strong><a href="{{ site.baseurl }}/sectors/?h=oil" itemprop="url">more&#8594;</a></p>
-      
-      <svg class="eiti-gas" role="img" aria-label="Gas"><use xlink:href="{{ site.baseurl }}/static/fonts/EITI/icons.svg#eiti-gas"></use></svg>
-      <p><strong>Natural gas.</strong> In 2012, about 25% of energy used in the U. S. came from natural gas, and the&#133; <a href="{{ site.baseurl }}/sectors/?h=ngl" itemprop="url">more&#8594;</a></p>
+</section>
 
-      <svg class="eiti-coal" role="img" aria-label="Coal"><use xlink:href="{{ site.baseurl }}/static/fonts/EITI/icons.svg#eiti-coal"></use></svg>
-      <p><strong>Coal.</strong> In 2012, 1,016.4 million short tons of coal were mined in 25 states. Wyoming&#133; <a href="{{ site.baseurl }}/sectors/?h=coal" itemprop="url">more&#8594;</a></p>
+<section class="sectors-canvas">
 
-      <svg class="eiti-geo" role="img" aria-label="Geothermal"><use xlink:href="{{ site.baseurl }}/static/fonts/EITI/icons.svg#eiti-geo"></use></svg>
-      <p><strong>Geothermal.</strong> In 2013, U.S. geothermal power plants produced about 17 billion kilowatthours&#133; <a href="{{ site.baseurl }}/sectors/?h=geothermal" itemprop="url">more&#8594;</a></p>
+  <div class="container">
 
-      <svg class="eiti-other" role="img" aria-label="Other Commodities"><use xlink:href="{{ site.baseurl }}/static/fonts/EITI/icons.svg#eiti-other"></use></svg>
-      <p><strong>Other commodities.</strong> In 2013, Federal lands produced a wide variety of minerals. For example&#133; <a href="{{ site.baseurl }}/sectors/?h=wind" itemprop="url">more&#8594;</a></p>
+    <div class="sectors-text">
+
+      <p class="sectors-splash-text">Revenues from the sale of natural resources on Federal lands totaled <span class="sectors-big-text">$825.9</span> billion between 2003 and 2013.</p>
+
+      <p>These revenues are made up of 
+
+        {% for term in site.data.terms %} {% if term.term == "rent" %}
+        <span class="term-tooltip" title="{{ term.definition }}" tabindex="0" role="tooltip">rent,<i class="fa fa-question"></i></span>
+        {% endif %} {% endfor %}
+
+        {% for term in site.data.terms %} {% if term.term == "bonus" %}
+        <span class="term-tooltip" title="{{ term.definition }}" tabindex="0" role="tooltip">bonus,<i class="fa fa-question"></i></span>
+        {% endif %} {% endfor %}
+
+        {% for term in site.data.terms %} {% if term.term == "royalty" %}
+        <span class="term-tooltip" title="{{ term.definition }}" tabindex="0" role="tooltip">royalties,<i class="fa fa-question"></i></span>
+        {% endif %} {% endfor %}
+
+        and
+
+        {% for term in site.data.terms %} {% if term.term == "other revenues" %}
+        <span class="term-tooltip" title="{{ term.definition }}" tabindex="0" role="tooltip">other revenues,<i class="fa fa-question"></i></span>
+        {% endif %} {% endfor %}
+
+        with royalties making up the biggest piece.
+
+      </p>
+
+      <div class="sectors-icons">
+        <svg class="eiti-oil" role="img" aria-label="Oil"><use xlink:href="{{ site.baseurl }}/static/fonts/EITI/icons.svg#eiti-oil"></use>
+      </div>
+      <div class="sectors-icons">
+        <svg class="eiti-gas" role="img" aria-label="Gas"><use xlink:href="{{ site.baseurl }}/static/fonts/EITI/icons.svg#eiti-gas"></use></svg>
+      </div>
+      <div class="sectors-icons">
+        <svg class="eiti-coal" role="img" aria-label="Coal"><use xlink:href="{{ site.baseurl }}/static/fonts/EITI/icons.svg#eiti-coal"></use></svg>
+      </div>
+      <div class="sectors-icons">
+        <svg class="eiti-wind" role="img" aria-label="Other Commodities"><use xlink:href="{{ site.baseurl }}/static/fonts/EITI/icons.svg#eiti-wind"></use></svg>
+      </div>
+      <div class="sectors-icons">
+        <svg class="eiti-geo" role="img" aria-label="Geothermal"><use xlink:href="{{ site.baseurl }}/static/fonts/EITI/icons.svg#eiti-geo"></use></svg>
+      </div>
+
+      <p>Explore resource royalties by sector on the right, or read more about U.S. natural resource sectors such as oil, natural gas, coal, wind and geothermal energy. <a href="{{ site.baseurl }}/sectors/" itemprop="url">more >></a></p>
+
     </div>
 
-    <div class="sectors-chart aboutText pad50right">
+    <div class="sectors-chart">
 
-      <h1>Royalties by Sector</h1>
-      <div id="sector-revenue-pie-chart">
-        <div id="pie-chart-center"></div>
-        <div id="pie-chart-center-text">
-          <h4></h4>
+      <div id="sector-revenue-pie-chart" class="sectors-chart-pie">
+        <div id="pie-chart-center" class="sectors-chart-pie-center"></div>
+        <div id="pie-chart-center-text" class="sectors-chart-pie-center-text">
+          <h1></h1>
         </div>
       </div>
 
-      <div id="sector-revenue-bar-chart"></div>
+      <div id="sector-revenue-bar-chart" class="sectors-chart-bar"></div>
       <a href="javascript:javascript:barChart.filterAll();pieChart.filterAll();dc.redrawAll();">reset</a>
 
-    </div>
-
-    <div class="sectors-social">
-      <img src="{{ site.baseurl }}/static/img/icon_4501.svg" alt="Download" class="share">
-      <img src="{{ site.baseurl }}/static/img/icon_7584.svg" alt="Share" class="share">
     </div>
 
 </section>

@@ -48,18 +48,18 @@ d3.csv("static/data/data-sectors-revenue.csv",function(resource_data){
 	  .attr('class', 'd3-tip')
 	  .offset([-10, 0])
 	  .html(function(d) {
-	    return "<strong>Revenue:</strong> <span style='color:red'>$"+parseFloat(d.data.value).formatMoney(2,'.',',')+"</span>";
+	    return "total royalties<br/> <span style='color:#d54740'>$"+parseFloat(d.data.value).formatMoney(2,'.',',')+"</span>";
 	  });
 	var pieTip = d3.tip()
 		.attr('class','d3-tip')
 		.offset([-10,0])
-		.html(function (d) { return "<span style='color: #f0027f'>" +  d.data.key + "</span>: $"  + parseFloat(d.data.value).formatMoney(2,'.',',')
+		.html(function (d) { return d.data.key + " royalties<br/><span style='color:#d54740'> $" + parseFloat(d.data.value).formatMoney(2,'.',',') + "</span>";
 		});
 
 
 	
 	barChart
-		.width(500).height(200)
+		.width(400).height(150)
 		.group(totalByYear)
 		.dimension(yearDimension)
 		.centerBar(false)		
@@ -87,19 +87,19 @@ d3.csv("static/data/data-sectors-revenue.csv",function(resource_data){
 	//barChart.xAxis();
 
 	pieChart.width(300)
-		.colors(d3.scale.ordinal().range(["#815678","#70D4C4","#F96161","#ADAA97","#6D9DC8"]))
+		.colors(d3.scale.ordinal().range(["#d54740","#3397c2","#9fa731","#865daa","#5a5a5a"]))
 		.height(300)
 		.transitionDuration(750)
-		.radius(105)
+		.radius(130)
 		//.innerRadius(60)
 		.dimension(typeDimension)
 		.group(totalByType)
-		.legend(dc.legend().x(280).y(70).itemHeight(13).gap(5))
+		.legend(dc.legend().x(300).y(30).itemHeight(13).gap(10))
 		.renderLabel(false)
 		//.minAngleForLabel(0)
 		//.label(function(d) { return d.data.key + "(" + Math.floor(d.data.value / all.value() * 100) + "%)"; })
 		.renderlet(function(d){
-			d3.select("#pie-chart-center-text h4").html('Total:<br /> $' +text_money(all.value()));
+			d3.select("#pie-chart-center-text h1").html('Total:<br /> $' +text_money(all.value()));
 		});
 
 	

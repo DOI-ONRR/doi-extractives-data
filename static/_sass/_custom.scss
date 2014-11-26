@@ -1201,7 +1201,8 @@ div.disbursement_bubble_rollover {
   background-color: $deep-gray;
 }
 
-.map-notes {
+.map-notes,
+.sectors-chart-notes {
   color: white;
   margin-top: 50px;
   padding-bottom: 30px;
@@ -1212,13 +1213,27 @@ div.disbursement_bubble_rollover {
     font-family: $base-font-family;
     color: white;
   }
-  ol li {
+  ol li,
+  ul li {
     @include rem-fallback(font-size, 0.8);
   }
   .term-tooltip {
     i {
       @include rem-fallback(font-size, 0.7);
     }
+  }
+}
+
+.sectors-chart-notes {
+  @include span-columns(4);
+  @include shift(8);
+  @include omega();
+  text-align: right;
+  margin-top: 0;
+  padding-bottom: 0;
+  li {
+    line-height: 1.2;
+    padding-bottom: 5px;
   }
 }
 

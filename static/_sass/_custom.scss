@@ -770,6 +770,8 @@ $section-margin-top: 40px;
   }
 
   svg.pack {
+    margin-top: 20px;
+
     g.node text {
       fill: white;
       @include rem-fallback(font-size, .9);
@@ -829,6 +831,13 @@ $section-margin-top: 40px;
     width: 2em;
     height: 2em;
     fill: white;
+  }
+
+  &.default-display {
+    color: $medium-gray;
+    .icons .icon {
+      fill: $medium-gray;
+    }
   }
 }
 

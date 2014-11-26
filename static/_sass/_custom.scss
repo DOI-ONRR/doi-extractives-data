@@ -497,7 +497,8 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
   border-top: $section-border;
   h1 {
     padding-top: 30px;
-    text-shadow: 1px 1px 2px $light-gray;
+    font-family: Lato;
+    font-weight: 300;
   }
   .intro {
     margin-bottom: 70px;
@@ -514,7 +515,8 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
   border-top: $section-border;
   h1 {
     padding-top: 30px;
-    text-shadow: 1px 1px 2px $light-gray;
+    font-family: Lato;
+    font-weight: 300;
   }
   .intro {
     margin-bottom: 70px;
@@ -861,10 +863,6 @@ $section-margin-top: 40px;
   }
 }
 
-.test {
-  //@include span-columns(12);
-}
-
 .tipsy-more {
   border-top: 1px solid $deep-gray;
   margin-top: 20px;
@@ -899,6 +897,7 @@ $section-margin-top: 40px;
   width: 30%;
   display: inline-block;
 }
+
 .disbursement-bubble-img-containter {
   text-align: center;
 }
@@ -1226,8 +1225,16 @@ div.disbursement_bubble_rollover {
 //============================================
 //how do natural resources become Federal revenue?
 .how {
-  padding-top: 0;
-  background-color: #f5e5e4;
+  padding-top: 20px;
+  background-color: $mid-gray;
+  .map-title { //remove once the new styles become global variables
+    h1 {
+      font-family: Lato;
+      font-weight: 100;
+      color: white;
+      margin-bottom: 15px;
+    }
+  }
   > h1 {
     @include span-columns(12);
   }
@@ -1263,13 +1270,14 @@ div.disbursement_bubble_rollover {
   }
 }
 .map-notes {
-  color: black;
+  color: white;
   margin-top: 50px;
   font-style: italic;
   h1 {
     @include rem-fallback(font-size, 0.8);
     font-weight: 300;
     font-family: $base-font-family;
+    color: white;
   }
   ol li {
     @include rem-fallback(font-size, 0.8);
@@ -1392,6 +1400,9 @@ div.disbursement_bubble_rollover {
     top: 165px;
     left: 10px;
     width: 150px;
+  }
+  h1 {
+    @extend .h4;
   }
   z-index: 998;
   > a {
@@ -1995,6 +2006,7 @@ $max-width: 100%; //this is setting the width of outer-container.
   border-top: $section-border;
   h1 {
     @extend .h4;
+    font-family: Lato;
     font-weight: 500;
   }
   img {
@@ -2009,6 +2021,9 @@ $max-width: 100%; //this is setting the width of outer-container.
       color: $red;
       text-decoration: none;
     }
+  }
+  span {
+    font-weight: 500;
   }
 }
 

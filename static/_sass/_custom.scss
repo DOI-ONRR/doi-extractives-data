@@ -1734,6 +1734,10 @@ $max-width: 100%; //this is setting the width of outer-container.
 .dashboard-chart {
   @include span-columns(4 of 12);
 }
+.dashboard-chart g g.axis text {fill: white;}
+.dashboard-chart g g.axis line {stroke: white;}
+.dashboard-chart g g.axis path {stroke: white;}
+.dashboard-chart g g.dc-legend-item text {fill: white;}
 
 .dashboard-download {
   @include span-columns(12 of 12);
@@ -1934,3 +1938,4 @@ $max-width: 100%; //this is setting the width of outer-container.
     @include span-columns(6);
   }
 }
+

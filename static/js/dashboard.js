@@ -1,5 +1,6 @@
-var dash_bar_rev_by_commodity = dc.barChart("#dashboard-bar-rev-by-commodity");
-var dash_pie_rev_by_commodity;
+var dash_bar_rev_by_commodity_group = dc.barChart("#dashboard-bar-rev-by-commodity-group");
+var dash_bar_rev_by_revenue_type = dc.barChart("#dashboard-bar-rev-by-revenue-type");
+//var dash_pie_rev_by_commodity;
 //var dash_bar_rev_by_other = dc.barChart("#dashboard-bar-rev-by-other");
 // var dash_bar_by_rev_source = dc.barChart("#dashboard-bar-rev-source")
 // var dash_bar_avg_by_rev_source = dc.barChart('#dashboard-bar-avg-by-rev-source');
@@ -346,7 +347,7 @@ d3.csv("../static/data/Updated_Consolidated_Revenue_Data_with_Fake_Names.csv",fu
     /****************************
     Graph:Bar Graph, by commodity
     *****************************/
-    dash_bar_rev_by_commodity
+    dash_bar_rev_by_commodity_group
         .width(600).height(400)
         .dimension(typeGroupDimension)
         .group(typeGroupDimension_allGroup, "Rent")
@@ -372,12 +373,32 @@ d3.csv("../static/data/Updated_Consolidated_Revenue_Data_with_Fake_Names.csv",fu
         .y(d3.scale.log().nice().domain([1, 12500000000]))
         .margins({top: 10, right: 10, bottom: 75, left:100})
         .yAxis().tickFormat(function(v){return "$"+ parseFloat(v).formatMoney(0,'.',',')});
-    dash_bar_rev_by_commodity.on("filtered", function (chart) {
+    dash_bar_rev_by_commodity_group.on("filtered", function (chart) {
                 dc.events.trigger(function () {
                 });});
     /*****************************
     End: dash_bar_rev_by_commodity
     *****************************/
+    dash_bar_rev_by_revenue_type
+        .width(600).height(400)
+        .dimension(revDimension)
+        .group(revDimensionGroup)
+        .valueAccessor(function(d) {
+            return d.value;
+        })
+        .legend(dc.legend().x(470).y(100))
+        .centerBar(false)
+        .elasticY(true)
+        .brushOn(false)
+        .turnOnControls(true)
+        .xUnits(dc.units.ordinal)
+        .x(d3.scale.ordinal())
+        .y(d3.scale.log().nice().domain([1, 12500000000]))
+        .margins({top: 10, right: 10, bottom: 75, left:100})
+        .yAxis().tickFormat(function(v){return "$"+ parseFloat(v).formatMoney(0,'.',',')});
+    dash_bar_rev_by_revenue_type.on("filtered", function (chart) {
+                dc.events.trigger(function () {
+                });});
 
     /*****************************
     Graph: Pie Graph, by commodity
@@ -539,15 +560,15 @@ d3.csv("../static/data/Updated_Consolidated_Revenue_Data_with_Fake_Names.csv",fu
     Table related Facts (Averages, Totals, etc)
     These items are tied to the dashTable so they will be updated when it is updated
     *********************************************************************************/
-    dash_bar_rev_by_commodity
+    dash_bar_rev_by_commodity_group
         .renderlet(function(d){
             d3.select("#total_revenue").html('$' +parseFloat(all.value().sum.toFixed(0)).formatMoney(0,'.',','));
         });
-    dash_bar_rev_by_commodity
+    dash_bar_rev_by_commodity_group
         .renderlet(function(d){
             d3.select("#average_revenue").html('$' +parseFloat(all.value().average.toFixed(0)).formatMoney(0,'.',','));
         });
-    dash_bar_rev_by_commodity
+    dash_bar_rev_by_commodity_group
         .renderlet(function(d){
             d3.select("#company_count").html(all.value().company_count);
         })
@@ -580,6 +601,15 @@ d3.csv("../static/data/Updated_Consolidated_Revenue_Data_with_Fake_Names.csv",fu
 
    dc.renderAll();
    graphCustomizations();
+   $('#dashboard-bar-rev-by-commodity-group svg g g.x g.tick text').each(function(){
+        console.log($(this).html());
+        $(this).on('click',function(){
+            alert('test');
+            $('#dashboard-bar-rev-by-commodity-group').hide();
+            $('#dashboard-bar-rev-by-revenue-type').toggle();
+            
+        });
+    });
 
 
 
@@ -652,6 +682,7 @@ $(document).ready(function(){
     $('#OptionsList input').on('change',function(){
         var label = $("label[for='"+$(this).attr('id')+"']");
         update_graph_options($('#OptionsList input'), revDimension);
-    })
+    });
+    
 })
 

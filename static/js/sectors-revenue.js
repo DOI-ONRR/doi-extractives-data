@@ -59,10 +59,12 @@ d3.csv("static/data/data-sectors-revenue.csv",function(resource_data){
 
 	
 	barChart
-		.width(400).height(150)
+		.width(400).height(130)
 		.group(totalByYear)
 		.dimension(yearDimension)
-		.centerBar(false)		
+		.centerBar(false)
+		.gap(15)
+		.colors(["#9B9B9B"])		
 		//.colors(['red',"blue"])
 		/*.renderlet(function(chart){
 			var expenseColors = ["#fde0dd","#fa9fb5","#e7e1ef","#d4b9da","#c994c7","#fcc5c0","#df65b0","#e7298a","#ce1256", "#f768a1","#dd3497","#e78ac3","#f1b6da"];
@@ -99,7 +101,7 @@ d3.csv("static/data/data-sectors-revenue.csv",function(resource_data){
 		//.minAngleForLabel(0)
 		//.label(function(d) { return d.data.key + "(" + Math.floor(d.data.value / all.value() * 100) + "%)"; })
 		.renderlet(function(d){
-			d3.select("#pie-chart-center-text h1").html('Total:<br /> $' +text_money(all.value()));
+			d3.select("#pie-chart-center-text h1").html('Total:<br /> <span>$' + text_money(all.value()) + '</span>');
 		});
 
 	

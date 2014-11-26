@@ -32,12 +32,16 @@
         and
 
         {% for term in site.data.terms %} {% if term.term == "other revenues" %}
-        <span class="term-tooltip" title="{{ term.definition }}" tabindex="0" role="tooltip">other revenues,<i class="fa fa-question"></i></span>
+        <span class="term-tooltip" title="{{ term.definition }}" tabindex="0" role="tooltip">other revenues,<i class="tip">?</i></span>
         {% endif %} {% endfor %}
 
         with royalties making up the biggest piece.
 
       </p>
+
+      
+
+      <p>Explore resource royalties by sector on the right, or read more about U.S. natural resource sectors such as oil, natural gas, coal, wind and geothermal energy. <a href="{{ site.baseurl }}/sectors/" itemprop="url">more >></a></p>
 
       <div class="sectors-icons">
         <svg class="eiti-oil" role="img" aria-label="Oil"><use xlink:href="{{ site.baseurl }}/static/fonts/EITI/icons.svg#eiti-oil"></use>
@@ -55,8 +59,6 @@
         <svg class="eiti-geo" role="img" aria-label="Geothermal"><use xlink:href="{{ site.baseurl }}/static/fonts/EITI/icons.svg#eiti-geo"></use></svg>
       </div>
 
-      <p>Explore resource royalties by sector on the right, or read more about U.S. natural resource sectors such as oil, natural gas, coal, wind and geothermal energy. <a href="{{ site.baseurl }}/sectors/" itemprop="url">more >></a></p>
-
     </div>
 
     <div class="sectors-chart">
@@ -69,8 +71,15 @@
       </div>
 
       <div id="sector-revenue-bar-chart" class="sectors-chart-bar"></div>
-      <a href="javascript:javascript:barChart.filterAll();pieChart.filterAll();dc.redrawAll();">reset</a>
 
+      <div class="sectors-chart-reset">
+        <a href="javascript:javascript:barChart.filterAll();pieChart.filterAll();dc.redrawAll();">
+          <div class="sectors-chart-reset-button">
+            reset
+          </div>
+        </a>
+      </div>
+      
     </div>
 
 </section>

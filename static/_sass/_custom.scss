@@ -548,13 +548,14 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
 .sectors-canvas {
   background-color: $deep-gray;
   color: white;
-  padding-top: 30px;
-  padding-bottom: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .sectors-text {
   @include span-columns(5);
-  padding-right: 30px;
+  padding-top: 30px;
+  padding-right: 50px;
   a {
     color: white;
   }
@@ -563,19 +564,18 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
     height: 35px;
     fill: white;
   }
+  p {
+    @include rem-fallback(font-size, 1.1);
+    margin-bottom: 40px;
+  }
 }
 
 .sectors-splash-text {
-  @extend .h1;
-  color: white;
-  font-weight: 300;
-  @include rem-fallback(font-size, 1.9);
-  line-height: 1.2;
-  padding-bottom: 30px;
+  font-weight: 400;
 }
 
 .sectors-big-text {
-  @include large-type(1.625);
+  @include rem-fallback(font-size, 1.4);
   font-family: Raleway, sans-serif;
   font-weight: 800;
 }
@@ -592,15 +592,16 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
   @include span-columns(7);
   @include omega();
   padding: 15px;
-  h1 {
-    color: $dark-gray;
-    text-transform: uppercase;
-    font-size: em(18);
-    border-bottom: 2px solid $dark-gray;
-  }
   text {
     fill: white;
   }
+}
+
+.sectors-chart-title { //likely delete -- not using anymore
+  color: $dark-gray;
+  text-transform: uppercase;
+  font-size: em(18);
+  border-bottom: 2px solid $dark-gray;
 }
 
 .sectors-chart-pie {
@@ -609,7 +610,7 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
   width: 400px;
   float: center;
   svg {
-    width: 410px; //Controls width of pie chart graphic
+    width: 440px; //Controls width of pie chart graphic
   }
 }
 
@@ -633,17 +634,41 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
   width: 150px;
   text-align: center;
   h1 {
-    @extend .h4;
-    @include rem-fallback(font-size, 1.3);
     font-family: Lato;
-    font-weight: 400;
+    font-weight: 200;
+    @include rem-fallback(font-size, 1.5);
+    span {
+      font-weight: 300;
+      @include rem-fallback(font-size, 1.7);
+    }
   }
 }
 
 .sectors-chart-bar {
+  padding-left: 25px;
   float: center;
 }
 
+.sectors-chart-reset {
+  float: right;
+  a {
+    color: $light-gray;
+    text-decoration: none;
+    font-weight: 200;
+  }
+}
+
+.sectors-chart-reset-button {
+  width: 59px;
+  height: 30px;
+  padding-top: 2px;
+  padding-left: 10px;
+  border: 1px solid $mid-gray;
+  &:hover,
+  &:focus {
+    background-color: $mid-gray;
+  }
+}
 
 
 // Disbursment Bubble Graph

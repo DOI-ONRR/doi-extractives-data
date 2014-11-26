@@ -789,6 +789,43 @@ $section-margin-top: 40px;
   }
 }
 
+// this is the info area for bubbles in the disbursement graph
+.bubble-info {
+  color: white;
+  margin-top: 1em;
+
+  // make all links white
+  a {
+    color: inherit;
+  }
+
+  h1 {
+    margin: 0;
+    color: inherit;
+    @include rem-fallback(font-size, 1.25);
+
+    .context {
+      margin-left: .5em;
+
+      &.onshore { color: $useiti-green; }
+      &.offshore { color: $useiti-blue; }
+    }
+  }
+
+  h2 {
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    @include rem-fallback(font-size, 2);
+  }
+
+  .icons .icon {
+    width: 2em;
+    height: 2em;
+    fill: white;
+  }
+}
+
 .bubbles-onshore-offshore {
   @include span-columns(4);
   margin-top: 20px;

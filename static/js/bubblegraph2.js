@@ -20,13 +20,13 @@
           .on("click", selectYear),
       // and create a section div for each disbursement year
       sections = d3.select(".disbursement_container")
-        .selectAll("div.disbursement")
+        .selectAll(".disbursement_year")
         .data(years.map(function(year) {
           return {year: year};
         }))
         .enter()
         .append("div")
-          .attr("class", "disbursement")
+          .attr("class", "disbursement_year")
           .attr("data-year", function(d) { return d.year; }),
       // use the same pack layout for all years
       pack = d3.layout.pack()
@@ -36,6 +36,14 @@
         })
         .size([size - margin * 2, size - margin * 2])
         .padding(10);
+
+  var fundInfo = d3.select(".bubbles .fund-info")
+    .style("display", "none");
+
+  fundInfo.select(".close")
+    .on("click", function() {
+      fundInfo.style("display", "none");
+    });
 
   // visual data tweaks, by element id
   var tweaks = {
@@ -122,9 +130,13 @@
     // create a <g.node> for each "leaf" of the tree
     var node = g.selectAll(".node")
       .data(function(d) {
-        return pack
+        var nodes = pack
           .nodes(flatten(data, d.year))
           .filter(function(node) { return !node.children; });
+        nodes.forEach(function(d) {
+          d.meta = fundMeta[d.name][d.shore];
+        });
+        return nodes;
       })
       .enter()
       .append("g")
@@ -140,26 +152,12 @@
           return "translate(" + [d.x, d.y] + ")";
         })
         .on("mouseover", function(d) {
-          try {
-            var meta = fundMeta[d.name][d.shore];
-          } catch (error) {
-            console.error("no fund metadata:", d.name, d.shore, "in:", fundMeta);
-          }
-
           clearTimeout(infoTimeout);
-
           // bind the data for the bubble and the fund metadata to the
           // corresponding info bubble div, then call updateMetadata() on it
           d3.select("#bubble-info-" + d.year)
             .style("display", null)
-            .datum({
-              name:     d.name,
-              year:     d.year,
-              shore:    d.shore,
-              revenue:  d.value,
-              icons:    meta.icons,
-              content:  meta.content
-            })
+            .datum(d)
             .call(updateMetadata);
         })
         .on("mouseout", function(d) {
@@ -168,7 +166,8 @@
             d3.select("#bubble-info-" + d.year)
               .style("display", "none");
           }, 200);
-        });
+        })
+        .on("click", selectFund);
 
     node.sort(function(a, b) {
       return d3.descending(a.r, b.r);
@@ -254,6 +253,8 @@
     sections.style("display", function(d) {
       return d.year === year ? null : "none";
     });
+    // hide the fund info
+    fundInfo.style("display", "none");
   }
 
   /*
@@ -306,6 +307,7 @@
   function updateMetadata(selection) {
     var format = d3.format(".3f"),
         billion = 1e9;
+
     selection.select(".name")
       .text(function(d) { return d.name; });
     selection.select(".context")
@@ -317,14 +319,14 @@
     selection.select(".shore")
       .text(function(d) { return d.shore; });
     selection.select(".revenue")
-      .text(function(d) { return format(d.revenue / billion); });
+      .text(function(d) { return format(d.value / billion); });
     selection.select(".content")
-      .html(function(d) { return d.content; });
+      .html(function(d) { return d.meta.content; });
 
     var icons = selection.select(".icons")
       .selectAll(".icon")
         .data(function(d) {
-          return d.icons.map(function(id) {
+          return d.meta.icons.map(function(id) {
             return {
               id: id,
               label: iconLabels[id] || id
@@ -352,6 +354,19 @@
         .attr("xlink:href", function(d) {
           return window.site.baseurl + "/static/fonts/EITI/icons.svg#eiti-" + d.id;
         });
+  }
+
+  function selectFund(fund) {
+    fundInfo
+      .style("display", null);
+
+    fundInfo.select(".name")
+      .attr("class", ["name", fund.shore].join(" "))
+      .select(".text")
+        .text(fund.name);
+
+    fundInfo.select(".content")
+      .html(fund.meta.content);
   }
 
   /*

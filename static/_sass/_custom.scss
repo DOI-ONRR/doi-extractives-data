@@ -757,20 +757,26 @@ $section-margin-top: 40px;
 }
 
 .bubbles-viz {
+  color: white;
+
   @include span-columns(8);
+
+  .click-prompt {
+    margin: 20px 0;
+  }
+
   text {
-    color: white;
+    fill: white;
   }
 
   svg.pack {
-    margin-top: 40px;
-
     g.node text {
       fill: white;
       @include rem-fallback(font-size, .9);
     }
 
     g.node circle {
+      cursor: pointer;
       stroke: transparent;
       stroke-width: 2;
     }
@@ -827,9 +833,10 @@ $section-margin-top: 40px;
 }
 
 .bubbles-onshore-offshore {
+  position: relative;
   @include span-columns(4);
   margin-top: 20px;
-  > div {
+  .box {
     background: white;
     padding-top: 10px;
     padding-bottom: 1px;
@@ -866,6 +873,32 @@ $section-margin-top: 40px;
   h1 {
     background: $useiti-green;
   }
+}
+
+.bubbles .fund-info {
+  position: absolute;
+  top: 0;
+  left: -30px; // to account for the offshore description, offset -20px
+  right: -20px;
+  height: 100%;
+  background: $deep-gray;
+
+  .box {
+    margin-left: 20px;
+  }
+
+  .close {
+    float: right;
+    color: white;
+    font-size: 1.5em;
+    line-height: .75em;
+    font-weight: 800;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  h1.offshore { background: $useiti-blue; }
+  h1.onshore { background: $useiti-green; }
 }
 
 .tipsy-inner {

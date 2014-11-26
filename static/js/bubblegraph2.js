@@ -59,8 +59,66 @@
 
   // icon id: name mapping
   var iconMeta = {
-    "eiti-oil": "Oil"
-    // TODO: flesh out
+    "dogtags": {
+      id: "eiti-other",
+      label: "Dogtags"
+    },
+    "park": {
+      id: "eiti-other",
+      label: "Park"
+    },
+    "book and test tube": {
+      id: "eiti-other",
+      label: "Book and Test Tube"
+    },
+    "offshore oil rig": {
+      id: "eiti-oil",
+      label: "Offshore Oil Rig"
+    },
+    "coast": {
+      id: "eiti-oil",
+      label: "Coast"
+    },
+    "geothermal energy plant": {
+      id: "eiti-geo",
+      label: "Geothermal Energy Plant"
+    },
+    "schoolhouse": {
+      id: "eiti-other",
+      label: "Schoolhouse"
+    },
+    "u.s. states": {
+      id: "eiti-other",
+      label: "U.S. States"
+    },
+    "video camera": {
+      id: "eiti-other",
+      label: "Video Camera"
+    },
+    "city buildings": {
+      id: "eiti-other",
+      label: "City Buildings"
+    },
+    "mountains": {
+      id: "eiti-other",
+      label: "Mountains"
+    },
+    "playground": {
+      id: "eiti-other",
+      label: "Playground"
+    },
+    "farm": {
+      id: "eiti-other",
+      label: "Farm"
+    },
+    "dam": {
+      id: "eiti-other",
+      label: "Dam"
+    },
+    "baseball field": {
+      id: "eiti-other",
+      label: "Baseball Field"
+    }
   };
 
   queue([
@@ -273,7 +331,11 @@
 
     var icons = selection.select(".icons")
       .selectAll(".icon")
-        .data(function(d) { return d.icons || []; });
+        .data(function(d) {
+          return d.icons.map(function(name) {
+            return iconMeta[name];
+          });
+        });
 
     icons.exit()
       .remove();
@@ -285,14 +347,19 @@
         .append("use");
 
     icons
-      .attr("class", function(id) { return id; })
-      .attr("aria-label", function(id) {
-        return iconMeta[id] ? iconMeta[id].label : id;
-      })
-      .select("use")
-        .attr("xlink:href", function(id) {
-          return window.site.baseurl + "/static/fonts/EITI/icons.svg#" + id;
-        });
+      .classed("missing", true)
+      .filter(function(d) { return d; })
+        .classed("missing", false)
+        .attr("class", function(d) {
+          return ["icon", d.id].join(" ");
+        })
+        .attr("aria-label", function(d) {
+          return d.label;
+        })
+        .select("use")
+          .attr("xlink:href", function(d) {
+            return window.site.baseurl + "/static/fonts/EITI/icons.svg#" + d.id;
+          });
   }
 
   /*

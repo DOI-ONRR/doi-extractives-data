@@ -2,33 +2,33 @@
   "U.S. Treasury": {
     "offshore": {
       "content": "Some offshore revenue goes into the <a href=\"http://www.gasb.org/cs/ContentServer?pagename=GASB/GASBContent_C/UsersArticlePage&cid=1176156735732\">U.S. General Fund</a>, which is the same place that money from individual and corporate income taxes go. A general fund is a government's basic operating fund and accounts for everything not accounted for in another fund. The U.S. General Fund pays for roughly two-thirds of all federal expenditures, including the U.S. military, parks and schools.",
-      "icons": ["Dogtags", "Park", "Book and test tube"]
+      "icons": ["dogtags", "park", "book and test tube"]
     },
     "onshore": {
       "content": "Some onshore revenue goes into the <a href=\"http://www.gasb.org/cs/ContentServer?pagename=GASB/GASBContent_C/UsersArticlePage&cid=1176156735732\">U.S. General Fund</a>, which is the same place that money from individual and corporate income taxes go. A general fund is a government's basic operating fund and accounts for everything not accounted for in another fund. The U.S. General Fund pays for roughly two-thirds of all federal expenditures, including the U.S. military, parks and schools.",
-      "icons": ["Dogtags", "Park", "Book and test tube"]
+      "icons": ["dogtags", "park", "book and test tube"]
     }
   },
   "States": {
     "offshore": {
       "content": "Revenues from the offshore (outer continental shelf, or OCS) locations are shared with states in two ways. One, 27% of revenues from leases in the 8(g) zone are shared with states. The 8(g) zone is made up of the first three nautical miles of the OCS. 8(g) refers to Section 8(g) of the <a href=\"http://www.epw.senate.gov/ocsla.pdf\">Outer Continental Shelf Lands Act (OCSLA)</a>. Two, 37.5% of revenues from certain leases in the Gulf of Mexico are shared with four Gulf Coast States (Alabama, Louisiana, Mississippi, and Texas) and their Coastal Political Subdivisions (CPS), such as counties and parishes, through the <a href=\"http://www.boem.gov/Oil-and-Gas-Energy-Program/Energy-Economics/Revenue-Sharing/Index.aspx\">Gulf of Mexico Energy Security Act (GOMESA)</a>. Each state and CPS decides how to use the revenue, as long as the expenditure supports coastal protection or restoration, mitigation of damage to marine wildlife or natural resources, implementation of marine or coastal management plans, mitigation of OCS activities, or related administration costs.",
-      "icons": ["Offshore oil rig", "Coast"]
+      "icons": ["offshore oil rig", "coast"]
     },
     "onshore": {
       "content": "The state share of onshore revenues mostly go directly to states, with percentages going to several other funds and state entities. For example, <a href=\"http://www.blm.gov/wo/st/en/prog/energy/geothermal.html\">some revenue from geothermal resources goes directly to counties</a>. It's up to each county and state to decide how to use the revenue.",
-      "icons": ["Geothermal energy plant", "U.S. States"]
+      "icons": ["geothermal energy plant", "u.s. states"]
     }
   },
   "Historic Preservation Fund": {
     "offshore": {
       "content": "The <a href=\"http://www.nps.gov/history/hpg/\">Historic Preservation Fund</a> helps preserve U.S. historical and archaeological sites and cultural heritage through grants to State and Tribal Historic Preservation Offices. Some examples of activities include a <a href=\"http://www.michiganmodern.org/\">survey of modernist architecture</a> in Michigan, <a href=\"http://ncptt.nps.gov/blog/tribal-heritage-grants/\">restoration of the Peoria Schoolhouse</a> by the Peoria Tribe of Indians of Oklahoma and <a href=\"http://ncptt.nps.gov/blog/tribal-heritage-grants/\">documenting Yup’ik Songs & Dances</a> by the Calista Elders Council of Alaska.",
-      "icons": ["City buildings", "Schoolhouse", "Video camera"]
+      "icons": ["city buildings", "schoolhouse", "video camera"]
     }
   },
   "Land & Water Conservation Fund": {
     "offshore": {
       "content": "The <a href=\"http://www.nps.gov/lwcf/\">Land & Water Conservation Fund</a> provides matching grants to states and local governments to buy and develop public outdoor recreation areas. It has supported projects in all 50 states and U.S. territories, creating community parks and trails and protecting clean water sources. A few places that were funded by the LWCF include <a href=\"http://www.emnrd.state.nm.us/SPD/eaglenestlakestatepark.html\">Eagle Nest Lake State Park, New Mexico</a>, <a href=\"http://www.mitchellparkdc.org/history.html\">Mitchell Park, District of Columbia</a>, and <a href=\"http://www.ofallon.org/parks/pages/family-sports-park\">Family Sports Park, Illinois</a>.",
-      "icons": ["Mountains", "Playground", "Baseball field"]
+      "icons": ["mountains", "playground", "baseball field"]
     }
   },
   "Other Funds": {
@@ -44,7 +44,7 @@
   "Reclamation Fund" : {
     "onshore": {
       "content": "<a href=\"http://www.nps.gov/nr/travel/ReclamationDamsAndWaterProjects/Mission_of_the_Bureau_of_Reclamation.html\">The Reclamation Fund</a> is a special fund established by the United States Congress under the Reclamation Act of 1902 to pay for Bureau of Reclamation projects. The Bureau of Reclamation is best known for its dams and power plants which provide <a href=\"http://www.usbr.gov/facts.html\">irrigation water for 10 million acres of farmland</a> and <a href=\"http://www.usbr.gov/facts.html\">40 billion kilowatt hours of energy produced from hydroelectric power</a>.",
-      "icons": ["Farm", "Dam"]
+      "icons": ["farm", "dam"]
     }
   }, 
   "American Indian Tribes" : {

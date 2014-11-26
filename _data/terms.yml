@@ -29,3 +29,18 @@
 
 - term: "one mine one product"
   definition: "Disclosing payments of solid mineral companies who only produce and sell one product from one mine can reveal proprietary sales price and contracting information, and cause competitive harm to small companies. The Department of the Interior is legally obligated through the Trades Secrets Act to safeguard this data, so payments from these companies are aggregated (rolled up) in this category. These aggregated payments make up less than three thousandths of one percent of all payments."
+
+- term: coal
+  definition: "Includes various processed and unprocessed coal products such as anthracite, bituminous, subbituminous, and lignite."
+
+- term: oil
+  definition: "Includes various crude oil products such as condensate, drip and scrubber condensate, and fuel oil."
+
+- term: gas
+  definition: "Includes various natural gas products such as processed and unprocessed gas, natural gas liquids (NGL), nitrogen, flash gas, fuel gas, and coal bed methane."
+
+- term: other
+  definition: "Includes a wide variety of solid mineral and other products such as copper, zinc, tar sands, clay, borax, and potassium."
+
+- term: geothermal
+  definition: "Includes royalties from geothermal electrical generation and the resulting byproducts."

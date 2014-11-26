@@ -19,7 +19,7 @@
           .text(function(d) { return d; })
           .on("click", selectYear),
       // and create a section div for each disbursement year
-      sections = d3.select(".disbursement_container")
+      sections = d3.select(".bubbles .years")
         .selectAll(".disbursement_year")
         .data(years.map(function(year) {
           return {year: year};
@@ -82,6 +82,20 @@
     "wheat":      "Farm"
   };
 
+  var defaultDisplay = d3.select(".bubbles .default-display");
+  defaultDisplay.select(".icons")
+    .selectAll(".icon")
+    .data(Object.keys(iconLabels).map(function(key) {
+      return {
+        id: key,
+        label: iconLabels[key]
+      };
+    }))
+    .enter()
+    .append("svg")
+      .call(createIcon)
+      .call(updateIcon);
+
   // timeout for hiding the bubble info
   var infoTimeout;
 
@@ -93,7 +107,7 @@
     // console.log("fund metadata:", fundMeta);
     // console.log("disbursements:", data);
 
-    // create an <svg> for each section
+    // create an <svg> for each section as the first child
     var svg = sections.append("svg")
       .attr("class", "pack")
       .attr("width", size)
@@ -112,16 +126,10 @@
     infoH1.append("span")
       .attr("class", "context")
       .html('<span class="year">(year)</span> <span class="shore">(shore)</span> revenues of');
-
     info.append("h2")
       .html('<b>$<span class="revenue"></span> Billion</b>, which helped fund');
-
     info.append("div")
       .attr("class", "icons");
-    /*
-    info.append("p")
-      .attr("class", "content");
-    */
 
     // and a root <g.nodes> for all of its contents
     var g = svg.append("g")
@@ -151,22 +159,8 @@
         .attr("transform", function(d) {
           return "translate(" + [d.x, d.y] + ")";
         })
-        .on("mouseover", function(d) {
-          clearTimeout(infoTimeout);
-          // bind the data for the bubble and the fund metadata to the
-          // corresponding info bubble div, then call updateMetadata() on it
-          d3.select("#bubble-info-" + d.year)
-            .style("display", null)
-            .datum(d)
-            .call(updateMetadata);
-        })
-        .on("mouseout", function(d) {
-          infoTimeout = setTimeout(function() {
-            // hide the bubble info panel on mouseout
-            d3.select("#bubble-info-" + d.year)
-              .style("display", "none");
-          }, 200);
-        })
+        .on("mouseover", highlightFund)
+        .on("mouseout", unhighlightFund)
         .on("click", selectFund);
 
     node.sort(function(a, b) {
@@ -320,8 +314,6 @@
       .text(function(d) { return d.shore; });
     selection.select(".revenue")
       .text(function(d) { return format(d.value / billion); });
-    selection.select(".content")
-      .html(function(d) { return d.meta.content; });
 
     var icons = selection.select(".icons")
       .selectAll(".icon")
@@ -339,11 +331,21 @@
 
     icons.enter()
       .append("svg")
-        .attr("role", "img")
-        .attr("class", "icon")
-        .append("use");
+        .call(createIcon);
 
     icons
+      .call(updateIcon);
+  }
+
+  function createIcon(selection) {
+    selection
+      .attr("role", "img")
+      .attr("class", "icon")
+      .append("use");
+  }
+
+  function updateIcon(selection) {
+    selection
       .attr("class", function(d) {
         return ["icon", d.id].join(" ");
       })
@@ -354,6 +356,26 @@
         .attr("xlink:href", function(d) {
           return window.site.baseurl + "/static/fonts/EITI/icons.svg#eiti-" + d.id;
         });
+  }
+
+  function highlightFund(fund) {
+    clearTimeout(infoTimeout);
+    defaultDisplay.style("display", "none");
+    // bind the data for the bubble and the fund metadata to the
+    // corresponding info bubble div, then call updateMetadata() on it
+    d3.select("#bubble-info-" + fund.year)
+      .style("display", null)
+      .datum(fund)
+      .call(updateMetadata);
+  }
+
+  function unhighlightFund(fund) {
+    infoTimeout = setTimeout(function() {
+      defaultDisplay.style("display", null);
+      // hide the bubble info panel on mouseout
+      d3.select("#bubble-info-" + fund.year)
+        .style("display", "none");
+    }, 200);
   }
 
   function selectFund(fund) {

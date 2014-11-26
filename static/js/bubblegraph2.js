@@ -7,6 +7,8 @@
         2012,
         2013
       ],
+      // space around the circles (for stroke, etc.)
+      margin = 4,
       // create a tab for each disbursement year
       tabs = d3.select(".bubble_tabs")
         .selectAll("a")
@@ -32,7 +34,7 @@
           return d3.descending(a.shore, b.shore)
               || d3.descending(a.value, b.value);
         })
-        .size([size, size])
+        .size([size - margin * 2, size - margin * 2])
         .padding(10);
 
   // visual data tweaks, by element id
@@ -121,13 +123,16 @@
     }
   };
 
+  // timeout for hiding the bubble info
+  var infoTimeout;
+
   queue([
     "static/data/fund-metadata.json",
     "static/data/disbursement-summary-data.json"
   ], function(error, fundMeta, data) {
 
-    console.log("fund metadata:", fundMeta);
-    console.log("disbursements:", data);
+    // console.log("fund metadata:", fundMeta);
+    // console.log("disbursements:", data);
 
     // create an <svg> for each section
     var svg = sections.append("svg")
@@ -190,6 +195,8 @@
             console.error("no fund metadata:", d.name, d.shore, "in:", fundMeta);
           }
 
+          clearTimeout(infoTimeout);
+
           // bind the data for the bubble and the fund metadata to the
           // corresponding info bubble div, then call updateMetadata() on it
           d3.select("#bubble-info-" + d.year)
@@ -203,6 +210,13 @@
               content:  meta.content
             })
             .call(updateMetadata);
+        })
+        .on("mouseout", function(d) {
+          infoTimeout = setTimeout(function() {
+            // hide the bubble info panel on mouseout
+            d3.select("#bubble-info-" + d.year)
+              .style("display", "none");
+          }, 200);
         });
 
     node.sort(function(a, b) {
@@ -226,11 +240,11 @@
       })
       .select("svg")
         .attr("height", function(d) {
-          return Math.ceil(d.rect.height);
+          return Math.ceil(d.rect.height) + margin * 2;
         })
         .select("g.nodes")
           .attr("transform", function(d) {
-            return "translate(" + [0, -d.rect.y] + ")";
+            return "translate(" + [margin, margin - Math.round(d.rect.y)] + ")";
           });
 
     // create a <g> element to contain the text

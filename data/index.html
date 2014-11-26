@@ -23,12 +23,13 @@ permalink: /data/
   </section>
 
   <section class="dashboard-canvas">
+    
+    <h1>Total revenues by company</h1>
 
     <!-- company table -->
-    <div class="dashboard-search">
-      <h4>Filter by Company:</h4>
+    <div class="dashboard-table">
       <input type="text" id="table-search"></input>
-      <div><a href="javascript:toggle_divs('#toggleDivLink','#dashboard-totals-table','#dashboard-table','Show Full Table','Show Table by Company')" id="toggleDivLink">Show Full Table</a></div>
+      <div><a href="javascript:toggle_divs('#toggleDivLink','#dashboard-totals-table','#dashboard-table','Show Full Table','Show Table by Company')" id="toggleDivLink">more</a></div>
       <table class='table table-hover dc-data-table' id='dashboard-totals-table'>
 
         <thead>
@@ -85,8 +86,12 @@ permalink: /data/
     </div>
 
     <!-- chart -->
-    <div class="dashboard-chart rev-by-commodity" id='dashboard-bar-rev-by-commodity'>
-      <h4>Total Revenues by Commodity</h4>
+    <div class="dashboard-chart" id='dashboard-bar-rev-by-commodity'></div>
+
+    <!-- download -->
+    <div class="dashboard-download">
+      <a class="dashboard-button" href="{{site:url}}/static/data/{{site:unilatteral_data}}">Download Full Dataset (CSV) </a>
+      <a class="dashboard-button" href="javascript:download_data(companyDimension)">Download Filtered Data (CSV) </a>
     </div>
 
   </section>
@@ -95,7 +100,7 @@ permalink: /data/
 
 
 <!-- START Main Data Dashboard -->
-    <div class="dashboard-face">
+    <!-- <div class="dashboard-face">
       <div id="company-name"><h1></h1></div>
       <div class="rev-by-commodity" id='dashboard-bar-rev-by-commodity'>
         <h4>Total Revenues by Commodity</h4>
@@ -108,10 +113,9 @@ permalink: /data/
         <h1 id="number-of-companies-h1">Number of Companies: <span id="company_count">$1,000,000</span></h1>
       </div>
 
-    </div>
+    </div> -->
 
-  </div>
-</div>
+
 <!-- END Main Data Dashboard -->
 
 </main>

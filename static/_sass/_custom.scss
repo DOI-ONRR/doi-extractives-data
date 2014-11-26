@@ -1709,8 +1709,22 @@ $max-width: 100%; //this is setting the width of outer-container.
   @include span-columns(12);
 }
 
-.dashboard-search {
+.dashboard-canvas {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white;
+  h1 {
+    font-family: Lato;
+    font-weight: 100;
+    color: white;
+    @include rem-fallback(font-size, 1.8);
+  }
+}
+
+.dashboard-table {
   @include span-columns(4 of 12);
+  height: 400px;
+  overflow: scroll;
 }
 
 .dashboard-revenue {
@@ -1721,80 +1735,13 @@ $max-width: 100%; //this is setting the width of outer-container.
   @include span-columns(4 of 12);
 }
 
+.dashboard-download {
+  @include span-columns(12 of 12);
+}
+
 
 //old stuff below here
 
-
-
-.label-switch {
-  $switch-width: 52px;
-  $switch-padding: 2px;
-  $switch-height: 32px;
-  $switch-radius: $switch-height;
-  $knob-height: $switch-height - ($switch-padding * 2);
-  $knob-width: $knob-height;
-  $knob-radius: $switch-height - ($switch-padding * 2);
-  align-self: center;
-  border-radius: $switch-radius;
-  cursor: pointer;
-  display: inline;
-  height: $switch-height;
-  position: relative;
-  vertical-align: middle;
-  width: $switch-width;
-  @include box-sizing(border-box);
-  input[type="checkbox"] {
-    display: none;
-    + .checkbox {
-      background: lighten($blue, 20%);
-      border: none;
-      border-radius: $switch-radius;
-      cursor: pointer;
-      height: $switch-height;
-      margin: 0 0 15px 0;
-      padding: 0;
-      position: relative;
-      width: $switch-width;
-      z-index: 0;
-      @include box-sizing(border-box);
-      @include transition(all 0.3s ease);
-      &:before {
-        background: lighten($blue, 20%);
-        border-radius: $switch-radius;
-        content: ' ';
-        height: $knob-radius;
-        width: $switch-width - ($switch-padding * 2);
-        z-index: 1;
-        @include box-sizing(border-box);
-        @include position(absolute, 2px 0 0 2px);
-        @include transition(all 0.3s ease);
-        @include transform(scale(1));
-      }
-      &:after {
-        background: lighten($blue, 10%);
-        border-radius: $knob-radius;
-        content: ' ';
-        height: $knob-height;
-        width: $knob-width;
-        z-index: 2;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
-        @include position(absolute, 2px 0 0 2px);
-        @include transition(all 0.3s ease);
-      }
-    }
-    &:checked {
-      + .checkbox {
-        background: white;
-        &:before {
-          @include transform(scale(0));
-        }
-        &:after {
-          left: $switch-width - $knob-width - ($switch-padding);
-        }
-      }
-    }
-  }
-}
 .side-nav {
   @include span-columns(3);
   height: 100%;
@@ -1831,6 +1778,7 @@ $max-width: 100%; //this is setting the width of outer-container.
     @include omega();
   }
 }
+
 .dashboard-face {
   @include span-columns(9);
   padding-top: 30px;

@@ -21,13 +21,13 @@
   },
   "Historic Preservation Fund": {
     "offshore": {
-      "content": "The <a href=\"http://www.nps.gov/history/hpg/\">Historic Preservation Fund</a> helps preserve U.S. historical and archaeological sites and cultural heritage through grants to State and Tribal Historic Preservation Offices. Some examples of activities include a <a href=\"http://www.michiganmodern.org/\">survey of modernist architecture</a> in Michigan, <a href=\"http://ncptt.nps.gov/blog/tribal-heritage-grants/\">restoration of the Peoria Schoolhouse</a> by the Peoria Tribe of Indians of Oklahoma and <a href=\"http://ncptt.nps.gov/blog/tribal-heritage-grants/\">documenting Yup’ik Songs & Dances</a> by the Calista Elders Council of Alaska.",
+      "content": "The <a href=\"http://www.nps.gov/stlpg\">Historic Preservation Fund</a> helps preserve U.S. historical and archaeological sites and cultural heritage through grants to State and Tribal Historic Preservation Offices. Some examples of activities include a <a href=\"http://www.michiganmodern.org/\">survey of modernist architecture</a> in Michigan, <a href=\"http://ncptt.nps.gov/blog/tribal-heritage-grants/\">restoration of the Peoria Schoolhouse</a> by the Peoria Tribe of Indians of Oklahoma and <a href=\"http://ncptt.nps.gov/blog/tribal-heritage-grants/\">documenting Yup’ik Songs & Dances</a> by the Calista Elders Council of Alaska.",
       "icons": ["buildings", "microphone"]
     }
   },
   "Land & Water Conservation Fund": {
     "offshore": {
-      "content": "The <a href=\"http://www.nps.gov/lwcf/\">Land & Water Conservation Fund</a> provides matching grants to states and local governments to buy and develop public outdoor recreation areas. It has supported projects in all 50 states and U.S. territories, creating community parks and trails and protecting clean water sources. A few places that were funded by the LWCF include <a href=\"http://www.emnrd.state.nm.us/SPD/eaglenestlakestatepark.html\">Eagle Nest Lake State Park, New Mexico</a>, <a href=\"http://www.mitchellparkdc.org/history.html\">Mitchell Park, District of Columbia</a>, and <a href=\"http://www.ofallon.org/parks/pages/family-sports-park\">Family Sports Park, Illinois</a>.",
+      "content": "The <a href=\"http://www.doi.gov/lwcf/\">Land & Water Conservation Fund</a> provides matching grants to states and local governments to buy and develop public outdoor recreation areas. It has supported projects in all 50 states and U.S. territories, creating community parks and trails and protecting clean water sources. A few places that were funded by the LWCF include <a href=\"http://www.emnrd.state.nm.us/SPD/eaglenestlakestatepark.html\">Eagle Nest Lake State Park, New Mexico</a>, <a href=\"http://www.mitchellparkdc.org/history.html\">Mitchell Park, District of Columbia</a>, and <a href=\"http://www.ofallon.org/parks/pages/family-sports-park\">Family Sports Park, Illinois</a>.",
       "icons": ["mountains", "swings"]
     }
   },

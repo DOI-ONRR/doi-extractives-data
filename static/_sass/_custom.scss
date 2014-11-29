@@ -134,7 +134,7 @@ ul.menu a.active li {
   }
   label {
     position: absolute;
-    left:-999px
+    left: -999px;
   }
   input {
     background-color: #f8f8f8;
@@ -1679,6 +1679,244 @@ article {
       font-size: rem(20);
       font-weight: 300;
     }
+  }
+}
+
+// Data v2
+//===============================================
+$max-width: 100%; //this is setting the width of outer-container.
+//find this variable elsewhere and change it
+//what about the rest of the site that is not full-width?
+.portal {
+  @include outer-container;
+}
+
+.portal-bg {
+  background: $light-gray;
+
+}
+
+.portal-main {
+  @include span-columns(11);
+}  
+
+.portal-title {
+background: $light-gray; 
+  @include span-columns(3 of 11);
+  h1 {
+    display: inline-block;
+    color: white;
+    @include rem-fallback(font-size, 1.3);
+    line-height: 1.2;
+    @include respond-to(small-up) { 
+      line-height: 1.6;
+    }
+    font-weight: 500;
+    background-color: $red;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+    &:first-of-type {
+      margin-top: 17px;
+    }
+    + h1 {
+      margin-bottom: 10px;
+    }
+  }
+  .small {
+    @include small-type(1.6);
+  }
+}
+
+.portal-further-title {
+  @include span-columns(8 of 11);
+  @include omega();
+  padding-top: 6px;
+  margin-bottom: 20px;
+  p {
+    font-weight: 700;
+    line-height: 1;
+    width: 450px;
+  }
+}
+
+.portal-chart {
+  @include span-columns(6 of 11);
+  padding-left: 10px;
+  h1 {
+    @extend h4;
+  }
+}
+
+.portal-companies {
+  h1 {
+    @extend h4;
+  }
+  @include span-columns(5 of 11);
+  @include omega();
+  label {
+    position: absolute;
+    left:-999px
+  }
+  input {
+    border-radius: 0;
+  }
+  input[type=text] {
+    color: $dark-gray;
+    width: 400px;
+    border: 1px solid black;
+    &:hover {
+      border-color: $medium-gray;
+    }
+    &:focus {
+      border-color: $red;
+    }
+  }
+}
+
+.portal-table-filter {
+  @include span-columns(4 of 5);
+}
+
+.portal-table-toggle {
+  @include span-columns(1 of 5);
+  @include omega();
+  background: $light-gray;
+  border: 1px $dark-gray solid;
+  &:hover,
+  &:focus {
+    background: $dark-medium-gray;
+  }
+  a {
+    color: $dark-gray;
+    text-decoration: none;
+    display: inline-block;
+    @include rem-fallback(font-size, 0.8);
+    line-height: 1;
+    padding-left: 4px;
+    padding-top: 4px;
+    &:hover,
+    &:focus {
+      color: $dark-gray;
+    }
+  }
+}
+
+.portal-table {
+  @include span-columns(5 of 5);
+  @include omega();
+  height: 400px;
+  overflow: scroll;
+}
+
+.portal-controls {
+  @include span-columns(1);
+  @include omega();
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: center;
+  //background: $dark-medium-gray;
+  h1 {
+    @extend h4;
+    @include rem-fallback(font-size, 0.8);
+    padding-top: 10px;
+    font-weight: 500;
+  }
+  > div:first-of-type > a,
+  > div:nth-of-type(2) > a {
+    position: relative;
+    display: inline-block;
+    width: 75px;
+    height: 60px;
+    background-color: $dark-medium-gray;
+    border: 1px solid black;
+    margin-bottom: 5px;
+    color: black;
+    transition: none;
+    text-decoration: none;
+    h1 {
+      padding-top: 0;
+      margin-top: 0;
+      @include rem-fallback(font-size, 0.8);
+      font-weight: 300;
+      font-family: $base-font-family;
+    }
+    .small { //for long commodity names
+      @include rem-fallback(font-size, 0.72);
+    }
+    svg {
+      width: 35px;
+      height: 35px;
+      padding: 5px 5px 0 5px;
+      display: inline-block;
+      fill: black;
+    }
+    &:hover,
+    &:focus {
+      background-color: $darker-gray;
+      cursor: pointer;
+      h1 {
+        color: white;
+      }
+      svg {
+        fill: white;
+      }
+    }
+    &[aria-pressed="true"] {
+      background-color: black;
+      cursor: pointer;
+      outline: none;
+      h1 {
+        color: white;
+      }
+      svg {
+        fill: white;
+      }
+      &:hover,
+      &:focus {
+        background-color: $darker-gray;
+        border: 1px solid $light-gray;
+      }
+    }
+  }
+  > div:nth-of-type(2) > a {
+    padding-top: 20px;
+    &:first-of-type {
+      background-color: $bright-blue;
+    }
+    &:nth-of-type(2) {
+      background-color: darken($bright-green, 17%);
+    }
+    &:nth-of-type(3) {
+      background-color: $bright-orange;
+    }
+    &:nth-of-type(4) {
+      background-color: $bright-purple;
+    }
+    h1 {
+      @include rem-fallback(font-size, 1);
+      color: white;
+      text-shadow: 1px 1px $dark-gray;
+    }
+    &:hover,
+    &:focus {
+      background-color: $darker-gray;
+      border: 1px solid $light-gray;
+    }
+  }
+}
+
+
+
+
+
+
+.dashboard-button {
+  @include button(shade($blue, 10%));
+  margin-bottom: 15px;
+  &:hover, &:focus {
+    color: $medium-gray;
   }
 }
 

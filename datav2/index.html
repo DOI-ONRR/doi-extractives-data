@@ -1,0 +1,164 @@
+---
+layout: data
+title: Data
+description: This is a sample beta site for Federal natural resource revenues.
+---
+
+<main role="main" itemscope itemprop="mainContentOfSite">
+
+<div class="portal">
+
+  <!-- {% include nav.html %} -->
+
+  <div class="portal-main">
+
+    <div class="portal-title">
+      <a href="{{ site.baseurl }}">
+        <h1>Natural Resource Revenue</h1>
+        <h1><span class="small">from</span> U.S. Federal Lands</h1>
+      </a>
+    </div>
+
+    <div class="portal-further-title">
+      <h1>Filter &amp; Download Data</h1>
+      <p>Natural Resource Revenues from U.S. Federal Lands by Company, Commodity, and Revenue Type. <br/>
+      Calendar year 2012 data.</p>
+    </div>
+
+    <div class="portal-chart" id='dashboard-bar-rev-by-commodity'>
+      <h1>Total Revenues by Commodity</h1>
+    </div>
+
+    <div class="portal-companies">
+
+      <h1>Total Revenues by Company</h1>
+
+      <div class="portal-table-filter">
+        <label for="table-search">Filter by company...</label>
+        <input type="text" id="table-search" placeholder="Filter by company..."></input>
+      </div>
+
+      <div class="portal-table-toggle">
+        <a href="javascript:toggle_divs('#toggleDivLink','#dashboard-totals-table','#dashboard-table','Show Extended Table','Hide Extended Table')" id="toggleDivLink">Show Extended Table</a>
+      </div>
+
+      <div class="portal-table">
+        <table class="table table-hover dc-data-table" id="dashboard-totals-table">
+          <thead>
+            <tr class="header">
+              <th>
+                <a href="javascript:sort_dataTable(dashTotalsTable,'Company Name');">
+                  Company name &#8597;
+                </a>
+              </th>
+              <th>
+                <a href="javascript:sort_dataTable(dashTotalsTable,'Total Revenue');">
+                  Total Revenue &#8597;
+                </a>
+              </th>
+            </tr>
+          </thead>
+        </table>
+
+        <table class='table table-hover dc-data-table' id='dashboard-table' style="display:none">
+          <thead>
+            <tr class="header">
+              <th>
+                <a href="javascript:sort_dataTable(dashTable,'Company Name');">
+                  Company name &#8597;
+                </a>
+              </th>
+              <th>
+                <a href="javascript:sort_dataTable(dashTable,'Revenue Type');">
+                  Revenue Type &#8597;
+                </a>
+              </th>
+              <th>
+                <a href="javascript:sort_dataTable(dashTable,'Commodity');">
+                  Commodity &#8597;
+                </a>
+              </th>
+              <th>
+                <a href="javascript:sort_dataTable(dashTable,'Revenue');">
+                  Revenue &#8597;
+                </a>
+              </th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+
+    </div>
+  
+  </div>
+
+  <div class="portal-controls" id="OptionsList">
+
+    <div>
+      <h1>Commodity Groups</h1>
+
+      <a href='javascript:' class='oil' data-value='oil' tabindex='0' role="button" aria-pressed="true">
+        <svg class="eiti-icon-oil" role="img" aria-label="Oil"><use xlink:href="{{ site.baseurl }}/static/fonts/EITI/icons.svg#eiti-icon-oil"></use></svg>
+        <svg class="eiti-icon-gas" role="img" aria-label="Gas"><use xlink:href="{{ site.baseurl }}/static/fonts/EITI/icons.svg#eiti-icon-gas"></use></svg>
+        <h1>Oil &amp; Gas</h1>
+      </a>
+
+      <a href='javascript:' class='coal' tabindex='0' role="button" aria-pressed="true">
+        <svg class="eiti-icon-coal" role="img" aria-label="Coal"><use xlink:href="{{ site.baseurl }}/static/fonts/EITI/icons.svg#eiti-icon-coal"></use></svg>
+        <h1>Coal</h1>
+      </a>
+
+      <a href='javascript:' class='wind' tabindex='0' role="button" aria-pressed="true">
+        <svg class="eiti-icon-wind" role="img" aria-label="Wind"><use xlink:href="{{ site.baseurl }}/static/fonts/EITI/icons.svg#eiti-icon-wind"></use></svg>
+        <svg class="eiti-icon-geo" role="img" aria-label="Geothermal"><use xlink:href="{{ site.baseurl }}/static/fonts/EITI/icons.svg#eiti-icon-geo"></use></svg>
+        <h1>Renewables</h1>
+      </a>
+
+      <a href='javascript:' class='other' tabindex='0' role="button" aria-pressed="true">
+        <svg class="eiti-icon-other" role="img" aria-label="Other Commodities"><use xlink:href="{{ site.baseurl }}/static/fonts/EITI/icons.svg#eiti-icon-other"></use></svg>
+        <h1>Other</h1>
+      </a>
+    </div>
+
+    <div class="portal-revenue-types">
+      <h1>Revenue Types</h1>
+      <a href='#' class="rent">
+        <h1>Rent</h1>
+      </a>
+      <a href='#' class="bonus">
+        <h1>Bonus</h1>
+      </a>
+      <a href='#' class="royalty">
+        <h1>Royalties</h1>
+      </a>
+      <a href='#' class="other">
+        <h1>Other</h1>
+      </a>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+
+</main>
+<script src='{{ site.baseurl }}/static/js/dashboard.js'></script>
+<script type="text/javascript">
+ $("#table-search").on('input',function(){
+   text_filter(companyDimension,this.value);
+ });
+ $("input.commodity").change(function(){
+    update_graph_options($("#OptionsList input"), typeDimensionHelper);
+ });
+
+ $('input.groupCheckbox').change(function(){
+    var bool = $(this).is(":checked");
+    $('input.'+$(this).attr("value")).each(function(){
+      $(this).prop("checked",bool);
+    });
+    update_graph_options($("#OptionsList input"), typeDimensionHelper);
+ });
+
+</script>

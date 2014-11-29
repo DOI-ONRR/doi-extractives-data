@@ -127,7 +127,7 @@
       .attr("class", "context")
       .html('<span class="year">(year)</span> <span class="shore">(shore)</span> revenues of');
     info.append("h2")
-      .html('<b>$<span class="revenue"></span> Billion</b>, which helped fund');
+      .html('<b>$<span class="revenue"></span> billion</b>, which helped fund');
     info.append("div")
       .attr("class", "icons");
 

@@ -758,11 +758,16 @@ $section-margin-top: 40px;
 
 .bubbles-viz {
   color: white;
+  padding-top: 60px;
 
   @include span-columns(8);
 
-  .instructions {
-    margin: 20px 0;
+  .bubbles-instructions {
+    margin-top: 0;
+    line-height: 1.2;
+    font-style: italic;
+    color: $mid-gray;
+    font-weight: 300;
   }
 
   text {
@@ -800,7 +805,7 @@ $section-margin-top: 40px;
 // this is the info area for bubbles in the disbursement graph
 .bubble-info {
   color: white;
-  margin-top: 1em;
+  margin-top: 40px;
 
   // make all links white
   a {
@@ -810,7 +815,8 @@ $section-margin-top: 40px;
   h1 {
     margin: 0;
     color: inherit;
-    @include rem-fallback(font-size, 1.25);
+    @include rem-fallback(font-size, 1.1);
+    font-weight: 300;
 
     .context {
       margin-left: .5em;
@@ -824,19 +830,21 @@ $section-margin-top: 40px;
     margin: 0;
     padding: 0;
     color: inherit;
-    @include rem-fallback(font-size, 2);
+    @include rem-fallback(font-size, 1.1);
+    font-family: Lato;
+    font-weight: 200;
   }
 
   .icons .icon {
-    width: 2em;
-    height: 2em;
+    width: 40px;
+    height: 40px;
     fill: white;
   }
 
   &.default-display {
-    color: $medium-gray;
+    color: $mid-gray;
     .icons .icon {
-      fill: $medium-gray;
+      fill: $mid-gray;
     }
   }
 }

@@ -1,5 +1,6 @@
-var dash_bar_rev_by_commodity = dc.barChart("#dashboard-bar-rev-by-commodity");
-var dash_pie_rev_by_commodity;
+var dash_bar_rev_by_commodity_group = dc.barChart("#dashboard-bar-rev-by-commodity-group");
+var dash_bar_rev_by_revenue_type = dc.barChart("#dashboard-bar-rev-by-revenue-type");
+//var dash_pie_rev_by_commodity;
 //var dash_bar_rev_by_other = dc.barChart("#dashboard-bar-rev-by-other");
 // var dash_bar_by_rev_source = dc.barChart("#dashboard-bar-rev-source")
 // var dash_bar_avg_by_rev_source = dc.barChart('#dashboard-bar-avg-by-rev-source');
@@ -205,13 +206,31 @@ d3.csv("../static/data/Updated_Consolidated_Revenue_Data_with_Fake_Names.csv",fu
     var revDimension_allGroup = revDimension.group().reduce(
             //add
             function(p,v){
+                var rs = v["Revenue Type"];
+                var r = parseFloat(v["Revenue"]);
+
                 p.name = v["Company Name"];
                 p.revenue = v["Revenue"];
-                p.type = v["Commodity"]
+                p.type = v["Commodity"];
                 p.revenueSource = v["Revenue Type"];
                 p.count++;
-                p.sum+= v["Revenue"];
+                p.sum= parseFloat((p.sum + v["Revenue"]).toFixed(2));
                 p.average = p.sum/p.count;
+                
+                if (rs == "Bonus")
+                    p.bonus_rev     = parseFloat((p.bonus_rev + r).toFixed(2));
+                if (rs == "Rents")
+                    p.rent_rev      = parseFloat((p.rent_rev + r).toFixed(2));
+                if (rs == "Royalties")
+                    p.royalties_rev = parseFloat((p.royalties_rev + r).toFixed(2));
+                if (rs == "Other Revenues")
+                    p.other_rev     = parseFloat((p.other_rev + r).toFixed(2));
+                if (p.type == "Oil")
+                    p.oil_rev = parseFloat((p.oil_rev + r).toFixed(2));
+                if (p.type == "Gas")
+                    p.gas_rev = parseFloat((p.gas_rev + r).toFixed(2));
+                if (p.type == "Oil & Gas")
+                    p.oilandgas_rev = parseFloat((p.oilandgas_rev + r).toFixed(2));
                 return p;
             },
             //remove
@@ -221,13 +240,34 @@ d3.csv("../static/data/Updated_Consolidated_Revenue_Data_with_Fake_Names.csv",fu
                 p.type = v["Commodity"]
                 p.revenueSource = v["Revenue Type"];
                 p.count--;
-                p.sum-= v["Revenue"];
+                p.sum= parseFloat((p.sum - v["Revenue"]).toFixed(2));
                 p.average = p.sum/p.count;
+                var rs = v["Revenue Type"];
+                var r = parseFloat(v["Revenue"]);
+                if (rs == "Bonus")
+                    p.bonus_rev     = parseFloat((p.bonus_rev - r).toFixed(2));
+                if (rs == "Rents")
+                    p.rent_rev      = parseFloat((p.rent_rev - r).toFixed(2));
+                if (rs == "Royalties")
+                    p.royalties_rev = parseFloat((p.royalties_rev - r).toFixed(2));
+                if (rs == "Other Revenues")
+                    p.other_rev     = parseFloat((p.other_rev - r).toFixed(2));
+                if (p.type == "Oil")
+                    p.oil_rev = parseFloat((p.oil_rev - r).toFixed(2));
+                if (p.type == "Gas")
+                    p.gas_rev = parseFloat((p.gas_rev - r).toFixed(2));
+                if (p.type == "Oil & Gas")
+                    p.oilandgas_rev = parseFloat((p.oilandgas_rev - r).toFixed(2));
+
+
                 return p;
             },
             //init
             function(p,v){
-                return {name : "", revenue : 0, type : "", revenueSource : "", count: 0, sum: 0, average: 0};
+                return {name : "", revenue : 0.00, type : "", revenueSource : "", 
+                    count: 0, sum: 0.00, average: 0, bonus_rev : 0.00, rent_rev : 0.00, 
+                    royalties_rev : 0.00, other_rev : 0.00, 
+                    oil_rev: 0.00, gas_rev: 0.00, oilandgas_rev: 0.00};
             }
         );
 
@@ -346,7 +386,7 @@ d3.csv("../static/data/Updated_Consolidated_Revenue_Data_with_Fake_Names.csv",fu
     /****************************
     Graph:Bar Graph, by commodity
     *****************************/
-    dash_bar_rev_by_commodity
+    dash_bar_rev_by_commodity_group
         .width(600).height(400)
         .dimension(typeGroupDimension)
         .group(typeGroupDimension_allGroup, "Rent")
@@ -372,12 +412,32 @@ d3.csv("../static/data/Updated_Consolidated_Revenue_Data_with_Fake_Names.csv",fu
         .y(d3.scale.log().nice().domain([1, 12500000000]))
         .margins({top: 10, right: 10, bottom: 75, left:100})
         .yAxis().tickFormat(function(v){return "$"+ parseFloat(v).formatMoney(0,'.',',')});
-    dash_bar_rev_by_commodity.on("filtered", function (chart) {
+    dash_bar_rev_by_commodity_group.on("filtered", function (chart) {
                 dc.events.trigger(function () {
                 });});
     /*****************************
     End: dash_bar_rev_by_commodity
     *****************************/
+    dash_bar_rev_by_revenue_type
+        .width(600).height(400)
+        .dimension(revDimension)
+        .group(revDimension_allGroup, 'junk')
+        .valueAccessor(function(d) {
+            return d.value.rent_rev;
+        })
+        .legend(dc.legend().x(470).y(100))
+        .centerBar(false)
+        .elasticY(true)
+        .brushOn(false)
+        .turnOnControls(true)
+        .xUnits(dc.units.ordinal)
+        .x(d3.scale.ordinal())
+        .y(d3.scale.log().nice().domain([1, 12500000000]))
+        .margins({top: 10, right: 10, bottom: 75, left:100})
+        .yAxis().tickFormat(function(v){return "$"+ parseFloat(v).formatMoney(0,'.',',')});
+    dash_bar_rev_by_revenue_type.on("filtered", function (chart) {
+                dc.events.trigger(function () {
+                });});
 
     /*****************************
     Graph: Pie Graph, by commodity
@@ -539,15 +599,15 @@ d3.csv("../static/data/Updated_Consolidated_Revenue_Data_with_Fake_Names.csv",fu
     Table related Facts (Averages, Totals, etc)
     These items are tied to the dashTable so they will be updated when it is updated
     *********************************************************************************/
-    dash_bar_rev_by_commodity
+    dash_bar_rev_by_commodity_group
         .renderlet(function(d){
             d3.select("#total_revenue").html('$' +parseFloat(all.value().sum.toFixed(0)).formatMoney(0,'.',','));
         });
-    dash_bar_rev_by_commodity
+    dash_bar_rev_by_commodity_group
         .renderlet(function(d){
             d3.select("#average_revenue").html('$' +parseFloat(all.value().average.toFixed(0)).formatMoney(0,'.',','));
         });
-    dash_bar_rev_by_commodity
+    dash_bar_rev_by_commodity_group
         .renderlet(function(d){
             d3.select("#company_count").html(all.value().company_count);
         })
@@ -580,9 +640,26 @@ d3.csv("../static/data/Updated_Consolidated_Revenue_Data_with_Fake_Names.csv",fu
 
    dc.renderAll();
    graphCustomizations();
-
-
-
+   
+   /***************************
+   Setup Graph switching
+   ***************************/
+   (function(){
+        $('#dashboard-bar-rev-by-commodity-group svg g g.x g.tick text').each(function(){
+            $(this).on('click',function(){
+                $('#dashboard-bar-rev-by-commodity-group').toggle();
+                $('#dashboard-bar-rev-by-revenue-type').toggle();
+            });
+        });
+       var $newDiv = $('<div>');
+       var $link = $('<a href="javascript:void(0);">back</a>');
+       $link.click(function(){
+            $('#dashboard-bar-rev-by-commodity-group').toggle();
+            $('#dashboard-bar-rev-by-revenue-type').toggle();
+       });
+       $newDiv.append($link);
+       $('#dashboard-bar-rev-by-revenue-type').append($newDiv);
+   })();
 
 });
 /****************************
@@ -652,6 +729,6 @@ $(document).ready(function(){
     $('#OptionsList input').on('change',function(){
         var label = $("label[for='"+$(this).attr('id')+"']");
         update_graph_options($('#OptionsList input'), revDimension);
-    })
+    });
 })
 

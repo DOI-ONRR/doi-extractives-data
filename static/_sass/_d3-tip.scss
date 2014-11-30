@@ -5,15 +5,12 @@
 /* testing out d3 tooltip */
 .d3-tip {
     line-height: 1;
-    font-weight: bold;
     padding: 12px;
-    background: rgba(0, 0, 0, 0.8);
-    color: #fff;
-    border-radius: 8px;
+    background: black;
+    color: #eaedf1;
     position: absolute;
     left:-9999;
     top:0;
-
 }
 
 /* Creates a small triangle extender for the tooltip */
@@ -23,7 +20,7 @@
     font-size: 10px;
     width: 100%;
     line-height: 1;
-    color: rgba(0, 0, 0, 0.8);
+    color: black;
     content: "\25BC";
     position: absolute;
     text-align: center;
@@ -55,11 +52,6 @@ h3 {
     font-size: 24px;
     font-weight: 300;
 }
-
-// body {
-//     min-height: 2000px;
-//     padding-top: 120px;
-// }
 
 .myName {
     font-family: 'Helvetica Neue';

@@ -219,6 +219,12 @@ div.dc-chart {
     user-select: none;
     pointer-events: none;
 }
+#dashboard-bar-rev-by-commodity-group g.x text {
+    pointer-events: auto;
+    text-decoration: underline;
+    font-weight: bold;
+    cursor: pointer;
+}
 
 .dc-chart path.highlight {
     stroke-width: 3;

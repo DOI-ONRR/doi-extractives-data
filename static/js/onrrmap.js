@@ -334,8 +334,8 @@ $(document).ready(function(){
             {
               returnString +="<div>Producing Leases: "+layer.feature.properties.leases.active+"</div>";
               returnString +="<div>Non-producing Leases: "+ layer.feature.properties.leases.total+"</div>";
-              returnString +="<aside><p><strong>Producing leases</strong> are leased federal lands that are producing one or more commodities.</p>"+
-                              "<p><strong>Non-producing leases</strong> are leases that have been sold, but are not producing any commodities.</p></aside>";
+              returnString +="<aside><p><strong>Producing leases</strong> are leased Federal lands that are producing one or more commodities.</p>"+
+                              "<p><strong>Non-producing leases</strong> are Federal lands that have been leased for exploration and development, but are not producing any commodities.</p></aside>";
             }
           }
           return returnString;

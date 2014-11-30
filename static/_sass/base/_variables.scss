@@ -49,6 +49,7 @@ $mid-gray: #5a5a5a;
 $deep-gray: #313131;
 $useiti-green: #9fa731;
 $useiti-blue: #3397c2;
+$useiti-purple: #865daa;
 
 
 $deep-purple: #452941;
@@ -75,7 +76,7 @@ $base-font-color: black;
 $base-accent-color: $blue;
 
 // Link Colors
-$base-link-color: darken($base-accent-color, 12%);
+$base-link-color: $base-font-color;
 $hover-link-color: $red;
 $base-button-color: $base-link-color;
 $hover-button-color: $hover-link-color;

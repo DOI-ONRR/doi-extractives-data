@@ -687,15 +687,15 @@ var barTip = d3.tip()
         {
             var s = "";
             if (d.data.value.bonus_rev != 0)
-                s += "<br /><div style='float:left'><strong>Bonus Revenue:</strong></div><div style='float:right'><span style='color:red'>$" + parseFloat(d.data.value.bonus_rev).formatMoney(2, '.', ',') + "</span></div>";
+                s += "<br /><div style='float:left'>bonus revenue:</div><div style='float:right'><span style='color:#d54740'>$" + parseFloat(d.data.value.bonus_rev).formatMoney(2, '.', ',') + "</span></div>";
             if (d.data.value.rent_rev != 0)
-                s += "<br /><div style='float:left'><strong>Rent Revenue:</strong></div><div style='float:right'><span style='color:red'>$" + parseFloat(d.data.value.rent_rev).formatMoney(2, '.', ',') + "</span></div>";
+                s += "<br /><div style='float:left'>rent revenue:</div><div style='float:right'><span style='color:#d54740'>$" + parseFloat(d.data.value.rent_rev).formatMoney(2, '.', ',') + "</span></div>";
             if (d.data.value.royalties_rev != 0)
-                s += "<br /><div style='float:left'><strong>Royalties Revenue:</strong></div><div style='float:right'><span style='color:red'>$" + parseFloat(d.data.value.royalties_rev).formatMoney(2, '.', ',') + "</span></div>";
+                s += "<br /><div style='float:left'>royalty revenue:</div><div style='float:right'><span style='color:#d54740'>$" + parseFloat(d.data.value.royalties_rev).formatMoney(2, '.', ',') + "</span></div>";
             if (d.data.value.other_rev != 0)
-                s+= "<br /><div style='float:left'><strong>Other Revenue:</strong></div><div style='float:right'><span style='color:red'>$"+parseFloat(d.data.value.other_rev).formatMoney(2,'.',',')+"</span></div>";
+                s+= "<br /><div style='float:left'>other revenue:</div><div style='float:right'><span style='color:#d54740'>$"+parseFloat(d.data.value.other_rev).formatMoney(2,'.',',')+"</span></div>";
             s+= "<hr>";
-            s+= "<div style='float:left'><strong>Total Revenue:</strong></div><div style='float:right'><span style='color:red'>$"+parseFloat(d.data.value.sum).formatMoney(2,'.',',')+"</span></div>";
+            s+= "<div style='float:left'>total revenue:</div><div style='float:right'><span style='color:#d54740'>$"+parseFloat(d.data.value.sum).formatMoney(2,'.',',')+"</span></div>";
 
             return s;
         }

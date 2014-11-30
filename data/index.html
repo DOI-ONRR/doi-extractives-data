@@ -133,8 +133,14 @@ permalink: /data/
 
     <!-- download -->
     <div class="dashboard-download">
-      <a class="dashboard-button" href="{{site:url}}/static/data/{{site:unilatteral_data}}">Download Full Dataset (CSV) </a>
-      <a class="dashboard-button" href="javascript:download_data(companyDimension)">Download Filtered Data (CSV) </a>
+      <a class="dashboard-button" href="{{site:url}}/static/data/{{site:unilatteral_data}}">
+        <div><i class="fa fa-cloud-download"></i></div>
+        Download full dataset (csv)
+      </a>
+      <a class="dashboard-button" href="javascript:download_data(companyDimension)">
+        <div><i class="fa fa-cloud-download"></i></div>
+        Download your selected data (csv)
+      </a>
     </div>
 
   </section>

@@ -1730,6 +1730,9 @@ $max-width: 100%; //this is setting the width of outer-container.
       @include rem-fallback(font-size, 0.9);
       font-style: italic;
     }
+    &:nth-of-type(4) {
+      background-color: $deep-gray;
+    }
   }
 }
 
@@ -1835,10 +1838,6 @@ $max-width: 100%; //this is setting the width of outer-container.
   }
 }
 
-.dashboard-download {
-  @include span-columns(12 of 12);
-}
-
 .dashboard-chart {
   @include span-columns(4 of 12);
   g g.axis text {
@@ -1887,74 +1886,36 @@ $max-width: 100%; //this is setting the width of outer-container.
   }
 }
 
-
-
-//old stuff below here
-
-.side-nav {
-  @include span-columns(3);
-  height: 100%;
-  background-color: $dark-gray;
-  color: white;
-  padding: 10px 30px 15px 30px;
-  label {
-    font-weight: 300;
-  }
-  h1 {
-    @include span-columns(3 of 3);
-    @include omega();
-    font-size: rem(24);
-    line-height: 1;
-    border-top: 1px solid white;
-    margin: 30px 0 10px 0;
-    padding-top: 3px;
-    .checkbox {
-      float: right;
-    }
-  }
-  .side-nav-left {
-    @include span-columns(1 of 3);
-  }
-  .side-nav-middle {
-    @include span-columns(1 of 3);
-  }
-  .side-nav-middle-plus {
-    @include span-columns(2 of 3);
-    @include omega();
-  }
-  .side-nav-right {
-    @include span-columns(1 of 3);
-    @include omega();
-  }
-}
-
-.dashboard-face {
-  @include span-columns(9);
-  padding-top: 30px;
-  h2 {
-    margin-bottom: 20px;
-  }
-  .rev-by-commodity {
-    @include span-columns(6 of 9);
-  }
-  .total-rev {
-    @include span-columns(3 of 9);
-    @include omega();
-    h1 {
-      margin-top: 10px;
-    }
-  }
-  .dashboard-search {
-    @include span-columns(8 of 9);
-    @include omega();
-    margin-top: 20px;
-  }
-}
-.dashboard-button {
-  @include button(shade($blue, 10%));
+.dashboard-download {
+  @include span-columns(12 of 12);
+  margin-top: 20px;
   margin-bottom: 15px;
+}
+
+.dashboard-button {
+  display: inline-block;
+  margin-right: 20px;
+  padding-right: 10px;
+  color: lighten($mid-gray, 25%);
+  @include rem-fallback(font-size, 0.8);
+  text-decoration: none;
+  border: 1px solid lighten($mid-gray, 25%);
   &:hover, &:focus {
-    color: $medium-gray;
+    color: white;
+    > div {
+      color: white;
+    }
+  }
+  > div {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 6px;
+    padding-top: 3px;
+    text-align: center;
+    background-color: lighten($mid-gray, 25%);
+    color: $almost-black;
+    @include rem-fallback(font-size, 1);
   }
 }
 

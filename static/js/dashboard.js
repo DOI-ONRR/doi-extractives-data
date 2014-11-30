@@ -404,9 +404,8 @@ d3.csv("../static/data/Updated_Consolidated_Revenue_Data_with_Fake_Names.csv",fu
         .stack(typeGroupDimension_allGroup, "Other Revenues", function(d) {
             return d.value.other_rev
         })
-        .legend(dc.legend().x(470).y(100))
+        //.legend(dc.legend().x(470).y(100))
         .centerBar(false)
-        //.colors(d3.scale.ordinal().range(["#3397c2", "#9fa731", "#d54740", "#865daa"]));
         .gap(50)
         .elasticY(true)
         .brushOn(false)

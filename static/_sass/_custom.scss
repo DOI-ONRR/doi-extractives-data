@@ -1744,7 +1744,7 @@ $max-width: 100%; //this is setting the width of outer-container.
   p {
     margin-top: -15px;
   }
-  $size: 30px;
+  $size: 36px;
   a {
     width: 100px;
     display: block;
@@ -1757,11 +1757,11 @@ $max-width: 100%; //this is setting the width of outer-container.
     > div {
       width: $size;
       height: $size;
-      margin-right: 5px;
+      margin-right: 7px;
       background-color: $almost-black;
       display: inline-block;
       text-align: center;
-      padding-top: 4px;
+      padding-top: 8px;
     }
     &:hover,
     &:focus {

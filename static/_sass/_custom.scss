@@ -1735,7 +1735,42 @@ $max-width: 100%; //this is setting the width of outer-container.
 
 .dashboard-table {
   @include span-columns(4 of 12);
-  height: 400px;
+  a {
+    color: white;
+    text-decoration: none;
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+  input {
+    background-color: $mid-gray;
+    border: none;
+    border-radius: 0;
+    color: white;
+  }
+  label { //this will need to change after implementing the JS-switch-search
+    font-weight: 200;
+    @include rem-fallback(font-size, 0.9);
+    font-style: italic;
+    margin-top: -41px;
+    padding-left: 8px;
+  }
+  .dc-table-label {
+    display: none;
+  }
+  table {
+    @include rem-fallback(font-size, 0.9);
+  }
+}
+
+.dashboard-table-more {
+  @include rem-fallback(font-size, 0.8);
+  text-align: right;
+}
+
+.dashboard-table-canvas {
+  height: 350px;
   overflow: scroll;
 }
 

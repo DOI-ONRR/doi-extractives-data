@@ -28,54 +28,66 @@ permalink: /data/
 
     <!-- company table -->
     <div class="dashboard-table">
+
       <h1>Companies</h1>
+
       <input type="text" id="table-search"></input>
-      <div><a href="javascript:toggle_divs('#toggleDivLink','#dashboard-totals-table','#dashboard-table','Show Full Table','Show Table by Company')" id="toggleDivLink">more</a></div>
-      <table class='table table-hover dc-data-table' id='dashboard-totals-table'>
+      <label for="table-search">enter a company name to filter&#133;</label>
 
-        <thead>
-          <tr class="header">
-            <th>
-              <a href="javascript:sort_dataTable(dashTotalsTable,'Company Name');">
-                Company name
-              </a>
-            </th>
-            <th>
-              <a href="javascript:sort_dataTable(dashTotalsTable,'Total Revenue');">
-                Total Revenue
-              </a>
-            </th>
-          </tr>
-        </thead>
-      </table>
+      <div class="dashboard-table-more">
+        <a href="javascript:toggle_divs('#toggleDivLink','#dashboard-totals-table','#dashboard-table','◀ less','more ▶')" id="toggleDivLink">more ▶</a>
+      </div>
 
-      <table class='table table-hover dc-data-table' id='dashboard-table' style="display:none">
+      <div class="dashboard-table-canvas">
 
-        <thead>
-          <tr class="header">
-            <th>
-              <a href="javascript:sort_dataTable(dashTable,'Company Name');">
-                Company name
-              </a>
-            </th>
-            <th>
-              <a href="javascript:sort_dataTable(dashTable,'Revenue Type');">
-                Revenue Type
-              </a>
-            </th>
-            <th>
-              <a href="javascript:sort_dataTable(dashTable,'Commodity');">
-                Commodity
-              </a>
-            </th>
-            <th>
-              <a href="javascript:sort_dataTable(dashTable,'Revenue');">
-                Revenue
-              </a>
-            </th>
-          </tr>
-        </thead>
-      </table>
+        <table class="table table-hover dc-data-table" id='dashboard-totals-table'>
+
+          <thead>
+            <tr class="header">
+              <th>
+                <a href="javascript:sort_dataTable(dashTotalsTable,'Company Name');">
+                  company name<i class="fa fa-chevron-down"></i>
+                </a>
+              </th>
+              <th>
+                <a href="javascript:sort_dataTable(dashTotalsTable,'Total Revenue');">
+                  revenue<i class="fa fa-chevron-down"></i>
+                </a>
+              </th>
+            </tr>
+          </thead>
+        </table>
+
+        <table class='table table-hover dc-data-table' id='dashboard-table' style="display:none">
+
+          <thead>
+            <tr class="header">
+              <th>
+                <a href="javascript:sort_dataTable(dashTable,'Company Name');">
+                  company name<i class="fa fa-chevron-down"></i>
+                </a>
+              </th>
+              <th>
+                <a href="javascript:sort_dataTable(dashTable,'Revenue Type');">
+                  revenue type<i class="fa fa-chevron-down"></i>
+                </a>
+              </th>
+              <th>
+                <a href="javascript:sort_dataTable(dashTable,'Commodity');">
+                  commodity<i class="fa fa-chevron-down"></i>
+                </a>
+              </th>
+              <th>
+                <a href="javascript:sort_dataTable(dashTable,'Revenue');">
+                  revenue<i class="fa fa-chevron-down"></i>
+                </a>
+              </th>
+            </tr>
+          </thead>
+        </table>
+
+      </div>
+
     </div>
 
     <!-- revenue types -->

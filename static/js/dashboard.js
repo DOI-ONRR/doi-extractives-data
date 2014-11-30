@@ -28,6 +28,8 @@ else
 //var typeDimension;
 //d3.csv("https://docs.google.com/spreadsheet/pub?key=0AjPWVMj9wWa6dGw3b1c3ZHRSMW92UTJlNXRLTXZ0RUE&single=true&gid=0&output=csv",function(resource_data){
 
+
+
 d3.csv("../static/data/Updated_Consolidated_Revenue_Data_with_Fake_Names.csv",function(resource_data){
     
     resource_data.forEach(function(d){
@@ -404,6 +406,8 @@ d3.csv("../static/data/Updated_Consolidated_Revenue_Data_with_Fake_Names.csv",fu
         })
         .legend(dc.legend().x(470).y(100))
         .centerBar(false)
+        //.colors(d3.scale.ordinal().range(["#3397c2", "#9fa731", "#d54740", "#865daa"]));
+        .gap(50)
         .elasticY(true)
         .brushOn(false)
         .turnOnControls(true)

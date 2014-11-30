@@ -1731,17 +1731,56 @@ $max-width: 100%; //this is setting the width of outer-container.
   @include span-columns(2 of 12); 
 }
 
-.dashboard-chart {
-  @include span-columns(4 of 12);
-}
-
-.dashboard-chart g g.axis text {fill: white;}
-.dashboard-chart g g.axis line {stroke: white;}
-.dashboard-chart g g.axis path {stroke: white;}
-.dashboard-chart g g.dc-legend-item text {fill: white;}
-
 .dashboard-download {
   @include span-columns(12 of 12);
+}
+
+.dashboard-chart {
+  @include span-columns(4 of 12);
+  g g.axis text {
+    fill: white;
+  }
+  g g.axis line {
+    stroke: white;
+  }
+  g g.axis path {
+    stroke: white;
+  }
+  g g.dc-legend-item text {
+    fill: white;
+  }
+  g.stack._0  > rect.bar {
+      stroke: none;
+      fill: $red;
+  }
+  g.stack._1 > rect.bar {
+      stroke: none;
+      fill: $useiti-green;
+  }
+  g.stack._2 > rect.bar {
+      stroke: none;
+      fill: $useiti-blue;
+  }
+  g.stack._3 > rect.bar {
+      stroke: none;
+      fill: $useiti-purple;
+  }
+  g.dc-legend-item:nth-child(1) > rect:nth-child(1) {
+      stroke: none;
+      fill: $red;
+  }
+  g.dc-legend-item:nth-child(2) > rect:nth-child(1) {
+      stroke: none;
+      fill: $useiti-green;
+  }
+  g.dc-legend-item:nth-child(3) > rect:nth-child(1) {
+      stroke: none;
+      fill: $useiti-blue;
+  }
+  g.dc-legend-item:nth-child(4) > rect:nth-child(1) {
+      stroke: none;
+      fill: $useiti-purple;
+  }
 }
 
 

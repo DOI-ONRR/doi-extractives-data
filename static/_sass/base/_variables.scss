@@ -35,7 +35,6 @@ $base-border-radius: rem(3);
 
 // Colors
 $blue: #7ea0b7;
-$red: #d54740;
 $darker-gray: #444343;
 $dark-gray: #4d4b4b;
 $dark-medium-gray: #d8d8d8;
@@ -47,6 +46,9 @@ $light-green: #E6EFC2;
 
 $mid-gray: #5a5a5a;
 $deep-gray: #313131;
+$almost-black: #272727;
+$red: #d54740;
+$useiti-red: #d54740; //same as $red. Need to change variables in css to this instead.
 $useiti-green: #9fa731;
 $useiti-blue: #3397c2;
 $useiti-purple: #865daa;

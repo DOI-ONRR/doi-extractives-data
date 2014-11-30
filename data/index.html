@@ -28,6 +28,7 @@ permalink: /data/
 
     <!-- company table -->
     <div class="dashboard-table">
+      <h1>Companies</h1>
       <input type="text" id="table-search"></input>
       <div><a href="javascript:toggle_divs('#toggleDivLink','#dashboard-totals-table','#dashboard-table','Show Full Table','Show Table by Company')" id="toggleDivLink">more</a></div>
       <table class='table table-hover dc-data-table' id='dashboard-totals-table'>
@@ -79,14 +80,38 @@ permalink: /data/
 
     <!-- revenue types -->
     <div class="dashboard-revenue" id="OptionsList">
-      <input type="checkbox" checked id="graphOption_rent" value="Rents"/> <label for="graphOption_rent">Rent</label>
-      <input type="checkbox" checked id="graphOption_bonus" value="Bonus"/> <label for="graphOption_bonus">Bonus</label>
-      <input type="checkbox" checked id="graphOption_royalties" value="Royalties"/> <label for="graphOption_royalties">Royalties</label>
-      <input type="checkbox" checked id="graphOption_other" value="Other Revenues"/> <label for="graphOption_other">Other</label>
+
+      <h1>Revenue Types</h1>
+      <p>click to select</p>
+
+      <a href='javascript:' id="graphOption_rent" class='' data-value='Rents' tabindex='0' role="checkbox" aria-checked="true">
+        <div><i class="fa fa-check"></i></div>
+        rent</a>
+
+      <a href='javascript:' id="graphOption_rent" class='' data-value='Bonus' tabindex='0' role="checkbox" aria-checked="true">
+        <div><i class="fa fa-check"></i></div>
+        bonus</a>
+
+      <a href='javascript:' id="graphOption_rent" class='' data-value='Royalties' tabindex='0' role="checkbox" aria-checked="true">
+        <div><i class="fa fa-check"></i></div>
+        royalty</a>
+
+      <a href='javascript:' id="graphOption_rent" class='' data-value='Other Revenues' tabindex='0' role="checkbox" aria-checked="true">
+        <div><i class="fa fa-check"></i></div>
+        other</a>
+
+      <div class="temp-controls">
+        <input type="checkbox" checked id="graphOption_rent" value="Rents"/> <label for="graphOption_rent">Rent</label>
+        <input type="checkbox" checked id="graphOption_bonus" value="Bonus"/> <label for="graphOption_bonus">Bonus</label>
+        <input type="checkbox" checked id="graphOption_royalties" value="Royalties"/> <label for="graphOption_royalties">Royalties</label>
+        <input type="checkbox" checked id="graphOption_other" value="Other Revenues"/> <label for="graphOption_other">Other</label>
+      </div>
+
     </div>
 
     <!-- chart -->
     <div class="dashboard-chart">
+      <h1>Revenues</h1>
       <div id="dashboard-bar-rev-by-commodity-group"></div>
       <div id="dashboard-bar-rev-by-revenue-type" style="display:none;"></div>
     </div>

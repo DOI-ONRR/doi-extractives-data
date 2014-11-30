@@ -389,7 +389,7 @@ d3.csv("../static/data/Updated_Consolidated_Revenue_Data_with_Fake_Names.csv",fu
     Graph:Bar Graph, by commodity
     *****************************/
     dash_bar_rev_by_commodity_group
-        .width(600).height(400)
+        .width(400).height(400)
         .dimension(typeGroupDimension)
         .group(typeGroupDimension_allGroup, "Rent")
         .valueAccessor(function(d) {
@@ -406,7 +406,7 @@ d3.csv("../static/data/Updated_Consolidated_Revenue_Data_with_Fake_Names.csv",fu
         })
         //.legend(dc.legend().x(470).y(100))
         .centerBar(false)
-        .gap(50)
+        .gap(40)
         .elasticY(true)
         .brushOn(false)
         .turnOnControls(true)

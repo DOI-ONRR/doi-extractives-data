@@ -1719,6 +1719,18 @@ $max-width: 100%; //this is setting the width of outer-container.
     color: white;
     @include rem-fallback(font-size, 1.8);
   }
+  > div {
+    background-color: $almost-black;
+    padding: 20px;
+    h1 {
+      @include rem-fallback(font-size, 0.9);
+      font-weight: 700;
+    }
+    p {
+      @include rem-fallback(font-size, 0.9);
+      font-style: italic;
+    }
+  }
 }
 
 .dashboard-table {
@@ -1728,7 +1740,64 @@ $max-width: 100%; //this is setting the width of outer-container.
 }
 
 .dashboard-revenue {
-  @include span-columns(2 of 12); 
+  @include span-columns(2 of 12);
+  p {
+    margin-top: -15px;
+  }
+  $size: 30px;
+  a {
+    width: 100px;
+    display: block;
+    padding: 1px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    @include rem-fallback(font-size, 0.8);
+    > div {
+      width: $size;
+      height: $size;
+      margin-right: 5px;
+      background-color: $almost-black;
+      display: inline-block;
+      text-align: center;
+      padding-top: 4px;
+    }
+    &:hover,
+    &:focus {
+      color: black;
+      > div {
+        background-color: darken($mid-gray, 10%);  
+      }
+    }
+    &:nth-of-type(1) {
+      background-color: $useiti-red;
+      > div {
+        color: $useiti-red;
+      }
+    }
+    &:nth-of-type(2) {
+      background-color: $useiti-green;
+      > div {
+        color: $useiti-green;
+      }
+    }
+    &:nth-of-type(3) {
+      background-color: $useiti-blue;
+      > div {
+        color: $useiti-blue;
+      }
+    }
+    &:nth-of-type(4) {
+      background-color: $useiti-purple;
+      > div {
+        color: $useiti-purple;
+      }
+    }
+  }
+  .temp-controls { //moves working controls down until they are no longer needed. Delete.
+    margin-top: 20px;
+  }
 }
 
 .dashboard-download {

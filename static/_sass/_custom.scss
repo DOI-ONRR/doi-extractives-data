@@ -709,16 +709,103 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
 }
 
 .bubbles-viz {
+  color: white;
+  padding-top: 60px;
+
   @include span-columns(8);
+
+  .bubbles-instructions {
+    margin-top: 0;
+    line-height: 1.2;
+    font-style: italic;
+    color: $mid-gray;
+    font-weight: 300;
+  }
+
   text {
-    color: white;
+    fill: white;
+  }
+
+  svg.pack {
+    margin-top: 20px;
+
+    g.node text {
+      fill: white;
+      @include rem-fallback(font-size, .9);
+    }
+
+    g.node circle {
+      cursor: pointer;
+      stroke: transparent;
+      stroke-width: 2;
+    }
+
+    g.node:hover circle {
+      stroke: white;
+    }
+
+    g.node.onshore circle {
+      fill: $useiti-green;
+    }
+
+    g.node.offshore circle {
+      fill: $useiti-blue;
+    }
+  }
+}
+
+// this is the info area for bubbles in the disbursement graph
+.bubble-info {
+  color: white;
+  margin-top: 40px;
+
+  // make all links white
+  a {
+    color: inherit;
+  }
+
+  h1 {
+    margin: 0;
+    color: inherit;
+    @include rem-fallback(font-size, 1.1);
+    font-weight: 300;
+
+    .context {
+      margin-left: .5em;
+
+      &.onshore { color: $useiti-green; }
+      &.offshore { color: $useiti-blue; }
+    }
+  }
+
+  h2 {
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    @include rem-fallback(font-size, 1.1);
+    font-family: Lato;
+    font-weight: 200;
+  }
+
+  .icons .icon {
+    width: 40px;
+    height: 40px;
+    fill: white;
+  }
+
+  &.default-display {
+    color: $mid-gray;
+    .icons .icon {
+      fill: $mid-gray;
+    }
   }
 }
 
 .bubbles-onshore-offshore {
+  position: relative;
   @include span-columns(4);
   margin-top: 20px;
-  > div {
+  .box {
     background: white;
     padding-top: 10px;
     padding-bottom: 1px;
@@ -755,6 +842,32 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
   h1 {
     background: $useiti-green;
   }
+}
+
+.bubbles .fund-info {
+  position: absolute;
+  top: 0;
+  left: -30px; // to account for the offshore description, offset -20px
+  right: -20px;
+  height: 100%;
+  background: $deep-gray;
+
+  .box {
+    margin-left: 20px;
+  }
+
+  .close {
+    float: right;
+    color: white;
+    font-size: 1.5em;
+    line-height: .75em;
+    font-weight: 800;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  h1.offshore { background: $useiti-blue; }
+  h1.onshore { background: $useiti-green; }
 }
 
 .tipsy-inner {

@@ -66,16 +66,13 @@
 	  </script>
 	<![endif]-->
 
-	<!--[if lte IE 8]> ######CHECK ON IE8 STUFF, NOT UPDATED FROM NOTALONE#######
-	<script type="text/javascript" src="{{ site.baseurl }}/static/bower_components/respond/respond.min.js"></script>
-	  <link href="{{ site.baseurl }}/static/css/ie8.css" rel="stylesheet">
+	<!--[if lte IE 9]>
+		<link rel="stylesheet" href="{{ "/static/css/ie.css" | prepend: site.baseurl }}">
+		<script type="text/javascript" src="{{ site.baseurl }}/static/js/min/jquery-1.11.1.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+		<script type="text/javascript" src="{{ site.baseurl }}/static/js/min/selectivizr.js"></script>
+		<script type="text/javascript" src="{{ site.baseurl }}/static/js/min/html5shiv.min.js"></script>
 	<![endif]-->
-	<!--[if IE]>
-	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-
-	<!-- jQuery -->
-	<!--<script src="{{ site.baseurl }}/static/js/min/jquery.min.js"></script>-->
 
 	<!-- Libraries -->
 	<script src="{{ site.baseurl }}/static/js/lib/jquery.js"></script>
@@ -89,14 +86,6 @@
 
 	<!-- Helpers -->
 	<script src="{{ site.baseurl }}/static/js/helpers.js"></script>
-
-	<!-- ######CHECK ON IE9/jquery STUFF BELOW, NOT UPDATED FROM NOTALONE#######
-	<script src="{{ site.baseurl }}/static/js/min/iecors.min.js"></script> -->
-	<!--[if lte IE 9]>
-	<script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/jquery-ajaxtransport-xdomainrequest/1.0.0/jquery.xdomainrequest.min.js'></script>
-	<![endif]-->
-
-	<!-- <script src="{{ site.baseurl }}/static/js/where.js"></script> -->
 
 	<!-- For Mapbox
 	================================================== -->

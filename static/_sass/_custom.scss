@@ -92,13 +92,17 @@ ul.menu a.active li {
   display: none;
   @include respond-to(small-up) {
     display: block;
+    height: 30px;
   }
 }
 
 .nav {
   background: #8dc2e7;
-  background: rgba(141, 194, 231, 0.9);
   border-top: 4px solid rgba(0, 0, 0, 0.3);
+  height: 34px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
   ul {
     width: 100%;
     list-style: none;
@@ -108,19 +112,24 @@ ul.menu a.active li {
   }
   li {
     font-weight: 500;
+    @include rem-fallback(font-size, $base-font-size * 0.86);
     @include respond-to(small-up) {
       float: left;
     }
-    padding: 5px 3px 3px 3px;
-    margin-right: 32px;
+    padding: 4px 2px 2px 3px;
+    margin-right: 28px;
     border-left: 1px solid black;
     border-bottom: 3px solid black;
     display: block;
   }
-  .last {
+  .nav-last {
     border-bottom: none;
+    border-left: none;
     margin-right: 0;
-    padding: 5px 0 0 0;
+    padding: 0 0 0 0;
+  }
+  .nav-right {
+    float: right;
   }
   a {
     color: black;
@@ -140,13 +149,12 @@ ul.menu a.active li {
     background-color: #f8f8f8;
     border-radius: 0;
     border-color: black;
-    border-left: none;
     border-bottom-width: 3px;
     height: 30px;
     margin-bottom: 0;
   }
   input[type=search] {
-    width: 210px;
+    width: 180px;
     @include rem-fallback(font-size, $base-font-size * 0.7);
     font-weight: 300;
     color: black;
@@ -162,8 +170,9 @@ ul.menu a.active li {
     color: $dark-gray;
     padding: 0 8px 0 10px;
     float: left;
-    border-top: 1px solid black; 
-    border-right: 1px solid black;   
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;   
     border-bottom: 3px solid black;
     &:hover, &:focus {
       color: $red;
@@ -436,6 +445,11 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
   a {
     color: white;
   }
+}
+
+.splash-subpage {
+  border-bottom: none;
+  background: none;
 }
 
 .map-frame {
@@ -1771,6 +1785,7 @@ article {
     }
   }
 }
+
 .offices {
   article {
     @include span-columns(12);
@@ -1791,6 +1806,23 @@ article {
       color: $dark-gray;
       font-size: rem(20);
       font-weight: 300;
+    }
+  }
+}
+
+.terms {
+  h1 {
+    @extend .h2;
+  }
+  dl {
+    @include span-columns(9);
+    margin-top: 0;
+    dt {
+      font-family: $secondary-font-family;
+      color: $dark-gray;
+      font-size: rem(20);
+      font-weight: 300;
+      margin-top: 20px;
     }
   }
 }

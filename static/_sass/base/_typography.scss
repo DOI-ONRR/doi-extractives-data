@@ -134,12 +134,14 @@ h4,
   }
 
   p,
-  li {
+  li,
+  dd {
     @include rem-fallback(font-size, $base-font-size);
   }
 }
 
-p {
+p,
+dd {
   margin: 0 0 ($base-line-height * .75);
 }
 
@@ -221,7 +223,8 @@ cite {
 
 
 p,
-li {
+li,
+dd {
   font-size: $base-font-size;
   font-weight: 200;
 }

@@ -1329,7 +1329,8 @@ div.disbursement_bubble_rollover {
 }
 
 .map-notes,
-.sectors-chart-notes {
+.sectors-chart-notes,
+.disbursement-chart-notes {
   color: white;
   margin-top: 50px;
   padding-bottom: 30px;
@@ -1351,7 +1352,8 @@ div.disbursement_bubble_rollover {
   }
 }
 
-.sectors-chart-notes {
+.sectors-chart-notes,
+.disbursement-chart-notes {
   @include span-columns(4);
   @include shift(8);
   @include omega();
@@ -1362,6 +1364,11 @@ div.disbursement_bubble_rollover {
     line-height: 1.2;
     padding-bottom: 5px;
   }
+}
+
+.disbursement-chart-notes {
+  margin-top: -20px;
+  margin-bottom: 20px;
 }
 
 #map {
@@ -2004,6 +2011,10 @@ $max-width: 100%; //this is setting the width of outer-container.
 // Search
 //============================================
 
+.search-intro {
+  font-weight: 300;
+}
+
 .search-results {
   .credit {
     margin-top: 40px;
@@ -2066,7 +2077,7 @@ $max-width: 100%; //this is setting the width of outer-container.
     float: left;
     color: $dark-gray;
     background-color: white;
-    padding: 9px 10px 9px 10px;
+    padding: 11px 10px 11px 10px;
     border-top: 1px solid black; 
     border-right: 1px solid black;   
     border-bottom: 3px solid black;

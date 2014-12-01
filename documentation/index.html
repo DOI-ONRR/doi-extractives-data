@@ -11,8 +11,10 @@ permalink: /documentation/
 	<h1>Terms and Definitions</h1>
 	<dl>
 		{% for term in site.data.terms %}
-			<dt>{{ term.term }}</dt>
-			<dd>{{ term.definition }}</dd>
+			{% if term.display != false %}
+				<dt>{{ term.term }}</dt>
+				<dd>{{ term.definition }}</dd>
+			{% endif %}
 		{% endfor %}
 	</dl>
 </section>

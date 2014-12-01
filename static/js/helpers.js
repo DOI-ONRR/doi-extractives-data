@@ -29,25 +29,28 @@ var n = this,
  	return this.charAt(0).toUpperCase() + this.slice(1);
  }
 
-function text_money(f,c){
+function text_money(f,c,tiny){
+	if (f == 0)
+		return f;
 	f = parseFloat(f);
 	var s = f.formatMoney(2,'.',',');
+	
 	var t;
 	if (s.length>19)//trillion
 	{
-		t="trillion"
+		t= tiny ? "t" : "trillion";
 	}
 	else if (s.length>15)//Billions
 	{
-		t="billion"
+		t= tiny ? "b" : "billion";
 	}
 	else if (s.length>11)//Millions
 	{
-		t="million"
+		t= tiny ? "m" : "million"
 	}
 	else if (s.length>7)//Thousands
 	{
-		t="thousand"
+		t= tiny ? "th":"thousand"
 	}
 	s=s.substring(0,s.search(',')+2);
 	s=s.replace(",",".");
@@ -84,18 +87,27 @@ function text_filter(dim,q){
 
 function update_graph_options(elem,dimension){
 	var a=[];
-	elem.each(function(){
-		if ($(this).is(':checked')){
-			a.push($(this).val());
-		}
-		else if($(this).attr('aria-checked')=='true'){
-			a.push($(this).attr('data-value'));
-		}
-	});
+	if (elem.each)
+	{
+		elem.each(function(){
+			if ($(this).is(':checked')){
+				a.push($(this).val());
+			}
+			else if($(this).attr('aria-checked')=='true'){
+				a.push($(this).attr('data-value'));
+			}
+		});	
+	}
+	else
+	{
+		a = elem;
+	}
+	
 	dimension.filterAll();
 	dimension.filter(function(d){
 			if (a.indexOf(d) > -1)
 			{
+				console.log(d);
 				return true;
 			}
 			else

@@ -68,13 +68,12 @@ d3.csv("../static/data/Updated_Consolidated_Revenue_Data_with_Fake_Names.csv",fu
             });
         }
 
-    // typeDimension = ndx.dimension(function(d) {
-    //     return d["Commodity"];
-    // });
+    typeDimension = ndx.dimension(function(d) {
+        return d["Commodity"];
+    });
     typeGroupDimension = ndx.dimension(function(d){
         return d["GroupName"];
     });
-    console.log(typeGroupDimension.top(100));
 
     typeDimensionHelper = ndx.dimension(function(d) {
         return d["Commodity"];
@@ -425,7 +424,7 @@ d3.csv("../static/data/Updated_Consolidated_Revenue_Data_with_Fake_Names.csv",fu
         .x(d3.scale.ordinal())
         .y(d3.scale.log().nice().domain([1, 12500000000]))
         .margins({top: 10, right: 10, bottom: 75, left:100})
-        .yAxis().tickFormat(function(v){return "$"+ parseFloat(v).formatMoney(0,'.',',')});
+        .yAxis().tickFormat(function(v){return text_money(v,false,true)});
     dash_bar_rev_by_commodity_group.on("filtered", function (chart) {
                 dc.events.trigger(function () {
                 });});
@@ -698,15 +697,24 @@ d3.csv("../static/data/Updated_Consolidated_Revenue_Data_with_Fake_Names.csv",fu
             $(this).on('click',function(){
                 $('#dashboard-bar-rev-by-commodity-group').toggle();
                 if($(this).text()== 'Oil & Gas')
+                {
                     $('#dashboard-bar-rev-by-revenue-type-oil-and-gas').toggle();
+                    update_graph_options(['Oil','Oil & Gas','Gas'],typeDimension);
+                }
                if($(this).text()== 'Renewables')
+               {
                     $('#dashboard-bar-rev-by-revenue-type-renewables').toggle();
-                 
+                    update_graph_options(['Wind','Geothermal'],typeDimension);
+               } 
             });
         });
        var $newDiv = $('<div>');
        var $link = $('<a href="javascript:void(0);">back</a>');
        $link.click(function(){
+            typeDimension.filterAll();
+            draw_totals_table();
+            dc.redrawAll();
+            graphCustomizations();
             $('#dashboard-bar-rev-by-commodity-group').toggle();
             $('#dashboard-bar-rev-by-revenue-type-oil-and-gas').hide();
             $('#dashboard-bar-rev-by-revenue-type-renewables').hide();
@@ -717,6 +725,10 @@ d3.csv("../static/data/Updated_Consolidated_Revenue_Data_with_Fake_Names.csv",fu
        var $newDiv = $('<div>');
        var $link = $('<a href="javascript:void(0);">back</a>');
        $link.click(function(){
+            typeDimension.filterAll();
+            draw_totals_table();
+            dc.redrawAll();
+            graphCustomizations();
             $('#dashboard-bar-rev-by-commodity-group').toggle();
             $('#dashboard-bar-rev-by-revenue-type-oil-and-gas').hide();
             $('#dashboard-bar-rev-by-revenue-type-renewables').hide();

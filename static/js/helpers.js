@@ -88,6 +88,9 @@ function update_graph_options(elem,dimension){
 		if ($(this).is(':checked')){
 			a.push($(this).val());
 		}
+		else if($(this).attr('aria-checked')=='true'){
+			a.push($(this).attr('data-value'));
+		}
 	});
 	dimension.filterAll();
 	dimension.filter(function(d){

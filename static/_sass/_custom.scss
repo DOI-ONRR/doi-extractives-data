@@ -2045,3 +2045,12 @@ $max-width: 100%; //this is setting the width of outer-container.
   }
 }
 
+.sr-only {
+  width:1px;
+  height:1px;
+  overflow: hidden;
+  padding:0;
+  margin: -1px;
+  position: absolute;
+}
+

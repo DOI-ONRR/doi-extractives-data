@@ -1848,52 +1848,87 @@ $dashboard-height: 400px;
 .dashboard-chart {
   @include span-columns(4 of 12);
   height: $dashboard-height;
-  g.x text:hover {
-    text-decoration: none;
-  }
   g g.axis text {
     fill: white;
-  }
-  g g.axis line {
-    stroke: white;
-  }
-  g g.axis path {
-    stroke: white;
   }
   g g.dc-legend-item text {
     fill: white;
   }
+}
+
+#dashboard-bar-rev-by-commodity-group {
   g.stack._0  > rect.bar {
-      stroke: none;
-      fill: $red;
+    stroke: none;
+    fill: $red;
   }
   g.stack._1 > rect.bar {
-      stroke: none;
-      fill: $useiti-green;
+    stroke: none;
+    fill: $useiti-green;
   }
   g.stack._2 > rect.bar {
-      stroke: none;
-      fill: $useiti-blue;
+    stroke: none;
+    fill: $useiti-blue;
   }
   g.stack._3 > rect.bar {
-      stroke: none;
-      fill: $useiti-purple;
+    stroke: none;
+    fill: $useiti-purple;
   }
+  //not using this legend. likely remove.
   g.dc-legend-item:nth-child(1) > rect:nth-child(1) {
-      stroke: none;
-      fill: $red;
+    stroke: none;
+    fill: $red;
   }
   g.dc-legend-item:nth-child(2) > rect:nth-child(1) {
-      stroke: none;
-      fill: $useiti-green;
+    stroke: none;
+    fill: $useiti-green;
   }
   g.dc-legend-item:nth-child(3) > rect:nth-child(1) {
-      stroke: none;
-      fill: $useiti-blue;
+    stroke: none;
+    fill: $useiti-blue;
   }
   g.dc-legend-item:nth-child(4) > rect:nth-child(1) {
-      stroke: none;
+    stroke: none;
+    fill: $useiti-purple;
+  }
+}
+
+#dashboard-bar-rev-by-revenue-type-oil-and-gas {
+  g.stack._0  > rect.bar {
+    stroke: #272727;
+    fill: darken($useiti-blue, 10%);
+  }
+  g.stack._1 > rect.bar {
+    stroke: #272727;
+    fill: lighten($useiti-blue, 10%);
+  }
+  g.stack._2 > rect.bar {
+    stroke: none;
+    &:nth-of-type(1) {
+      fill: $useiti-green;
+    }
+    &:nth-of-type(2) {
       fill: $useiti-purple;
+    }
+    &:nth-of-type(3) {
+      fill: $useiti-red;
+    }
+  }
+  //need a legend for oil and gas. this will need adjustment.
+  g.dc-legend-item:nth-child(1) > rect:nth-child(1) {
+    stroke: none;
+    fill: $red;
+  }
+  g.dc-legend-item:nth-child(2) > rect:nth-child(1) {
+    stroke: none;
+    fill: $useiti-green;
+  }
+  g.dc-legend-item:nth-child(3) > rect:nth-child(1) {
+    stroke: none;
+    fill: $useiti-blue;
+  }
+  g.dc-legend-item:nth-child(4) > rect:nth-child(1) {
+    stroke: none;
+    fill: $useiti-purple;
   }
 }
 

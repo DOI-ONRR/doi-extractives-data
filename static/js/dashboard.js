@@ -815,6 +815,18 @@ var graphCustomizations = function() {
         .attr("class", "campusLabel")
         .style("text-anchor", "middle")
 
+    d3.selectAll("g.x line")
+        .style("stroke", "#272727")
+
+    d3.selectAll("g.x path")
+        .style("stroke", "#272727")
+
+    d3.selectAll("g.y line")
+        .style("stroke", "#272727")
+
+    d3.selectAll("g.y path")
+        .style("stroke", "#272727")
+
     d3.selectAll("#dashboard-bar-rev-by-commodity-group .bar").call(resources_barTip);
     d3.selectAll("#dashboard-bar-rev-by-commodity-group .bar").on('mouseover', resources_barTip.show)
         .on('mouseout', resources_barTip.hide);

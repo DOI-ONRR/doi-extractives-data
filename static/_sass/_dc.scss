@@ -224,6 +224,9 @@ div.dc-chart {
     text-decoration: underline;
     font-weight: bold;
     cursor: pointer;
+    &:hover {
+        text-decoration: none;
+    }
 }
 
 .dc-chart path.highlight {

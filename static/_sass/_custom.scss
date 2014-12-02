@@ -1848,6 +1848,9 @@ $dashboard-height: 400px;
 .dashboard-chart {
   @include span-columns(4 of 12);
   height: $dashboard-height;
+  g.x text:hover {
+    text-decoration: none;
+  }
   g g.axis text {
     fill: white;
   }

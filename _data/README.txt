@@ -1,1 +1,0 @@
-This folder is where .yml will live.

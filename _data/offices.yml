@@ -4,25 +4,25 @@
 - name: BIA
   full: Bureau of Indian Affairs
   mission: "Indian Affairs fulfills Indian trust responsibilities; promotes self-determination on behalf of 566 federally recognized Indian tribes; and funds compacts and contracts to support natural resource education, law enforcement, and social service programs that are delivered by tribes."
-  mark: /static/img/marks/BIA-mark.svg
+  mark: /static/img/marks/BIA-mark.png
   homepage: http://www.bia.gov/WhoWeAre/BIA/index.htm
 
 - name: BLM
   full: Bureau of Land Management
   mission: "Mission: to sustain the health, diversity, and productivity of the public lands for the use and enjoyment of present and future generations. BLM manages and conserves resources for multiple use and sustained yield on approximately 248 million acres of public land, and an additional 700 million acres of subsurface federal mineral estate, including the following: renewable and conventional energy and mineral development; forest management, timber and biomass production; wild horse and burro management; management of diverse landscapes for the benefit of wildlife, domestic grazing, and recreational uses; resource management at sites of natural, scenic, scientific, and historical value including the National Landscape Conservation System."
-  mark: /static/img/marks/BLM-mark.svg
+  mark: /static/img/marks/BLM-mark.png
   homepage: http://www.blm.gov/
 
 - name: BOEM
   full: Bureau of Ocean Energy Management
-  mission: "BOEM manages access to renewable and conventional energy resources of the Outer Continental Shelf (OCS); administers over 6,400 active fluid mineral leases on approximately 35 million OCS acres; issues leases that provide 24 percent of domestic crude oil and eight percent of domestic natural gas supply; and oversees lease and grant issuance for off-shore renewable energy projects."
+  mission: "BOEM manages access to renewable and conventional energy resources of the Outer Continental Shelf (OCS); administers over 6,000 active fluid mineral leases on approximately 33 million OCS acres; issues leases that provide 21 percent of domestic crude oil and five percent of domestic natural gas supply; and oversees lease and grant issuance for off-shore renewable energy projects."
   mark: /static/img/marks/BOEM-mark.png
   homepage: http://www.boem.gov/
 
 - name: USBR
   full: Bureau of Reclamation
   mission: "USBR manages, develops, and protects water and related resources in an environmentally and economically sound manner in the interest of the American public. It manages 476 dams and 337 reservoirs and delivers water to 1 in every 5 western farmers and more than 31 million people. USBR is the largest wholesale supplier of water in the Nation and America’s second largest producer of hydroelectric power."
-  mark: /static/img/marks/USBR-mark.svg
+  mark: /static/img/marks/USBR-mark.png
   homepage: http://www.usbr.gov/
 
 - name: BSEE
@@ -34,7 +34,7 @@
 - name: NPS
   full: National Park Service
   mission: "The National Park Service preserves unimpaired the natural and cultural resources and values of the national park system for the enjoyment, education, and inspiration of this and future generations. The Park Service cooperates with partners to extend the benefits of natural and cultural resource conservation and outdoor recreation throughout this country and the world. The NPS maintains and manages a network of 401 natural, cultural, and recreational sites; manages and protects over 26,000 historic structures, over 44 million acres of designated wilderness, and a wide range of museum collections and cultural and natural landscapes; provides outdoor recreation to over 286 million annual park visitors; provides technical assistance and support to state and local natural and cultural resource sites and programs; and fulfills responsibilities under the National Historic Preservation Act"
-  mark: /static/img/marks/NPS-mark.svg
+  mark: /static/img/marks/NPS-mark.png
   homepage: http://www.nps.gov/
 
 - name: ONRR
@@ -52,12 +52,12 @@
 - name: USFWS
   full: United States Fish and Wildlife Service
   mission: "Mission: to work with others to conserve, protect and enhance fish, wildlife, and plants and their habitats for the continuing benefit of the American people. USFWS manages the 150 million-acre National Wildlife Refuge System primarily for the benefit of fish and wildlife; manages 70 fish hatcheries and other related facilities for endangered species recovery and to restore native fisheries populations; protects and conserves migratory birds, threatened and endangered species, and certain marine mammals; and hosts approximately 47 million visitors annually at 561 refuges located in all 50 states and 38 wetland management districts."
-  mark: /static/img/marks/USFWS-mark.svg
+  mark: /static/img/marks/USFWS-mark.png
   homepage: http://www.fws.gov/
 
 - name: USGS
   full: United States Geological Survey
   mission: "The USGS serves the Nation by providing reliable scientific information to describe and understand the Earth; minimize loss of life and property from natural disasters; manage water, biological, energy, and mineral resources; and enhance and protect our quality of life. It conducts scientific research in ecosystems, climate and land use change, mineral assessments, environmental health, and water resources to inform effective decision making and planning; produces information to increase understanding of natural hazards such as earthquakes, volcanoes, and landslides; conducts research on oil, gas, and alternative energy potential, production, consumption, and environmental effects; leads the effort on climate change science research for the Department of the Interior; and provides access to natural science information to support decisions about how to respond to natural risks and manage natural resources."
-  mark: /static/img/marks/USGS-mark.svg
+  mark: /static/img/marks/USGS-mark.png
   homepage: http://www.usgs.gov/
 

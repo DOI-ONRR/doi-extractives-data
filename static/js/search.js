@@ -30,7 +30,7 @@ $( document ).ready(function() {
     })
       .done(function(json) {
         $(".loading").remove();
-        $("#search-results-count").append( json.hits.total + ' Search Results');
+        $("#search-results-count").append( json.hits.total + ' search results');
         if (json.hits.total == 0){
           $("#search-no-results").show();
         }
@@ -76,7 +76,7 @@ $( document ).ready(function() {
   else {
     $("#search-no-results").show();
     $(".loading").remove();
-    $("#search-results-count").append( 0 + ' Search Results');
+    $("#search-results-count").append( 0 + ' search results');
 
   }
 });

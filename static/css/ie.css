@@ -1,0 +1,11 @@
+/* Styles to provide gracefull fallback for IE8 */
+
+p,
+li,
+dd {
+  font-size: 16px;
+}
+
+.intro {
+  background-color: #5a5a5a; /* mid-gray */
+}

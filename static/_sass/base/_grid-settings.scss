@@ -1,13 +1,13 @@
 @import '../neat/neat-helpers';
 
-$max-width: rem(960); //1088
+$max-width: em(960);
 
 // Neat Breakpoints
-$tiny: rem(480);
-$small: rem(600);
-$medium: rem(768);
-$large: rem(990);
-$largest: rem(1088);
+$tiny: em(480);
+$small: em(600);
+$medium: em(768);
+$large: em(990);
+$largest: em(1088);
 
 $tiny-down: new-breakpoint(max-width $tiny);
 $tiny-up: new-breakpoint(min-width $tiny);

@@ -1,215 +1,420 @@
-var diameter = 620,
-    format = d3.format(",d"),
-    color = d3.scale.category20c()
-    color_offshore = "#3397c2"
-    color_onshore = "#9fa731";
-var bubbles = [];
+(function() {
 
-bubbles['2012'] = d3.layout.pack()
-        .sort(null)
-        .size([diameter-15, diameter-15])
-        .padding(5);
-bubbles['2013'] = d3.layout.pack()
-        .sort(null)
-        .size([diameter-15, diameter-15])
-        .padding(5);
-bubbles_svg = [];
+  // the pack layout is square, so there's only one size dimension
+  var size = 620,
+      // our sequential list of years to display (in tabs, and in content)
+      years = [
+        2012,
+        2013
+      ],
+      // space around the circles (for stroke, etc.)
+      margin = 4,
+      // create a tab for each disbursement year
+      tabs = d3.select(".bubble_tabs")
+        .selectAll("a")
+        .data(years)
+        .enter()
+        .append("a")
+          .attr("href", "javascript:void(0)")
+          .text(function(d) { return d; })
+          .on("click", selectYear),
+      // and create a section div for each disbursement year
+      sections = d3.select(".bubbles .years")
+        .selectAll(".disbursement_year")
+        .data(years.map(function(year) {
+          return {year: year};
+        }))
+        .enter()
+        .append("div")
+          .attr("class", "disbursement_year")
+          .attr("data-year", function(d) { return d.year; }),
+      // use the same pack layout for all years
+      pack = d3.layout.pack()
+        .sort(function(a, b) {
+          return d3.descending(a.shore, b.shore)
+              || d3.descending(a.value, b.value);
+        })
+        .size([size - margin * 2, size - margin * 2])
+        .padding(10);
 
-//SVG in document is setup here
-bubbles_svg['2012'] = d3.select("#disbursement_2012").append("svg")
-.attr("width", diameter-15)
-.attr("height", diameter-15)
-.attr("class", "bubble");
+  var fundInfo = d3.select(".bubbles .fund-info")
+    .style("display", "none");
 
-bubbles_svg['2013'] = d3.select("#disbursement_2013").append("svg")
-.attr("width", diameter-15)
-.attr("height", diameter-15)
-.attr("class", "bubble");
+  fundInfo.select(".close")
+    .on("click", function() {
+      fundInfo.style("display", "none");
+    });
 
-d3.json("static/data/disbursement-summary-data.json",function(error,root){
-    for (var k in bubbles)
-    {
-        var node = bubbles_svg[k].selectAll(".node")
-        .data(bubbles[k].nodes(classes(root,k))
-            .filter(function(d) { return !d.children; }))
-        .enter().append("g")
-        .attr("class","node")
-        .attr("transform",function(d){ return "translate(" + d.x + "," + d.y + ")"; });
-        console.log(color_onshore);
-        node.append("circle")
-            .attr("r",function(d){return d.r; })
-            .attr("fill",function(d){ if(d.shore == 'onshore') return color_onshore; else return color_offshore;})
-            .attr("stroke",function(d){ if(d.shore == 'onshore') return color_onshore; else return color_offshore;})
-            .attr("stroke-width","3");
-
-        //Controls text on circle    
-        node.append("text")
-            .attr("dy", ".2em")
-            .attr("x", "0")
-            .attr("y", "0")
-            .attr("fill", "#ffffff")
-            .style("text-anchor", "middle")
-            .style("pointer-events","none")
-            .style("font-weight", "300")
-            .attr('data-id',function(d){
-                return d.className+d.shore+d.year;
-            })
-            .text(function(d) { 
-                    return d.className.substring(0, d.r / 4); 
-            });   
+  // visual data tweaks, by element id
+  var tweaks = {
+    "bubble_2012_U_S__Treasury_onshore": {
+      wrap: true
+    },
+    "bubble_2013_U_S__Treasury_onshore": {
+      wrap: true
+    },
+    "bubble_2012_American_Indian_Tribes_onshore": {
+      x: -5
+    },
+    "bubble_2013_Historic_Preservation_Fund_offshore": {
+      x: 15,
+      y: 30,
+      wrap: false
+    },
+    "bubble_2013_States_offshore": {
+      x: 20,
+      y: 1
     }
-    $("section.bubbles svg text").tipsy({ 
-        gravity: 'w', 
-        html: true, 
-        trigger: "manual",
-        opacity:"1.0",
-        offset:20,
-        title: function() {
-          var rev = text_money(this.__data__.value,'monetary_amount');
-          var year = this.__data__.year;
-          var shore = this.__data__.shore;
-          return '<h1> $'+rev+'</h1>'+
-            '<p>'+year+ ' '+shore+' revenue<br />helped fund:</p><div id="disbursement_content"><div class="sub">'+
-            where_stats_data[shore][this.__data__.className].images +'</div>'+
-            '<div class="full" style="display:none;">'+
-            where_stats_data[shore][this.__data__.className].content +'</div>'+
-            '</div>'+
-            '<p class="tipsy-more"><a href="javascript:" id="disbursement_link">more <i class="fa fa-angle-down"></i></a></p>'; 
-        }
+  };
+
+  // icon {id: label} mapping
+  var iconLabels = {
+    "book":       "Book",
+    "buildings":  "Buildings",
+    "dam":        "Dam",
+    "hospital":   "Hospital",
+    "microphone": "Microphone",
+    "mountains":  "Mountains",
+    "plane":      "Airplane",
+    "school":     "Schoolhouse",
+    "swamp":      "Swamp",
+    "swings":     "Playground",
+    "wheat":      "Farm"
+  };
+
+  var defaultDisplay = d3.select(".bubbles .default-display");
+  defaultDisplay.select(".icons")
+    .selectAll(".icon")
+    .data(Object.keys(iconLabels).map(function(key) {
+      return {
+        id: key,
+        label: iconLabels[key]
+      };
+    }))
+    .enter()
+    .append("svg")
+      .call(createIcon)
+      .call(updateIcon);
+
+  // timeout for hiding the bubble info
+  var infoTimeout;
+
+  queue([
+    "static/data/fund-metadata.json",
+    "static/data/disbursement-summary-data.json"
+  ], function(error, fundMeta, data) {
+
+    // console.log("fund metadata:", fundMeta);
+    // console.log("disbursements:", data);
+
+    // create an <svg> for each section as the first child
+    var svg = sections.append("svg")
+      .attr("class", "pack")
+      .attr("width", size)
+      .attr("height", size);
+
+    var info = sections.append("div")
+      .attr("class", "bubble-info")
+      .attr("id", function(d) {
+        return "bubble-info-" + d.year;
+      })
+      .style("display", "none");
+
+    var infoH1 = info.append("h1")
+    infoH1.append("span")
+      .attr("class", "name");
+    infoH1.append("span")
+      .attr("class", "context")
+      .html('<span class="year">(year)</span> <span class="shore">(shore)</span> revenues of');
+    info.append("h2")
+      .html('<b>$<span class="revenue"></span> billion</b>, which helped fund');
+    info.append("div")
+      .attr("class", "icons");
+
+    // and a root <g.nodes> for all of its contents
+    var g = svg.append("g")
+      .attr("class", "nodes");
+
+    // create a <g.node> for each "leaf" of the tree
+    var node = g.selectAll(".node")
+      .data(function(d) {
+        var nodes = pack
+          .nodes(flatten(data, d.year))
+          .filter(function(node) { return !node.children; });
+        nodes.forEach(function(d) {
+          d.meta = fundMeta[d.name][d.shore];
+        });
+        return nodes;
+      })
+      .enter()
+      .append("g")
+        .attr("id", function(d) {
+          d.id = ["bubble", d.year, d.name, d.shore].join("-").replace(/[^\w]/g, "_");
+          d.tweaks = tweaks[d.id] || {};
+          return d.id;
+        })
+        .attr("class", function(d) {
+          return ["node", d.shore].join(" ");
+        })
+        .attr("transform", function(d) {
+          return "translate(" + [d.x, d.y] + ")";
+        })
+        .on("mouseover", highlightFund)
+        .on("mouseout", unhighlightFund)
+        .on("click", selectFund);
+
+    node.sort(function(a, b) {
+      return d3.descending(a.r, b.r);
+    });
+
+    // create a <circle> for each node
+    var circle = node.append("circle")
+      .attr("r", function(d) {
+        return d.r;
       });
 
-    $("section.bubbles svg circle").on("mouseover",function(){
-        $('section.bubbles svg text').each(function(){
-            $(this).tipsy('hide');
-            var fill = $(this).siblings('circle').attr('fill');
-            $(this).siblings('circle').attr('stroke',fill);
+    /*
+     * bind the <svg> elements to a data object that gives us the bounding box
+     * of its contents (the first child, <g.nodes>), then set its height
+     * accordingly and translate the <g.nodes> up to meet the top edge
+     */
+    sections
+      .each(function(d) {
+        d.rect = this.querySelector("g.nodes").getBBox();
+      })
+      .select("svg")
+        .attr("height", function(d) {
+          return Math.ceil(d.rect.height) + margin * 2;
+        })
+        .select("g.nodes")
+          .attr("transform", function(d) {
+            return "translate(" + [margin, margin - Math.round(d.rect.y)] + ")";
+          });
+
+    // create a <g> element to contain the text
+    var text = node.append("g")
+      .attr("class", "text")
+      .attr("text-anchor", "start")
+      .attr("pointer-events", "none");
+
+    // and create a <text> element for each "line" of the wrapped title
+    text.selectAll("text")
+      .data(function(d) {
+        var name = d.name.replace(/ Funds?$/, "");
+        if (d.tweaks.wrap === false) {
+          return d.lines = [name];
+        } else if (d.tweaks.wrap === true) {
+          return d.lines = name.split(" ");
+        }
+        return d.lines = wrapName(name, d.r);
+      })
+      .enter()
+      .append("text")
+        .text(function(line) {
+          return line;
         });
-        $(this).attr('stroke','white');
-        $(this).siblings('text').tipsy('show');
-        var that = $(this).siblings('text');
-        $('a#disbursement_link').click(function(){
-            $(this).html(function(){
-                var n = $(this).html() == "more <i class=\"fa fa-angle-down\"></i>" ?  "less <i class=\"fa fa-angle-up\"></i>" : "more <i class=\"fa fa-angle-down\"></i>";
-                return n;
-            });
-            $('#disbursement_content div.sub').toggle();
-            $('#disbursement_content div.full').toggle();
-        });
+
+    text.each(function(d) {
+      var dy = (d.lines.length > 1)
+            ? .5 - d.lines.length / 2
+            : 0,
+          t = {
+            x: d.tweaks.x || 0,
+            y: d.tweaks.y || 0
+          };
+      d3.select(this)
+        .attr("transform", "translate(" + [t.x + d.lines.length * 6 - d.r, t.y] + ")")
+        .selectAll("text")
+          .attr("dy", function(line, i) {
+            return (i + dy + .33) + "em";
+          });
     });
-    
-    // Returns a flattened hierarchy containing all leaf nodes under the root.
-    function classes(root, year) {
-      var classes = [];
 
-      function recurse(name, node) {
-        if (node.children) node.children.forEach(function(child) { recurse(node.name, child); });
-        else if (node.year == year) classes.push({packageName: name, className: node.name, value: node.total, shore: node.shore, year: node.year});
+    /*
+     * select the first year
+     * (do this after loading data so that we can measure bounding rectangles
+     * before hiding the enclosing div w/`display: none`)
+     */
+    selectYear(2013);
+
+  }); // end load data in parallel
+
+  // select a disbursement year (Number)
+  function selectYear(year) {
+    tabs.classed("active", function(d) {
+      return d === year;
+    });
+    sections.style("display", function(d) {
+      return d.year === year ? null : "none";
+    });
+    // hide the fund info
+    fundInfo.style("display", "none");
+  }
+
+  /*
+   * Get an array of wrapped text lines for a given name (String) and circle
+   * radius (Number).
+   */
+  function wrapName(name, radius) {
+    var lineLength = Math.max(radius, 150) / 10;
+    if (name.length > lineLength) {
+      var words = name.split(" "),
+          line = "",
+          lines = [];
+      words.forEach(function(word) {
+        if ((line.length + word.length) < lineLength) {
+          line += " " + word;
+        } else {
+          lines.push(line);
+          line = word;
+        }
+      });
+      if (line) lines.push(line);
+      return lines;
+    }
+    return [name];
+  }
+
+  // Get a flattened hierarchy containing all leaf nodes under the root.
+  function flatten(root, year) {
+    var nodes = [];
+
+    function recurse(name, node) {
+      if (node.children) {
+        node.children.forEach(function(child) {
+          recurse(node.name, child);
+        });
+      } else if (+node.year === year) {
+        nodes.push({
+          name:   node.name,
+          value:  node.total,
+          shore:  node.shore,
+          year:   node.year
+        });
       }
-
-      recurse(null, root);
-      return {children: classes};
     }
 
-    d3.select(self.frameElement).style("height", diameter + "px");
+    recurse(null, root);
+    return {children: nodes};
+  }
 
+  function updateMetadata(selection) {
+    var format = d3.format(".3f"),
+        billion = 1e9;
 
-    var where_stats_data = {
-        //More info on click
-        "offshore": {
-            //Remember that the count starts at zero
-            //NOTE: img links are currently hard coded to gh pages site -- fix later -- figure out how to make these relative given that Jekyll won't parse JS files and so can't use {{ site.url }}
-            
-                //Array ID -> 0
-                "U.S. Treasury" : {
-                    content : "<div class=\"disbursement_bubble_details\"><h1>U.S. Treasury</h1><p>Some offshore revenue goes into the <a href=\"http://www.gasb.org/cs/ContentServer?pagename=GASB/GASBContent_C/UsersArticlePage&cid=1176156735732\">U.S. General Fund</a>, which is the same place that money from individual and corporate income taxes go. A general fund is a government's basic operating fund and accounts for everything not accounted for in another fund. The U.S. General Fund pays for roughly two-thirds of all federal expenditures, including the U.S. military, parks and schools.</p></div>"
-                    ,
-                    images : "<img src=\"https://meiqimichelle.github.io/d3-minihack/assets/img/icon_1397.svg\" alt=\"Dogtags\"><img src=\"https://meiqimichelle.github.io/d3-minihack/assets/img/icon_13130.svg\" alt=\"Park\"><img src=\"https://meiqimichelle.github.io/d3-minihack/assets/img/icon_1567.svg\" alt=\"Book and test tube\">"
-                } 
-            , 
-                //Array ID -> 1
-                "States" : {
-                    content : "<div class=\"disbursement_bubble_details\"><h1>States</h1><p>Revenues from the offshore (outer continental shelf, or OCS) locations are shared with states in two ways. One, 27% of revenues from leases in the 8(g) zone are shared with states. The 8(g) zone is made up of the first three nautical miles of the OCS. 8(g) refers to Section 8(g) of the <a href=\"http://www.epw.senate.gov/ocsla.pdf\">Outer Continental Shelf Lands Act (OCSLA)</a>. Two, 37.5% of revenues from certain leases in the Gulf of Mexico are shared with four Gulf Coast States (Alabama, Louisiana, Mississippi, and Texas) and their Coastal Political Subdivisions (CPS), such as counties and parishes, through the <a href=\"http://www.boem.gov/Oil-and-Gas-Energy-Program/Energy-Economics/Revenue-Sharing/Index.aspx\">Gulf of Mexico Energy Security Act (GOMESA)</a>. Each state and CPS decides how to use the revenue, as long as the expenditure supports coastal protection or restoration, mitigation of damage to marine wildlife or natural resources, implementation of marine or coastal management plans, mitigation of OCS activities, or related administration costs.</p></div>"
-                    ,
-                    images : "<img src=\"https://meiqimichelle.github.io/d3-minihack/assets/img/icon_4572.svg\" alt=\"Offshore oil rig\"><img src=\"https://meiqimichelle.github.io/d3-minihack/assets/img/icon_8676.svg\" alt=\"Coast\">"
-                }
-            ,
-                //Array ID -> 2
-                "Historic Preservation Fund" : {
-                    content : "<div class=\"disbursement_bubble_details\"><h1>Historic Preservation Fund</h1><p>The <a href=\"http\://www.nps.gov/history/hpg/\">Historic Preservation Fund</a> helps preserve U.S. historical and archaeological sites and cultural heritage through grants to State and Tribal Historic Preservation Offices. Some examples of activities include a <a href=\"http\://www.michiganmodern.org/\">survey of modernist architecture</a> in Michigan, <a href=\"http\://ncptt.nps.gov/blog/tribal-heritage-grants/\">restoration of the Peoria Schoolhouse</a> by the Peoria Tribe of Indians of Oklahoma and <a href=\"http\://ncptt.nps.gov/blog/tribal-heritage-grants/\">documenting Yup’ik Songs & Dances</a> by the Calista Elders Council of Alaska.</p></div>"
-                    ,
-                    images : "<img src=\"https://meiqimichelle.github.io/d3-minihack/assets/img/icon_1566.svg\" alt=\"City buildings\"><img src=\"https://meiqimichelle.github.io/d3-minihack/assets/img/icon_10119.svg\" alt=\"Schoolhouse\"><img src=\"https://meiqimichelle.github.io/d3-minihack/assets/img/icon_7038.svg\" alt=\"Video camera\">"
-                }
-            ,
-                //Array ID -> 3
-                "Land & Water Conservation Fund" : {
-                    content : "<div class=\"disbursement_bubble_details\"><h1>Land &amp; Water Conservation Fund</h1><p>The <a href=\"http\://www.nps.gov/lwcf/\">Land & Water Conservation Fund</a> provides matching grants to states and local governments to buy and develop public outdoor recreation areas. It has supported projects in all 50 states and U.S. territories, creating community parks and trails and protecting clean water sources. A few places that were funded by the LWCF include <a href=\"http\://www.emnrd.state.nm.us/SPD/eaglenestlakestatepark.html\">Eagle Nest Lake State Park, New Mexico</a>, <a href=\"http\://www.mitchellparkdc.org/history.html\">Mitchell Park, District of Columbia</a>, and <a href=\"http\://www.ofallon.org/parks/pages/family-sports-park\">Family Sports Park, Illinois</a>.</p></div>"
-                    ,
-                    images :"<img src=\"https://meiqimichelle.github.io/d3-minihack/assets/img/icon_16251.svg\" alt=\"Mountains\"><img src=\"https://meiqimichelle.github.io/d3-minihack/assets/img/icon_26235.svg\" alt=\"Playground\"><img src=\"https://meiqimichelle.github.io/d3-minihack/assets/img/icon_25079.svg\" alt=\"Baseball field\">"
-            }   
-            ,
-                //Array ID -> 2
-                "Other Funds" : {
-                    content : "<div class=\"disbursement_bubble_details\"><h1>Other Funds</h1><p>Some revenue from offshore locations returns to the Federal agency that manages the area. For offshore locations, these are the <a href=\"http://www.boem.gov/\">Bureau of Ocean Energy Management</a> and the <a href=\"http://www.bsee.gov/\">Bureau of Safety and Environmental Enforcement</a>. These revenues are used to fund the operations of these agencies, and reduces the amount of Federal funding they receive from Congress.</p></div>"
-                    ,
-                    images : ""
-                }
-            
-        },
+    selection.select(".name")
+      .text(function(d) { return d.name; });
+    selection.select(".context")
+      .attr("class", function(d) {
+        return ["context", d.shore].join(" ");
+      });
+    selection.select(".year")
+      .text(function(d) { return d.year; });
+    selection.select(".shore")
+      .text(function(d) { return d.shore; });
+    selection.select(".revenue")
+      .text(function(d) { return format(d.value / billion); });
 
-        "onshore": {
-            //Remember that the count starts at zero
-            //NOTE: img links are currently hard coded to gh pages site -- fix later -- figure out how to make these relative given that Jekyll won't parse JS files and so can't use {{ site.url }}
-            
-                //Array ID -> 0
-                "States" : {
-                    content : "<div class=\"disbursement_bubble_details\"><h1>States</h1><p>The state share of onshore revenues mostly go directly to states, with percentages going to several other funds and state entities. For example, <a href=\"http://www.blm.gov/wo/st/en/prog/energy/geothermal.html\">some revenue from geothermal resources goes directly to counties</a>. It's up to each county and state to decide how to use the revenue.</p></div>"
-                    ,
-                    images : "<img src=\"https://meiqimichelle.github.io/d3-minihack/assets/img/icon_2070.svg\" alt=\"Geothermal energy plant\"><img src=\"https://meiqimichelle.github.io/d3-minihack/assets/img/icon_38222.svg\" alt=\"U.S. States\">"
-                }
-            , 
-                //Array ID -> 1
-                "Reclamation Fund" : {
-                    content : "<div class=\"disbursement_bubble_details\"><h1>Reclamation Fund</h1><p><a href=\"http://www.nps.gov/nr/travel/ReclamationDamsAndWaterProjects/Mission_of_the_Bureau_of_Reclamation.html\">The Reclamation Fund</a> is a special fund established by the United States Congress under the Reclamation Act of 1902 to pay for Bureau of Reclamation projects. The Bureau of Reclamation is best known for its dams and power plants which provide <a href=\"http://www.usbr.gov/facts.html\">irrigation water for 10 million acres of farmland</a> and <a href=\"http://www.usbr.gov/facts.html\">40 billion kilowatt hours of energy produced from hydroelectric power</a>.</p></div>"
-                    ,
-                    images : "<img src=\"https://meiqimichelle.github.io/d3-minihack/assets/img/icon_18711.svg\" alt=\"Farm\"><img src=\"https://meiqimichelle.github.io/d3-minihack/assets/img/icon_265.svg\" alt=\"Dam\">"
-                }
-            , 
-                //Array ID -> 2
-                "U.S. Treasury" : {
-                    content : "<div class=\"disbursement_bubble_details\"><h1>U.S. Treasury</h1><p>Some offshore revenue goes into the <a href=\"http://www.gasb.org/cs/ContentServer?pagename=GASB/GASBContent_C/UsersArticlePage&cid=1176156735732\">U.S. General Fund</a>, which is the same place that money from individual and corporate income taxes go. A general fund is a government's basic operating fund and accounts for everything not accounted for in another fund. The U.S. General Fund pays for roughly two-thirds of all federal expenditures, including the U.S. military, parks and schools.</p></div>"
-                    ,
-                    images : "<img src=\"https://meiqimichelle.github.io/d3-minihack/assets/img/icon_1397.svg\" alt=\"Dogtags\"><img src=\"https://meiqimichelle.github.io/d3-minihack/assets/img/icon_13130.svg\" alt=\"Park\"><img src=\"https://meiqimichelle.github.io/d3-minihack/assets/img/icon_1567.svg\" alt=\"Book and test tube\">"
-                }
-            , 
-                //Array ID -> 2
-                "American Indian Tribes" : {
-                    content : "<div class=\"disbursement_bubble_details\"><h1>American Indian Tribes</h1><p>The Interior Department disburses 100 percent of the revenues received for energy and mineral production activities on Indian lands directly to the Tribes and individual Indian mineral owners. Tribes then distribute the revenues among all members or apply the revenues to health care, infrastructure, education and other critical community development programs, such as senior centers, public safety projects, and youth initiatives. Many individual Indian mineral owners use these revenues as a major source of income to support their families and communities.</p></div>"
-                    ,
-                    images : ""
-                }
-            , 
-                //Array ID -> 2
-                "Other Funds" : {
-                    content : "<div class=\"disbursement_bubble_details\"><h1>Other Funds</h1><p>Some revenue from onshore locations returns to the Federal agency that manages the land. For onshore locations, these are the <a href=\"http://www.blm.gov/\">Bureau of Land Management</a>, the <a href=\"http://www.fws.gov/\">U.S. Fish & Wildlife Service</a>, and  <a href=\"http://www.fs.fed.us/\">U.S. Forest Service</a>. These revenues are used to fund the operations of these agencies, and reduces the amount of Federal funding they receive from Congress. In addition, $50 million dollars each go to two legislated funds, the <a href=\"http://energy.gov/fe/science-innovation/oil-gas/ultra-deepwater-and-unconventional-natural-gas-and-other-petroleum\">Ultra-Deepwater Research Program</a> and the <a href=\"http://www.bia.gov/WhoWeAre/RegionalOffices/Navajo/What/index.htm\">Mescal Settlement Agreement</a>.</p></div>"
-                    ,
-                    images : ""
-                }
-            }
-        
-    };
-});
-
-//Setup onclick for year tabs
-$(document).ready(function(){
-    $('div.bubble_tabs a').each(function(){
-        $(this).click(function(){
-            $('section.bubbles svg text').each(function(){
-                $(this).tipsy('hide');
-            });
-            if(!$(this).hasClass('active'))
-                $(this).addClass('active');
-            $(this).siblings('a').removeClass('active');
+    var icons = selection.select(".icons")
+      .selectAll(".icon")
+        .data(function(d) {
+          return d.meta.icons.map(function(id) {
+            return {
+              id: id,
+              label: iconLabels[id] || id
+            };
+          });
         });
-    });
-});
 
+    icons.exit()
+      .remove();
+
+    icons.enter()
+      .append("svg")
+        .call(createIcon);
+
+    icons
+      .call(updateIcon);
+  }
+
+  function createIcon(selection) {
+    selection
+      .attr("role", "img")
+      .attr("class", "icon")
+      .append("use");
+  }
+
+  function updateIcon(selection) {
+    selection
+      .attr("class", function(d) {
+        return ["icon", d.id].join(" ");
+      })
+      .attr("aria-label", function(d) {
+        return d.label;
+      })
+      .select("use")
+        .attr("xlink:href", function(d) {
+          return window.site.baseurl + "/static/fonts/EITI/icons.svg#eiti-" + d.id;
+        });
+  }
+
+  function highlightFund(fund) {
+    clearTimeout(infoTimeout);
+    defaultDisplay.style("display", "none");
+    // bind the data for the bubble and the fund metadata to the
+    // corresponding info bubble div, then call updateMetadata() on it
+    d3.select("#bubble-info-" + fund.year)
+      .style("display", null)
+      .datum(fund)
+      .call(updateMetadata);
+  }
+
+  function unhighlightFund(fund) {
+    infoTimeout = setTimeout(function() {
+      defaultDisplay.style("display", null);
+      // hide the bubble info panel on mouseout
+      d3.select("#bubble-info-" + fund.year)
+        .style("display", "none");
+    }, 200);
+  }
+
+  function selectFund(fund) {
+    fundInfo
+      .style("display", null);
+
+    fundInfo.select(".name")
+      .attr("class", ["name", fund.shore].join(" "))
+      .select(".text")
+        .text(fund.name);
+
+    fundInfo.select(".content")
+      .html(fund.meta.content);
+  }
+
+  /*
+   * This is a super-dirty little hack to load multiple JSON URLs in parallel,
+   * substituting positional arguments for the data returned in each URL.
+   *
+   * queue(["foo.json", "bar.json"], function(error, foo, bar) {
+   *   if (error) {
+   *     // do something and bail
+   *     return;
+   *   }
+   *   // do something with `foo` and `bar`
+   * });
+   */
+  function queue(urls, callback) {
+    var data = [],
+        count = urls.length;
+    return reqs = urls.map(function(url, i) {
+      return d3.json(url, function(error, res) {
+        if (error) return callback(error);
+        data[i] = res;
+        if (--count === 0) {
+          callback.apply(null, [null].concat(data));
+        }
+      });
+    });
+  }
+
+})();

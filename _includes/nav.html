@@ -1,28 +1,37 @@
 <nav id="sticky-nav" class="nav" role="navigation" aria-label="primary" itemscope itemtype="http://schema.org/SiteNavigationElement">
+
   <a id="nav-toggle" href="#"><span></span></a>
-  <div class="container">
+  
     <ul class="menu">
-    <a href="{{ site.baseurl }}/" itemprop="url" {% if page.title == "Home" %}class="active" {% endif %}>
-    	<li itemprop="name">Home</li>
-    </a>
-    <a href="{{ site.baseurl }}/about/" itemprop="url" {% if page.title == "About" %}class="active" {% endif %}>
-    	<li itemprop="name">About This Site</li>
-    </a>
-    <a href="{{ site.baseurl }}/sectors/" itemprop="url" {% if page.title == "Natural Resource Sectors in the U.S." %}class="active" {% endif %}>
-    	<li itemprop="name">U.S. Natural Resource Sectors</li>
-    </a>
-    <a href="{{ site.baseurl }}/data/" {% if page.title == "Data" %}class="active" {% endif %}>
-    	<li itemprop="name">Filter &amp; Download Data</li>
-    </a>
-    <li class="last" itemprop="name">
-        <form role="form" id="search" action="{{ site.baseurl }}/search" method="GET">
-            <div class="search-content">
-                <label for="site-search-text">Search our resources...</label>
-                <input type="search" class="form-control" id="site-search-text" name="q" title="Search" role="search" placeholder='Search our resources...'>
-                <input type="submit" value="&#10095;" title="Submit Search">
-            </div>
-        </form>
-    </li>
+        <a href="{{ site.baseurl }}/" itemprop="url" {% if page.title == "Home" %}class="active" {% endif %}>
+        	<li itemprop="name">Home</li>
+        </a>
+
+        <a href="{{ site.baseurl }}/about/" itemprop="url" {% if page.title == "About" %}class="active" {% endif %}>
+        	<li itemprop="name">About This Site</li>
+        </a>
+
+        <a href="{{ site.baseurl }}/sectors/" itemprop="url" {% if page.title == "Natural Resource Sectors in the U.S." %}class="active" {% endif %}>
+        	<li itemprop="name">U.S. Natural Resource Sectors</li>
+        </a>
+        
+        <li class="nav-last nav-right" itemprop="name">
+            <form role="form" id="search" action="{{ site.baseurl }}/search" method="GET">
+                <div class="search-content">
+                    <label for="site-search-text">Search related resources...</label>
+                    <input type="search" class="form-control" id="site-search-text" name="q" title="Search" role="search" placeholder="Search related resources...">
+                    <input type="submit" value="&#10095;" title="Submit Search">
+                </div>
+            </form>
+        </li>
+
+        <a href="{{ site.baseurl }}/documentation/" {% if page.title == "Documentation" %}class="active" {% endif %}>
+            <li class="nav-right" itemprop="name">Documentation</li>
+        </a>
+
+        <a href="{{ site.baseurl }}/data/" {% if page.title == "Data" %}class="active" {% endif %}>
+            <li class="nav-right" itemprop="name">Data</li>
+        </a>
     </ul>
-  </div>
+  
 </nav>

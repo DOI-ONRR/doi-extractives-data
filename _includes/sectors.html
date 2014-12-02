@@ -13,7 +13,7 @@
 
     <div class="sectors-text">
 
-      <p class="sectors-splash-text">Revenues from the sale of natural resources on Federal lands totaled <span class="sectors-big-text">$825.9</span> billion between 2003 and 2013.</p>
+      <p class="sectors-splash-text">Revenues from the sale of natural resources on Federal lands totaled <span class="sectors-big-text">$127.4</span> billion between 2003 and 2013.</p>
 
       <p>These revenues are made up of 
 
@@ -81,5 +81,37 @@
       </div>
       
     </div>
+
+    <div class="sectors-chart-notes">
+      <h1>Chart notes.</h1>
+      <ul>
+        <li>Calendar year 2003 &#8211; 2013 data.</li>
+        <li>Categories: 
+          
+          {% for term in site.data.terms %} {% if term.term == "coal" %}
+            <span class="term-tooltip" title="{{ term.definition }}" tabindex="0" role="tooltip">coal<i class="fa fa-question"></i></span>, 
+          {% endif %} {% endfor %}
+
+          {% for term in site.data.terms %} {% if term.term == "gas" %}
+            <span class="term-tooltip" title="{{ term.definition }}" tabindex="0" role="tooltip">gas<i class="fa fa-question"></i></span>, 
+          {% endif %} {% endfor %}
+
+          {% for term in site.data.terms %} {% if term.term == "geothermal" %}
+            <span class="term-tooltip" title="{{ term.definition }}" tabindex="0" role="tooltip">geothermal<i class="fa fa-question"></i></span>, 
+          {% endif %} {% endfor %}
+
+          {% for term in site.data.terms %} {% if term.term == "oil" %}
+            <span class="term-tooltip" title="{{ term.definition }}" tabindex="0" role="tooltip">oil<i class="fa fa-question"></i></span>, 
+          {% endif %} {% endfor %}
+
+          {% for term in site.data.terms %} {% if term.term == "other" %}
+            <span class="term-tooltip" title="{{ term.definition }}" tabindex="0" role="tooltip">other<i class="fa fa-question"></i></span>, 
+          {% endif %} {% endfor %}
+
+        </li>
+      </ul>
+    </div>
+
+
 
 </section>

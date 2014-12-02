@@ -6,3 +6,5 @@ permalink: /search/
 ---
 
 {: .focus-text}
+
+<p class="search-intro">This is a curated search.<br/> Results are drawn from related websites across the U.S. government.</p>

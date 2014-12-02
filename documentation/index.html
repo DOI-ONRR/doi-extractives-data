@@ -1,0 +1,20 @@
+---
+layout: subpage
+title: Documentation
+description: 'In support of the U.S. implementation of the international Extractive Industries Transparency Initiative, the U.S. Department of the Interior (DOI) is providing this public data portal that tells the story of natural resource revenues from Federal lands.'
+permalink: /documentation/
+---
+
+<h1>Documentation</h1>
+
+<section class="terms">
+	<h1>Terms and Definitions</h1>
+	<dl>
+		{% for term in site.data.terms %}
+			{% if term.display != false %}
+				<dt>{{ term.term }}</dt>
+				<dd>{{ term.definition }}</dd>
+			{% endif %}
+		{% endfor %}
+	</dl>
+</section>

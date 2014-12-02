@@ -67,16 +67,17 @@
 	  </script>
 	<![endif]-->
 
-	<!--[if lte IE 8]> ######CHECK ON IE8 STUFF, NOT UPDATED FROM NOTALONE#######
-	<script type="text/javascript" src="{{ site.baseurl }}/static/bower_components/respond/respond.min.js"></script>
-	  <link href="{{ site.baseurl }}/static/css/ie8.css" rel="stylesheet">
-	<![endif]-->
-	<!--[if IE]>
-	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<!--[if lte IE 8]>
+		<link rel="stylesheet" href="{{ "/static/css/ie.css" | prepend: site.baseurl }}">
 	<![endif]-->
 
-	<!-- jQuery -->
-	<!--<script src="{{ site.baseurl }}/static/js/min/jquery.min.js"></script>-->
+	<!--[if lte IE 9]>
+		<script type="text/javascript" src="{{ site.baseurl }}/static/js/min/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="{{ site.baseurl }}/static/js/min/respond.min.js"></script>
+		<script type="text/javascript" src="{{ site.baseurl }}/static/js/min/selectivizr.js"></script>
+		<script type="text/javascript" src="{{ site.baseurl }}/static/js/lib/jquery-extra-selectors.js"></script>
+		<script type="text/javascript" src="{{ site.baseurl }}/static/js/min/html5shiv.min.js"></script>
+	<![endif]-->
 
 	<!-- Libraries -->
 	<script src="{{ site.baseurl }}/static/js/lib/jquery.js"></script>
@@ -92,14 +93,6 @@
 	<!-- Helpers -->
 	<script src="{{ site.baseurl }}/static/js/helpers.js"></script>
 
-	<!-- ######CHECK ON IE9/jquery STUFF BELOW, NOT UPDATED FROM NOTALONE#######
-	<script src="{{ site.baseurl }}/static/js/min/iecors.min.js"></script> -->
-	<!--[if lte IE 9]>
-	<script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/jquery-ajaxtransport-xdomainrequest/1.0.0/jquery.xdomainrequest.min.js'></script>
-	<![endif]-->
-
-	<!-- <script src="{{ site.baseurl }}/static/js/where.js"></script> -->
-
 	<!-- For Mapbox
 	================================================== -->
 	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
@@ -111,9 +104,13 @@
 	<!-- 16x16 and 32x32-->
 	<link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico">
 
-	<!-- For IE 10 Metro tile icon -->
-	<meta name="msapplication-TileColor" content="#FFFFFF">
-	<meta name="msapplication-TileImage" content="{{ site.baseurl }}/static/img/favicon/favicon-144.png">
+	<!-- For IE 10/11 Metro tile icon -->
+	<meta name="application-name" content="USEITI"/>
+	<meta name="msapplication-TileColor" content="#ffffff"/>
+	<meta name="msapplication-square70x70logo" content="{{ site.baseurl }}/static/img/favicon/ie/tiny.png"/>
+	<meta name="msapplication-square150x150logo" content="{{ site.baseurl }}/static/img/favicon/ie/square.png"/>
+	<meta name="msapplication-wide310x150logo" content="{{ site.baseurl }}/static/img/favicon/ie/wide.png"/>
+	<meta name="msapplication-square310x310logo" content="{{ site.baseurl }}/static/img/favicon/ie/large.png"/>
 
 	<!-- For iPad with high-resolution Retina display running iOS ≥ 7: -->
 	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{ site.baseurl }}/static/img/favicon/favicon-152.png">
@@ -133,4 +130,9 @@
 	<!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
 	<link rel="apple-touch-icon-precomposed" href="{{ site.baseurl }}/static/img/favicon/favicon-57.png">
 
+    <!-- export some site variables to JavaScript -->
+    <script>
+      window.site = {};
+      window.site.baseurl = "{{ site.baseurl }}";
+    </script>
 </head>

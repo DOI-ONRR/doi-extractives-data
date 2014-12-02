@@ -1837,6 +1837,11 @@ $dashboard-height: 400px;
   }
 }
 
+.dashboard-revenue-buttons {
+  padding-top: 30px;
+  padding-left: 13%;
+}
+
 .dashboard-chart {
   @include span-columns(4 of 12);
   height: $dashboard-height;

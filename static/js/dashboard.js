@@ -813,8 +813,7 @@ Function: Performs post processing
 var graphCustomizations = function() {
     d3.selectAll("g.x text")
         .attr("class", "campusLabel")
-        .style("text-anchor", "end")
-        .attr("transform", "translate(-10,0)rotate(315)");
+        .style("text-anchor", "middle")
 
     d3.selectAll("#dashboard-bar-rev-by-commodity-group .bar").call(resources_barTip);
     d3.selectAll("#dashboard-bar-rev-by-commodity-group .bar").on('mouseover', resources_barTip.show)

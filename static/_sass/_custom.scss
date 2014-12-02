@@ -1678,6 +1678,7 @@ $max-width: 100%; //this is setting the width of outer-container.
     margin-bottom: 15px;
   }
   .dashboard_tabs {
+    margin-top: -20px;
     margin-left: 60%;
     @include rem-fallback(font-size, 1);
     a {
@@ -1703,21 +1704,18 @@ $max-width: 100%; //this is setting the width of outer-container.
 }
 
 .dashboard-canvas {
-  padding-left: 20px;
-  padding-right: 20px;
   background-color: $deep-gray;
   @include span-columns(12);
-}
-
-.dashboard-canvas {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px;
   color: white;
   h1 {
     font-family: Lato;
-    font-weight: 100;
+    font-weight: 200;
     color: white;
-    @include rem-fallback(font-size, 1.8);
+    @include rem-fallback(font-size, 1.7);
+  }
+  > h1 {
+    padding-left: 20px;
   }
   > div {
     background-color: $almost-black;
@@ -1736,8 +1734,11 @@ $max-width: 100%; //this is setting the width of outer-container.
   }
 }
 
+$dashboard-height: 500px;
+
 .dashboard-table {
   @include span-columns(4 of 12);
+  height: $dashboard-height;
   a {
     color: white;
     text-decoration: none;
@@ -1772,12 +1773,14 @@ $max-width: 100%; //this is setting the width of outer-container.
   text-align: right;
 }
 
+
 .dashboard-table-canvas {
   height: 350px;
   overflow: scroll;
 }
 
 .dashboard-revenue {
+  height: $dashboard-height;
   @include span-columns(2 of 12);
   p {
     margin-top: -15px;
@@ -1833,13 +1836,11 @@ $max-width: 100%; //this is setting the width of outer-container.
       }
     }
   }
-  .temp-controls { //moves working controls down until they are no longer needed. Delete.
-    margin-top: 20px;
-  }
 }
 
 .dashboard-chart {
   @include span-columns(4 of 12);
+  height: $dashboard-height;
   g g.axis text {
     fill: white;
   }

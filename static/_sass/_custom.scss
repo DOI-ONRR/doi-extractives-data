@@ -433,7 +433,6 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
     @include span-columns(9);
     padding-right: 50px;
   }
-  background-color: $mid-gray;
   background-color: transparentize(black, 0.55);
   margin-left: 20px;
   margin-bottom: 250px;

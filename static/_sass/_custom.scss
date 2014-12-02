@@ -1752,13 +1752,9 @@ $dashboard-height: 400px;
     border: none;
     border-radius: 0;
     color: white;
-  }
-  label { //this will need to change after implementing the JS-switch-search
+    font-style: italic;
     font-weight: 200;
     @include rem-fallback(font-size, 0.9);
-    font-style: italic;
-    margin-top: -41px;
-    padding-left: 8px;
   }
   .dc-table-label {
     display: none;
@@ -1776,6 +1772,13 @@ $dashboard-height: 400px;
 .dashboard-table-canvas {
   height: 250px;
   overflow: scroll;
+  th {
+    padding: 0;
+  }
+  td {
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
 }
 
 .dashboard-revenue {

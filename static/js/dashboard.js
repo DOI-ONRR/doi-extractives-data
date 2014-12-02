@@ -399,7 +399,7 @@ d3.csv("../static/data/Updated_Consolidated_Revenue_Data_with_Fake_Names.csv",fu
     Graph:Bar Graph, by commodity
     *****************************/
     dash_bar_rev_by_commodity_group
-        .width(400).height(400)
+        .width(350).height(400)
         .dimension(typeGroupDimension)
         .group(typeGroupDimension_allGroup, "Rent")
         .valueAccessor(function(d) {
@@ -423,7 +423,7 @@ d3.csv("../static/data/Updated_Consolidated_Revenue_Data_with_Fake_Names.csv",fu
         .xUnits(dc.units.ordinal)
         .x(d3.scale.ordinal())
         .y(d3.scale.log().nice().domain([1, 12500000000]))
-        .margins({top: 10, right: 10, bottom: 75, left:100})
+        .margins({top: 10, right: -2, bottom: 75, left:45})
         .yAxis().tickFormat(function(v){return text_money(v,false,true)});
     dash_bar_rev_by_commodity_group.on("filtered", function (chart) {
                 dc.events.trigger(function () {
@@ -432,7 +432,7 @@ d3.csv("../static/data/Updated_Consolidated_Revenue_Data_with_Fake_Names.csv",fu
     End: dash_bar_rev_by_commodity
     *****************************/
     dash_bar_rev_by_revenue_type_oil_and_gas
-        .width(400).height(400)
+        .width(350).height(400)
         .dimension(revDimension)
         .group(revDimension_allGroup, 'Oil')
         .valueAccessor(function(d) {
@@ -453,14 +453,14 @@ d3.csv("../static/data/Updated_Consolidated_Revenue_Data_with_Fake_Names.csv",fu
         .xUnits(dc.units.ordinal)
         .x(d3.scale.ordinal())
         .y(d3.scale.log().nice().domain([1, 12500000000]))
-        .margins({top: 10, right: 10, bottom: 75, left:100})
-        .yAxis().tickFormat(function(v){return "$"+ parseFloat(v).formatMoney(0,'.',',')});
+        .margins({top: 10, right: -2, bottom: 75, left:45})
+        .yAxis().tickFormat(function(v){return text_money(v,false,true)});
     dash_bar_rev_by_revenue_type_oil_and_gas.on("filtered", function (chart) {
                 dc.events.trigger(function () {
                 });});
 
     dash_bar_rev_by_revenue_type_renewables
-        .width(400).height(400)
+        .width(350).height(400)
         .dimension(revDimension)
         .group(revDimension_allGroup, 'Geothermal')
         .valueAccessor(function(d) {
@@ -481,8 +481,8 @@ d3.csv("../static/data/Updated_Consolidated_Revenue_Data_with_Fake_Names.csv",fu
         .xUnits(dc.units.ordinal)
         .x(d3.scale.ordinal())
         .y(d3.scale.log().nice().domain([1, 12500000000]))
-        .margins({top: 10, right: 10, bottom: 75, left:100})
-        .yAxis().tickFormat(function(v){return "$"+ parseFloat(v).formatMoney(0,'.',',')});
+        .margins({top: 10, right: -2, bottom: 75, left:45})
+        .yAxis().tickFormat(function(v){return text_money(v,false,true)});
     dash_bar_rev_by_revenue_type_renewables.on("filtered", function (chart) {
                 dc.events.trigger(function () {
                 });});

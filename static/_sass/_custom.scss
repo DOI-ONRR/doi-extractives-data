@@ -1892,7 +1892,8 @@ $dashboard-height: 400px;
   }
 }
 
-#dashboard-bar-rev-by-revenue-type-oil-and-gas {
+#dashboard-bar-rev-by-revenue-type-oil-and-gas,
+#dashboard-bar-rev-by-revenue-type-renewables {
   g.stack._0  > rect.bar {
     stroke: #272727;
     fill: darken($useiti-blue, 10%);

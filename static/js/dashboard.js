@@ -852,5 +852,14 @@ $(document).ready(function(){
         $('div > i',$(this)).toggleClass('fa-check');
         update_graph_options($('#OptionsList a'), revDimension);
     });
-})
+});
 
+/************************
+Table More Link
+************************/
+$(document).ready(function(){
+    $('div.dashboard-table-more').click(function(){
+        toggle_divs('#toggleDivLink','#dashboard-totals-table','#dashboard-table','◀ less','more ▶');
+        $('div.dashboard-table').toggleClass('dashboard-table-expand'); 
+    });
+});

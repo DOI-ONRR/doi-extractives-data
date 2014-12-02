@@ -35,7 +35,7 @@ permalink: /data/
       <label for="table-search" class="sr-only">Companies: enter a company name to filter&#133;. Following table updates to show companies based on text input</label>
 
       <div class="dashboard-table-more">
-        <a href="javascript:toggle_divs('#toggleDivLink','#dashboard-totals-table','#dashboard-table','◀ less','more ▶')" id="toggleDivLink">more ▶</a>
+        <a href="javascript:void(0);" id="toggleDivLink">more ▶</a>
       </div>
 
       <div class="dashboard-table-canvas scroll-pane">
@@ -139,6 +139,8 @@ permalink: /data/
     </div>
 
   </section>
+  <section class="dashboard-location" style='display:none;'>location section</section>
+  <section class="dashboard-over-time" style='display:none;'>over time</section>
 
 </div>
 
@@ -168,6 +170,40 @@ permalink: /data/
  $("#table-search").on('input',function(){
    text_filter(companyDimension,this.value);
  });
+
+/*****************\
+   Tab Switching
+\*****************/
+$(document).ready(function(){
+  $('div.dashboard_tabs a:nth-child(1)').click(function(){
+    $('div.dashboard_tabs a').each(function(){
+      $(this).removeClass('active')
+    });
+    $(this).toggleClass('active');
+    $('section.dashboard-canvas').show();
+    $('section.dashboard-location').hide();
+    $('section.dashboard-over-time').hide();
+  });
+  $('div.dashboard_tabs a:nth-child(2)').click(function(){
+    $('div.dashboard_tabs a').each(function(){
+      $(this).removeClass('active')
+    });
+    $(this).toggleClass('active');
+    $('section.dashboard-canvas').hide();
+    $('section.dashboard-location').show();
+    $('section.dashboard-over-time').hide();
+  });
+  $('div.dashboard_tabs a:nth-child(3)').click(function(){
+    $('div.dashboard_tabs a').each(function(){
+      $(this).removeClass('active')
+    });
+    $(this).toggleClass('active');
+    $('section.dashboard-canvas').hide();
+    $('section.dashboard-location').hide();
+    $('section.dashboard-over-time').show();
+  });
+});
+
  // $("input.commodity").change(function(){
  //    update_graph_options($("#OptionsList input"), typeDimensionHelper);
  // });

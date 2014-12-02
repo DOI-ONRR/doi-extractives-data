@@ -235,7 +235,7 @@
      * (do this after loading data so that we can measure bounding rectangles
      * before hiding the enclosing div w/`display: none`)
      */
-    selectYear(years[0]);
+    selectYear(2013);
 
   }); // end load data in parallel
 

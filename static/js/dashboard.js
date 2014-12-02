@@ -399,7 +399,7 @@ d3.csv("../static/data/Updated_Consolidated_Revenue_Data_with_Fake_Names.csv",fu
     Graph:Bar Graph, by commodity
     *****************************/
     dash_bar_rev_by_commodity_group
-        .width(350).height(400)
+        .width(350).height(360)
         .dimension(typeGroupDimension)
         .group(typeGroupDimension_allGroup, "Rent")
         .valueAccessor(function(d) {
@@ -432,7 +432,7 @@ d3.csv("../static/data/Updated_Consolidated_Revenue_Data_with_Fake_Names.csv",fu
     End: dash_bar_rev_by_commodity
     *****************************/
     dash_bar_rev_by_revenue_type_oil_and_gas
-        .width(350).height(400)
+        .width(350).height(360)
         .dimension(revDimension)
         .group(revDimension_allGroup, 'Oil')
         .valueAccessor(function(d) {
@@ -460,7 +460,7 @@ d3.csv("../static/data/Updated_Consolidated_Revenue_Data_with_Fake_Names.csv",fu
                 });});
 
     dash_bar_rev_by_revenue_type_renewables
-        .width(350).height(400)
+        .width(350).height(360)
         .dimension(revDimension)
         .group(revDimension_allGroup, 'Geothermal')
         .valueAccessor(function(d) {

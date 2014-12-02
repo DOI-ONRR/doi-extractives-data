@@ -1734,10 +1734,10 @@ $max-width: 100%; //this is setting the width of outer-container.
   }
 }
 
-$dashboard-height: 500px;
+$dashboard-height: 400px;
 
 .dashboard-table {
-  @include span-columns(4 of 12);
+  @include span-columns(5 of 12);
   height: $dashboard-height;
   a {
     color: white;
@@ -1773,9 +1773,8 @@ $dashboard-height: 500px;
   text-align: right;
 }
 
-
 .dashboard-table-canvas {
-  height: 350px;
+  height: 250px;
   overflow: scroll;
 }
 

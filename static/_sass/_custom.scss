@@ -1896,8 +1896,9 @@ $dashboard-height: 400px;
 
 .dashboard-download {
   @include span-columns(12 of 12);
-  margin-top: 20px;
+  margin-top: 5px;
   margin-bottom: 15px;
+  margin-left: -20px;
 }
 
 .dashboard-button {

@@ -1911,7 +1911,7 @@ $max-width: 100%; //this is setting the width of outer-container.
 $dashboard-height: 400px;
 
 .dashboard-table {
-  @include span-columns(5 of 12);
+  @include span-columns(4 of 12);
   height: $dashboard-height;
   a {
     color: white;
@@ -1941,6 +1941,10 @@ $dashboard-height: 400px;
 .dashboard-table-more {
   @include rem-fallback(font-size, 0.8);
   text-align: right;
+}
+
+.dashboard-table-expand {
+  @include span-columns(5 of 12);
 }
 
 .dashboard-table-canvas {
@@ -2022,6 +2026,7 @@ $dashboard-height: 400px;
 
 .dashboard-chart {
   @include span-columns(4 of 12);
+  @include omega();
   height: $dashboard-height;
   g g.axis text {
     fill: white;

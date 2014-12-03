@@ -2097,19 +2097,14 @@ $dashboard-height: 400px;
   //need a legend for oil and gas. this will need adjustment.
   g.dc-legend-item:nth-child(1) > rect:nth-child(1) {
     stroke: none;
-    fill: $red;
+    fill: darken($useiti-blue, 10%);
   }
   g.dc-legend-item:nth-child(2) > rect:nth-child(1) {
     stroke: none;
-    fill: $useiti-green;
+    fill: lighten($useiti-blue, 10%);
   }
-  g.dc-legend-item:nth-child(3) > rect:nth-child(1) {
-    stroke: none;
-    fill: $useiti-blue;
-  }
-  g.dc-legend-item:nth-child(4) > rect:nth-child(1) {
-    stroke: none;
-    fill: $useiti-purple;
+  g.dc-legend-item:nth-child(3) {
+    display: none;
   }
 }
 

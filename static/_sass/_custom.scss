@@ -2142,6 +2142,20 @@ $dashboard-height: 400px;
   }
 }
 
+.dashboard-chart-back {
+  margin-top: -60px;
+  margin-right: 30px;
+  a {
+    color: white;
+    text-decoration: none;
+    @include rem-fallback(font-size, 0.8);
+    &:focus,
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
 // Search
 //============================================
 

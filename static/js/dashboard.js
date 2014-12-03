@@ -708,8 +708,8 @@ d3.csv("../static/data/Updated_Consolidated_Revenue_Data_with_Fake_Names.csv",fu
                } 
             });
         });
-       var $newDiv = $('<div>');
-       var $link = $('<a href="javascript:void(0);">back</a>');
+       var $newDiv = $('<div class="dashboard-chart-back">');
+       var $link = $('<a href="javascript:void(0);">◀ back</a>');
        $link.click(function(){
             typeDimension.filterAll();
             draw_totals_table();
@@ -722,8 +722,8 @@ d3.csv("../static/data/Updated_Consolidated_Revenue_Data_with_Fake_Names.csv",fu
        $newDiv.append($link);
        $('#dashboard-bar-rev-by-revenue-type-renewables').append($newDiv);
 
-       var $newDiv = $('<div>');
-       var $link = $('<a href="javascript:void(0);">back</a>');
+       var $newDiv = $('<div class="dashboard-chart-back">');
+       var $link = $('<a href="javascript:void(0);">◀ back</a>');
        $link.click(function(){
             typeDimension.filterAll();
             draw_totals_table();

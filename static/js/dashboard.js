@@ -812,17 +812,17 @@ var commodities_barTip = d3.tip()
         {
             var s = "";
             if (d.data.value.oil_rev != 0)
-                s += "<br /><div style='float:left'>Oil revenue:</div><div style='float:right'><span style='color:#d54740'>$" + parseFloat(d.data.value.oil_rev).formatMoney(2, '.', ',') + "</span></div>";
+                s += "<br /><div style='float:left'>oil:</div><div style='float:right'><span style='color:#d54740'>$" + parseFloat(d.data.value.oil_rev).formatMoney(2, '.', ',') + "</span></div>";
             if (d.data.value.gas_rev != 0)
-                s += "<br /><div style='float:left'>Gas revenue:</div><div style='float:right'><span style='color:#d54740'>$" + parseFloat(d.data.value.gas_rev).formatMoney(2, '.', ',') + "</span></div>";
+                s += "<br /><div style='float:left'>gas:</div><div style='float:right'><span style='color:#d54740'>$" + parseFloat(d.data.value.gas_rev).formatMoney(2, '.', ',') + "</span></div>";
             if (d.data.value.oilandgas_rev != 0)
-                s += "<br /><div style='float:left'>Oil & Gas revenue:</div><div style='float:right'><span style='color:#d54740'>$" + parseFloat(d.data.value.oilandgas_rev).formatMoney(2, '.', ',') + "</span></div>";
+                s += "<br /><div style='float:left'>oil & gas:</div><div style='float:right'><span style='color:#d54740'>$" + parseFloat(d.data.value.oilandgas_rev).formatMoney(2, '.', ',') + "</span></div>";
             if (d.data.value.geo_rev != 0)
-                s+= "<br /><div style='float:left'>Geothermal revenue:</div><div style='float:right'><span style='color:#d54740'>$"+parseFloat(d.data.value.geo_rev).formatMoney(2,'.',',')+"</span></div>";
+                s+= "<br /><div style='float:left'>geothermal:</div><div style='float:right'><span style='color:#d54740'>$"+parseFloat(d.data.value.geo_rev).formatMoney(2,'.',',')+"</span></div>";
             if (d.data.value.wind_rev != 0)
-                s+= "<br /><div style='float:left'>Wind revenue:</div><div style='float:right'><span style='color:#d54740'>$"+parseFloat(d.data.value.wind_rev).formatMoney(2,'.',',')+"</span></div>";
+                s+= "<br /><div style='float:left'>wind:</div><div style='float:right'><span style='color:#d54740'>$"+parseFloat(d.data.value.wind_rev).formatMoney(2,'.',',')+"</span></div>";
             s+= "<hr>";
-            s+= "<div style='float:left'>total revenue:</div><div style='float:right'><span style='color:#d54740'>$"+parseFloat(d.data.value.sum).formatMoney(2,'.',',')+"</span></div>";
+            s+= "<div style='float:left'>total:</div><div style='float:right'><span style='color:#d54740'>$"+parseFloat(d.data.value.sum).formatMoney(2,'.',',')+"</span></div>";
 
             return s;
         }

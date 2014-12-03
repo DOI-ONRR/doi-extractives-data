@@ -233,12 +233,10 @@ d3.csv("../static/data/Updated_Consolidated_Revenue_Data_with_Fake_Names.csv",fu
                     p.gas_rev = parseFloat((p.gas_rev + r).toFixed(2));
                 if (p.type == "Oil & Gas")
                     p.oilandgas_rev = parseFloat((p.oilandgas_rev + r).toFixed(2));
-                if (p.type == "Oil & Gas")
-                    p.oilandgas_rev = parseFloat((p.oilandgas_rev + r).toFixed(2));
                 if (p.type == "Geothermal")
-                    p.geo_rev = parseFloat((p.oilandgas_rev + r).toFixed(2));
+                    p.geo_rev = parseFloat((p.geo_rev + r).toFixed(2));
                 if (p.type == "Wind")
-                    p.wind_rev = parseFloat((p.oilandgas_rev + r).toFixed(2));
+                    p.wind_rev = parseFloat((p.wind_rev + r).toFixed(2));
                 return p;
             },
             //remove
@@ -267,9 +265,9 @@ d3.csv("../static/data/Updated_Consolidated_Revenue_Data_with_Fake_Names.csv",fu
                 if (p.type == "Oil & Gas")
                     p.oilandgas_rev = parseFloat((p.oilandgas_rev - r).toFixed(2));
                 if (p.type == "Geothermal")
-                    p.geo_rev = parseFloat((p.oilandgas_rev - r).toFixed(2));
+                    p.geo_rev = parseFloat((p.geo_rev - r).toFixed(2));
                 if (p.type == "Wind")
-                    p.wind_rev = parseFloat((p.oilandgas_rev - r).toFixed(2));
+                    p.wind_rev = parseFloat((p.wind_rev - r).toFixed(2));
 
 
                 return p;
@@ -464,13 +462,10 @@ d3.csv("../static/data/Updated_Consolidated_Revenue_Data_with_Fake_Names.csv",fu
         .dimension(revDimension)
         .group(revDimension_allGroup, 'Geothermal')
         .valueAccessor(function(d) {
-            return d.value.oil_rev;
+            return d.value.geo_rev;
         })
         .stack(revDimension_allGroup, 'Wind',function(d){
-            return d.value.gas_rev;
-        })
-        .stack(revDimension_allGroup,'Oil and Gas', function(d){
-            return d.value.oilandgas_rev;
+            return d.value.wind_rev;
         })
         //.legend(dc.legend().x(470).y(100))
         .centerBar(false)
@@ -481,12 +476,38 @@ d3.csv("../static/data/Updated_Consolidated_Revenue_Data_with_Fake_Names.csv",fu
         .xUnits(dc.units.ordinal)
         .x(d3.scale.ordinal())
         .y(d3.scale.log().nice().domain([1, 12500000000]))
-        .margins({top: 10, right: -2, bottom: 75, left:45})
-        .yAxis().tickFormat(function(v){return text_money(v,false,true)});
+        .margins({top: 10, right: -2, bottom: 75, left:45});
+        
+    
+    dash_bar_rev_by_revenue_type_renewables.yAxis().tickFormat(function(v){return text_money(v,false,true)});
     dash_bar_rev_by_revenue_type_renewables.on("filtered", function (chart) {
                 dc.events.trigger(function () {
                 });});
+   
+    /*****************************
+    Graph: Format xAxis for inner graphs
+    *****************************/
 
+    var formatxAxisForInnerGraphs = function(v){
+        var s='';
+            switch(v){
+                case 'Rents':
+                    s = 'rent';
+                    break;
+                case 'Royalties':
+                    s = 'royalty';
+                    break;
+                case 'Bonus':
+                    s = 'bonus';
+                    break;
+                case 'Other Revenues':
+                    s = 'other';
+                    break;
+            }
+            return s;
+    }
+    dash_bar_rev_by_revenue_type_renewables.xAxis().tickFormat(formatxAxisForInnerGraphs);
+    dash_bar_rev_by_revenue_type_oil_and_gas.xAxis().tickFormat(formatxAxisForInnerGraphs);
     /*****************************
     Graph: Pie Graph, by commodity
     *****************************/

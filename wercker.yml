@@ -1,5 +1,7 @@
 # our build should run within a Ruby box
 box: wercker/rvm@2.3.0
+steps:
+  - dlapiduz/step-cf-invalidate
 build:
   steps:
     # Run a smart version of bundle install
@@ -18,4 +20,9 @@ deploy:
         key_id: $KEY
         key_secret: $SECRET
         bucket_url: $URL
-        source_dir: _site/
+        source_dir: _site
+    - dlapiduz/cf-invalidate:
+        key_id: $KEY
+        key_secret: $SECRET
+        distribution_id: $CF_DIST
+        path: /*

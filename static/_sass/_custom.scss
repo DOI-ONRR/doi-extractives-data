@@ -2182,6 +2182,10 @@ $dashboard-height: 400px;
     @include span-columns(6 of 12);
   }
 }
+text.x-axis-label{
+  stroke:#938F80;
+  fill:#938F80;
+}
 
 // Search
 //============================================

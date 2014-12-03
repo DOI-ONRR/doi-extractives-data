@@ -59,13 +59,18 @@ function text_money(f,c,tiny){
 	return s+=" "+t;
 }
 
-function sort_dataTable(dataTable, dataField, that)
+function sort_dataTable(dataTable, dataField, order)
 {
 	dataTable.sortBy(function(d){return d[dataField]});
-	if (dataTable.order() == d3.ascending)
-		dataTable.order(d3.descending);
+	if (!order)
+	{
+		if (dataTable.order() == d3.ascending)
+			dataTable.order(d3.descending);
+		else
+			dataTable.order(d3.ascending);
+	}
 	else
-		dataTable.order(d3.ascending);
+		dataTable.order(order);
 	dc.redrawAll();
 	graphCustomizations();
 }

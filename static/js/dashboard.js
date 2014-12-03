@@ -418,6 +418,7 @@ d3.csv("../static/data/Updated_Consolidated_Revenue_Data_with_Fake_Names.csv",fu
         .elasticY(true)
         .brushOn(false)
         .turnOnControls(true)
+        .xAxisLabel("Commodities")
         .xUnits(dc.units.ordinal)
         .x(d3.scale.ordinal())
         .y(d3.scale.log().nice().domain([1, 12500000000]))
@@ -442,12 +443,13 @@ d3.csv("../static/data/Updated_Consolidated_Revenue_Data_with_Fake_Names.csv",fu
         .stack(revDimension_allGroup,'Oil and Gas', function(d){
             return d.value.oilandgas_rev;
         })
-        //.legend(dc.legend().x(470).y(100))
+        .legend(dc.legend().x(50).y(0))
         .centerBar(false)
         .gap(40)
         .elasticY(true)
         .brushOn(false)
         .turnOnControls(true)
+        .xAxisLabel("Oil & Gas")
         .xUnits(dc.units.ordinal)
         .x(d3.scale.ordinal())
         .y(d3.scale.log().nice().domain([1, 12500000000]))
@@ -467,12 +469,13 @@ d3.csv("../static/data/Updated_Consolidated_Revenue_Data_with_Fake_Names.csv",fu
         .stack(revDimension_allGroup, 'Wind',function(d){
             return d.value.wind_rev;
         })
-        //.legend(dc.legend().x(470).y(100))
+        .legend(dc.legend().x(50).y(0))
         .centerBar(false)
         .gap(40)
         .elasticY(true)
         .brushOn(false)
         .turnOnControls(true)
+        .xAxisLabel('Renewables')
         .xUnits(dc.units.ordinal)
         .x(d3.scale.ordinal())
         .y(d3.scale.log().nice().domain([1, 12500000000]))
@@ -654,7 +657,7 @@ d3.csv("../static/data/Updated_Consolidated_Revenue_Data_with_Fake_Names.csv",fu
                     },
                     function(d){return d["Revenue Type"];},
                     function(d){return d["Commodity"];},
-                    function(d){return "$test"+parseFloat(d["Revenue"]).formatMoney(0,'.',',');}
+                    function(d){return "$"+parseFloat(d["Revenue"]).formatMoney(0,'.',',');}
                 ])
             .sortBy(function(d){return d["Company Name"]})
             .order(d3.ascending);

@@ -22,7 +22,7 @@ permalink: /data/
 
   </section>
 
-  <section class="dashboard-canvas">
+  <section class="dashboard-canvas" id="company" tabindex='-1'>
     
     <h1>Total revenues by company</h1>
 
@@ -45,13 +45,13 @@ permalink: /data/
           <thead>
             <tr class="header">
               <th>
-                <a href="javascript:sort_dataTable(dashTotalsTable,'Company Name');">
-                  company name<i class="fa fa-chevron-down"></i>
+                <a href="javascript:void(0)" data-value="Company Name,minTable">
+                  company name<i class="fa fa-chevron-up"></i>
                 </a>
               </th>
               <th>
-                <a href="javascript:sort_dataTable(dashTotalsTable,'Total Revenue');">
-                  revenue<i class="fa fa-chevron-down"></i>
+                <a href="javascript:void(0)" data-value="Total Revenue,minTable">
+                  revenue<i class="fa"></i>
                 </a>
               </th>
             </tr>
@@ -63,23 +63,23 @@ permalink: /data/
           <thead>
             <tr class="header">
               <th>
-                <a href="javascript:sort_dataTable(dashTable,'Company Name');">
-                  company name<i class="fa fa-chevron-down"></i>
+                <a href="javascript:void(0)" data-value="Company Name,fullTable">
+                  company name<i class="fa fa-chevron-up"></i>
                 </a>
               </th>
               <th>
-                <a href="javascript:sort_dataTable(dashTable,'Revenue Type');">
-                  revenue type<i class="fa fa-chevron-down"></i>
+                <a href="javascript:void(0)" data-value="Revenue Type,fullTable">
+                  revenue type<i class="fa"></i>
                 </a>
               </th>
               <th>
-                <a href="javascript:sort_dataTable(dashTable,'Commodity');">
-                  commodity<i class="fa fa-chevron-down"></i>
+                <a href="javascript:void(0)" data-value="Commodity,fullTable">
+                  commodity<i class="fa"></i>
                 </a>
               </th>
               <th>
-                <a href="javascript:sort_dataTable(dashTable,'Revenue');">
-                  revenue<i class="fa fa-chevron-down"></i>
+                <a href="javascript:void(0)" data-value="Revenue,fullTable">
+                  revenue<i class="fa"></i>
                 </a>
               </th>
             </tr>
@@ -98,19 +98,19 @@ permalink: /data/
 
       <div class="dashboard-revenue-buttons">
 
-        <a href='javascript:' id="graphOption_rent" class='' data-value='Rents' tabindex='0' role="checkbox" aria-checked="true">
+        <a href='javascript:void(0)' id="graphOption_rent" class='' data-value='Rents' tabindex='0' role="checkbox" aria-checked="true">
           <div><i class="fa fa-check"></i></div>
           rent</a>
 
-        <a href='javascript:' id="graphOption_bonus" class='' data-value='Bonus' tabindex='0' role="checkbox" aria-checked="true">
+        <a href='javascript:void(0)' id="graphOption_bonus" class='' data-value='Bonus' tabindex='0' role="checkbox" aria-checked="true">
           <div><i class="fa fa-check"></i></div>
           bonus</a>
 
-        <a href='javascript:' id="graphOption_royalties" class='' data-value='Royalties' tabindex='0' role="checkbox" aria-checked="true">
+        <a href='javascript:void(0)' id="graphOption_royalties" class='' data-value='Royalties' tabindex='0' role="checkbox" aria-checked="true">
           <div><i class="fa fa-check"></i></div>
           royalty</a>
 
-        <a href='javascript:' id="graphOption_other" class='' data-value='Other Revenues' tabindex='0' role="checkbox" aria-checked="true">
+        <a href='javascript:void(0)' id="graphOption_other" class='' data-value='Other Revenues' tabindex='0' role="checkbox" aria-checked="true">
           <div><i class="fa fa-check"></i></div>
           other</a>
 
@@ -140,7 +140,7 @@ permalink: /data/
 
   </section>
 
-  <section class="dashboard-canvas dashboard-location" style='display:none;'>
+  <section class="dashboard-canvas dashboard-location" style='display:none;' id="location">
 
     <h1>Total revenues by location</h1>
 
@@ -204,7 +204,7 @@ permalink: /data/
 
   </section>
 
-  <section class="dashboard-canvas dashboard-over-time" style='display:none;'>
+  <section class="dashboard-canvas dashboard-over-time" style='display:none;' id="overtime">
 
     <h1>Total royalties over time</h1>
 
@@ -286,6 +286,52 @@ $(document).ready(function(){
     $('section.dashboard-location').hide();
     $('section.dashboard-over-time').show();
   });
+});
+
+/*********************\
+    Table Sorting
+\*********************/
+$('table thead tr th a').each(function(){
+  $(this).click(function(){
+    var table;
+    var data = $(this).attr('data-value').split(',');
+    if (data[1] == 'fullTable')
+      table = dashTable;
+    else
+      table = dashTotalsTable;
+    var sort = $(this).children('i').hasClass('fa-chevron-up') ? d3.descending : d3.ascending; 
+    sort_dataTable(table,data[0],sort);
+
+    //Remove arrows
+    var $parent = $(this).parent().parent();
+    $('th a i', $parent).each(function(){
+      $(this).removeClass('fa-chevron-down');
+      $(this).removeClass('fa-chevron-up');
+    });
+    //Add Arrow
+    if (table.order()==d3.ascending)
+      $('i',$(this)).addClass('fa-chevron-up');
+    else 
+      $('i',$(this)).addClass('fa-chevron-down');
+  })
+});
+console.log(QueryString);
+/*********************\
+       Load tab
+\*********************/
+$(document).ready(function(){
+  if (QueryString.q){
+    switch(QueryString.q){
+      case 'location':
+        $('section#company').hide();
+        $('section#location').show();
+        break;
+      case 'overtime':
+        $('section#company').hide();
+        $('section#overtime').show();
+        break;
+    }
+  }
 });
 
  // $("input.commodity").change(function(){

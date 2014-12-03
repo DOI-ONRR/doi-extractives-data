@@ -1934,7 +1934,7 @@ $dashboard-height: 400px;
     display: none;
   }
   table {
-    @include rem-fallback(font-size, 0.9);
+    @include rem-fallback(font-size, 0.8);
   }
 }
 

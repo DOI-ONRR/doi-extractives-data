@@ -10,166 +10,48 @@ permalink: /data/
 
 <div class="dashboard">
 
-  <nav class="dashboard-nav">
-    <a href="{{ site.baseurl }}" itemprop="url">&#8592; Home </a>
-    &#124; Natural Resource Revenue from U.S. Federal Lands
-  </nav>
+  <section class="dashboard-head">
+  
+    <h1>filter and download data</h1>
 
-  <div class="dashboard-head">
-    <div><h1>Explore Our Data</h1></div>
-    <div class="dashboard-choices"><h1>Natural Resource Revenues from U.S. Federal Lands by Company, Commodity, and Revenue Type</h1></div>
-    <div class="dashboard-choices"><h1>Choose a year [2013]</h1></div>
-  </div>
-
-
-<!-- START Side Options Nav -->
-  <div class="side-nav" id="OptionsList">
-
-    <h1><label class="label-switch last" for="chk-energy">Oil &amp; Gas
-      <input class="groupCheckbox" type="checkbox" name="energygroup" value="energy" id="chk-energy" checked />
-      <div class="checkbox"></div>
-    </label></h1>
-    <div class="side-nav-left">
-      <label class="label-switch" for="chk-gas">Gas
-        <input class="energy commodity" type="checkbox" name="energy" value="Gas" id="chk-gas" checked />
-        <div class="checkbox"></div>
-      </label>
-    </div>
-    <div class="side-nav-middle">
-      <label class="label-switch" for="chk-oil">Oil
-        <input class="energy commodity" type="checkbox" name="oil" value="Oil" id="chk-oil" checked />
-        <div class="checkbox"></div>
-      </label>
-    </div>
-    <div class="side-nav-right last">
-      <label class="label-switch" for="chk-oilgas">Oil &amp; Gas
-        <input class="energy commodity" type="checkbox" name="energy" value="Oil & Gas" id="chk-oilgas" checked />
-        <div class="checkbox"></div>
-      </label>
-      <!-- <label class="label-switch" for="chk-other">Other
-        <input class="energy commodity" type="checkbox" name="commodity" value="Other Commodities" id="chk-other" checked />
-        <div class="checkbox"></div>
-      </label> -->
+    <div class="dashboard_tabs">
+      <a href="#" title="Show data by company" class="active">company</a>
+      <a href="#" title="Show data by location">location</a>
+      <a href="#" title="Show data over time">over time</a>
     </div>
 
-    <h1><label class="label-switch last" for="chk-coal">Coal
-      <input class="groupCheckbox" type="checkbox" name="coalgroup" value="coalgroup" id="chk-coal" checked />
-      <div class="checkbox"></div>
-    </label></h1>
-    <div class="last">
-      <label class="label-switch" for="chk-coal">Coal
-        <input class="coalgroup commodity" type="checkbox" name="coal" value="Coal" id="chk-coal" checked />
-        <div class="checkbox"></div>
-      </label>
-    </div>
+  </section>
 
-    <h1><label class="label-switch last" for="chk-renewables">Renewables
-      <input class="groupCheckbox" type="checkbox" name="renewables" value="renewables" id="chk-renewables" checked />
-      <div class="checkbox"></div>
-    </label></h1>
-    <div class="side-nav-left">
-      <label class="label-switch" for="chk-Wind">Wind
-        <input class="renewables commodity" type="checkbox" name="wind" value="Wind" id="chk-Wind" checked />
-        <div class="checkbox"></div>
-      </label>
-    </div>
-    <div class="side-nav-middle-plus">
-      <label class="label-switch" for="chk-Geothermal">Geothermal
-       <input class="renewables commodity" type="checkbox" name="geothermal" value="Geothermal" id="chk-Geothermal" checked />
-       <div class="checkbox"></div>
-      </label>
-      <!-- <label class="label-switch" for="chk-na">n/a
-        <input class="renewables commodity" type="checkbox" name="commodity" value="n/a" id="chk-na" checked />
-        <div class="checkbox"></div>
-      </label> -->
-    </div>
+  <section class="dashboard-canvas" id="company" tabindex='-1'>
+    
+    <h1>Total revenues by company</h1>
 
-    <h1><label class="label-switch" for="chk-minerals">Other
-      <input class="groupCheckbox" type="checkbox" name="energygroup" value="other" id="chk-minerals" checked />
-      <div class="checkbox"></div>
-    </label></h1>
-    <div class="side-nav-left">
-      <label class="label-switch" for="chk-clay">Clay
-        <input class="other commodity" type="checkbox" name="commodity" value="Clay" id="chk-clay" checked />
-        <div class="checkbox"></div>
-      </label>
-      <label class="label-switch" for="chk-Copper">Copper
-        <input class="other commodity" type="checkbox" name="commodity" value="Copper" id="chk-Copper" checked />
-        <div class="checkbox"></div>
-      </label>
-      <label class="label-switch" for="chk-Potassium">Potassium
-        <input class="other commodity" type="checkbox" name="commodity" value="Potassium" id="chk-Potassium" checked />
-        <div class="checkbox"></div>
-      </label>
-      <label class="label-switch" for="chk-Other_Commodities">Other Commodities
-        <input class="other commodity" type="checkbox" name="commodity" value="Other Commodities" id="chk-Other_Commodities" checked />
-        <div class="checkbox"></div>
-      </label>
-    </div>
-    <div class="side-nav-middle">
-      <label class="label-switch" for="chk-Gilsonite">Gilsonite
-        <input class="other commodity" type="checkbox" name="commodity" value="Gilsonite" id="chk-Gilsonite" checked />
-        <div class="checkbox"></div>
-      </label>
-      <label class="label-switch" for="chk-Hardrock">Hardrock
-        <input class="other commodity" type="checkbox" name="commodity" value="Hardrock" id="chk-Hardrock" checked />
-        <div class="checkbox"></div>
-      <label class="label-switch" for="chk-OilShale">Oil Shale
-        <input class="other commodity" type="checkbox" name="commodity" value="Oil Shale" id="chk-OilShale" checked />
-        <div class="checkbox"></div>
-      </label>
-    </div>
-    <div class="side-nav-right">
-      <label class="label-switch" for="chk-Phosphate">Phosphate
-        <input class="other commodity" type="checkbox" name="commodity" value="Phosphate" id="chk-Phosphate" checked />
-        <div class="checkbox"></div>
-      </label>
-      <label class="label-switch" for="chk-Sodium">Sodium
-        <input class="other commodity" type="checkbox" name="commodity" value="Sodium" id="chk-Sodium" checked />
-        <div class="checkbox"></div>
-      </label>
-      <label class="label-switch" for="chk-Sulfur">Sulfur
-        <input class="other commodity" type="checkbox" name="commodity" value="Sulfur" id="chk-Sulfur" checked />
-        <div class="checkbox"></div>
-      </label>
-    </div>
+    <!-- company table -->
+    <div class="dashboard-table">
 
-  </div>
-<!-- END Side Options Nav --
+      <h1>Companies</h1>
 
-<!-- START Main Data Dashboard -->
-    <div class="dashboard-face">
-      <div id="company-name"><h1></h1></div>
-      <div class="rev-by-commodity" id='dashboard-bar-rev-by-commodity'>
-        <h4>Total Revenues by Commodity</h4>
-      </div>
-      <!-- <div id="dashboard-bar-rev-source"><h4>Total Revenue<br>by Revenue Type</h4></div>
-      <div id="dashboard-bar-avg-by-rev-source"><h4>Average Revenue<br>by Revenue Source</h4></div>
-      <div id="dashboard-bar-avg-by-commodity"><h4>Average Revenue<br>by Commodity<h4></div> -->
-      <div class="total-rev" id="totals">
-        <a class="dashboard-button" href="{{site:url}}/static/data/{{site:unilatteral_data}}">Download Full Dataset (CSV) </a>
-        <a class="dashboard-button" href="javascript:download_data(companyDimension)">Download Filtered Data (CSV) </a>
-        <h1 id="total-revenue-h1">Total Revenue: <span id="total_revenue"></span></h1>
-        <h1 id="average-revenue-h1">Average Revenue: <span id="average_revenue">$1,000,000</span></h1>
-        <h1 id="number-of-companies-h1">Number of Companies: <span id="company_count">$1,000,000</span></h1>
+      <input type="text" id="table-search" placeholder="enter a company name to filter&#133;"></input>
+      <label for="table-search" class="sr-only">Companies: enter a company name to filter&#133;. Following table updates to show companies based on text input</label>
+
+      <div class="dashboard-table-more">
+        <a href="javascript:void(0);" id="toggleDivLink">more ▶</a>
       </div>
 
-      <div class="dashboard-search">
-        <h4>Filter by Company:</h4>
-        <input type="text" id="table-search"></input>
-        <div><a href="javascript:toggle_divs('#toggleDivLink','#dashboard-totals-table','#dashboard-table','Show Full Table','Show Table by Company')" id="toggleDivLink">Show Full Table</a></div>
-        <table class='table table-hover dc-data-table' id='dashboard-totals-table'>
+      <div class="dashboard-table-canvas scroll-pane">
+
+        <table class="table table-hover dc-data-table" id='dashboard-totals-table'>
 
           <thead>
             <tr class="header">
               <th>
-                <a href="javascript:sort_dataTable(dashTotalsTable,'Company Name');">
-                  Company name
+                <a href="javascript:void(0)" data-value="Company Name,minTable">
+                  company name<i class="fa fa-chevron-down"></i>
                 </a>
               </th>
               <th>
-                <a href="javascript:sort_dataTable(dashTotalsTable,'Total Revenue');">
-                  Total Revenue
+                <a href="javascript:void(0)" data-value="Total Revenue,minTable">
+                  revenue<i class="fa"></i>
                 </a>
               </th>
             </tr>
@@ -181,52 +63,287 @@ permalink: /data/
           <thead>
             <tr class="header">
               <th>
-                <a href="javascript:sort_dataTable(dashTable,'Company Name');">
-                  Company name
+                <a href="javascript:void(0)" data-value="Company Name,fullTable">
+                  company name<i class="fa fa-chevron-down"></i>
                 </a>
               </th>
               <th>
-                <a href="javascript:sort_dataTable(dashTable,'Revenue Type');">
-                  Revenue Type
+                <a href="javascript:void(0)" data-value="Revenue Type,fullTable">
+                  revenue type<i class="fa"></i>
                 </a>
               </th>
               <th>
-                <a href="javascript:sort_dataTable(dashTable,'Commodity');">
-                  Commodity
+                <a href="javascript:void(0)" data-value="Commodity,fullTable">
+                  commodity<i class="fa"></i>
                 </a>
               </th>
               <th>
-                <a href="javascript:sort_dataTable(dashTable,'Revenue');">
-                  Revenue
+                <a href="javascript:void(0)" data-value="Revenue,fullTable">
+                  revenue<i class="fa"></i>
                 </a>
               </th>
             </tr>
           </thead>
         </table>
+
       </div>
 
     </div>
 
-  </div>
+    <!-- revenue types -->
+    <div class="dashboard-revenue" id="OptionsList">
+
+      <h1>Revenue Types</h1>
+      <p>click to select</p>
+
+      <div class="dashboard-revenue-buttons">
+
+        <a href='javascript:void(0)' id="graphOption_rent" class='' data-value='Rents' tabindex='0' role="checkbox" aria-checked="true">
+          <div><i class="fa fa-check"></i></div>
+          rent</a>
+
+        <a href='javascript:void(0)' id="graphOption_bonus" class='' data-value='Bonus' tabindex='0' role="checkbox" aria-checked="true">
+          <div><i class="fa fa-check"></i></div>
+          bonus</a>
+
+        <a href='javascript:void(0)' id="graphOption_royalties" class='' data-value='Royalties' tabindex='0' role="checkbox" aria-checked="true">
+          <div><i class="fa fa-check"></i></div>
+          royalty</a>
+
+        <a href='javascript:void(0)' id="graphOption_other" class='' data-value='Other Revenues' tabindex='0' role="checkbox" aria-checked="true">
+          <div><i class="fa fa-check"></i></div>
+          other</a>
+
+      </div>
+
+    </div>
+
+    <!-- chart -->
+    <div class="dashboard-chart">
+      <h1>Revenues</h1>
+      <div id="dashboard-bar-rev-by-commodity-group"></div>
+      <div id="dashboard-bar-rev-by-revenue-type-oil-and-gas" style="display:none;"></div>
+      <div id="dashboard-bar-rev-by-revenue-type-renewables" style="display:none;"></div>
+    </div>
+
+    <!-- download -->
+    <div class="dashboard-download">
+      <a class="dashboard-button" href="{{site:url}}/static/data/{{site:unilatteral_data}}">
+        <div><i class="fa fa-cloud-download"></i></div>
+        Download full dataset (csv)
+      </a>
+      <a class="dashboard-button" href="javascript:download_data(companyDimension)">
+        <div><i class="fa fa-cloud-download"></i></div>
+        Download your selected data (csv)
+      </a>
+    </div>
+
+  </section>
+
+  <section class="dashboard-canvas dashboard-location" style='display:none;' id="location">
+
+    <h1>Total revenues by location</h1>
+
+    <div>
+
+      <p>These two datasets contain revenue information for calendar year 2013. It is organized by location and is 
+      {% for term in site.data.terms %} {% if term.term == "data accounting" %}
+        <span class="term-tooltip" title="{{ term.definition }}" tabindex="0" role="tooltip">accounting year<i class="fa fa-question"></i></span> 
+      {% endif %} {% endfor %}
+      data. The offshore data is organized by offshore planning areas and the onshore data is organized by state. A subset of this data is what powers the map interactive display on this site's homepage.
+      </p>
+      <p>These datasets contain information on the following commodities:
+        <ul>
+          <li><span>Oil. </span>Includes various crude oil products such as condensate, drip and scrubber condensate, and fuel oil.</li>
+          <li><span>Gas. </span>
+            Includes various natural gas products such as processed and unprocessed gas, natural gas liquids (NGL), nitrogen, flash gas, fuel gas, and coal bed methane.</li>
+          <li><span>Coal. </span>
+            Includes various processed and unprocessed coal products such as anthracite, bituminous, subbituminous, and lignite.</li>
+          <li><span>Other. </span>
+            Includes a wide variety of solid mineral and other products such as copper, zinc, tar sands, clay, borax, and potassium.</li>
+          <li><span>Wind. </span>
+            from offshore wind turbine projects. These leases have not started producing in paying quanitities so there are no royalties yet.</li>
+          <li><span>Geothermal. </span>
+            Includes royalties from geothermal electrical generation and the resulting byproducts.</li>
+        </ul>
+      </p>
+
+      <p>These datasets include the following revenue types:
+        <ul>
+          <li><span>Royalties.</span> 
+            {% for term in site.data.terms %} {% if term.term == "royalty" %}
+              {{ term.definition }}
+            {% endif %} {% endfor %}</li>
+          <li><span>Bonus.</span>
+            {% for term in site.data.terms %} {% if term.term == "bonus" %}
+              {{ term.definition }}
+            {% endif %} {% endfor %}</li>
+          <li><span>Other revenues.</span>
+            {% for term in site.data.terms %} {% if term.term == "other revenues" %}
+              {{ term.definition }}
+            {% endif %} {% endfor %}</li>
+          <li><span>Rents.</span> 
+            {% for term in site.data.terms %} {% if term.term == "rent" %}
+              {{ term.definition }}
+            {% endif %} {% endfor %}</li>
+        </ul>
+      </p>
+
+    </div>
+
+    <div class="dashboard-download">
+      <a class="dashboard-button" href="{{site:url}}/static/data/calendar-year-2013-offshore-revenues-by-planning-area-accounting-year.csv">
+        <div><i class="fa fa-cloud-download"></i></div>
+        Download full offshore dataset (csv)
+      </a>
+      <a class="dashboard-button" href="{{site:url}}/static/data/calendar-year-2013-onshore-revenues-by-accounting-year.csv">
+        <div><i class="fa fa-cloud-download"></i></div>
+        Download full onshore dataset (csv)
+      </a>
+    </div>
+
+  </section>
+
+  <section class="dashboard-canvas dashboard-over-time" style='display:none;' id="overtime">
+
+    <h1>Total royalties over time</h1>
+
+    <div>
+      <p>This dataset contains 
+        {% for term in site.data.terms %} {% if term.term == "royalty" %}
+        <span class="term-tooltip" title="{{ term.definition }}" tabindex="0" role="tooltip">royalty<i class="fa fa-question"></i></span> 
+      {% endif %} {% endfor %}
+      information on natural resource revenues over time. It includes calendar year 2003 to 2013. It is organized by year and is 
+      {% for term in site.data.terms %} {% if term.term == "data accounting" %}
+        <span class="term-tooltip" title="{{ term.definition }}" tabindex="0" role="tooltip">accounting year<i class="fa fa-question"></i></span> 
+      {% endif %} {% endfor %}
+      data. It is the data that powers the royalties-by-sector interactive chart on this site's homepage.</p>
+
+      <p>This dataset contains information on the following commodities:
+        <ul>
+          <li><span>Oil. </span>Includes various crude oil products such as condensate, drip and scrubber condensate, and fuel oil.</li>
+          <li><span>Gas. </span>
+            Includes various natural gas products such as processed and unprocessed gas, natural gas liquids (NGL), nitrogen, flash gas, fuel gas, and coal bed methane.</li>
+          <li><span>Coal. </span>
+            Includes various processed and unprocessed coal products such as anthracite, bituminous, subbituminous, and lignite.</li>
+          <li><span>Other. </span>
+            Includes a wide variety of solid mineral and other products such as copper, zinc, tar sands, clay, borax, and potassium.</li>
+          <li><span>Wind. </span>
+            from offshore wind turbine projects. These leases have not started producing in paying quanitities so there are no royalties yet.</li>
+          <li><span>Geothermal. </span>
+            Includes royalties from geothermal electrical generation and the resulting byproducts.</li>
+        </ul>
+      </p>
+    </div>
+
+    <div class="dashboard-download">
+      <a class="dashboard-button" href="{{site:url}}/static/data/2003-2013-royalty-data.csv">
+        <div><i class="fa fa-cloud-download"></i></div>
+        Download full dataset (csv)
+      </a>
+    </div>
+
+  </section>
+
 </div>
-<!-- END Main Data Dashboard -->
 
 </main>
+
 <script src='{{ site.baseurl }}/static/js/dashboard.js'></script>
 <script type="text/javascript">
  $("#table-search").on('input',function(){
    text_filter(companyDimension,this.value);
  });
- $("input.commodity").change(function(){
-    update_graph_options($("#OptionsList input"), typeDimensionHelper);
- });
 
- $('input.groupCheckbox').change(function(){
-    var bool = $(this).is(":checked");
-    $('input.'+$(this).attr("value")).each(function(){
-      $(this).prop("checked",bool);
+/*****************\
+   Tab Switching
+\*****************/
+$(document).ready(function(){
+  $('div.dashboard_tabs a:nth-child(1)').click(function(){
+    $('div.dashboard_tabs a').each(function(){
+      $(this).removeClass('active')
     });
-    update_graph_options($("#OptionsList input"), typeDimensionHelper);
- });
+    $(this).toggleClass('active');
+    $('section.dashboard-canvas').show();
+    $('section.dashboard-location').hide();
+    $('section.dashboard-over-time').hide();
+  });
+  $('div.dashboard_tabs a:nth-child(2)').click(function(){
+    $('div.dashboard_tabs a').each(function(){
+      $(this).removeClass('active')
+    });
+    $(this).toggleClass('active');
+    $('section.dashboard-canvas').hide();
+    $('section.dashboard-location').show();
+    $('section.dashboard-over-time').hide();
+  });
+  $('div.dashboard_tabs a:nth-child(3)').click(function(){
+    $('div.dashboard_tabs a').each(function(){
+      $(this).removeClass('active')
+    });
+    $(this).toggleClass('active');
+    $('section.dashboard-canvas').hide();
+    $('section.dashboard-location').hide();
+    $('section.dashboard-over-time').show();
+  });
+});
+
+/*********************\
+    Table Sorting
+\*********************/
+$('table thead tr th a').each(function(){
+  $(this).click(function(){
+    var table;
+    var data = $(this).attr('data-value').split(',');
+    if (data[1] == 'fullTable')
+      table = dashTable;
+    else
+      table = dashTotalsTable;
+    var sort = $(this).children('i').hasClass('fa-chevron-down') ? d3.descending : d3.ascending; 
+    sort_dataTable(table,data[0],sort);
+
+    //Remove arrows
+    var $parent = $(this).parent().parent();
+    $('th a i', $parent).each(function(){
+      $(this).removeClass('fa-chevron-down');
+      $(this).removeClass('fa-chevron-up');
+    });
+    //Add Arrow
+    if (table.order()==d3.ascending)
+      $('i',$(this)).addClass('fa-chevron-down');
+    else 
+      $('i',$(this)).addClass('fa-chevron-up');
+  })
+});
+console.log(QueryString);
+/*********************\
+       Load tab
+\*********************/
+$(document).ready(function(){
+  if (QueryString.q){
+    switch(QueryString.q){
+      case 'location':
+        $('section#company').hide();
+        $('section#location').show();
+        break;
+      case 'overtime':
+        $('section#company').hide();
+        $('section#overtime').show();
+        break;
+    }
+  }
+});
+
+ // $("input.commodity").change(function(){
+ //    update_graph_options($("#OptionsList input"), typeDimensionHelper);
+ // });
+
+ // $('input.groupCheckbox').change(function(){
+ //    var bool = $(this).is(":checked");
+ //    $('input.'+$(this).attr("value")).each(function(){
+ //      $(this).prop("checked",bool);
+ //    });
+ //    update_graph_options($("#OptionsList input"), typeDimensionHelper);
+ // });
 
 </script>

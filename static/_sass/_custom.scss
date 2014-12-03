@@ -1836,176 +1836,352 @@ article {
 
 // Data Dashboard
 //===============================================
+
 $max-width: 100%; //this is setting the width of outer-container.
 //find this variable elsewhere and change it
 //what about the rest of the site that is not full-width?
+
 .dashboard {
-  @include outer-container;
+  background-color: $mid-gray;
+  padding-top: 20px;
+  padding-bottom: 0;
+  h1 {
+    font-family: Lato;
+    font-weight: 100;
+    color: white;
+    margin-bottom: 15px;
+  }
+  .dashboard_tabs {
+    margin-top: -20px;
+    margin-left: 60%;
+    @include rem-fallback(font-size, 1);
+    a {
+      font-weight: 300;
+      padding: 5px 17px 17px 17px;
+      text-decoration: none;
+      color: black;
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      } 
+    }
+    .active {
+      color: white;
+      background: $deep-gray;
+    }
+  }
 }
-.dashboard-nav {
+
+.dashboard-head {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.dashboard-canvas {
+  background-color: $deep-gray;
   @include span-columns(12);
-  background: shade($orange1, 20%);
-  padding-left: 10px;
+  padding: 20px;
+  color: white;
+  h1 {
+    font-family: Lato;
+    font-weight: 200;
+    color: white;
+    @include rem-fallback(font-size, 1.7);
+  }
+  > h1 {
+    padding-left: 20px;
+  }
+  > div {
+    background-color: $almost-black;
+    padding: 20px;
+    h1 {
+      @include rem-fallback(font-size, 0.9);
+      font-weight: 700;
+    }
+    p {
+      @include rem-fallback(font-size, 0.9);
+      font-style: italic;
+    }
+    &:nth-of-type(4) {
+      background-color: $deep-gray;
+    }
+  }
+}
+
+$dashboard-height: 400px;
+
+.dashboard-table {
+  @include span-columns(4 of 12);
+  height: $dashboard-height;
   a {
     color: white;
-  }
-}
-.last {
-  //refactor to remove this helper class
-  @include omega();
-}
-.dashboard-head {
-  @include span-columns(12);
-  background: $orange1;
-  color: white;
-  padding: 10px 0 10px 10px;
-  div:first-child {
-    @include span-columns(3 of 12);
-  }
-  div:last-child {
-    @include omega();
-  }
-  .dashboard-choices {
-    margin-left: -0.4%;
-    @include span-columns(4 of 12);
-    h1 {
-      font-size: rem(20);
+    text-decoration: none;
+    &:hover,
+    &:focus {
+      text-decoration: underline;
     }
   }
-}
-.label-switch {
-  $switch-width: 52px;
-  $switch-padding: 2px;
-  $switch-height: 32px;
-  $switch-radius: $switch-height;
-  $knob-height: $switch-height - ($switch-padding * 2);
-  $knob-width: $knob-height;
-  $knob-radius: $switch-height - ($switch-padding * 2);
-  align-self: center;
-  border-radius: $switch-radius;
-  cursor: pointer;
-  display: inline;
-  height: $switch-height;
-  position: relative;
-  vertical-align: middle;
-  width: $switch-width;
-  @include box-sizing(border-box);
-  input[type="checkbox"] {
+  input {
+    background-color: $mid-gray;
+    border: none;
+    border-radius: 0;
+    color: white;
+    font-style: italic;
+    font-weight: 200;
+    @include rem-fallback(font-size, 0.9);
+  }
+  .dc-table-label {
     display: none;
-    + .checkbox {
-      background: lighten($blue, 20%);
-      border: none;
-      border-radius: $switch-radius;
-      cursor: pointer;
-      height: $switch-height;
-      margin: 0 0 15px 0;
-      padding: 0;
-      position: relative;
-      width: $switch-width;
-      z-index: 0;
-      @include box-sizing(border-box);
-      @include transition(all 0.3s ease);
-      &:before {
-        background: lighten($blue, 20%);
-        border-radius: $switch-radius;
-        content: ' ';
-        height: $knob-radius;
-        width: $switch-width - ($switch-padding * 2);
-        z-index: 1;
-        @include box-sizing(border-box);
-        @include position(absolute, 2px 0 0 2px);
-        @include transition(all 0.3s ease);
-        @include transform(scale(1));
-      }
-      &:after {
-        background: lighten($blue, 10%);
-        border-radius: $knob-radius;
-        content: ' ';
-        height: $knob-height;
-        width: $knob-width;
-        z-index: 2;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
-        @include position(absolute, 2px 0 0 2px);
-        @include transition(all 0.3s ease);
+  }
+  table {
+    @include rem-fallback(font-size, 0.9);
+  }
+}
+
+.dashboard-table-more {
+  @include rem-fallback(font-size, 0.8);
+  text-align: right;
+}
+
+.dashboard-table-expand {
+  @include span-columns(5 of 12);
+}
+
+.dashboard-table-canvas {
+  height: 250px;
+  overflow: scroll;
+  th {
+    padding: 0;
+  }
+  td {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-bottom: none;
+  }
+}
+
+.dashboard-revenue {
+  height: $dashboard-height;
+  @include span-columns(2 of 12);
+  p {
+    margin-top: -15px;
+  }
+  $size: 36px;
+  a {
+    width: 100px;
+    display: block;
+    padding: 1px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    @include rem-fallback(font-size, 0.8);
+    > div {
+      width: $size;
+      height: $size;
+      margin-right: 7px;
+      background-color: $almost-black;
+      display: inline-block;
+      text-align: center;
+      padding-top: 8px;
+    }
+    &:hover,
+    &:focus {
+      color: black;
+      > div {
+        background-color: darken($mid-gray, 10%);  
       }
     }
-    &:checked {
-      + .checkbox {
-        background: white;
-        &:before {
-          @include transform(scale(0));
-        }
-        &:after {
-          left: $switch-width - $knob-width - ($switch-padding);
-        }
+    &:nth-of-type(1) {
+      background-color: $useiti-red;
+      > div {
+        color: $useiti-red;
+      }
+    }
+    &:nth-of-type(2) {
+      background-color: $useiti-green;
+      > div {
+        color: $useiti-green;
+      }
+    }
+    &:nth-of-type(3) {
+      background-color: $useiti-blue;
+      > div {
+        color: $useiti-blue;
+      }
+    }
+    &:nth-of-type(4) {
+      background-color: $useiti-purple;
+      > div {
+        color: $useiti-purple;
       }
     }
   }
 }
-.side-nav {
-  @include span-columns(3);
-  height: 100%;
-  background-color: $dark-gray;
-  color: white;
-  padding: 10px 30px 15px 30px;
-  label {
-    font-weight: 300;
-  }
-  h1 {
-    @include span-columns(3 of 3);
-    @include omega();
-    font-size: rem(24);
-    line-height: 1;
-    border-top: 1px solid white;
-    margin: 30px 0 10px 0;
-    padding-top: 3px;
-    .checkbox {
-      float: right;
-    }
-  }
-  .side-nav-left {
-    @include span-columns(1 of 3);
-  }
-  .side-nav-middle {
-    @include span-columns(1 of 3);
-  }
-  .side-nav-middle-plus {
-    @include span-columns(2 of 3);
-    @include omega();
-  }
-  .side-nav-right {
-    @include span-columns(1 of 3);
-    @include omega();
-  }
-}
-.dashboard-face {
-  @include span-columns(9);
+
+.dashboard-revenue-buttons {
   padding-top: 30px;
-  h2 {
-    margin-bottom: 20px;
+  padding-left: 13%;
+}
+
+.dashboard-chart {
+  @include span-columns(4 of 12);
+  @include omega();
+  height: $dashboard-height;
+  g g.axis text {
+    fill: white;
   }
-  .rev-by-commodity {
-    @include span-columns(6 of 9);
-  }
-  .total-rev {
-    @include span-columns(3 of 9);
-    @include omega();
-    h1 {
-      margin-top: 10px;
-    }
-  }
-  .dashboard-search {
-    @include span-columns(8 of 9);
-    @include omega();
-    margin-top: 20px;
+  g g.dc-legend-item text {
+    fill: white;
   }
 }
-.dashboard-button {
-  @include button(shade($blue, 10%));
-  margin-bottom: 15px;
-  &:hover, &:focus {
-    color: $medium-gray;
+
+#dashboard-bar-rev-by-commodity-group {
+  g.stack._0  > rect.bar {
+    stroke: none;
+    fill: $red;
   }
+  g.stack._1 > rect.bar {
+    stroke: none;
+    fill: $useiti-green;
+  }
+  g.stack._2 > rect.bar {
+    stroke: none;
+    fill: $useiti-blue;
+  }
+  g.stack._3 > rect.bar {
+    stroke: none;
+    fill: $useiti-purple;
+  }
+  //not using this legend. likely remove.
+  g.dc-legend-item:nth-child(1) > rect:nth-child(1) {
+    stroke: none;
+    fill: $red;
+  }
+  g.dc-legend-item:nth-child(2) > rect:nth-child(1) {
+    stroke: none;
+    fill: $useiti-green;
+  }
+  g.dc-legend-item:nth-child(3) > rect:nth-child(1) {
+    stroke: none;
+    fill: $useiti-blue;
+  }
+  g.dc-legend-item:nth-child(4) > rect:nth-child(1) {
+    stroke: none;
+    fill: $useiti-purple;
+  }
+}
+
+#dashboard-bar-rev-by-revenue-type-oil-and-gas,
+#dashboard-bar-rev-by-revenue-type-renewables {
+  g.stack._0  > rect.bar {
+    stroke: #272727;
+    fill: darken($useiti-blue, 10%);
+  }
+  g.stack._1 > rect.bar {
+    stroke: #272727;
+    fill: lighten($useiti-blue, 10%);
+  }
+  g.stack._2 > rect.bar {
+    stroke: none;
+    &:nth-of-type(1) {
+      fill: $useiti-green;
+    }
+    &:nth-of-type(2) {
+      fill: $useiti-purple;
+    }
+    &:nth-of-type(3) {
+      fill: $useiti-red;
+    }
+  }
+  //need a legend for oil and gas. this will need adjustment.
+  g.dc-legend-item:nth-child(1) > rect:nth-child(1) {
+    stroke: none;
+    fill: darken($useiti-blue, 10%);
+  }
+  g.dc-legend-item:nth-child(2) > rect:nth-child(1) {
+    stroke: none;
+    fill: lighten($useiti-blue, 10%);
+  }
+  g.dc-legend-item:nth-child(3) {
+    display: none;
+  }
+}
+
+.dashboard-download {
+  @include span-columns(12 of 12);
+  margin-top: 5px;
+  margin-bottom: 15px;
+  margin-left: -20px;
+}
+
+.dashboard-button {
+  display: inline-block;
+  margin-right: 20px;
+  padding-right: 10px;
+  color: lighten($mid-gray, 25%);
+  @include rem-fallback(font-size, 0.8);
+  text-decoration: none;
+  border: 1px solid lighten($mid-gray, 25%);
+  &:hover, &:focus {
+    color: white;
+    > div {
+      color: white;
+    }
+  }
+  > div {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 6px;
+    padding-top: 3px;
+    text-align: center;
+    background-color: lighten($mid-gray, 25%);
+    color: $almost-black;
+    @include rem-fallback(font-size, 1);
+  }
+}
+
+.dashboard-chart-back {
+  margin-top: -60px;
+  margin-right: 30px;
+  a {
+    color: white;
+    text-decoration: none;
+    @include rem-fallback(font-size, 0.7);
+    &:focus,
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.dashboard-over-time,
+.dashboard-location {
+  > div:nth-of-type(1) {
+    @include span-columns(5 of 12);
+    p {
+      font-style: normal;
+    }
+    ul li {
+      @include rem-fallback(font-size, 0.9);
+      padding-bottom: 5px;
+      padding-left: 20px;
+      span {
+        font-weight: 300;
+      }
+    }
+  }
+  > div:nth-of-type(2) {
+    background-color: $deep-gray;
+    @include span-columns(6 of 12);
+  }
+}
+
+text.x-axis-label{
+  @include rem-fallback(font-size, 0.8);
+  stroke: lighten($mid-gray, 20%);
+  fill: lighten($mid-gray, 20%);
 }
 
 // Search
@@ -2137,3 +2313,13 @@ $max-width: 100%; //this is setting the width of outer-container.
     @include span-columns(6);
   }
 }
+
+.sr-only {
+  width:1px;
+  height:1px;
+  overflow: hidden;
+  padding:0;
+  margin: -1px;
+  position: absolute;
+}
+

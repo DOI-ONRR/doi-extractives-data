@@ -2072,8 +2072,7 @@ $dashboard-height: 400px;
   }
 }
 
-#dashboard-bar-rev-by-revenue-type-oil-and-gas,
-#dashboard-bar-rev-by-revenue-type-renewables {
+#dashboard-bar-rev-by-revenue-type-oil-and-gas {
   g.stack._0  > rect.bar {
     stroke: #272727;
     fill: darken($useiti-blue, 10%);
@@ -2094,7 +2093,6 @@ $dashboard-height: 400px;
       fill: $useiti-red;
     }
   }
-  //need a legend for oil and gas. this will need adjustment.
   g.dc-legend-item:nth-child(1) > rect:nth-child(1) {
     stroke: none;
     fill: darken($useiti-blue, 10%);
@@ -2105,6 +2103,37 @@ $dashboard-height: 400px;
   }
   g.dc-legend-item:nth-child(3) {
     display: none;
+  }
+}
+
+#dashboard-bar-rev-by-revenue-type-renewables {
+  g.stack._0  > rect.bar {
+    stroke: none;
+    &:nth-of-type(1) {
+      fill: $useiti-purple;
+    }
+    &:nth-of-type(2) {
+      fill: $useiti-red;
+    }
+    &:nth-of-type(3) {
+      stroke: #272727;
+      fill: darken($useiti-red, 10%);
+    }
+    &:nth-of-type(4) {
+      fill: $useiti-blue;
+    }
+  }
+  g.stack._1 > rect.bar {
+    stroke: #272727;
+    fill: lighten($useiti-red, 10%);
+  }
+  g.dc-legend-item:nth-child(1) > rect:nth-child(1) {
+    stroke: none;
+    fill: darken($useiti-red, 10%);
+  }
+  g.dc-legend-item:nth-child(2) > rect:nth-child(1) {
+    stroke: none;
+    fill: lighten($useiti-red, 10%);
   }
 }
 

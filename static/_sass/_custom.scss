@@ -2182,9 +2182,11 @@ $dashboard-height: 400px;
     @include span-columns(6 of 12);
   }
 }
+
 text.x-axis-label{
-  stroke:#938F80;
-  fill:#938F80;
+  @include rem-fallback(font-size, 0.8);
+  stroke: lighten($mid-gray, 20%);
+  fill: lighten($mid-gray, 20%);
 }
 
 // Search

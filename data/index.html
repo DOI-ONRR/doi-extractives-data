@@ -46,7 +46,7 @@ permalink: /data/
             <tr class="header">
               <th>
                 <a href="javascript:void(0)" data-value="Company Name,minTable">
-                  company name<i class="fa fa-chevron-up"></i>
+                  company name<i class="fa fa-chevron-down"></i>
                 </a>
               </th>
               <th>
@@ -64,7 +64,7 @@ permalink: /data/
             <tr class="header">
               <th>
                 <a href="javascript:void(0)" data-value="Company Name,fullTable">
-                  company name<i class="fa fa-chevron-up"></i>
+                  company name<i class="fa fa-chevron-down"></i>
                 </a>
               </th>
               <th>
@@ -299,7 +299,7 @@ $('table thead tr th a').each(function(){
       table = dashTable;
     else
       table = dashTotalsTable;
-    var sort = $(this).children('i').hasClass('fa-chevron-up') ? d3.descending : d3.ascending; 
+    var sort = $(this).children('i').hasClass('fa-chevron-down') ? d3.descending : d3.ascending; 
     sort_dataTable(table,data[0],sort);
 
     //Remove arrows
@@ -310,9 +310,9 @@ $('table thead tr th a').each(function(){
     });
     //Add Arrow
     if (table.order()==d3.ascending)
-      $('i',$(this)).addClass('fa-chevron-up');
-    else 
       $('i',$(this)).addClass('fa-chevron-down');
+    else 
+      $('i',$(this)).addClass('fa-chevron-up');
   })
 });
 console.log(QueryString);

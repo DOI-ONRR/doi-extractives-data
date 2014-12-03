@@ -437,11 +437,11 @@ d3.csv("../static/data/Updated_Consolidated_Revenue_Data_with_Fake_Names.csv",fu
     dash_bar_rev_by_revenue_type_oil_and_gas
         .width(350).height(360)
         .dimension(revDimension)
-        .group(revDimension_allGroup, 'Oil')
+        .group(revDimension_allGroup, 'oil')
         .valueAccessor(function(d) {
             return d.value.oil_rev;
         })
-        .stack(revDimension_allGroup, 'Gas',function(d){
+        .stack(revDimension_allGroup, 'gas',function(d){
             return d.value.gas_rev;
         })
         .stack(revDimension_allGroup,'Oil and Gas', function(d){
@@ -466,11 +466,11 @@ d3.csv("../static/data/Updated_Consolidated_Revenue_Data_with_Fake_Names.csv",fu
     dash_bar_rev_by_revenue_type_renewables
         .width(350).height(360)
         .dimension(revDimension)
-        .group(revDimension_allGroup, 'Geothermal')
+        .group(revDimension_allGroup, 'geothermal')
         .valueAccessor(function(d) {
             return d.value.geo_rev;
         })
-        .stack(revDimension_allGroup, 'Wind',function(d){
+        .stack(revDimension_allGroup, 'wind',function(d){
             return d.value.wind_rev;
         })
         .legend(dc.legend().x(50).y(0))

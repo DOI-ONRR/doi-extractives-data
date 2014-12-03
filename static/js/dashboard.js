@@ -15,6 +15,7 @@ var typeDimension; //dimension on commodity type
 var typeGroupDimension;
 var typeDimensionHelper; //Extra commodity dimension for use by helper functions. Allows it to be filter on by other things
 var revDimension;
+var revDimensionHelper;
 var ndx; //crossfilter object
 var companyPage =  QueryString.company ? true : false;//Boolean: if this is a company specific dashboard or not. 
 if (!companyPage)
@@ -85,6 +86,9 @@ d3.csv("../static/data/Updated_Consolidated_Revenue_Data_with_Fake_Names.csv",fu
     revDimension = ndx.dimension(function(d){
         return d["Revenue Type"];
     })
+    revDimensionHelper = ndx.dimension(function(d){
+        return d["Revenue Type"];
+    });
 
     //Groups
     // var typeDimensionEnergyGroup = typeDimension.group().reduceSum(function(d) {
@@ -874,7 +878,7 @@ $(document).ready(function(){
             $(this).attr('aria-checked','true'); 
 
         $('div > i',$(this)).toggleClass('fa-check');
-        update_graph_options($('#OptionsList a'), revDimension);
+        update_graph_options($('#OptionsList a'), revDimensionHelper);
     });
 });
 

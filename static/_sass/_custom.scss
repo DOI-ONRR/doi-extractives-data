@@ -2209,8 +2209,8 @@ $dashboard-height: 400px;
 
 text.x-axis-label{
   @include rem-fallback(font-size, 0.8);
-  stroke: lighten($mid-gray, 20%);
-  fill: lighten($mid-gray, 20%);
+  stroke: none;
+  fill: white;
 }
 
 // Search

@@ -22,7 +22,7 @@ permalink: /data/
 
   </section>
 
-  <section class="dashboard-canvas" id="company" tabindex='-1'>
+  <section class="dashboard-canvas dashboard-company" id="company" tabindex='-1'>
     
     <h1>Total revenues by company</h1>
 
@@ -59,6 +59,7 @@ permalink: /data/
               </th>
             </tr>
           </thead>
+
         </table>
 
         <table class='table table-hover dc-data-table' id='dashboard-table' style="display:none">
@@ -87,6 +88,7 @@ permalink: /data/
               </th>
             </tr>
           </thead>
+
         </table>
 
       </div>
@@ -139,6 +141,10 @@ permalink: /data/
       <a class="dashboard-button" href="javascript:download_data(companyDimension)">
         <div><i class="fa fa-cloud-download"></i></div>
         Download your selected data (csv)
+      </a>
+      <a class="dashboard-button" href="{{ site.baseurl }}/documentation/">
+        <div><i class="fa fa-file-text-o"></i></div>
+        Data documentation >>
       </a>
     </div>
 
@@ -210,7 +216,7 @@ permalink: /data/
       <div class="dashboard-download">
         <a class="dashboard-button" href="{{site:baseurl}}/static/data/2003-2013-royalty-data.csv">
           <div><i class="fa fa-cloud-download"></i></div>
-          Download full dataset (csv)
+          Download <span>timeseries</span> data (csv)
         </a>
       </div>
 

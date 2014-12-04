@@ -286,11 +286,12 @@ function draw_totals_table(){
         .size(1774)
         .columns([
                 function(d){
-                	return '<a href="./?company='+
-                            d["Company Name"]+
-                            '">'+
-                            d["Company Name"]+
-                            '</a>' ;
+            		var company = d["Company Name"]
+            		var s = "<a href=\"javascript:$('input#table-search').val('"+company
+            			+"');text_filter(companyDimension,'"+company+"');\">"
+        				+company
+        				+"</a>";
+                	return s;
                 },
                 function(d){return "$"+parseFloat(d["Total Revenue"]).formatMoney(0,'.',',');}
             ]);

@@ -50,7 +50,7 @@ String.prototype.hashCode = function() {
 };
 
 
-d3.csv("../static/data/Updated_Consolidated_Revenue_Data_with_Fake_Names.csv",function(resource_data){
+d3.csv("../static/data/beta-data.csv",function(resource_data){
     
     resource_data.forEach(function(d){
         if (QueryString.q != 'dkfj887jjdd9jr75ju857jvnvur758fj8rj84jjfheteqq61jncbxbxb')

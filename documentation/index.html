@@ -29,6 +29,7 @@ permalink: /documentation/
 </section>
 
 <section id="tab2" class="documentation" style="display:none;">
+
   <h1>Total revenues by company</h1>
 
   <h2>General concept and purpose</h2>
@@ -135,7 +136,7 @@ permalink: /documentation/
     {% endif %} {% endfor %}
    please visit <a href="http://statistics.onrr.gov/">statistics.onrr.gov</a>.</p>
 
-  <p>A subset of this data is what powers the map interactive display on this site's homepage.</p>
+  <p>A subset of this data powers the map visualization on this site's homepage.</p>
 
   <h3>Scope</h3>
 
@@ -228,7 +229,56 @@ permalink: /documentation/
 </section>
 
 <section id="tab4" class="documentation" style="display:none;">
+
   <h1>Total royalties over time</h1>
+
+  <h2>General information</h2>
+
+  <p>This dataset contains 
+      {% for term in site.data.terms %} {% if term.term == "royalty" %}
+      <span class="term-tooltip" title="{{ term.definition }}" tabindex="0" role="tooltip">royalty<i class="fa fa-question"></i></span> 
+    {% endif %} {% endfor %}
+    information on natural resource revenues over time and is available on the <a href="{{ site.baseurl }}/data/">data part of this site</a>. It contains data from calendar years 2003 to 2013, and is 
+    {% for term in site.data.terms %} {% if term.term == "data accounting" %}
+      <span class="term-tooltip" title="{{ term.definition }}" tabindex="0" role="tooltip">accounting year<i class="fa fa-question"></i></span> 
+    {% endif %} {% endfor %}
+    data. If you are looking for datasets organized by the U.S. government’s 
+    {% for term in site.data.terms %} {% if term.term == "fiscal year" %}
+    <span class="term-tooltip" title="{{ term.definition }}" tabindex="0" role="tooltip">fiscal year,<i class="fa fa-question"></i></span> 
+    {% endif %} {% endfor %}
+   please visit <a href="http://statistics.onrr.gov/">statistics.onrr.gov</a>.
+  </p>
+
+  <p>This data powers the royalties-by-sector interactive chart on this site's homepage.</p>
+
+  <h3>Scope</h3>
+
+  <p>This dataset includes natural resource revenues for U.S. Federal lands and offshore areas. It does not include Indian lands, privately-owned lands or U.S. state lands. The datasets currently include data tracked and managed by the Department of the Interior’s Office of Natural Resource Revenues.</p>
+
+  <h3>Why are some values negative?</h3>
+
+  <p>This data is summarized based on accounting date (which is the date the revenue was reported to and accepted into ONRR’s financial system). Since companies can adjust and correct data up to seven years after a transaction takes place, this accounting year data includes corrections for sales that took place in previous years. This type of data is therefore most useful when analyzing dollars ONRR collected and disbursed in a given year. It also includes any values that are negative in 2013 because of corrections to previous information.</p>
+
+  <h3>Why is there a Gas value, an Oil value and an Oil & Gas value?</h3>
+
+  <p>“Oil & Gas” is the commodity category used for offshore oil and gas 
+    {% for term in site.data.terms %} {% if term.term == "rent" %}
+    <span class="term-tooltip" title="{{ term.definition }}" tabindex="0" role="tooltip">rents<i class="fa fa-question"></i></span> 
+    {% endif %} {% endfor %} 
+  and 
+    {% for term in site.data.terms %} {% if term.term == "bonus" %}
+    <span class="term-tooltip" title="{{ term.definition }}" tabindex="0" role="tooltip">bonuses<i class="fa fa-question"></i></span> 
+    {% endif %} {% endfor %}. 
+  At the time of lease sale, it isn’t known whether a lease will produce oil, gas or both oil and gas. After a lease starts producing a commodity (or commodities), the lease owner starts paying 
+  {% for term in site.data.terms %} {% if term.term == "royalty" %}
+    <span class="term-tooltip" title="{{ term.definition }}" tabindex="0" role="tooltip">royalties<i class="fa fa-question"></i></span> 
+    {% endif %} {% endfor %} 
+  . These can then be associated with either oil or gas. Hence, rent and bonus lines of data will be associated with an “Oil & Gas” commodity type, while royalty lines of data will be associated with either “Oil” or “Gas” commodity types.</p>
+
+  <h2>Data dictionary</h2>
+
+  <p>Coming soon!</p>
+
 </section>
 
 

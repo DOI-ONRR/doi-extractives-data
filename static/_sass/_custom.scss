@@ -1677,99 +1677,101 @@ article {
   ul {
     margin-bottom: 13.5px;
   }
-  li {
-    @include rem-fallback(font-size, 1);
-    margin-bottom: 3px;
-    padding-left: 3px;
-    color: white;
-    text-shadow: 1px 1px $dark-gray;
-  }
-  ul:nth-of-type(1) {
-    li:nth-of-type(1) {
-      width: 31% * 4.5;
-      background: $purple4;
-    }
-    li:nth-of-type(2) {
-      width: 10% * 4.5;
-      background: $purple3;
-    }
-    li:nth-of-type(3),
-    li:nth-of-type(4) {
-      width: 8% * 4.5;
-      background: $purple2;
-    }
-    li:nth-of-type(5) {
-      width: 4% * 4.5;
-      background: $purple1;
-    }
-  }
-  ul:nth-of-type(2) {
-    li:nth-of-type(1) {
-      width: 9.1% * 10.5;
-      background: $purple4;
-    }
-    li:nth-of-type(2) {
-      width: 7.1% * 10.5;
-      background: $purple3;
-    }
-    li:nth-of-type(3) {
-      width: 4.2% * 10.5;
-      background: $purple2;
-    }
-    li:nth-of-type(4) {
-      width: 2.9% * 10.5;
-      background: $purple1;
-    }
-  }
-  ul:nth-of-type(3) {
-    li:nth-of-type(1) {
-      width: 29% * 4.5;
-      background: $purple4;
-    }
-    li:nth-of-type(2) {
-      width: 13% * 4.7;
-      background: $purple3;
-    }
-    li:nth-of-type(3) {
-      width: 9% * 4.9;
-      background: $purple2;
-    }
-    li:nth-of-type(4),
-    li:nth-of-type(5) {
-      width: 8% * 5.2;
-      background: $purple1;
-    }
-  }
-  ul:nth-of-type(4) {
-    li:nth-of-type(1) {
-      width: 78% * 1.6;
-      background: $purple4;
-    }
-    li:nth-of-type(2) {
-      width: 17% * 2.5;
-      background: $purple3;
-    }
-    li:nth-of-type(3),
-    li:nth-of-type(4) {
-      width: 2% * 8.2;
-      background: $purple2;
-    }
-    li:nth-of-type(5),
-    li:nth-of-type(6) {
-      width: 1% * 15;
-      background: $purple1;
-    }
-  }
-  ol {
-    margin-bottom: 13.5px;
-    list-style-type: decimal;
-    list-style-position: inside;
+  .sectors-page {
     li {
-      color: black;
-      text-shadow: none;
+      @include rem-fallback(font-size, 1);
+      margin-bottom: 3px;
+      padding-left: 3px;
+      color: white;
+      text-shadow: 1px 1px $dark-gray;
+    }
+    ul:nth-of-type(1) {
+      li:nth-of-type(1) {
+        width: 31% * 4.5;
+        background: $purple4;
+      }
+      li:nth-of-type(2) {
+        width: 10% * 4.5;
+        background: $purple3;
+      }
+      li:nth-of-type(3),
+      li:nth-of-type(4) {
+        width: 8% * 4.5;
+        background: $purple2;
+      }
+      li:nth-of-type(5) {
+        width: 4% * 4.5;
+        background: $purple1;
+      }
+    }
+    ul:nth-of-type(2) {
+      li:nth-of-type(1) {
+        width: 9.1% * 10.5;
+        background: $purple4;
+      }
+      li:nth-of-type(2) {
+        width: 7.1% * 10.5;
+        background: $purple3;
+      }
+      li:nth-of-type(3) {
+        width: 4.2% * 10.5;
+        background: $purple2;
+      }
+      li:nth-of-type(4) {
+        width: 2.9% * 10.5;
+        background: $purple1;
+      }
+    }
+    ul:nth-of-type(3) {
+      li:nth-of-type(1) {
+        width: 29% * 4.5;
+        background: $purple4;
+      }
+      li:nth-of-type(2) {
+        width: 13% * 4.7;
+        background: $purple3;
+      }
+      li:nth-of-type(3) {
+        width: 9% * 4.9;
+        background: $purple2;
+      }
+      li:nth-of-type(4),
+      li:nth-of-type(5) {
+        width: 8% * 5.2;
+        background: $purple1;
+      }
+    }
+    ul:nth-of-type(4) {
+      li:nth-of-type(1) {
+        width: 78% * 1.6;
+        background: $purple4;
+      }
+      li:nth-of-type(2) {
+        width: 17% * 2.5;
+        background: $purple3;
+      }
+      li:nth-of-type(3),
+      li:nth-of-type(4) {
+        width: 2% * 8.2;
+        background: $purple2;
+      }
+      li:nth-of-type(5),
+      li:nth-of-type(6) {
+        width: 1% * 15;
+        background: $purple1;
+      }
     }
   }
-}
+    ol {
+      margin-bottom: 13.5px;
+      list-style-type: decimal;
+      list-style-position: inside;
+      li {
+        color: black;
+        text-shadow: none;
+      }
+    }
+  }
 .article-nav {
   @include span-columns(3);
   border: 1px solid white;
@@ -2243,12 +2245,41 @@ text.x-axis-label{
 // Documentation
 //============================================
 
-.dashboard-head {
+.documentation {
+  h1 {
+    @extend .h2;
+  }
+  h2 {
+    @extend .h3;
+  }
+  h3 {
+    @extend .h4;
+    border-bottom: none;
+  }
+  p i {
+    @include rem-fallback(font-size, 0.8);
+  }
+  ul {
+    margin-top: -10px;
+    li {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+  }
+  span {
+    font-weight: 300;
+  }
+  .term-tooltip {
+    font-weight: 200;
+  }
+}
+
+.documentation-head {
   border-bottom: 1px solid $mid-gray;
   padding-bottom: 5px;
 }
 
-.documentation_tabs {
+.documentation-tabs {
   @include rem-fallback(font-size, 1);
   a {
     font-weight: 300;
@@ -2258,6 +2289,7 @@ text.x-axis-label{
     border-top: 1px solid $mid-gray;
     border-right: 1px solid $mid-gray;
     border-left: 1px solid $mid-gray;
+    border-bottom: none;
     &:hover,
     &:focus {
       text-decoration: underline;

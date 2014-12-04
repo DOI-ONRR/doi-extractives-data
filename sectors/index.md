@@ -5,6 +5,8 @@ description: "There are many different types of natural resources produced in th
 permalink: /sectors/
 ---
 
+<section class="sectors-page">
+
 <a name="top"></a>U.S. Natural Resource Sectors
 =============================
 
@@ -182,3 +184,5 @@ The estimated value of mineral raw materials produced at mines in the United Sta
 The estimated value of U.S. metal mine production in 2013 was $32.0 billion, about 8% less than that of 2012. Principal contributors to the total value of metal mine production in 2013 were gold (32%), copper (29%), iron ore (17%), molybdenum (10%), and zinc (5%). Average prices for most domestically mined metals decreased in 2013. The yearly average price of gold decreased for the first time since 2001. The estimated value of U.S. industrial minerals mine production in 2013 was $42.3 billion, about 3% more than that of 2012. The value of industrial minerals mine production in 2013 was dominated by crushed stone (28%), cement (16%), and construction sand and gravel (16%). In general, industrial minerals prices were relatively stable, with modest price variations. Mine production of 14 mineral commodities was worth more than $1 billion each in the United States in 2013. These were, in decreasing order of value, crushed stone, gold, copper, cement, construction sand and gravel, iron ore (shipped), molybdenum concentrates, phosphate rock, industrial sand and gravel, lime, soda ash, salt, zinc, and clays (all types).
 
 For detailed information on each mineral commodity and futher trend analysis, please see the [U.S. Geological Survey  Mineral Commodity Summaries](http://minerals.usgs.gov/minerals/pubs/mcs/2014/mcs2014.pdf) (pdf). Each chapter provides information on events, trends, and issues for each mineral commodity as well as discussions and tabular presentations on domestic industry structure, government programs, tariffs, 5-year salient statistics, and world production and resources. More than 90 individual minerals and materials are covered by two-page synopses.
+
+</sectors>

@@ -2079,23 +2079,6 @@ $dashboard-height: 400px;
     stroke: none;
     fill: $useiti-purple;
   }
-  //not using this legend. likely remove.
-  g.dc-legend-item:nth-child(1) > rect:nth-child(1) {
-    stroke: none;
-    fill: $red;
-  }
-  g.dc-legend-item:nth-child(2) > rect:nth-child(1) {
-    stroke: none;
-    fill: $useiti-green;
-  }
-  g.dc-legend-item:nth-child(3) > rect:nth-child(1) {
-    stroke: none;
-    fill: $useiti-blue;
-  }
-  g.dc-legend-item:nth-child(4) > rect:nth-child(1) {
-    stroke: none;
-    fill: $useiti-purple;
-  }
 }
 
 #dashboard-bar-rev-by-revenue-type-coal {
@@ -2255,6 +2238,34 @@ text.x-axis-label{
   @include rem-fallback(font-size, 0.8);
   stroke: none;
   fill: white;
+}
+
+// Documentation
+//============================================
+
+.dashboard-head {
+  border-bottom: 1px solid $mid-gray;
+  padding-bottom: 5px;
+}
+
+.documentation_tabs {
+  @include rem-fallback(font-size, 1);
+  a {
+    font-weight: 300;
+    padding: 5px 17px 8px 17px;
+    text-decoration: none;
+    color: black;
+    border-top: 1px solid $mid-gray;
+    border-right: 1px solid $mid-gray;
+    border-left: 1px solid $mid-gray;
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    } 
+  }
+  .active {
+    border-bottom: 2px solid $light-gray;
+  }
 }
 
 // Search

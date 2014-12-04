@@ -158,7 +158,9 @@ $(document).ready(function(){
   $('section#tab-select a').each(function(index){
   	
   	$(this).click(function(){
-  		$(this).removeClass('active');
+  		$('#tab-select a').each(function(){
+  			$(this).removeClass('active');
+  		});
   		$('#tab1').hide();
   		$('#tab2').hide();
   		$('#tab3').hide();

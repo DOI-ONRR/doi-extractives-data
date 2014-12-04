@@ -31,8 +31,11 @@ permalink: /data/
 
       <h1>Companies</h1>
 
-      <input type="text" id="table-search" placeholder="enter a company name to filter&#133;"></input>
-      <label for="table-search" class="sr-only">Companies: enter a company name to filter&#133;. Following table updates to show companies based on text input</label>
+      <div class="table-search-container">
+        <input type="text" id="table-search" placeholder="enter a company name to filter&#133;"></input>
+        <label for="table-search" class="sr-only">Companies: enter a company name to filter&#133;. Following table updates to show companies based on text input</label>
+        <div class="table-search-reset"><a href="javascript:void(0)" id="reset_text_filter"><i class="fa fa-times"></i></a></div>
+      </div>
 
       <div class="dashboard-table-more">
         <a href="javascript:void(0);" id="toggleDivLink">more ▶</a>
@@ -87,7 +90,6 @@ permalink: /data/
         </table>
 
       </div>
-      <!-- <div><a href="javascript:void(0)" style="color:white;" id="reset_text_filter">reset</a></div> -->
     </div>
 
     <!-- revenue types -->

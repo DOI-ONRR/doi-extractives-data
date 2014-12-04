@@ -657,7 +657,7 @@ d3.csv("../static/data/beta-data.csv",function(resource_data){
                     function(d){ 
                         var company = d["Company Name"]
                         var s = "<a href=\"javascript:$('input#table-search').val('"+company
-                            +"');text_filter(companyDimension,'"+company+"');\">"
+                            +"');text_filter(companyDimension,'"+company+"');$('div.table-search-reset a').show();\">"
                             +company
                             +"</a>";
                         return s;
@@ -916,17 +916,24 @@ $(document).ready(function(){
         text_filter(companyDimension,'');
     });
 });
+
 /************************
-   Company Link filters
-************************/
-$(document).ready(function(){
-    console.log('shit')
-    $('table.table tbody tr td a').each(function(){
-        var s = $(this).text();
-        $(this).click(function(){
-            $('input#table-search').val(s);
-            text_filter(companyDimension,s);
-        });
+Company search filter
+*************************/
+
+ $(document).ready(function(){
+    $("#table-search").on('input',function(){
+       text_filter(companyDimension,this.value);
+       if($(this).val()!='')
+            $('div.table-search-reset a').show();
+       else 
+            $('div.table-search-reset a').hide();
+     });
+    $('div.table-search-reset a').click(function(){
+        $('input#table-search').val('');
+        text_filter(companyDimension,'');
+        $(this).hide();
     });
-});
+ })
+
 

@@ -34,7 +34,7 @@ permalink: /data/
       <div class="table-search-container">
         <input type="text" id="table-search" placeholder="enter a company name to filter&#133;"></input>
         <label for="table-search" class="sr-only">Companies: enter a company name to filter&#133;. Following table updates to show companies based on text input</label>
-        <div class="table-search-reset"><a href="javascript:void(0)" id="reset_text_filter"><i class="fa fa-times"></i></a></div>
+        <div class="table-search-reset"><a href="javascript:void(0)" id="reset_text_filter" title="Clear Company Filter" style="display:none;"><i class="fa fa-times"></i></a></div>
       </div>
 
       <div class="dashboard-table-more">
@@ -255,9 +255,7 @@ permalink: /data/
 
 <script src='{{ site.baseurl }}/static/js/dashboard.js'></script>
 <script type="text/javascript">
- $("#table-search").on('input',function(){
-   text_filter(companyDimension,this.value);
- });
+ 
 
 /*****************\
    Tab Switching

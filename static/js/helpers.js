@@ -288,7 +288,7 @@ function draw_totals_table(){
                 function(d){
             		var company = d["Company Name"]
             		var s = "<a href=\"javascript:$('input#table-search').val('"+company
-            			+"');text_filter(companyDimension,'"+company+"');\">"
+            			+"');text_filter(companyDimension,'"+company+"');$('div.table-search-reset a').show();\">"
         				+company
         				+"</a>";
                 	return s;

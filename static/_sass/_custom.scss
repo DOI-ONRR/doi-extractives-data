@@ -2081,6 +2081,24 @@ $dashboard-height: 400px;
   }
 }
 
+#dashboard-bar-rev-by-revenue-type-coal {
+  g.stack._0  > rect.bar {
+    stroke: none;
+    &:nth-of-type(1) {
+      fill: $useiti-green;
+    }
+    &:nth-of-type(2) {
+      fill: $useiti-purple;
+    }
+    &:nth-of-type(3) {
+      fill: $useiti-red;
+    }
+    &:nth-of-type(4) {
+      fill: $useiti-blue;
+    }
+  }
+}
+
 #dashboard-bar-rev-by-revenue-type-oil-and-gas {
   g.stack._0  > rect.bar {
     stroke: #272727;

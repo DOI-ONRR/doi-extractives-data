@@ -488,48 +488,49 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
   }
 }
 
-.moreDown {
-  width: 30px;
-  float: right;
-  margin: -5px 4px auto -14px;
-}
-@-webkit-keyframes breathe {
-  0%, 100% {
-    width: 30px;
-  }
-  50% {
-    width: 32px;
-  }
-}
-@-moz-keyframes breathe {
-  0%, 100% {
-    width: 30px;
-  }
-  50% {
-    width: 32px;
-  }
-}
-@-o-keyframes breathe {
-  0%, 100% {
-    width: 30px;
-  }
-  50% {
-    width: 32px;
-  }
-}
-@keyframes breathe {
-  0%, 100% {
-    width: 30px;
-  }
-  50% {
-    width: 32px;
-  }
-}
+// commented out in index now. delete if go-live without.
+// .moreDown {
+//   width: 30px;
+//   float: right;
+//   margin: -5px 4px auto -14px;
+// }
+// @-webkit-keyframes breathe {
+//   0%, 100% {
+//     width: 30px;
+//   }
+//   50% {
+//     width: 32px;
+//   }
+// }
+// @-moz-keyframes breathe {
+//   0%, 100% {
+//     width: 30px;
+//   }
+//   50% {
+//     width: 32px;
+//   }
+// }
+// @-o-keyframes breathe {
+//   0%, 100% {
+//     width: 30px;
+//   }
+//   50% {
+//     width: 32px;
+//   }
+// }
+// @keyframes breathe {
+//   0%, 100% {
+//     width: 30px;
+//   }
+//   50% {
+//     width: 32px;
+//   }
+// }
 
-.breathe {
-  @include prefixer(animation, breathe 3s infinite, webkit moz o spec);
-  @include prefixer(animation-timing-function, ease, webkit moz o spec);
-}
+// .breathe {
+//   @include prefixer(animation, breathe 3s infinite, webkit moz o spec);
+//   @include prefixer(animation-timing-function, ease, webkit moz o spec);
+// }
 
 // Homepage Infographic Sections
 //============================================
@@ -581,6 +582,14 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
   p {
     @include rem-fallback(font-size, 1.1);
     margin-bottom: 30px;
+  }
+  ul {
+    margin-top: -30px;
+    margin-left: 30px;
+    list-style-type: disc;
+    li {
+    @include rem-fallback(font-size, 1.1);
+    }
   }
 }
 

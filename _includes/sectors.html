@@ -15,31 +15,34 @@
 
       <p class="sectors-splash-text">Revenues from the sale of natural resources on Federal lands totaled <span class="sectors-big-text">$127.4</span> billion between 2003 and 2013.</p>
 
-      <p>These revenues are made up of 
-
-        {% for term in site.data.terms %} {% if term.term == "rent" %}
-        <span class="term-tooltip" title="{{ term.definition }}" tabindex="0" role="tooltip">rent,<i class="fa fa-question"></i></span>
-        {% endif %} {% endfor %}
-
-        {% for term in site.data.terms %} {% if term.term == "bonus" %}
-        <span class="term-tooltip" title="{{ term.definition }}" tabindex="0" role="tooltip">bonus,<i class="fa fa-question"></i></span>
-        {% endif %} {% endfor %}
-
-        {% for term in site.data.terms %} {% if term.term == "royalty" %}
-        <span class="term-tooltip" title="{{ term.definition }}" tabindex="0" role="tooltip">royalties,<i class="fa fa-question"></i></span>
-        {% endif %} {% endfor %}
-
-        and
-
-        {% for term in site.data.terms %} {% if term.term == "other revenues" %}
-        <span class="term-tooltip" title="{{ term.definition }}" tabindex="0" role="tooltip">other revenues,<i class="fa fa-question"></i></span>
-        {% endif %} {% endfor %}
-
-        with royalties making up the biggest piece.
-
+      <p>These revenues are made up of:
+        <ul>
+          <li>
+            {% for term in site.data.terms %} {% if term.term == "royalty" %}
+            <span class="term-tooltip" title="{{ term.definition }}" tabindex="0" role="tooltip">royalties<i class="fa fa-question"></i></span>
+            {% endif %} {% endfor %}
+             of $98.8 billion,
+          </li>
+          <li>
+            {% for term in site.data.terms %} {% if term.term == "bonus" %}
+            <span class="term-tooltip" title="{{ term.definition }}" tabindex="0" role="tooltip">bonuses<i class="fa fa-question"></i></span>
+            {% endif %} {% endfor %}
+             of $24.8 billion,
+          </li>
+          <li>
+            {% for term in site.data.terms %} {% if term.term == "rent" %}
+            <span class="term-tooltip" title="{{ term.definition }}" tabindex="0" role="tooltip">rents<i class="fa fa-question"></i></span>
+            {% endif %} {% endfor %}
+             of $3.2 billion, and
+          </li>
+          <li>
+            {% for term in site.data.terms %} {% if term.term == "other revenues" %}
+            <span class="term-tooltip" title="{{ term.definition }}" tabindex="0" role="tooltip">other revenues<i class="fa fa-question"></i></span>
+            {% endif %} {% endfor %}
+             of $684 million.
+          </li>
+        </ul>
       </p>
-
-      
 
       <p>Explore resource royalties by sector on the right, or read more about U.S. natural resource sectors such as oil, natural gas, coal, wind and geothermal energy. <a href="{{ site.baseurl }}/sectors/" itemprop="url">more >></a></p>
 

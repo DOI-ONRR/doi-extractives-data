@@ -112,7 +112,6 @@ function update_graph_options(elem,dimension){
 	dimension.filter(function(d){
 			if (a.indexOf(d) > -1)
 			{
-				console.log(d);
 				return true;
 			}
 			else

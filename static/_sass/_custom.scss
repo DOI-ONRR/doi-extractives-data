@@ -1677,99 +1677,101 @@ article {
   ul {
     margin-bottom: 13.5px;
   }
-  li {
-    @include rem-fallback(font-size, 1);
-    margin-bottom: 3px;
-    padding-left: 3px;
-    color: white;
-    text-shadow: 1px 1px $dark-gray;
-  }
-  ul:nth-of-type(1) {
-    li:nth-of-type(1) {
-      width: 31% * 4.5;
-      background: $purple4;
-    }
-    li:nth-of-type(2) {
-      width: 10% * 4.5;
-      background: $purple3;
-    }
-    li:nth-of-type(3),
-    li:nth-of-type(4) {
-      width: 8% * 4.5;
-      background: $purple2;
-    }
-    li:nth-of-type(5) {
-      width: 4% * 4.5;
-      background: $purple1;
-    }
-  }
-  ul:nth-of-type(2) {
-    li:nth-of-type(1) {
-      width: 9.1% * 10.5;
-      background: $purple4;
-    }
-    li:nth-of-type(2) {
-      width: 7.1% * 10.5;
-      background: $purple3;
-    }
-    li:nth-of-type(3) {
-      width: 4.2% * 10.5;
-      background: $purple2;
-    }
-    li:nth-of-type(4) {
-      width: 2.9% * 10.5;
-      background: $purple1;
-    }
-  }
-  ul:nth-of-type(3) {
-    li:nth-of-type(1) {
-      width: 29% * 4.5;
-      background: $purple4;
-    }
-    li:nth-of-type(2) {
-      width: 13% * 4.7;
-      background: $purple3;
-    }
-    li:nth-of-type(3) {
-      width: 9% * 4.9;
-      background: $purple2;
-    }
-    li:nth-of-type(4),
-    li:nth-of-type(5) {
-      width: 8% * 5.2;
-      background: $purple1;
-    }
-  }
-  ul:nth-of-type(4) {
-    li:nth-of-type(1) {
-      width: 78% * 1.6;
-      background: $purple4;
-    }
-    li:nth-of-type(2) {
-      width: 17% * 2.5;
-      background: $purple3;
-    }
-    li:nth-of-type(3),
-    li:nth-of-type(4) {
-      width: 2% * 8.2;
-      background: $purple2;
-    }
-    li:nth-of-type(5),
-    li:nth-of-type(6) {
-      width: 1% * 15;
-      background: $purple1;
-    }
-  }
-  ol {
-    margin-bottom: 13.5px;
-    list-style-type: decimal;
-    list-style-position: inside;
+  .sectors-page {
     li {
-      color: black;
-      text-shadow: none;
+      @include rem-fallback(font-size, 1);
+      margin-bottom: 3px;
+      padding-left: 3px;
+      color: white;
+      text-shadow: 1px 1px $dark-gray;
+    }
+    ul:nth-of-type(1) {
+      li:nth-of-type(1) {
+        width: 31% * 4.5;
+        background: $purple4;
+      }
+      li:nth-of-type(2) {
+        width: 10% * 4.5;
+        background: $purple3;
+      }
+      li:nth-of-type(3),
+      li:nth-of-type(4) {
+        width: 8% * 4.5;
+        background: $purple2;
+      }
+      li:nth-of-type(5) {
+        width: 4% * 4.5;
+        background: $purple1;
+      }
+    }
+    ul:nth-of-type(2) {
+      li:nth-of-type(1) {
+        width: 9.1% * 10.5;
+        background: $purple4;
+      }
+      li:nth-of-type(2) {
+        width: 7.1% * 10.5;
+        background: $purple3;
+      }
+      li:nth-of-type(3) {
+        width: 4.2% * 10.5;
+        background: $purple2;
+      }
+      li:nth-of-type(4) {
+        width: 2.9% * 10.5;
+        background: $purple1;
+      }
+    }
+    ul:nth-of-type(3) {
+      li:nth-of-type(1) {
+        width: 29% * 4.5;
+        background: $purple4;
+      }
+      li:nth-of-type(2) {
+        width: 13% * 4.7;
+        background: $purple3;
+      }
+      li:nth-of-type(3) {
+        width: 9% * 4.9;
+        background: $purple2;
+      }
+      li:nth-of-type(4),
+      li:nth-of-type(5) {
+        width: 8% * 5.2;
+        background: $purple1;
+      }
+    }
+    ul:nth-of-type(4) {
+      li:nth-of-type(1) {
+        width: 78% * 1.6;
+        background: $purple4;
+      }
+      li:nth-of-type(2) {
+        width: 17% * 2.5;
+        background: $purple3;
+      }
+      li:nth-of-type(3),
+      li:nth-of-type(4) {
+        width: 2% * 8.2;
+        background: $purple2;
+      }
+      li:nth-of-type(5),
+      li:nth-of-type(6) {
+        width: 1% * 15;
+        background: $purple1;
+      }
     }
   }
-}
+    ol {
+      margin-bottom: 13.5px;
+      list-style-type: decimal;
+      list-style-position: inside;
+      li {
+        color: black;
+        text-shadow: none;
+      }
+    }
+  }
 .article-nav {
   @include span-columns(3);
   border: 1px solid white;
@@ -1859,6 +1861,14 @@ $max-width: 100%; //this is setting the width of outer-container.
     font-weight: 100;
     color: white;
     margin-bottom: 15px;
+  }
+  p {
+    i {
+    @include rem-fallback(font-size, 0.8);
+    }
+    a {
+      color: white;
+    }
   }
   .dashboard_tabs {
     margin-top: -20px;
@@ -2079,23 +2089,6 @@ $dashboard-height: 400px;
     stroke: none;
     fill: $useiti-purple;
   }
-  //not using this legend. likely remove.
-  g.dc-legend-item:nth-child(1) > rect:nth-child(1) {
-    stroke: none;
-    fill: $red;
-  }
-  g.dc-legend-item:nth-child(2) > rect:nth-child(1) {
-    stroke: none;
-    fill: $useiti-green;
-  }
-  g.dc-legend-item:nth-child(3) > rect:nth-child(1) {
-    stroke: none;
-    fill: $useiti-blue;
-  }
-  g.dc-legend-item:nth-child(4) > rect:nth-child(1) {
-    stroke: none;
-    fill: $useiti-purple;
-  }
 }
 
 #dashboard-bar-rev-by-revenue-type-coal {
@@ -2181,16 +2174,25 @@ $dashboard-height: 400px;
   }
 }
 
+.dashboard-callout {
+  @include rem-fallback(font-size, 1.3);
+  margin-top: 40px;
+  margin-right: 20px;
+  font-weight: 500;
+}
+
 .dashboard-download {
-  @include span-columns(12 of 12);
-  margin-top: 5px;
-  margin-bottom: 15px;
-  margin-left: -20px;
+  margin-top: 30px;
+  margin-bottom: 5px;
+  span {
+    font-weight: 800;
+  }
 }
 
 .dashboard-button {
   display: inline-block;
   margin-right: 20px;
+  margin-bottom: 20px;
   padding-right: 10px;
   color: lighten($mid-gray, 25%);
   @include rem-fallback(font-size, 0.8);
@@ -2215,6 +2217,19 @@ $dashboard-height: 400px;
   }
 }
 
+.dashboard-company {
+  .dashboard-download {
+    margin-left: -20px;
+    p {
+      margin-top: 0;
+      font-weight: 300;
+    }
+  }
+  .dashboard-button {
+    margin-top: 20px;
+  }
+}
+
 .dashboard-chart-back {
   margin-top: -60px;
   margin-right: 30px;
@@ -2233,6 +2248,7 @@ $dashboard-height: 400px;
 .dashboard-location {
   > div:nth-of-type(1) {
     @include span-columns(5 of 12);
+    margin-bottom: 50px;
     p {
       font-style: normal;
     }
@@ -2255,6 +2271,65 @@ text.x-axis-label{
   @include rem-fallback(font-size, 0.8);
   stroke: none;
   fill: white;
+}
+
+// Documentation
+//============================================
+
+.documentation {
+  h1 {
+    @extend .h2;
+  }
+  h2 {
+    @extend .h3;
+  }
+  h3 {
+    @extend .h4;
+    border-bottom: none;
+  }
+  p i {
+    @include rem-fallback(font-size, 0.8);
+  }
+  ul {
+    margin-top: -10px;
+    li {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+  }
+  span {
+    font-weight: 300;
+  }
+  .term-tooltip {
+    font-weight: 200;
+  }
+}
+
+.documentation-head {
+  border-bottom: 1px solid $mid-gray;
+  padding-bottom: 5px;
+  padding-left: 20px;
+}
+
+.documentation-tabs {
+  @include rem-fallback(font-size, 1);
+  a {
+    font-weight: 300;
+    padding: 5px 17px 8px 17px;
+    text-decoration: none;
+    color: black;
+    border-top: 1px solid $mid-gray;
+    border-right: 1px solid $mid-gray;
+    border-left: 1px solid $mid-gray;
+    border-bottom: none;
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    } 
+  }
+  .active {
+    border-bottom: 2px solid $light-gray;
+  }
 }
 
 // Search

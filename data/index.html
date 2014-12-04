@@ -22,7 +22,7 @@ permalink: /data/
 
   </section>
 
-  <section class="dashboard-canvas" id="company" tabindex='-1'>
+  <section class="dashboard-canvas dashboard-company" id="company" tabindex='-1'>
     
     <h1>Total revenues by company</h1>
 
@@ -59,6 +59,7 @@ permalink: /data/
               </th>
             </tr>
           </thead>
+
         </table>
 
         <table class='table table-hover dc-data-table' id='dashboard-table' style="display:none">
@@ -87,6 +88,7 @@ permalink: /data/
               </th>
             </tr>
           </thead>
+
         </table>
 
       </div>
@@ -140,6 +142,10 @@ permalink: /data/
         <div><i class="fa fa-cloud-download"></i></div>
         Download your selected data (csv)
       </a>
+      <a class="dashboard-button" href="{{ site.baseurl }}/documentation/">
+        <div><i class="fa fa-file-text-o"></i></div>
+        Data documentation >>
+      </a>
     </div>
 
   </section>
@@ -150,60 +156,33 @@ permalink: /data/
 
     <div>
 
-      <p>These two datasets contain revenue information for calendar year 2013. It is organized by location and is 
-      {% for term in site.data.terms %} {% if term.term == "data accounting" %}
+      <p>There are two location-based datasets available here. One includes offshore data, and the other includes onshore data. Both datasets contain revenue information for calendar year 2013 and are 
+        {% for term in site.data.terms %} {% if term.term == "data accounting" %}
         <span class="term-tooltip" title="{{ term.definition }}" tabindex="0" role="tooltip">accounting year<i class="fa fa-question"></i></span> 
-      {% endif %} {% endfor %}
-      data. The offshore data is organized by offshore planning areas and the onshore data is organized by state. A subset of this data is what powers the map interactive display on this site's homepage.
-      </p>
-      <p>These datasets contain information on the following commodities:
-        <ul>
-          <li><span>Oil. </span>Includes various crude oil products such as condensate, drip and scrubber condensate, and fuel oil.</li>
-          <li><span>Gas. </span>
-            Includes various natural gas products such as processed and unprocessed gas, natural gas liquids (NGL), nitrogen, flash gas, fuel gas, and coal bed methane.</li>
-          <li><span>Coal. </span>
-            Includes various processed and unprocessed coal products such as anthracite, bituminous, subbituminous, and lignite.</li>
-          <li><span>Other. </span>
-            Includes a wide variety of solid mineral and other products such as copper, zinc, tar sands, clay, borax, and potassium.</li>
-          <li><span>Wind. </span>
-            from offshore wind turbine projects. These leases have not started producing in paying quanitities so there are no royalties yet.</li>
-          <li><span>Geothermal. </span>
-            Includes royalties from geothermal electrical generation and the resulting byproducts.</li>
-        </ul>
-      </p>
+        {% endif %} {% endfor %} 
+      data.</p>
 
-      <p>These datasets include the following revenue types:
-        <ul>
-          <li><span>Royalties.</span> 
-            {% for term in site.data.terms %} {% if term.term == "royalty" %}
-              {{ term.definition }}
-            {% endif %} {% endfor %}</li>
-          <li><span>Bonus.</span>
-            {% for term in site.data.terms %} {% if term.term == "bonus" %}
-              {{ term.definition }}
-            {% endif %} {% endfor %}</li>
-          <li><span>Other revenues.</span>
-            {% for term in site.data.terms %} {% if term.term == "other revenues" %}
-              {{ term.definition }}
-            {% endif %} {% endfor %}</li>
-          <li><span>Rents.</span> 
-            {% for term in site.data.terms %} {% if term.term == "rent" %}
-              {{ term.definition }}
-            {% endif %} {% endfor %}</li>
-        </ul>
-      </p>
+      <p>If you are looking for datasets organized by the U.S. government’s 
+        {% for term in site.data.terms %} {% if term.term == "fiscal year" %}
+        <span class="term-tooltip" title="{{ term.definition }}" tabindex="0" role="tooltip">fiscal year,<i class="fa fa-question"></i></span> 
+        {% endif %} {% endfor %}
+      please visit <a href="http://statistics.onrr.gov/">statistics.onrr.gov</a>.</p>
 
-    </div>
+      <p>A subset of this data powers the map visualization on this site's homepage.</p>
 
-    <div class="dashboard-download">
-      <a class="dashboard-button" href="{{site:baseurl}}/static/data/calendar-year-2013-offshore-revenues-by-planning-area-accounting-year.csv">
-        <div><i class="fa fa-cloud-download"></i></div>
-        Download full offshore dataset (csv)
-      </a>
-      <a class="dashboard-button" href="{{site:baseurl}}/static/data/calendar-year-2013-onshore-revenues-by-accounting-year.csv">
-        <div><i class="fa fa-cloud-download"></i></div>
-        Download full onshore dataset (csv)
-      </a>
+      <p class="dashboard-callout">Complete documentation, including data dictionaries, is available at our <a href="{{ site.baseurl }}/documentation/">documentation page</a>.</p>
+
+      <div class="dashboard-download">
+        <a class="dashboard-button" href="{{site:baseurl}}/static/data/calendar-year-2013-offshore-revenues-by-planning-area-accounting-year.csv">
+          <div><i class="fa fa-cloud-download"></i></div>
+          Download <span>offshore</span> dataset (csv)
+        </a>
+        <a class="dashboard-button" href="{{site:baseurl}}/static/data/calendar-year-2013-onshore-revenues-by-accounting-year.csv">
+          <div><i class="fa fa-cloud-download"></i></div>
+          Download <span>onshore</span> dataset (csv)
+        </a>
+      </div>
+
     </div>
 
   </section>
@@ -213,38 +192,34 @@ permalink: /data/
     <h1>Total royalties over time</h1>
 
     <div>
+
       <p>This dataset contains 
-        {% for term in site.data.terms %} {% if term.term == "royalty" %}
-        <span class="term-tooltip" title="{{ term.definition }}" tabindex="0" role="tooltip">royalty<i class="fa fa-question"></i></span> 
+      {% for term in site.data.terms %} {% if term.term == "royalty" %}
+      <span class="term-tooltip" title="{{ term.definition }}" tabindex="0" role="tooltip">royalty<i class="fa fa-question"></i></span> 
       {% endif %} {% endfor %}
-      information on natural resource revenues over time. It includes calendar year 2003 to 2013. It is organized by year and is 
+      information on natural resource revenues over time. It contains data from calendar years 2003 to 2013, and is 
       {% for term in site.data.terms %} {% if term.term == "data accounting" %}
         <span class="term-tooltip" title="{{ term.definition }}" tabindex="0" role="tooltip">accounting year<i class="fa fa-question"></i></span> 
       {% endif %} {% endfor %}
-      data. It is the data that powers the royalties-by-sector interactive chart on this site's homepage.</p>
+      data.</p>
 
-      <p>This dataset contains information on the following commodities:
-        <ul>
-          <li><span>Oil. </span>Includes various crude oil products such as condensate, drip and scrubber condensate, and fuel oil.</li>
-          <li><span>Gas. </span>
-            Includes various natural gas products such as processed and unprocessed gas, natural gas liquids (NGL), nitrogen, flash gas, fuel gas, and coal bed methane.</li>
-          <li><span>Coal. </span>
-            Includes various processed and unprocessed coal products such as anthracite, bituminous, subbituminous, and lignite.</li>
-          <li><span>Other. </span>
-            Includes a wide variety of solid mineral and other products such as copper, zinc, tar sands, clay, borax, and potassium.</li>
-          <li><span>Wind. </span>
-            from offshore wind turbine projects. These leases have not started producing in paying quanitities so there are no royalties yet.</li>
-          <li><span>Geothermal. </span>
-            Includes royalties from geothermal electrical generation and the resulting byproducts.</li>
-        </ul>
-      </p>
-    </div>
+      <p>If you are looking for datasets organized by the U.S. government’s 
+        {% for term in site.data.terms %} {% if term.term == "fiscal year" %}
+        <span class="term-tooltip" title="{{ term.definition }}" tabindex="0" role="tooltip">fiscal year,<i class="fa fa-question"></i></span> 
+        {% endif %} {% endfor %}
+      please visit <a href="http://statistics.onrr.gov/">statistics.onrr.gov</a>.</p>
 
-    <div class="dashboard-download">
-      <a class="dashboard-button" href="{{site:baseurl}}/static/data/2003-2013-royalty-data.csv">
-        <div><i class="fa fa-cloud-download"></i></div>
-        Download full dataset (csv)
-      </a>
+      <p>This data powers the royalties-by-sector interactive chart on this site's homepage.</p>
+
+      <p class="dashboard-callout">Complete documentation, including data dictionary, is available at our <a href="{{ site.baseurl }}/documentation/">documentation page</a>.</p>
+
+      <div class="dashboard-download">
+        <a class="dashboard-button" href="{{site:baseurl}}/static/data/2003-2013-royalty-data.csv">
+          <div><i class="fa fa-cloud-download"></i></div>
+          Download <span>timeseries</span> data (csv)
+        </a>
+      </div>
+
     </div>
 
   </section>

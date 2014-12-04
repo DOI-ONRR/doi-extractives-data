@@ -30,117 +30,200 @@ permalink: /documentation/
 
 <section id="tab2" class="documentation" style="display:none;">
   <h1>Total revenues by company</h1>
+
+  <h2>General concept and purpose</h2>
+
+  <p>The <a href="{{ site.baseurl }}/data/">"total revenues by company"</a> dataset on this site provides calendar year 2013 natural resource revenues data by company. This is a new dataset that is being created as a result of the <a href="http://www.doi.gov//eiti/index.cfm">U.S. Extractive Industries Transparency Initiative</a>. It represents cooperation between government, industry and civil society to create and confirm this information, and provide it in a way that adds to the national dialogue on natural resource extraction.</p>
+
+  <h3>Scope</h3>
+
+  <p>These datasets include revenues for U.S. Federal lands and offshore areas. It does not include Indian lands, privately-owned lands or U.S. state lands. The datasets currently include data tracked and managed by the Department of the Interior’s Office of Natural Resource Revenues.</p>
+
+  <p><span>Companies below threshold. </span>
+    {% for term in site.data.terms %} {% if term.term == "below threshold" %}
+      {{ term.definition }}
+    {% endif %} {% endfor %}</p>
+
+  <p><span>One mine one product. </span>
+    {% for term in site.data.terms %} {% if term.term == "one mine one product" %}
+      {{ term.definition }}
+    {% endif %} {% endfor %}</p>
+
+  <h3>Why are some values negative?</h3>
+
+  <p>This data is summarized based on accounting date (which is the date the revenue was reported to and accepted into ONRR’s financial system). Since companies can adjust and correct data up to seven years after a transaction takes place, this accounting year data includes corrections for sales that took place in previous years. This type of data is therefore most useful when analyzing dollars ONRR collected and disbursed in a given year. It also includes any values that are negative in 2013 because of corrections to previous information.</p>
+
+  <h3>Why is there a Gas value, an Oil value and an Oil & Gas value?</h3>
+
+  <p>“Oil & Gas” is the commodity category used for offshore oil and gas 
+    {% for term in site.data.terms %} {% if term.term == "rent" %}
+    <span class="term-tooltip" title="{{ term.definition }}" tabindex="0" role="tooltip">rents<i class="fa fa-question"></i></span> 
+    {% endif %} {% endfor %} 
+  and 
+    {% for term in site.data.terms %} {% if term.term == "bonus" %}
+    <span class="term-tooltip" title="{{ term.definition }}" tabindex="0" role="tooltip">bonuses<i class="fa fa-question"></i></span> 
+    {% endif %} {% endfor %}. 
+  At the time of lease sale, it isn’t known whether a lease will produce oil, gas or both oil and gas. After a lease starts producing a commodity (or commodities), the lease owner starts paying 
+  {% for term in site.data.terms %} {% if term.term == "royalty" %}
+    <span class="term-tooltip" title="{{ term.definition }}" tabindex="0" role="tooltip">royalties<i class="fa fa-question"></i></span> 
+    {% endif %} {% endfor %} 
+  . These can then be associated with either oil or gas. Hence, rent and bonus lines of data will be associated with an “Oil & Gas” commodity type, while royalty lines of data will be associated with either “Oil” or “Gas” commodity types.</p>
+
+  <h2>Data dictionary</h2>
+
+  <h3>Fields and definitions</h3>
+
+  <p><span>Company Name. </span>Name of company.</p>
+
+  <p><span>Revenue Type. </span>Revenues from U.S. natural resources fall into one of several types:
+    <ul>
+      <li><span>Royalties. </span> 
+        {% for term in site.data.terms %} {% if term.term == "royalty" %}
+          {{ term.definition }}
+        {% endif %} {% endfor %}</li>
+      <li><span>Bonus. </span>
+        {% for term in site.data.terms %} {% if term.term == "bonus" %}
+          {{ term.definition }}
+        {% endif %} {% endfor %}</li>
+      <li><span>Other revenues. </span>
+        {% for term in site.data.terms %} {% if term.term == "other revenues" %}
+          {{ term.definition }}
+        {% endif %} {% endfor %}</li>
+      <li><span>Rents. </span> 
+        {% for term in site.data.terms %} {% if term.term == "rent" %}
+          {{ term.definition }}
+        {% endif %} {% endfor %}</li>
+    <ul>
+  </p>
+
+  <p><span>Commodity Type. </span>The Department of the Interior collects revenues on over 60 different products. The majority of revenues come from Oil & Gas, Coal and Renewables (Geothermal and Wind), but you will find many other product categories in these datasets.</p>
+
+  <p><span>Revenue.</span> Total revenue.</p>
+
+
+  <h2>Advanced information</h2>
+
+  <p>Commodities can be further broken down into products. These are the products that could fall into the commodity categories found in these datasets.</p>
+
+  <p><span>Coal.</span> Coal (ton), Coal-Bituminous-Raw (ton).</p>
+
+  <p><span>Gas.</span> Coal Bed Methane (mcf), Flash Gas (mcf), Fuel Gas (mcf), Gas Hydrate (mcf), Gas Lost - Flared or Vented (mcf), Nitrogen (mcf), Processed (Residue) Gas (mcf), Unprocessed (Wet) Gas (mcf), NGL (Gas Plant Products).</p>
+
+  <p><span>Oil.</span> Asphaltic Crude (bbl), Black Wax Crude (bbl), Condensate (bbl), Drip or Scrubber Condensate (bbl),  Drip or Scrubber Condensate (bbl), Fuel Oil (bbl), Inlet Scrubber (bbl), Oil (bbl), Oil Lost (bbl), Other Liquid Hydrocarbons (bbl), Sour Crude (bbl), Sweet Crude (bbl), Yellow Wax Crude (bbl).</p>
+
+  <p><span>Geothermal.</span> Geothermal - Direct Utilization, Hundreds of Gallons (cgal), Geothermal - Direct Utilization, Millions of BTUs (mmbtu), Geothermal - Electrical Generation, Kilowatt Hours (kwh), Geothermal - Electrical Generation, Thousands of Pounds (klb), Geothermal - sulfur (lton).</p>
+
+  <p><span>Wind.</span> Wind.</p>
+
+  <p><span>Other Commodities.</span> Anhydrous Sodium Sulfate (ton), Borax-Decahydrate (ton), Borax-Pentahydrate (ton), Boric Acid (ton), Carbon Dioxide Gas (CO2) (mcf), Cinders (ton), Clay (ton), Copper Concentrate (ton), Gilsonite (ton), Gold (ton), Gypsum (ton), Helium (bbl), Langbeinite (ton), Lead Concentrate (ton), Leonardite (ton), Limestone (ton), Magnesium Chloride Brine (ton), Manure Salts (ton), Muriate Of Potash-Granular (ton), Muriate Of Potash-Standard (ton), Other (ton), Phosphate Raw Ore (ton), Potash (ton), Purge Liquor (ton), Quartz Crystal (lb), Salt (ton), Sand/Gravel (ton), Sand/Gravel-Cubic Yards (cyd), Silver (oz), Soda Ash (ton), Sodium Bi-Carbonate (ton), Sodium Bisulfite (ton), Sodium Sesquicarbonate (ton), Sulfide (ton), Sulfur (lton), Sylvite-Raw Ore (ton), Trona Ore (ton), Zinc Concentrate (ton).</p>
+
 </section>
 
 <section id="tab3" class="documentation" style="display:none;">
 
   <h1>Total revenues by location</h1>
 
-  <div>
+  <h2>General information</h2>
 
-    <h2>General information</h2>
+  <p>There are two location-based datasets <a href="{{ site.baseurl }}/data/">available on this site</a>. One includes offshore data, and the other includes onshore data. Both datasets contain revenue information for calendar year 2013 and are 
+    {% for term in site.data.terms %} {% if term.term == "data accounting" %}
+    <span class="term-tooltip" title="{{ term.definition }}" tabindex="0" role="tooltip">accounting year<i class="fa fa-question"></i></span> 
+    {% endif %} {% endfor %} 
+  data. If you are looking for datasets organized by the U.S. government’s 
+    {% for term in site.data.terms %} {% if term.term == "fiscal year" %}
+    <span class="term-tooltip" title="{{ term.definition }}" tabindex="0" role="tooltip">fiscal year,<i class="fa fa-question"></i></span> 
+    {% endif %} {% endfor %}
+   please visit <a href="http://statistics.onrr.gov/">statistics.onrr.gov</a>.</p>
 
-    <p>There are two location-based datasets <a href="{{ site.baseurl }}/data/">available on this site</a>. One includes offshore data, and the other includes onshore data. Both datasets contain revenue information for calendar year 2013 and are 
-      {% for term in site.data.terms %} {% if term.term == "data accounting" %}
-      <span class="term-tooltip" title="{{ term.definition }}" tabindex="0" role="tooltip">accounting year<i class="fa fa-question"></i></span> 
-      {% endif %} {% endfor %} 
-    data. If you are looking for datasets organized by the U.S. government’s 
-      {% for term in site.data.terms %} {% if term.term == "fiscal year" %}
-      <span class="term-tooltip" title="{{ term.definition }}" tabindex="0" role="tooltip">fiscal year,<i class="fa fa-question"></i></span> 
-      {% endif %} {% endfor %}
-     please visit <a href="http://statistics.onrr.gov/">statistics.onrr.gov</a>.</p>
+  <p>A subset of this data is what powers the map interactive display on this site's homepage.</p>
 
-    <p>A subset of this data is what powers the map interactive display on this site's homepage.</p>
+  <h3>Scope</h3>
 
-    <h3>Scope</h3>
+  <p>These datasets include natural resource revenues for U.S. Federal lands and offshore areas. It does not include Indian lands, privately-owned lands or U.S. state lands. The datasets currently include data tracked and managed by the Department of the Interior’s Office of Natural Resource Revenues.</p>
 
-    <p>These datasets include natural resource revenues for U.S. Federal lands and offshore areas. It does not include Indian lands, privately-owned lands or U.S. state lands. The datasets currently include data tracked and managed by the Department of the Interior’s Office of Natural Resource Revenues.</p>
+  <h3>Why are some values negative?</h3>
 
-    <h3>Why are some values negative?</h3>
+  <p>This data is summarized based on accounting date (which is the date the revenue was reported to and accepted into ONRR’s financial system). Since companies can adjust and correct data up to seven years after a transaction takes place, this accounting year data includes corrections for sales that took place in previous years. This type of data is therefore most useful when analyzing dollars ONRR collected and disbursed in a given year. It also includes any values that are negative in 2013 because of corrections to previous information.</p>
 
-    <p>This data is summarized based on accounting date (which is the date the revenue was reported to and accepted into ONRR’s financial system). Since companies can adjust and correct data up to seven years after a transaction takes place, this accounting year data includes corrections for sales that took place in previous years. This type of data is therefore most useful when analyzing dollars ONRR collected and disbursed in a given year. It also includes any values that are negative in 2013 because of corrections to previous information.</p>
+  <h3>Why is there a Gas value, an Oil value and an Oil & Gas value?</h3>
 
-    <h3>Why is there a Gas value, an Oil value and an Oil & Gas value?</h3>
-
-    <p>“Oil & Gas” is the commodity category used for offshore oil and gas 
-      {% for term in site.data.terms %} {% if term.term == "rent" %}
-      <span class="term-tooltip" title="{{ term.definition }}" tabindex="0" role="tooltip">rents<i class="fa fa-question"></i></span> 
-      {% endif %} {% endfor %} 
-    and 
-      {% for term in site.data.terms %} {% if term.term == "bonus" %}
-      <span class="term-tooltip" title="{{ term.definition }}" tabindex="0" role="tooltip">bonuses<i class="fa fa-question"></i></span> 
-      {% endif %} {% endfor %}. 
-    At the time of lease sale, it isn’t known whether a lease will produce oil, gas or both oil and gas. After a lease starts producing a commodity (or commodities), the lease owner starts paying 
-    {% for term in site.data.terms %} {% if term.term == "royalty" %}
-      <span class="term-tooltip" title="{{ term.definition }}" tabindex="0" role="tooltip">royalties<i class="fa fa-question"></i></span> 
-      {% endif %} {% endfor %} 
-    . These can then be associated with either oil or gas. Hence, rent and bonus lines of data will be associated with an “Oil & Gas” commodity type, while royalty lines of data will be associated with either “Oil” or “Gas” commodity types.</p>
+  <p>“Oil & Gas” is the commodity category used for offshore oil and gas 
+    {% for term in site.data.terms %} {% if term.term == "rent" %}
+    <span class="term-tooltip" title="{{ term.definition }}" tabindex="0" role="tooltip">rents<i class="fa fa-question"></i></span> 
+    {% endif %} {% endfor %} 
+  and 
+    {% for term in site.data.terms %} {% if term.term == "bonus" %}
+    <span class="term-tooltip" title="{{ term.definition }}" tabindex="0" role="tooltip">bonuses<i class="fa fa-question"></i></span> 
+    {% endif %} {% endfor %}. 
+  At the time of lease sale, it isn’t known whether a lease will produce oil, gas or both oil and gas. After a lease starts producing a commodity (or commodities), the lease owner starts paying 
+  {% for term in site.data.terms %} {% if term.term == "royalty" %}
+    <span class="term-tooltip" title="{{ term.definition }}" tabindex="0" role="tooltip">royalties<i class="fa fa-question"></i></span> 
+    {% endif %} {% endfor %} 
+  . These can then be associated with either oil or gas. Hence, rent and bonus lines of data will be associated with an “Oil & Gas” commodity type, while royalty lines of data will be associated with either “Oil” or “Gas” commodity types.</p>
 
 
-    <h2>Offshore data dictionary</h2>
+  <h2>Offshore data dictionary</h2>
 
-    <p>The offshore dataset is organized by offshore planning areas. There are more offshore planning areas than are represented in our data. Those not represented had no revenues for calendar year 2013. For a more information on offshore planning areas, including spatial boundaries, see the Bureau of Ocean Energy Management's <a href="http://www.boem.gov/Maps-and-GIS-Data/">maps and GIS data</a>.</p>
+  <p>The offshore dataset is organized by offshore planning areas. There are more offshore planning areas than are represented in our data. Those not represented had no revenues for calendar year 2013. For a more information on offshore planning areas, including spatial boundaries, see the Bureau of Ocean Energy Management's <a href="http://www.boem.gov/Maps-and-GIS-Data/">maps and GIS data</a>.</p>
 
-    <h3>Fields and definitions</h3>
+  <h3>Fields and definitions</h3>
 
-    <p><span>Revenue Type.</span> Revenues from U.S. natural resources fall into one of several types:
-      <ul>
-        <li><span>Royalties. </span> 
-          {% for term in site.data.terms %} {% if term.term == "royalty" %}
-            {{ term.definition }}
-          {% endif %} {% endfor %}</li>
-        <li><span>Bonus. </span>
-          {% for term in site.data.terms %} {% if term.term == "bonus" %}
-            {{ term.definition }}
-          {% endif %} {% endfor %}</li>
-        <li><span>Other revenues. </span>
-          {% for term in site.data.terms %} {% if term.term == "other revenues" %}
-            {{ term.definition }}
-          {% endif %} {% endfor %}</li>
-        <li><span>Rents. </span> 
-          {% for term in site.data.terms %} {% if term.term == "rent" %}
-            {{ term.definition }}
-          {% endif %} {% endfor %}</li>
-      <ul>
-    </p>
+  <p><span>Revenue Type.</span> Revenues from U.S. natural resources fall into one of several types:
+    <ul>
+      <li><span>Royalties. </span> 
+        {% for term in site.data.terms %} {% if term.term == "royalty" %}
+          {{ term.definition }}
+        {% endif %} {% endfor %}</li>
+      <li><span>Bonus. </span>
+        {% for term in site.data.terms %} {% if term.term == "bonus" %}
+          {{ term.definition }}
+        {% endif %} {% endfor %}</li>
+      <li><span>Other revenues. </span>
+        {% for term in site.data.terms %} {% if term.term == "other revenues" %}
+          {{ term.definition }}
+        {% endif %} {% endfor %}</li>
+      <li><span>Rents. </span> 
+        {% for term in site.data.terms %} {% if term.term == "rent" %}
+          {{ term.definition }}
+        {% endif %} {% endfor %}</li>
+    <ul>
+  </p>
 
-    <p><span>Commodity Type. </span>The Department of the Interior collects revenues on over 60 different products. The majority of revenues come from Oil & Gas, Coal and Renewables (Geothermal and Wind), but you will find many other product categories in these datasets. 
-    </p>
+  <p><span>Commodity Type. </span>The Department of the Interior collects revenues on over 60 different products. The majority of revenues come from Oil & Gas, Coal and Renewables (Geothermal and Wind), but you will find many other product categories in these datasets. 
+  </p>
 
-    <p><span>Region. </span>The Bureau of Ocean Energy Management separates offshore area into four regions: Gulf of Mexico, Atlantic, Pacific and Alaska. For a more information on offshore regions, including spatial boundaries, see the Bureau of Ocean Energy Management's <a href="http://www.boem.gov/Maps-and-GIS-Data/">maps and GIS data</a>.</p>
+  <p><span>Region. </span>The Bureau of Ocean Energy Management separates offshore area into four regions: Gulf of Mexico, Atlantic, Pacific and Alaska. For a more information on offshore regions, including spatial boundaries, see the Bureau of Ocean Energy Management's <a href="http://www.boem.gov/Maps-and-GIS-Data/">maps and GIS data</a>.</p>
 
-    <p><span>Planning Area. </span>Offshore regions are broken out into planning areas. For a more information on offshore planning areas, including spatial boundaries, see the Bureau of Ocean Energy Management's <a href="http://www.boem.gov/Maps-and-GIS-Data/">maps and GIS data</a>.</p>
+  <p><span>Planning Area. </span>Offshore regions are broken out into planning areas. For a more information on offshore planning areas, including spatial boundaries, see the Bureau of Ocean Energy Management's <a href="http://www.boem.gov/Maps-and-GIS-Data/">maps and GIS data</a>.</p>
 
-    <p><span>Revenue. </span>Total revenue.</p>
+  <p><span>Revenue. </span>Total revenue.</p>
 
 
-    <h2>Onshore data dictionary</h2>
+  <h2>Onshore data dictionary</h2>
 
-    <p>The onshore dataset is organized by state. There are more states than are listed in this dataset. Those states without natural resource revenues in calendar year 2013 are not included.</p>
+  <p>The onshore dataset is organized by state. There are more states than are listed in this dataset. Those states without natural resource revenues in calendar year 2013 are not included.</p>
 
-    <h3>Fields and definitions</h3>
+  <h3>Fields and definitions</h3>
 
-    <p><span>Row Labels. </span>This field contains either a state name, or a commodity name. The state name always comes first with its commodity breakdowns below it.</p>
+  <p><span>Row Labels. </span>This field contains either a state name, or a commodity name. The state name always comes first with its commodity breakdowns below it.</p>
 
-    <p><span>Sum of Royalty/Revenue. </span>This field provides the total royalty or revenue for the listed state (total) or commodity in that state.</p>
+  <p><span>Sum of Royalty/Revenue. </span>This field provides the total royalty or revenue for the listed state (total) or commodity in that state.</p>
 
-    <h2>Advanced offshore and onshore information</h2>
+  <h2>Advanced offshore and onshore information</h2>
 
-    <p>Commodities can be further broken down into products. These are the products that could fall into the commodity categories found in these datasets.</p>
+  <p>Commodities can be further broken down into products. These are the products that could fall into the commodity categories found in these datasets.</p>
 
-    <p><span>Coal.</span> Coal (ton), Coal-Bituminous-Raw (ton).</p>
+  <p><span>Coal.</span> Coal (ton), Coal-Bituminous-Raw (ton).</p>
 
-    <p><span>Gas.</span> Coal Bed Methane (mcf), Flash Gas (mcf), Fuel Gas (mcf), Gas Hydrate (mcf), Gas Lost - Flared or Vented (mcf), Nitrogen (mcf), Processed (Residue) Gas (mcf), Unprocessed (Wet) Gas (mcf), NGL (Gas Plant Products).</p>
+  <p><span>Gas.</span> Coal Bed Methane (mcf), Flash Gas (mcf), Fuel Gas (mcf), Gas Hydrate (mcf), Gas Lost - Flared or Vented (mcf), Nitrogen (mcf), Processed (Residue) Gas (mcf), Unprocessed (Wet) Gas (mcf), NGL (Gas Plant Products).</p>
 
-    <p><span>Oil.</span> Asphaltic Crude (bbl), Black Wax Crude (bbl), Condensate (bbl), Drip or Scrubber Condensate (bbl),  Drip or Scrubber Condensate (bbl), Fuel Oil (bbl), Inlet Scrubber (bbl), Oil (bbl), Oil Lost (bbl), Other Liquid Hydrocarbons (bbl), Sour Crude (bbl), Sweet Crude (bbl), Yellow Wax Crude (bbl).</p>
+  <p><span>Oil.</span> Asphaltic Crude (bbl), Black Wax Crude (bbl), Condensate (bbl), Drip or Scrubber Condensate (bbl),  Drip or Scrubber Condensate (bbl), Fuel Oil (bbl), Inlet Scrubber (bbl), Oil (bbl), Oil Lost (bbl), Other Liquid Hydrocarbons (bbl), Sour Crude (bbl), Sweet Crude (bbl), Yellow Wax Crude (bbl).</p>
 
-    <p><span>Geothermal.</span> Geothermal - Direct Utilization, Hundreds of Gallons (cgal), Geothermal - Direct Utilization, Millions of BTUs (mmbtu), Geothermal - Electrical Generation, Kilowatt Hours (kwh), Geothermal - Electrical Generation, Thousands of Pounds (klb), Geothermal - sulfur (lton).</p>
+  <p><span>Geothermal.</span> Geothermal - Direct Utilization, Hundreds of Gallons (cgal), Geothermal - Direct Utilization, Millions of BTUs (mmbtu), Geothermal - Electrical Generation, Kilowatt Hours (kwh), Geothermal - Electrical Generation, Thousands of Pounds (klb), Geothermal - sulfur (lton).</p>
 
-    <p><span>Wind.</span> Wind.</p>
+  <p><span>Wind.</span> Wind.</p>
 
-    <p><span>Other Commodities.</span> Anhydrous Sodium Sulfate (ton), Borax-Decahydrate (ton), Borax-Pentahydrate (ton), Boric Acid (ton), Carbon Dioxide Gas (CO2) (mcf), Cinders (ton), Clay (ton), Copper Concentrate (ton), Gilsonite (ton), Gold (ton), Gypsum (ton), Helium (bbl), Langbeinite (ton), Lead Concentrate (ton), Leonardite (ton), Limestone (ton), Magnesium Chloride Brine (ton), Manure Salts (ton), Muriate Of Potash-Granular (ton), Muriate Of Potash-Standard (ton), Other (ton), Phosphate Raw Ore (ton), Potash (ton), Purge Liquor (ton), Quartz Crystal (lb), Salt (ton), Sand/Gravel (ton), Sand/Gravel-Cubic Yards (cyd), Silver (oz), Soda Ash (ton), Sodium Bi-Carbonate (ton), Sodium Bisulfite (ton), Sodium Sesquicarbonate (ton), Sulfide (ton), Sulfur (lton), Sylvite-Raw Ore (ton), Trona Ore (ton), Zinc Concentrate (ton).</p>
-
-  </div>
+  <p><span>Other Commodities.</span> Anhydrous Sodium Sulfate (ton), Borax-Decahydrate (ton), Borax-Pentahydrate (ton), Boric Acid (ton), Carbon Dioxide Gas (CO2) (mcf), Cinders (ton), Clay (ton), Copper Concentrate (ton), Gilsonite (ton), Gold (ton), Gypsum (ton), Helium (bbl), Langbeinite (ton), Lead Concentrate (ton), Leonardite (ton), Limestone (ton), Magnesium Chloride Brine (ton), Manure Salts (ton), Muriate Of Potash-Granular (ton), Muriate Of Potash-Standard (ton), Other (ton), Phosphate Raw Ore (ton), Potash (ton), Purge Liquor (ton), Quartz Crystal (lb), Salt (ton), Sand/Gravel (ton), Sand/Gravel-Cubic Yards (cyd), Silver (oz), Soda Ash (ton), Sodium Bi-Carbonate (ton), Sodium Bisulfite (ton), Sodium Sesquicarbonate (ton), Sulfide (ton), Sulfur (lton), Sylvite-Raw Ore (ton), Trona Ore (ton), Zinc Concentrate (ton).</p>
 
 </section>
 

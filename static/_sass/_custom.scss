@@ -1917,6 +1917,23 @@ $max-width: 100%; //this is setting the width of outer-container.
   }
 }
 
+.table-search-container {
+  position: relative;
+}
+
+.table-search-reset {
+  position: absolute;
+  top: 4px;
+  right: 5px;
+  a i {
+    color: $medium-gray;
+    &:hover,
+    &:focus {
+      color: white;
+    }
+  }
+}
+
 $dashboard-height: 400px;
 
 .dashboard-table {

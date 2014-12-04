@@ -6,15 +6,15 @@
 
 
 - term: bonus
-  definition: "The amount paid by the highest successful bidder for a mineral lease. The winning bid."
+  definition: "The amount paid by the highest successful bidder for a natural resource lease. The winning bid."
   display: true
 
 - term: rent
-  definition: "A mineral lease might not produce anything in paying quantities for some time after it is sold. Until it does, periodic payments are made for the right to continue exploration and development of the land for future mineral production. These payments are called rent."
+  definition: "A natural resource lease might not produce anything in paying quantities for some time after it is sold. Until it does, periodic payments are made for the right to continue exploration and development of the land for future natural resource production. These payments are called rent."
   display: true
 
 - term: royalty
-  definition: "A mineral lease owner pays royalties after the lease starts producing a commodity in paying quantities. The amount is based on a percentage of the revenue from the commodity sold. The exact percentage is set in the original lease document that went along with the lease sale."
+  definition: "A natural resource lease owner pays royalties after the lease starts producing a commodity in paying quantities. The amount is based on a percentage of the revenue from the commodity sold. The exact percentage is set in the original lease document that went along with the lease sale."
   display: true
 
 - term: "other revenues"

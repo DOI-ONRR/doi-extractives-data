@@ -12,12 +12,12 @@ There are many different types of natural resources produced in the United State
 
 ##<a name="nonrenewable"></a>Nonrenewable Energy
 
-Coal, petroleum, natural gas, and propane are all types of nonrenewable energy. They are also all called fossil fuels because they were formed from the buried remains of plants and animals that lived millions of years ago. Uranium ore, a solid, is another type of nonrenewable energy source, and is mined and converted to a fuel used at nuclear power plants. Uranium is not a fossil fuel, but is a nonrenewable fuel.
+Coal, crude oil, and natural gas are all types of nonrenewable energy sources. They are also all called fossil fuels because they were formed from the buried remains of plants and animals that lived millions of years ago. Uranium ore, a solid, is another type of nonrenewable energy source, and is mined and converted to a fuel used at nuclear power plants. Uranium is not a fossil fuel, but is a nonrenewable fuel.
 
 >Fossil Fuels Are Nonrenewable, but <br/>
 >Not All Nonrenewable Energy Sources Are Fossil Fuels
 
-Nonrenewable energy sources come out of the ground as liquids, gases, and solids depending on the type. Crude oil (petroleum) is the only commercial nonrenewable fuel that is naturally in liquid form. Natural gas and propane are normally gases, and coal is a solid.
+Nonrenewable energy sources come out of the ground as liquids, gases, and solids depending on the type. Crude oil (petroleum) is the only commercial nonrenewable fuel that is naturally in liquid form. Natural gas is normally a gas, and coal is a solid.
 
 ###<a name="oil"></a>Oil
 Crude oil is produced in 31 states and U.S. coastal waters. In 2012, 61% of U.S. crude oil production came from five states:

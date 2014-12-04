@@ -6,8 +6,17 @@ permalink: /documentation/
 ---
 
 <h1>Documentation</h1>
+<section class="dashboard-head" id="tab-select">
+    <h1>filter and download data</h1>
+    <div class="dashboard_tabs">
+      <a href="#" title="Show data by company" class="active">Terms</a>
+      <a href="#" title="Show data by location">Something Else</a>
+      <a href="#" title="Show data over time">Something Else</a>
+      <a href="#" title="Show data over time">Something Else</a>
+    </div>
 
-<section class="terms">
+</section>
+<section class="terms" id="tab1">
 	<h1>Terms and Definitions</h1>
 	<dl>
 		{% for term in site.data.terms %}
@@ -18,3 +27,27 @@ permalink: /documentation/
 		{% endfor %}
 	</dl>
 </section>
+<section id="tab2" style="display:none;">tab 2
+</section>
+<section id="tab3" style="display:none;">tab 3</section>
+<section id="tab4" style="display:none;">tab 4</section>
+<script type="text/javascript">
+/*****************\
+   Tab Switching
+\*****************/
+$(document).ready(function(){
+  $('section#tab-select a').each(function(index){
+  	
+  	$(this).click(function(){
+  		$(this).removeClass('active');
+  		$('#tab1').hide();
+  		$('#tab2').hide();
+  		$('#tab3').hide();
+  		$('#tab4').hide();
+  		var n = index+1
+  		$('section#tab'+n).show();
+  		$(this).addClass('active');
+  	})
+  })
+});
+</script>

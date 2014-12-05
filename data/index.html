@@ -15,14 +15,14 @@ permalink: /data/
     <h1>filter and download data</h1>
 
     <div class="dashboard_tabs">
-      <a href="#" title="Show data by company" class="active">company</a>
-      <a href="#" title="Show data by location">location</a>
-      <a href="#" title="Show data over time">over time</a>
+      <a href="#company" title="Show data by company" class="active" id="company-tab-link">company</a>
+      <a href="#location" title="Show data by location" id="location-tab-link">location</a>
+      <a href="#over-time" title="Show data over time" id="overtime-tab-link">over time</a>
     </div>
 
   </section>
 
-  <section class="dashboard-canvas dashboard-company" id="company" tabindex='-1'>
+  <section class="dashboard-canvas dashboard-company" id="company-tab" tabindex='-1'>
     
     <h1>Total revenues by company</h1>
 
@@ -150,7 +150,7 @@ permalink: /data/
 
   </section>
 
-  <section class="dashboard-canvas dashboard-location" style='display:none;' id="location">
+  <section class="dashboard-canvas dashboard-location" style='display:none;' id="location-tab">
 
     <h1>Total revenues by location</h1>
 
@@ -187,7 +187,7 @@ permalink: /data/
 
   </section>
 
-  <section class="dashboard-canvas dashboard-over-time" style='display:none;' id="overtime">
+  <section class="dashboard-canvas dashboard-over-time" style='display:none;' id="overtime-tab">
 
     <h1>Total royalties over time</h1>
 
@@ -292,22 +292,24 @@ $('table thead tr th a').each(function(){
       $('i',$(this)).addClass('fa-chevron-up');
   })
 });
-console.log(QueryString);
 /*********************\
        Load tab
 \*********************/
 $(document).ready(function(){
-  if (QueryString.q){
-    switch(QueryString.q){
-      case 'location':
-        $('section#company').hide();
-        $('section#location').show();
-        break;
-      case 'overtime':
-        $('section#company').hide();
-        $('section#overtime').show();
-        break;
-    }
+  var hash = window.location.hash.substring(1);
+  switch(hash){
+    case 'location':
+      $('section#company-tab').hide();
+      $('section#location-tab').show();
+      $('a#company-tab-link').removeClass('active');
+      $('a#location-tab-link').addClass('active');
+      break;
+    case 'over-time':
+      $('section#company-tab').hide();
+      $('section#overtime-tab').show();
+      $('a#company-tab-link').removeClass('active');
+      $('a#overtime-tab-link').addClass('active');
+      break;
   }
 });
 

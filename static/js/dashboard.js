@@ -850,7 +850,6 @@ Function: Performs post processing
     other effects, rollovers
 **********************************/
 var graphCustomizations = function() {
-    console.log('graphCustomizations');
     d3.selectAll("g.x text")
         .attr("class", "campusLabel")
         .style("text-anchor", "middle")

@@ -24,7 +24,7 @@ $(document).ready(function(){
   //Empty Object used to 3d layers
   var dataLayers=[];
   //Default selected commodity
-  var selectedCommodity = 'oil';
+  var selectedCommodity = 'gas';
 
   // these fixed color classes are from ColorBrewer: http://colorbrewer2.org/
   var mapColors = ['rgb(254,224,210)','rgb(252,187,161)','rgb(252,146,114)','rgb(251,106,74)','rgb(239,59,44)','rgb(203,24,29)','rgb(165,15,21)','rgb(103,0,13)'];
@@ -202,7 +202,7 @@ $(document).ready(function(){
     dataLayers.push(pacificLayer);
     dataLayers.push(AKLayer);
 
-    setVariable(variables[0])
+    setVariable(selectedCommodity)
 
     function loadGeoJson(data, map)
     {
@@ -376,6 +376,7 @@ $(document).ready(function(){
     mouse events to pass through
     *********************************/
     function calculateHeights(){
+
       $('g[id*="map_stack_sector"]').each(function(){
         $(this).remove();
       });
@@ -386,7 +387,6 @@ $(document).ready(function(){
       var snap = Snap('svg.leaflet-zoom-animated');
 
       $('g',overlayLayer).each(function(index){
-
         var layerColor = $('path',$(this)).attr('fill');
         var depth = getMapColorDepth(layerColor);
         $(this).attr('data-3d-layers','heightIdentifier'+index);
@@ -419,7 +419,9 @@ $(document).ready(function(){
       for(var i=0; i<geoJsonArray.length; i++)
       {
         if (drawOrder.indexOf(geoJsonArray[i].properties.name) == -1)
-          console.log('Sort Geo JSON ERROR Not Found - '+geoJsonArray[i].properties.name);
+          {
+            //console.log('Sort Geo JSON ERROR Not Found - '+geoJsonArray[i].properties.name);
+          }
         newArray[drawOrder.indexOf(geoJsonArray[i].properties.name)] = geoJsonArray[i];
       }
       geoJson.features = newArray;

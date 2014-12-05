@@ -130,8 +130,6 @@ function download_data(dimension){
 	if (typeof(f.top) != "undefined") {f=f.top(Infinity);}else{}
 	if (typeof(f.dimension) != "undefined") {f=f.dimension(function(d) { return "";}).top(Infinity);}else{}
 	f.reverse();
-	//print_filter(f);
-	//console.log(f[0]["Company Name"]);
 	var keys = Object.keys(f[0]);
 	if (keys.indexOf('')>-1)
 		keys.splice(keys.indexOf('',1));
@@ -139,7 +137,6 @@ function download_data(dimension){
 		keys.splice(keys.indexOf('undefined',1));
 	if (keys.indexOf(' ')>-1)
 		keys.splice(keys.indexOf(' ',1));
-	//var csv="data:text/csv;charset=utf-8,";
 	var csv ='';
 	for (var i=0;i<keys.length;i++)
 	{
@@ -150,7 +147,12 @@ function download_data(dimension){
 
 	f.forEach(function(d){
 		for (var n=0; n<keys.length;n++)
-			csv += d[keys[n]]+",";
+			{
+				if (d[keys[n]].toString().search(',') > -1)
+					csv += '"'+d[keys[n]]+'"'+",";
+				else
+					csv += d[keys[n]]+",";
+			}
 		csv+="\n";
 	});
 	var encodeUri = encodeURI(csv);

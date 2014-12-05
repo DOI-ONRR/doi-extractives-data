@@ -104,6 +104,7 @@ $(document).ready(function(){
     {
       ranges[variables[i]] = {min: Infinity, max: -Infinity};
     }
+    
   })();
   
   //Sets up Commodites switch pane
@@ -223,13 +224,13 @@ $(document).ready(function(){
       for (var i=0; i<data.features.length; i++)
       {
         if (data.features[i].properties.commodities){
-          for (var n= 0 ; n<variables.length; n++)
+          for (var n = 0 ; n<variables.length; n++)
           {
             if (data.features[i].properties.commodities[variables[n]])
             {
               if (ranges[variables[n]].max < data.features[i].properties.commodities[variables[n]].revenue && data.features[i].properties.commodities[variables[n]].revenue < 100000000000000.00)
                 ranges[variables[n]].max = data.features[i].properties.commodities[variables[n]].revenue
-              if (ranges[variables[n]].min > data.features[i].properties.commodities[variables[n]].revenue && data.features[i].properties.commodities[variables[n]].revenue > 1000.00)
+              if (ranges[variables[n]].min > data.features[i].properties.commodities[variables[n]].revenue)
                 {
                   ranges[variables[n]].min = data.features[i].properties.commodities[variables[n]].revenue
                 }
@@ -251,7 +252,7 @@ $(document).ready(function(){
     ***********************************/
     function setVariable(name) {
       var range = ranges[name];
-      $('div.map-scale-min').html('$' + range.min.formatMoney(0,'.',','));
+      $('div.map-scale-min').html('$' + Math.floor(range.min).formatMoney(0,'.',','));
       $('div.map-scale-max').html('$' + range.max.formatMoney(0,'.',','));
       $('#map-scale-pane > h1').html(selectedCommodity == 'wind' ? 'Revenues' : 'Royalties');
 
@@ -500,13 +501,18 @@ $(document).ready(function(){
       }
 
     }
-
-    var newColor = mapColorScale(value);
+    var newColor;
+    if (value < 0)
+      {
+        newColor = mapColorScale(1);
+      }
+    else  
+      newColor = mapColorScale(value);
     $("g[data-3d-layers='"+$(layer._container).attr('data-3d-layers')+"'] path").each(function(){
       $(this).attr('fill', newColor);
     });
 
-    var opacity = (value > 0) ? 1 : 0;
+    var opacity = (value != 0) ? 1 : 0;
     layer.setStyle({
       fillColor: newColor,
       fillOpacity: opacity,

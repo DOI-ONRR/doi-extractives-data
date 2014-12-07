@@ -17,7 +17,7 @@ permalink: /data/
     <div class="dashboard_tabs">
       <a href="#company" title="Show data by company" class="active" id="company-tab-link">company</a>
       <a href="#location" title="Show data by location" id="location-tab-link">location</a>
-      <a href="#over-time" title="Show data over time" id="overtime-tab-link">over time</a>
+      <a href="#overtime" title="Show data over time" id="overtime-tab-link">over time</a>
     </div>
 
   </section>
@@ -311,7 +311,7 @@ $(document).ready(function(){
       $('a#company-tab-link').removeClass('active');
       $('a#location-tab-link').addClass('active');
       break;
-    case 'over-time':
+    case 'overtime':
       $('section#company-tab').hide();
       $('section#overtime-tab').show();
       $('a#company-tab-link').removeClass('active');

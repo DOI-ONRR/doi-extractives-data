@@ -38,7 +38,7 @@
   display: true
 
 - term: "below threshold"
-  definition: "The U.S. Extractive Industries Transparency Initiative agreed to an annual reporting threshold of $100,000 because these aggregated payments make up less than one quarter of one percent of total payments. Many of the companies that fall below this threshold are individuals and family trusts. Payments made by companies that reported less than $100,000 are aggregated (rolled up) into this category."
+  definition: "The U.S. Extractive Industries Transparency Initiative Multi-Stakeholder Group agreed to an annual reporting threshold of $100,000 because these aggregated payments make up less than one quarter of one percent of total payments. Many of the companies that fall below this threshold are individuals and family trusts. Payments made by companies that reported less than $100,000 are aggregated (rolled up) into this category."
   display: true
 
 - term: "one mine one product"

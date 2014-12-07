@@ -2142,13 +2142,6 @@ $dashboard-height: 400px;
   }
 }
 
-.dashboard-callout {
-  @include rem-fallback(font-size, 1.3);
-  margin-top: 40px;
-  margin-right: 20px;
-  font-weight: 500;
-}
-
 .dashboard-download {
   margin-top: 30px;
   margin-bottom: 5px;

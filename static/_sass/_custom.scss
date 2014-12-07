@@ -1962,9 +1962,6 @@ $dashboard-height: 400px;
 .dashboard-revenue {
   height: $dashboard-height;
   @include span-columns(2 of 12);
-  p {
-    margin-top: -15px;
-  }
   $size: 36px;
   a {
     width: 100px;
@@ -2015,6 +2012,14 @@ $dashboard-height: 400px;
         color: $useiti-purple;
       }
     }
+  }
+}
+
+.dashboard-revenue, 
+.dashboard-chart {
+  p {
+    margin-top: -15px;
+    margin-bottom: 3px;
   }
 }
 

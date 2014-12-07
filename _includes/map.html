@@ -8,7 +8,10 @@
         {% for term in site.data.terms %} {% if term.term == "rent" %}
           <span class="term-tooltip" title="{{ term.definition }}" tabindex="0" role="tooltip">rents<i class="fa fa-question"></i></span>, 
         {% endif %} {% endfor %}
-      fees, and penalties, but by far most of the money comes from these royalties.</p>
+        {% for term in site.data.terms %} {% if term.term == "bonus" %}
+          <span class="term-tooltip" title="{{ term.definition }}" tabindex="0" role="tooltip">bonuses<i class="fa fa-question"></i></span>, 
+        {% endif %} {% endfor %}
+      fees, and penalties, but by far most of the money comes from royalties.</p>
     </div>
   </div>
 

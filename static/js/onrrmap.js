@@ -29,6 +29,7 @@ $(document).ready(function(){
   // these fixed color classes are from ColorBrewer: http://colorbrewer2.org/
   var mapColors = ['rgb(254,224,210)','rgb(252,187,161)','rgb(252,146,114)','rgb(251,106,74)','rgb(239,59,44)','rgb(203,24,29)','rgb(165,15,21)','rgb(103,0,13)'];
 
+
   /*
    * This is a quantized color, meaning that it will always return
    * one of the colors in mapColors[]. Usage:
@@ -39,6 +40,12 @@ $(document).ready(function(){
   var mapColorScale = d3.scale.quantize()
     .domain([0, 100])
     .range(mapColors);
+  //mapColorScale_limited cuts off the last color
+  //This color is reserved for the top commodity only
+  //This gives the rest of the colors a better scale
+  var mapColorScale_limited = d3.scale.quantize()
+    .domain([0, 100])
+    .range(mapColors.slice(0,mapColors.length-1));
 
   // Create one div.step for each map color, and insert them
   // into #map-scale-pane > .map-scale
@@ -102,9 +109,8 @@ $(document).ready(function(){
   (function(){
     for (var i = 0; i<variables.length; i++)
     {
-      ranges[variables[i]] = {min: Infinity, max: -Infinity};
+      ranges[variables[i]] = {min: Infinity, max: -Infinity, trueMax: -Infinity};
     }
-    
   })();
   
   //Sets up Commodites switch pane
@@ -228,11 +234,32 @@ $(document).ready(function(){
           {
             if (data.features[i].properties.commodities[variables[n]])
             {
-              if (ranges[variables[n]].max < data.features[i].properties.commodities[variables[n]].revenue && data.features[i].properties.commodities[variables[n]].revenue < 100000000000000.00)
-                ranges[variables[n]].max = data.features[i].properties.commodities[variables[n]].revenue
-              if (ranges[variables[n]].min > data.features[i].properties.commodities[variables[n]].revenue)
+              var value = data.features[i].properties.commodities[variables[n]].revenue;
+              if (ranges[variables[n]].max < value )
                 {
-                  ranges[variables[n]].min = data.features[i].properties.commodities[variables[n]].revenue
+                  /*
+                   * If value is greater than true max, set max to true max, set new true max
+                   * else set new max
+                  */
+                  if(ranges[variables[n]].trueMax < value)
+                    {
+                      if (ranges[variables[n]].trueMax == -Infinity)
+                      {
+                        ranges[variables[n]].max = value;
+                        ranges[variables[n]].trueMax = value;   
+                      }
+                      else
+                      {
+                        ranges[variables[n]].max = ranges[variables[n]].trueMax;
+                        ranges[variables[n]].trueMax = value; 
+                      }
+                    }
+                  else
+                    ranges[variables[n]].max = value;
+                }
+              if (ranges[variables[n]].min > value)
+                {
+                  ranges[variables[n]].min = value;
                 }
 
             }
@@ -253,13 +280,14 @@ $(document).ready(function(){
     function setVariable(name) {
       var range = ranges[name];
       $('div.map-scale-min').html('$' + Math.floor(range.min).formatMoney(0,'.',','));
-      $('div.map-scale-max').html('$' + range.max.formatMoney(0,'.',','));
+      $('div.map-scale-max').html('$' + range.trueMax.formatMoney(0,'.',','));
       $('#map-scale-pane > h1').html(selectedCommodity == 'wind' ? 'Revenues' : 'Royalties');
 
       // update the (input) domain of the color scale,
       // according to the new variable's range, affecting
       // subsequent calls to mapColorScale(value)
       mapColorScale.domain([range.min, range.max]);
+      mapColorScale_limited.domain([range.min,range.max]);
 
       for (var i = 0; i < dataLayers.length; i++)
       {
@@ -495,6 +523,7 @@ $(document).ready(function(){
   function setLayerColor(layer){
     var value = 0;
     var name = selectedCommodity;
+    var max = mapColorScale.domain()[1];
     if (layer.feature.properties.commodities)
     {
       if (layer.feature.properties.commodities[name])
@@ -508,8 +537,10 @@ $(document).ready(function(){
       {
         newColor = mapColorScale(1);
       }
-    else  
+    else if (value > max)  
       newColor = mapColorScale(value);
+    else 
+      newColor=mapColorScale_limited(value);//use limited scale to avoid top color
     $("g[data-3d-layers='"+$(layer._container).attr('data-3d-layers')+"'] path").each(function(){
       $(this).attr('fill', newColor);
     });

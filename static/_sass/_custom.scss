@@ -488,50 +488,6 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
   }
 }
 
-// commented out in index now. delete if go-live without.
-// .moreDown {
-//   width: 30px;
-//   float: right;
-//   margin: -5px 4px auto -14px;
-// }
-// @-webkit-keyframes breathe {
-//   0%, 100% {
-//     width: 30px;
-//   }
-//   50% {
-//     width: 32px;
-//   }
-// }
-// @-moz-keyframes breathe {
-//   0%, 100% {
-//     width: 30px;
-//   }
-//   50% {
-//     width: 32px;
-//   }
-// }
-// @-o-keyframes breathe {
-//   0%, 100% {
-//     width: 30px;
-//   }
-//   50% {
-//     width: 32px;
-//   }
-// }
-// @keyframes breathe {
-//   0%, 100% {
-//     width: 30px;
-//   }
-//   50% {
-//     width: 32px;
-//   }
-// }
-
-// .breathe {
-//   @include prefixer(animation, breathe 3s infinite, webkit moz o spec);
-//   @include prefixer(animation-timing-function, ease, webkit moz o spec);
-// }
-
 // Homepage Infographic Sections
 //============================================
 
@@ -614,17 +570,19 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
 .sectors-chart {
   @include span-columns(7);
   @include omega();
+  position: relative;
   padding: 15px;
   text {
     fill: white;
   }
 }
 
-.sectors-chart-title { //likely delete -- not using anymore
-  color: $dark-gray;
-  text-transform: uppercase;
-  font-size: em(18);
-  border-bottom: 2px solid $dark-gray;
+.sectors-chart-instructions { //positions instructions, is not responsive yet
+  position: absolute;
+  right: 152px;
+  p {
+    font-style: italic;
+  }
 }
 
 .sectors-chart-pie {

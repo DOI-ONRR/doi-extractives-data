@@ -2191,6 +2191,13 @@ $dashboard-height: 400px;
   }
 }
 
+.dashboard-company-intro {
+  @include rem-fallback(font-size, 0.9);
+  width: 650px;
+  margin-top: -50px;
+  margin-left: 360px;
+}
+
 .dashboard-chart-back {
   margin-top: -60px;
   margin-right: 30px;

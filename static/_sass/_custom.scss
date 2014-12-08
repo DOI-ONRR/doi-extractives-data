@@ -1302,11 +1302,16 @@ div.disbursement_bubble_rollover {
   margin-top: 50px;
   padding-bottom: 30px;
   font-style: italic;
-  h1 {
+  h1,
+  p {
+    @include span-columns(12);
     @include rem-fallback(font-size, 0.8);
     font-weight: 300;
     font-family: $base-font-family;
     color: white;
+  }
+  a {
+    color: inherit;
   }
   ol li,
   ul li {

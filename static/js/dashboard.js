@@ -19,8 +19,6 @@ if (!companyPage)
     dashTable = dc.dataTable("#dashboard-table");
     dashTotalsTable = dc.dataTable("#dashboard-totals-table");
 }
-//var typeDimension;
-//d3.csv("https://docs.google.com/spreadsheet/pub?key=0AjPWVMj9wWa6dGw3b1c3ZHRSMW92UTJlNXRLTXZ0RUE&single=true&gid=0&output=csv",function(resource_data){
 String.prototype.hashCode = function() {
   var hash = 0, i, chr, len;
   if (this.length == 0) return hash;
@@ -496,7 +494,7 @@ d3.csv("../static/data/beta-data.csv",function(resource_data){
     *****************************/
 
     var formatxAxisForInnerGraphs = function(v){
-        var s='';
+        var s=v;
             switch(v){
                 case 'Rents':
                     s = 'rent';
@@ -508,139 +506,30 @@ d3.csv("../static/data/beta-data.csv",function(resource_data){
                     s = 'bonus';
                     break;
                 case 'Other Revenues':
-                    s = 'other';
+                    s = 'other revenues';
+                    break;
+                case 'Other':
+                    s = 'other commodities';
+                    break;
+                case 'Coal':
+                    s = 'coal';
+                    break;
+                case 'Oil & Gas':
+                    s = 'oil & gas';
+                    break;
+                case 'Renewables':
+                    s = 'renewables';
                     break;
             }
             return s;
     }
+    dash_bar_rev_by_commodity_group.xAxis().tickFormat(formatxAxisForInnerGraphs);
     dash_bar_rev_by_revenue_type_renewables.xAxis().tickFormat(formatxAxisForInnerGraphs);
     dash_bar_rev_by_revenue_type_oil_and_gas.xAxis().tickFormat(formatxAxisForInnerGraphs);
     dash_bar_rev_by_revenue_type_coal.xAxis().tickFormat(formatxAxisForInnerGraphs);
     dash_bar_rev_by_revenue_type_other.xAxis().tickFormat(formatxAxisForInnerGraphs);
-    /*****************************
-    Graph: Pie Graph, by commodity
-    *****************************/
-    // if (companyPage)
-    // {
-    //     dash_pie_rev_by_commodity.width(300)
-    //        // .colors(d3.scale.ordinal().range(["#815678","#70D4C4","#F96161","#ADAA97","#6D9DC8"]))
-    //         .height(300)
-    //         .transitionDuration(750)
-    //         .radius(105)
-    //         .dimension(typeDimension)
-    //         .group(typeDimensionEnergyGroup)
-    //         //.legend(dc.legend().x(280).y(70).itemHeight(13).gap(5))
-    //         .renderLabel(true)
-    //         //.minAngleForLabel(0)
-    //         //.label(function(d) { return d.data.key + "(" + Math.floor(d.data.value / all.value() * 100) + "%)"; })
-    //         .renderlet(function(d){
-    //             d3.select("#pie-chart-center-text h4").html('Total:<br /> $' +text_money(all.value()));
-    //         });
-    // }
-    /******************************
-    End: Pie Graph by commodity
-    ******************************/
-    
 
     
-    /****************************************
-    Alternate graphs not currently being used
-    *****************************************/
-    // dash_bar_rev_by_other
-    //     .width(600).height(400)
-    //     .group(typeDimensionOtherGroup)
-    //     .dimension(otherTypeDimension)
-    //     .centerBar(false)       
-    //     .elasticY(true)
-    //     .brushOn(false)
-    //     .renderHorizontalGridLines(true)
-    //     //.x(d3.time.scale().domain([minDate,maxDate]))
-    //     .xUnits(dc.units.ordinal)
-    //     .x(d3.scale.ordinal().domain(["Clay","Copper","Gilsonite","Hardrock","Oil Shale","Phosphate","Sodium",'Potassium']))//.domain(["Coal","Gas","Oil & Gas","Oil"]))
-    //     .margins({top: 10, right: 10, bottom: 75, left:100})
-    //     .yAxis().tickFormat(function(v){return "$"+ v;});
-    // dash_bar_rev_by_other.on("filtered", function (chart) {
-    //             dc.events.trigger(function () {
-    //             });});
-
-    // dash_bar_by_rev_source
-    //     .width(300).height(400)
-    //     .group(revDimensionGroup)
-    //     .dimension(revDimension)
-    //     .centerBar(false)
-    //     .elasticY(true)
-    //     .brushOn(false)
-    //     .renderHorizontalGridLines(true)
-    //     .xUnits(dc.units.ordinal)
-    //         .x(d3.scale.ordinal())
-    //     .margins({
-    //         top: 10,
-    //         right: 10,
-    //         bottom: 75,
-    //         left: 100
-    //     })
-    //     .yAxis().tickFormat(function(v) {
-    //         return "$" + parseFloat(v).formatMoney(0, '.', ',')
-    //     });
-    // dash_bar_by_rev_source.on("filtered", function(chart) {
-    //     dc.events.trigger(function() {});
-    // });
-
-    // dash_bar_avg_by_rev_source
-    //     .width(300).height(400)
-    //     .group(revDimension_allGroup)
-    //     .dimension(revDimension)
-    //     .centerBar(false)
-    //     .elasticY(true)
-    //     .brushOn(false)
-    //     .renderHorizontalGridLines(true)
-    //     .valueAccessor(function(p) {
-    //         return p.value.average;
-    //     })
-    //     .xUnits(dc.units.ordinal)
-    //     .x(d3.scale.ordinal())
-    //     .margins({
-    //         top: 10,
-    //         right: 10,
-    //         bottom: 75,
-    //         left: 100
-    //     })
-    //     .yAxis().tickFormat(function(v) {
-    //         return "$" + parseFloat(v).formatMoney(0, '.', ',')
-    //     });
-    // dash_bar_avg_by_rev_source.on("filtered", function(chart) {
-    //     dc.events.trigger(function() {});
-    // });
-
-    // dash_bar_avg_by_commodity
-    //     .width(600).height(400)
-    //     .group(typeDimension_allGroup)
-    //     .dimension(typeDimension)
-    //     .centerBar(false)
-    //     .elasticY(true)
-    //     .brushOn(false)
-    //     .renderHorizontalGridLines(true)
-    //     .valueAccessor(function(p) {
-    //         return p.value.average;
-    //     })
-    // .xUnits(dc.units.ordinal)
-    //     .x(d3.scale.ordinal())
-    //     .margins({
-    //         top: 10,
-    //         right: 10,
-    //         bottom: 75,
-    //         left: 100
-    //     })
-    //     .yAxis().tickFormat(function(v) {
-    //         return "$" + parseFloat(v).formatMoney(0, '.', ',')
-    //     });
-    // dash_bar_avg_by_commodity.on("filtered", function(chart) {
-    //     dc.events.trigger(function() {});
-    // });
-
-
-
-
     /*******************************************************************
     Main Table Setup
     Setups table with company name, commodity, revenue, and revenue type
@@ -727,22 +616,22 @@ d3.csv("../static/data/beta-data.csv",function(resource_data){
         $('#dashboard-bar-rev-by-commodity-group svg g g.x g.tick text').each(function(){
             $(this).on('click',function(){
                 $('#dashboard-bar-rev-by-commodity-group').toggle();
-                if($(this).text()== 'Oil & Gas')
+                if($(this).text().toLowerCase() == 'oil & gas')
                 {
                     $('#dashboard-bar-rev-by-revenue-type-oil-and-gas').toggle();
                     update_graph_options(['Oil','Oil & Gas','Gas'],typeDimension);
                 }
-               if($(this).text()== 'Renewables')
+               if($(this).text().toLowerCase() == 'renewables')
                {
                     $('#dashboard-bar-rev-by-revenue-type-renewables').toggle();
                     update_graph_options(['Wind','Geothermal'],typeDimension);
                }
-               if($(this).text()== 'Other')
+               if($(this).text().toLowerCase() == 'other commodities')
                {
                     $('#dashboard-bar-rev-by-revenue-type-other').toggle();
                     update_graph_options(['Other Commodities'],typeDimension);
                }
-               if($(this).text()== 'Coal')
+               if($(this).text().toLowerCase() == 'coal')
                {
                     $('#dashboard-bar-rev-by-revenue-type-coal').toggle();
                     update_graph_options(['Coal'],typeDimension);

@@ -86,7 +86,7 @@ h2,
   @include rem-fallback(font-size, $base-font-size * $h2);
   font-family: $secondary-font-family;
   font-weight: 600;
-  color: $red;
+  color: $useiti-red;
   font-weight: 300;
   padding: 18px 0 12px 0;
 }
@@ -96,7 +96,7 @@ h3,
   @include rem-fallback(font-size, $base-font-size * $h3);
   font-family: $secondary-font-family;
   color: $dark-gray;
-  border-bottom: 1px solid $red;
+  border-bottom: 1px solid $useiti-red;
   font-weight: 300;
   margin-bottom: 5px;
   padding-top: 13px;
@@ -175,7 +175,7 @@ img {
 blockquote,
 blockquote p {
   font-family: $secondary-font-family;
-  color: $red;
+  color: $useiti-red;
   @include rem-fallback(font-size, $base-font-size * 1.2);
   @include rem-fallback(margin, 0, 0, 0.8, 0.3);
   font-style: italic;
@@ -218,7 +218,7 @@ cite {
   display: block;
   margin: 0;
   font-weight: 400;
-  color: $red;
+  color: $useiti-red;
 }
 
 

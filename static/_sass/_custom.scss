@@ -21,6 +21,19 @@ sub {
   top: 0.4em;
 }
 
+.sr-only { //for screen readers
+  position: absolute;
+  overflow: hidden;
+  width:1px;
+  height:1px;
+  margin: -1px;
+  padding:0;
+}
+
+.container {
+  @include outer-container;
+}
+
 .download {
   margin-top: 10px;
 }
@@ -36,53 +49,61 @@ sub {
   }
 }
 
-// Utility
-//============================================
-
-.container {
-  @include outer-container;
-}
-
-//remove these below later - lazy coding
-.textRight {
-  text-align: right;
-}
-
-.textLeft {
-  text-align: left;
-}
-
-.floatRight {
-  float: right;
-}
-
-.clearfix {
-  clear: both;
-  width: 100%;
-}
-
 .credit {
-  @include rem-fallback(font-size, 1);
-  line-height: 1.1;
   color: $dark-gray;
+  @include rem-fallback(font-size, 1);
   font-style: italic;
+  line-height: 1.1;
 }
 
 .stage-bug {
   display: block;
+  padding: .3em 0;
+  border-top: none;
   background: $light-gray;
   color: $dark-gray;
-  border-top: none;
-  text-align: center;
   @include rem-fallback(font-size, 0.85);
-  padding: .3em 0;
+  text-align: center;
 }
+
+.section {
+  padding: 40px 10px 50px 10px;
+  @include respond-to(large-up) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  background-color: $light-gray;
+  overflow: hidden;
+}
+
+// Utility
+//============================================
+
+//remove these below later - lazy coding
+// .textRight {
+//   text-align: right;
+// }
+
+// .textLeft {
+//   text-align: left;
+// }
+
+// .floatRight {
+//   float: right;
+// }
+
+// .clearfix {
+//   clear: both;
+//   width: 100%;
+// }
+
+
 
 // Nav
 //============================================
 
 ul.menu a.active li {
-  border-bottom: 3px solid $red;
+  border-bottom: 3px solid $useiti-red;
   &:hover, &:focus {
     color: white;
   }
@@ -97,12 +118,12 @@ ul.menu a.active li {
 }
 
 .nav {
-  background: #8dc2e7;
-  border-top: 4px solid rgba(0, 0, 0, 0.3);
-  height: 34px;
   padding-left: 20px;
   padding-right: 20px;
   width: 100%;
+  height: 34px;
+  border-top: 4px solid rgba(0, 0, 0, 0.3);
+  background: #8dc2e7;
   ul {
     width: 100%;
     list-style: none;
@@ -111,22 +132,22 @@ ul.menu a.active li {
     }
   }
   li {
-    font-weight: 500;
-    @include rem-fallback(font-size, $base-font-size * 0.86);
+    display: block;
     @include respond-to(small-up) {
       float: left;
     }
-    padding: 4px 2px 2px 3px;
     margin-right: 28px;
+    padding: 4px 2px 2px 3px;
     border-left: 1px solid black;
     border-bottom: 3px solid black;
-    display: block;
+    @include rem-fallback(font-size, $base-font-size * 0.86);
+    font-weight: 500;
   }
   .nav-last {
-    border-bottom: none;
-    border-left: none;
     margin-right: 0;
     padding: 0 0 0 0;
+    border-bottom: none;
+    border-left: none;
   }
   .nav-right {
     float: right;
@@ -146,38 +167,38 @@ ul.menu a.active li {
     left:-999px
   }
   input {
-    background-color: #f8f8f8;
+    height: 30px;
+    margin-bottom: 0;
     border-radius: 0;
     border-color: black;
     border-bottom-width: 3px;
-    height: 30px;
-    margin-bottom: 0;
+    background-color: #f8f8f8;
   }
-  input[type=search] {
+  input[type="search"] {
     width: 180px;
     @include rem-fallback(font-size, $base-font-size * 0.7);
     font-weight: 300;
     color: black;
     float: left;
   }
-  input[type=search]:hover {
-    border-color: $medium-gray;
+  input[type="search"]:hover {
+    border-color: $mid-gray;
   }
-  input[type=search]:focus { 
-    border-color: $red;
+  input[type="search"]:focus { 
+    border-color: $useiti-red;
   }
-  input[type=submit] {
-    color: $dark-gray;
+  input[type="submit"] {
     padding: 0 8px 0 10px;
     float: left;
     border-top: 1px solid black;
     border-right: 1px solid black;
     border-left: 1px solid black;   
     border-bottom: 3px solid black;
+    color: $dark-gray;
     &:hover, &:focus {
-      color: $red;
-      border-bottom-color: $red;
+      border-bottom-color: $useiti-red;
       background-color: $light-gray;
+      color: $useiti-red;
     }
   }
   ::-webkit-input-placeholder { /* WebKit browsers */
@@ -198,26 +219,26 @@ ul.menu a.active li {
 
 // Animated hamburger icon
 // http://www.elijahmanor.com/css-animated-hamburger-icon/
-#nav-toggle { 
-  cursor: pointer;
-  padding: 10px 35px 16px 0;
+#nav-toggle {
   position: relative;
   left: 0;
   top: -11px;
+  padding: 10px 35px 16px 0;
+  cursor: pointer;
   @include respond-to(small-up) {
     display: none;
   }
 }
 
 #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
-  cursor: pointer;
-  border-radius: 2px;
+  display: block;
+  position: absolute;
   height: 4px;
   width: 35px;
+  border-radius: 2px;
   background: $dark-gray;
-  position: absolute;
-  display: block;
   content: '';
+  cursor: pointer;
 }
 
 #nav-toggle span:before {
@@ -245,45 +266,45 @@ ul.menu a.active li {
 }
 
 #nav-toggle.active span:after {
-  transform: translateY(-10px) rotate(-45deg);
   top: 10px;
+  transform: translateY(-10px) rotate(-45deg);
 }
 
 // Vertical scroll nav
 //============================================
 
 #scroll {
-  position: fixed;
-  top: 42%;
-  right: 15px;
-  z-index: 999;
   display: none;
   @include respond-to(small-up) {
     display: block;
   }
+  position: fixed;
+  top: 42%;
+  right: 15px;
+  z-index: 999;
 }
 
 .scroll_item {
-  border: 1px solid $deep-gray;
-  background-color: white;
   width: 13px;
   height: 13px;
   margin: 10px;
+  border: 1px solid $deep-gray;
   border-radius: 50%;
+  background-color: white;
   @include transition(all 0.3s ease);
 }
 
 .scroll_item:hover {
-  background: $red;
+  background: $useiti-red;
   cursor: pointer;
 }
 
 .scroll_item_active {
-  border: 1px solid $deep-gray;
   width: 13px;
   height: 13px;
   margin: 10px;
-  background-color: $red;
+  background-color: $useiti-red;
+  border: 1px solid $deep-gray;
 }
 
 // Tooltips
@@ -307,6 +328,8 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
   .tooltip {
     @include position(absolute, -15px 0 0 -175px);
     @include box-sizing(border-box);
+    min-width: $tooltip-width;
+    height: 30px;
     background-color: $tooltip-background;
     color: $tooltip-color;
     @include rem-fallback(font-size, 0.8);
@@ -317,21 +340,19 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
     box-shadow: $tooltip-shadow;
     text-align: center;
     visibility: hidden;
-    min-width: $tooltip-width;
-    height: 30px;
     z-index: 10;
     p {
+      margin-bottom: 0;
       @include rem-fallback(font-size, 0.8);
       line-height: 1;
-      margin-bottom: 0;
     }
     &:after {
       @include position(absolute, -2px 0 0 152px);
       border: $tooltip-arrow-width solid transparent;
       color: $tooltip-background;
-      content: '►';
       text-shadow: $tooltip-shadow;
-      @include rem-fallback(font-size, 1);    
+      @include rem-fallback(font-size, 1);  
+      content: '►';  
       pointer-events: none;
     }
   }
@@ -341,21 +362,21 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
 //============================================
 .usa {
   @include span-columns(12);
+  height: 18px;
   background-color: $blue;
   text-align: center;
-  height: 18px;
   img {
-    padding-left: 5px;
     padding-top: 3px;
+    padding-left: 5px;
   }
   p {
     @include rem-fallback(font-size, $base-font-size * 0.8);
-    font-family: Lato, sans-serif;
+    font-family: $base-font-family;
   }
 }
 
 .splash {
-  // padding: 18 0 0 0; for usa bug
+  // padding: 18 0 0 0; for usa bug when it returns
   padding: 0;
   border-bottom: $section-border;
   min-width: 100%;
@@ -386,6 +407,9 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
   }
   h1 {
     display: inline-block;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-bottom: 10px;
     color: white;
     @include rem-fallback(font-size, $base-font-size * 2.16);
     line-height: 1.2;
@@ -393,10 +417,7 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
       line-height: 1.6;
     }
     font-weight: 500;
-    background-color: $red;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-bottom: 10px;
+    background-color: $useiti-red;
     &:first-of-type {
       margin-top: 100px;
     }
@@ -406,8 +427,8 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
   }
   .subpage h1 {
     @include rem-fallback(font-size, 1.3);
-    padding-left: 10px;
     padding-right: 10px;
+    padding-left: 10px;
     &:first-of-type {
       margin-top: 15px;
     }
@@ -434,8 +455,8 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
     padding-right: 50px;
   }
   background-color: transparentize(black, 0.55);
-  margin-left: 20px;
   margin-bottom: 250px;
+  margin-left: 20px;
   padding: 20px 15px 15px 30px;
   color: white;
   p {
@@ -459,7 +480,7 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
   border-top: $section-border;
   h1 {
     padding-top: 30px;
-    font-family: Lato;
+    font-family: $base-font-family;
     font-weight: 300;
   }
   .intro {
@@ -477,7 +498,7 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
   border-top: $section-border;
   h1 {
     padding-top: 30px;
-    font-family: Lato;
+    font-family: $base-font-family;
     font-weight: 300;
   }
   .intro {
@@ -488,39 +509,26 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
   }
 }
 
-// Homepage Infographic Sections
-//============================================
-
-.section {
-  padding: 40px 10px 50px 10px;
-  background-color: $light-gray;
-  overflow: hidden;
-  @include respond-to(large-up) {
-    padding-right: 0;
-    padding-left: 0;
-  }
-}
-
-// Sectors pie chart
+// Sectors (pie chart)
 //============================================
 
 .sectors {
-  background-color: $mid-gray;
   padding-top: 20px;
   padding-bottom: 0;
+  background-color: $mid-gray;
   h1 {
-    font-family: Lato;
+    margin-bottom: 15px;
+    font-family: $base-font-family;
     font-weight: 100;
     color: white;
-    margin-bottom: 15px;
   }
 }
 
 .sectors-canvas {
-  background-color: $deep-gray;
-  color: white;
   padding-top: 40px;
   padding-bottom: 40px;
+  background-color: $deep-gray;
+  color: white;
 }
 
 .sectors-text {
@@ -536,15 +544,15 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
     fill: white;
   }
   p {
-    @include rem-fallback(font-size, 1.1);
     margin-bottom: 30px;
+    @include rem-fallback(font-size, 1.1);
   }
   ul {
     margin-top: -30px;
     margin-left: 30px;
     list-style-type: disc;
     li {
-    @include rem-fallback(font-size, 1.1);
+      @include rem-fallback(font-size, 1.1);
     }
   }
 }
@@ -555,7 +563,7 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
 
 .sectors-big-text {
   @include rem-fallback(font-size, 1.4);
-  font-family: Raleway, sans-serif;
+  font-family: $secondary-font-family;
   font-weight: 800;
 }
 
@@ -587,7 +595,7 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
 
 .sectors-chart-pie {
   position: relative;
-  margin: 0px auto;
+  margin: 0 auto;
   width: 400px;
   float: center;
   svg {
@@ -596,26 +604,26 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
 }
 
 .sectors-chart-pie-center {
+  position: absolute;
+  top: 50px;
+  left: 50px;
   height: 200px;
   width: 200px;
   background: white;
   border-radius: 100px;
-  position: absolute;
   opacity: 0.75;
-  top: 50px;
-  left: 50px;
 }
 
 .sectors-chart-pie-center-text {
-  opacity: 1;
-  color: black;
   position: absolute;
   top: 117px;
   left: 77px;
   width: 150px;
+  opacity: 1;
+  color: black;
   text-align: center;
   h1 {
-    font-family: Lato;
+    font-family: $base-font-family;
     font-weight: 200;
     @include rem-fallback(font-size, 1.5);
     span {
@@ -651,28 +659,27 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
   }
 }
 
-
 // Disbursment Bubble Graph
 //============================================
 
 .disburse {
-  background-color: $mid-gray;
   padding-top: 20px;
   padding-bottom: 0;
+  background-color: $mid-gray;
   h1 {
-    font-family: Lato;
+    margin-bottom: 15px;
+    font-family: $base-font-family;
     font-weight: 100;
     color: white;
-    margin-bottom: 15px;
   }
   .bubble_tabs {
     margin-left: 40px;
     @include rem-fallback(font-size, 1.3);
     a {
-      font-weight: 200;
       padding: 5px 13px 17px 13px;
-      text-decoration: none;
+      font-weight: 200;
       color: black;
+      text-decoration: none;
       &:hover,
       &:focus {
         text-decoration: underline;
@@ -690,45 +697,37 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
 }
 
 .bubbles-viz {
-  color: white;
-  padding-top: 60px;
-
   @include span-columns(8);
-
+  padding-top: 60px;
+  color: white;
   .bubbles-instructions {
     margin-top: 0;
     line-height: 1.2;
-    font-style: italic;
     color: $mid-gray;
+    font-family: $base-font-family;
+    font-style: italic;
     font-weight: 300;
   }
-
   text {
     fill: white;
   }
-
   svg.pack {
     margin-top: 20px;
-
     g.node text {
       fill: white;
       @include rem-fallback(font-size, .9);
     }
-
     g.node circle {
       cursor: pointer;
       stroke: transparent;
       stroke-width: 2;
     }
-
     g.node:hover circle {
       stroke: white;
     }
-
     g.node.onshore circle {
       fill: $useiti-green;
     }
-
     g.node.offshore circle {
       fill: $useiti-blue;
     }
@@ -737,43 +736,40 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
 
 // this is the info area for bubbles in the disbursement graph
 .bubble-info {
-  color: white;
   margin-top: 40px;
-
+  color: white;
   // make all links white
   a {
     color: inherit;
   }
-
   h1 {
     margin: 0;
     color: inherit;
     @include rem-fallback(font-size, 1.1);
     font-weight: 300;
-
     .context {
       margin-left: .5em;
-
-      &.onshore { color: $useiti-green; }
-      &.offshore { color: $useiti-blue; }
+      &.onshore {
+        color: $useiti-green;
+      }
+      &.offshore {
+        color: $useiti-blue; 
+      }
     }
   }
-
   h2 {
     margin: 0;
     padding: 0;
     color: inherit;
     @include rem-fallback(font-size, 1.1);
-    font-family: Lato;
+    font-family: $base-font-family;
     font-weight: 200;
   }
-
   .icons .icon {
     width: 40px;
     height: 40px;
     fill: white;
   }
-
   &.default-display {
     color: $mid-gray;
     .icons .icon {
@@ -787,17 +783,17 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
   @include span-columns(4);
   margin-top: 20px;
   .box {
-    background: white;
     padding-top: 10px;
     padding-bottom: 1px;
+    background: white;
   }
   h1 {
-    font-family: Lato;
-    font-weight: 700;
-    color: white;
-    padding: 10px;
     margin-right: 10px;
     margin-left: -10px;
+    padding: 10px;
+    font-family: $base-font-family;
+    font-weight: 700;
+    color: white;
     @include rem-fallback(font-size, 1);
   }
   p {
@@ -832,11 +828,9 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
   right: -20px;
   height: 100%;
   background: $deep-gray;
-
   .box {
     margin-left: 20px;
   }
-
   .close {
     float: right;
     color: white;
@@ -846,24 +840,27 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
     text-decoration: none;
     cursor: pointer;
   }
-
-  h1.offshore { background: $useiti-blue; }
-  h1.onshore { background: $useiti-green; }
+  h1.offshore {
+    background: $useiti-blue;
+  }
+  h1.onshore {
+    background: $useiti-green;
+  }
 }
 
 .tipsy-inner {
   text-align: left;
   padding: 15px;
   h1 {
-    font-family: Lato;
+    font-family: $base-font-family;
     font-weight: 400;
     @include rem-fallback(font-size, 1.7);
   }
   h2 {
-    font-family: Lato;
-    font-weight: 200;
     margin-top: 0;
     padding-bottom: 0;
+    font-family: $base-font-family;
+    font-weight: 200;
     color: black;
     @include rem-fallback(font-size, 1);
   }
@@ -889,9 +886,9 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
   margin-bottom: 0;
   text-align: center;
   a {
+    display: block;
     padding-top: 10px;
     padding-bottom: 10px;
-    display: block;
     color: $deep-gray;
     text-decoration: none;
     &:hover,
@@ -914,343 +911,24 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
 }
 
 .disbursement_bubble_details_images {
-  width: 30%;
   display: inline-block;
+  width: 30%;
 }
 
 .disbursement-bubble-img-containter {
   text-align: center;
 }
 
-
-//old stuff below here
-.disbursement {
-  a:active {
-    text-decoration: underline;
-  }
-}
-
-.disbursement-intro {
-  @include span-columns(12);
-  margin-bottom: 20px;
-  h1 {
-    @include span-columns(12 of 12);
-    padding-bottom: 15px;
-  }
-  h1,
-  h2 {
-    @extend .h1;
-    @include rem-fallback(font-size, 1.7);
-    line-height: 1;
-  }
-  span:nth-of-type(1) {
-    @include span-columns(12 of 12);
-    padding-bottom: 5px;
-  }
-  span:nth-of-type(2) {
-    @include span-columns(3 of 12);
-    @include rem-fallback(font-size, 2.3);
-    padding-left: 4%;
-  }
-  span:nth-of-type(3) {
-    @include span-columns(9 of 12);
-    padding-top: 3px;
-  }
-}
-
-.dollars {
-  @include span-columns(12);
-  margin: 20px 0 60px 0;
-  h1 {
-    text-transform: uppercase;
-    @include rem-fallback(font-size, 1.2);
-    float: left;
-    padding: 9px 8px 0 0;
-  }
-  a {
-    @include button(pill, $medium-gray);
-  }
-}
-
-#disbursment_totals_bar {
-  margin-top: 20px;
-  p {
-    @include rem-fallback(font-size, 0.8);
-    transform-origin: 0 0;
-  }
-  div.offshore_bar {
-    p {
-      margin-top: 15px;
-      padding-left: 8px;
-      transform: rotate(30deg);
-    }
-    div.disbursement_bar {
-      margin: 2px;
-      height: 20px;
-      float: left;
-      background-color: white;
-    }
-    > div:nth-of-type(1) {
-      background-color: $purple0;
-    }
-    > div:nth-of-type(2) {
-      background-color: $purple1;
-    }
-    > div:nth-of-type(3) {
-      background-color: $purple2;
-      p {
-        position: relative;
-        left: -4px;
-      }
-    }
-    > div:nth-of-type(4) {
-      background-color: $purple3;
-      p {
-        position: relative;
-        left: -1px;
-      }
-    }
-    > div:nth-of-type(5) {
-      background-color: $purple4;
-      p {
-        position: relative;
-        left: 7px;
-      }
-    }
-  }
-  div.onshore_bar {
-    p {
-      margin-top: -14px;
-      padding-left: -1px;
-      transform: rotate(-30deg);
-    }
-    div.disbursement_bar {
-      margin: 2px;
-      height: 20px;
-      float: left;
-    }
-    > div:nth-of-type(1) {
-      background-color: $orange0;
-    }
-    > div:nth-of-type(2) {
-      background-color: $orange1;
-    }
-    > div:nth-of-type(3) {
-      background-color: $orange2;
-    }
-    > div:nth-of-type(4) {
-      background-color: $orange3;
-    }
-    > div:nth-of-type(5) {
-      background-color: $orange4;
-    }
-  }
-}
-
-// .bubbles {
-//   //@include span-columns(12);
-//   .offshore {
-//     @include span-columns(6 of 12);
-//   }
-//   .onshore {
-//     @include span-columns(6 of 12);
-//   }
-//   h1 {
-//     @include rem-fallback(font-size, 1.4);
-//     span {
-//       color: $purple1;
-//     }
-//     border-top: 2px solid $purple1;
-//     margin-top: 20px;
-//     margin-bottom: 10px;
-//   }
-//   .onshore h1 {
-//     span {
-//       color: $orange1;
-//     }
-//     border-top: 2px solid $orange1;
-//   }
-//   h2 {
-//     text-transform: uppercase;
-//     @include rem-fallback(font-size, 0.9);
-//     font-weight: 800;
-//     margin-top: 4px;
-//     padding-left: 3px;
-//     border-left: 2px solid black;
-//     &:hover, &:focus {
-//       border-left: none;
-//     }
-//     a {
-//       color: black;
-//       &:hover, &:focus {
-//         text-decoration: none;
-//         cursor: pointer;
-//       }
-//     }
-//   }
-// }
-.stats-offshore {
-  line-height: 15px;
-  position: relative;
-  img {
-    height: 70px;
-  }
-  .info_bubble {
-    border: 2px solid $highlight;
-    background-color: $purple3;
-  }
-  > div {
-    border-radius: 1000px;
-    margin: 2px;
-    padding: 1px;
-    border: 2px solid transparent;
-    &:hover {
-      border: 2px solid $highlight;
-      cursor: pointer;
-      cursor: hand;
-    }
-  }
-  > div:nth-of-type(2) {
-    background-color: $purple2;
-    margin-left: 10%;
-    margin-top: 6%;
-  }
-  > div:nth-of-type(3) {
-    background-color: $purple3;
-    margin-top: 5%;
-    > div {
-      line-height: 1;
-      @include rem-fallback(font-size, 0.9);
-    }
-  }
-  > div:nth-of-type(4) {
-    background-color: $purple1;
-  }
-  > div:nth-of-type(5) {
-    background-color: $purple0;
-    margin-top: -8%;
-  }
-  > div:nth-of-type(6) {
-    background-color: $purple4;
-    margin-left: -4%;
-  }
-}
-.stats-onshore {
-  line-height: 15px;
-  position: relative;
-  img {
-    height: 70px;
-  }
-  .info_bubble {
-    border: 2px solid $highlight;
-    background-color: $orange3;
-  }
-  > div {
-    border-radius: 1000px;
-    margin: 2px;
-    padding: 1px;
-    border: 2px solid transparent;
-    &:hover {
-      border: 2px solid $highlight;
-      cursor: pointer;
-      cursor: hand;
-    }
-  }
-  > div:nth-of-type(2) {
-    background-color: $orange3;
-    margin-top: 37%;
-  }
-  > div:nth-of-type(3) {
-    background-color: $orange2;
-    margin-top: 3%;
-    margin-top: 24%;
-  }
-  > div:nth-of-type(4) {
-    background-color: $orange4;
-    margin-left: -39%;
-    margin-top: 21%;
-  }
-  > div:nth-of-type(5) {
-    background-color: $orange1;
-    margin-left: -0.5%;
-  }
-  > div:nth-of-type(6) {
-    background-color: $orange0;
-    margin-left: -16%;
-    margin-top: -6%;
-  }
-}
-.disbursement_bubble {
-  float: left;
-  text-align: center;
-  display: table;
-  position: relative;
-  width: auto;
-  height: auto;
-  div {
-    display: table-cell;
-    vertical-align: middle;
-    color: black;
-  }
-}
-div.disbursement_bubble_rollover {
-  position: absolute;
-  top: 65%;
-  left: 25%;
-  z-index: 100;
-  display: none;
-  padding: 10px;
-  color: $light-gray;
-  background-color: $dark-gray;
-  border: 1px solid $deep-purple;
-  opacity: 0.85;
-  border-radius: 3px;
-  @include rem-fallback(font-size, 0.9);
-  text-align: left;
-  .statsOnshore {
-    border: 1px solid $deep-orange;
-  }
-}
-.info_bubble {
-  position: absolute;
-  top: 20%;
-  left: 0;
-  width: 0;
-  height: 0;
-  z-index: 1000;
-  display: none;
-  .disbursement_bubble_details {
-    @include span-columns(9);
-    @include shift(2);
-    text-align: left;
-    margin-top: 9%;
-    h1 {
-      border: none;
-      color: black;
-      text-transform: none;
-      @include rem-fallback(font-size, 1.5);
-      line-height: 1.1
-    }
-    p {
-      @include rem-fallback(font-size, 1);
-      line-height: 1.1
-    }
-    .disbursement_bubble_details_images {
-      @include span-columns(3 of 9);
-    }
-  }
-}
-
 // Map
 //============================================
-//how do natural resources become Federal revenue?
+
 .how {
   padding-top: 20px;
   padding-bottom: 0;
   background-color: $mid-gray;
   .map-title { //remove once the new styles become global variables
     h1 {
-      font-family: Lato;
+      font-family: $base-font-family;
       font-weight: 100;
       color: white;
       margin-bottom: 15px;
@@ -1298,16 +976,16 @@ div.disbursement_bubble_rollover {
 .map-notes,
 .sectors-chart-notes,
 .disbursement-chart-notes {
-  color: white;
   margin-top: 50px;
   padding-bottom: 30px;
+  color: white;
+  font-family: $base-font-family;
   font-style: italic;
   h1,
   p {
     @include span-columns(12);
     @include rem-fallback(font-size, 0.8);
     font-weight: 300;
-    font-family: $base-font-family;
     color: white;
   }
   a {
@@ -1329,12 +1007,12 @@ div.disbursement_bubble_rollover {
   @include span-columns(4);
   @include shift(8);
   @include omega();
-  text-align: right;
   margin-top: 0;
   padding-bottom: 0;
+  text-align: right;
   li {
-    line-height: 1.2;
     padding-bottom: 5px;
+    line-height: 1.2;
   }
 }
 
@@ -1351,24 +1029,24 @@ div.disbursement_bubble_rollover {
 }
 
 .map-container {
+  position: relative;
   margin-top: 130px;
   @include respond-to(small-up) {
     margin-top: 0;
   }
+  margin-bottom: 15px;
   @include span-columns(12);
-  position: relative;
   height: 400px;
   @include respond-to(small-up) {
     height: 600px;
   }
-  margin-bottom: 15px;
 }
 
 .map-legend .swatch {
+  margin-right: 10px;
+  float: left;
   width: 20px;
   height: 20px;
-  float: left;
-  margin-right: 10px;
 }
 
 .menu-ui {
@@ -1379,6 +1057,7 @@ div.disbursement_bubble_rollover {
 }
 
 .map-info-pane {
+  display: none;
   position: absolute;
   right: 0;
   width: 100%;
@@ -1393,12 +1072,11 @@ div.disbursement_bubble_rollover {
       display: none;
     }
   }
-  line-height: 1.1;
   padding: 10px;
-  z-index: 10000;
+  line-height: 1.1;
   background-color: $dark-medium-gray;
   border: 1px solid $dark-gray;
-  display: none;
+  z-index: 10000;
   h1 {
     font-family: $base-font-family;
     @include rem-fallback(font-size, 1.3);
@@ -1413,8 +1091,9 @@ div.disbursement_bubble_rollover {
     p {
       @include span-columns(12);
       margin-top: 11px;
-      margin-bottom: 0px;
+      margin-bottom: 0;
       color: lighten($dark-gray, 5%);
+      font-family: $base-font-family;
       font-style: italic;
       @include rem-fallback(font-size, 0.8);
       line-height: 1.1;
@@ -1426,8 +1105,7 @@ div.disbursement_bubble_rollover {
 }
 
 .map-info-pane-minimized {
-  bottom: 0px;
-  
+  bottom: 0;
   overflow: hidden;
   span {
     float: right;
@@ -1505,7 +1183,7 @@ div.disbursement_bubble_rollover {
     }
     &:hover,
     &:focus {
-      background-color: $darker-gray;
+      background-color: $mid-gray;
       cursor: pointer;
       h1 {
         color: white;
@@ -1539,12 +1217,12 @@ div.disbursement_bubble_rollover {
   }
   .tooltip {
     @include position(absolute, -15px 0 0 85px);
+    height: 70px;
+    visibility: hidden;
     background-color: $tooltip-background;
     opacity: 0;
     box-shadow: $tooltip-shadow;
     text-align: left;
-    visibility: hidden;
-    height: 70px;
     p {
       width: 100%;
     }
@@ -1560,18 +1238,18 @@ div.disbursement_bubble_rollover {
 }
 
 #map-scale-pane {
+  display: none;
   position: absolute;
   right: 0;
   bottom: -80px;
-  display: none;
   @include respond-to(small-up) {
     display: block;
     right: 10px;
     bottom: 35px;
   }
+  padding: 3px;
   background-color: $dark-medium-gray;
   border: 1px solid $dark-gray;
-  padding: 3px;
   z-index: 999;
   h1 {
     font-family: $base-font-family;
@@ -1583,18 +1261,6 @@ div.disbursement_bubble_rollover {
     width: 250px;
     height: 20px;
     border: 1px solid black;
-    // background: -webkit-linear-gradient(left, #efaeab, #7e3533);
-    /* For Safari 5.1 to 6.0 */
-    
-    // background: -o-linear-gradient(right, #efaeab, #7e3533);
-    /* For Opera 11.1 to 12.0 */
-    
-    // background: -moz-linear-gradient(right, #efaeab, #7e3533);
-    /* For Firefox 3.6 to 15 */
-    
-    // background: linear-gradient(to right, #efaeab, #7e3533);
-    /* Standard syntax (must be last) */
-
     div.step {
       display: inline-block;
       height: 100%;
@@ -1740,6 +1406,7 @@ article {
       }
     }
   }
+
 .article-nav {
   @include span-columns(3);
   border: 1px solid white;
@@ -1804,11 +1471,11 @@ article {
     @include span-columns(9);
     margin-top: 0;
     dt {
+      margin-top: 20px;
       font-family: $secondary-font-family;
       color: $dark-gray;
       @include rem-fallback(font-size, 1.3);
       font-weight: 300;
-      margin-top: 20px;
     }
   }
 }
@@ -1821,14 +1488,14 @@ $max-width: 100%; //this is setting the width of outer-container.
 //what about the rest of the site that is not full-width?
 
 .dashboard {
-  background-color: $mid-gray;
   padding-top: 20px;
   padding-bottom: 0;
+  background-color: $mid-gray;
   h1 {
-    font-family: Lato;
+    margin-bottom: 15px;
+    font-family: $base-font-family;
     font-weight: 100;
     color: white;
-    margin-bottom: 15px;
   }
   p {
     i {
@@ -1843,8 +1510,8 @@ $max-width: 100%; //this is setting the width of outer-container.
     margin-left: 60%;
     @include rem-fallback(font-size, 1);
     a {
-      font-weight: 300;
       padding: 5px 17px 17px 17px;
+      font-weight: 300;
       text-decoration: none;
       color: black;
       &:hover,
@@ -1865,12 +1532,12 @@ $max-width: 100%; //this is setting the width of outer-container.
 }
 
 .dashboard-canvas {
+  padding: 20px;
   background-color: $deep-gray;
   @include span-columns(12);
-  padding: 20px;
   color: white;
   h1 {
-    font-family: Lato;
+    font-family: $base-font-family;
     font-weight: 200;
     color: white;
     @include rem-fallback(font-size, 1.7);
@@ -1879,8 +1546,8 @@ $max-width: 100%; //this is setting the width of outer-container.
     padding-left: 20px;
   }
   > div {
-    background-color: $almost-black;
     padding: 20px;
+    background-color: $almost-black;
     h1 {
       @include rem-fallback(font-size, 0.9);
       font-weight: 700;
@@ -1969,8 +1636,8 @@ $dashboard-height: 400px;
   @include span-columns(2 of 12);
   $size: 36px;
   a {
-    width: 100px;
     display: block;
+    width: 100px;
     padding: 1px;
     margin-bottom: 10px;
     text-decoration: none;
@@ -1978,13 +1645,13 @@ $dashboard-height: 400px;
     font-weight: 600;
     @include rem-fallback(font-size, 0.8);
     > div {
+      display: inline-block;
       width: $size;
       height: $size;
       margin-right: 7px;
-      background-color: $almost-black;
-      display: inline-block;
-      text-align: center;
       padding-top: 8px;
+      background-color: $almost-black;
+      text-align: center;
     }
     &:hover,
     &:focus {
@@ -2048,7 +1715,7 @@ $dashboard-height: 400px;
 #dashboard-bar-rev-by-commodity-group {
   g.stack._0  > rect.bar {
     stroke: none;
-    fill: $red;
+    fill: $useiti-red;
   }
   g.stack._1 > rect.bar {
     stroke: none;
@@ -2162,8 +1829,8 @@ $dashboard-height: 400px;
   padding-right: 10px;
   color: lighten($mid-gray, 25%);
   @include rem-fallback(font-size, 0.8);
-  text-decoration: none;
   border: 1px solid lighten($mid-gray, 25%);
+  text-decoration: none;
   &:hover, &:focus {
     color: white;
     > div {
@@ -2226,9 +1893,9 @@ $dashboard-height: 400px;
       font-style: normal;
     }
     ul li {
-      @include rem-fallback(font-size, 0.9);
       padding-bottom: 5px;
       padding-left: 20px;
+      @include rem-fallback(font-size, 0.9);
       span {
         font-weight: 300;
       }
@@ -2279,22 +1946,22 @@ text.x-axis-label{
 }
 
 .documentation-head {
-  border-bottom: 1px solid $mid-gray;
   padding-bottom: 5px;
   padding-left: 20px;
+  border-bottom: 1px solid $mid-gray;
 }
 
 .documentation-tabs {
   @include rem-fallback(font-size, 1);
   a {
-    font-weight: 300;
     padding: 5px 17px 8px 17px;
-    text-decoration: none;
-    color: black;
     border-top: 1px solid $mid-gray;
     border-right: 1px solid $mid-gray;
     border-left: 1px solid $mid-gray;
     border-bottom: none;
+    font-weight: 300;
+    color: black;
+    text-decoration: none;
     &:hover,
     &:focus {
       text-decoration: underline;
@@ -2356,31 +2023,31 @@ text.x-axis-label{
     display: inline;
     border-radius: 0;
   }
-  input[type=search] {
+  input[type="search"] {
     float: left;
     width: 400px;
     border-top: 1px solid black; 
     border-right: 1px solid black;
-    border-left: 1px solid black;   
     border-bottom: 3px solid black;
+    border-left: 1px solid black;
     &:hover {
       border-color: $medium-gray;
     }
     &:focus {
-      border-color: $red;
+      border-color: $useiti-red;
     }
   }
-  input[type=submit] {
+  input[type="submit"] {
     float: left;
-    color: $dark-gray;
-    background-color: white;
     padding: 11px 10px 11px 10px;
     border-top: 1px solid black; 
     border-right: 1px solid black;   
     border-bottom: 3px solid black;
+    color: $dark-gray;
+    background-color: white;
     &:hover, &:focus {
-      color: $red;
-      border-bottom-color: $red;
+      color: $useiti-red;
+      border-bottom-color: $useiti-red;
       background-color: $light-gray;
     }
   }
@@ -2407,7 +2074,7 @@ text.x-axis-label{
   border-top: $section-border;
   h1 {
     @extend .h4;
-    font-family: Lato;
+    font-family: $base-font-family;
     font-weight: 500;
   }
   img {
@@ -2419,7 +2086,7 @@ text.x-axis-label{
     color: black;
     text-decoration: underline;
     &:hover, &:focus {
-      color: $red;
+      color: $useiti-red;
       text-decoration: none;
     }
   }
@@ -2434,13 +2101,3 @@ text.x-axis-label{
     @include span-columns(6);
   }
 }
-
-.sr-only {
-  width:1px;
-  height:1px;
-  overflow: hidden;
-  padding:0;
-  margin: -1px;
-  position: absolute;
-}
-

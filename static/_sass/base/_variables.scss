@@ -19,11 +19,11 @@
 //###remove extra font weights once you decide which ones you need
 
 // Typography
-$sans-serif: Lato;
+$sans-serif: Lato, Arial, sans-serif;
 $serif: $georgia;
 $base-font-family: $sans-serif;
 $header-font-family: $base-font-family;
-$secondary-font-family: Raleway;
+$secondary-font-family: Raleway, Arial, sans-serif;
 
 // Sizes
 $base-font-size: 1rem;
@@ -35,7 +35,8 @@ $base-border-radius: rem(3);
 
 // Colors
 $blue: #7ea0b7;
-$darker-gray: #444343;
+// $red: #d54740;
+// $darker-gray: #444343;
 $dark-gray: #4d4b4b;
 $dark-medium-gray: #d8d8d8;
 $medium-gray: #bcbfc4;
@@ -47,12 +48,10 @@ $light-green: #E6EFC2;
 $mid-gray: #5a5a5a;
 $deep-gray: #313131;
 $almost-black: #272727;
-$red: #d54740;
 $useiti-red: #d54740; //same as $red. Need to change variables in css to this instead.
 $useiti-green: #9fa731;
 $useiti-blue: #3397c2;
 $useiti-purple: #865daa;
-
 
 $deep-purple: #452941;
 $purple0: #653c5f;
@@ -61,14 +60,14 @@ $purple2: #9b6a94;
 $purple3: #b282ab;
 $purple4: #b694b1;
 
-$deep-orange: #7e3533;
-$orange0: #a24442;
-$orange1: #cA4f4a;
-$orange2: #e16762;
-$orange3: #e68f8b;
-$orange4: #efaeab;
+// $deep-orange: #7e3533;
+// $orange0: #a24442;
+// $orange1: #cA4f4a;
+// $orange2: #e16762;
+// $orange3: #e68f8b;
+// $orange4: #efaeab;
 
-$highlight: #B8E986;
+// $highlight: #B8E986;
 
 // Background Color
 $base-background-color: white;
@@ -79,7 +78,7 @@ $base-accent-color: $blue;
 
 // Link Colors
 $base-link-color: $base-font-color;
-$hover-link-color: $red;
+$hover-link-color: $useiti-red;
 $base-button-color: $base-link-color;
 $hover-button-color: $hover-link-color;
 

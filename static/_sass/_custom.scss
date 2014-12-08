@@ -612,6 +612,7 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
   background: white;
   border-radius: 100px;
   opacity: 0.75;
+  pointer-events: none;
 }
 
 .sectors-chart-pie-center-text {

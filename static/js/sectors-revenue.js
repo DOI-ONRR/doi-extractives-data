@@ -1,29 +1,17 @@
 
 
-var barChart = dc.barChart("#sector-revenue-bar-chart");
-var pieChart = dc.pieChart("#sector-revenue-pie-chart");
+var barChart = dc.barChart("#sector-revenue-bar-chart"),
+	pieChart = dc.pieChart("#sector-revenue-pie-chart");
 
-//d3.csv("https://docs.google.com/spreadsheet/pub?key=0AjPWVMj9wWa6dGw3b1c3ZHRSMW92UTJlNXRLTXZ0RUE&single=true&gid=0&output=csv",function(resource_data){
 d3.csv("static/data/2003-2013-royalty-data.csv",function(resource_data){
 	
 
-	var ndx = crossfilter(resource_data);
+	var ndx = crossfilter(resource_data),
+		parseDate = d3.time.format("%Y").parse;
 
-	var parseDate = d3.time.format("%Y").parse;
-	//print_filter(resource_data);
 	resource_data.forEach(function(d){
-		/*d["Grand Total"]	= clean_monetary_float(d["Grand Total"]);
-		d["Coal"]			= clean_monetary_float(d["Coal"]);
-		d["Other Products"]	= clean_monetary_float(d["Other Products"]);
-		d["Renewables"]		= clean_monetary_float(d["Renewables"]);
-		d["Gas"]			= clean_monetary_float(d["Gas"]);
-		d["Oil"]			= clean_monetary_float(d["Oil"]);
-		d["Year"]			= parseDate(d["Year"]);*/
 		d["Royalty"]		= clean_monetary_float(d["Royalty"]);
-		//d["Year"]			= parseDate(d["Year"]);
-
 	});
-	//print_filter(resource_data);
 
 	var yearDimension = ndx.dimension(function(d){
 		return d["Year"];
@@ -65,15 +53,6 @@ d3.csv("static/data/2003-2013-royalty-data.csv",function(resource_data){
 		.centerBar(false)
 		.gap(15)
 		.colors(["#9B9B9B"])		
-		//.colors(['red',"blue"])
-		/*.renderlet(function(chart){
-			var expenseColors = ["#fde0dd","#fa9fb5","#e7e1ef","#d4b9da","#c994c7","#fcc5c0","#df65b0","#e7298a","#ce1256", "#f768a1","#dd3497","#e78ac3","#f1b6da"];
-			var i=0;
-			chart.selectAll("rect.bar").each(function(d){
-				d3.select(this).attr("style","fill:"+expenseColors[i]);
-				i++;
-			});
-		})*/
 		.elasticY(true)
 		.brushOn(false)
 		//.x(d3.time.scale().domain([minDate,maxDate]))
@@ -93,32 +72,63 @@ d3.csv("static/data/2003-2013-royalty-data.csv",function(resource_data){
 		.height(300)
 		.transitionDuration(750)
 		.radius(130)
-		//.innerRadius(60)
 		.dimension(typeDimension)
 		.group(totalByType)
 		.legend(dc.legend().x(300).y(30).itemHeight(13).gap(10))
 		.renderLabel(false)
-		//.minAngleForLabel(0)
-		//.label(function(d) { return d.data.key + "(" + Math.floor(d.data.value / all.value() * 100) + "%)"; })
 		.renderlet(function(d){
 			d3.select("#pie-chart-center-text h1").html('Total:<br /> <span>$' + text_money(all.value()) + '</span>');
 		});
 
 	
 
-	dc.renderAll();
-
-	d3.selectAll(".bar").call(barTip);
-	d3.selectAll(".bar").on('mouseover', barTip.show)
-		.on('mouseout', barTip.hide);
+	//dc.renderAll();
+	var addToolTips = function(){
+		d3.selectAll(".bar").call(barTip);
+		d3.selectAll(".bar").on('mouseover', barTip.show)
+			.on('mouseout', barTip.hide);
+		d3.selectAll(".pie-slice").call(pieTip);
+		d3.selectAll(".pie-slice").on('mouseover', pieTip.show).on('mouseout', pieTip.hide);	
+	};
+	var sectors_rev_drawn = false;
+    $(document).ready(function(){
+    	$(window).scroll(function (event) {
+	          if (sectors_rev_drawn)
+	            return;
+	          if (isScrolledIntoView('#sector-revenue-bar-chart')) {
+	              sectors_rev_drawn = true;
+	              setTimeout(function(){
+	              	dc.renderAll();
+	             	addToolTips();
+	              }, 200);
+	          }
+	      });
+	    (function(){
+	      if (isScrolledIntoView('#sector-revenue-bar-chart')) {
+	              sectors_rev_drawn = true;
+	              dc.renderAll();
+	              addToolTips();
+	      }
+	    })();
+    })
+    
 
 	
-	
-
-
-	d3.selectAll(".pie-slice").call(pieTip);
-	d3.selectAll(".pie-slice").on('mouseover', pieTip.show).on('mouseout', pieTip.hide);	
 });
 
+  /********************************************************************************************
+  *Via: http://stackoverflow.com/questions/487073/check-if-element-is-visible-after-scrolling
+  *********************************************************************************************/
+  function isScrolledIntoView(elem)
+  {
+      var docViewTop = $(window).scrollTop();
+      var docViewBottom = docViewTop + $(window).height();
+
+      var elemTop = $(elem).offset().top;
+      var elemBottom = elemTop + $(elem).height();
+      if ($(elem).offset().top < $(window).scrollTop() + 10)
+        return true;
+      return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+  }
 
 

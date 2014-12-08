@@ -33,6 +33,13 @@ function text_money(f,c,tiny){
 	if (f == 0)
 		return f;
 	f = parseFloat(f);
+	if (Math.abs(f)<1000)
+	{
+		if (c)
+			return s+=" <span class='"+c + "'>"+t+"</span>";
+		else 
+			return f;
+	}
 	var s = f.formatMoney(2,'.',',');
 	
 	var t;

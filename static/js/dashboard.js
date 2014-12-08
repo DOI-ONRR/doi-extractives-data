@@ -718,9 +718,9 @@ var commodities_barTip = d3.tip()
             if (d.data.value.wind_rev != 0)
                 s+= "<br /><div style='float:left'>wind:</div><div style='float:right'><span style='color:#d54740'>$"+parseFloat(d.data.value.wind_rev).formatMoney(2,'.',',')+"</span></div>";
             if (d.data.value.coal_rev != 0)
-                s+= "<br /><div style='float:left'>Coal:</div><div style='float:right'><span style='color:#d54740'>$"+parseFloat(d.data.value.coal_rev).formatMoney(2,'.',',')+"</span></div>";
+                s+= "<br /><div style='float:left'>coal:</div><div style='float:right'><span style='color:#d54740'>$"+parseFloat(d.data.value.coal_rev).formatMoney(2,'.',',')+"</span></div>";
             if (d.data.value.other_com_rev != 0)
-                s+= "<br /><div style='float:left'>Other Commodities:</div><div style='float:right'><span style='color:#d54740'>$"+parseFloat(d.data.value.other_com_rev).formatMoney(2,'.',',')+"</span></div>";
+                s+= "<br /><div style='float:left'>other commodities:</div><div style='float:right'><span style='color:#d54740'>$"+parseFloat(d.data.value.other_com_rev).formatMoney(2,'.',',')+"</span></div>";
             s+= "<hr>";
             s+= "<div style='float:left'>total:</div><div style='float:right'><span style='color:#d54740'>$"+parseFloat(d.data.value.sum).formatMoney(2,'.',',')+"</span></div>";
 

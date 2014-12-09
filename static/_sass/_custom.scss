@@ -1511,8 +1511,10 @@ $max-width: 100%; //this is setting the width of outer-container.
     }
   }
   .dashboard_tabs {
-    margin-top: -20px;
-    margin-left: 60%;
+    @include respond-to(tiny-up) {
+      margin-top: -20px;
+      margin-left: 60%;
+    }
     @include rem-fallback(font-size, 1);
     a {
       padding: 5px 17px 17px 17px;
@@ -1552,6 +1554,9 @@ $max-width: 100%; //this is setting the width of outer-container.
   }
   > div {
     padding: 20px;
+    @include respond-to(tiny-down) {
+      margin-bottom: 20px;
+    }
     background-color: $almost-black;
     h1 {
       @include rem-fallback(font-size, 0.9);
@@ -1587,7 +1592,10 @@ $max-width: 100%; //this is setting the width of outer-container.
 $dashboard-height: 400px;
 
 .dashboard-table {
-  @include span-columns(4 of 12);
+  @include span-columns(12 of 12);
+  @include respond-to(tiny-up) {
+    @include span-columns(4 of 12);
+  }
   height: $dashboard-height;
   a {
     color: white;
@@ -1620,7 +1628,10 @@ $dashboard-height: 400px;
 }
 
 .dashboard-table-expand {
-  @include span-columns(5 of 12);
+  @include span-columns(12 of 12);
+  @include respond-to(tiny-up) {
+    @include span-columns(5 of 12);
+  }
 }
 
 .dashboard-table-canvas {
@@ -1637,8 +1648,13 @@ $dashboard-height: 400px;
 }
 
 .dashboard-revenue {
-  height: $dashboard-height;
-  @include span-columns(2 of 12);
+  @include respond-to(tiny-up) {
+    height: $dashboard-height;
+  }
+  @include span-columns(12 of 12);
+  @include respond-to(tiny-up) {
+    @include span-columns(2 of 12);
+  }
   $size: 36px;
   a {
     display: block;
@@ -1701,13 +1717,18 @@ $dashboard-height: 400px;
 }
 
 .dashboard-revenue-buttons {
-  padding-top: 30px;
-  padding-left: 13%;
+  @include respond-to(tiny-up) {
+    padding-top: 30px;
+    padding-left: 13%;
+  }
 }
 
 .dashboard-chart {
-  @include span-columns(4 of 12);
+  @include span-columns(12 of 12);
   @include omega();
+  @include respond-to(tiny-up) {
+    @include span-columns(4 of 12);
+  }
   height: $dashboard-height;
   g g.axis text {
     fill: white;
@@ -1874,9 +1895,11 @@ $dashboard-height: 400px;
 
 .dashboard-company-intro {
   @include rem-fallback(font-size, 0.9);
-  width: 650px;
-  margin-top: -50px;
-  margin-left: 360px;
+  @include respond-to(tiny-up) {
+    width: 650px;
+    margin-top: -50px;
+    margin-left: 360px; 
+  }
 }
 
 .dashboard-chart-back {
@@ -1896,7 +1919,10 @@ $dashboard-height: 400px;
 .dashboard-over-time,
 .dashboard-location {
   > div:nth-of-type(1) {
-    @include span-columns(5 of 12);
+    @include span-columns(12 of 12);
+    @include respond-to(tiny-up) {
+      @include span-columns(5 of 12);
+    }
     margin-bottom: 50px;
     p {
       font-style: normal;

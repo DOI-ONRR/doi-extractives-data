@@ -64,6 +64,15 @@
     "bubble_2013_States_offshore": {
       x: 20,
       y: 1
+    },
+    "bubble_2012_Historic_Preservation_Fund_offshore":{
+      wrap:false,
+      x: 30,
+      y: 25
+    },
+    "bubble_2012_States_offshore":{
+      x: 15,
+      y: 15
     }
   };
 

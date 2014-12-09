@@ -1,9 +1,9 @@
 // Site-wide
 //============================================
 
-body {
-  background-color: $deep-gray;
-}
+// body {
+//   background-color: $deep-gray;
+// }
 
 a {
   text-decoration: underline;
@@ -1796,7 +1796,7 @@ $dashboard-height: 400px;
   @include respond-to(large-up) {
     @include span-columns(5 of 12);
   }
-  @include respond-to(largest-up) {
+  @include respond-to(huge-up) {
     @include span-columns(4 of 12);
   }
   height: $dashboard-height;

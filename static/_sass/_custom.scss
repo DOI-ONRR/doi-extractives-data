@@ -1,6 +1,10 @@
 // Site-wide
 //============================================
 
+body {
+  background-color: $deep-gray;
+}
+
 a {
   text-decoration: underline;
 }
@@ -76,29 +80,6 @@ sub {
   overflow: hidden;
 }
 
-// Utility
-//============================================
-
-//remove these below later - lazy coding
-// .textRight {
-//   text-align: right;
-// }
-
-// .textLeft {
-//   text-align: left;
-// }
-
-// .floatRight {
-//   float: right;
-// }
-
-// .clearfix {
-//   clear: both;
-//   width: 100%;
-// }
-
-
-
 // Nav
 //============================================
 
@@ -111,15 +92,21 @@ ul.menu a.active li {
 
 .menu {
   display: none;
-  @include respond-to(small-up) {
+  margin-top: 6px;
+  background-color: #8dc2e7;
+  @include respond-to(large-up) {
     display: block;
     height: 30px;
+    margin-top: 0;
+    background-color: none;
   }
 }
 
 .nav {
-  padding-left: 20px;
-  padding-right: 20px;
+  @include respond-to(large-up) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   width: 100%;
   height: 34px;
   border-top: 4px solid rgba(0, 0, 0, 0.3);
@@ -127,30 +114,41 @@ ul.menu a.active li {
   ul {
     width: 100%;
     list-style: none;
-    @include respond-to(small-up) {
+    @include respond-to(large-up) {
       float: left;
     }
   }
   li {
     display: block;
-    @include respond-to(small-up) {
-      float: left;
-    }
     margin-right: 28px;
+    margin-left: 10px;
     padding: 4px 2px 2px 3px;
-    border-left: 1px solid black;
     border-bottom: 3px solid black;
+    @include respond-to(large-up) {
+      float: left;
+      margin-left: 0;
+      border-left: 1px solid black;
+    }
     @include rem-fallback(font-size, $base-font-size * 0.86);
     font-weight: 500;
   }
   .nav-last {
-    margin-right: 0;
+    @include respond-to(large-up) {
+      margin-right: -399px; //to position search last in full-screen mode
+    }
     padding: 0 0 0 0;
     border-bottom: none;
     border-left: none;
   }
+  .nav-data-docs {
+    @include respond-to(large-up) {
+      margin-right: 236px; //to position search last in full-screen mode
+    }
+  }
   .nav-right {
-    float: right;
+    @include respond-to(large-up) {
+      float: right;
+    }
   }
   a {
     color: black;
@@ -221,11 +219,11 @@ ul.menu a.active li {
 // http://www.elijahmanor.com/css-animated-hamburger-icon/
 #nav-toggle {
   position: relative;
-  left: 0;
+  left: 10px;
   top: -11px;
   padding: 10px 35px 16px 0;
   cursor: pointer;
-  @include respond-to(small-up) {
+  @include respond-to(large-up) {
     display: none;
   }
 }
@@ -236,7 +234,7 @@ ul.menu a.active li {
   height: 4px;
   width: 35px;
   border-radius: 2px;
-  background: $dark-gray;
+  background: $deep-gray;
   content: '';
   cursor: pointer;
 }
@@ -307,9 +305,8 @@ ul.menu a.active li {
   border: 1px solid $deep-gray;
 }
 
-// Tooltips
+// Vertical nav tooltips
 //============================================
-// Default styling is for vertical nav tooltips
 
 $tooltip-background: $medium-gray;
 $tooltip-color: $base-font-color;
@@ -525,14 +522,24 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
 }
 
 .sectors-canvas {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 20px 10px 40px 10px;
+  @include respond-to(large-up) {
+    padding-top: 40px;
+    padding-right: 0;
+    padding-left: 0;
+  }
   background-color: $deep-gray;
   color: white;
 }
 
 .sectors-text {
-  @include span-columns(5);
+  @include span-columns(12);
+  @include respond-to(small-up) {
+    @include span-columns(10);
+  }
+  @include respond-to(medium-up) {
+    @include span-columns(5);
+  }
   padding-top: 30px;
   padding-right: 50px;
   a {
@@ -576,10 +583,17 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
 }
 
 .sectors-chart {
-  @include span-columns(7);
+  @include span-columns(12);
   @include omega();
   position: relative;
-  padding: 15px;
+  padding: 30px 15px 15px 15px;
+  @include respond-to(small-up) {
+    @include span-columns(10);
+  }
+  @include respond-to(medium-up) {
+    @include span-columns(6);
+    padding: 15px;
+  }
   text {
     fill: white;
   }
@@ -698,7 +712,10 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
 }
 
 .bubbles-viz {
-  @include span-columns(8);
+  @include span-columns(12);
+  @include respond-to(medium-up) {
+    @include span-columns(8);
+  }
   padding-top: 60px;
   color: white;
   .bubbles-instructions {
@@ -781,7 +798,13 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
 
 .bubbles-onshore-offshore {
   position: relative;
-  @include span-columns(4);
+  @include span-columns(12);
+  @include respond-to(small-up) {
+    @include span-columns(8);
+  }
+  @include respond-to(medium-up) {
+    @include span-columns(4);
+  }
   margin-top: 20px;
   .box {
     padding-top: 10px;
@@ -807,8 +830,11 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
 }
 
 .bubbles-offshore-words {
-  margin-left: -20px;
-  margin-right: 20px;
+  margin-left: 20px;
+  @include respond-to(medium-up) {
+    margin-left: -20px;
+    margin-right: 20px;
+  }
   h1 {
     background: $useiti-blue;
   }
@@ -816,7 +842,11 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
 
 .bubbles-onshore-words {
   margin-top: 20px;
-  margin-bottom: 40px;
+  margin-left: 20px;
+  @include respond-to(medium-up) {
+    margin-left: 0;
+    margin-bottom: 40px;
+  }
   h1 {
     background: $useiti-green;
   }
@@ -825,7 +855,10 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
 .bubbles .fund-info {
   position: absolute;
   top: 0;
-  left: -30px; // to account for the offshore description, offset -20px
+  left: 0px;
+  @include respond-to(medium-up) {
+    left: -30px; // to account for the offshore description, offset -20px
+  }
   right: -20px;
   height: 100%;
   background: $deep-gray;
@@ -1005,9 +1038,13 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
 
 .sectors-chart-notes,
 .disbursement-chart-notes {
-  @include span-columns(4);
-  @include shift(8);
-  @include omega();
+  @include span-columns(8);
+  @include shift(4);
+  @include respond-to(large-up) {
+    @include span-columns(4);
+    @include shift(8);
+    @include omega();
+  }
   margin-top: 0;
   padding-bottom: 0;
   text-align: right;
@@ -1134,8 +1171,12 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
     left: 10px;
     width: 150px;
   }
-  h1 {
+  > h1 {
     @extend .h4;
+    color: white;
+    @include respond-to(small-up) {
+      color: black;
+    }
   }
   z-index: 998;
   > a {
@@ -1469,7 +1510,10 @@ article {
     @extend .h2;
   }
   dl {
-    @include span-columns(9);
+    @include span-columns(12);
+    @include respond-to(small-up) {
+      @include span-columns(9);
+    }
     margin-top: 0;
     dt {
       margin-top: 20px;
@@ -1507,8 +1551,10 @@ $max-width: 100%; //this is setting the width of outer-container.
     }
   }
   .dashboard_tabs {
-    margin-top: -20px;
-    margin-left: 60%;
+    @include respond-to(medium-up) {
+      margin-top: -20px;
+      margin-left: 60%;
+    }
     @include rem-fallback(font-size, 1);
     a {
       padding: 5px 17px 17px 17px;
@@ -1532,6 +1578,17 @@ $max-width: 100%; //this is setting the width of outer-container.
   padding-right: 20px;
 }
 
+.dashboard-company-intro {
+  @include rem-fallback(font-size, 0.9);
+  @include respond-to(medium-up) {
+    width: 650px;
+  }
+  @include respond-to(large-up) {
+    margin-top: -50px;
+    margin-left: 360px; 
+  }
+}
+
 .dashboard-canvas {
   padding: 20px;
   background-color: $deep-gray;
@@ -1547,7 +1604,11 @@ $max-width: 100%; //this is setting the width of outer-container.
     padding-left: 20px;
   }
   > div {
+    margin-bottom: 20px;
     padding: 20px;
+    @include respond-to(large-up) {
+      margin-bottom: 0;
+    }
     background-color: $almost-black;
     h1 {
       @include rem-fallback(font-size, 0.9);
@@ -1583,7 +1644,13 @@ $max-width: 100%; //this is setting the width of outer-container.
 $dashboard-height: 400px;
 
 .dashboard-table {
-  @include span-columns(4 of 12);
+  @include span-columns(12 of 12);
+  @include respond-to(small-up) {
+    @include span-columns(8 of 12);
+  }
+  @include respond-to(large-up) {
+    @include span-columns(4 of 12);
+  }
   height: $dashboard-height;
   a {
     color: white;
@@ -1616,7 +1683,16 @@ $dashboard-height: 400px;
 }
 
 .dashboard-table-expand {
-  @include span-columns(5 of 12);
+  @include span-columns(12 of 12);
+  @include respond-to(small-up) {
+    @include span-columns(8 of 12);
+  }
+  @include respond-to(large-up) {
+    @include span-columns(4 of 12);
+  }
+  @include respond-to(largest-up) {
+    @include span-columns(5 of 12);
+  }
 }
 
 .dashboard-table-canvas {
@@ -1633,14 +1709,22 @@ $dashboard-height: 400px;
 }
 
 .dashboard-revenue {
-  height: $dashboard-height;
-  @include span-columns(2 of 12);
+  @include respond-to(small-up) {
+    height: $dashboard-height;
+  }
+  @include span-columns(12 of 12);
+  @include respond-to(small-up) {
+    @include span-columns(3 of 12);
+  }
+  @include respond-to(large-up) {
+    @include span-columns(2 of 12);
+  }
   $size: 36px;
   a {
     display: block;
     width: 100px;
-    padding: 1px;
     margin-bottom: 10px;
+    padding: 1px;
     text-decoration: none;
     color: white;
     font-weight: 600;
@@ -1697,13 +1781,24 @@ $dashboard-height: 400px;
 }
 
 .dashboard-revenue-buttons {
-  padding-top: 30px;
-  padding-left: 13%;
+  @include respond-to(small-up) {
+    padding-top: 30px;
+    padding-left: 13%;
+  }
 }
 
 .dashboard-chart {
-  @include span-columns(4 of 12);
+  @include span-columns(12 of 12);
   @include omega();
+  @include respond-to(small-up) {
+    @include span-columns(11 of 12);
+  }
+  @include respond-to(large-up) {
+    @include span-columns(5 of 12);
+  }
+  @include respond-to(largest-up) {
+    @include span-columns(4 of 12);
+  }
   height: $dashboard-height;
   g g.axis text {
     fill: white;
@@ -1868,13 +1963,6 @@ $dashboard-height: 400px;
   }
 }
 
-.dashboard-company-intro {
-  @include rem-fallback(font-size, 0.9);
-  width: 650px;
-  margin-top: -50px;
-  margin-left: 360px;
-}
-
 .dashboard-chart-back {
   margin-top: -60px;
   margin-right: 30px;
@@ -1892,7 +1980,13 @@ $dashboard-height: 400px;
 .dashboard-over-time,
 .dashboard-location {
   > div:nth-of-type(1) {
-    @include span-columns(5 of 12);
+    @include span-columns(12 of 12);
+    @include respond-to(medium-up) {
+      @include span-columns(8 of 12);
+    }
+    @include respond-to(large-up) {
+      @include span-columns(5 of 12);
+    }
     margin-bottom: 50px;
     p {
       font-style: normal;
@@ -1906,10 +2000,10 @@ $dashboard-height: 400px;
       }
     }
   }
-  > div:nth-of-type(2) {
-    background-color: $deep-gray;
-    @include span-columns(6 of 12);
-  }
+  // > div:nth-of-type(2) {
+  //   background-color: $deep-gray;
+  //   @include span-columns(6 of 12);
+  // }
 }
 
 text.x-axis-label{
@@ -1952,14 +2046,20 @@ text.x-axis-label{
 
 .documentation-head {
   padding-bottom: 5px;
-  padding-left: 20px;
+  padding-left: 3px;
+  @include respond-to(small-up) {
+    padding-left: 20px;
+  }
   border-bottom: 1px solid $mid-gray;
 }
 
 .documentation-tabs {
   @include rem-fallback(font-size, 1);
   a {
-    padding: 5px 17px 8px 17px;
+    padding: 5px 9px 8px 9px;
+    @include respond-to(small-up) {
+      padding: 5px 17px 8px 17px;
+    }
     border-top: 1px solid $mid-gray;
     border-right: 1px solid $mid-gray;
     border-left: 1px solid $mid-gray;

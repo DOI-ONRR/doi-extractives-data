@@ -14,7 +14,15 @@
         <a href="{{ site.baseurl }}/sectors/" itemprop="url" {% if page.title == "Natural Resource Sectors in the U.S." %}class="active" {% endif %}>
         	<li itemprop="name">U.S. Natural Resource Sectors</li>
         </a>
-        
+
+        <a href="{{ site.baseurl }}/data/" {% if page.title == "Data" %}class="active" {% endif %}>
+            <li class="nav-right nav-data-docs" itemprop="name">Data</li>
+        </a>
+
+        <a href="{{ site.baseurl }}/documentation/" {% if page.title == "Documentation" %}class="active" {% endif %}>
+            <li class="nav-right" itemprop="name">Documentation</li>
+        </a>
+
         <li class="nav-last nav-right" itemprop="name">
             <form role="form" id="search" action="{{ site.baseurl }}/search" method="GET">
                 <div class="search-content">
@@ -25,13 +33,6 @@
             </form>
         </li>
 
-        <a href="{{ site.baseurl }}/documentation/" {% if page.title == "Documentation" %}class="active" {% endif %}>
-            <li class="nav-right" itemprop="name">Documentation</li>
-        </a>
-
-        <a href="{{ site.baseurl }}/data/" {% if page.title == "Data" %}class="active" {% endif %}>
-            <li class="nav-right" itemprop="name">Data</li>
-        </a>
     </ul>
   
 </nav>

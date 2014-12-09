@@ -60,7 +60,7 @@
 	<!-- JS
 	================================================== -->
 
-	<!--[if lte IE 7]>
+	<!--[if lte IE 8]>
 	  <style>body { display: none !important; }</style>
 	  <script type="text/javascript">
 	    window.location.href = '/static/oldie.html';
@@ -130,9 +130,10 @@
 	<!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
 	<link rel="apple-touch-icon-precomposed" href="{{ site.baseurl }}/static/img/favicon/favicon-57.png">
 
-    <!-- export some site variables to JavaScript -->
-    <script>
-      window.site = {};
-      window.site.baseurl = "{{ site.baseurl }}";
-    </script>
+  <!-- export some site variables to JavaScript -->
+  <script>
+    window.site = {};
+    window.site.baseurl = "{{ site.baseurl }}";
+  </script>
+  
 </head>

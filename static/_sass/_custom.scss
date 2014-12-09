@@ -305,9 +305,8 @@ ul.menu a.active li {
   border: 1px solid $deep-gray;
 }
 
-// Tooltips
+// Vertical nav tooltips
 //============================================
-// Default styling is for vertical nav tooltips
 
 $tooltip-background: $medium-gray;
 $tooltip-color: $base-font-color;
@@ -523,14 +522,24 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
 }
 
 .sectors-canvas {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 20px 10px 40px 10px;
+  @include respond-to(large-up) {
+    padding-top: 40px;
+    padding-right: 0;
+    padding-left: 0;
+  }
   background-color: $deep-gray;
   color: white;
 }
 
 .sectors-text {
-  @include span-columns(5);
+  @include span-columns(12);
+  @include respond-to(small-up) {
+    @include span-columns(10);
+  }
+  @include respond-to(medium-up) {
+    @include span-columns(5);
+  }
   padding-top: 30px;
   padding-right: 50px;
   a {
@@ -574,10 +583,17 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
 }
 
 .sectors-chart {
-  @include span-columns(7);
+  @include span-columns(12);
   @include omega();
   position: relative;
-  padding: 15px;
+  padding: 30px 15px 15px 15px;
+  @include respond-to(small-up) {
+    @include span-columns(10);
+  }
+  @include respond-to(medium-up) {
+    @include span-columns(6);
+    padding: 15px;
+  }
   text {
     fill: white;
   }
@@ -1003,9 +1019,13 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
 
 .sectors-chart-notes,
 .disbursement-chart-notes {
-  @include span-columns(4);
-  @include shift(8);
-  @include omega();
+  @include span-columns(8);
+  @include shift(4);
+  @include respond-to(large-up) {
+    @include span-columns(4);
+    @include shift(8);
+    @include omega();
+  }
   margin-top: 0;
   padding-bottom: 0;
   text-align: right;

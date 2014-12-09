@@ -1510,7 +1510,10 @@ article {
     @extend .h2;
   }
   dl {
-    @include span-columns(9);
+    @include span-columns(12);
+    @include respond-to(small-up) {
+      @include span-columns(9);
+    }
     margin-top: 0;
     dt {
       margin-top: 20px;
@@ -2043,14 +2046,20 @@ text.x-axis-label{
 
 .documentation-head {
   padding-bottom: 5px;
-  padding-left: 20px;
+  padding-left: 3px;
+  @include respond-to(small-up) {
+    padding-left: 20px;
+  }
   border-bottom: 1px solid $mid-gray;
 }
 
 .documentation-tabs {
   @include rem-fallback(font-size, 1);
   a {
-    padding: 5px 17px 8px 17px;
+    padding: 5px 9px 8px 9px;
+    @include respond-to(small-up) {
+      padding: 5px 17px 8px 17px;
+    }
     border-top: 1px solid $mid-gray;
     border-right: 1px solid $mid-gray;
     border-left: 1px solid $mid-gray;

@@ -139,7 +139,7 @@ ul.menu a.active li {
   }
   .nav-data-docs {
     @include respond-to(large-up) {
-      margin-right: 236px; //to position search last in full-screen mode
+      margin-right: 276px; //to position search last in full-screen mode
     }
   }
   .nav-right {

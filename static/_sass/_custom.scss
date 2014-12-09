@@ -720,7 +720,7 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
     line-height: 1.2;
     color: $mid-gray;
     font-family: $base-font-family;
-    font-style: italic;
+    //font-style: italic;
     font-weight: 300;
   }
   text {
@@ -1011,7 +1011,7 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
   padding-bottom: 30px;
   color: white;
   font-family: $base-font-family;
-  font-style: italic;
+  //font-style: italic;
   h1,
   p {
     @include span-columns(12);
@@ -1038,8 +1038,8 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
   @include span-columns(8);
   @include shift(4);
   @include respond-to(large-up) {
-    @include span-columns(4);
-    @include shift(8);
+    @include span-columns(5);
+    @include shift(7);
     @include omega();
   }
   margin-top: 0;
@@ -1129,7 +1129,7 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
       margin-bottom: 0;
       color: lighten($dark-gray, 5%);
       font-family: $base-font-family;
-      font-style: italic;
+      //font-style: italic;
       @include rem-fallback(font-size, 0.8);
       line-height: 1.1;
     }
@@ -1662,7 +1662,7 @@ $dashboard-height: 400px;
     border: none;
     border-radius: 0;
     color: white;
-    font-style: italic;
+    //font-style: italic;
     font-weight: 200;
     @include rem-fallback(font-size, 0.9);
   }

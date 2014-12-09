@@ -110,6 +110,7 @@ ul.menu a.active li {
   ul {
     width: 100%;
     list-style: none;
+    position: absolute;
     @include respond-to(large-up) {
       float: left;
     }

@@ -1,10 +1,6 @@
 // Site-wide
 //============================================
 
-// body {
-//   background-color: $deep-gray;
-// }
-
 a {
   text-decoration: underline;
 }
@@ -1464,7 +1460,7 @@ article {
   }
   h1 {
     @include rem-fallback(font-size, 1);
-    font-style: italic;
+    //font-style: italic;
     color: $dark-gray;
     padding-bottom: 5px;
   }

@@ -712,7 +712,10 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
 }
 
 .bubbles-viz {
-  @include span-columns(8);
+  @include span-columns(12);
+  @include respond-to(medium-up) {
+    @include span-columns(8);
+  }
   padding-top: 60px;
   color: white;
   .bubbles-instructions {
@@ -795,7 +798,13 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
 
 .bubbles-onshore-offshore {
   position: relative;
-  @include span-columns(4);
+  @include span-columns(12);
+  @include respond-to(small-up) {
+    @include span-columns(8);
+  }
+  @include respond-to(medium-up) {
+    @include span-columns(4);
+  }
   margin-top: 20px;
   .box {
     padding-top: 10px;
@@ -821,8 +830,11 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
 }
 
 .bubbles-offshore-words {
-  margin-left: -20px;
-  margin-right: 20px;
+  margin-left: 20px;
+  @include respond-to(medium-up) {
+    margin-left: -20px;
+    margin-right: 20px;
+  }
   h1 {
     background: $useiti-blue;
   }
@@ -830,7 +842,11 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
 
 .bubbles-onshore-words {
   margin-top: 20px;
-  margin-bottom: 40px;
+  margin-left: 20px;
+  @include respond-to(medium-up) {
+    margin-left: 0;
+    margin-bottom: 40px;
+  }
   h1 {
     background: $useiti-green;
   }
@@ -839,7 +855,10 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
 .bubbles .fund-info {
   position: absolute;
   top: 0;
-  left: -30px; // to account for the offshore description, offset -20px
+  left: 0px;
+  @include respond-to(medium-up) {
+    left: -30px; // to account for the offshore description, offset -20px
+  }
   right: -20px;
   height: 100%;
   background: $deep-gray;

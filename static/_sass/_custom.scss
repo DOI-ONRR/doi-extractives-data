@@ -1511,7 +1511,7 @@ $max-width: 100%; //this is setting the width of outer-container.
     }
   }
   .dashboard_tabs {
-    @include respond-to(tiny-up) {
+    @include respond-to(medium-up) {
       margin-top: -20px;
       margin-left: 60%;
     }
@@ -1538,6 +1538,17 @@ $max-width: 100%; //this is setting the width of outer-container.
   padding-right: 20px;
 }
 
+.dashboard-company-intro {
+  @include rem-fallback(font-size, 0.9);
+  @include respond-to(medium-up) {
+    width: 650px;
+  }
+  @include respond-to(large-up) {
+    margin-top: -50px;
+    margin-left: 360px; 
+  }
+}
+
 .dashboard-canvas {
   padding: 20px;
   background-color: $deep-gray;
@@ -1553,9 +1564,10 @@ $max-width: 100%; //this is setting the width of outer-container.
     padding-left: 20px;
   }
   > div {
+    margin-bottom: 20px;
     padding: 20px;
-    @include respond-to(tiny-down) {
-      margin-bottom: 20px;
+    @include respond-to(large-up) {
+      margin-bottom: 0;
     }
     background-color: $almost-black;
     h1 {
@@ -1593,7 +1605,10 @@ $dashboard-height: 400px;
 
 .dashboard-table {
   @include span-columns(12 of 12);
-  @include respond-to(tiny-up) {
+  @include respond-to(small-up) {
+    @include span-columns(8 of 12);
+  }
+  @include respond-to(large-up) {
     @include span-columns(4 of 12);
   }
   height: $dashboard-height;
@@ -1629,7 +1644,13 @@ $dashboard-height: 400px;
 
 .dashboard-table-expand {
   @include span-columns(12 of 12);
-  @include respond-to(tiny-up) {
+  @include respond-to(small-up) {
+    @include span-columns(8 of 12);
+  }
+  @include respond-to(large-up) {
+    @include span-columns(4 of 12);
+  }
+  @include respond-to(largest-up) {
     @include span-columns(5 of 12);
   }
 }
@@ -1648,19 +1669,22 @@ $dashboard-height: 400px;
 }
 
 .dashboard-revenue {
-  @include respond-to(tiny-up) {
+  @include respond-to(small-up) {
     height: $dashboard-height;
   }
   @include span-columns(12 of 12);
-  @include respond-to(tiny-up) {
+  @include respond-to(small-up) {
+    @include span-columns(3 of 12);
+  }
+  @include respond-to(large-up) {
     @include span-columns(2 of 12);
   }
   $size: 36px;
   a {
     display: block;
     width: 100px;
-    padding: 1px;
     margin-bottom: 10px;
+    padding: 1px;
     text-decoration: none;
     color: white;
     font-weight: 600;
@@ -1717,7 +1741,7 @@ $dashboard-height: 400px;
 }
 
 .dashboard-revenue-buttons {
-  @include respond-to(tiny-up) {
+  @include respond-to(small-up) {
     padding-top: 30px;
     padding-left: 13%;
   }
@@ -1726,7 +1750,13 @@ $dashboard-height: 400px;
 .dashboard-chart {
   @include span-columns(12 of 12);
   @include omega();
-  @include respond-to(tiny-up) {
+  @include respond-to(small-up) {
+    @include span-columns(11 of 12);
+  }
+  @include respond-to(large-up) {
+    @include span-columns(5 of 12);
+  }
+  @include respond-to(largest-up) {
     @include span-columns(4 of 12);
   }
   height: $dashboard-height;
@@ -1893,15 +1923,6 @@ $dashboard-height: 400px;
   }
 }
 
-.dashboard-company-intro {
-  @include rem-fallback(font-size, 0.9);
-  @include respond-to(tiny-up) {
-    width: 650px;
-    margin-top: -50px;
-    margin-left: 360px; 
-  }
-}
-
 .dashboard-chart-back {
   margin-top: -60px;
   margin-right: 30px;
@@ -1920,7 +1941,10 @@ $dashboard-height: 400px;
 .dashboard-location {
   > div:nth-of-type(1) {
     @include span-columns(12 of 12);
-    @include respond-to(tiny-up) {
+    @include respond-to(medium-up) {
+      @include span-columns(8 of 12);
+    }
+    @include respond-to(large-up) {
       @include span-columns(5 of 12);
     }
     margin-bottom: 50px;
@@ -1936,10 +1960,10 @@ $dashboard-height: 400px;
       }
     }
   }
-  > div:nth-of-type(2) {
-    background-color: $deep-gray;
-    @include span-columns(6 of 12);
-  }
+  // > div:nth-of-type(2) {
+  //   background-color: $deep-gray;
+  //   @include span-columns(6 of 12);
+  // }
 }
 
 text.x-axis-label{

@@ -19,26 +19,18 @@
 
 <!-- nav toggle at smaller sizes -->
 <script>
-document.querySelector( "#nav-toggle" ).addEventListener( "click", function() {
-  this.classList.toggle( "active" );
-});
-</script>
-
-<script>
-$(document).ready(function() {
-        $('#nav-toggle').click(function() {
-                $('.menu').slideToggle("fast");
-        });
-    });
-</script>
-
-<!-- customized scroll bar on dashboard table NOT WORKING YET
-<script>
-  $(function()
-  {
-    $('.scroll-pane').jScrollPane();
+  document.querySelector( "#nav-toggle" ).addEventListener( "click", function() {
+    this.classList.toggle( "active" );
   });
-</script> -->
+</script>
+
+<script>
+  $(document).ready(function() {
+      $('#nav-toggle').click(function() {
+          $('.menu').slideToggle("fast");
+      });
+  });
+</script>
 
 <!-- term definition tooltips -->
 <script type="text/javascript">

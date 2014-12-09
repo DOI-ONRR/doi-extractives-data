@@ -1152,8 +1152,12 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
     left: 10px;
     width: 150px;
   }
-  h1 {
+  > h1 {
     @extend .h4;
+    color: white;
+    @include respond-to(small-up) {
+      color: black;
+    }
   }
   z-index: 998;
   > a {

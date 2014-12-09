@@ -16,7 +16,7 @@ $( document ).ready(function() {
     }
   }
   
-  var query = GetURLParameter('q');
+  var query = GetURLParameter('q') || '';
   $(".search-string").append(query.replace(/%20/g,' '));
   $("#site-search-text").attr('value',query.replace(/%20/g,' '));
 
@@ -24,7 +24,7 @@ $( document ).ready(function() {
     $("input#q").val(query);
     $("#search-result-list").append('<div class="loading"><span class="glyphicon glyphicon-refresh"></span> Loading</div>');
     $.ajax({
-      url: "//api.data.gov/beckley/v0/resources/eiti/?q=" + query + "&size=200&from=0&api_key=YYyGvaNdO6UF5qGfZXgHxOnOVD002wYxcBrbSvgQ",
+      url: "//api.data.gov/beckley/v0/resources/eiti/?q=" + query + "&size=200&from=0&api_key=LXJh2PKSC6zxY0YNuBRYgIj2JxSPcDwSPCZuHBG1",
       cache: false,
       dataType: "json"
     })

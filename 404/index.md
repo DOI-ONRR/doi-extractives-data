@@ -1,7 +1,7 @@
 ---
 layout: subpage
 title: "Page Not Found"
-description: 'In support of the U.S. implementation of the international Extractive Industries Transparency Initiative, the U.S. Department of the Interior is providing this public data portal that tells the story of natural resource revenues from Federal lands."
+description: 'In support of the U.S. implementation of the international Extractive Industries Transparency Initiative, the U.S. Department of the Interior is providing this public data portal that tells the story of natural resource revenues from Federal lands.'
 permalink: /404/
 ---
 

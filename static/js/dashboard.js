@@ -767,7 +767,20 @@ var graphCustomizations = function() {
          d3.selectAll(a[i]+" .bar").on('mouseover', commodities_barTip.show)
             .on('mouseout', commodities_barTip.hide);
     }
+    console.log(d3.selectAll('#dashboard-bar-rev-by-revenue-type-renewables .dc-legend'));
+    //#b6bf38 //wind
+    //#798025 //geothermal
+    var splitColors = ['#b6bf38','#798025'];
+    d3.select('#dashboard-bar-rev-by-revenue-type-renewables .dc-legend .dc-legend-item')
+        .append('polygon')
+            .attr('points','0,0 12,0 0,12')
+            .attr('fill','#798025');
+    d3.select('#dashboard-bar-rev-by-revenue-type-renewables .dc-legend .dc-legend-item:nth-child(2)')
+        .append('polygon')
+            .attr('points','0,0 12,0 0,12')
+            .attr('fill','#b6bf38');
 };
+
 /************************
 End: graphCustomizations
 ************************/

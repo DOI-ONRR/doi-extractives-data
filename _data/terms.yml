@@ -45,6 +45,10 @@
   definition: "Disclosing payments of solid mineral companies who only produce and sell one product from one mine can reveal proprietary sales price and contracting information, and cause competitive harm to small companies. The Department of the Interior is legally obligated through the Trades Secrets Act to safeguard this data, so payments from these companies are aggregated (rolled up) in this category. These aggregated payments make up less than three thousandths of one percent of all payments."
   display: true
 
+- term: "negative values"
+  definition: "Companies can adjust and correct their payments for up to seven years after a transaction takes place. If a company overpays their royalty, rent, or bonus, they are entitled to recoup their overpayment. If the overpayment and recoupment happen in different years, the recoupment will appear as a negative amount in the Office of Natural Resource Revenue's revenue summaries."
+  display: true
+
 - term: coal
   definition: "Includes various processed and unprocessed coal products such as anthracite, bituminous, subbituminous, and lignite."
   display: false

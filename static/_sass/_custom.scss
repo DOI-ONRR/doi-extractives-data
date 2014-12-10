@@ -1564,7 +1564,10 @@ $max-width: 100%; //this is setting the width of outer-container.
     }
     @include rem-fallback(font-size, 1);
     a {
-      padding: 5px 17px 17px 17px;
+      padding: 5px 10px 17px 10px;
+      @include respond-to(tiny-up) {
+        padding: 5px 17px 17px 17px;
+      }
       font-weight: 300;
       text-decoration: none;
       color: black;

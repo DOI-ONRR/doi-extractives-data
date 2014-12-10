@@ -230,15 +230,11 @@ permalink: /documentation/
 
 <section id="tab4" class="documentation" style="display:none;">
 
-  <h1>Total royalties over time</h1>
+  <h1>Total revenues over time</h1>
 
   <h2>General information</h2>
 
-  <p>This dataset contains 
-      {% for term in site.data.terms %} {% if term.term == "royalty" %}
-      <span class="term-tooltip" title="{{ term.definition }}" tabindex="0" role="tooltip">royalty<i class="fa fa-question"></i></span> 
-    {% endif %} {% endfor %}
-    information on natural resource revenues over time and is available on the <a href="{{ site.baseurl }}/data/#overtime">data part of this site</a>. It contains data from calendar years 2003 to 2013, and is 
+  <p>This dataset contains information on natural resource revenues over time and is available on the <a href="{{ site.baseurl }}/data/#overtime">data part of this site</a>. It contains data from calendar years 2003 to 2013, and is 
     {% for term in site.data.terms %} {% if term.term == "data accounting" %}
       <span class="term-tooltip" title="{{ term.definition }}" tabindex="0" role="tooltip">accounting year<i class="fa fa-question"></i></span> 
     {% endif %} {% endfor %}
@@ -249,7 +245,7 @@ permalink: /documentation/
    please visit <a href="http://statistics.onrr.gov/">statistics.onrr.gov</a>.
   </p>
 
-  <p>This data powers the royalties-by-sector interactive chart on this site's homepage.</p>
+  <p>A subset of this data powers the royalties-by-sector interactive chart on this site's homepage.</p>
 
   <h3>Scope</h3>
 
@@ -277,7 +273,51 @@ permalink: /documentation/
 
   <h2>Data dictionary</h2>
 
-  <p>Coming soon!</p>
+  <h3>Fields and definitions</h3>
+
+  <p><span>Company Name. </span>Name of company.</p>
+
+  <p><span>Revenue Type. </span>Revenues from U.S. natural resources fall into one of several types:
+    <ul>
+      <li><span>Royalties. </span> 
+        {% for term in site.data.terms %} {% if term.term == "royalty" %}
+          {{ term.definition }}
+        {% endif %} {% endfor %}</li>
+      <li><span>Bonus. </span>
+        {% for term in site.data.terms %} {% if term.term == "bonus" %}
+          {{ term.definition }}
+        {% endif %} {% endfor %}</li>
+      <li><span>Other revenues. </span>
+        {% for term in site.data.terms %} {% if term.term == "other revenues" %}
+          {{ term.definition }}
+        {% endif %} {% endfor %}</li>
+      <li><span>Rents. </span> 
+        {% for term in site.data.terms %} {% if term.term == "rent" %}
+          {{ term.definition }}
+        {% endif %} {% endfor %}</li>
+    <ul>
+  </p>
+
+  <p><span>Commodity Type. </span>The Department of the Interior collects revenues on over 60 different products. The majority of revenues come from Oil & Gas, Coal and Renewables (Geothermal and Wind), but you will find many other product categories in this dataset.</p>
+
+  <p><span>Revenue.</span> Total revenue.</p>
+
+
+  <h2>Advanced information</h2>
+
+  <p>Commodities can be further broken down into products. These are the products that could fall into the commodity categories found in these datasets.</p>
+
+  <p><span>Coal.</span> Coal (ton), Coal-Bituminous-Raw (ton).</p>
+
+  <p><span>Gas.</span> Coal Bed Methane (mcf), Flash Gas (mcf), Fuel Gas (mcf), Gas Hydrate (mcf), Gas Lost - Flared or Vented (mcf), Nitrogen (mcf), Processed (Residue) Gas (mcf), Unprocessed (Wet) Gas (mcf), NGL (Gas Plant Products).</p>
+
+  <p><span>Oil.</span> Asphaltic Crude (bbl), Black Wax Crude (bbl), Condensate (bbl), Drip or Scrubber Condensate (bbl),  Drip or Scrubber Condensate (bbl), Fuel Oil (bbl), Inlet Scrubber (bbl), Oil (bbl), Oil Lost (bbl), Other Liquid Hydrocarbons (bbl), Sour Crude (bbl), Sweet Crude (bbl), Yellow Wax Crude (bbl).</p>
+
+  <p><span>Geothermal.</span> Geothermal - Direct Utilization, Hundreds of Gallons (cgal), Geothermal - Direct Utilization, Millions of BTUs (mmbtu), Geothermal - Electrical Generation, Kilowatt Hours (kwh), Geothermal - Electrical Generation, Thousands of Pounds (klb), Geothermal - sulfur (lton).</p>
+
+  <p><span>Wind.</span> Wind.</p>
+
+  <p><span>Other Commodities.</span> Anhydrous Sodium Sulfate (ton), Borax-Decahydrate (ton), Borax-Pentahydrate (ton), Boric Acid (ton), Carbon Dioxide Gas (CO2) (mcf), Cinders (ton), Clay (ton), Copper Concentrate (ton), Gilsonite (ton), Gold (ton), Gypsum (ton), Helium (bbl), Langbeinite (ton), Lead Concentrate (ton), Leonardite (ton), Limestone (ton), Magnesium Chloride Brine (ton), Manure Salts (ton), Muriate Of Potash-Granular (ton), Muriate Of Potash-Standard (ton), Other (ton), Phosphate Raw Ore (ton), Potash (ton), Purge Liquor (ton), Quartz Crystal (lb), Salt (ton), Sand/Gravel (ton), Sand/Gravel-Cubic Yards (cyd), Silver (oz), Soda Ash (ton), Sodium Bi-Carbonate (ton), Sodium Bisulfite (ton), Sodium Sesquicarbonate (ton), Sulfide (ton), Sulfur (lton), Sylvite-Raw Ore (ton), Trona Ore (ton), Zinc Concentrate (ton).</p>
 
 </section>
 

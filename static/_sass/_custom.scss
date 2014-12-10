@@ -1107,7 +1107,7 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
   position: absolute;
   top: 60px;
   left: 10px;
-  z-index: 10000;
+  z-index: 9999999;
 }
 
 .map-info-pane {

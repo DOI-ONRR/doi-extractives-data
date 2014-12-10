@@ -131,7 +131,7 @@ ul.menu a.active li {
   }
   .nav-last {
     @include respond-to(large-up) {
-      margin-right: -399px; //to position search last in full-screen mode
+      margin-right: -548px; //to position search last in full-screen mode
     }
     padding: 0 0 0 0;
     border-bottom: none;

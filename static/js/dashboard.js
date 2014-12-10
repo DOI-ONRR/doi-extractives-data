@@ -19,32 +19,10 @@ if (!companyPage)
     dashTable = dc.dataTable("#dashboard-table");
     dashTotalsTable = dc.dataTable("#dashboard-totals-table");
 }
-String.prototype.hashCode = function() {
-  var hash = 0, i, chr, len;
-  if (this.length == 0) return hash;
-  for (i = 0, len = this.length; i < len; i++) {
-    chr   = this.charCodeAt(i);
-    hash  = ((hash << 5) - hash) + chr;
-    hash |= 0; // Convert to 32bit integer
-  }
-  var a =['b','a','c','d','e','f','g','h','i','j'];
-  hash = hash.toString();
-  hash = hash.replace('-','');
-  var n = hash[0];
-  var s = '';
-  for (var i=0;i<hash.length;i++)
-  {
-    s+=a[hash[i]];
-  }
-  return s;
-};
-
 
 d3.csv("../static/data/beta-data.csv",function(resource_data){
     
     resource_data.forEach(function(d){
-        if (QueryString.q != 'dkfj887jjdd9jr75ju857jvnvur758fj8rj84jjfheteqq61jncbxbxb')
-            d["Company Name"] = d["Company Name"].hashCode();
         d["Revenue"] = clean_monetary_float(d["Revenue"]);
         d["GroupName"] = (function(d){
             var commodity = d["Commodity"]; 

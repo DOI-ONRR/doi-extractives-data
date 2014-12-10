@@ -370,7 +370,6 @@ $(document).ready(function(){
           return returnString;
         })();
 
-        //$('#map-info-pane').html('<h1>'+layer.feature.properties.name + '<span></span></h1>' + Revenue_String).show();
         $('#map-info-pane > h1').html(function(){
             return mobile ? layer.feature.properties.name + "<span>▲</span>" : layer.feature.properties.name + "<span></span>" 
           }
@@ -492,15 +491,11 @@ $(document).ready(function(){
   }
 
   function setStrokeWeight(layer,weight){
-    // layer.setStyle({
-    //   weight: 3.0
-    // });
     $("g[data-3d-layers='"+$(layer._container).attr('data-3d-layers')+"'] path").each(function(){
         $(this).attr('stroke-width',weight);
       });
   }
   function setFillColor(layer,color){
-    //console.log(layer);
     if (layer.hasOwnProperty('_layers'))
     {
       for(var key in layer._layers)

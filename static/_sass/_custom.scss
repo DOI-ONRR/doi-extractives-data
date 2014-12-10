@@ -1033,6 +1033,13 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
   }
 }
 
+.map-notes {
+  padding-left: 10px;
+  @include respond-to(large-up) {
+    padding-left: 0;
+  }
+}
+
 .sectors-chart-notes,
 .disbursement-chart-notes {
   @include span-columns(8);
@@ -1060,7 +1067,10 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 100%;
+  width: 90%;
+  @include respond-to(tiny-up) {
+    width: 100%;
+  }
 }
 
 .map-container {
@@ -1204,7 +1214,7 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
       font-family: $base-font-family;
     }
     .small { //for long commodity names
-      @include rem-fallback(font-size, 1.2);
+      @include rem-fallback(font-size, 1);
       @include respond-to(small-up) {
         @include rem-fallback(font-size, 0.72);
       }
@@ -1554,7 +1564,10 @@ $max-width: 100%; //this is setting the width of outer-container.
     }
     @include rem-fallback(font-size, 1);
     a {
-      padding: 5px 17px 17px 17px;
+      padding: 5px 10px 17px 10px;
+      @include respond-to(tiny-up) {
+        padding: 5px 17px 17px 17px;
+      }
       font-weight: 300;
       text-decoration: none;
       color: black;
@@ -2051,9 +2064,15 @@ text.x-axis-label{
 }
 
 .documentation-tabs {
-  @include rem-fallback(font-size, 1);
+  @include rem-fallback(font-size, 0.8);
+  @include respond-to(tiny-up) {
+    @include rem-fallback(font-size, 1);
+  }
   a {
-    padding: 5px 9px 8px 9px;
+    padding: 5px 7px 7px 7px;
+    @include respond-to(tiny-up) {
+      padding: 5px 9px 8px 9px;
+    }
     @include respond-to(small-up) {
       padding: 5px 17px 8px 17px;
     }

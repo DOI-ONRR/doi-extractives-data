@@ -303,8 +303,10 @@
   </script>
 {% endif %}
 
-
-
+{% if page.title == "Search" %}
+  <script type="text/javascript" src='{{ site.baseurl }}/static/js/iecors.js'></script>
+  <script type="text/javascript" src='{{ site.baseurl }}/static/js/search.js'></script>
+{% endif %}
 
 
 

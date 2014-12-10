@@ -774,7 +774,6 @@ End: graphCustomizations
 
 $(document).ready(function(){
     $('#OptionsList a').on('click',function(){
-       // var label = $("label[for='"+$(this).attr('id')+"']");
         if ($(this).attr('aria-checked')=='true')
             $(this).attr('aria-checked','false');
         else

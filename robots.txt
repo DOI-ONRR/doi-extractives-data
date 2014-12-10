@@ -1,0 +1,10 @@
+---
+permalink: /robots.txt
+---
+
+# All friends welcome!
+
+Sitemap: https://useiti.doi.gov/sitemap.xml
+
+User-agent: *
+Allow: *

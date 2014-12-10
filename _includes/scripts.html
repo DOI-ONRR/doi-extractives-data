@@ -2,7 +2,8 @@
 <script>
   $(document).ready(function() {
   $('#sticky-nav').scrollToFixed({
-      dontSetWidth: true
+      dontSetWidth: true,
+      zIndex: 99999
     });
   });
 </script>
@@ -160,6 +161,156 @@
   <script src="{{ site.baseurl }}/static/js/bubblegraph.js"></script>
 
 {% endif %}
+
+
+
+{% if page.title == "Data" %}
+  <script src='{{ site.baseurl }}/static/js/dashboard.js'></script>
+  <script type="text/javascript">
+   
+  /*****************\
+     Tab Switching
+  \*****************/
+  $(document).ready(function(){
+    $('div.dashboard_tabs a:nth-child(1)').click(function(){
+      $('div.dashboard_tabs a').each(function(){
+        $(this).removeClass('active')
+      });
+      $(this).toggleClass('active');
+      $('section.dashboard-canvas').show();
+      $('section.dashboard-location').hide();
+      $('section.dashboard-over-time').hide();
+    });
+    $('div.dashboard_tabs a:nth-child(2)').click(function(){
+      $('div.dashboard_tabs a').each(function(){
+        $(this).removeClass('active')
+      });
+      $(this).toggleClass('active');
+      $('section.dashboard-canvas').hide();
+      $('section.dashboard-location').show();
+      $('section.dashboard-over-time').hide();
+    });
+    $('div.dashboard_tabs a:nth-child(3)').click(function(){
+      $('div.dashboard_tabs a').each(function(){
+        $(this).removeClass('active')
+      });
+      $(this).toggleClass('active');
+      $('section.dashboard-canvas').hide();
+      $('section.dashboard-location').hide();
+      $('section.dashboard-over-time').show();
+    });
+  });
+
+  /*********************\
+      Table Sorting
+  \*********************/
+  $('table thead tr th a').each(function(){
+    $(this).click(function(){
+      var table;
+      var data = $(this).attr('data-value').split(',');
+      if (data[1] == 'fullTable')
+        table = dashTable;
+      else
+        table = dashTotalsTable;
+      var sort = $(this).children('i').hasClass('fa-chevron-down') ? d3.descending : d3.ascending; 
+      sort_dataTable(table,data[0],sort);
+
+      //Remove arrows
+      var $parent = $(this).parent().parent();
+      $('th a i', $parent).each(function(){
+        $(this).removeClass('fa-chevron-down');
+        $(this).removeClass('fa-chevron-up');
+      });
+      //Add Arrow
+      if (table.order()==d3.ascending)
+        $('i',$(this)).addClass('fa-chevron-down');
+      else 
+        $('i',$(this)).addClass('fa-chevron-up');
+    })
+  });
+  /*********************\
+         Load tab
+  \*********************/
+  $(document).ready(function(){
+    var hash = window.location.hash.substring(1);
+    switch(hash){
+      case 'location':
+        $('section#company-tab').hide();
+        $('section#location-tab').show();
+        $('a#company-tab-link').removeClass('active');
+        $('a#location-tab-link').addClass('active');
+        break;
+      case 'overtime':
+        $('section#company-tab').hide();
+        $('section#overtime-tab').show();
+        $('a#company-tab-link').removeClass('active');
+        $('a#overtime-tab-link').addClass('active');
+        break;
+    }
+  });
+
+  </script>
+
+{% endif %}
+
+{% if page.title == "Documentation" %}
+  <script type="text/javascript">
+  /*****************\
+     Tab Switching
+  \*****************/
+  $(document).ready(function(){
+    $('section#tab-select a').each(function(index){
+      
+      $(this).click(function(){
+        $('#tab-select a').each(function(){
+          $(this).removeClass('active');
+        });
+        $('#tab1').hide();
+        $('#tab2').hide();
+        $('#tab3').hide();
+        $('#tab4').hide();
+        var n = index+1
+        $('section#tab'+n).show();
+        $(this).addClass('active');
+      })
+    })
+  });
+  /*********************\
+         Load tab
+  \*********************/
+  $(document).ready(function(){
+    var hash = window.location.hash.substring(1);
+    switch(hash){
+      case 'company':
+        $('section#tab1').hide();
+        $('section#tab2').show();
+        $('a#tab1-link').removeClass('active');
+        $('a#tab2-link').addClass('active');
+        break;
+      case 'location':
+        $('section#tab1').hide();
+        $('section#tab3').show();
+        $('a#tab1-link').removeClass('active');
+        $('a#tab3-link').addClass('active');
+        break;
+      case 'overtime':
+        $('section#tab1').hide();
+        $('section#tab4').show();
+        $('a#tab1-link').removeClass('active');
+        $('a#tab4-link').addClass('active');
+        break;
+    }
+  });
+  </script>
+{% endif %}
+
+{% if page.title == "Search" %}
+  <script type="text/javascript" src='{{ site.baseurl }}/static/js/iecors.js'></script>
+  <script type="text/javascript" src='{{ site.baseurl }}/static/js/search.js'></script>
+{% endif %}
+
+
+
 
 <!-- Google Analytics -->
 <script>

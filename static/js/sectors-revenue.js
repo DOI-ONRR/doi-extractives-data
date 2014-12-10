@@ -55,17 +55,10 @@ d3.csv("static/data/2003-2013-royalty-data.csv",function(resource_data){
 		.colors(["#9B9B9B"])		
 		.elasticY(true)
 		.brushOn(false)
-		//.x(d3.time.scale().domain([minDate,maxDate]))
 		.xUnits(dc.units.ordinal)
         .x(d3.scale.ordinal().domain(["2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013"]))
 		.margins({top: 10, right: -2, bottom: 20, left:-2})
-
-		
-		//.xUnits(function(){return 15;})
 		.yAxis().tickFormat(function(v){return "";});
-
-	
-	//barChart.xAxis();
 
 	pieChart.width(300)
 		.colors(d3.scale.ordinal().range(["#d54740","#3397c2","#865daa","#9fa731","#5a5a5a"]))
@@ -81,8 +74,6 @@ d3.csv("static/data/2003-2013-royalty-data.csv",function(resource_data){
 		});
 
 	
-
-	//dc.renderAll();
 	var addToolTips = function(){
 		d3.selectAll(".bar").call(barTip);
 		d3.selectAll(".bar").on('mouseover', barTip.show)

@@ -375,7 +375,7 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
   border-bottom: $section-border;
   min-width: 100%;
   min-height: 100%;
-  background: url(../img/oil-pump.jpg) no-repeat 50% 50% fixed;
+  background: url(../img/oil-pump.jpg) no-repeat 50% 50%;
   @include respond-to(medium-up) { 
     background: url(../img/oil-pump.jpg) no-repeat 60% 100% fixed;
   }
@@ -405,15 +405,21 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
     padding-left: 20px;
     margin-bottom: 10px;
     color: white;
-    @include rem-fallback(font-size, $base-font-size * 2.16);
+    @include rem-fallback(font-size, $base-font-size * 1.9);
+    @include respond-to(tiny-up) {
+      @include rem-fallback(font-size, $base-font-size * 2.16);
+    }
     line-height: 1.2;
-    @include respond-to(small-up) { 
+    @include respond-to(small-up) {
       line-height: 1.6;
     }
     font-weight: 500;
     background-color: $useiti-red;
     &:first-of-type {
-      margin-top: 100px;
+      margin-top: 50px;
+      @include respond-to(small-up) {
+        margin-top: 100px;
+      }
     }
   }
   h1 + h1 {
@@ -449,7 +455,10 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
     padding-right: 50px;
   }
   background-color: transparentize(black, 0.55);
-  margin-bottom: 250px;
+  margin-bottom: 50px;
+  @include respond-to(small-up) {
+    margin-bottom: 250px;
+  }
   margin-left: 20px;
   padding: 20px 15px 15px 30px;
   color: white;

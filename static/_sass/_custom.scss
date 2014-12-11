@@ -1846,6 +1846,16 @@ $dashboard-height: 400px;
   }
 }
 
+#dashboard-bar-rev-by-commodity-group g.x text {
+    pointer-events: all;
+    text-decoration: underline;
+    font-weight: bold;
+    cursor: pointer;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
 #dashboard-bar-rev-by-revenue-type-coal {
   g.stack._0  > rect.bar {
     stroke: none;

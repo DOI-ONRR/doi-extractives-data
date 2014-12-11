@@ -362,6 +362,7 @@ d3.csv("../static/data/CY13_Revenues_by_Company.csv",function(resource_data){
     dash_bar_rev_by_commodity_group.on("filtered", function (chart) {
                 dc.events.trigger(function () {
                 });});
+    dash_bar_rev_by_commodity_group.filter = function(){};
     /*****************************
     End: dash_bar_rev_by_commodity
     *****************************/
@@ -398,6 +399,7 @@ d3.csv("../static/data/CY13_Revenues_by_Company.csv",function(resource_data){
     dash_bar_rev_by_revenue_type_oil_and_gas.on("filtered", function (chart) {
                 dc.events.trigger(function () {
                 });});
+    dash_bar_rev_by_revenue_type_oil_and_gas.filter = function(){};
 
     dash_bar_rev_by_revenue_type_renewables
         .width(graphs_width).height(graphs_height)
@@ -421,6 +423,7 @@ d3.csv("../static/data/CY13_Revenues_by_Company.csv",function(resource_data){
         .y(d3.scale.log().nice().domain([1, 12500000000]))
         .margins(graphs_margins)
         .yAxis().tickFormat(function(v){return text_money(v,false,true)});
+    dash_bar_rev_by_revenue_type_renewables.filter = function(){};
 
     dash_bar_rev_by_revenue_type_coal
         .width(graphs_width).height(graphs_height)
@@ -440,6 +443,7 @@ d3.csv("../static/data/CY13_Revenues_by_Company.csv",function(resource_data){
         .y(d3.scale.log().nice().domain([1, 12500000000]))
         .margins(graphs_margins)
         .yAxis().tickFormat(function(v){return text_money(v,false,true)});
+    dash_bar_rev_by_revenue_type_coal.filter = function(){};
 
     dash_bar_rev_by_revenue_type_other
         .width(graphs_width).height(graphs_height)
@@ -459,6 +463,7 @@ d3.csv("../static/data/CY13_Revenues_by_Company.csv",function(resource_data){
         .y(d3.scale.log().nice().domain([1, 12500000000]))
         .margins(graphs_margins)
         .yAxis().tickFormat(function(v){return text_money(v,false,true)});
+    dash_bar_rev_by_revenue_type_other.filter = function(){};
         
     
     dash_bar_rev_by_revenue_type_renewables.on("filtered", function (chart) {

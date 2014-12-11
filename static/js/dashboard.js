@@ -613,6 +613,33 @@ d3.csv("../static/data/CY13_Revenues_by_Company.csv",function(resource_data){
                     update_graph_options(['Coal'],typeDimension);
                } 
             });
+            $(this).attr('tabindex','0');
+            $(this).keypress(function(event){
+                if (event.charCode == 13 || event.charCode == 32)
+                {
+                    $('#dashboard-bar-rev-by-commodity-group').toggle();
+                    if($(this).text().toLowerCase() == 'oil & gas')
+                    {
+                        $('#dashboard-bar-rev-by-revenue-type-oil-and-gas').toggle();
+                        update_graph_options(['Oil','Oil & Gas','Gas'],typeDimension);
+                    }
+                   if($(this).text().toLowerCase() == 'renewables')
+                   {
+                        $('#dashboard-bar-rev-by-revenue-type-renewables').toggle();
+                        update_graph_options(['Wind','Geothermal'],typeDimension);
+                   }
+                   if($(this).text().toLowerCase() == 'other commodities')
+                   {
+                        $('#dashboard-bar-rev-by-revenue-type-other').toggle();
+                        update_graph_options(['Other Commodities'],typeDimension);
+                   }
+                   if($(this).text().toLowerCase() == 'coal')
+                   {
+                        $('#dashboard-bar-rev-by-revenue-type-coal').toggle();
+                        update_graph_options(['Coal'],typeDimension);
+                   } 
+                }
+            });
         });
        
             var a=[$('#dashboard-bar-rev-by-revenue-type-oil-and-gas'),

@@ -35,6 +35,11 @@
 
 <!-- term definition tooltips -->
 <script type="text/javascript">
+  $('.term-tooltip').each(function(){
+    $(this).attr('aria-label',function(){
+      return $(this).attr('title');
+    });
+  });
   $(document).ready(function() {
     Tipped.create('.term-tooltip', { 
       position: 'topright', 
@@ -43,6 +48,8 @@
       offset: { y: 5 },
       shadow: false,
     });
+    $('.term-tooltip').focus(function(){$(this).trigger('mouseover')});
+    $('.term-tooltip').focusout(function(){$(this).trigger('mouseout')});
   });
 </script>
 

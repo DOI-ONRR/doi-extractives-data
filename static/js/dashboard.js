@@ -20,7 +20,7 @@ if (!companyPage)
     dashTotalsTable = dc.dataTable("#dashboard-totals-table");
 }
 
-d3.csv("../static/data/beta-data.csv",function(resource_data){
+d3.csv("../static/data/CY13_Revenues_by_Company.csv",function(resource_data){
     
     resource_data.forEach(function(d){
         d["Revenue"] = clean_monetary_float(d["Revenue"]);
@@ -34,8 +34,6 @@ d3.csv("../static/data/beta-data.csv",function(resource_data){
                 return "Other";
             else if (commodity == 'Coal')
                 return "Coal";
-            else
-                console.log(commodity);
         })(d);
     });
 
@@ -745,9 +743,6 @@ var graphCustomizations = function() {
          d3.selectAll(a[i]+" .bar").on('mouseover', commodities_barTip.show)
             .on('mouseout', commodities_barTip.hide);
     }
-    console.log(d3.selectAll('#dashboard-bar-rev-by-revenue-type-renewables .dc-legend'));
-    //#b6bf38 //wind
-    //#798025 //geothermal
     var splitColors = ['#b6bf38','#798025'];
     d3.select('#dashboard-bar-rev-by-revenue-type-renewables .dc-legend .dc-legend-item')
         .append('polygon')

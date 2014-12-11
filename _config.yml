@@ -22,11 +22,11 @@ highlighter: pygments
 baseurl: /doi-extractives-data
 
 # only use when absolute URL is absolutely necessary
-url: https://18f.github.io/doi-extractives-data
+url: https://useiti.doi.gov
 
 kramdown:
   parse_block_html: true
 
 cachebuster: '0426131729'
-unilatteral_data: 'Updated_Consolidated_Revenue_Data_with_Fake_Names.csv'
+unilatteral_data: 'CY13_Revenues_by_Company.csv'
 exclude: [Gemfile*]

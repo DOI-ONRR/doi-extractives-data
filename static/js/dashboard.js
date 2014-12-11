@@ -614,7 +614,7 @@ d3.csv("../static/data/beta-data.csv",function(resource_data){
    ***************************/
    (function(){
         $('#dashboard-bar-rev-by-commodity-group svg g g.x g.tick text').each(function(){
-            $(this).on('click',function(){
+            $(this).click(function(){
                 $('#dashboard-bar-rev-by-commodity-group').toggle();
                 if($(this).text().toLowerCase() == 'oil & gas')
                 {

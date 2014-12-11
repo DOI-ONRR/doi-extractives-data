@@ -70,7 +70,7 @@ d3.csv("static/data/2003-2013-royalty-data.csv",function(resource_data){
 		.legend(dc.legend().x(300).y(30).itemHeight(13).gap(10))
 		.renderLabel(false)
 		.renderlet(function(d){
-			d3.select("#pie-chart-center-text h1").html('Total:<br /> <span>$' + text_money(all.value()) + '</span>');
+			d3.select("#pie-chart-center-text h1").html('Total Royalties<br /> <span>$' + text_money(all.value()) + '</span>');
 		});
 
 	

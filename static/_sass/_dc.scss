@@ -220,15 +220,6 @@ div.dc-chart {
     pointer-events: none;
 }
 
-#dashboard-bar-rev-by-commodity-group g.x text {
-    pointer-events: auto;
-    text-decoration: underline;
-    font-weight: bold;
-    cursor: pointer;
-    &:hover {
-        text-decoration: none;
-    }
-}
 
 .dc-chart path.highlight {
     stroke-width: 3;

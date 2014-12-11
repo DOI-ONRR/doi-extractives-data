@@ -362,6 +362,7 @@
         return d.label;
       })
       .select("use")
+        .attr('xlink:type',"simple")
         .attr("xlink:href", function(d) {
           return window.site.baseurl + "/static/fonts/EITI/icons.svg#eiti-" + d.id;
         });

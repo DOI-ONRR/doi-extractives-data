@@ -81,6 +81,25 @@ d3.csv("static/data/2003-2013-royalty-data.csv",function(resource_data){
 		d3.selectAll(".pie-slice").call(pieTip);
 		d3.selectAll(".pie-slice").on('mouseover', pieTip.show).on('mouseout', pieTip.hide);	
 	};
+	var sectors508 = function(){
+		// d3.select('#sector-revenue-pie-chart')
+		// 	.select('.dc-legend')
+		// 		.selectAll('text')
+		// 		.attr('tabindex','0')
+		// 		.click(function(){
+		// 			$(this).trigger('mousedown');
+		// 		});
+		$('#sector-revenue-pie-chart .dc-legend text').each(function(){
+			$(this).attr('tabindex','0');
+			$(this).keypress(function(event){
+                if (event.charCode == 13 || event.charCode == 32)
+                {
+                	console.log($(this));
+                	$(this).parent().trigger('click');
+                }
+            });
+		});
+	};
 	var sectors_rev_drawn = false;
     $(document).ready(function(){
     	$(window).scroll(function (event) {
@@ -99,6 +118,7 @@ d3.csv("static/data/2003-2013-royalty-data.csv",function(resource_data){
 	              sectors_rev_drawn = true;
 	              dc.renderAll();
 	              addToolTips();
+	              sectors508();
 	      }
 	    })();
     })

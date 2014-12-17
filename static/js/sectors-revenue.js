@@ -62,6 +62,21 @@ d3.csv("static/data/2003-2013-royalty-data.csv",function(resource_data){
         .x(d3.scale.ordinal().domain(["2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013"]))
 		.margins({top: 10, right: -2, bottom: 20, left:-2})
 		.yAxis().tickFormat(function(v){return "";});
+	barChart.renderlet(function(d){
+			d3.selectAll('#sector-revenue-bar-chart .bar')
+			  .attr('aria-label',function(d){
+			  	var barChartFilters = barChart.filters();
+			  	var filters = barChartFilters.length != 0 ? barChart.filters() : "2003 to 2013";
+			  	var filterInOut = barChartFilters.indexOf(d.x) != -1 ? "Select to remove " + d.x + " from the filter." : "Select to add " + d.x + " to the filter.";
+			  	return  filterInOut
+			  			+ " Revenue = $"
+			  			+ d.y.formatMoney(2,'.',',') 
+			  			+ " Total Revenue = "
+			  			+ text_money(all.value())
+			  			+ " Current selected years = "
+			  			+ filters;
+			  })
+		});
 
 	pieChart.width(300)
 		.colors(d3.scale.ordinal().range(["#d54740","#3397c2","#865daa","#9fa731","#5a5a5a"]))
@@ -74,7 +89,7 @@ d3.csv("static/data/2003-2013-royalty-data.csv",function(resource_data){
 		.renderLabel(false)
 		.renderlet(function(d){
 			d3.select("#pie-chart-center-text h1").html('Total Royalties<br /> <span>$' + text_money(all.value()) + '</span>');
-			sectorsPie508();
+			sectorsPie508(d);
 		});
 
 	
@@ -88,11 +103,24 @@ d3.csv("static/data/2003-2013-royalty-data.csv",function(resource_data){
 		d3.selectAll(".pie-slice").on('mouseover', pieTip.show).on('mouseout', pieTip.hide);	
 	};
 	var lastSelectedPieSection='';
-	var sectorsPie508 = function(){
+	var sectorsPie508 = function(d){
 		d3.selectAll(".dc-legend-item text").call(pieTip);
 		d3.selectAll(".dc-legend-item text")
 			.on('focus',pieTip.show)
-			.on('blur',pieTip.hide);
+			.on('blur',pieTip.hide)
+			.attr('aria-label',function(d){
+				var pieChartFilters = pieChart.filters(),
+					filters = pieChartFilters.length != 0 ? pieChartFilters : 'coal, gas, geothermal, oil, other',
+					filterInOut = pieChartFilters.indexOf(d.name) != -1 ? "Select to remove " + d.name + " from the filter." : "Select to add " + d.name + " to the filter."; 
+				return  filterInOut
+			  			+ " Revenue = $"
+			  			+ d.data.formatMoney(2,'.',',') 
+			  			+ " Total Revenue = "
+			  			+ text_money(all.value())
+			  			+ " Current selected commodities = "
+			  			+ filters;
+			});
+
 		$('#sector-revenue-pie-chart .dc-legend text').each(function(){
 			var that = $(this);
 			that.attr('tabindex','0');

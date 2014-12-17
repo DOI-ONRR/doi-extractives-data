@@ -526,7 +526,7 @@ d3.csv("../static/data/CY13_Revenues_by_Company.csv",function(resource_data){
             .columns([
                     function(d){ 
                         var company = d["Company Name"]
-                        var s = "<a href=\"javascript:$('input#table-search').val('"+company
+                        var s = "<a href='javascript:void(0)' onclick=\"javascript:$('input#table-search').val('"+company
                             +"');text_filter(companyDimension,'"+company+"');$('div.table-search-reset a').show();\">"
                             +company
                             +"</a>";

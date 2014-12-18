@@ -41,7 +41,10 @@ d3.csv("static/data/2003-2013-royalty-data.csv",function(resource_data){
 	var pieTip = d3.tip()
 		.attr('class','d3-tip')
 		.offset([-10,0])
-		.html(function (d) { return d.data.key + " royalties<br/><span style='color:#d54740'> $" + parseFloat(d.data.value).formatMoney(2,'.',',') + "</span>";
+		.html(function (d) {
+			if (!d.name) 
+				return d.data.key + " royalties<br/><span style='color:#d54740'> $" + parseFloat(d.data.value).formatMoney(2,'.',',') + "</span>";
+			return d.name + " royalties<br/><span style='color:#d54740'> $" + parseFloat(d.data).formatMoney(2,'.',',') + "</span>";
 		});
 
 
@@ -59,6 +62,21 @@ d3.csv("static/data/2003-2013-royalty-data.csv",function(resource_data){
         .x(d3.scale.ordinal().domain(["2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013"]))
 		.margins({top: 10, right: -2, bottom: 20, left:-2})
 		.yAxis().tickFormat(function(v){return "";});
+	barChart.renderlet(function(d){
+			d3.selectAll('#sector-revenue-bar-chart .bar')
+			  .attr('aria-label',function(d){
+			  	var barChartFilters = barChart.filters();
+			  	var filters = barChartFilters.length != 0 ? barChart.filters() : "2003 to 2013";
+			  	var filterInOut = barChartFilters.indexOf(d.x) != -1 ? "Select to remove " + d.x + " from the filter." : "Select to add " + d.x + " to the filter.";
+			  	return  filterInOut
+			  			+ " Revenue = $"
+			  			+ d.y.formatMoney(2,'.',',') 
+			  			+ " Total Revenue = "
+			  			+ text_money(all.value())
+			  			+ " Current selected years = "
+			  			+ filters;
+			  })
+		});
 
 	pieChart.width(300)
 		.colors(d3.scale.ordinal().range(["#d54740","#3397c2","#865daa","#9fa731","#5a5a5a"]))
@@ -71,15 +89,78 @@ d3.csv("static/data/2003-2013-royalty-data.csv",function(resource_data){
 		.renderLabel(false)
 		.renderlet(function(d){
 			d3.select("#pie-chart-center-text h1").html('Total Royalties<br /> <span>$' + text_money(all.value()) + '</span>');
+			sectorsPie508(d);
 		});
 
 	
 	var addToolTips = function(){
 		d3.selectAll(".bar").call(barTip);
 		d3.selectAll(".bar").on('mouseover', barTip.show)
-			.on('mouseout', barTip.hide);
+			.on('mouseout', barTip.hide)
+			.on('focus',barTip.show)
+			.on('blur',barTip.hide);
 		d3.selectAll(".pie-slice").call(pieTip);
 		d3.selectAll(".pie-slice").on('mouseover', pieTip.show).on('mouseout', pieTip.hide);	
+	};
+	var lastSelectedPieSection='';
+	var sectorsPie508 = function(d){
+		d3.selectAll(".dc-legend-item text").call(pieTip);
+		d3.selectAll(".dc-legend-item text")
+			.on('focus',pieTip.show)
+			.on('blur',pieTip.hide)
+			.attr('aria-label',function(d){
+				var pieChartFilters = pieChart.filters(),
+					filters = pieChartFilters.length != 0 ? pieChartFilters : 'coal, gas, geothermal, oil, other',
+					filterInOut = pieChartFilters.indexOf(d.name) != -1 ? "Select to remove " + d.name + " from the filter." : "Select to add " + d.name + " to the filter."; 
+				return  filterInOut
+			  			+ " Revenue = $"
+			  			+ d.data.formatMoney(2,'.',',') 
+			  			+ " Total Revenue = "
+			  			+ text_money(all.value())
+			  			+ " Current selected commodities = "
+			  			+ filters;
+			});
+
+		$('#sector-revenue-pie-chart .dc-legend text').each(function(){
+			var that = $(this);
+			that.attr('tabindex','0');
+			that.attr('id','#sector-revenue-pie-chart-'+that.text());
+			if (lastSelectedPieSection == that.text())
+			{
+				lastSelectedPieSection='';
+				that.focus();
+			}
+			that.keypress(function(event){
+                if (event.charCode == 13 || event.charCode == 32)
+                {
+                	lastSelectedPieSection = that.text();
+                	pieChart.filter(that.text())
+                	dc.redrawAll();
+                }
+            });
+		});
+	};
+	var lastSelectedBarSection='';
+	var sectorsBar508 = function(){
+		d3.selectAll('#sector-revenue-bar-chart .bar')
+			.attr('id',function(d){
+				lastSelectedBarSection = d.x;
+				return '#sector-revenue-bar-chart-'+d.x;
+			})
+			.attr('tabindex',0)
+			.attr('data-year',function(d){return d.x});
+		
+		$('#sector-revenue-bar-chart .bar').each(function(){
+			$(this).keypress(function(event){
+				if (event.charCode == 13 || event.charCode == 32)
+                {
+                	lastSelectedBarSection = $(this).attr('data-year');
+                	barChart.filter(lastSelectedBarSection);
+                	dc.redrawAll();
+                }
+			});
+		});
+
 	};
 	var sectors_rev_drawn = false;
     $(document).ready(function(){
@@ -99,6 +180,8 @@ d3.csv("static/data/2003-2013-royalty-data.csv",function(resource_data){
 	              sectors_rev_drawn = true;
 	              dc.renderAll();
 	              addToolTips();
+	              sectorsPie508();
+	              sectorsBar508();
 	      }
 	    })();
     })

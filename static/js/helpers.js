@@ -296,7 +296,7 @@ function draw_totals_table(){
         .columns([
                 function(d){
             		var company = d["Company Name"]
-            		var s = "<a href=\"javascript:$('input#table-search').val('"+company
+            		var s = "<a href='javascript:void(0)' onclick=\"javascript:$('input#table-search').val('"+company
             			+"');text_filter(companyDimension,'"+company+"');$('div.table-search-reset a').show();\">"
         				+company
         				+"</a>";

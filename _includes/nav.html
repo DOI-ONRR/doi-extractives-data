@@ -27,19 +27,19 @@
         	<li itemprop="name">U.S. Natural Resource Sectors</li>
         </a>
 
-        <a href="{{ site.baseurl }}/documentation/" {% if page.title == "Documentation" %}class="active" {% endif %}>
+        <a href="{{ site.baseurl }}/documentation/" itemprop="url" {% if page.title == "Documentation" %}class="active" {% endif %}>
             <li class="nav-right nav-data-docs" itemprop="name">Documentation</li>
         </a>
 
-        <a href="{{ site.baseurl }}/data/" {% if page.title == "Data" %}class="active" {% endif %}>
+        <a href="{{ site.baseurl }}/data/" itemprop="url" {% if page.title == "Data" %}class="active" {% endif %}>
             <li class="nav-right" itemprop="name">Data (by company, location...)</li>
         </a>
 
         <li class="nav-last nav-right" itemprop="name">
             <form role="form" id="search" action="{{ site.baseurl }}/search/" method="GET">
-                <div class="search-content">
+                <div class="search-content" itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction">
                     <label for="site-search-text">Search related resources...</label>
-                    <input type="search" class="form-control" id="site-search-text" name="q" title="Search" role="search" placeholder="Search related resources...">
+                    <input type="search" class="form-control" id="site-search-text" itemprop="query-input" name="q" title="Search" role="search" placeholder="Search related resources...">
                     <input type="submit" value="&#10095;" title="Submit Search">
                 </div>
             </form>

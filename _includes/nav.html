@@ -1,3 +1,15 @@
+<div class="skip-nav">
+    {% if page.title == "Home" %}
+        <a href="#first1">Skip to Main Content</a>
+        <a href="#second1">Skip to Federal resource royalties by sector</a>
+        <a href="#third1">Skip to Explore by Location</a>
+        <a href="#fourth1">Skip to Where does money go?</a>
+    {% endif %}
+    {% if page.title != "Home" %}
+        <a href="#main-container">Skip to Main Content</a>
+    {% endif %}
+</div>
+
 <nav id="sticky-nav" class="nav" role="navigation" aria-label="primary" itemscope itemtype="http://schema.org/SiteNavigationElement">
 
   <a id="nav-toggle" href="javascript:void(0)"><span></span></a>

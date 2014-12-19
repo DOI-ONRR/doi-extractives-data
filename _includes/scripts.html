@@ -316,6 +316,18 @@
   <script type="text/javascript" src='{{ site.baseurl }}/static/js/search.js'></script>
 {% endif %}
 
+<!-- Skip Nav -->
+<!-- adds tabindex = -1 to href targets on click -->
+<script>
+$(document).ready(function(){
+  $('div.skip-nav a').each(function(){
+    $(this).click(function(){
+      $($(this).attr('href')).attr('tabindex','-1');
+    });
+  });
+});
+</script>
+
 
 
 

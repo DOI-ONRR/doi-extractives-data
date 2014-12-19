@@ -34,13 +34,11 @@ We also depend on several Sass libraries and tools:
 * `gem install sass`
 * `gem install bourbon`
 * `gem install neat`
-* `gem install bitters`
 
-If you are not familiar with how to work with Bourbon, Neat and Bitters, visit their website at [bourbon.io](http://bourbon.io/).
+If you are not familiar with how to work with Bourbon and Neat, visit their website at [bourbon.io](http://bourbon.io/).
 
-To keep our code updating continuously as we edit, we use `jekyll serve --baseurl '' --watch`. ~~To keep our Sass compiling continuously, we use `sass --watch sass/styles.scss:css/styles.css`.~~ As of Jekyll 2.2.0, [gh-pages compiles Sass natively](https://github.com/blog/1867-github-pages-now-runs-jekyll-2-2-0). We adjusted this site architecture to reflect this change, and you no longer have to watch your Sass files separately from running Jekyll.
+To keep our code updating continuously as we edit, we use `jekyll serve --baseurl '' --watch`. As of Jekyll 2.2.0, [gh-pages compiles Sass natively](https://github.com/blog/1867-github-pages-now-runs-jekyll-2-2-0).
 
-<!-- Markdown and YAML editing happens in the `gh-pages` branch, so the [preview page](https://18f.github.io/doi-extractives-data) is automatically updated as we commit edits. The static compiled HTML is updated into the `master` branch. To generate the static files and push them to `master`, we run `rake publish`. (See the `Rakefile` in the root directory for details on how this works.) -->
 
 ##Contributing
 

@@ -98,6 +98,27 @@ ul.menu a.active li {
   }
 }
 
+div.skip-nav a {
+  position: absolute;
+  left: -10000;
+  top: 0;
+  width: 1px;
+  height: auto;
+  overflow: hidden;
+  &:focus {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: auto; 
+    height: auto;
+    z-index: 999999;
+    background-color: $light-gray;
+    padding-left: 2px;
+    padding-right: 2px;
+    overflow: visible;
+  }
+}
+
 .nav {
   @include respond-to(large-up) {
     padding-left: 20px;

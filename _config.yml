@@ -19,6 +19,9 @@ sass:
 markdown: kramdown
 highlighter: pygments
 
+gems:
+  - jekyll-sitemap
+
 baseurl: /doi-extractives-data
 
 # only use when absolute URL is absolutely necessary

@@ -29,24 +29,6 @@ sub {
   margin: -1px;
   padding:0;
 }
-div.skip-nav a{
-  position:absolute;
-  left:-10000;
-  top:0;
-  width:1px;
-  height:auto;
-  overflow:hidden;
-}
-div.skip-nav a:focus{
-    position:absolute;
-    top:0;
-    left:0; 
-    width:auto; 
-    height:auto;
-    z-index: 999999;
-    background-color: white;
-    overflow: visible;;
-  }
 
 .container {
   @include outer-container;
@@ -113,6 +95,27 @@ ul.menu a.active li {
     height: 30px;
     margin-top: 0;
     background-color: none;
+  }
+}
+
+div.skip-nav a {
+  position: absolute;
+  left: -10000;
+  top: 0;
+  width: 1px;
+  height: auto;
+  overflow: hidden;
+  &:focus {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: auto; 
+    height: auto;
+    z-index: 999999;
+    background-color: $light-gray;
+    padding-left: 2px;
+    padding-right: 2px;
+    overflow: visible;
   }
 }
 

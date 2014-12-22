@@ -43,6 +43,8 @@
   fundInfo.select(".close")
     .on("click", function() {
       fundInfo.style("display", "none");
+      $('.bubbles-offshore-words').show();
+      $('.bubbles-onshore-words').show();
     });
 
   // visual data tweaks, by element id
@@ -168,9 +170,14 @@
         .attr("transform", function(d) {
           return "translate(" + [d.x, d.y] + ")";
         })
+        .attr("aria-label", ariaLabel)
+        .attr('tabindex','0')
         .on("mouseover", highlightFund)
         .on("mouseout", unhighlightFund)
-        .on("click", selectFund);
+        .on("focus", highlightFund)
+        .on("blur", unhighlightFund)
+        .on("click", selectFund)
+        .on("keydown",selectFund);
 
     node.sort(function(a, b) {
       return d3.descending(a.r, b.r);
@@ -366,7 +373,21 @@
           return window.site.baseurl + "/static/fonts/EITI/icons.svg#eiti-" + d.id;
         });
   }
+  function ariaLabel(fund){
+    var format = d3.format(".3f"),
+        billion = 1e9,
+        s = '';
 
+    s += fund.name;
+    s += ' ';
+    s += fund.year + ' ' + fund.shore;
+    s += ' revenues of ';
+    s += format(fund.value/billion);
+    s += ' which helped fund ';
+    s += fund.meta.icons.join(', ');
+    return s;
+    
+  }
   function highlightFund(fund) {
     clearTimeout(infoTimeout);
     defaultDisplay.style("display", "none");
@@ -388,6 +409,8 @@
   }
 
   function selectFund(fund) {
+    if (d3.event.keyCode != 13 && d3.event.keyCode != 32 && d3.event.keyCode != 0)
+      return;
     fundInfo
       .style("display", null);
 
@@ -398,6 +421,10 @@
 
     fundInfo.select(".content")
       .html(fund.meta.content);
+    $('.bubbles-offshore-words').hide();
+    $('.bubbles-onshore-words').hide();
+    if (d3.event.keyCode == 13 || d3.event.keyCode == 32)
+      $('a.close').focus();
   }
 
   /*

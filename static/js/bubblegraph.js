@@ -45,6 +45,15 @@
       fundInfo.style("display", "none");
       $('.bubbles-offshore-words').show();
       $('.bubbles-onshore-words').show();
+    })
+    .on('keydown',function(fund){
+      if (d3.event.keyCode == 13 || d3.event.keyCode == 32)
+      {
+        fundInfo.style("display", "none");
+        $('.bubbles-offshore-words').show();
+        $('.bubbles-onshore-words').show();
+        $('.bubbles-onshore-offshore').attr('tabindex','-1').focus();
+      }
     });
 
   // visual data tweaks, by element id

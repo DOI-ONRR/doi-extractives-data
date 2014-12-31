@@ -91,7 +91,9 @@ $(document).ready(function() {
   var redrawTimeout;
 
   var mapdataviz = L.map('map', {
-      scrollWheelZoom: false
+      scrollWheelZoom: false,
+      minZoom: 2,
+      maxZoom: 6
     })
     .setView([41.5, -99.5795], mobile ? 3 : 4)
     .on('zoomstart',function() {

@@ -26,7 +26,7 @@ $(document).ready(function() {
   ];
 
   var atlanticDrawOrder = ["North Atlantic", "Mid-Atlantic", "South Atlantic", "Straights of Florida"];
-  var gomDrawOrder = ["Eastern Gulf of Mexico", "Central Gulf of Mexico", "Western Gulf of Mexico"]
+  var gomDrawOrder = ["Eastern Gulf of Mexico", "Central Gulf of Mexico", "Western Gulf of Mexico"];
 
   var mapdataviz; // the L.Map instance
 
@@ -124,17 +124,17 @@ $(document).ready(function() {
 
   //Sets up Commodites switch pane
   $('#map-comodities-pane>a').each(function(i) {
-    $(this).attr('data-value',variables[i]);
+    $(this).attr('data-value', variables[i]);
 
     $(this).click(function() {
       selectedCommodity = $(this).attr('data-value');
       setVariable($(this).attr('data-value'));
 
       $('#map-comodities-pane a').each(function(n) {
-        $(this).attr('aria-pressed','false');
+        $(this).attr('aria-pressed', 'false');
       });
 
-      $(this).attr('aria-pressed','true');
+      $(this).attr('aria-pressed', 'true');
     })
 
 
@@ -282,8 +282,8 @@ $(document).ready(function() {
   ***********************************/
   function setVariable(name) {
     var range = ranges[name];
-    $('div.map-scale-min').html('$' + Math.floor(range.min).formatMoney(0,'.',','));
-    $('div.map-scale-max').html('$' + range.trueMax.formatMoney(0,'.',','));
+    $('div.map-scale-min').html('$' + Math.floor(range.min).formatMoney(0, '.', ','));
+    $('div.map-scale-max').html('$' + range.trueMax.formatMoney(0, '.', ','));
     $('#map-scale-pane > h1').html(selectedCommodity === 'wind' ? 'Revenues' : 'Royalties');
 
     // update the (input) domain of the color scale,
@@ -360,7 +360,7 @@ $(document).ready(function() {
     }
 
     var layer = e.target;
-    // setStrokeWeight(layer,'3.0');
+    // setStrokeWeight(layer, '3.0');
     setFillColor(layer, '#D8D8D8'); // XXX magic color
 
     var revenueString = (function() {
@@ -379,7 +379,7 @@ $(document).ready(function() {
       }
       var revenueType = selected.capitalize();
       var roy_rev = revenueType === 'Wind' ? ' Revenues' : ' Royalties';
-      var html = ["<div>", revenueType, roy_rev, ":<br />$", revenueAmt.formatMoney(2,'.',','), "</div>"];
+      var html = ["<div>", revenueType, roy_rev, ":<br />$", revenueAmt.formatMoney(2, '.', ','), "</div>"];
       if (selected === 'oil' || selected === 'gas') {
         if (layer.feature.properties.leases) {
           html.push("<div>Producing Leases: ", layer.feature.properties.leases.active, "</div>");
@@ -605,7 +605,7 @@ $(document).ready(function() {
   if (mobile) {
     var pane = $('#map-info-pane')
       .addClass('map-info-pane-minimized');
-    $("#map-info-pane > div").css('display','none');
+    $("#map-info-pane > div").css('display', 'none');
     pane.click(function(e) {
       $content = $("#map-info-pane > div");
       $content.slideToggle(500, function() {

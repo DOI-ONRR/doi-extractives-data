@@ -1,8 +1,5 @@
 $(document).ready(function() {
 
-  // ensure that polygons get drawn even when they're not visible
-  L.Polygon.CLIP_PADDING = 1;
-
   var map_draw_init = false;
 
   /*
@@ -87,7 +84,11 @@ $(document).ready(function() {
     return ("$" + commaFormat(~~dollars)).replace(/^\$-/, "-$");
   };
 
-  var redrawTimeout;
+  var redrawTimeout,
+      deferredRedraw = function() {
+        clearTimeout(redrawTimeout);
+        redrawTimeout = setTimeout(redrawHeights, 10);
+      };
 
   var mapdataviz = L.map('map', {
       scrollWheelZoom: false,
@@ -95,14 +96,10 @@ $(document).ready(function() {
       maxZoom: 6
     })
     .setView([41.5, -99.5795], mobile ? 3 : 4)
-    .on('zoomstart',function() {
+    .on("zoomstart", function() {
       hideHeights();
     })
-    .on('zoomend',function() {
-      clearTimeout(redrawTimeout);
-      redrawTimeout = setTimeout(redrawHeights, 10);
-    });
-
+    .on("zoomend", deferredRedraw);
 
   //Set Title layer, Text at bottom of map
   L.tileLayer('https://a.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -215,6 +212,14 @@ $(document).ready(function() {
 
     // console.log("+ layer:", key, entry);
   });
+
+  /*
+   * XXX we do this after adding the GeoJSON layers because each layer adds its
+   * own "dragend" listener to redraw itself. Adding this listener after the
+   * GeoJSON layers' listeners are registered *should* guarantee that the paths
+   * will have been updated when we call redrawHeights().
+   */
+  mapdataviz.on("dragend", deferredRedraw); // XXX magic timeout
 
   var statesLayer = layersById.states.layer;
 

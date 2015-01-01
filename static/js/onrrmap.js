@@ -47,8 +47,6 @@ $(document).ready(function() {
     "geothermal"
   ];
 
-  // Empty Object to hold revenue range info
-  var ranges = {};
   // Empty Object used to 3d layers
   var dataLayers = [];
   // Default selected commodity
@@ -117,13 +115,6 @@ $(document).ready(function() {
   mapdataviz.scrollWheelZoom.disable();
 
   var popup = new L.Popup({ autoPan: false });
-
-  //Set Ranges for various commodities
-  (function() {
-    for (var i = 0; i < variables.length; i++) {
-      ranges[variables[i]] = {min: Infinity, max: -Infinity, trueMax: -Infinity};
-    }
-  })();
 
   //Sets up Commodites switch pane
   $('#map-comodities-pane>a').each(function(i) {
@@ -238,40 +229,6 @@ $(document).ready(function() {
   if (isScrolledIntoView('#map')) {
     map_draw_init = true;
     updateHeights();
-  }
-
-  function setRange(data) {
-    for (var i=0; i < data.features.length; i++) {
-      if (!data.features[i].properties.commodities) continue;
-      var feature = data.features[i];
-      for (var n = 0; n < variables.length; n++) {
-        var variable = variables[n],
-            range = ranges[variable];
-        if (feature.properties.commodities[variable]) {
-          var value = feature.properties.commodities[variable].revenue;
-          if (range.max < value) {
-            /*
-             * If value is greater than true max, set max to true max, set new true max
-             * else set new max
-            */
-            if (range.trueMax < value) {
-              if (range.trueMax === -Infinity) {
-                range.max = value;
-                range.trueMax = value;   
-              } else {
-                range.max = range.trueMax;
-                range.trueMax = value; 
-              }
-            } else {
-              range.max = value;
-            }
-          }
-          if (range.min > value) {
-            range.min = value;
-          }
-        }
-      }
-    }
   }
 
   /**********************************

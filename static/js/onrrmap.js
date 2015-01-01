@@ -84,7 +84,7 @@ $(document).ready(function() {
   // dollar formatting (for color step HTML titles)
   var commaFormat = d3.format(",");
   var dollarFormat = function(dollars) {
-    return "$" + commaFormat(Math.floor(dollars));
+    return ("$" + commaFormat(~~dollars)).replace(/^\$-/, "-$");
   };
 
   var redrawTimeout;
@@ -149,43 +149,46 @@ $(document).ready(function() {
    *   name: "<optional key to find the name property>"
    * }
    */
-  var layers = {
-    states: {
+  var layers = [
+    {
+      id: "atlantic",
+      data: ATL_NAD83_simp,
+      order: atlanticDrawOrder
+    },
+    {
+      id: "states",
       data: statesData,
       order: statesDrawOrder
     },
-    gom: {
+    {
+      id: "gom",
       data: GOM_NAD27_simp,
       order: gomDrawOrder,
       name: "TEXT_LABEL"
     },
-    atlantic: {
-      data: ATL_NAD83_simp,
-      order: atlanticDrawOrder
-    },
-    pacific: {
+    {
+      id: "pacific",
       data: PC_NAD83_simp,
       order: null
     },
-    alaska: {
+    {
+      id: "alaska",
       data: AK_NAD83_simp,
-      order: null
+      order: null // FIXME: Alaska is broken
     }
-  };
+  ];
+
+  var layersById = {};
 
   /*
    * iterate over the layers configuration object and perform setup for each:
    *
    * 1. sort the GeoJSON features (the "data" key) if there is an "order" key
-   * 2. call setRange() with the layer's data
-   * 3. create an L.geoJson layer for each, and add it to the map
-   * 4. push the Leaflet layer onto the dataLayers array
+   * 2. create an L.geoJson layer for each, and add it to the map
+   * 3. push the Leaflet layer onto the dataLayers array
    */
-  Object.keys(layers).forEach(function(key) {
-    var entry = layers[key];
-    if (entry.order) {
-      sortGeoJson(entry.data, entry.order);
-    }
+  layers.forEach(function(entry) {
+    layersById[entry.id] = entry;
 
     if (entry.name) {
       entry.data.features.forEach(function(f) {
@@ -195,19 +198,22 @@ $(document).ready(function() {
       });
     }
 
+    if (entry.order) {
+      sortGeoJson(entry.data, entry.order);
+    }
+
     var layer = L.geoJson(entry.data, {
       onEachFeature: onEachFeature
     })
     .addTo(mapdataviz);
 
-    setRange(entry.data);
     dataLayers.push(layer);
     entry.layer = layer;
 
     // console.log("+ layer:", key, entry);
   });
 
-  var statesLayer = layers.states.layer;
+  var statesLayer = layersById.states.layer;
 
   var closeTooltip;
   var lastAreaViewed = false;

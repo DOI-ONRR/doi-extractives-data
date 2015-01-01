@@ -141,9 +141,10 @@ $(document).ready(function() {
   });
 
   /*
-   * our layers configuration object looks like this:
+   * our layers configuration array contains layer objects that look like this:
    *
-   * <name>: { // the layer name, for reference later
+   * {
+   *   id: "<unique ID>", // for populating layersById
    *   data: {<GeoJSON FeatureCollection>},
    *   order: "<optional Array of ordered feature names>",
    *   name: "<optional key to find the name property>"
@@ -178,6 +179,8 @@ $(document).ready(function() {
     }
   ];
 
+  // look up a layer by ID in this object, e.g.
+  // layersById["states"] or layersById.states
   var layersById = {};
 
   /*

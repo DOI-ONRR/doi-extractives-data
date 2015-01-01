@@ -13,16 +13,20 @@ $(document).ready(function() {
   var statesDrawOrder = [
     "Maine", "Vermont", "New Hampshire", "Massachusetts", "Rhode Island", "Connecticut", "New York",
     "New Jersey", "Pennsylvania", "Delaware", "Maryland",
-    "Michigan", "Ohio",
-    "West Virginia", "Virginia",
+    "Michigan",
+    "West Virginia", "Ohio", "Virginia",
     "South Dakota",
     "Nebraska",
     "Minnesota", "Wisconsin", "North Dakota", "Montana",
     "Wyoming", "Idaho", "Washington", "Oregon",
-    "Alabama", "Alaska", "Arkansas", "District of Columbia", "Florida",
-    "Georgia", "Hawaii", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana",
-    "Mississippi", "Missouri", "North Carolina", "Oklahoma", "South Carolina", "Tennessee",
-    "Texas", "Colorado", "Utah", "New Mexico", "Arizona", "Nevada", "California"
+    "Alaska", "District of Columbia",
+    "Georgia", "Alabama", "Mississippi", "Arkansas",
+    "Indiana", "Illinois", "Iowa", "Missouri", "Kansas",
+    "Kentucky", "Tennessee",
+    "North Carolina", "Oklahoma", "South Carolina",
+    "Florida", "Louisiana", "Texas",
+    "Colorado", "Utah", "New Mexico", "Arizona", "Nevada", "California",
+    "Hawaii"
   ];
 
   var atlanticDrawOrder = ["North Atlantic", "Mid-Atlantic", "South Atlantic", "Straights of Florida"];

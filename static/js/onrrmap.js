@@ -54,8 +54,11 @@ $(document).ready(function() {
   // Default selected commodity
   var selectedCommodity = 'oil';
 
-  // these fixed color classes are from ColorBrewer: http://colorbrewer2.org/
-  var mapColors = ['rgb(255,247,243)','rgb(253,224,221)','rgb(252,197,192)','rgb(250,159,181)','rgb(247,104,161)','rgb(221,52,151)','rgb(174,1,126)','rgb(122,1,119)']; // ,'rgb(73,0,106)']
+  // these color classes are from ColorBrewer: http://colorbrewer2.org/
+  // var mapColors = "rgb(255,247,243) rgb(253,224,221) rgb(252,197,192) rgb(250,159,181) rgb(247,104,161) rgb(221,52,151) rgb(174,1,126) rgb(122,1,119)".split(" ");
+  // these color classes were generated using this nifty tool: http://jsfiddle.net/d6wXV/6/embedded/result/
+  var mapColors = "#fffcca #fee0ac #fcc297 #f7a38c #ec868c #d76d93 #b65a9e #8651a8".split(" ");
+  var NULL_COLOR = "#d8d8d8";
 
   /*
    * This is a quantized color, meaning that it will always return
@@ -64,15 +67,9 @@ $(document).ready(function() {
    * mapColorScale.domain([min, max]);
    * var color = mapColorScale(value);
    */
-  var mapColorScale = d3.scale.quantize()
-    .domain([0, 100])
+  var mapColorScale = d3.scale.threshold()
+    .domain([-1e6, 0, 1e4, 1e5, 1e6, 1e7, 1e8, 1e9])
     .range(mapColors);
-  //mapColorScale_limited cuts off the last color
-  //This color is reserved for the top commodity only
-  //This gives the rest of the colors a better scale
-  var mapColorScale_limited = d3.scale.quantize()
-    .domain([0, 100])
-    .range(mapColors.slice(0, mapColors.length - 1));
 
   // Create one div.step for each map color, and insert them
   // into #map-scale-pane > .map-scale
@@ -287,16 +284,28 @@ $(document).ready(function() {
   to draw the 3d effect.
   ***********************************/
   function setVariable(name) {
-    var range = ranges[name];
-    $('div.map-scale-min').html('$' + Math.floor(range.min).formatMoney(0, '.', ','));
-    $('div.map-scale-max').html('$' + range.trueMax.formatMoney(0, '.', ','));
+    var extent = d3.extent(mapColorScale.domain()),
+        suffixes = {
+          M: "million",
+          G: "billion",
+          T: "trillion"
+        },
+        format = function(n) {
+          var prefix = d3.formatPrefix(n);
+          if (prefix.symbol in suffixes) {
+            return [prefix.scale(n), suffixes[prefix.symbol]].join(" ");
+          } else {
+            return commaFormat(n);
+          }
+        };
+    $('div.map-scale-min').text(("$" + format(extent[0])).replace(/\$-/, "-$"));
+    $('div.map-scale-max').text("$" + format(extent[1]));
     $('#map-scale-pane > h1').html(selectedCommodity === 'wind' ? 'Revenues' : 'Royalties');
 
     // update the (input) domain of the color scale,
     // according to the new variable's range, affecting
     // subsequent calls to mapColorScale(value)
-    mapColorScale.domain([range.min, range.max]);
-    mapColorScale_limited.domain([range.min,range.max]);
+    // mapColorScale.domain([range.min, range.max]);
 
     for (var i = 0; i < dataLayers.length; i++) {
       dataLayers[i].eachLayer(updateLayerColor);
@@ -551,38 +560,35 @@ $(document).ready(function() {
   }
 
   function updateLayerColor(layer) {
-    var value = 0;
-    var name = selectedCommodity;
-    var max = mapColorScale.domain()[1];
-    if (layer.feature.properties.commodities) {
-      if (layer.feature.properties.commodities[name]) {
-        value = layer.feature.properties.commodities[name].revenue;
+    var revenue = NaN,
+        name = selectedCommodity,
+        commodities = layer.feature.properties.commodities;
+    if (commodities && commodities[name]) {
+      revenue = commodities[name].revenue;
+    }
+
+    var newColor = NULL_COLOR,
+        extent = d3.extent(mapColorScale.domain());
+    if (!isNaN(revenue)) {
+      if (revenue < extent[0]) {
+        newColor = mapColors[0];
+      } else if (revenue > extent[1]) {
+        newColor = mapColors[mapColors.length - 1];
+      } else {
+        newColor = mapColorScale(revenue);
       }
     }
 
-    var newColor;
-    if (value < 0) {
-      // FIXME should we use the color for the revenue value $1?
-      newColor = mapColorScale(1);
-    } else if (value > max) {
-      newColor = mapColorScale(value);
-    } else {
-      newColor = mapColorScale_limited(value);//use limited scale to avoid top color
-    }
-
-    var opacity = (value != 0) ? 1 : 0;
     layer.setStyle({
       fillColor: newColor,
-      fillOpacity: opacity,
-      weight: 0.5,
-      data_revenue: value
+      fillOpacity: 1,
+      weight: 0.5
     });
 
     // update the stacked paths as well
     getLayerContainers(layer)
       .selectAll("path.stack")
         .attr("stroke-weight", 0.5)
-        .attr("fill-opacity", opacity)
         .attr("fill", newColor);
   }
 
@@ -594,6 +600,9 @@ $(document).ready(function() {
     mapScaleSteps
       .attr("title", function(color, i) {
         var extent = mapColorScale.invertExtent(color);
+        if (i === 0 && !isFinite(extent[0])) {
+          return dollarFormat(extent[1]) + " or less";
+        }
         return extent.map(dollarFormat).join(" - ");
       });
   }

@@ -318,8 +318,9 @@ $(document).ready(function() {
           parent = d3.select(first.parentNode)
             .append("g")
               .datum(feature)
-              .attr("tabindex", 1)
+              .attr("tabindex", 0)
               .attr("aria-label", name)
+              .attr("aria-describedby","map-info-pane")
               .on("focus", function() {
                 mouseover({target: layer});
               })

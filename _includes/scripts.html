@@ -211,7 +211,7 @@
   /*********************\
       Table Sorting
   \*********************/
-  $('table thead tr th a').each(function(){
+  $('table thead tr th div a').each(function(){
     $(this).click(function(){
       var table;
       var data = $(this).attr('data-value').split(',');
@@ -223,8 +223,8 @@
       sort_dataTable(table,data[0],sort);
 
       //Remove arrows
-      var $parent = $(this).parent().parent();
-      $('th a i', $parent).each(function(){
+      var $parent = $(this).parent().parent().parent();
+      $('th div a i', $parent).each(function(){
         $(this).removeClass('fa-chevron-down');
         $(this).removeClass('fa-chevron-up');
       });

@@ -46,14 +46,14 @@ d3.csv("../static/data/CY13_Revenues_by_Company.csv",function(resource_data){
     });
     
     if (companyPage)
-        {
-            companyDimension.filter(function(d){
-            if (d == QueryString.company)
-                return true;
-            else 
-                return false;
-            });
-        }
+    {
+        companyDimension.filter(function(d){
+        if (d == QueryString.company)
+            return true;
+        else 
+            return false;
+        });
+    }
 
     typeDimension = ndx.dimension(function(d) {
         return d["Commodity"];
@@ -362,7 +362,7 @@ d3.csv("../static/data/CY13_Revenues_by_Company.csv",function(resource_data){
     dash_bar_rev_by_commodity_group.on("filtered", function (chart) {
                 dc.events.trigger(function () {
                 });});
-    dash_bar_rev_by_commodity_group.filter = function(){};
+    dash_bar_rev_by_commodity_group.filter = function(){};//disables filter on bar select
     /*****************************
     End: dash_bar_rev_by_commodity
     *****************************/
@@ -399,7 +399,7 @@ d3.csv("../static/data/CY13_Revenues_by_Company.csv",function(resource_data){
     dash_bar_rev_by_revenue_type_oil_and_gas.on("filtered", function (chart) {
                 dc.events.trigger(function () {
                 });});
-    dash_bar_rev_by_revenue_type_oil_and_gas.filter = function(){};
+    dash_bar_rev_by_revenue_type_oil_and_gas.filter = function(){};//disables filter on bar select
 
     dash_bar_rev_by_revenue_type_renewables
         .width(graphs_width).height(graphs_height)
@@ -423,7 +423,7 @@ d3.csv("../static/data/CY13_Revenues_by_Company.csv",function(resource_data){
         .y(d3.scale.log().nice().domain([1, 12500000000]))
         .margins(graphs_margins)
         .yAxis().tickFormat(function(v){return text_money(v,false,true)});
-    dash_bar_rev_by_revenue_type_renewables.filter = function(){};
+    dash_bar_rev_by_revenue_type_renewables.filter = function(){};//disables filter on bar select
 
     dash_bar_rev_by_revenue_type_coal
         .width(graphs_width).height(graphs_height)
@@ -443,7 +443,7 @@ d3.csv("../static/data/CY13_Revenues_by_Company.csv",function(resource_data){
         .y(d3.scale.log().nice().domain([1, 12500000000]))
         .margins(graphs_margins)
         .yAxis().tickFormat(function(v){return text_money(v,false,true)});
-    dash_bar_rev_by_revenue_type_coal.filter = function(){};
+    dash_bar_rev_by_revenue_type_coal.filter = function(){};//disables filter on bar select
 
     dash_bar_rev_by_revenue_type_other
         .width(graphs_width).height(graphs_height)
@@ -463,7 +463,7 @@ d3.csv("../static/data/CY13_Revenues_by_Company.csv",function(resource_data){
         .y(d3.scale.log().nice().domain([1, 12500000000]))
         .margins(graphs_margins)
         .yAxis().tickFormat(function(v){return text_money(v,false,true)});
-    dash_bar_rev_by_revenue_type_other.filter = function(){};
+    dash_bar_rev_by_revenue_type_other.filter = function(){};//disables filter on bar select
         
     
     dash_bar_rev_by_revenue_type_renewables.on("filtered", function (chart) {
@@ -764,8 +764,17 @@ var graphCustomizations = function() {
         .style("stroke", "#272727")
 
     d3.selectAll("#dashboard-bar-rev-by-commodity-group .bar").call(resources_barTip);
-    d3.selectAll("#dashboard-bar-rev-by-commodity-group .bar").on('mouseover', resources_barTip.show)
-        .on('mouseout', resources_barTip.hide);
+    
+    var commodityBars = d3.selectAll("#dashboard-bar-rev-by-commodity-group .bar")
+        .attr('tabindex',function(d){if (d.y != 0) return '0'; else return '-1';})
+        .attr('aria-label',function(d){
+            return d.x + " " + d.layer + " revenues of " + d.y;
+        })
+        .on('mouseover', resources_barTip.show)
+        .on('mouseout', resources_barTip.hide)
+        .on('focus',resources_barTip.show)
+        .on('blur',resources_barTip.hide);
+
     var a=['#dashboard-bar-rev-by-revenue-type-oil-and-gas',
             '#dashboard-bar-rev-by-revenue-type-renewables',
             '#dashboard-bar-rev-by-revenue-type-coal',

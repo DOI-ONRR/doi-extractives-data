@@ -52,7 +52,9 @@ permalink: /documentation/
 
   <h3>Why are some values negative?</h3>
 
-  <p>This data is summarized based on accounting date (which is the date the revenue was reported to and accepted into ONRR’s financial system). Since companies can adjust and correct data up to seven years after a transaction takes place, this accounting year data includes corrections for sales that took place in previous years. This type of data is therefore most useful when analyzing dollars ONRR collected and disbursed in a given year. It also includes any values that are negative in 2013 because of corrections to previous information.</p>
+  {% for term in site.data.terms %} {% if term.term == "negative values" %}
+    <p>{{ term.definition }}</p> 
+  {% endif %} {% endfor %}
 
   <h3>Why is there a Gas value, an Oil value and an Oil & Gas value?</h3>
 
@@ -144,7 +146,9 @@ permalink: /documentation/
 
   <h3>Why are some values negative?</h3>
 
-  <p>This data is summarized based on accounting date (which is the date the revenue was reported to and accepted into ONRR’s financial system). Since companies can adjust and correct data up to seven years after a transaction takes place, this accounting year data includes corrections for sales that took place in previous years. This type of data is therefore most useful when analyzing dollars ONRR collected and disbursed in a given year. It also includes any values that are negative in 2013 because of corrections to previous information.</p>
+  {% for term in site.data.terms %} {% if term.term == "negative values" %}
+    <p>{{ term.definition }}</p> 
+  {% endif %} {% endfor %}
 
   <h3>Why is there a Gas value, an Oil value and an Oil & Gas value?</h3>
 
@@ -253,7 +257,9 @@ permalink: /documentation/
 
   <h3>Why are some values negative?</h3>
 
-  <p>This data is summarized based on accounting date (which is the date the revenue was reported to and accepted into ONRR’s financial system). Since companies can adjust and correct data up to seven years after a transaction takes place, this accounting year data includes corrections for sales that took place in previous years. This type of data is therefore most useful when analyzing dollars ONRR collected and disbursed in a given year. It also includes any values that are negative in 2013 because of corrections to previous information.</p>
+  {% for term in site.data.terms %} {% if term.term == "negative values" %}
+    <p>{{ term.definition }}</p> 
+  {% endif %} {% endfor %}
 
   <h3>Why is there a Gas value, an Oil value and an Oil & Gas value?</h3>
 

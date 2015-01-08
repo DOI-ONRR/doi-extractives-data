@@ -154,6 +154,7 @@ d3.csv("static/data/2003-2013-royalty-data.csv",function(resource_data){
 			$(this).keypress(function(event){
 				if (event.charCode == 13 || event.charCode == 32)
                 {
+         
                 	lastSelectedBarSection = $(this).attr('data-year');
                 	barChart.filter(lastSelectedBarSection);
                 	dc.redrawAll();

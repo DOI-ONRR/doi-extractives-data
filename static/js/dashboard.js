@@ -781,8 +781,15 @@ var graphCustomizations = function() {
             '#dashboard-bar-rev-by-revenue-type-other'];
     for (var i=0;i<a.length;i++){
          d3.selectAll(a[i]+" .bar").call(commodities_barTip);
-         d3.selectAll(a[i]+" .bar").on('mouseover', commodities_barTip.show)
-            .on('mouseout', commodities_barTip.hide);
+         d3.selectAll(a[i]+" .bar")
+            .attr('tabindex',function(d){if (d.y != 0) return '0'; else return '-1';})
+            .attr('aria-label',function(d){
+                return d.x + " " + d.layer + " revenues of " + d.y;
+            })
+            .on('mouseover', commodities_barTip.show)
+            .on('mouseout', commodities_barTip.hide)
+            .on('focus',resources_barTip.show)
+            .on('blur',resources_barTip.hide);
     }
     var splitColors = ['#b6bf38','#798025'];
     d3.select('#dashboard-bar-rev-by-revenue-type-renewables .dc-legend .dc-legend-item')

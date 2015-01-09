@@ -326,7 +326,7 @@ div.skip-nav a {
 // Vertical nav tooltips
 //============================================
 
-$tooltip-background: $medium-gray;
+$tooltip-background: $dark-light-gray;
 $tooltip-color: $base-font-color;
 $tooltip-width: 160px;
 $tooltip-width: 10rem;
@@ -748,7 +748,7 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
   .bubbles-instructions {
     margin-top: 0;
     line-height: 1.2;
-    color: $mid-gray;
+    color: $light-mid-gray; 
     font-family: $base-font-family;
     //font-style: italic;
     font-weight: 300;
@@ -823,9 +823,9 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
     fill: white;
   }
   &.default-display {
-    color: $mid-gray;
+    color: $light-mid-gray;
     .icons .icon {
-      fill: $mid-gray;
+      fill: $light-mid-gray;
     }
   }
 }
@@ -1159,7 +1159,7 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
   }
   padding: 10px;
   line-height: 1.1;
-  background-color: $dark-medium-gray;
+  background-color: $dark-light-gray;
   border: 1px solid $dark-gray;
   z-index: 10000;
   h1 {
@@ -1235,7 +1235,7 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
       width: 75px;
       height: 75px;
     }
-    background-color: $dark-medium-gray;
+    background-color: $dark-light-gray;
     border: 1px solid black;
     color: black;
     transition: none;
@@ -1337,7 +1337,7 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
     bottom: 35px;
   }
   padding: 3px;
-  background-color: $dark-medium-gray;
+  background-color: $dark-light-gray;
   border: 1px solid $dark-gray;
   z-index: 999;
   h1 {
@@ -1683,7 +1683,7 @@ $max-width: 100%; //this is setting the width of outer-container.
   top: 4px;
   right: 5px;
   a i {
-    color: $medium-gray;
+    color: $dark-light-gray;
     &:hover,
     &:focus {
       color: white;
@@ -2010,9 +2010,9 @@ $dashboard-height: 400px;
   margin-right: 20px;
   margin-bottom: 20px;
   padding-right: 10px;
-  color: lighten($mid-gray, 25%);
+  color: $light-mid-gray;
   @include rem-fallback(font-size, 0.8);
-  border: 1px solid lighten($mid-gray, 25%);
+  border: 1px solid $light-mid-gray;
   text-decoration: none;
   &:hover, &:focus {
     color: white;
@@ -2027,7 +2027,7 @@ $dashboard-height: 400px;
     margin-right: 6px;
     padding-top: 3px;
     text-align: center;
-    background-color: lighten($mid-gray, 25%);
+    background-color: $light-mid-gray;
     color: $almost-black;
     @include rem-fallback(font-size, 1);
   }
@@ -2225,7 +2225,7 @@ text.x-axis-label{
     border-bottom: 3px solid black;
     border-left: 1px solid black;
     &:hover {
-      border-color: $medium-gray;
+      border-color: $dark-light-gray;
     }
     &:focus {
       border-color: $useiti-red;

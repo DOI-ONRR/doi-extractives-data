@@ -720,7 +720,7 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
     a {
       padding: 5px 13px 17px 13px;
       font-weight: 200;
-      color: black;
+      color: $dark-light-gray;
       text-decoration: none;
       &:hover,
       &:focus {

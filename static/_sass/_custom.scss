@@ -1797,7 +1797,6 @@ $dashboard-height: 400px;
     }
     &:hover,
     &:focus {
-      color: black;
       > div {
         background-color: darken($mid-gray, 10%);  
       }

@@ -805,7 +805,7 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
         color: $useiti-green;
       }
       &.offshore {
-        color: $useiti-blue; 
+        color: #3aa7d6; //slightly lighter $useiti-blue for better readability 
       }
     }
   }

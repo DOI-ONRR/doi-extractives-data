@@ -82,7 +82,7 @@ sub {
 ul.menu a.active li {
   border-bottom: 3px solid $useiti-red;
   &:hover, &:focus {
-    color: white;
+    color: $dark-gray;
   }
 }
 
@@ -172,7 +172,7 @@ div.skip-nav a {
     color: black;
     text-decoration: none;
     &:hover, &:focus {
-      color: white;
+      color: $dark-gray;
     }
   }
   form {

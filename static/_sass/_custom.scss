@@ -1610,7 +1610,7 @@ $max-width: 100%; //this is setting the width of outer-container.
       }
       font-weight: 300;
       text-decoration: none;
-      color: black;
+      color: $dark-light-gray;
       &:hover,
       &:focus {
         text-decoration: underline;

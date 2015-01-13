@@ -1660,6 +1660,20 @@ $max-width: 100%; //this is setting the width of outer-container.
 
 .table-search-container {
   position: relative;
+  ::-webkit-input-placeholder { /* WebKit browsers */
+    color: $light-gray;
+  }
+  :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: $light-gray;
+    opacity:  1;
+  }
+  ::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: $light-gray;
+    opacity: 1;
+  }
+  :-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: $light-gray;
+  }
 }
 
 .table-search-reset {

@@ -1526,7 +1526,7 @@ article {
     div > h1 {
       font-family: $secondary-font-family;
       color: $dark-gray;
-      @include rem-fallback(font-size, 1.3);
+      @include rem-fallback(font-size, 1.4);
       font-weight: 300;
     }
   }

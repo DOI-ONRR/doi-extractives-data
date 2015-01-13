@@ -663,7 +663,7 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
   h1 {
     font-family: $base-font-family;
     font-weight: 200;
-    @include rem-fallback(font-size, 1.5);
+    @include rem-fallback(font-size, 1.4);
     span {
       font-weight: 300;
       @include rem-fallback(font-size, 1.7);

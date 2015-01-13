@@ -1392,11 +1392,6 @@ article {
     margin-bottom: 13.5px;
   }
   .sectors-page {
-    // p,
-    // ul li,
-    // ol li {
-    //   font-weight: 300;
-    // }
     ul li {
       @include rem-fallback(font-size, 1);
       margin-bottom: 3px;
@@ -2111,12 +2106,6 @@ text.x-axis-label{
       list-style-type: disc;
       margin-left: 20px;
     }
-  }
-  span {
-    font-weight: 300;
-  }
-  .term-tooltip {
-    font-weight: 200;
   }
 }
 

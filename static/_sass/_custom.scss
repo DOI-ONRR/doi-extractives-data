@@ -591,10 +591,6 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
   }
 }
 
-.sectors-splash-text {
-  font-weight: 400;
-}
-
 .sectors-big-text {
   @include rem-fallback(font-size, 1.4);
   font-family: $secondary-font-family;

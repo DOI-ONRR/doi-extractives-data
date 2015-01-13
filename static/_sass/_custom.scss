@@ -362,7 +362,7 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
       line-height: 1;
     }
     &:after {
-      @include position(absolute, -2px 0 0 152px);
+      @include position(absolute, -4px 0 0 151px);
       border: $tooltip-arrow-width solid transparent;
       color: $tooltip-background;
       text-shadow: $tooltip-shadow;

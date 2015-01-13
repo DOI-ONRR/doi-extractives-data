@@ -52,7 +52,9 @@ $(document).ready(function() {
   // these color classes are from ColorBrewer: http://colorbrewer2.org/
   // var mapColors = "rgb(255,247,243) rgb(253,224,221) rgb(252,197,192) rgb(250,159,181) rgb(247,104,161) rgb(221,52,151) rgb(174,1,126) rgb(122,1,119)".split(" ");
   // these color classes were generated using this nifty tool: http://jsfiddle.net/d6wXV/6/embedded/result/
-  var mapColors = "#fffcca #fee0ac #fcc297 #f7a38c #ec868c #d76d93 #b65a9e #8651a8".split(" ");
+ // var mapColors = "#fffcca #fee0ac #fcc297 #f7a38c #ec868c #d76d93 #b65a9e #8651a8".split(" ");
+ // var mapColors = "#ffb048 #ff9756 #ff8167 #f96f7a #e6638c #cb5e9a #aa5ca4 #835ca7".split(" "); //test with similar colors as above but slightly richer
+  var mapColors = "#ffe77e #ddd271 #bdbd64 #9fa859 #83934e #697e43 #516938 #3b552d".split(" "); //test with green to yellow
   var NULL_COLOR = "#d8d8d8";
 
   /*
@@ -348,7 +350,7 @@ $(document).ready(function() {
 
     var layer = e.target;
     // setStrokeWeight(layer, '3.0');
-    setFillColor(layer, '#D8D8D8'); // XXX magic color
+    setFillColor(layer, '#9a9a9a'); // XXX magic color
 
     var revenueString = (function() {
       var selected;

@@ -1714,6 +1714,23 @@ $dashboard-height: 400px;
   }
   table {
     @include rem-fallback(font-size, 0.8);
+    width: 95%;
+  }
+  table:nth-child(1) {
+    th:nth-child(1) {
+      width: 70%;
+    }
+    td:nth-child(2){
+      text-align: right;
+    }
+  }
+  table:nth-child(2){
+    th:nth-child(1) {
+      width: 40%;
+    }
+    td:nth-child(4){
+      text-align: right;
+    }
   }
 }
 
@@ -1759,6 +1776,19 @@ $dashboard-height: 400px;
       text-align: left;
       padding-left: 5px;
       margin-left: -5px;
+      float: right;
+      
+}
+.th-inner-right {/*Used for the TH over revenue*/
+      position: absolute;
+      top: 0;
+      line-height: 15px; /* height of header */
+      text-align: left;
+      padding-left: 5px;
+      margin-left: -5px;
+      padding-right: 15px;
+      float: right;
+      right: 0;
       
 }
 .header-background {

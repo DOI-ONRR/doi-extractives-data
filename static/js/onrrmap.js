@@ -52,7 +52,8 @@ $(document).ready(function() {
   // these color classes are from ColorBrewer: http://colorbrewer2.org/
   // var mapColors = "rgb(255,247,243) rgb(253,224,221) rgb(252,197,192) rgb(250,159,181) rgb(247,104,161) rgb(221,52,151) rgb(174,1,126) rgb(122,1,119)".split(" ");
   // these color classes were generated using this nifty tool: http://jsfiddle.net/d6wXV/6/embedded/result/
-  var mapColors = "#fffcca #fee0ac #fcc297 #f7a38c #ec868c #d76d93 #b65a9e #8651a8".split(" ");
+ // var mapColors = "#fffcca #fee0ac #fcc297 #f7a38c #ec868c #d76d93 #b65a9e #8651a8".split(" ");
+  var mapColors = "#ffe77e #ddd271 #bdbd64 #9fa859 #83934e #697e43 #516938 #3b552d".split(" "); //test with green to yellow
   var NULL_COLOR = "#d8d8d8";
 
   /*
@@ -70,19 +71,53 @@ $(document).ready(function() {
   // into #map-scale-pane > .map-scale
   var mapScaleSteps = d3.select("#map-scale-pane .map-scale")
     .selectAll("div.step")
-    .data(mapColors)
+    .data(mapColors.map(function(color, i) {
+      return {
+        color: color,
+        index: i
+      };
+    }))
     .enter()
     .append("div")
       .attr("class", "step")
-      .style("background", function(d) { return d; })
+      .style("background", function(d) { return d.color; })
       .style("width", (100 / mapColors.length).toFixed(3) + "%");
   // (their width is 100% / the number of colors)
 
   // dollar formatting (for color step HTML titles)
-  var commaFormat = d3.format(",");
-  var dollarFormat = function(dollars) {
-    return ("$" + commaFormat(~~dollars)).replace(/^\$-/, "-$");
-  };
+  var commaFormat = d3.format(","),
+      dollarFormat = function(dollars) {
+        return ("$" + commaFormat(~~dollars)).replace(/^\$-/, "-$");
+      },
+      scaleLabelFormat = (function() {
+        var suffixes = {
+          M: "million",
+          G: "billion",
+          T: "trillion"
+        };
+        return function scaleLabelFormat(n) {
+          var prefix = d3.formatPrefix(n);
+          if (prefix.symbol in suffixes) {
+            return [prefix.scale(n), suffixes[prefix.symbol]].join(" ");
+          } else {
+            return commaFormat(n);
+          }
+        };
+      })();
+
+  mapScaleSteps
+    .filter(function(d, i) {
+      return i === 0 || i === (mapColors.length - 1);
+    })
+    .classed("has-label", true)
+    .append("span")
+      .attr("class", "label")
+      .text(function(d, i) {
+        var color = d.color,
+            index = i ? d.index : d.index + 1,
+            value = mapColorScale.domain()[index];
+        return "$" + scaleLabelFormat(value);
+      });
 
   var redrawTimeout,
       deferredRedraw = function() {
@@ -203,7 +238,8 @@ $(document).ready(function() {
     }
 
     var layer = L.geoJson(entry.data, {
-      onEachFeature: onEachFeature
+      onEachFeature: onEachFeature,
+      color: '#272727'
     })
     .addTo(mapdataviz);
 
@@ -255,22 +291,11 @@ $(document).ready(function() {
   to draw the 3d effect.
   ***********************************/
   function setVariable(name) {
-    var extent = d3.extent(mapColorScale.domain()),
-        suffixes = {
-          M: "million",
-          G: "billion",
-          T: "trillion"
-        },
-        format = function(n) {
-          var prefix = d3.formatPrefix(n);
-          if (prefix.symbol in suffixes) {
-            return [prefix.scale(n), suffixes[prefix.symbol]].join(" ");
-          } else {
-            return commaFormat(n);
-          }
-        };
-    $('div.map-scale-min').text(("$" + format(extent[0])).replace(/\$-/, "-$"));
-    $('div.map-scale-max').text("$" + format(extent[1]));
+    /*
+    var extent = d3.extent(mapColorScale.domain());
+    $('div.map-scale-min').text(("$" + scaleLabelFormat(extent[0])).replace(/\$-/, "-$"));
+    $('div.map-scale-max').text("$" + scaleLabelFormat(extent[1]));
+    */
     $('#map-scale-pane > h1').html(selectedCommodity === 'wind' ? 'Revenues' : 'Royalties');
 
     // update the (input) domain of the color scale,
@@ -348,7 +373,7 @@ $(document).ready(function() {
 
     var layer = e.target;
     // setStrokeWeight(layer, '3.0');
-    setFillColor(layer, '#D8D8D8'); // XXX magic color
+    setFillColor(layer, '#9a9a9a'); // XXX magic color
 
     var revenueString = (function() {
       var selected;
@@ -570,8 +595,8 @@ $(document).ready(function() {
    */
   function updateMapScale() {
     mapScaleSteps
-      .attr("title", function(color, i) {
-        var extent = mapColorScale.invertExtent(color);
+      .attr("title", function(d, i) {
+        var extent = mapColorScale.invertExtent(d.color);
         if (i === 0 && !isFinite(extent[0])) {
           return dollarFormat(extent[1]) + " or less";
         }

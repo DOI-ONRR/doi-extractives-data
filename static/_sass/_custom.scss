@@ -1346,11 +1346,52 @@ $tooltip-arrow-distance-from-box: -$tooltip-arrow-width * 3.4;
     width: 250px;
     height: 20px;
     border: 1px solid black;
+    margin-bottom: 1.7em;
+
     div.step {
       display: inline-block;
       height: 100%;
+      position: relative;
     }
+
+    div.step .label {
+      position: absolute;
+      top: 100%;
+      margin-top: 5px;
+      width: 6em;
+      white-space: nowrap;
+    }
+
+    div.step:first-child .label {
+      left: 100%;
+      margin-left: -3em;
+      text-align: center;
+    }
+
+    div.step:last-child .label {
+      right: 0;
+      text-align: right;
+    }
+
+    div.step.has-label:after {
+      content: " ";
+      display: block;
+      position: absolute;
+      height: 25px;
+      width: 1px;
+      background: #000;
+    }
+
+    div.step.has-label:first-child:after {
+      right: 0;
+    }
+
+    div.step.has-label:last-child:after {
+      left: 0;
+    }
+
   }
+
   div.map-scale-min {
     float: left;
   }
@@ -2308,7 +2349,7 @@ text.x-axis-label{
 }
 
 .footer-column {
-@include span-columns(12);
+  @include span-columns(12);
   @include respond-to(small-up) {
     @include span-columns(6);
   }

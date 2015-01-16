@@ -87,15 +87,17 @@
     <div id='map-scale-pane'>
       <h1>Royalties</h1>
       <div class="map-scale"></div>
-      <div class="map-scale-min">$1000</div>
-      <div class="map-scale-max">$20000</div>
+      <!--
+      <div class="map-scale-min">$X</div> <sup>7</sup>
+      <div class="map-scale-max">$Y</div>
+      -->
     </div>
       
   </div>
 
   <div class="container map-notes">
     <h1>Map notes.</h1>
-    <p>Calendar year 2013 data. Map data available <a href="{{ site.baseurl }}/data/#location">here</a>. Learn about negative values in this data under 'negative values' in <a href="{{ site.baseurl }}/documentation/#location">our terms list</a>.</p>
+    <p>Calendar year 2013 data. Map data available <a href="{{ site.baseurl }}/data/#location">here</a>.</p>
     <ol>
       <li><span>Oil.</span> 
         {% for term in site.data.terms %} {% if term.term == "royalty" %}
@@ -112,13 +114,13 @@
           <span class="term-tooltip" title="{{ term.definition }}" tabindex="0" role="tooltip">Royalties.<i class="fa fa-question"></i></span>
         {% endif %} {% endfor %}
         Includes various processed and unprocessed coal products such as anthracite, bituminous, subbituminous, and lignite.</li>
-    </ol>
-    <ol start="4">
       <li><span>Other.</span> 
         {% for term in site.data.terms %} {% if term.term == "royalty" %}
           <span class="term-tooltip" title="{{ term.definition }}" tabindex="0" role="tooltip">Royalties.<i class="fa fa-question"></i></span>
         {% endif %} {% endfor %}
         Includes a wide variety of solid minerals and other products such as carbon dioxide, phosphate, soda ash, salt, potash, and langbeinite.</li>
+    </ol>
+    <ol start="5">
       <li><span>Wind.</span> 
         {% for term in site.data.terms %} {% if term.term == "bonus" %}
           <span class="term-tooltip" title="{{ term.definition }}" tabindex="0" role="tooltip">Bonus<i class="fa fa-question"></i></span>
@@ -133,6 +135,10 @@
           <span class="term-tooltip" title="{{ term.definition }}" tabindex="0" role="tooltip">Royalties.<i class="fa fa-question"></i></span>
         {% endif %} {% endfor %}
         Includes royalties from geothermal electrical generation and the resulting byproducts.</li>
+      <li><span>Negative values.</span> 
+        {% for term in site.data.terms %} {% if term.term == "negative values" %}
+          {{ term.definition }}
+        {% endif %} {% endfor %}</li>
     </ol>
   </div>
 

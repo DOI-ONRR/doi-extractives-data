@@ -71,19 +71,53 @@ $(document).ready(function() {
   // into #map-scale-pane > .map-scale
   var mapScaleSteps = d3.select("#map-scale-pane .map-scale")
     .selectAll("div.step")
-    .data(mapColors)
+    .data(mapColors.map(function(color, i) {
+      return {
+        color: color,
+        index: i
+      };
+    }))
     .enter()
     .append("div")
       .attr("class", "step")
-      .style("background", function(d) { return d; })
+      .style("background", function(d) { return d.color; })
       .style("width", (100 / mapColors.length).toFixed(3) + "%");
   // (their width is 100% / the number of colors)
 
   // dollar formatting (for color step HTML titles)
-  var commaFormat = d3.format(",");
-  var dollarFormat = function(dollars) {
-    return ("$" + commaFormat(~~dollars)).replace(/^\$-/, "-$");
-  };
+  var commaFormat = d3.format(","),
+      dollarFormat = function(dollars) {
+        return ("$" + commaFormat(~~dollars)).replace(/^\$-/, "-$");
+      },
+      scaleLabelFormat = (function() {
+        var suffixes = {
+          M: "million",
+          G: "billion",
+          T: "trillion"
+        };
+        return function scaleLabelFormat(n) {
+          var prefix = d3.formatPrefix(n);
+          if (prefix.symbol in suffixes) {
+            return [prefix.scale(n), suffixes[prefix.symbol]].join(" ");
+          } else {
+            return commaFormat(n);
+          }
+        };
+      })();
+
+  mapScaleSteps
+    .filter(function(d, i) {
+      return i === 0 || i === (mapColors.length - 1);
+    })
+    .classed("has-label", true)
+    .append("span")
+      .attr("class", "label")
+      .text(function(d, i) {
+        var color = d.color,
+            index = i ? d.index : d.index + 1,
+            value = mapColorScale.domain()[index];
+        return "$" + scaleLabelFormat(value);
+      });
 
   var redrawTimeout,
       deferredRedraw = function() {
@@ -257,22 +291,11 @@ $(document).ready(function() {
   to draw the 3d effect.
   ***********************************/
   function setVariable(name) {
-    var extent = d3.extent(mapColorScale.domain()),
-        suffixes = {
-          M: "million",
-          G: "billion",
-          T: "trillion"
-        },
-        format = function(n) {
-          var prefix = d3.formatPrefix(n);
-          if (prefix.symbol in suffixes) {
-            return [prefix.scale(n), suffixes[prefix.symbol]].join(" ");
-          } else {
-            return commaFormat(n);
-          }
-        };
-    $('div.map-scale-min').text(("$" + format(extent[0])).replace(/\$-/, "-$"));
-    $('div.map-scale-max').text("$" + format(extent[1]));
+    /*
+    var extent = d3.extent(mapColorScale.domain());
+    $('div.map-scale-min').text(("$" + scaleLabelFormat(extent[0])).replace(/\$-/, "-$"));
+    $('div.map-scale-max').text("$" + scaleLabelFormat(extent[1]));
+    */
     $('#map-scale-pane > h1').html(selectedCommodity === 'wind' ? 'Revenues' : 'Royalties');
 
     // update the (input) domain of the color scale,
@@ -572,8 +595,8 @@ $(document).ready(function() {
    */
   function updateMapScale() {
     mapScaleSteps
-      .attr("title", function(color, i) {
-        var extent = mapColorScale.invertExtent(color);
+      .attr("title", function(d, i) {
+        var extent = mapColorScale.invertExtent(d.color);
         if (i === 0 && !isFinite(extent[0])) {
           return dollarFormat(extent[1]) + " or less";
         }

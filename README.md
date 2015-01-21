@@ -39,6 +39,13 @@ If you are not familiar with how to work with Bourbon and Neat, visit their webs
 
 To keep our code updating continuously as we edit, we use `jekyll serve --baseurl '' --watch`. As of Jekyll 2.2.0, [gh-pages compiles Sass natively](https://github.com/blog/1867-github-pages-now-runs-jekyll-2-2-0).
 
+##Roadmap
+
+Broadly, we are working now on:
+* Exploring how lease contract information and data can be integrated into the site in a way that meets user needs
+* Exploring how production data can be added to the site in a way that meets user needs
+* Develop site information architecture so that it is clear that it is a part of USEITI, can accomodate new datasets and has a stronger 'why you're here and why you should care' message
+* Reaching out to users to see how we did with the Beta, and learn from them where to head next
 
 ##Contributing
 

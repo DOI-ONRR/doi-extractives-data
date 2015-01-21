@@ -41,8 +41,8 @@
     });
   });
   $(document).ready(function() {
-    Tipped.create('.term-tooltip', { 
-      position: 'topright', 
+    Tipped.create('.term-tooltip', {
+      position: 'topright',
       radius: false,
       maxWidth: 200,
       offset: { y: 5 },
@@ -134,7 +134,7 @@
               $("#first").removeClass('scroll_item_active');
               $("#third").removeClass('scroll_item_active');
               $("#fourth").removeClass('scroll_item_active');
-              
+
           }
           if ($("#third1").offset().top < $(window).scrollTop() + 150) {
               $("#third").addClass('scroll_item_active');
@@ -174,7 +174,7 @@
 {% if page.title == "Data" %}
   <script src='{{ site.baseurl }}/static/js/dashboard.js'></script>
   <script type="text/javascript">
-   
+
   /*****************\
      Tab Switching
   \*****************/
@@ -211,7 +211,7 @@
   /*********************\
       Table Sorting
   \*********************/
-  $('table thead tr th a').each(function(){
+  $('table thead tr th div a').each(function(){
     $(this).click(function(){
       var table;
       var data = $(this).attr('data-value').split(',');
@@ -219,19 +219,19 @@
         table = dashTable;
       else
         table = dashTotalsTable;
-      var sort = $(this).children('i').hasClass('fa-chevron-down') ? d3.descending : d3.ascending; 
+      var sort = $(this).children('i').hasClass('fa-chevron-down') ? d3.descending : d3.ascending;
       sort_dataTable(table,data[0],sort);
 
       //Remove arrows
-      var $parent = $(this).parent().parent();
-      $('th a i', $parent).each(function(){
+      var $parent = $(this).parent().parent().parent();
+      $('th div a i', $parent).each(function(){
         $(this).removeClass('fa-chevron-down');
         $(this).removeClass('fa-chevron-up');
       });
       //Add Arrow
       if (table.order()==d3.ascending)
         $('i',$(this)).addClass('fa-chevron-down');
-      else 
+      else
         $('i',$(this)).addClass('fa-chevron-up');
     })
   });
@@ -267,7 +267,7 @@
   \*****************/
   $(document).ready(function(){
     $('section#tab-select a').each(function(index){
-      
+
       $(this).click(function(){
         $('#tab-select a').each(function(){
           $(this).removeClass('active');
@@ -336,14 +336,17 @@ $(document).ready(function(){
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
   ga('create', 'UA-48605964-8', 'gsa.gov');
 
   // anonymize user IPs (chops off the last IP triplet)
   ga('set', 'anonymizeIp', true);
 
+  // forces SSL even if the page were somehow loaded over http://
+  ga('set', 'forceSSL', true);
+
   ga('send', 'pageview');
 </script>
 
-<!-- Digital Analytics Program roll-up -->
-<script id="_fed_an_ua_tag" src="https://dvs6mwdoj87wa.cloudfront.net/dap-1.0.min.js"></script>
+<!-- Digital Analytics Program roll-up, see the data at https://analytics.usa.gov -->
+<script id="_fed_an_ua_tag" src="https://analytics.usa.gov/dap/dap.min.js"></script>

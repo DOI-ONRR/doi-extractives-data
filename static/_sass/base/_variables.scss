@@ -34,29 +34,23 @@ $header-line-height: $base-font-size * 1.25;
 $base-border-radius: rem(3);
 
 // Colors
-$blue: #7ea0b7;
-$dark-gray: #4d4b4b;
-$dark-medium-gray: #d8d8d8;
-$medium-gray: #bcbfc4;
 $light-gray: #eaedf1;
-$light-red: #FBE3E4;
-$light-yellow: #FFF6BF;
-$light-green: #E6EFC2;
-
+$dark-light-gray: #d8d8d8;
+$light-mid-gray: #9a9a9a; //used to improve color contrast in text on dark backgrounds
 $mid-gray: #5a5a5a;
+$dark-gray: #4d4b4b;
 $deep-gray: #313131;
 $almost-black: #272727;
+
 $useiti-red: #d54740;
-$useiti-green: #9fa731;
+$useiti-green: #8e9618; //#9fa731; <-- original color. changed for better contrast with white text.
 $useiti-blue: #3397c2;
 $useiti-purple: #865daa;
 
-$deep-purple: #452941;
-$purple0: #653c5f;
-$purple1: #7f5078;
-$purple2: #9b6a94;
-$purple3: #b282ab;
-$purple4: #b694b1;
+$blue: #7ea0b7; //for usa bug; may remove or refactor into standard color
+$light-red: #FBE3E4; //for Bourbon
+$light-yellow: #FFF6BF; //for Bourbon
+$light-green: #E6EFC2; //for Bourbon
 
 // Background Color
 $base-background-color: $deep-gray;
@@ -67,7 +61,7 @@ $base-accent-color: $blue;
 
 // Link Colors
 $base-link-color: $base-font-color;
-$hover-link-color: $useiti-red;
+$hover-link-color: #bf4039; //slightly darker $useiti-red for improved readability
 $base-button-color: $base-link-color;
 $hover-button-color: $hover-link-color;
 

@@ -43,6 +43,7 @@ GEM
     jekyll-paginate (1.1.0)
     jekyll-sass-converter (1.2.1)
       sass (~> 3.2)
+    jekyll-sitemap (0.7.0)
     jekyll-watch (1.1.2)
       listen (~> 2.7)
     kramdown (1.5.0)
@@ -82,6 +83,7 @@ DEPENDENCIES
   bitters
   bourbon
   jekyll
+  jekyll-sitemap
   kramdown
   neat
   psych

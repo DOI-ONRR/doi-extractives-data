@@ -20,7 +20,7 @@ if (!companyPage)
     dashTotalsTable = dc.dataTable("#dashboard-totals-table");
 }
 
-d3.csv("../static/data/CY13_Revenues_by_Company.csv",function(resource_data){
+d3.csv("../static/data/CY13_Revenues_by_company_03_18_2015.csv",function(resource_data){
     
     resource_data.forEach(function(d){
         d["Revenue"] = clean_monetary_float(d["Revenue"]);

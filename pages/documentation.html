@@ -88,12 +88,20 @@ permalink: /documentation/
         {% for term in site.data.terms %} {% if term.term == "bonus" %}
           {{ term.definition }}
         {% endif %} {% endfor %}</li>
+      <li><span>Rents. </span> 
+        {% for term in site.data.terms %} {% if term.term == "rent" %}
+          {{ term.definition }}
+        {% endif %} {% endfor %}</li>
       <li><span>Other revenues. </span>
         {% for term in site.data.terms %} {% if term.term == "other revenues" %}
           {{ term.definition }}
         {% endif %} {% endfor %}</li>
-      <li><span>Rents. </span> 
-        {% for term in site.data.terms %} {% if term.term == "rent" %}
+      <li><span>Inspection fees. </span>
+        {% for term in site.data.terms %} {% if term.term == "inspection fees" %}
+          {{ term.definition }}
+        {% endif %} {% endfor %}</li>
+      <li><span>Civil penalties. </span>
+        {% for term in site.data.terms %} {% if term.term == "civil penalties" %}
           {{ term.definition }}
         {% endif %} {% endfor %}</li>
     <ul>

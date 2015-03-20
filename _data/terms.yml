@@ -21,6 +21,14 @@
   definition: "This category includes revenues that are not included in the royalty, rent, or bonus categories, such as minimum royalties, estimated royalties, settlement agreements, and interest."
   display: true
 
+- term: "inspection fees"
+  definition: "This category includes fees for annual inspections performed by the Bureau of Safety and Environmental Enforcement (BSEE) on each offshore permanent structure and drilling rig that conducts drilling, completion, or workover operations. ONRR collects these fees on behalf of BSEE."
+  display: true
+
+- term: "civil penalties"
+  definition: "Civil penalties are assessed for violations of laws applicable to extractive activities. These penalties are issued by ONRR, BOEM, and/or BSEE, and are collected by ONRR."
+  display: true
+
 - term: "fiscal year"
   definition: "The U.S. Federal government’s fiscal year starts on October 1 and ends on September 30."
   display: true

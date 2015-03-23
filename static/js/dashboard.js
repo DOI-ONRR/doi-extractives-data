@@ -25,16 +25,23 @@ d3.csv("../static/data/CY13_Revenues_by_company_03_18_2015.csv",function(resourc
     resource_data.forEach(function(d){
         d["Revenue"] = clean_monetary_float(d["Revenue"]);
         d["GroupName"] = (function(d){
-            var commodity = d["Commodity"]; 
+            var other_commodities = ['Clay','Gilsonite','Phosphate','Copper',
+                                    'Hardrock','Sodium','Potassium','Oil Shale',
+                                    'Sulfur','Other Commodities','N/A'],
+                commodity = d["Commodity"]; 
+            
             if (commodity == "Gas" || commodity == "Oil" || commodity == "Oil & Gas")
                 return "Oil & Gas";
             else if (commodity == "Wind" || commodity == "Geothermal")
                 return "Renewables";
-            else if (commodity == "Clay" || commodity == "Gilsonite" || commodity == "Phosphate" || commodity == "Copper" || commodity == "Hardrock" || commodity == "Sodium" || commodity == "Potassium" || commodity == "Oil Shale" || commodity == "Sulfur" || commodity == "Other Commodities")
+            else if (other_commodities.indexOf(commodity)!=-1)
                 return "Other";
             else if (commodity == 'Coal')
                 return "Coal";
         })(d);
+        var type = d["Revenue Type"];
+            if (type == "Civil Penalties" || type == "Inspection Fees")
+                d["Revenue Type"] = "Other Revenues";
     });
 
     ndx = crossfilter(resource_data);

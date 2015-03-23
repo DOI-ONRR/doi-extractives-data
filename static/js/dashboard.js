@@ -222,7 +222,7 @@ d3.csv("../static/data/CY13_Revenues_by_company_03_18_2015.csv",function(resourc
                     p.geo_rev = parseFloat((p.geo_rev + r).toFixed(2));
                 if (p.type == "Wind")
                     p.wind_rev = parseFloat((p.wind_rev + r).toFixed(2));
-                if (p.type == "Other Commodities")
+                if (p.type == "Other Commodities" || p.type == 'N/A')
                     p.other_com_rev = parseFloat((p.other_com_rev + r).toFixed(2));
                 if (p.type == "Coal")
                     p.coal_rev = parseFloat((p.coal_rev + r).toFixed(2));
@@ -257,7 +257,7 @@ d3.csv("../static/data/CY13_Revenues_by_company_03_18_2015.csv",function(resourc
                     p.geo_rev = parseFloat((p.geo_rev - r).toFixed(2));
                 if (p.type == "Wind")
                     p.wind_rev = parseFloat((p.wind_rev - r).toFixed(2));
-                if (p.type == "Other Commodities")
+                if (p.type == "Other Commodities" || p.type == 'N/A')
                     p.other_com_rev = parseFloat((p.other_com_rev - r).toFixed(2));
                 if (p.type == "Coal")
                     p.coal_rev = parseFloat((p.coal_rev - r).toFixed(2));
@@ -617,7 +617,7 @@ d3.csv("../static/data/CY13_Revenues_by_company_03_18_2015.csv",function(resourc
                if($(this).text().toLowerCase() == 'other commodities')
                {
                     $('#dashboard-bar-rev-by-revenue-type-other').toggle();
-                    update_graph_options(['Other Commodities'],typeDimension);
+                    update_graph_options(['Other Commodities', 'N/A'],typeDimension);
                }
                if($(this).text().toLowerCase() == 'coal')
                {

@@ -49,6 +49,8 @@ Broadly, we are working now on:
 * Develop site information architecture so that it is clear that it is a part of USEITI, can accomodate new datasets and has a stronger 'why you're here and why you should care' message
 * Reaching out to users to see how we did with the Beta, and learn from them where to head next
 
+For a more detailed roadmap, please see our [repository's wiki](https://github.com/18F/doi-extractives-data/wiki).
+
 ##Contributing
 
 Content and feature suggestions are welcome via GitHub Issues. Code contributions are welcome via pull request, although of course we cannot guarantee your changes will be included in the site.

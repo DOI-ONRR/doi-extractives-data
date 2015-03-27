@@ -1,3 +1,182 @@
+var Dashboard = (function(){
+    var pubs = {};
+    //Vars
+    pubs.main_bar_chart ={};
+    pubs.inner_bar_charts = [];
+    pubs.tables = [];
+    pubs.dimensions = [];
+    pubs.groups = [];
+    pubs.dataSet = {};
+    //Settings
+    pubs.barchart_centerBar = false;
+    pubs.barchart_elasticY = true;
+    pubs.barchart_brushOn = false;
+    pubs.barchart_turnOnControls = true;
+    pubs.graphs_width = 350;
+    pubs.graphs_height = 360;
+    pubs.graphs_margins = {top:10, right: -2, bottom: 75, left:45};
+    pubs.graphs_gap = false;
+    pubs.graphs_gap_width = 40;
+    pubs.graph_xaxis_format = {
+        'Rents':'rent',
+        'Royalties':'royalty',
+        'Bonus':'bonus',
+        "Other Revenues":"other revenues",
+        'Other':"other commodities",
+        'Coal':'coal',
+        "Oil & Gas":"oil & gas",
+        'Renewables':'renewables'};
+
+    //Registers Bar charts
+    pubs.set_barcharts = set_barcharts;
+    function set_barcharts(charts) {
+        for (var i = 0; i<charts.length; i++)
+            pubs.barcharts.push(dc.barChart(charts[i]));
+    }
+    //Loads Data from CSV with D3
+    pubs.loadData = loadData;
+    function loadData(csv){
+        d3.csv(csv, function(data){
+            pubs.dataSet = data;
+        });
+    }
+    //Default Settings for Barchart
+    pubs.default_barchart_settings = default_barchart_settings;
+    function default_barchart_settings(chart){
+        chart
+            .width(pubs.graphs_width).height(pubs.graphs_height)
+            .centerBar(pubs.barchart_centerBar)
+            .gap(pubs.graphs_gap_width)
+            .elasticY(pubs.barchart_elasticY)
+            .brushOn(pubs.barchart_brushOn)
+            .turnOnControls(pubs.barchart_turnOnControls)
+            .xUnits(dc.units.ordinal)
+            .x(d3.scale.ordinal())
+            .y(d3.scale.log().nice().domain([1, 12500000000]))
+            .margins(pubs.graphs_margins)
+            .yAxis().tickFormat(function(v){return text_money(v,false,true)});
+
+        chart.on("filtered", function (chart) {
+                dc.events.trigger(function () {
+                });});
+        chart.filter = function(){};//disables filter on bar select
+        chart.xAxis().tickFormat(formatXAxis);
+        
+    }
+    //Private function used by default bar chart settings to format x values
+    function formatXAxis(value){
+        return pubs.graph_xaxis_format[value] || value;
+    }
+    /*********************************
+    graphCustomizations
+    Function: Performs post processing
+        on graphs to add styling and 
+        other effects, rollovers
+    **********************************/
+    pubs.graphCustomizations = graphCustomizations;
+    function graphCustomizations() {
+        d3.selectAll("g.x text")
+            .attr("class", "campusLabel")
+            .style("text-anchor", "middle")
+
+        d3.selectAll("g.x line")
+            .style("stroke", "#272727")
+
+        d3.selectAll("g.x path")
+            .style("stroke", "#272727")
+
+        d3.selectAll("g.y line")
+            .style("stroke", "#272727")
+
+        d3.selectAll("g.y path")
+            .style("stroke", "#272727")
+
+        d3.selectAll("#dashboard-bar-rev-by-commodity-group .bar").call(resources_barTip);
+        
+        var commodityBars = d3.selectAll("#dashboard-bar-rev-by-commodity-group .bar")
+            .attr('tabindex',function(d){if (d.y != 0) return '0'; else return '-1';})
+            .attr('aria-label',function(d){
+                return d.x + " " + d.layer + " revenues of " + d.y;
+            })
+            .on('mouseover', resources_barTip.show)
+            .on('mouseout', resources_barTip.hide)
+            .on('focus',resources_barTip.show)
+            .on('blur',resources_barTip.hide);
+
+        var a=['#dashboard-bar-rev-by-revenue-type-oil-and-gas',
+                '#dashboard-bar-rev-by-revenue-type-renewables',
+                '#dashboard-bar-rev-by-revenue-type-coal',
+                '#dashboard-bar-rev-by-revenue-type-other'];
+        for (var i=0;i<a.length;i++){
+             d3.selectAll(a[i]+" .bar").call(commodities_barTip);
+             d3.selectAll(a[i]+" .bar")
+                .attr('tabindex',function(d){if (d.y != 0) return '0'; else return '-1';})
+                .attr('aria-label',function(d){
+                    return d.x + " " + d.layer + " revenues of " + d.y;
+                })
+                .on('mouseover', commodities_barTip.show)
+                .on('mouseout', commodities_barTip.hide)
+                .on('focus',resources_barTip.show)
+                .on('blur',resources_barTip.hide);
+        }
+        var splitColors = ['#b6bf38','#798025'];
+        d3.select('#dashboard-bar-rev-by-revenue-type-renewables .dc-legend .dc-legend-item')
+            .append('polygon')
+                .attr('points','0,0 12,0 0,12')
+                .attr('fill','#798025');
+        d3.select('#dashboard-bar-rev-by-revenue-type-renewables .dc-legend .dc-legend-item:nth-child(2)')
+            .append('polygon')
+                .attr('points','0,0 12,0 0,12')
+                .attr('fill','#b6bf38');
+    };
+
+    /*********************************
+    update_graph_options
+    Function: Updates graph selections
+    based on checkboxes
+    **********************************/
+    
+    pubs.update_graph_options = update_graph_options;
+    function update_graph_options(elem,dimension,graphOptions){
+        var a=[];
+        if (elem.each)
+        {
+            elem.each(function(){
+                if ($(this).is(':checked')){
+                    a.push($(this).val());
+                }
+                else if($(this).attr('aria-checked')=='true'){
+                    if ($(this).attr('data-value') == 'Other Revenues')
+                        a = a.concat(dash_config.other_revenue_types);
+                    else
+                        a.push($(this).attr('data-value'));
+                }
+            }); 
+        }
+        else
+        {
+            a = elem;
+        }
+        
+        dimension.filterAll();
+        dimension.filter(function(d){
+                if (a.indexOf(d) > -1)
+                {
+                    return true;
+                }
+                else
+                    return false;
+        });
+
+
+        draw_totals_table();
+        dc.redrawAll();
+        graphCustomizations();
+    }
+
+    return pubs;
+})();
+
 var dash_bar_rev_by_commodity_group = dc.barChart("#dashboard-bar-rev-by-commodity-group"),
     dash_bar_rev_by_revenue_type_oil_and_gas = dc.barChart("#dashboard-bar-rev-by-revenue-type-oil-and-gas"),
     dash_bar_rev_by_revenue_type_renewables = dc.barChart('#dashboard-bar-rev-by-revenue-type-renewables'),
@@ -95,48 +274,6 @@ d3.csv("../static/data/CY13_Revenues_by_company_03_18_2015.csv",function(resourc
     var revDimensionGroup = revDimension.group().reduceSum(function(d) {
         return d["Revenue"]
     });
-
-    var all = ndx.groupAll().reduce(
-        //add
-        function(p,v){
-            p.sum += v["Revenue"];
-            p.count++;
-            if (v["Company Name"] in p.companies)
-            {
-                p.companies[v["Company Name"]]++;
-
-            }
-            else
-            {
-                p.companies[v["Company Name"]]=1
-                p.company_count++;
-            }
-                
-
-            p.average = p.sum/p.company_count;
-            return p;
-        },
-        //remove
-        function(p,v){
-            p.sum -=v["Revenue"];
-            p.count--;
-            p.companies[v["Company Name"]]--;
-            if (p.companies[v["Company Name"]] === 0)
-            {
-                p.company_count--;
-                delete p.companies[v["Company Name"]];
-            }
-            if (p.company_count>0)
-                p.average = p.sum/p.company_count;
-            else
-                p.average = 0;
-            return p;
-        },
-        //int
-        function(p,v){
-            return {average : 0, sum : 0, count : 0, company_count:0, companies:{}}
-        }
-    );
 
     companyDimensionGroup = companyDimension.group().reduce(
         //add
@@ -341,14 +478,9 @@ d3.csv("../static/data/CY13_Revenues_by_company_03_18_2015.csv",function(resourc
     /****************************
     Graph:Bar Graph, by commodity
     *****************************/
-    //Graph Constants
-    var graphs_width = 350,
-        graphs_height = 360,
-        graphs_margins = {top:10, right: -2, bottom: 75, left:45},
-        graphs_gap = false;
-
+    Dashboard.default_barchart_settings(dash_bar_rev_by_commodity_group);
     dash_bar_rev_by_commodity_group
-        .width(graphs_width).height(graphs_height)
+        //.width(graphs_width).height(graphs_height)
         .dimension(typeGroupDimension)
         .group(typeGroupDimension_allGroup, "Rent")
         .valueAccessor(function(d) {
@@ -362,33 +494,22 @@ d3.csv("../static/data/CY13_Revenues_by_company_03_18_2015.csv",function(resourc
         })
         .stack(typeGroupDimension_allGroup, "Other Revenues", function(d) {
             return d.value.other_rev
-        })
-        //.legend(dc.legend().x(470).y(100))
-        .centerBar(false)
-        .gap(40)
-        .elasticY(true)
-        .brushOn(false)
-        .turnOnControls(true)
-        .xAxisLabel("Commodities",30)
-        .xUnits(dc.units.ordinal)
-        .x(d3.scale.ordinal())
-        .y(d3.scale.log().nice().domain([1, 12500000000]))
-        .margins(graphs_margins)
-        .yAxis().tickFormat(function(v){return text_money(v,false,true)});
-    dash_bar_rev_by_commodity_group.on("filtered", function (chart) {
-                dc.events.trigger(function () {
-                });});
-    dash_bar_rev_by_commodity_group.filter = function(){};//disables filter on bar select
+        });
+    
+
     /*****************************
     End: dash_bar_rev_by_commodity
     *****************************/
 
 
-    /*****************************
+    /**************************************************************************
     Start: Special Commodity graphs
-    *****************************/
+    **************************************************************************/
+    /**************************
+    Chart: Oil and Gas Bar Chart
+    ***************************/
+    Dashboard.default_barchart_settings(dash_bar_rev_by_revenue_type_oil_and_gas);
     dash_bar_rev_by_revenue_type_oil_and_gas
-        .width(graphs_width).height(graphs_height)
         .dimension(revDimensionGrouped)
         .group(revDimension_allGroup, 'oil')
         .valueAccessor(function(d) {
@@ -400,25 +521,12 @@ d3.csv("../static/data/CY13_Revenues_by_company_03_18_2015.csv",function(resourc
         .stack(revDimension_allGroup,'Oil and Gas', function(d){
             return d.value.oilandgas_rev;
         })
-        .legend(dc.legend().x(50).y(0))
-        .centerBar(false)
-        .gap(40)
-        .elasticY(true)
-        .brushOn(false)
-        .turnOnControls(true)
-        .xAxisLabel("Oil & Gas",30)
-        .xUnits(dc.units.ordinal)
-        .x(d3.scale.ordinal())
-        .y(d3.scale.log().nice().domain([1, 12500000000]))
-        .margins(graphs_margins)
-        .yAxis().tickFormat(function(v){return text_money(v,false,true)});
-    dash_bar_rev_by_revenue_type_oil_and_gas.on("filtered", function (chart) {
-                dc.events.trigger(function () {
-                });});
-    dash_bar_rev_by_revenue_type_oil_and_gas.filter = function(){};//disables filter on bar select
-
+        .legend(dc.legend().x(50).y(0));
+    /**************************
+    Chart: Renewables Bar Chart
+    ***************************/
+    Dashboard.default_barchart_settings(dash_bar_rev_by_revenue_type_renewables);
     dash_bar_rev_by_revenue_type_renewables
-        .width(graphs_width).height(graphs_height)
         .dimension(revDimensionGrouped)
         .group(revDimension_allGroup, 'geothermal')
         .valueAccessor(function(d) {
@@ -427,105 +535,30 @@ d3.csv("../static/data/CY13_Revenues_by_company_03_18_2015.csv",function(resourc
         .stack(revDimension_allGroup, 'wind',function(d){
             return d.value.wind_rev;
         })
-        .legend(dc.legend().x(50).y(0))
-        .centerBar(false)
-        .gap(40)
-        .elasticY(true)
-        .brushOn(false)
-        .turnOnControls(true)
-        .xAxisLabel('Renewables',30)
-        .xUnits(dc.units.ordinal)
-        .x(d3.scale.ordinal())
-        .y(d3.scale.log().nice().domain([1, 12500000000]))
-        .margins(graphs_margins)
-        .yAxis().tickFormat(function(v){return text_money(v,false,true)});
-    dash_bar_rev_by_revenue_type_renewables.filter = function(){};//disables filter on bar select
+        .legend(dc.legend().x(50).y(0));
 
+    /**************************
+    Chart: Coal Bar Chart
+    ***************************/
+    Dashboard.default_barchart_settings(dash_bar_rev_by_revenue_type_coal);
     dash_bar_rev_by_revenue_type_coal
-        .width(graphs_width).height(graphs_height)
         .dimension(revDimensionGrouped)
         .group(revDimension_allGroup, 'coal')
         .valueAccessor(function(d) {
             return d.value.coal_rev;
-        })
-        .centerBar(false)
-        .gap(40)
-        .elasticY(true)
-        .brushOn(false)
-        .turnOnControls(true)
-        .xAxisLabel('Coal',30)
-        .xUnits(dc.units.ordinal)
-        .x(d3.scale.ordinal())
-        .y(d3.scale.log().nice().domain([1, 12500000000]))
-        .margins(graphs_margins)
-        .yAxis().tickFormat(function(v){return text_money(v,false,true)});
-    dash_bar_rev_by_revenue_type_coal.filter = function(){};//disables filter on bar select
+        });
 
+    /**************************
+    Chart: Other Commodities Bar Chart
+    ***************************/
+    Dashboard.default_barchart_settings(dash_bar_rev_by_revenue_type_other);
     dash_bar_rev_by_revenue_type_other
-        .width(graphs_width).height(graphs_height)
         .dimension(revDimensionGrouped)
         .group(revDimension_allGroup, 'other')
         .valueAccessor(function(d) {
             return d.value.other_com_rev;
         })
-        .centerBar(false)
-        .gap(40)
-        .elasticY(true)
-        .brushOn(false)
-        .turnOnControls(true)
-        .xAxisLabel('Other Commodities',30)
-        .xUnits(dc.units.ordinal)
-        .x(d3.scale.ordinal())
-        .y(d3.scale.log().nice().domain([1, 12500000000]))
-        .margins(graphs_margins)
-        .yAxis().tickFormat(function(v){return text_money(v,false,true)});
-    dash_bar_rev_by_revenue_type_other.filter = function(){};//disables filter on bar select
-        
-    
-    dash_bar_rev_by_revenue_type_renewables.on("filtered", function (chart) {
-                dc.events.trigger(function () {
-                });});
-   
-    /*****************************
-    Graph: Format xAxis for inner graphs
-    *****************************/
-
-    var formatxAxisForInnerGraphs = function(v){
-        var s=v;
-            switch(v){
-                case 'Rents':
-                    s = 'rent';
-                    break;
-                case 'Royalties':
-                    s = 'royalty';
-                    break;
-                case 'Bonus':
-                    s = 'bonus';
-                    break;
-                case 'Other Revenues':
-                    s = 'other revenues';
-                    break;
-                case 'Other':
-                    s = 'other commodities';
-                    break;
-                case 'Coal':
-                    s = 'coal';
-                    break;
-                case 'Oil & Gas':
-                    s = 'oil & gas';
-                    break;
-                case 'Renewables':
-                    s = 'renewables';
-                    break;
-            }
-            return s;
-    }
-    dash_bar_rev_by_commodity_group.xAxis().tickFormat(formatxAxisForInnerGraphs);
-    dash_bar_rev_by_revenue_type_renewables.xAxis().tickFormat(formatxAxisForInnerGraphs);
-    dash_bar_rev_by_revenue_type_oil_and_gas.xAxis().tickFormat(formatxAxisForInnerGraphs);
-    dash_bar_rev_by_revenue_type_coal.xAxis().tickFormat(formatxAxisForInnerGraphs);
-    dash_bar_rev_by_revenue_type_other.xAxis().tickFormat(formatxAxisForInnerGraphs);
-
+        .xAxisLabel('Other Commodities',30);
     
     /*******************************************************************
     Main Table Setup
@@ -560,26 +593,6 @@ d3.csv("../static/data/CY13_Revenues_by_company_03_18_2015.csv",function(resourc
     End: Main Table Setup
     ****************************/
 
-    /*********************************************************************************
-    Table related Facts (Averages, Totals, etc)
-    These items are tied to the dashTable so they will be updated when it is updated
-    *********************************************************************************/
-    dash_bar_rev_by_commodity_group
-        .renderlet(function(d){
-            d3.select("#total_revenue").html('$' +parseFloat(all.value().sum.toFixed(0)).formatMoney(0,'.',','));
-        });
-    dash_bar_rev_by_commodity_group
-        .renderlet(function(d){
-            d3.select("#average_revenue").html('$' +parseFloat(all.value().average.toFixed(0)).formatMoney(0,'.',','));
-        });
-    dash_bar_rev_by_commodity_group
-        .renderlet(function(d){
-            d3.select("#company_count").html(all.value().company_count);
-        })
-    
-    /***************************
-    End Table Related Functions
-    ***************************/
 
 
     /****************************************************
@@ -604,7 +617,7 @@ d3.csv("../static/data/CY13_Revenues_by_company_03_18_2015.csv",function(resourc
     ***************************/
 
    dc.renderAll();
-   graphCustomizations();
+   Dashboard.graphCustomizations();
    
    /***************************
    Setup Graph switching
@@ -690,14 +703,6 @@ d3.csv("../static/data/CY13_Revenues_by_company_03_18_2015.csv",function(resourc
 End: d3 csv
 ****************************/
 
-if(companyPage)
-{
-    $('.dashboard-search').hide();
-    $('#average-revenue-h1').hide();
-    $('#number-of-companies-h1').hide();
-    $('#company-name').prepend('<a href="./">Back</a>');
-    $('#company-name > h1').html(QueryString.company);
-}
 
 
 /*****************************
@@ -756,72 +761,6 @@ End: barTip()
 *****************************/
 
 
-/*********************************
-graphCustomizations
-Function: Performs post processing
-    on graphs to add styling and 
-    other effects, rollovers
-**********************************/
-var graphCustomizations = function() {
-    d3.selectAll("g.x text")
-        .attr("class", "campusLabel")
-        .style("text-anchor", "middle")
-
-    d3.selectAll("g.x line")
-        .style("stroke", "#272727")
-
-    d3.selectAll("g.x path")
-        .style("stroke", "#272727")
-
-    d3.selectAll("g.y line")
-        .style("stroke", "#272727")
-
-    d3.selectAll("g.y path")
-        .style("stroke", "#272727")
-
-    d3.selectAll("#dashboard-bar-rev-by-commodity-group .bar").call(resources_barTip);
-    
-    var commodityBars = d3.selectAll("#dashboard-bar-rev-by-commodity-group .bar")
-        .attr('tabindex',function(d){if (d.y != 0) return '0'; else return '-1';})
-        .attr('aria-label',function(d){
-            return d.x + " " + d.layer + " revenues of " + d.y;
-        })
-        .on('mouseover', resources_barTip.show)
-        .on('mouseout', resources_barTip.hide)
-        .on('focus',resources_barTip.show)
-        .on('blur',resources_barTip.hide);
-
-    var a=['#dashboard-bar-rev-by-revenue-type-oil-and-gas',
-            '#dashboard-bar-rev-by-revenue-type-renewables',
-            '#dashboard-bar-rev-by-revenue-type-coal',
-            '#dashboard-bar-rev-by-revenue-type-other'];
-    for (var i=0;i<a.length;i++){
-         d3.selectAll(a[i]+" .bar").call(commodities_barTip);
-         d3.selectAll(a[i]+" .bar")
-            .attr('tabindex',function(d){if (d.y != 0) return '0'; else return '-1';})
-            .attr('aria-label',function(d){
-                return d.x + " " + d.layer + " revenues of " + d.y;
-            })
-            .on('mouseover', commodities_barTip.show)
-            .on('mouseout', commodities_barTip.hide)
-            .on('focus',resources_barTip.show)
-            .on('blur',resources_barTip.hide);
-    }
-    var splitColors = ['#b6bf38','#798025'];
-    d3.select('#dashboard-bar-rev-by-revenue-type-renewables .dc-legend .dc-legend-item')
-        .append('polygon')
-            .attr('points','0,0 12,0 0,12')
-            .attr('fill','#798025');
-    d3.select('#dashboard-bar-rev-by-revenue-type-renewables .dc-legend .dc-legend-item:nth-child(2)')
-        .append('polygon')
-            .attr('points','0,0 12,0 0,12')
-            .attr('fill','#b6bf38');
-};
-
-/************************
-End: graphCustomizations
-************************/
-
 $(document).ready(function(){
     $('#OptionsList a').on('click',function(){
         if ($(this).attr('aria-checked')=='true')
@@ -830,7 +769,7 @@ $(document).ready(function(){
             $(this).attr('aria-checked','true'); 
 
         $('div > i',$(this)).toggleClass('fa-check');
-        update_graph_options($('#OptionsList a'), revDimensionHelper);
+        Dashboard.update_graph_options($('#OptionsList a'), revDimensionHelper);
     });
 });
 
@@ -873,4 +812,89 @@ Company search filter
     });
  })
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************************************************************************************************
+Extra Stuff Not being used ATM
+This is for summing the whole table
+************************************************************************************************/
+    // var all = ndx.groupAll().reduce(
+    //     //add
+    //     function(p,v){
+    //         p.sum += v["Revenue"];
+    //         p.count++;
+    //         if (v["Company Name"] in p.companies)
+    //         {
+    //             p.companies[v["Company Name"]]++;
+
+    //         }
+    //         else
+    //         {
+    //             p.companies[v["Company Name"]]=1
+    //             p.company_count++;
+    //         }
+                
+
+    //         p.average = p.sum/p.company_count;
+    //         return p;
+    //     },
+    //     //remove
+    //     function(p,v){
+    //         p.sum -=v["Revenue"];
+    //         p.count--;
+    //         p.companies[v["Company Name"]]--;
+    //         if (p.companies[v["Company Name"]] === 0)
+    //         {
+    //             p.company_count--;
+    //             delete p.companies[v["Company Name"]];
+    //         }
+    //         if (p.company_count>0)
+    //             p.average = p.sum/p.company_count;
+    //         else
+    //             p.average = 0;
+    //         return p;
+    //     },
+    //     //int
+    //     function(p,v){
+    //         return {average : 0, sum : 0, count : 0, company_count:0, companies:{}}
+    //     }
+    // );
+/*********************************************************************************
+    Table related Facts (Averages, Totals, etc)
+    These items are tied to the dashTable so they will be updated when it is updated
+    *********************************************************************************/
+    // dash_bar_rev_by_commodity_group
+    //     .renderlet(function(d){
+    //         d3.select("#total_revenue").html('$' +parseFloat(all.value().sum.toFixed(0)).formatMoney(0,'.',','));
+    //     });
+    // dash_bar_rev_by_commodity_group
+    //     .renderlet(function(d){
+    //         d3.select("#average_revenue").html('$' +parseFloat(all.value().average.toFixed(0)).formatMoney(0,'.',','));
+    //     });
+    // dash_bar_rev_by_commodity_group
+    //     .renderlet(function(d){
+    //         d3.select("#company_count").html(all.value().company_count);
+    //     })
+    
+    /***************************
+    End Table Related Functions
+    ***************************/
 

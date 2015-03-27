@@ -100,42 +100,7 @@ function text_filter(dim,q){
 	graphCustomizations();
 }
 
-function update_graph_options(elem,dimension,graphOptions){
-	var a=[];
-	if (elem.each)
-	{
-		elem.each(function(){
-			if ($(this).is(':checked')){
-				a.push($(this).val());
-			}
-			else if($(this).attr('aria-checked')=='true'){
-				if ($(this).attr('data-value') == 'Other Revenues')
-					a = a.concat(dash_config.other_revenue_types);
-				else
-					a.push($(this).attr('data-value'));
-			}
-		});	
-	}
-	else
-	{
-		a = elem;
-	}
-	
-	dimension.filterAll();
-	dimension.filter(function(d){
-			if (a.indexOf(d) > -1)
-			{
-				return true;
-			}
-			else
-				return false;
-	});
 
-
-	draw_totals_table();
-	dc.redrawAll();
-	graphCustomizations();
-}
 
 function download_data(dimension){
 	var f=eval(dimension);

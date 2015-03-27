@@ -40,6 +40,8 @@ permalink: /documentation/
 
   <p>These datasets include revenues for U.S. Federal lands and offshore areas. It does not include Indian lands, privately-owned lands or U.S. state lands. The datasets currently include data tracked and managed by the Department of the Interior’s Office of Natural Resource Revenues.</p>
 
+  <p>We are working on incorporating data tracked and managed by other parts of the Department. In the meantime, please see the following Excel files for <a href="{{site:baseurl}}/static/data/OSM_AML_Fees_and_Audits_and_Civil_Penalties_Final 3-25-15.xlsx">abandoned mine lands fees, audits and civil pentalties data</a> from the Office of Surface Mining, Reclamation, and Enforcement and <a href="{{site:baseurl}}/static/data/BLM_Permit_Fees_and_Bonus_and_1st_Yr_Rentals_Final_3-25-15.xlsx">permit fees, bonuses and first year rentals</a> from the Bureau of Land Management.</p>
+
   <p><span>Companies below threshold. </span>
     {% for term in site.data.terms %} {% if term.term == "below threshold" %}
       {{ term.definition }}
@@ -88,12 +90,20 @@ permalink: /documentation/
         {% for term in site.data.terms %} {% if term.term == "bonus" %}
           {{ term.definition }}
         {% endif %} {% endfor %}</li>
+      <li><span>Rents. </span> 
+        {% for term in site.data.terms %} {% if term.term == "rent" %}
+          {{ term.definition }}
+        {% endif %} {% endfor %}</li>
       <li><span>Other revenues. </span>
         {% for term in site.data.terms %} {% if term.term == "other revenues" %}
           {{ term.definition }}
         {% endif %} {% endfor %}</li>
-      <li><span>Rents. </span> 
-        {% for term in site.data.terms %} {% if term.term == "rent" %}
+      <li><span>Inspection fees. </span>
+        {% for term in site.data.terms %} {% if term.term == "inspection fees" %}
+          {{ term.definition }}
+        {% endif %} {% endfor %}</li>
+      <li><span>Civil penalties. </span>
+        {% for term in site.data.terms %} {% if term.term == "civil penalties" %}
           {{ term.definition }}
         {% endif %} {% endfor %}</li>
     <ul>

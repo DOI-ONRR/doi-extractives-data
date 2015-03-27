@@ -1,9 +1,11 @@
-U.S. Federal Extractive Industries Data and Information
+U.S. Extractive Industries Data and Information
 =======================================================
 
 ##What
 
-A website to include both curated content and raw data that will inform the national and international conversation around extractive industries revenue. It will provide a valuable resource for data and information analysis and visualizations that can be readily understood and accessed by the public for re-use through other media and applications.
+The U.S. earns revenue on natural resources extracted from its Federal lands, both onshore and offshore. This is a major source of revenue for both the country and local municipalities, and includes revenue from resources such as oil, gas, coal and geothermals.
+
+This repository contains the code for useiti.doi.gov, which is a website that includes both curated content and raw data that will inform the national and international conversation around extractive industries revenue. It will provide a valuable resource for data and information analysis and visualizations that can be readily understood and accessed by the public for re-use through other media and applications.
 
 ##Why
 
@@ -39,6 +41,15 @@ If you are not familiar with how to work with Bourbon and Neat, visit their webs
 
 To keep our code updating continuously as we edit, we use `jekyll serve --baseurl '' --watch`. As of Jekyll 2.2.0, [gh-pages compiles Sass natively](https://github.com/blog/1867-github-pages-now-runs-jekyll-2-2-0).
 
+##Roadmap
+
+Broadly, we are working now on:
+* Exploring how lease contract information and data can be integrated into the site in a way that meets user needs
+* Exploring how production data can be added to the site in a way that meets user needs
+* Develop site information architecture so that it is clear that it is a part of USEITI, can accomodate new datasets and has a stronger 'why you're here and why you should care' message
+* Reaching out to users to see how we did with the Beta, and learn from them where to head next
+
+For a more detailed roadmap, please see our [repository's wiki](https://github.com/18F/doi-extractives-data/wiki).
 
 ##Contributing
 

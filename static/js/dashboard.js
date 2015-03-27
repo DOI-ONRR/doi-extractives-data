@@ -1,40 +1,51 @@
-var dash_bar_rev_by_commodity_group = dc.barChart("#dashboard-bar-rev-by-commodity-group");
-var dash_bar_rev_by_revenue_type_oil_and_gas = dc.barChart("#dashboard-bar-rev-by-revenue-type-oil-and-gas");
-var dash_bar_rev_by_revenue_type_renewables = dc.barChart('#dashboard-bar-rev-by-revenue-type-renewables');
-var dash_bar_rev_by_revenue_type_coal = dc.barChart('#dashboard-bar-rev-by-revenue-type-coal');
-var dash_bar_rev_by_revenue_type_other = dc.barChart('#dashboard-bar-rev-by-revenue-type-other');
-var dashTable;
-var dashTotalsTable;
-var companyDimension; //dimension on company name
-var companyDimensionGroup;
-var typeDimension; //dimension on commodity type
-var typeGroupDimension;
-var typeDimensionHelper; //Extra commodity dimension for use by helper functions. Allows it to be filter on by other things
-var revDimension;
-var revDimensionHelper;
-var ndx; //crossfilter object
-var companyPage =  QueryString.company ? true : false;//Boolean: if this is a company specific dashboard or not. 
+var dash_bar_rev_by_commodity_group = dc.barChart("#dashboard-bar-rev-by-commodity-group"),
+    dash_bar_rev_by_revenue_type_oil_and_gas = dc.barChart("#dashboard-bar-rev-by-revenue-type-oil-and-gas"),
+    dash_bar_rev_by_revenue_type_renewables = dc.barChart('#dashboard-bar-rev-by-revenue-type-renewables'),
+    dash_bar_rev_by_revenue_type_coal = dc.barChart('#dashboard-bar-rev-by-revenue-type-coal'),
+    dash_bar_rev_by_revenue_type_other = dc.barChart('#dashboard-bar-rev-by-revenue-type-other'),
+    dashTable,
+    dashTotalsTable,
+    companyDimension, //dimension on company name
+    companyDimensionGroup,
+    typeDimension, //dimension on commodity type
+    typeGroupDimension,
+    typeDimensionHelper, //Extra commodity dimension for use by helper functions. Allows it to be filter on by other things
+    revDimension,
+    revDimensionHelper,
+    ndx, //crossfilter object
+    companyPage =  QueryString.company ? true : false,//Boolean: if this is a company specific dashboard or not. 
+    dash_config = {};
+    dash_config.other_revenue_types = ["Other Revenues", "Civil Penalties", "Inspection Fees"];
 if (!companyPage)
 {
     dashTable = dc.dataTable("#dashboard-table");
     dashTotalsTable = dc.dataTable("#dashboard-totals-table");
 }
 
-d3.csv("../static/data/CY13_Revenues_by_Company.csv",function(resource_data){
+d3.csv("../static/data/CY13_Revenues_by_company_03_18_2015.csv",function(resource_data){
     
     resource_data.forEach(function(d){
         d["Revenue"] = clean_monetary_float(d["Revenue"]);
         d["GroupName"] = (function(d){
-            var commodity = d["Commodity"]; 
+            var other_commodities = ['Clay','Gilsonite','Phosphate','Copper',
+                                    'Hardrock','Sodium','Potassium','Oil Shale',
+                                    'Sulfur','Other Commodities','N/A'],
+                commodity = d["Commodity"]; 
+            
             if (commodity == "Gas" || commodity == "Oil" || commodity == "Oil & Gas")
                 return "Oil & Gas";
             else if (commodity == "Wind" || commodity == "Geothermal")
                 return "Renewables";
-            else if (commodity == "Clay" || commodity == "Gilsonite" || commodity == "Phosphate" || commodity == "Copper" || commodity == "Hardrock" || commodity == "Sodium" || commodity == "Potassium" || commodity == "Oil Shale" || commodity == "Sulfur" || commodity == "Other Commodities")
+            else if (other_commodities.indexOf(commodity)!=-1)
                 return "Other";
             else if (commodity == 'Coal')
                 return "Coal";
         })(d);
+        if (dash_config.other_revenue_types.indexOf(d["Revenue Type"]) > -1)
+            {
+                d.revenue_type_group = d["Revenue Type"];
+                d["Revenue Type"] = dash_config.other_revenue_types[0];
+            }
     });
 
     ndx = crossfilter(resource_data);
@@ -71,7 +82,12 @@ d3.csv("../static/data/CY13_Revenues_by_Company.csv",function(resource_data){
     })
     revDimension = ndx.dimension(function(d){
         return d["Revenue Type"];
-    })
+    });
+    revDimensionGrouped = ndx.dimension(function(d){
+        if (dash_config.other_revenue_types.indexOf(d["Revenue Type"]) > -1)
+            d["Revenue Type"] = dash_config.other_revenue_types[0];
+        return d["Revenue Type"];
+    });
     revDimensionHelper = ndx.dimension(function(d){
         return d["Revenue Type"];
     });
@@ -138,7 +154,7 @@ d3.csv("../static/data/CY13_Revenues_by_Company.csv",function(resource_data){
                 p.rent_rev      = parseFloat((p.rent_rev + r).toFixed(2));
             if (rs == "Royalties")
                 p.royalties_rev = parseFloat((p.royalties_rev + r).toFixed(2));
-            if (rs == "Other Revenues")
+            if (dash_config.other_revenue_types.indexOf(rs) > -1)
                 p.other_rev     = parseFloat((p.other_rev + r).toFixed(2));
             if (c in p.revenue_types)
             {
@@ -166,7 +182,7 @@ d3.csv("../static/data/CY13_Revenues_by_Company.csv",function(resource_data){
                 p.rent_rev      = parseFloat((p.rent_rev - r).toFixed(2));
             if (rs == "Royalties")
                 p.royalties_rev = parseFloat((p.royalties_rev - r).toFixed(2));
-            if (rs == "Other Revenues")
+            if (dash_config.other_revenue_types.indexOf(rs) > -1)
                 p.other_rev     = parseFloat((p.other_rev - r).toFixed(2));
 
             p.revenue_types[c] = (parseFloat(p.revenue_types[c])-parseFloat(r)).toFixed(2);
@@ -203,7 +219,7 @@ d3.csv("../static/data/CY13_Revenues_by_Company.csv",function(resource_data){
                     p.rent_rev      = parseFloat((p.rent_rev + r).toFixed(2));
                 if (rs == "Royalties")
                     p.royalties_rev = parseFloat((p.royalties_rev + r).toFixed(2));
-                if (rs == "Other Revenues")
+                if (dash_config.other_revenue_types.indexOf(rs) > -1)
                     p.other_rev     = parseFloat((p.other_rev + r).toFixed(2));
                 if (p.type == "Oil")
                     p.oil_rev = parseFloat((p.oil_rev + r).toFixed(2));
@@ -215,7 +231,7 @@ d3.csv("../static/data/CY13_Revenues_by_Company.csv",function(resource_data){
                     p.geo_rev = parseFloat((p.geo_rev + r).toFixed(2));
                 if (p.type == "Wind")
                     p.wind_rev = parseFloat((p.wind_rev + r).toFixed(2));
-                if (p.type == "Other Commodities")
+                if (p.type == "Other Commodities" || p.type == 'N/A')
                     p.other_com_rev = parseFloat((p.other_com_rev + r).toFixed(2));
                 if (p.type == "Coal")
                     p.coal_rev = parseFloat((p.coal_rev + r).toFixed(2));
@@ -238,7 +254,7 @@ d3.csv("../static/data/CY13_Revenues_by_Company.csv",function(resource_data){
                     p.rent_rev      = parseFloat((p.rent_rev - r).toFixed(2));
                 if (rs == "Royalties")
                     p.royalties_rev = parseFloat((p.royalties_rev - r).toFixed(2));
-                if (rs == "Other Revenues")
+                if (dash_config.other_revenue_types.indexOf(rs) > -1)
                     p.other_rev     = parseFloat((p.other_rev - r).toFixed(2));
                 if (p.type == "Oil")
                     p.oil_rev = parseFloat((p.oil_rev - r).toFixed(2));
@@ -250,7 +266,7 @@ d3.csv("../static/data/CY13_Revenues_by_Company.csv",function(resource_data){
                     p.geo_rev = parseFloat((p.geo_rev - r).toFixed(2));
                 if (p.type == "Wind")
                     p.wind_rev = parseFloat((p.wind_rev - r).toFixed(2));
-                if (p.type == "Other Commodities")
+                if (p.type == "Other Commodities" || p.type == 'N/A')
                     p.other_com_rev = parseFloat((p.other_com_rev - r).toFixed(2));
                 if (p.type == "Coal")
                     p.coal_rev = parseFloat((p.coal_rev - r).toFixed(2));
@@ -288,7 +304,7 @@ d3.csv("../static/data/CY13_Revenues_by_Company.csv",function(resource_data){
                     p.rent_rev      = parseFloat((p.rent_rev + r).toFixed(2));
                 if (rs == "Royalties")
                     p.royalties_rev = parseFloat((p.royalties_rev + r).toFixed(2));
-                if (rs == "Other Revenues")
+                if (dash_config.other_revenue_types.indexOf(rs) > -1)
                     p.other_rev     = parseFloat((p.other_rev + r).toFixed(2));
                 return p;
             },
@@ -309,7 +325,7 @@ d3.csv("../static/data/CY13_Revenues_by_Company.csv",function(resource_data){
                     p.rent_rev      = parseFloat((p.rent_rev - r).toFixed(2));
                 if (rs == "Royalties")
                     p.royalties_rev = parseFloat((p.royalties_rev - r).toFixed(2));
-                if (rs == "Other Revenues")
+                if (dash_config.other_revenue_types.indexOf(rs) > -1)
                     p.other_rev     = parseFloat((p.other_rev - r).toFixed(2));
 
 
@@ -373,7 +389,7 @@ d3.csv("../static/data/CY13_Revenues_by_Company.csv",function(resource_data){
     *****************************/
     dash_bar_rev_by_revenue_type_oil_and_gas
         .width(graphs_width).height(graphs_height)
-        .dimension(revDimension)
+        .dimension(revDimensionGrouped)
         .group(revDimension_allGroup, 'oil')
         .valueAccessor(function(d) {
             return d.value.oil_rev;
@@ -403,7 +419,7 @@ d3.csv("../static/data/CY13_Revenues_by_Company.csv",function(resource_data){
 
     dash_bar_rev_by_revenue_type_renewables
         .width(graphs_width).height(graphs_height)
-        .dimension(revDimension)
+        .dimension(revDimensionGrouped)
         .group(revDimension_allGroup, 'geothermal')
         .valueAccessor(function(d) {
             return d.value.geo_rev;
@@ -427,7 +443,7 @@ d3.csv("../static/data/CY13_Revenues_by_Company.csv",function(resource_data){
 
     dash_bar_rev_by_revenue_type_coal
         .width(graphs_width).height(graphs_height)
-        .dimension(revDimension)
+        .dimension(revDimensionGrouped)
         .group(revDimension_allGroup, 'coal')
         .valueAccessor(function(d) {
             return d.value.coal_rev;
@@ -447,7 +463,7 @@ d3.csv("../static/data/CY13_Revenues_by_Company.csv",function(resource_data){
 
     dash_bar_rev_by_revenue_type_other
         .width(graphs_width).height(graphs_height)
-        .dimension(revDimension)
+        .dimension(revDimensionGrouped)
         .group(revDimension_allGroup, 'other')
         .valueAccessor(function(d) {
             return d.value.other_com_rev;
@@ -532,7 +548,7 @@ d3.csv("../static/data/CY13_Revenues_by_Company.csv",function(resource_data){
                             +"</a>";
                         return s;
                     },
-                    function(d){return d["Revenue Type"];},
+                    function(d){return d.revenue_type_group || d["Revenue Type"];},
                     function(d){return d["Commodity"];},
                     function(d){return "$"+parseFloat(d["Revenue"]).formatMoney(0,'.',',');}
                 ])
@@ -610,7 +626,7 @@ d3.csv("../static/data/CY13_Revenues_by_Company.csv",function(resource_data){
                if($(this).text().toLowerCase() == 'other commodities')
                {
                     $('#dashboard-bar-rev-by-revenue-type-other').toggle();
-                    update_graph_options(['Other Commodities'],typeDimension);
+                    update_graph_options(['Other Commodities', 'N/A'],typeDimension);
                }
                if($(this).text().toLowerCase() == 'coal')
                {

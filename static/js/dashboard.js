@@ -1,7 +1,7 @@
 var Dashboard = (function(){
     var pubs = {};
     //Vars
-    pubs.main_bar_chart ={};
+    pubs.bar_charts =[];
     pubs.inner_bar_charts = [];
     pubs.tables = [];
     pubs.dimensions = [];
@@ -28,10 +28,11 @@ var Dashboard = (function(){
         'Renewables':'renewables'};
 
     //Registers Bar charts
-    pubs.set_barcharts = set_barcharts;
-    function set_barcharts(charts) {
-        for (var i = 0; i<charts.length; i++)
-            pubs.barcharts.push(dc.barChart(charts[i]));
+    pubs.set_barchart = set_barchart;
+    function set_barchart(chart) {
+        var newChart = dc.barChart(chart);
+        pubs.charts.push(newChart)
+        return newChart; 
     }
     //Loads Data from CSV with D3
     pubs.loadData = loadData;
@@ -176,12 +177,19 @@ var Dashboard = (function(){
 
     return pubs;
 })();
+var test_obj = {test:"#dashboard-bar-rev-by-commodity-group"}
+var test_var = Dashboard.set_barchart(test_obj);
+console.log(Dashboard);
+console.log(test_var);
+test_var.test = 'overwritten';
+console.log(Dashboard);
+console.log(test_obj);
 
-var dash_bar_rev_by_commodity_group = dc.barChart("#dashboard-bar-rev-by-commodity-group"),
-    dash_bar_rev_by_revenue_type_oil_and_gas = dc.barChart("#dashboard-bar-rev-by-revenue-type-oil-and-gas"),
-    dash_bar_rev_by_revenue_type_renewables = dc.barChart('#dashboard-bar-rev-by-revenue-type-renewables'),
-    dash_bar_rev_by_revenue_type_coal = dc.barChart('#dashboard-bar-rev-by-revenue-type-coal'),
-    dash_bar_rev_by_revenue_type_other = dc.barChart('#dashboard-bar-rev-by-revenue-type-other'),
+var dash_bar_rev_by_commodity_group = Dashboard.set_barchart("#dashboard-bar-rev-by-commodity-group"),
+    dash_bar_rev_by_revenue_type_oil_and_gas = Dashboard.set_barchart("#dashboard-bar-rev-by-revenue-type-oil-and-gas"),
+    dash_bar_rev_by_revenue_type_renewables = Dashboard.set_barchart('#dashboard-bar-rev-by-revenue-type-renewables'),
+    dash_bar_rev_by_revenue_type_coal = Dashboard.set_barchart('#dashboard-bar-rev-by-revenue-type-coal'),
+    dash_bar_rev_by_revenue_type_other = Dashboard.set_barchart('#dashboard-bar-rev-by-revenue-type-other'),
     dashTable,
     dashTotalsTable,
     companyDimension, //dimension on company name

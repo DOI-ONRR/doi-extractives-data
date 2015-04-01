@@ -82,7 +82,7 @@ function sort_dataTable(dataTable, dataField, order)
 	else
 		dataTable.order(order);
 	dc.redrawAll();
-	graphCustomizations();
+	Dashboard.graphCustomizations();
 }
 
 function text_filter(dim,q){
@@ -97,59 +97,33 @@ function text_filter(dim,q){
 
 	draw_totals_table();
 	dc.redrawAll();
-	graphCustomizations();
+	Dashboard.graphCustomizations();
 }
 
-function update_graph_options(elem,dimension,graphOptions){
-	var a=[];
-	if (elem.each)
-	{
-		elem.each(function(){
-			if ($(this).is(':checked')){
-				a.push($(this).val());
-			}
-			else if($(this).attr('aria-checked')=='true'){
-				if ($(this).attr('data-value') == 'Other Revenues')
-					a = a.concat(dash_config.other_revenue_types);
-				else
-					a.push($(this).attr('data-value'));
-			}
-		});	
-	}
-	else
-	{
-		a = elem;
-	}
-	
-	dimension.filterAll();
-	dimension.filter(function(d){
-			if (a.indexOf(d) > -1)
-			{
-				return true;
-			}
-			else
-				return false;
-	});
 
-
-	draw_totals_table();
-	dc.redrawAll();
-	graphCustomizations();
-}
 
 function download_data(dimension){
 	var f=eval(dimension);
+
 	if (typeof(f.length) != "undefined") {}else{}
 	if (typeof(f.top) != "undefined") {f=f.top(Infinity);}else{}
 	if (typeof(f.dimension) != "undefined") {f=f.dimension(function(d) { return "";}).top(Infinity);}else{}
 	f.reverse();
+	for (var i=0; i<f.length; i++)
+	{
+		if (f[i].revenue_type_group)
+			f[i]["Revenue Type"] = f[i].revenue_type_group;
+	}
+	console.log(f);
 	var keys = Object.keys(f[0]);
+	console.log(keys);
 	if (keys.indexOf('')>-1)
 		keys.splice(keys.indexOf('',1));
 	if (keys.indexOf('undefined')>-1)
 		keys.splice(keys.indexOf('undefined',1));
 	if (keys.indexOf(' ')>-1)
 		keys.splice(keys.indexOf(' ',1));
+	console.log(keys);
 	var csv ='';
 	for (var i=0;i<keys.length;i++)
 	{

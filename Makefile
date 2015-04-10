@@ -65,6 +65,13 @@ geo/us-states.json: geo/us-topology.json
 		--layer states \
 		$< > $@
 
+geo/us-outline.json: geo/us-states.json
+	$(BIN)/topojson-merge \
+		--io states \
+		--oo USA \
+		--key '"USA"' $< \
+		| bin/extract-topology.js --layer USA > $@
+
 # generate US topology for only those counties with data
 geo/us-topology-filtered.json: county/revenues-yearly.tsv
 	mkdir -p $(dir $@)

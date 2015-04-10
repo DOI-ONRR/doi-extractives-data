@@ -1,63 +1,63 @@
-Year	State	FIPS	Commodity	type	Revenue
-2004	SD	46043	Oil	Royalties	1180.15
-2004	SD	46047	Oil & Gas	Other Revenues	40
-2004	SD	46047	Oil	Royalties	87489.49
-2004	SD	46063	Gas	Royalties	122127.44
-2004	SD	46063	Oil	Royalties	570970.06
-2005	SD	46043	Oil & Gas	Other Roy Vals	-75
-2005	SD	46043	Oil	Royalties	2775.78
-2005	SD	46047	Oil & Gas	Other Roy Vals	7577.76
-2005	SD	46047	Oil	Royalties	196150.5
-2005	SD	46063	Oil & Gas	Other Roy Vals	-21925
-2005	SD	46063	Gas	Royalties	144649.92
-2005	SD	46063	Oil	Royalties	936603.75
-2006	SD	46043	Oil	Royalties	3057.24
-2006	SD	46047	Oil	Royalties	125641.94
-2006	SD	46063	Oil & Gas	Other Roy Vals	-900
-2006	SD	46063	Gas	Royalties	130031.12
-2006	SD	46063	Oil	Royalties	1179822.48
-2007	SD	46043	Oil	Royalties	3228.53
-2007	SD	46047	Oil	Royalties	91610.05
-2007	SD	46063	Oil & Gas	Other Revenues	48.3
-2007	SD	46063	Oil & Gas	Other Roy Vals	-1582
-2007	SD	46063	Gas	Royalties	84898.43
-2007	SD	46063	Oil	Royalties	1279739.63
-2008	SD	46043	Oil	Royalties	5122.39
-2008	SD	46047	Oil & Gas	Other Revenues	80
-2008	SD	46047	Oil	Royalties	187681.68
-2008	SD	46063	Oil & Gas	Other Revenues	517.41
-2008	SD	46063	Oil & Gas	Other Roy Vals	214
-2008	SD	46063	Gas	Royalties	117883.15
-2008	SD	46063	Oil	Royalties	2117111.2
-2009	SD	46043	Oil	Royalties	1818.88
-2009	SD	46047	Oil & Gas	Other Revenues	80
-2009	SD	46047	Oil	Royalties	98614.43
-2009	SD	46063	Oil & Gas	Other Roy Vals	-775.34
-2009	SD	46063	Gas	Royalties	234095.34
-2009	SD	46063	Oil	Royalties	970806.5
-2010	SD	46043	Oil	Royalties	2261.42
-2010	SD	46047	Oil & Gas	Other Revenues	80
-2010	SD	46047	Oil	Royalties	145447.42
-2010	SD	46063	Oil & Gas	Other Revenues	573.21
-2010	SD	46063	Oil & Gas	Other Roy Vals	-412
-2010	SD	46063	Gas	Royalties	140071.69
-2010	SD	46063	Oil	Royalties	1127517.84
-2011	SD	46043	Oil	Royalties	3800.77
-2011	SD	46047	Oil & Gas	Other Revenues	80
-2011	SD	46047	Oil	Royalties	172681.06
-2011	SD	46063	Oil & Gas	Other Roy Vals	133
-2011	SD	46063	Gas	Royalties	91269.7
-2011	SD	46063	Oil	Royalties	1740047.31
-2012	SD	46043	Oil	Royalties	6174.76
-2012	SD	46047	Oil & Gas	Other Revenues	80
-2012	SD	46047	Oil	Royalties	189144.73
-2012	SD	46063	Oil & Gas	Other Revenues	3195.81
-2012	SD	46063	Oil & Gas	Other Roy Vals	-327
-2012	SD	46063	Gas	Royalties	44862.95
-2012	SD	46063	Oil	Royalties	1852594.74
-2013	SD	46043	Oil	Royalties	5159.34
-2013	SD	46047	Oil & Gas	Other Revenues	80
-2013	SD	46047	Oil	Royalties	166838.69
-2013	SD	46063	Oil & Gas	Other Revenues	3687.3
-2013	SD	46063	Gas	Royalties	47288.28
-2013	SD	46063	Oil	Royalties	1832622.55
+Year	State	County	FIPS	Commodity	type	Revenue
+2004	SD	Douglas	46043	Oil	Royalties	1180.15
+2004	SD	Fall River	46047	Oil & Gas	Other Revenues	40
+2004	SD	Fall River	46047	Oil	Royalties	87489.49
+2004	SD	Harding	46063	Gas	Royalties	122127.44
+2004	SD	Harding	46063	Oil	Royalties	570970.06
+2005	SD	Douglas	46043	Oil & Gas	Other Roy Vals	-75
+2005	SD	Douglas	46043	Oil	Royalties	2775.78
+2005	SD	Fall River	46047	Oil & Gas	Other Roy Vals	7577.76
+2005	SD	Fall River	46047	Oil	Royalties	196150.5
+2005	SD	Harding	46063	Oil & Gas	Other Roy Vals	-21925
+2005	SD	Harding	46063	Gas	Royalties	144649.92
+2005	SD	Harding	46063	Oil	Royalties	936603.75
+2006	SD	Douglas	46043	Oil	Royalties	3057.24
+2006	SD	Fall River	46047	Oil	Royalties	125641.94
+2006	SD	Harding	46063	Oil & Gas	Other Roy Vals	-900
+2006	SD	Harding	46063	Gas	Royalties	130031.12
+2006	SD	Harding	46063	Oil	Royalties	1179822.48
+2007	SD	Douglas	46043	Oil	Royalties	3228.53
+2007	SD	Fall River	46047	Oil	Royalties	91610.05
+2007	SD	Harding	46063	Oil & Gas	Other Revenues	48.3
+2007	SD	Harding	46063	Oil & Gas	Other Roy Vals	-1582
+2007	SD	Harding	46063	Gas	Royalties	84898.43
+2007	SD	Harding	46063	Oil	Royalties	1279739.63
+2008	SD	Douglas	46043	Oil	Royalties	5122.39
+2008	SD	Fall River	46047	Oil & Gas	Other Revenues	80
+2008	SD	Fall River	46047	Oil	Royalties	187681.68
+2008	SD	Harding	46063	Oil & Gas	Other Revenues	517.41
+2008	SD	Harding	46063	Oil & Gas	Other Roy Vals	214
+2008	SD	Harding	46063	Gas	Royalties	117883.15
+2008	SD	Harding	46063	Oil	Royalties	2117111.2
+2009	SD	Douglas	46043	Oil	Royalties	1818.88
+2009	SD	Fall River	46047	Oil & Gas	Other Revenues	80
+2009	SD	Fall River	46047	Oil	Royalties	98614.43
+2009	SD	Harding	46063	Oil & Gas	Other Roy Vals	-775.34
+2009	SD	Harding	46063	Gas	Royalties	234095.34
+2009	SD	Harding	46063	Oil	Royalties	970806.5
+2010	SD	Douglas	46043	Oil	Royalties	2261.42
+2010	SD	Fall River	46047	Oil & Gas	Other Revenues	80
+2010	SD	Fall River	46047	Oil	Royalties	145447.42
+2010	SD	Harding	46063	Oil & Gas	Other Revenues	573.21
+2010	SD	Harding	46063	Oil & Gas	Other Roy Vals	-412
+2010	SD	Harding	46063	Gas	Royalties	140071.69
+2010	SD	Harding	46063	Oil	Royalties	1127517.84
+2011	SD	Douglas	46043	Oil	Royalties	3800.77
+2011	SD	Fall River	46047	Oil & Gas	Other Revenues	80
+2011	SD	Fall River	46047	Oil	Royalties	172681.06
+2011	SD	Harding	46063	Oil & Gas	Other Roy Vals	133
+2011	SD	Harding	46063	Gas	Royalties	91269.7
+2011	SD	Harding	46063	Oil	Royalties	1740047.31
+2012	SD	Douglas	46043	Oil	Royalties	6174.76
+2012	SD	Fall River	46047	Oil & Gas	Other Revenues	80
+2012	SD	Fall River	46047	Oil	Royalties	189144.73
+2012	SD	Harding	46063	Oil & Gas	Other Revenues	3195.81
+2012	SD	Harding	46063	Oil & Gas	Other Roy Vals	-327
+2012	SD	Harding	46063	Gas	Royalties	44862.95
+2012	SD	Harding	46063	Oil	Royalties	1852594.74
+2013	SD	Douglas	46043	Oil	Royalties	5159.34
+2013	SD	Fall River	46047	Oil & Gas	Other Revenues	80
+2013	SD	Fall River	46047	Oil	Royalties	166838.69
+2013	SD	Harding	46063	Oil & Gas	Other Revenues	3687.3
+2013	SD	Harding	46063	Gas	Royalties	47288.28
+2013	SD	Harding	46063	Oil	Royalties	1832622.55

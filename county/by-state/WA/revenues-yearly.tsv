@@ -1,2 +1,2 @@
-Year	State	FIPS	Commodity	type	Revenue
-2008	WA	53041	Coal	Royalties	204873.3
+Year	State	County	FIPS	Commodity	type	Revenue
+2008	WA	Lewis	53041	Coal	Royalties	204873.3

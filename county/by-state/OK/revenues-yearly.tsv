@@ -1,1599 +1,1599 @@
-Year	State	FIPS	Commodity	type	Revenue
-2004	OK	40003	Oil & Gas	Other Revenues	1817
-2004	OK	40003	Oil & Gas	Other Roy Vals	-2885
-2004	OK	40003	Gas	Royalties	15427.63
-2004	OK	40003	Oil	Royalties	992.89
-2004	OK	40003	Oil	Royalties	4042.07
-2004	OK	40007	Oil & Gas	Other Roy Vals	-512.58
-2004	OK	40007	Gas	Royalties	5895.25
-2004	OK	40007	Gas	Royalties	13992.45
-2004	OK	40007	Gas	Royalties	123395.14
-2004	OK	40007	Oil	Royalties	2420.16
-2004	OK	40007	Oil	Royalties	12496.7
-2004	OK	40009	Oil & Gas	Other Revenues	667.2
-2004	OK	40009	Oil & Gas	Other Roy Vals	88091.6
-2004	OK	40009	Gas	Royalties	2438.39
-2004	OK	40009	Gas	Royalties	11555.88
-2004	OK	40009	Gas	Royalties	1783282.11
-2004	OK	40009	Oil	Royalties	3231.41
-2004	OK	40009	Oil	Royalties	2352.45
-2004	OK	40011	Oil & Gas	Other Roy Vals	-1135.66
-2004	OK	40011	Gas	Royalties	5713.29
-2004	OK	40011	Gas	Royalties	141463.05
-2004	OK	40011	Oil	Royalties	7490.43
-2004	OK	40011	Oil	Royalties	3890.12
-2004	OK	40017	Oil & Gas	Other Revenues	0.61
-2004	OK	40017	Oil & Gas	Other Roy Vals	111.03
-2004	OK	40017	Gas	Royalties	6391.86
-2004	OK	40017	Gas	Royalties	19158.35
-2004	OK	40017	Gas	Royalties	205359.8
-2004	OK	40017	Oil	Royalties	9098.21
-2004	OK	40017	Oil	Royalties	8234.04
-2004	OK	40025	Oil & Gas	Other Roy Vals	-183
-2004	OK	40025	Gas	Royalties	811.42
-2004	OK	40029	Gas	Royalties	18322.77
-2004	OK	40031	Oil	Royalties	5814.96
-2004	OK	40037	Oil	Royalties	231.38
-2004	OK	40039	Oil & Gas	Other Revenues	140
-2004	OK	40039	Oil & Gas	Other Roy Vals	395.08
-2004	OK	40039	Gas	Royalties	2967.77
-2004	OK	40039	Gas	Royalties	11841.18
-2004	OK	40039	Gas	Royalties	254866.56
-2004	OK	40039	Oil	Royalties	6677.73
-2004	OK	40039	Oil	Royalties	5674.32
-2004	OK	40043	Oil & Gas	Other Revenues	129.42
-2004	OK	40043	Oil & Gas	Other Roy Vals	459.21
-2004	OK	40043	Gas	Royalties	19041.65
-2004	OK	40043	Gas	Royalties	39177.72
-2004	OK	40043	Gas	Royalties	422052.37
-2004	OK	40043	Oil	Royalties	20344.06
-2004	OK	40043	Oil	Royalties	44221.94
-2004	OK	40045	Oil & Gas	Other Revenues	-32.99
-2004	OK	40045	Oil & Gas	Other Roy Vals	7375.04
-2004	OK	40045	Gas	Royalties	49.28
-2004	OK	40045	Gas	Royalties	8857.85
-2004	OK	40045	Gas	Royalties	198357.19
-2004	OK	40045	Oil	Royalties	38102.95
-2004	OK	40045	Oil	Royalties	23882.84
-2004	OK	40047	Oil & Gas	Other Roy Vals	451
-2004	OK	40047	Gas	Royalties	49063.56
-2004	OK	40047	Oil	Royalties	6098.61
-2004	OK	40047	Oil	Royalties	68.11
-2004	OK	40049	Oil	Royalties	3547.67
-2004	OK	40049	Oil	Royalties	903.68
-2004	OK	40051	Oil & Gas	Other Revenues	0.61
-2004	OK	40051	Oil & Gas	Other Roy Vals	-34.93
-2004	OK	40051	Gas	Royalties	211.43
-2004	OK	40051	Gas	Royalties	1432.68
-2004	OK	40051	Gas	Royalties	71478.78
-2004	OK	40051	Oil	Royalties	4904.62
-2004	OK	40051	Oil	Royalties	1975.5
-2004	OK	40055	Gas	Royalties	2880.68
-2004	OK	40055	Oil	Royalties	81.89
-2004	OK	40059	Oil & Gas	Other Roy Vals	-250
-2004	OK	40059	Gas	Royalties	1.29
-2004	OK	40059	Gas	Royalties	357.99
-2004	OK	40059	Gas	Royalties	41488.46
-2004	OK	40059	Oil	Royalties	249.8
-2004	OK	40059	Oil	Royalties	48.72
-2004	OK	40061	Oil & Gas	Other Revenues	158.1
-2004	OK	40061	Oil & Gas	Other Roy Vals	8738.03
-2004	OK	40061	Gas	Royalties	5622.35
-2004	OK	40061	Gas	Royalties	212118.49
-2004	OK	40063	Oil & Gas	Other Roy Vals	-50.67
-2004	OK	40063	Gas	Royalties	904.51
-2004	OK	40073	Oil & Gas	Other Revenues	-2.25
-2004	OK	40073	Gas	Royalties	6.32
-2004	OK	40073	Gas	Royalties	11.06
-2004	OK	40073	Gas	Royalties	17005.21
-2004	OK	40073	Oil	Royalties	1617.8
-2004	OK	40073	Oil	Royalties	882.77
-2004	OK	40077	Oil & Gas	Other Revenues	1255.61
-2004	OK	40077	Oil & Gas	Other Roy Vals	602.83
-2004	OK	40077	Coal	Royalties	-546.61
-2004	OK	40077	Gas	Royalties	139716.37
-2004	OK	40079	Coal	Other Revenues	-51720.91
-2004	OK	40079	Oil & Gas	Other Revenues	-461.13
-2004	OK	40079	Oil & Gas	Other Roy Vals	149.58
-2004	OK	40079	Coal	Royalties	-58468.37
-2004	OK	40079	Coal	Royalties	-839.31
-2004	OK	40079	Gas	Royalties	347.36
-2004	OK	40079	Gas	Royalties	32207.82
-2004	OK	40081	Gas	Royalties	911.67
-2004	OK	40081	Oil	Royalties	2977.7
-2004	OK	40083	Gas	Royalties	320.16
-2004	OK	40083	Oil	Royalties	49.7
-2004	OK	40087	Oil	Royalties	121.38
-2004	OK	40091	Gas	Royalties	2029.47
-2004	OK	40093	Oil & Gas	Other Revenues	0.03
-2004	OK	40093	Oil & Gas	Other Roy Vals	-5638.33
-2004	OK	40093	Gas	Royalties	12110.82
-2004	OK	40093	Gas	Royalties	48149.62
-2004	OK	40093	Gas	Royalties	636233.48
-2004	OK	40093	Oil	Royalties	22279.02
-2004	OK	40093	Oil	Royalties	6.49
-2004	OK	40093	Oil	Royalties	107233.34
-2004	OK	40109	Oil & Gas	Other Revenues	0.21
-2004	OK	40109	Gas	Royalties	885.03
-2004	OK	40109	Oil	Royalties	42.92
-2004	OK	40119	Oil & Gas	Other Roy Vals	3000
-2004	OK	40119	Gas	Royalties	59701.56
-2004	OK	40119	Gas	Royalties	2485.01
-2004	OK	40119	Oil	Royalties	552.45
-2004	OK	40121	Oil & Gas	Other Revenues	29.2
-2004	OK	40121	Oil & Gas	Other Roy Vals	3894.14
-2004	OK	40121	Gas	Royalties	678693.64
-2004	OK	40129	Oil & Gas	Other Revenues	1606.57
-2004	OK	40129	Oil & Gas	Other Roy Vals	18140.34
-2004	OK	40129	Gas	Royalties	35212.58
-2004	OK	40129	Gas	Royalties	173193.54
-2004	OK	40129	Gas	Royalties	2469663.32
-2004	OK	40129	Oil	Royalties	51379.66
-2004	OK	40129	Oil	Royalties	34035.83
-2004	OK	40135	Gas	Royalties	19909.52
-2004	OK	40139	Oil & Gas	Other Revenues	-50.48
-2004	OK	40139	Oil & Gas	Other Roy Vals	515.92
-2004	OK	40139	Gas	Royalties	9816
-2004	OK	40139	Gas	Royalties	39038.75
-2004	OK	40139	Gas	Royalties	94592.87
-2004	OK	40139	Oil	Royalties	1792.89
-2004	OK	40139	Oil	Royalties	428.15
-2004	OK	40141	Oil	Royalties	35007.73
-2004	OK	40151	Oil & Gas	Other Revenues	0.04
-2004	OK	40151	Oil & Gas	Other Roy Vals	23345.52
-2004	OK	40151	Gas	Royalties	2829.71
-2004	OK	40151	Gas	Royalties	58372.54
-2004	OK	40151	Gas	Royalties	707929.76
-2004	OK	40151	Oil	Royalties	8644.4
-2004	OK	40151	Oil	Royalties	47163.49
-2004	OK	40153	Oil & Gas	Other Revenues	960
-2004	OK	40153	Oil & Gas	Other Roy Vals	2941.83
-2004	OK	40153	Gas	Royalties	265919.22
-2004	OK	40153	Oil	Royalties	3644.4
-2004	OK	40153	Oil	Royalties	6937.85
-2005	OK	40003	Oil & Gas	Other Revenues	50
-2005	OK	40003	Oil & Gas	Other Roy Vals	-600
-2005	OK	40003	Gas	Royalties	98973.41
-2005	OK	40003	Oil	Royalties	6064.71
-2005	OK	40003	Oil	Royalties	4223.49
-2005	OK	40007	Oil & Gas	Other Revenues	-0.02
-2005	OK	40007	Oil & Gas	Other Roy Vals	782.36
-2005	OK	40007	Gas	Royalties	8687.81
-2005	OK	40007	Gas	Royalties	16125.73
-2005	OK	40007	Gas	Royalties	107314.41
-2005	OK	40007	Oil	Royalties	3277.79
-2005	OK	40007	Oil	Royalties	19729.76
-2005	OK	40009	Oil & Gas	Other Revenues	144
-2005	OK	40009	Oil & Gas	Other Roy Vals	-10016.54
-2005	OK	40009	Gas	Royalties	2877.04
-2005	OK	40009	Gas	Royalties	22155.7
-2005	OK	40009	Gas	Royalties	807695.64
-2005	OK	40009	Oil	Royalties	3803.35
-2005	OK	40009	Oil	Royalties	2031.76
-2005	OK	40011	Oil & Gas	Other Revenues	12.18
-2005	OK	40011	Oil & Gas	Other Roy Vals	7326.3
-2005	OK	40011	Gas	Royalties	5511.67
-2005	OK	40011	Gas	Royalties	2034.5
-2005	OK	40011	Gas	Royalties	222481.33
-2005	OK	40011	Oil	Royalties	14534.55
-2005	OK	40011	Oil	Royalties	5815.6
-2005	OK	40017	Oil & Gas	Other Revenues	-0.34
-2005	OK	40017	Oil & Gas	Other Roy Vals	163.83
-2005	OK	40017	Gas	Royalties	-6515.58
-2005	OK	40017	Gas	Royalties	-15501.48
-2005	OK	40017	Gas	Royalties	77717.46
-2005	OK	40017	Oil	Royalties	7367.55
-2005	OK	40017	Oil	Royalties	10023.41
-2005	OK	40025	Gas	Royalties	1561.68
-2005	OK	40025	Oil	Royalties	653.4
-2005	OK	40029	Gas	Royalties	18045.79
-2005	OK	40029	Oil	Royalties	7.34
-2005	OK	40031	Oil	Royalties	9253.99
-2005	OK	40037	Oil	Royalties	257.23
-2005	OK	40039	Oil & Gas	Other Revenues	70
-2005	OK	40039	Oil & Gas	Other Roy Vals	18842.67
-2005	OK	40039	Gas	Royalties	3813.17
-2005	OK	40039	Gas	Royalties	17851.97
-2005	OK	40039	Gas	Royalties	280380.16
-2005	OK	40039	Oil	Royalties	11910.54
-2005	OK	40039	Oil	Royalties	7913.31
-2005	OK	40043	Oil & Gas	Other Revenues	152.29
-2005	OK	40043	Oil & Gas	Other Roy Vals	-2674.17
-2005	OK	40043	Gas	Royalties	22204.42
-2005	OK	40043	Gas	Royalties	37079.43
-2005	OK	40043	Gas	Royalties	523494.33
-2005	OK	40043	Oil	Royalties	11486.67
-2005	OK	40043	Oil	Royalties	81124.14
-2005	OK	40045	Oil & Gas	Other Revenues	560
-2005	OK	40045	Oil & Gas	Other Roy Vals	-7.36
-2005	OK	40045	Gas	Royalties	207.97
-2005	OK	40045	Gas	Royalties	10748.94
-2005	OK	40045	Gas	Royalties	236825.85
-2005	OK	40045	Oil	Royalties	38511.27
-2005	OK	40045	Oil	Royalties	27929.99
-2005	OK	40047	Oil & Gas	Other Roy Vals	2178
-2005	OK	40047	Gas	Royalties	60831.45
-2005	OK	40047	Oil	Royalties	4359.87
-2005	OK	40047	Oil	Royalties	57.05
-2005	OK	40049	Oil & Gas	Other Roy Vals	-200
-2005	OK	40049	Oil	Royalties	4783.75
-2005	OK	40049	Oil	Royalties	83.51
-2005	OK	40051	Oil & Gas	Other Revenues	-0.33
-2005	OK	40051	Oil & Gas	Other Roy Vals	1736.3
-2005	OK	40051	Gas	Royalties	127.31
-2005	OK	40051	Gas	Royalties	1465.44
-2005	OK	40051	Gas	Royalties	-10237.23
-2005	OK	40051	Oil	Royalties	2747.06
-2005	OK	40051	Oil	Royalties	3331.99
-2005	OK	40055	Oil & Gas	Other Roy Vals	-141
-2005	OK	40055	Gas	Royalties	2918.52
-2005	OK	40059	Oil & Gas	Other Revenues	80
-2005	OK	40059	Oil & Gas	Other Roy Vals	1441.25
-2005	OK	40059	Gas	Royalties	47202.06
-2005	OK	40059	Oil	Royalties	1153.68
-2005	OK	40061	Oil & Gas	Other Revenues	2704.44
-2005	OK	40061	Oil & Gas	Other Roy Vals	-1733.78
-2005	OK	40061	Gas	Royalties	5589.73
-2005	OK	40061	Gas	Royalties	223156.86
-2005	OK	40063	Oil & Gas	Other Roy Vals	56.5
-2005	OK	40063	Gas	Royalties	1373.35
-2005	OK	40073	Oil & Gas	Other Roy Vals	2390
-2005	OK	40073	Gas	Royalties	100506.9
-2005	OK	40073	Oil	Royalties	5501.94
-2005	OK	40073	Oil	Royalties	3380.51
-2005	OK	40077	Oil & Gas	Other Revenues	11.43
-2005	OK	40077	Oil & Gas	Other Roy Vals	9778.58
-2005	OK	40077	Gas	Royalties	174610.22
-2005	OK	40079	Coal	Other Revenues	-21293.25
-2005	OK	40079	Oil & Gas	Other Revenues	1003.78
-2005	OK	40079	Oil & Gas	Other Roy Vals	1412.59
-2005	OK	40079	Gas	Royalties	39577.13
-2005	OK	40079	Solids	Royalties	-0.02
-2005	OK	40081	Gas	Royalties	767.18
-2005	OK	40081	Oil	Royalties	4569.24
-2005	OK	40083	Gas	Royalties	366.78
-2005	OK	40083	Oil	Royalties	58.88
-2005	OK	40087	Oil	Royalties	71.22
-2005	OK	40091	Gas	Royalties	1928.75
-2005	OK	40093	Oil & Gas	Other Revenues	265
-2005	OK	40093	Oil & Gas	Other Roy Vals	10985.77
-2005	OK	40093	Gas	Royalties	17066.75
-2005	OK	40093	Gas	Royalties	111810.33
-2005	OK	40093	Gas	Royalties	693407.17
-2005	OK	40093	Oil	Royalties	21844.92
-2005	OK	40093	Oil	Royalties	44.34
-2005	OK	40093	Oil	Royalties	150601.93
-2005	OK	40109	Gas	Royalties	1211.85
-2005	OK	40109	Oil	Royalties	61.05
-2005	OK	40119	Gas	Royalties	15068.07
-2005	OK	40119	Gas	Royalties	78.16
-2005	OK	40119	Oil	Royalties	12.14
-2005	OK	40121	Oil & Gas	Other Revenues	63.55
-2005	OK	40121	Oil & Gas	Other Roy Vals	32338.85
-2005	OK	40121	Gas	Royalties	1024236.67
-2005	OK	40121	Oil	Royalties	12.93
-2005	OK	40129	Oil & Gas	Other Revenues	847.68
-2005	OK	40129	Oil & Gas	Other Roy Vals	57944.78
-2005	OK	40129	Gas	Royalties	6832.1
-2005	OK	40129	Gas	Royalties	112265.64
-2005	OK	40129	Gas	Royalties	415822.79
-2005	OK	40129	Gas	Royalties	2705687.58
-2005	OK	40129	Oil	Royalties	69648.38
-2005	OK	40129	Oil	Royalties	96482.16
-2005	OK	40135	Gas	Royalties	31069.49
-2005	OK	40139	Oil & Gas	Other Revenues	-36.05
-2005	OK	40139	Oil & Gas	Other Roy Vals	1477.33
-2005	OK	40139	Gas	Royalties	11870.61
-2005	OK	40139	Gas	Royalties	46036.49
-2005	OK	40139	Gas	Royalties	93624.05
-2005	OK	40139	Oil	Royalties	253.07
-2005	OK	40139	Oil	Royalties	419.43
-2005	OK	40141	Oil	Royalties	26962.62
-2005	OK	40151	Oil & Gas	Other Roy Vals	19248.08
-2005	OK	40151	Gas	Royalties	3149.59
-2005	OK	40151	Gas	Royalties	36839.54
-2005	OK	40151	Gas	Royalties	743115.65
-2005	OK	40151	Oil	Royalties	9625.63
-2005	OK	40151	Oil	Royalties	56759.33
-2005	OK	40153	Oil & Gas	Other Revenues	-640
-2005	OK	40153	Oil & Gas	Other Roy Vals	9069.6
-2005	OK	40153	Gas	Royalties	336617.95
-2005	OK	40153	Oil	Royalties	4524.67
-2005	OK	40153	Oil	Royalties	7760.83
-2006	OK	40003	Oil & Gas	Other Roy Vals	-100
-2006	OK	40003	Gas	Royalties	118927.45
-2006	OK	40003	Oil	Royalties	7177.01
-2006	OK	40003	Oil	Royalties	7878.03
-2006	OK	40007	Oil & Gas	Other Revenues	24
-2006	OK	40007	Oil & Gas	Other Roy Vals	279.58
-2006	OK	40007	Gas	Royalties	9448.94
-2006	OK	40007	Gas	Royalties	11779.5
-2006	OK	40007	Gas	Royalties	112788.73
-2006	OK	40007	Oil	Royalties	4686.65
-2006	OK	40007	Oil	Royalties	26634.21
-2006	OK	40009	Oil	Other Revenues	-67.5
-2006	OK	40009	Oil & Gas	Other Revenues	1076.05
-2006	OK	40009	Oil & Gas	Other Roy Vals	10737.55
-2006	OK	40009	Gas	Royalties	8050.05
-2006	OK	40009	Gas	Royalties	36540.96
-2006	OK	40009	Gas	Royalties	1111561.68
-2006	OK	40009	Oil	Royalties	5303.05
-2006	OK	40009	Oil	Royalties	4214.2
-2006	OK	40011	Oil & Gas	Other Revenues	-12.18
-2006	OK	40011	Oil & Gas	Other Roy Vals	-5268.56
-2006	OK	40011	Gas	Royalties	4832.33
-2006	OK	40011	Gas	Royalties	290331.1
-2006	OK	40011	Oil	Royalties	11960.21
-2006	OK	40011	Oil	Royalties	21441.71
-2006	OK	40017	Oil & Gas	Other Roy Vals	8784
-2006	OK	40017	Gas	Royalties	1814.05
-2006	OK	40017	Gas	Royalties	3810.75
-2006	OK	40017	Gas	Royalties	118709.6
-2006	OK	40017	Oil	Royalties	5780.92
-2006	OK	40017	Oil	Royalties	13659.59
-2006	OK	40025	Gas	Royalties	159.91
-2006	OK	40029	Gas	Royalties	58938.53
-2006	OK	40031	Oil	Royalties	9032.81
-2006	OK	40037	Oil	Royalties	315.41
-2006	OK	40039	Oil & Gas	Other Revenues	70
-2006	OK	40039	Oil & Gas	Other Roy Vals	-4893.23
-2006	OK	40039	Gas	Royalties	6420.28
-2006	OK	40039	Gas	Royalties	22920.1
-2006	OK	40039	Gas	Royalties	332903.73
-2006	OK	40039	Oil	Royalties	12315.49
-2006	OK	40039	Oil	Royalties	8637.37
-2006	OK	40043	Oil & Gas	Other Revenues	484.57
-2006	OK	40043	Oil & Gas	Other Roy Vals	4389.3
-2006	OK	40043	Gas	Royalties	50552.72
-2006	OK	40043	Gas	Royalties	44653.65
-2006	OK	40043	Gas	Royalties	542133.03
-2006	OK	40043	Oil	Royalties	14071.12
-2006	OK	40043	Oil	Royalties	116132.02
-2006	OK	40043	Oil & Gas	Royalties	-0.01
-2006	OK	40045	Oil & Gas	Other Revenues	437.75
-2006	OK	40045	Oil & Gas	Other Roy Vals	7741.8
-2006	OK	40045	Gas	Royalties	345.29
-2006	OK	40045	Gas	Royalties	8902.4
-2006	OK	40045	Gas	Royalties	248714.06
-2006	OK	40045	Oil	Royalties	33578.78
-2006	OK	40045	Oil	Royalties	31077.23
-2006	OK	40045	Oil & Gas	Royalties	-6.09
-2006	OK	40047	Oil & Gas	Other Roy Vals	-4300
-2006	OK	40047	Gas	Royalties	60
-2006	OK	40047	Gas	Royalties	135.59
-2006	OK	40047	Gas	Royalties	57208.12
-2006	OK	40047	Oil	Royalties	5042.65
-2006	OK	40047	Oil	Royalties	106.24
-2006	OK	40049	Oil & Gas	Other Revenues	320
-2006	OK	40049	Gas	Royalties	7447.69
-2006	OK	40049	Oil	Royalties	20412.98
-2006	OK	40051	Oil & Gas	Other Roy Vals	-558.34
-2006	OK	40051	Gas	Royalties	942.35
-2006	OK	40051	Gas	Royalties	27315.67
-2006	OK	40051	Oil	Royalties	1360.93
-2006	OK	40051	Oil	Royalties	1741.38
-2006	OK	40055	Gas	Royalties	5931.14
-2006	OK	40055	Oil	Royalties	117.32
-2006	OK	40059	Oil & Gas	Other Roy Vals	-96.68
-2006	OK	40059	Gas	Royalties	67412.07
-2006	OK	40059	Oil	Royalties	408.77
-2006	OK	40059	Oil	Royalties	549.37
-2006	OK	40061	Oil & Gas	Other Revenues	130.5
-2006	OK	40061	Oil & Gas	Other Roy Vals	1291.61
-2006	OK	40061	Gas	Royalties	6646.24
-2006	OK	40061	Gas	Royalties	279004.73
-2006	OK	40063	Oil & Gas	Other Roy Vals	-51.5
-2006	OK	40063	Gas	Royalties	689.3
-2006	OK	40073	Gas	Royalties	26.03
-2006	OK	40073	Gas	Royalties	56.24
-2006	OK	40073	Gas	Royalties	67628.81
-2006	OK	40073	Oil	Royalties	4033.65
-2006	OK	40073	Oil	Royalties	3027.41
-2006	OK	40077	Oil & Gas	Other Revenues	-80.22
-2006	OK	40077	Oil & Gas	Other Roy Vals	-3306.64
-2006	OK	40077	Gas	Royalties	227518.4
-2006	OK	40079	Oil & Gas	Other Revenues	115.02
-2006	OK	40079	Oil & Gas	Other Roy Vals	78.91
-2006	OK	40079	Gas	Royalties	46925.77
-2006	OK	40079	Solids	Royalties	-0.01
-2006	OK	40081	Gas	Royalties	162.49
-2006	OK	40081	Gas	Royalties	823.01
-2006	OK	40081	Oil	Royalties	7146.74
-2006	OK	40083	Gas	Royalties	541.14
-2006	OK	40083	Oil	Royalties	87.83
-2006	OK	40087	Oil	Royalties	81.93
-2006	OK	40091	Gas	Royalties	1922.87
-2006	OK	40093	Oil & Gas	Other Revenues	15297.53
-2006	OK	40093	Oil & Gas	Other Roy Vals	-228
-2006	OK	40093	Gas	Royalties	17707.03
-2006	OK	40093	Gas	Royalties	101395.65
-2006	OK	40093	Gas	Royalties	898661.06
-2006	OK	40093	Oil	Royalties	21349.92
-2006	OK	40093	Oil	Royalties	66.88
-2006	OK	40093	Oil	Royalties	230783.45
-2006	OK	40109	Gas	Royalties	989.66
-2006	OK	40109	Oil	Royalties	42.15
-2006	OK	40119	Gas	Royalties	3110.51
-2006	OK	40119	Gas	Royalties	6474.27
-2006	OK	40119	Oil	Royalties	1820.97
-2006	OK	40121	Oil	Other Revenues	-60
-2006	OK	40121	Oil & Gas	Other Revenues	-842.36
-2006	OK	40121	Oil & Gas	Other Roy Vals	-26456.99
-2006	OK	40121	Gas	Royalties	860193.44
-2006	OK	40121	Oil	Royalties	-2.14
-2006	OK	40129	Oil & Gas	Other Revenues	1588.1
-2006	OK	40129	Oil	Other Roy Vals	-0.01
-2006	OK	40129	Oil & Gas	Other Roy Vals	23989.47
-2006	OK	40129	Gas	Royalties	6113.21
-2006	OK	40129	Gas	Royalties	241793.54
-2006	OK	40129	Gas	Royalties	707121.11
-2006	OK	40129	Gas	Royalties	2802933.84
-2006	OK	40129	Oil	Royalties	86205.08
-2006	OK	40129	Oil	Royalties	85161.61
-2006	OK	40129	Oil & Gas	Royalties	-0.1
-2006	OK	40135	Gas	Royalties	26942.55
-2006	OK	40135	Oil	Royalties	-10922.35
-2006	OK	40139	Oil & Gas	Other Revenues	-79.25
-2006	OK	40139	Oil & Gas	Other Roy Vals	1019
-2006	OK	40139	Gas	Royalties	15228.48
-2006	OK	40139	Gas	Royalties	44918.1
-2006	OK	40139	Gas	Royalties	81292.49
-2006	OK	40139	Oil	Royalties	671.97
-2006	OK	40139	Oil	Royalties	757.34
-2006	OK	40141	Oil	Royalties	36526.11
-2006	OK	40151	Oil & Gas	Other Revenues	490
-2006	OK	40151	Oil & Gas	Other Roy Vals	98.31
-2006	OK	40151	Gas	Royalties	3275.18
-2006	OK	40151	Gas	Royalties	29455.23
-2006	OK	40151	Gas	Royalties	1022566.63
-2006	OK	40151	Oil	Royalties	9379.07
-2006	OK	40151	Oil	Royalties	121970.98
-2006	OK	40153	Oil & Gas	Other Roy Vals	-1844.75
-2006	OK	40153	Gas	Royalties	443444.9
-2006	OK	40153	Oil	Royalties	5431.67
-2006	OK	40153	Oil	Royalties	15485.76
-2007	OK	40003	Oil & Gas	Other Roy Vals	91.5
-2007	OK	40003	Gas	Royalties	110857.5
-2007	OK	40003	Oil	Royalties	6071.59
-2007	OK	40003	Oil	Royalties	6130.13
-2007	OK	40007	Oil & Gas	Other Roy Vals	339.39
-2007	OK	40007	Gas	Royalties	8619.6
-2007	OK	40007	Gas	Royalties	9289.78
-2007	OK	40007	Gas	Royalties	92724.5
-2007	OK	40007	Oil	Royalties	-2066.18
-2007	OK	40007	Oil	Royalties	34069.79
-2007	OK	40009	Oil & Gas	Other Revenues	1360
-2007	OK	40009	Oil & Gas	Other Roy Vals	-18494.56
-2007	OK	40009	Gas	Royalties	8535.4
-2007	OK	40009	Gas	Royalties	30691.49
-2007	OK	40009	Gas	Royalties	767495.14
-2007	OK	40009	Oil	Royalties	1745.64
-2007	OK	40009	Oil	Royalties	3642.81
-2007	OK	40011	Oil & Gas	Other Roy Vals	13277.12
-2007	OK	40011	Gas	Royalties	7114.2
-2007	OK	40011	Gas	Royalties	7887.6
-2007	OK	40011	Gas	Royalties	277592.31
-2007	OK	40011	Oil	Royalties	14228.23
-2007	OK	40011	Oil	Royalties	23237.46
-2007	OK	40017	Oil & Gas	Other Roy Vals	649.94
-2007	OK	40017	Gas	Royalties	560.71
-2007	OK	40017	Gas	Royalties	795.31
-2007	OK	40017	Gas	Royalties	115937.21
-2007	OK	40017	Oil	Royalties	8468.52
-2007	OK	40017	Oil	Royalties	14059.62
-2007	OK	40029	Oil & Gas	Other Roy Vals	15000
-2007	OK	40029	Gas	Royalties	-318.61
-2007	OK	40029	Gas	Royalties	-4694.9
-2007	OK	40029	Gas	Royalties	356668.76
-2007	OK	40029	Oil	Royalties	592.86
-2007	OK	40031	Oil	Royalties	8726.26
-2007	OK	40037	Oil	Royalties	311.66
-2007	OK	40039	Oil & Gas	Other Revenues	140
-2007	OK	40039	Oil & Gas	Other Roy Vals	-1814.15
-2007	OK	40039	Gas	Royalties	77
-2007	OK	40039	Gas	Royalties	5096.16
-2007	OK	40039	Gas	Royalties	14179.48
-2007	OK	40039	Gas	Royalties	220502.95
-2007	OK	40039	Oil	Royalties	10773.88
-2007	OK	40039	Oil	Royalties	8746.54
-2007	OK	40043	Oil & Gas	Other Revenues	372.16
-2007	OK	40043	Oil & Gas	Other Roy Vals	3957.75
-2007	OK	40043	Gas	Royalties	16364.01
-2007	OK	40043	Gas	Royalties	21866.86
-2007	OK	40043	Gas	Royalties	429281.38
-2007	OK	40043	Oil	Royalties	11724.99
-2007	OK	40043	Oil	Royalties	67618.22
-2007	OK	40045	Oil & Gas	Other Revenues	432.92
-2007	OK	40045	Oil & Gas	Other Roy Vals	1170
-2007	OK	40045	Gas	Royalties	773.19
-2007	OK	40045	Gas	Royalties	7926.17
-2007	OK	40045	Gas	Royalties	188906.58
-2007	OK	40045	Oil	Royalties	66761.62
-2007	OK	40045	Oil	Royalties	5.02
-2007	OK	40045	Oil	Royalties	33528.99
-2007	OK	40047	Oil & Gas	Other Roy Vals	1100
-2007	OK	40047	Gas	Royalties	34.32
-2007	OK	40047	Gas	Royalties	60.33
-2007	OK	40047	Gas	Royalties	54380.25
-2007	OK	40047	Oil	Royalties	4056.47
-2007	OK	40047	Oil	Royalties	111.02
-2007	OK	40049	Oil & Gas	Other Revenues	320
-2007	OK	40049	Gas	Royalties	29956.4
-2007	OK	40049	Oil	Royalties	33229.61
-2007	OK	40051	Oil & Gas	Other Roy Vals	94.8
-2007	OK	40051	Gas	Royalties	15.03
-2007	OK	40051	Gas	Royalties	342.52
-2007	OK	40051	Gas	Royalties	41022.75
-2007	OK	40051	Oil	Royalties	3710.09
-2007	OK	40051	Oil	Royalties	1759.45
-2007	OK	40055	Oil & Gas	Other Roy Vals	1178.09
-2007	OK	40055	Gas	Royalties	7676.31
-2007	OK	40055	Oil	Royalties	147.36
-2007	OK	40059	Oil & Gas	Other Roy Vals	-309.66
-2007	OK	40059	Gas	Royalties	2298.14
-2007	OK	40059	Gas	Royalties	1818.8
-2007	OK	40059	Gas	Royalties	30886.07
-2007	OK	40059	Oil	Royalties	308.34
-2007	OK	40059	Oil	Royalties	252.34
-2007	OK	40061	Oil & Gas	Other Revenues	-179.3
-2007	OK	40061	Oil & Gas	Other Roy Vals	-878.06
-2007	OK	40061	Gas	Royalties	4249.17
-2007	OK	40061	Gas	Royalties	171812.61
-2007	OK	40063	Oil & Gas	Other Roy Vals	202.09
-2007	OK	40063	Gas	Royalties	26003.51
-2007	OK	40073	Oil & Gas	Other Roy Vals	94.33
-2007	OK	40073	Gas	Royalties	952.15
-2007	OK	40073	Gas	Royalties	1306.51
-2007	OK	40073	Gas	Royalties	41454.06
-2007	OK	40073	Oil	Royalties	2964.79
-2007	OK	40073	Oil	Royalties	3096.19
-2007	OK	40077	Coal	Other Revenues	-37559.22
-2007	OK	40077	Oil & Gas	Other Revenues	70.47
-2007	OK	40077	Oil & Gas	Other Roy Vals	-6018.38
-2007	OK	40077	Gas	Royalties	275291.95
-2007	OK	40079	Oil & Gas	Other Revenues	-1.15
-2007	OK	40079	Oil & Gas	Other Roy Vals	3308.25
-2007	OK	40079	Gas	Royalties	508.53
-2007	OK	40079	Gas	Royalties	84596.15
-2007	OK	40081	Gas	Royalties	482.93
-2007	OK	40081	Oil	Royalties	9407.79
-2007	OK	40083	Gas	Royalties	471.76
-2007	OK	40083	Oil	Royalties	87.09
-2007	OK	40087	Oil	Royalties	93.03
-2007	OK	40091	Gas	Other Roy Vals	191.37
-2007	OK	40091	Oil & Gas	Other Roy Vals	265
-2007	OK	40091	Gas	Royalties	4404.71
-2007	OK	40093	Oil & Gas	Other Revenues	-14974.5
-2007	OK	40093	Oil & Gas	Other Roy Vals	34972.24
-2007	OK	40093	Gas	Royalties	15695.46
-2007	OK	40093	Gas	Royalties	82261.74
-2007	OK	40093	Gas	Royalties	886168.23
-2007	OK	40093	Oil	Royalties	24985.19
-2007	OK	40093	Oil	Royalties	312.3
-2007	OK	40093	Oil	Royalties	368329.41
-2007	OK	40109	Gas	Royalties	1072.79
-2007	OK	40109	Oil	Royalties	82.46
-2007	OK	40119	Gas	Royalties	3532.63
-2007	OK	40119	Oil	Royalties	15.58
-2007	OK	40121	Oil & Gas	Other Revenues	1063.4
-2007	OK	40121	Oil & Gas	Other Roy Vals	5339.38
-2007	OK	40121	Gas	Royalties	934428.56
-2007	OK	40129	Oil & Gas	Other Revenues	219.3
-2007	OK	40129	Oil & Gas	Other Roy Vals	63464.54
-2007	OK	40129	Gas	Royalties	4021.06
-2007	OK	40129	Gas	Royalties	216498.85
-2007	OK	40129	Gas	Royalties	526714.01
-2007	OK	40129	Gas	Royalties	2472142.22
-2007	OK	40129	Oil	Royalties	70018.24
-2007	OK	40129	Oil	Royalties	68773.28
-2007	OK	40135	Oil & Gas	Other Revenues	-469
-2007	OK	40135	Gas	Royalties	25186.88
-2007	OK	40139	Oil & Gas	Other Revenues	-87.74
-2007	OK	40139	Oil & Gas	Other Roy Vals	-3951.12
-2007	OK	40139	Gas	Royalties	16574.21
-2007	OK	40139	Gas	Royalties	37445.69
-2007	OK	40139	Gas	Royalties	57297.25
-2007	OK	40139	Oil	Royalties	342.36
-2007	OK	40139	Oil	Royalties	328225.72
-2007	OK	40141	Oil	Royalties	44646.52
-2007	OK	40151	Oil & Gas	Other Revenues	97.09
-2007	OK	40151	Oil & Gas	Other Roy Vals	53970.24
-2007	OK	40151	Gas	Royalties	6765.49
-2007	OK	40151	Gas	Royalties	18597.16
-2007	OK	40151	Gas	Royalties	1381953.7
-2007	OK	40151	Oil	Royalties	10939.28
-2007	OK	40151	Oil	Royalties	425816.87
-2007	OK	40153	Oil & Gas	Other Revenues	2.41
-2007	OK	40153	Oil & Gas	Other Roy Vals	16221.69
-2007	OK	40153	Gas	Royalties	474153.48
-2007	OK	40153	Oil	Royalties	6936.15
-2007	OK	40153	Oil	Royalties	23639.04
-2008	OK	40003	Oil & Gas	Other Roy Vals	375.5
-2008	OK	40003	Gas	Royalties	143137.89
-2008	OK	40003	Oil	Royalties	7194.66
-2008	OK	40003	Oil	Royalties	15409.05
-2008	OK	40005	Oil & Gas	Other Roy Vals	5000
-2008	OK	40005	Gas	Royalties	21978.17
-2008	OK	40007	Oil & Gas	Other Revenues	-71.99
-2008	OK	40007	Oil & Gas	Other Roy Vals	639.16
-2008	OK	40007	Gas	Royalties	14588.99
-2008	OK	40007	Gas	Royalties	10820.6
-2008	OK	40007	Gas	Royalties	105836.29
-2008	OK	40007	Oil	Royalties	1673.96
-2008	OK	40007	Oil	Royalties	57709.56
-2008	OK	40009	Oil & Gas	Other Revenues	1360
-2008	OK	40009	Oil & Gas	Other Roy Vals	-20446.64
-2008	OK	40009	Gas	Royalties	14687.87
-2008	OK	40009	Gas	Royalties	35343.14
-2008	OK	40009	Gas	Royalties	658691.1
-2008	OK	40009	Oil	Royalties	5222.51
-2008	OK	40009	Oil	Royalties	6097.17
-2008	OK	40011	Oil & Gas	Other Revenues	320
-2008	OK	40011	Oil & Gas	Other Roy Vals	-3757.39
-2008	OK	40011	Gas	Royalties	13678.89
-2008	OK	40011	Gas	Royalties	10814.19
-2008	OK	40011	Gas	Royalties	319570.67
-2008	OK	40011	Oil	Royalties	15542.84
-2008	OK	40011	Oil	Royalties	37038.57
-2008	OK	40017	Oil & Gas	Other Revenues	17.79
-2008	OK	40017	Oil & Gas	Other Roy Vals	-671.65
-2008	OK	40017	Gas	Royalties	7441.37
-2008	OK	40017	Gas	Royalties	13342.59
-2008	OK	40017	Gas	Royalties	148197.61
-2008	OK	40017	Oil	Royalties	1593.42
-2008	OK	40017	Oil	Royalties	38003.26
-2008	OK	40029	Oil & Gas	Other Roy Vals	34250
-2008	OK	40029	Gas	Royalties	318.61
-2008	OK	40029	Gas	Royalties	4694.9
-2008	OK	40029	Gas	Royalties	732063.91
-2008	OK	40029	Oil	Royalties	14759.21
-2008	OK	40029	Oil	Royalties	2783.51
-2008	OK	40031	Oil	Royalties	13354.47
-2008	OK	40037	Oil	Royalties	471.5
-2008	OK	40039	Oil & Gas	Other Revenues	70
-2008	OK	40039	Oil & Gas	Other Roy Vals	-2124.74
-2008	OK	40039	Gas	Royalties	9195.75
-2008	OK	40039	Gas	Royalties	19508.46
-2008	OK	40039	Gas	Royalties	242579.69
-2008	OK	40039	Oil	Royalties	13875.08
-2008	OK	40039	Oil	Royalties	12999.07
-2008	OK	40043	Oil & Gas	Other Revenues	307
-2008	OK	40043	Oil & Gas	Other Roy Vals	4386.92
-2008	OK	40043	Gas	Royalties	92453.69
-2008	OK	40043	Gas	Royalties	126774.5
-2008	OK	40043	Gas	Royalties	452637.74
-2008	OK	40043	Oil	Royalties	11910.06
-2008	OK	40043	Oil	Royalties	95204.59
-2008	OK	40045	Oil & Gas	Other Revenues	418.94
-2008	OK	40045	Oil & Gas	Other Roy Vals	5301.68
-2008	OK	40045	Gas	Royalties	3492.54
-2008	OK	40045	Gas	Royalties	13824.38
-2008	OK	40045	Gas	Royalties	364877.6
-2008	OK	40045	Oil	Royalties	40809.39
-2008	OK	40045	Oil	Royalties	250.76
-2008	OK	40045	Oil	Royalties	83109.69
-2008	OK	40047	Gas	Royalties	39.91
-2008	OK	40047	Gas	Royalties	52.93
-2008	OK	40047	Gas	Royalties	53312.39
-2008	OK	40047	Oil	Royalties	7436.46
-2008	OK	40047	Oil	Royalties	165.69
-2008	OK	40049	Oil & Gas	Other Revenues	320
-2008	OK	40049	Gas	Royalties	23225.8
-2008	OK	40049	Oil	Royalties	22212.26
-2008	OK	40051	Oil & Gas	Other Revenues	69
-2008	OK	40051	Oil & Gas	Other Roy Vals	-105.33
-2008	OK	40051	Gas	Royalties	126.02
-2008	OK	40051	Gas	Royalties	492.38
-2008	OK	40051	Gas	Royalties	25510.04
-2008	OK	40051	Oil	Royalties	156.17
-2008	OK	40051	Oil	Royalties	9561.54
-2008	OK	40055	Oil & Gas	Other Roy Vals	450
-2008	OK	40055	Gas	Royalties	8596.14
-2008	OK	40059	Oil & Gas	Other Roy Vals	-1575.05
-2008	OK	40059	Gas	Royalties	-42.89
-2008	OK	40059	Gas	Royalties	2669.74
-2008	OK	40059	Gas	Royalties	29953.12
-2008	OK	40059	Oil	Royalties	678.32
-2008	OK	40059	Oil	Royalties	159.09
-2008	OK	40061	Oil & Gas	Other Revenues	691.7
-2008	OK	40061	Oil & Gas	Other Roy Vals	-784.21
-2008	OK	40061	Gas	Royalties	5960.41
-2008	OK	40061	Gas	Royalties	225477.77
-2008	OK	40063	Oil & Gas	Other Roy Vals	-132.94
-2008	OK	40063	Gas	Royalties	3311.64
-2008	OK	40073	Oil & Gas	Other Roy Vals	1227.67
-2008	OK	40073	Gas	Royalties	11130.57
-2008	OK	40073	Gas	Royalties	20040.77
-2008	OK	40073	Gas	Royalties	22858.09
-2008	OK	40073	Oil	Royalties	5114.77
-2008	OK	40073	Oil	Royalties	3782.55
-2008	OK	40077	Oil & Gas	Other Revenues	-38.94
-2008	OK	40077	Oil & Gas	Other Roy Vals	1863.68
-2008	OK	40077	Gas	Royalties	18170.68
-2008	OK	40077	Gas	Royalties	205464.72
-2008	OK	40079	Oil & Gas	Other Revenues	46.25
-2008	OK	40079	Oil & Gas	Other Roy Vals	-311.81
-2008	OK	40079	Gas	Royalties	6888.53
-2008	OK	40079	Gas	Royalties	89719.98
-2008	OK	40079	Oil	Royalties	657.79
-2008	OK	40081	Gas	Royalties	117.52
-2008	OK	40081	Oil	Royalties	4510.27
-2008	OK	40083	Gas	Royalties	587.2
-2008	OK	40083	Oil	Royalties	250.83
-2008	OK	40087	Oil	Royalties	106.55
-2008	OK	40091	Gas	Other Roy Vals	85.7
-2008	OK	40091	Oil & Gas	Other Roy Vals	-28
-2008	OK	40091	Gas	Royalties	2135.36
-2008	OK	40093	Oil & Gas	Other Revenues	494
-2008	OK	40093	Oil & Gas	Other Roy Vals	1796.81
-2008	OK	40093	Gas	Royalties	20821.53
-2008	OK	40093	Gas	Royalties	93918.16
-2008	OK	40093	Gas	Royalties	1116303.02
-2008	OK	40093	Oil	Royalties	18147.52
-2008	OK	40093	Oil	Royalties	1242.82
-2008	OK	40093	Oil	Royalties	591462.68
-2008	OK	40109	Gas	Royalties	1338.14
-2008	OK	40109	Oil	Royalties	89.14
-2008	OK	40119	Gas	Royalties	2856.99
-2008	OK	40119	Oil	Royalties	4526.36
-2008	OK	40121	Oil & Gas	Other Revenues	44
-2008	OK	40121	Oil & Gas	Other Roy Vals	60026.04
-2008	OK	40121	Gas	Royalties	1729694.91
-2008	OK	40129	Oil & Gas	Other Revenues	167.11
-2008	OK	40129	Oil & Gas	Other Roy Vals	-52538.63
-2008	OK	40129	Gas	Royalties	4250.25
-2008	OK	40129	Gas	Royalties	261994.02
-2008	OK	40129	Gas	Royalties	517408.64
-2008	OK	40129	Gas	Royalties	2259613.47
-2008	OK	40129	Oil	Royalties	92259.75
-2008	OK	40129	Oil	Royalties	145.3
-2008	OK	40129	Oil	Royalties	78794.02
-2008	OK	40135	Gas	Royalties	27820.57
-2008	OK	40139	Oil & Gas	Other Revenues	-94.96
-2008	OK	40139	Oil & Gas	Other Roy Vals	771.08
-2008	OK	40139	Gas	Royalties	46095.12
-2008	OK	40139	Gas	Royalties	61406.96
-2008	OK	40139	Gas	Royalties	56921.92
-2008	OK	40139	Oil	Royalties	232.45
-2008	OK	40139	Oil	Royalties	-168543.47
-2008	OK	40141	Oil	Royalties	45478.36
-2008	OK	40149	Oil & Gas	Other Roy Vals	5693.88
-2008	OK	40149	Gas	Royalties	50874.27
-2008	OK	40149	Oil	Royalties	35837.87
-2008	OK	40151	Oil & Gas	Other Revenues	4.14
-2008	OK	40151	Oil & Gas	Other Roy Vals	-36326.17
-2008	OK	40151	Gas	Royalties	4858
-2008	OK	40151	Gas	Royalties	53380.21
-2008	OK	40151	Gas	Royalties	1488806
-2008	OK	40151	Oil	Royalties	7113.55
-2008	OK	40151	Oil	Royalties	206838.94
-2008	OK	40153	Oil & Gas	Other Roy Vals	-13560.51
-2008	OK	40153	Gas	Royalties	647347.28
-2008	OK	40153	Oil	Royalties	5115.4
-2008	OK	40153	Oil	Royalties	21667.02
-2009	OK	40003	Oil & Gas	Other Roy Vals	11649.23
-2009	OK	40003	Gas	Royalties	190271.23
-2009	OK	40003	Oil	Royalties	6318.08
-2009	OK	40003	Oil	Royalties	13065.31
-2009	OK	40005	Gas	Royalties	5355.11
-2009	OK	40005	Oil	Royalties	130.74
-2009	OK	40007	Oil & Gas	Other Revenues	-3.79
-2009	OK	40007	Oil & Gas	Other Roy Vals	-1205.31
-2009	OK	40007	Gas	Royalties	4725.57
-2009	OK	40007	Gas	Royalties	5560.74
-2009	OK	40007	Gas	Royalties	45080.35
-2009	OK	40007	Oil	Royalties	1487.3
-2009	OK	40007	Oil	Royalties	30289.61
-2009	OK	40009	Oil & Gas	Other Roy Vals	-7415.25
-2009	OK	40009	Gas	Royalties	10857.17
-2009	OK	40009	Gas	Royalties	22072.28
-2009	OK	40009	Gas	Royalties	205312.44
-2009	OK	40009	Oil	Royalties	9978.14
-2009	OK	40009	Oil	Royalties	1679.42
-2009	OK	40011	Oil & Gas	Other Revenues	320
-2009	OK	40011	Oil & Gas	Other Roy Vals	-5610.23
-2009	OK	40011	Gas	Royalties	3208.63
-2009	OK	40011	Gas	Royalties	-6110.1
-2009	OK	40011	Gas	Royalties	127257.47
-2009	OK	40011	Oil	Royalties	7436.91
-2009	OK	40011	Oil	Royalties	11204.09
-2009	OK	40017	Oil & Gas	Other Roy Vals	-6599.86
-2009	OK	40017	Gas	Royalties	3658.33
-2009	OK	40017	Gas	Royalties	8399.61
-2009	OK	40017	Gas	Royalties	72729.01
-2009	OK	40017	Oil	Royalties	831.83
-2009	OK	40017	Oil	Royalties	27471.85
-2009	OK	40029	Oil & Gas	Other Roy Vals	25000
-2009	OK	40029	Gas	Royalties	539323.03
-2009	OK	40029	Oil	Royalties	1439.01
-2009	OK	40029	Oil	Royalties	28509.44
-2009	OK	40029	Oil	Royalties	0.93
-2009	OK	40031	Oil	Royalties	5239.18
-2009	OK	40037	Oil	Royalties	183.32
-2009	OK	40039	Oil & Gas	Other Roy Vals	-4872.12
-2009	OK	40039	Gas	Royalties	7570.93
-2009	OK	40039	Gas	Royalties	10386.89
-2009	OK	40039	Gas	Royalties	89544.16
-2009	OK	40039	Oil	Royalties	5142.97
-2009	OK	40039	Oil	Royalties	4447.12
-2009	OK	40043	Oil & Gas	Other Revenues	307
-2009	OK	40043	Oil & Gas	Other Roy Vals	-939.41
-2009	OK	40043	Gas	Royalties	11730.14
-2009	OK	40043	Gas	Royalties	12694.14
-2009	OK	40043	Gas	Royalties	327466.91
-2009	OK	40043	Oil	Royalties	17158.03
-2009	OK	40043	Oil	Royalties	66882.5
-2009	OK	40045	Oil & Gas	Other Roy Vals	-9892.92
-2009	OK	40045	Gas	Royalties	1205.29
-2009	OK	40045	Gas	Royalties	5174.65
-2009	OK	40045	Gas	Royalties	99755.1
-2009	OK	40045	Oil	Royalties	7235.46
-2009	OK	40045	Oil	Royalties	88.72
-2009	OK	40045	Oil	Royalties	41333.76
-2009	OK	40047	Gas	Royalties	19.18
-2009	OK	40047	Gas	Royalties	23.39
-2009	OK	40047	Gas	Royalties	22128.65
-2009	OK	40047	Oil	Royalties	5296.15
-2009	OK	40047	Oil	Royalties	794.6
-2009	OK	40049	Oil & Gas	Other Revenues	60
-2009	OK	40049	Gas	Royalties	7892.51
-2009	OK	40049	Oil	Royalties	6543.01
-2009	OK	40051	Oil & Gas	Other Roy Vals	-1276.26
-2009	OK	40051	Gas	Royalties	48.16
-2009	OK	40051	Gas	Royalties	107.25
-2009	OK	40051	Gas	Royalties	9406.48
-2009	OK	40051	Oil	Royalties	59.11
-2009	OK	40051	Oil	Royalties	7175.18
-2009	OK	40055	Oil & Gas	Other Roy Vals	-150
-2009	OK	40055	Gas	Royalties	3007.02
-2009	OK	40055	Oil	Royalties	113.49
-2009	OK	40059	Oil & Gas	Other Roy Vals	-350.6
-2009	OK	40059	Gas	Royalties	-1051.34
-2009	OK	40059	Gas	Royalties	-2273.84
-2009	OK	40059	Gas	Royalties	12305.24
-2009	OK	40059	Oil	Royalties	46.36
-2009	OK	40059	Oil	Royalties	91.77
-2009	OK	40061	Oil & Gas	Other Revenues	-3.38
-2009	OK	40061	Oil & Gas	Other Roy Vals	-1217.64
-2009	OK	40061	Gas	Royalties	2391.32
-2009	OK	40061	Gas	Royalties	91328.08
-2009	OK	40063	Oil & Gas	Other Roy Vals	-42.79
-2009	OK	40063	Gas	Royalties	1075.75
-2009	OK	40073	Oil & Gas	Other Roy Vals	-2255.06
-2009	OK	40073	Gas	Royalties	4014.36
-2009	OK	40073	Gas	Royalties	7139.66
-2009	OK	40073	Gas	Royalties	9575.37
-2009	OK	40073	Oil	Royalties	2310.47
-2009	OK	40073	Oil	Royalties	1573.52
-2009	OK	40077	Oil & Gas	Other Revenues	-1326.7
-2009	OK	40077	Oil & Gas	Other Roy Vals	-13626.16
-2009	OK	40077	Gas	Royalties	8615.02
-2009	OK	40077	Gas	Royalties	45974.21
-2009	OK	40079	Oil & Gas	Other Revenues	1453.46
-2009	OK	40079	Oil & Gas	Other Roy Vals	944.95
-2009	OK	40079	Gas	Royalties	922.73
-2009	OK	40079	Gas	Royalties	24442.81
-2009	OK	40079	Oil	Royalties	42.49
-2009	OK	40083	Gas	Royalties	207.81
-2009	OK	40087	Oil	Royalties	69.31
-2009	OK	40091	Oil & Gas	Other Roy Vals	5
-2009	OK	40091	Gas	Royalties	1808.47
-2009	OK	40093	Oil & Gas	Other Revenues	166
-2009	OK	40093	Oil & Gas	Other Roy Vals	-12259.33
-2009	OK	40093	Gas	Royalties	11245.63
-2009	OK	40093	Gas	Royalties	32222.23
-2009	OK	40093	Gas	Royalties	614806.2
-2009	OK	40093	Oil	Royalties	8662.5
-2009	OK	40093	Oil	Royalties	594.96
-2009	OK	40093	Oil	Royalties	510026.63
-2009	OK	40109	Gas	Royalties	698.63
-2009	OK	40109	Oil	Royalties	28.39
-2009	OK	40119	Oil & Gas	Other Roy Vals	370.07
-2009	OK	40119	Gas	Royalties	32432.36
-2009	OK	40119	Oil	Royalties	2254.26
-2009	OK	40121	Oil & Gas	Other Revenues	865.2
-2009	OK	40121	Oil & Gas	Other Roy Vals	-78423.79
-2009	OK	40121	Gas	Royalties	695255.09
-2009	OK	40129	Oil & Gas	Other Roy Vals	-74790.18
-2009	OK	40129	Gas	Royalties	-20897.58
-2009	OK	40129	Gas	Royalties	92361.8
-2009	OK	40129	Gas	Royalties	183778.32
-2009	OK	40129	Gas	Royalties	1347396.17
-2009	OK	40129	Oil	Royalties	62054.68
-2009	OK	40129	Oil	Royalties	40935.56
-2009	OK	40135	Gas	Royalties	10378.31
-2009	OK	40139	Oil & Gas	Other Revenues	-117.85
-2009	OK	40139	Oil & Gas	Other Roy Vals	-1672.92
-2009	OK	40139	Gas	Royalties	19097.43
-2009	OK	40139	Gas	Royalties	25002.36
-2009	OK	40139	Gas	Royalties	23481.59
-2009	OK	40139	Oil	Royalties	15884.49
-2009	OK	40149	Oil & Gas	Other Roy Vals	9725.96
-2009	OK	40149	Gas	Royalties	96400.26
-2009	OK	40149	Oil	Royalties	64389.18
-2009	OK	40151	Oil & Gas	Other Revenues	80
-2009	OK	40151	Oil & Gas	Other Roy Vals	-4906.22
-2009	OK	40151	Gas	Royalties	14.21
-2009	OK	40151	Gas	Royalties	1259.29
-2009	OK	40151	Gas	Royalties	520677.55
-2009	OK	40151	Oil	Royalties	7324.14
-2009	OK	40151	Oil	Royalties	159512.59
-2009	OK	40153	Oil & Gas	Other Roy Vals	-7982.66
-2009	OK	40153	Gas	Royalties	258164.02
-2009	OK	40153	Oil	Royalties	878.03
-2009	OK	40153	Oil	Royalties	23717.44
-2010	OK	40003	Oil & Gas	Other Roy Vals	-12466.6
-2010	OK	40003	Gas	Royalties	127298.2
-2010	OK	40003	Oil	Royalties	9565.33
-2010	OK	40003	Oil	Royalties	8193.36
-2010	OK	40005	Gas	Royalties	4677.27
-2010	OK	40007	Oil & Gas	Other Roy Vals	-20.78
-2010	OK	40007	Gas	Royalties	7351.16
-2010	OK	40007	Gas	Royalties	10617
-2010	OK	40007	Gas	Royalties	37246.68
-2010	OK	40007	Oil	Royalties	2452.19
-2010	OK	40007	Oil	Royalties	50263.74
-2010	OK	40009	Oil & Gas	Other Roy Vals	-11617.3
-2010	OK	40009	Gas	Royalties	12908.11
-2010	OK	40009	Gas	Royalties	24395.77
-2010	OK	40009	Gas	Royalties	294755.69
-2010	OK	40009	Oil	Royalties	3377.74
-2010	OK	40009	Oil	Royalties	2916.18
-2010	OK	40011	Oil & Gas	Other Revenues	320
-2010	OK	40011	Oil & Gas	Other Roy Vals	-1784.09
-2010	OK	40011	Gas	Royalties	4279.21
-2010	OK	40011	Gas	Royalties	11751.67
-2010	OK	40011	Gas	Royalties	133752.13
-2010	OK	40011	Oil	Royalties	11604.39
-2010	OK	40011	Oil	Royalties	19905.8
-2010	OK	40017	Oil & Gas	Other Roy Vals	-5503.04
-2010	OK	40017	Gas	Royalties	6739.77
-2010	OK	40017	Gas	Royalties	15256.38
-2010	OK	40017	Gas	Royalties	132867.04
-2010	OK	40017	Oil	Royalties	707.97
-2010	OK	40017	Oil	Royalties	22185.15
-2010	OK	40025	Oil & Gas	Other Roy Vals	12.11
-2010	OK	40029	Oil & Gas	Other Roy Vals	-21500
-2010	OK	40029	Gas	Royalties	311326.35
-2010	OK	40029	Oil	Royalties	623.67
-2010	OK	40029	Oil	Royalties	6333.5
-2010	OK	40031	Oil	Royalties	9702.58
-2010	OK	40037	Oil	Royalties	229.62
-2010	OK	40039	Oil & Gas	Other Revenues	70
-2010	OK	40039	Oil & Gas	Other Roy Vals	-1533.2
-2010	OK	40039	Gas	Royalties	10191.21
-2010	OK	40039	Gas	Royalties	11344.29
-2010	OK	40039	Gas	Royalties	92902.04
-2010	OK	40039	Oil	Royalties	43339.62
-2010	OK	40039	Oil	Royalties	5004.93
-2010	OK	40041	Oil & Gas	Other Roy Vals	2.32
-2010	OK	40043	Oil & Gas	Other Revenues	371
-2010	OK	40043	Oil & Gas	Other Roy Vals	-4598.9
-2010	OK	40043	Gas	Royalties	20829.67
-2010	OK	40043	Gas	Royalties	-5390.66
-2010	OK	40043	Gas	Royalties	218756.85
-2010	OK	40043	Oil	Royalties	6142.79
-2010	OK	40043	Oil	Royalties	130109.95
-2010	OK	40045	Oil & Gas	Other Roy Vals	-1048.75
-2010	OK	40045	Gas	Royalties	3872.22
-2010	OK	40045	Gas	Royalties	9653.04
-2010	OK	40045	Gas	Royalties	124204.87
-2010	OK	40045	Oil	Royalties	-17222.37
-2010	OK	40045	Oil	Royalties	77.53
-2010	OK	40045	Oil	Royalties	82196.3
-2010	OK	40047	Oil & Gas	Other Roy Vals	-4155
-2010	OK	40047	Gas	Royalties	29.8
-2010	OK	40047	Gas	Royalties	29.91
-2010	OK	40047	Gas	Royalties	29856.09
-2010	OK	40047	Oil	Royalties	1873.71
-2010	OK	40047	Oil	Royalties	80.36
-2010	OK	40049	Gas	Royalties	7060.3
-2010	OK	40049	Oil	Royalties	3812.9
-2010	OK	40051	Oil & Gas	Other Roy Vals	-1642.3
-2010	OK	40051	Gas	Royalties	204.65
-2010	OK	40051	Gas	Royalties	218.48
-2010	OK	40051	Gas	Royalties	-6642.48
-2010	OK	40051	Oil	Royalties	66.91
-2010	OK	40051	Oil	Royalties	5423.3
-2010	OK	40053	Oil & Gas	Other Roy Vals	173.5
-2010	OK	40055	Gas	Royalties	3336.62
-2010	OK	40059	Oil & Gas	Other Roy Vals	-337.93
-2010	OK	40059	Gas	Royalties	5.01
-2010	OK	40059	Gas	Royalties	18258.34
-2010	OK	40059	Oil	Royalties	257.72
-2010	OK	40059	Oil	Royalties	676.74
-2010	OK	40061	Oil & Gas	Other Revenues	-6.08
-2010	OK	40061	Oil & Gas	Other Roy Vals	-9573.92
-2010	OK	40061	Gas	Royalties	740.53
-2010	OK	40061	Gas	Royalties	84883.58
-2010	OK	40063	Oil & Gas	Other Roy Vals	-11.12
-2010	OK	40063	Gas	Royalties	1066.81
-2010	OK	40073	Oil & Gas	Other Roy Vals	-337.32
-2010	OK	40073	Gas	Royalties	5492.34
-2010	OK	40073	Gas	Royalties	8733.28
-2010	OK	40073	Gas	Royalties	11415.05
-2010	OK	40073	Oil	Royalties	2451.51
-2010	OK	40073	Oil	Royalties	1747.69
-2010	OK	40077	Oil & Gas	Other Revenues	217.5
-2010	OK	40077	Oil & Gas	Other Roy Vals	15595.89
-2010	OK	40077	Gas	Royalties	9632.52
-2010	OK	40077	Gas	Royalties	461355.77
-2010	OK	40079	Oil & Gas	Other Revenues	-1.07
-2010	OK	40079	Oil & Gas	Other Roy Vals	-2892.49
-2010	OK	40079	Gas	Royalties	1258.83
-2010	OK	40079	Gas	Royalties	25506.52
-2010	OK	40079	Solids	Royalties	-0.01
-2010	OK	40081	Oil & Gas	Other Revenues	480
-2010	OK	40081	Gas	Royalties	9077.56
-2010	OK	40081	Oil	Royalties	3861.27
-2010	OK	40081	Oil	Royalties	4643.72
-2010	OK	40083	Gas	Royalties	233.13
-2010	OK	40083	Oil	Royalties	88.46
-2010	OK	40087	Oil	Royalties	169.38
-2010	OK	40091	Oil & Gas	Other Revenues	160
-2010	OK	40091	Oil & Gas	Other Roy Vals	-8
-2010	OK	40091	Gas	Royalties	848.68
-2010	OK	40093	Oil & Gas	Other Revenues	388.02
-2010	OK	40093	Oil & Gas	Other Roy Vals	-4478.01
-2010	OK	40093	Gas	Royalties	16388.08
-2010	OK	40093	Gas	Royalties	56531.47
-2010	OK	40093	Gas	Royalties	617690.05
-2010	OK	40093	Oil	Royalties	8353.79
-2010	OK	40093	Oil	Royalties	791.72
-2010	OK	40093	Oil	Royalties	376779.54
-2010	OK	40109	Gas	Royalties	562.48
-2010	OK	40109	Oil	Royalties	94.19
-2010	OK	40119	Oil & Gas	Other Roy Vals	-370.07
-2010	OK	40119	Gas	Royalties	6824.93
-2010	OK	40119	Oil	Royalties	185.44
-2010	OK	40121	Oil & Gas	Other Revenues	1000
-2010	OK	40121	Oil & Gas	Other Roy Vals	60547.37
-2010	OK	40121	Gas	Royalties	27.44
-2010	OK	40121	Gas	Royalties	1358780.57
-2010	OK	40129	Oil & Gas	Other Revenues	2225.84
-2010	OK	40129	Oil & Gas	Other Roy Vals	-21907
-2010	OK	40129	Gas	Royalties	125973.5
-2010	OK	40129	Gas	Royalties	287722.91
-2010	OK	40129	Gas	Royalties	1393959.38
-2010	OK	40129	Oil	Royalties	66727.9
-2010	OK	40129	Oil	Royalties	56502.05
-2010	OK	40135	Gas	Royalties	19446.74
-2010	OK	40139	Oil & Gas	Other Revenues	-42.22
-2010	OK	40139	Oil & Gas	Other Roy Vals	3683.91
-2010	OK	40139	Gas	Royalties	24314.97
-2010	OK	40139	Gas	Royalties	28758.88
-2010	OK	40139	Gas	Royalties	22604.65
-2010	OK	40139	Oil	Royalties	12673.68
-2010	OK	40141	Oil	Royalties	96299.8
-2010	OK	40149	Oil & Gas	Other Roy Vals	755.35
-2010	OK	40149	Gas	Royalties	323418.74
-2010	OK	40149	Oil	Royalties	103789.02
-2010	OK	40151	Oil & Gas	Other Revenues	460
-2010	OK	40151	Oil & Gas	Other Roy Vals	-1114.05
-2010	OK	40151	Gas	Royalties	3507.1
-2010	OK	40151	Gas	Royalties	21745.69
-2010	OK	40151	Gas	Royalties	708228.1
-2010	OK	40151	Oil	Royalties	5589.05
-2010	OK	40151	Oil	Royalties	156623.16
-2010	OK	40153	Oil & Gas	Other Revenues	120
-2010	OK	40153	Oil & Gas	Other Roy Vals	-5277.1
-2010	OK	40153	Gas	Royalties	119.31
-2010	OK	40153	Gas	Royalties	52.36
-2010	OK	40153	Gas	Royalties	285119.49
-2010	OK	40153	Oil	Royalties	1563.27
-2010	OK	40153	Oil	Royalties	19482.83
-2011	OK	40003	Oil & Gas	Other Roy Vals	-243.83
-2011	OK	40003	Gas	Royalties	1011.82
-2011	OK	40003	Gas	Royalties	2761.06
-2011	OK	40003	Gas	Royalties	104490.66
-2011	OK	40003	Oil	Royalties	9973.29
-2011	OK	40003	Oil	Royalties	10324
-2011	OK	40005	Gas	Royalties	3464.33
-2011	OK	40005	Oil	Royalties	178.98
-2011	OK	40007	Oil & Gas	Other Roy Vals	-300.81
-2011	OK	40007	Gas	Royalties	6737.49
-2011	OK	40007	Gas	Royalties	7635.86
-2011	OK	40007	Gas	Royalties	44950.76
-2011	OK	40007	Oil	Royalties	1290.01
-2011	OK	40007	Oil	Royalties	63954.55
-2011	OK	40009	Oil & Gas	Other Roy Vals	508.59
-2011	OK	40009	Gas	Royalties	12824.64
-2011	OK	40009	Gas	Royalties	27479.69
-2011	OK	40009	Gas	Royalties	214020.98
-2011	OK	40009	Oil	Royalties	1568.33
-2011	OK	40009	Oil	Royalties	4396.15
-2011	OK	40011	Oil & Gas	Other Revenues	320
-2011	OK	40011	Oil & Gas	Other Roy Vals	-710.8
-2011	OK	40011	Gas	Royalties	12714.44
-2011	OK	40011	Gas	Royalties	44733.99
-2011	OK	40011	Gas	Royalties	113100.17
-2011	OK	40011	Oil	Royalties	11841.57
-2011	OK	40011	Oil	Royalties	17629.64
-2011	OK	40015	Oil & Gas	Other Roy Vals	3499.3
-2011	OK	40015	Gas	Royalties	3904.01
-2011	OK	40015	Gas	Royalties	31716.03
-2011	OK	40015	Gas	Royalties	40305.11
-2011	OK	40015	Oil	Royalties	54.24
-2011	OK	40017	Oil & Gas	Other Revenues	107.03
-2011	OK	40017	Oil & Gas	Other Roy Vals	2261.53
-2011	OK	40017	Gas	Royalties	22103.38
-2011	OK	40017	Gas	Royalties	35559.01
-2011	OK	40017	Gas	Royalties	98922.08
-2011	OK	40017	Oil	Royalties	2179.44
-2011	OK	40017	Oil	Royalties	33884.87
-2011	OK	40025	Oil & Gas	Other Roy Vals	18.82
-2011	OK	40029	Oil & Gas	Other Roy Vals	1000
-2011	OK	40029	Gas	Royalties	35541.79
-2011	OK	40029	Gas	Royalties	2009522.09
-2011	OK	40029	Oil	Royalties	96787.91
-2011	OK	40029	Oil	Royalties	50470.95
-2011	OK	40031	Oil	Royalties	8873.63
-2011	OK	40039	Oil & Gas	Other Revenues	70
-2011	OK	40039	Oil & Gas	Other Roy Vals	1466.81
-2011	OK	40039	Gas	Royalties	14448.62
-2011	OK	40039	Gas	Royalties	20134.42
-2011	OK	40039	Gas	Royalties	70190.61
-2011	OK	40039	Oil	Royalties	41235.64
-2011	OK	40039	Oil	Royalties	4553.81
-2011	OK	40043	Oil & Gas	Other Revenues	105
-2011	OK	40043	Oil & Gas	Other Roy Vals	1456.21
-2011	OK	40043	Gas	Royalties	46468.91
-2011	OK	40043	Gas	Royalties	55159.07
-2011	OK	40043	Gas	Royalties	164321.53
-2011	OK	40043	Oil	Royalties	6599.72
-2011	OK	40043	Oil	Royalties	174300.16
-2011	OK	40045	Oil & Gas	Other Revenues	378.24
-2011	OK	40045	Oil & Gas	Other Roy Vals	505.05
-2011	OK	40045	Gas	Royalties	31955.97
-2011	OK	40045	Gas	Royalties	30642.84
-2011	OK	40045	Gas	Royalties	131472.48
-2011	OK	40045	Oil	Royalties	7101.9
-2011	OK	40045	Oil	Royalties	54.09
-2011	OK	40045	Oil	Royalties	205212.32
-2011	OK	40047	Oil & Gas	Other Roy Vals	613.5
-2011	OK	40047	Gas	Royalties	26.81
-2011	OK	40047	Gas	Royalties	29.1
-2011	OK	40047	Gas	Royalties	25174.98
-2011	OK	40047	Oil	Royalties	1700.41
-2011	OK	40047	Oil	Royalties	192.55
-2011	OK	40049	Oil & Gas	Other Revenues	60
-2011	OK	40049	Oil & Gas	Other Roy Vals	3000
-2011	OK	40049	Gas	Royalties	7702.42
-2011	OK	40049	Oil	Royalties	8491.79
-2011	OK	40051	Oil & Gas	Other Revenues	108.97
-2011	OK	40051	Oil & Gas	Other Roy Vals	-235.39
-2011	OK	40051	Gas	Royalties	3605.51
-2011	OK	40051	Gas	Royalties	2468.66
-2011	OK	40051	Gas	Royalties	4977.61
-2011	OK	40051	Oil	Royalties	74.5
-2011	OK	40051	Oil	Royalties	8407.54
-2011	OK	40055	Gas	Royalties	1201.52
-2011	OK	40055	Oil	Royalties	136.35
-2011	OK	40059	Oil & Gas	Other Roy Vals	170.29
-2011	OK	40059	Gas	Royalties	3.06
-2011	OK	40059	Gas	Royalties	16001.4
-2011	OK	40059	Oil	Royalties	233.92
-2011	OK	40061	Oil & Gas	Other Revenues	-4.32
-2011	OK	40061	Oil & Gas	Other Roy Vals	8019.19
-2011	OK	40061	Gas	Royalties	724.01
-2011	OK	40061	Gas	Royalties	82008.49
-2011	OK	40063	Oil & Gas	Other Roy Vals	29.21
-2011	OK	40063	Gas	Royalties	830.49
-2011	OK	40073	Oil & Gas	Other Roy Vals	443.55
-2011	OK	40073	Gas	Royalties	6682.44
-2011	OK	40073	Gas	Royalties	8502.57
-2011	OK	40073	Gas	Royalties	22248.38
-2011	OK	40073	Oil	Royalties	2842.89
-2011	OK	40073	Oil	Royalties	4440.01
-2011	OK	40077	Oil & Gas	Other Revenues	293.22
-2011	OK	40077	Oil & Gas	Other Roy Vals	2127.26
-2011	OK	40077	Gas	Royalties	8804.86
-2011	OK	40077	Gas	Royalties	208167.06
-2011	OK	40079	Oil & Gas	Other Revenues	4086.51
-2011	OK	40079	Oil & Gas	Other Roy Vals	120.08
-2011	OK	40079	Gas	Royalties	1216.48
-2011	OK	40079	Gas	Royalties	20880.54
-2011	OK	40079	Oil	Royalties	129.63
-2011	OK	40079	Solids	Royalties	-0.02
-2011	OK	40081	Gas	Royalties	293.98
-2011	OK	40081	Oil	Royalties	21.03
-2011	OK	40081	Oil	Royalties	3853.63
-2011	OK	40083	Gas	Royalties	52.01
-2011	OK	40087	Oil	Royalties	61.71
-2011	OK	40091	Oil & Gas	Other Revenues	200
-2011	OK	40091	Oil & Gas	Other Roy Vals	-1
-2011	OK	40091	Gas	Royalties	510.66
-2011	OK	40093	Oil & Gas	Other Revenues	282
-2011	OK	40093	Oil & Gas	Other Roy Vals	-4561.02
-2011	OK	40093	Gas	Royalties	35215.94
-2011	OK	40093	Gas	Royalties	118163.31
-2011	OK	40093	Gas	Royalties	461210.11
-2011	OK	40093	Oil	Royalties	13658.99
-2011	OK	40093	Oil	Royalties	451.65
-2011	OK	40093	Oil	Royalties	393496.5
-2011	OK	40109	Gas	Royalties	471.88
-2011	OK	40109	Oil	Royalties	62.66
-2011	OK	40119	Oil & Gas	Other Roy Vals	298.52
-2011	OK	40119	Gas	Royalties	7763.32
-2011	OK	40119	Oil	Royalties	3755.44
-2011	OK	40121	Oil & Gas	Other Roy Vals	-7586.19
-2011	OK	40121	Gas	Royalties	0.08
-2011	OK	40121	Gas	Royalties	306.95
-2011	OK	40121	Gas	Royalties	608175.62
-2011	OK	40129	Oil & Gas	Other Revenues	1697.04
-2011	OK	40129	Oil & Gas	Other Roy Vals	30909.99
-2011	OK	40129	Gas	Royalties	233221.97
-2011	OK	40129	Gas	Royalties	435380.01
-2011	OK	40129	Gas	Royalties	995203.05
-2011	OK	40129	Oil	Royalties	71160.91
-2011	OK	40129	Oil	Royalties	234981.04
-2011	OK	40135	Gas	Royalties	13921.03
-2011	OK	40139	Oil & Gas	Other Revenues	14.59
-2011	OK	40139	Oil & Gas	Other Roy Vals	-1476.59
-2011	OK	40139	Gas	Royalties	31205.06
-2011	OK	40139	Gas	Royalties	27857.97
-2011	OK	40139	Gas	Royalties	18572.45
-2011	OK	40139	Oil	Royalties	133.06
-2011	OK	40139	Oil	Royalties	9279.65
-2011	OK	40139	Oil	Royalties	0.01
-2011	OK	40141	Oil	Royalties	47816.02
-2011	OK	40149	Oil & Gas	Other Roy Vals	-10788.97
-2011	OK	40149	Gas	Royalties	2389.91
-2011	OK	40149	Gas	Royalties	58265.34
-2011	OK	40149	Oil	Royalties	20464.71
-2011	OK	40151	Oil & Gas	Other Revenues	120
-2011	OK	40151	Oil & Gas	Other Roy Vals	764.91
-2011	OK	40151	Gas	Royalties	8027.19
-2011	OK	40151	Gas	Royalties	25148.52
-2011	OK	40151	Gas	Royalties	584362.69
-2011	OK	40151	Oil	Royalties	4156.62
-2011	OK	40151	Oil	Royalties	185675.19
-2011	OK	40153	Oil & Gas	Other Roy Vals	1290.39
-2011	OK	40153	Gas	Royalties	397.87
-2011	OK	40153	Gas	Royalties	439.35
-2011	OK	40153	Gas	Royalties	200596.42
-2011	OK	40153	Oil	Royalties	279.34
-2011	OK	40153	Oil	Royalties	19607.37
-2012	OK	40003	Oil & Gas	Other Roy Vals	-280.81
-2012	OK	40003	Gas	Royalties	8724.61
-2012	OK	40003	Gas	Royalties	1014.64
-2012	OK	40003	Gas	Royalties	39397.11
-2012	OK	40003	Oil	Royalties	4565.58
-2012	OK	40003	Oil	Royalties	3893.39
-2012	OK	40005	Gas	Royalties	195.35
-2012	OK	40005	Gas	Royalties	353.05
-2012	OK	40005	Gas	Royalties	1263.67
-2012	OK	40007	Oil & Gas	Other Revenues	159.37
-2012	OK	40007	Oil & Gas	Other Roy Vals	-704.93
-2012	OK	40007	Gas	Royalties	4398.81
-2012	OK	40007	Gas	Royalties	6440.72
-2012	OK	40007	Gas	Royalties	42209.07
-2012	OK	40007	Oil	Royalties	-773.13
-2012	OK	40007	Oil	Royalties	105462.4
-2012	OK	40009	Oil & Gas	Other Roy Vals	-8197.84
-2012	OK	40009	Gas	Royalties	9869.99
-2012	OK	40009	Gas	Royalties	20364.95
-2012	OK	40009	Gas	Royalties	114434.15
-2012	OK	40009	Oil	Royalties	1187.14
-2012	OK	40009	Oil	Royalties	20.55
-2012	OK	40009	Oil	Royalties	3345.23
-2012	OK	40011	Oil & Gas	Other Roy Vals	-5412.64
-2012	OK	40011	Gas	Royalties	8405.42
-2012	OK	40011	Gas	Royalties	19365.23
-2012	OK	40011	Gas	Royalties	84418.76
-2012	OK	40011	Oil	Royalties	11677.99
-2012	OK	40011	Oil	Royalties	18877.38
-2012	OK	40015	Oil & Gas	Other Roy Vals	-1363
-2012	OK	40015	Gas	Royalties	3450.29
-2012	OK	40015	Gas	Royalties	22936.95
-2012	OK	40015	Gas	Royalties	607.71
-2012	OK	40015	Oil	Royalties	49.32
-2012	OK	40017	Oil & Gas	Other Revenues	80
-2012	OK	40017	Oil & Gas	Other Roy Vals	108683.17
-2012	OK	40017	Gas	Royalties	17562.46
-2012	OK	40017	Gas	Royalties	25094.55
-2012	OK	40017	Gas	Royalties	27218.86
-2012	OK	40017	Oil	Royalties	1456.04
-2012	OK	40017	Oil	Royalties	27978.5
-2012	OK	40017	Oil & Gas	Royalties	0.54
-2012	OK	40021	Gas	Royalties	11.53
-2012	OK	40029	Oil & Gas	Other Roy Vals	234289.48
-2012	OK	40029	Gas	Royalties	1184541.5
-2012	OK	40029	Gas	Royalties	418477.37
-2012	OK	40029	Gas	Royalties	196685.8
-2012	OK	40029	Oil	Royalties	203806.67
-2012	OK	40031	Oil & Gas	Other Roy Vals	9176.75
-2012	OK	40031	Oil	Royalties	82432.44
-2012	OK	40039	Oil & Gas	Other Revenues	70
-2012	OK	40039	Oil & Gas	Other Roy Vals	-5064.07
-2012	OK	40039	Gas	Royalties	9807.9
-2012	OK	40039	Gas	Royalties	13108
-2012	OK	40039	Gas	Royalties	39869.56
-2012	OK	40039	Oil	Royalties	20399.38
-2012	OK	40039	Oil	Royalties	6811.19
-2012	OK	40043	Oil & Gas	Other Revenues	851.67
-2012	OK	40043	Oil & Gas	Other Roy Vals	-463.64
-2012	OK	40043	Gas	Royalties	34612.97
-2012	OK	40043	Gas	Royalties	27794.77
-2012	OK	40043	Gas	Royalties	193229.11
-2012	OK	40043	Oil	Royalties	12323.73
-2012	OK	40043	Oil	Royalties	293425.36
-2012	OK	40045	Oil & Gas	Other Revenues	310
-2012	OK	40045	Oil & Gas	Other Roy Vals	-1785.34
-2012	OK	40045	Gas	Royalties	20617.61
-2012	OK	40045	Gas	Royalties	16348.15
-2012	OK	40045	Gas	Royalties	77813.06
-2012	OK	40045	Oil	Royalties	81329.18
-2012	OK	40045	Oil	Royalties	480670.19
-2012	OK	40047	Oil & Gas	Other Roy Vals	-1120
-2012	OK	40047	Gas	Royalties	20.25
-2012	OK	40047	Gas	Royalties	19.22
-2012	OK	40047	Gas	Royalties	15452.76
-2012	OK	40047	Oil	Royalties	2291.63
-2012	OK	40047	Oil	Royalties	166.04
-2012	OK	40049	Oil & Gas	Other Revenues	60
-2012	OK	40049	Gas	Royalties	4794.22
-2012	OK	40049	Oil	Royalties	12607.45
-2012	OK	40051	Oil & Gas	Other Roy Vals	-64.04
-2012	OK	40051	Gas	Royalties	2454.53
-2012	OK	40051	Gas	Royalties	1507.02
-2012	OK	40051	Gas	Royalties	2289.79
-2012	OK	40051	Oil	Royalties	206.87
-2012	OK	40051	Oil	Royalties	7605.55
-2012	OK	40053	Oil & Gas	Other Roy Vals	0.85
-2012	OK	40055	Oil & Gas	Other Roy Vals	-525
-2012	OK	40055	Gas	Royalties	1944.1
-2012	OK	40059	Oil & Gas	Other Revenues	100
-2012	OK	40059	Oil & Gas	Other Roy Vals	-87.1
-2012	OK	40059	Gas	Royalties	2.16
-2012	OK	40059	Gas	Royalties	10920
-2012	OK	40059	Oil	Royalties	303.46
-2012	OK	40059	Oil	Royalties	435.03
-2012	OK	40061	Oil & Gas	Other Revenues	-11.46
-2012	OK	40061	Oil & Gas	Other Roy Vals	-1708.04
-2012	OK	40061	Gas	Royalties	1036.35
-2012	OK	40061	Gas	Royalties	58278.73
-2012	OK	40063	Oil & Gas	Other Roy Vals	-33.92
-2012	OK	40063	Gas	Royalties	454.68
-2012	OK	40073	Oil & Gas	Other Roy Vals	-861.85
-2012	OK	40073	Gas	Royalties	4694.75
-2012	OK	40073	Gas	Royalties	5248.56
-2012	OK	40073	Gas	Royalties	11082.73
-2012	OK	40073	Oil	Royalties	2825.79
-2012	OK	40073	Oil	Royalties	4121.99
-2012	OK	40077	Oil & Gas	Other Revenues	-2.46
-2012	OK	40077	Oil & Gas	Other Roy Vals	-10514.39
-2012	OK	40077	Gas	Royalties	4476.63
-2012	OK	40077	Gas	Royalties	110620.61
-2012	OK	40079	Oil & Gas	Other Revenues	262.37
-2012	OK	40079	Oil & Gas	Other Roy Vals	-1521.35
-2012	OK	40079	Gas	Royalties	756.8
-2012	OK	40079	Gas	Royalties	14249.49
-2012	OK	40079	Oil	Royalties	121.2
-2012	OK	40081	Gas	Royalties	290.31
-2012	OK	40081	Oil	Royalties	164.47
-2012	OK	40083	Gas	Royalties	7.36
-2012	OK	40087	Oil	Royalties	118.93
-2012	OK	40091	Oil & Gas	Other Roy Vals	-8
-2012	OK	40091	Gas	Royalties	201.01
-2012	OK	40093	Oil & Gas	Other Roy Vals	-11215.26
-2012	OK	40093	Gas	Royalties	54199.34
-2012	OK	40093	Gas	Royalties	82152.78
-2012	OK	40093	Gas	Royalties	235446.14
-2012	OK	40093	Oil	Royalties	7460.66
-2012	OK	40093	Oil	Royalties	378591.18
-2012	OK	40109	Gas	Royalties	685.15
-2012	OK	40109	Oil	Royalties	114.29
-2012	OK	40119	Oil & Gas	Other Roy Vals	-112.55
-2012	OK	40119	Gas	Royalties	4428.07
-2012	OK	40119	Oil	Royalties	133.97
-2012	OK	40121	Oil & Gas	Other Revenues	969.75
-2012	OK	40121	Oil & Gas	Other Roy Vals	-2810
-2012	OK	40121	Gas	Royalties	248.39
-2012	OK	40121	Gas	Royalties	1239198.71
-2012	OK	40129	Oil & Gas	Other Revenues	1662.87
-2012	OK	40129	Oil & Gas	Other Roy Vals	15647.92
-2012	OK	40129	Gas	Royalties	192127.2
-2012	OK	40129	Gas	Royalties	291197.05
-2012	OK	40129	Gas	Royalties	921936.05
-2012	OK	40129	Oil	Royalties	266335.98
-2012	OK	40129	Oil	Royalties	1121189.85
-2012	OK	40135	Gas	Royalties	14374.41
-2012	OK	40139	Oil & Gas	Other Revenues	-58.28
-2012	OK	40139	Oil & Gas	Other Roy Vals	429.4
-2012	OK	40139	Gas	Royalties	22032.72
-2012	OK	40139	Gas	Royalties	16758.32
-2012	OK	40139	Gas	Royalties	12870.38
-2012	OK	40139	Oil	Royalties	4.28
-2012	OK	40139	Oil	Royalties	4426.96
-2012	OK	40141	Oil	Royalties	58837.35
-2012	OK	40149	Oil & Gas	Other Roy Vals	-2561.72
-2012	OK	40149	Gas	Royalties	12691.95
-2012	OK	40149	Gas	Royalties	997.09
-2012	OK	40149	Gas	Royalties	16369.43
-2012	OK	40149	Oil	Royalties	8657.83
-2012	OK	40151	Oil & Gas	Other Revenues	237.11
-2012	OK	40151	Oil & Gas	Other Roy Vals	-3058.61
-2012	OK	40151	Gas	Royalties	88221.62
-2012	OK	40151	Gas	Royalties	43589
-2012	OK	40151	Gas	Royalties	273106.81
-2012	OK	40151	Oil	Royalties	5940.23
-2012	OK	40151	Oil	Royalties	197326.8
-2012	OK	40153	Oil & Gas	Other Revenues	470
-2012	OK	40153	Oil & Gas	Other Roy Vals	-8294.7
-2012	OK	40153	Gas	Royalties	32238.08
-2012	OK	40153	Gas	Royalties	6613.99
-2012	OK	40153	Gas	Royalties	88614.5
-2012	OK	40153	Oil	Royalties	258.42
-2012	OK	40153	Oil	Royalties	16986.31
-2013	OK	40003	Oil & Gas	Other Roy Vals	4346.74
-2013	OK	40003	Gas	Royalties	13937.92
-2013	OK	40003	Gas	Royalties	48021.86
-2013	OK	40003	Gas	Royalties	12163.74
-2013	OK	40003	Oil	Royalties	11967.9
-2013	OK	40003	Oil	Royalties	20949.71
-2013	OK	40005	Oil & Gas	Other Roy Vals	-4862.9
-2013	OK	40005	Gas	Royalties	559.33
-2013	OK	40005	Gas	Royalties	1275.74
-2013	OK	40007	Oil & Gas	Other Revenues	159.37
-2013	OK	40007	Oil & Gas	Other Roy Vals	586.9
-2013	OK	40007	Gas	Royalties	4702.5
-2013	OK	40007	Gas	Royalties	6535.43
-2013	OK	40007	Gas	Royalties	30258.44
-2013	OK	40007	Oil	Royalties	852.72
-2013	OK	40007	Oil	Royalties	90886.1
-2013	OK	40009	Oil & Gas	Other Roy Vals	-1528.77
-2013	OK	40009	Gas	Royalties	21.66
-2013	OK	40009	Gas	Royalties	9294.19
-2013	OK	40009	Gas	Royalties	10040.3
-2013	OK	40009	Gas	Royalties	151857.34
-2013	OK	40009	Oil	Royalties	1386.16
-2013	OK	40009	Oil	Royalties	4503.62
-2013	OK	40011	Oil & Gas	Other Roy Vals	2396.79
-2013	OK	40011	Gas	Royalties	7564.82
-2013	OK	40011	Gas	Royalties	24595.83
-2013	OK	40011	Gas	Royalties	106017.44
-2013	OK	40011	Oil	Royalties	12431.53
-2013	OK	40011	Oil	Royalties	9263.67
-2013	OK	40015	Oil & Gas	Other Roy Vals	1221.95
-2013	OK	40015	Gas	Royalties	1852.46
-2013	OK	40015	Gas	Royalties	23418.22
-2013	OK	40015	Gas	Royalties	3368.9
-2013	OK	40015	Oil	Royalties	54.08
-2013	OK	40017	Oil & Gas	Other Roy Vals	-110231.61
-2013	OK	40017	Gas	Royalties	19896.31
-2013	OK	40017	Gas	Royalties	58467.94
-2013	OK	40017	Gas	Royalties	27553.16
-2013	OK	40017	Oil	Royalties	2369.5
-2013	OK	40017	Oil	Royalties	21394.14
-2013	OK	40021	Gas	Royalties	36.07
-2013	OK	40029	Oil & Gas	Other Roy Vals	-108003.04
-2013	OK	40029	Gas	Royalties	101658.5
-2013	OK	40029	Gas	Royalties	65125.47
-2013	OK	40029	Gas	Royalties	505721.56
-2013	OK	40029	Oil	Royalties	55623.84
-2013	OK	40031	Oil	Royalties	56818.59
-2013	OK	40039	Oil & Gas	Other Revenues	70
-2013	OK	40039	Oil & Gas	Other Roy Vals	1865.97
-2013	OK	40039	Gas	Royalties	18.38
-2013	OK	40039	Gas	Royalties	7123.82
-2013	OK	40039	Gas	Royalties	32675.83
-2013	OK	40039	Gas	Royalties	24531.13
-2013	OK	40039	Oil	Royalties	18844.49
-2013	OK	40039	Oil	Royalties	6769.29
-2013	OK	40043	Oil & Gas	Other Revenues	-2.18
-2013	OK	40043	Oil & Gas	Other Roy Vals	661.71
-2013	OK	40043	Gas	Royalties	-61900.76
-2013	OK	40043	Gas	Royalties	-49700.64
-2013	OK	40043	Gas	Royalties	397013.86
-2013	OK	40043	Oil	Royalties	8325.85
-2013	OK	40043	Oil	Royalties	350481.86
-2013	OK	40045	Oil & Gas	Other Revenues	458.53
-2013	OK	40045	Oil & Gas	Other Roy Vals	34721.58
-2013	OK	40045	Gas	Royalties	16799.1
-2013	OK	40045	Gas	Royalties	18725.4
-2013	OK	40045	Gas	Royalties	126090.2
-2013	OK	40045	Oil	Royalties	338898.49
-2013	OK	40045	Oil	Royalties	733790.95
-2013	OK	40047	Oil & Gas	Other Roy Vals	360
-2013	OK	40047	Gas	Royalties	18.12
-2013	OK	40047	Gas	Royalties	24.71
-2013	OK	40047	Gas	Royalties	17728.34
-2013	OK	40047	Oil	Royalties	188.05
-2013	OK	40049	Oil & Gas	Other Revenues	60
-2013	OK	40049	Gas	Royalties	4857.5
-2013	OK	40049	Oil	Royalties	10922.8
-2013	OK	40051	Oil & Gas	Other Revenues	40
-2013	OK	40051	Oil & Gas	Other Roy Vals	27.06
-2013	OK	40051	Gas	Royalties	2075.25
-2013	OK	40051	Gas	Royalties	2441.52
-2013	OK	40051	Gas	Royalties	1875.77
-2013	OK	40051	Oil	Royalties	77.65
-2013	OK	40051	Oil	Royalties	4510.45
-2013	OK	40055	Oil & Gas	Other Roy Vals	30
-2013	OK	40055	Gas	Royalties	2470.48
-2013	OK	40055	Oil	Royalties	124.84
-2013	OK	40059	Oil & Gas	Other Roy Vals	123.77
-2013	OK	40059	Gas	Royalties	1076.39
-2013	OK	40059	Gas	Royalties	1366.33
-2013	OK	40059	Gas	Royalties	10998.3
-2013	OK	40059	Oil	Royalties	74.72
-2013	OK	40059	Oil	Royalties	228.18
-2013	OK	40061	Oil & Gas	Other Revenues	-10.59
-2013	OK	40061	Oil & Gas	Other Roy Vals	-7060.93
-2013	OK	40061	Gas	Royalties	504.96
-2013	OK	40061	Gas	Royalties	60661.98
-2013	OK	40063	Gas	Royalties	519.98
-2013	OK	40073	Oil & Gas	Other Revenues	9.68
-2013	OK	40073	Oil & Gas	Other Roy Vals	1629.69
-2013	OK	40073	Gas	Royalties	2854.21
-2013	OK	40073	Gas	Royalties	4771.51
-2013	OK	40073	Gas	Royalties	10075.56
-2013	OK	40073	Oil	Royalties	1447.16
-2013	OK	40073	Oil	Royalties	3066.83
-2013	OK	40077	Oil & Gas	Other Roy Vals	3579.88
-2013	OK	40077	Gas	Royalties	67.16
-2013	OK	40077	Gas	Royalties	504.87
-2013	OK	40077	Gas	Royalties	179671.64
-2013	OK	40079	Oil & Gas	Other Roy Vals	-565.37
-2013	OK	40079	Gas	Royalties	633.19
-2013	OK	40079	Gas	Royalties	14794.75
-2013	OK	40081	Gas	Royalties	557.18
-2013	OK	40081	Oil	Royalties	635.85
-2013	OK	40083	Oil	Royalties	77.18
-2013	OK	40087	Oil	Royalties	57.4
-2013	OK	40091	Oil & Gas	Other Roy Vals	-225
-2013	OK	40091	Gas	Royalties	294.83
-2013	OK	40093	Oil & Gas	Other Revenues	192
-2013	OK	40093	Oil & Gas	Other Roy Vals	2922.59
-2013	OK	40093	Gas	Royalties	49731.23
-2013	OK	40093	Gas	Royalties	212015.25
-2013	OK	40093	Gas	Royalties	103248.42
-2013	OK	40093	Oil	Royalties	3690.66
-2013	OK	40093	Oil	Royalties	313240.35
-2013	OK	40109	Oil	Royalties	56.92
-2013	OK	40119	Oil & Gas	Other Roy Vals	-185.97
-2013	OK	40119	Gas	Royalties	3942.86
-2013	OK	40119	Oil	Royalties	2282.79
-2013	OK	40121	Oil & Gas	Other Revenues	804
-2013	OK	40121	Oil & Gas	Other Roy Vals	-26748.62
-2013	OK	40121	Gas	Royalties	14843.03
-2013	OK	40121	Gas	Royalties	294.22
-2013	OK	40121	Gas	Royalties	898892.27
-2013	OK	40129	Oil & Gas	Other Revenues	1272.66
-2013	OK	40129	Oil & Gas	Other Roy Vals	31694.59
-2013	OK	40129	Gas	Royalties	320.18
-2013	OK	40129	Gas	Royalties	223079.84
-2013	OK	40129	Gas	Royalties	579087.82
-2013	OK	40129	Gas	Royalties	890862.47
-2013	OK	40129	Oil	Royalties	1000447.51
-2013	OK	40129	Oil	Royalties	1137924.7
-2013	OK	40135	Gas	Royalties	7002.83
-2013	OK	40139	Oil & Gas	Other Revenues	-47.11
-2013	OK	40139	Oil & Gas	Other Roy Vals	-3637.53
-2013	OK	40139	Gas	Royalties	17939.96
-2013	OK	40139	Gas	Royalties	21649.25
-2013	OK	40139	Gas	Royalties	16815.1
-2013	OK	40139	Oil	Royalties	22012.63
-2013	OK	40139	Other	Royalties	1.2
-2013	OK	40141	Oil	Royalties	149200
-2013	OK	40149	Oil & Gas	Other Roy Vals	435.43
-2013	OK	40149	Gas	Royalties	12865
-2013	OK	40149	Gas	Royalties	21579.34
-2013	OK	40149	Gas	Royalties	-5610.62
-2013	OK	40149	Oil	Royalties	9295.05
-2013	OK	40151	Oil & Gas	Other Revenues	-237.11
-2013	OK	40151	Oil & Gas	Other Roy Vals	50319.71
-2013	OK	40151	Gas	Royalties	25.82
-2013	OK	40151	Gas	Royalties	103946.56
-2013	OK	40151	Gas	Royalties	402384.58
-2013	OK	40151	Gas	Royalties	-28305.58
-2013	OK	40151	Oil	Royalties	4325.23
-2013	OK	40151	Oil	Royalties	568388.44
-2013	OK	40153	Oil & Gas	Other Revenues	951.11
-2013	OK	40153	Oil & Gas	Other Roy Vals	4103.8
-2013	OK	40153	Gas	Royalties	29411.01
-2013	OK	40153	Gas	Royalties	127501.5
-2013	OK	40153	Gas	Royalties	-15536.95
-2013	OK	40153	Oil	Royalties	516.58
-2013	OK	40153	Oil	Royalties	20575.44
+Year	State	County	FIPS	Commodity	type	Revenue
+2004	OK	Alfalfa	40003	Oil & Gas	Other Revenues	1817
+2004	OK	Alfalfa	40003	Oil & Gas	Other Roy Vals	-2885
+2004	OK	Alfalfa	40003	Gas	Royalties	15427.63
+2004	OK	Alfalfa	40003	Oil	Royalties	992.89
+2004	OK	Alfalfa	40003	Oil	Royalties	4042.07
+2004	OK	Beaver	40007	Oil & Gas	Other Roy Vals	-512.58
+2004	OK	Beaver	40007	Gas	Royalties	5895.25
+2004	OK	Beaver	40007	Gas	Royalties	13992.45
+2004	OK	Beaver	40007	Gas	Royalties	123395.14
+2004	OK	Beaver	40007	Oil	Royalties	2420.16
+2004	OK	Beaver	40007	Oil	Royalties	12496.7
+2004	OK	Beckham	40009	Oil & Gas	Other Revenues	667.2
+2004	OK	Beckham	40009	Oil & Gas	Other Roy Vals	88091.6
+2004	OK	Beckham	40009	Gas	Royalties	2438.39
+2004	OK	Beckham	40009	Gas	Royalties	11555.88
+2004	OK	Beckham	40009	Gas	Royalties	1783282.11
+2004	OK	Beckham	40009	Oil	Royalties	3231.41
+2004	OK	Beckham	40009	Oil	Royalties	2352.45
+2004	OK	Blaine	40011	Oil & Gas	Other Roy Vals	-1135.66
+2004	OK	Blaine	40011	Gas	Royalties	5713.29
+2004	OK	Blaine	40011	Gas	Royalties	141463.05
+2004	OK	Blaine	40011	Oil	Royalties	7490.43
+2004	OK	Blaine	40011	Oil	Royalties	3890.12
+2004	OK	Canadian	40017	Oil & Gas	Other Revenues	0.61
+2004	OK	Canadian	40017	Oil & Gas	Other Roy Vals	111.03
+2004	OK	Canadian	40017	Gas	Royalties	6391.86
+2004	OK	Canadian	40017	Gas	Royalties	19158.35
+2004	OK	Canadian	40017	Gas	Royalties	205359.8
+2004	OK	Canadian	40017	Oil	Royalties	9098.21
+2004	OK	Canadian	40017	Oil	Royalties	8234.04
+2004	OK	Cimarron	40025	Oil & Gas	Other Roy Vals	-183
+2004	OK	Cimarron	40025	Gas	Royalties	811.42
+2004	OK	Coal	40029	Gas	Royalties	18322.77
+2004	OK	Comanche	40031	Oil	Royalties	5814.96
+2004	OK	Creek	40037	Oil	Royalties	231.38
+2004	OK	Custer	40039	Oil & Gas	Other Revenues	140
+2004	OK	Custer	40039	Oil & Gas	Other Roy Vals	395.08
+2004	OK	Custer	40039	Gas	Royalties	2967.77
+2004	OK	Custer	40039	Gas	Royalties	11841.18
+2004	OK	Custer	40039	Gas	Royalties	254866.56
+2004	OK	Custer	40039	Oil	Royalties	6677.73
+2004	OK	Custer	40039	Oil	Royalties	5674.32
+2004	OK	Dewey	40043	Oil & Gas	Other Revenues	129.42
+2004	OK	Dewey	40043	Oil & Gas	Other Roy Vals	459.21
+2004	OK	Dewey	40043	Gas	Royalties	19041.65
+2004	OK	Dewey	40043	Gas	Royalties	39177.72
+2004	OK	Dewey	40043	Gas	Royalties	422052.37
+2004	OK	Dewey	40043	Oil	Royalties	20344.06
+2004	OK	Dewey	40043	Oil	Royalties	44221.94
+2004	OK	Ellis	40045	Oil & Gas	Other Revenues	-32.99
+2004	OK	Ellis	40045	Oil & Gas	Other Roy Vals	7375.04
+2004	OK	Ellis	40045	Gas	Royalties	49.28
+2004	OK	Ellis	40045	Gas	Royalties	8857.85
+2004	OK	Ellis	40045	Gas	Royalties	198357.19
+2004	OK	Ellis	40045	Oil	Royalties	38102.95
+2004	OK	Ellis	40045	Oil	Royalties	23882.84
+2004	OK	Garfield	40047	Oil & Gas	Other Roy Vals	451
+2004	OK	Garfield	40047	Gas	Royalties	49063.56
+2004	OK	Garfield	40047	Oil	Royalties	6098.61
+2004	OK	Garfield	40047	Oil	Royalties	68.11
+2004	OK	Garvin	40049	Oil	Royalties	3547.67
+2004	OK	Garvin	40049	Oil	Royalties	903.68
+2004	OK	Grady	40051	Oil & Gas	Other Revenues	0.61
+2004	OK	Grady	40051	Oil & Gas	Other Roy Vals	-34.93
+2004	OK	Grady	40051	Gas	Royalties	211.43
+2004	OK	Grady	40051	Gas	Royalties	1432.68
+2004	OK	Grady	40051	Gas	Royalties	71478.78
+2004	OK	Grady	40051	Oil	Royalties	4904.62
+2004	OK	Grady	40051	Oil	Royalties	1975.5
+2004	OK	Greer	40055	Gas	Royalties	2880.68
+2004	OK	Greer	40055	Oil	Royalties	81.89
+2004	OK	Harper	40059	Oil & Gas	Other Roy Vals	-250
+2004	OK	Harper	40059	Gas	Royalties	1.29
+2004	OK	Harper	40059	Gas	Royalties	357.99
+2004	OK	Harper	40059	Gas	Royalties	41488.46
+2004	OK	Harper	40059	Oil	Royalties	249.8
+2004	OK	Harper	40059	Oil	Royalties	48.72
+2004	OK	Haskell	40061	Oil & Gas	Other Revenues	158.1
+2004	OK	Haskell	40061	Oil & Gas	Other Roy Vals	8738.03
+2004	OK	Haskell	40061	Gas	Royalties	5622.35
+2004	OK	Haskell	40061	Gas	Royalties	212118.49
+2004	OK	Hughes	40063	Oil & Gas	Other Roy Vals	-50.67
+2004	OK	Hughes	40063	Gas	Royalties	904.51
+2004	OK	Kingfisher	40073	Oil & Gas	Other Revenues	-2.25
+2004	OK	Kingfisher	40073	Gas	Royalties	6.32
+2004	OK	Kingfisher	40073	Gas	Royalties	11.06
+2004	OK	Kingfisher	40073	Gas	Royalties	17005.21
+2004	OK	Kingfisher	40073	Oil	Royalties	1617.8
+2004	OK	Kingfisher	40073	Oil	Royalties	882.77
+2004	OK	Latimer	40077	Oil & Gas	Other Revenues	1255.61
+2004	OK	Latimer	40077	Oil & Gas	Other Roy Vals	602.83
+2004	OK	Latimer	40077	Coal	Royalties	-546.61
+2004	OK	Latimer	40077	Gas	Royalties	139716.37
+2004	OK	Le Flore	40079	Coal	Other Revenues	-51720.91
+2004	OK	Le Flore	40079	Oil & Gas	Other Revenues	-461.13
+2004	OK	Le Flore	40079	Oil & Gas	Other Roy Vals	149.58
+2004	OK	Le Flore	40079	Coal	Royalties	-58468.37
+2004	OK	Le Flore	40079	Coal	Royalties	-839.31
+2004	OK	Le Flore	40079	Gas	Royalties	347.36
+2004	OK	Le Flore	40079	Gas	Royalties	32207.82
+2004	OK	Lincoln	40081	Gas	Royalties	911.67
+2004	OK	Lincoln	40081	Oil	Royalties	2977.7
+2004	OK	Logan	40083	Gas	Royalties	320.16
+2004	OK	Logan	40083	Oil	Royalties	49.7
+2004	OK	Mcclain	40087	Oil	Royalties	121.38
+2004	OK	Mcintosh	40091	Gas	Royalties	2029.47
+2004	OK	Major	40093	Oil & Gas	Other Revenues	0.03
+2004	OK	Major	40093	Oil & Gas	Other Roy Vals	-5638.33
+2004	OK	Major	40093	Gas	Royalties	12110.82
+2004	OK	Major	40093	Gas	Royalties	48149.62
+2004	OK	Major	40093	Gas	Royalties	636233.48
+2004	OK	Major	40093	Oil	Royalties	22279.02
+2004	OK	Major	40093	Oil	Royalties	6.49
+2004	OK	Major	40093	Oil	Royalties	107233.34
+2004	OK	Oklahoma	40109	Oil & Gas	Other Revenues	0.21
+2004	OK	Oklahoma	40109	Gas	Royalties	885.03
+2004	OK	Oklahoma	40109	Oil	Royalties	42.92
+2004	OK	Payne	40119	Oil & Gas	Other Roy Vals	3000
+2004	OK	Payne	40119	Gas	Royalties	59701.56
+2004	OK	Payne	40119	Gas	Royalties	2485.01
+2004	OK	Payne	40119	Oil	Royalties	552.45
+2004	OK	Pittsburg	40121	Oil & Gas	Other Revenues	29.2
+2004	OK	Pittsburg	40121	Oil & Gas	Other Roy Vals	3894.14
+2004	OK	Pittsburg	40121	Gas	Royalties	678693.64
+2004	OK	Roger Mills	40129	Oil & Gas	Other Revenues	1606.57
+2004	OK	Roger Mills	40129	Oil & Gas	Other Roy Vals	18140.34
+2004	OK	Roger Mills	40129	Gas	Royalties	35212.58
+2004	OK	Roger Mills	40129	Gas	Royalties	173193.54
+2004	OK	Roger Mills	40129	Gas	Royalties	2469663.32
+2004	OK	Roger Mills	40129	Oil	Royalties	51379.66
+2004	OK	Roger Mills	40129	Oil	Royalties	34035.83
+2004	OK	Sequoyah	40135	Gas	Royalties	19909.52
+2004	OK	Texas	40139	Oil & Gas	Other Revenues	-50.48
+2004	OK	Texas	40139	Oil & Gas	Other Roy Vals	515.92
+2004	OK	Texas	40139	Gas	Royalties	9816
+2004	OK	Texas	40139	Gas	Royalties	39038.75
+2004	OK	Texas	40139	Gas	Royalties	94592.87
+2004	OK	Texas	40139	Oil	Royalties	1792.89
+2004	OK	Texas	40139	Oil	Royalties	428.15
+2004	OK	Tillman	40141	Oil	Royalties	35007.73
+2004	OK	Woods	40151	Oil & Gas	Other Revenues	0.04
+2004	OK	Woods	40151	Oil & Gas	Other Roy Vals	23345.52
+2004	OK	Woods	40151	Gas	Royalties	2829.71
+2004	OK	Woods	40151	Gas	Royalties	58372.54
+2004	OK	Woods	40151	Gas	Royalties	707929.76
+2004	OK	Woods	40151	Oil	Royalties	8644.4
+2004	OK	Woods	40151	Oil	Royalties	47163.49
+2004	OK	Woodward	40153	Oil & Gas	Other Revenues	960
+2004	OK	Woodward	40153	Oil & Gas	Other Roy Vals	2941.83
+2004	OK	Woodward	40153	Gas	Royalties	265919.22
+2004	OK	Woodward	40153	Oil	Royalties	3644.4
+2004	OK	Woodward	40153	Oil	Royalties	6937.85
+2005	OK	Alfalfa	40003	Oil & Gas	Other Revenues	50
+2005	OK	Alfalfa	40003	Oil & Gas	Other Roy Vals	-600
+2005	OK	Alfalfa	40003	Gas	Royalties	98973.41
+2005	OK	Alfalfa	40003	Oil	Royalties	6064.71
+2005	OK	Alfalfa	40003	Oil	Royalties	4223.49
+2005	OK	Beaver	40007	Oil & Gas	Other Revenues	-0.02
+2005	OK	Beaver	40007	Oil & Gas	Other Roy Vals	782.36
+2005	OK	Beaver	40007	Gas	Royalties	8687.81
+2005	OK	Beaver	40007	Gas	Royalties	16125.73
+2005	OK	Beaver	40007	Gas	Royalties	107314.41
+2005	OK	Beaver	40007	Oil	Royalties	3277.79
+2005	OK	Beaver	40007	Oil	Royalties	19729.76
+2005	OK	Beckham	40009	Oil & Gas	Other Revenues	144
+2005	OK	Beckham	40009	Oil & Gas	Other Roy Vals	-10016.54
+2005	OK	Beckham	40009	Gas	Royalties	2877.04
+2005	OK	Beckham	40009	Gas	Royalties	22155.7
+2005	OK	Beckham	40009	Gas	Royalties	807695.64
+2005	OK	Beckham	40009	Oil	Royalties	3803.35
+2005	OK	Beckham	40009	Oil	Royalties	2031.76
+2005	OK	Blaine	40011	Oil & Gas	Other Revenues	12.18
+2005	OK	Blaine	40011	Oil & Gas	Other Roy Vals	7326.3
+2005	OK	Blaine	40011	Gas	Royalties	5511.67
+2005	OK	Blaine	40011	Gas	Royalties	2034.5
+2005	OK	Blaine	40011	Gas	Royalties	222481.33
+2005	OK	Blaine	40011	Oil	Royalties	14534.55
+2005	OK	Blaine	40011	Oil	Royalties	5815.6
+2005	OK	Canadian	40017	Oil & Gas	Other Revenues	-0.34
+2005	OK	Canadian	40017	Oil & Gas	Other Roy Vals	163.83
+2005	OK	Canadian	40017	Gas	Royalties	-6515.58
+2005	OK	Canadian	40017	Gas	Royalties	-15501.48
+2005	OK	Canadian	40017	Gas	Royalties	77717.46
+2005	OK	Canadian	40017	Oil	Royalties	7367.55
+2005	OK	Canadian	40017	Oil	Royalties	10023.41
+2005	OK	Cimarron	40025	Gas	Royalties	1561.68
+2005	OK	Cimarron	40025	Oil	Royalties	653.4
+2005	OK	Coal	40029	Gas	Royalties	18045.79
+2005	OK	Coal	40029	Oil	Royalties	7.34
+2005	OK	Comanche	40031	Oil	Royalties	9253.99
+2005	OK	Creek	40037	Oil	Royalties	257.23
+2005	OK	Custer	40039	Oil & Gas	Other Revenues	70
+2005	OK	Custer	40039	Oil & Gas	Other Roy Vals	18842.67
+2005	OK	Custer	40039	Gas	Royalties	3813.17
+2005	OK	Custer	40039	Gas	Royalties	17851.97
+2005	OK	Custer	40039	Gas	Royalties	280380.16
+2005	OK	Custer	40039	Oil	Royalties	11910.54
+2005	OK	Custer	40039	Oil	Royalties	7913.31
+2005	OK	Dewey	40043	Oil & Gas	Other Revenues	152.29
+2005	OK	Dewey	40043	Oil & Gas	Other Roy Vals	-2674.17
+2005	OK	Dewey	40043	Gas	Royalties	22204.42
+2005	OK	Dewey	40043	Gas	Royalties	37079.43
+2005	OK	Dewey	40043	Gas	Royalties	523494.33
+2005	OK	Dewey	40043	Oil	Royalties	11486.67
+2005	OK	Dewey	40043	Oil	Royalties	81124.14
+2005	OK	Ellis	40045	Oil & Gas	Other Revenues	560
+2005	OK	Ellis	40045	Oil & Gas	Other Roy Vals	-7.36
+2005	OK	Ellis	40045	Gas	Royalties	207.97
+2005	OK	Ellis	40045	Gas	Royalties	10748.94
+2005	OK	Ellis	40045	Gas	Royalties	236825.85
+2005	OK	Ellis	40045	Oil	Royalties	38511.27
+2005	OK	Ellis	40045	Oil	Royalties	27929.99
+2005	OK	Garfield	40047	Oil & Gas	Other Roy Vals	2178
+2005	OK	Garfield	40047	Gas	Royalties	60831.45
+2005	OK	Garfield	40047	Oil	Royalties	4359.87
+2005	OK	Garfield	40047	Oil	Royalties	57.05
+2005	OK	Garvin	40049	Oil & Gas	Other Roy Vals	-200
+2005	OK	Garvin	40049	Oil	Royalties	4783.75
+2005	OK	Garvin	40049	Oil	Royalties	83.51
+2005	OK	Grady	40051	Oil & Gas	Other Revenues	-0.33
+2005	OK	Grady	40051	Oil & Gas	Other Roy Vals	1736.3
+2005	OK	Grady	40051	Gas	Royalties	127.31
+2005	OK	Grady	40051	Gas	Royalties	1465.44
+2005	OK	Grady	40051	Gas	Royalties	-10237.23
+2005	OK	Grady	40051	Oil	Royalties	2747.06
+2005	OK	Grady	40051	Oil	Royalties	3331.99
+2005	OK	Greer	40055	Oil & Gas	Other Roy Vals	-141
+2005	OK	Greer	40055	Gas	Royalties	2918.52
+2005	OK	Harper	40059	Oil & Gas	Other Revenues	80
+2005	OK	Harper	40059	Oil & Gas	Other Roy Vals	1441.25
+2005	OK	Harper	40059	Gas	Royalties	47202.06
+2005	OK	Harper	40059	Oil	Royalties	1153.68
+2005	OK	Haskell	40061	Oil & Gas	Other Revenues	2704.44
+2005	OK	Haskell	40061	Oil & Gas	Other Roy Vals	-1733.78
+2005	OK	Haskell	40061	Gas	Royalties	5589.73
+2005	OK	Haskell	40061	Gas	Royalties	223156.86
+2005	OK	Hughes	40063	Oil & Gas	Other Roy Vals	56.5
+2005	OK	Hughes	40063	Gas	Royalties	1373.35
+2005	OK	Kingfisher	40073	Oil & Gas	Other Roy Vals	2390
+2005	OK	Kingfisher	40073	Gas	Royalties	100506.9
+2005	OK	Kingfisher	40073	Oil	Royalties	5501.94
+2005	OK	Kingfisher	40073	Oil	Royalties	3380.51
+2005	OK	Latimer	40077	Oil & Gas	Other Revenues	11.43
+2005	OK	Latimer	40077	Oil & Gas	Other Roy Vals	9778.58
+2005	OK	Latimer	40077	Gas	Royalties	174610.22
+2005	OK	Le Flore	40079	Coal	Other Revenues	-21293.25
+2005	OK	Le Flore	40079	Oil & Gas	Other Revenues	1003.78
+2005	OK	Le Flore	40079	Oil & Gas	Other Roy Vals	1412.59
+2005	OK	Le Flore	40079	Gas	Royalties	39577.13
+2005	OK	Le Flore	40079	Solids	Royalties	-0.02
+2005	OK	Lincoln	40081	Gas	Royalties	767.18
+2005	OK	Lincoln	40081	Oil	Royalties	4569.24
+2005	OK	Logan	40083	Gas	Royalties	366.78
+2005	OK	Logan	40083	Oil	Royalties	58.88
+2005	OK	Mcclain	40087	Oil	Royalties	71.22
+2005	OK	Mcintosh	40091	Gas	Royalties	1928.75
+2005	OK	Major	40093	Oil & Gas	Other Revenues	265
+2005	OK	Major	40093	Oil & Gas	Other Roy Vals	10985.77
+2005	OK	Major	40093	Gas	Royalties	17066.75
+2005	OK	Major	40093	Gas	Royalties	111810.33
+2005	OK	Major	40093	Gas	Royalties	693407.17
+2005	OK	Major	40093	Oil	Royalties	21844.92
+2005	OK	Major	40093	Oil	Royalties	44.34
+2005	OK	Major	40093	Oil	Royalties	150601.93
+2005	OK	Oklahoma	40109	Gas	Royalties	1211.85
+2005	OK	Oklahoma	40109	Oil	Royalties	61.05
+2005	OK	Payne	40119	Gas	Royalties	15068.07
+2005	OK	Payne	40119	Gas	Royalties	78.16
+2005	OK	Payne	40119	Oil	Royalties	12.14
+2005	OK	Pittsburg	40121	Oil & Gas	Other Revenues	63.55
+2005	OK	Pittsburg	40121	Oil & Gas	Other Roy Vals	32338.85
+2005	OK	Pittsburg	40121	Gas	Royalties	1024236.67
+2005	OK	Pittsburg	40121	Oil	Royalties	12.93
+2005	OK	Roger Mills	40129	Oil & Gas	Other Revenues	847.68
+2005	OK	Roger Mills	40129	Oil & Gas	Other Roy Vals	57944.78
+2005	OK	Roger Mills	40129	Gas	Royalties	6832.1
+2005	OK	Roger Mills	40129	Gas	Royalties	112265.64
+2005	OK	Roger Mills	40129	Gas	Royalties	415822.79
+2005	OK	Roger Mills	40129	Gas	Royalties	2705687.58
+2005	OK	Roger Mills	40129	Oil	Royalties	69648.38
+2005	OK	Roger Mills	40129	Oil	Royalties	96482.16
+2005	OK	Sequoyah	40135	Gas	Royalties	31069.49
+2005	OK	Texas	40139	Oil & Gas	Other Revenues	-36.05
+2005	OK	Texas	40139	Oil & Gas	Other Roy Vals	1477.33
+2005	OK	Texas	40139	Gas	Royalties	11870.61
+2005	OK	Texas	40139	Gas	Royalties	46036.49
+2005	OK	Texas	40139	Gas	Royalties	93624.05
+2005	OK	Texas	40139	Oil	Royalties	253.07
+2005	OK	Texas	40139	Oil	Royalties	419.43
+2005	OK	Tillman	40141	Oil	Royalties	26962.62
+2005	OK	Woods	40151	Oil & Gas	Other Roy Vals	19248.08
+2005	OK	Woods	40151	Gas	Royalties	3149.59
+2005	OK	Woods	40151	Gas	Royalties	36839.54
+2005	OK	Woods	40151	Gas	Royalties	743115.65
+2005	OK	Woods	40151	Oil	Royalties	9625.63
+2005	OK	Woods	40151	Oil	Royalties	56759.33
+2005	OK	Woodward	40153	Oil & Gas	Other Revenues	-640
+2005	OK	Woodward	40153	Oil & Gas	Other Roy Vals	9069.6
+2005	OK	Woodward	40153	Gas	Royalties	336617.95
+2005	OK	Woodward	40153	Oil	Royalties	4524.67
+2005	OK	Woodward	40153	Oil	Royalties	7760.83
+2006	OK	Alfalfa	40003	Oil & Gas	Other Roy Vals	-100
+2006	OK	Alfalfa	40003	Gas	Royalties	118927.45
+2006	OK	Alfalfa	40003	Oil	Royalties	7177.01
+2006	OK	Alfalfa	40003	Oil	Royalties	7878.03
+2006	OK	Beaver	40007	Oil & Gas	Other Revenues	24
+2006	OK	Beaver	40007	Oil & Gas	Other Roy Vals	279.58
+2006	OK	Beaver	40007	Gas	Royalties	9448.94
+2006	OK	Beaver	40007	Gas	Royalties	11779.5
+2006	OK	Beaver	40007	Gas	Royalties	112788.73
+2006	OK	Beaver	40007	Oil	Royalties	4686.65
+2006	OK	Beaver	40007	Oil	Royalties	26634.21
+2006	OK	Beckham	40009	Oil	Other Revenues	-67.5
+2006	OK	Beckham	40009	Oil & Gas	Other Revenues	1076.05
+2006	OK	Beckham	40009	Oil & Gas	Other Roy Vals	10737.55
+2006	OK	Beckham	40009	Gas	Royalties	8050.05
+2006	OK	Beckham	40009	Gas	Royalties	36540.96
+2006	OK	Beckham	40009	Gas	Royalties	1111561.68
+2006	OK	Beckham	40009	Oil	Royalties	5303.05
+2006	OK	Beckham	40009	Oil	Royalties	4214.2
+2006	OK	Blaine	40011	Oil & Gas	Other Revenues	-12.18
+2006	OK	Blaine	40011	Oil & Gas	Other Roy Vals	-5268.56
+2006	OK	Blaine	40011	Gas	Royalties	4832.33
+2006	OK	Blaine	40011	Gas	Royalties	290331.1
+2006	OK	Blaine	40011	Oil	Royalties	11960.21
+2006	OK	Blaine	40011	Oil	Royalties	21441.71
+2006	OK	Canadian	40017	Oil & Gas	Other Roy Vals	8784
+2006	OK	Canadian	40017	Gas	Royalties	1814.05
+2006	OK	Canadian	40017	Gas	Royalties	3810.75
+2006	OK	Canadian	40017	Gas	Royalties	118709.6
+2006	OK	Canadian	40017	Oil	Royalties	5780.92
+2006	OK	Canadian	40017	Oil	Royalties	13659.59
+2006	OK	Cimarron	40025	Gas	Royalties	159.91
+2006	OK	Coal	40029	Gas	Royalties	58938.53
+2006	OK	Comanche	40031	Oil	Royalties	9032.81
+2006	OK	Creek	40037	Oil	Royalties	315.41
+2006	OK	Custer	40039	Oil & Gas	Other Revenues	70
+2006	OK	Custer	40039	Oil & Gas	Other Roy Vals	-4893.23
+2006	OK	Custer	40039	Gas	Royalties	6420.28
+2006	OK	Custer	40039	Gas	Royalties	22920.1
+2006	OK	Custer	40039	Gas	Royalties	332903.73
+2006	OK	Custer	40039	Oil	Royalties	12315.49
+2006	OK	Custer	40039	Oil	Royalties	8637.37
+2006	OK	Dewey	40043	Oil & Gas	Other Revenues	484.57
+2006	OK	Dewey	40043	Oil & Gas	Other Roy Vals	4389.3
+2006	OK	Dewey	40043	Gas	Royalties	50552.72
+2006	OK	Dewey	40043	Gas	Royalties	44653.65
+2006	OK	Dewey	40043	Gas	Royalties	542133.03
+2006	OK	Dewey	40043	Oil	Royalties	14071.12
+2006	OK	Dewey	40043	Oil	Royalties	116132.02
+2006	OK	Dewey	40043	Oil & Gas	Royalties	-0.01
+2006	OK	Ellis	40045	Oil & Gas	Other Revenues	437.75
+2006	OK	Ellis	40045	Oil & Gas	Other Roy Vals	7741.8
+2006	OK	Ellis	40045	Gas	Royalties	345.29
+2006	OK	Ellis	40045	Gas	Royalties	8902.4
+2006	OK	Ellis	40045	Gas	Royalties	248714.06
+2006	OK	Ellis	40045	Oil	Royalties	33578.78
+2006	OK	Ellis	40045	Oil	Royalties	31077.23
+2006	OK	Ellis	40045	Oil & Gas	Royalties	-6.09
+2006	OK	Garfield	40047	Oil & Gas	Other Roy Vals	-4300
+2006	OK	Garfield	40047	Gas	Royalties	60
+2006	OK	Garfield	40047	Gas	Royalties	135.59
+2006	OK	Garfield	40047	Gas	Royalties	57208.12
+2006	OK	Garfield	40047	Oil	Royalties	5042.65
+2006	OK	Garfield	40047	Oil	Royalties	106.24
+2006	OK	Garvin	40049	Oil & Gas	Other Revenues	320
+2006	OK	Garvin	40049	Gas	Royalties	7447.69
+2006	OK	Garvin	40049	Oil	Royalties	20412.98
+2006	OK	Grady	40051	Oil & Gas	Other Roy Vals	-558.34
+2006	OK	Grady	40051	Gas	Royalties	942.35
+2006	OK	Grady	40051	Gas	Royalties	27315.67
+2006	OK	Grady	40051	Oil	Royalties	1360.93
+2006	OK	Grady	40051	Oil	Royalties	1741.38
+2006	OK	Greer	40055	Gas	Royalties	5931.14
+2006	OK	Greer	40055	Oil	Royalties	117.32
+2006	OK	Harper	40059	Oil & Gas	Other Roy Vals	-96.68
+2006	OK	Harper	40059	Gas	Royalties	67412.07
+2006	OK	Harper	40059	Oil	Royalties	408.77
+2006	OK	Harper	40059	Oil	Royalties	549.37
+2006	OK	Haskell	40061	Oil & Gas	Other Revenues	130.5
+2006	OK	Haskell	40061	Oil & Gas	Other Roy Vals	1291.61
+2006	OK	Haskell	40061	Gas	Royalties	6646.24
+2006	OK	Haskell	40061	Gas	Royalties	279004.73
+2006	OK	Hughes	40063	Oil & Gas	Other Roy Vals	-51.5
+2006	OK	Hughes	40063	Gas	Royalties	689.3
+2006	OK	Kingfisher	40073	Gas	Royalties	26.03
+2006	OK	Kingfisher	40073	Gas	Royalties	56.24
+2006	OK	Kingfisher	40073	Gas	Royalties	67628.81
+2006	OK	Kingfisher	40073	Oil	Royalties	4033.65
+2006	OK	Kingfisher	40073	Oil	Royalties	3027.41
+2006	OK	Latimer	40077	Oil & Gas	Other Revenues	-80.22
+2006	OK	Latimer	40077	Oil & Gas	Other Roy Vals	-3306.64
+2006	OK	Latimer	40077	Gas	Royalties	227518.4
+2006	OK	Le Flore	40079	Oil & Gas	Other Revenues	115.02
+2006	OK	Le Flore	40079	Oil & Gas	Other Roy Vals	78.91
+2006	OK	Le Flore	40079	Gas	Royalties	46925.77
+2006	OK	Le Flore	40079	Solids	Royalties	-0.01
+2006	OK	Lincoln	40081	Gas	Royalties	162.49
+2006	OK	Lincoln	40081	Gas	Royalties	823.01
+2006	OK	Lincoln	40081	Oil	Royalties	7146.74
+2006	OK	Logan	40083	Gas	Royalties	541.14
+2006	OK	Logan	40083	Oil	Royalties	87.83
+2006	OK	Mcclain	40087	Oil	Royalties	81.93
+2006	OK	Mcintosh	40091	Gas	Royalties	1922.87
+2006	OK	Major	40093	Oil & Gas	Other Revenues	15297.53
+2006	OK	Major	40093	Oil & Gas	Other Roy Vals	-228
+2006	OK	Major	40093	Gas	Royalties	17707.03
+2006	OK	Major	40093	Gas	Royalties	101395.65
+2006	OK	Major	40093	Gas	Royalties	898661.06
+2006	OK	Major	40093	Oil	Royalties	21349.92
+2006	OK	Major	40093	Oil	Royalties	66.88
+2006	OK	Major	40093	Oil	Royalties	230783.45
+2006	OK	Oklahoma	40109	Gas	Royalties	989.66
+2006	OK	Oklahoma	40109	Oil	Royalties	42.15
+2006	OK	Payne	40119	Gas	Royalties	3110.51
+2006	OK	Payne	40119	Gas	Royalties	6474.27
+2006	OK	Payne	40119	Oil	Royalties	1820.97
+2006	OK	Pittsburg	40121	Oil	Other Revenues	-60
+2006	OK	Pittsburg	40121	Oil & Gas	Other Revenues	-842.36
+2006	OK	Pittsburg	40121	Oil & Gas	Other Roy Vals	-26456.99
+2006	OK	Pittsburg	40121	Gas	Royalties	860193.44
+2006	OK	Pittsburg	40121	Oil	Royalties	-2.14
+2006	OK	Roger Mills	40129	Oil & Gas	Other Revenues	1588.1
+2006	OK	Roger Mills	40129	Oil	Other Roy Vals	-0.01
+2006	OK	Roger Mills	40129	Oil & Gas	Other Roy Vals	23989.47
+2006	OK	Roger Mills	40129	Gas	Royalties	6113.21
+2006	OK	Roger Mills	40129	Gas	Royalties	241793.54
+2006	OK	Roger Mills	40129	Gas	Royalties	707121.11
+2006	OK	Roger Mills	40129	Gas	Royalties	2802933.84
+2006	OK	Roger Mills	40129	Oil	Royalties	86205.08
+2006	OK	Roger Mills	40129	Oil	Royalties	85161.61
+2006	OK	Roger Mills	40129	Oil & Gas	Royalties	-0.1
+2006	OK	Sequoyah	40135	Gas	Royalties	26942.55
+2006	OK	Sequoyah	40135	Oil	Royalties	-10922.35
+2006	OK	Texas	40139	Oil & Gas	Other Revenues	-79.25
+2006	OK	Texas	40139	Oil & Gas	Other Roy Vals	1019
+2006	OK	Texas	40139	Gas	Royalties	15228.48
+2006	OK	Texas	40139	Gas	Royalties	44918.1
+2006	OK	Texas	40139	Gas	Royalties	81292.49
+2006	OK	Texas	40139	Oil	Royalties	671.97
+2006	OK	Texas	40139	Oil	Royalties	757.34
+2006	OK	Tillman	40141	Oil	Royalties	36526.11
+2006	OK	Woods	40151	Oil & Gas	Other Revenues	490
+2006	OK	Woods	40151	Oil & Gas	Other Roy Vals	98.31
+2006	OK	Woods	40151	Gas	Royalties	3275.18
+2006	OK	Woods	40151	Gas	Royalties	29455.23
+2006	OK	Woods	40151	Gas	Royalties	1022566.63
+2006	OK	Woods	40151	Oil	Royalties	9379.07
+2006	OK	Woods	40151	Oil	Royalties	121970.98
+2006	OK	Woodward	40153	Oil & Gas	Other Roy Vals	-1844.75
+2006	OK	Woodward	40153	Gas	Royalties	443444.9
+2006	OK	Woodward	40153	Oil	Royalties	5431.67
+2006	OK	Woodward	40153	Oil	Royalties	15485.76
+2007	OK	Alfalfa	40003	Oil & Gas	Other Roy Vals	91.5
+2007	OK	Alfalfa	40003	Gas	Royalties	110857.5
+2007	OK	Alfalfa	40003	Oil	Royalties	6071.59
+2007	OK	Alfalfa	40003	Oil	Royalties	6130.13
+2007	OK	Beaver	40007	Oil & Gas	Other Roy Vals	339.39
+2007	OK	Beaver	40007	Gas	Royalties	8619.6
+2007	OK	Beaver	40007	Gas	Royalties	9289.78
+2007	OK	Beaver	40007	Gas	Royalties	92724.5
+2007	OK	Beaver	40007	Oil	Royalties	-2066.18
+2007	OK	Beaver	40007	Oil	Royalties	34069.79
+2007	OK	Beckham	40009	Oil & Gas	Other Revenues	1360
+2007	OK	Beckham	40009	Oil & Gas	Other Roy Vals	-18494.56
+2007	OK	Beckham	40009	Gas	Royalties	8535.4
+2007	OK	Beckham	40009	Gas	Royalties	30691.49
+2007	OK	Beckham	40009	Gas	Royalties	767495.14
+2007	OK	Beckham	40009	Oil	Royalties	1745.64
+2007	OK	Beckham	40009	Oil	Royalties	3642.81
+2007	OK	Blaine	40011	Oil & Gas	Other Roy Vals	13277.12
+2007	OK	Blaine	40011	Gas	Royalties	7114.2
+2007	OK	Blaine	40011	Gas	Royalties	7887.6
+2007	OK	Blaine	40011	Gas	Royalties	277592.31
+2007	OK	Blaine	40011	Oil	Royalties	14228.23
+2007	OK	Blaine	40011	Oil	Royalties	23237.46
+2007	OK	Canadian	40017	Oil & Gas	Other Roy Vals	649.94
+2007	OK	Canadian	40017	Gas	Royalties	560.71
+2007	OK	Canadian	40017	Gas	Royalties	795.31
+2007	OK	Canadian	40017	Gas	Royalties	115937.21
+2007	OK	Canadian	40017	Oil	Royalties	8468.52
+2007	OK	Canadian	40017	Oil	Royalties	14059.62
+2007	OK	Coal	40029	Oil & Gas	Other Roy Vals	15000
+2007	OK	Coal	40029	Gas	Royalties	-318.61
+2007	OK	Coal	40029	Gas	Royalties	-4694.9
+2007	OK	Coal	40029	Gas	Royalties	356668.76
+2007	OK	Coal	40029	Oil	Royalties	592.86
+2007	OK	Comanche	40031	Oil	Royalties	8726.26
+2007	OK	Creek	40037	Oil	Royalties	311.66
+2007	OK	Custer	40039	Oil & Gas	Other Revenues	140
+2007	OK	Custer	40039	Oil & Gas	Other Roy Vals	-1814.15
+2007	OK	Custer	40039	Gas	Royalties	77
+2007	OK	Custer	40039	Gas	Royalties	5096.16
+2007	OK	Custer	40039	Gas	Royalties	14179.48
+2007	OK	Custer	40039	Gas	Royalties	220502.95
+2007	OK	Custer	40039	Oil	Royalties	10773.88
+2007	OK	Custer	40039	Oil	Royalties	8746.54
+2007	OK	Dewey	40043	Oil & Gas	Other Revenues	372.16
+2007	OK	Dewey	40043	Oil & Gas	Other Roy Vals	3957.75
+2007	OK	Dewey	40043	Gas	Royalties	16364.01
+2007	OK	Dewey	40043	Gas	Royalties	21866.86
+2007	OK	Dewey	40043	Gas	Royalties	429281.38
+2007	OK	Dewey	40043	Oil	Royalties	11724.99
+2007	OK	Dewey	40043	Oil	Royalties	67618.22
+2007	OK	Ellis	40045	Oil & Gas	Other Revenues	432.92
+2007	OK	Ellis	40045	Oil & Gas	Other Roy Vals	1170
+2007	OK	Ellis	40045	Gas	Royalties	773.19
+2007	OK	Ellis	40045	Gas	Royalties	7926.17
+2007	OK	Ellis	40045	Gas	Royalties	188906.58
+2007	OK	Ellis	40045	Oil	Royalties	66761.62
+2007	OK	Ellis	40045	Oil	Royalties	5.02
+2007	OK	Ellis	40045	Oil	Royalties	33528.99
+2007	OK	Garfield	40047	Oil & Gas	Other Roy Vals	1100
+2007	OK	Garfield	40047	Gas	Royalties	34.32
+2007	OK	Garfield	40047	Gas	Royalties	60.33
+2007	OK	Garfield	40047	Gas	Royalties	54380.25
+2007	OK	Garfield	40047	Oil	Royalties	4056.47
+2007	OK	Garfield	40047	Oil	Royalties	111.02
+2007	OK	Garvin	40049	Oil & Gas	Other Revenues	320
+2007	OK	Garvin	40049	Gas	Royalties	29956.4
+2007	OK	Garvin	40049	Oil	Royalties	33229.61
+2007	OK	Grady	40051	Oil & Gas	Other Roy Vals	94.8
+2007	OK	Grady	40051	Gas	Royalties	15.03
+2007	OK	Grady	40051	Gas	Royalties	342.52
+2007	OK	Grady	40051	Gas	Royalties	41022.75
+2007	OK	Grady	40051	Oil	Royalties	3710.09
+2007	OK	Grady	40051	Oil	Royalties	1759.45
+2007	OK	Greer	40055	Oil & Gas	Other Roy Vals	1178.09
+2007	OK	Greer	40055	Gas	Royalties	7676.31
+2007	OK	Greer	40055	Oil	Royalties	147.36
+2007	OK	Harper	40059	Oil & Gas	Other Roy Vals	-309.66
+2007	OK	Harper	40059	Gas	Royalties	2298.14
+2007	OK	Harper	40059	Gas	Royalties	1818.8
+2007	OK	Harper	40059	Gas	Royalties	30886.07
+2007	OK	Harper	40059	Oil	Royalties	308.34
+2007	OK	Harper	40059	Oil	Royalties	252.34
+2007	OK	Haskell	40061	Oil & Gas	Other Revenues	-179.3
+2007	OK	Haskell	40061	Oil & Gas	Other Roy Vals	-878.06
+2007	OK	Haskell	40061	Gas	Royalties	4249.17
+2007	OK	Haskell	40061	Gas	Royalties	171812.61
+2007	OK	Hughes	40063	Oil & Gas	Other Roy Vals	202.09
+2007	OK	Hughes	40063	Gas	Royalties	26003.51
+2007	OK	Kingfisher	40073	Oil & Gas	Other Roy Vals	94.33
+2007	OK	Kingfisher	40073	Gas	Royalties	952.15
+2007	OK	Kingfisher	40073	Gas	Royalties	1306.51
+2007	OK	Kingfisher	40073	Gas	Royalties	41454.06
+2007	OK	Kingfisher	40073	Oil	Royalties	2964.79
+2007	OK	Kingfisher	40073	Oil	Royalties	3096.19
+2007	OK	Latimer	40077	Coal	Other Revenues	-37559.22
+2007	OK	Latimer	40077	Oil & Gas	Other Revenues	70.47
+2007	OK	Latimer	40077	Oil & Gas	Other Roy Vals	-6018.38
+2007	OK	Latimer	40077	Gas	Royalties	275291.95
+2007	OK	Le Flore	40079	Oil & Gas	Other Revenues	-1.15
+2007	OK	Le Flore	40079	Oil & Gas	Other Roy Vals	3308.25
+2007	OK	Le Flore	40079	Gas	Royalties	508.53
+2007	OK	Le Flore	40079	Gas	Royalties	84596.15
+2007	OK	Lincoln	40081	Gas	Royalties	482.93
+2007	OK	Lincoln	40081	Oil	Royalties	9407.79
+2007	OK	Logan	40083	Gas	Royalties	471.76
+2007	OK	Logan	40083	Oil	Royalties	87.09
+2007	OK	Mcclain	40087	Oil	Royalties	93.03
+2007	OK	Mcintosh	40091	Gas	Other Roy Vals	191.37
+2007	OK	Mcintosh	40091	Oil & Gas	Other Roy Vals	265
+2007	OK	Mcintosh	40091	Gas	Royalties	4404.71
+2007	OK	Major	40093	Oil & Gas	Other Revenues	-14974.5
+2007	OK	Major	40093	Oil & Gas	Other Roy Vals	34972.24
+2007	OK	Major	40093	Gas	Royalties	15695.46
+2007	OK	Major	40093	Gas	Royalties	82261.74
+2007	OK	Major	40093	Gas	Royalties	886168.23
+2007	OK	Major	40093	Oil	Royalties	24985.19
+2007	OK	Major	40093	Oil	Royalties	312.3
+2007	OK	Major	40093	Oil	Royalties	368329.41
+2007	OK	Oklahoma	40109	Gas	Royalties	1072.79
+2007	OK	Oklahoma	40109	Oil	Royalties	82.46
+2007	OK	Payne	40119	Gas	Royalties	3532.63
+2007	OK	Payne	40119	Oil	Royalties	15.58
+2007	OK	Pittsburg	40121	Oil & Gas	Other Revenues	1063.4
+2007	OK	Pittsburg	40121	Oil & Gas	Other Roy Vals	5339.38
+2007	OK	Pittsburg	40121	Gas	Royalties	934428.56
+2007	OK	Roger Mills	40129	Oil & Gas	Other Revenues	219.3
+2007	OK	Roger Mills	40129	Oil & Gas	Other Roy Vals	63464.54
+2007	OK	Roger Mills	40129	Gas	Royalties	4021.06
+2007	OK	Roger Mills	40129	Gas	Royalties	216498.85
+2007	OK	Roger Mills	40129	Gas	Royalties	526714.01
+2007	OK	Roger Mills	40129	Gas	Royalties	2472142.22
+2007	OK	Roger Mills	40129	Oil	Royalties	70018.24
+2007	OK	Roger Mills	40129	Oil	Royalties	68773.28
+2007	OK	Sequoyah	40135	Oil & Gas	Other Revenues	-469
+2007	OK	Sequoyah	40135	Gas	Royalties	25186.88
+2007	OK	Texas	40139	Oil & Gas	Other Revenues	-87.74
+2007	OK	Texas	40139	Oil & Gas	Other Roy Vals	-3951.12
+2007	OK	Texas	40139	Gas	Royalties	16574.21
+2007	OK	Texas	40139	Gas	Royalties	37445.69
+2007	OK	Texas	40139	Gas	Royalties	57297.25
+2007	OK	Texas	40139	Oil	Royalties	342.36
+2007	OK	Texas	40139	Oil	Royalties	328225.72
+2007	OK	Tillman	40141	Oil	Royalties	44646.52
+2007	OK	Woods	40151	Oil & Gas	Other Revenues	97.09
+2007	OK	Woods	40151	Oil & Gas	Other Roy Vals	53970.24
+2007	OK	Woods	40151	Gas	Royalties	6765.49
+2007	OK	Woods	40151	Gas	Royalties	18597.16
+2007	OK	Woods	40151	Gas	Royalties	1381953.7
+2007	OK	Woods	40151	Oil	Royalties	10939.28
+2007	OK	Woods	40151	Oil	Royalties	425816.87
+2007	OK	Woodward	40153	Oil & Gas	Other Revenues	2.41
+2007	OK	Woodward	40153	Oil & Gas	Other Roy Vals	16221.69
+2007	OK	Woodward	40153	Gas	Royalties	474153.48
+2007	OK	Woodward	40153	Oil	Royalties	6936.15
+2007	OK	Woodward	40153	Oil	Royalties	23639.04
+2008	OK	Alfalfa	40003	Oil & Gas	Other Roy Vals	375.5
+2008	OK	Alfalfa	40003	Gas	Royalties	143137.89
+2008	OK	Alfalfa	40003	Oil	Royalties	7194.66
+2008	OK	Alfalfa	40003	Oil	Royalties	15409.05
+2008	OK	Atoka	40005	Oil & Gas	Other Roy Vals	5000
+2008	OK	Atoka	40005	Gas	Royalties	21978.17
+2008	OK	Beaver	40007	Oil & Gas	Other Revenues	-71.99
+2008	OK	Beaver	40007	Oil & Gas	Other Roy Vals	639.16
+2008	OK	Beaver	40007	Gas	Royalties	14588.99
+2008	OK	Beaver	40007	Gas	Royalties	10820.6
+2008	OK	Beaver	40007	Gas	Royalties	105836.29
+2008	OK	Beaver	40007	Oil	Royalties	1673.96
+2008	OK	Beaver	40007	Oil	Royalties	57709.56
+2008	OK	Beckham	40009	Oil & Gas	Other Revenues	1360
+2008	OK	Beckham	40009	Oil & Gas	Other Roy Vals	-20446.64
+2008	OK	Beckham	40009	Gas	Royalties	14687.87
+2008	OK	Beckham	40009	Gas	Royalties	35343.14
+2008	OK	Beckham	40009	Gas	Royalties	658691.1
+2008	OK	Beckham	40009	Oil	Royalties	5222.51
+2008	OK	Beckham	40009	Oil	Royalties	6097.17
+2008	OK	Blaine	40011	Oil & Gas	Other Revenues	320
+2008	OK	Blaine	40011	Oil & Gas	Other Roy Vals	-3757.39
+2008	OK	Blaine	40011	Gas	Royalties	13678.89
+2008	OK	Blaine	40011	Gas	Royalties	10814.19
+2008	OK	Blaine	40011	Gas	Royalties	319570.67
+2008	OK	Blaine	40011	Oil	Royalties	15542.84
+2008	OK	Blaine	40011	Oil	Royalties	37038.57
+2008	OK	Canadian	40017	Oil & Gas	Other Revenues	17.79
+2008	OK	Canadian	40017	Oil & Gas	Other Roy Vals	-671.65
+2008	OK	Canadian	40017	Gas	Royalties	7441.37
+2008	OK	Canadian	40017	Gas	Royalties	13342.59
+2008	OK	Canadian	40017	Gas	Royalties	148197.61
+2008	OK	Canadian	40017	Oil	Royalties	1593.42
+2008	OK	Canadian	40017	Oil	Royalties	38003.26
+2008	OK	Coal	40029	Oil & Gas	Other Roy Vals	34250
+2008	OK	Coal	40029	Gas	Royalties	318.61
+2008	OK	Coal	40029	Gas	Royalties	4694.9
+2008	OK	Coal	40029	Gas	Royalties	732063.91
+2008	OK	Coal	40029	Oil	Royalties	14759.21
+2008	OK	Coal	40029	Oil	Royalties	2783.51
+2008	OK	Comanche	40031	Oil	Royalties	13354.47
+2008	OK	Creek	40037	Oil	Royalties	471.5
+2008	OK	Custer	40039	Oil & Gas	Other Revenues	70
+2008	OK	Custer	40039	Oil & Gas	Other Roy Vals	-2124.74
+2008	OK	Custer	40039	Gas	Royalties	9195.75
+2008	OK	Custer	40039	Gas	Royalties	19508.46
+2008	OK	Custer	40039	Gas	Royalties	242579.69
+2008	OK	Custer	40039	Oil	Royalties	13875.08
+2008	OK	Custer	40039	Oil	Royalties	12999.07
+2008	OK	Dewey	40043	Oil & Gas	Other Revenues	307
+2008	OK	Dewey	40043	Oil & Gas	Other Roy Vals	4386.92
+2008	OK	Dewey	40043	Gas	Royalties	92453.69
+2008	OK	Dewey	40043	Gas	Royalties	126774.5
+2008	OK	Dewey	40043	Gas	Royalties	452637.74
+2008	OK	Dewey	40043	Oil	Royalties	11910.06
+2008	OK	Dewey	40043	Oil	Royalties	95204.59
+2008	OK	Ellis	40045	Oil & Gas	Other Revenues	418.94
+2008	OK	Ellis	40045	Oil & Gas	Other Roy Vals	5301.68
+2008	OK	Ellis	40045	Gas	Royalties	3492.54
+2008	OK	Ellis	40045	Gas	Royalties	13824.38
+2008	OK	Ellis	40045	Gas	Royalties	364877.6
+2008	OK	Ellis	40045	Oil	Royalties	40809.39
+2008	OK	Ellis	40045	Oil	Royalties	250.76
+2008	OK	Ellis	40045	Oil	Royalties	83109.69
+2008	OK	Garfield	40047	Gas	Royalties	39.91
+2008	OK	Garfield	40047	Gas	Royalties	52.93
+2008	OK	Garfield	40047	Gas	Royalties	53312.39
+2008	OK	Garfield	40047	Oil	Royalties	7436.46
+2008	OK	Garfield	40047	Oil	Royalties	165.69
+2008	OK	Garvin	40049	Oil & Gas	Other Revenues	320
+2008	OK	Garvin	40049	Gas	Royalties	23225.8
+2008	OK	Garvin	40049	Oil	Royalties	22212.26
+2008	OK	Grady	40051	Oil & Gas	Other Revenues	69
+2008	OK	Grady	40051	Oil & Gas	Other Roy Vals	-105.33
+2008	OK	Grady	40051	Gas	Royalties	126.02
+2008	OK	Grady	40051	Gas	Royalties	492.38
+2008	OK	Grady	40051	Gas	Royalties	25510.04
+2008	OK	Grady	40051	Oil	Royalties	156.17
+2008	OK	Grady	40051	Oil	Royalties	9561.54
+2008	OK	Greer	40055	Oil & Gas	Other Roy Vals	450
+2008	OK	Greer	40055	Gas	Royalties	8596.14
+2008	OK	Harper	40059	Oil & Gas	Other Roy Vals	-1575.05
+2008	OK	Harper	40059	Gas	Royalties	-42.89
+2008	OK	Harper	40059	Gas	Royalties	2669.74
+2008	OK	Harper	40059	Gas	Royalties	29953.12
+2008	OK	Harper	40059	Oil	Royalties	678.32
+2008	OK	Harper	40059	Oil	Royalties	159.09
+2008	OK	Haskell	40061	Oil & Gas	Other Revenues	691.7
+2008	OK	Haskell	40061	Oil & Gas	Other Roy Vals	-784.21
+2008	OK	Haskell	40061	Gas	Royalties	5960.41
+2008	OK	Haskell	40061	Gas	Royalties	225477.77
+2008	OK	Hughes	40063	Oil & Gas	Other Roy Vals	-132.94
+2008	OK	Hughes	40063	Gas	Royalties	3311.64
+2008	OK	Kingfisher	40073	Oil & Gas	Other Roy Vals	1227.67
+2008	OK	Kingfisher	40073	Gas	Royalties	11130.57
+2008	OK	Kingfisher	40073	Gas	Royalties	20040.77
+2008	OK	Kingfisher	40073	Gas	Royalties	22858.09
+2008	OK	Kingfisher	40073	Oil	Royalties	5114.77
+2008	OK	Kingfisher	40073	Oil	Royalties	3782.55
+2008	OK	Latimer	40077	Oil & Gas	Other Revenues	-38.94
+2008	OK	Latimer	40077	Oil & Gas	Other Roy Vals	1863.68
+2008	OK	Latimer	40077	Gas	Royalties	18170.68
+2008	OK	Latimer	40077	Gas	Royalties	205464.72
+2008	OK	Le Flore	40079	Oil & Gas	Other Revenues	46.25
+2008	OK	Le Flore	40079	Oil & Gas	Other Roy Vals	-311.81
+2008	OK	Le Flore	40079	Gas	Royalties	6888.53
+2008	OK	Le Flore	40079	Gas	Royalties	89719.98
+2008	OK	Le Flore	40079	Oil	Royalties	657.79
+2008	OK	Lincoln	40081	Gas	Royalties	117.52
+2008	OK	Lincoln	40081	Oil	Royalties	4510.27
+2008	OK	Logan	40083	Gas	Royalties	587.2
+2008	OK	Logan	40083	Oil	Royalties	250.83
+2008	OK	Mcclain	40087	Oil	Royalties	106.55
+2008	OK	Mcintosh	40091	Gas	Other Roy Vals	85.7
+2008	OK	Mcintosh	40091	Oil & Gas	Other Roy Vals	-28
+2008	OK	Mcintosh	40091	Gas	Royalties	2135.36
+2008	OK	Major	40093	Oil & Gas	Other Revenues	494
+2008	OK	Major	40093	Oil & Gas	Other Roy Vals	1796.81
+2008	OK	Major	40093	Gas	Royalties	20821.53
+2008	OK	Major	40093	Gas	Royalties	93918.16
+2008	OK	Major	40093	Gas	Royalties	1116303.02
+2008	OK	Major	40093	Oil	Royalties	18147.52
+2008	OK	Major	40093	Oil	Royalties	1242.82
+2008	OK	Major	40093	Oil	Royalties	591462.68
+2008	OK	Oklahoma	40109	Gas	Royalties	1338.14
+2008	OK	Oklahoma	40109	Oil	Royalties	89.14
+2008	OK	Payne	40119	Gas	Royalties	2856.99
+2008	OK	Payne	40119	Oil	Royalties	4526.36
+2008	OK	Pittsburg	40121	Oil & Gas	Other Revenues	44
+2008	OK	Pittsburg	40121	Oil & Gas	Other Roy Vals	60026.04
+2008	OK	Pittsburg	40121	Gas	Royalties	1729694.91
+2008	OK	Roger Mills	40129	Oil & Gas	Other Revenues	167.11
+2008	OK	Roger Mills	40129	Oil & Gas	Other Roy Vals	-52538.63
+2008	OK	Roger Mills	40129	Gas	Royalties	4250.25
+2008	OK	Roger Mills	40129	Gas	Royalties	261994.02
+2008	OK	Roger Mills	40129	Gas	Royalties	517408.64
+2008	OK	Roger Mills	40129	Gas	Royalties	2259613.47
+2008	OK	Roger Mills	40129	Oil	Royalties	92259.75
+2008	OK	Roger Mills	40129	Oil	Royalties	145.3
+2008	OK	Roger Mills	40129	Oil	Royalties	78794.02
+2008	OK	Sequoyah	40135	Gas	Royalties	27820.57
+2008	OK	Texas	40139	Oil & Gas	Other Revenues	-94.96
+2008	OK	Texas	40139	Oil & Gas	Other Roy Vals	771.08
+2008	OK	Texas	40139	Gas	Royalties	46095.12
+2008	OK	Texas	40139	Gas	Royalties	61406.96
+2008	OK	Texas	40139	Gas	Royalties	56921.92
+2008	OK	Texas	40139	Oil	Royalties	232.45
+2008	OK	Texas	40139	Oil	Royalties	-168543.47
+2008	OK	Tillman	40141	Oil	Royalties	45478.36
+2008	OK	Washita	40149	Oil & Gas	Other Roy Vals	5693.88
+2008	OK	Washita	40149	Gas	Royalties	50874.27
+2008	OK	Washita	40149	Oil	Royalties	35837.87
+2008	OK	Woods	40151	Oil & Gas	Other Revenues	4.14
+2008	OK	Woods	40151	Oil & Gas	Other Roy Vals	-36326.17
+2008	OK	Woods	40151	Gas	Royalties	4858
+2008	OK	Woods	40151	Gas	Royalties	53380.21
+2008	OK	Woods	40151	Gas	Royalties	1488806
+2008	OK	Woods	40151	Oil	Royalties	7113.55
+2008	OK	Woods	40151	Oil	Royalties	206838.94
+2008	OK	Woodward	40153	Oil & Gas	Other Roy Vals	-13560.51
+2008	OK	Woodward	40153	Gas	Royalties	647347.28
+2008	OK	Woodward	40153	Oil	Royalties	5115.4
+2008	OK	Woodward	40153	Oil	Royalties	21667.02
+2009	OK	Alfalfa	40003	Oil & Gas	Other Roy Vals	11649.23
+2009	OK	Alfalfa	40003	Gas	Royalties	190271.23
+2009	OK	Alfalfa	40003	Oil	Royalties	6318.08
+2009	OK	Alfalfa	40003	Oil	Royalties	13065.31
+2009	OK	Atoka	40005	Gas	Royalties	5355.11
+2009	OK	Atoka	40005	Oil	Royalties	130.74
+2009	OK	Beaver	40007	Oil & Gas	Other Revenues	-3.79
+2009	OK	Beaver	40007	Oil & Gas	Other Roy Vals	-1205.31
+2009	OK	Beaver	40007	Gas	Royalties	4725.57
+2009	OK	Beaver	40007	Gas	Royalties	5560.74
+2009	OK	Beaver	40007	Gas	Royalties	45080.35
+2009	OK	Beaver	40007	Oil	Royalties	1487.3
+2009	OK	Beaver	40007	Oil	Royalties	30289.61
+2009	OK	Beckham	40009	Oil & Gas	Other Roy Vals	-7415.25
+2009	OK	Beckham	40009	Gas	Royalties	10857.17
+2009	OK	Beckham	40009	Gas	Royalties	22072.28
+2009	OK	Beckham	40009	Gas	Royalties	205312.44
+2009	OK	Beckham	40009	Oil	Royalties	9978.14
+2009	OK	Beckham	40009	Oil	Royalties	1679.42
+2009	OK	Blaine	40011	Oil & Gas	Other Revenues	320
+2009	OK	Blaine	40011	Oil & Gas	Other Roy Vals	-5610.23
+2009	OK	Blaine	40011	Gas	Royalties	3208.63
+2009	OK	Blaine	40011	Gas	Royalties	-6110.1
+2009	OK	Blaine	40011	Gas	Royalties	127257.47
+2009	OK	Blaine	40011	Oil	Royalties	7436.91
+2009	OK	Blaine	40011	Oil	Royalties	11204.09
+2009	OK	Canadian	40017	Oil & Gas	Other Roy Vals	-6599.86
+2009	OK	Canadian	40017	Gas	Royalties	3658.33
+2009	OK	Canadian	40017	Gas	Royalties	8399.61
+2009	OK	Canadian	40017	Gas	Royalties	72729.01
+2009	OK	Canadian	40017	Oil	Royalties	831.83
+2009	OK	Canadian	40017	Oil	Royalties	27471.85
+2009	OK	Coal	40029	Oil & Gas	Other Roy Vals	25000
+2009	OK	Coal	40029	Gas	Royalties	539323.03
+2009	OK	Coal	40029	Oil	Royalties	1439.01
+2009	OK	Coal	40029	Oil	Royalties	28509.44
+2009	OK	Coal	40029	Oil	Royalties	0.93
+2009	OK	Comanche	40031	Oil	Royalties	5239.18
+2009	OK	Creek	40037	Oil	Royalties	183.32
+2009	OK	Custer	40039	Oil & Gas	Other Roy Vals	-4872.12
+2009	OK	Custer	40039	Gas	Royalties	7570.93
+2009	OK	Custer	40039	Gas	Royalties	10386.89
+2009	OK	Custer	40039	Gas	Royalties	89544.16
+2009	OK	Custer	40039	Oil	Royalties	5142.97
+2009	OK	Custer	40039	Oil	Royalties	4447.12
+2009	OK	Dewey	40043	Oil & Gas	Other Revenues	307
+2009	OK	Dewey	40043	Oil & Gas	Other Roy Vals	-939.41
+2009	OK	Dewey	40043	Gas	Royalties	11730.14
+2009	OK	Dewey	40043	Gas	Royalties	12694.14
+2009	OK	Dewey	40043	Gas	Royalties	327466.91
+2009	OK	Dewey	40043	Oil	Royalties	17158.03
+2009	OK	Dewey	40043	Oil	Royalties	66882.5
+2009	OK	Ellis	40045	Oil & Gas	Other Roy Vals	-9892.92
+2009	OK	Ellis	40045	Gas	Royalties	1205.29
+2009	OK	Ellis	40045	Gas	Royalties	5174.65
+2009	OK	Ellis	40045	Gas	Royalties	99755.1
+2009	OK	Ellis	40045	Oil	Royalties	7235.46
+2009	OK	Ellis	40045	Oil	Royalties	88.72
+2009	OK	Ellis	40045	Oil	Royalties	41333.76
+2009	OK	Garfield	40047	Gas	Royalties	19.18
+2009	OK	Garfield	40047	Gas	Royalties	23.39
+2009	OK	Garfield	40047	Gas	Royalties	22128.65
+2009	OK	Garfield	40047	Oil	Royalties	5296.15
+2009	OK	Garfield	40047	Oil	Royalties	794.6
+2009	OK	Garvin	40049	Oil & Gas	Other Revenues	60
+2009	OK	Garvin	40049	Gas	Royalties	7892.51
+2009	OK	Garvin	40049	Oil	Royalties	6543.01
+2009	OK	Grady	40051	Oil & Gas	Other Roy Vals	-1276.26
+2009	OK	Grady	40051	Gas	Royalties	48.16
+2009	OK	Grady	40051	Gas	Royalties	107.25
+2009	OK	Grady	40051	Gas	Royalties	9406.48
+2009	OK	Grady	40051	Oil	Royalties	59.11
+2009	OK	Grady	40051	Oil	Royalties	7175.18
+2009	OK	Greer	40055	Oil & Gas	Other Roy Vals	-150
+2009	OK	Greer	40055	Gas	Royalties	3007.02
+2009	OK	Greer	40055	Oil	Royalties	113.49
+2009	OK	Harper	40059	Oil & Gas	Other Roy Vals	-350.6
+2009	OK	Harper	40059	Gas	Royalties	-1051.34
+2009	OK	Harper	40059	Gas	Royalties	-2273.84
+2009	OK	Harper	40059	Gas	Royalties	12305.24
+2009	OK	Harper	40059	Oil	Royalties	46.36
+2009	OK	Harper	40059	Oil	Royalties	91.77
+2009	OK	Haskell	40061	Oil & Gas	Other Revenues	-3.38
+2009	OK	Haskell	40061	Oil & Gas	Other Roy Vals	-1217.64
+2009	OK	Haskell	40061	Gas	Royalties	2391.32
+2009	OK	Haskell	40061	Gas	Royalties	91328.08
+2009	OK	Hughes	40063	Oil & Gas	Other Roy Vals	-42.79
+2009	OK	Hughes	40063	Gas	Royalties	1075.75
+2009	OK	Kingfisher	40073	Oil & Gas	Other Roy Vals	-2255.06
+2009	OK	Kingfisher	40073	Gas	Royalties	4014.36
+2009	OK	Kingfisher	40073	Gas	Royalties	7139.66
+2009	OK	Kingfisher	40073	Gas	Royalties	9575.37
+2009	OK	Kingfisher	40073	Oil	Royalties	2310.47
+2009	OK	Kingfisher	40073	Oil	Royalties	1573.52
+2009	OK	Latimer	40077	Oil & Gas	Other Revenues	-1326.7
+2009	OK	Latimer	40077	Oil & Gas	Other Roy Vals	-13626.16
+2009	OK	Latimer	40077	Gas	Royalties	8615.02
+2009	OK	Latimer	40077	Gas	Royalties	45974.21
+2009	OK	Le Flore	40079	Oil & Gas	Other Revenues	1453.46
+2009	OK	Le Flore	40079	Oil & Gas	Other Roy Vals	944.95
+2009	OK	Le Flore	40079	Gas	Royalties	922.73
+2009	OK	Le Flore	40079	Gas	Royalties	24442.81
+2009	OK	Le Flore	40079	Oil	Royalties	42.49
+2009	OK	Logan	40083	Gas	Royalties	207.81
+2009	OK	Mcclain	40087	Oil	Royalties	69.31
+2009	OK	Mcintosh	40091	Oil & Gas	Other Roy Vals	5
+2009	OK	Mcintosh	40091	Gas	Royalties	1808.47
+2009	OK	Major	40093	Oil & Gas	Other Revenues	166
+2009	OK	Major	40093	Oil & Gas	Other Roy Vals	-12259.33
+2009	OK	Major	40093	Gas	Royalties	11245.63
+2009	OK	Major	40093	Gas	Royalties	32222.23
+2009	OK	Major	40093	Gas	Royalties	614806.2
+2009	OK	Major	40093	Oil	Royalties	8662.5
+2009	OK	Major	40093	Oil	Royalties	594.96
+2009	OK	Major	40093	Oil	Royalties	510026.63
+2009	OK	Oklahoma	40109	Gas	Royalties	698.63
+2009	OK	Oklahoma	40109	Oil	Royalties	28.39
+2009	OK	Payne	40119	Oil & Gas	Other Roy Vals	370.07
+2009	OK	Payne	40119	Gas	Royalties	32432.36
+2009	OK	Payne	40119	Oil	Royalties	2254.26
+2009	OK	Pittsburg	40121	Oil & Gas	Other Revenues	865.2
+2009	OK	Pittsburg	40121	Oil & Gas	Other Roy Vals	-78423.79
+2009	OK	Pittsburg	40121	Gas	Royalties	695255.09
+2009	OK	Roger Mills	40129	Oil & Gas	Other Roy Vals	-74790.18
+2009	OK	Roger Mills	40129	Gas	Royalties	-20897.58
+2009	OK	Roger Mills	40129	Gas	Royalties	92361.8
+2009	OK	Roger Mills	40129	Gas	Royalties	183778.32
+2009	OK	Roger Mills	40129	Gas	Royalties	1347396.17
+2009	OK	Roger Mills	40129	Oil	Royalties	62054.68
+2009	OK	Roger Mills	40129	Oil	Royalties	40935.56
+2009	OK	Sequoyah	40135	Gas	Royalties	10378.31
+2009	OK	Texas	40139	Oil & Gas	Other Revenues	-117.85
+2009	OK	Texas	40139	Oil & Gas	Other Roy Vals	-1672.92
+2009	OK	Texas	40139	Gas	Royalties	19097.43
+2009	OK	Texas	40139	Gas	Royalties	25002.36
+2009	OK	Texas	40139	Gas	Royalties	23481.59
+2009	OK	Texas	40139	Oil	Royalties	15884.49
+2009	OK	Washita	40149	Oil & Gas	Other Roy Vals	9725.96
+2009	OK	Washita	40149	Gas	Royalties	96400.26
+2009	OK	Washita	40149	Oil	Royalties	64389.18
+2009	OK	Woods	40151	Oil & Gas	Other Revenues	80
+2009	OK	Woods	40151	Oil & Gas	Other Roy Vals	-4906.22
+2009	OK	Woods	40151	Gas	Royalties	14.21
+2009	OK	Woods	40151	Gas	Royalties	1259.29
+2009	OK	Woods	40151	Gas	Royalties	520677.55
+2009	OK	Woods	40151	Oil	Royalties	7324.14
+2009	OK	Woods	40151	Oil	Royalties	159512.59
+2009	OK	Woodward	40153	Oil & Gas	Other Roy Vals	-7982.66
+2009	OK	Woodward	40153	Gas	Royalties	258164.02
+2009	OK	Woodward	40153	Oil	Royalties	878.03
+2009	OK	Woodward	40153	Oil	Royalties	23717.44
+2010	OK	Alfalfa	40003	Oil & Gas	Other Roy Vals	-12466.6
+2010	OK	Alfalfa	40003	Gas	Royalties	127298.2
+2010	OK	Alfalfa	40003	Oil	Royalties	9565.33
+2010	OK	Alfalfa	40003	Oil	Royalties	8193.36
+2010	OK	Atoka	40005	Gas	Royalties	4677.27
+2010	OK	Beaver	40007	Oil & Gas	Other Roy Vals	-20.78
+2010	OK	Beaver	40007	Gas	Royalties	7351.16
+2010	OK	Beaver	40007	Gas	Royalties	10617
+2010	OK	Beaver	40007	Gas	Royalties	37246.68
+2010	OK	Beaver	40007	Oil	Royalties	2452.19
+2010	OK	Beaver	40007	Oil	Royalties	50263.74
+2010	OK	Beckham	40009	Oil & Gas	Other Roy Vals	-11617.3
+2010	OK	Beckham	40009	Gas	Royalties	12908.11
+2010	OK	Beckham	40009	Gas	Royalties	24395.77
+2010	OK	Beckham	40009	Gas	Royalties	294755.69
+2010	OK	Beckham	40009	Oil	Royalties	3377.74
+2010	OK	Beckham	40009	Oil	Royalties	2916.18
+2010	OK	Blaine	40011	Oil & Gas	Other Revenues	320
+2010	OK	Blaine	40011	Oil & Gas	Other Roy Vals	-1784.09
+2010	OK	Blaine	40011	Gas	Royalties	4279.21
+2010	OK	Blaine	40011	Gas	Royalties	11751.67
+2010	OK	Blaine	40011	Gas	Royalties	133752.13
+2010	OK	Blaine	40011	Oil	Royalties	11604.39
+2010	OK	Blaine	40011	Oil	Royalties	19905.8
+2010	OK	Canadian	40017	Oil & Gas	Other Roy Vals	-5503.04
+2010	OK	Canadian	40017	Gas	Royalties	6739.77
+2010	OK	Canadian	40017	Gas	Royalties	15256.38
+2010	OK	Canadian	40017	Gas	Royalties	132867.04
+2010	OK	Canadian	40017	Oil	Royalties	707.97
+2010	OK	Canadian	40017	Oil	Royalties	22185.15
+2010	OK	Cimarron	40025	Oil & Gas	Other Roy Vals	12.11
+2010	OK	Coal	40029	Oil & Gas	Other Roy Vals	-21500
+2010	OK	Coal	40029	Gas	Royalties	311326.35
+2010	OK	Coal	40029	Oil	Royalties	623.67
+2010	OK	Coal	40029	Oil	Royalties	6333.5
+2010	OK	Comanche	40031	Oil	Royalties	9702.58
+2010	OK	Creek	40037	Oil	Royalties	229.62
+2010	OK	Custer	40039	Oil & Gas	Other Revenues	70
+2010	OK	Custer	40039	Oil & Gas	Other Roy Vals	-1533.2
+2010	OK	Custer	40039	Gas	Royalties	10191.21
+2010	OK	Custer	40039	Gas	Royalties	11344.29
+2010	OK	Custer	40039	Gas	Royalties	92902.04
+2010	OK	Custer	40039	Oil	Royalties	43339.62
+2010	OK	Custer	40039	Oil	Royalties	5004.93
+2010	OK	Delaware	40041	Oil & Gas	Other Roy Vals	2.32
+2010	OK	Dewey	40043	Oil & Gas	Other Revenues	371
+2010	OK	Dewey	40043	Oil & Gas	Other Roy Vals	-4598.9
+2010	OK	Dewey	40043	Gas	Royalties	20829.67
+2010	OK	Dewey	40043	Gas	Royalties	-5390.66
+2010	OK	Dewey	40043	Gas	Royalties	218756.85
+2010	OK	Dewey	40043	Oil	Royalties	6142.79
+2010	OK	Dewey	40043	Oil	Royalties	130109.95
+2010	OK	Ellis	40045	Oil & Gas	Other Roy Vals	-1048.75
+2010	OK	Ellis	40045	Gas	Royalties	3872.22
+2010	OK	Ellis	40045	Gas	Royalties	9653.04
+2010	OK	Ellis	40045	Gas	Royalties	124204.87
+2010	OK	Ellis	40045	Oil	Royalties	-17222.37
+2010	OK	Ellis	40045	Oil	Royalties	77.53
+2010	OK	Ellis	40045	Oil	Royalties	82196.3
+2010	OK	Garfield	40047	Oil & Gas	Other Roy Vals	-4155
+2010	OK	Garfield	40047	Gas	Royalties	29.8
+2010	OK	Garfield	40047	Gas	Royalties	29.91
+2010	OK	Garfield	40047	Gas	Royalties	29856.09
+2010	OK	Garfield	40047	Oil	Royalties	1873.71
+2010	OK	Garfield	40047	Oil	Royalties	80.36
+2010	OK	Garvin	40049	Gas	Royalties	7060.3
+2010	OK	Garvin	40049	Oil	Royalties	3812.9
+2010	OK	Grady	40051	Oil & Gas	Other Roy Vals	-1642.3
+2010	OK	Grady	40051	Gas	Royalties	204.65
+2010	OK	Grady	40051	Gas	Royalties	218.48
+2010	OK	Grady	40051	Gas	Royalties	-6642.48
+2010	OK	Grady	40051	Oil	Royalties	66.91
+2010	OK	Grady	40051	Oil	Royalties	5423.3
+2010	OK	Grant	40053	Oil & Gas	Other Roy Vals	173.5
+2010	OK	Greer	40055	Gas	Royalties	3336.62
+2010	OK	Harper	40059	Oil & Gas	Other Roy Vals	-337.93
+2010	OK	Harper	40059	Gas	Royalties	5.01
+2010	OK	Harper	40059	Gas	Royalties	18258.34
+2010	OK	Harper	40059	Oil	Royalties	257.72
+2010	OK	Harper	40059	Oil	Royalties	676.74
+2010	OK	Haskell	40061	Oil & Gas	Other Revenues	-6.08
+2010	OK	Haskell	40061	Oil & Gas	Other Roy Vals	-9573.92
+2010	OK	Haskell	40061	Gas	Royalties	740.53
+2010	OK	Haskell	40061	Gas	Royalties	84883.58
+2010	OK	Hughes	40063	Oil & Gas	Other Roy Vals	-11.12
+2010	OK	Hughes	40063	Gas	Royalties	1066.81
+2010	OK	Kingfisher	40073	Oil & Gas	Other Roy Vals	-337.32
+2010	OK	Kingfisher	40073	Gas	Royalties	5492.34
+2010	OK	Kingfisher	40073	Gas	Royalties	8733.28
+2010	OK	Kingfisher	40073	Gas	Royalties	11415.05
+2010	OK	Kingfisher	40073	Oil	Royalties	2451.51
+2010	OK	Kingfisher	40073	Oil	Royalties	1747.69
+2010	OK	Latimer	40077	Oil & Gas	Other Revenues	217.5
+2010	OK	Latimer	40077	Oil & Gas	Other Roy Vals	15595.89
+2010	OK	Latimer	40077	Gas	Royalties	9632.52
+2010	OK	Latimer	40077	Gas	Royalties	461355.77
+2010	OK	Le Flore	40079	Oil & Gas	Other Revenues	-1.07
+2010	OK	Le Flore	40079	Oil & Gas	Other Roy Vals	-2892.49
+2010	OK	Le Flore	40079	Gas	Royalties	1258.83
+2010	OK	Le Flore	40079	Gas	Royalties	25506.52
+2010	OK	Le Flore	40079	Solids	Royalties	-0.01
+2010	OK	Lincoln	40081	Oil & Gas	Other Revenues	480
+2010	OK	Lincoln	40081	Gas	Royalties	9077.56
+2010	OK	Lincoln	40081	Oil	Royalties	3861.27
+2010	OK	Lincoln	40081	Oil	Royalties	4643.72
+2010	OK	Logan	40083	Gas	Royalties	233.13
+2010	OK	Logan	40083	Oil	Royalties	88.46
+2010	OK	Mcclain	40087	Oil	Royalties	169.38
+2010	OK	Mcintosh	40091	Oil & Gas	Other Revenues	160
+2010	OK	Mcintosh	40091	Oil & Gas	Other Roy Vals	-8
+2010	OK	Mcintosh	40091	Gas	Royalties	848.68
+2010	OK	Major	40093	Oil & Gas	Other Revenues	388.02
+2010	OK	Major	40093	Oil & Gas	Other Roy Vals	-4478.01
+2010	OK	Major	40093	Gas	Royalties	16388.08
+2010	OK	Major	40093	Gas	Royalties	56531.47
+2010	OK	Major	40093	Gas	Royalties	617690.05
+2010	OK	Major	40093	Oil	Royalties	8353.79
+2010	OK	Major	40093	Oil	Royalties	791.72
+2010	OK	Major	40093	Oil	Royalties	376779.54
+2010	OK	Oklahoma	40109	Gas	Royalties	562.48
+2010	OK	Oklahoma	40109	Oil	Royalties	94.19
+2010	OK	Payne	40119	Oil & Gas	Other Roy Vals	-370.07
+2010	OK	Payne	40119	Gas	Royalties	6824.93
+2010	OK	Payne	40119	Oil	Royalties	185.44
+2010	OK	Pittsburg	40121	Oil & Gas	Other Revenues	1000
+2010	OK	Pittsburg	40121	Oil & Gas	Other Roy Vals	60547.37
+2010	OK	Pittsburg	40121	Gas	Royalties	27.44
+2010	OK	Pittsburg	40121	Gas	Royalties	1358780.57
+2010	OK	Roger Mills	40129	Oil & Gas	Other Revenues	2225.84
+2010	OK	Roger Mills	40129	Oil & Gas	Other Roy Vals	-21907
+2010	OK	Roger Mills	40129	Gas	Royalties	125973.5
+2010	OK	Roger Mills	40129	Gas	Royalties	287722.91
+2010	OK	Roger Mills	40129	Gas	Royalties	1393959.38
+2010	OK	Roger Mills	40129	Oil	Royalties	66727.9
+2010	OK	Roger Mills	40129	Oil	Royalties	56502.05
+2010	OK	Sequoyah	40135	Gas	Royalties	19446.74
+2010	OK	Texas	40139	Oil & Gas	Other Revenues	-42.22
+2010	OK	Texas	40139	Oil & Gas	Other Roy Vals	3683.91
+2010	OK	Texas	40139	Gas	Royalties	24314.97
+2010	OK	Texas	40139	Gas	Royalties	28758.88
+2010	OK	Texas	40139	Gas	Royalties	22604.65
+2010	OK	Texas	40139	Oil	Royalties	12673.68
+2010	OK	Tillman	40141	Oil	Royalties	96299.8
+2010	OK	Washita	40149	Oil & Gas	Other Roy Vals	755.35
+2010	OK	Washita	40149	Gas	Royalties	323418.74
+2010	OK	Washita	40149	Oil	Royalties	103789.02
+2010	OK	Woods	40151	Oil & Gas	Other Revenues	460
+2010	OK	Woods	40151	Oil & Gas	Other Roy Vals	-1114.05
+2010	OK	Woods	40151	Gas	Royalties	3507.1
+2010	OK	Woods	40151	Gas	Royalties	21745.69
+2010	OK	Woods	40151	Gas	Royalties	708228.1
+2010	OK	Woods	40151	Oil	Royalties	5589.05
+2010	OK	Woods	40151	Oil	Royalties	156623.16
+2010	OK	Woodward	40153	Oil & Gas	Other Revenues	120
+2010	OK	Woodward	40153	Oil & Gas	Other Roy Vals	-5277.1
+2010	OK	Woodward	40153	Gas	Royalties	119.31
+2010	OK	Woodward	40153	Gas	Royalties	52.36
+2010	OK	Woodward	40153	Gas	Royalties	285119.49
+2010	OK	Woodward	40153	Oil	Royalties	1563.27
+2010	OK	Woodward	40153	Oil	Royalties	19482.83
+2011	OK	Alfalfa	40003	Oil & Gas	Other Roy Vals	-243.83
+2011	OK	Alfalfa	40003	Gas	Royalties	1011.82
+2011	OK	Alfalfa	40003	Gas	Royalties	2761.06
+2011	OK	Alfalfa	40003	Gas	Royalties	104490.66
+2011	OK	Alfalfa	40003	Oil	Royalties	9973.29
+2011	OK	Alfalfa	40003	Oil	Royalties	10324
+2011	OK	Atoka	40005	Gas	Royalties	3464.33
+2011	OK	Atoka	40005	Oil	Royalties	178.98
+2011	OK	Beaver	40007	Oil & Gas	Other Roy Vals	-300.81
+2011	OK	Beaver	40007	Gas	Royalties	6737.49
+2011	OK	Beaver	40007	Gas	Royalties	7635.86
+2011	OK	Beaver	40007	Gas	Royalties	44950.76
+2011	OK	Beaver	40007	Oil	Royalties	1290.01
+2011	OK	Beaver	40007	Oil	Royalties	63954.55
+2011	OK	Beckham	40009	Oil & Gas	Other Roy Vals	508.59
+2011	OK	Beckham	40009	Gas	Royalties	12824.64
+2011	OK	Beckham	40009	Gas	Royalties	27479.69
+2011	OK	Beckham	40009	Gas	Royalties	214020.98
+2011	OK	Beckham	40009	Oil	Royalties	1568.33
+2011	OK	Beckham	40009	Oil	Royalties	4396.15
+2011	OK	Blaine	40011	Oil & Gas	Other Revenues	320
+2011	OK	Blaine	40011	Oil & Gas	Other Roy Vals	-710.8
+2011	OK	Blaine	40011	Gas	Royalties	12714.44
+2011	OK	Blaine	40011	Gas	Royalties	44733.99
+2011	OK	Blaine	40011	Gas	Royalties	113100.17
+2011	OK	Blaine	40011	Oil	Royalties	11841.57
+2011	OK	Blaine	40011	Oil	Royalties	17629.64
+2011	OK	Caddo	40015	Oil & Gas	Other Roy Vals	3499.3
+2011	OK	Caddo	40015	Gas	Royalties	3904.01
+2011	OK	Caddo	40015	Gas	Royalties	31716.03
+2011	OK	Caddo	40015	Gas	Royalties	40305.11
+2011	OK	Caddo	40015	Oil	Royalties	54.24
+2011	OK	Canadian	40017	Oil & Gas	Other Revenues	107.03
+2011	OK	Canadian	40017	Oil & Gas	Other Roy Vals	2261.53
+2011	OK	Canadian	40017	Gas	Royalties	22103.38
+2011	OK	Canadian	40017	Gas	Royalties	35559.01
+2011	OK	Canadian	40017	Gas	Royalties	98922.08
+2011	OK	Canadian	40017	Oil	Royalties	2179.44
+2011	OK	Canadian	40017	Oil	Royalties	33884.87
+2011	OK	Cimarron	40025	Oil & Gas	Other Roy Vals	18.82
+2011	OK	Coal	40029	Oil & Gas	Other Roy Vals	1000
+2011	OK	Coal	40029	Gas	Royalties	35541.79
+2011	OK	Coal	40029	Gas	Royalties	2009522.09
+2011	OK	Coal	40029	Oil	Royalties	96787.91
+2011	OK	Coal	40029	Oil	Royalties	50470.95
+2011	OK	Comanche	40031	Oil	Royalties	8873.63
+2011	OK	Custer	40039	Oil & Gas	Other Revenues	70
+2011	OK	Custer	40039	Oil & Gas	Other Roy Vals	1466.81
+2011	OK	Custer	40039	Gas	Royalties	14448.62
+2011	OK	Custer	40039	Gas	Royalties	20134.42
+2011	OK	Custer	40039	Gas	Royalties	70190.61
+2011	OK	Custer	40039	Oil	Royalties	41235.64
+2011	OK	Custer	40039	Oil	Royalties	4553.81
+2011	OK	Dewey	40043	Oil & Gas	Other Revenues	105
+2011	OK	Dewey	40043	Oil & Gas	Other Roy Vals	1456.21
+2011	OK	Dewey	40043	Gas	Royalties	46468.91
+2011	OK	Dewey	40043	Gas	Royalties	55159.07
+2011	OK	Dewey	40043	Gas	Royalties	164321.53
+2011	OK	Dewey	40043	Oil	Royalties	6599.72
+2011	OK	Dewey	40043	Oil	Royalties	174300.16
+2011	OK	Ellis	40045	Oil & Gas	Other Revenues	378.24
+2011	OK	Ellis	40045	Oil & Gas	Other Roy Vals	505.05
+2011	OK	Ellis	40045	Gas	Royalties	31955.97
+2011	OK	Ellis	40045	Gas	Royalties	30642.84
+2011	OK	Ellis	40045	Gas	Royalties	131472.48
+2011	OK	Ellis	40045	Oil	Royalties	7101.9
+2011	OK	Ellis	40045	Oil	Royalties	54.09
+2011	OK	Ellis	40045	Oil	Royalties	205212.32
+2011	OK	Garfield	40047	Oil & Gas	Other Roy Vals	613.5
+2011	OK	Garfield	40047	Gas	Royalties	26.81
+2011	OK	Garfield	40047	Gas	Royalties	29.1
+2011	OK	Garfield	40047	Gas	Royalties	25174.98
+2011	OK	Garfield	40047	Oil	Royalties	1700.41
+2011	OK	Garfield	40047	Oil	Royalties	192.55
+2011	OK	Garvin	40049	Oil & Gas	Other Revenues	60
+2011	OK	Garvin	40049	Oil & Gas	Other Roy Vals	3000
+2011	OK	Garvin	40049	Gas	Royalties	7702.42
+2011	OK	Garvin	40049	Oil	Royalties	8491.79
+2011	OK	Grady	40051	Oil & Gas	Other Revenues	108.97
+2011	OK	Grady	40051	Oil & Gas	Other Roy Vals	-235.39
+2011	OK	Grady	40051	Gas	Royalties	3605.51
+2011	OK	Grady	40051	Gas	Royalties	2468.66
+2011	OK	Grady	40051	Gas	Royalties	4977.61
+2011	OK	Grady	40051	Oil	Royalties	74.5
+2011	OK	Grady	40051	Oil	Royalties	8407.54
+2011	OK	Greer	40055	Gas	Royalties	1201.52
+2011	OK	Greer	40055	Oil	Royalties	136.35
+2011	OK	Harper	40059	Oil & Gas	Other Roy Vals	170.29
+2011	OK	Harper	40059	Gas	Royalties	3.06
+2011	OK	Harper	40059	Gas	Royalties	16001.4
+2011	OK	Harper	40059	Oil	Royalties	233.92
+2011	OK	Haskell	40061	Oil & Gas	Other Revenues	-4.32
+2011	OK	Haskell	40061	Oil & Gas	Other Roy Vals	8019.19
+2011	OK	Haskell	40061	Gas	Royalties	724.01
+2011	OK	Haskell	40061	Gas	Royalties	82008.49
+2011	OK	Hughes	40063	Oil & Gas	Other Roy Vals	29.21
+2011	OK	Hughes	40063	Gas	Royalties	830.49
+2011	OK	Kingfisher	40073	Oil & Gas	Other Roy Vals	443.55
+2011	OK	Kingfisher	40073	Gas	Royalties	6682.44
+2011	OK	Kingfisher	40073	Gas	Royalties	8502.57
+2011	OK	Kingfisher	40073	Gas	Royalties	22248.38
+2011	OK	Kingfisher	40073	Oil	Royalties	2842.89
+2011	OK	Kingfisher	40073	Oil	Royalties	4440.01
+2011	OK	Latimer	40077	Oil & Gas	Other Revenues	293.22
+2011	OK	Latimer	40077	Oil & Gas	Other Roy Vals	2127.26
+2011	OK	Latimer	40077	Gas	Royalties	8804.86
+2011	OK	Latimer	40077	Gas	Royalties	208167.06
+2011	OK	Le Flore	40079	Oil & Gas	Other Revenues	4086.51
+2011	OK	Le Flore	40079	Oil & Gas	Other Roy Vals	120.08
+2011	OK	Le Flore	40079	Gas	Royalties	1216.48
+2011	OK	Le Flore	40079	Gas	Royalties	20880.54
+2011	OK	Le Flore	40079	Oil	Royalties	129.63
+2011	OK	Le Flore	40079	Solids	Royalties	-0.02
+2011	OK	Lincoln	40081	Gas	Royalties	293.98
+2011	OK	Lincoln	40081	Oil	Royalties	21.03
+2011	OK	Lincoln	40081	Oil	Royalties	3853.63
+2011	OK	Logan	40083	Gas	Royalties	52.01
+2011	OK	Mcclain	40087	Oil	Royalties	61.71
+2011	OK	Mcintosh	40091	Oil & Gas	Other Revenues	200
+2011	OK	Mcintosh	40091	Oil & Gas	Other Roy Vals	-1
+2011	OK	Mcintosh	40091	Gas	Royalties	510.66
+2011	OK	Major	40093	Oil & Gas	Other Revenues	282
+2011	OK	Major	40093	Oil & Gas	Other Roy Vals	-4561.02
+2011	OK	Major	40093	Gas	Royalties	35215.94
+2011	OK	Major	40093	Gas	Royalties	118163.31
+2011	OK	Major	40093	Gas	Royalties	461210.11
+2011	OK	Major	40093	Oil	Royalties	13658.99
+2011	OK	Major	40093	Oil	Royalties	451.65
+2011	OK	Major	40093	Oil	Royalties	393496.5
+2011	OK	Oklahoma	40109	Gas	Royalties	471.88
+2011	OK	Oklahoma	40109	Oil	Royalties	62.66
+2011	OK	Payne	40119	Oil & Gas	Other Roy Vals	298.52
+2011	OK	Payne	40119	Gas	Royalties	7763.32
+2011	OK	Payne	40119	Oil	Royalties	3755.44
+2011	OK	Pittsburg	40121	Oil & Gas	Other Roy Vals	-7586.19
+2011	OK	Pittsburg	40121	Gas	Royalties	0.08
+2011	OK	Pittsburg	40121	Gas	Royalties	306.95
+2011	OK	Pittsburg	40121	Gas	Royalties	608175.62
+2011	OK	Roger Mills	40129	Oil & Gas	Other Revenues	1697.04
+2011	OK	Roger Mills	40129	Oil & Gas	Other Roy Vals	30909.99
+2011	OK	Roger Mills	40129	Gas	Royalties	233221.97
+2011	OK	Roger Mills	40129	Gas	Royalties	435380.01
+2011	OK	Roger Mills	40129	Gas	Royalties	995203.05
+2011	OK	Roger Mills	40129	Oil	Royalties	71160.91
+2011	OK	Roger Mills	40129	Oil	Royalties	234981.04
+2011	OK	Sequoyah	40135	Gas	Royalties	13921.03
+2011	OK	Texas	40139	Oil & Gas	Other Revenues	14.59
+2011	OK	Texas	40139	Oil & Gas	Other Roy Vals	-1476.59
+2011	OK	Texas	40139	Gas	Royalties	31205.06
+2011	OK	Texas	40139	Gas	Royalties	27857.97
+2011	OK	Texas	40139	Gas	Royalties	18572.45
+2011	OK	Texas	40139	Oil	Royalties	133.06
+2011	OK	Texas	40139	Oil	Royalties	9279.65
+2011	OK	Texas	40139	Oil	Royalties	0.01
+2011	OK	Tillman	40141	Oil	Royalties	47816.02
+2011	OK	Washita	40149	Oil & Gas	Other Roy Vals	-10788.97
+2011	OK	Washita	40149	Gas	Royalties	2389.91
+2011	OK	Washita	40149	Gas	Royalties	58265.34
+2011	OK	Washita	40149	Oil	Royalties	20464.71
+2011	OK	Woods	40151	Oil & Gas	Other Revenues	120
+2011	OK	Woods	40151	Oil & Gas	Other Roy Vals	764.91
+2011	OK	Woods	40151	Gas	Royalties	8027.19
+2011	OK	Woods	40151	Gas	Royalties	25148.52
+2011	OK	Woods	40151	Gas	Royalties	584362.69
+2011	OK	Woods	40151	Oil	Royalties	4156.62
+2011	OK	Woods	40151	Oil	Royalties	185675.19
+2011	OK	Woodward	40153	Oil & Gas	Other Roy Vals	1290.39
+2011	OK	Woodward	40153	Gas	Royalties	397.87
+2011	OK	Woodward	40153	Gas	Royalties	439.35
+2011	OK	Woodward	40153	Gas	Royalties	200596.42
+2011	OK	Woodward	40153	Oil	Royalties	279.34
+2011	OK	Woodward	40153	Oil	Royalties	19607.37
+2012	OK	Alfalfa	40003	Oil & Gas	Other Roy Vals	-280.81
+2012	OK	Alfalfa	40003	Gas	Royalties	8724.61
+2012	OK	Alfalfa	40003	Gas	Royalties	1014.64
+2012	OK	Alfalfa	40003	Gas	Royalties	39397.11
+2012	OK	Alfalfa	40003	Oil	Royalties	4565.58
+2012	OK	Alfalfa	40003	Oil	Royalties	3893.39
+2012	OK	Atoka	40005	Gas	Royalties	195.35
+2012	OK	Atoka	40005	Gas	Royalties	353.05
+2012	OK	Atoka	40005	Gas	Royalties	1263.67
+2012	OK	Beaver	40007	Oil & Gas	Other Revenues	159.37
+2012	OK	Beaver	40007	Oil & Gas	Other Roy Vals	-704.93
+2012	OK	Beaver	40007	Gas	Royalties	4398.81
+2012	OK	Beaver	40007	Gas	Royalties	6440.72
+2012	OK	Beaver	40007	Gas	Royalties	42209.07
+2012	OK	Beaver	40007	Oil	Royalties	-773.13
+2012	OK	Beaver	40007	Oil	Royalties	105462.4
+2012	OK	Beckham	40009	Oil & Gas	Other Roy Vals	-8197.84
+2012	OK	Beckham	40009	Gas	Royalties	9869.99
+2012	OK	Beckham	40009	Gas	Royalties	20364.95
+2012	OK	Beckham	40009	Gas	Royalties	114434.15
+2012	OK	Beckham	40009	Oil	Royalties	1187.14
+2012	OK	Beckham	40009	Oil	Royalties	20.55
+2012	OK	Beckham	40009	Oil	Royalties	3345.23
+2012	OK	Blaine	40011	Oil & Gas	Other Roy Vals	-5412.64
+2012	OK	Blaine	40011	Gas	Royalties	8405.42
+2012	OK	Blaine	40011	Gas	Royalties	19365.23
+2012	OK	Blaine	40011	Gas	Royalties	84418.76
+2012	OK	Blaine	40011	Oil	Royalties	11677.99
+2012	OK	Blaine	40011	Oil	Royalties	18877.38
+2012	OK	Caddo	40015	Oil & Gas	Other Roy Vals	-1363
+2012	OK	Caddo	40015	Gas	Royalties	3450.29
+2012	OK	Caddo	40015	Gas	Royalties	22936.95
+2012	OK	Caddo	40015	Gas	Royalties	607.71
+2012	OK	Caddo	40015	Oil	Royalties	49.32
+2012	OK	Canadian	40017	Oil & Gas	Other Revenues	80
+2012	OK	Canadian	40017	Oil & Gas	Other Roy Vals	108683.17
+2012	OK	Canadian	40017	Gas	Royalties	17562.46
+2012	OK	Canadian	40017	Gas	Royalties	25094.55
+2012	OK	Canadian	40017	Gas	Royalties	27218.86
+2012	OK	Canadian	40017	Oil	Royalties	1456.04
+2012	OK	Canadian	40017	Oil	Royalties	27978.5
+2012	OK	Canadian	40017	Oil & Gas	Royalties	0.54
+2012	OK	Cherokee	40021	Gas	Royalties	11.53
+2012	OK	Coal	40029	Oil & Gas	Other Roy Vals	234289.48
+2012	OK	Coal	40029	Gas	Royalties	1184541.5
+2012	OK	Coal	40029	Gas	Royalties	418477.37
+2012	OK	Coal	40029	Gas	Royalties	196685.8
+2012	OK	Coal	40029	Oil	Royalties	203806.67
+2012	OK	Comanche	40031	Oil & Gas	Other Roy Vals	9176.75
+2012	OK	Comanche	40031	Oil	Royalties	82432.44
+2012	OK	Custer	40039	Oil & Gas	Other Revenues	70
+2012	OK	Custer	40039	Oil & Gas	Other Roy Vals	-5064.07
+2012	OK	Custer	40039	Gas	Royalties	9807.9
+2012	OK	Custer	40039	Gas	Royalties	13108
+2012	OK	Custer	40039	Gas	Royalties	39869.56
+2012	OK	Custer	40039	Oil	Royalties	20399.38
+2012	OK	Custer	40039	Oil	Royalties	6811.19
+2012	OK	Dewey	40043	Oil & Gas	Other Revenues	851.67
+2012	OK	Dewey	40043	Oil & Gas	Other Roy Vals	-463.64
+2012	OK	Dewey	40043	Gas	Royalties	34612.97
+2012	OK	Dewey	40043	Gas	Royalties	27794.77
+2012	OK	Dewey	40043	Gas	Royalties	193229.11
+2012	OK	Dewey	40043	Oil	Royalties	12323.73
+2012	OK	Dewey	40043	Oil	Royalties	293425.36
+2012	OK	Ellis	40045	Oil & Gas	Other Revenues	310
+2012	OK	Ellis	40045	Oil & Gas	Other Roy Vals	-1785.34
+2012	OK	Ellis	40045	Gas	Royalties	20617.61
+2012	OK	Ellis	40045	Gas	Royalties	16348.15
+2012	OK	Ellis	40045	Gas	Royalties	77813.06
+2012	OK	Ellis	40045	Oil	Royalties	81329.18
+2012	OK	Ellis	40045	Oil	Royalties	480670.19
+2012	OK	Garfield	40047	Oil & Gas	Other Roy Vals	-1120
+2012	OK	Garfield	40047	Gas	Royalties	20.25
+2012	OK	Garfield	40047	Gas	Royalties	19.22
+2012	OK	Garfield	40047	Gas	Royalties	15452.76
+2012	OK	Garfield	40047	Oil	Royalties	2291.63
+2012	OK	Garfield	40047	Oil	Royalties	166.04
+2012	OK	Garvin	40049	Oil & Gas	Other Revenues	60
+2012	OK	Garvin	40049	Gas	Royalties	4794.22
+2012	OK	Garvin	40049	Oil	Royalties	12607.45
+2012	OK	Grady	40051	Oil & Gas	Other Roy Vals	-64.04
+2012	OK	Grady	40051	Gas	Royalties	2454.53
+2012	OK	Grady	40051	Gas	Royalties	1507.02
+2012	OK	Grady	40051	Gas	Royalties	2289.79
+2012	OK	Grady	40051	Oil	Royalties	206.87
+2012	OK	Grady	40051	Oil	Royalties	7605.55
+2012	OK	Grant	40053	Oil & Gas	Other Roy Vals	0.85
+2012	OK	Greer	40055	Oil & Gas	Other Roy Vals	-525
+2012	OK	Greer	40055	Gas	Royalties	1944.1
+2012	OK	Harper	40059	Oil & Gas	Other Revenues	100
+2012	OK	Harper	40059	Oil & Gas	Other Roy Vals	-87.1
+2012	OK	Harper	40059	Gas	Royalties	2.16
+2012	OK	Harper	40059	Gas	Royalties	10920
+2012	OK	Harper	40059	Oil	Royalties	303.46
+2012	OK	Harper	40059	Oil	Royalties	435.03
+2012	OK	Haskell	40061	Oil & Gas	Other Revenues	-11.46
+2012	OK	Haskell	40061	Oil & Gas	Other Roy Vals	-1708.04
+2012	OK	Haskell	40061	Gas	Royalties	1036.35
+2012	OK	Haskell	40061	Gas	Royalties	58278.73
+2012	OK	Hughes	40063	Oil & Gas	Other Roy Vals	-33.92
+2012	OK	Hughes	40063	Gas	Royalties	454.68
+2012	OK	Kingfisher	40073	Oil & Gas	Other Roy Vals	-861.85
+2012	OK	Kingfisher	40073	Gas	Royalties	4694.75
+2012	OK	Kingfisher	40073	Gas	Royalties	5248.56
+2012	OK	Kingfisher	40073	Gas	Royalties	11082.73
+2012	OK	Kingfisher	40073	Oil	Royalties	2825.79
+2012	OK	Kingfisher	40073	Oil	Royalties	4121.99
+2012	OK	Latimer	40077	Oil & Gas	Other Revenues	-2.46
+2012	OK	Latimer	40077	Oil & Gas	Other Roy Vals	-10514.39
+2012	OK	Latimer	40077	Gas	Royalties	4476.63
+2012	OK	Latimer	40077	Gas	Royalties	110620.61
+2012	OK	Le Flore	40079	Oil & Gas	Other Revenues	262.37
+2012	OK	Le Flore	40079	Oil & Gas	Other Roy Vals	-1521.35
+2012	OK	Le Flore	40079	Gas	Royalties	756.8
+2012	OK	Le Flore	40079	Gas	Royalties	14249.49
+2012	OK	Le Flore	40079	Oil	Royalties	121.2
+2012	OK	Lincoln	40081	Gas	Royalties	290.31
+2012	OK	Lincoln	40081	Oil	Royalties	164.47
+2012	OK	Logan	40083	Gas	Royalties	7.36
+2012	OK	Mcclain	40087	Oil	Royalties	118.93
+2012	OK	Mcintosh	40091	Oil & Gas	Other Roy Vals	-8
+2012	OK	Mcintosh	40091	Gas	Royalties	201.01
+2012	OK	Major	40093	Oil & Gas	Other Roy Vals	-11215.26
+2012	OK	Major	40093	Gas	Royalties	54199.34
+2012	OK	Major	40093	Gas	Royalties	82152.78
+2012	OK	Major	40093	Gas	Royalties	235446.14
+2012	OK	Major	40093	Oil	Royalties	7460.66
+2012	OK	Major	40093	Oil	Royalties	378591.18
+2012	OK	Oklahoma	40109	Gas	Royalties	685.15
+2012	OK	Oklahoma	40109	Oil	Royalties	114.29
+2012	OK	Payne	40119	Oil & Gas	Other Roy Vals	-112.55
+2012	OK	Payne	40119	Gas	Royalties	4428.07
+2012	OK	Payne	40119	Oil	Royalties	133.97
+2012	OK	Pittsburg	40121	Oil & Gas	Other Revenues	969.75
+2012	OK	Pittsburg	40121	Oil & Gas	Other Roy Vals	-2810
+2012	OK	Pittsburg	40121	Gas	Royalties	248.39
+2012	OK	Pittsburg	40121	Gas	Royalties	1239198.71
+2012	OK	Roger Mills	40129	Oil & Gas	Other Revenues	1662.87
+2012	OK	Roger Mills	40129	Oil & Gas	Other Roy Vals	15647.92
+2012	OK	Roger Mills	40129	Gas	Royalties	192127.2
+2012	OK	Roger Mills	40129	Gas	Royalties	291197.05
+2012	OK	Roger Mills	40129	Gas	Royalties	921936.05
+2012	OK	Roger Mills	40129	Oil	Royalties	266335.98
+2012	OK	Roger Mills	40129	Oil	Royalties	1121189.85
+2012	OK	Sequoyah	40135	Gas	Royalties	14374.41
+2012	OK	Texas	40139	Oil & Gas	Other Revenues	-58.28
+2012	OK	Texas	40139	Oil & Gas	Other Roy Vals	429.4
+2012	OK	Texas	40139	Gas	Royalties	22032.72
+2012	OK	Texas	40139	Gas	Royalties	16758.32
+2012	OK	Texas	40139	Gas	Royalties	12870.38
+2012	OK	Texas	40139	Oil	Royalties	4.28
+2012	OK	Texas	40139	Oil	Royalties	4426.96
+2012	OK	Tillman	40141	Oil	Royalties	58837.35
+2012	OK	Washita	40149	Oil & Gas	Other Roy Vals	-2561.72
+2012	OK	Washita	40149	Gas	Royalties	12691.95
+2012	OK	Washita	40149	Gas	Royalties	997.09
+2012	OK	Washita	40149	Gas	Royalties	16369.43
+2012	OK	Washita	40149	Oil	Royalties	8657.83
+2012	OK	Woods	40151	Oil & Gas	Other Revenues	237.11
+2012	OK	Woods	40151	Oil & Gas	Other Roy Vals	-3058.61
+2012	OK	Woods	40151	Gas	Royalties	88221.62
+2012	OK	Woods	40151	Gas	Royalties	43589
+2012	OK	Woods	40151	Gas	Royalties	273106.81
+2012	OK	Woods	40151	Oil	Royalties	5940.23
+2012	OK	Woods	40151	Oil	Royalties	197326.8
+2012	OK	Woodward	40153	Oil & Gas	Other Revenues	470
+2012	OK	Woodward	40153	Oil & Gas	Other Roy Vals	-8294.7
+2012	OK	Woodward	40153	Gas	Royalties	32238.08
+2012	OK	Woodward	40153	Gas	Royalties	6613.99
+2012	OK	Woodward	40153	Gas	Royalties	88614.5
+2012	OK	Woodward	40153	Oil	Royalties	258.42
+2012	OK	Woodward	40153	Oil	Royalties	16986.31
+2013	OK	Alfalfa	40003	Oil & Gas	Other Roy Vals	4346.74
+2013	OK	Alfalfa	40003	Gas	Royalties	13937.92
+2013	OK	Alfalfa	40003	Gas	Royalties	48021.86
+2013	OK	Alfalfa	40003	Gas	Royalties	12163.74
+2013	OK	Alfalfa	40003	Oil	Royalties	11967.9
+2013	OK	Alfalfa	40003	Oil	Royalties	20949.71
+2013	OK	Atoka	40005	Oil & Gas	Other Roy Vals	-4862.9
+2013	OK	Atoka	40005	Gas	Royalties	559.33
+2013	OK	Atoka	40005	Gas	Royalties	1275.74
+2013	OK	Beaver	40007	Oil & Gas	Other Revenues	159.37
+2013	OK	Beaver	40007	Oil & Gas	Other Roy Vals	586.9
+2013	OK	Beaver	40007	Gas	Royalties	4702.5
+2013	OK	Beaver	40007	Gas	Royalties	6535.43
+2013	OK	Beaver	40007	Gas	Royalties	30258.44
+2013	OK	Beaver	40007	Oil	Royalties	852.72
+2013	OK	Beaver	40007	Oil	Royalties	90886.1
+2013	OK	Beckham	40009	Oil & Gas	Other Roy Vals	-1528.77
+2013	OK	Beckham	40009	Gas	Royalties	21.66
+2013	OK	Beckham	40009	Gas	Royalties	9294.19
+2013	OK	Beckham	40009	Gas	Royalties	10040.3
+2013	OK	Beckham	40009	Gas	Royalties	151857.34
+2013	OK	Beckham	40009	Oil	Royalties	1386.16
+2013	OK	Beckham	40009	Oil	Royalties	4503.62
+2013	OK	Blaine	40011	Oil & Gas	Other Roy Vals	2396.79
+2013	OK	Blaine	40011	Gas	Royalties	7564.82
+2013	OK	Blaine	40011	Gas	Royalties	24595.83
+2013	OK	Blaine	40011	Gas	Royalties	106017.44
+2013	OK	Blaine	40011	Oil	Royalties	12431.53
+2013	OK	Blaine	40011	Oil	Royalties	9263.67
+2013	OK	Caddo	40015	Oil & Gas	Other Roy Vals	1221.95
+2013	OK	Caddo	40015	Gas	Royalties	1852.46
+2013	OK	Caddo	40015	Gas	Royalties	23418.22
+2013	OK	Caddo	40015	Gas	Royalties	3368.9
+2013	OK	Caddo	40015	Oil	Royalties	54.08
+2013	OK	Canadian	40017	Oil & Gas	Other Roy Vals	-110231.61
+2013	OK	Canadian	40017	Gas	Royalties	19896.31
+2013	OK	Canadian	40017	Gas	Royalties	58467.94
+2013	OK	Canadian	40017	Gas	Royalties	27553.16
+2013	OK	Canadian	40017	Oil	Royalties	2369.5
+2013	OK	Canadian	40017	Oil	Royalties	21394.14
+2013	OK	Cherokee	40021	Gas	Royalties	36.07
+2013	OK	Coal	40029	Oil & Gas	Other Roy Vals	-108003.04
+2013	OK	Coal	40029	Gas	Royalties	101658.5
+2013	OK	Coal	40029	Gas	Royalties	65125.47
+2013	OK	Coal	40029	Gas	Royalties	505721.56
+2013	OK	Coal	40029	Oil	Royalties	55623.84
+2013	OK	Comanche	40031	Oil	Royalties	56818.59
+2013	OK	Custer	40039	Oil & Gas	Other Revenues	70
+2013	OK	Custer	40039	Oil & Gas	Other Roy Vals	1865.97
+2013	OK	Custer	40039	Gas	Royalties	18.38
+2013	OK	Custer	40039	Gas	Royalties	7123.82
+2013	OK	Custer	40039	Gas	Royalties	32675.83
+2013	OK	Custer	40039	Gas	Royalties	24531.13
+2013	OK	Custer	40039	Oil	Royalties	18844.49
+2013	OK	Custer	40039	Oil	Royalties	6769.29
+2013	OK	Dewey	40043	Oil & Gas	Other Revenues	-2.18
+2013	OK	Dewey	40043	Oil & Gas	Other Roy Vals	661.71
+2013	OK	Dewey	40043	Gas	Royalties	-61900.76
+2013	OK	Dewey	40043	Gas	Royalties	-49700.64
+2013	OK	Dewey	40043	Gas	Royalties	397013.86
+2013	OK	Dewey	40043	Oil	Royalties	8325.85
+2013	OK	Dewey	40043	Oil	Royalties	350481.86
+2013	OK	Ellis	40045	Oil & Gas	Other Revenues	458.53
+2013	OK	Ellis	40045	Oil & Gas	Other Roy Vals	34721.58
+2013	OK	Ellis	40045	Gas	Royalties	16799.1
+2013	OK	Ellis	40045	Gas	Royalties	18725.4
+2013	OK	Ellis	40045	Gas	Royalties	126090.2
+2013	OK	Ellis	40045	Oil	Royalties	338898.49
+2013	OK	Ellis	40045	Oil	Royalties	733790.95
+2013	OK	Garfield	40047	Oil & Gas	Other Roy Vals	360
+2013	OK	Garfield	40047	Gas	Royalties	18.12
+2013	OK	Garfield	40047	Gas	Royalties	24.71
+2013	OK	Garfield	40047	Gas	Royalties	17728.34
+2013	OK	Garfield	40047	Oil	Royalties	188.05
+2013	OK	Garvin	40049	Oil & Gas	Other Revenues	60
+2013	OK	Garvin	40049	Gas	Royalties	4857.5
+2013	OK	Garvin	40049	Oil	Royalties	10922.8
+2013	OK	Grady	40051	Oil & Gas	Other Revenues	40
+2013	OK	Grady	40051	Oil & Gas	Other Roy Vals	27.06
+2013	OK	Grady	40051	Gas	Royalties	2075.25
+2013	OK	Grady	40051	Gas	Royalties	2441.52
+2013	OK	Grady	40051	Gas	Royalties	1875.77
+2013	OK	Grady	40051	Oil	Royalties	77.65
+2013	OK	Grady	40051	Oil	Royalties	4510.45
+2013	OK	Greer	40055	Oil & Gas	Other Roy Vals	30
+2013	OK	Greer	40055	Gas	Royalties	2470.48
+2013	OK	Greer	40055	Oil	Royalties	124.84
+2013	OK	Harper	40059	Oil & Gas	Other Roy Vals	123.77
+2013	OK	Harper	40059	Gas	Royalties	1076.39
+2013	OK	Harper	40059	Gas	Royalties	1366.33
+2013	OK	Harper	40059	Gas	Royalties	10998.3
+2013	OK	Harper	40059	Oil	Royalties	74.72
+2013	OK	Harper	40059	Oil	Royalties	228.18
+2013	OK	Haskell	40061	Oil & Gas	Other Revenues	-10.59
+2013	OK	Haskell	40061	Oil & Gas	Other Roy Vals	-7060.93
+2013	OK	Haskell	40061	Gas	Royalties	504.96
+2013	OK	Haskell	40061	Gas	Royalties	60661.98
+2013	OK	Hughes	40063	Gas	Royalties	519.98
+2013	OK	Kingfisher	40073	Oil & Gas	Other Revenues	9.68
+2013	OK	Kingfisher	40073	Oil & Gas	Other Roy Vals	1629.69
+2013	OK	Kingfisher	40073	Gas	Royalties	2854.21
+2013	OK	Kingfisher	40073	Gas	Royalties	4771.51
+2013	OK	Kingfisher	40073	Gas	Royalties	10075.56
+2013	OK	Kingfisher	40073	Oil	Royalties	1447.16
+2013	OK	Kingfisher	40073	Oil	Royalties	3066.83
+2013	OK	Latimer	40077	Oil & Gas	Other Roy Vals	3579.88
+2013	OK	Latimer	40077	Gas	Royalties	67.16
+2013	OK	Latimer	40077	Gas	Royalties	504.87
+2013	OK	Latimer	40077	Gas	Royalties	179671.64
+2013	OK	Le Flore	40079	Oil & Gas	Other Roy Vals	-565.37
+2013	OK	Le Flore	40079	Gas	Royalties	633.19
+2013	OK	Le Flore	40079	Gas	Royalties	14794.75
+2013	OK	Lincoln	40081	Gas	Royalties	557.18
+2013	OK	Lincoln	40081	Oil	Royalties	635.85
+2013	OK	Logan	40083	Oil	Royalties	77.18
+2013	OK	Mcclain	40087	Oil	Royalties	57.4
+2013	OK	Mcintosh	40091	Oil & Gas	Other Roy Vals	-225
+2013	OK	Mcintosh	40091	Gas	Royalties	294.83
+2013	OK	Major	40093	Oil & Gas	Other Revenues	192
+2013	OK	Major	40093	Oil & Gas	Other Roy Vals	2922.59
+2013	OK	Major	40093	Gas	Royalties	49731.23
+2013	OK	Major	40093	Gas	Royalties	212015.25
+2013	OK	Major	40093	Gas	Royalties	103248.42
+2013	OK	Major	40093	Oil	Royalties	3690.66
+2013	OK	Major	40093	Oil	Royalties	313240.35
+2013	OK	Oklahoma	40109	Oil	Royalties	56.92
+2013	OK	Payne	40119	Oil & Gas	Other Roy Vals	-185.97
+2013	OK	Payne	40119	Gas	Royalties	3942.86
+2013	OK	Payne	40119	Oil	Royalties	2282.79
+2013	OK	Pittsburg	40121	Oil & Gas	Other Revenues	804
+2013	OK	Pittsburg	40121	Oil & Gas	Other Roy Vals	-26748.62
+2013	OK	Pittsburg	40121	Gas	Royalties	14843.03
+2013	OK	Pittsburg	40121	Gas	Royalties	294.22
+2013	OK	Pittsburg	40121	Gas	Royalties	898892.27
+2013	OK	Roger Mills	40129	Oil & Gas	Other Revenues	1272.66
+2013	OK	Roger Mills	40129	Oil & Gas	Other Roy Vals	31694.59
+2013	OK	Roger Mills	40129	Gas	Royalties	320.18
+2013	OK	Roger Mills	40129	Gas	Royalties	223079.84
+2013	OK	Roger Mills	40129	Gas	Royalties	579087.82
+2013	OK	Roger Mills	40129	Gas	Royalties	890862.47
+2013	OK	Roger Mills	40129	Oil	Royalties	1000447.51
+2013	OK	Roger Mills	40129	Oil	Royalties	1137924.7
+2013	OK	Sequoyah	40135	Gas	Royalties	7002.83
+2013	OK	Texas	40139	Oil & Gas	Other Revenues	-47.11
+2013	OK	Texas	40139	Oil & Gas	Other Roy Vals	-3637.53
+2013	OK	Texas	40139	Gas	Royalties	17939.96
+2013	OK	Texas	40139	Gas	Royalties	21649.25
+2013	OK	Texas	40139	Gas	Royalties	16815.1
+2013	OK	Texas	40139	Oil	Royalties	22012.63
+2013	OK	Texas	40139	Other	Royalties	1.2
+2013	OK	Tillman	40141	Oil	Royalties	149200
+2013	OK	Washita	40149	Oil & Gas	Other Roy Vals	435.43
+2013	OK	Washita	40149	Gas	Royalties	12865
+2013	OK	Washita	40149	Gas	Royalties	21579.34
+2013	OK	Washita	40149	Gas	Royalties	-5610.62
+2013	OK	Washita	40149	Oil	Royalties	9295.05
+2013	OK	Woods	40151	Oil & Gas	Other Revenues	-237.11
+2013	OK	Woods	40151	Oil & Gas	Other Roy Vals	50319.71
+2013	OK	Woods	40151	Gas	Royalties	25.82
+2013	OK	Woods	40151	Gas	Royalties	103946.56
+2013	OK	Woods	40151	Gas	Royalties	402384.58
+2013	OK	Woods	40151	Gas	Royalties	-28305.58
+2013	OK	Woods	40151	Oil	Royalties	4325.23
+2013	OK	Woods	40151	Oil	Royalties	568388.44
+2013	OK	Woodward	40153	Oil & Gas	Other Revenues	951.11
+2013	OK	Woodward	40153	Oil & Gas	Other Roy Vals	4103.8
+2013	OK	Woodward	40153	Gas	Royalties	29411.01
+2013	OK	Woodward	40153	Gas	Royalties	127501.5
+2013	OK	Woodward	40153	Gas	Royalties	-15536.95
+2013	OK	Woodward	40153	Oil	Royalties	516.58
+2013	OK	Woodward	40153	Oil	Royalties	20575.44

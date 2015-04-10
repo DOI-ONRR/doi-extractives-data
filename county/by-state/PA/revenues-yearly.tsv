@@ -1,108 +1,108 @@
-Year	State	FIPS	Commodity	type	Revenue
-2004	PA	42005	Oil & Gas	Other Revenues	122.63
-2004	PA	42005	Gas	Royalties	4927.42
-2004	PA	42009	Oil & Gas	Other Revenues	17221.13
-2004	PA	42063	Oil & Gas	Other Revenues	2066.58
-2004	PA	42063	Gas	Royalties	17859.93
-2004	PA	42065	Oil & Gas	Other Revenues	15
-2004	PA	42123	Oil	Royalties	459.7
-2004	PA	42129	Oil & Gas	Other Revenues	250.15
-2004	PA	42129	Gas	Royalties	16118.44
-2004	PA	42129	Oil	Royalties	279.49
-2005	PA	42005	Oil & Gas	Other Revenues	148.2
-2005	PA	42005	Gas	Royalties	5483.65
-2005	PA	42009	Oil & Gas	Other Revenues	17085.14
-2005	PA	42063	Oil & Gas	Other Revenues	2306.13
-2005	PA	42063	Gas	Royalties	17944.66
-2005	PA	42063	Gas	Royalties	9011.45
-2005	PA	42065	Oil & Gas	Other Revenues	15
-2005	PA	42129	Oil & Gas	Other Revenues	280.24
-2005	PA	42129	Gas	Royalties	1259.4
-2005	PA	42129	Gas	Royalties	20659.16
-2006	PA	42005	Oil & Gas	Other Revenues	94.93
-2006	PA	42005	Gas	Royalties	15278.42
-2006	PA	42009	Oil & Gas	Other Revenues	11782.96
-2006	PA	42063	Oil & Gas	Other Revenues	2600.16
-2006	PA	42063	Gas	Royalties	17092.73
-2006	PA	42063	Gas	Royalties	6486.41
-2006	PA	42065	Oil & Gas	Other Revenues	15
-2006	PA	42129	Oil & Gas	Other Revenues	285.75
-2006	PA	42129	Gas	Royalties	28384.53
-2007	PA	42005	Oil & Gas	Other Revenues	112.19
-2007	PA	42005	Gas	Royalties	6776.99
-2007	PA	42063	Oil & Gas	Other Revenues	2084.58
-2007	PA	42063	Gas	Royalties	13010.22
-2007	PA	42063	Gas	Royalties	19063.88
-2007	PA	42065	Oil & Gas	Other Revenues	15
-2007	PA	42129	Oil & Gas	Other Revenues	1253.54
-2007	PA	42129	Gas	Royalties	29334.56
-2007	PA	42129	Oil	Royalties	374.17
-2008	PA	42005	Oil & Gas	Other Revenues	101.34
-2008	PA	42005	Gas	Royalties	6818.11
-2008	PA	42063	Oil & Gas	Other Revenues	1654.25
-2008	PA	42063	Gas	Royalties	20746.99
-2008	PA	42063	Gas	Royalties	34351.95
-2008	PA	42065	Oil & Gas	Other Revenues	11.25
-2008	PA	42129	Oil & Gas	Other Revenues	129.81
-2008	PA	42129	Gas	Royalties	31570.23
-2008	PA	42129	Oil	Royalties	630.47
-2009	PA	42005	Oil & Gas	Other Revenues	103.56
-2009	PA	42005	Gas	Royalties	3653.58
-2009	PA	42053	Gas	Royalties	12773.11
-2009	PA	42053	Oil	Royalties	36882.35
-2009	PA	42063	Oil & Gas	Other Revenues	2568.96
-2009	PA	42063	Oil & Gas	Other Roy Vals	34.2
-2009	PA	42063	Gas	Royalties	12738.26
-2009	PA	42063	Gas	Royalties	16436.48
-2009	PA	42065	Oil & Gas	Other Revenues	15
-2009	PA	42129	Oil & Gas	Other Revenues	150.57
-2009	PA	42129	Gas	Royalties	19246.64
-2010	PA	42005	Oil & Gas	Other Revenues	103.56
-2010	PA	42005	Gas	Royalties	2812.44
-2010	PA	42009	Oil & Gas	Other Revenues	35144.04
-2010	PA	42053	Gas	Royalties	49277.81
-2010	PA	42053	Oil	Royalties	64257.05
-2010	PA	42063	Oil & Gas	Other Revenues	3305.11
-2010	PA	42063	Oil & Gas	Other Roy Vals	17.1
-2010	PA	42063	Gas	Royalties	5625.75
-2010	PA	42063	Gas	Royalties	30915.63
-2010	PA	42065	Oil & Gas	Other Revenues	18.75
-2010	PA	42129	Oil & Gas	Other Revenues	179.83
-2010	PA	42129	Gas	Royalties	25988.75
-2010	PA	42129	Oil	Royalties	420.94
-2011	PA	42005	Oil & Gas	Other Revenues	195.22
-2011	PA	42005	Gas	Royalties	3018.27
-2011	PA	42009	Oil & Gas	Other Revenues	6899.66
-2011	PA	42053	Gas	Royalties	15479.54
-2011	PA	42053	Oil	Royalties	29967.7
-2011	PA	42063	Oil & Gas	Other Revenues	2128.81
-2011	PA	42063	Gas	Royalties	6154.63
-2011	PA	42063	Gas	Royalties	27916.11
-2011	PA	42065	Oil & Gas	Other Revenues	15
-2011	PA	42129	Oil & Gas	Other Revenues	149.29
-2011	PA	42129	Gas	Royalties	12547.45
-2012	PA	42005	Oil & Gas	Other Revenues	166.97
-2012	PA	42005	Gas	Royalties	1551.57
-2012	PA	42009	Oil & Gas	Other Revenues	5375.5
-2012	PA	42053	Gas	Royalties	322.67
-2012	PA	42053	Gas	Royalties	8465.67
-2012	PA	42053	Oil	Royalties	22553.52
-2012	PA	42063	Oil & Gas	Other Revenues	14095.85
-2012	PA	42063	Gas	Royalties	4580.33
-2012	PA	42063	Gas	Royalties	49915.4
-2012	PA	42065	Oil & Gas	Other Revenues	18.75
-2012	PA	42123	Oil	Royalties	24200.53
-2012	PA	42129	Oil & Gas	Other Revenues	3915.41
-2012	PA	42129	Gas	Royalties	6590.01
-2012	PA	42129	Oil	Royalties	100.51
-2013	PA	42005	Oil & Gas	Other Revenues	247.21
-2013	PA	42009	Oil & Gas	Other Revenues	5826.63
-2013	PA	42053	Gas	Royalties	2093.58
-2013	PA	42053	Gas	Royalties	5991.5
-2013	PA	42053	Oil	Royalties	20669.77
-2013	PA	42063	Oil & Gas	Other Revenues	39441.79
-2013	PA	42063	Gas	Royalties	2638.2
-2013	PA	42063	Gas	Royalties	767.73
-2013	PA	42065	Oil & Gas	Other Revenues	15
-2013	PA	42129	Oil & Gas	Other Revenues	7999.31
-2013	PA	42129	Gas	Royalties	759.45
+Year	State	County	FIPS	Commodity	type	Revenue
+2004	PA	Armstrong	42005	Oil & Gas	Other Revenues	122.63
+2004	PA	Armstrong	42005	Gas	Royalties	4927.42
+2004	PA	Bedford	42009	Oil & Gas	Other Revenues	17221.13
+2004	PA	Indiana	42063	Oil & Gas	Other Revenues	2066.58
+2004	PA	Indiana	42063	Gas	Royalties	17859.93
+2004	PA	Jefferson	42065	Oil & Gas	Other Revenues	15
+2004	PA	Warren	42123	Oil	Royalties	459.7
+2004	PA	Westmoreland	42129	Oil & Gas	Other Revenues	250.15
+2004	PA	Westmoreland	42129	Gas	Royalties	16118.44
+2004	PA	Westmoreland	42129	Oil	Royalties	279.49
+2005	PA	Armstrong	42005	Oil & Gas	Other Revenues	148.2
+2005	PA	Armstrong	42005	Gas	Royalties	5483.65
+2005	PA	Bedford	42009	Oil & Gas	Other Revenues	17085.14
+2005	PA	Indiana	42063	Oil & Gas	Other Revenues	2306.13
+2005	PA	Indiana	42063	Gas	Royalties	17944.66
+2005	PA	Indiana	42063	Gas	Royalties	9011.45
+2005	PA	Jefferson	42065	Oil & Gas	Other Revenues	15
+2005	PA	Westmoreland	42129	Oil & Gas	Other Revenues	280.24
+2005	PA	Westmoreland	42129	Gas	Royalties	1259.4
+2005	PA	Westmoreland	42129	Gas	Royalties	20659.16
+2006	PA	Armstrong	42005	Oil & Gas	Other Revenues	94.93
+2006	PA	Armstrong	42005	Gas	Royalties	15278.42
+2006	PA	Bedford	42009	Oil & Gas	Other Revenues	11782.96
+2006	PA	Indiana	42063	Oil & Gas	Other Revenues	2600.16
+2006	PA	Indiana	42063	Gas	Royalties	17092.73
+2006	PA	Indiana	42063	Gas	Royalties	6486.41
+2006	PA	Jefferson	42065	Oil & Gas	Other Revenues	15
+2006	PA	Westmoreland	42129	Oil & Gas	Other Revenues	285.75
+2006	PA	Westmoreland	42129	Gas	Royalties	28384.53
+2007	PA	Armstrong	42005	Oil & Gas	Other Revenues	112.19
+2007	PA	Armstrong	42005	Gas	Royalties	6776.99
+2007	PA	Indiana	42063	Oil & Gas	Other Revenues	2084.58
+2007	PA	Indiana	42063	Gas	Royalties	13010.22
+2007	PA	Indiana	42063	Gas	Royalties	19063.88
+2007	PA	Jefferson	42065	Oil & Gas	Other Revenues	15
+2007	PA	Westmoreland	42129	Oil & Gas	Other Revenues	1253.54
+2007	PA	Westmoreland	42129	Gas	Royalties	29334.56
+2007	PA	Westmoreland	42129	Oil	Royalties	374.17
+2008	PA	Armstrong	42005	Oil & Gas	Other Revenues	101.34
+2008	PA	Armstrong	42005	Gas	Royalties	6818.11
+2008	PA	Indiana	42063	Oil & Gas	Other Revenues	1654.25
+2008	PA	Indiana	42063	Gas	Royalties	20746.99
+2008	PA	Indiana	42063	Gas	Royalties	34351.95
+2008	PA	Jefferson	42065	Oil & Gas	Other Revenues	11.25
+2008	PA	Westmoreland	42129	Oil & Gas	Other Revenues	129.81
+2008	PA	Westmoreland	42129	Gas	Royalties	31570.23
+2008	PA	Westmoreland	42129	Oil	Royalties	630.47
+2009	PA	Armstrong	42005	Oil & Gas	Other Revenues	103.56
+2009	PA	Armstrong	42005	Gas	Royalties	3653.58
+2009	PA	Forest	42053	Gas	Royalties	12773.11
+2009	PA	Forest	42053	Oil	Royalties	36882.35
+2009	PA	Indiana	42063	Oil & Gas	Other Revenues	2568.96
+2009	PA	Indiana	42063	Oil & Gas	Other Roy Vals	34.2
+2009	PA	Indiana	42063	Gas	Royalties	12738.26
+2009	PA	Indiana	42063	Gas	Royalties	16436.48
+2009	PA	Jefferson	42065	Oil & Gas	Other Revenues	15
+2009	PA	Westmoreland	42129	Oil & Gas	Other Revenues	150.57
+2009	PA	Westmoreland	42129	Gas	Royalties	19246.64
+2010	PA	Armstrong	42005	Oil & Gas	Other Revenues	103.56
+2010	PA	Armstrong	42005	Gas	Royalties	2812.44
+2010	PA	Bedford	42009	Oil & Gas	Other Revenues	35144.04
+2010	PA	Forest	42053	Gas	Royalties	49277.81
+2010	PA	Forest	42053	Oil	Royalties	64257.05
+2010	PA	Indiana	42063	Oil & Gas	Other Revenues	3305.11
+2010	PA	Indiana	42063	Oil & Gas	Other Roy Vals	17.1
+2010	PA	Indiana	42063	Gas	Royalties	5625.75
+2010	PA	Indiana	42063	Gas	Royalties	30915.63
+2010	PA	Jefferson	42065	Oil & Gas	Other Revenues	18.75
+2010	PA	Westmoreland	42129	Oil & Gas	Other Revenues	179.83
+2010	PA	Westmoreland	42129	Gas	Royalties	25988.75
+2010	PA	Westmoreland	42129	Oil	Royalties	420.94
+2011	PA	Armstrong	42005	Oil & Gas	Other Revenues	195.22
+2011	PA	Armstrong	42005	Gas	Royalties	3018.27
+2011	PA	Bedford	42009	Oil & Gas	Other Revenues	6899.66
+2011	PA	Forest	42053	Gas	Royalties	15479.54
+2011	PA	Forest	42053	Oil	Royalties	29967.7
+2011	PA	Indiana	42063	Oil & Gas	Other Revenues	2128.81
+2011	PA	Indiana	42063	Gas	Royalties	6154.63
+2011	PA	Indiana	42063	Gas	Royalties	27916.11
+2011	PA	Jefferson	42065	Oil & Gas	Other Revenues	15
+2011	PA	Westmoreland	42129	Oil & Gas	Other Revenues	149.29
+2011	PA	Westmoreland	42129	Gas	Royalties	12547.45
+2012	PA	Armstrong	42005	Oil & Gas	Other Revenues	166.97
+2012	PA	Armstrong	42005	Gas	Royalties	1551.57
+2012	PA	Bedford	42009	Oil & Gas	Other Revenues	5375.5
+2012	PA	Forest	42053	Gas	Royalties	322.67
+2012	PA	Forest	42053	Gas	Royalties	8465.67
+2012	PA	Forest	42053	Oil	Royalties	22553.52
+2012	PA	Indiana	42063	Oil & Gas	Other Revenues	14095.85
+2012	PA	Indiana	42063	Gas	Royalties	4580.33
+2012	PA	Indiana	42063	Gas	Royalties	49915.4
+2012	PA	Jefferson	42065	Oil & Gas	Other Revenues	18.75
+2012	PA	Warren	42123	Oil	Royalties	24200.53
+2012	PA	Westmoreland	42129	Oil & Gas	Other Revenues	3915.41
+2012	PA	Westmoreland	42129	Gas	Royalties	6590.01
+2012	PA	Westmoreland	42129	Oil	Royalties	100.51
+2013	PA	Armstrong	42005	Oil & Gas	Other Revenues	247.21
+2013	PA	Bedford	42009	Oil & Gas	Other Revenues	5826.63
+2013	PA	Forest	42053	Gas	Royalties	2093.58
+2013	PA	Forest	42053	Gas	Royalties	5991.5
+2013	PA	Forest	42053	Oil	Royalties	20669.77
+2013	PA	Indiana	42063	Oil & Gas	Other Revenues	39441.79
+2013	PA	Indiana	42063	Gas	Royalties	2638.2
+2013	PA	Indiana	42063	Gas	Royalties	767.73
+2013	PA	Jefferson	42065	Oil & Gas	Other Revenues	15
+2013	PA	Westmoreland	42129	Oil & Gas	Other Revenues	7999.31
+2013	PA	Westmoreland	42129	Gas	Royalties	759.45

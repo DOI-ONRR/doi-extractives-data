@@ -1,234 +1,234 @@
-Year	State	FIPS	Commodity	type	Revenue
-2004	KY	21051	Gas	Royalties	34621.05
-2004	KY	21071	Gas	Royalties	3856.22
-2004	KY	21095	Coal	Other Revenues	4820.33
-2004	KY	21101	Oil	Royalties	2987.98
-2004	KY	21127	Gas	Royalties	1676.85
-2004	KY	21131	Coal	Other Revenues	7179.67
-2004	KY	21131	Oil & Gas	Other Revenues	836.35
-2004	KY	21131	Gas	Royalties	18483.17
-2004	KY	21131	Oil	Royalties	3314.18
-2004	KY	21147	Oil & Gas	Other Revenues	3583.23
-2004	KY	21147	Gas	Royalties	486.42
-2004	KY	21163	Oil & Gas	Other Revenues	19196.24
-2004	KY	21163	Gas	Royalties	1050
-2004	KY	21189	Gas	Royalties	46.7
-2004	KY	21195	Oil & Gas	Other Revenues	270.35
-2004	KY	21195	Gas	Royalties	6056.63
-2004	KY	21235	Oil & Gas	Other Revenues	2976.14
-2004	KY	21235	Gas	Royalties	15151.35
-2005	KY	21051	Gas	Royalties	52236.16
-2005	KY	21071	Gas	Royalties	11965.13
-2005	KY	21095	Coal	Other Revenues	6427.1
-2005	KY	21101	Oil	Royalties	4148.34
-2005	KY	21127	Oil & Gas	Other Revenues	20.8
-2005	KY	21127	Gas	Royalties	3587.97
-2005	KY	21131	Coal	Other Revenues	9572.9
-2005	KY	21131	Oil & Gas	Other Revenues	640.05
-2005	KY	21131	Gas	Royalties	47445.91
-2005	KY	21131	Oil	Royalties	1772.8
-2005	KY	21147	Oil & Gas	Other Revenues	2357.71
-2005	KY	21147	Gas	Royalties	749.13
-2005	KY	21163	Oil & Gas	Other Revenues	2294.66
-2005	KY	21163	Oil	Other Roy Vals	286.06
-2005	KY	21163	Gas	Royalties	879.02
-2005	KY	21189	Gas	Royalties	1352.91
-2005	KY	21195	Oil & Gas	Other Revenues	420.35
-2005	KY	21195	Gas	Royalties	41895.05
-2005	KY	21235	Oil & Gas	Other Revenues	2135.44
-2005	KY	21235	Gas	Royalties	48543.77
-2006	KY	21051	Gas	Royalties	52005.43
-2006	KY	21071	Gas	Royalties	12494.04
-2006	KY	21095	Coal	Other Revenues	8033.88
-2006	KY	21101	Oil	Royalties	4606.36
-2006	KY	21127	Gas	Royalties	2173.52
-2006	KY	21131	Coal	Other Revenues	11966.12
-2006	KY	21131	Oil & Gas	Other Revenues	574.94
-2006	KY	21131	Gas	Royalties	36702.99
-2006	KY	21131	Oil	Royalties	1395.72
-2006	KY	21147	Oil & Gas	Other Revenues	2314.69
-2006	KY	21147	Gas	Royalties	784.24
-2006	KY	21163	Oil & Gas	Other Revenues	14671.69
-2006	KY	21163	Gas	Royalties	4428.24
-2006	KY	21189	Gas	Royalties	1214.97
-2006	KY	21195	Oil & Gas	Other Revenues	190.2
-2006	KY	21195	Gas	Royalties	22032.56
-2006	KY	21235	Oil & Gas	Other Revenues	2950.47
-2006	KY	21235	Gas	Royalties	49599.9
-2007	KY	21051	Gas	Royalties	65630
-2007	KY	21051	Oil	Royalties	841.47
-2007	KY	21071	Gas	Royalties	11877
-2007	KY	21095	Coal	Other Revenues	6427.1
-2007	KY	21101	Oil	Royalties	149256.83
-2007	KY	21127	Gas	Royalties	2305.84
-2007	KY	21131	Coal	Other Revenues	59572.9
-2007	KY	21131	Coal	Royalties	283152.32
-2007	KY	21131	Gas	Royalties	28650.85
-2007	KY	21131	Oil	Royalties	3886.97
-2007	KY	21147	Oil & Gas	Other Revenues	567.47
-2007	KY	21147	Gas	Royalties	549.38
-2007	KY	21163	Oil & Gas	Other Revenues	10300.5
-2007	KY	21163	Gas	Royalties	2360.93
-2007	KY	21189	Gas	Royalties	791.34
-2007	KY	21195	Oil & Gas	Other Revenues	240.2
-2007	KY	21195	Gas	Royalties	21955.99
-2007	KY	21235	Oil & Gas	Other Revenues	1783.64
-2007	KY	21235	Gas	Royalties	31936.66
-2008	KY	21051	Oil & Gas	Other Revenues	1421
-2008	KY	21051	Gas	Royalties	69049.66
-2008	KY	21051	Oil	Royalties	12298.81
-2008	KY	21071	Gas	Royalties	17102.57
-2008	KY	21095	Coal	Other Revenues	4820.33
-2008	KY	21101	Oil	Royalties	128923.43
-2008	KY	21127	Gas	Royalties	2465.01
-2008	KY	21131	Coal	Other Revenues	7179.67
-2008	KY	21131	Coal	Royalties	-283152.32
-2008	KY	21131	Gas	Royalties	37327.98
-2008	KY	21131	Oil	Royalties	17586.16
-2008	KY	21131	Solids	Royalties	0.02
-2008	KY	21147	Oil & Gas	Other Revenues	2390.81
-2008	KY	21147	Gas	Royalties	526.17
-2008	KY	21163	Oil & Gas	Other Revenues	13168.72
-2008	KY	21163	Gas	Royalties	3077.57
-2008	KY	21189	Gas	Royalties	1258.26
-2008	KY	21195	Oil & Gas	Other Revenues	150
-2008	KY	21195	Gas	Royalties	32009.4
-2008	KY	21235	Oil & Gas	Other Revenues	3313.89
-2008	KY	21235	Gas	Royalties	50264.91
-2009	KY	21051	Gas	Royalties	90.71
-2009	KY	21051	Gas	Royalties	149.51
-2009	KY	21051	Gas	Royalties	24567.61
-2009	KY	21051	Oil	Royalties	7308.85
-2009	KY	21071	Gas	Royalties	8656.85
-2009	KY	21101	Oil	Royalties	69764.68
-2009	KY	21127	Oil & Gas	Other Revenues	80
-2009	KY	21127	Gas	Royalties	1358.79
-2009	KY	21131	Gas	Royalties	1273.57
-2009	KY	21131	Gas	Royalties	2375.98
-2009	KY	21131	Gas	Royalties	16805.9
-2009	KY	21131	Oil	Royalties	9770.92
-2009	KY	21147	Oil & Gas	Other Revenues	2750.3
-2009	KY	21147	Gas	Royalties	220.15
-2009	KY	21163	Oil & Gas	Other Revenues	8254.12
-2009	KY	21163	Gas	Royalties	1058.01
-2009	KY	21189	Gas	Royalties	53.21
-2009	KY	21189	Gas	Royalties	667.53
-2009	KY	21195	Oil & Gas	Other Revenues	200
-2009	KY	21195	Oil & Gas	Other Roy Vals	-1000
-2009	KY	21195	Gas	Royalties	18445.94
-2009	KY	21195	Oil	Royalties	105
-2009	KY	21235	Oil & Gas	Other Revenues	2294.19
-2009	KY	21235	Gas	Royalties	1660.71
-2009	KY	21235	Gas	Royalties	3559.82
-2009	KY	21235	Gas	Royalties	24921.91
-2010	KY	21051	Gas	Royalties	158.14
-2010	KY	21051	Gas	Royalties	691.42
-2010	KY	21051	Gas	Royalties	24768.13
-2010	KY	21051	Oil	Royalties	8827.31
-2010	KY	21071	Gas	Royalties	7436.65
-2010	KY	21095	Coal	Other Revenues	1606.78
-2010	KY	21101	Oil	Royalties	199045.35
-2010	KY	21127	Oil & Gas	Other Revenues	80
-2010	KY	21127	Gas	Royalties	770.8
-2010	KY	21131	Coal	Other Revenues	2393.22
-2010	KY	21131	Gas	Royalties	3735.98
-2010	KY	21131	Gas	Royalties	15186.53
-2010	KY	21131	Gas	Royalties	4637.85
-2010	KY	21131	Oil	Royalties	11985.39
-2010	KY	21133	Gas	Royalties	6205.86
-2010	KY	21133	Oil	Royalties	0.53
-2010	KY	21147	Oil & Gas	Other Revenues	2696.83
-2010	KY	21147	Gas	Royalties	463.66
-2010	KY	21163	Oil & Gas	Other Revenues	8508.24
-2010	KY	21163	Oil & Gas	Other Roy Vals	0.61
-2010	KY	21163	Gas	Royalties	710.11
-2010	KY	21189	Gas	Royalties	45.34
-2010	KY	21189	Gas	Royalties	72.7
-2010	KY	21189	Gas	Royalties	531.85
-2010	KY	21195	Oil & Gas	Other Revenues	200
-2010	KY	21195	Gas	Royalties	14072.19
-2010	KY	21235	Oil & Gas	Other Revenues	4597.66
-2010	KY	21235	Oil & Gas	Other Roy Vals	-80
-2010	KY	21235	Gas	Royalties	3035.08
-2010	KY	21235	Gas	Royalties	14096.7
-2010	KY	21235	Gas	Royalties	6922.69
-2011	KY	21051	Gas	Royalties	94.23
-2011	KY	21051	Gas	Royalties	324.6
-2011	KY	21051	Gas	Royalties	10550.33
-2011	KY	21051	Oil	Royalties	1415.25
-2011	KY	21071	Gas	Royalties	5986.45
-2011	KY	21101	Oil	Royalties	132253.83
-2011	KY	21115	Gas	Royalties	640.84
-2011	KY	21127	Gas	Royalties	966.04
-2011	KY	21131	Gas	Royalties	4320.05
-2011	KY	21131	Gas	Royalties	16163.89
-2011	KY	21131	Gas	Royalties	20605.15
-2011	KY	21131	Oil	Royalties	4225.28
-2011	KY	21133	Gas	Royalties	14342.86
-2011	KY	21133	Oil	Royalties	114.48
-2011	KY	21147	Oil & Gas	Other Revenues	660.49
-2011	KY	21147	Gas	Royalties	455.2
-2011	KY	21163	Oil & Gas	Other Revenues	9664.83
-2011	KY	21163	Gas	Royalties	766.99
-2011	KY	21175	Gas	Royalties	1528.95
-2011	KY	21189	Gas	Royalties	64.21
-2011	KY	21189	Gas	Royalties	221.45
-2011	KY	21195	Oil & Gas	Other Revenues	20.8
-2011	KY	21195	Oil & Gas	Other Roy Vals	6.02
-2011	KY	21195	Gas	Royalties	9688.3
-2011	KY	21235	Oil & Gas	Other Revenues	128.54
-2011	KY	21235	Gas	Royalties	1696.08
-2011	KY	21235	Gas	Royalties	5848.64
-2011	KY	21235	Gas	Royalties	8713.99
-2012	KY	21051	Gas	Royalties	28194.06
-2012	KY	21051	Oil	Royalties	19891.08
-2012	KY	21071	Gas	Royalties	2853.57
-2012	KY	21101	Oil	Royalties	127879.12
-2012	KY	21115	Gas	Royalties	509.53
-2012	KY	21127	Gas	Royalties	364.62
-2012	KY	21131	Oil & Gas	Other Revenues	658.59
-2012	KY	21131	Gas	Royalties	6929.95
-2012	KY	21131	Gas	Royalties	-22705.08
-2012	KY	21131	Gas	Royalties	212127.8
-2012	KY	21131	Oil	Royalties	24048.51
-2012	KY	21133	Oil & Gas	Other Revenues	19.2
-2012	KY	21133	Gas	Royalties	409.42
-2012	KY	21147	Oil & Gas	Other Revenues	2437.34
-2012	KY	21147	Gas	Royalties	234.97
-2012	KY	21163	Oil & Gas	Other Revenues	1800.33
-2012	KY	21163	Gas	Royalties	1247.36
-2012	KY	21175	Gas	Royalties	1215.67
-2012	KY	21195	Oil & Gas	Other Revenues	345.39
-2012	KY	21195	Gas	Royalties	6456.02
-2012	KY	21235	Oil & Gas	Other Revenues	2565.48
-2012	KY	21235	Gas	Royalties	-6391.87
-2012	KY	21235	Gas	Royalties	-23505.16
-2012	KY	21235	Gas	Royalties	-132119.47
-2013	KY	21051	Oil & Gas	Other Revenues	848.31
-2013	KY	21051	Oil & Gas	Other Roy Vals	87.31
-2013	KY	21051	Gas	Royalties	-64.24
-2013	KY	21051	Gas	Royalties	17206.15
-2013	KY	21051	Oil	Royalties	13650.35
-2013	KY	21071	Oil & Gas	Other Revenues	5158.78
-2013	KY	21071	Gas	Royalties	94.58
-2013	KY	21071	Gas	Royalties	398.12
-2013	KY	21101	Oil	Royalties	130301.42
-2013	KY	21115	Gas	Royalties	712.34
-2013	KY	21127	Oil & Gas	Other Revenues	796.92
-2013	KY	21127	Gas	Royalties	-15.99
-2013	KY	21131	Oil & Gas	Other Revenues	793.43
-2013	KY	21131	Oil & Gas	Other Roy Vals	4692.69
-2013	KY	21131	Gas	Royalties	-94.62
-2013	KY	21131	Gas	Royalties	7771.17
-2013	KY	21131	Gas	Royalties	15615.88
-2013	KY	21131	Oil	Royalties	16821.45
-2013	KY	21133	Gas	Royalties	475.06
-2013	KY	21147	Oil & Gas	Other Revenues	2695.43
-2013	KY	21147	Gas	Royalties	124.4
-2013	KY	21163	Oil & Gas	Other Revenues	13948.79
-2013	KY	21175	Gas	Royalties	1699.53
-2013	KY	21195	Oil & Gas	Other Revenues	11997.82
-2013	KY	21195	Gas	Royalties	-515.95
-2013	KY	21235	Oil & Gas	Other Revenues	4327.76
-2013	KY	21235	Oil & Gas	Other Roy Vals	125
-2013	KY	21235	Gas	Royalties	3017.73
+Year	State	County	FIPS	Commodity	type	Revenue
+2004	KY	Clay	21051	Gas	Royalties	34621.05
+2004	KY	Floyd	21071	Gas	Royalties	3856.22
+2004	KY	Harlan	21095	Coal	Other Revenues	4820.33
+2004	KY	Henderson	21101	Oil	Royalties	2987.98
+2004	KY	Lawrence	21127	Gas	Royalties	1676.85
+2004	KY	Leslie	21131	Coal	Other Revenues	7179.67
+2004	KY	Leslie	21131	Oil & Gas	Other Revenues	836.35
+2004	KY	Leslie	21131	Gas	Royalties	18483.17
+2004	KY	Leslie	21131	Oil	Royalties	3314.18
+2004	KY	Mccreary	21147	Oil & Gas	Other Revenues	3583.23
+2004	KY	Mccreary	21147	Gas	Royalties	486.42
+2004	KY	Meade	21163	Oil & Gas	Other Revenues	19196.24
+2004	KY	Meade	21163	Gas	Royalties	1050
+2004	KY	Owsley	21189	Gas	Royalties	46.7
+2004	KY	Pike	21195	Oil & Gas	Other Revenues	270.35
+2004	KY	Pike	21195	Gas	Royalties	6056.63
+2004	KY	Whitley	21235	Oil & Gas	Other Revenues	2976.14
+2004	KY	Whitley	21235	Gas	Royalties	15151.35
+2005	KY	Clay	21051	Gas	Royalties	52236.16
+2005	KY	Floyd	21071	Gas	Royalties	11965.13
+2005	KY	Harlan	21095	Coal	Other Revenues	6427.1
+2005	KY	Henderson	21101	Oil	Royalties	4148.34
+2005	KY	Lawrence	21127	Oil & Gas	Other Revenues	20.8
+2005	KY	Lawrence	21127	Gas	Royalties	3587.97
+2005	KY	Leslie	21131	Coal	Other Revenues	9572.9
+2005	KY	Leslie	21131	Oil & Gas	Other Revenues	640.05
+2005	KY	Leslie	21131	Gas	Royalties	47445.91
+2005	KY	Leslie	21131	Oil	Royalties	1772.8
+2005	KY	Mccreary	21147	Oil & Gas	Other Revenues	2357.71
+2005	KY	Mccreary	21147	Gas	Royalties	749.13
+2005	KY	Meade	21163	Oil & Gas	Other Revenues	2294.66
+2005	KY	Meade	21163	Oil	Other Roy Vals	286.06
+2005	KY	Meade	21163	Gas	Royalties	879.02
+2005	KY	Owsley	21189	Gas	Royalties	1352.91
+2005	KY	Pike	21195	Oil & Gas	Other Revenues	420.35
+2005	KY	Pike	21195	Gas	Royalties	41895.05
+2005	KY	Whitley	21235	Oil & Gas	Other Revenues	2135.44
+2005	KY	Whitley	21235	Gas	Royalties	48543.77
+2006	KY	Clay	21051	Gas	Royalties	52005.43
+2006	KY	Floyd	21071	Gas	Royalties	12494.04
+2006	KY	Harlan	21095	Coal	Other Revenues	8033.88
+2006	KY	Henderson	21101	Oil	Royalties	4606.36
+2006	KY	Lawrence	21127	Gas	Royalties	2173.52
+2006	KY	Leslie	21131	Coal	Other Revenues	11966.12
+2006	KY	Leslie	21131	Oil & Gas	Other Revenues	574.94
+2006	KY	Leslie	21131	Gas	Royalties	36702.99
+2006	KY	Leslie	21131	Oil	Royalties	1395.72
+2006	KY	Mccreary	21147	Oil & Gas	Other Revenues	2314.69
+2006	KY	Mccreary	21147	Gas	Royalties	784.24
+2006	KY	Meade	21163	Oil & Gas	Other Revenues	14671.69
+2006	KY	Meade	21163	Gas	Royalties	4428.24
+2006	KY	Owsley	21189	Gas	Royalties	1214.97
+2006	KY	Pike	21195	Oil & Gas	Other Revenues	190.2
+2006	KY	Pike	21195	Gas	Royalties	22032.56
+2006	KY	Whitley	21235	Oil & Gas	Other Revenues	2950.47
+2006	KY	Whitley	21235	Gas	Royalties	49599.9
+2007	KY	Clay	21051	Gas	Royalties	65630
+2007	KY	Clay	21051	Oil	Royalties	841.47
+2007	KY	Floyd	21071	Gas	Royalties	11877
+2007	KY	Harlan	21095	Coal	Other Revenues	6427.1
+2007	KY	Henderson	21101	Oil	Royalties	149256.83
+2007	KY	Lawrence	21127	Gas	Royalties	2305.84
+2007	KY	Leslie	21131	Coal	Other Revenues	59572.9
+2007	KY	Leslie	21131	Coal	Royalties	283152.32
+2007	KY	Leslie	21131	Gas	Royalties	28650.85
+2007	KY	Leslie	21131	Oil	Royalties	3886.97
+2007	KY	Mccreary	21147	Oil & Gas	Other Revenues	567.47
+2007	KY	Mccreary	21147	Gas	Royalties	549.38
+2007	KY	Meade	21163	Oil & Gas	Other Revenues	10300.5
+2007	KY	Meade	21163	Gas	Royalties	2360.93
+2007	KY	Owsley	21189	Gas	Royalties	791.34
+2007	KY	Pike	21195	Oil & Gas	Other Revenues	240.2
+2007	KY	Pike	21195	Gas	Royalties	21955.99
+2007	KY	Whitley	21235	Oil & Gas	Other Revenues	1783.64
+2007	KY	Whitley	21235	Gas	Royalties	31936.66
+2008	KY	Clay	21051	Oil & Gas	Other Revenues	1421
+2008	KY	Clay	21051	Gas	Royalties	69049.66
+2008	KY	Clay	21051	Oil	Royalties	12298.81
+2008	KY	Floyd	21071	Gas	Royalties	17102.57
+2008	KY	Harlan	21095	Coal	Other Revenues	4820.33
+2008	KY	Henderson	21101	Oil	Royalties	128923.43
+2008	KY	Lawrence	21127	Gas	Royalties	2465.01
+2008	KY	Leslie	21131	Coal	Other Revenues	7179.67
+2008	KY	Leslie	21131	Coal	Royalties	-283152.32
+2008	KY	Leslie	21131	Gas	Royalties	37327.98
+2008	KY	Leslie	21131	Oil	Royalties	17586.16
+2008	KY	Leslie	21131	Solids	Royalties	0.02
+2008	KY	Mccreary	21147	Oil & Gas	Other Revenues	2390.81
+2008	KY	Mccreary	21147	Gas	Royalties	526.17
+2008	KY	Meade	21163	Oil & Gas	Other Revenues	13168.72
+2008	KY	Meade	21163	Gas	Royalties	3077.57
+2008	KY	Owsley	21189	Gas	Royalties	1258.26
+2008	KY	Pike	21195	Oil & Gas	Other Revenues	150
+2008	KY	Pike	21195	Gas	Royalties	32009.4
+2008	KY	Whitley	21235	Oil & Gas	Other Revenues	3313.89
+2008	KY	Whitley	21235	Gas	Royalties	50264.91
+2009	KY	Clay	21051	Gas	Royalties	90.71
+2009	KY	Clay	21051	Gas	Royalties	149.51
+2009	KY	Clay	21051	Gas	Royalties	24567.61
+2009	KY	Clay	21051	Oil	Royalties	7308.85
+2009	KY	Floyd	21071	Gas	Royalties	8656.85
+2009	KY	Henderson	21101	Oil	Royalties	69764.68
+2009	KY	Lawrence	21127	Oil & Gas	Other Revenues	80
+2009	KY	Lawrence	21127	Gas	Royalties	1358.79
+2009	KY	Leslie	21131	Gas	Royalties	1273.57
+2009	KY	Leslie	21131	Gas	Royalties	2375.98
+2009	KY	Leslie	21131	Gas	Royalties	16805.9
+2009	KY	Leslie	21131	Oil	Royalties	9770.92
+2009	KY	Mccreary	21147	Oil & Gas	Other Revenues	2750.3
+2009	KY	Mccreary	21147	Gas	Royalties	220.15
+2009	KY	Meade	21163	Oil & Gas	Other Revenues	8254.12
+2009	KY	Meade	21163	Gas	Royalties	1058.01
+2009	KY	Owsley	21189	Gas	Royalties	53.21
+2009	KY	Owsley	21189	Gas	Royalties	667.53
+2009	KY	Pike	21195	Oil & Gas	Other Revenues	200
+2009	KY	Pike	21195	Oil & Gas	Other Roy Vals	-1000
+2009	KY	Pike	21195	Gas	Royalties	18445.94
+2009	KY	Pike	21195	Oil	Royalties	105
+2009	KY	Whitley	21235	Oil & Gas	Other Revenues	2294.19
+2009	KY	Whitley	21235	Gas	Royalties	1660.71
+2009	KY	Whitley	21235	Gas	Royalties	3559.82
+2009	KY	Whitley	21235	Gas	Royalties	24921.91
+2010	KY	Clay	21051	Gas	Royalties	158.14
+2010	KY	Clay	21051	Gas	Royalties	691.42
+2010	KY	Clay	21051	Gas	Royalties	24768.13
+2010	KY	Clay	21051	Oil	Royalties	8827.31
+2010	KY	Floyd	21071	Gas	Royalties	7436.65
+2010	KY	Harlan	21095	Coal	Other Revenues	1606.78
+2010	KY	Henderson	21101	Oil	Royalties	199045.35
+2010	KY	Lawrence	21127	Oil & Gas	Other Revenues	80
+2010	KY	Lawrence	21127	Gas	Royalties	770.8
+2010	KY	Leslie	21131	Coal	Other Revenues	2393.22
+2010	KY	Leslie	21131	Gas	Royalties	3735.98
+2010	KY	Leslie	21131	Gas	Royalties	15186.53
+2010	KY	Leslie	21131	Gas	Royalties	4637.85
+2010	KY	Leslie	21131	Oil	Royalties	11985.39
+2010	KY	Letcher	21133	Gas	Royalties	6205.86
+2010	KY	Letcher	21133	Oil	Royalties	0.53
+2010	KY	Mccreary	21147	Oil & Gas	Other Revenues	2696.83
+2010	KY	Mccreary	21147	Gas	Royalties	463.66
+2010	KY	Meade	21163	Oil & Gas	Other Revenues	8508.24
+2010	KY	Meade	21163	Oil & Gas	Other Roy Vals	0.61
+2010	KY	Meade	21163	Gas	Royalties	710.11
+2010	KY	Owsley	21189	Gas	Royalties	45.34
+2010	KY	Owsley	21189	Gas	Royalties	72.7
+2010	KY	Owsley	21189	Gas	Royalties	531.85
+2010	KY	Pike	21195	Oil & Gas	Other Revenues	200
+2010	KY	Pike	21195	Gas	Royalties	14072.19
+2010	KY	Whitley	21235	Oil & Gas	Other Revenues	4597.66
+2010	KY	Whitley	21235	Oil & Gas	Other Roy Vals	-80
+2010	KY	Whitley	21235	Gas	Royalties	3035.08
+2010	KY	Whitley	21235	Gas	Royalties	14096.7
+2010	KY	Whitley	21235	Gas	Royalties	6922.69
+2011	KY	Clay	21051	Gas	Royalties	94.23
+2011	KY	Clay	21051	Gas	Royalties	324.6
+2011	KY	Clay	21051	Gas	Royalties	10550.33
+2011	KY	Clay	21051	Oil	Royalties	1415.25
+2011	KY	Floyd	21071	Gas	Royalties	5986.45
+2011	KY	Henderson	21101	Oil	Royalties	132253.83
+2011	KY	Johnson	21115	Gas	Royalties	640.84
+2011	KY	Lawrence	21127	Gas	Royalties	966.04
+2011	KY	Leslie	21131	Gas	Royalties	4320.05
+2011	KY	Leslie	21131	Gas	Royalties	16163.89
+2011	KY	Leslie	21131	Gas	Royalties	20605.15
+2011	KY	Leslie	21131	Oil	Royalties	4225.28
+2011	KY	Letcher	21133	Gas	Royalties	14342.86
+2011	KY	Letcher	21133	Oil	Royalties	114.48
+2011	KY	Mccreary	21147	Oil & Gas	Other Revenues	660.49
+2011	KY	Mccreary	21147	Gas	Royalties	455.2
+2011	KY	Meade	21163	Oil & Gas	Other Revenues	9664.83
+2011	KY	Meade	21163	Gas	Royalties	766.99
+2011	KY	Morgan	21175	Gas	Royalties	1528.95
+2011	KY	Owsley	21189	Gas	Royalties	64.21
+2011	KY	Owsley	21189	Gas	Royalties	221.45
+2011	KY	Pike	21195	Oil & Gas	Other Revenues	20.8
+2011	KY	Pike	21195	Oil & Gas	Other Roy Vals	6.02
+2011	KY	Pike	21195	Gas	Royalties	9688.3
+2011	KY	Whitley	21235	Oil & Gas	Other Revenues	128.54
+2011	KY	Whitley	21235	Gas	Royalties	1696.08
+2011	KY	Whitley	21235	Gas	Royalties	5848.64
+2011	KY	Whitley	21235	Gas	Royalties	8713.99
+2012	KY	Clay	21051	Gas	Royalties	28194.06
+2012	KY	Clay	21051	Oil	Royalties	19891.08
+2012	KY	Floyd	21071	Gas	Royalties	2853.57
+2012	KY	Henderson	21101	Oil	Royalties	127879.12
+2012	KY	Johnson	21115	Gas	Royalties	509.53
+2012	KY	Lawrence	21127	Gas	Royalties	364.62
+2012	KY	Leslie	21131	Oil & Gas	Other Revenues	658.59
+2012	KY	Leslie	21131	Gas	Royalties	6929.95
+2012	KY	Leslie	21131	Gas	Royalties	-22705.08
+2012	KY	Leslie	21131	Gas	Royalties	212127.8
+2012	KY	Leslie	21131	Oil	Royalties	24048.51
+2012	KY	Letcher	21133	Oil & Gas	Other Revenues	19.2
+2012	KY	Letcher	21133	Gas	Royalties	409.42
+2012	KY	Mccreary	21147	Oil & Gas	Other Revenues	2437.34
+2012	KY	Mccreary	21147	Gas	Royalties	234.97
+2012	KY	Meade	21163	Oil & Gas	Other Revenues	1800.33
+2012	KY	Meade	21163	Gas	Royalties	1247.36
+2012	KY	Morgan	21175	Gas	Royalties	1215.67
+2012	KY	Pike	21195	Oil & Gas	Other Revenues	345.39
+2012	KY	Pike	21195	Gas	Royalties	6456.02
+2012	KY	Whitley	21235	Oil & Gas	Other Revenues	2565.48
+2012	KY	Whitley	21235	Gas	Royalties	-6391.87
+2012	KY	Whitley	21235	Gas	Royalties	-23505.16
+2012	KY	Whitley	21235	Gas	Royalties	-132119.47
+2013	KY	Clay	21051	Oil & Gas	Other Revenues	848.31
+2013	KY	Clay	21051	Oil & Gas	Other Roy Vals	87.31
+2013	KY	Clay	21051	Gas	Royalties	-64.24
+2013	KY	Clay	21051	Gas	Royalties	17206.15
+2013	KY	Clay	21051	Oil	Royalties	13650.35
+2013	KY	Floyd	21071	Oil & Gas	Other Revenues	5158.78
+2013	KY	Floyd	21071	Gas	Royalties	94.58
+2013	KY	Floyd	21071	Gas	Royalties	398.12
+2013	KY	Henderson	21101	Oil	Royalties	130301.42
+2013	KY	Johnson	21115	Gas	Royalties	712.34
+2013	KY	Lawrence	21127	Oil & Gas	Other Revenues	796.92
+2013	KY	Lawrence	21127	Gas	Royalties	-15.99
+2013	KY	Leslie	21131	Oil & Gas	Other Revenues	793.43
+2013	KY	Leslie	21131	Oil & Gas	Other Roy Vals	4692.69
+2013	KY	Leslie	21131	Gas	Royalties	-94.62
+2013	KY	Leslie	21131	Gas	Royalties	7771.17
+2013	KY	Leslie	21131	Gas	Royalties	15615.88
+2013	KY	Leslie	21131	Oil	Royalties	16821.45
+2013	KY	Letcher	21133	Gas	Royalties	475.06
+2013	KY	Mccreary	21147	Oil & Gas	Other Revenues	2695.43
+2013	KY	Mccreary	21147	Gas	Royalties	124.4
+2013	KY	Meade	21163	Oil & Gas	Other Revenues	13948.79
+2013	KY	Morgan	21175	Gas	Royalties	1699.53
+2013	KY	Pike	21195	Oil & Gas	Other Revenues	11997.82
+2013	KY	Pike	21195	Gas	Royalties	-515.95
+2013	KY	Whitley	21235	Oil & Gas	Other Revenues	4327.76
+2013	KY	Whitley	21235	Oil & Gas	Other Roy Vals	125
+2013	KY	Whitley	21235	Gas	Royalties	3017.73

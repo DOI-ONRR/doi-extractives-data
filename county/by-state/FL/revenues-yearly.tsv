@@ -1,10 +1,10 @@
-Year	State	FIPS	Commodity	type	Revenue
-2004	FL	12049	Phosphate	Other Revenues	2248
-2004	FL	12049	Solids	Royalties	-61219.67
-2004	FL	12105	Solids	Royalties	61219.65
-2004	FL	12113	Oil	Royalties	1935.55
-2008	FL	12081	Phosphate	Other Revenues	366
-2008	FL	12105	Phosphate	Other Revenues	-563
-2008	FL	12105	Solids	Royalties	1570.27
-2009	FL	12049	Phosphate	Other Revenues	5620
-2009	FL	12105	Phosphate	Other Revenues	3622
+Year	State	County	FIPS	Commodity	type	Revenue
+2004	FL	Hardee	12049	Phosphate	Other Revenues	2248
+2004	FL	Hardee	12049	Solids	Royalties	-61219.67
+2004	FL	Polk	12105	Solids	Royalties	61219.65
+2004	FL	Santa Rosa	12113	Oil	Royalties	1935.55
+2008	FL	Manatee	12081	Phosphate	Other Revenues	366
+2008	FL	Polk	12105	Phosphate	Other Revenues	-563
+2008	FL	Polk	12105	Solids	Royalties	1570.27
+2009	FL	Hardee	12049	Phosphate	Other Revenues	5620
+2009	FL	Polk	12105	Phosphate	Other Revenues	3622

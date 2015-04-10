@@ -16,4 +16,6 @@ npm test
 ```
 
 See [this issue](https://github.com/18F/doi-extractives-data/issues/493) for
-some background on what we're aiming to do here.
+some background on what we're aiming to do here. Progress on importing all of
+the data we need is tracked in
+[this issue](https://github.com/18F/doi-extractives-data/issues/496).

@@ -8,7 +8,8 @@ FILES = \
 	national/royalties-yearly.tsv \
 	offshore/revenues-2013.tsv \
 	state/revenues-2013.tsv \
-	county/revenues-yearly.tsv
+	county/revenues-yearly.tsv \
+	county-revenues-by-state
 
 all: $(FILES)
 
@@ -42,10 +43,10 @@ county/revenues-yearly.tsv: input/onrr/county-revenues.tsv
 		| scripts/normalize-county-revenues.js \
 		| tito --write tsv > $@
 
-county-revenues-nested: county/revenues-yearly.tsv
+county-revenues-by-state: county/revenues-yearly.tsv
 	tito --read tsv $< \
 		| scripts/divvy.js \
-			--path 'state/{{ State }}/county-revenues.tsv' \
+			--path 'county/by-state/{{ State }}/revenues.tsv' \
 			--of tsv
 
 geo/us-topology.json:
@@ -55,6 +56,7 @@ geo/us-topology.json:
 		--in-states input/geo/states.csv \
 		> $@
 
+# generate US topology for only those counties with data
 geo/us-topology-filtered.json: county/revenues-yearly.tsv
 	mkdir -p $(dir $@)
 	scripts/join-counties.js \

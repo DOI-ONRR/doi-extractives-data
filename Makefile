@@ -46,7 +46,7 @@ county/revenues-yearly.tsv: input/onrr/county-revenues.tsv
 county-revenues-by-state: county/revenues-yearly.tsv
 	tito --read tsv $< \
 		| scripts/divvy.js \
-			--path 'county/by-state/{{ State }}/revenues.tsv' \
+			--path 'county/by-state/{{ State }}/revenues-yearly.tsv' \
 			--of tsv
 
 geo/us-topology.json:

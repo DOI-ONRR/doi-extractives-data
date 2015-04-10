@@ -26,7 +26,7 @@ national/royalties-yearly.tsv: input/site/2003-2013-royalty-data.csv
 state/revenues-2013.tsv: input/site/CY13_Federal_Onshore_Revenues_by_State_12-04-2014.csv
 	mkdir -p $(dir $@)
 	tito --read csv $< \
-		| scripts/abbr-state.js \
+		| bin/abbr-state.js \
 			--states input/geo/states.csv \
 			--field State \
 			--of tsv > $@
@@ -40,26 +40,32 @@ offshore/revenues-2013.tsv: input/site/EITI_Offshore_Revenues_by_Planning_Area_C
 county/revenues-yearly.tsv: input/onrr/county-revenues.tsv
 	mkdir -p $(dir $@)
 	tito --read tsv $< \
-		| scripts/normalize-county-revenues.js \
+		| bin/normalize-county-revenues.js \
 		| tito --write tsv > $@
 
 county-revenues-by-state: county/revenues-yearly.tsv
 	tito --read tsv $< \
-		| scripts/divvy.js \
+		| bin/divvy.js \
 			--path 'county/by-state/{{ State }}/revenues-yearly.tsv' \
 			--of tsv
 
 geo/us-topology.json:
 	mkdir -p $(dir $@)
-	scripts/join-counties.js \
+	bin/join-counties.js \
 		--in-topo input/geo/us-counties.json \
 		--in-states input/geo/states.csv \
 		> $@
 
+geo/us-states.json: geo/us-topology.json
+	mkdir -p $(dir $@)
+	bin/extract-topology.js \
+		--layer states \
+		$< > $@
+
 # generate US topology for only those counties with data
 geo/us-topology-filtered.json: county/revenues-yearly.tsv
 	mkdir -p $(dir $@)
-	scripts/join-counties.js \
+	bin/join-counties.js \
 		--in-topo input/geo/us-counties.json \
 		--in-states input/geo/states.csv \
 		--in-counties $< \

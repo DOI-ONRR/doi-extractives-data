@@ -59,7 +59,7 @@ function normalize(d) {
   return {
     Year:       d.CY,
     State:      d[stateField],
-    // county:  d.County,
+    County:	d.County,
     FIPS:       d[fipsField],
     Commodity:  d.Commodity,
     type:	d['Revenue Type'],

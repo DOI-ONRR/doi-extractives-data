@@ -1,0 +1,26 @@
+{
+  "name": "doi-extractives-data",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^2.2.4"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/18F/doi-extractives-data.git"
+  },
+  "author": "18F",
+  "license": "CC0",
+  "bugs": {
+    "url": "https://github.com/18F/doi-extractives-data/issues"
+  },
+  "homepage": "https://github.com/18F/doi-extractives-data"
+}

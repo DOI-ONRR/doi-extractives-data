@@ -63,7 +63,7 @@ process.stdin
 function makeDirs(dir, done) {
   fs.exists(dir, function(exists) {
     if (exists) return done(null, dir);
-    console.warn('mkdir -p "%s"', dir);
+    // console.warn('mkdir -p "%s"', dir);
     mkdirp(dir, done);
   });
 }

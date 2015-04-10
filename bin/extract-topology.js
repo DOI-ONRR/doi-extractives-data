@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 var yargs = require('yargs')
-  .demand(1)
+  // .demand(1)
   .describe('layer', 'the layer name in topology.objects')
   .describe('filter', 'filter features by this data expression')
   .describe('o', 'write to this file')
@@ -19,7 +19,7 @@ var datex = require('data-expression');
 var topojsonOptions = require('../lib/topojson-options')(options);
 
 var args = options._;
-fs.readFile(args[0], function(error, buffer) {
+fs.readFile(args[0] || '/dev/stdin', function(error, buffer) {
   if (error) return console.error('error:', error);
   var topology = JSON.parse(buffer.toString());
   var collection = topojson.feature(topology, topology.objects[options.layer]);

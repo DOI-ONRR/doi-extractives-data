@@ -15,6 +15,9 @@ describe('parse.dollars()', function() {
   it('parses negative strings in parentheses', function() {
     assert.equal(dollars(' $ (3,790.83)'), -3790.83);
   });
+  it('parses negative strings with $ in parentheses', function() {
+    assert.equal(dollars(' ( $ 3,790.83)'), -3790.83);
+  });
   it('parses n/a values ("$ -")', function() {
     assert.equal(dollars(' $ -'), 0);
   });

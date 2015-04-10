@@ -9,7 +9,10 @@ FILES = \
 	offshore/revenues-2013.tsv \
 	state/revenues-2013.tsv \
 	county/revenues-yearly.tsv \
-	county-revenues-by-state
+	county-revenues-by-state \
+	geo/us-topology.json \
+	geo/us-states.json \
+	geo/us-outline.json
 
 all: $(FILES)
 

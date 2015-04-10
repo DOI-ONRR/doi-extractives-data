@@ -27,6 +27,7 @@ var fs = require('fs');
 var tito = require('tito').formats;
 var async = require('async');
 var topojson = require('topojson');
+var topojsonOptions = require('../lib/topojson-options')(options);
 var d3 = require('d3');
 var util = require('../lib/util');
 var assert = require('assert');
@@ -128,15 +129,7 @@ async.parallel({
       type: 'FeatureCollection',
       features: stateFeatures
     }
-  }, {
-    'verbose': true,
-    'coordinate-system': 'spherical',
-    'stitch-poles': true,
-    // preserve all properties
-    'property-transform': function(d) {
-      return d.properties;
-    }
-  });
+  }, topojsonOptions);
 
   var c = result.objects.counties.geometries;
   assert.ok(c[0].type, 'no type for county geometry' + JSON.stringify(c[0]));

@@ -52,6 +52,12 @@ county-revenues-by-state: county/revenues-yearly.tsv
 			--path 'county/by-state/{{ State }}/revenues-yearly.tsv' \
 			--of tsv
 
+geo: \
+	geo/us-topology.json \
+	geo/us-topology-filtered.json \
+	geo/us-states.json \
+	geo/us-outline.json
+
 geo/us-topology.json:
 	mkdir -p $(dir $@)
 	bin/join-counties.js \
@@ -85,4 +91,4 @@ geo/us-topology-filtered.json: county/revenues-yearly.tsv
 clean:
 	rm -f $(FILES)
 
-.PHONY: county-revenues-nested
+.PHONY: county-revenues-nested geo

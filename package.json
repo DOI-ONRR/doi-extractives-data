@@ -11,6 +11,7 @@
     "d3": "^3.5.5",
     "data-expression": "^0.3.1",
     "extend": "^2.0.0",
+    "jsdom": "^3.1.2",
     "mkdirp": "^0.5.0",
     "stream-array": "^1.0.1",
     "through2": "^0.6.5",

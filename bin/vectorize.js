@@ -53,7 +53,7 @@ async.waterfall([
 	  '',
 	  'path { fill: none; stroke: #ccc; stroke-width: .5; vector-effect: non-scaling-stroke; }',
 	  '#states path { stroke: #999; stroke-width: 1; }',
-	  '#USA path { stroke: #eee; stroke-width: 2; }',
+	  '#USA path { stroke: #eee; stroke-width: 3; }',
 	  '',
 	].join('\n'));
 

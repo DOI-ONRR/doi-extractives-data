@@ -88,6 +88,11 @@ geo/us-topology-filtered.json: county/revenues-yearly.tsv
 		--inner \
 		> $@
 
+geo/us.svg: geo
+	bin/vectorize.js \
+		geo/us-outline.json \
+		geo/us-topology.json > $@
+
 clean:
 	rm -f $(FILES)
 

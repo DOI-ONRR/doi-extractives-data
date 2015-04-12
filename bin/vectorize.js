@@ -1,12 +1,17 @@
 #!/usr/bin/env node
 var yargs = require('yargs')
   .usage('$0 [options] a.json b.json')
-  .describe('proj', 'the d3 geo projection')
-  .default('proj', 'albersUsa')
+  .describe('proj', 'the d3 geo projection (default: custom Albers USA)')
+  .describe('center', 'projection center in the form "lon,lat"')
+  .describe('scale', 'projection scale as a float')
+  .describe('translate', 'projection translation in the form "x,y"')
   .describe('width', 'the SVG width in pixels')
-  .default('width', 920)
+  .default('width', 960)
   .describe('height', 'the SVG height in pixels')
-  .default('height', 500)
+  .default('height', 650)
+  .describe('graticule', 'draw a graticule for debugging purposes')
+  .boolean('graticule')
+  .alias('graticule', 'g')
   .describe('o', 'write the SVG to this file')
   .default('o', '/dev/stdout')
   .alias('h', 'help')
@@ -18,10 +23,12 @@ if (options.help) {
 }
 
 var fs = require('fs');
+var util = require('../lib/util');
 var async = require('async');
 var d3 = require('d3');
 var topojson = require('topojson');
 var jsdom = require('jsdom');
+var albersCustom = require('../lib/albers-custom');
 
 var scripts = [];
 
@@ -30,9 +37,8 @@ var out = fs.createWriteStream(options.o);
 async.waterfall([
   function loadFiles(done) {
     async.map(options._, function load(filename, next) {
-      fs.readFile(filename, function(error, buffer) {
+      util.readJSON(filename, function(error, data) {
 	if (error) return done(error);
-	var data = JSON.parse(buffer.toString());
 	data.filename = filename;
 	return next(null, data);
       });
@@ -42,10 +48,31 @@ async.waterfall([
     jsdom.env('<svg></svg>', scripts, function(errors, window) {
       if (errors) return console.error('error:', errors[0]);
 
+      var proj = options.proj
+	? d3.geo[options.proj]()
+	: albersCustom();
+      if (options.center) {
+	var center = coord(options.center);
+	proj.center(center);
+      }
+      if (options.scale) {
+	proj.scale(options.scale * proj.scale());
+      }
+      if (options.translate) {
+	var translate = coord(options.translate);
+	proj.translate(translate);
+      }
+      var path = d3.geo.path()
+	.projection(proj);
+
+      var size = proj.size
+	? proj.size()
+	: [options.width, options.height];
+
       var svg = d3.select(window.document.querySelector('svg'))
-	.attr('width', options.width)
-	.attr('height', options.height)
-	.attr('xmlns', 'http://www.w3.org/2000/svg');
+	.attr('xmlns', 'http://www.w3.org/2000/svg')
+	.attr('width', size[0])
+	.attr('height', size[1]);
 
       var style = svg.append('style')
 	.attr('type', 'text/css')
@@ -57,9 +84,7 @@ async.waterfall([
 	  '',
 	].join('\n'));
 
-      var proj = d3.geo[options.proj]();
-      var path = d3.geo.path()
-	.projection(proj);
+      var bbox;
 
       var g = svg.selectAll('g.file')
 	.data(objects)
@@ -75,6 +100,7 @@ async.waterfall([
 	})
 	.selectAll('g.layer')
 	  .data(function(topology) {
+	    if (topology.bbox) bbox = topology.bbox;
 	    return d3.entries(topology.objects)
 	      .map(function(d) {
 		var mesh = topojson.mesh(topology, d.value);
@@ -112,6 +138,31 @@ async.waterfall([
 	  .attr('id', function(d) { return d.id; })
 	  .attr('d', path);
 
+      if (options.graticule) {
+	var graticule = d3.geo.graticule();
+	svg.append('path')
+	  .attr('class', 'graticule')
+	  .attr('d', path(graticule()))
+	  .attr('fill', 'none')
+	  .attr('stroke-dasharray', '2 2');
+      }
+
+      if (bbox) {
+	var bounds = path.bounds(bbox);
+	// console.warn('bbox:', bbox, '->', bounds);
+	var validBounds = bounds.every(function(c) {
+	  return c.every(isFinite);
+	});
+	if (validBounds) {
+	  svg.attr('viewBox', [
+	    bounds[0][0],
+	    bounds[0][1],
+	    bounds[1][0] - bounds[0][0],
+	    bounds[1][1] - bounds[0][1]
+	  ].join(' '));
+	}
+      }
+
       out.write('<?xml version="1.0" standalone="yes"?>\n');
       out.write(svg.property('outerHTML'));
       done();
@@ -121,3 +172,7 @@ async.waterfall([
   if (error) return console.error('error:', error);
   // out.close();
 });
+
+function coord(str) {
+  return str.split(',').map(Number);
+}

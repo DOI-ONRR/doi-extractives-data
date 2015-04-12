@@ -56,7 +56,8 @@ geo: \
 	geo/us-topology.json \
 	geo/us-topology-filtered.json \
 	geo/us-states.json \
-	geo/us-outline.json
+	geo/us-outline.json \
+	geo/offshore.json
 
 geo/us-topology.json:
 	mkdir -p $(dir $@)
@@ -88,10 +89,18 @@ geo/us-topology-filtered.json: county/revenues-yearly.tsv
 		--inner \
 		> $@
 
-geo/us.svg: geo
-	bin/vectorize.js \
+geo/offshore.json: input/geo/offshore/*.json
+	topojson \
+		--id-property MMS_PLAN_A \
+		-p id=MMS_PLAN_A \
+		-p label=TEXT_LABEL \
+		-o $@ -- $^
+
+geo/us.svg: \
 		geo/us-outline.json \
-		geo/us-topology.json > $@
+		geo/us-topology.json \
+		geo/offshore.json
+	bin/vectorize.js $^ > $@
 
 clean:
 	rm -f $(FILES)

@@ -52,6 +52,12 @@ county-revenues-by-state: county/revenues-yearly.tsv
 			--path 'county/by-state/{{ State }}/revenues-yearly.tsv' \
 			--of tsv
 
+county/volumes-yearly.tsv: input/onrr/county-volumes.tsv
+	mkdir -p $(dir $@)
+	tito --read tsv $< \
+		| bin/normalize-county-volumes.js \
+		| tito --write tsv > $@
+
 geo: \
 	geo/us-topology.json \
 	geo/us-topology-filtered.json \

@@ -82,25 +82,7 @@ async.parallel({
     })
     .entries(counties);
 
-  // American Samoa, Puerto Rico, Guam and Virgin Islands
-  var territories = d3.set(['AS', 'PR', 'GU', 'VI']);
-
-  var stateFeatures = countiesByState
-    // filter out territories
-    .filter(function(d) {
-      return !territories.has(d.key);
-    })
-    // merge counties into states
-    .map(function(d) {
-      var abbr = d.key;
-      var geom = topojson.merge(topology, d.values);
-      return {
-        id: abbr,
-        properties: statesByAbbr[abbr],
-        geometry: geom
-      };
-    });
-
+  var stateFeatures = topojson.feature(topology, topology.objects.states).features;
   assert.equal(stateFeatures.length, 51);
 
   // fix the FIPS ids, because some numbers lack the 0 prefix

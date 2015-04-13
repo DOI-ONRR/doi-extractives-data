@@ -76,6 +76,16 @@ geo/us-topology.json: input/geo/us-10m.json
 		--keep land \
 		-o $@ -- $<
 
+# generate US topology for only those counties with data
+geo/us-topology-filtered.json: county/revenues-yearly.tsv geo/us-topology.json
+	mkdir -p $(dir $@)
+	bin/join-counties.js \
+		--in-topo geo/us-topology.json \
+		--in-states input/geo/states.csv \
+		--in-counties county/revenues-yearly.tsv \
+		--inner \
+		> $@
+
 geo/us-outline.json: geo/us-states.json
 	$(BIN)/topojson-merge \
 		--io states \
@@ -88,16 +98,6 @@ geo/us-states.json: geo/us-topology.json
 	bin/extract-topology.js \
 		--layer states \
 		$< > $@
-
-# generate US topology for only those counties with data
-geo/us-topology-filtered.json: county/revenues-yearly.tsv
-	mkdir -p $(dir $@)
-	bin/join-counties.js \
-		--in-topo input/geo/us-counties.json \
-		--in-states input/geo/states.csv \
-		--in-counties $< \
-		--inner \
-		> $@
 
 geo/offshore.json: input/geo/offshore/*.json
 	topojson \

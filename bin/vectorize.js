@@ -12,6 +12,8 @@ var yargs = require('yargs')
   .describe('graticule', 'draw a graticule for debugging purposes')
   .boolean('graticule')
   .alias('graticule', 'g')
+  .describe('p0', 'draw a circle at the first point in each topology (for debugging)')
+  .boolean('p0')
   .describe('o', 'write the SVG to this file')
   .default('o', '/dev/stdout')
   .alias('h', 'help')
@@ -60,6 +62,7 @@ async.waterfall([
         var translate = coord(options.translate);
         proj.translate(translate);
       }
+
       var path = d3.geo.path()
         .projection(proj);
 
@@ -93,7 +96,7 @@ async.waterfall([
             return d.filename;
           });
 
-      g.filter(function(d) {
+      var topo = g.filter(function(d) {
         return d.type === 'Topology';
       })
       .selectAll('g.layer')
@@ -101,20 +104,39 @@ async.waterfall([
           if (topology.bbox) bbox = topology.bbox;
           return d3.entries(topology.objects)
             .map(function(d) {
-          var mesh = topojson.mesh(topology, d.value);
-          mesh.id = d.key;
-          return mesh;
+              var mesh = topojson.mesh(topology, d.value);
+              mesh.id = d.key;
+              return mesh;
             });
         })
         .enter()
         .append('g')
           .attr('class', 'layer topojson')
-          .attr('id', function(d) { return d.id; })
-          .append('path')
-            .attr('class', 'mesh')
-            .attr('d', function(d) {
+          .attr('id', function(d) { return d.id; });
+
+      topo.append('path')
+        .attr('class', 'mesh')
+        .attr('d', function(d) {
           return path(d);
+        });
+
+      if (options.p0) {
+        var p0;
+        topo.selectAll('circle.p0')
+          .data(function(d) {
+            return d.coordinates.map(function(c) {
+              return c[0];
             });
+          })
+          .enter()
+          .append('circle')
+            .attr('r', 1)
+            .attr('class', 'p0')
+            .attr('transform', function(c) {
+              if (p0) return;
+              return 'translate(' + proj(p0 = c) + ')';
+            });
+      }
 
       g.filter(function(d) {
           return d.type === 'FeatureCollection';
@@ -145,6 +167,7 @@ async.waterfall([
           .attr('stroke-dasharray', '2 2');
       }
 
+      /*
       if (bbox) {
         var bounds = path.bounds(bbox);
         // console.warn('bbox:', bbox, '->', bounds);
@@ -160,6 +183,7 @@ async.waterfall([
           ].join(' '));
         }
       }
+      */
 
       var out = rw.fileWriter(options.o);
       out.write('<?xml version="1.0" standalone="yes"?>\n');

@@ -6,7 +6,7 @@ var yargs = require('yargs')
   .describe('in-states', 'the states CSV file')
   .default('in-states', 'input/geo/states.csv')
   .describe('fips-field', 'the county FIPS code field to fix')
-  .default('fips-field', 'County Code')
+  .default('fips-field', 'FIPS')
   .describe('state-field', 'the state abbreviation field to match up with states')
   .default('state-field', 'St')
   .describe('if', 'input format')
@@ -46,8 +46,8 @@ function main(done) {
       d = normalize(d);
       if (statesByAbbr) fixFIPS(d);
       if (!d.Revenue) {
-	console.warn('No revenues for:', d);
-	return next();
+        console.warn('No revenues for:', JSON.stringify(d).substr(0, 72) + '...');
+        return next();
       }
       next(null, d);
     }))
@@ -56,13 +56,15 @@ function main(done) {
 }
 
 function normalize(d) {
+  util.trimKeys(d);
   return {
     Year:       d.CY,
     State:      d[stateField],
-    County:	d.County,
+    County:     d['County Name'],
     FIPS:       d[fipsField],
     Commodity:  d.Commodity,
-    type:	d['Revenue Type'],
+    Product:    d.Product,
+    Type:       d['Revenue Type'],
     Revenue:    parse.dollars(d[revenueField])
   };
 }

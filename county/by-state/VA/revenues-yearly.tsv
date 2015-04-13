@@ -1,46 +1,96 @@
-Year	State	County	FIPS	Commodity	type	Revenue
-2004	VA	Dickenson	51051	Oil & Gas	Other Revenues	3715.92
-2004	VA	Dickenson	51051	Gas	Royalties	31151.35
-2004	VA	Highland	51091	Gas	Royalties	63.58
-2004	VA	Wise	51195	Oil & Gas	Other Revenues	5114
-2004	VA	Wise	51195	Gas	Royalties	143.07
-2005	VA	Dickenson	51051	Oil & Gas	Other Revenues	402
-2005	VA	Dickenson	51051	Gas	Royalties	536234.46
-2005	VA	Highland	51091	Gas	Royalties	305.25
-2005	VA	Wise	51195	Oil & Gas	Other Revenues	4963.22
-2005	VA	Wise	51195	Gas	Royalties	36185.25
-2006	VA	Dickenson	51051	Oil & Gas	Other Revenues	402
-2006	VA	Dickenson	51051	Gas	Royalties	220075.55
-2006	VA	Highland	51091	Gas	Royalties	631.14
-2006	VA	Wise	51195	Oil & Gas	Other Revenues	4523.61
-2006	VA	Wise	51195	Gas	Royalties	121968.42
-2007	VA	Dickenson	51051	Gas	Royalties	270713.38
-2007	VA	Highland	51091	Oil & Gas	Other Roy Vals	57
-2007	VA	Highland	51091	Gas	Royalties	106.52
-2007	VA	Wise	51195	Oil & Gas	Other Revenues	4881.43
-2007	VA	Wise	51195	Gas	Royalties	90535.03
-2008	VA	Dickenson	51051	Gas	Royalties	232929.86
-2008	VA	Highland	51091	Oil & Gas	Other Roy Vals	-43
-2008	VA	Highland	51091	Gas	Royalties	43.22
-2008	VA	Wise	51195	Oil & Gas	Other Revenues	4665.33
-2008	VA	Wise	51195	Gas	Royalties	193383.19
-2009	VA	Dickenson	51051	Gas	Royalties	85312.68
-2009	VA	Giles	51071	Hardrock	Other Revenues	-2662.5
-2009	VA	Wise	51195	Oil & Gas	Other Revenues	432.2
-2009	VA	Wise	51195	Gas	Royalties	-57390.97
-2010	VA	Dickenson	51051	Gas	Royalties	76606.16
-2010	VA	Highland	51091	Oil & Gas	Other Roy Vals	-14
-2010	VA	Wise	51195	Oil & Gas	Other Revenues	1140.1
-2010	VA	Wise	51195	Gas	Royalties	35002.89
-2011	VA	Dickenson	51051	Oil & Gas	Other Revenues	10160
-2011	VA	Dickenson	51051	Gas	Royalties	63574.16
-2011	VA	Wise	51195	Gas	Royalties	16.01
-2011	VA	Wise	51195	Gas	Royalties	-116520.82
-2012	VA	Dickenson	51051	Gas	Royalties	35955.56
-2012	VA	Wise	51195	Oil & Gas	Other Revenues	4919.5
-2012	VA	Wise	51195	Gas	Royalties	3220.61
-2013	VA	Dickenson	51051	Oil & Gas	Other Revenues	10160
-2013	VA	Dickenson	51051	Gas	Royalties	46967.7
-2013	VA	Wise	51195	Oil & Gas	Other Revenues	216.1
-2013	VA	Wise	51195	Gas	Royalties	8448.8
-2013	VA	Wise	51195	Oil	Royalties	91.93
+Year	State	County	FIPS	Commodity	Product	Type	Revenue
+2004	VA	Dickenson	51051	Oil & Gas		Other Revenues	3715.92
+2004	VA	Dickenson	51051	Oil & Gas		Rents	8409
+2004	VA	Dickenson	51051	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	31151.35
+2004	VA	Highland	51091	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	63.58
+2004	VA	Wise	51195	Oil & Gas		Other Revenues	5114
+2004	VA	Wise	51195	Oil & Gas		Rents	1282
+2004	VA	Wise	51195	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	143.07
+2005	VA	Dickenson	51051	Oil & Gas		Other Revenues	402
+2005	VA	Dickenson	51051	Oil & Gas		Rents	11212
+2005	VA	Dickenson	51051	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	536234.46
+2005	VA	Highland	51091	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	305.25
+2005	VA	Wise	51195	Oil & Gas		Other Revenues	4963.22
+2005	VA	Wise	51195	Oil & Gas		Rents	1282
+2005	VA	Wise	51195	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	36185.25
+2006	VA	Dickenson	51051	Oil & Gas		Other Revenues	402
+2006	VA	Dickenson	51051	Oil & Gas		Rents	11212
+2006	VA	Dickenson	51051	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	220075.55
+2006	VA	Giles	51071	Hardrock		Rents	177.5
+2006	VA	Highland	51091	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	631.14
+2006	VA	Lee	51105	Oil & Gas		Rents	3117
+2006	VA	Wise	51195	Oil & Gas		Other Revenues	4523.61
+2006	VA	Wise	51195	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	121968.42
+2007	VA	Dickenson	51051	Oil & Gas		Rents	11212
+2007	VA	Dickenson	51051	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	270713.38
+2007	VA	Giles	51071	Hardrock		Rents	177.5
+2007	VA	Highland	51091	Oil & Gas		Other Roy Vals	57
+2007	VA	Highland	51091	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	106.52
+2007	VA	Lee	51105	Oil & Gas		Rents	1558.5
+2007	VA	Wise	51195	Oil & Gas		Other Revenues	4881.43
+2007	VA	Wise	51195	Oil & Gas		Rents	1282
+2007	VA	Wise	51195	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	90535.03
+2008	VA	Dickenson	51051	Oil & Gas		Rents	11212
+2008	VA	Dickenson	51051	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	232929.86
+2008	VA	Giles	51071	Hardrock		Rents	-177.5
+2008	VA	Highland	51091	Oil & Gas		Bonus	136015
+2008	VA	Highland	51091	Oil & Gas		Other Roy Vals	-43
+2008	VA	Highland	51091	Oil & Gas		Rents	15151.5
+2008	VA	Highland	51091	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	43.22
+2008	VA	Lee	51105	Oil & Gas		Rents	1558.5
+2008	VA	Wise	51195	Oil & Gas		Other Revenues	4665.33
+2008	VA	Wise	51195	Oil & Gas		Rents	2286
+2008	VA	Wise	51195	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	193383.19
+2009	VA	Dickenson	51051	Oil & Gas		Rents	11212
+2009	VA	Dickenson	51051	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	85312.68
+2009	VA	Giles	51071	Hardrock		Other Revenues	-2662.5
+2009	VA	Giles	51071	Hardrock		Rents	-355
+2009	VA	Highland	51091	Oil & Gas		Rents	30303
+2009	VA	Lee	51105	Oil & Gas		Rents	1558.5
+2009	VA	Wise	51195	Oil & Gas		Other Revenues	432.2
+2009	VA	Wise	51195	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	-57390.97
+2010	VA	Dickenson	51051	Oil & Gas		Rents	10160
+2010	VA	Dickenson	51051	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	76606.16
+2010	VA	Giles	51071	Hardrock		Rents	-355
+2010	VA	Highland	51091	Oil & Gas		Other Roy Vals	-14
+2010	VA	Highland	51091	Oil & Gas		Rents	15151.5
+2010	VA	Lee	51105	Oil & Gas		Rents	2078
+2010	VA	Wise	51195	Oil & Gas		Other Revenues	1140.1
+2010	VA	Wise	51195	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	35002.89
+2011	VA	Dickenson	51051	Oil & Gas		Other Revenues	10160
+2011	VA	Dickenson	51051	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	63574.16
+2011	VA	Giles	51071	Hardrock		Rents	355
+2011	VA	Lee	51105	Oil & Gas		Rents	2078
+2011	VA	Wise	51195	Gas (mcf)	Processed (Residue) Gas	Royalties	16.01
+2011	VA	Wise	51195	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	-116520.82
+2012	VA	Dickenson	51051	Oil & Gas		Bonus	11572
+2012	VA	Dickenson	51051	Oil & Gas		Rents	1578
+2012	VA	Dickenson	51051	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	35955.56
+2012	VA	Giles	51071	Hardrock		Rents	355
+2012	VA	Highland	51091	Oil & Gas		Rents	15151.5
+2012	VA	Lee	51105	Oil & Gas		Rents	2078
+2012	VA	Wise	51195	Oil & Gas		Other Revenues	4919.5
+2012	VA	Wise	51195	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	3220.61
+2013	VA	Dickenson	51051	Oil & Gas		Other Revenues	10160
+2013	VA	Dickenson	51051	Oil & Gas		Rents	789
+2013	VA	Dickenson	51051	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	46967.7
+2013	VA	Giles	51071	Hardrock		Rents	-710
+2013	VA	Highland	51091	Oil & Gas		Rents	20202
+2013	VA	Wise	51195	Oil & Gas		Other Revenues	216.1
+2013	VA	Wise	51195	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	8448.8
+2013	VA	Wise	51195	Oil (bbl)	Oil	Royalties	91.93
+2004	VA	Giles	51071	Other Products	Limestone	Royalties	59664.73
+2005	VA	Giles	51071	Other Products	Limestone	Royalties	21419.75
+2006	VA	Giles	51071	Hardrock		Other Revenues	532.5
+2006	VA	Giles	51071	Other Products	Limestone	Royalties	31648.77
+2007	VA	Giles	51071	Hardrock		Other Revenues	532.5
+2007	VA	Giles	51071	Other Products	Limestone	Royalties	75816.59
+2008	VA	Giles	51071	Hardrock		Other Revenues	1065
+2008	VA	Giles	51071	Other Products	Limestone	Royalties	106657.16
+2009	VA	Giles	51071	Other Products	Limestone	Royalties	113515.27
+2010	VA	Giles	51071	Other Products	Limestone	Royalties	117397.69
+2011	VA	Giles	51071	Hardrock		Other Revenues	1065
+2011	VA	Giles	51071	Other Products	Limestone	Royalties	112434.96
+2012	VA	Giles	51071	Other Products	Limestone	Royalties	128426.76
+2013	VA	Giles	51071	Hardrock		Other Revenues	-2130
+2013	VA	Giles	51071	Other Products	Limestone	Royalties	60702.52

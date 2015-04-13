@@ -1,12 +1,22 @@
-Year	State	County	FIPS	Commodity	type	Revenue
-2004	MD	Garrett	24023	Oil & Gas	Other Revenues	10279.77
-2004	MD	Garrett	24023	Oil & Gas	Other Roy Vals	-730.5
-2005	MD	Garrett	24023	Oil & Gas	Other Revenues	10055.21
-2006	MD	Garrett	24023	Oil & Gas	Other Revenues	7159.59
-2007	MD	Garrett	24023	Oil & Gas	Other Revenues	11540.91
-2008	MD	Garrett	24023	Oil & Gas	Other Revenues	10386.29
-2009	MD	Garrett	24023	Oil & Gas	Other Revenues	8922.15
-2010	MD	Garrett	24023	Oil & Gas	Other Revenues	7864.01
-2011	MD	Garrett	24023	Oil & Gas	Other Revenues	9549.32
-2012	MD	Garrett	24023	Oil & Gas	Other Revenues	5697.43
-2013	MD	Garrett	24023	Oil & Gas	Other Revenues	7035.88
+Year	State	County	FIPS	Commodity	Product	Type	Revenue
+2004	MD	Garrett	24023	Oil & Gas		Other Revenues	10279.77
+2004	MD	Garrett	24023	Oil & Gas		Other Roy Vals	-730.5
+2004	MD	Garrett	24023	Oil & Gas		Rents	992
+2005	MD	Garrett	24023	Oil & Gas		Other Revenues	10055.21
+2005	MD	Garrett	24023	Oil & Gas		Rents	496
+2006	MD	Garrett	24023	Oil & Gas		Other Revenues	7159.59
+2006	MD	Garrett	24023	Oil & Gas		Rents	496
+2007	MD	Garrett	24023	Oil & Gas		Other Revenues	11540.91
+2007	MD	Garrett	24023	Oil & Gas		Rents	496
+2008	MD	Garrett	24023	Oil & Gas		Other Revenues	10386.29
+2008	MD	Garrett	24023	Oil & Gas		Rents	496
+2009	MD	Garrett	24023	Oil & Gas		Other Revenues	8922.15
+2009	MD	Garrett	24023	Oil & Gas		Rents	496
+2010	MD	Garrett	24023	Oil & Gas		Other Revenues	7864.01
+2010	MD	Garrett	24023	Oil & Gas		Rents	496
+2011	MD	Garrett	24023	Oil & Gas		Other Revenues	9549.32
+2011	MD	Garrett	24023	Oil & Gas		Rents	496
+2012	MD	Garrett	24023	Oil & Gas		Other Revenues	5697.43
+2012	MD	Garrett	24023	Oil & Gas		Rents	496
+2013	MD	Garrett	24023	Oil & Gas		Other Revenues	7035.88
+2013	MD	Garrett	24023	Oil & Gas		Rents	496

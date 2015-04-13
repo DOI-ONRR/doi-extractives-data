@@ -1,31 +1,57 @@
-Year	State	County	FIPS	Commodity	type	Revenue
-2004	MN	Lake	27075	Copper	Other Revenues	12827.43
-2004	MN	Lake	27075	Hardrock	Other Revenues	11275
-2004	MN	St Louis	27137	Copper	Other Revenues	227.57
-2005	MN	Lake	27075	Copper	Other Revenues	38482.28
-2005	MN	Lake	27075	Hardrock	Other Revenues	33825
-2005	MN	St Louis	27137	Copper	Other Revenues	682.72
-2006	MN	Lake	27075	Copper	Other Revenues	25654.85
-2006	MN	Lake	27075	Hardrock	Other Revenues	22550
-2006	MN	St Louis	27137	Copper	Other Revenues	455.15
-2007	MN	Lake	27075	Copper	Other Revenues	25654.85
-2007	MN	Lake	27075	Hardrock	Other Revenues	22550
-2007	MN	St Louis	27137	Copper	Other Revenues	455.15
-2008	MN	Lake	27075	Copper	Other Revenues	25654.85
-2008	MN	Lake	27075	Hardrock	Other Revenues	22550
-2008	MN	St Louis	27137	Copper	Other Revenues	455.15
-2009	MN	Lake	27075	Copper	Other Revenues	25654.85
-2009	MN	Lake	27075	Hardrock	Other Revenues	22550
-2009	MN	St Louis	27137	Copper	Other Revenues	455.15
-2010	MN	Lake	27075	Copper	Other Revenues	25654.85
-2010	MN	Lake	27075	Hardrock	Other Revenues	22550
-2010	MN	St Louis	27137	Copper	Other Revenues	455.15
-2011	MN	Lake	27075	Copper	Other Revenues	25654.85
-2011	MN	Lake	27075	Hardrock	Other Revenues	22550
-2011	MN	St Louis	27137	Copper	Other Revenues	455.15
-2012	MN	Lake	27075	Copper	Other Revenues	25654.85
-2012	MN	Lake	27075	Hardrock	Other Revenues	22550
-2012	MN	St Louis	27137	Copper	Other Revenues	455.15
-2013	MN	Lake	27075	Copper	Other Revenues	25654.85
-2013	MN	Lake	27075	Hardrock	Other Revenues	22550
-2013	MN	St Louis	27137	Copper	Other Revenues	455.15
+Year	State	County	FIPS	Commodity	Product	Type	Revenue
+2004	MN	Lake	27075	Copper		Other Revenues	12827.43
+2004	MN	Lake	27075	Hardrock		Other Revenues	11275
+2004	MN	Lake	27075	Copper		Rents	647.5
+2004	MN	Lake	27075	Hardrock		Rents	12032.5
+2004	MN	St Louis	27137	Copper		Other Revenues	227.57
+2004	MN	St Louis	27137	Copper		Rents	20
+2004	MN	St Louis	27137	Hardrock		Rents	900
+2005	MN	Lake	27075	Copper		Other Revenues	38482.28
+2005	MN	Lake	27075	Hardrock		Other Revenues	33825
+2005	MN	Lake	27075	Copper		Rents	-19876.38
+2005	MN	Lake	27075	Hardrock		Rents	-15968
+2005	MN	St Louis	27137	Copper		Other Revenues	682.72
+2005	MN	St Louis	27137	Copper		Rents	-344.12
+2005	MN	St Louis	27137	Hardrock		Rents	900
+2006	MN	Lake	27075	Copper		Other Revenues	25654.85
+2006	MN	Lake	27075	Hardrock		Other Revenues	22550
+2006	MN	Lake	27075	Copper		Rents	2565.49
+2006	MN	Lake	27075	Hardrock		Rents	7220
+2006	MN	St Louis	27137	Copper		Other Revenues	455.15
+2006	MN	St Louis	27137	Copper		Rents	45.51
+2006	MN	St Louis	27137	Hardrock		Rents	-2700
+2007	MN	Lake	27075	Copper		Other Revenues	25654.85
+2007	MN	Lake	27075	Hardrock		Other Revenues	22550
+2007	MN	Lake	27075	Hardrock		Rents	-1157
+2007	MN	St Louis	27137	Copper		Other Revenues	455.15
+2008	MN	Blue Earth	27013	Hardrock		Rents	200
+2008	MN	Lake	27075	Copper		Other Revenues	25654.85
+2008	MN	Lake	27075	Hardrock		Other Revenues	22550
+2008	MN	Lake	27075	Hardrock		Rents	1549.5
+2008	MN	St Louis	27137	Copper		Other Revenues	455.15
+2009	MN	Lake	27075	Copper		Other Revenues	25654.85
+2009	MN	Lake	27075	Hardrock		Other Revenues	22550
+2009	MN	Lake	27075	Hardrock		Rents	522.5
+2009	MN	St Louis	27137	Copper		Other Revenues	455.15
+2010	MN	Lake	27075	Copper		Other Revenues	25654.85
+2010	MN	Lake	27075	Hardrock		Other Revenues	22550
+2010	MN	Lake	27075	Hardrock		Rents	1116.5
+2010	MN	St Louis	27137	Copper		Other Revenues	455.15
+2011	MN	Lake	27075	Copper		Other Revenues	25654.85
+2011	MN	Lake	27075	Hardrock		Other Revenues	22550
+2011	MN	Lake	27075	Hardrock		Rents	-3835
+2011	MN	St Louis	27137	Copper		Other Revenues	455.15
+2012	MN	Lake	27075	Copper		Other Revenues	25654.85
+2012	MN	Lake	27075	Hardrock		Other Revenues	22550
+2012	MN	Lake	27075	Hardrock		Rents	9875
+2012	MN	Le Sueur	27079	Hardrock		Bonus	30
+2012	MN	Le Sueur	27079	Hardrock		Rents	26
+2012	MN	St Louis	27137	Copper		Other Revenues	455.15
+2013	MN	Lake	27075	Copper		Other Revenues	25654.85
+2013	MN	Lake	27075	Hardrock		Other Revenues	22550
+2013	MN	Lake	27075	Copper		Rents	-2565.49
+2013	MN	Lake	27075	Hardrock		Rents	19177
+2013	MN	Le Sueur	27079	Hardrock		Rents	34
+2013	MN	St Louis	27137	Copper		Other Revenues	455.15
+2013	MN	St Louis	27137	Copper		Rents	-45.51
+2013	MN	St Louis	27137	Hardrock		Rents	360

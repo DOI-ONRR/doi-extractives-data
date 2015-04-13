@@ -1,256 +1,339 @@
-Year	State	County	FIPS	Commodity	type	Revenue
-2004	OH	Athens	39009	Gas	Royalties	10437.63
-2004	OH	Athens	39009	Oil	Royalties	686.11
-2004	OH	Hocking	39073	Oil & Gas	Other Revenues	3069.18
-2004	OH	Hocking	39073	Gas	Royalties	4255.29
-2004	OH	Hocking	39073	Oil	Royalties	40187.15
-2004	OH	Lawrence	39087	Oil & Gas	Other Revenues	121.34
-2004	OH	Lawrence	39087	Oil & Gas	Other Roy Vals	800
-2004	OH	Lawrence	39087	Gas	Royalties	11657.03
-2004	OH	Lawrence	39087	Gas	Royalties	8785.71
-2004	OH	Licking	39089	Oil	Royalties	911
-2004	OH	Mahoning	39099	Gas	Royalties	56866.45
-2004	OH	Mahoning	39099	Oil	Royalties	3330.72
-2004	OH	Monroe	39111	Gas	Royalties	-597.56
-2004	OH	Monroe	39111	Oil	Royalties	13913.72
-2004	OH	Muskingum	39119	Oil	Royalties	133.67
-2004	OH	Perry	39127	Gas	Royalties	718.55
-2004	OH	Perry	39127	Oil	Royalties	3599.38
-2004	OH	Portage	39133	Gas	Royalties	148734.46
-2004	OH	Portage	39133	Oil	Royalties	16854.47
-2004	OH	Stark	39151	Gas	Royalties	23037.68
-2004	OH	Stark	39151	Oil	Royalties	123.45
-2004	OH	Trumbull	39155	Gas	Royalties	133391.29
-2004	OH	Trumbull	39155	Oil	Royalties	3896.85
-2004	OH	Washington	39167	Gas	Royalties	22504.87
-2004	OH	Washington	39167	Oil	Royalties	12294.69
-2005	OH	Athens	39009	Gas	Royalties	8282.24
-2005	OH	Athens	39009	Oil	Royalties	3458.88
-2005	OH	Hocking	39073	Gas	Royalties	2166.1
-2005	OH	Hocking	39073	Oil	Royalties	22125.82
-2005	OH	Lawrence	39087	Gas	Royalties	7378.74
-2005	OH	Lawrence	39087	Gas	Royalties	11414.59
-2005	OH	Mahoning	39099	Gas	Royalties	59151.78
-2005	OH	Mahoning	39099	Oil	Royalties	4322.91
-2005	OH	Monroe	39111	Gas	Royalties	22039.25
-2005	OH	Monroe	39111	Oil	Royalties	17447.69
-2005	OH	Muskingum	39119	Gas	Royalties	4797.73
-2005	OH	Muskingum	39119	Oil	Royalties	273.27
-2005	OH	Perry	39127	Gas	Royalties	2571.99
-2005	OH	Perry	39127	Oil	Royalties	18307.34
-2005	OH	Portage	39133	Gas	Royalties	189830.34
-2005	OH	Portage	39133	Oil	Royalties	19239.02
-2005	OH	Stark	39151	Gas	Royalties	28805.53
-2005	OH	Stark	39151	Oil	Royalties	227.84
-2005	OH	Trumbull	39155	Gas	Royalties	144354.75
-2005	OH	Trumbull	39155	Oil	Royalties	4483.97
-2005	OH	Washington	39167	Oil & Gas	Other Revenues	4.03
-2005	OH	Washington	39167	Oil & Gas	Other Roy Vals	775
-2005	OH	Washington	39167	Gas	Royalties	61297.45
-2005	OH	Washington	39167	Oil	Royalties	34656.24
-2006	OH	Athens	39009	Gas	Royalties	18449.01
-2006	OH	Athens	39009	Oil	Royalties	6110.72
-2006	OH	Hocking	39073	Gas	Royalties	1767.55
-2006	OH	Hocking	39073	Oil	Royalties	31295
-2006	OH	Lawrence	39087	Gas	Royalties	6177.74
-2006	OH	Lawrence	39087	Gas	Royalties	10653.94
-2006	OH	Mahoning	39099	Oil & Gas	Other Roy Vals	4082.49
-2006	OH	Mahoning	39099	Gas	Royalties	79412.05
-2006	OH	Mahoning	39099	Oil	Royalties	28596.31
-2006	OH	Monroe	39111	Gas	Royalties	28501.53
-2006	OH	Monroe	39111	Oil	Royalties	15441.28
-2006	OH	Muskingum	39119	Gas	Royalties	5044.28
-2006	OH	Muskingum	39119	Oil	Royalties	277.56
-2006	OH	Perry	39127	Gas	Royalties	4233.47
-2006	OH	Perry	39127	Oil	Royalties	20247.86
-2006	OH	Portage	39133	Oil & Gas	Other Roy Vals	16244.42
-2006	OH	Portage	39133	Gas	Royalties	208691.15
-2006	OH	Portage	39133	Oil	Royalties	57115.44
-2006	OH	Stark	39151	Oil & Gas	Other Roy Vals	2673.09
-2006	OH	Stark	39151	Gas	Royalties	29373.17
-2006	OH	Stark	39151	Oil	Royalties	2306.98
-2006	OH	Trumbull	39155	Gas	Royalties	128358.67
-2006	OH	Trumbull	39155	Oil	Royalties	2921.1
-2006	OH	Washington	39167	Oil & Gas	Other Revenues	50.62
-2006	OH	Washington	39167	Oil & Gas	Other Roy Vals	1750
-2006	OH	Washington	39167	Gas	Royalties	75468.39
-2006	OH	Washington	39167	Oil	Royalties	26792.23
-2007	OH	Athens	39009	Gas	Royalties	26027.2
-2007	OH	Athens	39009	Oil	Royalties	3062.68
-2007	OH	Hocking	39073	Gas	Royalties	4167.57
-2007	OH	Hocking	39073	Oil	Royalties	36074.64
-2007	OH	Lawrence	39087	Gas	Royalties	3343.26
-2007	OH	Lawrence	39087	Gas	Royalties	5895.7
-2007	OH	Mahoning	39099	Gas	Royalties	79724.68
-2007	OH	Mahoning	39099	Oil	Royalties	33481.22
-2007	OH	Monroe	39111	Oil & Gas	Other Revenues	400
-2007	OH	Monroe	39111	Gas	Royalties	19545.87
-2007	OH	Monroe	39111	Oil	Royalties	27399.45
-2007	OH	Muskingum	39119	Gas	Royalties	3152.56
-2007	OH	Muskingum	39119	Oil	Royalties	360.66
-2007	OH	Perry	39127	Gas	Royalties	3758.66
-2007	OH	Perry	39127	Oil	Royalties	23466.24
-2007	OH	Portage	39133	Gas	Royalties	199849.91
-2007	OH	Portage	39133	Oil	Royalties	67301.14
-2007	OH	Stark	39151	Gas	Royalties	28835.97
-2007	OH	Stark	39151	Oil	Royalties	2778.51
-2007	OH	Trumbull	39155	Gas	Royalties	183081.19
-2007	OH	Trumbull	39155	Oil	Royalties	5163.62
-2007	OH	Washington	39167	Oil & Gas	Other Revenues	648.03
-2007	OH	Washington	39167	Oil & Gas	Other Roy Vals	-420
-2007	OH	Washington	39167	Gas	Royalties	55999.5
-2007	OH	Washington	39167	Oil	Royalties	34051.97
-2008	OH	Athens	39009	Gas	Royalties	18793.11
-2008	OH	Athens	39009	Oil	Royalties	4809.99
-2008	OH	Hocking	39073	Gas	Royalties	4204.36
-2008	OH	Hocking	39073	Oil	Royalties	60717.65
-2008	OH	Lawrence	39087	Oil & Gas	Other Roy Vals	-1350
-2008	OH	Lawrence	39087	Gas	Royalties	1121.87
-2008	OH	Lawrence	39087	Gas	Royalties	4155.52
-2008	OH	Mahoning	39099	Gas	Royalties	87737.96
-2008	OH	Mahoning	39099	Oil	Royalties	44898.06
-2008	OH	Monroe	39111	Oil & Gas	Other Revenues	809.34
-2008	OH	Monroe	39111	Gas	Royalties	31348.6
-2008	OH	Monroe	39111	Oil	Royalties	45874.52
-2008	OH	Muskingum	39119	Gas	Royalties	5813.71
-2008	OH	Muskingum	39119	Oil	Royalties	6759.32
-2008	OH	Perry	39127	Gas	Royalties	3591.57
-2008	OH	Perry	39127	Oil	Royalties	37747.3
-2008	OH	Portage	39133	Gas	Royalties	226821.09
-2008	OH	Portage	39133	Oil	Royalties	97457.23
-2008	OH	Stark	39151	Gas	Royalties	36271.27
-2008	OH	Stark	39151	Oil	Royalties	4955.82
-2008	OH	Trumbull	39155	Gas	Royalties	185281.78
-2008	OH	Trumbull	39155	Oil	Royalties	6250.88
-2008	OH	Washington	39167	Oil & Gas	Other Revenues	436.15
-2008	OH	Washington	39167	Oil & Gas	Other Roy Vals	2490
-2008	OH	Washington	39167	Gas	Royalties	72204.53
-2008	OH	Washington	39167	Oil	Royalties	53518.29
-2009	OH	Athens	39009	Gas	Royalties	9037.1
-2009	OH	Athens	39009	Oil	Royalties	4037.1
-2009	OH	Hocking	39073	Gas	Royalties	1965.45
-2009	OH	Hocking	39073	Oil	Royalties	29950.81
-2009	OH	Lawrence	39087	Gas	Royalties	1542.56
-2009	OH	Mahoning	39099	Gas	Royalties	50599.15
-2009	OH	Mahoning	39099	Oil	Royalties	22011.6
-2009	OH	Monroe	39111	Oil & Gas	Other Revenues	800
-2009	OH	Monroe	39111	Gas	Royalties	16019.85
-2009	OH	Monroe	39111	Oil	Royalties	17515.34
-2009	OH	Muskingum	39119	Gas	Royalties	3129.61
-2009	OH	Muskingum	39119	Oil	Royalties	1780.1
-2009	OH	Perry	39127	Oil & Gas	Other Roy Vals	-295
-2009	OH	Perry	39127	Gas	Royalties	1780.13
-2009	OH	Perry	39127	Oil	Royalties	16504.07
-2009	OH	Portage	39133	Gas	Royalties	131153.14
-2009	OH	Portage	39133	Oil	Royalties	105851.28
-2009	OH	Stark	39151	Gas	Royalties	16398.08
-2009	OH	Stark	39151	Oil	Royalties	2745.89
-2009	OH	Trumbull	39155	Gas	Royalties	101014.68
-2009	OH	Trumbull	39155	Oil	Royalties	2742.5
-2009	OH	Washington	39167	Oil & Gas	Other Revenues	293.79
-2009	OH	Washington	39167	Oil & Gas	Other Roy Vals	-325
-2009	OH	Washington	39167	Gas	Royalties	30540.99
-2009	OH	Washington	39167	Oil	Royalties	23593.91
-2010	OH	Athens	39009	Gas	Royalties	6248.06
-2010	OH	Athens	39009	Oil	Royalties	4694.41
-2010	OH	Hocking	39073	Gas	Royalties	966.7
-2010	OH	Hocking	39073	Oil	Royalties	40193.91
-2010	OH	Lawrence	39087	Gas	Royalties	1408.47
-2010	OH	Mahoning	39099	Oil & Gas	Other Roy Vals	-0.32
-2010	OH	Mahoning	39099	Gas	Royalties	49541.95
-2010	OH	Mahoning	39099	Oil	Royalties	28845.16
-2010	OH	Monroe	39111	Oil & Gas	Other Revenues	1013.42
-2010	OH	Monroe	39111	Gas	Royalties	15984.75
-2010	OH	Monroe	39111	Oil	Royalties	15572.33
-2010	OH	Muskingum	39119	Gas	Royalties	2389.45
-2010	OH	Muskingum	39119	Oil	Royalties	2872.63
-2010	OH	Perry	39127	Gas	Royalties	1558.97
-2010	OH	Perry	39127	Oil	Royalties	16912.05
-2010	OH	Portage	39133	Oil & Gas	Other Roy Vals	-382.41
-2010	OH	Portage	39133	Gas	Royalties	128286.15
-2010	OH	Portage	39133	Oil	Royalties	74280.42
-2010	OH	Stark	39151	Gas	Royalties	17341.67
-2010	OH	Stark	39151	Oil	Royalties	2318
-2010	OH	Trumbull	39155	Gas	Royalties	80516.2
-2010	OH	Trumbull	39155	Oil	Royalties	5597.78
-2010	OH	Washington	39167	Oil & Gas	Other Revenues	1550
-2010	OH	Washington	39167	Oil & Gas	Other Roy Vals	-10
-2010	OH	Washington	39167	Gas	Royalties	35094.3
-2010	OH	Washington	39167	Oil	Royalties	32806.35
-2011	OH	Athens	39009	Gas	Royalties	6117.46
-2011	OH	Athens	39009	Oil	Royalties	2597.35
-2011	OH	Hocking	39073	Gas	Royalties	837.87
-2011	OH	Hocking	39073	Oil	Royalties	32350.05
-2011	OH	Lawrence	39087	Gas	Royalties	9519.97
-2011	OH	Mahoning	39099	Gas	Royalties	42010.75
-2011	OH	Mahoning	39099	Oil	Royalties	36084.11
-2011	OH	Monroe	39111	Oil & Gas	Other Revenues	900
-2011	OH	Monroe	39111	Gas	Royalties	13058.15
-2011	OH	Monroe	39111	Oil	Royalties	18780.49
-2011	OH	Muskingum	39119	Gas	Royalties	1864.63
-2011	OH	Muskingum	39119	Oil	Royalties	1538.04
-2011	OH	Perry	39127	Gas	Royalties	1328.58
-2011	OH	Perry	39127	Oil	Royalties	36303.21
-2011	OH	Portage	39133	Gas	Royalties	105977.2
-2011	OH	Portage	39133	Oil	Royalties	73768.44
-2011	OH	Stark	39151	Gas	Royalties	13467.82
-2011	OH	Stark	39151	Oil	Royalties	3050.5
-2011	OH	Trumbull	39155	Gas	Royalties	79791.45
-2011	OH	Trumbull	39155	Oil	Royalties	2565.17
-2011	OH	Washington	39167	Oil & Gas	Other Revenues	1650
-2011	OH	Washington	39167	Gas	Royalties	39515.83
-2011	OH	Washington	39167	Oil	Royalties	43596.6
-2012	OH	Athens	39009	Gas	Royalties	3564.24
-2012	OH	Athens	39009	Oil	Royalties	3699.05
-2012	OH	Hocking	39073	Gas	Royalties	496.46
-2012	OH	Hocking	39073	Oil	Royalties	26278.36
-2012	OH	Lawrence	39087	Gas	Royalties	1234.6
-2012	OH	Lawrence	39087	Oil	Royalties	833.16
-2012	OH	Mahoning	39099	Gas	Royalties	25120.13
-2012	OH	Mahoning	39099	Oil	Royalties	35362.88
-2012	OH	Monroe	39111	Oil & Gas	Other Revenues	1508.6
-2012	OH	Monroe	39111	Gas	Royalties	23317.13
-2012	OH	Monroe	39111	Oil	Royalties	24579.98
-2012	OH	Muskingum	39119	Gas	Royalties	1100.51
-2012	OH	Muskingum	39119	Oil	Royalties	3125.25
-2012	OH	Perry	39127	Gas	Royalties	930.09
-2012	OH	Perry	39127	Oil	Royalties	10531.57
-2012	OH	Portage	39133	Gas	Royalties	72279.39
-2012	OH	Portage	39133	Oil	Royalties	83941.28
-2012	OH	Stark	39151	Gas	Royalties	9319.15
-2012	OH	Stark	39151	Oil	Royalties	1947.79
-2012	OH	Trumbull	39155	Gas	Royalties	33086.51
-2012	OH	Trumbull	39155	Oil	Royalties	1402.21
-2012	OH	Washington	39167	Oil & Gas	Other Revenues	2537.66
-2012	OH	Washington	39167	Gas	Royalties	23810.42
-2012	OH	Washington	39167	Oil	Royalties	94125.61
-2013	OH	Athens	39009	Gas	Royalties	3996.23
-2013	OH	Athens	39009	Oil	Royalties	1682.82
-2013	OH	Hocking	39073	Gas	Royalties	323.12
-2013	OH	Hocking	39073	Oil	Royalties	40559.28
-2013	OH	Lawrence	39087	Oil & Gas	Other Roy Vals	115
-2013	OH	Lawrence	39087	Gas	Royalties	366.27
-2013	OH	Lawrence	39087	Oil	Royalties	513.81
-2013	OH	Licking	39089	Oil	Royalties	26135.4
-2013	OH	Mahoning	39099	Gas	Royalties	33983.69
-2013	OH	Mahoning	39099	Oil	Royalties	33053.35
-2013	OH	Monroe	39111	Oil & Gas	Other Revenues	3277.33
-2013	OH	Monroe	39111	Oil & Gas	Other Roy Vals	3397.28
-2013	OH	Monroe	39111	Gas	Royalties	401.95
-2013	OH	Monroe	39111	Gas	Royalties	8751.61
-2013	OH	Monroe	39111	Oil	Royalties	9887.37
-2013	OH	Muskingum	39119	Gas	Royalties	1292.87
-2013	OH	Muskingum	39119	Oil	Royalties	1531.23
-2013	OH	Perry	39127	Gas	Royalties	980.39
-2013	OH	Perry	39127	Oil	Royalties	5311.75
-2013	OH	Portage	39133	Oil & Gas	Other Revenues	112.01
-2013	OH	Portage	39133	Gas	Royalties	90205.88
-2013	OH	Portage	39133	Oil	Royalties	86748.97
-2013	OH	Stark	39151	Gas	Royalties	12648.63
-2013	OH	Stark	39151	Oil	Royalties	3215.68
-2013	OH	Trumbull	39155	Gas	Royalties	44255.91
-2013	OH	Trumbull	39155	Oil	Royalties	2384.83
-2013	OH	Washington	39167	Oil & Gas	Other Revenues	10853.34
-2013	OH	Washington	39167	Oil & Gas	Other Roy Vals	1163.72
-2013	OH	Washington	39167	Gas	Royalties	14319.28
-2013	OH	Washington	39167	Oil	Royalties	24398.49
+Year	State	County	FIPS	Commodity	Product	Type	Revenue
+2004	OH	Athens	39009	Oil & Gas		Rents	1850
+2004	OH	Athens	39009	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	10437.63
+2004	OH	Athens	39009	Oil (bbl)	Oil	Royalties	686.11
+2004	OH	Gallia	39053	Oil & Gas		Bonus	238
+2004	OH	Gallia	39053	Oil & Gas		Rents	357
+2004	OH	Hocking	39073	Oil & Gas		Other Revenues	3069.18
+2004	OH	Hocking	39073	Oil & Gas		Rents	3229.07
+2004	OH	Hocking	39073	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	4255.29
+2004	OH	Hocking	39073	Oil (bbl)	Oil	Royalties	40187.15
+2004	OH	Lawrence	39087	Oil & Gas		Bonus	3116
+2004	OH	Lawrence	39087	Oil & Gas		Other Revenues	121.34
+2004	OH	Lawrence	39087	Oil & Gas		Other Roy Vals	800
+2004	OH	Lawrence	39087	Oil & Gas		Rents	4674
+2004	OH	Lawrence	39087	Gas (mcf)	Processed (Residue) Gas	Royalties	11657.03
+2004	OH	Lawrence	39087	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	8785.71
+2004	OH	Licking	39089	Oil (bbl)	Oil	Royalties	911
+2004	OH	Mahoning	39099	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	56866.45
+2004	OH	Mahoning	39099	Oil (bbl)	Oil	Royalties	3330.72
+2004	OH	Monroe	39111	Oil & Gas		Bonus	6194
+2004	OH	Monroe	39111	Oil & Gas		Rents	1059
+2004	OH	Monroe	39111	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	-597.56
+2004	OH	Monroe	39111	Oil (bbl)	Oil	Royalties	13913.72
+2004	OH	Muskingum	39119	Oil (bbl)	Oil	Royalties	133.67
+2004	OH	Perry	39127	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	718.55
+2004	OH	Perry	39127	Oil (bbl)	Oil	Royalties	3599.38
+2004	OH	Portage	39133	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	148734.46
+2004	OH	Portage	39133	Oil (bbl)	Oil	Royalties	16854.47
+2004	OH	Ross	39141	Oil & Gas		Rents	7938.93
+2004	OH	Stark	39151	Oil & Gas		Rents	535
+2004	OH	Stark	39151	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	23037.68
+2004	OH	Stark	39151	Oil (bbl)	Oil	Royalties	123.45
+2004	OH	Trumbull	39155	Oil & Gas		Rents	675
+2004	OH	Trumbull	39155	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	133391.29
+2004	OH	Trumbull	39155	Oil (bbl)	Oil	Royalties	3896.85
+2004	OH	Tuscarawas	39157	Oil & Gas		Rents	3.5
+2004	OH	Vinton	39163	Oil & Gas		Rents	1680
+2004	OH	Washington	39167	Oil & Gas		Bonus	19597
+2004	OH	Washington	39167	Oil & Gas		Rents	5313
+2004	OH	Washington	39167	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	22504.87
+2004	OH	Washington	39167	Oil (bbl)	Oil	Royalties	12294.69
+2005	OH	Athens	39009	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	8282.24
+2005	OH	Athens	39009	Oil (bbl)	Oil	Royalties	3458.88
+2005	OH	Gallia	39053	Oil & Gas		Rents	178.5
+2005	OH	Hocking	39073	Oil & Gas		Rents	2107.04
+2005	OH	Hocking	39073	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	2166.1
+2005	OH	Hocking	39073	Oil (bbl)	Oil	Royalties	22125.82
+2005	OH	Lawrence	39087	Oil & Gas		Rents	2337
+2005	OH	Lawrence	39087	Gas (mcf)	Processed (Residue) Gas	Royalties	7378.74
+2005	OH	Lawrence	39087	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	11414.59
+2005	OH	Mahoning	39099	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	59151.78
+2005	OH	Mahoning	39099	Oil (bbl)	Oil	Royalties	4322.91
+2005	OH	Monroe	39111	Oil & Gas		Rents	241.74
+2005	OH	Monroe	39111	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	22039.25
+2005	OH	Monroe	39111	Oil (bbl)	Oil	Royalties	17447.69
+2005	OH	Muskingum	39119	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	4797.73
+2005	OH	Muskingum	39119	Oil (bbl)	Oil	Royalties	273.27
+2005	OH	Perry	39127	Oil & Gas		Rents	82.5
+2005	OH	Perry	39127	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	2571.99
+2005	OH	Perry	39127	Oil (bbl)	Oil	Royalties	18307.34
+2005	OH	Portage	39133	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	189830.34
+2005	OH	Portage	39133	Oil (bbl)	Oil	Royalties	19239.02
+2005	OH	Ross	39141	Oil & Gas		Rents	3969.46
+2005	OH	Stark	39151	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	28805.53
+2005	OH	Stark	39151	Oil (bbl)	Oil	Royalties	227.84
+2005	OH	Trumbull	39155	Oil & Gas		Rents	900
+2005	OH	Trumbull	39155	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	144354.75
+2005	OH	Trumbull	39155	Oil (bbl)	Oil	Royalties	4483.97
+2005	OH	Tuscarawas	39157	Oil & Gas		Rents	2
+2005	OH	Vinton	39163	Oil & Gas		Rents	1680
+2005	OH	Washington	39167	Oil & Gas		Other Revenues	4.03
+2005	OH	Washington	39167	Oil & Gas		Other Roy Vals	775
+2005	OH	Washington	39167	Oil & Gas		Rents	1491
+2005	OH	Washington	39167	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	61297.45
+2005	OH	Washington	39167	Oil (bbl)	Oil	Royalties	34656.24
+2006	OH	Athens	39009	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	18449.01
+2006	OH	Athens	39009	Oil (bbl)	Oil	Royalties	6110.72
+2006	OH	Gallia	39053	Oil & Gas		Rents	178.5
+2006	OH	Hocking	39073	Oil & Gas		Rents	325.5
+2006	OH	Hocking	39073	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	1767.55
+2006	OH	Hocking	39073	Oil (bbl)	Oil	Royalties	31295
+2006	OH	Lawrence	39087	Oil & Gas		Rents	2337
+2006	OH	Lawrence	39087	Gas (mcf)	Processed (Residue) Gas	Royalties	6177.74
+2006	OH	Lawrence	39087	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	10653.94
+2006	OH	Mahoning	39099	Oil & Gas		Other Roy Vals	4082.49
+2006	OH	Mahoning	39099	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	79412.05
+2006	OH	Mahoning	39099	Oil (bbl)	Oil	Royalties	28596.31
+2006	OH	Monroe	39111	Oil & Gas		Rents	805.59
+2006	OH	Monroe	39111	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	28501.53
+2006	OH	Monroe	39111	Oil (bbl)	Oil	Royalties	15441.28
+2006	OH	Muskingum	39119	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	5044.28
+2006	OH	Muskingum	39119	Oil (bbl)	Oil	Royalties	277.56
+2006	OH	Perry	39127	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	4233.47
+2006	OH	Perry	39127	Oil (bbl)	Oil	Royalties	20247.86
+2006	OH	Portage	39133	Oil & Gas		Other Roy Vals	16244.42
+2006	OH	Portage	39133	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	208691.15
+2006	OH	Portage	39133	Oil (bbl)	Oil	Royalties	57115.44
+2006	OH	Ross	39141	Oil & Gas		Rents	-2148.72
+2006	OH	Stark	39151	Oil & Gas		Other Roy Vals	2673.09
+2006	OH	Stark	39151	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	29373.17
+2006	OH	Stark	39151	Oil (bbl)	Oil	Royalties	2306.98
+2006	OH	Trumbull	39155	Oil & Gas		Rents	900
+2006	OH	Trumbull	39155	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	128358.67
+2006	OH	Trumbull	39155	Oil (bbl)	Oil	Royalties	2921.1
+2006	OH	Tuscarawas	39157	Oil & Gas		Rents	2
+2006	OH	Vinton	39163	Oil & Gas		Rents	-445.28
+2006	OH	Washington	39167	Oil & Gas		Other Revenues	50.62
+2006	OH	Washington	39167	Oil & Gas		Other Roy Vals	1750
+2006	OH	Washington	39167	Oil & Gas		Rents	1237.5
+2006	OH	Washington	39167	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	75468.39
+2006	OH	Washington	39167	Oil (bbl)	Oil	Royalties	26792.23
+2007	OH	Athens	39009	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	26027.2
+2007	OH	Athens	39009	Oil (bbl)	Oil	Royalties	3062.68
+2007	OH	Gallia	39053	Oil & Gas		Rents	178.5
+2007	OH	Hocking	39073	Oil & Gas		Rents	325.5
+2007	OH	Hocking	39073	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	4167.57
+2007	OH	Hocking	39073	Oil (bbl)	Oil	Royalties	36074.64
+2007	OH	Lawrence	39087	Oil & Gas		Rents	2337
+2007	OH	Lawrence	39087	Gas (mcf)	Processed (Residue) Gas	Royalties	3343.26
+2007	OH	Lawrence	39087	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	5895.7
+2007	OH	Mahoning	39099	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	79724.68
+2007	OH	Mahoning	39099	Oil (bbl)	Oil	Royalties	33481.22
+2007	OH	Monroe	39111	Oil & Gas		Other Revenues	400
+2007	OH	Monroe	39111	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	19545.87
+2007	OH	Monroe	39111	Oil (bbl)	Oil	Royalties	27399.45
+2007	OH	Muskingum	39119	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	3152.56
+2007	OH	Muskingum	39119	Oil (bbl)	Oil	Royalties	360.66
+2007	OH	Perry	39127	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	3758.66
+2007	OH	Perry	39127	Oil (bbl)	Oil	Royalties	23466.24
+2007	OH	Portage	39133	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	199849.91
+2007	OH	Portage	39133	Oil (bbl)	Oil	Royalties	67301.14
+2007	OH	Stark	39151	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	28835.97
+2007	OH	Stark	39151	Oil (bbl)	Oil	Royalties	2778.51
+2007	OH	Trumbull	39155	Oil & Gas		Rents	900
+2007	OH	Trumbull	39155	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	183081.19
+2007	OH	Trumbull	39155	Oil (bbl)	Oil	Royalties	5163.62
+2007	OH	Tuscarawas	39157	Oil & Gas		Rents	2
+2007	OH	Washington	39167	Oil & Gas		Other Revenues	648.03
+2007	OH	Washington	39167	Oil & Gas		Other Roy Vals	-420
+2007	OH	Washington	39167	Oil & Gas		Rents	1237.5
+2007	OH	Washington	39167	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	55999.5
+2007	OH	Washington	39167	Oil (bbl)	Oil	Royalties	34051.97
+2008	OH	Athens	39009	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	18793.11
+2008	OH	Athens	39009	Oil (bbl)	Oil	Royalties	4809.99
+2008	OH	Gallia	39053	Oil & Gas		Rents	238
+2008	OH	Hocking	39073	Oil & Gas		Rents	434
+2008	OH	Hocking	39073	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	4204.36
+2008	OH	Hocking	39073	Oil (bbl)	Oil	Royalties	60717.65
+2008	OH	Lawrence	39087	Oil & Gas		Other Roy Vals	-1350
+2008	OH	Lawrence	39087	Oil & Gas		Rents	3116
+2008	OH	Lawrence	39087	Gas (mcf)	Processed (Residue) Gas	Royalties	1121.87
+2008	OH	Lawrence	39087	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	4155.52
+2008	OH	Mahoning	39099	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	87737.96
+2008	OH	Mahoning	39099	Oil (bbl)	Oil	Royalties	44898.06
+2008	OH	Monroe	39111	Oil & Gas		Other Revenues	809.34
+2008	OH	Monroe	39111	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	31348.6
+2008	OH	Monroe	39111	Oil (bbl)	Oil	Royalties	45874.52
+2008	OH	Muskingum	39119	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	5813.71
+2008	OH	Muskingum	39119	Oil (bbl)	Oil	Royalties	6759.32
+2008	OH	Perry	39127	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	3591.57
+2008	OH	Perry	39127	Oil (bbl)	Oil	Royalties	37747.3
+2008	OH	Portage	39133	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	226821.09
+2008	OH	Portage	39133	Oil (bbl)	Oil	Royalties	97457.23
+2008	OH	Stark	39151	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	36271.27
+2008	OH	Stark	39151	Oil (bbl)	Oil	Royalties	4955.82
+2008	OH	Trumbull	39155	Oil & Gas		Rents	900
+2008	OH	Trumbull	39155	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	185281.78
+2008	OH	Trumbull	39155	Oil (bbl)	Oil	Royalties	6250.88
+2008	OH	Washington	39167	Oil & Gas		Other Revenues	436.15
+2008	OH	Washington	39167	Oil & Gas		Other Roy Vals	2490
+2008	OH	Washington	39167	Oil & Gas		Rents	1650
+2008	OH	Washington	39167	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	72204.53
+2008	OH	Washington	39167	Oil (bbl)	Oil	Royalties	53518.29
+2009	OH	Athens	39009	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	9037.1
+2009	OH	Athens	39009	Oil (bbl)	Oil	Royalties	4037.1
+2009	OH	Gallia	39053	Oil & Gas		Rents	238
+2009	OH	Hocking	39073	Oil & Gas		Rents	434
+2009	OH	Hocking	39073	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	1965.45
+2009	OH	Hocking	39073	Oil (bbl)	Oil	Royalties	29950.81
+2009	OH	Lawrence	39087	Oil & Gas		Rents	3116
+2009	OH	Lawrence	39087	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	1542.56
+2009	OH	Mahoning	39099	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	50599.15
+2009	OH	Mahoning	39099	Oil (bbl)	Oil	Royalties	22011.6
+2009	OH	Monroe	39111	Oil & Gas		Other Revenues	800
+2009	OH	Monroe	39111	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	16019.85
+2009	OH	Monroe	39111	Oil (bbl)	Oil	Royalties	17515.34
+2009	OH	Muskingum	39119	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	3129.61
+2009	OH	Muskingum	39119	Oil (bbl)	Oil	Royalties	1780.1
+2009	OH	Perry	39127	Oil & Gas		Other Roy Vals	-295
+2009	OH	Perry	39127	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	1780.13
+2009	OH	Perry	39127	Oil (bbl)	Oil	Royalties	16504.07
+2009	OH	Portage	39133	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	131153.14
+2009	OH	Portage	39133	Oil (bbl)	Oil	Royalties	105851.28
+2009	OH	Stark	39151	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	16398.08
+2009	OH	Stark	39151	Oil (bbl)	Oil	Royalties	2745.89
+2009	OH	Trumbull	39155	Oil & Gas		Rents	900
+2009	OH	Trumbull	39155	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	101014.68
+2009	OH	Trumbull	39155	Oil (bbl)	Oil	Royalties	2742.5
+2009	OH	Washington	39167	Oil & Gas		Other Revenues	293.79
+2009	OH	Washington	39167	Oil & Gas		Other Roy Vals	-325
+2009	OH	Washington	39167	Oil & Gas		Rents	1650
+2009	OH	Washington	39167	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	30540.99
+2009	OH	Washington	39167	Oil (bbl)	Oil	Royalties	23593.91
+2010	OH	Athens	39009	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	6248.06
+2010	OH	Athens	39009	Oil (bbl)	Oil	Royalties	4694.41
+2010	OH	Gallia	39053	Oil & Gas		Bonus	6442.5
+2010	OH	Gallia	39053	Oil & Gas		Rents	5072.5
+2010	OH	Hocking	39073	Oil & Gas		Rents	434
+2010	OH	Hocking	39073	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	966.7
+2010	OH	Hocking	39073	Oil (bbl)	Oil	Royalties	40193.91
+2010	OH	Lawrence	39087	Oil & Gas		Bonus	10883
+2010	OH	Lawrence	39087	Oil & Gas		Rents	11249
+2010	OH	Lawrence	39087	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	1408.47
+2010	OH	Mahoning	39099	Oil & Gas		Other Roy Vals	-0.32
+2010	OH	Mahoning	39099	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	49541.95
+2010	OH	Mahoning	39099	Oil (bbl)	Oil	Royalties	28845.16
+2010	OH	Monroe	39111	Oil & Gas		Bonus	92194.56
+2010	OH	Monroe	39111	Oil & Gas		Other Revenues	1013.42
+2010	OH	Monroe	39111	Oil & Gas		Rents	777.59
+2010	OH	Monroe	39111	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	15984.75
+2010	OH	Monroe	39111	Oil (bbl)	Oil	Royalties	15572.33
+2010	OH	Muskingum	39119	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	2389.45
+2010	OH	Muskingum	39119	Oil (bbl)	Oil	Royalties	2872.63
+2010	OH	Perry	39127	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	1558.97
+2010	OH	Perry	39127	Oil (bbl)	Oil	Royalties	16912.05
+2010	OH	Portage	39133	Oil & Gas		Other Roy Vals	-382.41
+2010	OH	Portage	39133	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	128286.15
+2010	OH	Portage	39133	Oil (bbl)	Oil	Royalties	74280.42
+2010	OH	Stark	39151	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	17341.67
+2010	OH	Stark	39151	Oil (bbl)	Oil	Royalties	2318
+2010	OH	Trumbull	39155	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	80516.2
+2010	OH	Trumbull	39155	Oil (bbl)	Oil	Royalties	5597.78
+2010	OH	Washington	39167	Oil & Gas		Bonus	53245.44
+2010	OH	Washington	39167	Oil & Gas		Other Revenues	1550
+2010	OH	Washington	39167	Oil & Gas		Other Roy Vals	-10
+2010	OH	Washington	39167	Oil & Gas		Rents	1886.41
+2010	OH	Washington	39167	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	35094.3
+2010	OH	Washington	39167	Oil (bbl)	Oil	Royalties	32806.35
+2011	OH	Athens	39009	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	6117.46
+2011	OH	Athens	39009	Oil (bbl)	Oil	Royalties	2597.35
+2011	OH	Gallia	39053	Oil & Gas		Rents	5072.5
+2011	OH	Hocking	39073	Oil & Gas		Rents	11123.22
+2011	OH	Hocking	39073	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	837.87
+2011	OH	Hocking	39073	Oil (bbl)	Oil	Royalties	32350.05
+2011	OH	Lawrence	39087	Oil & Gas		Rents	11249
+2011	OH	Lawrence	39087	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	9519.97
+2011	OH	Mahoning	39099	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	42010.75
+2011	OH	Mahoning	39099	Oil (bbl)	Oil	Royalties	36084.11
+2011	OH	Monroe	39111	Oil & Gas		Other Revenues	900
+2011	OH	Monroe	39111	Oil & Gas		Rents	774.59
+2011	OH	Monroe	39111	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	13058.15
+2011	OH	Monroe	39111	Oil (bbl)	Oil	Royalties	18780.49
+2011	OH	Muskingum	39119	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	1864.63
+2011	OH	Muskingum	39119	Oil (bbl)	Oil	Royalties	1538.04
+2011	OH	Perry	39127	Oil & Gas		Bonus	78
+2011	OH	Perry	39127	Oil & Gas		Rents	58.5
+2011	OH	Perry	39127	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	1328.58
+2011	OH	Perry	39127	Oil (bbl)	Oil	Royalties	36303.21
+2011	OH	Portage	39133	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	105977.2
+2011	OH	Portage	39133	Oil (bbl)	Oil	Royalties	73768.44
+2011	OH	Ross	39141	Oil & Gas		Rents	36709.13
+2011	OH	Stark	39151	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	13467.82
+2011	OH	Stark	39151	Oil (bbl)	Oil	Royalties	3050.5
+2011	OH	Trumbull	39155	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	79791.45
+2011	OH	Trumbull	39155	Oil (bbl)	Oil	Royalties	2565.17
+2011	OH	Vinton	39163	Oil & Gas		Rents	12751.65
+2011	OH	Washington	39167	Oil & Gas		Other Revenues	1650
+2011	OH	Washington	39167	Oil & Gas		Rents	1886.41
+2011	OH	Washington	39167	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	39515.83
+2011	OH	Washington	39167	Oil (bbl)	Oil	Royalties	43596.6
+2012	OH	Athens	39009	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	3564.24
+2012	OH	Athens	39009	Oil (bbl)	Oil	Royalties	3699.05
+2012	OH	Gallia	39053	Oil & Gas		Rents	5270.5
+2012	OH	Hocking	39073	Oil & Gas		Rents	3012.07
+2012	OH	Hocking	39073	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	496.46
+2012	OH	Hocking	39073	Oil (bbl)	Oil	Royalties	26278.36
+2012	OH	Lawrence	39087	Oil & Gas		Rents	11249
+2012	OH	Lawrence	39087	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	1234.6
+2012	OH	Lawrence	39087	Oil (bbl)	Oil	Royalties	833.16
+2012	OH	Mahoning	39099	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	25120.13
+2012	OH	Mahoning	39099	Oil (bbl)	Oil	Royalties	35362.88
+2012	OH	Monroe	39111	Oil & Gas		Other Revenues	1508.6
+2012	OH	Monroe	39111	Oil & Gas		Rents	774.59
+2012	OH	Monroe	39111	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	23317.13
+2012	OH	Monroe	39111	Oil (bbl)	Oil	Royalties	24579.98
+2012	OH	Muskingum	39119	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	1100.51
+2012	OH	Muskingum	39119	Oil (bbl)	Oil	Royalties	3125.25
+2012	OH	Perry	39127	Oil & Gas		Rents	58.5
+2012	OH	Perry	39127	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	930.09
+2012	OH	Perry	39127	Oil (bbl)	Oil	Royalties	10531.57
+2012	OH	Portage	39133	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	72279.39
+2012	OH	Portage	39133	Oil (bbl)	Oil	Royalties	83941.28
+2012	OH	Ross	39141	Oil & Gas		Rents	12236.38
+2012	OH	Stark	39151	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	9319.15
+2012	OH	Stark	39151	Oil (bbl)	Oil	Royalties	1947.79
+2012	OH	Trumbull	39155	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	33086.51
+2012	OH	Trumbull	39155	Oil (bbl)	Oil	Royalties	1402.21
+2012	OH	Vinton	39163	Oil & Gas		Rents	2570.55
+2012	OH	Washington	39167	Oil & Gas		Other Revenues	2537.66
+2012	OH	Washington	39167	Oil & Gas		Rents	1886.41
+2012	OH	Washington	39167	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	23810.42
+2012	OH	Washington	39167	Oil (bbl)	Oil	Royalties	94125.61
+2013	OH	Athens	39009	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	3996.23
+2013	OH	Athens	39009	Oil (bbl)	Oil	Royalties	1682.82
+2013	OH	Gallia	39053	Oil & Gas		Rents	5032.5
+2013	OH	Hocking	39073	Oil & Gas		Rents	985
+2013	OH	Hocking	39073	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	323.12
+2013	OH	Hocking	39073	Oil (bbl)	Oil	Royalties	40559.28
+2013	OH	Lawrence	39087	Oil & Gas		Other Roy Vals	115
+2013	OH	Lawrence	39087	Oil & Gas		Rents	8181.75
+2013	OH	Lawrence	39087	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	366.27
+2013	OH	Lawrence	39087	Oil (bbl)	Oil	Royalties	513.81
+2013	OH	Licking	39089	Oil (bbl)	Oil	Royalties	26135.4
+2013	OH	Mahoning	39099	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	33983.69
+2013	OH	Mahoning	39099	Oil (bbl)	Oil	Royalties	33053.35
+2013	OH	Monroe	39111	Oil & Gas		Other Revenues	3277.33
+2013	OH	Monroe	39111	Oil & Gas		Other Roy Vals	3397.28
+2013	OH	Monroe	39111	Oil & Gas		Rents	562.5
+2013	OH	Monroe	39111	Gas (mcf)	Processed (Residue) Gas	Royalties	401.95
+2013	OH	Monroe	39111	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	8751.61
+2013	OH	Monroe	39111	Oil (bbl)	Oil	Royalties	9887.37
+2013	OH	Muskingum	39119	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	1292.87
+2013	OH	Muskingum	39119	Oil (bbl)	Oil	Royalties	1531.23
+2013	OH	Perry	39127	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	980.39
+2013	OH	Perry	39127	Oil (bbl)	Oil	Royalties	5311.75
+2013	OH	Portage	39133	Oil & Gas		Other Revenues	112.01
+2013	OH	Portage	39133	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	90205.88
+2013	OH	Portage	39133	Oil (bbl)	Oil	Royalties	86748.97
+2013	OH	Stark	39151	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	12648.63
+2013	OH	Stark	39151	Oil (bbl)	Oil	Royalties	3215.68
+2013	OH	Trumbull	39155	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	44255.91
+2013	OH	Trumbull	39155	Oil (bbl)	Oil	Royalties	2384.83
+2013	OH	Vinton	39163	Oil & Gas		Rents	1680
+2013	OH	Washington	39167	Oil & Gas		Other Revenues	10853.34
+2013	OH	Washington	39167	Oil & Gas		Other Roy Vals	1163.72
+2013	OH	Washington	39167	Oil & Gas		Rents	882.02
+2013	OH	Washington	39167	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	14319.28
+2013	OH	Washington	39167	Oil (bbl)	Oil	Royalties	24398.49
+2010	OH	Athens	39009	Coal (ton)	Coal	Royalties	3372.86

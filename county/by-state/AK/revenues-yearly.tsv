@@ -1,92 +1,111 @@
-Year	State	County	FIPS	Commodity	type	Revenue
-2004	AK	Kenai (Pre)	02132	Oil & Gas	Other Revenues	80
-2004	AK	Kenai (Pre)	02132	Gas	Other Roy Vals	45838.26
-2004	AK	Kenai (Pre)	02132	Oil & Gas	Other Roy Vals	71047.76
-2004	AK	Kenai (Pre)	02132	Gas	Royalties	895.46
-2004	AK	Kenai (Pre)	02132	Gas	Royalties	89206.06
-2004	AK	Kenai (Pre)	02132	Gas	Royalties	2045789.06
-2004	AK	Kenai (Pre)	02132	Oil	Royalties	1851.13
-2004	AK	Kenai (Post)	02133	Oil & Gas	Other Revenues	8560.85
-2004	AK	Kenai (Post)	02133	Gas	Other Roy Vals	736.28
-2004	AK	Kenai (Post)	02133	Gas	Royalties	16658.38
-2004	AK	Tyonek	02283	Gas	Royalties	70518.6
-2005	AK	Kenai (Pre)	02132	Oil & Gas	Other Revenues	-2.77
-2005	AK	Kenai (Pre)	02132	Gas	Other Roy Vals	48469.03
-2005	AK	Kenai (Pre)	02132	Oil & Gas	Other Roy Vals	17542.04
-2005	AK	Kenai (Pre)	02132	Gas	Royalties	924.56
-2005	AK	Kenai (Pre)	02132	Gas	Royalties	-21247.69
-2005	AK	Kenai (Pre)	02132	Gas	Royalties	2527324.91
-2005	AK	Kenai (Pre)	02132	Oil	Royalties	3179.72
-2005	AK	Kenai (Post)	02133	Oil & Gas	Other Revenues	12016.2
-2005	AK	Tyonek	02283	Gas	Royalties	-16796.59
-2006	AK	Kenai (Pre)	02132	Gas	Other Roy Vals	30288.28
-2006	AK	Kenai (Pre)	02132	Oil & Gas	Other Roy Vals	1684.9
-2006	AK	Kenai (Pre)	02132	Gas	Royalties	381.91
-2006	AK	Kenai (Pre)	02132	Gas	Royalties	54449.18
-2006	AK	Kenai (Pre)	02132	Gas	Royalties	2922854.06
-2006	AK	Kenai (Pre)	02132	Oil	Royalties	3617.02
-2006	AK	Kenai (Post)	02133	Oil & Gas	Other Revenues	78027.39
-2006	AK	Kenai (Post)	02133	Gas	Royalties	1182.05
-2006	AK	Tyonek	02283	Gas	Royalties	43042.81
-2007	AK	Kenai (Pre)	02132	Gas	Other Roy Vals	79166.08
-2007	AK	Kenai (Pre)	02132	Oil & Gas	Other Roy Vals	12141.06
-2007	AK	Kenai (Pre)	02132	Gas	Royalties	94.95
-2007	AK	Kenai (Pre)	02132	Gas	Royalties	48335.46
-2007	AK	Kenai (Pre)	02132	Gas	Royalties	3416907.14
-2007	AK	Kenai (Pre)	02132	Oil	Royalties	3104.35
-2007	AK	Kenai (Post)	02133	Oil & Gas	Other Revenues	49681.52
-2007	AK	Tyonek	02283	Gas	Royalties	38209.84
-2008	AK	Harrison Bay	02103	Oil	Royalties	79698.34
-2008	AK	Kenai (Pre)	02132	Gas	Other Roy Vals	12088.22
-2008	AK	Kenai (Pre)	02132	Oil & Gas	Other Roy Vals	-9020.05
-2008	AK	Kenai (Pre)	02132	Gas	Royalties	110.78
-2008	AK	Kenai (Pre)	02132	Gas	Royalties	26641.8
-2008	AK	Kenai (Pre)	02132	Gas	Royalties	3042244.64
-2008	AK	Kenai (Pre)	02132	Oil	Royalties	3926.91
-2008	AK	Kenai (Post)	02133	Oil & Gas	Other Revenues	59271.91
-2008	AK	Tyonek	02283	Gas	Royalties	21060.7
-2009	AK	Harrison Bay	02103	Oil & Gas	Other Revenues	142880
-2009	AK	Harrison Bay	02103	Oil	Royalties	11178.08
-2009	AK	Kenai (Pre)	02132	Gas	Other Roy Vals	197900.59
-2009	AK	Kenai (Pre)	02132	Oil & Gas	Other Roy Vals	-91344.37
-2009	AK	Kenai (Pre)	02132	Gas	Royalties	10.57
-2009	AK	Kenai (Pre)	02132	Gas	Royalties	62308.62
-2009	AK	Kenai (Pre)	02132	Gas	Royalties	4260937.75
-2009	AK	Kenai (Pre)	02132	Oil	Royalties	1767.28
-2009	AK	Kenai (Post)	02133	Oil & Gas	Other Revenues	91909.99
-2009	AK	Tyonek	02283	Gas	Royalties	49255.8
-2010	AK	Harrison Bay	02103	Oil & Gas	Other Revenues	98535
-2010	AK	Harrison Bay	02103	Oil	Royalties	244483.88
-2010	AK	Kenai (Pre)	02132	Gas	Other Roy Vals	-3630.45
-2010	AK	Kenai (Pre)	02132	Oil & Gas	Other Roy Vals	55597.51
-2010	AK	Kenai (Pre)	02132	Gas	Royalties	1.46
-2010	AK	Kenai (Pre)	02132	Gas	Royalties	2874720.76
-2010	AK	Kenai (Pre)	02132	Oil	Royalties	3179.05
-2010	AK	Kenai (Post)	02133	Oil & Gas	Other Revenues	45532.99
-2010	AK	Kenai (Post)	02133	Oil & Gas	Other Roy Vals	5563.22
-2011	AK	Harrison Bay	02103	Oil & Gas	Other Revenues	98535
-2011	AK	Harrison Bay	02103	Oil	Royalties	27456.28
-2011	AK	Kenai (Pre)	02132	Gas	Other Roy Vals	-11616.04
-2011	AK	Kenai (Pre)	02132	Oil & Gas	Other Roy Vals	852.98
-2011	AK	Kenai (Pre)	02132	Gas	Royalties	197.32
-2011	AK	Kenai (Pre)	02132	Gas	Royalties	2187237.27
-2011	AK	Kenai (Pre)	02132	Oil	Royalties	4099.6
-2011	AK	Kenai (Post)	02133	Oil & Gas	Other Revenues	118929.37
-2012	AK	Harrison Bay	02103	Oil & Gas	Other Revenues	98535
-2012	AK	Harrison Bay	02103	Oil	Royalties	34960.25
-2012	AK	Kenai (Pre)	02132	Gas	Other Roy Vals	-7972.97
-2012	AK	Kenai (Pre)	02132	Oil & Gas	Other Roy Vals	-29001.33
-2012	AK	Kenai (Pre)	02132	Gas	Royalties	-197.32
-2012	AK	Kenai (Pre)	02132	Gas	Royalties	-189.31
-2012	AK	Kenai (Pre)	02132	Gas	Royalties	1270866.54
-2012	AK	Kenai (Pre)	02132	Oil	Royalties	314.12
-2012	AK	Kenai (Post)	02133	Oil & Gas	Other Revenues	128073.15
-2012	AK	Kenai (Post)	02133	Oil & Gas	Other Roy Vals	-98
-2013	AK	Harrison Bay	02103	Oil & Gas	Other Revenues	98535
-2013	AK	Harrison Bay	02103	Oil	Royalties	49189.68
-2013	AK	Kenai (Pre)	02132	Gas	Other Roy Vals	-147.46
-2013	AK	Kenai (Pre)	02132	Gas	Royalties	722543.54
-2013	AK	Kenai (Pre)	02132	Oil	Royalties	5139.59
-2013	AK	Kenai (Post)	02133	Oil & Gas	Other Revenues	83867.71
-2013	AK	Kenai (Post)	02133	Gas	Other Roy Vals	-1063.95
-2013	AK	Kenai (Post)	02133	Gas	Royalties	-23889.83
+Year	State	County	FIPS	Commodity	Product	Type	Revenue
+2004	AK	Kenai Peninsula Borough	02122	Oil & Gas		Other Revenues	10052.54
+2004	AK	Kenai Peninsula Borough	02122	Gas (mcf)	Unprocessed (Wet) Gas	Other Roy Vals	224935.2
+2004	AK	Kenai Peninsula Borough	02122	Oil & Gas		Other Roy Vals	265932.36
+2004	AK	Kenai Peninsula Borough	02122	Oil & Gas		Rents	7942.54
+2004	AK	Kenai Peninsula Borough	02122	Gas (mcf)	Processed (Residue) Gas	Royalties	159656.28
+2004	AK	Kenai Peninsula Borough	02122	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	10243750.68
+2004	AK	Kenai Peninsula Borough	02122	NGL (gal)	Gas Plant Products	Royalties	371339.82
+2004	AK	Kenai Peninsula Borough	02122	Oil (bbl)	Oil	Royalties	944070.81
+2004	AK	North Slope Borough	02185	Oil & Gas		Bonus	53904491
+2004	AK	North Slope Borough	02185	Coal		Rents	2560
+2004	AK	North Slope Borough	02185	Oil & Gas		Rents	8886528
+2005	AK	Kenai Peninsula Borough	02122	Oil & Gas		Other Revenues	14469.52
+2005	AK	Kenai Peninsula Borough	02122	Gas (mcf)	Unprocessed (Wet) Gas	Other Roy Vals	267377.24
+2005	AK	Kenai Peninsula Borough	02122	Oil & Gas		Other Roy Vals	103709.95
+2005	AK	Kenai Peninsula Borough	02122	Oil & Gas		Rents	7907.12
+2005	AK	Kenai Peninsula Borough	02122	Gas (mcf)	Processed (Residue) Gas	Royalties	-38044.28
+2005	AK	Kenai Peninsula Borough	02122	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	11584825.51
+2005	AK	Kenai Peninsula Borough	02122	NGL (gal)	Gas Plant Products	Royalties	337028.07
+2005	AK	Kenai Peninsula Borough	02122	Oil (bbl)	Oil	Royalties	1440869.2
+2005	AK	North Slope Borough	02185	Coal		Rents	7680
+2005	AK	North Slope Borough	02185	Oil & Gas		Rents	8966257
+2006	AK	Kenai Peninsula Borough	02122	Oil & Gas		Other Revenues	80025.82
+2006	AK	Kenai Peninsula Borough	02122	Oil (bbl)	Oil	Other Revenues	-11.6
+2006	AK	Kenai Peninsula Borough	02122	Gas (mcf)	Unprocessed (Wet) Gas	Other Roy Vals	180625.92
+2006	AK	Kenai Peninsula Borough	02122	Oil & Gas		Other Roy Vals	-27895.87
+2006	AK	Kenai Peninsula Borough	02122	Oil & Gas		Rents	5517.41
+2006	AK	Kenai Peninsula Borough	02122	Gas (mcf)	Processed (Residue) Gas	Royalties	97491.99
+2006	AK	Kenai Peninsula Borough	02122	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	13895828.69
+2006	AK	Kenai Peninsula Borough	02122	NGL (gal)	Gas Plant Products	Royalties	139228.34
+2006	AK	Kenai Peninsula Borough	02122	Oil (bbl)	Oil	Royalties	1810092.43
+2006	AK	North Slope Borough	02185	Coal		Rents	5120
+2006	AK	North Slope Borough	02185	Oil & Gas		Rents	8961282
+2007	AK	Kenai Peninsula Borough	02122	Oil & Gas		Other Revenues	50387.43
+2007	AK	Kenai Peninsula Borough	02122	Gas (mcf)	Unprocessed (Wet) Gas	Other Roy Vals	107431.34
+2007	AK	Kenai Peninsula Borough	02122	Oil & Gas		Other Roy Vals	36383.43
+2007	AK	Kenai Peninsula Borough	02122	Oil & Gas		Rents	18476.04
+2007	AK	Kenai Peninsula Borough	02122	Gas (mcf)	Processed (Residue) Gas	Royalties	86545.3
+2007	AK	Kenai Peninsula Borough	02122	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	15306513.18
+2007	AK	Kenai Peninsula Borough	02122	NGL (gal)	Gas Plant Products	Royalties	34629.51
+2007	AK	Kenai Peninsula Borough	02122	Oil (bbl)	Oil	Royalties	1587414.5
+2007	AK	North Slope Borough	02185	Oil & Gas		Bonus	13763715
+2007	AK	North Slope Borough	02185	Coal		Rents	5120
+2007	AK	North Slope Borough	02185	Oil & Gas		Rents	11248990
+2008	AK	Kenai Peninsula Borough	02122	Oil & Gas		Other Revenues	59545.04
+2008	AK	Kenai Peninsula Borough	02122	Gas (mcf)	Unprocessed (Wet) Gas	Other Roy Vals	35338.98
+2008	AK	Kenai Peninsula Borough	02122	Oil & Gas		Other Roy Vals	-10677.22
+2008	AK	Kenai Peninsula Borough	02122	Oil & Gas		Rents	10142.55
+2008	AK	Kenai Peninsula Borough	02122	Gas (mcf)	Processed (Residue) Gas	Royalties	47702.5
+2008	AK	Kenai Peninsula Borough	02122	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	14654902.74
+2008	AK	Kenai Peninsula Borough	02122	NGL (gal)	Gas Plant Products	Royalties	40379.74
+2008	AK	Kenai Peninsula Borough	02122	Oil (bbl)	Oil	Royalties	1981467.17
+2008	AK	North Slope Borough	02185	Coal		Rents	5120
+2008	AK	North Slope Borough	02185	Oil & Gas		Rents	11909087
+2008	AK	North Slope Borough	02185	Oil (bbl)	Oil	Royalties	79698.34
+2009	AK	Kenai Peninsula Borough	02122	Oil & Gas		Other Revenues	92185.1
+2009	AK	Kenai Peninsula Borough	02122	Gas (mcf)	Unprocessed (Wet) Gas	Other Roy Vals	669201.79
+2009	AK	Kenai Peninsula Borough	02122	Oil & Gas		Other Roy Vals	-282003.13
+2009	AK	Kenai Peninsula Borough	02122	Oil & Gas		Rents	-8355.84
+2009	AK	Kenai Peninsula Borough	02122	Gas (mcf)	Processed (Residue) Gas	Royalties	111564.42
+2009	AK	Kenai Peninsula Borough	02122	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	18073078.7
+2009	AK	Kenai Peninsula Borough	02122	NGL (gal)	Gas Plant Products	Royalties	3850.75
+2009	AK	Kenai Peninsula Borough	02122	Oil (bbl)	Oil	Royalties	950186.26
+2009	AK	North Slope Borough	02185	Oil & Gas		Bonus	21411357
+2009	AK	North Slope Borough	02185	Oil & Gas		Other Revenues	142880
+2009	AK	North Slope Borough	02185	Oil & Gas		Rents	10516572
+2009	AK	North Slope Borough	02185	Oil (bbl)	Oil	Royalties	11178.08
+2010	AK	Kenai Peninsula Borough	02122	Oil & Gas		Other Revenues	45810.26
+2010	AK	Kenai Peninsula Borough	02122	Gas (mcf)	Unprocessed (Wet) Gas	Other Roy Vals	-12252.35
+2010	AK	Kenai Peninsula Borough	02122	Oil & Gas		Other Roy Vals	1433692.06
+2010	AK	Kenai Peninsula Borough	02122	Oil & Gas		Rents	4687.3
+2010	AK	Kenai Peninsula Borough	02122	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	12684633.21
+2010	AK	Kenai Peninsula Borough	02122	NGL (gal)	Gas Plant Products	Royalties	529.03
+2010	AK	Kenai Peninsula Borough	02122	Oil (bbl)	Oil	Royalties	1523279.95
+2010	AK	North Slope Borough	02185	Oil & Gas		Bonus	23381.92
+2010	AK	North Slope Borough	02185	Oil & Gas		Other Revenues	98535
+2010	AK	North Slope Borough	02185	Oil & Gas		Rents	6910419.14
+2010	AK	North Slope Borough	02185	Oil (bbl)	Oil	Royalties	244483.88
+2011	AK	Kenai Peninsula Borough	02122	Oil & Gas		Other Revenues	119217.64
+2011	AK	Kenai Peninsula Borough	02122	Gas (mcf)	Unprocessed (Wet) Gas	Other Roy Vals	-39283.85
+2011	AK	Kenai Peninsula Borough	02122	Oil & Gas		Other Roy Vals	-1451808.71
+2011	AK	Kenai Peninsula Borough	02122	Oil & Gas		Rents	6695.88
+2011	AK	Kenai Peninsula Borough	02122	Gas (mcf)	Coal Bed Methane	Royalties	197.32
+2011	AK	Kenai Peninsula Borough	02122	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	10163184.54
+2011	AK	Kenai Peninsula Borough	02122	Oil (bbl)	Oil	Royalties	1995532.4
+2011	AK	North Slope Borough	02185	Oil & Gas		Bonus	639996
+2011	AK	North Slope Borough	02185	Oil & Gas		Other Revenues	98535
+2011	AK	North Slope Borough	02185	Oil & Gas		Rents	5106640.72
+2011	AK	North Slope Borough	02185	Oil (bbl)	Oil	Royalties	27456.28
+2012	AK	Kenai Peninsula Borough	02122	Oil & Gas		Other Revenues	134530.86
+2012	AK	Kenai Peninsula Borough	02122	Gas (mcf)	Unprocessed (Wet) Gas	Other Roy Vals	-26964.4
+2012	AK	Kenai Peninsula Borough	02122	Oil & Gas		Other Roy Vals	231851.41
+2012	AK	Kenai Peninsula Borough	02122	Oil & Gas		Rents	8623.75
+2012	AK	Kenai Peninsula Borough	02122	Gas (mcf)	Coal Bed Methane	Royalties	-197.32
+2012	AK	Kenai Peninsula Borough	02122	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	9033955.41
+2012	AK	Kenai Peninsula Borough	02122	Oil (bbl)	Oil	Royalties	2274199.8
+2012	AK	North Slope Borough	02185	Oil & Gas		Bonus	4811477
+2012	AK	North Slope Borough	02185	Oil & Gas		Other Revenues	98535
+2012	AK	North Slope Borough	02185	Oil & Gas		Rents	4863069.72
+2012	AK	North Slope Borough	02185	Oil (bbl)	Oil	Royalties	34960.25
+2013	AK	Kenai Peninsula Borough	02122	Oil & Gas		Other Revenues	83867.71
+2013	AK	Kenai Peninsula Borough	02122	Gas (mcf)	Unprocessed (Wet) Gas	Other Roy Vals	-4658.55
+2013	AK	Kenai Peninsula Borough	02122	Oil & Gas		Other Roy Vals	-251482.74
+2013	AK	Kenai Peninsula Borough	02122	Geothermal		Rents	7680
+2013	AK	Kenai Peninsula Borough	02122	Oil & Gas		Rents	12409.77
+2013	AK	Kenai Peninsula Borough	02122	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	6988259.54
+2013	AK	Kenai Peninsula Borough	02122	Oil (bbl)	Oil	Royalties	6549021
+2013	AK	North Slope Borough	02185	Oil & Gas		Bonus	1058899
+2013	AK	North Slope Borough	02185	Oil & Gas		Other Revenues	98535
+2013	AK	North Slope Borough	02185	Oil & Gas		Rents	5310452.72
+2013	AK	North Slope Borough	02185	Oil (bbl)	Oil	Royalties	49189.68

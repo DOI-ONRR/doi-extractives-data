@@ -1,20 +1,223 @@
-Year	State	County	FIPS	Commodity	type	Revenue
-2004	ID	Bingham	16011	Phosphate	Other Revenues	2699.54
-2004	ID	Caribou	16029	Phosphate	Other Revenues	37096.46
-2005	ID	Bear Lake	16007	Phosphate	Other Revenues	198
-2005	ID	Caribou	16029	Phosphate	Other Revenues	1080
-2006	ID	Bingham	16011	Phosphate	Other Revenues	480
-2006	ID	Caribou	16029	Phosphate	Other Revenues	18222
-2006	ID	Clark	16033	Phosphate	Other Revenues	666
-2006	ID	Latah	16057	Hardrock	Other Revenues	900
-2007	ID	Caribou	16029	Phosphate	Other Revenues	55191
-2008	ID	Bingham	16011	Phosphate	Other Revenues	1047.54
-2008	ID	Caribou	16029	Phosphate	Other Revenues	21799.46
-2009	ID	Caribou	16029	Phosphate	Other Revenues	19851
-2010	ID	Caribou	16029	Phosphate	Other Revenues	15546
-2011	ID	Caribou	16029	Phosphate	Other Revenues	2877
-2012	ID	Bear Lake	16007	Phosphate	Other Revenues	198
-2012	ID	Caribou	16029	Phosphate	Other Revenues	2328
-2013	ID	Bear Lake	16007	Phosphate	Other Revenues	198
-2013	ID	Caribou	16029	Phosphate	Other Revenues	5448
-2013	ID	Clearwater	16035	Hardrock	Royalties	3.28
+Year	State	County	FIPS	Commodity	Product	Type	Revenue
+2004	ID	Bear Lake	16007	Oil & Gas		Rents	7605.5
+2004	ID	Bingham	16011	Phosphate		Other Revenues	2699.54
+2004	ID	Bingham	16011	Geothermal		Rents	133.64
+2004	ID	Bingham	16011	Phosphate		Rents	-3781.41
+2004	ID	Boise	16015	Gold		Rents	39
+2004	ID	Bonneville	16019	Geothermal		Rents	160.36
+2004	ID	Caribou	16029	Phosphate		Bonus	563300
+2004	ID	Caribou	16029	Phosphate		Other Revenues	37096.46
+2004	ID	Caribou	16029	Geothermal		Rents	433
+2004	ID	Caribou	16029	Phosphate		Rents	-7384.09
+2004	ID	Clearwater	16035	Hardrock		Rents	42
+2004	ID	Latah	16057	Gemstones		Rents	80
+2004	ID	Washington	16087	Geothermal		Rents	1740
+2005	ID	Bear Lake	16007	Phosphate		Other Revenues	198
+2005	ID	Bear Lake	16007	Oil & Gas		Rents	1730.5
+2005	ID	Bingham	16011	Geothermal		Rents	133.64
+2005	ID	Bingham	16011	Phosphate		Rents	-2857.18
+2005	ID	Bonneville	16019	Geothermal		Rents	160.36
+2005	ID	Caribou	16029	Phosphate		Other Revenues	1080
+2005	ID	Caribou	16029	Geothermal		Rents	433
+2005	ID	Caribou	16029	Phosphate		Rents	-16833.82
+2005	ID	Latah	16057	Gemstones		Rents	80
+2005	ID	Latah	16057	Hardrock		Rents	159
+2005	ID	Washington	16087	Geothermal		Rents	1740
+2006	ID	Bear Lake	16007	Oil & Gas		Rents	2712.5
+2006	ID	Bear Lake	16007	Phosphate		Rents	264
+2006	ID	Bingham	16011	Phosphate		Other Revenues	480
+2006	ID	Bingham	16011	Phosphate		Rents	440
+2006	ID	Caribou	16029	Phosphate		Other Revenues	18222
+2006	ID	Caribou	16029	Phosphate		Rents	18765
+2006	ID	Clark	16033	Phosphate		Other Revenues	666
+2006	ID	Clearwater	16035	Hardrock		Rents	20
+2006	ID	Latah	16057	Hardrock		Other Revenues	900
+2006	ID	Latah	16057	Gemstones		Rents	80
+2006	ID	Latah	16057	Hardrock		Rents	-200
+2007	ID	Bear Lake	16007	Oil & Gas		Bonus	6444
+2007	ID	Bear Lake	16007	Oil & Gas		Rents	16766
+2007	ID	Bingham	16011	Geothermal		Rents	267.28
+2007	ID	Bingham	16011	Phosphate		Rents	836
+2007	ID	Boise	16015	Hardrock		Rents	117
+2007	ID	Bonneville	16019	Oil & Gas		Bonus	79617
+2007	ID	Bonneville	16019	Geothermal		Rents	320.72
+2007	ID	Bonneville	16019	Oil & Gas		Rents	12411
+2007	ID	Caribou	16029	Phosphate		Other Revenues	55191
+2007	ID	Caribou	16029	Geothermal		Rents	866
+2007	ID	Caribou	16029	Phosphate		Rents	-9710
+2007	ID	Cassia	16031	Geothermal		Bonus	4272250
+2007	ID	Cassia	16031	Geothermal		Rents	14328
+2007	ID	Clearwater	16035	Hardrock		Rents	62
+2007	ID	Latah	16057	Gemstones		Rents	80
+2007	ID	Latah	16057	Hardrock		Rents	159
+2007	ID	Washington	16087	Geothermal		Bonus	1435500
+2007	ID	Washington	16087	Geothermal		Rents	3480
+2008	ID	Bear Lake	16007	Oil & Gas		Rents	8423
+2008	ID	Bear Lake	16007	Phosphate		Rents	-66
+2008	ID	Bingham	16011	Phosphate		Other Revenues	1047.54
+2008	ID	Bingham	16011	Geothermal		Rents	133.64
+2008	ID	Bonneville	16019	Geothermal		Rents	160.36
+2008	ID	Bonneville	16019	Oil & Gas		Rents	8496
+2008	ID	Caribou	16029	Phosphate		Other Revenues	21799.46
+2008	ID	Caribou	16029	Geothermal		Rents	1703.3
+2008	ID	Caribou	16029	Phosphate		Rents	2560
+2008	ID	Cassia	16031	Geothermal		Rents	23122.77
+2008	ID	Clark	16033	Phosphate		Rents	2538
+2008	ID	Clearwater	16035	Hardrock		Rents	58
+2008	ID	Jefferson	16051	Oil & Gas		Bonus	39869.75
+2008	ID	Jefferson	16051	Oil & Gas		Rents	23980.5
+2008	ID	Latah	16057	Garnet		Rents	120
+2008	ID	Latah	16057	Gemstones		Rents	80
+2008	ID	Latah	16057	Hardrock		Rents	318
+2008	ID	Shoshone	16079	Hardrock		Rents	60
+2008	ID	Washington	16087	Geothermal		Rents	5754.63
+2009	ID	Bear Lake	16007	Oil & Gas		Rents	8423
+2009	ID	Bear Lake	16007	Phosphate		Rents	66
+2009	ID	Bingham	16011	Geothermal		Rents	133.64
+2009	ID	Bingham	16011	Phosphate		Rents	-836
+2009	ID	Boise	16015	Hardrock		Rents	156
+2009	ID	Bonneville	16019	Geothermal		Rents	160.36
+2009	ID	Bonneville	16019	Oil & Gas		Rents	6205.5
+2009	ID	Caribou	16029	Phosphate		Other Revenues	19851
+2009	ID	Caribou	16029	Geothermal		Rents	1703
+2009	ID	Caribou	16029	Phosphate		Rents	2667
+2009	ID	Cassia	16031	Geothermal		Bonus	42054
+2009	ID	Cassia	16031	Geothermal		Rents	59000
+2009	ID	Clark	16033	Phosphate		Rents	-3384
+2009	ID	Clearwater	16035	Hardrock		Rents	20
+2009	ID	Jefferson	16051	Oil & Gas		Rents	23980.5
+2009	ID	Shoshone	16079	Hardrock		Rents	60
+2009	ID	Washington	16087	Geothermal		Rents	5220
+2010	ID	Bear Lake	16007	Oil & Gas		Rents	8679
+2010	ID	Bear Lake	16007	Phosphate		Rents	66
+2010	ID	Bingham	16011	Geothermal		Rents	133.64
+2010	ID	Boise	16015	Hardrock		Rents	39
+2010	ID	Bonneville	16019	Geothermal		Rents	160.36
+2010	ID	Bonneville	16019	Oil & Gas		Rents	6205.5
+2010	ID	Caribou	16029	Phosphate		Bonus	6892
+2010	ID	Caribou	16029	Phosphate		Other Revenues	15546
+2010	ID	Caribou	16029	Geothermal		Rents	433
+2010	ID	Caribou	16029	Phosphate		Rents	-947
+2010	ID	Cassia	16031	Geothermal		Rents	36477
+2010	ID	Clark	16033	Phosphate		Rents	846
+2010	ID	Clearwater	16035	Hardrock		Rents	20
+2010	ID	Jefferson	16051	Oil & Gas		Rents	-4470
+2010	ID	Latah	16057	Garnet		Rents	80
+2010	ID	Washington	16087	Geothermal		Bonus	21188
+2010	ID	Washington	16087	Geothermal		Rents	26408
+2011	ID	Bear Lake	16007	Oil & Gas		Rents	9954
+2011	ID	Bear Lake	16007	Phosphate		Rents	386.5
+2011	ID	Bingham	16011	Geothermal		Rents	133.64
+2011	ID	Blaine	16013	Geothermal		Rents	3236
+2011	ID	Boise	16015	Hardrock		Rents	39
+2011	ID	Bonneville	16019	Geothermal		Rents	160.36
+2011	ID	Bonneville	16019	Oil & Gas		Rents	8274
+2011	ID	Camas	16025	Geothermal		Rents	2444
+2011	ID	Canyon	16027	Geothermal		Bonus	1456.2
+2011	ID	Canyon	16027	Geothermal		Rents	1456.2
+2011	ID	Caribou	16029	Phosphate		Bonus	755824
+2011	ID	Caribou	16029	Phosphate		Other Revenues	2877
+2011	ID	Caribou	16029	Geothermal		Rents	2973
+2011	ID	Caribou	16029	Phosphate		Rents	2311
+2011	ID	Cassia	16031	Geothermal		Bonus	1520
+2011	ID	Cassia	16031	Geothermal		Rents	54920
+2011	ID	Clearwater	16035	Hardrock		Rents	-64
+2011	ID	Payette	16075	Geothermal		Bonus	48307.8
+2011	ID	Payette	16075	Geothermal		Rents	48307.8
+2011	ID	Washington	16087	Geothermal		Bonus	2180
+2011	ID	Washington	16087	Geothermal		Rents	39182
+2012	ID	Bear Lake	16007	Phosphate		Other Revenues	198
+2012	ID	Bear Lake	16007	Oil & Gas		Rents	6444
+2012	ID	Bear Lake	16007	Phosphate		Rents	-669.5
+2012	ID	Bingham	16011	Geothermal		Rents	133.64
+2012	ID	Blaine	16013	Geothermal		Rents	1618
+2012	ID	Boise	16015	Hardrock		Rents	39
+2012	ID	Bonneville	16019	Geothermal		Rents	160.36
+2012	ID	Bonneville	16019	Oil & Gas		Rents	8274
+2012	ID	Camas	16025	Geothermal		Rents	1222
+2012	ID	Canyon	16027	Geothermal		Rents	2184.29
+2012	ID	Caribou	16029	Phosphate		Bonus	799997.74
+2012	ID	Caribou	16029	Phosphate		Other Revenues	2328
+2012	ID	Caribou	16029	Geothermal		Rents	433
+2012	ID	Caribou	16029	Phosphate		Rents	1182
+2012	ID	Cassia	16031	Geothermal		Rents	49803
+2012	ID	Clearwater	16035	Hardrock		Rents	-42
+2012	ID	Payette	16075	Geothermal		Rents	72461.71
+2012	ID	Washington	16087	Geothermal		Rents	40272
+2013	ID	Bear Lake	16007	Phosphate		Other Revenues	198
+2013	ID	Bear Lake	16007	Phosphate		Rents	66
+2013	ID	Bingham	16011	Geothermal		Rents	133.64
+2013	ID	Bonneville	16019	Geothermal		Rents	160.36
+2013	ID	Bonneville	16019	Oil & Gas		Rents	8274
+2013	ID	Canyon	16027	Geothermal		Rents	2184.29
+2013	ID	Caribou	16029	Phosphate		Other Revenues	5448
+2013	ID	Caribou	16029	Geothermal		Rents	1703
+2013	ID	Caribou	16029	Phosphate		Rents	-894
+2013	ID	Cassia	16031	Geothermal		Rents	43926
+2013	ID	Clark	16033	Phosphate		Rents	846
+2013	ID	Clearwater	16035	Hardrock		Royalties	3.28
+2013	ID	Payette	16075	Geothermal		Rents	72461.71
+2013	ID	Shoshone	16079	Hardrock		Rents	40
+2013	ID	Washington	16087	Geothermal		Rents	40272
+2004	ID	Bannock	16005	Phosphate		Other Revenues	240
+2004	ID	Bingham	16011	Phosphate		Other Revenues	8331.54
+2004	ID	Caribou	16029	Phosphate		Other Revenues	77039.46
+2004	ID	Caribou	16029	Other Products	Phosphate Raw Ore	Royalties	3451909.95
+2004	ID	Clark	16033	Phosphate		Other Revenues	2547
+2005	ID	Bannock	16005	Phosphate		Other Revenues	240
+2005	ID	Bingham	16011	Phosphate		Other Revenues	8331.54
+2005	ID	Caribou	16029	Phosphate		Other Revenues	95672.46
+2005	ID	Caribou	16029	Other Products	Phosphate Raw Ore	Royalties	2986698.1
+2005	ID	Clark	16033	Phosphate		Other Revenues	2547
+2005	ID	Clearwater	16035	Other Products	Gold	Royalties	924.81
+2006	ID	Bannock	16005	Phosphate		Other Revenues	240
+2006	ID	Bingham	16011	Phosphate		Other Revenues	8331.54
+2006	ID	Caribou	16029	Phosphate		Other Revenues	70262.46
+2006	ID	Caribou	16029	Other Products	Phosphate Raw Ore	Royalties	2064495.78
+2006	ID	Clark	16033	Phosphate		Other Revenues	1881
+2006	ID	Clearwater	16035	Other Products	Gold	Royalties	3464.85
+2007	ID	Bannock	16005	Phosphate		Other Revenues	240
+2007	ID	Bingham	16011	Phosphate		Other Revenues	8331.54
+2007	ID	Caribou	16029	Phosphate		Other Revenues	99419.46
+2007	ID	Caribou	16029	Other Products	Phosphate Raw Ore	Royalties	2152071.29
+2007	ID	Clark	16033	Phosphate		Other Revenues	2547
+2007	ID	Clearwater	16035	Other Products	Gold	Royalties	1445.4
+2008	ID	Bannock	16005	Phosphate		Other Revenues	240
+2008	ID	Bingham	16011	Phosphate		Other Revenues	7284
+2008	ID	Caribou	16029	Phosphate		Other Revenues	90300
+2008	ID	Caribou	16029	Other Products	Phosphate Raw Ore	Royalties	2485359.85
+2008	ID	Clark	16033	Phosphate		Other Revenues	2547
+2008	ID	Clearwater	16035	Hardrock		Other Revenues	126
+2008	ID	Clearwater	16035	Other Products	Gold	Royalties	731.3
+2009	ID	Bannock	16005	Phosphate		Other Revenues	240
+2009	ID	Bingham	16011	Phosphate		Other Revenues	8331.54
+2009	ID	Caribou	16029	Phosphate		Other Revenues	88832.46
+2009	ID	Caribou	16029	Other Products	Phosphate Raw Ore	Royalties	3566737.1
+2009	ID	Clark	16033	Phosphate		Other Revenues	2547
+2009	ID	Clearwater	16035	Other Products	Gold	Royalties	292.88
+2010	ID	Bannock	16005	Phosphate		Other Revenues	240
+2010	ID	Bingham	16011	Phosphate		Other Revenues	8331.54
+2010	ID	Caribou	16029	Phosphate		Other Revenues	102059.46
+2010	ID	Caribou	16029	Other Products	Phosphate Raw Ore	Royalties	9053379.95
+2010	ID	Clark	16033	Phosphate		Other Revenues	2547
+2011	ID	Bannock	16005	Phosphate		Other Revenues	240
+2011	ID	Bingham	16011	Phosphate		Other Revenues	8331.54
+2011	ID	Caribou	16029	Phosphate		Other Revenues	97679.46
+2011	ID	Caribou	16029	Other Products	Phosphate Raw Ore	Royalties	8534799.04
+2011	ID	Clark	16033	Phosphate		Other Revenues	2547
+2011	ID	Clearwater	16035	Hardrock		Other Revenues	126
+2011	ID	Clearwater	16035	Other Products	Gold	Royalties	620
+2012	ID	Bannock	16005	Phosphate		Other Revenues	240
+2012	ID	Bingham	16011	Phosphate		Other Revenues	8331.54
+2012	ID	Caribou	16029	Phosphate		Other Revenues	98099.46
+2012	ID	Caribou	16029	Other Products	Phosphate Raw Ore	Royalties	9431323.92
+2012	ID	Clark	16033	Phosphate		Other Revenues	2547
+2012	ID	Clearwater	16035	Hardrock		Other Revenues	126
+2012	ID	Clearwater	16035	Other Products	Gold	Royalties	796.8
+2013	ID	Bannock	16005	Phosphate		Other Revenues	240
+2013	ID	Bingham	16011	Phosphate		Other Revenues	8331.54
+2013	ID	Caribou	16029	Phosphate		Other Revenues	96779.46
+2013	ID	Caribou	16029	Other Products	Phosphate Raw Ore	Royalties	9817743.38
+2013	ID	Clark	16033	Phosphate		Other Revenues	2547
+2013	ID	Clearwater	16035	Other Products	Gold	Royalties	363.09
+2013	ID	Clearwater	16035	Other Products	Silver	Royalties	2.35

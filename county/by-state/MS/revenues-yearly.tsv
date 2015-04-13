@@ -1,365 +1,772 @@
-Year	State	County	FIPS	Commodity	type	Revenue
-2004	MS	Adams	28001	Oil	Royalties	71762.11
-2004	MS	Chickasaw	28017	Gas	Royalties	15019.53
-2004	MS	Clarke	28023	Oil	Royalties	380.9
-2004	MS	Covington	28031	Gas	Royalties	47.66
-2004	MS	Covington	28031	Oil	Royalties	1107.52
-2004	MS	Franklin	28037	Oil	Royalties	454883.36
-2004	MS	Hancock	28045	Gas	Royalties	5.36
-2004	MS	Hancock	28045	Oil	Royalties	79.58
-2004	MS	Jasper	28061	Gas	Royalties	1584.52
-2004	MS	Jeffer Davis	28065	Oil & Gas	Other Roy Vals	400
-2004	MS	Jeffer Davis	28065	Gas	Royalties	2668.77
-2004	MS	Jeffer Davis	28065	Oil	Royalties	41.38
-2004	MS	Jones	28067	Oil & Gas	Other Roy Vals	3000
-2004	MS	Jones	28067	Gas	Royalties	22785.69
-2004	MS	Jones	28067	Oil	Royalties	22307
-2004	MS	Jones	28067	Oil	Royalties	883.09
-2004	MS	Lamar	28073	Oil	Royalties	-10426.72
-2004	MS	Lawrence	28077	Gas	Royalties	519.44
-2004	MS	Lawrence	28077	Oil	Royalties	25.18
-2004	MS	Lowndes	28087	Gas	Royalties	88485.42
-2004	MS	Madison	28089	Oil & Gas	Other Revenues	483
-2004	MS	Monroe	28095	Gas	Royalties	2115.5
-2004	MS	Pearl River	28109	Gas	Royalties	25972.02
-2004	MS	Pearl River	28109	Oil	Royalties	21616.7
-2004	MS	Perry	28111	Oil	Royalties	577079.29
-2004	MS	Perry	28111	Oil	Royalties	42727.58
-2004	MS	Scott	28123	Oil	Royalties	23968.67
-2004	MS	Stone	28131	Gas	Royalties	71848.77
-2004	MS	Wayne	28153	Gas	Royalties	331.37
-2004	MS	Wayne	28153	Gas	Royalties	960.63
-2004	MS	Wayne	28153	Oil	Royalties	355437.92
-2004	MS	Wilkinson	28157	Gas	Royalties	108082.35
-2004	MS	Wilkinson	28157	Gas	Royalties	-3317.13
-2004	MS	Wilkinson	28157	Oil	Royalties	-2574.25
-2004	MS	Wilkinson	28157	Oil	Royalties	59073.93
-2005	MS	Adams	28001	Oil	Royalties	77073.93
-2005	MS	Chickasaw	28017	Oil & Gas	Other Revenues	908
-2005	MS	Chickasaw	28017	Gas	Royalties	28653.36
-2005	MS	Clarke	28023	Oil	Royalties	291.96
-2005	MS	Covington	28031	Gas	Royalties	216.82
-2005	MS	Covington	28031	Oil	Royalties	1735.6
-2005	MS	Forrest	28035	Gas	Royalties	68623.82
-2005	MS	Forrest	28035	Gas	Royalties	97706.16
-2005	MS	Forrest	28035	Oil	Royalties	43236.46
-2005	MS	Forrest	28035	Oil	Royalties	5706.52
-2005	MS	Franklin	28037	Oil	Royalties	584045.37
-2005	MS	Hancock	28045	Oil & Gas	Other Revenues	-2536.25
-2005	MS	Hancock	28045	Gas	Royalties	6.53
-2005	MS	Jasper	28061	Gas	Royalties	8067.54
-2005	MS	Jasper	28061	Oil	Royalties	26.72
-2005	MS	Jeffer Davis	28065	Gas	Royalties	2658.71
-2005	MS	Jeffer Davis	28065	Oil	Royalties	23.86
-2005	MS	Jones	28067	Oil & Gas	Other Roy Vals	-3000
-2005	MS	Jones	28067	Gas	Royalties	25797.29
-2005	MS	Jones	28067	Oil	Royalties	20838.05
-2005	MS	Lamar	28073	Oil	Royalties	40390.62
-2005	MS	Lawrence	28077	Gas	Royalties	199.22
-2005	MS	Lawrence	28077	Oil	Royalties	18.16
-2005	MS	Lowndes	28087	Gas	Royalties	141718.15
-2005	MS	Lowndes	28087	Oil	Royalties	2925.85
-2005	MS	Madison	28089	Oil & Gas	Other Revenues	483
-2005	MS	Monroe	28095	Gas	Royalties	2140.75
-2005	MS	Pearl River	28109	Gas	Royalties	25528.66
-2005	MS	Pearl River	28109	Oil	Royalties	33448.09
-2005	MS	Perry	28111	Oil	Royalties	51053.58
-2005	MS	Perry	28111	Oil	Royalties	578586.32
-2005	MS	Scott	28123	Oil	Royalties	72103.43
-2005	MS	Stone	28131	Gas	Royalties	97980.58
-2005	MS	Wayne	28153	Oil	Royalties	426417.6
-2005	MS	Wilkinson	28157	Gas	Royalties	49583.91
-2005	MS	Wilkinson	28157	Oil	Royalties	47835.9
-2006	MS	Adams	28001	Oil	Royalties	99179.47
-2006	MS	Chickasaw	28017	Oil & Gas	Other Revenues	908
-2006	MS	Chickasaw	28017	Gas	Royalties	46787.7
-2006	MS	Clarke	28023	Oil	Royalties	51.37
-2006	MS	Covington	28031	Gas	Royalties	244.48
-2006	MS	Covington	28031	Oil	Royalties	2019.56
-2006	MS	Covington	28031	Oil & Gas	Royalties	-0.09
-2006	MS	Forrest	28035	Gas	Royalties	-47.07
-2006	MS	Forrest	28035	Gas	Royalties	158875.17
-2006	MS	Forrest	28035	Oil	Royalties	31005.15
-2006	MS	Forrest	28035	Oil	Royalties	419.1
-2006	MS	Franklin	28037	Oil & Gas	Other Roy Vals	-8556.79
-2006	MS	Franklin	28037	Oil	Royalties	631570.37
-2006	MS	Hancock	28045	Oil	Royalties	119.74
-2006	MS	Jasper	28061	Gas	Royalties	12313.54
-2006	MS	Jasper	28061	Oil	Royalties	75.42
-2006	MS	Jeffer Davis	28065	Gas	Royalties	10977.22
-2006	MS	Jeffer Davis	28065	Oil	Royalties	12.37
-2006	MS	Jeffer Davis	28065	Oil	Royalties	1419.68
-2006	MS	Jones	28067	Oil & Gas	Other Roy Vals	-578
-2006	MS	Jones	28067	Gas	Royalties	10131.93
-2006	MS	Jones	28067	Oil	Royalties	9482.53
-2006	MS	Lamar	28073	Oil	Royalties	27082.89
-2006	MS	Lawrence	28077	Gas	Royalties	792.43
-2006	MS	Lawrence	28077	Oil	Royalties	105.92
-2006	MS	Lowndes	28087	Gas	Royalties	92453.72
-2006	MS	Lowndes	28087	Oil	Royalties	3622.95
-2006	MS	Madison	28089	Oil & Gas	Other Revenues	461
-2006	MS	Monroe	28095	Gas	Royalties	2243.44
-2006	MS	Pearl River	28109	Gas	Royalties	-24075.97
-2006	MS	Pearl River	28109	Oil	Royalties	23719.03
-2006	MS	Perry	28111	Oil & Gas	Other Revenues	122
-2006	MS	Perry	28111	Gas	Royalties	6.12
-2006	MS	Perry	28111	Oil	Royalties	703444.38
-2006	MS	Scott	28123	Oil	Royalties	76396.56
-2006	MS	Stone	28131	Gas	Royalties	109574.22
-2006	MS	Stone	28131	Oil & Gas	Royalties	-143.72
-2006	MS	Wayne	28153	Oil	Royalties	362387.58
-2006	MS	Wilkinson	28157	Gas	Royalties	4857.29
-2006	MS	Wilkinson	28157	Oil	Royalties	37051.74
-2007	MS	Adams	28001	Oil	Royalties	88452.82
-2007	MS	Chickasaw	28017	Oil & Gas	Other Revenues	1281.48
-2007	MS	Chickasaw	28017	Gas	Royalties	56318.62
-2007	MS	Clarke	28023	Oil	Royalties	69.14
-2007	MS	Covington	28031	Gas	Royalties	304.52
-2007	MS	Covington	28031	Oil	Royalties	3236.18
-2007	MS	Forrest	28035	Gas	Royalties	23351.86
-2007	MS	Forrest	28035	Gas	Royalties	10296.08
-2007	MS	Forrest	28035	Oil	Royalties	6592.99
-2007	MS	Franklin	28037	Oil	Royalties	707212.96
-2007	MS	Jasper	28061	Gas	Royalties	15215.96
-2007	MS	Jasper	28061	Oil	Royalties	119.11
-2007	MS	Jeffer Davis	28065	Oil & Gas	Other Roy Vals	-900
-2007	MS	Jeffer Davis	28065	Gas	Royalties	6929.97
-2007	MS	Jeffer Davis	28065	Oil	Royalties	625.22
-2007	MS	Jones	28067	Gas	Royalties	4532.76
-2007	MS	Jones	28067	Oil	Royalties	11578.99
-2007	MS	Jones	28067	Oil	Royalties	-1226.93
-2007	MS	Lamar	28073	Oil	Royalties	25699.5
-2007	MS	Lawrence	28077	Gas	Royalties	77.45
-2007	MS	Lawrence	28077	Oil	Royalties	7.74
-2007	MS	Lowndes	28087	Gas	Royalties	77467.94
-2007	MS	Lowndes	28087	Oil	Royalties	4337.37
-2007	MS	Madison	28089	Oil & Gas	Other Revenues	944
-2007	MS	Monroe	28095	Gas	Royalties	1920.16
-2007	MS	Pearl River	28109	Oil	Royalties	49608.66
-2007	MS	Perry	28111	Oil & Gas	Other Revenues	122
-2007	MS	Perry	28111	Oil & Gas	Other Roy Vals	6238
-2007	MS	Perry	28111	Oil	Royalties	753015.22
-2007	MS	Scott	28123	Oil	Royalties	75959.77
-2007	MS	Stone	28131	Gas	Royalties	38088.51
-2007	MS	Wayne	28153	Oil	Royalties	422044.3
-2007	MS	Wilkinson	28157	Gas	Royalties	24081.08
-2007	MS	Wilkinson	28157	Oil	Royalties	71014.88
-2008	MS	Adams	28001	Oil	Royalties	103057.77
-2008	MS	Chickasaw	28017	Gas	Royalties	68055.66
-2008	MS	Clarke	28023	Oil	Royalties	1492.4
-2008	MS	Covington	28031	Gas	Royalties	436.98
-2008	MS	Covington	28031	Oil	Royalties	4399.7
-2008	MS	Forrest	28035	Gas	Royalties	103911.38
-2008	MS	Forrest	28035	Oil	Royalties	1794.88
-2008	MS	Forrest	28035	Oil	Royalties	1321.61
-2008	MS	Franklin	28037	Oil & Gas	Other Roy Vals	10312.48
-2008	MS	Franklin	28037	Oil	Royalties	1123560.28
-2008	MS	Jasper	28061	Gas	Royalties	37222.62
-2008	MS	Jasper	28061	Oil	Royalties	702.28
-2008	MS	Jeffer Davis	28065	Oil & Gas	Other Roy Vals	453.11
-2008	MS	Jeffer Davis	28065	Gas	Royalties	4884.79
-2008	MS	Jeffer Davis	28065	Oil	Royalties	-3.32
-2008	MS	Jeffer Davis	28065	Oil	Royalties	1789.09
-2008	MS	Jones	28067	Gas	Royalties	1376.46
-2008	MS	Jones	28067	Oil	Royalties	7033.4
-2008	MS	Jones	28067	Oil	Royalties	1613.73
-2008	MS	Lamar	28073	Oil	Royalties	15673.76
-2008	MS	Lawrence	28077	Oil & Gas	Other Roy Vals	100
-2008	MS	Lawrence	28077	Gas	Royalties	18.62
-2008	MS	Lawrence	28077	Oil	Royalties	12.6
-2008	MS	Lowndes	28087	Gas	Royalties	90701.07
-2008	MS	Lowndes	28087	Oil	Royalties	5599.05
-2008	MS	Madison	28089	Oil & Gas	Other Revenues	483
-2008	MS	Monroe	28095	Gas	Royalties	1830.81
-2008	MS	Pearl River	28109	Oil & Gas	Other Roy Vals	397.45
-2008	MS	Pearl River	28109	Oil	Royalties	42164.5
-2008	MS	Perry	28111	Gas	Royalties	-0.91
-2008	MS	Perry	28111	Oil	Royalties	695622.81
-2008	MS	Scott	28123	Oil & Gas	Other Roy Vals	33273.56
-2008	MS	Scott	28123	Oil	Royalties	99864.02
-2008	MS	Smith	28129	Oil	Royalties	20230.81
-2008	MS	Stone	28131	Gas	Royalties	79701.41
-2008	MS	Wayne	28153	Oil & Gas	Other Roy Vals	7387.4
-2008	MS	Wayne	28153	Oil	Royalties	549996.54
-2008	MS	Wilkinson	28157	Gas	Royalties	23844.84
-2008	MS	Wilkinson	28157	Oil	Royalties	88330.06
-2009	MS	Adams	28001	Oil	Royalties	53221.89
-2009	MS	Chickasaw	28017	Gas	Royalties	21591.53
-2009	MS	Clarke	28023	Oil	Royalties	253.29
-2009	MS	Covington	28031	Gas	Royalties	157
-2009	MS	Covington	28031	Oil	Royalties	2716.5
-2009	MS	Forrest	28035	Gas	Royalties	36595.67
-2009	MS	Forrest	28035	Oil	Royalties	59635.8
-2009	MS	Forrest	28035	Oil	Royalties	399.26
-2009	MS	Franklin	28037	Oil	Royalties	577327.51
-2009	MS	Jasper	28061	Gas	Royalties	8509.04
-2009	MS	Jasper	28061	Oil	Royalties	181.61
-2009	MS	Jeffer Davis	28065	Oil & Gas	Other Roy Vals	-300
-2009	MS	Jeffer Davis	28065	Gas	Royalties	3464.75
-2009	MS	Jeffer Davis	28065	Oil	Royalties	13.88
-2009	MS	Jeffer Davis	28065	Oil	Royalties	843.11
-2009	MS	Jones	28067	Gas	Royalties	3114.78
-2009	MS	Jones	28067	Oil	Royalties	11760.88
-2009	MS	Lamar	28073	Oil	Royalties	2081.88
-2009	MS	Lawrence	28077	Oil & Gas	Other Roy Vals	-99.76
-2009	MS	Lawrence	28077	Gas	Royalties	145825.46
-2009	MS	Lawrence	28077	Oil	Royalties	7222.83
-2009	MS	Lowndes	28087	Gas	Royalties	46875.09
-2009	MS	Lowndes	28087	Oil	Royalties	3195.19
-2009	MS	Madison	28089	Oil & Gas	Other Revenues	483
-2009	MS	Monroe	28095	Gas	Royalties	1083.83
-2009	MS	Pearl River	28109	Gas	Royalties	52589.33
-2009	MS	Pearl River	28109	Oil	Royalties	36550.35
-2009	MS	Pearl River	28109	Oil	Royalties	22149.99
-2009	MS	Perry	28111	Oil & Gas	Other Roy Vals	-250
-2009	MS	Perry	28111	Oil	Royalties	290508.16
-2009	MS	Scott	28123	Oil	Royalties	40850.88
-2009	MS	Smith	28129	Oil & Gas	Other Revenues	2630
-2009	MS	Smith	28129	Oil	Royalties	1512.81
-2009	MS	Stone	28131	Gas	Royalties	29355.47
-2009	MS	Wayne	28153	Oil	Royalties	375894.36
-2009	MS	Wilkinson	28157	Gas	Royalties	12558.34
-2009	MS	Wilkinson	28157	Oil	Royalties	26178.29
-2010	MS	Adams	28001	Oil	Royalties	43932.95
-2010	MS	Chickasaw	28017	Gas	Royalties	15800.05
-2010	MS	Clarke	28023	Oil	Royalties	543.37
-2010	MS	Covington	28031	Gas	Royalties	129.5
-2010	MS	Covington	28031	Oil	Royalties	3448.02
-2010	MS	Forrest	28035	Gas	Royalties	64075.91
-2010	MS	Forrest	28035	Oil	Royalties	75410.73
-2010	MS	Forrest	28035	Oil	Royalties	3657.64
-2010	MS	Franklin	28037	Oil	Royalties	679313.61
-2010	MS	Jasper	28061	Gas	Royalties	6321.15
-2010	MS	Jasper	28061	Oil	Royalties	186.95
-2010	MS	Jeffer Davis	28065	Gas	Royalties	2952.24
-2010	MS	Jeffer Davis	28065	Oil	Royalties	29.67
-2010	MS	Jeffer Davis	28065	Oil	Royalties	1113.18
-2010	MS	Jones	28067	Oil & Gas	Other Roy Vals	78.9
-2010	MS	Jones	28067	Gas	Royalties	5998.54
-2010	MS	Jones	28067	Oil	Royalties	15730.12
-2010	MS	Lawrence	28077	Oil & Gas	Other Roy Vals	-0.24
-2010	MS	Lawrence	28077	Gas	Royalties	39754.33
-2010	MS	Lawrence	28077	Oil	Royalties	2596.04
-2010	MS	Lowndes	28087	Oil & Gas	Other Revenues	154.03
-2010	MS	Lowndes	28087	Oil & Gas	Other Roy Vals	76.32
-2010	MS	Lowndes	28087	Gas	Royalties	48172.29
-2010	MS	Lowndes	28087	Oil	Royalties	4663.36
-2010	MS	Madison	28089	Oil & Gas	Other Revenues	483
-2010	MS	Monroe	28095	Gas	Royalties	144.81
-2010	MS	Pearl River	28109	Gas	Royalties	148546.51
-2010	MS	Pearl River	28109	Oil	Royalties	62701.99
-2010	MS	Pearl River	28109	Oil	Royalties	23173.58
-2010	MS	Perry	28111	Oil & Gas	Other Roy Vals	5500
-2010	MS	Perry	28111	Oil	Royalties	544035.78
-2010	MS	Scott	28123	Oil	Royalties	1475.51
-2010	MS	Smith	28129	Oil & Gas	Other Revenues	1117.19
-2010	MS	Smith	28129	Oil & Gas	Other Roy Vals	0.42
-2010	MS	Stone	28131	Oil & Gas	Other Roy Vals	81.93
-2010	MS	Stone	28131	Gas	Royalties	26829.84
-2010	MS	Wayne	28153	Oil	Royalties	500323.39
-2010	MS	Wilkinson	28157	Oil	Royalties	51626.45
-2011	MS	Adams	28001	Oil	Royalties	28222.92
-2011	MS	Chickasaw	28017	Gas	Royalties	7856.81
-2011	MS	Clarke	28023	Oil	Royalties	54.2
-2011	MS	Covington	28031	Gas	Royalties	149.26
-2011	MS	Covington	28031	Oil	Royalties	5126.32
-2011	MS	Forrest	28035	Gas	Royalties	15020.48
-2011	MS	Forrest	28035	Gas	Royalties	138905.48
-2011	MS	Forrest	28035	Oil	Royalties	27433.2
-2011	MS	Forrest	28035	Oil	Royalties	72649.25
-2011	MS	Franklin	28037	Oil & Gas	Other Roy Vals	3.4
-2011	MS	Franklin	28037	Oil	Royalties	948346.02
-2011	MS	Jasper	28061	Gas	Royalties	4731.34
-2011	MS	Jasper	28061	Oil	Royalties	158.82
-2011	MS	Jeffer Davis	28065	Gas	Royalties	2563.26
-2011	MS	Jeffer Davis	28065	Oil	Royalties	13.54
-2011	MS	Jeffer Davis	28065	Oil	Royalties	1455.59
-2011	MS	Jones	28067	Gas	Royalties	5721.2
-2011	MS	Jones	28067	Oil	Royalties	9464.04
-2011	MS	Jones	28067	Oil	Royalties	11082.85
-2011	MS	Lamar	28073	Oil	Royalties	327685.24
-2011	MS	Lawrence	28077	Gas	Royalties	19892.66
-2011	MS	Lawrence	28077	Oil	Royalties	1666.62
-2011	MS	Lowndes	28087	Gas	Royalties	35652.74
-2011	MS	Lowndes	28087	Oil	Royalties	3149.91
-2011	MS	Madison	28089	Oil & Gas	Other Revenues	483
-2011	MS	Monroe	28095	Gas	Royalties	39.75
-2011	MS	Pearl River	28109	Gas	Royalties	120706.05
-2011	MS	Pearl River	28109	Gas	Royalties	29583.74
-2011	MS	Pearl River	28109	Oil	Royalties	92573.21
-2011	MS	Pearl River	28109	Oil	Royalties	46392.91
-2011	MS	Perry	28111	Oil & Gas	Other Roy Vals	-2088
-2011	MS	Perry	28111	Oil	Royalties	1515777.12
-2011	MS	Scott	28123	Oil	Royalties	10580.39
-2011	MS	Stone	28131	Gas	Royalties	-2314.12
-2011	MS	Wayne	28153	Oil	Royalties	517529.25
-2011	MS	Wilkinson	28157	Oil & Gas	Other Roy Vals	787.37
-2011	MS	Wilkinson	28157	Oil	Royalties	48845.3
-2012	MS	Adams	28001	Oil	Royalties	46049.87
-2012	MS	Chickasaw	28017	Gas	Royalties	3817.09
-2012	MS	Clarke	28023	Oil	Royalties	208.07
-2012	MS	Covington	28031	Gas	Royalties	78.38
-2012	MS	Covington	28031	Oil	Royalties	6038.76
-2012	MS	Forrest	28035	Oil & Gas	Other Roy Vals	0.01
-2012	MS	Forrest	28035	Gas	Royalties	12761.37
-2012	MS	Forrest	28035	Gas	Royalties	18027.59
-2012	MS	Forrest	28035	Oil	Royalties	30180.67
-2012	MS	Forrest	28035	Oil	Royalties	106175.94
-2012	MS	Franklin	28037	Oil	Royalties	1033259.71
-2012	MS	Jasper	28061	Gas	Royalties	2646.14
-2012	MS	Jasper	28061	Oil	Royalties	68.56
-2012	MS	Jeffer Davis	28065	Gas	Royalties	1362.58
-2012	MS	Jeffer Davis	28065	Oil	Royalties	1.43
-2012	MS	Jeffer Davis	28065	Oil	Royalties	1310.82
-2012	MS	Jones	28067	Gas	Royalties	3079.49
-2012	MS	Jones	28067	Oil	Royalties	18323.43
-2012	MS	Lamar	28073	Oil	Royalties	583650.49
-2012	MS	Lawrence	28077	Gas	Royalties	3241.79
-2012	MS	Lawrence	28077	Oil	Royalties	295.71
-2012	MS	Lowndes	28087	Gas	Royalties	14113.79
-2012	MS	Lowndes	28087	Gas	Royalties	5108.97
-2012	MS	Lowndes	28087	Oil	Royalties	1174.45
-2012	MS	Lowndes	28087	Oil	Royalties	3905.26
-2012	MS	Madison	28089	Oil & Gas	Other Revenues	483
-2012	MS	Pearl River	28109	Gas	Royalties	111629.97
-2012	MS	Pearl River	28109	Oil	Royalties	96795.03
-2012	MS	Pearl River	28109	Oil	Royalties	53457.58
-2012	MS	Perry	28111	Oil & Gas	Other Roy Vals	-2400
-2012	MS	Perry	28111	Oil	Royalties	1229475.57
-2012	MS	Stone	28131	Gas	Royalties	15100.32
-2012	MS	Wayne	28153	Oil	Royalties	525595.01
-2012	MS	Wilkinson	28157	Oil	Royalties	63161.62
-2013	MS	Adams	28001	Oil	Royalties	37629.61
-2013	MS	Chickasaw	28017	Gas	Royalties	8889.56
-2013	MS	Clarke	28023	Oil	Royalties	566.19
-2013	MS	Covington	28031	Gas	Royalties	76.78
-2013	MS	Covington	28031	Oil	Royalties	5460.92
-2013	MS	Forrest	28035	Gas	Royalties	3463.01
-2013	MS	Forrest	28035	Gas	Royalties	13923.64
-2013	MS	Forrest	28035	Oil	Royalties	-1967.34
-2013	MS	Forrest	28035	Oil	Royalties	50075.49
-2013	MS	Franklin	28037	Oil	Royalties	1060696.95
-2013	MS	Jasper	28061	Gas	Royalties	2673.88
-2013	MS	Jasper	28061	Oil	Royalties	19.11
-2013	MS	Jeffer Davis	28065	Gas	Royalties	23358.96
-2013	MS	Jeffer Davis	28065	Gas	Royalties	1528.86
-2013	MS	Jeffer Davis	28065	Oil	Royalties	565.79
-2013	MS	Jeffer Davis	28065	Oil	Royalties	1285.65
-2013	MS	Jones	28067	Gas	Royalties	3723.25
-2013	MS	Jones	28067	Oil	Royalties	15796.91
-2013	MS	Lamar	28073	Oil	Royalties	1134142.31
-2013	MS	Lawrence	28077	Gas	Royalties	113036.25
-2013	MS	Lawrence	28077	Oil	Royalties	17346.33
-2013	MS	Lowndes	28087	Gas	Royalties	25077.41
-2013	MS	Lowndes	28087	Oil	Royalties	1579.1
-2013	MS	Madison	28089	Oil & Gas	Other Revenues	483
-2013	MS	Pearl River	28109	Gas	Royalties	58498.72
-2013	MS	Pearl River	28109	Gas	Royalties	8817.13
-2013	MS	Pearl River	28109	Oil	Royalties	36182.38
-2013	MS	Pearl River	28109	Oil	Royalties	38596.14
-2013	MS	Perry	28111	Oil & Gas	Other Roy Vals	-4200
-2013	MS	Perry	28111	Oil	Royalties	1830894.52
-2013	MS	Smith	28129	Oil	Royalties	17097.32
-2013	MS	Stone	28131	Gas	Royalties	11152.86
-2013	MS	Wayne	28153	Oil	Royalties	456996.26
-2013	MS	Wilkinson	28157	Oil	Royalties	56277.64
+Year	State	County	FIPS	Commodity	Product	Type	Revenue
+2004	MS	Adams	28001	Oil & Gas		Rents	8451.5
+2004	MS	Adams	28001	Oil (bbl)	Oil	Royalties	71762.11
+2004	MS	Amite	28005	Oil & Gas		Rents	18312
+2004	MS	Chickasaw	28017	Oil & Gas		Bonus	8541
+2004	MS	Chickasaw	28017	Oil & Gas		Rents	10683
+2004	MS	Chickasaw	28017	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	15019.53
+2004	MS	Choctaw	28019	Oil & Gas		Rents	4695
+2004	MS	Clarke	28023	Oil (bbl)	Oil	Royalties	380.9
+2004	MS	Covington	28031	Oil & Gas		Rents	166.5
+2004	MS	Covington	28031	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	47.66
+2004	MS	Covington	28031	Oil (bbl)	Oil	Royalties	1107.52
+2004	MS	Forrest	28035	Oil & Gas		Bonus	89459
+2004	MS	Forrest	28035	Oil & Gas		Rents	21209
+2004	MS	Franklin	28037	Oil & Gas		Bonus	-2266
+2004	MS	Franklin	28037	Oil & Gas		Rents	54845.5
+2004	MS	Franklin	28037	Oil (bbl)	Oil	Royalties	454883.36
+2004	MS	George	28039	Oil & Gas		Rents	2400
+2004	MS	Greene	28041	Oil & Gas		Rents	242
+2004	MS	Hancock	28045	Oil & Gas		Rents	147
+2004	MS	Hancock	28045	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	5.36
+2004	MS	Hancock	28045	Oil (bbl)	Condensate	Royalties	79.58
+2004	MS	Harrison	28047	Oil & Gas		Rents	45478
+2004	MS	Jackson	28059	Oil & Gas		Rents	2406
+2004	MS	Jasper	28061	Oil & Gas		Bonus	900
+2004	MS	Jasper	28061	Oil & Gas		Rents	54
+2004	MS	Jasper	28061	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	1584.52
+2004	MS	Jeffer Davis	28065	Oil & Gas		Other Roy Vals	400
+2004	MS	Jeffer Davis	28065	Oil & Gas		Rents	135
+2004	MS	Jeffer Davis	28065	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	2668.77
+2004	MS	Jeffer Davis	28065	Oil (bbl)	Condensate	Royalties	41.38
+2004	MS	Jefferson	28063	Oil & Gas		Rents	2179.28
+2004	MS	Jones	28067	Oil & Gas		Other Roy Vals	3000
+2004	MS	Jones	28067	Oil & Gas		Rents	7400.5
+2004	MS	Jones	28067	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	22785.69
+2004	MS	Jones	28067	Oil (bbl)	Condensate	Royalties	22307
+2004	MS	Jones	28067	Oil (bbl)	Oil	Royalties	883.09
+2004	MS	Lamar	28073	Oil & Gas		Bonus	240
+2004	MS	Lamar	28073	Oil & Gas		Rents	2385
+2004	MS	Lamar	28073	Oil (bbl)	Oil	Royalties	-10426.72
+2004	MS	Lawrence	28077	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	519.44
+2004	MS	Lawrence	28077	Oil (bbl)	Condensate	Royalties	25.18
+2004	MS	Lincoln	28085	Oil & Gas		Rents	2020.5
+2004	MS	Lowndes	28087	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	88485.42
+2004	MS	Madison	28089	Oil & Gas		Other Revenues	483
+2004	MS	Marion	28091	Oil & Gas		Bonus	1926
+2004	MS	Marion	28091	Oil & Gas		Rents	481.5
+2004	MS	Monroe	28095	Oil & Gas		Rents	941.5
+2004	MS	Monroe	28095	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	2115.5
+2004	MS	Pearl River	28109	Oil & Gas		Rents	2372.5
+2004	MS	Pearl River	28109	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	25972.02
+2004	MS	Pearl River	28109	Oil (bbl)	Oil	Royalties	21616.7
+2004	MS	Perry	28111	Oil & Gas		Bonus	9711
+2004	MS	Perry	28111	Oil & Gas		Rents	61424
+2004	MS	Perry	28111	Oil (bbl)	Condensate	Royalties	577079.29
+2004	MS	Perry	28111	Oil (bbl)	Oil	Royalties	42727.58
+2004	MS	Scott	28123	Oil & Gas		Bonus	35673
+2004	MS	Scott	28123	Oil & Gas		Rents	21803
+2004	MS	Scott	28123	Oil (bbl)	Oil	Royalties	23968.67
+2004	MS	Simpson	28127	Oil & Gas		Rents	1440
+2004	MS	Smith	28129	Oil & Gas		Bonus	170435
+2004	MS	Smith	28129	Oil & Gas		Rents	54944
+2004	MS	Stone	28131	Oil & Gas		Rents	34969.5
+2004	MS	Stone	28131	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	71848.77
+2004	MS	Tishomingo	28141	Oil & Gas		Rents	5094
+2004	MS	Wayne	28153	Oil & Gas		Bonus	4040
+2004	MS	Wayne	28153	Oil & Gas		Rents	75850.43
+2004	MS	Wayne	28153	Gas (mcf)	Processed (Residue) Gas	Royalties	960.63
+2004	MS	Wayne	28153	NGL (gal)	Gas Plant Products	Royalties	331.37
+2004	MS	Wayne	28153	Oil (bbl)	Oil	Royalties	355437.92
+2004	MS	Wilkinson	28157	Oil & Gas		Rents	14777
+2004	MS	Wilkinson	28157	Gas (mcf)	Processed (Residue) Gas	Royalties	108082.35
+2004	MS	Wilkinson	28157	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	-3317.13
+2004	MS	Wilkinson	28157	Oil (bbl)	Condensate	Royalties	-2574.25
+2004	MS	Wilkinson	28157	Oil (bbl)	Oil	Royalties	59073.93
+2004	MS	Winston	28159	Oil & Gas		Rents	10426.5
+2005	MS	Adams	28001	Oil & Gas		Bonus	1137
+2005	MS	Adams	28001	Oil & Gas		Rents	8431.5
+2005	MS	Adams	28001	Oil (bbl)	Oil	Royalties	77073.93
+2005	MS	Amite	28005	Oil & Gas		Rents	16624.5
+2005	MS	Chickasaw	28017	Oil & Gas		Other Revenues	908
+2005	MS	Chickasaw	28017	Oil & Gas		Rents	10996
+2005	MS	Chickasaw	28017	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	28653.36
+2005	MS	Choctaw	28019	Oil & Gas		Rents	4695
+2005	MS	Clarke	28023	Oil (bbl)	Oil	Royalties	291.96
+2005	MS	Covington	28031	Oil & Gas		Rents	166.5
+2005	MS	Covington	28031	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	216.82
+2005	MS	Covington	28031	Oil (bbl)	Oil	Royalties	1735.6
+2005	MS	Forrest	28035	Oil & Gas		Bonus	29972
+2005	MS	Forrest	28035	Oil & Gas		Rents	39001
+2005	MS	Forrest	28035	Gas (mcf)	Processed (Residue) Gas	Royalties	68623.82
+2005	MS	Forrest	28035	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	97706.16
+2005	MS	Forrest	28035	Oil (bbl)	Condensate	Royalties	43236.46
+2005	MS	Forrest	28035	Oil (bbl)	Oil	Royalties	5706.52
+2005	MS	Franklin	28037	Oil & Gas		Bonus	117922
+2005	MS	Franklin	28037	Oil & Gas		Rents	48166.44
+2005	MS	Franklin	28037	Oil (bbl)	Oil	Royalties	584045.37
+2005	MS	George	28039	Oil & Gas		Rents	2400
+2005	MS	Greene	28041	Oil & Gas		Rents	78
+2005	MS	Hancock	28045	Oil & Gas		Other Revenues	-2536.25
+2005	MS	Hancock	28045	Oil & Gas		Rents	64.5
+2005	MS	Hancock	28045	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	6.53
+2005	MS	Harrison	28047	Oil & Gas		Rents	45498
+2005	MS	Jackson	28059	Oil & Gas		Rents	2318
+2005	MS	Jasper	28061	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	8067.54
+2005	MS	Jasper	28061	Oil (bbl)	Condensate	Royalties	26.72
+2005	MS	Jeffer Davis	28065	Oil & Gas		Rents	135
+2005	MS	Jeffer Davis	28065	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	2658.71
+2005	MS	Jeffer Davis	28065	Oil (bbl)	Condensate	Royalties	23.86
+2005	MS	Jefferson	28063	Oil & Gas		Rents	2179.28
+2005	MS	Jones	28067	Oil & Gas		Other Roy Vals	-3000
+2005	MS	Jones	28067	Oil & Gas		Rents	6678.5
+2005	MS	Jones	28067	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	25797.29
+2005	MS	Jones	28067	Oil (bbl)	Condensate	Royalties	20838.05
+2005	MS	Lamar	28073	Oil & Gas		Rents	2385
+2005	MS	Lamar	28073	Oil (bbl)	Oil	Royalties	40390.62
+2005	MS	Lawrence	28077	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	199.22
+2005	MS	Lawrence	28077	Oil (bbl)	Condensate	Royalties	18.16
+2005	MS	Lincoln	28085	Oil & Gas		Rents	2020.5
+2005	MS	Lowndes	28087	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	141718.15
+2005	MS	Lowndes	28087	Oil (bbl)	Condensate	Royalties	2925.85
+2005	MS	Madison	28089	Oil & Gas		Other Revenues	483
+2005	MS	Monroe	28095	Oil & Gas		Rents	941.5
+2005	MS	Monroe	28095	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	2140.75
+2005	MS	Oktibbeha	28105	Oil & Gas		Bonus	1660
+2005	MS	Oktibbeha	28105	Oil & Gas		Rents	124.5
+2005	MS	Pearl River	28109	Oil & Gas		Rents	2372.5
+2005	MS	Pearl River	28109	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	25528.66
+2005	MS	Pearl River	28109	Oil (bbl)	Oil	Royalties	33448.09
+2005	MS	Perry	28111	Oil & Gas		Bonus	11080
+2005	MS	Perry	28111	Oil & Gas		Rents	67598.5
+2005	MS	Perry	28111	Oil (bbl)	Condensate	Royalties	51053.58
+2005	MS	Perry	28111	Oil (bbl)	Oil	Royalties	578586.32
+2005	MS	Scott	28123	Oil & Gas		Bonus	19518
+2005	MS	Scott	28123	Oil & Gas		Rents	37551.5
+2005	MS	Scott	28123	Oil (bbl)	Oil	Royalties	72103.43
+2005	MS	Simpson	28127	Oil & Gas		Rents	1440
+2005	MS	Smith	28129	Oil & Gas		Bonus	33035
+2005	MS	Smith	28129	Oil & Gas		Rents	70875
+2005	MS	Stone	28131	Oil & Gas		Rents	34969.5
+2005	MS	Stone	28131	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	97980.58
+2005	MS	Tate	28137	Oil & Gas		Rents	120
+2005	MS	Tishomingo	28141	Oil & Gas		Rents	6792
+2005	MS	Wayne	28153	Oil & Gas		Rents	66295
+2005	MS	Wayne	28153	Oil (bbl)	Oil	Royalties	426417.6
+2005	MS	Wilkinson	28157	Oil & Gas		Bonus	-10338
+2005	MS	Wilkinson	28157	Oil & Gas		Rents	16584
+2005	MS	Wilkinson	28157	Gas (mcf)	Processed (Residue) Gas	Royalties	49583.91
+2005	MS	Wilkinson	28157	Oil (bbl)	Oil	Royalties	47835.9
+2005	MS	Winston	28159	Oil & Gas		Rents	37854
+2006	MS	Adams	28001	Oil & Gas		Rents	7937.5
+2006	MS	Adams	28001	Oil (bbl)	Oil	Royalties	99179.47
+2006	MS	Amite	28005	Oil & Gas		Rents	18796.5
+2006	MS	Chickasaw	28017	Oil & Gas		Bonus	433836
+2006	MS	Chickasaw	28017	Oil & Gas		Other Revenues	908
+2006	MS	Chickasaw	28017	Oil & Gas		Rents	23266
+2006	MS	Chickasaw	28017	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	46787.7
+2006	MS	Choctaw	28019	Oil & Gas		Rents	4695
+2006	MS	Clarke	28023	Oil (bbl)	Oil	Royalties	51.37
+2006	MS	Copiah	28029	Oil & Gas		Bonus	146120
+2006	MS	Copiah	28029	Oil & Gas		Rents	11002.5
+2006	MS	Covington	28031	Oil & Gas		Rents	222
+2006	MS	Covington	28031	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	244.48
+2006	MS	Covington	28031	Oil & Gas		Royalties	-0.09
+2006	MS	Covington	28031	Oil (bbl)	Oil	Royalties	2019.56
+2006	MS	Forrest	28035	Oil & Gas		Bonus	16290
+2006	MS	Forrest	28035	Oil & Gas		Rents	26958.5
+2006	MS	Forrest	28035	Gas (mcf)	Processed (Residue) Gas	Royalties	-47.07
+2006	MS	Forrest	28035	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	158875.17
+2006	MS	Forrest	28035	Oil (bbl)	Condensate	Royalties	31005.15
+2006	MS	Forrest	28035	Oil (bbl)	Oil	Royalties	419.1
+2006	MS	Franklin	28037	Oil & Gas		Bonus	1500
+2006	MS	Franklin	28037	Oil & Gas		Other Roy Vals	-8556.79
+2006	MS	Franklin	28037	Oil & Gas		Rents	52560.72
+2006	MS	Franklin	28037	Oil (bbl)	Oil	Royalties	631570.37
+2006	MS	George	28039	Oil & Gas		Rents	2400
+2006	MS	Greene	28041	Oil & Gas		Rents	78
+2006	MS	Hancock	28045	Oil & Gas		Rents	64.5
+2006	MS	Hancock	28045	Oil (bbl)	Oil	Royalties	119.74
+2006	MS	Harrison	28047	Oil & Gas		Bonus	19200
+2006	MS	Harrison	28047	Oil & Gas		Rents	46069.5
+2006	MS	Jackson	28059	Oil & Gas		Bonus	14600
+2006	MS	Jackson	28059	Oil & Gas		Rents	4118.5
+2006	MS	Jasper	28061	Oil & Gas		Rents	18
+2006	MS	Jasper	28061	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	12313.54
+2006	MS	Jasper	28061	Oil (bbl)	Condensate	Royalties	75.42
+2006	MS	Jeffer Davis	28065	Oil & Gas		Rents	135
+2006	MS	Jeffer Davis	28065	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	10977.22
+2006	MS	Jeffer Davis	28065	Oil (bbl)	Condensate	Royalties	12.37
+2006	MS	Jeffer Davis	28065	Oil (bbl)	Oil	Royalties	1419.68
+2006	MS	Jefferson	28063	Oil & Gas		Bonus	5916
+2006	MS	Jefferson	28063	Oil & Gas		Rents	3372.78
+2006	MS	Jones	28067	Oil & Gas		Other Roy Vals	-578
+2006	MS	Jones	28067	Oil & Gas		Rents	1760.5
+2006	MS	Jones	28067	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	10131.93
+2006	MS	Jones	28067	Oil (bbl)	Condensate	Royalties	9482.53
+2006	MS	Lamar	28073	Oil & Gas		Rents	2385
+2006	MS	Lamar	28073	Oil (bbl)	Oil	Royalties	27082.89
+2006	MS	Lawrence	28077	Oil & Gas		Bonus	6
+2006	MS	Lawrence	28077	Oil & Gas		Rents	3
+2006	MS	Lawrence	28077	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	792.43
+2006	MS	Lawrence	28077	Oil (bbl)	Condensate	Royalties	105.92
+2006	MS	Lincoln	28085	Oil & Gas		Rents	2694
+2006	MS	Lowndes	28087	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	92453.72
+2006	MS	Lowndes	28087	Oil (bbl)	Condensate	Royalties	3622.95
+2006	MS	Madison	28089	Oil & Gas		Other Revenues	461
+2006	MS	Monroe	28095	Oil & Gas		Bonus	160
+2006	MS	Monroe	28095	Oil & Gas		Rents	2261.5
+2006	MS	Monroe	28095	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	2243.44
+2006	MS	Oktibbeha	28105	Oil & Gas		Rents	509.5
+2006	MS	Pearl River	28109	Oil & Gas		Bonus	3282
+2006	MS	Pearl River	28109	Oil & Gas		Rents	1842
+2006	MS	Pearl River	28109	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	-24075.97
+2006	MS	Pearl River	28109	Oil (bbl)	Oil	Royalties	23719.03
+2006	MS	Perry	28111	Oil & Gas		Bonus	92780
+2006	MS	Perry	28111	Oil & Gas		Other Revenues	122
+2006	MS	Perry	28111	Oil & Gas		Rents	79293
+2006	MS	Perry	28111	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	6.12
+2006	MS	Perry	28111	Oil (bbl)	Oil	Royalties	703444.38
+2006	MS	Scott	28123	Oil & Gas		Rents	38239
+2006	MS	Scott	28123	Oil (bbl)	Oil	Royalties	76396.56
+2006	MS	Simpson	28127	Oil & Gas		Bonus	9360
+2006	MS	Simpson	28127	Oil & Gas		Rents	2220
+2006	MS	Smith	28129	Oil & Gas		Bonus	36377
+2006	MS	Smith	28129	Oil & Gas		Rents	92356.5
+2006	MS	Stone	28131	Oil & Gas		Bonus	3114
+2006	MS	Stone	28131	Oil & Gas		Rents	39640.5
+2006	MS	Stone	28131	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	109574.22
+2006	MS	Stone	28131	Oil & Gas		Royalties	-143.72
+2006	MS	Tate	28137	Oil & Gas		Rents	120
+2006	MS	Tishomingo	28141	Oil & Gas		Rents	6792
+2006	MS	Wayne	28153	Oil & Gas		Bonus	50955.5
+2006	MS	Wayne	28153	Oil & Gas		Rents	67085.5
+2006	MS	Wayne	28153	Oil (bbl)	Oil	Royalties	362387.58
+2006	MS	Wilkinson	28157	Oil & Gas		Bonus	22080
+2006	MS	Wilkinson	28157	Oil & Gas		Rents	19244
+2006	MS	Wilkinson	28157	Gas (mcf)	Processed (Residue) Gas	Royalties	4857.29
+2006	MS	Wilkinson	28157	Oil (bbl)	Oil	Royalties	37051.74
+2006	MS	Winston	28159	Oil & Gas		Rents	38043
+2006	MS	Yalobusha	28161	Oil & Gas		Bonus	19500
+2006	MS	Yalobusha	28161	Oil & Gas		Rents	9307.5
+2007	MS	Adams	28001	Oil & Gas		Rents	5351.5
+2007	MS	Adams	28001	Oil (bbl)	Oil	Royalties	88452.82
+2007	MS	Amite	28005	Oil & Gas		Rents	16866.5
+2007	MS	Chickasaw	28017	Oil & Gas		Other Revenues	1281.48
+2007	MS	Chickasaw	28017	Oil & Gas		Rents	21509.5
+2007	MS	Chickasaw	28017	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	56318.62
+2007	MS	Choctaw	28019	Oil & Gas		Rents	4695
+2007	MS	Clarke	28023	Oil (bbl)	Oil	Royalties	69.14
+2007	MS	Copiah	28029	Oil & Gas		Rents	11002.5
+2007	MS	Covington	28031	Oil & Gas		Rents	222
+2007	MS	Covington	28031	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	304.52
+2007	MS	Covington	28031	Oil (bbl)	Oil	Royalties	3236.18
+2007	MS	Forrest	28035	Oil & Gas		Bonus	30942
+2007	MS	Forrest	28035	Oil & Gas		Rents	32762
+2007	MS	Forrest	28035	Gas (mcf)	Processed (Residue) Gas	Royalties	23351.86
+2007	MS	Forrest	28035	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	10296.08
+2007	MS	Forrest	28035	Oil (bbl)	Condensate	Royalties	6592.99
+2007	MS	Franklin	28037	Oil & Gas		Bonus	651504
+2007	MS	Franklin	28037	Oil & Gas		Rents	62368.72
+2007	MS	Franklin	28037	Oil (bbl)	Oil	Royalties	707212.96
+2007	MS	George	28039	Oil & Gas		Bonus	14316
+2007	MS	George	28039	Oil & Gas		Rents	8269.5
+2007	MS	Greene	28041	Oil & Gas		Bonus	1302
+2007	MS	Greene	28041	Oil & Gas		Rents	1054.5
+2007	MS	Hancock	28045	Oil & Gas		Rents	64.5
+2007	MS	Harrison	28047	Oil & Gas		Bonus	148311
+2007	MS	Harrison	28047	Oil & Gas		Rents	65833.5
+2007	MS	Jackson	28059	Oil & Gas		Bonus	149629
+2007	MS	Jackson	28059	Oil & Gas		Rents	14740.5
+2007	MS	Jasper	28061	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	15215.96
+2007	MS	Jasper	28061	Oil (bbl)	Condensate	Royalties	119.11
+2007	MS	Jeffer Davis	28065	Oil & Gas		Other Roy Vals	-900
+2007	MS	Jeffer Davis	28065	Oil & Gas		Rents	-405
+2007	MS	Jeffer Davis	28065	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	6929.97
+2007	MS	Jeffer Davis	28065	Oil (bbl)	Oil	Royalties	625.22
+2007	MS	Jefferson	28063	Oil & Gas		Rents	3372.78
+2007	MS	Jones	28067	Oil & Gas		Bonus	6510
+2007	MS	Jones	28067	Oil & Gas		Rents	5040.5
+2007	MS	Jones	28067	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	4532.76
+2007	MS	Jones	28067	Oil (bbl)	Condensate	Royalties	11578.99
+2007	MS	Jones	28067	Oil (bbl)	Oil	Royalties	-1226.93
+2007	MS	Lamar	28073	Oil & Gas		Rents	2385
+2007	MS	Lamar	28073	Oil (bbl)	Oil	Royalties	25699.5
+2007	MS	Lawrence	28077	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	77.45
+2007	MS	Lawrence	28077	Oil (bbl)	Condensate	Royalties	7.74
+2007	MS	Lincoln	28085	Oil & Gas		Rents	2694
+2007	MS	Lowndes	28087	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	77467.94
+2007	MS	Lowndes	28087	Oil (bbl)	Condensate	Royalties	4337.37
+2007	MS	Madison	28089	Oil & Gas		Other Revenues	944
+2007	MS	Monroe	28095	Oil & Gas		Rents	61.5
+2007	MS	Monroe	28095	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	1920.16
+2007	MS	Oktibbeha	28105	Oil & Gas		Rents	278.5
+2007	MS	Pearl River	28109	Oil & Gas		Rents	2244
+2007	MS	Pearl River	28109	Oil (bbl)	Oil	Royalties	49608.66
+2007	MS	Perry	28111	Oil & Gas		Bonus	35994
+2007	MS	Perry	28111	Oil & Gas		Other Revenues	122
+2007	MS	Perry	28111	Oil & Gas		Other Roy Vals	6238
+2007	MS	Perry	28111	Oil & Gas		Rents	33026
+2007	MS	Perry	28111	Oil (bbl)	Oil	Royalties	753015.22
+2007	MS	Scott	28123	Oil & Gas		Rents	32077
+2007	MS	Scott	28123	Oil (bbl)	Oil	Royalties	75959.77
+2007	MS	Simpson	28127	Oil & Gas		Rents	2220
+2007	MS	Smith	28129	Oil & Gas		Bonus	403138
+2007	MS	Smith	28129	Oil & Gas		Rents	88649
+2007	MS	Stone	28131	Oil & Gas		Bonus	1527135
+2007	MS	Stone	28131	Oil & Gas		Rents	75080.5
+2007	MS	Stone	28131	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	38088.51
+2007	MS	Tate	28137	Oil & Gas		Rents	120
+2007	MS	Tishomingo	28141	Oil & Gas		Rents	6792
+2007	MS	Wayne	28153	Oil & Gas		Bonus	80268
+2007	MS	Wayne	28153	Oil & Gas		Rents	64670.5
+2007	MS	Wayne	28153	Oil (bbl)	Oil	Royalties	422044.3
+2007	MS	Wilkinson	28157	Oil & Gas		Bonus	4400
+2007	MS	Wilkinson	28157	Oil & Gas		Rents	18589
+2007	MS	Wilkinson	28157	Gas (mcf)	Processed (Residue) Gas	Royalties	24081.08
+2007	MS	Wilkinson	28157	Oil (bbl)	Oil	Royalties	71014.88
+2007	MS	Winston	28159	Oil & Gas		Rents	38043
+2007	MS	Yalobusha	28161	Oil & Gas		Rents	9307.5
+2008	MS	Adams	28001	Oil & Gas		Rents	3664
+2008	MS	Adams	28001	Oil (bbl)	Oil	Royalties	103057.77
+2008	MS	Amite	28005	Oil & Gas		Rents	4038
+2008	MS	Chickasaw	28017	Oil & Gas		Rents	19694.5
+2008	MS	Chickasaw	28017	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	68055.66
+2008	MS	Choctaw	28019	Oil & Gas		Rents	6260
+2008	MS	Clarke	28023	Oil (bbl)	Oil	Royalties	1492.4
+2008	MS	Copiah	28029	Oil & Gas		Rents	11002.5
+2008	MS	Covington	28031	Oil & Gas		Bonus	9000
+2008	MS	Covington	28031	Oil & Gas		Rents	402
+2008	MS	Covington	28031	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	436.98
+2008	MS	Covington	28031	Oil (bbl)	Oil	Royalties	4399.7
+2008	MS	Forrest	28035	Oil & Gas		Bonus	24048
+2008	MS	Forrest	28035	Oil & Gas		Rents	31412
+2008	MS	Forrest	28035	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	103911.38
+2008	MS	Forrest	28035	Oil (bbl)	Condensate	Royalties	1794.88
+2008	MS	Forrest	28035	Oil (bbl)	Oil	Royalties	1321.61
+2008	MS	Franklin	28037	Oil & Gas		Other Roy Vals	10312.48
+2008	MS	Franklin	28037	Oil & Gas		Rents	27235.5
+2008	MS	Franklin	28037	Oil (bbl)	Oil	Royalties	1123560.28
+2008	MS	George	28039	Oil & Gas		Rents	8269.5
+2008	MS	Greene	28041	Oil & Gas		Rents	976.5
+2008	MS	Hancock	28045	Oil & Gas		Rents	86
+2008	MS	Harrison	28047	Oil & Gas		Rents	64819.5
+2008	MS	Jackson	28059	Oil & Gas		Rents	12680.5
+2008	MS	Jasper	28061	Oil & Gas		Rents	-18
+2008	MS	Jasper	28061	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	37222.62
+2008	MS	Jasper	28061	Oil (bbl)	Condensate	Royalties	702.28
+2008	MS	Jeffer Davis	28065	Oil & Gas		Other Roy Vals	453.11
+2008	MS	Jeffer Davis	28065	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	4884.79
+2008	MS	Jeffer Davis	28065	Oil (bbl)	Condensate	Royalties	-3.32
+2008	MS	Jeffer Davis	28065	Oil (bbl)	Oil	Royalties	1789.09
+2008	MS	Jefferson	28063	Oil & Gas		Rents	1480
+2008	MS	Jones	28067	Oil & Gas		Rents	4880.5
+2008	MS	Jones	28067	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	1376.46
+2008	MS	Jones	28067	Oil (bbl)	Condensate	Royalties	7033.4
+2008	MS	Jones	28067	Oil (bbl)	Oil	Royalties	1613.73
+2008	MS	Lamar	28073	Oil & Gas		Rents	-10845
+2008	MS	Lamar	28073	Oil (bbl)	Oil	Royalties	15673.76
+2008	MS	Lawrence	28077	Oil & Gas		Bonus	152000
+2008	MS	Lawrence	28077	Oil & Gas		Other Roy Vals	100
+2008	MS	Lawrence	28077	Oil & Gas		Rents	120
+2008	MS	Lawrence	28077	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	18.62
+2008	MS	Lawrence	28077	Oil (bbl)	Condensate	Royalties	12.6
+2008	MS	Lowndes	28087	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	90701.07
+2008	MS	Lowndes	28087	Oil (bbl)	Condensate	Royalties	5599.05
+2008	MS	Madison	28089	Oil & Gas		Other Revenues	483
+2008	MS	Marion	28091	Oil & Gas		Bonus	4190
+2008	MS	Marion	28091	Oil & Gas		Rents	247.5
+2008	MS	Monroe	28095	Oil & Gas		Rents	442
+2008	MS	Monroe	28095	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	1830.81
+2008	MS	Oktibbeha	28105	Oil & Gas		Rents	278.5
+2008	MS	Pearl River	28109	Oil & Gas		Other Roy Vals	397.45
+2008	MS	Pearl River	28109	Oil & Gas		Rents	1278
+2008	MS	Pearl River	28109	Oil (bbl)	Oil	Royalties	42164.5
+2008	MS	Perry	28111	Oil & Gas		Bonus	3287
+2008	MS	Perry	28111	Oil & Gas		Rents	32993.5
+2008	MS	Perry	28111	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	-0.91
+2008	MS	Perry	28111	Oil (bbl)	Oil	Royalties	695622.81
+2008	MS	Scott	28123	Oil & Gas		Other Roy Vals	33273.56
+2008	MS	Scott	28123	Oil & Gas		Rents	29815
+2008	MS	Scott	28123	Oil (bbl)	Oil	Royalties	99864.02
+2008	MS	Simpson	28127	Oil & Gas		Rents	780
+2008	MS	Smith	28129	Oil & Gas		Bonus	26498
+2008	MS	Smith	28129	Oil & Gas		Rents	88208
+2008	MS	Smith	28129	Oil (bbl)	Oil	Royalties	20230.81
+2008	MS	Stone	28131	Oil & Gas		Bonus	-34850
+2008	MS	Stone	28131	Oil & Gas		Rents	74435.5
+2008	MS	Stone	28131	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	79701.41
+2008	MS	Tate	28137	Oil & Gas		Rents	120
+2008	MS	Wayne	28153	Oil & Gas		Other Roy Vals	7387.4
+2008	MS	Wayne	28153	Oil & Gas		Rents	56033
+2008	MS	Wayne	28153	Oil (bbl)	Oil	Royalties	549996.54
+2008	MS	Wilkinson	28157	Oil & Gas		Bonus	10400
+2008	MS	Wilkinson	28157	Oil & Gas		Rents	10193.5
+2008	MS	Wilkinson	28157	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	23844.84
+2008	MS	Wilkinson	28157	Oil (bbl)	Oil	Royalties	88330.06
+2008	MS	Winston	28159	Oil & Gas		Rents	39289.5
+2008	MS	Yalobusha	28161	Oil & Gas		Rents	9307.5
+2009	MS	Adams	28001	Oil & Gas		Rents	3402
+2009	MS	Adams	28001	Oil (bbl)	Oil	Royalties	53221.89
+2009	MS	Amite	28005	Oil & Gas		Rents	4038
+2009	MS	Chickasaw	28017	Oil & Gas		Rents	16421
+2009	MS	Chickasaw	28017	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	21591.53
+2009	MS	Choctaw	28019	Oil & Gas		Rents	6260
+2009	MS	Clarke	28023	Oil (bbl)	Oil	Royalties	253.29
+2009	MS	Copiah	28029	Oil & Gas		Rents	11002.5
+2009	MS	Covington	28031	Oil & Gas		Rents	402
+2009	MS	Covington	28031	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	157
+2009	MS	Covington	28031	Oil (bbl)	Oil	Royalties	2716.5
+2009	MS	Forrest	28035	Oil & Gas		Rents	32172.5
+2009	MS	Forrest	28035	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	36595.67
+2009	MS	Forrest	28035	Oil (bbl)	Condensate	Royalties	59635.8
+2009	MS	Forrest	28035	Oil (bbl)	Oil	Royalties	399.26
+2009	MS	Franklin	28037	Oil & Gas		Rents	24832.5
+2009	MS	Franklin	28037	Oil (bbl)	Oil	Royalties	577327.51
+2009	MS	George	28039	Oil & Gas		Rents	8269.5
+2009	MS	Greene	28041	Oil & Gas		Rents	976.5
+2009	MS	Hancock	28045	Oil & Gas		Rents	86
+2009	MS	Harrison	28047	Oil & Gas		Rents	38535.5
+2009	MS	Jackson	28059	Oil & Gas		Rents	12046.5
+2009	MS	Jasper	28061	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	8509.04
+2009	MS	Jasper	28061	Oil (bbl)	Condensate	Royalties	181.61
+2009	MS	Jeffer Davis	28065	Oil & Gas		Other Roy Vals	-300
+2009	MS	Jeffer Davis	28065	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	3464.75
+2009	MS	Jeffer Davis	28065	Oil (bbl)	Condensate	Royalties	13.88
+2009	MS	Jeffer Davis	28065	Oil (bbl)	Oil	Royalties	843.11
+2009	MS	Jefferson	28063	Oil & Gas		Rents	1480
+2009	MS	Jones	28067	Oil & Gas		Rents	4880.5
+2009	MS	Jones	28067	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	3114.78
+2009	MS	Jones	28067	Oil (bbl)	Condensate	Royalties	11760.88
+2009	MS	Lamar	28073	Oil & Gas		Rents	240
+2009	MS	Lamar	28073	Oil (bbl)	Oil	Royalties	2081.88
+2009	MS	Lawrence	28077	Oil & Gas		Other Roy Vals	-99.76
+2009	MS	Lawrence	28077	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	145825.46
+2009	MS	Lawrence	28077	Oil (bbl)	Condensate	Royalties	7222.83
+2009	MS	Lowndes	28087	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	46875.09
+2009	MS	Lowndes	28087	Oil (bbl)	Condensate	Royalties	3195.19
+2009	MS	Madison	28089	Oil & Gas		Other Revenues	483
+2009	MS	Marion	28091	Oil & Gas		Rents	247.5
+2009	MS	Monroe	28095	Oil & Gas		Rents	-278
+2009	MS	Monroe	28095	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	1083.83
+2009	MS	Oktibbeha	28105	Oil & Gas		Rents	124.5
+2009	MS	Pearl River	28109	Oil & Gas		Rents	1521
+2009	MS	Pearl River	28109	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	52589.33
+2009	MS	Pearl River	28109	Oil (bbl)	Condensate	Royalties	36550.35
+2009	MS	Pearl River	28109	Oil (bbl)	Oil	Royalties	22149.99
+2009	MS	Perry	28111	Oil & Gas		Other Roy Vals	-250
+2009	MS	Perry	28111	Oil & Gas		Rents	39662.5
+2009	MS	Perry	28111	Oil (bbl)	Oil	Royalties	290508.16
+2009	MS	Scott	28123	Oil & Gas		Rents	23094
+2009	MS	Scott	28123	Oil (bbl)	Oil	Royalties	40850.88
+2009	MS	Smith	28129	Oil & Gas		Other Revenues	2630
+2009	MS	Smith	28129	Oil & Gas		Rents	101062.5
+2009	MS	Smith	28129	Oil (bbl)	Oil	Royalties	1512.81
+2009	MS	Stone	28131	Oil & Gas		Rents	47492.74
+2009	MS	Stone	28131	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	29355.47
+2009	MS	Tate	28137	Oil & Gas		Rents	120
+2009	MS	Wayne	28153	Oil & Gas		Rents	52699
+2009	MS	Wayne	28153	Oil (bbl)	Oil	Royalties	375894.36
+2009	MS	Wilkinson	28157	Oil & Gas		Rents	6199
+2009	MS	Wilkinson	28157	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	12558.34
+2009	MS	Wilkinson	28157	Oil (bbl)	Oil	Royalties	26178.29
+2009	MS	Winston	28159	Oil & Gas		Rents	9066
+2009	MS	Yalobusha	28161	Oil & Gas		Rents	9307.5
+2010	MS	Adams	28001	Oil & Gas		Rents	2342
+2010	MS	Adams	28001	Oil (bbl)	Oil	Royalties	43932.95
+2010	MS	Amite	28005	Oil & Gas		Bonus	2400
+2010	MS	Amite	28005	Oil & Gas		Rents	4098
+2010	MS	Chickasaw	28017	Oil & Gas		Rents	7002
+2010	MS	Chickasaw	28017	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	15800.05
+2010	MS	Claiborne	28021	Oil & Gas		Bonus	160
+2010	MS	Claiborne	28021	Oil & Gas		Rents	120
+2010	MS	Clarke	28023	Oil (bbl)	Oil	Royalties	543.37
+2010	MS	Copiah	28029	Oil & Gas		Bonus	36600
+2010	MS	Copiah	28029	Oil & Gas		Rents	13671
+2010	MS	Covington	28031	Oil & Gas		Rents	402
+2010	MS	Covington	28031	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	129.5
+2010	MS	Covington	28031	Oil (bbl)	Oil	Royalties	3448.02
+2010	MS	Forrest	28035	Oil & Gas		Rents	25878.5
+2010	MS	Forrest	28035	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	64075.91
+2010	MS	Forrest	28035	Oil (bbl)	Condensate	Royalties	75410.73
+2010	MS	Forrest	28035	Oil (bbl)	Oil	Royalties	3657.64
+2010	MS	Franklin	28037	Oil & Gas		Bonus	-102680
+2010	MS	Franklin	28037	Oil & Gas		Rents	22521.5
+2010	MS	Franklin	28037	Oil (bbl)	Oil	Royalties	679313.61
+2010	MS	George	28039	Oil & Gas		Rents	7969.5
+2010	MS	Greene	28041	Oil & Gas		Bonus	5600
+2010	MS	Greene	28041	Oil & Gas		Rents	1576.5
+2010	MS	Grenada	28043	Oil & Gas		Bonus	2420
+2010	MS	Grenada	28043	Oil & Gas		Rents	181.5
+2010	MS	Harrison	28047	Oil & Gas		Rents	27359.5
+2010	MS	Jackson	28059	Oil & Gas		Bonus	150
+2010	MS	Jackson	28059	Oil & Gas		Rents	11404.5
+2010	MS	Jasper	28061	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	6321.15
+2010	MS	Jasper	28061	Oil (bbl)	Condensate	Royalties	186.95
+2010	MS	Jeffer Davis	28065	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	2952.24
+2010	MS	Jeffer Davis	28065	Oil (bbl)	Condensate	Royalties	29.67
+2010	MS	Jeffer Davis	28065	Oil (bbl)	Oil	Royalties	1113.18
+2010	MS	Jefferson	28063	Oil & Gas		Rents	1241.5
+2010	MS	Jones	28067	Oil & Gas		Other Roy Vals	78.9
+2010	MS	Jones	28067	Oil & Gas		Rents	4880.5
+2010	MS	Jones	28067	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	5998.54
+2010	MS	Jones	28067	Oil (bbl)	Condensate	Royalties	15730.12
+2010	MS	Lamar	28073	Oil & Gas		Rents	240
+2010	MS	Lawrence	28077	Oil & Gas		Bonus	160
+2010	MS	Lawrence	28077	Oil & Gas		Other Roy Vals	-0.24
+2010	MS	Lawrence	28077	Oil & Gas		Rents	120
+2010	MS	Lawrence	28077	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	39754.33
+2010	MS	Lawrence	28077	Oil (bbl)	Condensate	Royalties	2596.04
+2010	MS	Lowndes	28087	Oil & Gas		Other Revenues	154.03
+2010	MS	Lowndes	28087	Oil & Gas		Other Roy Vals	76.32
+2010	MS	Lowndes	28087	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	48172.29
+2010	MS	Lowndes	28087	Oil (bbl)	Condensate	Royalties	4663.36
+2010	MS	Madison	28089	Oil & Gas		Other Revenues	483
+2010	MS	Marion	28091	Oil & Gas		Rents	247.5
+2010	MS	Monroe	28095	Oil & Gas		Bonus	2460
+2010	MS	Monroe	28095	Oil & Gas		Rents	61.5
+2010	MS	Monroe	28095	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	144.81
+2010	MS	Newton	28101	Oil & Gas		Bonus	348
+2010	MS	Newton	28101	Oil & Gas		Rents	261
+2010	MS	Pearl River	28109	Oil & Gas		Rents	507
+2010	MS	Pearl River	28109	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	148546.51
+2010	MS	Pearl River	28109	Oil (bbl)	Condensate	Royalties	62701.99
+2010	MS	Pearl River	28109	Oil (bbl)	Oil	Royalties	23173.58
+2010	MS	Perry	28111	Oil & Gas		Bonus	9900
+2010	MS	Perry	28111	Oil & Gas		Other Roy Vals	5500
+2010	MS	Perry	28111	Oil & Gas		Rents	28033.5
+2010	MS	Perry	28111	Oil (bbl)	Oil	Royalties	544035.78
+2010	MS	Scott	28123	Oil & Gas		Rents	13506
+2010	MS	Scott	28123	Oil (bbl)	Oil	Royalties	1475.51
+2010	MS	Simpson	28127	Oil & Gas		Bonus	2960
+2010	MS	Simpson	28127	Oil & Gas		Rents	360
+2010	MS	Smith	28129	Oil & Gas		Other Revenues	1117.19
+2010	MS	Smith	28129	Oil & Gas		Other Roy Vals	0.42
+2010	MS	Smith	28129	Oil & Gas		Rents	102977
+2010	MS	Stone	28131	Oil & Gas		Other Roy Vals	81.93
+2010	MS	Stone	28131	Oil & Gas		Rents	36327
+2010	MS	Stone	28131	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	26829.84
+2010	MS	Tate	28137	Oil & Gas		Rents	160
+2010	MS	Wayne	28153	Oil & Gas		Bonus	72000
+2010	MS	Wayne	28153	Oil & Gas		Rents	29307
+2010	MS	Wayne	28153	Oil (bbl)	Oil	Royalties	500323.39
+2010	MS	Wilkinson	28157	Oil & Gas		Bonus	-2268
+2010	MS	Wilkinson	28157	Oil & Gas		Rents	7562
+2010	MS	Wilkinson	28157	Oil (bbl)	Oil	Royalties	51626.45
+2011	MS	Adams	28001	Oil & Gas		Bonus	103222
+2011	MS	Adams	28001	Oil & Gas		Rents	8755
+2011	MS	Adams	28001	Oil (bbl)	Oil	Royalties	28222.92
+2011	MS	Amite	28005	Oil & Gas		Bonus	388062
+2011	MS	Amite	28005	Oil & Gas		Rents	23153
+2011	MS	Chickasaw	28017	Oil & Gas		Rents	7802
+2011	MS	Chickasaw	28017	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	7856.81
+2011	MS	Claiborne	28021	Oil & Gas		Rents	120
+2011	MS	Clarke	28023	Oil (bbl)	Oil	Royalties	54.2
+2011	MS	Copiah	28029	Oil & Gas		Rents	17278
+2011	MS	Covington	28031	Oil & Gas		Bonus	850
+2011	MS	Covington	28031	Oil & Gas		Rents	183
+2011	MS	Covington	28031	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	149.26
+2011	MS	Covington	28031	Oil (bbl)	Oil	Royalties	5126.32
+2011	MS	Forrest	28035	Oil & Gas		Bonus	16180
+2011	MS	Forrest	28035	Oil & Gas		Rents	30550
+2011	MS	Forrest	28035	Gas (mcf)	Processed (Residue) Gas	Royalties	15020.48
+2011	MS	Forrest	28035	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	138905.48
+2011	MS	Forrest	28035	Oil (bbl)	Condensate	Royalties	27433.2
+2011	MS	Forrest	28035	Oil (bbl)	Oil	Royalties	72649.25
+2011	MS	Franklin	28037	Oil & Gas		Bonus	658573.5
+2011	MS	Franklin	28037	Oil & Gas		Other Roy Vals	3.4
+2011	MS	Franklin	28037	Oil & Gas		Rents	49432.5
+2011	MS	Franklin	28037	Oil (bbl)	Oil	Royalties	948346.02
+2011	MS	George	28039	Oil & Gas		Rents	7969.5
+2011	MS	Greene	28041	Oil & Gas		Rents	1576.5
+2011	MS	Grenada	28043	Oil & Gas		Bonus	12082
+2011	MS	Grenada	28043	Oil & Gas		Rents	363
+2011	MS	Harrison	28047	Oil & Gas		Bonus	33997
+2011	MS	Harrison	28047	Oil & Gas		Rents	50194
+2011	MS	Jackson	28059	Oil & Gas		Rents	12604.5
+2011	MS	Jasper	28061	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	4731.34
+2011	MS	Jasper	28061	Oil (bbl)	Condensate	Royalties	158.82
+2011	MS	Jeffer Davis	28065	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	2563.26
+2011	MS	Jeffer Davis	28065	Oil (bbl)	Condensate	Royalties	13.54
+2011	MS	Jeffer Davis	28065	Oil (bbl)	Oil	Royalties	1455.59
+2011	MS	Jefferson	28063	Oil & Gas		Rents	1146
+2011	MS	Jones	28067	Oil & Gas		Rents	4880.5
+2011	MS	Jones	28067	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	5721.2
+2011	MS	Jones	28067	Oil (bbl)	Condensate	Royalties	9464.04
+2011	MS	Jones	28067	Oil (bbl)	Oil	Royalties	11082.85
+2011	MS	Lamar	28073	Oil (bbl)	Oil	Royalties	327685.24
+2011	MS	Lawrence	28077	Oil & Gas		Rents	120
+2011	MS	Lawrence	28077	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	19892.66
+2011	MS	Lawrence	28077	Oil (bbl)	Condensate	Royalties	1666.62
+2011	MS	Lowndes	28087	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	35652.74
+2011	MS	Lowndes	28087	Oil (bbl)	Condensate	Royalties	3149.91
+2011	MS	Madison	28089	Oil & Gas		Other Revenues	483
+2011	MS	Marion	28091	Oil & Gas		Rents	247.5
+2011	MS	Monroe	28095	Oil & Gas		Rents	61.5
+2011	MS	Monroe	28095	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	39.75
+2011	MS	Newton	28101	Oil & Gas		Rents	261
+2011	MS	Pearl River	28109	Oil & Gas		Bonus	82
+2011	MS	Pearl River	28109	Oil & Gas		Rents	773.5
+2011	MS	Pearl River	28109	Gas (mcf)	Processed (Residue) Gas	Royalties	120706.05
+2011	MS	Pearl River	28109	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	29583.74
+2011	MS	Pearl River	28109	Oil (bbl)	Condensate	Royalties	92573.21
+2011	MS	Pearl River	28109	Oil (bbl)	Oil	Royalties	46392.91
+2011	MS	Perry	28111	Oil & Gas		Bonus	72726
+2011	MS	Perry	28111	Oil & Gas		Other Roy Vals	-2088
+2011	MS	Perry	28111	Oil & Gas		Rents	46175
+2011	MS	Perry	28111	Oil (bbl)	Oil	Royalties	1515777.12
+2011	MS	Scott	28123	Oil & Gas		Bonus	4778
+2011	MS	Scott	28123	Oil & Gas		Rents	12007.5
+2011	MS	Scott	28123	Oil (bbl)	Oil	Royalties	10580.39
+2011	MS	Sharkey	28125	Oil & Gas		Bonus	116012
+2011	MS	Sharkey	28125	Oil & Gas		Rents	86829
+2011	MS	Simpson	28127	Oil & Gas		Rents	360
+2011	MS	Smith	28129	Oil & Gas		Bonus	70220
+2011	MS	Smith	28129	Oil & Gas		Rents	122581
+2011	MS	Stone	28131	Oil & Gas		Rents	36327
+2011	MS	Stone	28131	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	-2314.12
+2011	MS	Tate	28137	Oil & Gas		Rents	160
+2011	MS	Wayne	28153	Oil & Gas		Bonus	203454
+2011	MS	Wayne	28153	Oil & Gas		Rents	41849
+2011	MS	Wayne	28153	Oil (bbl)	Oil	Royalties	517529.25
+2011	MS	Wilkinson	28157	Oil & Gas		Bonus	11032
+2011	MS	Wilkinson	28157	Oil & Gas		Other Roy Vals	787.37
+2011	MS	Wilkinson	28157	Oil & Gas		Rents	7062
+2011	MS	Wilkinson	28157	Oil (bbl)	Oil	Royalties	48845.3
+2012	MS	Adams	28001	Oil & Gas		Rents	9638.5
+2012	MS	Adams	28001	Oil (bbl)	Oil	Royalties	46049.87
+2012	MS	Amite	28005	Oil & Gas		Rents	22245
+2012	MS	Chickasaw	28017	Oil & Gas		Rents	6358
+2012	MS	Chickasaw	28017	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	3817.09
+2012	MS	Claiborne	28021	Oil & Gas		Rents	120
+2012	MS	Clarke	28023	Oil (bbl)	Oil	Royalties	208.07
+2012	MS	Copiah	28029	Oil & Gas		Rents	17278
+2012	MS	Covington	28031	Oil & Gas		Bonus	2072
+2012	MS	Covington	28031	Oil & Gas		Rents	1347
+2012	MS	Covington	28031	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	78.38
+2012	MS	Covington	28031	Oil (bbl)	Oil	Royalties	6038.76
+2012	MS	Forrest	28035	Oil & Gas		Bonus	8752
+2012	MS	Forrest	28035	Oil & Gas		Other Roy Vals	0.01
+2012	MS	Forrest	28035	Oil & Gas		Rents	35626
+2012	MS	Forrest	28035	Gas (mcf)	Processed (Residue) Gas	Royalties	12761.37
+2012	MS	Forrest	28035	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	18027.59
+2012	MS	Forrest	28035	Oil (bbl)	Condensate	Royalties	30180.67
+2012	MS	Forrest	28035	Oil (bbl)	Oil	Royalties	106175.94
+2012	MS	Franklin	28037	Oil & Gas		Bonus	3575436
+2012	MS	Franklin	28037	Oil & Gas		Rents	137635.5
+2012	MS	Franklin	28037	Oil (bbl)	Oil	Royalties	1033259.71
+2012	MS	George	28039	Oil & Gas		Rents	9678
+2012	MS	Greene	28041	Oil & Gas		Rents	1902
+2012	MS	Grenada	28043	Oil & Gas		Bonus	62048
+2012	MS	Grenada	28043	Oil & Gas		Rents	90312
+2012	MS	Harrison	28047	Oil & Gas		Rents	53682.5
+2012	MS	Jackson	28059	Oil & Gas		Rents	14243.5
+2012	MS	Jasper	28061	Oil & Gas		Bonus	528164
+2012	MS	Jasper	28061	Oil & Gas		Rents	25242
+2012	MS	Jasper	28061	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	2646.14
+2012	MS	Jasper	28061	Oil (bbl)	Condensate	Royalties	68.56
+2012	MS	Jeffer Davis	28065	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	1362.58
+2012	MS	Jeffer Davis	28065	Oil (bbl)	Condensate	Royalties	1.43
+2012	MS	Jeffer Davis	28065	Oil (bbl)	Oil	Royalties	1310.82
+2012	MS	Jefferson	28063	Oil & Gas		Rents	1146
+2012	MS	Jones	28067	Oil & Gas		Rents	3774
+2012	MS	Jones	28067	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	3079.49
+2012	MS	Jones	28067	Oil (bbl)	Condensate	Royalties	18323.43
+2012	MS	Lamar	28073	Oil (bbl)	Oil	Royalties	583650.49
+2012	MS	Lawrence	28077	Oil & Gas		Rents	120
+2012	MS	Lawrence	28077	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	3241.79
+2012	MS	Lawrence	28077	Oil (bbl)	Condensate	Royalties	295.71
+2012	MS	Lowndes	28087	Gas (mcf)	Processed (Residue) Gas	Royalties	14113.79
+2012	MS	Lowndes	28087	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	5108.97
+2012	MS	Lowndes	28087	Oil (bbl)	Condensate	Royalties	1174.45
+2012	MS	Lowndes	28087	Oil (bbl)	Oil	Royalties	3905.26
+2012	MS	Madison	28089	Oil & Gas		Other Revenues	483
+2012	MS	Monroe	28095	Oil & Gas		Rents	61.5
+2012	MS	Newton	28101	Oil & Gas		Rents	261
+2012	MS	Pearl River	28109	Oil & Gas		Rents	541.5
+2012	MS	Pearl River	28109	Gas (mcf)	Processed (Residue) Gas	Royalties	111629.97
+2012	MS	Pearl River	28109	Oil (bbl)	Condensate	Royalties	96795.03
+2012	MS	Pearl River	28109	Oil (bbl)	Oil	Royalties	53457.58
+2012	MS	Perry	28111	Oil & Gas		Other Roy Vals	-2400
+2012	MS	Perry	28111	Oil & Gas		Rents	43883
+2012	MS	Perry	28111	Oil (bbl)	Oil	Royalties	1229475.57
+2012	MS	Scott	28123	Oil & Gas		Bonus	174733
+2012	MS	Scott	28123	Oil & Gas		Rents	15179
+2012	MS	Sharkey	28125	Oil & Gas		Bonus	600
+2012	MS	Sharkey	28125	Oil & Gas		Rents	87729
+2012	MS	Simpson	28127	Oil & Gas		Rents	360
+2012	MS	Smith	28129	Oil & Gas		Bonus	68862
+2012	MS	Smith	28129	Oil & Gas		Rents	133307.34
+2012	MS	Stone	28131	Oil & Gas		Rents	46684
+2012	MS	Stone	28131	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	15100.32
+2012	MS	Tate	28137	Oil & Gas		Rents	160
+2012	MS	Wayne	28153	Oil & Gas		Bonus	115978
+2012	MS	Wayne	28153	Oil & Gas		Rents	47773
+2012	MS	Wayne	28153	Oil (bbl)	Oil	Royalties	525595.01
+2012	MS	Wilkinson	28157	Oil & Gas		Bonus	153622
+2012	MS	Wilkinson	28157	Oil & Gas		Rents	22867.5
+2012	MS	Wilkinson	28157	Oil (bbl)	Oil	Royalties	63161.62
+2013	MS	Adams	28001	Oil & Gas		Bonus	-31577
+2013	MS	Adams	28001	Oil & Gas		Rents	8360.5
+2013	MS	Adams	28001	Oil (bbl)	Oil	Royalties	37629.61
+2013	MS	Amite	28005	Oil & Gas		Bonus	4848
+2013	MS	Amite	28005	Oil & Gas		Rents	22731
+2013	MS	Chickasaw	28017	Oil & Gas		Rents	7217.5
+2013	MS	Chickasaw	28017	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	8889.56
+2013	MS	Claiborne	28021	Oil & Gas		Rents	120
+2013	MS	Clarke	28023	Oil & Gas		Bonus	8868
+2013	MS	Clarke	28023	Oil & Gas		Rents	561
+2013	MS	Clarke	28023	Oil (bbl)	Oil	Royalties	566.19
+2013	MS	Copiah	28029	Oil & Gas		Rents	17278
+2013	MS	Covington	28031	Oil & Gas		Rents	852
+2013	MS	Covington	28031	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	76.78
+2013	MS	Covington	28031	Oil (bbl)	Oil	Royalties	5460.92
+2013	MS	Forrest	28035	Oil & Gas		Rents	32238.5
+2013	MS	Forrest	28035	Gas (mcf)	Processed (Residue) Gas	Royalties	3463.01
+2013	MS	Forrest	28035	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	13923.64
+2013	MS	Forrest	28035	Oil (bbl)	Condensate	Royalties	-1967.34
+2013	MS	Forrest	28035	Oil (bbl)	Oil	Royalties	50075.49
+2013	MS	Franklin	28037	Oil & Gas		Bonus	34755
+2013	MS	Franklin	28037	Oil & Gas		Rents	102252.5
+2013	MS	Franklin	28037	Oil (bbl)	Oil	Royalties	1060696.95
+2013	MS	George	28039	Oil & Gas		Rents	9678
+2013	MS	Greene	28041	Oil & Gas		Rents	1902
+2013	MS	Grenada	28043	Oil & Gas		Rents	45277.5
+2013	MS	Harrison	28047	Oil & Gas		Rents	53682.5
+2013	MS	Jackson	28059	Oil & Gas		Rents	15203.5
+2013	MS	Jasper	28061	Oil & Gas		Bonus	56000
+2013	MS	Jasper	28061	Oil & Gas		Rents	25362
+2013	MS	Jasper	28061	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	2673.88
+2013	MS	Jasper	28061	Oil (bbl)	Condensate	Royalties	19.11
+2013	MS	Jeffer Davis	28065	Gas (mcf)	Processed (Residue) Gas	Royalties	23358.96
+2013	MS	Jeffer Davis	28065	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	1528.86
+2013	MS	Jeffer Davis	28065	Oil (bbl)	Condensate	Royalties	565.79
+2013	MS	Jeffer Davis	28065	Oil (bbl)	Oil	Royalties	1285.65
+2013	MS	Jefferson	28063	Oil & Gas		Rents	1146
+2013	MS	Jones	28067	Oil & Gas		Rents	3774
+2013	MS	Jones	28067	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	3723.25
+2013	MS	Jones	28067	Oil (bbl)	Condensate	Royalties	15796.91
+2013	MS	Lamar	28073	Oil (bbl)	Oil	Royalties	1134142.31
+2013	MS	Lawrence	28077	Oil & Gas		Rents	120
+2013	MS	Lawrence	28077	Gas (mcf)	Processed (Residue) Gas	Royalties	113036.25
+2013	MS	Lawrence	28077	Oil (bbl)	Condensate	Royalties	17346.33
+2013	MS	Lowndes	28087	Gas (mcf)	Processed (Residue) Gas	Royalties	25077.41
+2013	MS	Lowndes	28087	Oil (bbl)	Oil	Royalties	1579.1
+2013	MS	Madison	28089	Oil & Gas		Bonus	178500
+2013	MS	Madison	28089	Oil & Gas		Other Revenues	483
+2013	MS	Madison	28089	Oil & Gas		Rents	525
+2013	MS	Monroe	28095	Oil & Gas		Rents	61.5
+2013	MS	Newton	28101	Oil & Gas		Rents	261
+2013	MS	Pearl River	28109	Oil & Gas		Rents	861.5
+2013	MS	Pearl River	28109	Gas (mcf)	Processed (Residue) Gas	Royalties	58498.72
+2013	MS	Pearl River	28109	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	8817.13
+2013	MS	Pearl River	28109	Oil (bbl)	Condensate	Royalties	36182.38
+2013	MS	Pearl River	28109	Oil (bbl)	Oil	Royalties	38596.14
+2013	MS	Perry	28111	Oil & Gas		Other Roy Vals	-4200
+2013	MS	Perry	28111	Oil & Gas		Rents	41969
+2013	MS	Perry	28111	Oil (bbl)	Oil	Royalties	1830894.52
+2013	MS	Scott	28123	Oil & Gas		Bonus	87038
+2013	MS	Scott	28123	Oil & Gas		Rents	17048
+2013	MS	Sharkey	28125	Oil & Gas		Rents	87279
+2013	MS	Simpson	28127	Oil & Gas		Rents	360
+2013	MS	Smith	28129	Oil & Gas		Bonus	12370
+2013	MS	Smith	28129	Oil & Gas		Rents	129507.5
+2013	MS	Smith	28129	Oil (bbl)	Condensate	Royalties	17097.32
+2013	MS	Stone	28131	Oil & Gas		Rents	46684
+2013	MS	Stone	28131	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	11152.86
+2013	MS	Tate	28137	Oil & Gas		Rents	160
+2013	MS	Wayne	28153	Oil & Gas		Rents	46033
+2013	MS	Wayne	28153	Oil (bbl)	Oil	Royalties	456996.26
+2013	MS	Wilkinson	28157	Oil & Gas		Bonus	-16922
+2013	MS	Wilkinson	28157	Oil & Gas		Rents	13648
+2013	MS	Wilkinson	28157	Oil (bbl)	Oil	Royalties	56277.64

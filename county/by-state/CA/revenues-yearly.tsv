@@ -1,698 +1,914 @@
-Year	State	County	FIPS	Commodity	type	Revenue
-2004	CA	Contra Costa	06013	Oil & Gas	Other Roy Vals	55
-2004	CA	Contra Costa	06013	Gas	Royalties	204.59
-2004	CA	Contra Costa	06013	Gas	Royalties	1860.9
-2004	CA	Fresno	06019	Oil & Gas	Other Revenues	606.13
-2004	CA	Fresno	06019	Gas	Royalties	8204.93
-2004	CA	Fresno	06019	Gas	Royalties	52197.8
-2004	CA	Fresno	06019	Gas	Royalties	221952.28
-2004	CA	Fresno	06019	Oil	Royalties	122746.65
-2004	CA	Glenn	06021	Gas	Royalties	4094.69
-2004	CA	Imperial	06025	Geothermal	Other Roy Vals	7584696.97
-2004	CA	Imperial	06025	Geothermal	Royalties	31447
-2004	CA	Imperial	06025	Geothermal	Royalties	992.16
-2004	CA	Inyo	06027	Geothermal	Royalties	3546438.88
-2004	CA	Kern	06029	Oil & Gas	Other Revenues	3367.91
-2004	CA	Kern	06029	Oil & Gas	Other Roy Vals	2203.8
-2004	CA	Kern	06029	Gas	Royalties	1800
-2004	CA	Kern	06029	Gas	Royalties	27496.56
-2004	CA	Kern	06029	Gas	Royalties	337635.34
-2004	CA	Kern	06029	Gas	Royalties	51394.87
-2004	CA	Kern	06029	Oil	Royalties	11773.43
-2004	CA	Kern	06029	Oil	Royalties	110.93
-2004	CA	Kern	06029	Oil	Royalties	9950396.26
-2004	CA	Kern	06030	Oil & Gas	Other Revenues	3367.91
-2004	CA	Kern	06030	Oil & Gas	Other Roy Vals	2203.8
-2004	CA	Kern	06030	Gas	Royalties	1800
-2004	CA	Kern	06030	Gas	Royalties	27496.56
-2004	CA	Kern	06030	Gas	Royalties	337635.34
-2004	CA	Kern	06030	Gas	Royalties	65903.2
-2004	CA	Kern	06030	Oil	Royalties	11773.43
-2004	CA	Kern	06030	Oil	Royalties	110.93
-2004	CA	Kern	06030	Oil	Royalties	10098301.54
-2004	CA	Kings	06031	Oil & Gas	Other Revenues	2265.34
-2004	CA	Kings	06031	Gas	Royalties	10229.69
-2004	CA	Kings	06031	Gas	Royalties	65595.09
-2004	CA	Kings	06031	Oil	Royalties	82145.15
-2004	CA	Lake	06033	Geothermal	Royalties	2689982.36
-2004	CA	Lassen	06035	Geothermal	Royalties	39865.28
-2004	CA	Los Angeles	06037	Oil & Gas	Other Revenues	20125.43
-2004	CA	Los Angeles	06037	Gas	Royalties	5329.59
-2004	CA	Los Angeles	06037	Gas	Royalties	328.58
-2004	CA	Los Angeles	06037	Gas	Royalties	35825.15
-2004	CA	Los Angeles	06037	Oil	Royalties	70646.03
-2004	CA	Los Angeles	06037	Oil	Royalties	1761039.64
-2004	CA	Mono	06051	Geothermal	Other Revenues	8320
-2004	CA	Mono	06051	Geothermal	Other Roy Vals	-100000
-2004	CA	Mono	06051	Geothermal	Royalties	186978.74
-2004	CA	Monterey	06053	Oil	Royalties	7516.59
-2004	CA	San Benito	06069	Oil & Gas	Other Revenues	40.3
-2004	CA	San Benito	06069	Oil	Royalties	876.24
-2004	CA	San Bernardn	06071	Sodium	Royalties	31693.82
-2004	CA	San Bernardn	06071	Sodium	Royalties	-328.08
-2004	CA	San Bernardn	06071	Sodium	Royalties	260287.46
-2004	CA	San Bernardn	06071	Solids	Royalties	-18463.04
-2004	CA	San Bernardn	06071	Solids	Royalties	635.38
-2004	CA	San Bernardn	06071	Solids	Royalties	-3086.3
-2004	CA	San Bernardn	06071	Solids	Royalties	-16152.59
-2004	CA	San Bernardn	06071	Solids	Royalties	-52.69
-2004	CA	San Joaquin	06077	Gas	Royalties	2675.8
-2004	CA	San Luis Ob.	06079	Oil & Gas	Other Revenues	1233.35
-2004	CA	San Luis Ob.	06079	Oil & Gas	Other Roy Vals	6215
-2004	CA	San Luis Ob.	06079	Oil	Royalties	49085.67
-2004	CA	Santa Barbar	06083	Gas	Royalties	543.04
-2004	CA	Santa Barbar	06083	Gas	Royalties	175231.44
-2004	CA	Santa Barbar	06083	Oil	Royalties	307299.77
-2004	CA	Solano	06095	Gas	Royalties	2537068.52
-2004	CA	Solano	06095	Oil	Royalties	8286.97
-2004	CA	Sonoma	06097	Geothermal	Royalties	3366259.11
-2004	CA	Ventura	06111	Oil & Gas	Other Revenues	511.37
-2004	CA	Ventura	06111	Gas	Royalties	2753.81
-2004	CA	Ventura	06111	Gas	Royalties	21730.54
-2004	CA	Ventura	06111	Gas	Royalties	83660.82
-2004	CA	Ventura	06111	Gas	Royalties	227364.05
-2004	CA	Ventura	06111	Oil	Royalties	2033.36
-2004	CA	Ventura	06111	Oil	Royalties	730299.01
-2005	CA	Contra Costa	06013	Oil & Gas	Other Roy Vals	1800
-2005	CA	Contra Costa	06013	Gas	Royalties	11629.39
-2005	CA	Contra Costa	06013	Oil	Royalties	161.51
-2005	CA	Contra Costa	06013	Oil	Royalties	-16.82
-2005	CA	Fresno	06019	Oil & Gas	Other Revenues	911.59
-2005	CA	Fresno	06019	Oil & Gas	Other Roy Vals	50
-2005	CA	Fresno	06019	Gas	Royalties	10019.96
-2005	CA	Fresno	06019	Gas	Royalties	78707.86
-2005	CA	Fresno	06019	Gas	Royalties	284409.85
-2005	CA	Fresno	06019	Oil	Royalties	3927.35
-2005	CA	Fresno	06019	Oil	Royalties	163668.79
-2005	CA	Glenn	06021	Oil & Gas	Other Roy Vals	185
-2005	CA	Glenn	06021	Gas	Royalties	5695.92
-2005	CA	Imperial	06025	Geothermal	Royalties	298307
-2005	CA	Imperial	06025	Geothermal	Royalties	835.92
-2005	CA	Inyo	06027	Geothermal	Royalties	-223827.03
-2005	CA	Kern	06029	Oil & Gas	Other Revenues	6049.81
-2005	CA	Kern	06029	Oil & Gas	Other Roy Vals	-27650
-2005	CA	Kern	06029	Gas	Royalties	1950
-2005	CA	Kern	06029	Gas	Royalties	13470.76
-2005	CA	Kern	06029	Gas	Royalties	119583.64
-2005	CA	Kern	06029	Gas	Royalties	296184.43
-2005	CA	Kern	06029	Oil	Royalties	13431.37
-2005	CA	Kern	06029	Oil	Royalties	34.56
-2005	CA	Kern	06029	Oil	Royalties	511.82
-2005	CA	Kern	06029	Oil	Royalties	13985619.75
-2005	CA	Kern	06030	Oil & Gas	Other Revenues	6049.81
-2005	CA	Kern	06030	Oil & Gas	Other Roy Vals	-27650
-2005	CA	Kern	06030	Gas	Royalties	1950
-2005	CA	Kern	06030	Gas	Royalties	13470.76
-2005	CA	Kern	06030	Gas	Royalties	119583.64
-2005	CA	Kern	06030	Gas	Royalties	313452.11
-2005	CA	Kern	06030	Oil	Royalties	13431.37
-2005	CA	Kern	06030	Oil	Royalties	34.56
-2005	CA	Kern	06030	Oil	Royalties	511.82
-2005	CA	Kern	06030	Oil	Royalties	14123906.41
-2005	CA	Kings	06031	Oil & Gas	Other Revenues	2858.98
-2005	CA	Kings	06031	Gas	Royalties	13620.95
-2005	CA	Kings	06031	Gas	Royalties	107341.23
-2005	CA	Kings	06031	Oil	Royalties	149612.91
-2005	CA	Lake	06033	Geothermal	Royalties	3145789.76
-2005	CA	Lassen	06035	Geothermal	Royalties	64200.46
-2005	CA	Los Angeles	06037	Oil & Gas	Other Revenues	120
-2005	CA	Los Angeles	06037	Gas	Royalties	15345.46
-2005	CA	Los Angeles	06037	Gas	Royalties	420.08
-2005	CA	Los Angeles	06037	Gas	Royalties	47093.96
-2005	CA	Los Angeles	06037	Oil	Royalties	69621.38
-2005	CA	Los Angeles	06037	Oil	Royalties	1903981.45
-2005	CA	Mono	06051	Geothermal	Other Revenues	1600
-2005	CA	Mono	06051	Geothermal	Royalties	94198.39
-2005	CA	Monterey	06053	Oil	Royalties	9497.31
-2005	CA	San Benito	06069	Oil	Royalties	1600.3
-2005	CA	San Bernardn	06071	Sodium	Other Revenues	34456.54
-2005	CA	San Bernardn	06071	Potassium	Royalties	-153841.45
-2005	CA	San Bernardn	06071	Sodium	Royalties	-22060.76
-2005	CA	San Bernardn	06071	Sodium	Royalties	-573105.73
-2005	CA	San Bernardn	06071	Solids	Royalties	-36675.32
-2005	CA	San Bernardn	06071	Solids	Royalties	224.12
-2005	CA	San Bernardn	06071	Solids	Royalties	-857.77
-2005	CA	San Bernardn	06071	Solids	Royalties	7900.72
-2005	CA	San Bernardn	06071	Solids	Royalties	28436.93
-2005	CA	San Bernardn	06071	Solids	Royalties	-333.85
-2005	CA	San Joaquin	06077	Oil & Gas	Other Roy Vals	70
-2005	CA	San Joaquin	06077	Gas	Royalties	3464.11
-2005	CA	San Luis Ob.	06079	Oil & Gas	Other Revenues	1235
-2005	CA	San Luis Ob.	06079	Oil & Gas	Other Roy Vals	225
-2005	CA	San Luis Ob.	06079	Oil	Royalties	5278.1
-2005	CA	San Luis Ob.	06079	Oil	Royalties	118191.45
-2005	CA	Santa Barbar	06083	Gas	Royalties	277.23
-2005	CA	Santa Barbar	06083	Gas	Royalties	4906.59
-2005	CA	Santa Barbar	06083	Gas	Royalties	81864.91
-2005	CA	Santa Barbar	06083	Oil	Royalties	381027.94
-2005	CA	Solano	06095	Gas	Royalties	2533858.82
-2005	CA	Solano	06095	Oil	Royalties	16532.77
-2005	CA	Sonoma	06097	Geothermal	Royalties	4012844.08
-2005	CA	Ventura	06111	Oil & Gas	Other Revenues	537
-2005	CA	Ventura	06111	Oil & Gas	Other Roy Vals	77525
-2005	CA	Ventura	06111	Gas	Royalties	8944.67
-2005	CA	Ventura	06111	Gas	Royalties	26075.35
-2005	CA	Ventura	06111	Gas	Royalties	122659.79
-2005	CA	Ventura	06111	Gas	Royalties	289705.62
-2005	CA	Ventura	06111	Oil	Royalties	2165.03
-2005	CA	Ventura	06111	Oil	Royalties	957244.64
-2006	CA	Contra Costa	06013	Gas	Royalties	11709.71
-2006	CA	Contra Costa	06013	Oil	Royalties	127.02
-2006	CA	Fresno	06019	Oil & Gas	Other Revenues	577.66
-2006	CA	Fresno	06019	Gas	Royalties	11880.75
-2006	CA	Fresno	06019	Gas	Royalties	75894.17
-2006	CA	Fresno	06019	Gas	Royalties	200146.62
-2006	CA	Fresno	06019	Oil	Royalties	5845.15
-2006	CA	Fresno	06019	Oil	Royalties	259453.19
-2006	CA	Glenn	06021	Oil & Gas	Other Roy Vals	400
-2006	CA	Glenn	06021	Gas	Royalties	4752.59
-2006	CA	Imperial	06025	Geothermal	Royalties	65610
-2006	CA	Imperial	06025	Geothermal	Royalties	819.62
-2006	CA	Inyo	06027	Geothermal	Other Roy Vals	-125000
-2006	CA	Inyo	06027	Geothermal	Royalties	2572245.41
-2006	CA	Kern	06029	Oil & Gas	Other Revenues	3267.21
-2006	CA	Kern	06029	Oil & Gas	Other Roy Vals	104443.02
-2006	CA	Kern	06029	Gas	Royalties	1800
-2006	CA	Kern	06029	Gas	Royalties	125182.97
-2006	CA	Kern	06029	Gas	Royalties	602174.65
-2006	CA	Kern	06029	Gas	Royalties	500932.2
-2006	CA	Kern	06029	Oil	Royalties	99999.3
-2006	CA	Kern	06029	Oil	Royalties	43220493.22
-2006	CA	Kern	06030	Oil & Gas	Other Revenues	3267.21
-2006	CA	Kern	06030	Oil & Gas	Other Roy Vals	102343.03
-2006	CA	Kern	06030	Gas	Royalties	1800
-2006	CA	Kern	06030	Gas	Royalties	117495.02
-2006	CA	Kern	06030	Gas	Royalties	525317.23
-2006	CA	Kern	06030	Gas	Royalties	507543.82
-2006	CA	Kern	06030	Oil	Royalties	99999.3
-2006	CA	Kern	06030	Oil	Royalties	42835194.64
-2006	CA	Kings	06031	Oil & Gas	Other Revenues	1187.4
-2006	CA	Kings	06031	Gas	Royalties	15774.88
-2006	CA	Kings	06031	Gas	Royalties	101984.36
-2006	CA	Kings	06031	Oil	Royalties	264463.31
-2006	CA	Lake	06033	Geothermal	Royalties	3677923
-2006	CA	Lassen	06035	Geothermal	Royalties	60541.56
-2006	CA	Los Angeles	06037	Oil & Gas	Other Revenues	40120
-2006	CA	Los Angeles	06037	Gas	Royalties	465.95
-2006	CA	Los Angeles	06037	Gas	Royalties	24595.9
-2006	CA	Los Angeles	06037	Oil	Royalties	99810.65
-2006	CA	Los Angeles	06037	Oil	Royalties	3250118.52
-2006	CA	Los Angeles	06037	Oil & Gas	Royalties	-0.01
-2006	CA	Mono	06051	Geothermal	Other Revenues	1600
-2006	CA	Mono	06051	Geothermal	Royalties	158644.35
-2006	CA	Monterey	06053	Oil	Royalties	26216.48
-2006	CA	San Benito	06069	Oil	Royalties	1395.76
-2006	CA	San Bernardn	06071	Sodium	Royalties	-165563.39
-2006	CA	San Bernardn	06071	Solids	Royalties	-11511.59
-2006	CA	San Bernardn	06071	Solids	Royalties	-594.73
-2006	CA	San Bernardn	06071	Solids	Royalties	-2918.56
-2006	CA	San Bernardn	06071	Solids	Royalties	-3081.24
-2006	CA	San Joaquin	06077	Oil & Gas	Other Roy Vals	650
-2006	CA	San Joaquin	06077	Gas	Royalties	3300.33
-2006	CA	San Luis Ob.	06079	Oil & Gas	Other Revenues	1235
-2006	CA	San Luis Ob.	06079	Oil	Royalties	117171.67
-2006	CA	Santa Barbar	06083	Gas	Royalties	30359.95
-2006	CA	Santa Barbar	06083	Oil	Royalties	613163.62
-2006	CA	Solano	06095	Gas	Royalties	2104417.62
-2006	CA	Solano	06095	Oil	Royalties	16445.4
-2006	CA	Sonoma	06097	Geothermal	Royalties	4851762.03
-2006	CA	Trinity	06105	Sodium	Other Revenues	-240
-2006	CA	Ventura	06111	Oil & Gas	Other Revenues	537
-2006	CA	Ventura	06111	Oil & Gas	Other Roy Vals	-27872
-2006	CA	Ventura	06111	Gas	Royalties	25330.36
-2006	CA	Ventura	06111	Gas	Royalties	24255.63
-2006	CA	Ventura	06111	Gas	Royalties	164463.14
-2006	CA	Ventura	06111	Gas	Royalties	341812.39
-2006	CA	Ventura	06111	Oil	Royalties	2285.7
-2006	CA	Ventura	06111	Oil	Royalties	378.47
-2006	CA	Ventura	06111	Oil	Royalties	2165958.43
-2007	CA	Contra Costa	06013	Gas	Royalties	8317.58
-2007	CA	Contra Costa	06013	Oil	Royalties	152.89
-2007	CA	Fresno	06019	Oil & Gas	Other Revenues	1137.66
-2007	CA	Fresno	06019	Oil & Gas	Other Roy Vals	8900
-2007	CA	Fresno	06019	Gas	Royalties	5401.92
-2007	CA	Fresno	06019	Gas	Royalties	50354.4
-2007	CA	Fresno	06019	Gas	Royalties	185973.48
-2007	CA	Fresno	06019	Oil	Royalties	4896.02
-2007	CA	Fresno	06019	Oil	Royalties	210234.56
-2007	CA	Glenn	06021	Gas	Royalties	23432.6
-2007	CA	Imperial	06025	Geothermal	Royalties	7482
-2007	CA	Imperial	06025	Geothermal	Royalties	898.43
-2007	CA	Inyo	06027	Geothermal	Royalties	1068562.69
-2007	CA	Kern	06029	Oil & Gas	Other Revenues	3364
-2007	CA	Kern	06029	Oil & Gas	Other Roy Vals	42563.16
-2007	CA	Kern	06029	Gas	Royalties	2685.08
-2007	CA	Kern	06029	Gas	Royalties	1800
-2007	CA	Kern	06029	Gas	Royalties	94180.99
-2007	CA	Kern	06029	Gas	Royalties	517265.78
-2007	CA	Kern	06029	Gas	Royalties	409638.84
-2007	CA	Kern	06029	Oil	Royalties	78511.49
-2007	CA	Kern	06029	Oil	Royalties	49824690.6
-2007	CA	Kern	06030	Oil & Gas	Other Revenues	3364
-2007	CA	Kern	06030	Oil & Gas	Other Roy Vals	28563.18
-2007	CA	Kern	06030	Gas	Royalties	2685.08
-2007	CA	Kern	06030	Gas	Royalties	1800
-2007	CA	Kern	06030	Gas	Royalties	52497.37
-2007	CA	Kern	06030	Gas	Royalties	351671.69
-2007	CA	Kern	06030	Gas	Royalties	404780.56
-2007	CA	Kern	06030	Oil	Royalties	69691.64
-2007	CA	Kern	06030	Oil	Royalties	49035589.49
-2007	CA	Kings	06031	Oil & Gas	Other Revenues	476.34
-2007	CA	Kings	06031	Gas	Royalties	7129.15
-2007	CA	Kings	06031	Gas	Royalties	66726.33
-2007	CA	Kings	06031	Gas	Royalties	377.69
-2007	CA	Kings	06031	Oil	Royalties	277021.28
-2007	CA	Lake	06033	Geothermal	Royalties	3343884.87
-2007	CA	Lassen	06035	Geothermal	Royalties	61940.84
-2007	CA	Los Angeles	06037	Oil & Gas	Other Revenues	110080
-2007	CA	Los Angeles	06037	Gas	Royalties	485.49
-2007	CA	Los Angeles	06037	Gas	Royalties	13371.66
-2007	CA	Los Angeles	06037	Oil	Royalties	91502.3
-2007	CA	Los Angeles	06037	Oil	Royalties	3213941.55
-2007	CA	Mono	06051	Geothermal	Other Revenues	-1000
-2007	CA	Mono	06051	Geothermal	Royalties	63295.44
-2007	CA	Monterey	06053	Oil	Royalties	21316.29
-2007	CA	San Benito	06069	Oil	Royalties	1800.18
-2007	CA	San Joaquin	06077	Gas	Royalties	2912.37
-2007	CA	San Luis Ob.	06079	Oil & Gas	Other Revenues	1235
-2007	CA	San Luis Ob.	06079	Oil	Royalties	110657.67
-2007	CA	Santa Barbar	06083	Gas	Royalties	35270.25
-2007	CA	Santa Barbar	06083	Oil	Royalties	701280.3
-2007	CA	Solano	06095	Gas	Royalties	1894264.24
-2007	CA	Solano	06095	Oil	Royalties	24869.3
-2007	CA	Sonoma	06097	Geothermal	Royalties	4455393.12
-2007	CA	Ventura	06111	Oil & Gas	Other Revenues	537
-2007	CA	Ventura	06111	Gas	Royalties	11571.5
-2007	CA	Ventura	06111	Gas	Royalties	21921.46
-2007	CA	Ventura	06111	Gas	Royalties	110991.17
-2007	CA	Ventura	06111	Gas	Royalties	263172.42
-2007	CA	Ventura	06111	Oil	Royalties	1654.39
-2007	CA	Ventura	06111	Oil	Royalties	901.89
-2007	CA	Ventura	06111	Oil	Royalties	2448641.27
-2008	CA	Contra Costa	06013	Gas	Royalties	13079.7
-2008	CA	Contra Costa	06013	Oil	Royalties	131.7
-2008	CA	Contra Costa	06013	Oil	Royalties	36.71
-2008	CA	Fresno	06019	Oil & Gas	Other Revenues	3954.77
-2008	CA	Fresno	06019	Oil & Gas	Other Roy Vals	-5470
-2008	CA	Fresno	06019	Gas	Royalties	-7.17
-2008	CA	Fresno	06019	Gas	Royalties	-134.23
-2008	CA	Fresno	06019	Gas	Royalties	167301.65
-2008	CA	Fresno	06019	Oil	Royalties	10886.47
-2008	CA	Fresno	06019	Oil	Royalties	144067.99
-2008	CA	Glenn	06021	Oil & Gas	Other Roy Vals	-558
-2008	CA	Glenn	06021	Gas	Royalties	12305.86
-2008	CA	Imperial	06025	Geothermal	Royalties	595535.58
-2008	CA	Imperial	06025	Geothermal	Royalties	876.91
-2008	CA	Inyo	06027	Geothermal	Other Roy Vals	814607.37
-2008	CA	Inyo	06027	Geothermal	Royalties	914604.41
-2008	CA	Kern	06029	Oil & Gas	Other Revenues	2009.21
-2008	CA	Kern	06029	Oil & Gas	Other Roy Vals	-4706.2
-2008	CA	Kern	06029	Gas	Royalties	4054.17
-2008	CA	Kern	06029	Gas	Royalties	1800
-2008	CA	Kern	06029	Gas	Royalties	171931.05
-2008	CA	Kern	06029	Gas	Royalties	1045930.33
-2008	CA	Kern	06029	Gas	Royalties	329744.83
-2008	CA	Kern	06029	Oil	Royalties	150623.81
-2008	CA	Kern	06029	Oil	Royalties	60.73
-2008	CA	Kern	06029	Oil	Royalties	77260361.66
-2008	CA	Kern	06030	Oil & Gas	Other Revenues	2009.21
-2008	CA	Kern	06030	Oil & Gas	Other Roy Vals	-2606.2
-2008	CA	Kern	06030	Gas	Royalties	4054.17
-2008	CA	Kern	06030	Gas	Royalties	1800
-2008	CA	Kern	06030	Gas	Royalties	87581.49
-2008	CA	Kern	06030	Gas	Royalties	674124.08
-2008	CA	Kern	06030	Gas	Royalties	456164.86
-2008	CA	Kern	06030	Oil	Royalties	128708.87
-2008	CA	Kern	06030	Oil	Royalties	60.73
-2008	CA	Kern	06030	Oil	Royalties	75076881.24
-2008	CA	Kings	06031	Oil & Gas	Other Revenues	1704.84
-2008	CA	Kings	06031	Gas	Royalties	-0.5
-2008	CA	Kings	06031	Gas	Royalties	-8.7
-2008	CA	Kings	06031	Oil	Royalties	265930.14
-2008	CA	Lake	06033	Geothermal	Royalties	4420888.33
-2008	CA	Lassen	06035	Geothermal	Royalties	67163.45
-2008	CA	Los Angeles	06037	Oil & Gas	Other Revenues	50000
-2008	CA	Los Angeles	06037	Gas	Royalties	8648.89
-2008	CA	Los Angeles	06037	Gas	Royalties	819.93
-2008	CA	Los Angeles	06037	Gas	Royalties	115630.51
-2008	CA	Los Angeles	06037	Oil	Royalties	151174.81
-2008	CA	Los Angeles	06037	Oil	Royalties	4695295.12
-2008	CA	Mono	06051	Geothermal	Other Revenues	-600
-2008	CA	Mono	06051	Geothermal	Royalties	231283.69
-2008	CA	Monterey	06053	Oil	Royalties	48261.13
-2008	CA	Sacramento	06067	Oil & Gas	Other Roy Vals	92.67
-2008	CA	San Benito	06069	Oil	Royalties	3884.28
-2008	CA	San Joaquin	06077	Oil & Gas	Other Roy Vals	-620
-2008	CA	San Joaquin	06077	Gas	Royalties	3730.19
-2008	CA	San Luis Ob.	06079	Oil & Gas	Other Revenues	1395
-2008	CA	San Luis Ob.	06079	Oil	Royalties	179903.01
-2008	CA	Santa Barbar	06083	Gas	Royalties	40783.93
-2008	CA	Santa Barbar	06083	Oil	Royalties	1008922.97
-2008	CA	Solano	06095	Oil & Gas	Other Roy Vals	436.33
-2008	CA	Solano	06095	Gas	Royalties	1903776.55
-2008	CA	Solano	06095	Oil	Royalties	34942.38
-2008	CA	Sonoma	06097	Geothermal	Royalties	6027351.67
-2008	CA	Ventura	06111	Oil & Gas	Other Revenues	537
-2008	CA	Ventura	06111	Oil & Gas	Other Roy Vals	220250
-2008	CA	Ventura	06111	Gas	Royalties	8772.48
-2008	CA	Ventura	06111	Gas	Royalties	27266.62
-2008	CA	Ventura	06111	Gas	Royalties	192150.49
-2008	CA	Ventura	06111	Gas	Royalties	511791.09
-2008	CA	Ventura	06111	Oil	Royalties	2089.63
-2008	CA	Ventura	06111	Oil	Royalties	45.41
-2008	CA	Ventura	06111	Oil	Royalties	3828736.35
-2009	CA	Contra Costa	06013	Oil & Gas	Other Roy Vals	-1855
-2009	CA	Contra Costa	06013	Gas	Royalties	2880.89
-2009	CA	Fresno	06019	Oil & Gas	Other Revenues	1017.61
-2009	CA	Fresno	06019	Oil & Gas	Other Roy Vals	-10889.64
-2009	CA	Fresno	06019	Gas	Royalties	60819.24
-2009	CA	Fresno	06019	Oil	Royalties	1765.87
-2009	CA	Fresno	06019	Oil	Royalties	109815.1
-2009	CA	Glenn	06021	Oil & Gas	Other Revenues	66
-2009	CA	Glenn	06021	Gas	Royalties	17301.59
-2009	CA	Imperial	06025	Geothermal	Royalties	177597
-2009	CA	Imperial	06025	Geothermal	Royalties	934.03
-2009	CA	Inyo	06027	Geothermal	Royalties	318515.05
-2009	CA	Kern	06029	Oil & Gas	Other Revenues	2205
-2009	CA	Kern	06029	Oil & Gas	Other Roy Vals	-9777.05
-2009	CA	Kern	06029	Gas	Royalties	3937.56
-2009	CA	Kern	06029	Gas	Royalties	27179.17
-2009	CA	Kern	06029	Gas	Royalties	115790.85
-2009	CA	Kern	06029	Gas	Royalties	757030.53
-2009	CA	Kern	06029	Gas	Royalties	20094.83
-2009	CA	Kern	06029	Oil	Royalties	-127358.01
-2009	CA	Kern	06029	Oil	Royalties	294654.17
-2009	CA	Kern	06029	Oil	Royalties	39987353.31
-2009	CA	Kern	06030	Oil & Gas	Other Revenues	2205
-2009	CA	Kern	06030	Oil & Gas	Other Roy Vals	-9777.05
-2009	CA	Kern	06030	Gas	Royalties	3937.56
-2009	CA	Kern	06030	Gas	Royalties	1800.03
-2009	CA	Kern	06030	Gas	Royalties	45496.19
-2009	CA	Kern	06030	Gas	Royalties	401882.45
-2009	CA	Kern	06030	Gas	Royalties	206580.53
-2009	CA	Kern	06030	Oil	Royalties	-91305.54
-2009	CA	Kern	06030	Oil	Royalties	214279.98
-2009	CA	Kern	06030	Oil	Royalties	39295909.46
-2009	CA	Kings	06031	Oil & Gas	Other Revenues	3363.34
-2009	CA	Kings	06031	Oil & Gas	Other Roy Vals	-10380.36
-2009	CA	Kings	06031	Oil	Royalties	189117.76
-2009	CA	Lake	06033	Geothermal	Royalties	2986506.98
-2009	CA	Lassen	06035	Geothermal	Royalties	49341.89
-2009	CA	Los Angeles	06037	Gas	Royalties	233.02
-2009	CA	Los Angeles	06037	Gas	Royalties	6261.34
-2009	CA	Los Angeles	06037	Oil	Royalties	69132.64
-2009	CA	Los Angeles	06037	Oil	Royalties	2569674.7
-2009	CA	Mono	06051	Geothermal	Royalties	173233.07
-2009	CA	Monterey	06053	Oil	Royalties	44931.78
-2009	CA	San Benito	06069	Oil	Royalties	8489.5
-2009	CA	San Bernardn	06071	Sodium	Other Revenues	16947
-2009	CA	San Joaquin	06077	Gas	Royalties	1567.56
-2009	CA	San Luis Ob.	06079	Oil & Gas	Other Revenues	1395
-2009	CA	San Luis Ob.	06079	Oil	Royalties	128618.04
-2009	CA	Santa Barbar	06083	Gas	Royalties	20144.11
-2009	CA	Santa Barbar	06083	Oil	Royalties	577557.41
-2009	CA	Solano	06095	Gas	Royalties	755792.24
-2009	CA	Solano	06095	Oil	Royalties	13592.53
-2009	CA	Sonoma	06097	Geothermal	Royalties	4059074.9
-2009	CA	Ventura	06111	Oil & Gas	Other Revenues	554
-2009	CA	Ventura	06111	Oil & Gas	Other Roy Vals	-102550
-2009	CA	Ventura	06111	Gas	Royalties	12030.87
-2009	CA	Ventura	06111	Gas	Royalties	16510.87
-2009	CA	Ventura	06111	Gas	Royalties	29022.75
-2009	CA	Ventura	06111	Gas	Royalties	223706.3
-2009	CA	Ventura	06111	Oil	Royalties	2429
-2009	CA	Ventura	06111	Oil	Royalties	1889868.5
-2010	CA	Contra Costa	06013	Oil & Gas	Other Roy Vals	18.08
-2010	CA	Contra Costa	06013	Gas	Royalties	1946.02
-2010	CA	Fresno	06019	Oil & Gas	Other Revenues	1185.3
-2010	CA	Fresno	06019	Oil & Gas	Other Roy Vals	145865.08
-2010	CA	Fresno	06019	Gas	Royalties	10616.93
-2010	CA	Fresno	06019	Gas	Royalties	59408.68
-2010	CA	Fresno	06019	Oil	Royalties	138438.74
-2010	CA	Glenn	06021	Oil & Gas	Other Revenues	106
-2010	CA	Glenn	06021	Oil & Gas	Other Roy Vals	19.43
-2010	CA	Glenn	06021	Gas	Royalties	12316.96
-2010	CA	Imperial	06025	Geothermal	Royalties	111289
-2010	CA	Imperial	06025	Geothermal	Royalties	893.38
-2010	CA	Inyo	06027	Geothermal	Other Revenues	83464.3
-2010	CA	Inyo	06027	Geothermal	Royalties	835458.78
-2010	CA	Kern	06029	Oil & Gas	Other Revenues	4209
-2010	CA	Kern	06029	Oil & Gas	Other Roy Vals	19776.56
-2010	CA	Kern	06029	Gas	Royalties	1615.88
-2010	CA	Kern	06029	Gas	Royalties	281.33
-2010	CA	Kern	06029	Gas	Royalties	13617.99
-2010	CA	Kern	06029	Gas	Royalties	144292.67
-2010	CA	Kern	06029	Gas	Royalties	642611.46
-2010	CA	Kern	06029	Gas	Royalties	276549.73
-2010	CA	Kern	06029	Oil	Royalties	33562.04
-2010	CA	Kern	06029	Oil	Royalties	98017.68
-2010	CA	Kern	06029	Oil	Royalties	54069703.42
-2010	CA	Kern	06030	Oil & Gas	Other Revenues	5022
-2010	CA	Kern	06030	Oil & Gas	Other Roy Vals	19703.34
-2010	CA	Kern	06030	Gas	Royalties	1615.88
-2010	CA	Kern	06030	Gas	Royalties	281.33
-2010	CA	Kern	06030	Gas	Royalties	1800.01
-2010	CA	Kern	06030	Gas	Royalties	62675.04
-2010	CA	Kern	06030	Gas	Royalties	481038.36
-2010	CA	Kern	06030	Gas	Royalties	668516.08
-2010	CA	Kern	06030	Oil	Royalties	32140.65
-2010	CA	Kern	06030	Oil	Royalties	40958.57
-2010	CA	Kern	06030	Oil	Royalties	56249365.85
-2010	CA	Kings	06031	Oil & Gas	Other Revenues	476.34
-2010	CA	Kings	06031	Oil & Gas	Other Roy Vals	4860.35
-2010	CA	Kings	06031	Gas	Royalties	13698.74
-2010	CA	Kings	06031	Gas	Royalties	1698.41
-2010	CA	Kings	06031	Oil	Royalties	280629.24
-2010	CA	Lake	06033	Geothermal	Royalties	3303932.95
-2010	CA	Lassen	06035	Geothermal	Royalties	51388.25
-2010	CA	Los Angeles	06037	Oil & Gas	Other Roy Vals	123.21
-2010	CA	Los Angeles	06037	Gas	Royalties	262.39
-2010	CA	Los Angeles	06037	Gas	Royalties	-93323.01
-2010	CA	Los Angeles	06037	Oil	Royalties	92720.23
-2010	CA	Los Angeles	06037	Oil	Royalties	3727968.82
-2010	CA	Mono	06051	Geothermal	Royalties	154815.47
-2010	CA	Monterey	06053	Oil	Royalties	78074.13
-2010	CA	San Benito	06069	Oil	Royalties	7453.41
-2010	CA	San Bernardn	06071	Sodium	Other Revenues	12.46
-2010	CA	San Joaquin	06077	Gas	Royalties	1727.51
-2010	CA	San Luis Ob.	06079	Oil & Gas	Other Revenues	1235
-2010	CA	San Luis Ob.	06079	Oil	Royalties	81936.77
-2010	CA	Santa Barbar	06083	Gas	Royalties	24151.5
-2010	CA	Santa Barbar	06083	Oil	Royalties	581651.3
-2010	CA	Solano	06095	Oil & Gas	Other Roy Vals	9268.78
-2010	CA	Solano	06095	Gas	Royalties	837983.35
-2010	CA	Solano	06095	Oil	Royalties	16596.91
-2010	CA	Sonoma	06097	Geothermal	Royalties	4412625.62
-2010	CA	Sutter	06101	Oil & Gas	Other Roy Vals	-75
-2010	CA	Ventura	06111	Oil & Gas	Other Revenues	563
-2010	CA	Ventura	06111	Oil & Gas	Other Roy Vals	830.3
-2010	CA	Ventura	06111	Gas	Royalties	14334.65
-2010	CA	Ventura	06111	Gas	Royalties	21054.22
-2010	CA	Ventura	06111	Gas	Royalties	37871.64
-2010	CA	Ventura	06111	Gas	Royalties	280178.59
-2010	CA	Ventura	06111	Oil	Royalties	738.74
-2010	CA	Ventura	06111	Oil	Royalties	2536666.33
-2011	CA	Contra Costa	06013	Oil & Gas	Other Roy Vals	49.29
-2011	CA	Contra Costa	06013	Gas	Royalties	1355.57
-2011	CA	Fresno	06019	Oil & Gas	Other Revenues	1073.66
-2011	CA	Fresno	06019	Oil & Gas	Other Roy Vals	1709.2
-2011	CA	Fresno	06019	Gas	Royalties	55838.47
-2011	CA	Fresno	06019	Gas	Royalties	38647.84
-2011	CA	Fresno	06019	Oil	Royalties	172190.99
-2011	CA	Glenn	06021	Oil & Gas	Other Revenues	106
-2011	CA	Glenn	06021	Gas	Royalties	5629.95
-2011	CA	Imperial	06025	Geothermal	Royalties	-268476.99
-2011	CA	Imperial	06025	Geothermal	Royalties	128.91
-2011	CA	Inyo	06027	Geothermal	Other Revenues	2066.71
-2011	CA	Inyo	06027	Geothermal	Royalties	527854.09
-2011	CA	Kern	06029	Oil & Gas	Other Revenues	9726.5
-2011	CA	Kern	06029	Oil & Gas	Other Roy Vals	22681.62
-2011	CA	Kern	06029	Gas	Royalties	2728.83
-2011	CA	Kern	06029	Gas	Royalties	1886.85
-2011	CA	Kern	06029	Gas	Royalties	1800
-2011	CA	Kern	06029	Gas	Royalties	134764.98
-2011	CA	Kern	06029	Gas	Royalties	618756.54
-2011	CA	Kern	06029	Gas	Royalties	299978.23
-2011	CA	Kern	06029	Oil	Royalties	91107.5
-2011	CA	Kern	06029	Oil	Royalties	35732.44
-2011	CA	Kern	06029	Oil	Royalties	79501066.41
-2011	CA	Kern	06030	Oil & Gas	Other Revenues	9933.5
-2011	CA	Kern	06030	Oil & Gas	Other Roy Vals	12390.69
-2011	CA	Kern	06030	Gas	Royalties	2728.83
-2011	CA	Kern	06030	Gas	Royalties	1886.85
-2011	CA	Kern	06030	Gas	Royalties	1800
-2011	CA	Kern	06030	Gas	Royalties	625316.81
-2011	CA	Kern	06030	Gas	Royalties	1330270.37
-2011	CA	Kern	06030	Gas	Royalties	1006909
-2011	CA	Kern	06030	Oil	Royalties	89488.8
-2011	CA	Kern	06030	Oil	Royalties	15268.92
-2011	CA	Kern	06030	Oil	Royalties	84069574.31
-2011	CA	Kings	06031	Oil & Gas	Other Revenues	1049.32
-2011	CA	Kings	06031	Oil & Gas	Other Roy Vals	3415.17
-2011	CA	Kings	06031	Gas	Royalties	72165.48
-2011	CA	Kings	06031	Oil	Royalties	323283.63
-2011	CA	Lake	06033	Geothermal	Royalties	3143700.02
-2011	CA	Lassen	06035	Geothermal	Royalties	48086.24
-2011	CA	Los Angeles	06037	Oil & Gas	Other Roy Vals	107.84
-2011	CA	Los Angeles	06037	Gas	Royalties	255.29
-2011	CA	Los Angeles	06037	Gas	Royalties	16809.02
-2011	CA	Los Angeles	06037	Oil	Royalties	230543.75
-2011	CA	Los Angeles	06037	Oil	Royalties	4979127.65
-2011	CA	Mono	06051	Geothermal	Royalties	-65071.09
-2011	CA	Monterey	06053	Oil	Royalties	136945.5
-2011	CA	San Benito	06069	Oil	Royalties	7519.13
-2011	CA	San Joaquin	06077	Gas	Royalties	1600.74
-2011	CA	San Luis Ob.	06079	Oil & Gas	Other Revenues	1075
-2011	CA	San Luis Ob.	06079	Oil & Gas	Other Roy Vals	1.53
-2011	CA	San Luis Ob.	06079	Oil	Royalties	123494.62
-2011	CA	Santa Barbar	06083	Oil & Gas	Other Roy Vals	127.08
-2011	CA	Santa Barbar	06083	Gas	Royalties	49957.72
-2011	CA	Santa Barbar	06083	Oil	Royalties	817103.25
-2011	CA	Solano	06095	Gas	Royalties	410474
-2011	CA	Solano	06095	Oil	Royalties	27308.03
-2011	CA	Sonoma	06097	Geothermal	Royalties	4167151.74
-2011	CA	Ventura	06111	Oil & Gas	Other Revenues	480
-2011	CA	Ventura	06111	Oil & Gas	Other Roy Vals	-6480.46
-2011	CA	Ventura	06111	Gas	Royalties	4179.26
-2011	CA	Ventura	06111	Gas	Royalties	25302.73
-2011	CA	Ventura	06111	Gas	Royalties	38270.51
-2011	CA	Ventura	06111	Gas	Royalties	362691.42
-2011	CA	Ventura	06111	Oil	Royalties	1695.63
-2011	CA	Ventura	06111	Oil	Royalties	2915215.26
-2012	CA	Contra Costa	06013	Oil & Gas	Other Roy Vals	106
-2012	CA	Contra Costa	06013	Gas	Royalties	718.18
-2012	CA	Fresno	06019	Oil & Gas	Other Revenues	-1193.63
-2012	CA	Fresno	06019	Oil & Gas	Other Roy Vals	562.55
-2012	CA	Fresno	06019	Gas	Royalties	21074.32
-2012	CA	Fresno	06019	Gas	Royalties	10239.03
-2012	CA	Fresno	06019	Oil	Royalties	-15194.42
-2012	CA	Fresno	06019	Oil	Royalties	131440.77
-2012	CA	Glenn	06021	Oil & Gas	Other Revenues	41
-2012	CA	Glenn	06021	Oil & Gas	Other Roy Vals	8.95
-2012	CA	Glenn	06021	Gas	Royalties	4971.9
-2012	CA	Imperial	06025	Geothermal	Royalties	291167.63
-2012	CA	Inyo	06027	Geothermal	Other Revenues	-2066.71
-2012	CA	Inyo	06027	Geothermal	Royalties	811955.57
-2012	CA	Inyo	06027	Geothermal	Royalties	514.96
-2012	CA	Kern	06029	Oil & Gas	Other Revenues	9881.5
-2012	CA	Kern	06029	Oil & Gas	Other Roy Vals	22935.99
-2012	CA	Kern	06029	Gas	Royalties	-667.9
-2012	CA	Kern	06029	Gas	Royalties	11550.6
-2012	CA	Kern	06029	Gas	Royalties	1800
-2012	CA	Kern	06029	Gas	Royalties	364520.52
-2012	CA	Kern	06029	Gas	Royalties	806540.54
-2012	CA	Kern	06029	Gas	Royalties	160883.79
-2012	CA	Kern	06029	Oil	Royalties	37912.12
-2012	CA	Kern	06029	Oil	Royalties	45492.32
-2012	CA	Kern	06029	Oil	Royalties	33.52
-2012	CA	Kern	06029	Oil	Royalties	83757108.99
-2012	CA	Kern	06030	Oil & Gas	Other Revenues	11898.32
-2012	CA	Kern	06030	Oil & Gas	Other Roy Vals	539586
-2012	CA	Kern	06030	Gas	Royalties	-667.9
-2012	CA	Kern	06030	Gas	Royalties	11550.6
-2012	CA	Kern	06030	Gas	Royalties	1800
-2012	CA	Kern	06030	Gas	Royalties	2470421.6
-2012	CA	Kern	06030	Gas	Royalties	2275683.06
-2012	CA	Kern	06030	Gas	Royalties	845011.66
-2012	CA	Kern	06030	Oil	Royalties	37912.12
-2012	CA	Kern	06030	Oil	Royalties	19320.05
-2012	CA	Kern	06030	Oil	Royalties	33.52
-2012	CA	Kern	06030	Oil	Royalties	88231857.86
-2012	CA	Kings	06031	Oil & Gas	Other Revenues	1276.34
-2012	CA	Kings	06031	Oil & Gas	Other Roy Vals	20.6
-2012	CA	Kings	06031	Gas	Royalties	27391.84
-2012	CA	Kings	06031	Oil	Royalties	417388.19
-2012	CA	Lake	06033	Geothermal	Royalties	3155630.11
-2012	CA	Lassen	06035	Geothermal	Royalties	76071.14
-2012	CA	Los Angeles	06037	Oil & Gas	Other Revenues	65.6
-2012	CA	Los Angeles	06037	Gas	Royalties	143.52
-2012	CA	Los Angeles	06037	Gas	Royalties	15753.58
-2012	CA	Los Angeles	06037	Oil	Royalties	487146.05
-2012	CA	Los Angeles	06037	Oil	Royalties	5729903.73
-2012	CA	Mono	06051	Geothermal	Other Revenues	1388
-2012	CA	Mono	06051	Geothermal	Royalties	337570.95
-2012	CA	Monterey	06053	Oil	Royalties	168016.87
-2012	CA	San Benito	06069	Oil	Royalties	1193.88
-2012	CA	San Joaquin	06077	Gas	Royalties	1026.39
-2012	CA	San Luis Ob.	06079	Oil & Gas	Other Revenues	1395
-2012	CA	San Luis Ob.	06079	Oil	Royalties	176389.73
-2012	CA	Santa Barbar	06083	Oil & Gas	Other Roy Vals	2.52
-2012	CA	Santa Barbar	06083	Gas	Royalties	10196.04
-2012	CA	Santa Barbar	06083	Oil	Royalties	993676
-2012	CA	Solano	06095	Gas	Royalties	209728.14
-2012	CA	Solano	06095	Oil	Royalties	13741.75
-2012	CA	Solano	06095	Oil	Royalties	3676.27
-2012	CA	Sonoma	06097	Geothermal	Royalties	4358864.24
-2012	CA	Ventura	06111	Oil & Gas	Other Revenues	874
-2012	CA	Ventura	06111	Oil & Gas	Other Roy Vals	83000
-2012	CA	Ventura	06111	Gas	Royalties	7455.58
-2012	CA	Ventura	06111	Gas	Royalties	28941.6
-2012	CA	Ventura	06111	Gas	Royalties	23610.45
-2012	CA	Ventura	06111	Gas	Royalties	488734.95
-2012	CA	Ventura	06111	Oil	Royalties	3239.07
-2012	CA	Ventura	06111	Oil	Royalties	157.44
-2012	CA	Ventura	06111	Oil	Royalties	4518792.7
-2013	CA	Contra Costa	06013	Gas	Royalties	4017.9
-2013	CA	Contra Costa	06013	Oil	Royalties	91.75
-2013	CA	Contra Costa	06013	Oil	Royalties	5.19
-2013	CA	Fresno	06019	Oil & Gas	Other Revenues	1392.29
-2013	CA	Fresno	06019	Oil & Gas	Other Roy Vals	-2900
-2013	CA	Fresno	06019	Gas	Royalties	118.3
-2013	CA	Fresno	06019	Gas	Royalties	381.48
-2013	CA	Fresno	06019	Oil	Royalties	237461.56
-2013	CA	Glenn	06021	Oil & Gas	Other Revenues	41
-2013	CA	Glenn	06021	Gas	Royalties	12399.03
-2013	CA	Imperial	06025	Geothermal	Royalties	21454.95
-2013	CA	Inyo	06027	Geothermal	Royalties	656853.22
-2013	CA	Inyo	06027	Geothermal	Royalties	123.84
-2013	CA	Kern	06029	Oil & Gas	Other Revenues	4390
-2013	CA	Kern	06029	Oil & Gas	Other Roy Vals	9700.01
-2013	CA	Kern	06029	Gas	Royalties	23163.11
-2013	CA	Kern	06029	Gas	Royalties	1800
-2013	CA	Kern	06029	Gas	Royalties	689785.76
-2013	CA	Kern	06029	Gas	Royalties	978623.8
-2013	CA	Kern	06029	Gas	Royalties	46896.48
-2013	CA	Kern	06029	Oil	Royalties	112302.85
-2013	CA	Kern	06029	Oil	Royalties	-66029.62
-2013	CA	Kern	06029	Oil	Royalties	33.81
-2013	CA	Kern	06029	Oil	Royalties	83202972.29
-2013	CA	Kern	06030	Oil & Gas	Other Revenues	5290.82
-2013	CA	Kern	06030	Oil & Gas	Other Roy Vals	-205300.01
-2013	CA	Kern	06030	Gas	Royalties	23163.11
-2013	CA	Kern	06030	Gas	Royalties	1800
-2013	CA	Kern	06030	Gas	Royalties	978800.35
-2013	CA	Kern	06030	Gas	Royalties	1302705.55
-2013	CA	Kern	06030	Gas	Royalties	270849.12
-2013	CA	Kern	06030	Oil	Royalties	112302.85
-2013	CA	Kern	06030	Oil	Royalties	-55298.36
-2013	CA	Kern	06030	Oil	Royalties	33.81
-2013	CA	Kern	06030	Oil	Royalties	88537787.07
-2013	CA	Kings	06031	Oil & Gas	Other Revenues	793.34
-2013	CA	Kings	06031	Gas	Royalties	2738.44
-2013	CA	Kings	06031	Gas	Royalties	2398.19
-2013	CA	Kings	06031	Oil	Royalties	355987.37
-2013	CA	Lake	06033	Geothermal	Royalties	3466489.45
-2013	CA	Lassen	06035	Geothermal	Royalties	67132.07
-2013	CA	Los Angeles	06037	Gas	Royalties	171.16
-2013	CA	Los Angeles	06037	Gas	Royalties	47018.68
-2013	CA	Los Angeles	06037	Oil	Royalties	439351.02
-2013	CA	Los Angeles	06037	Oil	Royalties	6444045.19
-2013	CA	Mono	06051	Geothermal	Royalties	317098.45
-2013	CA	Monterey	06053	Oil	Royalties	167371.23
-2013	CA	San Benito	06069	Oil	Royalties	1071.08
-2013	CA	San Joaquin	06077	Gas	Royalties	1395.21
-2013	CA	San Luis Ob.	06079	Oil & Gas	Other Revenues	1635
-2013	CA	San Luis Ob.	06079	Oil	Royalties	161249.96
-2013	CA	Santa Barbar	06083	Gas	Royalties	9283.23
-2013	CA	Santa Barbar	06083	Oil	Royalties	835689.27
-2013	CA	Solano	06095	Gas	Royalties	14557.1
-2013	CA	Sonoma	06097	Geothermal	Royalties	4777308.4
-2013	CA	Ventura	06111	Oil & Gas	Other Revenues	580
-2013	CA	Ventura	06111	Oil & Gas	Other Roy Vals	-5000
-2013	CA	Ventura	06111	Gas	Royalties	17921.29
-2013	CA	Ventura	06111	Gas	Royalties	40125.41
-2013	CA	Ventura	06111	Gas	Royalties	38980.96
-2013	CA	Ventura	06111	Gas	Royalties	74944.89
-2013	CA	Ventura	06111	Oil	Royalties	-8003.66
-2013	CA	Ventura	06111	Oil	Royalties	10203.9
-2013	CA	Ventura	06111	Oil	Royalties	3274001.83
+Year	State	County	FIPS	Commodity	Product	Type	Revenue
+2004	CA	Contra Costa	06013	Oil & Gas		Other Roy Vals	55
+2004	CA	Contra Costa	06013	Oil & Gas		Rents	42
+2004	CA	Contra Costa	06013	Gas (mcf)	Processed (Residue) Gas	Royalties	204.59
+2004	CA	Contra Costa	06013	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	1860.9
+2004	CA	Fresno	06019	Oil & Gas		Other Revenues	606.13
+2004	CA	Fresno	06019	Oil & Gas		Rents	69184.35
+2004	CA	Fresno	06019	Gas (mcf)	Processed (Residue) Gas	Royalties	52197.8
+2004	CA	Fresno	06019	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	221952.28
+2004	CA	Fresno	06019	NGL (gal)	Gas Plant Products	Royalties	8204.93
+2004	CA	Fresno	06019	Oil (bbl)	Oil	Royalties	122746.65
+2004	CA	Glenn	06021	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	4094.69
+2004	CA	Imperial	06025	Geothermal		Other Roy Vals	7584696.97
+2004	CA	Imperial	06025	Geothermal		Rents	8066
+2004	CA	Imperial	06025	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	31447
+2004	CA	Imperial	06025	Geothermal	Geothermal - Electrical Generation, Other	Royalties	992.16
+2004	CA	Inyo	06027	Geothermal		Rents	4862
+2004	CA	Inyo	06027	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	3546438.88
+2004	CA	Kern	06029	Oil & Gas		Bonus	66600.5
+2004	CA	Kern	06029	Oil & Gas		Other Revenues	6735.82
+2004	CA	Kern	06029	Oil & Gas		Other Roy Vals	4407.6
+2004	CA	Kern	06029	Oil & Gas		Rents	229207.82
+2004	CA	Kern	06029	Gas (mcf)	Gas Lost - Flared or Vented	Royalties	3600
+2004	CA	Kern	06029	Gas (mcf)	Processed (Residue) Gas	Royalties	675270.67
+2004	CA	Kern	06029	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	117298.07
+2004	CA	Kern	06029	NGL (gal)	Gas Plant Products	Royalties	54993.12
+2004	CA	Kern	06029	Oil (bbl)	Condensate	Royalties	23546.85
+2004	CA	Kern	06029	Oil (bbl)	Fuel Oil	Royalties	221.85
+2004	CA	Kern	06029	Oil (bbl)	Oil	Royalties	20048697.8
+2004	CA	Kings	06031	Oil & Gas		Other Revenues	2265.34
+2004	CA	Kings	06031	Oil & Gas		Rents	27149.68
+2004	CA	Kings	06031	Gas (mcf)	Processed (Residue) Gas	Royalties	65595.09
+2004	CA	Kings	06031	NGL (gal)	Gas Plant Products	Royalties	10229.69
+2004	CA	Kings	06031	Oil (bbl)	Oil	Royalties	82145.15
+2004	CA	Lake	06033	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds	Royalties	2689982.36
+2004	CA	Lassen	06035	Geothermal	Geothermal - Direct Utilization, Millions of BTUs	Royalties	39865.28
+2004	CA	Los Angeles	06037	Oil & Gas		Other Revenues	20125.43
+2004	CA	Los Angeles	06037	Oil & Gas		Rents	21
+2004	CA	Los Angeles	06037	Gas (mcf)	Gas Lost - Flared or Vented	Royalties	5329.59
+2004	CA	Los Angeles	06037	Gas (mcf)	Processed (Residue) Gas	Royalties	328.58
+2004	CA	Los Angeles	06037	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	35825.15
+2004	CA	Los Angeles	06037	Oil (bbl)	Condensate	Royalties	70646.03
+2004	CA	Los Angeles	06037	Oil (bbl)	Oil	Royalties	1761039.64
+2004	CA	Merced	06047	Oil & Gas		Rents	1444.5
+2004	CA	Mono	06051	Geothermal		Other Revenues	8320
+2004	CA	Mono	06051	Geothermal		Other Roy Vals	-100000
+2004	CA	Mono	06051	Geothermal		Rents	156334
+2004	CA	Mono	06051	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	186978.74
+2004	CA	Monterey	06053	Oil & Gas		Rents	13399.51
+2004	CA	Monterey	06053	Oil (bbl)	Oil	Royalties	7516.59
+2004	CA	San Benito	06069	Oil & Gas		Other Revenues	40.3
+2004	CA	San Benito	06069	Oil & Gas		Rents	31459.65
+2004	CA	San Benito	06069	Oil (bbl)	Oil	Royalties	876.24
+2004	CA	San Bernardn	06071	Other Products	Anhydrous Sodium Sulfate	Royalties	-18463.04
+2004	CA	San Bernardn	06071	Other Products	Borax-Anhydrous	Royalties	31693.82
+2004	CA	San Bernardn	06071	Other Products	Borax-Decahydrate	Royalties	635.38
+2004	CA	San Bernardn	06071	Other Products	Borax-Pentahydrate	Royalties	-3086.3
+2004	CA	San Bernardn	06071	Other Products	Boric Acid	Royalties	-16152.59
+2004	CA	San Bernardn	06071	Other Products	Boric Oxide	Royalties	-328.08
+2004	CA	San Bernardn	06071	Other Products	Salt-Waste	Royalties	-52.69
+2004	CA	San Bernardn	06071	Other Products	Soda Ash-Granular	Royalties	260287.46
+2004	CA	San Joaquin	06077	Oil & Gas		Rents	140
+2004	CA	San Joaquin	06077	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	2675.8
+2004	CA	San Luis Ob.	06079	Oil & Gas		Bonus	240
+2004	CA	San Luis Ob.	06079	Oil & Gas		Other Revenues	1233.35
+2004	CA	San Luis Ob.	06079	Oil & Gas		Other Roy Vals	6215
+2004	CA	San Luis Ob.	06079	Oil & Gas		Rents	37007.32
+2004	CA	San Luis Ob.	06079	Oil (bbl)	Oil	Royalties	49085.67
+2004	CA	Santa Barbar	06083	Oil & Gas		Rents	5919.68
+2004	CA	Santa Barbar	06083	Gas (mcf)	Processed (Residue) Gas	Royalties	175231.44
+2004	CA	Santa Barbar	06083	NGL (gal)	Gas Plant Products	Royalties	543.04
+2004	CA	Santa Barbar	06083	Oil (bbl)	Oil	Royalties	307299.77
+2004	CA	Siskiyou	06093	Geothermal		Rents	58553
+2004	CA	Solano	06095	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	2537068.52
+2004	CA	Solano	06095	Oil (bbl)	Condensate	Royalties	8286.97
+2004	CA	Sonoma	06097	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds	Royalties	3366259.11
+2004	CA	Stanislaus	06099	Oil & Gas		Rents	158
+2004	CA	Sutter	06101	Oil & Gas		Rents	80
+2004	CA	Tulare	06107	Oil & Gas		Rents	484.5
+2004	CA	Ventura	06111	Oil & Gas		Bonus	880
+2004	CA	Ventura	06111	Oil & Gas		Other Revenues	511.37
+2004	CA	Ventura	06111	Oil & Gas		Rents	11561.5
+2004	CA	Ventura	06111	Gas (mcf)	Gas Lost - Flared or Vented	Royalties	2753.81
+2004	CA	Ventura	06111	Gas (mcf)	Processed (Residue) Gas	Royalties	83660.82
+2004	CA	Ventura	06111	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	227364.05
+2004	CA	Ventura	06111	NGL (gal)	Gas Plant Products	Royalties	21730.54
+2004	CA	Ventura	06111	Oil (bbl)	Condensate	Royalties	2033.36
+2004	CA	Ventura	06111	Oil (bbl)	Oil	Royalties	730299.01
+2004	CA	Yolo	06113	Oil & Gas		Rents	966
+2005	CA	Contra Costa	06013	Oil & Gas		Other Roy Vals	1800
+2005	CA	Contra Costa	06013	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	11629.39
+2005	CA	Contra Costa	06013	Oil (bbl)	Condensate	Royalties	161.51
+2005	CA	Contra Costa	06013	Oil (bbl)	Oil	Royalties	-16.82
+2005	CA	Fresno	06019	Oil & Gas		Other Revenues	911.59
+2005	CA	Fresno	06019	Oil & Gas		Other Roy Vals	50
+2005	CA	Fresno	06019	Oil & Gas		Rents	57819.35
+2005	CA	Fresno	06019	Gas (mcf)	Processed (Residue) Gas	Royalties	78707.86
+2005	CA	Fresno	06019	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	284409.85
+2005	CA	Fresno	06019	NGL (gal)	Gas Plant Products	Royalties	10019.96
+2005	CA	Fresno	06019	Oil (bbl)	Condensate	Royalties	3927.35
+2005	CA	Fresno	06019	Oil (bbl)	Oil	Royalties	163668.79
+2005	CA	Glenn	06021	Oil & Gas		Other Roy Vals	185
+2005	CA	Glenn	06021	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	5695.92
+2005	CA	Imperial	06025	Geothermal		Rents	9808
+2005	CA	Imperial	06025	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	298307
+2005	CA	Imperial	06025	Geothermal	Geothermal - Electrical Generation, Other	Royalties	835.92
+2005	CA	Inyo	06027	Geothermal		Rents	14306.24
+2005	CA	Inyo	06027	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	-223827.03
+2005	CA	Kern	06029	Oil & Gas		Bonus	7924.25
+2005	CA	Kern	06029	Oil & Gas		Other Revenues	12099.62
+2005	CA	Kern	06029	Oil & Gas		Other Roy Vals	-55300
+2005	CA	Kern	06029	Oil & Gas		Rents	221920.82
+2005	CA	Kern	06029	Sodium		Rents	-3817
+2005	CA	Kern	06029	Gas (mcf)	Gas Lost - Flared or Vented	Royalties	3900
+2005	CA	Kern	06029	Gas (mcf)	Processed (Residue) Gas	Royalties	239167.28
+2005	CA	Kern	06029	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	609636.53
+2005	CA	Kern	06029	NGL (gal)	Gas Plant Products	Royalties	26941.51
+2005	CA	Kern	06029	Oil (bbl)	Condensate	Royalties	26862.74
+2005	CA	Kern	06029	Oil (bbl)	Fuel Oil	Royalties	69.11
+2005	CA	Kern	06029	Oil (bbl)	Inlet Scrubber	Royalties	1023.64
+2005	CA	Kern	06029	Oil (bbl)	Oil	Royalties	28109526.16
+2005	CA	Kings	06031	Oil & Gas		Bonus	1602
+2005	CA	Kings	06031	Oil & Gas		Other Revenues	2858.98
+2005	CA	Kings	06031	Oil & Gas		Rents	35101.75
+2005	CA	Kings	06031	Gas (mcf)	Processed (Residue) Gas	Royalties	107341.23
+2005	CA	Kings	06031	NGL (gal)	Gas Plant Products	Royalties	13620.95
+2005	CA	Kings	06031	Oil (bbl)	Oil	Royalties	149612.91
+2005	CA	Lake	06033	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds	Royalties	3145789.76
+2005	CA	Lassen	06035	Geothermal	Geothermal - Direct Utilization, Millions of BTUs	Royalties	64200.46
+2005	CA	Los Angeles	06037	Oil & Gas		Other Revenues	120
+2005	CA	Los Angeles	06037	Oil & Gas		Rents	2171
+2005	CA	Los Angeles	06037	Gas (mcf)	Gas Lost - Flared or Vented	Royalties	15345.46
+2005	CA	Los Angeles	06037	Gas (mcf)	Processed (Residue) Gas	Royalties	420.08
+2005	CA	Los Angeles	06037	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	47093.96
+2005	CA	Los Angeles	06037	Oil (bbl)	Condensate	Royalties	69621.38
+2005	CA	Los Angeles	06037	Oil (bbl)	Oil	Royalties	1903981.45
+2005	CA	Merced	06047	Oil & Gas		Rents	1444.5
+2005	CA	Mono	06051	Geothermal		Other Revenues	1600
+2005	CA	Mono	06051	Geothermal		Rents	16966
+2005	CA	Mono	06051	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	94198.39
+2005	CA	Monterey	06053	Oil & Gas		Rents	12930
+2005	CA	Monterey	06053	Oil (bbl)	Oil	Royalties	9497.31
+2005	CA	San Benito	06069	Oil & Gas		Rents	25267.65
+2005	CA	San Benito	06069	Oil (bbl)	Oil	Royalties	1600.3
+2005	CA	San Bernardn	06071	Sodium		Other Revenues	34456.54
+2005	CA	San Bernardn	06071	Sodium		Rents	-4269.39
+2005	CA	San Bernardn	06071	Other Products	Anhydrous Sodium Sulfate	Royalties	-36675.32
+2005	CA	San Bernardn	06071	Other Products	Borax-Anhydrous	Royalties	-22060.76
+2005	CA	San Bernardn	06071	Other Products	Borax-Decahydrate	Royalties	224.12
+2005	CA	San Bernardn	06071	Other Products	Borax-Pentahydrate	Royalties	-857.77
+2005	CA	San Bernardn	06071	Other Products	Boric Acid	Royalties	7900.72
+2005	CA	San Bernardn	06071	Other Products	Salt-Waste	Royalties	28436.93
+2005	CA	San Bernardn	06071	Other Products	Soda Ash-Granular	Royalties	-726947.18
+2005	CA	San Bernardn	06071	Other Products	Sodium Bi-Carbonate	Royalties	-333.85
+2005	CA	San Joaquin	06077	Oil & Gas		Other Roy Vals	70
+2005	CA	San Joaquin	06077	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	3464.11
+2005	CA	San Luis Ob.	06079	Oil & Gas		Other Revenues	1235
+2005	CA	San Luis Ob.	06079	Oil & Gas		Other Roy Vals	225
+2005	CA	San Luis Ob.	06079	Oil & Gas		Rents	28189.32
+2005	CA	San Luis Ob.	06079	Oil (bbl)	Condensate	Royalties	5278.1
+2005	CA	San Luis Ob.	06079	Oil (bbl)	Oil	Royalties	118191.45
+2005	CA	Santa Barbar	06083	Oil & Gas		Rents	3632.18
+2005	CA	Santa Barbar	06083	Gas (mcf)	Processed (Residue) Gas	Royalties	4906.59
+2005	CA	Santa Barbar	06083	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	81864.91
+2005	CA	Santa Barbar	06083	NGL (gal)	Gas Plant Products	Royalties	277.23
+2005	CA	Santa Barbar	06083	Oil (bbl)	Oil	Royalties	381027.94
+2005	CA	Sierra	06091	Hardrock		Rents	20
+2005	CA	Siskiyou	06093	Geothermal		Rents	61997
+2005	CA	Solano	06095	Oil & Gas		Rents	40
+2005	CA	Solano	06095	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	2533858.82
+2005	CA	Solano	06095	Oil (bbl)	Condensate	Royalties	16532.77
+2005	CA	Sonoma	06097	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds	Royalties	4012844.08
+2005	CA	Sutter	06101	Oil & Gas		Rents	80
+2005	CA	Ventura	06111	Oil & Gas		Other Revenues	537
+2005	CA	Ventura	06111	Oil & Gas		Other Roy Vals	77525
+2005	CA	Ventura	06111	Oil & Gas		Rents	10039
+2005	CA	Ventura	06111	Gas (mcf)	Gas Lost - Flared or Vented	Royalties	8944.67
+2005	CA	Ventura	06111	Gas (mcf)	Processed (Residue) Gas	Royalties	122659.79
+2005	CA	Ventura	06111	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	289705.62
+2005	CA	Ventura	06111	NGL (gal)	Gas Plant Products	Royalties	26075.35
+2005	CA	Ventura	06111	Oil (bbl)	Condensate	Royalties	2165.03
+2005	CA	Ventura	06111	Oil (bbl)	Oil	Royalties	957244.64
+2005	CA	Yolo	06113	Oil & Gas		Rents	1917
+2006	CA	Contra Costa	06013	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	11709.71
+2006	CA	Contra Costa	06013	Oil (bbl)	Condensate	Royalties	127.02
+2006	CA	Fresno	06019	Oil & Gas		Bonus	23399.98
+2006	CA	Fresno	06019	Oil & Gas		Other Revenues	577.66
+2006	CA	Fresno	06019	Oil & Gas		Rents	55115.04
+2006	CA	Fresno	06019	Gas (mcf)	Processed (Residue) Gas	Royalties	75894.17
+2006	CA	Fresno	06019	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	200146.62
+2006	CA	Fresno	06019	NGL (gal)	Gas Plant Products	Royalties	11880.75
+2006	CA	Fresno	06019	Oil (bbl)	Condensate	Royalties	5845.15
+2006	CA	Fresno	06019	Oil (bbl)	Oil	Royalties	259453.19
+2006	CA	Glenn	06021	Oil & Gas		Other Roy Vals	400
+2006	CA	Glenn	06021	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	4752.59
+2006	CA	Imperial	06025	Geothermal		Rents	8608
+2006	CA	Imperial	06025	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	65610
+2006	CA	Imperial	06025	Geothermal	Geothermal - Electrical Generation, Other	Royalties	819.62
+2006	CA	Inyo	06027	Geothermal		Other Roy Vals	-125000
+2006	CA	Inyo	06027	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	2572245.41
+2006	CA	Kern	06029	Oil & Gas		Bonus	2083681.25
+2006	CA	Kern	06029	Oil & Gas		Other Revenues	6534.42
+2006	CA	Kern	06029	Oil & Gas		Other Roy Vals	206786.05
+2006	CA	Kern	06029	Oil & Gas		Rents	249633.32
+2006	CA	Kern	06029	Gas (mcf)	Gas Lost - Flared or Vented	Royalties	3600
+2006	CA	Kern	06029	Gas (mcf)	Processed (Residue) Gas	Royalties	1127491.88
+2006	CA	Kern	06029	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	1008476.02
+2006	CA	Kern	06029	NGL (gal)	Gas Plant Products	Royalties	242677.99
+2006	CA	Kern	06029	Oil (bbl)	Condensate	Royalties	199998.6
+2006	CA	Kern	06029	Oil (bbl)	Oil	Royalties	86055687.86
+2006	CA	Kings	06031	Oil & Gas		Other Revenues	1187.4
+2006	CA	Kings	06031	Oil & Gas		Rents	29749.22
+2006	CA	Kings	06031	Gas (mcf)	Processed (Residue) Gas	Royalties	101984.36
+2006	CA	Kings	06031	NGL (gal)	Gas Plant Products	Royalties	15774.88
+2006	CA	Kings	06031	Oil (bbl)	Oil	Royalties	264463.31
+2006	CA	Lake	06033	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds	Royalties	3677923
+2006	CA	Lassen	06035	Geothermal	Geothermal - Direct Utilization, Millions of BTUs	Royalties	60541.56
+2006	CA	Los Angeles	06037	Oil & Gas		Other Revenues	40120
+2006	CA	Los Angeles	06037	Oil & Gas		Rents	618
+2006	CA	Los Angeles	06037	Gas (mcf)	Processed (Residue) Gas	Royalties	465.95
+2006	CA	Los Angeles	06037	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	24595.9
+2006	CA	Los Angeles	06037	Oil & Gas		Royalties	-0.01
+2006	CA	Los Angeles	06037	Oil (bbl)	Condensate	Royalties	99810.65
+2006	CA	Los Angeles	06037	Oil (bbl)	Oil	Royalties	3250118.52
+2006	CA	Merced	06047	Oil & Gas		Bonus	3200
+2006	CA	Merced	06047	Oil & Gas		Rents	1684.5
+2006	CA	Mono	06051	Geothermal		Other Revenues	1600
+2006	CA	Mono	06051	Geothermal		Rents	27802
+2006	CA	Mono	06051	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	158644.35
+2006	CA	Monterey	06053	Oil & Gas		Rents	11330
+2006	CA	Monterey	06053	Oil (bbl)	Oil	Royalties	26216.48
+2006	CA	San Benito	06069	Oil & Gas		Bonus	126808.52
+2006	CA	San Benito	06069	Oil & Gas		Rents	111982.4
+2006	CA	San Benito	06069	Oil (bbl)	Oil	Royalties	1395.76
+2006	CA	San Bernardn	06071	Sodium		Rents	9261
+2006	CA	San Bernardn	06071	Other Products	Anhydrous Sodium Sulfate	Royalties	-11511.59
+2006	CA	San Bernardn	06071	Other Products	Borax-Decahydrate	Royalties	-594.73
+2006	CA	San Bernardn	06071	Other Products	Borax-Pentahydrate	Royalties	-2918.56
+2006	CA	San Bernardn	06071	Other Products	Boric Acid	Royalties	-3081.24
+2006	CA	San Bernardn	06071	Other Products	Soda Ash-Granular	Royalties	-165563.39
+2006	CA	San Joaquin	06077	Oil & Gas		Other Roy Vals	650
+2006	CA	San Joaquin	06077	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	3300.33
+2006	CA	San Luis Ob.	06079	Oil & Gas		Other Revenues	1235
+2006	CA	San Luis Ob.	06079	Oil & Gas		Rents	75151.82
+2006	CA	San Luis Ob.	06079	Oil (bbl)	Oil	Royalties	117171.67
+2006	CA	Santa Barbar	06083	Oil & Gas		Rents	10098.74
+2006	CA	Santa Barbar	06083	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	30359.95
+2006	CA	Santa Barbar	06083	Oil (bbl)	Oil	Royalties	613163.62
+2006	CA	Siskiyou	06093	Geothermal		Rents	69729
+2006	CA	Solano	06095	Oil & Gas		Rents	40
+2006	CA	Solano	06095	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	2104417.62
+2006	CA	Solano	06095	Oil (bbl)	Condensate	Royalties	16445.4
+2006	CA	Sonoma	06097	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds	Royalties	4851762.03
+2006	CA	Sutter	06101	Oil & Gas		Rents	80
+2006	CA	Trinity	06105	Sodium		Other Revenues	-240
+2006	CA	Ventura	06111	Oil & Gas		Other Revenues	537
+2006	CA	Ventura	06111	Oil & Gas		Other Roy Vals	-27872
+2006	CA	Ventura	06111	Oil & Gas		Rents	10655.94
+2006	CA	Ventura	06111	Gas (mcf)	Gas Lost - Flared or Vented	Royalties	25330.36
+2006	CA	Ventura	06111	Gas (mcf)	Processed (Residue) Gas	Royalties	164463.14
+2006	CA	Ventura	06111	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	341812.39
+2006	CA	Ventura	06111	NGL (gal)	Gas Plant Products	Royalties	24255.63
+2006	CA	Ventura	06111	Oil (bbl)	Condensate	Royalties	2285.7
+2006	CA	Ventura	06111	Oil (bbl)	Drip or Scrubber Condensate	Royalties	378.47
+2006	CA	Ventura	06111	Oil (bbl)	Oil	Royalties	2165958.43
+2006	CA	Yolo	06113	Oil & Gas		Rents	966
+2007	CA	Colusa	06011	Oil & Gas		Bonus	1362
+2007	CA	Colusa	06011	Oil & Gas		Rents	1021.5
+2007	CA	Contra Costa	06013	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	8317.58
+2007	CA	Contra Costa	06013	Oil (bbl)	Condensate	Royalties	152.89
+2007	CA	Fresno	06019	Oil & Gas		Bonus	21196
+2007	CA	Fresno	06019	Oil & Gas		Other Revenues	1137.66
+2007	CA	Fresno	06019	Oil & Gas		Other Roy Vals	8900
+2007	CA	Fresno	06019	Oil & Gas		Rents	80663.93
+2007	CA	Fresno	06019	Gas (mcf)	Processed (Residue) Gas	Royalties	50354.4
+2007	CA	Fresno	06019	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	185973.48
+2007	CA	Fresno	06019	NGL (gal)	Gas Plant Products	Royalties	5401.92
+2007	CA	Fresno	06019	Oil (bbl)	Condensate	Royalties	4896.02
+2007	CA	Fresno	06019	Oil (bbl)	Oil	Royalties	210234.56
+2007	CA	Glenn	06021	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	23432.6
+2007	CA	Imperial	06025	Geothermal		Rents	12078
+2007	CA	Imperial	06025	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	7482
+2007	CA	Imperial	06025	Geothermal	Geothermal - Electrical Generation, Other	Royalties	898.43
+2007	CA	Inyo	06027	Geothermal		Rents	5077.36
+2007	CA	Inyo	06027	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	1068562.69
+2007	CA	Kern	06029	Oil & Gas		Other Revenues	6728
+2007	CA	Kern	06029	Oil & Gas		Other Roy Vals	71126.34
+2007	CA	Kern	06029	Oil & Gas		Rents	240241.78
+2007	CA	Kern	06029	Gas (mcf)	Flash Gas	Royalties	5370.16
+2007	CA	Kern	06029	Gas (mcf)	Gas Lost - Flared or Vented	Royalties	3600
+2007	CA	Kern	06029	Gas (mcf)	Processed (Residue) Gas	Royalties	868937.47
+2007	CA	Kern	06029	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	814419.4
+2007	CA	Kern	06029	NGL (gal)	Gas Plant Products	Royalties	146678.36
+2007	CA	Kern	06029	Oil (bbl)	Condensate	Royalties	148203.12
+2007	CA	Kern	06029	Oil (bbl)	Oil	Royalties	98860280.09
+2007	CA	Kings	06031	Oil & Gas		Other Revenues	476.34
+2007	CA	Kings	06031	Oil & Gas		Rents	22806.18
+2007	CA	Kings	06031	Gas (mcf)	Processed (Residue) Gas	Royalties	66726.33
+2007	CA	Kings	06031	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	377.69
+2007	CA	Kings	06031	NGL (gal)	Gas Plant Products	Royalties	7129.15
+2007	CA	Kings	06031	Oil (bbl)	Oil	Royalties	277021.28
+2007	CA	Lake	06033	Geothermal		Bonus	6846000
+2007	CA	Lake	06033	Geothermal		Rents	2302
+2007	CA	Lake	06033	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds	Royalties	3343884.87
+2007	CA	Lassen	06035	Geothermal	Geothermal - Direct Utilization, Millions of BTUs	Royalties	61940.84
+2007	CA	Los Angeles	06037	Oil & Gas		Other Revenues	110080
+2007	CA	Los Angeles	06037	Oil & Gas		Rents	1932
+2007	CA	Los Angeles	06037	Gas (mcf)	Processed (Residue) Gas	Royalties	485.49
+2007	CA	Los Angeles	06037	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	13371.66
+2007	CA	Los Angeles	06037	Oil (bbl)	Condensate	Royalties	91502.3
+2007	CA	Los Angeles	06037	Oil (bbl)	Oil	Royalties	3213941.55
+2007	CA	Mendocino	06045	Geothermal		Bonus	420000.2
+2007	CA	Mendocino	06045	Geothermal		Rents	2000
+2007	CA	Merced	06047	Oil & Gas		Rents	1684.5
+2007	CA	Mono	06051	Geothermal		Other Revenues	-1000
+2007	CA	Mono	06051	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	63295.44
+2007	CA	Monterey	06053	Oil & Gas		Bonus	870
+2007	CA	Monterey	06053	Oil & Gas		Rents	11982.5
+2007	CA	Monterey	06053	Oil (bbl)	Oil	Royalties	21316.29
+2007	CA	San Benito	06069	Oil & Gas		Rents	108716.4
+2007	CA	San Benito	06069	Oil (bbl)	Oil	Royalties	1800.18
+2007	CA	San Bernardn	06071	Sodium		Bonus	120
+2007	CA	San Bernardn	06071	Sodium		Rents	240
+2007	CA	San Joaquin	06077	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	2912.37
+2007	CA	San Luis Ob.	06079	Oil & Gas		Other Revenues	1235
+2007	CA	San Luis Ob.	06079	Oil & Gas		Rents	52149.82
+2007	CA	San Luis Ob.	06079	Oil (bbl)	Oil	Royalties	110657.67
+2007	CA	Santa Barbar	06083	Oil & Gas		Rents	5568.71
+2007	CA	Santa Barbar	06083	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	35270.25
+2007	CA	Santa Barbar	06083	Oil (bbl)	Oil	Royalties	701280.3
+2007	CA	Siskiyou	06093	Geothermal		Rents	163251
+2007	CA	Solano	06095	Oil & Gas		Rents	40
+2007	CA	Solano	06095	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	1894264.24
+2007	CA	Solano	06095	Oil (bbl)	Condensate	Royalties	24869.3
+2007	CA	Sonoma	06097	Geothermal		Bonus	740799.8
+2007	CA	Sonoma	06097	Geothermal		Rents	1120
+2007	CA	Sonoma	06097	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds	Royalties	4455393.12
+2007	CA	Ventura	06111	Oil & Gas		Other Revenues	537
+2007	CA	Ventura	06111	Oil & Gas		Rents	12939.97
+2007	CA	Ventura	06111	Gas (mcf)	Gas Lost - Flared or Vented	Royalties	11571.5
+2007	CA	Ventura	06111	Gas (mcf)	Processed (Residue) Gas	Royalties	110991.17
+2007	CA	Ventura	06111	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	263172.42
+2007	CA	Ventura	06111	NGL (gal)	Gas Plant Products	Royalties	21921.46
+2007	CA	Ventura	06111	Oil (bbl)	Condensate	Royalties	1654.39
+2007	CA	Ventura	06111	Oil (bbl)	Drip or Scrubber Condensate	Royalties	901.89
+2007	CA	Ventura	06111	Oil (bbl)	Oil	Royalties	2448641.27
+2007	CA	Yolo	06113	Oil & Gas		Bonus	6030
+2007	CA	Yolo	06113	Oil & Gas		Rents	5488.5
+2008	CA	Colusa	06011	Oil & Gas		Rents	1021.5
+2008	CA	Contra Costa	06013	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	13079.7
+2008	CA	Contra Costa	06013	Oil (bbl)	Condensate	Royalties	131.7
+2008	CA	Contra Costa	06013	Oil (bbl)	Oil	Royalties	36.71
+2008	CA	Fresno	06019	Oil & Gas		Bonus	145798.72
+2008	CA	Fresno	06019	Oil & Gas		Other Revenues	3954.77
+2008	CA	Fresno	06019	Oil & Gas		Other Roy Vals	-5470
+2008	CA	Fresno	06019	Oil & Gas		Rents	131432.67
+2008	CA	Fresno	06019	Gas (mcf)	Processed (Residue) Gas	Royalties	-134.23
+2008	CA	Fresno	06019	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	167301.65
+2008	CA	Fresno	06019	NGL (gal)	Gas Plant Products	Royalties	-7.17
+2008	CA	Fresno	06019	Oil (bbl)	Condensate	Royalties	10886.47
+2008	CA	Fresno	06019	Oil (bbl)	Oil	Royalties	144067.99
+2008	CA	Glenn	06021	Oil & Gas		Other Roy Vals	-558
+2008	CA	Glenn	06021	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	12305.86
+2008	CA	Imperial	06025	Geothermal		Rents	8776
+2008	CA	Imperial	06025	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	595535.58
+2008	CA	Imperial	06025	Geothermal	Geothermal - Electrical Generation, Other	Royalties	876.91
+2008	CA	Inyo	06027	Geothermal		Other Roy Vals	814607.37
+2008	CA	Inyo	06027	Geothermal		Rents	10154.72
+2008	CA	Inyo	06027	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	914604.41
+2008	CA	Kern	06029	Oil & Gas		Bonus	1537102.75
+2008	CA	Kern	06029	Oil & Gas		Other Revenues	4018.41
+2008	CA	Kern	06029	Oil & Gas		Other Roy Vals	-7312.4
+2008	CA	Kern	06029	Oil & Gas		Rents	245195.06
+2008	CA	Kern	06029	Gas (mcf)	Flash Gas	Royalties	8108.34
+2008	CA	Kern	06029	Gas (mcf)	Gas Lost - Flared or Vented	Royalties	3600
+2008	CA	Kern	06029	Gas (mcf)	Processed (Residue) Gas	Royalties	1720054.41
+2008	CA	Kern	06029	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	785909.69
+2008	CA	Kern	06029	NGL (gal)	Gas Plant Products	Royalties	259512.54
+2008	CA	Kern	06029	Oil (bbl)	Condensate	Royalties	279332.67
+2008	CA	Kern	06029	Oil (bbl)	Fuel Oil	Royalties	121.46
+2008	CA	Kern	06029	Oil (bbl)	Oil	Royalties	152337242.9
+2008	CA	Kings	06031	Oil & Gas		Bonus	16000
+2008	CA	Kings	06031	Oil & Gas		Other Revenues	1704.84
+2008	CA	Kings	06031	Oil & Gas		Rents	9982.68
+2008	CA	Kings	06031	Gas (mcf)	Processed (Residue) Gas	Royalties	-8.7
+2008	CA	Kings	06031	NGL (gal)	Gas Plant Products	Royalties	-0.5
+2008	CA	Kings	06031	Oil (bbl)	Oil	Royalties	265930.14
+2008	CA	Lake	06033	Geothermal		Rents	3453
+2008	CA	Lake	06033	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds	Royalties	4420888.33
+2008	CA	Lassen	06035	Geothermal	Geothermal - Direct Utilization, Millions of BTUs	Royalties	67163.45
+2008	CA	Los Angeles	06037	Oil & Gas		Other Revenues	50000
+2008	CA	Los Angeles	06037	Oil & Gas		Rents	-647
+2008	CA	Los Angeles	06037	Gas (mcf)	Gas Lost - Flared or Vented	Royalties	8648.89
+2008	CA	Los Angeles	06037	Gas (mcf)	Processed (Residue) Gas	Royalties	819.93
+2008	CA	Los Angeles	06037	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	115630.51
+2008	CA	Los Angeles	06037	Oil (bbl)	Condensate	Royalties	151174.81
+2008	CA	Los Angeles	06037	Oil (bbl)	Oil	Royalties	4695295.12
+2008	CA	Mendocino	06045	Geothermal		Rents	3000
+2008	CA	Merced	06047	Oil & Gas		Rents	2166
+2008	CA	Mono	06051	Geothermal		Other Revenues	-600
+2008	CA	Mono	06051	Geothermal		Rents	23278
+2008	CA	Mono	06051	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	231283.69
+2008	CA	Monterey	06053	Oil & Gas		Bonus	66308.23
+2008	CA	Monterey	06053	Oil & Gas		Rents	18436.67
+2008	CA	Monterey	06053	Oil (bbl)	Oil	Royalties	48261.13
+2008	CA	Sacramento	06067	Oil & Gas		Other Roy Vals	92.67
+2008	CA	San Benito	06069	Oil & Gas		Bonus	47401.05
+2008	CA	San Benito	06069	Oil & Gas		Rents	136073.33
+2008	CA	San Benito	06069	Oil (bbl)	Oil	Royalties	3884.28
+2008	CA	San Bernardn	06071	Sodium		Bonus	120
+2008	CA	San Bernardn	06071	Hardrock		Rents	21
+2008	CA	San Bernardn	06071	Sodium		Rents	1089
+2008	CA	San Diego	06073	Hot Springs		Rents	33
+2008	CA	San Joaquin	06077	Oil & Gas		Other Roy Vals	-620
+2008	CA	San Joaquin	06077	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	3730.19
+2008	CA	San Luis Ob.	06079	Oil & Gas		Other Revenues	1395
+2008	CA	San Luis Ob.	06079	Oil & Gas		Rents	56501.1
+2008	CA	San Luis Ob.	06079	Oil (bbl)	Oil	Royalties	179903.01
+2008	CA	Santa Barbar	06083	Oil & Gas		Rents	7140.9
+2008	CA	Santa Barbar	06083	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	40783.93
+2008	CA	Santa Barbar	06083	Oil (bbl)	Oil	Royalties	1008922.97
+2008	CA	Siskiyou	06093	Geothermal		Rents	94098.04
+2008	CA	Solano	06095	Oil & Gas		Other Roy Vals	436.33
+2008	CA	Solano	06095	Oil & Gas		Rents	40
+2008	CA	Solano	06095	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	1903776.55
+2008	CA	Solano	06095	Oil (bbl)	Condensate	Royalties	34942.38
+2008	CA	Sonoma	06097	Geothermal		Rents	1680
+2008	CA	Sonoma	06097	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds	Royalties	6027351.67
+2008	CA	Ventura	06111	Oil & Gas		Other Revenues	537
+2008	CA	Ventura	06111	Oil & Gas		Other Roy Vals	220250
+2008	CA	Ventura	06111	Oil & Gas		Rents	2476
+2008	CA	Ventura	06111	Gas (mcf)	Gas Lost - Flared or Vented	Royalties	8772.48
+2008	CA	Ventura	06111	Gas (mcf)	Processed (Residue) Gas	Royalties	192150.49
+2008	CA	Ventura	06111	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	511791.09
+2008	CA	Ventura	06111	NGL (gal)	Gas Plant Products	Royalties	27266.62
+2008	CA	Ventura	06111	Oil (bbl)	Condensate	Royalties	2089.63
+2008	CA	Ventura	06111	Oil (bbl)	Drip or Scrubber Condensate	Royalties	45.41
+2008	CA	Ventura	06111	Oil (bbl)	Oil	Royalties	3828736.35
+2008	CA	Yolo	06113	Oil & Gas		Rents	5810.5
+2009	CA	Contra Costa	06013	Oil & Gas		Other Roy Vals	-1855
+2009	CA	Contra Costa	06013	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	2880.89
+2009	CA	Fresno	06019	Oil & Gas		Other Revenues	1017.61
+2009	CA	Fresno	06019	Oil & Gas		Other Roy Vals	-10889.64
+2009	CA	Fresno	06019	Oil & Gas		Rents	17960.33
+2009	CA	Fresno	06019	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	60819.24
+2009	CA	Fresno	06019	Oil (bbl)	Condensate	Royalties	1765.87
+2009	CA	Fresno	06019	Oil (bbl)	Oil	Royalties	109815.1
+2009	CA	Glenn	06021	Oil & Gas		Other Revenues	66
+2009	CA	Glenn	06021	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	17301.59
+2009	CA	Imperial	06025	Geothermal		Bonus	67840
+2009	CA	Imperial	06025	Geothermal		Rents	33681
+2009	CA	Imperial	06025	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	177597
+2009	CA	Imperial	06025	Geothermal	Geothermal - Electrical Generation, Other	Royalties	934.03
+2009	CA	Inyo	06027	Geothermal		Rents	597.57
+2009	CA	Inyo	06027	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	318515.05
+2009	CA	Kern	06029	Oil & Gas		Bonus	176965
+2009	CA	Kern	06029	Oil & Gas		Other Revenues	4409.99
+2009	CA	Kern	06029	Oil & Gas		Other Roy Vals	-19554.09
+2009	CA	Kern	06029	Oil & Gas		Rents	209194.76
+2009	CA	Kern	06029	Gas (mcf)	Flash Gas	Royalties	7875.11
+2009	CA	Kern	06029	Gas (mcf)	Gas Lost - Flared or Vented	Royalties	28979.2
+2009	CA	Kern	06029	Gas (mcf)	Processed (Residue) Gas	Royalties	1158912.98
+2009	CA	Kern	06029	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	226675.35
+2009	CA	Kern	06029	NGL (gal)	Gas Plant Products	Royalties	161287.04
+2009	CA	Kern	06029	Oil (bbl)	Condensate	Royalties	-218663.55
+2009	CA	Kern	06029	Oil (bbl)	Drip or Scrubber Condensate	Royalties	508934.15
+2009	CA	Kern	06029	Oil (bbl)	Oil	Royalties	79283262.77
+2009	CA	Kings	06031	Oil & Gas		Other Revenues	3363.34
+2009	CA	Kings	06031	Oil & Gas		Other Roy Vals	-10380.36
+2009	CA	Kings	06031	Oil & Gas		Rents	13674
+2009	CA	Kings	06031	Oil (bbl)	Oil	Royalties	189117.76
+2009	CA	Lake	06033	Geothermal		Rents	3453
+2009	CA	Lake	06033	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds	Royalties	2986506.98
+2009	CA	Lassen	06035	Geothermal	Geothermal - Direct Utilization, Millions of BTUs	Royalties	49341.89
+2009	CA	Los Angeles	06037	Oil & Gas		Rents	1265
+2009	CA	Los Angeles	06037	Gas (mcf)	Processed (Residue) Gas	Royalties	233.02
+2009	CA	Los Angeles	06037	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	6261.34
+2009	CA	Los Angeles	06037	Oil (bbl)	Condensate	Royalties	69132.64
+2009	CA	Los Angeles	06037	Oil (bbl)	Oil	Royalties	2569674.7
+2009	CA	Mendocino	06045	Geothermal		Rents	3000
+2009	CA	Merced	06047	Oil & Gas		Rents	240
+2009	CA	Mono	06051	Geothermal		Rents	22678
+2009	CA	Mono	06051	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	173233.07
+2009	CA	Monterey	06053	Oil & Gas		Rents	16411
+2009	CA	Monterey	06053	Oil (bbl)	Oil	Royalties	44931.78
+2009	CA	San Benito	06069	Oil & Gas		Rents	26097
+2009	CA	San Benito	06069	Oil (bbl)	Oil	Royalties	8489.5
+2009	CA	San Bernardn	06071	Sodium		Bonus	1416
+2009	CA	San Bernardn	06071	Sodium		Other Revenues	16947
+2009	CA	San Bernardn	06071	Hardrock		Rents	21
+2009	CA	San Bernardn	06071	Sodium		Rents	29842.68
+2009	CA	San Joaquin	06077	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	1567.56
+2009	CA	San Luis Ob.	06079	Oil & Gas		Other Revenues	1395
+2009	CA	San Luis Ob.	06079	Oil & Gas		Rents	24228
+2009	CA	San Luis Ob.	06079	Oil (bbl)	Oil	Royalties	128618.04
+2009	CA	Santa Barbar	06083	Oil & Gas		Rents	3686.5
+2009	CA	Santa Barbar	06083	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	20144.11
+2009	CA	Santa Barbar	06083	Oil (bbl)	Oil	Royalties	577557.41
+2009	CA	Siskiyou	06093	Geothermal		Rents	161919
+2009	CA	Solano	06095	Oil & Gas		Rents	40
+2009	CA	Solano	06095	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	755792.24
+2009	CA	Solano	06095	Oil (bbl)	Condensate	Royalties	13592.53
+2009	CA	Sonoma	06097	Geothermal		Bonus	18980
+2009	CA	Sonoma	06097	Geothermal		Rents	3578
+2009	CA	Sonoma	06097	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds	Royalties	4059074.9
+2009	CA	Ventura	06111	Oil & Gas		Other Revenues	554
+2009	CA	Ventura	06111	Oil & Gas		Other Roy Vals	-102550
+2009	CA	Ventura	06111	Oil & Gas		Rents	23656
+2009	CA	Ventura	06111	Gas (mcf)	Gas Lost - Flared or Vented	Royalties	12030.87
+2009	CA	Ventura	06111	Gas (mcf)	Processed (Residue) Gas	Royalties	29022.75
+2009	CA	Ventura	06111	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	223706.3
+2009	CA	Ventura	06111	NGL (gal)	Gas Plant Products	Royalties	16510.87
+2009	CA	Ventura	06111	Oil (bbl)	Condensate	Royalties	2429
+2009	CA	Ventura	06111	Oil (bbl)	Oil	Royalties	1889868.5
+2009	CA	Yolo	06113	Oil & Gas		Rents	1288
+2010	CA	Contra Costa	06013	Oil & Gas		Other Roy Vals	18.08
+2010	CA	Contra Costa	06013	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	1946.02
+2010	CA	Fresno	06019	Oil & Gas		Other Revenues	1185.3
+2010	CA	Fresno	06019	Oil & Gas		Other Roy Vals	145865.08
+2010	CA	Fresno	06019	Oil & Gas		Rents	12027.5
+2010	CA	Fresno	06019	Gas (mcf)	Processed (Residue) Gas	Royalties	10616.93
+2010	CA	Fresno	06019	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	59408.68
+2010	CA	Fresno	06019	Oil (bbl)	Oil	Royalties	138438.74
+2010	CA	Glenn	06021	Oil & Gas		Other Revenues	106
+2010	CA	Glenn	06021	Oil & Gas		Other Roy Vals	19.43
+2010	CA	Glenn	06021	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	12316.96
+2010	CA	Imperial	06025	Geothermal		Rents	44345
+2010	CA	Imperial	06025	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	111289
+2010	CA	Imperial	06025	Geothermal	Geothermal - Electrical Generation, Other	Royalties	893.38
+2010	CA	Inyo	06027	Geothermal		Other Revenues	83464.3
+2010	CA	Inyo	06027	Geothermal		Rents	-83464.3
+2010	CA	Inyo	06027	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	835458.78
+2010	CA	Kern	06029	Oil & Gas		Bonus	2300130
+2010	CA	Kern	06029	Oil & Gas		Other Revenues	9231
+2010	CA	Kern	06029	Oil & Gas		Other Roy Vals	39479.9
+2010	CA	Kern	06029	Oil & Gas		Rents	203520
+2010	CA	Kern	06029	Gas (mcf)	Flash Gas	Royalties	3231.75
+2010	CA	Kern	06029	Gas (mcf)	Fuel Gas	Royalties	562.66
+2010	CA	Kern	06029	Gas (mcf)	Gas Lost - Flared or Vented	Royalties	15418
+2010	CA	Kern	06029	Gas (mcf)	Processed (Residue) Gas	Royalties	1123649.82
+2010	CA	Kern	06029	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	945065.81
+2010	CA	Kern	06029	NGL (gal)	Gas Plant Products	Royalties	206967.71
+2010	CA	Kern	06029	Oil (bbl)	Condensate	Royalties	65702.69
+2010	CA	Kern	06029	Oil (bbl)	Drip or Scrubber Condensate	Royalties	138976.25
+2010	CA	Kern	06029	Oil (bbl)	Oil	Royalties	110319069.27
+2010	CA	Kings	06031	Oil & Gas		Bonus	1939945
+2010	CA	Kings	06031	Oil & Gas		Other Revenues	476.34
+2010	CA	Kings	06031	Oil & Gas		Other Roy Vals	4860.35
+2010	CA	Kings	06031	Oil & Gas		Rents	25575
+2010	CA	Kings	06031	Gas (mcf)	Processed (Residue) Gas	Royalties	13698.74
+2010	CA	Kings	06031	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	1698.41
+2010	CA	Kings	06031	Oil (bbl)	Oil	Royalties	280629.24
+2010	CA	Lake	06033	Geothermal		Rents	3453
+2010	CA	Lake	06033	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds	Royalties	3303932.95
+2010	CA	Lassen	06035	Geothermal	Geothermal - Direct Utilization, Millions of BTUs	Royalties	51388.25
+2010	CA	Los Angeles	06037	Oil & Gas		Other Roy Vals	123.21
+2010	CA	Los Angeles	06037	Oil & Gas		Rents	1589
+2010	CA	Los Angeles	06037	Gas (mcf)	Processed (Residue) Gas	Royalties	262.39
+2010	CA	Los Angeles	06037	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	-93323.01
+2010	CA	Los Angeles	06037	Oil (bbl)	Condensate	Royalties	92720.23
+2010	CA	Los Angeles	06037	Oil (bbl)	Oil	Royalties	3727968.82
+2010	CA	Mendocino	06045	Geothermal		Rents	3000
+2010	CA	Merced	06047	Oil & Gas		Rents	240
+2010	CA	Mono	06051	Geothermal		Rents	10186
+2010	CA	Mono	06051	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	154815.47
+2010	CA	Monterey	06053	Oil & Gas		Rents	11255.5
+2010	CA	Monterey	06053	Oil (bbl)	Oil	Royalties	78074.13
+2010	CA	San Benito	06069	Oil & Gas		Rents	33123
+2010	CA	San Benito	06069	Oil (bbl)	Oil	Royalties	7453.41
+2010	CA	San Bernardn	06071	Sodium		Bonus	120
+2010	CA	San Bernardn	06071	Sodium		Other Revenues	12.46
+2010	CA	San Bernardn	06071	Sodium		Rents	-10909.81
+2010	CA	San Joaquin	06077	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	1727.51
+2010	CA	San Luis Ob.	06079	Oil & Gas		Other Revenues	1235
+2010	CA	San Luis Ob.	06079	Oil & Gas		Rents	16126
+2010	CA	San Luis Ob.	06079	Oil (bbl)	Oil	Royalties	81936.77
+2010	CA	Santa Barbar	06083	Oil & Gas		Rents	4512.5
+2010	CA	Santa Barbar	06083	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	24151.5
+2010	CA	Santa Barbar	06083	Oil (bbl)	Oil	Royalties	581651.3
+2010	CA	Siskiyou	06093	Geothermal		Rents	113993
+2010	CA	Solano	06095	Oil & Gas		Other Roy Vals	9268.78
+2010	CA	Solano	06095	Oil & Gas		Rents	40
+2010	CA	Solano	06095	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	837983.35
+2010	CA	Solano	06095	Oil (bbl)	Condensate	Royalties	16596.91
+2010	CA	Sonoma	06097	Geothermal		Bonus	19348
+2010	CA	Sonoma	06097	Geothermal		Rents	18347
+2010	CA	Sonoma	06097	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds	Royalties	4412625.62
+2010	CA	Sutter	06101	Oil & Gas		Bonus	8653
+2010	CA	Sutter	06101	Oil & Gas		Other Roy Vals	-75
+2010	CA	Sutter	06101	Oil & Gas		Rents	249
+2010	CA	Ventura	06111	Oil & Gas		Other Revenues	563
+2010	CA	Ventura	06111	Oil & Gas		Other Roy Vals	830.3
+2010	CA	Ventura	06111	Oil & Gas		Rents	13184
+2010	CA	Ventura	06111	Gas (mcf)	Gas Lost - Flared or Vented	Royalties	14334.65
+2010	CA	Ventura	06111	Gas (mcf)	Processed (Residue) Gas	Royalties	37871.64
+2010	CA	Ventura	06111	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	280178.59
+2010	CA	Ventura	06111	NGL (gal)	Gas Plant Products	Royalties	21054.22
+2010	CA	Ventura	06111	Oil (bbl)	Condensate	Royalties	738.74
+2010	CA	Ventura	06111	Oil (bbl)	Oil	Royalties	2536666.33
+2010	CA	Yolo	06113	Oil & Gas		Rents	1288
+2011	CA	Contra Costa	06013	Oil & Gas		Other Roy Vals	49.29
+2011	CA	Contra Costa	06013	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	1355.57
+2011	CA	Fresno	06019	Oil & Gas		Other Revenues	1073.66
+2011	CA	Fresno	06019	Oil & Gas		Other Roy Vals	1709.2
+2011	CA	Fresno	06019	Oil & Gas		Rents	11094.5
+2011	CA	Fresno	06019	Gas (mcf)	Processed (Residue) Gas	Royalties	55838.47
+2011	CA	Fresno	06019	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	38647.84
+2011	CA	Fresno	06019	Oil (bbl)	Oil	Royalties	172190.99
+2011	CA	Glenn	06021	Oil & Gas		Other Revenues	106
+2011	CA	Glenn	06021	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	5629.95
+2011	CA	Imperial	06025	Geothermal		Rents	43063
+2011	CA	Imperial	06025	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	-268476.99
+2011	CA	Imperial	06025	Geothermal	Geothermal - Electrical Generation, Other	Royalties	128.91
+2011	CA	Inyo	06027	Geothermal		Other Revenues	2066.71
+2011	CA	Inyo	06027	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	527854.09
+2011	CA	Kern	06029	Oil & Gas		Bonus	5259428
+2011	CA	Kern	06029	Oil & Gas		Other Revenues	19660
+2011	CA	Kern	06029	Oil & Gas		Other Roy Vals	35072.31
+2011	CA	Kern	06029	Oil & Gas		Rents	220110.5
+2011	CA	Kern	06029	Gas (mcf)	Flash Gas	Royalties	5457.66
+2011	CA	Kern	06029	Gas (mcf)	Fuel Gas	Royalties	3773.69
+2011	CA	Kern	06029	Gas (mcf)	Gas Lost - Flared or Vented	Royalties	3600
+2011	CA	Kern	06029	Gas (mcf)	Processed (Residue) Gas	Royalties	1949026.91
+2011	CA	Kern	06029	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	1306887.23
+2011	CA	Kern	06029	NGL (gal)	Gas Plant Products	Royalties	760081.79
+2011	CA	Kern	06029	Oil (bbl)	Condensate	Royalties	180596.3
+2011	CA	Kern	06029	Oil (bbl)	Drip or Scrubber Condensate	Royalties	51001.36
+2011	CA	Kern	06029	Oil (bbl)	Oil	Royalties	163570640.72
+2011	CA	Kings	06031	Oil & Gas		Bonus	359800
+2011	CA	Kings	06031	Oil & Gas		Other Revenues	1049.32
+2011	CA	Kings	06031	Oil & Gas		Other Roy Vals	3415.17
+2011	CA	Kings	06031	Oil & Gas		Rents	24422.5
+2011	CA	Kings	06031	Gas (mcf)	Processed (Residue) Gas	Royalties	72165.48
+2011	CA	Kings	06031	Oil (bbl)	Oil	Royalties	323283.63
+2011	CA	Lake	06033	Geothermal		Rents	3453
+2011	CA	Lake	06033	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds	Royalties	3143700.02
+2011	CA	Lassen	06035	Geothermal	Geothermal - Direct Utilization, Millions of BTUs	Royalties	48086.24
+2011	CA	Los Angeles	06037	Oil & Gas		Other Roy Vals	107.84
+2011	CA	Los Angeles	06037	Oil & Gas		Rents	1275
+2011	CA	Los Angeles	06037	Gas (mcf)	Processed (Residue) Gas	Royalties	255.29
+2011	CA	Los Angeles	06037	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	16809.02
+2011	CA	Los Angeles	06037	Oil (bbl)	Condensate	Royalties	230543.75
+2011	CA	Los Angeles	06037	Oil (bbl)	Oil	Royalties	4979127.65
+2011	CA	Mendocino	06045	Geothermal		Rents	3000
+2011	CA	Merced	06047	Oil & Gas		Rents	320
+2011	CA	Mono	06051	Geothermal		Rents	22678
+2011	CA	Mono	06051	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	-65071.09
+2011	CA	Monterey	06053	Oil & Gas		Rents	11255.5
+2011	CA	Monterey	06053	Oil (bbl)	Oil	Royalties	136945.5
+2011	CA	San Benito	06069	Oil & Gas		Rents	39684.8
+2011	CA	San Benito	06069	Oil (bbl)	Oil	Royalties	7519.13
+2011	CA	San Bernardn	06071	Sodium		Bonus	120
+2011	CA	San Bernardn	06071	Sodium		Rents	-14509.9
+2011	CA	San Joaquin	06077	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	1600.74
+2011	CA	San Luis Ob.	06079	Oil & Gas		Other Revenues	1075
+2011	CA	San Luis Ob.	06079	Oil & Gas		Other Roy Vals	1.53
+2011	CA	San Luis Ob.	06079	Oil & Gas		Rents	15248
+2011	CA	San Luis Ob.	06079	Oil (bbl)	Oil	Royalties	123494.62
+2011	CA	Santa Barbar	06083	Oil & Gas		Other Roy Vals	127.08
+2011	CA	Santa Barbar	06083	Oil & Gas		Rents	5455.5
+2011	CA	Santa Barbar	06083	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	49957.72
+2011	CA	Santa Barbar	06083	Oil (bbl)	Oil	Royalties	817103.25
+2011	CA	Siskiyou	06093	Geothermal		Rents	119109
+2011	CA	Solano	06095	Oil & Gas		Rents	40
+2011	CA	Solano	06095	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	410474
+2011	CA	Solano	06095	Oil (bbl)	Condensate	Royalties	27308.03
+2011	CA	Sonoma	06097	Geothermal		Rents	12819
+2011	CA	Sonoma	06097	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds	Royalties	4167151.74
+2011	CA	Sutter	06101	Oil & Gas		Rents	249
+2011	CA	Ventura	06111	Oil & Gas		Other Revenues	480
+2011	CA	Ventura	06111	Oil & Gas		Other Roy Vals	-6480.46
+2011	CA	Ventura	06111	Oil & Gas		Rents	12396
+2011	CA	Ventura	06111	Gas (mcf)	Gas Lost - Flared or Vented	Royalties	4179.26
+2011	CA	Ventura	06111	Gas (mcf)	Processed (Residue) Gas	Royalties	38270.51
+2011	CA	Ventura	06111	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	362691.42
+2011	CA	Ventura	06111	NGL (gal)	Gas Plant Products	Royalties	25302.73
+2011	CA	Ventura	06111	Oil (bbl)	Condensate	Royalties	1695.63
+2011	CA	Ventura	06111	Oil (bbl)	Oil	Royalties	2915215.26
+2011	CA	Yolo	06113	Oil & Gas		Rents	1288
+2012	CA	Contra Costa	06013	Oil & Gas		Other Roy Vals	106
+2012	CA	Contra Costa	06013	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	718.18
+2012	CA	Fresno	06019	Oil & Gas		Other Revenues	-1193.63
+2012	CA	Fresno	06019	Oil & Gas		Other Roy Vals	562.55
+2012	CA	Fresno	06019	Oil & Gas		Rents	10662.5
+2012	CA	Fresno	06019	Gas (mcf)	Processed (Residue) Gas	Royalties	21074.32
+2012	CA	Fresno	06019	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	10239.03
+2012	CA	Fresno	06019	Oil (bbl)	Condensate	Royalties	-15194.42
+2012	CA	Fresno	06019	Oil (bbl)	Oil	Royalties	131440.77
+2012	CA	Glenn	06021	Oil & Gas		Other Revenues	41
+2012	CA	Glenn	06021	Oil & Gas		Other Roy Vals	8.95
+2012	CA	Glenn	06021	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	4971.9
+2012	CA	Imperial	06025	Geothermal		Rents	43063
+2012	CA	Imperial	06025	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	291167.63
+2012	CA	Inyo	06027	Geothermal		Other Revenues	-2066.71
+2012	CA	Inyo	06027	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	811955.57
+2012	CA	Inyo	06027	Geothermal	Geothermal - sulfur	Royalties	514.96
+2012	CA	Kern	06029	Oil & Gas		Bonus	3025460
+2012	CA	Kern	06029	Oil & Gas		Other Revenues	21779.82
+2012	CA	Kern	06029	Oil & Gas		Other Roy Vals	562521.99
+2012	CA	Kern	06029	Oil & Gas		Rents	232959.5
+2012	CA	Kern	06029	Gas (mcf)	Flash Gas	Royalties	-1335.8
+2012	CA	Kern	06029	Gas (mcf)	Fuel Gas	Royalties	23101.2
+2012	CA	Kern	06029	Gas (mcf)	Gas Lost - Flared or Vented	Royalties	3600
+2012	CA	Kern	06029	Gas (mcf)	Processed (Residue) Gas	Royalties	3082223.6
+2012	CA	Kern	06029	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	1005895.45
+2012	CA	Kern	06029	NGL (gal)	Gas Plant Products	Royalties	2834942.12
+2012	CA	Kern	06029	Oil (bbl)	Condensate	Royalties	75824.23
+2012	CA	Kern	06029	Oil (bbl)	Drip or Scrubber Condensate	Royalties	64812.37
+2012	CA	Kern	06029	Oil (bbl)	Fuel Oil	Royalties	67.03
+2012	CA	Kern	06029	Oil (bbl)	Oil	Royalties	171988966.85
+2012	CA	Kings	06031	Oil & Gas		Bonus	187000
+2012	CA	Kings	06031	Oil & Gas		Other Revenues	1276.34
+2012	CA	Kings	06031	Oil & Gas		Other Roy Vals	20.6
+2012	CA	Kings	06031	Oil & Gas		Rents	24996.5
+2012	CA	Kings	06031	Gas (mcf)	Processed (Residue) Gas	Royalties	27391.84
+2012	CA	Kings	06031	Oil (bbl)	Oil	Royalties	417388.19
+2012	CA	Lake	06033	Geothermal		Rents	3453
+2012	CA	Lake	06033	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds	Royalties	3155630.11
+2012	CA	Lassen	06035	Geothermal	Geothermal - Direct Utilization, Millions of BTUs	Royalties	76071.14
+2012	CA	Los Angeles	06037	Oil & Gas		Other Revenues	65.6
+2012	CA	Los Angeles	06037	Oil & Gas		Rents	961
+2012	CA	Los Angeles	06037	Gas (mcf)	Processed (Residue) Gas	Royalties	143.52
+2012	CA	Los Angeles	06037	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	15753.58
+2012	CA	Los Angeles	06037	Oil (bbl)	Condensate	Royalties	487146.05
+2012	CA	Los Angeles	06037	Oil (bbl)	Oil	Royalties	5729903.73
+2012	CA	Mendocino	06045	Geothermal		Rents	3000
+2012	CA	Mono	06051	Geothermal		Other Revenues	1388
+2012	CA	Mono	06051	Geothermal		Rents	-109790
+2012	CA	Mono	06051	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	337570.95
+2012	CA	Monterey	06053	Oil & Gas		Rents	11255.5
+2012	CA	Monterey	06053	Oil (bbl)	Oil	Royalties	168016.87
+2012	CA	San Benito	06069	Oil & Gas		Rents	35890
+2012	CA	San Benito	06069	Oil (bbl)	Oil	Royalties	1193.88
+2012	CA	San Bernardn	06071	Sodium		Bonus	-480
+2012	CA	San Bernardn	06071	Sodium		Rents	3543.49
+2012	CA	San Joaquin	06077	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	1026.39
+2012	CA	San Luis Ob.	06079	Oil & Gas		Other Revenues	1395
+2012	CA	San Luis Ob.	06079	Oil & Gas		Rents	15248
+2012	CA	San Luis Ob.	06079	Oil (bbl)	Oil	Royalties	176389.73
+2012	CA	Santa Barbar	06083	Oil & Gas		Other Roy Vals	2.52
+2012	CA	Santa Barbar	06083	Oil & Gas		Rents	3716
+2012	CA	Santa Barbar	06083	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	10196.04
+2012	CA	Santa Barbar	06083	Oil (bbl)	Oil	Royalties	993676
+2012	CA	Siskiyou	06093	Geothermal		Rents	124245
+2012	CA	Solano	06095	Oil & Gas		Rents	40
+2012	CA	Solano	06095	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	209728.14
+2012	CA	Solano	06095	Oil (bbl)	Condensate	Royalties	13741.75
+2012	CA	Solano	06095	Oil (bbl)	Oil	Royalties	3676.27
+2012	CA	Sonoma	06097	Geothermal		Rents	12819
+2012	CA	Sonoma	06097	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds	Royalties	4358864.24
+2012	CA	Sutter	06101	Oil & Gas		Rents	249
+2012	CA	Ventura	06111	Oil & Gas		Bonus	-1200
+2012	CA	Ventura	06111	Oil & Gas		Other Revenues	874
+2012	CA	Ventura	06111	Oil & Gas		Other Roy Vals	83000
+2012	CA	Ventura	06111	Oil & Gas		Rents	-6824
+2012	CA	Ventura	06111	Gas (mcf)	Gas Lost - Flared or Vented	Royalties	7455.58
+2012	CA	Ventura	06111	Gas (mcf)	Processed (Residue) Gas	Royalties	23610.45
+2012	CA	Ventura	06111	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	488734.95
+2012	CA	Ventura	06111	NGL (gal)	Gas Plant Products	Royalties	28941.6
+2012	CA	Ventura	06111	Oil (bbl)	Condensate	Royalties	3239.07
+2012	CA	Ventura	06111	Oil (bbl)	Drip or Scrubber Condensate	Royalties	157.44
+2012	CA	Ventura	06111	Oil (bbl)	Oil	Royalties	4518792.7
+2012	CA	Yolo	06113	Oil & Gas		Rents	1288
+2013	CA	Contra Costa	06013	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	4017.9
+2013	CA	Contra Costa	06013	Oil (bbl)	Condensate	Royalties	91.75
+2013	CA	Contra Costa	06013	Oil (bbl)	Oil	Royalties	5.19
+2013	CA	Fresno	06019	Oil & Gas		Bonus	190822.2
+2013	CA	Fresno	06019	Oil & Gas		Other Revenues	1392.29
+2013	CA	Fresno	06019	Oil & Gas		Other Roy Vals	-2900
+2013	CA	Fresno	06019	Oil & Gas		Rents	7142.65
+2013	CA	Fresno	06019	Gas (mcf)	Processed (Residue) Gas	Royalties	118.3
+2013	CA	Fresno	06019	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	381.48
+2013	CA	Fresno	06019	Oil (bbl)	Oil	Royalties	237461.56
+2013	CA	Glenn	06021	Oil & Gas		Other Revenues	41
+2013	CA	Glenn	06021	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	12399.03
+2013	CA	Imperial	06025	Geothermal		Rents	43063
+2013	CA	Imperial	06025	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	21454.95
+2013	CA	Inyo	06027	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	656853.22
+2013	CA	Inyo	06027	Geothermal	Geothermal - sulfur	Royalties	123.84
+2013	CA	Kern	06029	Oil & Gas		Other Revenues	9680.82
+2013	CA	Kern	06029	Oil & Gas		Other Roy Vals	-195600
+2013	CA	Kern	06029	Oil & Gas		Rents	186668
+2013	CA	Kern	06029	Gas (mcf)	Fuel Gas	Royalties	46326.21
+2013	CA	Kern	06029	Gas (mcf)	Gas Lost - Flared or Vented	Royalties	3600
+2013	CA	Kern	06029	Gas (mcf)	Processed (Residue) Gas	Royalties	2281329.35
+2013	CA	Kern	06029	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	317745.59
+2013	CA	Kern	06029	NGL (gal)	Gas Plant Products	Royalties	1668586.11
+2013	CA	Kern	06029	Oil (bbl)	Condensate	Royalties	224605.69
+2013	CA	Kern	06029	Oil (bbl)	Drip or Scrubber Condensate	Royalties	-121327.98
+2013	CA	Kern	06029	Oil (bbl)	Fuel Oil	Royalties	67.62
+2013	CA	Kern	06029	Oil (bbl)	Oil	Royalties	171740759.36
+2013	CA	Kings	06031	Oil & Gas		Bonus	159.8
+2013	CA	Kings	06031	Oil & Gas		Other Revenues	793.34
+2013	CA	Kings	06031	Oil & Gas		Rents	24363.35
+2013	CA	Kings	06031	Gas (mcf)	Processed (Residue) Gas	Royalties	2398.19
+2013	CA	Kings	06031	NGL (gal)	Gas Plant Products	Royalties	2738.44
+2013	CA	Kings	06031	Oil (bbl)	Oil	Royalties	355987.37
+2013	CA	Lake	06033	Geothermal		Rents	3453
+2013	CA	Lake	06033	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds	Royalties	3466489.45
+2013	CA	Lassen	06035	Geothermal	Geothermal - Direct Utilization, Millions of BTUs	Royalties	67132.07
+2013	CA	Los Angeles	06037	Oil & Gas		Rents	1589
+2013	CA	Los Angeles	06037	Gas (mcf)	Processed (Residue) Gas	Royalties	171.16
+2013	CA	Los Angeles	06037	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	47018.68
+2013	CA	Los Angeles	06037	Oil (bbl)	Condensate	Royalties	439351.02
+2013	CA	Los Angeles	06037	Oil (bbl)	Oil	Royalties	6444045.19
+2013	CA	Mendocino	06045	Geothermal		Rents	3000
+2013	CA	Mono	06051	Geothermal		Rents	600
+2013	CA	Mono	06051	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	317098.45
+2013	CA	Monterey	06053	Oil & Gas		Rents	12994
+2013	CA	Monterey	06053	Oil (bbl)	Oil	Royalties	167371.23
+2013	CA	San Benito	06069	Oil & Gas		Rents	28502
+2013	CA	San Benito	06069	Oil (bbl)	Oil	Royalties	1071.08
+2013	CA	San Bernardn	06071	Hardrock		Rents	105
+2013	CA	San Bernardn	06071	Sodium		Rents	2532.5
+2013	CA	San Joaquin	06077	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	1395.21
+2013	CA	San Luis Ob.	06079	Oil & Gas		Other Revenues	1635
+2013	CA	San Luis Ob.	06079	Oil & Gas		Rents	11408
+2013	CA	San Luis Ob.	06079	Oil (bbl)	Oil	Royalties	161249.96
+2013	CA	Santa Barbar	06083	Oil & Gas		Rents	2729.5
+2013	CA	Santa Barbar	06083	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	9283.23
+2013	CA	Santa Barbar	06083	Oil (bbl)	Oil	Royalties	835689.27
+2013	CA	Siskiyou	06093	Geothermal		Rents	102093
+2013	CA	Solano	06095	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	14557.1
+2013	CA	Sonoma	06097	Geothermal		Rents	12819
+2013	CA	Sonoma	06097	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds	Royalties	4777308.4
+2013	CA	Sutter	06101	Oil & Gas		Rents	249
+2013	CA	Ventura	06111	Oil & Gas		Other Revenues	580
+2013	CA	Ventura	06111	Oil & Gas		Other Roy Vals	-5000
+2013	CA	Ventura	06111	Oil & Gas		Rents	2712
+2013	CA	Ventura	06111	Gas (mcf)	Gas Lost - Flared or Vented	Royalties	17921.29
+2013	CA	Ventura	06111	Gas (mcf)	Processed (Residue) Gas	Royalties	38980.96
+2013	CA	Ventura	06111	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	74944.89
+2013	CA	Ventura	06111	NGL (gal)	Gas Plant Products	Royalties	40125.41
+2013	CA	Ventura	06111	Oil (bbl)	Condensate	Royalties	-8003.66
+2013	CA	Ventura	06111	Oil (bbl)	Drip or Scrubber Condensate	Royalties	10203.9
+2013	CA	Ventura	06111	Oil (bbl)	Oil	Royalties	3274001.83
+2004	CA	San Bernardn	06071	Potassium		Other Revenues	3996
+2004	CA	San Bernardn	06071	Sodium		Other Revenues	72.39
+2004	CA	San Bernardn	06071	Other Products	Anhydrous Sodium Sulfate	Royalties	210401.24
+2004	CA	San Bernardn	06071	Other Products	Borax-Anhydrous	Royalties	-713.29
+2004	CA	San Bernardn	06071	Other Products	Borax-Decahydrate	Royalties	109121.44
+2004	CA	San Bernardn	06071	Other Products	Borax-Pentahydrate	Royalties	103624.51
+2004	CA	San Bernardn	06071	Other Products	Boric Acid	Royalties	317097.54
+2004	CA	San Bernardn	06071	Other Products	Salt	Royalties	39989.97
+2004	CA	San Bernardn	06071	Other Products	Soda Ash	Royalties	2421272.34
+2004	CA	San Bernardn	06071	Other Products	Sodium Bi-Carbonate	Royalties	37810.73
+2005	CA	San Bernardn	06071	Other Products	Anhydrous Sodium Sulfate	Royalties	337723.99
+2005	CA	San Bernardn	06071	Other Products	Borax-Anhydrous	Royalties	23602.57
+2005	CA	San Bernardn	06071	Other Products	Borax-Decahydrate	Royalties	103037.41
+2005	CA	San Bernardn	06071	Other Products	Borax-Pentahydrate	Royalties	151645.46
+2005	CA	San Bernardn	06071	Other Products	Boric Acid	Royalties	328102.64
+2005	CA	San Bernardn	06071	Other Products	Salt	Royalties	61912.48
+2005	CA	San Bernardn	06071	Other Products	Soda Ash	Royalties	3228230.52
+2005	CA	San Bernardn	06071	Other Products	Sodium Bi-Carbonate	Royalties	47878.8
+2006	CA	San Bernardn	06071	Other Products	Anhydrous Sodium Sulfate	Royalties	218485.72
+2006	CA	San Bernardn	06071	Other Products	Borax-Anhydrous	Royalties	-1956.91
+2006	CA	San Bernardn	06071	Other Products	Borax-Decahydrate	Royalties	32914.93
+2006	CA	San Bernardn	06071	Other Products	Borax-Pentahydrate	Royalties	26110.16
+2006	CA	San Bernardn	06071	Other Products	Boric Acid	Royalties	160421.29
+2006	CA	San Bernardn	06071	Other Products	Salt	Royalties	70166.69
+2006	CA	San Bernardn	06071	Other Products	Soda Ash	Royalties	4510259.97
+2006	CA	San Bernardn	06071	Other Products	Sodium Bi-Carbonate	Royalties	51139.24
+2007	CA	San Bernardn	06071	Sodium		Other Revenues	360
+2007	CA	San Bernardn	06071	Other Products	Anhydrous Sodium Sulfate	Royalties	436978.36
+2007	CA	San Bernardn	06071	Other Products	Borax-Decahydrate	Royalties	64234.9
+2007	CA	San Bernardn	06071	Other Products	Borax-Pentahydrate	Royalties	85558.19
+2007	CA	San Bernardn	06071	Other Products	Boric Acid	Royalties	270336.55
+2007	CA	San Bernardn	06071	Other Products	Salt	Royalties	18576.81
+2007	CA	San Bernardn	06071	Other Products	Soda Ash	Royalties	931425.71
+2007	CA	San Bernardn	06071	Other Products	Sodium Bi-Carbonate	Royalties	9380.18
+2008	CA	San Bernardn	06071	Other Products	Anhydrous Sodium Sulfate	Royalties	226717.42
+2008	CA	San Bernardn	06071	Other Products	Borax-Decahydrate	Royalties	39894.95
+2008	CA	San Bernardn	06071	Other Products	Borax-Pentahydrate	Royalties	53841.33
+2008	CA	San Bernardn	06071	Other Products	Boric Acid	Royalties	173771.61
+2008	CA	San Bernardn	06071	Other Products	Salt	Royalties	33895.97
+2008	CA	San Bernardn	06071	Other Products	Soda Ash	Royalties	1744766.42
+2008	CA	San Bernardn	06071	Other Products	Sodium Bi-Carbonate	Royalties	18824.59
+2009	CA	San Bernardn	06071	Other Products	Anhydrous Sodium Sulfate	Royalties	161151.56
+2009	CA	San Bernardn	06071	Other Products	Borax-Decahydrate	Royalties	31562.63
+2009	CA	San Bernardn	06071	Other Products	Borax-Pentahydrate	Royalties	60315.42
+2009	CA	San Bernardn	06071	Other Products	Boric Acid	Royalties	166837
+2009	CA	San Bernardn	06071	Other Products	Salt	Royalties	37288.97
+2009	CA	San Bernardn	06071	Other Products	Soda Ash	Royalties	1837063.95
+2009	CA	San Bernardn	06071	Other Products	Sodium Bi-Carbonate	Royalties	22025.78
+2010	CA	San Bernardn	06071	Other Products	Anhydrous Sodium Sulfate	Royalties	179316.58
+2010	CA	San Bernardn	06071	Other Products	Borax-Decahydrate	Royalties	166462.79
+2010	CA	San Bernardn	06071	Other Products	Borax-Pentahydrate	Royalties	303415.38
+2010	CA	San Bernardn	06071	Other Products	Boric Acid	Royalties	255007.83
+2010	CA	San Bernardn	06071	Other Products	Salt	Royalties	35225.79
+2010	CA	San Bernardn	06071	Other Products	Soda Ash	Royalties	1755369.43
+2010	CA	San Bernardn	06071	Other Products	Sodium Bi-Carbonate	Royalties	28921.12
+2011	CA	San Bernardn	06071	Other Products	Anhydrous Sodium Sulfate	Royalties	220610.49
+2011	CA	San Bernardn	06071	Other Products	Borax-Anhydrous	Royalties	23155.59
+2011	CA	San Bernardn	06071	Other Products	Borax-Decahydrate	Royalties	436534.22
+2011	CA	San Bernardn	06071	Other Products	Borax-Pentahydrate	Royalties	621695.4
+2011	CA	San Bernardn	06071	Other Products	Boric Acid	Royalties	499953.51
+2011	CA	San Bernardn	06071	Other Products	Salt	Royalties	64432.6
+2011	CA	San Bernardn	06071	Other Products	Soda Ash	Royalties	2358499.91
+2011	CA	San Bernardn	06071	Other Products	Sodium Bi-Carbonate	Royalties	50355.02
+2012	CA	San Bernardn	06071	Sodium		Other Revenues	7500
+2012	CA	San Bernardn	06071	Other Products	Anhydrous Sodium Sulfate	Royalties	450260.24
+2012	CA	San Bernardn	06071	Other Products	Borax-Decahydrate	Royalties	965736.02
+2012	CA	San Bernardn	06071	Other Products	Borax-Pentahydrate	Royalties	1210501.48
+2012	CA	San Bernardn	06071	Other Products	Boric Acid	Royalties	971223.98
+2012	CA	San Bernardn	06071	Other Products	Salt	Royalties	160641.39
+2012	CA	San Bernardn	06071	Other Products	Soda Ash	Royalties	5441948.19
+2012	CA	San Bernardn	06071	Other Products	Sodium Bi-Carbonate	Royalties	156727.85
+2013	CA	San Bernardn	06071	Other Products	Anhydrous Sodium Sulfate	Royalties	446414.04
+2013	CA	San Bernardn	06071	Other Products	Borax-Decahydrate	Royalties	840118.62
+2013	CA	San Bernardn	06071	Other Products	Borax-Pentahydrate	Royalties	1303076.65
+2013	CA	San Bernardn	06071	Other Products	Boric Acid	Royalties	965147.97
+2013	CA	San Bernardn	06071	Other Products	Salt	Royalties	186524.66
+2013	CA	San Bernardn	06071	Other Products	Soda Ash	Royalties	4837510.47
+2013	CA	San Bernardn	06071	Other Products	Sodium Bi-Carbonate	Royalties	163407.55

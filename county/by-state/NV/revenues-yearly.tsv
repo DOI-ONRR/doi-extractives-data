@@ -1,149 +1,482 @@
-Year	State	County	FIPS	Commodity	type	Revenue
-2004	NV	Churchill	32001	Geothermal	Other Revenues	-1128.14
-2004	NV	Churchill	32001	Geothermal	Royalties	4414
-2004	NV	Churchill	32001	Geothermal	Royalties	2299616.2
-2004	NV	Esmeralda	32009	Geothermal	Other Revenues	4754
-2004	NV	Eureka	32011	Geothermal	Royalties	6783.17
-2004	NV	Eureka	32011	Oil	Royalties	217547.64
-2004	NV	Lander	32015	Geothermal	Royalties	-1862010.59
-2004	NV	Nye	32023	Oil & Gas	Other Revenues	3312.4
-2004	NV	Nye	32023	Oil & Gas	Other Roy Vals	-36.87
-2004	NV	Nye	32023	Oil	Royalties	1447863.27
-2004	NV	Washoe	32031	Geothermal	Other Revenues	2540
-2004	NV	Washoe	32031	Geothermal	Royalties	29536.22
-2005	NV	Churchill	32001	Geothermal	Other Revenues	41.74
-2005	NV	Churchill	32001	Geothermal	Other Roy Vals	-22709
-2005	NV	Churchill	32001	Geothermal	Royalties	3872
-2005	NV	Churchill	32001	Geothermal	Royalties	2462224.58
-2005	NV	Clark	32003	Solids	Royalties	-0.02
-2005	NV	Esmeralda	32009	Geothermal	Other Revenues	4754
-2005	NV	Eureka	32011	Geothermal	Royalties	7330.63
-2005	NV	Eureka	32011	Oil	Royalties	246768.78
-2005	NV	Lander	32015	Geothermal	Royalties	1567857.61
-2005	NV	Nye	32023	Oil & Gas	Other Revenues	3715.22
-2005	NV	Nye	32023	Oil & Gas	Other Roy Vals	2811.28
-2005	NV	Nye	32023	Oil	Royalties	1911978.69
-2005	NV	Washoe	32031	Geothermal	Other Revenues	2109
-2005	NV	Washoe	32031	Geothermal	Royalties	-14368.11
-2006	NV	Churchill	32001	Geothermal	Other Revenues	65.9
-2006	NV	Churchill	32001	Geothermal	Royalties	4248
-2006	NV	Churchill	32001	Geothermal	Royalties	2296151.89
-2006	NV	Clark	32003	Solids	Royalties	2.4
-2006	NV	Esmeralda	32009	Geothermal	Other Revenues	4754
-2006	NV	Eureka	32011	Geothermal	Royalties	8611.03
-2006	NV	Eureka	32011	Oil	Royalties	276873.36
-2006	NV	Lander	32015	Geothermal	Royalties	-1025860.69
-2006	NV	Nye	32023	Geothermal	Other Revenues	5120
-2006	NV	Nye	32023	Oil & Gas	Other Revenues	7201.49
-2006	NV	Nye	32023	Oil & Gas	Other Roy Vals	-3284.2
-2006	NV	Nye	32023	Oil	Royalties	2455447.74
-2006	NV	Washoe	32031	Geothermal	Other Revenues	1908.67
-2006	NV	Washoe	32031	Geothermal	Royalties	12039.31
-2007	NV	Churchill	32001	Geothermal	Other Revenues	103.69
-2007	NV	Churchill	32001	Geothermal	Royalties	2312
-2007	NV	Churchill	32001	Geothermal	Royalties	1791
-2007	NV	Churchill	32001	Geothermal	Royalties	2218914.13
-2007	NV	Esmeralda	32009	Geothermal	Other Revenues	4754
-2007	NV	Eureka	32011	Geothermal	Royalties	7042.26
-2007	NV	Eureka	32011	Oil	Royalties	288892.32
-2007	NV	Lander	32015	Geothermal	Royalties	116081.31
-2007	NV	Nye	32023	Geothermal	Other Revenues	5120
-2007	NV	Nye	32023	Oil & Gas	Other Revenues	3613.83
-2007	NV	Nye	32023	Oil & Gas	Other Roy Vals	334.28
-2007	NV	Nye	32023	Oil	Royalties	2597904.12
-2007	NV	Washoe	32031	Geothermal	Other Revenues	1844.81
-2007	NV	Washoe	32031	Geothermal	Royalties	6697.99
-2008	NV	Churchill	32001	Geothermal	Other Revenues	83.72
-2008	NV	Churchill	32001	Geothermal	Royalties	3325
-2008	NV	Churchill	32001	Geothermal	Royalties	2050531.33
-2008	NV	Esmeralda	32009	Geothermal	Other Revenues	4754
-2008	NV	Esmeralda	32009	Potassium	Other Revenues	6826
-2008	NV	Esmeralda	32009	Solids	Royalties	37.5
-2008	NV	Eureka	32011	Geothermal	Other Roy Vals	4062.16
-2008	NV	Eureka	32011	Geothermal	Royalties	13112.17
-2008	NV	Eureka	32011	Oil	Royalties	432852.84
-2008	NV	Humboldt	32013	Geothermal	Other Revenues	1328
-2008	NV	Lander	32015	Geothermal	Other Roy Vals	66957.84
-2008	NV	Lander	32015	Geothermal	Royalties	216137.74
-2008	NV	Nye	32023	Geothermal	Other Revenues	5120
-2008	NV	Nye	32023	Oil & Gas	Other Revenues	3140.07
-2008	NV	Nye	32023	Oil & Gas	Other Roy Vals	4794.79
-2008	NV	Nye	32023	Oil	Royalties	3885397.78
-2008	NV	Washoe	32031	Geothermal	Other Revenues	1901.11
-2008	NV	Washoe	32031	Geothermal	Royalties	5054.2
-2009	NV	Churchill	32001	Geothermal	Other Revenues	5276
-2009	NV	Churchill	32001	Geothermal	Royalties	6221
-2009	NV	Churchill	32001	Geothermal	Royalties	2124131.11
-2009	NV	Esmeralda	32009	Geothermal	Other Revenues	4754
-2009	NV	Esmeralda	32009	Solids	Royalties	-37.5
-2009	NV	Eureka	32011	Geothermal	Royalties	9593.45
-2009	NV	Eureka	32011	Oil	Royalties	448200.12
-2009	NV	Humboldt	32013	Geothermal	Other Revenues	1328
-2009	NV	Humboldt	32013	Geothermal	Royalties	4079.76
-2009	NV	Lander	32015	Geothermal	Royalties	158135.5
-2009	NV	Nye	32023	Geothermal	Other Revenues	5120
-2009	NV	Nye	32023	Oil & Gas	Other Revenues	2556.01
-2009	NV	Nye	32023	Oil & Gas	Other Roy Vals	-3248.67
-2009	NV	Nye	32023	Oil	Royalties	2065907.38
-2009	NV	Washoe	32031	Geothermal	Other Revenues	1974.24
-2009	NV	Washoe	32031	Geothermal	Royalties	6761.17
-2010	NV	Churchill	32001	Geothermal	Other Revenues	4798.21
-2010	NV	Churchill	32001	Geothermal	Royalties	250101.5
-2010	NV	Churchill	32001	Geothermal	Royalties	2403792.13
-2010	NV	Esmeralda	32009	Geothermal	Other Revenues	4784
-2010	NV	Eureka	32011	Geothermal	Royalties	9962.32
-2010	NV	Eureka	32011	Oil	Royalties	477035.92
-2010	NV	Humboldt	32013	Geothermal	Other Revenues	1328
-2010	NV	Humboldt	32013	Geothermal	Royalties	143491.58
-2010	NV	Lander	32015	Geothermal	Royalties	164215.93
-2010	NV	Nye	32023	Geothermal	Other Revenues	5120
-2010	NV	Nye	32023	Oil & Gas	Other Revenues	3847.17
-2010	NV	Nye	32023	Oil & Gas	Other Roy Vals	963.39
-2010	NV	Nye	32023	Oil	Royalties	2920172.42
-2010	NV	Washoe	32031	Geothermal	Other Revenues	2127.91
-2010	NV	Washoe	32031	Geothermal	Royalties	9979.59
-2011	NV	Churchill	32001	Geothermal	Other Revenues	4008.36
-2011	NV	Churchill	32001	Geothermal	Other Roy Vals	30070
-2011	NV	Churchill	32001	Geothermal	Royalties	843055
-2011	NV	Churchill	32001	Geothermal	Royalties	-1791
-2011	NV	Churchill	32001	Geothermal	Royalties	2608413.36
-2011	NV	Esmeralda	32009	Geothermal	Other Revenues	4754
-2011	NV	Eureka	32011	Geothermal	Royalties	9764.51
-2011	NV	Eureka	32011	Oil	Royalties	517020.36
-2011	NV	Humboldt	32013	Geothermal	Other Revenues	-2656
-2011	NV	Humboldt	32013	Geothermal	Royalties	155156.63
-2011	NV	Lander	32015	Geothermal	Royalties	161059.79
-2011	NV	Nye	32023	Geothermal	Other Revenues	5120
-2011	NV	Nye	32023	Oil & Gas	Other Revenues	2655.55
-2011	NV	Nye	32023	Oil & Gas	Other Roy Vals	3922
-2011	NV	Nye	32023	Oil	Royalties	3879684.92
-2011	NV	Pershing	32027	Geothermal	Royalties	1074.69
-2011	NV	Washoe	32031	Geothermal	Other Revenues	1608.53
-2011	NV	Washoe	32031	Geothermal	Royalties	28389.94
-2012	NV	Churchill	32001	Geothermal	Other Revenues	3199.94
-2012	NV	Churchill	32001	Geothermal	Royalties	51555
-2012	NV	Churchill	32001	Geothermal	Royalties	2034651.47
-2012	NV	Esmeralda	32009	Geothermal	Other Revenues	4754
-2012	NV	Eureka	32011	Geothermal	Royalties	6362.51
-2012	NV	Eureka	32011	Oil	Royalties	451981.49
-2012	NV	Humboldt	32013	Geothermal	Royalties	133709.11
-2012	NV	Lander	32015	Geothermal	Royalties	254062.2
-2012	NV	Nye	32023	Oil & Gas	Other Revenues	1253.16
-2012	NV	Nye	32023	Oil & Gas	Other Roy Vals	-2905
-2012	NV	Nye	32023	Oil	Royalties	3528617.24
-2012	NV	Pershing	32027	Geothermal	Royalties	3711.5
-2012	NV	Washoe	32031	Geothermal	Other Revenues	2453.9
-2012	NV	Washoe	32031	Geothermal	Royalties	43872.63
-2013	NV	Churchill	32001	Geothermal	Other Revenues	3215.39
-2013	NV	Churchill	32001	Geothermal	Royalties	1781713.75
-2013	NV	Esmeralda	32009	Geothermal	Other Revenues	1874
-2013	NV	Eureka	32011	Geothermal	Royalties	7112.02
-2013	NV	Eureka	32011	Oil	Royalties	462589.58
-2013	NV	Humboldt	32013	Geothermal	Royalties	126454.44
-2013	NV	Lander	32015	Geothermal	Royalties	517587.54
-2013	NV	Nye	32023	Oil & Gas	Other Revenues	2262.13
-2013	NV	Nye	32023	Oil & Gas	Other Roy Vals	-928.31
-2013	NV	Nye	32023	Oil	Royalties	3151139.37
-2013	NV	Pershing	32027	Geothermal	Royalties	3757.74
-2013	NV	Washoe	32031	Geothermal	Other Revenues	2483.13
-2013	NV	Washoe	32031	Geothermal	Royalties	294118.91
+Year	State	County	FIPS	Commodity	Product	Type	Revenue
+2004	NV	Churchill	32001	Geothermal		Bonus	56707.57
+2004	NV	Churchill	32001	Geothermal		Other Revenues	-1128.14
+2004	NV	Churchill	32001	Geothermal		Rents	314103.84
+2004	NV	Churchill	32001	Geothermal	Geothermal - Direct Utilization, Hundreds of Gallons	Royalties	4414
+2004	NV	Churchill	32001	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	2299616.2
+2004	NV	Clark	32003	Oil & Gas		Rents	8052
+2004	NV	Clark	32003	Sand & Gravel		Rents	-320
+2004	NV	Elko	32007	Oil & Gas		Bonus	11365.88
+2004	NV	Elko	32007	Geothermal		Rents	11956
+2004	NV	Elko	32007	Oil & Gas		Rents	489194.71
+2004	NV	Esmeralda	32009	Geothermal		Other Revenues	4754
+2004	NV	Esmeralda	32009	Geothermal		Rents	38006
+2004	NV	Esmeralda	32009	Potassium		Rents	1160
+2004	NV	Eureka	32011	Oil & Gas		Bonus	26672
+2004	NV	Eureka	32011	Geothermal		Rents	1447
+2004	NV	Eureka	32011	Oil & Gas		Rents	506183.74
+2004	NV	Eureka	32011	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	6783.17
+2004	NV	Eureka	32011	Oil (bbl)	Oil	Royalties	217547.64
+2004	NV	Humboldt	32013	Geothermal		Rents	7953
+2004	NV	Lander	32015	Geothermal		Rents	29332
+2004	NV	Lander	32015	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	-1862010.59
+2004	NV	Lincoln	32017	Oil & Gas		Rents	74807.31
+2004	NV	Mineral	32021	Oil & Gas		Rents	16665.76
+2004	NV	Nye	32023	Oil & Gas		Bonus	346549
+2004	NV	Nye	32023	Oil & Gas		Other Revenues	3312.4
+2004	NV	Nye	32023	Oil & Gas		Other Roy Vals	-36.87
+2004	NV	Nye	32023	Geothermal		Rents	33432
+2004	NV	Nye	32023	Oil & Gas		Rents	871267.22
+2004	NV	Nye	32023	Oil (bbl)	Oil	Royalties	1447863.27
+2004	NV	Pershing	32027	Geothermal		Rents	67756.16
+2004	NV	Pershing	32027	Oil & Gas		Rents	7602
+2004	NV	Washoe	32031	Geothermal		Bonus	4188.37
+2004	NV	Washoe	32031	Geothermal		Other Revenues	2540
+2004	NV	Washoe	32031	Geothermal		Rents	50115
+2004	NV	Washoe	32031	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	29536.22
+2004	NV	White Pine	32033	Oil & Gas		Bonus	68700.12
+2004	NV	White Pine	32033	Geothermal		Rents	3738
+2004	NV	White Pine	32033	Oil & Gas		Rents	487699.31
+2005	NV	Churchill	32001	Geothermal		Other Revenues	41.74
+2005	NV	Churchill	32001	Geothermal		Other Roy Vals	-22709
+2005	NV	Churchill	32001	Geothermal		Rents	360740.56
+2005	NV	Churchill	32001	Sodium		Rents	-19836
+2005	NV	Churchill	32001	Geothermal	Geothermal - Direct Utilization, Hundreds of Gallons	Royalties	3872
+2005	NV	Churchill	32001	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	2462224.58
+2005	NV	Clark	32003	Oil & Gas		Bonus	37022
+2005	NV	Clark	32003	Oil & Gas		Rents	8490
+2005	NV	Clark	32003	Sand & Gravel		Rents	-1280
+2005	NV	Clark	32003	Other Products	Sand/Gravel	Royalties	-0.02
+2005	NV	Elko	32007	Oil & Gas		Bonus	962245.75
+2005	NV	Elko	32007	Geothermal		Rents	16486
+2005	NV	Elko	32007	Oil & Gas		Rents	968581.17
+2005	NV	Esmeralda	32009	Geothermal		Other Revenues	4754
+2005	NV	Esmeralda	32009	Geothermal		Rents	61352
+2005	NV	Esmeralda	32009	Potassium		Rents	1160
+2005	NV	Eureka	32011	Oil & Gas		Bonus	802786
+2005	NV	Eureka	32011	Geothermal		Rents	2567
+2005	NV	Eureka	32011	Oil & Gas		Rents	1106961.67
+2005	NV	Eureka	32011	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	7330.63
+2005	NV	Eureka	32011	Oil (bbl)	Oil	Royalties	246768.78
+2005	NV	Humboldt	32013	Geothermal		Rents	11846
+2005	NV	Lander	32015	Geothermal		Rents	36971
+2005	NV	Lander	32015	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	1567857.61
+2005	NV	Lincoln	32017	Oil & Gas		Rents	111098.81
+2005	NV	Lyon	32019	Geothermal		Rents	1272.28
+2005	NV	Mineral	32021	Oil & Gas		Rents	18596.71
+2005	NV	Nye	32023	Oil & Gas		Bonus	1421154.51
+2005	NV	Nye	32023	Oil & Gas		Other Revenues	3715.22
+2005	NV	Nye	32023	Oil & Gas		Other Roy Vals	2811.28
+2005	NV	Nye	32023	Geothermal		Rents	30813
+2005	NV	Nye	32023	Oil & Gas		Rents	1433304.75
+2005	NV	Nye	32023	Oil (bbl)	Oil	Royalties	1911978.69
+2005	NV	Pershing	32027	Geothermal		Rents	79224.16
+2005	NV	Pershing	32027	Oil & Gas		Rents	7602
+2005	NV	Washoe	32031	Geothermal		Other Revenues	2109
+2005	NV	Washoe	32031	Geothermal		Rents	46651
+2005	NV	Washoe	32031	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	-14368.11
+2005	NV	White Pine	32033	Oil & Gas		Bonus	708269.99
+2005	NV	White Pine	32033	Geothermal		Rents	3738
+2005	NV	White Pine	32033	Oil & Gas		Rents	1169811.58
+2006	NV	Churchill	32001	Oil & Gas		Bonus	10200
+2006	NV	Churchill	32001	Geothermal		Other Revenues	65.9
+2006	NV	Churchill	32001	Geothermal		Rents	270818.98
+2006	NV	Churchill	32001	Oil & Gas		Rents	15291
+2006	NV	Churchill	32001	Geothermal	Geothermal - Direct Utilization, Hundreds of Gallons	Royalties	4248
+2006	NV	Churchill	32001	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	2296151.89
+2006	NV	Clark	32003	Oil & Gas		Rents	43080
+2006	NV	Clark	32003	Other Products	Sand/Gravel	Royalties	2.4
+2006	NV	Elko	32007	Oil & Gas		Bonus	1757277.43
+2006	NV	Elko	32007	Geothermal		Rents	22283.45
+2006	NV	Elko	32007	Oil & Gas		Rents	1574869.15
+2006	NV	Esmeralda	32009	Geothermal		Other Revenues	4754
+2006	NV	Esmeralda	32009	Geothermal		Rents	40410
+2006	NV	Esmeralda	32009	Potassium		Rents	2320
+2006	NV	Eureka	32011	Oil & Gas		Bonus	224920
+2006	NV	Eureka	32011	Geothermal		Rents	9838.55
+2006	NV	Eureka	32011	Oil & Gas		Rents	1050192.88
+2006	NV	Eureka	32011	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	8611.03
+2006	NV	Eureka	32011	Oil (bbl)	Oil	Royalties	276873.36
+2006	NV	Humboldt	32013	Geothermal		Rents	18099
+2006	NV	Lander	32015	Geothermal		Rents	40829
+2006	NV	Lander	32015	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	-1025860.69
+2006	NV	Lincoln	32017	Oil & Gas		Bonus	258902
+2006	NV	Lincoln	32017	Oil & Gas		Rents	275292.58
+2006	NV	Lyon	32019	Geothermal		Rents	4722.14
+2006	NV	Mineral	32021	Oil & Gas		Rents	27984.23
+2006	NV	Nye	32023	Oil & Gas		Bonus	469523.5
+2006	NV	Nye	32023	Geothermal		Other Revenues	5120
+2006	NV	Nye	32023	Oil & Gas		Other Revenues	7201.49
+2006	NV	Nye	32023	Oil & Gas		Other Roy Vals	-3284.2
+2006	NV	Nye	32023	Geothermal		Rents	3675
+2006	NV	Nye	32023	Oil & Gas		Rents	1738085.03
+2006	NV	Nye	32023	Oil (bbl)	Oil	Royalties	2455447.74
+2006	NV	Pershing	32027	Geothermal		Rents	31030.16
+2006	NV	Washoe	32031	Geothermal		Other Revenues	1908.67
+2006	NV	Washoe	32031	Geothermal		Rents	50788.72
+2006	NV	Washoe	32031	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	12039.31
+2006	NV	White Pine	32033	Oil & Gas		Bonus	1134975.32
+2006	NV	White Pine	32033	Geothermal		Rents	4365
+2006	NV	White Pine	32033	Oil & Gas		Rents	2272702.13
+2007	NV	Churchill	32001	Geothermal		Bonus	3052983.26
+2007	NV	Churchill	32001	Geothermal		Other Revenues	103.69
+2007	NV	Churchill	32001	Geothermal		Rents	396011.83
+2007	NV	Churchill	32001	Oil & Gas		Rents	7650
+2007	NV	Churchill	32001	Geothermal	Geothermal - Direct Utilization, Hundreds of Gallons	Royalties	2312
+2007	NV	Churchill	32001	Geothermal	Geothermal - Direct Utilization, Millions of BTUs	Royalties	1791
+2007	NV	Churchill	32001	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	2218914.13
+2007	NV	Clark	32003	Oil & Gas		Rents	18687
+2007	NV	Elko	32007	Oil & Gas		Bonus	188053.42
+2007	NV	Elko	32007	Geothermal		Rents	27235.73
+2007	NV	Elko	32007	Oil & Gas		Rents	2053284.89
+2007	NV	Esmeralda	32009	Geothermal		Other Revenues	4754
+2007	NV	Esmeralda	32009	Geothermal		Rents	47902
+2007	NV	Esmeralda	32009	Potassium		Rents	1740
+2007	NV	Eureka	32011	Oil & Gas		Bonus	685505.55
+2007	NV	Eureka	32011	Geothermal		Rents	11633.27
+2007	NV	Eureka	32011	Oil & Gas		Rents	1346476.49
+2007	NV	Eureka	32011	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	7042.26
+2007	NV	Eureka	32011	Oil (bbl)	Oil	Royalties	288892.32
+2007	NV	Humboldt	32013	Geothermal		Bonus	89460
+2007	NV	Humboldt	32013	Geothermal		Rents	44863
+2007	NV	Lander	32015	Geothermal		Bonus	3821400
+2007	NV	Lander	32015	Geothermal		Rents	73637
+2007	NV	Lander	32015	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	116081.31
+2007	NV	Lincoln	32017	Oil & Gas		Rents	212267.08
+2007	NV	Lyon	32019	Geothermal		Rents	11771.14
+2007	NV	Mineral	32021	Geothermal		Bonus	1387300
+2007	NV	Mineral	32021	Geothermal		Rents	104071.61
+2007	NV	Mineral	32021	Oil & Gas		Rents	35092.28
+2007	NV	Nye	32023	Geothermal		Bonus	2247260
+2007	NV	Nye	32023	Oil & Gas		Bonus	168628.02
+2007	NV	Nye	32023	Geothermal		Other Revenues	5120
+2007	NV	Nye	32023	Oil & Gas		Other Revenues	3613.83
+2007	NV	Nye	32023	Oil & Gas		Other Roy Vals	334.28
+2007	NV	Nye	32023	Geothermal		Rents	42242.33
+2007	NV	Nye	32023	Oil & Gas		Rents	1734206.15
+2007	NV	Nye	32023	Oil (bbl)	Oil	Royalties	2597904.12
+2007	NV	Pershing	32027	Geothermal		Bonus	663823.74
+2007	NV	Pershing	32027	Geothermal		Rents	121119.83
+2007	NV	Pershing	32027	Oil & Gas		Rents	4981.5
+2007	NV	Washoe	32031	Geothermal		Bonus	156282
+2007	NV	Washoe	32031	Geothermal		Other Revenues	1844.81
+2007	NV	Washoe	32031	Geothermal		Rents	79828.5
+2007	NV	Washoe	32031	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	6697.99
+2007	NV	White Pine	32033	Oil & Gas		Bonus	61330
+2007	NV	White Pine	32033	Geothermal		Rents	4365
+2007	NV	White Pine	32033	Oil & Gas		Rents	1809949.61
+2008	NV	Churchill	32001	Geothermal		Bonus	14777310.18
+2008	NV	Churchill	32001	Geothermal		Other Revenues	83.72
+2008	NV	Churchill	32001	Geothermal		Rents	332250.29
+2008	NV	Churchill	32001	Oil & Gas		Rents	22932
+2008	NV	Churchill	32001	Sodium		Rents	-15357
+2008	NV	Churchill	32001	Geothermal	Geothermal - Direct Utilization, Hundreds of Gallons	Royalties	3325
+2008	NV	Churchill	32001	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	2050531.33
+2008	NV	Clark	32003	Oil & Gas		Rents	15318
+2008	NV	Elko	32007	Geothermal		Bonus	4056344
+2008	NV	Elko	32007	Oil & Gas		Bonus	264989.5
+2008	NV	Elko	32007	Geothermal		Rents	66725.72
+2008	NV	Elko	32007	Oil & Gas		Rents	1985793.78
+2008	NV	Esmeralda	32009	Geothermal		Bonus	5273800
+2008	NV	Esmeralda	32009	Oil & Gas		Bonus	125051.5
+2008	NV	Esmeralda	32009	Geothermal		Other Revenues	4754
+2008	NV	Esmeralda	32009	Potassium		Other Revenues	6826
+2008	NV	Esmeralda	32009	Geothermal		Rents	93030
+2008	NV	Esmeralda	32009	Oil & Gas		Rents	66544.5
+2008	NV	Esmeralda	32009	Potassium		Rents	-1160
+2008	NV	Esmeralda	32009	Other Products	Potash	Royalties	37.5
+2008	NV	Eureka	32011	Geothermal		Bonus	273909.55
+2008	NV	Eureka	32011	Oil & Gas		Bonus	191010
+2008	NV	Eureka	32011	Geothermal		Other Roy Vals	4062.16
+2008	NV	Eureka	32011	Geothermal		Rents	8440.55
+2008	NV	Eureka	32011	Oil & Gas		Rents	1337278.71
+2008	NV	Eureka	32011	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	13112.17
+2008	NV	Eureka	32011	Oil (bbl)	Oil	Royalties	432852.84
+2008	NV	Humboldt	32013	Geothermal		Bonus	101100
+2008	NV	Humboldt	32013	Geothermal		Other Revenues	1328
+2008	NV	Humboldt	32013	Geothermal		Rents	33337
+2008	NV	Lander	32015	Geothermal		Bonus	804258.3
+2008	NV	Lander	32015	Geothermal		Other Roy Vals	66957.84
+2008	NV	Lander	32015	Geothermal		Rents	78021.01
+2008	NV	Lander	32015	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	216137.74
+2008	NV	Lincoln	32017	Oil & Gas		Rents	217316.58
+2008	NV	Lyon	32019	Geothermal		Bonus	132606.97
+2008	NV	Lyon	32019	Geothermal		Rents	12730.55
+2008	NV	Mineral	32021	Geothermal		Bonus	2349674.99
+2008	NV	Mineral	32021	Oil & Gas		Bonus	1994
+2008	NV	Mineral	32021	Geothermal		Rents	85531.46
+2008	NV	Mineral	32021	Oil & Gas		Rents	40246.28
+2008	NV	Nye	32023	Geothermal		Bonus	16250.01
+2008	NV	Nye	32023	Oil & Gas		Bonus	1507232.78
+2008	NV	Nye	32023	Geothermal		Other Revenues	5120
+2008	NV	Nye	32023	Oil & Gas		Other Revenues	3140.07
+2008	NV	Nye	32023	Oil & Gas		Other Roy Vals	4794.79
+2008	NV	Nye	32023	Geothermal		Rents	66543.3
+2008	NV	Nye	32023	Oil & Gas		Rents	1381763.43
+2008	NV	Nye	32023	Oil (bbl)	Oil	Royalties	3885397.78
+2008	NV	Pershing	32027	Geothermal		Bonus	207210
+2008	NV	Pershing	32027	Geothermal		Rents	170502.16
+2008	NV	Washoe	32031	Geothermal		Other Revenues	1901.11
+2008	NV	Washoe	32031	Geothermal		Rents	49133.72
+2008	NV	Washoe	32031	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	5054.2
+2008	NV	White Pine	32033	Oil & Gas		Bonus	269022.23
+2008	NV	White Pine	32033	Geothermal		Rents	4365
+2008	NV	White Pine	32033	Oil & Gas		Rents	2322586.73
+2009	NV	Churchill	32001	Geothermal		Bonus	5595205.23
+2009	NV	Churchill	32001	Geothermal		Other Revenues	5276
+2009	NV	Churchill	32001	Geothermal		Rents	445899.67
+2009	NV	Churchill	32001	Oil & Gas		Rents	7650
+2009	NV	Churchill	32001	Geothermal	Geothermal - Direct Utilization, Hundreds of Gallons	Royalties	6221
+2009	NV	Churchill	32001	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	2124131.11
+2009	NV	Clark	32003	Oil & Gas		Rents	3537
+2009	NV	Elko	32007	Geothermal		Bonus	34537
+2009	NV	Elko	32007	Oil & Gas		Bonus	560709
+2009	NV	Elko	32007	Geothermal		Rents	139205.45
+2009	NV	Elko	32007	Oil & Gas		Rents	1555461.11
+2009	NV	Esmeralda	32009	Geothermal		Bonus	312583
+2009	NV	Esmeralda	32009	Geothermal		Other Revenues	4754
+2009	NV	Esmeralda	32009	Geothermal		Rents	175195
+2009	NV	Esmeralda	32009	Oil & Gas		Rents	66544.5
+2009	NV	Esmeralda	32009	Other Products	Potash	Royalties	-37.5
+2009	NV	Eureka	32011	Geothermal		Bonus	5138
+2009	NV	Eureka	32011	Oil & Gas		Bonus	-1142
+2009	NV	Eureka	32011	Geothermal		Rents	18263.47
+2009	NV	Eureka	32011	Oil & Gas		Rents	757343.05
+2009	NV	Eureka	32011	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	9593.45
+2009	NV	Eureka	32011	Oil (bbl)	Oil	Royalties	448200.12
+2009	NV	Humboldt	32013	Geothermal		Bonus	385044
+2009	NV	Humboldt	32013	Geothermal		Other Revenues	1328
+2009	NV	Humboldt	32013	Geothermal		Rents	75838
+2009	NV	Humboldt	32013	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	4079.76
+2009	NV	Lander	32015	Geothermal		Bonus	200437.15
+2009	NV	Lander	32015	Geothermal		Rents	138559.57
+2009	NV	Lander	32015	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	158135.5
+2009	NV	Lincoln	32017	Oil & Gas		Bonus	89172
+2009	NV	Lincoln	32017	Oil & Gas		Rents	240454.81
+2009	NV	Lyon	32019	Geothermal		Rents	14033.26
+2009	NV	Mineral	32021	Geothermal		Bonus	105404.02
+2009	NV	Mineral	32021	Geothermal		Rents	128080.05
+2009	NV	Mineral	32021	Oil & Gas		Rents	40246.28
+2009	NV	Nye	32023	Geothermal		Bonus	379175.48
+2009	NV	Nye	32023	Oil & Gas		Bonus	116023
+2009	NV	Nye	32023	Geothermal		Other Revenues	5120
+2009	NV	Nye	32023	Oil & Gas		Other Revenues	2556.01
+2009	NV	Nye	32023	Oil & Gas		Other Roy Vals	-3248.67
+2009	NV	Nye	32023	Geothermal		Rents	93626.95
+2009	NV	Nye	32023	Oil & Gas		Rents	1200291.99
+2009	NV	Nye	32023	Oil (bbl)	Oil	Royalties	2065907.38
+2009	NV	Pershing	32027	Geothermal		Bonus	1290766.12
+2009	NV	Pershing	32027	Geothermal		Rents	333706.88
+2009	NV	Washoe	32031	Geothermal		Other Revenues	1974.24
+2009	NV	Washoe	32031	Geothermal		Rents	52406.72
+2009	NV	Washoe	32031	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	6761.17
+2009	NV	White Pine	32033	Geothermal		Bonus	94579
+2009	NV	White Pine	32033	Oil & Gas		Bonus	254574
+2009	NV	White Pine	32033	Geothermal		Rents	69407
+2009	NV	White Pine	32033	Oil & Gas		Rents	1898958.76
+2010	NV	Churchill	32001	Geothermal		Bonus	1052556.72
+2010	NV	Churchill	32001	Geothermal		Other Revenues	4798.21
+2010	NV	Churchill	32001	Geothermal		Rents	639433.14
+2010	NV	Churchill	32001	Oil & Gas		Rents	7650
+2010	NV	Churchill	32001	Geothermal	Geothermal - Direct Utilization, Hundreds of Gallons	Royalties	250101.5
+2010	NV	Churchill	32001	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	2403792.13
+2010	NV	Clark	32003	Oil & Gas		Rents	4476
+2010	NV	Elko	32007	Geothermal		Bonus	18898
+2010	NV	Elko	32007	Oil & Gas		Bonus	156913.75
+2010	NV	Elko	32007	Geothermal		Rents	166198.45
+2010	NV	Elko	32007	Oil & Gas		Rents	1624887.81
+2010	NV	Esmeralda	32009	Geothermal		Bonus	816444.5
+2010	NV	Esmeralda	32009	Geothermal		Other Revenues	4784
+2010	NV	Esmeralda	32009	Geothermal		Rents	218383
+2010	NV	Esmeralda	32009	Oil & Gas		Rents	66520.5
+2010	NV	Esmeralda	32009	Potassium		Rents	3039
+2010	NV	Eureka	32011	Oil & Gas		Bonus	113822.5
+2010	NV	Eureka	32011	Geothermal		Rents	20832.47
+2010	NV	Eureka	32011	Oil & Gas		Rents	653662.9
+2010	NV	Eureka	32011	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	9962.32
+2010	NV	Eureka	32011	Oil (bbl)	Oil	Royalties	477035.92
+2010	NV	Humboldt	32013	Geothermal		Bonus	23304
+2010	NV	Humboldt	32013	Geothermal		Other Revenues	1328
+2010	NV	Humboldt	32013	Geothermal		Rents	113352
+2010	NV	Humboldt	32013	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	143491.58
+2010	NV	Lander	32015	Geothermal		Bonus	16782
+2010	NV	Lander	32015	Geothermal		Rents	127617.45
+2010	NV	Lander	32015	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	164215.93
+2010	NV	Lincoln	32017	Oil & Gas		Bonus	128456
+2010	NV	Lincoln	32017	Oil & Gas		Rents	565651.31
+2010	NV	Lyon	32019	Geothermal		Rents	14033.26
+2010	NV	Mineral	32021	Geothermal		Bonus	136201
+2010	NV	Mineral	32021	Geothermal		Rents	187118.22
+2010	NV	Mineral	32021	Oil & Gas		Rents	26268.43
+2010	NV	Nye	32023	Geothermal		Bonus	47892
+2010	NV	Nye	32023	Oil & Gas		Bonus	8104
+2010	NV	Nye	32023	Geothermal		Other Revenues	5120
+2010	NV	Nye	32023	Oil & Gas		Other Revenues	3847.17
+2010	NV	Nye	32023	Oil & Gas		Other Roy Vals	963.39
+2010	NV	Nye	32023	Geothermal		Rents	164673.78
+2010	NV	Nye	32023	Oil & Gas		Rents	1343404.43
+2010	NV	Nye	32023	Oil (bbl)	Oil	Royalties	2920172.42
+2010	NV	Pershing	32027	Geothermal		Bonus	177644.18
+2010	NV	Pershing	32027	Geothermal		Rents	484748.92
+2010	NV	Washoe	32031	Geothermal		Bonus	10578.6
+2010	NV	Washoe	32031	Geothermal		Other Revenues	2127.91
+2010	NV	Washoe	32031	Geothermal		Rents	66466.32
+2010	NV	Washoe	32031	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	9979.59
+2010	NV	White Pine	32033	Geothermal		Bonus	17932
+2010	NV	White Pine	32033	Oil & Gas		Bonus	54424
+2010	NV	White Pine	32033	Geothermal		Rents	119860
+2010	NV	White Pine	32033	Oil & Gas		Rents	2225343.11
+2011	NV	Churchill	32001	Geothermal		Bonus	256755
+2011	NV	Churchill	32001	Geothermal		Other Revenues	4008.36
+2011	NV	Churchill	32001	Geothermal		Other Roy Vals	30070
+2011	NV	Churchill	32001	Geothermal		Rents	596792.66
+2011	NV	Churchill	32001	Oil & Gas		Rents	10200
+2011	NV	Churchill	32001	Geothermal	Geothermal - Direct Utilization, Hundreds of Gallons	Royalties	843055
+2011	NV	Churchill	32001	Geothermal	Geothermal - Direct Utilization, Millions of BTUs	Royalties	-1791
+2011	NV	Churchill	32001	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	2608413.36
+2011	NV	Clark	32003	Oil & Gas		Rents	4716
+2011	NV	Elko	32007	Geothermal		Bonus	-1052
+2011	NV	Elko	32007	Geothermal		Rents	156844.45
+2011	NV	Elko	32007	Oil & Gas		Rents	1252698.14
+2011	NV	Esmeralda	32009	Geothermal		Bonus	19270
+2011	NV	Esmeralda	32009	Geothermal		Other Revenues	4754
+2011	NV	Esmeralda	32009	Geothermal		Rents	337253
+2011	NV	Esmeralda	32009	Oil & Gas		Rents	63640.5
+2011	NV	Eureka	32011	Geothermal		Bonus	18428
+2011	NV	Eureka	32011	Oil & Gas		Bonus	95600
+2011	NV	Eureka	32011	Geothermal		Rents	39260.47
+2011	NV	Eureka	32011	Oil & Gas		Rents	558040.15
+2011	NV	Eureka	32011	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	9764.51
+2011	NV	Eureka	32011	Oil (bbl)	Oil	Royalties	517020.36
+2011	NV	Humboldt	32013	Geothermal		Bonus	5758
+2011	NV	Humboldt	32013	Geothermal		Other Revenues	-2656
+2011	NV	Humboldt	32013	Geothermal		Rents	116526
+2011	NV	Humboldt	32013	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	155156.63
+2011	NV	Lander	32015	Geothermal		Bonus	4420
+2011	NV	Lander	32015	Geothermal		Rents	104135.45
+2011	NV	Lander	32015	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	161059.79
+2011	NV	Lincoln	32017	Oil & Gas		Bonus	5118
+2011	NV	Lincoln	32017	Oil & Gas		Rents	696478.3
+2011	NV	Lyon	32019	Geothermal		Bonus	6400
+2011	NV	Lyon	32019	Geothermal		Rents	20433.26
+2011	NV	Mineral	32021	Geothermal		Bonus	36730
+2011	NV	Mineral	32021	Geothermal		Rents	215015.52
+2011	NV	Mineral	32021	Oil & Gas		Rents	6217.42
+2011	NV	Nye	32023	Oil & Gas		Bonus	672682
+2011	NV	Nye	32023	Geothermal		Other Revenues	5120
+2011	NV	Nye	32023	Oil & Gas		Other Revenues	2655.55
+2011	NV	Nye	32023	Oil & Gas		Other Roy Vals	3922
+2011	NV	Nye	32023	Geothermal		Rents	113013.48
+2011	NV	Nye	32023	Oil & Gas		Rents	1508098.56
+2011	NV	Nye	32023	Oil (bbl)	Oil	Royalties	3879684.92
+2011	NV	Pershing	32027	Geothermal		Rents	363756.61
+2011	NV	Pershing	32027	Oil & Gas		Rents	17487
+2011	NV	Pershing	32027	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	1074.69
+2011	NV	Washoe	32031	Geothermal		Bonus	2818
+2011	NV	Washoe	32031	Geothermal		Other Revenues	1608.53
+2011	NV	Washoe	32031	Geothermal		Rents	48757.12
+2011	NV	Washoe	32031	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	28389.94
+2011	NV	White Pine	32033	Oil & Gas		Bonus	12142
+2011	NV	White Pine	32033	Geothermal		Rents	123133
+2011	NV	White Pine	32033	Oil & Gas		Rents	1932174.47
+2012	NV	Churchill	32001	Geothermal		Bonus	1120
+2012	NV	Churchill	32001	Geothermal		Other Revenues	3199.94
+2012	NV	Churchill	32001	Geothermal		Rents	467694.57
+2012	NV	Churchill	32001	Oil & Gas		Rents	10200
+2012	NV	Churchill	32001	Geothermal	Geothermal - Direct Utilization, Hundreds of Gallons	Royalties	51555
+2012	NV	Churchill	32001	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	2034651.47
+2012	NV	Clark	32003	Oil & Gas		Rents	4716
+2012	NV	Elko	32007	Oil & Gas		Bonus	1492248
+2012	NV	Elko	32007	Geothermal		Rents	166292.45
+2012	NV	Elko	32007	Oil & Gas		Rents	1244552.39
+2012	NV	Esmeralda	32009	Geothermal		Other Revenues	4754
+2012	NV	Esmeralda	32009	Geothermal		Rents	305523
+2012	NV	Esmeralda	32009	Oil & Gas		Rents	57501
+2012	NV	Esmeralda	32009	Potassium		Rents	2501
+2012	NV	Eureka	32011	Oil & Gas		Bonus	183628
+2012	NV	Eureka	32011	Geothermal		Rents	48474.47
+2012	NV	Eureka	32011	Oil & Gas		Rents	666346.34
+2012	NV	Eureka	32011	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	6362.51
+2012	NV	Eureka	32011	Oil (bbl)	Oil	Royalties	451981.49
+2012	NV	Humboldt	32013	Geothermal		Bonus	35374
+2012	NV	Humboldt	32013	Geothermal		Rents	154246
+2012	NV	Humboldt	32013	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	133709.11
+2012	NV	Lander	32015	Geothermal		Rents	106766.42
+2012	NV	Lander	32015	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	254062.2
+2012	NV	Lincoln	32017	Oil & Gas		Bonus	189732.35
+2012	NV	Lincoln	32017	Oil & Gas		Rents	707526.29
+2012	NV	Lyon	32019	Geothermal		Rents	34978.42
+2012	NV	Mineral	32021	Geothermal		Rents	140535.52
+2012	NV	Mineral	32021	Oil & Gas		Rents	6217.42
+2012	NV	Nye	32023	Oil & Gas		Bonus	2664253.99
+2012	NV	Nye	32023	Oil & Gas		Other Revenues	1253.16
+2012	NV	Nye	32023	Oil & Gas		Other Roy Vals	-2905
+2012	NV	Nye	32023	Geothermal		Rents	88808.48
+2012	NV	Nye	32023	Oil & Gas		Rents	1802564.29
+2012	NV	Nye	32023	Oil (bbl)	Oil	Royalties	3528617.24
+2012	NV	Pershing	32027	Geothermal		Bonus	19176
+2012	NV	Pershing	32027	Geothermal		Rents	335964.95
+2012	NV	Pershing	32027	Oil & Gas		Rents	-1141.5
+2012	NV	Pershing	32027	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	3711.5
+2012	NV	Washoe	32031	Geothermal		Other Revenues	2453.9
+2012	NV	Washoe	32031	Geothermal		Rents	40303.72
+2012	NV	Washoe	32031	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	43872.63
+2012	NV	White Pine	32033	Geothermal		Bonus	-240
+2012	NV	White Pine	32033	Oil & Gas		Bonus	379580.16
+2012	NV	White Pine	32033	Geothermal		Rents	52868
+2012	NV	White Pine	32033	Oil & Gas		Rents	2205000.77
+2013	NV	Churchill	32001	Geothermal		Bonus	3994
+2013	NV	Churchill	32001	Geothermal		Other Revenues	3215.39
+2013	NV	Churchill	32001	Geothermal		Rents	372938.98
+2013	NV	Churchill	32001	Oil & Gas		Rents	11160
+2013	NV	Churchill	32001	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	1781713.75
+2013	NV	Clark	32003	Oil & Gas		Rents	4716
+2013	NV	Elko	32007	Oil & Gas		Bonus	936552.79
+2013	NV	Elko	32007	Geothermal		Rents	126023.45
+2013	NV	Elko	32007	Oil & Gas		Rents	1008849.08
+2013	NV	Esmeralda	32009	Geothermal		Other Revenues	1874
+2013	NV	Esmeralda	32009	Geothermal		Rents	302447
+2013	NV	Esmeralda	32009	Oil & Gas		Rents	75349.5
+2013	NV	Esmeralda	32009	Potassium		Rents	2501
+2013	NV	Eureka	32011	Oil & Gas		Bonus	227425.21
+2013	NV	Eureka	32011	Geothermal		Rents	40041.47
+2013	NV	Eureka	32011	Oil & Gas		Rents	472648.21
+2013	NV	Eureka	32011	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	7112.02
+2013	NV	Eureka	32011	Oil (bbl)	Oil	Royalties	462589.58
+2013	NV	Humboldt	32013	Geothermal		Bonus	7388
+2013	NV	Humboldt	32013	Geothermal		Rents	147391
+2013	NV	Humboldt	32013	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	126454.44
+2013	NV	Lander	32015	Geothermal		Rents	76993.83
+2013	NV	Lander	32015	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	517587.54
+2013	NV	Lincoln	32017	Oil & Gas		Rents	509009.95
+2013	NV	Lyon	32019	Geothermal		Rents	28031.02
+2013	NV	Mineral	32021	Geothermal		Rents	121322
+2013	NV	Mineral	32021	Oil & Gas		Rents	8263.42
+2013	NV	Nye	32023	Oil & Gas		Bonus	825276
+2013	NV	Nye	32023	Oil & Gas		Other Revenues	2262.13
+2013	NV	Nye	32023	Oil & Gas		Other Roy Vals	-928.31
+2013	NV	Nye	32023	Geothermal		Rents	19234
+2013	NV	Nye	32023	Oil & Gas		Rents	1578933.37
+2013	NV	Nye	32023	Oil (bbl)	Oil	Royalties	3151139.37
+2013	NV	Pershing	32027	Geothermal		Bonus	2734
+2013	NV	Pershing	32027	Geothermal		Rents	287265.54
+2013	NV	Pershing	32027	Oil & Gas		Rents	1440
+2013	NV	Pershing	32027	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	3757.74
+2013	NV	Washoe	32031	Geothermal		Other Revenues	2483.13
+2013	NV	Washoe	32031	Geothermal		Rents	17548.72
+2013	NV	Washoe	32031	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	294118.91
+2013	NV	White Pine	32033	Geothermal		Bonus	-272
+2013	NV	White Pine	32033	Geothermal		Rents	16409
+2013	NV	White Pine	32033	Oil & Gas		Rents	2135986.98
+2004	NV	Clark	32003	Other Products	Sand/Gravel	Royalties	465124.8
+2004	NV	Esmeralda	32009	Other Products	Potash	Royalties	1735.64
+2005	NV	Clark	32003	Other Products	Sand/Gravel	Royalties	-93570
+2005	NV	Esmeralda	32009	Other Products	Potash	Royalties	238.5
+2006	NV	Esmeralda	32009	Potassium		Other Revenues	6960
+2006	NV	Esmeralda	32009	Other Products	Potash	Royalties	2339.42
+2007	NV	Esmeralda	32009	Other Products	Potash	Royalties	159
+2008	NV	Esmeralda	32009	Potassium		Other Revenues	6960
+2008	NV	Esmeralda	32009	Other Products	Potash	Royalties	-37.5
+2009	NV	Esmeralda	32009	Potassium		Other Revenues	-46.5
+2009	NV	Esmeralda	32009	Other Products	Potash	Royalties	37.5
+2010	NV	Esmeralda	32009	Potassium		Other Revenues	7503

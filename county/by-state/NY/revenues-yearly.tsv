@@ -1,31 +1,31 @@
-Year	State	County	FIPS	Commodity	type	Revenue
-2004	NY	Chautauqua	36013	Gas	Royalties	8306.23
-2004	NY	Seneca	36099	Gas	Royalties	290.05
-2004	NY	Steuben	36101	Gas	Royalties	43.56
-2005	NY	Chautauqua	36013	Gas	Royalties	11120.06
-2005	NY	Seneca	36099	Gas	Royalties	7476.43
-2005	NY	Steuben	36101	Gas	Royalties	1553.23
-2006	NY	Chautauqua	36013	Gas	Royalties	7160.43
-2006	NY	Seneca	36099	Gas	Royalties	5603.91
-2006	NY	Steuben	36101	Gas	Royalties	600.7
-2007	NY	Chautauqua	36013	Gas	Royalties	6451.8
-2007	NY	Seneca	36099	Gas	Royalties	3556.07
-2007	NY	Steuben	36101	Gas	Royalties	443.61
-2008	NY	Chautauqua	36013	Gas	Royalties	5462.03
-2008	NY	Seneca	36099	Gas	Royalties	5330.86
-2008	NY	Steuben	36101	Gas	Royalties	724.34
-2009	NY	Chautauqua	36013	Gas	Royalties	3619.76
-2009	NY	Seneca	36099	Gas	Royalties	2829.7
-2009	NY	Steuben	36101	Gas	Royalties	299.09
-2010	NY	Chautauqua	36013	Gas	Royalties	4381.85
-2010	NY	Seneca	36099	Gas	Royalties	1934.02
-2010	NY	Steuben	36101	Gas	Royalties	158.43
-2011	NY	Chautauqua	36013	Gas	Royalties	19285.59
-2011	NY	Seneca	36099	Gas	Royalties	2094.25
-2011	NY	Steuben	36101	Gas	Royalties	166.38
-2012	NY	Chautauqua	36013	Gas	Royalties	3867.78
-2012	NY	Seneca	36099	Gas	Royalties	567.38
-2012	NY	Steuben	36101	Gas	Royalties	33.55
-2013	NY	Chautauqua	36013	Gas	Royalties	3867.17
-2013	NY	Seneca	36099	Gas	Royalties	1404.91
-2013	NY	Steuben	36101	Gas	Royalties	-49.27
+Year	State	County	FIPS	Commodity	Product	Type	Revenue
+2004	NY	Chautauqua	36013	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	8306.23
+2004	NY	Seneca	36099	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	290.05
+2004	NY	Steuben	36101	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	43.56
+2005	NY	Chautauqua	36013	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	11120.06
+2005	NY	Seneca	36099	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	7476.43
+2005	NY	Steuben	36101	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	1553.23
+2006	NY	Chautauqua	36013	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	7160.43
+2006	NY	Seneca	36099	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	5603.91
+2006	NY	Steuben	36101	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	600.7
+2007	NY	Chautauqua	36013	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	6451.8
+2007	NY	Seneca	36099	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	3556.07
+2007	NY	Steuben	36101	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	443.61
+2008	NY	Chautauqua	36013	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	5462.03
+2008	NY	Seneca	36099	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	5330.86
+2008	NY	Steuben	36101	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	724.34
+2009	NY	Chautauqua	36013	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	3619.76
+2009	NY	Seneca	36099	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	2829.7
+2009	NY	Steuben	36101	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	299.09
+2010	NY	Chautauqua	36013	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	4381.85
+2010	NY	Seneca	36099	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	1934.02
+2010	NY	Steuben	36101	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	158.43
+2011	NY	Chautauqua	36013	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	19285.59
+2011	NY	Seneca	36099	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	2094.25
+2011	NY	Steuben	36101	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	166.38
+2012	NY	Chautauqua	36013	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	3867.78
+2012	NY	Seneca	36099	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	567.38
+2012	NY	Steuben	36101	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	33.55
+2013	NY	Chautauqua	36013	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	3867.17
+2013	NY	Seneca	36099	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	1404.91
+2013	NY	Steuben	36101	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	-49.27

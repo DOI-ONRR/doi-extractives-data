@@ -1,638 +1,862 @@
-Year	State	County	FIPS	Commodity	type	Revenue
-2004	KS	Comanche	20033	Gas	Royalties	5286.07
-2004	KS	Ellsworth	20053	Gas	Royalties	16671.52
-2004	KS	Finney	20055	Oil & Gas	Other Revenues	-410.34
-2004	KS	Finney	20055	Gas	Other Roy Vals	565.78
-2004	KS	Finney	20055	Gas	Other Roy Vals	114.23
-2004	KS	Finney	20055	Oil & Gas	Other Roy Vals	-423.41
-2004	KS	Finney	20055	Gas	Royalties	1462.18
-2004	KS	Finney	20055	Gas	Royalties	11017.77
-2004	KS	Finney	20055	Gas	Royalties	94093.98
-2004	KS	Finney	20055	Gas	Royalties	805812.87
-2004	KS	Finney	20055	Oil	Royalties	138535.81
-2004	KS	Gove	20063	Oil	Royalties	9028.75
-2004	KS	Grant	20067	Oil & Gas	Other Revenues	-298.94
-2004	KS	Grant	20067	Oil & Gas	Other Roy Vals	7
-2004	KS	Grant	20067	Gas	Royalties	5240.68
-2004	KS	Grant	20067	Gas	Royalties	7694.58
-2004	KS	Grant	20067	Gas	Royalties	31863.56
-2004	KS	Hamilton	20075	Gas	Royalties	278.35
-2004	KS	Hamilton	20075	Gas	Royalties	730.97
-2004	KS	Hamilton	20075	Gas	Royalties	19797.03
-2004	KS	Haskell	20081	Gas	Other Roy Vals	74.82
-2004	KS	Haskell	20081	Oil & Gas	Other Roy Vals	368.67
-2004	KS	Haskell	20081	Gas	Royalties	3387.79
-2004	KS	Haskell	20081	Gas	Royalties	1188.29
-2004	KS	Haskell	20081	Gas	Royalties	8580.34
-2004	KS	Haskell	20081	Gas	Royalties	286595.95
-2004	KS	Haskell	20081	Oil	Royalties	88690.85
-2004	KS	Kearny	20093	Oil & Gas	Other Revenues	-1153.95
-2004	KS	Kearny	20093	Oil & Gas	Other Roy Vals	7390.15
-2004	KS	Kearny	20093	Gas	Royalties	173799.55
-2004	KS	Kearny	20093	Gas	Royalties	536332.75
-2004	KS	Kearny	20093	Gas	Royalties	1066081.25
-2004	KS	Kearny	20093	Oil	Royalties	18565.52
-2004	KS	Lane	20101	Oil	Royalties	10409.98
-2004	KS	Meade	20119	Oil & Gas	Other Roy Vals	100
-2004	KS	Meade	20119	Gas	Royalties	32.16
-2004	KS	Meade	20119	Gas	Royalties	8652.92
-2004	KS	Morton	20129	Oil & Gas	Other Revenues	-286.63
-2004	KS	Morton	20129	Oil & Gas	Other Roy Vals	16615.77
-2004	KS	Morton	20129	Gas	Royalties	74190.81
-2004	KS	Morton	20129	Gas	Royalties	221824.25
-2004	KS	Morton	20129	Gas	Royalties	3494840.67
-2004	KS	Morton	20129	Oil	Royalties	528.88
-2004	KS	Morton	20129	Oil	Royalties	194176.06
-2004	KS	Seward	20175	Oil & Gas	Other Revenues	-858.31
-2004	KS	Seward	20175	Oil & Gas	Other Roy Vals	-810
-2004	KS	Seward	20175	Gas	Royalties	1954.58
-2004	KS	Seward	20175	Gas	Royalties	-2889.4
-2004	KS	Seward	20175	Gas	Royalties	69274.32
-2004	KS	Seward	20175	Oil	Royalties	590.9
-2004	KS	Seward	20175	Other	Royalties	57.39
-2004	KS	Stanton	20187	Oil & Gas	Other Roy Vals	213.6
-2004	KS	Stanton	20187	Gas	Royalties	7759.59
-2004	KS	Stanton	20187	Gas	Royalties	12642.19
-2004	KS	Stanton	20187	Gas	Royalties	160.14
-2004	KS	Stevens	20189	Oil & Gas	Other Revenues	-256.89
-2004	KS	Stevens	20189	Oil & Gas	Other Roy Vals	100
-2004	KS	Stevens	20189	Gas	Royalties	3496.22
-2004	KS	Stevens	20189	Gas	Royalties	30532.33
-2004	KS	Stevens	20189	Gas	Royalties	205288.76
-2004	KS	Trego	20195	Oil	Royalties	7760.06
-2005	KS	Comanche	20033	Oil & Gas	Other Roy Vals	10.89
-2005	KS	Comanche	20033	Gas	Royalties	5827.51
-2005	KS	Ellsworth	20053	Gas	Royalties	7082.95
-2005	KS	Finney	20055	Oil & Gas	Other Revenues	29.43
-2005	KS	Finney	20055	Gas	Other Roy Vals	-370.16
-2005	KS	Finney	20055	Gas	Other Roy Vals	176.24
-2005	KS	Finney	20055	Oil & Gas	Other Roy Vals	48626.92
-2005	KS	Finney	20055	Gas	Royalties	246.2
-2005	KS	Finney	20055	Gas	Royalties	25587.69
-2005	KS	Finney	20055	Gas	Royalties	124001.74
-2005	KS	Finney	20055	Gas	Royalties	921074.24
-2005	KS	Finney	20055	Oil	Royalties	196130.81
-2005	KS	Gove	20063	Oil	Royalties	12320.65
-2005	KS	Grant	20067	Oil & Gas	Other Revenues	-5.98
-2005	KS	Grant	20067	Oil & Gas	Other Roy Vals	-626.48
-2005	KS	Grant	20067	Gas	Royalties	5093.86
-2005	KS	Grant	20067	Gas	Royalties	15075.34
-2005	KS	Grant	20067	Gas	Royalties	30053.07
-2005	KS	Hamilton	20075	Oil & Gas	Other Roy Vals	-324.56
-2005	KS	Hamilton	20075	Gas	Royalties	292.87
-2005	KS	Hamilton	20075	Gas	Royalties	783.71
-2005	KS	Hamilton	20075	Gas	Royalties	15474.25
-2005	KS	Haskell	20081	Gas	Other Roy Vals	87.01
-2005	KS	Haskell	20081	Oil & Gas	Other Roy Vals	15418.32
-2005	KS	Haskell	20081	Gas	Royalties	121.1
-2005	KS	Haskell	20081	Gas	Royalties	1840.93
-2005	KS	Haskell	20081	Gas	Royalties	9099.44
-2005	KS	Haskell	20081	Gas	Royalties	373752.2
-2005	KS	Haskell	20081	Oil	Royalties	106789.35
-2005	KS	Kearny	20093	Oil & Gas	Other Revenues	720.27
-2005	KS	Kearny	20093	Oil & Gas	Other Roy Vals	101015.27
-2005	KS	Kearny	20093	Gas	Royalties	194557.5
-2005	KS	Kearny	20093	Gas	Royalties	641502.7
-2005	KS	Kearny	20093	Gas	Royalties	1260054.4
-2005	KS	Kearny	20093	Oil	Royalties	25268.94
-2005	KS	Lane	20101	Oil	Royalties	13768.28
-2005	KS	Meade	20119	Oil & Gas	Other Roy Vals	330
-2005	KS	Meade	20119	Gas	Royalties	11089.22
-2005	KS	Morton	20129	Oil & Gas	Other Revenues	32686.91
-2005	KS	Morton	20129	Oil & Gas	Other Roy Vals	-233011.65
-2005	KS	Morton	20129	Gas	Royalties	129224.97
-2005	KS	Morton	20129	Gas	Royalties	287784.44
-2005	KS	Morton	20129	Gas	Royalties	2594478.92
-2005	KS	Morton	20129	Oil	Royalties	2322.92
-2005	KS	Morton	20129	Oil	Royalties	802503.27
-2005	KS	Seward	20175	Oil & Gas	Other Revenues	-155.98
-2005	KS	Seward	20175	Oil & Gas	Other Roy Vals	-7264.03
-2005	KS	Seward	20175	Gas	Royalties	3400.1
-2005	KS	Seward	20175	Gas	Royalties	13130.93
-2005	KS	Seward	20175	Gas	Royalties	90290.42
-2005	KS	Seward	20175	Oil	Royalties	137.72
-2005	KS	Seward	20175	Oil	Royalties	1245.54
-2005	KS	Stanton	20187	Oil & Gas	Other Roy Vals	958.35
-2005	KS	Stanton	20187	Gas	Royalties	7285.22
-2005	KS	Stanton	20187	Gas	Royalties	16274.58
-2005	KS	Stanton	20187	Gas	Royalties	193.76
-2005	KS	Stevens	20189	Oil & Gas	Other Revenues	85.69
-2005	KS	Stevens	20189	Oil & Gas	Other Roy Vals	-23418.56
-2005	KS	Stevens	20189	Gas	Royalties	7413.48
-2005	KS	Stevens	20189	Gas	Royalties	34656.34
-2005	KS	Stevens	20189	Gas	Royalties	260694.48
-2005	KS	Trego	20195	Oil	Royalties	10320.82
-2006	KS	Comanche	20033	Gas	Royalties	5119.65
-2006	KS	Ellsworth	20053	Gas	Royalties	9620.21
-2006	KS	Finney	20055	Oil & Gas	Other Revenues	136.81
-2006	KS	Finney	20055	Gas	Other Roy Vals	147.81
-2006	KS	Finney	20055	Gas	Other Roy Vals	36.25
-2006	KS	Finney	20055	Oil & Gas	Other Roy Vals	3654.08
-2006	KS	Finney	20055	Gas	Royalties	264.81
-2006	KS	Finney	20055	Gas	Royalties	35365.89
-2006	KS	Finney	20055	Gas	Royalties	134445.84
-2006	KS	Finney	20055	Gas	Royalties	856278.01
-2006	KS	Finney	20055	Oil	Royalties	211207.51
-2006	KS	Gove	20063	Oil	Royalties	13601.23
-2006	KS	Grant	20067	Oil & Gas	Other Revenues	29.12
-2006	KS	Grant	20067	Oil & Gas	Other Roy Vals	-203.5
-2006	KS	Grant	20067	Gas	Royalties	6228
-2006	KS	Grant	20067	Gas	Royalties	14070.48
-2006	KS	Grant	20067	Gas	Royalties	19886.05
-2006	KS	Hamilton	20075	Oil & Gas	Other Roy Vals	112
-2006	KS	Hamilton	20075	Gas	Royalties	352.53
-2006	KS	Hamilton	20075	Gas	Royalties	909.9
-2006	KS	Hamilton	20075	Gas	Royalties	11978.08
-2006	KS	Haskell	20081	Gas	Other Roy Vals	32.77
-2006	KS	Haskell	20081	Oil & Gas	Other Roy Vals	37.95
-2006	KS	Haskell	20081	Gas	Royalties	2861.7
-2006	KS	Haskell	20081	Gas	Royalties	12836.59
-2006	KS	Haskell	20081	Gas	Royalties	337165.29
-2006	KS	Haskell	20081	Oil	Royalties	120010.03
-2006	KS	Kearny	20093	Oil & Gas	Other Revenues	1226.92
-2006	KS	Kearny	20093	Oil & Gas	Other Roy Vals	-15011.63
-2006	KS	Kearny	20093	Gas	Royalties	210337.81
-2006	KS	Kearny	20093	Gas	Royalties	520730.21
-2006	KS	Kearny	20093	Gas	Royalties	1224980.24
-2006	KS	Kearny	20093	Oil	Royalties	29007.53
-2006	KS	Lane	20101	Oil	Royalties	34677.42
-2006	KS	Meade	20119	Gas	Royalties	8387.28
-2006	KS	Morton	20129	Oil & Gas	Other Revenues	13223.75
-2006	KS	Morton	20129	Oil & Gas	Other Roy Vals	9911.27
-2006	KS	Morton	20129	Gas	Royalties	176540.68
-2006	KS	Morton	20129	Gas	Royalties	344978.45
-2006	KS	Morton	20129	Gas	Royalties	1043428.18
-2006	KS	Morton	20129	Oil	Royalties	695.85
-2006	KS	Morton	20129	Oil	Royalties	3513674.37
-2006	KS	Seward	20175	Oil & Gas	Other Revenues	10.27
-2006	KS	Seward	20175	Oil & Gas	Other Roy Vals	79.29
-2006	KS	Seward	20175	Gas	Royalties	7253.65
-2006	KS	Seward	20175	Gas	Royalties	24453.48
-2006	KS	Seward	20175	Gas	Royalties	84585.31
-2006	KS	Seward	20175	Oil	Royalties	-24.48
-2006	KS	Seward	20175	Oil	Royalties	1031.29
-2006	KS	Seward	20175	Other	Royalties	-57.39
-2006	KS	Stanton	20187	Oil & Gas	Other Roy Vals	-825.23
-2006	KS	Stanton	20187	Gas	Royalties	5710.85
-2006	KS	Stanton	20187	Gas	Royalties	6554.5
-2006	KS	Stanton	20187	Gas	Royalties	187.7
-2006	KS	Stevens	20189	Oil & Gas	Other Revenues	36.54
-2006	KS	Stevens	20189	Oil & Gas	Other Roy Vals	1433.71
-2006	KS	Stevens	20189	Gas	Royalties	11428.2
-2006	KS	Stevens	20189	Gas	Royalties	22556.15
-2006	KS	Stevens	20189	Gas	Royalties	251978.27
-2006	KS	Trego	20195	Oil	Royalties	16379.88
-2007	KS	Comanche	20033	Oil & Gas	Other Roy Vals	81.61
-2007	KS	Comanche	20033	Gas	Royalties	4934.66
-2007	KS	Comanche	20033	Oil	Royalties	54.3
-2007	KS	Ellsworth	20053	Gas	Royalties	1206.15
-2007	KS	Finney	20055	Oil & Gas	Other Revenues	22.06
-2007	KS	Finney	20055	Gas	Other Roy Vals	20.24
-2007	KS	Finney	20055	Gas	Other Roy Vals	5.38
-2007	KS	Finney	20055	Oil & Gas	Other Roy Vals	-31866.31
-2007	KS	Finney	20055	Gas	Royalties	209.88
-2007	KS	Finney	20055	Gas	Royalties	57448.28
-2007	KS	Finney	20055	Gas	Royalties	77243.11
-2007	KS	Finney	20055	Gas	Royalties	721124.26
-2007	KS	Finney	20055	Oil	Royalties	254246.75
-2007	KS	Gove	20063	Oil	Royalties	14680.83
-2007	KS	Grant	20067	Oil & Gas	Other Revenues	9.15
-2007	KS	Grant	20067	Oil & Gas	Other Roy Vals	495.24
-2007	KS	Grant	20067	Gas	Royalties	5372.06
-2007	KS	Grant	20067	Gas	Royalties	10966.93
-2007	KS	Grant	20067	Gas	Royalties	21113.67
-2007	KS	Hamilton	20075	Oil & Gas	Other Roy Vals	85.22
-2007	KS	Hamilton	20075	Gas	Royalties	136.8
-2007	KS	Hamilton	20075	Gas	Royalties	271.69
-2007	KS	Hamilton	20075	Gas	Royalties	15402.6
-2007	KS	Haskell	20081	Gas	Other Roy Vals	3.91
-2007	KS	Haskell	20081	Oil & Gas	Other Roy Vals	-13174.16
-2007	KS	Haskell	20081	Gas	Royalties	6418.22
-2007	KS	Haskell	20081	Gas	Royalties	12352.05
-2007	KS	Haskell	20081	Gas	Royalties	277738.88
-2007	KS	Haskell	20081	Oil	Royalties	105595.53
-2007	KS	Kearny	20093	Oil & Gas	Other Revenues	-220.24
-2007	KS	Kearny	20093	Oil & Gas	Other Roy Vals	-46313.81
-2007	KS	Kearny	20093	Gas	Royalties	236079.61
-2007	KS	Kearny	20093	Gas	Royalties	343716.65
-2007	KS	Kearny	20093	Gas	Royalties	1047717.33
-2007	KS	Kearny	20093	Oil	Royalties	26784.56
-2007	KS	Lane	20101	Oil	Royalties	42471.51
-2007	KS	Meade	20119	Oil & Gas	Other Roy Vals	5.75
-2007	KS	Meade	20119	Gas	Royalties	6554.63
-2007	KS	Morton	20129	Oil & Gas	Other Revenues	-9783.68
-2007	KS	Morton	20129	Oil & Gas	Other Roy Vals	175604.84
-2007	KS	Morton	20129	Gas	Royalties	161008.72
-2007	KS	Morton	20129	Gas	Royalties	288865.4
-2007	KS	Morton	20129	Gas	Royalties	1826065.37
-2007	KS	Morton	20129	Oil	Royalties	2761.35
-2007	KS	Morton	20129	Oil	Royalties	2049248.41
-2007	KS	Seward	20175	Oil & Gas	Other Revenues	11.93
-2007	KS	Seward	20175	Oil & Gas	Other Roy Vals	844.95
-2007	KS	Seward	20175	Gas	Royalties	12277.64
-2007	KS	Seward	20175	Gas	Royalties	35639.99
-2007	KS	Seward	20175	Gas	Royalties	70495.79
-2007	KS	Seward	20175	Oil	Royalties	862.47
-2007	KS	Seward	20175	Oil	Royalties	1346.91
-2007	KS	Stanton	20187	Oil & Gas	Other Roy Vals	371.16
-2007	KS	Stanton	20187	Gas	Royalties	6196.39
-2007	KS	Stanton	20187	Gas	Royalties	9536.87
-2007	KS	Stanton	20187	Gas	Royalties	165.82
-2007	KS	Stevens	20189	Oil & Gas	Other Revenues	12.19
-2007	KS	Stevens	20189	Oil & Gas	Other Roy Vals	8551.85
-2007	KS	Stevens	20189	Gas	Royalties	10798.29
-2007	KS	Stevens	20189	Gas	Royalties	25169.6
-2007	KS	Stevens	20189	Gas	Royalties	321312.87
-2007	KS	Trego	20195	Oil	Royalties	17175
-2008	KS	Comanche	20033	Oil & Gas	Other Roy Vals	-257.17
-2008	KS	Comanche	20033	Gas	Royalties	5914.7
-2008	KS	Ellsworth	20053	Gas	Royalties	6755.48
-2008	KS	Finney	20055	Oil & Gas	Other Revenues	-146.22
-2008	KS	Finney	20055	Gas	Other Roy Vals	-16.03
-2008	KS	Finney	20055	Gas	Other Roy Vals	-6.59
-2008	KS	Finney	20055	Oil & Gas	Other Roy Vals	77919.68
-2008	KS	Finney	20055	Gas	Royalties	413.13
-2008	KS	Finney	20055	Gas	Royalties	95798.29
-2008	KS	Finney	20055	Gas	Royalties	178760.55
-2008	KS	Finney	20055	Gas	Royalties	924753.76
-2008	KS	Finney	20055	Oil	Royalties	841916.38
-2008	KS	Gove	20063	Oil	Royalties	19837.68
-2008	KS	Grant	20067	Oil & Gas	Other Revenues	-25.93
-2008	KS	Grant	20067	Oil & Gas	Other Roy Vals	96.07
-2008	KS	Grant	20067	Gas	Royalties	7567.13
-2008	KS	Grant	20067	Gas	Royalties	10287.79
-2008	KS	Grant	20067	Gas	Royalties	29226.17
-2008	KS	Hamilton	20075	Oil & Gas	Other Roy Vals	154.43
-2008	KS	Hamilton	20075	Gas	Royalties	19644.87
-2008	KS	Haskell	20081	Gas	Other Roy Vals	-3.25
-2008	KS	Haskell	20081	Oil & Gas	Other Roy Vals	25973.26
-2008	KS	Haskell	20081	Gas	Royalties	15967.78
-2008	KS	Haskell	20081	Gas	Royalties	26495.48
-2008	KS	Haskell	20081	Gas	Royalties	356126.33
-2008	KS	Haskell	20081	Oil	Royalties	290830.9
-2008	KS	Kearny	20093	Oil & Gas	Other Revenues	-231.93
-2008	KS	Kearny	20093	Oil & Gas	Other Roy Vals	46847.52
-2008	KS	Kearny	20093	Gas	Royalties	1793.62
-2008	KS	Kearny	20093	Gas	Royalties	316797.23
-2008	KS	Kearny	20093	Gas	Royalties	525883.34
-2008	KS	Kearny	20093	Gas	Royalties	1399680
-2008	KS	Kearny	20093	Oil	Royalties	60560.64
-2008	KS	Lane	20101	Oil	Royalties	40396.29
-2008	KS	Meade	20119	Oil & Gas	Other Roy Vals	-1.75
-2008	KS	Meade	20119	Gas	Royalties	11586.24
-2008	KS	Morton	20129	Oil & Gas	Other Revenues	13699.84
-2008	KS	Morton	20129	Oil & Gas	Other Roy Vals	155097.86
-2008	KS	Morton	20129	Gas	Royalties	299603.91
-2008	KS	Morton	20129	Gas	Royalties	501417.36
-2008	KS	Morton	20129	Gas	Royalties	1995182.46
-2008	KS	Morton	20129	Oil	Royalties	916.39
-2008	KS	Morton	20129	Oil	Royalties	3183398.2
-2008	KS	Seward	20175	Oil & Gas	Other Revenues	53.39
-2008	KS	Seward	20175	Oil & Gas	Other Roy Vals	479.62
-2008	KS	Seward	20175	Gas	Royalties	19910.1
-2008	KS	Seward	20175	Gas	Royalties	49781.87
-2008	KS	Seward	20175	Gas	Royalties	57554.79
-2008	KS	Seward	20175	Oil	Royalties	1488.18
-2008	KS	Seward	20175	Oil	Royalties	1664.16
-2008	KS	Stanton	20187	Oil & Gas	Other Roy Vals	204.38
-2008	KS	Stanton	20187	Gas	Royalties	6037.77
-2008	KS	Stanton	20187	Gas	Royalties	13468.01
-2008	KS	Stanton	20187	Gas	Royalties	4678.17
-2008	KS	Stevens	20189	Oil & Gas	Other Revenues	131.85
-2008	KS	Stevens	20189	Oil & Gas	Other Roy Vals	827.69
-2008	KS	Stevens	20189	Gas	Royalties	10663.02
-2008	KS	Stevens	20189	Gas	Royalties	27169.22
-2008	KS	Stevens	20189	Gas	Royalties	288525.69
-2008	KS	Stevens	20189	Oil	Royalties	315.62
-2008	KS	Trego	20195	Oil	Royalties	25923.18
-2009	KS	Comanche	20033	Oil & Gas	Other Roy Vals	-24.21
-2009	KS	Comanche	20033	Gas	Royalties	1984.6
-2009	KS	Ellsworth	20053	Gas	Royalties	3929.79
-2009	KS	Finney	20055	Oil & Gas	Other Revenues	295.78
-2009	KS	Finney	20055	Gas	Other Roy Vals	-37.27
-2009	KS	Finney	20055	Oil & Gas	Other Roy Vals	-77510.32
-2009	KS	Finney	20055	Gas	Royalties	114.37
-2009	KS	Finney	20055	Gas	Royalties	83299.76
-2009	KS	Finney	20055	Gas	Royalties	50466.16
-2009	KS	Finney	20055	Gas	Royalties	356198.26
-2009	KS	Finney	20055	Oil	Royalties	281125.27
-2009	KS	Gove	20063	Oil	Royalties	9784.46
-2009	KS	Grant	20067	Oil & Gas	Other Revenues	-21.27
-2009	KS	Grant	20067	Oil & Gas	Other Roy Vals	-3.9
-2009	KS	Grant	20067	Gas	Royalties	4324.89
-2009	KS	Grant	20067	Gas	Royalties	6480.61
-2009	KS	Grant	20067	Gas	Royalties	7708.36
-2009	KS	Hamilton	20075	Oil & Gas	Other Revenues	46.37
-2009	KS	Hamilton	20075	Oil & Gas	Other Roy Vals	-152.91
-2009	KS	Hamilton	20075	Gas	Royalties	9431.33
-2009	KS	Haskell	20081	Oil & Gas	Other Roy Vals	-25316.35
-2009	KS	Haskell	20081	Gas	Royalties	7966.67
-2009	KS	Haskell	20081	Gas	Royalties	9961.22
-2009	KS	Haskell	20081	Gas	Royalties	127690.08
-2009	KS	Haskell	20081	Oil	Royalties	101246.92
-2009	KS	Kearny	20093	Oil & Gas	Other Revenues	337.96
-2009	KS	Kearny	20093	Oil & Gas	Other Roy Vals	-78254.85
-2009	KS	Kearny	20093	Gas	Royalties	2345.1
-2009	KS	Kearny	20093	Gas	Royalties	202710.1
-2009	KS	Kearny	20093	Gas	Royalties	212096.1
-2009	KS	Kearny	20093	Gas	Royalties	552410.19
-2009	KS	Kearny	20093	Oil	Royalties	24585.1
-2009	KS	Lane	20101	Oil	Royalties	40763.17
-2009	KS	Meade	20119	Oil & Gas	Other Roy Vals	-402.17
-2009	KS	Meade	20119	Gas	Royalties	4259.06
-2009	KS	Meade	20119	Oil	Royalties	172.14
-2009	KS	Morton	20129	Oil & Gas	Other Revenues	9595.45
-2009	KS	Morton	20129	Oil & Gas	Other Roy Vals	-246007.23
-2009	KS	Morton	20129	Gas	Royalties	147052.15
-2009	KS	Morton	20129	Gas	Royalties	481864.26
-2009	KS	Morton	20129	Gas	Royalties	801819.29
-2009	KS	Morton	20129	Oil	Royalties	1723.79
-2009	KS	Morton	20129	Oil	Royalties	1220188.19
-2009	KS	Seward	20175	Oil & Gas	Other Revenues	190.5
-2009	KS	Seward	20175	Oil & Gas	Other Roy Vals	51.19
-2009	KS	Seward	20175	Gas	Royalties	5966.85
-2009	KS	Seward	20175	Gas	Royalties	16238.58
-2009	KS	Seward	20175	Gas	Royalties	19743.09
-2009	KS	Seward	20175	Oil	Royalties	479.99
-2009	KS	Seward	20175	Oil	Royalties	1197.76
-2009	KS	Seward	20175	Other	Royalties	20.06
-2009	KS	Stanton	20187	Oil & Gas	Other Roy Vals	-1710.73
-2009	KS	Stanton	20187	Gas	Royalties	8219.93
-2009	KS	Stanton	20187	Gas	Royalties	5000.01
-2009	KS	Stanton	20187	Gas	Royalties	372.14
-2009	KS	Stevens	20189	Oil & Gas	Other Revenues	614.65
-2009	KS	Stevens	20189	Oil & Gas	Other Roy Vals	-7891.27
-2009	KS	Stevens	20189	Gas	Royalties	5901.89
-2009	KS	Stevens	20189	Gas	Royalties	13554.52
-2009	KS	Stevens	20189	Gas	Royalties	112264.07
-2009	KS	Trego	20195	Oil	Royalties	13548.45
-2010	KS	Comanche	20033	Oil & Gas	Other Roy Vals	-11.73
-2010	KS	Comanche	20033	Gas	Royalties	3025.91
-2010	KS	Ellsworth	20053	Gas	Royalties	4299.42
-2010	KS	Finney	20055	Oil & Gas	Other Revenues	-54.37
-2010	KS	Finney	20055	Oil & Gas	Other Roy Vals	49462.92
-2010	KS	Finney	20055	Gas	Royalties	244.53
-2010	KS	Finney	20055	Gas	Royalties	58243.75
-2010	KS	Finney	20055	Gas	Royalties	91392.6
-2010	KS	Finney	20055	Gas	Royalties	434613.68
-2010	KS	Finney	20055	Oil	Royalties	490453.08
-2010	KS	Gove	20063	Oil	Royalties	12562.88
-2010	KS	Grant	20067	Oil & Gas	Other Revenues	-9.28
-2010	KS	Grant	20067	Oil & Gas	Other Roy Vals	3576.47
-2010	KS	Grant	20067	Gas	Royalties	8286.4
-2010	KS	Grant	20067	Gas	Royalties	12178.91
-2010	KS	Grant	20067	Gas	Royalties	4114.23
-2010	KS	Hamilton	20075	Oil & Gas	Other Revenues	160
-2010	KS	Hamilton	20075	Oil & Gas	Other Roy Vals	-922.87
-2010	KS	Hamilton	20075	Gas	Royalties	245.73
-2010	KS	Hamilton	20075	Gas	Royalties	9510.89
-2010	KS	Haskell	20081	Oil & Gas	Other Roy Vals	4178.43
-2010	KS	Haskell	20081	Gas	Royalties	11846.5
-2010	KS	Haskell	20081	Gas	Royalties	14448.52
-2010	KS	Haskell	20081	Gas	Royalties	170062.76
-2010	KS	Haskell	20081	Oil	Royalties	185240.38
-2010	KS	Kearny	20093	Oil & Gas	Other Revenues	-146.94
-2010	KS	Kearny	20093	Oil & Gas	Other Roy Vals	83543.07
-2010	KS	Kearny	20093	Gas	Royalties	794.17
-2010	KS	Kearny	20093	Gas	Royalties	207572.56
-2010	KS	Kearny	20093	Gas	Royalties	257147.66
-2010	KS	Kearny	20093	Gas	Royalties	648113.9
-2010	KS	Kearny	20093	Oil	Royalties	35741.33
-2010	KS	Lane	20101	Oil & Gas	Other Roy Vals	2646.8
-2010	KS	Lane	20101	Oil	Royalties	34572.09
-2010	KS	Meade	20119	Oil & Gas	Other Roy Vals	31.4
-2010	KS	Meade	20119	Gas	Royalties	3837.01
-2010	KS	Morton	20129	Oil & Gas	Other Revenues	8475.26
-2010	KS	Morton	20129	Oil & Gas	Other Roy Vals	64847.21
-2010	KS	Morton	20129	Gas	Royalties	339679.07
-2010	KS	Morton	20129	Gas	Royalties	601023.65
-2010	KS	Morton	20129	Gas	Royalties	1018577.59
-2010	KS	Morton	20129	Oil	Royalties	2153.4
-2010	KS	Morton	20129	Oil	Royalties	1438956.33
-2010	KS	Seward	20175	Oil & Gas	Other Revenues	-0.82
-2010	KS	Seward	20175	Oil & Gas	Other Roy Vals	81.19
-2010	KS	Seward	20175	Gas	Royalties	8861.5
-2010	KS	Seward	20175	Gas	Royalties	18009.99
-2010	KS	Seward	20175	Gas	Royalties	23202.6
-2010	KS	Seward	20175	Oil	Royalties	285.8
-2010	KS	Seward	20175	Oil	Royalties	1283.14
-2010	KS	Stanton	20187	Oil & Gas	Other Roy Vals	1132.49
-2010	KS	Stanton	20187	Gas	Royalties	6216.4
-2010	KS	Stanton	20187	Gas	Royalties	7107.05
-2010	KS	Stanton	20187	Gas	Royalties	95.25
-2010	KS	Stevens	20189	Oil & Gas	Other Revenues	-19.41
-2010	KS	Stevens	20189	Oil & Gas	Other Roy Vals	15474.82
-2010	KS	Stevens	20189	Gas	Royalties	39902.3
-2010	KS	Stevens	20189	Gas	Royalties	39635.72
-2010	KS	Stevens	20189	Gas	Royalties	102905.97
-2010	KS	Trego	20195	Oil	Royalties	14602.16
-2011	KS	Comanche	20033	Oil & Gas	Other Roy Vals	65.59
-2011	KS	Comanche	20033	Gas	Royalties	2390
-2011	KS	Ellsworth	20053	Gas	Royalties	4385.31
-2011	KS	Finney	20055	Oil & Gas	Other Revenues	-34.95
-2011	KS	Finney	20055	Oil & Gas	Other Roy Vals	2439.21
-2011	KS	Finney	20055	Gas	Royalties	57216.9
-2011	KS	Finney	20055	Gas	Royalties	81326.08
-2011	KS	Finney	20055	Gas	Royalties	403299.48
-2011	KS	Finney	20055	Oil	Royalties	666927.11
-2011	KS	Finney	20055	Other	Royalties	39.32
-2011	KS	Gove	20063	Oil	Royalties	19214.93
-2011	KS	Grant	20067	Oil & Gas	Other Revenues	-4.26
-2011	KS	Grant	20067	Oil & Gas	Other Roy Vals	727.05
-2011	KS	Grant	20067	Gas	Royalties	10301.87
-2011	KS	Grant	20067	Gas	Royalties	10976.33
-2011	KS	Grant	20067	Gas	Royalties	1789.59
-2011	KS	Hamilton	20075	Oil & Gas	Other Revenues	160
-2011	KS	Hamilton	20075	Oil & Gas	Other Roy Vals	335.86
-2011	KS	Hamilton	20075	Gas	Royalties	-30.03
-2011	KS	Hamilton	20075	Gas	Royalties	2439.73
-2011	KS	Hamilton	20075	Gas	Royalties	5650.23
-2011	KS	Haskell	20081	Oil & Gas	Other Roy Vals	36456.12
-2011	KS	Haskell	20081	Gas	Royalties	9430.76
-2011	KS	Haskell	20081	Gas	Royalties	10432.3
-2011	KS	Haskell	20081	Gas	Royalties	172402.92
-2011	KS	Haskell	20081	Oil	Royalties	482024.07
-2011	KS	Haskell	20081	Other	Royalties	1.1
-2011	KS	Kearny	20093	Oil & Gas	Other Revenues	-31.75
-2011	KS	Kearny	20093	Oil & Gas	Other Roy Vals	7051.09
-2011	KS	Kearny	20093	Gas	Royalties	737.35
-2011	KS	Kearny	20093	Gas	Royalties	239856.58
-2011	KS	Kearny	20093	Gas	Royalties	217425.41
-2011	KS	Kearny	20093	Gas	Royalties	629294.26
-2011	KS	Kearny	20093	Oil	Royalties	41452.83
-2011	KS	Kearny	20093	Other	Royalties	75.26
-2011	KS	Lane	20101	Oil & Gas	Other Roy Vals	661.29
-2011	KS	Lane	20101	Oil	Royalties	37087.77
-2011	KS	Meade	20119	Oil & Gas	Other Roy Vals	-500.02
-2011	KS	Meade	20119	Gas	Royalties	3643.09
-2011	KS	Morton	20129	Oil & Gas	Other Revenues	896.09
-2011	KS	Morton	20129	Oil & Gas	Other Roy Vals	98019.29
-2011	KS	Morton	20129	Gas	Royalties	677259.78
-2011	KS	Morton	20129	Gas	Royalties	690124
-2011	KS	Morton	20129	Gas	Royalties	185885.7
-2011	KS	Morton	20129	Oil	Royalties	2300.21
-2011	KS	Morton	20129	Oil	Royalties	2523417.21
-2011	KS	Morton	20129	Oil	Royalties	0.5
-2011	KS	Morton	20129	Other	Royalties	27.06
-2011	KS	Morton	20129	Other	Royalties	21.84
-2011	KS	Seward	20175	Oil & Gas	Other Revenues	-0.52
-2011	KS	Seward	20175	Oil & Gas	Other Roy Vals	144.89
-2011	KS	Seward	20175	Gas	Royalties	10558.63
-2011	KS	Seward	20175	Gas	Royalties	15700.67
-2011	KS	Seward	20175	Gas	Royalties	14840.42
-2011	KS	Seward	20175	Oil	Royalties	1721.28
-2011	KS	Seward	20175	Other	Royalties	5.59
-2011	KS	Stanton	20187	Oil & Gas	Other Roy Vals	687.27
-2011	KS	Stanton	20187	Gas	Royalties	7555.73
-2011	KS	Stanton	20187	Gas	Royalties	6561.9
-2011	KS	Stanton	20187	Other	Royalties	6.66
-2011	KS	Stevens	20189	Oil & Gas	Other Revenues	-16.68
-2011	KS	Stevens	20189	Oil & Gas	Other Roy Vals	7392.32
-2011	KS	Stevens	20189	Gas	Royalties	72752.23
-2011	KS	Stevens	20189	Gas	Royalties	78392.78
-2011	KS	Stevens	20189	Gas	Royalties	38087.27
-2011	KS	Trego	20195	Oil	Royalties	20239.21
-2012	KS	Comanche	20033	Oil & Gas	Other Roy Vals	-80.75
-2012	KS	Comanche	20033	Gas	Royalties	1538.13
-2012	KS	Ellsworth	20053	Gas	Royalties	2062.59
-2012	KS	Finney	20055	Oil & Gas	Other Revenues	-115.11
-2012	KS	Finney	20055	Gas	Other Roy Vals	-0.36
-2012	KS	Finney	20055	Oil & Gas	Other Roy Vals	-32169.09
-2012	KS	Finney	20055	Gas	Royalties	36434.02
-2012	KS	Finney	20055	Gas	Royalties	46305.21
-2012	KS	Finney	20055	Gas	Royalties	271693.88
-2012	KS	Finney	20055	Oil	Royalties	899.44
-2012	KS	Finney	20055	Oil	Royalties	588839.78
-2012	KS	Finney	20055	Other	Royalties	24.71
-2012	KS	Gove	20063	Oil	Royalties	16770.58
-2012	KS	Grant	20067	Oil & Gas	Other Revenues	-24.23
-2012	KS	Grant	20067	Oil & Gas	Other Roy Vals	1136.71
-2012	KS	Grant	20067	Gas	Royalties	7483.04
-2012	KS	Grant	20067	Gas	Royalties	5843.18
-2012	KS	Grant	20067	Gas	Royalties	2212.88
-2012	KS	Hamilton	20075	Oil & Gas	Other Revenues	123.07
-2012	KS	Hamilton	20075	Oil & Gas	Other Roy Vals	-305.07
-2012	KS	Hamilton	20075	Gas	Royalties	1133.71
-2012	KS	Hamilton	20075	Gas	Royalties	831.15
-2012	KS	Hamilton	20075	Gas	Royalties	3349.99
-2012	KS	Haskell	20081	Gas	Other Roy Vals	-0.65
-2012	KS	Haskell	20081	Oil & Gas	Other Roy Vals	-46272.74
-2012	KS	Haskell	20081	Gas	Royalties	6943.28
-2012	KS	Haskell	20081	Gas	Royalties	6906.32
-2012	KS	Haskell	20081	Gas	Royalties	110212.34
-2012	KS	Haskell	20081	Oil	Royalties	51.33
-2012	KS	Haskell	20081	Oil	Royalties	249576.92
-2012	KS	Haskell	20081	Other	Royalties	0.67
-2012	KS	Kearny	20093	Oil & Gas	Other Revenues	-493.54
-2012	KS	Kearny	20093	Oil & Gas	Other Roy Vals	5237.1
-2012	KS	Kearny	20093	Gas	Royalties	12.26
-2012	KS	Kearny	20093	Gas	Royalties	165350.32
-2012	KS	Kearny	20093	Gas	Royalties	140984.47
-2012	KS	Kearny	20093	Gas	Royalties	415097.88
-2012	KS	Kearny	20093	Oil	Royalties	44437.08
-2012	KS	Kearny	20093	Other	Royalties	54.95
-2012	KS	Lane	20101	Oil	Royalties	43167.88
-2012	KS	Meade	20119	Oil & Gas	Other Roy Vals	-0.98
-2012	KS	Meade	20119	Gas	Royalties	2228.7
-2012	KS	Morton	20129	Oil & Gas	Other Revenues	37691.74
-2012	KS	Morton	20129	Oil & Gas	Other Roy Vals	7861.75
-2012	KS	Morton	20129	Gas	Royalties	532765.5
-2012	KS	Morton	20129	Gas	Royalties	426246.2
-2012	KS	Morton	20129	Gas	Royalties	259243.35
-2012	KS	Morton	20129	Oil	Royalties	1334.41
-2012	KS	Morton	20129	Oil	Royalties	1.88
-2012	KS	Morton	20129	Oil	Royalties	1994901.46
-2012	KS	Morton	20129	Other	Royalties	4.62
-2012	KS	Morton	20129	Other	Royalties	15.28
-2012	KS	Seward	20175	Oil & Gas	Other Revenues	-7.58
-2012	KS	Seward	20175	Oil & Gas	Other Roy Vals	421.25
-2012	KS	Seward	20175	Gas	Royalties	8902.89
-2012	KS	Seward	20175	Gas	Royalties	10771.68
-2012	KS	Seward	20175	Gas	Royalties	15275.91
-2012	KS	Seward	20175	Oil	Royalties	380.08
-2012	KS	Seward	20175	Oil	Royalties	2816.55
-2012	KS	Seward	20175	Other	Royalties	-0.89
-2012	KS	Stanton	20187	Oil & Gas	Other Roy Vals	845.27
-2012	KS	Stanton	20187	Gas	Royalties	5082.88
-2012	KS	Stanton	20187	Gas	Royalties	3923.68
-2012	KS	Stanton	20187	Oil	Royalties	17.01
-2012	KS	Stanton	20187	Other	Royalties	4.34
-2012	KS	Stevens	20189	Oil & Gas	Other Revenues	-44.19
-2012	KS	Stevens	20189	Oil & Gas	Other Roy Vals	-632.06
-2012	KS	Stevens	20189	Gas	Royalties	52072.93
-2012	KS	Stevens	20189	Gas	Royalties	47001.99
-2012	KS	Stevens	20189	Gas	Royalties	20014.43
-2012	KS	Stevens	20189	Oil	Royalties	38466.58
-2012	KS	Trego	20195	Oil	Royalties	25371.54
-2013	KS	Comanche	20033	Oil & Gas	Other Roy Vals	19.86
-2013	KS	Comanche	20033	Gas	Royalties	1630.47
-2013	KS	Comanche	20033	Oil	Royalties	108.98
-2013	KS	Ellsworth	20053	Gas	Royalties	2450.17
-2013	KS	Finney	20055	Oil & Gas	Other Revenues	-103.64
-2013	KS	Finney	20055	Oil & Gas	Other Roy Vals	-2459.36
-2013	KS	Finney	20055	Gas	Royalties	12316.85
-2013	KS	Finney	20055	Gas	Royalties	43908.46
-2013	KS	Finney	20055	Gas	Royalties	253449.81
-2013	KS	Finney	20055	Gas	Royalties	113035.15
-2013	KS	Finney	20055	Oil	Royalties	611494.64
-2013	KS	Finney	20055	Other	Royalties	32.74
-2013	KS	Gove	20063	Oil	Royalties	15168.46
-2013	KS	Grant	20067	Oil & Gas	Other Revenues	-18.73
-2013	KS	Grant	20067	Oil & Gas	Other Roy Vals	-1402.63
-2013	KS	Grant	20067	Gas	Royalties	5642.63
-2013	KS	Grant	20067	Gas	Royalties	7988.93
-2013	KS	Grant	20067	Gas	Royalties	1182.95
-2013	KS	Hamilton	20075	Oil & Gas	Other Revenues	6.61
-2013	KS	Hamilton	20075	Oil & Gas	Other Roy Vals	-475
-2013	KS	Hamilton	20075	Gas	Royalties	868.44
-2013	KS	Hamilton	20075	Gas	Royalties	1067.79
-2013	KS	Hamilton	20075	Gas	Royalties	2255.35
-2013	KS	Haskell	20081	Oil & Gas	Other Roy Vals	5521.57
-2013	KS	Haskell	20081	Gas	Royalties	5061.24
-2013	KS	Haskell	20081	Gas	Royalties	21535.01
-2013	KS	Haskell	20081	Gas	Royalties	82649.17
-2013	KS	Haskell	20081	Gas	Royalties	25986.97
-2013	KS	Haskell	20081	Oil	Royalties	226052.98
-2013	KS	Haskell	20081	Other	Royalties	0.77
-2013	KS	Kearny	20093	Oil & Gas	Other Revenues	-376.86
-2013	KS	Kearny	20093	Oil & Gas	Other Roy Vals	-37423.09
-2013	KS	Kearny	20093	Gas	Royalties	20378.35
-2013	KS	Kearny	20093	Gas	Royalties	186228.24
-2013	KS	Kearny	20093	Gas	Royalties	515702.07
-2013	KS	Kearny	20093	Gas	Royalties	242015.24
-2013	KS	Kearny	20093	Oil	Royalties	40212.22
-2013	KS	Kearny	20093	Other	Royalties	56.24
-2013	KS	Lane	20101	Oil	Royalties	40787.93
-2013	KS	Meade	20119	Oil & Gas	Other Roy Vals	300.52
-2013	KS	Meade	20119	Gas	Royalties	3088.75
-2013	KS	Meade	20119	Oil	Royalties	247.91
-2013	KS	Morton	20129	Oil & Gas	Other Revenues	13136.89
-2013	KS	Morton	20129	Oil & Gas	Other Roy Vals	-8097.11
-2013	KS	Morton	20129	Gas	Royalties	34.35
-2013	KS	Morton	20129	Gas	Royalties	399694.52
-2013	KS	Morton	20129	Gas	Royalties	631703.6
-2013	KS	Morton	20129	Gas	Royalties	346046.64
-2013	KS	Morton	20129	Oil	Royalties	1411.55
-2013	KS	Morton	20129	Oil	Royalties	1640136.28
-2013	KS	Morton	20129	Other	Royalties	-0.13
-2013	KS	Morton	20129	Other	Royalties	16.43
-2013	KS	Seward	20175	Oil & Gas	Other Revenues	-6.78
-2013	KS	Seward	20175	Oil & Gas	Other Roy Vals	60.5
-2013	KS	Seward	20175	Gas	Royalties	7545.81
-2013	KS	Seward	20175	Gas	Royalties	13260.71
-2013	KS	Seward	20175	Gas	Royalties	11328.86
-2013	KS	Seward	20175	Oil	Royalties	121.46
-2013	KS	Seward	20175	Oil	Royalties	755.36
-2013	KS	Seward	20175	Other	Royalties	-0.09
-2013	KS	Stanton	20187	Oil & Gas	Other Roy Vals	-1132.49
-2013	KS	Stanton	20187	Gas	Royalties	3138.21
-2013	KS	Stanton	20187	Gas	Royalties	6506.94
-2013	KS	Stanton	20187	Gas	Royalties	7579.09
-2013	KS	Stanton	20187	Other	Royalties	4.08
-2013	KS	Stevens	20189	Oil & Gas	Other Revenues	-39.23
-2013	KS	Stevens	20189	Oil & Gas	Other Roy Vals	-2158.27
-2013	KS	Stevens	20189	Gas	Royalties	36087.1
-2013	KS	Stevens	20189	Gas	Royalties	56191.42
-2013	KS	Stevens	20189	Gas	Royalties	22689.66
-2013	KS	Stevens	20189	Oil	Royalties	29939.2
-2013	KS	Trego	20195	Oil	Royalties	22187.24
+Year	State	County	FIPS	Commodity	Product	Type	Revenue
+2004	KS	Barber	20007	Oil & Gas		Rents	80
+2004	KS	Cheyenne	20023	Oil & Gas		Bonus	320
+2004	KS	Cheyenne	20023	Oil & Gas		Rents	2767.5
+2004	KS	Clark	20025	Oil & Gas		Rents	36.78
+2004	KS	Comanche	20033	Oil & Gas		Rents	160
+2004	KS	Comanche	20033	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	5286.07
+2004	KS	Ellsworth	20053	Oil & Gas		Rents	3165
+2004	KS	Ellsworth	20053	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	16671.52
+2004	KS	Finney	20055	Oil & Gas		Other Revenues	-410.34
+2004	KS	Finney	20055	Gas (mcf)	Processed (Residue) Gas	Other Roy Vals	565.78
+2004	KS	Finney	20055	Gas (mcf)	Unprocessed (Wet) Gas	Other Roy Vals	114.23
+2004	KS	Finney	20055	Oil & Gas		Other Roy Vals	-423.41
+2004	KS	Finney	20055	Oil & Gas		Rents	1280
+2004	KS	Finney	20055	Gas (mcf)	Fuel Gas	Royalties	1462.18
+2004	KS	Finney	20055	Gas (mcf)	Processed (Residue) Gas	Royalties	94093.98
+2004	KS	Finney	20055	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	805812.87
+2004	KS	Finney	20055	NGL (gal)	Gas Plant Products	Royalties	11017.77
+2004	KS	Finney	20055	Oil (bbl)	Oil	Royalties	138535.81
+2004	KS	Gove	20063	Oil & Gas		Rents	2560
+2004	KS	Gove	20063	Oil (bbl)	Oil	Royalties	9028.75
+2004	KS	Grant	20067	Oil & Gas		Other Revenues	-298.94
+2004	KS	Grant	20067	Oil & Gas		Other Roy Vals	7
+2004	KS	Grant	20067	Gas (mcf)	Processed (Residue) Gas	Royalties	7694.58
+2004	KS	Grant	20067	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	31863.56
+2004	KS	Grant	20067	NGL (gal)	Gas Plant Products	Royalties	5240.68
+2004	KS	Greeley	20071	Oil & Gas		Rents	1040
+2004	KS	Hamilton	20075	Oil & Gas		Rents	6938
+2004	KS	Hamilton	20075	Gas (mcf)	Processed (Residue) Gas	Royalties	730.97
+2004	KS	Hamilton	20075	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	19797.03
+2004	KS	Hamilton	20075	NGL (gal)	Gas Plant Products	Royalties	278.35
+2004	KS	Haskell	20081	Gas (mcf)	Processed (Residue) Gas	Other Roy Vals	74.82
+2004	KS	Haskell	20081	Oil & Gas		Other Roy Vals	368.67
+2004	KS	Haskell	20081	Gas (mcf)	Fuel Gas	Royalties	3387.79
+2004	KS	Haskell	20081	Gas (mcf)	Processed (Residue) Gas	Royalties	8580.34
+2004	KS	Haskell	20081	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	286595.95
+2004	KS	Haskell	20081	NGL (gal)	Gas Plant Products	Royalties	1188.29
+2004	KS	Haskell	20081	Oil (bbl)	Oil	Royalties	88690.85
+2004	KS	Kearny	20093	Oil & Gas		Other Revenues	-1153.95
+2004	KS	Kearny	20093	Oil & Gas		Other Roy Vals	7390.15
+2004	KS	Kearny	20093	Oil & Gas		Rents	7403
+2004	KS	Kearny	20093	Gas (mcf)	Processed (Residue) Gas	Royalties	536332.75
+2004	KS	Kearny	20093	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	1066081.25
+2004	KS	Kearny	20093	NGL (gal)	Gas Plant Products	Royalties	173799.55
+2004	KS	Kearny	20093	Oil (bbl)	Oil	Royalties	18565.52
+2004	KS	Lane	20101	Oil & Gas		Bonus	5400
+2004	KS	Lane	20101	Oil & Gas		Rents	5600
+2004	KS	Lane	20101	Oil (bbl)	Oil	Royalties	10409.98
+2004	KS	Meade	20119	Oil & Gas		Other Roy Vals	100
+2004	KS	Meade	20119	Oil & Gas		Rents	1071.22
+2004	KS	Meade	20119	Gas (mcf)	Processed (Residue) Gas	Royalties	32.16
+2004	KS	Meade	20119	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	8652.92
+2004	KS	Morton	20129	Oil & Gas		Bonus	1760
+2004	KS	Morton	20129	Oil & Gas		Other Revenues	-286.63
+2004	KS	Morton	20129	Oil & Gas		Other Roy Vals	16615.77
+2004	KS	Morton	20129	Oil & Gas		Rents	7367.52
+2004	KS	Morton	20129	Gas (mcf)	Processed (Residue) Gas	Royalties	221824.25
+2004	KS	Morton	20129	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	3494840.67
+2004	KS	Morton	20129	NGL (gal)	Gas Plant Products	Royalties	74190.81
+2004	KS	Morton	20129	Oil (bbl)	Condensate	Royalties	528.88
+2004	KS	Morton	20129	Oil (bbl)	Oil	Royalties	194176.06
+2004	KS	Seward	20175	Oil & Gas		Bonus	160
+2004	KS	Seward	20175	Oil & Gas		Other Revenues	-858.31
+2004	KS	Seward	20175	Oil & Gas		Other Roy Vals	-810
+2004	KS	Seward	20175	Oil & Gas		Rents	396
+2004	KS	Seward	20175	Gas (mcf)	Processed (Residue) Gas	Royalties	-2889.4
+2004	KS	Seward	20175	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	69274.32
+2004	KS	Seward	20175	NGL (gal)	Gas Plant Products	Royalties	1954.58
+2004	KS	Seward	20175	Oil (bbl)	Oil	Royalties	590.9
+2004	KS	Seward	20175	Other Products	Helium	Royalties	57.39
+2004	KS	Stanton	20187	Oil & Gas		Other Roy Vals	213.6
+2004	KS	Stanton	20187	Gas (mcf)	Processed (Residue) Gas	Royalties	12642.19
+2004	KS	Stanton	20187	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	160.14
+2004	KS	Stanton	20187	NGL (gal)	Gas Plant Products	Royalties	7759.59
+2004	KS	Stevens	20189	Oil & Gas		Other Revenues	-256.89
+2004	KS	Stevens	20189	Oil & Gas		Other Roy Vals	100
+2004	KS	Stevens	20189	Oil & Gas		Rents	1084.48
+2004	KS	Stevens	20189	Gas (mcf)	Processed (Residue) Gas	Royalties	30532.33
+2004	KS	Stevens	20189	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	205288.76
+2004	KS	Stevens	20189	NGL (gal)	Gas Plant Products	Royalties	3496.22
+2004	KS	Trego	20195	Oil (bbl)	Oil	Royalties	7760.06
+2005	KS	Cheyenne	20023	Oil & Gas		Rents	2287.5
+2005	KS	Clark	20025	Oil & Gas		Rents	73.55
+2005	KS	Comanche	20033	Oil & Gas		Other Roy Vals	10.89
+2005	KS	Comanche	20033	Oil & Gas		Rents	40
+2005	KS	Comanche	20033	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	5827.51
+2005	KS	Ellsworth	20053	Oil & Gas		Bonus	320
+2005	KS	Ellsworth	20053	Oil & Gas		Rents	3645
+2005	KS	Ellsworth	20053	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	7082.95
+2005	KS	Finney	20055	Oil & Gas		Other Revenues	29.43
+2005	KS	Finney	20055	Gas (mcf)	Processed (Residue) Gas	Other Roy Vals	-370.16
+2005	KS	Finney	20055	Gas (mcf)	Unprocessed (Wet) Gas	Other Roy Vals	176.24
+2005	KS	Finney	20055	Oil & Gas		Other Roy Vals	48626.92
+2005	KS	Finney	20055	Oil & Gas		Rents	960
+2005	KS	Finney	20055	Gas (mcf)	Fuel Gas	Royalties	246.2
+2005	KS	Finney	20055	Gas (mcf)	Processed (Residue) Gas	Royalties	124001.74
+2005	KS	Finney	20055	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	921074.24
+2005	KS	Finney	20055	NGL (gal)	Gas Plant Products	Royalties	25587.69
+2005	KS	Finney	20055	Oil (bbl)	Oil	Royalties	196130.81
+2005	KS	Gove	20063	Oil (bbl)	Oil	Royalties	12320.65
+2005	KS	Grant	20067	Oil & Gas		Other Revenues	-5.98
+2005	KS	Grant	20067	Oil & Gas		Other Roy Vals	-626.48
+2005	KS	Grant	20067	Gas (mcf)	Processed (Residue) Gas	Royalties	15075.34
+2005	KS	Grant	20067	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	30053.07
+2005	KS	Grant	20067	NGL (gal)	Gas Plant Products	Royalties	5093.86
+2005	KS	Greeley	20071	Oil & Gas		Rents	880
+2005	KS	Hamilton	20075	Oil & Gas		Other Roy Vals	-324.56
+2005	KS	Hamilton	20075	Oil & Gas		Rents	1170
+2005	KS	Hamilton	20075	Gas (mcf)	Processed (Residue) Gas	Royalties	783.71
+2005	KS	Hamilton	20075	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	15474.25
+2005	KS	Hamilton	20075	NGL (gal)	Gas Plant Products	Royalties	292.87
+2005	KS	Haskell	20081	Gas (mcf)	Processed (Residue) Gas	Other Roy Vals	87.01
+2005	KS	Haskell	20081	Oil & Gas		Other Roy Vals	15418.32
+2005	KS	Haskell	20081	Gas (mcf)	Fuel Gas	Royalties	121.1
+2005	KS	Haskell	20081	Gas (mcf)	Processed (Residue) Gas	Royalties	9099.44
+2005	KS	Haskell	20081	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	373752.2
+2005	KS	Haskell	20081	NGL (gal)	Gas Plant Products	Royalties	1840.93
+2005	KS	Haskell	20081	Oil (bbl)	Oil	Royalties	106789.35
+2005	KS	Kearny	20093	Oil & Gas		Other Revenues	720.27
+2005	KS	Kearny	20093	Oil & Gas		Other Roy Vals	101015.27
+2005	KS	Kearny	20093	Oil & Gas		Rents	4404
+2005	KS	Kearny	20093	Gas (mcf)	Processed (Residue) Gas	Royalties	641502.7
+2005	KS	Kearny	20093	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	1260054.4
+2005	KS	Kearny	20093	NGL (gal)	Gas Plant Products	Royalties	194557.5
+2005	KS	Kearny	20093	Oil (bbl)	Oil	Royalties	25268.94
+2005	KS	Lane	20101	Oil & Gas		Rents	480
+2005	KS	Lane	20101	Oil (bbl)	Oil	Royalties	13768.28
+2005	KS	Meade	20119	Oil & Gas		Other Roy Vals	330
+2005	KS	Meade	20119	Oil & Gas		Rents	1182.45
+2005	KS	Meade	20119	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	11089.22
+2005	KS	Morton	20129	Oil & Gas		Other Revenues	32686.91
+2005	KS	Morton	20129	Oil & Gas		Other Roy Vals	-233011.65
+2005	KS	Morton	20129	Oil & Gas		Rents	7310
+2005	KS	Morton	20129	Gas (mcf)	Processed (Residue) Gas	Royalties	287784.44
+2005	KS	Morton	20129	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	2594478.92
+2005	KS	Morton	20129	NGL (gal)	Gas Plant Products	Royalties	129224.97
+2005	KS	Morton	20129	Oil (bbl)	Condensate	Royalties	2322.92
+2005	KS	Morton	20129	Oil (bbl)	Oil	Royalties	802503.27
+2005	KS	Seward	20175	Oil & Gas		Other Revenues	-155.98
+2005	KS	Seward	20175	Oil & Gas		Other Roy Vals	-7264.03
+2005	KS	Seward	20175	Oil & Gas		Rents	356
+2005	KS	Seward	20175	Gas (mcf)	Processed (Residue) Gas	Royalties	13130.93
+2005	KS	Seward	20175	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	90290.42
+2005	KS	Seward	20175	NGL (gal)	Gas Plant Products	Royalties	3400.1
+2005	KS	Seward	20175	Oil (bbl)	Condensate	Royalties	137.72
+2005	KS	Seward	20175	Oil (bbl)	Oil	Royalties	1245.54
+2005	KS	Stanton	20187	Oil & Gas		Other Roy Vals	958.35
+2005	KS	Stanton	20187	Gas (mcf)	Processed (Residue) Gas	Royalties	16274.58
+2005	KS	Stanton	20187	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	193.76
+2005	KS	Stanton	20187	NGL (gal)	Gas Plant Products	Royalties	7285.22
+2005	KS	Stevens	20189	Oil & Gas		Other Revenues	85.69
+2005	KS	Stevens	20189	Oil & Gas		Other Roy Vals	-23418.56
+2005	KS	Stevens	20189	Oil & Gas		Rents	882
+2005	KS	Stevens	20189	Gas (mcf)	Processed (Residue) Gas	Royalties	34656.34
+2005	KS	Stevens	20189	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	260694.48
+2005	KS	Stevens	20189	NGL (gal)	Gas Plant Products	Royalties	7413.48
+2005	KS	Trego	20195	Oil & Gas		Bonus	11200
+2005	KS	Trego	20195	Oil & Gas		Rents	1680
+2005	KS	Trego	20195	Oil (bbl)	Oil	Royalties	10320.82
+2006	KS	Cheyenne	20023	Oil & Gas		Rents	3290
+2006	KS	Clark	20025	Oil & Gas		Rents	9.19
+2006	KS	Comanche	20033	Oil & Gas		Rents	160
+2006	KS	Comanche	20033	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	5119.65
+2006	KS	Ellsworth	20053	Oil & Gas		Rents	3405
+2006	KS	Ellsworth	20053	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	9620.21
+2006	KS	Finney	20055	Oil & Gas		Other Revenues	136.81
+2006	KS	Finney	20055	Gas (mcf)	Processed (Residue) Gas	Other Roy Vals	147.81
+2006	KS	Finney	20055	Gas (mcf)	Unprocessed (Wet) Gas	Other Roy Vals	36.25
+2006	KS	Finney	20055	Oil & Gas		Other Roy Vals	3654.08
+2006	KS	Finney	20055	Oil & Gas		Rents	7265.7
+2006	KS	Finney	20055	Gas (mcf)	Fuel Gas	Royalties	264.81
+2006	KS	Finney	20055	Gas (mcf)	Processed (Residue) Gas	Royalties	134445.84
+2006	KS	Finney	20055	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	856278.01
+2006	KS	Finney	20055	NGL (gal)	Gas Plant Products	Royalties	35365.89
+2006	KS	Finney	20055	Oil (bbl)	Oil	Royalties	211207.51
+2006	KS	Gove	20063	Oil (bbl)	Oil	Royalties	13601.23
+2006	KS	Grant	20067	Oil & Gas		Other Revenues	29.12
+2006	KS	Grant	20067	Oil & Gas		Other Roy Vals	-203.5
+2006	KS	Grant	20067	Gas (mcf)	Processed (Residue) Gas	Royalties	14070.48
+2006	KS	Grant	20067	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	19886.05
+2006	KS	Grant	20067	NGL (gal)	Gas Plant Products	Royalties	6228
+2006	KS	Greeley	20071	Oil & Gas		Rents	1226.5
+2006	KS	Hamilton	20075	Oil & Gas		Other Roy Vals	112
+2006	KS	Hamilton	20075	Oil & Gas		Rents	2889
+2006	KS	Hamilton	20075	Gas (mcf)	Processed (Residue) Gas	Royalties	909.9
+2006	KS	Hamilton	20075	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	11978.08
+2006	KS	Hamilton	20075	NGL (gal)	Gas Plant Products	Royalties	352.53
+2006	KS	Haskell	20081	Gas (mcf)	Processed (Residue) Gas	Other Roy Vals	32.77
+2006	KS	Haskell	20081	Oil & Gas		Other Roy Vals	37.95
+2006	KS	Haskell	20081	Oil & Gas		Rents	1316.5
+2006	KS	Haskell	20081	Gas (mcf)	Processed (Residue) Gas	Royalties	12836.59
+2006	KS	Haskell	20081	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	337165.29
+2006	KS	Haskell	20081	NGL (gal)	Gas Plant Products	Royalties	2861.7
+2006	KS	Haskell	20081	Oil (bbl)	Oil	Royalties	120010.03
+2006	KS	Kearny	20093	Oil & Gas		Other Revenues	1226.92
+2006	KS	Kearny	20093	Oil & Gas		Other Roy Vals	-15011.63
+2006	KS	Kearny	20093	Oil & Gas		Rents	3527.7
+2006	KS	Kearny	20093	Gas (mcf)	Processed (Residue) Gas	Royalties	520730.21
+2006	KS	Kearny	20093	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	1224980.24
+2006	KS	Kearny	20093	NGL (gal)	Gas Plant Products	Royalties	210337.81
+2006	KS	Kearny	20093	Oil (bbl)	Oil	Royalties	29007.53
+2006	KS	Lane	20101	Oil & Gas		Rents	480
+2006	KS	Lane	20101	Oil (bbl)	Oil	Royalties	34677.42
+2006	KS	Meade	20119	Oil & Gas		Rents	882.81
+2006	KS	Meade	20119	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	8387.28
+2006	KS	Morton	20129	Oil & Gas		Bonus	56400
+2006	KS	Morton	20129	Oil & Gas		Other Revenues	13223.75
+2006	KS	Morton	20129	Oil & Gas		Other Roy Vals	9911.27
+2006	KS	Morton	20129	Oil & Gas		Rents	7076.84
+2006	KS	Morton	20129	Gas (mcf)	Processed (Residue) Gas	Royalties	344978.45
+2006	KS	Morton	20129	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	1043428.18
+2006	KS	Morton	20129	NGL (gal)	Gas Plant Products	Royalties	176540.68
+2006	KS	Morton	20129	Oil (bbl)	Condensate	Royalties	695.85
+2006	KS	Morton	20129	Oil (bbl)	Oil	Royalties	3513674.37
+2006	KS	Russell	20167	Oil & Gas		Bonus	320
+2006	KS	Russell	20167	Oil & Gas		Rents	240
+2006	KS	Seward	20175	Oil & Gas		Other Revenues	10.27
+2006	KS	Seward	20175	Oil & Gas		Other Roy Vals	79.29
+2006	KS	Seward	20175	Oil & Gas		Rents	356
+2006	KS	Seward	20175	Gas (mcf)	Processed (Residue) Gas	Royalties	24453.48
+2006	KS	Seward	20175	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	84585.31
+2006	KS	Seward	20175	NGL (gal)	Gas Plant Products	Royalties	7253.65
+2006	KS	Seward	20175	Oil (bbl)	Drip or Scrubber Condensate	Royalties	-24.48
+2006	KS	Seward	20175	Oil (bbl)	Oil	Royalties	1031.29
+2006	KS	Seward	20175	Other Products	Helium	Royalties	-57.39
+2006	KS	Stanton	20187	Oil & Gas		Other Roy Vals	-825.23
+2006	KS	Stanton	20187	Gas (mcf)	Processed (Residue) Gas	Royalties	6554.5
+2006	KS	Stanton	20187	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	187.7
+2006	KS	Stanton	20187	NGL (gal)	Gas Plant Products	Royalties	5710.85
+2006	KS	Stevens	20189	Oil & Gas		Other Revenues	36.54
+2006	KS	Stevens	20189	Oil & Gas		Other Roy Vals	1433.71
+2006	KS	Stevens	20189	Oil & Gas		Rents	922.16
+2006	KS	Stevens	20189	Gas (mcf)	Processed (Residue) Gas	Royalties	22556.15
+2006	KS	Stevens	20189	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	251978.27
+2006	KS	Stevens	20189	NGL (gal)	Gas Plant Products	Royalties	11428.2
+2006	KS	Trego	20195	Oil & Gas		Rents	840
+2006	KS	Trego	20195	Oil (bbl)	Oil	Royalties	16379.88
+2007	KS	Barber	20007	Oil & Gas		Bonus	280
+2007	KS	Barber	20007	Oil & Gas		Rents	60
+2007	KS	Cheyenne	20023	Oil & Gas		Rents	3290
+2007	KS	Clark	20025	Oil & Gas		Rents	36.78
+2007	KS	Comanche	20033	Oil & Gas		Bonus	520
+2007	KS	Comanche	20033	Oil & Gas		Other Roy Vals	81.61
+2007	KS	Comanche	20033	Oil & Gas		Rents	220
+2007	KS	Comanche	20033	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	4934.66
+2007	KS	Comanche	20033	Oil (bbl)	Oil	Royalties	54.3
+2007	KS	Ellsworth	20053	Oil & Gas		Rents	3405
+2007	KS	Ellsworth	20053	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	1206.15
+2007	KS	Finney	20055	Oil & Gas		Other Revenues	22.06
+2007	KS	Finney	20055	Gas (mcf)	Processed (Residue) Gas	Other Roy Vals	20.24
+2007	KS	Finney	20055	Gas (mcf)	Unprocessed (Wet) Gas	Other Roy Vals	5.38
+2007	KS	Finney	20055	Oil & Gas		Other Roy Vals	-31866.31
+2007	KS	Finney	20055	Oil & Gas		Rents	8065.7
+2007	KS	Finney	20055	Gas (mcf)	Fuel Gas	Royalties	209.88
+2007	KS	Finney	20055	Gas (mcf)	Processed (Residue) Gas	Royalties	77243.11
+2007	KS	Finney	20055	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	721124.26
+2007	KS	Finney	20055	NGL (gal)	Gas Plant Products	Royalties	57448.28
+2007	KS	Finney	20055	Oil (bbl)	Oil	Royalties	254246.75
+2007	KS	Gove	20063	Oil & Gas		Bonus	720
+2007	KS	Gove	20063	Oil & Gas		Rents	120
+2007	KS	Gove	20063	Oil (bbl)	Oil	Royalties	14680.83
+2007	KS	Grant	20067	Oil & Gas		Other Revenues	9.15
+2007	KS	Grant	20067	Oil & Gas		Other Roy Vals	495.24
+2007	KS	Grant	20067	Gas (mcf)	Processed (Residue) Gas	Royalties	10966.93
+2007	KS	Grant	20067	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	21113.67
+2007	KS	Grant	20067	NGL (gal)	Gas Plant Products	Royalties	5372.06
+2007	KS	Greeley	20071	Oil & Gas		Rents	1042
+2007	KS	Hamilton	20075	Oil & Gas		Other Roy Vals	85.22
+2007	KS	Hamilton	20075	Oil & Gas		Rents	3464
+2007	KS	Hamilton	20075	Gas (mcf)	Processed (Residue) Gas	Royalties	271.69
+2007	KS	Hamilton	20075	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	15402.6
+2007	KS	Hamilton	20075	NGL (gal)	Gas Plant Products	Royalties	136.8
+2007	KS	Haskell	20081	Gas (mcf)	Processed (Residue) Gas	Other Roy Vals	3.91
+2007	KS	Haskell	20081	Oil & Gas		Other Roy Vals	-13174.16
+2007	KS	Haskell	20081	Oil & Gas		Rents	1157.5
+2007	KS	Haskell	20081	Gas (mcf)	Processed (Residue) Gas	Royalties	12352.05
+2007	KS	Haskell	20081	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	277738.88
+2007	KS	Haskell	20081	NGL (gal)	Gas Plant Products	Royalties	6418.22
+2007	KS	Haskell	20081	Oil (bbl)	Oil	Royalties	105595.53
+2007	KS	Kearny	20093	Oil & Gas		Other Revenues	-220.24
+2007	KS	Kearny	20093	Oil & Gas		Other Roy Vals	-46313.81
+2007	KS	Kearny	20093	Oil & Gas		Rents	10873.9
+2007	KS	Kearny	20093	Gas (mcf)	Processed (Residue) Gas	Royalties	343716.65
+2007	KS	Kearny	20093	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	1047717.33
+2007	KS	Kearny	20093	NGL (gal)	Gas Plant Products	Royalties	236079.61
+2007	KS	Kearny	20093	Oil (bbl)	Oil	Royalties	26784.56
+2007	KS	Lane	20101	Oil & Gas		Rents	540
+2007	KS	Lane	20101	Oil (bbl)	Oil	Royalties	42471.51
+2007	KS	Meade	20119	Oil & Gas		Bonus	360
+2007	KS	Meade	20119	Oil & Gas		Other Roy Vals	5.75
+2007	KS	Meade	20119	Oil & Gas		Rents	1471.22
+2007	KS	Meade	20119	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	6554.63
+2007	KS	Morton	20129	Oil & Gas		Bonus	4946
+2007	KS	Morton	20129	Oil & Gas		Other Revenues	-9783.68
+2007	KS	Morton	20129	Oil & Gas		Other Roy Vals	175604.84
+2007	KS	Morton	20129	Oil & Gas		Rents	7640.84
+2007	KS	Morton	20129	Gas (mcf)	Processed (Residue) Gas	Royalties	288865.4
+2007	KS	Morton	20129	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	1826065.37
+2007	KS	Morton	20129	NGL (gal)	Gas Plant Products	Royalties	161008.72
+2007	KS	Morton	20129	Oil (bbl)	Condensate	Royalties	2761.35
+2007	KS	Morton	20129	Oil (bbl)	Oil	Royalties	2049248.41
+2007	KS	Russell	20167	Oil & Gas		Rents	240
+2007	KS	Seward	20175	Oil & Gas		Other Revenues	11.93
+2007	KS	Seward	20175	Oil & Gas		Other Roy Vals	844.95
+2007	KS	Seward	20175	Oil & Gas		Rents	356
+2007	KS	Seward	20175	Gas (mcf)	Processed (Residue) Gas	Royalties	35639.99
+2007	KS	Seward	20175	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	70495.79
+2007	KS	Seward	20175	NGL (gal)	Gas Plant Products	Royalties	12277.64
+2007	KS	Seward	20175	Oil (bbl)	Condensate	Royalties	862.47
+2007	KS	Seward	20175	Oil (bbl)	Oil	Royalties	1346.91
+2007	KS	Stanton	20187	Oil & Gas		Other Roy Vals	371.16
+2007	KS	Stanton	20187	Gas (mcf)	Processed (Residue) Gas	Royalties	9536.87
+2007	KS	Stanton	20187	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	165.82
+2007	KS	Stanton	20187	NGL (gal)	Gas Plant Products	Royalties	6196.39
+2007	KS	Stevens	20189	Oil & Gas		Other Revenues	12.19
+2007	KS	Stevens	20189	Oil & Gas		Other Roy Vals	8551.85
+2007	KS	Stevens	20189	Oil & Gas		Rents	480.16
+2007	KS	Stevens	20189	Gas (mcf)	Processed (Residue) Gas	Royalties	25169.6
+2007	KS	Stevens	20189	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	321312.87
+2007	KS	Stevens	20189	NGL (gal)	Gas Plant Products	Royalties	10798.29
+2007	KS	Trego	20195	Oil & Gas		Rents	840
+2007	KS	Trego	20195	Oil (bbl)	Oil	Royalties	17175
+2008	KS	Barber	20007	Oil & Gas		Rents	60
+2008	KS	Cheyenne	20023	Oil & Gas		Rents	3610
+2008	KS	Clark	20025	Oil & Gas		Rents	36.78
+2008	KS	Comanche	20033	Oil & Gas		Other Roy Vals	-257.17
+2008	KS	Comanche	20033	Oil & Gas		Rents	220
+2008	KS	Comanche	20033	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	5914.7
+2008	KS	Ellsworth	20053	Oil & Gas		Rents	4460
+2008	KS	Ellsworth	20053	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	6755.48
+2008	KS	Finney	20055	Oil & Gas		Other Revenues	-146.22
+2008	KS	Finney	20055	Gas (mcf)	Processed (Residue) Gas	Other Roy Vals	-16.03
+2008	KS	Finney	20055	Gas (mcf)	Unprocessed (Wet) Gas	Other Roy Vals	-6.59
+2008	KS	Finney	20055	Oil & Gas		Other Roy Vals	77919.68
+2008	KS	Finney	20055	Oil & Gas		Rents	7105.7
+2008	KS	Finney	20055	Gas (mcf)	Fuel Gas	Royalties	413.13
+2008	KS	Finney	20055	Gas (mcf)	Processed (Residue) Gas	Royalties	178760.55
+2008	KS	Finney	20055	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	924753.76
+2008	KS	Finney	20055	NGL (gal)	Gas Plant Products	Royalties	95798.29
+2008	KS	Finney	20055	Oil (bbl)	Oil	Royalties	841916.38
+2008	KS	Gove	20063	Oil & Gas		Bonus	240
+2008	KS	Gove	20063	Oil & Gas		Rents	300
+2008	KS	Gove	20063	Oil (bbl)	Oil	Royalties	19837.68
+2008	KS	Grant	20067	Oil & Gas		Other Revenues	-25.93
+2008	KS	Grant	20067	Oil & Gas		Other Roy Vals	96.07
+2008	KS	Grant	20067	Gas (mcf)	Processed (Residue) Gas	Royalties	10287.79
+2008	KS	Grant	20067	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	29226.17
+2008	KS	Grant	20067	NGL (gal)	Gas Plant Products	Royalties	7567.13
+2008	KS	Greeley	20071	Oil & Gas		Rents	320
+2008	KS	Hamilton	20075	Oil & Gas		Bonus	612
+2008	KS	Hamilton	20075	Oil & Gas		Other Roy Vals	154.43
+2008	KS	Hamilton	20075	Oil & Gas		Rents	4563
+2008	KS	Hamilton	20075	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	19644.87
+2008	KS	Haskell	20081	Gas (mcf)	Processed (Residue) Gas	Other Roy Vals	-3.25
+2008	KS	Haskell	20081	Oil & Gas		Other Roy Vals	25973.26
+2008	KS	Haskell	20081	Oil & Gas		Rents	1157.5
+2008	KS	Haskell	20081	Gas (mcf)	Processed (Residue) Gas	Royalties	26495.48
+2008	KS	Haskell	20081	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	356126.33
+2008	KS	Haskell	20081	NGL (gal)	Gas Plant Products	Royalties	15967.78
+2008	KS	Haskell	20081	Oil (bbl)	Oil	Royalties	290830.9
+2008	KS	Kearny	20093	Oil & Gas		Other Revenues	-231.93
+2008	KS	Kearny	20093	Oil & Gas		Other Roy Vals	46847.52
+2008	KS	Kearny	20093	Oil & Gas		Rents	12381.3
+2008	KS	Kearny	20093	Gas (mcf)	Fuel Gas	Royalties	1793.62
+2008	KS	Kearny	20093	Gas (mcf)	Processed (Residue) Gas	Royalties	525883.34
+2008	KS	Kearny	20093	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	1399680
+2008	KS	Kearny	20093	NGL (gal)	Gas Plant Products	Royalties	316797.23
+2008	KS	Kearny	20093	Oil (bbl)	Oil	Royalties	60560.64
+2008	KS	Labette	20099	Oil & Gas		Bonus	11334
+2008	KS	Labette	20099	Oil & Gas		Rents	5667
+2008	KS	Lane	20101	Oil & Gas		Rents	540
+2008	KS	Lane	20101	Oil (bbl)	Oil	Royalties	40396.29
+2008	KS	Marshall	20117	Oil & Gas		Bonus	800
+2008	KS	Marshall	20117	Oil & Gas		Rents	60
+2008	KS	Meade	20119	Oil & Gas		Other Roy Vals	-1.75
+2008	KS	Meade	20119	Oil & Gas		Rents	711.22
+2008	KS	Meade	20119	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	11586.24
+2008	KS	Morton	20129	Oil & Gas		Other Revenues	13699.84
+2008	KS	Morton	20129	Oil & Gas		Other Roy Vals	155097.86
+2008	KS	Morton	20129	Oil & Gas		Rents	5803.84
+2008	KS	Morton	20129	Gas (mcf)	Processed (Residue) Gas	Royalties	501417.36
+2008	KS	Morton	20129	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	1995182.46
+2008	KS	Morton	20129	NGL (gal)	Gas Plant Products	Royalties	299603.91
+2008	KS	Morton	20129	Oil (bbl)	Condensate	Royalties	916.39
+2008	KS	Morton	20129	Oil (bbl)	Oil	Royalties	3183398.2
+2008	KS	Russell	20167	Oil & Gas		Rents	240
+2008	KS	Seward	20175	Oil & Gas		Other Revenues	53.39
+2008	KS	Seward	20175	Oil & Gas		Other Roy Vals	479.62
+2008	KS	Seward	20175	Oil & Gas		Rents	120
+2008	KS	Seward	20175	Gas (mcf)	Processed (Residue) Gas	Royalties	49781.87
+2008	KS	Seward	20175	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	57554.79
+2008	KS	Seward	20175	NGL (gal)	Gas Plant Products	Royalties	19910.1
+2008	KS	Seward	20175	Oil (bbl)	Condensate	Royalties	1488.18
+2008	KS	Seward	20175	Oil (bbl)	Oil	Royalties	1664.16
+2008	KS	Stanton	20187	Oil & Gas		Other Roy Vals	204.38
+2008	KS	Stanton	20187	Gas (mcf)	Processed (Residue) Gas	Royalties	13468.01
+2008	KS	Stanton	20187	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	4678.17
+2008	KS	Stanton	20187	NGL (gal)	Gas Plant Products	Royalties	6037.77
+2008	KS	Stevens	20189	Oil & Gas		Other Revenues	131.85
+2008	KS	Stevens	20189	Oil & Gas		Other Roy Vals	827.69
+2008	KS	Stevens	20189	Oil & Gas		Rents	1004.16
+2008	KS	Stevens	20189	Gas (mcf)	Processed (Residue) Gas	Royalties	27169.22
+2008	KS	Stevens	20189	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	288525.69
+2008	KS	Stevens	20189	NGL (gal)	Gas Plant Products	Royalties	10663.02
+2008	KS	Stevens	20189	Oil (bbl)	Condensate	Royalties	315.62
+2008	KS	Trego	20195	Oil (bbl)	Oil	Royalties	25923.18
+2008	KS	Wilson	20205	Oil & Gas		Bonus	306.46
+2008	KS	Wilson	20205	Oil & Gas		Rents	91.94
+2008	KS	Woodson	20207	Oil & Gas		Bonus	6903.54
+2008	KS	Woodson	20207	Oil & Gas		Rents	2071.06
+2009	KS	Barber	20007	Oil & Gas		Rents	120
+2009	KS	Cheyenne	20023	Oil & Gas		Bonus	5084
+2009	KS	Cheyenne	20023	Oil & Gas		Rents	15902
+2009	KS	Comanche	20033	Oil & Gas		Bonus	2200
+2009	KS	Comanche	20033	Oil & Gas		Other Roy Vals	-24.21
+2009	KS	Comanche	20033	Oil & Gas		Rents	780
+2009	KS	Comanche	20033	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	1984.6
+2009	KS	Edwards	20047	Oil & Gas		Rents	36
+2009	KS	Ellsworth	20053	Oil & Gas		Rents	4540
+2009	KS	Ellsworth	20053	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	3929.79
+2009	KS	Finney	20055	Oil & Gas		Other Revenues	295.78
+2009	KS	Finney	20055	Gas (mcf)	Processed (Residue) Gas	Other Roy Vals	-37.27
+2009	KS	Finney	20055	Oil & Gas		Other Roy Vals	-77510.32
+2009	KS	Finney	20055	Oil & Gas		Rents	8385.7
+2009	KS	Finney	20055	Gas (mcf)	Fuel Gas	Royalties	114.37
+2009	KS	Finney	20055	Gas (mcf)	Processed (Residue) Gas	Royalties	50466.16
+2009	KS	Finney	20055	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	356198.26
+2009	KS	Finney	20055	NGL (gal)	Gas Plant Products	Royalties	83299.76
+2009	KS	Finney	20055	Oil (bbl)	Oil	Royalties	281125.27
+2009	KS	Geary	20061	Oil & Gas		Bonus	240
+2009	KS	Geary	20061	Oil & Gas		Rents	180
+2009	KS	Gove	20063	Oil & Gas		Rents	300
+2009	KS	Gove	20063	Oil (bbl)	Oil	Royalties	9784.46
+2009	KS	Grant	20067	Oil & Gas		Other Revenues	-21.27
+2009	KS	Grant	20067	Oil & Gas		Other Roy Vals	-3.9
+2009	KS	Grant	20067	Gas (mcf)	Processed (Residue) Gas	Royalties	6480.61
+2009	KS	Grant	20067	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	7708.36
+2009	KS	Grant	20067	NGL (gal)	Gas Plant Products	Royalties	4324.89
+2009	KS	Greeley	20071	Oil & Gas		Rents	320
+2009	KS	Hamilton	20075	Oil & Gas		Other Revenues	46.37
+2009	KS	Hamilton	20075	Oil & Gas		Other Roy Vals	-152.91
+2009	KS	Hamilton	20075	Oil & Gas		Rents	7003
+2009	KS	Hamilton	20075	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	9431.33
+2009	KS	Haskell	20081	Oil & Gas		Other Roy Vals	-25316.35
+2009	KS	Haskell	20081	Oil & Gas		Rents	1157.5
+2009	KS	Haskell	20081	Gas (mcf)	Processed (Residue) Gas	Royalties	9961.22
+2009	KS	Haskell	20081	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	127690.08
+2009	KS	Haskell	20081	NGL (gal)	Gas Plant Products	Royalties	7966.67
+2009	KS	Haskell	20081	Oil (bbl)	Oil	Royalties	101246.92
+2009	KS	Kearny	20093	Oil & Gas		Other Revenues	337.96
+2009	KS	Kearny	20093	Oil & Gas		Other Roy Vals	-78254.85
+2009	KS	Kearny	20093	Oil & Gas		Rents	12586.3
+2009	KS	Kearny	20093	Gas (mcf)	Fuel Gas	Royalties	2345.1
+2009	KS	Kearny	20093	Gas (mcf)	Processed (Residue) Gas	Royalties	212096.1
+2009	KS	Kearny	20093	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	552410.19
+2009	KS	Kearny	20093	NGL (gal)	Gas Plant Products	Royalties	202710.1
+2009	KS	Kearny	20093	Oil (bbl)	Oil	Royalties	24585.1
+2009	KS	Labette	20099	Oil & Gas		Rents	2833.5
+2009	KS	Lane	20101	Oil & Gas		Rents	640
+2009	KS	Lane	20101	Oil (bbl)	Oil	Royalties	40763.17
+2009	KS	Logan	20109	Oil & Gas		Bonus	800
+2009	KS	Logan	20109	Oil & Gas		Rents	60
+2009	KS	Meade	20119	Oil & Gas		Other Roy Vals	-402.17
+2009	KS	Meade	20119	Oil & Gas		Rents	1080
+2009	KS	Meade	20119	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	4259.06
+2009	KS	Meade	20119	Oil (bbl)	Condensate	Royalties	172.14
+2009	KS	Morton	20129	Oil & Gas		Other Revenues	9595.45
+2009	KS	Morton	20129	Oil & Gas		Other Roy Vals	-246007.23
+2009	KS	Morton	20129	Oil & Gas		Rents	5843.84
+2009	KS	Morton	20129	Gas (mcf)	Processed (Residue) Gas	Royalties	481864.26
+2009	KS	Morton	20129	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	801819.29
+2009	KS	Morton	20129	NGL (gal)	Gas Plant Products	Royalties	147052.15
+2009	KS	Morton	20129	Oil (bbl)	Condensate	Royalties	1723.79
+2009	KS	Morton	20129	Oil (bbl)	Oil	Royalties	1220188.19
+2009	KS	Russell	20167	Oil & Gas		Rents	240
+2009	KS	Seward	20175	Oil & Gas		Bonus	950
+2009	KS	Seward	20175	Oil & Gas		Other Revenues	190.5
+2009	KS	Seward	20175	Oil & Gas		Other Roy Vals	51.19
+2009	KS	Seward	20175	Oil & Gas		Rents	217
+2009	KS	Seward	20175	Gas (mcf)	Processed (Residue) Gas	Royalties	16238.58
+2009	KS	Seward	20175	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	19743.09
+2009	KS	Seward	20175	NGL (gal)	Gas Plant Products	Royalties	5966.85
+2009	KS	Seward	20175	Oil (bbl)	Condensate	Royalties	479.99
+2009	KS	Seward	20175	Oil (bbl)	Oil	Royalties	1197.76
+2009	KS	Seward	20175	Other Products	Helium	Royalties	20.06
+2009	KS	Sherman	20181	Oil & Gas		Bonus	640
+2009	KS	Sherman	20181	Oil & Gas		Rents	480
+2009	KS	Stanton	20187	Oil & Gas		Other Roy Vals	-1710.73
+2009	KS	Stanton	20187	Gas (mcf)	Processed (Residue) Gas	Royalties	5000.01
+2009	KS	Stanton	20187	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	372.14
+2009	KS	Stanton	20187	NGL (gal)	Gas Plant Products	Royalties	8219.93
+2009	KS	Stevens	20189	Oil & Gas		Other Revenues	614.65
+2009	KS	Stevens	20189	Oil & Gas		Other Roy Vals	-7891.27
+2009	KS	Stevens	20189	Oil & Gas		Rents	1282.16
+2009	KS	Stevens	20189	Gas (mcf)	Processed (Residue) Gas	Royalties	13554.52
+2009	KS	Stevens	20189	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	112264.07
+2009	KS	Stevens	20189	NGL (gal)	Gas Plant Products	Royalties	5901.89
+2009	KS	Trego	20195	Oil (bbl)	Oil	Royalties	13548.45
+2009	KS	Wilson	20205	Oil & Gas		Rents	45.97
+2009	KS	Woodson	20207	Oil & Gas		Rents	1035.53
+2010	KS	Cheyenne	20023	Oil & Gas		Bonus	-1120
+2010	KS	Cheyenne	20023	Oil & Gas		Rents	17932
+2010	KS	Comanche	20033	Oil & Gas		Other Roy Vals	-11.73
+2010	KS	Comanche	20033	Oil & Gas		Rents	660
+2010	KS	Comanche	20033	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	3025.91
+2010	KS	Edwards	20047	Oil & Gas		Rents	18
+2010	KS	Ellsworth	20053	Oil & Gas		Rents	4540
+2010	KS	Ellsworth	20053	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	4299.42
+2010	KS	Finney	20055	Oil & Gas		Other Revenues	-54.37
+2010	KS	Finney	20055	Oil & Gas		Other Roy Vals	49462.92
+2010	KS	Finney	20055	Oil & Gas		Rents	7745.7
+2010	KS	Finney	20055	Gas (mcf)	Fuel Gas	Royalties	244.53
+2010	KS	Finney	20055	Gas (mcf)	Processed (Residue) Gas	Royalties	91392.6
+2010	KS	Finney	20055	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	434613.68
+2010	KS	Finney	20055	NGL (gal)	Gas Plant Products	Royalties	58243.75
+2010	KS	Finney	20055	Oil (bbl)	Oil	Royalties	490453.08
+2010	KS	Gove	20063	Oil & Gas		Bonus	2400
+2010	KS	Gove	20063	Oil & Gas		Rents	540
+2010	KS	Gove	20063	Oil (bbl)	Oil	Royalties	12562.88
+2010	KS	Grant	20067	Oil & Gas		Other Revenues	-9.28
+2010	KS	Grant	20067	Oil & Gas		Other Roy Vals	3576.47
+2010	KS	Grant	20067	Gas (mcf)	Processed (Residue) Gas	Royalties	12178.91
+2010	KS	Grant	20067	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	4114.23
+2010	KS	Grant	20067	NGL (gal)	Gas Plant Products	Royalties	8286.4
+2010	KS	Greeley	20071	Oil & Gas		Rents	320
+2010	KS	Hamilton	20075	Oil & Gas		Other Revenues	160
+2010	KS	Hamilton	20075	Oil & Gas		Other Roy Vals	-922.87
+2010	KS	Hamilton	20075	Oil & Gas		Rents	9867
+2010	KS	Hamilton	20075	Gas (mcf)	Processed (Residue) Gas	Royalties	245.73
+2010	KS	Hamilton	20075	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	9510.89
+2010	KS	Haskell	20081	Oil & Gas		Other Roy Vals	4178.43
+2010	KS	Haskell	20081	Oil & Gas		Rents	1157.5
+2010	KS	Haskell	20081	Gas (mcf)	Processed (Residue) Gas	Royalties	14448.52
+2010	KS	Haskell	20081	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	170062.76
+2010	KS	Haskell	20081	NGL (gal)	Gas Plant Products	Royalties	11846.5
+2010	KS	Haskell	20081	Oil (bbl)	Oil	Royalties	185240.38
+2010	KS	Kearny	20093	Oil & Gas		Other Revenues	-146.94
+2010	KS	Kearny	20093	Oil & Gas		Other Roy Vals	83543.07
+2010	KS	Kearny	20093	Oil & Gas		Rents	16931.3
+2010	KS	Kearny	20093	Gas (mcf)	Fuel Gas	Royalties	794.17
+2010	KS	Kearny	20093	Gas (mcf)	Processed (Residue) Gas	Royalties	257147.66
+2010	KS	Kearny	20093	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	648113.9
+2010	KS	Kearny	20093	NGL (gal)	Gas Plant Products	Royalties	207572.56
+2010	KS	Kearny	20093	Oil (bbl)	Oil	Royalties	35741.33
+2010	KS	Labette	20099	Oil & Gas		Rents	2833.5
+2010	KS	Lane	20101	Oil & Gas		Other Roy Vals	2646.8
+2010	KS	Lane	20101	Oil & Gas		Rents	1840
+2010	KS	Lane	20101	Oil (bbl)	Oil	Royalties	34572.09
+2010	KS	Logan	20109	Oil & Gas		Rents	60
+2010	KS	Meade	20119	Oil & Gas		Bonus	400
+2010	KS	Meade	20119	Oil & Gas		Other Roy Vals	31.4
+2010	KS	Meade	20119	Oil & Gas		Rents	60
+2010	KS	Meade	20119	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	3837.01
+2010	KS	Morton	20129	Oil & Gas		Other Revenues	8475.26
+2010	KS	Morton	20129	Oil & Gas		Other Roy Vals	64847.21
+2010	KS	Morton	20129	Oil & Gas		Rents	3363.84
+2010	KS	Morton	20129	Gas (mcf)	Processed (Residue) Gas	Royalties	601023.65
+2010	KS	Morton	20129	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	1018577.59
+2010	KS	Morton	20129	NGL (gal)	Gas Plant Products	Royalties	339679.07
+2010	KS	Morton	20129	Oil (bbl)	Condensate	Royalties	2153.4
+2010	KS	Morton	20129	Oil (bbl)	Oil	Royalties	1438956.33
+2010	KS	Russell	20167	Oil & Gas		Rents	240
+2010	KS	Seward	20175	Oil & Gas		Bonus	160
+2010	KS	Seward	20175	Oil & Gas		Other Revenues	-0.82
+2010	KS	Seward	20175	Oil & Gas		Other Roy Vals	81.19
+2010	KS	Seward	20175	Oil & Gas		Rents	937
+2010	KS	Seward	20175	Gas (mcf)	Processed (Residue) Gas	Royalties	18009.99
+2010	KS	Seward	20175	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	23202.6
+2010	KS	Seward	20175	NGL (gal)	Gas Plant Products	Royalties	8861.5
+2010	KS	Seward	20175	Oil (bbl)	Condensate	Royalties	285.8
+2010	KS	Seward	20175	Oil (bbl)	Oil	Royalties	1283.14
+2010	KS	Sherman	20181	Oil & Gas		Rents	480
+2010	KS	Stanton	20187	Oil & Gas		Other Roy Vals	1132.49
+2010	KS	Stanton	20187	Gas (mcf)	Processed (Residue) Gas	Royalties	7107.05
+2010	KS	Stanton	20187	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	95.25
+2010	KS	Stanton	20187	NGL (gal)	Gas Plant Products	Royalties	6216.4
+2010	KS	Stevens	20189	Oil & Gas		Other Revenues	-19.41
+2010	KS	Stevens	20189	Oil & Gas		Other Roy Vals	15474.82
+2010	KS	Stevens	20189	Oil & Gas		Rents	922.16
+2010	KS	Stevens	20189	Gas (mcf)	Processed (Residue) Gas	Royalties	39635.72
+2010	KS	Stevens	20189	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	102905.97
+2010	KS	Stevens	20189	NGL (gal)	Gas Plant Products	Royalties	39902.3
+2010	KS	Trego	20195	Oil (bbl)	Oil	Royalties	14602.16
+2010	KS	Wilson	20205	Oil & Gas		Rents	45.97
+2010	KS	Woodson	20207	Oil & Gas		Rents	1035.53
+2011	KS	Barber	20007	Oil & Gas		Rents	140
+2011	KS	Bourbon	20011	Oil & Gas		Bonus	240
+2011	KS	Bourbon	20011	Oil & Gas		Rents	120
+2011	KS	Cheyenne	20023	Oil & Gas		Rents	5742
+2011	KS	Comanche	20033	Oil & Gas		Other Roy Vals	65.59
+2011	KS	Comanche	20033	Oil & Gas		Rents	800
+2011	KS	Comanche	20033	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	2390
+2011	KS	Edwards	20047	Oil & Gas		Rents	18
+2011	KS	Ellsworth	20053	Oil & Gas		Rents	4540
+2011	KS	Ellsworth	20053	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	4385.31
+2011	KS	Finney	20055	Oil & Gas		Other Revenues	-34.95
+2011	KS	Finney	20055	Oil & Gas		Other Roy Vals	2439.21
+2011	KS	Finney	20055	Oil & Gas		Rents	6785.7
+2011	KS	Finney	20055	Gas (mcf)	Nitrogen	Royalties	39.32
+2011	KS	Finney	20055	Gas (mcf)	Processed (Residue) Gas	Royalties	81326.08
+2011	KS	Finney	20055	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	403299.48
+2011	KS	Finney	20055	NGL (gal)	Gas Plant Products	Royalties	57216.9
+2011	KS	Finney	20055	Oil (bbl)	Oil	Royalties	666927.11
+2011	KS	Gove	20063	Oil & Gas		Rents	540
+2011	KS	Gove	20063	Oil (bbl)	Oil	Royalties	19214.93
+2011	KS	Grant	20067	Oil & Gas		Other Revenues	-4.26
+2011	KS	Grant	20067	Oil & Gas		Other Roy Vals	727.05
+2011	KS	Grant	20067	Gas (mcf)	Processed (Residue) Gas	Royalties	10976.33
+2011	KS	Grant	20067	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	1789.59
+2011	KS	Grant	20067	NGL (gal)	Gas Plant Products	Royalties	10301.87
+2011	KS	Hamilton	20075	Oil & Gas		Other Revenues	160
+2011	KS	Hamilton	20075	Oil & Gas		Other Roy Vals	335.86
+2011	KS	Hamilton	20075	Oil & Gas		Rents	51
+2011	KS	Hamilton	20075	Gas (mcf)	Processed (Residue) Gas	Royalties	2439.73
+2011	KS	Hamilton	20075	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	5650.23
+2011	KS	Hamilton	20075	NGL (gal)	Gas Plant Products	Royalties	-30.03
+2011	KS	Haskell	20081	Oil & Gas		Other Roy Vals	36456.12
+2011	KS	Haskell	20081	Oil & Gas		Rents	1157.5
+2011	KS	Haskell	20081	Gas (mcf)	Nitrogen	Royalties	1.1
+2011	KS	Haskell	20081	Gas (mcf)	Processed (Residue) Gas	Royalties	10432.3
+2011	KS	Haskell	20081	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	172402.92
+2011	KS	Haskell	20081	NGL (gal)	Gas Plant Products	Royalties	9430.76
+2011	KS	Haskell	20081	Oil (bbl)	Oil	Royalties	482024.07
+2011	KS	Kearny	20093	Oil & Gas		Other Revenues	-31.75
+2011	KS	Kearny	20093	Oil & Gas		Other Roy Vals	7051.09
+2011	KS	Kearny	20093	Oil & Gas		Rents	14141.3
+2011	KS	Kearny	20093	Gas (mcf)	Fuel Gas	Royalties	737.35
+2011	KS	Kearny	20093	Gas (mcf)	Nitrogen	Royalties	75.26
+2011	KS	Kearny	20093	Gas (mcf)	Processed (Residue) Gas	Royalties	217425.41
+2011	KS	Kearny	20093	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	629294.26
+2011	KS	Kearny	20093	NGL (gal)	Gas Plant Products	Royalties	239856.58
+2011	KS	Kearny	20093	Oil (bbl)	Oil	Royalties	41452.83
+2011	KS	Labette	20099	Oil & Gas		Rents	2833.5
+2011	KS	Lane	20101	Oil & Gas		Other Roy Vals	661.29
+2011	KS	Lane	20101	Oil & Gas		Rents	240
+2011	KS	Lane	20101	Oil (bbl)	Oil	Royalties	37087.77
+2011	KS	Logan	20109	Oil & Gas		Rents	60
+2011	KS	Marion	20115	Oil & Gas		Bonus	2255
+2011	KS	Marion	20115	Oil & Gas		Rents	165
+2011	KS	Meade	20119	Oil & Gas		Other Roy Vals	-500.02
+2011	KS	Meade	20119	Oil & Gas		Rents	200
+2011	KS	Meade	20119	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	3643.09
+2011	KS	Morton	20129	Oil & Gas		Other Revenues	896.09
+2011	KS	Morton	20129	Oil & Gas		Other Roy Vals	98019.29
+2011	KS	Morton	20129	Oil & Gas		Rents	3802.84
+2011	KS	Morton	20129	Gas (mcf)	Nitrogen	Royalties	21.84
+2011	KS	Morton	20129	Gas (mcf)	Processed (Residue) Gas	Royalties	690124
+2011	KS	Morton	20129	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	185885.7
+2011	KS	Morton	20129	NGL (gal)	Gas Plant Products	Royalties	677259.78
+2011	KS	Morton	20129	Oil (bbl)	Condensate	Royalties	2300.21
+2011	KS	Morton	20129	Oil (bbl)	Oil	Royalties	2523417.21
+2011	KS	Morton	20129	Oil (bbl)	Other Liquid Hydrocarbons	Royalties	0.5
+2011	KS	Morton	20129	Other Products	Helium	Royalties	27.06
+2011	KS	Russell	20167	Oil & Gas		Rents	320
+2011	KS	Seward	20175	Oil & Gas		Other Revenues	-0.52
+2011	KS	Seward	20175	Oil & Gas		Other Roy Vals	144.89
+2011	KS	Seward	20175	Oil & Gas		Rents	177
+2011	KS	Seward	20175	Gas (mcf)	Processed (Residue) Gas	Royalties	15700.67
+2011	KS	Seward	20175	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	14840.42
+2011	KS	Seward	20175	NGL (gal)	Gas Plant Products	Royalties	10558.63
+2011	KS	Seward	20175	Oil (bbl)	Oil	Royalties	1721.28
+2011	KS	Seward	20175	Other Products	Helium	Royalties	5.59
+2011	KS	Sherman	20181	Oil & Gas		Rents	480
+2011	KS	Stanton	20187	Oil & Gas		Other Roy Vals	687.27
+2011	KS	Stanton	20187	Gas (mcf)	Nitrogen	Royalties	6.66
+2011	KS	Stanton	20187	Gas (mcf)	Processed (Residue) Gas	Royalties	6561.9
+2011	KS	Stanton	20187	NGL (gal)	Gas Plant Products	Royalties	7555.73
+2011	KS	Stevens	20189	Oil & Gas		Other Revenues	-16.68
+2011	KS	Stevens	20189	Oil & Gas		Other Roy Vals	7392.32
+2011	KS	Stevens	20189	Oil & Gas		Rents	922.16
+2011	KS	Stevens	20189	Gas (mcf)	Processed (Residue) Gas	Royalties	78392.78
+2011	KS	Stevens	20189	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	38087.27
+2011	KS	Stevens	20189	NGL (gal)	Gas Plant Products	Royalties	72752.23
+2011	KS	Trego	20195	Oil (bbl)	Oil	Royalties	20239.21
+2011	KS	Wilson	20205	Oil & Gas		Rents	45.97
+2011	KS	Woodson	20207	Oil & Gas		Rents	1035.53
+2012	KS	Cheyenne	20023	Oil & Gas		Rents	5862
+2012	KS	Comanche	20033	Oil & Gas		Other Roy Vals	-80.75
+2012	KS	Comanche	20033	Oil & Gas		Rents	660
+2012	KS	Comanche	20033	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	1538.13
+2012	KS	Edwards	20047	Oil & Gas		Rents	18
+2012	KS	Ellsworth	20053	Oil & Gas		Rents	4540
+2012	KS	Ellsworth	20053	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	2062.59
+2012	KS	Finney	20055	Oil & Gas		Other Revenues	-115.11
+2012	KS	Finney	20055	Gas (mcf)	Processed (Residue) Gas	Other Roy Vals	-0.36
+2012	KS	Finney	20055	Oil & Gas		Other Roy Vals	-32169.09
+2012	KS	Finney	20055	Oil & Gas		Rents	7425.7
+2012	KS	Finney	20055	Gas (mcf)	Nitrogen	Royalties	24.71
+2012	KS	Finney	20055	Gas (mcf)	Processed (Residue) Gas	Royalties	46305.21
+2012	KS	Finney	20055	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	271693.88
+2012	KS	Finney	20055	NGL (gal)	Gas Plant Products	Royalties	36434.02
+2012	KS	Finney	20055	Oil (bbl)	Drip or Scrubber Condensate	Royalties	899.44
+2012	KS	Finney	20055	Oil (bbl)	Oil	Royalties	588839.78
+2012	KS	Gove	20063	Oil & Gas		Rents	540
+2012	KS	Gove	20063	Oil (bbl)	Oil	Royalties	16770.58
+2012	KS	Grant	20067	Oil & Gas		Other Revenues	-24.23
+2012	KS	Grant	20067	Oil & Gas		Other Roy Vals	1136.71
+2012	KS	Grant	20067	Gas (mcf)	Processed (Residue) Gas	Royalties	5843.18
+2012	KS	Grant	20067	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	2212.88
+2012	KS	Grant	20067	NGL (gal)	Gas Plant Products	Royalties	7483.04
+2012	KS	Hamilton	20075	Oil & Gas		Other Revenues	123.07
+2012	KS	Hamilton	20075	Oil & Gas		Other Roy Vals	-305.07
+2012	KS	Hamilton	20075	Oil & Gas		Rents	51
+2012	KS	Hamilton	20075	Gas (mcf)	Processed (Residue) Gas	Royalties	831.15
+2012	KS	Hamilton	20075	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	3349.99
+2012	KS	Hamilton	20075	NGL (gal)	Gas Plant Products	Royalties	1133.71
+2012	KS	Haskell	20081	Gas (mcf)	Processed (Residue) Gas	Other Roy Vals	-0.65
+2012	KS	Haskell	20081	Oil & Gas		Other Roy Vals	-46272.74
+2012	KS	Haskell	20081	Oil & Gas		Rents	1157.5
+2012	KS	Haskell	20081	Gas (mcf)	Nitrogen	Royalties	0.67
+2012	KS	Haskell	20081	Gas (mcf)	Processed (Residue) Gas	Royalties	6906.32
+2012	KS	Haskell	20081	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	110212.34
+2012	KS	Haskell	20081	NGL (gal)	Gas Plant Products	Royalties	6943.28
+2012	KS	Haskell	20081	Oil (bbl)	Drip or Scrubber Condensate	Royalties	51.33
+2012	KS	Haskell	20081	Oil (bbl)	Oil	Royalties	249576.92
+2012	KS	Kearny	20093	Oil & Gas		Other Revenues	-493.54
+2012	KS	Kearny	20093	Oil & Gas		Other Roy Vals	5237.1
+2012	KS	Kearny	20093	Oil & Gas		Rents	14040.3
+2012	KS	Kearny	20093	Gas (mcf)	Fuel Gas	Royalties	12.26
+2012	KS	Kearny	20093	Gas (mcf)	Nitrogen	Royalties	54.95
+2012	KS	Kearny	20093	Gas (mcf)	Processed (Residue) Gas	Royalties	140984.47
+2012	KS	Kearny	20093	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	415097.88
+2012	KS	Kearny	20093	NGL (gal)	Gas Plant Products	Royalties	165350.32
+2012	KS	Kearny	20093	Oil (bbl)	Oil	Royalties	44437.08
+2012	KS	Labette	20099	Oil & Gas		Rents	3778
+2012	KS	Lane	20101	Oil (bbl)	Oil	Royalties	43167.88
+2012	KS	Logan	20109	Oil & Gas		Rents	80
+2012	KS	Marion	20115	Oil & Gas		Rents	82.5
+2012	KS	Meade	20119	Oil & Gas		Other Roy Vals	-0.98
+2012	KS	Meade	20119	Oil & Gas		Rents	60
+2012	KS	Meade	20119	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	2228.7
+2012	KS	Morton	20129	Oil & Gas		Other Revenues	37691.74
+2012	KS	Morton	20129	Oil & Gas		Other Roy Vals	7861.75
+2012	KS	Morton	20129	Oil & Gas		Rents	3162.84
+2012	KS	Morton	20129	Gas (mcf)	Nitrogen	Royalties	15.28
+2012	KS	Morton	20129	Gas (mcf)	Processed (Residue) Gas	Royalties	426246.2
+2012	KS	Morton	20129	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	259243.35
+2012	KS	Morton	20129	NGL (gal)	Gas Plant Products	Royalties	532765.5
+2012	KS	Morton	20129	Oil (bbl)	Condensate	Royalties	1334.41
+2012	KS	Morton	20129	Oil (bbl)	Drip or Scrubber Condensate	Royalties	1.88
+2012	KS	Morton	20129	Oil (bbl)	Oil	Royalties	1994901.46
+2012	KS	Morton	20129	Other Products	Helium	Royalties	4.62
+2012	KS	Russell	20167	Oil & Gas		Rents	320
+2012	KS	Seward	20175	Oil & Gas		Other Revenues	-7.58
+2012	KS	Seward	20175	Oil & Gas		Other Roy Vals	421.25
+2012	KS	Seward	20175	Oil & Gas		Rents	177
+2012	KS	Seward	20175	Gas (mcf)	Processed (Residue) Gas	Royalties	10771.68
+2012	KS	Seward	20175	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	15275.91
+2012	KS	Seward	20175	NGL (gal)	Gas Plant Products	Royalties	8902.89
+2012	KS	Seward	20175	Oil (bbl)	Condensate	Royalties	380.08
+2012	KS	Seward	20175	Oil (bbl)	Oil	Royalties	2816.55
+2012	KS	Seward	20175	Other Products	Helium	Royalties	-0.89
+2012	KS	Sherman	20181	Oil & Gas		Rents	480
+2012	KS	Stanton	20187	Oil & Gas		Other Roy Vals	845.27
+2012	KS	Stanton	20187	Gas (mcf)	Nitrogen	Royalties	4.34
+2012	KS	Stanton	20187	Gas (mcf)	Processed (Residue) Gas	Royalties	3923.68
+2012	KS	Stanton	20187	NGL (gal)	Gas Plant Products	Royalties	5082.88
+2012	KS	Stanton	20187	Oil (bbl)	Drip or Scrubber Condensate	Royalties	17.01
+2012	KS	Stevens	20189	Oil & Gas		Other Revenues	-44.19
+2012	KS	Stevens	20189	Oil & Gas		Other Roy Vals	-632.06
+2012	KS	Stevens	20189	Oil & Gas		Rents	922.16
+2012	KS	Stevens	20189	Gas (mcf)	Processed (Residue) Gas	Royalties	47001.99
+2012	KS	Stevens	20189	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	20014.43
+2012	KS	Stevens	20189	NGL (gal)	Gas Plant Products	Royalties	52072.93
+2012	KS	Stevens	20189	Oil (bbl)	Oil	Royalties	38466.58
+2012	KS	Trego	20195	Oil (bbl)	Oil	Royalties	25371.54
+2012	KS	Wilson	20205	Oil & Gas		Rents	61.29
+2012	KS	Woodson	20207	Oil & Gas		Rents	1380.71
+2013	KS	Barber	20007	Oil & Gas		Rents	80
+2013	KS	Cheyenne	20023	Oil & Gas		Bonus	24000
+2013	KS	Cheyenne	20023	Oil & Gas		Rents	6162
+2013	KS	Comanche	20033	Oil & Gas		Other Roy Vals	19.86
+2013	KS	Comanche	20033	Oil & Gas		Rents	740
+2013	KS	Comanche	20033	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	1630.47
+2013	KS	Comanche	20033	Oil (bbl)	Oil	Royalties	108.98
+2013	KS	Edwards	20047	Oil & Gas		Rents	24
+2013	KS	Ellsworth	20053	Oil & Gas		Rents	320
+2013	KS	Ellsworth	20053	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	2450.17
+2013	KS	Finney	20055	Oil & Gas		Other Revenues	-103.64
+2013	KS	Finney	20055	Oil & Gas		Other Roy Vals	-2459.36
+2013	KS	Finney	20055	Oil & Gas		Rents	8065.7
+2013	KS	Finney	20055	Gas (mcf)	Fuel Gas	Royalties	12316.85
+2013	KS	Finney	20055	Gas (mcf)	Nitrogen	Royalties	32.74
+2013	KS	Finney	20055	Gas (mcf)	Processed (Residue) Gas	Royalties	253449.81
+2013	KS	Finney	20055	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	113035.15
+2013	KS	Finney	20055	NGL (gal)	Gas Plant Products	Royalties	43908.46
+2013	KS	Finney	20055	Oil (bbl)	Oil	Royalties	611494.64
+2013	KS	Gove	20063	Oil & Gas		Rents	600
+2013	KS	Gove	20063	Oil (bbl)	Oil	Royalties	15168.46
+2013	KS	Grant	20067	Oil & Gas		Other Revenues	-18.73
+2013	KS	Grant	20067	Oil & Gas		Other Roy Vals	-1402.63
+2013	KS	Grant	20067	Gas (mcf)	Processed (Residue) Gas	Royalties	7988.93
+2013	KS	Grant	20067	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	1182.95
+2013	KS	Grant	20067	NGL (gal)	Gas Plant Products	Royalties	5642.63
+2013	KS	Hamilton	20075	Oil & Gas		Other Revenues	6.61
+2013	KS	Hamilton	20075	Oil & Gas		Other Roy Vals	-475
+2013	KS	Hamilton	20075	Oil & Gas		Rents	68
+2013	KS	Hamilton	20075	Gas (mcf)	Processed (Residue) Gas	Royalties	1067.79
+2013	KS	Hamilton	20075	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	2255.35
+2013	KS	Hamilton	20075	NGL (gal)	Gas Plant Products	Royalties	868.44
+2013	KS	Haskell	20081	Oil & Gas		Other Roy Vals	5521.57
+2013	KS	Haskell	20081	Oil & Gas		Rents	1157.5
+2013	KS	Haskell	20081	Gas (mcf)	Fuel Gas	Royalties	5061.24
+2013	KS	Haskell	20081	Gas (mcf)	Nitrogen	Royalties	0.77
+2013	KS	Haskell	20081	Gas (mcf)	Processed (Residue) Gas	Royalties	82649.17
+2013	KS	Haskell	20081	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	25986.97
+2013	KS	Haskell	20081	NGL (gal)	Gas Plant Products	Royalties	21535.01
+2013	KS	Haskell	20081	Oil (bbl)	Oil	Royalties	226052.98
+2013	KS	Kearny	20093	Oil & Gas		Other Revenues	-376.86
+2013	KS	Kearny	20093	Oil & Gas		Other Roy Vals	-37423.09
+2013	KS	Kearny	20093	Oil & Gas		Rents	15576.3
+2013	KS	Kearny	20093	Gas (mcf)	Fuel Gas	Royalties	20378.35
+2013	KS	Kearny	20093	Gas (mcf)	Nitrogen	Royalties	56.24
+2013	KS	Kearny	20093	Gas (mcf)	Processed (Residue) Gas	Royalties	515702.07
+2013	KS	Kearny	20093	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	242015.24
+2013	KS	Kearny	20093	NGL (gal)	Gas Plant Products	Royalties	186228.24
+2013	KS	Kearny	20093	Oil (bbl)	Oil	Royalties	40212.22
+2013	KS	Labette	20099	Oil & Gas		Rents	3778
+2013	KS	Lane	20101	Oil (bbl)	Oil	Royalties	40787.93
+2013	KS	Logan	20109	Oil & Gas		Rents	40
+2013	KS	Marion	20115	Oil & Gas		Rents	82.5
+2013	KS	Meade	20119	Oil & Gas		Other Roy Vals	300.52
+2013	KS	Meade	20119	Oil & Gas		Rents	140
+2013	KS	Meade	20119	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	3088.75
+2013	KS	Meade	20119	Oil (bbl)	Condensate	Royalties	247.91
+2013	KS	Morton	20129	Oil & Gas		Other Revenues	13136.89
+2013	KS	Morton	20129	Oil & Gas		Other Roy Vals	-8097.11
+2013	KS	Morton	20129	Oil & Gas		Rents	3002.84
+2013	KS	Morton	20129	Gas (mcf)	Flash Gas	Royalties	34.35
+2013	KS	Morton	20129	Gas (mcf)	Nitrogen	Royalties	16.43
+2013	KS	Morton	20129	Gas (mcf)	Processed (Residue) Gas	Royalties	631703.6
+2013	KS	Morton	20129	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	346046.64
+2013	KS	Morton	20129	NGL (gal)	Gas Plant Products	Royalties	399694.52
+2013	KS	Morton	20129	Oil (bbl)	Condensate	Royalties	1411.55
+2013	KS	Morton	20129	Oil (bbl)	Oil	Royalties	1640136.28
+2013	KS	Morton	20129	Other Products	Helium	Royalties	-0.13
+2013	KS	Russell	20167	Oil & Gas		Rents	320
+2013	KS	Seward	20175	Oil & Gas		Other Revenues	-6.78
+2013	KS	Seward	20175	Oil & Gas		Other Roy Vals	60.5
+2013	KS	Seward	20175	Oil & Gas		Rents	177
+2013	KS	Seward	20175	Gas (mcf)	Processed (Residue) Gas	Royalties	13260.71
+2013	KS	Seward	20175	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	11328.86
+2013	KS	Seward	20175	NGL (gal)	Gas Plant Products	Royalties	7545.81
+2013	KS	Seward	20175	Oil (bbl)	Condensate	Royalties	121.46
+2013	KS	Seward	20175	Oil (bbl)	Oil	Royalties	755.36
+2013	KS	Seward	20175	Other Products	Helium	Royalties	-0.09
+2013	KS	Sherman	20181	Oil & Gas		Rents	480
+2013	KS	Stanton	20187	Oil & Gas		Other Roy Vals	-1132.49
+2013	KS	Stanton	20187	Gas (mcf)	Nitrogen	Royalties	4.08
+2013	KS	Stanton	20187	Gas (mcf)	Processed (Residue) Gas	Royalties	6506.94
+2013	KS	Stanton	20187	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	7579.09
+2013	KS	Stanton	20187	NGL (gal)	Gas Plant Products	Royalties	3138.21
+2013	KS	Stevens	20189	Oil & Gas		Other Revenues	-39.23
+2013	KS	Stevens	20189	Oil & Gas		Other Roy Vals	-2158.27
+2013	KS	Stevens	20189	Oil & Gas		Rents	922.16
+2013	KS	Stevens	20189	Gas (mcf)	Processed (Residue) Gas	Royalties	56191.42
+2013	KS	Stevens	20189	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	22689.66
+2013	KS	Stevens	20189	NGL (gal)	Gas Plant Products	Royalties	36087.1
+2013	KS	Stevens	20189	Oil (bbl)	Oil	Royalties	29939.2
+2013	KS	Trego	20195	Oil (bbl)	Oil	Royalties	22187.24
+2013	KS	Wilson	20205	Oil & Gas		Rents	61.29
+2013	KS	Woodson	20207	Oil & Gas		Rents	1380.71

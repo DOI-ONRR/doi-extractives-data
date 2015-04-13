@@ -1,5 +1,76 @@
-Year	State	County	FIPS	Commodity	type	Revenue
-2004	AZ	Maricopa	04013	Sodium	Other Revenues	24
-2004	AZ	Maricopa	04013	Solids	Royalties	-490.05
-2005	AZ	Maricopa	04013	Sodium	Other Revenues	12
-2012	AZ	Maricopa	04013	Sodium	Other Revenues	-121
+Year	State	County	FIPS	Commodity	Product	Type	Revenue
+2004	AZ	Apache	04001	Oil & Gas		Rents	2214
+2004	AZ	Cochise	04003	Oil & Gas		Rents	6224
+2004	AZ	Coconino	04005	Oil & Gas		Rents	11640
+2004	AZ	Maricopa	04013	Sodium		Other Revenues	24
+2004	AZ	Maricopa	04013	Sodium		Rents	4
+2004	AZ	Maricopa	04013	Other Products	Salt	Royalties	-490.05
+2004	AZ	Mohave	04015	Oil & Gas		Rents	80170.5
+2005	AZ	Apache	04001	Oil & Gas		Bonus	2450
+2005	AZ	Apache	04001	Oil & Gas		Rents	16467
+2005	AZ	Coconino	04005	Oil & Gas		Rents	11640
+2005	AZ	Maricopa	04013	Sodium		Other Revenues	12
+2005	AZ	Maricopa	04013	Sodium		Rents	8
+2005	AZ	Mohave	04015	Oil & Gas		Bonus	58275
+2005	AZ	Mohave	04015	Oil & Gas		Rents	81249
+2006	AZ	Apache	04001	Oil & Gas		Rents	8725.5
+2006	AZ	Greenlee	04011	Geothermal		Rents	4168
+2006	AZ	Maricopa	04013	Sodium		Rents	4
+2006	AZ	Mohave	04015	Oil & Gas		Rents	53220
+2007	AZ	Apache	04001	Oil & Gas		Rents	13528.5
+2007	AZ	Greenlee	04011	Geothermal		Rents	2084
+2007	AZ	Maricopa	04013	Sodium		Rents	4
+2007	AZ	Mohave	04015	Oil & Gas		Bonus	1280
+2007	AZ	Mohave	04015	Oil & Gas		Rents	513707
+2007	AZ	Navajo	04017	Oil & Gas		Rents	718.5
+2008	AZ	Apache	04001	Oil & Gas		Rents	4018.5
+2008	AZ	Greenlee	04011	Geothermal		Rents	2084
+2008	AZ	Maricopa	04013	Sodium		Rents	4
+2008	AZ	Mohave	04015	Oil & Gas		Bonus	15560
+2008	AZ	Mohave	04015	Oil & Gas		Rents	507195
+2008	AZ	Navajo	04017	Oil & Gas		Rents	718.5
+2009	AZ	Apache	04001	Oil & Gas		Rents	2450
+2009	AZ	Greenlee	04011	Geothermal		Rents	2084
+2009	AZ	Maricopa	04013	Sodium		Rents	4
+2009	AZ	Mohave	04015	Oil & Gas		Rents	83102.5
+2009	AZ	Navajo	04017	Potassium		Rents	1634
+2010	AZ	Apache	04001	Oil & Gas		Rents	2450
+2010	AZ	Greenlee	04011	Geothermal		Rents	2084
+2010	AZ	Maricopa	04013	Sodium		Rents	4
+2010	AZ	Mohave	04015	Oil & Gas		Rents	33606
+2010	AZ	Navajo	04017	Potassium		Rents	3268
+2011	AZ	Apache	04001	Oil & Gas		Rents	2450
+2011	AZ	Greenlee	04011	Geothermal		Rents	2084
+2011	AZ	Maricopa	04013	Sodium		Rents	4
+2011	AZ	Mohave	04015	Oil & Gas		Rents	18354
+2011	AZ	Navajo	04017	Potassium		Rents	-1634
+2012	AZ	Apache	04001	Oil & Gas		Rents	1280
+2012	AZ	Greenlee	04011	Geothermal		Rents	2084
+2012	AZ	Maricopa	04013	Sodium		Other Revenues	-121
+2012	AZ	Maricopa	04013	Sodium		Rents	-39
+2012	AZ	Mohave	04015	Oil & Gas		Rents	15240
+2012	AZ	Navajo	04017	Potassium		Rents	-3268
+2013	AZ	Apache	04001	Oil & Gas		Rents	1280
+2013	AZ	Coconino	04005	Oil & Gas		Bonus	17776
+2013	AZ	Coconino	04005	Oil & Gas		Rents	13332
+2013	AZ	Mohave	04015	Oil & Gas		Bonus	6660
+2013	AZ	Mohave	04015	Oil & Gas		Rents	20555
+2004	AZ	Maricopa	04013	Sodium		Other Revenues	12
+2004	AZ	Maricopa	04013	Other Products	Salt	Royalties	608.9
+2005	AZ	Maricopa	04013	Sodium		Other Revenues	12
+2005	AZ	Maricopa	04013	Other Products	Salt	Royalties	225.65
+2006	AZ	Maricopa	04013	Sodium		Other Revenues	12
+2006	AZ	Maricopa	04013	Other Products	Salt	Royalties	72.47
+2007	AZ	Maricopa	04013	Sodium		Other Revenues	12
+2007	AZ	Maricopa	04013	Other Products	Salt	Royalties	823.88
+2008	AZ	Maricopa	04013	Sodium		Other Revenues	12
+2008	AZ	Maricopa	04013	Other Products	Salt	Royalties	311.67
+2009	AZ	Maricopa	04013	Sodium		Other Revenues	12
+2009	AZ	Maricopa	04013	Other Products	Salt	Royalties	264.66
+2010	AZ	Maricopa	04013	Sodium		Other Revenues	12
+2010	AZ	Maricopa	04013	Other Products	Salt	Royalties	1565.53
+2011	AZ	Maricopa	04013	Sodium		Other Revenues	12
+2011	AZ	Maricopa	04013	Other Products	Salt	Royalties	8959.28
+2012	AZ	Maricopa	04013	Sodium		Other Revenues	12
+2012	AZ	Maricopa	04013	Other Products	Salt	Royalties	1377.69
+2013	AZ	Maricopa	04013	Other Products	Salt	Royalties	4224.65

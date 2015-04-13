@@ -2,6 +2,7 @@ BIN = ./node_modules/.bin
 
 tito = $(BIN)/tito
 datex = $(BIN)/datex --require parse=./lib/parse
+topojson = $(BIN)/topojson
 
 FILES = \
 	national/revenues-yearly.tsv \
@@ -65,18 +66,15 @@ geo: \
 	geo/us-outline.json \
 	geo/offshore.json
 
-geo/us-topology.json:
+geo/us-topology.json: input/geo/us-10m.json
 	mkdir -p $(dir $@)
-	bin/join-counties.js \
-		--in-topo input/geo/us-counties.json \
-		--in-states input/geo/states.csv \
-		> $@
-
-geo/us-states.json: geo/us-topology.json
-	mkdir -p $(dir $@)
-	bin/extract-topology.js \
-		--layer states \
-		$< > $@
+	bin/map-topology.js \
+		--props.states '{abbr: STATE, FIPS: STATE_FIPS}' \
+		--filter.states '["AS", "GU", "PR", "VI"].indexOf(abbr) === -1' \
+		--props.counties '{state: STATE, county: COUNTY, FIPS: FIPS}' \
+		--filter.counties '["AS", "GU", "PR", "VI"].indexOf(state) === -1' \
+		--keep land \
+		-o $@ -- $<
 
 geo/us-outline.json: geo/us-states.json
 	$(BIN)/topojson-merge \
@@ -84,6 +82,12 @@ geo/us-outline.json: geo/us-states.json
 		--oo USA \
 		--key '"USA"' $< \
 		| bin/extract-topology.js --layer USA > $@
+
+geo/us-states.json: geo/us-topology.json
+	mkdir -p $(dir $@)
+	bin/extract-topology.js \
+		--layer states \
+		$< > $@
 
 # generate US topology for only those counties with data
 geo/us-topology-filtered.json: county/revenues-yearly.tsv

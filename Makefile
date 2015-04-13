@@ -106,13 +106,44 @@ geo/offshore.json: input/geo/offshore/*.json
 		-p label=TEXT_LABEL \
 		-o $@ -- $^
 
-geo/us.svg: \
+svg: \
+	svg/all.svg \
+	svg/land.svg \
+	svg/states.svg \
+	svg/counties.svg \
+	svg/offshore.svg \
+	svg/filtered.svg
+
+svg/all.svg: \
 		geo/us-outline.json \
 		geo/us-topology.json \
 		geo/offshore.json
+	mkdir -p $(dir $@)
 	bin/vectorize.js $^ > $@
+
+svg/land.svg: geo/us-topology.json
+	mkdir -p $(dir $@)
+	bin/extract-topology.js --layer land $< \
+		| bin/vectorize.js /dev/stdin > $@
+
+svg/states.svg: geo/us-states.json
+	mkdir -p $(dir $@)
+	bin/vectorize.js $< > $@
+
+svg/counties.svg: geo/us-topology.json
+	mkdir -p $(dir $@)
+	bin/extract-topology.js --layer counties $< \
+		| bin/vectorize.js /dev/stdin > $@
+
+svg/offshore.svg: geo/offshore.json
+	mkdir -p $(dir $@)
+	bin/vectorize.js $< > $@
+
+svg/filtered.svg: geo/us-topology-filtered.json
+	mkdir -p $(dir $@)
+	bin/vectorize.js $< > $@
 
 clean:
 	rm -f $(FILES)
 
-.PHONY: county-revenues-nested geo
+.PHONY: county-revenues-nested geo svg

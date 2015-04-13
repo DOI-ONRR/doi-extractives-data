@@ -143,6 +143,9 @@ svg/filtered.svg: geo/us-topology-filtered.json
 	mkdir -p $(dir $@)
 	bin/vectorize.js $< > $@
 
+svg/outer.svg: geo/us-outline.json geo/offshore.json
+	bin/vectorize.js --p0 $^ > $@
+
 clean:
 	rm -f $(FILES)
 

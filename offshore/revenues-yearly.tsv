@@ -1,0 +1,429 @@
+Year	Region	Commodity	Product	Type	Revenue	Count
+2004	Alaska	Oil and Gas		Bonus	8034909.00	3
+2004	Alaska	Oil and Gas		Rents	1092381.00	3
+2004	Alaska	Oil	 Oil 	Royalties	29343329.28	1
+2004	Gulf	Oil and Gas		Bonus	542330347.00	56
+2004	Gulf	Oil & Gas		Other Revenues	2157432.10	43
+2004	Gulf	Oil	 Oil 	Other Roy Vals	-12398954.81	34
+2004	Gulf	Oil and Gas		Rents	215854566.79	71
+2004	Gulf	Gas	 Processed (Residue) Gas 	Royalties	1602660796.07	50
+2004	Gulf	NGL	 Gas Plant Products 	Royalties	157877662.57	48
+2004	Gulf	Oil	 Oil 	Royalties	956757037.76	48
+2004	Gulf	Oil & Gas		Other Roy Vals	-8484794.41	54
+2004	Gulf	Gas	 Unprocessed (Wet) Gas 	Royalties	1694611000.79	56
+2004	Gulf	Oil	 Condensate 	Royalties	209604192.01	51
+2004	Gulf	Gas	 Fuel Gas 	Other Roy Vals	14809.43	10
+2004	Gulf	Gas	 Processed (Residue) Gas 	Other Roy Vals	344268.52	12
+2004	Gulf	NGL	 Gas Plant Products 	Other Roy Vals	38900.79	9
+2004	Gulf	Oil	 Condensate 	Other Roy Vals	1281625.23	22
+2004	Gulf	Gas	 Fuel Gas 	Royalties	6654333.98	17
+2004	Gulf	Oil	 Drip or Scrubber Condensate 	Royalties	8647701.61	42
+2004	Gulf	Oil	 Inlet Scrubber 	Royalties	199555.85	23
+2004	Gulf	Gas	 Flash Gas 	Royalties	2457370.84	36
+2004	Gulf	Gas	 Flash Gas 	Other Roy Vals	700.53	3
+2004	Gulf	Gas	 Unprocessed (Wet) Gas 	Other Roy Vals	127137.08	12
+2004	Gulf	Oil	 Drip or Scrubber Condensate 	Other Roy Vals	1812.37	7
+2004	Gulf	Oil	 Inlet Scrubber 	Other Roy Vals	138.83	5
+2004	Gulf	Gas	 Gas Lost - Flared or Vented 	Royalties	201082.34	5
+2004	Gulf	Other	 Sulfur 	Royalties	17437.70	4
+2004	Gulf	Sulfur		Other Revenues	-283.00	1
+2004	Gulf	Oil	 Other Liquid Hydrocarbons 	Royalties	38081.61	1
+2004	Gulf	Gas	 Gas Lost - Flared or Vented 	Other Roy Vals	370.94	1
+2004	Pacific	Oil and Gas		Rents	-49972.00	1
+2004	Pacific	Oil & Gas		Other Revenues	93803.38	1
+2004	Pacific	Oil	 Oil 	Other Roy Vals	-8334737.47	1
+2004	Pacific	Oil & Gas		Other Roy Vals	8480874.29	1
+2004	Pacific	Gas	 Fuel Gas 	Royalties	9594.09	1
+2004	Pacific	Gas	 Processed (Residue) Gas 	Royalties	24305598.93	1
+2004	Pacific	Gas	 Unprocessed (Wet) Gas 	Royalties	2730927.60	1
+2004	Pacific	NGL	 Gas Plant Products 	Royalties	1474229.94	1
+2004	Pacific	Oil	 Condensate 	Royalties	70639.92	1
+2004	Pacific	Oil	 Drip or Scrubber Condensate 	Royalties	357236.66	1
+2004	Pacific	Oil	 Oil 	Royalties	134768873.71	1
+2004	Pacific	Other	 Sulfur 	Royalties	14209.63	1
+2005	Alaska	Oil and Gas		Bonus	46509729.00	7
+2005	Alaska	Oil and Gas		Rents	1878656.75	7
+2005	Alaska	Oil	 Oil 	Royalties	34471667.71	1
+2005	Gulf	Oil & Gas		Other Revenues	1594719.61	44
+2005	Gulf	Oil	 Oil 	Other Roy Vals	-6320181.82	34
+2005	Gulf	Oil and Gas		Rents	210290455.53	72
+2005	Gulf	Gas	 Processed (Residue) Gas 	Royalties	1743199306.75	51
+2005	Gulf	Gas	 Unprocessed (Wet) Gas 	Royalties	1469990632.16	56
+2005	Gulf	NGL	 Gas Plant Products 	Royalties	141936773.54	48
+2005	Gulf	Oil	 Condensate 	Royalties	195042004.76	52
+2005	Gulf	Oil	 Oil 	Royalties	1862717888.81	47
+2005	Gulf	Oil and Gas		Bonus	348497652.00	36
+2005	Gulf	Gas	 Processed (Residue) Gas 	Other Roy Vals	319752.57	11
+2005	Gulf	NGL	 Gas Plant Products 	Other Roy Vals	45280.07	10
+2005	Gulf	Oil	 Condensate 	Other Roy Vals	-1017460.56	21
+2005	Gulf	Oil & Gas		Other Roy Vals	-490820.34	50
+2005	Gulf	Gas	 Fuel Gas 	Royalties	6964969.36	18
+2005	Gulf	Oil	 Drip or Scrubber Condensate 	Royalties	9034809.76	39
+2005	Gulf	Oil	 Inlet Scrubber 	Royalties	139949.30	20
+2005	Gulf	Gas	 Flash Gas 	Royalties	2801975.62	36
+2005	Gulf	Gas	 Flash Gas 	Other Roy Vals	-333.46	4
+2005	Gulf	Gas	 Fuel Gas 	Other Roy Vals	18105.83	9
+2005	Gulf	Gas	 Unprocessed (Wet) Gas 	Other Roy Vals	365752.30	12
+2005	Gulf	Gas	 Gas Lost - Flared or Vented 	Royalties	294137.47	5
+2005	Gulf	Oil	 Drip or Scrubber Condensate 	Other Roy Vals	4507.75	6
+2005	Gulf	Sulfur		Other Revenues	-152.40	1
+2005	Gulf	Oil	 Other Liquid Hydrocarbons 	Royalties	26726.46	2
+2005	Gulf	Other	 Sulfur 	Royalties	19016.05	1
+2005	Gulf	Oil	 Oil 	#N/A	-1958.24	2
+2005	Gulf	Gas	 Gas Lost - Flared or Vented 	Other Roy Vals	181.08	2
+2005	Gulf	Oil	 Inlet Scrubber 	Other Roy Vals	61.85	3
+2005	Gulf	Other	 Geothermal - Commercially Demineralized H2O 	Royalties	175.17	1
+2005	Gulf	Other	 Geothermal - Direct Utilization, Other 	Royalties	6.86	1
+2005	Pacific	Oil & Gas		Other Revenues	102618.90	1
+2005	Pacific	Oil	 Oil 	Other Roy Vals	-3338166.79	1
+2005	Pacific	Oil & Gas		Other Roy Vals	-1115859.42	1
+2005	Pacific	Gas	 Fuel Gas 	Royalties	68265.52	1
+2005	Pacific	Gas	 Processed (Residue) Gas 	Royalties	27101400.58	1
+2005	Pacific	Gas	 Unprocessed (Wet) Gas 	Royalties	4267606.84	1
+2005	Pacific	NGL	 Gas Plant Products 	Royalties	1654526.93	1
+2005	Pacific	Oil	 Condensate 	Royalties	44197.16	1
+2005	Pacific	Oil	 Drip or Scrubber Condensate 	Royalties	490425.05	1
+2005	Pacific	Oil	 Oil 	Royalties	180746696.72	1
+2005	Pacific	Other	 Sulfur 	Royalties	14340.49	1
+2006	Alaska	Oil and Gas		Rents	1877683.25	7
+2006	Alaska	Oil	 Oil 	Royalties	40580284.16	1
+2006	Gulf	Oil and Gas		Bonus	1197213600.00	55
+2006	Gulf	Oil & Gas		Other Revenues	3022521.32	46
+2006	Gulf	Oil	 Oil 	Other Roy Vals	-10221035.27	33
+2006	Gulf	Oil and Gas		Rents	235022734.36	68
+2006	Gulf	Gas	 Processed (Residue) Gas 	Royalties	2085154845.90	54
+2006	Gulf	Gas	 Unprocessed (Wet) Gas 	Royalties	909329310.49	56
+2006	Gulf	NGL	 Gas Plant Products 	Royalties	152187129.59	49
+2006	Gulf	Oil	 Condensate 	Royalties	230875808.92	51
+2006	Gulf	Oil	 Oil 	Royalties	3146341539.94	47
+2006	Gulf	Oil & Gas		Other Roy Vals	-45778017.20	52
+2006	Gulf	Gas	 Processed (Residue) Gas 	Other Roy Vals	257835.37	11
+2006	Gulf	NGL	 Gas Plant Products 	Other Roy Vals	23867.80	10
+2006	Gulf	Oil	 Condensate 	Other Roy Vals	319318.18	28
+2006	Gulf	Gas	 Fuel Gas 	Royalties	5005460.78	19
+2006	Gulf	Oil	 Drip or Scrubber Condensate 	Royalties	7101527.68	39
+2006	Gulf	Gas	 Flash Gas 	Royalties	1848978.10	37
+2006	Gulf	Gas	 Flash Gas 	Other Roy Vals	71.21	4
+2006	Gulf	Gas	 Fuel Gas 	Other Roy Vals	24537.88	8
+2006	Gulf	Gas	 Unprocessed (Wet) Gas 	Other Roy Vals	10092.62	12
+2006	Gulf	Gas	 Gas Lost - Flared or Vented 	Other Roy Vals	1189.26	2
+2006	Gulf	Gas	 Gas Lost - Flared or Vented 	Royalties	33350.91	5
+2006	Gulf	Oil	 Inlet Scrubber 	Royalties	-83237.17	15
+2006	Gulf	Oil	 Drip or Scrubber Condensate 	Other Roy Vals	3191.23	6
+2006	Gulf	Sulfur		Other Revenues	-230.60	1
+2006	Gulf	Oil	 Other Liquid Hydrocarbons 	Royalties	16883.04	3
+2006	Gulf	Other	 Sulfur 	Royalties	10351.98	1
+2006	Gulf	Oil	 Inlet Scrubber 	Other Roy Vals	18.94	1
+2006	Gulf	Oil & Gas		Royalties	-3.76	2
+2006	Pacific	Oil & Gas		Other Revenues	77740.13	1
+2006	Pacific	Oil	 Oil 	Other Roy Vals	-105925.47	1
+2006	Pacific	Oil & Gas		Other Roy Vals	-53406.48	1
+2006	Pacific	Gas	 Fuel Gas 	Royalties	67294.55	1
+2006	Pacific	Gas	 Processed (Residue) Gas 	Royalties	27891147.40	1
+2006	Pacific	Gas	 Unprocessed (Wet) Gas 	Royalties	3827328.13	1
+2006	Pacific	NGL	 Gas Plant Products 	Royalties	841056.77	1
+2006	Pacific	Oil	 Condensate 	Royalties	203866.35	1
+2006	Pacific	Oil	 Drip or Scrubber Condensate 	Royalties	582110.26	1
+2006	Pacific	Oil	 Oil 	Royalties	216731837.26	1
+2006	Pacific	Other	 Sulfur 	Royalties	6303.03	1
+2007	Alaska	Oil and Gas		Rents	2743548.00	9
+2007	Alaska	Oil	 Oil 	Royalties	25711421.67	1
+2007	Alaska	Oil and Gas		Bonus	41980133.00	4
+2007	Gulf	Oil and Gas		Bonus	556080972.00	40
+2007	Gulf	Oil & Gas		Other Revenues	3713909.82	46
+2007	Gulf	Oil	 Oil 	Other Roy Vals	5813077.18	34
+2007	Gulf	Oil and Gas		Rents	196652806.94	70
+2007	Gulf	Gas	 Processed (Residue) Gas 	Royalties	1917757702.07	52
+2007	Gulf	Gas	 Unprocessed (Wet) Gas 	Royalties	605011769.69	56
+2007	Gulf	NGL	 Gas Plant Products 	Royalties	221370284.03	48
+2007	Gulf	Oil	 Condensate 	Royalties	282306664.40	52
+2007	Gulf	Oil	 Oil 	Royalties	3128727754.74	47
+2007	Gulf	Oil & Gas		Other Roy Vals	15706768.41	54
+2007	Gulf	Gas	 Flash Gas 	Royalties	3924714.88	38
+2007	Gulf	Gas	 Fuel Gas 	Other Roy Vals	27916.86	12
+2007	Gulf	Gas	 Processed (Residue) Gas 	Other Roy Vals	309191.56	13
+2007	Gulf	Gas	 Unprocessed (Wet) Gas 	Other Roy Vals	2741749.29	14
+2007	Gulf	NGL	 Gas Plant Products 	Other Roy Vals	26199.16	9
+2007	Gulf	Oil	 Condensate 	Other Roy Vals	911074.48	21
+2007	Gulf	Gas	 Fuel Gas 	Royalties	5457838.83	18
+2007	Gulf	Oil	 Drip or Scrubber Condensate 	Royalties	9281761.05	35
+2007	Gulf	Oil	 Inlet Scrubber 	Royalties	20497.53	17
+2007	Gulf	Gas	 Flash Gas 	Other Roy Vals	56.03	4
+2007	Gulf	Gas	 Gas Lost - Flared or Vented 	Other Roy Vals	38.14	2
+2007	Gulf	Gas	 Gas Lost - Flared or Vented 	Royalties	31580.95	5
+2007	Gulf	Oil	 Other Liquid Hydrocarbons 	Royalties	102865.80	5
+2007	Gulf	Oil	 Drip or Scrubber Condensate 	Other Roy Vals	2328.03	6
+2007	Gulf	Sulfur		Other Revenues	-40.64	1
+2007	Gulf	Other	 Sulfur 	Royalties	2769.25	1
+2007	Gulf	Oil	 Fuel Oil 	Royalties	19.67	1
+2007	Gulf	Oil	 Other Liquid Hydrocarbons 	Other Roy Vals	11.76	1
+2007	Pacific	Oil & Gas		Other Revenues	69732.88	1
+2007	Pacific	Oil	 Oil 	Other Roy Vals	-49344.35	1
+2007	Pacific	Oil & Gas		Other Roy Vals	-166492.29	1
+2007	Pacific	Gas	 Fuel Gas 	Royalties	13809.79	1
+2007	Pacific	Gas	 Processed (Residue) Gas 	Royalties	24977899.92	1
+2007	Pacific	Gas	 Unprocessed (Wet) Gas 	Royalties	5270597.29	1
+2007	Pacific	NGL	 Gas Plant Products 	Royalties	968529.43	1
+2007	Pacific	Oil	 Condensate 	Royalties	238010.41	1
+2007	Pacific	Oil	 Drip or Scrubber Condensate 	Royalties	327893.51	1
+2007	Pacific	Oil	 Oil 	Royalties	230106207.90	1
+2007	Pacific	Other	 Sulfur 	Royalties	32787.47	1
+2008	Alaska	Oil and Gas		Rents	5475741.50	16
+2008	Alaska	Oil	 Oil 	Royalties	79810964.75	1
+2008	Alaska	Oil and Gas		Bonus	2662059483.00	7
+2008	Gulf	Oil and Gas		Bonus	6496701387.80	58
+2008	Gulf	Oil & Gas		Other Revenues	2489997.25	43
+2008	Gulf	Oil	 Oil 	Other Roy Vals	3439381.48	38
+2008	Gulf	Oil and Gas		Rents	234623572.23	69
+2008	Gulf	Gas	 Processed (Residue) Gas 	Royalties	1922760995.55	51
+2008	Gulf	Gas	 Unprocessed (Wet) Gas 	Royalties	868861542.87	57
+2008	Gulf	NGL	 Gas Plant Products 	Royalties	262700967.23	48
+2008	Gulf	Oil	 Condensate 	Royalties	366794269.05	52
+2008	Gulf	Oil	 Oil 	Royalties	3847878884.80	48
+2008	Gulf	Oil & Gas		Other Roy Vals	-18111422.02	54
+2008	Gulf	Gas	 Gas Lost - Flared or Vented 	Royalties	21750.93	6
+2008	Gulf	Oil	 Drip or Scrubber Condensate 	Royalties	10025862.42	39
+2008	Gulf	Gas	 Fuel Gas 	Other Roy Vals	6850.76	11
+2008	Gulf	Gas	 Processed (Residue) Gas 	Other Roy Vals	141445.14	10
+2008	Gulf	Gas	 Unprocessed (Wet) Gas 	Other Roy Vals	1581519.00	13
+2008	Gulf	NGL	 Gas Plant Products 	Other Roy Vals	31813.38	9
+2008	Gulf	Gas	 Fuel Gas 	Royalties	5642675.46	19
+2008	Gulf	Oil	 Inlet Scrubber 	Royalties	191366.09	21
+2008	Gulf	Gas	 Flash Gas 	Royalties	2996859.78	37
+2008	Gulf	Oil	 Condensate 	Other Roy Vals	752683.92	25
+2008	Gulf	Gas	 Flash Gas 	Other Roy Vals	82.44	5
+2008	Gulf	Gas	 Gas Lost - Flared or Vented 	Other Roy Vals	53.97	3
+2008	Gulf	Oil	 Other Liquid Hydrocarbons 	Royalties	73394.68	4
+2008	Gulf	Oil	 Drip or Scrubber Condensate 	Other Roy Vals	12944.28	7
+2008	Gulf	Gas	 Coal Bed Methane 	Royalties	1946.69	1
+2008	Gulf	Sulfur		Other Revenues	-67.00	1
+2008	Gulf	Other	 Salt 	Royalties	-307.11	1
+2008	Gulf	Other	 Sulfur 	Royalties	64822.26	1
+2008	Pacific	Oil and Gas		Rents	18432.00	1
+2008	Pacific	Oil & Gas		Other Revenues	11750.56	1
+2008	Pacific	Oil	 Oil 	Other Roy Vals	-64374.81	1
+2008	Pacific	Oil & Gas		Other Roy Vals	-2474919.67	1
+2008	Pacific	Gas	 Fuel Gas 	Royalties	12351.73	1
+2008	Pacific	Gas	 Gas Lost - Flared or Vented 	Royalties	7468.53	1
+2008	Pacific	Gas	 Processed (Residue) Gas 	Royalties	26568267.83	1
+2008	Pacific	Gas	 Unprocessed (Wet) Gas 	Royalties	6139099.89	1
+2008	Pacific	NGL	 Gas Plant Products 	Royalties	1750016.85	1
+2008	Pacific	Oil	 Condensate 	Royalties	362432.51	1
+2008	Pacific	Oil	 Drip or Scrubber Condensate 	Royalties	328484.21	1
+2008	Pacific	Oil	 Oil 	Royalties	372721668.15	1
+2008	Pacific	Other	 Sulfur 	Royalties	209945.99	1
+2009	Alaska	Oil and Gas		Rents	6895639.00	14
+2009	Alaska	Oil	 Oil 	Other Roy Vals	69114054.51	1
+2009	Alaska	Oil	 Oil 	Royalties	-51600665.48	1
+2009	Atlantic	Wind		Rents	68319.68	2
+2009	Gulf	Oil and Gas		Bonus	1048869011.20	48
+2009	Gulf	Oil & Gas		Other Revenues	2035095.42	42
+2009	Gulf	Oil	 Oil 	Other Roy Vals	-1592817.15	39
+2009	Gulf	Oil & Gas		Other Roy Vals	15043711.35	56
+2009	Gulf	Oil and Gas		Rents	223433704.56	70
+2009	Gulf	Gas	 Processed (Residue) Gas 	Royalties	691214261.87	51
+2009	Gulf	Gas	 Unprocessed (Wet) Gas 	Royalties	59698955.38	56
+2009	Gulf	NGL	 Gas Plant Products 	Royalties	102173629.72	49
+2009	Gulf	Oil	 Condensate 	Royalties	89571913.71	53
+2009	Gulf	Oil	 Oil 	Royalties	2048172945.12	49
+2009	Gulf	Gas	 Flash Gas 	Royalties	3599628.98	39
+2009	Gulf	Oil	 Drip or Scrubber Condensate 	Royalties	8681597.73	35
+2009	Gulf	Gas	 Fuel Gas 	Other Roy Vals	7253.83	12
+2009	Gulf	Gas	 Processed (Residue) Gas 	Other Roy Vals	305939.89	9
+2009	Gulf	Gas	 Unprocessed (Wet) Gas 	Other Roy Vals	72396.68	13
+2009	Gulf	NGL	 Gas Plant Products 	Other Roy Vals	79962.93	9
+2009	Gulf	Oil	 Condensate 	Other Roy Vals	2142324.49	26
+2009	Gulf	Gas	 Fuel Gas 	Royalties	3959006.89	18
+2009	Gulf	Gas	 Flash Gas 	Other Roy Vals	38.18	5
+2009	Gulf	Gas	 Gas Lost - Flared or Vented 	Other Roy Vals	68.55	3
+2009	Gulf	Gas	 Gas Lost - Flared or Vented 	Royalties	20335.71	4
+2009	Gulf	Oil	 Inlet Scrubber 	Royalties	237205.22	20
+2009	Gulf	Oil	 Drip or Scrubber Condensate 	Other Roy Vals	22400.40	7
+2009	Gulf	Gas	 Coal Bed Methane 	Royalties	-6396.86	1
+2009	Gulf	Sulfur		Other Revenues	-73.04	1
+2009	Gulf	Oil	 Other Liquid Hydrocarbons 	Royalties	14421.62	1
+2009	Gulf	Other	 Sulfur 	Royalties	11264.60	1
+2009	Pacific	Oil and Gas		Rents	-18432.00	1
+2009	Pacific	Oil & Gas		Other Revenues	-60811.15	1
+2009	Pacific	Oil	 Oil 	Other Roy Vals	-62149.81	1
+2009	Pacific	Oil & Gas		Other Roy Vals	739315.61	1
+2009	Pacific	Gas	 Fuel Gas 	Royalties	5758.04	1
+2009	Pacific	Gas	 Gas Lost - Flared or Vented 	Royalties	2257.53	1
+2009	Pacific	Gas	 Processed (Residue) Gas 	Royalties	11424908.13	1
+2009	Pacific	Gas	 Unprocessed (Wet) Gas 	Royalties	3980068.94	1
+2009	Pacific	NGL	 Gas Plant Products 	Royalties	1564916.22	1
+2009	Pacific	Oil	 Condensate 	Royalties	158129.23	1
+2009	Pacific	Oil	 Drip or Scrubber Condensate 	Royalties	277217.97	1
+2009	Pacific	Oil	 Oil 	Royalties	181328214.03	1
+2009	Pacific	Other	 Sulfur 	Royalties	9717.06	1
+2010	Alaska	Oil and Gas		Rents	9103935.50	14
+2010	Alaska	Oil	 Oil 	Other Roy Vals	67208485.88	1
+2010	Alaska	Oil	 Oil 	Royalties	-47112968.27	1
+2010	Atlantic	Wind		Rents	139517.76	2
+2010	Gulf	Oil & Gas		Other Revenues	-2712956.76	40
+2010	Gulf	Oil	 Oil 	Other Roy Vals	508342.96	39
+2010	Gulf	Oil & Gas		Other Roy Vals	71696796.55	58
+2010	Gulf	Oil and Gas		Rents	225798251.78	66
+2010	Gulf	Gas	 Processed (Residue) Gas 	Royalties	662132270.32	52
+2010	Gulf	Gas	 Unprocessed (Wet) Gas 	Royalties	271407028.55	57
+2010	Gulf	NGL	 Gas Plant Products 	Royalties	221345675.88	49
+2010	Gulf	Oil	 Condensate 	Royalties	382796349.59	56
+2010	Gulf	Oil	 Oil 	Royalties	3544906095.40	48
+2010	Gulf	Oil and Gas		Bonus	876860418.01	40
+2010	Gulf	Gas	 Flash Gas 	Royalties	16439062.29	40
+2010	Gulf	Oil	 Drip or Scrubber Condensate 	Royalties	10443478.05	35
+2010	Gulf	Gas	 Fuel Gas 	Other Roy Vals	9209.35	12
+2010	Gulf	Gas	 Processed (Residue) Gas 	Other Roy Vals	310411.32	11
+2010	Gulf	Gas	 Unprocessed (Wet) Gas 	Other Roy Vals	-236330.27	13
+2010	Gulf	NGL	 Gas Plant Products 	Other Roy Vals	72740.03	10
+2010	Gulf	Oil	 Condensate 	Other Roy Vals	-444957.75	31
+2010	Gulf	Gas	 Fuel Gas 	Royalties	7160581.41	18
+2010	Gulf	Oil	 Inlet Scrubber 	Royalties	1261933.11	23
+2010	Gulf	Gas	 Flash Gas 	Other Roy Vals	131.08	4
+2010	Gulf	Gas	 Gas Lost - Flared or Vented 	Other Roy Vals	4.95	3
+2010	Gulf	Gas	 Gas Lost - Flared or Vented 	Royalties	308449.83	7
+2010	Gulf	Oil	 Other Liquid Hydrocarbons 	Royalties	6066.16	3
+2010	Gulf	Oil	 Drip or Scrubber Condensate 	Other Roy Vals	7615.69	7
+2010	Gulf	Gas	 Coal Bed Methane 	Royalties	4450.17	1
+2010	Gulf	Sulfur		Other Revenues	-71.92	1
+2010	Gulf	Other	 Sulfur 	Royalties	-15320.74	1
+2010	Pacific	Oil & Gas		Other Revenues	143208.80	1
+2010	Pacific	Oil	 Oil 	Other Roy Vals	-19586.58	1
+2010	Pacific	Oil & Gas		Other Roy Vals	-273622.85	1
+2010	Pacific	Gas	 Fuel Gas 	Royalties	11059.36	1
+2010	Pacific	Gas	 Gas Lost - Flared or Vented 	Royalties	4613.34	1
+2010	Pacific	Gas	 Processed (Residue) Gas 	Royalties	12785010.06	1
+2010	Pacific	Gas	 Unprocessed (Wet) Gas 	Royalties	2724711.49	1
+2010	Pacific	NGL	 Gas Plant Products 	Royalties	119516.72	1
+2010	Pacific	Oil	 Condensate 	Royalties	173876.82	1
+2010	Pacific	Oil	 Drip or Scrubber Condensate 	Royalties	520526.79	1
+2010	Pacific	Oil	 Oil 	Royalties	250284770.62	1
+2010	Pacific	Other	 Sulfur 	Royalties	17522.74	1
+2011	Alaska	Oil and Gas		Rents	4272202.50	8
+2011	Alaska	Oil	 Oil 	Other Roy Vals	-3781962.08	1
+2011	Alaska	Oil	 Oil 	Royalties	19131797.07	1
+2011	Atlantic	Wind		Rents	135247.84	2
+2011	Gulf	Oil & Gas		Other Revenues	2395544.54	39
+2011	Gulf	Oil	 Oil 	Other Roy Vals	4031859.36	39
+2011	Gulf	Oil & Gas		Other Roy Vals	33488950.14	59
+2011	Gulf	Oil and Gas		Rents	207978583.42	64
+2011	Gulf	Gas	 Processed (Residue) Gas 	Royalties	549317935.15	52
+2011	Gulf	Gas	 Unprocessed (Wet) Gas 	Royalties	266402158.15	57
+2011	Gulf	NGL	 Gas Plant Products 	Royalties	277916708.85	49
+2011	Gulf	Oil	 Condensate 	Royalties	644117883.01	55
+2011	Gulf	Oil	 Oil 	Royalties	4272374299.54	47
+2011	Gulf	Oil	 Inlet Scrubber 	Royalties	1458433.21	30
+2011	Gulf	Gas	 Flash Gas 	Royalties	-10245245.52	39
+2011	Gulf	Oil	 Drip or Scrubber Condensate 	Royalties	10858896.18	35
+2011	Gulf	Gas	 Fuel Gas 	Other Roy Vals	65347.69	13
+2011	Gulf	Gas	 Processed (Residue) Gas 	Other Roy Vals	369643.43	12
+2011	Gulf	Gas	 Unprocessed (Wet) Gas 	Other Roy Vals	50473.68	13
+2011	Gulf	NGL	 Gas Plant Products 	Other Roy Vals	-76033.32	16
+2011	Gulf	Oil	 Condensate 	Other Roy Vals	593133.42	32
+2011	Gulf	Gas	 Fuel Gas 	Royalties	5355892.59	16
+2011	Gulf	Gas	 Flash Gas 	Other Roy Vals	493.55	7
+2011	Gulf	Gas	 Gas Lost - Flared or Vented 	Royalties	256214.05	10
+2011	Gulf	Oil	 Other Liquid Hydrocarbons 	Royalties	30383.40	2
+2011	Gulf	Oil and Gas		Bonus	36751111.00	4
+2011	Gulf	Gas	 Gas Lost - Flared or Vented 	Other Roy Vals	400.70	4
+2011	Gulf	Oil	 Drip or Scrubber Condensate 	Other Roy Vals	29273.88	9
+2011	Gulf	Gas	 Coal Bed Methane 	Royalties	350.23	1
+2011	Gulf	Other	 Sulfur 	Royalties	2761.30	1
+2011	Pacific	Oil & Gas		Other Revenues	37857.33	1
+2011	Pacific	Oil & Gas		Other Roy Vals	-48382.91	1
+2011	Pacific	Gas	 Fuel Gas 	Royalties	5941.51	1
+2011	Pacific	Gas	 Gas Lost - Flared or Vented 	Royalties	6441.89	1
+2011	Pacific	Gas	 Processed (Residue) Gas 	Royalties	7992257.00	1
+2011	Pacific	Gas	 Unprocessed (Wet) Gas 	Royalties	-380780.13	1
+2011	Pacific	NGL	 Gas Plant Products 	Royalties	1173840.01	1
+2011	Pacific	Oil	 Condensate 	Royalties	127016.22	1
+2011	Pacific	Oil	 Drip or Scrubber Condensate 	Royalties	545839.48	1
+2011	Pacific	Oil	 Oil 	Royalties	308592480.83	1
+2011	Pacific	Other	 Sulfur 	Royalties	63584.56	1
+2012	Alaska	Oil and Gas		Rents	10365364.05	14
+2012	Alaska	Oil	 Oil 	Royalties	11414004.94	1
+2012	Atlantic	Wind		Rents	128842.84	1
+2012	Gulf	Oil and Gas		Bonus	2006549391.00	45
+2012	Gulf	Oil & Gas		Other Revenues	2716731.23	42
+2012	Gulf	Oil	 Oil 	Other Roy Vals	7483084.91	37
+2012	Gulf	Oil & Gas		Other Roy Vals	27213800.13	58
+2012	Gulf	Oil and Gas		Rents	233180701.33	62
+2012	Gulf	Gas	 Processed (Residue) Gas 	Royalties	363427395.20	51
+2012	Gulf	Gas	 Unprocessed (Wet) Gas 	Royalties	70683430.32	56
+2012	Gulf	NGL	 Gas Plant Products 	Royalties	222663393.19	50
+2012	Gulf	Oil	 Condensate 	Royalties	719268429.82	56
+2012	Gulf	Oil	 Drip or Scrubber Condensate 	Royalties	216458.43	35
+2012	Gulf	Oil	 Oil 	Royalties	4259097375.07	49
+2012	Gulf	Oil	 Inlet Scrubber 	Royalties	1659695.53	35
+2012	Gulf	NGL	 Gas Plant Products 	Other Roy Vals	835496.52	19
+2012	Gulf	Gas	 Flash Gas 	Royalties	-1773282.36	43
+2012	Gulf	Gas	 Flash Gas 	Other Roy Vals	194.60	9
+2012	Gulf	Gas	 Fuel Gas 	Other Roy Vals	88820.16	13
+2012	Gulf	Gas	 Gas Lost - Flared or Vented 	Other Roy Vals	1226.83	7
+2012	Gulf	Gas	 Processed (Residue) Gas 	Other Roy Vals	476559.06	14
+2012	Gulf	Gas	 Unprocessed (Wet) Gas 	Other Roy Vals	79745.78	13
+2012	Gulf	Oil	 Condensate 	Other Roy Vals	413355.85	35
+2012	Gulf	Oil	 Drip or Scrubber Condensate 	Other Roy Vals	40515.96	12
+2012	Gulf	Gas	 Fuel Gas 	Royalties	3864856.77	15
+2012	Gulf	Gas	 Gas Lost - Flared or Vented 	Royalties	-311042.31	11
+2012	Gulf	Oil	 Inlet Scrubber 	Other Roy Vals	862.79	4
+2012	Gulf	Oil & Gas		Royalties	-2.00	2
+2012	Gulf	Gas	 Coal Bed Methane 	Royalties	-89.94	1
+2012	Gulf	Oil	 Other Liquid Hydrocarbons 	Royalties	55280.38	3
+2012	Gulf	Other	 Sulfur 	Royalties	2312.94	1
+2012	Pacific	Oil & Gas		Other Revenues	55890.03	1
+2012	Pacific	Oil & Gas		Other Roy Vals	75743.95	1
+2012	Pacific	Gas	 Fuel Gas 	Royalties	7235.53	1
+2012	Pacific	Gas	 Gas Lost - Flared or Vented 	Royalties	-402.64	1
+2012	Pacific	Gas	 Processed (Residue) Gas 	Royalties	5312300.77	1
+2012	Pacific	Gas	 Unprocessed (Wet) Gas 	Royalties	476494.13	1
+2012	Pacific	NGL	 Gas Plant Products 	Royalties	811638.16	1
+2012	Pacific	Oil	 Condensate 	Royalties	251359.20	1
+2012	Pacific	Oil	 Drip or Scrubber Condensate 	Royalties	510637.59	1
+2012	Pacific	Oil	 Oil 	Royalties	292214723.77	1
+2012	Pacific	Other	 Sulfur 	Royalties	49553.05	1
+2013	Alaska	Oil and Gas		Rents	12687865.59	14
+2013	Alaska	Oil	 Oil 	Other Roy Vals	-7500.82	1
+2013	Alaska	Oil	 Oil 	Royalties	10565860.56	1
+2013	Atlantic	Wind		Bonus	4713568.50	3
+2013	Atlantic	Wind		Rents	1106665.92	3
+2013	Gulf	Oil and Gas		Bonus	1432958457.00	44
+2013	Gulf	Oil & Gas		Other Revenues	1556811.67	32
+2013	Gulf	Oil	 Oil 	Other Roy Vals	6017989.56	40
+2013	Gulf	Oil & Gas		Other Roy Vals	-2650342.02	55
+2013	Gulf	Oil and Gas		Rents	231738098.59	62
+2013	Gulf	Gas	 Processed (Residue) Gas 	Royalties	372883230.40	51
+2013	Gulf	Gas	 Unprocessed (Wet) Gas 	Royalties	114608943.37	57
+2013	Gulf	NGL	 Gas Plant Products 	Royalties	165151385.48	49
+2013	Gulf	Oil	 Condensate 	Royalties	609874960.18	55
+2013	Gulf	Oil	 Drip or Scrubber Condensate 	Royalties	7397630.22	34
+2013	Gulf	Oil	 Oil 	Royalties	4601319946.52	47
+2013	Gulf	Oil	 Inlet Scrubber 	Royalties	2555373.00	34
+2013	Gulf	NGL	 Gas Plant Products 	Other Roy Vals	-57341.64	24
+2013	Gulf	Gas	 Flash Gas 	Royalties	1503486.18	37
+2013	Gulf	Gas	 Flash Gas 	Other Roy Vals	57.16	9
+2013	Gulf	Gas	 Fuel Gas 	Other Roy Vals	30258.48	13
+2013	Gulf	Gas	 Gas Lost - Flared or Vented 	Other Roy Vals	809.70	8
+2013	Gulf	Gas	 Processed (Residue) Gas 	Other Roy Vals	219686.48	20
+2013	Gulf	Gas	 Unprocessed (Wet) Gas 	Other Roy Vals	9231.84	15
+2013	Gulf	Oil	 Condensate 	Other Roy Vals	795234.19	32
+2013	Gulf	Oil	 Drip or Scrubber Condensate 	Other Roy Vals	14429.49	10
+2013	Gulf	Gas	 Fuel Gas 	Royalties	3551193.04	19
+2013	Gulf	Gas	 Gas Lost - Flared or Vented 	Royalties	167568.16	11
+2013	Gulf	Oil	 Fuel Oil 	Other Roy Vals	-73792.85	1
+2013	Gulf	Oil	 Inlet Scrubber 	Other Roy Vals	0.15	4
+2013	Gulf	Gas	 Coal Bed Methane 	Royalties	-260.29	1
+2013	Gulf	Oil	 Other Liquid Hydrocarbons 	Royalties	27765.41	1
+2013	Gulf	Other	 Sulfur 	Royalties	1463.19	1
+2013	Gulf	Oil & Gas		#N/A	22464000.00	1
+2013	Pacific	Oil & Gas		Other Revenues	39703.60	1
+2013	Pacific	Oil & Gas		Other Roy Vals	-240344.56	1
+2013	Pacific	Gas	 Fuel Gas 	Royalties	1412.53	1
+2013	Pacific	Gas	 Gas Lost - Flared or Vented 	Royalties	-1110.44	1
+2013	Pacific	Gas	 Processed (Residue) Gas 	Royalties	6954918.55	1
+2013	Pacific	Gas	 Unprocessed (Wet) Gas 	Royalties	473683.49	1
+2013	Pacific	NGL	 Gas Plant Products 	Royalties	746044.97	1
+2013	Pacific	Oil	 Condensate 	Royalties	204504.83	1
+2013	Pacific	Oil	 Drip or Scrubber Condensate 	Royalties	432716.25	1
+2013	Pacific	Oil	 Oil 	Royalties	287181845.65	1
+2013	Pacific	Other	 Sulfur 	Royalties	20444.25	1

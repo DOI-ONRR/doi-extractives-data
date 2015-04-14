@@ -37,6 +37,13 @@ offshore/revenues-2013.tsv: input/site/EITI_Offshore_Revenues_by_Planning_Area_C
 		| $(datex) --set 'Revenue = parse.dollars(Revenue)' \
 		| tito --write tsv > $@
 
+offshore/revenues-yearly.tsv: input/onrr/offshore-revenues.tsv
+	mkdir -p $(dir $@)
+	bin/group-offshore-revenues.js \
+		--keys Year/Region/Commodity/Product/Type \
+		--count Count \
+		$< > $@
+
 county/revenues-yearly.tsv: input/onrr/county-revenues.tsv
 	mkdir -p $(dir $@)
 	tito --read tsv $< \

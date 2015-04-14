@@ -91,9 +91,10 @@ request(url)
 function mapRow(row, enc, next) {
   return next(null, {
     Year:     row.Year,
-    Industry: row.IndustrYDescription,
-    Code:     row.Industry,
-    GDP:      +row.DataValue
+    // nice typo, guys
+    Industry: row.IndustryDescription || row.IndustrYDescription,
+    // Code:     row.Industry,
+    GDP:      row.DataValue
   });
 }
 

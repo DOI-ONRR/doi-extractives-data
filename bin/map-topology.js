@@ -33,13 +33,17 @@ if (keep && keep !== true && !Array.isArray(keep)) {
   keep = [keep];
 }
 
+var keepLayer = function(layer) {
+  return keep === true || (keep && keep.indexOf(layer) > -1);
+};
+
 util.readJSON(options._[0], function(error, topology) {
   var layers = [];
   for (var layer in topology.objects) {
     var objects = topology.objects[layer];
     var geoms = objects.geometries;
     var pmap = props[layer];
-    if (pmap === true || keep === true || keep.indexOf(layer) > -1) {
+    if (pmap === true || keepLayer(layer)) {
       // do nothing
       console.warn('preserving layer: "%s"', layer);
     } else if (pmap) {

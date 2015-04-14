@@ -21,6 +21,7 @@ national/royalties-yearly.tsv: input/site/2003-2013-royalty-data.csv
 	mkdir -p $(dir $@)
 	$(tito) --read csv $< \
 		| $(datex) --set 'Royalty = parse.dollars(Royalty)' \
+			--require 'util=./lib/util' --set 'Commodity = util.titleCase(Commodity)' \
 		| tito --write tsv > $@
 
 national/gdp-yearly.tsv: input/bea/gdp-by-industry.csv

@@ -8,7 +8,7 @@ npm install
 ```
 
 This will install all the data collection and transformation dependencies. If
-you wish to run the tests, run:
+you wish to run the [tests](test/), run:
 
 ```sh
 npm install --dev

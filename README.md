@@ -7,8 +7,18 @@ This branch is for data collection and transformation. Everything here uses
 npm install
 ```
 
-This will install all the data collection and transformation dependencies. If
-you wish to run the [tests](test/), run:
+This will install all the data collection and transformation dependencies. To
+rebuild the files, run:
+
+```
+make -B
+```
+
+Take a look at the [Makefile](Makefile) and the [bin directory](bin/) if you
+want to see how the sausage is made.
+
+## Tests
+If you wish to run the [tests](test/), run:
 
 ```sh
 npm install --dev

@@ -140,3 +140,19 @@ describe('util.group()', function() {
     ]);
   });
 });
+
+describe('util.range()', function() {
+  var range = util.range;
+  it('returns a single number', function() {
+    assert.deepEqual(range(2001), [2001]);
+  });
+  it('returns a range of number', function() {
+    assert.deepEqual(range(2001, 2006), [2001, 2002, 2003, 2004, 2005, 2006]);
+  });
+  it('returns a sequence of numbers', function() {
+    assert.deepEqual(range('2001,2006'), [2001, 2006]);
+  });
+  it('parses mixed sequences and ranges', function() {
+    assert.deepEqual(range('2001,2006-2008'), [2001, 2006, 2007, 2008]);
+  });
+});

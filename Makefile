@@ -2,7 +2,6 @@ BIN = ./node_modules/.bin
 
 tito = $(BIN)/tito
 datex = $(BIN)/datex --require parse=./lib/parse
-topojson = $(BIN)/topojson
 
 FILES = \
 	national/revenues-yearly.tsv \
@@ -10,12 +9,9 @@ FILES = \
 	offshore/revenues-2013.tsv \
 	state/revenues-2013.tsv \
 	county/revenues-yearly.tsv \
-	county-revenues-by-state \
-	geo/us-topology.json \
-	geo/us-states.json \
-	geo/us-outline.json
+	county-revenues-by-state
 
-all: $(FILES)
+all: $(FILES) geo svg
 
 national/revenues-yearly.tsv: input/site/2003-2013-revenue-data-CY.csv
 	mkdir -p $(dir $@)
@@ -73,7 +69,6 @@ geo/us-topology.json: input/geo/us-10m.json
 		--filter.states '["AS", "GU", "PR", "VI"].indexOf(abbr) === -1' \
 		--props.counties '{state: STATE, county: COUNTY, FIPS: FIPS}' \
 		--filter.counties '["AS", "GU", "PR", "VI"].indexOf(state) === -1' \
-		--keep land \
 		-o $@ -- $<
 
 # generate US topology for only those counties with data
@@ -100,7 +95,7 @@ geo/us-states.json: geo/us-topology.json
 		$< > $@
 
 geo/offshore.json: input/geo/offshore/*.json
-	topojson \
+	$(BIN)/topojson \
 		--id-property MMS_PLAN_A \
 		-p id=MMS_PLAN_A \
 		-p label=TEXT_LABEL \
@@ -115,13 +110,12 @@ svg: \
 	svg/filtered.svg
 
 svg/all.svg: \
-		geo/us-outline.json \
 		geo/us-topology.json \
 		geo/offshore.json
 	mkdir -p $(dir $@)
 	bin/vectorize.js $^ > $@
 
-svg/land.svg: geo/us-topology.json
+svg/land.svg: input/geo/us-10m.json
 	mkdir -p $(dir $@)
 	bin/extract-topology.js --layer land $< \
 		| bin/vectorize.js /dev/stdin > $@

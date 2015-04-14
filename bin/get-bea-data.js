@@ -1,5 +1,4 @@
-require('epipebomb')();
-
+#!/usr/bin/env node
 var options = require('../lib/args')({
   usage: '$0 [--geo us|state|county] [options] [-o file]',
   wrap: 100,
@@ -28,6 +27,8 @@ var options = require('../lib/args')({
     desc: 'write results to this filename'
   }
 });
+
+require('epipebomb')();
 
 var tito = require('tito').formats;
 var request = require('request');

@@ -1,0 +1,154 @@
+[
+  {
+    "Key": "1",
+    "Descr": "Value Added by Industry (A) (Q)"
+  },
+  {
+    "Key": "5",
+    "Descr": "Value Added by Industry as a Percentage of Gross Domestic Product (A) (Q)"
+  },
+  {
+    "Key": "6",
+    "Descr": "Components of Value Added by Industry (A)"
+  },
+  {
+    "Key": "7",
+    "Descr": "Components of Value Added by Industry as a Percentage of Value Added (A)"
+  },
+  {
+    "Key": "8",
+    "Descr": "Chain-Type Quantity Indexes for Value Added by Industry (A) (Q)"
+  },
+  {
+    "Key": "9",
+    "Descr": "Percent Changes in Chain-Type Quantity Indexes for Value Added by Industry (A) (Q)"
+  },
+  {
+    "Key": "10",
+    "Descr": "Real Value Added by Industry (A) (Q)"
+  },
+  {
+    "Key": "11",
+    "Descr": "Chain-Type Price Indexes for Value Added by Industry (A) (Q)"
+  },
+  {
+    "Key": "12",
+    "Descr": "Percent Changes in Chain-Type Price Indexes for Value Added by Industry (A) (Q)"
+  },
+  {
+    "Key": "13",
+    "Descr": "Contributions to Percent Change in Real Gross Domestic Product by Industry (A) (Q)"
+  },
+  {
+    "Key": "14",
+    "Descr": "Contributions to Percent Change in the Chain-Type Price Index for Gross Domestic Product by Industry (A) (Q)"
+  },
+  {
+    "Key": "15",
+    "Descr": "Gross Output by Industry (A) (Q)"
+  },
+  {
+    "Key": "16",
+    "Descr": "Chain-Type Quantity Indexes for Gross Output by Industry (A) (Q)"
+  },
+  {
+    "Key": "17",
+    "Descr": "Percent Changes in Chain-Type Quantity Indexes for Gross Output by Industry (A) (Q)"
+  },
+  {
+    "Key": "18",
+    "Descr": "Chain-Type Price Indexes for Gross Output by Industry (A) (Q)"
+  },
+  {
+    "Key": "19",
+    "Descr": "Percent Changes in Chain-Type Price Indexes for Gross Output by Industry (A) (Q)"
+  },
+  {
+    "Key": "20",
+    "Descr": "Intermediate Inputs by Industry (A) (Q)"
+  },
+  {
+    "Key": "21",
+    "Descr": "Chain-Type Quantity Indexes for Intermediate Inputs by Industry (A) (Q)"
+  },
+  {
+    "Key": "22",
+    "Descr": "Percent Changes in Chain-Type Quantity Indexes for Intermediate Inputs by Industry (A) (Q)"
+  },
+  {
+    "Key": "23",
+    "Descr": "Chain-Type Price Indexes for Intermediate Inputs by Industry (A) (Q)"
+  },
+  {
+    "Key": "24",
+    "Descr": "Percent Changes in Chain-Type Price Indexes for Intermediate Inputs by Industry (A) (Q)"
+  },
+  {
+    "Key": "25",
+    "Descr": "Composition of Gross Output by Industry (A)"
+  },
+  {
+    "Key": "26",
+    "Descr": "Shares of Gross Output by Industry (A)"
+  },
+  {
+    "Key": "27",
+    "Descr": "Cost per Unit of Real Gross Output by Industry Group (A)"
+  },
+  {
+    "Key": "29",
+    "Descr": "Contributions to Percent Change in Chain-Type Quantity Indexes for Gross Output by Industry Group (A)"
+  },
+  {
+    "Key": "30",
+    "Descr": "Contributions to Percent Change in Chain-Type Price Indexes for Gross Output by Industry Group (A)"
+  },
+  {
+    "Key": "31",
+    "Descr": "Chain-Type Quantity Indexes for Energy Inputs by Industry (A)"
+  },
+  {
+    "Key": "32",
+    "Descr": "Contributions to Percent Change by Industry in the Chain-Type Quantity Index for All Industries Energy Inputs (A)"
+  },
+  {
+    "Key": "33",
+    "Descr": "Chain-Type Price Indexes for Energy Inputs by Industry (A)"
+  },
+  {
+    "Key": "34",
+    "Descr": "Contributions to Percent Change by Industry in the Chain-Type Price Index for All Industries Energy Inputs (A)"
+  },
+  {
+    "Key": "35",
+    "Descr": "Chain-Type Quantity Indexes for Materials Inputs by Industry (A)"
+  },
+  {
+    "Key": "36",
+    "Descr": "Contributions to Percent Change by Industry in the Chain-Type Quantity Index for All Industries Materials Inputs (A)"
+  },
+  {
+    "Key": "37",
+    "Descr": "Chain-Type Price Indexes for Materials Inputs by Industry (A)"
+  },
+  {
+    "Key": "38",
+    "Descr": "Contributions to Percent Change by Industry in the Chain-Type Price Index for All Industries Materials Inputs (A)"
+  },
+  {
+    "Key": "39",
+    "Descr": "Chain-Type Quantity Indexes for Purchased Service Inputs by Industry (A)"
+  },
+  {
+    "Key": "40",
+    "Descr": "Contributions to Percent Change by Industry in the Chain-Type Quantity Index for All Industries Purchased Service Inputs (A)"
+  },
+  {
+    "Key": "41",
+    "Descr": "Chain-Type Price Indexes for Purchased Service Inputs by Industry (A)"
+  },
+  {
+    "Key": "42",
+    "Descr": "Contributions to Percent Change by Industry in the Chain-Type Price Index for All Industries Purchased Service Inputs (A)"
+  }
+]

@@ -1,0 +1,470 @@
+[
+  {
+    "KeyCode": "GDP_SP",
+    "Description": "GDP in current dollars (state annual product)"
+  },
+  {
+    "KeyCode": "RGDP_SP",
+    "Description": "Real GDP in chained dollars (state annual product)"
+  },
+  {
+    "KeyCode": "PCRGDP_SP",
+    "Description": "Per capita real GDP (state annual product)"
+  },
+  {
+    "KeyCode": "COMP_SP",
+    "Description": "Compensation of employees (state annual product)"
+  },
+  {
+    "KeyCode": "TOPILS_SP",
+    "Description": "Taxes on production and imports less subsidies (state annual product)"
+  },
+  {
+    "KeyCode": "GOS_SP",
+    "Description": "Gross operating surplus (state annual product)"
+  },
+  {
+    "KeyCode": "SUBS_SP",
+    "Description": "Subsidies (state annual product)"
+  },
+  {
+    "KeyCode": "TOPI_SP",
+    "Description": "Taxes on production and imports (state annual product)"
+  },
+  {
+    "KeyCode": "GDP_MP",
+    "Description": "GDP in current dollars (MSA annual product)"
+  },
+  {
+    "KeyCode": "RGDP_MP",
+    "Description": "Real GDP in chained dollars (MSA annual product)"
+  },
+  {
+    "KeyCode": "PCRGDP_MP",
+    "Description": "Per capita real GDP (MSA annual product)"
+  },
+  {
+    "KeyCode": "TPI_SI",
+    "Description": "Total personal income (state annual income)"
+  },
+  {
+    "KeyCode": "POP_SI",
+    "Description": "Population (state annual income)"
+  },
+  {
+    "KeyCode": "PCPI_SI",
+    "Description": "Per capita personal income (state annual income)"
+  },
+  {
+    "KeyCode": "NFPI_SI",
+    "Description": "Nonfarm personal income (state annual income)"
+  },
+  {
+    "KeyCode": "FPI_SI",
+    "Description": "Farm income (state annual income)"
+  },
+  {
+    "KeyCode": "EARN_SI",
+    "Description": "Earnings by place of work (state annual income)"
+  },
+  {
+    "KeyCode": "CGSI_SI",
+    "Description": "Contributions for government social insurance (state annual income)"
+  },
+  {
+    "KeyCode": "AR_SI",
+    "Description": "Adjustment for residence (state annual income)"
+  },
+  {
+    "KeyCode": "NE_SI",
+    "Description": "Net earnings by place of residence (state annual income)"
+  },
+  {
+    "KeyCode": "DIR_SI",
+    "Description": "Dividends, interest, and rent (state annual income)"
+  },
+  {
+    "KeyCode": "PCTR_SI",
+    "Description": "Personal current transfer receipts (state annual income)"
+  },
+  {
+    "KeyCode": "WS_SI",
+    "Description": "Wages and salaries (state annual income)"
+  },
+  {
+    "KeyCode": "SUPP_SI",
+    "Description": "Supplements to wages and salaries (state annual income)"
+  },
+  {
+    "KeyCode": "PROP_SI",
+    "Description": "Proprietors Income (state annual income)"
+  },
+  {
+    "KeyCode": "EMP000_SI",
+    "Description": "Total employment (full and part time) (state annual income)"
+  },
+  {
+    "KeyCode": "EMP100_SI",
+    "Description": "Wage and salary employment (state annual income)"
+  },
+  {
+    "KeyCode": "EMP200_SI",
+    "Description": "Proprietors employment (state annual income)"
+  },
+  {
+    "KeyCode": "PJEARN_SI",
+    "Description": "Average earnings per job (state annual income)"
+  },
+  {
+    "KeyCode": "PJWS_SI",
+    "Description": "Average wage per job (state annual income)"
+  },
+  {
+    "KeyCode": "PJCOMP_SI",
+    "Description": "Average compensation per job (state annual income)"
+  },
+  {
+    "KeyCode": "DPI_SI",
+    "Description": "Disposable personal income (state annual income)"
+  },
+  {
+    "KeyCode": "PCDPI_SI",
+    "Description": "Per capita disposable personal income (dollars) (state annual income)"
+  },
+  {
+    "KeyCode": "PCNE_SI",
+    "Description": "Per capita net earnings (state annual income)"
+  },
+  {
+    "KeyCode": "PCTRAN_SI",
+    "Description": "Per capita personal current transfer receipts (state annual income)"
+  },
+  {
+    "KeyCode": "PCINCMAIN_SI",
+    "Description": "Per capita income maintenance (state annual income)"
+  },
+  {
+    "KeyCode": "PCUNIC_SI",
+    "Description": "Per capita unemployment insurance compensation (state annual income)"
+  },
+  {
+    "KeyCode": "PCRET_SI",
+    "Description": "Per capita retirement and other (state annual income)"
+  },
+  {
+    "KeyCode": "PCDIR_SI",
+    "Description": "Per capita dividends, interest, and rent (state annual income)"
+  },
+  {
+    "KeyCode": "TPI_CI",
+    "Description": "Total personal income (county annual income)"
+  },
+  {
+    "KeyCode": "POP_CI",
+    "Description": "Population (county annual income)"
+  },
+  {
+    "KeyCode": "PCPI_CI",
+    "Description": "Per capita personal income (county annual income)"
+  },
+  {
+    "KeyCode": "NFPI_CI",
+    "Description": "Nonfarm personal income (county annual income)"
+  },
+  {
+    "KeyCode": "FPI_CI",
+    "Description": "Farm income (county annual income)"
+  },
+  {
+    "KeyCode": "EARN_CI",
+    "Description": "Earnings by place of work (county annual income)"
+  },
+  {
+    "KeyCode": "CGSI_CI",
+    "Description": "Contributions for government social insurance (county annual income)"
+  },
+  {
+    "KeyCode": "AR_CI",
+    "Description": "Adjustment for residence (county annual income)"
+  },
+  {
+    "KeyCode": "NE_CI",
+    "Description": "Net earnings by place of residence (county annual income)"
+  },
+  {
+    "KeyCode": "DIR_CI",
+    "Description": "Dividends, interest, and rent (county annual income)"
+  },
+  {
+    "KeyCode": "PCTR_CI",
+    "Description": "Personal current transfer receipts (county annual income)"
+  },
+  {
+    "KeyCode": "WS_CI",
+    "Description": "Wages and salaries (county annual income)"
+  },
+  {
+    "KeyCode": "SUPP_CI",
+    "Description": "Supplements to wages and salaries (county annual income)"
+  },
+  {
+    "KeyCode": "PROP_CI",
+    "Description": "Proprietors' Income (county annual income)"
+  },
+  {
+    "KeyCode": "EMP000_CI",
+    "Description": "Total employment (full and part time) (county annual income)"
+  },
+  {
+    "KeyCode": "EMP100_CI",
+    "Description": "Wage and salary employment (county annual income)"
+  },
+  {
+    "KeyCode": "EMP200_CI",
+    "Description": "Proprietors employment (county annual income)"
+  },
+  {
+    "KeyCode": "PJEARN_CI",
+    "Description": "Average earnings per job (county annual income)"
+  },
+  {
+    "KeyCode": "PJWS_CI",
+    "Description": "Average wage per job (county annual income)"
+  },
+  {
+    "KeyCode": "PJCOMP_CI",
+    "Description": "Average compensation per job (county annual income)"
+  },
+  {
+    "KeyCode": "PCNE_CI",
+    "Description": "Per capita net earnings (county annual income)"
+  },
+  {
+    "KeyCode": "PCTRAN_CI",
+    "Description": "Per capita personal current transfer receipts (county annual income)"
+  },
+  {
+    "KeyCode": "PCINCMAIN_CI",
+    "Description": "Per capita income maintenance (county annual income)"
+  },
+  {
+    "KeyCode": "PCUNIC_CI",
+    "Description": "Per capita unemployment insurance compensation (county annual income)"
+  },
+  {
+    "KeyCode": "PCRET_CI",
+    "Description": "Per capita retirement and other (county annual income)"
+  },
+  {
+    "KeyCode": "PCDIR_CI",
+    "Description": "Per capita dividends, interest, and rent (county annual income)"
+  },
+  {
+    "KeyCode": "TPI_MI",
+    "Description": "Total personal income (MSA annual income)"
+  },
+  {
+    "KeyCode": "POP_MI",
+    "Description": "Population (MSA annual income)"
+  },
+  {
+    "KeyCode": "PCPI_MI",
+    "Description": "Per capita personal income (MSA annual income)"
+  },
+  {
+    "KeyCode": "NFPI_MI",
+    "Description": "Nonfarm personal income (MSA annual income)"
+  },
+  {
+    "KeyCode": "FPI_MI",
+    "Description": "Farm income (MSA annual income)"
+  },
+  {
+    "KeyCode": "EARN_MI",
+    "Description": "Earnings by place of work (MSA annual income)"
+  },
+  {
+    "KeyCode": "CGSI_MI",
+    "Description": "Contributions for government social insurance (MSA annual income)"
+  },
+  {
+    "KeyCode": "AR_MI",
+    "Description": "Adjustment for residence (MSA annual income)"
+  },
+  {
+    "KeyCode": "NE_MI",
+    "Description": "Net earnings by place of residence (MSA annual income)"
+  },
+  {
+    "KeyCode": "DIR_MI",
+    "Description": "Dividends, interest, and rent (MSA annual income)"
+  },
+  {
+    "KeyCode": "PCTR_MI",
+    "Description": "Personal current transfer receipts (MSA annual income)"
+  },
+  {
+    "KeyCode": "WS_MI",
+    "Description": "Wages and salaries (MSA annual income)"
+  },
+  {
+    "KeyCode": "SUPP_MI",
+    "Description": "Supplements to wages and salaries (MSA annual income)"
+  },
+  {
+    "KeyCode": "PROP_MI",
+    "Description": "Proprietors income (MSA annual income)"
+  },
+  {
+    "KeyCode": "EMP000_MI",
+    "Description": "Total employment (full and part time) (MSA annual income)"
+  },
+  {
+    "KeyCode": "EMP100_MI",
+    "Description": "Wage and salary employment (MSA annual income)"
+  },
+  {
+    "KeyCode": "EMP200_MI",
+    "Description": "Proprietors employment (MSA annual income)"
+  },
+  {
+    "KeyCode": "PJEARN_MI",
+    "Description": "Average earnings per job (MSA annual income)"
+  },
+  {
+    "KeyCode": "PJWS_MI",
+    "Description": "Average wage per job (MSA annual income)"
+  },
+  {
+    "KeyCode": "PJCOMP_MI",
+    "Description": "Average compensation per job (MSA annual income)"
+  },
+  {
+    "KeyCode": "PCNE_MI",
+    "Description": "Per capita net earnings (MSA annual income)"
+  },
+  {
+    "KeyCode": "PCTRAN_MI",
+    "Description": "Per capita personal current transfer receipts (MSA annual income)"
+  },
+  {
+    "KeyCode": "PCINCMAIN_MI",
+    "Description": "Per capita income maintenance (MSA annual income)"
+  },
+  {
+    "KeyCode": "PCUNIC_MI",
+    "Description": "Per capita unemployment insurance compensation (MSA annual income)"
+  },
+  {
+    "KeyCode": "PCRET_MI",
+    "Description": "Per capita retirement and other (MSA annual income)"
+  },
+  {
+    "KeyCode": "PCDIR_MI",
+    "Description": "Per capita dividends, interest, and rent (MSA annual income)"
+  },
+  {
+    "KeyCode": "TPI_QI",
+    "Description": "Total personal income (state quarterly income)"
+  },
+  {
+    "KeyCode": "NFPI_QI",
+    "Description": "Nonfarm personal income (state quarterly income)"
+  },
+  {
+    "KeyCode": "FPI_QI",
+    "Description": "Farm income (state quarterly income)"
+  },
+  {
+    "KeyCode": "EARN_QI",
+    "Description": "Earnings by place of work (state quarterly income)"
+  },
+  {
+    "KeyCode": "CGSI_QI",
+    "Description": "Contributions for government social insurance (state quarterly income)"
+  },
+  {
+    "KeyCode": "AR_QI",
+    "Description": "Adjustment for residence (state quarterly income)"
+  },
+  {
+    "KeyCode": "NE_QI",
+    "Description": "Net earnings by place of residence (state quarterly income)"
+  },
+  {
+    "KeyCode": "DIR_QI",
+    "Description": "Dividends, interest, and rent (state quarterly income)"
+  },
+  {
+    "KeyCode": "PCTR_QI",
+    "Description": "Personal current transfer receipts (state quarterly income)"
+  },
+  {
+    "KeyCode": "WS_QI",
+    "Description": "Wages and salaries (state quarterly income)"
+  },
+  {
+    "KeyCode": "SUPP_QI",
+    "Description": "Supplements to wages and salaries (state quarterly income)"
+  },
+  {
+    "KeyCode": "PROP_QI",
+    "Description": "Proprietors income (state quarterly income)"
+  },
+  {
+    "KeyCode": "RPI_SI",
+    "Description": "Real personal income (state regional price parities)"
+  },
+  {
+    "KeyCode": "RPCPI_SI",
+    "Description": "Per capita real personal income (state regional price parities)"
+  },
+  {
+    "KeyCode": "RPPIPD_SI",
+    "Description": "Implicit regional price deflator (state regional price parities)"
+  },
+  {
+    "KeyCode": "RPPALL_SI",
+    "Description": "RPPs: All items (state regional price parities)"
+  },
+  {
+    "KeyCode": "RPPGOODS_SI",
+    "Description": "RPPs: Goods (state regional price parities)"
+  },
+  {
+    "KeyCode": "RPPRENTS_SI",
+    "Description": "RPPs: Services: Rents (state regional price parities)"
+  },
+  {
+    "KeyCode": "RPPOTHER_SI",
+    "Description": "RPPs: Services: Other (state regional price parities)"
+  },
+  {
+    "KeyCode": "RPI_MI",
+    "Description": "Real personal income (MSA regional price parities)"
+  },
+  {
+    "KeyCode": "RPCPI_MI",
+    "Description": "Per capita real personal income (MSA regional price parities)"
+  },
+  {
+    "KeyCode": "RPPIPD_MI",
+    "Description": "Implicit regional price deflator (MSA regional price parities)"
+  },
+  {
+    "KeyCode": "RPPALL_MI",
+    "Description": "RPPs: All items (MSA regional price parities)"
+  },
+  {
+    "KeyCode": "RPPGOODS_MI",
+    "Description": "RPPs: Goods (MSA regional price parities)"
+  },
+  {
+    "KeyCode": "RPPRENTS_MI",
+    "Description": "RPPs: Services: Rents (MSA regional price parities)"
+  },
+  {
+    "KeyCode": "RPPOTHER_MI",
+    "Description": "RPPs: Services: Other (MSA regional price parities)"
+  }
+]

@@ -4,7 +4,8 @@ geographic data from the [input directory](../input). Each one provides help
 usage via the `--help` (or `-h`) flag, e.g.:
 
 ```sh
-bin/vectorize.js --help
+$ bin/vectorize.js --help
+
 vectorize.js [options] a.json b.json
 
 Options:

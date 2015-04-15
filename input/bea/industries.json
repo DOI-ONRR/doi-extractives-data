@@ -1,0 +1,410 @@
+[
+  {
+    "Key": "GDP",
+    "Desc": "Gross domestic product (A,Q)"
+  },
+  {
+    "Key": "II",
+    "Desc": "All industries (A,Q)"
+  },
+  {
+    "Key": "PVT",
+    "Desc": "Private industries (A,Q)"
+  },
+  {
+    "Key": "11",
+    "Desc": "Agriculture, forestry, fishing, and hunting (A,Q)"
+  },
+  {
+    "Key": "111CA",
+    "Desc": "Farms (A)"
+  },
+  {
+    "Key": "113FF",
+    "Desc": "Forestry, fishing, and related activities (A)"
+  },
+  {
+    "Key": "21",
+    "Desc": "Mining (A,Q)"
+  },
+  {
+    "Key": "211",
+    "Desc": "Oil and gas extraction (A)"
+  },
+  {
+    "Key": "212",
+    "Desc": "Mining, except oil and gas (A)"
+  },
+  {
+    "Key": "213",
+    "Desc": "Support activities for mining (A)"
+  },
+  {
+    "Key": "22",
+    "Desc": "Utilities (A,Q)"
+  },
+  {
+    "Key": "23",
+    "Desc": "Construction (A,Q)"
+  },
+  {
+    "Key": "31G",
+    "Desc": "Manufacturing (A,Q)"
+  },
+  {
+    "Key": "33DG",
+    "Desc": "Durable goods (A,Q)"
+  },
+  {
+    "Key": "321",
+    "Desc": "Wood products (A)"
+  },
+  {
+    "Key": "327",
+    "Desc": "Nonmetallic mineral products (A)"
+  },
+  {
+    "Key": "331",
+    "Desc": "Primary metals (A)"
+  },
+  {
+    "Key": "332",
+    "Desc": "Fabricated metal products (A)"
+  },
+  {
+    "Key": "333",
+    "Desc": "Machinery (A)"
+  },
+  {
+    "Key": "334",
+    "Desc": "Computer and electronic products (A)"
+  },
+  {
+    "Key": "335",
+    "Desc": "Electrical equipment, appliances, and components (A)"
+  },
+  {
+    "Key": "3361MV",
+    "Desc": "Motor vehicles, bodies and trailers, and parts (A)"
+  },
+  {
+    "Key": "3364OT",
+    "Desc": "Other transportation equipment (A)"
+  },
+  {
+    "Key": "337",
+    "Desc": "Furniture and related products (A)"
+  },
+  {
+    "Key": "339",
+    "Desc": "Miscellaneous manufacturing (A)"
+  },
+  {
+    "Key": "31ND",
+    "Desc": "Nondurable goods (A,Q)"
+  },
+  {
+    "Key": "311FT",
+    "Desc": "Food and beverage and tobacco products (A)"
+  },
+  {
+    "Key": "313TT",
+    "Desc": "Textile mills and textile product mills (A)"
+  },
+  {
+    "Key": "315AL",
+    "Desc": "Apparel and leather and allied products (A)"
+  },
+  {
+    "Key": "322",
+    "Desc": "Paper products (A)"
+  },
+  {
+    "Key": "323",
+    "Desc": "Printing and related support activities (A)"
+  },
+  {
+    "Key": "324",
+    "Desc": "Petroleum and coal products (A)"
+  },
+  {
+    "Key": "325",
+    "Desc": "Chemical products (A)"
+  },
+  {
+    "Key": "326",
+    "Desc": "Plastics and rubber products (A)"
+  },
+  {
+    "Key": "42",
+    "Desc": "Wholesale trade (A,Q)"
+  },
+  {
+    "Key": "44RT",
+    "Desc": "Retail trade (A,Q)"
+  },
+  {
+    "Key": "441",
+    "Desc": "Motor vehicle and parts dealers (A)"
+  },
+  {
+    "Key": "445",
+    "Desc": "Food and beverage stores (A)"
+  },
+  {
+    "Key": "452",
+    "Desc": "General merchandise stores (A)"
+  },
+  {
+    "Key": "4A0",
+    "Desc": "Other retail (A)"
+  },
+  {
+    "Key": "48TW",
+    "Desc": "Transportation and warehousing (A,Q)"
+  },
+  {
+    "Key": "481",
+    "Desc": "Air transportation (A)"
+  },
+  {
+    "Key": "482",
+    "Desc": "Rail transportation (A)"
+  },
+  {
+    "Key": "483",
+    "Desc": "Water transportation (A)"
+  },
+  {
+    "Key": "484",
+    "Desc": "Truck transportation (A)"
+  },
+  {
+    "Key": "485",
+    "Desc": "Transit and ground passenger transportation (A)"
+  },
+  {
+    "Key": "486",
+    "Desc": "Pipeline transportation (A)"
+  },
+  {
+    "Key": "487OS",
+    "Desc": "Other transportation and support activities (A)"
+  },
+  {
+    "Key": "493",
+    "Desc": "Warehousing and storage (A)"
+  },
+  {
+    "Key": "51",
+    "Desc": "Information (A,Q)"
+  },
+  {
+    "Key": "511",
+    "Desc": "Publishing industries, except internet (includes software) (A)"
+  },
+  {
+    "Key": "512",
+    "Desc": "Motion picture and sound recording industries (A)"
+  },
+  {
+    "Key": "513",
+    "Desc": "Broadcasting and telecommunications (A)"
+  },
+  {
+    "Key": "514",
+    "Desc": "Data processing, internet publishing, and other information services (A)"
+  },
+  {
+    "Key": "FIRE",
+    "Desc": "Finance, insurance, real estate, rental, and leasing (A,Q)"
+  },
+  {
+    "Key": "52",
+    "Desc": "Finance and insurance (A,Q)"
+  },
+  {
+    "Key": "521CI",
+    "Desc": "Federal Reserve banks, credit intermediation, and related activities (A)"
+  },
+  {
+    "Key": "523",
+    "Desc": "Securities, commodity contracts, and investments (A)"
+  },
+  {
+    "Key": "524",
+    "Desc": "Insurance carriers and related activities (A)"
+  },
+  {
+    "Key": "525",
+    "Desc": "Funds, trusts, and other financial vehicles (A)"
+  },
+  {
+    "Key": "53",
+    "Desc": "Real estate and rental and leasing (A,Q)"
+  },
+  {
+    "Key": "531",
+    "Desc": "Real estate (A)"
+  },
+  {
+    "Key": "HS",
+    "Desc": "Housing (A)"
+  },
+  {
+    "Key": "ORE",
+    "Desc": "Other real estate (A)"
+  },
+  {
+    "Key": "532RL",
+    "Desc": "Rental and leasing services and lessors of intangible assets (A)"
+  },
+  {
+    "Key": "PROF",
+    "Desc": "Professional and business services (A,Q)"
+  },
+  {
+    "Key": "54",
+    "Desc": "Professional, scientific, and technical services (A,Q)"
+  },
+  {
+    "Key": "5411",
+    "Desc": "Legal services (A)"
+  },
+  {
+    "Key": "5415",
+    "Desc": "Computer systems design and related services (A)"
+  },
+  {
+    "Key": "5412OP",
+    "Desc": "Miscellaneous professional, scientific, and technical services (A)"
+  },
+  {
+    "Key": "55",
+    "Desc": "Management of companies and enterprises (A,Q)"
+  },
+  {
+    "Key": "56",
+    "Desc": "Administrative and waste management services (A,Q)"
+  },
+  {
+    "Key": "561",
+    "Desc": "Administrative and support services (A)"
+  },
+  {
+    "Key": "562",
+    "Desc": "Waste management and remediation services (A)"
+  },
+  {
+    "Key": "6",
+    "Desc": "Educational services, health care, and social assistance (A,Q)"
+  },
+  {
+    "Key": "61",
+    "Desc": "Educational services (A,Q)"
+  },
+  {
+    "Key": "62",
+    "Desc": "Health care and social assistance (A,Q)"
+  },
+  {
+    "Key": "621",
+    "Desc": "Ambulatory health care services (A)"
+  },
+  {
+    "Key": "622",
+    "Desc": "Hospitals (A)"
+  },
+  {
+    "Key": "623",
+    "Desc": "Nursing and residential care facilities (A)"
+  },
+  {
+    "Key": "624",
+    "Desc": "Social assistance (A)"
+  },
+  {
+    "Key": "7",
+    "Desc": "Arts, entertainment, recreation, accommodation, and food services (A,Q)"
+  },
+  {
+    "Key": "71",
+    "Desc": "Arts, entertainment, and recreation (A,Q)"
+  },
+  {
+    "Key": "711AS",
+    "Desc": "Performing arts, spectator sports, museums, and related activities (A)"
+  },
+  {
+    "Key": "713",
+    "Desc": "Amusements, gambling, and recreation industries (A)"
+  },
+  {
+    "Key": "72",
+    "Desc": "Accommodation and food services (A,Q)"
+  },
+  {
+    "Key": "721",
+    "Desc": "Accommodation (A)"
+  },
+  {
+    "Key": "722",
+    "Desc": "Food services and drinking places (A)"
+  },
+  {
+    "Key": "81",
+    "Desc": "Other services, except government (A,Q)"
+  },
+  {
+    "Key": "G",
+    "Desc": "Government (A,Q)"
+  },
+  {
+    "Key": "GF",
+    "Desc": "Federal (A,Q)"
+  },
+  {
+    "Key": "GFG",
+    "Desc": "General government (A)"
+  },
+  {
+    "Key": "GFGD",
+    "Desc": "National defense (A)"
+  },
+  {
+    "Key": "GFGN",
+    "Desc": "Nondefense (A)"
+  },
+  {
+    "Key": "GFE",
+    "Desc": "Government enterprises (A)"
+  },
+  {
+    "Key": "GSL",
+    "Desc": "State and local (A,Q)"
+  },
+  {
+    "Key": "GSLG",
+    "Desc": "General government (A)"
+  },
+  {
+    "Key": "GSLE",
+    "Desc": "Government enterprises (A)"
+  },
+  {
+    "Key": "NABI",
+    "Desc": "Not allocated by industry [1] (A,Q)"
+  },
+  {
+    "Key": "PGOOD",
+    "Desc": "Private goods-producing industries [2] (A,Q)"
+  },
+  {
+    "Key": "PSERV",
+    "Desc": "Private services-producing industries [3] (A,Q)"
+  },
+  {
+    "Key": "ICT",
+    "Desc": "Information-communications-technology-producing industries [4] (A)"
+  }
+]

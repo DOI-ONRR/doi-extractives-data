@@ -16,7 +16,8 @@ var options = require('../lib/args')({
   },
   industry: {
     desc: 'industries to list',
-    default: 'ALL',
+    // BEA industry codes; see input/bea/industries.json
+    default: '21,211,212,327,331',
     alias: 'I'
   },
   of: {
@@ -27,6 +28,11 @@ var options = require('../lib/args')({
     desc: 'write results to this filename'
   }
 });
+
+if (!options.key) {
+  console.warn('You must provide the --key option or set $BEA_API_KEY');
+  process.exit(1);
+}
 
 require('epipebomb')();
 

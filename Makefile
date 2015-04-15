@@ -24,10 +24,9 @@ national/royalties-yearly.tsv: input/site/2003-2013-royalty-data.csv
 			--require 'util=./lib/util' --set 'Commodity = util.titleCase(Commodity)' \
 		| tito --write tsv > $@
 
-national/gdp-yearly.tsv: input/bea/gdp-by-industry.csv
+national/gdp-yearly.tsv:
 	mkdir -p $(dir $@)
-	tail -n +5 $< \
-		| bin/load-bea-csv.js > $@
+	bin/get-bea-data.js --geo us -o $@
 
 state/revenues-2013.tsv: input/site/CY13_Federal_Onshore_Revenues_by_State_12-04-2014.csv
 	mkdir -p $(dir $@)

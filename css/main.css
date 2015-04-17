@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 2em;
+  font-family: "Helvetica Neue", Helvetica, arial, sans-serif;
+}
+
+#progress {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+  overflow: hidden;
+}
+
+#progress .bar {
+  padding: .25em .5em;
+  height: 1.6em;
+  transition: background .5s;
+  background: orange;
+  overflow: visible;
+}
+
+#progress .bar .label {
+  color: #fff;
+  white-space: nowrap;
+}
+
+#progress .bar.indeterminate {
+  background: yellow;
+}
+
+#progress.loaded .bar {
+  background: #ccc;
+}
+
+svg.area path,
+svg.area .legend rect {
+  fill-opacity: .6;
+  vector-effect: non-scaling-stroke;
+}
+
+svg.area path.hilite,
+svg.area .legend .hilite rect {
+  stroke: #000;
+  stroke-width: .5;
+}
+
+svg .legend .hilite text {
+  font-weight: bold;
+}
+
+g.axis path,
+g.axis line {
+  fill: none;
+  stroke: #666;
+}
+
+g.axis text {
+  font-size: 10px;
+}

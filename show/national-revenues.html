@@ -31,8 +31,9 @@
     .call(progressive.bar(prog));
 
   console.log('loading...');
+  var dataPath = '../output/';
   queue()
-    .defer(prog, d3.tsv, 'revenues-yearly.tsv')
+    .defer(prog, d3.tsv, dataPath + 'national/revenues-yearly.tsv')
     .await(function(error, natlRevenues) {
       if (error) return showError(error.responseText);
 

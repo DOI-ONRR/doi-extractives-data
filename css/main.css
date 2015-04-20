@@ -41,6 +41,11 @@ body {
   background: #ccc;
 }
 
+#progress.error .bar {
+  color: #fff;
+  background: red;
+}
+
 svg.area path,
 svg.area .legend rect {
   fill-opacity: .6;

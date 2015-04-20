@@ -4,7 +4,7 @@ otherwise noted, these files use the [TopoJSON] format, a [GeoJSON]-like
 serialization that's much more efficient in terms of file size.
 
 * `offshore.json`: offshore planning areas, generated from the
-  [geo/offshore](../../input/geo/offsore) input data.
+  [geo/offshore](../../input/geo/offshore) input data.
 * `us-outline.json`: just the outline of the US, for making icons and thumbnails
 * `us-states.json`: just the US state outlines
 * `us-topology.json`: US outline (`objects.USA`), counties and states encoded

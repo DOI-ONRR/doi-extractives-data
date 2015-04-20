@@ -12,7 +12,7 @@
       var args = [].slice.call(arguments);
       var fn = args.shift();
       return fn.apply(this, args)
-	.on('error.p', onerror)
+        .on('error.p', onerror)
         .on('progress.p', onprogress)
         .on('load.p', onload);
     };
@@ -99,13 +99,13 @@
               .text('loaded ' + format(e.total) + ' of data');
       })
       .on('error', function(req) {
-	selection.classed('error', true)
-	  .select('.bar')
-	    .style('width', '100%')
-	    .select('.label')
-	      .text('error: ' + req.status + ' ')
-	      .append('tt')
-		.text(req.responseURL);
+        selection.classed('error', true)
+          .select('.bar')
+            .style('width', '100%')
+            .select('.label')
+              .text('error: ' + req.status + ' ')
+              .append('tt')
+                .text(req.responseURL);
       });
     };
 

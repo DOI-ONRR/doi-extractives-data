@@ -8,6 +8,9 @@
     <script src="../js/vendor/topojson.v1.min.js"></script>
     <script src="../js/progressive.js"></script>
     <link rel="stylesheet" href="../css/main.css">
+    <style type="text/css">
+      h2 { margin: 0; }
+    </style>
   </head>
   <body>
     <div id="progress">
@@ -42,25 +45,32 @@
     });
 
   function loaded() {
-    d3.select('#national')
-      .selectAll('svg.area')
+    var chart = d3.select('#national')
+      .selectAll('.chart')
       .data([
-        {stacked: true, log: false},
-        {stacked: false, log: false},
-        {stacked: false, log: true}
+        {stacked: true, log: false, title: "Stacked Area"},
+        {stacked: false, log: false, title: "Overlapping Area Chart"},
+        {stacked: false, log: true, title: "Overlapping Area with logarithmic y-axis"}
       ])
       .enter()
-      .append('svg')
-        .attr('class', 'area')
-        .each(function(d) {
-          var area = areaChart()
-            .x('Year')
-            .y('Commodity')
-            .stacked(d.stacked !== false)
-            .log(d.log !== false);
-          d3.select(this)
-            .call(area, data.revenues.national);
-        });
+      .append('div')
+	.attr('class', 'chart');
+
+    chart.append('h2')
+      .attr('class', 'chart-title')
+      .text(function(d) { return d.title; });
+
+    chart.append('svg')
+      .attr('class', 'area')
+      .each(function(d) {
+	var area = areaChart()
+	  .x('Year')
+	  .y('Commodity')
+	  .stacked(d.stacked !== false)
+	  .log(d.log !== false);
+	d3.select(this)
+	  .call(area, data.revenues.national);
+      });
   }
 
   function areaChart() {
@@ -206,6 +216,7 @@
       var spacing = 4;
       var legend = svg.append('g')
         .attr('class', 'legend');
+
       var item = legend.selectAll('.item')
         .data(layers)
         .enter()
@@ -214,6 +225,7 @@
           .attr('transform', function(d, i) {
             return 'translate(' + [0, spacing + i * (size + spacing)] + ')';
           });
+
       item.append('rect')
         .attr('class', 'swatch')
         .attr({
@@ -224,6 +236,7 @@
         .attr('fill', function(d) {
           return fill(d.key);
         });
+
       item.append('text')
         .attr('class', 'label')
         .attr('font-size', size)

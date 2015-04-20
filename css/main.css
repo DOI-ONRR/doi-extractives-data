@@ -61,6 +61,7 @@ g.axis path,
 g.axis line {
   fill: none;
   stroke: #666;
+  shape-rendering: crispEdges;
 }
 
 g.axis text {

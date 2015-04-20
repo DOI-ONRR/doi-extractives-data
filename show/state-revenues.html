@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>USEITI Data: State Revenues</title>
+    <script src="../js/vendor/d3.v3.min.js"></script>
+    <script src="../js/vendor/queue.v1.min.js"></script>
+    <script src="../js/vendor/topojson.v1.min.js"></script>
+    <script src="../lib/albers-custom.js"></script>
+    <script src="../js/progressive.js"></script>
+    <link rel="stylesheet" href="../css/main.css">
+    <style type="text/css">
+      h2 { margin: 0; }
+    </style>
+  </head>
+  <body>
+    <div id="progress">
+      <div class="bar"><span class="label"></span></div>
+    </div>
+
+    <section id="map">
+    </section>
+
+    <section id="chart">
+    </section>
+
+    <script>
+(function(exports) {
+
+  var data = exports.data = {};
+
+  var prog = progressive();
+
+  d3.select('#progress')
+    .call(progressive.bar(prog));
+
+  console.log('loading...');
+  var dataPath = '../output/';
+  queue()
+    .defer(prog, d3.tsv, dataPath + 'state/revenues-2013.tsv')
+    .defer(prog, d3.json, dataPath + 'geo/us-states.json')
+    .await(function(error, stateRevenues, topology) {
+      if (error) return showError(error.responseText);
+
+      data.revenues = {
+        state: stateRevenues
+      };
+
+      console.time('topology');
+      var states = topology.objects.states;
+      data.geo = {
+        states: {
+          topology: topology,
+          features: topojson.feature(topology, states).features,
+          mesh: topojson.mesh(topology, states)
+        }
+      };
+      console.timeEnd('topology');
+
+      console.log('loaded!', data);
+      loaded();
+    });
+
+  function loaded() {
+    var proj = d3.geo.albersCustom();
+
+    var path = d3.geo.path()
+      .projection(proj);
+
+    var size = proj.size ? proj.size() : [960, 500];
+
+    var svg = d3.select('#map')
+      .append('svg')
+        .attr('class', 'map')
+        .attr('viewBox', [0, 0].concat(size).join(' '));
+
+    var g = svg.append('g')
+      .attr('class', 'features states');
+
+    g.selectAll('path.state')
+      .data(data.geo.states.features)
+      .enter()
+      .append('path')
+        .attr('class', 'state')
+        .attr('id', function(d) {
+          return 'state-feature-' + d.properties.abbr;
+        })
+        .attr('fill', 'blue')
+        .attr('d', path)
+        .append('title')
+          .text(function(d) { return d.properties.abbr; });
+
+    svg.append('g')
+      .attr('class', 'mesh states')
+      .append('path')
+        .attr('d', path(data.geo.states.mesh));
+  }
+
+  function getter(key) {
+    return function(d) {
+      return d[key];
+    };
+  }
+
+  function showError(error) {
+    alert('Error: ' + error);
+  }
+
+})(this);
+    </script>
+  </body>
+</html>

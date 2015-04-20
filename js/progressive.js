@@ -5,13 +5,14 @@
     var loaded = 0;
     var total = 0;
     var indeterminate = true;
-    var dispatch = d3.dispatch('progress', 'load');
+    var dispatch = d3.dispatch('progress', 'load', 'error');
 
     var progress = function() {
       // console.warn('progress:', arguments);
       var args = [].slice.call(arguments);
       var fn = args.shift();
       return fn.apply(this, args)
+	.on('error.p', onerror)
         .on('progress.p', onprogress)
         .on('load.p', onload);
     };
@@ -37,6 +38,11 @@
           total: total
         });
       }
+    }
+
+    function onerror(error) {
+      console.log('error:', this, error);
+      dispatch.error.call(this, error);
     }
 
     function update() {
@@ -91,6 +97,15 @@
             .style('width', '100%')
             .select('.label')
               .text('loaded ' + format(e.total) + ' of data');
+      })
+      .on('error', function(req) {
+	selection.classed('error', true)
+	  .select('.bar')
+	    .style('width', '100%')
+	    .select('.label')
+	      .text('error: ' + req.status + ' ')
+	      .append('tt')
+		.text(req.responseURL);
       });
     };
 

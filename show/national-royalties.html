@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>USEITI Data: National Royalties</title>
+    <script src="../js/vendor/d3.v3.min.js"></script>
+    <script src="../js/vendor/queue.v1.min.js"></script>
+    <script src="../js/vendor/topojson.v1.min.js"></script>
+    <script src="../js/progressive.js"></script>
+    <link rel="stylesheet" href="../css/main.css">
+    <style type="text/css">
+      h2 { margin: 0; }
+    </style>
+  </head>
+  <body>
+    <div id="progress">
+      <div class="bar"><span class="label"></span></div>
+    </div>
+
+    <section id="national">
+    </section>
+
+    <script>
+(function(exports) {
+
+  var data = exports.data = {};
+
+  var prog = progressive();
+
+  d3.select('#progress')
+    .call(progressive.bar(prog));
+
+  console.log('loading...');
+  var dataPath = '../output/';
+  queue()
+    .defer(prog, d3.tsv, dataPath + 'national/royalties-yearly.tsv')
+    .await(function(error, natlRoyalties) {
+      if (error) return showError(error.responseText);
+
+      data.revenues = {
+        national: natlRoyalties,
+      };
+
+      console.log('loaded!', data);
+      loaded();
+    });
+
+  function loaded() {
+    var chart = d3.select('#national')
+      .selectAll('.chart')
+      .data([
+        {stacked: true, log: false, title: "Stacked Area"},
+        {stacked: false, log: false, title: "Overlapping Area Chart"},
+        {stacked: false, log: true, title: "Overlapping Area with logarithmic y-axis"}
+      ])
+      .enter()
+      .append('div')
+	.attr('class', 'chart');
+
+    chart.append('h2')
+      .attr('class', 'chart-title')
+      .text(function(d) { return d.title; });
+
+    chart.append('svg')
+      .attr('class', 'area')
+      .each(function(d) {
+	var area = areaChart()
+	  .x('Year')
+	  .y('Commodity')
+	  .stacked(d.stacked !== false)
+	  .log(d.log !== false);
+	d3.select(this)
+	  .call(area, data.revenues.national);
+      });
+  }
+
+  function areaChart() {
+    var dx = getter('Year');
+    var dy = getter('Commodity');
+    var value = getter('Royalty');
+    var stacked = true;
+    var log = false;
+
+    var width = 900;
+    var height = 400;
+
+    var margin = {
+      top: 10,
+      bottom: 40,
+      left: 120,
+      right: 60
+    };
+
+    var chart = function(svg, data) {
+      svg.attr('viewBox', [0, 0, width, height].join(' '));
+
+      var index = d3.nest()
+        .key(dy)
+        .key(dx)
+        .rollup(function(d) {
+          return d3.sum(d, value);
+        })
+        .map(data);
+
+      var xs = d3.extent(data, dx).map(Number);
+      var ys = d3.keys(index);
+      var xd = d3.range(xs[0], xs[1] + 1);
+      var layers = ys.map(function(y) {
+        return xd.map(function(x) {
+          var z = index[y][x] || 0;
+          if (stacked && z < 0) z = 0;
+          return {
+            x: x,
+            y: z,
+            key: y
+          };
+        });
+      });
+
+      layers.forEach(function(d) {
+        d.key = d[0].key;
+        d.sum = d3.sum(d, getter('y'));
+      });
+
+      layers.sort(function(a, b) {
+        return d3.descending(a.sum, b.sum);
+      });
+
+      var aggr = stacked ? d3.sum : d3.max;
+      var yd = d3.extent(xd, function(x, i) {
+        return aggr(layers, function(d) {
+          return d[i].y;
+        });
+      });
+
+      var y0 = height - margin.bottom;
+      var y1 = margin.top;
+
+      var y = log
+        ? d3.scale.log()
+          .domain([1, yd[1]])
+          .range([y0, y1])
+          .clamp(true)
+        : d3.scale.linear()
+          .domain([0, yd[1]])
+          .range([y0, y1]);
+      y.nice();
+
+      var x = d3.scale.linear()
+        .domain(d3.extent(data, dx))
+        .range([margin.left, width - margin.right]);
+
+      var yAxis = d3.svg.axis()
+        .orient('right')
+        .scale(y);
+
+      var si = d3.format('s');
+      var suffix = {K: 'k', M: 'm', G: 'b'};
+      var ticks = 12;
+      var yFormat = function(n, i) {
+        var p = (i === 0 || i === ticks) ? '$' : '';
+        return p + si(n).replace(/[KMG]$/, function(s) {
+          return suffix[s] || s;
+        });
+      };
+      if (log) {
+        ticks = 11;
+        yAxis.ticks(ticks, yFormat);
+      } else {
+        yAxis.ticks(ticks)
+          .tickFormat(yFormat);
+      }
+
+      svg.append('g')
+        .attr('class', 'axis y')
+        .attr('transform', 'translate(' + [width - margin.right + 2, 0] + ')')
+        .call(yAxis);
+
+      svg.append('g')
+        .attr('class', 'axis x')
+        .attr('transform', 'translate(' + [0, height - margin.bottom + 2] + ')')
+        .call(d3.svg.axis()
+          .orient('bottom')
+          .scale(x)
+          .tickFormat(d3.format('d')));
+
+      var stack = d3.layout.stack();
+
+      var g = svg.selectAll('g.layer')
+        .data(stack(layers))
+        .enter()
+        .append('g')
+          .attr('class', 'layer');
+
+      var fill = d3.scale.category20();
+
+      var area = d3.svg.area()
+        .x(function(d) { return x(d.x); });
+
+      if (stacked) {
+        area
+          .y0(function(d) { return y(d.y0); })
+          .y1(function(d) { return y(d.y + d.y0); });
+      } else {
+        area
+          .y0(y(0))
+          .y1(function(d) { return y(d.y); });
+      }
+
+      var paths = g.append('path')
+        .attr('fill', function(d) {
+          return fill(d.key);
+        })
+        .attr('d', area);
+
+      var size = 10;
+      var spacing = 4;
+      var legend = svg.append('g')
+        .attr('class', 'legend');
+
+      var item = legend.selectAll('.item')
+        .data(layers)
+        .enter()
+        .append('g')
+          .attr('class', 'item')
+          .attr('transform', function(d, i) {
+            return 'translate(' + [0, spacing + i * (size + spacing)] + ')';
+          });
+
+      item.append('rect')
+        .attr('class', 'swatch')
+        .attr({
+          x: spacing,
+          width: size,
+          height: size,
+        })
+        .attr('fill', function(d) {
+          return fill(d.key);
+        });
+
+      item.append('text')
+        .attr('class', 'label')
+        .attr('font-size', size)
+        .attr('dx', size + spacing * 2)
+        .attr('dy', size * .9)
+        .text(function(d) { return d.key; });
+
+      function hilite(other) {
+        return function(selection) {
+          selection.on('mouseover', function(d) {
+            this.classList.add('hilite');
+            other && other.classed('hilite', function(o) {
+              return o === d;
+            });
+          })
+          .on('mouseout', function(d) {
+            this.classList.remove('hilite');
+            other && other.classed('hilite', false);
+          });
+        };
+      }
+
+      paths.call(hilite(item));
+      item.call(hilite(paths));
+
+      var bbox = legend.node().getBBox();
+      var bg = legend.insert('rect', '.item')
+        .attr('class', 'bg')
+        .attr('fill', '#fff')
+        .attr('width', ~~bbox.width + spacing * 2)
+        .attr('height', ~~bbox.height + spacing * 2);
+    };
+
+    chart.x = function(_) {
+      if (!arguments.length) return dx;
+      dx = (typeof _ === 'string')
+        ? getter(_)
+        : d3.functor(_);
+      return chart;
+    };
+
+    chart.y = function(_) {
+      if (!arguments.length) return dy;
+      dy = (typeof _ === 'string')
+        ? getter(_)
+        : d3.functor(_);
+      return chart;
+    };
+
+    chart.stacked = function(_) {
+      if (!arguments.length) return stacked;
+      stacked = !!_;
+      return chart;
+    };
+
+    chart.log = function(_) {
+      if (!arguments.length) return log;
+      log = !!_;
+      return chart;
+    };
+
+    return chart;
+  }
+
+  function getter(key) {
+    return function(d) {
+      return d[key];
+    };
+  }
+
+  function showError(error) {
+    alert('Error: ' + error);
+  }
+
+})(this);
+    </script>
+  </body>
+</html>

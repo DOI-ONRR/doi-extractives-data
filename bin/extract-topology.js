@@ -22,26 +22,18 @@ var args = options._;
 fs.readFile(args[0] || '/dev/stdin', function(error, buffer) {
   if (error) return console.error('error:', error);
   var topology = JSON.parse(buffer.toString());
-  var collection = topojson.feature(topology, topology.objects[options.layer]);
-  var features = collection.features || [collection];
-  if (options.filter) {
-    var filter = datex(options.filter);
-    features = features.filter(filter);
-    if (!features.length) {
-      console.error('No features matched filter: "%s", options.filter');
-      process.exit(1);
+
+  var objects = {};
+  for (var key in topology.objects) {
+    if (options.layer === key || (Array.isArray(options.layer) && options.layer.indexOf(key) > -1)) {
+      objects[key] = topology.objects[key];
     }
   }
 
-  var layers = {};
-  layers[options.layer] = {
-    type: 'FeatureCollection',
-    features: features
-  };
-
-  var result = topojson.topology(layers, topojsonOptions);
+  topology.objects = objects;
+  topojson.prune(topology);
 
   fs.createWriteStream(options.o)
-    .write(JSON.stringify(result));
+    .write(JSON.stringify(topology));
 });
 

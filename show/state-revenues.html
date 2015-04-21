@@ -11,7 +11,7 @@
     <script src="../js/progressive.js"></script>
     <link rel="stylesheet" href="../css/main.css">
     <style type="text/css">
-      h2 { margin: 0; }
+      h2 { margin: 0 0 .5em 0; }
     </style>
   </head>
   <body>
@@ -89,19 +89,33 @@
       .map(data.revenues.state);
 
     var commodities = d3.entries(index);
+
+    // filter out commodities with only one value
+    commodities = commodities
+      .filter(function(d) {
+        return Object.keys(d.value).length > 1;
+      });
+
     var scales = d3.scale.ordinal()
       .range(Object.keys(colorbrewer));
 
+    var formatDollars = d3.format('$,.0f');
+    var steps = 9;
+
     commodities.forEach(function(c) {
-      c.max = d3.max(d3.values(c.value));
-      console.log(c.key, 'extent:', c.extent);
+      var values = d3.values(c.value);
+      c.extent = d3.extent(values);
+      if (c.extent[0] === c.extent[1]) {
+        c.extent[0] = 0;
+      }
+      // console.log(c.key, 'max:', c.max);
       var scaleKey = scales(c.key);
       c.scale = d3.scale.quantize()
-        .domain([0, c.max])
-        .range(colorbrewer[scaleKey][9]);
+        .domain(c.extent)
+        .range(colorbrewer[scaleKey][steps]);
     });
 
-    console.log('commodities:', commodities);
+    // console.log('commodities:', commodities);
 
     var div = d3.select('#maps')
       .selectAll('section.commodity')
@@ -113,6 +127,30 @@
 
     div.append('h2')
       .text(function(d) { return d.key; });
+
+    var legend = div.append('ol')
+      .attr('class', 'legend');
+
+    var item = legend.selectAll('li')
+      .data(function(d) {
+        var scale = d.scale;
+        return scale.range().map(function(color) {
+          return {
+            color: color,
+            extent: scale.invertExtent(color)
+          };
+        });
+      })
+      .enter()
+      .append('li')
+        .style('width', (100 / steps).toFixed(1) + '%')
+        .style('border-top-color', function(d) {
+          return d.color;
+        })
+        .append('span')
+          .text(function(d) {
+            return formatDollars(d.extent[0]);
+          });
 
     var svg = div.append('svg')
       .attr('class', 'map')
@@ -146,11 +184,15 @@
           return path(d.feature);
         })
         .attr('fill', function(d) {
-          return d.commodity.scale(d.value);
+          return d.value
+            ? d.commodity.scale(d.value)
+            : '#fff';
         });
 
     feature.append('title')
-      .text(function(d) { return d.state; });
+      .text(function(d) {
+        return [d.state, ': ', formatDollars(d.value)].join('');
+      });
 
     svg.append('use')
       .attr('xlink:href', '#states-mesh');
@@ -163,7 +205,7 @@
   }
 
   function showError(error) {
-    alert('Error: ' + error);
+    console.error(error);
   }
 
 })(this);

@@ -80,3 +80,23 @@ path.mesh {
   stroke-width: 1;
 }
 
+
+ol.legend {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+  ol.legend li {
+    border-top: 10px solid;
+    list-style: none;
+    display: inline-block;
+  }
+
+  ol.legend li span {
+    display: block;
+    font-size: .8em;
+    padding: .2em .5em 0;
+    border-left: 1px solid #ccc;
+  }

@@ -6,6 +6,7 @@
     <script src="../js/vendor/d3.v3.min.js"></script>
     <script src="../js/vendor/queue.v1.min.js"></script>
     <script src="../js/vendor/topojson.v1.min.js"></script>
+    <script src="../js/vendor/colorbrewer.js"></script>
     <script src="../lib/albers-custom.js"></script>
     <script src="../js/progressive.js"></script>
     <link rel="stylesheet" href="../css/main.css">
@@ -18,7 +19,7 @@
       <div class="bar"><span class="label"></span></div>
     </div>
 
-    <section id="map">
+    <section id="maps">
     </section>
 
     <section id="chart">
@@ -69,26 +70,77 @@
 
     var size = proj.size ? proj.size() : [960, 500];
 
-    var svg = d3.select('#map')
-      .append('svg')
-        .attr('class', 'map')
-        .attr('viewBox', [0, 0].concat(size).join(' '));
+    var index = d3.nest()
+      .key(getter('Commodity'))
+      .key(getter('State'))
+      .rollup(function(d) {
+        return d3.sum(d, getter('Revenue'));
+      })
+      .map(data.revenues.state);
+
+    var commodities = d3.entries(index);
+    var scales = d3.scale.ordinal()
+      .range(Object.keys(colorbrewer));
+
+    commodities.forEach(function(c) {
+      c.max = d3.max(d3.values(c.value));
+      console.log(c.key, 'extent:', c.extent);
+      var scaleKey = scales(c.key);
+      c.scale = d3.scale.quantize()
+        .domain([0, c.max])
+        .range(colorbrewer[scaleKey][9]);
+    });
+
+    console.log('commodities:', commodities);
+
+    var div = d3.select('#maps')
+      .selectAll('section.commodity')
+      .data(commodities)
+      .enter()
+      .append('section')
+        .attr('class', 'commodity')
+        .attr('id', function(d) { return d.key; });
+
+    div.append('h2')
+      .text(function(d) { return d.key; });
+
+    var svg = div.append('svg')
+      .attr('class', 'map')
+      .attr('viewBox', [0, 0].concat(size).join(' '));
 
     var g = svg.append('g')
       .attr('class', 'features states');
 
-    g.selectAll('path.state')
-      .data(data.geo.states.features)
+    var states = data.geo.states.features;
+
+    var feature = g.selectAll('path.state')
+      .data(function(d) {
+        var commodity = d.key;
+        return states.map(function(feature) {
+          var state = feature.properties.abbr;
+          return {
+            state: state,
+            feature: feature,
+            commodity: d,
+            value: d.value[state] || 0
+          };
+        });
+      })
       .enter()
       .append('path')
         .attr('class', 'state')
         .attr('id', function(d) {
-          return 'state-feature-' + d.properties.abbr;
+          return 'state-feature-' + d.state;
         })
-        .attr('fill', 'blue')
-        .attr('d', path)
-        .append('title')
-          .text(function(d) { return d.properties.abbr; });
+        .attr('d', function(d) {
+          return path(d.feature);
+        })
+        .attr('fill', function(d) {
+          return d.commodity.scale(d.value);
+        });
+
+    feature.append('title')
+      .text(function(d) { return d.state; });
 
     svg.append('g')
       .attr('class', 'mesh states')

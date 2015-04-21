@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>USEITI Data: State Revenues</title>
+    <title>USEITI Data: 2013 State Revenues</title>
     <script src="../js/vendor/d3.v3.min.js"></script>
     <script src="../js/vendor/queue.v1.min.js"></script>
     <script src="../js/vendor/topojson.v1.min.js"></script>
@@ -10,15 +10,10 @@
     <script src="../lib/albers-custom.js"></script>
     <script src="../js/progressive.js"></script>
     <link rel="stylesheet" href="../css/main.css">
-    <style type="text/css">
-      h2 { margin: 0 0 .5em 0; }
-    </style>
   </head>
   <body>
-    <div id="progress">
-      <div class="bar"><span class="label"></span></div>
-    </div>
 
+    <h1>2013 State Revenues</h1>
     <section id="maps">
     </section>
 
@@ -27,6 +22,10 @@
 
     <svg id="symbols">
     </svg>
+
+    <div id="progress">
+      <div class="bar"><span class="label"></span></div>
+    </div>
 
     <script>
 (function(exports) {
@@ -144,7 +143,7 @@
       .enter()
       .append('li')
         .style('width', (100 / steps).toFixed(1) + '%')
-        .style('border-top-color', function(d) {
+        .style('border-color', function(d) {
           return d.color;
         })
         .append('span')

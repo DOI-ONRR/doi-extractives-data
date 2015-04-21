@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 2em;
+  font-family: "Helvetica Neue", Helvetica, arial, sans-serif;
+}
+
+section:target > .section__title {
+  background: #eee;
+}
+
+section.commodity > .section__title {
+  padding: .2em .5em .4em;
+  margin-bottom: 0;
+}
+
+input[type="range"] {
+  width: 100%;
+}
+
+figure {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 .5em 0;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  background: #eee;
+  padding: 1em;
+}
+
+footer #progress {
+  margin: 1em -1em -1em -1em;
+}
+
+#progress .bar {
+  padding: .25em .5em;
+  height: 1.6em;
+  transition: background .5s;
+  background: orange;
+  overflow: visible;
+}
+
+#progress .bar .label {
+  color: #fff;
+  white-space: nowrap;
+}
+
+#progress .bar.indeterminate {
+  background: yellow;
+}
+
+#progress.loaded .bar {
+  background: #ccc;
+}
+
+#progress.error .bar {
+  color: #fff;
+  background: red;
+}
+
+svg.area path,
+svg.area .legend rect {
+  fill-opacity: .6;
+  vector-effect: non-scaling-stroke;
+}
+
+svg.area path.hilite,
+svg.area .legend .hilite rect {
+  stroke: #000;
+  stroke-width: .5;
+}
+
+svg .legend .hilite text {
+  font-weight: bold;
+}
+
+g.axis path,
+g.axis line {
+  fill: none;
+  stroke: #666;
+  shape-rendering: crispEdges;
+}
+
+g.axis text {
+  font-size: 10px;
+}
+
+.mesh path,
+path.mesh {
+  fill: none;
+  stroke: #999;
+  stroke-width: 1;
+}
+
+
+ol.legend {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ol.legend li {
+  border-left: 1em solid;
+}
+
+  ol.legend li span {
+    padding-left: .5em;
+  }
+
+@media (min-width: 960px) {
+  ol.legend li {
+    border-left: none;
+    border-top: 10px solid;
+    list-style: none;
+    display: inline-block;
+  }
+
+  ol.legend li span {
+    display: block;
+    font-size: .8em;
+    padding: .2em .5em 0;
+    border-left: 1px solid #ccc;
+  }
+}

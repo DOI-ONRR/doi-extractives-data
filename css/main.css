@@ -73,8 +73,8 @@ g.axis text {
   font-size: 10px;
 }
 
-svg.map .mesh path,
-svg.map path.mesh {
+.mesh path,
+path.mesh {
   fill: none;
   stroke: #999;
   stroke-width: 1;

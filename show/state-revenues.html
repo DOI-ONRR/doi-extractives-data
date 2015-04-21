@@ -25,6 +25,9 @@
     <section id="chart">
     </section>
 
+    <svg id="symbols">
+    </svg>
+
     <script>
 (function(exports) {
 
@@ -69,6 +72,13 @@
       .projection(proj);
 
     var size = proj.size ? proj.size() : [960, 500];
+
+    var symbols = d3.select('svg#symbols');
+    var defs = symbols.append('defs');
+    var mesh = defs.append('path')
+      .attr('id', 'states-mesh')
+      .attr('class', 'mesh states')
+      .attr('d', path(data.geo.states.mesh));
 
     var index = d3.nest()
       .key(getter('Commodity'))
@@ -142,10 +152,8 @@
     feature.append('title')
       .text(function(d) { return d.state; });
 
-    svg.append('g')
-      .attr('class', 'mesh states')
-      .append('path')
-        .attr('d', path(data.geo.states.mesh));
+    svg.append('use')
+      .attr('xlink:href', '#states-mesh');
   }
 
   function getter(key) {

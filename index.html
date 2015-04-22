@@ -27,7 +27,7 @@
         <div id="slider">
           <figure id="national-revenues" class="chart">
             <h6 class="chart__title">National Revenues Over Time</h6>
-            <svg>
+            <svg class="area">
             </svg>
           </figure>
           <div id="slider-container">
@@ -49,6 +49,30 @@
 
   var prog = progressive();
 
+  var groupCommodities = (function() {
+    var other = 'Other Commodities';
+    var groups = d3.set(['Coal', 'Oil', 'Gas', 'Oil & Gas', 'Geothermal', other]);
+    var groupMap = {
+      'Oil Shale': 'Oil'
+    };
+    return function(d) {
+      var commodity = d.Commodity;
+      d.ActualCommodity = commodity;
+      if (!groups.has(commodity)) {
+        d.Commodity = groupMap[commodity] || other;
+      }
+    };
+  })();
+
+  var commodityColors = {
+    'Coal': 'YlOrBr',
+    'Oil': 'Greys',
+    'Gas': 'Purples',
+    'Oil & Gas': 'RdPu',
+    'Geothermal': 'OrRd',
+    'Other Commodities': 'Blues'
+  };
+
   d3.select('#progress')
     .call(progressive.bar(prog));
 
@@ -62,6 +86,9 @@
     .await(function(error, natlRevenues, stateRevenues, topology) {
       if (error) return console.error(error.responseText);
       console.timeEnd('load');
+
+      natlRevenues.forEach(groupCommodities);
+      stateRevenues.forEach(groupCommodities);
 
       data.revenues = {
         national: natlRevenues,
@@ -142,10 +169,7 @@
     commodities = commodities
       .filter(function(d) {
         return Object.keys(d.value).length > 1;
-      });
-
-    var scales = d3.scale.ordinal()
-      .range(Object.keys(colorbrewer));
+      })
 
     var formatDollars = d3.format('$,.0f');
     var steps = 9;
@@ -157,10 +181,14 @@
         c.extent[0] = 0;
       }
       // console.log(c.key, 'max:', c.max);
-      var scaleKey = scales(c.key);
+      var scaleKey = commodityColors[c.key] || 'Spectral';
       c.scale = d3.scale.quantize()
         .domain(c.extent)
         .range(colorbrewer[scaleKey][steps]);
+    });
+
+    commodities.sort(function(a, b) {
+      return d3.descending(a.extent[1], b.extent[1]);
     });
 
     // console.log('commodities:', commodities);
@@ -390,7 +418,9 @@
         .append('g')
           .attr('class', 'layer');
 
-      var fill = d3.scale.category20();
+      var fill = function(key) {
+        return colorbrewer[commodityColors[key]][5][3];
+      };
 
       var area = d3.svg.area()
         .x(function(d) { return x(d.x); });

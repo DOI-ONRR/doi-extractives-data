@@ -80,7 +80,8 @@
       renderCommodityMaps();
       console.timeEnd('render');
 
-      location.replace(location.hash);
+      jiggleHash();
+      // if (location.hash) scrollTo(location.hash);
     });
 
   function renderTimeline() {
@@ -229,6 +230,22 @@
       .attr('xlink:href', '#states-mesh');
   }
 
+  /*
+   * an area chart generator:
+   *
+   * var chart = areaChart()
+   *   .x(function(d) { return d.year; })
+   *   .y(function(d) { return d.commodity; })
+   *   .value(function(d) { return d.value; })
+   *   .stacked(false);
+   * var data = [
+   *   {year: 2000, commodity: 'Coal', value: 10},
+   *   {year: 2001, commodity: 'Coal', value: 20},
+   *   // ...
+   *   {year: 2010, commodity: 'Oil', value: 30},
+   * ];
+   * d3.select('svg').call(chart, data);
+   */
   function areaChart() {
     var dx = getter('Year');
     var dy = getter('Commodity');
@@ -385,6 +402,14 @@
       return chart;
     };
 
+    chart.value = function(_) {
+      if (!arguments.length) return value;
+      value = (typeof _ === 'string')
+        ? getter(_)
+        : d3.functor(_);
+      return chart;
+    };
+
     chart.stacked = function(_) {
       if (!arguments.length) return stacked;
       stacked = !!_;
@@ -400,16 +425,33 @@
     return chart;
   }
 
+  // create a getter function for a given property/key
   function getter(key) {
     return function(d) {
       return d[key];
     };
   }
 
+  // normalize a string for use as a fragment identifier
   function normalize(str) {
     return str.toLowerCase()
       .replace(/\s*&\s*/g, '-')
       .replace(/ /g, '_');
+  }
+
+  /*
+   * forces a reset of location.hash so that the browser (hopefully)
+   * scrolls to the element with the fragment identifier and toggles the
+   * :target pseudo-class.
+   */
+  function jiggleHash() {
+    var hash = location.hash;
+    if (hash) {
+      location.hash = '';
+      location.hash = hash;
+      return true;
+    }
+    return false;
   }
 
 })(this);

@@ -55,7 +55,7 @@
   queue()
     .defer(prog, d3.tsv, dataPath + 'national/revenues-yearly.tsv')
     .defer(prog, d3.tsv, dataPath + 'state/revenues-2013.tsv')
-    .defer(prog, d3.json, dataPath + 'geo/us-states.json')
+    .defer(prog, d3.json, dataPath + 'geo/us-states-simple.json')
     .await(function(error, natlRevenues, stateRevenues, topology) {
       if (error) return console.error(error.responseText);
       console.timeEnd('load');

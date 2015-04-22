@@ -13,24 +13,27 @@
   </head>
   <body>
 
-    <section id="commodities">
+    <section id="commodities" class="container">
     </section>
 
-    <section id="states">
+    <section id="states" class="container">
     </section>
 
     <svg id="symbols">
     </svg>
 
     <footer>
-      <div id="slider">
-        <figure id="national-revenues" class="chart">
-          <h6 class="chart__title">National Revenues Over Time</h6>
-          <svg>
-          </svg>
-        </figure>
-        <div id="slider-container">
-          <input id="year-slider" type="range" min="2004" max="2013" step="1">
+      <div class="container">
+        <div id="slider">
+          <figure id="national-revenues" class="chart">
+            <h6 class="chart__title">National Revenues Over Time</h6>
+            <svg>
+            </svg>
+          </figure>
+          <div id="slider-container">
+            <label for="year-slider">Year:</label>
+            <input id="year-slider" type="range" min="2003" max="2013" step="1">
+          </div>
         </div>
       </div>
 
@@ -90,6 +93,24 @@
 
     var svg = d3.select('#national-revenues svg')
       .call(area, data.revenues.national);
+
+    var margin = area.margin();
+    var offset = 8;
+    d3.select('#slider-container')
+      .style('margin-left', (margin.left - offset) + 'px')
+      .style('margin-right', (margin.right - offset + 2) + 'px');
+
+    var slider = d3.select('#year-slider')
+      .on('change', hiliteYear)
+      .each(hiliteYear);
+
+    function hiliteYear() {
+      var year = +this.value;
+      svg.selectAll('.x .tick')
+        .classed('hilite', function(y) {
+          return y === year;
+        });
+    }
   }
 
   function renderCommodityMaps() {
@@ -253,17 +274,22 @@
     var stacked = true;
     var log = false;
 
-    var width = 900;
-    var height = 200;
+    var width = 960;
+    var height = 100;
 
     var margin = {
       top: 10,
-      bottom: 20,
-      left: 10,
-      right: 50
+      bottom: 25,
+      left: 50,
+      right: 20
     };
 
     var chart = function(svg, data) {
+      if (data) {
+        svg.datum(data);
+      } else {
+        data = svg.datum() || [];
+      }
       svg.attr('viewBox', [0, 0, width, height].join(' '));
 
       var index = d3.nest()
@@ -323,12 +349,12 @@
         .range([margin.left, width - margin.right]);
 
       var yAxis = d3.svg.axis()
-        .orient('right')
+        .orient('left')
         .scale(y);
 
       var si = d3.format('s');
       var suffix = {K: 'k', M: 'm', G: 'b'};
-      var ticks = 12;
+      var ticks = 3;
       var yFormat = function(n, i) {
         var p = (i === 0 || i === ticks) ? '$' : '';
         return p + si(n).replace(/[KMG]$/, function(s) {
@@ -336,7 +362,7 @@
         });
       };
       if (log) {
-        ticks = 11;
+        ticks -= 1;
         yAxis.ticks(ticks, yFormat);
       } else {
         yAxis.ticks(ticks)
@@ -345,7 +371,7 @@
 
       svg.append('g')
         .attr('class', 'axis y')
-        .attr('transform', 'translate(' + [width - margin.right + 2, 0] + ')')
+        .attr('transform', 'translate(' + [margin.left - 2, 0] + ')')
         .call(yAxis);
 
       svg.append('g')
@@ -384,6 +410,12 @@
           return fill(d.key);
         })
         .attr('d', area);
+    };
+
+    chart.margin = function(_) {
+      if (!arguments.length) return margin;
+      margin = marginalize(_);
+      return chart;
     };
 
     chart.x = function(_) {
@@ -452,6 +484,26 @@
       return true;
     }
     return false;
+  }
+
+  function marginalize(d) {
+    switch (typeof d) {
+      case 'string':
+        d = +d || 0;
+      case 'number':
+        return {left: d, top: d, right: d, bottom: d};
+      case 'undefined':
+        return {left: 0, top: 0, right: 0, bottom: 0};
+    }
+    if (Array.isArray(d)) {
+      return {
+        top: d[0],
+        right: d[1],
+        bottom: d[2],
+        left: d[3]
+      };
+    }
+    return d;
   }
 
 })(this);

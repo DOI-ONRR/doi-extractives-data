@@ -12,6 +12,11 @@ body {
   font-family: "Helvetica Neue", Helvetica, arial, sans-serif;
 }
 
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
 section:target > .section__title {
   background: #eee;
 }
@@ -73,6 +78,16 @@ footer #progress {
   background: red;
 }
 
+#slider-container {
+  position: relative;
+}
+
+#slider-container label {
+  position: absolute;
+  right: 100%;
+  padding-right: .5em;
+}
+
 svg.area path,
 svg.area .legend rect {
   fill-opacity: .6;
@@ -97,7 +112,7 @@ g.axis line {
 }
 
 g.axis text {
-  font-size: 10px;
+  font-size: 14px;
 }
 
 .mesh path,
@@ -137,4 +152,8 @@ ol.legend li {
     padding: .2em .5em 0;
     border-left: 1px solid #ccc;
   }
+}
+
+.tick.hilite text {
+  font-weight: bold;
 }

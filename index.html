@@ -80,7 +80,7 @@
       renderCommodityMaps();
       console.timeEnd('render');
 
-      location = location.hash;
+      location.replace(location.hash);
     });
 
   function renderTimeline() {

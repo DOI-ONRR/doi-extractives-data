@@ -114,6 +114,9 @@ $(output)/geo/offshore.json: input/geo/offshore/*.json
 		-p label=TEXT_LABEL \
 		-o $@ -- $^
 
+$(output)/geo/%-simple.json: $(output)/geo/%.json
+	topojson --properties --simplify 2e-6 -o $@ $<
+
 svg: \
 	$(output)/svg/all.svg \
 	$(output)/svg/land.svg \

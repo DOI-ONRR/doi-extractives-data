@@ -38,6 +38,28 @@
     return nest.map(rows);
   };
 
+  function isScalar(d) {
+    return typeof d !== 'object';
+  }
+
+  eiti.data.walk = function(struct, each) {
+    walk(struct);
+
+    function walk(d, i) {
+      if (Array.isArray(d)) {
+        return d.forEach(function(v, i) {
+          walk.call(d, v, i);
+        });
+      } else if (typeof d === 'object') {
+        return d3.keys(d).forEach(function(key) {
+          walk.call(d, d[key], key);
+        });
+      } else {
+        each.call(this, d, i);
+      }
+    }
+  };
+
   /**
    * Commodity grouping and color model.
    *
@@ -72,6 +94,7 @@
     Commodities.OTHER = 'Other Commodities';
 
     Commodities.prototype.getGroup = function(commodity) {
+      commodity = commodity.replace(/\s\([a-z]+\)$/, '');
       if (this.groups.has(commodity)) return commodity;
       return this.groupMap[commodity] || Commodities.OTHER;
     };
@@ -400,6 +423,29 @@
     }
     return false;
   };
+
+  eiti.format = function(format, reformat) {
+    if (typeof format === 'string') {
+      format = d3.format(format);
+    }
+    return function(d) {
+      return reformat(format(d));
+    };
+  };
+
+  // international system/metric form
+  eiti.format.metric = d3.format('.2s');
+  // '$1,234,567'
+  eiti.format.dollars = d3.format('$,.0f');
+  // '$1,234,567.89'
+  eiti.format.dollarsAndCents = d3.format('$,.2f');
+  // '$1.2m'
+  eiti.format.shortDollars = eiti.format('$,.2s', function(str) {
+    var suffix = {k: 'k', M: 'm', G: 'b'};
+    return str.replace(/[kMG]$/, function(s) {
+      return suffix[s] || s;
+    });
+  });
 
   function getter(key) {
     if (typeof key === 'function') return key;

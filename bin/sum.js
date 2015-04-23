@@ -1,0 +1,54 @@
+#!/usr/bin/env node
+var yargs = require('yargs')
+  .describe('if', 'input format')
+  .default('if', 'tsv')
+  .describe('of', 'output format')
+  .default('of', 'tsv')
+  .describe('group', 'comma-separated list of keys to group on')
+  .default('group', 'Year,Commodity')
+  .describe('sum', 'the column to sum')
+  .default('sum', 'Revenue')
+  .describe('o', 'write to this file')
+  .default('o', '/dev/stdout')
+  .alias('h', 'help')
+  .wrap(72);
+
+var options = yargs.argv;
+if (options.help) {
+  return yargs.showHelp();
+}
+
+var args = options._;
+
+var fs = require('fs');
+var tito = require('tito').formats;
+var util = require('../lib/util');
+var streamify = require('stream-array');
+
+util.readData(args[0] || '/dev/stdin',
+  tito.createReadStream(options['if']),
+  function(error, rows) {
+    if (error) {
+      console.error('error:', error);
+      process.exit(1);
+    }
+
+    var keys = options.group.split(/\s*,\s*/);
+    var value = util.getter(options.sum);
+    var groups = util.group(rows, keys, function(subset) {
+      return subset.values.reduce(function(sum, d) {
+        return sum + Number(value(d));
+      }, 0);
+    })
+    .map(function(entry) {
+      var row = entry.key;
+      row[options.sum] = entry.value;
+      return row;
+    });
+
+    console.warn('got %d rows', groups.length, groups[0]);
+
+    streamify(groups)
+      .pipe(tito.createWriteStream(options['of']))
+      .pipe(fs.createWriteStream(options.o));
+  });

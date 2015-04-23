@@ -29,6 +29,13 @@ $(output)/national/gdp-yearly.tsv:
 	mkdir -p $(dir $@)
 	bin/get-bea-data.js --geo us -o $@
 
+$(output)/state/revenues-yearly.tsv: $(output)/county/revenues-yearly.tsv
+	mkdir -p $(dir $@)
+	bin/sum.js \
+		--group 'Year,State,Commodity' \
+		--sum Revenue \
+		-o $@ $<
+
 $(output)/state/revenues-2013.tsv: input/site/CY13_Federal_Onshore_Revenues_by_State_12-04-2014.csv
 	mkdir -p $(dir $@)
 	tito --read csv $< \

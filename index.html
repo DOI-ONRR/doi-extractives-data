@@ -9,6 +9,7 @@
     <script src="js/vendor/colorbrewer.js"></script>
     <script src="lib/albers-custom.js"></script>
     <script src="js/progressive.js"></script>
+    <script src="js/eiti.js"></script>
     <link rel="stylesheet" href="css/index.css">
   </head>
   <body>
@@ -110,7 +111,7 @@
       renderCommodityMaps();
       console.timeEnd('render');
 
-      jiggleHash();
+      eiti.util.jiggleHash();
       // if (location.hash) scrollTo(location.hash);
     });
 
@@ -444,7 +445,7 @@
 
     chart.margin = function(_) {
       if (!arguments.length) return margin;
-      margin = marginalize(_);
+      margin = eiti.ui.margin(_);
       return chart;
     };
 
@@ -499,41 +500,6 @@
     return str.toLowerCase()
       .replace(/\s*&\s*/g, '-')
       .replace(/ /g, '_');
-  }
-
-  /*
-   * forces a reset of location.hash so that the browser (hopefully)
-   * scrolls to the element with the fragment identifier and toggles the
-   * :target pseudo-class.
-   */
-  function jiggleHash() {
-    var hash = location.hash;
-    if (hash) {
-      location.hash = '';
-      location.hash = hash;
-      return true;
-    }
-    return false;
-  }
-
-  function marginalize(d) {
-    switch (typeof d) {
-      case 'string':
-        d = +d || 0;
-      case 'number':
-        return {left: d, top: d, right: d, bottom: d};
-      case 'undefined':
-        return {left: 0, top: 0, right: 0, bottom: 0};
-    }
-    if (Array.isArray(d)) {
-      return {
-        top: d[0],
-        right: d[1],
-        bottom: d[2],
-        left: d[3]
-      };
-    }
-    return d;
   }
 
 })(this);

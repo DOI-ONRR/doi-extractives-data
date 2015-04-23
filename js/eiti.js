@@ -39,10 +39,68 @@
   };
 
   /**
+   * Commodity grouping and color model.
+   *
+   * @class
+   */
+  eiti.data.Commodities = (function() {
+    var Commodities = function() {
+      if (!(this instanceof Commodities)) return new Commodities();
+      this.groups = d3.set([
+        'Coal',
+        'Gas',
+        'Geothermal',
+        'Oil',
+        'Oil & Gas',
+        Commodities.OTHER
+      ]);
+
+      this.groupMap = {
+        'Oil Shale': 'Oil'
+      };
+
+      this.groupColors = {
+        'Coal': 'YlOrBr',
+        'Oil': 'Greys',
+        'Gas': 'Purples',
+        'Oil & Gas': 'RdPu',
+        'Geothermal': 'OrRd',
+        'Other Commodities': 'Blues'
+      };
+    };
+
+    Commodities.OTHER = 'Other Commodities';
+
+    Commodities.prototype.getGroup = function(commodity) {
+      if (this.groups.has(commodity)) return commodity;
+      return this.groupMap[commodity] || Commodities.OTHER;
+    };
+
+    Commodities.prototype.setGroup = function(commodity, group) {
+      this.groupMap[commodity] = group;
+      return this;
+    };
+
+    Commodities.prototype.getGroups = function() {
+      return this.groups.values();
+    };
+
+    Commodities.prototype.getColors = function(commodity, steps) {
+      if (this.groups.has(commodity)) {
+        commodity = this.getGroup(commodity);
+      }
+      var scheme = this.groupColors[commodity] || 'Spectral';
+      return colorbrewer[scheme][steps || 9];
+    };
+
+    return Commodities;
+  })();
+
+  /**
    * A data model for storing named datasets.
    * @class
    */
-  eiti.data.Model = (function(Model) {
+  eiti.data.Model = (function() {
 
     var Model = function(data) {
       if (!(this instanceof Model)) return new Model(data);

@@ -50,28 +50,11 @@
 
   var prog = progressive();
 
-  var groupCommodities = (function() {
-    var other = 'Other Commodities';
-    var groups = d3.set(['Coal', 'Oil', 'Gas', 'Oil & Gas', 'Geothermal', other]);
-    var groupMap = {
-      'Oil Shale': 'Oil'
-    };
-    return function(d) {
-      var commodity = d.Commodity;
-      d.ActualCommodity = commodity;
-      if (!groups.has(commodity)) {
-        d.Commodity = groupMap[commodity] || other;
-      }
-    };
-  })();
+  var commodities = eiti.data.Commodities();
 
-  var commodityColors = {
-    'Coal': 'YlOrBr',
-    'Oil': 'Greys',
-    'Gas': 'Purples',
-    'Oil & Gas': 'RdPu',
-    'Geothermal': 'OrRd',
-    'Other Commodities': 'Blues'
+  var groupCommodities = function(d) {
+    d.ActualCommodity = d.Commodity;
+    d.Commodity = commodities.getGroup(d.Commodity);
   };
 
   d3.select('#progress')
@@ -164,10 +147,10 @@
       })
       .map(data.revenues.state);
 
-    var commodities = d3.entries(index);
+    var entries = d3.entries(index);
 
     // filter out commodities with only one value
-    commodities = commodities
+    entries = entries
       .filter(function(d) {
         return Object.keys(d.value).length > 1;
       })
@@ -175,28 +158,28 @@
     var formatDollars = d3.format('$,.0f');
     var steps = 9;
 
-    commodities.forEach(function(c) {
+    entries.forEach(function(c) {
       var values = d3.values(c.value);
       c.extent = d3.extent(values);
       if (c.extent[0] === c.extent[1]) {
         c.extent[0] = 0;
       }
       // console.log(c.key, 'max:', c.max);
-      var scaleKey = commodityColors[c.key] || 'Spectral';
+      var colors = commodities.getColors(c.key, steps);
       c.scale = d3.scale.quantize()
         .domain(c.extent)
-        .range(colorbrewer[scaleKey][steps]);
+        .range(colors);
     });
 
-    commodities.sort(function(a, b) {
+    entries.sort(function(a, b) {
       return d3.descending(a.extent[1], b.extent[1]);
     });
 
-    // console.log('commodities:', commodities);
+    // console.log('commodities:', entries);
 
     var div = d3.select('#commodities')
       .selectAll('section.commodity')
-      .data(commodities)
+      .data(entries)
       .enter()
       .append('section')
         .attr('class', 'commodity')
@@ -420,7 +403,7 @@
           .attr('class', 'layer');
 
       var fill = function(key) {
-        return colorbrewer[commodityColors[key]][5][3];
+        return commodities.getColors(key, 5)[3];
       };
 
       var area = d3.svg.area()

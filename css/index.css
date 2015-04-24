@@ -180,7 +180,34 @@ svg.map g.state .label {
   font-size: 20px;
 }
 
-svg.map g.state:hover .label,
-svg.map g.state:focus .label {
-  display: initial;
+div.tooltip {
+  pointer-events: none;
+  color: #fff;
+  background: #000;
+  padding: .2em .5em;
+  border-radius: 5px;
 }
+
+  div.tooltip:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    border: 8px solid transparent;
+    border-top-color: #000;
+    margin-left: -4px;
+  }
+
+  /*
+  div.tooltip:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    border: 9px solid transparent;
+    border-top-color: #ccc;
+    margin-left: -5px;
+  }
+  */

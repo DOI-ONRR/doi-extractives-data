@@ -24,6 +24,22 @@ section:target > .section__title {
 section.commodity > .section__title {
   padding: .2em .5em .4em;
   margin-bottom: 0;
+  border-width: 0 0 0 20px;
+  border-style: solid;
+  border-color: inherit;
+}
+
+section.commodity .content {
+  display: none;
+  margin-left: 20px;
+}
+
+section.commodity:target .content {
+  display: block;
+}
+
+section.commodity svg.map {
+  max-height: 400px;
 }
 
 input[type="range"] {
@@ -156,4 +172,14 @@ ol.legend li {
 
 .tick.hilite text {
   font-weight: bold;
+}
+
+svg.map g.state .label {
+  display: none;
+  pointer-events: none;
+}
+
+svg.map g.state:hover .label,
+svg.map g.state:focus .label {
+  display: initial;
 }

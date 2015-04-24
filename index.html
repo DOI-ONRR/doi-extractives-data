@@ -75,6 +75,8 @@
   d3.select('#progress')
     .call(progressive.bar(prog));
 
+  window.addEventListener('resize', resize);
+
   console.log('loading...');
   console.time('load');
   var dataPath = 'output/';
@@ -115,6 +117,7 @@
       console.timeEnd('render');
 
       update();
+      resize();
 
       eiti.util.jiggleHash();
       // if (location.hash) scrollTo(location.hash);
@@ -142,7 +145,7 @@
     var area = eiti.charts.area()
       .stacked(false)
       .fill(function(key) {
-        return commodities.getColors(key, 5)[3];
+        return commodities.getPrimaryColor(key);
       });
 
     var svg = d3.select('#national-revenues svg')
@@ -229,6 +232,9 @@
         .attr('class', 'commodity')
         .attr('id', function(d) {
           return d.id = commodityId(d.key);
+        })
+        .style('border-color', function(d) {
+          return commodities.getPrimaryColor(d.key);
         });
 
     div.append('h2')
@@ -237,9 +243,13 @@
         .attr('href', function(d) { return '#' + d.id; })
         .text(function(d) { return d.key; });
 
-    var legend = div.append('ol')
+    var content = div.append('div')
+      .attr('class', 'content');
+
+    var legend = content.append('ol')
       .attr('class', 'legend');
 
+    var formatRange = eiti.format.range(eiti.format.shortDollars, '&mdash;');
     var item = legend.selectAll('li')
       .data(function(d) {
         var scale = d.scale;
@@ -257,11 +267,11 @@
           return d.color;
         })
         .append('span')
-          .text(function(d) {
-            return format(d.extent[0]);
+          .html(function(d) {
+            return formatRange(d.extent);
           });
 
-    var svg = div.append('svg')
+    var svg = content.append('svg')
       .attr('class', 'map')
       .attr('viewBox', [0, 0].concat(size).join(' '));
 
@@ -270,7 +280,7 @@
 
     var states = data.geo.states.features;
 
-    var feature = g.selectAll('path.state')
+    var feature = g.selectAll('g.state')
       .data(function(d) {
         var commodity = d.key;
         return states.map(function(feature) {
@@ -284,17 +294,33 @@
         });
       })
       .enter()
-      .append('path')
+      .append('g')
         .attr('class', 'state')
-        .attr('id', function(d) {
-          return 'state-feature-' + d.state;
-        })
-        .attr('d', function(d) {
-          return path(d.feature);
-        })
-        .attr('fill', '#fff');
+        .attr('tabindex', 0)
+        .on('mouseover', eiti.util.bringToFront)
+        .on('mouseout', eiti.util.returnToBack)
+        .on('focus', eiti.util.bringToFront)
+        .on('blur', eiti.util.returnToBack);
 
-    feature.append('title');
+    feature.append('path')
+      .attr('class', 'state')
+      .attr('id', function(d) {
+        return 'state-feature-' + d.state;
+      })
+      .attr('d', function(d) {
+        return path(d.feature);
+      })
+      .attr('fill', '#fff')
+      .append('title');
+
+    feature.append('text')
+      .attr('class', 'label')
+      .attr('text-anchor', 'middle')
+      .attr('dy', '.4em')
+      .attr('transform', function(d) {
+        var c = path.centroid(d.feature);
+        return 'translate(' + c + ')';
+      });
 
     svg.append('use')
       .attr('xlink:href', '#states-mesh');
@@ -303,20 +329,29 @@
   function updateCommodityMaps(state) {
     var year = state.year;
 
-    var states = d3.selectAll('section.commodity path.state');
+    var states = d3.selectAll('section.commodity g.state');
 
     states.transition()
       .duration(250)
-      .attr('fill', function(d) {
-        var value = d.value[year];
-        return value ? d.commodity.scale(value) : '#fff';
-      });
+      .select('path')
+        .attr('fill', function(d) {
+          var value = d.value[year];
+          return value ? d.commodity.scale(value) : '#fff';
+        });
 
     states.select('title')
       .text(function(d) {
-        return (d.value[year]
-          ? [d.state, ': ', eiti.format.shortDollars(d.value[year]), ' in ', year]
-          : [d.state, ' (no revenues in ', year]).join('');
+        d.label = (year in d.value)
+          ? eiti.format.shortDollars(d.value[year])
+          : '';
+        return (d.label
+          ? [d.state, ': ', d.label, ' in ', year]
+          : [d.state, ': no revenues in ', year]).join('');
+      });
+
+    states.select('text.label')
+      .text(function(d) {
+        return d.label;
       });
   }
 
@@ -325,6 +360,13 @@
     return str.toLowerCase()
       .replace(/\s*&\s*/g, '-')
       .replace(/ /g, '_');
+  }
+
+  function resize() {
+    var footer = document.querySelector('footer');
+    var rect = footer.getBoundingClientRect();
+    d3.select('body')
+      .style('margin-bottom', rect.height + 'px');
   }
 
 })(this);

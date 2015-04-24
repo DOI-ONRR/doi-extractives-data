@@ -1,9 +1,9 @@
-# Front page User Interview Questions 
+# Front page user interview questions 
 
 Note: This work is based on a template available [here](https://myusa.hackpad.com/Template-Onsite-User-Interview-Questions-y08pqBL0EvA) from the MyUSA team. Thank you, MyUSA!
 
 
-## Introductory Comments
+## Introductory comments
 
 Brief introduction – share your name and a description of your general duties on the USEITI team.
 
@@ -16,7 +16,7 @@ Very brief discussion of the **purpose** of today's test:  "My goal today is to 
 **Questions?:** Ask participant if they have any questions. Also let them know that they should feel free to ask questions throughout the process.
 
 
-## Preliminary Questions
+## Preliminary questions
 
 "Before we get started with the site, I'd like to ask you a few general questions about yourself and your Internet usage."
 
@@ -38,7 +38,7 @@ Very brief discussion of the **purpose** of today's test:  "My goal today is to 
 "Great! Thank you."
 
 
-## Main Questions
+## Main questions
 
 Here are some questions to ask participants once participants have had a few moments to look at the site:
 
@@ -63,6 +63,6 @@ Here are some questions to ask participants once participants have had a few mom
 "What other questions do you have about this site, if any?"
 
 
-## Wrap Up
+## Wrap up
 
 "Thank you again for taking the time to chat with me today. If you have any follow-up questions, you can always feel free to email me. Last but not least, if you know of anyone else who might be interested in participating, please feel free to put them in touch with me – I'd love to talk to them!"

@@ -43,6 +43,7 @@
     };
 
     var fill = d3.scale.category10();
+    var interpolate = 'cardinal';
 
     var chart = function(svg, data) {
       if (data) {
@@ -152,6 +153,7 @@
           .append('a');
 
       var area = d3.svg.area()
+        .interpolate(interpolate)
         .x(function(d) { return x(d.x); });
 
       if (stacked) {

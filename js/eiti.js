@@ -1,11 +1,13 @@
 (function(exports) {
 
-  /**
+  /*
    * @namespace eiti
    */
   var eiti = exports.eiti = {};
 
-  /** data classes and functions */
+  /*
+   * data classes and functions
+   */
   eiti.data = {};
 
   /**
@@ -176,27 +178,58 @@
 
   eiti.data.Model = (function() {
 
-    /*
+    /**
      * A data model for storing named datasets.
+     *
+     * @example
+     * var model = new eiti.data.Model();
+     *
      * @class
+     * @alias eiti.data.Model
+     * @param {Object|d3.map} data optional datasets to initialize
      */
     var Model = function(data) {
       if (!(this instanceof Model)) return new Model(data);
       this.data = d3.map(data);
     };
 
+    /**
+     * @param {String} name the dataset name
+     * @return {Boolean} `true` if the named dataset exists, `false` if not
+     */
     Model.prototype.has = function(name) {
       return this.data.has(name);
     };
 
+    /**
+     * @param {String} name the dataset name
+     * @return {Boolean} `true` if the named dataset exists, `false` if not
+     */
     Model.prototype.get = function(name) {
       return this.data.get(name);
     };
 
+    /**
+     * Store a dataset with a unique key
+     * @param {String} name the dataset name
+     * @param {*} data the data to store
+     * @return {*} returns the data as set
+     */
     Model.prototype.set = function(name, data) {
       return this.data.set(name, data);
     };
 
+    /**
+     * Load data from a URL into a named dataset.
+     *
+     * @example
+     * model.load('states', 'path/to/states.json', function(error, topology) {
+     * });
+     *
+     * @param {String} name the unique dataset name
+     * @param {String} url the URL to load
+     * @param {Function=} callback the callback function
+     */
     Model.prototype.load = function(name, url, done) {
       if (this.has(name)) {
         return done(null, this.get(name));
@@ -206,16 +239,43 @@
       return load(url, function(error, data) {
         if (error) return done(error);
         this.set(name, data);
-        done(null, data);
+        done && done(null, data);
       }.bind(this));
     };
 
+    /**
+     * Create a nested index using {@link eiti.data.nest} from a
+     * named dataset and alias it to a new name.
+     *
+     * @example
+     * model.set('foo', [
+     *   {x: 'bar', y: 'baz'},
+     *   {x: 'qux', y: 'quux'}
+     * ]);
+     * var index = model.createIndex('foo', 'bar', ['x', 'y']);
+     * assert.deepEqual(index, {
+     *   bar: {
+     *     baz: [
+     *       {x: 'bar', y: 'baz'}
+     *     ],
+     *   },
+     *   qux: {
+     *     quux: [
+     *       {x: 'qux', y: 'quux'}
+     *     ]
+     *   }
+     * });
+     *
+     * @param {String} src the source dataset name
+     * @param {String} dest the destination dataset name
+     * @param {Array<String|Function>} keys the keys to nest
+     * @param {Function=} rollup the optional rollup function
+     */
     Model.prototype.createIndex = function(src, dest, keys, rollup) {
       if (this.has(dest)) return this.get(dest);
       var data = this.get(src);
       var index = eiti.data.nest(data, keys, rollup);
-      this.set(dest, index);
-      return index;
+      return this.set(dest, index);
     };
 
     function getIndexKey(name, keys) {

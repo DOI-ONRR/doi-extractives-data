@@ -8,8 +8,6 @@
 
   /**
    * An area chart generator for d3.
-   * @class
-   * @name eiti.charts.area
    *
    * @example
    * var area = eiti.charts.area()
@@ -24,12 +22,14 @@
    *      // ...
    *      {year: 2010, category: 'y', value: 8}
    *   ]);
+   * @name eiti.charts.area
+   * @returns {areaChart}
    */
   eiti.charts.area = function() {
     var dx = getter('Year');
     var dy = getter('Commodity');
     var value = getter('Revenue');
-    var stacked = true;
+    var stacked = false;
     var log = false;
 
     var width = 960;
@@ -45,7 +45,15 @@
     var fill = d3.scale.category10();
     var interpolate = 'cardinal';
 
-    var chart = function(svg, data) {
+    /**
+     * Renders a chart in a given d3 selection. Use {@link
+     * eiti.charts.area} to create one.
+     *
+     * @namespace areaChart
+     * @param {d3.selection} svg  a d3 `<svg>` element selection
+     * @param {Array=} data optional data
+     */
+    var areaChart = function(svg, data) {
       if (data) {
         svg.datum(data);
       } else {
@@ -174,59 +182,127 @@
     };
 
     /**
-     * @instance
-     * @method
-     * @memberof! eiti.charts.area#
+     * Get or set the chart's margin in pixels.
+     *
+     * @example
+     * var margin = areaChart.margin();
+     * areaChart.margin({top: 0, right: 20, bottom: 30, left: 10});
+     * areaChart.margin([0, 100]); // NB: [y, x]
+     * areaChart.margin(20); // 20 on all sides
+     *
+     * @param {*=} margin set the margin as returned by {@link eiti.ui.margin}.
      */
-    chart.margin = function(_) {
+    areaChart.margin = function(_) {
       if (!arguments.length) return margin;
       margin = eiti.ui.margin(_);
-      return chart;
+      return areaChart;
     };
 
-    chart.x = function(_) {
+    /**
+     * Get or set the chart's horizontal value accessor.
+     *
+     * @example
+     * var x = areaChart.x();
+     * areaChart.x(function(d) { return d.Year; });
+     * areaChart.x('Year'); // same as above
+     *
+     * @param {String|Function=} x set the horizontal value accessor
+     */
+    areaChart.x = function(_) {
       if (!arguments.length) return dx;
       dx = (typeof _ === 'string')
         ? getter(_)
         : d3.functor(_);
-      return chart;
+      return areaChart;
     };
 
-    chart.y = function(_) {
+    /**
+     * Get or set the chart's *layer group* accessor.
+     *
+     * @example
+     * var y = areaChart.y();
+     * areaChart.y(function(d) { return d.Commodity; });
+     * areaChart.y('Commodity'); // same as above
+     *
+     * @param {String|Function=} y set the layer group accessor
+     */
+    areaChart.y = function(_) {
       if (!arguments.length) return dy;
       dy = (typeof _ === 'string')
         ? getter(_)
         : d3.functor(_);
-      return chart;
+      return areaChart;
     };
 
-    chart.value = function(_) {
+    /**
+     * Get or set the chart's vertical (numeric) value accessor.
+     *
+     * @example
+     * var value = areaChart.value();
+     * areaChart.value(function(d) { return d.Revenue; });
+     * areaChart.value('Revenue'); // same as above
+     *
+     * @param {String|Function=} v set the vertical value accessor
+     */
+    areaChart.value = function(_) {
       if (!arguments.length) return value;
       value = (typeof _ === 'string')
         ? getter(_)
         : d3.functor(_);
-      return chart;
+      return areaChart;
     };
 
-    chart.stacked = function(_) {
+    /**
+     * Toggle stacking layout. Area charts are not stacked by
+     * default.
+     *
+     * @example
+     * var stacked = areaChart.stacked();
+     * areaChart.stacked(true); // tell it to stack
+     *
+     * @param {Boolean=} stacked if `true`, enabled stacking layout
+     */
+    areaChart.stacked = function(_) {
       if (!arguments.length) return stacked;
       stacked = !!_;
-      return chart;
+      return areaChart;
     };
 
-    chart.log = function(_) {
+    /**
+     * Toggle logarithmic y-axis scaling.
+     *
+     * @example
+     * var log = areaChart.log();
+     * areaChart.log(true); // use logarithmic scaling
+     *
+     * @param {Boolean=} log if `true`, enabled logarithmic scaling
+     */
+    areaChart.log = function(_) {
       if (!arguments.length) return log;
       log = !!_;
-      return chart;
+      return areaChart;
     };
 
-    chart.fill = function(_) {
+    /**
+     * Get or set the layer fill accessor.
+     *
+     * @example
+     * var fill = areaChart.fill();
+     * areaChart.fill(d3.scale.category20());
+     * areaChart.fill(function(d, i) {
+     *   return i % 2 ? 'yellow' : 'orange';
+     * });
+     * areaChart.fill('red');
+     *
+     * @param {*=} fill set the fill accessor
+     */
+    areaChart.fill = function(_) {
       if (!arguments.length) return fill;
       fill = d3.functor(_);
-      return chart;
+      return areaChart;
     };
 
-    return chart;
+    return areaChart;
   };
 
 })(this);

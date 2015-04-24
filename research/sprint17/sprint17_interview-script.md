@@ -27,7 +27,7 @@ Very brief discussion of the **purpose** of today's test:  "My goal today is to 
 3. "What websites or types of websites do you visit most often? It's OK if you can't remember the names of specific sites – you can just name the type of site you use (e.g., social networking site, news source, personal blog, online banking site, etc.)."
 
 
-"Awesome – thanks for sharing this information. We’re going to move onto the next part of the interview now. This section is focused on the front page of the website we’re renovating. I'll ask a few broad questions first, and then show you our site. We're still working on it, so again this is more like a Powerpoint online than it is a real website. Not all of it is interactive but you can explore a bit if you like. I'll then ask you to answer some questions."
+"Awesome – thanks for sharing this information. We’re going to move onto the next part of the interview now. This section is focused on the front page of the website we’re renovating. We're still working on the site, so it is more like a Powerpoint online than a real website. Not all of it is interactive but you can explore a bit if you like. I'll then ask you to answer some questions."
 
 (Show participant the site, let them explore a little bit.)
 

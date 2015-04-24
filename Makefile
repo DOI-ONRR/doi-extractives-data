@@ -12,7 +12,7 @@ FILES = \
 	$(output)/county/revenues-yearly.tsv \
 	county-revenues-by-state
 
-all: $(FILES) geo svg docs
+all: $(FILES) geo svg js/docs
 
 $(output)/national/revenues-yearly.tsv: input/site/2003-2013-revenue-data-CY.csv
 	mkdir -p $(dir $@)
@@ -163,7 +163,7 @@ $(output)/svg/filtered.svg: $(output)/geo/us-topology-filtered.json
 $(output)/svg/outer.svg: $(output)/geo/us-outline.json $(output)/geo/offshore.json
 	bin/vectorize.js --p0 $^ > $@
 
-docs:
+js/docs:
 	$(BIN)/documentation -o $@ -f html js/eiti*.js
 
 clean:

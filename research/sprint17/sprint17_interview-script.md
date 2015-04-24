@@ -1,4 +1,4 @@
-# Frontpage User Interview Questions 
+# Front page User Interview Questions 
 
 Note: This work is based on a template available [here](https://myusa.hackpad.com/Template-Onsite-User-Interview-Questions-y08pqBL0EvA) from the MyUSA team. Thank you, MyUSA!
 

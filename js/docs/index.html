@@ -13,9 +13,9 @@
           <a href="/" class="h5 button block button-transparent"> </a>
           <div class='px2'>
               <a
-                href='#model'
+                href='#eiti-ui-slider'
                 class='regular block'>
-                <code>Model</code>
+                <code>eiti.ui.slider</code>
               </a>
               <a
                 href='#eiti'
@@ -23,9 +23,9 @@
                 <code>eiti</code>
               </a>
                 <a
-                  href='#eiti/charts'
+                  href='#eiti/data'
                   class='button-indent regular block'>
-                  <code>.charts</code>
+                  <code>.data</code>
                 </a>
               <a
                 href='#commodities'
@@ -38,9 +38,9 @@
                   <code>#setGroup</code>
                 </a>
                 <a
-                  href='#commodities/getprimarycolor'
+                  href='#commodities/getcolors'
                   class='button-indent regular block'>
-                  <code>#getPrimaryColor</code>
+                  <code>#getColors</code>
                 </a>
                 <a
                   href='#commodities/getgroups'
@@ -53,9 +53,9 @@
                   <code>#getGroup</code>
                 </a>
                 <a
-                  href='#commodities/getcolors'
+                  href='#commodities/getprimarycolor'
                   class='button-indent regular block'>
-                  <code>#getColors</code>
+                  <code>#getPrimaryColor</code>
                 </a>
                 <a
                   href='#commodities/other'
@@ -63,9 +63,19 @@
                   <code>.OTHER</code>
                 </a>
               <a
-                href='#eiti-ui-margin'
+                href='#eiti-util-jigglehash'
                 class='regular block'>
-                <code>eiti.ui.margin</code>
+                <code>eiti.util.jiggleHash</code>
+              </a>
+              <a
+                href='#eiti-charts-area'
+                class='regular block'>
+                <code>eiti.charts.area</code>
+              </a>
+              <a
+                href='#eiti-util-bringtofront'
+                class='regular block'>
+                <code>eiti.util.bringToFront</code>
               </a>
               <a
                 href='#eiti-data-walk'
@@ -83,34 +93,19 @@
                 <code>eiti.data.getter</code>
               </a>
               <a
-                href='#eiti-charts-area'
+                href='#eiti-format-transform'
                 class='regular block'>
-                <code>eiti.charts.area</code>
+                <code>eiti.format.transform</code>
               </a>
               <a
-                href='#eiti-util-bringtofront'
+                href='#eiti-ui-margin'
                 class='regular block'>
-                <code>eiti.util.bringToFront</code>
+                <code>eiti.ui.margin</code>
               </a>
               <a
-                href='#eiti-format-shortdollars'
+                href='#eiti-util-returntoback'
                 class='regular block'>
-                <code>eiti.format.shortDollars</code>
-              </a>
-              <a
-                href='#eiti-format-dollarsandcents'
-                class='regular block'>
-                <code>eiti.format.dollarsAndCents</code>
-              </a>
-              <a
-                href='#eiti-format-dollars'
-                class='regular block'>
-                <code>eiti.format.dollars</code>
-              </a>
-              <a
-                href='#eiti-format-metric'
-                class='regular block'>
-                <code>eiti.format.metric</code>
+                <code>eiti.util.returnToBack</code>
               </a>
               <a
                 href='#eiti-format-range'
@@ -118,43 +113,52 @@
                 <code>eiti.format.range</code>
               </a>
               <a
-                href='#eiti-format-transform'
+                href='#eiti-format-metric'
                 class='regular block'>
-                <code>eiti.format.transform</code>
+                <code>eiti.format.metric</code>
               </a>
               <a
-                href='#eiti-ui-slider'
+                href='#eiti-format-dollars'
                 class='regular block'>
-                <code>eiti.ui.slider</code>
+                <code>eiti.format.dollars</code>
               </a>
               <a
-                href='#eiti-util-jigglehash'
+                href='#eiti-format-dollarsandcents'
                 class='regular block'>
-                <code>eiti.util.jiggleHash</code>
+                <code>eiti.format.dollarsAndCents</code>
               </a>
               <a
-                href='#eiti-util-returntoback'
+                href='#eiti-format-shortdollars'
                 class='regular block'>
-                <code>eiti.util.returnToBack</code>
+                <code>eiti.format.shortDollars</code>
               </a>
           </div>
         </div>
       </div>
       <div class='sm-col sm-col-9 md-col-10 flex flex-column'>
         <div class='flex-auto full-width'>
-<section id='model'class='mt2 mb2 py1 px3 keyline-top'>
+<section id='eiti-ui-slider'class='mt2 mb2 py1 px3 keyline-top'>
   <h3 class='regular'>
-    <a class='black' href='#model'>
+    <a class='black' href='#eiti-ui-slider'>
       <code>
-        Model<span class='gray'></span>
+        eiti.ui.slider<span class='gray'></span>
       </code>
     </a>
   </h3>
-  <p>A data model for storing named datasets.</p>
+  <p>Create a slider from a d3 selection that dispatches 'change'
+events whenever the element is clicked, tapped or dragged.</p>
 
 
 
 
+    <h4>Examples</h4>
+<pre><span class="hljs-keyword">var</span> slider = eiti.ui.slider()
+   .range([<span class="hljs-number">0</span>, <span class="hljs-number">100</span>])
+   .on(<span class="hljs-string">'change'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(e)</span> </span>{
+     <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'slider value:'</span>, e.value);
+   });
+ d3.select(<span class="hljs-string">'#slider'</span>)
+   .call(slider);</pre>
 
 
 
@@ -174,15 +178,16 @@
 
 
       <div class='section-indent'>
-<section id='eiti/charts'class='mt2 mb2 py1 px3 keyline-top'>
+<section id='eiti/data'class='mt2 mb2 py1 px3 keyline-top'>
   <h3 class='regular'>
-    <a class='black' href='#eiti/charts'>
+    <a class='black' href='#eiti/data'>
       <code>
-        charts<span class='gray'></span>
+        data<span class='gray'></span>
       </code>
     </a>
   </h3>
-  
+  <p>data classes and functions</p>
+
 
 
 
@@ -246,15 +251,16 @@
 </section>
       </div>
       <div class='section-indent'>
-<section id='commodities/getprimarycolor'class='mt2 mb2 py1 px3 keyline-top'>
+<section id='commodities/getcolors'class='mt2 mb2 py1 px3 keyline-top'>
   <h3 class='regular'>
-    <a class='black' href='#commodities/getprimarycolor'>
+    <a class='black' href='#commodities/getcolors'>
       <code>
-        getPrimaryColor<span class='gray'>(commodity)</span>
+        getColors<span class='gray'>(commodity, steps)</span>
       </code>
     </a>
   </h3>
-  <p>Get the primary color for a commodity group.</p>
+  <p>Get the colors associated with a commodity's group color
+scheme.</p>
 
 
     <p>
@@ -270,15 +276,20 @@
             <td><p>the commodity or group</p>
 </td>
           </tr>
+          <tr>
+            <td>steps</td>
+            <td><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></code></td>
+            <td><p>the number of color steps (default: 9)</p>
+</td>
+          </tr>
       </table>
     </p>
 
       <h4>Returns</h4>
-      <code><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code></code>
-      :
+      <code>Array<<code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code>></code>
+      
       <span class='force-inline'>
-        <p>a CSS color</p>
-
+        
       </span>
 
 
@@ -352,16 +363,15 @@
 </section>
       </div>
       <div class='section-indent'>
-<section id='commodities/getcolors'class='mt2 mb2 py1 px3 keyline-top'>
+<section id='commodities/getprimarycolor'class='mt2 mb2 py1 px3 keyline-top'>
   <h3 class='regular'>
-    <a class='black' href='#commodities/getcolors'>
+    <a class='black' href='#commodities/getprimarycolor'>
       <code>
-        getColors<span class='gray'>(commodity, steps)</span>
+        getPrimaryColor<span class='gray'>(commodity)</span>
       </code>
     </a>
   </h3>
-  <p>Get the colors associated with a commodity's group color
-scheme.</p>
+  <p>Get the primary color for a commodity group.</p>
 
 
     <p>
@@ -377,20 +387,15 @@ scheme.</p>
             <td><p>the commodity or group</p>
 </td>
           </tr>
-          <tr>
-            <td>steps</td>
-            <td><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></code></td>
-            <td><p>the number of color steps (default: 9)</p>
-</td>
-          </tr>
       </table>
     </p>
 
       <h4>Returns</h4>
-      <code>Array<<code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code>></code>
-      
+      <code><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code></code>
+      :
       <span class='force-inline'>
-        
+        <p>a CSS color</p>
+
       </span>
 
 
@@ -421,44 +426,85 @@ be assigned, namely <code>Other Commodities</code>.</p>
       </div>
 
 </section>
-<section id='eiti-ui-margin'class='mt2 mb2 py1 px3 keyline-top'>
+<section id='eiti-util-jigglehash'class='mt2 mb2 py1 px3 keyline-top'>
   <h3 class='regular'>
-    <a class='black' href='#eiti-ui-margin'>
+    <a class='black' href='#eiti-util-jigglehash'>
       <code>
-        eiti.ui.margin<span class='gray'>(input)</span>
+        eiti.util.jiggleHash<span class='gray'></span>
       </code>
     </a>
   </h3>
-  <p>Create a margin object {top, right, left, bottom} from any
-of the following types:</p>
-<ul>
-<li>string: coerce to a number</li>
-<li>number: a margin object with equal top, right, left and
-bottom values</li>
-<li>array: read the values as [top, right, bottom, left] if there
-are 4 or more elements; otherwise read as [vertical,
-horizontal]</li>
-<li>object: set top, right, bottom and left keys to 0 if not set,
-then return the object</li>
-</ul>
+  <p>Force a reset of location.hash so that the browser (hopefully)
+scrolls to the element with the fragment identifier and toggles
+the :target pseudo-class.</p>
 
 
-    <p>
-      <table class='table-light overflow-hidden bg-cloudy-light'>
-        <thead>
-          <th class='col-3'>parameter</th>
-          <th class='col-3'>type</th>
-          <th class='col-6'>description</th>
-        </thead>
-          <tr>
-            <td>input</td>
-            <td>Any</td>
-            <td></td>
-          </tr>
-      </table>
-    </p>
+
+      <h4>Returns</h4>
+      <code><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code></code>
+      
+      <span class='force-inline'>
+        
+      </span>
 
 
+
+
+</section>
+<section id='eiti-charts-area'class='mt2 mb2 py1 px3 keyline-top'>
+  <h3 class='regular'>
+    <a class='black' href='#eiti-charts-area'>
+      <code>
+        eiti.charts.area<span class='gray'></span>
+      </code>
+    </a>
+  </h3>
+  <p>An area chart generator for d3.</p>
+
+
+
+      <h4>Returns</h4>
+      <code><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/function">function</a></code></code>
+      :
+      <span class='force-inline'>
+        <p>a function for use with <code>d3.selection#call()</code></p>
+
+      </span>
+
+    <h4>Examples</h4>
+<pre><span class="hljs-keyword">var</span> area = eiti.charts.area()
+  .x(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(d)</span> </span>{ <span class="hljs-keyword">return</span> d.year; })
+  .y(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(d)</span> </span>{ <span class="hljs-keyword">return</span> d.category; })
+  .value(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(d)</span> </span>{ <span class="hljs-keyword">return</span> d.value; });
+
+d3.select(<span class="hljs-string">'svg'</span>)
+  .call(area, [
+     {year: <span class="hljs-number">2000</span>, category: <span class="hljs-string">'x'</span>, value: <span class="hljs-number">10</span>},
+     {year: <span class="hljs-number">2001</span>, category: <span class="hljs-string">'x'</span>, value: <span class="hljs-number">12</span>},
+     <span class="hljs-comment">// ...</span>
+     {year: <span class="hljs-number">2010</span>, category: <span class="hljs-string">'y'</span>, value: <span class="hljs-number">8</span>}
+  ]);</pre>
+
+
+
+</section>
+<section id='eiti-util-bringtofront'class='mt2 mb2 py1 px3 keyline-top'>
+  <h3 class='regular'>
+    <a class='black' href='#eiti-util-bringtofront'>
+      <code>
+        eiti.util.bringToFront<span class='gray'></span>
+      </code>
+    </a>
+  </h3>
+  <p>d3 helper for bringing an element to the front among its
+siblings. Use it with an event listener, e.g.:</p>
+
+
+
+
+    <h4>Examples</h4>
+<pre>d3.selectAll(<span class="hljs-string">'svg path'</span>)
+  .on(<span class="hljs-string">'mouseover'</span>, eiti.util.bringToFront);</pre>
 
 
 
@@ -608,74 +654,16 @@ itertools.itemgetter().</p>
 
 
 </section>
-<section id='eiti-charts-area'class='mt2 mb2 py1 px3 keyline-top'>
+<section id='eiti-format-transform'class='mt2 mb2 py1 px3 keyline-top'>
   <h3 class='regular'>
-    <a class='black' href='#eiti-charts-area'>
+    <a class='black' href='#eiti-format-transform'>
       <code>
-        eiti.charts.area<span class='gray'></span>
+        eiti.format.transform<span class='gray'>(format, transform)</span>
       </code>
     </a>
   </h3>
-  <p>An area chart generator for d3.</p>
-
-
-
-      <h4>Returns</h4>
-      <code><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/function">function</a></code></code>
-      :
-      <span class='force-inline'>
-        <p>a function for use with <code>d3.selection#call()</code></p>
-
-      </span>
-
-    <h4>Examples</h4>
-<pre><span class="hljs-keyword">var</span> area = eiti.charts.area()
-  .x(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(d)</span> </span>{ <span class="hljs-keyword">return</span> d.year; })
-  .y(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(d)</span> </span>{ <span class="hljs-keyword">return</span> d.category; })
-  .value(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(d)</span> </span>{ <span class="hljs-keyword">return</span> d.value; });
-
-d3.select(<span class="hljs-string">'svg'</span>)
-  .call(area, [
-     {year: <span class="hljs-number">2000</span>, category: <span class="hljs-string">'x'</span>, value: <span class="hljs-number">10</span>},
-     {year: <span class="hljs-number">2001</span>, category: <span class="hljs-string">'x'</span>, value: <span class="hljs-number">12</span>},
-     <span class="hljs-comment">// ...</span>
-     {year: <span class="hljs-number">2010</span>, category: <span class="hljs-string">'y'</span>, value: <span class="hljs-number">8</span>}
-  ]);</pre>
-
-
-
-</section>
-<section id='eiti-util-bringtofront'class='mt2 mb2 py1 px3 keyline-top'>
-  <h3 class='regular'>
-    <a class='black' href='#eiti-util-bringtofront'>
-      <code>
-        eiti.util.bringToFront<span class='gray'></span>
-      </code>
-    </a>
-  </h3>
-  <p>d3 helper for bringing an element to the front among its
-siblings. Use it with an event listener, e.g.:</p>
-
-
-
-
-    <h4>Examples</h4>
-<pre>d3.selectAll(<span class="hljs-string">'svg path'</span>)
-  .on(<span class="hljs-string">'mouseover'</span>, eiti.util.bringToFront);</pre>
-
-
-
-</section>
-<section id='eiti-format-shortdollars'class='mt2 mb2 py1 px3 keyline-top'>
-  <h3 class='regular'>
-    <a class='black' href='#eiti-format-shortdollars'>
-      <code>
-        eiti.format.shortDollars<span class='gray'>(num)</span>
-      </code>
-    </a>
-  </h3>
-  <p>Produces short dollar strings in SI format with 1 decimal,
-e.g. <code>$1.2m</code> or <code>$4.8b</code>.</p>
+  <p>Create a composite format that wraps a d3 format (or any other
+formatting function) with a transform function.</p>
 
 
     <p>
@@ -686,15 +674,20 @@ e.g. <code>$1.2m</code> or <code>$4.8b</code>.</p>
           <th class='col-6'>description</th>
         </thead>
           <tr>
-            <td>num</td>
-            <td><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></code></td>
+            <td>format</td>
+            <td><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code> or <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">Function</a></code></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>transform</td>
+            <td><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">Function</a></code></td>
             <td></td>
           </tr>
       </table>
     </p>
 
       <h4>Returns</h4>
-      <code><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code></code>
+      <code><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">Function</a></code></code>
       
       <span class='force-inline'>
         
@@ -704,16 +697,112 @@ e.g. <code>$1.2m</code> or <code>$4.8b</code>.</p>
 
 
 </section>
-<section id='eiti-format-dollarsandcents'class='mt2 mb2 py1 px3 keyline-top'>
+<section id='eiti-ui-margin'class='mt2 mb2 py1 px3 keyline-top'>
   <h3 class='regular'>
-    <a class='black' href='#eiti-format-dollarsandcents'>
+    <a class='black' href='#eiti-ui-margin'>
       <code>
-        eiti.format.dollarsAndCents<span class='gray'>(num)</span>
+        eiti.ui.margin<span class='gray'>(input)</span>
       </code>
     </a>
   </h3>
-  <p>Produces dollar strings with thousands separators and 2-decimal
-cents, e.g. <code>$1,234,567.89</code>.</p>
+  <p>Create a margin object {top, right, left, bottom} from any
+of the following types:</p>
+<ul>
+<li>string: coerce to a number</li>
+<li>number: a margin object with equal top, right, left and
+bottom values</li>
+<li>array: read the values as [top, right, bottom, left] if there
+are 4 or more elements; otherwise read as [vertical,
+horizontal]</li>
+<li>object: set top, right, bottom and left keys to 0 if not set,
+then return the object</li>
+</ul>
+
+
+    <p>
+      <table class='table-light overflow-hidden bg-cloudy-light'>
+        <thead>
+          <th class='col-3'>parameter</th>
+          <th class='col-3'>type</th>
+          <th class='col-6'>description</th>
+        </thead>
+          <tr>
+            <td>input</td>
+            <td>Any</td>
+            <td></td>
+          </tr>
+      </table>
+    </p>
+
+
+
+
+
+</section>
+<section id='eiti-util-returntoback'class='mt2 mb2 py1 px3 keyline-top'>
+  <h3 class='regular'>
+    <a class='black' href='#eiti-util-returntoback'>
+      <code>
+        eiti.util.returnToBack<span class='gray'></span>
+      </code>
+    </a>
+  </h3>
+  <p>The compliment to <a href="bringtofront"><code>bringToFront</code></a>, returns an
+element to its previous position among its siblings.</p>
+
+
+
+
+    <h4>Examples</h4>
+<pre>d3.selectAll(<span class="hljs-string">'svg path'</span>)
+  .on(<span class="hljs-string">'mouseover'</span>, eiti.util.bringToFront)
+  .on(<span class="hljs-string">'mouseout'</span>, eiti.util.returnToBack);</pre>
+
+
+
+</section>
+<section id='eiti-format-range'class='mt2 mb2 py1 px3 keyline-top'>
+  <h3 class='regular'>
+    <a class='black' href='#eiti-format-range'>
+      <code>
+        eiti.format.range<span class='gray'>(format)</span>
+      </code>
+    </a>
+  </h3>
+  <p>Create a range formatter that strips the preceding <code>$</code>
+from the second value to produce strings like <code>$10m - 20m</code>
+instead of <code>$10m - $20m</code>.</p>
+
+
+    <p>
+      <table class='table-light overflow-hidden bg-cloudy-light'>
+        <thead>
+          <th class='col-3'>parameter</th>
+          <th class='col-3'>type</th>
+          <th class='col-6'>description</th>
+        </thead>
+          <tr>
+            <td>format</td>
+            <td><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code> or <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">Function</a></code></td>
+            <td></td>
+          </tr>
+      </table>
+    </p>
+
+
+
+
+
+</section>
+<section id='eiti-format-metric'class='mt2 mb2 py1 px3 keyline-top'>
+  <h3 class='regular'>
+    <a class='black' href='#eiti-format-metric'>
+      <code>
+        eiti.format.metric<span class='gray'>(num)</span>
+      </code>
+    </a>
+  </h3>
+  <p>Produces international system/metric form, e.g. <code>4.1M</code></p>
 
 
     <p>
@@ -780,15 +869,16 @@ cents, e.g. <code>$1,234,567.89</code>.</p>
 
 
 </section>
-<section id='eiti-format-metric'class='mt2 mb2 py1 px3 keyline-top'>
+<section id='eiti-format-dollarsandcents'class='mt2 mb2 py1 px3 keyline-top'>
   <h3 class='regular'>
-    <a class='black' href='#eiti-format-metric'>
+    <a class='black' href='#eiti-format-dollarsandcents'>
       <code>
-        eiti.format.metric<span class='gray'>(num)</span>
+        eiti.format.dollarsAndCents<span class='gray'>(num)</span>
       </code>
     </a>
   </h3>
-  <p>Produces international system/metric form, e.g. <code>4.1M</code></p>
+  <p>Produces dollar strings with thousands separators and 2-decimal
+cents, e.g. <code>$1,234,567.89</code>.</p>
 
 
     <p>
@@ -817,17 +907,16 @@ cents, e.g. <code>$1,234,567.89</code>.</p>
 
 
 </section>
-<section id='eiti-format-range'class='mt2 mb2 py1 px3 keyline-top'>
+<section id='eiti-format-shortdollars'class='mt2 mb2 py1 px3 keyline-top'>
   <h3 class='regular'>
-    <a class='black' href='#eiti-format-range'>
+    <a class='black' href='#eiti-format-shortdollars'>
       <code>
-        eiti.format.range<span class='gray'>(format)</span>
+        eiti.format.shortDollars<span class='gray'>(num)</span>
       </code>
     </a>
   </h3>
-  <p>Create a range formatter that strips the preceding <code>$</code>
-from the second value to produce strings like <code>$10m - 20m</code>
-instead of <code>$10m - $20m</code>.</p>
+  <p>Produces short dollar strings in SI format with 1 decimal,
+e.g. <code>$1.2m</code> or <code>$4.8b</code>.</p>
 
 
     <p>
@@ -838,130 +927,20 @@ instead of <code>$10m - $20m</code>.</p>
           <th class='col-6'>description</th>
         </thead>
           <tr>
-            <td>format</td>
-            <td><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code> or <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">Function</a></code></td>
-            <td></td>
-          </tr>
-      </table>
-    </p>
-
-
-
-
-
-</section>
-<section id='eiti-format-transform'class='mt2 mb2 py1 px3 keyline-top'>
-  <h3 class='regular'>
-    <a class='black' href='#eiti-format-transform'>
-      <code>
-        eiti.format.transform<span class='gray'>(format, transform)</span>
-      </code>
-    </a>
-  </h3>
-  <p>Create a composite format that wraps a d3 format (or any other
-formatting function) with a transform function.</p>
-
-
-    <p>
-      <table class='table-light overflow-hidden bg-cloudy-light'>
-        <thead>
-          <th class='col-3'>parameter</th>
-          <th class='col-3'>type</th>
-          <th class='col-6'>description</th>
-        </thead>
-          <tr>
-            <td>format</td>
-            <td><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code> or <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">Function</a></code></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>transform</td>
-            <td><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">Function</a></code></td>
+            <td>num</td>
+            <td><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></code></td>
             <td></td>
           </tr>
       </table>
     </p>
 
       <h4>Returns</h4>
-      <code><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">Function</a></code></code>
+      <code><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code></code>
       
       <span class='force-inline'>
         
       </span>
 
-
-
-
-</section>
-<section id='eiti-ui-slider'class='mt2 mb2 py1 px3 keyline-top'>
-  <h3 class='regular'>
-    <a class='black' href='#eiti-ui-slider'>
-      <code>
-        eiti.ui.slider<span class='gray'></span>
-      </code>
-    </a>
-  </h3>
-  <p>Create a slider from a d3 selection that dispatches 'change'
-events whenever the element is clicked, tapped or dragged.</p>
-
-
-
-
-    <h4>Examples</h4>
-<pre><span class="hljs-keyword">var</span> slider = eiti.ui.slider()
-   .range([<span class="hljs-number">0</span>, <span class="hljs-number">100</span>])
-   .on(<span class="hljs-string">'change'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(e)</span> </span>{
-     <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'slider value:'</span>, e.value);
-   });
- d3.select(<span class="hljs-string">'#slider'</span>)
-   .call(slider);</pre>
-
-
-
-</section>
-<section id='eiti-util-jigglehash'class='mt2 mb2 py1 px3 keyline-top'>
-  <h3 class='regular'>
-    <a class='black' href='#eiti-util-jigglehash'>
-      <code>
-        eiti.util.jiggleHash<span class='gray'></span>
-      </code>
-    </a>
-  </h3>
-  <p>Force a reset of location.hash so that the browser (hopefully)
-scrolls to the element with the fragment identifier and toggles
-the :target pseudo-class.</p>
-
-
-
-      <h4>Returns</h4>
-      <code><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code></code>
-      
-      <span class='force-inline'>
-        
-      </span>
-
-
-
-
-</section>
-<section id='eiti-util-returntoback'class='mt2 mb2 py1 px3 keyline-top'>
-  <h3 class='regular'>
-    <a class='black' href='#eiti-util-returntoback'>
-      <code>
-        eiti.util.returnToBack<span class='gray'></span>
-      </code>
-    </a>
-  </h3>
-  <p>The compliment to <a href="bringtofront"><code>bringToFront</code></a>, returns an
-element to its previous position among its siblings.</p>
-
-
-
-
-    <h4>Examples</h4>
-<pre>d3.selectAll(<span class="hljs-string">'svg path'</span>)
-  .on(<span class="hljs-string">'mouseover'</span>, eiti.util.bringToFront)
-  .on(<span class="hljs-string">'mouseout'</span>, eiti.util.returnToBack);</pre>
 
 
 

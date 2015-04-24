@@ -43,14 +43,14 @@
                   <code>#getColors</code>
                 </a>
                 <a
-                  href='#commodities/getgroups'
-                  class='button-indent regular block'>
-                  <code>#getGroups</code>
-                </a>
-                <a
                   href='#commodities/getgroup'
                   class='button-indent regular block'>
                   <code>#getGroup</code>
+                </a>
+                <a
+                  href='#commodities/getgroups'
+                  class='button-indent regular block'>
+                  <code>#getGroups</code>
                 </a>
                 <a
                   href='#commodities/getprimarycolor'
@@ -63,16 +63,6 @@
                   <code>.OTHER</code>
                 </a>
               <a
-                href='#eiti-util-jigglehash'
-                class='regular block'>
-                <code>eiti.util.jiggleHash</code>
-              </a>
-              <a
-                href='#eiti-charts-area'
-                class='regular block'>
-                <code>eiti.charts.area</code>
-              </a>
-              <a
                 href='#eiti-util-bringtofront'
                 class='regular block'>
                 <code>eiti.util.bringToFront</code>
@@ -81,6 +71,11 @@
                 href='#eiti-data-walk'
                 class='regular block'>
                 <code>eiti.data.walk</code>
+              </a>
+              <a
+                href='#eiti-charts-area'
+                class='regular block'>
+                <code>eiti.charts.area</code>
               </a>
               <a
                 href='#eiti-data-nest'
@@ -101,6 +96,11 @@
                 href='#eiti-ui-margin'
                 class='regular block'>
                 <code>eiti.ui.margin</code>
+              </a>
+              <a
+                href='#eiti-util-jigglehash'
+                class='regular block'>
+                <code>eiti.util.jiggleHash</code>
               </a>
               <a
                 href='#eiti-util-returntoback'
@@ -131,6 +131,11 @@
                 href='#eiti-format-shortdollars'
                 class='regular block'>
                 <code>eiti.format.shortDollars</code>
+              </a>
+              <a
+                href='#margin'
+                class='regular block'>
+                <code>margin</code>
               </a>
           </div>
         </div>
@@ -298,31 +303,6 @@ scheme.</p>
 </section>
       </div>
       <div class='section-indent'>
-<section id='commodities/getgroups'class='mt2 mb2 py1 px3 keyline-top'>
-  <h3 class='regular'>
-    <a class='black' href='#commodities/getgroups'>
-      <code>
-        getGroups<span class='gray'></span>
-      </code>
-    </a>
-  </h3>
-  <p>Get the list of commodity groups as an array.</p>
-
-
-
-      <h4>Returns</h4>
-      <code>Array<<code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code>></code>
-      
-      <span class='force-inline'>
-        
-      </span>
-
-
-
-
-</section>
-      </div>
-      <div class='section-indent'>
 <section id='commodities/getgroup'class='mt2 mb2 py1 px3 keyline-top'>
   <h3 class='regular'>
     <a class='black' href='#commodities/getgroup'>
@@ -355,6 +335,31 @@ scheme.</p>
       <span class='force-inline'>
         <p>the commodity group</p>
 
+      </span>
+
+
+
+
+</section>
+      </div>
+      <div class='section-indent'>
+<section id='commodities/getgroups'class='mt2 mb2 py1 px3 keyline-top'>
+  <h3 class='regular'>
+    <a class='black' href='#commodities/getgroups'>
+      <code>
+        getGroups<span class='gray'></span>
+      </code>
+    </a>
+  </h3>
+  <p>Get the list of commodity groups as an array.</p>
+
+
+
+      <h4>Returns</h4>
+      <code>Array<<code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code>></code>
+      
+      <span class='force-inline'>
+        
       </span>
 
 
@@ -426,68 +431,6 @@ be assigned, namely <code>Other Commodities</code>.</p>
       </div>
 
 </section>
-<section id='eiti-util-jigglehash'class='mt2 mb2 py1 px3 keyline-top'>
-  <h3 class='regular'>
-    <a class='black' href='#eiti-util-jigglehash'>
-      <code>
-        eiti.util.jiggleHash<span class='gray'></span>
-      </code>
-    </a>
-  </h3>
-  <p>Force a reset of location.hash so that the browser (hopefully)
-scrolls to the element with the fragment identifier and toggles
-the :target pseudo-class.</p>
-
-
-
-      <h4>Returns</h4>
-      <code><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code></code>
-      
-      <span class='force-inline'>
-        
-      </span>
-
-
-
-
-</section>
-<section id='eiti-charts-area'class='mt2 mb2 py1 px3 keyline-top'>
-  <h3 class='regular'>
-    <a class='black' href='#eiti-charts-area'>
-      <code>
-        eiti.charts.area<span class='gray'></span>
-      </code>
-    </a>
-  </h3>
-  <p>An area chart generator for d3.</p>
-
-
-
-      <h4>Returns</h4>
-      <code><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/function">function</a></code></code>
-      :
-      <span class='force-inline'>
-        <p>a function for use with <code>d3.selection#call()</code></p>
-
-      </span>
-
-    <h4>Examples</h4>
-<pre><span class="hljs-keyword">var</span> area = eiti.charts.area()
-  .x(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(d)</span> </span>{ <span class="hljs-keyword">return</span> d.year; })
-  .y(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(d)</span> </span>{ <span class="hljs-keyword">return</span> d.category; })
-  .value(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(d)</span> </span>{ <span class="hljs-keyword">return</span> d.value; });
-
-d3.select(<span class="hljs-string">'svg'</span>)
-  .call(area, [
-     {year: <span class="hljs-number">2000</span>, category: <span class="hljs-string">'x'</span>, value: <span class="hljs-number">10</span>},
-     {year: <span class="hljs-number">2001</span>, category: <span class="hljs-string">'x'</span>, value: <span class="hljs-number">12</span>},
-     <span class="hljs-comment">// ...</span>
-     {year: <span class="hljs-number">2010</span>, category: <span class="hljs-string">'y'</span>, value: <span class="hljs-number">8</span>}
-  ]);</pre>
-
-
-
-</section>
 <section id='eiti-util-bringtofront'class='mt2 mb2 py1 px3 keyline-top'>
   <h3 class='regular'>
     <a class='black' href='#eiti-util-bringtofront'>
@@ -550,6 +493,36 @@ eiti.data.walk({foo: {bar: <span class="hljs-string">'baz'</span>}}, <span class
   values.push(d);
 });
 assert.deepEqual(values, [<span class="hljs-string">'baz'</span>]);</pre>
+
+
+
+</section>
+<section id='eiti-charts-area'class='mt2 mb2 py1 px3 keyline-top'>
+  <h3 class='regular'>
+    <a class='black' href='#eiti-charts-area'>
+      <code>
+        eiti.charts.area<span class='gray'></span>
+      </code>
+    </a>
+  </h3>
+  <p>An area chart generator for d3.</p>
+
+
+
+
+    <h4>Examples</h4>
+<pre><span class="hljs-keyword">var</span> area = eiti.charts.area()
+  .x(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(d)</span> </span>{ <span class="hljs-keyword">return</span> d.year; })
+  .y(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(d)</span> </span>{ <span class="hljs-keyword">return</span> d.category; })
+  .value(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(d)</span> </span>{ <span class="hljs-keyword">return</span> d.value; });
+
+d3.select(<span class="hljs-string">'svg'</span>)
+  .call(area, [
+     {year: <span class="hljs-number">2000</span>, category: <span class="hljs-string">'x'</span>, value: <span class="hljs-number">10</span>},
+     {year: <span class="hljs-number">2001</span>, category: <span class="hljs-string">'x'</span>, value: <span class="hljs-number">12</span>},
+     <span class="hljs-comment">// ...</span>
+     {year: <span class="hljs-number">2010</span>, category: <span class="hljs-string">'y'</span>, value: <span class="hljs-number">8</span>}
+  ]);</pre>
 
 
 
@@ -734,6 +707,31 @@ then return the object</li>
       </table>
     </p>
 
+
+
+
+
+</section>
+<section id='eiti-util-jigglehash'class='mt2 mb2 py1 px3 keyline-top'>
+  <h3 class='regular'>
+    <a class='black' href='#eiti-util-jigglehash'>
+      <code>
+        eiti.util.jiggleHash<span class='gray'></span>
+      </code>
+    </a>
+  </h3>
+  <p>Force a reset of location.hash so that the browser (hopefully)
+scrolls to the element with the fragment identifier and toggles
+the :target pseudo-class.</p>
+
+
+
+      <h4>Returns</h4>
+      <code><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code></code>
+      
+      <span class='force-inline'>
+        
+      </span>
 
 
 
@@ -940,6 +938,22 @@ e.g. <code>$1.2m</code> or <code>$4.8b</code>.</p>
       <span class='force-inline'>
         
       </span>
+
+
+
+
+</section>
+<section id='margin'class='mt2 mb2 py1 px3 keyline-top'>
+  <h3 class='regular'>
+    <a class='black' href='#margin'>
+      <code>
+        margin<span class='gray'></span>
+      </code>
+    </a>
+  </h3>
+  
+
+
 
 
 

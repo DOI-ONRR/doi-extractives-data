@@ -382,6 +382,90 @@
           ]
         },
         {
+          "description": "Get the nesting group for a given commodity.",
+          "tags": [
+            {
+              "title": "param",
+              "description": null,
+              "type": {
+                "type": "NameExpression",
+                "name": "String"
+              },
+              "name": "commodity"
+            },
+            {
+              "title": "returns",
+              "description": "the commodity group",
+              "type": {
+                "type": "NameExpression",
+                "name": "String"
+              }
+            },
+            {
+              "title": "name",
+              "name": "getGroup"
+            },
+            {
+              "title": "kind",
+              "kind": "function"
+            },
+            {
+              "title": "memberof",
+              "description": "Commodities"
+            },
+            {
+              "title": "instance"
+            }
+          ],
+          "context": {
+            "loc": {
+              "start": {
+                "line": 124,
+                "column": 4
+              },
+              "end": {
+                "line": 128,
+                "column": 6
+              }
+            },
+            "file": "/Users/allens/work/eiti-data/js/eiti.js",
+            "code": "{\n\n    /**\n     * Commodity grouping and color model.\n     * @class\n     */\n    var Commodities = function() {\n      if (!(this instanceof Commodities)) return new Commodities();\n      this.groups = d3.set([\n        'Coal',\n        'Gas',\n        'Geothermal',\n        'Oil',\n        'Oil & Gas',\n        Commodities.OTHER\n      ]);\n\n      this.groupMap = {\n        'Oil Shale': 'Oil'\n      };\n\n      this.groupColors = {\n        'Coal': 'YlOrBr',\n        'Oil': 'Greys',\n        'Gas': 'Purples',\n        'Oil & Gas': 'RdPu',\n        'Geothermal': 'OrRd',\n        'Other Commodities': 'Blues'\n      };\n    };\n\n    /**\n     * The group to which commodities with an unspecified group will\n     * be assigned, namely `Other Commodities`.\n     */\n    Commodities.OTHER = 'Other Commodities';\n\n    /**\n     * Get the nesting group for a given commodity.\n     * @param {String} commodity\n     * @return {String} the commodity group\n     */\n    Commodities.prototype.getGroup = function(commodity) {\n      commodity = commodity.replace(/\\s\\([a-z]+\\)$/, '');\n      if (this.groups.has(commodity)) return commodity;\n      return this.groupMap[commodity] || Commodities.OTHER;\n    };\n\n    /**\n     * Set the nesting group for a given commodity.\n     * @method\n     * @param {String} commodity\n     * @param {String} group\n     */\n    Commodities.prototype.setGroup = function(commodity, group) {\n      this.groupMap[commodity] = group;\n      return this;\n    };\n\n    /**\n     * Get the list of commodity groups as an array.\n     * @method\n     * @return {Array<String>}\n     */\n    Commodities.prototype.getGroups = function() {\n      return this.groups.values();\n    };\n\n    /**\n     * Get the colors associated with a commodity's group color\n     * scheme.\n     * @param {String} commodity the commodity or group\n     * @param {Number} steps the number of color steps (default: 9)\n     * @return {Array<String>}\n     */\n    Commodities.prototype.getColors = function(commodity, steps) {\n      if (!this.groups.has(commodity)) {\n        commodity = this.getGroup(commodity);\n      }\n      var scheme = this.groupColors[commodity] || 'Spectral';\n      return colorbrewer[scheme][steps || 9];\n    };\n\n    /**\n     * Get the primary color for a commodity group.\n     * @param {String} commodity the commodity or group\n     * @return {String} a CSS color\n     */\n    Commodities.prototype.getPrimaryColor = function(commodity) {\n      return this.getColors(commodity, 9)[4];\n    };\n\n    return Commodities;\n  }"
+          },
+          "params": [
+            {
+              "title": "param",
+              "description": null,
+              "type": {
+                "type": "NameExpression",
+                "name": "String"
+              },
+              "name": "commodity"
+            }
+          ],
+          "returns": [
+            {
+              "title": "returns",
+              "description": "the commodity group",
+              "type": {
+                "type": "NameExpression",
+                "name": "String"
+              }
+            }
+          ],
+          "name": "getGroup",
+          "kind": "function",
+          "memberof": "Commodities",
+          "scope": "instance",
+          "members": {
+            "instance": [],
+            "static": []
+          },
+          "path": [
+            "Commodities",
+            "getGroup"
+          ]
+        },
+        {
           "description": "Get the list of commodity groups as an array.",
           "tags": [
             {
@@ -466,90 +550,6 @@
           "path": [
             "Commodities",
             "getGroups"
-          ]
-        },
-        {
-          "description": "Get the nesting group for a given commodity.",
-          "tags": [
-            {
-              "title": "param",
-              "description": null,
-              "type": {
-                "type": "NameExpression",
-                "name": "String"
-              },
-              "name": "commodity"
-            },
-            {
-              "title": "returns",
-              "description": "the commodity group",
-              "type": {
-                "type": "NameExpression",
-                "name": "String"
-              }
-            },
-            {
-              "title": "name",
-              "name": "getGroup"
-            },
-            {
-              "title": "kind",
-              "kind": "function"
-            },
-            {
-              "title": "memberof",
-              "description": "Commodities"
-            },
-            {
-              "title": "instance"
-            }
-          ],
-          "context": {
-            "loc": {
-              "start": {
-                "line": 124,
-                "column": 4
-              },
-              "end": {
-                "line": 128,
-                "column": 6
-              }
-            },
-            "file": "/Users/allens/work/eiti-data/js/eiti.js",
-            "code": "{\n\n    /**\n     * Commodity grouping and color model.\n     * @class\n     */\n    var Commodities = function() {\n      if (!(this instanceof Commodities)) return new Commodities();\n      this.groups = d3.set([\n        'Coal',\n        'Gas',\n        'Geothermal',\n        'Oil',\n        'Oil & Gas',\n        Commodities.OTHER\n      ]);\n\n      this.groupMap = {\n        'Oil Shale': 'Oil'\n      };\n\n      this.groupColors = {\n        'Coal': 'YlOrBr',\n        'Oil': 'Greys',\n        'Gas': 'Purples',\n        'Oil & Gas': 'RdPu',\n        'Geothermal': 'OrRd',\n        'Other Commodities': 'Blues'\n      };\n    };\n\n    /**\n     * The group to which commodities with an unspecified group will\n     * be assigned, namely `Other Commodities`.\n     */\n    Commodities.OTHER = 'Other Commodities';\n\n    /**\n     * Get the nesting group for a given commodity.\n     * @param {String} commodity\n     * @return {String} the commodity group\n     */\n    Commodities.prototype.getGroup = function(commodity) {\n      commodity = commodity.replace(/\\s\\([a-z]+\\)$/, '');\n      if (this.groups.has(commodity)) return commodity;\n      return this.groupMap[commodity] || Commodities.OTHER;\n    };\n\n    /**\n     * Set the nesting group for a given commodity.\n     * @method\n     * @param {String} commodity\n     * @param {String} group\n     */\n    Commodities.prototype.setGroup = function(commodity, group) {\n      this.groupMap[commodity] = group;\n      return this;\n    };\n\n    /**\n     * Get the list of commodity groups as an array.\n     * @method\n     * @return {Array<String>}\n     */\n    Commodities.prototype.getGroups = function() {\n      return this.groups.values();\n    };\n\n    /**\n     * Get the colors associated with a commodity's group color\n     * scheme.\n     * @param {String} commodity the commodity or group\n     * @param {Number} steps the number of color steps (default: 9)\n     * @return {Array<String>}\n     */\n    Commodities.prototype.getColors = function(commodity, steps) {\n      if (!this.groups.has(commodity)) {\n        commodity = this.getGroup(commodity);\n      }\n      var scheme = this.groupColors[commodity] || 'Spectral';\n      return colorbrewer[scheme][steps || 9];\n    };\n\n    /**\n     * Get the primary color for a commodity group.\n     * @param {String} commodity the commodity or group\n     * @return {String} a CSS color\n     */\n    Commodities.prototype.getPrimaryColor = function(commodity) {\n      return this.getColors(commodity, 9)[4];\n    };\n\n    return Commodities;\n  }"
-          },
-          "params": [
-            {
-              "title": "param",
-              "description": null,
-              "type": {
-                "type": "NameExpression",
-                "name": "String"
-              },
-              "name": "commodity"
-            }
-          ],
-          "returns": [
-            {
-              "title": "returns",
-              "description": "the commodity group",
-              "type": {
-                "type": "NameExpression",
-                "name": "String"
-              }
-            }
-          ],
-          "name": "getGroup",
-          "kind": "function",
-          "memberof": "Commodities",
-          "scope": "instance",
-          "members": {
-            "instance": [],
-            "static": []
-          },
-          "path": [
-            "Commodities",
-            "getGroup"
           ]
         },
         {
@@ -683,146 +683,6 @@
     },
     "path": [
       "Commodities"
-    ]
-  },
-  {
-    "description": "Force a reset of location.hash so that the browser (hopefully)\nscrolls to the element with the fragment identifier and toggles\nthe :target pseudo-class.",
-    "tags": [
-      {
-        "title": "name",
-        "description": null,
-        "name": "eiti.util.jiggleHash"
-      },
-      {
-        "title": "returns",
-        "description": null,
-        "type": {
-          "type": "NameExpression",
-          "name": "Boolean"
-        }
-      },
-      {
-        "title": "kind",
-        "kind": "function"
-      },
-      {
-        "title": "memberof",
-        "description": "eiti.util"
-      },
-      {
-        "title": "static"
-      }
-    ],
-    "context": {
-      "loc": {
-        "start": {
-          "line": 476,
-          "column": 2
-        },
-        "end": {
-          "line": 484,
-          "column": 4
-        }
-      },
-      "file": "/Users/allens/work/eiti-data/js/eiti.js",
-      "code": "{\n\n  /**\n   * @namespace eiti\n   */\n  var eiti = exports.eiti = {};\n\n  /** data classes and functions */\n  eiti.data = {};\n\n  /**\n   * Nest data into an object structure:\n   * @name eiti.data.nest\n   *\n   * @example\n   * var data = [{x: 1, y: 2}, {x: 2, y: 2}];\n   * var nested = eiti.data.nest(data, ['x', 'y']);\n   * assert.deepEqual(nested, {\n   *   1: {\n   *     2: [\n   *       {x: 1, y: 2}\n   *     ]\n   *   },\n   *   2: {\n   *     2: [\n   *       {x: 2, y: 2}\n   *     ]\n   *   }\n   * });\n   *\n   * @param {Array} rows a dimensional tabular data set\n   * @param {Array} keys a list of key functions or property names\n   * @param {Function=} rollup an optional value rollup function\n   */\n  eiti.data.nest = function(rows, keys, rollup) {\n    var nest = d3.nest();\n    keys.forEach(function(k) {\n      nest.key(getter(k));\n    });\n    if (rollup) nest.rollup(rollup);\n    return nest.map(rows);\n  };\n\n  function isScalar(d) {\n    return typeof d !== 'object';\n  }\n\n  /**\n   * Walk a nested object structure and call a function on each\n   * \"leaf\" node (that is not an object).\n   * @name eiti.data.walk\n   *\n   * @example\n   * var value = [];\n   * eiti.data.walk({foo: {bar: 'baz'}}, function(d, i) {\n   *   values.push(d);\n   * });\n   * assert.deepEqual(values, ['baz']);\n   *\n   * @param {Array|Object} data the array or object to iterate over\n   * @param {Function} callback the function to call on each leaf node\n   * @return void\n   */\n  eiti.data.walk = function(struct, each) {\n    walk(struct);\n\n    function walk(d, i) {\n      if (Array.isArray(d)) {\n        return d.forEach(function(v, i) {\n          walk.call(d, v, i);\n        });\n      } else if (typeof d === 'object') {\n        return d3.keys(d).forEach(function(key) {\n          walk.call(d, d[key], key);\n        });\n      } else {\n        each.call(this, d, i);\n      }\n    }\n  };\n\n  eiti.data.Commodities = (function() {\n\n    /**\n     * Commodity grouping and color model.\n     * @class\n     */\n    var Commodities = function() {\n      if (!(this instanceof Commodities)) return new Commodities();\n      this.groups = d3.set([\n        'Coal',\n        'Gas',\n        'Geothermal',\n        'Oil',\n        'Oil & Gas',\n        Commodities.OTHER\n      ]);\n\n      this.groupMap = {\n        'Oil Shale': 'Oil'\n      };\n\n      this.groupColors = {\n        'Coal': 'YlOrBr',\n        'Oil': 'Greys',\n        'Gas': 'Purples',\n        'Oil & Gas': 'RdPu',\n        'Geothermal': 'OrRd',\n        'Other Commodities': 'Blues'\n      };\n    };\n\n    /**\n     * The group to which commodities with an unspecified group will\n     * be assigned, namely `Other Commodities`.\n     */\n    Commodities.OTHER = 'Other Commodities';\n\n    /**\n     * Get the nesting group for a given commodity.\n     * @param {String} commodity\n     * @return {String} the commodity group\n     */\n    Commodities.prototype.getGroup = function(commodity) {\n      commodity = commodity.replace(/\\s\\([a-z]+\\)$/, '');\n      if (this.groups.has(commodity)) return commodity;\n      return this.groupMap[commodity] || Commodities.OTHER;\n    };\n\n    /**\n     * Set the nesting group for a given commodity.\n     * @method\n     * @param {String} commodity\n     * @param {String} group\n     */\n    Commodities.prototype.setGroup = function(commodity, group) {\n      this.groupMap[commodity] = group;\n      return this;\n    };\n\n    /**\n     * Get the list of commodity groups as an array.\n     * @method\n     * @return {Array<String>}\n     */\n    Commodities.prototype.getGroups = function() {\n      return this.groups.values();\n    };\n\n    /**\n     * Get the colors associated with a commodity's group color\n     * scheme.\n     * @param {String} commodity the commodity or group\n     * @param {Number} steps the number of color steps (default: 9)\n     * @return {Array<String>}\n     */\n    Commodities.prototype.getColors = function(commodity, steps) {\n      if (!this.groups.has(commodity)) {\n        commodity = this.getGroup(commodity);\n      }\n      var scheme = this.groupColors[commodity] || 'Spectral';\n      return colorbrewer[scheme][steps || 9];\n    };\n\n    /**\n     * Get the primary color for a commodity group.\n     * @param {String} commodity the commodity or group\n     * @return {String} a CSS color\n     */\n    Commodities.prototype.getPrimaryColor = function(commodity) {\n      return this.getColors(commodity, 9)[4];\n    };\n\n    return Commodities;\n  })();\n\n  eiti.data.Model = (function() {\n\n    /*\n     * A data model for storing named datasets.\n     * @class\n     */\n    var Model = function(data) {\n      if (!(this instanceof Model)) return new Model(data);\n      this.data = d3.map(data);\n    };\n\n    Model.prototype.has = function(name) {\n      return this.data.has(name);\n    };\n\n    Model.prototype.get = function(name) {\n      return this.data.get(name);\n    };\n\n    Model.prototype.set = function(name, data) {\n      return this.data.set(name, data);\n    };\n\n    Model.prototype.load = function(name, url, done) {\n      if (this.has(name)) {\n        return done(null, this.get(name));\n      }\n      var ext = url.split('.').pop();\n      var load = d3[ext || 'json'];\n      return load(url, function(error, data) {\n        if (error) return done(error);\n        this.set(name, data);\n        done(null, data);\n      }.bind(this));\n    };\n\n    Model.prototype.createIndex = function(src, dest, keys, rollup) {\n      if (this.has(dest)) return this.get(dest);\n      var data = this.get(src);\n      var index = eiti.data.nest(data, keys, rollup);\n      this.set(dest, index);\n      return index;\n    };\n\n    function getIndexKey(name, keys) {\n      return name + ':' + keys.join('/');\n    }\n\n    return Model;\n  })();\n\n  /**\n   * Create a key getter function a la Python's\n   * itertools.itemgetter().\n   * @name eiti.data.getter\n   *\n   * @example\n   * var title = eiti.data.getter('title');\n   * var titles = data.map(title);\n   *\n   * @param {String|Number|Function} key\n   * @return {Function}\n   */\n  eiti.data.getter = getter;\n\n  // UI bits\n  eiti.ui = {};\n\n  /**\n   * Create a slider from a d3 selection that dispatches 'change'\n   * events whenever the element is clicked, tapped or dragged.\n   * @name eiti.ui.slider\n   *\n   * @example\n   *\n   *  var slider = eiti.ui.slider()\n   *    .range([0, 100])\n   *    .on('change', function(e) {\n   *      console.log('slider value:', e.value);\n   *    });\n   *  d3.select('#slider')\n   *    .call(slider);\n   */\n  eiti.ui.slider = function() {\n\n    var slider = function(selection) {\n      root = selection;\n      // XXX don't capture right-clicks (for inspecting)\n      selection.on('mousedown', function() {\n        var e = d3.event;\n        if (e.button === 2) {\n          e.preventDefault();\n          e.stopPropagation();\n          return false;\n        }\n      });\n      selection.call(drag);\n      if (typeof value !== 'undefined') {\n        slider.update(root);\n      }\n    };\n\n    var root, value;\n    var dragging = false;\n\n    var nub = '.nub';\n    var scale = d3.scale.linear()\n      .clamp(true);\n\n    var snap = false;\n    var dispatch = d3.dispatch('change');\n    var format = String;\n\n    function drag(selection) {\n      selection.on('mousedown.slider', function() {\n        // console.log('[drag] down');\n        dragging = true;\n        var body = d3.select('body').on('mouseup.slider', function() {\n          // console.log('[drag] up');\n          dragging = false;\n          body.on('mouseup.slider', null);\n        });\n        move(d3.event);\n      })\n      .on('mousemove.slider', function() {\n        if (dragging) {\n          // console.log('[drag] move');\n          move(d3.event);\n          return false;\n        }\n      });\n    }\n\n    function move(e) {\n      var p = getPosition(e),\n          w = getWidth(root.node()),\n          x = Math.max(0, Math.min(p.x, w)),\n          u = x / w,\n          v = scale(u);\n\n      // console.log('[slider] drag:', [p.x, p.y].join(','), [w, x, u, v].join(' '));\n\n      if (value != v) {\n        value = v;\n        dispatch.change({\n          x: x,\n          u: u,\n          value: value,\n          sourceEvent: e.sourceEvent\n        });\n      }\n\n      root.each(update);\n    }\n\n    function getPosition(e) {\n      var p = e.type === 'touchstart'\n        ? d3.touches(root.node())[0]\n        : d3.mouse(root.node());\n      return {x: p[0], y: p[1]};\n    }\n\n    slider.nub = function(selector) {\n      if (!arguments.length) return nub;\n      nub = selector;\n      return slider;\n    };\n\n    slider.range = function(range) {\n      if (!arguments.length) return scale.range();\n      scale.range(range);\n      return slider;\n    };\n\n    slider.snap = function(x) {\n      if (!arguments.length) return snap;\n      snap = x;\n      var range = scale.range();\n      if (snap) {\n        scale.rangeRound(range);\n      } else {\n        scale.range(range);\n      }\n      return slider;\n    };\n\n    slider.value = function(x) {\n      if (!arguments.length) return value;\n      value = +x;\n      if (root && !dragging) {\n        slider.update(root);\n      }\n      return slider;\n    };\n\n    slider.update = function(selection) {\n      selection.each(update);\n    };\n\n    function update() {\n      var left = scale.invert(value) * 100;\n      d3.select(this).select(nub)\n        .style('left', left + '%')\n        .select('.value')\n          .text(format(value));\n    }\n\n    function dragstart() {\n      var e = d3.event,\n          o = e.sourceEvent,\n          p = o.type === 'touchstart'\n            ? d3.touches(root.node())[0]\n            : d3.mouse(root.node());\n      e.x = p[0];\n      e.y = p[1];\n      dragging = true;\n      dragmove();\n    }\n\n    function dragmove() {\n      var e = d3.event,\n          w = getWidth(root.node()),\n          x = Math.max(0, Math.min(e.x, w)),\n          u = x / w,\n          v = scale(u);\n\n      if (value != v) {\n        value = v;\n        dispatch.change({\n          x: x,\n          u: u,\n          value: value,\n          sourceEvent: e.sourceEvent\n        });\n      }\n\n      root.each(update);\n    }\n\n    function dragend() {\n      var e = d3.event;\n      // console.log('[drag] end');\n      dragging = false;\n    }\n\n    function getWidth(node) {\n      return node.getBoundingClientRect().width;\n    }\n\n    d3.rebind(slider, dispatch, 'on');\n    return slider;\n  };\n\n  /**\n   * Create a margin object {top, right, left, bottom} from any \n   * of the following types:\n   *\n   * - string: coerce to a number\n   * - number: a margin object with equal top, right, left and\n   *   bottom values\n   * - array: read the values as [top, right, bottom, left] if there\n   *   are 4 or more elements; otherwise read as [vertical,\n   *   horizontal]\n   * - object: set top, right, bottom and left keys to 0 if not set,\n   *   then return the object\n   * @name eiti.ui.margin\n   *\n   * @param {*} input\n   */\n  eiti.ui.margin = function(d) {\n    switch (typeof d) {\n      case 'string':\n        d = +d || 0;\n      case 'number':\n        return {left: d, top: d, right: d, bottom: d};\n      case 'undefined':\n        return {left: 0, top: 0, right: 0, bottom: 0};\n    }\n    if (Array.isArray(d)) {\n      return d.length >= 4\n        ? {top: d[0], right: d[1], bottom: d[2], left: d[3]}\n        : {top: d[0], right: d[1], bottom: d[0], left: d[1]};\n    }\n    ['top', 'right', 'bottom', 'left'].forEach(function(k) {\n      if (!d.hasOwnProperty(k)) d[k] = 0;\n    });\n    return d;\n  };\n\n  eiti.util = {};\n\n  /**\n   * Force a reset of location.hash so that the browser (hopefully)\n   * scrolls to the element with the fragment identifier and toggles\n   * the :target pseudo-class.\n   * @name eiti.util.jiggleHash\n   *\n   * @return {Boolean}\n   */\n  eiti.util.jiggleHash = function() {\n    var hash = location.hash;\n    if (hash) {\n      location.hash = '';\n      location.hash = hash;\n      return true;\n    }\n    return false;\n  };\n\n  /**\n   * d3 helper for bringing an element to the front among its\n   * siblings. Use it with an event listener, e.g.:\n   * @name eiti.util.bringToFront\n   *\n   * @example\n   * d3.selectAll('svg path')\n   *   .on('mouseover', eiti.util.bringToFront);\n   */\n  eiti.util.bringToFront = function() {\n    this._nextSibling = this.nextSibling;\n    this.parentNode.appendChild(this);\n  };\n\n  /**\n   * The compliment to {@link bringToFront}, returns an\n   * element to its previous position among its siblings.\n   * @name eiti.util.returnToBack\n   *\n   * @example\n   * d3.selectAll('svg path')\n   *   .on('mouseover', eiti.util.bringToFront)\n   *   .on('mouseout', eiti.util.returnToBack);\n   */\n  eiti.util.returnToBack = function() {\n    this.parentNode.insertBefore(this, this._nextSibling);\n    delete this._nextSibling;\n  };\n\n  eiti.format = {};\n\n  /**\n   * Create a composite format that wraps a d3 format (or any other\n   * formatting function) with a transform function.\n   * @name eiti.format.transform\n   * @param {String|Function} format\n   * @param {Function} transform\n   * @return {Function}\n   */\n  eiti.format.transform = function(format, transform) {\n    if (typeof format === 'string') {\n      format = d3.format(format);\n    }\n    return function(d) {\n      return transform(format(d) || '');\n    };\n  };\n\n  /**\n   * Create a range formatter that strips the preceding `$`\n   * from the second value to produce strings like `$10m - 20m`\n   * instead of `$10m - $20m`.\n   * @name eiti.format.range\n   * @param {String|Function} format\n   * @param {String} [glue]\n   * @return {Function}\n   */\n  eiti.format.range = function(format, glue) {\n    if (typeof format === 'string') {\n      format = d3.format(format);\n    }\n    if (!glue) glue = ' – ';\n    return function(range) {\n      range = range.map(function(d, i) {\n        var str = format(d);\n        return i > 0 ? str.replace('$', '') : str;\n      });\n      /*\n      // suffix de-duping\n      var suffix = range.map(function(str) {\n        var match = str.match(/[a-z]$/);\n        return match ? match[0] : null;\n      });\n      if (suffix[0] === suffix[1]) {\n        range[0] = range[0].substr(0, range[0].length - 1);\n      }\n      */\n      return range.join(glue);\n    };\n  };\n\n  /**\n   * Produces international system/metric form, e.g. `4.1M`\n   * @name eiti.format.metric\n   * @function\n   * @param {Number} num\n   * @return {String}\n   */\n  eiti.format.metric = d3.format('.2s');\n\n  /**\n   * Produces whole dollar strings with thousands separators, e.g.\n   * `$1,234,567`.\n   * @name eiti.format.dollars\n   * @function\n   * @param {Number} num\n   * @return {String}\n   */\n  eiti.format.dollars = d3.format('$,.0f');\n\n  /**\n   * Produces dollar strings with thousands separators and 2-decimal\n   * cents, e.g. `$1,234,567.89`.\n   * @name eiti.format.dollarsAndCents\n   * @function\n   * @param {Number} num\n   * @return {String}\n   */\n  eiti.format.dollarsAndCents = d3.format('$,.2f');\n\n  /**\n   * Produces short dollar strings in SI format with 1 decimal,\n   * e.g. `$1.2m` or `$4.8b`.\n   * @name eiti.format.shortDollars\n   * @function\n   * @param {Number} num\n   * @return {String}\n   */\n  eiti.format.shortDollars = eiti.format.transform('$,.2s', function(str) {\n    var suffix = {k: 'k', M: 'm', G: 'b'};\n    return str.replace(/[kMG]$/, function(s) {\n      return suffix[s] || s;\n    });\n  });\n\n  function getter(key) {\n    if (typeof key === 'function') return key;\n    return function(d) { return d[key]; };\n  }\n\n}"
-    },
-    "name": "eiti.util.jiggleHash",
-    "returns": [
-      {
-        "title": "returns",
-        "description": null,
-        "type": {
-          "type": "NameExpression",
-          "name": "Boolean"
-        }
-      }
-    ],
-    "kind": "function",
-    "memberof": "eiti.util",
-    "scope": "static",
-    "members": {
-      "instance": [],
-      "static": []
-    },
-    "path": [
-      "eiti.util.jiggleHash"
-    ]
-  },
-  {
-    "description": "An area chart generator for d3.",
-    "tags": [
-      {
-        "title": "function",
-        "description": null,
-        "name": null
-      },
-      {
-        "title": "name",
-        "description": null,
-        "name": "eiti.charts.area"
-      },
-      {
-        "title": "example",
-        "description": "var area = eiti.charts.area()\n  .x(function(d) { return d.year; })\n  .y(function(d) { return d.category; })\n  .value(function(d) { return d.value; });\n\nd3.select('svg')\n  .call(area, [\n     {year: 2000, category: 'x', value: 10},\n     {year: 2001, category: 'x', value: 12},\n     // ...\n     {year: 2010, category: 'y', value: 8}\n  ]);"
-      },
-      {
-        "title": "returns",
-        "description": "a function for use with `d3.selection#call()`",
-        "type": {
-          "type": "NameExpression",
-          "name": "function"
-        }
-      },
-      {
-        "title": "kind",
-        "kind": "function"
-      },
-      {
-        "title": "memberof",
-        "description": "eiti.charts"
-      },
-      {
-        "title": "static"
-      }
-    ],
-    "context": {
-      "loc": {
-        "start": {
-          "line": 30,
-          "column": 2
-        },
-        "end": {
-          "line": 225,
-          "column": 4
-        }
-      },
-      "file": "/Users/allens/work/eiti-data/js/eiti.charts.js",
-      "code": "{\n\n  var eiti = exports.eiti;\n\n  var getter = eiti.data.getter;\n\n  eiti.charts = {};\n\n  /**\n   * An area chart generator for d3.\n   * @function\n   * @name eiti.charts.area\n   *\n   * @example\n   * var area = eiti.charts.area()\n   *   .x(function(d) { return d.year; })\n   *   .y(function(d) { return d.category; })\n   *   .value(function(d) { return d.value; });\n   *\n   * d3.select('svg')\n   *   .call(area, [\n   *      {year: 2000, category: 'x', value: 10},\n   *      {year: 2001, category: 'x', value: 12},\n   *      // ...\n   *      {year: 2010, category: 'y', value: 8}\n   *   ]);\n   *\n   * @return {function} a function for use with `d3.selection#call()`\n   */\n  eiti.charts.area = function() {\n    var dx = getter('Year');\n    var dy = getter('Commodity');\n    var value = getter('Revenue');\n    var stacked = true;\n    var log = false;\n\n    var width = 960;\n    var height = 100;\n\n    var margin = {\n      top: 10,\n      bottom: 25,\n      left: 50,\n      right: 20\n    };\n\n    var fill = d3.scale.category10();\n\n    var chart = function(svg, data) {\n      if (data) {\n        svg.datum(data);\n      } else {\n        data = svg.datum() || [];\n      }\n      svg.attr('viewBox', [0, 0, width, height].join(' '));\n\n      var index = d3.nest()\n        .key(dy)\n        .key(dx)\n        .rollup(function(d) {\n          return d3.sum(d, value);\n        })\n        .map(data);\n\n      var xs = d3.extent(data, dx).map(Number);\n      var ys = d3.keys(index);\n      var xd = d3.range(xs[0], xs[1] + 1);\n      var layers = ys.map(function(y) {\n        return xd.map(function(x) {\n          var z = index[y][x] || 0;\n          if (stacked && z < 0) z = 0;\n          return {\n            x: x,\n            y: z,\n            key: y\n          };\n        });\n      });\n\n      layers.forEach(function(d) {\n        d.key = d[0].key;\n        d.sum = d3.sum(d, getter('y'));\n      });\n\n      layers.sort(function(a, b) {\n        return d3.descending(a.sum, b.sum);\n      });\n\n      var aggr = stacked ? d3.sum : d3.max;\n      var yd = d3.extent(xd, function(x, i) {\n        return aggr(layers, function(d) {\n          return d[i].y;\n        });\n      });\n\n      var y0 = height - margin.bottom;\n      var y1 = margin.top;\n\n      var y = log\n        ? d3.scale.log()\n          .domain([1, yd[1]])\n          .range([y0, y1])\n          .clamp(true)\n        : d3.scale.linear()\n          .domain([0, yd[1]])\n          .range([y0, y1]);\n      y.nice();\n\n      var x = d3.scale.linear()\n        .domain(d3.extent(data, dx))\n        .range([margin.left, width - margin.right]);\n\n      var yAxis = d3.svg.axis()\n        .orient('left')\n        .scale(y);\n\n      var si = d3.format('s');\n      var suffix = {K: 'k', M: 'm', G: 'b'};\n      var ticks = 3;\n      var yFormat = function(n, i) {\n        var p = (i === 0 || i === ticks) ? '$' : '';\n        return p + si(n).replace(/[KMG]$/, function(s) {\n          return suffix[s] || s;\n        });\n      };\n      if (log) {\n        ticks -= 1;\n        yAxis.ticks(ticks, yFormat);\n      } else {\n        yAxis.ticks(ticks)\n          .tickFormat(yFormat);\n      }\n\n      svg.append('g')\n        .attr('class', 'axis y')\n        .attr('transform', 'translate(' + [margin.left - 2, 0] + ')')\n        .call(yAxis);\n\n      svg.append('g')\n        .attr('class', 'axis x')\n        .attr('transform', 'translate(' + [0, height - margin.bottom + 2] + ')')\n        .call(d3.svg.axis()\n          .orient('bottom')\n          .scale(x)\n          .tickFormat(d3.format('d')));\n\n      var stack = d3.layout.stack();\n\n      var g = svg.selectAll('g.layer')\n        .data(stack(layers))\n        .enter()\n        .append('g')\n          .attr('class', 'layer')\n          .append('a');\n\n      var area = d3.svg.area()\n        .x(function(d) { return x(d.x); });\n\n      if (stacked) {\n        area\n          .y0(function(d) { return y(d.y0); })\n          .y1(function(d) { return y(d.y + d.y0); });\n      } else {\n        area\n          .y0(y(0))\n          .y1(function(d) { return y(d.y); });\n      }\n\n      var paths = g.append('path')\n        .attr('fill', function(d) {\n          return fill(d.key);\n        })\n        .attr('d', area);\n    };\n\n    chart.margin = function(_) {\n      if (!arguments.length) return margin;\n      margin = eiti.ui.margin(_);\n      return chart;\n    };\n\n    chart.x = function(_) {\n      if (!arguments.length) return dx;\n      dx = (typeof _ === 'string')\n        ? getter(_)\n        : d3.functor(_);\n      return chart;\n    };\n\n    chart.y = function(_) {\n      if (!arguments.length) return dy;\n      dy = (typeof _ === 'string')\n        ? getter(_)\n        : d3.functor(_);\n      return chart;\n    };\n\n    chart.value = function(_) {\n      if (!arguments.length) return value;\n      value = (typeof _ === 'string')\n        ? getter(_)\n        : d3.functor(_);\n      return chart;\n    };\n\n    chart.stacked = function(_) {\n      if (!arguments.length) return stacked;\n      stacked = !!_;\n      return chart;\n    };\n\n    chart.log = function(_) {\n      if (!arguments.length) return log;\n      log = !!_;\n      return chart;\n    };\n\n    chart.fill = function(_) {\n      if (!arguments.length) return fill;\n      fill = d3.functor(_);\n      return chart;\n    };\n\n    return chart;\n  };\n\n}"
-    },
-    "name": "eiti.charts.area",
-    "examples": [
-      "<span class=\"hljs-keyword\">var</span> area = eiti.charts.area()\n  .x(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span><span class=\"hljs-params\">(d)</span> </span>{ <span class=\"hljs-keyword\">return</span> d.year; })\n  .y(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span><span class=\"hljs-params\">(d)</span> </span>{ <span class=\"hljs-keyword\">return</span> d.category; })\n  .value(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span><span class=\"hljs-params\">(d)</span> </span>{ <span class=\"hljs-keyword\">return</span> d.value; });\n\nd3.select(<span class=\"hljs-string\">'svg'</span>)\n  .call(area, [\n     {year: <span class=\"hljs-number\">2000</span>, category: <span class=\"hljs-string\">'x'</span>, value: <span class=\"hljs-number\">10</span>},\n     {year: <span class=\"hljs-number\">2001</span>, category: <span class=\"hljs-string\">'x'</span>, value: <span class=\"hljs-number\">12</span>},\n     <span class=\"hljs-comment\">// ...</span>\n     {year: <span class=\"hljs-number\">2010</span>, category: <span class=\"hljs-string\">'y'</span>, value: <span class=\"hljs-number\">8</span>}\n  ]);"
-    ],
-    "returns": [
-      {
-        "title": "returns",
-        "description": "a function for use with `d3.selection#call()`",
-        "type": {
-          "type": "NameExpression",
-          "name": "function"
-        }
-      }
-    ],
-    "kind": "function",
-    "memberof": "eiti.charts",
-    "scope": "static",
-    "members": {
-      "instance": [],
-      "static": []
-    },
-    "path": [
-      "eiti.charts.area"
     ]
   },
   {
@@ -985,6 +845,65 @@
     },
     "path": [
       "eiti.data.walk"
+    ]
+  },
+  {
+    "description": "An area chart generator for d3.",
+    "tags": [
+      {
+        "title": "class",
+        "description": null,
+        "type": null,
+        "name": null
+      },
+      {
+        "title": "name",
+        "description": null,
+        "name": "eiti.charts.area"
+      },
+      {
+        "title": "example",
+        "description": "var area = eiti.charts.area()\n  .x(function(d) { return d.year; })\n  .y(function(d) { return d.category; })\n  .value(function(d) { return d.value; });\n\nd3.select('svg')\n  .call(area, [\n     {year: 2000, category: 'x', value: 10},\n     {year: 2001, category: 'x', value: 12},\n     // ...\n     {year: 2010, category: 'y', value: 8}\n  ]);"
+      },
+      {
+        "title": "kind",
+        "kind": "class"
+      },
+      {
+        "title": "memberof",
+        "description": "eiti.charts"
+      },
+      {
+        "title": "static"
+      }
+    ],
+    "context": {
+      "loc": {
+        "start": {
+          "line": 28,
+          "column": 2
+        },
+        "end": {
+          "line": 228,
+          "column": 4
+        }
+      },
+      "file": "/Users/allens/work/eiti-data/js/eiti.charts.js",
+      "code": "{\n\n  var eiti = exports.eiti;\n\n  var getter = eiti.data.getter;\n\n  eiti.charts = {};\n\n  /**\n   * An area chart generator for d3.\n   * @class\n   * @name eiti.charts.area\n   *\n   * @example\n   * var area = eiti.charts.area()\n   *   .x(function(d) { return d.year; })\n   *   .y(function(d) { return d.category; })\n   *   .value(function(d) { return d.value; });\n   *\n   * d3.select('svg')\n   *   .call(area, [\n   *      {year: 2000, category: 'x', value: 10},\n   *      {year: 2001, category: 'x', value: 12},\n   *      // ...\n   *      {year: 2010, category: 'y', value: 8}\n   *   ]);\n   */\n  eiti.charts.area = function() {\n    var dx = getter('Year');\n    var dy = getter('Commodity');\n    var value = getter('Revenue');\n    var stacked = true;\n    var log = false;\n\n    var width = 960;\n    var height = 100;\n\n    var margin = {\n      top: 10,\n      bottom: 25,\n      left: 50,\n      right: 20\n    };\n\n    var fill = d3.scale.category10();\n\n    var chart = function(svg, data) {\n      if (data) {\n        svg.datum(data);\n      } else {\n        data = svg.datum() || [];\n      }\n      svg.attr('viewBox', [0, 0, width, height].join(' '));\n\n      var index = d3.nest()\n        .key(dy)\n        .key(dx)\n        .rollup(function(d) {\n          return d3.sum(d, value);\n        })\n        .map(data);\n\n      var xs = d3.extent(data, dx).map(Number);\n      var ys = d3.keys(index);\n      var xd = d3.range(xs[0], xs[1] + 1);\n      var layers = ys.map(function(y) {\n        return xd.map(function(x) {\n          var z = index[y][x] || 0;\n          if (stacked && z < 0) z = 0;\n          return {\n            x: x,\n            y: z,\n            key: y\n          };\n        });\n      });\n\n      layers.forEach(function(d) {\n        d.key = d[0].key;\n        d.sum = d3.sum(d, getter('y'));\n      });\n\n      layers.sort(function(a, b) {\n        return d3.descending(a.sum, b.sum);\n      });\n\n      var aggr = stacked ? d3.sum : d3.max;\n      var yd = d3.extent(xd, function(x, i) {\n        return aggr(layers, function(d) {\n          return d[i].y;\n        });\n      });\n\n      var y0 = height - margin.bottom;\n      var y1 = margin.top;\n\n      var y = log\n        ? d3.scale.log()\n          .domain([1, yd[1]])\n          .range([y0, y1])\n          .clamp(true)\n        : d3.scale.linear()\n          .domain([0, yd[1]])\n          .range([y0, y1]);\n      y.nice();\n\n      var x = d3.scale.linear()\n        .domain(d3.extent(data, dx))\n        .range([margin.left, width - margin.right]);\n\n      var yAxis = d3.svg.axis()\n        .orient('left')\n        .scale(y);\n\n      var si = d3.format('s');\n      var suffix = {K: 'k', M: 'm', G: 'b'};\n      var ticks = 3;\n      var yFormat = function(n, i) {\n        var p = (i === 0 || i === ticks) ? '$' : '';\n        return p + si(n).replace(/[KMG]$/, function(s) {\n          return suffix[s] || s;\n        });\n      };\n      if (log) {\n        ticks -= 1;\n        yAxis.ticks(ticks, yFormat);\n      } else {\n        yAxis.ticks(ticks)\n          .tickFormat(yFormat);\n      }\n\n      svg.append('g')\n        .attr('class', 'axis y')\n        .attr('transform', 'translate(' + [margin.left - 2, 0] + ')')\n        .call(yAxis);\n\n      svg.append('g')\n        .attr('class', 'axis x')\n        .attr('transform', 'translate(' + [0, height - margin.bottom + 2] + ')')\n        .call(d3.svg.axis()\n          .orient('bottom')\n          .scale(x)\n          .tickFormat(d3.format('d')));\n\n      var stack = d3.layout.stack();\n\n      var g = svg.selectAll('g.layer')\n        .data(stack(layers))\n        .enter()\n        .append('g')\n          .attr('class', 'layer')\n          .append('a');\n\n      var area = d3.svg.area()\n        .x(function(d) { return x(d.x); });\n\n      if (stacked) {\n        area\n          .y0(function(d) { return y(d.y0); })\n          .y1(function(d) { return y(d.y + d.y0); });\n      } else {\n        area\n          .y0(y(0))\n          .y1(function(d) { return y(d.y); });\n      }\n\n      var paths = g.append('path')\n        .attr('fill', function(d) {\n          return fill(d.key);\n        })\n        .attr('d', area);\n    };\n\n    /**\n     * @instance\n     * @method\n     * @memberof! eiti.charts.area#\n     */\n    chart.margin = function(_) {\n      if (!arguments.length) return margin;\n      margin = eiti.ui.margin(_);\n      return chart;\n    };\n\n    chart.x = function(_) {\n      if (!arguments.length) return dx;\n      dx = (typeof _ === 'string')\n        ? getter(_)\n        : d3.functor(_);\n      return chart;\n    };\n\n    chart.y = function(_) {\n      if (!arguments.length) return dy;\n      dy = (typeof _ === 'string')\n        ? getter(_)\n        : d3.functor(_);\n      return chart;\n    };\n\n    chart.value = function(_) {\n      if (!arguments.length) return value;\n      value = (typeof _ === 'string')\n        ? getter(_)\n        : d3.functor(_);\n      return chart;\n    };\n\n    chart.stacked = function(_) {\n      if (!arguments.length) return stacked;\n      stacked = !!_;\n      return chart;\n    };\n\n    chart.log = function(_) {\n      if (!arguments.length) return log;\n      log = !!_;\n      return chart;\n    };\n\n    chart.fill = function(_) {\n      if (!arguments.length) return fill;\n      fill = d3.functor(_);\n      return chart;\n    };\n\n    return chart;\n  };\n\n}"
+    },
+    "name": "eiti.charts.area",
+    "examples": [
+      "<span class=\"hljs-keyword\">var</span> area = eiti.charts.area()\n  .x(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span><span class=\"hljs-params\">(d)</span> </span>{ <span class=\"hljs-keyword\">return</span> d.year; })\n  .y(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span><span class=\"hljs-params\">(d)</span> </span>{ <span class=\"hljs-keyword\">return</span> d.category; })\n  .value(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span><span class=\"hljs-params\">(d)</span> </span>{ <span class=\"hljs-keyword\">return</span> d.value; });\n\nd3.select(<span class=\"hljs-string\">'svg'</span>)\n  .call(area, [\n     {year: <span class=\"hljs-number\">2000</span>, category: <span class=\"hljs-string\">'x'</span>, value: <span class=\"hljs-number\">10</span>},\n     {year: <span class=\"hljs-number\">2001</span>, category: <span class=\"hljs-string\">'x'</span>, value: <span class=\"hljs-number\">12</span>},\n     <span class=\"hljs-comment\">// ...</span>\n     {year: <span class=\"hljs-number\">2010</span>, category: <span class=\"hljs-string\">'y'</span>, value: <span class=\"hljs-number\">8</span>}\n  ]);"
+    ],
+    "kind": "class",
+    "memberof": "eiti.charts",
+    "scope": "static",
+    "members": {
+      "instance": [],
+      "static": []
+    },
+    "path": [
+      "eiti.charts.area"
     ]
   },
   {
@@ -1396,6 +1315,70 @@
     },
     "path": [
       "eiti.ui.margin"
+    ]
+  },
+  {
+    "description": "Force a reset of location.hash so that the browser (hopefully)\nscrolls to the element with the fragment identifier and toggles\nthe :target pseudo-class.",
+    "tags": [
+      {
+        "title": "name",
+        "description": null,
+        "name": "eiti.util.jiggleHash"
+      },
+      {
+        "title": "returns",
+        "description": null,
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        }
+      },
+      {
+        "title": "kind",
+        "kind": "function"
+      },
+      {
+        "title": "memberof",
+        "description": "eiti.util"
+      },
+      {
+        "title": "static"
+      }
+    ],
+    "context": {
+      "loc": {
+        "start": {
+          "line": 476,
+          "column": 2
+        },
+        "end": {
+          "line": 484,
+          "column": 4
+        }
+      },
+      "file": "/Users/allens/work/eiti-data/js/eiti.js",
+      "code": "{\n\n  /**\n   * @namespace eiti\n   */\n  var eiti = exports.eiti = {};\n\n  /** data classes and functions */\n  eiti.data = {};\n\n  /**\n   * Nest data into an object structure:\n   * @name eiti.data.nest\n   *\n   * @example\n   * var data = [{x: 1, y: 2}, {x: 2, y: 2}];\n   * var nested = eiti.data.nest(data, ['x', 'y']);\n   * assert.deepEqual(nested, {\n   *   1: {\n   *     2: [\n   *       {x: 1, y: 2}\n   *     ]\n   *   },\n   *   2: {\n   *     2: [\n   *       {x: 2, y: 2}\n   *     ]\n   *   }\n   * });\n   *\n   * @param {Array} rows a dimensional tabular data set\n   * @param {Array} keys a list of key functions or property names\n   * @param {Function=} rollup an optional value rollup function\n   */\n  eiti.data.nest = function(rows, keys, rollup) {\n    var nest = d3.nest();\n    keys.forEach(function(k) {\n      nest.key(getter(k));\n    });\n    if (rollup) nest.rollup(rollup);\n    return nest.map(rows);\n  };\n\n  function isScalar(d) {\n    return typeof d !== 'object';\n  }\n\n  /**\n   * Walk a nested object structure and call a function on each\n   * \"leaf\" node (that is not an object).\n   * @name eiti.data.walk\n   *\n   * @example\n   * var value = [];\n   * eiti.data.walk({foo: {bar: 'baz'}}, function(d, i) {\n   *   values.push(d);\n   * });\n   * assert.deepEqual(values, ['baz']);\n   *\n   * @param {Array|Object} data the array or object to iterate over\n   * @param {Function} callback the function to call on each leaf node\n   * @return void\n   */\n  eiti.data.walk = function(struct, each) {\n    walk(struct);\n\n    function walk(d, i) {\n      if (Array.isArray(d)) {\n        return d.forEach(function(v, i) {\n          walk.call(d, v, i);\n        });\n      } else if (typeof d === 'object') {\n        return d3.keys(d).forEach(function(key) {\n          walk.call(d, d[key], key);\n        });\n      } else {\n        each.call(this, d, i);\n      }\n    }\n  };\n\n  eiti.data.Commodities = (function() {\n\n    /**\n     * Commodity grouping and color model.\n     * @class\n     */\n    var Commodities = function() {\n      if (!(this instanceof Commodities)) return new Commodities();\n      this.groups = d3.set([\n        'Coal',\n        'Gas',\n        'Geothermal',\n        'Oil',\n        'Oil & Gas',\n        Commodities.OTHER\n      ]);\n\n      this.groupMap = {\n        'Oil Shale': 'Oil'\n      };\n\n      this.groupColors = {\n        'Coal': 'YlOrBr',\n        'Oil': 'Greys',\n        'Gas': 'Purples',\n        'Oil & Gas': 'RdPu',\n        'Geothermal': 'OrRd',\n        'Other Commodities': 'Blues'\n      };\n    };\n\n    /**\n     * The group to which commodities with an unspecified group will\n     * be assigned, namely `Other Commodities`.\n     */\n    Commodities.OTHER = 'Other Commodities';\n\n    /**\n     * Get the nesting group for a given commodity.\n     * @param {String} commodity\n     * @return {String} the commodity group\n     */\n    Commodities.prototype.getGroup = function(commodity) {\n      commodity = commodity.replace(/\\s\\([a-z]+\\)$/, '');\n      if (this.groups.has(commodity)) return commodity;\n      return this.groupMap[commodity] || Commodities.OTHER;\n    };\n\n    /**\n     * Set the nesting group for a given commodity.\n     * @method\n     * @param {String} commodity\n     * @param {String} group\n     */\n    Commodities.prototype.setGroup = function(commodity, group) {\n      this.groupMap[commodity] = group;\n      return this;\n    };\n\n    /**\n     * Get the list of commodity groups as an array.\n     * @method\n     * @return {Array<String>}\n     */\n    Commodities.prototype.getGroups = function() {\n      return this.groups.values();\n    };\n\n    /**\n     * Get the colors associated with a commodity's group color\n     * scheme.\n     * @param {String} commodity the commodity or group\n     * @param {Number} steps the number of color steps (default: 9)\n     * @return {Array<String>}\n     */\n    Commodities.prototype.getColors = function(commodity, steps) {\n      if (!this.groups.has(commodity)) {\n        commodity = this.getGroup(commodity);\n      }\n      var scheme = this.groupColors[commodity] || 'Spectral';\n      return colorbrewer[scheme][steps || 9];\n    };\n\n    /**\n     * Get the primary color for a commodity group.\n     * @param {String} commodity the commodity or group\n     * @return {String} a CSS color\n     */\n    Commodities.prototype.getPrimaryColor = function(commodity) {\n      return this.getColors(commodity, 9)[4];\n    };\n\n    return Commodities;\n  })();\n\n  eiti.data.Model = (function() {\n\n    /*\n     * A data model for storing named datasets.\n     * @class\n     */\n    var Model = function(data) {\n      if (!(this instanceof Model)) return new Model(data);\n      this.data = d3.map(data);\n    };\n\n    Model.prototype.has = function(name) {\n      return this.data.has(name);\n    };\n\n    Model.prototype.get = function(name) {\n      return this.data.get(name);\n    };\n\n    Model.prototype.set = function(name, data) {\n      return this.data.set(name, data);\n    };\n\n    Model.prototype.load = function(name, url, done) {\n      if (this.has(name)) {\n        return done(null, this.get(name));\n      }\n      var ext = url.split('.').pop();\n      var load = d3[ext || 'json'];\n      return load(url, function(error, data) {\n        if (error) return done(error);\n        this.set(name, data);\n        done(null, data);\n      }.bind(this));\n    };\n\n    Model.prototype.createIndex = function(src, dest, keys, rollup) {\n      if (this.has(dest)) return this.get(dest);\n      var data = this.get(src);\n      var index = eiti.data.nest(data, keys, rollup);\n      this.set(dest, index);\n      return index;\n    };\n\n    function getIndexKey(name, keys) {\n      return name + ':' + keys.join('/');\n    }\n\n    return Model;\n  })();\n\n  /**\n   * Create a key getter function a la Python's\n   * itertools.itemgetter().\n   * @name eiti.data.getter\n   *\n   * @example\n   * var title = eiti.data.getter('title');\n   * var titles = data.map(title);\n   *\n   * @param {String|Number|Function} key\n   * @return {Function}\n   */\n  eiti.data.getter = getter;\n\n  // UI bits\n  eiti.ui = {};\n\n  /**\n   * Create a slider from a d3 selection that dispatches 'change'\n   * events whenever the element is clicked, tapped or dragged.\n   * @name eiti.ui.slider\n   *\n   * @example\n   *\n   *  var slider = eiti.ui.slider()\n   *    .range([0, 100])\n   *    .on('change', function(e) {\n   *      console.log('slider value:', e.value);\n   *    });\n   *  d3.select('#slider')\n   *    .call(slider);\n   */\n  eiti.ui.slider = function() {\n\n    var slider = function(selection) {\n      root = selection;\n      // XXX don't capture right-clicks (for inspecting)\n      selection.on('mousedown', function() {\n        var e = d3.event;\n        if (e.button === 2) {\n          e.preventDefault();\n          e.stopPropagation();\n          return false;\n        }\n      });\n      selection.call(drag);\n      if (typeof value !== 'undefined') {\n        slider.update(root);\n      }\n    };\n\n    var root, value;\n    var dragging = false;\n\n    var nub = '.nub';\n    var scale = d3.scale.linear()\n      .clamp(true);\n\n    var snap = false;\n    var dispatch = d3.dispatch('change');\n    var format = String;\n\n    function drag(selection) {\n      selection.on('mousedown.slider', function() {\n        // console.log('[drag] down');\n        dragging = true;\n        var body = d3.select('body').on('mouseup.slider', function() {\n          // console.log('[drag] up');\n          dragging = false;\n          body.on('mouseup.slider', null);\n        });\n        move(d3.event);\n      })\n      .on('mousemove.slider', function() {\n        if (dragging) {\n          // console.log('[drag] move');\n          move(d3.event);\n          return false;\n        }\n      });\n    }\n\n    function move(e) {\n      var p = getPosition(e),\n          w = getWidth(root.node()),\n          x = Math.max(0, Math.min(p.x, w)),\n          u = x / w,\n          v = scale(u);\n\n      // console.log('[slider] drag:', [p.x, p.y].join(','), [w, x, u, v].join(' '));\n\n      if (value != v) {\n        value = v;\n        dispatch.change({\n          x: x,\n          u: u,\n          value: value,\n          sourceEvent: e.sourceEvent\n        });\n      }\n\n      root.each(update);\n    }\n\n    function getPosition(e) {\n      var p = e.type === 'touchstart'\n        ? d3.touches(root.node())[0]\n        : d3.mouse(root.node());\n      return {x: p[0], y: p[1]};\n    }\n\n    slider.nub = function(selector) {\n      if (!arguments.length) return nub;\n      nub = selector;\n      return slider;\n    };\n\n    slider.range = function(range) {\n      if (!arguments.length) return scale.range();\n      scale.range(range);\n      return slider;\n    };\n\n    slider.snap = function(x) {\n      if (!arguments.length) return snap;\n      snap = x;\n      var range = scale.range();\n      if (snap) {\n        scale.rangeRound(range);\n      } else {\n        scale.range(range);\n      }\n      return slider;\n    };\n\n    slider.value = function(x) {\n      if (!arguments.length) return value;\n      value = +x;\n      if (root && !dragging) {\n        slider.update(root);\n      }\n      return slider;\n    };\n\n    slider.update = function(selection) {\n      selection.each(update);\n    };\n\n    function update() {\n      var left = scale.invert(value) * 100;\n      d3.select(this).select(nub)\n        .style('left', left + '%')\n        .select('.value')\n          .text(format(value));\n    }\n\n    function dragstart() {\n      var e = d3.event,\n          o = e.sourceEvent,\n          p = o.type === 'touchstart'\n            ? d3.touches(root.node())[0]\n            : d3.mouse(root.node());\n      e.x = p[0];\n      e.y = p[1];\n      dragging = true;\n      dragmove();\n    }\n\n    function dragmove() {\n      var e = d3.event,\n          w = getWidth(root.node()),\n          x = Math.max(0, Math.min(e.x, w)),\n          u = x / w,\n          v = scale(u);\n\n      if (value != v) {\n        value = v;\n        dispatch.change({\n          x: x,\n          u: u,\n          value: value,\n          sourceEvent: e.sourceEvent\n        });\n      }\n\n      root.each(update);\n    }\n\n    function dragend() {\n      var e = d3.event;\n      // console.log('[drag] end');\n      dragging = false;\n    }\n\n    function getWidth(node) {\n      return node.getBoundingClientRect().width;\n    }\n\n    d3.rebind(slider, dispatch, 'on');\n    return slider;\n  };\n\n  /**\n   * Create a margin object {top, right, left, bottom} from any \n   * of the following types:\n   *\n   * - string: coerce to a number\n   * - number: a margin object with equal top, right, left and\n   *   bottom values\n   * - array: read the values as [top, right, bottom, left] if there\n   *   are 4 or more elements; otherwise read as [vertical,\n   *   horizontal]\n   * - object: set top, right, bottom and left keys to 0 if not set,\n   *   then return the object\n   * @name eiti.ui.margin\n   *\n   * @param {*} input\n   */\n  eiti.ui.margin = function(d) {\n    switch (typeof d) {\n      case 'string':\n        d = +d || 0;\n      case 'number':\n        return {left: d, top: d, right: d, bottom: d};\n      case 'undefined':\n        return {left: 0, top: 0, right: 0, bottom: 0};\n    }\n    if (Array.isArray(d)) {\n      return d.length >= 4\n        ? {top: d[0], right: d[1], bottom: d[2], left: d[3]}\n        : {top: d[0], right: d[1], bottom: d[0], left: d[1]};\n    }\n    ['top', 'right', 'bottom', 'left'].forEach(function(k) {\n      if (!d.hasOwnProperty(k)) d[k] = 0;\n    });\n    return d;\n  };\n\n  eiti.util = {};\n\n  /**\n   * Force a reset of location.hash so that the browser (hopefully)\n   * scrolls to the element with the fragment identifier and toggles\n   * the :target pseudo-class.\n   * @name eiti.util.jiggleHash\n   *\n   * @return {Boolean}\n   */\n  eiti.util.jiggleHash = function() {\n    var hash = location.hash;\n    if (hash) {\n      location.hash = '';\n      location.hash = hash;\n      return true;\n    }\n    return false;\n  };\n\n  /**\n   * d3 helper for bringing an element to the front among its\n   * siblings. Use it with an event listener, e.g.:\n   * @name eiti.util.bringToFront\n   *\n   * @example\n   * d3.selectAll('svg path')\n   *   .on('mouseover', eiti.util.bringToFront);\n   */\n  eiti.util.bringToFront = function() {\n    this._nextSibling = this.nextSibling;\n    this.parentNode.appendChild(this);\n  };\n\n  /**\n   * The compliment to {@link bringToFront}, returns an\n   * element to its previous position among its siblings.\n   * @name eiti.util.returnToBack\n   *\n   * @example\n   * d3.selectAll('svg path')\n   *   .on('mouseover', eiti.util.bringToFront)\n   *   .on('mouseout', eiti.util.returnToBack);\n   */\n  eiti.util.returnToBack = function() {\n    this.parentNode.insertBefore(this, this._nextSibling);\n    delete this._nextSibling;\n  };\n\n  eiti.format = {};\n\n  /**\n   * Create a composite format that wraps a d3 format (or any other\n   * formatting function) with a transform function.\n   * @name eiti.format.transform\n   * @param {String|Function} format\n   * @param {Function} transform\n   * @return {Function}\n   */\n  eiti.format.transform = function(format, transform) {\n    if (typeof format === 'string') {\n      format = d3.format(format);\n    }\n    return function(d) {\n      return transform(format(d) || '');\n    };\n  };\n\n  /**\n   * Create a range formatter that strips the preceding `$`\n   * from the second value to produce strings like `$10m - 20m`\n   * instead of `$10m - $20m`.\n   * @name eiti.format.range\n   * @param {String|Function} format\n   * @param {String} [glue]\n   * @return {Function}\n   */\n  eiti.format.range = function(format, glue) {\n    if (typeof format === 'string') {\n      format = d3.format(format);\n    }\n    if (!glue) glue = ' – ';\n    return function(range) {\n      range = range.map(function(d, i) {\n        var str = format(d);\n        return i > 0 ? str.replace('$', '') : str;\n      });\n      /*\n      // suffix de-duping\n      var suffix = range.map(function(str) {\n        var match = str.match(/[a-z]$/);\n        return match ? match[0] : null;\n      });\n      if (suffix[0] === suffix[1]) {\n        range[0] = range[0].substr(0, range[0].length - 1);\n      }\n      */\n      return range.join(glue);\n    };\n  };\n\n  /**\n   * Produces international system/metric form, e.g. `4.1M`\n   * @name eiti.format.metric\n   * @function\n   * @param {Number} num\n   * @return {String}\n   */\n  eiti.format.metric = d3.format('.2s');\n\n  /**\n   * Produces whole dollar strings with thousands separators, e.g.\n   * `$1,234,567`.\n   * @name eiti.format.dollars\n   * @function\n   * @param {Number} num\n   * @return {String}\n   */\n  eiti.format.dollars = d3.format('$,.0f');\n\n  /**\n   * Produces dollar strings with thousands separators and 2-decimal\n   * cents, e.g. `$1,234,567.89`.\n   * @name eiti.format.dollarsAndCents\n   * @function\n   * @param {Number} num\n   * @return {String}\n   */\n  eiti.format.dollarsAndCents = d3.format('$,.2f');\n\n  /**\n   * Produces short dollar strings in SI format with 1 decimal,\n   * e.g. `$1.2m` or `$4.8b`.\n   * @name eiti.format.shortDollars\n   * @function\n   * @param {Number} num\n   * @return {String}\n   */\n  eiti.format.shortDollars = eiti.format.transform('$,.2s', function(str) {\n    var suffix = {k: 'k', M: 'm', G: 'b'};\n    return str.replace(/[kMG]$/, function(s) {\n      return suffix[s] || s;\n    });\n  });\n\n  function getter(key) {\n    if (typeof key === 'function') return key;\n    return function(d) { return d[key]; };\n  }\n\n}"
+    },
+    "name": "eiti.util.jiggleHash",
+    "returns": [
+      {
+        "title": "returns",
+        "description": null,
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        }
+      }
+    ],
+    "kind": "function",
+    "memberof": "eiti.util",
+    "scope": "static",
+    "members": {
+      "instance": [],
+      "static": []
+    },
+    "path": [
+      "eiti.util.jiggleHash"
     ]
   },
   {
@@ -1889,6 +1872,57 @@
     },
     "path": [
       "eiti.format.shortDollars"
+    ]
+  },
+  {
+    "description": "",
+    "tags": [
+      {
+        "title": "instance",
+        "description": null
+      },
+      {
+        "title": "function",
+        "description": null,
+        "name": null
+      },
+      {
+        "title": "memberof",
+        "description": "! eiti.charts.area#"
+      },
+      {
+        "title": "name",
+        "name": "margin"
+      },
+      {
+        "title": "kind",
+        "kind": "function"
+      }
+    ],
+    "context": {
+      "loc": {
+        "start": {
+          "line": 179,
+          "column": 4
+        },
+        "end": {
+          "line": 183,
+          "column": 6
+        }
+      },
+      "file": "/Users/allens/work/eiti-data/js/eiti.charts.js",
+      "code": "{\n    var dx = getter('Year');\n    var dy = getter('Commodity');\n    var value = getter('Revenue');\n    var stacked = true;\n    var log = false;\n\n    var width = 960;\n    var height = 100;\n\n    var margin = {\n      top: 10,\n      bottom: 25,\n      left: 50,\n      right: 20\n    };\n\n    var fill = d3.scale.category10();\n\n    var chart = function(svg, data) {\n      if (data) {\n        svg.datum(data);\n      } else {\n        data = svg.datum() || [];\n      }\n      svg.attr('viewBox', [0, 0, width, height].join(' '));\n\n      var index = d3.nest()\n        .key(dy)\n        .key(dx)\n        .rollup(function(d) {\n          return d3.sum(d, value);\n        })\n        .map(data);\n\n      var xs = d3.extent(data, dx).map(Number);\n      var ys = d3.keys(index);\n      var xd = d3.range(xs[0], xs[1] + 1);\n      var layers = ys.map(function(y) {\n        return xd.map(function(x) {\n          var z = index[y][x] || 0;\n          if (stacked && z < 0) z = 0;\n          return {\n            x: x,\n            y: z,\n            key: y\n          };\n        });\n      });\n\n      layers.forEach(function(d) {\n        d.key = d[0].key;\n        d.sum = d3.sum(d, getter('y'));\n      });\n\n      layers.sort(function(a, b) {\n        return d3.descending(a.sum, b.sum);\n      });\n\n      var aggr = stacked ? d3.sum : d3.max;\n      var yd = d3.extent(xd, function(x, i) {\n        return aggr(layers, function(d) {\n          return d[i].y;\n        });\n      });\n\n      var y0 = height - margin.bottom;\n      var y1 = margin.top;\n\n      var y = log\n        ? d3.scale.log()\n          .domain([1, yd[1]])\n          .range([y0, y1])\n          .clamp(true)\n        : d3.scale.linear()\n          .domain([0, yd[1]])\n          .range([y0, y1]);\n      y.nice();\n\n      var x = d3.scale.linear()\n        .domain(d3.extent(data, dx))\n        .range([margin.left, width - margin.right]);\n\n      var yAxis = d3.svg.axis()\n        .orient('left')\n        .scale(y);\n\n      var si = d3.format('s');\n      var suffix = {K: 'k', M: 'm', G: 'b'};\n      var ticks = 3;\n      var yFormat = function(n, i) {\n        var p = (i === 0 || i === ticks) ? '$' : '';\n        return p + si(n).replace(/[KMG]$/, function(s) {\n          return suffix[s] || s;\n        });\n      };\n      if (log) {\n        ticks -= 1;\n        yAxis.ticks(ticks, yFormat);\n      } else {\n        yAxis.ticks(ticks)\n          .tickFormat(yFormat);\n      }\n\n      svg.append('g')\n        .attr('class', 'axis y')\n        .attr('transform', 'translate(' + [margin.left - 2, 0] + ')')\n        .call(yAxis);\n\n      svg.append('g')\n        .attr('class', 'axis x')\n        .attr('transform', 'translate(' + [0, height - margin.bottom + 2] + ')')\n        .call(d3.svg.axis()\n          .orient('bottom')\n          .scale(x)\n          .tickFormat(d3.format('d')));\n\n      var stack = d3.layout.stack();\n\n      var g = svg.selectAll('g.layer')\n        .data(stack(layers))\n        .enter()\n        .append('g')\n          .attr('class', 'layer')\n          .append('a');\n\n      var area = d3.svg.area()\n        .x(function(d) { return x(d.x); });\n\n      if (stacked) {\n        area\n          .y0(function(d) { return y(d.y0); })\n          .y1(function(d) { return y(d.y + d.y0); });\n      } else {\n        area\n          .y0(y(0))\n          .y1(function(d) { return y(d.y); });\n      }\n\n      var paths = g.append('path')\n        .attr('fill', function(d) {\n          return fill(d.key);\n        })\n        .attr('d', area);\n    };\n\n    /**\n     * @instance\n     * @method\n     * @memberof! eiti.charts.area#\n     */\n    chart.margin = function(_) {\n      if (!arguments.length) return margin;\n      margin = eiti.ui.margin(_);\n      return chart;\n    };\n\n    chart.x = function(_) {\n      if (!arguments.length) return dx;\n      dx = (typeof _ === 'string')\n        ? getter(_)\n        : d3.functor(_);\n      return chart;\n    };\n\n    chart.y = function(_) {\n      if (!arguments.length) return dy;\n      dy = (typeof _ === 'string')\n        ? getter(_)\n        : d3.functor(_);\n      return chart;\n    };\n\n    chart.value = function(_) {\n      if (!arguments.length) return value;\n      value = (typeof _ === 'string')\n        ? getter(_)\n        : d3.functor(_);\n      return chart;\n    };\n\n    chart.stacked = function(_) {\n      if (!arguments.length) return stacked;\n      stacked = !!_;\n      return chart;\n    };\n\n    chart.log = function(_) {\n      if (!arguments.length) return log;\n      log = !!_;\n      return chart;\n    };\n\n    chart.fill = function(_) {\n      if (!arguments.length) return fill;\n      fill = d3.functor(_);\n      return chart;\n    };\n\n    return chart;\n  }"
+    },
+    "scope": "instance",
+    "memberof": "! eiti.charts.area#",
+    "name": "margin",
+    "kind": "function",
+    "members": {
+      "instance": [],
+      "static": []
+    },
+    "path": [
+      "margin"
     ]
   }
 ]

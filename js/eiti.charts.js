@@ -8,7 +8,7 @@
 
   /**
    * An area chart generator for d3.
-   * @function
+   * @class
    * @name eiti.charts.area
    *
    * @example
@@ -24,8 +24,6 @@
    *      // ...
    *      {year: 2010, category: 'y', value: 8}
    *   ]);
-   *
-   * @return {function} a function for use with `d3.selection#call()`
    */
   eiti.charts.area = function() {
     var dx = getter('Year');
@@ -173,6 +171,11 @@
         .attr('d', area);
     };
 
+    /**
+     * @instance
+     * @method
+     * @memberof! eiti.charts.area#
+     */
     chart.margin = function(_) {
       if (!arguments.length) return margin;
       margin = eiti.ui.margin(_);

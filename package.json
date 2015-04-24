@@ -23,8 +23,8 @@
     "yargs": "^3.7.1"
   },
   "devDependencies": {
-    "mocha": "^2.2.4",
-    "documentation": "^1.0.6"
+    "documentation": "^1.0.6",
+    "mocha": "^2.2.4"
   },
   "scripts": {
     "test": "mocha"

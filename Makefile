@@ -163,8 +163,10 @@ $(output)/svg/filtered.svg: $(output)/geo/us-topology-filtered.json
 $(output)/svg/outer.svg: $(output)/geo/us-outline.json $(output)/geo/offshore.json
 	bin/vectorize.js --p0 $^ > $@
 
+JS_FILES ?= js/eiti*.js
+
 js/docs:
-	$(BIN)/documentation -f html -o $@ js/eiti*.js
+	$(BIN)/documentation -f html -o $@ $(JS_FILES)
 
 clean:
 	rm -f $(FILES)

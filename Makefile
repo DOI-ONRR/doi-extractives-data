@@ -164,7 +164,7 @@ $(output)/svg/outer.svg: $(output)/geo/us-outline.json $(output)/geo/offshore.js
 	bin/vectorize.js --p0 $^ > $@
 
 js/docs:
-	$(BIN)/documentation -o $@ -f html js/eiti*.js
+	$(BIN)/documentation -f html -o $@ js/eiti*.js
 
 clean:
 	rm -f $(FILES)

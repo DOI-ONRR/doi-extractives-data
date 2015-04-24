@@ -351,7 +351,7 @@
 
     states.select('text.label')
       .text(function(d) {
-        return d.label;
+        return [d.state, ': ', d.label || 'n/a'].join('');
       });
   }
 

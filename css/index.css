@@ -177,6 +177,7 @@ ol.legend li {
 svg.map g.state .label {
   display: none;
   pointer-events: none;
+  font-size: 20px;
 }
 
 svg.map g.state:hover .label,

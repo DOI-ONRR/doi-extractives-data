@@ -1,17 +1,10 @@
 (function(exports) {
 
-  /**
-   * @namespace eiti
-   */
   var eiti = exports.eiti;
 
   var getter = eiti.data.getter;
 
-  /**
-   * @namespace eiti.charts
-   */
   eiti.charts = {};
-
 
   /**
    * An area chart generator for d3.

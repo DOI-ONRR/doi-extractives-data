@@ -1,7 +1,11 @@
 (function(exports) {
 
+  /**
+   * @namespace eiti
+   */
   var eiti = exports.eiti = {};
 
+  /** data classes and functions */
   eiti.data = {};
 
   /**
@@ -172,7 +176,7 @@
 
   eiti.data.Model = (function() {
 
-    /**
+    /*
      * A data model for storing named datasets.
      * @class
      */
@@ -235,7 +239,7 @@
    */
   eiti.data.getter = getter;
 
-
+  // UI bits
   eiti.ui = {};
 
   /**

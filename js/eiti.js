@@ -1,33 +1,32 @@
 (function(exports) {
 
-  // global eiti namespace
   var eiti = exports.eiti = {};
 
-  // data namespace
   eiti.data = {};
 
   /**
    * Nest data into an object structure:
+   * @name eiti.data.nest
    *
    * @example
-   *    var data = [{x: 1, y: 2}, {x: 2, y: 2}];
-   *    var nested = eiti.data.nest(data, ['x', 'y']);
-   *    assert.deepEqual(nested, {
-   *      1: {
-   *        2: [
-   *          {x: 1, y: 2}
-   *        ]
-   *      },
-   *      2: {
-   *        2: [
-   *          {x: 2, y: 2}
-   *        ]
-   *      }
-   *   });
+   * var data = [{x: 1, y: 2}, {x: 2, y: 2}];
+   * var nested = eiti.data.nest(data, ['x', 'y']);
+   * assert.deepEqual(nested, {
+   *   1: {
+   *     2: [
+   *       {x: 1, y: 2}
+   *     ]
+   *   },
+   *   2: {
+   *     2: [
+   *       {x: 2, y: 2}
+   *     ]
+   *   }
+   * });
    *
    * @param {Array} rows a dimensional tabular data set
    * @param {Array} keys a list of key functions or property names
-   * @param {Function} [rollup=null] an optional value rollup function
+   * @param {Function=} rollup an optional value rollup function
    */
   eiti.data.nest = function(rows, keys, rollup) {
     var nest = d3.nest();
@@ -42,6 +41,22 @@
     return typeof d !== 'object';
   }
 
+  /**
+   * Walk a nested object structure and call a function on each
+   * "leaf" node (that is not an object).
+   * @name eiti.data.walk
+   *
+   * @example
+   * var value = [];
+   * eiti.data.walk({foo: {bar: 'baz'}}, function(d, i) {
+   *   values.push(d);
+   * });
+   * assert.deepEqual(values, ['baz']);
+   *
+   * @param {Array|Object} data the array or object to iterate over
+   * @param {Function} callback the function to call on each leaf node
+   * @return void
+   */
   eiti.data.walk = function(struct, each) {
     walk(struct);
 
@@ -60,12 +75,12 @@
     }
   };
 
-  /**
-   * Commodity grouping and color model.
-   *
-   * @class
-   */
   eiti.data.Commodities = (function() {
+
+    /**
+     * Commodity grouping and color model.
+     * @class
+     */
     var Commodities = function() {
       if (!(this instanceof Commodities)) return new Commodities();
       this.groups = d3.set([
@@ -91,40 +106,76 @@
       };
     };
 
+    /**
+     * The group to which commodities with an unspecified group will
+     * be assigned, namely `Other Commodities`.
+     */
     Commodities.OTHER = 'Other Commodities';
 
+    /**
+     * Get the nesting group for a given commodity.
+     * @param {String} commodity
+     * @return {String} the commodity group
+     */
     Commodities.prototype.getGroup = function(commodity) {
       commodity = commodity.replace(/\s\([a-z]+\)$/, '');
       if (this.groups.has(commodity)) return commodity;
       return this.groupMap[commodity] || Commodities.OTHER;
     };
 
+    /**
+     * Set the nesting group for a given commodity.
+     * @method
+     * @param {String} commodity
+     * @param {String} group
+     */
     Commodities.prototype.setGroup = function(commodity, group) {
       this.groupMap[commodity] = group;
       return this;
     };
 
+    /**
+     * Get the list of commodity groups as an array.
+     * @method
+     * @return {Array<String>}
+     */
     Commodities.prototype.getGroups = function() {
       return this.groups.values();
     };
 
+    /**
+     * Get the colors associated with a commodity's group color
+     * scheme.
+     * @param {String} commodity the commodity or group
+     * @param {Number} steps the number of color steps (default: 9)
+     * @return {Array<String>}
+     */
     Commodities.prototype.getColors = function(commodity, steps) {
-      if (this.groups.has(commodity)) {
+      if (!this.groups.has(commodity)) {
         commodity = this.getGroup(commodity);
       }
       var scheme = this.groupColors[commodity] || 'Spectral';
       return colorbrewer[scheme][steps || 9];
     };
 
+    /**
+     * Get the primary color for a commodity group.
+     * @param {String} commodity the commodity or group
+     * @return {String} a CSS color
+     */
+    Commodities.prototype.getPrimaryColor = function(commodity) {
+      return this.getColors(commodity, 9)[4];
+    };
+
     return Commodities;
   })();
 
-  /**
-   * A data model for storing named datasets.
-   * @class
-   */
   eiti.data.Model = (function() {
 
+    /**
+     * A data model for storing named datasets.
+     * @class
+     */
     var Model = function(data) {
       if (!(this instanceof Model)) return new Model(data);
       this.data = d3.map(data);
@@ -170,13 +221,27 @@
     return Model;
   })();
 
+  /**
+   * Create a key getter function a la Python's
+   * itertools.itemgetter().
+   * @name eiti.data.getter
+   *
+   * @example
+   * var title = eiti.data.getter('title');
+   * var titles = data.map(title);
+   *
+   * @param {String|Number|Function} key
+   * @return {Function}
+   */
   eiti.data.getter = getter;
+
 
   eiti.ui = {};
 
   /**
    * Create a slider from a d3 selection that dispatches 'change'
    * events whenever the element is clicked, tapped or dragged.
+   * @name eiti.ui.slider
    *
    * @example
    *
@@ -268,48 +333,36 @@
     }
 
     slider.nub = function(selector) {
-      if (arguments.length) {
-        nub = selector;
-        return slider;
-      } else {
-        return nub;
-      }
+      if (!arguments.length) return nub;
+      nub = selector;
+      return slider;
     };
 
     slider.range = function(range) {
-      if (arguments.length) {
-        scale.range(range);
-        return slider;
-      } else {
-        return scale.range();
-      }
+      if (!arguments.length) return scale.range();
+      scale.range(range);
+      return slider;
     };
 
     slider.snap = function(x) {
-      if (arguments.length) {
-        snap = x;
-        var range = scale.range();
-        if (snap) {
-          scale.rangeRound(range);
-        } else {
-          scale.range(range);
-        }
-        return slider;
+      if (!arguments.length) return snap;
+      snap = x;
+      var range = scale.range();
+      if (snap) {
+        scale.rangeRound(range);
       } else {
-        return snap;
+        scale.range(range);
       }
+      return slider;
     };
 
     slider.value = function(x) {
-      if (arguments.length) {
-        value = +x;
-        if (root && !dragging) {
-          slider.update(root);
-        }
-        return slider;
-      } else {
-        return value;
+      if (!arguments.length) return value;
+      value = +x;
+      if (root && !dragging) {
+        slider.update(root);
       }
+      return slider;
     };
 
     slider.update = function(selection) {
@@ -342,8 +395,6 @@
           x = Math.max(0, Math.min(e.x, w)),
           u = x / w,
           v = scale(u);
-
-      // console.log('[slider] move:', [e.x, e.y], [w, x, u, v]);
 
       if (value != v) {
         value = v;
@@ -384,6 +435,7 @@
    *   horizontal]
    * - object: set top, right, bottom and left keys to 0 if not set,
    *   then return the object
+   * @name eiti.ui.margin
    *
    * @param {*} input
    */
@@ -413,6 +465,9 @@
    * Force a reset of location.hash so that the browser (hopefully)
    * scrolls to the element with the fragment identifier and toggles
    * the :target pseudo-class.
+   * @name eiti.util.jiggleHash
+   *
+   * @return {Boolean}
    */
   eiti.util.jiggleHash = function() {
     var hash = location.hash;
@@ -424,23 +479,125 @@
     return false;
   };
 
-  eiti.format = function(format, reformat) {
+  /**
+   * d3 helper for bringing an element to the front among its
+   * siblings. Use it with an event listener, e.g.:
+   * @name eiti.util.bringToFront
+   *
+   * @example
+   * d3.selectAll('svg path')
+   *   .on('mouseover', eiti.util.bringToFront);
+   */
+  eiti.util.bringToFront = function() {
+    this._nextSibling = this.nextSibling;
+    this.parentNode.appendChild(this);
+  };
+
+  /**
+   * The compliment to {@link bringToFront}, returns an
+   * element to its previous position among its siblings.
+   * @name eiti.util.returnToBack
+   *
+   * @example
+   * d3.selectAll('svg path')
+   *   .on('mouseover', eiti.util.bringToFront)
+   *   .on('mouseout', eiti.util.returnToBack);
+   */
+  eiti.util.returnToBack = function() {
+    this.parentNode.insertBefore(this, this._nextSibling);
+    delete this._nextSibling;
+  };
+
+  eiti.format = {};
+
+  /**
+   * Create a composite format that wraps a d3 format (or any other
+   * formatting function) with a transform function.
+   * @name eiti.format.transform
+   * @param {String|Function} format
+   * @param {Function} transform
+   * @return {Function}
+   */
+  eiti.format.transform = function(format, transform) {
     if (typeof format === 'string') {
       format = d3.format(format);
     }
     return function(d) {
-      return reformat(format(d));
+      return transform(format(d) || '');
     };
   };
 
-  // international system/metric form
+  /**
+   * Create a range formatter that strips the preceding `$`
+   * from the second value to produce strings like `$10m - 20m`
+   * instead of `$10m - $20m`.
+   * @name eiti.format.range
+   * @param {String|Function} format
+   * @param {String} [glue]
+   * @return {Function}
+   */
+  eiti.format.range = function(format, glue) {
+    if (typeof format === 'string') {
+      format = d3.format(format);
+    }
+    if (!glue) glue = ' – ';
+    return function(range) {
+      range = range.map(function(d, i) {
+        var str = format(d);
+        return i > 0 ? str.replace('$', '') : str;
+      });
+      /*
+      // suffix de-duping
+      var suffix = range.map(function(str) {
+        var match = str.match(/[a-z]$/);
+        return match ? match[0] : null;
+      });
+      if (suffix[0] === suffix[1]) {
+        range[0] = range[0].substr(0, range[0].length - 1);
+      }
+      */
+      return range.join(glue);
+    };
+  };
+
+  /**
+   * Produces international system/metric form, e.g. `4.1M`
+   * @name eiti.format.metric
+   * @function
+   * @param {Number} num
+   * @return {String}
+   */
   eiti.format.metric = d3.format('.2s');
-  // '$1,234,567'
+
+  /**
+   * Produces whole dollar strings with thousands separators, e.g.
+   * `$1,234,567`.
+   * @name eiti.format.dollars
+   * @function
+   * @param {Number} num
+   * @return {String}
+   */
   eiti.format.dollars = d3.format('$,.0f');
-  // '$1,234,567.89'
+
+  /**
+   * Produces dollar strings with thousands separators and 2-decimal
+   * cents, e.g. `$1,234,567.89`.
+   * @name eiti.format.dollarsAndCents
+   * @function
+   * @param {Number} num
+   * @return {String}
+   */
   eiti.format.dollarsAndCents = d3.format('$,.2f');
-  // '$1.2m'
-  eiti.format.shortDollars = eiti.format('$,.2s', function(str) {
+
+  /**
+   * Produces short dollar strings in SI format with 1 decimal,
+   * e.g. `$1.2m` or `$4.8b`.
+   * @name eiti.format.shortDollars
+   * @function
+   * @param {Number} num
+   * @return {String}
+   */
+  eiti.format.shortDollars = eiti.format.transform('$,.2s', function(str) {
     var suffix = {k: 'k', M: 'm', G: 'b'};
     return str.replace(/[kMG]$/, function(s) {
       return suffix[s] || s;

@@ -1,11 +1,39 @@
 (function(exports) {
 
+  /**
+   * @namespace eiti
+   */
   var eiti = exports.eiti;
 
   var getter = eiti.data.getter;
 
+  /**
+   * @namespace eiti.charts
+   */
   eiti.charts = {};
 
+
+  /**
+   * An area chart generator for d3.
+   * @function
+   * @name eiti.charts.area
+   *
+   * @example
+   * var area = eiti.charts.area()
+   *   .x(function(d) { return d.year; })
+   *   .y(function(d) { return d.category; })
+   *   .value(function(d) { return d.value; });
+   *
+   * d3.select('svg')
+   *   .call(area, [
+   *      {year: 2000, category: 'x', value: 10},
+   *      {year: 2001, category: 'x', value: 12},
+   *      // ...
+   *      {year: 2010, category: 'y', value: 8}
+   *   ]);
+   *
+   * @return {function} a function for use with `d3.selection#call()`
+   */
   eiti.charts.area = function() {
     var dx = getter('Year');
     var dy = getter('Commodity');

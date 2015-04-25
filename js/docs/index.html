@@ -13,50 +13,40 @@
           <a href="/" class="h5 button block button-transparent"> </a>
           <div class='px2'>
               <a
-                href='#eiti-util-jigglehash'
+                href='#model'
                 class='regular block'>
-                <code>eiti.util.jiggleHash</code>
+                <code>Model</code>
               </a>
+                <a
+                  href='#model/load'
+                  class='button-indent regular block'>
+                  <code>#load</code>
+                </a>
+                <a
+                  href='#model/get'
+                  class='button-indent regular block'>
+                  <code>#get</code>
+                </a>
+                <a
+                  href='#model/has'
+                  class='button-indent regular block'>
+                  <code>#has</code>
+                </a>
+                <a
+                  href='#model/set'
+                  class='button-indent regular block'>
+                  <code>#set</code>
+                </a>
+                <a
+                  href='#model/createindex'
+                  class='button-indent regular block'>
+                  <code>#createIndex</code>
+                </a>
               <a
-                href='#eiti-data-nest'
+                href='#eiti-charts-area'
                 class='regular block'>
-                <code>eiti.data.nest</code>
+                <code>eiti.charts.area</code>
               </a>
-              <a
-                href='#commodities'
-                class='regular block'>
-                <code>Commodities</code>
-              </a>
-                <a
-                  href='#commodities/setgroup'
-                  class='button-indent regular block'>
-                  <code>#setGroup</code>
-                </a>
-                <a
-                  href='#commodities/getprimarycolor'
-                  class='button-indent regular block'>
-                  <code>#getPrimaryColor</code>
-                </a>
-                <a
-                  href='#commodities/getcolors'
-                  class='button-indent regular block'>
-                  <code>#getColors</code>
-                </a>
-                <a
-                  href='#commodities/getgroups'
-                  class='button-indent regular block'>
-                  <code>#getGroups</code>
-                </a>
-                <a
-                  href='#commodities/getgroup'
-                  class='button-indent regular block'>
-                  <code>#getGroup</code>
-                </a>
-                <a
-                  href='#commodities/other'
-                  class='button-indent regular block'>
-                  <code>.OTHER</code>
-                </a>
               <a
                 href='#areachart'
                 class='regular block'>
@@ -66,6 +56,16 @@
                   href='#areachart/y'
                   class='button-indent regular block'>
                   <code>.y</code>
+                </a>
+                <a
+                  href='#areachart/x'
+                  class='button-indent regular block'>
+                  <code>.x</code>
+                </a>
+                <a
+                  href='#areachart/voronoi'
+                  class='button-indent regular block'>
+                  <code>.voronoi</code>
                 </a>
                 <a
                   href='#areachart/value'
@@ -88,60 +88,45 @@
                   <code>.log</code>
                 </a>
                 <a
-                  href='#areachart/x'
-                  class='button-indent regular block'>
-                  <code>.x</code>
-                </a>
-                <a
                   href='#areachart/fill'
                   class='button-indent regular block'>
                   <code>.fill</code>
                 </a>
               <a
-                href='#eiti-charts-area'
+                href='#commodities'
                 class='regular block'>
-                <code>eiti.charts.area</code>
-              </a>
-              <a
-                href='#eiti-data-getter'
-                class='regular block'>
-                <code>eiti.data.getter</code>
-              </a>
-              <a
-                href='#model'
-                class='regular block'>
-                <code>Model</code>
+                <code>Commodities</code>
               </a>
                 <a
-                  href='#model/set'
+                  href='#commodities/getgroups'
                   class='button-indent regular block'>
-                  <code>#set</code>
+                  <code>#getGroups</code>
                 </a>
                 <a
-                  href='#model/load'
+                  href='#commodities/getgroup'
                   class='button-indent regular block'>
-                  <code>#load</code>
+                  <code>#getGroup</code>
                 </a>
                 <a
-                  href='#model/has'
+                  href='#commodities/getprimarycolor'
                   class='button-indent regular block'>
-                  <code>#has</code>
+                  <code>#getPrimaryColor</code>
                 </a>
                 <a
-                  href='#model/get'
+                  href='#commodities/getcolors'
                   class='button-indent regular block'>
-                  <code>#get</code>
+                  <code>#getColors</code>
                 </a>
                 <a
-                  href='#model/createindex'
+                  href='#commodities/setgroup'
                   class='button-indent regular block'>
-                  <code>#createIndex</code>
+                  <code>#setGroup</code>
                 </a>
-              <a
-                href='#eiti-format-range'
-                class='regular block'>
-                <code>eiti.format.range</code>
-              </a>
+                <a
+                  href='#commodities/other'
+                  class='button-indent regular block'>
+                  <code>.OTHER</code>
+                </a>
               <a
                 href='#eiti-format-shortdollars'
                 class='regular block'>
@@ -158,24 +143,9 @@
                 <code>eiti.format.dollars</code>
               </a>
               <a
-                href='#eiti-format-metric'
+                href='#eiti-data-nest'
                 class='regular block'>
-                <code>eiti.format.metric</code>
-              </a>
-              <a
-                href='#eiti-format-transform'
-                class='regular block'>
-                <code>eiti.format.transform</code>
-              </a>
-              <a
-                href='#eiti-ui-slider'
-                class='regular block'>
-                <code>eiti.ui.slider</code>
-              </a>
-              <a
-                href='#eiti-ui-margin'
-                class='regular block'>
-                <code>eiti.ui.margin</code>
+                <code>eiti.data.nest</code>
               </a>
               <a
                 href='#eiti-data-walk'
@@ -183,54 +153,74 @@
                 <code>eiti.data.walk</code>
               </a>
               <a
+                href='#eiti-format-metric'
+                class='regular block'>
+                <code>eiti.format.metric</code>
+              </a>
+              <a
+                href='#eiti-format-range'
+                class='regular block'>
+                <code>eiti.format.range</code>
+              </a>
+              <a
+                href='#eiti-data-getter'
+                class='regular block'>
+                <code>eiti.data.getter</code>
+              </a>
+              <a
+                href='#eiti-ui-slider'
+                class='regular block'>
+                <code>eiti.ui.slider</code>
+              </a>
+              <a
+                href='#eiti-ui-tip'
+                class='regular block'>
+                <code>eiti.ui.tip</code>
+              </a>
+              <a
+                href='#eiti-ui-margin'
+                class='regular block'>
+                <code>eiti.ui.margin</code>
+              </a>
+              <a
+                href='#eiti-util-extend'
+                class='regular block'>
+                <code>eiti.util.extend</code>
+              </a>
+              <a
+                href='#eiti-util-jigglehash'
+                class='regular block'>
+                <code>eiti.util.jiggleHash</code>
+              </a>
+              <a
                 href='#eiti-util-bringtofront'
                 class='regular block'>
                 <code>eiti.util.bringToFront</code>
               </a>
               <a
-                href='#eiti-util-returntoback'
+                href='#eiti-util-sendtoback'
                 class='regular block'>
-                <code>eiti.util.returnToBack</code>
+                <code>eiti.util.sendToBack</code>
+              </a>
+              <a
+                href='#eiti-format-transform'
+                class='regular block'>
+                <code>eiti.format.transform</code>
               </a>
           </div>
         </div>
       </div>
       <div class='sm-col sm-col-9 md-col-10 flex flex-column'>
         <div class='flex-auto full-width'>
-<section id='eiti-util-jigglehash'class='mt2 mb2 py1 px3 keyline-top'>
+<section id='model'class='mt2 mb2 py1 px3 keyline-top'>
   <h3 class='regular'>
-    <a class='black' href='#eiti-util-jigglehash'>
+    <a class='black' href='#model'>
       <code>
-        eiti.util.jiggleHash<span class='gray'></span>
+        Model<span class='gray'>(data)</span>
       </code>
     </a>
   </h3>
-  <p>Force a reset of location.hash so that the browser (hopefully)
-scrolls to the element with the fragment identifier and toggles
-the :target pseudo-class.</p>
-
-
-
-      <h4>Returns</h4>
-      <code><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code></code>
-      
-      <span class='force-inline'>
-        
-      </span>
-
-
-
-
-</section>
-<section id='eiti-data-nest'class='mt2 mb2 py1 px3 keyline-top'>
-  <h3 class='regular'>
-    <a class='black' href='#eiti-data-nest'>
-      <code>
-        eiti.data.nest<span class='gray'>(rows, keys, [rollup])</span>
-      </code>
-    </a>
-  </h3>
-  <p>Nest data into an object structure:</p>
+  <p>A data model for storing named datasets.</p>
 
 
     <p>
@@ -241,21 +231,9 @@ the :target pseudo-class.</p>
           <th class='col-6'>description</th>
         </thead>
           <tr>
-            <td>rows</td>
-            <td><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></code></td>
-            <td><p>a dimensional tabular data set</p>
-</td>
-          </tr>
-          <tr>
-            <td>keys</td>
-            <td><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></code></td>
-            <td><p>a list of key functions or property names</p>
-</td>
-          </tr>
-          <tr>
-            <td>rollup</td>
-            <td><code>[<code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">Function</a></code>]</code></td>
-            <td><p>an optional value rollup function</p>
+            <td>data</td>
+            <td><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></code> or <code>d3.map</code></td>
+            <td><p>optional datasets to initialize</p>
 </td>
           </tr>
       </table>
@@ -263,17 +241,247 @@ the :target pseudo-class.</p>
 
 
     <h4>Examples</h4>
-<pre><span class="hljs-keyword">var</span> data = [{x: <span class="hljs-number">1</span>, y: <span class="hljs-number">2</span>}, {x: <span class="hljs-number">2</span>, y: <span class="hljs-number">2</span>}];
-<span class="hljs-keyword">var</span> nested = eiti.data.nest(data, [<span class="hljs-string">'x'</span>, <span class="hljs-string">'y'</span>]);
-assert.deepEqual(nested, {
-  <span class="hljs-number">1</span>: {
-    <span class="hljs-number">2</span>: [
-      {x: <span class="hljs-number">1</span>, y: <span class="hljs-number">2</span>}
-    ]
+<pre><span class="hljs-keyword">var</span> model = <span class="hljs-keyword">new</span> eiti.data.Model();</pre>
+
+      <div class='section-indent'>
+<section id='model/load'class='mt2 mb2 py1 px3 keyline-top'>
+  <h3 class='regular'>
+    <a class='black' href='#model/load'>
+      <code>
+        load<span class='gray'>(name, url, [callback])</span>
+      </code>
+    </a>
+  </h3>
+  <p>Load data from a URL into a named dataset.</p>
+
+
+    <p>
+      <table class='table-light overflow-hidden bg-cloudy-light'>
+        <thead>
+          <th class='col-3'>parameter</th>
+          <th class='col-3'>type</th>
+          <th class='col-6'>description</th>
+        </thead>
+          <tr>
+            <td>name</td>
+            <td><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code></td>
+            <td><p>the unique dataset name</p>
+</td>
+          </tr>
+          <tr>
+            <td>url</td>
+            <td><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code></td>
+            <td><p>the URL to load</p>
+</td>
+          </tr>
+          <tr>
+            <td>callback</td>
+            <td><code>[<code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">Function</a></code>]</code></td>
+            <td><p>the callback function</p>
+</td>
+          </tr>
+      </table>
+    </p>
+
+
+    <h4>Examples</h4>
+<pre>model.load(<span class="hljs-string">'states'</span>, <span class="hljs-string">'path/to/states.json'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(error, topology)</span> </span>{
+});</pre>
+
+
+
+</section>
+      </div>
+      <div class='section-indent'>
+<section id='model/get'class='mt2 mb2 py1 px3 keyline-top'>
+  <h3 class='regular'>
+    <a class='black' href='#model/get'>
+      <code>
+        get<span class='gray'>(name)</span>
+      </code>
+    </a>
+  </h3>
+  
+
+    <p>
+      <table class='table-light overflow-hidden bg-cloudy-light'>
+        <thead>
+          <th class='col-3'>parameter</th>
+          <th class='col-3'>type</th>
+          <th class='col-6'>description</th>
+        </thead>
+          <tr>
+            <td>name</td>
+            <td><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code></td>
+            <td><p>the dataset name</p>
+</td>
+          </tr>
+      </table>
+    </p>
+
+      <h4>Returns</h4>
+      <code><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code></code>
+      :
+      <span class='force-inline'>
+        <p><code>true</code> if the named dataset exists, <code>false</code> if not</p>
+
+      </span>
+
+
+
+
+</section>
+      </div>
+      <div class='section-indent'>
+<section id='model/has'class='mt2 mb2 py1 px3 keyline-top'>
+  <h3 class='regular'>
+    <a class='black' href='#model/has'>
+      <code>
+        has<span class='gray'>(name)</span>
+      </code>
+    </a>
+  </h3>
+  
+
+    <p>
+      <table class='table-light overflow-hidden bg-cloudy-light'>
+        <thead>
+          <th class='col-3'>parameter</th>
+          <th class='col-3'>type</th>
+          <th class='col-6'>description</th>
+        </thead>
+          <tr>
+            <td>name</td>
+            <td><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code></td>
+            <td><p>the dataset name</p>
+</td>
+          </tr>
+      </table>
+    </p>
+
+      <h4>Returns</h4>
+      <code><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code></code>
+      :
+      <span class='force-inline'>
+        <p><code>true</code> if the named dataset exists, <code>false</code> if not</p>
+
+      </span>
+
+
+
+
+</section>
+      </div>
+      <div class='section-indent'>
+<section id='model/set'class='mt2 mb2 py1 px3 keyline-top'>
+  <h3 class='regular'>
+    <a class='black' href='#model/set'>
+      <code>
+        set<span class='gray'>(name, data)</span>
+      </code>
+    </a>
+  </h3>
+  <p>Store a dataset with a unique key</p>
+
+
+    <p>
+      <table class='table-light overflow-hidden bg-cloudy-light'>
+        <thead>
+          <th class='col-3'>parameter</th>
+          <th class='col-3'>type</th>
+          <th class='col-6'>description</th>
+        </thead>
+          <tr>
+            <td>name</td>
+            <td><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code></td>
+            <td><p>the dataset name</p>
+</td>
+          </tr>
+          <tr>
+            <td>data</td>
+            <td>Any</td>
+            <td><p>the data to store</p>
+</td>
+          </tr>
+      </table>
+    </p>
+
+      <h4>Returns</h4>
+      <code>Any</code>
+      :
+      <span class='force-inline'>
+        <p>returns the data as set</p>
+
+      </span>
+
+
+
+
+</section>
+      </div>
+      <div class='section-indent'>
+<section id='model/createindex'class='mt2 mb2 py1 px3 keyline-top'>
+  <h3 class='regular'>
+    <a class='black' href='#model/createindex'>
+      <code>
+        createIndex<span class='gray'>(src, dest, keys, [rollup])</span>
+      </code>
+    </a>
+  </h3>
+  <p>Create a nested index using <a href="eiti-data-nest"><code>eiti.data.nest</code></a> from a
+named dataset and alias it to a new name.</p>
+
+
+    <p>
+      <table class='table-light overflow-hidden bg-cloudy-light'>
+        <thead>
+          <th class='col-3'>parameter</th>
+          <th class='col-3'>type</th>
+          <th class='col-6'>description</th>
+        </thead>
+          <tr>
+            <td>src</td>
+            <td><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code></td>
+            <td><p>the source dataset name</p>
+</td>
+          </tr>
+          <tr>
+            <td>dest</td>
+            <td><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code></td>
+            <td><p>the destination dataset name</p>
+</td>
+          </tr>
+          <tr>
+            <td>keys</td>
+            <td>Array<<code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code> or <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">Function</a></code>></td>
+            <td><p>the keys to nest</p>
+</td>
+          </tr>
+          <tr>
+            <td>rollup</td>
+            <td><code>[<code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">Function</a></code>]</code></td>
+            <td><p>the optional rollup function</p>
+</td>
+          </tr>
+      </table>
+    </p>
+
+
+    <h4>Examples</h4>
+<pre>model.set(<span class="hljs-string">'foo'</span>, [
+  {x: <span class="hljs-string">'bar'</span>, y: <span class="hljs-string">'baz'</span>},
+  {x: <span class="hljs-string">'qux'</span>, y: <span class="hljs-string">'quux'</span>}
+]);
+<span class="hljs-keyword">var</span> index = model.createIndex(<span class="hljs-string">'foo'</span>, <span class="hljs-string">'bar'</span>, [<span class="hljs-string">'x'</span>, <span class="hljs-string">'y'</span>]);
+assert.deepEqual(index, {
+  bar: {
+    baz: [
+      {x: <span class="hljs-string">'bar'</span>, y: <span class="hljs-string">'baz'</span>}
+    ],
   },
-  <span class="hljs-number">2</span>: {
-    <span class="hljs-number">2</span>: [
-      {x: <span class="hljs-number">2</span>, y: <span class="hljs-number">2</span>}
+  qux: {
+    quux: [
+      {x: <span class="hljs-string">'qux'</span>, y: <span class="hljs-string">'quux'</span>}
     ]
   }
 });</pre>
@@ -281,232 +489,44 @@ assert.deepEqual(nested, {
 
 
 </section>
-<section id='commodities'class='mt2 mb2 py1 px3 keyline-top'>
-  <h3 class='regular'>
-    <a class='black' href='#commodities'>
-      <code>
-        Commodities<span class='gray'></span>
-      </code>
-    </a>
-  </h3>
-  <p>Commodity grouping and color model.</p>
-
-
-
-
-
-      <div class='section-indent'>
-<section id='commodities/setgroup'class='mt2 mb2 py1 px3 keyline-top'>
-  <h3 class='regular'>
-    <a class='black' href='#commodities/setgroup'>
-      <code>
-        setGroup<span class='gray'>(commodity, group)</span>
-      </code>
-    </a>
-  </h3>
-  <p>Set the nesting group for a given commodity.</p>
-
-
-    <p>
-      <table class='table-light overflow-hidden bg-cloudy-light'>
-        <thead>
-          <th class='col-3'>parameter</th>
-          <th class='col-3'>type</th>
-          <th class='col-6'>description</th>
-        </thead>
-          <tr>
-            <td>commodity</td>
-            <td><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>group</td>
-            <td><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code></td>
-            <td></td>
-          </tr>
-      </table>
-    </p>
-
-
-
+      </div>
 
 
 </section>
-      </div>
-      <div class='section-indent'>
-<section id='commodities/getprimarycolor'class='mt2 mb2 py1 px3 keyline-top'>
+<section id='eiti-charts-area'class='mt2 mb2 py1 px3 keyline-top'>
   <h3 class='regular'>
-    <a class='black' href='#commodities/getprimarycolor'>
+    <a class='black' href='#eiti-charts-area'>
       <code>
-        getPrimaryColor<span class='gray'>(commodity)</span>
+        eiti.charts.area<span class='gray'></span>
       </code>
     </a>
   </h3>
-  <p>Get the primary color for a commodity group.</p>
+  <p>An area chart generator for d3.</p>
 
 
-    <p>
-      <table class='table-light overflow-hidden bg-cloudy-light'>
-        <thead>
-          <th class='col-3'>parameter</th>
-          <th class='col-3'>type</th>
-          <th class='col-6'>description</th>
-        </thead>
-          <tr>
-            <td>commodity</td>
-            <td><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code></td>
-            <td><p>the commodity or group</p>
-</td>
-          </tr>
-      </table>
-    </p>
 
       <h4>Returns</h4>
-      <code><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code></code>
-      :
-      <span class='force-inline'>
-        <p>a CSS color</p>
-
-      </span>
-
-
-
-
-</section>
-      </div>
-      <div class='section-indent'>
-<section id='commodities/getcolors'class='mt2 mb2 py1 px3 keyline-top'>
-  <h3 class='regular'>
-    <a class='black' href='#commodities/getcolors'>
-      <code>
-        getColors<span class='gray'>(commodity, steps)</span>
-      </code>
-    </a>
-  </h3>
-  <p>Get the colors associated with a commodity's group color
-scheme.</p>
-
-
-    <p>
-      <table class='table-light overflow-hidden bg-cloudy-light'>
-        <thead>
-          <th class='col-3'>parameter</th>
-          <th class='col-3'>type</th>
-          <th class='col-6'>description</th>
-        </thead>
-          <tr>
-            <td>commodity</td>
-            <td><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code></td>
-            <td><p>the commodity or group</p>
-</td>
-          </tr>
-          <tr>
-            <td>steps</td>
-            <td><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></code></td>
-            <td><p>the number of color steps (default: 9)</p>
-</td>
-          </tr>
-      </table>
-    </p>
-
-      <h4>Returns</h4>
-      <code>Array<<code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code>></code>
+      <code><code><a href="#areachart">areaChart</a></code></code>
       
       <span class='force-inline'>
         
       </span>
 
+    <h4>Examples</h4>
+<pre><span class="hljs-keyword">var</span> area = eiti.charts.area()
+  .x(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(d)</span> </span>{ <span class="hljs-keyword">return</span> d.year; })
+  .y(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(d)</span> </span>{ <span class="hljs-keyword">return</span> d.category; })
+  .value(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(d)</span> </span>{ <span class="hljs-keyword">return</span> d.value; });
+
+d3.select(<span class="hljs-string">'svg'</span>)
+  .call(area, [
+     {year: <span class="hljs-number">2000</span>, category: <span class="hljs-string">'x'</span>, value: <span class="hljs-number">10</span>},
+     {year: <span class="hljs-number">2001</span>, category: <span class="hljs-string">'x'</span>, value: <span class="hljs-number">12</span>},
+     <span class="hljs-comment">// ...</span>
+     {year: <span class="hljs-number">2010</span>, category: <span class="hljs-string">'y'</span>, value: <span class="hljs-number">8</span>}
+  ]);</pre>
 
 
-
-</section>
-      </div>
-      <div class='section-indent'>
-<section id='commodities/getgroups'class='mt2 mb2 py1 px3 keyline-top'>
-  <h3 class='regular'>
-    <a class='black' href='#commodities/getgroups'>
-      <code>
-        getGroups<span class='gray'></span>
-      </code>
-    </a>
-  </h3>
-  <p>Get the list of commodity groups as an array.</p>
-
-
-
-      <h4>Returns</h4>
-      <code>Array<<code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code>></code>
-      
-      <span class='force-inline'>
-        
-      </span>
-
-
-
-
-</section>
-      </div>
-      <div class='section-indent'>
-<section id='commodities/getgroup'class='mt2 mb2 py1 px3 keyline-top'>
-  <h3 class='regular'>
-    <a class='black' href='#commodities/getgroup'>
-      <code>
-        getGroup<span class='gray'>(commodity)</span>
-      </code>
-    </a>
-  </h3>
-  <p>Get the nesting group for a given commodity.</p>
-
-
-    <p>
-      <table class='table-light overflow-hidden bg-cloudy-light'>
-        <thead>
-          <th class='col-3'>parameter</th>
-          <th class='col-3'>type</th>
-          <th class='col-6'>description</th>
-        </thead>
-          <tr>
-            <td>commodity</td>
-            <td><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code></td>
-            <td></td>
-          </tr>
-      </table>
-    </p>
-
-      <h4>Returns</h4>
-      <code><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code></code>
-      :
-      <span class='force-inline'>
-        <p>the commodity group</p>
-
-      </span>
-
-
-
-
-</section>
-      </div>
-
-      <div class='section-indent'>
-<section id='commodities/other'class='mt2 mb2 py1 px3 keyline-top'>
-  <h3 class='regular'>
-    <a class='black' href='#commodities/other'>
-      <code>
-        OTHER<span class='gray'></span>
-      </code>
-    </a>
-  </h3>
-  <p>The group to which commodities with an unspecified group will
-be assigned, namely <code>Other Commodities</code>.</p>
-
-
-
-
-
-
-
-</section>
-      </div>
 
 </section>
 <section id='areachart'class='mt2 mb2 py1 px3 keyline-top'>
@@ -578,6 +598,78 @@ be assigned, namely <code>Other Commodities</code>.</p>
 <pre><span class="hljs-keyword">var</span> y = areaChart.y();
 areaChart.y(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(d)</span> </span>{ <span class="hljs-keyword">return</span> d.Commodity; });
 areaChart.y(<span class="hljs-string">'Commodity'</span>); <span class="hljs-comment">// same as above</span></pre>
+
+
+
+</section>
+      </div>
+      <div class='section-indent'>
+<section id='areachart/x'class='mt2 mb2 py1 px3 keyline-top'>
+  <h3 class='regular'>
+    <a class='black' href='#areachart/x'>
+      <code>
+        x<span class='gray'>([x])</span>
+      </code>
+    </a>
+  </h3>
+  <p>Get or set the chart's horizontal value accessor.</p>
+
+
+    <p>
+      <table class='table-light overflow-hidden bg-cloudy-light'>
+        <thead>
+          <th class='col-3'>parameter</th>
+          <th class='col-3'>type</th>
+          <th class='col-6'>description</th>
+        </thead>
+          <tr>
+            <td>x</td>
+            <td><code>[<code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code> or <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">Function</a></code>]</code></td>
+            <td><p>set the horizontal value accessor</p>
+</td>
+          </tr>
+      </table>
+    </p>
+
+
+    <h4>Examples</h4>
+<pre><span class="hljs-keyword">var</span> x = areaChart.x();
+areaChart.x(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(d)</span> </span>{ <span class="hljs-keyword">return</span> d.Year; });
+areaChart.x(<span class="hljs-string">'Year'</span>); <span class="hljs-comment">// same as above</span></pre>
+
+
+
+</section>
+      </div>
+      <div class='section-indent'>
+<section id='areachart/voronoi'class='mt2 mb2 py1 px3 keyline-top'>
+  <h3 class='regular'>
+    <a class='black' href='#areachart/voronoi'>
+      <code>
+        voronoi<span class='gray'>([voronoi])</span>
+      </code>
+    </a>
+  </h3>
+  <p>Toggle creation of Voronoi regions for interactivity.</p>
+
+
+    <p>
+      <table class='table-light overflow-hidden bg-cloudy-light'>
+        <thead>
+          <th class='col-3'>parameter</th>
+          <th class='col-3'>type</th>
+          <th class='col-6'>description</th>
+        </thead>
+          <tr>
+            <td>voronoi</td>
+            <td><code>[<code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>]</code></td>
+            <td><p>if <code>true</code>, voronoi regions will be created</p>
+</td>
+          </tr>
+      </table>
+    </p>
+
+
 
 
 
@@ -736,44 +828,6 @@ areaChart.log(<span class="hljs-literal">true</span>); <span class="hljs-comment
 </section>
       </div>
       <div class='section-indent'>
-<section id='areachart/x'class='mt2 mb2 py1 px3 keyline-top'>
-  <h3 class='regular'>
-    <a class='black' href='#areachart/x'>
-      <code>
-        x<span class='gray'>([x])</span>
-      </code>
-    </a>
-  </h3>
-  <p>Get or set the chart's horizontal value accessor.</p>
-
-
-    <p>
-      <table class='table-light overflow-hidden bg-cloudy-light'>
-        <thead>
-          <th class='col-3'>parameter</th>
-          <th class='col-3'>type</th>
-          <th class='col-6'>description</th>
-        </thead>
-          <tr>
-            <td>x</td>
-            <td><code>[<code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code> or <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">Function</a></code>]</code></td>
-            <td><p>set the horizontal value accessor</p>
-</td>
-          </tr>
-      </table>
-    </p>
-
-
-    <h4>Examples</h4>
-<pre><span class="hljs-keyword">var</span> x = areaChart.x();
-areaChart.x(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(d)</span> </span>{ <span class="hljs-keyword">return</span> d.Year; });
-areaChart.x(<span class="hljs-string">'Year'</span>); <span class="hljs-comment">// same as above</span></pre>
-
-
-
-</section>
-      </div>
-      <div class='section-indent'>
 <section id='areachart/fill'class='mt2 mb2 py1 px3 keyline-top'>
   <h3 class='regular'>
     <a class='black' href='#areachart/fill'>
@@ -816,52 +870,55 @@ areaChart.fill(<span class="hljs-string">'red'</span>);</pre>
       </div>
 
 </section>
-<section id='eiti-charts-area'class='mt2 mb2 py1 px3 keyline-top'>
+<section id='commodities'class='mt2 mb2 py1 px3 keyline-top'>
   <h3 class='regular'>
-    <a class='black' href='#eiti-charts-area'>
+    <a class='black' href='#commodities'>
       <code>
-        eiti.charts.area<span class='gray'></span>
+        Commodities<span class='gray'></span>
       </code>
     </a>
   </h3>
-  <p>An area chart generator for d3.</p>
+  <p>Commodity grouping and color model.</p>
+
+
+
+
+
+      <div class='section-indent'>
+<section id='commodities/getgroups'class='mt2 mb2 py1 px3 keyline-top'>
+  <h3 class='regular'>
+    <a class='black' href='#commodities/getgroups'>
+      <code>
+        getGroups<span class='gray'></span>
+      </code>
+    </a>
+  </h3>
+  <p>Get the list of commodity groups as an array.</p>
 
 
 
       <h4>Returns</h4>
-      <code><code><a href="#areachart">areaChart</a></code></code>
+      <code>Array<<code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code>></code>
       
       <span class='force-inline'>
         
       </span>
 
-    <h4>Examples</h4>
-<pre><span class="hljs-keyword">var</span> area = eiti.charts.area()
-  .x(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(d)</span> </span>{ <span class="hljs-keyword">return</span> d.year; })
-  .y(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(d)</span> </span>{ <span class="hljs-keyword">return</span> d.category; })
-  .value(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(d)</span> </span>{ <span class="hljs-keyword">return</span> d.value; });
-
-d3.select(<span class="hljs-string">'svg'</span>)
-  .call(area, [
-     {year: <span class="hljs-number">2000</span>, category: <span class="hljs-string">'x'</span>, value: <span class="hljs-number">10</span>},
-     {year: <span class="hljs-number">2001</span>, category: <span class="hljs-string">'x'</span>, value: <span class="hljs-number">12</span>},
-     <span class="hljs-comment">// ...</span>
-     {year: <span class="hljs-number">2010</span>, category: <span class="hljs-string">'y'</span>, value: <span class="hljs-number">8</span>}
-  ]);</pre>
 
 
 
 </section>
-<section id='eiti-data-getter'class='mt2 mb2 py1 px3 keyline-top'>
+      </div>
+      <div class='section-indent'>
+<section id='commodities/getgroup'class='mt2 mb2 py1 px3 keyline-top'>
   <h3 class='regular'>
-    <a class='black' href='#eiti-data-getter'>
+    <a class='black' href='#commodities/getgroup'>
       <code>
-        eiti.data.getter<span class='gray'>(key)</span>
+        getGroup<span class='gray'>(commodity)</span>
       </code>
     </a>
   </h3>
-  <p>Create a key getter function a la Python's
-itertools.itemgetter().</p>
+  <p>Get the nesting group for a given commodity.</p>
 
 
     <p>
@@ -872,115 +929,124 @@ itertools.itemgetter().</p>
           <th class='col-6'>description</th>
         </thead>
           <tr>
-            <td>key</td>
-            <td><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code> or <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></code> or <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">Function</a></code></td>
+            <td>commodity</td>
+            <td><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code></td>
             <td></td>
           </tr>
       </table>
     </p>
 
       <h4>Returns</h4>
-      <code><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">Function</a></code></code>
+      <code><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code></code>
+      :
+      <span class='force-inline'>
+        <p>the commodity group</p>
+
+      </span>
+
+
+
+
+</section>
+      </div>
+      <div class='section-indent'>
+<section id='commodities/getprimarycolor'class='mt2 mb2 py1 px3 keyline-top'>
+  <h3 class='regular'>
+    <a class='black' href='#commodities/getprimarycolor'>
+      <code>
+        getPrimaryColor<span class='gray'>(commodity)</span>
+      </code>
+    </a>
+  </h3>
+  <p>Get the primary color for a commodity group.</p>
+
+
+    <p>
+      <table class='table-light overflow-hidden bg-cloudy-light'>
+        <thead>
+          <th class='col-3'>parameter</th>
+          <th class='col-3'>type</th>
+          <th class='col-6'>description</th>
+        </thead>
+          <tr>
+            <td>commodity</td>
+            <td><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code></td>
+            <td><p>the commodity or group</p>
+</td>
+          </tr>
+      </table>
+    </p>
+
+      <h4>Returns</h4>
+      <code><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code></code>
+      :
+      <span class='force-inline'>
+        <p>a CSS color</p>
+
+      </span>
+
+
+
+
+</section>
+      </div>
+      <div class='section-indent'>
+<section id='commodities/getcolors'class='mt2 mb2 py1 px3 keyline-top'>
+  <h3 class='regular'>
+    <a class='black' href='#commodities/getcolors'>
+      <code>
+        getColors<span class='gray'>(commodity, steps)</span>
+      </code>
+    </a>
+  </h3>
+  <p>Get the colors associated with a commodity's group color
+scheme.</p>
+
+
+    <p>
+      <table class='table-light overflow-hidden bg-cloudy-light'>
+        <thead>
+          <th class='col-3'>parameter</th>
+          <th class='col-3'>type</th>
+          <th class='col-6'>description</th>
+        </thead>
+          <tr>
+            <td>commodity</td>
+            <td><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code></td>
+            <td><p>the commodity or group</p>
+</td>
+          </tr>
+          <tr>
+            <td>steps</td>
+            <td><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></code></td>
+            <td><p>the number of color steps (default: 9)</p>
+</td>
+          </tr>
+      </table>
+    </p>
+
+      <h4>Returns</h4>
+      <code>Array<<code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code>></code>
       
       <span class='force-inline'>
         
       </span>
 
-    <h4>Examples</h4>
-<pre><span class="hljs-keyword">var</span> title = eiti.data.getter(<span class="hljs-string">'title'</span>);
-<span class="hljs-keyword">var</span> titles = data.map(title);</pre>
-
-
-
-</section>
-<section id='model'class='mt2 mb2 py1 px3 keyline-top'>
-  <h3 class='regular'>
-    <a class='black' href='#model'>
-      <code>
-        Model<span class='gray'>(data)</span>
-      </code>
-    </a>
-  </h3>
-  <p>A data model for storing named datasets.</p>
-
-
-    <p>
-      <table class='table-light overflow-hidden bg-cloudy-light'>
-        <thead>
-          <th class='col-3'>parameter</th>
-          <th class='col-3'>type</th>
-          <th class='col-6'>description</th>
-        </thead>
-          <tr>
-            <td>data</td>
-            <td><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></code> or <code>d3.map</code></td>
-            <td><p>optional datasets to initialize</p>
-</td>
-          </tr>
-      </table>
-    </p>
-
-
-    <h4>Examples</h4>
-<pre><span class="hljs-keyword">var</span> model = <span class="hljs-keyword">new</span> eiti.data.Model();</pre>
-
-      <div class='section-indent'>
-<section id='model/set'class='mt2 mb2 py1 px3 keyline-top'>
-  <h3 class='regular'>
-    <a class='black' href='#model/set'>
-      <code>
-        set<span class='gray'>(name, data)</span>
-      </code>
-    </a>
-  </h3>
-  <p>Store a dataset with a unique key</p>
-
-
-    <p>
-      <table class='table-light overflow-hidden bg-cloudy-light'>
-        <thead>
-          <th class='col-3'>parameter</th>
-          <th class='col-3'>type</th>
-          <th class='col-6'>description</th>
-        </thead>
-          <tr>
-            <td>name</td>
-            <td><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code></td>
-            <td><p>the dataset name</p>
-</td>
-          </tr>
-          <tr>
-            <td>data</td>
-            <td>Any</td>
-            <td><p>the data to store</p>
-</td>
-          </tr>
-      </table>
-    </p>
-
-      <h4>Returns</h4>
-      <code>Any</code>
-      :
-      <span class='force-inline'>
-        <p>returns the data as set</p>
-
-      </span>
-
 
 
 
 </section>
       </div>
       <div class='section-indent'>
-<section id='model/load'class='mt2 mb2 py1 px3 keyline-top'>
+<section id='commodities/setgroup'class='mt2 mb2 py1 px3 keyline-top'>
   <h3 class='regular'>
-    <a class='black' href='#model/load'>
+    <a class='black' href='#commodities/setgroup'>
       <code>
-        load<span class='gray'>(name, url, [callback])</span>
+        setGroup<span class='gray'>(commodity, group)</span>
       </code>
     </a>
   </h3>
-  <p>Load data from a URL into a named dataset.</p>
+  <p>Set the nesting group for a given commodity.</p>
 
 
     <p>
@@ -991,212 +1057,13 @@ itertools.itemgetter().</p>
           <th class='col-6'>description</th>
         </thead>
           <tr>
-            <td>name</td>
+            <td>commodity</td>
             <td><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code></td>
-            <td><p>the unique dataset name</p>
-</td>
+            <td></td>
           </tr>
           <tr>
-            <td>url</td>
+            <td>group</td>
             <td><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code></td>
-            <td><p>the URL to load</p>
-</td>
-          </tr>
-          <tr>
-            <td>callback</td>
-            <td><code>[<code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">Function</a></code>]</code></td>
-            <td><p>the callback function</p>
-</td>
-          </tr>
-      </table>
-    </p>
-
-
-    <h4>Examples</h4>
-<pre>model.load(<span class="hljs-string">'states'</span>, <span class="hljs-string">'path/to/states.json'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(error, topology)</span> </span>{
-});</pre>
-
-
-
-</section>
-      </div>
-      <div class='section-indent'>
-<section id='model/has'class='mt2 mb2 py1 px3 keyline-top'>
-  <h3 class='regular'>
-    <a class='black' href='#model/has'>
-      <code>
-        has<span class='gray'>(name)</span>
-      </code>
-    </a>
-  </h3>
-  
-
-    <p>
-      <table class='table-light overflow-hidden bg-cloudy-light'>
-        <thead>
-          <th class='col-3'>parameter</th>
-          <th class='col-3'>type</th>
-          <th class='col-6'>description</th>
-        </thead>
-          <tr>
-            <td>name</td>
-            <td><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code></td>
-            <td><p>the dataset name</p>
-</td>
-          </tr>
-      </table>
-    </p>
-
-      <h4>Returns</h4>
-      <code><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code></code>
-      :
-      <span class='force-inline'>
-        <p><code>true</code> if the named dataset exists, <code>false</code> if not</p>
-
-      </span>
-
-
-
-
-</section>
-      </div>
-      <div class='section-indent'>
-<section id='model/get'class='mt2 mb2 py1 px3 keyline-top'>
-  <h3 class='regular'>
-    <a class='black' href='#model/get'>
-      <code>
-        get<span class='gray'>(name)</span>
-      </code>
-    </a>
-  </h3>
-  
-
-    <p>
-      <table class='table-light overflow-hidden bg-cloudy-light'>
-        <thead>
-          <th class='col-3'>parameter</th>
-          <th class='col-3'>type</th>
-          <th class='col-6'>description</th>
-        </thead>
-          <tr>
-            <td>name</td>
-            <td><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code></td>
-            <td><p>the dataset name</p>
-</td>
-          </tr>
-      </table>
-    </p>
-
-      <h4>Returns</h4>
-      <code><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code></code>
-      :
-      <span class='force-inline'>
-        <p><code>true</code> if the named dataset exists, <code>false</code> if not</p>
-
-      </span>
-
-
-
-
-</section>
-      </div>
-      <div class='section-indent'>
-<section id='model/createindex'class='mt2 mb2 py1 px3 keyline-top'>
-  <h3 class='regular'>
-    <a class='black' href='#model/createindex'>
-      <code>
-        createIndex<span class='gray'>(src, dest, keys, [rollup])</span>
-      </code>
-    </a>
-  </h3>
-  <p>Create a nested index using <a href="eiti-data-nest"><code>eiti.data.nest</code></a> from a
-named dataset and alias it to a new name.</p>
-
-
-    <p>
-      <table class='table-light overflow-hidden bg-cloudy-light'>
-        <thead>
-          <th class='col-3'>parameter</th>
-          <th class='col-3'>type</th>
-          <th class='col-6'>description</th>
-        </thead>
-          <tr>
-            <td>src</td>
-            <td><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code></td>
-            <td><p>the source dataset name</p>
-</td>
-          </tr>
-          <tr>
-            <td>dest</td>
-            <td><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code></td>
-            <td><p>the destination dataset name</p>
-</td>
-          </tr>
-          <tr>
-            <td>keys</td>
-            <td>Array<<code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code> or <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">Function</a></code>></td>
-            <td><p>the keys to nest</p>
-</td>
-          </tr>
-          <tr>
-            <td>rollup</td>
-            <td><code>[<code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">Function</a></code>]</code></td>
-            <td><p>the optional rollup function</p>
-</td>
-          </tr>
-      </table>
-    </p>
-
-
-    <h4>Examples</h4>
-<pre>model.set(<span class="hljs-string">'foo'</span>, [
-  {x: <span class="hljs-string">'bar'</span>, y: <span class="hljs-string">'baz'</span>},
-  {x: <span class="hljs-string">'qux'</span>, y: <span class="hljs-string">'quux'</span>}
-]);
-<span class="hljs-keyword">var</span> index = model.createIndex(<span class="hljs-string">'foo'</span>, <span class="hljs-string">'bar'</span>, [<span class="hljs-string">'x'</span>, <span class="hljs-string">'y'</span>]);
-assert.deepEqual(index, {
-  bar: {
-    baz: [
-      {x: <span class="hljs-string">'bar'</span>, y: <span class="hljs-string">'baz'</span>}
-    ],
-  },
-  qux: {
-    quux: [
-      {x: <span class="hljs-string">'qux'</span>, y: <span class="hljs-string">'quux'</span>}
-    ]
-  }
-});</pre>
-
-
-
-</section>
-      </div>
-
-
-</section>
-<section id='eiti-format-range'class='mt2 mb2 py1 px3 keyline-top'>
-  <h3 class='regular'>
-    <a class='black' href='#eiti-format-range'>
-      <code>
-        eiti.format.range<span class='gray'>(format)</span>
-      </code>
-    </a>
-  </h3>
-  <p>Create a range formatter that strips the preceding <code>$</code>
-from the second value to produce strings like <code>$10m - 20m</code>
-instead of <code>$10m - $20m</code>.</p>
-
-
-    <p>
-      <table class='table-light overflow-hidden bg-cloudy-light'>
-        <thead>
-          <th class='col-3'>parameter</th>
-          <th class='col-3'>type</th>
-          <th class='col-6'>description</th>
-        </thead>
-          <tr>
-            <td>format</td>
-            <td><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code> or <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">Function</a></code></td>
             <td></td>
           </tr>
       </table>
@@ -1205,6 +1072,30 @@ instead of <code>$10m - $20m</code>.</p>
 
 
 
+
+</section>
+      </div>
+
+      <div class='section-indent'>
+<section id='commodities/other'class='mt2 mb2 py1 px3 keyline-top'>
+  <h3 class='regular'>
+    <a class='black' href='#commodities/other'>
+      <code>
+        OTHER<span class='gray'></span>
+      </code>
+    </a>
+  </h3>
+  <p>The group to which commodities with an unspecified group will
+be assigned, namely <code>Other Commodities</code>.</p>
+
+
+
+
+
+
+
+</section>
+      </div>
 
 </section>
 <section id='eiti-format-shortdollars'class='mt2 mb2 py1 px3 keyline-top'>
@@ -1321,15 +1212,15 @@ cents, e.g. <code>$1,234,567.89</code>.</p>
 
 
 </section>
-<section id='eiti-format-metric'class='mt2 mb2 py1 px3 keyline-top'>
+<section id='eiti-data-nest'class='mt2 mb2 py1 px3 keyline-top'>
   <h3 class='regular'>
-    <a class='black' href='#eiti-format-metric'>
+    <a class='black' href='#eiti-data-nest'>
       <code>
-        eiti.format.metric<span class='gray'>(num)</span>
+        eiti.data.nest<span class='gray'>(rows, keys, [rollup])</span>
       </code>
     </a>
   </h3>
-  <p>Produces international system/metric form, e.g. <code>4.1M</code></p>
+  <p>Nest data into an object structure:</p>
 
 
     <p>
@@ -1340,131 +1231,42 @@ cents, e.g. <code>$1,234,567.89</code>.</p>
           <th class='col-6'>description</th>
         </thead>
           <tr>
-            <td>num</td>
-            <td><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></code></td>
-            <td></td>
+            <td>rows</td>
+            <td><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></code></td>
+            <td><p>a dimensional tabular data set</p>
+</td>
+          </tr>
+          <tr>
+            <td>keys</td>
+            <td><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></code></td>
+            <td><p>a list of key functions or property names</p>
+</td>
+          </tr>
+          <tr>
+            <td>rollup</td>
+            <td><code>[<code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">Function</a></code>]</code></td>
+            <td><p>an optional value rollup function</p>
+</td>
           </tr>
       </table>
     </p>
-
-      <h4>Returns</h4>
-      <code><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code></code>
-      
-      <span class='force-inline'>
-        
-      </span>
-
-
-
-
-</section>
-<section id='eiti-format-transform'class='mt2 mb2 py1 px3 keyline-top'>
-  <h3 class='regular'>
-    <a class='black' href='#eiti-format-transform'>
-      <code>
-        eiti.format.transform<span class='gray'>(format, transform)</span>
-      </code>
-    </a>
-  </h3>
-  <p>Create a composite format that wraps a d3 format (or any other
-formatting function) with a transform function.</p>
-
-
-    <p>
-      <table class='table-light overflow-hidden bg-cloudy-light'>
-        <thead>
-          <th class='col-3'>parameter</th>
-          <th class='col-3'>type</th>
-          <th class='col-6'>description</th>
-        </thead>
-          <tr>
-            <td>format</td>
-            <td><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code> or <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">Function</a></code></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>transform</td>
-            <td><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">Function</a></code></td>
-            <td></td>
-          </tr>
-      </table>
-    </p>
-
-      <h4>Returns</h4>
-      <code><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">Function</a></code></code>
-      
-      <span class='force-inline'>
-        
-      </span>
-
-
-
-
-</section>
-<section id='eiti-ui-slider'class='mt2 mb2 py1 px3 keyline-top'>
-  <h3 class='regular'>
-    <a class='black' href='#eiti-ui-slider'>
-      <code>
-        eiti.ui.slider<span class='gray'></span>
-      </code>
-    </a>
-  </h3>
-  <p>Create a slider from a d3 selection that dispatches 'change'
-events whenever the element is clicked, tapped or dragged.</p>
-
-
 
 
     <h4>Examples</h4>
-<pre><span class="hljs-keyword">var</span> slider = eiti.ui.slider()
-   .range([<span class="hljs-number">0</span>, <span class="hljs-number">100</span>])
-   .on(<span class="hljs-string">'change'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(e)</span> </span>{
-     <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'slider value:'</span>, e.value);
-   });
- d3.select(<span class="hljs-string">'#slider'</span>)
-   .call(slider);</pre>
-
-
-
-</section>
-<section id='eiti-ui-margin'class='mt2 mb2 py1 px3 keyline-top'>
-  <h3 class='regular'>
-    <a class='black' href='#eiti-ui-margin'>
-      <code>
-        eiti.ui.margin<span class='gray'>(input)</span>
-      </code>
-    </a>
-  </h3>
-  <p>Create a margin object {top, right, left, bottom} from any
-of the following types:</p>
-<ul>
-<li>string: coerce to a number</li>
-<li>number: a margin object with equal top, right, left and
-bottom values</li>
-<li>array: read the values as [top, right, bottom, left] if there
-are 4 or more elements; otherwise read as [vertical,
-horizontal]</li>
-<li>object: set top, right, bottom and left keys to 0 if not set,
-then return the object</li>
-</ul>
-
-
-    <p>
-      <table class='table-light overflow-hidden bg-cloudy-light'>
-        <thead>
-          <th class='col-3'>parameter</th>
-          <th class='col-3'>type</th>
-          <th class='col-6'>description</th>
-        </thead>
-          <tr>
-            <td>input</td>
-            <td>Any</td>
-            <td></td>
-          </tr>
-      </table>
-    </p>
-
-
+<pre><span class="hljs-keyword">var</span> data = [{x: <span class="hljs-number">1</span>, y: <span class="hljs-number">2</span>}, {x: <span class="hljs-number">2</span>, y: <span class="hljs-number">2</span>}];
+<span class="hljs-keyword">var</span> nested = eiti.data.nest(data, [<span class="hljs-string">'x'</span>, <span class="hljs-string">'y'</span>]);
+assert.deepEqual(nested, {
+  <span class="hljs-number">1</span>: {
+    <span class="hljs-number">2</span>: [
+      {x: <span class="hljs-number">1</span>, y: <span class="hljs-number">2</span>}
+    ]
+  },
+  <span class="hljs-number">2</span>: {
+    <span class="hljs-number">2</span>: [
+      {x: <span class="hljs-number">2</span>, y: <span class="hljs-number">2</span>}
+    ]
+  }
+});</pre>
 
 
 
@@ -1514,6 +1316,286 @@ assert.deepEqual(values, [<span class="hljs-string">'baz'</span>]);</pre>
 
 
 </section>
+<section id='eiti-format-metric'class='mt2 mb2 py1 px3 keyline-top'>
+  <h3 class='regular'>
+    <a class='black' href='#eiti-format-metric'>
+      <code>
+        eiti.format.metric<span class='gray'>(num)</span>
+      </code>
+    </a>
+  </h3>
+  <p>Produces international system/metric form, e.g. <code>4.1M</code></p>
+
+
+    <p>
+      <table class='table-light overflow-hidden bg-cloudy-light'>
+        <thead>
+          <th class='col-3'>parameter</th>
+          <th class='col-3'>type</th>
+          <th class='col-6'>description</th>
+        </thead>
+          <tr>
+            <td>num</td>
+            <td><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></code></td>
+            <td></td>
+          </tr>
+      </table>
+    </p>
+
+      <h4>Returns</h4>
+      <code><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code></code>
+      
+      <span class='force-inline'>
+        
+      </span>
+
+
+
+
+</section>
+<section id='eiti-format-range'class='mt2 mb2 py1 px3 keyline-top'>
+  <h3 class='regular'>
+    <a class='black' href='#eiti-format-range'>
+      <code>
+        eiti.format.range<span class='gray'>(format)</span>
+      </code>
+    </a>
+  </h3>
+  <p>Create a range formatter that strips the preceding <code>$</code>
+from the second value to produce strings like <code>$10m - 20m</code>
+instead of <code>$10m - $20m</code>.</p>
+
+
+    <p>
+      <table class='table-light overflow-hidden bg-cloudy-light'>
+        <thead>
+          <th class='col-3'>parameter</th>
+          <th class='col-3'>type</th>
+          <th class='col-6'>description</th>
+        </thead>
+          <tr>
+            <td>format</td>
+            <td><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code> or <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">Function</a></code></td>
+            <td></td>
+          </tr>
+      </table>
+    </p>
+
+
+
+
+
+</section>
+<section id='eiti-data-getter'class='mt2 mb2 py1 px3 keyline-top'>
+  <h3 class='regular'>
+    <a class='black' href='#eiti-data-getter'>
+      <code>
+        eiti.data.getter<span class='gray'>(key)</span>
+      </code>
+    </a>
+  </h3>
+  <p>Create a key getter function a la Python's
+itertools.itemgetter().</p>
+
+
+    <p>
+      <table class='table-light overflow-hidden bg-cloudy-light'>
+        <thead>
+          <th class='col-3'>parameter</th>
+          <th class='col-3'>type</th>
+          <th class='col-6'>description</th>
+        </thead>
+          <tr>
+            <td>key</td>
+            <td><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code> or <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></code> or <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">Function</a></code></td>
+            <td></td>
+          </tr>
+      </table>
+    </p>
+
+      <h4>Returns</h4>
+      <code><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">Function</a></code></code>
+      
+      <span class='force-inline'>
+        
+      </span>
+
+    <h4>Examples</h4>
+<pre><span class="hljs-keyword">var</span> title = eiti.data.getter(<span class="hljs-string">'title'</span>);
+<span class="hljs-keyword">var</span> titles = data.map(title);</pre>
+
+
+
+</section>
+<section id='eiti-ui-slider'class='mt2 mb2 py1 px3 keyline-top'>
+  <h3 class='regular'>
+    <a class='black' href='#eiti-ui-slider'>
+      <code>
+        eiti.ui.slider<span class='gray'></span>
+      </code>
+    </a>
+  </h3>
+  <p>Create a slider from a d3 selection that dispatches 'change'
+events whenever the element is clicked, tapped or dragged.</p>
+
+
+
+
+    <h4>Examples</h4>
+<pre><span class="hljs-keyword">var</span> slider = eiti.ui.slider()
+   .range([<span class="hljs-number">0</span>, <span class="hljs-number">100</span>])
+   .on(<span class="hljs-string">'change'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(e)</span> </span>{
+     <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'slider value:'</span>, e.value);
+   });
+ d3.select(<span class="hljs-string">'#slider'</span>)
+   .call(slider);</pre>
+
+
+
+</section>
+<section id='eiti-ui-tip'class='mt2 mb2 py1 px3 keyline-top'>
+  <h3 class='regular'>
+    <a class='black' href='#eiti-ui-tip'>
+      <code>
+        eiti.ui.tip<span class='gray'></span>
+      </code>
+    </a>
+  </h3>
+  <p>Create an augmented <a href="https://github.com/Caged/d3-tip">d3-tip</a>
+instance with &quot;show&quot; and &quot;hide&quot; event dispatching capabilities.
+EITI tips also have a <code>.target()</code> accessor which allows you to
+override the element that's used to calculate tooltip
+positioning.</p>
+
+
+
+
+    <h4>Examples</h4>
+<pre><span class="hljs-keyword">var</span> tip = eiti.ui.tip()
+  .on(<span class="hljs-string">'show'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'tip show:'</span>, <span class="hljs-keyword">this</span>);
+  })
+  .target(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.querySelector(<span class="hljs-string">'circle'</span>);
+  });</pre>
+
+
+
+</section>
+<section id='eiti-ui-margin'class='mt2 mb2 py1 px3 keyline-top'>
+  <h3 class='regular'>
+    <a class='black' href='#eiti-ui-margin'>
+      <code>
+        eiti.ui.margin<span class='gray'>(input)</span>
+      </code>
+    </a>
+  </h3>
+  <p>Create a margin object {top, right, left, bottom} from any
+of the following types:</p>
+<ul>
+<li>string: coerce to a number</li>
+<li>number: a margin object with equal top, right, left and
+bottom values</li>
+<li>array: read the values as [top, right, bottom, left] if there
+are 4 or more elements; otherwise read as [vertical,
+horizontal]</li>
+<li>object: set top, right, bottom and left keys to 0 if not set,
+then return the object</li>
+</ul>
+
+
+    <p>
+      <table class='table-light overflow-hidden bg-cloudy-light'>
+        <thead>
+          <th class='col-3'>parameter</th>
+          <th class='col-3'>type</th>
+          <th class='col-6'>description</th>
+        </thead>
+          <tr>
+            <td>input</td>
+            <td>Any</td>
+            <td></td>
+          </tr>
+      </table>
+    </p>
+
+
+
+
+
+</section>
+<section id='eiti-util-extend'class='mt2 mb2 py1 px3 keyline-top'>
+  <h3 class='regular'>
+    <a class='black' href='#eiti-util-extend'>
+      <code>
+        eiti.util.extend<span class='gray'>(base, [other])</span>
+      </code>
+    </a>
+  </h3>
+  <p>Extend objects with additional properties, a la <code>$.extend()</code>.</p>
+
+
+    <p>
+      <table class='table-light overflow-hidden bg-cloudy-light'>
+        <thead>
+          <th class='col-3'>parameter</th>
+          <th class='col-3'>type</th>
+          <th class='col-6'>description</th>
+        </thead>
+          <tr>
+            <td>base</td>
+            <td><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></code></td>
+            <td><p>the base object onto which all other
+properties will be added</p>
+</td>
+          </tr>
+          <tr>
+            <td>other</td>
+            <td><code>[<code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></code>]</code></td>
+            <td><p>one or more additional objects with
+properties to be copied</p>
+</td>
+          </tr>
+      </table>
+    </p>
+
+      <h4>Returns</h4>
+      <code><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></code></code>
+      :
+      <span class='force-inline'>
+        <p>the <code>base</code> object with added properties</p>
+
+      </span>
+
+
+
+
+</section>
+<section id='eiti-util-jigglehash'class='mt2 mb2 py1 px3 keyline-top'>
+  <h3 class='regular'>
+    <a class='black' href='#eiti-util-jigglehash'>
+      <code>
+        eiti.util.jiggleHash<span class='gray'></span>
+      </code>
+    </a>
+  </h3>
+  <p>Force a reset of location.hash so that the browser (hopefully)
+scrolls to the element with the fragment identifier and toggles
+the :target pseudo-class.</p>
+
+
+
+      <h4>Returns</h4>
+      <code><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code></code>
+      
+      <span class='force-inline'>
+        
+      </span>
+
+
+
+
+</section>
 <section id='eiti-util-bringtofront'class='mt2 mb2 py1 px3 keyline-top'>
   <h3 class='regular'>
     <a class='black' href='#eiti-util-bringtofront'>
@@ -1535,11 +1617,11 @@ siblings. Use it with an event listener, e.g.:</p>
 
 
 </section>
-<section id='eiti-util-returntoback'class='mt2 mb2 py1 px3 keyline-top'>
+<section id='eiti-util-sendtoback'class='mt2 mb2 py1 px3 keyline-top'>
   <h3 class='regular'>
-    <a class='black' href='#eiti-util-returntoback'>
+    <a class='black' href='#eiti-util-sendtoback'>
       <code>
-        eiti.util.returnToBack<span class='gray'></span>
+        eiti.util.sendToBack<span class='gray'></span>
       </code>
     </a>
   </h3>
@@ -1552,7 +1634,50 @@ element to its previous position among its siblings.</p>
     <h4>Examples</h4>
 <pre>d3.selectAll(<span class="hljs-string">'svg path'</span>)
   .on(<span class="hljs-string">'mouseover'</span>, eiti.util.bringToFront)
-  .on(<span class="hljs-string">'mouseout'</span>, eiti.util.returnToBack);</pre>
+  .on(<span class="hljs-string">'mouseout'</span>, eiti.util.sendToBack);</pre>
+
+
+
+</section>
+<section id='eiti-format-transform'class='mt2 mb2 py1 px3 keyline-top'>
+  <h3 class='regular'>
+    <a class='black' href='#eiti-format-transform'>
+      <code>
+        eiti.format.transform<span class='gray'>(format, transform)</span>
+      </code>
+    </a>
+  </h3>
+  <p>Create a composite format that wraps a d3 format (or any other
+formatting function) with a transform function.</p>
+
+
+    <p>
+      <table class='table-light overflow-hidden bg-cloudy-light'>
+        <thead>
+          <th class='col-3'>parameter</th>
+          <th class='col-3'>type</th>
+          <th class='col-6'>description</th>
+        </thead>
+          <tr>
+            <td>format</td>
+            <td><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code> or <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">Function</a></code></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>transform</td>
+            <td><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">Function</a></code></td>
+            <td></td>
+          </tr>
+      </table>
+    </p>
+
+      <h4>Returns</h4>
+      <code><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">Function</a></code></code>
+      
+      <span class='force-inline'>
+        
+      </span>
+
 
 
 

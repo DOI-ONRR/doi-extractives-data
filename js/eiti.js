@@ -637,14 +637,14 @@
   /**
    * The compliment to {@link bringToFront}, returns an
    * element to its previous position among its siblings.
-   * @name eiti.util.returnToBack
+   * @name eiti.util.sendToBack
    *
    * @example
    * d3.selectAll('svg path')
    *   .on('mouseover', eiti.util.bringToFront)
-   *   .on('mouseout', eiti.util.returnToBack);
+   *   .on('mouseout', eiti.util.sendToBack);
    */
-  eiti.util.returnToBack = function() {
+  eiti.util.sendToBack = function() {
     this.parentNode.insertBefore(this, this._nextSibling);
     delete this._nextSibling;
   };

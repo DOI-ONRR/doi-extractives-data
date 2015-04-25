@@ -42,8 +42,12 @@
       right: 20
     };
 
+    var axisSpacing = 5;
+
     var fill = d3.scale.category10();
     var interpolate = 'cardinal';
+
+    var voronoi = false;
 
     /**
      * Renders a chart in a given d3 selection. Use {@link
@@ -130,6 +134,7 @@
           return suffix[s] || s;
         });
       };
+
       if (log) {
         ticks -= 1;
         yAxis.ticks(ticks, yFormat);
@@ -140,12 +145,12 @@
 
       svg.append('g')
         .attr('class', 'axis y')
-        .attr('transform', 'translate(' + [margin.left - 2, 0] + ')')
+        .attr('transform', 'translate(' + [margin.left - axisSpacing, 0] + ')')
         .call(yAxis);
 
       svg.append('g')
         .attr('class', 'axis x')
-        .attr('transform', 'translate(' + [0, height - margin.bottom + 2] + ')')
+        .attr('transform', 'translate(' + [0, height - margin.bottom + axisSpacing] + ')')
         .call(d3.svg.axis()
           .orient('bottom')
           .scale(x)
@@ -179,6 +184,37 @@
           return fill(d.key);
         })
         .attr('d', area);
+
+      if (voronoi) {
+        var points = [];
+        paths.each(function(d) {
+          d.forEach(function(v) {
+            points.push({
+              data: d,
+              value: v,
+              x: x(v.x),
+              y: y(v.y)
+            });
+          });
+        });
+
+        var vor = eiti.charts.voronoi()
+          .points(points)
+          .clipExtent([
+            [margin.left - axisSpacing, margin.top],
+            [width - margin.right + axisSpacing, height - margin.bottom + axisSpacing]
+          ]);
+
+        var regions = svg.append('g')
+          .attr('class', 'voronoi')
+          .call(vor)
+          .selectAll('*')
+            // NB: you have to do this to revert the data "back"
+            // to its pre-voronoi() state
+            .datum(function(d) {
+              return d.point.value;
+            });
+      }
     };
 
     /**
@@ -302,7 +338,64 @@
       return areaChart;
     };
 
+    /**
+     * Toggle creation of Voronoi regions for interactivity.
+     *
+     * @param {Boolean=} voronoi if `true`, voronoi regions will be created
+     */
+    areaChart.voronoi = function(_) {
+      if (!arguments.length) return voronoi;
+      voronoi = _;
+      return areaChart;
+    };
+
     return areaChart;
+  };
+
+  eiti.charts.voronoi = function() {
+    var points = [];
+    var clipExtent = null;
+
+    var chart = function(svg) {
+      var voronoi = d3.geom.voronoi()
+        .x(function(d) { return d.x; })
+        .y(function(d) { return d.y; })
+        .clipExtent(clipExtent);
+
+      var region = svg.selectAll('g.region')
+        .data(voronoi(points))
+        .enter()
+        .append('g')
+          .attr('class', 'region')
+          .append('a');
+
+      region.append('path')
+        .attr('fill', 'transparent')
+        .attr('d', function poly(v) {
+          return 'M' + v.join('L') + 'Z';
+        });
+
+      region.append('circle')
+        .attr('class', 'point')
+        .attr('transform', function(d) {
+          var p = [d.point.x, d.point.y].map(Math.round);
+          return 'translate(' + p + ')';
+        });
+    };
+
+    chart.points = function(_) {
+      if (!arguments.length) return points;
+      points = _;
+      return chart;
+    };
+
+    chart.clipExtent = function(_) {
+      if (!arguments.length) return clipExtent;
+      clipExtent = _;
+      return chart;
+    };
+
+    return chart;
   };
 
 })(this);

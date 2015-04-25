@@ -279,6 +279,13 @@
       .attr('class', 'tooltip')
       .direction('n')
       .offset([8, 0]) // nestle up a bit
+      .on('show', function(d) {
+        var hasData = d.value.hasOwnProperty(state.year);
+        var klass = eiti.util.classify()
+          .add(hasData ? 'has-data' : 'no-data')
+          .remove(hasData ? 'no-data' : 'has-data')
+        tip.attr('class', klass);
+      })
       .html(function(d) {
         // note: d.label is set in updateCommodityMaps()
         return d.label;

@@ -327,6 +327,9 @@
 
     var target = null;
 
+    var showClass = classify('show', 'hide');
+    var hideClass = classify('hide', 'show');
+
     /*
      * Override the target of the tooltip for positioning purposes.
      * @example
@@ -342,19 +345,19 @@
 
     tip.show = function() {
       var args = arguments;
-      if (dispatch.show.apply(this, arguments) !== false) {
-        if (target) {
-          var t = target ? target.apply(this, arguments) : null;
-          if (t) args = [].slice.call(args).concat([t]);
-        }
-        show.apply(this, args);
+      dispatch.show.apply(this, arguments);
+      if (target) {
+        var t = target ? target.apply(this, arguments) : null;
+        if (t) args = [].slice.call(args).concat([t]);
       }
+      tip.attr('class', showClass);
+      return show.apply(this, args);
     };
 
     tip.hide = function() {
-      if (dispatch.hide.apply(this, arguments) !== false) {
-        hide.apply(this, arguments);
-      }
+      dispatch.hide.apply(this, arguments);
+      tip.attr('class', hideClass);
+      return hide.apply(this, arguments);
     };
 
     return d3.rebind(tip, dispatch, 'on');
@@ -649,6 +652,10 @@
     delete this._nextSibling;
   };
 
+  // TODO: document
+  eiti.util.classify = classify;
+
+
   eiti.format = {};
 
   /**
@@ -748,6 +755,48 @@
   function getter(key) {
     if (typeof key === 'function') return key;
     return function(d) { return d[key]; };
+  }
+
+  /*
+   * This is a d3 helper that allows you to toggle multiple classes
+   * *when used with `d3.selection#classed`*. You do *not* need this
+   * otherwise.
+   */
+  function classify(_add, _remove) {
+    var add = [];
+    var remove = [];
+
+    var classify = function() {
+      var classes = this.classList;
+      if (add && add.length) {
+        add.forEach(function(klass) {
+          classes.add(klass);
+        });
+      }
+      if (remove && remove.length) {
+        remove.forEach(function(klass) {
+          classes.remove(klass);
+        });
+      }
+      console.log('classify:', this.className);
+      return this.className;
+    }
+
+    classify.add = function(_) {
+      if (!arguments.length) return add;
+      add = Array.isArray(_) ? _ : [_];
+      return classify;
+    };
+
+    classify.remove = function(_) {
+      if (!arguments.length) return remove;
+      remove = Array.isArray(_) ? _ : [_];
+      return classify;
+    };
+
+    return classify
+      .add(_add)
+      .remove(_remove);
   }
 
 })(this);

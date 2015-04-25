@@ -367,7 +367,8 @@
         .enter()
         .append('g')
           .attr('class', 'region')
-          .append('a');
+          .append('a')
+            .attr('class', 'region');
 
       region.append('path')
         .attr('fill', 'transparent')

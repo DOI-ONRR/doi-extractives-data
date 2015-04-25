@@ -92,6 +92,10 @@
         .classed('hilite', function(y) {
           return y == state.year;
         });
+    d3.select('#year-slider')
+      .property('changing', true)
+      .property('value', state.year)
+      .property('changing', false);
   }
 
   function renderTimeline() {
@@ -110,7 +114,11 @@
     svg.selectAll('a')
       .attr('xlink:href', function(d) {
         return '#' + commodityId(d.key);
-      });
+      })
+      .filter('.region')
+        .on('click', function(d) {
+          setYear(d.x);
+        });
 
     var format = eiti.format.shortDollars;
     var tip = eiti.ui.tip()
@@ -148,7 +156,9 @@
 
     var slider = d3.select('#year-slider')
       .on('change', function() {
-        setYear(+this.value);
+        if (!this.changing) {
+          setYear(+this.value);
+        }
       })
       .property('value', state.year);
   }

@@ -186,9 +186,11 @@ div.tooltip {
   background: #000;
   padding: .2em .5em;
   border-radius: 5px;
+  white-space: nowrap;
 }
 
   div.tooltip:after {
+    pointer-events: none;
     content: "";
     display: block;
     position: absolute;
@@ -196,11 +198,12 @@ div.tooltip {
     left: 50%;
     border: 8px solid transparent;
     border-top-color: #000;
-    margin-left: -4px;
+    margin-left: -8px;
   }
 
   /*
   div.tooltip:before {
+    pointer-events: none;
     content: "";
     display: block;
     position: absolute;

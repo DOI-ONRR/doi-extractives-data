@@ -778,7 +778,6 @@
           classes.remove(klass);
         });
       }
-      console.log('classify:', this.className);
       return this.className;
     }
 

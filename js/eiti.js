@@ -303,6 +303,64 @@
   eiti.ui = {};
 
   /**
+   * Create an augmented [d3-tip](https://github.com/Caged/d3-tip)
+   * instance with "show" and "hide" event dispatching capabilities.
+   * EITI tips also have a `.target()` accessor which allows you to
+   * override the element that's used to calculate tooltip
+   * positioning.
+   * @name eiti.ui.tip
+   *
+   * @example
+   * var tip = eiti.ui.tip()
+   *   .on('show', function() {
+   *     console.log('tip show:', this);
+   *   })
+   *   .target(function() {
+   *     return this.querySelector('circle');
+   *   });
+   */
+  eiti.ui.tip = function() {
+    var tip = d3.tip();
+    var show = tip.show;
+    var hide = tip.hide;
+    var dispatch = d3.dispatch('show', 'hide');
+
+    var target = null;
+
+    /*
+     * Override the target of the tooltip for positioning purposes.
+     * @example
+     * tip.target(function() {
+     *   return this.querySelector('circle');
+     * });
+     */
+    tip.target = function(_) {
+      if (!arguments.length) return target;
+      target = d3.functor(_);
+      return tip;
+    };
+
+    tip.show = function() {
+      var args = arguments;
+      if (dispatch.show.apply(this, arguments) !== false) {
+        if (target) {
+          var t = target ? target.apply(this, arguments) : null;
+          if (t) args = [].slice.call(args).concat([t]);
+        }
+        show.apply(this, args);
+      }
+    };
+
+    tip.hide = function() {
+      if (dispatch.hide.apply(this, arguments) !== false) {
+        hide.apply(this, arguments);
+      }
+    };
+
+    return d3.rebind(tip, dispatch, 'on');
+  };
+
+  /**
    * Create a slider from a d3 selection that dispatches 'change'
    * events whenever the element is clicked, tapped or dragged.
    * @name eiti.ui.slider
@@ -524,6 +582,25 @@
   };
 
   eiti.util = {};
+
+  /**
+   * Extend objects with additional properties, a la `$.extend()`.
+   * @name eiti.util.extend
+   *
+   * @param {Object} base   the base object onto which all other
+   *                        properties will be added
+   * @param {Object=} other one or more additional objects with
+   *                        properties to be copied
+   * @return {Object} the `base` object with added properties
+   */
+  eiti.util.extend = function(obj) {
+    [].slice.call(arguments, 1).forEach(function(o) {
+      for (var key in o) {
+        obj[key] = o[key];
+      }
+    });
+    return obj;
+  };
 
   /**
    * Force a reset of location.hash so that the browser (hopefully)

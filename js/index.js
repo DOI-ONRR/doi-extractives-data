@@ -95,11 +95,14 @@
   }
 
   function renderTimeline() {
+    var fill = function(key) {
+      return commodities.getPrimaryColor(key);
+    };
+
     var area = eiti.charts.area()
       .stacked(false)
-      .fill(function(key) {
-        return commodities.getPrimaryColor(key);
-      });
+      .voronoi(true)
+      .fill(fill);
 
     var svg = d3.select('#national-revenues svg')
       .call(area, data.revenues.national);
@@ -107,6 +110,34 @@
     svg.selectAll('a')
       .attr('xlink:href', function(d) {
         return '#' + commodityId(d.key);
+      });
+
+    var format = eiti.format.shortDollars;
+    var tip = eiti.ui.tip()
+      .attr('class', 'tooltip')
+      .direction('n')
+      .offset([-10, 0])
+      // note: this is an eiti.tip-specific hack
+      .target(function() {
+        return this.querySelector('circle');
+      })
+      .html(function(v) {
+        return [v.key, ': ', format(v.y), ' in ', v.x].join('');
+      });
+
+    svg.call(tip);
+
+    var regions = svg.selectAll('.voronoi g.region')
+      .on('mouseover', tip.show, true)
+      .on('mouseout', tip.hide, true)
+      .on('focus', tip.show, true)
+      .on('blur', tip.hide, true);
+    regions.select('a')
+      .attr('tabindex', 0);
+    regions.select('circle')
+      .attr('r', 4)
+      .attr('fill', function(d) {
+        return fill(d.key);
       });
 
     var margin = area.margin();
@@ -234,11 +265,12 @@
     var states = data.geo.states.features;
     // TODO: sort spatially?
 
-    var tip = d3.tip()
+    var tip = eiti.ui.tip()
       .attr('class', 'tooltip')
       .direction('n')
-      .offset([4, 0]) // nestle up a bit
+      .offset([8, 0]) // nestle up a bit
       .html(function(d) {
+        // note: d.label is set in updateCommodityMaps()
         return d.label;
       });
 
@@ -247,6 +279,7 @@
     var feature = g.selectAll('g.state')
       .data(function(d) {
         var commodity = d.key;
+        // XXX: only render states that have data for a commodity?
         return states.map(function(feature) {
           var state = feature.properties.abbr;
           return {
@@ -317,6 +350,12 @@
       .replace(/ /g, '_');
   }
 
+  /*
+   * sets the margin of the <body> to the height of the footer,
+   * so content will never slide underneath it.
+   *
+   * TODO: debounce or defer this so it's not called so frequently.
+   */
   function resize() {
     var footer = document.querySelector('footer');
     var rect = footer.getBoundingClientRect();

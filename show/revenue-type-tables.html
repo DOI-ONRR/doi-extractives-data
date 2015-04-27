@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>USEITI Data: Tables!</title>
+    <script src="../js/vendor/d3.v3.min.js"></script>
+    <script src="../js/vendor/queue.v1.min.js"></script>
+    <script src="../js/vendor/topojson.v1.min.js"></script>
+    <script src="../js/progressive.js"></script>
+    <script src="../js/eiti.js"></script>
+    <link rel="stylesheet" href="../css/main.css">
+    <style type="text/css">
+      h2 { margin: 0; }
+
+      table {
+        border-spacing: 0;
+        margin-bottom: 2rem;
+      }
+
+      caption {
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.5rem;
+      }
+
+      th,
+      td,
+      caption {
+        padding: .2rem .5rem .4rem;
+      }
+
+      tbody th {
+        font-weight: normal;
+      }
+
+      tbody tr:nth-child(odd) > * {
+        background: #f9f9f9;
+      }
+
+      th, td {
+        text-align: left;
+        vertical-align: top;
+      }
+
+      th:first-child,
+      td:first-child {
+        text-align: right;
+      }
+
+      thead th {
+        background: #eee;
+      }
+
+      td {
+      }
+
+      td.no-data {
+        color: #ccc;
+      }
+
+      span.total,
+      span.n-a {
+        display: block;
+      }
+
+      svg.sparkline {
+        display: inline-block;
+        vertical-align: bottom;
+        margin-right: .5rem;
+        margin-top: .25rem;
+        position: relative;
+      }
+
+      .sparkline path.line {
+        fill: none;
+        stroke: black;
+        stroke-width: 1;
+      }
+
+      .sparkline path.area {
+        fill-opacity: .7;
+      }
+
+      .sparkline line.zero {
+        fill: none;
+        stroke: #999;
+        stroke-width: .5;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="progress">
+      <div class="bar"><span class="label"></span></div>
+    </div>
+
+    <section id="national-revenues">
+    </section>
+
+    <script>
+(function(exports) {
+
+  var data = exports.data = {};
+
+  var prog = progressive();
+
+  d3.select('#progress')
+    .call(progressive.bar(prog));
+
+  var commodities = new eiti.data.Commodities();
+
+  var setCommodityGroup = function(d) {
+    d.ActualCommodity = d.Commodity;
+    d.Commodity = commodities.getGroup(d.Commodity);
+  };
+
+  var getter = eiti.data.getter;
+
+  console.log('loading...');
+  var dataPath = '../output/';
+  queue()
+    .defer(prog, d3.tsv, dataPath + 'national/revenues-yearly.tsv')
+    .await(function(error, natlRevenues) {
+      if (error) return showError(error.responseText);
+
+      natlRevenues.forEach(setCommodityGroup);
+
+      data.revenues = {
+        national: natlRevenues,
+      };
+
+      console.log('loaded!', data);
+      loaded();
+    });
+
+  function loaded() {
+    var tables = d3.select('#national-revenues')
+      .selectAll('table')
+      .data([
+        {absolute: true},
+        {absolute: false}
+      ])
+      .enter()
+      .append('table');
+
+    tables.append('caption')
+      .text(function(options) {
+        return options.absolute
+          ? 'Absolute scale'
+          : 'Relative scale';
+      });
+
+    tables.each(function(options) {
+      d3.select(this).call(renderTable, options);
+    })
+  }
+
+  function renderTable(table, options) {
+    var revenues = data.revenues.national;
+    var sum = function(rows, key) {
+      return d3.sum(rows, getter(key || 'Revenue'));
+    };
+
+    var index = eiti.data.nest(revenues, [
+      'Commodity',
+      'Revenue Type',
+      'Year'
+    ], sum);
+
+    console.log('index:', index);
+
+    var revenueTypes = d3.set();
+
+    var rows = d3.entries(index).map(function(d) {
+      var types = d.value;
+      var years = [];
+      for (var type in types) {
+        revenueTypes.add(type);
+        var yearly = types[type];
+        years = years.concat(d3.entries(yearly));
+        types[type] = {
+          Commodity: d.key,
+          Type: type,
+          Years: types[type],
+          Total: d3.sum(d3.values(yearly))
+        };
+      }
+
+      years = d3.nest()
+        .key(getter('key'))
+        .rollup(function(d) {
+          return sum(d, 'value');
+        })
+        .map(years);
+
+      types.Total = {
+        Commodity: d.key,
+        Type: 'Total',
+        Years: years,
+        Total: sum(d3.values(types), 'Total')
+      };
+      return {
+        Commodity: d.key,
+        Types: types
+      };
+    })
+    .sort(function(a, b) {
+      return d3.ascending(a.Commodity, b.Commodity);
+    });
+
+    console.log('rows:', rows);
+
+    var columns = [
+      {label: 'Commodity'},
+      {label: 'Total', key: 'Total'}
+    ];
+
+    revenueTypes.values().forEach(function(type) {
+      columns.push({
+        label: type,
+        key: type
+      });
+    });
+
+    var thead = table.append('thead');
+    var th = thead.append('tr')
+      .selectAll('th.header')
+      .data(columns)
+      .enter()
+      .append('th')
+        .attr('class', 'header')
+        .attr('scope', 'col')
+        .text(function(d) { return d.label || e.key; });
+
+    var tbody = table.append('tbody');
+    var tr = tbody.selectAll('tr')
+      .data(rows)
+      .enter()
+      .append('tr')
+        .attr('class', 'commodity');
+
+    tr.append('th')
+      .attr('class', 'commodity')
+      .attr('scope', 'row')
+      .text(function(d) { return d.Commodity; });
+
+    var hasData = function(d) {
+      return !!d.val;
+    };
+
+    var td = tr.selectAll('td')
+      .data(function(d) {
+        return columns.filter(function(c, i) {
+          return c.key;
+        })
+        .map(function(c) {
+          var get = getter(c.key);
+          return {
+            row: d,
+            col: c,
+            val: get(d.Types)
+          };
+        });
+      })
+      .enter()
+      .append('td')
+        .attr('class', function(d) {
+          return [
+            'col-' + d.col.key.toLowerCase(),
+            hasData(d) ? 'has-data' : 'no-data'
+          ].join(' ');
+        });
+
+    td.filter(function(d) {
+        return !hasData(d);
+      })
+      .append('span')
+        .attr('class', 'n-a')
+        .text('n/a');
+
+    td = td.filter(hasData);
+
+    var format = eiti.format.shortDollars;
+    td.append('span')
+      .attr('class', 'total')
+      .text(function(d) {
+        return format(d.val.Total);
+      });
+
+    var width = 120;
+    var height = 40;
+
+    var yearExtent = d3.extent(revenues, getter('Year'))
+      .map(Number)
+      .sort(d3.ascending);
+
+    var years = d3.range(yearExtent[0], yearExtent[1] + 1);
+
+    var r = 3;
+    var x = d3.scale.linear()
+      .domain([0, years.length - 1])
+      .range([r, width - r]);
+    var y = d3.scale.linear()
+      .range([height - r, r]);
+
+    var fill = d3.scale.category10();
+    var values = [];
+
+    var svg = td.append('svg')
+      .attr('class', 'sparkline')
+      .attr('width', width)
+      .attr('height', height)
+      .datum(function(d) {
+        var _years = d.val.Years;
+        return {
+          data: d.val,
+          values: years.map(function(year) {
+            return _years[year] || 0;
+          })
+        };
+      })
+      .each(function(d) {
+        d.values.forEach(values.push.bind(values));
+      });
+
+    var path = svg.append('path')
+      .attr('class', 'area')
+      .attr('fill', function(d) {
+        return fill(d.data.Commodity);
+      });
+
+    var area = d3.svg.area()
+      .x(function(d, i) { return x(i); })
+      .y1(function(d, i) { return y(d); })
+
+    var zero = svg.append('line')
+      .attr('class', 'zero')
+      .attr('x1', 0)
+      .attr('x2', width);
+
+    if (options.absolute) {
+      var extent = d3.extent(values);
+      y.domain(extent);
+
+      area.y0(y(extent[0]))
+
+      var y0 = y(0);
+      zero
+        .attr('y1', y0)
+        .attr('y2', y0);
+    }
+
+    path.attr('d', function(d) {
+      if (!options.absolute) {
+        var extent = d3.extent(d.values);
+        var z = Math.min(extent[0], 0);
+        y.domain([z, extent[1]]);
+        area.y0(d.zero = y(0));
+      }
+      return area(d.values);
+    });
+
+    if (!options.absolute) {
+      var z = function(d) { return d.zero; };
+      zero
+        .attr('y1', z)
+        .attr('y2', z);
+    }
+  }
+
+})(this);
+    </script>
+  </body>
+</html>

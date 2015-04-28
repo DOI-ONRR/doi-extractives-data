@@ -126,6 +126,8 @@
 
   var getter = eiti.data.getter;
 
+  var fill = d3.scale.category10();
+
   console.log('loading...');
   var dataPath = '../output/';
   queue()
@@ -311,8 +313,6 @@
         .text('n/a');
 
     td = td.filter(hasData);
-
-    var fill = d3.scale.category10();
 
     var formatPercent = eiti.format.transform('%', function(str) {
       return str === '0%' ? '<1%' : str;

@@ -15,16 +15,25 @@
       table {
         border-spacing: 0;
         margin-bottom: 2rem;
+        border: 1px solid transparent;
       }
 
       a.permalink {
-        margin-right: .5em;
+        margin-right: .25em;
       }
 
       caption {
         text-align: center;
         font-weight: bold;
         font-size: 1.5rem;
+      }
+
+      table:target {
+        border-color: black;
+      }
+
+      table:target caption {
+        background: #ffe;
       }
 
       th,
@@ -53,6 +62,7 @@
 
       thead th {
         background: #eee;
+        border-bottom: 1px solid #999;
       }
 
       td {
@@ -76,6 +86,12 @@
         background: #ccc;
       }
 
+      tr.commodity-all > * {
+        border-top: 1px solid #999;
+        padding-top: .5em;
+        background: #eee !important;
+      }
+
       span.total,
       span.n-a {
         display: block;
@@ -84,6 +100,10 @@
       span.percent {
         float: right;
         color: #999;
+      }
+
+      td.col-total span.percent {
+        display: none;
       }
 
       svg.sparkline {
@@ -154,7 +174,9 @@
     });
 
   function loaded() {
+    console.time('render');
     renderTables();
+    console.timeEnd('render');
     eiti.util.jiggleHash();
   }
 
@@ -165,7 +187,8 @@
         {id: 'abs', absolute: true, opacity: false, all: false},
         {id: 'abs-all', absolute: true, opacity: false, all: true},
         {id: 'rel-all', absolute: false, opacity: false, all: true},
-        {id: 'bars', absolute: true, bar: true, chart: false, all: true},
+        {id: 'rel-bars', absolute: true, bar: true, chart: false, all: true},
+        {id: 'abs-bars', absolute: false, bar: true, chart: false, all: true},
       ])
       .enter()
       .append('table')
@@ -205,7 +228,7 @@
       'Year'
     ], sum);
 
-    console.log('index:', index);
+    // console.log('index:', index);
 
     var revenueTypes = d3.set();
 
@@ -256,10 +279,10 @@
           'Year'
         ], sum)
       });
-      rows.unshift(all);
+      rows.push(all);
     }
 
-    console.log('rows:', rows);
+    // console.log('rows:', rows);
 
     var columns = [
       {label: 'Commodity'},
@@ -281,14 +304,19 @@
       .append('th')
         .attr('class', 'header')
         .attr('scope', 'col')
-        .text(function(d) { return d.label || e.key; });
+        .text(function(d) { return d.label || d.key; });
 
     var tbody = table.append('tbody');
     var tr = tbody.selectAll('tr')
       .data(rows)
       .enter()
       .append('tr')
-        .attr('class', 'commodity');
+        .attr('class', function(d) {
+          return [
+            'commodity',
+            'commodity-' + normalize(d.Commodity)
+          ].join(' ');
+        });
 
     tr.append('th')
       .attr('class', 'commodity')
@@ -320,7 +348,8 @@
       .append('td')
         .attr('class', function(d) {
           return [
-            'col-' + d.col.key.toLowerCase(),
+            'column',
+            'col-' + normalize(d.col.key),
             hasData(d) ? 'has-data' : 'no-data'
           ].join(' ');
         });
@@ -337,10 +366,8 @@
     var formatPercent = eiti.format.transform('%', function(str) {
       return str === '0%' ? '<1%' : str;
     });
-    td.filter(function(d) {
-      return d.col.key !== 'Total';
-    })
-    .append('span')
+
+    td.append('span')
       .attr('class', 'percent')
       .text(function(d) {
         return formatPercent(d.val.Percent = (d.val.Total / d.total) || 0);
@@ -354,14 +381,31 @@
       });
 
     if (options.bar) {
+      var w = d3.scale.linear()
+        .rangeRound([0, 100]);
+
+      if (options.absolute) {
+        var max = d3.max(rows, function(d) {
+          return d.Types.Total.Total;
+        });
+        w.domain([0, max]);
+      }
+
       var bar = td.append('div')
         .attr('class', 'bar')
         .style('background', function(d) {
           return fill(d.row.Commodity);
         })
-        .style('width', function(d) {
-          return Math.ceil(100 * (d.val.Percent || 1)) + '%';
-        });
+        .attr('data-val-total', function(d) { return d.val.Total; })
+        .attr('data-total', function(d) { return d.total; })
+        .attr('data-val-percent', function(d) { return d.val.Percent; })
+        .style('width', options.absolute
+          ? function(d) {
+            return w(d.val.Total) + '%';
+          }
+          : function(d) {
+            return Math.ceil(100 * d.val.Percent || 0) + '%';
+          });
     }
 
     if (options.chart !== false) {
@@ -453,6 +497,13 @@
         return area(d.values);
       });
     }
+  }
+
+  function normalize(str) {
+    return str.toLowerCase()
+      .replace(/&/g, '')
+      .replace(/\s+/g, '_')
+      .replace(/\W+/g, '-');
   }
 
 })(this);

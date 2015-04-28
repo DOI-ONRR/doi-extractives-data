@@ -17,6 +17,10 @@
         margin-bottom: 2rem;
       }
 
+      a.permalink {
+        margin-right: .5em;
+      }
+
       caption {
         text-align: center;
         font-weight: bold;
@@ -62,9 +66,13 @@
         font-size: 14px;
       }
 
+      td {
+        min-width: 150px;
+      }
+
       td .bar {
         margin: .2rem 0;
-        height: 2px;
+        height: .5em;
         background: #ccc;
       }
 
@@ -147,23 +155,35 @@
 
   function loaded() {
     renderTables();
+    eiti.util.jiggleHash();
   }
 
   function renderTables() {
     var tables = d3.select('#national-revenues')
       .selectAll('table')
       .data([
-        {absolute: true, opacity: false, all: false},
-        {absolute: true, opacity: false, all: true},
-        {absolute: false, opacity: false, all: true}
+        {id: 'abs', absolute: true, opacity: false, all: false},
+        {id: 'abs-all', absolute: true, opacity: false, all: true},
+        {id: 'rel-all', absolute: false, opacity: false, all: true},
+        {id: 'bars', absolute: true, bar: true, chart: false, all: true},
       ])
       .enter()
-      .append('table');
+      .append('table')
+        .attr('id', getter('id'));
 
-    tables.append('caption')
+    var caption = tables.append('caption');
+    caption
+      .filter(getter('id'))
+      .append('a')
+        .attr('class', 'permalink')
+        .attr('href', function(d) { return '#' + d.id; })
+        .text('#');
+
+    caption.append('span')
       .text(function(options) {
-        var title = [options.absolute ? 'Absolute scale' : 'Relative scale'];
-        if (options.all) title.push('including "All"');
+        var title = [options.chart === false ? 'Bar chart' : 'Area chart'];
+        title.push(options.absolute ? 'absolute scale' : 'relative scale');
+        if (options.all) title.push('includes "all"');
         if (options.opacity) title.push('opacity varies by %');
         return title.join(', ');
       });
@@ -344,93 +364,95 @@
         });
     }
 
-    var width = 150;
-    var height = 35;
+    if (options.chart !== false) {
+      var width = 150;
+      var height = 35;
 
-    var yearExtent = d3.extent(revenues, getter('Year'))
-      .map(Number)
-      .sort(d3.ascending);
+      var yearExtent = d3.extent(revenues, getter('Year'))
+        .map(Number)
+        .sort(d3.ascending);
 
-    var years = d3.range(yearExtent[0], yearExtent[1] + 1);
+      var years = d3.range(yearExtent[0], yearExtent[1] + 1);
 
-    var r = 0;
-    var x = d3.scale.linear()
-      .domain([0, years.length - 1])
-      .range([r, width - r]);
-    var y = d3.scale.linear()
-      .rangeRound([height - r, r]);
+      var r = 0;
+      var x = d3.scale.linear()
+        .domain([0, years.length - 1])
+        .range([r, width - r]);
+      var y = d3.scale.linear()
+        .rangeRound([height - r, r]);
 
-    var alpha = d3.scale.linear()
-      .domain([0, 1])
-      .range([.1, 1]);
+      var alpha = d3.scale.linear()
+        .domain([0, 1])
+        .range([.1, 1]);
 
-    var values = [];
+      var values = [];
 
-    var svg = td.append('svg')
-      .attr('class', 'sparkline')
-      .attr('width', width)
-      .attr('height', height)
-      .datum(function(d) {
-        var _years = d.val.Years;
-        return {
-          data: d.val,
-          values: years.map(function(year) {
-            return _years[year] || 0;
-          })
-        };
-      })
-      .each(function(d) {
-        d.values.forEach(values.push.bind(values));
-      });
+      var svg = td.append('svg')
+        .attr('class', 'sparkline')
+        .attr('width', width)
+        .attr('height', height)
+        .datum(function(d) {
+          var _years = d.val.Years;
+          return {
+            data: d.val,
+            values: years.map(function(year) {
+              return _years[year] || 0;
+            })
+          };
+        })
+        .each(function(d) {
+          d.values.forEach(values.push.bind(values));
+        });
 
-    var path = svg.append('path')
-      .attr('class', 'area')
-      .attr('fill', function(d) {
-        return fill(d.data.Commodity);
-      });
+      var path = svg.append('path')
+        .attr('class', 'area')
+        .attr('fill', function(d) {
+          return fill(d.data.Commodity);
+        });
 
-    if (options.opacity) {
-      path.attr('fill-opacity', function(d) {
-        return alpha(d.data.Percent);
-      })
-    }
-
-    var area = d3.svg.area()
-      .interpolate(options.interpolate || 'monotone')
-      .x(function(d, i) { return x(i); })
-      .y1(function(d, i) { return y(d); })
-
-    var zero = svg.append('line')
-      .attr('class', 'zero')
-      .attr('x1', 0)
-      .attr('x2', width);
-
-    if (options.absolute) {
-      var extent = d3.extent(values);
-      y.domain(extent);
-      // y.nice();
-
-      area.y0(y(extent[0]))
-
-      var y0 = y(0);
-      zero
-        .attr('y1', y0)
-        .attr('y2', y0);
-    } else {
-      var y0 = r + (height - r * 2) * 2/3;
-      zero
-        .attr('y1', y0)
-        .attr('y2', y0);
-    }
-
-    path.attr('d', function(d) {
-      if (!options.absolute) {
-        var max = d3.max(d.values);
-        y.domain([-max / 2, max]);
-        area.y0(d.zero = y(0));
+      if (options.opacity) {
+        path.attr('fill-opacity', function(d) {
+          return alpha(d.data.Percent);
+        })
       }
-      return area(d.values);
-    });
+
+      var area = d3.svg.area()
+        .interpolate(options.interpolate || 'monotone')
+        .x(function(d, i) { return x(i); })
+        .y1(function(d, i) { return y(d); })
+
+      var zero = svg.append('line')
+        .attr('class', 'zero')
+        .attr('x1', 0)
+        .attr('x2', width);
+
+      if (options.absolute) {
+        var extent = d3.extent(values);
+        y.domain(extent);
+        // y.nice();
+
+        area.y0(y(extent[0]))
+
+        var y0 = y(0);
+        zero
+          .attr('y1', y0)
+          .attr('y2', y0);
+      } else {
+        var y0 = r + (height - r * 2) * 2/3;
+        zero
+          .attr('y1', y0)
+          .attr('y2', y0);
+      }
+
+      path.attr('d', function(d) {
+        if (!options.absolute) {
+          var max = d3.max(d.values);
+          y.domain([-max / 2, max]);
+          area.y0(d.zero = y(0));
+        }
+        return area(d.values);
+      });
+    }
   }
 
 })(this);

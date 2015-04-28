@@ -94,7 +94,7 @@
       .sparkline line.zero {
         fill: none;
         stroke: #999;
-        stroke-width: .5;
+        stroke-width: 0;
       }
 
     </style>
@@ -314,7 +314,9 @@
 
     var fill = d3.scale.category10();
 
-    var formatPercent = d3.format('%');
+    var formatPercent = eiti.format.transform('%', function(str) {
+      return str === '0%' ? '<1%' : str;
+    });
     td.filter(function(d) {
       return d.col.key !== 'Total';
     })
@@ -351,7 +353,7 @@
 
     var years = d3.range(yearExtent[0], yearExtent[1] + 1);
 
-    var r = 3;
+    var r = 0;
     var x = d3.scale.linear()
       .domain([0, years.length - 1])
       .range([r, width - r]);
@@ -415,7 +417,7 @@
         .attr('y1', y0)
         .attr('y2', y0);
     } else {
-      var y0 = r + (height - r * 2) * 3/4;
+      var y0 = r + (height - r * 2) * 2/3;
       zero
         .attr('y1', y0)
         .attr('y2', y0);
@@ -424,7 +426,7 @@
     path.attr('d', function(d) {
       if (!options.absolute) {
         var max = d3.max(d.values);
-        y.domain([-max / 3, max]);
+        y.domain([-max / 2, max]);
         area.y0(d.zero = y(0));
       }
       return area(d.values);

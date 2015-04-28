@@ -26,7 +26,7 @@
       th,
       td,
       caption {
-        padding: .2rem .5rem .4rem;
+        padding: .4rem .5rem .5rem;
       }
 
       tbody th {
@@ -58,16 +58,30 @@
         color: #ccc;
       }
 
+      td span {
+        font-size: 14px;
+      }
+
+      td .bar {
+        margin: .2rem 0;
+        height: 2px;
+        background: #ccc;
+      }
+
       span.total,
       span.n-a {
         display: block;
       }
 
+      span.percent {
+        float: right;
+        color: #999;
+      }
+
       svg.sparkline {
         display: inline-block;
         vertical-align: bottom;
-        margin-right: .5rem;
-        margin-top: .25rem;
+        margin-top: .4rem;
         position: relative;
       }
 
@@ -75,10 +89,6 @@
         fill: none;
         stroke: black;
         stroke-width: 1;
-      }
-
-      .sparkline path.area {
-        fill-opacity: .7;
       }
 
       .sparkline line.zero {
@@ -134,20 +144,26 @@
     });
 
   function loaded() {
+    renderTables();
+  }
+
+  function renderTables() {
     var tables = d3.select('#national-revenues')
       .selectAll('table')
       .data([
-        {absolute: true},
-        {absolute: false}
+        {absolute: true, opacity: false, all: false},
+        {absolute: true, opacity: false, all: true},
+        {absolute: false, opacity: false, all: true}
       ])
       .enter()
       .append('table');
 
     tables.append('caption')
       .text(function(options) {
-        return options.absolute
-          ? 'Absolute scale'
-          : 'Relative scale';
+        var title = [options.absolute ? 'Absolute scale' : 'Relative scale'];
+        if (options.all) title.push('including "All"');
+        if (options.opacity) title.push('opacity varies by %');
+        return title.join(', ');
       });
 
     tables.each(function(options) {
@@ -171,7 +187,7 @@
 
     var revenueTypes = d3.set();
 
-    var rows = d3.entries(index).map(function(d) {
+    var collate = function(d) {
       var types = d.value;
       var years = [];
       for (var type in types) {
@@ -203,10 +219,23 @@
         Commodity: d.key,
         Types: types
       };
-    })
-    .sort(function(a, b) {
-      return d3.ascending(a.Commodity, b.Commodity);
-    });
+    };
+
+    var rows = d3.entries(index).map(collate)
+      .sort(function(a, b) {
+        return d3.ascending(a.Commodity, b.Commodity);
+      });
+
+    if (options.all) {
+      var all = collate({
+        key: 'All',
+        value: eiti.data.nest(revenues, [
+          'Revenue Type',
+          'Year'
+        ], sum)
+      });
+      rows.unshift(all);
+    }
 
     console.log('rows:', rows);
 
@@ -250,15 +279,18 @@
 
     var td = tr.selectAll('td')
       .data(function(d) {
+        var total = d.Types.Total.Total;
         return columns.filter(function(c, i) {
           return c.key;
         })
         .map(function(c) {
           var get = getter(c.key);
+          var val = get(d.Types);
           return {
             row: d,
             col: c,
-            val: get(d.Types)
+            val: val,
+            total: total
           };
         });
       })
@@ -280,6 +312,18 @@
 
     td = td.filter(hasData);
 
+    var fill = d3.scale.category10();
+
+    var formatPercent = d3.format('%');
+    td.filter(function(d) {
+      return d.col.key !== 'Total';
+    })
+    .append('span')
+      .attr('class', 'percent')
+      .text(function(d) {
+        return formatPercent(d.val.Percent = (d.val.Total / d.total) || 0);
+      });
+
     var format = eiti.format.shortDollars;
     td.append('span')
       .attr('class', 'total')
@@ -287,7 +331,18 @@
         return format(d.val.Total);
       });
 
-    var width = 120;
+    if (options.bar) {
+      var bar = td.append('div')
+        .attr('class', 'bar')
+        .style('background', function(d) {
+          return fill(d.row.Commodity);
+        })
+        .style('width', function(d) {
+          return Math.ceil(100 * (d.val.Percent || 1)) + '%';
+        });
+    }
+
+    var width = 150;
     var height = 35;
 
     var yearExtent = d3.extent(revenues, getter('Year'))
@@ -301,9 +356,12 @@
       .domain([0, years.length - 1])
       .range([r, width - r]);
     var y = d3.scale.linear()
-      .range([height - r, r]);
+      .rangeRound([height - r, r]);
 
-    var fill = d3.scale.category10();
+    var alpha = d3.scale.linear()
+      .domain([0, 1])
+      .range([.1, 1]);
+
     var values = [];
 
     var svg = td.append('svg')
@@ -329,7 +387,14 @@
         return fill(d.data.Commodity);
       });
 
+    if (options.opacity) {
+      path.attr('fill-opacity', function(d) {
+        return alpha(d.data.Percent);
+      })
+    }
+
     var area = d3.svg.area()
+      .interpolate(options.interpolate || 'monotone')
       .x(function(d, i) { return x(i); })
       .y1(function(d, i) { return y(d); })
 
@@ -341,6 +406,7 @@
     if (options.absolute) {
       var extent = d3.extent(values);
       y.domain(extent);
+      // y.nice();
 
       area.y0(y(extent[0]))
 
@@ -349,15 +415,16 @@
         .attr('y1', y0)
         .attr('y2', y0);
     } else {
+      var y0 = r + (height - r * 2) * 3/4;
       zero
-	.attr('y1', height / 2)
-	.attr('y2', height / 2);
+        .attr('y1', y0)
+        .attr('y2', y0);
     }
 
     path.attr('d', function(d) {
       if (!options.absolute) {
         var max = d3.max(d.values);
-        y.domain([-max, max]);
+        y.domain([-max / 3, max]);
         area.y0(d.zero = y(0));
       }
       return area(d.values);

@@ -288,7 +288,7 @@
       });
 
     var width = 120;
-    var height = 40;
+    var height = 35;
 
     var yearExtent = d3.extent(revenues, getter('Year'))
       .map(Number)
@@ -348,24 +348,20 @@
       zero
         .attr('y1', y0)
         .attr('y2', y0);
+    } else {
+      zero
+	.attr('y1', height / 2)
+	.attr('y2', height / 2);
     }
 
     path.attr('d', function(d) {
       if (!options.absolute) {
-        var extent = d3.extent(d.values);
-        var z = Math.min(extent[0], 0);
-        y.domain([z, extent[1]]);
+        var max = d3.max(d.values);
+        y.domain([-max, max]);
         area.y0(d.zero = y(0));
       }
       return area(d.values);
     });
-
-    if (!options.absolute) {
-      var z = function(d) { return d.zero; };
-      zero
-        .attr('y1', z)
-        .attr('y2', z);
-    }
   }
 
 })(this);

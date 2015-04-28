@@ -12,7 +12,7 @@ Very brief discussion of the **purpose** of today's test:  "My goal today is to 
 
 ## Main questions
 
-"I’ve got a printed version of the front page here. Imagine somebody sent you a link to this site and this is what popped up in front of you when you clicked on the link. If you could, please put a question mark next to anything (word, phrase, section, prompt) that you find confusing. Put a plus sign next to anything that makes sense to you and that you'd like more information about. Finally, draw a minus sign next to anything you understand and don't want to read/want less of."
+"I’ve got a printed version of the front page here. Imagine somebody sent you a link to this site and this is what popped up in front of you when you clicked on the link. If you could, please put a question mark next to anything (word, phrase, section, prompt) that you find confusing. Put a plus sign next to anything that makes sense to you and that you'd like more information about. Finally, draw a minus sign next to anything you're not interested in/want to see less of."
 
 "Awesome – thank you. Now that you've seen the some of our site, I'd like to ask you a few general questions about what you think."
 

@@ -57,10 +57,14 @@ svg.area .legend rect {
   vector-effect: non-scaling-stroke;
 }
 
-svg.area path.hilite,
+svg.area path.area.hilite,
 svg.area .legend .hilite rect {
   stroke: #000;
   stroke-width: .5;
+}
+
+svg.area .hilite path.line {
+  stroke-width: 3;
 }
 
 svg .legend .hilite text {

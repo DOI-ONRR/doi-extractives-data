@@ -55,7 +55,7 @@
       ])
       .enter()
       .append('div')
-	.attr('class', 'chart');
+        .attr('class', 'chart');
 
     chart.append('h2')
       .attr('class', 'chart-title')
@@ -64,13 +64,13 @@
     chart.append('svg')
       .attr('class', 'area')
       .each(function(d) {
-	var area = areaChart()
-	  .x('Year')
-	  .y('Commodity')
-	  .stacked(d.stacked !== false)
-	  .log(d.log !== false);
-	d3.select(this)
-	  .call(area, data.revenues.national);
+        var area = areaChart()
+          .x('Year')
+          .y('Commodity')
+          .stacked(d.stacked !== false)
+          .log(d.log !== false);
+        d3.select(this)
+          .call(area, data.revenues.national);
       });
   }
 

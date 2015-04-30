@@ -104,12 +104,17 @@
     };
 
     var area = eiti.charts.area()
-      .stacked(false)
+      .stacked(true)
       .voronoi(true)
       .fill(fill);
 
     var svg = d3.select('#national-revenues svg')
       .call(area, data.revenues.national);
+
+    svg.selectAll('path.area')
+      .style('stroke', '#fff')
+      .style('stroke-width', .5)
+      .style('fill-opacity', 1);
 
     svg.selectAll('a')
       .attr('xlink:href', function(d) {

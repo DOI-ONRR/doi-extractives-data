@@ -78,7 +78,7 @@ output/county/revenues-yearly.tsv: input/onrr/county-revenues.tsv
 county-revenues-by-state: output/county/revenues-yearly.tsv
 	tito --read tsv $< \
 		| bin/divvy.js \
-			--path 'county/by-state/{{ State }}/revenues-yearly.tsv' \
+			--path 'output/county/by-state/{{ State }}/revenues-yearly.tsv' \
 			--of tsv
 
 output/county/volumes-yearly.tsv: input/onrr/county-volumes.tsv

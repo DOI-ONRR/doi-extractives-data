@@ -27,9 +27,15 @@ var regionNameMap = {
   'Gulf of Mexico': 'Gulf',
 };
 
+var commodityMap = {
+  'Oil and Gas': 'Oil & Gas',
+  'Other': 'Other Commodities'
+};
+
 var revenueKey = 'Royalty/Revenue';
-var regionKey = 'State/Offshore Region';
+var regionKey = 'Offshore Region';
 var areaKey = 'Offshore Area';
+var yearKey = 'Calendar Year'; // 'CY'
 
 async.waterfall([
   function loadRevenues(done) {
@@ -77,11 +83,12 @@ function mapRow(d, i) {
     console.error('no region for "%s" @ %d', d[regionKey], i);
     return process.exit(1);
   }
+  var commodity = commodityMap[d.Commodity] || d.Commodity;
   return {
-    Year:       d.CY,
+    Year:       d[yearKey],
     Region:     region,
     Area:       d[areaKey],
-    Commodity:  d.Commodity,
+    Commodity:  commodity,
     Product:    d.Product,
     Type:       d['Revenue Type'],
     Revenue:    revenue

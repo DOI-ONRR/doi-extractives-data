@@ -32,6 +32,11 @@ var fipsField = options['fips-field'];
 var stateField = options['state-field'];
 var revenueField = options['revenue-field'];
 
+var typeMap = {
+  'Other Roy Vals': 'Other Royalties',
+  'Other Royalty Vals': 'Other Royalties'
+};
+
 async.series([
   options['in-states'] ? loadStates : noop,
   main
@@ -57,6 +62,8 @@ function main(done) {
 
 function normalize(d) {
   util.trimKeys(d);
+  var type = d['Revenue Type'];
+  type = typeMap[type] || type;
   return {
     Year:       d.CY,
     State:      d[stateField],
@@ -64,7 +71,7 @@ function normalize(d) {
     FIPS:       d[fipsField],
     Commodity:  d.Commodity,
     Product:    d.Product,
-    Type:       d['Revenue Type'],
+    Type:       type,
     Revenue:    parse.dollars(d[revenueField])
   };
 }

@@ -28,10 +28,17 @@ output/national/gdp-yearly.tsv:
 	mkdir -p $(dir $@)
 	bin/get-bea-data.js --geo us -o $@
 
+output/national/revenues-yearly.tsv: output/state/revenues-yearly.tsv
+	mkdir -p $(dir $@)
+	bin/sum.js \
+		--group 'Year,Commodity,Type' \
+		--sum 'Revenue' \
+		-o $@ $<
+
 output/state/revenues-yearly.tsv: output/county/revenues-yearly.tsv
 	mkdir -p $(dir $@)
 	bin/sum.js \
-		--group 'Year,State,Commodity' \
+		--group 'Year,State,Commodity,Type' \
 		--sum Revenue \
 		-o $@ $<
 
@@ -60,7 +67,6 @@ output/offshore/revenues-yearly.tsv: input/onrr/offshore-revenues.tsv
 		--keys Year/Region/Area/Commodity/Product/Type \
 		--count Count \
 		$< > $@
-
 
 output/offshore/volumes-yearly.tsv: input/onrr/offshore-volumes.tsv
 	mkdir -p $(dir $@)

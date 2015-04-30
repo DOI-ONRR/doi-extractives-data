@@ -191,11 +191,14 @@
         var points = [];
         paths.each(function(d) {
           d.forEach(function(v) {
+            var _y = stacked
+              ? v.y0 + v.y
+              : v.y;
             points.push({
               data: d,
               value: v,
               x: x(v.x),
-              y: y(stacked ? v.y + v.y0 : v.y)
+              y: y(_y)
             });
           });
         });

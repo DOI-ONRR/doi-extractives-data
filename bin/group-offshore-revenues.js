@@ -34,7 +34,7 @@ var commodityMap = {
 
 var revenueKey = 'Royalty/Revenue';
 var regionKey = 'Offshore Region';
-var areaKey = 'Offshore Area';
+var areaKey = 'Planning Area';
 var yearKey = 'Calendar Year'; // 'CY'
 
 async.waterfall([

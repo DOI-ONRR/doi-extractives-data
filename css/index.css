@@ -39,7 +39,7 @@ section.commodity:target .content {
 }
 
 section.commodity svg.map {
-  max-height: 400px;
+  max-height: 600px;
 }
 
 input[type="range"] {

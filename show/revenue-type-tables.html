@@ -72,8 +72,12 @@
         color: #ccc;
       }
 
-      td span {
-        font-size: 14px;
+      td span.percent {
+        visibility: hidden;
+      }
+
+      td:hover span.percent {
+        visibility: visible;
       }
 
       td {
@@ -95,11 +99,12 @@
       span.total,
       span.n-a {
         display: block;
+        color: #999;
       }
 
       span.percent {
         float: right;
-        color: #999;
+        color: #ccc;
       }
 
       td.col-total span.percent {
@@ -224,7 +229,7 @@
 
     var index = eiti.data.nest(revenues, [
       'Commodity',
-      'Revenue Type',
+      'Type',
       'Year'
     ], sum);
 
@@ -266,16 +271,19 @@
       };
     };
 
+    var total = function(d) {
+      return d.Types.Total.Total;
+    };
     var rows = d3.entries(index).map(collate)
       .sort(function(a, b) {
-        return d3.ascending(a.Commodity, b.Commodity);
+        return d3.descending(total(a), total(b));
       });
 
     if (options.all) {
       var all = collate({
         key: 'All',
         value: eiti.data.nest(revenues, [
-          'Revenue Type',
+          'Type',
           'Year'
         ], sum)
       });
@@ -286,15 +294,13 @@
 
     var columns = [
       {label: 'Commodity'},
-      {label: 'Total', key: 'Total'}
+      {label: 'Total', key: 'Total'},
+      {label: 'Royalties', key: 'Royalties'},
+      {label: 'Bonus', key: 'Bonus'},
+      {label: 'Rents', key: 'Rents'},
+      {label: 'Other Royalties', key: 'Other Royalties'},
+      {label: 'Other Revenues', key: 'Other Revenues'}
     ];
-
-    revenueTypes.values().forEach(function(type) {
-      columns.push({
-        label: type,
-        key: type
-      });
-    });
 
     var thead = table.append('thead');
     var th = thead.append('tr')
@@ -461,7 +467,7 @@
       }
 
       var area = d3.svg.area()
-        .interpolate(options.interpolate || 'monotone')
+        .interpolate(options.interpolate || 'linear')
         .x(function(d, i) { return x(i); })
         .y1(function(d, i) { return y(d); })
 
@@ -482,7 +488,7 @@
           .attr('y1', y0)
           .attr('y2', y0);
       } else {
-        var y0 = r + (height - r * 2) * 2/3;
+        var y0 = r + (height - r * 2) / 2;
         zero
           .attr('y1', y0)
           .attr('y2', y0);
@@ -491,7 +497,7 @@
       path.attr('d', function(d) {
         if (!options.absolute) {
           var max = d3.max(d.values);
-          y.domain([-max / 2, max]);
+          y.domain([-max, max]);
           area.y0(d.zero = y(0));
         }
         return area(d.values);

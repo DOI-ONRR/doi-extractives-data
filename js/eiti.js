@@ -103,11 +103,11 @@
       };
 
       this.groupColors = {
-        'Coal': 'YlOrBr',
-        'Oil': 'Greys',
+        'Coal': 'Greys',
+        'Oil': 'YlOrBr',
         'Gas': 'Purples',
         'Oil & Gas': 'RdPu',
-        'Geothermal': 'OrRd',
+        'Geothermal': 'Greens',
         'Other Commodities': 'Blues'
       };
     };

@@ -11,7 +11,7 @@ FILES = \
 	output/county/revenues-yearly.tsv \
 	county-revenues-by-state
 
-all: $(FILES) geo svg js/docs
+all: $(FILES) geo svg
 
 output/national/revenues-yearly.tsv: input/site/2003-2013-revenue-data-CY.csv
 	mkdir -p $(dir $@)

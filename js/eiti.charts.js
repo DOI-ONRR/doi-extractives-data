@@ -156,7 +156,8 @@
           .scale(x)
           .tickFormat(d3.format('d')));
 
-      var stack = d3.layout.stack();
+      var stack = d3.layout.stack()
+        .order('reverse');
 
       var g = svg.selectAll('g.layer')
         .data(stack(layers))
@@ -180,6 +181,7 @@
       }
 
       var paths = g.append('path')
+        .attr('class', 'area')
         .attr('fill', function(d) {
           return fill(d.key);
         })
@@ -193,7 +195,7 @@
               data: d,
               value: v,
               x: x(v.x),
-              y: y(v.y)
+              y: y(stacked ? v.y + v.y0 : v.y)
             });
           });
         });

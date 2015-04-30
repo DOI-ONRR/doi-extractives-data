@@ -234,12 +234,9 @@
             })
             .attr('d', function(d) {
               var avg = d3.mean(d, getter('y'));
-              console.log(d.key, avg);
-              var y0 = y(avg);
-              console.log(d.key, avg, '->', y0);
               return line([
-                {x: xd[0], y: y0},
-                {x: xd[xd.length - 2], y: y0}
+                {x: xd[0], y: avg},
+                {x: xd[xd.length - 1], y: avg}
               ]);
             });
       }

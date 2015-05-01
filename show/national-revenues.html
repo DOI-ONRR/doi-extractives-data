@@ -6,6 +6,7 @@
     <script src="../js/vendor/d3.v3.min.js"></script>
     <script src="../js/vendor/queue.v1.min.js"></script>
     <script src="../js/vendor/topojson.v1.min.js"></script>
+    <script src="../js/eiti.js"></script>
     <script src="../js/progressive.js"></script>
     <link rel="stylesheet" href="../css/main.css">
     <style type="text/css">
@@ -27,6 +28,8 @@
 
   var prog = progressive();
 
+  var commodities = new eiti.data.Commodities();
+
   d3.select('#progress')
     .call(progressive.bar(prog));
 
@@ -36,6 +39,10 @@
     .defer(prog, d3.tsv, dataPath + 'national/revenues-yearly.tsv')
     .await(function(error, natlRevenues) {
       if (error) return showError(error.responseText);
+
+      natlRevenues.forEach(function(d) {
+        d.CommodityGroup = commodities.getGroup(d.Commodity);
+      });
 
       data.revenues = {
         national: natlRevenues,
@@ -49,9 +56,9 @@
     var chart = d3.select('#national')
       .selectAll('.chart')
       .data([
-        {stacked: true, log: false, title: "Stacked Area"},
-        {stacked: false, log: false, title: "Overlapping Area Chart"},
-        {stacked: false, log: true, title: "Overlapping Area with logarithmic y-axis"}
+        {stacked: true, grouped: false, log: false, title: "Stacked Area"},
+        {stacked: true, grouped: true, log: false, title: "Stacked Area, grouped"},
+        {stacked: false, grouped: true, log: false, title: "Overlapping Area Chart, grouped"},
       ])
       .enter()
       .append('div')
@@ -66,7 +73,7 @@
       .each(function(d) {
         var area = areaChart()
           .x('Year')
-          .y('Commodity')
+          .y(d.grouped ? 'CommodityGroup' : 'Commodity')
           .stacked(d.stacked !== false)
           .log(d.log !== false);
         d3.select(this)
@@ -184,7 +191,8 @@
           .scale(x)
           .tickFormat(d3.format('d')));
 
-      var stack = d3.layout.stack();
+      var stack = d3.layout.stack()
+        .order('reverse');
 
       var g = svg.selectAll('g.layer')
         .data(stack(layers))
@@ -208,6 +216,7 @@
       }
 
       var paths = g.append('path')
+        .attr('class', 'area')
         .attr('fill', function(d) {
           return fill(d.key);
         })

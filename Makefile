@@ -5,28 +5,18 @@ datex = $(BIN)/datex --require parse=./lib/parse
 
 FILES = \
 	output/national/revenues-yearly.tsv \
-	output/national/royalties-yearly.tsv \
-	output/offshore/revenues-2013.tsv \
-	output/state/revenues-2013.tsv \
+	output/national/volumes-yearly.tsv \
+	output/national/gdp-yearly.tsv \
+	output/state/revenues-yearly.tsv \
+	output/state/volumes-yearly.tsv \
+	output/state/gdp-yearly.tsv \
 	output/county/revenues-yearly.tsv \
+	output/county/volumes-yearly.tsv \
+	output/offshore/revenues-yearly.tsv \
+	output/offshore/volumes-yearly.tsv \
 	county-revenues-by-state
 
 all: $(FILES) geo svg
-
-output/national/revenues-yearly.tsv: input/site/2003-2013-revenue-data-CY.csv
-	mkdir -p $(dir $@)
-	$(tito) --read csv $< --write tsv $@
-
-output/national/royalties-yearly.tsv: input/site/2003-2013-royalty-data.csv
-	mkdir -p $(dir $@)
-	$(tito) --read csv $< \
-		| $(datex) --set 'Royalty = parse.dollars(Royalty)' \
-			--require 'util=./lib/util' --set 'Commodity = util.titleCase(Commodity)' \
-		| tito --write tsv > $@
-
-output/national/gdp-yearly.tsv:
-	mkdir -p $(dir $@)
-	bin/get-bea-data.js --geo us -o $@
 
 output/national/revenues-yearly.tsv: output/state/revenues-yearly.tsv
 	mkdir -p $(dir $@)
@@ -35,31 +25,39 @@ output/national/revenues-yearly.tsv: output/state/revenues-yearly.tsv
 		--sum 'Revenue' \
 		-o $@ $<
 
+output/national/volumes-yearly.tsv: output/state/volumes-yearly.tsv
+	mkdir -p $(dir $@)
+	bin/sum.js \
+		--group 'Year,Commodity,Product' \
+		--sum 'Volume' \
+		-o $@ $<
+
+output/national/gdp-yearly.tsv:
+	mkdir -p $(dir $@)
+	bin/get-bea-data.js --geo us -o $@
+
 output/state/revenues-yearly.tsv: output/county/revenues-yearly.tsv
 	mkdir -p $(dir $@)
 	bin/sum.js \
 		--group 'Year,State,Commodity,Type' \
-		--sum Revenue \
+		--sum 'Revenue' \
 		-o $@ $<
 
-output/state/revenues-2013.tsv: input/site/CY13_Federal_Onshore_Revenues_by_State_12-04-2014.csv
+output/state/volumes-yearly.tsv: output/county/volumes-yearly.tsv
 	mkdir -p $(dir $@)
-	tito --read csv $< \
-		| bin/abbr-state.js \
-			--states input/geo/states.csv \
-			--field State \
-			--of tsv > $@
+	bin/sum.js \
+		--group 'Year,State,Commodity,Product' \
+		--sum 'Volume' \
+		-o $@ $<
+
+output/state/gdp-yearly.tsv:
+	mkdir -p $(dir $@)
+	bin/get-bea-data.js --geo state -o $@
 
 output/state/exports-by-industry.tsv: input/census/top-state-exports.tsv
 	mkdir -p $(dir $@)
 	bin/parse-census-commodities.js \
 		$< > $@
-
-output/offshore/revenues-2013.tsv: input/site/EITI_Offshore_Revenues_by_Planning_Area_CY2013_12-5-2014.csv
-	mkdir -p $(dir $@)
-	tito --read csv $< \
-		| $(datex) --set 'Revenue = parse.dollars(Revenue)' \
-		| tito --write tsv > $@
 
 output/offshore/revenues-yearly.tsv: input/onrr/offshore-revenues.tsv
 	mkdir -p $(dir $@)

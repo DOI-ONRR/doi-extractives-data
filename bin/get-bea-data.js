@@ -108,7 +108,7 @@ function mapGeo(row, enc, next) {
   return next(null, {
     Year:     row.TimePeriod,
     Region:   row.GeoName,
-    FIPS:     row.GeoFips,
+    FIPS:     row.GeoFips.substr(0, 2),
     GDP:      row.DataValue
   });
 }

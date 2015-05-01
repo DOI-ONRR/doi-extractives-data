@@ -16,7 +16,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2004	MI	Crawford	26039	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	26625.82
 2004	MI	Grand Trvse	26055	Gas (mcf)	Processed (Residue) Gas	Royalties	12930.37
 2004	MI	Houghton	26061	Hardrock		Rents	-773.63
-2004	MI	Kalkaska	26079	Oil & Gas		Other Roy Vals	-308
+2004	MI	Kalkaska	26079	Oil & Gas		Other Royalties	-308
 2004	MI	Kalkaska	26079	Oil & Gas		Rents	3057
 2004	MI	Kalkaska	26079	Gas (mcf)	Processed (Residue) Gas	Royalties	17236.93
 2004	MI	Kalkaska	26079	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	816.78
@@ -27,7 +27,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2004	MI	Lake	26085	Oil (bbl)	Oil	Royalties	628.87
 2004	MI	Manistee	26101	Oil & Gas		Rents	60
 2004	MI	Mason	26105	Oil & Gas		Rents	1497.5
-2004	MI	Montmorency	26119	Oil & Gas		Other Roy Vals	375
+2004	MI	Montmorency	26119	Oil & Gas		Other Royalties	375
 2004	MI	Montmorency	26119	Oil & Gas		Rents	86
 2004	MI	Montmorency	26119	Gas (mcf)	Processed (Residue) Gas	Royalties	63768.63
 2004	MI	Montmorency	26119	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	519191.77
@@ -73,7 +73,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2005	MI	Lake	26085	Oil (bbl)	Oil	Royalties	3421.72
 2005	MI	Manistee	26101	Oil & Gas		Rents	60
 2005	MI	Mason	26105	Oil & Gas		Rents	1647.5
-2005	MI	Montmorency	26119	Oil & Gas		Other Roy Vals	4050
+2005	MI	Montmorency	26119	Oil & Gas		Other Royalties	4050
 2005	MI	Montmorency	26119	Oil & Gas		Rents	86
 2005	MI	Montmorency	26119	Gas (mcf)	Processed (Residue) Gas	Royalties	82123.78
 2005	MI	Montmorency	26119	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	604188.91
@@ -98,7 +98,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2006	MI	Alcona	26001	Gas (mcf)	Processed (Residue) Gas	Royalties	15322.39
 2006	MI	Allegan	26005	Oil (bbl)	Oil	Royalties	-105.51
 2006	MI	Clare	26035	Oil & Gas		Other Revenues	654.46
-2006	MI	Clare	26035	Oil & Gas		Other Roy Vals	3950
+2006	MI	Clare	26035	Oil & Gas		Other Royalties	3950
 2006	MI	Clare	26035	Oil & Gas		Rents	80
 2006	MI	Clare	26035	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	82032.04
 2006	MI	Clare	26035	Oil (bbl)	Oil	Royalties	12152.75
@@ -116,7 +116,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2006	MI	Lake	26085	Oil (bbl)	Oil	Royalties	2542.24
 2006	MI	Manistee	26101	Oil & Gas		Rents	60
 2006	MI	Mason	26105	Oil & Gas		Rents	1647.5
-2006	MI	Montmorency	26119	Oil & Gas		Other Roy Vals	-5710
+2006	MI	Montmorency	26119	Oil & Gas		Other Royalties	-5710
 2006	MI	Montmorency	26119	Gas (mcf)	Processed (Residue) Gas	Royalties	73492.44
 2006	MI	Montmorency	26119	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	597606.13
 2006	MI	Newaygo	26123	Oil & Gas		Rents	8785.5
@@ -143,7 +143,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2007	MI	Allegan	26005	Oil (bbl)	Oil	Royalties	7843.49
 2007	MI	Antrim	26009	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	19863.06
 2007	MI	Clare	26035	Oil & Gas		Other Revenues	654.46
-2007	MI	Clare	26035	Oil & Gas		Other Roy Vals	-600
+2007	MI	Clare	26035	Oil & Gas		Other Royalties	-600
 2007	MI	Clare	26035	Oil & Gas		Rents	80
 2007	MI	Clare	26035	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	54220.47
 2007	MI	Clare	26035	Oil (bbl)	Oil	Royalties	12567.96
@@ -163,19 +163,19 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2007	MI	Manistee	26101	Oil & Gas		Rents	60
 2007	MI	Mason	26105	Oil & Gas		Bonus	5728
 2007	MI	Mason	26105	Oil & Gas		Rents	2181.5
-2007	MI	Montmorency	26119	Oil & Gas		Other Roy Vals	4199
+2007	MI	Montmorency	26119	Oil & Gas		Other Royalties	4199
 2007	MI	Montmorency	26119	Gas (mcf)	Processed (Residue) Gas	Royalties	58579.97
 2007	MI	Montmorency	26119	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	523170.4
 2007	MI	Newaygo	26123	Oil & Gas		Rents	8714
 2007	MI	Oceana	26127	Oil & Gas		Bonus	8016
 2007	MI	Oceana	26127	Oil & Gas		Rents	5783.5
-2007	MI	Ogemaw	26129	Oil & Gas		Other Roy Vals	1055.05
+2007	MI	Ogemaw	26129	Oil & Gas		Other Royalties	1055.05
 2007	MI	Ogemaw	26129	Oil & Gas		Rents	200
 2007	MI	Ogemaw	26129	Gas (mcf)	Processed (Residue) Gas	Royalties	43182.23
 2007	MI	Ogemaw	26129	NGL (gal)	Gas Plant Products	Royalties	5751.67
 2007	MI	Ogemaw	26129	Oil (bbl)	Oil	Royalties	2857.55
 2007	MI	Osceola	26133	Oil & Gas		Rents	80
-2007	MI	Oscoda	26135	Oil & Gas		Other Roy Vals	21151.95
+2007	MI	Oscoda	26135	Oil & Gas		Other Royalties	21151.95
 2007	MI	Oscoda	26135	Oil & Gas		Rents	390
 2007	MI	Oscoda	26135	Gas (mcf)	Processed (Residue) Gas	Royalties	989584.22
 2007	MI	Oscoda	26135	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	555912.64
@@ -193,18 +193,18 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2008	MI	Calhoun	26025	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	188.4
 2008	MI	Calhoun	26025	Oil (bbl)	Oil	Royalties	59233.23
 2008	MI	Clare	26035	Oil & Gas		Other Revenues	872.46
-2008	MI	Clare	26035	Oil & Gas		Other Roy Vals	3425
+2008	MI	Clare	26035	Oil & Gas		Other Royalties	3425
 2008	MI	Clare	26035	Oil & Gas		Rents	80
 2008	MI	Clare	26035	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	73061.67
 2008	MI	Clare	26035	Oil (bbl)	Oil	Royalties	19962.97
-2008	MI	Crawford	26039	Oil & Gas		Other Roy Vals	3000
+2008	MI	Crawford	26039	Oil & Gas		Other Royalties	3000
 2008	MI	Crawford	26039	Gas (mcf)	Processed (Residue) Gas	Royalties	37318.84
 2008	MI	Crawford	26039	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	57401.39
-2008	MI	Grand Trvse	26055	Oil & Gas		Other Roy Vals	1050
+2008	MI	Grand Trvse	26055	Oil & Gas		Other Royalties	1050
 2008	MI	Grand Trvse	26055	Gas (mcf)	Processed (Residue) Gas	Royalties	0.3
 2008	MI	Grand Trvse	26055	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	4278.96
 2008	MI	Grand Trvse	26055	NGL (gal)	Gas Plant Products	Royalties	4028.83
-2008	MI	Kalkaska	26079	Oil & Gas		Other Roy Vals	12300
+2008	MI	Kalkaska	26079	Oil & Gas		Other Royalties	12300
 2008	MI	Kalkaska	26079	Oil & Gas		Rents	2614
 2008	MI	Kalkaska	26079	Gas (mcf)	Processed (Residue) Gas	Royalties	21086.1
 2008	MI	Kalkaska	26079	NGL (gal)	Gas Plant Products	Royalties	21268.76
@@ -219,7 +219,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2008	MI	Mason	26105	Oil & Gas		Bonus	55768
 2008	MI	Mason	26105	Oil & Gas		Rents	9794
 2008	MI	Montmorency	26119	Oil & Gas		Other Revenues	216.53
-2008	MI	Montmorency	26119	Oil & Gas		Other Roy Vals	8715
+2008	MI	Montmorency	26119	Oil & Gas		Other Royalties	8715
 2008	MI	Montmorency	26119	Gas (mcf)	Processed (Residue) Gas	Royalties	73083.56
 2008	MI	Montmorency	26119	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	653561.79
 2008	MI	Muskegon	26121	Oil & Gas		Bonus	14218
@@ -228,14 +228,14 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2008	MI	Newaygo	26123	Oil & Gas		Rents	10456.5
 2008	MI	Oceana	26127	Oil & Gas		Bonus	132632
 2008	MI	Oceana	26127	Oil & Gas		Rents	18689.5
-2008	MI	Ogemaw	26129	Oil & Gas		Other Roy Vals	1055.05
+2008	MI	Ogemaw	26129	Oil & Gas		Other Royalties	1055.05
 2008	MI	Ogemaw	26129	Oil & Gas		Rents	200
 2008	MI	Ogemaw	26129	Gas (mcf)	Processed (Residue) Gas	Royalties	52232.92
 2008	MI	Ogemaw	26129	NGL (gal)	Gas Plant Products	Royalties	6451.88
 2008	MI	Ogemaw	26129	Oil (bbl)	Condensate	Royalties	3090.19
 2008	MI	Ogemaw	26129	Oil (bbl)	Oil	Royalties	326.49
 2008	MI	Osceola	26133	Oil & Gas		Rents	80
-2008	MI	Oscoda	26135	Oil & Gas		Other Roy Vals	76944.95
+2008	MI	Oscoda	26135	Oil & Gas		Other Royalties	76944.95
 2008	MI	Oscoda	26135	Oil & Gas		Rents	7615
 2008	MI	Oscoda	26135	Gas (mcf)	Processed (Residue) Gas	Royalties	1462893.32
 2008	MI	Oscoda	26135	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	401476.43
@@ -254,20 +254,20 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2009	MI	Calhoun	26025	Oil (bbl)	Condensate	Royalties	1373.28
 2009	MI	Calhoun	26025	Oil (bbl)	Oil	Royalties	29740.76
 2009	MI	Clare	26035	Oil & Gas		Other Revenues	654.46
-2009	MI	Clare	26035	Oil & Gas		Other Roy Vals	-2250
+2009	MI	Clare	26035	Oil & Gas		Other Royalties	-2250
 2009	MI	Clare	26035	Oil & Gas		Rents	80
 2009	MI	Clare	26035	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	32256.99
 2009	MI	Clare	26035	Oil (bbl)	Condensate	Royalties	127.59
 2009	MI	Clare	26035	Oil (bbl)	Oil	Royalties	9111.83
-2009	MI	Crawford	26039	Oil & Gas		Other Roy Vals	-3500
+2009	MI	Crawford	26039	Oil & Gas		Other Royalties	-3500
 2009	MI	Crawford	26039	Oil & Gas		Rents	1741
 2009	MI	Crawford	26039	Gas (mcf)	Processed (Residue) Gas	Royalties	18025.56
 2009	MI	Crawford	26039	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	27106.97
-2009	MI	Grand Trvse	26055	Oil & Gas		Other Roy Vals	-850
+2009	MI	Grand Trvse	26055	Oil & Gas		Other Royalties	-850
 2009	MI	Grand Trvse	26055	Gas (mcf)	Processed (Residue) Gas	Royalties	225.18
 2009	MI	Grand Trvse	26055	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	1642.26
 2009	MI	Grand Trvse	26055	NGL (gal)	Gas Plant Products	Royalties	1342.26
-2009	MI	Kalkaska	26079	Oil & Gas		Other Roy Vals	-3525
+2009	MI	Kalkaska	26079	Oil & Gas		Other Royalties	-3525
 2009	MI	Kalkaska	26079	Oil & Gas		Rents	4104
 2009	MI	Kalkaska	26079	Gas (mcf)	Processed (Residue) Gas	Royalties	8290.04
 2009	MI	Kalkaska	26079	NGL (gal)	Gas Plant Products	Royalties	7701
@@ -279,7 +279,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2009	MI	Mason	26105	Oil & Gas		Bonus	7768
 2009	MI	Mason	26105	Oil & Gas		Rents	19035.5
 2009	MI	Missaukee	26113	Oil & Gas		Rents	320
-2009	MI	Montmorency	26119	Oil & Gas		Other Roy Vals	-9215
+2009	MI	Montmorency	26119	Oil & Gas		Other Royalties	-9215
 2009	MI	Montmorency	26119	Gas (mcf)	Processed (Residue) Gas	Royalties	31788.03
 2009	MI	Montmorency	26119	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	305272.52
 2009	MI	Muskegon	26121	Oil & Gas		Rents	21327
@@ -287,13 +287,13 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2009	MI	Newaygo	26123	Oil & Gas		Rents	52840.5
 2009	MI	Oceana	26127	Oil & Gas		Bonus	226812
 2009	MI	Oceana	26127	Oil & Gas		Rents	27527
-2009	MI	Ogemaw	26129	Oil & Gas		Other Roy Vals	-2637.64
+2009	MI	Ogemaw	26129	Oil & Gas		Other Royalties	-2637.64
 2009	MI	Ogemaw	26129	Oil & Gas		Rents	200
 2009	MI	Ogemaw	26129	Gas (mcf)	Processed (Residue) Gas	Royalties	20765.77
 2009	MI	Ogemaw	26129	NGL (gal)	Gas Plant Products	Royalties	2342.69
 2009	MI	Ogemaw	26129	Oil (bbl)	Condensate	Royalties	1479.39
 2009	MI	Osceola	26133	Oil & Gas		Rents	80
-2009	MI	Oscoda	26135	Oil & Gas		Other Roy Vals	-76659.37
+2009	MI	Oscoda	26135	Oil & Gas		Other Royalties	-76659.37
 2009	MI	Oscoda	26135	Oil & Gas		Rents	3748
 2009	MI	Oscoda	26135	Gas (mcf)	Processed (Residue) Gas	Royalties	732955.28
 2009	MI	Oscoda	26135	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	145228.86
@@ -311,7 +311,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2010	MI	Calhoun	26025	Oil (bbl)	Condensate	Royalties	1802.84
 2010	MI	Calhoun	26025	Oil (bbl)	Oil	Royalties	32480.05
 2010	MI	Clare	26035	Oil & Gas		Other Revenues	654.46
-2010	MI	Clare	26035	Oil & Gas		Other Roy Vals	-1750
+2010	MI	Clare	26035	Oil & Gas		Other Royalties	-1750
 2010	MI	Clare	26035	Oil & Gas		Rents	80
 2010	MI	Clare	26035	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	31166.4
 2010	MI	Clare	26035	Oil (bbl)	Oil	Royalties	17172.52
@@ -330,7 +330,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2010	MI	Manistee	26101	Oil & Gas		Rents	9496.5
 2010	MI	Mason	26105	Oil & Gas		Rents	7800
 2010	MI	Missaukee	26113	Oil & Gas		Rents	80
-2010	MI	Montmorency	26119	Oil & Gas		Other Roy Vals	-625
+2010	MI	Montmorency	26119	Oil & Gas		Other Royalties	-625
 2010	MI	Montmorency	26119	Gas (mcf)	Processed (Residue) Gas	Royalties	35119.32
 2010	MI	Montmorency	26119	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	280668.12
 2010	MI	Muskegon	26121	Oil & Gas		Rents	10663.5
@@ -341,7 +341,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2010	MI	Ogemaw	26129	NGL (gal)	Gas Plant Products	Royalties	3716.71
 2010	MI	Ogemaw	26129	Oil (bbl)	Condensate	Royalties	1659
 2010	MI	Osceola	26133	Oil & Gas		Rents	80
-2010	MI	Oscoda	26135	Oil & Gas		Other Roy Vals	-2680
+2010	MI	Oscoda	26135	Oil & Gas		Other Royalties	-2680
 2010	MI	Oscoda	26135	Oil & Gas		Rents	-1365.86
 2010	MI	Oscoda	26135	Gas (mcf)	Processed (Residue) Gas	Royalties	1568278.75
 2010	MI	Oscoda	26135	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	-853180.47
@@ -362,15 +362,15 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2011	MI	Calhoun	26025	Oil (bbl)	Oil	Royalties	49035.83
 2011	MI	Calhoun	26025	Oil (bbl)	Other Liquid Hydrocarbons	Royalties	2137.54
 2011	MI	Clare	26035	Oil & Gas		Other Revenues	654.46
-2011	MI	Clare	26035	Oil & Gas		Other Roy Vals	-750
+2011	MI	Clare	26035	Oil & Gas		Other Royalties	-750
 2011	MI	Clare	26035	Oil & Gas		Rents	80
 2011	MI	Clare	26035	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	23501.71
 2011	MI	Clare	26035	Oil (bbl)	Oil	Royalties	11177.03
-2011	MI	Crawford	26039	Oil & Gas		Other Roy Vals	423.54
+2011	MI	Crawford	26039	Oil & Gas		Other Royalties	423.54
 2011	MI	Crawford	26039	Oil & Gas		Rents	2133.33
 2011	MI	Crawford	26039	Gas (mcf)	Processed (Residue) Gas	Royalties	740.35
 2011	MI	Crawford	26039	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	4220.61
-2011	MI	Grand Trvse	26055	Oil & Gas		Other Roy Vals	123.57
+2011	MI	Grand Trvse	26055	Oil & Gas		Other Royalties	123.57
 2011	MI	Grand Trvse	26055	Gas (mcf)	Processed (Residue) Gas	Royalties	1009.54
 2011	MI	Grand Trvse	26055	NGL (gal)	Gas Plant Products	Royalties	3215.82
 2011	MI	Houghton	26061	Hardrock		Rents	442.62
@@ -379,7 +379,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2011	MI	Jackson	26075	Oil (bbl)	Condensate	Royalties	91.21
 2011	MI	Jackson	26075	Oil (bbl)	Oil	Royalties	68871.95
 2011	MI	Jackson	26075	Oil (bbl)	Other Liquid Hydrocarbons	Royalties	593.66
-2011	MI	Kalkaska	26079	Oil & Gas		Other Roy Vals	772.55
+2011	MI	Kalkaska	26079	Oil & Gas		Other Royalties	772.55
 2011	MI	Kalkaska	26079	Oil & Gas		Rents	2334
 2011	MI	Kalkaska	26079	Gas (mcf)	Processed (Residue) Gas	Royalties	6176.73
 2011	MI	Kalkaska	26079	NGL (gal)	Gas Plant Products	Royalties	5931.98
@@ -391,27 +391,27 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2011	MI	Mason	26105	Oil & Gas		Bonus	91520
 2011	MI	Mason	26105	Oil & Gas		Rents	11320
 2011	MI	Missaukee	26113	Oil & Gas		Rents	80
-2011	MI	Montmorency	26119	Oil & Gas		Other Roy Vals	-992.03
+2011	MI	Montmorency	26119	Oil & Gas		Other Royalties	-992.03
 2011	MI	Montmorency	26119	Gas (mcf)	Processed (Residue) Gas	Royalties	77162.6
 2011	MI	Montmorency	26119	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	127779.73
 2011	MI	Newaygo	26123	Oil & Gas		Rents	31057
 2011	MI	Oceana	26127	Oil & Gas		Bonus	11070
 2011	MI	Oceana	26127	Oil & Gas		Rents	19162
-2011	MI	Ogemaw	26129	Oil & Gas		Other Roy Vals	1540.01
+2011	MI	Ogemaw	26129	Oil & Gas		Other Royalties	1540.01
 2011	MI	Ogemaw	26129	Oil & Gas		Rents	200
 2011	MI	Ogemaw	26129	Gas (mcf)	Processed (Residue) Gas	Royalties	17025.01
 2011	MI	Ogemaw	26129	NGL (gal)	Gas Plant Products	Royalties	-112.76
 2011	MI	Ogemaw	26129	Oil (bbl)	Condensate	Royalties	1751.41
 2011	MI	Osceola	26133	Oil & Gas		Rents	80
 2011	MI	Oscoda	26135	Oil & Gas		Other Revenues	1754
-2011	MI	Oscoda	26135	Oil & Gas		Other Roy Vals	23303.89
+2011	MI	Oscoda	26135	Oil & Gas		Other Royalties	23303.89
 2011	MI	Oscoda	26135	Gas (mcf)	Processed (Residue) Gas	Royalties	533382.33
 2011	MI	Oscoda	26135	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	12355.65
 2011	MI	Oscoda	26135	NGL (gal)	Gas Plant Products	Royalties	67739.5
 2011	MI	Oscoda	26135	Oil (bbl)	Condensate	Royalties	66115.39
 2011	MI	Oscoda	26135	Oil (bbl)	Oil	Royalties	23600.56
 2011	MI	Otsego	26137	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	4312.16
-2011	MI	Roscommon	26143	Oil & Gas		Other Roy Vals	430.17
+2011	MI	Roscommon	26143	Oil & Gas		Other Royalties	430.17
 2011	MI	Roscommon	26143	Gas (mcf)	Processed (Residue) Gas	Royalties	9102.99
 2011	MI	Roscommon	26143	Oil (bbl)	Oil	Royalties	45560.51
 2012	MI	Alcona	26001	Oil & Gas		Rents	3886.5
@@ -423,7 +423,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2012	MI	Calhoun	26025	Oil (bbl)	Oil	Royalties	47769.06
 2012	MI	Calhoun	26025	Oil (bbl)	Other Liquid Hydrocarbons	Royalties	2468.93
 2012	MI	Clare	26035	Oil & Gas		Other Revenues	654.46
-2012	MI	Clare	26035	Oil & Gas		Other Roy Vals	-996.33
+2012	MI	Clare	26035	Oil & Gas		Other Royalties	-996.33
 2012	MI	Clare	26035	Oil & Gas		Rents	80
 2012	MI	Clare	26035	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	9714.81
 2012	MI	Clare	26035	Oil (bbl)	Oil	Royalties	22100.71
@@ -448,7 +448,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2012	MI	Manistee	26101	Oil & Gas		Rents	9804
 2012	MI	Mason	26105	Oil & Gas		Rents	17838
 2012	MI	Missaukee	26113	Oil & Gas		Rents	80
-2012	MI	Montmorency	26119	Oil & Gas		Other Roy Vals	-5
+2012	MI	Montmorency	26119	Oil & Gas		Other Royalties	-5
 2012	MI	Montmorency	26119	Gas (mcf)	Processed (Residue) Gas	Royalties	46799.42
 2012	MI	Montmorency	26119	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	205495.64
 2012	MI	Montmorency	26119	NGL (gal)	Gas Plant Products	Royalties	6233.88
@@ -460,7 +460,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2012	MI	Ogemaw	26129	Oil (bbl)	Condensate	Royalties	2322.1
 2012	MI	Osceola	26133	Oil & Gas		Rents	80
 2012	MI	Oscoda	26135	Oil & Gas		Other Revenues	-372.57
-2012	MI	Oscoda	26135	NGL (gal)	Gas Plant Products	Other Roy Vals	1985.3
+2012	MI	Oscoda	26135	NGL (gal)	Gas Plant Products	Other Royalties	1985.3
 2012	MI	Oscoda	26135	Gas (mcf)	Processed (Residue) Gas	Royalties	620096.88
 2012	MI	Oscoda	26135	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	15343.37
 2012	MI	Oscoda	26135	NGL (gal)	Gas Plant Products	Royalties	-119255.1
@@ -503,7 +503,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2013	MI	Manistee	26101	Oil & Gas		Rents	13185.5
 2013	MI	Mason	26105	Oil & Gas		Rents	14693.5
 2013	MI	Missaukee	26113	Oil & Gas		Rents	160
-2013	MI	Montmorency	26119	Oil & Gas		Other Roy Vals	1585
+2013	MI	Montmorency	26119	Oil & Gas		Other Royalties	1585
 2013	MI	Montmorency	26119	Gas (mcf)	Processed (Residue) Gas	Royalties	60276.9
 2013	MI	Montmorency	26119	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	134259.52
 2013	MI	Montmorency	26119	NGL (gal)	Gas Plant Products	Royalties	2069.98
@@ -518,7 +518,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2013	MI	Oscoda	26135	NGL (gal)	Gas Plant Products	Royalties	49325.48
 2013	MI	Oscoda	26135	Oil (bbl)	Condensate	Royalties	63627.48
 2013	MI	Oscoda	26135	Oil (bbl)	Oil	Royalties	28679.26
-2013	MI	Otsego	26137	Oil & Gas		Other Roy Vals	370
+2013	MI	Otsego	26137	Oil & Gas		Other Royalties	370
 2013	MI	Otsego	26137	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	6087.39
 2013	MI	Roscommon	26143	Oil & Gas		Bonus	11200
 2013	MI	Roscommon	26143	Oil & Gas		Rents	840

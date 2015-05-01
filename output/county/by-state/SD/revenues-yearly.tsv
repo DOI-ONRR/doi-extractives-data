@@ -13,13 +13,13 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2005	SD	Butte	46019	Oil & Gas		Bonus	5266
 2005	SD	Butte	46019	Oil & Gas		Rents	29262
 2005	SD	Custer	46033	Oil & Gas		Rents	2002
-2005	SD	Douglas	46043	Oil & Gas		Other Roy Vals	-75
+2005	SD	Douglas	46043	Oil & Gas		Other Royalties	-75
 2005	SD	Douglas	46043	Oil (bbl)	Oil	Royalties	2775.78
-2005	SD	Fall River	46047	Oil & Gas		Other Roy Vals	7577.76
+2005	SD	Fall River	46047	Oil & Gas		Other Royalties	7577.76
 2005	SD	Fall River	46047	Oil & Gas		Rents	24051.5
 2005	SD	Fall River	46047	Oil (bbl)	Oil	Royalties	196150.5
 2005	SD	Harding	46063	Oil & Gas		Bonus	80
-2005	SD	Harding	46063	Oil & Gas		Other Roy Vals	-21925
+2005	SD	Harding	46063	Oil & Gas		Other Royalties	-21925
 2005	SD	Harding	46063	Oil & Gas		Rents	54883
 2005	SD	Harding	46063	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	144649.92
 2005	SD	Harding	46063	Oil (bbl)	Oil	Royalties	936603.75
@@ -32,7 +32,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2006	SD	Fall River	46047	Oil & Gas		Rents	6899
 2006	SD	Fall River	46047	Oil (bbl)	Oil	Royalties	125641.94
 2006	SD	Harding	46063	Oil & Gas		Bonus	23268
-2006	SD	Harding	46063	Oil & Gas		Other Roy Vals	-900
+2006	SD	Harding	46063	Oil & Gas		Other Royalties	-900
 2006	SD	Harding	46063	Oil & Gas		Rents	72697.5
 2006	SD	Harding	46063	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	130031.12
 2006	SD	Harding	46063	Oil (bbl)	Oil	Royalties	1179822.48
@@ -47,7 +47,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2007	SD	Fall River	46047	Oil (bbl)	Oil	Royalties	91610.05
 2007	SD	Harding	46063	Oil & Gas		Bonus	470929.5
 2007	SD	Harding	46063	Oil & Gas		Other Revenues	48.3
-2007	SD	Harding	46063	Oil & Gas		Other Roy Vals	-1582
+2007	SD	Harding	46063	Oil & Gas		Other Royalties	-1582
 2007	SD	Harding	46063	Oil & Gas		Rents	100685.5
 2007	SD	Harding	46063	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	84898.43
 2007	SD	Harding	46063	Oil (bbl)	Oil	Royalties	1279739.63
@@ -59,7 +59,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2008	SD	Fall River	46047	Oil & Gas		Rents	5317
 2008	SD	Fall River	46047	Oil (bbl)	Oil	Royalties	187681.68
 2008	SD	Harding	46063	Oil & Gas		Other Revenues	517.41
-2008	SD	Harding	46063	Oil & Gas		Other Roy Vals	214
+2008	SD	Harding	46063	Oil & Gas		Other Royalties	214
 2008	SD	Harding	46063	Oil & Gas		Rents	110465.5
 2008	SD	Harding	46063	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	117883.15
 2008	SD	Harding	46063	Oil (bbl)	Oil	Royalties	2117111.2
@@ -71,7 +71,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2009	SD	Fall River	46047	Oil & Gas		Rents	5317
 2009	SD	Fall River	46047	Oil (bbl)	Oil	Royalties	98614.43
 2009	SD	Harding	46063	Oil & Gas		Bonus	127022
-2009	SD	Harding	46063	Oil & Gas		Other Roy Vals	-775.34
+2009	SD	Harding	46063	Oil & Gas		Other Royalties	-775.34
 2009	SD	Harding	46063	Oil & Gas		Rents	145753.5
 2009	SD	Harding	46063	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	234095.34
 2009	SD	Harding	46063	Oil (bbl)	Oil	Royalties	970806.5
@@ -84,7 +84,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2010	SD	Fall River	46047	Oil & Gas		Rents	4477
 2010	SD	Fall River	46047	Oil (bbl)	Oil	Royalties	145447.42
 2010	SD	Harding	46063	Oil & Gas		Other Revenues	573.21
-2010	SD	Harding	46063	Oil & Gas		Other Roy Vals	-412
+2010	SD	Harding	46063	Oil & Gas		Other Royalties	-412
 2010	SD	Harding	46063	Oil & Gas		Rents	78542
 2010	SD	Harding	46063	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	140071.69
 2010	SD	Harding	46063	Oil (bbl)	Oil	Royalties	1127517.84
@@ -97,7 +97,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2011	SD	Fall River	46047	Oil & Gas		Rents	6500.5
 2011	SD	Fall River	46047	Oil (bbl)	Oil	Royalties	172681.06
 2011	SD	Harding	46063	Oil & Gas		Bonus	261684
-2011	SD	Harding	46063	Oil & Gas		Other Roy Vals	133
+2011	SD	Harding	46063	Oil & Gas		Other Royalties	133
 2011	SD	Harding	46063	Oil & Gas		Rents	91858.5
 2011	SD	Harding	46063	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	91269.7
 2011	SD	Harding	46063	Oil (bbl)	Oil	Royalties	1740047.31
@@ -110,7 +110,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2012	SD	Fall River	46047	Oil (bbl)	Oil	Royalties	189144.73
 2012	SD	Harding	46063	Oil & Gas		Bonus	463242.5
 2012	SD	Harding	46063	Oil & Gas		Other Revenues	3195.81
-2012	SD	Harding	46063	Oil & Gas		Other Roy Vals	-327
+2012	SD	Harding	46063	Oil & Gas		Other Royalties	-327
 2012	SD	Harding	46063	Oil & Gas		Rents	89290
 2012	SD	Harding	46063	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	44862.95
 2012	SD	Harding	46063	Oil (bbl)	Oil	Royalties	1852594.74

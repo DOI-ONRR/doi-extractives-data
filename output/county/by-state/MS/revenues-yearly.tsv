@@ -25,12 +25,12 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2004	MS	Jasper	28061	Oil & Gas		Bonus	900
 2004	MS	Jasper	28061	Oil & Gas		Rents	54
 2004	MS	Jasper	28061	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	1584.52
-2004	MS	Jeffer Davis	28065	Oil & Gas		Other Roy Vals	400
+2004	MS	Jeffer Davis	28065	Oil & Gas		Other Royalties	400
 2004	MS	Jeffer Davis	28065	Oil & Gas		Rents	135
 2004	MS	Jeffer Davis	28065	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	2668.77
 2004	MS	Jeffer Davis	28065	Oil (bbl)	Condensate	Royalties	41.38
 2004	MS	Jefferson	28063	Oil & Gas		Rents	2179.28
-2004	MS	Jones	28067	Oil & Gas		Other Roy Vals	3000
+2004	MS	Jones	28067	Oil & Gas		Other Royalties	3000
 2004	MS	Jones	28067	Oil & Gas		Rents	7400.5
 2004	MS	Jones	28067	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	22785.69
 2004	MS	Jones	28067	Oil (bbl)	Condensate	Royalties	22307
@@ -108,7 +108,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2005	MS	Jeffer Davis	28065	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	2658.71
 2005	MS	Jeffer Davis	28065	Oil (bbl)	Condensate	Royalties	23.86
 2005	MS	Jefferson	28063	Oil & Gas		Rents	2179.28
-2005	MS	Jones	28067	Oil & Gas		Other Roy Vals	-3000
+2005	MS	Jones	28067	Oil & Gas		Other Royalties	-3000
 2005	MS	Jones	28067	Oil & Gas		Rents	6678.5
 2005	MS	Jones	28067	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	25797.29
 2005	MS	Jones	28067	Oil (bbl)	Condensate	Royalties	20838.05
@@ -170,7 +170,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2006	MS	Forrest	28035	Oil (bbl)	Condensate	Royalties	31005.15
 2006	MS	Forrest	28035	Oil (bbl)	Oil	Royalties	419.1
 2006	MS	Franklin	28037	Oil & Gas		Bonus	1500
-2006	MS	Franklin	28037	Oil & Gas		Other Roy Vals	-8556.79
+2006	MS	Franklin	28037	Oil & Gas		Other Royalties	-8556.79
 2006	MS	Franklin	28037	Oil & Gas		Rents	52560.72
 2006	MS	Franklin	28037	Oil (bbl)	Oil	Royalties	631570.37
 2006	MS	George	28039	Oil & Gas		Rents	2400
@@ -190,7 +190,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2006	MS	Jeffer Davis	28065	Oil (bbl)	Oil	Royalties	1419.68
 2006	MS	Jefferson	28063	Oil & Gas		Bonus	5916
 2006	MS	Jefferson	28063	Oil & Gas		Rents	3372.78
-2006	MS	Jones	28067	Oil & Gas		Other Roy Vals	-578
+2006	MS	Jones	28067	Oil & Gas		Other Royalties	-578
 2006	MS	Jones	28067	Oil & Gas		Rents	1760.5
 2006	MS	Jones	28067	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	10131.93
 2006	MS	Jones	28067	Oil (bbl)	Condensate	Royalties	9482.53
@@ -270,7 +270,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2007	MS	Jackson	28059	Oil & Gas		Rents	14740.5
 2007	MS	Jasper	28061	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	15215.96
 2007	MS	Jasper	28061	Oil (bbl)	Condensate	Royalties	119.11
-2007	MS	Jeffer Davis	28065	Oil & Gas		Other Roy Vals	-900
+2007	MS	Jeffer Davis	28065	Oil & Gas		Other Royalties	-900
 2007	MS	Jeffer Davis	28065	Oil & Gas		Rents	-405
 2007	MS	Jeffer Davis	28065	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	6929.97
 2007	MS	Jeffer Davis	28065	Oil (bbl)	Oil	Royalties	625.22
@@ -295,7 +295,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2007	MS	Pearl River	28109	Oil (bbl)	Oil	Royalties	49608.66
 2007	MS	Perry	28111	Oil & Gas		Bonus	35994
 2007	MS	Perry	28111	Oil & Gas		Other Revenues	122
-2007	MS	Perry	28111	Oil & Gas		Other Roy Vals	6238
+2007	MS	Perry	28111	Oil & Gas		Other Royalties	6238
 2007	MS	Perry	28111	Oil & Gas		Rents	33026
 2007	MS	Perry	28111	Oil (bbl)	Oil	Royalties	753015.22
 2007	MS	Scott	28123	Oil & Gas		Rents	32077
@@ -334,7 +334,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2008	MS	Forrest	28035	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	103911.38
 2008	MS	Forrest	28035	Oil (bbl)	Condensate	Royalties	1794.88
 2008	MS	Forrest	28035	Oil (bbl)	Oil	Royalties	1321.61
-2008	MS	Franklin	28037	Oil & Gas		Other Roy Vals	10312.48
+2008	MS	Franklin	28037	Oil & Gas		Other Royalties	10312.48
 2008	MS	Franklin	28037	Oil & Gas		Rents	27235.5
 2008	MS	Franklin	28037	Oil (bbl)	Oil	Royalties	1123560.28
 2008	MS	George	28039	Oil & Gas		Rents	8269.5
@@ -345,7 +345,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2008	MS	Jasper	28061	Oil & Gas		Rents	-18
 2008	MS	Jasper	28061	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	37222.62
 2008	MS	Jasper	28061	Oil (bbl)	Condensate	Royalties	702.28
-2008	MS	Jeffer Davis	28065	Oil & Gas		Other Roy Vals	453.11
+2008	MS	Jeffer Davis	28065	Oil & Gas		Other Royalties	453.11
 2008	MS	Jeffer Davis	28065	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	4884.79
 2008	MS	Jeffer Davis	28065	Oil (bbl)	Condensate	Royalties	-3.32
 2008	MS	Jeffer Davis	28065	Oil (bbl)	Oil	Royalties	1789.09
@@ -357,7 +357,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2008	MS	Lamar	28073	Oil & Gas		Rents	-10845
 2008	MS	Lamar	28073	Oil (bbl)	Oil	Royalties	15673.76
 2008	MS	Lawrence	28077	Oil & Gas		Bonus	152000
-2008	MS	Lawrence	28077	Oil & Gas		Other Roy Vals	100
+2008	MS	Lawrence	28077	Oil & Gas		Other Royalties	100
 2008	MS	Lawrence	28077	Oil & Gas		Rents	120
 2008	MS	Lawrence	28077	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	18.62
 2008	MS	Lawrence	28077	Oil (bbl)	Condensate	Royalties	12.6
@@ -369,14 +369,14 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2008	MS	Monroe	28095	Oil & Gas		Rents	442
 2008	MS	Monroe	28095	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	1830.81
 2008	MS	Oktibbeha	28105	Oil & Gas		Rents	278.5
-2008	MS	Pearl River	28109	Oil & Gas		Other Roy Vals	397.45
+2008	MS	Pearl River	28109	Oil & Gas		Other Royalties	397.45
 2008	MS	Pearl River	28109	Oil & Gas		Rents	1278
 2008	MS	Pearl River	28109	Oil (bbl)	Oil	Royalties	42164.5
 2008	MS	Perry	28111	Oil & Gas		Bonus	3287
 2008	MS	Perry	28111	Oil & Gas		Rents	32993.5
 2008	MS	Perry	28111	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	-0.91
 2008	MS	Perry	28111	Oil (bbl)	Oil	Royalties	695622.81
-2008	MS	Scott	28123	Oil & Gas		Other Roy Vals	33273.56
+2008	MS	Scott	28123	Oil & Gas		Other Royalties	33273.56
 2008	MS	Scott	28123	Oil & Gas		Rents	29815
 2008	MS	Scott	28123	Oil (bbl)	Oil	Royalties	99864.02
 2008	MS	Simpson	28127	Oil & Gas		Rents	780
@@ -387,7 +387,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2008	MS	Stone	28131	Oil & Gas		Rents	74435.5
 2008	MS	Stone	28131	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	79701.41
 2008	MS	Tate	28137	Oil & Gas		Rents	120
-2008	MS	Wayne	28153	Oil & Gas		Other Roy Vals	7387.4
+2008	MS	Wayne	28153	Oil & Gas		Other Royalties	7387.4
 2008	MS	Wayne	28153	Oil & Gas		Rents	56033
 2008	MS	Wayne	28153	Oil (bbl)	Oil	Royalties	549996.54
 2008	MS	Wilkinson	28157	Oil & Gas		Bonus	10400
@@ -420,7 +420,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2009	MS	Jackson	28059	Oil & Gas		Rents	12046.5
 2009	MS	Jasper	28061	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	8509.04
 2009	MS	Jasper	28061	Oil (bbl)	Condensate	Royalties	181.61
-2009	MS	Jeffer Davis	28065	Oil & Gas		Other Roy Vals	-300
+2009	MS	Jeffer Davis	28065	Oil & Gas		Other Royalties	-300
 2009	MS	Jeffer Davis	28065	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	3464.75
 2009	MS	Jeffer Davis	28065	Oil (bbl)	Condensate	Royalties	13.88
 2009	MS	Jeffer Davis	28065	Oil (bbl)	Oil	Royalties	843.11
@@ -430,7 +430,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2009	MS	Jones	28067	Oil (bbl)	Condensate	Royalties	11760.88
 2009	MS	Lamar	28073	Oil & Gas		Rents	240
 2009	MS	Lamar	28073	Oil (bbl)	Oil	Royalties	2081.88
-2009	MS	Lawrence	28077	Oil & Gas		Other Roy Vals	-99.76
+2009	MS	Lawrence	28077	Oil & Gas		Other Royalties	-99.76
 2009	MS	Lawrence	28077	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	145825.46
 2009	MS	Lawrence	28077	Oil (bbl)	Condensate	Royalties	7222.83
 2009	MS	Lowndes	28087	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	46875.09
@@ -444,7 +444,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2009	MS	Pearl River	28109	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	52589.33
 2009	MS	Pearl River	28109	Oil (bbl)	Condensate	Royalties	36550.35
 2009	MS	Pearl River	28109	Oil (bbl)	Oil	Royalties	22149.99
-2009	MS	Perry	28111	Oil & Gas		Other Roy Vals	-250
+2009	MS	Perry	28111	Oil & Gas		Other Royalties	-250
 2009	MS	Perry	28111	Oil & Gas		Rents	39662.5
 2009	MS	Perry	28111	Oil (bbl)	Oil	Royalties	290508.16
 2009	MS	Scott	28123	Oil & Gas		Rents	23094
@@ -497,18 +497,18 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2010	MS	Jeffer Davis	28065	Oil (bbl)	Condensate	Royalties	29.67
 2010	MS	Jeffer Davis	28065	Oil (bbl)	Oil	Royalties	1113.18
 2010	MS	Jefferson	28063	Oil & Gas		Rents	1241.5
-2010	MS	Jones	28067	Oil & Gas		Other Roy Vals	78.9
+2010	MS	Jones	28067	Oil & Gas		Other Royalties	78.9
 2010	MS	Jones	28067	Oil & Gas		Rents	4880.5
 2010	MS	Jones	28067	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	5998.54
 2010	MS	Jones	28067	Oil (bbl)	Condensate	Royalties	15730.12
 2010	MS	Lamar	28073	Oil & Gas		Rents	240
 2010	MS	Lawrence	28077	Oil & Gas		Bonus	160
-2010	MS	Lawrence	28077	Oil & Gas		Other Roy Vals	-0.24
+2010	MS	Lawrence	28077	Oil & Gas		Other Royalties	-0.24
 2010	MS	Lawrence	28077	Oil & Gas		Rents	120
 2010	MS	Lawrence	28077	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	39754.33
 2010	MS	Lawrence	28077	Oil (bbl)	Condensate	Royalties	2596.04
 2010	MS	Lowndes	28087	Oil & Gas		Other Revenues	154.03
-2010	MS	Lowndes	28087	Oil & Gas		Other Roy Vals	76.32
+2010	MS	Lowndes	28087	Oil & Gas		Other Royalties	76.32
 2010	MS	Lowndes	28087	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	48172.29
 2010	MS	Lowndes	28087	Oil (bbl)	Condensate	Royalties	4663.36
 2010	MS	Madison	28089	Oil & Gas		Other Revenues	483
@@ -523,7 +523,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2010	MS	Pearl River	28109	Oil (bbl)	Condensate	Royalties	62701.99
 2010	MS	Pearl River	28109	Oil (bbl)	Oil	Royalties	23173.58
 2010	MS	Perry	28111	Oil & Gas		Bonus	9900
-2010	MS	Perry	28111	Oil & Gas		Other Roy Vals	5500
+2010	MS	Perry	28111	Oil & Gas		Other Royalties	5500
 2010	MS	Perry	28111	Oil & Gas		Rents	28033.5
 2010	MS	Perry	28111	Oil (bbl)	Oil	Royalties	544035.78
 2010	MS	Scott	28123	Oil & Gas		Rents	13506
@@ -531,9 +531,9 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2010	MS	Simpson	28127	Oil & Gas		Bonus	2960
 2010	MS	Simpson	28127	Oil & Gas		Rents	360
 2010	MS	Smith	28129	Oil & Gas		Other Revenues	1117.19
-2010	MS	Smith	28129	Oil & Gas		Other Roy Vals	0.42
+2010	MS	Smith	28129	Oil & Gas		Other Royalties	0.42
 2010	MS	Smith	28129	Oil & Gas		Rents	102977
-2010	MS	Stone	28131	Oil & Gas		Other Roy Vals	81.93
+2010	MS	Stone	28131	Oil & Gas		Other Royalties	81.93
 2010	MS	Stone	28131	Oil & Gas		Rents	36327
 2010	MS	Stone	28131	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	26829.84
 2010	MS	Tate	28137	Oil & Gas		Rents	160
@@ -564,7 +564,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2011	MS	Forrest	28035	Oil (bbl)	Condensate	Royalties	27433.2
 2011	MS	Forrest	28035	Oil (bbl)	Oil	Royalties	72649.25
 2011	MS	Franklin	28037	Oil & Gas		Bonus	658573.5
-2011	MS	Franklin	28037	Oil & Gas		Other Roy Vals	3.4
+2011	MS	Franklin	28037	Oil & Gas		Other Royalties	3.4
 2011	MS	Franklin	28037	Oil & Gas		Rents	49432.5
 2011	MS	Franklin	28037	Oil (bbl)	Oil	Royalties	948346.02
 2011	MS	George	28039	Oil & Gas		Rents	7969.5
@@ -602,7 +602,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2011	MS	Pearl River	28109	Oil (bbl)	Condensate	Royalties	92573.21
 2011	MS	Pearl River	28109	Oil (bbl)	Oil	Royalties	46392.91
 2011	MS	Perry	28111	Oil & Gas		Bonus	72726
-2011	MS	Perry	28111	Oil & Gas		Other Roy Vals	-2088
+2011	MS	Perry	28111	Oil & Gas		Other Royalties	-2088
 2011	MS	Perry	28111	Oil & Gas		Rents	46175
 2011	MS	Perry	28111	Oil (bbl)	Oil	Royalties	1515777.12
 2011	MS	Scott	28123	Oil & Gas		Bonus	4778
@@ -620,7 +620,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2011	MS	Wayne	28153	Oil & Gas		Rents	41849
 2011	MS	Wayne	28153	Oil (bbl)	Oil	Royalties	517529.25
 2011	MS	Wilkinson	28157	Oil & Gas		Bonus	11032
-2011	MS	Wilkinson	28157	Oil & Gas		Other Roy Vals	787.37
+2011	MS	Wilkinson	28157	Oil & Gas		Other Royalties	787.37
 2011	MS	Wilkinson	28157	Oil & Gas		Rents	7062
 2011	MS	Wilkinson	28157	Oil (bbl)	Oil	Royalties	48845.3
 2012	MS	Adams	28001	Oil & Gas		Rents	9638.5
@@ -636,7 +636,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2012	MS	Covington	28031	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	78.38
 2012	MS	Covington	28031	Oil (bbl)	Oil	Royalties	6038.76
 2012	MS	Forrest	28035	Oil & Gas		Bonus	8752
-2012	MS	Forrest	28035	Oil & Gas		Other Roy Vals	0.01
+2012	MS	Forrest	28035	Oil & Gas		Other Royalties	0.01
 2012	MS	Forrest	28035	Oil & Gas		Rents	35626
 2012	MS	Forrest	28035	Gas (mcf)	Processed (Residue) Gas	Royalties	12761.37
 2012	MS	Forrest	28035	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	18027.59
@@ -677,7 +677,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2012	MS	Pearl River	28109	Gas (mcf)	Processed (Residue) Gas	Royalties	111629.97
 2012	MS	Pearl River	28109	Oil (bbl)	Condensate	Royalties	96795.03
 2012	MS	Pearl River	28109	Oil (bbl)	Oil	Royalties	53457.58
-2012	MS	Perry	28111	Oil & Gas		Other Roy Vals	-2400
+2012	MS	Perry	28111	Oil & Gas		Other Royalties	-2400
 2012	MS	Perry	28111	Oil & Gas		Rents	43883
 2012	MS	Perry	28111	Oil (bbl)	Oil	Royalties	1229475.57
 2012	MS	Scott	28123	Oil & Gas		Bonus	174733
@@ -752,7 +752,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2013	MS	Pearl River	28109	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	8817.13
 2013	MS	Pearl River	28109	Oil (bbl)	Condensate	Royalties	36182.38
 2013	MS	Pearl River	28109	Oil (bbl)	Oil	Royalties	38596.14
-2013	MS	Perry	28111	Oil & Gas		Other Roy Vals	-4200
+2013	MS	Perry	28111	Oil & Gas		Other Royalties	-4200
 2013	MS	Perry	28111	Oil & Gas		Rents	41969
 2013	MS	Perry	28111	Oil (bbl)	Oil	Royalties	1830894.52
 2013	MS	Scott	28123	Oil & Gas		Bonus	87038

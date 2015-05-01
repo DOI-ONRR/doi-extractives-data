@@ -24,7 +24,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2004	NV	Mineral	32021	Oil & Gas		Rents	16665.76
 2004	NV	Nye	32023	Oil & Gas		Bonus	346549
 2004	NV	Nye	32023	Oil & Gas		Other Revenues	3312.4
-2004	NV	Nye	32023	Oil & Gas		Other Roy Vals	-36.87
+2004	NV	Nye	32023	Oil & Gas		Other Royalties	-36.87
 2004	NV	Nye	32023	Geothermal		Rents	33432
 2004	NV	Nye	32023	Oil & Gas		Rents	871267.22
 2004	NV	Nye	32023	Oil (bbl)	Oil	Royalties	1447863.27
@@ -38,7 +38,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2004	NV	White Pine	32033	Geothermal		Rents	3738
 2004	NV	White Pine	32033	Oil & Gas		Rents	487699.31
 2005	NV	Churchill	32001	Geothermal		Other Revenues	41.74
-2005	NV	Churchill	32001	Geothermal		Other Roy Vals	-22709
+2005	NV	Churchill	32001	Geothermal		Other Royalties	-22709
 2005	NV	Churchill	32001	Geothermal		Rents	360740.56
 2005	NV	Churchill	32001	Sodium		Rents	-19836
 2005	NV	Churchill	32001	Geothermal	Geothermal - Direct Utilization, Hundreds of Gallons	Royalties	3872
@@ -66,7 +66,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2005	NV	Mineral	32021	Oil & Gas		Rents	18596.71
 2005	NV	Nye	32023	Oil & Gas		Bonus	1421154.51
 2005	NV	Nye	32023	Oil & Gas		Other Revenues	3715.22
-2005	NV	Nye	32023	Oil & Gas		Other Roy Vals	2811.28
+2005	NV	Nye	32023	Oil & Gas		Other Royalties	2811.28
 2005	NV	Nye	32023	Geothermal		Rents	30813
 2005	NV	Nye	32023	Oil & Gas		Rents	1433304.75
 2005	NV	Nye	32023	Oil (bbl)	Oil	Royalties	1911978.69
@@ -107,7 +107,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2006	NV	Nye	32023	Oil & Gas		Bonus	469523.5
 2006	NV	Nye	32023	Geothermal		Other Revenues	5120
 2006	NV	Nye	32023	Oil & Gas		Other Revenues	7201.49
-2006	NV	Nye	32023	Oil & Gas		Other Roy Vals	-3284.2
+2006	NV	Nye	32023	Oil & Gas		Other Royalties	-3284.2
 2006	NV	Nye	32023	Geothermal		Rents	3675
 2006	NV	Nye	32023	Oil & Gas		Rents	1738085.03
 2006	NV	Nye	32023	Oil (bbl)	Oil	Royalties	2455447.74
@@ -151,7 +151,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2007	NV	Nye	32023	Oil & Gas		Bonus	168628.02
 2007	NV	Nye	32023	Geothermal		Other Revenues	5120
 2007	NV	Nye	32023	Oil & Gas		Other Revenues	3613.83
-2007	NV	Nye	32023	Oil & Gas		Other Roy Vals	334.28
+2007	NV	Nye	32023	Oil & Gas		Other Royalties	334.28
 2007	NV	Nye	32023	Geothermal		Rents	42242.33
 2007	NV	Nye	32023	Oil & Gas		Rents	1734206.15
 2007	NV	Nye	32023	Oil (bbl)	Oil	Royalties	2597904.12
@@ -187,7 +187,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2008	NV	Esmeralda	32009	Other Products	Potash	Royalties	37.5
 2008	NV	Eureka	32011	Geothermal		Bonus	273909.55
 2008	NV	Eureka	32011	Oil & Gas		Bonus	191010
-2008	NV	Eureka	32011	Geothermal		Other Roy Vals	4062.16
+2008	NV	Eureka	32011	Geothermal		Other Royalties	4062.16
 2008	NV	Eureka	32011	Geothermal		Rents	8440.55
 2008	NV	Eureka	32011	Oil & Gas		Rents	1337278.71
 2008	NV	Eureka	32011	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	13112.17
@@ -196,7 +196,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2008	NV	Humboldt	32013	Geothermal		Other Revenues	1328
 2008	NV	Humboldt	32013	Geothermal		Rents	33337
 2008	NV	Lander	32015	Geothermal		Bonus	804258.3
-2008	NV	Lander	32015	Geothermal		Other Roy Vals	66957.84
+2008	NV	Lander	32015	Geothermal		Other Royalties	66957.84
 2008	NV	Lander	32015	Geothermal		Rents	78021.01
 2008	NV	Lander	32015	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	216137.74
 2008	NV	Lincoln	32017	Oil & Gas		Rents	217316.58
@@ -210,7 +210,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2008	NV	Nye	32023	Oil & Gas		Bonus	1507232.78
 2008	NV	Nye	32023	Geothermal		Other Revenues	5120
 2008	NV	Nye	32023	Oil & Gas		Other Revenues	3140.07
-2008	NV	Nye	32023	Oil & Gas		Other Roy Vals	4794.79
+2008	NV	Nye	32023	Oil & Gas		Other Royalties	4794.79
 2008	NV	Nye	32023	Geothermal		Rents	66543.3
 2008	NV	Nye	32023	Oil & Gas		Rents	1381763.43
 2008	NV	Nye	32023	Oil (bbl)	Oil	Royalties	3885397.78
@@ -261,7 +261,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2009	NV	Nye	32023	Oil & Gas		Bonus	116023
 2009	NV	Nye	32023	Geothermal		Other Revenues	5120
 2009	NV	Nye	32023	Oil & Gas		Other Revenues	2556.01
-2009	NV	Nye	32023	Oil & Gas		Other Roy Vals	-3248.67
+2009	NV	Nye	32023	Oil & Gas		Other Royalties	-3248.67
 2009	NV	Nye	32023	Geothermal		Rents	93626.95
 2009	NV	Nye	32023	Oil & Gas		Rents	1200291.99
 2009	NV	Nye	32023	Oil (bbl)	Oil	Royalties	2065907.38
@@ -312,7 +312,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2010	NV	Nye	32023	Oil & Gas		Bonus	8104
 2010	NV	Nye	32023	Geothermal		Other Revenues	5120
 2010	NV	Nye	32023	Oil & Gas		Other Revenues	3847.17
-2010	NV	Nye	32023	Oil & Gas		Other Roy Vals	963.39
+2010	NV	Nye	32023	Oil & Gas		Other Royalties	963.39
 2010	NV	Nye	32023	Geothermal		Rents	164673.78
 2010	NV	Nye	32023	Oil & Gas		Rents	1343404.43
 2010	NV	Nye	32023	Oil (bbl)	Oil	Royalties	2920172.42
@@ -328,7 +328,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2010	NV	White Pine	32033	Oil & Gas		Rents	2225343.11
 2011	NV	Churchill	32001	Geothermal		Bonus	256755
 2011	NV	Churchill	32001	Geothermal		Other Revenues	4008.36
-2011	NV	Churchill	32001	Geothermal		Other Roy Vals	30070
+2011	NV	Churchill	32001	Geothermal		Other Royalties	30070
 2011	NV	Churchill	32001	Geothermal		Rents	596792.66
 2011	NV	Churchill	32001	Oil & Gas		Rents	10200
 2011	NV	Churchill	32001	Geothermal	Geothermal - Direct Utilization, Hundreds of Gallons	Royalties	843055
@@ -365,7 +365,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2011	NV	Nye	32023	Oil & Gas		Bonus	672682
 2011	NV	Nye	32023	Geothermal		Other Revenues	5120
 2011	NV	Nye	32023	Oil & Gas		Other Revenues	2655.55
-2011	NV	Nye	32023	Oil & Gas		Other Roy Vals	3922
+2011	NV	Nye	32023	Oil & Gas		Other Royalties	3922
 2011	NV	Nye	32023	Geothermal		Rents	113013.48
 2011	NV	Nye	32023	Oil & Gas		Rents	1508098.56
 2011	NV	Nye	32023	Oil (bbl)	Oil	Royalties	3879684.92
@@ -410,7 +410,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2012	NV	Mineral	32021	Oil & Gas		Rents	6217.42
 2012	NV	Nye	32023	Oil & Gas		Bonus	2664253.99
 2012	NV	Nye	32023	Oil & Gas		Other Revenues	1253.16
-2012	NV	Nye	32023	Oil & Gas		Other Roy Vals	-2905
+2012	NV	Nye	32023	Oil & Gas		Other Royalties	-2905
 2012	NV	Nye	32023	Geothermal		Rents	88808.48
 2012	NV	Nye	32023	Oil & Gas		Rents	1802564.29
 2012	NV	Nye	32023	Oil (bbl)	Oil	Royalties	3528617.24
@@ -454,7 +454,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2013	NV	Mineral	32021	Oil & Gas		Rents	8263.42
 2013	NV	Nye	32023	Oil & Gas		Bonus	825276
 2013	NV	Nye	32023	Oil & Gas		Other Revenues	2262.13
-2013	NV	Nye	32023	Oil & Gas		Other Roy Vals	-928.31
+2013	NV	Nye	32023	Oil & Gas		Other Royalties	-928.31
 2013	NV	Nye	32023	Geothermal		Rents	19234
 2013	NV	Nye	32023	Oil & Gas		Rents	1578933.37
 2013	NV	Nye	32023	Oil (bbl)	Oil	Royalties	3151139.37

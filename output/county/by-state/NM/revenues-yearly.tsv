@@ -5,7 +5,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2004	NM	Catron	35003	Oil & Gas		Rents	291123.22
 2004	NM	Chaves	35005	Oil & Gas		Bonus	2049368
 2004	NM	Chaves	35005	Oil & Gas		Other Revenues	61253.78
-2004	NM	Chaves	35005	Oil & Gas		Other Roy Vals	-109161
+2004	NM	Chaves	35005	Oil & Gas		Other Royalties	-109161
 2004	NM	Chaves	35005	Oil & Gas		Rents	505577.33
 2004	NM	Chaves	35005	Gas (mcf)	Coal Bed Methane	Royalties	15108.41
 2004	NM	Chaves	35005	Gas (mcf)	Processed (Residue) Gas	Royalties	57562.34
@@ -19,8 +19,8 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2004	NM	Eddy	35015	Oil & Gas		Bonus	12627647
 2004	NM	Eddy	35015	Oil & Gas		Other Revenues	289303.1
 2004	NM	Eddy	35015	Potassium		Other Revenues	17231
-2004	NM	Eddy	35015	Gas (mcf)	Processed (Residue) Gas	Other Roy Vals	2829.68
-2004	NM	Eddy	35015	Oil & Gas		Other Roy Vals	194194.89
+2004	NM	Eddy	35015	Gas (mcf)	Processed (Residue) Gas	Other Royalties	2829.68
+2004	NM	Eddy	35015	Oil & Gas		Other Royalties	194194.89
 2004	NM	Eddy	35015	Oil & Gas		Rents	854161.9
 2004	NM	Eddy	35015	Potassium		Rents	27870.84
 2004	NM	Eddy	35015	Gas (mcf)	Coal Bed Methane	Royalties	4963.63
@@ -34,16 +34,16 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2004	NM	Guadalupe	35019	Oil & Gas		Bonus	25596
 2004	NM	Guadalupe	35019	Oil & Gas		Rents	99277.98
 2004	NM	Harding	35021	Oil & Gas		Other Revenues	35887.19
-2004	NM	Harding	35021	Oil & Gas		Other Roy Vals	3833.2
+2004	NM	Harding	35021	Oil & Gas		Other Royalties	3833.2
 2004	NM	Harding	35021	Oil & Gas		Rents	75395
 2004	NM	Harding	35021	Gas (mcf)	Processed (Residue) Gas	Royalties	36552.91
 2004	NM	Harding	35021	NGL (gal)	Gas Plant Products	Royalties	450.35
 2004	NM	Harding	35021	Other Products	Carbon Dioxide Gas (CO2)	Royalties	319353.34
-2004	NM	Hidalgo	35023	Geothermal		Other Roy Vals	56000
+2004	NM	Hidalgo	35023	Geothermal		Other Royalties	56000
 2004	NM	Hidalgo	35023	Oil & Gas		Rents	33079.5
 2004	NM	Lea	35025	Oil & Gas		Bonus	2181225
 2004	NM	Lea	35025	Oil & Gas		Other Revenues	56630.21
-2004	NM	Lea	35025	Oil & Gas		Other Roy Vals	1526753.56
+2004	NM	Lea	35025	Oil & Gas		Other Royalties	1526753.56
 2004	NM	Lea	35025	Oil & Gas		Rents	375968.55
 2004	NM	Lea	35025	Potassium		Rents	5672.16
 2004	NM	Lea	35025	Gas (mcf)	Processed (Residue) Gas	Royalties	6704486.7
@@ -64,8 +64,8 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2004	NM	Quay	35037	Other Products	Carbon Dioxide Gas (CO2)	Royalties	32362.53
 2004	NM	Rio Arriba	35039	Oil & Gas		Bonus	156
 2004	NM	Rio Arriba	35039	Oil & Gas		Other Revenues	7582.13
-2004	NM	Rio Arriba	35039	Oil & Gas		Other Roy Vals	1969174.48
-2004	NM	Rio Arriba	35039	Oil (bbl)	Oil	Other Roy Vals	32.19
+2004	NM	Rio Arriba	35039	Oil & Gas		Other Royalties	1969174.48
+2004	NM	Rio Arriba	35039	Oil (bbl)	Oil	Other Royalties	32.19
 2004	NM	Rio Arriba	35039	Oil & Gas		Rents	48821.67
 2004	NM	Rio Arriba	35039	Gas (mcf)	Coal Bed Methane	Royalties	38159380.95
 2004	NM	Rio Arriba	35039	Gas (mcf)	Processed (Residue) Gas	Royalties	60646243.03
@@ -76,7 +76,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2004	NM	Rio Arriba	35039	Oil (bbl)	Oil	Royalties	1030558.18
 2004	NM	Roosevelt	35041	Oil & Gas		Bonus	51786
 2004	NM	Roosevelt	35041	Oil & Gas		Other Revenues	10451.52
-2004	NM	Roosevelt	35041	Oil & Gas		Other Roy Vals	8045
+2004	NM	Roosevelt	35041	Oil & Gas		Other Royalties	8045
 2004	NM	Roosevelt	35041	Oil & Gas		Rents	59896
 2004	NM	Roosevelt	35041	Gas (mcf)	Processed (Residue) Gas	Royalties	137054.82
 2004	NM	Roosevelt	35041	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	611219.66
@@ -86,7 +86,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2004	NM	San Juan	35045	Coal		Bonus	2600000
 2004	NM	San Juan	35045	Oil & Gas		Bonus	27945112
 2004	NM	San Juan	35045	Oil & Gas		Other Revenues	49123.39
-2004	NM	San Juan	35045	Oil & Gas		Other Roy Vals	4000369.23
+2004	NM	San Juan	35045	Oil & Gas		Other Royalties	4000369.23
 2004	NM	San Juan	35045	Coal		Rents	65763
 2004	NM	San Juan	35045	Oil & Gas		Rents	102805
 2004	NM	San Juan	35045	Gas (mcf)	Coal Bed Methane	Royalties	82795271.42
@@ -99,7 +99,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2004	NM	San Miguel	35047	Oil & Gas		Rents	28648.5
 2004	NM	Sandoval	35043	Oil & Gas		Bonus	25592
 2004	NM	Sandoval	35043	Oil & Gas		Other Revenues	25848.82
-2004	NM	Sandoval	35043	Oil & Gas		Other Roy Vals	10430.66
+2004	NM	Sandoval	35043	Oil & Gas		Other Royalties	10430.66
 2004	NM	Sandoval	35043	Oil & Gas		Rents	314947.5
 2004	NM	Sandoval	35043	Gas (mcf)	Processed (Residue) Gas	Royalties	25712.01
 2004	NM	Sandoval	35043	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	210164.92
@@ -117,7 +117,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2005	NM	Catron	35003	Oil & Gas		Rents	151261.5
 2005	NM	Chaves	35005	Oil & Gas		Bonus	5035850
 2005	NM	Chaves	35005	Oil & Gas		Other Revenues	45255.89
-2005	NM	Chaves	35005	Oil & Gas		Other Roy Vals	6434.31
+2005	NM	Chaves	35005	Oil & Gas		Other Royalties	6434.31
 2005	NM	Chaves	35005	Oil & Gas		Rents	572289.17
 2005	NM	Chaves	35005	Gas (mcf)	Processed (Residue) Gas	Royalties	76688.94
 2005	NM	Chaves	35005	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	9950921.57
@@ -134,8 +134,8 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2005	NM	Eddy	35015	Oil & Gas		Bonus	24455765
 2005	NM	Eddy	35015	Oil & Gas		Other Revenues	606901.7
 2005	NM	Eddy	35015	Potassium		Other Revenues	56388
-2005	NM	Eddy	35015	Gas (mcf)	Processed (Residue) Gas	Other Roy Vals	3013.46
-2005	NM	Eddy	35015	Oil & Gas		Other Roy Vals	3579541.67
+2005	NM	Eddy	35015	Gas (mcf)	Processed (Residue) Gas	Other Royalties	3013.46
+2005	NM	Eddy	35015	Oil & Gas		Other Royalties	3579541.67
 2005	NM	Eddy	35015	Oil & Gas		Rents	937835.99
 2005	NM	Eddy	35015	Potassium		Rents	8901.5
 2005	NM	Eddy	35015	Sodium		Rents	1280
@@ -158,7 +158,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2005	NM	Eddy	35015	Other Products	Potassium Sulphate-Standard	Royalties	2552.08
 2005	NM	Guadalupe	35019	Oil & Gas		Rents	112769.48
 2005	NM	Harding	35021	Oil & Gas		Other Revenues	38038.81
-2005	NM	Harding	35021	Oil & Gas		Other Roy Vals	1000
+2005	NM	Harding	35021	Oil & Gas		Other Royalties	1000
 2005	NM	Harding	35021	Oil & Gas		Rents	67475.5
 2005	NM	Harding	35021	Gas (mcf)	Processed (Residue) Gas	Royalties	84180.07
 2005	NM	Harding	35021	NGL (gal)	Gas Plant Products	Royalties	996.37
@@ -166,7 +166,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2005	NM	Hidalgo	35023	Oil & Gas		Rents	21118.5
 2005	NM	Lea	35025	Oil & Gas		Bonus	9991566
 2005	NM	Lea	35025	Oil & Gas		Other Revenues	57301.14
-2005	NM	Lea	35025	Oil & Gas		Other Roy Vals	2160133.62
+2005	NM	Lea	35025	Oil & Gas		Other Royalties	2160133.62
 2005	NM	Lea	35025	Oil & Gas		Rents	404874.23
 2005	NM	Lea	35025	Potassium		Rents	-130
 2005	NM	Lea	35025	Gas (mcf)	Fuel Gas	Royalties	-116824.82
@@ -185,11 +185,11 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2005	NM	Mckinley	35031	Oil (bbl)	Oil	Royalties	1568.22
 2005	NM	Otero	35035	Oil & Gas		Rents	33276.5
 2005	NM	Quay	35037	Oil & Gas		Other Revenues	153.16
-2005	NM	Quay	35037	Oil & Gas		Other Roy Vals	80
+2005	NM	Quay	35037	Oil & Gas		Other Royalties	80
 2005	NM	Quay	35037	Oil & Gas		Rents	119693.02
 2005	NM	Quay	35037	Other Products	Carbon Dioxide Gas (CO2)	Royalties	35740.18
 2005	NM	Rio Arriba	35039	Oil & Gas		Other Revenues	11602.3
-2005	NM	Rio Arriba	35039	Oil & Gas		Other Roy Vals	4259557.18
+2005	NM	Rio Arriba	35039	Oil & Gas		Other Royalties	4259557.18
 2005	NM	Rio Arriba	35039	Oil & Gas		Rents	37410.56
 2005	NM	Rio Arriba	35039	Gas (mcf)	Coal Bed Methane	Royalties	70520122.52
 2005	NM	Rio Arriba	35039	Gas (mcf)	Processed (Residue) Gas	Royalties	88231218.35
@@ -200,7 +200,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2005	NM	Rio Arriba	35039	Oil (bbl)	Oil	Royalties	1302138.09
 2005	NM	Roosevelt	35041	Oil & Gas		Bonus	16558
 2005	NM	Roosevelt	35041	Oil & Gas		Other Revenues	-23086.63
-2005	NM	Roosevelt	35041	Oil & Gas		Other Roy Vals	1200
+2005	NM	Roosevelt	35041	Oil & Gas		Other Royalties	1200
 2005	NM	Roosevelt	35041	Oil & Gas		Rents	87967
 2005	NM	Roosevelt	35041	Gas (mcf)	Processed (Residue) Gas	Royalties	171620.68
 2005	NM	Roosevelt	35041	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	830801.45
@@ -210,7 +210,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2005	NM	San Juan	35045	Coal		Bonus	2600000
 2005	NM	San Juan	35045	Oil & Gas		Bonus	16183435
 2005	NM	San Juan	35045	Oil & Gas		Other Revenues	61801.29
-2005	NM	San Juan	35045	Oil & Gas		Other Roy Vals	31137717.72
+2005	NM	San Juan	35045	Oil & Gas		Other Royalties	31137717.72
 2005	NM	San Juan	35045	Coal		Rents	40730.99
 2005	NM	San Juan	35045	Oil & Gas		Rents	126404.55
 2005	NM	San Juan	35045	Gas (mcf)	Coal Bed Methane	Royalties	124052198.33
@@ -223,7 +223,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2005	NM	San Miguel	35047	Oil & Gas		Rents	28648.5
 2005	NM	Sandoval	35043	Oil & Gas		Bonus	346768
 2005	NM	Sandoval	35043	Oil & Gas		Other Revenues	20085.85
-2005	NM	Sandoval	35043	Oil & Gas		Other Roy Vals	11797.3
+2005	NM	Sandoval	35043	Oil & Gas		Other Royalties	11797.3
 2005	NM	Sandoval	35043	Oil & Gas		Rents	252916.5
 2005	NM	Sandoval	35043	Gas (mcf)	Processed (Residue) Gas	Royalties	37991.93
 2005	NM	Sandoval	35043	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	268110.1
@@ -241,7 +241,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2006	NM	Catron	35003	Oil & Gas		Rents	184163.86
 2006	NM	Chaves	35005	Oil & Gas		Bonus	13863944
 2006	NM	Chaves	35005	Oil & Gas		Other Revenues	54559.34
-2006	NM	Chaves	35005	Oil & Gas		Other Roy Vals	4706
+2006	NM	Chaves	35005	Oil & Gas		Other Royalties	4706
 2006	NM	Chaves	35005	Oil & Gas		Rents	649622.7
 2006	NM	Chaves	35005	Gas (mcf)	Processed (Residue) Gas	Royalties	15884.18
 2006	NM	Chaves	35005	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	8942555.17
@@ -250,7 +250,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2006	NM	Chaves	35005	Oil (bbl)	Condensate	Royalties	4210.75
 2006	NM	Chaves	35005	Oil (bbl)	Oil	Royalties	946253.03
 2006	NM	Cibola	35006	Oil & Gas		Rents	6043.14
-2006	NM	Colfax	35007	Oil & Gas		Other Roy Vals	80.77
+2006	NM	Colfax	35007	Oil & Gas		Other Royalties	80.77
 2006	NM	Colfax	35007	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	4779.21
 2006	NM	Curry	35009	Oil & Gas		Rents	576
 2006	NM	De Baca	35011	Oil & Gas		Rents	38227.5
@@ -261,8 +261,8 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2006	NM	Eddy	35015	Oil (bbl)	Oil	Other Revenues	-320
 2006	NM	Eddy	35015	Potassium		Other Revenues	30975.65
 2006	NM	Eddy	35015	Sodium		Other Revenues	5280
-2006	NM	Eddy	35015	Gas (mcf)	Processed (Residue) Gas	Other Roy Vals	2422.17
-2006	NM	Eddy	35015	Oil & Gas		Other Roy Vals	-742693.07
+2006	NM	Eddy	35015	Gas (mcf)	Processed (Residue) Gas	Other Royalties	2422.17
+2006	NM	Eddy	35015	Oil & Gas		Other Royalties	-742693.07
 2006	NM	Eddy	35015	Oil & Gas		Rents	1035336.28
 2006	NM	Eddy	35015	Potassium		Rents	-7861
 2006	NM	Eddy	35015	Sodium		Rents	1720
@@ -282,7 +282,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2006	NM	Guadalupe	35019	Oil & Gas		Bonus	5440
 2006	NM	Guadalupe	35019	Oil & Gas		Rents	85649.19
 2006	NM	Harding	35021	Oil & Gas		Other Revenues	30026.06
-2006	NM	Harding	35021	Oil & Gas		Other Roy Vals	7019.65
+2006	NM	Harding	35021	Oil & Gas		Other Royalties	7019.65
 2006	NM	Harding	35021	Oil & Gas		Rents	65815.5
 2006	NM	Harding	35021	Gas (mcf)	Processed (Residue) Gas	Royalties	113898.99
 2006	NM	Harding	35021	NGL (gal)	Gas Plant Products	Royalties	804.88
@@ -294,7 +294,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2006	NM	Lea	35025	Oil & Gas		Other Revenues	56174.61
 2006	NM	Lea	35025	Oil (bbl)	Oil	Other Revenues	-0.01
 2006	NM	Lea	35025	Potassium		Other Revenues	7597.35
-2006	NM	Lea	35025	Oil & Gas		Other Roy Vals	-220677.34
+2006	NM	Lea	35025	Oil & Gas		Other Royalties	-220677.34
 2006	NM	Lea	35025	Oil & Gas		Rents	375143.44
 2006	NM	Lea	35025	Potassium		Rents	-10902
 2006	NM	Lea	35025	Sodium		Rents	40
@@ -308,7 +308,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2006	NM	Luna	35029	Oil & Gas		Rents	14386.5
 2006	NM	Mckinley	35031	Oil & Gas		Bonus	33600
 2006	NM	Mckinley	35031	Oil & Gas		Other Revenues	9038
-2006	NM	Mckinley	35031	Oil & Gas		Other Roy Vals	4100
+2006	NM	Mckinley	35031	Oil & Gas		Other Royalties	4100
 2006	NM	Mckinley	35031	Coal		Rents	23598
 2006	NM	Mckinley	35031	Oil & Gas		Rents	82505.5
 2006	NM	Mckinley	35031	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	4434.47
@@ -319,9 +319,9 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2006	NM	Quay	35037	Other Products	Carbon Dioxide Gas (CO2)	Royalties	45183.79
 2006	NM	Rio Arriba	35039	Oil & Gas		Bonus	677204
 2006	NM	Rio Arriba	35039	Oil & Gas		Other Revenues	24284.2
-2006	NM	Rio Arriba	35039	NGL (gal)	Gas Plant Products	Other Roy Vals	275571.89
-2006	NM	Rio Arriba	35039	Oil & Gas		Other Roy Vals	3092264.97
-2006	NM	Rio Arriba	35039	Oil (bbl)	Oil	Other Roy Vals	-7.34
+2006	NM	Rio Arriba	35039	NGL (gal)	Gas Plant Products	Other Royalties	275571.89
+2006	NM	Rio Arriba	35039	Oil & Gas		Other Royalties	3092264.97
+2006	NM	Rio Arriba	35039	Oil (bbl)	Oil	Other Royalties	-7.34
 2006	NM	Rio Arriba	35039	Oil & Gas		Rents	68932.17
 2006	NM	Rio Arriba	35039	Gas (mcf)	Coal Bed Methane	Royalties	68775685.3
 2006	NM	Rio Arriba	35039	Gas (mcf)	Processed (Residue) Gas	Royalties	92993201.32
@@ -335,7 +335,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2006	NM	Roosevelt	35041	Oil & Gas		Bonus	28800
 2006	NM	Roosevelt	35041	Oil & Gas		Other Revenues	14033.44
 2006	NM	Roosevelt	35041	Oil (bbl)	Oil	Other Revenues	-200
-2006	NM	Roosevelt	35041	Oil & Gas		Other Roy Vals	-3700
+2006	NM	Roosevelt	35041	Oil & Gas		Other Royalties	-3700
 2006	NM	Roosevelt	35041	Oil & Gas		Rents	53904.5
 2006	NM	Roosevelt	35041	Gas (mcf)	Processed (Residue) Gas	Royalties	177260.95
 2006	NM	Roosevelt	35041	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	914311.41
@@ -346,8 +346,8 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2006	NM	San Juan	35045	Coal		Bonus	16060
 2006	NM	San Juan	35045	Oil & Gas		Bonus	163600
 2006	NM	San Juan	35045	Oil & Gas		Other Revenues	47019.05
-2006	NM	San Juan	35045	NGL (gal)	Gas Plant Products	Other Roy Vals	211887.05
-2006	NM	San Juan	35045	Oil & Gas		Other Roy Vals	2337777.07
+2006	NM	San Juan	35045	NGL (gal)	Gas Plant Products	Other Royalties	211887.05
+2006	NM	San Juan	35045	Oil & Gas		Other Royalties	2337777.07
 2006	NM	San Juan	35045	Coal		Rents	63798
 2006	NM	San Juan	35045	Oil & Gas		Rents	109601.03
 2006	NM	San Juan	35045	Coal (ton)	Coal	Royalties	-1136074.95
@@ -363,7 +363,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2006	NM	San Miguel	35047	Oil & Gas		Rents	31231.5
 2006	NM	Sandoval	35043	Oil & Gas		Bonus	266342
 2006	NM	Sandoval	35043	Oil & Gas		Other Revenues	18400.97
-2006	NM	Sandoval	35043	Oil & Gas		Other Roy Vals	137614.79
+2006	NM	Sandoval	35043	Oil & Gas		Other Royalties	137614.79
 2006	NM	Sandoval	35043	Oil & Gas		Rents	287896
 2006	NM	Sandoval	35043	Gas (mcf)	Processed (Residue) Gas	Royalties	87128.95
 2006	NM	Sandoval	35043	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	165347.64
@@ -382,14 +382,14 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2007	NM	Catron	35003	Oil & Gas		Rents	764
 2007	NM	Chaves	35005	Oil & Gas		Bonus	3168631
 2007	NM	Chaves	35005	Oil & Gas		Other Revenues	52252.37
-2007	NM	Chaves	35005	Oil & Gas		Other Roy Vals	-58440.27
+2007	NM	Chaves	35005	Oil & Gas		Other Royalties	-58440.27
 2007	NM	Chaves	35005	Oil & Gas		Rents	627488.9
 2007	NM	Chaves	35005	Gas (mcf)	Gas Lost - Flared or Vented	Royalties	1459.58
 2007	NM	Chaves	35005	Gas (mcf)	Processed (Residue) Gas	Royalties	14120.27
 2007	NM	Chaves	35005	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	7825623.13
 2007	NM	Chaves	35005	Oil (bbl)	Condensate	Royalties	2816.94
 2007	NM	Chaves	35005	Oil (bbl)	Oil	Royalties	860716.69
-2007	NM	Colfax	35007	Oil & Gas		Other Roy Vals	21251.82
+2007	NM	Colfax	35007	Oil & Gas		Other Royalties	21251.82
 2007	NM	Colfax	35007	Gas (mcf)	Coal Bed Methane	Royalties	83506.05
 2007	NM	Colfax	35007	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	-4779.21
 2007	NM	Curry	35009	Oil & Gas		Rents	229.5
@@ -399,9 +399,9 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2007	NM	Eddy	35015	Potassium		Bonus	5373.87
 2007	NM	Eddy	35015	Oil & Gas		Other Revenues	254146.83
 2007	NM	Eddy	35015	Sodium		Other Revenues	23160
-2007	NM	Eddy	35015	Gas (mcf)	Processed (Residue) Gas	Other Roy Vals	709.67
-2007	NM	Eddy	35015	Oil & Gas		Other Roy Vals	2942365.12
-2007	NM	Eddy	35015	Oil (bbl)	Oil	Other Roy Vals	6771.08
+2007	NM	Eddy	35015	Gas (mcf)	Processed (Residue) Gas	Other Royalties	709.67
+2007	NM	Eddy	35015	Oil & Gas		Other Royalties	2942365.12
+2007	NM	Eddy	35015	Oil (bbl)	Oil	Other Royalties	6771.08
 2007	NM	Eddy	35015	Oil & Gas		Rents	912682.99
 2007	NM	Eddy	35015	Potassium		Rents	-19162.02
 2007	NM	Eddy	35015	Sodium		Rents	-3200
@@ -423,7 +423,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2007	NM	Guadalupe	35019	Oil & Gas		Rents	104892.3
 2007	NM	Harding	35021	Oil & Gas		Bonus	23000
 2007	NM	Harding	35021	Oil & Gas		Other Revenues	14315.31
-2007	NM	Harding	35021	Oil & Gas		Other Roy Vals	-1000
+2007	NM	Harding	35021	Oil & Gas		Other Royalties	-1000
 2007	NM	Harding	35021	Oil & Gas		Rents	63036
 2007	NM	Harding	35021	Gas (mcf)	Processed (Residue) Gas	Royalties	288244.51
 2007	NM	Harding	35021	NGL (gal)	Gas Plant Products	Royalties	1334.08
@@ -434,8 +434,8 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2007	NM	Lea	35025	Oil & Gas		Bonus	4427970
 2007	NM	Lea	35025	Potassium		Bonus	185.88
 2007	NM	Lea	35025	Oil & Gas		Other Revenues	48507.82
-2007	NM	Lea	35025	Gas (mcf)	Unprocessed (Wet) Gas	Other Roy Vals	-0.17
-2007	NM	Lea	35025	Oil & Gas		Other Roy Vals	2578219.13
+2007	NM	Lea	35025	Gas (mcf)	Unprocessed (Wet) Gas	Other Royalties	-0.17
+2007	NM	Lea	35025	Oil & Gas		Other Royalties	2578219.13
 2007	NM	Lea	35025	Oil & Gas		Rents	383713.51
 2007	NM	Lea	35025	Potassium		Rents	-7780.23
 2007	NM	Lea	35025	Sodium		Rents	40
@@ -454,12 +454,12 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2007	NM	Otero	35035	Oil & Gas		Other Revenues	11742
 2007	NM	Otero	35035	Oil & Gas		Rents	-6401.98
 2007	NM	Quay	35037	Oil & Gas		Other Revenues	138.91
-2007	NM	Quay	35037	Oil & Gas		Other Roy Vals	-85
+2007	NM	Quay	35037	Oil & Gas		Other Royalties	-85
 2007	NM	Quay	35037	Oil & Gas		Rents	112011.2
 2007	NM	Quay	35037	Other Products	Carbon Dioxide Gas (CO2)	Royalties	55581.64
 2007	NM	Rio Arriba	35039	Oil & Gas		Bonus	547350
 2007	NM	Rio Arriba	35039	Oil & Gas		Other Revenues	-5470
-2007	NM	Rio Arriba	35039	Oil & Gas		Other Roy Vals	36616999.13
+2007	NM	Rio Arriba	35039	Oil & Gas		Other Royalties	36616999.13
 2007	NM	Rio Arriba	35039	Oil & Gas		Rents	64016.79
 2007	NM	Rio Arriba	35039	Gas (mcf)	Coal Bed Methane	Royalties	41749307.51
 2007	NM	Rio Arriba	35039	Gas (mcf)	Processed (Residue) Gas	Royalties	87804358.83
@@ -471,7 +471,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2007	NM	Rio Arriba	35039	Oil (bbl)	Oil Lost	Royalties	-2.59
 2007	NM	Roosevelt	35041	Oil & Gas		Bonus	110915
 2007	NM	Roosevelt	35041	Oil & Gas		Other Revenues	14294.7
-2007	NM	Roosevelt	35041	Oil & Gas		Other Roy Vals	87963.65
+2007	NM	Roosevelt	35041	Oil & Gas		Other Royalties	87963.65
 2007	NM	Roosevelt	35041	Oil & Gas		Rents	52244.5
 2007	NM	Roosevelt	35041	Gas (mcf)	Processed (Residue) Gas	Royalties	127988.49
 2007	NM	Roosevelt	35041	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	976702.27
@@ -480,8 +480,8 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2007	NM	Roosevelt	35041	Oil (bbl)	Oil	Royalties	1067472.79
 2007	NM	San Juan	35045	Oil & Gas		Bonus	3407833
 2007	NM	San Juan	35045	Oil & Gas		Other Revenues	18134.73
-2007	NM	San Juan	35045	Coal		Other Roy Vals	-21031.81
-2007	NM	San Juan	35045	Oil & Gas		Other Roy Vals	64509955.39
+2007	NM	San Juan	35045	Coal		Other Royalties	-21031.81
+2007	NM	San Juan	35045	Oil & Gas		Other Royalties	64509955.39
 2007	NM	San Juan	35045	Coal		Rents	52713
 2007	NM	San Juan	35045	Oil & Gas		Rents	117113.83
 2007	NM	San Juan	35045	Gas (mcf)	Coal Bed Methane	Royalties	132237764.96
@@ -495,7 +495,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2007	NM	San Miguel	35047	Oil & Gas		Rents	29970
 2007	NM	Sandoval	35043	Oil & Gas		Bonus	389401
 2007	NM	Sandoval	35043	Oil & Gas		Other Revenues	13527.88
-2007	NM	Sandoval	35043	Oil & Gas		Other Roy Vals	27982.76
+2007	NM	Sandoval	35043	Oil & Gas		Other Royalties	27982.76
 2007	NM	Sandoval	35043	Oil & Gas		Rents	191829.5
 2007	NM	Sandoval	35043	Gas (mcf)	Processed (Residue) Gas	Royalties	105704.67
 2007	NM	Sandoval	35043	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	138717.62
@@ -518,7 +518,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2008	NM	Catron	35003	Oil & Gas		Rents	296888
 2008	NM	Chaves	35005	Oil & Gas		Bonus	10741550
 2008	NM	Chaves	35005	Oil & Gas		Other Revenues	38978.94
-2008	NM	Chaves	35005	Oil & Gas		Other Roy Vals	83105.2
+2008	NM	Chaves	35005	Oil & Gas		Other Royalties	83105.2
 2008	NM	Chaves	35005	Oil & Gas		Rents	610267.9
 2008	NM	Chaves	35005	Gas (mcf)	Gas Lost - Flared or Vented	Royalties	363.53
 2008	NM	Chaves	35005	Gas (mcf)	Processed (Residue) Gas	Royalties	75765.97
@@ -537,9 +537,9 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2008	NM	Eddy	35015	Oil & Gas		Other Revenues	456200.29
 2008	NM	Eddy	35015	Potassium		Other Revenues	154548
 2008	NM	Eddy	35015	Sodium		Other Revenues	1320
-2008	NM	Eddy	35015	Gas (mcf)	Processed (Residue) Gas	Other Roy Vals	1043.39
-2008	NM	Eddy	35015	Oil & Gas		Other Roy Vals	-1103063.86
-2008	NM	Eddy	35015	Oil (bbl)	Oil	Other Roy Vals	24435.9
+2008	NM	Eddy	35015	Gas (mcf)	Processed (Residue) Gas	Other Royalties	1043.39
+2008	NM	Eddy	35015	Oil & Gas		Other Royalties	-1103063.86
+2008	NM	Eddy	35015	Oil (bbl)	Oil	Other Royalties	24435.9
 2008	NM	Eddy	35015	Oil & Gas		Rents	835291.5
 2008	NM	Eddy	35015	Potassium		Rents	54233.25
 2008	NM	Eddy	35015	Sodium		Rents	639.07
@@ -555,7 +555,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2008	NM	Guadalupe	35019	Oil & Gas		Bonus	535023
 2008	NM	Guadalupe	35019	Oil & Gas		Rents	199554.8
 2008	NM	Harding	35021	Oil & Gas		Other Revenues	36053.14
-2008	NM	Harding	35021	Oil & Gas		Other Roy Vals	32974.42
+2008	NM	Harding	35021	Oil & Gas		Other Royalties	32974.42
 2008	NM	Harding	35021	Oil & Gas		Rents	92507.5
 2008	NM	Harding	35021	Gas (mcf)	Processed (Residue) Gas	Royalties	488522.32
 2008	NM	Harding	35021	NGL (gal)	Gas Plant Products	Royalties	5418.27
@@ -565,7 +565,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2008	NM	Lea	35025	Oil & Gas		Other Revenues	95319.22
 2008	NM	Lea	35025	Potassium		Other Revenues	24456
 2008	NM	Lea	35025	Sodium		Other Revenues	4800
-2008	NM	Lea	35025	Oil & Gas		Other Roy Vals	1593032.53
+2008	NM	Lea	35025	Oil & Gas		Other Royalties	1593032.53
 2008	NM	Lea	35025	Oil & Gas		Rents	288389.53
 2008	NM	Lea	35025	Potassium		Rents	16434
 2008	NM	Lea	35025	Sodium		Rents	-680
@@ -589,7 +589,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2008	NM	Quay	35037	Oil & Gas		Rents	140050.7
 2008	NM	Quay	35037	Other Products	Carbon Dioxide Gas (CO2)	Royalties	80164.44
 2008	NM	Rio Arriba	35039	Oil & Gas		Other Revenues	6380.66
-2008	NM	Rio Arriba	35039	Oil & Gas		Other Roy Vals	-1474233.85
+2008	NM	Rio Arriba	35039	Oil & Gas		Other Royalties	-1474233.85
 2008	NM	Rio Arriba	35039	Oil & Gas		Rents	70815.55
 2008	NM	Rio Arriba	35039	Gas (mcf)	Coal Bed Methane	Royalties	59545720.45
 2008	NM	Rio Arriba	35039	Gas (mcf)	Processed (Residue) Gas	Royalties	131867658.83
@@ -600,7 +600,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2008	NM	Rio Arriba	35039	Oil (bbl)	Oil	Royalties	3506712.15
 2008	NM	Roosevelt	35041	Oil & Gas		Bonus	35200
 2008	NM	Roosevelt	35041	Oil & Gas		Other Revenues	12474.29
-2008	NM	Roosevelt	35041	Oil & Gas		Other Roy Vals	87304.85
+2008	NM	Roosevelt	35041	Oil & Gas		Other Royalties	87304.85
 2008	NM	Roosevelt	35041	Oil & Gas		Rents	38378.5
 2008	NM	Roosevelt	35041	Gas (mcf)	Processed (Residue) Gas	Royalties	48755.79
 2008	NM	Roosevelt	35041	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	1610472.66
@@ -609,7 +609,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2008	NM	Roosevelt	35041	Oil (bbl)	Oil	Royalties	1778679.61
 2008	NM	San Juan	35045	Oil & Gas		Bonus	11612800
 2008	NM	San Juan	35045	Oil & Gas		Other Revenues	30854.32
-2008	NM	San Juan	35045	Oil & Gas		Other Roy Vals	-3857299.71
+2008	NM	San Juan	35045	Oil & Gas		Other Royalties	-3857299.71
 2008	NM	San Juan	35045	Coal		Rents	53177.51
 2008	NM	San Juan	35045	Oil & Gas		Rents	134822.37
 2008	NM	San Juan	35045	Coal (ton)	Coal	Royalties	203712.1
@@ -624,7 +624,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2008	NM	San Miguel	35047	Oil & Gas		Rents	39519.5
 2008	NM	Sandoval	35043	Oil & Gas		Bonus	82030
 2008	NM	Sandoval	35043	Oil & Gas		Other Revenues	18747.12
-2008	NM	Sandoval	35043	Oil & Gas		Other Roy Vals	745.48
+2008	NM	Sandoval	35043	Oil & Gas		Other Royalties	745.48
 2008	NM	Sandoval	35043	Oil & Gas		Rents	184170.5
 2008	NM	Sandoval	35043	Gas (mcf)	Processed (Residue) Gas	Royalties	137541.46
 2008	NM	Sandoval	35043	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	132266.64
@@ -644,7 +644,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2009	NM	Catron	35003	Oil & Gas		Rents	149240.5
 2009	NM	Chaves	35005	Oil & Gas		Bonus	6493640
 2009	NM	Chaves	35005	Oil & Gas		Other Revenues	48907.79
-2009	NM	Chaves	35005	Oil & Gas		Other Roy Vals	-162795.86
+2009	NM	Chaves	35005	Oil & Gas		Other Royalties	-162795.86
 2009	NM	Chaves	35005	Oil & Gas		Rents	648064.5
 2009	NM	Chaves	35005	Gas (mcf)	Processed (Residue) Gas	Royalties	26960.96
 2009	NM	Chaves	35005	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	4438000.28
@@ -661,8 +661,8 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2009	NM	Eddy	35015	Oil & Gas		Other Revenues	257590.14
 2009	NM	Eddy	35015	Potassium		Other Revenues	5256
 2009	NM	Eddy	35015	Sodium		Other Revenues	1320
-2009	NM	Eddy	35015	Gas (mcf)	Processed (Residue) Gas	Other Roy Vals	106.91
-2009	NM	Eddy	35015	Oil & Gas		Other Roy Vals	-4283313.04
+2009	NM	Eddy	35015	Gas (mcf)	Processed (Residue) Gas	Other Royalties	106.91
+2009	NM	Eddy	35015	Oil & Gas		Other Royalties	-4283313.04
 2009	NM	Eddy	35015	Oil & Gas		Rents	780259.81
 2009	NM	Eddy	35015	Potassium		Rents	51333.92
 2009	NM	Eddy	35015	Sodium		Rents	440
@@ -679,7 +679,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2009	NM	Guadalupe	35019	Oil & Gas		Bonus	83343
 2009	NM	Guadalupe	35019	Oil & Gas		Rents	229457.3
 2009	NM	Harding	35021	Oil & Gas		Other Revenues	34288.96
-2009	NM	Harding	35021	Oil & Gas		Other Roy Vals	-20788.62
+2009	NM	Harding	35021	Oil & Gas		Other Royalties	-20788.62
 2009	NM	Harding	35021	Oil & Gas		Rents	78198
 2009	NM	Harding	35021	Gas (mcf)	Processed (Residue) Gas	Royalties	158458.71
 2009	NM	Harding	35021	NGL (gal)	Gas Plant Products	Royalties	1530.66
@@ -689,7 +689,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2009	NM	Hidalgo	35023	Oil & Gas		Rents	54442
 2009	NM	Lea	35025	Oil & Gas		Bonus	4645545
 2009	NM	Lea	35025	Oil & Gas		Other Revenues	93097.95
-2009	NM	Lea	35025	Oil & Gas		Other Roy Vals	-3122148.91
+2009	NM	Lea	35025	Oil & Gas		Other Royalties	-3122148.91
 2009	NM	Lea	35025	Oil & Gas		Rents	335698.32
 2009	NM	Lea	35025	Potassium		Rents	25745.58
 2009	NM	Lea	35025	Gas (mcf)	Fuel Gas	Royalties	8.8
@@ -714,7 +714,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2009	NM	Quay	35037	Other Products	Carbon Dioxide Gas (CO2)	Royalties	40722.15
 2009	NM	Rio Arriba	35039	Oil & Gas		Bonus	523480
 2009	NM	Rio Arriba	35039	Oil & Gas		Other Revenues	4509.18
-2009	NM	Rio Arriba	35039	Oil & Gas		Other Roy Vals	-3295386.3
+2009	NM	Rio Arriba	35039	Oil & Gas		Other Royalties	-3295386.3
 2009	NM	Rio Arriba	35039	Oil & Gas		Rents	60626.67
 2009	NM	Rio Arriba	35039	Gas (mcf)	Coal Bed Methane	Royalties	7480229.95
 2009	NM	Rio Arriba	35039	Gas (mcf)	Processed (Residue) Gas	Royalties	56274414.3
@@ -725,7 +725,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2009	NM	Rio Arriba	35039	Oil (bbl)	Oil	Royalties	1755264.03
 2009	NM	Roosevelt	35041	Oil & Gas		Bonus	9040
 2009	NM	Roosevelt	35041	Oil & Gas		Other Revenues	8897.31
-2009	NM	Roosevelt	35041	Oil & Gas		Other Roy Vals	-14082.93
+2009	NM	Roosevelt	35041	Oil & Gas		Other Royalties	-14082.93
 2009	NM	Roosevelt	35041	Oil & Gas		Rents	42819.5
 2009	NM	Roosevelt	35041	Gas (mcf)	Processed (Residue) Gas	Royalties	111858.42
 2009	NM	Roosevelt	35041	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	524370.94
@@ -734,7 +734,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2009	NM	Roosevelt	35041	Oil (bbl)	Oil	Royalties	528906.55
 2009	NM	San Juan	35045	Oil & Gas		Bonus	2232504
 2009	NM	San Juan	35045	Oil & Gas		Other Revenues	36791.54
-2009	NM	San Juan	35045	Oil & Gas		Other Roy Vals	-7482124.86
+2009	NM	San Juan	35045	Oil & Gas		Other Royalties	-7482124.86
 2009	NM	San Juan	35045	Coal		Rents	52713
 2009	NM	San Juan	35045	Oil & Gas		Rents	155082.31
 2009	NM	San Juan	35045	Gas (mcf)	Coal Bed Methane	Royalties	54741545.79
@@ -748,7 +748,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2009	NM	San Miguel	35047	Oil & Gas		Rents	39519.5
 2009	NM	Sandoval	35043	Oil & Gas		Bonus	242426
 2009	NM	Sandoval	35043	Oil & Gas		Other Revenues	22121.79
-2009	NM	Sandoval	35043	Oil & Gas		Other Roy Vals	-19847.43
+2009	NM	Sandoval	35043	Oil & Gas		Other Royalties	-19847.43
 2009	NM	Sandoval	35043	Oil & Gas		Rents	107981.5
 2009	NM	Sandoval	35043	Gas (mcf)	Coal Bed Methane	Royalties	45796.81
 2009	NM	Sandoval	35043	Gas (mcf)	Processed (Residue) Gas	Royalties	44763.88
@@ -769,7 +769,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2010	NM	Catron	35003	Oil & Gas		Rents	138049.5
 2010	NM	Chaves	35005	Oil & Gas		Bonus	3102495
 2010	NM	Chaves	35005	Oil & Gas		Other Revenues	49392.02
-2010	NM	Chaves	35005	Oil & Gas		Other Roy Vals	163305.1
+2010	NM	Chaves	35005	Oil & Gas		Other Royalties	163305.1
 2010	NM	Chaves	35005	Oil & Gas		Rents	551711.01
 2010	NM	Chaves	35005	Gas (mcf)	Processed (Residue) Gas	Royalties	59121.65
 2010	NM	Chaves	35005	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	5755775.88
@@ -785,8 +785,8 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2010	NM	Eddy	35015	Oil & Gas		Other Revenues	326472.59
 2010	NM	Eddy	35015	Potassium		Other Revenues	13200
 2010	NM	Eddy	35015	Sodium		Other Revenues	3840
-2010	NM	Eddy	35015	Gas (mcf)	Processed (Residue) Gas	Other Roy Vals	261.27
-2010	NM	Eddy	35015	Oil & Gas		Other Roy Vals	2501463.2
+2010	NM	Eddy	35015	Gas (mcf)	Processed (Residue) Gas	Other Royalties	261.27
+2010	NM	Eddy	35015	Oil & Gas		Other Royalties	2501463.2
 2010	NM	Eddy	35015	Oil & Gas		Rents	699261.31
 2010	NM	Eddy	35015	Potassium		Rents	-117412
 2010	NM	Eddy	35015	Sodium		Rents	-1280
@@ -811,7 +811,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2010	NM	Hidalgo	35023	Oil & Gas		Rents	54442
 2010	NM	Lea	35025	Oil & Gas		Bonus	8871360
 2010	NM	Lea	35025	Oil & Gas		Other Revenues	94308.6
-2010	NM	Lea	35025	Oil & Gas		Other Roy Vals	269375.19
+2010	NM	Lea	35025	Oil & Gas		Other Royalties	269375.19
 2010	NM	Lea	35025	Oil & Gas		Rents	315550.1
 2010	NM	Lea	35025	Potassium		Rents	7509
 2010	NM	Lea	35025	Sodium		Rents	240
@@ -826,7 +826,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2010	NM	Lea	35025	Oil (bbl)	Oil	Royalties	79753585.07
 2010	NM	Lea	35025	Other Products	Carbon Dioxide Gas (CO2)	Royalties	-0.4
 2010	NM	Mckinley	35031	Oil & Gas		Other Revenues	5906
-2010	NM	Mckinley	35031	Oil & Gas		Other Roy Vals	100
+2010	NM	Mckinley	35031	Oil & Gas		Other Royalties	100
 2010	NM	Mckinley	35031	Coal		Rents	23598
 2010	NM	Mckinley	35031	Oil & Gas		Rents	56147
 2010	NM	Mckinley	35031	Gas (mcf)	Coal Bed Methane	Royalties	34151.59
@@ -839,7 +839,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2010	NM	Quay	35037	Other Products	Carbon Dioxide Gas (CO2)	Royalties	88674.08
 2010	NM	Rio Arriba	35039	Oil & Gas		Bonus	512000
 2010	NM	Rio Arriba	35039	Oil & Gas		Other Revenues	8740.96
-2010	NM	Rio Arriba	35039	Oil & Gas		Other Roy Vals	505212.05
+2010	NM	Rio Arriba	35039	Oil & Gas		Other Royalties	505212.05
 2010	NM	Rio Arriba	35039	Oil & Gas		Rents	64330.17
 2010	NM	Rio Arriba	35039	Gas (mcf)	Coal Bed Methane	Royalties	19125116.38
 2010	NM	Rio Arriba	35039	Gas (mcf)	Processed (Residue) Gas	Royalties	75247488.2
@@ -850,14 +850,14 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2010	NM	Rio Arriba	35039	Oil (bbl)	Oil	Royalties	2404338.62
 2010	NM	Roosevelt	35041	Oil & Gas		Bonus	6800
 2010	NM	Roosevelt	35041	Oil & Gas		Other Revenues	10943.01
-2010	NM	Roosevelt	35041	Oil & Gas		Other Roy Vals	3302.82
+2010	NM	Roosevelt	35041	Oil & Gas		Other Royalties	3302.82
 2010	NM	Roosevelt	35041	Oil & Gas		Rents	32060
 2010	NM	Roosevelt	35041	Gas (mcf)	Processed (Residue) Gas	Royalties	11637.2
 2010	NM	Roosevelt	35041	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	913092.32
 2010	NM	Roosevelt	35041	NGL (gal)	Gas Plant Products	Royalties	16900.28
 2010	NM	Roosevelt	35041	Oil (bbl)	Oil	Royalties	975977.72
 2010	NM	San Juan	35045	Oil & Gas		Other Revenues	37362.03
-2010	NM	San Juan	35045	Oil & Gas		Other Roy Vals	419946.62
+2010	NM	San Juan	35045	Oil & Gas		Other Royalties	419946.62
 2010	NM	San Juan	35045	Coal		Rents	52713
 2010	NM	San Juan	35045	Oil & Gas		Rents	153148.63
 2010	NM	San Juan	35045	Gas (mcf)	Coal Bed Methane	Royalties	50869323.05
@@ -871,7 +871,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2010	NM	San Miguel	35047	Oil & Gas		Rents	39940
 2010	NM	Sandoval	35043	Oil & Gas		Bonus	1855170
 2010	NM	Sandoval	35043	Oil & Gas		Other Revenues	35235.49
-2010	NM	Sandoval	35043	Oil & Gas		Other Roy Vals	32305.13
+2010	NM	Sandoval	35043	Oil & Gas		Other Royalties	32305.13
 2010	NM	Sandoval	35043	Oil & Gas		Rents	115102
 2010	NM	Sandoval	35043	Gas (mcf)	Coal Bed Methane	Royalties	287053.03
 2010	NM	Sandoval	35043	Gas (mcf)	Processed (Residue) Gas	Royalties	58504.99
@@ -889,7 +889,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2011	NM	Catron	35003	Oil & Gas		Rents	138049.5
 2011	NM	Chaves	35005	Oil & Gas		Bonus	1152160
 2011	NM	Chaves	35005	Oil & Gas		Other Revenues	50829.26
-2011	NM	Chaves	35005	Oil & Gas		Other Roy Vals	135985.25
+2011	NM	Chaves	35005	Oil & Gas		Other Royalties	135985.25
 2011	NM	Chaves	35005	Oil & Gas		Rents	396984.77
 2011	NM	Chaves	35005	Gas (mcf)	Processed (Residue) Gas	Royalties	89474.69
 2011	NM	Chaves	35005	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	4674832.13
@@ -905,8 +905,8 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2011	NM	Eddy	35015	Oil & Gas		Bonus	6798340
 2011	NM	Eddy	35015	Oil & Gas		Other Revenues	326385.94
 2011	NM	Eddy	35015	Sodium		Other Revenues	-9000
-2011	NM	Eddy	35015	Gas (mcf)	Processed (Residue) Gas	Other Roy Vals	123.38
-2011	NM	Eddy	35015	Oil & Gas		Other Roy Vals	7125802.5
+2011	NM	Eddy	35015	Gas (mcf)	Processed (Residue) Gas	Other Royalties	123.38
+2011	NM	Eddy	35015	Oil & Gas		Other Royalties	7125802.5
 2011	NM	Eddy	35015	Oil & Gas		Rents	710555.36
 2011	NM	Eddy	35015	Potassium		Rents	-46036.17
 2011	NM	Eddy	35015	Gas (mcf)	Gas Lost - Flared or Vented	Royalties	94477.54
@@ -921,7 +921,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2011	NM	Grant	35017	Oil & Gas		Rents	1964
 2011	NM	Guadalupe	35019	Oil & Gas		Rents	254879.8
 2011	NM	Harding	35021	Oil & Gas		Other Revenues	2517.39
-2011	NM	Harding	35021	Oil & Gas		Other Roy Vals	2100
+2011	NM	Harding	35021	Oil & Gas		Other Royalties	2100
 2011	NM	Harding	35021	Oil & Gas		Rents	10230
 2011	NM	Harding	35021	Gas (mcf)	Processed (Residue) Gas	Royalties	-786561.38
 2011	NM	Harding	35021	NGL (gal)	Gas Plant Products	Royalties	-8119.02
@@ -931,7 +931,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2011	NM	Hidalgo	35023	Oil & Gas		Rents	33906.5
 2011	NM	Lea	35025	Oil & Gas		Bonus	19643055
 2011	NM	Lea	35025	Oil & Gas		Other Revenues	84834.16
-2011	NM	Lea	35025	Oil & Gas		Other Roy Vals	2565053.94
+2011	NM	Lea	35025	Oil & Gas		Other Royalties	2565053.94
 2011	NM	Lea	35025	Oil & Gas		Rents	301739.71
 2011	NM	Lea	35025	Potassium		Rents	46756.67
 2011	NM	Lea	35025	Sodium		Rents	125.6
@@ -944,7 +944,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2011	NM	Lea	35025	Oil (bbl)	Oil	Royalties	100565157.57
 2011	NM	Mckinley	35031	Oil & Gas		Bonus	795543
 2011	NM	Mckinley	35031	Oil & Gas		Other Revenues	8263
-2011	NM	Mckinley	35031	Oil & Gas		Other Roy Vals	-200
+2011	NM	Mckinley	35031	Oil & Gas		Other Royalties	-200
 2011	NM	Mckinley	35031	Coal		Rents	23598
 2011	NM	Mckinley	35031	Oil & Gas		Rents	86060.5
 2011	NM	Mckinley	35031	Gas (mcf)	Coal Bed Methane	Royalties	105654.02
@@ -957,7 +957,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2011	NM	Quay	35037	Other Products	Carbon Dioxide Gas (CO2)	Royalties	65979.02
 2011	NM	Rio Arriba	35039	Oil & Gas		Bonus	46600
 2011	NM	Rio Arriba	35039	Oil & Gas		Other Revenues	6292.46
-2011	NM	Rio Arriba	35039	Oil & Gas		Other Roy Vals	1236086.91
+2011	NM	Rio Arriba	35039	Oil & Gas		Other Royalties	1236086.91
 2011	NM	Rio Arriba	35039	Oil & Gas		Rents	68390.17
 2011	NM	Rio Arriba	35039	Gas (mcf)	Coal Bed Methane	Royalties	22363297.01
 2011	NM	Rio Arriba	35039	Gas (mcf)	Processed (Residue) Gas	Royalties	93631076.52
@@ -968,7 +968,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2011	NM	Rio Arriba	35039	Oil (bbl)	Oil	Royalties	3059312.28
 2011	NM	Roosevelt	35041	Oil & Gas		Bonus	179376
 2011	NM	Roosevelt	35041	Oil & Gas		Other Revenues	13017.65
-2011	NM	Roosevelt	35041	Oil & Gas		Other Roy Vals	12158.26
+2011	NM	Roosevelt	35041	Oil & Gas		Other Royalties	12158.26
 2011	NM	Roosevelt	35041	Oil & Gas		Rents	33491.5
 2011	NM	Roosevelt	35041	Gas (mcf)	Processed (Residue) Gas	Royalties	-19459.52
 2011	NM	Roosevelt	35041	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	842208.03
@@ -976,7 +976,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2011	NM	Roosevelt	35041	Oil (bbl)	Oil	Royalties	1005136.96
 2011	NM	San Juan	35045	Oil & Gas		Bonus	-152000
 2011	NM	San Juan	35045	Oil & Gas		Other Revenues	28160.75
-2011	NM	San Juan	35045	Oil & Gas		Other Roy Vals	3480556.8
+2011	NM	San Juan	35045	Oil & Gas		Other Royalties	3480556.8
 2011	NM	San Juan	35045	Coal		Rents	64401
 2011	NM	San Juan	35045	Oil & Gas		Rents	154272.53
 2011	NM	San Juan	35045	Gas (mcf)	Coal Bed Methane	Royalties	57116276
@@ -990,7 +990,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2011	NM	San Juan	35045	Oil (bbl)	Oil	Royalties	2849107.94
 2011	NM	San Miguel	35047	Oil & Gas		Rents	39960
 2011	NM	Sandoval	35043	Oil & Gas		Other Revenues	57502.8
-2011	NM	Sandoval	35043	Oil & Gas		Other Roy Vals	18087.33
+2011	NM	Sandoval	35043	Oil & Gas		Other Royalties	18087.33
 2011	NM	Sandoval	35043	Oil & Gas		Rents	109411
 2011	NM	Sandoval	35043	Gas (mcf)	Coal Bed Methane	Royalties	437728.18
 2011	NM	Sandoval	35043	Gas (mcf)	Processed (Residue) Gas	Royalties	50245.73
@@ -1008,7 +1008,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2012	NM	Chaves	35005	Oil & Gas		Bonus	200000
 2012	NM	Chaves	35005	Gas (mcf)	Processed (Residue) Gas	Other Revenues	-0.01
 2012	NM	Chaves	35005	Oil & Gas		Other Revenues	88258.2
-2012	NM	Chaves	35005	Oil & Gas		Other Roy Vals	-12280.66
+2012	NM	Chaves	35005	Oil & Gas		Other Royalties	-12280.66
 2012	NM	Chaves	35005	Oil & Gas		Rents	354441
 2012	NM	Chaves	35005	Gas (mcf)	Processed (Residue) Gas	Royalties	98676.75
 2012	NM	Chaves	35005	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	2644438.95
@@ -1023,7 +1023,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2012	NM	Eddy	35015	Oil & Gas		Bonus	3999150
 2012	NM	Eddy	35015	Potassium		Bonus	2334568
 2012	NM	Eddy	35015	Oil & Gas		Other Revenues	270885.61
-2012	NM	Eddy	35015	Oil & Gas		Other Roy Vals	332422.77
+2012	NM	Eddy	35015	Oil & Gas		Other Royalties	332422.77
 2012	NM	Eddy	35015	Oil & Gas		Rents	532884.82
 2012	NM	Eddy	35015	Potassium		Rents	50569.58
 2012	NM	Eddy	35015	Sodium		Rents	880
@@ -1038,7 +1038,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2012	NM	Grant	35017	Oil & Gas		Rents	1964
 2012	NM	Guadalupe	35019	Oil & Gas		Rents	201019.5
 2012	NM	Harding	35021	Oil & Gas		Other Revenues	342.2
-2012	NM	Harding	35021	Oil & Gas		Other Roy Vals	-24806.64
+2012	NM	Harding	35021	Oil & Gas		Other Royalties	-24806.64
 2012	NM	Harding	35021	Oil & Gas		Rents	2740
 2012	NM	Harding	35021	Other Products	Carbon Dioxide Gas (CO2)	Royalties	1034019.78
 2012	NM	Hidalgo	35023	Oil & Gas		Bonus	19638
@@ -1046,7 +1046,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2012	NM	Hidalgo	35023	Oil & Gas		Rents	46216.5
 2012	NM	Lea	35025	Oil & Gas		Bonus	67021940
 2012	NM	Lea	35025	Oil & Gas		Other Revenues	52801.08
-2012	NM	Lea	35025	Oil & Gas		Other Roy Vals	2305448.17
+2012	NM	Lea	35025	Oil & Gas		Other Royalties	2305448.17
 2012	NM	Lea	35025	Oil & Gas		Rents	315041.51
 2012	NM	Lea	35025	Potassium		Rents	29075.67
 2012	NM	Lea	35025	Sodium		Rents	240
@@ -1060,7 +1060,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2012	NM	Lea	35025	Oil (bbl)	Inlet Scrubber	Royalties	13.77
 2012	NM	Lea	35025	Oil (bbl)	Oil	Royalties	127715734.11
 2012	NM	Mckinley	35031	Oil & Gas		Other Revenues	8945
-2012	NM	Mckinley	35031	Oil & Gas		Other Roy Vals	-50
+2012	NM	Mckinley	35031	Oil & Gas		Other Royalties	-50
 2012	NM	Mckinley	35031	Coal		Rents	23598
 2012	NM	Mckinley	35031	Oil & Gas		Rents	69180.5
 2012	NM	Mckinley	35031	Gas (mcf)	Coal Bed Methane	Royalties	58912.5
@@ -1071,7 +1071,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2012	NM	Quay	35037	Other Products	Carbon Dioxide Gas (CO2)	Royalties	79884.56
 2012	NM	Rio Arriba	35039	Oil & Gas		Bonus	5876800
 2012	NM	Rio Arriba	35039	Oil & Gas		Other Revenues	7256.12
-2012	NM	Rio Arriba	35039	Oil & Gas		Other Roy Vals	-2297169.53
+2012	NM	Rio Arriba	35039	Oil & Gas		Other Royalties	-2297169.53
 2012	NM	Rio Arriba	35039	Oil & Gas		Rents	71671.67
 2012	NM	Rio Arriba	35039	Gas (mcf)	Coal Bed Methane	Royalties	43182799.55
 2012	NM	Rio Arriba	35039	Gas (mcf)	Processed (Residue) Gas	Royalties	29431340.43
@@ -1081,7 +1081,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2012	NM	Rio Arriba	35039	Oil (bbl)	Drip or Scrubber Condensate	Royalties	10640.67
 2012	NM	Rio Arriba	35039	Oil (bbl)	Oil	Royalties	3073891.84
 2012	NM	Roosevelt	35041	Oil & Gas		Other Revenues	10161.13
-2012	NM	Roosevelt	35041	Oil & Gas		Other Roy Vals	-17433.18
+2012	NM	Roosevelt	35041	Oil & Gas		Other Royalties	-17433.18
 2012	NM	Roosevelt	35041	Oil & Gas		Rents	25399
 2012	NM	Roosevelt	35041	Gas (mcf)	Processed (Residue) Gas	Royalties	13404.58
 2012	NM	Roosevelt	35041	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	421596.34
@@ -1090,8 +1090,8 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2012	NM	Roosevelt	35041	Oil (bbl)	Oil	Royalties	917692.94
 2012	NM	San Juan	35045	Oil & Gas		Bonus	960
 2012	NM	San Juan	35045	Oil & Gas		Other Revenues	36993.1
-2012	NM	San Juan	35045	NGL (gal)	Gas Plant Products	Other Roy Vals	-86.75
-2012	NM	San Juan	35045	Oil & Gas		Other Roy Vals	-2185627.36
+2012	NM	San Juan	35045	NGL (gal)	Gas Plant Products	Other Royalties	-86.75
+2012	NM	San Juan	35045	Oil & Gas		Other Royalties	-2185627.36
 2012	NM	San Juan	35045	Coal		Rents	52743
 2012	NM	San Juan	35045	Oil & Gas		Rents	160243.83
 2012	NM	San Juan	35045	Gas (mcf)	Coal Bed Methane	Royalties	62889352.71
@@ -1103,7 +1103,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2012	NM	San Juan	35045	Oil (bbl)	Oil	Royalties	2675575.38
 2012	NM	San Miguel	35047	Oil & Gas		Rents	9524
 2012	NM	Sandoval	35043	Oil & Gas		Other Revenues	24527.97
-2012	NM	Sandoval	35043	Oil & Gas		Other Roy Vals	1919.66
+2012	NM	Sandoval	35043	Oil & Gas		Other Royalties	1919.66
 2012	NM	Sandoval	35043	Oil & Gas		Rents	87823.5
 2012	NM	Sandoval	35043	Gas (mcf)	Coal Bed Methane	Royalties	343437.41
 2012	NM	Sandoval	35043	Gas (mcf)	Processed (Residue) Gas	Royalties	38079.51
@@ -1120,7 +1120,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2013	NM	Catron	35003	Oil & Gas		Rents	136128
 2013	NM	Chaves	35005	Oil & Gas		Bonus	917100
 2013	NM	Chaves	35005	Oil & Gas		Other Revenues	106692.36
-2013	NM	Chaves	35005	Oil & Gas		Other Roy Vals	-49501.41
+2013	NM	Chaves	35005	Oil & Gas		Other Royalties	-49501.41
 2013	NM	Chaves	35005	Oil & Gas		Rents	330995
 2013	NM	Chaves	35005	Gas (mcf)	Fuel Gas	Royalties	977.71
 2013	NM	Chaves	35005	Gas (mcf)	Gas Lost - Flared or Vented	Royalties	24268.3
@@ -1139,7 +1139,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2013	NM	Eddy	35015	Potassium		Bonus	291992
 2013	NM	Eddy	35015	Oil & Gas		Other Revenues	439287.02
 2013	NM	Eddy	35015	Sodium		Other Revenues	-9240
-2013	NM	Eddy	35015	Oil & Gas		Other Roy Vals	3966478.45
+2013	NM	Eddy	35015	Oil & Gas		Other Royalties	3966478.45
 2013	NM	Eddy	35015	Oil & Gas		Rents	527499.31
 2013	NM	Eddy	35015	Potassium		Rents	-23900.5
 2013	NM	Eddy	35015	Sodium		Rents	-2200
@@ -1163,7 +1163,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2013	NM	Lea	35025	Potassium		Bonus	212952
 2013	NM	Lea	35025	Oil & Gas		Other Revenues	60974.44
 2013	NM	Lea	35025	Sodium		Other Revenues	-120
-2013	NM	Lea	35025	Oil & Gas		Other Roy Vals	3001505.57
+2013	NM	Lea	35025	Oil & Gas		Other Royalties	3001505.57
 2013	NM	Lea	35025	Oil & Gas		Rents	281106.4
 2013	NM	Lea	35025	Potassium		Rents	-1643
 2013	NM	Lea	35025	Sodium		Rents	-720
@@ -1190,7 +1190,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2013	NM	Quay	35037	Other Products	Carbon Dioxide Gas (CO2)	Royalties	83889.77
 2013	NM	Rio Arriba	35039	Oil & Gas		Bonus	5452697
 2013	NM	Rio Arriba	35039	Oil & Gas		Other Revenues	6500.47
-2013	NM	Rio Arriba	35039	Oil & Gas		Other Roy Vals	-190203.06
+2013	NM	Rio Arriba	35039	Oil & Gas		Other Royalties	-190203.06
 2013	NM	Rio Arriba	35039	Oil & Gas		Rents	81438.67
 2013	NM	Rio Arriba	35039	Gas (mcf)	Coal Bed Methane	Royalties	47075879.22
 2013	NM	Rio Arriba	35039	Gas (mcf)	Fuel Gas	Royalties	909762.37
@@ -1202,7 +1202,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2013	NM	Rio Arriba	35039	Oil (bbl)	Inlet Scrubber	Royalties	39374.53
 2013	NM	Rio Arriba	35039	Oil (bbl)	Oil	Royalties	3553751.71
 2013	NM	Roosevelt	35041	Oil & Gas		Other Revenues	8907.33
-2013	NM	Roosevelt	35041	Oil & Gas		Other Roy Vals	1127.5
+2013	NM	Roosevelt	35041	Oil & Gas		Other Royalties	1127.5
 2013	NM	Roosevelt	35041	Oil & Gas		Rents	25477.5
 2013	NM	Roosevelt	35041	Gas (mcf)	Processed (Residue) Gas	Royalties	15075.88
 2013	NM	Roosevelt	35041	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	377004.35
@@ -1211,7 +1211,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2013	NM	Roosevelt	35041	Oil (bbl)	Oil	Royalties	879268.61
 2013	NM	San Juan	35045	Oil & Gas		Bonus	325600
 2013	NM	San Juan	35045	Oil & Gas		Other Revenues	39070.53
-2013	NM	San Juan	35045	Oil & Gas		Other Roy Vals	-113851.31
+2013	NM	San Juan	35045	Oil & Gas		Other Royalties	-113851.31
 2013	NM	San Juan	35045	Coal		Rents	52716
 2013	NM	San Juan	35045	Oil & Gas		Rents	168920.25
 2013	NM	San Juan	35045	Gas (mcf)	Coal Bed Methane	Royalties	43757809.46
@@ -1226,7 +1226,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2013	NM	San Miguel	35047	Oil & Gas		Rents	1762
 2013	NM	Sandoval	35043	Oil & Gas		Bonus	981075
 2013	NM	Sandoval	35043	Oil & Gas		Other Revenues	58503.82
-2013	NM	Sandoval	35043	Oil & Gas		Other Roy Vals	359991.36
+2013	NM	Sandoval	35043	Oil & Gas		Other Royalties	359991.36
 2013	NM	Sandoval	35043	Oil & Gas		Rents	95895
 2013	NM	Sandoval	35043	Gas (mcf)	Coal Bed Methane	Royalties	443919.61
 2013	NM	Sandoval	35043	Gas (mcf)	Fuel Gas	Royalties	1810.4
@@ -1249,10 +1249,10 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2004	NM	Lea	35025	Potassium		Other Revenues	41862.49
 2004	NM	Lea	35025	Other Products	Brine Barrels	Royalties	1732.99
 2004	NM	Mckinley	35031	Coal (ton)	Coal	Royalties	875966.28
-2004	NM	San Juan	35045	Coal		Other Royalty Vals	2444117.9
+2004	NM	San Juan	35045	Coal		Other Royalties	2444117.9
 2004	NM	San Juan	35045	Coal (ton)	Coal	Royalties	8547172.9
 2005	NM	Eddy	35015	Potassium		Other Revenues	103314.51
-2005	NM	Eddy	35015	Potassium		Other Royalty Vals	299039.46
+2005	NM	Eddy	35015	Potassium		Other Royalties	299039.46
 2005	NM	Eddy	35015	Other Products	Langbeinite	Royalties	1562537.35
 2005	NM	Eddy	35015	Other Products	Muriate Of Potash-Granular	Royalties	1073341.37
 2005	NM	Eddy	35015	Other Products	Muriate Of Potash-Standard	Royalties	69754.1
@@ -1262,8 +1262,8 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2005	NM	Lea	35025	Sodium		Other Revenues	120
 2005	NM	Lea	35025	Other Products	Brine Barrels	Royalties	166.67
 2005	NM	Mckinley	35031	Coal (ton)	Coal	Royalties	914220.33
-2005	NM	San Juan	35045	Coal		Other Roy Vals	96242.63
-2005	NM	San Juan	35045	Coal		Other Royalty Vals	1030272.62
+2005	NM	San Juan	35045	Coal		Other Royalties	96242.63
+2005	NM	San Juan	35045	Coal		Other Royalties	1030272.62
 2005	NM	San Juan	35045	Coal (ton)	Coal	Royalties	13361021.26
 2006	NM	Eddy	35015	Potassium		Other Revenues	379762.89
 2006	NM	Eddy	35015	Other Products	Langbeinite	Royalties	1845334.99
@@ -1276,7 +1276,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2006	NM	Lea	35025	Sodium		Other Revenues	120
 2006	NM	Lea	35025	Other Products	Brine Barrels	Royalties	2061.3
 2006	NM	Mckinley	35031	Coal (ton)	Coal	Royalties	877859.12
-2006	NM	San Juan	35045	Coal		Other Royalty Vals	1213214.45
+2006	NM	San Juan	35045	Coal		Other Royalties	1213214.45
 2006	NM	San Juan	35045	Coal (ton)	Coal	Royalties	9066869.76
 2007	NM	Eddy	35015	Potassium		Other Revenues	133217.51
 2007	NM	Eddy	35015	Other Products	Langbeinite	Royalties	3073318.3
@@ -1289,8 +1289,8 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2007	NM	Lea	35025	Sodium		Other Revenues	120
 2007	NM	Lea	35025	Other Products	Brine Barrels	Royalties	625.37
 2007	NM	Mckinley	35031	Coal (ton)	Coal	Royalties	1882582.77
-2007	NM	San Juan	35045	Coal		Other Roy Vals	588045.06
-2007	NM	San Juan	35045	Coal		Other Royalty Vals	567353.05
+2007	NM	San Juan	35045	Coal		Other Royalties	588045.06
+2007	NM	San Juan	35045	Coal		Other Royalties	567353.05
 2007	NM	San Juan	35045	Coal (ton)	Coal	Royalties	9076566.4
 2008	NM	Eddy	35015	Potassium		Other Revenues	301385.51
 2008	NM	Eddy	35015	Sodium		Other Revenues	-5662.07
@@ -1305,7 +1305,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2008	NM	Lea	35025	Sodium		Other Revenues	120
 2008	NM	Lea	35025	Other Products	Brine Barrels	Royalties	1528.38
 2008	NM	Mckinley	35031	Coal (ton)	Coal	Royalties	-31651.08
-2008	NM	San Juan	35045	Coal		Other Roy Vals	1276211.69
+2008	NM	San Juan	35045	Coal		Other Royalties	1276211.69
 2008	NM	San Juan	35045	Coal (ton)	Coal	Royalties	14019782.13
 2009	NM	Eddy	35015	Potassium		Other Revenues	280498.76
 2009	NM	Eddy	35015	Other Products	Brine Barrels	Royalties	-60.02
@@ -1317,7 +1317,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2009	NM	Eddy	35015	Other Products	Sylvite-Raw Ore	Royalties	4316.5
 2009	NM	Lea	35025	Potassium		Other Revenues	66318.49
 2009	NM	Lea	35025	Other Products	Brine Barrels	Royalties	28.72
-2009	NM	San Juan	35045	Coal		Other Roy Vals	163101.7
+2009	NM	San Juan	35045	Coal		Other Royalties	163101.7
 2009	NM	San Juan	35045	Coal (ton)	Coal	Royalties	1188144.14
 2010	NM	Eddy	35015	Potassium		Other Revenues	115474.48
 2010	NM	Eddy	35015	Other Products	Langbeinite	Royalties	8173603.14
@@ -1327,7 +1327,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2010	NM	Eddy	35015	Other Products	Salt	Royalties	216177.09
 2010	NM	Eddy	35015	Other Products	Sylvite-Raw Ore	Royalties	5774.34
 2010	NM	Lea	35025	Potassium		Other Revenues	66318.49
-2010	NM	San Juan	35045	Coal		Other Roy Vals	82870.55
+2010	NM	San Juan	35045	Coal		Other Royalties	82870.55
 2010	NM	San Juan	35045	Coal (ton)	Coal	Royalties	6364128.36
 2011	NM	Eddy	35015	Potassium		Other Revenues	238835.91
 2011	NM	Eddy	35015	Other Products	Langbeinite	Royalties	7046699.45
@@ -1339,7 +1339,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2011	NM	Lea	35025	Potassium		Other Revenues	66318.49
 2011	NM	Lea	35025	Sodium		Other Revenues	-17.81
 2011	NM	Lea	35025	Other Products	Brine Barrels	Royalties	17.81
-2011	NM	San Juan	35045	Coal		Other Roy Vals	78440.29
+2011	NM	San Juan	35045	Coal		Other Royalties	78440.29
 2011	NM	San Juan	35045	Coal (ton)	Coal	Royalties	8989647.39
 2012	NM	Eddy	35015	Potassium		Other Revenues	262439.13
 2012	NM	Eddy	35015	Other Products	Langbeinite	Royalties	10943964.43
@@ -1350,7 +1350,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2012	NM	Eddy	35015	Other Products	Sylvite-Raw Ore	Royalties	1614.95
 2012	NM	Lea	35025	Potassium		Other Revenues	66318.49
 2012	NM	Lea	35025	Sodium		Other Revenues	120
-2012	NM	San Juan	35045	Coal		Other Roy Vals	71304.03
+2012	NM	San Juan	35045	Coal		Other Royalties	71304.03
 2012	NM	San Juan	35045	Coal (ton)	Coal	Royalties	15455162.21
 2013	NM	Eddy	35015	Potassium		Other Revenues	276776.51
 2013	NM	Eddy	35015	Other Products	Langbeinite	Royalties	10026132.55
@@ -1361,5 +1361,5 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2013	NM	Eddy	35015	Other Products	Sylvite-Raw Ore	Royalties	1513.19
 2013	NM	Lea	35025	Potassium		Other Revenues	66318.49
 2013	NM	Lea	35025	Sodium		Other Revenues	120
-2013	NM	San Juan	35045	Coal		Other Roy Vals	25449.02
+2013	NM	San Juan	35045	Coal		Other Royalties	25449.02
 2013	NM	San Juan	35045	Coal (ton)	Coal	Royalties	14827533.41

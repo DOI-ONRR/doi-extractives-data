@@ -56,7 +56,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2009	PA	Forest	42053	Gas (mcf)	Processed (Residue) Gas	Royalties	12773.11
 2009	PA	Forest	42053	Oil (bbl)	Oil	Royalties	36882.35
 2009	PA	Indiana	42063	Oil & Gas		Other Revenues	2568.96
-2009	PA	Indiana	42063	Oil & Gas		Other Roy Vals	34.2
+2009	PA	Indiana	42063	Oil & Gas		Other Royalties	34.2
 2009	PA	Indiana	42063	Gas (mcf)	Processed (Residue) Gas	Royalties	12738.26
 2009	PA	Indiana	42063	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	16436.48
 2009	PA	Jefferson	42065	Oil & Gas		Other Revenues	15
@@ -68,7 +68,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2010	PA	Forest	42053	Gas (mcf)	Processed (Residue) Gas	Royalties	49277.81
 2010	PA	Forest	42053	Oil (bbl)	Oil	Royalties	64257.05
 2010	PA	Indiana	42063	Oil & Gas		Other Revenues	3305.11
-2010	PA	Indiana	42063	Oil & Gas		Other Roy Vals	17.1
+2010	PA	Indiana	42063	Oil & Gas		Other Royalties	17.1
 2010	PA	Indiana	42063	Gas (mcf)	Processed (Residue) Gas	Royalties	5625.75
 2010	PA	Indiana	42063	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	30915.63
 2010	PA	Jefferson	42065	Oil & Gas		Other Revenues	18.75

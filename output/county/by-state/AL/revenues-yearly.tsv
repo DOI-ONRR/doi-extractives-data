@@ -1,6 +1,6 @@
 Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2004	AL	Baldwin	01003	Oil & Gas		Other Revenues	-48.81
-2004	AL	Baldwin	01003	Oil & Gas		Other Roy Vals	621
+2004	AL	Baldwin	01003	Oil & Gas		Other Royalties	621
 2004	AL	Baldwin	01003	Gas (mcf)	Fuel Gas	Royalties	896.61
 2004	AL	Baldwin	01003	Gas (mcf)	Processed (Residue) Gas	Royalties	19946.39
 2004	AL	Baldwin	01003	NGL (gal)	Gas Plant Products	Royalties	0.01
@@ -22,7 +22,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2004	AL	Lamar	01075	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	2662.04
 2004	AL	Lamar	01075	Oil (bbl)	Oil	Royalties	5253
 2004	AL	Mobile	01097	Oil & Gas		Other Revenues	-0.35
-2004	AL	Mobile	01097	Oil & Gas		Other Roy Vals	3880
+2004	AL	Mobile	01097	Oil & Gas		Other Royalties	3880
 2004	AL	Mobile	01097	Oil & Gas		Rents	82
 2004	AL	Mobile	01097	Gas (mcf)	Fuel Gas	Royalties	2137.46
 2004	AL	Mobile	01097	Gas (mcf)	Processed (Residue) Gas	Royalties	47169.93
@@ -31,7 +31,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2004	AL	Mobile	01097	Oil (bbl)	Oil	Royalties	11817.54
 2004	AL	Mobile	01097	Oil (bbl)	Other Liquid Hydrocarbons	Royalties	51.43
 2004	AL	Mobile	01097	Other Products	Sulfur	Royalties	476.63
-2004	AL	Mobile/Water	01097	Oil & Gas		Other Roy Vals	150
+2004	AL	Mobile/Water	01097	Oil & Gas		Other Royalties	150
 2004	AL	Mobile/Water	01297	Oil & Gas		Rents	5
 2004	AL	Mobile/Water	01297	Gas (mcf)	Processed (Residue) Gas	Royalties	2695.99
 2004	AL	Mobile/Water	01297	NGL (gal)	Gas Plant Products	Royalties	0.13
@@ -39,13 +39,13 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2004	AL	Mobile/Water	01297	Other Products	Sulfur	Royalties	6.09
 2004	AL	Shelby	01117	Coal		Rents	-3.48
 2004	AL	Tuscaloosa	01125	Oil & Gas		Bonus	78294
-2004	AL	Tuscaloosa	01125	Oil & Gas		Other Roy Vals	14750
+2004	AL	Tuscaloosa	01125	Oil & Gas		Other Royalties	14750
 2004	AL	Tuscaloosa	01125	Oil & Gas		Rents	2161.5
 2004	AL	Tuscaloosa	01125	Gas (mcf)	Coal Bed Methane	Royalties	6080.7
 2004	AL	Tuscaloosa	01125	Gas (mcf)	Processed (Residue) Gas	Royalties	45098.73
 2004	AL	Tuscaloosa	01125	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	395876.46
 2005	AL	Baldwin	01003	Oil & Gas		Other Revenues	-9.48
-2005	AL	Baldwin	01003	Oil & Gas		Other Roy Vals	-1933.89
+2005	AL	Baldwin	01003	Oil & Gas		Other Royalties	-1933.89
 2005	AL	Baldwin	01003	Gas (mcf)	Processed (Residue) Gas	Royalties	18721.16
 2005	AL	Baldwin	01003	Oil (bbl)	Other Liquid Hydrocarbons	Royalties	24.7
 2005	AL	Baldwin	01003	Other Products	Sulfur	Royalties	117.46
@@ -64,25 +64,25 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2005	AL	Lamar	01075	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	1723.57
 2005	AL	Lamar	01075	Oil (bbl)	Oil	Royalties	5724.66
 2005	AL	Mobile	01097	Oil & Gas		Other Revenues	80.17
-2005	AL	Mobile	01097	Oil & Gas		Other Roy Vals	4881.73
+2005	AL	Mobile	01097	Oil & Gas		Other Royalties	4881.73
 2005	AL	Mobile	01097	Oil & Gas		Rents	86
 2005	AL	Mobile	01097	Gas (mcf)	Processed (Residue) Gas	Royalties	91642.27
 2005	AL	Mobile	01097	Oil (bbl)	Oil	Royalties	13694.3
 2005	AL	Mobile	01097	Oil (bbl)	Other Liquid Hydrocarbons	Royalties	59.34
 2005	AL	Mobile	01097	Other Products	Sulfur	Royalties	410.79
-2005	AL	Mobile/Water	01097	Oil & Gas		Other Roy Vals	250
+2005	AL	Mobile/Water	01097	Oil & Gas		Other Royalties	250
 2005	AL	Mobile/Water	01097	Oil & Gas		Rents	5
 2005	AL	Mobile/Water	01097	Gas (mcf)	Processed (Residue) Gas	Royalties	3696.77
 2005	AL	Mobile/Water	01097	NGL (gal)	Gas Plant Products	Royalties	4.69
 2005	AL	Mobile/Water	01097	Oil (bbl)	Condensate	Royalties	4.19
 2005	AL	Mobile/Water	01097	Other Products	Sulfur	Royalties	5.21
-2005	AL	Tuscaloosa	01125	Oil & Gas		Other Roy Vals	13200
+2005	AL	Tuscaloosa	01125	Oil & Gas		Other Royalties	13200
 2005	AL	Tuscaloosa	01125	Oil & Gas		Rents	1741.5
 2005	AL	Tuscaloosa	01125	Gas (mcf)	Coal Bed Methane	Royalties	95720.07
 2005	AL	Tuscaloosa	01125	Gas (mcf)	Processed (Residue) Gas	Royalties	90227.32
 2005	AL	Tuscaloosa	01125	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	493536.78
 2006	AL	Baldwin	01003	Oil & Gas		Other Revenues	-11533.41
-2006	AL	Baldwin	01003	Oil & Gas		Other Roy Vals	-172.1
+2006	AL	Baldwin	01003	Oil & Gas		Other Royalties	-172.1
 2006	AL	Baldwin	01003	Gas (mcf)	Fuel Gas	Royalties	-1218.89
 2006	AL	Baldwin	01003	Gas (mcf)	Processed (Residue) Gas	Royalties	-68190.94
 2006	AL	Baldwin	01003	NGL (gal)	Gas Plant Products	Royalties	-20.12
@@ -105,7 +105,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2006	AL	Lamar	01075	Oil (bbl)	Condensate	Royalties	243.33
 2006	AL	Lamar	01075	Oil (bbl)	Oil	Royalties	10278.21
 2006	AL	Mobile	01097	Oil & Gas		Other Revenues	16108.47
-2006	AL	Mobile	01097	Oil & Gas		Other Roy Vals	808.64
+2006	AL	Mobile	01097	Oil & Gas		Other Royalties	808.64
 2006	AL	Mobile	01097	Gas (mcf)	Fuel Gas	Royalties	1787.39
 2006	AL	Mobile	01097	Gas (mcf)	Processed (Residue) Gas	Royalties	255575.34
 2006	AL	Mobile	01097	NGL (gal)	Gas Plant Products	Royalties	20.22
@@ -113,20 +113,20 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2006	AL	Mobile	01097	Oil (bbl)	Oil	Royalties	16954.74
 2006	AL	Mobile	01097	Oil (bbl)	Other Liquid Hydrocarbons	Royalties	19.51
 2006	AL	Mobile	01097	Other Products	Sulfur	Royalties	1571.85
-2006	AL	Mobile/Water	01097	Oil & Gas		Other Roy Vals	-330
+2006	AL	Mobile/Water	01097	Oil & Gas		Other Royalties	-330
 2006	AL	Mobile/Water	01097	Oil & Gas		Rents	5
 2006	AL	Mobile/Water	01097	Gas (mcf)	Processed (Residue) Gas	Royalties	3861.36
 2006	AL	Mobile/Water	01097	NGL (gal)	Gas Plant Products	Royalties	9.35
 2006	AL	Mobile/Water	01097	Oil (bbl)	Condensate	Royalties	4.94
 2006	AL	Mobile/Water	01097	Other Products	Sulfur	Royalties	4.94
 2006	AL	Tuscaloosa	01125	Oil & Gas		Bonus	175620
-2006	AL	Tuscaloosa	01125	Oil & Gas		Other Roy Vals	7992.22
+2006	AL	Tuscaloosa	01125	Oil & Gas		Other Royalties	7992.22
 2006	AL	Tuscaloosa	01125	Oil & Gas		Rents	11840.5
 2006	AL	Tuscaloosa	01125	Gas (mcf)	Coal Bed Methane	Royalties	50311.49
 2006	AL	Tuscaloosa	01125	Gas (mcf)	Processed (Residue) Gas	Royalties	61174.05
 2006	AL	Tuscaloosa	01125	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	470451.92
 2007	AL	Baldwin	01003	Oil & Gas		Other Revenues	7.03
-2007	AL	Baldwin	01003	Oil & Gas		Other Roy Vals	19.17
+2007	AL	Baldwin	01003	Oil & Gas		Other Royalties	19.17
 2007	AL	Baldwin	01003	Gas (mcf)	Processed (Residue) Gas	Royalties	6669.31
 2007	AL	Baldwin	01003	Oil (bbl)	Other Liquid Hydrocarbons	Royalties	5.32
 2007	AL	Baldwin	01003	Other Products	Sulfur	Royalties	17.74
@@ -151,12 +151,12 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2007	AL	Lamar	01075	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	1096.57
 2007	AL	Lamar	01075	Oil (bbl)	Oil	Royalties	8375.91
 2007	AL	Mobile	01097	Oil & Gas		Other Revenues	109.3
-2007	AL	Mobile	01097	Oil & Gas		Other Roy Vals	376.81
+2007	AL	Mobile	01097	Oil & Gas		Other Royalties	376.81
 2007	AL	Mobile	01097	Gas (mcf)	Processed (Residue) Gas	Royalties	130944.52
 2007	AL	Mobile	01097	Oil (bbl)	Oil	Royalties	18177.88
 2007	AL	Mobile	01097	Oil (bbl)	Other Liquid Hydrocarbons	Royalties	13.16
 2007	AL	Mobile	01097	Other Products	Sulfur	Royalties	347.63
-2007	AL	Mobile/Water	01097	Oil & Gas		Other Roy Vals	29
+2007	AL	Mobile/Water	01097	Oil & Gas		Other Royalties	29
 2007	AL	Mobile/Water	01097	Oil & Gas		Rents	5
 2007	AL	Mobile/Water	01097	Gas (mcf)	Processed (Residue) Gas	Royalties	3535.57
 2007	AL	Mobile/Water	01097	NGL (gal)	Gas Plant Products	Royalties	418.11
@@ -167,13 +167,13 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2007	AL	Pickens	01107	Oil & Gas		Bonus	7130
 2007	AL	Pickens	01107	Oil & Gas		Rents	1069.5
 2007	AL	Tuscaloosa	01125	Oil & Gas		Bonus	58260
-2007	AL	Tuscaloosa	01125	Oil & Gas		Other Roy Vals	-5317.22
+2007	AL	Tuscaloosa	01125	Oil & Gas		Other Royalties	-5317.22
 2007	AL	Tuscaloosa	01125	Oil & Gas		Rents	11246.5
 2007	AL	Tuscaloosa	01125	Gas (mcf)	Coal Bed Methane	Royalties	216445.32
 2007	AL	Tuscaloosa	01125	Gas (mcf)	Processed (Residue) Gas	Royalties	61381.12
 2007	AL	Tuscaloosa	01125	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	199930.39
 2008	AL	Baldwin	01003	Oil & Gas		Other Revenues	-455.7
-2008	AL	Baldwin	01003	Oil & Gas		Other Roy Vals	-6.53
+2008	AL	Baldwin	01003	Oil & Gas		Other Royalties	-6.53
 2008	AL	Baldwin	01003	Gas (mcf)	Fuel Gas	Royalties	-1738.59
 2008	AL	Baldwin	01003	Gas (mcf)	Processed (Residue) Gas	Royalties	9937.8
 2008	AL	Baldwin	01003	NGL (gal)	Gas Plant Products	Royalties	-1.41
@@ -199,7 +199,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2008	AL	Lamar	01075	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	1290.78
 2008	AL	Lamar	01075	Oil (bbl)	Oil	Royalties	13528.3
 2008	AL	Mobile	01097	Oil & Gas		Other Revenues	-611.02
-2008	AL	Mobile	01097	Oil & Gas		Other Roy Vals	-625.88
+2008	AL	Mobile	01097	Oil & Gas		Other Royalties	-625.88
 2008	AL	Mobile	01097	Oil & Gas		Rents	12
 2008	AL	Mobile	01097	Gas (mcf)	Fuel Gas	Royalties	-4318.71
 2008	AL	Mobile	01097	Gas (mcf)	Processed (Residue) Gas	Royalties	193553.01
@@ -207,7 +207,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2008	AL	Mobile	01097	Oil (bbl)	Oil	Royalties	27544.73
 2008	AL	Mobile	01097	Oil (bbl)	Other Liquid Hydrocarbons	Royalties	43.08
 2008	AL	Mobile	01097	Other Products	Sulfur	Royalties	11624.46
-2008	AL	Mobile/Water	01097	Oil & Gas		Other Roy Vals	-17
+2008	AL	Mobile/Water	01097	Oil & Gas		Other Royalties	-17
 2008	AL	Mobile/Water	01097	Oil & Gas		Rents	5
 2008	AL	Mobile/Water	01097	Gas (mcf)	Processed (Residue) Gas	Royalties	3854.31
 2008	AL	Mobile/Water	01097	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	3.29
@@ -218,13 +218,13 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2008	AL	Pickens	01107	Oil & Gas		Rents	1069.5
 2008	AL	Shelby	01117	Oil & Gas		Bonus	310
 2008	AL	Shelby	01117	Oil & Gas		Rents	232.5
-2008	AL	Tuscaloosa	01125	Oil & Gas		Other Roy Vals	1400
+2008	AL	Tuscaloosa	01125	Oil & Gas		Other Royalties	1400
 2008	AL	Tuscaloosa	01125	Oil & Gas		Rents	12526.5
 2008	AL	Tuscaloosa	01125	Gas (mcf)	Coal Bed Methane	Royalties	77328.03
 2008	AL	Tuscaloosa	01125	Gas (mcf)	Processed (Residue) Gas	Royalties	67210.01
 2008	AL	Tuscaloosa	01125	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	434950.63
 2009	AL	Baldwin	01003	Oil & Gas		Other Revenues	33.67
-2009	AL	Baldwin	01003	Oil & Gas		Other Roy Vals	-217.64
+2009	AL	Baldwin	01003	Oil & Gas		Other Royalties	-217.64
 2009	AL	Baldwin	01003	Gas (mcf)	Processed (Residue) Gas	Royalties	4499.12
 2009	AL	Baldwin	01003	Oil (bbl)	Other Liquid Hydrocarbons	Royalties	2.18
 2009	AL	Baldwin	01003	Other Products	Sulfur	Royalties	140.04
@@ -243,18 +243,18 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2009	AL	Hale	01065	Oil & Gas		Bonus	1284
 2009	AL	Hale	01065	Oil & Gas		Rents	27853
 2009	AL	Jefferson	01073	Coal		Rents	5070
-2009	AL	Lamar	01075	Oil & Gas		Other Roy Vals	-250
+2009	AL	Lamar	01075	Oil & Gas		Other Royalties	-250
 2009	AL	Lamar	01075	Oil & Gas		Rents	324
 2009	AL	Lamar	01075	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	429.88
 2009	AL	Lamar	01075	Oil (bbl)	Oil	Royalties	6985.11
 2009	AL	Mobile	01097	Oil & Gas		Other Revenues	783.99
-2009	AL	Mobile	01097	Oil & Gas		Other Roy Vals	-4275.36
+2009	AL	Mobile	01097	Oil & Gas		Other Royalties	-4275.36
 2009	AL	Mobile	01097	Oil & Gas		Rents	-86
 2009	AL	Mobile	01097	Gas (mcf)	Processed (Residue) Gas	Royalties	88344.46
 2009	AL	Mobile	01097	Oil (bbl)	Oil	Royalties	14581.29
 2009	AL	Mobile	01097	Oil (bbl)	Other Liquid Hydrocarbons	Royalties	1.76
 2009	AL	Mobile	01097	Other Products	Sulfur	Royalties	2733.49
-2009	AL	Mobile/Water	01097	Oil & Gas		Other Roy Vals	-52
+2009	AL	Mobile/Water	01097	Oil & Gas		Other Royalties	-52
 2009	AL	Mobile/Water	01097	Oil & Gas		Rents	5
 2009	AL	Mobile/Water	01097	Gas (mcf)	Processed (Residue) Gas	Royalties	1606.04
 2009	AL	Mobile/Water	01097	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	7.75
@@ -266,13 +266,13 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2009	AL	Shelby	01117	Oil & Gas		Rents	465
 2009	AL	Tuscaloosa	01125	Oil & Gas		Bonus	3528
 2009	AL	Tuscaloosa	01125	Oil & Gas		Other Revenues	158
-2009	AL	Tuscaloosa	01125	Oil & Gas		Other Roy Vals	-9300
+2009	AL	Tuscaloosa	01125	Oil & Gas		Other Royalties	-9300
 2009	AL	Tuscaloosa	01125	Oil & Gas		Rents	12652.5
 2009	AL	Tuscaloosa	01125	Gas (mcf)	Coal Bed Methane	Royalties	46198.28
 2009	AL	Tuscaloosa	01125	Gas (mcf)	Processed (Residue) Gas	Royalties	33317.33
 2009	AL	Tuscaloosa	01125	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	170150.68
 2010	AL	Baldwin	01003	Oil & Gas		Other Revenues	8.14
-2010	AL	Baldwin	01003	Oil & Gas		Other Roy Vals	4783.67
+2010	AL	Baldwin	01003	Oil & Gas		Other Royalties	4783.67
 2010	AL	Baldwin	01003	Gas (mcf)	Processed (Residue) Gas	Royalties	3478.38
 2010	AL	Baldwin	01003	Oil (bbl)	Other Liquid Hydrocarbons	Royalties	8.09
 2010	AL	Baldwin	01003	Other Products	Sulfur	Royalties	69.79
@@ -302,12 +302,12 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2010	AL	Marshall	01095	Oil & Gas		Bonus	45
 2010	AL	Marshall	01095	Oil & Gas		Rents	33.75
 2010	AL	Mobile	01097	Oil & Gas		Other Revenues	159.93
-2010	AL	Mobile	01097	Oil & Gas		Other Roy Vals	-189.25
+2010	AL	Mobile	01097	Oil & Gas		Other Royalties	-189.25
 2010	AL	Mobile	01097	Gas (mcf)	Processed (Residue) Gas	Royalties	68299.31
 2010	AL	Mobile	01097	Oil (bbl)	Oil	Royalties	18488.05
 2010	AL	Mobile	01097	Oil (bbl)	Other Liquid Hydrocarbons	Royalties	23.68
 2010	AL	Mobile	01097	Other Products	Sulfur	Royalties	1376.49
-2010	AL	Mobile/Water	01097	Oil & Gas		Other Roy Vals	-4
+2010	AL	Mobile/Water	01097	Oil & Gas		Other Royalties	-4
 2010	AL	Mobile/Water	01097	Oil & Gas		Rents	5
 2010	AL	Mobile/Water	01097	Gas (mcf)	Processed (Residue) Gas	Royalties	1123.2
 2010	AL	Mobile/Water	01097	NGL (gal)	Gas Plant Products	Royalties	356.91
@@ -318,13 +318,13 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2010	AL	St Clair	01115	Oil & Gas		Bonus	3280
 2010	AL	St Clair	01115	Oil & Gas		Rents	480
 2010	AL	Tuscaloosa	01125	Oil & Gas		Bonus	66832
-2010	AL	Tuscaloosa	01125	Oil & Gas		Other Roy Vals	5500.49
+2010	AL	Tuscaloosa	01125	Oil & Gas		Other Royalties	5500.49
 2010	AL	Tuscaloosa	01125	Oil & Gas		Rents	14485.5
 2010	AL	Tuscaloosa	01125	Gas (mcf)	Coal Bed Methane	Royalties	106494.3
 2010	AL	Tuscaloosa	01125	Gas (mcf)	Processed (Residue) Gas	Royalties	35264.53
 2010	AL	Tuscaloosa	01125	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	146633.85
 2011	AL	Baldwin	01003	Oil & Gas		Other Revenues	-1.18
-2011	AL	Baldwin	01003	Oil & Gas		Other Roy Vals	-37.17
+2011	AL	Baldwin	01003	Oil & Gas		Other Royalties	-37.17
 2011	AL	Baldwin	01003	Gas (mcf)	Processed (Residue) Gas	Royalties	2530.17
 2011	AL	Baldwin	01003	NGL (gal)	Gas Plant Products	Royalties	367.28
 2011	AL	Baldwin	01003	Oil (bbl)	Other Liquid Hydrocarbons	Royalties	94.73
@@ -357,13 +357,13 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2011	AL	Lamar	01075	Oil (bbl)	Oil	Royalties	9595.46
 2011	AL	Marshall	01095	Oil & Gas		Rents	33.75
 2011	AL	Mobile	01097	Oil & Gas		Other Revenues	-22.71
-2011	AL	Mobile	01097	Oil & Gas		Other Roy Vals	-730.25
+2011	AL	Mobile	01097	Oil & Gas		Other Royalties	-730.25
 2011	AL	Mobile	01097	Gas (mcf)	Processed (Residue) Gas	Royalties	49682.64
 2011	AL	Mobile	01097	NGL (gal)	Gas Plant Products	Royalties	7211.65
 2011	AL	Mobile	01097	Oil (bbl)	Oil	Royalties	24402.32
 2011	AL	Mobile	01097	Oil (bbl)	Other Liquid Hydrocarbons	Royalties	235.26
 2011	AL	Mobile	01097	Other Products	Sulfur	Royalties	4215.41
-2011	AL	Mobile/Water	01097	Oil & Gas		Other Roy Vals	-94.22
+2011	AL	Mobile/Water	01097	Oil & Gas		Other Royalties	-94.22
 2011	AL	Mobile/Water	01097	Oil & Gas		Rents	5
 2011	AL	Mobile/Water	01097	Gas (mcf)	Processed (Residue) Gas	Royalties	4637.04
 2011	AL	Mobile/Water	01097	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	3.89
@@ -375,13 +375,13 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2011	AL	Shelby	01117	Oil & Gas		Rents	57
 2011	AL	St Clair	01115	Oil & Gas		Rents	480
 2011	AL	Tuscaloosa	01125	Oil & Gas		Bonus	-2445.25
-2011	AL	Tuscaloosa	01125	Oil & Gas		Other Roy Vals	-26800.28
+2011	AL	Tuscaloosa	01125	Oil & Gas		Other Royalties	-26800.28
 2011	AL	Tuscaloosa	01125	Oil & Gas		Rents	3297
 2011	AL	Tuscaloosa	01125	Gas (mcf)	Coal Bed Methane	Royalties	91425.17
 2011	AL	Tuscaloosa	01125	Gas (mcf)	Processed (Residue) Gas	Royalties	29037.79
 2011	AL	Tuscaloosa	01125	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	85989.93
 2012	AL	Baldwin	01003	Oil & Gas		Other Revenues	1.48
-2012	AL	Baldwin	01003	Oil & Gas		Other Roy Vals	116.92
+2012	AL	Baldwin	01003	Oil & Gas		Other Royalties	116.92
 2012	AL	Baldwin	01003	Gas (mcf)	Processed (Residue) Gas	Royalties	1447.62
 2012	AL	Baldwin	01003	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	22.61
 2012	AL	Baldwin	01003	NGL (gal)	Gas Plant Products	Royalties	296.8
@@ -411,14 +411,14 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2012	AL	Lamar	01075	Oil (bbl)	Oil	Royalties	9703.21
 2012	AL	Marshall	01095	Oil & Gas		Rents	33.75
 2012	AL	Mobile	01097	Oil & Gas		Other Revenues	28.97
-2012	AL	Mobile	01097	Oil & Gas		Other Roy Vals	1305.63
+2012	AL	Mobile	01097	Oil & Gas		Other Royalties	1305.63
 2012	AL	Mobile	01097	Gas (mcf)	Processed (Residue) Gas	Royalties	28423.01
 2012	AL	Mobile	01097	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	443.98
 2012	AL	Mobile	01097	NGL (gal)	Gas Plant Products	Royalties	5829.13
 2012	AL	Mobile	01097	Oil (bbl)	Oil	Royalties	24539.78
 2012	AL	Mobile	01097	Oil (bbl)	Other Liquid Hydrocarbons	Royalties	190.97
 2012	AL	Mobile	01097	Other Products	Sulfur	Royalties	3831.14
-2012	AL	Mobile/Water	01097	Oil & Gas		Other Roy Vals	-44
+2012	AL	Mobile/Water	01097	Oil & Gas		Other Royalties	-44
 2012	AL	Mobile/Water	01097	Oil & Gas		Rents	5
 2012	AL	Mobile/Water	01097	Gas (mcf)	Processed (Residue) Gas	Royalties	1045.2
 2012	AL	Mobile/Water	01097	NGL (gal)	Gas Plant Products	Royalties	645.05
@@ -430,13 +430,13 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2012	AL	Shelby	01117	Coal		Rents	-246
 2012	AL	Shelby	01117	Oil & Gas		Rents	289.5
 2012	AL	St Clair	01115	Oil & Gas		Rents	300
-2012	AL	Tuscaloosa	01125	Oil & Gas		Other Roy Vals	1581.29
+2012	AL	Tuscaloosa	01125	Oil & Gas		Other Royalties	1581.29
 2012	AL	Tuscaloosa	01125	Oil & Gas		Rents	4298
 2012	AL	Tuscaloosa	01125	Gas (mcf)	Coal Bed Methane	Royalties	48130.67
 2012	AL	Tuscaloosa	01125	Gas (mcf)	Processed (Residue) Gas	Royalties	17361.95
 2012	AL	Tuscaloosa	01125	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	54924.21
 2013	AL	Baldwin	01003	Oil & Gas		Other Revenues	0.71
-2013	AL	Baldwin	01003	Oil & Gas		Other Roy Vals	-89.74
+2013	AL	Baldwin	01003	Oil & Gas		Other Royalties	-89.74
 2013	AL	Baldwin	01003	Gas (mcf)	Processed (Residue) Gas	Royalties	1774.98
 2013	AL	Baldwin	01003	NGL (gal)	Gas Plant Products	Royalties	188.46
 2013	AL	Baldwin	01003	Oil (bbl)	Other Liquid Hydrocarbons	Royalties	32.39
@@ -460,13 +460,13 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2013	AL	Lamar	01075	Oil (bbl)	Oil	Royalties	8329.47
 2013	AL	Marshall	01095	Oil & Gas		Rents	33.75
 2013	AL	Mobile	01097	Oil & Gas		Other Revenues	13.72
-2013	AL	Mobile	01097	Oil & Gas		Other Roy Vals	-1757.84
+2013	AL	Mobile	01097	Oil & Gas		Other Royalties	-1757.84
 2013	AL	Mobile	01097	Gas (mcf)	Processed (Residue) Gas	Royalties	34850.91
 2013	AL	Mobile	01097	NGL (gal)	Gas Plant Products	Royalties	3700.05
 2013	AL	Mobile	01097	Oil (bbl)	Oil	Royalties	23579.79
 2013	AL	Mobile	01097	Oil (bbl)	Other Liquid Hydrocarbons	Royalties	80.4
 2013	AL	Mobile	01097	Other Products	Sulfur	Royalties	2536.73
-2013	AL	Mobile/Water	01097	Oil & Gas		Other Roy Vals	-14
+2013	AL	Mobile/Water	01097	Oil & Gas		Other Royalties	-14
 2013	AL	Mobile/Water	01097	Oil & Gas		Rents	5
 2013	AL	Mobile/Water	01097	Gas (mcf)	Processed (Residue) Gas	Royalties	895.59
 2013	AL	Mobile/Water	01097	NGL (gal)	Gas Plant Products	Royalties	218.35
@@ -475,7 +475,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2013	AL	Pickens	01107	Oil & Gas		Rents	360
 2013	AL	Shelby	01117	Oil & Gas		Rents	367
 2013	AL	St Clair	01115	Oil & Gas		Rents	300
-2013	AL	Tuscaloosa	01125	Oil & Gas		Other Roy Vals	-3000
+2013	AL	Tuscaloosa	01125	Oil & Gas		Other Royalties	-3000
 2013	AL	Tuscaloosa	01125	Oil & Gas		Rents	4218
 2013	AL	Tuscaloosa	01125	Gas (mcf)	Coal Bed Methane	Royalties	68824.71
 2013	AL	Tuscaloosa	01125	Gas (mcf)	Processed (Residue) Gas	Royalties	21697.57

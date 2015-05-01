@@ -44,7 +44,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2005	KY	Mccreary	21147	Oil & Gas		Other Revenues	2357.71
 2005	KY	Mccreary	21147	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	749.13
 2005	KY	Meade	21163	Oil & Gas		Other Revenues	2294.66
-2005	KY	Meade	21163	Oil (bbl)	Oil Lost	Other Roy Vals	286.06
+2005	KY	Meade	21163	Oil (bbl)	Oil Lost	Other Royalties	286.06
 2005	KY	Meade	21163	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	879.02
 2005	KY	Morgan	21175	Oil & Gas		Rents	467.18
 2005	KY	Owsley	21189	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	1352.91
@@ -167,7 +167,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2009	KY	Owsley	21189	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	667.53
 2009	KY	Owsley	21189	NGL (gal)	Gas Plant Products	Royalties	53.21
 2009	KY	Pike	21195	Oil & Gas		Other Revenues	200
-2009	KY	Pike	21195	Oil & Gas		Other Roy Vals	-1000
+2009	KY	Pike	21195	Oil & Gas		Other Royalties	-1000
 2009	KY	Pike	21195	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	18445.94
 2009	KY	Pike	21195	Oil (bbl)	Oil	Royalties	105
 2009	KY	Whitley	21235	Oil & Gas		Other Revenues	2294.19
@@ -202,7 +202,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2010	KY	Mccreary	21147	Oil & Gas		Other Revenues	2696.83
 2010	KY	Mccreary	21147	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	463.66
 2010	KY	Meade	21163	Oil & Gas		Other Revenues	8508.24
-2010	KY	Meade	21163	Oil & Gas		Other Roy Vals	0.61
+2010	KY	Meade	21163	Oil & Gas		Other Royalties	0.61
 2010	KY	Meade	21163	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	710.11
 2010	KY	Morgan	21175	Oil & Gas		Rents	904.77
 2010	KY	Owsley	21189	Gas (mcf)	Processed (Residue) Gas	Royalties	72.7
@@ -211,7 +211,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2010	KY	Pike	21195	Oil & Gas		Other Revenues	200
 2010	KY	Pike	21195	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	14072.19
 2010	KY	Whitley	21235	Oil & Gas		Other Revenues	4597.66
-2010	KY	Whitley	21235	Oil & Gas		Other Roy Vals	-80
+2010	KY	Whitley	21235	Oil & Gas		Other Royalties	-80
 2010	KY	Whitley	21235	Gas (mcf)	Processed (Residue) Gas	Royalties	14096.7
 2010	KY	Whitley	21235	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	6922.69
 2010	KY	Whitley	21235	NGL (gal)	Gas Plant Products	Royalties	3035.08
@@ -246,7 +246,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2011	KY	Owsley	21189	Gas (mcf)	Processed (Residue) Gas	Royalties	221.45
 2011	KY	Owsley	21189	NGL (gal)	Gas Plant Products	Royalties	64.21
 2011	KY	Pike	21195	Oil & Gas		Other Revenues	20.8
-2011	KY	Pike	21195	Oil & Gas		Other Roy Vals	6.02
+2011	KY	Pike	21195	Oil & Gas		Other Royalties	6.02
 2011	KY	Pike	21195	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	9688.3
 2011	KY	Whitley	21235	Oil & Gas		Bonus	4541.57
 2011	KY	Whitley	21235	Oil & Gas		Other Revenues	128.54
@@ -288,7 +288,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2012	KY	Whitley	21235	NGL (gal)	Gas Plant Products	Royalties	-6391.87
 2013	KY	Bell	21013	Coal		Rents	-877.5
 2013	KY	Clay	21051	Oil & Gas		Other Revenues	848.31
-2013	KY	Clay	21051	Oil & Gas		Other Roy Vals	87.31
+2013	KY	Clay	21051	Oil & Gas		Other Royalties	87.31
 2013	KY	Clay	21051	Coal		Rents	945
 2013	KY	Clay	21051	Gas (mcf)	Fuel Gas	Royalties	-64.24
 2013	KY	Clay	21051	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	17206.15
@@ -302,7 +302,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2013	KY	Lawrence	21127	Oil & Gas		Other Revenues	796.92
 2013	KY	Lawrence	21127	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	-15.99
 2013	KY	Leslie	21131	Oil & Gas		Other Revenues	793.43
-2013	KY	Leslie	21131	Oil & Gas		Other Roy Vals	4692.69
+2013	KY	Leslie	21131	Oil & Gas		Other Royalties	4692.69
 2013	KY	Leslie	21131	Coal		Rents	6600
 2013	KY	Leslie	21131	Gas (mcf)	Processed (Residue) Gas	Royalties	7771.17
 2013	KY	Leslie	21131	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	15615.88
@@ -317,7 +317,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2013	KY	Pike	21195	Oil & Gas		Other Revenues	11997.82
 2013	KY	Pike	21195	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	-515.95
 2013	KY	Whitley	21235	Oil & Gas		Other Revenues	4327.76
-2013	KY	Whitley	21235	Oil & Gas		Other Roy Vals	125
+2013	KY	Whitley	21235	Oil & Gas		Other Royalties	125
 2013	KY	Whitley	21235	Oil & Gas		Rents	3406.18
 2013	KY	Whitley	21235	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	3017.73
 2006	KY	Leslie	21131	Coal (ton)	Coal	Royalties	1420959.21

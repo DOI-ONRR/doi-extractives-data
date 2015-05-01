@@ -24,7 +24,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2007	VA	Dickenson	51051	Oil & Gas		Rents	11212
 2007	VA	Dickenson	51051	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	270713.38
 2007	VA	Giles	51071	Hardrock		Rents	177.5
-2007	VA	Highland	51091	Oil & Gas		Other Roy Vals	57
+2007	VA	Highland	51091	Oil & Gas		Other Royalties	57
 2007	VA	Highland	51091	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	106.52
 2007	VA	Lee	51105	Oil & Gas		Rents	1558.5
 2007	VA	Wise	51195	Oil & Gas		Other Revenues	4881.43
@@ -34,7 +34,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2008	VA	Dickenson	51051	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	232929.86
 2008	VA	Giles	51071	Hardrock		Rents	-177.5
 2008	VA	Highland	51091	Oil & Gas		Bonus	136015
-2008	VA	Highland	51091	Oil & Gas		Other Roy Vals	-43
+2008	VA	Highland	51091	Oil & Gas		Other Royalties	-43
 2008	VA	Highland	51091	Oil & Gas		Rents	15151.5
 2008	VA	Highland	51091	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	43.22
 2008	VA	Lee	51105	Oil & Gas		Rents	1558.5
@@ -52,7 +52,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2010	VA	Dickenson	51051	Oil & Gas		Rents	10160
 2010	VA	Dickenson	51051	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	76606.16
 2010	VA	Giles	51071	Hardrock		Rents	-355
-2010	VA	Highland	51091	Oil & Gas		Other Roy Vals	-14
+2010	VA	Highland	51091	Oil & Gas		Other Royalties	-14
 2010	VA	Highland	51091	Oil & Gas		Rents	15151.5
 2010	VA	Lee	51105	Oil & Gas		Rents	2078
 2010	VA	Wise	51195	Oil & Gas		Other Revenues	1140.1

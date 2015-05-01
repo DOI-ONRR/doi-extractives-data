@@ -1,7 +1,7 @@
 Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2004	AK	Kenai Peninsula Borough	02122	Oil & Gas		Other Revenues	10052.54
-2004	AK	Kenai Peninsula Borough	02122	Gas (mcf)	Unprocessed (Wet) Gas	Other Roy Vals	224935.2
-2004	AK	Kenai Peninsula Borough	02122	Oil & Gas		Other Roy Vals	265932.36
+2004	AK	Kenai Peninsula Borough	02122	Gas (mcf)	Unprocessed (Wet) Gas	Other Royalties	224935.2
+2004	AK	Kenai Peninsula Borough	02122	Oil & Gas		Other Royalties	265932.36
 2004	AK	Kenai Peninsula Borough	02122	Oil & Gas		Rents	7942.54
 2004	AK	Kenai Peninsula Borough	02122	Gas (mcf)	Processed (Residue) Gas	Royalties	159656.28
 2004	AK	Kenai Peninsula Borough	02122	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	10243750.68
@@ -11,8 +11,8 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2004	AK	North Slope Borough	02185	Coal		Rents	2560
 2004	AK	North Slope Borough	02185	Oil & Gas		Rents	8886528
 2005	AK	Kenai Peninsula Borough	02122	Oil & Gas		Other Revenues	14469.52
-2005	AK	Kenai Peninsula Borough	02122	Gas (mcf)	Unprocessed (Wet) Gas	Other Roy Vals	267377.24
-2005	AK	Kenai Peninsula Borough	02122	Oil & Gas		Other Roy Vals	103709.95
+2005	AK	Kenai Peninsula Borough	02122	Gas (mcf)	Unprocessed (Wet) Gas	Other Royalties	267377.24
+2005	AK	Kenai Peninsula Borough	02122	Oil & Gas		Other Royalties	103709.95
 2005	AK	Kenai Peninsula Borough	02122	Oil & Gas		Rents	7907.12
 2005	AK	Kenai Peninsula Borough	02122	Gas (mcf)	Processed (Residue) Gas	Royalties	-38044.28
 2005	AK	Kenai Peninsula Borough	02122	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	11584825.51
@@ -22,8 +22,8 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2005	AK	North Slope Borough	02185	Oil & Gas		Rents	8966257
 2006	AK	Kenai Peninsula Borough	02122	Oil & Gas		Other Revenues	80025.82
 2006	AK	Kenai Peninsula Borough	02122	Oil (bbl)	Oil	Other Revenues	-11.6
-2006	AK	Kenai Peninsula Borough	02122	Gas (mcf)	Unprocessed (Wet) Gas	Other Roy Vals	180625.92
-2006	AK	Kenai Peninsula Borough	02122	Oil & Gas		Other Roy Vals	-27895.87
+2006	AK	Kenai Peninsula Borough	02122	Gas (mcf)	Unprocessed (Wet) Gas	Other Royalties	180625.92
+2006	AK	Kenai Peninsula Borough	02122	Oil & Gas		Other Royalties	-27895.87
 2006	AK	Kenai Peninsula Borough	02122	Oil & Gas		Rents	5517.41
 2006	AK	Kenai Peninsula Borough	02122	Gas (mcf)	Processed (Residue) Gas	Royalties	97491.99
 2006	AK	Kenai Peninsula Borough	02122	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	13895828.69
@@ -32,8 +32,8 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2006	AK	North Slope Borough	02185	Coal		Rents	5120
 2006	AK	North Slope Borough	02185	Oil & Gas		Rents	8961282
 2007	AK	Kenai Peninsula Borough	02122	Oil & Gas		Other Revenues	50387.43
-2007	AK	Kenai Peninsula Borough	02122	Gas (mcf)	Unprocessed (Wet) Gas	Other Roy Vals	107431.34
-2007	AK	Kenai Peninsula Borough	02122	Oil & Gas		Other Roy Vals	36383.43
+2007	AK	Kenai Peninsula Borough	02122	Gas (mcf)	Unprocessed (Wet) Gas	Other Royalties	107431.34
+2007	AK	Kenai Peninsula Borough	02122	Oil & Gas		Other Royalties	36383.43
 2007	AK	Kenai Peninsula Borough	02122	Oil & Gas		Rents	18476.04
 2007	AK	Kenai Peninsula Borough	02122	Gas (mcf)	Processed (Residue) Gas	Royalties	86545.3
 2007	AK	Kenai Peninsula Borough	02122	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	15306513.18
@@ -43,8 +43,8 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2007	AK	North Slope Borough	02185	Coal		Rents	5120
 2007	AK	North Slope Borough	02185	Oil & Gas		Rents	11248990
 2008	AK	Kenai Peninsula Borough	02122	Oil & Gas		Other Revenues	59545.04
-2008	AK	Kenai Peninsula Borough	02122	Gas (mcf)	Unprocessed (Wet) Gas	Other Roy Vals	35338.98
-2008	AK	Kenai Peninsula Borough	02122	Oil & Gas		Other Roy Vals	-10677.22
+2008	AK	Kenai Peninsula Borough	02122	Gas (mcf)	Unprocessed (Wet) Gas	Other Royalties	35338.98
+2008	AK	Kenai Peninsula Borough	02122	Oil & Gas		Other Royalties	-10677.22
 2008	AK	Kenai Peninsula Borough	02122	Oil & Gas		Rents	10142.55
 2008	AK	Kenai Peninsula Borough	02122	Gas (mcf)	Processed (Residue) Gas	Royalties	47702.5
 2008	AK	Kenai Peninsula Borough	02122	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	14654902.74
@@ -54,8 +54,8 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2008	AK	North Slope Borough	02185	Oil & Gas		Rents	11909087
 2008	AK	North Slope Borough	02185	Oil (bbl)	Oil	Royalties	79698.34
 2009	AK	Kenai Peninsula Borough	02122	Oil & Gas		Other Revenues	92185.1
-2009	AK	Kenai Peninsula Borough	02122	Gas (mcf)	Unprocessed (Wet) Gas	Other Roy Vals	669201.79
-2009	AK	Kenai Peninsula Borough	02122	Oil & Gas		Other Roy Vals	-282003.13
+2009	AK	Kenai Peninsula Borough	02122	Gas (mcf)	Unprocessed (Wet) Gas	Other Royalties	669201.79
+2009	AK	Kenai Peninsula Borough	02122	Oil & Gas		Other Royalties	-282003.13
 2009	AK	Kenai Peninsula Borough	02122	Oil & Gas		Rents	-8355.84
 2009	AK	Kenai Peninsula Borough	02122	Gas (mcf)	Processed (Residue) Gas	Royalties	111564.42
 2009	AK	Kenai Peninsula Borough	02122	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	18073078.7
@@ -66,8 +66,8 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2009	AK	North Slope Borough	02185	Oil & Gas		Rents	10516572
 2009	AK	North Slope Borough	02185	Oil (bbl)	Oil	Royalties	11178.08
 2010	AK	Kenai Peninsula Borough	02122	Oil & Gas		Other Revenues	45810.26
-2010	AK	Kenai Peninsula Borough	02122	Gas (mcf)	Unprocessed (Wet) Gas	Other Roy Vals	-12252.35
-2010	AK	Kenai Peninsula Borough	02122	Oil & Gas		Other Roy Vals	1433692.06
+2010	AK	Kenai Peninsula Borough	02122	Gas (mcf)	Unprocessed (Wet) Gas	Other Royalties	-12252.35
+2010	AK	Kenai Peninsula Borough	02122	Oil & Gas		Other Royalties	1433692.06
 2010	AK	Kenai Peninsula Borough	02122	Oil & Gas		Rents	4687.3
 2010	AK	Kenai Peninsula Borough	02122	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	12684633.21
 2010	AK	Kenai Peninsula Borough	02122	NGL (gal)	Gas Plant Products	Royalties	529.03
@@ -77,8 +77,8 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2010	AK	North Slope Borough	02185	Oil & Gas		Rents	6910419.14
 2010	AK	North Slope Borough	02185	Oil (bbl)	Oil	Royalties	244483.88
 2011	AK	Kenai Peninsula Borough	02122	Oil & Gas		Other Revenues	119217.64
-2011	AK	Kenai Peninsula Borough	02122	Gas (mcf)	Unprocessed (Wet) Gas	Other Roy Vals	-39283.85
-2011	AK	Kenai Peninsula Borough	02122	Oil & Gas		Other Roy Vals	-1451808.71
+2011	AK	Kenai Peninsula Borough	02122	Gas (mcf)	Unprocessed (Wet) Gas	Other Royalties	-39283.85
+2011	AK	Kenai Peninsula Borough	02122	Oil & Gas		Other Royalties	-1451808.71
 2011	AK	Kenai Peninsula Borough	02122	Oil & Gas		Rents	6695.88
 2011	AK	Kenai Peninsula Borough	02122	Gas (mcf)	Coal Bed Methane	Royalties	197.32
 2011	AK	Kenai Peninsula Borough	02122	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	10163184.54
@@ -88,8 +88,8 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2011	AK	North Slope Borough	02185	Oil & Gas		Rents	5106640.72
 2011	AK	North Slope Borough	02185	Oil (bbl)	Oil	Royalties	27456.28
 2012	AK	Kenai Peninsula Borough	02122	Oil & Gas		Other Revenues	134530.86
-2012	AK	Kenai Peninsula Borough	02122	Gas (mcf)	Unprocessed (Wet) Gas	Other Roy Vals	-26964.4
-2012	AK	Kenai Peninsula Borough	02122	Oil & Gas		Other Roy Vals	231851.41
+2012	AK	Kenai Peninsula Borough	02122	Gas (mcf)	Unprocessed (Wet) Gas	Other Royalties	-26964.4
+2012	AK	Kenai Peninsula Borough	02122	Oil & Gas		Other Royalties	231851.41
 2012	AK	Kenai Peninsula Borough	02122	Oil & Gas		Rents	8623.75
 2012	AK	Kenai Peninsula Borough	02122	Gas (mcf)	Coal Bed Methane	Royalties	-197.32
 2012	AK	Kenai Peninsula Borough	02122	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	9033955.41
@@ -99,8 +99,8 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2012	AK	North Slope Borough	02185	Oil & Gas		Rents	4863069.72
 2012	AK	North Slope Borough	02185	Oil (bbl)	Oil	Royalties	34960.25
 2013	AK	Kenai Peninsula Borough	02122	Oil & Gas		Other Revenues	83867.71
-2013	AK	Kenai Peninsula Borough	02122	Gas (mcf)	Unprocessed (Wet) Gas	Other Roy Vals	-4658.55
-2013	AK	Kenai Peninsula Borough	02122	Oil & Gas		Other Roy Vals	-251482.74
+2013	AK	Kenai Peninsula Borough	02122	Gas (mcf)	Unprocessed (Wet) Gas	Other Royalties	-4658.55
+2013	AK	Kenai Peninsula Borough	02122	Oil & Gas		Other Royalties	-251482.74
 2013	AK	Kenai Peninsula Borough	02122	Geothermal		Rents	7680
 2013	AK	Kenai Peninsula Borough	02122	Oil & Gas		Rents	12409.77
 2013	AK	Kenai Peninsula Borough	02122	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	6988259.54

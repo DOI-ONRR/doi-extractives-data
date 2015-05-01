@@ -709,13 +709,28 @@
   };
 
   /**
+   * This is a format transform that turns metric SI suffixes into more
+   * US-friendly ones: M -> m, G -> b, etc.
+   * @param {String} str the formatted string
+   * @return {String} the formatted string with replaced SI suffix
+   */
+  eiti.format.transformMetric = (function() {
+    var suffix = {k: 'k', M: 'm', G: 'b'};
+    return function(str) {
+      return str.replace(/[kMG]$/, function(s) {
+        return suffix[s] || s;
+      });
+    };
+  })();
+
+  /**
    * Produces international system/metric form, e.g. `4.1M`
    * @name eiti.format.metric
    * @function
    * @param {Number} num
    * @return {String}
    */
-  eiti.format.metric = d3.format('.2s');
+  eiti.format.metric = eiti.format.transform('.2s', eiti.format.transformMetric);
 
   /**
    * Produces whole dollar strings with thousands separators, e.g.
@@ -745,12 +760,7 @@
    * @param {Number} num
    * @return {String}
    */
-  eiti.format.shortDollars = eiti.format.transform('$,.2s', function(str) {
-    var suffix = {k: 'k', M: 'm', G: 'b'};
-    return str.replace(/[kMG]$/, function(s) {
-      return suffix[s] || s;
-    });
-  });
+  eiti.format.shortDollars = eiti.format.transform('$,.2s', eiti.format.transformMetric);
 
   function getter(key) {
     if (typeof key === 'function') return key;

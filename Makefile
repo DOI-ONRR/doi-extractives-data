@@ -10,6 +10,7 @@ FILES = \
 	output/state/revenues-yearly.tsv \
 	output/state/volumes-yearly.tsv \
 	output/state/gdp-yearly.tsv \
+	output/state/exports-by-industry.tsv \
 	output/county/revenues-yearly.tsv \
 	output/county/volumes-yearly.tsv \
 	output/offshore/revenues-yearly.tsv \

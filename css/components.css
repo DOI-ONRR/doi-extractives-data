@@ -1,0 +1,70 @@
+x-slider {
+  display: block;
+  height: .8em;
+  margin: 1em .5em;
+  background: #ddd;
+  border-radius: .2em;
+  cursor: pointer;
+  position: relative;
+          user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+}
+
+x-slider *::selection,
+x-slider *::-moz-selection {
+  background: transparent;
+}
+
+x-slider .handle {
+  width: 1.4em;
+  height: 1.4em;
+  position: absolute;
+  top: 50%;
+  margin-top: -.7em;
+  margin-left: -.7em;
+  background: #fff;
+  border: 1px solid #999;
+  border-radius: 1em;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, .2);
+}
+
+x-slider .handle:after {
+  box-sizing: border-box;
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: .2em;
+  height: .6em;
+  margin: -.3em 0 0 -.1em;
+  border: solid #ccc;
+  border-width: 0 1px;
+}
+
+x-slider .handle .value {
+  position: absolute;
+  left: 50%;
+  bottom: 100%;
+  margin-bottom: 5px;
+  background: #000;
+  color: #fff;
+  padding: .2em .5em;
+  border-radius: .2em;
+  width: auto;
+}
+
+x-slider .handle .value:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  width: 0;
+  height: 0;
+  border: solid transparent;
+  border-width: 4px;
+  border-top-color: #000;
+  margin-left: -4px;
+}

@@ -4,14 +4,14 @@ Year	Commodity	Product	Volume
 2004	NGL (gal)	Gas Plant Products (gal)	1706371706.5399997
 2004	Oil (bbl)	Oil (bbl)	85461538.35
 2004	Oil (bbl)	Other Liquid Hydrocarbons (bbl)	2539.8799999999997
-2004	Other Products	Sulfur (lton)	3224892.4099999997
+2004	Other Products	Sulfur (lton)	3238530.9899999998
 2004	Other Products	Clay (ton)	55116
 2004	Coal (ton)	Coal (ton)	453540253
 2004	Gas (mcf)	Fuel Gas (mcf)	74706.3
 2004	Oil (bbl)	Condensate (bbl)	10982158.080000002
 2004	Gas (mcf)	Coal Bed Methane (mcf)	391884080.09
 2004	Other Products	Quartz Crystal (lb)	7956
-2004	Other Products	Salt (ton)	363597
+2004	Other Products	Salt (ton)	396896
 2004	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	1717154183.7599998
 2004	Geothermal	Geothermal - Electrical Generation, Other (mmbtu)	212770.98
 2004	Gas (mcf)	Gas Lost - Flared or Vented (mcf)	39865.57
@@ -54,13 +54,13 @@ Year	Commodity	Product	Volume
 2005	NGL (gal)	Gas Plant Products (gal)	1633079014.8499997
 2005	Oil (bbl)	Oil (bbl)	86368856.33
 2005	Oil (bbl)	Other Liquid Hydrocarbons (bbl)	1831.67
-2005	Other Products	Sulfur (lton)	2213309.28
+2005	Other Products	Sulfur (lton)	2223127.63
 2005	Other Products	Clay (ton)	63734
 2005	Oil (bbl)	Condensate (bbl)	10198061.280000001
 2005	Gas (mcf)	Coal Bed Methane (mcf)	433135161.13
 2005	Gas (mcf)	Fuel Gas (mcf)	127322.71
 2005	Other Products	Quartz Crystal (lb)	10236
-2005	Other Products	Salt (ton)	353162
+2005	Other Products	Salt (ton)	381765
 2005	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	1670047946.6
 2005	Geothermal	Geothermal - Electrical Generation, Other (mmbtu)	204030.26
 2005	Gas (mcf)	Gas Lost - Flared or Vented (mcf)	59492.920000000006
@@ -107,14 +107,14 @@ Year	Commodity	Product	Volume
 2006	NGL (gal)	Gas Plant Products (gal)	1707331356.54
 2006	Oil (bbl)	Oil (bbl)	89849945
 2006	Oil (bbl)	Other Liquid Hydrocarbons (bbl)	3622.09
-2006	Other Products	Sulfur (lton)	561193.51
+2006	Other Products	Sulfur (lton)	569429.28
 2006	Other Products	Clay (ton)	87413
 2006	Coal (ton)	Coal (ton)	437026546
 2006	Oil (bbl)	Condensate (bbl)	11404333.149999999
 2006	Gas (mcf)	Coal Bed Methane (mcf)	434863252.85
 2006	Gas (mcf)	Fuel Gas (mcf)	368931.07999999996
 2006	Other Products	Quartz Crystal (lb)	4133
-2006	Other Products	Salt (ton)	495094
+2006	Other Products	Salt (ton)	524352
 2006	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	1653821446.5300002
 2006	Geothermal	Geothermal - Electrical Generation, Other (mmbtu)	227562
 2006	Gas (mcf)	Gas Lost - Flared or Vented (mcf)	121567.76
@@ -160,7 +160,7 @@ Year	Commodity	Product	Volume
 2007	NGL (gal)	Gas Plant Products (gal)	1913176359.4199998
 2007	Oil (bbl)	Oil (bbl)	91843898.28
 2007	Oil (bbl)	Other Liquid Hydrocarbons (bbl)	4361.34
-2007	Other Products	Sulfur (lton)	349554.54999999993
+2007	Other Products	Sulfur (lton)	356347.87999999995
 2007	Other Products	Clay (ton)	71273
 2007	Coal (ton)	Coal (ton)	452111616
 2007	Oil (bbl)	Condensate (bbl)	12796897.350000001
@@ -168,7 +168,7 @@ Year	Commodity	Product	Volume
 2007	Gas (mcf)	Fuel Gas (mcf)	791592.46
 2007	Other Products	Quartz Crystal (lb)	4679
 2007	Other Products	Wavellite (spcmn)	1600
-2007	Other Products	Salt (ton)	636583
+2007	Other Products	Salt (ton)	660837
 2007	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	1678895823.32
 2007	Geothermal	Geothermal - Electrical Generation, Other (mmbtu)	207155.08
 2007	Gas (mcf)	Flash Gas (mcf)	131173
@@ -212,14 +212,14 @@ Year	Commodity	Product	Volume
 2008	NGL (gal)	Gas Plant Products (gal)	2092208919.31
 2008	Oil (bbl)	Oil (bbl)	88567621.96000001
 2008	Oil (bbl)	Other Liquid Hydrocarbons (bbl)	6767.16
-2008	Other Products	Sulfur (lton)	383974.82000000007
+2008	Other Products	Sulfur (lton)	389083.37000000005
 2008	Coal (ton)	Coal (ton)	488528755
 2008	Oil (bbl)	Condensate (bbl)	13800842.610000001
 2008	Gas (mcf)	Coal Bed Methane (mcf)	592080811.8299999
 2008	Gas (mcf)	Fuel Gas (mcf)	1949463.9899999998
 2008	Other Products	Wavellite (spcmn)	180
 2008	Other Products	Quartz Crystal (lb)	13110
-2008	Other Products	Salt (ton)	606879
+2008	Other Products	Salt (ton)	633909
 2008	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	1639893566.24
 2008	Geothermal	Geothermal - Electrical Generation, Other (mmbtu)	237415.56
 2008	Gas (mcf)	Flash Gas (mcf)	152891.23
@@ -266,14 +266,14 @@ Year	Commodity	Product	Volume
 2009	NGL (gal)	Gas Plant Products (gal)	2199872023.29
 2009	Oil (bbl)	Oil (bbl)	91583285.24
 2009	Oil (bbl)	Other Liquid Hydrocarbons (bbl)	8521.43
-2009	Other Products	Sulfur (lton)	303355.99
+2009	Other Products	Sulfur (lton)	307207.95
 2009	Coal (ton)	Coal (ton)	448320207.01
 2009	Oil (bbl)	Condensate (bbl)	13306617.62
 2009	Gas (mcf)	Coal Bed Methane (mcf)	616660699.07
 2009	Gas (mcf)	Fuel Gas (mcf)	1156447.1600000001
 2009	Other Products	Wavellite (spcmn)	843
 2009	Other Products	Quartz Crystal (lb)	2086
-2009	Other Products	Salt (ton)	654746
+2009	Other Products	Salt (ton)	682785
 2009	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	1815600792.3500001
 2009	Geothermal	Geothermal - Electrical Generation, Other (mmbtu)	233953.69
 2009	Gas (mcf)	Flash Gas (mcf)	214145.31
@@ -318,14 +318,14 @@ Year	Commodity	Product	Volume
 2010	Oil (bbl)	Oil (bbl)	96556622.33999999
 2010	Gas (mcf)	Processed (Residue) Gas (mcf)	1543610421.38
 2010	Oil (bbl)	Other Liquid Hydrocarbons (bbl)	5498.91
-2010	Other Products	Sulfur (lton)	428263.94999999995
+2010	Other Products	Sulfur (lton)	432682.23999999993
 2010	Coal (ton)	Coal (ton)	463113986
 2010	Oil (bbl)	Condensate (bbl)	12669136.84
 2010	Gas (mcf)	Coal Bed Methane (mcf)	592422748.76
 2010	Gas (mcf)	Fuel Gas (mcf)	1199170.4600000002
 2010	Other Products	Wavellite (spcmn)	87
 2010	Other Products	Quartz Crystal (lb)	1505
-2010	Other Products	Salt (ton)	727033
+2010	Other Products	Salt (ton)	753794
 2010	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	2015118207.52
 2010	Geothermal	Geothermal - Electrical Generation, Other (mmbtu)	223938.12
 2010	Geothermal	Geothermal - sulfur (lton)	4669.79
@@ -374,13 +374,13 @@ Year	Commodity	Product	Volume
 2011	Gas (mcf)	Processed (Residue) Gas (mcf)	1591511846.0600002
 2011	NGL (gal)	Gas Plant Products (gal)	3421732118.1699996
 2011	Oil (bbl)	Other Liquid Hydrocarbons (bbl)	3216.69
-2011	Other Products	Sulfur (lton)	460845.9500000001
+2011	Other Products	Sulfur (lton)	464281.6800000001
 2011	Coal (ton)	Coal (ton)	452882294
 2011	Oil (bbl)	Condensate (bbl)	12889050.05
 2011	Gas (mcf)	Coal Bed Methane (mcf)	559813255.24
 2011	Gas (mcf)	Fuel Gas (mcf)	1830286.79
 2011	Other Products	Quartz Crystal (lb)	158
-2011	Other Products	Salt (ton)	854856
+2011	Other Products	Salt (ton)	874457
 2011	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	2004451294.28
 2011	Geothermal	Geothermal - Electrical Generation, Other (mmbtu)	19883.37
 2011	Geothermal	Geothermal - sulfur (lton)	3469.89
@@ -428,14 +428,14 @@ Year	Commodity	Product	Volume
 2012	Gas (mcf)	Processed (Residue) Gas (mcf)	1540023665.1499999
 2012	NGL (gal)	Gas Plant Products (gal)	3393088924.8599997
 2012	Oil (bbl)	Other Liquid Hydrocarbons (bbl)	2923.3
-2012	Other Products	Sulfur (lton)	374256.62
+2012	Other Products	Sulfur (lton)	376920.86
 2012	Coal (ton)	Coal (ton)	422055558
 2012	Oil (bbl)	Condensate (bbl)	12833589.91
 2012	Gas (mcf)	Coal Bed Methane (mcf)	506559453.26
 2012	Gas (mcf)	Fuel Gas (mcf)	3551667.26
 2012	Gas (mcf)	Gas Lost - Flared or Vented (mcf)	3403428.69
 2012	Other Products	Quartz Crystal (lb)	205
-2012	Other Products	Salt (ton)	715578
+2012	Other Products	Salt (ton)	735988
 2012	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	2132181179
 2012	Geothermal	Geothermal - sulfur (lton)	2598.09
 2012	Oil (bbl)	Drip or Scrubber Condensate (bbl)	183654.67
@@ -479,13 +479,13 @@ Year	Commodity	Product	Volume
 2013	Gas (mcf)	Processed (Residue) Gas (mcf)	1241285026.87
 2013	NGL (gal)	Gas Plant Products (gal)	2597061606.91
 2013	Oil (bbl)	Other Liquid Hydrocarbons (bbl)	2191.38
-2013	Other Products	Sulfur (lton)	390618.74000000005
+2013	Other Products	Sulfur (lton)	393588.10000000003
 2013	Oil (bbl)	Condensate (bbl)	11273348.66
 2013	Coal (ton)	Coal (ton)	397613708
 2013	Gas (mcf)	Coal Bed Methane (mcf)	408732594.55
 2013	Gas (mcf)	Fuel Gas (mcf)	4596237.43
 2013	Other Products	Quartz Crystal (lb)	84
-2013	Other Products	Salt (ton)	855261
+2013	Other Products	Salt (ton)	881807
 2013	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	2399495375.86
 2013	Geothermal	Geothermal - sulfur (lton)	2448.04
 2013	Gas (mcf)	Gas Lost - Flared or Vented (mcf)	4650281.09
@@ -527,3 +527,116 @@ Year	Commodity	Product	Volume
 2013	Other Products	Sodium Sesquicarbonate (ton)	118622
 2013	Other Products	Sulfide (ton)	27739
 2013	Other Products	Trona Ore (ton)	108413
+2004	Oil	Oil (bbl)	521460114.33
+2004	Gas	Fuel Gas (mcf)	12873983.85
+2004	Gas	Processed (Residue) Gas (mcf)	1876029498.9600003
+2004	Gas	Unprocessed (Wet) Gas (mcf)	2064890439.85
+2004	NGL	Gas Plant Products (gal)	2626813397.07
+2004	Oil	Condensate (bbl)	49873566.42
+2004	Oil	Drip or Scrubber Condensate (bbl)	1318048.13
+2004	Oil	Inlet Scrubber (bbl)	32218.79
+2004	Gas	Flash Gas (mcf)	3661222.54
+2004	Gas	Gas Lost - Flared or Vented (mcf)	238150.4
+2004	Oil	Other Liquid Hydrocarbons (bbl)	16766.46
+2004	Geothermal	Geothermal - Commercially Demineralized H2O (cgal)	16451
+2004	Geothermal	Geothermal - Direct Utilization, Other (cgal)	16451
+2005	Oil	Oil (bbl)	467888606.00999993
+2005	Gas	Fuel Gas (mcf)	11277353.34
+2005	Gas	Gas Lost - Flared or Vented (mcf)	272720.92
+2005	Gas	Processed (Residue) Gas (mcf)	1660488229.09
+2005	Gas	Unprocessed (Wet) Gas (mcf)	1605399447.1000001
+2005	NGL	Gas Plant Products (gal)	2115107981.31
+2005	Oil	Condensate (bbl)	45647701.87
+2005	Oil	Drip or Scrubber Condensate (bbl)	1254764.96
+2005	Gas	Flash Gas (mcf)	2282838.16
+2005	Oil	Inlet Scrubber (bbl)	15130.750000000002
+2005	Oil	Other Liquid Hydrocarbons (bbl)	9748.2
+2006	Oil	Oil (bbl)	484567669.27
+2006	Gas	Fuel Gas (mcf)	9855342.84
+2006	Gas	Gas Lost - Flared or Vented (mcf)	55554.83
+2006	Gas	Processed (Residue) Gas (mcf)	2027795744.82
+2006	Gas	Unprocessed (Wet) Gas (mcf)	934107146.4400002
+2006	NGL	Gas Plant Products (gal)	2253482515.8999996
+2006	Oil	Condensate (bbl)	40624958.589999996
+2006	Oil	Drip or Scrubber Condensate (bbl)	1002154.1399999999
+2006	Gas	Flash Gas (mcf)	2176628.54
+2006	Oil	Inlet Scrubber (bbl)	13206.48
+2006	Oil	Other Liquid Hydrocarbons (bbl)	114982.3
+2007	Oil	Oil (bbl)	481436254.18999994
+2007	Gas	Unprocessed (Wet) Gas (mcf)	771255044.89
+2007	Oil	Condensate (bbl)	38242884.339999996
+2007	Gas	Fuel Gas (mcf)	12576862.06
+2007	Gas	Gas Lost - Flared or Vented (mcf)	78956.66
+2007	Gas	Processed (Residue) Gas (mcf)	2021941462.88
+2007	NGL	Gas Plant Products (gal)	2607907444.2400002
+2007	Oil	Drip or Scrubber Condensate (bbl)	1341624.45
+2007	Gas	Flash Gas (mcf)	2558551.46
+2007	Oil	Inlet Scrubber (bbl)	36944.240000000005
+2007	Oil	Other Liquid Hydrocarbons (bbl)	12140.48
+2008	Oil	Oil (bbl)	434036099.65999997
+2008	Gas	Processed (Residue) Gas (mcf)	1501813333.1499999
+2008	Gas	Unprocessed (Wet) Gas (mcf)	815310401.7500001
+2008	NGL	Gas Plant Products (gal)	1938567949.3799999
+2008	Oil	Condensate (bbl)	24196976.86
+2008	Oil	Drip or Scrubber Condensate (bbl)	678090.58
+2008	Gas	Fuel Gas (mcf)	11641986.19
+2008	Gas	Gas Lost - Flared or Vented (mcf)	54368.21
+2008	Gas	Flash Gas (mcf)	1730237.6400000001
+2008	Oil	Inlet Scrubber (bbl)	71604.03000000001
+2008	Oil	Other Liquid Hydrocarbons (bbl)	6962.95
+2009	Oil	Oil (bbl)	590146459.77
+2009	Gas	Processed (Residue) Gas (mcf)	1598803423.24
+2009	Gas	Unprocessed (Wet) Gas (mcf)	826981295.77
+2009	NGL	Gas Plant Products (gal)	2345589729.2799997
+2009	Oil	Condensate (bbl)	36528729.59
+2009	Oil	Drip or Scrubber Condensate (bbl)	1576233.65
+2009	Gas	Fuel Gas (mcf)	13520337.4
+2009	Gas	Gas Lost - Flared or Vented (mcf)	69137.51999999999
+2009	Gas	Flash Gas (mcf)	2216943.19
+2009	Oil	Inlet Scrubber (bbl)	104204.13
+2009	Oil	Other Liquid Hydrocarbons (bbl)	5469.13
+2010	Oil	Oil (bbl)	558544589.4999999
+2010	Gas	Flash Gas (mcf)	4102677.12
+2010	Gas	Processed (Residue) Gas (mcf)	1410921296.4500003
+2010	Gas	Unprocessed (Wet) Gas (mcf)	679937095.05
+2010	NGL	Gas Plant Products (gal)	2550465839.05
+2010	Oil	Condensate (bbl)	54195680.8
+2010	Oil	Drip or Scrubber Condensate (bbl)	1241032.9
+2010	Gas	Fuel Gas (mcf)	14257028.200000001
+2010	Gas	Gas Lost - Flared or Vented (mcf)	136359.24
+2010	Oil	Inlet Scrubber (bbl)	203980.38999999998
+2010	Oil	Fuel Oil (bbl)	5.27
+2010	Oil	Other Liquid Hydrocarbons (bbl)	6298.34
+2011	Oil	Oil (bbl)	468891055.35
+2011	Gas	Flash Gas (mcf)	2720890.5500000003
+2011	Gas	Processed (Residue) Gas (mcf)	1182507184.97
+2011	Gas	Unprocessed (Wet) Gas (mcf)	505468787.6
+2011	NGL	Gas Plant Products (gal)	2191416546.0299997
+2011	Oil	Condensate (bbl)	55564316.59000001
+2011	Oil	Drip or Scrubber Condensate (bbl)	876400.8799999999
+2011	Gas	Fuel Gas (mcf)	13482873.66
+2011	Gas	Gas Lost - Flared or Vented (mcf)	680256.26
+2011	Oil	Inlet Scrubber (bbl)	183177.19
+2011	Oil	Other Liquid Hydrocarbons (bbl)	6703.11
+2012	Oil	Oil (bbl)	441443196.78
+2012	Gas	Flash Gas (mcf)	1940971.58
+2012	Gas	Processed (Residue) Gas (mcf)	957299037.09
+2012	Gas	Unprocessed (Wet) Gas (mcf)	432732435.37000006
+2012	NGL	Gas Plant Products (gal)	1984868138.5500002
+2012	Oil	Condensate (bbl)	53579431.339999996
+2012	Oil	Drip or Scrubber Condensate (bbl)	707689.95
+2012	Gas	Fuel Gas (mcf)	12950409.32
+2012	Gas	Gas Lost - Flared or Vented (mcf)	501224.38
+2012	Oil	Inlet Scrubber (bbl)	183797.24
+2012	Oil	Other Liquid Hydrocarbons (bbl)	7622.17
+2013	Oil	Oil (bbl)	437293833.31
+2013	Gas	Processed (Residue) Gas (mcf)	849852683.74
+2013	Gas	Unprocessed (Wet) Gas (mcf)	333762379.78000003
+2013	NGL	Gas Plant Products (gal)	1942896063.09
+2013	Oil	Condensate (bbl)	43376507.699999996
+2013	Oil	Drip or Scrubber Condensate (bbl)	549078.63
+2013	Gas	Flash Gas (mcf)	1363852.55
+2013	Gas	Fuel Gas (mcf)	13564126.22
+2013	Gas	Gas Lost - Flared or Vented (mcf)	643530.72
+2013	Oil	Inlet Scrubber (bbl)	256588.79
+2013	Oil	Other Liquid Hydrocarbons (bbl)	6481.36

@@ -19,19 +19,19 @@ FILES = \
 
 all: $(FILES) geo svg
 
-output/national/revenues-yearly.tsv: output/state/revenues-yearly.tsv
+output/national/revenues-yearly.tsv: output/state/revenues-yearly.tsv output/offshore/revenues-yearly.tsv
 	mkdir -p $(dir $@)
 	bin/sum.js \
 		--group 'Year,Commodity,Type' \
 		--sum 'Revenue' \
-		-o $@ $<
+		-o $@ $^
 
-output/national/volumes-yearly.tsv: output/state/volumes-yearly.tsv
+output/national/volumes-yearly.tsv: output/state/volumes-yearly.tsv output/offshore/volumes-yearly.tsv
 	mkdir -p $(dir $@)
 	bin/sum.js \
 		--group 'Year,Commodity,Product' \
 		--sum 'Volume' \
-		-o $@ $<
+		-o $@ $^
 
 output/national/gdp-yearly.tsv:
 	mkdir -p $(dir $@)

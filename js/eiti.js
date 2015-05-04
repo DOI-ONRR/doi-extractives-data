@@ -108,15 +108,15 @@
         'Gas': 'Purples',
         'Oil & Gas': 'RdPu',
         'Geothermal': 'Greens',
-        'Other Commodities': 'Blues'
+        'Other': 'Blues'
       };
     };
 
     /**
      * The group to which commodities with an unspecified group will
-     * be assigned, namely `Other Commodities`.
+     * be assigned, namely `Other`.
      */
-    Commodities.OTHER = 'Other Commodities';
+    Commodities.OTHER = 'Other';
 
     /**
      * Get the nesting group for a given commodity.

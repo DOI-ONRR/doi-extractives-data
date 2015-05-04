@@ -4,12 +4,18 @@
     <meta charset="utf-8">
     <title>USEITI Data: Components</title>
     <script src="js/vendor/d3.v3.min.js"></script>
-    <script src="js/vendor/aight.v2.min.js"></script>
+    <script src="js/vendor/aight.min.js"></script>
     <script src="js/vendor/webcomponents.min.js"></script>
-    <script src="js/vendor/x-tag-components.js"></script>
+    <script src="js/vendor/polymer.min.js"></script>
     <link rel="import" href="js/components/x-slider.html">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/components.css">
+    <style>
+      x-slider {
+        margin-left: 1em;
+        margin-right: 1em;
+      }
+    </style>
   </head>
   <body>
 
@@ -17,14 +23,10 @@
       <h2>Year: <span class="year"></span></h2>
 
       <x-slider snap min="2004" max="2013" value="2008">
-        <div class="handle" tabindex="0">
+        <div class="handle">
           <span class="value"></span>
         </div>
       </x-slider>
-
-      <form onsubmit="return false;">
-        <p><label>Set its value: <input type="number" name="year"></label></p>
-      </form>
 
       <script>
       (function() {
@@ -33,18 +35,12 @@
 
         var slider = context.select('x-slider')
           .on('change', function() {
+            // console.log('slider change', this.value);
             year.text(this.value);
-            input.property('value', this.value);
           });
 
         var year = context.selectAll('span.year')
           .text(slider.property('value'));
-
-        var input = context.select('input')
-          .property('value', slider.property('value'))
-          .on('change', function() {
-            slider.property('value', this.value);
-          });
 
       })();
       </script>

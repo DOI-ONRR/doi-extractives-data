@@ -22,16 +22,6 @@ var async = require('async');
 var streamify = require('stream-array');
 var d3 = require('d3');
 
-var regionNameMap = {
-  'Alaska- Offshore': 'Alaska',
-  'Gulf of Mexico': 'Gulf',
-};
-
-var commodityMap = {
-  'Oil and Gas': 'Oil & Gas',
-  'Other': 'Other Commodities'
-};
-
 var revenueKey = 'Royalty/Revenue';
 var regionKey = 'Offshore Region';
 var areaKey = 'Planning Area';
@@ -77,20 +67,20 @@ async.waterfall([
 function mapRow(d, i) {
   util.trimKeys(d);
   var revenue = parse.dollars(d[revenueKey]);
-  var region = d[regionKey];
-  region = regionNameMap[region] || region;
+  var region = util.normalizeOffshoreRegion(d[regionKey]);
   if (!region) {
     console.error('no region for "%s" @ %d', d[regionKey], i);
     return process.exit(1);
   }
-  var commodity = commodityMap[d.Commodity] || d.Commodity;
+  var commodity = util.normalizeCommodity(d.Commodity);
+  var type = util.normalizeRevenueType(d['Revenue Type']);
   return {
     Year:       d[yearKey],
     Region:     region,
     Area:       d[areaKey],
     Commodity:  commodity,
     Product:    d.Product,
-    Type:       d['Revenue Type'],
+    Type:       type,
     Revenue:    revenue
   };
 }

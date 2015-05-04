@@ -24,31 +24,40 @@ var fs = require('fs');
 var tito = require('tito').formats;
 var util = require('../lib/util');
 var streamify = require('stream-array');
+var async = require('async');
 
-util.readData(args[0] || '/dev/stdin',
-  tito.createReadStream(options['if']),
-  function(error, rows) {
-    if (error) {
-      console.error('error:', error);
-      process.exit(1);
-    }
-
-    var keys = options.group.split(/\s*,\s*/);
-    var value = util.getter(options.sum);
-    var groups = util.group(rows, keys, function(subset) {
-      return subset.values.reduce(function(sum, d) {
-        return sum + Number(value(d));
-      }, 0);
-    })
-    .map(function(entry) {
-      var row = entry.key;
-      row[options.sum] = entry.value;
-      return row;
+var rows = [];
+async.series(args.map(function(filename) {
+  return function(done) {
+    var read = tito.createReadStream(options['if']);
+    util.readData(filename, read, function(error, data) {
+      if (error) return done(error);
+      console.warn('read %d rows from %s', data.length, filename);
+      done(null, rows = rows.concat(data));
     });
+  };
+}), function(error) {
+  if (error) {
+    console.error('error:', error);
+    process.exit(1);
+  }
 
-    console.warn('got %d rows', groups.length, groups[0]);
-
-    streamify(groups)
-      .pipe(tito.createWriteStream(options['of']))
-      .pipe(fs.createWriteStream(options.o));
+  var keys = options.group.split(/\s*,\s*/);
+  var value = util.getter(options.sum);
+  var groups = util.group(rows, keys, function(subset) {
+    return subset.values.reduce(function(sum, d) {
+      return sum + Number(value(d));
+    }, 0);
+  })
+  .map(function(entry) {
+    var row = entry.key;
+    row[options.sum] = entry.value;
+    return row;
   });
+
+  console.warn('got %d rows', groups.length, groups[0]);
+
+  streamify(groups)
+    .pipe(tito.createWriteStream(options['of']))
+    .pipe(fs.createWriteStream(options.o));
+});

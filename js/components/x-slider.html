@@ -1,4 +1,8 @@
-<polymer-element name="x-slider" constructor="XSlider">
+<polymer-element name="x-slider"
+  min="0"
+  max="100"
+  value="0"
+  constructor="XSlider">
   <script>
   (function() {
 
@@ -12,6 +16,15 @@
   };
 
   Polymer('x-slider', {
+
+    // attributes to publish
+    publish: {
+      min: 0,
+      max: 1,
+      value: 0,
+      snap: false
+    },
+
     created: function() {
       // console.log('slider created!');
       this.slider = d3_slider()
@@ -21,10 +34,10 @@
 
     attached: function() {
       // console.log('slider inserted!', this.value);
-      requestAnimationFrame(this.update.bind(this));
+      this.update();
     },
 
-    removed: function() {
+    detached: function() {
       // TODO: remove handlers
     },
 
@@ -38,13 +51,6 @@
           updateAndChange.call(this);
           break;
       }
-    },
-
-    publish: {
-      min: 0,
-      max: 1,
-      value: 0,
-      snap: false,
     },
 
     minChanged: update,
@@ -139,9 +145,10 @@
     function mouseup() {
       // console.log('[drag] up');
       dragging = false;
-      body.on('mouseup.slider', null);
-      body.on('touchend.slider', null);
-      body.on('touchmove.slider', null);
+      body
+        .on('mouseup.slider', null)
+        .on('touchend.slider', null)
+        .on('touchmove.slider', null);
       win.on('mouseup.slider', null);
     }
 

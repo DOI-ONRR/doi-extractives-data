@@ -1,8 +1,5 @@
 # Front page user interview questions, sprint 17b
 
-WORK IN PROGRESS
-
-To be re-written:
 
 ## Introductory comments
 
@@ -13,9 +10,9 @@ Very brief discussion of the **purpose** of today's test:  "My goal today is to 
 
 ## Main questions
 
-"I’ve got a printed version of the front page here. Imagine somebody sent you a link to this site and this is what popped up in front of you when you clicked on the link. If you could, please put a question mark next to anything (word, phrase, section, prompt) that you find confusing. Put a plus sign next to anything that makes sense to you and that you'd like more information about. Finally, draw a minus sign next to anything you're not interested in/want to see less of."
+"I’ve got a prototype version of our new site here. It is not really 'real' yet -- it is more like a Powerpoint than a full website, and some parts aren't clickable yet."
 
-"Awesome – thank you. Now that you've seen the some of our site, I'd like to ask you a few general questions about what you think."
+"Imagine somebody sent you a link to this site and this is what popped up in front of you when you clicked on the link. I'd like to ask you some general questions about what you see here. If you could, please talk out loud as you explore and walk me through what you're thinking. This will help us understand how to improve things later."
 
 1. "OK. First of all, can you tell me (in your own words) what you think this site is for?" 
 
@@ -23,9 +20,9 @@ Very brief discussion of the **purpose** of today's test:  "My goal today is to 
 
 3. "What does this website tell you about extractive resources?" _Note: notice whether or not participants understand this term. If they are confused, explain that extractive resources are things like oil, gas, coal and gold._
 
-3. "Is there anything on this page that you didn’t know before?"
+3. "What did you learn from this website?"
 
-4. "What other questions do you have about this site, if any?"
+4. "What questions does this leave you with? Can you walk me through things you think are confusing?"
 
 
 ## Wrap up

@@ -1,123 +1,75 @@
-<script>
-(function() {
+<polymer-element name="x-slider" constructor="XSlider">
+  <script>
+  (function() {
 
-  console.log('hello? x-slider');
+  // console.log('hello? x-slider');
 
   // "private" method
   var dispatchChange = function() {
-    var event = new Event('change');
-    event.value = this.value;
-    return this.dispatchEvent(event);
+    this.value = this.slider.value();
+    // console.log('dispatch change:', this.value);
+    return this.fire('change', {value: this.value});
   };
 
-  xtag.register('x-slider', {
-    lifecycle: {
+  Polymer('x-slider', {
+    created: function() {
+      // console.log('slider created!');
+      this.slider = d3_slider()
+        .value(this.value)
+        .on('change', dispatchChange.bind(this));
+    },
 
-      created: function() {
-        // console.log('slider created!');
+    attached: function() {
+      // console.log('slider inserted!', this.value);
+      requestAnimationFrame(this.update.bind(this));
+    },
 
-        this.slider = d3_slider()
-          .handle('.handle')
-          .min(this.getAttribute('min') || 0)
-          .max(this.getAttribute('max') || 1)
-          .value(this.getAttribute('value') || 0)
-          .snap(this.hasAttribute('snap'))
-          .on('change', dispatchChange.bind(this));
-      },
+    removed: function() {
+      // TODO: remove handlers
+    },
 
-      inserted: function() {
-        // console.log('slider inserted!');
-        requestAnimationFrame(this.update.bind(this));
-      },
-
-      removed: function() {
-        // TODO: remove handlers
-      },
-
-      attributeChanged: function(attr, prev, value) {
-        switch (attr) {
-          case 'min':
-          case 'max':
-          case 'value':
-          case 'snap':
-            this.slider[attr](value);
-            this.update();
-            dispatchChange.call(this);
-            break;
-        }
+    attributeChanged: function(attr, prev, value) {
+      switch (attr) {
+        case 'min':
+        case 'max':
+        case 'value':
+        case 'snap':
+          this.slider[attr](value);
+          updateAndChange.call(this);
+          break;
       }
     },
 
-    events: {
+    publish: {
+      min: 0,
+      max: 1,
+      value: 0,
+      snap: false,
     },
 
-    accessors: {
+    minChanged: update,
+    maxChanged: update,
+    valueChanged: updateAndChange,
+    snapChanged: update,
 
-      min: {
-        attribute: {},
-        get: function() {
-          return this.slider.min();
-        },
-        set: function(value) {
-          this.slider.min(value);
-          this.update();
-        },
-      },
-
-      max: {
-        attribute: {},
-        get: function() {
-          return this.slider.max();
-        },
-        set: function(value) {
-          this.slider.max(value);
-          this.update();
-        },
-      },
-
-      value: {
-        attribute: {},
-        get: function() {
-          return this.slider.value();
-        },
-        set: function(value) {
-          this.slider.value(value);
-          this.update();
-        }
-      },
-
-      snap: {
-        attribute: {
-          boolean: true
-        },
-        get: function() {
-          return this.slider.snap();
-        },
-        set: function(value) {
-          this.slider.snap(value);
-          this.update();
-        },
-      }
-
-    },
-
-    methods: {
-
-      update: function(transition) {
-        // console.log('slider.update(', transition, ')');
-
-        d3.select(this)
-          .call(this.slider);
-
-        /*
-        this.setAttribute('min', this.min);
-        this.setAttribute('max', this.max);
-        this.setAttribute('value', this.value);
-        this.setAttribute('snap', this.snap);
-        */
-      }
-    }
+    update: update
   });
+
+  function update() {
+    // console.log('slider.update()', this.value);
+    var slider = this.slider
+      .min(this.min)
+      .max(this.max)
+      .value(this.value)
+      .snap(this.snap);
+    d3.select(this)
+      .call(slider);
+  }
+
+  function updateAndChange() {
+    this.update();
+    dispatchChange.call(this);
+  }
 
   var d3_slider = function() {
 
@@ -125,15 +77,16 @@
       root = selection;
 
       // XXX don't capture right-clicks (for inspecting)
-      selection.on('mousedown', function() {
-        var e = d3.event;
-        if (e.button === 2) {
-          e.preventDefault();
-          e.stopPropagation();
-          return false;
-        }
-      })
-      .call(drag);
+      selection
+        .on('mousedown', function() {
+          var e = d3.event;
+          if (e.button === 2) {
+            e.preventDefault();
+            e.stopPropagation();
+            return false;
+          }
+        })
+        .call(drag);
 
       if (typeof value !== 'undefined') {
         slider.update(root);
@@ -151,24 +104,45 @@
     var dispatch = d3.dispatch('change');
     var format = String;
 
+    var body = d3.select('body');
+    var win = d3.select(window);
+
     function drag(selection) {
       selection.on('mousedown.slider', function() {
         // console.log('[drag] down');
         dragging = true;
-        var body = d3.select('body').on('mouseup.slider', function() {
-          // console.log('[drag] up');
-          dragging = false;
-          body.on('mouseup.slider', null);
-        });
+        body.on('mouseup.slider', mouseup);
+        win.on('mouseup.slider', mouseup);
         move(d3.event);
-      })
-      .on('mousemove.slider', function() {
+      });
+
+      selection.on('touchstart.slider', function() {
+        // console.log('[drag] down');
+        dragging = true;
+        body.on('touchend.slider', mouseup);
+        body.on('touchmove.slider', function() {
+          move(d3.event);
+        });
+        win.on('touchend.slider', mouseup);
+        move(d3.event);
+      });
+
+      body.on('mousemove.slider', function() {
         if (dragging) {
           // console.log('[drag] move');
           move(d3.event);
           return false;
         }
       });
+    }
+
+    function mouseup() {
+      // console.log('[drag] up');
+      dragging = false;
+      body.on('mouseup.slider', null);
+      body.on('touchend.slider', null);
+      body.on('touchmove.slider', null);
+      win.on('mouseup.slider', null);
     }
 
     function move(e) {
@@ -191,6 +165,8 @@
       }
 
       root.each(update);
+      // this should prevent text selection when dragging
+      e.preventDefault();
     }
 
     function getPosition(e) {
@@ -311,5 +287,6 @@
     return slider;
   };
 
-})();
-</script>
+  })();
+  </script>
+</polymer-element>

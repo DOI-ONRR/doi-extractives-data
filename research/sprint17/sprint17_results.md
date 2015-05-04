@@ -56,4 +56,3 @@ Some other things to consider:
 
 - You can't test scrolling or other interactions with this method. Will they really see that thing 'below the fold'? This does not answer that quesiton.
 - I'm not convinced of the composite image benefit. It is definitely interesting but the greatest value in this exercise might rather be the conversation that the markup enables rather than the markup itself.
-- 

@@ -31,4 +31,4 @@ Original script available [here](https://github.com/18F/doi-extractives-data/blo
 
 ## Test asset(s)
 
-The mockup that we printed and tested is [here]().
+The mockup that we printed and tested is [here](https://github.com/18F/doi-extractives-data/blob/research/assets/img/sprint17-frontpage.png).

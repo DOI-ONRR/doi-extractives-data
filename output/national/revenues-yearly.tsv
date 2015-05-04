@@ -1,11 +1,11 @@
 Year	Commodity	Type	Revenue
 2004	Oil & Gas	Other Revenues	4931141.399999999
-2004	Gas (mcf)	Other Royalties	703124.25
-2004	Oil & Gas	Other Royalties	27245773.47
+2004	Gas	Other Royalties	1190410.75
+2004	Oil & Gas	Other Royalties	27241853.349999998
 2004	Oil & Gas	Rents	268135848.76
-2004	Gas (mcf)	Royalties	1329102802.0500002
-2004	NGL (gal)	Royalties	98056260.42
-2004	Oil (bbl)	Royalties	317983216.32
+2004	Gas	Royalties	4662733506.6900015
+2004	NGL	Royalties	257408152.94
+2004	Oil	Royalties	1657769864.73
 2004	Oil & Gas	Bonus	697800203.99
 2004	Coal	Rents	1325555.92
 2004	Other Products	Royalties	33639388.13999999
@@ -19,7 +19,7 @@ Year	Commodity	Type	Revenue
 2004	Geothermal	Royalties	10552900.180000002
 2004	Geothermal	Other Revenues	14485.86
 2004	Coal	Bonus	161850838.04
-2004	Coal (ton)	Royalties	436208997.9499999
+2004	Coal	Royalties	436208997.9499999
 2004	Phosphate	Other Revenues	167428
 2004	Phosphate	Rents	-4575.5
 2004	Gold	Rents	39
@@ -31,7 +31,7 @@ Year	Commodity	Type	Revenue
 2004	Coal	Other Royalties	5054806.42
 2004	Potassium	Other Revenues	159280.34
 2004	Potassium	Rents	36623
-2004	Oil (bbl)	Other Royalties	32.19
+2004	Oil	Other Royalties	-19450083.66
 2004	Geothermal	Bonus	70303.18000000001
 2004	Sand & Gravel	Rents	-320
 2004	Tar Sands	Rents	12190
@@ -39,12 +39,12 @@ Year	Commodity	Type	Revenue
 2004	Gilsonite	Other Revenues	21825
 2004	Gilsonite	Rents	5299
 2005	Oil & Gas	Other Revenues	4566624.85
-2005	Gas (mcf)	Other Royalties	422793.79000000004
-2005	Oil & Gas	Other Royalties	88790315.25999999
+2005	Gas	Other Royalties	1126252.1100000003
+2005	Oil & Gas	Other Royalties	87183635.5
 2005	Oil & Gas	Rents	265410354.7
-2005	Gas (mcf)	Royalties	1921549055.1599998
-2005	NGL (gal)	Royalties	122048788.80000001
-2005	Oil (bbl)	Royalties	432994626.87
+2005	Gas	Royalties	5176237349.440001
+2005	NGL	Royalties	265640089.28000003
+2005	Oil	Royalties	2715709597.5
 2005	Coal	Rents	886794.78
 2005	Other Products	Royalties	53564758.67
 2005	Hardrock	Rents	-11800.75
@@ -57,12 +57,12 @@ Year	Commodity	Type	Revenue
 2005	Geothermal	Royalties	11674341.030000001
 2005	Geothermal	Other Revenues	11605.07
 2005	Oil Shale	Other Revenues	30000
-2005	Coal (ton)	Royalties	453317171.8999999
+2005	Coal	Royalties	453317171.8999999
 2005	Phosphate	Rents	-24794
 2005	Phosphate	Other Revenues	130491
 2005	Gemstones	Rents	80
 2005	Coal	Other Revenues	477923.550000001
-2005	Oil (bbl)	Other Royalties	304.41
+2005	Oil	Other Royalties	-10673498.3
 2005	Copper	Other Revenues	39165
 2005	Copper	Rents	-20220.5
 2005	Coal	Other Royalties	3001515.25
@@ -74,13 +74,13 @@ Year	Commodity	Type	Revenue
 2005	Clay	Rents	468
 2005	Gilsonite	Rents	1922
 2006	Oil & Gas	Other Revenues	5674784.41
-2006	Oil (bbl)	Other Revenues	-1130.17
-2006	Gas (mcf)	Other Royalties	418686.6
-2006	Oil & Gas	Other Royalties	-17482132.329999994
+2006	Oil	Other Revenues	-1130.17
+2006	Gas	Other Royalties	712412.94
+2006	Oil & Gas	Other Royalties	-63313555.98999999
 2006	Oil & Gas	Rents	299148724.03000003
-2006	Gas (mcf)	Royalties	2057372209.6799998
-2006	NGL (gal)	Royalties	146421097.43
-2006	Oil (bbl)	Royalties	638243833.9900001
+2006	Gas	Royalties	5090529925.96
+2006	NGL	Royalties	299449283.8
+2006	Oil	Royalties	4280594454.4400005
 2006	Coal	Rents	1274023.2
 2006	Other Products	Royalties	74394519.52999999
 2006	Hardrock	Rents	18995.989999999998
@@ -95,7 +95,7 @@ Year	Commodity	Type	Revenue
 2006	Oil & Gas	Royalties	-18952.529999999995
 2006	Geothermal	Other Revenues	13448.57
 2006	Sodium	Other Revenues	82151
-2006	Coal (ton)	Royalties	529095911.31
+2006	Coal	Royalties	529095911.31
 2006	Oil Shale	Other Revenues	20000
 2006	Oil Shale	Rents	15264
 2006	Phosphate	Rents	8365
@@ -107,18 +107,18 @@ Year	Commodity	Type	Revenue
 2006	Potassium	Bonus	9638.54
 2006	Potassium	Other Revenues	508972.01
 2006	Potassium	Rents	8460
-2006	NGL (gal)	Other Royalties	487458.94
-2006	Oil (bbl)	Other Royalties	2.120000000000001
+2006	NGL	Other Royalties	511326.74
+2006	Oil	Other Royalties	-10004430.270000003
 2006	Asphalt	Rents	959
 2006	Clay	Rents	314
 2006	Gilsonite	Rents	1489.5
 2007	Oil & Gas	Other Revenues	5666657.47
-2007	Gas (mcf)	Other Royalties	108361.73999999999
-2007	Oil & Gas	Other Royalties	93499933.7
+2007	Gas	Other Royalties	3187313.62
+2007	Oil & Gas	Other Royalties	109040209.82000001
 2007	Oil & Gas	Rents	263388227.2
-2007	Gas (mcf)	Royalties	1724461705.0199997
-2007	NGL (gal)	Royalties	182649623.37
-2007	Oil (bbl)	Royalties	730157485.8199999
+2007	Gas	Royalties	4286907618.4399996
+2007	NGL	Royalties	404988436.84000003
+2007	Oil	Royalties	4406980582.48
 2007	Oil & Gas	Bonus	784974781.5
 2007	Coal	Rents	1086849.03
 2007	Other Products	Royalties	67551268.33
@@ -131,8 +131,7 @@ Year	Commodity	Type	Revenue
 2007	Geothermal	Bonus	25133059
 2007	Geothermal	Other Revenues	25828.5
 2007	Sodium	Bonus	120
-2007	Coal	Royalties	-240723.71
-2007	Coal (ton)	Royalties	590421896.4499999
+2007	Coal	Royalties	590181172.74
 2007	Coal	Other Revenues	-2864327.55
 2007	Sodium	Other Revenues	103670.88
 2007	Phosphate	Rents	-7150
@@ -140,7 +139,7 @@ Year	Commodity	Type	Revenue
 2007	Gemstones	Rents	80
 2007	Copper	Other Revenues	26110
 2007	Potassium	Bonus	5559.75
-2007	Oil (bbl)	Other Royalties	6771.08
+2007	Oil	Other Royalties	6683918.180000001
 2007	Potassium	Rents	-698.25
 2007	Coal	Other Royalties	1134366.3
 2007	Tar Sands	Rents	24380
@@ -148,12 +147,12 @@ Year	Commodity	Type	Revenue
 2007	Clay	Rents	314
 2007	Gilsonite	Rents	2128
 2008	Oil & Gas	Other Revenues	6893550.58
-2008	Gas (mcf)	Other Royalties	51367.409999999996
-2008	Oil & Gas	Other Royalties	23381224.510000005
+2008	Gas	Other Royalties	1781318.72
+2008	Oil & Gas	Other Royalties	2794882.820000004
 2008	Oil & Gas	Rents	303458100.88
-2008	Gas (mcf)	Royalties	2550413314.2800007
-2008	NGL (gal)	Royalties	283494304.73
-2008	Oil (bbl)	Royalties	1149263725.9799998
+2008	Gas	Royalties	5383426273.55
+2008	NGL	Royalties	547945288.8100001
+2008	Oil	Royalties	5827451052.650001
 2008	Coal	Rents	1283352.5899999999
 2008	Other Products	Royalties	109614410.64000002
 2008	Hardrock	Other Revenues	35209.46
@@ -167,7 +166,7 @@ Year	Commodity	Type	Revenue
 2008	Geothermal	Other Revenues	12586.830000000002
 2008	Sodium	Bonus	120
 2008	Hot Springs	Rents	33
-2008	Coal (ton)	Royalties	701508400.05
+2008	Coal	Royalties	701508400.05
 2008	Sodium	Other Revenues	457571.89999999997
 2008	Phosphate	Rents	11507
 2008	Phosphate	Other Revenues	157144
@@ -178,7 +177,7 @@ Year	Commodity	Type	Revenue
 2008	Copper	Other Revenues	26110
 2008	Potassium	Bonus	787103.75
 2008	Potassium	Other Revenues	561946.21
-2008	Oil (bbl)	Other Royalties	24435.9
+2008	Oil	Other Royalties	4165070.78
 2008	Potassium	Rents	91871.25
 2008	Geothermal	Bonus	27992464.000000004
 2008	Asphalt	Rents	959
@@ -187,12 +186,12 @@ Year	Commodity	Type	Revenue
 2008	Gilsonite	Other Revenues	3687
 2008	Gilsonite	Rents	6523.5
 2009	Oil & Gas	Other Revenues	4853927.390000001
-2009	Gas (mcf)	Other Royalties	669271.43
-2009	Oil & Gas	Other Royalties	-18292881.700000003
+2009	Gas	Other Royalties	1054968.56
+2009	Oil & Gas	Other Royalties	-2509854.7400000016
 2009	Oil & Gas	Rents	285935440.27
-2009	Gas (mcf)	Royalties	1104265863.54
-2009	NGL (gal)	Royalties	130518074.00999998
-2009	Oil (bbl)	Royalties	617699469.5500001
+2009	Gas	Royalties	1878164648.1299999
+2009	NGL	Royalties	234256619.95999998
+2009	Oil	Royalties	2894540448.7
 2009	Oil & Gas	Bonus	1255452529.69
 2009	Other Products	Royalties	104838302.30999999
 2009	Hardrock	Other Revenues	36484.1
@@ -206,7 +205,7 @@ Year	Commodity	Type	Revenue
 2009	Geothermal	Royalties	10362146.02
 2009	Sodium	Bonus	1416
 2009	Sodium	Other Revenues	52073.98999999999
-2009	Coal (ton)	Royalties	691920216.8100001
+2009	Coal	Royalties	691920216.8100001
 2009	Phosphate	Other Revenues	135039
 2009	Phosphate	Rents	-1441
 2009	Copper	Other Revenues	26110
@@ -220,17 +219,17 @@ Year	Commodity	Type	Revenue
 2009	Gilsonite	Other Revenues	-2409.6900000000005
 2009	Gilsonite	Rents	-3957.5
 2010	Oil & Gas	Other Revenues	1139915.9800000002
-2010	Gas (mcf)	Other Royalties	-11991.08
-2010	Oil & Gas	Other Royalties	21854277.94
+2010	Gas	Other Royalties	71435.34999999999
+2010	Oil & Gas	Other Royalties	93277451.64
 2010	Oil & Gas	Rents	282644743.59000003
-2010	Gas (mcf)	Royalties	1489234795.31
-2010	NGL (gal)	Royalties	206665997.37
-2010	Oil (bbl)	Royalties	892926700.7900001
+2010	Gas	Royalties	2462212032.13
+2010	NGL	Royalties	428131189.97
+2010	Oil	Royalties	5036206829.049999
 2010	Oil & Gas	Bonus	1047068867.0799999
 2010	Other Products	Royalties	105936705.00999999
 2010	Hardrock	Other Revenues	39552.770000000004
 2010	Coal	Rents	1349863.3499999999
-2010	Coal (ton)	Royalties	762300666.0200001
+2010	Coal	Royalties	762300666.0200001
 2010	Hardrock	Rents	1386.93
 2010	Geothermal	Rents	3177496.71
 2010	Sodium	Rents	-13140.66
@@ -257,13 +256,13 @@ Year	Commodity	Type	Revenue
 2010	Gilsonite	Bonus	1500
 2010	Gilsonite	Rents	1120.5
 2011	Oil & Gas	Other Revenues	5760706.180000002
-2011	Gas (mcf)	Other Royalties	-18418.18
-2011	Oil & Gas	Other Royalties	25351059.44
+2011	Gas	Other Royalties	467940.87
+2011	Oil & Gas	Other Royalties	58791626.650000006
 2011	Oil & Gas	Rents	258041283.01000002
-2011	Gas (mcf)	Royalties	1370384179.2500002
-2011	Oil (bbl)	Royalties	1166895254.58
+2011	Gas	Royalties	2189095344.1800003
+2011	Oil	Royalties	6424132283.54
 2011	Oil & Gas	Bonus	327336225.24
-2011	NGL (gal)	Royalties	290644420.84000003
+2011	NGL	Royalties	569734969.7
 2011	Other Products	Royalties	131968533.73999998
 2011	Hardrock	Rents	-1448.5
 2011	Coal	Rents	1317319.27
@@ -277,28 +276,28 @@ Year	Commodity	Type	Revenue
 2011	Sodium	Bonus	120
 2011	Geothermal	Bonus	432591
 2011	Coal	Bonus	246413527.16
-2011	NGL (gal)	Other Royalties	156525.92
+2011	NGL	Other Royalties	80492.6
 2011	Sodium	Other Revenues	184332.34
 2011	Oil Shale	Rents	1252
 2011	Phosphate	Rents	-3367.5
 2011	Phosphate	Bonus	755824
 2011	Phosphate	Other Revenues	160807
-2011	Oil (bbl)	Other Royalties	11.07
+2011	Oil	Other Royalties	872315.6399999997
 2011	Copper	Other Revenues	26110
 2011	Geothermal	Other Royalties	30070
-2011	Coal (ton)	Royalties	786436238.3500001
+2011	Coal	Royalties	786436238.3500001
 2011	Potassium	Other Revenues	304066.4
 2011	Potassium	Bonus	20962776.73
 2011	Clay	Rents	314
 2011	Gilsonite	Rents	-1329.5
 2012	Oil & Gas	Other Revenues	6227104.01
-2012	Gas (mcf)	Other Royalties	-26965.41
-2012	Oil & Gas	Other Royalties	-5222141.29
+2012	Gas	Other Royalties	619581.02
+2012	Oil & Gas	Other Royalties	22067402.770000003
 2012	Oil & Gas	Rents	286692397.05
-2012	Gas (mcf)	Royalties	856951118
-2012	Oil (bbl)	Royalties	1346704955.2199998
+2012	Gas	Royalties	1298638013.4700003
+2012	Oil	Royalties	6631392919.950001
 2012	Oil & Gas	Bonus	2272937544.98
-2012	NGL (gal)	Royalties	326348543.57
+2012	NGL	Royalties	549823574.92
 2012	Other Products	Royalties	169719221.83000004
 2012	Hardrock	Rents	10230
 2012	Coal	Rents	1380223.2799999998
@@ -316,26 +315,26 @@ Year	Commodity	Type	Revenue
 2012	Phosphate	Other Revenues	138052
 2012	Phosphate	Rents	1921.5
 2012	Phosphate	Bonus	799997.74
-2012	Oil (bbl)	Other Royalties	16.65
-2012	NGL (gal)	Other Royalties	1898.55
+2012	Oil	Other Royalties	7937836.169999999
+2012	NGL	Other Royalties	837395.07
 2012	Copper	Other Revenues	26110
 2012	Hardrock	Bonus	30
-2012	Gas (mcf)	Other Revenues	-0.01
+2012	Gas	Other Revenues	-0.01
 2012	Potassium	Bonus	2334568
 2012	Oil & Gas	Royalties	-1.46
-2012	Coal (ton)	Royalties	783923797.06
+2012	Coal	Royalties	783923797.06
 2012	Potassium	Other Revenues	328069.62
 2012	Clay	Rents	-6
 2012	Gilsonite	Rents	-3201.5
 2013	Oil & Gas	Other Revenues	28564681.670000006
-2013	Gas (mcf)	Other Royalties	-4658.55
-2013	Oil & Gas	Other Royalties	10215357.81
+2013	Gas	Other Royalties	255385.11000000002
+2013	Oil & Gas	Other Royalties	7324671.220000001
 2013	Geothermal	Rents	2587597.01
 2013	Oil & Gas	Rents	283643785.73999995
-2013	Gas (mcf)	Royalties	1077316681.0000002
-2013	Oil (bbl)	Royalties	1510863188.0200005
+2013	Gas	Royalties	1577459745.9899998
+2013	Oil	Royalties	7030423790.640001
 2013	Oil & Gas	Bonus	1614412777.25
-2013	NGL (gal)	Royalties	232375970.90000004
+2013	NGL	Royalties	398273401.3400001
 2013	Other Products	Royalties	159814167.67000002
 2013	Hardrock	Other Revenues	37845.55
 2013	Coal	Rents	1163029.02
@@ -357,7 +356,7 @@ Year	Commodity	Type	Revenue
 2013	Potassium	Other Revenues	365623
 2013	Clay	Rents	314
 2013	Gilsonite	Rents	1826.5
-2013	NGL (gal)	Other Royalties	6723.77
+2013	NGL	Other Royalties	-50617.87
 2005	Potassium	Other Royalties	299039.46
 2005	Clay	Other Revenues	782.43
 2005	Gilsonite	Other Revenues	11151
@@ -381,101 +380,40 @@ Year	Commodity	Type	Revenue
 2012	Coal	Other Royalties	686970.16
 2012	Clay	Other Revenues	462
 2012	Gilsonite	Other Revenues	-1533
-2013	Coal (ton)	Royalties	667682678.48
+2013	Coal	Royalties	667682678.48
 2013	Coal	Other Revenues	3922545.0300000003
 2013	Coal	Other Royalties	11704.82
 2013	Clay	Other Revenues	942
 2013	Gilsonite	Other Revenues	4191
-2004	Gas	Other Roy Vals	487286.50000000006
-2004	NGL	Other Roy Vals	38900.79
-2004	Oil	Other Roy Vals	-19450115.85
-2004	Oil & Gas	Other Roy Vals	-3920.120000001043
-2004	Gas	Royalties	3333630704.6400003
-2004	NGL	Royalties	159351892.52
-2004	Oil	Royalties	1339786648.41
-2005	Gas	Other Roy Vals	703458.32
-2005	NGL	Other Roy Vals	45280.07
-2005	Oil	Other Roy Vals	-10673802.71
-2005	Oil & Gas	Other Roy Vals	-1606679.7600000002
-2005	Gas	Royalties	3254688294.2799993
-2005	NGL	Royalties	143591300.48000002
-2005	Oil	Royalties	2282714970.63
-2006	Gas	Other Roy Vals	293726.34
-2006	NGL	Other Roy Vals	23867.8
-2006	Oil	Other Roy Vals	-10004432.39
-2006	Oil & Gas	Other Roy Vals	-45831423.66
-2006	Gas	Royalties	3033157716.28
-2006	NGL	Royalties	153028186.37000003
-2006	Oil	Royalties	3642350620.45
-2007	Gas	Other Roy Vals	3078951.8800000004
-2007	NGL	Other Roy Vals	26199.16
-2007	Oil	Other Roy Vals	6677147.100000001
-2007	Oil & Gas	Other Roy Vals	15540276.120000001
-2007	Gas	Royalties	2562445913.42
-2007	NGL	Royalties	222338813.47
-2007	Oil	Royalties	3676823096.66
-2008	Gas	Other Roy Vals	1729951.31
-2008	NGL	Other Roy Vals	31813.38
-2008	Oil	Other Roy Vals	4140634.8799999994
-2008	Oil & Gas	Other Roy Vals	-20586341.690000005
-2008	Gas	Royalties	2833012959.2700005
-2008	NGL	Royalties	264450984.07999998
-2008	Oil	Royalties	4678187326.67
-2009	Gas	Other Roy Vals	385697.13
-2009	NGL	Other Roy Vals	79962.93
-2009	Oil	Other Roy Vals	69623812.44
-2009	Oil & Gas	Other Roy Vals	15783026.96
-2009	Gas	Royalties	773898784.5900002
-2009	NGL	Royalties	103738545.95
-2009	Oil	Royalties	2276840979.1500006
-2010	Gas	Other Roy Vals	83426.43000000001
-2010	NGL	Other Roy Vals	72740.03
-2010	Oil	Other Roy Vals	67259900.2
-2010	Oil & Gas	Other Roy Vals	71423173.7
-2010	Gas	Royalties	972977236.82
-2010	NGL	Royalties	221465192.6
-2010	Oil	Royalties	4143280128.26
-2011	Gas	Other Roy Vals	486359.05
-2011	NGL	Other Roy Vals	-76033.32
-2011	Oil	Other Roy Vals	872304.5699999994
-2011	Oil & Gas	Other Roy Vals	33440567.21
-2011	Gas	Royalties	818711164.9300001
-2011	NGL	Royalties	279090548.86
-2011	Oil	Royalties	5257237028.96
-2012	Gas	Other Roy Vals	646546.43
-2012	NGL	Other Roy Vals	835496.52
-2012	Oil	Other Roy Vals	7937819.52
-2012	Oil & Gas	Other Roy Vals	27289544.060000002
-2012	Gas	Royalties	441686895.47
-2012	NGL	Royalties	223475031.35
-2012	Oil	Royalties	5284687964.73
-2013	Gas	Other Roy Vals	260043.66
-2013	NGL	Other Roy Vals	-57341.64
-2013	Oil	Other Roy Vals	6746359.720000001
-2013	Oil & Gas	Other Roy Vals	-2890686.59
-2013	Gas	Royalties	500143064.99
-2013	NGL	Royalties	165897430.44
-2013	Oil	Royalties	5519560602.620001
+2004	NGL	Other Royalties	38900.79
+2005	NGL	Other Royalties	45280.07
+2007	NGL	Other Royalties	26199.16
+2008	NGL	Other Royalties	31813.38
+2009	NGL	Other Royalties	79962.93
+2009	Oil	Other Royalties	69623812.44
+2010	NGL	Other Royalties	72740.03
+2010	Oil	Other Royalties	67259900.2
+2013	Oil	Other Royalties	6746359.720000001
 2004	Sulfur	Other Revenues	22221.06
 2005	Sulfur	Other Revenues	10547.43
 2006	Sulfur	Other Revenues	10838
 2007	Sulfur	Other Revenues	11624.84
 2008	Sulfur	Other Revenues	12709.04
-2008	Other Commodities	Royalties	274461.14
+2008	Other	Royalties	274461.14
 2009	Sulfur	Other Revenues	12631.84
 2010	Sulfur	Other Revenues	12551.32
 2011	Sulfur	Other Revenues	12670.72
 2012	Sulfur	Other Revenues	12429.6
 2013	Sulfur	Other Revenues	11186
-2004	Other Commodities	Royalties	31647.33
-2005	Other Commodities	Royalties	33538.57
-2006	Other Commodities	Royalties	16655.01
-2007	Other Commodities	Royalties	35556.72
-2009	Other Commodities	Royalties	20981.66
-2010	Other Commodities	Royalties	2202.000000000002
-2011	Other Commodities	Royalties	66345.86
-2012	Other Commodities	Royalties	51865.990000000005
-2013	Other Commodities	Royalties	21907.44
+2004	Other	Royalties	31647.33
+2005	Other	Royalties	33538.57
+2006	Other	Royalties	16655.01
+2007	Other	Royalties	35556.72
+2009	Other	Royalties	20981.66
+2010	Other	Royalties	2202.000000000002
+2011	Other	Royalties	66345.86
+2012	Other	Royalties	51865.990000000005
+2013	Other	Royalties	21907.44
 2009	Wind	Rents	68319.68
 2010	Wind	Rents	139517.76
 2011	Wind	Rents	135247.84

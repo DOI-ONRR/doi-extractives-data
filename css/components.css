@@ -1,7 +1,8 @@
 x-slider {
   display: block;
   height: .8em;
-  margin: 1em .5em;
+  margin-top: 2.5em;
+  margin-bottom: 1em;
   background: #ddd;
   border-radius: .2em;
   cursor: pointer;

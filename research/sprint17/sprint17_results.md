@@ -6,7 +6,7 @@
 - Do people understand what the site is about? KINDA!
 - Can they figure out how to find and navigate stories? NO!
 - Do people understand the term 'extractive resources'? KINDA!
-- What problems are most severe?
+- What problems are most severe? WHAT IS USEITI? WHY AM I HERE? WHAT SHOULD I DO?
 
 
 ## General feedback
@@ -43,6 +43,24 @@ Testing navigation on a printout is not ideal, but it seems like other issues we
 - _Oh this is way longer than i thought it was. I expected it to end after these. Will there be even more?_
 - _The more you scroll down, the more likely you are an industry expert, or someone at EITI looking for your information_
 
+
+## Composite images of printouts with groupings
+
+### Page One
+
+- People were in general interested in the large pull-quote. Some accepted it at face value, others didn't know if they should be impressed or not. How does this value stack up against other national statistics?
+- People in general were confused by the 'resources to revenue' block.
+- People in general really liked the three-across content block, in particular the 'What sectors?' (first on left) block.
+
+![Composite marked-up printout, page one](../../assets/img/sprint17-composit-pg1-groups.jpg)
+
+### Page Two
+
+- People really liked the zip code lookup. _Note: We are not sure of the best implementation on this (what should it return, should it be linked to a map, so we even have the right data to support this) and so will be removing it from layouts to test other ideas in the near future, with the hope that we can re-introduce it further down the line._
+- People were confused about the icons in the '7.88' graphic. What do they mean?
+- There seemed to be a broader confusion about the words associated with 'clicking for more info' in a block. What would they do? What do they mean?
+
+![Composite marked-up printout, page two](../../assets/img/sprint17-composit-pg2-groups.jpg)
 
 
 ## Process notes

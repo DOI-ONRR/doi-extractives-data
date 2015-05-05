@@ -145,10 +145,19 @@
         }
       },
       {
-        keys: ['Area', 'Year']
+        keys: ['Area', 'Year'],
+        sort: function(a, b) {
+          return d3.ascending(a.name, b.name);
+        }
       },
       {
         keys: ['Commodity', 'ActualCommodity']
+      },
+      {
+        keys: ['Shore', 'Year', 'Commodity'],
+        sort: function(a, b) {
+          return d3.ascending(a.name, b.name);
+        }
       },
     ];
 

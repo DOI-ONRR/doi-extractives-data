@@ -99,7 +99,8 @@
       ]);
 
       this.groupMap = {
-        'Oil Shale': 'Oil'
+        'Oil Shale': 'Oil',
+        'NGL': 'Gas'
       };
 
       this.groupColors = {

@@ -50,8 +50,9 @@
 
   var commodities = new eiti.data.Commodities();
 
-  var setCommodityGroup = function(d) {
-    d.CommodityGroup = commodities.getGroup(d.Commodity);
+  var setCommodity = function(d) {
+    d.ActualCommodity = d.Commodity;
+    d.Commodity = commodities.getGroup(d.Commodity);
   };
 
   var getter = eiti.data.getter;
@@ -84,9 +85,9 @@
       console.timeEnd('load');
       if (error) return console.error(error.responseText);
 
-      natlRevenues.forEach(setCommodityGroup);
-      stateRevenues.forEach(setCommodityGroup);
-      offshoreRevenues.forEach(setCommodityGroup);
+      natlRevenues.forEach(setCommodity);
+      stateRevenues.forEach(setCommodity);
+      offshoreRevenues.forEach(setCommodity);
 
       stateRevenues.forEach(function(d) {
         d.Shore = 'Onshore';
@@ -124,25 +125,28 @@
 
     var configs = [
       {
-        keys: ['CommodityGroup', 'Region', 'Area']
+        keys: ['Commodity', 'Region', 'Area']
       },
       {
         keys: ['Type', 'Commodity', 'Region']
       },
       {
-        keys: ['Region', 'Area', 'CommodityGroup']
+        keys: ['Region', 'Area', 'Commodity']
       },
       {
-        keys: ['Shore', 'Area', 'CommodityGroup']
+        keys: ['Shore', 'Area', 'Commodity']
       },
       {
-        keys: ['Year', 'CommodityGroup', 'Area'],
+        keys: ['Year', 'Commodity', 'Area'],
         sort: function(a, b) {
           return d3.ascending(a.name, b.name);
         }
       },
       {
         keys: ['Area', 'Year']
+      },
+      {
+        keys: ['Commodity', 'ActualCommodity']
       },
     ];
 

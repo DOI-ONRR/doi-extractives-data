@@ -38,6 +38,7 @@
       <div class="bar"><span class="label"></span></div>
     </div>
 
+    <h1>Revenue Hierarchies</h1>
     <section id="hierarchy">
     </section>
   </body>
@@ -119,6 +120,7 @@
 
       console.log('loaded!', data);
       loaded();
+      eiti.util.jiggleHash();
     });
 
   function loaded() {
@@ -150,23 +152,34 @@
       },
     ];
 
-    d3.select('#hierarchy')
+    var section = d3.select('#hierarchy')
       .selectAll('section')
       .data(configs)
       .enter()
       .append('section')
-        .each(function(d) {
-          var render = renderTree()
-            .keys(d.keys);
-          if (d.sort) {
-            render.sort(d.sort);
-          }
-          d3.select(this).call(render);
+        .attr('id', function(d) {
+          return d.id = d.keys
+            .map(clean)
+            .join('_');
+        });
+
+    section.append('h2')
+      .append('a')
+        .attr('href', function(d) {
+          return '#' + d.id;
         })
-        .insert('h2', '*')
-          .text(function(d) {
-            return d.keys.join(' / ');
-          });
+        .text(function(d) {
+          return d.keys.map(unCamelCase).join(' / ');
+        });
+
+    section.each(function(d) {
+      var render = renderTree()
+        .keys(d.keys);
+      if (d.sort) {
+        render.sort(d.sort);
+      }
+      d3.select(this).call(render);
+    });
   }
 
   function renderTree() {
@@ -221,12 +234,6 @@
             .attr('transform', function(d) {
               return 'translate(' + [d.x, d.y] + ')';
             });
-
-      function clean(str) {
-        return String(str)
-          .toLowerCase()
-          .replace(/\s+/g, '');
-      }
 
       g.append('rect')
         .attr('id', function(d) {
@@ -309,6 +316,18 @@
 
     return expand(nest.map(nodes), 'All', function(d) {
       return d.value;
+    });
+  }
+
+  function clean(str) {
+    return String(str)
+      .toLowerCase()
+      .replace(/\s+/g, '');
+  }
+
+  function unCamelCase(str) {
+    return str.replace(/([a-z])([A-Z])/g, function(_, a, b) {
+      return [a, b].join(' ');
     });
   }
 

@@ -216,7 +216,7 @@
         var config = d.config;
         var render = renderTree()
           .keys(config.keys);
-        if (d.sort) {
+        if (config.sort) {
           render.sort(config.sort);
         }
         d3.select(this)

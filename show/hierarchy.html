@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>USEITI Data: Hierarchy</title>
+    <script src="../js/vendor/d3.v3.min.js"></script>
+    <script src="../js/vendor/queue.v1.min.js"></script>
+    <script src="../js/vendor/colorbrewer.js"></script>
+    <script src="../js/eiti.js"></script>
+    <script src="../js/progressive.js"></script>
+    <link rel="stylesheet" href="../css/main.css">
+    <style>
+
+      h2 {
+        margin: .5em 0;
+      }
+
+      .tree {
+        position: relative;
+        box-sizing: border-box;
+        transform: rotate(-90deg);
+        transform-origin: center;
+      }
+
+      .tree .node {
+        position: absolute;
+        box-sizing: border-box;
+        overflow: hidden;
+        white-space: pre;
+        padding-left: 2px;
+      }
+
+      .tree .node .label {
+        display: block;
+        font-size: 12px;
+        transform: translate(2px,-8px) rotate(90deg);
+        transform-origin: bottom left;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="progress">
+      <div class="bar"><span class="label"></span></div>
+    </div>
+
+    <section id="hierarchy">
+    </section>
+  </body>
+  <script>
+(function(exports) {
+
+  var data = exports.data = {};
+
+  var prog = progressive();
+
+  var commodities = new eiti.data.Commodities();
+
+  var setCommodityGroup = function(d) {
+    d.CommodityGroup = commodities.getGroup(d.Commodity);
+  };
+
+  var getter = eiti.data.getter;
+
+  var sum = function(list, key) {
+    if (typeof key === 'string') key = getter(key);
+    return d3.sum(list, key);
+  };
+
+  d3.select('#progress')
+    .call(progressive.bar(prog));
+
+  console.log('loading...');
+  console.time('load');
+  var dataPath = '../output/';
+  queue()
+    .defer(prog, d3.tsv, dataPath + 'national/revenues-yearly.tsv')
+    .defer(prog, d3.tsv, dataPath + 'state/revenues-yearly.tsv')
+    .defer(prog, d3.tsv, dataPath + 'offshore/revenues-yearly.tsv')
+    .await(function(error, natlRevenues, stateRevenues, offshoreRevenues) {
+      console.timeEnd('load');
+      if (error) return console.error(error.responseText);
+
+      natlRevenues.forEach(setCommodityGroup);
+      stateRevenues.forEach(setCommodityGroup);
+      offshoreRevenues.forEach(setCommodityGroup);
+
+      stateRevenues.forEach(function(d) {
+        d.Shore = 'Onshore';
+        d.Region = 'States';
+        d.Area = d.State;
+      });
+
+      offshoreRevenues.forEach(function(d) {
+        d.Shore = 'Offshore';
+      });
+
+      data.sums = {
+        national: sum(natlRevenues, 'Revenue'),
+        state: sum(stateRevenues, 'Revenue'),
+        offshore: sum(offshoreRevenues, 'Revenue')
+      };
+
+      data.revenues = {
+        national: natlRevenues,
+        state: stateRevenues,
+        offshore: offshoreRevenues
+      };
+
+      var nodes = [];
+      nodes = nodes.concat(stateRevenues);
+      nodes = nodes.concat(offshoreRevenues);
+
+      data.nodes = nodes;
+
+      console.log('loaded!', data);
+      loaded();
+    });
+
+  function loaded() {
+
+    var configs = [
+      {
+        keys: ['CommodityGroup', 'Region', 'Area']
+      },
+      {
+        keys: ['Type', 'Commodity', 'Region']
+      },
+      {
+        keys: ['Region', 'Area', 'CommodityGroup']
+      },
+      {
+        keys: ['Shore', 'Area', 'CommodityGroup']
+      },
+    ];
+
+    d3.select('#hierarchy')
+      .selectAll('section')
+      .data(configs)
+      .enter()
+      .append('section')
+        .each(function(d) {
+          d3.select(this).call(renderTree, d.keys);
+        })
+        .insert('h2', '*')
+          .text(function(d) {
+            return d.keys.join(' / ');
+          });
+  }
+
+  function renderTree(selection, keys) {
+    var name = getter(keys[keys.length - 1]);
+    data.nodes.forEach(function(d, i) {
+      d.index = i;
+      d.name = name(d);
+    });
+
+    var tree = treeify(data.nodes, keys, 'Revenue');
+    console.log('tree:', tree);
+
+    var width = 800;
+    var height = 800;
+
+    var treemap = d3.layout.partition()
+      .size([width, height])
+      .sort(function(a, b) {
+        return d3.ascending(a.value, b.value);
+      });
+      // .padding([10, 2, 2, 2])
+      // .round(true);
+
+    var root = selection
+      .append('div')
+        .attr('class', 'tree')
+        .style('width', width + 'px')
+        .style('height', height + 'px');
+
+    var color = d3.scale.category20c();
+
+    var div = root
+      .datum(tree)
+      .selectAll('.node')
+        .data(treemap.nodes)
+        .enter()
+        .append('div')
+          .attr('class', 'node')
+          /*
+          .sort(function(a, b) {
+            return d3.ascending(a.depth, b.depth) || d3.ascending(a.name, b.name);
+          })
+          */
+          .style('left', function(d) {
+            return d.x + 'px';
+          })
+          .style('top', function(d) {
+            return d.y + 'px';
+          })
+          .style('width', function(d) {
+            return Math.max(0, d.dx - 1) + "px";
+          })
+          .style('height', function(d) {
+            return Math.max(0, d.dy - 1) + "px";
+          })
+          .style('background', function(d) {
+            return color(d.children ? d.name : d.parent.name);
+          });
+
+    div.append('span')
+      .attr('class', 'label')
+      .text(function(d) {
+        return [
+          d.children ? d.name : d.node.name,
+          ': ',
+          eiti.format.shortDollars(d.value)
+        ].join('');
+      });
+  }
+
+  function treeify(nodes, groupKeys, sumKey) {
+    var nest = d3.nest();
+    groupKeys
+      .map(getter)
+      .forEach(nest.key);
+    var name = getter(groupKeys[groupKeys.length - 1]);
+    nest.rollup(function(d, i) {
+      return {
+        node: d[0],
+        name: name(d[0]),
+        value: sum(d, sumKey)
+      };
+    });
+
+    function expand(node, name, leaf, depth) {
+      if (leaf(node)) return node;
+      if (!depth) depth = 0;
+      return {
+        name: name,
+        depth: depth,
+        keys: groupKeys.slice(0, depth),
+        children: Object.keys(node)
+          .map(function(key) {
+            return expand(node[key], key, leaf, depth + 1);
+          })
+      };
+    }
+
+    return expand(nest.map(nodes), 'all', function(d) {
+      return d.value;
+    });
+  }
+
+})(this);
+  </script>
+</html>

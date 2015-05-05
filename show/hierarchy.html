@@ -200,15 +200,26 @@
           .style('width', width + 'px')
           .style('height', height + 'px');
 
+      var offx = -width / (keys.length + 1);
+      var w = width / keys.length;
+
       var g = root
         .datum(tree)
         .selectAll('.node')
           .data(treemap.nodes)
           .enter()
           .append('g')
+            .each(function(d) {
+              var y = d.x;
+              d.x = (d.depth - 1) * w;
+              d.y = y;
+              y = d.dx;
+              d.dx = w;
+              d.dy = y;
+            })
             .attr('class', 'node')
             .attr('transform', function(d) {
-              return 'translate(' + [d.y, d.x] + ')';
+              return 'translate(' + [d.x, d.y] + ')';
             });
 
       function clean(str) {
@@ -222,10 +233,10 @@
           return d.id = nextId('rect');
         })
         .attr('width', function(d) {
-          return Math.max(0, d.dy);
+          return Math.max(0, d.dx);
         })
         .attr('height', function(d) {
-          return Math.max(0, d.dx);
+          return Math.max(0, d.dy);
         })
         .attr('fill', function(d) {
           if (d.name === 'All') return '#eee';
@@ -244,7 +255,7 @@
         .text(title);
 
       g.filter(function(d) {
-          return d.dx > 20;
+          return d.dy > 20;
         })
         .append('text')
           .attr('class', 'label')

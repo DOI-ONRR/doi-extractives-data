@@ -18,23 +18,17 @@
       .tree {
         position: relative;
         box-sizing: border-box;
-        transform: rotate(-90deg);
-        transform-origin: center;
       }
 
-      .tree .node {
-        position: absolute;
-        box-sizing: border-box;
-        overflow: hidden;
-        white-space: pre;
-        padding-left: 2px;
+      .tree .node rect {
+        fill-opacity: .6;
+        stroke: #fff;
+        stroke-width: 1;
+        shape-rendering: crispEdges;
       }
 
       .tree .node .label {
-        display: block;
         font-size: 12px;
-        transform: translate(2px,-8px) rotate(90deg);
-        transform-origin: bottom left;
       }
 
     </style>
@@ -69,6 +63,15 @@
 
   d3.select('#progress')
     .call(progressive.bar(prog));
+
+  var color = d3.scale.category20c();
+
+  var nextId = (function() {
+    var id = 1;
+    return function(prefix) {
+      return (prefix || 'node') + (id++);
+    };
+  })();
 
   console.log('loading...');
   console.time('load');
@@ -132,6 +135,15 @@
       {
         keys: ['Shore', 'Area', 'CommodityGroup']
       },
+      {
+        keys: ['Year', 'CommodityGroup', 'Area'],
+        sort: function(a, b) {
+          return d3.ascending(a.name, b.name);
+        }
+      },
+      {
+        keys: ['Area', 'Year']
+      },
     ];
 
     d3.select('#hierarchy')
@@ -140,7 +152,12 @@
       .enter()
       .append('section')
         .each(function(d) {
-          d3.select(this).call(renderTree, d.keys);
+          var render = renderTree()
+            .keys(d.keys);
+          if (d.sort) {
+            render.sort(d.sort);
+          }
+          d3.select(this).call(render);
         })
         .insert('h2', '*')
           .text(function(d) {
@@ -148,72 +165,103 @@
           });
   }
 
-  function renderTree(selection, keys) {
-    var name = getter(keys[keys.length - 1]);
-    data.nodes.forEach(function(d, i) {
-      d.index = i;
-      d.name = name(d);
-    });
+  function renderTree() {
+    var keys = [];
+    var sort = function(a, b) {
+      return d3.descending(a.value, b.value);
+    };
 
-    var tree = treeify(data.nodes, keys, 'Revenue');
-    console.log('tree:', tree);
-
-    var width = 800;
-    var height = 800;
-
-    var treemap = d3.layout.partition()
-      .size([width, height])
-      .sort(function(a, b) {
-        return d3.ascending(a.value, b.value);
+    var render = function(selection) {
+      var name = getter(keys[keys.length - 1]);
+      data.nodes.forEach(function(d, i) {
+        d.index = i;
+        d.name = name(d);
       });
-      // .padding([10, 2, 2, 2])
-      // .round(true);
 
-    var root = selection
-      .append('div')
-        .attr('class', 'tree')
-        .style('width', width + 'px')
-        .style('height', height + 'px');
+      var tree = treeify(data.nodes, keys, 'Revenue');
+      // console.log('tree:', tree);
 
-    var color = d3.scale.category20c();
+      var width = 900;
+      var height = 700;
 
-    var div = root
-      .datum(tree)
-      .selectAll('.node')
-        .data(treemap.nodes)
-        .enter()
-        .append('div')
-          .attr('class', 'node')
-          /*
-          .sort(function(a, b) {
-            return d3.ascending(a.depth, b.depth) || d3.ascending(a.name, b.name);
-          })
-          */
-          .style('left', function(d) {
-            return d.x + 'px';
-          })
-          .style('top', function(d) {
-            return d.y + 'px';
-          })
-          .style('width', function(d) {
-            return Math.max(0, d.dx - 1) + "px";
-          })
-          .style('height', function(d) {
-            return Math.max(0, d.dy - 1) + "px";
-          })
-          .style('background', function(d) {
-            return color(d.children ? d.name : d.parent.name);
-          });
+      var treemap = d3.layout.partition()
+        .size([height, width])
+        .sort(sort);
+        // .padding([10, 2, 2, 2])
+        // .round(true);
 
-    div.append('span')
-      .attr('class', 'label')
-      .text(function(d) {
+      var root = selection
+        .append('svg')
+          .attr('class', 'tree')
+          .style('width', width + 'px')
+          .style('height', height + 'px');
+
+      var g = root
+        .datum(tree)
+        .selectAll('.node')
+          .data(treemap.nodes)
+          .enter()
+          .append('g')
+            .attr('class', 'node')
+            .attr('transform', function(d) {
+              return 'translate(' + [d.y, d.x] + ')';
+            });
+
+      function clean(str) {
+        return String(str)
+          .toLowerCase()
+          .replace(/\s+/g, '');
+      }
+
+      g.append('rect')
+        .attr('id', function(d) {
+          return d.id = nextId('rect');
+        })
+        .attr('width', function(d) {
+          return Math.max(0, d.dy);
+        })
+        .attr('height', function(d) {
+          return Math.max(0, d.dx);
+        })
+        .attr('fill', function(d) {
+          if (d.name === 'All') return '#eee';
+          return color(d.name);
+        });
+
+      var title = function(d) {
         return [
           d.children ? d.name : d.node.name,
           ': ',
           eiti.format.shortDollars(d.value)
         ].join('');
-      });
+      };
+
+      g.append('title')
+        .text(title);
+
+      g.filter(function(d) {
+          return d.dx > 20;
+        })
+        .append('text')
+          .attr('class', 'label')
+          .attr('dy', '1.4em')
+          .attr('dx', '.6em')
+          .text(title);
+    };
+
+    render.keys = function(_) {
+      if (!arguments.length) return keys;
+      keys = _;
+      return render;
+    };
+
+    render.sort = function(_) {
+      if (!arguments.length) return keys;
+      sort = _;
+      return render;
+    };
+
+    return render;
   }
 
   function treeify(nodes, groupKeys, sumKey) {
@@ -244,7 +292,7 @@
       };
     }
 
-    return expand(nest.map(nodes), 'all', function(d) {
+    return expand(nest.map(nodes), 'All', function(d) {
       return d.value;
     });
   }

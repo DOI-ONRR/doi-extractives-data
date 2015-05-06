@@ -125,12 +125,20 @@
 
   function loaded() {
 
+    var sortByName = function(a, b) {
+      return d3.ascending(a.name, b.name);
+    };
+
     var configs = [
       {
-        keys: ['Commodity', 'Region', 'Area']
+        keys: ['Type', 'Commodity'],
+        totals: true
       },
       {
-        keys: ['Type', 'Commodity', 'Region']
+        keys: ['Type', 'Region', 'Commodity']
+      },
+      {
+        keys: ['Commodity', 'Region', 'Area']
       },
       {
         keys: ['Region', 'Area', 'Commodity']
@@ -140,24 +148,19 @@
       },
       {
         keys: ['Year', 'Commodity', 'Area'],
-        sort: function(a, b) {
-          return d3.ascending(a.name, b.name);
-        }
+        sort: sortByName
       },
       {
         keys: ['Area', 'Year'],
-        sort: function(a, b) {
-          return d3.ascending(a.name, b.name);
-        }
+        sort: sortByName
       },
       {
-        keys: ['Commodity', 'ActualCommodity']
+        keys: ['Commodity', 'ActualCommodity'],
+        totals: true
       },
       {
         keys: ['Shore', 'Year', 'Commodity'],
-        sort: function(a, b) {
-          return d3.ascending(a.name, b.name);
-        }
+        sort: sortByName
       },
     ];
 
@@ -183,7 +186,8 @@
 
     section.each(function(d) {
       var render = renderTree()
-        .keys(d.keys);
+        .keys(d.keys)
+        .totals(d.totals);
       if (d.sort) {
         render.sort(d.sort);
       }
@@ -196,6 +200,8 @@
     var sort = function(a, b) {
       return d3.descending(a.value, b.value);
     };
+
+    var totals = false;
 
     var render = function(selection) {
       var name = getter(keys[keys.length - 1]);
@@ -233,10 +239,10 @@
           .append('g')
             .each(function(d) {
               var y = d.x;
-              d.x = (d.depth - 1) * w;
+              d.x = totals ? d.y : (d.depth - 1) * w;
               d.y = y;
               y = d.dx;
-              d.dx = w;
+              d.dx = totals ? d.dy : w;
               d.dy = y;
             })
             .attr('class', 'node')
@@ -289,6 +295,12 @@
     render.sort = function(_) {
       if (!arguments.length) return keys;
       sort = _;
+      return render;
+    };
+
+    render.totals = function(_) {
+      if (!arguments.length) return totals;
+      totals = !!_;
       return render;
     };
 

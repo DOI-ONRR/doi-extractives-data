@@ -3,16 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>USEITI Data: Components</title>
-    <script src="http://polyfill.cf.18f.us/v1/polyfill.min.js"></script>
+    <!--[if lte IE 9]>
+    <script src="../vendor/aight.min.js"></script>
+    <![endif]-->
+    <script src="../vendor/document-register-element.js"></script>
     <script src="../vendor/d3.v3.min.js"></script>
-    <script src="../vendor/webcomponents.min.js"></script>
-    <script src="../vendor/polymer.min.js"></script>
-    <link rel="import" href="x-slider.html">
+    <script src="x-slider.js"></script>
     <link rel="stylesheet" href="../../css/index.css">
     <link rel="stylesheet" href="../../css/components.css">
     <style>
       x-slider {
-        margin-left: 1em;
+        margin-left: 10em;
         margin-right: 1em;
       }
     </style>

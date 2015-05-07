@@ -37,5 +37,5 @@ Script available [here](https://github.com/18F/doi-extractives-data/blob/researc
 
 ## Test asset(s)
 
-We will be testing a live prototype site at [eiti-content.webflow.io](http://eiti-content.webflow.io). A record of what that url looked like during testing is available [here]().
+We will be testing a live prototype site at [eiti-content.webflow.io](http://eiti-content.webflow.io). A record of what that url looked like during testing is available [here](https://github.com/18F/doi-extractives-data/blob/research/assets/img/sprint17b-frontpage.png).
 

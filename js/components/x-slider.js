@@ -2,7 +2,8 @@
 
   exports.XSlider = registerElement('x-slider', {
     createdCallback: function() {
-      // console.log('x-slider created');
+      console.log('x-slider created');
+      this.setAttribute('unresolved', '');
       this.min = getAttr.call(this, 'min', 0);
       this.max = getAttr.call(this, 'max', 100);
       this.value = getAttr.call(this, 'value', 0);
@@ -10,18 +11,31 @@
     },
 
     attachedCallback: function() {
-      // console.log('x-slider attached');
-      this.__attached = true;
-      this.__handle = this.querySelector('.handle') || createHandle.call(this);
-      this.update();
+      console.log('x-slider attached');
 
-      this.addEventListener('click', this.__onclick);
-      this.addEventListener('mousedown', this.__mousedown);
+      var load = (function() {
+        console.warn('load!');
+
+        this.removeAttribute('unresolved');
+        this.__handle = this.querySelector('.handle') || createHandle.call(this);
+        this.update();
+
+        this.addEventListener('click', events.click);
+        this.addEventListener('mousedown', events.engage);
+        this.addEventListener('touchstart', events.engage);
+        this.addEventListener('focus', events.focus, true);
+        window.removeEventListener('load', load);
+      }).bind(this);
+
+      window.addEventListener('load', load);
     },
 
     detachedCallback: function() {
       // console.log('x-slider detached');
-      this.removeEventListener('click', this.__onclick);
+      this.removeEventListener('click', events.click);
+      this.removeEventListener('mousedown', events.enagage);
+      this.removeEventListener('touchstart', events.enagage);
+      this.removeEventListener('focus', events.focus, true);
     },
 
     attributeChangedCallback: function(attr, prev, value) {
@@ -30,7 +44,7 @@
         case 'max':
         case 'value':
         case 'snap':
-          console.log('x-slider attr: ', attr, ' = ', value);
+          // console.log('x-slider attr: ', attr, ' = ', value);
           this[attr] = value;
           this.update();
           break;
@@ -38,13 +52,12 @@
     },
 
     update: function() {
-      if (!this.__attached) return;
-      // console.log('x-slider update');
+      if (this.hasAttribute('unresolved')) return;
 
-      var min = +this.min;
-      var max = +this.max;
-      var value = clamp(+this.value, min, max);
-      if (this.snap) value = Math.round(value);
+      var min = this.min;
+      var max = this.max;
+      var value = this.value;
+
       var x = function(value) {
         return 100 * (value - min) / (max - min);
       };
@@ -72,38 +85,24 @@
       }
     },
 
-    __ondrag: function(e) {
-      this.__onclick(e);
-    },
+    // clamp to min and max, round if snap === true
+    value: property('value', function(v) {
+      v = clamp(+v, this.min, this.max);
+      if (this.snap) v = Math.round(v);
+      return v;
+    }),
 
-    __mousedown: function(e) {
-      this.__dragging = true;
-      this.classList.add('__dragging');
+    // parse min and max as numbers
+    min: property('min', Number),
+    max: property('max', Number),
 
-      var move = (function(e) {
-        this.__onclick(e);
-        e.preventDefault();
-        return false;
-      }).bind(this);
+    // parse snap as a boolean
+    snap: property('snap', Boolean)
+  });
 
-      var up = (function(e) {
-        this.__dragging = false;
-        this.classList.remove('__dragging');
-        window.removeEventListener('mousemove', move);
-        window.removeEventListener('touchmove', move);
-        window.removeEventListener('mouseup', up);
-        window.removeEventListener('touchend', up);
-        e.preventDefault();
-        return false;
-      }).bind(this);
-
-      window.addEventListener('mousemove', move);
-      window.addEventListener('touchmove', move);
-      window.addEventListener('mouseup', up);
-      window.addEventListener('touchend', up);
-    },
-
-    __onclick: function(e) {
+  // so that event listeners
+  var events = {
+    click: function(e) {
       var rect = this.getBoundingClientRect();
       var width = rect.width;
       var x = e.clientX - rect.left;
@@ -115,18 +114,70 @@
       this.update();
     },
 
-    value: property('value', Number),
-    min: property('min', Number),
-    max: property('max', Number),
-    snap: property('snap', Boolean)
+    engage: function(e) {
+      this.__dragging = true;
+      this.classList.add('__dragging');
 
-  });
+      window.addEventListener('mousemove', getListener('move', this));
+      window.addEventListener('touchmove', getListener('move', this));
+      window.addEventListener('mouseup', getListener('release', this));
+      window.addEventListener('touchend', getListener('release', this));
+    },
+
+    move: function(e) {
+      events.click.call(this, e);
+      e.preventDefault();
+      return false;
+    },
+
+    release: function(e) {
+      this.__dragging = false;
+      this.classList.remove('__dragging');
+      window.removeEventListener('mousemove', getListener('move', this));
+      window.removeEventListener('touchmove', getListener('move', this));
+      window.removeEventListener('mouseup', getListener('release', this));
+      window.removeEventListener('touchend', getListener('release', this));
+      e.preventDefault();
+      return false;
+    },
+
+    keypress: function(e) {
+      // console.log('keypress:', e);
+      switch (e.keyCode) {
+        case 37: // left
+          this.value--;
+          break;
+        case 39: // right
+          this.value++;
+          break;
+      }
+    },
+
+    focus: function(e) {
+      window.addEventListener('keyup', getListener('keypress', this));
+      this.addEventListener('blur', events.blur);
+    },
+
+    blur: function(e) {
+      window.removeEventListener('keyup', getListener('keypress', this));
+      this.removeEventListener('blur', events.blur);
+    }
+
+  };
+
+  function getListener(type, obj) {
+    var key = '__' + type;
+    return obj[key] || (obj[key] = events[type].bind(obj));
+  }
 
   function registerElement(name, proto, parent) {
     if (!parent) parent = HTMLElement;
     for (var key in proto) {
       if (typeof proto[key] === 'function') {
         proto[key] = {value: proto[key]};
+        if (key.indexOf('__') === 0) {
+          proto[key].enumerable = false;
+        }
       }
     }
     return document.registerElement(name, {
@@ -150,7 +201,7 @@
         return this[key];
       },
       set: function(value) {
-        if (parse) value = parse(value);
+        if (parse) value = parse.call(this, value, name);
         if (value !== this[key]) {
           this[key] = value;
           this.update();

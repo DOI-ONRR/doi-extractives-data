@@ -13,7 +13,16 @@
     <link rel="stylesheet" href="../../css/components.css">
     <style>
       x-slider {
-        margin: 3em 1.5em 1em;
+        margin: 3em 1.5em;
+      }
+
+      label {
+        font-weight: bold;
+      }
+
+      input[type="number"] {
+        font-size: inherit;
+        width: 6em;
       }
     </style>
   </head>
@@ -28,6 +37,10 @@
         </div>
       </x-slider>
 
+      <form onsubmit="return false;">
+        <p><label>Change me: <input type="number" step="1" size="4"></label></p>
+      </form>
+
       <script>
       (function() {
 
@@ -37,10 +50,17 @@
           .on('change', function() {
             // console.log('slider change', this.value);
             year.text(this.value);
+            input.property('value', this.value);
           });
 
         var year = context.selectAll('span.year')
           .text(slider.property('value'));
+
+        var input = context.select('input')
+          .property('value', slider.property('value'))
+          .on('change', function() {
+            slider.property('value', this.value);
+          });
 
       })();
       </script>

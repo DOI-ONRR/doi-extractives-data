@@ -10,6 +10,12 @@ x-slider {
           user-select: none;
   -webkit-user-select: none;
      -moz-user-select: none;
+  opacity: 1;
+  /* transition: opacity .2s; */
+}
+
+x-slider[unresolved] {
+  opacity: 0;
 }
 
 x-slider *::selection,
@@ -28,6 +34,10 @@ x-slider .handle {
   border: 1px solid #999;
   border-radius: 1em;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, .2);
+}
+
+x-slider:not(.__dragging) .handle {
+  transition: left .1s linear;
 }
 
 x-slider .handle:after {

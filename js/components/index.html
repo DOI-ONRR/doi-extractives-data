@@ -9,12 +9,16 @@
     <script src="../vendor/document-register-element.js"></script>
     <script src="../vendor/d3.v3.min.js"></script>
     <script src="x-slider.js"></script>
+    <script src="custom-element.js"></script>
     <link rel="stylesheet" href="../../css/index.css">
     <link rel="stylesheet" href="../../css/components.css">
     <style>
 
+      section {
+        margin-bottom: 4em;
+      }
+
       .container {
-        margin: 0 auto;
         max-width: 40em;
       }
 
@@ -50,12 +54,36 @@
         box-shadow: 1px 1px 1px rgba(0, 0, 0, .1);
       }
 
+      custom-element {
+        display: inline-block;
+        background: #ffc;
+        border: 1px solid #ddd;
+        padding: .5em;
+        border-radius: .5em;
+        cursor: pointer;
+      }
+
     </style>
   </head>
   <body unresolved>
     <header class="container">
       <h1>Components!</h1>
     </header>
+
+    <section id="custom-element" class="container">
+      <h2><tt>&lt;custom-element&gt;</tt></h2>
+      <p>This is really just a test of the custom element template. Click on it
+        and its text should change to a random number.</p>
+      <custom-element>123</custom-element>
+      <script>
+      (function() {
+        d3.select('custom-element')
+          .on('change', function() {
+            this.textContent = ~~(this.value * 1000);
+          });
+      })();
+      </script>
+    </section>
 
     <section id="slider" class="container">
       <h2><tt>&lt;x-slider&gt;</tt></h2>

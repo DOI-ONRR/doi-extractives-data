@@ -103,6 +103,9 @@
   // so that event listeners
   var events = {
     click: function(e) {
+      // ignore right-clicks
+      if (e.button === 2) return false;
+
       var rect = this.getBoundingClientRect();
       var width = rect.width;
       var x = e.clientX - rect.left;
@@ -115,6 +118,12 @@
     },
 
     engage: function(e) {
+      // ignore right-clicks
+      if (e.button === 2) {
+        e.preventDefault();
+        return false;
+      }
+
       this.__dragging = true;
       this.classList.add('__dragging');
 

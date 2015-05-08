@@ -2,48 +2,52 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>USEITI Data: MVP</title>
+    <title>USEITI Data: Prototype</title>
     <script src="js/vendor/d3.v3.min.js"></script>
     <script src="js/vendor/queue.v1.min.js"></script>
-    <script src="js/vendor/topojson.v1.min.js"></script>
-    <script src="js/vendor/colorbrewer.js"></script>
-    <script src="js/vendor/d3-tip.min.js"></script>
-    <script src="lib/albers-custom.js"></script>
-    <script src="js/progressive.js"></script>
+    <script src="js/vendor/datalib.min.js"></script>
     <script src="js/eiti.js"></script>
-    <script src="js/eiti.charts.js"></script>
-    <link rel="stylesheet" href="css/index.css">
+    <script src="js/progressive.js"></script>
+    <link rel="stylesheet" href="css/main.css">
   </head>
-  <body>
+  <body class="index">
 
-    <section id="commodities" class="container">
-    </section>
+    <header class="container">
+      <h1><span>USEITI</span></h1>
+    </header>
 
-    <section id="states" class="container">
-    </section>
-
-    <svg id="symbols">
-    </svg>
-
-    <footer>
-      <div class="container">
-        <div id="slider">
-          <figure id="national-revenues" class="chart">
-            <h6 class="chart__title">National Revenues Over Time</h6>
-            <svg class="area">
-            </svg>
-          </figure>
-          <div id="slider-container">
-            <label for="year-slider">Year:</label>
-            <input autofocus id="year-slider" type="range" min="2004" max="2013" step="1">
-          </div>
-        </div>
+    <main class="container">
+      <div class="page-description">
+        <p>This is the page description.</p>
       </div>
 
-      <div id="progress">
-        <div class="bar"><span class="label"></span></div>
-      </div>
-    </footer>
+      <section class="module module--commodity">
+        <h2>Browse by Commodity</h2>
+        <!--
+        <ul class="list--commodities">
+        </ul>
+        <p>Or <a href="commodities.html">compare all commodities</a>.</p>
+        -->
+      </section>
+
+      <section class="module module--location">
+        <h2>Browse by Location</h2>
+        <form action="locations.html">
+          <p><a href="locations.html">View the map</a> or 
+            <label>Select a location:
+              <select name="location" class="select--locations">
+                <option>Select a region</option>
+              </select>
+            </label>
+          </p>
+        </form>
+      </section>
+
+    </main>
+
+    <div id="progress">
+      <div class="bar"><span class="label"></span></div>
+    </div>
 
     <script src="js/index.js"> </script>
   </body>

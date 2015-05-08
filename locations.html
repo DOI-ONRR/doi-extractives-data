@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>USEITI Data: Prototype</title>
+    <script src="js/vendor/d3.v3.min.js"></script>
+    <script src="js/vendor/queue.v1.min.js"></script>
+    <script src="js/vendor/topojson.v1.min.js"></script>
+    <script src="js/vendor/datalib.min.js"></script>
+    <script src="js/eiti.js"></script>
+    <script src="js/progressive.js"></script>
+    <script src="lib/albers-custom.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body class="locations">
+
+    <header class="container">
+      <h1><span>USEITI</span></h1>
+      <h2>Locations</h2>
+    </header>
+
+    <main class="container">
+      <div class="description">
+        <p>Something about locations here.</p>
+      </div>
+
+      <section class="map">
+        <h3>Map</h3>
+        <svg id="map"></svg>
+      </section>
+
+    </main>
+
+    <div id="progress">
+      <div class="bar"><span class="label"></span></div>
+    </div>
+
+    <script src="js/locations.js"> </script>
+  </body>
+</html>

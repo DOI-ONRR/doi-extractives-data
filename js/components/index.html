@@ -12,6 +12,11 @@
     <link rel="stylesheet" href="../../css/index.css">
     <link rel="stylesheet" href="../../css/components.css">
     <style>
+      .container {
+        margin: 0 auto;
+        max-width: 40em;
+      }
+
       x-slider {
         margin: 3em 1.5em;
       }
@@ -24,11 +29,25 @@
         font-size: inherit;
         width: 6em;
       }
+
+      dt {
+        font-size: 1.5em;
+        font-weight: bold;
+      }
+
+      dd {
+        padding-left: 0;
+        margin: .5em 0 .5em 2em;
+      }
+
     </style>
   </head>
   <body unresolved>
+    <header class="container">
+      <h1>Components!</h1>
+    </header>
 
-    <section id="slider">
+    <section id="slider" class="container">
       <h2><tt>&lt;x-slider&gt;</tt></h2>
       <p>The <tt>&lt;x-slider&gt;</tt> element provides a horizontal slider
         control with the following attributes and corresponding properties:</p>
@@ -59,7 +78,10 @@
       </x-slider>
 
       <p>Click anywhere on the slider to change its value, or click and drag
-        to change it as the mouse (or touch cursor) moves.</p>
+        to change it as the mouse (or touch cursor)
+        moves. You should also be able to focus the
+        slider handle with the <tt>tab</tt> key and using
+        the left and right arrows to move the slider.</p>
 
       <script>
       (function() {

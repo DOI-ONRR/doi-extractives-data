@@ -10,6 +10,7 @@ html, body {
 body {
   padding: 2em;
   font-family: "Helvetica Neue", Helvetica, arial, sans-serif;
+  line-height: 1.4em;
 }
 
 .container {

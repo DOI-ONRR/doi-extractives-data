@@ -29,7 +29,28 @@
   <body unresolved>
 
     <section id="slider">
-      <h2>Year: <span class="year"></span></h2>
+      <h2><tt>&lt;x-slider&gt;</tt></h2>
+      <p>The <tt>&lt;x-slider&gt;</tt> element provides a horizontal slider
+        control with the following attributes and corresponding properties:</p>
+      <dl>
+        <dt><tt>value="0"</tt></dt>
+        <dd>Number: the value</dd>
+        <dt><tt>min="0"</tt></dt>
+        <dd>Number: the minimum value</dd>
+        <dt><tt>max="100"</tt></dt>
+        <dd>Number: the maximum value</dd>
+        <dt><tt>snap</tt></dt>
+        <dd>Boolean: whether to snap to round values</dd>
+      </dl>
+
+      <p>This text should indicate the value when changed:</p>
+      <p><b class="year"></b></p>
+
+      <form onsubmit="return false;">
+        <p>And this input should both reflect the current value and modify
+          the slider when changed:</p>
+        <p><input type="number" step="1" size="4"></p>
+      </form>
 
       <x-slider snap min="2004" max="2013" value="2008">
         <div tabindex="0" class="handle">
@@ -37,9 +58,8 @@
         </div>
       </x-slider>
 
-      <form onsubmit="return false;">
-        <p><label>Change me: <input type="number" step="1" size="4"></label></p>
-      </form>
+      <p>Click anywhere on the slider to change its value, or click and drag
+        to change it as the mouse (or touch cursor) moves.</p>
 
       <script>
       (function() {
@@ -53,7 +73,7 @@
             input.property('value', this.value);
           });
 
-        var year = context.selectAll('span.year')
+        var year = context.selectAll('.year')
           .text(slider.property('value'));
 
         var input = context.select('input')

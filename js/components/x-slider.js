@@ -2,7 +2,7 @@
 
   exports.XSlider = registerElement('x-slider', {
     createdCallback: function() {
-      console.log('x-slider created');
+      // console.log('x-slider created');
       this.setAttribute('unresolved', '');
       this.min = getAttr.call(this, 'min', 0);
       this.max = getAttr.call(this, 'max', 100);
@@ -11,10 +11,10 @@
     },
 
     attachedCallback: function() {
-      console.log('x-slider attached');
+      // console.log('x-slider attached');
 
       var load = (function() {
-        console.warn('load!');
+        // console.warn('load!');
 
         this.removeAttribute('unresolved');
         this.__handle = this.querySelector('.handle') || createHandle.call(this);
@@ -81,7 +81,7 @@
         });
         this.dispatchEvent(event);
       } catch (err) {
-        console.warn('unable to fire "change": ', err);
+        console.warn('unable to fire "change" event: ', err);
       }
     },
 
@@ -230,4 +230,5 @@
     else if (x > max) return max;
     return x;
   }
+
 })(this);

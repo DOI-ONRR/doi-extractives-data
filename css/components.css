@@ -11,6 +11,7 @@ x-slider {
   -webkit-user-select: none;
      -moz-user-select: none;
   opacity: 1;
+  cursor: pointer; /* XXX: ew-resize? */
   /* transition: opacity .2s; */
 }
 

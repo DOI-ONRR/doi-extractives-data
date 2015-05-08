@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../../css/index.css">
     <link rel="stylesheet" href="../../css/components.css">
     <style>
+
       .container {
         margin: 0 auto;
         max-width: 40em;
@@ -37,7 +38,16 @@
 
       dd {
         padding-left: 0;
-        margin: .5em 0 .5em 2em;
+        margin: .5em 0 .5em 1em;
+      }
+
+      kbd {
+        font-family: monospace;
+        background: #f9f9f9;
+        padding: .1em .3em;
+        border: 1px solid #999;
+        border-radius: .3em;
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
       }
 
     </style>
@@ -67,8 +77,9 @@
 
       <form onsubmit="return false;">
         <p>And this input should both reflect the current value and modify
-          the slider when changed:</p>
-        <p><input type="number" step="1" size="4"></p>
+          the slider when changed. It should not be possible to set values
+          outside of the slider's min and max.</p>
+        <p><input id="year-input" type="number" step="1" size="4"></p>
       </form>
 
       <x-slider snap min="2004" max="2013" value="2008">
@@ -80,7 +91,7 @@
       <p>Click anywhere on the slider to change its value, or click and drag
         to change it as the mouse (or touch cursor)
         moves. You should also be able to focus the
-        slider handle with the <tt>tab</tt> key and using
+        slider handle with the <kbd>tab</kbd> key and using
         the left and right arrows to move the slider.</p>
 
       <script>

@@ -718,7 +718,7 @@
   eiti.format.transformMetric = (function() {
     var suffix = {k: 'k', M: 'm', G: 'b'};
     return function(str) {
-      return str.replace(/[kMG]$/, function(s) {
+      return str.replace(/(\.0+)?([kMG])$/, function(_, zeroes, s) {
         return suffix[s] || s;
       });
     };

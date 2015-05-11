@@ -16,11 +16,12 @@
     .defer(prog, d3.tsv, dataPath + 'national/revenues-yearly.tsv')
     .defer(prog, d3.csv, 'input/geo/states.csv')
     .defer(prog, d3.tsv, dataPath + 'offshore/revenues-yearly.tsv')
-    .await(function(error, natlRevenues, states, offshoreRevenues) {
+    .defer(prog, commodities.load, 'data/commodities.json')
+    .await(function(error, natlRevenues, states, offshoreRevenues, groupings) {
       if (error) return console.error(error.responseText);
 
       natlRevenues.forEach(function(d) {
-        d.Commodity = commodities.getGroup(d.Commodity);
+        d.CommodityGroup = commodities.getGroup(d.Commodity);
       });
 
       data.revenues = natlRevenues;
@@ -54,7 +55,7 @@
 
   function loaded(data) {
     var commodityRevenues = d3.nest()
-      .key(get('Commodity'))
+      .key(get('CommodityGroup'))
       .rollup(function(d) {
         return d3.sum(d, get('Revenue'));
       })
@@ -64,7 +65,7 @@
         delete d.values;
         return d;
       })
-      .sort(dl.comparator('+key'));
+      .sort(dl.comparator('-value'));
 
     var li = d3.select('ul.list--commodities')
       .selectAll('li')

@@ -13,7 +13,8 @@ body {
   font-family: Lato, 'Helvetica Neue', Helvetica, arial, sans-serif;
 }
 
-header {
+header,
+main {
   margin-top: 1em;
 }
 
@@ -149,6 +150,12 @@ ol.legend li {
   .container {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .container.stretch {
+    max-width: 100%;
+    padding-left: 1em;
+    padding-right: 1em;
   }
 
   ol.legend li {

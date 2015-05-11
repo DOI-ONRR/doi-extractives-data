@@ -27,14 +27,12 @@
 
       data.states = states;
 
-      var stateUrl = dl.template('onshore/{{ name }}');
-      var regionUrl = dl.template('offshore/{{ name }}');
       data.locationGroups = [
         {
           label: 'Onshore',
           values: states.map(function(d) {
             return {
-              value: stateUrl(d),
+              value: 'onshore/' + encodeURIComponent(d.name),
               label: d.name
             };
           })
@@ -44,7 +42,7 @@
           values: dl.unique(offshoreRevenues, get('Region'))
             .map(function(region) {
               return {
-                value: regionUrl({name: region}),
+                value: 'offshore/' + encodeURIComponent(region),
                 label: region
               };
             })
@@ -77,7 +75,9 @@
 
     var format = eiti.format.shortDollars;
     li.append('a')
-      .attr('href', dl.template('commodities.html#/{{key}}'))
+      .attr('href', function(d) {
+        return 'commodities.html#/' + encodeURIComponent(d.key);
+      })
       .text(get('key'))
       .append('span')
         .attr('class', 'revenue')

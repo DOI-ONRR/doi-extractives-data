@@ -1,0 +1,95 @@
+{
+  "groups": {
+    "fossil":     "Fossil Fuels",
+    "oilgas":     "Oil & Gas",
+    "coal":       "Coal",
+    "renewables": "Renewables",
+    "minerals":   "Hard Minerals",
+    "other":      "Other Products"
+  },
+  "subgroups": {
+  },
+  "commodities": {
+    "Oil": {
+      "group": "oilgas"
+    },
+    "Gas": {
+      "group": "oilgas"
+    },
+    "Oil & Gas": {
+      "group": "oilgas"
+    },
+    "Oil Shale": {
+      "group": "oilgas"
+    },
+    "NGL": {
+      "group": "oilgas"
+    },
+    "Tar Sands": {
+      "group": "oilgas"
+    },
+    "Coal": {
+      "group": "coal"
+    },
+    "Geothermal": {
+      "group": "renewables"
+    },
+    "Wind": {
+      "group": "renewables"
+    },
+    "Asphalt": {
+      "group": "minerals"
+    },
+    "Clay": {
+      "group": "minerals"
+    },
+    "Copper": {
+      "group": "minerals"
+    },
+    "Garnet": {
+      "group": "minerals"
+    },
+    "Gemstones": {
+      "group": "minerals"
+    },
+    "Gilsonite": {
+      "group": "minerals"
+    },
+    "Gold": {
+      "group": "minerals"
+    },
+    "Hardrock": {
+      "group": "minerals"
+    },
+    "Limestone": {
+      "group": "minerals"
+    },
+    "Phosphate": {
+      "group": "minerals"
+    },
+    "Potassium": {
+      "group": "minerals"
+    },
+    "Quartz": {
+      "group": "minerals"
+    },
+    "Sand & Gravel": {
+      "group": "minerals"
+    },
+    "Sodium": {
+      "group": "minerals"
+    },
+    "Sulfur": {
+      "group": "minerals"
+    },
+    "Other": {
+      "group": "other"
+    },
+    "Other Products": {
+      "group": "other"
+    },
+    "Hot Springs": {
+      "group": "other"
+    }
+  }
+}

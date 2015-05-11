@@ -125,6 +125,26 @@ ol.legend li {
     padding-left: .5em;
   }
 
+.fpo {
+  display: inline-block;
+  position: relative;
+}
+
+  .fpo:after {
+    content: "FPO";
+    color: rgba(0, 0, 0, .1);
+    font-weight: bold;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2em;
+    height: 1em;
+    margin: -1em 0 0 -1em;
+    text-align: center;
+    z-index: 9999;
+  }
+
 @media (min-width: 960px) {
   .container {
     padding-left: 0;

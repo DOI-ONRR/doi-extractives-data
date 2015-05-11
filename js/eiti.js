@@ -91,26 +91,52 @@
       if (!(this instanceof Commodities)) return new Commodities();
       this.groups = d3.set([
         'Coal',
-        'Gas',
         'Geothermal',
+        'Gas',
         'Oil',
         'Oil & Gas',
         Commodities.OTHER
       ]);
 
       this.groupMap = {
-        'Oil Shale': 'Oil',
-        'NGL': 'Gas'
+        'Oil Shale':  'Oil',
+        'NGL':        'Gas',
+        'Geothermal': 'Renewables',
+        'Wind':       'Renewables'
       };
 
       this.groupColors = {
-        'Coal': 'Greys',
-        'Oil': 'YlOrBr',
-        'Gas': 'Purples',
-        'Oil & Gas': 'RdPu',
-        'Geothermal': 'Greens',
-        'Other': 'Blues'
+        'Coal':       'Greys',
+        'Oil':        'YlOrBr',
+        'Gas':        'Purples',
+        'Oil & Gas':  'RdPu',
+        'Renewables': 'Greens',
+        'Other':      'Blues'
       };
+
+      this.load = this.load.bind(this);
+    };
+
+    Commodities.prototype.load = function(jsonUrl, done) {
+      return d3.json(jsonUrl, (function(error, data) {
+        if (error) return done && done(error);
+
+        var groups = data.groups;
+        this.groups = d3.set(d3.values(groups));
+
+        var comm = data.commodities;
+        for (var name in comm) {
+          var def = comm[name];
+          if (def.group) {
+            if (!groups[def.group]) {
+              throw 'Invalid commodity group: "' + def.group + '"';
+            }
+            this.groupMap[name] = groups[def.group];
+          }
+        }
+
+        done(null, data);
+      }).bind(this));
     };
 
     /**
@@ -126,8 +152,12 @@
      */
     Commodities.prototype.getGroup = function(commodity) {
       commodity = commodity.replace(/\s\([a-z]+\)$/, '');
-      if (this.groups.has(commodity)) return commodity;
-      return this.groupMap[commodity] || Commodities.OTHER;
+      if (this.groupMap.hasOwnProperty(commodity)) {
+        return this.groupMap[commodity];
+      } else if (this.groups.has(commodity)) {
+        return commodity;
+      }
+      return Commodities.OTHER;
     };
 
     /**

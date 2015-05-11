@@ -66,7 +66,7 @@
         delete d.values;
         return d;
       })
-      .sort(dl.comparator('-value'));
+      .sort(dl.comparator('+key'));
 
     var li = d3.select('ul.list--commodities')
       .selectAll('li')

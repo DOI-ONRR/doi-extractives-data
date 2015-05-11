@@ -1,3 +1,5 @@
+@import url('http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic');
+
 * {
   box-sizing: border-box;
 }
@@ -8,8 +10,7 @@ html, body {
 }
 
 body {
-  padding: 2em;
-  font-family: "Helvetica Neue", Helvetica, arial, sans-serif;
+  font-family: Lato, 'Helvetica Neue', Helvetica, arial, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {

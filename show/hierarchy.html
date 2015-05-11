@@ -38,9 +38,12 @@
       <div class="bar"><span class="label"></span></div>
     </div>
 
-    <h1>Revenue Hierarchies</h1>
-    <section id="hierarchy">
-    </section>
+    <main class="container">
+      <h1>Revenue Hierarchies</h1>
+      <section id="hierarchy">
+      </section>
+    </main>
+
   </body>
   <script>
 (function(exports) {
@@ -213,7 +216,7 @@
       var tree = treeify(data.nodes, keys, 'Revenue');
       // console.log('tree:', tree);
 
-      var width = 900;
+      var width = 960;
       var height = 700;
 
       var treemap = d3.layout.partition()
@@ -225,8 +228,7 @@
       var root = selection
         .append('svg')
           .attr('class', 'tree')
-          .style('width', width + 'px')
-          .style('height', height + 'px');
+          .attr('viewBox', [0, 0, width, height].join(' '));
 
       var offx = -width / (keys.length + 1);
       var w = width / keys.length;

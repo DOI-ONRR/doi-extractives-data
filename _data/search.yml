@@ -160,3 +160,111 @@
   - gas
   - coal
   - renewable
+
+- title: Bureau of Ocean Energy Management National Environmental Policy Act
+  url: http://www.boem.gov/National-Environmental-Policy-Act/
+  description: "BOEM produces NEPA documents for each of the major stages of energy development planning. From the overarching  5-Year Leasing Program EIS, through each of the NEPA documents for the energy lease sales, exploration, development and production plans."
+  tag:
+  - NEPA
+  - environmental
+  - energy
+  - development
+
+- title: Bureau of Ocean Energy Management Outer Continental Shelf Environmental Impact Statement
+  url: http://www.boem.gov/Oil-and-Gas-Energy-Program/Leasing/Five-Year-Program/2012-2017/Five-Year-Program.aspx
+  description: "The 2012-2017 Outer Continental Shelf Oil and Gas Leasing Program and Programmatic Environmental Impact Statement."
+  tag:
+  - NEPA
+  - environmental
+  - energy
+  - development
+  - oil
+  - gas
+  - continental
+  - EIS
+
+- title: Bureau of Ocean Energy Management Alaska Environmental Analysis
+  url: http://www.boem.gov/Alaska-Environmental-Analysis/
+  description: "The BOEM Alaska Region's Environmental Analysis Program conducts environmental impact assessments in accordance with the National Environmental Policy Act (NEPA) for Outer Continental Shelf (OCS) activities such as lease sales, exploration plans and applications to conduct seismic surveys."
+  tag:
+  - NEPA
+  - Alaska
+  - environmental
+  - energy
+  - development
+
+- title: Bureau of Ocean Energy Management Alaska Environmental Analysis
+  url: http://www.boem.gov/Alaska-Environmental-Analysis/
+  description: "The BOEM Alaska Region's Environmental Analysis Program conducts environmental impact assessments in accordance with the National Environmental Policy Act (NEPA) for Outer Continental Shelf (OCS) activities such as lease sales, exploration plans and applications to conduct seismic surveys."
+  tag:
+  - NEPA
+  - Alaska
+  - environmental
+  - energy
+  - development
+
+- title: Bureau of Ocean Energy Management Gulf of Mexico Environmental Analysis
+  url: http://www.boem.gov/Environmental-Stewardship/Environmental-Assessment/NEPA/nepaprocess.aspx
+  description: "The Gulf of Mexico Outer Continental Shelf (OCS) Region of BOEM has been conducting environmental analyses of the effects of OCS oil and gas development since the inception of the National Environmental Policy Act (NEPA) of 1969. This site documents the more than 40 draft and final EIS's."
+  tag:
+  - NEPA
+  - EIS
+  - Gulf
+  - Mexico
+  - environmental
+  - energy
+  - development
+
+- title: Bureau of Ocean Energy Management Pacific Ocean Environmental Analysis
+  url: "http://www.boem.gov/Environmental-Assessments-Pacific-Region/#Oil%20and%20Gas"
+  description: "The Pacific Region of BOEM conducts environmental analyses and reviews on all Outer Continental Shelf (OCS) oil & gas projects. Environmental reviews are conducted in accordance with the National Environmental Policy Act (NEPA), and projects are inspected, as appropriate, for compliance with the full spectrum of conditions placed upon them."
+  tag:
+  - NEPA
+  - EIS
+  - Pacific
+  - environmental
+  - energy
+  - development
+
+- title: Bureau of Land Management National Environmental Policy Act
+  url: http://www.blm.gov/wo/st/en/prog/planning/nepa/field_office_nepa.html
+  description: "In order to facilitate public involvement in the NEPA process, the BLM publishes many of its NEPA documents online. NEPA documents are commonly made available at the field, district, and state office levels. The links on this site are for completed and in progress NEPA documents. The ePlanning NEPA Register is another source that can be used to access BLM NEPA documents."
+  tag:
+  - NEPA
+  - EIS
+  - environmental
+  - energy
+  - development
+
+- title: Bureau of Land Management National Environmental Policy Act
+  url: http://www.blm.gov/pgdata/content/wo/en/prog/planning/planning_overview/eplanning2.html
+  description: "BLM’s ePlanning brings the Land Use Planning (LUP) as well as the National Environmental Policy Act (NEPA) process into your home or local library. With an Internet-connected computer, you can open and read land use planning and NEPA documents produced with ePlanning. You can search for issues such as recreation, wildlife, or energy. During the comment periods, you can easily submit your comments online! With ePlanning's comment features, you can tie your comment to particular text right out of the land use planning or NEPA document."
+  tag:
+  - NEPA
+  - EIS
+  - environmental
+  - land
+  - use
+  - planning
+  - development
+
+- title: Bureau of Land Management Land Use Planning
+  url: http://www.blm.gov/pgdata/content/wo/en/prog/planning/planning_overview/eplanning2.html
+  description: "BLM’s ePlanning brings the Land Use Planning (LUP) as well as the National Environmental Policy Act (NEPA) process into your home or local library. With an Internet-connected computer, you can open and read land use planning and NEPA documents produced with ePlanning. You can search for issues such as recreation, wildlife, or energy. During the comment periods, you can easily submit your comments online! With ePlanning's comment features, you can tie your comment to particular text right out of the land use planning or NEPA document."
+  tag:
+  - NEPA
+  - EIS
+  - environmental
+  - land
+  - use
+  - planning
+  - development
+
+- title: Office of Surface Mining Reclamation and Enforcement
+  url: http://www.osmre.gov/programs.shtm
+  description: "This site links to the Office of Surface Mining Reclamation and Enforcement's (OSMRE) major programs: one, Reclaiming Abandoned Mine Lands – Restoring the Environment, Title IV of the Surface Mining Control and Reclamation Act; and two, Regulating Coal Mines – Protecting the Environment, Title V of the Surface Mining Control and Reclamation Act. In the early years, the Abandoned Mine Lands program focused on the physical reclamation of hazards affecting coalfield communities. More recently, the Program began working to reclaim the vitality of communities left impoverished and degraded by past coal mining. The Surface Mining Control and Reclamation Act balances the need to protect the environment from the adverse effects of surface coal mining with the Nation's need for coal as an essential energy source. It ensures that coal mining operations are conducted in an environmentally responsible manner and that the land is adequately reclaimed during and following the mining process."
+  tag:
+  - environmental
+  - coal
+  - mining
+  - reclamation

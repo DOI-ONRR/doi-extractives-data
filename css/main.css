@@ -13,6 +13,10 @@ body {
   font-family: Lato, 'Helvetica Neue', Helvetica, arial, sans-serif;
 }
 
+header {
+  margin-top: 1em;
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin: 0 0 .5em 0;
 }
@@ -23,6 +27,13 @@ figure {
 
 figure svg {
   border: 1px solid #ccc;
+}
+
+.container {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1em;
 }
 
 #progress {
@@ -115,6 +126,11 @@ ol.legend li {
   }
 
 @media (min-width: 960px) {
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   ol.legend li {
     border-left: none;
     border-top: 10px solid;

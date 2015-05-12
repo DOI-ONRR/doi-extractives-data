@@ -8,8 +8,15 @@
     <![endif]-->
     <script src="../vendor/document-register-element.js"></script>
     <script src="../vendor/d3.v3.min.js"></script>
-    <script src="x-slider.js"></script>
     <script src="custom-element.js"></script>
+    <script src="region-map.js"></script>
+    <!-- region-map dependencies -->
+    <script src="../../lib/albers-custom.js"></script>
+    <script src="../vendor/topojson.v1.min.js"></script>
+    <script src="../vendor/queue.v1.min.js"></script>
+    <script src="../progressive.js"></script>
+    <!-- /region-map -->
+    <script src="x-slider.js"></script>
     <link rel="stylesheet" href="../../css/index.css">
     <link rel="stylesheet" href="../../css/components.css">
     <style>
@@ -80,6 +87,24 @@
         d3.select('custom-element')
           .on('change', function() {
             this.textContent = ~~(this.value * 1000);
+          });
+      })();
+      </script>
+    </section>
+
+    <section id="region-map" class="container">
+      <h2><tt>&lt;region-map&gt;</tt></h2>
+      <p>The <tt>&lt;region-map&gt;</tt> element renders a region map with both
+        onshore and offshore areas:</p>
+
+      <region-map data-path="../../">
+        <svg></svg>
+      </region-map>
+      <script>
+      (function() {
+        d3.select('region-map')
+          .on('load', function() {
+            console.log('region map loaded');
           });
       })();
       </script>

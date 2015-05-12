@@ -95,16 +95,36 @@
     <section id="region-map" class="container">
       <h2><tt>&lt;region-map&gt;</tt></h2>
       <p>The <tt>&lt;region-map&gt;</tt> element renders a region map with both
-        onshore and offshore areas:</p>
+        onshore and offshore areas. Coloring them is done in a
+        <tt>load</tt> event listener with D3.</p>
+      <dl>
+        <dt><tt>data-path=""</tt></dt>
+        <dd>String: the path to the state and offshore area TopoJSON
+          files (<tt>output/geo/us-states.json</tt> and
+          <tt>output/geo/offshore.json</tt>, respectively).</dd>
+      </dl>
 
       <region-map data-path="../../">
-        <svg></svg>
+        <svg>
+        </svg>
       </region-map>
       <script>
       (function() {
         d3.select('region-map')
           .on('load', function() {
             console.log('region map loaded');
+            var region = d3.select(this).selectAll('g.region');
+            var regions = region.data();
+            var extent = d3.extent(regions, length);
+            var color = d3.scale.linear()
+              .domain(extent)
+              .range(['#eee', 'blue']);
+            region.attr('fill', function(d) {
+              return color(length(d));
+            });
+            function length(d) {
+              return (d.properties.name || d.id || '').length;
+            }
           });
       })();
       </script>

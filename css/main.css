@@ -22,6 +22,34 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 .5em 0;
 }
 
+ul.breadcrumb,
+ul.breadcrumb li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: block;
+}
+
+  ul.breadcrumb li {
+    display: inline-block;
+    font-weight: bold;
+  }
+
+  ul.breadcrumb li + li:before {
+    content: " / ";
+    display: inline-block;
+    margin: 0 .5em;
+  }
+
+  ul.breadcrumb li:last-child a {
+    text-decoration: none;
+    color: #000;
+  }
+
+nav ul.breadcrumb {
+  font-size: 1.5em;
+}
+
 figure {
   margin: 0;
 }
@@ -149,12 +177,20 @@ region-map .region path.region {
   fill: #fff;
 }
 
-region-map .region.active path.region {
+region-map .region.enabled path.region {
   fill: #69c;
 }
 
-region-map .region.active:hover path.region {
+region-map .region.enabled:hover path.region {
   fill: #369;
+}
+
+region-map .region.selected path.region {
+  fill: #9f9;
+}
+
+region-map .region.selected:hover path.region {
+  fill: #393;
 }
 
 @media (min-width: 960px) {

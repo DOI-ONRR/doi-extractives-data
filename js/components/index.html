@@ -105,23 +105,23 @@
       </dl>
 
       <region-map data-path="../../">
-        <svg>
-        </svg>
       </region-map>
+
       <script>
       (function() {
         d3.select('region-map')
           .on('load', function() {
             console.log('region map loaded');
+
             var region = d3.select(this).selectAll('g.region');
-            var regions = region.data();
-            var extent = d3.extent(regions, length);
             var color = d3.scale.linear()
-              .domain(extent)
-              .range(['#eee', 'blue']);
+              .domain([0, d3.max(region.data(), length)])
+              .range(['#fff', '#033']);
+
             region.attr('fill', function(d) {
               return color(length(d));
             });
+
             function length(d) {
               return (d.properties.name || d.id || '').length;
             }

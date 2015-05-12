@@ -132,11 +132,7 @@ output/geo/us-states.json: output/geo/us-topology.json
 		$< > $@
 
 output/geo/offshore.json: input/geo/offshore/*.json
-	$(BIN)/topojson \
-		--id-property MMS_PLAN_A \
-		-p id=MMS_PLAN_A \
-		-p label=TEXT_LABEL \
-		-o $@ -- $^
+	$(BIN)/topojson --properties -o $@ -- $^
 
 output/geo/%-simple.json: output/geo/%.json
 	topojson --properties --simplify 2e-6 -o $@ $<

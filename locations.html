@@ -10,6 +10,8 @@
     <script src="js/eiti.js"></script>
     <script src="js/progressive.js"></script>
     <script src="lib/albers-custom.js"></script>
+    <script src="js/components/region-map.js"></script>
+    <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body class="locations">
@@ -17,6 +19,7 @@
     <header class="container">
       <h1><span>USEITI</span></h1>
       <h2><a href="./">Home</a> / Locations</h2>
+      <h3 class="place-title"></h3>
     </header>
 
     <main class="container">
@@ -27,7 +30,9 @@
       <section class="map">
         <h3>Map</h3>
         <figure id="map">
-          <span class="fpo"><img src="output/svg/all.svg" width="800"></span>
+          <region-map id="regions">
+            <svg></svg>
+          </region-map>
         </figure>
       </section>
 

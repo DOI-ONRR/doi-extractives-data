@@ -7,7 +7,7 @@
     },
 
     attachedCallback: function() {
-      this.__svg = this.querySelector('svg') || this.appendChild(document.createElementNS(d3.ns.svg, 'svg'));
+      this.__svg = this.querySelector('svg') || this.appendChild(document.createElementNS(d3.ns.prefix.svg, 'svg'));
 
       if (this.hasAttribute('onload')) {
         var callback = new Function('event', this.getAttribute('onload')).bind(this);
@@ -67,7 +67,7 @@
             return regions.concat(features);
           }, []);
 
-        this.regions = stateFeatures.concat(regionFeatures);
+        this.regions = regionFeatures.concat(stateFeatures);
         this.meshes = meshes;
 
         // console.log('loaded:', this.regions);
@@ -202,6 +202,10 @@
         }
       }
     };
+  }
+
+  function parseCoordinate(str) {
+    return str.split(',').map(Number);
   }
 
 })(this);

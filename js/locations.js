@@ -42,12 +42,13 @@
     var region = map.selectAll('g.region');
     region.select('a')
       .attr('xlink:href', function(d) {
-        if (d.properties.offshore) console.log(d.properties);
+        // if (d.properties.offshore) console.log(d.properties);
         return [
           '?',
           d.properties.offshore ? 'offshore' : 'onshore',
           '/',
-          encodeURIComponent(d.properties.name)
+          // FIXME: offshore areas don't all have IDs!
+          d.properties.name || d.properties.id || '__NO_ID__'
         ].join('');
       });
   }

@@ -7,7 +7,7 @@
     },
 
     attachedCallback: function() {
-      this.__svg = this.querySelector('svg') || this.appendChild(document.createElement('svg'));
+      this.__svg = this.querySelector('svg') || this.appendChild(document.createElementNS(d3.ns.svg, 'svg'));
 
       if (this.hasAttribute('onload')) {
         var callback = new Function('event', this.getAttribute('onload')).bind(this);
@@ -23,7 +23,7 @@
       var path = this.getAttribute('data-path') || '';
       var q = queue();
       q.defer(prog, d3.csv, path + 'input/geo/states.csv');
-      q.defer(prog, d3.json, path + 'output/geo/us-topology.json');
+      q.defer(prog, d3.json, path + 'output/geo/us-states.json');
       q.defer(prog, d3.json, path + 'output/geo/offshore.json');
       q.await((function onload(error, states, onshore, offshore) {
         this.classList.remove('__loading');
@@ -52,6 +52,8 @@
           });
 
         // console.log('states:', stateFeatures);
+        // console.log('offshore:', offshore);
+        // offshore.transform.scale[1] += 2;
 
         var regionFeatures = Object.keys(offshore.objects)
           .reduce(function(regions, key) {

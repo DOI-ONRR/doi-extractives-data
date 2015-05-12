@@ -3,16 +3,29 @@
   var data = exports.data = {
   };
 
-  var commodity = location.search
+  var slug = location.search
     ? decodeURIComponent(location.search.substr(1))
     : null;
 
-  var body = d3.select('body')
-    .classed('commodity-selected', !!commodity);
+  var body = d3.select('body');
 
-  var title = d3.selectAll('.commodity-title')
-    .style('display', commodity ? null : 'none')
-    .text(commodity);
+  if (slug) {
+    body.classed('commodity-selected', true);
+
+    var path = decodeURIComponent(slug).split('/');
+    d3.select('nav ul.breadcrumb')
+      .selectAll('li.dynamic')
+      .data(path)
+      .enter()
+      .append('li')
+        .append('a')
+          .attr('href', function(d, i) {
+            return '?' + path.slice(0, i + 1).join('/');
+          })
+          .text(dl.identity);
+  }
+
+  var commodities = new eiti.data.Commodities();
 
   var prog = progressive();
   d3.select('#progress')

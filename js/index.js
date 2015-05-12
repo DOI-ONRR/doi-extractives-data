@@ -77,7 +77,7 @@
     var format = eiti.format.shortDollars;
     li.append('a')
       .attr('href', function(d) {
-        return 'commodities.html#/' + encodeURIComponent(d.key);
+        return 'commodities.html?' + encodeURIComponent(d.key);
       })
       .text(get('key'))
       .append('span')
@@ -89,7 +89,7 @@
     d3.select('.select--locations')
       .on('change', function() {
         if (!this.value) return;
-        window.location = 'locations.html#/' + this.value;
+        window.location = 'locations.html?' + this.value;
       })
       .selectAll('optgroup')
       .data(data.locationGroups)

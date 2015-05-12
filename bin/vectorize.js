@@ -101,7 +101,6 @@ async.waterfall([
         return d.type === 'Topology';
       });
 
-      /*
       topo.selectAll('path.feature')
         .data(function(topology) {
           return Object.keys(topology.objects)
@@ -114,7 +113,6 @@ async.waterfall([
         .append('path')
           .attr('class', 'feature')
           .attr('d', path);
-      */
 
       topo = topo.selectAll('g.layer')
         .data(function(topology) {

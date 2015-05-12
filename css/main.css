@@ -27,7 +27,6 @@ figure {
 }
 
 figure svg {
-  border: 1px solid #ccc;
 }
 
 .container {
@@ -145,6 +144,18 @@ ol.legend li {
     text-align: center;
     z-index: 9999;
   }
+
+region-map .region path.region {
+  fill: #fff;
+}
+
+region-map .region.active path.region {
+  fill: #69c;
+}
+
+region-map .region.active:hover path.region {
+  fill: #369;
+}
 
 @media (min-width: 960px) {
   .container {

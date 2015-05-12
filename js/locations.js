@@ -48,7 +48,7 @@
           d.properties.offshore ? 'offshore' : 'onshore',
           '/',
           // FIXME: offshore areas don't all have IDs!
-          d.properties.name || d.properties.id || '__NO_ID__'
+          encodeURIComponent(d.properties.name || d.id || '__NO_ID__')
         ].join('');
       });
   }

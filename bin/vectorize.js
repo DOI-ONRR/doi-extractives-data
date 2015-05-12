@@ -99,8 +99,24 @@ async.waterfall([
 
       var topo = g.filter(function(d) {
         return d.type === 'Topology';
-      })
-      .selectAll('g.layer')
+      });
+
+      /*
+      topo.selectAll('path.feature')
+        .data(function(topology) {
+          return Object.keys(topology.objects)
+            .reduce(function(features, key) {
+              var collection = topojson.feature(topology, topology.objects[key]);
+              return features.concat(collection.features);
+            }, []);
+        })
+        .enter()
+        .append('path')
+          .attr('class', 'feature')
+          .attr('d', path);
+      */
+
+      topo = topo.selectAll('g.layer')
         .data(function(topology) {
           if (topology.bbox) bbox = topology.bbox;
           return d3.entries(topology.objects)

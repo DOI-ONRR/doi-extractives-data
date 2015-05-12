@@ -107,6 +107,11 @@ region-map.__loading {
 region-map path.region {
 }
 
+region-map .offshore path.region {
+  /* XXX */
+  visibility: hidden;
+}
+
 region-map path.mesh {
   fill: none;
   stroke: #ccc;

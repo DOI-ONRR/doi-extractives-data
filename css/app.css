@@ -10,6 +10,51 @@ nav ul.breadcrumb {
   height: 150px;
 }
 
+.controls--global {
+  margin: 2em auto;
+  padding: 1em;
+}
+
+x-slider {
+  margin: 1em;
+  height: .2em;
+  border-radius: 0;
+}
+
+x-slider .handle {
+  z-index: 100;
+}
+
+x-slider .tick {
+  position: absolute;
+  top: 50%;
+  width: .6em;
+  height: .6em;
+  margin: -.3em 0 0 -.3em;
+  background: #ccc;
+  border-radius: 1em;
+  z-index: 50;
+}
+
+  x-slider .tick .label {
+    font-size: .5em;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -1.5em;
+    margin-top: 100%;
+    width: 3em;
+    text-align: center;
+  }
+
+  x-slider .tick.selected .label {
+    font-weight: bold;
+  }
+
+body[data-path="/index"] .controls--global {
+  display: none;
+}
+
 section.commodity {
   margin: 2em 0;
 }
@@ -39,4 +84,10 @@ table.stats td {
 
 table.stats .fpo {
   color: #ccc;
+}
+
+@media (min-width: 640px) {
+  x-slider .tick .label {
+    font-size: .8em;
+  }
 }

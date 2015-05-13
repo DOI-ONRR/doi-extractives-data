@@ -50,6 +50,8 @@
       'Renewables'
     ],
 
+    years: [2004, 2013],
+
     // all data URLs provided to load() will be prefixed with this
     // path unless they start with "./"
     dataPath: 'output/',
@@ -77,6 +79,38 @@
         });
       app.description = root.select('.page-description');
       app.breadcrumb = root.select('nav ul.breadcrumb');
+
+      var slider = root.select('#year-slider')
+        .attr('min', app.years[0])
+        .attr('max', app.years[1])
+        .attr('value', app.years[1]);
+
+      app.yearSlider = slider;
+
+      var x = d3.scale.linear()
+        .domain(app.years)
+        .rangeRound([0, 100]);
+
+      var ticks = slider.selectAll('.tick')
+        .data(d3.range(app.years[0], app.years[1] + 1))
+        .enter()
+        .append('div')
+          .attr('class', 'tick')
+          .style('left', function(y) {
+            return x(y) + '%';
+          });
+      ticks.append('span')
+        .attr('class', 'label')
+        .text(dl.identity);
+
+      var updateTicks = function() {
+        var year = this.value;
+        ticks.classed('selected', function(y) {
+          return y == year;
+        });
+      };
+      slider.on('change.ticks', updateTicks);
+      slider.each(updateTicks);
 
       // initialize the route, default to the index
       app.router.init('/index');
@@ -171,6 +205,9 @@
      */
     afterRoute: function() {
       console.info('[app] after route:', arguments);
+      // each view that cares about the year should add
+      // a 'change' event handler, which should be exclusive
+      app.yearSlider.on('change', null);
       var next = last(arguments);
       next();
     },

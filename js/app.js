@@ -599,51 +599,82 @@
     });
   }
 
-  function listLocations(next) {
-    console.log('[route] list locations');
+  var listLocations = (function() {
+    var root, map, list, revenuesByYear;
 
-    var root = app.root.select('#locations');
-    if (root.classed('loaded')) {
-      // already loaded
+    function activate(next) {
+      // select the active one
+      var value = '/' + app.router.getRoute().join('/');
+      list.property('value', value);
+
+      map.node().zoomTo(null, 400);
+
+      app.yearSlider.on('change', update);
+      update();
       return next(null, root);
-    } else {
-      loadLocations(function(error, groups) {
-        if (error) return next(error);
-
-        var list = root.select('.select--locations')
-          .call(locationSelector()
-            .groups(groups))
-          .on('change', function() {
-            if (!this.value) return;
-            app.router.setRoute(this.value);
-          });
-
-        // select the active one
-        var value = '/' + app.router.getRoute().join('/');
-        list.property('value', value);
-
-        var map = root.select('region-map');
-        var region = map.selectAll('g.region')
-          .each(function(d) {
-            d.href = getFeatureHref(d, '#/locations/%');
-            d.selected = d.href === location.hash;
-          })
-          .classed('enabled', true)
-          .classed('selected', function(d) {
-            return d.selected;
-          });
-
-        map.node().zoomTo(null, 400);
-
-        region.select('a')
-          .attr('xlink:href', function(d) {
-            return d.href;
-          });
-
-        return next(null, root);
-      });
     }
-  }
+
+    function update() {
+      var year = app.yearSlider.property('value');
+      var revenuesByState = revenuesByYear[year];
+
+      var region = map.selectAll('g.region')
+        .each(function(d) {
+          d.href = getFeatureHref(d, '#/locations/%');
+          d.selected = d.href === location.hash;
+          d.revenue = revenuesByState[d.properties.abbr];
+        })
+        .classed('active', function(d) {
+          return d.revenue;
+        })
+        .classed('selected', function(d) {
+          return d.selected;
+        });
+
+      region.select('a')
+        .attr('xlink:href', function(d) {
+          return d.href;
+        });
+    }
+
+    return function listLocations(next) {
+      console.log('[route] list locations');
+
+      root = app.root.select('#locations');
+      map = root.select('region-map');
+
+      if (revenuesByYear) {
+        return activate(next);
+      } else {
+        loadLocations(function(error, groups) {
+          if (error) return next(error);
+
+          list = root.select('.select--locations')
+            .call(locationSelector()
+              .groups(groups))
+            .on('change', function() {
+              if (!this.value) return;
+              app.router.setRoute(this.value);
+            });
+
+          app.load([
+            'state/revenues-yearly.tsv'
+          ], function(error, revenues) {
+
+            revenuesByYear = d3.nest()
+              .key(dl.accessor('Year'))
+              .key(dl.accessor('State'))
+              .rollup(function(d) {
+                return sum(d, 'Revenue');
+              })
+              .map(revenues);
+
+            return activate(next);
+          });
+        });
+      }
+    };
+  })();
 
   function showState(state, next) {
     console.log('[route] show state:', state);
@@ -661,8 +692,8 @@
 
   function showCounty(state, county, next) {
     console.log('[route] show county:', state, county);
-    listLocations(function() {
-      next();
+    showState(state, function(error, root) {
+      return next(null, root);
     });
   }
 
@@ -675,8 +706,8 @@
 
   function showOffshoreArea(region, area, next) {
     console.log('[route] show offshore area:', region, area);
-    listLocations(function() {
-      next();
+    showOffshoreRegion(region, function(error, root) {
+      return next(null, root);
     });
   }
 

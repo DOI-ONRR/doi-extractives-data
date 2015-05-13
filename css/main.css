@@ -151,6 +151,7 @@ ol.legend li {
 
 region-map .region path.region {
   fill: #fff;
+  transition: fill .25s;
 }
 
 region-map .region.enabled path.region {

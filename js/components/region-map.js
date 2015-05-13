@@ -86,6 +86,38 @@
     attributeChangedCallback: function(attr, prev, value) {
     },
 
+    zoomTo: function(feature, duration) {
+      var bbox = this.__viewBox;
+      var svg = d3.select(this.__svg);
+      if (feature) {
+        if (typeof feature !== 'object') {
+          svg.selectAll('g.region')
+            .filter(function(d) { return d.id == featureId; })
+            .each(function(d) { feature = d; });
+        }
+
+        if (feature) {
+          var bounds = this.__path.bounds(feature);
+          var padding = 10;
+          bbox = [
+            bounds[0][0] - padding,
+            bounds[0][1] - padding,
+            bounds[1][0] - bounds[0][0] + padding * 2,
+            bounds[1][1] - bounds[0][1] + padding * 2
+          ].join(' ');
+        } else {
+          console.warn('no such feature:', feature);
+        }
+      } else {
+        // XXX
+      }
+
+      if (!isNaN(duration)) {
+        svg = svg.transition().duration(duration);
+      }
+      svg.attr('viewBox', bbox);
+    },
+
     loaded: accessor('loaded', Boolean)
   });
 
@@ -114,6 +146,9 @@
     var path = d3.geo.path()
       .projection(proj);
 
+    this.__proj = proj;
+    this.__path = path;
+
     var svg = d3.select(this.__svg);
 
     if (!svg.attr('viewBox')) {
@@ -132,6 +167,8 @@
         ].join(' '));
       }
     }
+
+    this.__viewBox = svg.attr('viewBox');
 
     var g = svg.selectAll('g.region')
       .data(this.regions)

@@ -253,7 +253,7 @@
     var root = app.root.select('#index');
     if (root.classed('loaded')) {
       // already loaded
-      return next();
+      return next(null, root);
     } else {
       loadLocations(function(error, groups) {
 
@@ -275,7 +275,7 @@
               .text(dl.accessor('name'));
 
         root.classed('loaded', true);
-        return next();
+        return next(null, root);
       });
     }
   }
@@ -287,7 +287,7 @@
       .classed('commodity-selected', false);
     if (root.classed('loaded')) {
       // already loaded
-      return next();
+      return next(null, root);
     } else {
       app.load([
         'national/revenues-yearly.tsv',
@@ -370,7 +370,7 @@
           });
 
         root.classed('loaded', true);
-        return next();
+        return next(null, root);
       });
     }
   }
@@ -388,7 +388,7 @@
         })
         .filter('.selected');
 
-      return next();
+      return next(null, root);
     });
   }
 
@@ -397,7 +397,7 @@
     var root = app.root.select('#revenue')
         .classed('commodity-selected', false);
     if (root.classed('loaded')) {
-      return next();
+      return next(null, root);
     } else {
       app.load([
         'national/revenue-yearly.tsv'
@@ -409,7 +409,7 @@
           .attr('id', dl.template('revenue/{{ slug }}'));
 
         root.classed('loaded', true);
-        return next();
+        return next(null, root);
       });
     }
   }
@@ -423,7 +423,7 @@
         .classed('selected', function(d) {
           return d.slug === commodity;
         });
-      return next();
+      return next(null, root);
     });
   }
 
@@ -432,39 +432,86 @@
     var root = app.root.select('#production')
         .classed('commodity-selected', false);
     if (root.classed('loaded')) {
-      return next();
+      return next(null, root);
     } else {
       app.load([
         'national/volumes-yearly.tsv'
-      ], function(error, revenues) {
+      ], function(error, production) {
 
         var sections = createCommoditySections(
             root.select('section.list--commodities')
           )
           .attr('id', dl.template('production/{{ slug }}'));
 
+        production.forEach(setCommodityGroup);
+
+        var productsByCommodity = d3.nest()
+          .key(dl.accessor('CommodityGroup'))
+          .rollup(d3.nest()
+            .key(dl.accessor('Product'))
+            .rollup(function(d) {
+              return sum(d, 'Volume');
+            })
+            .entries)
+          .map(production);
+
+        var products = sections.select('ul.list--products')
+          .selectAll('li')
+          .data(function(d) {
+            return productsByCommodity[d.name].map(function(p) {
+              var product = parseProductName(p.key);
+              return {
+                commodity: d,
+                product: {
+                  name: product.name,
+                  slug: slugify(product.name),
+                  units: product.units,
+                  volume: p.values
+                }
+              };
+            });
+          })
+          .enter()
+          .append('li')
+            .append('a')
+              // .each(function(d) { console.log(d); })
+              .attr('href', dl.template('#/production/{{ commodity.slug }}/{{ product.slug }}'))
+              .text(dl.accessor('product.name'))
+              .append('span')
+                .attr('class', 'product__volume')
+                .html(function(d) {
+                  return [
+                    ' &mdash;',
+                    eiti.format.metric(d.product.volume),
+                    d.product.units
+                  ].join(' ');
+                });
+
+
         root.classed('loaded', true);
-        return next();
+        return next(null, root);
       });
     }
   }
 
   function listCommodityProducts(commodity, next) {
     console.log('[route] list commodity products');
-    showProduction(function() {
-      var root = app.root.select('#production')
-        .classed('commodity-selected', true);
+    return showProduction(function(error, root) {
+      root.classed('commodity-selected', true);
       root.selectAll('section.commodity')
         .classed('selected', function(d) {
           return d.slug === commodity;
         });
-      return next();
+      return next(null, root);
     });
   }
 
   function showCommodityProduct(commodity, product, next) {
     console.log('[route] show commodity product:', commodity, product);
-    next();
+    return listCommodityProducts(commodity, function(error, root) {
+      // TODO: select the product
+      return next(null, root);
+    });
   }
 
   function listLocations(next) {
@@ -473,7 +520,7 @@
     var root = app.root.select('#locations');
     if (root.classed('loaded')) {
       // already loaded
-      return next();
+      return next(null, root);
     } else {
       loadLocations(function(error, groups) {
         if (error) return next(error);
@@ -835,6 +882,23 @@
     return template
       ? template.replace('%', path)
       : '#/locations/' + path;
+  }
+
+  function parseProductName(name) {
+    var match = name.match(/\(([a-z]+)\)$/);
+    if (match) {
+      return {
+        name: name.split(' (').shift(),
+        units: match[1]
+      };
+    }
+    return {name: name, units: 'units'};
+  }
+
+  function slugify(str) {
+    return str.toLowerCase()
+      .replace(/\s*\([^\)]+\)\s/g, '')
+      .replace(/\W+/g, '-');
   }
 
 })(this);

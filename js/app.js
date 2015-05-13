@@ -459,7 +459,7 @@
           .selectAll('li')
           .data(function(d) {
             return productsByCommodity[d.name].map(function(p) {
-              var product = parseProductName(p.key);
+              var product = parseProductName(p.key, d.name);
               return {
                 commodity: d,
                 product: {
@@ -884,7 +884,10 @@
       : '#/locations/' + path;
   }
 
-  function parseProductName(name) {
+  function parseProductName(name, commodity) {
+    if (commodity && name.indexOf(commodity) === 0) {
+      name = name.substr(commodity.length + 1);
+    }
     var match = name.match(/\(([a-z]+)\)$/);
     if (match) {
       return {

@@ -278,7 +278,8 @@
       app.load([
         'national/revenues-yearly.tsv',
         'national/volumes-yearly.tsv',
-      ], function(error, revenues, production) {
+        'state/revenues-yearly.tsv',
+      ], function(error, revenues, production, stateRevenues) {
 
         var template = root.select('.commodity-template')
           .style('display', null)
@@ -335,6 +336,37 @@
             return products
               ? pluralize(products, ' product')
               : '(no products)';
+          });
+
+        stateRevenues.forEach(setCommodityGroup);
+
+        var index = d3.nest()
+          .key(dl.accessor('CommodityGroup'))
+          .key(dl.accessor('State'))
+          .rollup(sumRevenues)
+          .map(stateRevenues);
+        // console.log('revenues index:', index);
+
+        sections.append('region-map')
+          .attr('class', 'detail')
+          .on('load', function(d) {
+            // console.log('region map:', d);
+
+            var revenuesByState = index[d.name];
+            var regions = d3.select(this)
+              .selectAll('g.region')
+              .filter(function(f) {
+                return f.revenue = revenuesByState[f.properties.abbr];
+              })
+              .classed('enabled', true);
+
+            var hrefTemplate = dl.template('#/commodities/{{ slug }}/%')(d);
+            regions.select('a')
+              .attr('xlink:href', function(d) {
+                return getFeatureHref(d, hrefTemplate);
+              });
+
+            regions.select('path');
           });
 
         root.classed('loaded', true);
@@ -410,12 +442,7 @@
 
         var region = root.selectAll('region-map g.region')
           .each(function(d) {
-            d.href = [
-              '#/locations',
-              d.properties.offshore ? 'offshore' : 'onshore',
-              d.properties.offshore ? d.id : d.properties.abbr
-            ].join('/');
-
+            d.href = getFeatureHref(d, '#/locations/%');
             d.selected = d.href === location.hash;
           })
           .classed('selected', function(d) {
@@ -596,6 +623,16 @@
 
   function expandHrefTemplate(d) {
     return dl.template(this.getAttribute('href'))(d);
+  }
+
+  function getFeatureHref(d, template) {
+    var path = [
+      d.properties.offshore ? 'offshore' : 'onshore',
+      d.properties.offshore ? d.id : d.properties.abbr
+    ].join('/');
+    return template
+      ? template.replace('%', path)
+      : '#/locations/' + path;
   }
 
 })(this);

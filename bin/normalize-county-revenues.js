@@ -58,7 +58,13 @@ function main(done) {
 function normalize(d) {
   util.trimKeys(d);
   var type = util.normalizeRevenueType(d['Revenue Type']);
-  var commodity = util.normalizeCommodity(d.Commodity);
+  var commodity;
+  if (d.Commodity.trim() === 'Other Products') {
+    commodity = util.normalizeCommodity(d.Product);
+    console.warn('Other Products ->', commodity);
+  } else {
+    commodity = util.normalizeCommodity(d.Commodity);
+  }
   return {
     Year:       d.CY,
     State:      d[stateField],

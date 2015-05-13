@@ -59,12 +59,19 @@ function main(done) {
 function normalize(d) {
   util.trimKeys(d);
   var volume = parse.number(d[volumeField]);
+  var commodity;
+  if (d.Commodity.trim() === 'Other Products') {
+    commodity = util.normalizeCommodity(d.Product);
+    console.warn('Other Products ->', commodity);
+  } else {
+    commodity = util.normalizeCommodity(d.Commodity);
+  }
   return {
     Year:       d[yearField],
     State:      d[stateField],
     County:     d['County Name'],
     FIPS:       d[fipsField],
-    Commodity:  d.Commodity,
+    Commodity:  commodity,
     Product:    d.Product,
     Type:       d['Volume Type'],
     Volume:     volume

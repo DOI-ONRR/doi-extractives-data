@@ -34,6 +34,8 @@
       'revenue':      'Revenue',
     },
 
+    commoditySlugs: {},
+
     // all data URLs provided to load() will be prefixed with this
     // path unless they start with "./"
     dataPath: 'output/',
@@ -144,6 +146,8 @@
      */
     onRoute: function() {
       console.info('[app] on route:', arguments);
+      var path = app.router.getRoute();
+      app.updatePath(path);
       var next = last(arguments);
       next();
     },
@@ -203,7 +207,14 @@
     updateCommodities: function(done) {
       if (app.commodities) return done();
       app.commodities = new eiti.data.Commodities();
-      app.commodities.load('data/commodities.json', done);
+      app.commodities.load('data/commodities.json', function(error, commodity) {
+        for (var slug in commodity.groups) {
+          var group = commodity.groups[slug];
+          app.commoditySlugs[group] = slug;
+          app.pathTitles[slug] = group;
+        }
+        done();
+      });
     },
   };
 
@@ -223,8 +234,42 @@
 
       app.load([
         'national/revenues-yearly.tsv',
-        'national/volumes-yearly.tsv',
-      ], function(error, groups, revenues, commodities) {
+        // 'national/volumes-yearly.tsv',
+      ], function(error, revenues, production) {
+
+        var entries = d3.nest()
+          .key(function(d) {
+            return app.commodities.getGroup(d.Commodity);
+          })
+          .rollup(function(d) {
+            return d3.sum(d, dl.accessor('Revenue'));
+          })
+          .entries(revenues)
+          .map(function(d) {
+            d.slug = app.commoditySlugs[d.key];
+            return d;
+          })
+          .sort(dl.comparator('-values'));
+
+        var list = root.select('.list--commodities');
+        var item = list.selectAll('li')
+          .data(entries);
+        item.exit().remove();
+        var enter = item.enter().append('li')
+          .append('a');
+        enter.append('b');
+        enter.append('span')
+          .attr('class', 'revenue--dollars');
+        item.select('a')
+          .attr('href', function(d) {
+            return '#/commodities/' + d.slug;
+          });
+        item.select('b')
+          .text(dl.accessor('key'));
+        item.select('.revenue--dollars')
+          .html(function(d) {
+            return ' &mdash; ' + eiti.format.shortDollars(d.values);
+          });
         next();
       });
     });
@@ -283,14 +328,6 @@
       // select the active one
       var value = '/' + app.router.getRoute().join('/');
       list.property('value', value);
-      list.selectAll('option')
-        .filter(function(d) {
-          return d && d.value === value;
-        })
-        .each(function(d) {
-          app.breadcrumb.select('li:last-child a')
-            .text(d.label || '???');
-        });
 
       var region = root.selectAll('region-map g.region')
         .each(function(d) {
@@ -312,6 +349,15 @@
         });
 
       next();
+
+      list.selectAll('option')
+        .filter(function(d) {
+          return d && d.value === value;
+        })
+        .each(function(d) {
+          app.breadcrumb.select('li:last-child a')
+            .text(d.label || '???');
+        });
     });
   }
 
@@ -410,6 +456,25 @@
     };
 
     return selector;
+  }
+
+  function lookup(list, key, value) {
+    value = dl.accessor(value);
+    return d3.nest()
+      .key(dl.accessor(key))
+      .rollup(function(d) {
+        return value(d[0]);
+      })
+      .map(list);
+  }
+
+  function reverseLookup(map) {
+    return d3.nest()
+      .key(dl.accessor('value'))
+      .rollup(function(d) {
+        return d[0].key;
+      })
+      .map(d3.entries(map));
   }
 
 })(this);

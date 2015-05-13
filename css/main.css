@@ -170,6 +170,11 @@ region-map .region.selected:hover path.region {
   fill: #393;
 }
 
+#locations region-map svg {
+  width: 100%;
+  height: 400px;
+}
+
 @media (min-width: 960px) {
   .container {
     padding-left: 0;

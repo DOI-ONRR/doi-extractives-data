@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>USEITI Data: Prototype</title>
+    <script src="js/vendor/d3.v3.min.js"></script>
+    <script src="js/vendor/queue.v1.min.js"></script>
+    <script src="js/vendor/topojson.v1.min.js"></script>
+    <script src="js/vendor/datalib.min.js"></script>
+    <script src="js/vendor/director.min.js"></script>
+    <script src="js/eiti.js"></script>
+    <script src="js/progressive.js"></script>
+    <script src="lib/albers-custom.js"></script>
+    <script src="js/components/region-map.js"></script>
+    <script src="js/components/x-slider.js"></script>
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body id="app" class="index">
+
+    <header class="container">
+      <h1><span>USEITI</span></h1>
+      <nav>
+        <ul class="breadcrumb">
+          <li class="home"><a href="#/">Home</a></li>
+        </ul>
+      </nav>
+      <div class="page-description">
+        <p>This is the page description.</p>
+      </div>
+    </header>
+
+    <main id="index" class="container">
+
+      <section class="module module--commodity">
+        <h2>Browse by Category</h2>
+        <p>Total revenues from 2004 to 2013 by commodity category:</p>
+        <ul class="list--commodities">
+        </ul>
+        <p>Or <a href="#/commodities">compare all commodities</a>.</p>
+      </section>
+
+      <section class="module module--location">
+        <h2>Browse by Location</h2>
+        <region-map></region-map>
+        <form action="#/locations">
+          <p><a href="#/locations">View the map</a> or 
+            <label>select a location:
+              <select name="location" class="select--locations">
+                <option>Select a region</option>
+              </select>
+            </label>
+          </p>
+        </form>
+      </section>
+
+    </main>
+
+    <section id="commodities" class="primary container">
+    </section>
+
+    <section id="locations" class="primary container">
+      <p>Select a location: <select class="select--locations">
+        <option></option>
+      </select></p>
+      <region-map></region-map>
+    </section>
+
+    <section id="revenue" class="primary container">
+    </section>
+
+    <section id="production" class="primary container">
+    </section>
+
+    <script src="js/app.js"></script>
+    <script>app.init();</script>
+  </body>
+</html>

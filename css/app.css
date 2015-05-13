@@ -1,0 +1,6 @@
+
+/* hide the onshore/offshore breadcrumb item */
+body[data-path^="/locations/"] nav ul.breadcrumb li:nth-child(3) {
+  display: none;
+}
+

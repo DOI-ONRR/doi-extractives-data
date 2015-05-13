@@ -4,3 +4,6 @@ body[data-path^="/locations/"] nav ul.breadcrumb li:nth-child(3) {
   display: none;
 }
 
+.module--location region-map svg {
+  height: 150px;
+}

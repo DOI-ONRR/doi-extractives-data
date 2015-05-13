@@ -81,7 +81,6 @@
     },
 
     detachedCallback: function() {
-      this.removeEventListener('click', getListener('click', this));
     },
 
     attributeChangedCallback: function(attr, prev, value) {

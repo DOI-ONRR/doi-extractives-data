@@ -280,18 +280,62 @@
         'national/volumes-yearly.tsv',
       ], function(error, revenues, production) {
 
+        var template = root.select('.commodity-template')
+          .style('display', null)
+          .remove()
+          .node();
+
         var sections = root.select('section.list--commodities')
           .selectAll('section.commodity')
           .data(app.commodityGroups)
           .enter()
-          .append('section')
+          .append(function(d) { return template.cloneNode(true); })
             .attr('class', 'commodity')
             .attr('id', dl.template('commodities/{{ slug }}'));
 
-        sections.append('h3')
-          .append('a')
-            .attr('href', dl.template('#/commodities/{{ slug }}'))
-            .text(dl.accessor('name'));
+        var name = dl.accessor('name');
+        var href = dl.template('#/commodities/{{ slug }}');
+        sections.selectAll('.commodity-title')
+          .call(rebind)
+          .text(name);
+
+        sections.selectAll('a')
+          .filter(function() {
+            return this.href.indexOf('{{') > -1;
+          })
+          .call(rebind)
+          .attr('href', expandHrefTemplate);
+
+        revenues.forEach(setCommodityGroup);
+        production.forEach(setCommodityGroup);
+
+        var revenuesByCommodity = d3.nest()
+          .key(dl.accessor('CommodityGroup'))
+          .rollup(sumRevenues)
+          .map(revenues);
+
+        var productsByCommodity = d3.nest()
+          .key(dl.accessor('CommodityGroup'))
+          .rollup(function(d) {
+            return countUnique(d, 'Product');
+          })
+          .map(production);
+
+        var stats = sections.select('table.stats');
+        stats.select('.stat__revenue')
+          .call(rebind)
+          .text(function(d) {
+            return eiti.format.shortDollars(revenuesByCommodity[d.name]);
+          });
+
+        stats.select('.stat__products')
+          .call(rebind)
+          .text(function(d) {
+            var products = productsByCommodity[d.name];
+            return products
+              ? pluralize(products, ' product')
+              : '(no products)';
+          });
 
         root.classed('loaded', true);
         return next();
@@ -511,6 +555,47 @@
         return d[0].key;
       })
       .map(d3.entries(map));
+  }
+
+  function setCommodityGroup(d) {
+    d.CommodityGroup = app.commodities.getGroup(d.Commodity);
+  }
+
+  function rebind(selection, parent) {
+    selection.each(function(d) {
+      var node = this;
+      while (!d && node.parentNode) {
+        node = node.parentNode;
+        d = d3.select(node).datum();
+      }
+      d3.select(this).datum(d);
+    });
+  }
+
+  function sum(d, key) {
+    key = dl.accessor(key);
+    return d3.sum(d, function(x) { return +key(x); });
+  }
+
+  function sumRevenues(d) {
+    return sum(d, 'Revenue');
+  }
+
+  function countUnique(d, key) {
+    return d3.nest()
+      .key(dl.accessor(key))
+      .entries(d)
+      .length;
+  }
+
+  function pluralize(value, text, plural) {
+    return (value == 1)
+      ? [value, text].join('')
+      : [value, plural || (text + 's')].join('');
+  }
+
+  function expandHrefTemplate(d) {
+    return dl.template(this.getAttribute('href'))(d);
   }
 
 })(this);

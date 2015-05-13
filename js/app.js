@@ -209,11 +209,24 @@
 
   function showIndex(next) {
     console.log('[route] index');
-    app.load([
-      'national/revenues-yearly.tsv',
-      'national/volumes-yearly.tsv',
-    ], function(error, revenues, commodities) {
-      next();
+
+    var root = d3.select('#index');
+    loadLocations(function(error, groups) {
+
+      var list = root.select('.select--locations')
+        .call(locationSelector()
+          .groups(groups))
+        .on('change', function() {
+          if (!this.value) return;
+          app.router.setRoute(this.value);
+        });
+
+      app.load([
+        'national/revenues-yearly.tsv',
+        'national/volumes-yearly.tsv',
+      ], function(error, groups, revenues, commodities) {
+        next();
+      });
     });
   }
 

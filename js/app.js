@@ -295,31 +295,10 @@
         'state/revenues-yearly.tsv',
       ], function(error, revenues, production, stateRevenues) {
 
-        var template = root.select('.commodity-template')
-          .style('display', null)
-          .remove()
-          .node();
-
-        var sections = root.select('section.list--commodities')
-          .selectAll('section.commodity')
-          .data(app.commodityGroups)
-          .enter()
-          .append(function(d) { return template.cloneNode(true); })
-            .attr('class', 'commodity')
-            .attr('id', dl.template('commodities/{{ slug }}'));
-
-        var name = dl.accessor('name');
-        var href = dl.template('#/commodities/{{ slug }}');
-        sections.selectAll('.commodity-title')
-          .call(rebind)
-          .text(name);
-
-        sections.selectAll('a')
-          .filter(function() {
-            return this.href.indexOf('{{') > -1;
-          })
-          .call(rebind)
-          .attr('href', expandHrefTemplate);
+        var sections = createCommoditySections(
+            root.select('section.list--commodities')
+          )
+          .attr('id', dl.template('commodities/{{ slug }}'));
 
         revenues.forEach(setCommodityGroup);
         production.forEach(setCommodityGroup);
@@ -415,22 +394,72 @@
 
   function showRevenue(next) {
     console.log('[route] show revenues');
-    next();
+    var root = app.root.select('#revenue')
+        .classed('commodity-selected', false);
+    if (root.classed('loaded')) {
+      return next();
+    } else {
+      app.load([
+        'national/revenue-yearly.tsv'
+      ], function(error, revenues) {
+
+        var sections = createCommoditySections(
+            root.select('section.list--commodities')
+          )
+          .attr('id', dl.template('revenue/{{ slug }}'));
+
+        root.classed('loaded', true);
+        return next();
+      });
+    }
   }
 
   function showCommodityRevenue(commodity, next) {
     console.log('[route] show commodity revenues:', commodity);
-    next();
+    showRevenue(function() {
+      var root = app.root.select('#revenue')
+        .classed('commodity-selected', true);
+      root.selectAll('section.commodity')
+        .classed('selected', function(d) {
+          return d.slug === commodity;
+        });
+      return next();
+    });
   }
 
   function showProduction(next) {
     console.log('[route] show production');
-    next();
+    var root = app.root.select('#production')
+        .classed('commodity-selected', false);
+    if (root.classed('loaded')) {
+      return next();
+    } else {
+      app.load([
+        'national/volumes-yearly.tsv'
+      ], function(error, revenues) {
+
+        var sections = createCommoditySections(
+            root.select('section.list--commodities')
+          )
+          .attr('id', dl.template('production/{{ slug }}'));
+
+        root.classed('loaded', true);
+        return next();
+      });
+    }
   }
 
   function listCommodityProducts(commodity, next) {
     console.log('[route] list commodity products');
-    next();
+    showProduction(function() {
+      var root = app.root.select('#production')
+        .classed('commodity-selected', true);
+      root.selectAll('section.commodity')
+        .classed('selected', function(d) {
+          return d.slug === commodity;
+        });
+      return next();
+    });
   }
 
   function showCommodityProduct(commodity, product, next) {
@@ -728,6 +757,33 @@
         return d[0].key;
       })
       .map(d3.entries(map));
+  }
+
+  function createCommoditySections(root, templateSelector) {
+    var template = root.select(templateSelector || '.template')
+      .style('display', null)
+      .remove()
+      .node();
+
+    var sections = root.selectAll('section.commodity')
+      .data(app.commodityGroups)
+      .enter()
+      .append(function(d) { return template.cloneNode(true); })
+        .attr('class', 'commodity');
+
+    var name = dl.accessor('name');
+    sections.selectAll('.commodity-title')
+      .call(rebind)
+      .text(name);
+
+    sections.selectAll('a')
+      .filter(function() {
+        return this.href.indexOf('{{') > -1;
+      })
+      .call(rebind)
+      .attr('href', expandHrefTemplate);
+
+    return sections;
   }
 
   function setCommodityGroup(d) {

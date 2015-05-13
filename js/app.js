@@ -1,33 +1,6 @@
 (function(exports) {
 
   var app = exports.app = {
-    /**
-     * the default app routes
-     */
-    routes: {
-      '/index': showIndex,
-
-      '/commodities':             listCommodities,
-      '/commodities/:commodity':  showCommodity,
-
-      '/commodities/:commodity/onshore/:state':         showCommodityForState,
-      '/commodities/:commodity/onshore/:state/:county': showCommodityForCounty,
-      '/commodities/:commodity/offshore/:region':       showCommodityForOffshoreRegion,
-      '/commodities/:commodity/offshore/:region/:area': showCommodityForOffshoreArea,
-
-      '/revenue':             showRevenue,
-      '/revenue/:commodity':  showCommodityRevenue,
-
-      '/production':                      showProduction,
-      '/production/:commodity':           listCommodityProducts,
-      '/production/:commodity/:product':  showCommodityProduct,
-
-      '/locations':                         listLocations,
-      '/locations/onshore/:state':          showState,
-      '/locations/onshore/:state/:county':  showCounty,
-      '/locations/offshore/:region':        showOffshoreRegion,
-      '/locations/offshore/:region/:area':  showOffshoreArea,
-    },
 
     // replacements for standard URL path components in the
     // breadcrumb nav
@@ -59,9 +32,39 @@
     /**
      * initialize the app
      */
-    init: function() {
+    init: function(routes) {
+      /**
+       * the default app routes
+       */
+      if (!routes) {
+        routes = {
+          '/index': showIndex,
+
+          '/commodities':             listCommodities,
+          '/commodities/:commodity':  showCommodity,
+
+          '/commodities/:commodity/onshore/:state':         showCommodityForState,
+          '/commodities/:commodity/onshore/:state/:county': showCommodityForCounty,
+          '/commodities/:commodity/offshore/:region':       showCommodityForOffshoreRegion,
+          '/commodities/:commodity/offshore/:region/:area': showCommodityForOffshoreArea,
+
+          '/revenue':             showRevenue,
+          '/revenue/:commodity':  showCommodityRevenue,
+
+          '/production':                      showProduction,
+          '/production/:commodity':           listCommodityProducts,
+          '/production/:commodity/:product':  showCommodityProduct,
+
+          '/locations':                         listLocations,
+          '/locations/onshore/:state':          showState,
+          '/locations/onshore/:state/:county':  showCounty,
+          '/locations/offshore/:region':        showOffshoreRegion,
+          '/locations/offshore/:region/:area':  showOffshoreArea,
+        };
+      }
+
       // create the router
-      app.router = new Router(app.routes)
+      app.router = new Router(routes)
         .configure({
           async: true,
           before: app.beforeRoute,
@@ -229,6 +232,7 @@
       console.info('[app] after route:', arguments);
       // each view that cares about the year should add
       // a 'change' event handler, which should be exclusive
+      console.warn('- remove change listener');
       app.yearSlider.on('change', null);
       var next = last(arguments);
       next();
@@ -339,108 +343,131 @@
     }
   }
 
-  function listCommodities(next) {
-    console.log('[route] list commodities');
+  var listCommodities = (function() {
+    var data, root, sections;
 
-    var root = app.root.select('#commodities')
-      .classed('commodity-selected', false);
-    if (root.classed('loaded')) {
-      // already loaded
-      return next(null, root);
-    } else {
-      app.load([
-        'national/revenues-yearly.tsv',
-        'national/volumes-yearly.tsv',
-        'state/revenues-yearly.tsv',
-      ], function(error, revenues, production, stateRevenues) {
+    function update() {
+      var year = app.yearSlider.property('value');
+      var filter = function(d) { return d.Year == year; };
 
-        var sections = createCommoditySections(
-            root.select('section.list--commodities')
-          )
-          .attr('id', dl.template('commodities/{{ slug }}'));
+      var revenues = data.revenues.filter(filter);
+      var production = data.production.filter(filter);
+      var stateRevenues = data.stateRevenues.filter(filter);
 
-        revenues.forEach(setCommodityGroup);
-        production.forEach(setCommodityGroup);
+      var revenuesByCommodity = d3.nest()
+        .key(dl.accessor('CommodityGroup'))
+        .rollup(sumRevenues)
+        .map(revenues);
 
-        var revenuesByCommodity = d3.nest()
-          .key(dl.accessor('CommodityGroup'))
-          .rollup(sumRevenues)
-          .map(revenues);
+      var productsByCommodity = d3.nest()
+        .key(dl.accessor('CommodityGroup'))
+        .rollup(function(d) {
+          return countUnique(d, 'Product');
+        })
+        .map(production);
 
-        var productsByCommodity = d3.nest()
-          .key(dl.accessor('CommodityGroup'))
-          .rollup(function(d) {
-            return countUnique(d, 'Product');
+      var stats = sections.select('table.stats');
+      stats.select('.stat__revenue')
+        .call(rebind)
+        .text(function(d) {
+          return eiti.format.shortDollars(revenuesByCommodity[d.name]);
+        });
+
+      stats.select('.stat__products')
+        .call(rebind)
+        .datum(function(d) {
+          return productsByCommodity[d.name];
+        })
+        .text(function(products) {
+          return products
+            ? pluralize(products, ' product')
+            : '(no products)';
+        })
+        // unset the href attribute on links without products
+        .filter(function(products) {
+            return this.nodeName === 'A' && !products;
           })
-          .map(production);
+          .attr('href', null);
 
-        var stats = sections.select('table.stats');
-        stats.select('.stat__revenue')
-          .call(rebind)
-          .text(function(d) {
-            return eiti.format.shortDollars(revenuesByCommodity[d.name]);
-          });
+      var index = d3.nest()
+        .key(dl.accessor('CommodityGroup'))
+        .key(dl.accessor('State'))
+        .rollup(sumRevenues)
+        .map(stateRevenues);
+      // console.log('revenues index:', index);
 
-        stats.select('.stat__products')
-          .call(rebind)
-          .datum(function(d) {
-            return productsByCommodity[d.name];
-          })
-          .text(function(products) {
-            return products
-              ? pluralize(products, ' product')
-              : '(no products)';
-          })
-          // unset the href attribute on links without products
-          .filter(function(products) {
-              return this.nodeName === 'A' && !products;
+      var detail = sections.select('.detail');
+
+      detail.select('region-map')
+        .call(whenLoaded, function(d) {
+          // console.log('region map:', index[d.name]);
+
+          var revenuesByState = index[d.name] || {};
+          var regions = d3.select(this)
+            .selectAll('g.region')
+            .each(function(f) {
+              return f.revenue = revenuesByState[f.properties.abbr];
             })
-            .attr('href', null);
+            .classed('enabled', function(f) {
+              return !!f.revenue;
+            });
 
-        stateRevenues.forEach(setCommodityGroup);
+          var hrefTemplate = dl.template('#/commodities/{{ slug }}/%')(d);
+          regions.select('a')
+            .attr('xlink:href', function(f) {
+              return getFeatureHref(f, hrefTemplate);
+            });
 
-        var index = d3.nest()
-          .key(dl.accessor('CommodityGroup'))
-          .key(dl.accessor('State'))
-          .rollup(sumRevenues)
-          .map(stateRevenues);
-        // console.log('revenues index:', index);
-
-        var detail = sections.select('.detail');
-
-        detail.select('region-map')
-          .call(whenLoaded, function(d) {
-            // console.log('region map:', d);
-
-            var revenuesByState = index[d.name];
-            var regions = d3.select(this)
-              .selectAll('g.region')
-              .filter(function(f) {
-                return f.revenue = revenuesByState[f.properties.abbr];
-              })
-              .classed('enabled', true);
-
-            var hrefTemplate = dl.template('#/commodities/{{ slug }}/%')(d);
-            regions.select('a')
-              .attr('xlink:href', function(d) {
-                return getFeatureHref(d, hrefTemplate);
-              });
-
-            regions.select('path');
-          });
-
-        root.classed('loaded', true);
-        return next(null, root);
-      });
+          regions.select('path');
+        });
     }
-  }
+
+    return function listCommodities(next) {
+      console.log('[route] list commodities');
+
+      root = app.root.select('#commodities')
+        .classed('commodity-selected', false);
+
+      if (data) {
+        console.warn('+ add change listener');
+        app.yearSlider.on('change', update);
+        update();
+        return next(null, root);
+      } else {
+        app.load({
+          revenues: 'national/revenues-yearly.tsv',
+          production: 'national/volumes-yearly.tsv',
+          stateRevenues: 'state/revenues-yearly.tsv',
+        }, function(error, _data) {
+
+          root.classed('loaded', true);
+
+          sections = createCommoditySections(
+              root.select('section.list--commodities')
+            )
+            .attr('id', dl.template('commodities/{{ slug }}'));
+
+          _data.revenues.forEach(setCommodityGroup);
+          _data.production.forEach(setCommodityGroup);
+          _data.stateRevenues.forEach(setCommodityGroup);
+
+          data = _data;
+
+          console.warn('+ add change listener');
+          app.yearSlider.on('change', update);
+          update();
+
+          return next(null, root);
+        });
+      }
+    };
+  })();
 
   function showCommodity(commodity, next) {
-    listCommodities(function() {
+    listCommodities(function(error, root) {
       console.log('[route] show commodity:', commodity);
 
-      var root = app.root.select('#commodities')
-        .classed('commodity-selected', true);
+      root.classed('commodity-selected', true);
 
       var section = root.selectAll('section.commodity')
         .classed('selected', function(d) {
@@ -612,18 +639,7 @@
             return d.href;
           });
 
-        next();
-
-        // FIXME we can only update the breadcrumb after the
-        // route has "finished"
-        list.selectAll('option')
-          .filter(function(d) {
-            return d && d.value === value;
-          })
-          .each(function(d) {
-            app.breadcrumb.select('li:last-child a')
-              .text(d.label || '???');
-          });
+        return next();
       });
     }
   }
@@ -655,6 +671,31 @@
       next();
     });
   }
+
+  function showCommodityForState(commodity, state, next) {
+    console.log('[route] state commodity view');
+    next();
+  }
+
+  function showCommodityForCounty(commodity, state, county, next) {
+    console.log('[route] county commodity view');
+    next();
+  }
+
+  function showCommodityForOffshoreRegion(commodity, region, next) {
+    console.log('[route] offshore region commodity view');
+    next();
+  }
+
+  function showCommodityForOffshoreArea(commodity, region, area, next) {
+    console.log('[route] offshore area commodity view');
+    next();
+  }
+
+
+  /**
+   * utility functions
+   */
 
   function noop() {
   }
@@ -695,26 +736,6 @@
           }
         ]);
       });
-  }
-
-  function showCommodityForState(commodity, state, next) {
-    console.log('[route] state commodity view');
-    next();
-  }
-
-  function showCommodityForCounty(commodity, state, county, next) {
-    console.log('[route] county commodity view');
-    next();
-  }
-
-  function showCommodityForOffshoreRegion(commodity, region, next) {
-    console.log('[route] offshore region commodity view');
-    next();
-  }
-
-  function showCommodityForOffshoreArea(commodity, region, area, next) {
-    console.log('[route] offshore area commodity view');
-    next();
   }
 
   function locationSelector() {
@@ -813,10 +834,6 @@
     return template
       ? template.replace('%', path)
       : '#/locations/' + path;
-  }
-
-
-  function showCommodityForCounty(state, county, next) {
   }
 
   function locationSelector() {

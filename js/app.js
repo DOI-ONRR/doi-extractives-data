@@ -345,12 +345,19 @@
 
         stats.select('.stat__products')
           .call(rebind)
-          .text(function(d) {
-            var products = productsByCommodity[d.name];
+          .datum(function(d) {
+            return productsByCommodity[d.name];
+          })
+          .text(function(products) {
             return products
               ? pluralize(products, ' product')
               : '(no products)';
-          });
+          })
+          // unset the href attribute on links without products
+          .filter(function(products) {
+              return this.nodeName === 'A' && !products;
+            })
+            .attr('href', null);
 
         stateRevenues.forEach(setCommodityGroup);
 
@@ -459,6 +466,7 @@
             d.href = getFeatureHref(d, '#/locations/%');
             d.selected = d.href === location.hash;
           })
+          .classed('enabled', true)
           .classed('selected', function(d) {
             return d.selected;
           });
@@ -470,6 +478,8 @@
 
         next();
 
+        // FIXME we can only update the breadcrumb after the
+        // route has "finished"
         list.selectAll('option')
           .filter(function(d) {
             return d && d.value === value;

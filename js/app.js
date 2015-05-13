@@ -10,6 +10,11 @@
       '/commodities':             listCommodities,
       '/commodities/:commodity':  showCommodity,
 
+      '/commodities/:commodity/onshore/:state':         showCommodityForState,
+      '/commodities/:commodity/onshore/:state/:county': showCommodityForCounty,
+      '/commodities/:commodity/offshore/:region':       showCommodityForOffshoreRegion,
+      '/commodities/:commodity/offshore/:region/:area': showCommodityForOffshoreArea,
+
       '/revenue':             showRevenue,
       '/revenue/:commodity':  showCommodityRevenue,
 
@@ -544,6 +549,128 @@
           }
         ]);
       });
+  }
+
+  function showCommodityForState(commodity, state, next) {
+    console.log('[route] state commodity view');
+    next();
+  }
+
+  function showCommodityForCounty(commodity, state, county, next) {
+    console.log('[route] county commodity view');
+    next();
+  }
+
+  function showCommodityForOffshoreRegion(commodity, region, next) {
+    console.log('[route] offshore region commodity view');
+    next();
+  }
+
+  function showCommodityForOffshoreArea(commodity, region, area, next) {
+    console.log('[route] offshore area commodity view');
+    next();
+  }
+
+  function locationSelector() {
+    var groups = [];
+
+    var selector = function(select) {
+      var group = select.selectAll('optgroup')
+        .data(groups);
+      group.exit().remove();
+      group.enter().append('optgroup');
+      group.attr('label', dl.accessor('label'));
+
+      var option = group.selectAll('option')
+        .data(function(d) { return d.values; });
+      option.exit().remove();
+      option.enter().append('option');
+      option
+        .attr('value', dl.accessor('value'))
+        .text(dl.accessor('label'));
+    };
+
+    selector.groups = function(_) {
+      if (!arguments.length) return groups;
+      groups = _;
+      return selector;
+    };
+
+    return selector;
+  }
+
+  function lookup(list, key, value) {
+    value = dl.accessor(value);
+    return d3.nest()
+      .key(dl.accessor(key))
+      .rollup(function(d) {
+        return value(d[0]);
+      })
+      .map(list);
+  }
+
+  function reverseLookup(map) {
+    return d3.nest()
+      .key(dl.accessor('value'))
+      .rollup(function(d) {
+        return d[0].key;
+      })
+      .map(d3.entries(map));
+  }
+
+  function setCommodityGroup(d) {
+    d.CommodityGroup = app.commodities.getGroup(d.Commodity);
+  }
+
+  function rebind(selection, parent) {
+    selection.each(function(d) {
+      var node = this;
+      while (!d && node.parentNode) {
+        node = node.parentNode;
+        d = d3.select(node).datum();
+      }
+      d3.select(this).datum(d);
+    });
+  }
+
+  function sum(d, key) {
+    key = dl.accessor(key);
+    return d3.sum(d, function(x) { return +key(x); });
+  }
+
+  function sumRevenues(d) {
+    return sum(d, 'Revenue');
+  }
+
+  function countUnique(d, key) {
+    return d3.nest()
+      .key(dl.accessor(key))
+      .entries(d)
+      .length;
+  }
+
+  function pluralize(value, text, plural) {
+    return (value == 1)
+      ? [value, text].join('')
+      : [value, plural || (text + 's')].join('');
+  }
+
+  function expandHrefTemplate(d) {
+    return dl.template(this.getAttribute('href'))(d);
+  }
+
+  function getFeatureHref(d, template) {
+    var path = [
+      d.properties.offshore ? 'offshore' : 'onshore',
+      d.properties.offshore ? d.id : d.properties.abbr
+    ].join('/');
+    return template
+      ? template.replace('%', path)
+      : '#/locations/' + path;
+  }
+
+
+  function showCommodityForCounty(state, county, next) {
   }
 
   function locationSelector() {

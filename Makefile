@@ -102,6 +102,7 @@ geo: \
 output/geo/us-topology.json: input/geo/us-10m.json
 	mkdir -p $(dir $@)
 	bin/map-topology.js \
+		--id.states 'abbr' \
 		--props.states '{abbr: STATE, FIPS: STATE_FIPS}' \
 		--filter.states '["AS", "GU", "PR", "VI"].indexOf(abbr) === -1' \
 		--props.counties '{state: STATE, county: COUNTY, FIPS: FIPS}' \
@@ -135,7 +136,7 @@ output/geo/offshore.json: input/geo/offshore/*.json
 	$(BIN)/topojson --properties -o $@ -- $^
 
 output/geo/%-simple.json: output/geo/%.json
-	topojson --properties --simplify 2e-6 -o $@ $<
+	$(BIN)/topojson --properties --simplify 2e-6 -o $@ $<
 
 svg: \
 	output/svg/all.svg \

@@ -9,6 +9,7 @@ body[data-path^="/locations/"] nav ul.breadcrumb li:nth-child(3) {
 }
 
 #commodities .commodity {
+  margin: 2em 0;
 }
 
 #commodities.commodity-selected .commodity {
@@ -17,4 +18,21 @@ body[data-path^="/locations/"] nav ul.breadcrumb li:nth-child(3) {
 
 #commodities.commodity-selected .commodity.selected {
   display: block;
+}
+
+table.stats {
+  width: 100%;
+  max-width: 12em;
+}
+
+table.stats th {
+  text-align: left;
+}
+
+table.stats td {
+  text-align: right;
+}
+
+table.stats .fpo {
+  color: #ccc;
 }

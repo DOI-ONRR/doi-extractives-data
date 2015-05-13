@@ -232,7 +232,6 @@
       console.info('[app] after route:', arguments);
       // each view that cares about the year should add
       // a 'change' event handler, which should be exclusive
-      console.warn('- remove change listener');
       app.yearSlider.on('change', null);
       var next = last(arguments);
       next();
@@ -429,7 +428,6 @@
         .classed('commodity-selected', false);
 
       if (data) {
-        console.warn('+ add change listener');
         app.yearSlider.on('change', update);
         update();
         return next(null, root);
@@ -624,7 +622,8 @@
         var value = '/' + app.router.getRoute().join('/');
         list.property('value', value);
 
-        var region = root.selectAll('region-map g.region')
+        var map = root.select('region-map');
+        var region = map.selectAll('g.region')
           .each(function(d) {
             d.href = getFeatureHref(d, '#/locations/%');
             d.selected = d.href === location.hash;
@@ -634,20 +633,29 @@
             return d.selected;
           });
 
+        map.node().zoomTo(null, 400);
+
         region.select('a')
           .attr('xlink:href', function(d) {
             return d.href;
           });
 
-        return next();
+        return next(null, root);
       });
     }
   }
 
   function showState(state, next) {
     console.log('[route] show state:', state);
-    listLocations(function() {
-      next();
+    listLocations(function(error, root) {
+      var map = root.select('region-map');
+      var feature;
+      map.selectAll('g.region')
+        .filter(function(d) { return d.selected; })
+        .each(function(d) { feature = d; });
+
+      map.node().zoomTo(feature, 400);
+      return next(null, root);
     });
   }
 
@@ -987,6 +995,19 @@
     selection.each(function() {
       if (this.loaded) return callback.apply(this, arguments);
       d3.select(this).on('load', callback);
+    });
+  }
+
+  function zoomMapToFeature(selection, feature, duration) {
+    selection.each(function() {
+      var selected;
+      d3.select(this).selectAll('g.region')
+        .each(function(d) {
+          if (d === feature || d.id === feature || d.id === feature.id) {
+            selected = d;
+          }
+        });
+      this.zoomTo(selected, duration);
     });
   }
 

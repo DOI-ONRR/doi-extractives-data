@@ -1,19 +1,26 @@
+nav {
+  margin-bottom: 2em;
+}
+
+nav ul.breadcrumb {
+  font-size: 1.5em;
+}
 
 .module--location region-map svg {
   height: 150px;
 }
 
-#commodities .commodity {
+section.commodity {
   margin: 2em 0;
 }
 
-#commodities.commodity-selected .commodity,
-#commodities .commodity .detail {
+.commodity-selected .list--commodities .commodity,
+.list--commodities .commodity .detail {
   display: none;
 }
 
-#commodities.commodity-selected .commodity.selected,
-#commodities.commodity-selected .commodity.selected .detail {
+.commodity-selected .list--commodities .commodity.selected,
+.commodity-selected .list--commodities .commodity.selected .detail {
   display: block;
 }
 

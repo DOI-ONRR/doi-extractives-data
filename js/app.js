@@ -384,9 +384,10 @@
           .map(stateRevenues);
         // console.log('revenues index:', index);
 
-        sections.append('region-map')
-          .attr('class', 'detail')
-          .on('load', function(d) {
+        var detail = sections.select('.detail');
+
+        detail.select('region-map')
+          .call(whenLoaded, function(d) {
             // console.log('region map:', d);
 
             var revenuesByState = index[d.name];
@@ -860,7 +861,9 @@
       .call(rebind)
       .text(name);
 
-    sections.selectAll('a')
+    // qualify links with an href attribute,
+    // which excludes SVG <a> elements
+    sections.selectAll('a[href]')
       .filter(function() {
         return this.href.indexOf('{{') > -1;
       })
@@ -939,6 +942,13 @@
     return str.toLowerCase()
       .replace(/\s*\([^\)]+\)\s/g, '')
       .replace(/\W+/g, '-');
+  }
+
+  function whenLoaded(selection, callback) {
+    selection.each(function() {
+      if (this.loaded) return callback.apply(this, arguments);
+      d3.select(this).on('load', callback);
+    });
   }
 
 })(this);

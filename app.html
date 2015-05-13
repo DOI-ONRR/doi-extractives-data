@@ -59,7 +59,7 @@
         will be removed at runtime then replaced with one copy for
         each commodity group.
         -->
-        <section class="commodity-template" style="display: none;">
+        <section class="template" style="display: none;">
           <h3><a href="#/commodities/{{ slug }}" class="commodity-title"></a></h3>
           <p>A little something about <span class="commodity-title">this commodity</span>.</p>
           <table class="stats">
@@ -97,9 +97,19 @@
     </section>
 
     <section id="revenue" class="primary container">
+      <section class="list--commodities">
+        <section class="template" style="display: none">
+          <h4 class="commodity-title"></h4>
+        </section>
+      </section>
     </section>
 
     <section id="production" class="primary container">
+      <section class="list--commodities">
+        <section class="template" style="display: none">
+          <h4 class="commodity-title"></h4>
+        </section>
+      </section>
     </section>
 
     <script src="js/app.js"></script>

@@ -718,15 +718,20 @@
       .defer(d3.json, app.dataPath + 'geo/offshore.json')
       .await(function(error, states, offshore) {
         if (error) return done(error);
+        var territories = d3.set(['AS', 'GU', 'PR', 'VI']);
         return done(null, [
           {
             label: 'Onshore',
-            values: states.map(function(d) {
-              return {
-                label: d.name,
-                value: '/locations/onshore/' + d.abbr
-              };
-            })
+            values: states
+              .filter(function(d) {
+                return !territories.has(d.abbr);
+              })
+              .map(function(d) {
+                return {
+                  label: d.name,
+                  value: '/locations/onshore/' + d.abbr
+                };
+              })
           },
           {
             label: 'Offshore',

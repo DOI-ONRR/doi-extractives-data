@@ -28,6 +28,11 @@ if (typeof options.filter === 'object') {
   filters = options.filter;
 }
 
+var id = {};
+if (typeof options.id === 'object') {
+  id = options.id;
+}
+
 var keep = options.keep;
 if (keep && keep !== true && !Array.isArray(keep)) {
   keep = [keep];
@@ -53,7 +58,10 @@ util.readJSON(options._[0], function(error, topology) {
         expr.set('this', d);
         var props = d.properties;
         d.properties = expr(props);
-        console.warn(props, '->', d.properties);
+        if (id[layer]) {
+          d.id = datex(id[layer], d.properties);
+        }
+        console.warn(props, '->', d.id, d.properties);
       });
     } else {
       console.warn('removing layer: "%s"', layer);

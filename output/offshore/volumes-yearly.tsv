@@ -10,9 +10,9 @@ Year	Region	Area	Commodity	Product	Volume	Count
 2004	Gulf	Central Gulf of Mexico	Oil	Oil (bbl)	413668296.09	33
 2004	Gulf	Central Gulf of Mexico	Gas	Flash Gas (mcf)	2718444.89	23
 2004	Gulf	Central Gulf of Mexico	Gas	Gas Lost - Flared or Vented (mcf)	238150.40	3
-2004	Gulf	Central Gulf of Mexico	Other Products	Salt (ton)	33299.00	1
+2004	Gulf	Central Gulf of Mexico	Other	Salt (ton)	33299.00	1
 2004	Gulf	Central Gulf of Mexico	Oil	Other Liquid Hydrocarbons (bbl)	16766.46	1
-2004	Gulf	Central Gulf of Mexico	Other Products	Sulfur (lton)	8761.13	2
+2004	Gulf	Central Gulf of Mexico	Other	Sulfur (lton)	8761.13	2
 2004	Gulf	Central Gulf of Mexico	Geothermal	Geothermal - Commercially Demineralized H2O (cgal)	16451.00	1
 2004	Gulf	Central Gulf of Mexico	Geothermal	Geothermal - Direct Utilization, Other (cgal)	16451.00	1
 2004	Gulf	Eastern Gulf of Mexico	Gas	Flash Gas (mcf)	7962.00	1
@@ -38,7 +38,7 @@ Year	Region	Area	Commodity	Product	Volume	Count
 2004	Pacific	Southern California	Oil	Condensate (bbl)	14588.82	1
 2004	Pacific	Southern California	Oil	Drip or Scrubber Condensate (bbl)	72249.12	1
 2004	Pacific	Southern California	Oil	Oil (bbl)	27341534.92	1
-2004	Pacific	Southern California	Other Products	Sulfur (lton)	4877.45	1
+2004	Pacific	Southern California	Other	Sulfur (lton)	4877.45	1
 2005	Alaska	Beaufort Sea	Oil	Oil (bbl)	3999992.71	1
 2005	Gulf	Central Gulf of Mexico	Gas	Fuel Gas (mcf)	11196479.14	19
 2005	Gulf	Central Gulf of Mexico	Gas	Gas Lost - Flared or Vented (mcf)	272720.92	6
@@ -50,9 +50,9 @@ Year	Region	Area	Commodity	Product	Volume	Count
 2005	Gulf	Central Gulf of Mexico	Oil	Oil (bbl)	371878874.77	32
 2005	Gulf	Central Gulf of Mexico	Gas	Flash Gas (mcf)	1528169.13	23
 2005	Gulf	Central Gulf of Mexico	Oil	Inlet Scrubber (bbl)	15002.95	15
-2005	Gulf	Central Gulf of Mexico	Other Products	Salt (ton)	28603.00	1
+2005	Gulf	Central Gulf of Mexico	Other	Salt (ton)	28603.00	1
 2005	Gulf	Central Gulf of Mexico	Oil	Other Liquid Hydrocarbons (bbl)	9748.20	1
-2005	Gulf	Central Gulf of Mexico	Other Products	Sulfur (lton)	5791.42	1
+2005	Gulf	Central Gulf of Mexico	Other	Sulfur (lton)	5791.42	1
 2005	Gulf	Eastern Gulf of Mexico	Gas	Flash Gas (mcf)	1142.00	1
 2005	Gulf	Eastern Gulf of Mexico	Gas	Processed (Residue) Gas (mcf)	1230824.96	2
 2005	Gulf	Eastern Gulf of Mexico	NGL	Gas Plant Products (gal)	118901.90	1
@@ -76,7 +76,7 @@ Year	Region	Area	Commodity	Product	Volume	Count
 2005	Pacific	Southern California	Oil	Condensate (bbl)	15477.30	1
 2005	Pacific	Southern California	Oil	Drip or Scrubber Condensate (bbl)	79114.28	1
 2005	Pacific	Southern California	Oil	Oil (bbl)	26934880.69	1
-2005	Pacific	Southern California	Other Products	Sulfur (lton)	4026.93	1
+2005	Pacific	Southern California	Other	Sulfur (lton)	4026.93	1
 2006	Alaska	Beaufort Sea	Oil	Oil (bbl)	3367673.19	1
 2006	Gulf	Central Gulf of Mexico	Gas	Fuel Gas (mcf)	9806059.84	17
 2006	Gulf	Central Gulf of Mexico	Gas	Gas Lost - Flared or Vented (mcf)	47632.83	8
@@ -89,8 +89,8 @@ Year	Region	Area	Commodity	Product	Volume	Count
 2006	Gulf	Central Gulf of Mexico	Gas	Flash Gas (mcf)	1635520.80	23
 2006	Gulf	Central Gulf of Mexico	Oil	Inlet Scrubber (bbl)	8737.80	17
 2006	Gulf	Central Gulf of Mexico	Oil	Other Liquid Hydrocarbons (bbl)	114982.30	4
-2006	Gulf	Central Gulf of Mexico	Other Products	Salt (ton)	29258.00	1
-2006	Gulf	Central Gulf of Mexico	Other Products	Sulfur (lton)	3618.85	1
+2006	Gulf	Central Gulf of Mexico	Other	Salt (ton)	29258.00	1
+2006	Gulf	Central Gulf of Mexico	Other	Sulfur (lton)	3618.85	1
 2006	Gulf	Eastern Gulf of Mexico	Gas	Processed (Residue) Gas (mcf)	26827.07	1
 2006	Gulf	Eastern Gulf of Mexico	Gas	Unprocessed (Wet) Gas (mcf)	227874.96	1
 2006	Gulf	Western Gulf of Mexico	Gas	Processed (Residue) Gas (mcf)	496375895.51	15
@@ -110,7 +110,7 @@ Year	Region	Area	Commodity	Product	Volume	Count
 2006	Pacific	Southern California	Oil	Condensate (bbl)	29551.08	1
 2006	Pacific	Southern California	Oil	Drip or Scrubber Condensate (bbl)	52934.84	1
 2006	Pacific	Southern California	Oil	Oil (bbl)	26247777.08	1
-2006	Pacific	Southern California	Other Products	Sulfur (lton)	4616.92	1
+2006	Pacific	Southern California	Other	Sulfur (lton)	4616.92	1
 2007	Alaska	Beaufort Sea	Oil	Oil (bbl)	2475705.54	1
 2007	Gulf	Central Gulf of Mexico	Gas	Unprocessed (Wet) Gas (mcf)	486222220.25	34
 2007	Gulf	Central Gulf of Mexico	Oil	Condensate (bbl)	31135128.69	33
@@ -123,8 +123,8 @@ Year	Region	Area	Commodity	Product	Volume	Count
 2007	Gulf	Central Gulf of Mexico	Gas	Flash Gas (mcf)	1840376.78	22
 2007	Gulf	Central Gulf of Mexico	Oil	Inlet Scrubber (bbl)	37480.23	18
 2007	Gulf	Central Gulf of Mexico	Oil	Other Liquid Hydrocarbons (bbl)	12140.48	6
-2007	Gulf	Central Gulf of Mexico	Other Products	Salt (ton)	24254.00	1
-2007	Gulf	Central Gulf of Mexico	Other Products	Sulfur (lton)	2364.31	1
+2007	Gulf	Central Gulf of Mexico	Other	Salt (ton)	24254.00	1
+2007	Gulf	Central Gulf of Mexico	Other	Sulfur (lton)	2364.31	1
 2007	Gulf	Eastern Gulf of Mexico	Gas	Unprocessed (Wet) Gas (mcf)	45004139.70	4
 2007	Gulf	Eastern Gulf of Mexico	Oil	Condensate (bbl)	13174.71	3
 2007	Gulf	Eastern Gulf of Mexico	Oil	Oil (bbl)	1809.78	1
@@ -145,7 +145,7 @@ Year	Region	Area	Commodity	Product	Volume	Count
 2007	Pacific	Southern California	Oil	Condensate (bbl)	25659.30	1
 2007	Pacific	Southern California	Oil	Drip or Scrubber Condensate (bbl)	38209.96	1
 2007	Pacific	Southern California	Oil	Oil (bbl)	24646653.15	1
-2007	Pacific	Southern California	Other Products	Sulfur (lton)	4429.02	1
+2007	Pacific	Southern California	Other	Sulfur (lton)	4429.02	1
 2008	Alaska	Beaufort Sea	Oil	Oil (bbl)	2923155.90	1
 2008	Gulf	Central Gulf of Mexico	Gas	Processed (Residue) Gas (mcf)	1185058464.27	33
 2008	Gulf	Central Gulf of Mexico	Gas	Unprocessed (Wet) Gas (mcf)	497393644.32	34
@@ -157,9 +157,9 @@ Year	Region	Area	Commodity	Product	Volume	Count
 2008	Gulf	Central Gulf of Mexico	Gas	Gas Lost - Flared or Vented (mcf)	42893.21	8
 2008	Gulf	Central Gulf of Mexico	Gas	Flash Gas (mcf)	1314682.28	24
 2008	Gulf	Central Gulf of Mexico	Oil	Inlet Scrubber (bbl)	65929.99	19
-2008	Gulf	Central Gulf of Mexico	Other Products	Salt (ton)	27030.00	1
+2008	Gulf	Central Gulf of Mexico	Other	Salt (ton)	27030.00	1
 2008	Gulf	Central Gulf of Mexico	Oil	Other Liquid Hydrocarbons (bbl)	6962.95	1
-2008	Gulf	Central Gulf of Mexico	Other Products	Sulfur (lton)	1490.39	1
+2008	Gulf	Central Gulf of Mexico	Other	Sulfur (lton)	1490.39	1
 2008	Gulf	Eastern Gulf of Mexico	Gas	Unprocessed (Wet) Gas (mcf)	136924686.63	3
 2008	Gulf	Eastern Gulf of Mexico	Oil	Condensate (bbl)	36457.93	3
 2008	Gulf	Eastern Gulf of Mexico	Oil	Drip or Scrubber Condensate (bbl)	179.47	1
@@ -183,7 +183,7 @@ Year	Region	Area	Commodity	Product	Volume	Count
 2008	Pacific	Southern California	Oil	Drip or Scrubber Condensate (bbl)	14881.58	1
 2008	Pacific	Southern California	Oil	Inlet Scrubber (bbl)	5544.77	1
 2008	Pacific	Southern California	Oil	Oil (bbl)	24738668.18	1
-2008	Pacific	Southern California	Other Products	Sulfur (lton)	3618.16	1
+2008	Pacific	Southern California	Other	Sulfur (lton)	3618.16	1
 2009	Alaska	Beaufort Sea	Oil	Oil (bbl)	1817256.78	1
 2009	Gulf	Central Gulf of Mexico	Gas	Processed (Residue) Gas (mcf)	1275861543.04	33
 2009	Gulf	Central Gulf of Mexico	Gas	Unprocessed (Wet) Gas (mcf)	482418333.74	33
@@ -195,9 +195,9 @@ Year	Region	Area	Commodity	Product	Volume	Count
 2009	Gulf	Central Gulf of Mexico	Gas	Gas Lost - Flared or Vented (mcf)	58968.52	7
 2009	Gulf	Central Gulf of Mexico	Gas	Flash Gas (mcf)	1951756.57	23
 2009	Gulf	Central Gulf of Mexico	Oil	Inlet Scrubber (bbl)	61849.13	21
-2009	Gulf	Central Gulf of Mexico	Other Products	Salt (ton)	28039.00	1
+2009	Gulf	Central Gulf of Mexico	Other	Salt (ton)	28039.00	1
 2009	Gulf	Central Gulf of Mexico	Oil	Other Liquid Hydrocarbons (bbl)	5469.13	1
-2009	Gulf	Central Gulf of Mexico	Other Products	Sulfur (lton)	233.40	1
+2009	Gulf	Central Gulf of Mexico	Other	Sulfur (lton)	233.40	1
 2009	Gulf	Eastern Gulf of Mexico	Gas	Unprocessed (Wet) Gas (mcf)	184389010.77	4
 2009	Gulf	Eastern Gulf of Mexico	Oil	Condensate (bbl)	64281.87	3
 2009	Gulf	Eastern Gulf of Mexico	Gas	Processed (Residue) Gas (mcf)	349111.24	1
@@ -219,7 +219,7 @@ Year	Region	Area	Commodity	Product	Volume	Count
 2009	Pacific	Southern California	Oil	Condensate (bbl)	20134.20	1
 2009	Pacific	Southern California	Oil	Inlet Scrubber (bbl)	37052.82	1
 2009	Pacific	Southern California	Oil	Oil (bbl)	22525578.23	1
-2009	Pacific	Southern California	Other Products	Sulfur (lton)	3618.56	1
+2009	Pacific	Southern California	Other	Sulfur (lton)	3618.56	1
 2010	Alaska	Beaufort Sea	Oil	Oil (bbl)	1331549.26	1
 2010	Gulf	Central Gulf of Mexico	Gas	Flash Gas (mcf)	3765127.69	26
 2010	Gulf	Central Gulf of Mexico	Gas	Processed (Residue) Gas (mcf)	1122033653.67	32
@@ -233,8 +233,8 @@ Year	Region	Area	Commodity	Product	Volume	Count
 2010	Gulf	Central Gulf of Mexico	Oil	Inlet Scrubber (bbl)	149859.33	24
 2010	Gulf	Central Gulf of Mexico	Oil	Fuel Oil (bbl)	5.27	1
 2010	Gulf	Central Gulf of Mexico	Oil	Other Liquid Hydrocarbons (bbl)	6298.34	3
-2010	Gulf	Central Gulf of Mexico	Other Products	Salt (ton)	26761.00	1
-2010	Gulf	Central Gulf of Mexico	Other Products	Sulfur (lton)	646.16	1
+2010	Gulf	Central Gulf of Mexico	Other	Salt (ton)	26761.00	1
+2010	Gulf	Central Gulf of Mexico	Other	Sulfur (lton)	646.16	1
 2010	Gulf	Eastern Gulf of Mexico	Gas	Unprocessed (Wet) Gas (mcf)	129605200.61	4
 2010	Gulf	Eastern Gulf of Mexico	Oil	Condensate (bbl)	36953.42	3
 2010	Gulf	Eastern Gulf of Mexico	Oil	Oil (bbl)	364.57	1
@@ -256,7 +256,7 @@ Year	Region	Area	Commodity	Product	Volume	Count
 2010	Pacific	Southern California	Oil	Condensate (bbl)	16665.54	1
 2010	Pacific	Southern California	Oil	Inlet Scrubber (bbl)	48855.71	1
 2010	Pacific	Southern California	Oil	Oil (bbl)	21661488.06	1
-2010	Pacific	Southern California	Other Products	Sulfur (lton)	3772.13	1
+2010	Pacific	Southern California	Other	Sulfur (lton)	3772.13	1
 2011	Alaska	Beaufort Sea	Oil	Oil (bbl)	1039202.76	1
 2011	Gulf	Central Gulf of Mexico	Gas	Flash Gas (mcf)	2296430.16	26
 2011	Gulf	Central Gulf of Mexico	Gas	Processed (Residue) Gas (mcf)	946654152.64	33
@@ -268,9 +268,9 @@ Year	Region	Area	Commodity	Product	Volume	Count
 2011	Gulf	Central Gulf of Mexico	Gas	Fuel Gas (mcf)	13444712.76	18
 2011	Gulf	Central Gulf of Mexico	Gas	Gas Lost - Flared or Vented (mcf)	668871.26	10
 2011	Gulf	Central Gulf of Mexico	Oil	Inlet Scrubber (bbl)	141723.62	24
-2011	Gulf	Central Gulf of Mexico	Other Products	Salt (ton)	19601.00	1
+2011	Gulf	Central Gulf of Mexico	Other	Salt (ton)	19601.00	1
 2011	Gulf	Central Gulf of Mexico	Oil	Other Liquid Hydrocarbons (bbl)	6703.11	1
-2011	Gulf	Central Gulf of Mexico	Other Products	Sulfur (lton)	101.48	1
+2011	Gulf	Central Gulf of Mexico	Other	Sulfur (lton)	101.48	1
 2011	Gulf	Eastern Gulf of Mexico	Gas	Unprocessed (Wet) Gas (mcf)	106921755.18	4
 2011	Gulf	Eastern Gulf of Mexico	Oil	Condensate (bbl)	27061.07	3
 2011	Gulf	Eastern Gulf of Mexico	Oil	Drip or Scrubber Condensate (bbl)	268.00	1
@@ -291,7 +291,7 @@ Year	Region	Area	Commodity	Product	Volume	Count
 2011	Pacific	Southern California	Oil	Condensate (bbl)	13528.38	1
 2011	Pacific	Southern California	Oil	Inlet Scrubber (bbl)	37174.42	1
 2011	Pacific	Southern California	Oil	Oil (bbl)	19781761.78	1
-2011	Pacific	Southern California	Other Products	Sulfur (lton)	3334.25	1
+2011	Pacific	Southern California	Other	Sulfur (lton)	3334.25	1
 2012	Alaska	Beaufort Sea	Oil	Oil (bbl)	613535.68	1
 2012	Gulf	Central Gulf of Mexico	Gas	Flash Gas (mcf)	1606114.20	28
 2012	Gulf	Central Gulf of Mexico	Gas	Processed (Residue) Gas (mcf)	752527908.84	36
@@ -303,9 +303,9 @@ Year	Region	Area	Commodity	Product	Volume	Count
 2012	Gulf	Central Gulf of Mexico	Gas	Fuel Gas (mcf)	12911859.72	19
 2012	Gulf	Central Gulf of Mexico	Gas	Gas Lost - Flared or Vented (mcf)	501224.38	10
 2012	Gulf	Central Gulf of Mexico	Oil	Inlet Scrubber (bbl)	154150.78	26
-2012	Gulf	Central Gulf of Mexico	Other Products	Salt (ton)	20410.00	1
+2012	Gulf	Central Gulf of Mexico	Other	Salt (ton)	20410.00	1
 2012	Gulf	Central Gulf of Mexico	Oil	Other Liquid Hydrocarbons (bbl)	7622.17	3
-2012	Gulf	Central Gulf of Mexico	Other Products	Sulfur (lton)	81.30	1
+2012	Gulf	Central Gulf of Mexico	Other	Sulfur (lton)	81.30	1
 2012	Gulf	Eastern Gulf of Mexico	Oil	Condensate (bbl)	4889.11	3
 2012	Gulf	Eastern Gulf of Mexico	Gas	Unprocessed (Wet) Gas (mcf)	73230641.22	3
 2012	Gulf	Eastern Gulf of Mexico	Gas	Processed (Residue) Gas (mcf)	14242.86	1
@@ -325,7 +325,7 @@ Year	Region	Area	Commodity	Product	Volume	Count
 2012	Pacific	Southern California	Oil	Condensate (bbl)	15315.66	1
 2012	Pacific	Southern California	Oil	Inlet Scrubber (bbl)	27166.36	1
 2012	Pacific	Southern California	Oil	Oil (bbl)	17589177.19	1
-2012	Pacific	Southern California	Other Products	Sulfur (lton)	2582.94	1
+2012	Pacific	Southern California	Other	Sulfur (lton)	2582.94	1
 2013	Alaska	Beaufort Sea	Oil	Oil (bbl)	652367.69	1
 2013	Gulf	Central Gulf of Mexico	Gas	Processed (Residue) Gas (mcf)	683868065.97	35
 2013	Gulf	Central Gulf of Mexico	Gas	Unprocessed (Wet) Gas (mcf)	229869010.69	36
@@ -337,9 +337,9 @@ Year	Region	Area	Commodity	Product	Volume	Count
 2013	Gulf	Central Gulf of Mexico	Gas	Fuel Gas (mcf)	13516976.22	25
 2013	Gulf	Central Gulf of Mexico	Gas	Gas Lost - Flared or Vented (mcf)	635439.72	10
 2013	Gulf	Central Gulf of Mexico	Oil	Inlet Scrubber (bbl)	225010.67	24
-2013	Gulf	Central Gulf of Mexico	Other Products	Salt (ton)	26546.00	1
+2013	Gulf	Central Gulf of Mexico	Other	Salt (ton)	26546.00	1
 2013	Gulf	Central Gulf of Mexico	Oil	Other Liquid Hydrocarbons (bbl)	6481.36	1
-2013	Gulf	Central Gulf of Mexico	Other Products	Sulfur (lton)	69.22	1
+2013	Gulf	Central Gulf of Mexico	Other	Sulfur (lton)	69.22	1
 2013	Gulf	Eastern Gulf of Mexico	Oil	Condensate (bbl)	5719.85	3
 2013	Gulf	Eastern Gulf of Mexico	Gas	Unprocessed (Wet) Gas (mcf)	35533846.84	3
 2013	Gulf	Western Gulf of Mexico	Gas	Processed (Residue) Gas (mcf)	155062766.63	15
@@ -359,4 +359,4 @@ Year	Region	Area	Commodity	Product	Volume	Count
 2013	Pacific	Southern California	Oil	Condensate (bbl)	14306.76	1
 2013	Pacific	Southern California	Oil	Inlet Scrubber (bbl)	30890.96	1
 2013	Pacific	Southern California	Oil	Oil (bbl)	18623737.42	1
-2013	Pacific	Southern California	Other Products	Sulfur (lton)	2900.14	1
+2013	Pacific	Southern California	Other	Sulfur (lton)	2900.14	1

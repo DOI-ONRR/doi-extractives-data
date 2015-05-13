@@ -8,23 +8,36 @@ Year	Commodity	Type	Revenue
 2004	Oil	Royalties	1657769864.73
 2004	Oil & Gas	Bonus	697800203.99
 2004	Coal	Rents	1325555.92
-2004	Other Products	Royalties	33639388.13999999
+2004	Sulfur	Royalties	59309.58
 2004	Hardrock	Other Revenues	183159.47
 2004	Hardrock	Rents	23901.870000000003
 2004	Quartz	Rents	20
 2004	Sodium	Other Revenues	366574.67000000004
 2004	Sodium	Rents	-5288.27
+2004	Salt	Royalties	196706.35
 2004	Geothermal	Other Royalties	7540696.97
 2004	Geothermal	Rents	703700.49
 2004	Geothermal	Royalties	10552900.180000002
 2004	Geothermal	Other Revenues	14485.86
+2004	Anhydrous Sodium Sulfate	Royalties	191938.19999999998
+2004	Borax-Anhydrous	Royalties	30980.53
+2004	Borax-Decahydrate	Royalties	109756.82
+2004	Borax-Pentahydrate	Royalties	100538.20999999999
+2004	Boric Acid	Royalties	300944.94999999995
+2004	Boric Oxide	Royalties	-328.08
+2004	Salt-Waste	Royalties	-52.69
+2004	Soda Ash-Granular	Royalties	-449974.48000000004
 2004	Coal	Bonus	161850838.04
+2004	Carbon Dioxide Gas	Royalties	13720243.120000001
 2004	Coal	Royalties	436208997.9499999
+2004	Sodium Bicarbonate Animal Feed	Royalties	-28843.19
 2004	Phosphate	Other Revenues	167428
 2004	Phosphate	Rents	-4575.5
+2004	Phosphate Raw Ore	Royalties	3451909.93
 2004	Gold	Rents	39
 2004	Phosphate	Bonus	563300
 2004	Gemstones	Rents	320
+2004	Helium	Royalties	-21365.670000000002
 2004	Coal	Other Revenues	-1464922.06
 2004	Copper	Other Revenues	13055
 2004	Copper	Rents	667.5
@@ -36,8 +49,12 @@ Year	Commodity	Type	Revenue
 2004	Sand & Gravel	Rents	-320
 2004	Tar Sands	Rents	12190
 2004	Clay	Other Revenues	545.3
+2004	Clay	Royalties	13124.09
+2004	Potash	Royalties	832377.8400000001
 2004	Gilsonite	Other Revenues	21825
 2004	Gilsonite	Rents	5299
+2004	Gilsonite	Royalties	334416.96
+2004	Purge Liquor	Royalties	37024.87
 2005	Oil & Gas	Other Revenues	4566624.85
 2005	Gas	Other Royalties	1126252.1100000003
 2005	Oil & Gas	Other Royalties	87183635.5
@@ -46,7 +63,7 @@ Year	Commodity	Type	Revenue
 2005	NGL	Royalties	265640089.28000003
 2005	Oil	Royalties	2715709597.5
 2005	Coal	Rents	886794.78
-2005	Other Products	Royalties	53564758.67
+2005	Sulfur	Royalties	31705.270000000008
 2005	Hardrock	Rents	-11800.75
 2005	Coal	Bonus	433083972.92
 2005	Oil & Gas	Bonus	590535316.25
@@ -56,6 +73,15 @@ Year	Commodity	Type	Revenue
 2005	Geothermal	Rents	763994.24
 2005	Geothermal	Royalties	11674341.030000001
 2005	Geothermal	Other Revenues	11605.07
+2005	Anhydrous Sodium Sulfate	Royalties	301048.67
+2005	Borax-Anhydrous	Royalties	1541.8100000000013
+2005	Borax-Decahydrate	Royalties	103261.53
+2005	Borax-Pentahydrate	Royalties	150787.69
+2005	Boric Acid	Royalties	336003.36
+2005	Salt-Waste	Royalties	28436.93
+2005	Soda Ash-Granular	Royalties	-719067.18
+2005	Sodium Bi-Carbonate	Royalties	1265407.0799999998
+2005	Carbon Dioxide Gas	Royalties	19821383.5
 2005	Oil Shale	Other Revenues	30000
 2005	Coal	Royalties	453317171.8999999
 2005	Phosphate	Rents	-24794
@@ -68,11 +94,24 @@ Year	Commodity	Type	Revenue
 2005	Coal	Other Royalties	3001515.25
 2005	Potassium	Other Revenues	259890.37
 2005	Potassium	Rents	37376.5
+2005	Granulated Langeinite	Royalties	1151.36
+2005	Langbeinite-Coarse	Royalties	30464.73
+2005	Langbeinite-Granular	Royalties	12767.92
+2005	Langbeinite-Special Std	Royalties	106115.94
+2005	Langbeinite-Standard	Royalties	67215.96
+2005	Muriate Of Potash-Granular	Royalties	1073853.1300000001
+2005	Muriate Of Potash-Standard	Royalties	119061.78
+2005	Potassium Sulphate Special Std	Royalties	170.6
+2005	Potassium Sulphate-Granular	Royalties	1069.72
+2005	Potassium Sulphate-Standard	Royalties	2552.08
 2005	Geothermal	Other Royalties	-22709
 2005	Sand & Gravel	Rents	-1280
+2005	Sand/Gravel	Royalties	-93570.02
 2005	Tar Sands	Rents	12190
 2005	Clay	Rents	468
 2005	Gilsonite	Rents	1922
+2005	Gilsonite	Royalties	347903.04
+2005	Helium	Royalties	9562.66
 2006	Oil & Gas	Other Revenues	5674784.41
 2006	Oil	Other Revenues	-1130.17
 2006	Gas	Other Royalties	712412.94
@@ -82,7 +121,7 @@ Year	Commodity	Type	Revenue
 2006	NGL	Royalties	299449283.8
 2006	Oil	Royalties	4280594454.4400005
 2006	Coal	Rents	1274023.2
-2006	Other Products	Royalties	74394519.52999999
+2006	Sulfur	Royalties	19105.950000000004
 2006	Hardrock	Rents	18995.989999999998
 2006	Coal	Bonus	422005731.2899999
 2006	Oil & Gas	Bonus	1491016269.5
@@ -94,24 +133,41 @@ Year	Commodity	Type	Revenue
 2006	Geothermal	Other Royalties	-125000
 2006	Oil & Gas	Royalties	-18952.529999999995
 2006	Geothermal	Other Revenues	13448.57
+2006	Anhydrous Sodium Sulfate	Royalties	206974.13
+2006	Borax-Decahydrate	Royalties	32320.2
+2006	Borax-Pentahydrate	Royalties	23191.6
+2006	Boric Acid	Royalties	157340.05000000002
+2006	Soda Ash-Granular	Royalties	-165563.39
 2006	Sodium	Other Revenues	82151
+2006	Carbon Dioxide Gas	Royalties	25001687.26
 2006	Coal	Royalties	529095911.31
 2006	Oil Shale	Other Revenues	20000
 2006	Oil Shale	Rents	15264
 2006	Phosphate	Rents	8365
 2006	Phosphate	Other Revenues	135186
 2006	Gemstones	Rents	80
+2006	Helium	Royalties	-291.56
 2006	Coal	Other Revenues	-3976732.12
 2006	Copper	Other Revenues	26110
 2006	Copper	Rents	2611
+2006	Copper	Royalties	-10648.34
 2006	Potassium	Bonus	9638.54
 2006	Potassium	Other Revenues	508972.01
 2006	Potassium	Rents	8460
+2006	Granulated Langeinite	Royalties	277.14
+2006	Langbeinite-Special Std	Royalties	1001.67
+2006	Muriate Of Potash-Standard	Royalties	1119400.55
+2006	Potash	Royalties	1346191.0699999998
+2006	Potassium Sulphate Special Std	Royalties	114.87
 2006	NGL	Other Royalties	511326.74
 2006	Oil	Other Royalties	-10004430.270000003
+2006	Sand/Gravel	Royalties	2.4
 2006	Asphalt	Rents	959
 2006	Clay	Rents	314
 2006	Gilsonite	Rents	1489.5
+2006	Asbestos	Royalties	715.53
+2006	Borrow Sand & Gravel	Royalties	19284.43
+2006	Sodium Bi-Carbonate	Royalties	1296264.2799999998
 2007	Oil & Gas	Other Revenues	5666657.47
 2007	Gas	Other Royalties	3187313.62
 2007	Oil & Gas	Other Royalties	109040209.82000001
@@ -121,7 +177,7 @@ Year	Commodity	Type	Revenue
 2007	Oil	Royalties	4406980582.48
 2007	Oil & Gas	Bonus	784974781.5
 2007	Coal	Rents	1086849.03
-2007	Other Products	Royalties	67551268.33
+2007	Sulfur	Royalties	68086.98000000001
 2007	Coal	Bonus	350727078.08000004
 2007	Hardrock	Rents	3382
 2007	Hardrock	Other Revenues	42068.9
@@ -131,9 +187,11 @@ Year	Commodity	Type	Revenue
 2007	Geothermal	Bonus	25133059
 2007	Geothermal	Other Revenues	25828.5
 2007	Sodium	Bonus	120
+2007	Carbon Dioxide Gas	Royalties	23659940.970000003
 2007	Coal	Royalties	590181172.74
 2007	Coal	Other Revenues	-2864327.55
 2007	Sodium	Other Revenues	103670.88
+2007	Sodium Bi-Carbonate	Royalties	388977.66000000003
 2007	Phosphate	Rents	-7150
 2007	Phosphate	Other Revenues	188151
 2007	Gemstones	Rents	80
@@ -141,11 +199,21 @@ Year	Commodity	Type	Revenue
 2007	Potassium	Bonus	5559.75
 2007	Oil	Other Royalties	6683918.180000001
 2007	Potassium	Rents	-698.25
+2007	Granulated Langeinite	Royalties	-277.14
+2007	Langbeinite-Special Std	Royalties	-592.38
+2007	Langbeinite-Standard	Royalties	-0.36
+2007	Muriate Of Potash-Standard	Royalties	1451918.23
+2007	Salt	Royalties	219730.82
 2007	Coal	Other Royalties	1134366.3
 2007	Tar Sands	Rents	24380
 2007	Potassium	Other Revenues	176917.82
 2007	Clay	Rents	314
+2007	Magnesium Chloride Brine	Royalties	18755.5
+2007	Manure Salts	Royalties	10140.98
+2007	Muriate Of Potash-Coarse	Royalties	-1873.15
 2007	Gilsonite	Rents	2128
+2007	Purge Liquor	Royalties	43998.91
+2007	Soda Ash-Granular	Royalties	7508.38
 2008	Oil & Gas	Other Revenues	6893550.58
 2008	Gas	Other Royalties	1781318.72
 2008	Oil & Gas	Other Royalties	2794882.820000004
@@ -154,11 +222,12 @@ Year	Commodity	Type	Revenue
 2008	NGL	Royalties	547945288.8100001
 2008	Oil	Royalties	5827451052.650001
 2008	Coal	Rents	1283352.5899999999
-2008	Other Products	Royalties	109614410.64000002
+2008	Sulfur	Royalties	1159223.15
 2008	Hardrock	Other Revenues	35209.46
 2008	Oil & Gas	Bonus	9515461814.57
 2008	Coal	Bonus	436111592.67
 2008	Hardrock	Rents	-18737.550000000003
+2008	Quartz Crystal	Royalties	2467.0699999999997
 2008	Geothermal	Rents	1232817.2100000002
 2008	Sodium	Rents	-44793.51
 2008	Geothermal	Royalties	14818317.1
@@ -167,24 +236,30 @@ Year	Commodity	Type	Revenue
 2008	Sodium	Bonus	120
 2008	Hot Springs	Rents	33
 2008	Coal	Royalties	701508400.05
+2008	Carbon Dioxide Gas	Royalties	59072220.89999999
 2008	Sodium	Other Revenues	457571.89999999997
 2008	Phosphate	Rents	11507
 2008	Phosphate	Other Revenues	157144
+2008	Phosphate Concentrate	Royalties	1570.27
 2008	Garnet	Rents	120
 2008	Gemstones	Rents	320
 2008	Hardrock	Bonus	1147
 2008	Coal	Other Revenues	799010.19
 2008	Copper	Other Revenues	26110
+2008	Lead Concentrate	Royalties	11452791.34
 2008	Potassium	Bonus	787103.75
 2008	Potassium	Other Revenues	561946.21
 2008	Oil	Other Royalties	4165070.78
 2008	Potassium	Rents	91871.25
+2008	Brine Barrels	Royalties	19444.6
 2008	Geothermal	Bonus	27992464.000000004
+2008	Potash	Royalties	596517.93
 2008	Asphalt	Rents	959
 2008	Tar Sands	Rents	7679.67
 2008	Clay	Rents	314
 2008	Gilsonite	Other Revenues	3687
 2008	Gilsonite	Rents	6523.5
+2008	Gilsonite	Royalties	1168798.99
 2009	Oil & Gas	Other Revenues	4853927.390000001
 2009	Gas	Other Royalties	1054968.56
 2009	Oil & Gas	Other Royalties	-2509854.7400000016
@@ -193,7 +268,7 @@ Year	Commodity	Type	Revenue
 2009	NGL	Royalties	234256619.95999998
 2009	Oil	Royalties	2894540448.7
 2009	Oil & Gas	Bonus	1255452529.69
-2009	Other Products	Royalties	104838302.30999999
+2009	Sulfur	Royalties	7089648.91
 2009	Hardrock	Other Revenues	36484.1
 2009	Coal	Bonus	381621262.26
 2009	Coal	Rents	1276624.5499999998
@@ -205,13 +280,16 @@ Year	Commodity	Type	Revenue
 2009	Geothermal	Royalties	10362146.02
 2009	Sodium	Bonus	1416
 2009	Sodium	Other Revenues	52073.98999999999
+2009	Carbon Dioxide Gas	Royalties	39636041.72
 2009	Coal	Royalties	691920216.8100001
 2009	Phosphate	Other Revenues	135039
 2009	Phosphate	Rents	-1441
+2009	Helium	Royalties	20.06
 2009	Copper	Other Revenues	26110
 2009	Potassium	Bonus	23760
 2009	Potassium	Other Revenues	350938.75
 2009	Geothermal	Other Revenues	-27029.76
+2009	Potash	Royalties	6829865.56
 2009	Asphalt	Rents	959
 2009	Tar Sands	Rents	7732
 2009	Limestone	Rents	240
@@ -226,7 +304,7 @@ Year	Commodity	Type	Revenue
 2010	NGL	Royalties	428131189.97
 2010	Oil	Royalties	5036206829.049999
 2010	Oil & Gas	Bonus	1047068867.0799999
-2010	Other Products	Royalties	105936705.00999999
+2010	Sulfur	Royalties	376857.31
 2010	Hardrock	Other Revenues	39552.770000000004
 2010	Coal	Rents	1349863.3499999999
 2010	Coal	Royalties	762300666.0200001
@@ -239,6 +317,7 @@ Year	Commodity	Type	Revenue
 2010	Sodium	Bonus	120
 2010	Sodium	Other Revenues	154421.44999999998
 2010	Geothermal	Bonus	2772303
+2010	Carbon Dioxide Gas	Royalties	43930385.17999999
 2010	Coal	Bonus	109259486.55
 2010	Coal	Other Royalties	82870.55
 2010	Phosphate	Rents	-3650
@@ -248,6 +327,7 @@ Year	Commodity	Type	Revenue
 2010	Coal	Other Revenues	3808838.6799999997
 2010	Copper	Other Revenues	26110
 2010	Potassium	Other Revenues	201397.97
+2010	Salt	Royalties	255402.42
 2010	Oil & Gas	Royalties	-11.03
 2010	Asphalt	Rents	-2397.5
 2010	Tar Sands	Rents	7732
@@ -255,6 +335,8 @@ Year	Commodity	Type	Revenue
 2010	Clay	Rents	154
 2010	Gilsonite	Bonus	1500
 2010	Gilsonite	Rents	1120.5
+2010	Purge Liquor	Royalties	71710.15999999999
+2010	Soda Ash	Royalties	14300612.49
 2011	Oil & Gas	Other Revenues	5760706.180000002
 2011	Gas	Other Royalties	467940.87
 2011	Oil & Gas	Other Royalties	58791626.650000006
@@ -263,7 +345,7 @@ Year	Commodity	Type	Revenue
 2011	Oil	Royalties	6424132283.54
 2011	Oil & Gas	Bonus	327336225.24
 2011	NGL	Royalties	569734969.7
-2011	Other Products	Royalties	131968533.73999998
+2011	Sulfur	Royalties	1889815.54
 2011	Hardrock	Rents	-1448.5
 2011	Coal	Rents	1317319.27
 2011	Hardrock	Other Revenues	40478.05
@@ -275,7 +357,9 @@ Year	Commodity	Type	Revenue
 2011	Geothermal	Other Revenues	9899.600000000002
 2011	Sodium	Bonus	120
 2011	Geothermal	Bonus	432591
+2011	Helium	Royalties	90.87
 2011	Coal	Bonus	246413527.16
+2011	Carbon Dioxide Gas	Royalties	51378771.3
 2011	NGL	Other Royalties	80492.6
 2011	Sodium	Other Revenues	184332.34
 2011	Oil Shale	Rents	1252
@@ -284,12 +368,14 @@ Year	Commodity	Type	Revenue
 2011	Phosphate	Other Revenues	160807
 2011	Oil	Other Royalties	872315.6399999997
 2011	Copper	Other Revenues	26110
+2011	Salt	Royalties	305666.61
 2011	Geothermal	Other Royalties	30070
 2011	Coal	Royalties	786436238.3500001
 2011	Potassium	Other Revenues	304066.4
 2011	Potassium	Bonus	20962776.73
 2011	Clay	Rents	314
 2011	Gilsonite	Rents	-1329.5
+2011	Soda Ash	Royalties	26135662.64
 2012	Oil & Gas	Other Revenues	6227104.01
 2012	Gas	Other Royalties	619581.02
 2012	Oil & Gas	Other Royalties	22067402.770000003
@@ -298,7 +384,7 @@ Year	Commodity	Type	Revenue
 2012	Oil	Royalties	6631392919.950001
 2012	Oil & Gas	Bonus	2272937544.98
 2012	NGL	Royalties	549823574.92
-2012	Other Products	Royalties	169719221.83000004
+2012	Sulfur	Royalties	2034092.0299999998
 2012	Hardrock	Rents	10230
 2012	Coal	Rents	1380223.2799999998
 2012	Hardrock	Other Revenues	46501.96
@@ -309,7 +395,9 @@ Year	Commodity	Type	Revenue
 2012	Geothermal	Royalties	11853626.24
 2012	Geothermal	Other Revenues	12621.36
 2012	Sodium	Bonus	-480
+2012	Helium	Royalties	59.16
 2012	Coal	Bonus	556656544.4300001
+2012	Carbon Dioxide Gas	Royalties	62850533.699999996
 2012	Geothermal	Bonus	72138
 2012	Oil Shale	Rents	2180
 2012	Phosphate	Other Revenues	138052
@@ -326,6 +414,7 @@ Year	Commodity	Type	Revenue
 2012	Potassium	Other Revenues	328069.62
 2012	Clay	Rents	-6
 2012	Gilsonite	Rents	-3201.5
+2012	Soda Ash	Royalties	43974500.64
 2013	Oil & Gas	Other Revenues	28564681.670000006
 2013	Gas	Other Royalties	255385.11000000002
 2013	Oil & Gas	Other Royalties	7324671.220000001
@@ -335,13 +424,15 @@ Year	Commodity	Type	Revenue
 2013	Oil	Royalties	7030423790.640001
 2013	Oil & Gas	Bonus	1614412777.25
 2013	NGL	Royalties	398273401.3400001
-2013	Other Products	Royalties	159814167.67000002
+2013	Sulfur	Royalties	484169.48
 2013	Hardrock	Other Revenues	37845.55
 2013	Coal	Rents	1163029.02
 2013	Hardrock	Rents	20420
 2013	Geothermal	Royalties	12340958.160000002
 2013	Sodium	Rents	27486.5
+2013	Helium	Royalties	67.21000000000001
 2013	Coal	Bonus	460039881.79
+2013	Carbon Dioxide Gas	Royalties	63526560.239999995
 2013	Sodium	Other Revenues	45103.979999999996
 2013	Oil Shale	Rents	1876
 2013	Potassium	Rents	77372
@@ -350,6 +441,7 @@ Year	Commodity	Type	Revenue
 2013	Hardrock	Royalties	3.28
 2013	Copper	Other Revenues	26110
 2013	Copper	Rents	-2611
+2013	Lead Concentrate	Royalties	7330636.829999999
 2013	Geothermal	Bonus	96344
 2013	Geothermal	Other Revenues	13180.33
 2013	Potassium	Bonus	504944
@@ -357,34 +449,288 @@ Year	Commodity	Type	Revenue
 2013	Clay	Rents	314
 2013	Gilsonite	Rents	1826.5
 2013	NGL	Other Royalties	-50617.87
+2004	Quartz Crystal	Royalties	235.5
+2004	Soda Ash	Royalties	9072418.71
+2004	Sodium Bi-Carbonate	Royalties	793907.94
+2004	Carbon Dioxide	Royalties	241
+2004	Copper Concentrate	Royalties	33259.1
+2004	Lead Concentrate	Royalties	715383.02
+2004	Zinc Concentrate	Royalties	62744.170000000006
+2004	Langbeinite	Royalties	1914818.07
+2004	Muriate Of Potash-Granular	Royalties	947720.34
+2004	Muriate Of Potash-Standard	Royalties	387036.62
+2004	Potassium Sulphate-Standard	Royalties	31802.33
+2004	Brine Barrels	Royalties	1732.99
+2004	Sand/Gravel	Royalties	465124.8
+2004	Magnesium Chloride Brine	Royalties	39046.77
+2004	Manure Salts	Royalties	6944.7
+2004	Limestone	Royalties	59664.73
+2004	Sodium Sesquicarbonate	Royalties	207108.66
+2004	Trona Ore	Royalties	18046.05
+2005	Clay	Royalties	14227.92
+2005	Quartz Crystal	Royalties	345.85
+2005	Salt	Royalties	223582.01
+2005	Soda Ash	Royalties	18090948.490000002
+2005	Phosphate Raw Ore	Royalties	3823926.5
+2005	Gold	Royalties	924.81
+2005	Copper Concentrate	Royalties	495341.78
+2005	Lead Concentrate	Royalties	3604181.9200000004
+2005	Zinc Concentrate	Royalties	1005243.5
 2005	Potassium	Other Royalties	299039.46
+2005	Langbeinite	Royalties	1562537.35
+2005	Potash	Royalties	1219604.5
+2005	Brine Barrels	Royalties	166.67
 2005	Clay	Other Revenues	782.43
+2005	Magnesium Chloride Brine	Royalties	14362.42
+2005	Manure Salts	Royalties	11421.28
 2005	Gilsonite	Other Revenues	11151
+2005	Limestone	Royalties	21419.75
+2005	Purge Liquor	Royalties	69151.97
+2005	Sodium Bisulfite	Royalties	3458.54
+2005	Sodium Decahydrate	Royalties	273.44
+2005	Sodium Sesquicarbonate	Royalties	280365.88
+2005	Sulfide	Royalties	45802.5
+2005	Trona Ore	Royalties	75834.23
+2006	Clay	Royalties	23336.55
+2006	Quartz Crystal	Royalties	267
+2006	Salt	Royalties	308582.95
+2006	Borax-Anhydrous	Royalties	-1956.91
+2006	Soda Ash	Royalties	27398101.099999998
+2006	Phosphate Raw Ore	Royalties	2065893.8800000001
+2006	Gold	Royalties	3464.85
+2006	Copper Concentrate	Royalties	1370471.54
+2006	Lead Concentrate	Royalties	5887501.16
+2006	Zinc Concentrate	Royalties	3100687.25
+2006	Leonardite	Royalties	13538.71
+2006	Langbeinite	Royalties	1845334.99
+2006	Muriate Of Potash-Granular	Royalties	1702932.25
+2006	Sylvite-Raw Ore	Royalties	167.6
+2006	Brine Barrels	Royalties	2061.3
 2006	Coal	Other Royalties	1213214.45
 2006	Clay	Other Revenues	163.94
+2006	Magnesium Chloride Brine	Royalties	20113.91
+2006	Manure Salts	Royalties	11526.75
 2006	Gilsonite	Other Revenues	10677
+2006	Gilsonite	Royalties	499699.59
+2006	Limestone	Royalties	31648.77
+2006	Purge Liquor	Royalties	99589.28
+2006	Sodium Bisulfite	Royalties	16996.93
+2006	Sodium Decahydrate	Royalties	1842.91
+2006	Sodium Sesquicarbonate	Royalties	299799.37
+2006	Sulfide	Royalties	271208.22
+2006	Trona Ore	Royalties	371513.16
+2007	Clay	Royalties	18198.97
+2007	Quartz Crystal	Royalties	323.8
+2007	Anhydrous Sodium Sulfate	Royalties	436978.36
+2007	Borax-Decahydrate	Royalties	64234.9
+2007	Borax-Pentahydrate	Royalties	85558.19
+2007	Boric Acid	Royalties	270336.55
+2007	Soda Ash	Royalties	11909233.41
+2007	Phosphate Raw Ore	Royalties	2152071.29
+2007	Gold	Royalties	1445.4
+2007	Copper Concentrate	Royalties	1084225.76
+2007	Lead Concentrate	Royalties	12989839.069999998
+2007	Zinc Concentrate	Royalties	3687687.9
+2007	Langbeinite	Royalties	3073318.3
+2007	Muriate Of Potash-Granular	Royalties	2435926.59
+2007	Potash	Royalties	2376581.89
+2007	Sylvite-Raw Ore	Royalties	1898.45
+2007	Brine Barrels	Royalties	625.37
 2007	Clay	Other Revenues	462
 2007	Gilsonite	Other Revenues	7911
+2007	Gilsonite	Royalties	608423.5
+2007	Limestone	Royalties	75816.59
+2007	Sodium Bisulfite	Royalties	3378.06
+2007	Sodium Sesquicarbonate	Royalties	248473.5
+2007	Sulfide	Royalties	65909.39
+2007	Trona Ore	Royalties	93528.53
+2008	Wavellite	Royalties	466.8
+2008	Salt	Royalties	161331.29
+2008	Anhydrous Sodium Sulfate	Royalties	226717.42
+2008	Borax-Decahydrate	Royalties	39894.95
+2008	Borax-Pentahydrate	Royalties	53841.33
+2008	Boric Acid	Royalties	173771.61
+2008	Soda Ash	Royalties	18679005
+2008	Sodium Bi-Carbonate	Royalties	403236.89
+2008	Phosphate Raw Ore	Royalties	2485359.85
+2008	Gold	Royalties	731.3
+2008	Copper Concentrate	Royalties	1055500.81
+2008	Zinc Concentrate	Royalties	1652714.3900000001
 2008	Coal	Other Royalties	1306685.69
+2008	Langbeinite	Royalties	1701323.24
+2008	Muriate Of Potash-Granular	Royalties	6861890.4
+2008	Muriate Of Potash-Standard	Royalties	1916491.69
+2008	Sylvite-Raw Ore	Royalties	5365.56
 2008	Clay	Other Revenues	942
+2008	Clay	Royalties	3746.92
+2008	Magnesium Chloride Brine	Royalties	26788.93
+2008	Manure Salts	Royalties	11779.82
+2008	Limestone	Royalties	106657.16
+2008	Purge Liquor	Royalties	57995.71
+2008	Sodium Bisulfite	Royalties	6094.65
+2008	Sodium Sesquicarbonate	Royalties	186506.81
+2008	Sulfide	Royalties	111794.17
+2008	Trona Ore	Royalties	211259.45
 2009	Coal	Other Revenues	-752162.81
+2009	Wavellite	Royalties	777.36
+2009	Quartz Crystal	Royalties	191.55
+2009	Salt	Royalties	192474.92
+2009	Anhydrous Sodium Sulfate	Royalties	161151.56
+2009	Borax-Decahydrate	Royalties	31562.63
+2009	Borax-Pentahydrate	Royalties	60315.42
+2009	Boric Acid	Royalties	166837
+2009	Soda Ash	Royalties	15605600.85
+2009	Sodium Bi-Carbonate	Royalties	418987.25
+2009	Phosphate Raw Ore	Royalties	3566737.1
+2009	Gold	Royalties	292.88
+2009	Copper Concentrate	Royalties	448324.49
+2009	Lead Concentrate	Royalties	7641660.51
+2009	Zinc Concentrate	Royalties	1216949.6899999997
 2009	Coal	Other Royalties	12372165.92
+2009	Leonardite	Royalties	15526.55
+2009	Brine Barrels	Royalties	-31.300000000000004
+2009	Langbeinite	Royalties	13392891.32
+2009	Muriate Of Potash-Granular	Royalties	4196106.51
+2009	Muriate Of Potash-Standard	Royalties	1967467.73
+2009	Sylvite-Raw Ore	Royalties	4316.5
+2009	Gold Placer	Royalties	101.16
 2009	Clay	Other Revenues	942
+2009	Clay	Royalties	1015.94
+2009	Magnesium Chloride Brine	Royalties	35922.41
+2009	Manure Salts	Royalties	2690.58
+2009	Gilsonite	Royalties	1430142.3
+2009	Limestone	Royalties	113515.27
+2009	Purge Liquor	Royalties	72155.56
+2009	Sodium Bisulfite	Royalties	2683.85
+2009	Sodium Sesquicarbonate	Royalties	199927.52
+2009	Sulfide	Royalties	128436.71
+2009	Trona Ore	Royalties	206833.44
+2010	Wavellite	Royalties	69.1
+2010	Quartz Crystal	Royalties	50.25
+2010	Anhydrous Sodium Sulfate	Royalties	179316.58
+2010	Borax-Decahydrate	Royalties	166462.79
+2010	Borax-Pentahydrate	Royalties	303415.38
+2010	Boric Acid	Royalties	255007.83
+2010	Sodium Bi-Carbonate	Royalties	592381.72
+2010	Phosphate Raw Ore	Royalties	9143947.01
+2010	Copper Concentrate	Royalties	518826.8
+2010	Lead Concentrate	Royalties	10773530.65
+2010	Zinc Concentrate	Royalties	1964638.26
+2010	Leonardite	Royalties	15925.63
+2010	Langbeinite	Royalties	8173603.14
+2010	Muriate Of Potash-Granular	Royalties	6189818.3
+2010	Muriate Of Potash-Standard	Royalties	1572956.32
+2010	Potash	Royalties	4424934.369999999
+2010	Sylvite-Raw Ore	Royalties	5774.34
+2010	Gold Placer	Royalties	22.6
 2010	Clay	Other Revenues	462
+2010	Clay	Royalties	2457.02
+2010	Magnesium Chloride Brine	Royalties	42871.87
+2010	Manure Salts	Royalties	2174.01
 2010	Gilsonite	Other Revenues	327
+2010	Gilsonite	Royalties	1879371.19
+2010	Limestone	Royalties	117397.69
+2010	Sodium Bisulfite	Royalties	2659.48
+2010	Sodium Sesquicarbonate	Royalties	319044.16
+2010	Sulfide	Royalties	105133.2
+2010	Trona Ore	Royalties	248907.92
+2011	Quartz Crystal	Royalties	7.35
+2011	Anhydrous Sodium Sulfate	Royalties	220610.49
+2011	Borax-Anhydrous	Royalties	23155.59
+2011	Borax-Decahydrate	Royalties	436534.22
+2011	Borax-Pentahydrate	Royalties	621695.4
+2011	Boric Acid	Royalties	499953.51
+2011	Sodium Bi-Carbonate	Royalties	857243.48
 2011	Coal	Other Revenues	4803614.03
+2011	Phosphate Raw Ore	Royalties	9056156.569999998
+2011	Gold	Royalties	620
+2011	Copper Concentrate	Royalties	1283873.51
+2011	Lead Concentrate	Royalties	11376686.36
+2011	Zinc Concentrate	Royalties	2174729.25
+2011	Leonardite	Royalties	897.98
+2011	Langbeinite	Royalties	7046699.45
+2011	Muriate Of Potash-Granular	Royalties	8237791.78
+2011	Muriate Of Potash-Standard	Royalties	1571299.58
+2011	Potash	Royalties	4977295.38
+2011	Sylvite-Raw Ore	Royalties	5666.76
+2011	Brine Barrels	Royalties	17.81
 2011	Coal	Other Royalties	78440.29
 2011	Clay	Other Revenues	462
+2011	Clay	Royalties	3761.28
+2011	Magnesium Chloride Brine	Royalties	40897.75
+2011	Manure Salts	Royalties	2462.34
 2011	Gilsonite	Other Revenues	14058
+2011	Gilsonite	Royalties	2351729
+2011	Limestone	Royalties	112434.96
+2011	Purge Liquor	Royalties	115060.79
+2011	Sodium Bisulfite	Royalties	6161.12
+2011	Sodium Sesquicarbonate	Royalties	386564.96
+2011	Sulfide	Royalties	282746.32
+2011	Trona Ore	Royalties	564757.97
+2012	Quartz Crystal	Royalties	11.3
+2012	Salt	Royalties	467000.1
+2012	Anhydrous Sodium Sulfate	Royalties	450260.24
+2012	Borax-Decahydrate	Royalties	965736.02
+2012	Borax-Pentahydrate	Royalties	1210501.48
+2012	Boric Acid	Royalties	971223.98
+2012	Sodium Bi-Carbonate	Royalties	1945475.56
 2012	Coal	Other Revenues	5189668.3
 2012	Coal	Other Royalties	686970.16
+2012	Phosphate Raw Ore	Royalties	11601309.129999999
+2012	Gold	Royalties	796.8
+2012	Copper Concentrate	Royalties	1588286.1500000001
+2012	Lead Concentrate	Royalties	8484118.41
+2012	Zinc Concentrate	Royalties	1447209.99
+2012	Leonardite	Royalties	20100.83
+2012	Langbeinite	Royalties	10943964.43
+2012	Muriate Of Potash-Granular	Royalties	8426159.34
+2012	Muriate Of Potash-Standard	Royalties	2349048.53
+2012	Potash	Royalties	4289399.07
+2012	Sylvite-Raw Ore	Royalties	1614.95
 2012	Clay	Other Revenues	462
+2012	Clay	Royalties	4185.31
+2012	Magnesium Chloride Brine	Royalties	37623.64
+2012	Manure Salts	Royalties	1907.52
 2012	Gilsonite	Other Revenues	-1533
+2012	Gilsonite	Royalties	3405726.5
+2012	Limestone	Royalties	128426.76
+2012	Purge Liquor	Royalties	182763.31
+2012	Sodium Bisulfite	Royalties	281.17
+2012	Sodium Sesquicarbonate	Royalties	1162130.74
+2012	Sulfide	Royalties	271163.13
+2012	Trona Ore	Royalties	501657.01
 2013	Coal	Royalties	667682678.48
+2013	Quartz Crystal	Royalties	4.45
+2013	Salt	Royalties	676407.05
+2013	Anhydrous Sodium Sulfate	Royalties	446414.04
+2013	Borax-Decahydrate	Royalties	840118.62
+2013	Borax-Pentahydrate	Royalties	1303076.65
+2013	Boric Acid	Royalties	965147.97
+2013	Soda Ash	Royalties	43889749
+2013	Sodium Bi-Carbonate	Royalties	1948405.15
 2013	Coal	Other Revenues	3922545.0300000003
 2013	Coal	Other Royalties	11704.82
+2013	Phosphate Raw Ore	Royalties	10103474.75
+2013	Gold	Royalties	363.09
+2013	Silver	Royalties	2.35
+2013	Copper Concentrate	Royalties	1316533.3499999999
+2013	Zinc Concentrate	Royalties	699078.75
+2013	Leonardite	Royalties	49709.67
+2013	Langbeinite	Royalties	10026132.55
+2013	Muriate Of Potash-Granular	Royalties	4507770.64
+2013	Muriate Of Potash-Standard	Royalties	1672238.86
+2013	Potash	Royalties	4547958.2
+2013	Sylvite-Raw Ore	Royalties	1513.19
 2013	Clay	Other Revenues	942
+2013	Clay	Royalties	4144.61
+2013	Magnesium Chloride Brine	Royalties	53547.59
 2013	Gilsonite	Other Revenues	4191
+2013	Gilsonite	Royalties	2895810.09
+2013	Limestone	Royalties	60702.52
+2013	Purge Liquor	Royalties	195962.63
+2013	Sodium Sesquicarbonate	Royalties	1083657.47
+2013	Sulfide	Royalties	462235.38
+2013	Trona Ore	Royalties	719916.39
 2004	NGL	Other Royalties	38900.79
 2005	NGL	Other Royalties	45280.07
 2007	NGL	Other Royalties	26199.16
@@ -395,25 +741,25 @@ Year	Commodity	Type	Revenue
 2010	Oil	Other Royalties	67259900.2
 2013	Oil	Other Royalties	6746359.720000001
 2004	Sulfur	Other Revenues	22221.06
+2004	Other	Royalties	35092.63
 2005	Sulfur	Other Revenues	10547.43
+2005	Other	Royalties	36348.37
 2006	Sulfur	Other Revenues	10838
+2006	Other	Royalties	19483.59
 2007	Sulfur	Other Revenues	11624.84
+2007	Other	Royalties	36495.880000000005
 2008	Sulfur	Other Revenues	12709.04
-2008	Other	Royalties	274461.14
+2008	Other	Royalties	275571.38
 2009	Sulfur	Other Revenues	12631.84
+2009	Other	Royalties	22142.46
 2010	Sulfur	Other Revenues	12551.32
+2010	Other	Royalties	3241.840000000002
 2011	Sulfur	Other Revenues	12670.72
+2011	Other	Royalties	67361.68
 2012	Sulfur	Other Revenues	12429.6
+2012	Other	Royalties	53820.89
 2013	Sulfur	Other Revenues	11186
-2004	Other	Royalties	31647.33
-2005	Other	Royalties	33538.57
-2006	Other	Royalties	16655.01
-2007	Other	Royalties	35556.72
-2009	Other	Royalties	20981.66
-2010	Other	Royalties	2202.000000000002
-2011	Other	Royalties	66345.86
-2012	Other	Royalties	51865.990000000005
-2013	Other	Royalties	21907.44
+2013	Other	Royalties	24566.34
 2009	Wind	Rents	68319.68
 2010	Wind	Rents	139517.76
 2011	Wind	Rents	135247.84

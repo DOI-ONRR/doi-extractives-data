@@ -67,7 +67,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2008	WA	Kittitas	53037	Oil & Gas		Rents	42820
 2008	WA	Klickitat	53039	Oil & Gas		Rents	27217.5
 2008	WA	Lewis	53041	Coal		Rents	1566
-2008	WA	Lewis	53041	Coal (ton)	Coal-Subbituminous-Processed	Royalties	204873.3
+2008	WA	Lewis	53041	Coal	Coal-Subbituminous-Processed	Royalties	204873.3
 2008	WA	Walla Walla	53071	Oil & Gas		Rents	1040
 2008	WA	Yakima	53077	Oil & Gas		Rents	106350.5
 2009	WA	Adams	53001	Oil & Gas		Rents	62316
@@ -100,8 +100,8 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2012	WA	Lewis	53041	Coal		Rents	1566
 2013	WA	Lewis	53041	Coal		Rents	2406
 2013	WA	Whatcom	53073	Geothermal		Rents	8437
-2004	WA	Lewis	53041	Coal (ton)	Coal	Royalties	23951.65
-2005	WA	Lewis	53041	Coal (ton)	Coal	Royalties	2926.7
-2006	WA	Lewis	53041	Coal (ton)	Coal	Royalties	11394.65
-2007	WA	Lewis	53041	Coal (ton)	Coal	Royalties	-46664.18
-2008	WA	Lewis	53041	Coal (ton)	Coal	Royalties	1425.6
+2004	WA	Lewis	53041	Coal	Coal	Royalties	23951.65
+2005	WA	Lewis	53041	Coal	Coal	Royalties	2926.7
+2006	WA	Lewis	53041	Coal	Coal	Royalties	11394.65
+2007	WA	Lewis	53041	Coal	Coal	Royalties	-46664.18
+2008	WA	Lewis	53041	Coal	Coal	Royalties	1425.6

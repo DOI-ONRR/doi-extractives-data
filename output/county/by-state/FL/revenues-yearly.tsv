@@ -1,11 +1,11 @@
 Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2004	FL	Hardee	12049	Phosphate		Other Revenues	2248
 2004	FL	Hardee	12049	Phosphate		Rents	-562
-2004	FL	Hardee	12049	Other Products	Phosphate Raw Ore	Royalties	-61219.67
+2004	FL	Hardee	12049	Phosphate Raw Ore	Phosphate Raw Ore	Royalties	-61219.67
 2004	FL	Okaloosa	12091	Oil & Gas		Rents	8080.5
 2004	FL	Polk	12105	Phosphate		Rents	-322
-2004	FL	Polk	12105	Other Products	Phosphate Raw Ore	Royalties	61219.65
-2004	FL	Santa Rosa	12113	Oil (bbl)	Oil	Royalties	1935.55
+2004	FL	Polk	12105	Phosphate Raw Ore	Phosphate Raw Ore	Royalties	61219.65
+2004	FL	Santa Rosa	12113	Oil	Oil	Royalties	1935.55
 2005	FL	Manatee	12081	Phosphate		Rents	122
 2005	FL	Okaloosa	12091	Oil & Gas		Rents	5053.5
 2006	FL	Okaloosa	12091	Oil & Gas		Rents	12116.5
@@ -17,7 +17,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2008	FL	Okaloosa	12091	Oil & Gas		Rents	10774
 2008	FL	Polk	12105	Phosphate		Other Revenues	-563
 2008	FL	Polk	12105	Phosphate		Rents	-447
-2008	FL	Polk	12105	Other Products	Phosphate Concentrate	Royalties	1570.27
+2008	FL	Polk	12105	Phosphate Concentrate	Phosphate Concentrate	Royalties	1570.27
 2009	FL	Hardee	12049	Phosphate		Other Revenues	5620
 2009	FL	Hardee	12049	Phosphate		Rents	-1124
 2009	FL	Okaloosa	12091	Oil & Gas		Rents	-8397
@@ -26,21 +26,21 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2010	FL	Okaloosa	12091	Oil & Gas		Rents	3200
 2011	FL	Okaloosa	12091	Oil & Gas		Rents	3200
 2012	FL	Okaloosa	12091	Oil & Gas		Rents	3200
-2005	FL	Manatee	12081	Other Products	Phosphate Raw Ore	Royalties	837228.4
-2006	FL	Manatee	12081	Other Products	Phosphate Raw Ore	Royalties	1398.1
+2005	FL	Manatee	12081	Phosphate Raw Ore	Phosphate Raw Ore	Royalties	837228.4
+2006	FL	Manatee	12081	Phosphate Raw Ore	Phosphate Raw Ore	Royalties	1398.1
 2009	FL	Hardee	12049	Phosphate		Other Revenues	560
 2009	FL	Polk	12105	Phosphate		Other Revenues	1208
 2010	FL	Hardee	12049	Phosphate		Other Revenues	1124
 2010	FL	Polk	12105	Phosphate		Other Revenues	644
-2010	FL	Polk	12105	Other Products	Phosphate Raw Ore	Royalties	90567.06
+2010	FL	Polk	12105	Phosphate Raw Ore	Phosphate Raw Ore	Royalties	90567.06
 2011	FL	Hardee	12049	Phosphate		Other Revenues	1124
 2011	FL	Polk	12105	Phosphate		Other Revenues	644
-2011	FL	Polk	12105	Other Products	Phosphate Raw Ore	Royalties	521357.53
+2011	FL	Polk	12105	Phosphate Raw Ore	Phosphate Raw Ore	Royalties	521357.53
 2012	FL	Hardee	12049	Phosphate		Other Revenues	1124
-2012	FL	Hardee	12049	Other Products	Phosphate Raw Ore	Royalties	1175457.01
+2012	FL	Hardee	12049	Phosphate Raw Ore	Phosphate Raw Ore	Royalties	1175457.01
 2012	FL	Polk	12105	Phosphate		Other Revenues	242
-2012	FL	Polk	12105	Other Products	Phosphate Raw Ore	Royalties	994528.2
+2012	FL	Polk	12105	Phosphate Raw Ore	Phosphate Raw Ore	Royalties	994528.2
 2013	FL	Hardee	12049	Phosphate		Other Revenues	564
-2013	FL	Hardee	12049	Other Products	Phosphate Raw Ore	Royalties	285731.37
+2013	FL	Hardee	12049	Phosphate Raw Ore	Phosphate Raw Ore	Royalties	285731.37
 2013	FL	Manatee	12081	Phosphate		Other Revenues	183
 2013	FL	Polk	12105	Phosphate		Other Revenues	242

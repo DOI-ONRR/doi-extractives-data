@@ -16,7 +16,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2004	NV	Eureka	32011	Geothermal		Rents	1447
 2004	NV	Eureka	32011	Oil & Gas		Rents	506183.74
 2004	NV	Eureka	32011	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	6783.17
-2004	NV	Eureka	32011	Oil (bbl)	Oil	Royalties	217547.64
+2004	NV	Eureka	32011	Oil	Oil	Royalties	217547.64
 2004	NV	Humboldt	32013	Geothermal		Rents	7953
 2004	NV	Lander	32015	Geothermal		Rents	29332
 2004	NV	Lander	32015	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	-1862010.59
@@ -27,7 +27,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2004	NV	Nye	32023	Oil & Gas		Other Royalties	-36.87
 2004	NV	Nye	32023	Geothermal		Rents	33432
 2004	NV	Nye	32023	Oil & Gas		Rents	871267.22
-2004	NV	Nye	32023	Oil (bbl)	Oil	Royalties	1447863.27
+2004	NV	Nye	32023	Oil	Oil	Royalties	1447863.27
 2004	NV	Pershing	32027	Geothermal		Rents	67756.16
 2004	NV	Pershing	32027	Oil & Gas		Rents	7602
 2004	NV	Washoe	32031	Geothermal		Bonus	4188.37
@@ -46,7 +46,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2005	NV	Clark	32003	Oil & Gas		Bonus	37022
 2005	NV	Clark	32003	Oil & Gas		Rents	8490
 2005	NV	Clark	32003	Sand & Gravel		Rents	-1280
-2005	NV	Clark	32003	Other Products	Sand/Gravel	Royalties	-0.02
+2005	NV	Clark	32003	Sand/Gravel	Sand/Gravel	Royalties	-0.02
 2005	NV	Elko	32007	Oil & Gas		Bonus	962245.75
 2005	NV	Elko	32007	Geothermal		Rents	16486
 2005	NV	Elko	32007	Oil & Gas		Rents	968581.17
@@ -57,7 +57,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2005	NV	Eureka	32011	Geothermal		Rents	2567
 2005	NV	Eureka	32011	Oil & Gas		Rents	1106961.67
 2005	NV	Eureka	32011	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	7330.63
-2005	NV	Eureka	32011	Oil (bbl)	Oil	Royalties	246768.78
+2005	NV	Eureka	32011	Oil	Oil	Royalties	246768.78
 2005	NV	Humboldt	32013	Geothermal		Rents	11846
 2005	NV	Lander	32015	Geothermal		Rents	36971
 2005	NV	Lander	32015	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	1567857.61
@@ -69,7 +69,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2005	NV	Nye	32023	Oil & Gas		Other Royalties	2811.28
 2005	NV	Nye	32023	Geothermal		Rents	30813
 2005	NV	Nye	32023	Oil & Gas		Rents	1433304.75
-2005	NV	Nye	32023	Oil (bbl)	Oil	Royalties	1911978.69
+2005	NV	Nye	32023	Oil	Oil	Royalties	1911978.69
 2005	NV	Pershing	32027	Geothermal		Rents	79224.16
 2005	NV	Pershing	32027	Oil & Gas		Rents	7602
 2005	NV	Washoe	32031	Geothermal		Other Revenues	2109
@@ -85,7 +85,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2006	NV	Churchill	32001	Geothermal	Geothermal - Direct Utilization, Hundreds of Gallons	Royalties	4248
 2006	NV	Churchill	32001	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	2296151.89
 2006	NV	Clark	32003	Oil & Gas		Rents	43080
-2006	NV	Clark	32003	Other Products	Sand/Gravel	Royalties	2.4
+2006	NV	Clark	32003	Sand/Gravel	Sand/Gravel	Royalties	2.4
 2006	NV	Elko	32007	Oil & Gas		Bonus	1757277.43
 2006	NV	Elko	32007	Geothermal		Rents	22283.45
 2006	NV	Elko	32007	Oil & Gas		Rents	1574869.15
@@ -96,7 +96,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2006	NV	Eureka	32011	Geothermal		Rents	9838.55
 2006	NV	Eureka	32011	Oil & Gas		Rents	1050192.88
 2006	NV	Eureka	32011	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	8611.03
-2006	NV	Eureka	32011	Oil (bbl)	Oil	Royalties	276873.36
+2006	NV	Eureka	32011	Oil	Oil	Royalties	276873.36
 2006	NV	Humboldt	32013	Geothermal		Rents	18099
 2006	NV	Lander	32015	Geothermal		Rents	40829
 2006	NV	Lander	32015	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	-1025860.69
@@ -110,7 +110,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2006	NV	Nye	32023	Oil & Gas		Other Royalties	-3284.2
 2006	NV	Nye	32023	Geothermal		Rents	3675
 2006	NV	Nye	32023	Oil & Gas		Rents	1738085.03
-2006	NV	Nye	32023	Oil (bbl)	Oil	Royalties	2455447.74
+2006	NV	Nye	32023	Oil	Oil	Royalties	2455447.74
 2006	NV	Pershing	32027	Geothermal		Rents	31030.16
 2006	NV	Washoe	32031	Geothermal		Other Revenues	1908.67
 2006	NV	Washoe	32031	Geothermal		Rents	50788.72
@@ -136,7 +136,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2007	NV	Eureka	32011	Geothermal		Rents	11633.27
 2007	NV	Eureka	32011	Oil & Gas		Rents	1346476.49
 2007	NV	Eureka	32011	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	7042.26
-2007	NV	Eureka	32011	Oil (bbl)	Oil	Royalties	288892.32
+2007	NV	Eureka	32011	Oil	Oil	Royalties	288892.32
 2007	NV	Humboldt	32013	Geothermal		Bonus	89460
 2007	NV	Humboldt	32013	Geothermal		Rents	44863
 2007	NV	Lander	32015	Geothermal		Bonus	3821400
@@ -154,7 +154,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2007	NV	Nye	32023	Oil & Gas		Other Royalties	334.28
 2007	NV	Nye	32023	Geothermal		Rents	42242.33
 2007	NV	Nye	32023	Oil & Gas		Rents	1734206.15
-2007	NV	Nye	32023	Oil (bbl)	Oil	Royalties	2597904.12
+2007	NV	Nye	32023	Oil	Oil	Royalties	2597904.12
 2007	NV	Pershing	32027	Geothermal		Bonus	663823.74
 2007	NV	Pershing	32027	Geothermal		Rents	121119.83
 2007	NV	Pershing	32027	Oil & Gas		Rents	4981.5
@@ -184,14 +184,14 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2008	NV	Esmeralda	32009	Geothermal		Rents	93030
 2008	NV	Esmeralda	32009	Oil & Gas		Rents	66544.5
 2008	NV	Esmeralda	32009	Potassium		Rents	-1160
-2008	NV	Esmeralda	32009	Other Products	Potash	Royalties	37.5
+2008	NV	Esmeralda	32009	Potash	Potash	Royalties	37.5
 2008	NV	Eureka	32011	Geothermal		Bonus	273909.55
 2008	NV	Eureka	32011	Oil & Gas		Bonus	191010
 2008	NV	Eureka	32011	Geothermal		Other Royalties	4062.16
 2008	NV	Eureka	32011	Geothermal		Rents	8440.55
 2008	NV	Eureka	32011	Oil & Gas		Rents	1337278.71
 2008	NV	Eureka	32011	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	13112.17
-2008	NV	Eureka	32011	Oil (bbl)	Oil	Royalties	432852.84
+2008	NV	Eureka	32011	Oil	Oil	Royalties	432852.84
 2008	NV	Humboldt	32013	Geothermal		Bonus	101100
 2008	NV	Humboldt	32013	Geothermal		Other Revenues	1328
 2008	NV	Humboldt	32013	Geothermal		Rents	33337
@@ -213,7 +213,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2008	NV	Nye	32023	Oil & Gas		Other Royalties	4794.79
 2008	NV	Nye	32023	Geothermal		Rents	66543.3
 2008	NV	Nye	32023	Oil & Gas		Rents	1381763.43
-2008	NV	Nye	32023	Oil (bbl)	Oil	Royalties	3885397.78
+2008	NV	Nye	32023	Oil	Oil	Royalties	3885397.78
 2008	NV	Pershing	32027	Geothermal		Bonus	207210
 2008	NV	Pershing	32027	Geothermal		Rents	170502.16
 2008	NV	Washoe	32031	Geothermal		Other Revenues	1901.11
@@ -237,13 +237,13 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2009	NV	Esmeralda	32009	Geothermal		Other Revenues	4754
 2009	NV	Esmeralda	32009	Geothermal		Rents	175195
 2009	NV	Esmeralda	32009	Oil & Gas		Rents	66544.5
-2009	NV	Esmeralda	32009	Other Products	Potash	Royalties	-37.5
+2009	NV	Esmeralda	32009	Potash	Potash	Royalties	-37.5
 2009	NV	Eureka	32011	Geothermal		Bonus	5138
 2009	NV	Eureka	32011	Oil & Gas		Bonus	-1142
 2009	NV	Eureka	32011	Geothermal		Rents	18263.47
 2009	NV	Eureka	32011	Oil & Gas		Rents	757343.05
 2009	NV	Eureka	32011	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	9593.45
-2009	NV	Eureka	32011	Oil (bbl)	Oil	Royalties	448200.12
+2009	NV	Eureka	32011	Oil	Oil	Royalties	448200.12
 2009	NV	Humboldt	32013	Geothermal		Bonus	385044
 2009	NV	Humboldt	32013	Geothermal		Other Revenues	1328
 2009	NV	Humboldt	32013	Geothermal		Rents	75838
@@ -264,7 +264,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2009	NV	Nye	32023	Oil & Gas		Other Royalties	-3248.67
 2009	NV	Nye	32023	Geothermal		Rents	93626.95
 2009	NV	Nye	32023	Oil & Gas		Rents	1200291.99
-2009	NV	Nye	32023	Oil (bbl)	Oil	Royalties	2065907.38
+2009	NV	Nye	32023	Oil	Oil	Royalties	2065907.38
 2009	NV	Pershing	32027	Geothermal		Bonus	1290766.12
 2009	NV	Pershing	32027	Geothermal		Rents	333706.88
 2009	NV	Washoe	32031	Geothermal		Other Revenues	1974.24
@@ -294,7 +294,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2010	NV	Eureka	32011	Geothermal		Rents	20832.47
 2010	NV	Eureka	32011	Oil & Gas		Rents	653662.9
 2010	NV	Eureka	32011	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	9962.32
-2010	NV	Eureka	32011	Oil (bbl)	Oil	Royalties	477035.92
+2010	NV	Eureka	32011	Oil	Oil	Royalties	477035.92
 2010	NV	Humboldt	32013	Geothermal		Bonus	23304
 2010	NV	Humboldt	32013	Geothermal		Other Revenues	1328
 2010	NV	Humboldt	32013	Geothermal		Rents	113352
@@ -315,7 +315,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2010	NV	Nye	32023	Oil & Gas		Other Royalties	963.39
 2010	NV	Nye	32023	Geothermal		Rents	164673.78
 2010	NV	Nye	32023	Oil & Gas		Rents	1343404.43
-2010	NV	Nye	32023	Oil (bbl)	Oil	Royalties	2920172.42
+2010	NV	Nye	32023	Oil	Oil	Royalties	2920172.42
 2010	NV	Pershing	32027	Geothermal		Bonus	177644.18
 2010	NV	Pershing	32027	Geothermal		Rents	484748.92
 2010	NV	Washoe	32031	Geothermal		Bonus	10578.6
@@ -347,7 +347,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2011	NV	Eureka	32011	Geothermal		Rents	39260.47
 2011	NV	Eureka	32011	Oil & Gas		Rents	558040.15
 2011	NV	Eureka	32011	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	9764.51
-2011	NV	Eureka	32011	Oil (bbl)	Oil	Royalties	517020.36
+2011	NV	Eureka	32011	Oil	Oil	Royalties	517020.36
 2011	NV	Humboldt	32013	Geothermal		Bonus	5758
 2011	NV	Humboldt	32013	Geothermal		Other Revenues	-2656
 2011	NV	Humboldt	32013	Geothermal		Rents	116526
@@ -368,7 +368,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2011	NV	Nye	32023	Oil & Gas		Other Royalties	3922
 2011	NV	Nye	32023	Geothermal		Rents	113013.48
 2011	NV	Nye	32023	Oil & Gas		Rents	1508098.56
-2011	NV	Nye	32023	Oil (bbl)	Oil	Royalties	3879684.92
+2011	NV	Nye	32023	Oil	Oil	Royalties	3879684.92
 2011	NV	Pershing	32027	Geothermal		Rents	363756.61
 2011	NV	Pershing	32027	Oil & Gas		Rents	17487
 2011	NV	Pershing	32027	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	1074.69
@@ -397,7 +397,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2012	NV	Eureka	32011	Geothermal		Rents	48474.47
 2012	NV	Eureka	32011	Oil & Gas		Rents	666346.34
 2012	NV	Eureka	32011	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	6362.51
-2012	NV	Eureka	32011	Oil (bbl)	Oil	Royalties	451981.49
+2012	NV	Eureka	32011	Oil	Oil	Royalties	451981.49
 2012	NV	Humboldt	32013	Geothermal		Bonus	35374
 2012	NV	Humboldt	32013	Geothermal		Rents	154246
 2012	NV	Humboldt	32013	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	133709.11
@@ -413,7 +413,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2012	NV	Nye	32023	Oil & Gas		Other Royalties	-2905
 2012	NV	Nye	32023	Geothermal		Rents	88808.48
 2012	NV	Nye	32023	Oil & Gas		Rents	1802564.29
-2012	NV	Nye	32023	Oil (bbl)	Oil	Royalties	3528617.24
+2012	NV	Nye	32023	Oil	Oil	Royalties	3528617.24
 2012	NV	Pershing	32027	Geothermal		Bonus	19176
 2012	NV	Pershing	32027	Geothermal		Rents	335964.95
 2012	NV	Pershing	32027	Oil & Gas		Rents	-1141.5
@@ -442,7 +442,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2013	NV	Eureka	32011	Geothermal		Rents	40041.47
 2013	NV	Eureka	32011	Oil & Gas		Rents	472648.21
 2013	NV	Eureka	32011	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	7112.02
-2013	NV	Eureka	32011	Oil (bbl)	Oil	Royalties	462589.58
+2013	NV	Eureka	32011	Oil	Oil	Royalties	462589.58
 2013	NV	Humboldt	32013	Geothermal		Bonus	7388
 2013	NV	Humboldt	32013	Geothermal		Rents	147391
 2013	NV	Humboldt	32013	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	126454.44
@@ -457,7 +457,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2013	NV	Nye	32023	Oil & Gas		Other Royalties	-928.31
 2013	NV	Nye	32023	Geothermal		Rents	19234
 2013	NV	Nye	32023	Oil & Gas		Rents	1578933.37
-2013	NV	Nye	32023	Oil (bbl)	Oil	Royalties	3151139.37
+2013	NV	Nye	32023	Oil	Oil	Royalties	3151139.37
 2013	NV	Pershing	32027	Geothermal		Bonus	2734
 2013	NV	Pershing	32027	Geothermal		Rents	287265.54
 2013	NV	Pershing	32027	Oil & Gas		Rents	1440
@@ -468,15 +468,15 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2013	NV	White Pine	32033	Geothermal		Bonus	-272
 2013	NV	White Pine	32033	Geothermal		Rents	16409
 2013	NV	White Pine	32033	Oil & Gas		Rents	2135986.98
-2004	NV	Clark	32003	Other Products	Sand/Gravel	Royalties	465124.8
-2004	NV	Esmeralda	32009	Other Products	Potash	Royalties	1735.64
-2005	NV	Clark	32003	Other Products	Sand/Gravel	Royalties	-93570
-2005	NV	Esmeralda	32009	Other Products	Potash	Royalties	238.5
+2004	NV	Clark	32003	Sand/Gravel	Sand/Gravel	Royalties	465124.8
+2004	NV	Esmeralda	32009	Potash	Potash	Royalties	1735.64
+2005	NV	Clark	32003	Sand/Gravel	Sand/Gravel	Royalties	-93570
+2005	NV	Esmeralda	32009	Potash	Potash	Royalties	238.5
 2006	NV	Esmeralda	32009	Potassium		Other Revenues	6960
-2006	NV	Esmeralda	32009	Other Products	Potash	Royalties	2339.42
-2007	NV	Esmeralda	32009	Other Products	Potash	Royalties	159
+2006	NV	Esmeralda	32009	Potash	Potash	Royalties	2339.42
+2007	NV	Esmeralda	32009	Potash	Potash	Royalties	159
 2008	NV	Esmeralda	32009	Potassium		Other Revenues	6960
-2008	NV	Esmeralda	32009	Other Products	Potash	Royalties	-37.5
+2008	NV	Esmeralda	32009	Potash	Potash	Royalties	-37.5
 2009	NV	Esmeralda	32009	Potassium		Other Revenues	-46.5
-2009	NV	Esmeralda	32009	Other Products	Potash	Royalties	37.5
+2009	NV	Esmeralda	32009	Potash	Potash	Royalties	37.5
 2010	NV	Esmeralda	32009	Potassium		Other Revenues	7503

@@ -3,151 +3,151 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2004	ND	Billings	38007	Oil & Gas		Other Revenues	5172.64
 2004	ND	Billings	38007	Oil & Gas		Other Royalties	226914.39
 2004	ND	Billings	38007	Oil & Gas		Rents	134525.5
-2004	ND	Billings	38007	Gas (mcf)	Processed (Residue) Gas	Royalties	68580.05
-2004	ND	Billings	38007	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	935327.47
-2004	ND	Billings	38007	NGL (gal)	Gas Plant Products	Royalties	126563.78
-2004	ND	Billings	38007	Oil (bbl)	Condensate	Royalties	88973.97
-2004	ND	Billings	38007	Oil (bbl)	Drip or Scrubber Condensate	Royalties	2076.68
-2004	ND	Billings	38007	Oil (bbl)	Oil	Royalties	9268712.76
+2004	ND	Billings	38007	Gas	Processed (Residue) Gas	Royalties	68580.05
+2004	ND	Billings	38007	Gas	Unprocessed (Wet) Gas	Royalties	935327.47
+2004	ND	Billings	38007	NGL	Gas Plant Products	Royalties	126563.78
+2004	ND	Billings	38007	Oil	Condensate	Royalties	88973.97
+2004	ND	Billings	38007	Oil	Drip or Scrubber Condensate	Royalties	2076.68
+2004	ND	Billings	38007	Oil	Oil	Royalties	9268712.76
 2004	ND	Bottineau	38009	Oil & Gas		Rents	1781
-2004	ND	Bottineau	38009	Oil (bbl)	Oil	Royalties	108788.56
+2004	ND	Bottineau	38009	Oil	Oil	Royalties	108788.56
 2004	ND	Bowman	38011	Oil & Gas		Other Royalties	12850
 2004	ND	Bowman	38011	Oil & Gas		Rents	17495.5
-2004	ND	Bowman	38011	Gas (mcf)	Processed (Residue) Gas	Royalties	64438.31
-2004	ND	Bowman	38011	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	1129919.55
-2004	ND	Bowman	38011	NGL (gal)	Gas Plant Products	Royalties	52381.86
-2004	ND	Bowman	38011	Oil (bbl)	Drip or Scrubber Condensate	Royalties	8665.42
-2004	ND	Bowman	38011	Oil (bbl)	Oil	Royalties	5756934.16
+2004	ND	Bowman	38011	Gas	Processed (Residue) Gas	Royalties	64438.31
+2004	ND	Bowman	38011	Gas	Unprocessed (Wet) Gas	Royalties	1129919.55
+2004	ND	Bowman	38011	NGL	Gas Plant Products	Royalties	52381.86
+2004	ND	Bowman	38011	Oil	Drip or Scrubber Condensate	Royalties	8665.42
+2004	ND	Bowman	38011	Oil	Oil	Royalties	5756934.16
 2004	ND	Burke	38013	Oil & Gas		Bonus	28380
 2004	ND	Burke	38013	Oil & Gas		Rents	1656
-2004	ND	Burke	38013	Gas (mcf)	Gas Lost - Flared or Vented	Royalties	1031.82
-2004	ND	Burke	38013	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	4185.17
-2004	ND	Burke	38013	Oil (bbl)	Oil	Royalties	7789.22
+2004	ND	Burke	38013	Gas	Gas Lost - Flared or Vented	Royalties	1031.82
+2004	ND	Burke	38013	Gas	Unprocessed (Wet) Gas	Royalties	4185.17
+2004	ND	Burke	38013	Oil	Oil	Royalties	7789.22
 2004	ND	Burleigh	38015	Oil & Gas		Rents	121.84
 2004	ND	Divide	38023	Oil & Gas		Other Revenues	6.73
 2004	ND	Divide	38023	Oil & Gas		Rents	120
-2004	ND	Divide	38023	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	-0.09
-2004	ND	Divide	38023	Oil (bbl)	Oil	Royalties	11.74
+2004	ND	Divide	38023	Gas	Unprocessed (Wet) Gas	Royalties	-0.09
+2004	ND	Divide	38023	Oil	Oil	Royalties	11.74
 2004	ND	Dunn	38025	Oil & Gas		Bonus	71625
 2004	ND	Dunn	38025	Oil & Gas		Other Royalties	36925
 2004	ND	Dunn	38025	Oil & Gas		Rents	42855.5
-2004	ND	Dunn	38025	Gas (mcf)	Processed (Residue) Gas	Royalties	7412.84
-2004	ND	Dunn	38025	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	17868.25
-2004	ND	Dunn	38025	NGL (gal)	Gas Plant Products	Royalties	6735.32
-2004	ND	Dunn	38025	Oil (bbl)	Oil	Royalties	388108.77
+2004	ND	Dunn	38025	Gas	Processed (Residue) Gas	Royalties	7412.84
+2004	ND	Dunn	38025	Gas	Unprocessed (Wet) Gas	Royalties	17868.25
+2004	ND	Dunn	38025	NGL	Gas Plant Products	Royalties	6735.32
+2004	ND	Dunn	38025	Oil	Oil	Royalties	388108.77
 2004	ND	Golden Valle	38033	Oil & Gas		Bonus	153880
 2004	ND	Golden Valle	38033	Oil & Gas		Other Royalties	20150
 2004	ND	Golden Valle	38033	Oil & Gas		Rents	68891.5
-2004	ND	Golden Valle	38033	Gas (mcf)	Processed (Residue) Gas	Royalties	16687.67
-2004	ND	Golden Valle	38033	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	65134.56
-2004	ND	Golden Valle	38033	NGL (gal)	Gas Plant Products	Royalties	21.28
-2004	ND	Golden Valle	38033	Oil (bbl)	Oil	Royalties	1166747.15
+2004	ND	Golden Valle	38033	Gas	Processed (Residue) Gas	Royalties	16687.67
+2004	ND	Golden Valle	38033	Gas	Unprocessed (Wet) Gas	Royalties	65134.56
+2004	ND	Golden Valle	38033	NGL	Gas Plant Products	Royalties	21.28
+2004	ND	Golden Valle	38033	Oil	Oil	Royalties	1166747.15
 2004	ND	Mckenzie	38053	Oil & Gas		Bonus	2077757.25
 2004	ND	Mckenzie	38053	Oil & Gas		Other Revenues	7751.02
 2004	ND	Mckenzie	38053	Oil & Gas		Other Royalties	262554.88
 2004	ND	Mckenzie	38053	Oil & Gas		Rents	291158.16
-2004	ND	Mckenzie	38053	Gas (mcf)	Nitrogen	Royalties	3830.68
-2004	ND	Mckenzie	38053	Gas (mcf)	Processed (Residue) Gas	Royalties	690883.83
-2004	ND	Mckenzie	38053	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	371536.78
-2004	ND	Mckenzie	38053	NGL (gal)	Gas Plant Products	Royalties	117036.48
-2004	ND	Mckenzie	38053	Oil (bbl)	Condensate	Royalties	44453.58
-2004	ND	Mckenzie	38053	Oil (bbl)	Drip or Scrubber Condensate	Royalties	18475.63
-2004	ND	Mckenzie	38053	Oil (bbl)	Oil	Royalties	4367116.43
-2004	ND	Mckenzie	38053	Other Products	Sulfur	Royalties	222.48
+2004	ND	Mckenzie	38053	Gas	Nitrogen	Royalties	3830.68
+2004	ND	Mckenzie	38053	Gas	Processed (Residue) Gas	Royalties	690883.83
+2004	ND	Mckenzie	38053	Gas	Unprocessed (Wet) Gas	Royalties	371536.78
+2004	ND	Mckenzie	38053	NGL	Gas Plant Products	Royalties	117036.48
+2004	ND	Mckenzie	38053	Oil	Condensate	Royalties	44453.58
+2004	ND	Mckenzie	38053	Oil	Drip or Scrubber Condensate	Royalties	18475.63
+2004	ND	Mckenzie	38053	Oil	Oil	Royalties	4367116.43
+2004	ND	Mckenzie	38053	Sulfur	Sulfur	Royalties	222.48
 2004	ND	Mclean	38055	Coal		Bonus	800
 2004	ND	Mclean	38055	Coal		Rents	597
 2004	ND	Mclean	38055	Oil & Gas		Rents	1266
 2004	ND	Mercer	38057	Coal		Bonus	10056
 2004	ND	Mercer	38057	Coal		Rents	10952.34
-2004	ND	Mercer	38057	Coal (ton)	Coal-Lignite-Raw	Royalties	-2
+2004	ND	Mercer	38057	Coal	Coal-Lignite-Raw	Royalties	-2
 2004	ND	Mountrail	38061	Oil & Gas		Bonus	1260
 2004	ND	Mountrail	38061	Oil & Gas		Rents	1308.5
 2004	ND	Oliver	38065	Coal		Rents	5541.66
-2004	ND	Oliver	38065	Coal (ton)	Coal-Lignite-Raw	Royalties	21959.37
+2004	ND	Oliver	38065	Coal	Coal-Lignite-Raw	Royalties	21959.37
 2004	ND	Renville	38075	Oil & Gas		Bonus	320
 2004	ND	Renville	38075	Oil & Gas		Rents	320
-2004	ND	Renville	38075	Oil (bbl)	Oil	Royalties	99418.71
+2004	ND	Renville	38075	Oil	Oil	Royalties	99418.71
 2004	ND	Slope	38087	Oil & Gas		Rents	173452.5
-2004	ND	Slope	38087	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	3952.45
-2004	ND	Slope	38087	Oil (bbl)	Drip or Scrubber Condensate	Royalties	1257.5
-2004	ND	Slope	38087	Oil (bbl)	Oil	Royalties	176165.71
+2004	ND	Slope	38087	Gas	Unprocessed (Wet) Gas	Royalties	3952.45
+2004	ND	Slope	38087	Oil	Drip or Scrubber Condensate	Royalties	1257.5
+2004	ND	Slope	38087	Oil	Oil	Royalties	176165.71
 2004	ND	Stark	38089	Oil & Gas		Bonus	22
 2004	ND	Stark	38089	Oil & Gas		Other Royalties	8330
 2004	ND	Stark	38089	Oil & Gas		Rents	2184.5
-2004	ND	Stark	38089	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	105244.7
-2004	ND	Stark	38089	Oil (bbl)	Condensate	Royalties	42
-2004	ND	Stark	38089	Oil (bbl)	Oil	Royalties	1250168.22
+2004	ND	Stark	38089	Gas	Unprocessed (Wet) Gas	Royalties	105244.7
+2004	ND	Stark	38089	Oil	Condensate	Royalties	42
+2004	ND	Stark	38089	Oil	Oil	Royalties	1250168.22
 2004	ND	Stutsman	38093	Oil & Gas		Rents	2040
 2004	ND	Williams	38105	Oil & Gas		Bonus	57335
 2004	ND	Williams	38105	Oil & Gas		Other Revenues	599.1
 2004	ND	Williams	38105	Oil & Gas		Other Royalties	495
 2004	ND	Williams	38105	Coal		Rents	480
 2004	ND	Williams	38105	Oil & Gas		Rents	5871
-2004	ND	Williams	38105	Gas (mcf)	Nitrogen	Royalties	0.04
-2004	ND	Williams	38105	Gas (mcf)	Processed (Residue) Gas	Royalties	34440.15
-2004	ND	Williams	38105	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	864.55
-2004	ND	Williams	38105	NGL (gal)	Gas Plant Products	Royalties	9974.08
-2004	ND	Williams	38105	Oil (bbl)	Drip or Scrubber Condensate	Royalties	20.13
-2004	ND	Williams	38105	Oil (bbl)	Oil	Royalties	47690.2
-2004	ND	Williams	38105	Other Products	Sulfur	Royalties	76.22
+2004	ND	Williams	38105	Gas	Nitrogen	Royalties	0.04
+2004	ND	Williams	38105	Gas	Processed (Residue) Gas	Royalties	34440.15
+2004	ND	Williams	38105	Gas	Unprocessed (Wet) Gas	Royalties	864.55
+2004	ND	Williams	38105	NGL	Gas Plant Products	Royalties	9974.08
+2004	ND	Williams	38105	Oil	Drip or Scrubber Condensate	Royalties	20.13
+2004	ND	Williams	38105	Oil	Oil	Royalties	47690.2
+2004	ND	Williams	38105	Sulfur	Sulfur	Royalties	76.22
 2005	ND	Billings	38007	Oil & Gas		Bonus	9003476.5
 2005	ND	Billings	38007	Oil & Gas		Other Revenues	3528.29
 2005	ND	Billings	38007	Oil & Gas		Other Royalties	199940.84
 2005	ND	Billings	38007	Oil & Gas		Rents	284210.5
-2005	ND	Billings	38007	Gas (mcf)	Processed (Residue) Gas	Royalties	79162.95
-2005	ND	Billings	38007	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	1174546.73
-2005	ND	Billings	38007	NGL (gal)	Gas Plant Products	Royalties	108804.35
-2005	ND	Billings	38007	Oil (bbl)	Condensate	Royalties	79717.93
-2005	ND	Billings	38007	Oil (bbl)	Drip or Scrubber Condensate	Royalties	2122.94
-2005	ND	Billings	38007	Oil (bbl)	Oil	Royalties	13081251.74
+2005	ND	Billings	38007	Gas	Processed (Residue) Gas	Royalties	79162.95
+2005	ND	Billings	38007	Gas	Unprocessed (Wet) Gas	Royalties	1174546.73
+2005	ND	Billings	38007	NGL	Gas Plant Products	Royalties	108804.35
+2005	ND	Billings	38007	Oil	Condensate	Royalties	79717.93
+2005	ND	Billings	38007	Oil	Drip or Scrubber Condensate	Royalties	2122.94
+2005	ND	Billings	38007	Oil	Oil	Royalties	13081251.74
 2005	ND	Bottineau	38009	Oil & Gas		Rents	1597
-2005	ND	Bottineau	38009	Oil (bbl)	Oil	Royalties	219494.54
+2005	ND	Bottineau	38009	Oil	Oil	Royalties	219494.54
 2005	ND	Bowman	38011	Oil & Gas		Bonus	8880
 2005	ND	Bowman	38011	Oil & Gas		Other Royalties	-15530
 2005	ND	Bowman	38011	Oil & Gas		Rents	9828.5
-2005	ND	Bowman	38011	Gas (mcf)	Processed (Residue) Gas	Royalties	79706
-2005	ND	Bowman	38011	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	1997483.67
-2005	ND	Bowman	38011	NGL (gal)	Gas Plant Products	Royalties	82265.57
-2005	ND	Bowman	38011	Oil (bbl)	Drip or Scrubber Condensate	Royalties	11828.04
-2005	ND	Bowman	38011	Oil (bbl)	Oil	Royalties	11571141.76
+2005	ND	Bowman	38011	Gas	Processed (Residue) Gas	Royalties	79706
+2005	ND	Bowman	38011	Gas	Unprocessed (Wet) Gas	Royalties	1997483.67
+2005	ND	Bowman	38011	NGL	Gas Plant Products	Royalties	82265.57
+2005	ND	Bowman	38011	Oil	Drip or Scrubber Condensate	Royalties	11828.04
+2005	ND	Bowman	38011	Oil	Oil	Royalties	11571141.76
 2005	ND	Burke	38013	Oil & Gas		Rents	1334
-2005	ND	Burke	38013	Gas (mcf)	Gas Lost - Flared or Vented	Royalties	2513.91
-2005	ND	Burke	38013	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	4572.68
-2005	ND	Burke	38013	Oil (bbl)	Oil	Royalties	10969.51
+2005	ND	Burke	38013	Gas	Gas Lost - Flared or Vented	Royalties	2513.91
+2005	ND	Burke	38013	Gas	Unprocessed (Wet) Gas	Royalties	4572.68
+2005	ND	Burke	38013	Oil	Oil	Royalties	10969.51
 2005	ND	Burleigh	38015	Oil & Gas		Rents	121.84
 2005	ND	Divide	38023	Oil & Gas		Bonus	1280
 2005	ND	Divide	38023	Oil & Gas		Other Revenues	15
 2005	ND	Divide	38023	Oil & Gas		Rents	1080
-2005	ND	Divide	38023	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	0.8
-2005	ND	Divide	38023	Oil (bbl)	Oil	Royalties	15.3
+2005	ND	Divide	38023	Gas	Unprocessed (Wet) Gas	Royalties	0.8
+2005	ND	Divide	38023	Oil	Oil	Royalties	15.3
 2005	ND	Dunn	38025	Oil & Gas		Bonus	103795
 2005	ND	Dunn	38025	Oil & Gas		Other Royalties	-6375
 2005	ND	Dunn	38025	Oil & Gas		Rents	48052.5
-2005	ND	Dunn	38025	Gas (mcf)	Processed (Residue) Gas	Royalties	7045.82
-2005	ND	Dunn	38025	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	20200.93
-2005	ND	Dunn	38025	NGL (gal)	Gas Plant Products	Royalties	9733.83
-2005	ND	Dunn	38025	Oil (bbl)	Oil	Royalties	518878.79
+2005	ND	Dunn	38025	Gas	Processed (Residue) Gas	Royalties	7045.82
+2005	ND	Dunn	38025	Gas	Unprocessed (Wet) Gas	Royalties	20200.93
+2005	ND	Dunn	38025	NGL	Gas Plant Products	Royalties	9733.83
+2005	ND	Dunn	38025	Oil	Oil	Royalties	518878.79
 2005	ND	Golden Valle	38033	Oil & Gas		Bonus	180270
 2005	ND	Golden Valle	38033	Oil & Gas		Other Royalties	57450
 2005	ND	Golden Valle	38033	Oil & Gas		Rents	89477.54
-2005	ND	Golden Valle	38033	Gas (mcf)	Processed (Residue) Gas	Royalties	4054.86
-2005	ND	Golden Valle	38033	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	81423.5
-2005	ND	Golden Valle	38033	NGL (gal)	Gas Plant Products	Royalties	-3.35
-2005	ND	Golden Valle	38033	Oil (bbl)	Oil	Royalties	1721383.68
+2005	ND	Golden Valle	38033	Gas	Processed (Residue) Gas	Royalties	4054.86
+2005	ND	Golden Valle	38033	Gas	Unprocessed (Wet) Gas	Royalties	81423.5
+2005	ND	Golden Valle	38033	NGL	Gas Plant Products	Royalties	-3.35
+2005	ND	Golden Valle	38033	Oil	Oil	Royalties	1721383.68
 2005	ND	Mchenry	38049	Oil & Gas		Bonus	560
 2005	ND	Mchenry	38049	Oil & Gas		Rents	420
 2005	ND	Mckenzie	38053	Oil & Gas		Bonus	25323801.5
 2005	ND	Mckenzie	38053	Oil & Gas		Other Revenues	4024.15
 2005	ND	Mckenzie	38053	Oil & Gas		Other Royalties	60590.84
 2005	ND	Mckenzie	38053	Oil & Gas		Rents	437011.16
-2005	ND	Mckenzie	38053	Gas (mcf)	Nitrogen	Royalties	2621.35
-2005	ND	Mckenzie	38053	Gas (mcf)	Processed (Residue) Gas	Royalties	953867.96
-2005	ND	Mckenzie	38053	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	601177.75
-2005	ND	Mckenzie	38053	NGL (gal)	Gas Plant Products	Royalties	265675.05
-2005	ND	Mckenzie	38053	Oil (bbl)	Condensate	Royalties	43675.56
-2005	ND	Mckenzie	38053	Oil (bbl)	Drip or Scrubber Condensate	Royalties	20608.51
-2005	ND	Mckenzie	38053	Oil (bbl)	Oil	Royalties	6684064.32
-2005	ND	Mckenzie	38053	Other Products	Sulfur	Royalties	23.5
+2005	ND	Mckenzie	38053	Gas	Nitrogen	Royalties	2621.35
+2005	ND	Mckenzie	38053	Gas	Processed (Residue) Gas	Royalties	953867.96
+2005	ND	Mckenzie	38053	Gas	Unprocessed (Wet) Gas	Royalties	601177.75
+2005	ND	Mckenzie	38053	NGL	Gas Plant Products	Royalties	265675.05
+2005	ND	Mckenzie	38053	Oil	Condensate	Royalties	43675.56
+2005	ND	Mckenzie	38053	Oil	Drip or Scrubber Condensate	Royalties	20608.51
+2005	ND	Mckenzie	38053	Oil	Oil	Royalties	6684064.32
+2005	ND	Mckenzie	38053	Sulfur	Sulfur	Royalties	23.5
 2005	ND	Mclean	38055	Coal		Bonus	800
 2005	ND	Mclean	38055	Coal		Rents	597
 2005	ND	Mclean	38055	Oil & Gas		Rents	240
@@ -156,83 +156,83 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2005	ND	Mountrail	38061	Oil & Gas		Bonus	461730
 2005	ND	Mountrail	38061	Oil & Gas		Rents	10674.5
 2005	ND	Renville	38075	Oil & Gas		Rents	320
-2005	ND	Renville	38075	Oil (bbl)	Oil	Royalties	123909.12
+2005	ND	Renville	38075	Oil	Oil	Royalties	123909.12
 2005	ND	Slope	38087	Oil & Gas		Rents	187257
-2005	ND	Slope	38087	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	4367.2
-2005	ND	Slope	38087	Oil (bbl)	Drip or Scrubber Condensate	Royalties	1726.24
-2005	ND	Slope	38087	Oil (bbl)	Oil	Royalties	416468.93
+2005	ND	Slope	38087	Gas	Unprocessed (Wet) Gas	Royalties	4367.2
+2005	ND	Slope	38087	Oil	Drip or Scrubber Condensate	Royalties	1726.24
+2005	ND	Slope	38087	Oil	Oil	Royalties	416468.93
 2005	ND	Stark	38089	Oil & Gas		Other Royalties	480
 2005	ND	Stark	38089	Oil & Gas		Rents	1864.5
-2005	ND	Stark	38089	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	124604.69
-2005	ND	Stark	38089	Oil (bbl)	Oil	Royalties	1137013.66
+2005	ND	Stark	38089	Gas	Unprocessed (Wet) Gas	Royalties	124604.69
+2005	ND	Stark	38089	Oil	Oil	Royalties	1137013.66
 2005	ND	Williams	38105	Oil & Gas		Bonus	113080
 2005	ND	Williams	38105	Oil & Gas		Other Revenues	454
 2005	ND	Williams	38105	Coal		Rents	480
 2005	ND	Williams	38105	Oil & Gas		Rents	7002
-2005	ND	Williams	38105	Gas (mcf)	Processed (Residue) Gas	Royalties	45015.09
-2005	ND	Williams	38105	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	5553.04
-2005	ND	Williams	38105	NGL (gal)	Gas Plant Products	Royalties	13143.71
-2005	ND	Williams	38105	Oil (bbl)	Drip or Scrubber Condensate	Royalties	20.92
-2005	ND	Williams	38105	Oil (bbl)	Oil	Royalties	74509.83
-2005	ND	Williams	38105	Other Products	Sulfur	Royalties	11.53
+2005	ND	Williams	38105	Gas	Processed (Residue) Gas	Royalties	45015.09
+2005	ND	Williams	38105	Gas	Unprocessed (Wet) Gas	Royalties	5553.04
+2005	ND	Williams	38105	NGL	Gas Plant Products	Royalties	13143.71
+2005	ND	Williams	38105	Oil	Drip or Scrubber Condensate	Royalties	20.92
+2005	ND	Williams	38105	Oil	Oil	Royalties	74509.83
+2005	ND	Williams	38105	Sulfur	Sulfur	Royalties	11.53
 2006	ND	Billings	38007	Oil & Gas		Bonus	2429089
 2006	ND	Billings	38007	Oil & Gas		Other Revenues	6254
 2006	ND	Billings	38007	Oil & Gas		Other Royalties	106003.98
 2006	ND	Billings	38007	Oil & Gas		Rents	198895.5
-2006	ND	Billings	38007	Gas (mcf)	Processed (Residue) Gas	Royalties	64388.24
-2006	ND	Billings	38007	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	1197348.13
-2006	ND	Billings	38007	NGL (gal)	Gas Plant Products	Royalties	62871.64
-2006	ND	Billings	38007	Oil (bbl)	Condensate	Royalties	19696.29
-2006	ND	Billings	38007	Oil (bbl)	Drip or Scrubber Condensate	Royalties	763.21
-2006	ND	Billings	38007	Oil (bbl)	Oil	Royalties	14756985.88
+2006	ND	Billings	38007	Gas	Processed (Residue) Gas	Royalties	64388.24
+2006	ND	Billings	38007	Gas	Unprocessed (Wet) Gas	Royalties	1197348.13
+2006	ND	Billings	38007	NGL	Gas Plant Products	Royalties	62871.64
+2006	ND	Billings	38007	Oil	Condensate	Royalties	19696.29
+2006	ND	Billings	38007	Oil	Drip or Scrubber Condensate	Royalties	763.21
+2006	ND	Billings	38007	Oil	Oil	Royalties	14756985.88
 2006	ND	Bottineau	38009	Oil & Gas		Rents	1757
-2006	ND	Bottineau	38009	Oil (bbl)	Oil	Royalties	347788.45
+2006	ND	Bottineau	38009	Oil	Oil	Royalties	347788.45
 2006	ND	Bowman	38011	Oil & Gas		Bonus	342002.5
 2006	ND	Bowman	38011	Oil & Gas		Other Royalties	587348.66
 2006	ND	Bowman	38011	Oil & Gas		Rents	20861
-2006	ND	Bowman	38011	Gas (mcf)	Processed (Residue) Gas	Royalties	87972.02
-2006	ND	Bowman	38011	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	2295661.87
-2006	ND	Bowman	38011	NGL (gal)	Gas Plant Products	Royalties	138492.59
-2006	ND	Bowman	38011	Oil (bbl)	Condensate	Royalties	5265.45
-2006	ND	Bowman	38011	Oil (bbl)	Drip or Scrubber Condensate	Royalties	7230.84
-2006	ND	Bowman	38011	Oil (bbl)	Oil	Royalties	15156104.29
+2006	ND	Bowman	38011	Gas	Processed (Residue) Gas	Royalties	87972.02
+2006	ND	Bowman	38011	Gas	Unprocessed (Wet) Gas	Royalties	2295661.87
+2006	ND	Bowman	38011	NGL	Gas Plant Products	Royalties	138492.59
+2006	ND	Bowman	38011	Oil	Condensate	Royalties	5265.45
+2006	ND	Bowman	38011	Oil	Drip or Scrubber Condensate	Royalties	7230.84
+2006	ND	Bowman	38011	Oil	Oil	Royalties	15156104.29
 2006	ND	Burke	38013	Oil & Gas		Bonus	1080
 2006	ND	Burke	38013	Oil & Gas		Rents	2086
-2006	ND	Burke	38013	Gas (mcf)	Gas Lost - Flared or Vented	Royalties	3166.77
-2006	ND	Burke	38013	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	6769.69
-2006	ND	Burke	38013	Oil (bbl)	Oil	Royalties	19075.04
+2006	ND	Burke	38013	Gas	Gas Lost - Flared or Vented	Royalties	3166.77
+2006	ND	Burke	38013	Gas	Unprocessed (Wet) Gas	Royalties	6769.69
+2006	ND	Burke	38013	Oil	Oil	Royalties	19075.04
 2006	ND	Burleigh	38015	Oil & Gas		Rents	121.84
 2006	ND	Divide	38023	Oil & Gas		Bonus	82348.5
 2006	ND	Divide	38023	Oil & Gas		Other Revenues	15
 2006	ND	Divide	38023	Oil & Gas		Rents	5839
-2006	ND	Divide	38023	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	0.66
-2006	ND	Divide	38023	Oil (bbl)	Oil	Royalties	17.1
+2006	ND	Divide	38023	Gas	Unprocessed (Wet) Gas	Royalties	0.66
+2006	ND	Divide	38023	Oil	Oil	Royalties	17.1
 2006	ND	Dunn	38025	Oil & Gas		Bonus	491340
 2006	ND	Dunn	38025	Oil & Gas		Rents	37588.5
-2006	ND	Dunn	38025	Gas (mcf)	Processed (Residue) Gas	Royalties	6397.51
-2006	ND	Dunn	38025	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	29470.99
-2006	ND	Dunn	38025	NGL (gal)	Gas Plant Products	Royalties	6263.12
-2006	ND	Dunn	38025	Oil (bbl)	Oil	Royalties	575018.92
+2006	ND	Dunn	38025	Gas	Processed (Residue) Gas	Royalties	6397.51
+2006	ND	Dunn	38025	Gas	Unprocessed (Wet) Gas	Royalties	29470.99
+2006	ND	Dunn	38025	NGL	Gas Plant Products	Royalties	6263.12
+2006	ND	Dunn	38025	Oil	Oil	Royalties	575018.92
 2006	ND	Golden Valle	38033	Oil & Gas		Bonus	223697.5
 2006	ND	Golden Valle	38033	Oil & Gas		Other Royalties	93850
 2006	ND	Golden Valle	38033	Oil & Gas		Rents	88483.48
-2006	ND	Golden Valle	38033	Gas (mcf)	Processed (Residue) Gas	Royalties	12772.11
-2006	ND	Golden Valle	38033	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	249284.65
-2006	ND	Golden Valle	38033	Oil (bbl)	Drip or Scrubber Condensate	Royalties	45.63
-2006	ND	Golden Valle	38033	Oil (bbl)	Oil	Royalties	2340320.9
+2006	ND	Golden Valle	38033	Gas	Processed (Residue) Gas	Royalties	12772.11
+2006	ND	Golden Valle	38033	Gas	Unprocessed (Wet) Gas	Royalties	249284.65
+2006	ND	Golden Valle	38033	Oil	Drip or Scrubber Condensate	Royalties	45.63
+2006	ND	Golden Valle	38033	Oil	Oil	Royalties	2340320.9
 2006	ND	Mchenry	38049	Oil & Gas		Rents	420
 2006	ND	Mckenzie	38053	Oil & Gas		Bonus	10529565.32
 2006	ND	Mckenzie	38053	Oil & Gas		Other Revenues	768.4
 2006	ND	Mckenzie	38053	Oil & Gas		Other Royalties	-15363.28
 2006	ND	Mckenzie	38053	Oil & Gas		Rents	478010.36
-2006	ND	Mckenzie	38053	Gas (mcf)	Nitrogen	Royalties	1894.39
-2006	ND	Mckenzie	38053	Gas (mcf)	Processed (Residue) Gas	Royalties	639873.54
-2006	ND	Mckenzie	38053	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	732564.24
-2006	ND	Mckenzie	38053	NGL (gal)	Gas Plant Products	Royalties	252850.69
-2006	ND	Mckenzie	38053	Oil (bbl)	Condensate	Royalties	39966.1
-2006	ND	Mckenzie	38053	Oil (bbl)	Drip or Scrubber Condensate	Royalties	17133.3
-2006	ND	Mckenzie	38053	Oil (bbl)	Oil	Royalties	8974706.32
-2006	ND	Mckenzie	38053	Other Products	Sulfur	Royalties	53.91
+2006	ND	Mckenzie	38053	Gas	Nitrogen	Royalties	1894.39
+2006	ND	Mckenzie	38053	Gas	Processed (Residue) Gas	Royalties	639873.54
+2006	ND	Mckenzie	38053	Gas	Unprocessed (Wet) Gas	Royalties	732564.24
+2006	ND	Mckenzie	38053	NGL	Gas Plant Products	Royalties	252850.69
+2006	ND	Mckenzie	38053	Oil	Condensate	Royalties	39966.1
+2006	ND	Mckenzie	38053	Oil	Drip or Scrubber Condensate	Royalties	17133.3
+2006	ND	Mckenzie	38053	Oil	Oil	Royalties	8974706.32
+2006	ND	Mckenzie	38053	Sulfur	Sulfur	Royalties	53.91
 2006	ND	Mclean	38055	Coal		Bonus	800
 2006	ND	Mclean	38055	Coal		Rents	597
 2006	ND	Mclean	38055	Oil & Gas		Rents	2372
@@ -242,86 +242,86 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2006	ND	Mountrail	38061	Oil & Gas		Rents	25180
 2006	ND	Oliver	38065	Coal		Rents	8355.33
 2006	ND	Renville	38075	Oil & Gas		Rents	240
-2006	ND	Renville	38075	Oil (bbl)	Oil	Royalties	137115.73
+2006	ND	Renville	38075	Oil	Oil	Royalties	137115.73
 2006	ND	Slope	38087	Oil & Gas		Bonus	1520
 2006	ND	Slope	38087	Oil & Gas		Other Royalties	-5135.4
 2006	ND	Slope	38087	Oil & Gas		Rents	162844
-2006	ND	Slope	38087	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	2737
-2006	ND	Slope	38087	Oil (bbl)	Drip or Scrubber Condensate	Royalties	1016.34
-2006	ND	Slope	38087	Oil (bbl)	Oil	Royalties	541869.76
+2006	ND	Slope	38087	Gas	Unprocessed (Wet) Gas	Royalties	2737
+2006	ND	Slope	38087	Oil	Drip or Scrubber Condensate	Royalties	1016.34
+2006	ND	Slope	38087	Oil	Oil	Royalties	541869.76
 2006	ND	Stark	38089	Oil & Gas		Other Royalties	-1560.14
 2006	ND	Stark	38089	Oil & Gas		Rents	1296.5
-2006	ND	Stark	38089	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	79393.26
-2006	ND	Stark	38089	Oil (bbl)	Oil	Royalties	899704.52
+2006	ND	Stark	38089	Gas	Unprocessed (Wet) Gas	Royalties	79393.26
+2006	ND	Stark	38089	Oil	Oil	Royalties	899704.52
 2006	ND	Wells	38103	Oil & Gas		Rents	-1320
 2006	ND	Williams	38105	Oil & Gas		Bonus	201015.68
 2006	ND	Williams	38105	Oil & Gas		Other Revenues	506.61
 2006	ND	Williams	38105	Coal		Rents	480
 2006	ND	Williams	38105	Oil & Gas		Rents	9265
-2006	ND	Williams	38105	Gas (mcf)	Processed (Residue) Gas	Royalties	43879.98
-2006	ND	Williams	38105	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	3734.26
-2006	ND	Williams	38105	NGL (gal)	Gas Plant Products	Royalties	17820.05
-2006	ND	Williams	38105	Oil (bbl)	Drip or Scrubber Condensate	Royalties	12.18
-2006	ND	Williams	38105	Oil (bbl)	Oil	Royalties	111257.56
-2006	ND	Williams	38105	Other Products	Sulfur	Royalties	37.66
+2006	ND	Williams	38105	Gas	Processed (Residue) Gas	Royalties	43879.98
+2006	ND	Williams	38105	Gas	Unprocessed (Wet) Gas	Royalties	3734.26
+2006	ND	Williams	38105	NGL	Gas Plant Products	Royalties	17820.05
+2006	ND	Williams	38105	Oil	Drip or Scrubber Condensate	Royalties	12.18
+2006	ND	Williams	38105	Oil	Oil	Royalties	111257.56
+2006	ND	Williams	38105	Sulfur	Sulfur	Royalties	37.66
 2007	ND	Billings	38007	Oil & Gas		Bonus	694526
 2007	ND	Billings	38007	Oil & Gas		Other Revenues	6752.5
 2007	ND	Billings	38007	Oil & Gas		Other Royalties	-23941.34
 2007	ND	Billings	38007	Oil & Gas		Rents	196116.5
-2007	ND	Billings	38007	Gas (mcf)	Processed (Residue) Gas	Royalties	51940.58
-2007	ND	Billings	38007	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	1806823.89
-2007	ND	Billings	38007	NGL (gal)	Gas Plant Products	Royalties	66897.9
-2007	ND	Billings	38007	Oil (bbl)	Condensate	Royalties	4052.78
-2007	ND	Billings	38007	Oil (bbl)	Oil	Royalties	16565695.36
+2007	ND	Billings	38007	Gas	Processed (Residue) Gas	Royalties	51940.58
+2007	ND	Billings	38007	Gas	Unprocessed (Wet) Gas	Royalties	1806823.89
+2007	ND	Billings	38007	NGL	Gas Plant Products	Royalties	66897.9
+2007	ND	Billings	38007	Oil	Condensate	Royalties	4052.78
+2007	ND	Billings	38007	Oil	Oil	Royalties	16565695.36
 2007	ND	Bottineau	38009	Oil & Gas		Bonus	316
 2007	ND	Bottineau	38009	Oil & Gas		Rents	1810
-2007	ND	Bottineau	38009	Oil (bbl)	Oil	Royalties	350881.16
+2007	ND	Bottineau	38009	Oil	Oil	Royalties	350881.16
 2007	ND	Bowman	38011	Oil & Gas		Bonus	35128
 2007	ND	Bowman	38011	Oil & Gas		Other Royalties	366924.47
 2007	ND	Bowman	38011	Oil & Gas		Rents	12843
-2007	ND	Bowman	38011	Gas (mcf)	Processed (Residue) Gas	Royalties	85694.52
-2007	ND	Bowman	38011	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	2043451.87
-2007	ND	Bowman	38011	NGL (gal)	Gas Plant Products	Royalties	222029.7
-2007	ND	Bowman	38011	Oil (bbl)	Drip or Scrubber Condensate	Royalties	1294.28
-2007	ND	Bowman	38011	Oil (bbl)	Oil	Royalties	17986485.12
+2007	ND	Bowman	38011	Gas	Processed (Residue) Gas	Royalties	85694.52
+2007	ND	Bowman	38011	Gas	Unprocessed (Wet) Gas	Royalties	2043451.87
+2007	ND	Bowman	38011	NGL	Gas Plant Products	Royalties	222029.7
+2007	ND	Bowman	38011	Oil	Drip or Scrubber Condensate	Royalties	1294.28
+2007	ND	Bowman	38011	Oil	Oil	Royalties	17986485.12
 2007	ND	Burke	38013	Oil & Gas		Bonus	4870
 2007	ND	Burke	38013	Oil & Gas		Rents	1934.5
-2007	ND	Burke	38013	Gas (mcf)	Gas Lost - Flared or Vented	Royalties	2732.93
-2007	ND	Burke	38013	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	5404.17
-2007	ND	Burke	38013	Oil (bbl)	Oil	Royalties	19952.78
+2007	ND	Burke	38013	Gas	Gas Lost - Flared or Vented	Royalties	2732.93
+2007	ND	Burke	38013	Gas	Unprocessed (Wet) Gas	Royalties	5404.17
+2007	ND	Burke	38013	Oil	Oil	Royalties	19952.78
 2007	ND	Divide	38023	Oil & Gas		Bonus	384720
 2007	ND	Divide	38023	Oil & Gas		Rents	8654.5
-2007	ND	Divide	38023	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	0.34
-2007	ND	Divide	38023	Oil (bbl)	Oil	Royalties	11295.19
+2007	ND	Divide	38023	Gas	Unprocessed (Wet) Gas	Royalties	0.34
+2007	ND	Divide	38023	Oil	Oil	Royalties	11295.19
 2007	ND	Dunn	38025	Oil & Gas		Bonus	866222
 2007	ND	Dunn	38025	Oil & Gas		Other Royalties	-21385
 2007	ND	Dunn	38025	Oil & Gas		Rents	47514
-2007	ND	Dunn	38025	Gas (mcf)	Processed (Residue) Gas	Royalties	2667.98
-2007	ND	Dunn	38025	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	22546.58
-2007	ND	Dunn	38025	NGL (gal)	Gas Plant Products	Royalties	2755.39
-2007	ND	Dunn	38025	Oil (bbl)	Oil	Royalties	635271.5
+2007	ND	Dunn	38025	Gas	Processed (Residue) Gas	Royalties	2667.98
+2007	ND	Dunn	38025	Gas	Unprocessed (Wet) Gas	Royalties	22546.58
+2007	ND	Dunn	38025	NGL	Gas Plant Products	Royalties	2755.39
+2007	ND	Dunn	38025	Oil	Oil	Royalties	635271.5
 2007	ND	Golden Valle	38033	Oil & Gas		Bonus	7760
 2007	ND	Golden Valle	38033	Oil & Gas		Other Revenues	480
 2007	ND	Golden Valle	38033	Oil & Gas		Other Royalties	-55686
 2007	ND	Golden Valle	38033	Oil & Gas		Rents	35842.8
-2007	ND	Golden Valle	38033	Gas (mcf)	Processed (Residue) Gas	Royalties	19406.78
-2007	ND	Golden Valle	38033	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	275435.68
-2007	ND	Golden Valle	38033	NGL (gal)	Gas Plant Products	Royalties	133.48
-2007	ND	Golden Valle	38033	Oil (bbl)	Drip or Scrubber Condensate	Royalties	113.83
-2007	ND	Golden Valle	38033	Oil (bbl)	Oil	Royalties	2640579.37
+2007	ND	Golden Valle	38033	Gas	Processed (Residue) Gas	Royalties	19406.78
+2007	ND	Golden Valle	38033	Gas	Unprocessed (Wet) Gas	Royalties	275435.68
+2007	ND	Golden Valle	38033	NGL	Gas Plant Products	Royalties	133.48
+2007	ND	Golden Valle	38033	Oil	Drip or Scrubber Condensate	Royalties	113.83
+2007	ND	Golden Valle	38033	Oil	Oil	Royalties	2640579.37
 2007	ND	Mchenry	38049	Oil & Gas		Rents	420
 2007	ND	Mckenzie	38053	Oil & Gas		Bonus	4114765
 2007	ND	Mckenzie	38053	Oil & Gas		Other Revenues	1069.33
 2007	ND	Mckenzie	38053	Oil & Gas		Other Royalties	-17027.72
 2007	ND	Mckenzie	38053	Oil & Gas		Rents	482394.46
-2007	ND	Mckenzie	38053	Gas (mcf)	Nitrogen	Royalties	959.6
-2007	ND	Mckenzie	38053	Gas (mcf)	Processed (Residue) Gas	Royalties	423966.08
-2007	ND	Mckenzie	38053	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	1366569.27
-2007	ND	Mckenzie	38053	NGL (gal)	Gas Plant Products	Royalties	114966.6
-2007	ND	Mckenzie	38053	Oil (bbl)	Condensate	Royalties	30965.07
-2007	ND	Mckenzie	38053	Oil (bbl)	Drip or Scrubber Condensate	Royalties	5896.74
-2007	ND	Mckenzie	38053	Oil (bbl)	Oil	Royalties	12978481.47
-2007	ND	Mckenzie	38053	Other Products	Sulfur	Royalties	0.34
+2007	ND	Mckenzie	38053	Gas	Nitrogen	Royalties	959.6
+2007	ND	Mckenzie	38053	Gas	Processed (Residue) Gas	Royalties	423966.08
+2007	ND	Mckenzie	38053	Gas	Unprocessed (Wet) Gas	Royalties	1366569.27
+2007	ND	Mckenzie	38053	NGL	Gas Plant Products	Royalties	114966.6
+2007	ND	Mckenzie	38053	Oil	Condensate	Royalties	30965.07
+2007	ND	Mckenzie	38053	Oil	Drip or Scrubber Condensate	Royalties	5896.74
+2007	ND	Mckenzie	38053	Oil	Oil	Royalties	12978481.47
+2007	ND	Mckenzie	38053	Sulfur	Sulfur	Royalties	0.34
 2007	ND	Mclean	38055	Coal		Bonus	800
 2007	ND	Mclean	38055	Coal		Rents	597
 2007	ND	Mclean	38055	Oil & Gas		Rents	1346
@@ -329,22 +329,22 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2007	ND	Mercer	38057	Coal		Rents	27602.67
 2007	ND	Mountrail	38061	Oil & Gas		Bonus	1611910
 2007	ND	Mountrail	38061	Oil & Gas		Rents	22908
-2007	ND	Mountrail	38061	Oil (bbl)	Oil	Royalties	4842.07
+2007	ND	Mountrail	38061	Oil	Oil	Royalties	4842.07
 2007	ND	Oliver	38065	Coal		Bonus	6400
 2007	ND	Oliver	38065	Coal		Rents	1869.33
 2007	ND	Renville	38075	Oil & Gas		Bonus	3600
 2007	ND	Renville	38075	Oil & Gas		Rents	780
-2007	ND	Renville	38075	Oil (bbl)	Oil	Royalties	244847.19
+2007	ND	Renville	38075	Oil	Oil	Royalties	244847.19
 2007	ND	Slope	38087	Oil & Gas		Bonus	28965
 2007	ND	Slope	38087	Oil & Gas		Other Royalties	1015
 2007	ND	Slope	38087	Oil & Gas		Rents	29173.5
-2007	ND	Slope	38087	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	381.51
-2007	ND	Slope	38087	Oil (bbl)	Drip or Scrubber Condensate	Royalties	154.06
-2007	ND	Slope	38087	Oil (bbl)	Oil	Royalties	747949.82
+2007	ND	Slope	38087	Gas	Unprocessed (Wet) Gas	Royalties	381.51
+2007	ND	Slope	38087	Oil	Drip or Scrubber Condensate	Royalties	154.06
+2007	ND	Slope	38087	Oil	Oil	Royalties	747949.82
 2007	ND	Stark	38089	Oil & Gas		Other Royalties	-3006
 2007	ND	Stark	38089	Oil & Gas		Rents	960
-2007	ND	Stark	38089	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	66083.05
-2007	ND	Stark	38089	Oil (bbl)	Oil	Royalties	785425.26
+2007	ND	Stark	38089	Gas	Unprocessed (Wet) Gas	Royalties	66083.05
+2007	ND	Stark	38089	Oil	Oil	Royalties	785425.26
 2007	ND	Ward	38101	Oil & Gas		Bonus	1280
 2007	ND	Ward	38101	Oil & Gas		Rents	240
 2007	ND	Williams	38105	Oil & Gas		Bonus	171360
@@ -352,69 +352,69 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2007	ND	Williams	38105	Oil & Gas		Other Royalties	-500
 2007	ND	Williams	38105	Coal		Rents	480
 2007	ND	Williams	38105	Oil & Gas		Rents	11803
-2007	ND	Williams	38105	Gas (mcf)	Processed (Residue) Gas	Royalties	51033.36
-2007	ND	Williams	38105	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	4680.49
-2007	ND	Williams	38105	NGL (gal)	Gas Plant Products	Royalties	19307.4
-2007	ND	Williams	38105	Oil (bbl)	Condensate	Royalties	1387.12
-2007	ND	Williams	38105	Oil (bbl)	Oil	Royalties	178020.87
-2007	ND	Williams	38105	Other Products	Sulfur	Royalties	0.48
+2007	ND	Williams	38105	Gas	Processed (Residue) Gas	Royalties	51033.36
+2007	ND	Williams	38105	Gas	Unprocessed (Wet) Gas	Royalties	4680.49
+2007	ND	Williams	38105	NGL	Gas Plant Products	Royalties	19307.4
+2007	ND	Williams	38105	Oil	Condensate	Royalties	1387.12
+2007	ND	Williams	38105	Oil	Oil	Royalties	178020.87
+2007	ND	Williams	38105	Sulfur	Sulfur	Royalties	0.48
 2008	ND	Billings	38007	Oil & Gas		Bonus	94782.5
 2008	ND	Billings	38007	Oil & Gas		Other Revenues	4600.5
 2008	ND	Billings	38007	Oil & Gas		Other Royalties	975923.6
 2008	ND	Billings	38007	Oil & Gas		Rents	192229
-2008	ND	Billings	38007	Gas (mcf)	Processed (Residue) Gas	Royalties	1766026.87
-2008	ND	Billings	38007	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	62224.83
-2008	ND	Billings	38007	NGL (gal)	Gas Plant Products	Royalties	422197.25
-2008	ND	Billings	38007	Oil (bbl)	Condensate	Royalties	6401.26
-2008	ND	Billings	38007	Oil (bbl)	Drip or Scrubber Condensate	Royalties	20547.11
-2008	ND	Billings	38007	Oil (bbl)	Inlet Scrubber	Royalties	-18654.82
-2008	ND	Billings	38007	Oil (bbl)	Oil	Royalties	25044568.45
+2008	ND	Billings	38007	Gas	Processed (Residue) Gas	Royalties	1766026.87
+2008	ND	Billings	38007	Gas	Unprocessed (Wet) Gas	Royalties	62224.83
+2008	ND	Billings	38007	NGL	Gas Plant Products	Royalties	422197.25
+2008	ND	Billings	38007	Oil	Condensate	Royalties	6401.26
+2008	ND	Billings	38007	Oil	Drip or Scrubber Condensate	Royalties	20547.11
+2008	ND	Billings	38007	Oil	Inlet Scrubber	Royalties	-18654.82
+2008	ND	Billings	38007	Oil	Oil	Royalties	25044568.45
 2008	ND	Bottineau	38009	Oil & Gas		Rents	2489
-2008	ND	Bottineau	38009	Oil (bbl)	Oil	Royalties	470979.19
+2008	ND	Bottineau	38009	Oil	Oil	Royalties	470979.19
 2008	ND	Bowman	38011	Oil & Gas		Bonus	4440
 2008	ND	Bowman	38011	Oil & Gas		Other Royalties	-301660
 2008	ND	Bowman	38011	Oil & Gas		Rents	15301.5
-2008	ND	Bowman	38011	Gas (mcf)	Processed (Residue) Gas	Royalties	147298.07
-2008	ND	Bowman	38011	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	2618903.14
-2008	ND	Bowman	38011	NGL (gal)	Gas Plant Products	Royalties	358766.68
-2008	ND	Bowman	38011	Oil (bbl)	Oil	Royalties	27768194.37
+2008	ND	Bowman	38011	Gas	Processed (Residue) Gas	Royalties	147298.07
+2008	ND	Bowman	38011	Gas	Unprocessed (Wet) Gas	Royalties	2618903.14
+2008	ND	Bowman	38011	NGL	Gas Plant Products	Royalties	358766.68
+2008	ND	Bowman	38011	Oil	Oil	Royalties	27768194.37
 2008	ND	Burke	38013	Oil & Gas		Bonus	247050
 2008	ND	Burke	38013	Oil & Gas		Rents	2238.5
-2008	ND	Burke	38013	Gas (mcf)	Gas Lost - Flared or Vented	Royalties	4395.19
-2008	ND	Burke	38013	Gas (mcf)	Processed (Residue) Gas	Royalties	2137.49
-2008	ND	Burke	38013	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	7054.34
-2008	ND	Burke	38013	NGL (gal)	Gas Plant Products	Royalties	3703.31
-2008	ND	Burke	38013	Oil (bbl)	Condensate	Royalties	14961.55
-2008	ND	Burke	38013	Oil (bbl)	Oil	Royalties	50880.15
+2008	ND	Burke	38013	Gas	Gas Lost - Flared or Vented	Royalties	4395.19
+2008	ND	Burke	38013	Gas	Processed (Residue) Gas	Royalties	2137.49
+2008	ND	Burke	38013	Gas	Unprocessed (Wet) Gas	Royalties	7054.34
+2008	ND	Burke	38013	NGL	Gas Plant Products	Royalties	3703.31
+2008	ND	Burke	38013	Oil	Condensate	Royalties	14961.55
+2008	ND	Burke	38013	Oil	Oil	Royalties	50880.15
 2008	ND	Divide	38023	Oil & Gas		Other Revenues	2.49
 2008	ND	Divide	38023	Oil & Gas		Rents	10414.5
-2008	ND	Divide	38023	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	0.53
-2008	ND	Divide	38023	Oil (bbl)	Oil	Royalties	7445.54
+2008	ND	Divide	38023	Gas	Unprocessed (Wet) Gas	Royalties	0.53
+2008	ND	Divide	38023	Oil	Oil	Royalties	7445.54
 2008	ND	Dunn	38025	Oil & Gas		Bonus	13710050
 2008	ND	Dunn	38025	Oil & Gas		Other Royalties	25444.53
 2008	ND	Dunn	38025	Oil & Gas		Rents	48836
-2008	ND	Dunn	38025	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	71883.63
-2008	ND	Dunn	38025	Oil (bbl)	Oil	Royalties	2064023.48
+2008	ND	Dunn	38025	Gas	Unprocessed (Wet) Gas	Royalties	71883.63
+2008	ND	Dunn	38025	Oil	Oil	Royalties	2064023.48
 2008	ND	Golden Valle	38033	Oil & Gas		Bonus	49350
 2008	ND	Golden Valle	38033	Oil & Gas		Other Revenues	5814
 2008	ND	Golden Valle	38033	Oil & Gas		Other Royalties	27443.69
 2008	ND	Golden Valle	38033	Oil & Gas		Rents	35501.5
-2008	ND	Golden Valle	38033	Gas (mcf)	Processed (Residue) Gas	Royalties	96485.27
-2008	ND	Golden Valle	38033	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	261163.23
-2008	ND	Golden Valle	38033	NGL (gal)	Gas Plant Products	Royalties	128299.15
-2008	ND	Golden Valle	38033	Oil (bbl)	Oil	Royalties	3988168.82
+2008	ND	Golden Valle	38033	Gas	Processed (Residue) Gas	Royalties	96485.27
+2008	ND	Golden Valle	38033	Gas	Unprocessed (Wet) Gas	Royalties	261163.23
+2008	ND	Golden Valle	38033	NGL	Gas Plant Products	Royalties	128299.15
+2008	ND	Golden Valle	38033	Oil	Oil	Royalties	3988168.82
 2008	ND	Mchenry	38049	Oil & Gas		Rents	420
 2008	ND	Mckenzie	38053	Oil & Gas		Bonus	3841810
 2008	ND	Mckenzie	38053	Oil & Gas		Other Revenues	2836.86
 2008	ND	Mckenzie	38053	Oil & Gas		Other Royalties	88805.48
 2008	ND	Mckenzie	38053	Oil & Gas		Rents	463777
-2008	ND	Mckenzie	38053	Gas (mcf)	Nitrogen	Royalties	912.99
-2008	ND	Mckenzie	38053	Gas (mcf)	Processed (Residue) Gas	Royalties	535900.57
-2008	ND	Mckenzie	38053	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	2125558.25
-2008	ND	Mckenzie	38053	NGL (gal)	Gas Plant Products	Royalties	144960.69
-2008	ND	Mckenzie	38053	Oil (bbl)	Condensate	Royalties	27285.91
-2008	ND	Mckenzie	38053	Oil (bbl)	Drip or Scrubber Condensate	Royalties	7751.46
-2008	ND	Mckenzie	38053	Oil (bbl)	Oil	Royalties	18860296.72
+2008	ND	Mckenzie	38053	Gas	Nitrogen	Royalties	912.99
+2008	ND	Mckenzie	38053	Gas	Processed (Residue) Gas	Royalties	535900.57
+2008	ND	Mckenzie	38053	Gas	Unprocessed (Wet) Gas	Royalties	2125558.25
+2008	ND	Mckenzie	38053	NGL	Gas Plant Products	Royalties	144960.69
+2008	ND	Mckenzie	38053	Oil	Condensate	Royalties	27285.91
+2008	ND	Mckenzie	38053	Oil	Drip or Scrubber Condensate	Royalties	7751.46
+2008	ND	Mckenzie	38053	Oil	Oil	Royalties	18860296.72
 2008	ND	Mclean	38055	Coal		Rents	597
 2008	ND	Mclean	38055	Oil & Gas		Rents	1688
 2008	ND	Mercer	38057	Coal		Bonus	106680
@@ -425,23 +425,23 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2008	ND	Mountrail	38061	Oil & Gas		Other Revenues	39.55
 2008	ND	Mountrail	38061	Oil & Gas		Other Royalties	118000
 2008	ND	Mountrail	38061	Oil & Gas		Rents	50010.44
-2008	ND	Mountrail	38061	Gas (mcf)	Processed (Residue) Gas	Royalties	2002.27
-2008	ND	Mountrail	38061	NGL (gal)	Gas Plant Products	Royalties	1690.66
-2008	ND	Mountrail	38061	Oil (bbl)	Oil	Royalties	809602.49
+2008	ND	Mountrail	38061	Gas	Processed (Residue) Gas	Royalties	2002.27
+2008	ND	Mountrail	38061	NGL	Gas Plant Products	Royalties	1690.66
+2008	ND	Mountrail	38061	Oil	Oil	Royalties	809602.49
 2008	ND	Oliver	38065	Coal		Bonus	6400
 2008	ND	Oliver	38065	Coal		Rents	8406
 2008	ND	Renville	38075	Oil & Gas		Bonus	10800
 2008	ND	Renville	38075	Oil & Gas		Rents	60
-2008	ND	Renville	38075	Oil (bbl)	Oil	Royalties	458801.69
+2008	ND	Renville	38075	Oil	Oil	Royalties	458801.69
 2008	ND	Slope	38087	Oil & Gas		Bonus	85356
 2008	ND	Slope	38087	Oil & Gas		Other Royalties	-690
 2008	ND	Slope	38087	Oil & Gas		Rents	38385
-2008	ND	Slope	38087	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	11744.88
-2008	ND	Slope	38087	Oil (bbl)	Oil	Royalties	1180404.63
+2008	ND	Slope	38087	Gas	Unprocessed (Wet) Gas	Royalties	11744.88
+2008	ND	Slope	38087	Oil	Oil	Royalties	1180404.63
 2008	ND	Stark	38089	Oil & Gas		Other Royalties	-2367
 2008	ND	Stark	38089	Oil & Gas		Rents	4.5
-2008	ND	Stark	38089	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	97904.27
-2008	ND	Stark	38089	Oil (bbl)	Oil	Royalties	1083887.11
+2008	ND	Stark	38089	Gas	Unprocessed (Wet) Gas	Royalties	97904.27
+2008	ND	Stark	38089	Oil	Oil	Royalties	1083887.11
 2008	ND	Ward	38101	Oil & Gas		Bonus	91181
 2008	ND	Ward	38101	Oil & Gas		Rents	2496
 2008	ND	Williams	38105	Oil & Gas		Bonus	7774
@@ -449,73 +449,73 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2008	ND	Williams	38105	Oil & Gas		Other Royalties	20994.6
 2008	ND	Williams	38105	Coal		Rents	480
 2008	ND	Williams	38105	Oil & Gas		Rents	9745
-2008	ND	Williams	38105	Gas (mcf)	Nitrogen	Royalties	0.66
-2008	ND	Williams	38105	Gas (mcf)	Processed (Residue) Gas	Royalties	63663.69
-2008	ND	Williams	38105	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	9597.6
-2008	ND	Williams	38105	NGL (gal)	Gas Plant Products	Royalties	30173.75
-2008	ND	Williams	38105	Oil (bbl)	Condensate	Royalties	3962.62
-2008	ND	Williams	38105	Oil (bbl)	Drip or Scrubber Condensate	Royalties	174.42
-2008	ND	Williams	38105	Oil (bbl)	Oil	Royalties	356553.56
+2008	ND	Williams	38105	Gas	Nitrogen	Royalties	0.66
+2008	ND	Williams	38105	Gas	Processed (Residue) Gas	Royalties	63663.69
+2008	ND	Williams	38105	Gas	Unprocessed (Wet) Gas	Royalties	9597.6
+2008	ND	Williams	38105	NGL	Gas Plant Products	Royalties	30173.75
+2008	ND	Williams	38105	Oil	Condensate	Royalties	3962.62
+2008	ND	Williams	38105	Oil	Drip or Scrubber Condensate	Royalties	174.42
+2008	ND	Williams	38105	Oil	Oil	Royalties	356553.56
 2009	ND	Billings	38007	Oil & Gas		Bonus	3616814
 2009	ND	Billings	38007	Oil & Gas		Other Revenues	6699
 2009	ND	Billings	38007	Oil & Gas		Other Royalties	-557726.56
 2009	ND	Billings	38007	Hardrock		Rents	4178
 2009	ND	Billings	38007	Oil & Gas		Rents	219039.5
-2009	ND	Billings	38007	Gas (mcf)	Processed (Residue) Gas	Royalties	86440.72
-2009	ND	Billings	38007	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	415211.11
-2009	ND	Billings	38007	NGL (gal)	Gas Plant Products	Royalties	220643.62
-2009	ND	Billings	38007	Oil (bbl)	Condensate	Royalties	1936.99
-2009	ND	Billings	38007	Oil (bbl)	Oil	Royalties	10257043.03
+2009	ND	Billings	38007	Gas	Processed (Residue) Gas	Royalties	86440.72
+2009	ND	Billings	38007	Gas	Unprocessed (Wet) Gas	Royalties	415211.11
+2009	ND	Billings	38007	NGL	Gas Plant Products	Royalties	220643.62
+2009	ND	Billings	38007	Oil	Condensate	Royalties	1936.99
+2009	ND	Billings	38007	Oil	Oil	Royalties	10257043.03
 2009	ND	Bottineau	38009	Oil & Gas		Bonus	1520
 2009	ND	Bottineau	38009	Oil & Gas		Rents	3373
-2009	ND	Bottineau	38009	Oil (bbl)	Oil	Royalties	215238.42
+2009	ND	Bottineau	38009	Oil	Oil	Royalties	215238.42
 2009	ND	Bowman	38011	Oil & Gas		Bonus	900
 2009	ND	Bowman	38011	Oil & Gas		Other Revenues	160
 2009	ND	Bowman	38011	Oil & Gas		Other Royalties	-155590
 2009	ND	Bowman	38011	Oil & Gas		Rents	13929.5
-2009	ND	Bowman	38011	Gas (mcf)	Processed (Residue) Gas	Royalties	42387.85
-2009	ND	Bowman	38011	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	765893.24
-2009	ND	Bowman	38011	NGL (gal)	Gas Plant Products	Royalties	138029.42
-2009	ND	Bowman	38011	Oil (bbl)	Oil	Royalties	12399453.48
+2009	ND	Bowman	38011	Gas	Processed (Residue) Gas	Royalties	42387.85
+2009	ND	Bowman	38011	Gas	Unprocessed (Wet) Gas	Royalties	765893.24
+2009	ND	Bowman	38011	NGL	Gas Plant Products	Royalties	138029.42
+2009	ND	Bowman	38011	Oil	Oil	Royalties	12399453.48
 2009	ND	Burke	38013	Oil & Gas		Bonus	933545
 2009	ND	Burke	38013	Oil & Gas		Rents	6291
-2009	ND	Burke	38013	Gas (mcf)	Gas Lost - Flared or Vented	Royalties	1482.48
-2009	ND	Burke	38013	Gas (mcf)	Processed (Residue) Gas	Royalties	6252.96
-2009	ND	Burke	38013	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	-10120.04
-2009	ND	Burke	38013	NGL (gal)	Gas Plant Products	Royalties	7380.97
-2009	ND	Burke	38013	Oil (bbl)	Condensate	Royalties	1744.23
-2009	ND	Burke	38013	Oil (bbl)	Oil	Royalties	30210.25
+2009	ND	Burke	38013	Gas	Gas Lost - Flared or Vented	Royalties	1482.48
+2009	ND	Burke	38013	Gas	Processed (Residue) Gas	Royalties	6252.96
+2009	ND	Burke	38013	Gas	Unprocessed (Wet) Gas	Royalties	-10120.04
+2009	ND	Burke	38013	NGL	Gas Plant Products	Royalties	7380.97
+2009	ND	Burke	38013	Oil	Condensate	Royalties	1744.23
+2009	ND	Burke	38013	Oil	Oil	Royalties	30210.25
 2009	ND	Divide	38023	Oil & Gas		Bonus	19200
 2009	ND	Divide	38023	Oil & Gas		Other Revenues	15
 2009	ND	Divide	38023	Oil & Gas		Rents	6334.5
-2009	ND	Divide	38023	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	0.2
-2009	ND	Divide	38023	Oil (bbl)	Oil	Royalties	2688.83
+2009	ND	Divide	38023	Gas	Unprocessed (Wet) Gas	Royalties	0.2
+2009	ND	Divide	38023	Oil	Oil	Royalties	2688.83
 2009	ND	Dunn	38025	Oil & Gas		Bonus	14405860
 2009	ND	Dunn	38025	Oil & Gas		Other Royalties	-2457.22
 2009	ND	Dunn	38025	Oil & Gas		Rents	50356
-2009	ND	Dunn	38025	Gas (mcf)	Processed (Residue) Gas	Royalties	36293.01
-2009	ND	Dunn	38025	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	153726.04
-2009	ND	Dunn	38025	NGL (gal)	Gas Plant Products	Royalties	47166.53
-2009	ND	Dunn	38025	Oil (bbl)	Oil	Royalties	2933697.98
+2009	ND	Dunn	38025	Gas	Processed (Residue) Gas	Royalties	36293.01
+2009	ND	Dunn	38025	Gas	Unprocessed (Wet) Gas	Royalties	153726.04
+2009	ND	Dunn	38025	NGL	Gas Plant Products	Royalties	47166.53
+2009	ND	Dunn	38025	Oil	Oil	Royalties	2933697.98
 2009	ND	Golden Valle	38033	Oil & Gas		Bonus	430800
 2009	ND	Golden Valle	38033	Oil & Gas		Other Revenues	1352.31
 2009	ND	Golden Valle	38033	Oil & Gas		Other Royalties	-72301.15
 2009	ND	Golden Valle	38033	Oil & Gas		Rents	70386.5
-2009	ND	Golden Valle	38033	Gas (mcf)	Processed (Residue) Gas	Royalties	35597.98
-2009	ND	Golden Valle	38033	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	88761.71
-2009	ND	Golden Valle	38033	NGL (gal)	Gas Plant Products	Royalties	61823.36
-2009	ND	Golden Valle	38033	Oil (bbl)	Oil	Royalties	1643130.67
+2009	ND	Golden Valle	38033	Gas	Processed (Residue) Gas	Royalties	35597.98
+2009	ND	Golden Valle	38033	Gas	Unprocessed (Wet) Gas	Royalties	88761.71
+2009	ND	Golden Valle	38033	NGL	Gas Plant Products	Royalties	61823.36
+2009	ND	Golden Valle	38033	Oil	Oil	Royalties	1643130.67
 2009	ND	Mckenzie	38053	Oil & Gas		Bonus	12678934.82
 2009	ND	Mckenzie	38053	Oil & Gas		Other Revenues	3969
 2009	ND	Mckenzie	38053	Oil & Gas		Other Royalties	-36522.79
 2009	ND	Mckenzie	38053	Oil & Gas		Rents	472194.32
-2009	ND	Mckenzie	38053	Gas (mcf)	Nitrogen	Royalties	1042.37
-2009	ND	Mckenzie	38053	Gas (mcf)	Processed (Residue) Gas	Royalties	366546.84
-2009	ND	Mckenzie	38053	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	995575.81
-2009	ND	Mckenzie	38053	NGL (gal)	Gas Plant Products	Royalties	181168.74
-2009	ND	Mckenzie	38053	Oil (bbl)	Condensate	Royalties	45907.94
-2009	ND	Mckenzie	38053	Oil (bbl)	Drip or Scrubber Condensate	Royalties	2237.93
-2009	ND	Mckenzie	38053	Oil (bbl)	Oil	Royalties	11535568.37
+2009	ND	Mckenzie	38053	Gas	Nitrogen	Royalties	1042.37
+2009	ND	Mckenzie	38053	Gas	Processed (Residue) Gas	Royalties	366546.84
+2009	ND	Mckenzie	38053	Gas	Unprocessed (Wet) Gas	Royalties	995575.81
+2009	ND	Mckenzie	38053	NGL	Gas Plant Products	Royalties	181168.74
+2009	ND	Mckenzie	38053	Oil	Condensate	Royalties	45907.94
+2009	ND	Mckenzie	38053	Oil	Drip or Scrubber Condensate	Royalties	2237.93
+2009	ND	Mckenzie	38053	Oil	Oil	Royalties	11535568.37
 2009	ND	Mclean	38055	Coal		Rents	597
 2009	ND	Mclean	38055	Oil & Gas		Rents	1688
 2009	ND	Mercer	38057	Coal		Bonus	106680
@@ -524,90 +524,90 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2009	ND	Mountrail	38061	Oil & Gas		Bonus	60693075
 2009	ND	Mountrail	38061	Oil & Gas		Other Royalties	-23500
 2009	ND	Mountrail	38061	Oil & Gas		Rents	77355.56
-2009	ND	Mountrail	38061	Gas (mcf)	Processed (Residue) Gas	Royalties	16923.4
-2009	ND	Mountrail	38061	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	5599.87
-2009	ND	Mountrail	38061	NGL (gal)	Gas Plant Products	Royalties	28134.57
-2009	ND	Mountrail	38061	Oil (bbl)	Drip or Scrubber Condensate	Royalties	197.17
-2009	ND	Mountrail	38061	Oil (bbl)	Oil	Royalties	1872191.52
+2009	ND	Mountrail	38061	Gas	Processed (Residue) Gas	Royalties	16923.4
+2009	ND	Mountrail	38061	Gas	Unprocessed (Wet) Gas	Royalties	5599.87
+2009	ND	Mountrail	38061	NGL	Gas Plant Products	Royalties	28134.57
+2009	ND	Mountrail	38061	Oil	Drip or Scrubber Condensate	Royalties	197.17
+2009	ND	Mountrail	38061	Oil	Oil	Royalties	1872191.52
 2009	ND	Oliver	38065	Coal		Bonus	6400
 2009	ND	Oliver	38065	Coal		Rents	6501.66
 2009	ND	Renville	38075	Oil & Gas		Bonus	2580
 2009	ND	Renville	38075	Oil & Gas		Rents	1267.5
-2009	ND	Renville	38075	Oil (bbl)	Oil	Royalties	215819.08
+2009	ND	Renville	38075	Oil	Oil	Royalties	215819.08
 2009	ND	Slope	38087	Oil & Gas		Bonus	528901
 2009	ND	Slope	38087	Oil & Gas		Other Royalties	-1040
 2009	ND	Slope	38087	Hardrock		Rents	12637
 2009	ND	Slope	38087	Oil & Gas		Rents	173857.5
-2009	ND	Slope	38087	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	-83.45
-2009	ND	Slope	38087	Oil (bbl)	Oil	Royalties	657224.85
+2009	ND	Slope	38087	Gas	Unprocessed (Wet) Gas	Royalties	-83.45
+2009	ND	Slope	38087	Oil	Oil	Royalties	657224.85
 2009	ND	Stark	38089	Oil & Gas		Other Royalties	-1814.56
-2009	ND	Stark	38089	Gas (mcf)	Processed (Residue) Gas	Royalties	162.68
-2009	ND	Stark	38089	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	34407.82
-2009	ND	Stark	38089	NGL (gal)	Gas Plant Products	Royalties	782.26
-2009	ND	Stark	38089	Oil (bbl)	Oil	Royalties	473109.35
+2009	ND	Stark	38089	Gas	Processed (Residue) Gas	Royalties	162.68
+2009	ND	Stark	38089	Gas	Unprocessed (Wet) Gas	Royalties	34407.82
+2009	ND	Stark	38089	NGL	Gas Plant Products	Royalties	782.26
+2009	ND	Stark	38089	Oil	Oil	Royalties	473109.35
 2009	ND	Ward	38101	Oil & Gas		Bonus	30184
 2009	ND	Ward	38101	Oil & Gas		Rents	4725
 2009	ND	Williams	38105	Oil & Gas		Bonus	790691.18
 2009	ND	Williams	38105	Oil & Gas		Other Royalties	-6476.45
 2009	ND	Williams	38105	Coal		Rents	480
 2009	ND	Williams	38105	Oil & Gas		Rents	15289.48
-2009	ND	Williams	38105	Gas (mcf)	Processed (Residue) Gas	Royalties	29397.08
-2009	ND	Williams	38105	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	2578.06
-2009	ND	Williams	38105	NGL (gal)	Gas Plant Products	Royalties	17138.85
-2009	ND	Williams	38105	Oil (bbl)	Drip or Scrubber Condensate	Royalties	2.17
-2009	ND	Williams	38105	Oil (bbl)	Oil	Royalties	257849.25
-2009	ND	Williams	38105	Other Products	Sulfur	Royalties	0.01
+2009	ND	Williams	38105	Gas	Processed (Residue) Gas	Royalties	29397.08
+2009	ND	Williams	38105	Gas	Unprocessed (Wet) Gas	Royalties	2578.06
+2009	ND	Williams	38105	NGL	Gas Plant Products	Royalties	17138.85
+2009	ND	Williams	38105	Oil	Drip or Scrubber Condensate	Royalties	2.17
+2009	ND	Williams	38105	Oil	Oil	Royalties	257849.25
+2009	ND	Williams	38105	Sulfur	Sulfur	Royalties	0.01
 2010	ND	Billings	38007	Oil & Gas		Bonus	46000
 2010	ND	Billings	38007	Oil & Gas		Other Revenues	7490.5
 2010	ND	Billings	38007	Oil & Gas		Other Royalties	115583.19
 2010	ND	Billings	38007	Oil & Gas		Rents	205249
-2010	ND	Billings	38007	Gas (mcf)	Processed (Residue) Gas	Royalties	121224.53
-2010	ND	Billings	38007	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	519962.77
-2010	ND	Billings	38007	NGL (gal)	Gas Plant Products	Royalties	267824.05
-2010	ND	Billings	38007	Oil (bbl)	Condensate	Royalties	2104.22
-2010	ND	Billings	38007	Oil (bbl)	Oil	Royalties	13882967.11
+2010	ND	Billings	38007	Gas	Processed (Residue) Gas	Royalties	121224.53
+2010	ND	Billings	38007	Gas	Unprocessed (Wet) Gas	Royalties	519962.77
+2010	ND	Billings	38007	NGL	Gas Plant Products	Royalties	267824.05
+2010	ND	Billings	38007	Oil	Condensate	Royalties	2104.22
+2010	ND	Billings	38007	Oil	Oil	Royalties	13882967.11
 2010	ND	Bottineau	38009	Oil & Gas		Rents	3741
-2010	ND	Bottineau	38009	Oil (bbl)	Oil	Royalties	231292.19
+2010	ND	Bottineau	38009	Oil	Oil	Royalties	231292.19
 2010	ND	Bowman	38011	Oil & Gas		Other Royalties	12425
 2010	ND	Bowman	38011	Oil & Gas		Rents	14259.5
-2010	ND	Bowman	38011	Gas (mcf)	Processed (Residue) Gas	Royalties	41984.59
-2010	ND	Bowman	38011	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	919782.25
-2010	ND	Bowman	38011	NGL (gal)	Gas Plant Products	Royalties	159543.42
-2010	ND	Bowman	38011	Oil (bbl)	Oil	Royalties	14448639.23
+2010	ND	Bowman	38011	Gas	Processed (Residue) Gas	Royalties	41984.59
+2010	ND	Bowman	38011	Gas	Unprocessed (Wet) Gas	Royalties	919782.25
+2010	ND	Bowman	38011	NGL	Gas Plant Products	Royalties	159543.42
+2010	ND	Bowman	38011	Oil	Oil	Royalties	14448639.23
 2010	ND	Burke	38013	Oil & Gas		Rents	4500.5
-2010	ND	Burke	38013	Gas (mcf)	Gas Lost - Flared or Vented	Royalties	1045.69
-2010	ND	Burke	38013	Gas (mcf)	Processed (Residue) Gas	Royalties	1396.88
-2010	ND	Burke	38013	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	2648.93
-2010	ND	Burke	38013	NGL (gal)	Gas Plant Products	Royalties	1470.55
-2010	ND	Burke	38013	Oil (bbl)	Condensate	Royalties	415.76
-2010	ND	Burke	38013	Oil (bbl)	Oil	Royalties	28908.09
+2010	ND	Burke	38013	Gas	Gas Lost - Flared or Vented	Royalties	1045.69
+2010	ND	Burke	38013	Gas	Processed (Residue) Gas	Royalties	1396.88
+2010	ND	Burke	38013	Gas	Unprocessed (Wet) Gas	Royalties	2648.93
+2010	ND	Burke	38013	NGL	Gas Plant Products	Royalties	1470.55
+2010	ND	Burke	38013	Oil	Condensate	Royalties	415.76
+2010	ND	Burke	38013	Oil	Oil	Royalties	28908.09
 2010	ND	Divide	38023	Oil & Gas		Rents	8014.5
-2010	ND	Divide	38023	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	0.23
-2010	ND	Divide	38023	Oil (bbl)	Oil	Royalties	5717.45
+2010	ND	Divide	38023	Gas	Unprocessed (Wet) Gas	Royalties	0.23
+2010	ND	Divide	38023	Oil	Oil	Royalties	5717.45
 2010	ND	Dunn	38025	Oil & Gas		Bonus	4200
 2010	ND	Dunn	38025	Oil & Gas		Other Royalties	61287.96
 2010	ND	Dunn	38025	Oil & Gas		Rents	30971.5
-2010	ND	Dunn	38025	Gas (mcf)	Processed (Residue) Gas	Royalties	21787.99
-2010	ND	Dunn	38025	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	374042.72
-2010	ND	Dunn	38025	NGL (gal)	Gas Plant Products	Royalties	31806.9
-2010	ND	Dunn	38025	Oil (bbl)	Oil	Royalties	5805095.02
+2010	ND	Dunn	38025	Gas	Processed (Residue) Gas	Royalties	21787.99
+2010	ND	Dunn	38025	Gas	Unprocessed (Wet) Gas	Royalties	374042.72
+2010	ND	Dunn	38025	NGL	Gas Plant Products	Royalties	31806.9
+2010	ND	Dunn	38025	Oil	Oil	Royalties	5805095.02
 2010	ND	Golden Valle	38033	Oil & Gas		Other Royalties	185057.46
 2010	ND	Golden Valle	38033	Oil & Gas		Rents	75185
-2010	ND	Golden Valle	38033	Gas (mcf)	Processed (Residue) Gas	Royalties	48923.73
-2010	ND	Golden Valle	38033	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	113627.27
-2010	ND	Golden Valle	38033	NGL (gal)	Gas Plant Products	Royalties	108490.3
-2010	ND	Golden Valle	38033	Oil (bbl)	Oil	Royalties	2687559.11
+2010	ND	Golden Valle	38033	Gas	Processed (Residue) Gas	Royalties	48923.73
+2010	ND	Golden Valle	38033	Gas	Unprocessed (Wet) Gas	Royalties	113627.27
+2010	ND	Golden Valle	38033	NGL	Gas Plant Products	Royalties	108490.3
+2010	ND	Golden Valle	38033	Oil	Oil	Royalties	2687559.11
 2010	ND	Mckenzie	38053	Oil & Gas		Bonus	14394965
 2010	ND	Mckenzie	38053	Oil & Gas		Other Revenues	4452.36
 2010	ND	Mckenzie	38053	Oil & Gas		Other Royalties	309098.25
 2010	ND	Mckenzie	38053	Oil & Gas		Rents	505895.02
-2010	ND	Mckenzie	38053	Gas (mcf)	Nitrogen	Royalties	1103.38
-2010	ND	Mckenzie	38053	Gas (mcf)	Processed (Residue) Gas	Royalties	336257.09
-2010	ND	Mckenzie	38053	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	1514024.49
-2010	ND	Mckenzie	38053	NGL (gal)	Gas Plant Products	Royalties	320875.59
-2010	ND	Mckenzie	38053	Oil (bbl)	Condensate	Royalties	21874.03
-2010	ND	Mckenzie	38053	Oil (bbl)	Drip or Scrubber Condensate	Royalties	2315.35
-2010	ND	Mckenzie	38053	Oil (bbl)	Oil	Royalties	21483928.7
+2010	ND	Mckenzie	38053	Gas	Nitrogen	Royalties	1103.38
+2010	ND	Mckenzie	38053	Gas	Processed (Residue) Gas	Royalties	336257.09
+2010	ND	Mckenzie	38053	Gas	Unprocessed (Wet) Gas	Royalties	1514024.49
+2010	ND	Mckenzie	38053	NGL	Gas Plant Products	Royalties	320875.59
+2010	ND	Mckenzie	38053	Oil	Condensate	Royalties	21874.03
+2010	ND	Mckenzie	38053	Oil	Drip or Scrubber Condensate	Royalties	2315.35
+2010	ND	Mckenzie	38053	Oil	Oil	Royalties	21483928.7
 2010	ND	Mclean	38055	Coal		Rents	597
 2010	ND	Mclean	38055	Oil & Gas		Rents	1688
 2010	ND	Mercer	38057	Coal		Bonus	124813.34
@@ -616,92 +616,92 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2010	ND	Mountrail	38061	Oil & Gas		Bonus	12317000
 2010	ND	Mountrail	38061	Oil & Gas		Other Royalties	185190
 2010	ND	Mountrail	38061	Oil & Gas		Rents	57585.5
-2010	ND	Mountrail	38061	Gas (mcf)	Processed (Residue) Gas	Royalties	83488.78
-2010	ND	Mountrail	38061	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	43915.59
-2010	ND	Mountrail	38061	NGL (gal)	Gas Plant Products	Royalties	100140.76
-2010	ND	Mountrail	38061	Oil (bbl)	Condensate	Royalties	41.17
-2010	ND	Mountrail	38061	Oil (bbl)	Drip or Scrubber Condensate	Royalties	654.62
-2010	ND	Mountrail	38061	Oil (bbl)	Oil	Royalties	4909407.69
+2010	ND	Mountrail	38061	Gas	Processed (Residue) Gas	Royalties	83488.78
+2010	ND	Mountrail	38061	Gas	Unprocessed (Wet) Gas	Royalties	43915.59
+2010	ND	Mountrail	38061	NGL	Gas Plant Products	Royalties	100140.76
+2010	ND	Mountrail	38061	Oil	Condensate	Royalties	41.17
+2010	ND	Mountrail	38061	Oil	Drip or Scrubber Condensate	Royalties	654.62
+2010	ND	Mountrail	38061	Oil	Oil	Royalties	4909407.69
 2010	ND	Oliver	38065	Coal		Bonus	28266.66
 2010	ND	Oliver	38065	Coal		Rents	6527
 2010	ND	Renville	38075	Oil & Gas		Rents	1267.5
-2010	ND	Renville	38075	Oil (bbl)	Oil	Royalties	261167.82
+2010	ND	Renville	38075	Oil	Oil	Royalties	261167.82
 2010	ND	Slope	38087	Oil & Gas		Bonus	67200
 2010	ND	Slope	38087	Oil & Gas		Rents	94933.5
-2010	ND	Slope	38087	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	2441.26
-2010	ND	Slope	38087	Oil (bbl)	Oil	Royalties	865387.77
+2010	ND	Slope	38087	Gas	Unprocessed (Wet) Gas	Royalties	2441.26
+2010	ND	Slope	38087	Oil	Oil	Royalties	865387.77
 2010	ND	Stark	38089	Oil & Gas		Other Royalties	1200
 2010	ND	Stark	38089	Oil & Gas		Rents	40.5
-2010	ND	Stark	38089	Gas (mcf)	Processed (Residue) Gas	Royalties	825.99
-2010	ND	Stark	38089	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	42770.59
-2010	ND	Stark	38089	NGL (gal)	Gas Plant Products	Royalties	3592.19
-2010	ND	Stark	38089	Oil (bbl)	Oil	Royalties	485483.9
+2010	ND	Stark	38089	Gas	Processed (Residue) Gas	Royalties	825.99
+2010	ND	Stark	38089	Gas	Unprocessed (Wet) Gas	Royalties	42770.59
+2010	ND	Stark	38089	NGL	Gas Plant Products	Royalties	3592.19
+2010	ND	Stark	38089	Oil	Oil	Royalties	485483.9
 2010	ND	Ward	38101	Oil & Gas		Rents	3492
 2010	ND	Williams	38105	Oil & Gas		Bonus	299500
 2010	ND	Williams	38105	Oil & Gas		Other Royalties	1742.3
 2010	ND	Williams	38105	Coal		Rents	480
 2010	ND	Williams	38105	Oil & Gas		Rents	13821.98
-2010	ND	Williams	38105	Gas (mcf)	Processed (Residue) Gas	Royalties	36145.86
-2010	ND	Williams	38105	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	2995.25
-2010	ND	Williams	38105	NGL (gal)	Gas Plant Products	Royalties	29574.97
-2010	ND	Williams	38105	Oil (bbl)	Drip or Scrubber Condensate	Royalties	9.59
-2010	ND	Williams	38105	Oil (bbl)	Oil	Royalties	408462.58
+2010	ND	Williams	38105	Gas	Processed (Residue) Gas	Royalties	36145.86
+2010	ND	Williams	38105	Gas	Unprocessed (Wet) Gas	Royalties	2995.25
+2010	ND	Williams	38105	NGL	Gas Plant Products	Royalties	29574.97
+2010	ND	Williams	38105	Oil	Drip or Scrubber Condensate	Royalties	9.59
+2010	ND	Williams	38105	Oil	Oil	Royalties	408462.58
 2011	ND	Billings	38007	Oil & Gas		Bonus	16642010
 2011	ND	Billings	38007	Oil & Gas		Other Revenues	4694
 2011	ND	Billings	38007	Oil & Gas		Other Royalties	666946.38
 2011	ND	Billings	38007	Oil & Gas		Rents	217237.5
-2011	ND	Billings	38007	Gas (mcf)	Processed (Residue) Gas	Royalties	169702.61
-2011	ND	Billings	38007	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	463281.17
-2011	ND	Billings	38007	NGL (gal)	Gas Plant Products	Royalties	398026.8
-2011	ND	Billings	38007	Oil (bbl)	Condensate	Royalties	2776.18
-2011	ND	Billings	38007	Oil (bbl)	Oil	Royalties	18324949.89
+2011	ND	Billings	38007	Gas	Processed (Residue) Gas	Royalties	169702.61
+2011	ND	Billings	38007	Gas	Unprocessed (Wet) Gas	Royalties	463281.17
+2011	ND	Billings	38007	NGL	Gas Plant Products	Royalties	398026.8
+2011	ND	Billings	38007	Oil	Condensate	Royalties	2776.18
+2011	ND	Billings	38007	Oil	Oil	Royalties	18324949.89
 2011	ND	Bottineau	38009	Oil & Gas		Bonus	960
 2011	ND	Bottineau	38009	Oil & Gas		Rents	3341
-2011	ND	Bottineau	38009	Oil (bbl)	Oil	Royalties	419677.7
+2011	ND	Bottineau	38009	Oil	Oil	Royalties	419677.7
 2011	ND	Bowman	38011	Oil & Gas		Other Royalties	-529777.73
 2011	ND	Bowman	38011	Oil & Gas		Rents	16952
-2011	ND	Bowman	38011	Gas (mcf)	Processed (Residue) Gas	Royalties	39754.17
-2011	ND	Bowman	38011	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	619567.31
-2011	ND	Bowman	38011	NGL (gal)	Gas Plant Products	Royalties	154938.88
-2011	ND	Bowman	38011	Oil (bbl)	Oil	Royalties	17487083.45
+2011	ND	Bowman	38011	Gas	Processed (Residue) Gas	Royalties	39754.17
+2011	ND	Bowman	38011	Gas	Unprocessed (Wet) Gas	Royalties	619567.31
+2011	ND	Bowman	38011	NGL	Gas Plant Products	Royalties	154938.88
+2011	ND	Bowman	38011	Oil	Oil	Royalties	17487083.45
 2011	ND	Burke	38013	Oil & Gas		Bonus	103200
 2011	ND	Burke	38013	Oil & Gas		Other Revenues	1141.5
 2011	ND	Burke	38013	Oil & Gas		Rents	3329
-2011	ND	Burke	38013	Gas (mcf)	Processed (Residue) Gas	Royalties	834.13
-2011	ND	Burke	38013	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	3408.34
-2011	ND	Burke	38013	NGL (gal)	Gas Plant Products	Royalties	852.87
-2011	ND	Burke	38013	Oil (bbl)	Condensate	Royalties	303.14
-2011	ND	Burke	38013	Oil (bbl)	Oil	Royalties	57969.4
+2011	ND	Burke	38013	Gas	Processed (Residue) Gas	Royalties	834.13
+2011	ND	Burke	38013	Gas	Unprocessed (Wet) Gas	Royalties	3408.34
+2011	ND	Burke	38013	NGL	Gas Plant Products	Royalties	852.87
+2011	ND	Burke	38013	Oil	Condensate	Royalties	303.14
+2011	ND	Burke	38013	Oil	Oil	Royalties	57969.4
 2011	ND	Divide	38023	Oil & Gas		Other Revenues	15
 2011	ND	Divide	38023	Oil & Gas		Rents	8547
-2011	ND	Divide	38023	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	0.04
-2011	ND	Divide	38023	Oil (bbl)	Oil	Royalties	70148.81
+2011	ND	Divide	38023	Gas	Unprocessed (Wet) Gas	Royalties	0.04
+2011	ND	Divide	38023	Oil	Oil	Royalties	70148.81
 2011	ND	Dunn	38025	Oil & Gas		Bonus	5290870
 2011	ND	Dunn	38025	Oil & Gas		Other Royalties	556480.04
 2011	ND	Dunn	38025	Oil & Gas		Rents	22717.5
-2011	ND	Dunn	38025	Gas (mcf)	Processed (Residue) Gas	Royalties	38411.26
-2011	ND	Dunn	38025	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	373531.1
-2011	ND	Dunn	38025	NGL (gal)	Gas Plant Products	Royalties	64931.52
-2011	ND	Dunn	38025	Oil (bbl)	Oil	Royalties	8269754.53
+2011	ND	Dunn	38025	Gas	Processed (Residue) Gas	Royalties	38411.26
+2011	ND	Dunn	38025	Gas	Unprocessed (Wet) Gas	Royalties	373531.1
+2011	ND	Dunn	38025	NGL	Gas Plant Products	Royalties	64931.52
+2011	ND	Dunn	38025	Oil	Oil	Royalties	8269754.53
 2011	ND	Golden Valle	38033	Oil & Gas		Bonus	5130880
 2011	ND	Golden Valle	38033	Oil & Gas		Other Revenues	1835.98
 2011	ND	Golden Valle	38033	Oil & Gas		Other Royalties	-19226.95
 2011	ND	Golden Valle	38033	Oil & Gas		Rents	119389.68
-2011	ND	Golden Valle	38033	Gas (mcf)	Processed (Residue) Gas	Royalties	36522.51
-2011	ND	Golden Valle	38033	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	79219.11
-2011	ND	Golden Valle	38033	NGL (gal)	Gas Plant Products	Royalties	94440.64
-2011	ND	Golden Valle	38033	Oil (bbl)	Oil	Royalties	3397076.79
+2011	ND	Golden Valle	38033	Gas	Processed (Residue) Gas	Royalties	36522.51
+2011	ND	Golden Valle	38033	Gas	Unprocessed (Wet) Gas	Royalties	79219.11
+2011	ND	Golden Valle	38033	NGL	Gas Plant Products	Royalties	94440.64
+2011	ND	Golden Valle	38033	Oil	Oil	Royalties	3397076.79
 2011	ND	Mckenzie	38053	Oil & Gas		Bonus	34007148
 2011	ND	Mckenzie	38053	Oil & Gas		Other Revenues	8683.69
 2011	ND	Mckenzie	38053	Oil & Gas		Other Royalties	1052110.04
 2011	ND	Mckenzie	38053	Oil & Gas		Rents	443114.49
-2011	ND	Mckenzie	38053	Gas (mcf)	Nitrogen	Royalties	1098.02
-2011	ND	Mckenzie	38053	Gas (mcf)	Processed (Residue) Gas	Royalties	598141.76
-2011	ND	Mckenzie	38053	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	1602029.75
-2011	ND	Mckenzie	38053	NGL (gal)	Gas Plant Products	Royalties	531195.01
-2011	ND	Mckenzie	38053	Oil (bbl)	Condensate	Royalties	1326.77
-2011	ND	Mckenzie	38053	Oil (bbl)	Drip or Scrubber Condensate	Royalties	1431.85
-2011	ND	Mckenzie	38053	Oil (bbl)	Oil	Royalties	37058338.52
+2011	ND	Mckenzie	38053	Gas	Nitrogen	Royalties	1098.02
+2011	ND	Mckenzie	38053	Gas	Processed (Residue) Gas	Royalties	598141.76
+2011	ND	Mckenzie	38053	Gas	Unprocessed (Wet) Gas	Royalties	1602029.75
+2011	ND	Mckenzie	38053	NGL	Gas Plant Products	Royalties	531195.01
+2011	ND	Mckenzie	38053	Oil	Condensate	Royalties	1326.77
+2011	ND	Mckenzie	38053	Oil	Drip or Scrubber Condensate	Royalties	1431.85
+2011	ND	Mckenzie	38053	Oil	Oil	Royalties	37058338.52
 2011	ND	Mclean	38055	Coal		Rents	597
 2011	ND	Mclean	38055	Oil & Gas		Rents	1688
 2011	ND	Mercer	38057	Oil & Gas		Bonus	72640
@@ -711,99 +711,99 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2011	ND	Mountrail	38061	Oil & Gas		Other Revenues	945
 2011	ND	Mountrail	38061	Oil & Gas		Other Royalties	684374.49
 2011	ND	Mountrail	38061	Oil & Gas		Rents	37221.5
-2011	ND	Mountrail	38061	Gas (mcf)	Processed (Residue) Gas	Royalties	66583.16
-2011	ND	Mountrail	38061	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	159978.54
-2011	ND	Mountrail	38061	NGL (gal)	Gas Plant Products	Royalties	355857.95
-2011	ND	Mountrail	38061	Oil (bbl)	Condensate	Royalties	3961.1
-2011	ND	Mountrail	38061	Oil (bbl)	Drip or Scrubber Condensate	Royalties	51782.69
-2011	ND	Mountrail	38061	Oil (bbl)	Oil	Royalties	16645526.54
+2011	ND	Mountrail	38061	Gas	Processed (Residue) Gas	Royalties	66583.16
+2011	ND	Mountrail	38061	Gas	Unprocessed (Wet) Gas	Royalties	159978.54
+2011	ND	Mountrail	38061	NGL	Gas Plant Products	Royalties	355857.95
+2011	ND	Mountrail	38061	Oil	Condensate	Royalties	3961.1
+2011	ND	Mountrail	38061	Oil	Drip or Scrubber Condensate	Royalties	51782.69
+2011	ND	Mountrail	38061	Oil	Oil	Royalties	16645526.54
 2011	ND	Oliver	38065	Coal		Bonus	6400
 2011	ND	Oliver	38065	Coal		Rents	6248.33
 2011	ND	Renville	38075	Oil & Gas		Bonus	18800
 2011	ND	Renville	38075	Oil & Gas		Rents	1620
-2011	ND	Renville	38075	Oil (bbl)	Condensate	Royalties	-260.14
-2011	ND	Renville	38075	Oil (bbl)	Oil	Royalties	293677.36
+2011	ND	Renville	38075	Oil	Condensate	Royalties	-260.14
+2011	ND	Renville	38075	Oil	Oil	Royalties	293677.36
 2011	ND	Slope	38087	Oil & Gas		Bonus	1288683
 2011	ND	Slope	38087	Oil & Gas		Other Royalties	-920
 2011	ND	Slope	38087	Oil & Gas		Rents	152573
-2011	ND	Slope	38087	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	5936.53
-2011	ND	Slope	38087	Oil (bbl)	Oil	Royalties	1229652.91
+2011	ND	Slope	38087	Gas	Unprocessed (Wet) Gas	Royalties	5936.53
+2011	ND	Slope	38087	Oil	Oil	Royalties	1229652.91
 2011	ND	Stark	38089	Oil & Gas		Bonus	2763800
 2011	ND	Stark	38089	Oil & Gas		Other Royalties	-11.92
 2011	ND	Stark	38089	Oil & Gas		Rents	1923
-2011	ND	Stark	38089	Gas (mcf)	Processed (Residue) Gas	Royalties	640.34
-2011	ND	Stark	38089	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	31553.9
-2011	ND	Stark	38089	NGL (gal)	Gas Plant Products	Royalties	2745.34
-2011	ND	Stark	38089	Oil (bbl)	Oil	Royalties	591742.6
+2011	ND	Stark	38089	Gas	Processed (Residue) Gas	Royalties	640.34
+2011	ND	Stark	38089	Gas	Unprocessed (Wet) Gas	Royalties	31553.9
+2011	ND	Stark	38089	NGL	Gas Plant Products	Royalties	2745.34
+2011	ND	Stark	38089	Oil	Oil	Royalties	591742.6
 2011	ND	Ward	38101	Oil & Gas		Bonus	2800
 2011	ND	Ward	38101	Oil & Gas		Rents	3552
 2011	ND	Williams	38105	Oil & Gas		Bonus	25991960
 2011	ND	Williams	38105	Oil & Gas		Other Royalties	49279.29
 2011	ND	Williams	38105	Coal		Rents	480
 2011	ND	Williams	38105	Oil & Gas		Rents	25339.31
-2011	ND	Williams	38105	Gas (mcf)	Processed (Residue) Gas	Royalties	31475.28
-2011	ND	Williams	38105	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	5992.86
-2011	ND	Williams	38105	NGL (gal)	Gas Plant Products	Royalties	36740.74
-2011	ND	Williams	38105	Oil (bbl)	Oil	Royalties	671163.91
+2011	ND	Williams	38105	Gas	Processed (Residue) Gas	Royalties	31475.28
+2011	ND	Williams	38105	Gas	Unprocessed (Wet) Gas	Royalties	5992.86
+2011	ND	Williams	38105	NGL	Gas Plant Products	Royalties	36740.74
+2011	ND	Williams	38105	Oil	Oil	Royalties	671163.91
 2012	ND	Billings	38007	Oil & Gas		Bonus	13333200
 2012	ND	Billings	38007	Oil & Gas		Other Revenues	3024
 2012	ND	Billings	38007	Oil & Gas		Other Royalties	287009.74
 2012	ND	Billings	38007	Hardrock		Rents	2726
 2012	ND	Billings	38007	Oil & Gas		Rents	194787
-2012	ND	Billings	38007	Gas (mcf)	Processed (Residue) Gas	Royalties	186802.57
-2012	ND	Billings	38007	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	460088.86
-2012	ND	Billings	38007	NGL (gal)	Gas Plant Products	Royalties	615678.58
-2012	ND	Billings	38007	Oil (bbl)	Condensate	Royalties	4100.04
-2012	ND	Billings	38007	Oil (bbl)	Drip or Scrubber Condensate	Royalties	8305.74
-2012	ND	Billings	38007	Oil (bbl)	Oil	Royalties	22101717.79
+2012	ND	Billings	38007	Gas	Processed (Residue) Gas	Royalties	186802.57
+2012	ND	Billings	38007	Gas	Unprocessed (Wet) Gas	Royalties	460088.86
+2012	ND	Billings	38007	NGL	Gas Plant Products	Royalties	615678.58
+2012	ND	Billings	38007	Oil	Condensate	Royalties	4100.04
+2012	ND	Billings	38007	Oil	Drip or Scrubber Condensate	Royalties	8305.74
+2012	ND	Billings	38007	Oil	Oil	Royalties	22101717.79
 2012	ND	Bottineau	38009	Oil & Gas		Bonus	2400
 2012	ND	Bottineau	38009	Oil & Gas		Rents	5220
-2012	ND	Bottineau	38009	Oil (bbl)	Oil	Royalties	198442.88
+2012	ND	Bottineau	38009	Oil	Oil	Royalties	198442.88
 2012	ND	Bowman	38011	Oil & Gas		Other Royalties	350761.76
 2012	ND	Bowman	38011	Oil & Gas		Rents	17902
-2012	ND	Bowman	38011	Gas (mcf)	Processed (Residue) Gas	Royalties	-3262.09
-2012	ND	Bowman	38011	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	305174.32
-2012	ND	Bowman	38011	NGL (gal)	Gas Plant Products	Royalties	103099.07
-2012	ND	Bowman	38011	Oil (bbl)	Oil	Royalties	16875280.34
+2012	ND	Bowman	38011	Gas	Processed (Residue) Gas	Royalties	-3262.09
+2012	ND	Bowman	38011	Gas	Unprocessed (Wet) Gas	Royalties	305174.32
+2012	ND	Bowman	38011	NGL	Gas Plant Products	Royalties	103099.07
+2012	ND	Bowman	38011	Oil	Oil	Royalties	16875280.34
 2012	ND	Burke	38013	Oil & Gas		Bonus	88000
 2012	ND	Burke	38013	Oil & Gas		Other Royalties	175
 2012	ND	Burke	38013	Oil & Gas		Rents	3850.5
-2012	ND	Burke	38013	Gas (mcf)	Processed (Residue) Gas	Royalties	368.85
-2012	ND	Burke	38013	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	3707.63
-2012	ND	Burke	38013	NGL (gal)	Gas Plant Products	Royalties	487.23
-2012	ND	Burke	38013	Oil (bbl)	Condensate	Royalties	255.67
-2012	ND	Burke	38013	Oil (bbl)	Oil	Royalties	136804.34
+2012	ND	Burke	38013	Gas	Processed (Residue) Gas	Royalties	368.85
+2012	ND	Burke	38013	Gas	Unprocessed (Wet) Gas	Royalties	3707.63
+2012	ND	Burke	38013	NGL	Gas Plant Products	Royalties	487.23
+2012	ND	Burke	38013	Oil	Condensate	Royalties	255.67
+2012	ND	Burke	38013	Oil	Oil	Royalties	136804.34
 2012	ND	Divide	38023	Oil & Gas		Bonus	556380
 2012	ND	Divide	38023	Oil & Gas		Other Revenues	1598.49
 2012	ND	Divide	38023	Oil & Gas		Other Royalties	10250
 2012	ND	Divide	38023	Oil & Gas		Rents	9332.5
-2012	ND	Divide	38023	Oil (bbl)	Oil	Royalties	162016.24
+2012	ND	Divide	38023	Oil	Oil	Royalties	162016.24
 2012	ND	Dunn	38025	Oil & Gas		Bonus	774830
 2012	ND	Dunn	38025	Oil & Gas		Other Royalties	545076.61
 2012	ND	Dunn	38025	Oil & Gas		Rents	16871.5
-2012	ND	Dunn	38025	Gas (mcf)	Processed (Residue) Gas	Royalties	16240.67
-2012	ND	Dunn	38025	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	754668.71
-2012	ND	Dunn	38025	NGL (gal)	Gas Plant Products	Royalties	38292.76
-2012	ND	Dunn	38025	Oil (bbl)	Oil	Royalties	13577455.83
+2012	ND	Dunn	38025	Gas	Processed (Residue) Gas	Royalties	16240.67
+2012	ND	Dunn	38025	Gas	Unprocessed (Wet) Gas	Royalties	754668.71
+2012	ND	Dunn	38025	NGL	Gas Plant Products	Royalties	38292.76
+2012	ND	Dunn	38025	Oil	Oil	Royalties	13577455.83
 2012	ND	Golden Valle	38033	Oil & Gas		Bonus	2589300
 2012	ND	Golden Valle	38033	Oil & Gas		Other Revenues	1600
 2012	ND	Golden Valle	38033	Oil & Gas		Other Royalties	186175
 2012	ND	Golden Valle	38033	Oil & Gas		Rents	89989.5
-2012	ND	Golden Valle	38033	Gas (mcf)	Processed (Residue) Gas	Royalties	37597.75
-2012	ND	Golden Valle	38033	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	55116.39
-2012	ND	Golden Valle	38033	NGL (gal)	Gas Plant Products	Royalties	133227.52
-2012	ND	Golden Valle	38033	Oil (bbl)	Oil	Royalties	5129653.47
+2012	ND	Golden Valle	38033	Gas	Processed (Residue) Gas	Royalties	37597.75
+2012	ND	Golden Valle	38033	Gas	Unprocessed (Wet) Gas	Royalties	55116.39
+2012	ND	Golden Valle	38033	NGL	Gas Plant Products	Royalties	133227.52
+2012	ND	Golden Valle	38033	Oil	Oil	Royalties	5129653.47
 2012	ND	Mckenzie	38053	Oil & Gas		Bonus	18081554
 2012	ND	Mckenzie	38053	Oil & Gas		Other Revenues	17865.3
 2012	ND	Mckenzie	38053	Oil & Gas		Other Royalties	1127604.18
 2012	ND	Mckenzie	38053	Oil & Gas		Rents	448352.92
-2012	ND	Mckenzie	38053	Gas (mcf)	Nitrogen	Royalties	1286.66
-2012	ND	Mckenzie	38053	Gas (mcf)	Processed (Residue) Gas	Royalties	13373.7
-2012	ND	Mckenzie	38053	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	2720231.31
-2012	ND	Mckenzie	38053	NGL (gal)	Gas Plant Products	Royalties	184799.74
-2012	ND	Mckenzie	38053	Oil (bbl)	Condensate	Royalties	-27810.01
-2012	ND	Mckenzie	38053	Oil (bbl)	Drip or Scrubber Condensate	Royalties	2229.92
-2012	ND	Mckenzie	38053	Oil (bbl)	Oil	Royalties	46426080.38
+2012	ND	Mckenzie	38053	Gas	Nitrogen	Royalties	1286.66
+2012	ND	Mckenzie	38053	Gas	Processed (Residue) Gas	Royalties	13373.7
+2012	ND	Mckenzie	38053	Gas	Unprocessed (Wet) Gas	Royalties	2720231.31
+2012	ND	Mckenzie	38053	NGL	Gas Plant Products	Royalties	184799.74
+2012	ND	Mckenzie	38053	Oil	Condensate	Royalties	-27810.01
+2012	ND	Mckenzie	38053	Oil	Drip or Scrubber Condensate	Royalties	2229.92
+2012	ND	Mckenzie	38053	Oil	Oil	Royalties	46426080.38
 2012	ND	Mclean	38055	Coal		Rents	597
 2012	ND	Mclean	38055	Oil & Gas		Rents	1688
 2012	ND	Mercer	38057	Coal		Rents	25761.67
@@ -812,105 +812,105 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2012	ND	Mountrail	38061	Oil & Gas		Other Revenues	6636.14
 2012	ND	Mountrail	38061	Oil & Gas		Other Royalties	-74523.75
 2012	ND	Mountrail	38061	Oil & Gas		Rents	31172
-2012	ND	Mountrail	38061	Gas (mcf)	Processed (Residue) Gas	Royalties	75595.8
-2012	ND	Mountrail	38061	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	707816.98
-2012	ND	Mountrail	38061	NGL (gal)	Gas Plant Products	Royalties	399516.8
-2012	ND	Mountrail	38061	Oil (bbl)	Condensate	Royalties	25488.88
-2012	ND	Mountrail	38061	Oil (bbl)	Drip or Scrubber Condensate	Royalties	39321.53
-2012	ND	Mountrail	38061	Oil (bbl)	Oil	Royalties	30004506.18
+2012	ND	Mountrail	38061	Gas	Processed (Residue) Gas	Royalties	75595.8
+2012	ND	Mountrail	38061	Gas	Unprocessed (Wet) Gas	Royalties	707816.98
+2012	ND	Mountrail	38061	NGL	Gas Plant Products	Royalties	399516.8
+2012	ND	Mountrail	38061	Oil	Condensate	Royalties	25488.88
+2012	ND	Mountrail	38061	Oil	Drip or Scrubber Condensate	Royalties	39321.53
+2012	ND	Mountrail	38061	Oil	Oil	Royalties	30004506.18
 2012	ND	Oliver	38065	Coal		Rents	2525.33
 2012	ND	Renville	38075	Oil & Gas		Bonus	34450
 2012	ND	Renville	38075	Oil & Gas		Rents	3321.5
-2012	ND	Renville	38075	Oil (bbl)	Oil	Royalties	268090.79
+2012	ND	Renville	38075	Oil	Oil	Royalties	268090.79
 2012	ND	Slope	38087	Oil & Gas		Bonus	3272040
 2012	ND	Slope	38087	Oil & Gas		Other Royalties	3155.34
 2012	ND	Slope	38087	Oil & Gas		Rents	151038.5
-2012	ND	Slope	38087	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	4843.84
-2012	ND	Slope	38087	Oil (bbl)	Oil	Royalties	1331923.42
+2012	ND	Slope	38087	Gas	Unprocessed (Wet) Gas	Royalties	4843.84
+2012	ND	Slope	38087	Oil	Oil	Royalties	1331923.42
 2012	ND	Stark	38089	Oil & Gas		Bonus	251760
 2012	ND	Stark	38089	Oil & Gas		Other Royalties	1753.44
 2012	ND	Stark	38089	Oil & Gas		Rents	2965.5
-2012	ND	Stark	38089	Gas (mcf)	Processed (Residue) Gas	Royalties	466.63
-2012	ND	Stark	38089	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	24639.96
-2012	ND	Stark	38089	NGL (gal)	Gas Plant Products	Royalties	1108.11
-2012	ND	Stark	38089	Oil (bbl)	Oil	Royalties	481217.36
+2012	ND	Stark	38089	Gas	Processed (Residue) Gas	Royalties	466.63
+2012	ND	Stark	38089	Gas	Unprocessed (Wet) Gas	Royalties	24639.96
+2012	ND	Stark	38089	NGL	Gas Plant Products	Royalties	1108.11
+2012	ND	Stark	38089	Oil	Oil	Royalties	481217.36
 2012	ND	Ward	38101	Oil & Gas		Rents	3252
 2012	ND	Williams	38105	Oil & Gas		Bonus	4584320
 2012	ND	Williams	38105	Oil & Gas		Other Revenues	29.49
 2012	ND	Williams	38105	Oil & Gas		Other Royalties	13424.84
 2012	ND	Williams	38105	Coal		Rents	480
 2012	ND	Williams	38105	Oil & Gas		Rents	21892.7
-2012	ND	Williams	38105	Gas (mcf)	Processed (Residue) Gas	Royalties	22284.04
-2012	ND	Williams	38105	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	42446.57
-2012	ND	Williams	38105	NGL (gal)	Gas Plant Products	Royalties	40893.35
-2012	ND	Williams	38105	Oil (bbl)	Drip or Scrubber Condensate	Royalties	47.53
-2012	ND	Williams	38105	Oil (bbl)	Oil	Royalties	1707524.47
+2012	ND	Williams	38105	Gas	Processed (Residue) Gas	Royalties	22284.04
+2012	ND	Williams	38105	Gas	Unprocessed (Wet) Gas	Royalties	42446.57
+2012	ND	Williams	38105	NGL	Gas Plant Products	Royalties	40893.35
+2012	ND	Williams	38105	Oil	Drip or Scrubber Condensate	Royalties	47.53
+2012	ND	Williams	38105	Oil	Oil	Royalties	1707524.47
 2013	ND	Billings	38007	Oil & Gas		Other Revenues	4239
 2013	ND	Billings	38007	Oil & Gas		Other Royalties	-1010
 2013	ND	Billings	38007	Oil & Gas		Rents	179407.5
-2013	ND	Billings	38007	Gas (mcf)	Processed (Residue) Gas	Royalties	334750.3
-2013	ND	Billings	38007	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	329538.78
-2013	ND	Billings	38007	NGL (gal)	Gas Plant Products	Royalties	736179.32
-2013	ND	Billings	38007	Oil (bbl)	Condensate	Royalties	3986.21
-2013	ND	Billings	38007	Oil (bbl)	Drip or Scrubber Condensate	Royalties	8451.2
-2013	ND	Billings	38007	Oil (bbl)	Oil	Royalties	22037872.4
+2013	ND	Billings	38007	Gas	Processed (Residue) Gas	Royalties	334750.3
+2013	ND	Billings	38007	Gas	Unprocessed (Wet) Gas	Royalties	329538.78
+2013	ND	Billings	38007	NGL	Gas Plant Products	Royalties	736179.32
+2013	ND	Billings	38007	Oil	Condensate	Royalties	3986.21
+2013	ND	Billings	38007	Oil	Drip or Scrubber Condensate	Royalties	8451.2
+2013	ND	Billings	38007	Oil	Oil	Royalties	22037872.4
 2013	ND	Bottineau	38009	Oil & Gas		Rents	2540
-2013	ND	Bottineau	38009	Oil (bbl)	Oil	Royalties	426680.69
+2013	ND	Bottineau	38009	Oil	Oil	Royalties	426680.69
 2013	ND	Bowman	38011	Oil & Gas		Bonus	4180
 2013	ND	Bowman	38011	Oil & Gas		Other Revenues	180.82
 2013	ND	Bowman	38011	Oil & Gas		Other Royalties	-381456.61
 2013	ND	Bowman	38011	Oil & Gas		Rents	17246.5
-2013	ND	Bowman	38011	Gas (mcf)	Processed (Residue) Gas	Royalties	5651.44
-2013	ND	Bowman	38011	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	374747
-2013	ND	Bowman	38011	NGL (gal)	Gas Plant Products	Royalties	53074.84
-2013	ND	Bowman	38011	Oil (bbl)	Oil	Royalties	16060009.32
+2013	ND	Bowman	38011	Gas	Processed (Residue) Gas	Royalties	5651.44
+2013	ND	Bowman	38011	Gas	Unprocessed (Wet) Gas	Royalties	374747
+2013	ND	Bowman	38011	NGL	Gas Plant Products	Royalties	53074.84
+2013	ND	Bowman	38011	Oil	Oil	Royalties	16060009.32
 2013	ND	Burke	38013	Oil & Gas		Bonus	6900
 2013	ND	Burke	38013	Oil & Gas		Other Revenues	1520.4
 2013	ND	Burke	38013	Oil & Gas		Other Royalties	40
 2013	ND	Burke	38013	Oil & Gas		Rents	5142
-2013	ND	Burke	38013	Gas (mcf)	Gas Lost - Flared or Vented	Royalties	155.2
-2013	ND	Burke	38013	Gas (mcf)	Processed (Residue) Gas	Royalties	264.53
-2013	ND	Burke	38013	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	3810.49
-2013	ND	Burke	38013	NGL (gal)	Gas Plant Products	Royalties	272.94
-2013	ND	Burke	38013	Oil (bbl)	Condensate	Royalties	149.72
-2013	ND	Burke	38013	Oil (bbl)	Oil	Royalties	140040.07
+2013	ND	Burke	38013	Gas	Gas Lost - Flared or Vented	Royalties	155.2
+2013	ND	Burke	38013	Gas	Processed (Residue) Gas	Royalties	264.53
+2013	ND	Burke	38013	Gas	Unprocessed (Wet) Gas	Royalties	3810.49
+2013	ND	Burke	38013	NGL	Gas Plant Products	Royalties	272.94
+2013	ND	Burke	38013	Oil	Condensate	Royalties	149.72
+2013	ND	Burke	38013	Oil	Oil	Royalties	140040.07
 2013	ND	Divide	38023	Oil & Gas		Bonus	240000
 2013	ND	Divide	38023	Oil & Gas		Other Revenues	350
 2013	ND	Divide	38023	Oil & Gas		Other Royalties	4750
 2013	ND	Divide	38023	Oil & Gas		Rents	9425
-2013	ND	Divide	38023	Gas (mcf)	Processed (Residue) Gas	Royalties	178.43
-2013	ND	Divide	38023	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	1579.02
-2013	ND	Divide	38023	NGL (gal)	Gas Plant Products	Royalties	3.72
-2013	ND	Divide	38023	Oil (bbl)	Condensate	Royalties	0.05
-2013	ND	Divide	38023	Oil (bbl)	Oil	Royalties	297478.27
+2013	ND	Divide	38023	Gas	Processed (Residue) Gas	Royalties	178.43
+2013	ND	Divide	38023	Gas	Unprocessed (Wet) Gas	Royalties	1579.02
+2013	ND	Divide	38023	NGL	Gas Plant Products	Royalties	3.72
+2013	ND	Divide	38023	Oil	Condensate	Royalties	0.05
+2013	ND	Divide	38023	Oil	Oil	Royalties	297478.27
 2013	ND	Dunn	38025	Oil & Gas		Bonus	3279950
 2013	ND	Dunn	38025	Oil & Gas		Other Revenues	6128
 2013	ND	Dunn	38025	Oil & Gas		Other Royalties	81855
 2013	ND	Dunn	38025	Oil & Gas		Rents	10495.5
-2013	ND	Dunn	38025	Gas (mcf)	Gas Lost - Flared or Vented	Royalties	228.92
-2013	ND	Dunn	38025	Gas (mcf)	Processed (Residue) Gas	Royalties	54752.82
-2013	ND	Dunn	38025	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	988431.64
-2013	ND	Dunn	38025	NGL (gal)	Gas Plant Products	Royalties	95096.92
-2013	ND	Dunn	38025	Oil (bbl)	Oil	Royalties	18584736.71
+2013	ND	Dunn	38025	Gas	Gas Lost - Flared or Vented	Royalties	228.92
+2013	ND	Dunn	38025	Gas	Processed (Residue) Gas	Royalties	54752.82
+2013	ND	Dunn	38025	Gas	Unprocessed (Wet) Gas	Royalties	988431.64
+2013	ND	Dunn	38025	NGL	Gas Plant Products	Royalties	95096.92
+2013	ND	Dunn	38025	Oil	Oil	Royalties	18584736.71
 2013	ND	Golden Valle	38033	Oil & Gas		Other Revenues	1600
 2013	ND	Golden Valle	38033	Oil & Gas		Other Royalties	-45225
 2013	ND	Golden Valle	38033	Oil & Gas		Rents	97732
-2013	ND	Golden Valle	38033	Gas (mcf)	Processed (Residue) Gas	Royalties	50027.47
-2013	ND	Golden Valle	38033	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	71588.91
-2013	ND	Golden Valle	38033	NGL (gal)	Gas Plant Products	Royalties	127910.86
-2013	ND	Golden Valle	38033	Oil (bbl)	Oil	Royalties	4448477.58
+2013	ND	Golden Valle	38033	Gas	Processed (Residue) Gas	Royalties	50027.47
+2013	ND	Golden Valle	38033	Gas	Unprocessed (Wet) Gas	Royalties	71588.91
+2013	ND	Golden Valle	38033	NGL	Gas Plant Products	Royalties	127910.86
+2013	ND	Golden Valle	38033	Oil	Oil	Royalties	4448477.58
 2013	ND	Mckenzie	38053	Oil & Gas		Bonus	31041250
 2013	ND	Mckenzie	38053	Oil & Gas		Other Revenues	56319.23
 2013	ND	Mckenzie	38053	Oil & Gas		Other Royalties	568654.94
 2013	ND	Mckenzie	38053	Oil & Gas		Rents	340172.2
-2013	ND	Mckenzie	38053	Gas (mcf)	Fuel Gas	Royalties	285.52
-2013	ND	Mckenzie	38053	Gas (mcf)	Nitrogen	Royalties	269.85
-2013	ND	Mckenzie	38053	Gas (mcf)	Processed (Residue) Gas	Royalties	453689.36
-2013	ND	Mckenzie	38053	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	4113415.73
-2013	ND	Mckenzie	38053	NGL (gal)	Gas Plant Products	Royalties	696114.95
-2013	ND	Mckenzie	38053	Oil (bbl)	Condensate	Royalties	2179.54
-2013	ND	Mckenzie	38053	Oil (bbl)	Drip or Scrubber Condensate	Royalties	2035.59
-2013	ND	Mckenzie	38053	Oil (bbl)	Oil	Royalties	76320612.08
+2013	ND	Mckenzie	38053	Gas	Fuel Gas	Royalties	285.52
+2013	ND	Mckenzie	38053	Gas	Nitrogen	Royalties	269.85
+2013	ND	Mckenzie	38053	Gas	Processed (Residue) Gas	Royalties	453689.36
+2013	ND	Mckenzie	38053	Gas	Unprocessed (Wet) Gas	Royalties	4113415.73
+2013	ND	Mckenzie	38053	NGL	Gas Plant Products	Royalties	696114.95
+2013	ND	Mckenzie	38053	Oil	Condensate	Royalties	2179.54
+2013	ND	Mckenzie	38053	Oil	Drip or Scrubber Condensate	Royalties	2035.59
+2013	ND	Mckenzie	38053	Oil	Oil	Royalties	76320612.08
 2013	ND	Mclean	38055	Coal		Rents	597
 2013	ND	Mclean	38055	Oil & Gas		Rents	320
 2013	ND	Mercer	38057	Coal		Rents	26487
@@ -919,67 +919,67 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2013	ND	Mountrail	38061	Oil & Gas		Other Revenues	1737
 2013	ND	Mountrail	38061	Oil & Gas		Other Royalties	-113780
 2013	ND	Mountrail	38061	Oil & Gas		Rents	27516.5
-2013	ND	Mountrail	38061	Gas (mcf)	Processed (Residue) Gas	Royalties	235135.54
-2013	ND	Mountrail	38061	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	542001.5
-2013	ND	Mountrail	38061	NGL (gal)	Gas Plant Products	Royalties	408899.5
-2013	ND	Mountrail	38061	Oil (bbl)	Condensate	Royalties	20924.54
-2013	ND	Mountrail	38061	Oil (bbl)	Drip or Scrubber Condensate	Royalties	151701.56
-2013	ND	Mountrail	38061	Oil (bbl)	Oil	Royalties	36588447.54
+2013	ND	Mountrail	38061	Gas	Processed (Residue) Gas	Royalties	235135.54
+2013	ND	Mountrail	38061	Gas	Unprocessed (Wet) Gas	Royalties	542001.5
+2013	ND	Mountrail	38061	NGL	Gas Plant Products	Royalties	408899.5
+2013	ND	Mountrail	38061	Oil	Condensate	Royalties	20924.54
+2013	ND	Mountrail	38061	Oil	Drip or Scrubber Condensate	Royalties	151701.56
+2013	ND	Mountrail	38061	Oil	Oil	Royalties	36588447.54
 2013	ND	Oliver	38065	Coal		Rents	10206
 2013	ND	Renville	38075	Oil & Gas		Bonus	-16
 2013	ND	Renville	38075	Oil & Gas		Rents	1413
-2013	ND	Renville	38075	Oil (bbl)	Oil	Royalties	178356.48
+2013	ND	Renville	38075	Oil	Oil	Royalties	178356.48
 2013	ND	Slope	38087	Oil & Gas		Bonus	230850
 2013	ND	Slope	38087	Oil & Gas		Other Royalties	-1870
 2013	ND	Slope	38087	Oil & Gas		Rents	195486.5
-2013	ND	Slope	38087	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	3760.4
-2013	ND	Slope	38087	Oil (bbl)	Oil	Royalties	1212609.95
+2013	ND	Slope	38087	Gas	Unprocessed (Wet) Gas	Royalties	3760.4
+2013	ND	Slope	38087	Oil	Oil	Royalties	1212609.95
 2013	ND	Stark	38089	Oil & Gas		Bonus	2720
 2013	ND	Stark	38089	Oil & Gas		Other Royalties	25531.51
 2013	ND	Stark	38089	Oil & Gas		Rents	3205.5
-2013	ND	Stark	38089	Gas (mcf)	Processed (Residue) Gas	Royalties	6929.81
-2013	ND	Stark	38089	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	21448.51
-2013	ND	Stark	38089	NGL (gal)	Gas Plant Products	Royalties	16254.43
-2013	ND	Stark	38089	Oil (bbl)	Drip or Scrubber Condensate	Royalties	713.33
-2013	ND	Stark	38089	Oil (bbl)	Oil	Royalties	725151.69
+2013	ND	Stark	38089	Gas	Processed (Residue) Gas	Royalties	6929.81
+2013	ND	Stark	38089	Gas	Unprocessed (Wet) Gas	Royalties	21448.51
+2013	ND	Stark	38089	NGL	Gas Plant Products	Royalties	16254.43
+2013	ND	Stark	38089	Oil	Drip or Scrubber Condensate	Royalties	713.33
+2013	ND	Stark	38089	Oil	Oil	Royalties	725151.69
 2013	ND	Ward	38101	Oil & Gas		Rents	5036
 2013	ND	Williams	38105	Oil & Gas		Bonus	9046200
 2013	ND	Williams	38105	Oil & Gas		Other Revenues	2150.48
 2013	ND	Williams	38105	Oil & Gas		Other Royalties	11293.24
 2013	ND	Williams	38105	Coal		Rents	480
 2013	ND	Williams	38105	Oil & Gas		Rents	14337.94
-2013	ND	Williams	38105	Gas (mcf)	Processed (Residue) Gas	Royalties	35930.44
-2013	ND	Williams	38105	Gas (mcf)	Unprocessed (Wet) Gas	Royalties	88112.93
-2013	ND	Williams	38105	NGL (gal)	Gas Plant Products	Royalties	38850.27
-2013	ND	Williams	38105	Oil (bbl)	Drip or Scrubber Condensate	Royalties	7.29
-2013	ND	Williams	38105	Oil (bbl)	Oil	Royalties	3438638.51
-2004	ND	Mclean	38055	Coal (ton)	Coal	Royalties	52808.12
-2004	ND	Mercer	38057	Coal (ton)	Coal	Royalties	396342.62
-2004	ND	Oliver	38065	Coal (ton)	Coal	Royalties	4436.02
-2005	ND	Mclean	38055	Coal (ton)	Coal	Royalties	12535.48
-2005	ND	Mercer	38057	Coal (ton)	Coal	Royalties	534755.51
-2005	ND	Oliver	38065	Coal (ton)	Coal	Royalties	184.08
-2006	ND	Mercer	38057	Coal (ton)	Coal	Royalties	753453.95
-2006	ND	Oliver	38065	Coal (ton)	Coal	Royalties	32.4
-2006	ND	Williams	38105	Other Products	Leonardite	Royalties	13538.71
-2007	ND	Mercer	38057	Coal (ton)	Coal	Royalties	924739.29
-2007	ND	Oliver	38065	Coal (ton)	Coal	Royalties	84.73
-2008	ND	Mercer	38057	Coal (ton)	Coal	Royalties	983321.35
+2013	ND	Williams	38105	Gas	Processed (Residue) Gas	Royalties	35930.44
+2013	ND	Williams	38105	Gas	Unprocessed (Wet) Gas	Royalties	88112.93
+2013	ND	Williams	38105	NGL	Gas Plant Products	Royalties	38850.27
+2013	ND	Williams	38105	Oil	Drip or Scrubber Condensate	Royalties	7.29
+2013	ND	Williams	38105	Oil	Oil	Royalties	3438638.51
+2004	ND	Mclean	38055	Coal	Coal	Royalties	52808.12
+2004	ND	Mercer	38057	Coal	Coal	Royalties	396342.62
+2004	ND	Oliver	38065	Coal	Coal	Royalties	4436.02
+2005	ND	Mclean	38055	Coal	Coal	Royalties	12535.48
+2005	ND	Mercer	38057	Coal	Coal	Royalties	534755.51
+2005	ND	Oliver	38065	Coal	Coal	Royalties	184.08
+2006	ND	Mercer	38057	Coal	Coal	Royalties	753453.95
+2006	ND	Oliver	38065	Coal	Coal	Royalties	32.4
+2006	ND	Williams	38105	Leonardite	Leonardite	Royalties	13538.71
+2007	ND	Mercer	38057	Coal	Coal	Royalties	924739.29
+2007	ND	Oliver	38065	Coal	Coal	Royalties	84.73
+2008	ND	Mercer	38057	Coal	Coal	Royalties	983321.35
 2008	ND	Williams	38105	Coal		Other Revenues	10745
-2009	ND	Mercer	38057	Coal (ton)	Coal	Royalties	198097.73
-2009	ND	Oliver	38065	Coal (ton)	Coal	Royalties	2381.87
+2009	ND	Mercer	38057	Coal	Coal	Royalties	198097.73
+2009	ND	Oliver	38065	Coal	Coal	Royalties	2381.87
 2009	ND	Williams	38105	Coal		Other Revenues	-4064.23
-2009	ND	Williams	38105	Other Products	Leonardite	Royalties	15526.55
-2010	ND	Mercer	38057	Coal (ton)	Coal	Royalties	7770.15
-2010	ND	Oliver	38065	Coal (ton)	Coal	Royalties	75168.77
+2009	ND	Williams	38105	Leonardite	Leonardite	Royalties	15526.55
+2010	ND	Mercer	38057	Coal	Coal	Royalties	7770.15
+2010	ND	Oliver	38065	Coal	Coal	Royalties	75168.77
 2010	ND	Williams	38105	Coal		Other Revenues	-6680.77
-2010	ND	Williams	38105	Other Products	Leonardite	Royalties	15925.63
-2011	ND	Mercer	38057	Coal (ton)	Coal	Royalties	657536.08
-2011	ND	Oliver	38065	Coal (ton)	Coal	Royalties	398944.46
-2011	ND	Williams	38105	Other Products	Leonardite	Royalties	897.98
-2012	ND	Mercer	38057	Coal (ton)	Coal	Royalties	892669.82
-2012	ND	Oliver	38065	Coal (ton)	Coal	Royalties	519423.54
-2012	ND	Williams	38105	Other Products	Leonardite	Royalties	20100.83
-2013	ND	Mercer	38057	Coal (ton)	Coal	Royalties	1316195.47
-2013	ND	Oliver	38065	Coal (ton)	Coal	Royalties	587068.38
-2013	ND	Williams	38105	Other Products	Leonardite	Royalties	49709.67
+2010	ND	Williams	38105	Leonardite	Leonardite	Royalties	15925.63
+2011	ND	Mercer	38057	Coal	Coal	Royalties	657536.08
+2011	ND	Oliver	38065	Coal	Coal	Royalties	398944.46
+2011	ND	Williams	38105	Leonardite	Leonardite	Royalties	897.98
+2012	ND	Mercer	38057	Coal	Coal	Royalties	892669.82
+2012	ND	Oliver	38065	Coal	Coal	Royalties	519423.54
+2012	ND	Williams	38105	Leonardite	Leonardite	Royalties	20100.83
+2013	ND	Mercer	38057	Coal	Coal	Royalties	1316195.47
+2013	ND	Oliver	38065	Coal	Coal	Royalties	587068.38
+2013	ND	Williams	38105	Leonardite	Leonardite	Royalties	49709.67

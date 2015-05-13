@@ -130,10 +130,13 @@
       // app.cancelAll();
 
       var q = queue();
+      var keys;
 
-      if (!Array.isArray(urls)) urls = [urls];
+      if (typeof urls !== 'object') {
+        urls = [urls];
+      }
 
-      urls.forEach(function(url) {
+      var defer = function(url) {
         if (typeof url === 'function') {
           return q.defer(function(next) {
           });
@@ -145,7 +148,16 @@
           var req = load(url, next);
           app.requests.push(req);
         });
-      });
+      };
+
+      if (Array.isArray(urls)) {
+        urls.forEach(defer);
+      } else {
+        keys = Object.keys(urls);
+        keys.forEach(function(key) {
+          defer(urls[key]);
+        });
+      }
 
       app.root
         .classed('loaded', false)
@@ -157,7 +169,17 @@
           .classed('error', !!error)
           .classed('loading', false);
         app.requests = [];
-        done.apply(this, arguments);
+
+        if (keys) {
+          var data = {};
+          var args = [].slice.call(arguments, 1);
+          keys.forEach(function(key, i) {
+            data[key] = args[i];
+          });
+          done.call(this, error, data);
+        } else {
+          done.apply(this, arguments);
+        }
       });
     },
 

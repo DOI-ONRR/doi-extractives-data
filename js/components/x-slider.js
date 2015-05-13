@@ -13,21 +13,14 @@
     attachedCallback: function() {
       // console.log('x-slider attached');
 
-      var load = (function() {
-        // console.warn('load!');
+      this.removeAttribute('unresolved');
+      this.__handle = this.querySelector('.handle') || createHandle.call(this);
+      this.update();
 
-        this.removeAttribute('unresolved');
-        this.__handle = this.querySelector('.handle') || createHandle.call(this);
-        this.update();
-
-        this.addEventListener('click', events.click);
-        this.addEventListener('mousedown', events.engage);
-        this.addEventListener('touchstart', events.engage);
-        this.addEventListener('focus', events.focus, true);
-        window.removeEventListener('load', load);
-      }).bind(this);
-
-      window.addEventListener('load', load);
+      this.addEventListener('click', events.click);
+      this.addEventListener('mousedown', events.engage);
+      this.addEventListener('touchstart', events.engage);
+      this.addEventListener('focus', events.focus, true);
     },
 
     detachedCallback: function() {

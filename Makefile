@@ -76,21 +76,21 @@ output/offshore/volumes-yearly.tsv: input/onrr/offshore-volumes.tsv
 
 output/county/revenues-yearly.tsv: input/onrr/county-revenues.tsv
 	mkdir -p $(dir $@)
-	tito --read tsv $< \
+	$(tito) --read tsv $< \
 		| bin/normalize-county-revenues.js \
-		| tito --write tsv > $@
+		| $(tito) --write tsv > $@
 
 county-revenues-by-state: output/county/revenues-yearly.tsv
-	tito --read tsv $< \
+	$(tito) --read tsv $< \
 		| bin/divvy.js \
 			--path 'output/county/by-state/{{ State }}/revenues-yearly.tsv' \
 			--of tsv
 
 output/county/volumes-yearly.tsv: input/onrr/county-volumes.tsv
 	mkdir -p $(dir $@)
-	tito --read tsv $< \
+	$(tito) --read tsv $< \
 		| bin/normalize-county-volumes.js \
-		| tito --write tsv > $@
+		| $(tito) --write tsv > $@
 
 geo: \
 	output/geo/us-topology.json \

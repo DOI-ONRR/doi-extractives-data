@@ -7,3 +7,14 @@ body[data-path^="/locations/"] nav ul.breadcrumb li:nth-child(3) {
 .module--location region-map svg {
   height: 150px;
 }
+
+#commodities .commodity {
+}
+
+#commodities.commodity-selected .commodity {
+  display: none;
+}
+
+#commodities.commodity-selected .commodity.selected {
+  display: block;
+}

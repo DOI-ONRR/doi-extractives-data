@@ -28,13 +28,20 @@
     // breadcrumb nav
     pathTitles: {
       'index':        'Home',
-      'commodities':  'Commodities',
+      'commodities':  'Resources',
       'locations':    'Locations',
       'production':   'Production',
       'revenue':      'Revenue',
     },
 
-    commoditySlugs: {},
+    // these are turned into objects in the form {name, slug}
+    // in app.loadCommodities()
+    commodityGroups: [
+      'Oil & Gas',
+      'Coal',
+      'Hard Minerals',
+      'Renewables'
+    ],
 
     // all data URLs provided to load() will be prefixed with this
     // path unless they start with "./"
@@ -57,7 +64,7 @@
       // set up d3 selections for the important page elements
       var root = app.root = d3.select('#app');
       app.status = root.select('#status');
-      app.sections = root.selectAll('main, section.primary')
+      app.sections = root.selectAll('#index, section.primary')
         .datum(function() {
           return this.id;
         });
@@ -136,7 +143,7 @@
       var next = last(arguments);
       // always get the commodity configuration before
       // running a route
-      app.updateCommodities(next);
+      app.loadCommodities(next);
     },
 
     /**
@@ -204,15 +211,23 @@
         });
     },
 
-    updateCommodities: function(done) {
+    loadCommodities: function(done) {
       if (app.commodities) return done();
       app.commodities = new eiti.data.Commodities();
       app.commodities.load('data/commodities.json', function(error, commodity) {
+
+        var slugs = reverseLookup(commodity.groups);
         for (var slug in commodity.groups) {
-          var group = commodity.groups[slug];
-          app.commoditySlugs[group] = slug;
-          app.pathTitles[slug] = group;
+          app.pathTitles[slug] = commodity.groups[slug];
         }
+
+        app.commodityGroups = app.commodityGroups.map(function(name) {
+          return {
+            name: name,
+            slug: slugs[name]
+          };
+        });
+
         done();
       });
     },
@@ -221,68 +236,84 @@
   function showIndex(next) {
     console.log('[route] index');
 
-    var root = d3.select('#index');
-    loadLocations(function(error, groups) {
+    var root = app.root.select('#index');
+    if (root.classed('loaded')) {
+      // already loaded
+      return next();
+    } else {
+      loadLocations(function(error, groups) {
 
-      var list = root.select('.select--locations')
-        .call(locationSelector()
-          .groups(groups))
-        .on('change', function() {
-          if (!this.value) return;
-          app.router.setRoute(this.value);
-        });
-
-      app.load([
-        'national/revenues-yearly.tsv',
-        // 'national/volumes-yearly.tsv',
-      ], function(error, revenues, production) {
-
-        var entries = d3.nest()
-          .key(function(d) {
-            return app.commodities.getGroup(d.Commodity);
-          })
-          .rollup(function(d) {
-            return d3.sum(d, dl.accessor('Revenue'));
-          })
-          .entries(revenues)
-          .map(function(d) {
-            d.slug = app.commoditySlugs[d.key];
-            return d;
-          })
-          .sort(dl.comparator('-values'));
-
-        var list = root.select('.list--commodities');
-        var item = list.selectAll('li')
-          .data(entries);
-        item.exit().remove();
-        var enter = item.enter().append('li')
-          .append('a');
-        enter.append('b');
-        enter.append('span')
-          .attr('class', 'revenue--dollars');
-        item.select('a')
-          .attr('href', function(d) {
-            return '#/commodities/' + d.slug;
+        var list = root.select('.select--locations')
+          .call(locationSelector()
+            .groups(groups))
+          .on('change', function() {
+            if (!this.value) return;
+            app.router.setRoute(this.value);
           });
-        item.select('b')
-          .text(dl.accessor('key'));
-        item.select('.revenue--dollars')
-          .html(function(d) {
-            return ' &mdash; ' + eiti.format.shortDollars(d.values);
-          });
-        next();
+
+        root.select('ul.list--commodities')
+          .selectAll('li')
+          .data(app.commodityGroups)
+          .enter()
+          .append('li')
+            .append('a')
+              .attr('href', dl.template('#/commodities/{{ slug }}'))
+              .text(dl.accessor('name'));
+
+        root.classed('loaded', true);
+        return next();
       });
-    });
+    }
   }
 
   function listCommodities(next) {
     console.log('[route] list commodities');
-    next();
+
+    var root = app.root.select('#commodities')
+      .classed('commodity-selected', false);
+    if (root.classed('loaded')) {
+      // already loaded
+      return next();
+    } else {
+      app.load([
+        'national/revenues-yearly.tsv',
+        'national/volumes-yearly.tsv',
+      ], function(error, revenues, production) {
+
+        var sections = root.select('section.list--commodities')
+          .selectAll('section.commodity')
+          .data(app.commodityGroups)
+          .enter()
+          .append('section')
+            .attr('class', 'commodity')
+            .attr('id', dl.template('commodities/{{ slug }}'));
+
+        sections.append('h3')
+          .append('a')
+            .attr('href', dl.template('#/commodities/{{ slug }}'))
+            .text(dl.accessor('name'));
+
+        root.classed('loaded', true);
+        return next();
+      });
+    }
   }
 
   function showCommodity(commodity, next) {
-    console.log('[route] show commodity:', commodity);
-    next();
+    listCommodities(function() {
+      console.log('[route] show commodity:', commodity);
+
+      var root = app.root.select('#commodities')
+        .classed('commodity-selected', true);
+
+      var section = root.selectAll('section.commodity')
+        .classed('selected', function(d) {
+          return d.slug === commodity;
+        })
+        .filter('.selected');
+
+      return next();
+    });
   }
 
   function showRevenue(next) {
@@ -312,53 +343,58 @@
 
   function listLocations(next) {
     console.log('[route] list locations');
-    loadLocations(function(error, groups) {
-      if (error) return next(error);
 
-      var root = d3.select('#locations');
+    var root = app.root.select('#locations');
+    if (root.classed('loaded')) {
+      // already loaded
+      return next();
+    } else {
+      loadLocations(function(error, groups) {
+        if (error) return next(error);
 
-      var list = root.select('.select--locations')
-        .call(locationSelector()
-          .groups(groups))
-        .on('change', function() {
-          if (!this.value) return;
-          app.router.setRoute(this.value);
-        });
+        var list = root.select('.select--locations')
+          .call(locationSelector()
+            .groups(groups))
+          .on('change', function() {
+            if (!this.value) return;
+            app.router.setRoute(this.value);
+          });
 
-      // select the active one
-      var value = '/' + app.router.getRoute().join('/');
-      list.property('value', value);
+        // select the active one
+        var value = '/' + app.router.getRoute().join('/');
+        list.property('value', value);
 
-      var region = root.selectAll('region-map g.region')
-        .each(function(d) {
-          d.href = [
-            '#/locations',
-            d.properties.offshore ? 'offshore' : 'onshore',
-            d.properties.offshore ? d.id : d.properties.abbr
-          ].join('/');
+        var region = root.selectAll('region-map g.region')
+          .each(function(d) {
+            d.href = [
+              '#/locations',
+              d.properties.offshore ? 'offshore' : 'onshore',
+              d.properties.offshore ? d.id : d.properties.abbr
+            ].join('/');
 
-          d.selected = d.href === location.hash;
-        })
-        .classed('selected', function(d) {
-          return d.selected;
-        });
+            d.selected = d.href === location.hash;
+          })
+          .classed('selected', function(d) {
+            return d.selected;
+          });
 
-      region.select('a')
-        .attr('xlink:href', function(d) {
-          return d.href;
-        });
+        region.select('a')
+          .attr('xlink:href', function(d) {
+            return d.href;
+          });
 
-      next();
+        next();
 
-      list.selectAll('option')
-        .filter(function(d) {
-          return d && d.value === value;
-        })
-        .each(function(d) {
-          app.breadcrumb.select('li:last-child a')
-            .text(d.label || '???');
-        });
-    });
+        list.selectAll('option')
+          .filter(function(d) {
+            return d && d.value === value;
+          })
+          .each(function(d) {
+            app.breadcrumb.select('li:last-child a')
+              .text(d.label || '???');
+          });
+      });
+    }
   }
 
   function showState(state, next) {

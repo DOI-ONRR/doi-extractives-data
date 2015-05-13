@@ -26,19 +26,15 @@
           <li class="home"><a href="#/">Home</a></li>
         </ul>
       </nav>
-      <div class="page-description">
-        <p>This is the page description.</p>
-      </div>
     </header>
 
     <main id="index" class="container">
 
       <section class="module module--commodity">
-        <h2>Browse by Category</h2>
-        <p>Total revenues from 2004 to 2013 by commodity category:</p>
+        <h3>Choose a natural resource to learn more</h3>
         <ul class="list--commodities">
         </ul>
-        <p>Or <a href="#/commodities">compare all commodities</a>.</p>
+        <p><a href="#/commodities">Compare data for all resources &gt;</a></p>
       </section>
 
       <section class="module module--location">
@@ -46,11 +42,9 @@
         <p><a href="#/locations"><region-map></region-map></a></p>
         <form action="#/locations">
           <p><a href="#/locations">View the map</a> or 
-            <label>select a location:
-              <select name="location" class="select--locations">
-                <option>Select a region</option>
-              </select>
-            </label>
+            <select name="location" class="select--locations">
+              <option>select a region</option>
+            </select>
           </p>
         </form>
       </section>
@@ -58,11 +52,13 @@
     </main>
 
     <section id="commodities" class="primary container">
+      <section class="list--commodities">
+      </section>
     </section>
 
     <section id="locations" class="primary container">
-      <p>Select a location: <select class="select--locations">
-        <option></option>
+      <p><select class="select--locations">
+        <option>select a region</option>
       </select></p>
       <region-map></region-map>
     </section>

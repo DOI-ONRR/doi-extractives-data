@@ -405,7 +405,7 @@
           var regions = d3.select(this)
             .selectAll('g.region')
             .each(function(f) {
-              return f.revenue = revenuesByState[f.properties.abbr];
+              return f.revenue = revenuesByState[f.id];
             })
             .classed('active', function(f) {
               return !!f.revenue;
@@ -622,7 +622,7 @@
         .each(function(d) {
           d.href = getFeatureHref(d, '#/locations/%');
           d.selected = d.href === location.hash;
-          d.revenue = revenuesByState[d.properties.abbr];
+          d.revenue = revenuesByState[d.id];
         })
         .classed('active', function(d) {
           return d.revenue;
@@ -873,7 +873,7 @@
   function getFeatureHref(d, template) {
     var path = [
       d.properties.offshore ? 'offshore' : 'onshore',
-      d.properties.offshore ? d.id : d.properties.abbr
+      d.id
     ].join('/');
     return template
       ? template.replace('%', path)
@@ -995,16 +995,6 @@
 
   function expandHrefTemplate(d) {
     return dl.template(this.getAttribute('href'))(d);
-  }
-
-  function getFeatureHref(d, template) {
-    var path = [
-      d.properties.offshore ? 'offshore' : 'onshore',
-      d.properties.offshore ? d.id : d.properties.abbr
-    ].join('/');
-    return template
-      ? template.replace('%', path)
-      : '#/locations/' + path;
   }
 
   function parseProductName(name, commodity) {

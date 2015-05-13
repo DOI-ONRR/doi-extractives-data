@@ -32,6 +32,8 @@
       'locations':    'Locations',
       'production':   'Production',
       'revenue':      'Revenue',
+      'onshore':      false,
+      'offshore':     false
     },
 
     // these are turned into objects in the form {name, slug}
@@ -209,6 +211,13 @@
             ? part.text || part.value
             : app.pathTitles[part] || part;
         });
+
+      // prune "hidden" path components
+      // (namely, 'onshore' and 'offshore')
+      li.filter(function(part) {
+        return app.pathTitles[part] === false;
+      })
+      .remove();
     },
 
     loadCommodities: function(done) {

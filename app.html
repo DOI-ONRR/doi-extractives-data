@@ -53,6 +53,39 @@
 
     <section id="commodities" class="primary container">
       <section class="list--commodities">
+
+        <!--
+        NB: this is a *template* for the commodity sections, and
+        will be removed at runtime then replaced with one copy for
+        each commodity group.
+        -->
+        <section class="commodity-template" style="display: none;">
+          <h3><a href="#/commodities/{{ slug }}" class="commodity-title"></a></h3>
+          <p>A little something about <span class="commodity-title">this commodity</span>.</p>
+          <table class="stats">
+            <tr>
+              <th scope="row">Revenues</th>
+              <td class="stat"><a href="#/revenue/{{ slug }}" class="stat__revenue"></a></td>
+            </tr>
+            <tr>
+              <th scope="row">Jobs</th>
+              <td class="stat stat__jobs fpo">FPO</td>
+            </tr>
+            <tr>
+              <th scope="row">Production</th>
+              <td class="stat"><a href="#/production/{{ slug }}" class="stat__products"></a></td>
+            </tr>
+            <tr>
+              <th scope="row">Exports</th>
+              <td class="stat stat__exports fpo">FPO</td>
+            </tr>
+            <tr>
+              <th scope="row"><acronym title="Gross Domestic Product">GDP</acronym></th>
+              <td class="stat stat__gdp fpo">FPO</td>
+            </tr>
+          </table>
+        </section>
+
       </section>
     </section>
 

@@ -154,11 +154,11 @@ region-map .region path.region {
   transition: fill .25s;
 }
 
-region-map .region.enabled path.region {
+region-map .region.active path.region {
   fill: #69c;
 }
 
-region-map .region.enabled:hover path.region {
+region-map .region.active:hover path.region {
   fill: #369;
 }
 

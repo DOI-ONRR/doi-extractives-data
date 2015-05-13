@@ -407,7 +407,7 @@
             .each(function(f) {
               return f.revenue = revenuesByState[f.properties.abbr];
             })
-            .classed('enabled', function(f) {
+            .classed('active', function(f) {
               return !!f.revenue;
             });
 

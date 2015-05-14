@@ -219,11 +219,11 @@ permalink: /data/
       {% endif %} {% endfor %}
       data.</p>
 
-      <p>If you are looking for datasets organized by the U.S. government’s 
+      <p>If you are looking for this data organized by the U.S. government’s 
         {% for term in site.data.terms %} {% if term.term == "fiscal year" %}
         <span class="term-tooltip" title="{{ term.definition }}" tabindex="0" role="tooltip">fiscal year,<i class="fa fa-question"></i></span> 
         {% endif %} {% endfor %}
-      please visit <a href="http://statistics.onrr.gov/">statistics.onrr.gov</a>.</p>
+      please download <a href="{{site:baseurl}}/static/data/2003-2013-revenue-data-FY.xlsx">this dataset</a> instead of the main file below.</p>
 
       <p>This data powers the royalties-by-sector interactive chart on this site's homepage.</p>
 

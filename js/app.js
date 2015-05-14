@@ -483,8 +483,9 @@
     };
   })();
 
-  function showCommodity(commodity, next) {
+  function showCommodity() {
     console.log('[route] show commodity:', commodity);
+    var next = last(arguments);
 
     var root = this.root
       .classed('commodity-selected', true);
@@ -697,16 +698,15 @@
 
   function showState(state, next) {
     console.log('[route] show state:', state);
-    listLocations(function(error, root) {
-      var map = root.select('region-map');
-      var feature;
-      map.selectAll('g.region')
-        .filter(function(d) { return d.selected; })
-        .each(function(d) { feature = d; });
+    var root = this.root;
+    var map = root.select('region-map');
+    var feature;
+    map.selectAll('g.region')
+      .filter(function(d) { return d.selected; })
+      .each(function(d) { feature = d; });
 
-      map.node().zoomTo(feature, 400);
-      return next(null, root);
-    });
+    map.node().zoomTo(feature, 400);
+    return next();
   }
 
   function showCounty(state, county, next) {
@@ -732,8 +732,21 @@
   }
 
   function showCommodityForState(commodity, state, next) {
-    console.log('[route] state commodity view');
-    next();
+    console.log('[route] state commodity view:', arguments);
+    var root = this.root;
+    var map = root.select('region-map')
+      .call(onceLoaded, function() {
+        var feature;
+        map.selectAll('g.region')
+          .each(function(d) {
+            if (!d) console.warn('no feature data:', this, d);
+            d.selected = d.id === state;
+          })
+          .filter(function(d) { return d.selected; })
+          .each(function(d) { feature = d; });
+        map.node().zoomTo(feature, 400);
+      });
+    return next();
   }
 
   function showCommodityForCounty(commodity, state, county, next) {

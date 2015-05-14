@@ -182,11 +182,23 @@ output/svg/outer.svg: output/geo/us-outline.json output/geo/offshore.json
 input/geo/offshore/%.json:
 	cd input/geo/offshore && make
 
+css/fonts:
+	$(BIN)/webfont-dl \
+		'http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic' \
+		-o css/google-fonts.css \
+		--css-rel=fonts \
+		--font-out=$@
+
+css/google-fonts.css: css/fonts
+
 js/docs:
 	$(BIN)/documentation -f html -o $@ $(JS_FILES)
 
 clean:
 	rm -f $(FILES)
 	cd input/geo/offshore && make clean
+
+clean-fonts:
+	rm -rf css/fonts
 
 .PHONY: county-revenues-nested geo svg

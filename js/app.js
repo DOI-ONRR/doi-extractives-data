@@ -345,8 +345,16 @@
   var listCommodities = (function() {
     var data, root, sections;
 
+    function activate(next) {
+      app.yearSlider.on('change', update);
+      update();
+      return next(null, root);
+    }
+
     function update() {
       var year = app.yearSlider.property('value');
+      root.selectAll('.current-year')
+        .text(year);
       var filter = function(d) { return d.Year == year; };
 
       var revenues = data.revenues.filter(filter);
@@ -428,22 +436,19 @@
         .classed('commodity-selected', false);
 
       if (data) {
-        app.yearSlider.on('change', update);
-        update();
-        return next(null, root);
+        return activate(next);
       } else {
         app.load({
           revenues: 'national/revenues-yearly.tsv',
           production: 'national/volumes-yearly.tsv',
-          stateRevenues: 'state/revenues-yearly.tsv',
+          stateRevenues: 'state/revenues-yearly.tsv'
         }, function(error, _data) {
 
           root.classed('loaded', true);
 
           sections = createCommoditySections(
-              root.select('section.list--commodities')
-            )
-            .attr('id', dl.template('commodities/{{ slug }}'));
+            root.select('section.list--commodities')
+          );
 
           _data.revenues.forEach(setCommodityGroup);
           _data.production.forEach(setCommodityGroup);
@@ -451,11 +456,7 @@
 
           data = _data;
 
-          console.warn('+ add change listener');
-          app.yearSlider.on('change', update);
-          update();
-
-          return next(null, root);
+          return activate(next);
         });
       }
     };
@@ -489,9 +490,8 @@
       ], function(error, revenues) {
 
         var sections = createCommoditySections(
-            root.select('section.list--commodities')
-          )
-          .attr('id', dl.template('revenue/{{ slug }}'));
+          root.select('section.list--commodities')
+        );
 
         root.classed('loaded', true);
         return next(null, root);
@@ -524,9 +524,8 @@
       ], function(error, production) {
 
         var sections = createCommoditySections(
-            root.select('section.list--commodities')
-          )
-          .attr('id', dl.template('production/{{ slug }}'));
+          root.select('section.list--commodities')
+        );
 
         production.forEach(setCommodityGroup);
 
@@ -664,9 +663,7 @@
             revenuesByYear = d3.nest()
               .key(dl.accessor('Year'))
               .key(dl.accessor('State'))
-              .rollup(function(d) {
-                return sum(d, 'Revenue');
-              })
+              .rollup(sumRevenues)
               .map(revenues);
 
             return activate(next);
@@ -956,10 +953,17 @@
     return sections;
   }
 
+  /**
+   * assign the 'CommodityGroup' property to an object based on the
+   * value of its 'Commodity' property.
+   */
   function setCommodityGroup(d) {
     d.CommodityGroup = app.commodities.getGroup(d.Commodity);
   }
 
+  /**
+   * rebind a selection to the closest ancestor with data
+   */
   function rebind(selection, parent) {
     selection.each(function(d) {
       var node = this;
@@ -973,7 +977,9 @@
 
   function sum(d, key) {
     key = dl.accessor(key);
-    return d3.sum(d, function(x) { return +key(x); });
+    return d3.sum(d, function(x) {
+      return +key(x);
+    });
   }
 
   function sumRevenues(d) {

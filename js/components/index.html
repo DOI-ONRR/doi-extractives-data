@@ -17,6 +17,7 @@
     <script src="../progressive.js"></script>
     <!-- /region-map -->
     <script src="x-slider.js"></script>
+    <script src="x-sparkline.js"></script>
     <link rel="stylesheet" href="../../css/index.css">
     <link rel="stylesheet" href="../../css/components.css">
     <style>
@@ -190,6 +191,20 @@
 
       })();
       </script>
+    </section>
+
+    <section id="x-sparkline" class="container">
+      <h2><tt>&lt;x-sparkline&gt;</tt></h2>
+      <p>The <tt>&lt;x-sparkline&gt;</tt> element renders a small,
+        simple chart.</p>
+      <dl>
+        <dt><tt>values=""</tt></dt>
+        <dd>A comma-separated list of numbers to show.</dd>
+      </dl>
+
+      <p>Basic test: <x-sparkline values="10,12,8,6,20"></x-sparkline></p>
+      <p>Negative values: <x-sparkline line="0" values="10,-12,8,-2,6,20"></x-sparkline></p>
+      <p>Dot: <x-sparkline dot="5" values="10,-12,8,-2,6,20"></x-sparkline></p>
     </section>
 
   </body>

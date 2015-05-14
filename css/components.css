@@ -118,3 +118,20 @@ region-map path.mesh {
   stroke-width: 1;
   vector-effect: non-scaling-stroke;
 }
+
+x-sparkline path {
+  fill: none;
+  stroke: #000;
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+x-sparkline line {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 1;
+}
+
+x-sparkline circle {
+  fill: #000;
+}

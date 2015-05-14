@@ -2,6 +2,11 @@ nav {
   margin-bottom: 2em;
 }
 
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
 nav ul.breadcrumb {
   font-size: 1.5em;
 }
@@ -51,7 +56,7 @@ x-slider .tick {
     font-weight: bold;
   }
 
-body[data-path="/index"] .controls--global {
+body[data-path="index"] .controls--global {
   display: none;
 }
 
@@ -84,6 +89,10 @@ table.stats td {
 
 table.stats .fpo {
   color: #ccc;
+}
+
+.selector {
+  margin: 1em 0;
 }
 
 @media (min-width: 640px) {

@@ -131,11 +131,13 @@ describe('util.group()', function() {
     assert.deepEqual(group(data, ['foo'], count), [
       {
         key: {foo: 1},
-        value: 2
+        value: 2,
+        length: 2
       },
       {
         key: {foo: 2},
-        value: 1
+        value: 1,
+        length: 1
       }
     ]);
   });

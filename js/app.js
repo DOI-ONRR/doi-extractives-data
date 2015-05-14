@@ -398,7 +398,7 @@
       var detail = sections.select('.detail');
 
       detail.select('region-map')
-        .call(whenLoaded, function(d) {
+        .call(onceLoaded, function(d) {
           // console.log('region map:', index[d.name]);
 
           var revenuesByState = index[d.name] || {};
@@ -1017,7 +1017,7 @@
       .replace(/\W+/g, '-');
   }
 
-  function whenLoaded(selection, callback) {
+  function onceLoaded(selection, callback) {
     selection.each(function() {
       if (this.loaded) return callback.apply(this, arguments);
       d3.select(this).on('load', callback);

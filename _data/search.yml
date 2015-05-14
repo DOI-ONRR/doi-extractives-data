@@ -4,6 +4,7 @@
   tag:
   - energy
   - states
+  - EIA
 
 - title: "Energy Information Administration (EIA) Energy Markets and Finance"
   url: http://www.eia.gov/finance/ 
@@ -14,6 +15,7 @@
   - finance
   - oil
   - gas
+  - EIA
 
 - title: "Energy Information Administration (EIA) Annual Energy Outlook"
   url: http://www.eia.gov/analysis/projection-data.cfm#annualproj
@@ -23,12 +25,14 @@
   - oil
   - gas
   - coal
+  - EIA
 
 - title: "Energy Information Administration (EIA) Total Energy"
   url: http://www.eia.gov/totalenergy/
   description: "Comprehensive data summaries, comparisons, analysis and projections integrated across all energy sources."
   tag:
   - energy
+  - EIA
 
 - title: "Energy Information Administration (EIA) Renewable & Alternative Fuels"
   url: http://www.eia.gov/renewable/
@@ -37,6 +41,7 @@
   - energy
   - renewable
   - fuel
+  - EIA
 
 - title:  Energy Information Administration (EIA) Coal
   url: http://www.eia.gov/coal/
@@ -44,22 +49,23 @@
   tag:
   - energy
   - coal
+  - EIA
 
 - title: Land and Water Conservation Fund (LWCF)
   url: http://www.nps.gov/lwcf/index.htm
   description: "The National Park Service LWCF Program provides matching grants to States and local governments for the acquisition and development of public outdoor recreation areas and facilities (as well as funding for shared federal land acquisition and conservation strategies)."
   tag:
-  - Park Service
   - conservation
   - grants
+  - NPS
 
 - title: National Historic Preservation Fund
   url: http://www.nps.gov/history/hpg/
   description: "The National Park Service home page for the Historic Preservation Fund."
   tag:
-  - Park Service
   - historic
   - preservation
+  - NPS
 
 - title: U.S. Census Bureau Energy and Utilities Statistics
   url: http://www.census.gov/compendia/statab/cats/energy_utilities.html
@@ -68,6 +74,7 @@
   - energy
   - utilities
   - statistics
+  - Census
 
 - title: Advisory Council on Historic Preservation
   url: http://www.achp.gov/nhpp.html
@@ -83,6 +90,7 @@
   - energy
   - minerals
   - geological
+  - USGS
 
 - title: U.S Geological Survey (USGS) Energy and Minerals Program
   url: http://www.usgs.gov/energy_minerals/
@@ -91,6 +99,7 @@
   - energy
   - minerals
   - geological
+  - USGS
 
 - title: Bureau of Land Management (BLM) Energy Home Page
   url: http://www.blm.gov/wo/st/en/prog/energy.html
@@ -101,6 +110,7 @@
   - oil
   - gas
   - coal
+  - BLM
 
 - title: "Office of Surface Mining, Reclamation and Enforcement (OSMRE)"
   url: http://www.osmre.gov/index.shtm
@@ -109,6 +119,7 @@
   - mining
   - coal
   - reclamation
+  - OSMRE
 
 - title: U.S. Census Bureau Energy and Utilities Statistics
   url: http://www.census.gov/compendia/statab/cats/energy_utilities.html
@@ -117,6 +128,7 @@
   - energy
   - utilities
   - statistics
+  - Census
 
 - title: Bureau of Ocean Energy Management (BOEM) Oil and Gas Energy Program
   url:  http://www.boem.gov/Oil-and-Gas-Energy-Program/
@@ -126,6 +138,7 @@
   - ocean
   - oil
   - gas
+  - BOEM
 
 - title: Bureau of Ocean Energy Management (BOEM) Renewable Energy Program
   url: http://www.boem.gov/Renewable-Energy/
@@ -134,6 +147,7 @@
   - ocean
   - renewable
   - energy
+  - BOEM
 
 - title: Bureau of Safety and Environmental Enforcement (BSEE) Offshore Statistics and Facts
   url: http://www.bsee.gov/BSEE-Newsroom/Offshore-Stats-and-Facts/Offshore-Stats-and-Facts/
@@ -143,6 +157,7 @@
   - energy
   - leases
   - production
+  - BSEE
 
 - title: "Department of the Interior, Office of Natural Resources Revenue (ONRR)"
   url: http://www.onrr.gov/
@@ -150,6 +165,7 @@
   tag:
   - minerals
   - revenue
+  - ONRR
 
 - title: Department of Energy
   url: http://energy.gov/science-innovation/energy-sources
@@ -160,6 +176,7 @@
   - gas
   - coal
   - renewable
+  - DOE
 
 - title: Bureau of Ocean Energy Management National Environmental Policy Act
   url: http://www.boem.gov/National-Environmental-Policy-Act/
@@ -169,6 +186,7 @@
   - environmental
   - energy
   - development
+  - BOEM
 
 - title: Bureau of Ocean Energy Management Outer Continental Shelf Environmental Impact Statement
   url: http://www.boem.gov/Oil-and-Gas-Energy-Program/Leasing/Five-Year-Program/2012-2017/Five-Year-Program.aspx
@@ -182,6 +200,7 @@
   - gas
   - continental
   - EIS
+  - BOEM
 
 - title: Bureau of Ocean Energy Management Alaska Environmental Analysis
   url: http://www.boem.gov/Alaska-Environmental-Analysis/
@@ -192,6 +211,7 @@
   - environmental
   - energy
   - development
+  - BOEM
 
 - title: Bureau of Ocean Energy Management Alaska Environmental Analysis
   url: http://www.boem.gov/Alaska-Environmental-Analysis/
@@ -202,6 +222,7 @@
   - environmental
   - energy
   - development
+  - BOEM
 
 - title: Bureau of Ocean Energy Management Gulf of Mexico Environmental Analysis
   url: http://www.boem.gov/Environmental-Stewardship/Environmental-Assessment/NEPA/nepaprocess.aspx
@@ -214,6 +235,7 @@
   - environmental
   - energy
   - development
+  - BOEM
 
 - title: Bureau of Ocean Energy Management Pacific Ocean Environmental Analysis
   url: "http://www.boem.gov/Environmental-Assessments-Pacific-Region/#Oil%20and%20Gas"
@@ -225,6 +247,7 @@
   - environmental
   - energy
   - development
+  - BOEM
 
 - title: Bureau of Land Management National Environmental Policy Act
   url: http://www.blm.gov/wo/st/en/prog/planning/nepa/field_office_nepa.html
@@ -235,6 +258,7 @@
   - environmental
   - energy
   - development
+  - BLM
 
 - title: Bureau of Land Management National Environmental Policy Act
   url: http://www.blm.gov/pgdata/content/wo/en/prog/planning/planning_overview/eplanning2.html
@@ -247,6 +271,7 @@
   - use
   - planning
   - development
+  - BLM
 
 - title: Bureau of Land Management Land Use Planning
   url: http://www.blm.gov/pgdata/content/wo/en/prog/planning/planning_overview/eplanning2.html
@@ -259,6 +284,7 @@
   - use
   - planning
   - development
+  - BLM
 
 - title: Office of Surface Mining Reclamation and Enforcement
   url: http://www.osmre.gov/programs.shtm
@@ -268,3 +294,242 @@
   - coal
   - mining
   - reclamation
+  - OSMRE
+
+- title: Office of Natural Resource Revenues Statistics Information Page
+  url: http://statistics.onrr.gov/
+  description: "This website displays reported revenues, sales volumes, and disbursements for lands managed by the federal government."
+  tag:
+  - revenues
+  - energy
+  - statistics
+  - ONRR
+
+- title: Governing statutes for offshore energy development
+  url: http://www.boem.gov/Governing-Statutes/ 
+  description: "Governing statutes for offshore energy development."
+  tag:
+  - energy
+  - development
+  - laws
+  - regulations
+  - BOEM
+
+- title: Bureau of Ocean Energy Management Frequently Asked Questions
+  url: http://www.boem.gov/FAQ/
+  description: "Bureau of Ocean Energy Management (BOEM) Frequently Asked Questions"
+  tag:
+  - energy
+  - development
+  - oil
+  - BOEM
+
+- title: Bureau of Ocean Energy Management Five-Year Plan
+  url: http://www.boem.gov/Five-Year-Program-2012-2017/
+  description: "This is the most current 5 year plan for offshore development from 2012-2017."
+  tag:
+  - energy
+  - development
+  - oil
+  - gas
+  - offshore
+  - BOEM
+
+- title: Bureau of Ocean Energy Management Statistics and Facts Page
+  url: http://www.boem.gov/Statistics-and-Facts/
+  description: "Links to various statistics and facts broken out by offshore region."
+  tag:
+  - energy
+  - development
+  - statistics
+  - offshore
+  - BOEM
+
+- title: Bureau of Ocean Energy Management Data Center
+  url: http://www.data.boem.gov/homepg/data_center/index.asp
+  description: "In the data center, users can access public information and data pertaining to the appropriate subject matter. Data are available via online queries, as well as downloadable PDF reports, ASCII files, and scanned documents available in PDF format."
+  tag:
+  - oil
+  - gas
+  - data
+  - BOEM
+
+- title: Bureau of Ocean Energy Management Regulatory Reforms
+  url: http://www.boem.gov/Regulatory-Reform/ 
+  description: "In response to the Deepwater Horizon explosion and resulting oil spill in the Gulf of Mexico, the Obama Administration launched the most aggressive and comprehensive reforms to offshore oil and gas regulation and oversight in U.S. history. Information about these reforms is on this site."
+  tag:
+  - oil
+  - gas
+  - regulations
+  - BOEM
+
+- title: Bureau of Ocean Energy Management Oil and Gas Energy Program
+  url: hhttp://www.boem.gov/Oil-and-Gas-Energy-Program/
+  description: "High level overview of offshore oil and gas extraction."
+  tag:
+  - oil
+  - gas
+  - energy
+  - development
+  - BOEM
+
+- title: Offshore Combined Leasing Report
+  url: http://www.boem.gov/Oil-and-Gas-Energy-Program/
+  description: "A monthly report that displays total offshore blocks, total acres, number of active leases, acreage of active leases, number of producing leases, acreage of producing leases, number of non-producing leases and acreage of non-producing leases."
+  tag:
+  - oil
+  - gas
+  - offshore
+  - leasing
+  - energy
+  - development
+  - BOEM
+
+- title: Offshore Oil and Gas Production
+  url: http://www.data.bsee.gov/homepg/data_center/production/ocsprod.asp 
+  description: "Offshore oil and gas production by region updated monthly."
+  tag:
+  - oil
+  - gas
+  - offshore
+  - production
+  - energy
+  - development
+  - BOEM
+
+- title: Gulf of Mexico Energy Security Act (GOMESA)
+  url: http://www.boem.gov/Revenue-Sharing/
+  description: "Information on GOMESA which significantly enhances Outer Continental Shelf (OCS) oil and gas leasing activities and revenue sharing in the Gulf of Mexico (GOM)."
+  tag:
+  - oil
+  - gas
+  - offshore
+  - laws
+  - Gulf
+  - BOEM
+  - GOMESA
+
+- title: Bureau of Safety and Environmental Enforcement Fees for Service
+  url: http://www.bsee.gov/About-BSEE/Fees-for-Services/
+  description: "The Bureau of Safety and Environmental Enforcement (BSEE) collects fees for thirty-one Outer Continental Shelf Activities. "
+  tag:
+  - oil
+  - gas
+  - offshore
+  - revenues
+  - BSEE
+
+- title: Bureau of Safety and Environmental Enforcement Offshore Inspection and Enforcement Program
+  url: http://www.bsee.gov/Inspection-and-Enforcement/Inspection-Programs/Inspection-Programs/
+  description: "The Outer Continental Shelf Lands Act authorizes and requires the Bureau to provide for both an annual scheduled inspection and a periodic unscheduled (unannounced) inspection of all oil and gas operations on the outer continental shelf. The annual inspection examines all safety equipment designed to prevent blowouts, fires, spills, or other major accidents."
+  tag:
+  - oil
+  - gas
+  - offshore
+  - inspection
+  - enforcement
+  - BSEE
+
+- title: Bureau of Safety and Environmental Enforcement Offshore Civil Penalties and Appeals
+  url: http://www.bsee.gov/Inspection-and-Enforcement/Civil-Penalties-and-Appeals/Civil-Penalties-and-Appeals/
+  description: "Bureau of Safety and Environmental Enforcement Offshore Civil Penalties and Appeals."
+  tag:
+  - oil
+  - gas
+  - offshore
+  - revenues
+  - enforcement
+  - BSEE
+
+- title: Office of Surface Mining and Reclamation Enforcement State and Tribal Oversight Programs
+  url: http://www.wrcc.osmre.gov/programs/stateTribalOversight.shtm
+  description: "This site identifies State and Tribal Oversight Programs of the Office of Surface Mining and Reclamation Enforcement."
+  tag:
+  - mines
+  - coal
+  - regulations
+  - laws
+  - reclamation
+  - tribes
+  - states
+  - OSMRE
+
+- title: Office of Surface Mining and Reclamation Enforcement Abandoned Mine Lands 
+  url: http://www.wrcc.osmre.gov/programs/AML.shtm
+  description: "This site addresses Abandoned Mine Lands (AML), which are lands and waters that have been adversely impacted by historic mining."
+  tag:
+  - mines
+  - coal
+  - regulations
+  - reclamation
+  - laws
+  - OSMRE
+
+- title: US Geological Survey Minerals Commodity Summaries
+  url: http://minerals.usgs.gov/minerals/pubs/mcs/
+  description: "Published on an annual basis, this report is the earliest Government publication to furnish estimates covering nonfuel mineral industry data. Data sheets contain information on the domestic industry structure, Government programs, tariffs, and 5-year salient statistics for over 90 individual minerals and materials."
+  tag:
+  - minerals
+  - reports
+  - data
+  - USGS
+
+- title: US Geological Survey National Oil and Gas Assessment
+  url: http://energy.usgs.gov/OilGas/AssessmentsData/NationalOilGasAssessment.aspx
+  description: "An interactive map displaying resources reserves for oil and gas."
+  tag:
+  - oil
+  - gas
+  - reserves
+  - data
+  - USGS
+
+- title: Bureau of Land Management Public Land Statistics
+  url: http://www.blm.gov/public_land_statistics/
+  description: "Public land statistics are published annually and provided information on Land Resources, Healthy and Productive Lands, Commercial Uses and Revenues Generated, Recreation and Leisure Activities, Natural and Cultural Heritage Preservations, Public Health, Safety, and Resource Protection."
+  tag:
+  - oil
+  - gas
+  - statistics
+  - revenue
+  - BLM
+
+- title: Bureau of Land Management Onshore Oil and Gas Leasing Information
+  url: http://www.blm.gov/mt/st/en/prog/energy/oil_and_gas/leasing.html
+  description: "Onshore Oil and Gas leasing statistics, facts, handbooks, cost recovery fees and surface ownership websites."
+  tag:
+  - oil
+  - gas
+  - statistics
+  - leases
+  - BLM
+
+- title: Bureau of Land Management Onshore Oil and Gas Management
+  url: http://www.blm.gov/wo/st/en/prog/energy/oil_and_gas.html
+  description: "General information on BLM’s onshore oil and gas program."
+  tag:
+  - oil
+  - gas
+  - energy
+  - development
+  - BLM
+
+- title: Bureau of Land Management LR2000
+  url: http://www.blm.gov/lr2000/
+  description: "LR2000 provides reports on BLM land and mineral use authorizations for oil, gas, and geothermal leasing, rights-of-ways, coal and other mineral development, land and mineral title, mining."
+  tag:
+  - oil
+  - gas
+  - minerals
+  - coal
+  - leases
+  - BLM
+
+- title: Department of the Interior Natural Resource Management Team
+  url: http://www.doi.gov/pmb/oepc/nrm/index.cfm
+  description: "This Team ensures this compliance through review and approval of environmental documents and environmental compliance consultation with bureaus."
+  tag:
+  - NEPA
+  - environmental
+  - protection
+  - DOI

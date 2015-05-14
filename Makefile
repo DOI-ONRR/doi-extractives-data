@@ -17,6 +17,8 @@ FILES = \
 	output/offshore/volumes-yearly.tsv \
 	county-revenues-by-state
 
+JS_FILES ?= js/eiti*.js
+
 all: $(FILES) geo svg
 
 output/national/revenues-yearly.tsv: output/state/revenues-yearly.tsv output/offshore/revenues-yearly.tsv
@@ -177,12 +179,14 @@ output/svg/filtered.svg: output/geo/us-topology-filtered.json
 output/svg/outer.svg: output/geo/us-outline.json output/geo/offshore.json
 	bin/vectorize.js --p0 $^ > $@
 
-JS_FILES ?= js/eiti*.js
+input/geo/offshore/%.json:
+	cd input/geo/offshore && make
 
 js/docs:
 	$(BIN)/documentation -f html -o $@ $(JS_FILES)
 
 clean:
 	rm -f $(FILES)
+	cd input/geo/offshore && make clean
 
 .PHONY: county-revenues-nested geo svg

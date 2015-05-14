@@ -815,36 +815,7 @@
       });
   }
 
-  function locationSelector() {
-    var groups = [];
-
-    var selector = function(select) {
-      var group = select.selectAll('optgroup')
-        .data(groups);
-      group.exit().remove();
-      group.enter().append('optgroup');
-      group.attr('label', dl.accessor('label'));
-
-      var option = group.selectAll('option')
-        .data(function(d) { return d.values; });
-      option.exit().remove();
-      option.enter().append('option');
-      option
-        .attr('value', dl.accessor('value'))
-        .text(dl.accessor('label'));
-    };
-
-    selector.groups = function(_) {
-      if (!arguments.length) return groups;
-      groups = _;
-      return selector;
-    };
-
-    return selector;
-  }
-
   function lookup(list, key, value) {
-    value = dl.accessor(value);
     return d3.nest()
       .key(dl.accessor(key))
       .rollup(function(d) {
@@ -854,21 +825,20 @@
   }
 
   function reverseLookup(map) {
-    return d3.nest()
-      .key(dl.accessor('value'))
-      .rollup(function(d) {
-        return d[0].key;
-      })
-      .map(d3.entries(map));
+    var reverse = {};
+    for (var key in map) {
+      reverse[map[key]] = key;
+    }
+    return reverse;
   }
 
-  function setCommodityGroup(d) {
-    d.CommodityGroup = app.commodities.getGroup(d.Commodity);
-  }
-
-  function rebind(selection, parent) {
-    selection.each(function(d) {
+  /**
+   * rebind a selection to the closest ancestor with data
+   */
+  function rebind(selection, skipCurrentData) {
+    selection.each(function(_d) {
       var node = this;
+      var d = skipCurrentData ? null : _d;
       while (!d && node.parentNode) {
         node = node.parentNode;
         d = d3.select(node).datum();
@@ -879,7 +849,9 @@
 
   function sum(d, key) {
     key = dl.accessor(key);
-    return d3.sum(d, function(x) { return +key(x); });
+    return d3.sum(d, function(x) {
+      return +key(x);
+    });
   }
 
   function sumRevenues(d) {
@@ -941,25 +913,6 @@
     return selector;
   }
 
-  function lookup(list, key, value) {
-    value = dl.accessor(value);
-    return d3.nest()
-      .key(dl.accessor(key))
-      .rollup(function(d) {
-        return value(d[0]);
-      })
-      .map(list);
-  }
-
-  function reverseLookup(map) {
-    return d3.nest()
-      .key(dl.accessor('value'))
-      .rollup(function(d) {
-        return d[0].key;
-      })
-      .map(d3.entries(map));
-  }
-
   function createCommoditySections(root, templateSelector) {
     var template = root.select(templateSelector || '.template')
       .style('display', null)
@@ -997,44 +950,6 @@
     d.CommodityGroup = app.commodities.getGroup(d.Commodity);
   }
 
-  /**
-   * rebind a selection to the closest ancestor with data
-   */
-  function rebind(selection, parent) {
-    selection.each(function(d) {
-      var node = this;
-      while (!d && node.parentNode) {
-        node = node.parentNode;
-        d = d3.select(node).datum();
-      }
-      d3.select(this).datum(d);
-    });
-  }
-
-  function sum(d, key) {
-    key = dl.accessor(key);
-    return d3.sum(d, function(x) {
-      return +key(x);
-    });
-  }
-
-  function sumRevenues(d) {
-    return sum(d, 'Revenue');
-  }
-
-  function countUnique(d, key) {
-    return d3.nest()
-      .key(dl.accessor(key))
-      .entries(d)
-      .length;
-  }
-
-  function pluralize(value, text, plural) {
-    return (value == 1)
-      ? [value, text].join('')
-      : [value, plural || (text + 's')].join('');
-  }
-
   function expandHrefTemplate(d) {
     return dl.template(this.getAttribute('href'))(d);
   }
@@ -1063,19 +978,6 @@
     selection.each(function() {
       if (this.loaded) return callback.apply(this, arguments);
       d3.select(this).on('load', callback);
-    });
-  }
-
-  function zoomMapToFeature(selection, feature, duration) {
-    selection.each(function() {
-      var selected;
-      d3.select(this).selectAll('g.region')
-        .each(function(d) {
-          if (d === feature || d.id === feature || d.id === feature.id) {
-            selected = d;
-          }
-        });
-      this.zoomTo(selected, duration);
     });
   }
 

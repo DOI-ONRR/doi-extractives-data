@@ -19,7 +19,7 @@ FILES = \
 
 JS_FILES ?= js/eiti*.js
 
-all: $(FILES) geo svg
+all: $(FILES) geo svg css/fonts
 
 output/national/revenues-yearly.tsv: output/state/revenues-yearly.tsv output/offshore/revenues-yearly.tsv
 	mkdir -p $(dir $@)
@@ -200,5 +200,8 @@ clean:
 
 clean-fonts:
 	rm -rf css/fonts
+
+distclean: clean clean-fonts
+	cd input/geo/offshore && make distclean
 
 .PHONY: county-revenues-nested geo svg

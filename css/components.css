@@ -108,8 +108,8 @@ region-map path.region {
 }
 
 region-map .offshore path.region {
-  /* XXX */
-  visibility: hidden;
+  /* XXX: uncomment to hide bad geometries */
+  /* visibility: hidden; */
 }
 
 region-map path.mesh {

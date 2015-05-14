@@ -652,7 +652,7 @@
             .call(locationSelector()
               .groups(groups))
             .on('change', function() {
-              if (!this.value) return;
+              if (!this.value) return app.router.setRoute('/locations');
               app.router.setRoute(this.value);
             });
 
@@ -696,8 +696,15 @@
 
   function showOffshoreRegion(region, next) {
     console.log('[route] show offshore region:', region);
-    listLocations(function() {
-      next();
+    listLocations(function(error, root) {
+      var map = root.select('region-map');
+      var feature;
+      map.selectAll('g.region')
+        .filter(function(d) { return d.selected; })
+        .each(function(d) { feature = d; });
+
+      map.node().zoomTo(feature, 400);
+      return next(null, root);
     });
   }
 

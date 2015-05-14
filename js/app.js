@@ -40,36 +40,56 @@
         routes = {
           '/index': showIndex,
 
-          '/commodities':             listCommodities,
-          '/commodities/:commodity':  showCommodity,
+          '/commodities': {
+            on: listCommodities,
+            '/:commodity': {
+              on: showCommodity,
+              '/onshore/:state': {
+                on: showCommodityForState,
+                '/:county': showCommodityForCounty
+              },
+              '/offshore/:region': {
+                on: showCommodityForOffshoreRegion,
+                '/:area': showCommodityForOffshoreArea
+              }
+            }
+          },
 
-          '/commodities/:commodity/onshore/:state':         showCommodityForState,
-          '/commodities/:commodity/onshore/:state/:county': showCommodityForCounty,
-          '/commodities/:commodity/offshore/:region':       showCommodityForOffshoreRegion,
-          '/commodities/:commodity/offshore/:region/:area': showCommodityForOffshoreArea,
+          '/revenue': {
+            on: showRevenue,
+            '/:commodity': showCommodityRevenue
+          },
 
-          '/revenue':             showRevenue,
-          '/revenue/:commodity':  showCommodityRevenue,
+          '/production': {
+            on: showProduction,
+            '/:commodity': {
+              on: listCommodityProducts,
+              '/:product': showCommodityProduct
+            }
+          },
 
-          '/production':                      showProduction,
-          '/production/:commodity':           listCommodityProducts,
-          '/production/:commodity/:product':  showCommodityProduct,
-
-          '/locations':                         listLocations,
-          '/locations/onshore/:state':          showState,
-          '/locations/onshore/:state/:county':  showCounty,
-          '/locations/offshore/:region':        showOffshoreRegion,
-          '/locations/offshore/:region/:area':  showOffshoreArea,
+          '/locations': {
+            on: listLocations,
+            '/onshore/:state': {
+              on: showState,
+              '/:county': showCounty
+            },
+            '/offshore/:region': {
+              on: showOffshoreRegion,
+              '/:area': showOffshoreArea
+            }
+          }
         };
       }
 
       // create the router
       app.router = new Router(routes)
         .configure({
-          async: true,
-          before: app.beforeRoute,
-          on:     app.onRoute,
-          after:  app.afterRoute,
+          async:    true,
+          recurse: 'forward',
+          before:   app.beforeRoute,
+          on:       app.onRoute,
+          after:    app.afterRoute,
           notfound: app.notFound
         });
 
@@ -312,10 +332,10 @@
   function showIndex(next) {
     console.log('[route] index');
 
-    var root = app.root.select('#index');
+    var root = this.root = app.root.select('#index');
     if (root.classed('loaded')) {
       // already loaded
-      return next(null, root);
+      return next();
     } else {
       loadLocations(function(error, groups) {
 
@@ -337,7 +357,7 @@
               .text(dl.accessor('name'));
 
         root.classed('loaded', true);
-        return next(null, root);
+        return next();
       });
     }
   }
@@ -348,7 +368,7 @@
     function activate(next) {
       app.yearSlider.on('change', update);
       update();
-      return next(null, root);
+      return next();
     }
 
     function update() {
@@ -429,10 +449,11 @@
         });
     }
 
-    return function listCommodities(next) {
+    return function listCommodities() {
       console.log('[route] list commodities');
+      var next = last(arguments);
 
-      root = app.root.select('#commodities')
+      root = this.root = app.root.select('#commodities')
         .classed('commodity-selected', false);
 
       if (data) {
@@ -463,27 +484,30 @@
   })();
 
   function showCommodity(commodity, next) {
-    listCommodities(function(error, root) {
-      console.log('[route] show commodity:', commodity);
+    console.log('[route] show commodity:', commodity);
 
-      root.classed('commodity-selected', true);
+    var root = this.root
+      .classed('commodity-selected', true);
 
-      var section = root.selectAll('section.commodity')
-        .classed('selected', function(d) {
-          return d.slug === commodity;
-        })
-        .filter('.selected');
+    var section = root.selectAll('section.commodity')
+      .classed('selected', function(d) {
+        return d.slug === commodity;
+      })
+      .filter('.selected');
 
-      return next(null, root);
-    });
+    this.root = section;
+
+    return next();
   }
 
   function showRevenue(next) {
     console.log('[route] show revenues');
-    var root = app.root.select('#revenue')
-        .classed('commodity-selected', false);
+
+    var root = this.root = app.root.select('#revenue')
+      .classed('commodity-selected', false);
+
     if (root.classed('loaded')) {
-      return next(null, root);
+      return next();
     } else {
       app.load([
         'national/revenue-yearly.tsv'
@@ -494,7 +518,7 @@
         );
 
         root.classed('loaded', true);
-        return next(null, root);
+        return next();
       });
     }
   }
@@ -502,22 +526,24 @@
   function showCommodityRevenue(commodity, next) {
     console.log('[route] show commodity revenues:', commodity);
     showRevenue(function() {
-      var root = app.root.select('#revenue')
+      var root = this.root = app.root.select('#revenue')
         .classed('commodity-selected', true);
       root.selectAll('section.commodity')
         .classed('selected', function(d) {
           return d.slug === commodity;
         });
-      return next(null, root);
+      return next();
     });
   }
 
   function showProduction(next) {
     console.log('[route] show production');
-    var root = app.root.select('#production')
-        .classed('commodity-selected', false);
+
+    var root = this.root = app.root.select('#production')
+      .classed('commodity-selected', false);
+
     if (root.classed('loaded')) {
-      return next(null, root);
+      return next();
     } else {
       app.load([
         'national/volumes-yearly.tsv'
@@ -573,29 +599,25 @@
 
 
         root.classed('loaded', true);
-        return next(null, root);
+        return next();
       });
     }
   }
 
   function listCommodityProducts(commodity, next) {
-    console.log('[route] list commodity products');
-    return showProduction(function(error, root) {
-      root.classed('commodity-selected', true);
-      root.selectAll('section.commodity')
-        .classed('selected', function(d) {
-          return d.slug === commodity;
-        });
-      return next(null, root);
-    });
+    var root = this.root;
+    root.classed('commodity-selected', true);
+    root.selectAll('section.commodity')
+      .classed('selected', function(d) {
+        return d.slug === commodity;
+      });
+    return next();
   }
 
   function showCommodityProduct(commodity, product, next) {
     console.log('[route] show commodity product:', commodity, product);
-    return listCommodityProducts(commodity, function(error, root) {
-      // TODO: select the product
-      return next(null, root);
-    });
+    // TODO: select the product
+    return next();
   }
 
   var listLocations = (function() {
@@ -610,7 +632,7 @@
 
       app.yearSlider.on('change', update);
       update();
-      return next(null, root);
+      return next();
     }
 
     function update() {
@@ -639,7 +661,7 @@
     return function listLocations(next) {
       console.log('[route] list locations');
 
-      root = app.root.select('#locations');
+      root = this.root = app.root.select('#locations');
       map = root.select('region-map');
 
       if (revenuesByYear) {
@@ -689,30 +711,24 @@
 
   function showCounty(state, county, next) {
     console.log('[route] show county:', state, county);
-    showState(state, function(error, root) {
-      return next(null, root);
-    });
+    return next();
   }
 
   function showOffshoreRegion(region, next) {
     console.log('[route] show offshore region:', region);
-    listLocations(function(error, root) {
-      var map = root.select('region-map');
-      var feature;
-      map.selectAll('g.region')
-        .filter(function(d) { return d.selected; })
-        .each(function(d) { feature = d; });
-
-      map.node().zoomTo(feature, 400);
-      return next(null, root);
-    });
+    var root = this.root;
+    var map = root.select('region-map');
+    var feature;
+    map.selectAll('g.region')
+      .filter(function(d) { return d.selected; })
+      .each(function(d) { feature = d; });
+    map.node().zoomTo(feature, 400);
+    return next();
   }
 
   function showOffshoreArea(region, area, next) {
     console.log('[route] show offshore area:', region, area);
-    showOffshoreRegion(region, function(error, root) {
-      return next(null, root);
-    });
+    return next();
   }
 
   function showCommodityForState(commodity, state, next) {
@@ -722,17 +738,17 @@
 
   function showCommodityForCounty(commodity, state, county, next) {
     console.log('[route] county commodity view');
-    next();
+    return next();
   }
 
   function showCommodityForOffshoreRegion(commodity, region, next) {
     console.log('[route] offshore region commodity view');
-    next();
+    return next();
   }
 
   function showCommodityForOffshoreArea(commodity, region, area, next) {
     console.log('[route] offshore area commodity view');
-    next();
+    return next();
   }
 
 

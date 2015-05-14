@@ -1,6 +1,7 @@
 base_url ?= http://www.boem.gov/Oil-and-Gas-Energy-Program/Mapping-and-Data
 shp_filter ?= "MMS_PLAN_A IS NOT NULL AND MMS_PLAN_A NOT IN ('LND', 'NUS')"
-regions ?= alaska atlantic gulf pacific
+# regions ?= alaska atlantic gulf pacific
+regions ?= atlantic gulf pacific
 
 all: $(foreach region,$(regions),$(region).json) offshore.json
 

@@ -96,10 +96,7 @@
       // set up d3 selections for the important page elements
       var root = app.root = d3.select('#app');
       app.status = root.select('#status');
-      app.sections = root.selectAll('#index, section.primary')
-        .datum(function() {
-          return this.id;
-        });
+      app.sections = root.selectAll('#index, section.primary');
       app.description = root.select('.page-description');
       app.breadcrumb = root.select('nav ul.breadcrumb');
 
@@ -134,6 +131,8 @@
       };
       slider.on('change.ticks', updateTicks);
       slider.each(updateTicks);
+
+      app._routeEnds = [];
 
       // initialize the route, default to the index
       app.router.init('/index');
@@ -222,14 +221,17 @@
      * commodity groupings) as needed.
      */
     beforeRoute: function() {
-      console.info('[app] before route:', app.router.getRoute(), arguments);
-      app.root.attr('data-path', location.hash.substr(1));
+      var path = app.router.getRoute();
+      console.info('[app] before route:', path, arguments);
+      app.root.attr('data-path', path.join('/'));
       var path = app.router.getRoute();
       app.updatePath(path);
       var next = last(arguments);
       // always get the commodity configuration before
       // running a route
-      app.loadCommodities(next);
+      app.loadCommodities(function() {
+        app.loadLocations(next);
+      });
     },
 
     /**
@@ -253,6 +255,9 @@
       // each view that cares about the year should add
       // a 'change' event handler, which should be exclusive
       app.yearSlider.on('change', null);
+      while (app._routeEnds.length) {
+        app._routeEnds.pop().call(this, arguments);
+      }
       var next = last(arguments);
       next();
     },
@@ -273,8 +278,8 @@
     updatePath: function(path) {
       app.sections
         .style('display', 'none')
-        .classed('active', function(id) {
-          return id === path[0];
+        .classed('active', function() {
+          return this.id === path[0];
         })
         .filter('.active')
           .style('display', null);
@@ -307,6 +312,10 @@
       .remove();
     },
 
+    /**
+     * load the commodity configuration JSON and set up
+     * `app.commodityGroups` for general use.
+     */
     loadCommodities: function(done) {
       if (app.commodities) return done();
       app.commodities = new eiti.data.Commodities();
@@ -327,6 +336,27 @@
         done();
       });
     },
+
+    loadLocations: function(done) {
+      loadLocations(function(error, groups) {
+        d3.selectAll('select.select--locations')
+          .call(locationSelector()
+            .groups(groups))
+          .property('loaded', true)
+          .each(function() {
+            this.dispatchEvent(new CustomEvent('load', groups));
+          });
+        done();
+      });
+    },
+
+    /**
+     * register a route "cleanup" function, rather than resetting
+     * state in parent routes
+     */
+    cleanup: function(callback) {
+      this._routeEnds.push(callback);
+    }
   };
 
   function showIndex(next) {
@@ -337,28 +367,20 @@
       // already loaded
       return next();
     } else {
-      loadLocations(function(error, groups) {
+      var list = root.select('.select--locations')
+        .call(routeToLocation, '/locations/', true);
 
-        var list = root.select('.select--locations')
-          .call(locationSelector()
-            .groups(groups))
-          .on('change', function() {
-            if (!this.value) return;
-            app.router.setRoute(this.value);
-          });
+      root.select('ul.list--commodities')
+        .selectAll('li')
+        .data(app.commodityGroups)
+        .enter()
+        .append('li')
+          .append('a')
+            .attr('href', dl.template('#/commodities/{{ slug }}'))
+            .text(dl.accessor('name'));
 
-        root.select('ul.list--commodities')
-          .selectAll('li')
-          .data(app.commodityGroups)
-          .enter()
-          .append('li')
-            .append('a')
-              .attr('href', dl.template('#/commodities/{{ slug }}'))
-              .text(dl.accessor('name'));
-
-        root.classed('loaded', true);
-        return next();
-      });
+      root.classed('loaded', true);
+      return next();
     }
   }
 
@@ -367,11 +389,10 @@
 
     function activate(next) {
       app.yearSlider.on('change', update);
-      update();
-      return next();
+      return update(next);
     }
 
-    function update() {
+    function update(next) {
       var year = app.yearSlider.property('value');
       root.selectAll('.current-year')
         .text(year);
@@ -425,28 +446,33 @@
 
       var detail = sections.select('.detail');
 
+      var q = queue();
+
       detail.select('region-map')
-        .call(onceLoaded, function(d) {
-          // console.log('region map:', index[d.name]);
+        .each(function(d) {
+          var map = d3.select(this);
+          q.defer(function(done) {
+            map.call(onceLoaded, function() {
+              var revenuesByState = index[d.name] || {};
+              var regions = map.selectAll('g.region')
+                .each(function(f) {
+                  return f.revenue = revenuesByState[f.id];
+                })
+                .classed('active', function(f) {
+                  return !!f.revenue;
+                });
 
-          var revenuesByState = index[d.name] || {};
-          var regions = d3.select(this)
-            .selectAll('g.region')
-            .each(function(f) {
-              return f.revenue = revenuesByState[f.id];
-            })
-            .classed('active', function(f) {
-              return !!f.revenue;
+              var hrefTemplate = dl.template('#/commodities/{{ slug }}/%')(d);
+              regions.select('a')
+                .attr('xlink:href', function(f) {
+                  return getFeatureHref(f, hrefTemplate);
+                });
+              done();
             });
-
-          var hrefTemplate = dl.template('#/commodities/{{ slug }}/%')(d);
-          regions.select('a')
-            .attr('xlink:href', function(f) {
-              return getFeatureHref(f, hrefTemplate);
-            });
-
-          regions.select('path');
+          });
         });
+
+      q.awaitAll(next);
     }
 
     return function listCommodities() {
@@ -483,12 +509,28 @@
     };
   })();
 
-  function showCommodity() {
+  function routeToLocation(select, baseURL, empty) {
+    if (baseURL.substr(-1) !== '/') baseURL += '/';
+    select.on('change', function() {
+      if (!this.value) {
+        return empty
+          ? false
+          : app.router.setRoute(baseURL);
+      }
+      app.router.setRoute(baseURL + this.value);
+    });
+  }
+
+  function showCommodity(commodity) {
     console.log('[route] show commodity:', commodity);
     var next = last(arguments);
 
     var root = this.root
       .classed('commodity-selected', true);
+
+    var baseURL = '/commodities/' + commodity + '/';
+    var list = root.select('.select--locations')
+      .call(routeToLocation, baseURL);
 
     var section = root.selectAll('section.commodity')
       .classed('selected', function(d) {
@@ -496,13 +538,16 @@
       })
       .filter('.selected');
 
-    this.root = section;
+    app.cleanup(function() {
+      list.property('value', '');
+    });
 
     return next();
   }
 
-  function showRevenue(next) {
+  function showRevenue() {
     console.log('[route] show revenues');
+    var next = last(arguments);
 
     var root = this.root = app.root.select('#revenue')
       .classed('commodity-selected', false);
@@ -524,21 +569,21 @@
     }
   }
 
-  function showCommodityRevenue(commodity, next) {
+  function showCommodityRevenue(commodity) {
     console.log('[route] show commodity revenues:', commodity);
-    showRevenue(function() {
-      var root = this.root = app.root.select('#revenue')
-        .classed('commodity-selected', true);
-      root.selectAll('section.commodity')
-        .classed('selected', function(d) {
-          return d.slug === commodity;
-        });
-      return next();
-    });
+    var next = last(arguments);
+    var root = this.root
+      .classed('commodity-selected', true);
+    root.selectAll('section.commodity')
+      .classed('selected', function(d) {
+        return d.slug === commodity;
+      });
+    return next();
   }
 
-  function showProduction(next) {
+  function showProduction() {
     console.log('[route] show production');
+    var next = last(arguments);
 
     var root = this.root = app.root.select('#production')
       .classed('commodity-selected', false);
@@ -605,7 +650,8 @@
     }
   }
 
-  function listCommodityProducts(commodity, next) {
+  function listCommodityProducts() {
+    var next = last(arguments);
     var root = this.root;
     root.classed('commodity-selected', true);
     root.selectAll('section.commodity')
@@ -615,7 +661,8 @@
     return next();
   }
 
-  function showCommodityProduct(commodity, product, next) {
+  function showCommodityProduct(commodity, product) {
+    var next = last(arguments);
     console.log('[route] show commodity product:', commodity, product);
     // TODO: select the product
     return next();
@@ -625,13 +672,8 @@
     var root, map, list, revenuesByYear;
 
     function activate(next) {
-      // select the active one
-      var value = '/' + app.router.getRoute().join('/');
-      list.property('value', value);
-
-      map.node().zoomTo(null, 400);
-
       app.yearSlider.on('change', update);
+      list.property('value', '');
       update();
       return next();
     }
@@ -659,8 +701,9 @@
         });
     }
 
-    return function listLocations(next) {
+    return function listLocations() {
       console.log('[route] list locations');
+      var next = last(arguments);
 
       root = this.root = app.root.select('#locations');
       map = root.select('region-map');
@@ -668,36 +711,28 @@
       if (revenuesByYear) {
         return activate(next);
       } else {
-        loadLocations(function(error, groups) {
-          if (error) return next(error);
+        list = root.select('.select--locations')
+          .call(routeToLocation, '/locations/');
 
-          list = root.select('.select--locations')
-            .call(locationSelector()
-              .groups(groups))
-            .on('change', function() {
-              if (!this.value) return app.router.setRoute('/locations');
-              app.router.setRoute(this.value);
-            });
+        app.load([
+          'state/revenues-yearly.tsv'
+        ], function(error, revenues) {
 
-          app.load([
-            'state/revenues-yearly.tsv'
-          ], function(error, revenues) {
+          revenuesByYear = d3.nest()
+            .key(dl.accessor('Year'))
+            .key(dl.accessor('State'))
+            .rollup(sumRevenues)
+            .map(revenues);
 
-            revenuesByYear = d3.nest()
-              .key(dl.accessor('Year'))
-              .key(dl.accessor('State'))
-              .rollup(sumRevenues)
-              .map(revenues);
-
-            return activate(next);
-          });
+          return activate(next);
         });
       }
     };
   })();
 
-  function showState(state, next) {
+  function showState(state) {
     console.log('[route] show state:', state);
+    var next = last(arguments);
     var root = this.root;
     var map = root.select('region-map');
     var feature;
@@ -706,61 +741,132 @@
       .each(function(d) { feature = d; });
 
     map.node().zoomTo(feature, 400);
-    return next();
-  }
 
-  function showCounty(state, county, next) {
-    console.log('[route] show county:', state, county);
-    return next();
-  }
-
-  function showOffshoreRegion(region, next) {
-    console.log('[route] show offshore region:', region);
-    var root = this.root;
-    var map = root.select('region-map');
-    var feature;
-    map.selectAll('g.region')
-      .filter(function(d) { return d.selected; })
-      .each(function(d) { feature = d; });
-    map.node().zoomTo(feature, 400);
-    return next();
-  }
-
-  function showOffshoreArea(region, area, next) {
-    console.log('[route] show offshore area:', region, area);
-    return next();
-  }
-
-  function showCommodityForState(commodity, state, next) {
-    console.log('[route] state commodity view:', arguments);
-    var root = this.root;
-    var map = root.select('region-map')
+    // select the active one
+    var list = root.select('.select--locations')
       .call(onceLoaded, function() {
-        var feature;
-        map.selectAll('g.region')
-          .each(function(d) {
-            if (!d) console.warn('no feature data:', this, d);
-            d.selected = d.id === state;
-          })
-          .filter(function(d) { return d.selected; })
-          .each(function(d) { feature = d; });
-        map.node().zoomTo(feature, 400);
+        if (!root) return;
+        this.value = 'onshore/' + state;
       });
+
+    app.cleanup(function() {
+      console.log('after [route] show state');
+      map.node().zoomTo(null, 400);
+      root = null;
+    });
+
     return next();
   }
 
-  function showCommodityForCounty(commodity, state, county, next) {
+  function showCounty(state, county) {
+    console.log('[route] show county:', state, county);
+    var next = last(arguments);
+    return next();
+  }
+
+  function showOffshoreRegion(region) {
+    console.log('[route] show offshore region:', region);
+    var next = last(arguments);
+    var root = this.root;
+    var map = root.select('region-map');
+    var feature;
+    map.selectAll('g.region')
+      .filter(function(d) { return d.selected; })
+      .each(function(d) { feature = d; });
+    map.node().zoomTo(feature, 400);
+    return next();
+  }
+
+  function showOffshoreArea(region, area) {
+    console.log('[route] show offshore area:', region, area);
+    var next = last(arguments);
+    return next();
+  }
+
+  function showCommodityForState(commodity, state) {
+    console.log('[route] state commodity view:', commodity, state);
+
+    var next = last(arguments);
+
+    var root = this.root;
+    var section = root.select('section.commodity.selected');
+
+    root.select('.select--locations')
+      .call(onceLoaded, function() {
+        this.value = 'onshore/' + state;
+      });
+
+    var map = section.select('region-map');
+
+    var feature;
+    map.selectAll('g.region')
+      .classed('selected', function(d) {
+        d.selected = d.id === state;
+        if (d.selected) feature = d;
+        return d.selected;
+      });
+
+    map.node().zoomTo(feature, 400);
+
+    app.cleanup(function() {
+      root.selectAll('region-map')
+        .each(function() {
+          this.zoomTo(null, 400);
+        })
+        .selectAll('g.region')
+          .classed('selected', false);
+    });
+
+    return next();
+  }
+
+  function showCommodityForCounty() {
     console.log('[route] county commodity view');
+    var next = last(arguments);
     return next();
   }
 
-  function showCommodityForOffshoreRegion(commodity, region, next) {
-    console.log('[route] offshore region commodity view');
+  function showCommodityForOffshoreRegion(commodity, region) {
+    console.log('[route] offshore region commodity view:', commodity, region);
+    var next = last(arguments);
+
+    var root = this.root;
+    var section = root.select('section.commodity.selected');
+
+    root.select('.select--locations')
+      .call(onceLoaded, function() {
+        this.value = 'offshore/' + region;
+      });
+
+    var map = section.select('region-map');
+
+    var feature;
+    map.selectAll('g.region')
+      .classed('selected', function(d) {
+        d.selected = d.id === region;
+        if (d.selected) feature = d;
+        return d.selected;
+      });
+
+    console.log('offshore feature:', region, '->', feature);
+
+    map.node().zoomTo(feature, 400);
+
+    app.cleanup(function() {
+      root.selectAll('region-map')
+        .each(function() {
+          this.zoomTo(null, 400);
+        })
+        .selectAll('g.region')
+          .classed('selected', false);
+    });
+
     return next();
   }
 
-  function showCommodityForOffshoreArea(commodity, region, area, next) {
+  function showCommodityForOffshoreArea() {
     console.log('[route] offshore area commodity view');
+    var next = last(arguments);
     return next();
   }
 
@@ -776,44 +882,49 @@
     return list[list.length - 1];
   }
 
-  function loadLocations(done) {
-    return queue()
-      .defer(d3.csv, 'input/geo/states.csv')
-      .defer(d3.json, app.dataPath + 'geo/offshore.json')
-      .await(function(error, states, offshore) {
-        if (error) return done(error);
-        var territories = d3.set(['AS', 'GU', 'PR', 'VI']);
-        return done(null, [
-          {
-            label: 'Onshore',
-            values: states
-              .filter(function(d) {
-                return !territories.has(d.abbr);
-              })
-              .map(function(d) {
-                return {
-                  label: d.name,
-                  value: '/locations/onshore/' + d.abbr
-                };
-              })
-          },
-          {
-            label: 'Offshore',
-            values: Object.keys(offshore.objects)
-              .reduce(function(regions, key) {
-                var collection = topojson.feature(offshore, offshore.objects[key]);
-                return regions.concat(collection.features);
-              }, [])
-              .map(function(d) {
-                return {
-                  label: d.properties.name || d.id,
-                  value: '/locations/offshore/' + d.id
-                };
-              })
-          }
-        ]);
-      });
-  }
+  var loadLocations = (function() {
+    var groups;
+    return function loadLocations(done) {
+      if (groups) return done(null, groups);
+      return queue()
+        .defer(d3.csv, 'input/geo/states.csv')
+        .defer(d3.json, app.dataPath + 'geo/offshore.json')
+        .await(function(error, states, offshore) {
+          if (error) return done(error);
+
+          var territories = d3.set(['AS', 'GU', 'PR', 'VI']);
+          return done(null, groups = [
+            {
+              label: 'Onshore',
+              values: states
+                .filter(function(d) {
+                  return !territories.has(d.abbr);
+                })
+                .map(function(d) {
+                  return {
+                    label: d.name,
+                    value: 'onshore/' + d.abbr
+                  };
+                })
+            },
+            {
+              label: 'Offshore',
+              values: Object.keys(offshore.objects)
+                .reduce(function(regions, key) {
+                  var collection = topojson.feature(offshore, offshore.objects[key]);
+                  return regions.concat(collection.features);
+                }, [])
+                .map(function(d) {
+                  return {
+                    label: d.properties.name || d.id,
+                    value: 'offshore/' + d.id
+                  };
+                })
+            }
+          ]);
+        });
+    };
+  })();
 
   function lookup(list, key, value) {
     return d3.nest()
@@ -843,6 +954,7 @@
         node = node.parentNode;
         d = d3.select(node).datum();
       }
+      console.info('rebind(', this, _d, '->', d, ')');
       d3.select(this).datum(d);
     });
   }
@@ -976,8 +1088,15 @@
 
   function onceLoaded(selection, callback) {
     selection.each(function() {
-      if (this.loaded) return callback.apply(this, arguments);
-      d3.select(this).on('load', callback);
+      var node = d3.select(this);
+      if (this.loaded) {
+        node.on('load.once', null);
+        return callback.apply(this, arguments);
+      }
+      node.on('load.once', function() {
+        node.on('load.once', null);
+        callback.apply(this, arguments);
+      });
     });
   }
 

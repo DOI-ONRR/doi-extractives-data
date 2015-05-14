@@ -1,10 +1,11 @@
 base_url ?= http://www.boem.gov/Oil-and-Gas-Energy-Program/Mapping-and-Data
 shp_filter ?= "MMS_PLAN_A IS NOT NULL AND MMS_PLAN_A NOT IN ('LND', 'NUS')"
+regions = alaska atlantic gulf pacific
 
-all: alaska.json atlantic.json gulf.json pacific.json offshore.json
+all: $(foreach region,$(regions),$(region).json) offshore.json
 
 test: all
-	for name in *.json; do echo "feature ids in $${name}:"; jq ".objects.$${name/.json/}.geometries[] | {id: .id, name: .properties.name}" $$name; done
+	for name in $(regions); do echo "feature ids in $${name}:"; jq ".objects.$${name}.geometries[] | {id: .id, name: .properties.name}" $$name.json; done
 
 shp/alaska.zip:
 	mkdir -p $(basename $@)

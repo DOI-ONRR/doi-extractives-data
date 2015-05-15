@@ -160,12 +160,11 @@
 
       var defer = function(url) {
         if (typeof url === 'function') {
-          return q.defer(function(next) {
-          });
+          return q.defer(url);
         }
         if (url.indexOf('./') !== 0) url = app.dataPath + url;
         var ext = url.split('.').pop();
-        var load = d3[ext];
+        var load = eiti.load;
         q.defer(function(next) {
           var req = load(url, next);
           app.requests.push(req);
@@ -368,7 +367,7 @@
       return next();
     } else {
       var list = root.select('.select--locations')
-        .call(routeToLocation, '/locations/', true);
+        .call(routeToLocation, '/locations', true);
 
       root.select('ul.list--commodities')
         .selectAll('li')
@@ -510,14 +509,15 @@
   })();
 
   function routeToLocation(select, baseURL, empty) {
-    if (baseURL.substr(-1) !== '/') baseURL += '/';
+    var prefix = baseURL;
+    if (prefix.substr(-1) !== '/') prefix += '/';
     select.on('change', function() {
       if (!this.value) {
         return empty
           ? false
           : app.router.setRoute(baseURL);
       }
-      app.router.setRoute(baseURL + this.value);
+      app.router.setRoute(prefix + this.value);
     });
   }
 
@@ -528,7 +528,7 @@
     var root = this.root
       .classed('commodity-selected', true);
 
-    var baseURL = '/commodities/' + commodity + '/';
+    var baseURL = '/commodities/' + commodity;
     var list = root.select('.select--locations')
       .call(routeToLocation, baseURL);
 
@@ -712,7 +712,7 @@
         return activate(next);
       } else {
         list = root.select('.select--locations')
-          .call(routeToLocation, '/locations/');
+          .call(routeToLocation, '/locations');
 
         app.load([
           'state/revenues-yearly.tsv'
@@ -887,8 +887,8 @@
     return function loadLocations(done) {
       if (groups) return done(null, groups);
       return queue()
-        .defer(d3.csv, 'input/geo/states.csv')
-        .defer(d3.json, app.dataPath + 'geo/offshore.json')
+        .defer(eiti.load, 'input/geo/states.csv')
+        .defer(eiti.load, app.dataPath + 'geo/offshore.json')
         .await(function(error, states, offshore) {
           if (error) return done(error);
 
@@ -954,7 +954,6 @@
         node = node.parentNode;
         d = d3.select(node).datum();
       }
-      console.info('rebind(', this, _d, '->', d, ')');
       d3.select(this).datum(d);
     });
   }

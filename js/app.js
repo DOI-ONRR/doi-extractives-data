@@ -223,9 +223,6 @@
      */
     afterRoute: function() {
       // console.info('[app] after route:', arguments);
-      // each view that cares about the year should add
-      // a 'change' event handler, which should be exclusive
-      app.yearSlider.on('change', null);
       while (app._routeEnds.length) {
         app._routeEnds.pop().call(this, arguments);
       }
@@ -622,9 +619,11 @@
           });
       }
 
-      app.yearSlider.on('change', update);
+      app.yearSlider.on('change', throttle(update));
       update();
       return done();
+    })
+    .after(function() {
     });
 
   var showCommodity = createView()
@@ -859,13 +858,10 @@
           });
       }
 
-      app.yearSlider.on('change', update);
+      app.yearSlider.on('change', throttle(update));
       list.property('value', '');
       update();
       return next();
-    })
-    .after(function() {
-      app.yearSlider.on('change', null);
     });
 
   var showState = createView()
@@ -1092,8 +1088,10 @@
   })();
 
   function lookup(list, key, value) {
+    if (typeof key === 'string') key = dl.accessor(key);
+    if (typeof value === 'string') value = dl.accessor(value);
     return d3.nest()
-      .key(dl.accessor(key))
+      .key(key)
       .rollup(function(d) {
         return value(d[0]);
       })
@@ -1217,7 +1215,7 @@
         return y == year;
       });
     };
-    slider.on('change.ticks', updateTicks);
+    slider.on('change.ticks', throttle(updateTicks));
     slider.each(updateTicks);
 
     return slider;
@@ -1282,6 +1280,20 @@
     return str.toLowerCase()
       .replace(/\s*\([^\)]+\)\s/g, '')
       .replace(/\W+/g, '-');
+  }
+
+  function throttle(fn, repeatRate) {
+    if (!repeatRate) repeatRate = 100; // 100ms default
+    var timeout;
+    return function() {
+      if (!timeout) {
+        fn.apply(this, arguments);
+        timeout = setTimeout(function() {
+          clearTimeout(timeout);
+          timeout = null;
+        }, repeatRate);
+      }
+    };
   }
 
   function onceLoaded(selection, callback) {

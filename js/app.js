@@ -674,7 +674,7 @@
         offshore.forEach(setCommodityGroup);
         offshore.forEach(setOffshoreRegion);
 
-        var revenues = onshore.concat(offshore);
+        var revenues = onshore; // .concat(offshore);
         context.revenues = revenues;
 
         context.revenuesByYearCommodity = d3.nest()
@@ -705,7 +705,7 @@
           });
         });
 
-        console.log('extentsByYearCommodity:', extents);
+        // console.log('revenue extents by year/commodity:', extents);
         context.extentsByYearCommodity = extents;
 
         return next();
@@ -722,7 +722,7 @@
       var extentsByYearCommodity = this.extentsByYearCommodity;
       // {year: {commodity: {region: value}}}
       var revenuesByYearCommodityRegion = this.revenuesByYearCommodityRegion;
-      console.log('revenues by year, commodity, region:', revenuesByYearCommodityRegion);
+      // console.log('revenues by year, commodity, region:', revenuesByYearCommodityRegion);
 
       function update() {
         var year = app.yearSlider.property('value');
@@ -738,7 +738,7 @@
         sections.select('region-map')
           .call(onceLoaded, function(d) {
             var extent = extentsByYearCommodity[year][d.name];
-            console.log('extent:', d.name, extent);
+            // console.log('extent:', d.name, extent);
             var scale = d3.scale.quantize()
               .domain(extent)
               .range(colorbrewer.Purples[9]);
@@ -912,7 +912,7 @@
         onshore.forEach(setStateRegion);
         offshore.forEach(setOffshoreRegion);
 
-        var rows = onshore.concat(offshore);
+        var rows = onshore; // .concat(offshore);
 
         context.revenues = d3.nest()
           .key(dl.accessor('Year'))

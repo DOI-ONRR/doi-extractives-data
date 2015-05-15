@@ -1,6 +1,7 @@
 (function(exports) {
 
   // TODO: conditionally load dependencies?
+  var cache;
 
   exports.EITIRegionMap = registerElement('region-map', {
     createdCallback: function() {
@@ -14,70 +15,21 @@
         this.addEventListener('load', callback);
       }
 
-      var prog = progressive()
-        .on('progress', getListener('progress', this));
-
       this.loaded = false;
       this.classList.add('__loading');
 
+      if (cache) {
+        return onload.apply(this, cache);
+      }
+
       var path = this.getAttribute('data-path') || '';
-      var q = queue();
-      q.defer(prog, d3.csv, path + 'input/geo/states.csv');
-      q.defer(prog, d3.json, path + 'output/geo/us-states.json');
-      q.defer(prog, d3.json, path + 'output/geo/offshore.json');
-      q.await((function onload(error, states, onshore, offshore) {
-        this.classList.remove('__loading');
-        this.classList.add('__loaded');
-        if (error) {
-          console.warn('map load error:', error);
-          this.classList.add('__error');
-          this.dispatchEvent(new CustomEvent('error', {text: error.responseText}));
-          return;
-        }
 
-        var meshes = [];
-        meshes.push(topojson.mesh(onshore, onshore.objects.states));
-
-        var stateProperties = d3.nest()
-          .key(function(d) { return d.abbr; })
-          .rollup(function(d) { return d[0]; })
-          .map(states);
-
-        var stateFeatures = topojson.feature(onshore, onshore.objects.states)
-          .features
-          .map(function(state) {
-            state.properties.name = stateProperties[state.properties.abbr].name;
-            state.properties.onshore = true;
-            return state;
-          });
-
-        // console.log('states:', stateFeatures);
-        // console.log('offshore:', offshore);
-        // offshore.transform.scale[1] += 2;
-
-        var regionFeatures = Object.keys(offshore.objects)
-          .reduce(function(regions, key) {
-            var features = topojson.feature(offshore, offshore.objects[key])
-              .features
-              .map(function(region) {
-                region.properties.offshore = true;
-                return region;
-              });
-            meshes.push(topojson.mesh(offshore, offshore.objects[key]));
-            return regions.concat(features);
-          }, []);
-
-        this.regions = regionFeatures.concat(stateFeatures);
-        this.meshes = meshes;
-
-        // console.log('loaded:', this.regions);
-        render.call(this);
-
-        this.loaded = true;
-        this.dispatchEvent(new CustomEvent('load'));
-        this.removeAttribute('unresolved');
-
-      }).bind(this));
+      var load = window.eiti ? eiti.load : null;
+      var q = queue()
+        .defer(load || d3.csv, path + 'input/geo/states.csv')
+        .defer(load || d3.json, path + 'output/geo/us-states-simple.json')
+        .defer(load || d3.json, path + 'output/geo/offshore-simple.json')
+        .await(onload.bind(this));
     },
 
     detachedCallback: function() {
@@ -121,10 +73,62 @@
     loaded: accessor('loaded', Boolean)
   });
 
-  var events = {
-    progress: function(e) {
-      this.dispatchEvent(new CustomEvent('progress', e));
+  function onload(error, states, onshore, offshore) {
+    this.classList.remove('__loading');
+    this.classList.add('__loaded');
+    if (error) {
+      console.warn('map load error:', error);
+      this.classList.add('__error');
+      this.dispatchEvent(new CustomEvent('error', {text: error.responseText}));
+      return;
     }
+
+    var meshes = [];
+    meshes.push(topojson.mesh(onshore, onshore.objects.states));
+
+    var stateProperties = d3.nest()
+      .key(function(d) { return d.abbr; })
+      .rollup(function(d) { return d[0]; })
+      .map(states);
+
+    var stateFeatures = topojson.feature(onshore, onshore.objects.states)
+      .features
+      .map(function(state) {
+        state.properties.name = stateProperties[state.properties.abbr].name;
+        state.properties.onshore = true;
+        return state;
+      });
+
+    // console.log('states:', stateFeatures);
+    // console.log('offshore:', offshore);
+    // offshore.transform.scale[1] += 2;
+
+    var regionFeatures = Object.keys(offshore.objects)
+      .reduce(function(regions, key) {
+        var features = topojson.feature(offshore, offshore.objects[key])
+          .features
+          .map(function(region) {
+            region.properties.offshore = true;
+            return region;
+          });
+        meshes.push(topojson.mesh(offshore, offshore.objects[key]));
+        return regions.concat(features);
+      }, []);
+
+    this.regions = regionFeatures.concat(stateFeatures);
+    this.meshes = meshes;
+
+    // console.log('loaded:', this.regions);
+    render.call(this);
+
+    this.loaded = true;
+    this.dispatchEvent(new CustomEvent('load'));
+    this.removeAttribute('unresolved');
+
+    cache = arguments;
+  }
+
+  var events = {
   };
 
   function render() {

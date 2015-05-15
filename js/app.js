@@ -529,7 +529,8 @@
       app.load({
         revenues: 'national/revenues-yearly.tsv',
         production: 'national/volumes-yearly.tsv',
-        stateRevenues: 'state/revenues-yearly.tsv'
+        stateRevenues: 'state/revenues-yearly.tsv',
+        offshoreRevenues: 'offshore/revenues-yearly.tsv'
       }, function(error, data) {
 
         context.sections = createCommoditySections(
@@ -538,7 +539,14 @@
 
         data.revenues.forEach(setCommodityGroup);
         data.production.forEach(setCommodityGroup);
+
         data.stateRevenues.forEach(setCommodityGroup);
+        data.stateRevenues.forEach(setStateRegion);
+
+        data.offshoreRevenues.forEach(setCommodityGroup);
+        data.offshoreRevenues.forEach(setOffshoreRegion);
+
+        data.regionalRevenues = data.stateRevenues.concat(data.offshoreRevenues);
 
         context.data = data;
         return next();
@@ -559,7 +567,7 @@
 
         var revenues = data.revenues.filter(filter);
         var production = data.production.filter(filter);
-        var stateRevenues = data.stateRevenues.filter(filter);
+        var regionalRevenues = data.regionalRevenues.filter(filter);
 
         var revenuesByCommodity = d3.nest()
           .key(dl.accessor('CommodityGroup'))
@@ -596,22 +604,21 @@
             })
             .attr('href', null);
 
-        var index = d3.nest()
+        var revenuesByCommodity = d3.nest()
           .key(dl.accessor('CommodityGroup'))
-          .key(dl.accessor('State'))
+          .key(dl.accessor('Region'))
           .rollup(sumRevenues)
-          .map(stateRevenues);
-        // console.log('revenues index:', index);
+          .map(regionalRevenues);
 
         var detail = sections.select('.detail');
 
         detail.select('region-map')
           .call(onceLoaded, function(d) {
-            var revenuesByState = index[d.name] || {};
+            var revenuesByRegion = revenuesByCommodity[d.name] || {};
             var regions = d3.select(this)
               .selectAll('g.region')
                 .each(function(f) {
-                  return f.revenue = revenuesByState[f.id];
+                  return f.revenue = revenuesByRegion[f.id];
                 })
                 .classed('active', function(f) {
                   return !!f.revenue;
@@ -680,7 +687,7 @@
         offshore.forEach(setCommodityGroup);
         offshore.forEach(setOffshoreRegion);
 
-        var revenues = onshore; // .concat(offshore);
+        var revenues = onshore.concat(offshore);
         context.revenues = revenues;
 
         context.revenuesByYearCommodity = d3.nest()
@@ -918,7 +925,7 @@
         onshore.forEach(setStateRegion);
         offshore.forEach(setOffshoreRegion);
 
-        var rows = onshore; // .concat(offshore);
+        var rows = onshore.concat(offshore);
 
         context.revenues = d3.nest()
           .key(dl.accessor('Year'))

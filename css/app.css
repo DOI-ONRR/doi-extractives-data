@@ -11,7 +11,13 @@ nav ul.breadcrumb {
   font-size: 1.5em;
 }
 
+region-map svg {
+  width: 100%;
+  height: 400px;
+}
+
 .module--location region-map svg {
+  width: auto;
   height: 150px;
 }
 

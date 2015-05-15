@@ -40,6 +40,7 @@
        */
       if (!routes) {
         routes = {
+          '/': showIndex,
           '/index': showIndex,
 
           '/commodities': {
@@ -192,7 +193,7 @@
      */
     beforeRoute: function() {
       var path = app.router.getRoute();
-      console.info('[app] before route:', path, arguments);
+      // console.info('[app] before route:', path, arguments);
       app.root.attr('data-path', path.join('/'));
       var path = app.router.getRoute();
       app.updatePath(path);
@@ -210,7 +211,7 @@
      * page.
      */
     onRoute: function() {
-      console.info('[app] on route:', arguments);
+      // console.info('[app] on route:', arguments);
       var path = app.router.getRoute();
       app.updatePath(path);
       var next = last(arguments);
@@ -221,7 +222,7 @@
      * this runs after a route is pushed onto the stack.
      */
     afterRoute: function() {
-      console.info('[app] after route:', arguments);
+      // console.info('[app] after route:', arguments);
       // each view that cares about the year should add
       // a 'change' event handler, which should be exclusive
       app.yearSlider.on('change', null);
@@ -338,6 +339,30 @@
 
   var ZOOM_TIME = 400;
 
+  /**
+   * Construct a new, configurable view function with a slew of options and
+   * lifecycle methods.
+   *
+   * @example
+   * var view = createView()
+   *   .root('#selector')
+   *   // call these functions in context before the main function
+   *   .before([commonSetupFunction, etc])
+   *   // set context.params to {foo, bar} from positional arguments
+   *   .params(['foo', 'bar'])
+   *   // specify a load function that only gets called once
+   *   .load(function(next) {
+   *   })
+   *   // the main function may be synchronous; just leave off the next
+   *   // argument
+   *   .main(function(next) {
+   *   })
+   *   // call this function when the next view is called
+   *   .after([teardown])
+   *   // set the calling context object
+   *   .context({baz: 0xBADBAD});
+   *
+   */
   var createView = function(main) {
     if (!main) main = function(next) { next(); };
 
@@ -345,6 +370,7 @@
     var after = [];
     var params;
     var load;
+    var loadOnce = true;
 
     var root = '#app';
     var context = {};
@@ -364,17 +390,15 @@
           : root;
       }
 
-      var data = {};
       if (params) {
+        var param = {};
         params.forEach(function(key, i) {
-          data[key] = args[i];
+          param[key] = args[i];
         });
-        args = [data];
+        context.params = param;
       } else {
-        data = args;
+        context.params = args;
       }
-
-      context.data = data;
 
       var run = function() {
         if (before.length) {
@@ -395,6 +419,8 @@
           if (error) {
             onerror.call(context, error);
           } else {
+            // unset the load function if alwaysLoad is false
+            if (loadOnce) load = null;
             run();
           }
         });
@@ -403,6 +429,7 @@
       }
 
       app.cleanup(function() {
+        // XXX preserve context object
         after.forEach(function(fn) {
           fn.apply(context, args);
         });
@@ -445,9 +472,10 @@
       return view;
     };
 
-    view.load = function(fn) {
+    view.load = function(fn, always) {
       if (!arguments.length) return load;
       load = fn;
+      loadOnce = always !== true;
       return view;
     };
 
@@ -463,7 +491,7 @@
   var showIndex = createView()
     .root('#index')
     .main(function(next) {
-      console.log('[view] index', this);
+      console.log('[view] index');
       var root = this.root;
       var list = root.select('.select--locations')
         .call(routeToLocation, '/locations', true);
@@ -503,12 +531,13 @@
       });
     })
     .main(function(done) {
+      console.log('[view] list commodities');
       var context = this;
       var root = context.root;
       var data = context.data;
       var sections = context.sections;
 
-      function update(next) {
+      function update() {
         var year = app.yearSlider.property('value');
         root.selectAll('.current-year')
           .text(year);
@@ -562,52 +591,43 @@
 
         var detail = sections.select('.detail');
 
-        var q = queue();
-
         detail.select('region-map')
-          .each(function(d) {
-            var map = d3.select(this);
-            q.defer(function(done) {
-              map.call(onceLoaded, function() {
-                var revenuesByState = index[d.name] || {};
-                var regions = map.selectAll('g.region')
-                  .each(function(f) {
-                    return f.revenue = revenuesByState[f.id];
-                  })
-                  .classed('active', function(f) {
-                    return !!f.revenue;
-                  });
+          .call(onceLoaded, function(d) {
+            var revenuesByState = index[d.name] || {};
+            var regions = d3.select(this)
+              .selectAll('g.region')
+                .each(function(f) {
+                  return f.revenue = revenuesByState[f.id];
+                })
+                .classed('active', function(f) {
+                  return !!f.revenue;
+                });
 
-                var hrefTemplate = dl.template('#/commodities/{{ slug }}/%')(d);
-                regions.select('a')
-                  .attr('xlink:href', function(f) {
-                    return getFeatureHref(f, hrefTemplate);
-                  });
-                done();
+            var hrefTemplate = dl.template('#/commodities/{{ slug }}/%')(d);
+            regions.select('a')
+              .attr('xlink:href', function(f) {
+                return getFeatureHref(f, hrefTemplate);
               });
-            });
           });
-
-        q.awaitAll(next);
       }
 
       app.yearSlider.on('change', update);
-      return update(done);
+      update();
+      return done();
     });
 
   var showCommodity = createView()
     .root('#commodities')
     .params(['commodity'])
     .main(function showCommodity(next) {
-      var context = this;
-      var commodity = context.data.commodity;
-      console.log('[view] showCommodity:', commodity);
+      var commodity = this.params.commodity;
+      console.log('[view] show commodity:', commodity);
 
-      var root = context.root
+      var root = this.root
         .classed('commodity-selected', true);
 
       var baseURL = '/commodities/' + commodity;
-      context.list = root.select('.select--locations')
+      this.list = root.select('.select--locations')
         .call(routeToLocation, baseURL);
 
       var section = root.selectAll('section.commodity')
@@ -619,7 +639,7 @@
       return next();
     })
     .after(function() {
-      console.log('[view] after showCommodity');
+      console.log('[view] after show commodity');
       this.list.property('value', '');
     });
 
@@ -650,7 +670,7 @@
     .root('#revenue')
     .params(['commodity'])
     .main(function showCommodityRevenue(next) {
-      var commodity = this.data.commodity;
+      var commodity = this.params.commodity;
       console.log('[view] showCommodityRevenue:', commodity);
 
       var root = this.root
@@ -739,246 +759,269 @@
       // TODO: update on year change
     });
 
-  function listCommodityProducts(commodity) {
-    var next = last(arguments);
-    var root = this.root;
-    root.classed('commodity-selected', true);
-    root.selectAll('section.commodity')
-      .classed('selected', function(d) {
-        return d.slug === commodity;
+  var listCommodityProducts = createView()
+    .root('#commodities')
+    .main(function listCommodityProducts(next) {
+      console.log('[view] list commodity products');
+
+      var root = this.root
+        .classed('commodity-selected', true);
+
+      var params = this.params;
+      var commodity = params.commodity;
+
+      root.selectAll('section.commodity')
+        .classed('selected', function(d) {
+          return d.slug === commodity;
+        });
+
+      return next();
+    })
+    .after(function() {
+      this.root
+        .classed('commodity-selected', false);
+    });
+
+  var showCommodityProduct = createView()
+    .root('#commodities')
+    .main(function showCommodityProduct(next) {
+      var params = this.params;
+      console.log('[view] show commodity product:', params);
+      // TODO: select the product
+      return next();
+    });
+
+  var listLocations = createView()
+    .root('#locations')
+    .load(function(next) {
+      var context = this;
+      app.load([
+        'state/revenues-yearly.tsv',
+        'offshore/revenues-yearly.tsv'
+      ], function(error, onshore, offshore) {
+
+        var rows = onshore.map(function(d) {
+            return d.Region = d.State, d;
+          })
+          .concat(offshore.map(function(d) {
+            // TODO: Area doesn't give us the 3-letter codes
+            return d.Region = d.Area, d;
+          }));
+
+        context.revenues = d3.nest()
+          .key(dl.accessor('Year'))
+          .key(dl.accessor('Region'))
+          .rollup(sumRevenues)
+          .map(rows);
+
+        return next();
       });
-    return next();
-  }
+    })
+    .main(function(next) {
+      var root = this.root;
+      var map = root.select('region-map');
+      var list = root.select('.select--locations')
+        .call(routeToLocation, '/locations');
 
-  function showCommodityProduct(commodity, product) {
-    var next = last(arguments);
-    console.log('[route] show commodity product:', commodity, product);
-    // TODO: select the product
-    return next();
-  }
+      var revenuesByYear = this.revenues;
 
-  var listLocations = (function() {
-    var root, map, list, revenuesByYear;
+      function update() {
+        var year = app.yearSlider.property('value');
+        var revenuesByRegion = revenuesByYear[year];
+        var region = map.selectAll('g.region')
+          .each(function(d) {
+            d.href = getFeatureHref(d, '#/locations/%');
+            d.selected = d.href === location.hash;
+            d.revenue = revenuesByRegion[d.id];
+          })
+          .classed('active', function(d) {
+            return d.revenue;
+          })
+          .classed('selected', function(d) {
+            return d.selected;
+          });
+        region.select('a')
+          .attr('xlink:href', function(d) {
+            return d.href;
+          });
+      }
 
-    function activate(next) {
       app.yearSlider.on('change', update);
       list.property('value', '');
       update();
       return next();
-    }
+    })
+    .after(function() {
+      app.yearSlider.on('change', null);
+    });
 
-    function update() {
-      var year = app.yearSlider.property('value');
-      var revenuesByRegion = revenuesByYear[year];
+  var showState = createView()
+    .root('#locations')
+    .params(['state'])
+    .main(function showState(next) {
+      var params = this.params;
+      console.log('[view] show state:', params);
 
-      var region = map.selectAll('g.region')
-        .each(function(d) {
-          d.href = getFeatureHref(d, '#/locations/%');
-          d.selected = d.href === location.hash;
-          d.revenue = revenuesByRegion[d.id];
-        })
-        .classed('active', function(d) {
-          return d.revenue;
-        })
+      var root = this.root;
+      var map = root.select('region-map');
+
+      var feature;
+      map.selectAll('g.region')
+        .filter(function(d) { return d.selected; })
+        .each(function(d) { feature = d; });
+
+      map.call(zoomTo, feature);
+
+      // select the active one
+      var list = root.select('.select--locations')
+        .call(onceLoaded, function() {
+          if (!root) return;
+          this.value = 'onshore/' + params.state;
+        });
+
+      return next();
+    })
+    .after(function() {
+      console.log('[view] after show state');
+      this.root.select('region-map')
+        .call(zoomTo, null);
+    });
+
+  var showCounty = createView()
+    .root('#locations')
+    .params(['state', 'county'])
+    .main(function showCounty(next) {
+      var params = this.params;
+      console.log('[view] show county:', params);
+      return next();
+    });
+
+  var showOffshoreRegion = createView()
+    .root('#locations')
+    .params(['region'])
+    .main(function showOffshoreRegion(next) {
+      var params = this.params;
+      console.log('[view] show offshore region:', params);
+
+      var root = this.root;
+      var map = this.map = root.select('region-map');
+      var feature;
+      map.selectAll('g.region')
+        .filter(function(d) { return d.selected; })
+        .each(function(d) { feature = d; });
+
+      map.call(zoomTo, feature);
+
+      // select the active one
+      var list = root.select('.select--locations')
+        .call(onceLoaded, function() {
+          if (!root) return;
+          this.value = 'offshore/' + params.region;
+        });
+
+      return next();
+    })
+    .after(function() {
+      this.map.call(zoomTo, null);
+    });
+
+  var showOffshoreArea = createView()
+    .params(['region', 'area'])
+    .main(function showOffshoreArea(next) {
+      var params = this.params;
+      console.log('[view] show offshore area:', params);
+      return next();
+    });
+
+  var showCommodityForState = createView()
+    .root('#commodities')
+    .params(['commodity', 'state'])
+    .main(function showCommodityForState(next) {
+      var params = this.params;
+      console.log('[route] state commodity view:', params);
+
+      var root = this.root;
+      var section = root.select('section.commodity.selected');
+
+      root.select('.select--locations')
+        .call(onceLoaded, function() {
+          this.value = 'onshore/' + params.state;
+        });
+
+      var map = section.select('region-map');
+
+      var feature;
+      map.selectAll('g.region')
         .classed('selected', function(d) {
+          d.selected = d.id === params.state;
+          if (d.selected) feature = d;
           return d.selected;
         });
 
-      region.select('a')
-        .attr('xlink:href', function(d) {
-          return d.href;
-        });
-    }
+      map.call(zoomTo, feature);
 
-    return function listLocations() {
-      console.log('[route] list locations');
-      var next = last(arguments);
-
-      root = this.root = app.root.select('#locations');
-      map = root.select('region-map');
-
-      if (revenuesByYear) {
-        return activate(next);
-      } else {
-        list = root.select('.select--locations')
-          .call(routeToLocation, '/locations');
-
-        app.load([
-          'state/revenues-yearly.tsv',
-          'offshore/revenues-yearly.tsv'
-        ], function(error, onshore, offshore) {
-
-          var rows = onshore.map(function(d) {
-              return d.Region = d.State, d;
-            })
-            .concat(offshore.map(function(d) {
-              // TODO: Area doesn't give us the 3-letter codes
-              return d.Region = d.Area, d;
-            }));
-
-          revenuesByYear = d3.nest()
-            .key(dl.accessor('Year'))
-            .key(dl.accessor('Region'))
-            .rollup(sumRevenues)
-            .map(rows);
-
-          return activate(next);
-        });
-      }
-    };
-  })();
-
-  function showState(state) {
-    console.log('[route] show state:', state);
-    var next = last(arguments);
-    var root = this.root;
-    var map = root.select('region-map');
-    var feature;
-    map.selectAll('g.region')
-      .filter(function(d) { return d.selected; })
-      .each(function(d) { feature = d; });
-
-    map.call(zoomTo, feature);
-
-    // select the active one
-    var list = root.select('.select--locations')
-      .call(onceLoaded, function() {
-        if (!root) return;
-        this.value = 'onshore/' + state;
-      });
-
-    app.cleanup(function() {
-      console.log('after [route] show state');
-      map.call(zoomTo, null);
-      root = null;
-    });
-
-    return next();
-  }
-
-  function showCounty(state, county) {
-    console.log('[route] show county:', state, county);
-    var next = last(arguments);
-    return next();
-  }
-
-  function showOffshoreRegion(region) {
-    console.log('[route] show offshore region:', region);
-    var next = last(arguments);
-
-    var root = this.root;
-    var map = root.select('region-map');
-    var feature;
-    map.selectAll('g.region')
-      .filter(function(d) { return d.selected; })
-      .each(function(d) { feature = d; });
-
-    map.call(zoomTo, feature);
-
-    // select the active one
-    var list = root.select('.select--locations')
-      .call(onceLoaded, function() {
-        if (!root) return;
-        this.value = 'offshore/' + region;
-      });
-
-    app.cleanup(function() {
-      console.log('after [route] show state');
-      map.call(zoomTo, null);
-      root = null;
-    });
-    return next();
-  }
-
-  function showOffshoreArea(region, area) {
-    console.log('[route] show offshore area:', region, area);
-    var next = last(arguments);
-    return next();
-  }
-
-  function showCommodityForState(commodity, state) {
-    console.log('[route] state commodity view:', commodity, state);
-
-    var next = last(arguments);
-
-    var root = this.root;
-    var section = root.select('section.commodity.selected');
-
-    root.select('.select--locations')
-      .call(onceLoaded, function() {
-        this.value = 'onshore/' + state;
-      });
-
-    var map = section.select('region-map');
-
-    var feature;
-    map.selectAll('g.region')
-      .classed('selected', function(d) {
-        d.selected = d.id === state;
-        if (d.selected) feature = d;
-        return d.selected;
-      });
-
-    map.call(zoomTo, feature);
-
-    app.cleanup(function() {
-      root.selectAll('region-map')
+      return next();
+    })
+    .after(function afterCommodityState() {
+      this.root.selectAll('region-map')
         .call(zoomTo, null)
         .selectAll('g.region')
           .classed('selected', false);
     });
 
-    return next();
-  }
+  var showCommodityForCounty = createView()
+    .root('#commodities')
+    .params(['commodity', 'state', 'county'])
+    .main(function showCommodityForCounty(next) {
+      var params = this.params;
+      console.log('[view] county commodity view:', params);
+      return next();
+    });
 
-  function showCommodityForCounty() {
-    console.log('[route] county commodity view');
-    var next = last(arguments);
-    return next();
-  }
+  var showCommodityForOffshoreRegion = createView()
+    .root('#commodities')
+    .params(['commodity', 'region'])
+    .main(function showCommodityForOffshoreRegion(next) {
+      var params = this.params;
+      console.log('[view] offshore region commodity view:', params);
 
-  function showCommodityForOffshoreRegion(commodity, region) {
-    console.log('[route] offshore region commodity view:', commodity, region);
-    var next = last(arguments);
+      var root = this.root;
+      var section = root.select('section.commodity.selected');
 
-    var root = this.root;
-    var section = root.select('section.commodity.selected');
+      root.select('.select--locations')
+        .call(onceLoaded, function() {
+          this.value = 'offshore/' + params.region;
+        });
 
-    root.select('.select--locations')
-      .call(onceLoaded, function() {
-        this.value = 'offshore/' + region;
-      });
+      var map = section.select('region-map');
 
-    var map = section.select('region-map');
+      var feature;
+      map.selectAll('g.region')
+        .classed('selected', function(d) {
+          d.selected = d.id === params.region;
+          if (d.selected) feature = d;
+          return d.selected;
+        });
 
-    var feature;
-    map.selectAll('g.region')
-      .classed('selected', function(d) {
-        d.selected = d.id === region;
-        if (d.selected) feature = d;
-        return d.selected;
-      });
+      console.log('offshore feature:', params.region, '->', feature);
 
-    console.log('offshore feature:', region, '->', feature);
-
-    map.call(zoomTo, feature);
-
-    app.cleanup(function() {
-      root.selectAll('region-map')
+      map.call(zoomTo, feature);
+    })
+    .after(function() {
+      this.root.selectAll('region-map')
         .call(zoomTo, null)
         .selectAll('g.region')
           .classed('selected', false);
     });
 
-    return next();
-  }
-
-  function showCommodityForOffshoreArea() {
-    console.log('[route] offshore area commodity view');
-    var next = last(arguments);
-    return next();
-  }
-
+  var showCommodityForOffshoreArea = createView()
+    .root('#commodities')
+    .params(['commodity', 'region', 'area'])
+    .main(function showCommodityForOffshoreArea(next) {
+      var params = this.params;
+      console.log('[view] offshore area commodity view:', params);
+      return next();
+    });
 
   /**
    * utility functions
@@ -1229,16 +1272,13 @@
   }
 
   function onceLoaded(selection, callback) {
+    var cb = function() {
+      d3.select(this).on('load.once', null);
+      return callback.apply(this, arguments);
+    };
     selection.each(function() {
-      var node = d3.select(this);
-      if (this.loaded) {
-        node.on('load.once', null);
-        return callback.apply(this, arguments);
-      }
-      node.on('load.once', function() {
-        node.on('load.once', null);
-        callback.apply(this, arguments);
-      });
+      if (this.loaded) return cb.apply(this, arguments);
+      d3.select(this).on('load.once', cb);
     });
   }
 

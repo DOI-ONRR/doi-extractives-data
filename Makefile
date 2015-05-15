@@ -137,10 +137,10 @@ output/geo/us-states.json: output/geo/us-topology.json
 		$< > $@
 
 output/geo/offshore.json: input/geo/offshore/*.json
-	topojson $(topo_options) --properties -o $@ -- $^
+	$(BIN)/topojson $(topo_options) --properties -o $@ -- $^
 
 output/geo/%-simple.json: output/geo/%.json
-	topojson $(topo_options) --properties --simplify 1e-8 -o $@ $<
+	$(BIN)/topojson $(topo_options) --properties --simplify 1e-8 -o $@ $<
 
 svg: \
 	output/svg/all.svg \

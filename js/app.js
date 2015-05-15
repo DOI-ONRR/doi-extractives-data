@@ -1184,14 +1184,13 @@
   })();
 
   function lookup(list, key, value) {
-    if (typeof key === 'string') key = dl.accessor(key);
-    if (typeof value === 'string') value = dl.accessor(value);
-    return d3.nest()
-      .key(key)
-      .rollup(function(d) {
-        return value(d[0]);
-      })
-      .map(list);
+    if (typeof key !== 'function') key = dl.accessor(key);
+    if (typeof value !== 'function') value = dl.accessor(value);
+    var map = {};
+    list.forEach(function(d) {
+      map[key(d)] = value(d);
+    });
+    return map;
   }
 
   function reverseLookup(map) {

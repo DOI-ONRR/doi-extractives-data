@@ -659,7 +659,7 @@
     }
   }
 
-  function listCommodityProducts() {
+  function listCommodityProducts(commodity) {
     var next = last(arguments);
     var root = this.root;
     root.classed('commodity-selected', true);

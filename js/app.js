@@ -1289,7 +1289,7 @@
 
     var x = d3.scale.linear()
       .domain(years)
-      .rangeRound([0, 100]);
+      .range([0, 100]);
 
     var ticks = slider.selectAll('.tick')
       .data(d3.range(years[0], app.years[1] + 1))
@@ -1297,7 +1297,7 @@
       .append('div')
         .attr('class', 'tick')
         .style('left', function(y) {
-          return x(y) + '%';
+          return x(y).toFixed(2) + '%';
         });
     ticks.append('span')
       .attr('class', 'label')

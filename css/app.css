@@ -106,12 +106,18 @@ x-slider .handle {
 x-slider .tick {
   position: absolute;
   top: 50%;
-  width: .6em;
-  height: .6em;
-  margin: -.3em 0 0 -.3em;
-  background: #fff;
-  border-radius: 1em;
   z-index: 50;
+}
+
+x-slider .tick:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: .5em;
+  height: .5em;
+  background: #fff;
+  border-radius: .4em;
+  margin: -.25em 0 0 -.25em;
 }
 
   x-slider .tick .label {
@@ -120,7 +126,7 @@ x-slider .tick {
     top: 100%;
     left: 50%;
     margin-left: -1.5em;
-    margin-top: 100%;
+    margin-top: 1.2em;
     width: 3em;
     text-align: center;
   }

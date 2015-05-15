@@ -11,13 +11,13 @@ FILES = \
 	output/national/gdp-yearly.tsv \
 	output/state/revenues-yearly.tsv \
 	output/state/volumes-yearly.tsv \
-	output/state/gdp-yearly.tsv \
 	output/state/exports-by-industry.tsv \
 	output/county/revenues-yearly.tsv \
 	output/county/volumes-yearly.tsv \
 	output/offshore/revenues-yearly.tsv \
 	output/offshore/volumes-yearly.tsv \
-	county-revenues-by-state
+	county-revenues-by-state \
+	output/state/gdp-yearly.tsv
 
 JS_FILES ?= js/eiti*.js
 

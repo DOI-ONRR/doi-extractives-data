@@ -96,7 +96,7 @@
       // set up d3 selections for the important page elements
       var root = app.root = d3.select('#app');
       app.status = root.select('#status');
-      app.sections = root.selectAll('#index, section.primary');
+      app.sections = root.selectAll('main section.primary');
       app.description = root.select('.page-description');
       app.breadcrumb = root.select('nav ul.breadcrumb');
 

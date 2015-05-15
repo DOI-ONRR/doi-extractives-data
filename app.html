@@ -23,113 +23,131 @@
     <header class="container">
       <h1><span>USEITI</span></h1>
       <nav>
-        <ul class="breadcrumb">
-          <li class="home"><a href="#/">Home</a></li>
+        <ul>
+          <li><a href="#/index">Home</a></li>
+          <li><a href="#/about">About</a></li>
+          <li><a href="#/explore">Explore Data</a></li>
+          <li><a href="#/downloads">Downloads</a></li>
+          <li class="search">
+            <label>Search: <input type="search" name="query"></label>
+          </li>
         </ul>
       </nav>
     </header>
 
-    <main id="index" class="container">
-
-      <section class="module module--commodity">
-        <h3>Choose a natural resource to learn more</h3>
-        <ul class="list--commodities">
+    <div id="breadcrumb" class="container">
+      <nav>
+        <ul class="breadcrumb">
+          <li class="home"><a href="#/">Home</a></li>
         </ul>
-        <p><a href="#/commodities">Compare data for all resources &gt;</a></p>
+      </nav>
+    </div>
+
+    <main>
+
+      <section id="index" class="primary container">
+
+        <section class="module module--commodity">
+          <h3>Choose a natural resource to learn more</h3>
+          <ul class="list--commodities">
+          </ul>
+          <p><a href="#/commodities">Compare data for all resources &gt;</a></p>
+        </section>
+
+        <section class="module module--location">
+          <h2>Browse by Location</h2>
+          <p><a href="#/locations"><region-map></region-map></a></p>
+          <form action="#/locations">
+            <p><a href="#/locations">View the map</a> or 
+              <select name="location" class="select--locations">
+                <option value="">select a region</option>
+              </select>
+            </p>
+          </form>
+        </section>
+
       </section>
 
-      <section class="module module--location">
-        <h2>Browse by Location</h2>
-        <p><a href="#/locations"><region-map></region-map></a></p>
-        <form action="#/locations">
-          <p><a href="#/locations">View the map</a> or 
-            <select name="location" class="select--locations">
-              <option value="">select a region</option>
-            </select>
-          </p>
-        </form>
+      <div class="controls--global container">
+        <x-slider id="year-slider" snap></x-slider>
+      </div>
+
+      <section id="commodities" class="primary container">
+        <div class="selector">
+          <select class="select--locations">
+            <option value="">select a region</option>
+          </select>
+        </div>
+
+        <section class="list--commodities">
+
+          <!--
+          NB: this is a *template* for the commodity sections, and
+          will be removed at runtime then replaced with one copy for
+          each commodity group.
+          -->
+          <section class="template" style="display: none;">
+            <h3><a href="#/commodities/{{ slug }}" class="commodity-title"></a></h3>
+            <!-- <p>A little something about <span class="commodity-title">this commodity</span>.</p> -->
+            <table class="stats">
+              <caption><span class="current-year"></span></caption>
+              <tr>
+                <th scope="row">Revenues</th>
+                <td class="stat"><a href="#/revenue/{{ slug }}" class="stat__revenue"></a></td>
+              </tr>
+              <tr>
+                <th scope="row">Jobs</th>
+                <td class="stat stat__jobs fpo">FPO</td>
+              </tr>
+              <tr>
+                <th scope="row">Production</th>
+                <td class="stat"><a href="#/production/{{ slug }}" class="stat__products"></a></td>
+              </tr>
+              <tr>
+                <th scope="row">Exports</th>
+                <td class="stat stat__exports fpo">FPO</td>
+              </tr>
+              <tr>
+                <th scope="row"><acronym title="Gross Domestic Product">GDP</acronym></th>
+                <td class="stat stat__gdp fpo">FPO</td>
+              </tr>
+            </table>
+            <div class="detail">
+              <region-map class="regions"></region-map>
+            </div>
+          </section>
+
+        </section>
+      </section>
+
+      <section id="locations" class="primary container">
+        <div class="selector">
+          <select class="select--locations">
+            <option value="">select a region</option>
+          </select>
+        </div>
+        <region-map></region-map>
+      </section>
+
+      <section id="revenue" class="primary container">
+        <section class="list--commodities">
+          <section class="template" style="display: none">
+            <h4><a href="#/revenue/{{ slug }}" class="commodity-title"></a></h4>
+          </section>
+        </section>
+      </section>
+
+      <section id="production" class="primary container">
+        <section class="list--commodities">
+          <section class="template" style="display: none">
+            <h4><a href="#/production/{{ slug }}" class="commodity-title"></a></h4>
+            <ul class="list--products">
+            </ul>
+          </section>
+        </section>
       </section>
 
     </main>
-
-    <div class="container controls--global">
-      <x-slider id="year-slider" snap></x-slider>
-    </div>
-
-    <section id="commodities" class="primary container">
-      <div class="selector">
-        <select class="select--locations">
-          <option value="">select a region</option>
-        </select>
-      </div>
-
-      <section class="list--commodities">
-
-        <!--
-        NB: this is a *template* for the commodity sections, and
-        will be removed at runtime then replaced with one copy for
-        each commodity group.
-        -->
-        <section class="template" style="display: none;">
-          <h3><a href="#/commodities/{{ slug }}" class="commodity-title"></a></h3>
-          <!-- <p>A little something about <span class="commodity-title">this commodity</span>.</p> -->
-          <table class="stats">
-            <caption><span class="current-year"></span></caption>
-            <tr>
-              <th scope="row">Revenues</th>
-              <td class="stat"><a href="#/revenue/{{ slug }}" class="stat__revenue"></a></td>
-            </tr>
-            <tr>
-              <th scope="row">Jobs</th>
-              <td class="stat stat__jobs fpo">FPO</td>
-            </tr>
-            <tr>
-              <th scope="row">Production</th>
-              <td class="stat"><a href="#/production/{{ slug }}" class="stat__products"></a></td>
-            </tr>
-            <tr>
-              <th scope="row">Exports</th>
-              <td class="stat stat__exports fpo">FPO</td>
-            </tr>
-            <tr>
-              <th scope="row"><acronym title="Gross Domestic Product">GDP</acronym></th>
-              <td class="stat stat__gdp fpo">FPO</td>
-            </tr>
-          </table>
-          <div class="detail">
-            <region-map class="regions"></region-map>
-          </div>
-        </section>
-
-      </section>
-    </section>
-
-    <section id="locations" class="primary container">
-      <div class="selector">
-        <select class="select--locations">
-          <option value="">select a region</option>
-        </select>
-      </div>
-      <region-map></region-map>
-    </section>
-
-    <section id="revenue" class="primary container">
-      <section class="list--commodities">
-        <section class="template" style="display: none">
-          <h4><a href="#/revenue/{{ slug }}" class="commodity-title"></a></h4>
-        </section>
-      </section>
-    </section>
-
-    <section id="production" class="primary container">
-      <section class="list--commodities">
-        <section class="template" style="display: none">
-          <h4><a href="#/production/{{ slug }}" class="commodity-title"></a></h4>
-          <ul class="list--products">
-          </ul>
-        </section>
-      </section>
-    </section>
 
     <script src="js/app.js"></script>
     <script>app.init();</script>

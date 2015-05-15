@@ -40,7 +40,7 @@
        */
       if (!routes) {
         routes = {
-          '/': showIndex,
+          // '/': showIndex,
           '/index': showIndex,
 
           '/commodities': {

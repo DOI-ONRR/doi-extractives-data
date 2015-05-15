@@ -358,6 +358,8 @@
     }
   };
 
+  var ZOOM_TIME = 400;
+
   function showIndex(next) {
     console.log('[route] index');
 
@@ -680,13 +682,13 @@
 
     function update() {
       var year = app.yearSlider.property('value');
-      var revenuesByState = revenuesByYear[year];
+      var revenuesByRegion = revenuesByYear[year];
 
       var region = map.selectAll('g.region')
         .each(function(d) {
           d.href = getFeatureHref(d, '#/locations/%');
           d.selected = d.href === location.hash;
-          d.revenue = revenuesByState[d.id];
+          d.revenue = revenuesByRegion[d.id];
         })
         .classed('active', function(d) {
           return d.revenue;
@@ -715,14 +717,23 @@
           .call(routeToLocation, '/locations');
 
         app.load([
-          'state/revenues-yearly.tsv'
-        ], function(error, revenues) {
+          'state/revenues-yearly.tsv',
+          'offshore/revenues-yearly.tsv'
+        ], function(error, onshore, offshore) {
+
+          var rows = onshore.map(function(d) {
+              return d.Region = d.State, d;
+            })
+            .concat(offshore.map(function(d) {
+              // TODO: Area doesn't give us the 3-letter codes
+              return d.Region = d.Area, d;
+            }));
 
           revenuesByYear = d3.nest()
             .key(dl.accessor('Year'))
-            .key(dl.accessor('State'))
+            .key(dl.accessor('Region'))
             .rollup(sumRevenues)
-            .map(revenues);
+            .map(rows);
 
           return activate(next);
         });
@@ -740,7 +751,7 @@
       .filter(function(d) { return d.selected; })
       .each(function(d) { feature = d; });
 
-    map.node().zoomTo(feature, 400);
+    map.call(zoomTo, feature);
 
     // select the active one
     var list = root.select('.select--locations')
@@ -751,7 +762,7 @@
 
     app.cleanup(function() {
       console.log('after [route] show state');
-      map.node().zoomTo(null, 400);
+      map.call(zoomTo, null);
       root = null;
     });
 
@@ -767,13 +778,28 @@
   function showOffshoreRegion(region) {
     console.log('[route] show offshore region:', region);
     var next = last(arguments);
+
     var root = this.root;
     var map = root.select('region-map');
     var feature;
     map.selectAll('g.region')
       .filter(function(d) { return d.selected; })
       .each(function(d) { feature = d; });
-    map.node().zoomTo(feature, 400);
+
+    map.call(zoomTo, feature);
+
+    // select the active one
+    var list = root.select('.select--locations')
+      .call(onceLoaded, function() {
+        if (!root) return;
+        this.value = 'offshore/' + region;
+      });
+
+    app.cleanup(function() {
+      console.log('after [route] show state');
+      map.call(zoomTo, null);
+      root = null;
+    });
     return next();
   }
 
@@ -806,13 +832,11 @@
         return d.selected;
       });
 
-    map.node().zoomTo(feature, 400);
+    map.call(zoomTo, feature);
 
     app.cleanup(function() {
       root.selectAll('region-map')
-        .each(function() {
-          this.zoomTo(null, 400);
-        })
+        .call(zoomTo, null)
         .selectAll('g.region')
           .classed('selected', false);
     });
@@ -850,13 +874,11 @@
 
     console.log('offshore feature:', region, '->', feature);
 
-    map.node().zoomTo(feature, 400);
+    map.call(zoomTo, feature);
 
     app.cleanup(function() {
       root.selectAll('region-map')
-        .each(function() {
-          this.zoomTo(null, 400);
-        })
+        .call(zoomTo, null)
         .selectAll('g.region')
           .classed('selected', false);
     });
@@ -1096,6 +1118,13 @@
         node.on('load.once', null);
         callback.apply(this, arguments);
       });
+    });
+  }
+
+  function zoomTo(selection, feature, time) {
+    if (arguments.length < 3) time = ZOOM_TIME;
+    selection.each(function() {
+      this.zoomTo(feature, time);
     });
   }
 

@@ -5,6 +5,39 @@
    */
   var eiti = exports.eiti = {};
 
+  eiti.load = (function() {
+    var cache = d3.map();
+
+    var loaders = {};
+    ['csv', 'tsv', 'json'].forEach(function(type) {
+      var loader = loaders[type] = d3[type];
+      d3[type] = function wrapped(url) {
+        console.info('d3.' + type + '(', url, ')', cache.get(url));
+        return loader.apply(this, arguments);
+      };
+    });
+
+    var load = function(url, done, fresh) {
+      var ext = url.split('.').pop().split('?').shift();
+      var loader = loaders[ext];
+      var cached = cache.get(url);
+      return cached && !fresh
+        ? done(null, cached)
+        : loader.call(d3, url, function(error, data) {
+          if (!error) cache.set(url, data);
+          return done.apply(this, arguments);
+        });
+    };
+
+    load.clearCache = function() {
+      var keys = cache.keys();
+      keys.forEach(cache.remove);
+      return keys;
+    };
+
+    return load;
+  })();
+
   /*
    * data classes and functions
    */
@@ -118,7 +151,7 @@
     };
 
     Commodities.prototype.load = function(jsonUrl, done) {
-      return d3.json(jsonUrl, (function(error, data) {
+      return eiti.load(jsonUrl, (function(error, data) {
         if (error) return done && done(error);
 
         var groups = data.groups;

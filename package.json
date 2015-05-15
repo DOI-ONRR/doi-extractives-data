@@ -12,7 +12,7 @@
     "data-expression": "^0.3.1",
     "epipebomb": "^0.1.1",
     "extend": "^2.0.0",
-    "jsdom": "^3.1.2",
+    "jsdom": "^5.4.1",
     "mkdirp": "^0.5.0",
     "request": "^2.55.0",
     "rw": "^0.1.4",

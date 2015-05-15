@@ -659,37 +659,134 @@
       var context = this;
       var root = this.root;
       app.load([
-        'national/revenue-yearly.tsv'
-      ], function(error, revenues) {
+        'state/revenues-yearly.tsv',
+        'offshore/revenues-yearly.tsv'
+      ], function(error, onshore, offshore) {
         context.sections = createCommoditySections(
           root.select('section.list--commodities')
         );
-        context.data = revenues;
+
+        context.sections.selectAll('g.region')
+          .append('title');
+
+        onshore.forEach(setCommodityGroup);
+        onshore.forEach(setStateRegion);
+        offshore.forEach(setCommodityGroup);
+        offshore.forEach(setOffshoreRegion);
+
+        var revenues = onshore.concat(offshore);
+        context.revenues = revenues;
+
+        context.revenuesByYearCommodity = d3.nest()
+          .key(dl.accessor('Year'))
+          .key(dl.accessor('CommodityGroup'))
+          .rollup(sumRevenues)
+          .map(revenues);
+
+        context.revenuesByYearCommodityRegion = d3.nest()
+          .key(dl.accessor('Year'))
+          .key(dl.accessor('CommodityGroup'))
+          .key(dl.accessor('Region'))
+          .rollup(sumRevenues)
+          .map(revenues);
+
+        var extents = eiti.data.nest(revenues, [
+          'Year',
+          'CommodityGroup',
+          'Region'
+        ], sumRevenues);
+
+        forEach(extents, function(byYear, year) {
+          forEach(byYear, function(regions, commodity) {
+            var values = d3.values(regions);
+            var extent = d3.extent(values);
+            if (extent[0] > 0) extent[0] = 0;
+            extents[year][commodity] = extent;
+          });
+        });
+
+        console.log('extentsByYearCommodity:', extents);
+        context.extentsByYearCommodity = extents;
+
         return next();
       });
     })
     .main(function showRevenue(next) {
-      console.log('[view] showRevenue');
+      console.log('[view] show revenue');
       var root = this.root;
-      // TODO visualize revenues
+      var sections = this.sections;
+
+      // {year: {commodity: value}}
+      var revenuesByYearCommodity = this.revenuesByYearCommodity;
+      // {year: {commodity: extent}}
+      var extentsByYearCommodity = this.extentsByYearCommodity;
+      // {year: {commodity: {region: value}}}
+      var revenuesByYearCommodityRegion = this.revenuesByYearCommodityRegion;
+      console.log('revenues by year, commodity, region:', revenuesByYearCommodityRegion);
+
+      function update() {
+        var year = app.yearSlider.property('value');
+        // console.log('[update] show revenue', year);
+        var revenuesByCommodity = revenuesByYearCommodity[year];
+
+        var format = eiti.format.shortDollars;
+        sections.select('.revenue--total')
+          .text(function(d) {
+            return format(revenuesByCommodity[d.name] || 0);
+          });
+
+        sections.select('region-map')
+          .call(onceLoaded, function(d) {
+            var extent = extentsByYearCommodity[year][d.name];
+            console.log('extent:', d.name, extent);
+            var scale = d3.scale.quantize()
+              .domain(extent)
+              .range(colorbrewer.Purples[9]);
+
+            var revenuesByRegion = revenuesByYearCommodityRegion[year][d.name] || {};
+            // console.log('revenuesByRegion:', revenuesByRegion);
+
+            var regions = d3.select(this)
+              .selectAll('g.region')
+              .each(function(f) {
+                f.value = revenuesByRegion[f.id] || 0;
+              });
+
+            regions.select('path')
+              .style('fill', function(f) {
+                return scale(f.value);
+              });
+
+            regions.select('title')
+              .text(function(f) {
+                return format(f.value);
+              });
+          });
+      }
+
+      app.yearSlider.on('change', throttle(update));
+      update();
+
+      return next();
     })
     .after(function() {
-      console.log('[view] after showRevenue');
+      console.log('[view] after show revenue');
+      // XXX remove listener?
     });
 
   var showCommodityRevenue = createView()
     .root('#revenue')
     .params(['commodity'])
     .main(function showCommodityRevenue(next) {
-      var commodity = this.params.commodity;
-      console.log('[view] showCommodityRevenue:', commodity);
+      var params = this.params;
+      console.log('[view] show commodity revenue:', params);
 
       var root = this.root
         .classed('commodity-selected', true);
 
       root.selectAll('section.commodity')
         .classed('selected', function(d) {
-          return d.slug === commodity;
+          return d.slug === params.commodity;
         });
 
       return next();
@@ -812,13 +909,10 @@
         'offshore/revenues-yearly.tsv'
       ], function(error, onshore, offshore) {
 
-        var rows = onshore.map(function(d) {
-            return d.Region = d.State, d;
-          })
-          .concat(offshore.map(function(d) {
-            // TODO: Area doesn't give us the 3-letter codes
-            return d.Region = d.Area, d;
-          }));
+        onshore.forEach(setStateRegion);
+        offshore.forEach(setOffshoreRegion);
+
+        var rows = onshore.concat(offshore);
 
         context.revenues = d3.nest()
           .key(dl.accessor('Year'))
@@ -1258,6 +1352,15 @@
     d.CommodityGroup = app.commodities.getGroup(d.Commodity);
   }
 
+  function setStateRegion(d) {
+    return d.Region = d.State, d;
+  }
+
+  function setOffshoreRegion(d) {
+    // TODO: Area doesn't give us the 3-letter codes
+    return d.Region = d.Area, d;
+  }
+
   function expandHrefTemplate(d) {
     return dl.template(this.getAttribute('href'))(d);
   }
@@ -1325,6 +1428,14 @@
     selection.each(function() {
       this.zoomTo(feature, time);
     });
+  }
+
+  function forEach(d, fn, context) {
+    if (Array.isArray(d)) return d.forEach(fn, context || d);
+    return Object.keys(d)
+      .map(function(k) {
+        return fn.call(context || this, d[k], k);
+      });
   }
 
 })(this);

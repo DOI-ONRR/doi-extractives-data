@@ -80,6 +80,7 @@ async.waterfall([
         .text([
           '',
           'path { fill: none; stroke: #ccc; stroke-width: .5; vector-effect: non-scaling-stroke; }',
+          'path.feature { fill: #eee; }',
           '#states path { stroke: #999; stroke-width: .5; }',
           '#USA path { stroke: #eee; stroke-width: 1; }',
           '#alaska path, #atlantic path, #gulf path, #pacific path { stroke: #69c; }',

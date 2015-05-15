@@ -10,6 +10,7 @@
       'locations':    'Locations',
       'production':   'Production',
       'revenue':      'Revenue',
+      // false means: don't show this path component
       'onshore':      false,
       'offshore':     false
     },
@@ -23,6 +24,7 @@
       'Renewables'
     ],
 
+    // TODO: this should come from the data
     years: [2004, 2013],
 
     // all data URLs provided to load() will be prefixed with this
@@ -100,38 +102,7 @@
       app.description = root.select('.page-description');
       app.breadcrumb = root.select('nav ul.breadcrumb');
 
-      var slider = root.select('#year-slider')
-        .attr('min', app.years[0])
-        .attr('max', app.years[1])
-        .attr('value', app.years[1]);
-
-      app.yearSlider = slider;
-
-      var x = d3.scale.linear()
-        .domain(app.years)
-        .rangeRound([0, 100]);
-
-      var ticks = slider.selectAll('.tick')
-        .data(d3.range(app.years[0], app.years[1] + 1))
-        .enter()
-        .append('div')
-          .attr('class', 'tick')
-          .style('left', function(y) {
-            return x(y) + '%';
-          });
-      ticks.append('span')
-        .attr('class', 'label')
-        .text(dl.identity);
-
-      var updateTicks = function() {
-        var year = this.value;
-        ticks.classed('selected', function(y) {
-          return y == year;
-        });
-      };
-      slider.on('change.ticks', updateTicks);
-      slider.each(updateTicks);
-
+      app.yearSlider = initializeYearSlider(root, app.years);
       app._routeEnds = [];
 
       // initialize the route, default to the index
@@ -1160,6 +1131,40 @@
     };
 
     return selector;
+  }
+
+  function initializeYearSlider(root, years) {
+    var slider = root.select('#year-slider')
+      .attr('min', app.years[0])
+      .attr('max', app.years[1])
+      .attr('value', app.years[1]);
+
+    var x = d3.scale.linear()
+      .domain(years)
+      .rangeRound([0, 100]);
+
+    var ticks = slider.selectAll('.tick')
+      .data(d3.range(years[0], app.years[1] + 1))
+      .enter()
+      .append('div')
+        .attr('class', 'tick')
+        .style('left', function(y) {
+          return x(y) + '%';
+        });
+    ticks.append('span')
+      .attr('class', 'label')
+      .text(dl.identity);
+
+    var updateTicks = function() {
+      var year = this.value;
+      ticks.classed('selected', function(y) {
+        return y == year;
+      });
+    };
+    slider.on('change.ticks', updateTicks);
+    slider.each(updateTicks);
+
+    return slider;
   }
 
   function createCommoditySections(root, templateSelector) {

@@ -485,6 +485,17 @@
       return view;
     };
 
+    // create a child of this view with the same:
+    // - root
+    // - parameters
+    // - context
+    view.child = function() {
+      return createView()
+        .root(root)
+        .params(params)
+        .context(context);
+    };
+
     return view;
   };
 
@@ -647,6 +658,7 @@
     .root('#revenue')
     .load(function(next) {
       var context = this;
+      var root = this.root;
       app.load([
         'national/revenue-yearly.tsv'
       ], function(error, revenues) {
@@ -757,33 +769,34 @@
       console.log('[view] showProduction');
       var root = this.root;
       // TODO: update on year change
+      next();
     });
 
   var listCommodityProducts = createView()
-    .root('#commodities')
+    .root('#production')
+    .params(['commodity'])
     .main(function listCommodityProducts(next) {
-      console.log('[view] list commodity products');
+      var params = this.params;
+      console.log('[view] list commodity products:', params);
 
       var root = this.root
         .classed('commodity-selected', true);
 
-      var params = this.params;
-      var commodity = params.commodity;
-
       root.selectAll('section.commodity')
         .classed('selected', function(d) {
-          return d.slug === commodity;
+          return d.slug === params.commodity;
         });
 
       return next();
     })
     .after(function() {
+      console.log('[view] after list commodity products');
       this.root
         .classed('commodity-selected', false);
     });
 
   var showCommodityProduct = createView()
-    .root('#commodities')
+    .root('#production')
     .main(function showCommodityProduct(next) {
       var params = this.params;
       console.log('[view] show commodity product:', params);

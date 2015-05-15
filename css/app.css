@@ -96,6 +96,7 @@ x-slider {
   margin: 1em;
   height: .2em;
   border-radius: 0;
+  background: #fff;
 }
 
 x-slider .handle {
@@ -108,7 +109,7 @@ x-slider .tick {
   width: .6em;
   height: .6em;
   margin: -.3em 0 0 -.3em;
-  background: #ccc;
+  background: #fff;
   border-radius: 1em;
   z-index: 50;
 }

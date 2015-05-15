@@ -367,17 +367,135 @@
 
   var ZOOM_TIME = 400;
 
-  function showIndex(next) {
-    console.log('[route] index');
+  var createView = function(main) {
+    if (!main) main = function(next) { next(); };
 
-    var root = this.root = app.root.select('#index');
-    if (root.classed('loaded')) {
-      // already loaded
-      return next();
-    } else {
+    var before = [];
+    var after = [];
+    var params;
+    var load;
+
+    var root = '#app';
+    var context = {};
+
+    var onerror = function(error) {
+      console.error('view error:', error);
+      throw new Error('view error: ' + error.message);
+    };
+
+    var view = function() {
+      var args = [].slice.call(arguments);
+      var next = args.pop();
+
+      if (root) {
+        context.root = typeof root === 'string'
+          ? d3.select(root)
+          : root;
+      }
+
+      var data = {};
+      if (params) {
+        params.forEach(function(key, i) {
+          data[key] = args[i];
+        });
+        args = [data];
+      } else {
+        data = args;
+      }
+
+      context.data = data;
+
+      var run = function() {
+        if (before.length) {
+          before.each(function(fn) {
+            fn.apply(context, args);
+          });
+        }
+        // synchronous: no callback
+        if (!main.length) {
+          main.call(context);
+          return next();
+        }
+        return main.call(context, next);
+      };
+
+      if (load) {
+        load.call(context, function(error, data) {
+          if (error) {
+            onerror.call(context, error);
+          } else {
+            run();
+          }
+        });
+      } else {
+        run();
+      }
+
+      app.cleanup(function() {
+        after.forEach(function(fn) {
+          fn.apply(context, args);
+        });
+      });
+    };
+
+    view.main = function(fn) {
+      if (!arguments.length) return main;
+      main = fn;
+      return view;
+    };
+
+    view.root = function(selector) {
+      if (!arguments.length) return root;
+      root = selector;
+      return view;
+    };
+
+    view.before = function(fns) {
+      if (!arguments.length) return before;
+      before = Array.isArray(fns) ? fns : [fns];
+      return view;
+    };
+
+    view.after = function(fns) {
+      if (!arguments.length) return before;
+      after = Array.isArray(fns) ? fns : [fns];
+      return view;
+    };
+
+    view.params = function(keys) {
+      if (!arguments.length) return params;
+      params = keys;
+      return view;
+    };
+
+    view.error = function(fn) {
+      if (!arguments.length) return onerror;
+      onerror = fn;
+      return view;
+    };
+
+    view.load = function(fn) {
+      if (!arguments.length) return load;
+      load = fn;
+      return view;
+    };
+
+    view.context = function(ctx) {
+      if (!arguments.length) return context;
+      context = ctx || {};
+      return view;
+    };
+
+    return view;
+  };
+
+  var showIndex = createView()
+    .root('#index')
+    .main(function(next) {
+      console.log('[view] index', this);
+      var root = this.root;
       var list = root.select('.select--locations')
         .call(routeToLocation, '/locations', true);
-
       root.select('ul.list--commodities')
         .selectAll('li')
         .data(app.commodityGroups)
@@ -386,239 +504,226 @@
           .append('a')
             .attr('href', dl.template('#/commodities/{{ slug }}'))
             .text(dl.accessor('name'));
-
-      root.classed('loaded', true);
       return next();
-    }
-  }
+    });
 
-  var listCommodities = (function() {
-    var data, root, sections;
+  var listCommodities = createView()
+    .root('#commodities')
+    .load(function(next) {
+      var context = this;
+      var root = context.root;
 
-    function activate(next) {
-      app.yearSlider.on('change', update);
-      return update(next);
-    }
+      app.load({
+        revenues: 'national/revenues-yearly.tsv',
+        production: 'national/volumes-yearly.tsv',
+        stateRevenues: 'state/revenues-yearly.tsv'
+      }, function(error, data) {
 
-    function update(next) {
-      var year = app.yearSlider.property('value');
-      root.selectAll('.current-year')
-        .text(year);
-      var filter = function(d) { return d.Year == year; };
+        context.sections = createCommoditySections(
+          root.select('section.list--commodities')
+        );
 
-      var revenues = data.revenues.filter(filter);
-      var production = data.production.filter(filter);
-      var stateRevenues = data.stateRevenues.filter(filter);
+        data.revenues.forEach(setCommodityGroup);
+        data.production.forEach(setCommodityGroup);
+        data.stateRevenues.forEach(setCommodityGroup);
 
-      var revenuesByCommodity = d3.nest()
-        .key(dl.accessor('CommodityGroup'))
-        .rollup(sumRevenues)
-        .map(revenues);
+        context.data = data;
+        return next();
+      });
+    })
+    .main(function(done) {
+      var context = this;
+      var root = context.root;
+      var data = context.data;
+      var sections = context.sections;
 
-      var productsByCommodity = d3.nest()
-        .key(dl.accessor('CommodityGroup'))
-        .rollup(function(d) {
-          return countUnique(d, 'Product');
-        })
-        .map(production);
+      function update(next) {
+        var year = app.yearSlider.property('value');
+        root.selectAll('.current-year')
+          .text(year);
+        var filter = function(d) { return d.Year == year; };
 
-      var stats = sections.select('table.stats');
-      stats.select('.stat__revenue')
-        .call(rebind)
-        .text(function(d) {
-          return eiti.format.shortDollars(revenuesByCommodity[d.name]);
-        });
+        var revenues = data.revenues.filter(filter);
+        var production = data.production.filter(filter);
+        var stateRevenues = data.stateRevenues.filter(filter);
 
-      stats.select('.stat__products')
-        .call(rebind)
-        .datum(function(d) {
-          return productsByCommodity[d.name];
-        })
-        .text(function(products) {
-          return products
-            ? pluralize(products, ' product')
-            : '(no products)';
-        })
-        // unset the href attribute on links without products
-        .filter(function(products) {
-            return this.nodeName === 'A' && !products;
+        var revenuesByCommodity = d3.nest()
+          .key(dl.accessor('CommodityGroup'))
+          .rollup(sumRevenues)
+          .map(revenues);
+
+        var productsByCommodity = d3.nest()
+          .key(dl.accessor('CommodityGroup'))
+          .rollup(function(d) {
+            return countUnique(d, 'Product');
           })
-          .attr('href', null);
+          .map(production);
 
-      var index = d3.nest()
-        .key(dl.accessor('CommodityGroup'))
-        .key(dl.accessor('State'))
-        .rollup(sumRevenues)
-        .map(stateRevenues);
-      // console.log('revenues index:', index);
+        var stats = sections.select('table.stats');
+        stats.select('.stat__revenue')
+          .call(rebind)
+          .text(function(d) {
+            return eiti.format.shortDollars(revenuesByCommodity[d.name]);
+          });
 
-      var detail = sections.select('.detail');
+        stats.select('.stat__products')
+          .call(rebind)
+          .datum(function(d) {
+            return productsByCommodity[d.name];
+          })
+          .text(function(products) {
+            return products
+              ? pluralize(products, ' product')
+              : '(no products)';
+          })
+          // unset the href attribute on links without products
+          .filter(function(products) {
+              return this.nodeName === 'A' && !products;
+            })
+            .attr('href', null);
 
-      var q = queue();
+        var index = d3.nest()
+          .key(dl.accessor('CommodityGroup'))
+          .key(dl.accessor('State'))
+          .rollup(sumRevenues)
+          .map(stateRevenues);
+        // console.log('revenues index:', index);
 
-      detail.select('region-map')
-        .each(function(d) {
-          var map = d3.select(this);
-          q.defer(function(done) {
-            map.call(onceLoaded, function() {
-              var revenuesByState = index[d.name] || {};
-              var regions = map.selectAll('g.region')
-                .each(function(f) {
-                  return f.revenue = revenuesByState[f.id];
-                })
-                .classed('active', function(f) {
-                  return !!f.revenue;
-                });
+        var detail = sections.select('.detail');
 
-              var hrefTemplate = dl.template('#/commodities/{{ slug }}/%')(d);
-              regions.select('a')
-                .attr('xlink:href', function(f) {
-                  return getFeatureHref(f, hrefTemplate);
-                });
-              done();
+        var q = queue();
+
+        detail.select('region-map')
+          .each(function(d) {
+            var map = d3.select(this);
+            q.defer(function(done) {
+              map.call(onceLoaded, function() {
+                var revenuesByState = index[d.name] || {};
+                var regions = map.selectAll('g.region')
+                  .each(function(f) {
+                    return f.revenue = revenuesByState[f.id];
+                  })
+                  .classed('active', function(f) {
+                    return !!f.revenue;
+                  });
+
+                var hrefTemplate = dl.template('#/commodities/{{ slug }}/%')(d);
+                regions.select('a')
+                  .attr('xlink:href', function(f) {
+                    return getFeatureHref(f, hrefTemplate);
+                  });
+                done();
+              });
             });
           });
-        });
 
-      q.awaitAll(next);
-    }
-
-    return function listCommodities() {
-      console.log('[route] list commodities');
-      var next = last(arguments);
-
-      root = this.root = app.root.select('#commodities')
-        .classed('commodity-selected', false);
-
-      if (data) {
-        return activate(next);
-      } else {
-        app.load({
-          revenues: 'national/revenues-yearly.tsv',
-          production: 'national/volumes-yearly.tsv',
-          stateRevenues: 'state/revenues-yearly.tsv'
-        }, function(error, _data) {
-
-          root.classed('loaded', true);
-
-          sections = createCommoditySections(
-            root.select('section.list--commodities')
-          );
-
-          _data.revenues.forEach(setCommodityGroup);
-          _data.production.forEach(setCommodityGroup);
-          _data.stateRevenues.forEach(setCommodityGroup);
-
-          data = _data;
-
-          return activate(next);
-        });
+        q.awaitAll(next);
       }
-    };
-  })();
 
-  function routeToLocation(select, baseURL, empty) {
-    var prefix = baseURL;
-    if (prefix.substr(-1) !== '/') prefix += '/';
-    select.on('change', function() {
-      if (!this.value) {
-        return empty
-          ? false
-          : app.router.setRoute(baseURL);
-      }
-      app.router.setRoute(prefix + this.value);
-    });
-  }
-
-  function showCommodity(commodity) {
-    console.log('[route] show commodity:', commodity);
-    var next = last(arguments);
-
-    var root = this.root
-      .classed('commodity-selected', true);
-
-    var baseURL = '/commodities/' + commodity;
-    var list = root.select('.select--locations')
-      .call(routeToLocation, baseURL);
-
-    var section = root.selectAll('section.commodity')
-      .classed('selected', function(d) {
-        return d.slug === commodity;
-      })
-      .filter('.selected');
-
-    app.cleanup(function() {
-      list.property('value', '');
+      app.yearSlider.on('change', update);
+      return update(done);
     });
 
-    return next();
-  }
+  var showCommodity = createView()
+    .root('#commodities')
+    .params(['commodity'])
+    .main(function showCommodity(next) {
+      var context = this;
+      var commodity = context.data.commodity;
+      console.log('[view] showCommodity:', commodity);
 
-  function showRevenue() {
-    console.log('[route] show revenues');
-    var next = last(arguments);
+      var root = context.root
+        .classed('commodity-selected', true);
 
-    var root = this.root = app.root.select('#revenue')
-      .classed('commodity-selected', false);
+      var baseURL = '/commodities/' + commodity;
+      context.list = root.select('.select--locations')
+        .call(routeToLocation, baseURL);
 
-    if (root.classed('loaded')) {
+      var section = root.selectAll('section.commodity')
+        .classed('selected', function(d) {
+          return d.slug === commodity;
+        })
+        .filter('.selected');
+
       return next();
-    } else {
+    })
+    .after(function() {
+      console.log('[view] after showCommodity');
+      this.list.property('value', '');
+    });
+
+  var showRevenue = createView()
+    .root('#revenue')
+    .load(function(next) {
+      var context = this;
       app.load([
         'national/revenue-yearly.tsv'
       ], function(error, revenues) {
-
-        var sections = createCommoditySections(
+        context.sections = createCommoditySections(
           root.select('section.list--commodities')
         );
-
-        root.classed('loaded', true);
+        context.data = revenues;
         return next();
       });
-    }
-  }
+    })
+    .main(function showRevenue(next) {
+      console.log('[view] showRevenue');
+      var root = this.root;
+      // TODO visualize revenues
+    })
+    .after(function() {
+      console.log('[view] after showRevenue');
+    });
 
-  function showCommodityRevenue(commodity) {
-    console.log('[route] show commodity revenues:', commodity);
-    var next = last(arguments);
-    var root = this.root
-      .classed('commodity-selected', true);
-    root.selectAll('section.commodity')
-      .classed('selected', function(d) {
-        return d.slug === commodity;
-      });
-    return next();
-  }
+  var showCommodityRevenue = createView()
+    .root('#revenue')
+    .params(['commodity'])
+    .main(function showCommodityRevenue(next) {
+      var commodity = this.data.commodity;
+      console.log('[view] showCommodityRevenue:', commodity);
 
-  function showProduction() {
-    console.log('[route] show production');
-    var next = last(arguments);
+      var root = this.root
+        .classed('commodity-selected', true);
 
-    var root = this.root = app.root.select('#production')
-      .classed('commodity-selected', false);
+      root.selectAll('section.commodity')
+        .classed('selected', function(d) {
+          return d.slug === commodity;
+        });
 
-    if (root.classed('loaded')) {
       return next();
-    } else {
+    })
+    .after(function() {
+      console.log('[view] after showCommodityRevenue');
+      this.root.classed('commodity-selected', false);
+    });
+
+
+  var showProduction = createView()
+    .root('#production')
+    .load(function(next) {
+      var context = this;
+      var root = context.root;
+
       app.load([
         'national/volumes-yearly.tsv'
       ], function(error, production) {
-
-        var sections = createCommoditySections(
-          root.select('section.list--commodities')
-        );
 
         production.forEach(setCommodityGroup);
 
         var productsByCommodity = d3.nest()
           .key(dl.accessor('CommodityGroup'))
           .rollup(d3.nest()
+            // .key(dl.accessor('Year'))
             .key(dl.accessor('Product'))
             .rollup(function(d) {
               return sum(d, 'Volume');
             })
             .entries)
           .map(production);
+
+        var sections = createCommoditySections(
+          root.select('section.list--commodities')
+        );
 
         var products = sections.select('ul.list--products')
           .selectAll('li')
@@ -654,12 +759,14 @@
                   ].join(' ');
                 });
 
-
-        root.classed('loaded', true);
         return next();
       });
-    }
-  }
+    })
+    .main(function showProduction(next) {
+      console.log('[view] showProduction');
+      var root = this.root;
+      // TODO: update on year change
+    });
 
   function listCommodityProducts(commodity) {
     var next = last(arguments);
@@ -1127,6 +1234,19 @@
         node.on('load.once', null);
         callback.apply(this, arguments);
       });
+    });
+  }
+
+  function routeToLocation(select, baseURL, empty) {
+    var prefix = baseURL;
+    if (prefix.substr(-1) !== '/') prefix += '/';
+    select.on('change', function() {
+      if (!this.value) {
+        return empty
+          ? false
+          : app.router.setRoute(baseURL);
+      }
+      app.router.setRoute(prefix + this.value);
     });
   }
 

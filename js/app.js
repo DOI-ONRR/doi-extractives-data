@@ -346,6 +346,13 @@
             this.dispatchEvent(new CustomEvent('load', groups));
           });
         done();
+
+        groups.forEach(function(group) {
+          group.values.forEach(function(d) {
+            var id = d.value.split('/').pop();
+            app.pathTitles[id] = d.label;
+          });
+        });
       });
     },
 

@@ -1,5 +1,45 @@
-nav {
-  margin-bottom: 2em;
+body {
+  background: #f4f4f4;
+  overflow-x: hidden;
+}
+
+header {
+  margin-top: 2em;
+}
+
+header h1 {
+  color: transparent;
+  width: 240px;
+  height: 90px;
+  background-image: url(images/eiti-logo.png);
+  float: left;
+  margin-right: 1em;
+}
+
+header:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+header h1 span {
+  display: none;
+}
+
+header nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+  header nav ul li {
+    display: inline-block;
+    margin-left: 1em;
+  }
+
+main {
+  background: #E2E2E2;
+  padding: 1em 0;
 }
 
 select {
@@ -12,6 +52,32 @@ nav ul.breadcrumb {
 }
 
 region-map svg {
+  width: 100%;
+  height: 400px;
+}
+
+region-map .region path.region {
+  fill: #eee;
+  transition: fill .25s;
+}
+
+region-map .region.active path.region {
+  fill: #69c;
+}
+
+region-map .region.active:hover path.region {
+  fill: #369;
+}
+
+region-map .region.selected path.region {
+  fill: #9f9;
+}
+
+region-map .region.selected:hover path.region {
+  fill: #393;
+}
+
+#locations region-map svg {
   width: 100%;
   height: 400px;
 }
@@ -99,6 +165,10 @@ table.stats .fpo {
 
 .selector {
   margin: 1em 0;
+}
+
+#breadcrumb {
+  margin-bottom: 2em;
 }
 
 @media (min-width: 640px) {

@@ -3,6 +3,8 @@ BIN = ./node_modules/.bin
 tito = $(BIN)/tito
 datex = $(BIN)/datex --require parse=./lib/parse
 
+topo_options ?= --spherical
+
 FILES = \
 	output/national/revenues-yearly.tsv \
 	output/national/volumes-yearly.tsv \
@@ -135,10 +137,10 @@ output/geo/us-states.json: output/geo/us-topology.json
 		$< > $@
 
 output/geo/offshore.json: input/geo/offshore/*.json
-	$(BIN)/topojson --properties -o $@ -- $^
+	topojson $(topo_options) --properties -o $@ -- $^
 
 output/geo/%-simple.json: output/geo/%.json
-	$(BIN)/topojson --properties --simplify 1e-8 -o $@ $<
+	topojson $(topo_options) --properties --simplify 1e-8 -o $@ $<
 
 svg: \
 	output/svg/all.svg \

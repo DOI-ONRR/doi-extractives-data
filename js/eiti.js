@@ -76,10 +76,6 @@
     return nest.map(rows);
   };
 
-  function isScalar(d) {
-    return typeof d !== 'object';
-  }
-
   /**
    * Walk a nested object structure and call a function on each
    * "leaf" node (that is not an object).

@@ -1,7 +1,12 @@
+BIN ?= ../../../node_modules/.bin
+
 base_url ?= http://www.boem.gov/Oil-and-Gas-Energy-Program/Mapping-and-Data
 shp_filter ?= "MMS_PLAN_A IS NOT NULL AND MMS_PLAN_A NOT IN ('LND', 'NUS')"
 regions ?= alaska atlantic gulf pacific
+
 topo_options ?= --spherical --stitch-poles
+topojson ?= $(BIN)/topojson $(topo_options)
+
 # regions ?= atlantic gulf pacific
 
 all: $(foreach region,$(regions),$(region).json) offshore.json
@@ -32,13 +37,13 @@ shp/%.shp: shp/%.zip
 
 %.json: shp/%.shp
 	ogr2ogr -f GeoJSON -t_srs EPSG:4326 -where $(shp_filter) /dev/stdout $< \
-		| topojson $(topo_options) \
+		| $(topojson) \
 			--id-property MMS_PLAN_A \
 			-p name=TEXT_LABEL \
 			-o $@ -- $*=/dev/stdin
 
 offshore.json: $(foreach region,$(regions),$(region).json)
-	topojson --properties -o $@ -- $^
+	$(topojson) --properties -o $@ -- $^
 
 clean:
 	rm -f *.json

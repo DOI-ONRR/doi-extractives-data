@@ -1,0 +1,27 @@
+region	id	name
+Alaska	CHU	Chukchi Sea
+Alaska	COK	Cook Inlet
+Alaska	GEO	St. George Basin
+Alaska	GOA	Gulf of Alaska
+Alaska	HOP	Hope Basin
+Alaska	KOD	Kodiak
+Alaska	MAT	St. Matthew-Hall
+Alaska	NAL	North Aleutian Basin
+Alaska	NAV	Navarin Basin
+Alaska	NOR	Norton Basin
+Alaska	SHU	Shumagin
+Atlantic	FLS	Florida Straits
+Atlantic	MDA	Mid Atlantic
+Atlantic	NOA	North Atlantic
+Atlantic	SOA	South Atlantic
+Gulf	ALA	Aleutian Arc
+Gulf	ALB	Aleutian Basin
+Gulf	BFT	Beaufort Sea
+Gulf	BOW	Bowers Basin
+Gulf	CGM	Central Gulf of Mexico
+Gulf	EGM	Eastern Gulf of Mexico
+Gulf	WGM	Western Gulf of Mexico
+Pacific	CEC	Central California
+Pacific	NOC	Northern California
+Pacific	SOC	Southern California
+Pacific	WAO	Washington-Oregon

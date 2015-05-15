@@ -1143,7 +1143,7 @@
       if (groups) return done(null, groups);
       return queue()
         .defer(eiti.load, 'input/geo/states.csv')
-        .defer(eiti.load, app.dataPath + 'geo/offshore.json')
+        .defer(eiti.load, 'input/geo/offshore/areas.tsv')
         .await(function(error, states, offshore) {
           if (error) return done(error);
 
@@ -1164,14 +1164,10 @@
             },
             {
               label: 'Offshore',
-              values: Object.keys(offshore.objects)
-                .reduce(function(regions, key) {
-                  var collection = topojson.feature(offshore, offshore.objects[key]);
-                  return regions.concat(collection.features);
-                }, [])
+              values: offshore
                 .map(function(d) {
                   return {
-                    label: d.properties.name || d.id,
+                    label: d.name,
                     value: 'offshore/' + d.id
                   };
                 })

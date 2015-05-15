@@ -317,9 +317,15 @@
         done();
 
         groups.forEach(function(group) {
+          if (group.label === 'Offshore') {
+            app.offshoreRegionLookup = {};
+          }
           group.values.forEach(function(d) {
             var id = d.value.split('/').pop();
             app.pathTitles[id] = d.label;
+            if (group.label === 'Offshore') {
+              app.offshoreRegionLookup[d.label] = id;
+            }
           });
         });
       });
@@ -1349,12 +1355,11 @@
   }
 
   function setStateRegion(d) {
-    return d.Region = d.State, d;
+    d.Region = d.State;
   }
 
   function setOffshoreRegion(d) {
-    // TODO: Area doesn't give us the 3-letter codes
-    return d.Region = d.Area, d;
+    d.Region = app.offshoreRegionLookup[d.Area] || d.Area;
   }
 
   function expandHrefTemplate(d) {

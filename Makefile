@@ -138,7 +138,7 @@ output/geo/offshore.json: input/geo/offshore/*.json
 	$(BIN)/topojson --properties -o $@ -- $^
 
 output/geo/%-simple.json: output/geo/%.json
-	$(BIN)/topojson --properties --simplify 2e-6 -o $@ $<
+	$(BIN)/topojson --properties --simplify 1e-8 -o $@ $<
 
 svg: \
 	output/svg/all.svg \

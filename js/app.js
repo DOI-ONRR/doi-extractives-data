@@ -625,11 +625,13 @@
           .data(function(d) {
             return productsByCommodity[d.name].map(function(p) {
               var product = parseProductName(p.key, d.name);
+              var slug = slugify(product.name);
+              app.pathTitles[slug] = product.name;
               return {
                 commodity: d,
                 product: {
                   name: product.name,
-                  slug: slugify(product.name),
+                  slug: slug,
                   units: product.units,
                   volume: p.values
                 }

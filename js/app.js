@@ -682,20 +682,31 @@
         context.sections.selectAll('g.region')
           .append('title');
 
+        // set the CommodityGroup field so we can nest on commodity "group"
+        // (e.g. "Geothermal" goes into "Renewables", etc.)
         onshore.forEach(setCommodityGroup);
-        onshore.forEach(setStateRegion);
         offshore.forEach(setCommodityGroup);
+
+        // set the Region field so that we can associate revenues with
+        // geographic features
+        // (TODO: for offshore areas we should not need a lookup; the data
+        // should include the planning area ID in addition to title)
+        onshore.forEach(setStateRegion);
         offshore.forEach(setOffshoreRegion);
 
+        // combine the list of offshore and onshore revenues for grouping
         var revenues = onshore.concat(offshore);
         context.revenues = revenues;
 
+        // nest revenues by year then commodity for fast lookups
         context.revenuesByYearCommodity = d3.nest()
           .key(dl.accessor('Year'))
           .key(dl.accessor('CommodityGroup'))
           .rollup(sumRevenues)
           .map(revenues);
 
+        // nest revenues by year then commodity *and region*,
+        // also for fast lookups
         context.revenuesByYearCommodityRegion = d3.nest()
           .key(dl.accessor('Year'))
           .key(dl.accessor('CommodityGroup'))
@@ -703,12 +714,18 @@
           .rollup(sumRevenues)
           .map(revenues);
 
-        var extents = eiti.data.nest(revenues, [
-          'Year',
-          'CommodityGroup',
-          'Region'
-        ], sumRevenues);
+        // get the sum of revenues for each unique combination of
+        // year, commodity and region (nested)
+        var extents = d3.nest()
+          .key(dl.accessor('Year'))
+          .key(dl.accessor('CommodityGroup'))
+          .key(dl.accessor('Region'))
+          .rollup(sumRevenues)
+          .map(revenues);
 
+        // then pick through the values and cacluate the extent
+        // (min and max) for each year/commodity group, so that
+        // we can color the regions in each subgroup consistently
         forEach(extents, function(byYear, year) {
           forEach(byYear, function(regions, commodity) {
             var values = d3.values(regions);

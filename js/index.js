@@ -842,7 +842,10 @@
 
             regions.select('title')
               .text(function(f) {
-                return format(f.value);
+                return [
+                  f.id + ':',
+                  f.value ? format(f.value) : '(no revenue)'
+                ].join(' ');
               });
           });
 
@@ -1117,9 +1120,11 @@
         var format = eiti.format.shortDollars;
         regions.select('title')
           .text(function(d) {
-            return d.revenue
-              ? [d.id, 'County:', format(d.revenue)].join(' ')
-              : d.id + ' County';
+            return [
+              d.id,
+              'County:',
+              d.revenue ? format(d.revenue) : '(no revenue)'
+            ].join(' ');
           });
 
         done();

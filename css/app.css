@@ -218,11 +218,40 @@ ul.list--commodities li.commodity--minerals a { background: #c63e3a; }
 ul.list--commodities li.commodity--renewables a { background: #177dab; }
 
 table.stats {
-  width: 100%;
-  max-width: 12em;
+  border-collapse: collapse;
+  display: block;
 }
 
+table.stats tr {
+  display: flex;
+  margin-bottom: .5em;
+  background: #fff;
+  border-radius: .3em;
+}
+
+table.stats tbody {
+  display: block;
+}
+
+table.stats caption,
+table.stats td,
 table.stats th {
+  padding: .5em 1em;
+  display: block;
+}
+
+table.stats td,
+table.stats th {
+  flex: 1;
+}
+
+table.stats td {
+  flex: 1.2;
+}
+
+table.stats caption,
+table.stats th {
+  font-weight: bold;
   text-align: left;
 }
 
@@ -263,6 +292,5 @@ table.stats .fpo {
   .list--commodities .commodity .detail {
     float: right;
     width: 66%;
-    margin-top: 1em;
   }
 }

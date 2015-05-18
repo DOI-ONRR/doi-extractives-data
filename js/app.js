@@ -545,6 +545,7 @@
 
   var listCommodities = createView()
     .root('#commodities')
+    .params(['commodity', 'region', 'subregion'])
     .load(function(next) {
       var context = this;
       var root = context.root;
@@ -684,6 +685,9 @@
         })
         .filter('.selected');
 
+      this.list
+        .call(relocateLocationSelector, section.select('.selector'));
+
       return next();
     })
     .after(function() {
@@ -793,6 +797,9 @@
 
       function update() {
         var year = slider.property('value');
+        root.selectAll('.current-year')
+          .text(year);
+
         // console.log('[update] show revenue', year);
         var revenuesByCommodity = revenuesByYearCommodity[year];
 
@@ -831,7 +838,7 @@
               });
           });
 
-        var chart = d3.select('#revenue-area');
+        var chart = root.select('svg.revenue--area');
         var node = chart.node();
 
         var margin = {
@@ -900,6 +907,9 @@
         .classed('selected', function(d) {
           return d.slug === params.commodity;
         });
+
+      root.select('.select--locations')
+        .call(relocateLocationSelector, root.select('.commodity.selected .selector'));
 
       return next();
     })
@@ -1577,6 +1587,21 @@
     return function(a, b) {
       return order(a) - order(b);
     };
+  }
+
+  function relocateLocationSelector(list, newParent) {
+    var node = list.node();
+
+    var parent = newParent
+      // .each(function() { console.warn('moving location selector to:', this); })
+      .node();
+
+    if (parent) {
+      parent.appendChild(node);
+      return true;
+    }
+    console.warn('no such parent:', newParentSelector, 'in:', root.node());
+    return false;
   }
 
 })(this);

@@ -84,7 +84,9 @@
     }
 
     var meshes = [];
-    meshes.push(topojson.mesh(onshore, onshore.objects.states));
+    var stateMesh = topojson.mesh(onshore, onshore.objects.states);
+    stateMesh.name = 'onshore states';
+    meshes.push(stateMesh);
 
     var stateProperties = d3.nest()
       .key(function(d) { return d.abbr; })
@@ -111,7 +113,9 @@
             region.properties.offshore = true;
             return region;
           });
-        meshes.push(topojson.mesh(offshore, offshore.objects[key]));
+        var mesh = topojson.mesh(offshore, offshore.objects[key]);
+        mesh.name = 'offshore';
+        meshes.push(mesh);
         return regions.concat(features);
       }, []);
 
@@ -197,7 +201,12 @@
       .data(this.meshes || [])
       .enter()
       .append('path')
-        .attr('class', 'mesh')
+        .attr('class', function(d) {
+          var types = d.name.split(' ');
+          return ['mesh']
+            .concat(types.map(function(t) { return 'mesh--' + t; }))
+            .join(' ');
+        })
         .attr('d', path);
   }
 

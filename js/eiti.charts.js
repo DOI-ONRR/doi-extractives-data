@@ -53,7 +53,7 @@
       return d3.descending(a.sum, b.sum);
     };
 
-    var interpolate = 'cardinal';
+    var interpolate = 'linear';
 
     var voronoi = false;
 

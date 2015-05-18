@@ -90,5 +90,23 @@
     "Hot Springs": {
       "group": "other"
     }
+  },
+
+  "colors": {
+    "oilgas": {
+      "primary": "#A0A539"
+    },
+    "coal": {
+      "primary": "#955DCE"
+    },
+    "minerals": {
+      "primary": "#C63E3A"
+    },
+    "renewables": {
+      "primary": "#177DAB"
+    },
+    "other": {
+      "primary": "#999999"
+    }
   }
 }

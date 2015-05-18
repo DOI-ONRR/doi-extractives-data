@@ -16,11 +16,11 @@ header nav a {
   text-decoration: none;
 }
 
+header nav a:hover {
+  text-decoration: underline;
+}
+
 header h1 {
-  color: transparent;
-  width: 240px;
-  height: 90px;
-  background-image: url(images/eiti-logo.png);
   float: left;
   margin-right: 1em;
 }
@@ -121,7 +121,7 @@ x-slider {
 x-slider label {
   position: absolute;
   left: -50px;
-  top: -.4em;
+  top: -.5em;
   margin-left: -1em;
   text-transform: uppercase;
   color: #666;

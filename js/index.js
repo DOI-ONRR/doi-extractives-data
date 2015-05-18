@@ -1004,18 +1004,18 @@
 
       map.call(onceLoaded, function() {
 
-        var g = svg.select('g.mesh--counties');
+        var g = svg.select('g.mesh.counties');
         if (g.empty()) {
           // console.warn('creating county SVG containers...');
           svg.append('g')
             .attr('class', 'regions counties');
           g = svg.append('g')
-            .attr('class', 'mesh mesh--counties');
+            .attr('class', 'mesh counties');
           g.append('path')
             .attr('class', 'mesh');
         } else {
           // console.warn('county SVG containers already exist; showing');
-          g.style('visibility', null);
+          svg.selectAll('g.counties').style('visibility', null);
         }
 
         var geometries = topology.objects.counties.geometries
@@ -1134,7 +1134,8 @@
     .after(function() {
       // hide counties
       this.root
-        .select('region-map svg g.mesh--counties')
+        .selectAll('region-map svg g.counties')
+          .each(function() { console.warn('hiding:', this); })
           .style('visibility', 'hidden');
       this.root.select('.commodity.selected .select--locations')
         .property('value', '');

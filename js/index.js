@@ -63,7 +63,15 @@
 
           '/revenue': {
             on: showRevenue,
-            '/:commodity': showCommodityRevenue
+            '/:commodity': {
+              on: showCommodityRevenue,
+              '/onshore/:state': {
+                on: showCommodityRevenueByState
+                /*,
+                '/:county': showCommodityRevenueByCounty
+                */
+              }
+            }
           },
 
           '/production': {
@@ -823,13 +831,13 @@
 
             var regions = d3.select(this)
               .selectAll('g.region')
-              .each(function(f) {
-                f.value = revenuesByRegion[f.id] || 0;
+              .classed('active', function(f) {
+                return f.value = revenuesByRegion[f.id];
               });
 
             regions.select('path')
               .style('fill', function(f) {
-                return scale(f.value);
+                return isNaN(f.value) ? '#fff' : scale(f.value);
               });
 
             regions.select('title')
@@ -895,7 +903,7 @@
 
   var showCommodityRevenue = createView()
     .root('#revenue')
-    .params(['commodity'])
+    .params(['commodity', 'region'])
     .main(function showCommodityRevenue(next) {
       var params = this.params;
       console.log('[view] show commodity revenue:', params);
@@ -903,19 +911,228 @@
       var root = this.root
         .classed('commodity--selected', true);
 
-      root.selectAll('section.commodity')
+      var sections = root.selectAll('section.commodity')
         .classed('selected', function(d) {
           return d.slug === params.commodity;
         });
 
+      var feature;
+      var section = this.root.select('.commodity.selected');
+      var map = section.select('region-map');
+      var regions = map.selectAll('g.region');
+      regions.select('a')
+        .each(function(d) {
+          d.href = getFeatureHref(d, '#/revenue/' + params.commodity + '/%');
+        })
+        .attr('xlink:href', dl.accessor('href'));
+      regions
+        .classed('selected', function(d) { return d.id == params.region; })
+        .filter('.selected')
+          .each(function(d) { feature = d; });
+      map.call(zoomTo, feature);
+
       root.select('.select--locations')
-        .call(relocateLocationSelector, root.select('.commodity.selected .selector'));
+        .property('value', '')
+        .call(routeToLocation, '/revenue/' + this.params.commodity)
+        .call(relocateLocationSelector, root.select('.commodity.selected .selector'))
 
       return next();
     })
     .after(function() {
       console.log('[view] after showCommodityRevenue');
       this.root.classed('commodity--selected', false);
+    });
+
+
+  var showCommodityRevenueByState = createView()
+    .root('#revenue')
+    .params(['commodity', 'state'])
+    // share context objects
+    .context(showCommodityRevenue.context())
+    .load(function(done) {
+      var context = this;
+      var offshore = location.hash.indexOf('offshore') > -1;
+      var state = this.params.state;
+
+      return app.load([
+        'geo/us-topology.json'
+      ], function(error, topology) {
+        context.topology = topology;
+
+        var url = 'county/by-state/' + state + '/revenues-yearly.tsv';
+        app.load(url, function(error, countyRevenues) {
+          if (countyRevenues) {
+            // console.log('got county revenues for:', state, countyRevenues.length);
+            countyRevenues.forEach(setCommodityGroup);
+            context.countyRevenues = countyRevenues;
+          } else {
+            console.warn('no county revenues for state:', state);
+            context.countyRevenues = [];
+          }
+          return done();
+        });
+      });
+    }, true) // always load data!
+    .main(function(done) {
+
+      var params = this.params;
+      console.log('[view] state commodity revenues:', params);
+      var state = params.state;
+      var root = this.root;
+
+      var section = root.select('.commodity.selected');
+      var map = section.select('region-map');
+      var topology = this.topology;
+      var countyRevenues = this.countyRevenues;
+
+      var slider = root.select('x-slider')
+        .on('change', throttle(update));
+
+      section.select('.select--locations')
+        .property('value', 'onshore/' + state);
+
+      var svg = map.select('svg');
+
+      var proj = d3.geo.albersCustom();
+      var path = d3.geo.path()
+        .projection(proj);
+
+      var legend = section.select('.legend');
+
+      map.call(onceLoaded, function() {
+
+        var g = svg.select('g.mesh--counties');
+        if (g.empty()) {
+          // console.warn('creating county SVG containers...');
+          svg.append('g')
+            .attr('class', 'regions counties');
+          g = svg.append('g')
+            .attr('class', 'mesh mesh--counties');
+          g.append('path')
+            .attr('class', 'mesh');
+        } else {
+          // console.warn('county SVG containers already exist; showing');
+          g.style('visibility', null);
+        }
+
+        var geometries = topology.objects.counties.geometries
+          .filter(function(d) { return d.properties.state === state; });
+
+        // rewrite the id property
+        geometries.forEach(function(d) {
+          d.id = d.properties.county.replace(/ County$/, '');
+        });
+
+        var objects = {
+          type: 'GeometryCollection',
+          geometries: geometries,
+          bbox: topology.objects.counties.bbox
+        };
+
+        var mesh = topojson.mesh(topology, objects);
+
+        g.select('path')
+          .datum(mesh)
+          .attr('d', path);
+
+        var regions = svg.select('g.regions.counties')
+          .selectAll('g.region')
+          .data(topojson.feature(topology, objects).features);
+
+        regions.exit().remove();
+        var enter = regions.enter().append('g')
+          .attr('class', 'region')
+          .append('a');
+        enter.append('path')
+          .attr('class', 'region county')
+        enter.append('title');
+
+        var baseURL = [
+          '#/revenue',
+          params.commodity,
+          'onshore',
+          params.state
+        ].join('/');
+        regions.select('a')
+          /*
+          .attr('xlink:href', function(d) {
+            return [baseURL, encodeURIComponent(d.id)].join('/');
+          })
+          */
+          .select('path')
+            .attr('d', path);
+
+        update();
+      });
+
+      function update() {
+        var year = slider.property('value');
+
+        var revenuesByCounty = d3.nest()
+          .key(dl.accessor('County'))
+          .rollup(sumRevenues)
+          .map(countyRevenues.filter(function(d) {
+            return d.Year == year;
+          }));
+        // console.log('county revenue for', year, '=', revenuesByCounty);
+
+        var max = d3.max(d3.values(revenuesByCounty));
+        var extent = [0, max];
+        var colors = getCommodityColorRange(params.commodity);
+        // console.log('county revenue:', revenuesByCounty, '->', extent, colors);
+        var scale = d3.scale.quantize()
+          .domain(extent)
+          .range(colors);
+
+        var swatches = legend.selectAll('.swatch')
+          .data(max ? colors.map(function(d, i) {
+            return {
+              color: d,
+              extent: scale.invertExtent(d)
+            };
+          }) : []);
+        swatches.exit().remove();
+        swatches.enter().append('span')
+          .attr('class', 'swatch');
+
+        var formatRange = eiti.format.range(eiti.format.shortDollars, '-');
+        swatches
+          .attr('title', function(d) {
+            return formatRange(d.extent);
+          })
+          .style('background-color', dl.accessor('color'));
+
+        var regions = svg.select('g.regions.counties')
+          .selectAll('g.region')
+          .classed('active', function(d) {
+            // console.log(d.id, revenuesByCounty[d.id]);
+            return d.revenue = revenuesByCounty[d.id];
+          });
+
+        regions.select('path')
+          .style('fill', function(d) {
+            return isNaN(d.revenue) ? '#fff' : scale(d.revenue);
+          });
+
+        var format = eiti.format.shortDollars;
+        regions.select('title')
+          .text(function(d) {
+            return d.revenue
+              ? [d.id, 'County:', format(d.revenue)].join(' ')
+              : d.id + ' County';
+          });
+
+        done();
+      }
+
+    })
+    .after(function() {
+      // hide counties
+      this.root
+        .select('region-map svg g.mesh--counties')
+          .style('visibility', 'hidden');
+      this.root.select('.commodity.selected .select--locations')
+        .property('value', '');
     });
 
 

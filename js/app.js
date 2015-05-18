@@ -24,6 +24,9 @@
       'Renewables'
     ],
 
+    commodityColors: {
+    },
+
     // TODO: this should come from the data
     years: [2004, 2013],
 
@@ -292,6 +295,7 @@
         var slugs = reverseLookup(commodity.groups);
         for (var slug in commodity.groups) {
           app.pathTitles[slug] = commodity.groups[slug];
+          commodity.colors[commodity.groups[slug]] = commodity.colors[slug];
         }
 
         app.commodityGroups = app.commodityGroups.map(function(name) {
@@ -300,6 +304,8 @@
             slug: slugs[name]
           };
         });
+
+        app.commodityColors = commodity.colors;
 
         done();
       });
@@ -668,6 +674,7 @@
 
   var showRevenue = createView()
     .root('#revenue')
+    .params(['commodity'])
     .load(function(next) {
       var context = this;
       var root = this.root;
@@ -696,6 +703,11 @@
 
         // combine the list of offshore and onshore revenues for grouping
         var revenues = onshore.concat(offshore);
+        var nameToSlug = reverseLookup(app.pathTitles);
+        revenues.forEach(function(d) {
+          d.slug = nameToSlug[d.CommodityGroup];
+        });
+
         context.revenues = revenues;
 
         // nest revenues by year then commodity for fast lookups
@@ -745,6 +757,11 @@
       console.log('[view] show revenue');
       var root = this.root;
       var sections = this.sections;
+      var updated = this.updated || false;
+      var params = this.params;
+
+      // onshore and offshore values
+      var revenues = this.revenues;
 
       // {year: {commodity: value}}
       var revenuesByYearCommodity = this.revenuesByYearCommodity;
@@ -769,9 +786,10 @@
           .call(onceLoaded, function(d) {
             var extent = extentsByYearCommodity[year][d.name];
             // console.log('extent:', d.name, extent);
+            var colors = getCommodityColorRange(d.name);
             var scale = d3.scale.quantize()
               .domain(extent)
-              .range(colorbrewer.Purples[9]);
+              .range(colors);
 
             var revenuesByRegion = revenuesByYearCommodityRegion[year][d.name] || {};
             // console.log('revenuesByRegion:', revenuesByRegion);
@@ -792,10 +810,54 @@
                 return format(f.value);
               });
           });
+
+        var chart = d3.select('#revenue-area');
+        var node = chart.node();
+
+        var margin = {
+          left: 40,
+          right: 40,
+          top: 5,
+          bottom: 5
+        };
+
+        var slug = params.commodity;
+        var colors = app.commodityColors;
+        var sort = orderOf(app.commodityGroups.map(dl.accessor('name')));
+        var area = eiti.charts.area()
+          .width(960)
+          .height(100)
+          .margin(margin)
+          .x('Year')
+          .y('slug')
+          .fill(function(d) {
+            return colors[d.key]
+              ? colors[d.key].primary
+              : colors.other.primary;
+          })
+          .value(slug
+            ? function(d) {
+                return d.slug === slug ? +d.Revenue : 0;
+              }
+            : 'Revenue')
+          .sort(function(a, b) {
+            return sort(a.key, b.key);
+          })
+          .stacked(true)
+          .voronoi(true);
+
+        if (updated) {
+          chart = chart.transition()
+            .duration(ZOOM_TIME * 2);
+        }
+        chart.call(area, revenues);
+        console.log('chart:', chart.node());
       }
 
       app.yearSlider.on('change', throttle(update));
       update();
+
+      this.updated = true;
 
       return next();
     })
@@ -1217,10 +1279,12 @@
     return map;
   }
 
-  function reverseLookup(map) {
+  function reverseLookup(map, value) {
+    if (!value) value = dl.identity;
     var reverse = {};
     for (var key in map) {
-      reverse[map[key]] = key;
+      var k = value.call(map, map[key], key);
+      reverse[k] = key;
     }
     return reverse;
   }
@@ -1460,6 +1524,29 @@
       .map(function(k) {
         return fn.call(context || this, d[k], k);
       });
+  }
+
+  function getCommodityColorRange(name) {
+    var color = app.commodityColors[name];
+    if (color.range) return color.range;
+
+    var scale = d3.scale.linear()
+      .domain([0, 8])
+      .range([color.lowest || '#eee', color.primary])
+    return color.scale = d3.range(0, 9).map(scale);
+  }
+
+  function orderOf(items) {
+    var i = 0;
+    var map = items.reduce(function(map, d) {
+      return map.set(d, i++), map;
+    }, d3.map());
+    var order = function(d) {
+      return map.has(d) ? map.get(d) : map.set(d, i++);
+    };
+    return function(a, b) {
+      return order(a) - order(b);
+    };
   }
 
 })(this);

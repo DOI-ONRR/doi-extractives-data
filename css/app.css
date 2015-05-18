@@ -71,7 +71,6 @@ region-map .region path.region {
 }
 
 region-map .region.active path.region {
-  fill: #999;
 }
 
 region-map .region.active:hover path.region {
@@ -87,17 +86,33 @@ region-map .region.selected path.region {
 .commodity--minerals region-map .region.active path.region { fill: #c63e3a; }
 .commodity--renewables region-map .region.active path.region { fill: #177dab; }
 
-p.legend {
+.legend {
   text-align: center;
   margin: 0 0 1em 0;
 }
 
-p.legend .swatch {
+.legend .swatch {
   display: inline-block;
   width: 1em;
   height: 1em;
   vertical-align: baseline;
   margin-bottom: -.1em;
+  position: relative;
+}
+
+.legend--scale .swatch:first-child:before,
+.legend--scale .swatch:last-child:after {
+  display: inline-block;
+  position: absolute;
+  left: 100%;
+  white-space: nowrap;
+  content: attr(title);
+  margin: 0 .5em;
+}
+
+.legend--scale .swatch:first-child:before {
+  left: auto;
+  right: 100%;
 }
 
 .module--location region-map svg {

@@ -842,7 +842,7 @@
         var node = chart.node();
 
         var margin = {
-          left: 40,
+          left: 50,
           right: 15,
           top: 5,
           bottom: 5
@@ -1406,6 +1406,9 @@
       .attr('min', years[0])
       .attr('max', years[1])
       .attr('value', years[1]);
+
+    slider.append('label')
+      .text('Year:');
 
     var x = d3.scale.linear()
       .domain(years)

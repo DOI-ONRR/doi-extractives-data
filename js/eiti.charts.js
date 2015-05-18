@@ -53,7 +53,7 @@
       return d3.descending(a.sum, b.sum);
     };
 
-    var interpolate = 'linear';
+    var interpolate = 'monotone';
 
     var voronoi = false;
 

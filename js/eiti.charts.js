@@ -44,7 +44,15 @@
 
     var axisSpacing = 5;
 
-    var fill = d3.scale.category10();
+    var fill = (function() {
+      var scale = d3.scale.category10();
+      return function(d) { return scale(d.key); };
+    })();
+
+    var sort = function(a, b) {
+      return d3.descending(a.sum, b.sum);
+    };
+
     var interpolate = 'cardinal';
 
     var voronoi = false;
@@ -59,7 +67,11 @@
      */
     var areaChart = function(svg, data) {
       if (data) {
-        svg.datum(data);
+        svg.datum
+          ? svg.datum(data)
+          : svg.each(function() {
+              d3.select(this).datum(data);
+            });
       } else {
         data = svg.datum() || [];
       }
@@ -93,9 +105,7 @@
         d.sum = d3.sum(d, getter('y'));
       });
 
-      layers.sort(function(a, b) {
-        return d3.descending(a.sum, b.sum);
-      });
+      layers.sort(sort);
 
       var aggr = stacked ? d3.sum : d3.max;
       var yd = d3.extent(xd, function(x, i) {
@@ -129,7 +139,7 @@
       var suffix = {K: 'k', M: 'm', G: 'b'};
       var ticks = 3;
       var yFormat = function(n, i) {
-        var p = (i === 0 || i === ticks) ? '$' : '';
+        var p = '$';
         return p + si(n).replace(/[KMG]$/, function(s) {
           return suffix[s] || s;
         });
@@ -143,14 +153,20 @@
           .tickFormat(yFormat);
       }
 
-      svg.append('g')
-        .attr('class', 'axis y')
-        .attr('transform', 'translate(' + [margin.left - axisSpacing, 0] + ')')
+      var gy = svg.select('g.axis.y');
+      if (gy.empty()) {
+        gy = svg.append('g')
+          .attr('class', 'axis y');
+      }
+      gy.attr('transform', 'translate(' + [margin.left - axisSpacing, 0] + ')')
         .call(yAxis);
 
-      svg.append('g')
-        .attr('class', 'axis x')
-        .attr('transform', 'translate(' + [0, height - margin.bottom + axisSpacing] + ')')
+      var gx = svg.select('g.axis.x');
+      if (gx.empty()) {
+        gx = svg.append('g')
+          .attr('class', 'axis x');
+      }
+      gx.attr('transform', 'translate(' + [0, height - margin.bottom + axisSpacing] + ')')
         .call(d3.svg.axis()
           .orient('bottom')
           .scale(x)
@@ -159,12 +175,22 @@
       var stack = d3.layout.stack()
         .order('reverse');
 
-      var g = svg.selectAll('g.layer')
-        .data(stack(layers))
-        .enter()
-        .append('g')
-          .attr('class', 'layer')
-          .append('a');
+      svg.each(function() {
+        var g = d3.select(this)
+          .selectAll('g.layer')
+            .data(stack(layers));
+
+        g.exit().remove();
+
+        g.enter()
+          .append('g')
+            .attr('class', 'layer')
+            .append('a')
+              .append('path')
+                .attr('class', 'area')
+      });
+
+      var g = svg.selectAll('g.layer');
 
       var area = d3.svg.area()
         .interpolate(interpolate)
@@ -180,11 +206,8 @@
           .y1(function(d) { return y(d.y); });
       }
 
-      var paths = g.append('path')
-        .attr('class', 'area')
-        .attr('fill', function(d) {
-          return fill(d.key);
-        })
+      var paths = g.select('path')
+        .attr('fill', fill)
         .attr('d', area);
 
       if (voronoi) {
@@ -210,16 +233,34 @@
             [width - margin.right + axisSpacing, height - margin.bottom + axisSpacing]
           ]);
 
-        var regions = svg.append('g')
-          .attr('class', 'voronoi')
-          .call(vor)
+        var regions = svg.select('g.voronoi');
+        if (regions.empty()) {
+          regions = svg.append('g')
+            .attr('class', 'voronoi');
+        }
+
+        /*
+        regions.call(vor)
           .selectAll('*')
             // NB: you have to do this to revert the data "back"
             // to its pre-voronoi() state
             .datum(function(d) {
               return d.point.value;
             });
+        */
       }
+    };
+
+    /**
+     * Get or set the chart's data.
+     *
+     * @param {Array=} data set the chart's data, or get the
+     *                      previously set data.
+     */
+    areaChart.data = function(_) {
+      if (!arguments.length) return data;
+      data = _;
+      return areaChart;
     };
 
     /**
@@ -236,6 +277,16 @@
     areaChart.margin = function(_) {
       if (!arguments.length) return margin;
       margin = eiti.ui.margin(_);
+      return areaChart;
+    };
+
+    /**
+     * Get or set the chart's layer sort comparator.
+     * @param {Function=} sort
+     */
+    areaChart.sort = function(_) {
+      if (!arguments.length) return sort;
+      sort = d3.functor(_);
       return areaChart;
     };
 
@@ -343,6 +394,18 @@
       return areaChart;
     };
 
+    areaChart.width = function(_) {
+      if (!arguments.length) return width;
+      width = +_;
+      return areaChart;
+    };
+
+    areaChart.height = function(_) {
+      if (!arguments.length) return height;
+      height = +_;
+      return areaChart;
+    };
+
     /**
      * Toggle creation of Voronoi regions for interactivity.
      *
@@ -368,23 +431,30 @@
         .clipExtent(clipExtent);
 
       var region = svg.selectAll('g.region')
-        .data(voronoi(points))
-        .enter()
-        .append('g')
-          .attr('class', 'region')
-          .append('a')
-            .attr('class', 'region');
+        .data(voronoi(points));
 
-      region.append('path')
-        .attr('fill', 'transparent')
+      region.exit().remove();
+
+      var enter = region.enter()
+        .append('g')
+          .attr('class', 'region');
+      var a = enter.append('a')
+        .attr('class', 'region');
+      a.append('path')
+        .attr('fill', 'transparent');
+      a.append('circle')
+        .attr('class', 'point');
+
+      region.select('path')
         .attr('d', function poly(v) {
-          return 'M' + v.join('L') + 'Z';
+          return 'M' + (v ? v.join('L') : '0,0') + 'Z';
         });
 
-      region.append('circle')
-        .attr('class', 'point')
+      region.select('circle')
         .attr('transform', function(d) {
-          var p = [d.point.x, d.point.y].map(Math.round);
+          var p = d
+            ? [d.point.x, d.point.y].map(Math.round)
+            : [-100, -100];
           return 'translate(' + p + ')';
         });
     };

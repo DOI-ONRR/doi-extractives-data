@@ -47,6 +47,14 @@
 
     <main>
 
+      <div class="controls--global container">
+        <!--
+        <x-slider class="year-slider" snap>
+          <div class="handle" tabindex="0"></div>
+        </x-slider>
+        -->
+      </div>
+
       <section id="index" class="primary container">
 
         <section class="module module--commodity">
@@ -70,14 +78,13 @@
 
       </section>
 
-      <div class="controls--global container">
-        <svg id="revenue-area" class="area"></svg>
-        <x-slider id="year-slider" snap>
-          <div class="handle" tabindex="0"></div>
-        </x-slider>
-      </div>
-
       <section id="commodities" class="primary container">
+        <div class="controls">
+          <x-slider class="year-slider" snap>
+            <div class="handle" tabindex="0"></div>
+          </x-slider>
+        </div>
+
         <div class="selector">
           <select class="select--locations">
             <option value="">Select an area</option>
@@ -135,6 +142,12 @@
       </section>
 
       <section id="revenue" class="primary container">
+        <div class="controls">
+          <svg id="revenue-area" class="area"></svg>
+          <x-slider class="year-slider" snap>
+            <div class="handle" tabindex="0"></div>
+          </x-slider>
+        </div>
         <section class="list--commodities">
           <section class="commodity template" style="display: none">
             <h4 class="commodity__title"><a href="#/revenue/{{ slug }}" class="commodity__name"></a> <span class="revenue--total"></span></h4>

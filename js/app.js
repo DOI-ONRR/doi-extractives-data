@@ -106,7 +106,7 @@
       app.description = root.select('.page-description');
       app.breadcrumb = root.select('nav ul.breadcrumb');
 
-      app.yearSlider = initializeYearSlider(root, app.years);
+      app.initializeYearSliders();
       app._routeEnds = [];
 
       // initialize the route, default to the index
@@ -335,6 +335,17 @@
           });
         });
       });
+    },
+
+    initializeYearSliders: function() {
+      var sliders = app.root.selectAll('x-slider')
+        .call(initializeYearSlider, app.years);
+      var sync = function() {
+        sliders.on('change.sync', null);
+        sliders.property('value', this.value);
+        sliders.on('change.sync', sync);
+      };
+      sliders.on('change.sync', sync);
     },
 
     /**
@@ -571,9 +582,10 @@
         .classed('commodity--selected', false);
       var data = context.data;
       var sections = context.sections;
+      var slider = root.select('x-slider');
 
       function update() {
-        var year = app.yearSlider.property('value');
+        var year = slider.property('value');
         root.selectAll('.current-year')
           .text(year);
         var filter = function(d) { return d.Year == year; };
@@ -645,7 +657,7 @@
           });
       }
 
-      app.yearSlider.on('change', throttle(update));
+      slider.on('change', throttle(update));
       update();
       return done();
     })
@@ -766,6 +778,7 @@
       var sections = this.sections;
       var updated = this.updated || false;
       var params = this.params;
+      var slider = root.select('x-slider');
 
       // onshore and offshore values
       var revenues = this.revenues;
@@ -779,7 +792,7 @@
       // console.log('revenues by year, commodity, region:', revenuesByYearCommodityRegion);
 
       function update() {
-        var year = app.yearSlider.property('value');
+        var year = slider.property('value');
         // console.log('[update] show revenue', year);
         var revenuesByCommodity = revenuesByYearCommodity[year];
 
@@ -823,7 +836,7 @@
 
         var margin = {
           left: 40,
-          right: 40,
+          right: 15,
           top: 5,
           bottom: 5
         };
@@ -861,7 +874,7 @@
         chart.call(area, revenues);
       }
 
-      app.yearSlider.on('change', throttle(update));
+      slider.on('change', throttle(update));
       update();
 
       this.updated = true;
@@ -1029,9 +1042,10 @@
         .call(routeToLocation, '/locations');
 
       var revenuesByYear = this.revenues;
+      var slider = root.select('x-slider');
 
       function update() {
-        var year = app.yearSlider.property('value');
+        var year = slider.property('value');
         var revenuesByRegion = revenuesByYear[year];
         var region = map.selectAll('g.region')
           .each(function(d) {
@@ -1051,7 +1065,7 @@
           });
       }
 
-      app.yearSlider.on('change', throttle(update));
+      slider.on('change', throttle(update));
       list.property('value', '');
       update();
       return next();
@@ -1377,18 +1391,18 @@
     return selector;
   }
 
-  function initializeYearSlider(root, years) {
-    var slider = root.select('#year-slider')
-      .attr('min', app.years[0])
-      .attr('max', app.years[1])
-      .attr('value', app.years[1]);
+  function initializeYearSlider(slider, years) {
+    slider
+      .attr('min', years[0])
+      .attr('max', years[1])
+      .attr('value', years[1]);
 
     var x = d3.scale.linear()
       .domain(years)
       .range([0, 100]);
 
     var ticks = slider.selectAll('.tick')
-      .data(d3.range(years[0], app.years[1] + 1))
+      .data(d3.range(years[0], years[1] + 1))
       .enter()
       .append('div')
         .attr('class', 'tick')
@@ -1407,8 +1421,6 @@
     };
     slider.on('change.ticks', throttle(updateTicks));
     slider.each(updateTicks);
-
-    return slider;
   }
 
   function createCommoditySections(root, templateSelector) {

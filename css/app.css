@@ -96,13 +96,13 @@ p.legend .swatch {
   height: 150px;
 }
 
-.controls--global {
+.controls {
   margin: 0 auto 1em;
   padding: 1em;
 }
 
 x-slider {
-  margin: 1em 40px;
+  margin: 1em 15px 1em 40px;
   height: .2em;
   border-radius: 0;
   background: #fff;
@@ -144,23 +144,11 @@ x-slider .tick:after {
     font-weight: bold;
   }
 
-body[data-path="index"] .controls--global {
-  display: none;
-}
-
-.controls--global svg.area {
-  display: none;
-}
-
-body[data-path^="revenue"] .controls--global svg.area {
-  display: block;
-}
-
-.controls--global svg path.area {
+.controls svg.area path.area {
   fill-opacity: 1;
 }
 
-.controls--global svg .axis.x {
+.controls svg.area .axis.x {
   visibility: hidden;
 }
 

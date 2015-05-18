@@ -62,7 +62,7 @@
           <form action="#/locations">
             <p><a href="#/locations">View the map</a> or 
               <select name="location" class="select--locations">
-                <option value="">select a region</option>
+                <option value="">Select an area</option>
               </select>
             </p>
           </form>
@@ -80,7 +80,7 @@
       <section id="commodities" class="primary container">
         <div class="selector">
           <select class="select--locations">
-            <option value="">select a region</option>
+            <option value="">Select an area</option>
           </select>
         </div>
 
@@ -92,8 +92,12 @@
           each commodity group.
           -->
           <section class="template" style="display: none;">
-            <h3><a href="#/commodities/{{ slug }}" class="commodity-title"></a></h3>
-            <!-- <p>A little something about <span class="commodity-title">this commodity</span>.</p> -->
+            <h3 class="commodity__title"><a href="#/commodities/{{ slug }}" class="commodity__name"></a></h3>
+            <div class="detail">
+              <p class="legend"><span class="swatch"></span> Areas with <span class="commodity__name"></span> activity in <span class="current-year"></span></p>
+              <region-map class="regions"></region-map>
+            </div>
+            <!-- <p>A little something about <span class="commodity__name">this commodity</span>.</p> -->
             <table class="stats">
               <caption><span class="current-year"></span></caption>
               <tr>
@@ -117,18 +121,14 @@
                 <td class="stat stat__gdp fpo">FPO</td>
               </tr>
             </table>
-            <div class="detail">
-              <region-map class="regions"></region-map>
-            </div>
           </section>
-
         </section>
       </section>
 
       <section id="locations" class="primary container">
         <div class="selector">
           <select class="select--locations">
-            <option value="">select a region</option>
+            <option value="">Select an area</option>
           </select>
         </div>
         <region-map></region-map>
@@ -136,8 +136,8 @@
 
       <section id="revenue" class="primary container">
         <section class="list--commodities">
-          <section class="template" style="display: none">
-            <h4><a href="#/revenue/{{ slug }}" class="commodity-title"></a> <span class="revenue--total"></span></h4>
+          <section class="commodity template" style="display: none">
+            <h4 class="commodity__title"><a href="#/revenue/{{ slug }}" class="commodity__name"></a> <span class="revenue--total"></span></h4>
             <div class="detail">
               <region-map class="regions"></region-map>
             </div>
@@ -148,7 +148,7 @@
       <section id="production" class="primary container">
         <section class="list--commodities">
           <section class="template" style="display: none">
-            <h4><a href="#/production/{{ slug }}" class="commodity-title"></a></h4>
+            <h4 class="commodity__title"><a href="#/production/{{ slug }}" class="commodity__name"></a></h4>
             <ul class="list--products">
             </ul>
           </section>

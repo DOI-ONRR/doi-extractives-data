@@ -515,14 +515,20 @@
       var root = this.root;
       var list = root.select('.select--locations')
         .call(routeToLocation, '/locations', true);
-      root.select('ul.list--commodities')
+      var item = root.select('ul.list--commodities')
         .selectAll('li')
-        .data(app.commodityGroups)
-        .enter()
+        .data(app.commodityGroups);
+      item.exit().remove();
+      item.enter()
         .append('li')
-          .append('a')
-            .attr('href', dl.template('#/commodities/{{ slug }}'))
-            .text(dl.accessor('name'));
+          .append('a');
+      item
+        .attr('class', function(d) {
+          return ['commodity', 'commodity--' + d.slug].join(' ');
+        })
+        .select('a')
+          .attr('href', dl.template('#/commodities/{{ slug }}'))
+          .text(dl.accessor('name'));
       return next();
     });
 
@@ -561,7 +567,8 @@
     .main(function(done) {
       console.log('[view] list commodities');
       var context = this;
-      var root = context.root;
+      var root = context.root
+        .classed('commodity--selected', false);
       var data = context.data;
       var sections = context.sections;
 
@@ -653,7 +660,7 @@
       console.log('[view] show commodity:', commodity);
 
       var root = this.root
-        .classed('commodity-selected', true);
+        .classed('commodity--selected', true);
 
       var baseURL = '/commodities/' + commodity;
       this.list = root.select('.select--locations')
@@ -846,12 +853,12 @@
           .stacked(true)
           .voronoi(true);
 
+        // FIXME: only do this when the selected commodity changes
         if (updated) {
           chart = chart.transition()
             .duration(ZOOM_TIME * 2);
         }
         chart.call(area, revenues);
-        console.log('chart:', chart.node());
       }
 
       app.yearSlider.on('change', throttle(update));
@@ -874,7 +881,7 @@
       console.log('[view] show commodity revenue:', params);
 
       var root = this.root
-        .classed('commodity-selected', true);
+        .classed('commodity--selected', true);
 
       root.selectAll('section.commodity')
         .classed('selected', function(d) {
@@ -885,7 +892,7 @@
     })
     .after(function() {
       console.log('[view] after showCommodityRevenue');
-      this.root.classed('commodity-selected', false);
+      this.root.classed('commodity--selected', false);
     });
 
 
@@ -968,7 +975,7 @@
       console.log('[view] list commodity products:', params);
 
       var root = this.root
-        .classed('commodity-selected', true);
+        .classed('commodity--selected', true);
 
       root.selectAll('section.commodity')
         .classed('selected', function(d) {
@@ -980,7 +987,7 @@
     .after(function() {
       console.log('[view] after list commodity products');
       this.root
-        .classed('commodity-selected', false);
+        .classed('commodity--selected', false);
     });
 
   var showCommodityProduct = createView()
@@ -1411,15 +1418,26 @@
       .node();
 
     var sections = root.selectAll('section.commodity')
-      .data(app.commodityGroups)
-      .enter()
-      .append(function(d) { return template.cloneNode(true); })
-        .attr('class', 'commodity');
+      .data(app.commodityGroups);
+
+    sections.exit().remove();
+    sections.enter()
+      .append(function(d) { return template.cloneNode(true); });
+
+    sections.attr('class', function(d) {
+      return ['commodity', 'commodity--' + d.slug].join(' ');
+    });
 
     var name = dl.accessor('name');
-    sections.selectAll('.commodity-title')
+    sections.selectAll('.commodity__name')
       .call(rebind)
       .text(name);
+
+    sections.selectAll('.swatch')
+      .call(rebind)
+      .style('background-color', function(d) {
+        return app.commodityColors[d.slug].primary;
+      });
 
     // qualify links with an href attribute,
     // which excludes SVG <a> elements

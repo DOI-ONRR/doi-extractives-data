@@ -57,29 +57,38 @@ region-map svg {
 }
 
 region-map .region path.region {
-  fill: #eee;
+  fill: #fff;
   transition: fill .25s;
 }
 
 region-map .region.active path.region {
-  fill: #69c;
+  fill: #999;
 }
 
 region-map .region.active:hover path.region {
-  fill: #369;
+  fill-opacity: .9;
 }
 
 region-map .region.selected path.region {
-  fill: #9f9;
+  fill: #666;
 }
 
-region-map .region.selected:hover path.region {
-  fill: #393;
+.commodity--oilgas region-map .region.active path.region { fill: #a0a539; }
+.commodity--coal region-map .region.active path.region { fill: #955dce; }
+.commodity--minerals region-map .region.active path.region { fill: #c63e3a; }
+.commodity--renewables region-map .region.active path.region { fill: #177dab; }
+
+p.legend {
+  text-align: center;
+  margin: 0 0 1em 0;
 }
 
-#locations region-map svg {
-  width: 100%;
-  height: 400px;
+p.legend .swatch {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: baseline;
+  margin-bottom: -.1em;
 }
 
 .module--location region-map svg {
@@ -155,19 +164,70 @@ body[data-path^="revenue"] .controls--global svg.area {
   visibility: hidden;
 }
 
-section.commodity {
-  margin: 2em 0;
+section.list--commodities {
+  display: flex;
 }
 
-.commodity-selected .list--commodities .commodity,
+section.commodity {
+  flex: 1;
+  margin-right: 1em;
+}
+
+.commodity--selected .list--commodities .commodity,
 .list--commodities .commodity .detail {
   display: none;
 }
 
-.commodity-selected .list--commodities .commodity.selected,
-.commodity-selected .list--commodities .commodity.selected .detail {
+.commodity--selected .list--commodities .commodity.selected,
+.commodity--selected .list--commodities .commodity.selected .detail {
   display: block;
 }
+
+.commodity .commodity__title {
+  padding: .5em;
+  color: #fff;
+  background: #999;
+  border-radius: .3em;
+}
+
+.commodity .commodity__title a {
+  color: inherit !important;
+}
+
+.commodity--oilgas .commodity__title { background: #a0a539; }
+.commodity--coal .commodity__title { background: #955dce; }
+.commodity--minerals .commodity__title { background: #c63e3a; }
+.commodity--renewables .commodity__title { background: #177dab; }
+
+ul.list--commodities,
+ul.list--commodities li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.list--commodities {
+  display: flex;
+}
+
+ul.list--commodities li {
+  flex: 1;
+  margin-right: 1em;
+}
+
+ul.list--commodities li a {
+  display: block;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  padding: .5em .8em;
+  border-radius: .3em;
+}
+
+ul.list--commodities li.commodity--oilgas a { background: #a0a539; }
+ul.list--commodities li.commodity--coal a { background: #955dce; }
+ul.list--commodities li.commodity--minerals a { background: #c63e3a; }
+ul.list--commodities li.commodity--renewables a { background: #177dab; }
 
 table.stats {
   width: 100%;
@@ -190,6 +250,19 @@ table.stats .fpo {
   margin: 1em 0;
 }
 
+#locations region-map svg {
+  width: 100%;
+  height: 400px;
+}
+
+#commodities .selector {
+  display: none;
+}
+
+#commodities.commodity--selected .selector {
+  display: block;
+}
+
 #breadcrumb {
   margin-bottom: 2em;
 }
@@ -197,5 +270,11 @@ table.stats .fpo {
 @media (min-width: 640px) {
   x-slider .tick .label {
     font-size: .8em;
+  }
+
+  .list--commodities .commodity .detail {
+    float: right;
+    width: 66%;
+    margin-top: 1em;
   }
 }

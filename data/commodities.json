@@ -94,16 +94,16 @@
 
   "colors": {
     "oilgas": {
-      "primary": "#A0A539"
+      "primary": "#a0a539"
     },
     "coal": {
-      "primary": "#955DCE"
+      "primary": "#955dce"
     },
     "minerals": {
-      "primary": "#C63E3A"
+      "primary": "#c63e3a"
     },
     "renewables": {
-      "primary": "#177DAB"
+      "primary": "#177dab"
     },
     "other": {
       "primary": "#999999"

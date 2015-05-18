@@ -88,12 +88,12 @@ region-map .region.selected:hover path.region {
 }
 
 .controls--global {
-  margin: 2em auto;
+  margin: 0 auto 1em;
   padding: 1em;
 }
 
 x-slider {
-  margin: 1em;
+  margin: 1em 40px;
   height: .2em;
   border-radius: 0;
   background: #fff;
@@ -137,6 +137,22 @@ x-slider .tick:after {
 
 body[data-path="index"] .controls--global {
   display: none;
+}
+
+.controls--global svg.area {
+  display: none;
+}
+
+body[data-path^="revenue"] .controls--global svg.area {
+  display: block;
+}
+
+.controls--global svg path.area {
+  fill-opacity: 1;
+}
+
+.controls--global svg .axis.x {
+  visibility: hidden;
 }
 
 section.commodity {

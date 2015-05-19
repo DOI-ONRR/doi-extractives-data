@@ -158,6 +158,49 @@ ol.legend li {
     padding-left: .5em;
   }
 
+
+div.tooltip,
+div.tooltip:after,
+div.tooltip * {
+  pointer-events: none;
+}
+
+div.tooltip {
+  color: #fff;
+  font-size: 14px;
+  background: #000;
+  padding: .2em .5em .3em;
+  border-radius: 5px;
+  white-space: nowrap;
+  margin-top: -5px;
+}
+
+  div.tooltip:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    border: 5px solid transparent;
+    border-top-color: #000;
+    margin-left: -5px;
+  }
+
+.voronoi .region {
+  visibility: hidden;
+  pointer-events: all;
+}
+
+.voronoi .region circle {
+  stroke: #fff;
+  stroke-width: 2;
+}
+
+.voronoi .region:focus,
+.voronoi .region:hover {
+  visibility: visible;
+}
+
 @media (min-width: 960px) {
   .container {
     padding-left: 0;

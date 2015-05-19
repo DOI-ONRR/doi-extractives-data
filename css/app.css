@@ -74,6 +74,7 @@ region-map .region path.region {
 }
 
 region-map .region.active path.region {
+  fill: #666;
 }
 
 region-map .region.active:hover path.region {

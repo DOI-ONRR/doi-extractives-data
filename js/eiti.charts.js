@@ -218,7 +218,7 @@
               ? v.y0 + v.y
               : v.y;
             points.push({
-              data: d,
+              // data: d,
               value: v,
               x: x(v.x),
               y: y(_y)
@@ -239,15 +239,14 @@
             .attr('class', 'voronoi');
         }
 
-        /*
         regions.call(vor)
           .selectAll('*')
             // NB: you have to do this to revert the data "back"
             // to its pre-voronoi() state
-            .datum(function(d) {
-              return d.point.value;
-            });
-        */
+            .each(function(d) {
+              d3.select(this)
+                .datum(d && d.point ? d.point.value : d);
+            })
       }
     };
 
@@ -430,20 +429,25 @@
         .y(function(d) { return d.y; })
         .clipExtent(clipExtent);
 
-      var region = svg.selectAll('g.region')
-        .data(voronoi(points));
+      svg.each(function() {
+        var region = d3.select(this)
+          .selectAll('g.region')
+            .data(voronoi(points));
 
-      region.exit().remove();
+        region.exit().remove();
 
-      var enter = region.enter()
-        .append('g')
+        var enter = region.enter()
+          .append('g')
+            .attr('class', 'region');
+        var a = enter.append('a')
           .attr('class', 'region');
-      var a = enter.append('a')
-        .attr('class', 'region');
-      a.append('path')
-        .attr('fill', 'transparent');
-      a.append('circle')
-        .attr('class', 'point');
+        a.append('path')
+          .attr('fill', 'transparent');
+        a.append('circle')
+          .attr('class', 'point');
+      });
+
+      var region = svg.selectAll('g.region');
 
       region.select('path')
         .attr('d', function poly(v) {

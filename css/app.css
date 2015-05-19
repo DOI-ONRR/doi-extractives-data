@@ -67,14 +67,16 @@ region-map svg {
 
 region-map .region path.region {
   fill: #fff;
-  transition: fill .25s;
+  fill-opacity: 1;
+  transition:
+    fill .25s,
+    fill-opacity .5s;
 }
 
 region-map .region.active path.region {
 }
 
 region-map .region.active:hover path.region {
-  fill-opacity: .9;
 }
 
 region-map .region.selected path.region {
@@ -85,6 +87,11 @@ region-map .region.selected path.region {
 .commodity--coal region-map .region.active path.region { fill: #955dce; }
 .commodity--minerals region-map .region.active path.region { fill: #c63e3a; }
 .commodity--renewables region-map .region.active path.region { fill: #177dab; }
+
+.region--selected g.region.onshore path,
+.region--selected g.region.offshore path {
+  fill-opacity: .1;
+}
 
 .legend {
   text-align: center;

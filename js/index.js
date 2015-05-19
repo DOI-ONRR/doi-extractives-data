@@ -70,6 +70,9 @@
                 /*,
                 '/:county': showCommodityRevenueByCounty
                 */
+              },
+              '/offshore/:region': {
+                on: showCommodityRevenueByOffshoreRegion // FIXME
               }
             }
           },
@@ -650,7 +653,7 @@
           .call(onceLoaded, function(d) {
             var revenuesByRegion = revenuesByCommodity[d.name] || {};
             var regions = d3.select(this)
-              .selectAll('g.region')
+              .selectAll('g.region:not(.county)')
                 .each(function(f) {
                   return f.revenue = revenuesByRegion[f.id];
                 })
@@ -786,6 +789,7 @@
     })
     .main(function showRevenue(next) {
       console.log('[view] show revenue');
+      var context = this;
       var root = this.root;
       var sections = this.sections;
       var updated = this.updated || false;
@@ -884,6 +888,8 @@
           .stacked(true)
           .voronoi(true);
 
+        context.area = area;
+
         // FIXME: only do this when the selected commodity changes
         if (updated) {
           chart = chart.transition()
@@ -922,7 +928,7 @@
       var feature;
       var section = this.root.select('.commodity.selected');
       var map = section.select('region-map');
-      var regions = map.selectAll('g.region');
+      var regions = map.selectAll('g.region:not(.county)');
       regions.select('a')
         .each(function(d) {
           d.href = getFeatureHref(d, '#/revenue/' + params.commodity + '/%');
@@ -950,8 +956,8 @@
   var showCommodityRevenueByState = createView()
     .root('#revenue')
     .params(['commodity', 'state'])
-    // share context objects
-    .context(showCommodityRevenue.context())
+    // share context objects with the revenue view
+    .context(showRevenue.context())
     .load(function(done) {
       var context = this;
       var offshore = location.hash.indexOf('offshore') > -1;
@@ -967,6 +973,10 @@
           if (countyRevenues) {
             // console.log('got county revenues for:', state, countyRevenues.length);
             countyRevenues.forEach(setCommodityGroup);
+            var nameToSlug = reverseLookup(app.pathTitles);
+            countyRevenues.forEach(function(d) {
+              d.slug = nameToSlug[d.CommodityGroup];
+            });
             context.countyRevenues = countyRevenues;
           } else {
             console.warn('no county revenues for state:', state);
@@ -980,13 +990,23 @@
 
       var params = this.params;
       console.log('[view] state commodity revenues:', params);
+      console.warn('context:', this);
       var state = params.state;
-      var root = this.root;
+      var root = this.root
+        .classed('region--selected', true);
+
+      // update the revenue chart with county revenues
+      var chart = root.select('svg.revenue--area');
+      chart.transition()
+        .duration(ZOOM_TIME * 2)
+        .call(this.area, this.countyRevenues);
 
       var section = root.select('.commodity.selected');
       var map = section.select('region-map');
       var topology = this.topology;
       var countyRevenues = this.countyRevenues;
+
+      var format = eiti.format.shortDollars;
 
       var slider = root.select('x-slider')
         .on('change', throttle(update));
@@ -1003,7 +1023,6 @@
       var legend = section.select('.legend');
 
       map.call(onceLoaded, function() {
-
         var g = svg.select('g.mesh.counties');
         if (g.empty()) {
           // console.warn('creating county SVG containers...');
@@ -1044,7 +1063,7 @@
 
         regions.exit().remove();
         var enter = regions.enter().append('g')
-          .attr('class', 'region')
+          .attr('class', 'region county')
           .append('a');
         enter.append('path')
           .attr('class', 'region county')
@@ -1071,12 +1090,18 @@
       function update() {
         var year = slider.property('value');
 
+        var subset = countyRevenues.filter(function(d) {
+          return d.Year == year && d.slug === params.commodity;
+        });
+
+        var total = sumRevenues(subset);
+        section.selectAll('.revenue--total')
+          .text(format(total));
+
         var revenuesByCounty = d3.nest()
           .key(dl.accessor('County'))
           .rollup(sumRevenues)
-          .map(countyRevenues.filter(function(d) {
-            return d.Year == year;
-          }));
+          .map(subset);
         // console.log('county revenue for', year, '=', revenuesByCounty);
 
         var max = d3.max(d3.values(revenuesByCounty));
@@ -1086,6 +1111,12 @@
         var scale = d3.scale.quantize()
           .domain(extent)
           .range(colors);
+
+        if (max) {
+          legend.text('');
+        } else {
+          legend.text('(no revenues in ' + year + ')');
+        }
 
         var swatches = legend.selectAll('.swatch')
           .data(max ? colors.map(function(d, i) {
@@ -1117,7 +1148,6 @@
             return isNaN(d.revenue) ? '#fff' : scale(d.revenue);
           });
 
-        var format = eiti.format.shortDollars;
         regions.select('title')
           .text(function(d) {
             return [
@@ -1134,6 +1164,7 @@
     .after(function() {
       // hide counties
       this.root
+        .classed('region--selected', false)
         .selectAll('region-map svg g.counties')
           .each(function() { console.warn('hiding:', this); })
           .style('visibility', 'hidden');
@@ -1141,6 +1172,29 @@
         .property('value', '');
     });
 
+  var showCommodityRevenueByOffshoreRegion = createView()
+    .root('#revenue')
+    .params(['commodity', 'region'])
+    .context(showRevenue.context())
+    .main(function(next) {
+      var region = this.params.region;
+      this.root.select('.commodity.selected .select--locations')
+        .property('value', 'offshore/' + region);
+
+      // update the revenue chart with offshore revenues
+      var chart = this.root.select('svg.revenue--area');
+      chart.transition()
+        .duration(ZOOM_TIME * 2)
+        .call(this.area, this.revenues.filter(function(d) {
+          return d.Region === region;
+        }));
+
+      next();
+    })
+    .after(function() {
+      this.root.select('.commodity.selected .select--locations')
+        .property('value', '');
+    });
 
   var showProduction = createView()
     .root('#production')
@@ -1280,7 +1334,7 @@
       function update() {
         var year = slider.property('value');
         var revenuesByRegion = revenuesByYear[year];
-        var region = map.selectAll('g.region')
+        var region = map.selectAll('g.region:not(.county)')
           .each(function(d) {
             d.href = getFeatureHref(d, '#/locations/%');
             d.selected = d.href === location.hash;
@@ -1828,6 +1882,20 @@
     }
     console.warn('no such parent:', newParentSelector, 'in:', root.node());
     return false;
+  }
+
+  /*
+   * generate an "empty" array of revenue data, with one point for each year
+   * per commodity
+   */
+  function getNoRevenues() {
+    return app.years.reduce(function(rows, year) {
+      return rows.concat(
+        app.commodityGroups.map(function(d) {
+          return {Year: year, slug: d.slug, CommodityGroup: d.name, Revenue: 0};
+        })
+      );
+    }, []);
   }
 
 })(this);

@@ -890,12 +890,38 @@
 
         context.area = area;
 
+        var t = chart;
         // FIXME: only do this when the selected commodity changes
         if (updated) {
-          chart = chart.transition()
+          t = t.transition()
             .duration(ZOOM_TIME * 2);
         }
-        chart.call(area, revenues);
+        t.call(area, revenues);
+
+        /*
+        var tip = eiti.ui.tip()
+          .direction('n')
+          .attr('class', 'tooltip')
+          .html(function(d) {
+            var name = app.pathTitles[d.key];
+            return [
+              name, ': ', eiti.format.shortDollars(d.y || 0)
+            ].join('');
+          })
+          .target(function() {
+            return this.querySelector('circle');
+          });
+        chart.call(tip);
+
+        context.tip = tip;
+        tip.hide();
+
+        chart.selectAll('g.region')
+          .on('mouseover', tip.show)
+          .on('mouseout', tip.hide)
+          .select('circle')
+            .attr('r', 5);
+        */
       }
 
       slider.on('change', throttle(update));
@@ -1000,6 +1026,16 @@
       chart.transition()
         .duration(ZOOM_TIME * 2)
         .call(this.area, this.countyRevenues);
+
+      /*
+      var tip = this.tip;
+      tip.hide();
+      chart.selectAll('g.region')
+        .on('mouseover', tip.show)
+        .on('mouseout', tip.hide)
+        .select('circle')
+          .attr('r', 5);
+      */
 
       var section = root.select('.commodity.selected');
       var map = section.select('region-map');

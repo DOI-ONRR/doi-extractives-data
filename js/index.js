@@ -977,10 +977,10 @@
             countyRevenues.forEach(function(d) {
               d.slug = nameToSlug[d.CommodityGroup];
             });
-            context.countyRevenues = countyRevenues;
+            context.countyRevenues = countyRevenues.concat(getNoRevenues());
           } else {
             console.warn('no county revenues for state:', state);
-            context.countyRevenues = [];
+            context.countyRevenues = getNoRevenues();
           }
           return done();
         });
@@ -1311,7 +1311,7 @@
         onshore.forEach(setStateRegion);
         offshore.forEach(setOffshoreRegion);
 
-        var rows = onshore.concat(offshore);
+        var rows = onshore.concat(offshore).concat(getNoRevenues());
 
         context.revenues = d3.nest()
           .key(dl.accessor('Year'))

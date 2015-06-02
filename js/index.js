@@ -1202,7 +1202,7 @@
       this.root
         .classed('region--selected', false)
         .selectAll('region-map svg g.counties')
-          .each(function() { console.warn('hiding:', this); })
+          // .each(function() { console.warn('hiding:', this); })
           .style('visibility', 'hidden');
       this.root.select('.commodity.selected .select--locations')
         .property('value', '');

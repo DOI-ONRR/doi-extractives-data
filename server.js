@@ -1,6 +1,4 @@
 #!/usr/bin/env node
-require('babel/register');
-
 var Festoon = require('festoon');
 var express = require('express');
 var cons = require('consolidate');

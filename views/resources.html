@@ -1,0 +1,6 @@
+<h2>Resources</h2>
+<ul>
+{% for slug, name in resources.groups %}
+  <li><a href="/resources/{{ slug }}">{{ name }}</a></li>
+{% endfor %}
+</ul>

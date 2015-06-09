@@ -20,8 +20,10 @@ var express = require('express');
 var cons = require('consolidate');
 var extend = require('extend');
 var assert = require('assert');
+var fs = require('fs');
 var Festoon = require('festoon');
 
+// web server helper functions
 var helpers = require('./lib/server-helpers');
 var view = helpers.view;
 var redirect = helpers.redirect;
@@ -163,10 +165,21 @@ app.get('/locations/offshore/:area',
 
 app.listen(process.env.PORT || 4000, function(error) {
   if (error) return console.error('error:', error);
-  var listener = this;
-  var addr = listener.address();
+  var server = this;
+  var addr = server.address();
   console.log('listening @ http://%s:%d', '127.0.0.1', addr.port);
   process.on('exit', function() {
-    listener.close();
+    server.close();
   });
 });
+
+if (options['ssl-cert'] && options['ssl-key']) {
+  var https = require('https');
+  var httpsServer = https.createServer({
+    key: fs.readFileSync(options['ssl-key']),
+    cert: fs.readFileSync(options['ssl-cert'])
+  }, app).listen(4001);
+  process.on('exit', function() {
+    httpsServer.close();
+  });
+}

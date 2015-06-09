@@ -1,0 +1,28 @@
+<h2>Onshore / {{ state.meta.name }}</h2>
+
+{% macro table(values, columns, caption='') %}
+  {% set values = values|sort('Year')|sort('Commodity') %}
+  <table>
+    <caption>{{ caption }}</caption>
+    <thead>
+      <tr>
+      {% for column in columns %}
+        <th>{{ column }}</th>
+      {% endfor %}
+      </tr>
+    </thead>
+    <tbody>
+      {% for row in values %}
+      <tr>
+      {% for column in columns %}
+        <td>{{ row[column] }}</td>
+      {% endfor %}
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endmacro %}
+
+{{ table(state.revenues, ['Year', 'Commodity', 'Revenue'], caption='Revenues') }}
+
+{{ table(state.production, ['Year', 'Commodity', 'Product', 'Volume'], caption='Production Volume') }}

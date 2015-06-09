@@ -26,6 +26,7 @@ var data = new Festoon({
     // single resource: {slug, name, colors, (sub-)commodities}
     resource: Festoon.transform('resources', function(resources, params) {
       var slug = params.resource;
+      if (!resources.groups[slug]) return null;
       return {
         slug: slug,
         name: resources.groups[slug],
@@ -106,6 +107,7 @@ app.use(data.decorate(['resources', 'locations']));
 
 // static assets
 app.use('/static', express.static(__dirname + '/static'));
+app.use('/data', express.static(__dirname + '/output'));
 
 // index
 app.get('/', view('index'));

@@ -131,7 +131,15 @@ var data = new Festoon({
 
 
 // common data
-app.use(data.decorate(['resources', 'locations']));
+app.use(function(req, res, next) {
+  // make "request" available in templates
+  // e.g.:
+  // {{ request.params.state }}
+  // {{ request.query.search }}
+  // "{{ request.path }}?foo=bar"
+  res.locals.request = req;
+  next();
+}, data.decorate(['resources', 'locations']));
 
 // static assets
 app.use('/static', express.static(__dirname + '/static'));

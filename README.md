@@ -2,9 +2,9 @@
 This is the development branch of the v2 [US EITI](https://useiti.doi.gov) site.
 
 ## Getting Started
-1. Get [Node.js](https://nodejs.org).
+1. Get [Node.js](https://nodejs.org)
 2. Install the dependencies with `npm install`
-3. Run the web server with `npm start`.
+3. Run the web server with `npm start`
 
 # Data!
 This branch was originally created for data collection and transformation.

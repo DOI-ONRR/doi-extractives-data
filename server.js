@@ -89,6 +89,15 @@ var data = new Festoon({
       })
     },
 
+    county: {
+      name: function(params, done) {
+        return done(null, params.county);
+      },
+      revenues: Festoon.transform.filter('countyRevenues', function(d) {
+        return d.County === this.county;
+      })
+    },
+
     // offshore planning areas
     offshoreAreas: './input/geo/offshore/areas.tsv',
     offshoreArea: {
@@ -143,7 +152,7 @@ app.get('/locations',
 
 app.get('/locations/onshore', redirect('/locations'));
 
-// state page
+// state data
 app.get('/locations/onshore/:state.json',
   data.decorate('state'),
   api('state'));
@@ -157,6 +166,11 @@ app.get('/locations/onshore/:state/revenues.(csv|json)',
 app.get('/locations/onshore/:state',
   data.decorate('state'),
   view('state'));
+
+// state page
+app.get('/locations/onshore/:state/:county',
+  data.decorate(['state', 'county']),
+  view('county'));
 
 // offshore area page
 app.get('/locations/offshore/:area',

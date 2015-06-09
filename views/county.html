@@ -1,0 +1,8 @@
+
+<h2><a href="/locations">Locations</a>
+  / <a href="/locations/onshore/{{ state.meta.abbr }}">{{ state.meta.name }}</a>
+  / {{ county.name }} County</h2>
+
+{% from 'views/macros.html' import table %}
+
+{{ table(state.revenues, ['Year', 'Commodity', 'Revenue'], caption='Revenues') }}

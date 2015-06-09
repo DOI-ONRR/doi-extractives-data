@@ -23,6 +23,10 @@ JS_FILES ?= js/eiti*.js
 
 all: $(FILES) geo svg css/fonts
 
+# generate self-signed SSL certificates for testing HTTPS
+certs:
+	openssl req -x509 -newkey rsa:2048 -keyout key.pem -out cert.pem -nodes
+
 output/national/revenues-yearly.tsv: output/state/revenues-yearly.tsv output/offshore/revenues-yearly.tsv
 	mkdir -p $(dir $@)
 	bin/sum.js \
@@ -206,4 +210,4 @@ clean-fonts:
 distclean: clean clean-fonts
 	cd input/geo/offshore && make distclean
 
-.PHONY: county-revenues-nested geo svg
+.PHONY: county-revenues-nested geo svg certs

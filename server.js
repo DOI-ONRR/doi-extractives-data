@@ -1,4 +1,21 @@
 #!/usr/bin/env node
+var yargs = require('yargs')
+  .usage('$0 [options]')
+  .describe('port', 'The port on which to listen (or process.env.PORT)')
+  .default('port', 4000)
+  .describe('ssl-cert', 'Specify the SSL certificate flie to use for HTTPS')
+  .describe('ssl-key', 'Specify the SSL key file to use for SSL')
+  .alias('h', 'help');
+
+// command line arguments
+var options = yargs.argv;
+if (options.help) {
+  return yargs.showHelp();
+}
+
+// positional arguments
+var argc = options._;
+
 var express = require('express');
 var cons = require('consolidate');
 var extend = require('extend');

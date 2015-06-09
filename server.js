@@ -23,6 +23,20 @@ var data = new Festoon({
     // master resources (commodities) list, plus other metadata
     resources:  './data/commodities.json',
 
+    // single resource: {slug, name, colors, (sub-)commodities}
+    resource: Festoon.transform('resources', function(resources, params) {
+      var slug = params.resource;
+      return {
+        slug: slug,
+        name: resources.groups[slug],
+        colors: resources.colors[slug],
+        commodities: Object.keys(resources.commodities)
+          .map(function(name) {
+            return resources.commodities[name].group === slug;
+          })
+      };
+    }),
+
     locations: {
       onshore: '#states',
       offshore: '#offshoreAreas'
@@ -95,6 +109,12 @@ app.use('/static', express.static(__dirname + '/static'));
 
 // index
 app.get('/', view('index'));
+
+// index
+app.get('/resources', view('resources'));
+app.get('/resources/:resource',
+  data.decorate('resource'),
+  view('resource'));
 
 // locations page
 app.get('/locations',

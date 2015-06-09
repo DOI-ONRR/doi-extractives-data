@@ -4,3 +4,4 @@ node_modules
 .env
 bower.json
 bower_components
+*.pem

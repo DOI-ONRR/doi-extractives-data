@@ -1,24 +1,25 @@
-# EITI Data Collection
-This branch is for data collection and transformation. Everything here uses
-[Node](https://nodejs.org/), and the dependencies are managed with
-[npm](https://www.npmjs.com/). To get started, run:
+# US EITI v2
+This is the development branch of the v2 [US EITI](https://useiti.doi.gov) site.
 
-```sh
-npm install
-```
+## Getting Started
+1. Get [Node.js](https://nodejs.org).
+2. Install the dependencies with `npm install`
+3. Run the web server with `npm start`.
 
-This will install all the data collection and transformation dependencies. To
-rebuild the files, run:
+# Data!
+This branch was originally created for data collection and transformation.
+These tools also use [Node](https://nodejs.org/), and the dependencies are
+managed with [npm](https://www.npmjs.com/). To rebuild the files, run:
 
 ```
 make -B
 ```
 
-Take a look at the [Makefile](Makefile) and the [bin directory](bin/) if you
-want to see how the sausage is made.
+Check out the [Makefile](Makefile) and the [bin directory](bin/) if you want to
+see how the sausage is made.
 
 ## Tests
-If you wish to run the [tests](test/), run:
+To run the tests:
 
 ```sh
 npm install --dev

@@ -115,6 +115,9 @@ var data = new Festoon({
       })
     },
 
+    areas: '#offshoreAreas',
+    area: '#offshoreArea',
+
     // offshore planning areas
     offshoreAreas: './input/geo/offshore/areas.tsv',
     offshoreArea: {
@@ -127,7 +130,7 @@ var data = new Festoon({
       }),
       // {{ area.production[] }}
       // TODO: Area column should be a 3-letter ID, not name
-      production: Festoon.transform.filter('stateProduction', function(d) {
+      production: Festoon.transform.filter('offshoreProduction', function(d) {
         return d.Area === this.area;
       })
     },
@@ -205,7 +208,8 @@ app.get('/locations/onshore/:state/:county',
 
 // offshore area page
 app.get('/locations/offshore/:area',
-  data.decorate({area: 'offshoreArea'}),
+  // XXX: {area: 'offshoreArea'} should work!
+  data.decorate('area'),
   view('offshore-area'));
 
 app.listen(process.env.PORT || 4000, function(error) {

@@ -1,2 +1,16 @@
+{% extends 'base.html' %}
 
-<h2>Offshore / {{ area.meta.name }}</h2>
+{% block breadcrumb %}
+  <li><a href="/locations">Locations</a></li>
+  <li>{{ area.meta.name }}</li>
+{% endblock %}
+
+{% block main %}
+  <section id="offshore-area" class="container">
+    {% from 'macros.html' import table %}
+
+    {{ table(area.revenues, ['Year', 'Commodity', 'Revenue'], caption='Revenues') }}
+
+    {{ table(area.production, ['Year', 'Commodity', 'Product', 'Volume'], caption='Production Volume') }}
+  </section>
+{% endblock %}

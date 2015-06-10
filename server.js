@@ -142,7 +142,9 @@ app.use(function(req, res, next) {
 }, data.decorate(['resources', 'locations']));
 
 // static assets
-app.use('/static', express.static(__dirname + '/static'));
+app.use('/js', express.static(__dirname + '/js'));
+app.use('/js/lib', express.static(__dirname + '/lib'));
+app.use('/css', express.static(__dirname + '/css'));
 app.use('/data', express.static(__dirname + '/output'));
 
 // index

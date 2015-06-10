@@ -87,6 +87,11 @@ output/offshore/volumes-yearly.tsv: input/onrr/offshore-volumes.tsv
 		--count Count \
 		$< > $@
 
+output/county/counties.tsv: output/geo/us-topology.json
+	bin/extract-properties.js --layer counties $< | \
+		datex --map '{state: state, name: county, FIPS: FIPS}' | \
+		tito --write tsv > $@
+
 output/county/revenues-yearly.tsv: input/onrr/county-revenues.tsv
 	mkdir -p $(dir $@)
 	$(tito) --read tsv $< \

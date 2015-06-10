@@ -33,6 +33,9 @@ var app = express();
 
 // render html with nunjucks
 var env = nunjucks.configure(__dirname + '/views');
+var filters = require('./lib/server-filters');
+filters.register(env);
+
 app.engine('html', env.render.bind(env));
 app.set('view engine', 'html');
 
@@ -151,6 +154,10 @@ app.use(function(req, res, next) {
   // {{ request.query.search }}
   // "{{ request.path }}?foo=bar"
   res.locals.request = req;
+
+  // make filters available as template functions
+  extend(res.locals, filters.filters);
+
   next();
 }, data.decorate(['resources', 'locations']));
 

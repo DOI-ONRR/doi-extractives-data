@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "async": "^0.9.0",
+    "colors": "^1.1.0",
     "d3": "^3.5.5",
     "data-expression": "^0.3.1",
     "datalib": "^1.1.16",
@@ -35,7 +36,7 @@
   "scripts": {
     "test": "mocha",
     "start": "node server.js",
-    "watch": "watchy -w server.js,lib -- node server.js"
+    "watch": "watchy -w *.js,lib,node_modules -- node server.js"
   },
   "repository": {
     "type": "git",

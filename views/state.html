@@ -1,9 +1,23 @@
+{% extends 'base.html' %}
 
-<h2><a href="/locations">Locations</a>
-  / {{ state.meta.name }}</h2>
+{% block breadcrumb %}
+  <li><a href="/locations">Locations</a></li>
+  <li>{{ state.meta.name }}</li>
+{% endblock %}
 
-{% from 'views/macros.html' import table %}
+{% block main %}
+  <section id="state" class="container">
+    {% from 'macros.html' import table %}
 
-{{ table(state.revenues, ['Year', 'Commodity', 'Revenue'], caption='Revenues') }}
+    <h3>Counties</h3>
+    <ul>
+    {% for county in counties %}
+      <li><a href="{{ request.path }}/{{ county.name }}">{{ county.name }}</a></li>
+    {% endfor %}
+    </ul>
 
-{{ table(state.production, ['Year', 'Commodity', 'Product', 'Volume'], caption='Production Volume') }}
+    {{ table(state.revenues, ['Year', 'Commodity', 'Revenue'], caption='Revenues') }}
+
+    {{ table(state.production, ['Year', 'Commodity', 'Product', 'Volume'], caption='Production Volume') }}
+  </section>
+{% endblock %}

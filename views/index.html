@@ -1,25 +1,24 @@
-<h1>US EITI</h1>
+{% extends 'base.html' %}
 
-<h2>Resources</h2>
-<ul>
-{% for slug, name in resources.groups %}
-  <li><a href="/resources/{{ slug }}">{{ name }}</a></li>
-{% endfor %}
-</ul>
+{% from 'macros.html' import location_selector %}
 
-<form>
-  <p><label>Select a location:
-    <select id="location" onchange="window.location = '/locations/' + this.value">
-      <optgroup label="States">
-        {% for state in locations.onshore %}
-        <option value="onshore/{{ state.abbr }}">{{ state.name }}</option>
-        {% endfor %}
-      </optgroup>
-      <optgroup label="Offshore Areas">
-        {% for area in locations.offshore %}
-        <option value="offshore/{{ area.id }}">{{ area.name }}</option>
-        {% endfor %}
-      </optgroup>
-    </select>
-  </p>
-</form>
+{% block main %}
+  <section id="index" class="container">
+
+    <h2>Resources</h2>
+    <ul>
+    {% for slug, name in resources.groups %}
+      <li><a href="/resources/{{ slug }}">{{ name }}</a></li>
+    {% endfor %}
+    </ul>
+
+    <form>
+      <p>
+        <label>Select a location:
+          {{ location_selector(locations=locations) }}
+        </label>
+      </p>
+    </form>
+
+  </section>
+{% endblock %}

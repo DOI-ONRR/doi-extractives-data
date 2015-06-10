@@ -1,8 +1,11 @@
+{% extends 'base.html' %}
 
-<h2><a href="/locations">Locations</a>
-  / <a href="/locations/onshore/{{ state.meta.abbr }}">{{ state.meta.name }}</a>
-  / {{ county.name }} County</h2>
+{% block breadcrumb %}
+  <li><a href="/locations">Locations</a></li>
+  <li><a href="/locations/onshore/{{ state.meta.abbr }}">{{ state.meta.name }}</a></li>
+  <li>{{ county.name }} County</li>
+{% endblock %}
 
-{% from 'views/macros.html' import table %}
+{% from 'macros.html' import table %}
 
 {{ table(state.revenues, ['Year', 'Commodity', 'Revenue'], caption='Revenues') }}

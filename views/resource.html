@@ -1,1 +1,11 @@
-<h2><a href="./">Resources</a> / {{ resource.name }}</h2>
+{% extends 'base.html' %}
+
+{% block breadcrumb %}
+  <li><a href="/resources">Resources</a></li>
+  <li>{{ resource.name }}</li>
+{% endblock %}
+
+{% block main %}
+  <section id="resources" class="container">
+  </section>
+{% endblock %}

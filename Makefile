@@ -45,6 +45,11 @@ output/national/gdp-yearly.tsv:
 	mkdir -p $(dir $@)
 	bin/get-bea-data.js --geo us -o $@
 
+output/state/states.tsv: input/geo/states.csv
+	tito --read csv $< | \
+		$(BIN)/datex --map '{id: abbr, name: name, FIPS: FIPS}' | \
+		tito --write tsv > $@
+
 output/state/revenues-yearly.tsv: output/county/revenues-yearly.tsv
 	mkdir -p $(dir $@)
 	bin/sum.js \

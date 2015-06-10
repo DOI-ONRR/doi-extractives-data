@@ -46,9 +46,9 @@ output/national/gdp-yearly.tsv:
 	bin/get-bea-data.js --geo us -o $@
 
 output/state/states.tsv: input/geo/states.csv
-	tito --read csv $< | \
+	$(tito) --read csv $< | \
 		$(BIN)/datex --map '{id: abbr, name: name, FIPS: FIPS}' | \
-		tito --write tsv > $@
+		$(tito) --write tsv > $@
 
 output/state/revenues-yearly.tsv: output/county/revenues-yearly.tsv
 	mkdir -p $(dir $@)
@@ -90,7 +90,13 @@ output/offshore/volumes-yearly.tsv: input/onrr/offshore-volumes.tsv
 output/county/counties.tsv: output/geo/us-topology.json
 	bin/extract-properties.js --layer counties $< | \
 		datex --map '{state: state, name: county, FIPS: FIPS}' | \
-		tito --write tsv > $@
+		$(tito) --write tsv > $@
+
+counties-by-state: output/county/counties.tsv
+	$(tito) --read tsv $< \
+		| bin/divvy.js \
+			--path 'output/county/by-state/{{ state }}/counties.tsv' \
+			--of tsv
 
 output/county/revenues-yearly.tsv: input/onrr/county-revenues.tsv
 	mkdir -p $(dir $@)
@@ -220,4 +226,7 @@ clean-fonts:
 distclean: clean clean-fonts
 	cd input/geo/offshore && make distclean
 
-.PHONY: county-revenues-nested geo svg certs
+.PHONY: \
+	counties-by-state \
+	county-revenues-by-state \
+	geo svg certs

@@ -89,6 +89,28 @@ var data = new Festoon({
       })
     },
 
+    topology: 'geo/us-topology.json',
+
+    // FIXME: we can optimize this by generating the county lists
+    // for each state ahead of time, rather than parsing them from
+    // the TopoJSON structure
+    counties: Festoon.transform('topology', function(topology, params) {
+      var state = params.state;
+      return topology.objects.counties.geometries
+        .filter(function(g) {
+          return g.properties.state === state;
+        })
+        .map(function(g) {
+          var p = g.properties;
+          return {
+            state: p.state,
+            name: p.county.replace(/ County$/, ''),
+            FIPS: p.FIPS
+          };
+        })
+        return done(null, geoms);
+    }),
+
     county: {
       name: function(params, done) {
         return done(null, params.county);
@@ -174,7 +196,7 @@ app.get('/locations/onshore/:state/revenues.(csv|json)',
 
 // state page
 app.get('/locations/onshore/:state',
-  data.decorate('state'),
+  data.decorate(['state', 'counties']),
   view('state'));
 
 // state page

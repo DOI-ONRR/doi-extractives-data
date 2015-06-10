@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>US EITI {% block title %}{% endblock %}</title>
+    <script src="/js/vendor/d3.v3.min.js"></script>
+    <script src="/js/vendor/queue.v1.min.js"></script>
+    <script src="/js/vendor/topojson.v1.min.js"></script>
+    <script src="/js/vendor/datalib.min.js"></script>
+    <script src="/js/vendor/director.min.js"></script>
+    <script src="/js/vendor/colorbrewer.js"></script>
+    <script src="/js/vendor/d3-tip.min.js"></script>
+    <script src="/js/lib/albers-custom.js"></script>
+    <script src="/js/eiti.js"></script>
+    <script src="/js/eiti.charts.js"></script>
+    <script src="/js/progressive.js"></script>
+    <script src="/js/vendor/document-register-element.js"></script>
+    <script src="/js/components/region-map.js"></script>
+    <script src="/js/components/x-slider.js"></script>
+    <link rel="stylesheet" href="/css/components.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/app.css">
+  </head>
+  <body data-path="{{ request.path }}" class="{% block body_class %}{% endblock %}">
+
+    <header class="container">
+      <h1><a href="/"><img
+          alt="USEITI: The United States Extractives Industry Transparency Initiative"
+          width="240" height="90" src="/css/images/eiti-logo.png"></a></h1>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/data">Explore Data</a></li>
+          <li class="search">
+            <label>Search: <input type="search" name="query"></label>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="breadcrumb" class="container">
+      <nav>
+        <ul class="breadcrumb">
+          <li class="home"><a href="/">Home</a></li>
+          {% block breadcrumb %}
+          {% endblock %}
+        </ul>
+      </nav>
+    </div>
+
+    <main>
+      {% block main %}
+      {% endblock %}
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>This is the footer.</p>
+      </div>
+    </footer>
+
+  </body>
+</html>

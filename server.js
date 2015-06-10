@@ -16,6 +16,8 @@ if (options.help) {
 // positional arguments
 var argc = options._;
 
+require('colors');
+
 var express = require('express');
 var nunjucks = require('nunjucks');
 var extend = require('extend');
@@ -157,6 +159,11 @@ app.use(function(req, res, next) {
   // make filters available as template functions
   extend(res.locals, filters.filters);
 
+  var then = Date.now();
+  req.on('end', function() {
+    var elapsed = Date.now() - then;
+    console.log('%s took %ss'.yellow, req.url, (elapsed / 1000).toFixed(3));
+  });
   next();
 }, data.decorate(['resources', 'locations']));
 

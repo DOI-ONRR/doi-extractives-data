@@ -17,7 +17,7 @@ if (options.help) {
 var argc = options._;
 
 var express = require('express');
-var cons = require('consolidate');
+var nunjucks = require('nunjucks');
 var extend = require('extend');
 var assert = require('assert');
 var fs = require('fs');
@@ -32,9 +32,15 @@ var api = helpers.api;
 var app = express();
 
 // render html with nunjucks
-app.engine('html', cons.nunjucks);
+var env = nunjucks.configure(__dirname + '/views');
+app.engine('html', env.render.bind(env));
 app.set('view engine', 'html');
-app.set('views', __dirname + '/views');
+
+// static assets
+app.use('/js', express.static(__dirname + '/js'));
+app.use('/js/lib', express.static(__dirname + '/lib'));
+app.use('/css', express.static(__dirname + '/css'));
+app.use('/data', express.static(__dirname + '/output'));
 
 var data = new Festoon({
   path: __dirname + '/output',
@@ -162,12 +168,6 @@ app.use(function(req, res, next) {
   res.locals.request = req;
   next();
 }, data.decorate(['resources', 'locations']));
-
-// static assets
-app.use('/js', express.static(__dirname + '/js'));
-app.use('/js/lib', express.static(__dirname + '/lib'));
-app.use('/css', express.static(__dirname + '/css'));
-app.use('/data', express.static(__dirname + '/output'));
 
 // index
 app.get('/', view('index'));

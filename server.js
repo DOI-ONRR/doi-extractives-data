@@ -98,12 +98,11 @@ var data = new Festoon({
       })
     },
 
-    topology: 'geo/us-topology.json',
+    // topology: 'geo/us-topology.json',
 
-    // FIXME: we can optimize this by generating the county lists
-    // for each state ahead of time, rather than parsing them from
-    // the TopoJSON structure
     counties: 'county/by-state/:state/counties.tsv',
+
+    allCounties: 'county/counties.tsv',
 
     county: {
       name: function(params, done) {
@@ -174,6 +173,7 @@ app.get('/resources/:resource',
 app.get('/locations',
   view('locations'));
 
+// redirect /locations/onshore -> /locations
 app.get('/locations/onshore', redirect('/locations'));
 
 // state data

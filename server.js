@@ -100,22 +100,7 @@ var data = new Festoon({
     // FIXME: we can optimize this by generating the county lists
     // for each state ahead of time, rather than parsing them from
     // the TopoJSON structure
-    counties: Festoon.transform('topology', function(topology, params) {
-      var state = params.state;
-      return topology.objects.counties.geometries
-        .filter(function(g) {
-          return g.properties.state === state;
-        })
-        .map(function(g) {
-          var p = g.properties;
-          return {
-            state: p.state,
-            name: p.county.replace(/ County$/, ''),
-            FIPS: p.FIPS
-          };
-        })
-        return done(null, geoms);
-    }),
+    counties: 'county/by-state/:state/counties.tsv',
 
     county: {
       name: function(params, done) {

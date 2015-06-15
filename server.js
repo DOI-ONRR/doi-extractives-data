@@ -13,6 +13,9 @@ if (options.help) {
   return yargs.showHelp();
 }
 
+var cfenv = require('cfenv');
+var appEnv = cfenv.getAppEnv();
+
 // positional arguments
 var argc = options._;
 
@@ -212,7 +215,7 @@ app.get('/locations/offshore/:area',
   data.decorate('area'),
   view('offshore-area'));
 
-app.listen(process.env.PORT || 4000, function(error) {
+app.listen(appEnv.port, appEnv.bind, function(error) {
   if (error) return console.error('error:', error);
   var server = this;
   var addr = server.address();

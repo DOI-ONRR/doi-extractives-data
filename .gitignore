@@ -5,3 +5,4 @@ node_modules
 bower.json
 bower_components
 *.pem
+npm-debug.log

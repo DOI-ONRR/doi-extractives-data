@@ -60,8 +60,8 @@ if (!fs.existsSync(manifest)) {
 async.series([
   echo('targeting: -o', org, '-s', space, '...'),
   run('cf', ['target', '-o', org, '-s', space]),
-  echo('mapping route: %s.%s', hostname, domain),
-  run('cf', ['map-route', app, domain, '-n', hostname]),
+  // echo('mapping route: %s.%s', hostname, domain),
+  // run('cf', ['map-route', app, domain, '-n', hostname]),
   echo('pushing with manfest:', manifest),
   run('cf', ['push', app, '-f', manifest]),
 ], function(error) {

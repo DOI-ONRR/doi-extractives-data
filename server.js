@@ -57,13 +57,13 @@ app.use('/css', sass({
   force: true,
   sourceMap: true
 }));
-app.use('/data', express.static(__dirname + '/output'));
+app.use('/data', express.static(__dirname + '/data/output'));
 
 var data = new Festoon({
-  path: __dirname + '/output',
+  path: __dirname + '/data',
   sources: {
     // master resources (commodities) list, plus other metadata
-    resources:  './data/commodities.json',
+    resources:  'commodities.json',
 
     // single resource: {slug, name, colors, (sub-)commodities}
     resource: Festoon.transform('resources', function(resources, params) {
@@ -98,7 +98,7 @@ var data = new Festoon({
     },
 
     // state data sources
-    states: './input/geo/states.csv',
+    states: 'input/geo/states.csv',
     state: {
       // {{ state.meta.name }}
       meta: Festoon.findByParam('states', 'state', 'abbr'),
@@ -114,9 +114,9 @@ var data = new Festoon({
 
     // topology: 'geo/us-topology.json',
 
-    counties: 'county/by-state/:state/counties.tsv',
+    counties: 'output/county/by-state/:state/counties.tsv',
 
-    allCounties: 'county/counties.tsv',
+    allCounties: 'output/county/counties.tsv',
 
     county: {
       name: function(params, done) {
@@ -131,7 +131,7 @@ var data = new Festoon({
     area: '#offshoreArea',
 
     // offshore planning areas
-    offshoreAreas: './input/geo/offshore/areas.tsv',
+    offshoreAreas: 'input/geo/offshore/areas.tsv',
     offshoreArea: {
       // {{ area.meta.name }}
       meta: Festoon.findByParam('offshoreAreas', 'area', 'id'),
@@ -148,16 +148,16 @@ var data = new Festoon({
     },
 
     // state (onshore) sources
-    stateRevenues:      'state/revenues-yearly.tsv',
-    stateProduction:    'state/volumes-yearly.tsv',
+    stateRevenues:      'output/state/revenues-yearly.tsv',
+    stateProduction:    'output/state/volumes-yearly.tsv',
 
     // county data sources
-    countyRevenues:     'county/by-state/:state/revenues-yearly.tsv',
-    allCountyRevenues:  'county/revenues-yearly.tsv',
+    countyRevenues:     'output/county/by-state/:state/revenues-yearly.tsv',
+    allCountyRevenues:  'output/county/revenues-yearly.tsv',
 
     // offshore (planning area) sources
-    offshoreRevenues:   'offshore/revenues-yearly.tsv',
-    offshoreProduction: 'offshore/volumes-yearly.tsv',
+    offshoreRevenues:   'output/offshore/revenues-yearly.tsv',
+    offshoreProduction: 'output/offshore/volumes-yearly.tsv',
   }
 });
 

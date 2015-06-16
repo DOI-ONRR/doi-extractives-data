@@ -52,8 +52,8 @@ app.use('/js/lib', express.static(__dirname + '/lib'));
 app.use('/css', sass({
   src: __dirname + '/style/sass',
   dest: __dirname + '/style/css',
-  // prefix: '/css',
   outputStyle: 'nested',
+  debug: true,
   force: true,
   sourceMap: true
 }));

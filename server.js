@@ -27,6 +27,7 @@ var extend = require('extend');
 var assert = require('assert');
 var fs = require('fs');
 var Festoon = require('festoon');
+var sass = require('node-sass-middleware');
 
 // web server helper functions
 var helpers = require('./lib/server-helpers');
@@ -47,7 +48,14 @@ app.set('view engine', 'html');
 // static assets
 app.use('/js', express.static(__dirname + '/js'));
 app.use('/js/lib', express.static(__dirname + '/lib'));
-app.use('/css', express.static(__dirname + '/css'));
+// app.use('/css', express.static(__dirname + '/css'));
+app.use(sass({
+  src: __dirname + '/style/sass',
+  dest: __dirname + '/style/css',
+  prefix: '/css',
+  outputStyle: 'nested',
+  sourceMap: true
+}));
 app.use('/data', express.static(__dirname + '/output'));
 
 var data = new Festoon({

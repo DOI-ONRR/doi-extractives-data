@@ -1,0 +1,11 @@
+{
+	"version": 3,
+	"file": "main.css",
+	"sources": [
+		"../sass/main.scss",
+		"../sass/_foo.scss"
+	],
+	"sourcesContent": [],
+	"mappings": "ACAA,IAAI,CAAC;EACH,KAAK,EAAE,GAAI;EACX,WAAW,EAAE,YAAa,GAFtB",
+	"names": []
+}

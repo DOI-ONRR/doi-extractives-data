@@ -18,6 +18,7 @@
     "extend": "^2.0.0",
     "festoon": "0.0.4",
     "mkdirp": "^0.5.0",
+    "node-sass-middleware": "^0.9.0",
     "nunjucks": "^1.3.4",
     "request": "^2.55.0",
     "rw": "^0.1.4",

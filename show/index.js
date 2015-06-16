@@ -32,7 +32,7 @@
 
     // all data URLs provided to load() will be prefixed with this
     // path unless they start with "./"
-    dataPath: 'output/',
+    dataPath: 'data/output/',
 
     /**
      * initialize the app
@@ -1578,8 +1578,8 @@
     return function loadLocations(done) {
       if (groups) return done(null, groups);
       return queue()
-        .defer(eiti.load, 'input/geo/states.csv')
-        .defer(eiti.load, 'input/geo/offshore/areas.tsv')
+        .defer(eiti.load, 'data/input/geo/states.csv')
+        .defer(eiti.load, 'data/input/geo/offshore/areas.tsv')
         .await(function(error, states, offshore) {
           if (error) return done(error);
 

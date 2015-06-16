@@ -10,7 +10,7 @@
     <script src="js/vendor/director.min.js"></script>
     <script src="js/vendor/colorbrewer.js"></script>
     <script src="js/vendor/d3-tip.min.js"></script>
-    <script src="lib/albers-custom.js"></script>
+    <script src="../lib/albers-custom.js"></script>
     <script src="js/eiti.js"></script>
     <script src="js/eiti.charts.js"></script>
     <script src="js/progressive.js"></script>
@@ -61,7 +61,7 @@
 
         <section class="module module--location">
           <h2>Browse by Location</h2>
-          <p><a href="#/locations"><region-map></region-map></a></p>
+          <p><a href="#/locations"><region-map data-path="data/"></region-map></a></p>
           <form action="#/locations">
             <p><a href="#/locations">View the map</a> or 
               <select name="location" class="select--locations">
@@ -98,7 +98,7 @@
             <div class="detail">
               <div class="selector"></div>
               <p class="legend"><span class="swatch"></span> Areas with <span class="commodity__name"></span> activity in <span class="current-year"></span></p>
-              <region-map class="regions"></region-map>
+              <region-map data-path="data/" class="regions"></region-map>
             </div>
             <!-- <p>A little something about <span class="commodity__name">this commodity</span>.</p> -->
             <table class="stats">
@@ -139,7 +139,7 @@
             <option value="">Select an area</option>
           </select>
         </div>
-        <region-map></region-map>
+        <region-map data-path="data/"></region-map>
       </section>
 
       <section id="revenue" class="primary container">
@@ -160,7 +160,7 @@
             <div class="detail">
               <div class="selector"></div>
               <div class="legend legend--scale"></div>
-              <region-map class="regions"></region-map>
+              <region-map data-path="data/" class="regions"></region-map>
             </div>
             <div class="content">
               <h5><span class="commodity__name"></span> in <span class="current-year"></span></h5>
@@ -185,7 +185,7 @@
 
     </main>
 
-    <script src="js/index.js"></script>
+    <script src="index.js"></script>
     <script>app.init();</script>
   </body>
 </html>

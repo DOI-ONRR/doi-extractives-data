@@ -49,11 +49,12 @@ app.set('view engine', 'html');
 app.use('/js', express.static(__dirname + '/js'));
 app.use('/js/lib', express.static(__dirname + '/lib'));
 // app.use('/css', express.static(__dirname + '/css'));
-app.use(sass({
+app.use('/css', sass({
   src: __dirname + '/style/sass',
   dest: __dirname + '/style/css',
-  prefix: '/css',
+  // prefix: '/css',
   outputStyle: 'nested',
+  force: true,
   sourceMap: true
 }));
 app.use('/data', express.static(__dirname + '/output'));

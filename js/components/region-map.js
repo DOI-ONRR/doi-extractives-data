@@ -23,6 +23,7 @@
       }
 
       var path = this.getAttribute('data-path') || '';
+      if (path && !path.match(/\/$/)) path += '/';
 
       var load = window.eiti ? eiti.load : null;
       var q = queue()

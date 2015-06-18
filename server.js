@@ -50,8 +50,8 @@ app.use('/js', express.static(__dirname + '/js'));
 app.use('/js/lib', express.static(__dirname + '/lib'));
 // app.use('/css', express.static(__dirname + '/css'));
 app.use('/css', sass({
-  src: __dirname + '/style/sass',
-  dest: __dirname + '/style/css',
+  src: __dirname + '/styles/sass',
+  dest: __dirname + '/styles/css',
   outputStyle: 'nested',
   debug: true,
   force: true,

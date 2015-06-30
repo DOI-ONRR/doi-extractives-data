@@ -1,1 +1,17 @@
-@import 'foo';
+// include reset
+@import "reset";
+
+// include Bourbon & Neat
+@import "bourbon/bourbon";
+@import "neat/neat";
+
+// include site specific base styles
+@import "base/base";
+
+// include fonts (and @import font-face declarations from /css/fonts)
+@import "base/fonts";
+// include FontAwesome
+@import "font-awesome/font-awesome";
+
+// import site-specific custom styles
+@import "custom";

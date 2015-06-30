@@ -1,0 +1,276 @@
+// Utility classes (hopefully temporary)
+//============================================
+
+body {
+  background-color: $putty;
+}
+
+.hidden {
+  display: none;
+}
+
+.container {
+  @include padded-container();
+}
+
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: px;
+  overflow: hidden; 
+}
+
+.group_inline {
+  display: inline-block;
+  width: 100%;
+}
+
+.group_inline-right {
+  float: right;
+}
+
+.group_inline-left {
+  float: left;
+  width: 88%;
+  // This sets the width of the first group item
+  // Would like a way to set this programatically
+  // This is also not responsive. Fix.
+}
+
+
+// Site-wide
+//============================================
+* {
+  box-sizing: border-box;
+}
+
+strong {
+  font-weight: 700;
+}
+
+a {
+  .expand, 
+  .more {
+    @include font-size(0.75);
+    text-transform: uppercase;
+  }
+}
+
+section {
+  padding-top: $base-padding;
+  padding-bottom: $base-padding;
+  text-align: center;
+
+  > h1 {
+    padding: 0 0.6em 0.6em 0;
+  }
+
+  &.standard {
+  }
+
+  &.secondary {
+    background-color: $secondary-background-color;
+    color: $white;
+  }
+
+  &.tertiary {
+    background-color: $tertiary-background-color;
+
+    h1 {
+      padding-top: $base-padding;
+      padding-bottom: $base-padding;
+    }
+
+    > div > div {
+      background-color: $white;
+      border-radius: 0.4em;
+      margin-top: $base-padding;
+      margin-bottom: $base-padding;
+    }
+
+    ul.tertiary-home {
+      padding-bottom: $base-padding-extra;
+
+      li {
+        padding: $base-padding $base-padding-extra;
+        border-bottom: $thin-border-size solid $base-border-color;
+
+        &:first-of-type {
+          border-top: $thin-border-size solid $base-border-color;
+        }
+      }
+    }
+
+    
+  }
+
+  &.quaternary {
+    background-color: $quaternary-background-color;
+    color: $white;
+    padding-right: 0;
+    padding-left: 0;
+
+    h1 {
+      padding-left: $base-padding * 2;
+      padding-right: $base-padding * 2;
+    }
+
+    video {
+      background-color: $mid-gray;
+      height: auto;
+      width: 100%;
+    }
+
+    figcaption {
+
+      h1 {
+        @extend .h2;
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+
+
+// Header
+//============================================
+
+header {
+  color: $white;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+.banner {
+  background: $dark-blue;
+  height: 24px;
+
+  > div {
+    @include padded-container();
+  }
+
+  a {
+    @include font-size(0.70);
+
+    color: inherit;
+    font-weight: bold;
+    letter-spacing: 0.3px;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+
+    span.ed-logo {
+      background: url(../img/US-DeptOfEducation-Seal.svg);
+      background-repeat: no-repeat;
+      background-size: 85%;
+      display: inline-block;
+      height: 20px;
+      margin-right: em(2);
+      vertical-align: em(-8);
+      width: 20px;
+    }
+  }
+}
+
+.title {
+  background: $mid-blue;
+  height: 76px;
+
+  > div {
+    @include padded-container();
+  }
+
+  h1 {
+    @extend .title_heading;
+    font-weight: 400;
+    line-height: 0.7;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+
+// Footer
+//============================================
+
+footer {
+  @include font-size(0.8);
+  background-color: $mid-gray;
+  height: 100px;
+  text-align: center;
+  padding-top: $base-padding * 1.75;
+
+  p {
+    color: $dark-gray;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+  }
+}
+
+
+// Search form
+// For styles that are specific to 
+// the home search. General form styles
+// are in _forms.scss.
+//============================================
+
+.search_form {
+  padding-top: 0.4em;
+
+  p {
+    @extend .supporting_copy;
+    padding-top: 0.3em;
+    padding-bottom: $base-padding;
+  }
+}
+
+// Individual school pages
+//============================================
+
+.school {
+  section,
+  div {
+    text-align: left;
+  }
+}
+
+.school-section {
+  border-bottom: $regular-border-size solid $base-border-color;
+}
+
+
+// Search results
+//============================================
+
+.results {
+  @extend .school;
+
+  div:first-of-type {
+    padding-bottom: $base-padding;
+
+    h1 {
+      padding-bottom: $base-padding-lite;
+    }
+  }
+}
+
+.results-cards {
+  padding: $base-padding;
+
+  ul {
+    border-bottom: $thin-border-size solid $base-border-color;
+    margin-bottom: $base-padding;
+    padding-bottom: $base-padding;
+  }
+}
+
+.tertiary .results-cards h1 {
+  padding-top: 0;
+  padding-bottom: $base-padding-lite;
+}
+
+

@@ -1,8 +1,3 @@
-// // Ensures .1 rem unit equals 1px
-// html {
-//   font-size: 62.5%;
-// }
-
 body {
   color: $base-font-color;
   font-size: font-size($base-font-size);
@@ -21,7 +16,7 @@ $h4: 1;
 h1, h2, h3, h4
 .h1, .h2, .h3, .h4 {
   font-family: $header-font-family;
-  font-weight: 700;
+  font-weight: 200;
   line-height: $base-heading-line-height;
   margin: 0;
   padding-top: 0.7em; 
@@ -57,7 +52,7 @@ h4,
 button {
   @include font-size(1.125);
   font-family: $base-font-family;
-  font-weight: bold;
+  font-weight: 400;
   letter-spacing: 3.6px;
 
   &.button-secondary,
@@ -107,13 +102,12 @@ button {
 .link-expand,
 .link-more {
   @include font-size(0.75);
-  color: $green;
-  font-weight: 800;
+  color: $cobalt;
+  font-weight: 400;
   text-decoration: none;
-  text-transform: uppercase;
 
   &:hover,
   &:focus {
-    color: $darker-green;
+    text-decoration: underline;
   }
 }

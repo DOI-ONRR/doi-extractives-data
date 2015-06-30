@@ -141,7 +141,8 @@ header {
   @include padded-container();
 
   a {
-    color: $dark-gray;
+    color: $dark-putty;
+    font-weight: 200;
     text-decoration: none;
     text-transform: uppercase;
 
@@ -149,6 +150,11 @@ header {
     &:focus {
       text-decoration: underline;
     }
+  }
+
+  img {
+    margin-top: $base-padding/2;
+    width: 280px;
   }
 
   div:first-of-type {
@@ -160,8 +166,10 @@ header {
     @include omega();
 
     ul li {
+      @include font-size(0.8);
       display: inline-block;
-      padding-right: $base-padding;
+      letter-spacing: 2px;
+      padding-right: $base-padding-large;
     }
   }
 }

@@ -355,7 +355,6 @@ select {
   -o-appearance: none;
   appearance: none;
   width: 100%;
-  background-image: url("../img/angle-down.png");
   background-repeat: no-repeat;
   background-position: 99% 50%;
   background-size: 2rem;
@@ -517,7 +516,7 @@ body {
 h1, h2, h3, h4
 .h1, .h2, section.quaternary figcaption h1, .h3, .h4, .guide > section > h1, .guide-buttons > h1 {
   font-family: Lato, "Helvetica Neue", Helvetica, arial, sans-serif;
-  font-weight: 700;
+  font-weight: 200;
   line-height: 1.3;
   margin: 0;
   padding-top: 0.7em;
@@ -547,7 +546,7 @@ button {
   font-size: 11.25px;
   font-size: 1.125rem;
   font-family: Lato, "Helvetica Neue", Helvetica, arial, sans-serif;
-  font-weight: bold;
+  font-weight: 400;
   letter-spacing: 3.6px; }
   button.button-secondary,
   button.button-compare {
@@ -593,10 +592,9 @@ button {
 input[type="submit"].button-add {
   font-size: 7.5px;
   font-size: 0.75rem;
-  color: #9fa63b;
-  font-weight: 800;
-  text-decoration: none;
-  text-transform: uppercase; }
+  color: #1075a5;
+  font-weight: 400;
+  text-decoration: none; }
   .link-expand:hover,
   .link-expand:focus,
   .link-more:hover,
@@ -606,7 +604,7 @@ input[type="submit"].button-add {
   .link-more:focus, button.button-add:focus,
   .button.button-add:focus,
   input[type="submit"].button-add:focus {
-    color: #216d09; }
+    text-decoration: underline; }
 
 body {
   font-family: Montserrat, "Helvetica Neue", Helvetica, arial, sans-serif; }
@@ -2512,12 +2510,16 @@ header {
       padding-left: 1.875em;
       padding-right: 1.875em; } }
   header a {
-    color: #666666;
+    color: #838383;
+    font-weight: 200;
     text-decoration: none;
     text-transform: uppercase; }
     header a:hover,
     header a:focus {
       text-decoration: underline; }
+  header img {
+    margin-top: 0.625em;
+    width: 280px; }
   header div:first-of-type {
     float: left;
     display: block;
@@ -2534,8 +2536,11 @@ header {
     header nav:last-child {
       margin-right: 0; }
     header nav ul li {
+      font-size: 8px;
+      font-size: 0.8rem;
       display: inline-block;
-      padding-right: 1.25em; }
+      letter-spacing: 2px;
+      padding-right: 1.875em; }
 
 .banner {
   background: #0e365b;

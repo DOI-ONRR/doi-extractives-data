@@ -559,9 +559,13 @@ button {
     letter-spacing: 2px;
     line-height: 18px; }
 
-.title_heading {
-  font-size: 22.5px;
-  font-size: 2.25rem; }
+.callout, .home-intro h1 {
+  font-size: 22px;
+  font-size: 2.2rem; }
+
+.huge {
+  font-size: 30px;
+  font-size: 3rem; }
 
 .search_category {
   font-size: 15px;
@@ -2565,14 +2569,6 @@ footer {
     footer > div > div:nth-of-type(2):last-child {
       margin-right: 0; }
 
-.home-intro div:first-of-type {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 65.88078%; }
-  .home-intro div:first-of-type:last-child {
-    margin-right: 0; }
-
 .home-intro article {
   float: left;
   display: block;
@@ -2581,6 +2577,17 @@ footer {
   margin-right: 0; }
   .home-intro article:last-child {
     margin-right: 0; }
+
+.home-intro div:first-of-type {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%; }
+  .home-intro div:first-of-type:last-child {
+    margin-right: 0; }
+
+.home-intro h1 {
+  width: 93%; }
 
 .home-modules article {
   float: left;

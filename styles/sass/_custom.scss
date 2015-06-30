@@ -204,13 +204,18 @@ footer {
 
 .home-intro {
 
+  article {
+    @include span-columns (4);
+    @include omega();
+  }
+
   div:first-of-type {
     @include span-columns(8);
   }
 
-  article {
-    @include span-columns (4);
-    @include omega();
+  h1 {
+    @extend .callout;
+    width: 93%;
   }
 }
 

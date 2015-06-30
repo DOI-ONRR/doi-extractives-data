@@ -559,7 +559,7 @@ button {
     letter-spacing: 2px;
     line-height: 18px; }
 
-.title_heading, .title h1 {
+.title_heading {
   font-size: 22.5px;
   font-size: 2.25rem; }
 
@@ -2542,69 +2542,13 @@ header {
       letter-spacing: 2px;
       padding-right: 1.875em; }
 
-.banner {
-  background: #0e365b;
-  height: 24px; }
-  .banner > div {
-    max-width: 76.875em;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 1.25em;
-    padding-right: 1.25em; }
-    .banner > div::after {
-      clear: both;
-      content: "";
-      display: table; }
-    @media only screen and (min-width: 48em) {
-      .banner > div {
-        padding-left: 1.875em;
-        padding-right: 1.875em; } }
-  .banner a {
-    font-size: 7px;
-    font-size: 0.7rem;
-    color: inherit;
-    font-weight: bold;
-    letter-spacing: 0.3px;
-    text-decoration: none;
-    text-transform: uppercase;
-    -webkit-font-smoothing: antialiased; }
-    .banner a span.ed-logo {
-      background: url(../img/US-DeptOfEducation-Seal.svg);
-      background-repeat: no-repeat;
-      background-size: 85%;
-      display: inline-block;
-      height: 20px;
-      margin-right: 0.125em;
-      vertical-align: -0.5em;
-      width: 20px; }
-
-.title {
-  background: #2b6091;
-  height: 76px; }
-  .title > div {
-    max-width: 76.875em;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 1.25em;
-    padding-right: 1.25em; }
-    .title > div::after {
-      clear: both;
-      content: "";
-      display: table; }
-    @media only screen and (min-width: 48em) {
-      .title > div {
-        padding-left: 1.875em;
-        padding-right: 1.875em; } }
-  .title h1 {
-    font-weight: 400;
-    line-height: 0.7;
-    -webkit-font-smoothing: antialiased; }
-
 footer {
   background-color: #303030;
   color: #ffffff;
   padding-top: 3.125em;
   padding-bottom: 3.125em; }
+  footer img {
+    width: 150px; }
   footer > div > div:first-of-type {
     float: left;
     display: block;

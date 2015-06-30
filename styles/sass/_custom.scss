@@ -174,53 +174,6 @@ header {
   }
 }
 
-.banner {
-  background: $dark-blue;
-  height: 24px;
-
-  > div {
-    @include padded-container();
-  }
-
-  a {
-    @include font-size(0.70);
-
-    color: inherit;
-    font-weight: bold;
-    letter-spacing: 0.3px;
-    text-decoration: none;
-    text-transform: uppercase;
-    -webkit-font-smoothing: antialiased;
-
-    span.ed-logo {
-      background: url(../img/US-DeptOfEducation-Seal.svg);
-      background-repeat: no-repeat;
-      background-size: 85%;
-      display: inline-block;
-      height: 20px;
-      margin-right: em(2);
-      vertical-align: em(-8);
-      width: 20px;
-    }
-  }
-}
-
-.title {
-  background: $mid-blue;
-  height: 76px;
-
-  > div {
-    @include padded-container();
-  }
-
-  h1 {
-    @extend .title_heading;
-    font-weight: 400;
-    line-height: 0.7;
-    -webkit-font-smoothing: antialiased;
-  }
-}
-
 
 // Footer
 //============================================
@@ -230,6 +183,10 @@ footer {
   color: $white;
   padding-top: $base-padding-extra;
   padding-bottom: $base-padding-extra;
+
+  img {
+    width: 150px;
+  }
 
   > div > div {
     &:first-of-type {

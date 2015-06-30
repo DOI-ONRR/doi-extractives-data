@@ -1,10 +1,6 @@
 // Utility classes (hopefully temporary)
 //============================================
 
-body {
-  background-color: $putty;
-}
-
 .hidden {
   display: none;
 }
@@ -42,8 +38,13 @@ body {
 
 // Site-wide
 //============================================
+
 * {
   box-sizing: border-box;
+}
+
+body {
+  background-color: $putty;
 }
 
 strong {
@@ -61,7 +62,6 @@ a {
 section {
   padding-top: $base-padding;
   padding-bottom: $base-padding;
-  text-align: center;
 
   > h1 {
     padding: 0 0.6em 0.6em 0;
@@ -138,11 +138,31 @@ section {
 //============================================
 
 header {
-  color: $white;
+  @include padded-container();
 
   a {
-    color: inherit;
+    color: $dark-gray;
     text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+
+  div:first-of-type {
+    @include span-columns(6);
+  }
+
+  nav {
+    @include span-columns(6);
+    @include omega();
+
+    ul li {
+      display: inline-block;
+      padding-right: $base-padding;
+    }
   }
 }
 
@@ -198,17 +218,47 @@ header {
 //============================================
 
 footer {
-  @include font-size(0.8);
-  background-color: $mid-gray;
-  height: 100px;
-  text-align: center;
-  padding-top: $base-padding * 1.75;
+  background-color: $light-black;
+  color: $white;
+  padding-top: $base-padding-extra;
+  padding-bottom: $base-padding-extra;
 
-  p {
-    color: $dark-gray;
-    letter-spacing: 0.3px;
-    text-transform: uppercase;
+  > div > div {
+    &:first-of-type {
+      @include span-columns(9);
+    }
+    &:nth-of-type(2) {
+      @include span-columns(3);
+      @include omega();
+    }
   }
+}
+
+// Home
+//============================================
+
+.home-intro {
+
+  div:first-of-type {
+    @include span-columns(8);
+  }
+
+  article {
+    @include span-columns (4);
+    @include omega();
+  }
+}
+
+.home-modules {
+  article {
+    @include span-columns (4);
+    @include omega(3n);
+  }
+}
+
+.home-final {
+  @include span-columns(12);
+  text-align: center;
 }
 
 
@@ -230,13 +280,6 @@ footer {
 
 // Individual school pages
 //============================================
-
-.school {
-  section,
-  div {
-    text-align: left;
-  }
-}
 
 .school-section {
   border-bottom: $regular-border-size solid $base-border-color;

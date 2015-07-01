@@ -35,6 +35,16 @@ $darker-yellow: #eeba28;
 $red: #d44116;
 $darker-red: #b93610;
 
+// Color map
+
+$colors: (
+  oilgas: $green,
+  coal: $purple,
+  minerals: $red,
+  renewables: $blue,
+  other: $dark-gray
+);
+
 // Background Color
 $secondary-background-color: $dark-blue;
 $tertiary-background-color: $mid-gray;
@@ -63,7 +73,7 @@ $base-button-padding: .85em 2.1em;
 $secondary-button-padding: .7em 2.1em;
 
 // Radius
-$base-border-radius: 2px;
+$base-border-radius: 5px;
 
 // Border
 $base-border-color: $mid-gray;

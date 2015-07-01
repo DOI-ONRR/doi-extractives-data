@@ -59,79 +59,92 @@ a {
   }
 }
 
-section {
-  padding-top: $base-padding;
-  padding-bottom: $base-padding;
+@each $name, $value in $colors {
+  .product-#{$name} {
+    background-color: $value;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: grayscale;
 
-  > h1 {
-    padding: 0 0.6em 0.6em 0;
-  }
-
-  &.standard {
-  }
-
-  &.secondary {
-    background-color: $secondary-background-color;
-    color: $white;
-  }
-
-  &.tertiary {
-    background-color: $tertiary-background-color;
-
-    h1 {
-      padding-top: $base-padding;
-      padding-bottom: $base-padding;
-    }
-
-    > div > div {
-      background-color: $white;
-      border-radius: 0.4em;
-      margin-top: $base-padding;
-      margin-bottom: $base-padding;
-    }
-
-    ul.tertiary-home {
-      padding-bottom: $base-padding-extra;
-
-      li {
-        padding: $base-padding $base-padding-extra;
-        border-bottom: $thin-border-size solid $base-border-color;
-
-        &:first-of-type {
-          border-top: $thin-border-size solid $base-border-color;
-        }
-      }
-    }
-
-    
-  }
-
-  &.quaternary {
-    background-color: $quaternary-background-color;
-    color: $white;
-    padding-right: 0;
-    padding-left: 0;
-
-    h1 {
-      padding-left: $base-padding * 2;
-      padding-right: $base-padding * 2;
-    }
-
-    video {
-      background-color: $mid-gray;
-      height: auto;
-      width: 100%;
-    }
-
-    figcaption {
-
-      h1 {
-        @extend .h2;
-        padding-bottom: 0;
-      }
+    &:hover,
+    &:focus {
+      box-shadow: 0 0 0 2px $light-black;
     }
   }
 }
+
+// section {
+//   padding-top: $base-padding;
+//   padding-bottom: $base-padding;
+
+//   > h1 {
+//     padding: 0 0.6em 0.6em 0;
+//   }
+
+//   &.standard {
+//   }
+
+//   &.secondary {
+//     background-color: $secondary-background-color;
+//     color: $white;
+//   }
+
+//   &.tertiary {
+//     background-color: $tertiary-background-color;
+
+//     h1 {
+//       padding-top: $base-padding;
+//       padding-bottom: $base-padding;
+//     }
+
+//     > div > div {
+//       background-color: $white;
+//       border-radius: 0.4em;
+//       margin-top: $base-padding;
+//       margin-bottom: $base-padding;
+//     }
+
+//     ul.tertiary-home {
+//       padding-bottom: $base-padding-extra;
+
+//       li {
+//         padding: $base-padding $base-padding-extra;
+//         border-bottom: $thin-border-size solid $base-border-color;
+
+//         &:first-of-type {
+//           border-top: $thin-border-size solid $base-border-color;
+//         }
+//       }
+//     }
+
+    
+//   }
+
+//   &.quaternary {
+//     background-color: $quaternary-background-color;
+//     color: $white;
+//     padding-right: 0;
+//     padding-left: 0;
+
+//     h1 {
+//       padding-left: $base-padding * 2;
+//       padding-right: $base-padding * 2;
+//     }
+
+//     video {
+//       background-color: $mid-gray;
+//       height: auto;
+//       width: 100%;
+//     }
+
+//     figcaption {
+
+//       h1 {
+//         @extend .h2;
+//         padding-bottom: 0;
+//       }
+//     }
+//   }
+// }
 
 
 // Header
@@ -217,12 +230,55 @@ footer {
     @extend .callout;
     width: 93%;
   }
+
+  ul {  
+  display: inline-block;
+  margin-bottom: $base-padding-lite;
+
+    li {
+      border-radius: $base-border-radius;
+      color: $white;
+      float: left;
+      font-weight: 600;
+      padding: $base-padding/2;
+      margin-right: $base-padding/3;
+      width: 130px;
+    }
+  }
+}
+
+.home-intro-more {
+  display: block;
+}
+
+.article_module {
+  background-color: $white;
+  border-radius: 10px;
+  height: 500px;
+  padding: $base-padding;
+  position: relative;
+  margin-top: $base-padding;
+
+  h1 {
+    @include font-size($h2);
+    font-weight: 600;
+    padding-top: $base-padding;
+    padding-right: $base-padding;
+    margin-bottom: $base-padding-lite;
+  }
+
+  form,
+  .link-more {
+    position: absolute;
+    bottom: $base-padding;
+  }
 }
 
 .home-modules {
   article {
     @include span-columns (4);
     @include omega(3n);
+    @extend .article_module;
   }
 }
 

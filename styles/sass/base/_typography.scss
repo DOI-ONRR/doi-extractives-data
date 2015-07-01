@@ -6,9 +6,22 @@ body {
   font-weight: $base-font-weight;
 }
 
+ul li {
+  font-family: $base-font-family;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
 // Typeographic multipliers, base 16
 $h1: 1.5;
-$h2: 1.313;
+$h2: 1.4;
 $h3: 1.125;
 $h4: 1;
 
@@ -35,6 +48,8 @@ h1,
 h2,
 .h2 {
   @include font-size($h2);
+  color: $dark-putty;
+  padding-bottom: $base-padding-lite;
 }
 
 h3,
@@ -70,8 +85,16 @@ button {
 
 // Other type
 
+p {
+  @include font-size(0.9);
+  color: $dark-putty;
+  font-weight: 200;
+}
+
 .callout {
-  @include font-size(2.2);
+  @include font-size(2.1);
+  color: $light-black;
+  margin-bottom: $base-padding;
 }
 
 .huge {
@@ -105,9 +128,9 @@ button {
 
 .link-expand,
 .link-more {
-  @include font-size(0.75);
+  @include font-size(0.85);
   color: $cobalt;
-  font-weight: 400;
+  font-weight: 500;
   text-decoration: none;
 
   &:hover,

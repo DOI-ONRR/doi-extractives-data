@@ -25,6 +25,7 @@ $cobalt: #1075a5;
 $dark-gray: #666666;
 $mid-gray: #e1e1e1;
 
+// old colors here. deprecate.
 $dark-blue: #0e365b;
 $mid-blue: #2b6091;
 $lighter-blue: tint($dark-blue, 6%);
@@ -36,7 +37,6 @@ $red: #d44116;
 $darker-red: #b93610;
 
 // Color map
-
 $colors: (
   oilgas: $green,
   coal: $purple,

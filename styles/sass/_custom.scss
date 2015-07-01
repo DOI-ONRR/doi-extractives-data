@@ -72,80 +72,6 @@ a {
   }
 }
 
-// section {
-//   padding-top: $base-padding;
-//   padding-bottom: $base-padding;
-
-//   > h1 {
-//     padding: 0 0.6em 0.6em 0;
-//   }
-
-//   &.standard {
-//   }
-
-//   &.secondary {
-//     background-color: $secondary-background-color;
-//     color: $white;
-//   }
-
-//   &.tertiary {
-//     background-color: $tertiary-background-color;
-
-//     h1 {
-//       padding-top: $base-padding;
-//       padding-bottom: $base-padding;
-//     }
-
-//     > div > div {
-//       background-color: $white;
-//       border-radius: 0.4em;
-//       margin-top: $base-padding;
-//       margin-bottom: $base-padding;
-//     }
-
-//     ul.tertiary-home {
-//       padding-bottom: $base-padding-extra;
-
-//       li {
-//         padding: $base-padding $base-padding-extra;
-//         border-bottom: $thin-border-size solid $base-border-color;
-
-//         &:first-of-type {
-//           border-top: $thin-border-size solid $base-border-color;
-//         }
-//       }
-//     }
-
-    
-//   }
-
-//   &.quaternary {
-//     background-color: $quaternary-background-color;
-//     color: $white;
-//     padding-right: 0;
-//     padding-left: 0;
-
-//     h1 {
-//       padding-left: $base-padding * 2;
-//       padding-right: $base-padding * 2;
-//     }
-
-//     video {
-//       background-color: $mid-gray;
-//       height: auto;
-//       width: 100%;
-//     }
-
-//     figcaption {
-
-//       h1 {
-//         @extend .h2;
-//         padding-bottom: 0;
-//       }
-//     }
-//   }
-// }
-
 
 // Header
 //============================================
@@ -212,10 +138,12 @@ footer {
   }
 }
 
+
 // Home
 //============================================
 
 .home-intro {
+  margin-top: $base-padding;
 
   article {
     @include span-columns (4);
@@ -261,6 +189,7 @@ footer {
 
   h1 {
     @include font-size($h2);
+    color: $light-black;
     font-weight: 600;
     padding-top: $base-padding;
     padding-right: $base-padding;
@@ -284,62 +213,15 @@ footer {
 
 .home-final {
   @include span-columns(12);
+  padding-top: $base-padding-extra;
+  padding-bottom: $base-padding-extra;
   text-align: center;
 }
 
 
-// Search form
-// For styles that are specific to 
-// the home search. General form styles
-// are in _forms.scss.
+// 
 //============================================
 
-.search_form {
-  padding-top: 0.4em;
 
-  p {
-    @extend .supporting_copy;
-    padding-top: 0.3em;
-    padding-bottom: $base-padding;
-  }
-}
-
-// Individual school pages
-//============================================
-
-.school-section {
-  border-bottom: $regular-border-size solid $base-border-color;
-}
-
-
-// Search results
-//============================================
-
-.results {
-  @extend .school;
-
-  div:first-of-type {
-    padding-bottom: $base-padding;
-
-    h1 {
-      padding-bottom: $base-padding-lite;
-    }
-  }
-}
-
-.results-cards {
-  padding: $base-padding;
-
-  ul {
-    border-bottom: $thin-border-size solid $base-border-color;
-    margin-bottom: $base-padding;
-    padding-bottom: $base-padding;
-  }
-}
-
-.tertiary .results-cards h1 {
-  padding-top: 0;
-  padding-bottom: $base-padding-lite;
-}
 
 

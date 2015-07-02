@@ -51,7 +51,7 @@ var echo = function() {
   };
 };
 
-var manifest = 'manifest_' + space + '.yml';
+var manifest = 'manifest-' + space + '.yml';
 if (!fs.existsSync(manifest)) {
   console.log('no space-specific manifest found: %s; using manifest.yml', manifest.red);
   manifest = 'manifest.yml';

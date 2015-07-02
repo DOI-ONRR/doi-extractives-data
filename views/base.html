@@ -21,25 +21,30 @@
     <link rel="stylesheet" href="/css/main.css">
     <!-- <link rel="stylesheet" href="/css/app.css"> -->
   </head>
+
   <body data-path="{{ request.path }}" class="{% block body_class %}{% endblock %}">
 
     <header class="container">
-      <h1><a href="/"><img
-          alt="USEITI: The United States Extractives Industry Transparency Initiative"
-          width="240" height="90" src="/css/images/eiti-logo.png"></a></h1>
+
+      <div>
+        <h1><a href="/"><img src="/img/USEITI_Logotype.png" alt="USEITI logo"></a></h1>
+      </div>
+
       <nav>
         <ul>
           <li><a href="/">Home</a></li>
           <li><a href="/about">About</a></li>
-          <li><a href="/data">Explore Data</a></li>
+          <li><a href="/data">Data</a></li>
+          <li><a href="/data">Reports</a></li>
           <li class="search">
             <label>Search: <input type="search" name="query"></label>
           </li>
         </ul>
       </nav>
+
     </header>
 
-    <div id="breadcrumb" class="container">
+    <!-- <div id="breadcrumb" class="container">
       <nav>
         <ul class="breadcrumb">
           <li class="home"><a href="/">Home</a></li>
@@ -47,7 +52,7 @@
           {% endblock %}
         </ul>
       </nav>
-    </div>
+    </div> -->
 
     <main>
       {% block main %}
@@ -55,9 +60,25 @@
     </main>
 
     <footer>
+
       <div class="container">
-        <p>This is the footer.</p>
+
+        <div>
+
+          <p>The Department of the Interior is creating this public data portal to tell the story of natural resource revenues from Federal lands.</p>
+
+          <p>It supports the U.S. implementation of the international Extractive Industry Transparency Initiative, is part of the cross-government Project Open Data and supports the goals of the U.S. National Action Plan for Open Government Partnership.</p>
+
+        </div>
+
+        <div>
+
+          <img src="/img/DOI-mark.png">
+
+        </div>
+
       </div>
+
     </footer>
 
   </body>

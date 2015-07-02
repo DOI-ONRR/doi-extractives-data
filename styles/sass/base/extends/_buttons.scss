@@ -1,0 +1,11 @@
+%button {
+  @include transition-property(background-color);
+  @include transition-duration(0.25s);
+  @include transition-timing-function(ease-out);
+  @include transition-delay(0s);
+  border-radius: 500px;
+  display: inline-block;
+  line-height: 1.3;
+  text-decoration: none;
+  text-transform: uppercase;
+}

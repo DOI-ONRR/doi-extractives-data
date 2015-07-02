@@ -46,6 +46,7 @@ app.engine('html', env.render.bind(env));
 app.set('view engine', 'html');
 
 // static assets
+app.use('/img', express.static(__dirname + '/img'));
 app.use('/js', express.static(__dirname + '/js'));
 app.use('/js/lib', express.static(__dirname + '/lib'));
 // app.use('/css', express.static(__dirname + '/css'));

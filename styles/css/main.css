@@ -2668,4 +2668,57 @@ footer {
   .home-final:last-child {
     margin-right: 0; }
 
+.guide-black {
+  background-color: #040404;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: grayscale; }
+  .guide-black:hover,
+  .guide-black:focus {
+    box-shadow: 0 0 0 2px #303030; }
+
+.guide-light-black {
+  background-color: #303030;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: grayscale; }
+  .guide-light-black:hover,
+  .guide-light-black:focus {
+    box-shadow: 0 0 0 2px #303030; }
+
+.guide-putty {
+  background-color: #f4f4f4;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: grayscale; }
+  .guide-putty:hover,
+  .guide-putty:focus {
+    box-shadow: 0 0 0 2px #303030; }
+
+.guide-dark-putty {
+  background-color: #838383;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: grayscale; }
+  .guide-dark-putty:hover,
+  .guide-dark-putty:focus {
+    box-shadow: 0 0 0 2px #303030; }
+
+.guide-cobalt {
+  background-color: #1075a5;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: grayscale; }
+  .guide-cobalt:hover,
+  .guide-cobalt:focus {
+    box-shadow: 0 0 0 2px #303030; }
+
+.guide-mid-gray {
+  background-color: #e1e1e1;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: grayscale; }
+  .guide-mid-gray:hover,
+  .guide-mid-gray:focus {
+    box-shadow: 0 0 0 2px #303030; }
+
+.home-intro ul li.guide-mid-gray,
+.home-intro ul li.guide-putty {
+  color: #303030;
+  border: 1px solid #838383; }
+
 /*# sourceMappingURL=main.css.map */

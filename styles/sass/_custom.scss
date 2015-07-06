@@ -219,9 +219,28 @@ footer {
 }
 
 
-// 
+// Styleguide
 //============================================
 
+@each $name, $value in $guide-colors {
+  .guide-#{$name} {
+    background-color: $value;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: grayscale;
 
+    &:hover,
+    &:focus {
+      box-shadow: 0 0 0 2px $light-black;
+    }
+  }
+}
+
+.home-intro ul li.guide-mid-gray,
+.home-intro ul li.guide-putty {
+
+  color: $light-black;
+  border: 1px solid $dark-putty;
+
+}
 
 

@@ -49,7 +49,6 @@ app.set('view engine', 'html');
 app.use('/img', express.static(__dirname + '/img'));
 app.use('/js', express.static(__dirname + '/js'));
 app.use('/js/lib', express.static(__dirname + '/lib'));
-// app.use('/css', express.static(__dirname + '/css'));
 app.use('/css', sass({
   src: __dirname + '/styles/sass',
   dest: __dirname + '/styles/css',
@@ -58,6 +57,7 @@ app.use('/css', sass({
   force: true,
   sourceMap: true
 }));
+app.use('/css/fonts', express.static(__dirname + '/styles/css/fonts'));
 app.use('/data', express.static(__dirname + '/data/output'));
 
 var data = new Festoon({

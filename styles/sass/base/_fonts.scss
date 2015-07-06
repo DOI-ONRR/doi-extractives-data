@@ -1,5 +1,2 @@
-@import url(fonts/fonts.css);
-
-body {
-  font-family: Montserrat, "Helvetica Neue", Helvetica, arial, sans-serif;
-}
+// include the CSS files with relative @font-face declarations
+@import url('fonts/lato/lato.css');

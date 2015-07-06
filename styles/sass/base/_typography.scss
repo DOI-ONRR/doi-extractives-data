@@ -21,10 +21,10 @@ a {
 }
 
 // Typeographic multipliers, base 16
-$h1: 1.7;
-$h2: 1.4;
-$h3: 1.125;
-$h4: 1;
+$h1: 1.7; //27px
+$h2: 1.4; //22px
+$h3: 1.125; //18px
+$h4: 1; //16px
 
 // Heading styles
 h1, h2, h3, h4
@@ -94,13 +94,13 @@ p {
 }
 
 .callout {
-  @include font-size(2.1);
+  @include font-size(2.1); //33px
   color: $light-black;
   margin-bottom: $base-padding;
 }
 
 .huge {
-  @include font-size(3);
+  @include font-size(3); //48px
 }
 
 .search_category {
@@ -130,7 +130,7 @@ p {
 
 .link-expand,
 .link-more {
-  @include font-size(0.85);
+  @include font-size(0.85); //13px
   color: $cobalt;
   font-weight: 500;
   text-decoration: none;

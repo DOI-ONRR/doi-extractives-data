@@ -192,6 +192,9 @@ app.get('/resources/:resource',
   data.decorate('resource'),
   view('resource'));
 
+// styleguide
+app.get('/styleguide', view('styleguide'));
+
 // locations page
 app.get('/locations',
   view('locations'));

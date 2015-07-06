@@ -13,17 +13,17 @@ $base-heading-line-height: 1.3;
 
 // Colors
 $white: #ffffff;
-$black: #040404;
-$light-black: #303030;
-$putty: #f4f4f4;
-$dark-putty: #838383;
-$green: #9fa63b;
-$purple: #965bcd;
-$red: #c5403c;
-$blue: #1e7caa;
-$cobalt: #1075a5;
-$dark-gray: #666666;
-$mid-gray: #e1e1e1;
+$black: #040404; //-
+$light-black: #303030; //-
+$putty: #f4f4f4; //-
+$dark-putty: #838383; //-
+$green: #9fa63b; //
+$purple: #965bcd;//
+$red: #c5403c;//
+$blue: #1e7caa;//
+$cobalt: #1075a5; //-
+$dark-gray: #666666;//
+$mid-gray: #e1e1e1; //-
 
 // old colors here. deprecate.
 $dark-blue: #0e365b;
@@ -43,6 +43,15 @@ $colors: (
   minerals: $red,
   renewables: $blue,
   other: $dark-gray
+);
+
+$guide-colors: (
+  black: $black,
+  light-black: $light-black,
+  putty: $putty,
+  dark-putty: $dark-putty,
+  cobalt: $cobalt,
+  mid-gray: $mid-gray
 );
 
 // Background Color

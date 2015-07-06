@@ -1,0 +1,114 @@
+{% extends 'base.html' %}
+
+{% from 'macros.html' import location_selector %}
+
+{% block main %}
+  <section id="index" class="container">
+
+    <div class="home-intro">
+
+      <div>
+
+        <h1><span class="huge">Lato Light 48px Title</span><br> with further title text here in Lato Light 33px and #303030</h1>
+
+        <h2>Lato Light 24px H2 in #838383</h2>
+
+        <ul>
+          <a href="#"><li class="product-oilgas">#9fa63b</li></a>
+          <a href="#"><li class="product-coal">#965bcd</li></a>
+          <a href="#"><li class="product-minerals">#c5403c</li></a>
+          <a href="#"><li class="product-renewables">#1e7caa</li></a>
+          <a href="#"><li class="product-other">#666666</li></a>
+        </ul>
+
+        <ul>
+          <a href="#"><li class="guide-black">#040404</li></a>
+          <a href="#"><li class="guide-light-black">#303030</li></a>
+          <a href="#"><li class="guide-dark-putty">#838383</li></a>
+          <a href="#"><li class="guide-mid-gray">#e1e1e1</li></a>
+          <a href="#"><li class="guide-putty">#f4f4f4</li></a>
+        </ul>
+
+        <a href="#" class="link-more home-intro-more" style="display:block">Link to more Lato Regular 13px in #1075a5 <i class="fa fa-chevron-right"></i></a>
+
+      </div>
+
+      <article class="article_module">
+
+        <img style="width:100%; height:130px;">
+
+        <h1>Lato Bold 14px H1 in #303030</h1>
+
+        <p>Lado Light 12px Body Text in #838383. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sapien odio, lobortis non ex in, sollicitudin iaculis velit. Pellentesque lobortis, justo vel imperdiet suscipit, orci lectus pulvinar nulla.</p>
+
+        <form>
+          <label>Form label:
+            {{ location_selector(locations=locations) }}
+          </label>
+        </form>
+
+      </article>
+
+    </div>
+
+    <!-- <div class="home-modules">
+
+      <article>
+
+        <img style="width:100%; height:130px;">
+
+        <h1>What natural resources do we have in the US?</h1>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sapien odio, lobortis non ex in, sollicitudin iaculis velit. Pellentesque lobortis, justo vel imperdiet suscipit, orci lectus pulvinar nulla.</p>
+
+        <a href="#" class="link-more">Find out more <i class="fa fa-chevron-right"></i></a>
+
+      </article>
+
+      <article>
+
+        <img style="width:100%; height:130px;">
+        <h1>How do extractive industries impact my community?</h1>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sapien odio, lobortis non ex in, sollicitudin iaculis velit. Pellentesque lobortis, justo vel imperdiet suscipit, orci lectus pulvinar nulla.</p>
+
+        <a href="#" class="link-more">View the case studies <i class="fa fa-chevron-right"></i></a>
+
+      </article>
+
+      <article>
+
+        <img style="width:100%; height:130px;">
+
+        <h1>What companies work in these industries?</h1>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sapien odio, lobortis non ex in, sollicitudin iaculis velit. Pellentesque lobortis, justo vel imperdiet suscipit, orci lectus pulvinar nulla.</p>
+
+        <a href="#" class="link-more">Learn about these companies <i class="fa fa-chevron-right"></i></a>
+
+      </article>
+
+      <article>
+
+        <img style="width:100%; height:130px;">
+
+        <h1>Where is this extraction taking place?</h1>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sapien odio, lobortis non ex in, sollicitudin iaculis velit. Pellentesque lobortis, justo vel imperdiet suscipit, orci lectus pulvinar nulla.</p>
+
+        <a href="#" class="link-more">Or compare data for all resources <i class="fa fa-chevron-right"></i></a>
+
+      </article>
+
+    </div> -->
+
+    <div class="home-final">
+
+      <h1>Not sure where to go? Start here &#8230;</h1>
+
+      <h2><a href="#">Learn how natural resources become federal revenues <i class="fa fa-chevron-right"></i></a></h2>
+
+    </div>
+
+  </section>
+{% endblock %}

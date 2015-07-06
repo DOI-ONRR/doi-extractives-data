@@ -3,8 +3,8 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url(fonts/fonts.css);
-@import url(fonts/fonts.css);
+@import url("fonts/lato/lato.css");
+@import url("fonts/lato/lato.css");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -176,9 +176,6 @@ input[type="submit"] {
     input[type="submit"].button-add:focus {
       background-color: #ffffff;
       color: #216d09; }
-
-body {
-  font-family: Montserrat, "Helvetica Neue", Helvetica, arial, sans-serif; }
 
 form {
   text-align: left; }
@@ -630,9 +627,6 @@ input[type="submit"].button-add {
   .button.button-add:focus,
   input[type="submit"].button-add:focus {
     text-decoration: underline; }
-
-body {
-  font-family: Montserrat, "Helvetica Neue", Helvetica, arial, sans-serif; }
 
 /*!
  *  Font Awesome 4.3.0 by @davegandy - http://fontawesome.io - @fontawesome

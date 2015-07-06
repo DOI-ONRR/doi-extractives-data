@@ -10,7 +10,8 @@
 
 // include fonts (and @import font-face declarations from /css/fonts)
 @import "base/fonts";
-// include FontAwesome
+
+// include FontAwesome Sass variables, etc.
 @import "font-awesome/font-awesome";
 
 // import site-specific custom styles

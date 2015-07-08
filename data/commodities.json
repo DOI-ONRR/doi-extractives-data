@@ -2,9 +2,9 @@
   "groups": {
     "oilgas":     "Oil & Gas",
     "coal":       "Coal",
-    "renewables": "Renewables",
     "minerals":   "Hard Minerals",
-    "other":      "Other Products"
+    "renewables": "Renewables",
+    "other":      "Other"
   },
   "subgroups": {
   },

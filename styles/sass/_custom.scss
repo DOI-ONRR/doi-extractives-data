@@ -173,7 +173,7 @@ footer {
     @include font-size($h2);
     color: $light-black;
     font-weight: 600;
-    padding-top: $base-padding;
+    padding-top: 0;
     padding-right: $base-padding;
     margin-bottom: $base-padding-lite;
   }

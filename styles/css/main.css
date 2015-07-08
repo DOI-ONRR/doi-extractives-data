@@ -2557,20 +2557,51 @@ footer {
   padding-bottom: 3.125em; }
   footer img {
     width: 150px; }
-  footer > div > div:first-of-type {
+  footer h1 {
+    font-size: 10px;
+    font-size: 1rem;
+    color: #ffffff;
+    padding-bottom: 0.41667em; }
+  footer p {
+    color: #ffffff; }
+    footer p.footer-intro {
+      font-size: 17px;
+      font-size: 1.7rem;
+      line-height: 1.2;
+      margin-bottom: 1em; }
+    footer p:nth-of-type(2) {
+      font-size: 11.25px;
+      font-size: 1.125rem;
+      margin-bottom: 3.125em; }
+  footer .footer-col-left {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 74.41059%; }
-    footer > div > div:first-of-type:last-child {
+    width: 65.88078%; }
+    footer .footer-col-left:last-child {
       margin-right: 0; }
-  footer > div > div:nth-of-type(2) {
+  footer .footer-col-right {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 23.23176%;
+    width: 31.76157%;
     margin-right: 0; }
-    footer > div > div:nth-of-type(2):last-child {
+    footer .footer-col-right:last-child {
+      margin-right: 0; }
+  footer .footer-col-inner-left {
+    float: left;
+    display: block;
+    margin-right: 3.57866%;
+    width: 61.158%; }
+    footer .footer-col-inner-left:last-child {
+      margin-right: 0; }
+  footer .footer-col-inner-right {
+    float: left;
+    display: block;
+    margin-right: 3.57866%;
+    width: 35.26334%;
+    margin-right: 0; }
+    footer .footer-col-inner-right:last-child {
       margin-right: 0; }
 
 .home-intro {

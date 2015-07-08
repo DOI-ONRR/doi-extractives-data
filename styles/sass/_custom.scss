@@ -110,14 +110,42 @@ footer {
     width: 150px;
   }
 
-  > div > div {
-    &:first-of-type {
-      @include span-columns(9);
+  h1 {
+    @include font-size($h4);
+    color: $white;
+    padding-bottom: $base-padding-lite;
+  }
+
+  p {
+    color: $white;
+    &.footer-intro {
+      @include font-size($h1);
+      line-height: 1.2;
+      margin-bottom: 1em;
     }
+
     &:nth-of-type(2) {
-      @include span-columns(3);
-      @include omega();
+      @include font-size($h3);
+      margin-bottom: $base-padding-extra;
     }
+  }
+  
+  .footer-col-left {
+    @include span-columns(8);
+  }
+
+  .footer-col-right {
+    @include span-columns(4);
+    @include omega();
+  }
+
+  .footer-col-inner-left {
+    @include span-columns(5 of 8);
+  }
+
+  .footer-col-inner-right {
+    @include span-columns(3 of 8);
+    @include omega();
   }
 }
 

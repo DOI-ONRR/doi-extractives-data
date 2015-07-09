@@ -627,6 +627,12 @@ input[type="submit"].button-add {
   .button.button-add:focus,
   input[type="submit"].button-add:focus {
     text-decoration: underline; }
+  .link-expand .shrink-fa,
+  .link-more .shrink-fa, button.button-add .shrink-fa,
+  .button.button-add .shrink-fa,
+  input[type="submit"].button-add .shrink-fa {
+    font-size: 6.5px;
+    font-size: 0.65rem; }
 
 /*!
  *  Font Awesome 4.3.0 by @davegandy - http://fontawesome.io - @fontawesome
@@ -2448,10 +2454,6 @@ input[type="submit"].button-add {
   height: px;
   overflow: hidden; }
 
-.shrink-fa {
-  font-size: 6.5px;
-  font-size: 0.65rem; }
-
 html {
   box-sizing: border-box; }
 
@@ -2463,10 +2465,6 @@ body {
 
 strong {
   font-weight: 700; }
-
-a i {
-  font-size: 5px;
-  font-size: 0.5rem; }
 
 a .expand,
 a .more {

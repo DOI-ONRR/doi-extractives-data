@@ -18,10 +18,6 @@
   overflow: hidden; 
 }
 
-.shrink-fa {
-  @include font-size(0.65);
-}
-
 
 // Site-wide
 //============================================
@@ -42,9 +38,6 @@ strong {
 }
 
 a {
-  i {
-    @include font-size(0.5);
-  }
 
   .expand, 
   .more {

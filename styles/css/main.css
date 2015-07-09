@@ -2448,6 +2448,10 @@ input[type="submit"].button-add {
   height: px;
   overflow: hidden; }
 
+.shrink-fa {
+  font-size: 6.5px;
+  font-size: 0.65rem; }
+
 html {
   box-sizing: border-box; }
 
@@ -2459,6 +2463,10 @@ body {
 
 strong {
   font-weight: 700; }
+
+a i {
+  font-size: 5px;
+  font-size: 0.5rem; }
 
 a .expand,
 a .more {

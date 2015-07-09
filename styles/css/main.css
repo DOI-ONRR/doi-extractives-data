@@ -181,7 +181,7 @@ form {
   text-align: left; }
 
 fieldset {
-  border-top: 3px solid #e1e1e1;
+  border-top: 3px solid #303030;
   padding-bottom: 1em; }
   fieldset > fieldset {
     border-top: none; }
@@ -195,9 +195,7 @@ select {
   font-family: Lato, "Helvetica Neue", Helvetica, arial, sans-serif; }
 
 label {
-  font-size: 8.75px;
-  font-size: 0.875rem;
-  font-weight: 600;
+  color: #666666;
   margin-bottom: 0.375; }
   label.required:after {
     content: "*"; }
@@ -214,7 +212,7 @@ select[multiple=multiple] {
   transition: border-color;
   background-color: white;
   border-radius: 5px;
-  border: 1px solid #e1e1e1;
+  border: 1px solid #303030;
   box-shadow: none;
   box-sizing: border-box;
   font-family: Lato, "Helvetica Neue", Helvetica, arial, sans-serif;
@@ -248,7 +246,7 @@ select[multiple=multiple] {
   textarea:hover,
   input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="email"]:hover, input[type="month"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="time"]:hover, input[type="url"]:hover, input[type="week"]:hover, textarea:hover,
   select[multiple=multiple]:hover {
-    border-color: #c8c8c8; }
+    border-color: #171717; }
   textarea:focus,
   input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus, textarea:focus,
   select[multiple=multiple]:focus {
@@ -352,13 +350,15 @@ select {
   -o-appearance: none;
   appearance: none;
   width: 100%;
+  background-image: url("../img/angle-down.png");
   background-repeat: no-repeat;
   background-position: 99% 50%;
   background-size: 2rem;
-  background-color: #666666;
-  border: 1px solid #e1e1e1;
+  background-color: #ffffff;
+  border: 1px solid #303030;
   border-radius: 5px;
   color: #666666;
+  font-weight: 200;
   margin-bottom: 1em;
   overflow: hidden;
   padding: 0.5em 7rem 0.5em 0.8rem;

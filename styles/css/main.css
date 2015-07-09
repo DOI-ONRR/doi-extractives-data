@@ -2469,9 +2469,9 @@ a .more {
 .product-oilgas {
   background-color: #9fa63b;
   box-shadow: inset 0 0 4px #9fa63b;
-  transition: box-shadow 0.5s ease;
   -webkit-font-smoothing: antialiased;
-  -moz-font-smoothing: grayscale; }
+  -moz-font-smoothing: grayscale;
+  transition: box-shadow 0.2s linear; }
   .product-oilgas:hover,
   .product-oilgas:focus {
     box-shadow: inset 0 0 0 4px rgba(0, 0, 0, 0.5); }
@@ -2481,9 +2481,9 @@ a .more {
 .product-coal {
   background-color: #965bcd;
   box-shadow: inset 0 0 4px #965bcd;
-  transition: box-shadow 0.5s ease;
   -webkit-font-smoothing: antialiased;
-  -moz-font-smoothing: grayscale; }
+  -moz-font-smoothing: grayscale;
+  transition: box-shadow 0.2s linear; }
   .product-coal:hover,
   .product-coal:focus {
     box-shadow: inset 0 0 0 4px rgba(0, 0, 0, 0.5); }
@@ -2493,9 +2493,9 @@ a .more {
 .product-minerals {
   background-color: #d44116;
   box-shadow: inset 0 0 4px #d44116;
-  transition: box-shadow 0.5s ease;
   -webkit-font-smoothing: antialiased;
-  -moz-font-smoothing: grayscale; }
+  -moz-font-smoothing: grayscale;
+  transition: box-shadow 0.2s linear; }
   .product-minerals:hover,
   .product-minerals:focus {
     box-shadow: inset 0 0 0 4px rgba(0, 0, 0, 0.5); }
@@ -2505,9 +2505,9 @@ a .more {
 .product-renewables {
   background-color: #1e7caa;
   box-shadow: inset 0 0 4px #1e7caa;
-  transition: box-shadow 0.5s ease;
   -webkit-font-smoothing: antialiased;
-  -moz-font-smoothing: grayscale; }
+  -moz-font-smoothing: grayscale;
+  transition: box-shadow 0.2s linear; }
   .product-renewables:hover,
   .product-renewables:focus {
     box-shadow: inset 0 0 0 4px rgba(0, 0, 0, 0.5); }
@@ -2517,9 +2517,9 @@ a .more {
 .product-other {
   background-color: #666666;
   box-shadow: inset 0 0 4px #666666;
-  transition: box-shadow 0.5s ease;
   -webkit-font-smoothing: antialiased;
-  -moz-font-smoothing: grayscale; }
+  -moz-font-smoothing: grayscale;
+  transition: box-shadow 0.2s linear; }
   .product-other:hover,
   .product-other:focus {
     box-shadow: inset 0 0 0 4px rgba(0, 0, 0, 0.5); }

@@ -49,9 +49,9 @@ a {
   .product-#{$name} {
     background-color: $value;
     box-shadow: inset 0 0 4px $value;
-    transition: box-shadow 0.5s ease;
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: grayscale;
+    transition: box-shadow 0.2s linear;
 
     &:hover,
     &:focus {

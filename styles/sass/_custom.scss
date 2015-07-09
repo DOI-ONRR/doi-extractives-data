@@ -18,29 +18,15 @@
   overflow: hidden; 
 }
 
-.group_inline {
-  display: inline-block;
-  width: 100%;
-}
-
-.group_inline-right {
-  float: right;
-}
-
-.group_inline-left {
-  float: left;
-  width: 88%;
-  // This sets the width of the first group item
-  // Would like a way to set this programatically
-  // This is also not responsive. Fix.
-}
-
 
 // Site-wide
 //============================================
 
-* {
+html {
   box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 body {
@@ -52,6 +38,7 @@ strong {
 }
 
 a {
+
   .expand, 
   .more {
     @include font-size(0.75);
@@ -62,12 +49,18 @@ a {
 @each $name, $value in $colors {
   .product-#{$name} {
     background-color: $value;
+    box-shadow: inset 0 0 4px $value;
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: grayscale;
+    transition: box-shadow 0.2s linear;
 
     &:hover,
     &:focus {
-      box-shadow: 0 0 0 2px $light-black;
+      box-shadow: inset 0 0 0 4px rgba(0, 0, 0, 0.5);
+    }
+
+    &:active {
+      box-shadow: inset 0 0 0 50px rgba(0, 0, 0, 0.5);
     }
   }
 }
@@ -127,14 +120,42 @@ footer {
     width: 150px;
   }
 
-  > div > div {
-    &:first-of-type {
-      @include span-columns(9);
+  h1 {
+    @include font-size($h4);
+    color: $white;
+    padding-bottom: $base-padding-lite;
+  }
+
+  p {
+    color: $white;
+    &.footer-intro {
+      @include font-size($h1);
+      line-height: 1.2;
+      margin-bottom: 1em;
     }
+
     &:nth-of-type(2) {
-      @include span-columns(3);
-      @include omega();
+      @include font-size($h3);
+      margin-bottom: $base-padding-extra;
     }
+  }
+  
+  .footer-col-left {
+    @include span-columns(8);
+  }
+
+  .footer-col-right {
+    @include span-columns(4);
+    @include omega();
+  }
+
+  .footer-col-inner-left {
+    @include span-columns(5 of 8);
+  }
+
+  .footer-col-inner-right {
+    @include span-columns(3 of 8);
+    @include omega();
   }
 }
 
@@ -150,7 +171,7 @@ footer {
     @include omega();
   }
 
-  div:first-of-type {
+  > div:first-of-type {
     @include span-columns(8);
   }
 
@@ -169,8 +190,8 @@ footer {
       float: left;
       font-weight: 600;
       padding: $base-padding/2;
-      margin-right: $base-padding/3;
-      width: 130px;
+      margin-right: $base-padding/2;
+      width: 150px;
     }
   }
 }
@@ -183,7 +204,6 @@ footer {
   background-color: $white;
   border-radius: 10px;
   height: 500px;
-  padding: $base-padding;
   position: relative;
   margin-top: $base-padding;
 
@@ -191,7 +211,7 @@ footer {
     @include font-size($h2);
     color: $light-black;
     font-weight: 600;
-    padding-top: $base-padding;
+    padding-top: 0;
     padding-right: $base-padding;
     margin-bottom: $base-padding-lite;
   }
@@ -201,6 +221,16 @@ footer {
     position: absolute;
     bottom: $base-padding;
   }
+
+  img {
+    border-bottom: 6px solid $putty;
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+  }
+}
+
+.article_module-content {
+  padding: $base-padding;
 }
 
 .home-modules {

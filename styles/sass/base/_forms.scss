@@ -24,8 +24,7 @@ select {
 }
 
 label {
-  @include font-size(0.875);
-  font-weight: 600;
+  color: $dark-gray;
   margin-bottom: $base-line-height / 4;
 
   &.required:after {
@@ -169,14 +168,15 @@ input[type="file"] {
 select {
   @include appearance(none);
   width: 100%;
-  //background-image: url('../img/angle-down.png');
+  background-image: url('../img/angle-down.png');
   background-repeat: no-repeat;
   background-position: 99% 50%;
   background-size: 2rem;
-  background-color: $dark-gray;
+  background-color: $white;
   border: 1px solid $form-border-color;
   border-radius: $form-border-radius;
   color: $dark-gray;
+  font-weight: 200;
   margin-bottom: 1em;
   overflow: hidden;
   padding: 0.5em 7rem 0.5em 0.8rem;

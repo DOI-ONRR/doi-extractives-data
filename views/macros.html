@@ -23,7 +23,7 @@
 
 {% macro location_selector(locations=[], prefix='/locations/', id=null, value=null) %}
   <select id="{{ id }}" onchange="if (this.value) window.location = '{{ prefix }}' + this.value">
-    <option value=""></option>
+    <option value="">States and offshore areas</option>
     <optgroup label="States">
       {% for state in locations.onshore %}
       <option

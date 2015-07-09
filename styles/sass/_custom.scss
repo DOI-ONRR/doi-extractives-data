@@ -22,8 +22,11 @@
 // Site-wide
 //============================================
 
-* {
+html {
   box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 body {
@@ -45,12 +48,18 @@ a {
 @each $name, $value in $colors {
   .product-#{$name} {
     background-color: $value;
+    box-shadow: inset 0 0 4px $value;
+    transition: box-shadow 0.5s ease;
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: grayscale;
 
     &:hover,
     &:focus {
-      box-shadow: 0 0 0 2px $light-black;
+      box-shadow: inset 0 0 0 4px rgba(0, 0, 0, 0.5);
+    }
+
+    &:active {
+      box-shadow: inset 0 0 0 50px rgba(0, 0, 0, 0.5);
     }
   }
 }
@@ -180,8 +189,8 @@ footer {
       float: left;
       font-weight: 600;
       padding: $base-padding/2;
-      margin-right: $base-padding/3;
-      width: 130px;
+      margin-right: $base-padding/2;
+      width: 150px;
     }
   }
 }

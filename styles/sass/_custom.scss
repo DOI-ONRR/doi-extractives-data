@@ -364,12 +364,15 @@ footer {
   }
 }
 
-.home-intro ul li.guide-mid-gray,
-.home-intro ul li.guide-putty {
+.styleguide {
 
-  color: $light-black;
-  border: 1px solid $dark-putty;
+  ul li {
+    width: 100px;
 
+    &.guide-mid-gray,
+    &.guide-putty {
+      color: $light-black;
+      border: 1px solid $dark-putty;
+    }
+  }
 }
-
-

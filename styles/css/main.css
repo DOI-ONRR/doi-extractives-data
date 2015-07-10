@@ -2834,9 +2834,11 @@ footer {
   .guide-mid-gray:focus {
     box-shadow: 0 0 0 2px #303030; }
 
-.home-intro ul li.guide-mid-gray,
-.home-intro ul li.guide-putty {
-  color: #303030;
-  border: 1px solid #838383; }
+.styleguide ul li {
+  width: 100px; }
+  .styleguide ul li.guide-mid-gray,
+  .styleguide ul li.guide-putty {
+    color: #303030;
+    border: 1px solid #838383; }
 
 /*# sourceMappingURL=main.css.map */

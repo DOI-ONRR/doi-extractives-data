@@ -3,9 +3,9 @@
 {% from 'macros.html' import location_selector %}
 
 {% block main %}
-  <section id="index" class="container">
+  <section class="container">
 
-    <div class="home-intro">
+    <div class="home-intro styleguide">
 
       <div>
 
@@ -33,74 +33,28 @@
 
       </div>
 
-      <article class="article_module">
+        <article class="article_module">
 
-        <img style="width:100%; height:130px;">
+          <img src="/img/placeholder_module.png" alt="Placeholder">
 
-        <h1>Lato Bold 14px H1 in #303030</h1>
+          <div class="article_module-content">
 
-        <p>Lado Light 12px Body Text in #838383. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sapien odio, lobortis non ex in, sollicitudin iaculis velit. Pellentesque lobortis, justo vel imperdiet suscipit, orci lectus pulvinar nulla.</p>
+            <h1>Lato Bold 14px H1 in #303030</h1>
 
-        <form>
-          <label>Form label:
-            {{ location_selector(locations=locations) }}
-          </label>
-        </form>
+            <p>Lado Light 12px Body Text in #838383. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sapien odio, lobortis non ex in, sollicitudin iaculis velit. Pellentesque lobortis, justo vel imperdiet suscipit, orci lectus pulvinar nulla.</p>
 
-      </article>
+            <form>
+              <label>Form label:
+                {{ location_selector(locations=locations) }}
+              </label>
+            </form>
+
+          </div>
+
+        </article>
 
     </div>
 
-    <!-- <div class="home-modules">
-
-      <article>
-
-        <img style="width:100%; height:130px;">
-
-        <h1>What natural resources do we have in the US?</h1>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sapien odio, lobortis non ex in, sollicitudin iaculis velit. Pellentesque lobortis, justo vel imperdiet suscipit, orci lectus pulvinar nulla.</p>
-
-        <a href="#" class="link-more">Find out more <i class="fa fa-chevron-right"></i></a>
-
-      </article>
-
-      <article>
-
-        <img style="width:100%; height:130px;">
-        <h1>How do extractive industries impact my community?</h1>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sapien odio, lobortis non ex in, sollicitudin iaculis velit. Pellentesque lobortis, justo vel imperdiet suscipit, orci lectus pulvinar nulla.</p>
-
-        <a href="#" class="link-more">View the case studies <i class="fa fa-chevron-right"></i></a>
-
-      </article>
-
-      <article>
-
-        <img style="width:100%; height:130px;">
-
-        <h1>What companies work in these industries?</h1>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sapien odio, lobortis non ex in, sollicitudin iaculis velit. Pellentesque lobortis, justo vel imperdiet suscipit, orci lectus pulvinar nulla.</p>
-
-        <a href="#" class="link-more">Learn about these companies <i class="fa fa-chevron-right"></i></a>
-
-      </article>
-
-      <article>
-
-        <img style="width:100%; height:130px;">
-
-        <h1>Where is this extraction taking place?</h1>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sapien odio, lobortis non ex in, sollicitudin iaculis velit. Pellentesque lobortis, justo vel imperdiet suscipit, orci lectus pulvinar nulla.</p>
-
-        <a href="#" class="link-more">Or compare data for all resources <i class="fa fa-chevron-right"></i></a>
-
-      </article>
-
-    </div> -->
 
     <div class="home-final">
 

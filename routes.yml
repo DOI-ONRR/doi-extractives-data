@@ -1,0 +1,45 @@
+/:
+  view: index
+
+/communities:
+  view: subpage
+
+/locations:
+  view: locations
+/locations/onshore:
+  redirect: /locations
+
+/locations/onshore/:state.json:
+  data: state
+  api: state
+
+/locations/onshore/:state/revenues.(csv|json):
+  data: stateRevenues
+  api:
+    key: stateRevenues
+    params:
+      filter: true
+
+/locations/onshore/:state:
+  data:
+    - state
+    - counties
+  view: state
+
+/locations/onshore/:state/:county:
+  data:
+    - state
+    - county
+  view: county
+/locations/offshore/:area:
+  data: area
+  view: offshore-area
+
+/resources:
+  view: resources
+/resources/:resource:
+  data: resource
+  view: resource
+
+/styleguide:
+  view: styleguide

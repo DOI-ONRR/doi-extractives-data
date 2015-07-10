@@ -183,53 +183,9 @@ app.use(function(req, res, next) {
   next();
 }, data.decorate(['resources', 'locations']));
 
-// index
-app.get('/', view('index'));
-
-// index
-app.get('/resources', view('resources'));
-app.get('/resources/:resource',
-  data.decorate('resource'),
-  view('resource'));
-
-// styleguide
-app.get('/styleguide', view('styleguide'));
-
-// communities
-app.get('/communities', view('subpage'));
-
-// locations page
-app.get('/locations',
-  view('locations'));
-
-// redirect /locations/onshore -> /locations
-app.get('/locations/onshore', redirect('/locations'));
-
-// state data
-app.get('/locations/onshore/:state.json',
-  data.decorate('state'),
-  api('state'));
-
-// state page
-app.get('/locations/onshore/:state/revenues.(csv|json)',
-  data.decorate('stateRevenues'),
-  api('stateRevenues', {filter: true}));
-
-// state page
-app.get('/locations/onshore/:state',
-  data.decorate(['state', 'counties']),
-  view('state'));
-
-// state page
-app.get('/locations/onshore/:state/:county',
-  data.decorate(['state', 'county']),
-  view('county'));
-
-// offshore area page
-app.get('/locations/offshore/:area',
-  // XXX: {area: 'offshoreArea'} should work!
-  data.decorate('area'),
-  view('offshore-area'));
+var yaml = require('js-yaml');
+var routes = yaml.safeLoad(fs.readFileSync('routes.yml', 'utf8'));
+helpers.addRoutes(app, routes, data);
 
 app.listen(appEnv.port, appEnv.bind, function(error) {
   if (error) return console.error('error:', error);

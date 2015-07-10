@@ -572,10 +572,17 @@ button {
 p {
   font-size: 9px;
   font-size: 0.9rem;
-  color: #838383;
+  color: #6a6a6a;
   font-weight: 200; }
 
-.callout, .home-intro h1 {
+.article_heading, .article_module h1, .home-modules article h1, .communities-intro h1, .communities-content h2 {
+  font-size: 14px;
+  font-size: 1.4rem;
+  color: #303030;
+  font-weight: 600;
+  padding-top: 0; }
+
+.callout, .home-intro .home-intro-callout {
   font-size: 21px;
   font-size: 2.1rem;
   color: #303030;
@@ -2537,7 +2544,8 @@ header {
   margin-left: auto;
   margin-right: auto;
   padding-left: 1.25em;
-  padding-right: 1.25em; }
+  padding-right: 1.25em;
+  margin-bottom: 1.25em; }
   header::after {
     clear: both;
     content: "";
@@ -2650,7 +2658,7 @@ footer {
     width: 65.88078%; }
     .home-intro > div:first-of-type:last-child {
       margin-right: 0; }
-  .home-intro h1 {
+  .home-intro .home-intro-callout {
     width: 93%; }
   .home-intro ul {
     display: inline-block;
@@ -2674,13 +2682,10 @@ footer {
   position: relative;
   margin-top: 1.25em; }
   .article_module h1, .home-modules article h1 {
-    font-size: 14px;
-    font-size: 1.4rem;
-    color: #303030;
-    font-weight: 600;
-    padding-top: 0;
     padding-right: 1.25em;
     margin-bottom: 0.41667em; }
+    .article_module h1 a, .home-modules article h1 a {
+      color: #303030; }
   .article_module form,
   .home-modules article form,
   .article_module .link-more, .home-modules article .link-more, .article_module button.button-add, .home-modules article button.button-add, .article_module .button.button-add, .home-modules article .button.button-add, .article_module input[type="submit"].button-add, .home-modules article input[type="submit"].button-add {
@@ -2716,6 +2721,70 @@ footer {
   text-align: center; }
   .home-final:last-child {
     margin-right: 0; }
+
+.communities-intro {
+  background-color: #ffffff;
+  padding-top: 1.875em;
+  padding-bottom: 1.25em; }
+  .communities-intro img {
+    height: 370px; }
+  .communities-intro h1 {
+    font-size: 17px;
+    font-size: 1.7rem;
+    padding-bottom: 0.41667em; }
+  .communities-intro select {
+    width: 400px; }
+  .communities-intro p {
+    font-size: 11px;
+    font-size: 1.1rem;
+    margin-bottom: 3.125em; }
+
+.communities-left {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 57.35098%; }
+  .communities-left:last-child {
+    margin-right: 0; }
+
+.communities-right {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 40.29137%; }
+  .communities-right:last-child {
+    margin-right: 0; }
+
+.communities-content {
+  padding-top: 1.25em;
+  padding-bottom: 3.125em; }
+  .communities-content h2 {
+    padding-bottom: 1.25em; }
+  .communities-content h3 img {
+    height: 16px;
+    padding-right: 8px; }
+  .communities-content nav {
+    margin-top: 3.125em; }
+    .communities-content nav ul li {
+      padding: 5px; }
+      .communities-content nav ul li a {
+        color: #666666;
+        padding: 5px; }
+        .communities-content nav ul li a:hover,
+        .communities-content nav ul li a:focus {
+          background-color: #ffffff;
+          color: #1075a5;
+          text-decoration: none; }
+      .communities-content nav ul li.active a {
+        border: 1px solid #e1e1e1;
+        border-radius: 2px;
+        color: #1075a5; }
+  .communities-content p {
+    padding-bottom: 1.25em; }
+  .communities-content .communities-county {
+    width: 200px; }
+  .communities-content .communities-left {
+    padding-right: 3.125em; }
 
 .guide-black {
   background-color: #040404;

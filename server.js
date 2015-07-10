@@ -195,6 +195,9 @@ app.get('/resources/:resource',
 // styleguide
 app.get('/styleguide', view('styleguide'));
 
+// communities
+app.get('/communities', view('subpage'));
+
 // locations page
 app.get('/locations',
   view('locations'));

@@ -71,6 +71,7 @@ a {
 
 header {
   @include padded-container();
+  margin-bottom: $base-padding;
 
   a {
     color: $dark-putty;
@@ -175,7 +176,7 @@ footer {
     @include span-columns(8);
   }
 
-  h1 {
+  .home-intro-callout {
     @extend .callout;
     width: 93%;
   }
@@ -208,12 +209,13 @@ footer {
   margin-top: $base-padding;
 
   h1 {
-    @include font-size($h2);
-    color: $light-black;
-    font-weight: 600;
-    padding-top: 0;
+    @extend .article_heading;
     padding-right: $base-padding;
     margin-bottom: $base-padding-lite;
+
+    a {
+      color: $light-black;
+    }
   }
 
   form,
@@ -248,6 +250,103 @@ footer {
   text-align: center;
 }
 
+// Community Case Studies
+//============================================
+
+.communities-intro {
+  background-color: $white;
+  padding-top: $base-padding-large;
+  padding-bottom: $base-padding;
+
+  img {
+    height: 370px;
+  }
+
+  h1 {
+    @extend .article_heading;
+    @include font-size($h1);
+    padding-bottom: $base-padding-lite;
+  }
+
+  select {
+    width: 400px;
+  }
+
+  p {
+    @include font-size(1.1);
+    margin-bottom: $base-padding-extra;
+  }
+}
+
+.communities-left {
+  @include span-columns(7);
+}
+
+.communities-right {
+  @include span-columns(5);
+}
+
+.communities-content {
+  padding-top: $base-padding;
+  padding-bottom: $base-padding-extra;
+
+  h2 {
+    @extend .article_heading;
+    padding-bottom: $base-padding;
+  }
+
+  h3 {
+    img {
+      height: 16px;
+      padding-right: 8px;
+    }
+  }
+
+  nav {
+    margin-top: $base-padding-extra;
+
+    ul li {
+      padding: 5px;
+
+      a {
+        color: $dark-gray;
+        padding: 5px;
+
+        &:hover,
+        &:focus {
+          background-color: $white;
+          color: $cobalt;
+          text-decoration: none;
+        }
+      }
+
+      &.active a {
+        border: 1px solid $mid-gray;
+        border-radius: 2px;
+        color: $cobalt;
+      }
+    }
+  }
+
+  p {
+    padding-bottom: $base-padding;
+  }
+
+  .communities-county {
+    width: 200px;
+  }
+
+  .communities-left {
+    padding-right: $base-padding-extra;
+    //order-right: 1px solid $mid-gray;
+  }
+
+  .communities-right {
+    //padding-left: $base-padding-extra;
+    //border-left: 1px solid $base-border-color;
+  }
+}
+
 
 // Styleguide
 //============================================
@@ -265,12 +364,15 @@ footer {
   }
 }
 
-.home-intro ul li.guide-mid-gray,
-.home-intro ul li.guide-putty {
+.styleguide {
 
-  color: $light-black;
-  border: 1px solid $dark-putty;
+  ul li {
+    width: 100px;
 
+    &.guide-mid-gray,
+    &.guide-putty {
+      color: $light-black;
+      border: 1px solid $dark-putty;
+    }
+  }
 }
-
-

@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block main %}
+
+  <div style="background-color:#fff;">
+
+    <section class="container">
+
+      {% block subpage_intro %}
+      {% endblock %}
+
+    </section>
+
+  </div>
+
+  <section class="container">
+
+    {% block subpage_content %}
+    {% endblock %}
+
+    <article>
+
+      <h2>St. Louis County, Minnesota</h2>
+
+      <p></p>
+
+    </article>
+
+    <nav>Subnav</nav>
+
+  </section>
+
+{% endblock %}

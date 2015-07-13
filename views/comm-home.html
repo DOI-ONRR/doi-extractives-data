@@ -1,6 +1,8 @@
 {% extends 'base.html' %}
 
-{% block main %}
+{% from 'macros.html' import community_selector %}
+
+{% block communities %}
 
 <div class="communities">
 
@@ -15,7 +17,7 @@
         <p>In some communities, extractive industries play a much larger role than in others. These narratives provide  snapshots into twelve communities that, over the last decade, have led U.S. counties in production of one of the following resources: iron, copper, gold, coal, oil, and natural gas.</p>
 
         <label>Choose a county
-          <select></select>
+          {{ community_selector(communities=communities) }}
         </label>
 
       </div>
@@ -29,6 +31,10 @@
     </section>
 
   </div>
+
+{% endblock %}
+
+{% block main %}
 
   <section class="container communities-content">
 

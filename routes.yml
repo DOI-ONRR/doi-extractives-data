@@ -3,6 +3,8 @@
 
 /communities:
   view: comm-home
+/communities/tar:
+  view: communities/comm-tar
 
 /locations:
   view: locations

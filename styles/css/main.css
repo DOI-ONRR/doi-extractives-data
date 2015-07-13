@@ -2768,8 +2768,14 @@ footer {
     .communities-content h3 a {
       color: #303030; }
     .communities-content h3 img {
-      height: 16px;
+      height: 20px;
       padding-right: 8px; }
+      .communities-content h3 img.iron {
+        height: 16px; }
+      .communities-content h3 img.copper {
+        height: 22px; }
+      .communities-content h3 img.gas {
+        height: 25px; }
   .communities-content nav {
     margin-top: 3.125em; }
     .communities-content nav ul li {

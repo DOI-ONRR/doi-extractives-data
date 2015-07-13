@@ -307,8 +307,20 @@ footer {
     }
 
     img {
-      height: 16px;
+      height: 20px;
       padding-right: 8px;
+
+      &.iron {
+        height: 16px;
+      }
+
+      &.copper {
+        height: 22px;
+      }
+
+      &.gas {
+        height: 25px;
+      }
     }
   }
 

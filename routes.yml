@@ -2,7 +2,7 @@
   view: index
 
 /communities:
-  view: subpage
+  view: comm-home
 
 /locations:
   view: locations

@@ -2842,9 +2842,6 @@ footer {
     color: #303030;
     border: 1px solid #838383; }
 
-/**
- * Initialiazing a `footnotes` counter on the wrapper
- */
 body {
   counter-reset: footnotes; }
 
@@ -2860,11 +2857,6 @@ body {
     .footnotes ol :target {
       background-color: yellow; }
 
-/**
- * Inline footnotes references
- * 1. Increment the counter at each new reference
- * 2. Reset link styles to make it appear like regular text
- */
 a[aria-describedby="footnote-label"] {
   counter-increment: footnotes;
   /* 1 */
@@ -2877,14 +2869,6 @@ a[aria-describedby="footnote-label"] {
   outline: none;
   /* 2 */ }
 
-/**
- * Actual numbered references
- * 1. Display the current state of the counter (e.g. `[1]`)
- * 2. Align text as superscript
- * 3. Make the number smaller (since it's superscript)
- * 4. Slightly offset the number from the text
- * 5. Reset link styles on the number to show it's usable
- */
 a[aria-describedby="footnote-label"]:after {
   content: "[" counter(footnotes) "]";
   /* 1 */
@@ -2901,11 +2885,11 @@ a[aria-describedby="footnote-label"]:after {
   cursor: pointer;
   /* 5 */ }
 
-/**
- * Resetting the default focused styles on the number
- */
 a[aria-describedby="footnote-label"]:focus:after {
   outline: thin dotted;
   outline-offset: 2px; }
+
+a[aria-label="Back to content"] {
+  font-size: 0.8em; }
 
 /*# sourceMappingURL=main.css.map */

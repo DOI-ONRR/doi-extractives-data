@@ -405,7 +405,6 @@ body {
     }
   }
 }
- 
 
 // Inline footnotes references
 // 1. Increment the counter at each new reference
@@ -443,5 +442,9 @@ a[aria-describedby="footnote-label"]:after {
 a[aria-describedby="footnote-label"]:focus:after {
   outline: thin dotted;
   outline-offset: 2px;
+}
+
+a[aria-label="Back to content"] {
+  font-size: 0.8em;
 }
 

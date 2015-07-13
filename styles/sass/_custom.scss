@@ -293,9 +293,19 @@ footer {
   h2 {
     @extend .article_heading;
     padding-bottom: $base-padding;
+
+    a {
+      color: $light-black;
+    }
   }
 
   h3 {
+    padding-bottom: $base-padding-lite;
+
+    a {
+      color: $light-black;
+    }
+
     img {
       height: 16px;
       padding-right: 8px;

@@ -2761,9 +2761,15 @@ footer {
   padding-bottom: 3.125em; }
   .communities-content h2 {
     padding-bottom: 1.25em; }
-  .communities-content h3 img {
-    height: 16px;
-    padding-right: 8px; }
+    .communities-content h2 a {
+      color: #303030; }
+  .communities-content h3 {
+    padding-bottom: 0.41667em; }
+    .communities-content h3 a {
+      color: #303030; }
+    .communities-content h3 img {
+      height: 16px;
+      padding-right: 8px; }
   .communities-content nav {
     margin-top: 3.125em; }
     .communities-content nav ul li {

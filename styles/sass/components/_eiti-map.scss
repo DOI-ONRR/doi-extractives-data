@@ -1,0 +1,32 @@
+eiti-map,
+svg[is="eiti-map"] {
+
+  path {
+    vector-effect: non-scaling-stroke;
+  }
+
+  path.feature {
+    fill: #ddd;
+    stroke: none;
+  }
+
+  &.clickable path.feature {
+    cursor: pointer;
+  }
+
+  path.feature.zoomed {
+    fill: #bbb;
+  }
+
+  a:hover path.feature {
+    fill: #ccc;
+  }
+
+  path.mesh {
+    fill: none;
+    pointer-events: none;
+    stroke: #aaa;
+    stroke-width: 1;
+  }
+
+}

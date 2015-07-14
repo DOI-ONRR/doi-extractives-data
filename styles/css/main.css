@@ -2436,6 +2436,34 @@ input[type="submit"].button-add {
 .fa-medium:before {
   content: ""; }
 
+eiti-map path,
+svg[is="eiti-map"] path {
+  vector-effect: non-scaling-stroke; }
+
+eiti-map path.feature,
+svg[is="eiti-map"] path.feature {
+  fill: #ddd;
+  stroke: none; }
+
+eiti-map.clickable path.feature,
+svg[is="eiti-map"].clickable path.feature {
+  cursor: pointer; }
+
+eiti-map path.feature.zoomed,
+svg[is="eiti-map"] path.feature.zoomed {
+  fill: #bbb; }
+
+eiti-map a:hover path.feature,
+svg[is="eiti-map"] a:hover path.feature {
+  fill: #ccc; }
+
+eiti-map path.mesh,
+svg[is="eiti-map"] path.mesh {
+  fill: none;
+  pointer-events: none;
+  stroke: #aaa;
+  stroke-width: 1; }
+
 .hidden {
   display: none; }
 

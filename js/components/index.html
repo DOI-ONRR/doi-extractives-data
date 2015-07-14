@@ -10,16 +10,17 @@
     <script src="../vendor/d3.v3.min.js"></script>
     <script src="custom-element.js"></script>
     <script src="region-map.js"></script>
-    <!-- region-map dependencies -->
-    <script src="../../lib/albers-custom.js"></script>
+    <script src="eiti-map.js"></script>
+    <!-- map dependencies -->
+    <script src="/js/lib/albers-custom.js"></script>
     <script src="../vendor/topojson.v1.min.js"></script>
     <script src="../vendor/queue.v1.min.js"></script>
+    <script src="../vendor/datalib.min.js"></script>
     <script src="../progressive.js"></script>
-    <!-- /region-map -->
+    <!-- /map dependencies -->
     <script src="x-slider.js"></script>
     <script src="x-sparkline.js"></script>
-    <link rel="stylesheet" href="../../css/index.css">
-    <link rel="stylesheet" href="../../css/components.css">
+    <link rel="stylesheet" href="/css/components.css">
     <style>
 
       section {
@@ -32,6 +33,17 @@
 
       x-slider {
         margin: 3em 1.5em;
+      }
+
+      svg[is="eiti-map"] {
+        width: 100%;
+        height: 300px;
+        margin: 1em 0;
+        border: 1px solid #ccc;
+      }
+
+      svg[is="eiti-map"].loading {
+        border: 1px dashed red;
       }
 
       label {
@@ -93,6 +105,78 @@
       </script>
     </section>
 
+    <section id="eiti-map" class="container">
+      <h2><tt>&lt;svg is="eiti-map"&gt;</tt></h2>
+      <p>The <tt>&lt;svg is="eiti-map"&gt;</tt>
+        <a href="http://www.w3.org/TR/custom-elements/#type-extension-semantics">type extension</a> renders an SVG geographic map by
+        loading one or more "data layers" defined
+        by <tt>&lt;g&gt;</tt> elements with
+        <tt>data-url</tt> attributes.</p>
+
+      <h3>Just render the states and their mesh</h3>
+      <svg id="eiti-map1" is="eiti-map" data-path="/data/geo/">
+        <g data-url="us-states-simple.json" data-mesh="true"></g>
+      </svg>
+
+      <h3>Click on a state in this map to zoom</h3>
+      <svg id="eiti-map2" class="clickable" is="eiti-map" data-path="/data/geo/" zoom-to="CA">
+        <g data-url="us-states-simple.json" data-mesh="true"></g>
+      </svg>
+
+      <h3>A more complex example with linked states and county mesh</h3>
+      <svg id="eiti-map3" is="eiti-map" data-path="/data/geo/" zoom-to="MA">
+        <g data-url="us-topology.json" data-object="states"
+          data-href="/locations/onshore/{{ id }}"></g>
+        <g data-url="us-topology.json" data-object="states" data-mesh="true"></g>
+        <g data-url="us-topology.json" data-object="counties" data-mesh="true"></g>
+      </svg>
+
+      <script>
+      (function() {
+        var maps = d3.selectAll('svg[is="eiti-map"]')
+          .classed('loading', true)
+          .on('load', function() {
+            this.classList.remove('loading');
+          });
+
+        d3.select('#eiti-map2')
+          .on('load.click', function() {
+            var map = this;
+            var paths = d3.select(this)
+              .selectAll('path.feature');
+            var selected;
+            paths.on('click', function(d) {
+              if (selected === d.id) {
+                selected = null;
+              } else {
+                selected = d.id;
+              }
+              map.zoomTo(selected, 500);
+            });
+          });
+      })();
+      </script>
+
+      <h3>Attributes</h3>
+      <dl>
+        <dt><tt>data-path="prefix"</tt></dt>
+        <dd>String: the common path to data files
+          of the contained layers. This is appended
+          as a prefix onto each layer's
+          <tt>data-url</tt> URI.</dd>
+
+        <dt><tt>projection="name"</tt></dt>
+        <dd>String: <a
+            href="https://github.com/mbostock/d3/wiki/Geo-Projections">D3 projection</a>
+          name. If not provided, the default is <tt>albersUsa</tt>.</dd>
+
+        <dt><tt>zoom-to="id"</tt></dt>
+        <dd>String: the ID of the feature to zoom to.</dd>
+
+      </dl>
+    </section>
+
+    <!--
     <section id="region-map" class="container">
       <h2><tt>&lt;region-map&gt;</tt></h2>
       <p>The <tt>&lt;region-map&gt;</tt> element renders a region map with both
@@ -130,6 +214,7 @@
       })();
       </script>
     </section>
+    -->
 
     <section id="slider" class="container">
       <h2><tt>&lt;x-slider&gt;</tt></h2>

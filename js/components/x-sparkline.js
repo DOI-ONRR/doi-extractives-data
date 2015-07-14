@@ -75,7 +75,7 @@
       var lineValue = this.line;
       if (typeof lineValue === 'number') {
         var y0 = y(lineValue);
-        console.log('line @', lineValue, y0);
+        // console.log('line @', lineValue, y0);
         line
           .attr('x1', 0)
           .attr('x2', width)
@@ -89,7 +89,7 @@
       var dot = this.dot;
       var circle = svg.select('.dot');
       if (typeof dot === 'number' && dot >= 0 && dot < values.length) {
-        console.log('dot @', dot, values[dot]);
+        // console.log('dot @', dot, values[dot]);
         circle
           .attr('visibility', null)
           .attr('cx', x(dot))
@@ -159,7 +159,7 @@
   }
 
   function parseNumber(str) {
-    console.log('parseNumber(', str, ')');
+    // console.log('parseNumber(', str, ')');
     if (typeof str === 'number') return str;
     return str && str.length ? Number(str) : null;
   }

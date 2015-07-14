@@ -82,11 +82,12 @@
           var feature;
           d3.select(this)
             .selectAll('path')
-            .each(function(d) {
-              if (feature) return;
-              if (d.id == featureId) {
+            .classed('zoomed', function(d) {
+              if (!feature && d.id == featureId) {
                 feature = d;
+                return true;
               }
+              return false;
             });
 
           if (feature) {
@@ -216,8 +217,7 @@
           });
         bbox = getBBox(bboxes);
       }
-
-      console.log('bbox:', bbox);
+      // console.log('bbox:', bbox);
     }
 
     if (bbox) {
@@ -305,6 +305,10 @@
   }
 
   function getTopologyFeatures(node, d) {
+    var key;
+    var mesh = node.getAttribute('data-mesh');
+    var features;
+
     if (node.hasAttribute('data-object')) {
       key = node.getAttribute('data-object');
 
@@ -318,22 +322,31 @@
       }
 
       var obj = d.objects[key];
-      return node.hasAttribute('data-mesh')
-        ? assign(topojson.mesh(d, obj), {mesh: true})
-        : topojson.feature(d, obj).features;
+      return mesh === 'true'
+        ? [getMesh(d, obj)]
+        : topojson.feature(d, obj).features
+          .concat([getMesh(d, d.objects[mesh])]);
     } else {
       var features = [];
       var keys = Object.keys(d.objects);
+      var meshIds = (mesh || '').split(',');
       for (key in d.objects) {
         features = features.concat(topojson.feature(d, d.objects[key]).features);
-        if (keys.length === 1 && node.hasAttribute('data-mesh')) {
-          features.push(
-            assign(topojson.mesh(d, d.objects[key]), {mesh: true})
-          );
+        if (mesh === 'true' || meshIds.indexOf(key) > -1) {
+          features.push(getMesh(d, d.objects[key]));
         }
       }
       return features;
     }
+  }
+
+  function getMesh(topology, object) {
+    if (!object) {
+      return {type: 'Geometry', geometry: {type: 'Point', coordinates: [0, 0]}};
+    }
+    var mesh = topojson.mesh(topology, object);
+    mesh.mesh = true;
+    return mesh;
   }
 
   function extend(parent, proto) {

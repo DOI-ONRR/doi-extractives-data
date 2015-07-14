@@ -6,18 +6,27 @@ svg[is="eiti-map"] {
   }
 
   path.feature {
-    fill: #ccc;
+    fill: #ddd;
     stroke: none;
   }
 
-  path.mesh {
-    fill: none;
-    stroke: #999;
-    stroke-width: 1;
+  &.clickable path.feature {
+    cursor: pointer;
   }
 
   path.feature.zoomed {
     fill: #bbb;
+  }
+
+  a:hover path.feature {
+    fill: #ccc;
+  }
+
+  path.mesh {
+    fill: none;
+    pointer-events: none;
+    stroke: #aaa;
+    stroke-width: 1;
   }
 
 }

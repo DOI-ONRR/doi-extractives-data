@@ -569,7 +569,8 @@ button {
     letter-spacing: 2px;
     line-height: 18px; }
 
-p {
+p,
+.footnotes ol {
   font-size: 9px;
   font-size: 0.9rem;
   color: #6a6a6a;
@@ -2840,5 +2841,55 @@ footer {
   .styleguide ul li.guide-putty {
     color: #303030;
     border: 1px solid #838383; }
+
+body {
+  counter-reset: footnotes; }
+
+.footnotes {
+  padding-bottom: 3.125em; }
+  .footnotes ol {
+    list-style-type: decimal;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 1.25em; }
+    .footnotes ol :target {
+      background-color: yellow; }
+
+a[aria-describedby="footnote-label"] {
+  counter-increment: footnotes;
+  /* 1 */
+  text-decoration: none;
+  /* 2 */
+  color: inherit;
+  /* 2 */
+  cursor: default;
+  /* 2 */
+  outline: none;
+  /* 2 */ }
+
+a[aria-describedby="footnote-label"]:after {
+  content: "[" counter(footnotes) "]";
+  /* 1 */
+  vertical-align: super;
+  /* 2 */
+  font-size: 0.5em;
+  /* 3 */
+  margin-left: 2px;
+  /* 4 */
+  color: blue;
+  /* 5 */
+  text-decoration: underline;
+  /* 5 */
+  cursor: pointer;
+  /* 5 */ }
+
+a[aria-describedby="footnote-label"]:focus:after {
+  outline: thin dotted;
+  outline-offset: 2px; }
+
+a[aria-label="Back to content"] {
+  font-size: 0.8em; }
 
 /*# sourceMappingURL=main.css.map */

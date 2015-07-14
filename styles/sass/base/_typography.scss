@@ -87,7 +87,8 @@ button {
 
 // Other type
 
-p {
+p,
+.footnotes ol {
   @include font-size(0.9);
   color: darken($dark-putty, 10%);
   font-weight: 200;

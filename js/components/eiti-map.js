@@ -61,6 +61,14 @@
               selection.classed('js-loaded', true);
               map.dispatchEvent(new CustomEvent('load'));
             });
+
+            switch (typeof this.onload) {
+              case 'string':
+                this.onload = new Function('', this.onload);
+              case 'function':
+                this.addEventListener('load', this.onload);
+                break;
+            }
           } else {
             console.warn('no data layers in:', this);
           }
@@ -104,7 +112,7 @@
     var path = getSVGPath(map);
     var layers = getDataLayers(map);
     layers.call(renderLayer(path));
-    map.dispatchEvent(new CustomEvent('render-layers', {layers: layers}));
+    map.dispatchEvent(new CustomEvent('render'));
   }
 
   function getProjection(map) {
@@ -171,7 +179,7 @@
             return klass.join(' ');
           });
 
-        this.dispatchEvent(new CustomEvent('render-layer', {features: feature}));
+        this.dispatchEvent(new CustomEvent('renderLayer'));
       });
     };
   }

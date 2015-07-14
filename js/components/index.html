@@ -10,16 +10,16 @@
     <script src="../vendor/d3.v3.min.js"></script>
     <script src="custom-element.js"></script>
     <script src="region-map.js"></script>
-    <!-- region-map dependencies -->
-    <script src="../../lib/albers-custom.js"></script>
+    <script src="eiti-map.js"></script>
+    <!-- map dependencies -->
+    <script src="/js/lib/albers-custom.js"></script>
     <script src="../vendor/topojson.v1.min.js"></script>
     <script src="../vendor/queue.v1.min.js"></script>
     <script src="../progressive.js"></script>
-    <!-- /region-map -->
+    <!-- /map dependencies -->
     <script src="x-slider.js"></script>
     <script src="x-sparkline.js"></script>
-    <link rel="stylesheet" href="../../css/index.css">
-    <link rel="stylesheet" href="../../css/components.css">
+    <link rel="stylesheet" href="/css/components.css">
     <style>
 
       section {
@@ -32,6 +32,10 @@
 
       x-slider {
         margin: 3em 1.5em;
+      }
+
+      [is="eiti-map"] {
+        height: 300px;
       }
 
       label {
@@ -93,6 +97,40 @@
       </script>
     </section>
 
+    <section id="eiti-map" class="container">
+      <h2><tt>&lt;eiti-map&gt;</tt></h2>
+      <p>The <tt>&lt;eiti-map&gt;</tt> element renders an SVG geographic map by
+        loading one or more "data layers" defined by <tt>&lt;g&gt;</tt> elements with
+        <tt>data-url</tt> attributes.</p>
+
+      <svg is="eiti-map" data-path="/data/geo/">
+        <g data-mesh="true" data-url="us-states-simple.json"></g>
+      </svg>
+
+      <svg is="eiti-map" data-path="/data/geo/" zoom-to="CA">
+        <g data-mesh="true" data-url="us-states-simple.json"></g>
+      </svg>
+
+      <h3>Attributes</h3>
+      <dl>
+        <dt><tt>data-path="prefix"</tt></dt>
+        <dd>String: the common path to data files
+          of the contained layers. This is appended
+          as a prefix onto each layer's
+          <tt>data-url</tt> URI.</dd>
+
+        <dt><tt>projection="name"</tt></dt>
+        <dd>String: <a
+            href="https://github.com/mbostock/d3/wiki/Geo-Projections">D3 projection</a>
+          name. If not provided, the default is <tt>albersUsa</tt>.</dd>
+
+        <dt><tt>zoom-to="id"</tt></dt>
+        <dd>String: the ID of the feature to zoom to.</dd>
+
+      </dl>
+    </section>
+
+    <!--
     <section id="region-map" class="container">
       <h2><tt>&lt;region-map&gt;</tt></h2>
       <p>The <tt>&lt;region-map&gt;</tt> element renders a region map with both
@@ -130,6 +168,7 @@
       })();
       </script>
     </section>
+    -->
 
     <section id="slider" class="container">
       <h2><tt>&lt;x-slider&gt;</tt></h2>

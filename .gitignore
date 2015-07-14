@@ -7,3 +7,4 @@ bower_components
 *.pem
 npm-debug.log
 *.css
+*.css.map

@@ -2,7 +2,11 @@
   view: index
 
 /communities:
-  view: subpage
+  view: comm-home
+/communities/tar:
+  view: communities/comm-tar
+/communities/nor:
+  view: communities/comm-nor
 
 /locations:
   view: locations

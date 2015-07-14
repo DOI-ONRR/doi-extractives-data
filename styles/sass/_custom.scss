@@ -18,6 +18,30 @@
   overflow: hidden; 
 }
 
+ul.bullet {
+  list-style-type: disc;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: $base-padding;
+
+  li {
+    padding-bottom: $base-padding-lite;
+  }
+}
+
+ol.decimal {
+  list-style-type: decimal;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: $base-padding;
+
+  li {
+    padding-bottom: $base-padding-lite;
+  }
+}
+
 
 // Site-wide
 //============================================
@@ -259,7 +283,7 @@ footer {
   padding-bottom: $base-padding;
 
   img {
-    height: 370px;
+    height: 310px;
   }
 
   h1 {
@@ -274,7 +298,7 @@ footer {
 
   p {
     @include font-size(1.1);
-    margin-bottom: $base-padding-extra;
+    margin-bottom: $base-padding-large;
   }
 }
 
@@ -293,12 +317,34 @@ footer {
   h2 {
     @extend .article_heading;
     padding-bottom: $base-padding;
+
+    a {
+      color: $light-black;
+    }
   }
 
   h3 {
+    padding-bottom: $base-padding-lite;
+
+    a {
+      color: $dark-gray;
+    }
+
     img {
-      height: 16px;
+      height: 20px;
       padding-right: 8px;
+
+      &.iron {
+        height: 16px;
+      }
+
+      &.copper {
+        height: 22px;
+      }
+
+      &.gas {
+        height: 25px;
+      }
     }
   }
 
@@ -347,6 +393,16 @@ footer {
   }
 }
 
+.communities-choose {
+  padding-bottom: $base-padding;
+}
+
+.community-graph {
+  border: $thin-border-size solid $base-border-color;
+  margin-bottom: $base-padding;
+  width: 75%;
+}
+
 
 // Styleguide
 //============================================
@@ -376,3 +432,85 @@ footer {
     }
   }
 }
+
+
+// Footnotes
+//============================================
+
+// Technique from http://www.sitepoint.com/accessible-footnotes-css/
+
+// Initialiazing a `footnotes` counter on the wrapper
+
+body {
+  counter-reset: footnotes;
+}
+
+.footnotes {
+  padding-bottom: $base-padding-extra;
+
+  a {
+    text-decoration: underline;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+
+  ol {
+    border-top: $thin-border-size solid $base-border-color;
+    padding-top: $base-padding-lite;
+
+    & :target {
+    background-color: yellow;
+    }
+  }
+}
+
+// Inline footnotes references
+// 1. Increment the counter at each new reference
+// 2. Reset link styles to make it appear like regular text
+
+a[aria-describedby="footnote-label"] {
+  color: inherit; // 2
+  counter-increment: footnotes; // 1
+  cursor: default; // 2
+  outline: none; // 2
+  text-decoration: none; // 2
+}
+ 
+ // Actual numbered references
+ // 1. Display the current state of the counter (e.g. `[1]`)
+ // 2. Align text as superscript
+ // 3. Make the number smaller (since it's superscript)
+ // 4. Slightly offset the number from the text
+ // 5. Reset link styles on the number to show it's usable
+
+a[aria-describedby="footnote-label"]:after {
+  @include font-size(0.7); // 3
+  font-weight: 500;
+  color: $blue; // 5
+  content: '[' counter(footnotes) ']'; // 1
+  cursor: pointer; // 5
+  margin-left: 2px; // 4
+  vertical-align: super; // 2
+}
+ 
+// Resetting the default focused styles on the number
+
+a[aria-describedby="footnote-label"]:focus:after,
+a[aria-describedby="footnote-label"]:hover:after {
+  outline: thin dotted;
+  outline-offset: 2px;
+}
+
+a[aria-label="Back to content"] {
+  font-size: 0.8em;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+

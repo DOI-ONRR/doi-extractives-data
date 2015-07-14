@@ -160,12 +160,32 @@
             break;
         }
 
-        var feature = layer.selectAll('path')
-          .data(features);
+        var feature;
+        if (this.hasAttribute('data-href')) {
 
-        feature.exit().remove();
-        feature.enter().append('path')
-          .append('title');
+          var link = layer.selectAll('a')
+            .data(features);
+
+          link.exit().remove();
+          link.enter().append('a')
+            .append('path')
+              .append('title');
+
+          var href = dl.template(this.getAttribute('data-href'));
+          link.attr('xlink:href', href);
+
+          feature = link.select('path');
+
+        } else {
+
+          feature = layer.selectAll('path')
+            .data(features);
+
+          feature.exit().remove();
+          feature.enter().append('path')
+            .append('title');
+
+        }
 
         feature
           .attr('d', path)

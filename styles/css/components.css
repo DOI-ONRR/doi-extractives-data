@@ -1,3 +1,7 @@
+eiti-map path,
+svg[is="eiti-map"] path {
+  vector-effect: non-scaling-stroke; }
+
 eiti-map path.feature,
 svg[is="eiti-map"] path.feature {
   fill: #ccc;
@@ -8,5 +12,9 @@ svg[is="eiti-map"] path.mesh {
   fill: none;
   stroke: #999;
   stroke-width: 1; }
+
+eiti-map path.feature.zoomed,
+svg[is="eiti-map"] path.feature.zoomed {
+  fill: #bbb; }
 
 /*# sourceMappingURL=components.css.map */

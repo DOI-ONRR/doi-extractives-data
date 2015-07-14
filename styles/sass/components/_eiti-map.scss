@@ -1,6 +1,10 @@
 eiti-map,
 svg[is="eiti-map"] {
 
+  path {
+    vector-effect: non-scaling-stroke;
+  }
+
   path.feature {
     fill: #ccc;
     stroke: none;
@@ -10,6 +14,10 @@ svg[is="eiti-map"] {
     fill: none;
     stroke: #999;
     stroke-width: 1;
+  }
+
+  path.feature.zoomed {
+    fill: #bbb;
   }
 
 }

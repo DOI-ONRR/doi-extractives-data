@@ -1,0 +1,12 @@
+eiti-map path.feature,
+svg[is="eiti-map"] path.feature {
+  fill: #ccc;
+  stroke: none; }
+
+eiti-map path.mesh,
+svg[is="eiti-map"] path.mesh {
+  fill: none;
+  stroke: #999;
+  stroke-width: 1; }
+
+/*# sourceMappingURL=components.css.map */

@@ -15,6 +15,7 @@
     <script src="/js/lib/albers-custom.js"></script>
     <script src="../vendor/topojson.v1.min.js"></script>
     <script src="../vendor/queue.v1.min.js"></script>
+    <script src="../vendor/datalib.min.js"></script>
     <script src="../progressive.js"></script>
     <!-- /map dependencies -->
     <script src="x-slider.js"></script>
@@ -112,16 +113,20 @@
         by <tt>&lt;g&gt;</tt> elements with
         <tt>data-url</tt> attributes.</p>
 
+      <h3>Just render the states and their mesh</h3>
       <svg id="eiti-map1" is="eiti-map" data-path="/data/geo/">
         <g data-url="us-states-simple.json" data-mesh="true"></g>
       </svg>
 
-      <svg id="eiti-map2" is="eiti-map" data-path="/data/geo/" zoom-to="CA">
+      <h3>Click on a state in this map to zoom</h3>
+      <svg id="eiti-map2" class="clickable" is="eiti-map" data-path="/data/geo/" zoom-to="CA">
         <g data-url="us-states-simple.json" data-mesh="true"></g>
       </svg>
 
+      <h3>A more complex example with linked states and county mesh</h3>
       <svg id="eiti-map3" is="eiti-map" data-path="/data/geo/" zoom-to="MA">
-        <g data-url="us-topology.json" data-object="states"></g>
+        <g data-url="us-topology.json" data-object="states"
+          data-href="/locations/onshore/{{ id }}"></g>
         <g data-url="us-topology.json" data-object="states" data-mesh="true"></g>
         <g data-url="us-topology.json" data-object="counties" data-mesh="true"></g>
       </svg>
@@ -132,6 +137,22 @@
           .classed('loading', true)
           .on('load', function() {
             this.classList.remove('loading');
+          });
+
+        d3.select('#eiti-map2')
+          .on('load.click', function() {
+            var map = this;
+            var paths = d3.select(this)
+              .selectAll('path.feature');
+            var selected;
+            paths.on('click', function(d) {
+              if (selected === d.id) {
+                selected = null;
+              } else {
+                selected = d.id;
+              }
+              map.zoomTo(selected, 500);
+            });
           });
       })();
       </script>

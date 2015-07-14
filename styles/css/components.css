@@ -7,14 +7,23 @@ svg[is="eiti-map"] path.feature {
   fill: #ccc;
   stroke: none; }
 
-eiti-map path.mesh,
-svg[is="eiti-map"] path.mesh {
-  fill: none;
-  stroke: #999;
-  stroke-width: 1; }
+eiti-map.clickable path.feature,
+svg[is="eiti-map"].clickable path.feature {
+  cursor: pointer; }
 
 eiti-map path.feature.zoomed,
 svg[is="eiti-map"] path.feature.zoomed {
   fill: #bbb; }
+
+eiti-map a:hover path.feature,
+svg[is="eiti-map"] a:hover path.feature {
+  fill: #aaa; }
+
+eiti-map path.mesh,
+svg[is="eiti-map"] path.mesh {
+  fill: none;
+  pointer-events: none;
+  stroke: #999;
+  stroke-width: 1; }
 
 /*# sourceMappingURL=components.css.map */

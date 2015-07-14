@@ -34,8 +34,15 @@
         margin: 3em 1.5em;
       }
 
-      [is="eiti-map"] {
+      svg[is="eiti-map"] {
+        width: 100%;
         height: 300px;
+        margin: 1em 0;
+        border: 1px solid #ccc;
+      }
+
+      svg[is="eiti-map"].loading {
+        border: 1px dashed red;
       }
 
       label {
@@ -98,18 +105,36 @@
     </section>
 
     <section id="eiti-map" class="container">
-      <h2><tt>&lt;eiti-map&gt;</tt></h2>
-      <p>The <tt>&lt;eiti-map&gt;</tt> element renders an SVG geographic map by
-        loading one or more "data layers" defined by <tt>&lt;g&gt;</tt> elements with
+      <h2><tt>&lt;svg is="eiti-map"&gt;</tt></h2>
+      <p>The <tt>&lt;svg is="eiti-map"&gt;</tt>
+        <a href="http://www.w3.org/TR/custom-elements/#type-extension-semantics">type extension</a> renders an SVG geographic map by
+        loading one or more "data layers" defined
+        by <tt>&lt;g&gt;</tt> elements with
         <tt>data-url</tt> attributes.</p>
 
-      <svg is="eiti-map" data-path="/data/geo/">
-        <g data-mesh="true" data-url="us-states-simple.json"></g>
+      <svg id="eiti-map1" is="eiti-map" data-path="/data/geo/">
+        <g data-url="us-states-simple.json" data-mesh="true"></g>
       </svg>
 
-      <svg is="eiti-map" data-path="/data/geo/" zoom-to="CA">
-        <g data-mesh="true" data-url="us-states-simple.json"></g>
+      <svg id="eiti-map2" is="eiti-map" data-path="/data/geo/" zoom-to="CA">
+        <g data-url="us-states-simple.json" data-mesh="true"></g>
       </svg>
+
+      <svg id="eiti-map3" is="eiti-map" data-path="/data/geo/" zoom-to="MA">
+        <g data-url="us-topology.json" data-object="states"></g>
+        <g data-url="us-topology.json" data-object="states" data-mesh="true"></g>
+        <g data-url="us-topology.json" data-object="counties" data-mesh="true"></g>
+      </svg>
+
+      <script>
+      (function() {
+        var maps = d3.selectAll('svg[is="eiti-map"]')
+          .classed('loading', true)
+          .on('load', function() {
+            this.classList.remove('loading');
+          });
+      })();
+      </script>
 
       <h3>Attributes</h3>
       <dl>

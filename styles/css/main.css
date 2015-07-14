@@ -2820,6 +2820,11 @@ footer {
 .communities-choose {
   padding-bottom: 1.25em; }
 
+.community-graph {
+  border: 1px solid #303030;
+  margin-bottom: 1.25em;
+  width: 75%; }
+
 .guide-black {
   background-color: #040404;
   -webkit-font-smoothing: antialiased;

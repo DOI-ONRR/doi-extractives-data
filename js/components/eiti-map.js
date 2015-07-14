@@ -80,13 +80,17 @@
             case 'height':
               updateSize(this);
               break;
+
+            case 'zoom-to':
+              this.zoomTo(value);
+              break;
           }
         }},
 
         detachedCallback: {value: function() {
         }},
 
-        zoomTo: {value: function(featureId) {
+        zoomTo: {value: function(featureId, duration) {
           var feature;
           d3.select(this)
             .selectAll('path')
@@ -98,11 +102,21 @@
               return false;
             });
 
+          var viewBox;
           if (feature) {
             var path = getSVGPath(this);
             var bbox = path.bounds(feature);
-            d3.select(this).attr('viewBox', bboxToViewBox(bbox));
+            var viewBox = bboxToViewBox(bbox)
+          } else {
+            viewBox = getViewBox(this);
           }
+
+          var selection = d3.select(this);
+          if (!isNaN(duration) && duration > 0) {
+            selection = selection.transition()
+              .duration(duration);
+          }
+          selection.attr('viewBox', viewBox);
         }}
 
       })
@@ -213,6 +227,12 @@
   }
 
   function updateBBox(map) {
+    var viewBox = getViewBox(map);
+    d3.select(map)
+      .attr('viewBox', viewBox);
+  }
+
+  function getViewBox(map) {
     var bbox = map.getAttribute('bounds');
     var path = getSVGPath(map);
 
@@ -248,12 +268,7 @@
       // console.log('bbox:', bbox);
     }
 
-    if (bbox) {
-      d3.select(map)
-        .attr('viewBox', bboxToViewBox(bbox));
-    } else {
-      console.warn('no bbox');
-    }
+    return bbox ? bboxToViewBox(bbox) : null;
   }
 
 

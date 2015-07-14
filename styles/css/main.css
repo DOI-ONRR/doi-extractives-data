@@ -570,7 +570,7 @@ button {
     line-height: 18px; }
 
 p,
-.footnotes ol {
+.list-para {
   font-size: 9px;
   font-size: 0.9rem;
   color: #6a6a6a;
@@ -2462,6 +2462,24 @@ input[type="submit"].button-add {
   height: px;
   overflow: hidden; }
 
+ul.bullet {
+  list-style-type: disc;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 1.25em; }
+  ul.bullet li {
+    padding-bottom: 0.41667em; }
+
+ol.decimal {
+  list-style-type: decimal;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 1.25em; }
+  ol.decimal li {
+    padding-bottom: 0.41667em; }
+
 html {
   box-sizing: border-box; }
 
@@ -2738,7 +2756,7 @@ footer {
   .communities-intro p {
     font-size: 11px;
     font-size: 1.1rem;
-    margin-bottom: 3.125em; }
+    margin-bottom: 1.875em; }
 
 .communities-left {
   float: left;
@@ -2761,9 +2779,21 @@ footer {
   padding-bottom: 3.125em; }
   .communities-content h2 {
     padding-bottom: 1.25em; }
-  .communities-content h3 img {
-    height: 16px;
-    padding-right: 8px; }
+    .communities-content h2 a {
+      color: #303030; }
+  .communities-content h3 {
+    padding-bottom: 0.41667em; }
+    .communities-content h3 a {
+      color: #666666; }
+    .communities-content h3 img {
+      height: 20px;
+      padding-right: 8px; }
+      .communities-content h3 img.iron {
+        height: 16px; }
+      .communities-content h3 img.copper {
+        height: 22px; }
+      .communities-content h3 img.gas {
+        height: 25px; }
   .communities-content nav {
     margin-top: 3.125em; }
     .communities-content nav ul li {
@@ -2786,6 +2816,14 @@ footer {
     width: 200px; }
   .communities-content .communities-left {
     padding-right: 3.125em; }
+
+.communities-choose {
+  padding-bottom: 1.25em; }
+
+.community-graph {
+  border: 1px solid #303030;
+  margin-bottom: 1.25em;
+  width: 75%; }
 
 .guide-black {
   background-color: #040404;
@@ -2847,49 +2885,44 @@ body {
 
 .footnotes {
   padding-bottom: 3.125em; }
+  .footnotes a {
+    text-decoration: underline; }
+    .footnotes a:hover,
+    .footnotes a:focus {
+      text-decoration: none; }
   .footnotes ol {
-    list-style-type: decimal;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 1.25em; }
+    border-top: 1px solid #303030;
+    padding-top: 0.41667em; }
     .footnotes ol :target {
       background-color: yellow; }
 
 a[aria-describedby="footnote-label"] {
-  counter-increment: footnotes;
-  /* 1 */
-  text-decoration: none;
-  /* 2 */
   color: inherit;
-  /* 2 */
+  counter-increment: footnotes;
   cursor: default;
-  /* 2 */
   outline: none;
-  /* 2 */ }
+  text-decoration: none; }
 
 a[aria-describedby="footnote-label"]:after {
+  font-size: 7px;
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: #1e7caa;
   content: "[" counter(footnotes) "]";
-  /* 1 */
-  vertical-align: super;
-  /* 2 */
-  font-size: 0.5em;
-  /* 3 */
-  margin-left: 2px;
-  /* 4 */
-  color: blue;
-  /* 5 */
-  text-decoration: underline;
-  /* 5 */
   cursor: pointer;
-  /* 5 */ }
+  margin-left: 2px;
+  vertical-align: super; }
 
-a[aria-describedby="footnote-label"]:focus:after {
+a[aria-describedby="footnote-label"]:focus:after,
+a[aria-describedby="footnote-label"]:hover:after {
   outline: thin dotted;
   outline-offset: 2px; }
 
 a[aria-label="Back to content"] {
-  font-size: 0.8em; }
+  font-size: 0.8em;
+  text-decoration: none; }
+  a[aria-label="Back to content"]:hover,
+  a[aria-label="Back to content"]:focus {
+    text-decoration: underline; }
 
 /*# sourceMappingURL=main.css.map */

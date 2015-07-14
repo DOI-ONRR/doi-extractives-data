@@ -88,7 +88,7 @@ button {
 // Other type
 
 p,
-.footnotes ol {
+.list-para {
   @include font-size(0.9);
   color: darken($dark-putty, 10%);
   font-weight: 200;

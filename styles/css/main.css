@@ -525,6 +525,8 @@ h1, h2, h3, h4
 .revenues-module-spash h3, .revenues-module-spash h4
 h3, h4
 .revenues-section-steps h3, .revenues-section-steps h4
+h3, h4
+.revenues-section-forms h3, .revenues-section-forms h4
 h3, .h2, .h3, .h4, .guide > section > h1, .guide-buttons > h1, .revenues-intro figcaption {
   color: #666666;
   font-family: Lato, "Helvetica Neue", Helvetica, arial, sans-serif;
@@ -535,7 +537,7 @@ h3, .h2, .h3, .h4, .guide > section > h1, .guide-buttons > h1, .revenues-intro f
   text-rendering: optimizeLegibility; }
 
 h1,
-.h1, .revenues-module-spash h3, .revenues-section-steps h3 {
+.h1, .revenues-module-spash h3, .revenues-section-steps h3, .revenues-section-forms h3 {
   font-size: 17px;
   font-size: 1.7rem; }
 
@@ -2862,15 +2864,41 @@ footer {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 23.23176%;
+  width: 100%;
   height: 400px;
   margin-bottom: 1.875em; }
   .revenues-modules article:last-child {
     margin-right: 0; }
-  .revenues-modules article:nth-child(4n) {
-    margin-right: 0; }
-  .revenues-modules article:nth-child(4n+1) {
-    clear: left; }
+
+@media only screen and (min-width: 37.5em) {
+  .revenues-modules article {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%; }
+    .revenues-modules article:last-child {
+      margin-right: 0; }
+    .revenues-modules article:nth-child(2n) {
+      margin-right: 0; }
+    .revenues-modules article:nth-child(2n+1) {
+      clear: left; } }
+
+@media only screen and (min-width: 61.875em) {
+  .revenues-modules article {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%; }
+    .revenues-modules article:nth-child(2n) {
+      margin-right: 2.35765%; }
+    .revenues-modules article:nth-child(2n+1) {
+      clear: none; }
+    .revenues-modules article:last-child {
+      margin-right: 0; }
+    .revenues-modules article:nth-child(4n) {
+      margin-right: 0; }
+    .revenues-modules article:nth-child(4n+1) {
+      clear: left; } }
 
 .revenues-module-spash {
   border-bottom: 6px solid #f4f4f4;
@@ -2962,7 +2990,55 @@ footer {
 
 .revenues-section-forms {
   background-color: #ffffff;
+  padding-top: 1.875em;
   padding-bottom: 1.875em; }
+  .revenues-section-forms h3 {
+    border-bottom: 3px solid #838383;
+    padding-bottom: 5px;
+    margin-bottom: 8px; }
+  @media only screen and (min-width: 37.5em) {
+    .revenues-section-forms .revenues-section-forms-options > div {
+      float: left;
+      display: block;
+      margin-right: 3.57866%;
+      width: 48.21067%; }
+      .revenues-section-forms .revenues-section-forms-options > div:last-child {
+        margin-right: 0; }
+      .revenues-section-forms .revenues-section-forms-options > div:nth-child(2n) {
+        margin-right: 0; }
+      .revenues-section-forms .revenues-section-forms-options > div:nth-child(2n+1) {
+        clear: left; } }
+  @media only screen and (min-width: 48em) {
+    .revenues-section-forms h2 {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%; }
+      .revenues-section-forms h2:last-child {
+        margin-right: 0; }
+    .revenues-section-forms .revenues-section-forms-options {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 65.88078%;
+      margin-right: 0; }
+      .revenues-section-forms .revenues-section-forms-options:last-child {
+        margin-right: 0; }
+      .revenues-section-forms .revenues-section-forms-options > div {
+        float: left;
+        display: block;
+        margin-right: 3.57866%;
+        width: 22.316%; }
+        .revenues-section-forms .revenues-section-forms-options > div:nth-child(2n) {
+          margin-right: 2.35765%; }
+        .revenues-section-forms .revenues-section-forms-options > div:nth-child(2n+1) {
+          clear: none; }
+        .revenues-section-forms .revenues-section-forms-options > div:last-child {
+          margin-right: 0; }
+        .revenues-section-forms .revenues-section-forms-options > div:nth-child(4n) {
+          margin-right: 0; }
+        .revenues-section-forms .revenues-section-forms-options > div:nth-child(4n+1) {
+          clear: left; } }
 
 .guide-black {
   background-color: #040404;

@@ -409,12 +409,26 @@ footer {
 
 .revenues-modules {
   article {
-    @include span-columns (3);
-    @include omega(4n);
+    @include span-columns (12);
     @extend .article_module;
 
     height: 400px;
     margin-bottom: $base-padding-large;
+  }
+
+  @include respond-to(small-up) {
+      article {
+        @include span-columns (6 of 12);
+        @include omega(2n);
+      }
+    }
+
+  @include respond-to(large-up) {
+    article {
+      @include omega-reset(2n);
+      @include span-columns (3 of 12);
+      @include omega(4n);
+    }
   }
 }
 
@@ -531,7 +545,38 @@ footer {
 
 .revenues-section-forms {
   background-color: $white;
+  padding-top: $base-padding-large;
   padding-bottom: $base-padding-large;
+
+  h3 {
+    @extend .h1;
+    border-bottom: 3px solid $dark-putty;
+    padding-bottom: 5px;
+    margin-bottom: 8px;
+  }
+
+  @include respond-to(small-up) {
+    .revenues-section-forms-options > div {
+      @include span-columns(4 of 8);
+      @include omega(2n);
+    }
+  }
+
+  @include respond-to(medium-up) {
+    h2 {
+      @include span-columns(4);
+    }
+    .revenues-section-forms-options {
+      @include span-columns(8);
+      @include omega();
+
+      > div {
+        @include omega-reset(2n);
+        @include span-columns(2 of 8);
+        @include omega(4n);
+      }
+    }
+  }
 }
 
 

@@ -404,6 +404,37 @@ footer {
 }
 
 
+// Resource to revenues
+//============================================
+
+.revenues-intro {
+
+  figcaption {
+    @extend .h4;
+    @include font-size(1.2);
+    border-radius: 0 0 10px 10px;
+    padding: $base-padding-lite;
+  }
+
+  p {
+    @include font-size(1.3);
+  }
+
+  .article_module {
+    margin-top: 0;
+    height: auto;
+
+    img {
+      border-bottom-color: $white;
+      border-bottom-width: 1px;
+    }
+  }
+
+  .article_module-content {
+    background-color: $putty;
+  }
+}
+
 // Styleguide
 //============================================
 

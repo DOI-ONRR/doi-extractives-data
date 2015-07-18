@@ -521,7 +521,7 @@ a {
     text-decoration: underline; }
 
 h1, h2, h3, h4
-.h1, .h2, .h3, .h4, .guide > section > h1, .guide-buttons > h1 {
+.h1, .h2, .h3, .h4, .guide > section > h1, .guide-buttons > h1, .revenues-intro figcaption {
   color: #666666;
   font-family: Lato, "Helvetica Neue", Helvetica, arial, sans-serif;
   font-weight: 200;
@@ -548,7 +548,7 @@ h3,
   font-size: 1.125rem; }
 
 h4,
-.h4, .guide > section > h1, .guide-buttons > h1 {
+.h4, .guide > section > h1, .guide-buttons > h1, .revenues-intro figcaption {
   font-size: 10px;
   font-size: 1rem; }
 
@@ -2852,6 +2852,26 @@ footer {
   border: 1px solid #303030;
   margin-bottom: 1.25em;
   width: 75%; }
+
+.revenues-intro figcaption {
+  font-size: 12px;
+  font-size: 1.2rem;
+  border-radius: 0 0 10px 10px;
+  padding: 0.41667em; }
+
+.revenues-intro p {
+  font-size: 13px;
+  font-size: 1.3rem; }
+
+.revenues-intro .article_module, .revenues-intro .home-modules article, .home-modules .revenues-intro article {
+  margin-top: 0;
+  height: auto; }
+  .revenues-intro .article_module img, .revenues-intro .home-modules article img, .home-modules .revenues-intro article img {
+    border-bottom-color: #ffffff;
+    border-bottom-width: 1px; }
+
+.revenues-intro .article_module-content {
+  background-color: #f4f4f4; }
 
 .guide-black {
   background-color: #040404;

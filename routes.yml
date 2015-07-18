@@ -8,6 +8,9 @@
 /communities/nor:
   view: communities/comm-nor
 
+/revenues:
+  view: revenues-home
+
 /locations:
   view: locations
 /locations/onshore:

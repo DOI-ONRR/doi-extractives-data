@@ -479,11 +479,59 @@ footer {
 
 .revenues-section-steps {
   background-color: $mid-gray;
+  padding-top: $base-padding-large;
+  padding-bottom: $base-padding-extra;
+
+  h3 {
+    @extend .h1;
+    color: $red;
+    display: inline;
+    padding-right: 8px;
+  }
+
+  .revenues-steps-number {
+    @include font-size(1.8);
+    background-color: $white;
+    border-radius: 50%;
+    color: $dark-gray;
+    display: inline-block;
+    padding-right: 13px;
+    height: 43px;
+    width: 43px;
+  }
+}
+
+.revenues-steps-group {
+  display: table;
+  width: 100%;
+
+  li {
+    padding-top: $base-padding;
+    font-weight: 200;
+  }
+
+  @include respond-to(medium-up) {
+    @include span-columns(10);
+    @include shift(1);
+  }
+}
+
+.revenues-steps-group-left {
+  display: table-cell;
+  padding-right: 10px;
+  text-align: right;
+  width: 250px;
+}
+
+.revenues-steps-group-right {
+  display: table-cell;
+  padding-left: 10px;
+  vertical-align: middle;
 }
 
 .revenues-section-forms {
   background-color: $white;
-
+  padding-bottom: $base-padding-large;
 }
 
 

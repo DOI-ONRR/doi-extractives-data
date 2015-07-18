@@ -407,6 +407,48 @@ footer {
 // Resource to revenues
 //============================================
 
+.revenues-modules {
+  article {
+    @include span-columns (3);
+    @include omega(4n);
+    @extend .article_module;
+
+    height: 400px;
+    margin-bottom: $base-padding-large;
+  }
+}
+
+.revenues-module-spash {
+  border-bottom: 6px solid $putty;
+  background-color: $light-black;
+  border-radius: 10px 10px 0 0;
+  height: 170px;
+  padding: $base-padding;
+  position: relative;
+
+  h3 {
+    @extend .h1;
+    color: $white;
+    padding-top: 0;
+
+    .revenues-fa {
+      @include font-size(0.85);
+      color: $shock-green;
+    }
+  }
+
+  .revenues-module-icon {
+    position: absolute;
+    right: $base-padding;
+    bottom: $base-padding;
+
+    img {
+      border-bottom: 0;
+      height: 50px;
+    }
+  }
+}
+
 .revenues-intro {
 
   figcaption {
@@ -434,6 +476,17 @@ footer {
     background-color: $putty;
   }
 }
+
+.revenues-section-steps {
+  background-color: $mid-gray;
+}
+
+.revenues-section-forms {
+  background-color: $white;
+
+}
+
+
 
 // Styleguide
 //============================================

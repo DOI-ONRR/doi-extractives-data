@@ -2992,8 +2992,10 @@ footer {
   background-color: #ffffff;
   padding-top: 1.875em;
   padding-bottom: 1.875em; }
+  .revenues-section-forms h2 {
+    color: #303030; }
   .revenues-section-forms h3 {
-    border-bottom: 3px solid #838383;
+    border-bottom: 4px solid #cccccc;
     padding-bottom: 5px;
     margin-bottom: 8px; }
   @media only screen and (min-width: 37.5em) {
@@ -3073,6 +3075,15 @@ footer {
       margin-right: 0; }
       .revenues-section-last ul:last-child {
         margin-right: 0; } }
+
+.forms-numbers {
+  border-bottom: 2px solid #cccccc;
+  padding-bottom: 8px;
+  margin-bottom: 8px; }
+  .forms-numbers span {
+    font-size: 19px;
+    font-size: 1.9rem;
+    line-height: 1.2; }
 
 .guide-black {
   background-color: #040404;

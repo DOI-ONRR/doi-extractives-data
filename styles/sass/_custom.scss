@@ -548,9 +548,13 @@ footer {
   padding-top: $base-padding-large;
   padding-bottom: $base-padding-large;
 
+  h2 {
+    color: $light-black;
+  }
+
   h3 {
     @extend .h1;
-    border-bottom: 3px solid $dark-putty;
+    border-bottom: 4px solid #cccccc;
     padding-bottom: 5px;
     margin-bottom: 8px;
   }
@@ -613,7 +617,19 @@ footer {
   }
 }
 
+// Resources to revenues pages
+//============================================
 
+.forms-numbers {
+  border-bottom: 2px solid #cccccc;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+
+  span {
+    @include font-size($h1);
+    line-height: 1.2;
+  }
+}
 
 // Styleguide
 //============================================

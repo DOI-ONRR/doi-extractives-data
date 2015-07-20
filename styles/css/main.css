@@ -3076,6 +3076,30 @@ footer {
       .revenues-section-last ul:last-child {
         margin-right: 0; } }
 
+.revenues-subpage-nav {
+  border-bottom: 1px solid #838383;
+  position: relative; }
+  .revenues-subpage-nav a {
+    color: #303030; }
+  .revenues-subpage-nav ul {
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -97%); }
+    .revenues-subpage-nav ul li {
+      display: inline-block;
+      font-weight: 200;
+      padding: 8px 10px; }
+      .revenues-subpage-nav ul li.active {
+        background-color: #f4f4f4;
+        border-top: 1px solid #838383;
+        border-right: 1px solid #838383;
+        border-left: 1px solid #838383;
+        font-weight: normal; }
+      .revenues-subpage-nav ul li:hover,
+      .revenues-subpage-nav ul li:focus {
+        text-decoration: underline; }
+
 .forms-numbers {
   border-bottom: 2px solid #cccccc;
   padding-bottom: 8px;

@@ -620,6 +620,40 @@ footer {
 // Resources to revenues pages
 //============================================
 
+.revenues-subpage-nav {
+  border-bottom: 1px solid $dark-putty;
+  position: relative;
+
+  a {
+    color: $light-black;
+  }
+
+  ul { 
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%,-97%);
+    li {
+      display: inline-block;
+      font-weight: 200;
+      padding: 8px 10px;
+
+      &.active {
+        background-color: $putty;
+        border-top: 1px solid $dark-putty;
+        border-right: 1px solid $dark-putty;
+        border-left: 1px solid $dark-putty;
+        font-weight: normal;
+      }
+
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
 .forms-numbers {
   border-bottom: 2px solid #cccccc;
   padding-bottom: 8px;

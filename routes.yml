@@ -10,6 +10,8 @@
 
 /revenues:
   view: revenues-home
+/revenues/offshore_oil_gas:
+  view: revenues/offshore_oil_gas
 
 /locations:
   view: locations

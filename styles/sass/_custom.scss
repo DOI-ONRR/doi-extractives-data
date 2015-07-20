@@ -497,7 +497,7 @@ footer {
   padding-bottom: $base-padding-extra;
 
   h3 {
-    @extend .h1;
+    @include font-size(1.7);
     color: $red;
     display: inline;
     padding-right: 8px;

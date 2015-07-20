@@ -524,8 +524,6 @@ h1, h2, h3, h4
 .h1, h4
 .revenues-module-spash h3, .revenues-module-spash h4
 h3, h4
-.revenues-section-steps h3, .revenues-section-steps h4
-h3, h4
 .revenues-section-forms h3, .revenues-section-forms h4
 h3, .h2, .h3, .h4, .guide > section > h1, .guide-buttons > h1, .revenues-intro figcaption {
   color: #666666;
@@ -537,9 +535,9 @@ h3, .h2, .h3, .h4, .guide > section > h1, .guide-buttons > h1, .revenues-intro f
   text-rendering: optimizeLegibility; }
 
 h1,
-.h1, .revenues-module-spash h3, .revenues-section-steps h3, .revenues-section-forms h3 {
-  font-size: 17px;
-  font-size: 1.7rem; }
+.h1, .revenues-module-spash h3, .revenues-section-forms h3 {
+  font-size: 19px;
+  font-size: 1.9rem; }
 
 h2,
 .h2 {
@@ -600,8 +598,8 @@ p,
   font-size: 3rem; }
 
 .search_category {
-  font-size: 17px;
-  font-size: 1.7rem;
+  font-size: 19px;
+  font-size: 1.9rem;
   font-weight: 400;
   margin-bottom: 0.3em; }
 
@@ -2655,8 +2653,8 @@ footer {
   footer p {
     color: #ffffff; }
     footer p.footer-intro {
-      font-size: 17px;
-      font-size: 1.7rem;
+      font-size: 19px;
+      font-size: 1.9rem;
       line-height: 1.2;
       margin-bottom: 1em; }
     footer p:nth-of-type(2) {
@@ -2783,8 +2781,8 @@ footer {
   .communities-intro img {
     height: 310px; }
   .communities-intro h1 {
-    font-size: 17px;
-    font-size: 1.7rem;
+    font-size: 19px;
+    font-size: 1.9rem;
     padding-bottom: 0.41667em; }
   .communities-intro select {
     width: 400px; }
@@ -2947,6 +2945,8 @@ footer {
   padding-top: 1.875em;
   padding-bottom: 3.125em; }
   .revenues-section-steps h3 {
+    font-size: 17px;
+    font-size: 1.7rem;
     color: #d44116;
     display: inline;
     padding-right: 8px; }

@@ -3141,6 +3141,10 @@ footer {
   .revenues-subpage-office img {
     float: right;
     margin: 5px; }
+    .revenues-subpage-office img:nth-of-type(2) {
+      margin-top: 13px; }
+  .revenues-subpage-office p:nth-of-type(2) {
+    margin-top: 5px; }
   .revenues-subpage-office span {
     font-weight: normal; }
 

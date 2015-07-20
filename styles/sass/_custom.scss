@@ -697,6 +697,14 @@ footer {
   img {
     float: right;
     margin: 5px;
+
+    &:nth-of-type(2) {
+      margin-top: 13px;
+    }
+  }
+
+  p:nth-of-type(2) {
+    margin-top: 5px;
   }
 
   span {

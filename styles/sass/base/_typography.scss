@@ -154,3 +154,7 @@ p,
     // should be some percentage of parent text
   }
 }
+
+.subpage-p {
+  @include font-size(1.3);
+}

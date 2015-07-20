@@ -580,7 +580,7 @@ p,
   color: #6a6a6a;
   font-weight: 200; }
 
-.article_heading, .article_module h1, .home-modules article h1, .revenues-modules article h1, .communities-intro h1, .communities-content h2 {
+.article_heading, .article_module h1, .home-modules article h1, .revenues-modules article h1, .communities-intro h1, .communities-content h2, .revenues-subpage-intro h1 {
   font-size: 14px;
   font-size: 1.4rem;
   color: #303030;
@@ -645,6 +645,10 @@ input[type="submit"].button-add {
   input[type="submit"].button-add .shrink-fa {
     font-size: 6.5px;
     font-size: 0.65rem; }
+
+.subpage-p, .revenues-intro p, .revenues-subpage-intro p {
+  font-size: 13px;
+  font-size: 1.3rem; }
 
 /*!
  *  Font Awesome 4.3.0 by @davegandy - http://fontawesome.io - @fontawesome
@@ -2926,10 +2930,6 @@ footer {
   border-radius: 0 0 10px 10px;
   padding: 0.41667em; }
 
-.revenues-intro p {
-  font-size: 13px;
-  font-size: 1.3rem; }
-
 .revenues-intro .article_module, .revenues-intro .home-modules article, .home-modules .revenues-intro article, .revenues-intro .revenues-modules article, .revenues-modules .revenues-intro article {
   margin-top: 0;
   height: auto; }
@@ -3099,6 +3099,56 @@ footer {
       .revenues-subpage-nav ul li:hover,
       .revenues-subpage-nav ul li:focus {
         text-decoration: underline; }
+
+.revenues-subpage-intro {
+  padding-top: 1.25em; }
+  .revenues-subpage-intro h1 {
+    font-size: 19px;
+    font-size: 1.9rem;
+    padding-bottom: 0.41667em; }
+  .revenues-subpage-intro p {
+    padding-bottom: 0.41667em; }
+  @media only screen and (min-width: 48em) {
+    .revenues-subpage-intro {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 74.41059%; }
+      .revenues-subpage-intro:last-child {
+        margin-right: 0; } }
+
+.revenues-subpage-office-container {
+  position: relative; }
+  .revenues-subpage-office-container a {
+    position: absolute;
+    right: 0; }
+  @media only screen and (min-width: 48em) {
+    .revenues-subpage-office-container {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 23.23176%;
+      margin-right: 0; }
+      .revenues-subpage-office-container:last-child {
+        margin-right: 0; } }
+
+.revenues-subpage-office {
+  background-color: #ffffff;
+  border: 2px solid #e1e1e1;
+  border-radius: 5px;
+  margin-top: 1.25em;
+  padding: 0.41667em 10px; }
+  .revenues-subpage-office img {
+    float: right;
+    margin: 5px; }
+  .revenues-subpage-office span {
+    font-weight: normal; }
+
+.enbiggen {
+  font-size: 18px;
+  font-size: 1.8rem;
+  font-weight: 200;
+  vertical-align: -6px; }
 
 .forms-numbers {
   border-bottom: 2px solid #cccccc;

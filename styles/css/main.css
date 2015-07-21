@@ -525,7 +525,7 @@ h1, h2, h3, h4
 .revenues-module-spash h3, .revenues-module-spash h4
 h3, h4
 .revenues-section-forms h3, .revenues-section-forms h4
-h3, .h2, .h3, .h4, .guide > section > h1, .guide-buttons > h1, .revenues-intro figcaption {
+h3, .h2, .revenues-section-involved h3, .h3, .h4, .guide > section > h1, .guide-buttons > h1, .revenues-intro figcaption {
   color: #666666;
   font-family: Lato, "Helvetica Neue", Helvetica, arial, sans-serif;
   font-weight: 200;
@@ -540,7 +540,7 @@ h1,
   font-size: 1.9rem; }
 
 h2,
-.h2 {
+.h2, .revenues-section-involved h3 {
   font-size: 14px;
   font-size: 1.4rem;
   color: #838383;
@@ -577,10 +577,10 @@ p,
 .list-para {
   font-size: 9px;
   font-size: 0.9rem;
-  color: #6a6a6a;
+  color: #5d5d5d;
   font-weight: 200; }
 
-.article_heading, .article_module h1, .home-modules article h1, .revenues-modules article h1, .communities-intro h1, .communities-content h2 {
+.article_heading, .article_module h1, .home-modules article h1, .revenues-modules article h1, .communities-intro h1, .communities-content h2, .revenues-subpage-intro h1 {
   font-size: 14px;
   font-size: 1.4rem;
   color: #303030;
@@ -645,6 +645,10 @@ input[type="submit"].button-add {
   input[type="submit"].button-add .shrink-fa {
     font-size: 6.5px;
     font-size: 0.65rem; }
+
+.subpage-p, .revenues-intro p, .revenues-subpage-intro p {
+  font-size: 13px;
+  font-size: 1.3rem; }
 
 /*!
  *  Font Awesome 4.3.0 by @davegandy - http://fontawesome.io - @fontawesome
@@ -2926,10 +2930,6 @@ footer {
   border-radius: 0 0 10px 10px;
   padding: 0.41667em; }
 
-.revenues-intro p {
-  font-size: 13px;
-  font-size: 1.3rem; }
-
 .revenues-intro .article_module, .revenues-intro .home-modules article, .home-modules .revenues-intro article, .revenues-intro .revenues-modules article, .revenues-modules .revenues-intro article {
   margin-top: 0;
   height: auto; }
@@ -2940,17 +2940,20 @@ footer {
 .revenues-intro .article_module-content {
   background-color: #f4f4f4; }
 
-.revenues-section-steps {
+.revenues-section-steps,
+.revenues-section-subpage-steps {
   background-color: #e1e1e1;
   padding-top: 1.875em;
   padding-bottom: 3.125em; }
-  .revenues-section-steps h3 {
+  .revenues-section-steps h3,
+  .revenues-section-subpage-steps h3 {
     font-size: 17px;
     font-size: 1.7rem;
     color: #d44116;
     display: inline;
     padding-right: 8px; }
-  .revenues-section-steps .revenues-steps-number {
+  .revenues-section-steps .revenues-steps-number,
+  .revenues-section-subpage-steps .revenues-steps-number {
     font-size: 18px;
     font-size: 1.8rem;
     background-color: #ffffff;
@@ -2992,8 +2995,10 @@ footer {
   background-color: #ffffff;
   padding-top: 1.875em;
   padding-bottom: 1.875em; }
+  .revenues-section-forms h2 {
+    color: #303030; }
   .revenues-section-forms h3 {
-    border-bottom: 3px solid #838383;
+    border-bottom: 4px solid #cccccc;
     padding-bottom: 5px;
     margin-bottom: 8px; }
   @media only screen and (min-width: 37.5em) {
@@ -3056,14 +3061,15 @@ footer {
     font-weight: 200;
     margin-right: 1.25em; }
     .revenues-section-last ul li img {
-      height: 18px; }
+      height: 18px;
+      padding-right: 8px; }
   @media only screen and (min-width: 48em) {
-    .revenues-section-last h2 {
+    .revenues-section-last .revenues-section-last-intro {
       float: left;
       display: block;
       margin-right: 2.35765%;
       width: 31.76157%; }
-      .revenues-section-last h2:last-child {
+      .revenues-section-last .revenues-section-last-intro:last-child {
         margin-right: 0; }
     .revenues-section-last ul {
       float: left;
@@ -3073,6 +3079,239 @@ footer {
       margin-right: 0; }
       .revenues-section-last ul:last-child {
         margin-right: 0; } }
+
+.revenues-subpage-nav {
+  border-bottom: 1px solid #838383;
+  position: relative; }
+  .revenues-subpage-nav a {
+    color: #303030; }
+  .revenues-subpage-nav ul {
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -97%); }
+    .revenues-subpage-nav ul li {
+      display: inline-block;
+      font-weight: 200;
+      padding: 8px 10px; }
+      .revenues-subpage-nav ul li.active {
+        background-color: #f4f4f4;
+        border-top: 1px solid #838383;
+        border-right: 1px solid #838383;
+        border-left: 1px solid #838383;
+        font-weight: normal; }
+      .revenues-subpage-nav ul li:hover,
+      .revenues-subpage-nav ul li:focus {
+        text-decoration: underline; }
+
+.revenues-subpage-intro {
+  padding-top: 1.25em; }
+  .revenues-subpage-intro h1 {
+    font-size: 19px;
+    font-size: 1.9rem;
+    padding-bottom: 0.625em; }
+  .revenues-subpage-intro p {
+    padding-bottom: 1.25em; }
+  @media only screen and (min-width: 48em) {
+    .revenues-subpage-intro {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 74.41059%; }
+      .revenues-subpage-intro:last-child {
+        margin-right: 0; } }
+
+.revenues-subpage-office-container {
+  position: relative; }
+  .revenues-subpage-office-container a {
+    color: #666666; }
+  @media only screen and (min-width: 48em) {
+    .revenues-subpage-office-container {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 23.23176%;
+      margin-right: 0; }
+      .revenues-subpage-office-container:last-child {
+        margin-right: 0; } }
+
+.revenues-subpage-office {
+  background-color: #ffffff;
+  border: 2px solid #e1e1e1;
+  border-radius: 5px;
+  margin-top: 1.25em;
+  padding: 0.41667em 10px; }
+  .revenues-subpage-office img {
+    float: right;
+    width: 50px;
+    margin: 5px; }
+  .revenues-subpage-office p:nth-of-type(2) {
+    margin-top: 10px; }
+  .revenues-subpage-office span {
+    font-weight: normal; }
+
+.enbiggen {
+  font-size: 18px;
+  font-size: 1.8rem;
+  font-weight: 200;
+  vertical-align: -6px; }
+
+.forms-numbers {
+  border-bottom: 2px solid #cccccc;
+  padding-bottom: 8px;
+  margin-bottom: 8px; }
+  .forms-numbers span {
+    font-size: 19px;
+    font-size: 1.9rem;
+    line-height: 1.2; }
+
+.revenues-section-subpage-steps {
+  background: url(/img/revenues/offshore-oil.png) no-repeat;
+  background-position: 0px 100px;
+  background-size: 100%;
+  margin-top: 1.875em; }
+  .revenues-section-subpage-steps .revenues-section-subpage-dyk {
+    position: relative; }
+    .revenues-section-subpage-steps .revenues-section-subpage-dyk p {
+      color: #1075a5; }
+    .revenues-section-subpage-steps .revenues-section-subpage-dyk > div {
+      padding: 12px; }
+      .revenues-section-subpage-steps .revenues-section-subpage-dyk > div:first-of-type {
+        color: #ffffff;
+        background-color: #157bac;
+        border-radius: 5px 5px 0 0; }
+      .revenues-section-subpage-steps .revenues-section-subpage-dyk > div:last-of-type {
+        background-color: #ffffff;
+        border-radius: 0 0 5px 5px; }
+    .revenues-section-subpage-steps .revenues-section-subpage-dyk .link-more-after {
+      position: absolute;
+      right: 0; }
+    @media only screen and (min-width: 48em) {
+      .revenues-section-subpage-steps .revenues-section-subpage-dyk {
+        margin-top: 50%;
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 14.70196%; }
+        .revenues-section-subpage-steps .revenues-section-subpage-dyk:last-child {
+          margin-right: 0; } }
+  .revenues-section-subpage-steps .revenues-steps-group a {
+    text-decoration: underline; }
+    .revenues-section-subpage-steps .revenues-steps-group a:hover,
+    .revenues-section-subpage-steps .revenues-steps-group a:focus {
+      text-decoration: none; }
+  .revenues-section-subpage-steps .revenues-steps-group li {
+    background-color: #ffffff;
+    margin-bottom: 4px;
+    padding: 1.25em; }
+    .revenues-section-subpage-steps .revenues-steps-group li:first-of-type {
+      border-radius: 5px 5px 0 0; }
+    .revenues-section-subpage-steps .revenues-steps-group li:last-of-type {
+      border-radius: 0 0 5px 5px; }
+  .revenues-section-subpage-steps .revenues-steps-group p {
+    padding-right: 1.25em;
+    padding-bottom: 1.25em;
+    padding-left: 60px; }
+  @media only screen and (min-width: 48em) {
+    .revenues-section-subpage-steps .revenues-steps-group {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 57.35098%;
+      margin-left: 25.58941%; }
+      .revenues-section-subpage-steps .revenues-steps-group:last-child {
+        margin-right: 0; } }
+  .revenues-section-subpage-steps .revenues-steps-number {
+    border: 2px solid #e1e1e1;
+    height: 47px;
+    margin-right: 8px;
+    padding-left: 13px;
+    width: 47px; }
+
+.revenues-section-forms-subpage {
+  background-color: #f4f4f4; }
+
+.revenues-section-involved {
+  background-color: #ffffff;
+  padding-top: 1.875em;
+  padding-bottom: 1.875em; }
+  .revenues-section-involved h2 {
+    color: #303030; }
+  .revenues-section-involved h3 {
+    color: #1075a5;
+    padding-bottom: 5px;
+    margin-bottom: 8px; }
+  .revenues-section-involved p a {
+    text-decoration: underline; }
+    .revenues-section-involved p a:hover,
+    .revenues-section-involved p a:focus {
+      text-decoration: none; }
+  .revenues-section-involved .fa-stack {
+    color: #1075a5;
+    line-height: 2.1em; }
+  .revenues-section-involved .revenues-section-involved-intro p {
+    font-size: 14px;
+    font-size: 1.4rem; }
+  @media only screen and (min-width: 37.5em) {
+    .revenues-section-involved .revenues-section-involved-options > div {
+      float: left;
+      display: block;
+      margin-right: 3.57866%;
+      width: 48.21067%; }
+      .revenues-section-involved .revenues-section-involved-options > div:last-child {
+        margin-right: 0; }
+      .revenues-section-involved .revenues-section-involved-options > div:nth-child(2n) {
+        margin-right: 0; }
+      .revenues-section-involved .revenues-section-involved-options > div:nth-child(2n+1) {
+        clear: left; } }
+  @media only screen and (min-width: 48em) {
+    .revenues-section-involved .revenues-section-involved-intro {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%; }
+      .revenues-section-involved .revenues-section-involved-intro:last-child {
+        margin-right: 0; }
+    .revenues-section-involved .revenues-section-involved-right {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 65.88078%; }
+      .revenues-section-involved .revenues-section-involved-right:last-child {
+        margin-right: 0; }
+    .revenues-section-involved .revenues-section-involved-participate {
+      margin-bottom: 100px; }
+      .revenues-section-involved .revenues-section-involved-participate > div:first-of-type {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 65.88078%; }
+        .revenues-section-involved .revenues-section-involved-participate > div:first-of-type:last-child {
+          margin-right: 0; }
+      .revenues-section-involved .revenues-section-involved-participate > div:last-of-type {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 23.23176%;
+        margin-top: 1.875em; }
+        .revenues-section-involved .revenues-section-involved-participate > div:last-of-type:last-child {
+          margin-right: 0; }
+    .revenues-section-involved .revenues-section-involved-options > div {
+      margin-top: 1.875em;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 23.23176%; }
+      .revenues-section-involved .revenues-section-involved-options > div:nth-child(2n) {
+        margin-right: 2.35765%; }
+      .revenues-section-involved .revenues-section-involved-options > div:nth-child(2n+1) {
+        clear: none; }
+      .revenues-section-involved .revenues-section-involved-options > div:last-child {
+        margin-right: 0; }
+      .revenues-section-involved .revenues-section-involved-options > div:nth-child(4n) {
+        margin-right: 0; }
+      .revenues-section-involved .revenues-section-involved-options > div:nth-child(4n+1) {
+        clear: left; } }
 
 .guide-black {
   background-color: #040404;

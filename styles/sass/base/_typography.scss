@@ -90,7 +90,7 @@ button {
 p,
 .list-para {
   @include font-size(0.9);
-  color: darken($dark-putty, 10%);
+  color: darken($dark-putty, 15%);
   font-weight: 200;
 }
 
@@ -153,4 +153,8 @@ p,
     // TODO generalize this
     // should be some percentage of parent text
   }
+}
+
+.subpage-p {
+  @include font-size(1.3);
 }

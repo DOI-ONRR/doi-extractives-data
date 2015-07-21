@@ -3061,14 +3061,15 @@ footer {
     font-weight: 200;
     margin-right: 1.25em; }
     .revenues-section-last ul li img {
-      height: 18px; }
+      height: 18px;
+      padding-right: 8px; }
   @media only screen and (min-width: 48em) {
-    .revenues-section-last h2 {
+    .revenues-section-last .revenues-section-last-intro {
       float: left;
       display: block;
       margin-right: 2.35765%;
       width: 31.76157%; }
-      .revenues-section-last h2:last-child {
+      .revenues-section-last .revenues-section-last-intro:last-child {
         margin-right: 0; }
     .revenues-section-last ul {
       float: left;
@@ -3240,6 +3241,11 @@ footer {
     color: #1075a5;
     padding-bottom: 5px;
     margin-bottom: 8px; }
+  .revenues-section-involved p a {
+    text-decoration: underline; }
+    .revenues-section-involved p a:hover,
+    .revenues-section-involved p a:focus {
+      text-decoration: none; }
   .revenues-section-involved .fa-stack {
     color: #1075a5;
     line-height: 2.1em; }

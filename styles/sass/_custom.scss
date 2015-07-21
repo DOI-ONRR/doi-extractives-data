@@ -603,11 +603,12 @@ footer {
 
     img {
       height: 18px;
+      padding-right: 8px;
     }
   }
 
   @include respond-to(medium-up) {
-    h2 {
+    .revenues-section-last-intro {
       @include span-columns(4 of 12);
     }
 
@@ -828,6 +829,15 @@ footer {
     color: $cobalt;
     padding-bottom: 5px;
     margin-bottom: 8px;
+  }
+
+  p a {
+    text-decoration: underline;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
   }
 
   .fa-stack {

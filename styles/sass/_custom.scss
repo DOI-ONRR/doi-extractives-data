@@ -491,7 +491,8 @@ footer {
   }
 }
 
-.revenues-section-steps {
+.revenues-section-steps,
+.revenues-section-subpage-steps {
   background-color: $mid-gray;
   padding-top: $base-padding-large;
   padding-bottom: $base-padding-extra;
@@ -660,12 +661,12 @@ footer {
   h1 {
     @extend .article_heading;
     @include font-size($h1);
-    padding-bottom: $base-padding-lite;
+    padding-bottom: ($base-padding / 2);
   }
 
   p {
     @extend .subpage-p;
-    padding-bottom: $base-padding-lite;
+    padding-bottom: $base-padding;
   }
 
   @include respond-to(medium-up) {
@@ -697,6 +698,7 @@ footer {
 
   img {
     float: right;
+    width: 50px;
     margin: 5px;
   }
 
@@ -723,6 +725,88 @@ footer {
   span {
     @include font-size($h1);
     line-height: 1.2;
+  }
+}
+
+.revenues-section-subpage-steps {
+  background: url(/img/revenues/offshore-oil.png) no-repeat;
+  background-position: 0px 100px;
+  background-size: 100%;
+  margin-top: $base-padding-large;
+
+  .revenues-section-subpage-dyk {
+    position: relative;
+
+    p {
+      color: $cobalt;
+    }
+
+    > div {
+      padding: 12px;
+      &:first-of-type {
+        color: $white;
+        background-color: #157bac;
+        border-radius: $base-border-radius $base-border-radius 0 0;
+      }
+      &:last-of-type {
+        background-color: $white;
+        border-radius: 0 0 $base-border-radius $base-border-radius;
+      }
+    }
+
+    .link-more-after {
+      position: absolute;
+      right: 0;
+    }
+
+    @include respond-to(medium-up) {
+      margin-top: 50%;
+      @include span-columns(2);
+    }
+  }
+
+  .revenues-steps-group {
+    a {
+      text-decoration: underline;
+
+      &:hover,
+      &:focus {
+        text-decoration: none;
+      }
+    }
+
+    li {
+      background-color: $white;
+      margin-bottom: 4px;
+      padding: $base-padding;
+
+      &:first-of-type {
+        border-radius: $base-border-radius $base-border-radius 0 0;
+      }
+
+      &:last-of-type {
+        border-radius: 0 0 $base-border-radius $base-border-radius;
+      }
+    }
+
+    p {
+      padding-right: $base-padding;
+      padding-bottom: $base-padding;
+      padding-left: 60px;
+    }
+
+    @include respond-to(medium-up) {
+      @include span-columns(7);
+      @include shift(3);
+    }
+  }
+
+  .revenues-steps-number {
+    border: 2px solid $mid-gray;
+    height: 47px;
+    margin-right: 8px;
+    padding-left: 13px;
+    width: 47px;
   }
 }
 

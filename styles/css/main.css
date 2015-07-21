@@ -2940,17 +2940,20 @@ footer {
 .revenues-intro .article_module-content {
   background-color: #f4f4f4; }
 
-.revenues-section-steps {
+.revenues-section-steps,
+.revenues-section-subpage-steps {
   background-color: #e1e1e1;
   padding-top: 1.875em;
   padding-bottom: 3.125em; }
-  .revenues-section-steps h3 {
+  .revenues-section-steps h3,
+  .revenues-section-subpage-steps h3 {
     font-size: 17px;
     font-size: 1.7rem;
     color: #d44116;
     display: inline;
     padding-right: 8px; }
-  .revenues-section-steps .revenues-steps-number {
+  .revenues-section-steps .revenues-steps-number,
+  .revenues-section-subpage-steps .revenues-steps-number {
     font-size: 18px;
     font-size: 1.8rem;
     background-color: #ffffff;
@@ -3105,9 +3108,9 @@ footer {
   .revenues-subpage-intro h1 {
     font-size: 19px;
     font-size: 1.9rem;
-    padding-bottom: 0.41667em; }
+    padding-bottom: 0.625em; }
   .revenues-subpage-intro p {
-    padding-bottom: 0.41667em; }
+    padding-bottom: 1.25em; }
   @media only screen and (min-width: 48em) {
     .revenues-subpage-intro {
       float: left;
@@ -3139,6 +3142,7 @@ footer {
   padding: 0.41667em 10px; }
   .revenues-subpage-office img {
     float: right;
+    width: 50px;
     margin: 5px; }
   .revenues-subpage-office p:nth-of-type(2) {
     margin-top: 10px; }
@@ -3159,6 +3163,69 @@ footer {
     font-size: 19px;
     font-size: 1.9rem;
     line-height: 1.2; }
+
+.revenues-section-subpage-steps {
+  background: url(/img/revenues/offshore-oil.png) no-repeat;
+  background-position: 0px 100px;
+  background-size: 100%;
+  margin-top: 1.875em; }
+  .revenues-section-subpage-steps .revenues-section-subpage-dyk {
+    position: relative; }
+    .revenues-section-subpage-steps .revenues-section-subpage-dyk p {
+      color: #1075a5; }
+    .revenues-section-subpage-steps .revenues-section-subpage-dyk > div {
+      padding: 12px; }
+      .revenues-section-subpage-steps .revenues-section-subpage-dyk > div:first-of-type {
+        color: #ffffff;
+        background-color: #157bac;
+        border-radius: 5px 5px 0 0; }
+      .revenues-section-subpage-steps .revenues-section-subpage-dyk > div:last-of-type {
+        background-color: #ffffff;
+        border-radius: 0 0 5px 5px; }
+    .revenues-section-subpage-steps .revenues-section-subpage-dyk .link-more-after {
+      position: absolute;
+      right: 0; }
+    @media only screen and (min-width: 48em) {
+      .revenues-section-subpage-steps .revenues-section-subpage-dyk {
+        margin-top: 50%;
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 14.70196%; }
+        .revenues-section-subpage-steps .revenues-section-subpage-dyk:last-child {
+          margin-right: 0; } }
+  .revenues-section-subpage-steps .revenues-steps-group a {
+    text-decoration: underline; }
+    .revenues-section-subpage-steps .revenues-steps-group a:hover,
+    .revenues-section-subpage-steps .revenues-steps-group a:focus {
+      text-decoration: none; }
+  .revenues-section-subpage-steps .revenues-steps-group li {
+    background-color: #ffffff;
+    margin-bottom: 4px;
+    padding: 1.25em; }
+    .revenues-section-subpage-steps .revenues-steps-group li:first-of-type {
+      border-radius: 5px 5px 0 0; }
+    .revenues-section-subpage-steps .revenues-steps-group li:last-of-type {
+      border-radius: 0 0 5px 5px; }
+  .revenues-section-subpage-steps .revenues-steps-group p {
+    padding-right: 1.25em;
+    padding-bottom: 1.25em;
+    padding-left: 60px; }
+  @media only screen and (min-width: 48em) {
+    .revenues-section-subpage-steps .revenues-steps-group {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 57.35098%;
+      margin-left: 25.58941%; }
+      .revenues-section-subpage-steps .revenues-steps-group:last-child {
+        margin-right: 0; } }
+  .revenues-section-subpage-steps .revenues-steps-number {
+    border: 2px solid #e1e1e1;
+    height: 47px;
+    margin-right: 8px;
+    padding-left: 13px;
+    width: 47px; }
 
 .revenues-section-forms-subpage {
   background-color: #f4f4f4; }

@@ -525,9 +525,7 @@ h1, h2, h3, h4
 .revenues-module-spash h3, .revenues-module-spash h4
 h3, h4
 .revenues-section-forms h3, .revenues-section-forms h4
-h3, h4
-.revenues-section-involved h3, .revenues-section-involved h4
-h3, .h2, .h3, .h4, .guide > section > h1, .guide-buttons > h1, .revenues-intro figcaption {
+h3, .h2, .revenues-section-involved h3, .h3, .h4, .guide > section > h1, .guide-buttons > h1, .revenues-intro figcaption {
   color: #666666;
   font-family: Lato, "Helvetica Neue", Helvetica, arial, sans-serif;
   font-weight: 200;
@@ -537,12 +535,12 @@ h3, .h2, .h3, .h4, .guide > section > h1, .guide-buttons > h1, .revenues-intro f
   text-rendering: optimizeLegibility; }
 
 h1,
-.h1, .revenues-module-spash h3, .revenues-section-forms h3, .revenues-section-involved h3 {
+.h1, .revenues-module-spash h3, .revenues-section-forms h3 {
   font-size: 19px;
   font-size: 1.9rem; }
 
 h2,
-.h2 {
+.h2, .revenues-section-involved h3 {
   font-size: 14px;
   font-size: 1.4rem;
   color: #838383;
@@ -3172,9 +3170,12 @@ footer {
   .revenues-section-involved h2 {
     color: #303030; }
   .revenues-section-involved h3 {
-    border-bottom: 4px solid #cccccc;
+    color: #1075a5;
     padding-bottom: 5px;
     margin-bottom: 8px; }
+  .revenues-section-involved .fa-stack {
+    color: #1075a5;
+    line-height: 2.1em; }
   .revenues-section-involved .revenues-section-involved-intro p {
     font-size: 14px;
     font-size: 1.4rem; }
@@ -3198,29 +3199,46 @@ footer {
       width: 31.76157%; }
       .revenues-section-involved .revenues-section-involved-intro:last-child {
         margin-right: 0; }
-    .revenues-section-involved .revenues-section-involved-options {
+    .revenues-section-involved .revenues-section-involved-right {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 65.88078%;
-      margin-right: 0; }
-      .revenues-section-involved .revenues-section-involved-options:last-child {
+      width: 65.88078%; }
+      .revenues-section-involved .revenues-section-involved-right:last-child {
         margin-right: 0; }
-      .revenues-section-involved .revenues-section-involved-options > div {
+    .revenues-section-involved .revenues-section-involved-participate {
+      margin-bottom: 100px; }
+      .revenues-section-involved .revenues-section-involved-participate > div:first-of-type {
         float: left;
         display: block;
-        margin-right: 3.57866%;
-        width: 22.316%; }
-        .revenues-section-involved .revenues-section-involved-options > div:nth-child(2n) {
-          margin-right: 2.35765%; }
-        .revenues-section-involved .revenues-section-involved-options > div:nth-child(2n+1) {
-          clear: none; }
-        .revenues-section-involved .revenues-section-involved-options > div:last-child {
+        margin-right: 2.35765%;
+        width: 65.88078%; }
+        .revenues-section-involved .revenues-section-involved-participate > div:first-of-type:last-child {
           margin-right: 0; }
-        .revenues-section-involved .revenues-section-involved-options > div:nth-child(4n) {
+      .revenues-section-involved .revenues-section-involved-participate > div:last-of-type {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 23.23176%;
+        margin-top: 1.875em; }
+        .revenues-section-involved .revenues-section-involved-participate > div:last-of-type:last-child {
           margin-right: 0; }
-        .revenues-section-involved .revenues-section-involved-options > div:nth-child(4n+1) {
-          clear: left; } }
+    .revenues-section-involved .revenues-section-involved-options > div {
+      margin-top: 1.875em;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 23.23176%; }
+      .revenues-section-involved .revenues-section-involved-options > div:nth-child(2n) {
+        margin-right: 2.35765%; }
+      .revenues-section-involved .revenues-section-involved-options > div:nth-child(2n+1) {
+        clear: none; }
+      .revenues-section-involved .revenues-section-involved-options > div:last-child {
+        margin-right: 0; }
+      .revenues-section-involved .revenues-section-involved-options > div:nth-child(4n) {
+        margin-right: 0; }
+      .revenues-section-involved .revenues-section-involved-options > div:nth-child(4n+1) {
+        clear: left; } }
 
 .guide-black {
   background-color: #040404;

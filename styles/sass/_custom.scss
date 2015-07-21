@@ -740,10 +740,16 @@ footer {
   }
 
   h3 {
-    @extend .h1;
-    border-bottom: 4px solid #cccccc;
+    @extend .h2;
+    color: $cobalt;
     padding-bottom: 5px;
     margin-bottom: 8px;
+  }
+
+  .fa-stack {
+    @extend .light-on-dark;
+    color: $cobalt;
+    line-height: 2.1em;
   }
 
   .revenues-section-involved-intro {
@@ -761,15 +767,30 @@ footer {
 
   @include respond-to(medium-up) {
     .revenues-section-involved-intro {
-      @include span-columns(4);
+      @include span-columns(4 of 12);
     }
-    .revenues-section-involved-options {
-      @include span-columns(8);
-      @include omega();
 
+    .revenues-section-involved-right {
+      @include span-columns(8 of 12);
+    }
+
+    .revenues-section-involved-participate {
+      
+      margin-bottom: 100px;
+      > div:first-of-type {
+        @include span-columns(8 of 12);
+      }
+      > div:last-of-type {
+        @include span-columns(3 of 12);
+        margin-top: $base-padding-large;
+      }
+    }
+
+    .revenues-section-involved-options {
       > div {
+        margin-top: $base-padding-large;
         @include omega-reset(2n);
-        @include span-columns(2 of 8);
+        @include span-columns(3 of 12);
         @include omega(4n);
       }
     }

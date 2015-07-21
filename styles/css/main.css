@@ -3120,8 +3120,7 @@ footer {
 .revenues-subpage-office-container {
   position: relative; }
   .revenues-subpage-office-container a {
-    position: absolute;
-    right: 0; }
+    color: #666666; }
   @media only screen and (min-width: 48em) {
     .revenues-subpage-office-container {
       float: left;
@@ -3141,10 +3140,8 @@ footer {
   .revenues-subpage-office img {
     float: right;
     margin: 5px; }
-    .revenues-subpage-office img:nth-of-type(2) {
-      margin-top: 13px; }
   .revenues-subpage-office p:nth-of-type(2) {
-    margin-top: 5px; }
+    margin-top: 10px; }
   .revenues-subpage-office span {
     font-weight: normal; }
 

@@ -677,8 +677,9 @@ footer {
   position: relative;
 
   a {
-    position: absolute;
-    right: 0;
+    color: $dark-gray;
+    // position: absolute;
+    // right: 0;
   }
 
   @include respond-to(medium-up) {
@@ -697,14 +698,10 @@ footer {
   img {
     float: right;
     margin: 5px;
-
-    &:nth-of-type(2) {
-      margin-top: 13px;
-    }
   }
 
   p:nth-of-type(2) {
-    margin-top: 5px;
+    margin-top: 10px;
   }
 
   span {

@@ -1,7 +1,7 @@
-BIN = ./node_modules/.bin
+BIN = ../node_modules/.bin
 
 tito = $(BIN)/tito
-datex = $(BIN)/datex --require parse=./lib/parse
+datex = $(BIN)/datex --require parse=../lib/parse
 
 topo_options ?= --spherical
 
@@ -21,11 +21,7 @@ FILES = \
 
 JS_FILES ?= js/eiti*.js
 
-all: $(FILES) geo svg css/fonts
-
-# generate self-signed SSL certificates for testing HTTPS
-certs:
-	openssl req -x509 -newkey rsa:2048 -keyout key.pem -out cert.pem -nodes
+all: $(FILES) geo svg
 
 output/national/revenues-yearly.tsv: output/state/revenues-yearly.tsv output/offshore/revenues-yearly.tsv
 	mkdir -p $(dir $@)
@@ -204,29 +200,15 @@ output/svg/outer.svg: output/geo/us-outline.json output/geo/offshore.json
 input/geo/offshore/%.json:
 	cd input/geo/offshore && make
 
-css/fonts:
-	$(BIN)/webfont-dl \
-		'http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic' \
-		-o css/google-fonts.css \
-		--css-rel=fonts \
-		--font-out=$@
-
-css/google-fonts.css: css/fonts
-
-js/docs:
-	$(BIN)/documentation -f html -o $@ $(JS_FILES)
-
 clean:
 	rm -f $(FILES)
 	cd input/geo/offshore && make clean
 
-clean-fonts:
-	rm -rf css/fonts
-
-distclean: clean clean-fonts
+distclean: clean
 	cd input/geo/offshore && make distclean
 
 .PHONY: \
 	counties-by-state \
 	county-revenues-by-state \
-	geo svg certs
+	geo \
+	svg

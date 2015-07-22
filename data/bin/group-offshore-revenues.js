@@ -16,8 +16,8 @@ if (options.help) {
 
 var fs = require('fs');
 var tito = require('tito').formats;
-var util = require('../lib/util');
-var parse = require('../lib/parse');
+var util = require('../../lib/util');
+var parse = require('../../lib/parse');
 var async = require('async');
 var streamify = require('stream-array');
 var d3 = require('d3');

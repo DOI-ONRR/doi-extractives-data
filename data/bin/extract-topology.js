@@ -16,7 +16,7 @@ if (options.help || !options.layer) {
 var fs = require('fs');
 var topojson = require('topojson');
 var datex = require('data-expression');
-var topojsonOptions = require('../lib/topojson-options')(options);
+var topojsonOptions = require('../../lib/topojson-options')(options);
 
 var args = options._;
 fs.readFile(args[0] || '/dev/stdin', function(error, buffer) {

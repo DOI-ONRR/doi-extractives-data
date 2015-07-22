@@ -23,7 +23,7 @@ var args = options._;
 
 var fs = require('fs');
 var tito = require('tito').formats;
-var util = require('../lib/util');
+var util = require('../../lib/util');
 var streamify = require('stream-array');
 var async = require('async');
 

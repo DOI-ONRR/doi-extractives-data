@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-var options = require('../lib/args')({
+var options = require('../../lib/args')({
   usage: '$0 [options] [bea.csv]',
   'if': {
     desc: 'input format (tito-compatible)',

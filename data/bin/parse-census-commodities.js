@@ -13,7 +13,7 @@ if (options.help) {
 
 var fs = require('fs');
 var tito = require('tito').formats;
-var util = require('../lib/util');
+var util = require('../../lib/util');
 var async = require('async');
 var streamify = require('stream-array');
 var extend = require('extend');

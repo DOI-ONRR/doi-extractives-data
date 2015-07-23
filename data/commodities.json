@@ -38,6 +38,24 @@
     "Asphalt": {
       "group": "minerals"
     },
+    "Anhydrous Sodium Sulfate": {
+      "group": "minerals"
+    },
+    "Borax-Anhydrous": {
+      "group": "minerals"
+    },
+    "Borax-Decahydrate": {
+      "group": "minerals"
+    },
+    "Borax-Pentahydrate": {
+      "group": "minerals"
+    },
+    "Boric Acid": {
+      "group": "minerals"
+    },
+    "Boric Oxide": {
+      "group": "minerals"
+    },
     "Clay": {
       "group": "minerals"
     },
@@ -71,7 +89,16 @@
     "Quartz": {
       "group": "minerals"
     },
+    "Salt": {
+      "group": "minerals"
+    },
+    "Salt-Waste": {
+      "group": "minerals"
+    },
     "Sand & Gravel": {
+      "group": "minerals"
+    },
+    "Soda Ash-Granular": {
       "group": "minerals"
     },
     "Sodium": {

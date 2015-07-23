@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 
-{% from 'macros.html' import location_selector %}
+{% from 'macros.html' import location_selector, region_map %}
 
 {% block main %}
   <section id="index" class="container">
@@ -25,16 +25,7 @@
 
       <article class="article_module">
 
-        <svg is="eiti-map" projection="albersCustom" data-path="/data/geo/">
-          <g class="offshore" data-url="offshore-simple.json"
-            data-href="{% raw %}/locations/offshore/{{ id }}{% endraw %}"
-            data-mesh="true">
-          </g>
-          <g class="onshore" data-url="us-states-simple.json"
-            data-href="{% raw %}/locations/onshore/{{ id }}{% endraw %}"
-            data-mesh="true">
-          </g>
-        </svg>
+        {{ region_map(id='region-map', simplify='.2') }}
 
         <div class="article_module-content">
 

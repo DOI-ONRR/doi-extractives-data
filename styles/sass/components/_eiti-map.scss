@@ -5,8 +5,8 @@ svg[is="eiti-map"] {
     vector-effect: non-scaling-stroke;
   }
 
-  path.feature {
-    fill: #ddd;
+  path {
+    fill: transparent;
     stroke: none;
   }
 
@@ -15,11 +15,11 @@ svg[is="eiti-map"] {
   }
 
   path.feature.zoomed {
-    fill: #bbb;
+    // fill: #bbb;
   }
 
   a:hover path.feature {
-    fill: #ccc;
+    // fill: #ccc;
   }
 
   path.mesh {

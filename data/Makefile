@@ -80,7 +80,6 @@ output/offshore/volumes-yearly.tsv: input/onrr/offshore-volumes.tsv
 	mkdir -p $(dir $@)
 	bin/group-offshore-volumes.js \
 		--keys Year/Region/Area/Commodity/Product \
-		--count Count \
 		$< > $@
 
 output/county/counties.tsv: output/geo/us-topology.json

@@ -8,26 +8,43 @@ datex = $(BIN)/datex
 # force TopoJSON to use spherical projections
 topo_options ?= --spherical
 
+# revenue-related files
+REVENUE_FILES = \
+	output/national/revenues.tsv \
+	output/state/revenues.tsv \
+	output/county/revenues.tsv \
+	output/offshore/revenues.tsv \
+	output/regional/resource-revenues.tsv \
+	output/regional/revenues.tsv \
+	county-revenues-by-state
+
+# production volume files
+PRODUCTION_FILES = \
+	output/national/production.tsv \
+	output/state/production.tsv \
+	output/county/production.tsv \
+	output/offshore/production.tsv
+
+# Census-derived export figures
+EXPORT_FILES = \
+	output/state/exports-by-industry.tsv
+
+# GDP figures from the Bureau of Economic Analysis
+GDP_FILES = \
+	output/national/gdp.tsv \
+	output/state/gdp.tsv
+
 # a list of all of the individual files to build.
 # unless otherwise noted, all of these files are broken
 # down by year and commodity
 FILES = \
-	output/national/revenues-yearly.tsv \
-	output/national/volumes-yearly.tsv \
-	output/national/gdp-yearly.tsv \
-	output/state/revenues-yearly.tsv \
-	output/state/volumes-yearly.tsv \
-	output/state/exports-by-industry.tsv \
-	output/county/revenues-yearly.tsv \
-	output/county/volumes-yearly.tsv \
-	output/offshore/revenues-yearly.tsv \
-	output/offshore/volumes-yearly.tsv \
-	output/regional/resource-revenues.tsv \
-	output/regional/revenues.tsv \
-	county-revenues-by-state \
-	output/state/gdp-yearly.tsv
+	$(REVENUE_FILES) \
+	$(PRODUCTION_FILES) \
+	$(EXPORT_FILES) \
+	geo svg \
+	$(GDP_FILES)
 
-all: $(FILES) geo svg
+all: $(FILES)
 
 # national revenues by commodity and revenue type
 output/national/revenues.tsv: output/state/revenues.tsv output/offshore/revenues.tsv

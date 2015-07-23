@@ -7,6 +7,8 @@
 
 {% block main %}
   <section id="resources" class="container">
+    <eiti-slider id="year-slider" min="2004" max="2013" value="2013" snap>
+    </eiti-slider>
     <svg id="region-map" is="eiti-map" projection="albersCustom" data-path="/data/geo/">
       <g class="offshore" data-url="offshore-simple.json"
         data-id="{% raw %}offshore/{{ id }}{% endraw %}"
@@ -24,9 +26,12 @@
 
 {% block script %}
 <script>
-(function() {
+(function(resource) {
+
   var map = d3.select('#region-map');
-  var resource = '{{ request.params.resource }}';
+  var slider = d3.select('#year-slider')
+    .on('change', update);
+  var year, valuesByYear;
 
   eiti.load(
     '/data/regional/resource-revenues.tsv',
@@ -40,35 +45,43 @@
         return d.Resource === resource;
       });
 
-      var values = d3.nest()
+      valuesByYear = d3.nest()
+        .key(dl.accessor('Year'))
         .key(dl.accessor('Region'))
         .rollup(function(d) {
           return d3.sum(d, dl.accessor('Revenue'));
         })
         .map(revenues);
 
-      // console.log('revenues:', revenues, '->', values);
-
-      var max = d3.values(values).sort(d3.descending)[0];
-
-      // FIXME: where does this color scale get defined?
-      var scale = d3.scale.quantize()
-        .domain([0, max])
-        .range(colorbrewer.Blues[7]);
-
-      map.selectAll('path.feature')
-        .style('fill', function(d) {
-          var value = d.value = values[d.id];
-          return isNaN(value)
-            ? null
-            : scale(value);
-        })
-        .classed('empty', function(d) {
-          return isNaN(d.value);
-        });
-
+      update();
     });
 
-})();
+  function update() {
+    if (!valuesByYear) return;
+    var prev = year;
+    year = slider.property('value');
+    if (year === prev) return;
+
+    var values = valuesByYear[year];
+    var max = d3.values(values).sort(d3.descending)[0];
+
+    // FIXME: where does this color scale get defined?
+    var scale = d3.scale.quantize()
+      .domain([0, max])
+      .range(colorbrewer.Blues[7]);
+
+    map.selectAll('path.feature')
+      .style('fill', function(d) {
+        var value = d.value = values[d.id];
+        return isNaN(value)
+          ? null
+          : scale(value);
+      })
+      .classed('empty', function(d) {
+        return isNaN(d.value);
+      });
+  }
+
+})('{{ request.params.resource }}');
 </script>
 {% endblock %}

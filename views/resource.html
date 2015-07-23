@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 
+{% from 'macros.html' import region_map %}
+
 {% block breadcrumb %}
   <li><a href="/resources">Resources</a></li>
   <li>{{ resource.name }}</li>
@@ -9,18 +11,13 @@
   <section id="resources" class="container">
     <eiti-slider id="year-slider" min="2004" max="2013" value="2013" snap>
     </eiti-slider>
-    <svg id="region-map" is="eiti-map" projection="albersCustom" data-path="/data/geo/">
-      <g class="offshore" data-url="offshore-simple.json"
-        data-id="{% raw %}offshore/{{ id }}{% endraw %}"
-        data-href="{% raw %}/locations/offshore/{{ id }}{% endraw %}?resource={{ request.params.resource }}"
-        data-mesh="true">
-      </g>
-      <g class="onshore" data-url="us-states-simple.json"
-        data-id="{% raw %}onshore/{{ id }}{% endraw %}"
-        data-href="{% raw %}/locations/onshore/{{ id }}{% endraw %}?resource={{ request.params.resource }}"
-        data-mesh="true">
-      </g>
-    </svg>
+    {{
+      region_map(
+        id='region-map',
+        simplify='2e-2',
+        href_prefix=('/resources/' + resource.slug)
+      )
+    }}
   </section>
 {% endblock %}
 

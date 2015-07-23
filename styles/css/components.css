@@ -4,7 +4,7 @@ svg[is="eiti-map"] path {
 
 eiti-map path.feature,
 svg[is="eiti-map"] path.feature {
-  fill: #ccc;
+  fill: #ddd;
   stroke: none; }
 
 eiti-map.clickable path.feature,
@@ -17,13 +17,53 @@ svg[is="eiti-map"] path.feature.zoomed {
 
 eiti-map a:hover path.feature,
 svg[is="eiti-map"] a:hover path.feature {
-  fill: #aaa; }
+  fill: #ccc; }
 
 eiti-map path.mesh,
 svg[is="eiti-map"] path.mesh {
   fill: none;
   pointer-events: none;
-  stroke: #999;
+  stroke: #aaa;
   stroke-width: 1; }
+
+eiti-slider {
+  margin: 1em 15px 1em 50px;
+  height: .2em;
+  border-radius: 0;
+  background: #fff;
+  position: relative; }
+  eiti-slider label {
+    position: absolute;
+    left: -50px;
+    top: -.5em;
+    margin-left: -1em;
+    text-transform: uppercase;
+    color: #666; }
+  eiti-slider .handle {
+    z-index: 100; }
+  eiti-slider .tick {
+    position: absolute;
+    top: 50%;
+    z-index: 50; }
+  eiti-slider .tick:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: .5em;
+    height: .5em;
+    background: #fff;
+    border-radius: .4em;
+    margin: -0.25em 0 0 -0.25em; }
+  eiti-slider .tick .label {
+    font-size: .5em;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -1.5em;
+    margin-top: 1.2em;
+    width: 3em;
+    text-align: center; }
+  eiti-slider .tick.selected .label {
+    font-weight: bold; }
 
 /*# sourceMappingURL=components.css.map */

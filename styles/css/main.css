@@ -650,6 +650,105 @@ input[type="submit"].button-add {
   font-size: 13px;
   font-size: 1.3rem; }
 
+eiti-slider {
+  background: #fff;
+  cursor: pointer;
+  cursor: pointer;
+  display: block;
+  height: .2em;
+  margin: 1em 15px 1em 50px;
+  margin-bottom: 1em;
+  margin-top: 2.5em;
+  opacity: 1;
+  position: relative;
+  position: relative;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none; }
+  eiti-slider label {
+    color: #666;
+    left: -50px;
+    margin-left: -1em;
+    position: absolute;
+    text-transform: uppercase;
+    top: -.5em; }
+  eiti-slider .handle {
+    background: #fff;
+    border-radius: 1em;
+    border: 1px solid #999;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    height: 1.4em;
+    margin-left: -.7em;
+    margin-top: -.7em;
+    position: absolute;
+    top: 50%;
+    width: 1.4em; }
+    eiti-slider .handle:after {
+      border-color: #ccc;
+      border-style: solid;
+      border-width: 0 1px;
+      box-sizing: border-box;
+      content: "";
+      display: block;
+      height: .6em;
+      left: 50%;
+      margin: -0.3em 0 0 -0.1em;
+      position: absolute;
+      top: 50%;
+      width: .2em; }
+  eiti-slider .tick {
+    position: absolute;
+    top: 50%;
+    z-index: 50; }
+  eiti-slider .tick:after {
+    background: #fff;
+    border-radius: .4em;
+    content: " ";
+    display: block;
+    height: .5em;
+    margin: -0.25em 0 0 -0.25em;
+    position: absolute;
+    width: .5em; }
+  eiti-slider .tick .label {
+    font-size: .5em;
+    left: 50%;
+    margin-left: -1.5em;
+    margin-top: 1.2em;
+    position: absolute;
+    text-align: center;
+    top: 100%;
+    width: 3em; }
+  eiti-slider .tick.selected .label {
+    font-weight: bold; }
+
+eiti-map path,
+svg[is="eiti-map"] path {
+  vector-effect: non-scaling-stroke; }
+
+eiti-map path.feature,
+svg[is="eiti-map"] path.feature {
+  fill: #ddd;
+  stroke: none; }
+
+eiti-map.clickable path.feature,
+svg[is="eiti-map"].clickable path.feature {
+  cursor: pointer; }
+
+eiti-map path.feature.zoomed,
+svg[is="eiti-map"] path.feature.zoomed {
+  fill: #bbb; }
+
+eiti-map a:hover path.feature,
+svg[is="eiti-map"] a:hover path.feature {
+  fill: #ccc; }
+
+eiti-map path.mesh,
+svg[is="eiti-map"] path.mesh {
+  fill: none;
+  pointer-events: none;
+  stroke: #aaa;
+  stroke-width: 1; }
+
 /*!
  *  Font Awesome 4.3.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -2443,34 +2542,6 @@ input[type="submit"].button-add {
 
 .fa-medium:before {
   content: ""; }
-
-eiti-map path,
-svg[is="eiti-map"] path {
-  vector-effect: non-scaling-stroke; }
-
-eiti-map path.feature,
-svg[is="eiti-map"] path.feature {
-  fill: #ddd;
-  stroke: none; }
-
-eiti-map.clickable path.feature,
-svg[is="eiti-map"].clickable path.feature {
-  cursor: pointer; }
-
-eiti-map path.feature.zoomed,
-svg[is="eiti-map"] path.feature.zoomed {
-  fill: #bbb; }
-
-eiti-map a:hover path.feature,
-svg[is="eiti-map"] a:hover path.feature {
-  fill: #ccc; }
-
-eiti-map path.mesh,
-svg[is="eiti-map"] path.mesh {
-  fill: none;
-  pointer-events: none;
-  stroke: #aaa;
-  stroke-width: 1; }
 
 .hidden {
   display: none; }

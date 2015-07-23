@@ -73,7 +73,7 @@ async.parallel({
 
   var results = data.onshore
     .map(function(d) {
-      d.Region = 'onshore/' + d.State;
+      d.Region = d.State;
       delete d.State;
       return d;
     })
@@ -83,7 +83,7 @@ async.parallel({
       if (!region) {
         throw new Error('No area id for: "' + area + '" in: ' + Object.keys(areaIdByName).join(', '));
       }
-      d.Region = 'offshore/' + region;
+      d.Region = region;
       d.Offshore = 1;
       delete d.Area;
       return d;

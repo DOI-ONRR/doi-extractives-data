@@ -85,8 +85,7 @@ output/state/exports-by-industry.tsv: input/census/top-state-exports.tsv
 output/offshore/revenues-yearly.tsv: input/onrr/offshore-revenues.tsv
 	mkdir -p $(dir $@)
 	bin/group-offshore-revenues.js \
-		--keys Year/Region/Area/Commodity/Product/Type \
-		--count Count \
+		--keys Year/Region/Area/Commodity/Type \
 		$< > $@
 
 # offshore production volumes by region and area

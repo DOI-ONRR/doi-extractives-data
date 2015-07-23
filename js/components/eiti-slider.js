@@ -1,8 +1,8 @@
 (function(exports) {
 
-  exports.XSlider = registerElement('x-slider', {
+  exports.EITISlider = registerElement('eiti-slider', {
     createdCallback: function() {
-      // console.log('x-slider created');
+      // console.log('eiti-slider created');
       this.setAttribute('unresolved', '');
       this.min = getAttr.call(this, 'min', 0);
       this.max = getAttr.call(this, 'max', 100);
@@ -11,7 +11,7 @@
     },
 
     attachedCallback: function() {
-      // console.log('x-slider attached');
+      // console.log('eiti-slider attached');
 
       this.removeAttribute('unresolved');
       this.__handle = this.querySelector('.handle') || createHandle.call(this);
@@ -24,7 +24,7 @@
     },
 
     detachedCallback: function() {
-      // console.log('x-slider detached');
+      // console.log('eiti-slider detached');
       this.removeEventListener('click', events.click);
       this.removeEventListener('mousedown', events.enagage);
       this.removeEventListener('touchstart', events.enagage);
@@ -37,7 +37,7 @@
         case 'max':
         case 'value':
         case 'snap':
-          // console.log('x-slider attr: ', attr, ' = ', value);
+          // console.log('eiti-slider attr: ', attr, ' = ', value);
           this[attr] = value;
           this.update();
           break;

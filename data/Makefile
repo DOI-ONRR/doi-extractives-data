@@ -22,6 +22,8 @@ FILES = \
 	output/county/volumes-yearly.tsv \
 	output/offshore/revenues-yearly.tsv \
 	output/offshore/volumes-yearly.tsv \
+	output/regional/resource-revenues.tsv \
+	output/regional/revenues.tsv \
 	county-revenues-by-state \
 	output/state/gdp-yearly.tsv
 
@@ -96,7 +98,7 @@ output/offshore/volumes-yearly.tsv: input/onrr/offshore-volumes.tsv
 		$< > $@
 
 # regional (state and offshore) revenues
-output/region/revenues-yearly.tsv: output/state/revenues-yearly.tsv output/offshore/revenues-yearly.tsv
+output/regional/revenues.tsv: output/state/revenues-yearly.tsv output/offshore/revenues-yearly.tsv
 	mkdir -p $(dir $@)
 	bin/union-regions.js \
 		--onshore output/state/revenues-yearly.tsv \
@@ -109,7 +111,7 @@ output/region/revenues-yearly.tsv: output/state/revenues-yearly.tsv output/offsh
 			-o $@
 
 # regional (state and offshore) revenues by resource group
-output/region/resource-revenues.tsv: output/region/revenues-yearly.tsv
+output/regional/resource-revenues.tsv: output/regional/revenues.tsv
 	cat $< \
 		| bin/add-resource-group.js \
 		| bin/sum.js \

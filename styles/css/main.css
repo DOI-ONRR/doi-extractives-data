@@ -700,26 +700,26 @@ eiti-slider {
     position: absolute;
     top: 50%;
     z-index: 50; }
-  eiti-slider .tick:after {
-    background: #fff;
-    border-radius: .4em;
-    content: " ";
-    display: block;
-    height: .5em;
-    margin: -0.25em 0 0 -0.25em;
-    position: absolute;
-    width: .5em; }
-  eiti-slider .tick .label {
-    font-size: .5em;
-    left: 50%;
-    margin-left: -1.5em;
-    margin-top: 1.2em;
-    position: absolute;
-    text-align: center;
-    top: 100%;
-    width: 3em; }
-  eiti-slider .tick.selected .label {
-    font-weight: bold; }
+    eiti-slider .tick:after {
+      background: #fff;
+      border-radius: .4em;
+      content: " ";
+      display: block;
+      height: .5em;
+      margin: -0.25em 0 0 -0.25em;
+      position: absolute;
+      width: .5em; }
+    eiti-slider .tick .label {
+      font-size: .5em;
+      left: 50%;
+      margin-left: -1.5em;
+      margin-top: 1.2em;
+      position: absolute;
+      text-align: center;
+      top: 100%;
+      width: 3em; }
+    eiti-slider .tick.selected .label {
+      font-weight: bold; }
 
 eiti-map path,
 svg[is="eiti-map"] path {

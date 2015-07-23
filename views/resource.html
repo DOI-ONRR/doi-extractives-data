@@ -23,35 +23,45 @@
 
 {% block script %}
 <script>
-(function(resource) {
+(function(resource, color) {
+
+  var params = {
+    resource: '{{ request.params.resource }}',
+    color: '{{ resources.colors[request.params.resource].primary }}'
+  };
 
   var map = d3.select('#region-map');
   var slider = d3.select('#year-slider')
     .on('change', update);
+  var colorScale;
   var year, valuesByYear;
 
-  eiti.load(
-    '/data/regional/resource-revenues.tsv',
-    function(error, revenues) {
-      if (error) {
-        console.error('load error:', error);
-        return alert('There was an error loading the map!');
-      }
+  eiti.loadAll({
+    revenues: '/data/regional/resource-revenues.tsv'
+  }, function(error, data) {
+    if (error) {
+      console.error('load error:', error);
+      return alert('There was an error loading the map!');
+    }
 
-      revenues = revenues.filter(function(d) {
-        return d.Resource === resource;
-      });
-
-      valuesByYear = d3.nest()
-        .key(dl.accessor('Year'))
-        .key(dl.accessor('Region'))
-        .rollup(function(d) {
-          return d3.sum(d, dl.accessor('Revenue'));
-        })
-        .map(revenues);
-
-      update();
+    var resource = params.resource;
+    var revenues = data.revenues.filter(function(d) {
+      return d.Resource === resource;
     });
+
+    valuesByYear = d3.nest()
+      .key(dl.accessor('Year'))
+      .key(dl.accessor('Region'))
+      .rollup(function(d) {
+        return d3.sum(d, dl.accessor('Revenue'));
+      })
+      .map(revenues);
+
+    colorScale = d3.scale.linear()
+      .range(['#fff', params.color]);
+
+    update();
+  });
 
   function update() {
     if (!valuesByYear) return;
@@ -62,10 +72,8 @@
     var values = valuesByYear[year];
     var max = d3.values(values).sort(d3.descending)[0];
 
-    // FIXME: where does this color scale get defined?
-    var scale = d3.scale.quantize()
-      .domain([0, max])
-      .range(colorbrewer.Blues[7]);
+    var scale = colorScale
+      .domain([0, max]);
 
     map.selectAll('path.feature')
       .style('fill', function(d) {
@@ -79,6 +87,6 @@
       });
   }
 
-})('{{ request.params.resource }}');
+})();
 </script>
 {% endblock %}

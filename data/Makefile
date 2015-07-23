@@ -95,6 +95,29 @@ output/offshore/volumes-yearly.tsv: input/onrr/offshore-volumes.tsv
 		--keys Year/Region/Area/Commodity/Product \
 		$< > $@
 
+# regional (state and offshore) revenues
+output/region/revenues-yearly.tsv: output/state/revenues-yearly.tsv output/offshore/revenues-yearly.tsv
+	mkdir -p $(dir $@)
+	bin/union-regions.js \
+		--onshore output/state/revenues-yearly.tsv \
+		--states input/geo/states.csv \
+		--offshore output/offshore/revenues-yearly.tsv \
+		--areas input/geo/offshore/areas.tsv \
+		| bin/sum.js \
+			--group 'Year,Region,Commodity,Type' \
+			--sum 'Revenue' \
+			-o $@
+
+# regional (state and offshore) revenues by resource group
+output/region/resource-revenues.tsv: output/region/revenues-yearly.tsv
+	cat $< \
+		| bin/add-resource-group.js \
+		| bin/sum.js \
+			--group 'Year,Region,Resource' \
+			--sum 'Revenue' \
+			-o $@ /dev/stdin
+
+# county listings
 output/county/counties.tsv: output/geo/us-topology.json
 	bin/extract-properties.js --layer counties $< | \
 		$(datex) --map '{state: state, name: county, FIPS: FIPS}' | \

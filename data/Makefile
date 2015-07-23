@@ -30,7 +30,7 @@ FILES = \
 all: $(FILES) geo svg
 
 # national revenues by commodity and revenue type
-output/national/revenues-yearly.tsv: output/state/revenues-yearly.tsv output/offshore/revenues-yearly.tsv
+output/national/revenues.tsv: output/state/revenues.tsv output/offshore/revenues.tsv
 	mkdir -p $(dir $@)
 	bin/sum.js \
 		--group 'Year,Commodity,Type' \
@@ -38,7 +38,7 @@ output/national/revenues-yearly.tsv: output/state/revenues-yearly.tsv output/off
 		-o $@ $^
 
 # national production volumes by commodity and product
-output/national/volumes-yearly.tsv: output/state/volumes-yearly.tsv output/offshore/volumes-yearly.tsv
+output/national/production.tsv: output/state/production.tsv output/offshore/production.tsv
 	mkdir -p $(dir $@)
 	bin/sum.js \
 		--group 'Year,Commodity,Product' \
@@ -46,7 +46,7 @@ output/national/volumes-yearly.tsv: output/state/volumes-yearly.tsv output/offsh
 		-o $@ $^
 
 # national GDP figures
-output/national/gdp-yearly.tsv:
+output/national/gdp.tsv:
 	mkdir -p $(dir $@)
 	bin/get-bea-data.js --geo us -o $@
 
@@ -57,7 +57,7 @@ output/state/states.tsv: input/geo/states.csv
 		$(tito) --write tsv > $@
 
 # state revenues by commodity and revenue type
-output/state/revenues-yearly.tsv: output/county/revenues-yearly.tsv
+output/state/revenues.tsv: output/county/revenues.tsv
 	mkdir -p $(dir $@)
 	bin/sum.js \
 		--group 'Year,State,Commodity,Type' \
@@ -65,7 +65,7 @@ output/state/revenues-yearly.tsv: output/county/revenues-yearly.tsv
 		-o $@ $<
 
 # state production volumes by commodity and product
-output/state/volumes-yearly.tsv: output/county/volumes-yearly.tsv
+output/state/production.tsv: output/county/production.tsv
 	mkdir -p $(dir $@)
 	bin/sum.js \
 		--group 'Year,State,Commodity,Product' \
@@ -73,7 +73,7 @@ output/state/volumes-yearly.tsv: output/county/volumes-yearly.tsv
 		-o $@ $<
 
 # state GDP figures
-output/state/gdp-yearly.tsv:
+output/state/gdp.tsv:
 	mkdir -p $(dir $@)
 	bin/get-bea-data.js --geo state -o $@
 
@@ -84,26 +84,26 @@ output/state/exports-by-industry.tsv: input/census/top-state-exports.tsv
 		$< > $@
 
 # offshore revenues by region and area
-output/offshore/revenues-yearly.tsv: input/onrr/offshore-revenues.tsv
+output/offshore/revenues.tsv: input/onrr/offshore-revenues.tsv
 	mkdir -p $(dir $@)
 	bin/group-offshore-revenues.js \
 		--keys Year/Region/Area/Commodity/Type \
 		$< > $@
 
 # offshore production volumes by region and area
-output/offshore/volumes-yearly.tsv: input/onrr/offshore-volumes.tsv
+output/offshore/production.tsv: input/onrr/offshore-production.tsv
 	mkdir -p $(dir $@)
-	bin/group-offshore-volumes.js \
+	bin/group-offshore-production.js \
 		--keys Year/Region/Area/Commodity/Product \
 		$< > $@
 
 # regional (state and offshore) revenues
-output/regional/revenues.tsv: output/state/revenues-yearly.tsv output/offshore/revenues-yearly.tsv
+output/regional/revenues.tsv: output/state/revenues.tsv output/offshore/revenues.tsv
 	mkdir -p $(dir $@)
 	bin/union-regions.js \
-		--onshore output/state/revenues-yearly.tsv \
+		--onshore output/state/revenues.tsv \
 		--states input/geo/states.csv \
-		--offshore output/offshore/revenues-yearly.tsv \
+		--offshore output/offshore/revenues.tsv \
 		--areas input/geo/offshore/areas.tsv \
 		| bin/sum.js \
 			--group 'Year,Region,Commodity,Type' \
@@ -133,24 +133,24 @@ counties-by-state: output/county/counties.tsv
 			--of tsv
 
 # county revenues
-output/county/revenues-yearly.tsv: input/onrr/county-revenues.tsv
+output/county/revenues.tsv: input/onrr/county-revenues.tsv
 	mkdir -p $(dir $@)
 	$(tito) --read tsv $< \
 		| bin/normalize-county-revenues.js \
 		| $(tito) --write tsv > $@
 
 # divvy up county revenues into separate files by state
-county-revenues-by-state: output/county/revenues-yearly.tsv
+county-revenues-by-state: output/county/revenues.tsv
 	$(tito) --read tsv $< \
 		| bin/divvy.js \
-			--path 'output/county/by-state/{{ State }}/revenues-yearly.tsv' \
+			--path 'output/county/by-state/{{ State }}/revenues.tsv' \
 			--of tsv
 
 # county production volumes
-output/county/volumes-yearly.tsv: input/onrr/county-volumes.tsv
+output/county/production.tsv: input/onrr/county-production.tsv
 	mkdir -p $(dir $@)
 	$(tito) --read tsv $< \
-		| bin/normalize-county-volumes.js \
+		| bin/normalize-county-production.js \
 		| $(tito) --write tsv > $@
 
 geo: \
@@ -171,12 +171,12 @@ output/geo/us-topology.json: input/geo/us-10m.json
 		-o $@ -- $<
 
 # generate US topology for only those counties with data
-output/geo/us-topology-filtered.json: output/county/revenues-yearly.tsv output/geo/us-topology.json
+output/geo/us-topology-filtered.json: output/county/revenues.tsv output/geo/us-topology.json
 	mkdir -p $(dir $@)
 	bin/join-counties.js \
 		--in-topo output/geo/us-topology.json \
 		--in-states input/geo/states.csv \
-		--in-counties output/county/revenues-yearly.tsv \
+		--in-counties output/county/revenues.tsv \
 		--inner \
 		> $@
 

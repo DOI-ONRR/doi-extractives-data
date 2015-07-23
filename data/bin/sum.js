@@ -11,6 +11,8 @@ var yargs = require('yargs')
   .describe('count', 'include the grouped row count as this named column')
   .describe('o', 'write to this file')
   .default('o', '/dev/stdout')
+  .describe('precision', 'decimal precision')
+  .default('precision', 2)
   .alias('h', 'help')
   .wrap(72);
 
@@ -26,6 +28,10 @@ var tito = require('tito').formats;
 var util = require('../../lib/util');
 var streamify = require('stream-array');
 var async = require('async');
+
+if (!args.length) {
+  args = ['/dev/stdin'];
+}
 
 var rows = [];
 async.series(args.map(function(filename) {
@@ -48,7 +54,7 @@ async.series(args.map(function(filename) {
   var groups = util.group(rows, keys, function(subset) {
     return subset.values.reduce(function(sum, d) {
       return sum + Number(value(d));
-    }, 0);
+    }, 0).toFixed(options.precision);
   })
   .map(function(entry) {
     var row = entry.key;

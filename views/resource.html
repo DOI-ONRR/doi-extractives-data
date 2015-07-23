@@ -7,5 +7,68 @@
 
 {% block main %}
   <section id="resources" class="container">
+    <svg id="region-map" is="eiti-map" projection="albersCustom" data-path="/data/geo/">
+      <g class="offshore" data-url="offshore-simple.json"
+        data-id="{% raw %}offshore/{{ id }}{% endraw %}"
+        data-href="{% raw %}/locations/offshore/{{ id }}{% endraw %}?resource={{ request.params.resource }}"
+        data-mesh="true">
+      </g>
+      <g class="onshore" data-url="us-states-simple.json"
+        data-id="{% raw %}onshore/{{ id }}{% endraw %}"
+        data-href="{% raw %}/locations/onshore/{{ id }}{% endraw %}?resource={{ request.params.resource }}"
+        data-mesh="true">
+      </g>
+    </svg>
   </section>
+{% endblock %}
+
+{% block script %}
+<script>
+(function() {
+  var map = d3.select('#region-map');
+  var resource = '{{ request.params.resource }}';
+
+  eiti.load(
+    '/data/regional/resource-revenues.tsv',
+    function(error, revenues) {
+      if (error) {
+        console.error('load error:', error);
+        return alert('There was an error loading the map!');
+      }
+
+      revenues = revenues.filter(function(d) {
+        return d.Resource === resource;
+      });
+
+      var values = d3.nest()
+        .key(dl.accessor('Region'))
+        .rollup(function(d) {
+          return d3.sum(d, dl.accessor('Revenue'));
+        })
+        .map(revenues);
+
+      // console.log('revenues:', revenues, '->', values);
+
+      var max = d3.values(values).sort(d3.descending)[0];
+
+      // FIXME: where does this color scale get defined?
+      var scale = d3.scale.quantize()
+        .domain([0, max])
+        .range(colorbrewer.Blues[7]);
+
+      map.selectAll('path.feature')
+        .style('fill', function(d) {
+          var value = d.value = values[d.id];
+          return isNaN(value)
+            ? null
+            : scale(value);
+        })
+        .classed('empty', function(d) {
+          return isNaN(d.value);
+        });
+
+    });
+
+})();
+</script>
 {% endblock %}

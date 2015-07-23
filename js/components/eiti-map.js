@@ -140,8 +140,32 @@
 
   function getSVGPath(map) {
     var proj = getProjection(map);
-    return d3.geo.path()
+
+    var path = d3.geo.path()
       .projection(proj);
+
+    if (map.hasAttribute('simplify')) {
+      var area = +map.getAttribute('simplify');
+      var skipped = 0;
+      var simplify = d3.geo.transform({
+        point: function(x, y, z) {
+          if (z >= area) {
+            var p = proj([x, y]);
+            this.stream.point(p[0], p[1]);
+          } else {
+            skipped++;
+          }
+        },
+        polygon: function(d) {
+          skipped = 0;
+          this.stream.polygon(d);
+          if (skipped) console.log('skipped %d points in polygon:', skipped, polygon);
+        }
+      });
+      return path.projection(simplify);
+    }
+
+    return path;
   }
 
   function renderLayer(path) {
@@ -155,6 +179,7 @@
         switch (d.type) {
 
           case 'Topology':
+            d = topojson.presimplify(d);
             features = getTopologyFeatures(this, d);
             layer.classed('topology', true);
             if (!d.bbox) {
@@ -166,11 +191,13 @@
           case 'FeatureCollection':
             features = d.features;
             layer.classed('collection', true);
+            // FIXME: presimplify?
             break;
 
           default:
             features = [d];
             layer.classed('feature', true);
+            // FIXME: presimplify?
             break;
         }
 

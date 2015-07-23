@@ -44,7 +44,7 @@
 {% macro region_map(id=null, href_prefix='', href_suffix='', simplify=null) %}
   {% set href_prefix = href_prefix + '/locations' %}
   {% set href_suffix = '{{ id }}' + href_suffix %}
-  <svg is="eiti-map" {% if id %}id="{{ id }}"{% endif %} {% if simplify %}simplify="2e-2"{% endif %}
+  <svg is="eiti-map" {% if id %}id="{{ id }}"{% endif %} {% if simplify %}simplify="{{ simplify }}"{% endif %}
     projection="albersCustom" data-path="/data/geo/">
     <g class="offshore" data-url="offshore-simple.json"
       data-href="{{ href_prefix }}/offshore/{{ href_suffix }}"

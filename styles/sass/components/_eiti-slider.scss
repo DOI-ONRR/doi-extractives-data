@@ -55,32 +55,32 @@ eiti-slider {
     position: absolute;
     top: 50%;
     z-index: 50;
-  }
 
-  .tick:after {
-    background: #fff;
-    border-radius: .4em;
-    content: " ";
-    display: block;
-    height: .5em;
-    margin: -.25em 0 0 -.25em;
-    position: absolute;
-    width: .5em;
-  }
+    &:after {
+      background: #fff;
+      border-radius: .4em;
+      content: " ";
+      display: block;
+      height: .5em;
+      margin: -.25em 0 0 -.25em;
+      position: absolute;
+      width: .5em;
+    }
 
-  .tick .label {
-    font-size: .5em;
-    left: 50%;
-    margin-left: -1.5em;
-    margin-top: 1.2em;
-    position: absolute;
-    text-align: center;
-    top: 100%;
-    width: 3em;
-  }
+    .label {
+      font-size: .5em;
+      left: 50%;
+      margin-left: -1.5em;
+      margin-top: 1.2em;
+      position: absolute;
+      text-align: center;
+      top: 100%;
+      width: 3em;
+    }
 
-  .tick.selected .label {
-    font-weight: bold;
+    &.selected .label {
+      font-weight: bold;
+    }
   }
 }
 

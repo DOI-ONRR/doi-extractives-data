@@ -1,10 +1,16 @@
+# where our npm-installed executables reside
 BIN = ../node_modules/.bin
 
+# commonly used executables
 tito = $(BIN)/tito
-datex = $(BIN)/datex --require parse=../lib/parse
+datex = $(BIN)/datex
 
+# force TopoJSON to use spherical projections
 topo_options ?= --spherical
 
+# a list of all of the individual files to build.
+# unless otherwise noted, all of these files are broken
+# down by year and commodity
 FILES = \
 	output/national/revenues-yearly.tsv \
 	output/national/volumes-yearly.tsv \
@@ -19,10 +25,9 @@ FILES = \
 	county-revenues-by-state \
 	output/state/gdp-yearly.tsv
 
-JS_FILES ?= js/eiti*.js
-
 all: $(FILES) geo svg
 
+# national revenues by commodity and revenue type
 output/national/revenues-yearly.tsv: output/state/revenues-yearly.tsv output/offshore/revenues-yearly.tsv
 	mkdir -p $(dir $@)
 	bin/sum.js \
@@ -30,6 +35,7 @@ output/national/revenues-yearly.tsv: output/state/revenues-yearly.tsv output/off
 		--sum 'Revenue' \
 		-o $@ $^
 
+# national production volumes by commodity and product
 output/national/volumes-yearly.tsv: output/state/volumes-yearly.tsv output/offshore/volumes-yearly.tsv
 	mkdir -p $(dir $@)
 	bin/sum.js \
@@ -37,15 +43,18 @@ output/national/volumes-yearly.tsv: output/state/volumes-yearly.tsv output/offsh
 		--sum 'Volume' \
 		-o $@ $^
 
+# national GDP figures
 output/national/gdp-yearly.tsv:
 	mkdir -p $(dir $@)
 	bin/get-bea-data.js --geo us -o $@
 
+# state listing
 output/state/states.tsv: input/geo/states.csv
 	$(tito) --read csv $< | \
-		$(BIN)/datex --map '{id: abbr, name: name, FIPS: FIPS}' | \
+		$(datex) --map '{id: abbr, name: name, FIPS: FIPS}' | \
 		$(tito) --write tsv > $@
 
+# state revenues by commodity and revenue type
 output/state/revenues-yearly.tsv: output/county/revenues-yearly.tsv
 	mkdir -p $(dir $@)
 	bin/sum.js \
@@ -53,6 +62,7 @@ output/state/revenues-yearly.tsv: output/county/revenues-yearly.tsv
 		--sum 'Revenue' \
 		-o $@ $<
 
+# state production volumes by commodity and product
 output/state/volumes-yearly.tsv: output/county/volumes-yearly.tsv
 	mkdir -p $(dir $@)
 	bin/sum.js \
@@ -60,15 +70,18 @@ output/state/volumes-yearly.tsv: output/county/volumes-yearly.tsv
 		--sum 'Volume' \
 		-o $@ $<
 
+# state GDP figures
 output/state/gdp-yearly.tsv:
 	mkdir -p $(dir $@)
 	bin/get-bea-data.js --geo state -o $@
 
+# state export figures
 output/state/exports-by-industry.tsv: input/census/top-state-exports.tsv
 	mkdir -p $(dir $@)
 	bin/parse-census-commodities.js \
 		$< > $@
 
+# offshore revenues by region and area
 output/offshore/revenues-yearly.tsv: input/onrr/offshore-revenues.tsv
 	mkdir -p $(dir $@)
 	bin/group-offshore-revenues.js \
@@ -76,6 +89,7 @@ output/offshore/revenues-yearly.tsv: input/onrr/offshore-revenues.tsv
 		--count Count \
 		$< > $@
 
+# offshore production volumes by region and area
 output/offshore/volumes-yearly.tsv: input/onrr/offshore-volumes.tsv
 	mkdir -p $(dir $@)
 	bin/group-offshore-volumes.js \
@@ -84,27 +98,31 @@ output/offshore/volumes-yearly.tsv: input/onrr/offshore-volumes.tsv
 
 output/county/counties.tsv: output/geo/us-topology.json
 	bin/extract-properties.js --layer counties $< | \
-		datex --map '{state: state, name: county, FIPS: FIPS}' | \
+		$(datex) --map '{state: state, name: county, FIPS: FIPS}' | \
 		$(tito) --write tsv > $@
 
+# divvy up counties.csv into separate files by state
 counties-by-state: output/county/counties.tsv
 	$(tito) --read tsv $< \
 		| bin/divvy.js \
 			--path 'output/county/by-state/{{ state }}/counties.tsv' \
 			--of tsv
 
+# county revenues
 output/county/revenues-yearly.tsv: input/onrr/county-revenues.tsv
 	mkdir -p $(dir $@)
 	$(tito) --read tsv $< \
 		| bin/normalize-county-revenues.js \
 		| $(tito) --write tsv > $@
 
+# divvy up county revenues into separate files by state
 county-revenues-by-state: output/county/revenues-yearly.tsv
 	$(tito) --read tsv $< \
 		| bin/divvy.js \
 			--path 'output/county/by-state/{{ State }}/revenues-yearly.tsv' \
 			--of tsv
 
+# county production volumes
 output/county/volumes-yearly.tsv: input/onrr/county-volumes.tsv
 	mkdir -p $(dir $@)
 	$(tito) --read tsv $< \

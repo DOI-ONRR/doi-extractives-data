@@ -68,6 +68,23 @@
         text.style.setProperty('margin-left', marginLeft + 'px');
       }
 
+      var ticks = d3.select(this)
+        .selectAll('.tick')
+        .data(d3.range(this.min, this.max + 1));
+
+      ticks.exit().remove();
+      ticks.enter().append('div')
+        .attr('class', 'tick')
+        .append('span')
+          .attr('class', 'label');
+
+      ticks
+        .style('left', function(d) {
+          return x(d).toFixed(2) + '%';
+        })
+        .select('.label')
+          .text(function(d) { return d; });
+
       try {
         var event = new CustomEvent('change', {
           value: value

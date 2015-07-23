@@ -3,15 +3,25 @@
   <head>
     <meta charset="utf-8">
     <title>US EITI {% block title %}{% endblock %}</title>
+
+    <!-- 3rd party dependencies -->
     <script src="/js/vendor/d3.v3.min.js"></script>
     <script src="/js/vendor/queue.v1.min.js"></script>
     <script src="/js/vendor/topojson.v1.min.js"></script>
     <script src="/js/vendor/datalib.min.js"></script>
     <script src="/js/vendor/colorbrewer.js"></script>
+
+    <!-- custom map projection -->
     <script src="/js/lib/albers-custom.js"></script>
+
+    <!-- EITI libs -->
+    <script src="/js/eiti.js"></script>
+
+    <!-- custom elements -->
     <script src="/js/vendor/document-register-element.js"></script>
     <script src="/js/components/eiti-map.js"></script>
     <script src="/js/components/x-slider.js"></script>
+
     <link rel="stylesheet" href="/css/main.css">
   </head>
 
@@ -93,6 +103,8 @@
 
     </footer>
 
+    {% block script %}
+    {% endblock %}
   </body>
 
 </html>

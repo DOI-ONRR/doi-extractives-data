@@ -25,12 +25,12 @@ if (options.help) {
 }
 
 var rw = require('rw');
-var util = require('../lib/util');
+var util = require('../../lib/util');
 var async = require('async');
 var d3 = require('d3');
 var topojson = require('topojson');
 var jsdom = require('jsdom');
-var albersCustom = require('../lib/albers-custom');
+var albersCustom = require('../../lib/albers-custom');
 
 var scripts = [];
 

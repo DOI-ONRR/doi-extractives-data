@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-var options = require('../lib/args')({
+var options = require('../../lib/args')({
   usage: '$0 [--geo us|state|county] [options] [-o file]',
   wrap: 100,
   key: {
@@ -40,7 +40,7 @@ var tito = require('tito').formats;
 var request = require('request');
 var qs = require('querystring');
 var _url = require('url');
-var util = require('../lib/util');
+var util = require('../../lib/util');
 var thru = require('through2').obj;
 var fs = require('fs');
 

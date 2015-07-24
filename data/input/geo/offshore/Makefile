@@ -1,4 +1,4 @@
-BIN ?= ../../../node_modules/.bin
+BIN ?= ../../../../node_modules/.bin
 
 base_url ?= http://www.boem.gov/Oil-and-Gas-Energy-Program/Mapping-and-Data
 shp_filter ?= "MMS_PLAN_A IS NOT NULL AND MMS_PLAN_A NOT IN ('LND', 'NUS')"

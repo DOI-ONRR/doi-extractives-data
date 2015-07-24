@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 
+{% from 'macros.html' import region_map %}
+
 {% block breadcrumb %}
   <li><a href="/resources">Resources</a></li>
   <li>{{ resource.name }}</li>
@@ -7,5 +9,84 @@
 
 {% block main %}
   <section id="resources" class="container">
+    <eiti-slider id="year-slider" min="2004" max="2013" value="2013" snap>
+    </eiti-slider>
+    {{
+      region_map(
+        id='region-map',
+        simplify='2e-2',
+        href_prefix=('/resources/' + resource.slug)
+      )
+    }}
   </section>
+{% endblock %}
+
+{% block script %}
+<script>
+(function(resource, color) {
+
+  var params = {
+    resource: '{{ request.params.resource }}',
+    color: '{{ resources.colors[request.params.resource].primary }}'
+  };
+
+  var map = d3.select('#region-map');
+  var slider = d3.select('#year-slider')
+    .on('change', update);
+  var colorScale;
+  var year, valuesByYear;
+
+  eiti.loadAll({
+    revenues: '/data/regional/resource-revenues.tsv'
+  }, function(error, data) {
+    if (error) {
+      console.error('load error:', error);
+      return alert('There was an error loading the map!');
+    }
+
+    var resource = params.resource;
+    var revenues = data.revenues.filter(function(d) {
+      return d.Resource === resource;
+    });
+
+    valuesByYear = d3.nest()
+      .key(dl.accessor('Year'))
+      .key(dl.accessor('Region'))
+      .rollup(function(d) {
+        return d3.sum(d, dl.accessor('Revenue'));
+      })
+      .map(revenues);
+
+    colorScale = d3.scale.linear()
+      .range(['#fff', params.color]);
+
+    update();
+  });
+
+  function update() {
+    if (!valuesByYear) return;
+    var prev = year;
+    year = slider.property('value');
+    if (year === prev) return;
+
+    var values = valuesByYear[year];
+    var max = d3.values(values).sort(d3.descending)[0];
+
+    var scale = colorScale
+      .domain([0, max]);
+
+    map.selectAll('path.feature')
+      .style('fill', function(d) {
+        var value = d.value = values[d.id];
+        return isNaN(value)
+          ? null
+          : scale(value);
+      })
+      .classed('empty', function(d) {
+        return isNaN(d.value);
+      });
+  }
+
+})();
+</script>
 {% endblock %}

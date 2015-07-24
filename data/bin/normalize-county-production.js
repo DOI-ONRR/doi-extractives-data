@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 var yargs = require('yargs')
   .usage('$0 [options]')
-  .describe('revenue-field', 'the revenue figure field to parse as dollars')
-  .default('revenue-field', 'Royalty/Revenue')
+  .describe('volume-field', 'the numeric volume field to parse as a number')
+  .default('volume-field', 'Sales Volumes')
   .describe('in-states', 'the states CSV file')
   .default('in-states', 'input/geo/states.csv')
   .describe('fips-field', 'the county FIPS code field to fix')
@@ -22,15 +22,16 @@ if (options.help) {
 }
 
 var tito = require('tito').formats;
-var util = require('../lib/util');
-var parse = require('../lib/parse');
+var util = require('../../lib/util');
+var parse = require('../../lib/parse');
 var async = require('async');
 var thru = require('through2').obj;
 
 var statesByAbbr;
+var yearField = 'Calendar Year';
 var fipsField = options['fips-field'];
 var stateField = options['state-field'];
-var revenueField = options['revenue-field'];
+var volumeField = options['volume-field'];
 
 async.series([
   options['in-states'] ? loadStates : noop,
@@ -45,8 +46,8 @@ function main(done) {
     .pipe(thru(function(d, enc, next) {
       d = normalize(d);
       if (statesByAbbr) fixFIPS(d);
-      if (!d.Revenue) {
-        console.warn('No revenues for:', JSON.stringify(d).substr(0, 72) + '...');
+      if (!d.Volume) {
+        console.warn('No volumes for:', d);
         return next();
       }
       next(null, d);
@@ -57,7 +58,7 @@ function main(done) {
 
 function normalize(d) {
   util.trimKeys(d);
-  var type = util.normalizeRevenueType(d['Revenue Type']);
+  var volume = parse.number(d[volumeField]);
   var commodity;
   if (d.Commodity.trim() === 'Other Products') {
     commodity = util.normalizeCommodity(d.Product);
@@ -66,14 +67,14 @@ function normalize(d) {
     commodity = util.normalizeCommodity(d.Commodity);
   }
   return {
-    Year:       d.CY,
+    Year:       d[yearField],
     State:      d[stateField],
     County:     d['County Name'],
     FIPS:       d[fipsField],
     Commodity:  commodity,
     Product:    d.Product,
-    Type:       type,
-    Revenue:    parse.dollars(d[revenueField])
+    Type:       d['Volume Type'],
+    Volume:     volume
   };
 }
 

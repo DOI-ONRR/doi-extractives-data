@@ -38,6 +38,22 @@
     return load;
   })();
 
+  eiti.loadAll = function(sources, done) {
+    var q = queue();
+    var result = {};
+    Object.keys(sources).forEach(function(key) {
+      q.defer(function(next) {
+        eiti.load(sources[key], function(error, data) {
+          if (error) return next(error);
+          next(null, result[key] = data);
+        });
+      });
+    });
+    return q.await(function(error) {
+      return done(error, result);
+    });
+  };
+
   /*
    * data classes and functions
    */

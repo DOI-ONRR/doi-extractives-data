@@ -92,15 +92,15 @@ module.exports = new Festoon({
     },
 
     // state (onshore) sources
-    stateRevenues:      'output/state/revenues-yearly.tsv',
-    stateProduction:    'output/state/volumes-yearly.tsv',
+    stateRevenues:      'output/state/revenues.tsv',
+    stateProduction:    'output/state/production.tsv',
 
     // county data sources
-    countyRevenues:     'output/county/by-state/:state/revenues-yearly.tsv',
-    allCountyRevenues:  'output/county/revenues-yearly.tsv',
+    countyRevenues:     'output/county/by-state/:state/revenues.tsv',
+    allCountyRevenues:  'output/county/revenues.tsv',
 
     // offshore (planning area) sources
-    offshoreRevenues:   'output/offshore/revenues-yearly.tsv',
-    offshoreProduction: 'output/offshore/volumes-yearly.tsv',
+    offshoreRevenues:   'output/offshore/revenues.tsv',
+    offshoreProduction: 'output/offshore/production.tsv',
   }
 });

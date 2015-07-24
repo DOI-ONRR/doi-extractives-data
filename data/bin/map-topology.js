@@ -16,7 +16,7 @@ if (options.help) {
 var fs = require('fs');
 var datex = require('data-expression');
 var topojson = require('topojson');
-var util = require('../lib/util');
+var util = require('../../lib/util');
 
 var props = {};
 if (typeof options.props === 'object') {

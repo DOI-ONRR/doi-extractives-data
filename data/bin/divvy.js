@@ -24,7 +24,7 @@ var path = require('path');
 var streamify = require('stream-array');
 var mkdirp = require('mkdirp');
 var async = require('async');
-var template = require('../lib/template');
+var template = require('../../lib/template');
 
 var read = tito.createReadStream(options['if']);
 

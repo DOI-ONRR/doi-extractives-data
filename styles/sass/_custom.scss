@@ -982,10 +982,33 @@ footer {
 }
 
 .map-map {
-
   padding-top: $base-padding-large;
   padding-right: $base-padding-large;
   padding-left: $base-padding-large;
+}
+
+.map-slider {
+  margin-bottom: ($base-padding-large * 2);
+}
+
+.map-download_share {
+  float: right;
+
+  ul li {
+    @include font-size(0.8);
+    background-color: $white;
+    border: $thin-border-size solid $cobalt;
+    border-radius: $base-border-radius;
+    color: $cobalt;
+    display: inline-block;
+    padding: 5px;
+    margin-left: 10px;
+
+    &:hover,
+    &:focus {
+      background-color: $mid-gray;
+    }
+  }
 }
 
 .map-contextual {

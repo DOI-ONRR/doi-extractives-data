@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 
-{% from 'macros.html' import region_map %}
+{% from 'macros.html' import region_map, location_selector %}
 
 {% block breadcrumb %}
   <li><a href="/resources">Resources</a></li>
@@ -8,17 +8,116 @@
 {% endblock %}
 
 {% block main %}
+
+<div class="map">
+
   <section id="resources" class="container">
-    <eiti-slider id="year-slider" min="2004" max="2013" value="2013" snap>
-    </eiti-slider>
-    {{
-      region_map(
-        id='region-map',
-        simplify='2e-2',
-        href_prefix=('/resources/' + resource.slug)
-      )
-    }}
+
+    <div class="map-left">
+
+      <form>
+        <select>
+          <option value="Coal">Coal</option>
+          <option value="Oil">Oil &amp; Gas</option>
+          <option value="Minerals">Hard rock minerals</option>
+          <option value="Renewables">Renewables</option>
+        </select>
+      </form>
+
+      <form>
+        <label>
+          {{ location_selector(locations=locations) }}
+        </label>
+      </form>
+
+      <p>Lorem ipsum dolor amet. Sed soitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu. Curabitur fermentum suscipit est, tincidunt.</p>
+
+      <div class="map-data_types">
+
+        <div class="group_inline">
+
+          <div class="group_inline-left">
+            <h2>2013</h2>
+          </div>
+
+          <div class="group_inline-right">
+            <form>
+              <select>
+                <option value="Revenues">Revenues</option>
+                <option value="Production">Production</option>
+                <option value="Exports">Exports</option>
+                <option value="Jobs">Jobs</option>
+              </select>
+            </form>
+          </div>
+
+        </div>
+
+        <div class="map-data_types-stats">
+
+          <ul>
+            <li>
+              $389,900,540<span>coal revenues in the U.S. in 2013</span>
+            </li>
+            <li>
+              13%<span>percent coal contributed to U.S. exports in 2013</span>
+            </li>
+          </ul>
+          
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="map-right">
+
+      <div class="map-or_chart">
+        <ul>
+          <a href="#"><li class="map active">Map</li></a>
+          <a href="#"><li class="charts">Charts</li></a>
+        </ul>
+      </div>
+
+      <div class="map-map">
+
+        {{
+          region_map(
+            id='region-map',
+            simplify='2e-2',
+            href_prefix=('/resources/' + resource.slug)
+          )
+        }}
+
+      </div>
+
+      <div clas=="map-slider">
+
+        <eiti-slider id="year-slider" min="2004" max="2013" value="2013" snap class="map-slider">
+        </eiti-slider>
+
+      </div>
+
+      <div class="map-download_share">
+        <ul>
+          <a href="#"><li><i class="fa fa-cloud-download"></i> Download</li></a>
+          <a href="#"><li><i class="fa fa-share-alt-square"></i> Share</li></a>
+        </ul>
+      </div>
+
+    </div>
+
   </section>
+
+</div>
+
+<section class="container map-contextual">
+
+  <h1><a href="#">Learn how coal becomes federal revenues <i class="fa fa-chevron-right"></i></a></h1>
+
+</section>
+
+
 {% endblock %}
 
 {% block script %}

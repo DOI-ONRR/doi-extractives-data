@@ -8,9 +8,9 @@
 /communities/nor:
   view: communities/comm-nor
 
-/revenues:
+/resource_revenues:
   view: revenues-home
-/revenues/offshore_oil_gas:
+/resource_revenues/offshore_oil_gas:
   view: revenues/offshore_oil_gas
 
 /locations:

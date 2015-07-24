@@ -42,6 +42,21 @@ ol.decimal {
   }
 }
 
+.group_inline {
+  display: table;
+  width: 100%;
+}
+
+.group_inline-left {
+  display: table-cell;
+  padding-right: 8px;
+}
+
+.group_inline-right {
+  display: table-cell;
+  vertical-align: middle;
+}
+
 
 // Site-wide
 //============================================
@@ -892,6 +907,170 @@ footer {
 }
 
 
+// Map
+//============================================
+
+.map {
+  background-color: $mid-gray;
+  padding-top: $base-padding-large;
+  padding-bottom: $base-padding-extra;
+}
+
+.map-left {
+
+  @include span-columns(12);
+
+  @include respond-to(medium-up) {
+    @include span-columns(3);
+  }
+}
+
+.map-data_types {
+  margin-top: $base-padding-extra;
+
+  h2 {
+    color: $purple;
+    font-weight: 400;
+    padding-top: 5px;
+  }
+}
+
+.map-data_types-stats {
+  ul li {
+    @include font-size(3);
+    color: $purple;
+    font-weight: 200;
+    line-height: 0.5;
+    margin-bottom: 40px;
+
+    &:first-of-type {
+      margin-top: $base-padding-lite;
+    }
+
+    span {
+      @include font-size(0.9);
+      color: $dark-gray;
+      font-weight: 200;
+
+      &::before {
+        content: "\A";
+        white-space: pre;
+      }
+    }
+  }
+
+  h4 {
+    color: $dark-gray;
+    font-weight: 200;
+  }
+}
+
+.map-right {
+
+  @include span-columns(12);
+
+  @include respond-to(medium-up) {
+    @include span-columns(9);
+  }
+}
+
+.map-or_chart {
+  float: right;
+
+  ul li {
+    @include font-size(0.8);
+    border: $thin-border-size solid $mid-gray;
+    border-radius: $base-border-radius;
+    color: $dark-gray;
+    display: inline-block;
+    height: 55px;
+    padding: 33px 0px 10px 0px;
+    margin-left: 10px;
+    text-align: center;
+    width: 55px;
+
+    &.map {
+      background: url(../img/icons/map.png) no-repeat;
+      background: url(../img/icons/map.svg) no-repeat,
+        linear-gradient(transparent, transparent);
+      background-position: top center;
+      background-size: 40px 40px;
+
+      &.active {
+        background: url(../img/icons/map-dark.png) no-repeat;
+        background: url(../img/icons/map-dark.svg) no-repeat,
+          linear-gradient(transparent, transparent);
+        background-color: $white;
+        background-position: top center;
+        background-size: 40px 40px;
+      }
+    }
+
+    &.charts {
+      background: url(../img/icons/charts.png) no-repeat;
+      background: url(../img/icons/charts.svg) no-repeat,
+        linear-gradient(transparent, transparent);
+      background-position: top center;
+      background-size: 40px 40px;
+
+      &.active {
+        background: url(../img/icons/charts-dark.png) no-repeat;
+        background: url(../img/icons/charts-dark.svg) no-repeat,
+          linear-gradient(transparent, transparent);
+        background-color: $white;
+        background-position: top center;
+        background-size: 40px 40px;
+      }
+    }
+
+    &.active {
+      border: $thin-border-size solid $dark-putty;
+      color: $light-black;
+      font-weight: 600;
+    }
+
+    &:hover,
+    &:focus {
+      border: $thin-border-size solid $dark-putty;
+    }
+  }
+}
+
+.map-map {
+  padding-top: $base-padding-large;
+  padding-right: $base-padding-large;
+  padding-left: $base-padding-large;
+}
+
+.map-slider {
+  margin-bottom: ($base-padding-large * 2);
+}
+
+.map-download_share {
+  float: right;
+
+  ul li {
+    @include font-size(0.8);
+    background-color: $white;
+    border: $thin-border-size solid $cobalt;
+    border-radius: $base-border-radius;
+    color: $cobalt;
+    display: inline-block;
+    padding: 5px;
+    margin-left: 10px;
+
+    &:hover,
+    &:focus {
+      background-color: $mid-gray;
+    }
+  }
+}
+
+.map-contextual {
+  padding-top: $base-padding;
+  padding-bottom: $base-padding-extra;
+  text-align: center;
+}
 
 // Styleguide
 //============================================

@@ -3376,6 +3376,56 @@ footer {
       .revenues-section-involved .revenues-section-involved-options > div:nth-child(4n+1) {
         clear: left; } }
 
+.map {
+  background-color: #e1e1e1;
+  padding-top: 1.875em;
+  padding-bottom: 3.125em; }
+
+.map-left {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  .map-left:last-child {
+    margin-right: 0; }
+  @media only screen and (min-width: 48em) {
+    .map-left {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 23.23176%; }
+      .map-left:last-child {
+        margin-right: 0; } }
+
+.map-right {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  .map-right:last-child {
+    margin-right: 0; }
+  @media only screen and (min-width: 48em) {
+    .map-right {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 74.41059%; }
+      .map-right:last-child {
+        margin-right: 0; } }
+
+.map-or_chart {
+  float: right; }
+
+.map-map {
+  padding-top: 1.875em;
+  padding-right: 1.875em;
+  padding-left: 1.875em; }
+
+.map-contextual {
+  padding-top: 1.25em;
+  padding-bottom: 3.125em;
+  text-align: center; }
+
 .guide-black {
   background-color: #040404;
   -webkit-font-smoothing: antialiased;

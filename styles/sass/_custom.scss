@@ -892,6 +892,49 @@ footer {
 }
 
 
+// Map
+//============================================
+
+.map {
+  background-color: $mid-gray;
+  padding-top: $base-padding-large;
+  padding-bottom: $base-padding-extra;
+}
+
+.map-left {
+
+  @include span-columns(12);
+
+  @include respond-to(medium-up) {
+    @include span-columns(3);
+  }
+}
+
+.map-right {
+
+  @include span-columns(12);
+
+  @include respond-to(medium-up) {
+    @include span-columns(9);
+  }
+}
+
+.map-or_chart {
+  float: right;
+}
+
+.map-map {
+
+  padding-top: $base-padding-large;
+  padding-right: $base-padding-large;
+  padding-left: $base-padding-large;
+}
+
+.map-contextual {
+  padding-top: $base-padding;
+  padding-bottom: $base-padding-extra;
+  text-align: center;
+}
 
 // Styleguide
 //============================================

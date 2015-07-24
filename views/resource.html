@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 
-{% from 'macros.html' import region_map %}
+{% from 'macros.html' import region_map, location_selector %}
 
 {% block breadcrumb %}
   <li><a href="/resources">Resources</a></li>
@@ -8,17 +8,66 @@
 {% endblock %}
 
 {% block main %}
+
+<div class="map">
+
   <section id="resources" class="container">
-    <eiti-slider id="year-slider" min="2004" max="2013" value="2013" snap>
-    </eiti-slider>
-    {{
-      region_map(
-        id='region-map',
-        simplify='2e-2',
-        href_prefix=('/resources/' + resource.slug)
-      )
-    }}
+
+    <div class="map-left">
+
+      <form>
+        <select>
+          <option value="Coal">Coal</option>
+          <option value="Oil">Oil &amp; Gas</option>
+          <option value="Minerals">Hard rock minerals</option>
+          <option value="Renewables">Renewables</option>
+        </select>
+      </form>
+
+      <form>
+        <label>
+          {{ location_selector(locations=locations) }}
+        </label>
+      </form>
+
+      <p>Lorem ipsum dolor amet. Sed soitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu. Curabitur fermentum suscipit est, tincidunt.</p>
+
+    </div>
+
+    <div class="map-right">
+
+      <div class="map-or_chart">
+        Map or chart
+      </div>
+
+      <div class="map-map">
+
+        {{
+          region_map(
+            id='region-map',
+            simplify='2e-2',
+            href_prefix=('/resources/' + resource.slug)
+          )
+        }}
+
+      </div>
+
+      <eiti-slider id="year-slider" min="2004" max="2013" value="2013" snap class="map-slider">
+      </eiti-slider>
+
+    </div>
+
   </section>
+
+</div>
+
+<section class="container map-contextual">
+
+  <h1><a href="#">Learn how coal becomes federal revenues <i class="fa fa-chevron-right"></i></a></h1>
+
+</section>
+
+
 {% endblock %}
 
 {% block script %}

@@ -2578,6 +2578,18 @@ ol.decimal {
   ol.decimal li {
     padding-bottom: 0.41667em; }
 
+.group_inline {
+  display: table;
+  width: 100%; }
+
+.group_inline-left {
+  display: table-cell;
+  padding-right: 8px; }
+
+.group_inline-right {
+  display: table-cell;
+  vertical-align: middle; }
+
 html {
   box-sizing: border-box; }
 
@@ -3395,6 +3407,35 @@ footer {
       width: 23.23176%; }
       .map-left:last-child {
         margin-right: 0; } }
+
+.map-data_types {
+  margin-top: 3.125em; }
+  .map-data_types h2 {
+    color: #965bcd;
+    font-weight: 400;
+    padding-top: 5px; }
+
+.map-data_types-stats ul li {
+  font-size: 30px;
+  font-size: 3rem;
+  color: #965bcd;
+  font-weight: 200;
+  line-height: 0.5;
+  margin-bottom: 40px; }
+  .map-data_types-stats ul li:first-of-type {
+    margin-top: 0.41667em; }
+  .map-data_types-stats ul li span {
+    font-size: 9px;
+    font-size: 0.9rem;
+    color: #666666;
+    font-weight: 200; }
+    .map-data_types-stats ul li span::before {
+      content: "\A";
+      white-space: pre; }
+
+.map-data_types-stats h4 {
+  color: #666666;
+  font-weight: 200; }
 
 .map-right {
   float: left;

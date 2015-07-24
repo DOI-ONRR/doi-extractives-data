@@ -3415,6 +3415,47 @@ footer {
 
 .map-or_chart {
   float: right; }
+  .map-or_chart ul li {
+    font-size: 8px;
+    font-size: 0.8rem;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    color: #666666;
+    display: inline-block;
+    height: 55px;
+    padding: 33px 0px 10px 0px;
+    margin-left: 10px;
+    text-align: center;
+    width: 55px; }
+    .map-or_chart ul li.map {
+      background: url(../img/icons/map.png) no-repeat;
+      background: url(../img/icons/map.svg) no-repeat, linear-gradient(transparent, transparent);
+      background-position: top center;
+      background-size: 40px 40px; }
+      .map-or_chart ul li.map.active {
+        background: url(../img/icons/map-dark.png) no-repeat;
+        background: url(../img/icons/map-dark.svg) no-repeat, linear-gradient(transparent, transparent);
+        background-color: #ffffff;
+        background-position: top center;
+        background-size: 40px 40px; }
+    .map-or_chart ul li.charts {
+      background: url(../img/icons/charts.png) no-repeat;
+      background: url(../img/icons/charts.svg) no-repeat, linear-gradient(transparent, transparent);
+      background-position: top center;
+      background-size: 40px 40px; }
+      .map-or_chart ul li.charts.active {
+        background: url(../img/icons/charts-dark.png) no-repeat;
+        background: url(../img/icons/charts-dark.svg) no-repeat, linear-gradient(transparent, transparent);
+        background-color: #ffffff;
+        background-position: top center;
+        background-size: 40px 40px; }
+    .map-or_chart ul li.active {
+      border: 1px solid #838383;
+      color: #303030;
+      font-weight: 600; }
+    .map-or_chart ul li:hover,
+    .map-or_chart ul li:focus {
+      border: 1px solid #838383; }
 
 .map-map {
   padding-top: 1.875em;

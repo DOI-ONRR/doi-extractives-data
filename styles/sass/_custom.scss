@@ -921,6 +921,64 @@ footer {
 
 .map-or_chart {
   float: right;
+
+  ul li {
+    @include font-size(0.8);
+    border: $thin-border-size solid $mid-gray;
+    border-radius: $base-border-radius;
+    color: $dark-gray;
+    display: inline-block;
+    height: 55px;
+    padding: 33px 0px 10px 0px;
+    margin-left: 10px;
+    text-align: center;
+    width: 55px;
+
+    &.map {
+      background: url(../img/icons/map.png) no-repeat;
+      background: url(../img/icons/map.svg) no-repeat,
+        linear-gradient(transparent, transparent);
+      background-position: top center;
+      background-size: 40px 40px;
+
+      &.active {
+        background: url(../img/icons/map-dark.png) no-repeat;
+        background: url(../img/icons/map-dark.svg) no-repeat,
+          linear-gradient(transparent, transparent);
+        background-color: $white;
+        background-position: top center;
+        background-size: 40px 40px;
+      }
+    }
+
+    &.charts {
+      background: url(../img/icons/charts.png) no-repeat;
+      background: url(../img/icons/charts.svg) no-repeat,
+        linear-gradient(transparent, transparent);
+      background-position: top center;
+      background-size: 40px 40px;
+
+      &.active {
+        background: url(../img/icons/charts-dark.png) no-repeat;
+        background: url(../img/icons/charts-dark.svg) no-repeat,
+          linear-gradient(transparent, transparent);
+        background-color: $white;
+        background-position: top center;
+        background-size: 40px 40px;
+      }
+    }
+
+    &.active {
+      border: $thin-border-size solid $dark-putty;
+      color: $light-black;
+      font-weight: 600;
+    }
+
+    &:hover,
+    &:focus {
+      border: $thin-border-size solid $dark-putty;
+    }
+  }
 }
 
 .map-map {

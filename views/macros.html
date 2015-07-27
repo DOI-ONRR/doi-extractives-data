@@ -41,6 +41,14 @@
   </select>
 {% endmacro %}
 
+{% macro url_selector(values, url_template, selected='') %}
+<select onchange="window.location = '{{ url_template }}'.replace('@', this.value);">
+  {% for value, label in values %}
+  <option value="{{ value }}"{% if value == selected %} selected="selected"{% endif %}>{{ label }}</option>
+  {% endfor %}
+</select>
+{% endmacro %}
+
 {% macro region_map(id=null, href_prefix='', href_suffix='', simplify=null) %}
   {% set href_prefix = href_prefix + '/locations' %}
   {% set href_suffix = '{{ id }}' + href_suffix %}

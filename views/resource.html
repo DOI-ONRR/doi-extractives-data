@@ -14,13 +14,23 @@
   <section id="resources" class="container">
 
     <div class="map-left">
+      {% set base_url = '/resources/' %}
+      {% if resource %}
+        {% set base_url = base_url + resource.slug + '/' %}
+        {% if request.params.datatype %}
+          {% set base_url = base_url + request.params.datatype + '/' %}
+          {% if region %}
+            {% set base_url = base_url + region + '/' %}
+          {% endif %}
+        {% endif %}
+      {% endif %}
 
       <form>
-        <select>
-          <option value="Coal">Coal</option>
-          <option value="Oil">Oil &amp; Gas</option>
-          <option value="Minerals">Hard rock minerals</option>
-          <option value="Renewables">Renewables</option>
+        {% set resource_url_template = base_url.replace(resource.slug, '@') %}
+        <select onchange="window.location = '{{ resource_url_template }}'.replace('@', this.value);">
+          {% for slug, name in resources.groups %}
+          <option value="{{ slug }}"{% if resource.slug == slug %} selected="selected"{% endif %}>{{ name }}</option>
+          {% endfor %}
         </select>
       </form>
 

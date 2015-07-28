@@ -174,13 +174,14 @@
         var layer = d3.select(this)
           .attr('data-type', d.type);
 
+        var filter = this.getAttribute('data-filter');
         var features = [];
         var key;
         switch (d.type) {
 
           case 'Topology':
             d = topojson.presimplify(d);
-            features = getTopologyFeatures(this, d);
+            features = getTopologyFeatures(this, d, filter);
             layer.classed('topology', true);
             if (!d.bbox) {
               d.bbox = getBBox(features.map(path.bounds));
@@ -199,6 +200,16 @@
             layer.classed('feature', true);
             // FIXME: presimplify?
             break;
+        }
+
+        if (filter) {
+          // console.log('filter %d features with expression:', features.length, '"' + filter + '"');
+          filter = evaluator(filter);
+          // only apply the filter to non-mesh features
+          features = features.filter(function(d) {
+            return d.mesh || filter(d);
+          });
+          // console.log('filtered %d features', features.length);
         }
 
         var feature;
@@ -374,7 +385,7 @@
     return [[xmin, ymin], [xmax, ymax]];
   }
 
-  function getTopologyFeatures(node, d) {
+  function getTopologyFeatures(node, d, filter) {
     var key;
     var mesh = node.getAttribute('data-mesh');
     var features;
@@ -382,7 +393,8 @@
     if (node.hasAttribute('data-object')) {
       key = node.getAttribute('data-object');
 
-      if (!d.objects[key]) {
+      var obj = d.objects[key];
+      if (!obj) {
         throw new Error(
           'invalid object: "' +
           key + '" in: ["' +
@@ -391,11 +403,12 @@
         );
       }
 
-      var obj = d.objects[key];
       return mesh === 'true'
-        ? [getMesh(d, obj)]
-        : topojson.feature(d, obj).features
-          .concat([getMesh(d, d.objects[mesh])]);
+        ? [getMesh(d, obj, filter)]
+        : (mesh && d.objects[mesh])
+          ? topojson.feature(d, obj).features
+            .concat([getMesh(d, d.objects[mesh], filter)])
+          : topojson.feature(d, obj).features;
     } else {
       var features = [];
       var keys = Object.keys(d.objects);
@@ -403,16 +416,34 @@
       for (key in d.objects) {
         features = features.concat(topojson.feature(d, d.objects[key]).features);
         if (mesh === 'true' || meshIds.indexOf(key) > -1) {
-          features.push(getMesh(d, d.objects[key]));
+          features.push(getMesh(d, d.objects[key], filter));
         }
       }
       return features;
     }
   }
 
-  function getMesh(topology, object) {
+  function getMesh(topology, object, filter) {
     if (!object) {
-      return {type: 'Geometry', geometry: {type: 'Point', coordinates: [0, 0]}};
+      console.warn('no mesh!');
+      return {
+        type: 'Geometry',
+        geom: {
+          type: 'Point',
+          coordinates: [0, 0]
+        },
+        properties: {}
+      };
+    }
+    if (filter) {
+      filter = evaluator(filter);
+      console.log('filtering %d geometries', object.geometries.length);
+      object = {
+        type: 'GeometryCollection',
+        geometries: object.geometries
+          .filter(filter)
+      };
+      console.log('filtered %d geometries', object.geometries.length);
     }
     var mesh = topojson.mesh(topology, object);
     mesh.mesh = true;
@@ -439,6 +470,12 @@
   function is(node, name) {
     return node.nodeName.toLowerCase() === name
         || node.getAttribute('is') === name;
+  }
+
+  function evaluator(expression) {
+    return new Function(
+      'd',
+      'with (d) { return (' + expression + '); }');
   }
 
 })(this);

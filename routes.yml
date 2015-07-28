@@ -47,7 +47,16 @@
 /resources:
   view: resources
 /resources/:resource:
-  data: resource
+  view: resource
+/resources/:resource/:datatype:
+  view: resource
+/resources/:resource/:datatype/US:
+  view: resource
+/resources/:resource/:datatype/onshore/:state:
+  view: resource
+/resources/:resource/:datatype/onshore/:state/:county:
+  view: resource
+/resources/:resource/:datatype/offshore/:region:
   view: resource
 
 /styleguide:

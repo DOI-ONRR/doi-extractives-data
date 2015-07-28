@@ -78,13 +78,34 @@
 
       <div class="map-map">
 
-        {{
-          region_map(
-            id='region-map',
-            simplify='2e-2',
-            href_prefix=('/resources/' + resource.slug)
-          )
-        }}
+        {% set href_prefix = location_prefix_url %}
+        <svg is="eiti-map" id="region-map" simplify="1e-2"
+          projection="albersCustom" data-path="/data/geo/"
+          zoom-to="{{ region.id }}">
+          <g class="offshore" data-url="offshore-simple.json"
+            data-href="{{ href_prefix }}offshore/{% raw %}{{ id }}{% endraw %}"
+            data-mesh="true">
+          </g>
+          <g class="onshore" data-url="us-states-simple.json"
+            data-href="{{ href_prefix }}onshore/{% raw %}{{ id }}{% endraw %}"
+            data-mesh="true">
+          </g>
+          {% if request.params.state %}
+          <!-- state! -->
+          <g class="counties" data-url="us-topology.json"
+            data-object="counties"
+            data-filter="properties.state == '{{ request.params.state }}'"
+            data-href="{{ href_prefix }}onshore/{% raw %}{{ properties.state }}/{{ id }}{% endraw %}">
+          </g>
+          <g class="counties-mesh" data-url="us-topology.json"
+            data-object="counties"
+            data-filter="properties.state == '{{ request.params.state }}'"
+            data-mesh="true">
+          </g>
+          {% elif request.params.area %}
+          <!-- TODO: offshore area! -->
+          {% endif %}
+        </svg>
 
       </div>
 

@@ -43,14 +43,20 @@
   </select>
 {% endmacro %}
 
-{% macro url_selector(values, url_template, selected='', none_option=null) %}
+{% macro url_selector(values, url_template, selected='', none_option=null, access=null) %}
 <select onchange="window.location = '{{ url_template }}'.replace('@', this.value);" data-selected="{{ selected }}">
   {% if none_option %}
   <option value="{{ none_option[0] }}">{{ none_option[1] }}</option>
   {% endif %}
-  {% for value, label in values %}
-  <option value="{{ value }}"{% if value == selected %} selected="selected"{% endif %}>{{ label }}</option>
-  {% endfor %}
+  {% if access %}
+    {% for value in values %}
+    <option value="{{ value[access[0]] }}"{% if value[access[0]] == selected %} selected="selected"{% endif %}>{{ value[access[1]] }}</option>
+    {% endfor %}
+  {% else %}
+    {% for value, label in values %}
+    <option value="{{ value }}"{% if value == selected %} selected="selected"{% endif %}>{{ label }}</option>
+    {% endfor %}
+  {% endif %}
 </select>
 {% endmacro %}
 

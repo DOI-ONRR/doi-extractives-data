@@ -95,7 +95,7 @@
         {% set href_prefix = location_prefix_url %}
         <svg is="eiti-map" id="region-map" simplify="1e-2"
           projection="albersCustom" data-path="/data/geo/"
-          zoom-to="{{ region.id }}">
+          zoom-to="{{ request.params.county or region.id }}">
           <g class="offshore" data-url="offshore-simple.json"
             data-href="{{ href_prefix }}offshore/{% raw %}{{ id }}{% endraw %}"
             data-mesh="true">

@@ -12,7 +12,12 @@ module.exports = new Festoon({
     // single resource: {slug, name, colors, (sub-)commodities}
     resource: Festoon.transform('resources', function(resources, params) {
       var slug = params.resource;
-      if (!resources.groups[slug]) return null;
+      // console.log('**** resource:', slug);
+      if (slug === 'all') {
+        return {slug: slug, name: 'All'};
+      } else if (!resources.groups[slug]) {
+        return null;
+      }
       return {
         slug: slug,
         name: resources.groups[slug],

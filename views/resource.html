@@ -21,9 +21,9 @@
       </form>
 
       <form>
-        <p>region: "{{ region.meta.id }}"</p>
+        <p>region: "{{ region|jsonify }}"</p>
         <label>
-          {{ location_selector(locations=locations, prefix=location_prefix_url, value=region.meta.id) }}
+          {{ location_selector(locations=locations, prefix=location_prefix_url, value=region.id) }}
         </label>
       </form>
 

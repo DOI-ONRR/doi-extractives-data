@@ -108,15 +108,8 @@ app.get('/resources/:resource/:datatype/', helpers.redirect('/resources/:resourc
 // always add resource data to these URLs
 app.get('/resources/:resource*', data.decorate(['resource']));
 // always add state data to these URLS, aliased in templates as `region`
-app.get('/resources/:resource/:datatype/onshore/:state*', data.decorate(['state']), function(req, res, next) {
-  res.locals.region = res.locals.state;
-  next();
-});
-// and always add offshore area to these URL, aliased in templates as `region`
-app.get('/resources/:resource/:datatype/offshore/:area*', data.decorate(['offshoreArea']), function(req, res, next) {
-  res.locals.region = res.locals.offshoreArea;
-  next();
-});
+app.get('/resources/:resource/:datatype/onshore/:state*', data.decorate(['region']));
+app.get('/resources/:resource/:datatype/offshore/:area*', data.decorate(['region']));
 
 // load routes from routes.yml
 var yaml = require('js-yaml');

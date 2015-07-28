@@ -15,13 +15,13 @@
 
     <div class="map-left">
       <form>
-        <p>resource: "{{ resource.slug }}"</p>
+        <!-- resource: "{{ resource|jsonify }}" -->
         {% set resource_url_template = request.url.replace(resource.slug, '@') %}
         {{ url_selector(resources.groups, resource_url_template, resource.slug, none_option=['all', 'All']) }}
       </form>
 
       <form>
-        <p>region: "{{ region|jsonify }}"</p>
+        <!-- region "{{ region|jsonify }}" -->
         <label>
           {{ location_selector(locations=locations, prefix=location_prefix_url, value=region.id) }}
         </label>

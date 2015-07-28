@@ -95,8 +95,8 @@ app.get('/resources/:resource/:datatype/', helpers.redirect('/resources/:resourc
 
 // sets the location_prefix_url for use with the location_selector() macro
 [
-  '/resources/:resource/:datatype/:region',
-  '/resources/:resource/:datatype/:region/:subregion',
+  '/resources/:resource/:datatype/*/:region',
+  '/resources/:resource/:datatype/*/:region/:subregion',
 ].forEach(function(url) {
   app.get(url, function(req, res, next) {
     var url = helpers.expand('/resources/:resource/:datatype/', req.params, DEFAULTS);

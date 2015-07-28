@@ -223,8 +223,10 @@
             .append('path')
               .append('title');
 
-          var href = dl.template(this.getAttribute('data-href'));
-          link.attr('xlink:href', href);
+          var href = evaluator(this.getAttribute('data-href'));
+          link
+            .filter(function(d) { return !d.mesh; })
+            .attr('xlink:href', href);
 
           feature = link.select('path');
 

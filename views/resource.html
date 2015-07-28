@@ -34,7 +34,7 @@
           {% set county_url_template = location_prefix_url + 'onshore/' + request.params.state + '/@' %}
           {{ url_selector(counties,
               county_url_template,
-              request.params.county,
+              selected=request.params.county,
               none_option=['', 'No county'],
               access=['FIPS', 'name']) }}
         </label>
@@ -96,12 +96,14 @@
         <svg is="eiti-map" id="region-map" simplify="1e-2"
           projection="albersCustom" data-path="/data/geo/"
           zoom-to="{{ request.params.county or region.id }}">
-          <g class="offshore" data-url="offshore-simple.json"
-            data-href="{{ href_prefix }}offshore/{% raw %}{{ id }}{% endraw %}"
+          <g class="offshore areas" data-url="offshore-simple.json"
+            data-title="properties.name"
+            data-href="'{{ href_prefix }}offshore/' + id"
             data-mesh="true">
           </g>
-          <g class="onshore" data-url="us-states-simple.json"
-            data-href="{{ href_prefix }}onshore/{% raw %}{{ id }}{% endraw %}"
+          <g class="onshore states" data-url="us-states-simple.json"
+            data-title="properties.name || properties.abbr"
+            data-href="'{{ href_prefix }}onshore/' + id"
             data-mesh="true">
           </g>
           {% if request.params.state %}
@@ -109,7 +111,8 @@
           <g class="counties" data-url="us-topology.json"
             data-object="counties"
             data-filter="properties.state == '{{ request.params.state }}'"
-            data-href="{{ href_prefix }}onshore/{% raw %}{{ properties.state }}/{{ id }}{% endraw %}">
+            data-title="properties.county"
+            data-href="'{{ href_prefix }}onshore/' + properties.state + '/' + properties.FIPS">
           </g>
           <g class="counties-mesh" data-url="us-topology.json"
             data-object="counties"

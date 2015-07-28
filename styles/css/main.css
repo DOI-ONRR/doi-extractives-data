@@ -740,6 +740,11 @@ svg[is="eiti-map"] path.mesh {
   stroke: #aaa;
   stroke-width: 1; }
 
+eiti-map path.feature.zoomed,
+svg[is="eiti-map"] path.feature.zoomed {
+  stroke: #aaa;
+  stroke-width: 3; }
+
 /*!
  *  Font Awesome 4.3.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -3519,6 +3524,10 @@ footer {
   padding-top: 1.875em;
   padding-right: 1.875em;
   padding-left: 1.875em; }
+  .map-map svg {
+    display: block;
+    width: 100%;
+    height: 350px; }
 
 .map-slider {
   margin-bottom: 3.75em; }

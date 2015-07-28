@@ -29,4 +29,9 @@ svg[is="eiti-map"] {
     stroke-width: 1;
   }
 
+  path.feature.zoomed {
+    stroke: #aaa;
+    stroke-width: 3;
+  }
+
 }

@@ -53,10 +53,13 @@
 /resources/:resource/:datatype/US:
   view: resource
 /resources/:resource/:datatype/onshore/:state:
+  data: region
   view: resource
 /resources/:resource/:datatype/onshore/:state/:county:
+  data: region
   view: resource
-/resources/:resource/:datatype/offshore/:region:
+/resources/:resource/:datatype/offshore/:area:
+  data: region
   view: resource
 
 /styleguide:

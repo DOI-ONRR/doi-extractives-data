@@ -34,6 +34,28 @@ module.exports = new Festoon({
       offshore: '#offshoreAreas'
     },
 
+    region: Festoon.transform('locations', function(locations, params) {
+      // console.log('**** location:', params);
+      var find = function(list, id) {
+        var found = list.filter(function(d) {
+          return d.id === id;
+        });
+        if (!found.length) {
+          // console.log(list[0]);
+          throw new Error('no such region: "' + id + '"');
+        }
+        return found[0];
+      };
+
+      if (params.state) {
+        return find(locations.onshore, params.state);
+      } else if (params.area) {
+        return find(locations.offshore, params.area);
+      }
+      console.warn('no region marker found:', params);
+      return null;
+    }),
+
     // revenues
     nationalRevenue: {
       onshore: '#stateRevenues',
@@ -47,10 +69,10 @@ module.exports = new Festoon({
     },
 
     // state data sources
-    states: 'input/geo/states.csv',
+    states: 'output/state/states.tsv',
     state: {
       // {{ state.meta.name }}
-      meta: Festoon.findByParam('states', 'state', 'abbr'),
+      meta: Festoon.findByParam('states', 'state', 'id'),
       // {{ state.revenues[] }}
       revenues: Festoon.transform.filter('stateRevenues', function(d) {
         return d.State === this.state;

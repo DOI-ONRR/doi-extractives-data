@@ -27,15 +27,16 @@
     <option value="">States and offshore areas</option>
     <optgroup label="States">
       {% for state in locations.onshore %}
+      <!-- {{ state|jsonify }} -->
       <option
-        {% if (value == 'onshore/' + state.abbr) %}selected="selected"{% endif %}
-        value="onshore/{{ state.abbr }}">{{ state.name }}</option>
+        {% if (value == state.id) %}selected="selected"{% endif %}
+        value="onshore/{{ state.id }}">{{ state.name }}</option>
       {% endfor %}
     </optgroup>
     <optgroup label="Offshore Areas">
       {% for area in locations.offshore %}
       <option
-        {% if (value == 'offshore/' + area.id) %}selected="selected"{% endif %}
+        {% if (value == area.id) %}selected="selected"{% endif %}
         value="offshore/{{ area.id }}">{{ area.name }}</option>
       {% endfor %}
     </optgroup>

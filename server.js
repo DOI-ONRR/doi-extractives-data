@@ -63,6 +63,15 @@ app.use('/data/commodities.json', express.static(__dirname + '/data/commodities.
 // get the data decorator
 var data = require('./data/decorator');
 
+if (process.env.HTTP_BASIC_AUTH) {
+  var bits = process.env.HTTP_BASIC_AUTH.split(':', 2);
+  var auth = helpers.auth({
+    username: bits[0],
+    password: bits[1]
+  });
+  app.use(auth);
+}
+
 // common data
 app.use(function(req, res, next) {
   // make "request" available in templates

@@ -22,27 +22,31 @@
 {% endmacro %}
 
 {% macro location_selector(locations=[], prefix='/locations/', id=null, value=null) %}
-  <select id="{{ id }}" onchange="if (this.value) window.location = '{{ prefix }}' + this.value">
+  <select id="{{ id }}" onchange="if (this.value) window.location = '{{ prefix }}' + this.value"
+    data-selected="{{ value }}">
     <option value="">States and offshore areas</option>
     <optgroup label="States">
       {% for state in locations.onshore %}
       <option
-        {% if (value == 'onshore/' + state.abbr) %}selected{% endif %}
+        {% if (value == 'onshore/' + state.abbr) %}selected="selected"{% endif %}
         value="onshore/{{ state.abbr }}">{{ state.name }}</option>
       {% endfor %}
     </optgroup>
     <optgroup label="Offshore Areas">
       {% for area in locations.offshore %}
       <option
-        {% if (value == 'offshore/' + area.id) %}selected{% endif %}
+        {% if (value == 'offshore/' + area.id) %}selected="selected"{% endif %}
         value="offshore/{{ area.id }}">{{ area.name }}</option>
       {% endfor %}
     </optgroup>
   </select>
 {% endmacro %}
 
-{% macro url_selector(values, url_template, selected='') %}
-<select onchange="window.location = '{{ url_template }}'.replace('@', this.value);">
+{% macro url_selector(values, url_template, selected='', none_option=null) %}
+<select onchange="window.location = '{{ url_template }}'.replace('@', this.value);" data-selected="{{ selected }}">
+  {% if none_option %}
+  <option value="{{ none_option[0] }}">{{ none_option[1] }}</option>
+  {% endif %}
   {% for value, label in values %}
   <option value="{{ value }}"{% if value == selected %} selected="selected"{% endif %}>{{ label }}</option>
   {% endfor %}

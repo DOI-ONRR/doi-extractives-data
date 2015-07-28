@@ -251,6 +251,14 @@
             return klass.join(' ');
           });
 
+        if (this.hasAttribute('data-title')) {
+          var title = evaluator(this.getAttribute('data-title'));
+          feature.select('title')
+            .filter(function(d) { return !d.mesh; })
+            // .each(function(d) { console.log('title:', d); })
+            .text(title);
+        }
+
         this.dispatchEvent(new CustomEvent('renderLayer'));
       });
     };

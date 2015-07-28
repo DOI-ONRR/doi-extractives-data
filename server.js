@@ -52,7 +52,7 @@ app.use('/css', sass({
   src: __dirname + '/styles/sass',
   dest: __dirname + '/styles/css',
   outputStyle: 'nested',
-  debug: true,
+  debug: false,
   force: true,
   sourceMap: true
 }));
@@ -82,6 +82,41 @@ app.use(function(req, res, next) {
   });
   next();
 }, data.decorate(['resources', 'locations']));
+
+var DEFAULTS = {
+  resource: 'all',
+  datatype: 'revenue',
+  location: 'US'
+};
+// TODO: insert DEFAULTS values into these, to keep it DRY
+app.get('/resources/', helpers.redirect('/resources/all/revenue/US'));
+app.get('/resources/:resource/', helpers.redirect('/resources/:resource/revenue/US'));
+app.get('/resources/:resource/:datatype/', helpers.redirect('/resources/:resource/:datatype/US'));
+
+// sets the location_prefix_url for use with the location_selector() macro
+[
+  '/resources/:resource/:datatype/:region',
+  '/resources/:resource/:datatype/:region/:subregion',
+].forEach(function(url) {
+  app.get(url, function(req, res, next) {
+    var url = helpers.expand('/resources/:resource/:datatype/', req.params, DEFAULTS);
+    res.locals.location_prefix_url = url;
+    next();
+  });
+});
+
+// always add resource data to these URLs
+app.get('/resources/:resource*', data.decorate(['resource']));
+// always add state data to these URLS, aliased in templates as `region`
+app.get('/resources/:resource/:datatype/onshore/:state*', data.decorate(['state']), function(req, res, next) {
+  res.locals.region = res.locals.state;
+  next();
+});
+// and always add offshore area to these URL, aliased in templates as `region`
+app.get('/resources/:resource/:datatype/offshore/:area*', data.decorate(['offshoreArea']), function(req, res, next) {
+  res.locals.region = res.locals.offshoreArea;
+  next();
+});
 
 // load routes from routes.yml
 var yaml = require('js-yaml');

@@ -29,21 +29,21 @@
 
       <p>Lorem ipsum dolor amet. Sed soitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu. Curabitur fermentum suscipit est, tincidunt.</p>
 
-      <div class="map-data_types">
+      <div class="map-data_types resource_{{ resource.slug if resource else 'none' }}">
 
         <div class="group_inline">
 
           <div class="group_inline-left">
-            <h2>2013</h2>
+            <h2 class="resource-text">2013</h2>
           </div>
 
           <div class="group_inline-right">
             <form>
               <select>
-                <option value="Revenues">Revenues</option>
-                <option value="Production">Production</option>
-                <option value="Exports">Exports</option>
-                <option value="Jobs">Jobs</option>
+                <option value="revenue">Revenues</option>
+                <option value="production">Production</option>
+                <option value="exports">Exports</option>
+                <option value="jobs">Jobs</option>
               </select>
             </form>
           </div>
@@ -52,7 +52,7 @@
 
         <div class="map-data_types-stats">
 
-          <ul>
+          <ul class="resource-text">
             <li>
               $389,900,540<span>coal revenues in the U.S. in 2013</span>
             </li>
@@ -88,7 +88,7 @@
 
       </div>
 
-      <div clas=="map-slider">
+      <div class="map-slider">
 
         <eiti-slider id="year-slider" min="2004" max="2013" value="2013" snap class="map-slider">
         </eiti-slider>

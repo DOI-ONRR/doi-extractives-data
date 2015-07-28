@@ -14,25 +14,16 @@
   <section id="resources" class="container">
 
     <div class="map-left">
-      {% set base_url = '/resources/' %}
-      {% if resource %}
-        {% set base_url = base_url + resource.slug + '/' %}
-        {% if request.params.datatype %}
-          {% set base_url = base_url + request.params.datatype + '/' %}
-          {% if region %}
-            {% set base_url = base_url + region + '/' %}
-          {% endif %}
-        {% endif %}
-      {% endif %}
-
       <form>
-        {% set resource_url_template = base_url.replace(resource.slug, '@') %}
-        {{ url_selector(resources.groups, resource_url_template, resource.slug) }}
+        <p>resource: "{{ resource.slug }}"</p>
+        {% set resource_url_template = request.url.replace(resource.slug, '@') %}
+        {{ url_selector(resources.groups, resource_url_template, resource.slug, none_option=['all', 'All']) }}
       </form>
 
       <form>
+        <p>region: "{{ region.meta.id }}"</p>
         <label>
-          {{ location_selector(locations=locations) }}
+          {{ location_selector(locations=locations, prefix=location_prefix_url, value=region.meta.id) }}
         </label>
       </form>
 

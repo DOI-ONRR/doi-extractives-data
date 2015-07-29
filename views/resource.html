@@ -206,10 +206,8 @@
 
 {% else %}
 
-  var sumField = 'x'; // FIXME
-  var aggregate = function(d) {
-    return d3.sum(d, dl.accessor(sumField));
-  };
+  console.warn('FIXME: no visualization for "{{ request.params.datatype }}"');
+  return;
 
 {% endif %}
 

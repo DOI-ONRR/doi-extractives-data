@@ -1,21 +1,173 @@
-Year	State	Resource	Revenue
-2004	KY	oilgas	136586.86
-2004	KY	coal	9996.00
-2005	KY	oilgas	231247.36
-2005	KY	coal	16489.00
-2006	KY	coal	1982492.02
-2006	KY	oilgas	267304.26
-2007	KY	oilgas	337933.99
-2007	KY	coal	2631010.92
-2008	KY	coal	975376.86
-2008	KY	oilgas	398988.93
-2009	KY	coal	1350572.04
-2009	KY	oilgas	212083.26
-2010	KY	coal	148781.28
-2010	KY	oilgas	340242.60
-2011	KY	coal	1703681.21
-2011	KY	oilgas	264372.27
-2012	KY	coal	1351027.93
-2012	KY	oilgas	261408.43
-2013	KY	coal	1507762.22
-2013	KY	oilgas	258423.62
+Year	State	County	FIPS	Resource	Revenue
+2004	KY	Clay	21051	oilgas	36079.05
+2004	KY	Edmonson	21061	oilgas	2439.73
+2004	KY	Floyd	21071	oilgas	3856.22
+2004	KY	Grayson	21085	oilgas	17433.27
+2004	KY	Harlan	21095	coal	4820.33
+2004	KY	Henderson	21101	oilgas	2987.98
+2004	KY	Johnson	21115	oilgas	195.82
+2004	KY	Lawrence	21127	oilgas	1676.85
+2004	KY	Leslie	21131	coal	5175.67
+2004	KY	Leslie	21131	oilgas	22633.70
+2004	KY	Mccreary	21147	oilgas	4069.65
+2004	KY	Meade	21163	oilgas	20246.24
+2004	KY	Morgan	21175	oilgas	467.18
+2004	KY	Owsley	21189	oilgas	46.70
+2004	KY	Pike	21195	oilgas	6326.98
+2004	KY	Whitley	21235	oilgas	18127.49
+2005	KY	Clay	21051	oilgas	55290.76
+2005	KY	Edmonson	21061	oilgas	1045.60
+2005	KY	Floyd	21071	oilgas	11965.13
+2005	KY	Grayson	21085	oilgas	7471.40
+2005	KY	Harlan	21095	coal	6427.10
+2005	KY	Henderson	21101	oilgas	4148.34
+2005	KY	Johnson	21115	oilgas	195.82
+2005	KY	Lawrence	21127	oilgas	3608.77
+2005	KY	Leslie	21131	coal	10061.90
+2005	KY	Leslie	21131	oilgas	49858.76
+2005	KY	Letcher	21133	oilgas	1267.50
+2005	KY	Mccreary	21147	oilgas	3106.84
+2005	KY	Meade	21163	oilgas	3459.74
+2005	KY	Morgan	21175	oilgas	467.18
+2005	KY	Owsley	21189	oilgas	1352.91
+2005	KY	Pike	21195	oilgas	42315.40
+2005	KY	Whitley	21235	oilgas	45693.21
+2006	KY	Bell	21013	coal	22380.00
+2006	KY	Clay	21051	coal	10395.00
+2006	KY	Clay	21051	oilgas	104300.23
+2006	KY	Floyd	21071	oilgas	12494.04
+2006	KY	Grayson	21085	oilgas	3111.00
+2006	KY	Harlan	21095	coal	8033.88
+2006	KY	Henderson	21101	oilgas	4606.36
+2006	KY	Johnson	21115	oilgas	214.42
+2006	KY	Lawrence	21127	oilgas	2173.52
+2006	KY	Leslie	21131	coal	1941683.14
+2006	KY	Leslie	21131	oilgas	38673.65
+2006	KY	Letcher	21133	oilgas	3032.50
+2006	KY	Mccreary	21147	oilgas	3098.93
+2006	KY	Meade	21163	oilgas	19099.93
+2006	KY	Morgan	21175	oilgas	511.58
+2006	KY	Owsley	21189	oilgas	1214.97
+2006	KY	Pike	21195	oilgas	22222.76
+2006	KY	Whitley	21235	oilgas	52550.37
+2007	KY	Clay	21051	oilgas	68496.47
+2007	KY	Floyd	21071	oilgas	11877.00
+2007	KY	Harlan	21095	coal	6427.10
+2007	KY	Henderson	21101	oilgas	149256.83
+2007	KY	Johnson	21115	oilgas	379.23
+2007	KY	Lawrence	21127	oilgas	2305.84
+2007	KY	Leslie	21131	coal	2624583.82
+2007	KY	Leslie	21131	oilgas	32537.82
+2007	KY	Letcher	21133	oilgas	1689.92
+2007	KY	Mccreary	21147	oilgas	1116.85
+2007	KY	Meade	21163	oilgas	12661.43
+2007	KY	Morgan	21175	oilgas	904.77
+2007	KY	Owsley	21189	oilgas	791.34
+2007	KY	Pike	21195	oilgas	22196.19
+2007	KY	Whitley	21235	oilgas	33720.30
+2008	KY	Bell	21013	coal	28701.00
+2008	KY	Clay	21051	coal	20790.00
+2008	KY	Clay	21051	oilgas	84794.47
+2008	KY	Estill	21065	oilgas	827.75
+2008	KY	Floyd	21071	oilgas	17102.57
+2008	KY	Harlan	21095	coal	4820.33
+2008	KY	Henderson	21101	oilgas	128923.43
+2008	KY	Johnson	21115	oilgas	379.23
+2008	KY	Lawrence	21127	oilgas	2465.01
+2008	KY	Lee	21129	oilgas	827.75
+2008	KY	Leslie	21131	coal	921065.53
+2008	KY	Leslie	21131	oilgas	54914.14
+2008	KY	Letcher	21133	oilgas	1690.08
+2008	KY	Mccreary	21147	oilgas	2916.98
+2008	KY	Meade	21163	oilgas	16246.29
+2008	KY	Morgan	21175	oilgas	904.77
+2008	KY	Owsley	21189	oilgas	1258.26
+2008	KY	Pike	21195	oilgas	32159.40
+2008	KY	Whitley	21235	oilgas	53578.80
+2009	KY	Bell	21013	coal	1845.00
+2009	KY	Clay	21051	coal	945.00
+2009	KY	Clay	21051	oilgas	34141.68
+2009	KY	Floyd	21071	oilgas	8656.85
+2009	KY	Henderson	21101	oilgas	69764.68
+2009	KY	Johnson	21115	oilgas	379.23
+2009	KY	Lawrence	21127	oilgas	1438.79
+2009	KY	Leslie	21131	coal	1347782.04
+2009	KY	Leslie	21131	oilgas	30226.37
+2009	KY	Letcher	21133	oilgas	3380.00
+2009	KY	Mccreary	21147	oilgas	2970.45
+2009	KY	Meade	21163	oilgas	9312.13
+2009	KY	Morgan	21175	oilgas	904.77
+2009	KY	Owsley	21189	oilgas	720.74
+2009	KY	Pike	21195	oilgas	17750.94
+2009	KY	Whitley	21235	oilgas	32436.63
+2010	KY	Bell	21013	coal	7500.00
+2010	KY	Clay	21051	coal	945.00
+2010	KY	Clay	21051	oilgas	34633.00
+2010	KY	Estill	21065	oilgas	354.75
+2010	KY	Floyd	21071	oilgas	7436.65
+2010	KY	Harlan	21095	coal	3598.78
+2010	KY	Henderson	21101	oilgas	199045.35
+2010	KY	Johnson	21115	oilgas	379.23
+2010	KY	Lawrence	21127	oilgas	850.80
+2010	KY	Lee	21129	oilgas	354.75
+2010	KY	Leslie	21131	coal	136737.50
+2010	KY	Leslie	21131	oilgas	35545.75
+2010	KY	Letcher	21133	oilgas	4863.89
+2010	KY	Mccreary	21147	oilgas	3160.49
+2010	KY	Meade	21163	oilgas	9218.96
+2010	KY	Morgan	21175	oilgas	904.77
+2010	KY	Owsley	21189	oilgas	649.89
+2010	KY	Pike	21195	oilgas	14272.19
+2010	KY	Whitley	21235	oilgas	28572.13
+2011	KY	Bell	21013	coal	3690.00
+2011	KY	Clay	21051	coal	945.00
+2011	KY	Clay	21051	oilgas	12572.41
+2011	KY	Estill	21065	oilgas	-354.75
+2011	KY	Floyd	21071	oilgas	5986.45
+2011	KY	Harlan	21095	coal	1992.00
+2011	KY	Henderson	21101	oilgas	132253.83
+2011	KY	Johnson	21115	oilgas	640.84
+2011	KY	Lawrence	21127	oilgas	966.04
+2011	KY	Lee	21129	oilgas	-354.75
+2011	KY	Leslie	21131	coal	1697054.21
+2011	KY	Leslie	21131	oilgas	45314.37
+2011	KY	Letcher	21133	oilgas	14457.34
+2011	KY	Mccreary	21147	oilgas	6593.94
+2011	KY	Meade	21163	oilgas	10431.82
+2011	KY	Morgan	21175	oilgas	1528.95
+2011	KY	Owsley	21189	oilgas	285.66
+2011	KY	Pike	21195	oilgas	9715.12
+2011	KY	Whitley	21235	oilgas	24335.00
+2012	KY	Bell	21013	coal	7470.00
+2012	KY	Clay	21051	coal	945.00
+2012	KY	Clay	21051	oilgas	48273.14
+2012	KY	Floyd	21071	oilgas	2853.57
+2012	KY	Harlan	21095	coal	1992.00
+2012	KY	Henderson	21101	oilgas	127879.12
+2012	KY	Johnson	21115	oilgas	509.53
+2012	KY	Lawrence	21127	oilgas	364.62
+2012	KY	Leslie	21131	oilgas	221059.77
+2012	KY	Leslie	21131	coal	1336327.93
+2012	KY	Letcher	21133	oilgas	428.62
+2012	KY	Mccreary	21147	oilgas	5020.13
+2012	KY	Meade	21163	oilgas	3047.69
+2012	KY	Morgan	21175	oilgas	1215.67
+2012	KY	Pike	21195	oilgas	6801.41
+2012	KY	Whitley	21235	oilgas	-156044.84
+2012	KY	Whitley	21235	coal	4293.00
+2013	KY	Bell	21013	coal	-877.50
+2013	KY	Clay	21051	oilgas	31727.88
+2013	KY	Clay	21051	coal	945.00
+2013	KY	Floyd	21071	oilgas	5651.48
+2013	KY	Harlan	21095	coal	384741.04
+2013	KY	Henderson	21101	oilgas	130301.42
+2013	KY	Johnson	21115	oilgas	712.34
+2013	KY	Lawrence	21127	oilgas	780.93
+2013	KY	Leslie	21131	oilgas	45600.00
+2013	KY	Leslie	21131	coal	1122953.68
+2013	KY	Letcher	21133	oilgas	475.06
+2013	KY	Mccreary	21147	oilgas	5167.65
+2013	KY	Meade	21163	oilgas	13948.79
+2013	KY	Morgan	21175	oilgas	1699.53
+2013	KY	Pike	21195	oilgas	11481.87
+2013	KY	Whitley	21235	oilgas	10876.67

@@ -1,22 +1,122 @@
-Year	State	Resource	Revenue
-2004	MO	minerals	177752.67
-2005	MO	minerals	21530.00
-2006	MO	minerals	20389.65
-2007	MO	minerals	20191.50
-2008	MO	minerals	-17296.60
-2008	MO	other	14161006.54
-2009	MO	minerals	13003.00
-2010	MO	minerals	13003.00
-2010	MO	oilgas	7037.20
-2011	MO	minerals	13043.00
-2012	MO	minerals	16897.00
-2013	MO	other	9346248.93
-2013	MO	minerals	16897.00
-2004	MO	other	811386.29
-2005	MO	other	5104767.20
-2006	MO	other	10358659.95
-2007	MO	other	17761752.73
-2009	MO	other	9306934.69
-2010	MO	other	13256995.71
-2011	MO	other	14835289.12
-2012	MO	other	11519614.55
+Year	State	County	FIPS	Resource	Revenue
+2004	MO	Crawford	29055	minerals	19717.46
+2004	MO	Iron	29093	minerals	66788.39
+2004	MO	Madison	29123	minerals	1250.00
+2004	MO	Reynolds	29179	minerals	76827.00
+2004	MO	Shannon	29203	minerals	4000.00
+2004	MO	Washington	29221	minerals	9169.82
+2005	MO	Crawford	29055	minerals	4890.42
+2005	MO	Reynolds	29179	minerals	8610.00
+2005	MO	Shannon	29203	minerals	160.00
+2005	MO	Washington	29221	minerals	1970.98
+2006	MO	Crawford	29055	minerals	4334.50
+2006	MO	Dent	29065	minerals	3711.45
+2006	MO	Iron	29093	minerals	-3915.85
+2006	MO	Madison	29123	minerals	2280.00
+2006	MO	Reynolds	29179	minerals	13422.97
+2006	MO	Shannon	29203	minerals	160.00
+2006	MO	Washington	29221	minerals	396.58
+2007	MO	Crawford	29055	minerals	4186.90
+2007	MO	Dent	29065	minerals	495.25
+2007	MO	Iron	29093	minerals	6080.06
+2007	MO	Madison	29123	minerals	5700.00
+2007	MO	Reynolds	29179	minerals	1124.00
+2007	MO	Shannon	29203	minerals	2080.00
+2008	MO	Crawford	29055	minerals	-5569.43
+2008	MO	Crawford	29055	other	62645.14
+2008	MO	Dent	29065	minerals	495.25
+2008	MO	Dent	29065	other	1689935.43
+2008	MO	Iron	29093	minerals	-9042.64
+2008	MO	Iron	29093	other	3450626.42
+2008	MO	Madison	29123	minerals	970.00
+2008	MO	Reynolds	29179	minerals	852.80
+2008	MO	Reynolds	29179	other	8811259.09
+2008	MO	Shannon	29203	minerals	-640.00
+2008	MO	Washington	29221	minerals	-4362.58
+2008	MO	Washington	29221	other	96931.86
+2009	MO	Reynolds	29179	minerals	500.00
+2009	MO	Shannon	29203	minerals	320.00
+2010	MO	Reynolds	29179	minerals	500.00
+2010	MO	Shannon	29203	minerals	320.00
+2010	MO	St Charles	29183	oilgas	7037.20
+2011	MO	Reynolds	29179	minerals	540.00
+2011	MO	Shannon	29203	minerals	320.00
+2012	MO	Reynolds	29179	minerals	4394.00
+2012	MO	Shannon	29203	minerals	320.00
+2013	MO	Crawford	29055	other	4882.13
+2013	MO	Dent	29065	other	707906.34
+2013	MO	Iron	29093	other	2476540.88
+2013	MO	Reynolds	29179	minerals	4394.00
+2013	MO	Reynolds	29179	other	6109035.09
+2013	MO	Shannon	29203	minerals	320.00
+2013	MO	Washington	29221	other	7738.79
+2004	MO	Crawford	29055	other	3351.34
+2004	MO	Dent	29065	other	189643.97
+2004	MO	Iron	29093	other	270603.33
+2004	MO	Reynolds	29179	other	342602.07
+2004	MO	Washington	29221	other	5185.58
+2005	MO	Crawford	29055	other	9501.10
+2005	MO	Dent	29065	other	584808.39
+2005	MO	Iron	29093	minerals	5898.60
+2005	MO	Iron	29093	other	1293905.24
+2005	MO	Reynolds	29179	other	3201851.27
+2005	MO	Washington	29221	other	14701.20
+2006	MO	Crawford	29055	other	25871.71
+2006	MO	Dent	29065	other	1035248.38
+2006	MO	Iron	29093	other	2866306.53
+2006	MO	Reynolds	29179	other	6365525.59
+2006	MO	Shannon	29203	other	25676.00
+2006	MO	Washington	29221	other	40031.74
+2007	MO	Crawford	29055	other	54774.70
+2007	MO	Dent	29065	other	2118861.56
+2007	MO	Iron	29093	other	4257469.31
+2007	MO	Reynolds	29179	other	11155131.00
+2007	MO	Shannon	29203	other	90762.35
+2007	MO	Washington	29221	minerals	525.29
+2007	MO	Washington	29221	other	84753.81
+2008	MO	Shannon	29203	other	49608.60
+2009	MO	Crawford	29055	minerals	3956.11
+2009	MO	Crawford	29055	other	6440.62
+2009	MO	Dent	29065	other	979733.78
+2009	MO	Iron	29093	minerals	5991.60
+2009	MO	Iron	29093	other	2057787.58
+2009	MO	Madison	29123	minerals	1710.00
+2009	MO	Reynolds	29179	other	6135762.43
+2009	MO	Shannon	29203	other	117244.60
+2009	MO	Washington	29221	minerals	525.29
+2009	MO	Washington	29221	other	9965.68
+2010	MO	Crawford	29055	minerals	3956.11
+2010	MO	Crawford	29055	other	37318.12
+2010	MO	Dent	29065	other	1375891.86
+2010	MO	Iron	29093	minerals	5991.60
+2010	MO	Iron	29093	other	2849527.71
+2010	MO	Madison	29123	minerals	1710.00
+2010	MO	Reynolds	29179	other	8873802.69
+2010	MO	Shannon	29203	other	62712.40
+2010	MO	Washington	29221	minerals	525.29
+2010	MO	Washington	29221	other	57742.93
+2011	MO	Crawford	29055	minerals	3956.11
+2011	MO	Crawford	29055	other	65341.06
+2011	MO	Dent	29065	other	1777139.18
+2011	MO	Iron	29093	minerals	5991.60
+2011	MO	Iron	29093	other	3431656.53
+2011	MO	Madison	29123	minerals	1710.00
+2011	MO	Reynolds	29179	other	9238826.91
+2011	MO	Shannon	29203	other	221222.15
+2011	MO	Washington	29221	minerals	525.29
+2011	MO	Washington	29221	other	101103.29
+2012	MO	Crawford	29055	minerals	3956.11
+2012	MO	Crawford	29055	other	58650.96
+2012	MO	Dent	29065	other	1308216.86
+2012	MO	Iron	29093	minerals	5991.60
+2012	MO	Iron	29093	other	2966873.81
+2012	MO	Madison	29123	minerals	1710.00
+2012	MO	Reynolds	29179	other	6898078.68
+2012	MO	Shannon	29203	other	197042.65
+2012	MO	Washington	29221	minerals	525.29
+2012	MO	Washington	29221	other	90751.59
+2013	MO	Crawford	29055	minerals	3956.11
+2013	MO	Iron	29093	minerals	5991.60
+2013	MO	Madison	29123	minerals	1710.00
+2013	MO	Shannon	29203	other	40145.70
+2013	MO	Washington	29221	minerals	525.29

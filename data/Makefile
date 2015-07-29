@@ -171,7 +171,7 @@ county-resource-revenues-by-state: output/county/revenues.tsv
 			--of ndjson \
 		| bin/sum.js \
 			--if ndjson \
-			--group 'Year,State,Resource' \
+			--group 'Year,State,County,FIPS,Resource' \
 			--sum 'Revenue' \
 			--of ndjson \
 		| bin/divvy.js \

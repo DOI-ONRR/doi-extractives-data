@@ -1,11 +1,79 @@
-Year	State	Resource	Revenue
-2004	NE	oilgas	177258.91
-2005	NE	oilgas	245469.40
-2006	NE	oilgas	320933.09
-2007	NE	oilgas	670375.00
-2008	NE	oilgas	696269.27
-2009	NE	oilgas	261747.68
-2010	NE	oilgas	573927.58
-2011	NE	oilgas	387340.66
-2012	NE	oilgas	318278.07
-2013	NE	oilgas	367213.73
+Year	State	County	FIPS	Resource	Revenue
+2004	NE	Banner	31007	oilgas	120.00
+2004	NE	Cheyenne	31033	oilgas	146047.19
+2004	NE	Deuel	31049	oilgas	603.18
+2004	NE	Dundy	31057	oilgas	1870.72
+2004	NE	Harlan	31083	oilgas	68.00
+2004	NE	Hitchcock	31087	oilgas	25689.57
+2004	NE	Kimball	31105	oilgas	1771.33
+2004	NE	Morrill	31123	oilgas	60.00
+2004	NE	Red Willow	31145	oilgas	271.42
+2004	NE	Scotts Bluff	31157	oilgas	757.50
+2005	NE	Banner	31007	oilgas	120.00
+2005	NE	Cheyenne	31033	oilgas	201615.15
+2005	NE	Deuel	31049	oilgas	368.43
+2005	NE	Dundy	31057	oilgas	2239.56
+2005	NE	Harlan	31083	oilgas	68.00
+2005	NE	Hitchcock	31087	oilgas	36193.49
+2005	NE	Kimball	31105	oilgas	3487.06
+2005	NE	Morrill	31123	oilgas	60.00
+2005	NE	Red Willow	31145	oilgas	307.71
+2005	NE	Scotts Bluff	31157	oilgas	1010.00
+2006	NE	Banner	31007	oilgas	240.00
+2006	NE	Cheyenne	31033	oilgas	272035.26
+2006	NE	Deuel	31049	oilgas	224.50
+2006	NE	Dundy	31057	oilgas	2494.40
+2006	NE	Hitchcock	31087	oilgas	40894.06
+2006	NE	Kimball	31105	oilgas	3604.38
+2006	NE	Red Willow	31145	oilgas	430.49
+2006	NE	Scotts Bluff	31157	oilgas	1010.00
+2007	NE	Banner	31007	oilgas	280.00
+2007	NE	Cheyenne	31033	oilgas	499726.53
+2007	NE	Deuel	31049	oilgas	124073.68
+2007	NE	Dundy	31057	oilgas	2358.54
+2007	NE	Hitchcock	31087	oilgas	39365.39
+2007	NE	Kimball	31105	oilgas	3179.24
+2007	NE	Red Willow	31145	oilgas	381.62
+2007	NE	Scotts Bluff	31157	oilgas	1010.00
+2008	NE	Banner	31007	oilgas	280.00
+2008	NE	Cheyenne	31033	oilgas	606311.78
+2008	NE	Deuel	31049	oilgas	19235.83
+2008	NE	Dundy	31057	oilgas	5483.30
+2008	NE	Hitchcock	31087	oilgas	59120.50
+2008	NE	Kimball	31105	oilgas	4104.62
+2008	NE	Red Willow	31145	oilgas	723.24
+2008	NE	Scotts Bluff	31157	oilgas	1010.00
+2009	NE	Banner	31007	oilgas	280.00
+2009	NE	Cheyenne	31033	oilgas	219574.71
+2009	NE	Deuel	31049	oilgas	8173.16
+2009	NE	Dundy	31057	oilgas	2928.13
+2009	NE	Hitchcock	31087	oilgas	27509.98
+2009	NE	Kimball	31105	oilgas	1927.40
+2009	NE	Red Willow	31145	oilgas	668.30
+2009	NE	Scotts Bluff	31157	oilgas	686.00
+2010	NE	Banner	31007	oilgas	160.00
+2010	NE	Cheyenne	31033	oilgas	298486.16
+2010	NE	Deuel	31049	oilgas	232556.60
+2010	NE	Dundy	31057	oilgas	4110.55
+2010	NE	Hitchcock	31087	oilgas	36339.98
+2010	NE	Kimball	31105	oilgas	1941.83
+2010	NE	Red Willow	31145	oilgas	332.46
+2011	NE	Banner	31007	oilgas	160.00
+2011	NE	Cheyenne	31033	oilgas	338409.35
+2011	NE	Dundy	31057	oilgas	4314.45
+2011	NE	Hitchcock	31087	oilgas	42044.90
+2011	NE	Kimball	31105	oilgas	2045.72
+2011	NE	Red Willow	31145	oilgas	366.24
+2012	NE	Cheyenne	31033	oilgas	248571.73
+2012	NE	Deuel	31049	oilgas	10081.24
+2012	NE	Dundy	31057	oilgas	3823.24
+2012	NE	Hitchcock	31087	oilgas	45043.35
+2012	NE	Kimball	31105	oilgas	10480.56
+2012	NE	Red Willow	31145	oilgas	277.95
+2013	NE	Cheyenne	31033	oilgas	286537.04
+2013	NE	Deuel	31049	oilgas	5288.38
+2013	NE	Dundy	31057	oilgas	1767.80
+2013	NE	Hitchcock	31087	oilgas	40392.56
+2013	NE	Kimball	31105	oilgas	3397.94
+2013	NE	Red Willow	31145	oilgas	267.01
+2013	NE	Sioux	31165	oilgas	29563.00

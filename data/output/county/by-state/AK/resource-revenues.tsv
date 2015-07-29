@@ -1,17 +1,27 @@
-Year	State	Resource	Revenue
-2004	AK	oilgas	75018699.23
-2004	AK	coal	2560.00
-2005	AK	oilgas	22684399.33
-2005	AK	coal	7680.00
-2006	AK	oilgas	25142185.13
-2006	AK	coal	5120.00
-2007	AK	oilgas	42240485.73
-2007	AK	coal	5120.00
-2008	AK	oilgas	28807586.84
-2008	AK	coal	5120.00
-2009	AK	oilgas	51691695.13
-2010	AK	oilgas	22957199.40
-2011	AK	oilgas	16666363.22
-2012	AK	oilgas	21464041.48
-2013	AK	oilgas	19894493.13
-2013	AK	renewables	7680.00
+Year	State	County	FIPS	Resource	Revenue
+2004	AK	Kenai Peninsula Borough	02122	oilgas	12227680.23
+2004	AK	North Slope Borough	02185	oilgas	62791019.00
+2004	AK	North Slope Borough	02185	coal	2560.00
+2005	AK	Kenai Peninsula Borough	02122	oilgas	13718142.33
+2005	AK	North Slope Borough	02185	coal	7680.00
+2005	AK	North Slope Borough	02185	oilgas	8966257.00
+2006	AK	Kenai Peninsula Borough	02122	oilgas	16180903.13
+2006	AK	North Slope Borough	02185	coal	5120.00
+2006	AK	North Slope Borough	02185	oilgas	8961282.00
+2007	AK	Kenai Peninsula Borough	02122	oilgas	17227780.73
+2007	AK	North Slope Borough	02185	oilgas	25012705.00
+2007	AK	North Slope Borough	02185	coal	5120.00
+2008	AK	Kenai Peninsula Borough	02122	oilgas	16818801.50
+2008	AK	North Slope Borough	02185	coal	5120.00
+2008	AK	North Slope Borough	02185	oilgas	11988785.34
+2009	AK	Kenai Peninsula Borough	02122	oilgas	19609708.05
+2009	AK	North Slope Borough	02185	oilgas	32081987.08
+2010	AK	Kenai Peninsula Borough	02122	oilgas	15680379.46
+2010	AK	North Slope Borough	02185	oilgas	7276819.94
+2011	AK	Kenai Peninsula Borough	02122	oilgas	10793735.22
+2011	AK	North Slope Borough	02185	oilgas	5872628.00
+2012	AK	Kenai Peninsula Borough	02122	oilgas	11655999.51
+2012	AK	North Slope Borough	02185	oilgas	9808041.97
+2013	AK	Kenai Peninsula Borough	02122	oilgas	13377416.73
+2013	AK	Kenai Peninsula Borough	02122	renewables	7680.00
+2013	AK	North Slope Borough	02185	oilgas	6517076.40

@@ -1,31 +1,200 @@
-Year	State	Resource	Revenue
-2004	AL	oilgas	1564832.28
-2004	AL	minerals	12267.93
-2004	AL	coal	8165.29
-2005	AL	oilgas	1724344.65
-2005	AL	minerals	12854.36
-2005	AL	coal	822574.71
-2006	AL	oilgas	1662181.33
-2006	AL	minerals	21392.20
-2006	AL	coal	70724.33
-2007	AL	oilgas	2340066.22
-2007	AL	minerals	13385.34
-2007	AL	coal	84220.75
-2008	AL	oilgas	1818642.26
-2008	AL	minerals	12382.80
-2008	AL	coal	1501926.62
-2009	AL	oilgas	815654.86
-2009	AL	minerals	3000.54
-2009	AL	coal	4351314.70
-2010	AL	oilgas	908978.17
-2010	AL	minerals	1571.44
-2010	AL	coal	10403463.27
-2011	AL	oilgas	1283265.58
-2011	AL	minerals	4488.73
-2011	AL	coal	9735675.57
-2012	AL	oilgas	1516030.12
-2012	AL	minerals	3997.52
-2012	AL	coal	6567765.50
-2013	AL	oilgas	646088.37
-2013	AL	minerals	2064.68
-2013	AL	coal	3690556.59
+Year	State	County	FIPS	Resource	Revenue
+2004	AL	Baldwin	01003	oilgas	21457.80
+2004	AL	Baldwin	01003	minerals	221.41
+2004	AL	Conecuh	01035	oilgas	874.00
+2004	AL	Covington	01039	oilgas	799270.77
+2004	AL	Escambia	01053	oilgas	111858.84
+2004	AL	Fayette	01057	oilgas	12758.72
+2004	AL	Jefferson	01073	coal	8168.77
+2004	AL	Lamar	01075	oilgas	8359.54
+2004	AL	Mobile	01097	oilgas	65139.26
+2004	AL	Mobile	01097	minerals	476.63
+2004	AL	Mobile/Water	01097	oilgas	150.00
+2004	AL	Mobile/Water	01297	oilgas	2701.96
+2004	AL	Mobile/Water	01297	minerals	6.09
+2004	AL	Shelby	01117	coal	-3.48
+2004	AL	Tuscaloosa	01125	oilgas	542261.39
+2005	AL	Baldwin	01003	oilgas	16802.49
+2005	AL	Baldwin	01003	minerals	117.46
+2005	AL	Bibb	01007	minerals	12320.90
+2005	AL	Conecuh	01035	oilgas	106.00
+2005	AL	Covington	01039	oilgas	740158.17
+2005	AL	Escambia	01053	oilgas	146291.58
+2005	AL	Fayette	01057	coal	81441.60
+2005	AL	Fayette	01057	oilgas	4465.05
+2005	AL	Jefferson	01073	coal	741133.11
+2005	AL	Lamar	01075	oilgas	7691.23
+2005	AL	Mobile	01097	oilgas	110443.81
+2005	AL	Mobile	01097	minerals	410.79
+2005	AL	Mobile/Water	01097	oilgas	3960.65
+2005	AL	Mobile/Water	01097	minerals	5.21
+2005	AL	Tuscaloosa	01125	oilgas	694425.67
+2006	AL	Baldwin	01003	oilgas	-81198.31
+2006	AL	Baldwin	01003	minerals	-383.69
+2006	AL	Bibb	01007	minerals	20199.10
+2006	AL	Conecuh	01035	oilgas	106.00
+2006	AL	Covington	01039	oilgas	494829.32
+2006	AL	Escambia	01053	oilgas	157443.74
+2006	AL	Fayette	01057	coal	65894.33
+2006	AL	Fayette	01057	oilgas	3307.28
+2006	AL	Jefferson	01073	coal	4830.00
+2006	AL	Lamar	01075	oilgas	15423.70
+2006	AL	Mobile	01097	oilgas	291328.77
+2006	AL	Mobile	01097	minerals	1571.85
+2006	AL	Mobile/Water	01097	oilgas	3550.65
+2006	AL	Mobile/Water	01097	minerals	4.94
+2006	AL	Tuscaloosa	01125	oilgas	777390.18
+2007	AL	Baldwin	01003	oilgas	6700.83
+2007	AL	Baldwin	01003	minerals	17.74
+2007	AL	Bibb	01007	oilgas	591450.00
+2007	AL	Chilton	01021	oilgas	123396.00
+2007	AL	Conecuh	01035	oilgas	106.00
+2007	AL	Covington	01039	oilgas	470165.60
+2007	AL	Escambia	01053	oilgas	166824.37
+2007	AL	Fayette	01057	coal	79390.75
+2007	AL	Fayette	01057	oilgas	4446.45
+2007	AL	Hale	01065	oilgas	226795.50
+2007	AL	Jefferson	01073	coal	4830.00
+2007	AL	Lamar	01075	oilgas	9796.48
+2007	AL	Mobile	01097	oilgas	149621.67
+2007	AL	Mobile	01097	minerals	347.63
+2007	AL	Mobile/Water	01097	oilgas	3994.71
+2007	AL	Mobile/Water	01097	minerals	4.17
+2007	AL	Perry	01105	oilgas	36623.00
+2007	AL	Pickens	01107	oilgas	8199.50
+2007	AL	Tuscaloosa	01125	oilgas	541946.11
+2008	AL	Baldwin	01003	oilgas	7752.91
+2008	AL	Baldwin	01003	minerals	590.21
+2008	AL	Bibb	01007	minerals	123.00
+2008	AL	Bibb	01007	oilgas	54933.00
+2008	AL	Chilton	01021	oilgas	21610.50
+2008	AL	Conecuh	01035	oilgas	106.00
+2008	AL	Covington	01039	oilgas	619964.03
+2008	AL	Escambia	01053	oilgas	243947.78
+2008	AL	Fayette	01057	coal	1068577.36
+2008	AL	Fayette	01057	oilgas	4312.93
+2008	AL	Hale	01065	oilgas	27311.50
+2008	AL	Jefferson	01073	coal	433349.26
+2008	AL	Lamar	01075	oilgas	15143.08
+2008	AL	Mobile	01097	oilgas	215593.71
+2008	AL	Mobile	01097	minerals	11624.46
+2008	AL	Mobile/Water	01097	oilgas	4770.65
+2008	AL	Mobile/Water	01097	minerals	45.13
+2008	AL	Perry	01105	oilgas	8169.00
+2008	AL	Pickens	01107	oilgas	1069.50
+2008	AL	Shelby	01117	oilgas	542.50
+2008	AL	Tuscaloosa	01125	oilgas	593415.17
+2009	AL	Baldwin	01003	oilgas	4317.33
+2009	AL	Baldwin	01003	minerals	140.04
+2009	AL	Bibb	01007	oilgas	86340.00
+2009	AL	Bibb	01007	minerals	123.00
+2009	AL	Covington	01039	oilgas	213484.75
+2009	AL	Escambia	01053	oilgas	103979.38
+2009	AL	Fayette	01057	coal	4346244.70
+2009	AL	Fayette	01057	oilgas	2847.10
+2009	AL	Hale	01065	oilgas	29137.00
+2009	AL	Jefferson	01073	coal	5070.00
+2009	AL	Lamar	01075	oilgas	7488.99
+2009	AL	Mobile	01097	oilgas	99350.14
+2009	AL	Mobile	01097	minerals	2733.49
+2009	AL	Mobile/Water	01097	oilgas	2301.88
+2009	AL	Mobile/Water	01097	minerals	4.01
+2009	AL	Perry	01105	oilgas	8169.00
+2009	AL	Pickens	01107	oilgas	1069.50
+2009	AL	Shelby	01117	oilgas	465.00
+2009	AL	Tuscaloosa	01125	oilgas	256704.79
+2010	AL	Baldwin	01003	oilgas	8278.28
+2010	AL	Baldwin	01003	minerals	69.79
+2010	AL	Bibb	01007	minerals	123.00
+2010	AL	Bibb	01007	oilgas	27831.00
+2010	AL	Blount	01009	oilgas	1603.50
+2010	AL	Conecuh	01035	oilgas	4453.00
+2010	AL	Covington	01039	oilgas	253750.05
+2010	AL	Escambia	01053	oilgas	105139.46
+2010	AL	Etowah	01055	oilgas	362.25
+2010	AL	Fayette	01057	coal	5825394.47
+2010	AL	Fayette	01057	oilgas	2365.09
+2010	AL	Hale	01065	oilgas	24694.00
+2010	AL	Jefferson	01073	coal	4578068.80
+2010	AL	Lamar	01075	oilgas	12817.62
+2010	AL	Marshall	01095	oilgas	78.75
+2010	AL	Mobile	01097	oilgas	86781.72
+2010	AL	Mobile	01097	minerals	1376.49
+2010	AL	Mobile/Water	01097	oilgas	1487.28
+2010	AL	Mobile/Water	01097	minerals	2.16
+2010	AL	Shelby	01117	oilgas	365.50
+2010	AL	St Clair	01115	oilgas	3760.00
+2010	AL	Tuscaloosa	01125	oilgas	375210.67
+2011	AL	Baldwin	01003	oilgas	2953.83
+2011	AL	Baldwin	01003	minerals	215.24
+2011	AL	Bibb	01007	oilgas	57367.00
+2011	AL	Bibb	01007	minerals	41.00
+2011	AL	Blount	01009	oilgas	481.50
+2011	AL	Conecuh	01035	oilgas	323.00
+2011	AL	Covington	01039	oilgas	502997.91
+2011	AL	Escambia	01053	oilgas	437394.98
+2011	AL	Etowah	01055	oilgas	155.25
+2011	AL	Fayette	01057	oilgas	1477.52
+2011	AL	Fayette	01057	coal	8575489.64
+2011	AL	Greene	01063	oilgas	400.00
+2011	AL	Hale	01065	oilgas	301.50
+2011	AL	Jefferson	01073	coal	1160185.93
+2011	AL	Lamar	01075	oilgas	10367.26
+2011	AL	Marshall	01095	oilgas	33.75
+2011	AL	Mobile	01097	oilgas	80778.91
+2011	AL	Mobile	01097	minerals	4215.41
+2011	AL	Mobile/Water	01097	oilgas	5646.81
+2011	AL	Mobile/Water	01097	minerals	17.08
+2011	AL	Pickens	01107	oilgas	1545.00
+2011	AL	Shelby	01117	oilgas	57.00
+2011	AL	St Clair	01115	oilgas	480.00
+2011	AL	Tuscaloosa	01125	oilgas	180504.36
+2012	AL	Baldwin	01003	oilgas	1962.30
+2012	AL	Baldwin	01003	minerals	195.38
+2012	AL	Bibb	01007	oilgas	6514.00
+2012	AL	Bibb	01007	minerals	-41.00
+2012	AL	Blount	01009	oilgas	481.50
+2012	AL	Conecuh	01035	oilgas	243.00
+2012	AL	Covington	01039	oilgas	866917.91
+2012	AL	Escambia	01053	oilgas	435950.48
+2012	AL	Etowah	01055	oilgas	155.25
+2012	AL	Fayette	01057	coal	6279417.72
+2012	AL	Fayette	01057	oilgas	415.87
+2012	AL	Hale	01065	oilgas	541.50
+2012	AL	Jefferson	01073	coal	288593.78
+2012	AL	Lamar	01075	oilgas	10343.38
+2012	AL	Marshall	01095	oilgas	33.75
+2012	AL	Mobile	01097	oilgas	60761.47
+2012	AL	Mobile	01097	minerals	3831.14
+2012	AL	Mobile/Water	01097	oilgas	1664.09
+2012	AL	Mobile/Water	01097	minerals	12.00
+2012	AL	Pickens	01107	oilgas	3160.00
+2012	AL	Shelby	01117	coal	-246.00
+2012	AL	Shelby	01117	oilgas	289.50
+2012	AL	St Clair	01115	oilgas	300.00
+2012	AL	Tuscaloosa	01125	oilgas	126296.12
+2013	AL	Baldwin	01003	oilgas	1906.80
+2013	AL	Baldwin	01003	minerals	129.45
+2013	AL	Bibb	01007	minerals	-615.00
+2013	AL	Bibb	01007	oilgas	4470.00
+2013	AL	Blount	01009	oilgas	481.50
+2013	AL	Conecuh	01035	oilgas	243.00
+2013	AL	Covington	01039	oilgas	241387.29
+2013	AL	Escambia	01053	oilgas	165603.76
+2013	AL	Etowah	01055	oilgas	155.25
+2013	AL	Fayette	01057	coal	3018619.67
+2013	AL	Fayette	01057	oilgas	80.00
+2013	AL	Hale	01065	oilgas	541.50
+2013	AL	Jefferson	01073	coal	671936.92
+2013	AL	Lamar	01075	oilgas	8737.61
+2013	AL	Marshall	01095	oilgas	33.75
+2013	AL	Mobile	01097	oilgas	60467.03
+2013	AL	Mobile	01097	minerals	2536.73
+2013	AL	Mobile/Water	01097	oilgas	1117.97
+2013	AL	Mobile/Water	01097	minerals	13.50
+2013	AL	Pickens	01107	oilgas	360.00
+2013	AL	Shelby	01117	oilgas	367.00
+2013	AL	St Clair	01115	oilgas	300.00
+2013	AL	Tuscaloosa	01125	oilgas	159835.91
+2004	AL	Bibb	01007	minerals	11563.80
+2007	AL	Bibb	01007	minerals	13015.80

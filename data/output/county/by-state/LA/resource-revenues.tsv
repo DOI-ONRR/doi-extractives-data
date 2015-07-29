@@ -1,11 +1,340 @@
-Year	State	Resource	Revenue
-2004	LA	oilgas	12800273.76
-2005	LA	oilgas	42976859.35
-2006	LA	oilgas	38600548.43
-2007	LA	oilgas	39791057.09
-2008	LA	oilgas	51903931.63
-2009	LA	oilgas	15489392.04
-2010	LA	oilgas	56286094.40
-2011	LA	oilgas	27820282.43
-2012	LA	oilgas	18433793.46
-2013	LA	oilgas	13863774.67
+Year	State	County	FIPS	Resource	Revenue
+2004	LA	Beauregard	22011	oilgas	930.75
+2004	LA	Bienville	22013	oilgas	39980.56
+2004	LA	Bossier	22015	oilgas	10035386.48
+2004	LA	Caddo	22017	oilgas	65955.85
+2004	LA	Calcasieu	22019	oilgas	9987.87
+2004	LA	Caldwell	22021	oilgas	1383.00
+2004	LA	Claiborne	22027	oilgas	304115.69
+2004	LA	De Soto	22031	oilgas	20430.21
+2004	LA	E Btn Rouge	22033	oilgas	124938.12
+2004	LA	Grant	22043	oilgas	3769.50
+2004	LA	Iberville	22047	oilgas	160.00
+2004	LA	Jackson	22049	oilgas	552.22
+2004	LA	Jefferson	22051	oilgas	38519.77
+2004	LA	La Salle	22059	oilgas	8442.05
+2004	LA	Lafourche	22057	oilgas	7882.05
+2004	LA	Lincoln	22061	oilgas	1316.96
+2004	LA	Livingston	22063	oilgas	637.00
+2004	LA	Morehouse	22067	oilgas	929.68
+2004	LA	Natchitoches	22069	oilgas	16358.17
+2004	LA	Ouachita	22073	oilgas	472.62
+2004	LA	Plaquemines	22075	oilgas	1108650.01
+2004	LA	Rapides	22079	oilgas	471558.10
+2004	LA	South Pass	22721	oilgas	2662.67
+2004	LA	St Bernard	22087	oilgas	120.00
+2004	LA	St Martin	22099	oilgas	76066.00
+2004	LA	Terrebonne	22109	oilgas	3937.53
+2004	LA	Union	22111	oilgas	2692.32
+2004	LA	Vermilion	22113	oilgas	43028.90
+2004	LA	Vernon	22115	oilgas	176260.09
+2004	LA	Webster	22119	oilgas	106709.73
+2004	LA	West Delta	22719	oilgas	42.40
+2004	LA	Winn	22127	oilgas	126397.46
+2005	LA	Beauregard	22011	oilgas	849.99
+2005	LA	Bienville	22013	oilgas	31359.50
+2005	LA	Bossier	22015	oilgas	39550725.40
+2005	LA	Caddo	22017	oilgas	108379.49
+2005	LA	Calcasieu	22019	oilgas	3812.14
+2005	LA	Caldwell	22021	oilgas	52565.00
+2005	LA	Cameron	22023	oilgas	12746.50
+2005	LA	Claiborne	22027	oilgas	351222.98
+2005	LA	Concordia	22029	oilgas	3426.00
+2005	LA	De Soto	22031	oilgas	19332.39
+2005	LA	E Btn Rouge	22033	oilgas	224474.70
+2005	LA	Grant	22043	oilgas	1258.00
+2005	LA	Iberville	22047	oilgas	160.00
+2005	LA	Jackson	22049	oilgas	489.80
+2005	LA	Jefferson	22051	oilgas	85877.05
+2005	LA	La Salle	22059	oilgas	4637.24
+2005	LA	Lafourche	22057	oilgas	6772.60
+2005	LA	Lincoln	22061	oilgas	958.25
+2005	LA	Livingston	22063	oilgas	637.00
+2005	LA	Morehouse	22067	oilgas	1206.19
+2005	LA	Natchitoches	22069	oilgas	9496.77
+2005	LA	Ouachita	22073	oilgas	636.86
+2005	LA	Plaquemines	22075	oilgas	1861563.10
+2005	LA	Rapides	22079	oilgas	135173.47
+2005	LA	South Pass	22721	oilgas	2703.51
+2005	LA	St Bernard	22087	oilgas	160.00
+2005	LA	St Martin	22099	oilgas	99396.83
+2005	LA	Terrebonne	22109	oilgas	538.40
+2005	LA	Union	22111	oilgas	5420.44
+2005	LA	Vermilion	22113	oilgas	30897.32
+2005	LA	Vernon	22115	oilgas	176337.86
+2005	LA	Webster	22119	oilgas	97906.01
+2005	LA	West Delta	22719	oilgas	31.30
+2005	LA	Winn	22127	oilgas	95707.26
+2006	LA	Beauregard	22011	oilgas	203.22
+2006	LA	Bienville	22013	oilgas	26876.73
+2006	LA	Bossier	22015	oilgas	35535976.64
+2006	LA	Caddo	22017	oilgas	187032.69
+2006	LA	Calcasieu	22019	oilgas	84.00
+2006	LA	Caldwell	22021	oilgas	1712.48
+2006	LA	Cameron	22023	oilgas	2395.28
+2006	LA	Claiborne	22027	oilgas	406960.46
+2006	LA	Concordia	22029	oilgas	253.50
+2006	LA	De Soto	22031	oilgas	13573.34
+2006	LA	E Btn Rouge	22033	oilgas	102042.07
+2006	LA	Grant	22043	oilgas	133392.00
+2006	LA	Jackson	22049	oilgas	406.44
+2006	LA	Jefferson	22051	oilgas	95335.72
+2006	LA	La Salle	22059	oilgas	3085.92
+2006	LA	Lafourche	22057	oilgas	6547.91
+2006	LA	Lincoln	22061	oilgas	1706.31
+2006	LA	Livingston	22063	oilgas	637.00
+2006	LA	Morehouse	22067	oilgas	973.39
+2006	LA	Natchitoches	22069	oilgas	6514.76
+2006	LA	Orleans	22071	oilgas	76.00
+2006	LA	Ouachita	22073	oilgas	542.58
+2006	LA	Plaquemines	22075	oilgas	1351538.67
+2006	LA	Rapides	22079	oilgas	229327.97
+2006	LA	South Pass	22721	oilgas	0.79
+2006	LA	St Bernard	22087	oilgas	160.00
+2006	LA	St Martin	22099	oilgas	108586.83
+2006	LA	Terrebonne	22109	oilgas	351.78
+2006	LA	Union	22111	oilgas	4428.68
+2006	LA	Vermilion	22113	oilgas	79541.74
+2006	LA	Vernon	22115	oilgas	140339.07
+2006	LA	Webster	22119	oilgas	89274.96
+2006	LA	Winn	22127	oilgas	70669.50
+2007	LA	Beauregard	22011	oilgas	389.51
+2007	LA	Bienville	22013	oilgas	19146.38
+2007	LA	Bossier	22015	oilgas	36319614.78
+2007	LA	Caddo	22017	oilgas	156712.90
+2007	LA	Calcasieu	22019	oilgas	406.00
+2007	LA	Caldwell	22021	oilgas	6198.00
+2007	LA	Cameron	22023	oilgas	3062.79
+2007	LA	Claiborne	22027	oilgas	496922.00
+2007	LA	Concordia	22029	oilgas	211.50
+2007	LA	De Soto	22031	oilgas	8261.06
+2007	LA	E Btn Rouge	22033	oilgas	48540.20
+2007	LA	Grant	22043	oilgas	2712.00
+2007	LA	Jackson	22049	oilgas	251.65
+2007	LA	Jefferson	22051	oilgas	108459.19
+2007	LA	La Salle	22059	oilgas	3049.99
+2007	LA	Lafourche	22057	oilgas	9426.74
+2007	LA	Lincoln	22061	oilgas	1190.44
+2007	LA	Livingston	22063	oilgas	637.00
+2007	LA	Morehouse	22067	oilgas	565.43
+2007	LA	Natchitoches	22069	oilgas	24583.76
+2007	LA	Orleans	22071	oilgas	-152.00
+2007	LA	Ouachita	22073	oilgas	391.88
+2007	LA	Plaquemines	22075	oilgas	1837327.82
+2007	LA	Rapides	22079	oilgas	179949.21
+2007	LA	South Pass	22721	oilgas	706.37
+2007	LA	St Bernard	22087	oilgas	160.00
+2007	LA	St Martin	22099	oilgas	87417.87
+2007	LA	Terrebonne	22109	oilgas	34.42
+2007	LA	Union	22111	oilgas	2018.15
+2007	LA	Vermilion	22113	oilgas	80295.79
+2007	LA	Vernon	22115	oilgas	123922.48
+2007	LA	Webster	22119	oilgas	198592.45
+2007	LA	West Delta	22719	oilgas	40.92
+2007	LA	Winn	22127	oilgas	70010.41
+2008	LA	Beauregard	22011	oilgas	579.75
+2008	LA	Bienville	22013	oilgas	83362.37
+2008	LA	Bossier	22015	oilgas	43510069.68
+2008	LA	Caddo	22017	oilgas	287083.82
+2008	LA	Calcasieu	22019	oilgas	948.00
+2008	LA	Caldwell	22021	oilgas	275006.66
+2008	LA	Cameron	22023	oilgas	725.72
+2008	LA	Claiborne	22027	oilgas	802868.25
+2008	LA	Concordia	22029	oilgas	211.50
+2008	LA	De Soto	22031	oilgas	82082.87
+2008	LA	E Btn Rouge	22033	oilgas	32852.85
+2008	LA	Grant	22043	oilgas	1992.00
+2008	LA	Iberville	22047	oilgas	199293.00
+2008	LA	Jackson	22049	oilgas	10412.44
+2008	LA	Jefferson	22051	oilgas	199956.56
+2008	LA	La Salle	22059	oilgas	3509.62
+2008	LA	Lafourche	22057	oilgas	3613.21
+2008	LA	Lincoln	22061	oilgas	2830.08
+2008	LA	Morehouse	22067	oilgas	2141.27
+2008	LA	Natchitoches	22069	oilgas	7669.43
+2008	LA	Ouachita	22073	oilgas	8136.34
+2008	LA	Plaquemines	22075	oilgas	2244516.09
+2008	LA	Rapides	22079	oilgas	382466.48
+2008	LA	South Pass	22721	oilgas	1045.33
+2008	LA	St Bernard	22087	oilgas	160.00
+2008	LA	St Charles	22089	oilgas	2262664.00
+2008	LA	St Martin	22099	oilgas	90194.73
+2008	LA	Terrebonne	22109	oilgas	25.84
+2008	LA	Union	22111	oilgas	3655.90
+2008	LA	Vermilion	22113	oilgas	860523.03
+2008	LA	Vernon	22115	oilgas	131820.26
+2008	LA	Webster	22119	oilgas	278337.56
+2008	LA	West Delta	22719	oilgas	69.42
+2008	LA	Winn	22127	oilgas	133107.57
+2009	LA	Beauregard	22011	oilgas	338.97
+2009	LA	Bienville	22013	oilgas	36667.51
+2009	LA	Bossier	22015	oilgas	12964438.72
+2009	LA	Caddo	22017	oilgas	124809.15
+2009	LA	Calcasieu	22019	oilgas	210.00
+2009	LA	Caldwell	22021	oilgas	35059.79
+2009	LA	Cameron	22023	oilgas	-1580.00
+2009	LA	Claiborne	22027	oilgas	359570.67
+2009	LA	Concordia	22029	oilgas	823.50
+2009	LA	De Soto	22031	oilgas	102258.97
+2009	LA	E Btn Rouge	22033	oilgas	8689.28
+2009	LA	Grant	22043	oilgas	7497.50
+2009	LA	Iberville	22047	oilgas	646.50
+2009	LA	Jackson	22049	oilgas	2467.09
+2009	LA	Jefferson	22051	oilgas	91215.61
+2009	LA	La Salle	22059	oilgas	1048.46
+2009	LA	Lafourche	22057	oilgas	2420.81
+2009	LA	Lincoln	22061	oilgas	1194.35
+2009	LA	Morehouse	22067	oilgas	643.55
+2009	LA	Natchitoches	22069	oilgas	4004.68
+2009	LA	Ouachita	22073	oilgas	502.05
+2009	LA	Plaquemines	22075	oilgas	1071540.95
+2009	LA	Rapides	22079	oilgas	138275.28
+2009	LA	South Pass	22721	oilgas	597.72
+2009	LA	St Bernard	22087	oilgas	160.00
+2009	LA	St Charles	22089	oilgas	10617.00
+2009	LA	St Martin	22099	oilgas	140679.56
+2009	LA	Terrebonne	22109	oilgas	11.94
+2009	LA	Union	22111	oilgas	1848.70
+2009	LA	Vermilion	22113	oilgas	29799.89
+2009	LA	Vernon	22115	oilgas	47080.03
+2009	LA	Webster	22119	oilgas	242800.78
+2009	LA	West Delta	22719	oilgas	27.95
+2009	LA	Winn	22127	oilgas	63025.08
+2010	LA	Beauregard	22011	oilgas	36.13
+2010	LA	Bienville	22013	oilgas	1025731.00
+2010	LA	Bossier	22015	oilgas	16129773.39
+2010	LA	Caddo	22017	oilgas	348851.16
+2010	LA	Calcasieu	22019	oilgas	-390.00
+2010	LA	Caldwell	22021	oilgas	571.98
+2010	LA	Cameron	22023	oilgas	-1000.00
+2010	LA	Claiborne	22027	oilgas	253285.87
+2010	LA	Concordia	22029	oilgas	396.00
+2010	LA	De Soto	22031	oilgas	34700965.27
+2010	LA	E Btn Rouge	22033	oilgas	19092.10
+2010	LA	Grant	22043	oilgas	4481.00
+2010	LA	Iberville	22047	oilgas	646.50
+2010	LA	Jackson	22049	oilgas	180.00
+2010	LA	Jefferson	22051	oilgas	236604.71
+2010	LA	La Salle	22059	oilgas	700.61
+2010	LA	Lafourche	22057	oilgas	3640.80
+2010	LA	Lincoln	22061	oilgas	1877.79
+2010	LA	Morehouse	22067	oilgas	548.72
+2010	LA	Natchitoches	22069	oilgas	3642.83
+2010	LA	Ouachita	22073	oilgas	530.33
+2010	LA	Plaquemines	22075	oilgas	1494897.92
+2010	LA	Rapides	22079	oilgas	137587.05
+2010	LA	Red River	22081	oilgas	1459486.66
+2010	LA	South Pass	22721	oilgas	767.20
+2010	LA	St Charles	22089	oilgas	10617.00
+2010	LA	St Martin	22099	oilgas	143844.13
+2010	LA	Terrebonne	22109	oilgas	15.91
+2010	LA	Union	22111	oilgas	474.91
+2010	LA	Vermilion	22113	oilgas	69200.59
+2010	LA	Vernon	22115	oilgas	7760.75
+2010	LA	Webster	22119	oilgas	124044.36
+2010	LA	West Delta	22719	oilgas	76.09
+2010	LA	Winn	22127	oilgas	107155.64
+2011	LA	Beauregard	22011	oilgas	750.32
+2011	LA	Bienville	22013	oilgas	458249.64
+2011	LA	Bossier	22015	oilgas	15090839.86
+2011	LA	Caddo	22017	oilgas	437811.03
+2011	LA	Calcasieu	22019	oilgas	588.16
+2011	LA	Caldwell	22021	oilgas	7766.81
+2011	LA	Claiborne	22027	oilgas	2967053.95
+2011	LA	Concordia	22029	oilgas	396.00
+2011	LA	De Soto	22031	oilgas	2698381.32
+2011	LA	E Btn Rouge	22033	oilgas	15104.48
+2011	LA	Grant	22043	oilgas	350104.00
+2011	LA	Iberville	22047	oilgas	646.50
+2011	LA	Jackson	22049	oilgas	345.23
+2011	LA	Jefferson	22051	oilgas	280959.07
+2011	LA	La Salle	22059	oilgas	1025.87
+2011	LA	Lafourche	22057	oilgas	945.96
+2011	LA	Lincoln	22061	oilgas	1251.15
+2011	LA	Morehouse	22067	oilgas	814.32
+2011	LA	Natchitoches	22069	oilgas	92208.22
+2011	LA	Ouachita	22073	oilgas	432.38
+2011	LA	Plaquemines	22075	oilgas	2367532.86
+2011	LA	Pt. Coupee	22077	oilgas	10.00
+2011	LA	Rapides	22079	oilgas	2059862.94
+2011	LA	Red River	22081	oilgas	19991.50
+2011	LA	Sabine	22085	oilgas	12609.00
+2011	LA	South Pass	22721	oilgas	718.83
+2011	LA	St Charles	22089	oilgas	10617.00
+2011	LA	St Martin	22099	oilgas	154411.01
+2011	LA	Terrebonne	22109	oilgas	4.14
+2011	LA	Union	22111	oilgas	800.91
+2011	LA	Vermilion	22113	oilgas	86523.17
+2011	LA	Vernon	22115	oilgas	393859.02
+2011	LA	Webster	22119	oilgas	135939.22
+2011	LA	West Delta	22719	oilgas	182.64
+2011	LA	Winn	22127	oilgas	171545.92
+2012	LA	Beauregard	22011	oilgas	713.93
+2012	LA	Bienville	22013	oilgas	211617.04
+2012	LA	Bossier	22015	oilgas	9627968.26
+2012	LA	Caddo	22017	oilgas	187332.91
+2012	LA	Calcasieu	22019	oilgas	280.00
+2012	LA	Caldwell	22021	oilgas	6666.64
+2012	LA	Cameron	22023	oilgas	0.08
+2012	LA	Claiborne	22027	oilgas	232779.34
+2012	LA	Concordia	22029	oilgas	396.00
+2012	LA	De Soto	22031	oilgas	1058229.86
+2012	LA	E Btn Rouge	22033	oilgas	35305.57
+2012	LA	Grant	22043	oilgas	42981.00
+2012	LA	Iberville	22047	oilgas	862.00
+2012	LA	Jackson	22049	oilgas	371.03
+2012	LA	Jefferson	22051	oilgas	208665.52
+2012	LA	La Salle	22059	oilgas	714.81
+2012	LA	Lafourche	22057	oilgas	196.00
+2012	LA	Lincoln	22061	oilgas	1038.56
+2012	LA	Morehouse	22067	oilgas	415.44
+2012	LA	Natchitoches	22069	oilgas	979399.15
+2012	LA	Ouachita	22073	oilgas	426.31
+2012	LA	Plaquemines	22075	oilgas	2224863.06
+2012	LA	Rapides	22079	oilgas	2432204.35
+2012	LA	Red River	22081	oilgas	240679.66
+2012	LA	Sabine	22085	oilgas	9.00
+2012	LA	South Pass	22721	oilgas	647.75
+2012	LA	St Charles	22089	oilgas	14156.00
+2012	LA	St Martin	22099	oilgas	228451.91
+2012	LA	Terrebonne	22109	oilgas	7633.13
+2012	LA	Union	22111	oilgas	628.10
+2012	LA	Vermilion	22113	oilgas	69171.24
+2012	LA	Vernon	22115	oilgas	95333.59
+2012	LA	Webster	22119	oilgas	123295.48
+2012	LA	West Delta	22719	oilgas	197.22
+2012	LA	Winn	22127	oilgas	400163.52
+2013	LA	Beauregard	22011	oilgas	176.36
+2013	LA	Bienville	22013	oilgas	73965.97
+2013	LA	Bossier	22015	oilgas	8731375.85
+2013	LA	Caddo	22017	oilgas	328082.73
+2013	LA	Calcasieu	22019	oilgas	280.00
+2013	LA	Caldwell	22021	oilgas	4612.92
+2013	LA	Claiborne	22027	oilgas	216478.64
+2013	LA	Concordia	22029	oilgas	68029.39
+2013	LA	De Soto	22031	oilgas	657878.78
+2013	LA	E Btn Rouge	22033	oilgas	30800.50
+2013	LA	Grant	22043	oilgas	35779.50
+2013	LA	Iberville	22047	oilgas	862.00
+2013	LA	Jackson	22049	oilgas	-1652.00
+2013	LA	Jefferson	22051	oilgas	187289.90
+2013	LA	Lafourche	22057	oilgas	266.00
+2013	LA	Lincoln	22061	oilgas	1385.87
+2013	LA	Morehouse	22067	oilgas	606.33
+2013	LA	Natchitoches	22069	oilgas	102262.34
+2013	LA	Ouachita	22073	oilgas	459.77
+2013	LA	Plaquemines	22075	oilgas	2155276.98
+2013	LA	Pt. Coupee	22077	oilgas	3.00
+2013	LA	Rapides	22079	oilgas	180421.16
+2013	LA	Red River	22081	oilgas	78554.20
+2013	LA	Sabine	22085	oilgas	45.42
+2013	LA	South Pass	22721	oilgas	555.39
+2013	LA	St Charles	22089	oilgas	14156.00
+2013	LA	St Martin	22099	oilgas	208212.42
+2013	LA	Terrebonne	22109	oilgas	291882.51
+2013	LA	Union	22111	oilgas	765.31
+2013	LA	Vermilion	22113	oilgas	60705.02
+2013	LA	Vernon	22115	oilgas	54197.63
+2013	LA	Webster	22119	oilgas	350971.20
+2013	LA	West Delta	22719	oilgas	142.13
+2013	LA	Winn	22127	oilgas	28945.45

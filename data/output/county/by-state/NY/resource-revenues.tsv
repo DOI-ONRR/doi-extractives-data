@@ -1,11 +1,31 @@
-Year	State	Resource	Revenue
-2004	NY	oilgas	8639.84
-2005	NY	oilgas	20149.72
-2006	NY	oilgas	13365.04
-2007	NY	oilgas	10451.48
-2008	NY	oilgas	11517.23
-2009	NY	oilgas	6748.55
-2010	NY	oilgas	6474.30
-2011	NY	oilgas	21546.22
-2012	NY	oilgas	4468.71
-2013	NY	oilgas	5222.81
+Year	State	County	FIPS	Resource	Revenue
+2004	NY	Chautauqua	36013	oilgas	8306.23
+2004	NY	Seneca	36099	oilgas	290.05
+2004	NY	Steuben	36101	oilgas	43.56
+2005	NY	Chautauqua	36013	oilgas	11120.06
+2005	NY	Seneca	36099	oilgas	7476.43
+2005	NY	Steuben	36101	oilgas	1553.23
+2006	NY	Chautauqua	36013	oilgas	7160.43
+2006	NY	Seneca	36099	oilgas	5603.91
+2006	NY	Steuben	36101	oilgas	600.70
+2007	NY	Chautauqua	36013	oilgas	6451.80
+2007	NY	Seneca	36099	oilgas	3556.07
+2007	NY	Steuben	36101	oilgas	443.61
+2008	NY	Chautauqua	36013	oilgas	5462.03
+2008	NY	Seneca	36099	oilgas	5330.86
+2008	NY	Steuben	36101	oilgas	724.34
+2009	NY	Chautauqua	36013	oilgas	3619.76
+2009	NY	Seneca	36099	oilgas	2829.70
+2009	NY	Steuben	36101	oilgas	299.09
+2010	NY	Chautauqua	36013	oilgas	4381.85
+2010	NY	Seneca	36099	oilgas	1934.02
+2010	NY	Steuben	36101	oilgas	158.43
+2011	NY	Chautauqua	36013	oilgas	19285.59
+2011	NY	Seneca	36099	oilgas	2094.25
+2011	NY	Steuben	36101	oilgas	166.38
+2012	NY	Chautauqua	36013	oilgas	3867.78
+2012	NY	Seneca	36099	oilgas	567.38
+2012	NY	Steuben	36101	oilgas	33.55
+2013	NY	Chautauqua	36013	oilgas	3867.17
+2013	NY	Seneca	36099	oilgas	1404.91
+2013	NY	Steuben	36101	oilgas	-49.27

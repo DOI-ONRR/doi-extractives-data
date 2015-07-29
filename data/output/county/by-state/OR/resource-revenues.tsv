@@ -1,19 +1,76 @@
-Year	State	Resource	Revenue
-2004	OR	oilgas	71549.00
-2005	OR	oilgas	52178.50
-2006	OR	renewables	3111.00
-2006	OR	oilgas	1314905.00
-2007	OR	renewables	200769.09
-2007	OR	oilgas	953494.00
-2008	OR	renewables	31594.99
-2008	OR	oilgas	409115.50
-2009	OR	renewables	975384.41
-2009	OR	oilgas	407515.50
-2010	OR	renewables	283071.00
-2010	OR	oilgas	391906.00
-2011	OR	renewables	265839.00
-2011	OR	oilgas	492137.00
-2012	OR	renewables	253422.00
-2012	OR	oilgas	427987.00
-2013	OR	renewables	238862.00
-2013	OR	oilgas	377474.00
+Year	State	County	FIPS	Resource	Revenue
+2004	OR	Columbia	41009	oilgas	160.00
+2004	OR	Jefferson	41031	oilgas	54083.00
+2004	OR	Wheeler	41069	oilgas	17306.00
+2005	OR	Jefferson	41031	oilgas	32945.00
+2005	OR	Wheeler	41069	oilgas	19233.50
+2006	OR	Deschutes	41017	renewables	3111.00
+2006	OR	Jefferson	41031	oilgas	19451.50
+2006	OR	Malheur	41045	oilgas	655526.50
+2006	OR	Morrow	41049	oilgas	522840.74
+2006	OR	Umatilla	41059	oilgas	96826.76
+2006	OR	Wheeler	41069	oilgas	20259.50
+2007	OR	Deschutes	41017	renewables	198259.09
+2007	OR	Gilliam	41021	oilgas	490341.45
+2007	OR	Jefferson	41031	oilgas	21813.00
+2007	OR	Lake	41037	renewables	2510.00
+2007	OR	Malheur	41045	oilgas	303658.50
+2007	OR	Morrow	41049	oilgas	65163.82
+2007	OR	Sherman	41055	oilgas	12855.19
+2007	OR	Umatilla	41059	oilgas	29951.68
+2007	OR	Wasco	41065	oilgas	9450.86
+2007	OR	Wheeler	41069	oilgas	20259.50
+2008	OR	Deschutes	41017	renewables	26574.99
+2008	OR	Gilliam	41021	oilgas	18531.86
+2008	OR	Jefferson	41031	oilgas	34075.00
+2008	OR	Lake	41037	renewables	5020.00
+2008	OR	Malheur	41045	oilgas	265465.50
+2008	OR	Morrow	41049	oilgas	54333.32
+2008	OR	Sherman	41055	oilgas	3735.64
+2008	OR	Umatilla	41059	oilgas	24428.68
+2008	OR	Wasco	41065	oilgas	3411.00
+2008	OR	Wheeler	41069	oilgas	5134.50
+2009	OR	Deschutes	41017	renewables	189779.41
+2009	OR	Gilliam	41021	oilgas	14651.93
+2009	OR	Jefferson	41031	oilgas	31515.00
+2009	OR	Lake	41037	renewables	785605.00
+2009	OR	Malheur	41045	oilgas	265465.50
+2009	OR	Morrow	41049	oilgas	54333.32
+2009	OR	Sherman	41055	oilgas	3384.07
+2009	OR	Umatilla	41059	oilgas	24428.68
+2009	OR	Wasco	41065	oilgas	3052.50
+2009	OR	Wheeler	41069	oilgas	10684.50
+2010	OR	Deschutes	41017	renewables	153866.00
+2010	OR	Gilliam	41021	oilgas	14651.93
+2010	OR	Jefferson	41031	oilgas	26395.00
+2010	OR	Lake	41037	renewables	129205.00
+2010	OR	Malheur	41045	oilgas	265465.50
+2010	OR	Morrow	41049	oilgas	47908.82
+2010	OR	Sherman	41055	oilgas	3384.07
+2010	OR	Umatilla	41059	oilgas	24428.68
+2010	OR	Wasco	41065	oilgas	780.00
+2010	OR	Wheeler	41069	oilgas	8892.00
+2011	OR	Deschutes	41017	renewables	131032.00
+2011	OR	Gilliam	41021	oilgas	4566.22
+2011	OR	Hood River	41027	renewables	8112.00
+2011	OR	Jefferson	41031	oilgas	24557.00
+2011	OR	Lake	41037	renewables	126695.00
+2011	OR	Malheur	41045	oilgas	353954.00
+2011	OR	Morrow	41049	oilgas	63878.42
+2011	OR	Sherman	41055	oilgas	3963.78
+2011	OR	Umatilla	41059	oilgas	32571.58
+2011	OR	Wasco	41065	oilgas	780.00
+2011	OR	Wheeler	41069	oilgas	7866.00
+2012	OR	Deschutes	41017	renewables	121125.00
+2012	OR	Hood River	41027	renewables	8112.00
+2012	OR	Jefferson	41031	oilgas	24557.00
+2012	OR	Lake	41037	renewables	124185.00
+2012	OR	Malheur	41045	oilgas	353954.00
+2012	OR	Morrow	41049	oilgas	19168.42
+2012	OR	Umatilla	41059	oilgas	22441.58
+2012	OR	Wheeler	41069	oilgas	7866.00
+2013	OR	Deschutes	41017	renewables	106562.00
+2013	OR	Hood River	41027	renewables	8112.00
+2013	OR	Jefferson	41031	oilgas	31736.00
+2013	OR	Lake	41037	renewables	124188.00
+2013	OR	Malheur	41045	oilgas	345738.00

@@ -68,10 +68,18 @@
 
           <ul class="resource-text">
             <li>
-              $389,900,540<span>coal revenues in the U.S. in 2013</span>
+              <span class="headline" id="total-revenue">$XXX</span>
+              <span class="subtitle">
+                {{ resource.name }} revenues in the U.S. in
+                <span class="current-year resource-text">2013</span>
+              </span>
             </li>
             <li>
-              13%<span>percent coal contributed to U.S. exports in 2013</span>
+              <span class="headline" id="export-contribution">XX%</span>
+              <span class="subtitle">
+                percent {{ resource.name }} contributed to U.S. exports in
+                <span class="current-year resource-text">2013</span>
+              </span>
             </li>
           </ul>
           
@@ -170,6 +178,8 @@
   var colorScale;
   var year, valuesByYear;
 
+  var formatDollars = d3.format('$,');
+
 {% if request.params.state %}
 
   var dataURL = '/data/county/by-state/{{ request.params.state }}/resource-revenues.tsv';
@@ -234,9 +244,18 @@
     year = slider.property('value');
     if (year === prev) return;
 
+    d3.selectAll('.current-year')
+      .text(year);
+
     var values = valuesByYear[year] || {};
-    var numbers = d3.values(values).sort(d3.descending)
+    var numbers = d3.values(values).sort(d3.descending);
     var max = numbers[0];
+    // FIXME: negative values???
+    var total = Math.max(0, ~~d3.sum(numbers));
+
+    d3.select('#total-revenue')
+      .text(formatDollars(total));
+
     console.log('max:', max, numbers);
 
     var scale = colorScale

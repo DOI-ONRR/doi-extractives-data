@@ -16,7 +16,8 @@ REVENUE_FILES = \
 	output/offshore/revenues.tsv \
 	output/regional/resource-revenues.tsv \
 	output/regional/revenues.tsv \
-	county-revenues-by-state
+	county-revenues-by-state \
+	county-resource-revenues-by-state
 
 # production volume files
 PRODUCTION_FILES = \
@@ -134,7 +135,7 @@ output/regional/resource-revenues.tsv: output/regional/revenues.tsv
 		| bin/sum.js \
 			--group 'Year,Region,Resource' \
 			--sum 'Revenue' \
-			-o $@ /dev/stdin
+			-o $@
 
 # county listings
 output/county/counties.tsv: output/geo/us-topology.json
@@ -161,6 +162,21 @@ county-revenues-by-state: output/county/revenues.tsv
 	$(tito) --read tsv $< \
 		| bin/divvy.js \
 			--path 'output/county/by-state/{{ State }}/revenues.tsv' \
+			--of tsv
+
+county-resource-revenues-by-state: output/county/revenues.tsv
+	$(tito) --read tsv $< \
+		| bin/add-resource-group.js \
+			--if ndjson \
+			--of ndjson \
+		| bin/sum.js \
+			--if ndjson \
+			--group 'Year,State,County,FIPS,Resource' \
+			--sum 'Revenue' \
+			--of ndjson \
+		| bin/divvy.js \
+			--if ndjson \
+			--path 'output/county/by-state/{{ State }}/resource-revenues.tsv' \
 			--of tsv
 
 # county production volumes
@@ -268,5 +284,6 @@ distclean: clean
 .PHONY: \
 	counties-by-state \
 	county-revenues-by-state \
+	county-resource-revenues-by-state \
 	geo \
 	svg

@@ -1,0 +1,261 @@
+Year	State	County	FIPS	Resource	Revenue
+2004	CA	Contra Costa	06013	oilgas	2162.49
+2004	CA	Fresno	06019	oilgas	474892.14
+2004	CA	Glenn	06021	oilgas	4094.69
+2004	CA	Imperial	06025	renewables	7625202.13
+2004	CA	Inyo	06027	renewables	3551300.88
+2004	CA	Kern	06029	oilgas	21230580.10
+2004	CA	Kings	06031	oilgas	187384.95
+2004	CA	Lake	06033	renewables	2689982.36
+2004	CA	Lassen	06035	renewables	39865.28
+2004	CA	Los Angeles	06037	oilgas	1893315.42
+2004	CA	Merced	06047	oilgas	1444.50
+2004	CA	Mono	06051	renewables	251632.74
+2004	CA	Monterey	06053	oilgas	20916.10
+2004	CA	San Benito	06069	oilgas	32376.19
+2004	CA	San Bernardn	06071	minerals	1038123.76
+2004	CA	San Joaquin	06077	oilgas	2815.80
+2004	CA	San Luis Ob.	06079	oilgas	93781.34
+2004	CA	Santa Barbar	06083	oilgas	488993.93
+2004	CA	Siskiyou	06093	renewables	58553.00
+2004	CA	Solano	06095	oilgas	2545355.49
+2004	CA	Sonoma	06097	renewables	3366259.11
+2004	CA	Stanislaus	06099	oilgas	158.00
+2004	CA	Sutter	06101	oilgas	80.00
+2004	CA	Tulare	06107	oilgas	484.50
+2004	CA	Ventura	06111	oilgas	1080794.46
+2004	CA	Yolo	06113	oilgas	966.00
+2005	CA	Contra Costa	06013	oilgas	13574.08
+2005	CA	Fresno	06019	oilgas	599514.75
+2005	CA	Glenn	06021	oilgas	5880.92
+2005	CA	Imperial	06025	renewables	308950.92
+2005	CA	Inyo	06027	renewables	-209520.79
+2005	CA	Kern	06029	oilgas	29203771.66
+2005	CA	Kern	06029	minerals	-3817.00
+2005	CA	Kings	06031	oilgas	310137.82
+2005	CA	Lake	06033	renewables	3145789.76
+2005	CA	Lassen	06035	renewables	64200.46
+2005	CA	Los Angeles	06037	oilgas	2038753.33
+2005	CA	Merced	06047	oilgas	1444.50
+2005	CA	Mono	06051	renewables	112764.39
+2005	CA	Monterey	06053	oilgas	22427.31
+2005	CA	San Benito	06069	oilgas	26867.95
+2005	CA	San Bernardn	06071	minerals	286232.44
+2005	CA	San Bernardn	06071	other	3275775.47
+2005	CA	San Joaquin	06077	oilgas	3534.11
+2005	CA	San Luis Ob.	06079	oilgas	153118.87
+2005	CA	Santa Barbar	06083	oilgas	471708.85
+2005	CA	Sierra	06091	minerals	20.00
+2005	CA	Siskiyou	06093	renewables	61997.00
+2005	CA	Solano	06095	oilgas	2550431.59
+2005	CA	Sonoma	06097	renewables	4012844.08
+2005	CA	Sutter	06101	oilgas	80.00
+2005	CA	Ventura	06111	oilgas	1494896.10
+2005	CA	Yolo	06113	oilgas	1917.00
+2006	CA	Contra Costa	06013	oilgas	11836.73
+2006	CA	Fresno	06019	oilgas	632312.56
+2006	CA	Glenn	06021	oilgas	5152.59
+2006	CA	Imperial	06025	renewables	75037.62
+2006	CA	Inyo	06027	renewables	2447245.41
+2006	CA	Kern	06029	oilgas	91184567.39
+2006	CA	Kings	06031	oilgas	413159.17
+2006	CA	Lake	06033	renewables	3677923.00
+2006	CA	Lassen	06035	renewables	60541.56
+2006	CA	Los Angeles	06037	oilgas	3415729.01
+2006	CA	Merced	06047	oilgas	4884.50
+2006	CA	Mono	06051	renewables	188046.35
+2006	CA	Monterey	06053	oilgas	37546.48
+2006	CA	San Benito	06069	oilgas	240186.68
+2006	CA	San Bernardn	06071	minerals	331733.37
+2006	CA	San Joaquin	06077	oilgas	3950.33
+2006	CA	San Luis Ob.	06079	oilgas	193558.49
+2006	CA	Santa Barbar	06083	oilgas	653622.31
+2006	CA	Siskiyou	06093	renewables	69729.00
+2006	CA	Solano	06095	oilgas	2120903.02
+2006	CA	Sonoma	06097	renewables	4851762.03
+2006	CA	Sutter	06101	oilgas	80.00
+2006	CA	Trinity	06105	minerals	-240.00
+2006	CA	Ventura	06111	oilgas	2707805.06
+2006	CA	Yolo	06113	oilgas	966.00
+2007	CA	Colusa	06011	oilgas	2383.50
+2007	CA	Contra Costa	06013	oilgas	8470.47
+2007	CA	Fresno	06019	oilgas	568757.97
+2007	CA	Glenn	06021	oilgas	23432.60
+2007	CA	Imperial	06025	renewables	20458.43
+2007	CA	Inyo	06027	renewables	1073640.05
+2007	CA	Kern	06029	oilgas	101165584.72
+2007	CA	Kings	06031	oilgas	374536.97
+2007	CA	Lake	06033	renewables	10192186.87
+2007	CA	Lassen	06035	renewables	61940.84
+2007	CA	Los Angeles	06037	oilgas	3431313.00
+2007	CA	Mendocino	06045	renewables	422000.20
+2007	CA	Merced	06047	oilgas	1684.50
+2007	CA	Mono	06051	renewables	62295.44
+2007	CA	Monterey	06053	oilgas	34168.79
+2007	CA	San Benito	06069	oilgas	110516.58
+2007	CA	San Bernardn	06071	minerals	876404.81
+2007	CA	San Joaquin	06077	oilgas	2912.37
+2007	CA	San Luis Ob.	06079	oilgas	164042.49
+2007	CA	Santa Barbar	06083	oilgas	742119.26
+2007	CA	Siskiyou	06093	renewables	163251.00
+2007	CA	Solano	06095	oilgas	1919173.54
+2007	CA	Sonoma	06097	renewables	5197312.92
+2007	CA	Ventura	06111	oilgas	2872331.07
+2007	CA	Yolo	06113	oilgas	11518.50
+2008	CA	Colusa	06011	oilgas	1021.50
+2008	CA	Contra Costa	06013	oilgas	13248.11
+2008	CA	Fresno	06019	oilgas	597830.87
+2008	CA	Glenn	06021	oilgas	11747.86
+2008	CA	Imperial	06025	renewables	605188.49
+2008	CA	Inyo	06027	renewables	1739366.50
+2008	CA	Kern	06029	oilgas	157172885.83
+2008	CA	Kings	06031	oilgas	293608.46
+2008	CA	Lake	06033	renewables	4424341.33
+2008	CA	Lassen	06035	renewables	67163.45
+2008	CA	Los Angeles	06037	oilgas	5020922.26
+2008	CA	Mendocino	06045	renewables	3000.00
+2008	CA	Merced	06047	oilgas	2166.00
+2008	CA	Mono	06051	renewables	253961.69
+2008	CA	Monterey	06053	oilgas	133006.03
+2008	CA	Sacramento	06067	oilgas	92.67
+2008	CA	San Benito	06069	oilgas	187358.66
+2008	CA	San Bernardn	06071	minerals	529351.28
+2008	CA	San Diego	06073	other	33.00
+2008	CA	San Joaquin	06077	oilgas	3110.19
+2008	CA	San Luis Ob.	06079	oilgas	237799.11
+2008	CA	Santa Barbar	06083	oilgas	1056847.80
+2008	CA	Siskiyou	06093	renewables	94098.04
+2008	CA	Solano	06095	oilgas	1939195.26
+2008	CA	Sonoma	06097	renewables	6029031.67
+2008	CA	Ventura	06111	oilgas	4794115.07
+2008	CA	Yolo	06113	oilgas	5810.50
+2009	CA	Contra Costa	06013	oilgas	1025.89
+2009	CA	Fresno	06019	oilgas	180488.51
+2009	CA	Glenn	06021	oilgas	17367.59
+2009	CA	Imperial	06025	renewables	280052.03
+2009	CA	Inyo	06027	renewables	319112.62
+2009	CA	Kern	06029	oilgas	81528278.71
+2009	CA	Kings	06031	oilgas	195774.74
+2009	CA	Lake	06033	renewables	2989959.98
+2009	CA	Lassen	06035	renewables	49341.89
+2009	CA	Los Angeles	06037	oilgas	2646566.70
+2009	CA	Mendocino	06045	renewables	3000.00
+2009	CA	Merced	06047	oilgas	240.00
+2009	CA	Mono	06051	renewables	195911.07
+2009	CA	Monterey	06053	oilgas	61342.78
+2009	CA	San Benito	06069	oilgas	34586.50
+2009	CA	San Bernardn	06071	minerals	505382.26
+2009	CA	San Joaquin	06077	oilgas	1567.56
+2009	CA	San Luis Ob.	06079	oilgas	154241.04
+2009	CA	Santa Barbar	06083	oilgas	601388.02
+2009	CA	Siskiyou	06093	renewables	161919.00
+2009	CA	Solano	06095	oilgas	769424.77
+2009	CA	Sonoma	06097	renewables	4081632.90
+2009	CA	Ventura	06111	oilgas	2095228.29
+2009	CA	Yolo	06113	oilgas	1288.00
+2010	CA	Contra Costa	06013	oilgas	1964.10
+2010	CA	Fresno	06019	oilgas	367542.23
+2010	CA	Glenn	06021	oilgas	12442.39
+2010	CA	Imperial	06025	renewables	156527.38
+2010	CA	Inyo	06027	renewables	835458.78
+2010	CA	Kern	06029	oilgas	115371004.86
+2010	CA	Kings	06031	oilgas	2266883.08
+2010	CA	Lake	06033	renewables	3307385.95
+2010	CA	Lassen	06035	renewables	51388.25
+2010	CA	Los Angeles	06037	oilgas	3729340.64
+2010	CA	Mendocino	06045	renewables	3000.00
+2010	CA	Merced	06047	oilgas	240.00
+2010	CA	Mono	06051	renewables	165001.47
+2010	CA	Monterey	06053	oilgas	89329.63
+2010	CA	San Benito	06069	oilgas	40576.41
+2010	CA	San Bernardn	06071	minerals	928651.02
+2010	CA	San Joaquin	06077	oilgas	1727.51
+2010	CA	San Luis Ob.	06079	oilgas	99297.77
+2010	CA	Santa Barbar	06083	oilgas	610315.30
+2010	CA	Siskiyou	06093	renewables	113993.00
+2010	CA	Solano	06095	oilgas	863889.04
+2010	CA	Sonoma	06097	renewables	4450320.62
+2010	CA	Sutter	06101	oilgas	8827.00
+2010	CA	Ventura	06111	oilgas	2905421.47
+2010	CA	Yolo	06113	oilgas	1288.00
+2011	CA	Contra Costa	06013	oilgas	1404.86
+2011	CA	Fresno	06019	oilgas	280554.66
+2011	CA	Glenn	06021	oilgas	5735.95
+2011	CA	Imperial	06025	renewables	-225285.08
+2011	CA	Inyo	06027	renewables	529920.80
+2011	CA	Kern	06029	oilgas	173365336.47
+2011	CA	Kings	06031	oilgas	784136.10
+2011	CA	Lake	06033	renewables	3147153.02
+2011	CA	Lassen	06035	renewables	48086.24
+2011	CA	Los Angeles	06037	oilgas	5228118.55
+2011	CA	Mendocino	06045	renewables	3000.00
+2011	CA	Merced	06047	oilgas	320.00
+2011	CA	Mono	06051	renewables	-42393.09
+2011	CA	Monterey	06053	oilgas	148201.00
+2011	CA	San Benito	06069	oilgas	47203.93
+2011	CA	San Bernardn	06071	minerals	1851991.91
+2011	CA	San Joaquin	06077	oilgas	1600.74
+2011	CA	San Luis Ob.	06079	oilgas	139819.15
+2011	CA	Santa Barbar	06083	oilgas	872643.55
+2011	CA	Siskiyou	06093	renewables	119109.00
+2011	CA	Solano	06095	oilgas	437822.03
+2011	CA	Sonoma	06097	renewables	4179970.74
+2011	CA	Sutter	06101	oilgas	249.00
+2011	CA	Ventura	06111	oilgas	3353750.35
+2011	CA	Yolo	06113	oilgas	1288.00
+2012	CA	Contra Costa	06013	oilgas	824.18
+2012	CA	Fresno	06019	oilgas	157591.12
+2012	CA	Glenn	06021	oilgas	5021.85
+2012	CA	Imperial	06025	renewables	334230.63
+2012	CA	Inyo	06027	renewables	810403.82
+2012	CA	Kern	06029	oilgas	182920818.36
+2012	CA	Kings	06031	oilgas	658073.47
+2012	CA	Lake	06033	renewables	3159083.11
+2012	CA	Lassen	06035	renewables	76071.14
+2012	CA	Los Angeles	06037	oilgas	6233973.48
+2012	CA	Mendocino	06045	renewables	3000.00
+2012	CA	Mono	06051	renewables	229168.95
+2012	CA	Monterey	06053	oilgas	179272.37
+2012	CA	San Benito	06069	oilgas	37083.88
+2012	CA	San Bernardn	06071	minerals	3768926.60
+2012	CA	San Joaquin	06077	oilgas	1026.39
+2012	CA	San Luis Ob.	06079	oilgas	193032.73
+2012	CA	Santa Barbar	06083	oilgas	1007590.56
+2012	CA	Siskiyou	06093	renewables	124245.00
+2012	CA	Solano	06095	oilgas	227186.16
+2012	CA	Sonoma	06097	renewables	4371683.24
+2012	CA	Sutter	06101	oilgas	249.00
+2012	CA	Ventura	06111	oilgas	5146781.79
+2012	CA	Yolo	06113	oilgas	1288.00
+2013	CA	Contra Costa	06013	oilgas	4114.84
+2013	CA	Fresno	06019	oilgas	434418.48
+2013	CA	Glenn	06021	oilgas	12440.03
+2013	CA	Imperial	06025	renewables	64517.95
+2013	CA	Inyo	06027	renewables	656977.06
+2013	CA	Kern	06029	oilgas	176162440.77
+2013	CA	Kings	06031	oilgas	386440.49
+2013	CA	Lake	06033	renewables	3469942.45
+2013	CA	Lassen	06035	renewables	67132.07
+2013	CA	Los Angeles	06037	oilgas	6932175.05
+2013	CA	Mendocino	06045	renewables	3000.00
+2013	CA	Mono	06051	renewables	317698.45
+2013	CA	Monterey	06053	oilgas	180365.23
+2013	CA	San Benito	06069	oilgas	29573.08
+2013	CA	San Bernardn	06071	minerals	3743919.44
+2013	CA	San Joaquin	06077	oilgas	1395.21
+2013	CA	San Luis Ob.	06079	oilgas	174292.96
+2013	CA	Santa Barbar	06083	oilgas	847702.00
+2013	CA	Siskiyou	06093	renewables	102093.00
+2013	CA	Solano	06095	oilgas	14557.10
+2013	CA	Sonoma	06097	renewables	4790127.40
+2013	CA	Sutter	06101	oilgas	249.00
+2013	CA	Ventura	06111	oilgas	3446466.62
+2004	CA	San Bernardn	06071	other	2459083.07
+2006	CA	San Bernardn	06071	other	4561399.21
+2007	CA	San Bernardn	06071	other	940805.89
+2008	CA	San Bernardn	06071	other	1763591.01
+2009	CA	San Bernardn	06071	other	1859089.73
+2010	CA	San Bernardn	06071	other	1784290.55
+2011	CA	San Bernardn	06071	other	2408854.93
+2012	CA	San Bernardn	06071	other	5598676.04
+2013	CA	San Bernardn	06071	other	5000918.02

@@ -1,0 +1,476 @@
+Year	State	County	FIPS	Resource	Revenue
+2004	MT	Beaverhead	30001	oilgas	1280.00
+2004	MT	Big Horn	30003	coal	21066453.53
+2004	MT	Big Horn	30003	oilgas	1524712.50
+2004	MT	Blaine	30005	oilgas	2217844.57
+2004	MT	Carbon	30009	oilgas	1383957.47
+2004	MT	Carbon	30009	minerals	986.36
+2004	MT	Carter	30011	oilgas	487013.26
+2004	MT	Cascade	30013	oilgas	10053.49
+2004	MT	Chouteau	30015	oilgas	302587.63
+2004	MT	Custer	30017	oilgas	100094.79
+2004	MT	Daniels	30019	oilgas	751.78
+2004	MT	Dawson	30021	oilgas	1392836.95
+2004	MT	Fallon	30025	oilgas	10645506.20
+2004	MT	Fergus	30027	oilgas	31635.07
+2004	MT	Garfield	30033	oilgas	2111.23
+2004	MT	Glacier	30035	oilgas	27365.72
+2004	MT	Hill	30041	oilgas	369981.45
+2004	MT	Lew And Clar	30049	oilgas	141131.01
+2004	MT	Liberty	30051	oilgas	162188.00
+2004	MT	Mccone	30055	oilgas	13915.50
+2004	MT	Meagher	30059	oilgas	16053.00
+2004	MT	Musselshell	30065	oilgas	61024.50
+2004	MT	Petroleum	30069	minerals	358.50
+2004	MT	Petroleum	30069	oilgas	7884.82
+2004	MT	Phillips	30071	oilgas	6438707.54
+2004	MT	Pondera	30073	oilgas	8319.12
+2004	MT	Powder River	30075	oilgas	810599.22
+2004	MT	Prairie	30079	oilgas	574525.23
+2004	MT	Richland	30083	oilgas	1751813.17
+2004	MT	Richland	30083	coal	46541.00
+2004	MT	Roosevelt	30085	oilgas	75518.75
+2004	MT	Rosebud	30087	coal	12603392.62
+2004	MT	Rosebud	30087	oilgas	325791.68
+2004	MT	Sheridan	30091	oilgas	185962.46
+2004	MT	Stillwater	30095	oilgas	53199.00
+2004	MT	Sweet Grass	30097	oilgas	46368.00
+2004	MT	Teton	30099	oilgas	4391.50
+2004	MT	Toole	30101	oilgas	210924.66
+2004	MT	Treasure	30103	coal	2760.16
+2004	MT	Treasure	30103	oilgas	9387.00
+2004	MT	Valley	30105	oilgas	883150.46
+2004	MT	Wheatland	30107	oilgas	240.00
+2004	MT	Wibaux	30109	oilgas	1707418.01
+2004	MT	Yellowstone	30111	oilgas	16968.71
+2005	MT	Beaverhead	30001	minerals	1409.00
+2005	MT	Big Horn	30003	coal	23047872.81
+2005	MT	Big Horn	30003	oilgas	3072313.48
+2005	MT	Blaine	30005	oilgas	2554691.52
+2005	MT	Carbon	30009	oilgas	1680585.21
+2005	MT	Carbon	30009	minerals	1617.45
+2005	MT	Carter	30011	oilgas	449582.03
+2005	MT	Cascade	30013	oilgas	10673.49
+2005	MT	Chouteau	30015	oilgas	321577.30
+2005	MT	Custer	30017	oilgas	44512.48
+2005	MT	Daniels	30019	oilgas	20557.86
+2005	MT	Dawson	30021	oilgas	2553960.37
+2005	MT	Fallon	30025	oilgas	16065508.44
+2005	MT	Fergus	30027	oilgas	69263.44
+2005	MT	Garfield	30033	oilgas	52013.71
+2005	MT	Glacier	30035	oilgas	38158.52
+2005	MT	Hill	30041	oilgas	659329.98
+2005	MT	Lew And Clar	30049	oilgas	142161.51
+2005	MT	Liberty	30051	oilgas	182466.62
+2005	MT	Mccone	30055	oilgas	4421.50
+2005	MT	Meagher	30059	oilgas	16134.00
+2005	MT	Musselshell	30065	oilgas	67985.59
+2005	MT	Petroleum	30069	oilgas	124706.08
+2005	MT	Phillips	30071	oilgas	9178288.02
+2005	MT	Pondera	30073	oilgas	45012.29
+2005	MT	Powder River	30075	oilgas	569527.55
+2005	MT	Prairie	30079	oilgas	698524.86
+2005	MT	Richland	30083	oilgas	2063415.35
+2005	MT	Richland	30083	coal	71686.81
+2005	MT	Roosevelt	30085	oilgas	125831.12
+2005	MT	Rosebud	30087	oilgas	376094.09
+2005	MT	Rosebud	30087	coal	10076694.48
+2005	MT	Sheridan	30091	oilgas	293512.08
+2005	MT	Stillwater	30095	oilgas	87888.00
+2005	MT	Sweet Grass	30097	oilgas	2711.50
+2005	MT	Teton	30099	oilgas	5291.50
+2005	MT	Toole	30101	oilgas	272580.75
+2005	MT	Treasure	30103	coal	138756.94
+2005	MT	Treasure	30103	oilgas	3597.00
+2005	MT	Valley	30105	oilgas	978049.56
+2005	MT	Wheatland	30107	oilgas	240.00
+2005	MT	Wibaux	30109	oilgas	2199256.21
+2005	MT	Yellowstone	30111	oilgas	9292.00
+2006	MT	Beaverhead	30001	oilgas	73461.50
+2006	MT	Beaverhead	30001	minerals	12681.00
+2006	MT	Big Horn	30003	coal	21722283.30
+2006	MT	Big Horn	30003	oilgas	2793787.33
+2006	MT	Blaine	30005	oilgas	2710623.58
+2006	MT	Carbon	30009	oilgas	1998276.23
+2006	MT	Carbon	30009	minerals	2321.49
+2006	MT	Carter	30011	oilgas	522034.17
+2006	MT	Cascade	30013	oilgas	13404.65
+2006	MT	Chouteau	30015	oilgas	238146.75
+2006	MT	Custer	30017	oilgas	35711.83
+2006	MT	Daniels	30019	oilgas	12583.60
+2006	MT	Dawson	30021	oilgas	2384716.77
+2006	MT	Fallon	30025	oilgas	17349897.32
+2006	MT	Fergus	30027	oilgas	105978.45
+2006	MT	Flathead	30029	oilgas	1996.00
+2006	MT	Gallatin	30031	oilgas	23478.00
+2006	MT	Garfield	30033	oilgas	25481.98
+2006	MT	Glacier	30035	oilgas	43366.46
+2006	MT	Golden Vally	30037	oilgas	1400.00
+2006	MT	Hill	30041	oilgas	494818.78
+2006	MT	Lew And Clar	30049	oilgas	32782.35
+2006	MT	Liberty	30051	oilgas	157642.89
+2006	MT	Mccone	30055	oilgas	3661.50
+2006	MT	Meagher	30059	oilgas	21044.50
+2006	MT	Musselshell	30065	oilgas	66515.75
+2006	MT	Petroleum	30069	minerals	2210.50
+2006	MT	Petroleum	30069	oilgas	109732.50
+2006	MT	Phillips	30071	oilgas	8072198.71
+2006	MT	Pondera	30073	oilgas	164498.68
+2006	MT	Powder River	30075	oilgas	598515.13
+2006	MT	Prairie	30079	oilgas	658328.80
+2006	MT	Richland	30083	oilgas	2618500.32
+2006	MT	Richland	30083	coal	7017.28
+2006	MT	Roosevelt	30085	oilgas	178466.19
+2006	MT	Rosebud	30087	oilgas	358731.88
+2006	MT	Rosebud	30087	coal	8266909.46
+2006	MT	Sheridan	30091	oilgas	270890.95
+2006	MT	Stillwater	30095	oilgas	41273.39
+2006	MT	Sweet Grass	30097	oilgas	5719.00
+2006	MT	Teton	30099	oilgas	30748.14
+2006	MT	Toole	30101	oilgas	400259.27
+2006	MT	Treasure	30103	coal	405569.72
+2006	MT	Treasure	30103	oilgas	3597.00
+2006	MT	Valley	30105	oilgas	1007741.47
+2006	MT	Wheatland	30107	oilgas	2980.50
+2006	MT	Wibaux	30109	oilgas	2580354.20
+2006	MT	Yellowstone	30111	oilgas	17717.41
+2007	MT	Beaverhead	30001	oilgas	117521.23
+2007	MT	Big Horn	30003	coal	27914846.03
+2007	MT	Big Horn	30003	oilgas	2072792.96
+2007	MT	Blaine	30005	oilgas	3181962.21
+2007	MT	Carbon	30009	oilgas	2367505.54
+2007	MT	Carbon	30009	minerals	1881.74
+2007	MT	Carter	30011	oilgas	492204.62
+2007	MT	Cascade	30013	oilgas	13404.65
+2007	MT	Chouteau	30015	oilgas	274908.99
+2007	MT	Custer	30017	oilgas	161408.79
+2007	MT	Daniels	30019	oilgas	12617.81
+2007	MT	Dawson	30021	oilgas	2406333.17
+2007	MT	Fallon	30025	oilgas	17940782.30
+2007	MT	Fergus	30027	oilgas	57734.27
+2007	MT	Gallatin	30031	oilgas	10062.00
+2007	MT	Garfield	30033	oilgas	24555.44
+2007	MT	Glacier	30035	oilgas	55548.86
+2007	MT	Golden Vally	30037	oilgas	2937.00
+2007	MT	Hill	30041	oilgas	497793.45
+2007	MT	Lew And Clar	30049	oilgas	102414.35
+2007	MT	Liberty	30051	oilgas	134072.98
+2007	MT	Mccone	30055	oilgas	3661.50
+2007	MT	Meagher	30059	oilgas	18238.50
+2007	MT	Musselshell	30065	oilgas	69951.80
+2007	MT	Petroleum	30069	minerals	15.00
+2007	MT	Petroleum	30069	oilgas	121729.60
+2007	MT	Phillips	30071	oilgas	9863049.28
+2007	MT	Pondera	30073	oilgas	175470.81
+2007	MT	Powder River	30075	oilgas	1011879.15
+2007	MT	Prairie	30079	oilgas	724614.34
+2007	MT	Richland	30083	oilgas	3066543.46
+2007	MT	Roosevelt	30085	oilgas	280184.51
+2007	MT	Rosebud	30087	oilgas	178428.56
+2007	MT	Rosebud	30087	coal	12165196.97
+2007	MT	Sheridan	30091	oilgas	255623.54
+2007	MT	Stillwater	30095	oilgas	103284.08
+2007	MT	Sweet Grass	30097	oilgas	5680.00
+2007	MT	Teton	30099	oilgas	5413.27
+2007	MT	Toole	30101	oilgas	498238.46
+2007	MT	Treasure	30103	coal	355046.83
+2007	MT	Treasure	30103	oilgas	4796.00
+2007	MT	Valley	30105	oilgas	1041219.87
+2007	MT	Wheatland	30107	oilgas	1414.50
+2007	MT	Wibaux	30109	oilgas	2688745.91
+2007	MT	Yellowstone	30111	oilgas	17191.03
+2008	MT	Beaverhead	30001	oilgas	101788.00
+2008	MT	Beaverhead	30001	minerals	5636.00
+2008	MT	Big Horn	30003	coal	30093417.79
+2008	MT	Big Horn	30003	oilgas	3181958.50
+2008	MT	Blaine	30005	oilgas	2807255.79
+2008	MT	Broadwater	30007	oilgas	100144.74
+2008	MT	Carbon	30009	oilgas	3282196.54
+2008	MT	Carbon	30009	minerals	27255.51
+2008	MT	Carter	30011	oilgas	994054.72
+2008	MT	Cascade	30013	oilgas	13404.65
+2008	MT	Chouteau	30015	oilgas	260992.92
+2008	MT	Custer	30017	oilgas	121077.82
+2008	MT	Daniels	30019	oilgas	12617.81
+2008	MT	Dawson	30021	oilgas	2932164.47
+2008	MT	Fallon	30025	oilgas	24828264.62
+2008	MT	Fergus	30027	oilgas	188528.99
+2008	MT	Gallatin	30031	oilgas	10062.00
+2008	MT	Garfield	30033	oilgas	293993.45
+2008	MT	Glacier	30035	oilgas	65439.99
+2008	MT	Golden Vally	30037	oilgas	49144.98
+2008	MT	Granite	30039	minerals	41.50
+2008	MT	Hill	30041	oilgas	733978.35
+2008	MT	Lew And Clar	30049	oilgas	58838.85
+2008	MT	Liberty	30051	oilgas	179635.33
+2008	MT	Mccone	30055	oilgas	4001.50
+2008	MT	Meagher	30059	oilgas	30167.26
+2008	MT	Musselshell	30065	oilgas	600460.32
+2008	MT	Petroleum	30069	oilgas	224783.35
+2008	MT	Petroleum	30069	minerals	3848.00
+2008	MT	Phillips	30071	oilgas	11004727.08
+2008	MT	Pondera	30073	oilgas	32148.72
+2008	MT	Powder River	30075	oilgas	1439149.49
+2008	MT	Prairie	30079	oilgas	1021963.39
+2008	MT	Richland	30083	oilgas	4566739.13
+2008	MT	Richland	30083	coal	2640.00
+2008	MT	Roosevelt	30085	oilgas	192902.49
+2008	MT	Rosebud	30087	oilgas	543202.47
+2008	MT	Rosebud	30087	coal	11537411.85
+2008	MT	Sheridan	30091	oilgas	401406.70
+2008	MT	Stillwater	30095	oilgas	40960.46
+2008	MT	Sweet Grass	30097	oilgas	5298.00
+2008	MT	Teton	30099	oilgas	2657.27
+2008	MT	Toole	30101	oilgas	896639.60
+2008	MT	Treasure	30103	coal	833575.13
+2008	MT	Treasure	30103	oilgas	4796.00
+2008	MT	Valley	30105	oilgas	1157719.45
+2008	MT	Wheatland	30107	oilgas	1414.50
+2008	MT	Wibaux	30109	oilgas	3864879.31
+2008	MT	Yellowstone	30111	oilgas	18039.80
+2009	MT	Beaverhead	30001	oilgas	216607.80
+2009	MT	Beaverhead	30001	minerals	4227.00
+2009	MT	Big Horn	30003	coal	30260118.15
+2009	MT	Big Horn	30003	oilgas	2159641.19
+2009	MT	Blaine	30005	oilgas	1426205.12
+2009	MT	Broadwater	30007	oilgas	54982.17
+2009	MT	Carbon	30009	oilgas	1839918.03
+2009	MT	Carbon	30009	minerals	-9594.46
+2009	MT	Carter	30011	oilgas	358827.17
+2009	MT	Chouteau	30015	oilgas	102057.26
+2009	MT	Custer	30017	oilgas	86951.07
+2009	MT	Daniels	30019	oilgas	12617.81
+2009	MT	Dawson	30021	oilgas	1835784.03
+2009	MT	Fallon	30025	oilgas	11721571.44
+2009	MT	Fergus	30027	oilgas	77750.64
+2009	MT	Gallatin	30031	oilgas	12262.00
+2009	MT	Garfield	30033	oilgas	346826.71
+2009	MT	Glacier	30035	oilgas	61089.14
+2009	MT	Golden Vally	30037	oilgas	25500.63
+2009	MT	Hill	30041	oilgas	201051.51
+2009	MT	Lew And Clar	30049	oilgas	24043.00
+2009	MT	Liberty	30051	oilgas	81819.47
+2009	MT	Madison	30057	oilgas	24785.20
+2009	MT	Mccone	30055	oilgas	4402.00
+2009	MT	Meagher	30059	oilgas	20660.83
+2009	MT	Musselshell	30065	oilgas	321285.84
+2009	MT	Petroleum	30069	minerals	146.50
+2009	MT	Petroleum	30069	oilgas	163941.06
+2009	MT	Phillips	30071	oilgas	5236786.34
+2009	MT	Pondera	30073	oilgas	51979.11
+2009	MT	Powder River	30075	oilgas	1145124.37
+2009	MT	Prairie	30079	oilgas	487419.44
+2009	MT	Richland	30083	oilgas	2121734.77
+2009	MT	Richland	30083	coal	1320.00
+2009	MT	Roosevelt	30085	oilgas	165642.79
+2009	MT	Rosebud	30087	oilgas	386480.52
+2009	MT	Rosebud	30087	coal	20262719.15
+2009	MT	Sheridan	30091	oilgas	269981.61
+2009	MT	Stillwater	30095	oilgas	80743.32
+2009	MT	Sweet Grass	30097	oilgas	248130.00
+2009	MT	Teton	30099	oilgas	2035.77
+2009	MT	Toole	30101	oilgas	377311.79
+2009	MT	Treasure	30103	coal	2616363.84
+2009	MT	Treasure	30103	oilgas	4796.00
+2009	MT	Valley	30105	oilgas	437155.60
+2009	MT	Wheatland	30107	oilgas	1174.50
+2009	MT	Wibaux	30109	oilgas	1900687.52
+2009	MT	Yellowstone	30111	oilgas	16801.45
+2010	MT	Beaverhead	30001	oilgas	127500.13
+2010	MT	Beaverhead	30001	minerals	2818.00
+2010	MT	Big Horn	30003	coal	35807345.46
+2010	MT	Big Horn	30003	oilgas	2206632.75
+2010	MT	Blaine	30005	oilgas	1517029.24
+2010	MT	Broadwater	30007	oilgas	44242.17
+2010	MT	Carbon	30009	oilgas	2223453.66
+2010	MT	Carbon	30009	minerals	3906.01
+2010	MT	Carter	30011	oilgas	400145.61
+2010	MT	Chouteau	30015	oilgas	146924.64
+2010	MT	Custer	30017	oilgas	10572.35
+2010	MT	Daniels	30019	oilgas	28587.08
+2010	MT	Dawson	30021	oilgas	1836278.22
+2010	MT	Fallon	30025	oilgas	13674150.83
+2010	MT	Fergus	30027	oilgas	58595.74
+2010	MT	Gallatin	30031	oilgas	10062.00
+2010	MT	Garfield	30033	oilgas	120064.48
+2010	MT	Glacier	30035	oilgas	49533.36
+2010	MT	Golden Vally	30037	oilgas	25180.63
+2010	MT	Granite	30039	minerals	83.00
+2010	MT	Hill	30041	oilgas	131316.73
+2010	MT	Lew And Clar	30049	oilgas	19239.00
+2010	MT	Liberty	30051	oilgas	95413.24
+2010	MT	Madison	30057	oilgas	10759.37
+2010	MT	Mccone	30055	oilgas	3762.00
+2010	MT	Meagher	30059	oilgas	7216.83
+2010	MT	Musselshell	30065	oilgas	269892.94
+2010	MT	Petroleum	30069	minerals	136.50
+2010	MT	Petroleum	30069	oilgas	168107.89
+2010	MT	Phillips	30071	oilgas	4893869.47
+2010	MT	Pondera	30073	oilgas	47510.08
+2010	MT	Powder River	30075	oilgas	1253313.86
+2010	MT	Prairie	30079	oilgas	685758.81
+2010	MT	Richland	30083	oilgas	4942658.19
+2010	MT	Richland	30083	coal	1320.00
+2010	MT	Roosevelt	30085	oilgas	421668.81
+2010	MT	Rosebud	30087	oilgas	419953.86
+2010	MT	Rosebud	30087	coal	15803899.10
+2010	MT	Sheridan	30091	oilgas	258548.77
+2010	MT	Stillwater	30095	oilgas	22064.84
+2010	MT	Sweet Grass	30097	oilgas	16503.50
+2010	MT	Teton	30099	oilgas	2481.93
+2010	MT	Toole	30101	oilgas	644485.85
+2010	MT	Treasure	30103	coal	2564853.56
+2010	MT	Treasure	30103	oilgas	4796.00
+2010	MT	Valley	30105	oilgas	499785.17
+2010	MT	Wheatland	30107	oilgas	1414.50
+2010	MT	Wibaux	30109	oilgas	2980893.89
+2010	MT	Yellowstone	30111	oilgas	16404.92
+2011	MT	Beaverhead	30001	oilgas	144326.39
+2011	MT	Beaverhead	30001	minerals	1409.00
+2011	MT	Big Horn	30003	coal	31094461.08
+2011	MT	Big Horn	30003	oilgas	1514231.22
+2011	MT	Blaine	30005	oilgas	1316161.36
+2011	MT	Broadwater	30007	oilgas	49415.67
+2011	MT	Carbon	30009	oilgas	2683821.20
+2011	MT	Carbon	30009	minerals	9789.04
+2011	MT	Carter	30011	oilgas	299063.32
+2011	MT	Chouteau	30015	oilgas	121649.74
+2011	MT	Custer	30017	oilgas	8193.81
+2011	MT	Daniels	30019	oilgas	15958.58
+2011	MT	Dawson	30021	oilgas	3230899.25
+2011	MT	Fallon	30025	oilgas	15576700.77
+2011	MT	Fergus	30027	oilgas	62957.94
+2011	MT	Flathead	30029	oilgas	-1996.00
+2011	MT	Gallatin	30031	oilgas	14294.13
+2011	MT	Garfield	30033	oilgas	186491.03
+2011	MT	Glacier	30035	oilgas	53866.06
+2011	MT	Golden Vally	30037	oilgas	25140.63
+2011	MT	Granite	30039	minerals	51.50
+2011	MT	Hill	30041	oilgas	100475.72
+2011	MT	Lew And Clar	30049	oilgas	25317.50
+2011	MT	Liberty	30051	oilgas	139089.42
+2011	MT	Madison	30057	oilgas	10759.37
+2011	MT	Mccone	30055	oilgas	28002.00
+2011	MT	Meagher	30059	oilgas	5112.33
+2011	MT	Musselshell	30065	oilgas	-62645.54
+2011	MT	Park	30067	oilgas	240.00
+2011	MT	Petroleum	30069	minerals	70.00
+2011	MT	Petroleum	30069	oilgas	532285.00
+2011	MT	Phillips	30071	oilgas	3597192.48
+2011	MT	Pondera	30073	oilgas	68794.59
+2011	MT	Powder River	30075	oilgas	1652544.44
+2011	MT	Prairie	30079	oilgas	845109.37
+2011	MT	Richland	30083	oilgas	6115845.13
+2011	MT	Richland	30083	coal	1320.00
+2011	MT	Roosevelt	30085	oilgas	328889.48
+2011	MT	Rosebud	30087	oilgas	347022.25
+2011	MT	Rosebud	30087	coal	14961215.14
+2011	MT	Sheridan	30091	oilgas	226335.00
+2011	MT	Stillwater	30095	oilgas	124809.00
+2011	MT	Sweet Grass	30097	oilgas	-62730.00
+2011	MT	Teton	30099	oilgas	2694.37
+2011	MT	Toole	30101	oilgas	536517.22
+2011	MT	Treasure	30103	coal	3252615.46
+2011	MT	Treasure	30103	oilgas	4796.00
+2011	MT	Valley	30105	oilgas	300991.71
+2011	MT	Wheatland	30107	oilgas	1806.00
+2011	MT	Wibaux	30109	oilgas	3329120.17
+2011	MT	Yellowstone	30111	oilgas	6637.90
+2012	MT	Beaverhead	30001	oilgas	113195.50
+2012	MT	Beaverhead	30001	minerals	1409.00
+2012	MT	Big Horn	30003	oilgas	763138.76
+2012	MT	Big Horn	30003	coal	28615781.58
+2012	MT	Blaine	30005	oilgas	760031.97
+2012	MT	Broadwater	30007	oilgas	4905.00
+2012	MT	Carbon	30009	oilgas	2731759.43
+2012	MT	Carbon	30009	minerals	4657.08
+2012	MT	Carter	30011	oilgas	352693.70
+2012	MT	Chouteau	30015	oilgas	34411.87
+2012	MT	Custer	30017	oilgas	11520.00
+2012	MT	Daniels	30019	oilgas	248255.08
+2012	MT	Dawson	30021	oilgas	2714917.72
+2012	MT	Fallon	30025	oilgas	13679913.80
+2012	MT	Fergus	30027	oilgas	44748.88
+2012	MT	Flathead	30029	oilgas	8590.00
+2012	MT	Gallatin	30031	oilgas	847.50
+2012	MT	Garfield	30033	oilgas	117776.21
+2012	MT	Glacier	30035	oilgas	49348.04
+2012	MT	Golden Vally	30037	oilgas	26119.63
+2012	MT	Granite	30039	minerals	51.50
+2012	MT	Hill	30041	oilgas	47018.10
+2012	MT	Lew And Clar	30049	oilgas	25317.50
+2012	MT	Liberty	30051	oilgas	55911.61
+2012	MT	Madison	30057	oilgas	480.00
+2012	MT	Mccone	30055	oilgas	3400959.50
+2012	MT	Musselshell	30065	coal	10658040.00
+2012	MT	Musselshell	30065	oilgas	103104.39
+2012	MT	Park	30067	oilgas	240.00
+2012	MT	Petroleum	30069	oilgas	202522.53
+2012	MT	Petroleum	30069	minerals	-3310.50
+2012	MT	Phillips	30071	oilgas	2651283.10
+2012	MT	Pondera	30073	oilgas	43061.61
+2012	MT	Powder River	30075	oilgas	2863934.67
+2012	MT	Prairie	30079	oilgas	800815.81
+2012	MT	Richland	30083	oilgas	3639630.75
+2012	MT	Richland	30083	coal	13075.13
+2012	MT	Roosevelt	30085	oilgas	512478.62
+2012	MT	Rosebud	30087	oilgas	325698.68
+2012	MT	Rosebud	30087	coal	13784685.91
+2012	MT	Sheridan	30091	oilgas	1138504.35
+2012	MT	Stillwater	30095	oilgas	113791.16
+2012	MT	Sweet Grass	30097	oilgas	4884.50
+2012	MT	Teton	30099	oilgas	2715.77
+2012	MT	Toole	30101	oilgas	428121.92
+2012	MT	Treasure	30103	coal	3366028.30
+2012	MT	Valley	30105	oilgas	133829.89
+2012	MT	Wheatland	30107	oilgas	1806.00
+2012	MT	Wibaux	30109	oilgas	2649441.23
+2012	MT	Yellowstone	30111	oilgas	3363.79
+2013	MT	Beaverhead	30001	minerals	-1409.00
+2013	MT	Beaverhead	30001	oilgas	145725.26
+2013	MT	Big Horn	30003	oilgas	236971.86
+2013	MT	Big Horn	30003	coal	27447758.63
+2013	MT	Blaine	30005	oilgas	845752.26
+2013	MT	Broadwater	30007	oilgas	3311.50
+2013	MT	Carbon	30009	oilgas	2572776.01
+2013	MT	Carbon	30009	minerals	5314.96
+2013	MT	Carter	30011	oilgas	329902.44
+2013	MT	Chouteau	30015	oilgas	44396.83
+2013	MT	Custer	30017	oilgas	14627.27
+2013	MT	Daniels	30019	oilgas	19003.58
+2013	MT	Dawson	30021	oilgas	2006785.15
+2013	MT	Fallon	30025	oilgas	12624780.26
+2013	MT	Fergus	30027	oilgas	50395.04
+2013	MT	Gallatin	30031	oilgas	377.77
+2013	MT	Garfield	30033	oilgas	102307.13
+2013	MT	Glacier	30035	oilgas	40117.65
+2013	MT	Golden Vally	30037	oilgas	29192.18
+2013	MT	Hill	30041	oilgas	59152.05
+2013	MT	Lew And Clar	30049	oilgas	23832.50
+2013	MT	Liberty	30051	oilgas	97236.91
+2013	MT	Madison	30057	oilgas	21278.74
+2013	MT	Mccone	30055	oilgas	222060.50
+2013	MT	Musselshell	30065	coal	29036.30
+2013	MT	Musselshell	30065	oilgas	137768.92
+2013	MT	Petroleum	30069	minerals	20.00
+2013	MT	Petroleum	30069	oilgas	125604.15
+2013	MT	Phillips	30071	oilgas	2542671.62
+2013	MT	Pondera	30073	oilgas	25549.17
+2013	MT	Powder River	30075	oilgas	1342136.90
+2013	MT	Prairie	30079	oilgas	750140.02
+2013	MT	Richland	30083	oilgas	2882466.14
+2013	MT	Richland	30083	coal	1320.00
+2013	MT	Roosevelt	30085	oilgas	604893.75
+2013	MT	Rosebud	30087	oilgas	334811.97
+2013	MT	Rosebud	30087	coal	15380958.78
+2013	MT	Sheridan	30091	oilgas	538941.79
+2013	MT	Stillwater	30095	oilgas	133526.93
+2013	MT	Sweet Grass	30097	oilgas	9012.00
+2013	MT	Teton	30099	oilgas	2714.37
+2013	MT	Toole	30101	oilgas	520116.13
+2013	MT	Treasure	30103	coal	2142099.85
+2013	MT	Valley	30105	oilgas	171008.04
+2013	MT	Wheatland	30107	oilgas	1806.00
+2013	MT	Wibaux	30109	oilgas	2865820.96
+2013	MT	Yellowstone	30111	oilgas	9758.05
+2004	MT	Beaverhead	30001	minerals	4227.00

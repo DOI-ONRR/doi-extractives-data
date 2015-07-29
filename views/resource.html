@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 
-{% from 'macros.html' import region_map, location_selector %}
+{% from 'macros.html' import region_map, url_selector, location_selector %}
 
 {% block breadcrumb %}
   <li><a href="/resources">Resources</a></li>
@@ -14,39 +14,50 @@
   <section id="resources" class="container">
 
     <div class="map-left">
-
       <form>
-        <select>
-          <option value="Coal">Coal</option>
-          <option value="Oil">Oil &amp; Gas</option>
-          <option value="Minerals">Hard rock minerals</option>
-          <option value="Renewables">Renewables</option>
-        </select>
+        <!-- resource: "{{ resource|jsonify }}" -->
+        {% set resource_url_template = request.url.replace(resource.slug, '@') %}
+        {{ url_selector(resources.groups, resource_url_template, resource.slug, none_option=['all', 'All']) }}
       </form>
 
       <form>
+        <!-- region "{{ region|jsonify }}" -->
         <label>
-          {{ location_selector(locations=locations) }}
+          {{ location_selector(locations=locations, prefix=location_prefix_url, value=region.id) }}
         </label>
       </form>
 
+
+      {% if counties %}
+      <form class="counties">
+        <label>
+          {% set county_url_template = location_prefix_url + 'onshore/' + request.params.state + '/@' %}
+          {{ url_selector(counties,
+              county_url_template,
+              selected=request.params.county,
+              none_option=['', 'No county'],
+              access=['FIPS', 'name']) }}
+        </label>
+      </form>
+      {% endif %}
+
       <p>Lorem ipsum dolor amet. Sed soitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu. Curabitur fermentum suscipit est, tincidunt.</p>
 
-      <div class="map-data_types">
+      <div class="map-data_types resource_{{ resource.slug if resource else 'none' }}">
 
         <div class="group_inline">
 
           <div class="group_inline-left">
-            <h2>2013</h2>
+            <h2 class="resource-text">2013</h2>
           </div>
 
           <div class="group_inline-right">
             <form>
               <select>
-                <option value="Revenues">Revenues</option>
-                <option value="Production">Production</option>
-                <option value="Exports">Exports</option>
-                <option value="Jobs">Jobs</option>
+                <option value="revenue">Revenues</option>
+                <option value="production">Production</option>
+                <option value="exports">Exports</option>
+                <option value="jobs">Jobs</option>
               </select>
             </form>
           </div>
@@ -55,12 +66,20 @@
 
         <div class="map-data_types-stats">
 
-          <ul>
+          <ul class="resource-text">
             <li>
-              $389,900,540<span>coal revenues in the U.S. in 2013</span>
+              <span class="headline" id="total-revenue">$XXX</span>
+              <span class="subtitle">
+                {{ resource.name }} revenues in the U.S. in
+                <span class="current-year resource-text">2013</span>
+              </span>
             </li>
             <li>
-              13%<span>percent coal contributed to U.S. exports in 2013</span>
+              <span class="headline" id="export-contribution">XX%</span>
+              <span class="subtitle">
+                percent {{ resource.name }} contributed to U.S. exports in
+                <span class="current-year resource-text">2013</span>
+              </span>
             </li>
           </ul>
           
@@ -81,17 +100,41 @@
 
       <div class="map-map">
 
-        {{
-          region_map(
-            id='region-map',
-            simplify='2e-2',
-            href_prefix=('/resources/' + resource.slug)
-          )
-        }}
+        {% set href_prefix = location_prefix_url %}
+        <svg is="eiti-map" id="region-map" simplify="1e-2"
+          projection="albersCustom" data-path="/data/geo/"
+          zoom-to="{{ request.params.county or region.id }}">
+          <g class="offshore areas" data-url="offshore-simple.json"
+            data-title="properties.name"
+            data-href="'{{ href_prefix }}offshore/' + id"
+            data-mesh="true">
+          </g>
+          <g class="onshore states" data-url="us-states-simple.json"
+            data-title="properties.name || properties.abbr"
+            data-href="'{{ href_prefix }}onshore/' + id"
+            data-mesh="true">
+          </g>
+          {% if request.params.state %}
+          <!-- state! -->
+          <g class="counties" data-url="us-topology.json"
+            data-object="counties"
+            data-filter="properties.state == '{{ request.params.state }}'"
+            data-title="properties.county"
+            data-href="'{{ href_prefix }}onshore/' + properties.state + '/' + properties.FIPS">
+          </g>
+          <g class="counties-mesh" data-url="us-topology.json"
+            data-object="counties"
+            data-filter="properties.state == '{{ request.params.state }}'"
+            data-mesh="true">
+          </g>
+          {% elif request.params.area %}
+          <!-- TODO: offshore area! -->
+          {% endif %}
+        </svg>
 
       </div>
 
-      <div clas=="map-slider">
+      <div class="map-slider">
 
         <eiti-slider id="year-slider" min="2004" max="2013" value="2013" snap class="map-slider">
         </eiti-slider>
@@ -135,29 +178,60 @@
   var colorScale;
   var year, valuesByYear;
 
-  eiti.loadAll({
-    revenues: '/data/regional/resource-revenues.tsv'
-  }, function(error, data) {
+  var formatDollars = d3.format('$,');
+
+{% if request.params.state %}
+
+  var dataURL = '/data/county/by-state/{{ request.params.state }}/resource-revenues.tsv';
+  var regionField = 'FIPS';
+  var pathSelector = '.counties path.feature';
+  // FIXME: these should have the right IDs
+  var featureId = dl.accessor('properties.FIPS');
+
+{% else %}
+
+  var dataURL = '/data/regional/resource-revenues.tsv';
+  var regionField = 'Region';
+  var pathSelector = 'path.feature';
+  var featureId = dl.accessor('id');
+
+{% endif %}
+
+{% if request.params.datatype == 'revenue' %}
+
+  var sumField = 'Revenue';
+  var aggregate = function(d) {
+    return d3.sum(d, dl.accessor(sumField));
+  };
+
+{% else %}
+
+  console.warn('FIXME: no visualization for "{{ request.params.datatype }}"');
+  return;
+
+{% endif %}
+
+  console.warn('loading:', dataURL);
+  eiti.load(dataURL, function(error, data) {
     if (error) {
       console.error('load error:', error);
-      return alert('There was an error loading the map!');
+      // TODO: say something about the lack of data
+      return;
     }
 
     var resource = params.resource;
-    var revenues = data.revenues.filter(function(d) {
+    var values = data.filter(function(d) {
       return d.Resource === resource;
     });
 
     valuesByYear = d3.nest()
       .key(dl.accessor('Year'))
-      .key(dl.accessor('Region'))
-      .rollup(function(d) {
-        return d3.sum(d, dl.accessor('Revenue'));
-      })
-      .map(revenues);
+      .key(dl.accessor(regionField))
+      .rollup(aggregate)
+      .map(values);
 
     colorScale = d3.scale.linear()
-      .range(['#fff', params.color]);
+      .range(['#eee', params.color]);
 
     update();
   });
@@ -168,15 +242,28 @@
     year = slider.property('value');
     if (year === prev) return;
 
-    var values = valuesByYear[year];
-    var max = d3.values(values).sort(d3.descending)[0];
+    d3.selectAll('.current-year')
+      .text(year);
+
+    var values = valuesByYear[year] || {};
+    var numbers = d3.values(values).sort(d3.descending);
+    var max = numbers[0];
+    // FIXME: negative values???
+    var total = Math.max(0, ~~d3.sum(numbers));
+
+    d3.select('#total-revenue')
+      .text(formatDollars(total));
+
+    console.log('max:', max, numbers);
 
     var scale = colorScale
       .domain([0, max]);
 
-    map.selectAll('path.feature')
+    map.selectAll(pathSelector)
       .style('fill', function(d) {
-        var value = d.value = values[d.id];
+        var id = featureId(d);
+        // console.log(id, values[id]);
+        var value = d.value = values[id];
         return isNaN(value)
           ? null
           : scale(value);

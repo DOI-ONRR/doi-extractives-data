@@ -22,36 +22,56 @@
 {% endmacro %}
 
 {% macro location_selector(locations=[], prefix='/locations/', id=null, value=null) %}
-  <select id="{{ id }}" onchange="if (this.value) window.location = '{{ prefix }}' + this.value">
+  <select id="{{ id }}" onchange="window.location = '{{ prefix }}' + this.value"
+    data-selected="{{ value }}">
     <option value="">States and offshore areas</option>
     <optgroup label="States">
       {% for state in locations.onshore %}
+      <!-- {{ state|jsonify }} -->
       <option
-        {% if (value == 'onshore/' + state.abbr) %}selected{% endif %}
-        value="onshore/{{ state.abbr }}">{{ state.name }}</option>
+        {% if (value == state.id) %}selected="selected"{% endif %}
+        value="onshore/{{ state.id }}">{{ state.name }}</option>
       {% endfor %}
     </optgroup>
     <optgroup label="Offshore Areas">
       {% for area in locations.offshore %}
       <option
-        {% if (value == 'offshore/' + area.id) %}selected{% endif %}
+        {% if (value == area.id) %}selected="selected"{% endif %}
         value="offshore/{{ area.id }}">{{ area.name }}</option>
       {% endfor %}
     </optgroup>
   </select>
 {% endmacro %}
 
+{% macro url_selector(values, url_template, selected='', none_option=null, access=null) %}
+<select data-selected="{{ selected }}" onchange="window.location = '{{ url_template }}'.replace('@', this.value);" data-selected="{{ selected }}">
+  {% if none_option %}
+  <option value="{{ none_option[0] }}">{{ none_option[1] }}</option>
+  {% endif %}
+  {% if access %}
+    {% for value in values %}
+    <option value="{{ value[access[0]] }}"{% if value[access[0]] == selected %} selected="selected"{% endif %}>{{ value[access[1]] }}</option>
+    {% endfor %}
+  {% else %}
+    {% for value, label in values %}
+    <option value="{{ value }}"{% if value == selected %} selected="selected"{% endif %}>{{ label }}</option>
+    {% endfor %}
+  {% endif %}
+</select>
+{% endmacro %}
+
 {% macro region_map(id=null, href_prefix='', href_suffix='', simplify=null) %}
   {% set href_prefix = href_prefix + '/locations' %}
-  {% set href_suffix = '{{ id }}' + href_suffix %}
   <svg is="eiti-map" {% if id %}id="{{ id }}"{% endif %} {% if simplify %}simplify="{{ simplify }}"{% endif %}
     projection="albersCustom" data-path="/data/geo/">
     <g class="offshore" data-url="offshore-simple.json"
-      data-href="{{ href_prefix }}/offshore/{{ href_suffix }}"
+      data-title="properties.name"
+      data-href="'{{ href_prefix }}/offshore/' + id + '{{ href_suffix }}'"
       data-mesh="true">
     </g>
     <g class="onshore" data-url="us-states-simple.json"
-      data-href="{{ href_prefix }}/onshore/{{ href_suffix }}"
+      data-title="properties.name"
+      data-href="'{{ href_prefix }}/onshore/' + id + '{{ href_suffix }}'"
       data-mesh="true">
     </g>
   </svg>

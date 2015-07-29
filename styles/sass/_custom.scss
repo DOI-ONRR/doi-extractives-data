@@ -102,6 +102,11 @@ a {
       box-shadow: inset 0 0 0 50px rgba(0, 0, 0, 0.5);
     }
   }
+
+  .text-#{$name},
+  .resource_#{$name} .resource-text {
+    color: $value;
+  }
 }
 
 
@@ -929,28 +934,28 @@ footer {
   margin-top: $base-padding-extra;
 
   h2 {
-    color: $purple;
     font-weight: 400;
     padding-top: 5px;
   }
 }
 
 .map-data_types-stats {
+  margin-top: $base-padding-lite;
+
   ul li {
-    @include font-size(3);
-    color: $purple;
     font-weight: 200;
-    line-height: 0.5;
     margin-bottom: 40px;
 
-    &:first-of-type {
-      margin-top: $base-padding-lite;
+    .headline {
+      @include font-size(2.5);
+      display: block;
     }
 
-    span {
+    .subtitle {
       @include font-size(0.9);
       color: $dark-gray;
       font-weight: 200;
+      line-height: 1;
 
       &::before {
         content: "\A";
@@ -1040,6 +1045,12 @@ footer {
   padding-top: $base-padding-large;
   padding-right: $base-padding-large;
   padding-left: $base-padding-large;
+
+  svg {
+    display: block;
+    width: 100%;
+    height: 350px;
+  }
 }
 
 .map-slider {

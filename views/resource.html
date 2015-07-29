@@ -170,29 +170,60 @@
   var colorScale;
   var year, valuesByYear;
 
-  eiti.loadAll({
-    revenues: '/data/regional/resource-revenues.tsv'
-  }, function(error, data) {
+{% if request.params.state %}
+
+  var dataURL = '/data/county/by-state/{{ request.params.state }}/resource-revenues.tsv';
+  var regionField = 'FIPS';
+  var pathSelector = '.counties path.feature';
+  // FIXME: these should have the right IDs
+  var featureId = dl.accessor('properties.FIPS');
+
+{% else %}
+
+  var dataURL = '/data/regional/resource-revenues.tsv';
+  var regionField = 'Region';
+  var pathSelector = 'path.feature';
+  var featureId = dl.accessor('id');
+
+{% endif %}
+
+{% if request.params.datatype == 'revenue' %}
+
+  var sumField = 'Revenue';
+  var aggregate = function(d) {
+    return d3.sum(d, dl.accessor(sumField));
+  };
+
+{% else %}
+
+  var sumField = 'x'; // FIXME
+  var aggregate = function(d) {
+    return d3.sum(d, dl.accessor(sumField));
+  };
+
+{% endif %}
+
+  console.warn('loading:', dataURL);
+  eiti.load(dataURL, function(error, data) {
     if (error) {
       console.error('load error:', error);
-      return alert('There was an error loading the map!');
+      // TODO: say something about the lack of data
+      return;
     }
 
     var resource = params.resource;
-    var revenues = data.revenues.filter(function(d) {
+    var values = data.filter(function(d) {
       return d.Resource === resource;
     });
 
     valuesByYear = d3.nest()
       .key(dl.accessor('Year'))
-      .key(dl.accessor('Region'))
-      .rollup(function(d) {
-        return d3.sum(d, dl.accessor('Revenue'));
-      })
-      .map(revenues);
+      .key(dl.accessor(regionField))
+      .rollup(aggregate)
+      .map(values);
 
     colorScale = d3.scale.linear()
-      .range(['#fff', params.color]);
+      .range(['#eee', params.color]);
 
     update();
   });
@@ -203,15 +234,19 @@
     year = slider.property('value');
     if (year === prev) return;
 
-    var values = valuesByYear[year];
-    var max = d3.values(values).sort(d3.descending)[0];
+    var values = valuesByYear[year] || {};
+    var numbers = d3.values(values).sort(d3.descending)
+    var max = numbers[0];
+    console.log('max:', max, numbers);
 
     var scale = colorScale
       .domain([0, max]);
 
-    map.selectAll('path.feature')
+    map.selectAll(pathSelector)
       .style('fill', function(d) {
-        var value = d.value = values[d.id];
+        var id = featureId(d);
+        // console.log(id, values[id]);
+        var value = d.value = values[id];
         return isNaN(value)
           ? null
           : scale(value);

@@ -3551,6 +3551,10 @@ footer {
   padding-bottom: 3.125em;
   text-align: center; }
 
+.map-notes {
+  border-top: 1px solid #838383;
+  padding-bottom: 1.875em; }
+
 .guide-black {
   background-color: #040404;
   -webkit-font-smoothing: antialiased;

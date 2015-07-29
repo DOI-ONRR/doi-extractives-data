@@ -957,10 +957,10 @@ footer {
       font-weight: 200;
       line-height: 1;
 
-      &::before {
-        content: "\A";
-        white-space: pre;
-      }
+      // &::before {
+      //   content: "\A";
+      //   white-space: pre;
+      // }
     }
   }
 

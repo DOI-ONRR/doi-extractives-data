@@ -957,10 +957,10 @@ footer {
       font-weight: 200;
       line-height: 1;
 
-      &::before {
-        content: "\A";
-        white-space: pre;
-      }
+      // &::before {
+      //   content: "\A";
+      //   white-space: pre;
+      // }
     }
   }
 
@@ -1081,6 +1081,11 @@ footer {
   padding-top: $base-padding;
   padding-bottom: $base-padding-extra;
   text-align: center;
+}
+
+.map-notes {
+  border-top: $thin-border-size solid $dark-putty;
+  padding-bottom: $base-padding-large;
 }
 
 // Styleguide

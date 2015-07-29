@@ -3445,18 +3445,15 @@ footer {
     font-weight: 200;
     margin-bottom: 40px; }
     .map-data_types-stats ul li .headline {
-      display: block;
       font-size: 25px;
-      font-size: 2.5rem; }
+      font-size: 2.5rem;
+      display: block; }
     .map-data_types-stats ul li .subtitle {
       font-size: 9px;
       font-size: 0.9rem;
       color: #666666;
       font-weight: 200;
       line-height: 1; }
-      .map-data_types-stats ul li .subtitle::before {
-        content: "\A";
-        white-space: pre; }
   .map-data_types-stats h4 {
     color: #666666;
     font-weight: 200; }
@@ -3553,6 +3550,10 @@ footer {
   padding-top: 1.25em;
   padding-bottom: 3.125em;
   text-align: center; }
+
+.map-notes {
+  border-top: 1px solid #838383;
+  padding-bottom: 1.875em; }
 
 .guide-black {
   background-color: #040404;

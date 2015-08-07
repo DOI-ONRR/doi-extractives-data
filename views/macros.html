@@ -21,10 +21,10 @@
   </table>
 {% endmacro %}
 
-{% macro location_selector(locations=[], prefix='/locations/', id=null, value=null) %}
+{% macro location_selector(locations=[], prefix='/locations/', id=null, value=null, none_option=null) %}
   <select id="{{ id }}" onchange="window.location = '{{ prefix }}' + this.value"
     data-selected="{{ value }}">
-    <option value="">States and offshore areas</option>
+    {% if none_option %}<option value="">{{ none_option }}</option>{% endif %}
     <optgroup label="States">
       {% for state in locations.onshore %}
       <!-- {{ state|jsonify }} -->

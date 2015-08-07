@@ -484,8 +484,13 @@
 
   function evaluator(expression) {
     return new Function(
-      'd',
-      'with (d) { return (' + expression + '); }');
+      'd', [
+        'with (d) { try { ',
+          'return (' + expression + '); ',
+        '} catch (error) { ',
+          'return null; ',
+        '} }'
+      ].join(''));
   }
 
 })(this);

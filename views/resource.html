@@ -23,7 +23,14 @@
       <form>
         <!-- region "{{ region|jsonify }}" -->
         <label>
-          {{ location_selector(locations=locations, prefix=location_prefix_url, value=region.id) }}
+          {{
+            location_selector(
+              locations=locations,
+              prefix=location_prefix_url,
+              value=region.id,
+              none_option='All states and offshore areas'
+            )
+          }}
         </label>
       </form>
 

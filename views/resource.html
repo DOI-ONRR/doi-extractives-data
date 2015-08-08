@@ -184,8 +184,12 @@
 
   var params = {
     resource: '{{ request.params.resource }}',
-    color: '{{ resources.colors[request.params.resource].primary }}'
+    color: '{{ resources.colors[request.params.resource].primary }}' || '#000'
   };
+
+  var filter = (params.resource && params.resource !== 'all')
+    ? function(d) { return d.Resource === params.resource; }
+    : null;
 
   var map = d3.select('#region-map');
   var slider = d3.select('#year-slider')
@@ -234,10 +238,10 @@
       return;
     }
 
-    var resource = params.resource;
-    var values = data.filter(function(d) {
-      return d.Resource === resource;
-    });
+    var values = filter
+      ? data.filter(filter)
+      : data;
+    // console.log('values:', values);
 
     valuesByYear = d3.nest()
       .key(dl.accessor('Year'))
@@ -269,7 +273,7 @@
     d3.select('#total-revenue')
       .text(formatDollars(total));
 
-    console.log('max:', max, numbers);
+    // console.log('max:', max, numbers);
 
     var scale = colorScale
       .domain([0, max]);

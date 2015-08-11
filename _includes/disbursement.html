@@ -5,14 +5,14 @@
     <div class="intro">
       <p>The answer is: <strong>it depends</strong></p>
       <p>Laws treat revenues from offshore natural resources and onshore natural resources differently. There are set percentages and amounts from each that go certain places every year.</p>
-      <p>Laws also treat different commodities differently. For example, for oil and gas, Federal and local governments get 
+      <p>Laws also treat different commodities differently. For example, for oil and gas, Federal and local governments get
       {% for term in site.data.terms %} {% if term.term == "royalty" %}
         <span class="term-tooltip" title="{{ term.definition }}" tabindex="0" role="tooltip">royalties<i class="fa fa-question"></i></span>
-      {% endif %} {% endfor %} 
+      {% endif %} {% endfor %}
       that are a percentage of sales. For many minerals such as gold, copper and silver, the governments get mining claim fees but no ongoing royalties.</p>
     </div>
   </div>
-  
+
 </section>
 
 <section class="section disburse">
@@ -40,7 +40,7 @@
         <div class="icons"></div>
       </div>
       <p class="bubbles-instructions">
-        Hover over a circle to see revenue totals.<br/> 
+        Hover over a circle to see revenue totals.<br/>
         Click a circle for more information.
       </p>
     </div>
@@ -75,13 +75,11 @@
       <ul>
         <li>
           {% for term in site.data.terms %} {% if term.term == "fiscal year" %}
-            <span class="term-tooltip" title="{{ term.definition }}" tabindex="0" role="tooltip">Fiscal year<i class="fa fa-question"></i></span>  
+            <span class="term-tooltip" title="{{ term.definition }}" tabindex="0" role="tooltip">Fiscal year<i class="fa fa-question"></i></span>
           {% endif %} {% endfor %}
-          2012 and 2013 data.</li>
+          2012 and 2013 data. <a href="{{site:baseurl}}/static/data/2013_2012_disbursements.xlsx">Download the data (xlsx).</a></li>
       </ul>
     </div>
   </div>
 
 </section>
-
-

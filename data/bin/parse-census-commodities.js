@@ -68,15 +68,23 @@ async.waterfall([
       return k.match(/\d+$/)[0];
     });
 
-    rows.forEach(function(d) {
-      rename(d, 'change', 'Change');
+    var result = [];
+
+    rows.forEach(function(d, i) {
+      if (i === 0) console.warn(d, years);
       years.forEach(function(y) {
-        rename(d, 'val' + y, y + ' Value');
-        rename(d, 'share' + y.substr(-2), y + ' Share');
+        result.push({
+          State:  d.State,
+          Commodity: d.Commodity,
+          HS6:    d.HS6,
+          Year:   y,
+          Value:  d['val' + y],
+          Share:  d['share' + y.substr(-2)]
+        });
       });
     });
 
-    done(null, rows);
+    done(null, result);
   }
 ], function(error, rows) {
   if (error) return console.error('error:', error);

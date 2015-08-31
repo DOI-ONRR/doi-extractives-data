@@ -23,7 +23,7 @@ var tito = require('tito').formats;
 var thru = require('through2').obj;
 var statesByName = {};
 
-var statesFilename = args[0] || options.states;
+var statesFilename = options.states;
 if (!statesFilename) {
   return console.error('You must provide --states or a filename as a positional argument');
 }
@@ -39,7 +39,7 @@ fs.createReadStream(statesFilename)
 
 function read() {
   var field = options.field;
-  process.stdin
+  fs.createReadStream(args[0] || '/dev/stdin')
     .pipe(tito.createReadStream(options['if']))
     .pipe(thru(function(d, enc, next) {
       d[field] = statesByName[d[field]].abbr;

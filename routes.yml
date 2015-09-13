@@ -1,6 +1,9 @@
 /:
   view: index
 
+/about:
+  view: about
+
 /communities:
   view: comm-home
 /communities/tar:

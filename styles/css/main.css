@@ -2565,6 +2565,10 @@ svg[is="eiti-map"] path.feature.zoomed {
   height: px;
   overflow: hidden; }
 
+.u-img {
+  border-radius: 5px;
+  width: 100%; }
+
 ul.bullet {
   list-style-type: disc;
   margin-bottom: 1em;
@@ -2881,7 +2885,7 @@ footer {
   background-color: #ffffff;
   padding-top: 1.875em;
   padding-bottom: 1.25em; }
-  .communities-intro img {
+  .communities-intro .comm-intro-img {
     height: 310px; }
   .communities-intro h1 {
     font-size: 19px;

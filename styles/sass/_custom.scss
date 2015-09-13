@@ -18,6 +18,11 @@
   overflow: hidden;
 }
 
+.u-img {
+  border-radius: $base-border-radius;
+  width: 100%;
+}
+
 ul.bullet {
   list-style-type: disc;
   margin-bottom: 1em;
@@ -302,7 +307,7 @@ footer {
   padding-top: $base-padding-large;
   padding-bottom: $base-padding;
 
-  img {
+  .comm-intro-img {
     height: 310px;
   }
 

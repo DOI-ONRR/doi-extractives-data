@@ -161,27 +161,37 @@ footer {
   padding-top: $base-padding-extra;
   padding-bottom: $base-padding-extra;
 
-  img {
-    width: 150px;
-  }
-
-  h1 {
-    @include font-size($h4);
+  h3 {
     color: $white;
     padding-bottom: $base-padding-lite;
   }
 
+  a {
+    color: $white;
+    text-decoration: underline;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+
   p {
     color: $white;
+    
     &.footer-intro {
       @include font-size($h1);
       line-height: 1.2;
       margin-bottom: 1em;
     }
 
-    &:nth-of-type(2) {
+    + p {
       @include font-size($h3);
       margin-bottom: $base-padding-extra;
+    }
+
+    + h3 {
+      padding-top: $base-padding-large;
     }
   }
 

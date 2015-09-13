@@ -2746,13 +2746,15 @@ footer {
   color: #ffffff;
   padding-top: 3.125em;
   padding-bottom: 3.125em; }
-  footer img {
-    width: 150px; }
-  footer h1 {
-    font-size: 10px;
-    font-size: 1rem;
+  footer h3 {
     color: #ffffff;
     padding-bottom: 0.41667em; }
+  footer a {
+    color: #ffffff;
+    text-decoration: underline; }
+    footer a:hover,
+    footer a:focus {
+      text-decoration: none; }
   footer p {
     color: #ffffff; }
     footer p.footer-intro {
@@ -2760,10 +2762,12 @@ footer {
       font-size: 1.9rem;
       line-height: 1.2;
       margin-bottom: 1em; }
-    footer p:nth-of-type(2) {
+    footer p + p {
       font-size: 11.25px;
       font-size: 1.125rem;
       margin-bottom: 3.125em; }
+    footer p + h3 {
+      padding-top: 1.875em; }
   footer .footer-col-left {
     float: left;
     display: block;

@@ -3659,4 +3659,29 @@ a[aria-label="Back to content"] {
   a[aria-label="Back to content"]:focus {
     text-decoration: underline; }
 
+.bureaus > article {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  .bureaus > article:last-child {
+    margin-right: 0; }
+  .bureaus > article > div:first-of-type {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%; }
+    .bureaus > article > div:first-of-type:last-child {
+      margin-right: 0; }
+  .bureaus > article > div:last-of-type {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 74.41059%; }
+    .bureaus > article > div:last-of-type:last-child {
+      margin-right: 0; }
+  .bureaus > article > div img {
+    padding-top: 1.25em;
+    max-width: 100px; }
+
 /*# sourceMappingURL=main.css.map */

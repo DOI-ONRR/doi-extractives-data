@@ -15,7 +15,7 @@
   top: auto;
   width: 1px;
   height: px;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 ul.bullet {
@@ -78,7 +78,7 @@ strong {
 
 a {
 
-  .expand, 
+  .expand,
   .more {
     @include font-size(0.75);
     text-transform: uppercase;
@@ -135,11 +135,11 @@ header {
   }
 
   div:first-of-type {
-    @include span-columns(6);
+    @include span-columns(5);
   }
 
   nav {
-    @include span-columns(6);
+    @include span-columns(7);
     @include omega();
 
     ul li {
@@ -184,7 +184,7 @@ footer {
       margin-bottom: $base-padding-extra;
     }
   }
-  
+
   .footer-col-left {
     @include span-columns(8);
   }
@@ -225,7 +225,7 @@ footer {
     width: 93%;
   }
 
-  ul {  
+  ul {
   display: inline-block;
   margin-bottom: $base-padding-lite;
 
@@ -650,7 +650,7 @@ footer {
     color: $light-black;
   }
 
-  ul { 
+  ul {
     position: absolute;
     left: 50%;
     margin-right: -50%;
@@ -889,7 +889,7 @@ footer {
     }
 
     .revenues-section-involved-participate {
-      
+
       margin-bottom: 100px;
       > div:first-of-type {
         @include span-columns(8 of 12);
@@ -1162,7 +1162,7 @@ a[aria-describedby="footnote-label"] {
   outline: none; // 2
   text-decoration: none; // 2
 }
- 
+
  // Actual numbered references
  // 1. Display the current state of the counter (e.g. `[1]`)
  // 2. Align text as superscript
@@ -1179,7 +1179,7 @@ a[aria-describedby="footnote-label"]:after {
   margin-left: 2px; // 4
   vertical-align: super; // 2
 }
- 
+
 // Resetting the default focused styles on the number
 
 a[aria-describedby="footnote-label"]:focus:after,
@@ -1197,4 +1197,3 @@ a[aria-label="Back to content"] {
     text-decoration: underline;
   }
 }
-

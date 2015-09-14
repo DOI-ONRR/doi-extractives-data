@@ -60,6 +60,9 @@ app.use('/css/fonts', express.static(__dirname + '/styles/css/fonts'));
 app.use('/data', express.static(__dirname + '/data/output'));
 app.use('/data/commodities.json', express.static(__dirname + '/data/commodities.json'));
 
+// serve /docs out of /static/docs
+app.use('/docs', express.static(__dirname + '/static/docs'));
+
 // get the data decorator
 var data = require('./data/decorator');
 

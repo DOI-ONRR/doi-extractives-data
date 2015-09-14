@@ -334,11 +334,16 @@ footer {
 .communities-right {
   @include span-columns(5);
 }
-
+.communities-sticky-nav{
+    position: absolute;
+    left: percentage(7 / 12);
+    padding-left: $base-padding-extra;
+    top: 0;
+}
 .communities-content {
   padding-top: $base-padding;
   padding-bottom: $base-padding-extra;
-
+  position: relative;
   h2 {
     @extend .article_heading;
     padding-bottom: $base-padding;

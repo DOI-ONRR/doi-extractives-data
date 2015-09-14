@@ -1,5 +1,7 @@
 /:
   view: index
+/reports:
+  view: reports
 
 /about:
   view: about

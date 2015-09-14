@@ -2914,9 +2914,16 @@ footer {
   .communities-right:last-child {
     margin-right: 0; }
 
+.communities-sticky-nav {
+  position: absolute;
+  left: 58.33333%;
+  padding-left: 3.125em;
+  top: 0; }
+
 .communities-content {
   padding-top: 1.25em;
-  padding-bottom: 3.125em; }
+  padding-bottom: 3.125em;
+  position: relative; }
   .communities-content h2 {
     padding-bottom: 1.25em; }
     .communities-content h2 a {

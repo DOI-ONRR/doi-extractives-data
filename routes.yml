@@ -1,5 +1,7 @@
 /:
   view: index
+/reports:
+  view: reports
 
 /communities:
   view: comm-home

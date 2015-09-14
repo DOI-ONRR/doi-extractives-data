@@ -1,5 +1,12 @@
 /:
   view: index
+/about:
+  view: about
+/data:
+  view: data
+/summary:
+  view: summary
+
 
 /communities:
   view: comm-home

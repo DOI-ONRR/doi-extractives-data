@@ -151,6 +151,7 @@
 {% block script %}
 <script>
   (function() {
+
     var scrollLeft, scrollTop;
     var findScrollPositions = function(){
       scrollLeft = (window.pageXOffset !== undefined) ? window.pageXOffset : (document.documentElement || document.body.parentNode || document.body).scrollLeft;
@@ -161,7 +162,6 @@
     var setStickyPos = function () {
       var stickyNav = document.getElementsByClassName("communities-sticky-nav")[0],
           ccOffsetTop = communitiesContent.offsetTop;
-
       // scrollDifference is the difference in height between the location of the top of the window and the top of the 'communities-content' div
       var scrollDifference = scrollTop - ccOffsetTop;
       

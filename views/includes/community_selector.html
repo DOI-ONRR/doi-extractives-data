@@ -1,4 +1,3 @@
-
   <select id="" onchange="if (this.value) window.location = '/communities/' + this.value">
     <option value=""></option>
     <!-- <optgroup label="Iron">
@@ -9,15 +8,15 @@
         {% if (value == 'communities/' + 'alpha') %}selected{% endif %}
         value="alpha">Alpha, Alpha</option>
     </optgroup> -->
+
     <optgroup label="Natural Gas">
       <option
-        {% if (value == 'communities/' + 'tar') %}selected{% endif %}
+        {% if (request.url == '/communities/' + 'tar') %}selected{% endif %}
         value="tar">Tarrant &amp; Johnson Counties, Texas</option>
     </optgroup>
     <optgroup label="Oil">
       <option
-        {% if (value == 'communities/' + 'nor') %}selected{% endif %}
+        {% if (request.url == '/communities/' + 'nor') %}selected{% endif %}
         value="nor">North Slope Borough, Alaska</option>
     </optgroup>
   </select>
-

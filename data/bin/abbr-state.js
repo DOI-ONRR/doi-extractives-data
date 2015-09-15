@@ -42,8 +42,15 @@ function read() {
   fs.createReadStream(args[0] || '/dev/stdin')
     .pipe(tito.createReadStream(options['if']))
     .pipe(thru(function(d, enc, next) {
-      d[field] = statesByName[d[field]].abbr;
-      next(null, d);
+      var name = d[field];
+      var state = statesByName[name];
+      if (state) {
+        d[field] = state.abbr;
+        next(null, d);
+      } else {
+        console.warn('no such state:', name);
+        next();
+      }
     }))
     .pipe(tito.createWriteStream(options['of']))
     .pipe(process.stdout);

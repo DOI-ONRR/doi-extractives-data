@@ -103,11 +103,11 @@ permalink: /communities/
       <nav>
 
         <ul>
-          <li class="communities-nav-item active" id="intro"><a name="intro" href="#intro">Introduction</a></li>
-          <li class="communities-nav-item" id="reven"><a href="#reven">Revenue Sustainability</a></li>
-          <li class="communities-nav-item" id="county-rev"><a href="#county-rev">Revenues</a></li>
-          <li class="communities-nav-item" id="county-cos"><a href="#county-cos">Costs</a></li>
-          <li class="communities-nav-item" id="data"><a href="#data">Our Data</a></li>
+          <li class="communities-nav-item active"><a name="intro" href="#intro">Introduction</a></li>
+          <li class="communities-nav-item"><a href="#reven">Revenue Sustainability</a></li>
+          <li class="communities-nav-item"><a href="#county-rev">Revenues</a></li>
+          <li class="communities-nav-item"><a href="#county-cos">Costs</a></li>
+          <li class="communities-nav-item"><a href="#data">Our Data</a></li>
         </ul>
 
       </nav>

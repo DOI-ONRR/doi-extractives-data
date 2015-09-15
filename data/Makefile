@@ -47,6 +47,14 @@ FILES = \
 
 all: $(FILES)
 
+revenue: $(REVENUE_FILES)
+
+production: $(PRODUCTION_FILES)
+
+exports: $(EXPORT_FILES)
+
+gdp: $(GDP_FILES)
+
 # national revenues by commodity and revenue type
 output/national/revenues.tsv: output/state/revenues.tsv output/offshore/revenues.tsv
 	mkdir -p $(dir $@)
@@ -282,6 +290,7 @@ distclean: clean
 	cd input/geo/offshore && make distclean
 
 .PHONY: \
+	revenue production exports gdp \
 	counties-by-state \
 	county-revenues-by-state \
 	county-resource-revenues-by-state \

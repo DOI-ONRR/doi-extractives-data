@@ -111,7 +111,7 @@
 		"../sass/base/_styleguide.scss",
 		"../sass/base/_typography.scss",
 		"../sass/components/_components.scss",
-		"../sass/fonts/lato/lato.css",
+		"../sass/fonts/lato/_lato.scss",
 		"../sass/font-awesome/font-awesome/_variables.scss",
 		"../sass/font-awesome/font-awesome/_mixins.scss",
 		"../sass/font-awesome/font-awesome/_path.scss",

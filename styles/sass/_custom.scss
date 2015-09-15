@@ -18,6 +18,11 @@
   overflow: hidden;
 }
 
+.u-img {
+  border-radius: $base-border-radius;
+  width: 100%;
+}
+
 ul.bullet {
   list-style-type: disc;
   margin-bottom: 1em;
@@ -302,7 +307,7 @@ footer {
   padding-top: $base-padding-large;
   padding-bottom: $base-padding;
 
-  img {
+  .comm-intro-img {
     height: 310px;
   }
 
@@ -1200,5 +1205,30 @@ a[aria-label="Back to content"] {
   &:hover,
   &:focus {
     text-decoration: underline;
+  }
+}
+
+
+// About
+//============================================
+
+.bureaus {
+  > article {
+    @include span-columns(12);
+
+    > div {
+      &:first-of-type {
+        @include span-columns(3 of 12);
+      }
+
+      &:last-of-type {
+        @include span-columns(9 of 12);
+      }
+
+      img {
+        padding-top: $base-padding;
+        max-width: 100px;
+      }
+    }
   }
 }

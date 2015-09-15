@@ -10,12 +10,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2004	CA	Fresno	06019	NGL	Gas Plant Products	Royalties	8204.93
 2004	CA	Fresno	06019	Oil	Oil	Royalties	122746.65
 2004	CA	Glenn	06021	Gas	Unprocessed (Wet) Gas	Royalties	4094.69
-2004	CA	Imperial	06025	Geothermal		Other Royalties	7584696.97
-2004	CA	Imperial	06025	Geothermal		Rents	8066
-2004	CA	Imperial	06025	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	31447
-2004	CA	Imperial	06025	Geothermal	Geothermal - Electrical Generation, Other	Royalties	992.16
-2004	CA	Inyo	06027	Geothermal		Rents	4862
-2004	CA	Inyo	06027	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	3546438.88
 2004	CA	Kern	06029	Oil & Gas		Bonus	66600.5
 2004	CA	Kern	06029	Oil & Gas		Other Revenues	6735.82
 2004	CA	Kern	06029	Oil & Gas		Other Royalties	4407.6
@@ -32,8 +26,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2004	CA	Kings	06031	Gas	Processed (Residue) Gas	Royalties	65595.09
 2004	CA	Kings	06031	NGL	Gas Plant Products	Royalties	10229.69
 2004	CA	Kings	06031	Oil	Oil	Royalties	82145.15
-2004	CA	Lake	06033	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds	Royalties	2689982.36
-2004	CA	Lassen	06035	Geothermal	Geothermal - Direct Utilization, Millions of BTUs	Royalties	39865.28
 2004	CA	Los Angeles	06037	Oil & Gas		Other Revenues	20125.43
 2004	CA	Los Angeles	06037	Oil & Gas		Rents	21
 2004	CA	Los Angeles	06037	Gas	Gas Lost - Flared or Vented	Royalties	5329.59
@@ -42,23 +34,11 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2004	CA	Los Angeles	06037	Oil	Condensate	Royalties	70646.03
 2004	CA	Los Angeles	06037	Oil	Oil	Royalties	1761039.64
 2004	CA	Merced	06047	Oil & Gas		Rents	1444.5
-2004	CA	Mono	06051	Geothermal		Other Revenues	8320
-2004	CA	Mono	06051	Geothermal		Other Royalties	-100000
-2004	CA	Mono	06051	Geothermal		Rents	156334
-2004	CA	Mono	06051	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	186978.74
 2004	CA	Monterey	06053	Oil & Gas		Rents	13399.51
 2004	CA	Monterey	06053	Oil	Oil	Royalties	7516.59
 2004	CA	San Benito	06069	Oil & Gas		Other Revenues	40.3
 2004	CA	San Benito	06069	Oil & Gas		Rents	31459.65
 2004	CA	San Benito	06069	Oil	Oil	Royalties	876.24
-2004	CA	San Bernardn	06071	Anhydrous Sodium Sulfate	Anhydrous Sodium Sulfate	Royalties	-18463.04
-2004	CA	San Bernardn	06071	Borax-Anhydrous	Borax-Anhydrous	Royalties	31693.82
-2004	CA	San Bernardn	06071	Borax-Decahydrate	Borax-Decahydrate	Royalties	635.38
-2004	CA	San Bernardn	06071	Borax-Pentahydrate	Borax-Pentahydrate	Royalties	-3086.3
-2004	CA	San Bernardn	06071	Boric Acid	Boric Acid	Royalties	-16152.59
-2004	CA	San Bernardn	06071	Boric Oxide	Boric Oxide	Royalties	-328.08
-2004	CA	San Bernardn	06071	Salt-Waste	Salt-Waste	Royalties	-52.69
-2004	CA	San Bernardn	06071	Soda Ash-Granular	Soda Ash-Granular	Royalties	260287.46
 2004	CA	San Joaquin	06077	Oil & Gas		Rents	140
 2004	CA	San Joaquin	06077	Gas	Unprocessed (Wet) Gas	Royalties	2675.8
 2004	CA	San Luis Ob.	06079	Oil & Gas		Bonus	240
@@ -70,10 +50,8 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2004	CA	Santa Barbar	06083	Gas	Processed (Residue) Gas	Royalties	175231.44
 2004	CA	Santa Barbar	06083	NGL	Gas Plant Products	Royalties	543.04
 2004	CA	Santa Barbar	06083	Oil	Oil	Royalties	307299.77
-2004	CA	Siskiyou	06093	Geothermal		Rents	58553
 2004	CA	Solano	06095	Gas	Unprocessed (Wet) Gas	Royalties	2537068.52
 2004	CA	Solano	06095	Oil	Condensate	Royalties	8286.97
-2004	CA	Sonoma	06097	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds	Royalties	3366259.11
 2004	CA	Stanislaus	06099	Oil & Gas		Rents	158
 2004	CA	Sutter	06101	Oil & Gas		Rents	80
 2004	CA	Tulare	06107	Oil & Gas		Rents	484.5
@@ -87,6 +65,31 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2004	CA	Ventura	06111	Oil	Condensate	Royalties	2033.36
 2004	CA	Ventura	06111	Oil	Oil	Royalties	730299.01
 2004	CA	Yolo	06113	Oil & Gas		Rents	966
+2004	CA		06	Geothermal		Other Revenues	8320
+2004	CA		06	Potassium		Other Revenues	3996
+2004	CA		06	Sodium		Other Revenues	72.39
+2004	CA		06	Geothermal		Other Royalties	7484696.97
+2004	CA		06	Geothermal		Rents	227815
+2004	CA		06	Geothermal	Geothermal - Direct Utilization, Millions of BTUs	Royalties	39865.28
+2004	CA		06	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	3764864.62
+2004	CA		06	Geothermal	Geothermal - Electrical Generation, Other	Royalties	992.16
+2004	CA		06	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds	Royalties	6056241.47
+2004	CA		06	Anhydrous Sodium Sulfate	Anhydrous Sodium Sulfate	Royalties	210401.24
+2004	CA		06	Anhydrous Sodium Sulfate	Anhydrous Sodium Sulfate	Royalties	-18463.04
+2004	CA		06	Borax-Anhydrous	Borax-Anhydrous	Royalties	31693.82
+2004	CA		06	Borax-Anhydrous	Borax-Anhydrous	Royalties	-713.29
+2004	CA		06	Borax-Decahydrate	Borax-Decahydrate	Royalties	109121.44
+2004	CA		06	Borax-Decahydrate	Borax-Decahydrate	Royalties	635.38
+2004	CA		06	Borax-Pentahydrate	Borax-Pentahydrate	Royalties	103624.51
+2004	CA		06	Borax-Pentahydrate	Borax-Pentahydrate	Royalties	-3086.3
+2004	CA		06	Boric Acid	Boric Acid	Royalties	317097.54
+2004	CA		06	Boric Acid	Boric Acid	Royalties	-16152.59
+2004	CA		06	Boric Oxide	Boric Oxide	Royalties	-328.08
+2004	CA		06	Salt	Salt	Royalties	39989.97
+2004	CA		06	Salt-Waste	Salt-Waste	Royalties	-52.69
+2004	CA		06	Soda Ash	Soda Ash	Royalties	2421272.34
+2004	CA		06	Soda Ash-Granular	Soda Ash-Granular	Royalties	260287.46
+2004	CA		06	Sodium Bi-Carbonate	Sodium Bi-Carbonate	Royalties	37810.73
 2005	CA	Contra Costa	06013	Oil & Gas		Other Royalties	1800
 2005	CA	Contra Costa	06013	Gas	Unprocessed (Wet) Gas	Royalties	11629.39
 2005	CA	Contra Costa	06013	Oil	Condensate	Royalties	161.51
@@ -101,16 +104,10 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2005	CA	Fresno	06019	Oil	Oil	Royalties	163668.79
 2005	CA	Glenn	06021	Oil & Gas		Other Royalties	185
 2005	CA	Glenn	06021	Gas	Unprocessed (Wet) Gas	Royalties	5695.92
-2005	CA	Imperial	06025	Geothermal		Rents	9808
-2005	CA	Imperial	06025	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	298307
-2005	CA	Imperial	06025	Geothermal	Geothermal - Electrical Generation, Other	Royalties	835.92
-2005	CA	Inyo	06027	Geothermal		Rents	14306.24
-2005	CA	Inyo	06027	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	-223827.03
 2005	CA	Kern	06029	Oil & Gas		Bonus	7924.25
 2005	CA	Kern	06029	Oil & Gas		Other Revenues	12099.62
 2005	CA	Kern	06029	Oil & Gas		Other Royalties	-55300
 2005	CA	Kern	06029	Oil & Gas		Rents	221920.82
-2005	CA	Kern	06029	Sodium		Rents	-3817
 2005	CA	Kern	06029	Gas	Gas Lost - Flared or Vented	Royalties	3900
 2005	CA	Kern	06029	Gas	Processed (Residue) Gas	Royalties	239167.28
 2005	CA	Kern	06029	Gas	Unprocessed (Wet) Gas	Royalties	609636.53
@@ -125,8 +122,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2005	CA	Kings	06031	Gas	Processed (Residue) Gas	Royalties	107341.23
 2005	CA	Kings	06031	NGL	Gas Plant Products	Royalties	13620.95
 2005	CA	Kings	06031	Oil	Oil	Royalties	149612.91
-2005	CA	Lake	06033	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds	Royalties	3145789.76
-2005	CA	Lassen	06035	Geothermal	Geothermal - Direct Utilization, Millions of BTUs	Royalties	64200.46
 2005	CA	Los Angeles	06037	Oil & Gas		Other Revenues	120
 2005	CA	Los Angeles	06037	Oil & Gas		Rents	2171
 2005	CA	Los Angeles	06037	Gas	Gas Lost - Flared or Vented	Royalties	15345.46
@@ -135,23 +130,10 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2005	CA	Los Angeles	06037	Oil	Condensate	Royalties	69621.38
 2005	CA	Los Angeles	06037	Oil	Oil	Royalties	1903981.45
 2005	CA	Merced	06047	Oil & Gas		Rents	1444.5
-2005	CA	Mono	06051	Geothermal		Other Revenues	1600
-2005	CA	Mono	06051	Geothermal		Rents	16966
-2005	CA	Mono	06051	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	94198.39
 2005	CA	Monterey	06053	Oil & Gas		Rents	12930
 2005	CA	Monterey	06053	Oil	Oil	Royalties	9497.31
 2005	CA	San Benito	06069	Oil & Gas		Rents	25267.65
 2005	CA	San Benito	06069	Oil	Oil	Royalties	1600.3
-2005	CA	San Bernardn	06071	Sodium		Other Revenues	34456.54
-2005	CA	San Bernardn	06071	Sodium		Rents	-4269.39
-2005	CA	San Bernardn	06071	Anhydrous Sodium Sulfate	Anhydrous Sodium Sulfate	Royalties	-36675.32
-2005	CA	San Bernardn	06071	Borax-Anhydrous	Borax-Anhydrous	Royalties	-22060.76
-2005	CA	San Bernardn	06071	Borax-Decahydrate	Borax-Decahydrate	Royalties	224.12
-2005	CA	San Bernardn	06071	Borax-Pentahydrate	Borax-Pentahydrate	Royalties	-857.77
-2005	CA	San Bernardn	06071	Boric Acid	Boric Acid	Royalties	7900.72
-2005	CA	San Bernardn	06071	Salt-Waste	Salt-Waste	Royalties	28436.93
-2005	CA	San Bernardn	06071	Soda Ash-Granular	Soda Ash-Granular	Royalties	-726947.18
-2005	CA	San Bernardn	06071	Sodium Bi-Carbonate	Sodium Bi-Carbonate	Royalties	-333.85
 2005	CA	San Joaquin	06077	Oil & Gas		Other Royalties	70
 2005	CA	San Joaquin	06077	Gas	Unprocessed (Wet) Gas	Royalties	3464.11
 2005	CA	San Luis Ob.	06079	Oil & Gas		Other Revenues	1235
@@ -164,12 +146,9 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2005	CA	Santa Barbar	06083	Gas	Unprocessed (Wet) Gas	Royalties	81864.91
 2005	CA	Santa Barbar	06083	NGL	Gas Plant Products	Royalties	277.23
 2005	CA	Santa Barbar	06083	Oil	Oil	Royalties	381027.94
-2005	CA	Sierra	06091	Hardrock		Rents	20
-2005	CA	Siskiyou	06093	Geothermal		Rents	61997
 2005	CA	Solano	06095	Oil & Gas		Rents	40
 2005	CA	Solano	06095	Gas	Unprocessed (Wet) Gas	Royalties	2533858.82
 2005	CA	Solano	06095	Oil	Condensate	Royalties	16532.77
-2005	CA	Sonoma	06097	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds	Royalties	4012844.08
 2005	CA	Sutter	06101	Oil & Gas		Rents	80
 2005	CA	Ventura	06111	Oil & Gas		Other Revenues	537
 2005	CA	Ventura	06111	Oil & Gas		Other Royalties	77525
@@ -181,6 +160,31 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2005	CA	Ventura	06111	Oil	Condensate	Royalties	2165.03
 2005	CA	Ventura	06111	Oil	Oil	Royalties	957244.64
 2005	CA	Yolo	06113	Oil & Gas		Rents	1917
+2005	CA		06	Geothermal		Other Revenues	1600
+2005	CA		06	Sodium		Other Revenues	34456.54
+2005	CA		06	Geothermal		Rents	103077.24
+2005	CA		06	Hardrock		Rents	20
+2005	CA		06	Sodium		Rents	-8086.39
+2005	CA		06	Geothermal	Geothermal - Direct Utilization, Millions of BTUs	Royalties	64200.46
+2005	CA		06	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	168678.36
+2005	CA		06	Geothermal	Geothermal - Electrical Generation, Other	Royalties	835.92
+2005	CA		06	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds	Royalties	7158633.84
+2005	CA		06	Anhydrous Sodium Sulfate	Anhydrous Sodium Sulfate	Royalties	337723.99
+2005	CA		06	Anhydrous Sodium Sulfate	Anhydrous Sodium Sulfate	Royalties	-36675.32
+2005	CA		06	Borax-Anhydrous	Borax-Anhydrous	Royalties	23602.57
+2005	CA		06	Borax-Anhydrous	Borax-Anhydrous	Royalties	-22060.76
+2005	CA		06	Borax-Decahydrate	Borax-Decahydrate	Royalties	103037.41
+2005	CA		06	Borax-Decahydrate	Borax-Decahydrate	Royalties	224.12
+2005	CA		06	Borax-Pentahydrate	Borax-Pentahydrate	Royalties	151645.46
+2005	CA		06	Borax-Pentahydrate	Borax-Pentahydrate	Royalties	-857.77
+2005	CA		06	Boric Acid	Boric Acid	Royalties	328102.64
+2005	CA		06	Boric Acid	Boric Acid	Royalties	7900.72
+2005	CA		06	Salt	Salt	Royalties	61912.48
+2005	CA		06	Salt-Waste	Salt-Waste	Royalties	28436.93
+2005	CA		06	Soda Ash	Soda Ash	Royalties	3228230.52
+2005	CA		06	Soda Ash-Granular	Soda Ash-Granular	Royalties	-726947.18
+2005	CA		06	Sodium Bi-Carbonate	Sodium Bi-Carbonate	Royalties	47878.8
+2005	CA		06	Sodium Bi-Carbonate	Sodium Bi-Carbonate	Royalties	-333.85
 2006	CA	Contra Costa	06013	Gas	Unprocessed (Wet) Gas	Royalties	11709.71
 2006	CA	Contra Costa	06013	Oil	Condensate	Royalties	127.02
 2006	CA	Fresno	06019	Oil & Gas		Bonus	23399.98
@@ -193,11 +197,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2006	CA	Fresno	06019	Oil	Oil	Royalties	259453.19
 2006	CA	Glenn	06021	Oil & Gas		Other Royalties	400
 2006	CA	Glenn	06021	Gas	Unprocessed (Wet) Gas	Royalties	4752.59
-2006	CA	Imperial	06025	Geothermal		Rents	8608
-2006	CA	Imperial	06025	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	65610
-2006	CA	Imperial	06025	Geothermal	Geothermal - Electrical Generation, Other	Royalties	819.62
-2006	CA	Inyo	06027	Geothermal		Other Royalties	-125000
-2006	CA	Inyo	06027	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	2572245.41
 2006	CA	Kern	06029	Oil & Gas		Bonus	2083681.25
 2006	CA	Kern	06029	Oil & Gas		Other Revenues	6534.42
 2006	CA	Kern	06029	Oil & Gas		Other Royalties	206786.05
@@ -213,8 +212,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2006	CA	Kings	06031	Gas	Processed (Residue) Gas	Royalties	101984.36
 2006	CA	Kings	06031	NGL	Gas Plant Products	Royalties	15774.88
 2006	CA	Kings	06031	Oil	Oil	Royalties	264463.31
-2006	CA	Lake	06033	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds	Royalties	3677923
-2006	CA	Lassen	06035	Geothermal	Geothermal - Direct Utilization, Millions of BTUs	Royalties	60541.56
 2006	CA	Los Angeles	06037	Oil & Gas		Other Revenues	40120
 2006	CA	Los Angeles	06037	Oil & Gas		Rents	618
 2006	CA	Los Angeles	06037	Gas	Processed (Residue) Gas	Royalties	465.95
@@ -224,20 +221,11 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2006	CA	Los Angeles	06037	Oil	Oil	Royalties	3250118.52
 2006	CA	Merced	06047	Oil & Gas		Bonus	3200
 2006	CA	Merced	06047	Oil & Gas		Rents	1684.5
-2006	CA	Mono	06051	Geothermal		Other Revenues	1600
-2006	CA	Mono	06051	Geothermal		Rents	27802
-2006	CA	Mono	06051	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	158644.35
 2006	CA	Monterey	06053	Oil & Gas		Rents	11330
 2006	CA	Monterey	06053	Oil	Oil	Royalties	26216.48
 2006	CA	San Benito	06069	Oil & Gas		Bonus	126808.52
 2006	CA	San Benito	06069	Oil & Gas		Rents	111982.4
 2006	CA	San Benito	06069	Oil	Oil	Royalties	1395.76
-2006	CA	San Bernardn	06071	Sodium		Rents	9261
-2006	CA	San Bernardn	06071	Anhydrous Sodium Sulfate	Anhydrous Sodium Sulfate	Royalties	-11511.59
-2006	CA	San Bernardn	06071	Borax-Decahydrate	Borax-Decahydrate	Royalties	-594.73
-2006	CA	San Bernardn	06071	Borax-Pentahydrate	Borax-Pentahydrate	Royalties	-2918.56
-2006	CA	San Bernardn	06071	Boric Acid	Boric Acid	Royalties	-3081.24
-2006	CA	San Bernardn	06071	Soda Ash-Granular	Soda Ash-Granular	Royalties	-165563.39
 2006	CA	San Joaquin	06077	Oil & Gas		Other Royalties	650
 2006	CA	San Joaquin	06077	Gas	Unprocessed (Wet) Gas	Royalties	3300.33
 2006	CA	San Luis Ob.	06079	Oil & Gas		Other Revenues	1235
@@ -246,13 +234,10 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2006	CA	Santa Barbar	06083	Oil & Gas		Rents	10098.74
 2006	CA	Santa Barbar	06083	Gas	Unprocessed (Wet) Gas	Royalties	30359.95
 2006	CA	Santa Barbar	06083	Oil	Oil	Royalties	613163.62
-2006	CA	Siskiyou	06093	Geothermal		Rents	69729
 2006	CA	Solano	06095	Oil & Gas		Rents	40
 2006	CA	Solano	06095	Gas	Unprocessed (Wet) Gas	Royalties	2104417.62
 2006	CA	Solano	06095	Oil	Condensate	Royalties	16445.4
-2006	CA	Sonoma	06097	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds	Royalties	4851762.03
 2006	CA	Sutter	06101	Oil & Gas		Rents	80
-2006	CA	Trinity	06105	Sodium		Other Revenues	-240
 2006	CA	Ventura	06111	Oil & Gas		Other Revenues	537
 2006	CA	Ventura	06111	Oil & Gas		Other Royalties	-27872
 2006	CA	Ventura	06111	Oil & Gas		Rents	10655.94
@@ -264,6 +249,28 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2006	CA	Ventura	06111	Oil	Drip or Scrubber Condensate	Royalties	378.47
 2006	CA	Ventura	06111	Oil	Oil	Royalties	2165958.43
 2006	CA	Yolo	06113	Oil & Gas		Rents	966
+2006	CA		06	Geothermal		Other Revenues	1600
+2006	CA		06	Sodium		Other Revenues	-240
+2006	CA		06	Geothermal		Other Royalties	-125000
+2006	CA		06	Geothermal		Rents	106139
+2006	CA		06	Sodium		Rents	9261
+2006	CA		06	Geothermal	Geothermal - Direct Utilization, Millions of BTUs	Royalties	60541.56
+2006	CA		06	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	2796499.76
+2006	CA		06	Geothermal	Geothermal - Electrical Generation, Other	Royalties	819.62
+2006	CA		06	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds	Royalties	8529685.03
+2006	CA		06	Anhydrous Sodium Sulfate	Anhydrous Sodium Sulfate	Royalties	218485.72
+2006	CA		06	Anhydrous Sodium Sulfate	Anhydrous Sodium Sulfate	Royalties	-11511.59
+2006	CA		06	Borax-Anhydrous	Borax-Anhydrous	Royalties	-1956.91
+2006	CA		06	Borax-Decahydrate	Borax-Decahydrate	Royalties	32914.93
+2006	CA		06	Borax-Decahydrate	Borax-Decahydrate	Royalties	-594.73
+2006	CA		06	Borax-Pentahydrate	Borax-Pentahydrate	Royalties	26110.16
+2006	CA		06	Borax-Pentahydrate	Borax-Pentahydrate	Royalties	-2918.56
+2006	CA		06	Boric Acid	Boric Acid	Royalties	160421.29
+2006	CA		06	Boric Acid	Boric Acid	Royalties	-3081.24
+2006	CA		06	Salt	Salt	Royalties	70166.69
+2006	CA		06	Soda Ash	Soda Ash	Royalties	4510259.97
+2006	CA		06	Soda Ash-Granular	Soda Ash-Granular	Royalties	-165563.39
+2006	CA		06	Sodium Bi-Carbonate	Sodium Bi-Carbonate	Royalties	51139.24
 2007	CA	Colusa	06011	Oil & Gas		Bonus	1362
 2007	CA	Colusa	06011	Oil & Gas		Rents	1021.5
 2007	CA	Contra Costa	06013	Gas	Unprocessed (Wet) Gas	Royalties	8317.58
@@ -278,11 +285,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2007	CA	Fresno	06019	Oil	Condensate	Royalties	4896.02
 2007	CA	Fresno	06019	Oil	Oil	Royalties	210234.56
 2007	CA	Glenn	06021	Gas	Unprocessed (Wet) Gas	Royalties	23432.6
-2007	CA	Imperial	06025	Geothermal		Rents	12078
-2007	CA	Imperial	06025	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	7482
-2007	CA	Imperial	06025	Geothermal	Geothermal - Electrical Generation, Other	Royalties	898.43
-2007	CA	Inyo	06027	Geothermal		Rents	5077.36
-2007	CA	Inyo	06027	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	1068562.69
 2007	CA	Kern	06029	Oil & Gas		Other Revenues	6728
 2007	CA	Kern	06029	Oil & Gas		Other Royalties	71126.34
 2007	CA	Kern	06029	Oil & Gas		Rents	240241.78
@@ -299,28 +301,18 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2007	CA	Kings	06031	Gas	Unprocessed (Wet) Gas	Royalties	377.69
 2007	CA	Kings	06031	NGL	Gas Plant Products	Royalties	7129.15
 2007	CA	Kings	06031	Oil	Oil	Royalties	277021.28
-2007	CA	Lake	06033	Geothermal		Bonus	6846000
-2007	CA	Lake	06033	Geothermal		Rents	2302
-2007	CA	Lake	06033	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds	Royalties	3343884.87
-2007	CA	Lassen	06035	Geothermal	Geothermal - Direct Utilization, Millions of BTUs	Royalties	61940.84
 2007	CA	Los Angeles	06037	Oil & Gas		Other Revenues	110080
 2007	CA	Los Angeles	06037	Oil & Gas		Rents	1932
 2007	CA	Los Angeles	06037	Gas	Processed (Residue) Gas	Royalties	485.49
 2007	CA	Los Angeles	06037	Gas	Unprocessed (Wet) Gas	Royalties	13371.66
 2007	CA	Los Angeles	06037	Oil	Condensate	Royalties	91502.3
 2007	CA	Los Angeles	06037	Oil	Oil	Royalties	3213941.55
-2007	CA	Mendocino	06045	Geothermal		Bonus	420000.2
-2007	CA	Mendocino	06045	Geothermal		Rents	2000
 2007	CA	Merced	06047	Oil & Gas		Rents	1684.5
-2007	CA	Mono	06051	Geothermal		Other Revenues	-1000
-2007	CA	Mono	06051	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	63295.44
 2007	CA	Monterey	06053	Oil & Gas		Bonus	870
 2007	CA	Monterey	06053	Oil & Gas		Rents	11982.5
 2007	CA	Monterey	06053	Oil	Oil	Royalties	21316.29
 2007	CA	San Benito	06069	Oil & Gas		Rents	108716.4
 2007	CA	San Benito	06069	Oil	Oil	Royalties	1800.18
-2007	CA	San Bernardn	06071	Sodium		Bonus	120
-2007	CA	San Bernardn	06071	Sodium		Rents	240
 2007	CA	San Joaquin	06077	Gas	Unprocessed (Wet) Gas	Royalties	2912.37
 2007	CA	San Luis Ob.	06079	Oil & Gas		Other Revenues	1235
 2007	CA	San Luis Ob.	06079	Oil & Gas		Rents	52149.82
@@ -328,13 +320,9 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2007	CA	Santa Barbar	06083	Oil & Gas		Rents	5568.71
 2007	CA	Santa Barbar	06083	Gas	Unprocessed (Wet) Gas	Royalties	35270.25
 2007	CA	Santa Barbar	06083	Oil	Oil	Royalties	701280.3
-2007	CA	Siskiyou	06093	Geothermal		Rents	163251
 2007	CA	Solano	06095	Oil & Gas		Rents	40
 2007	CA	Solano	06095	Gas	Unprocessed (Wet) Gas	Royalties	1894264.24
 2007	CA	Solano	06095	Oil	Condensate	Royalties	24869.3
-2007	CA	Sonoma	06097	Geothermal		Bonus	740799.8
-2007	CA	Sonoma	06097	Geothermal		Rents	1120
-2007	CA	Sonoma	06097	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds	Royalties	4455393.12
 2007	CA	Ventura	06111	Oil & Gas		Other Revenues	537
 2007	CA	Ventura	06111	Oil & Gas		Rents	12939.97
 2007	CA	Ventura	06111	Gas	Gas Lost - Flared or Vented	Royalties	11571.5
@@ -346,6 +334,23 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2007	CA	Ventura	06111	Oil	Oil	Royalties	2448641.27
 2007	CA	Yolo	06113	Oil & Gas		Bonus	6030
 2007	CA	Yolo	06113	Oil & Gas		Rents	5488.5
+2007	CA		06	Geothermal		Bonus	8006800
+2007	CA		06	Sodium		Bonus	120
+2007	CA		06	Geothermal		Other Revenues	-1000
+2007	CA		06	Sodium		Other Revenues	360
+2007	CA		06	Geothermal		Rents	185828.36
+2007	CA		06	Sodium		Rents	240
+2007	CA		06	Geothermal	Geothermal - Direct Utilization, Millions of BTUs	Royalties	61940.84
+2007	CA		06	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	1139340.13
+2007	CA		06	Geothermal	Geothermal - Electrical Generation, Other	Royalties	898.43
+2007	CA		06	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds	Royalties	7799277.99
+2007	CA		06	Anhydrous Sodium Sulfate	Anhydrous Sodium Sulfate	Royalties	436978.36
+2007	CA		06	Borax-Decahydrate	Borax-Decahydrate	Royalties	64234.9
+2007	CA		06	Borax-Pentahydrate	Borax-Pentahydrate	Royalties	85558.19
+2007	CA		06	Boric Acid	Boric Acid	Royalties	270336.55
+2007	CA		06	Salt	Salt	Royalties	18576.81
+2007	CA		06	Soda Ash	Soda Ash	Royalties	931425.71
+2007	CA		06	Sodium Bi-Carbonate	Sodium Bi-Carbonate	Royalties	9380.18
 2008	CA	Colusa	06011	Oil & Gas		Rents	1021.5
 2008	CA	Contra Costa	06013	Gas	Unprocessed (Wet) Gas	Royalties	13079.7
 2008	CA	Contra Costa	06013	Oil	Condensate	Royalties	131.7
@@ -361,12 +366,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2008	CA	Fresno	06019	Oil	Oil	Royalties	144067.99
 2008	CA	Glenn	06021	Oil & Gas		Other Royalties	-558
 2008	CA	Glenn	06021	Gas	Unprocessed (Wet) Gas	Royalties	12305.86
-2008	CA	Imperial	06025	Geothermal		Rents	8776
-2008	CA	Imperial	06025	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	595535.58
-2008	CA	Imperial	06025	Geothermal	Geothermal - Electrical Generation, Other	Royalties	876.91
-2008	CA	Inyo	06027	Geothermal		Other Royalties	814607.37
-2008	CA	Inyo	06027	Geothermal		Rents	10154.72
-2008	CA	Inyo	06027	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	914604.41
 2008	CA	Kern	06029	Oil & Gas		Bonus	1537102.75
 2008	CA	Kern	06029	Oil & Gas		Other Revenues	4018.41
 2008	CA	Kern	06029	Oil & Gas		Other Royalties	-7312.4
@@ -385,9 +384,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2008	CA	Kings	06031	Gas	Processed (Residue) Gas	Royalties	-8.7
 2008	CA	Kings	06031	NGL	Gas Plant Products	Royalties	-0.5
 2008	CA	Kings	06031	Oil	Oil	Royalties	265930.14
-2008	CA	Lake	06033	Geothermal		Rents	3453
-2008	CA	Lake	06033	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds	Royalties	4420888.33
-2008	CA	Lassen	06035	Geothermal	Geothermal - Direct Utilization, Millions of BTUs	Royalties	67163.45
 2008	CA	Los Angeles	06037	Oil & Gas		Other Revenues	50000
 2008	CA	Los Angeles	06037	Oil & Gas		Rents	-647
 2008	CA	Los Angeles	06037	Gas	Gas Lost - Flared or Vented	Royalties	8648.89
@@ -395,11 +391,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2008	CA	Los Angeles	06037	Gas	Unprocessed (Wet) Gas	Royalties	115630.51
 2008	CA	Los Angeles	06037	Oil	Condensate	Royalties	151174.81
 2008	CA	Los Angeles	06037	Oil	Oil	Royalties	4695295.12
-2008	CA	Mendocino	06045	Geothermal		Rents	3000
 2008	CA	Merced	06047	Oil & Gas		Rents	2166
-2008	CA	Mono	06051	Geothermal		Other Revenues	-600
-2008	CA	Mono	06051	Geothermal		Rents	23278
-2008	CA	Mono	06051	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	231283.69
 2008	CA	Monterey	06053	Oil & Gas		Bonus	66308.23
 2008	CA	Monterey	06053	Oil & Gas		Rents	18436.67
 2008	CA	Monterey	06053	Oil	Oil	Royalties	48261.13
@@ -407,10 +399,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2008	CA	San Benito	06069	Oil & Gas		Bonus	47401.05
 2008	CA	San Benito	06069	Oil & Gas		Rents	136073.33
 2008	CA	San Benito	06069	Oil	Oil	Royalties	3884.28
-2008	CA	San Bernardn	06071	Sodium		Bonus	120
-2008	CA	San Bernardn	06071	Hardrock		Rents	21
-2008	CA	San Bernardn	06071	Sodium		Rents	1089
-2008	CA	San Diego	06073	Hot Springs		Rents	33
 2008	CA	San Joaquin	06077	Oil & Gas		Other Royalties	-620
 2008	CA	San Joaquin	06077	Gas	Unprocessed (Wet) Gas	Royalties	3730.19
 2008	CA	San Luis Ob.	06079	Oil & Gas		Other Revenues	1395
@@ -419,13 +407,10 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2008	CA	Santa Barbar	06083	Oil & Gas		Rents	7140.9
 2008	CA	Santa Barbar	06083	Gas	Unprocessed (Wet) Gas	Royalties	40783.93
 2008	CA	Santa Barbar	06083	Oil	Oil	Royalties	1008922.97
-2008	CA	Siskiyou	06093	Geothermal		Rents	94098.04
 2008	CA	Solano	06095	Oil & Gas		Other Royalties	436.33
 2008	CA	Solano	06095	Oil & Gas		Rents	40
 2008	CA	Solano	06095	Gas	Unprocessed (Wet) Gas	Royalties	1903776.55
 2008	CA	Solano	06095	Oil	Condensate	Royalties	34942.38
-2008	CA	Sonoma	06097	Geothermal		Rents	1680
-2008	CA	Sonoma	06097	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds	Royalties	6027351.67
 2008	CA	Ventura	06111	Oil & Gas		Other Revenues	537
 2008	CA	Ventura	06111	Oil & Gas		Other Royalties	220250
 2008	CA	Ventura	06111	Oil & Gas		Rents	2476
@@ -437,6 +422,24 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2008	CA	Ventura	06111	Oil	Drip or Scrubber Condensate	Royalties	45.41
 2008	CA	Ventura	06111	Oil	Oil	Royalties	3828736.35
 2008	CA	Yolo	06113	Oil & Gas		Rents	5810.5
+2008	CA		06	Sodium		Bonus	120
+2008	CA		06	Geothermal		Other Revenues	-600
+2008	CA		06	Geothermal		Other Royalties	814607.37
+2008	CA		06	Geothermal		Rents	144439.76
+2008	CA		06	Hardrock		Rents	21
+2008	CA		06	Hot Springs		Rents	33
+2008	CA		06	Sodium		Rents	1089
+2008	CA		06	Geothermal	Geothermal - Direct Utilization, Millions of BTUs	Royalties	67163.45
+2008	CA		06	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	1741423.68
+2008	CA		06	Geothermal	Geothermal - Electrical Generation, Other	Royalties	876.91
+2008	CA		06	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds	Royalties	10448240
+2008	CA		06	Anhydrous Sodium Sulfate	Anhydrous Sodium Sulfate	Royalties	226717.42
+2008	CA		06	Borax-Decahydrate	Borax-Decahydrate	Royalties	39894.95
+2008	CA		06	Borax-Pentahydrate	Borax-Pentahydrate	Royalties	53841.33
+2008	CA		06	Boric Acid	Boric Acid	Royalties	173771.61
+2008	CA		06	Salt	Salt	Royalties	33895.97
+2008	CA		06	Soda Ash	Soda Ash	Royalties	1744766.42
+2008	CA		06	Sodium Bi-Carbonate	Sodium Bi-Carbonate	Royalties	18824.59
 2009	CA	Contra Costa	06013	Oil & Gas		Other Royalties	-1855
 2009	CA	Contra Costa	06013	Gas	Unprocessed (Wet) Gas	Royalties	2880.89
 2009	CA	Fresno	06019	Oil & Gas		Other Revenues	1017.61
@@ -447,12 +450,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2009	CA	Fresno	06019	Oil	Oil	Royalties	109815.1
 2009	CA	Glenn	06021	Oil & Gas		Other Revenues	66
 2009	CA	Glenn	06021	Gas	Unprocessed (Wet) Gas	Royalties	17301.59
-2009	CA	Imperial	06025	Geothermal		Bonus	67840
-2009	CA	Imperial	06025	Geothermal		Rents	33681
-2009	CA	Imperial	06025	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	177597
-2009	CA	Imperial	06025	Geothermal	Geothermal - Electrical Generation, Other	Royalties	934.03
-2009	CA	Inyo	06027	Geothermal		Rents	597.57
-2009	CA	Inyo	06027	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	318515.05
 2009	CA	Kern	06029	Oil & Gas		Bonus	176965
 2009	CA	Kern	06029	Oil & Gas		Other Revenues	4409.99
 2009	CA	Kern	06029	Oil & Gas		Other Royalties	-19554.09
@@ -469,26 +466,16 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2009	CA	Kings	06031	Oil & Gas		Other Royalties	-10380.36
 2009	CA	Kings	06031	Oil & Gas		Rents	13674
 2009	CA	Kings	06031	Oil	Oil	Royalties	189117.76
-2009	CA	Lake	06033	Geothermal		Rents	3453
-2009	CA	Lake	06033	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds	Royalties	2986506.98
-2009	CA	Lassen	06035	Geothermal	Geothermal - Direct Utilization, Millions of BTUs	Royalties	49341.89
 2009	CA	Los Angeles	06037	Oil & Gas		Rents	1265
 2009	CA	Los Angeles	06037	Gas	Processed (Residue) Gas	Royalties	233.02
 2009	CA	Los Angeles	06037	Gas	Unprocessed (Wet) Gas	Royalties	6261.34
 2009	CA	Los Angeles	06037	Oil	Condensate	Royalties	69132.64
 2009	CA	Los Angeles	06037	Oil	Oil	Royalties	2569674.7
-2009	CA	Mendocino	06045	Geothermal		Rents	3000
 2009	CA	Merced	06047	Oil & Gas		Rents	240
-2009	CA	Mono	06051	Geothermal		Rents	22678
-2009	CA	Mono	06051	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	173233.07
 2009	CA	Monterey	06053	Oil & Gas		Rents	16411
 2009	CA	Monterey	06053	Oil	Oil	Royalties	44931.78
 2009	CA	San Benito	06069	Oil & Gas		Rents	26097
 2009	CA	San Benito	06069	Oil	Oil	Royalties	8489.5
-2009	CA	San Bernardn	06071	Sodium		Bonus	1416
-2009	CA	San Bernardn	06071	Sodium		Other Revenues	16947
-2009	CA	San Bernardn	06071	Hardrock		Rents	21
-2009	CA	San Bernardn	06071	Sodium		Rents	29842.68
 2009	CA	San Joaquin	06077	Gas	Unprocessed (Wet) Gas	Royalties	1567.56
 2009	CA	San Luis Ob.	06079	Oil & Gas		Other Revenues	1395
 2009	CA	San Luis Ob.	06079	Oil & Gas		Rents	24228
@@ -496,13 +483,9 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2009	CA	Santa Barbar	06083	Oil & Gas		Rents	3686.5
 2009	CA	Santa Barbar	06083	Gas	Unprocessed (Wet) Gas	Royalties	20144.11
 2009	CA	Santa Barbar	06083	Oil	Oil	Royalties	577557.41
-2009	CA	Siskiyou	06093	Geothermal		Rents	161919
 2009	CA	Solano	06095	Oil & Gas		Rents	40
 2009	CA	Solano	06095	Gas	Unprocessed (Wet) Gas	Royalties	755792.24
 2009	CA	Solano	06095	Oil	Condensate	Royalties	13592.53
-2009	CA	Sonoma	06097	Geothermal		Bonus	18980
-2009	CA	Sonoma	06097	Geothermal		Rents	3578
-2009	CA	Sonoma	06097	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds	Royalties	4059074.9
 2009	CA	Ventura	06111	Oil & Gas		Other Revenues	554
 2009	CA	Ventura	06111	Oil & Gas		Other Royalties	-102550
 2009	CA	Ventura	06111	Oil & Gas		Rents	23656
@@ -513,6 +496,23 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2009	CA	Ventura	06111	Oil	Condensate	Royalties	2429
 2009	CA	Ventura	06111	Oil	Oil	Royalties	1889868.5
 2009	CA	Yolo	06113	Oil & Gas		Rents	1288
+2009	CA		06	Geothermal		Bonus	86820
+2009	CA		06	Sodium		Bonus	1416
+2009	CA		06	Sodium		Other Revenues	16947
+2009	CA		06	Geothermal		Rents	228906.57
+2009	CA		06	Hardrock		Rents	21
+2009	CA		06	Sodium		Rents	29842.68
+2009	CA		06	Geothermal	Geothermal - Direct Utilization, Millions of BTUs	Royalties	49341.89
+2009	CA		06	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	669345.12
+2009	CA		06	Geothermal	Geothermal - Electrical Generation, Other	Royalties	934.03
+2009	CA		06	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds	Royalties	7045581.88
+2009	CA		06	Anhydrous Sodium Sulfate	Anhydrous Sodium Sulfate	Royalties	161151.56
+2009	CA		06	Borax-Decahydrate	Borax-Decahydrate	Royalties	31562.63
+2009	CA		06	Borax-Pentahydrate	Borax-Pentahydrate	Royalties	60315.42
+2009	CA		06	Boric Acid	Boric Acid	Royalties	166837
+2009	CA		06	Salt	Salt	Royalties	37288.97
+2009	CA		06	Soda Ash	Soda Ash	Royalties	1837063.95
+2009	CA		06	Sodium Bi-Carbonate	Sodium Bi-Carbonate	Royalties	22025.78
 2010	CA	Contra Costa	06013	Oil & Gas		Other Royalties	18.08
 2010	CA	Contra Costa	06013	Gas	Unprocessed (Wet) Gas	Royalties	1946.02
 2010	CA	Fresno	06019	Oil & Gas		Other Revenues	1185.3
@@ -524,12 +524,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2010	CA	Glenn	06021	Oil & Gas		Other Revenues	106
 2010	CA	Glenn	06021	Oil & Gas		Other Royalties	19.43
 2010	CA	Glenn	06021	Gas	Unprocessed (Wet) Gas	Royalties	12316.96
-2010	CA	Imperial	06025	Geothermal		Rents	44345
-2010	CA	Imperial	06025	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	111289
-2010	CA	Imperial	06025	Geothermal	Geothermal - Electrical Generation, Other	Royalties	893.38
-2010	CA	Inyo	06027	Geothermal		Other Revenues	83464.3
-2010	CA	Inyo	06027	Geothermal		Rents	-83464.3
-2010	CA	Inyo	06027	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	835458.78
 2010	CA	Kern	06029	Oil & Gas		Bonus	2300130
 2010	CA	Kern	06029	Oil & Gas		Other Revenues	9231
 2010	CA	Kern	06029	Oil & Gas		Other Royalties	39479.9
@@ -550,26 +544,17 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2010	CA	Kings	06031	Gas	Processed (Residue) Gas	Royalties	13698.74
 2010	CA	Kings	06031	Gas	Unprocessed (Wet) Gas	Royalties	1698.41
 2010	CA	Kings	06031	Oil	Oil	Royalties	280629.24
-2010	CA	Lake	06033	Geothermal		Rents	3453
-2010	CA	Lake	06033	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds	Royalties	3303932.95
-2010	CA	Lassen	06035	Geothermal	Geothermal - Direct Utilization, Millions of BTUs	Royalties	51388.25
 2010	CA	Los Angeles	06037	Oil & Gas		Other Royalties	123.21
 2010	CA	Los Angeles	06037	Oil & Gas		Rents	1589
 2010	CA	Los Angeles	06037	Gas	Processed (Residue) Gas	Royalties	262.39
 2010	CA	Los Angeles	06037	Gas	Unprocessed (Wet) Gas	Royalties	-93323.01
 2010	CA	Los Angeles	06037	Oil	Condensate	Royalties	92720.23
 2010	CA	Los Angeles	06037	Oil	Oil	Royalties	3727968.82
-2010	CA	Mendocino	06045	Geothermal		Rents	3000
 2010	CA	Merced	06047	Oil & Gas		Rents	240
-2010	CA	Mono	06051	Geothermal		Rents	10186
-2010	CA	Mono	06051	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	154815.47
 2010	CA	Monterey	06053	Oil & Gas		Rents	11255.5
 2010	CA	Monterey	06053	Oil	Oil	Royalties	78074.13
 2010	CA	San Benito	06069	Oil & Gas		Rents	33123
 2010	CA	San Benito	06069	Oil	Oil	Royalties	7453.41
-2010	CA	San Bernardn	06071	Sodium		Bonus	120
-2010	CA	San Bernardn	06071	Sodium		Other Revenues	12.46
-2010	CA	San Bernardn	06071	Sodium		Rents	-10909.81
 2010	CA	San Joaquin	06077	Gas	Unprocessed (Wet) Gas	Royalties	1727.51
 2010	CA	San Luis Ob.	06079	Oil & Gas		Other Revenues	1235
 2010	CA	San Luis Ob.	06079	Oil & Gas		Rents	16126
@@ -577,14 +562,10 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2010	CA	Santa Barbar	06083	Oil & Gas		Rents	4512.5
 2010	CA	Santa Barbar	06083	Gas	Unprocessed (Wet) Gas	Royalties	24151.5
 2010	CA	Santa Barbar	06083	Oil	Oil	Royalties	581651.3
-2010	CA	Siskiyou	06093	Geothermal		Rents	113993
 2010	CA	Solano	06095	Oil & Gas		Other Royalties	9268.78
 2010	CA	Solano	06095	Oil & Gas		Rents	40
 2010	CA	Solano	06095	Gas	Unprocessed (Wet) Gas	Royalties	837983.35
 2010	CA	Solano	06095	Oil	Condensate	Royalties	16596.91
-2010	CA	Sonoma	06097	Geothermal		Bonus	19348
-2010	CA	Sonoma	06097	Geothermal		Rents	18347
-2010	CA	Sonoma	06097	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds	Royalties	4412625.62
 2010	CA	Sutter	06101	Oil & Gas		Bonus	8653
 2010	CA	Sutter	06101	Oil & Gas		Other Royalties	-75
 2010	CA	Sutter	06101	Oil & Gas		Rents	249
@@ -598,6 +579,23 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2010	CA	Ventura	06111	Oil	Condensate	Royalties	738.74
 2010	CA	Ventura	06111	Oil	Oil	Royalties	2536666.33
 2010	CA	Yolo	06113	Oil & Gas		Rents	1288
+2010	CA		06	Geothermal		Bonus	19348
+2010	CA		06	Sodium		Bonus	120
+2010	CA		06	Geothermal		Other Revenues	83464.3
+2010	CA		06	Sodium		Other Revenues	12.46
+2010	CA		06	Geothermal		Rents	109859.7
+2010	CA		06	Sodium		Rents	-10909.81
+2010	CA		06	Geothermal	Geothermal - Direct Utilization, Millions of BTUs	Royalties	51388.25
+2010	CA		06	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	1101563.25
+2010	CA		06	Geothermal	Geothermal - Electrical Generation, Other	Royalties	893.38
+2010	CA		06	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds	Royalties	7716558.57
+2010	CA		06	Anhydrous Sodium Sulfate	Anhydrous Sodium Sulfate	Royalties	179316.58
+2010	CA		06	Borax-Decahydrate	Borax-Decahydrate	Royalties	166462.79
+2010	CA		06	Borax-Pentahydrate	Borax-Pentahydrate	Royalties	303415.38
+2010	CA		06	Boric Acid	Boric Acid	Royalties	255007.83
+2010	CA		06	Salt	Salt	Royalties	35225.79
+2010	CA		06	Soda Ash	Soda Ash	Royalties	1755369.43
+2010	CA		06	Sodium Bi-Carbonate	Sodium Bi-Carbonate	Royalties	28921.12
 2011	CA	Contra Costa	06013	Oil & Gas		Other Royalties	49.29
 2011	CA	Contra Costa	06013	Gas	Unprocessed (Wet) Gas	Royalties	1355.57
 2011	CA	Fresno	06019	Oil & Gas		Other Revenues	1073.66
@@ -608,11 +606,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2011	CA	Fresno	06019	Oil	Oil	Royalties	172190.99
 2011	CA	Glenn	06021	Oil & Gas		Other Revenues	106
 2011	CA	Glenn	06021	Gas	Unprocessed (Wet) Gas	Royalties	5629.95
-2011	CA	Imperial	06025	Geothermal		Rents	43063
-2011	CA	Imperial	06025	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	-268476.99
-2011	CA	Imperial	06025	Geothermal	Geothermal - Electrical Generation, Other	Royalties	128.91
-2011	CA	Inyo	06027	Geothermal		Other Revenues	2066.71
-2011	CA	Inyo	06027	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	527854.09
 2011	CA	Kern	06029	Oil & Gas		Bonus	5259428
 2011	CA	Kern	06029	Oil & Gas		Other Revenues	19660
 2011	CA	Kern	06029	Oil & Gas		Other Royalties	35072.31
@@ -632,25 +625,17 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2011	CA	Kings	06031	Oil & Gas		Rents	24422.5
 2011	CA	Kings	06031	Gas	Processed (Residue) Gas	Royalties	72165.48
 2011	CA	Kings	06031	Oil	Oil	Royalties	323283.63
-2011	CA	Lake	06033	Geothermal		Rents	3453
-2011	CA	Lake	06033	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds	Royalties	3143700.02
-2011	CA	Lassen	06035	Geothermal	Geothermal - Direct Utilization, Millions of BTUs	Royalties	48086.24
 2011	CA	Los Angeles	06037	Oil & Gas		Other Royalties	107.84
 2011	CA	Los Angeles	06037	Oil & Gas		Rents	1275
 2011	CA	Los Angeles	06037	Gas	Processed (Residue) Gas	Royalties	255.29
 2011	CA	Los Angeles	06037	Gas	Unprocessed (Wet) Gas	Royalties	16809.02
 2011	CA	Los Angeles	06037	Oil	Condensate	Royalties	230543.75
 2011	CA	Los Angeles	06037	Oil	Oil	Royalties	4979127.65
-2011	CA	Mendocino	06045	Geothermal		Rents	3000
 2011	CA	Merced	06047	Oil & Gas		Rents	320
-2011	CA	Mono	06051	Geothermal		Rents	22678
-2011	CA	Mono	06051	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	-65071.09
 2011	CA	Monterey	06053	Oil & Gas		Rents	11255.5
 2011	CA	Monterey	06053	Oil	Oil	Royalties	136945.5
 2011	CA	San Benito	06069	Oil & Gas		Rents	39684.8
 2011	CA	San Benito	06069	Oil	Oil	Royalties	7519.13
-2011	CA	San Bernardn	06071	Sodium		Bonus	120
-2011	CA	San Bernardn	06071	Sodium		Rents	-14509.9
 2011	CA	San Joaquin	06077	Gas	Unprocessed (Wet) Gas	Royalties	1600.74
 2011	CA	San Luis Ob.	06079	Oil & Gas		Other Revenues	1075
 2011	CA	San Luis Ob.	06079	Oil & Gas		Other Royalties	1.53
@@ -660,12 +645,9 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2011	CA	Santa Barbar	06083	Oil & Gas		Rents	5455.5
 2011	CA	Santa Barbar	06083	Gas	Unprocessed (Wet) Gas	Royalties	49957.72
 2011	CA	Santa Barbar	06083	Oil	Oil	Royalties	817103.25
-2011	CA	Siskiyou	06093	Geothermal		Rents	119109
 2011	CA	Solano	06095	Oil & Gas		Rents	40
 2011	CA	Solano	06095	Gas	Unprocessed (Wet) Gas	Royalties	410474
 2011	CA	Solano	06095	Oil	Condensate	Royalties	27308.03
-2011	CA	Sonoma	06097	Geothermal		Rents	12819
-2011	CA	Sonoma	06097	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds	Royalties	4167151.74
 2011	CA	Sutter	06101	Oil & Gas		Rents	249
 2011	CA	Ventura	06111	Oil & Gas		Other Revenues	480
 2011	CA	Ventura	06111	Oil & Gas		Other Royalties	-6480.46
@@ -677,6 +659,22 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2011	CA	Ventura	06111	Oil	Condensate	Royalties	1695.63
 2011	CA	Ventura	06111	Oil	Oil	Royalties	2915215.26
 2011	CA	Yolo	06113	Oil & Gas		Rents	1288
+2011	CA		06	Sodium		Bonus	120
+2011	CA		06	Geothermal		Other Revenues	2066.71
+2011	CA		06	Geothermal		Rents	204122
+2011	CA		06	Sodium		Rents	-14509.9
+2011	CA		06	Geothermal	Geothermal - Direct Utilization, Millions of BTUs	Royalties	48086.24
+2011	CA		06	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	194306.01
+2011	CA		06	Geothermal	Geothermal - Electrical Generation, Other	Royalties	128.91
+2011	CA		06	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds	Royalties	7310851.76
+2011	CA		06	Anhydrous Sodium Sulfate	Anhydrous Sodium Sulfate	Royalties	220610.49
+2011	CA		06	Borax-Anhydrous	Borax-Anhydrous	Royalties	23155.59
+2011	CA		06	Borax-Decahydrate	Borax-Decahydrate	Royalties	436534.22
+2011	CA		06	Borax-Pentahydrate	Borax-Pentahydrate	Royalties	621695.4
+2011	CA		06	Boric Acid	Boric Acid	Royalties	499953.51
+2011	CA		06	Salt	Salt	Royalties	64432.6
+2011	CA		06	Soda Ash	Soda Ash	Royalties	2358499.91
+2011	CA		06	Sodium Bi-Carbonate	Sodium Bi-Carbonate	Royalties	50355.02
 2012	CA	Contra Costa	06013	Oil & Gas		Other Royalties	106
 2012	CA	Contra Costa	06013	Gas	Unprocessed (Wet) Gas	Royalties	718.18
 2012	CA	Fresno	06019	Oil & Gas		Other Revenues	-1193.63
@@ -689,11 +687,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2012	CA	Glenn	06021	Oil & Gas		Other Revenues	41
 2012	CA	Glenn	06021	Oil & Gas		Other Royalties	8.95
 2012	CA	Glenn	06021	Gas	Unprocessed (Wet) Gas	Royalties	4971.9
-2012	CA	Imperial	06025	Geothermal		Rents	43063
-2012	CA	Imperial	06025	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	291167.63
-2012	CA	Inyo	06027	Geothermal		Other Revenues	-2066.71
-2012	CA	Inyo	06027	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	811955.57
-2012	CA	Inyo	06027	Geothermal	Geothermal - sulfur	Royalties	514.96
 2012	CA	Kern	06029	Oil & Gas		Bonus	3025460
 2012	CA	Kern	06029	Oil & Gas		Other Revenues	21779.82
 2012	CA	Kern	06029	Oil & Gas		Other Royalties	562521.99
@@ -714,25 +707,16 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2012	CA	Kings	06031	Oil & Gas		Rents	24996.5
 2012	CA	Kings	06031	Gas	Processed (Residue) Gas	Royalties	27391.84
 2012	CA	Kings	06031	Oil	Oil	Royalties	417388.19
-2012	CA	Lake	06033	Geothermal		Rents	3453
-2012	CA	Lake	06033	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds	Royalties	3155630.11
-2012	CA	Lassen	06035	Geothermal	Geothermal - Direct Utilization, Millions of BTUs	Royalties	76071.14
 2012	CA	Los Angeles	06037	Oil & Gas		Other Revenues	65.6
 2012	CA	Los Angeles	06037	Oil & Gas		Rents	961
 2012	CA	Los Angeles	06037	Gas	Processed (Residue) Gas	Royalties	143.52
 2012	CA	Los Angeles	06037	Gas	Unprocessed (Wet) Gas	Royalties	15753.58
 2012	CA	Los Angeles	06037	Oil	Condensate	Royalties	487146.05
 2012	CA	Los Angeles	06037	Oil	Oil	Royalties	5729903.73
-2012	CA	Mendocino	06045	Geothermal		Rents	3000
-2012	CA	Mono	06051	Geothermal		Other Revenues	1388
-2012	CA	Mono	06051	Geothermal		Rents	-109790
-2012	CA	Mono	06051	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	337570.95
 2012	CA	Monterey	06053	Oil & Gas		Rents	11255.5
 2012	CA	Monterey	06053	Oil	Oil	Royalties	168016.87
 2012	CA	San Benito	06069	Oil & Gas		Rents	35890
 2012	CA	San Benito	06069	Oil	Oil	Royalties	1193.88
-2012	CA	San Bernardn	06071	Sodium		Bonus	-480
-2012	CA	San Bernardn	06071	Sodium		Rents	3543.49
 2012	CA	San Joaquin	06077	Gas	Unprocessed (Wet) Gas	Royalties	1026.39
 2012	CA	San Luis Ob.	06079	Oil & Gas		Other Revenues	1395
 2012	CA	San Luis Ob.	06079	Oil & Gas		Rents	15248
@@ -741,13 +725,10 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2012	CA	Santa Barbar	06083	Oil & Gas		Rents	3716
 2012	CA	Santa Barbar	06083	Gas	Unprocessed (Wet) Gas	Royalties	10196.04
 2012	CA	Santa Barbar	06083	Oil	Oil	Royalties	993676
-2012	CA	Siskiyou	06093	Geothermal		Rents	124245
 2012	CA	Solano	06095	Oil & Gas		Rents	40
 2012	CA	Solano	06095	Gas	Unprocessed (Wet) Gas	Royalties	209728.14
 2012	CA	Solano	06095	Oil	Condensate	Royalties	13741.75
 2012	CA	Solano	06095	Oil	Oil	Royalties	3676.27
-2012	CA	Sonoma	06097	Geothermal		Rents	12819
-2012	CA	Sonoma	06097	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds	Royalties	4358864.24
 2012	CA	Sutter	06101	Oil & Gas		Rents	249
 2012	CA	Ventura	06111	Oil & Gas		Bonus	-1200
 2012	CA	Ventura	06111	Oil & Gas		Other Revenues	874
@@ -761,6 +742,22 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2012	CA	Ventura	06111	Oil	Drip or Scrubber Condensate	Royalties	157.44
 2012	CA	Ventura	06111	Oil	Oil	Royalties	4518792.7
 2012	CA	Yolo	06113	Oil & Gas		Rents	1288
+2012	CA		06	Sodium		Bonus	-480
+2012	CA		06	Geothermal		Other Revenues	-678.71
+2012	CA		06	Sodium		Other Revenues	7500
+2012	CA		06	Geothermal		Rents	76790
+2012	CA		06	Sodium		Rents	3543.49
+2012	CA		06	Geothermal	Geothermal - Direct Utilization, Millions of BTUs	Royalties	76071.14
+2012	CA		06	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	1440694.15
+2012	CA		06	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds	Royalties	7514494.35
+2012	CA		06	Geothermal	Geothermal - sulfur	Royalties	514.96
+2012	CA		06	Anhydrous Sodium Sulfate	Anhydrous Sodium Sulfate	Royalties	450260.24
+2012	CA		06	Borax-Decahydrate	Borax-Decahydrate	Royalties	965736.02
+2012	CA		06	Borax-Pentahydrate	Borax-Pentahydrate	Royalties	1210501.48
+2012	CA		06	Boric Acid	Boric Acid	Royalties	971223.98
+2012	CA		06	Salt	Salt	Royalties	160641.39
+2012	CA		06	Soda Ash	Soda Ash	Royalties	5441948.19
+2012	CA		06	Sodium Bi-Carbonate	Sodium Bi-Carbonate	Royalties	156727.85
 2013	CA	Contra Costa	06013	Gas	Unprocessed (Wet) Gas	Royalties	4017.9
 2013	CA	Contra Costa	06013	Oil	Condensate	Royalties	91.75
 2013	CA	Contra Costa	06013	Oil	Oil	Royalties	5.19
@@ -773,10 +770,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2013	CA	Fresno	06019	Oil	Oil	Royalties	237461.56
 2013	CA	Glenn	06021	Oil & Gas		Other Revenues	41
 2013	CA	Glenn	06021	Gas	Unprocessed (Wet) Gas	Royalties	12399.03
-2013	CA	Imperial	06025	Geothermal		Rents	43063
-2013	CA	Imperial	06025	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	21454.95
-2013	CA	Inyo	06027	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	656853.22
-2013	CA	Inyo	06027	Geothermal	Geothermal - sulfur	Royalties	123.84
 2013	CA	Kern	06029	Oil & Gas		Other Revenues	9680.82
 2013	CA	Kern	06029	Oil & Gas		Other Royalties	-195600
 2013	CA	Kern	06029	Oil & Gas		Rents	186668
@@ -795,23 +788,15 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2013	CA	Kings	06031	Gas	Processed (Residue) Gas	Royalties	2398.19
 2013	CA	Kings	06031	NGL	Gas Plant Products	Royalties	2738.44
 2013	CA	Kings	06031	Oil	Oil	Royalties	355987.37
-2013	CA	Lake	06033	Geothermal		Rents	3453
-2013	CA	Lake	06033	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds	Royalties	3466489.45
-2013	CA	Lassen	06035	Geothermal	Geothermal - Direct Utilization, Millions of BTUs	Royalties	67132.07
 2013	CA	Los Angeles	06037	Oil & Gas		Rents	1589
 2013	CA	Los Angeles	06037	Gas	Processed (Residue) Gas	Royalties	171.16
 2013	CA	Los Angeles	06037	Gas	Unprocessed (Wet) Gas	Royalties	47018.68
 2013	CA	Los Angeles	06037	Oil	Condensate	Royalties	439351.02
 2013	CA	Los Angeles	06037	Oil	Oil	Royalties	6444045.19
-2013	CA	Mendocino	06045	Geothermal		Rents	3000
-2013	CA	Mono	06051	Geothermal		Rents	600
-2013	CA	Mono	06051	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	317098.45
 2013	CA	Monterey	06053	Oil & Gas		Rents	12994
 2013	CA	Monterey	06053	Oil	Oil	Royalties	167371.23
 2013	CA	San Benito	06069	Oil & Gas		Rents	28502
 2013	CA	San Benito	06069	Oil	Oil	Royalties	1071.08
-2013	CA	San Bernardn	06071	Hardrock		Rents	105
-2013	CA	San Bernardn	06071	Sodium		Rents	2532.5
 2013	CA	San Joaquin	06077	Gas	Unprocessed (Wet) Gas	Royalties	1395.21
 2013	CA	San Luis Ob.	06079	Oil & Gas		Other Revenues	1635
 2013	CA	San Luis Ob.	06079	Oil & Gas		Rents	11408
@@ -819,10 +804,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2013	CA	Santa Barbar	06083	Oil & Gas		Rents	2729.5
 2013	CA	Santa Barbar	06083	Gas	Unprocessed (Wet) Gas	Royalties	9283.23
 2013	CA	Santa Barbar	06083	Oil	Oil	Royalties	835689.27
-2013	CA	Siskiyou	06093	Geothermal		Rents	102093
 2013	CA	Solano	06095	Gas	Unprocessed (Wet) Gas	Royalties	14557.1
-2013	CA	Sonoma	06097	Geothermal		Rents	12819
-2013	CA	Sonoma	06097	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds	Royalties	4777308.4
 2013	CA	Sutter	06101	Oil & Gas		Rents	249
 2013	CA	Ventura	06111	Oil & Gas		Other Revenues	580
 2013	CA	Ventura	06111	Oil & Gas		Other Royalties	-5000
@@ -834,81 +816,17 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2013	CA	Ventura	06111	Oil	Condensate	Royalties	-8003.66
 2013	CA	Ventura	06111	Oil	Drip or Scrubber Condensate	Royalties	10203.9
 2013	CA	Ventura	06111	Oil	Oil	Royalties	3274001.83
-2004	CA	San Bernardn	06071	Potassium		Other Revenues	3996
-2004	CA	San Bernardn	06071	Sodium		Other Revenues	72.39
-2004	CA	San Bernardn	06071	Anhydrous Sodium Sulfate	Anhydrous Sodium Sulfate	Royalties	210401.24
-2004	CA	San Bernardn	06071	Borax-Anhydrous	Borax-Anhydrous	Royalties	-713.29
-2004	CA	San Bernardn	06071	Borax-Decahydrate	Borax-Decahydrate	Royalties	109121.44
-2004	CA	San Bernardn	06071	Borax-Pentahydrate	Borax-Pentahydrate	Royalties	103624.51
-2004	CA	San Bernardn	06071	Boric Acid	Boric Acid	Royalties	317097.54
-2004	CA	San Bernardn	06071	Salt	Salt	Royalties	39989.97
-2004	CA	San Bernardn	06071	Soda Ash	Soda Ash	Royalties	2421272.34
-2004	CA	San Bernardn	06071	Sodium Bi-Carbonate	Sodium Bi-Carbonate	Royalties	37810.73
-2005	CA	San Bernardn	06071	Anhydrous Sodium Sulfate	Anhydrous Sodium Sulfate	Royalties	337723.99
-2005	CA	San Bernardn	06071	Borax-Anhydrous	Borax-Anhydrous	Royalties	23602.57
-2005	CA	San Bernardn	06071	Borax-Decahydrate	Borax-Decahydrate	Royalties	103037.41
-2005	CA	San Bernardn	06071	Borax-Pentahydrate	Borax-Pentahydrate	Royalties	151645.46
-2005	CA	San Bernardn	06071	Boric Acid	Boric Acid	Royalties	328102.64
-2005	CA	San Bernardn	06071	Salt	Salt	Royalties	61912.48
-2005	CA	San Bernardn	06071	Soda Ash	Soda Ash	Royalties	3228230.52
-2005	CA	San Bernardn	06071	Sodium Bi-Carbonate	Sodium Bi-Carbonate	Royalties	47878.8
-2006	CA	San Bernardn	06071	Anhydrous Sodium Sulfate	Anhydrous Sodium Sulfate	Royalties	218485.72
-2006	CA	San Bernardn	06071	Borax-Anhydrous	Borax-Anhydrous	Royalties	-1956.91
-2006	CA	San Bernardn	06071	Borax-Decahydrate	Borax-Decahydrate	Royalties	32914.93
-2006	CA	San Bernardn	06071	Borax-Pentahydrate	Borax-Pentahydrate	Royalties	26110.16
-2006	CA	San Bernardn	06071	Boric Acid	Boric Acid	Royalties	160421.29
-2006	CA	San Bernardn	06071	Salt	Salt	Royalties	70166.69
-2006	CA	San Bernardn	06071	Soda Ash	Soda Ash	Royalties	4510259.97
-2006	CA	San Bernardn	06071	Sodium Bi-Carbonate	Sodium Bi-Carbonate	Royalties	51139.24
-2007	CA	San Bernardn	06071	Sodium		Other Revenues	360
-2007	CA	San Bernardn	06071	Anhydrous Sodium Sulfate	Anhydrous Sodium Sulfate	Royalties	436978.36
-2007	CA	San Bernardn	06071	Borax-Decahydrate	Borax-Decahydrate	Royalties	64234.9
-2007	CA	San Bernardn	06071	Borax-Pentahydrate	Borax-Pentahydrate	Royalties	85558.19
-2007	CA	San Bernardn	06071	Boric Acid	Boric Acid	Royalties	270336.55
-2007	CA	San Bernardn	06071	Salt	Salt	Royalties	18576.81
-2007	CA	San Bernardn	06071	Soda Ash	Soda Ash	Royalties	931425.71
-2007	CA	San Bernardn	06071	Sodium Bi-Carbonate	Sodium Bi-Carbonate	Royalties	9380.18
-2008	CA	San Bernardn	06071	Anhydrous Sodium Sulfate	Anhydrous Sodium Sulfate	Royalties	226717.42
-2008	CA	San Bernardn	06071	Borax-Decahydrate	Borax-Decahydrate	Royalties	39894.95
-2008	CA	San Bernardn	06071	Borax-Pentahydrate	Borax-Pentahydrate	Royalties	53841.33
-2008	CA	San Bernardn	06071	Boric Acid	Boric Acid	Royalties	173771.61
-2008	CA	San Bernardn	06071	Salt	Salt	Royalties	33895.97
-2008	CA	San Bernardn	06071	Soda Ash	Soda Ash	Royalties	1744766.42
-2008	CA	San Bernardn	06071	Sodium Bi-Carbonate	Sodium Bi-Carbonate	Royalties	18824.59
-2009	CA	San Bernardn	06071	Anhydrous Sodium Sulfate	Anhydrous Sodium Sulfate	Royalties	161151.56
-2009	CA	San Bernardn	06071	Borax-Decahydrate	Borax-Decahydrate	Royalties	31562.63
-2009	CA	San Bernardn	06071	Borax-Pentahydrate	Borax-Pentahydrate	Royalties	60315.42
-2009	CA	San Bernardn	06071	Boric Acid	Boric Acid	Royalties	166837
-2009	CA	San Bernardn	06071	Salt	Salt	Royalties	37288.97
-2009	CA	San Bernardn	06071	Soda Ash	Soda Ash	Royalties	1837063.95
-2009	CA	San Bernardn	06071	Sodium Bi-Carbonate	Sodium Bi-Carbonate	Royalties	22025.78
-2010	CA	San Bernardn	06071	Anhydrous Sodium Sulfate	Anhydrous Sodium Sulfate	Royalties	179316.58
-2010	CA	San Bernardn	06071	Borax-Decahydrate	Borax-Decahydrate	Royalties	166462.79
-2010	CA	San Bernardn	06071	Borax-Pentahydrate	Borax-Pentahydrate	Royalties	303415.38
-2010	CA	San Bernardn	06071	Boric Acid	Boric Acid	Royalties	255007.83
-2010	CA	San Bernardn	06071	Salt	Salt	Royalties	35225.79
-2010	CA	San Bernardn	06071	Soda Ash	Soda Ash	Royalties	1755369.43
-2010	CA	San Bernardn	06071	Sodium Bi-Carbonate	Sodium Bi-Carbonate	Royalties	28921.12
-2011	CA	San Bernardn	06071	Anhydrous Sodium Sulfate	Anhydrous Sodium Sulfate	Royalties	220610.49
-2011	CA	San Bernardn	06071	Borax-Anhydrous	Borax-Anhydrous	Royalties	23155.59
-2011	CA	San Bernardn	06071	Borax-Decahydrate	Borax-Decahydrate	Royalties	436534.22
-2011	CA	San Bernardn	06071	Borax-Pentahydrate	Borax-Pentahydrate	Royalties	621695.4
-2011	CA	San Bernardn	06071	Boric Acid	Boric Acid	Royalties	499953.51
-2011	CA	San Bernardn	06071	Salt	Salt	Royalties	64432.6
-2011	CA	San Bernardn	06071	Soda Ash	Soda Ash	Royalties	2358499.91
-2011	CA	San Bernardn	06071	Sodium Bi-Carbonate	Sodium Bi-Carbonate	Royalties	50355.02
-2012	CA	San Bernardn	06071	Sodium		Other Revenues	7500
-2012	CA	San Bernardn	06071	Anhydrous Sodium Sulfate	Anhydrous Sodium Sulfate	Royalties	450260.24
-2012	CA	San Bernardn	06071	Borax-Decahydrate	Borax-Decahydrate	Royalties	965736.02
-2012	CA	San Bernardn	06071	Borax-Pentahydrate	Borax-Pentahydrate	Royalties	1210501.48
-2012	CA	San Bernardn	06071	Boric Acid	Boric Acid	Royalties	971223.98
-2012	CA	San Bernardn	06071	Salt	Salt	Royalties	160641.39
-2012	CA	San Bernardn	06071	Soda Ash	Soda Ash	Royalties	5441948.19
-2012	CA	San Bernardn	06071	Sodium Bi-Carbonate	Sodium Bi-Carbonate	Royalties	156727.85
-2013	CA	San Bernardn	06071	Anhydrous Sodium Sulfate	Anhydrous Sodium Sulfate	Royalties	446414.04
-2013	CA	San Bernardn	06071	Borax-Decahydrate	Borax-Decahydrate	Royalties	840118.62
-2013	CA	San Bernardn	06071	Borax-Pentahydrate	Borax-Pentahydrate	Royalties	1303076.65
-2013	CA	San Bernardn	06071	Boric Acid	Boric Acid	Royalties	965147.97
-2013	CA	San Bernardn	06071	Salt	Salt	Royalties	186524.66
-2013	CA	San Bernardn	06071	Soda Ash	Soda Ash	Royalties	4837510.47
-2013	CA	San Bernardn	06071	Sodium Bi-Carbonate	Sodium Bi-Carbonate	Royalties	163407.55
+2013	CA		06	Geothermal		Rents	165028
+2013	CA		06	Hardrock		Rents	105
+2013	CA		06	Sodium		Rents	2532.5
+2013	CA		06	Geothermal	Geothermal - Direct Utilization, Millions of BTUs	Royalties	67132.07
+2013	CA		06	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours	Royalties	995406.62
+2013	CA		06	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds	Royalties	8243797.85
+2013	CA		06	Geothermal	Geothermal - sulfur	Royalties	123.84
+2013	CA		06	Anhydrous Sodium Sulfate	Anhydrous Sodium Sulfate	Royalties	446414.04
+2013	CA		06	Borax-Decahydrate	Borax-Decahydrate	Royalties	840118.62
+2013	CA		06	Borax-Pentahydrate	Borax-Pentahydrate	Royalties	1303076.65
+2013	CA		06	Boric Acid	Boric Acid	Royalties	965147.97
+2013	CA		06	Salt	Salt	Royalties	186524.66
+2013	CA		06	Soda Ash	Soda Ash	Royalties	4837510.47
+2013	CA		06	Sodium Bi-Carbonate	Sodium Bi-Carbonate	Royalties	163407.55

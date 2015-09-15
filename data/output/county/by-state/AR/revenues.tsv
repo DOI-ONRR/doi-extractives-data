@@ -14,8 +14,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2004	AR	Franklin	05047	Oil & Gas		Other Royalties	-3790.83
 2004	AR	Franklin	05047	Oil & Gas		Rents	14621.55
 2004	AR	Franklin	05047	Gas	Unprocessed (Wet) Gas	Royalties	178220.9
-2004	AR	Garland	05051	Hardrock		Other Revenues	480
-2004	AR	Garland	05051	Hardrock		Rents	-240
 2004	AR	Johnson	05071	Oil & Gas		Bonus	138487.21
 2004	AR	Johnson	05071	Oil & Gas		Other Revenues	92.53
 2004	AR	Johnson	05071	Oil & Gas		Other Royalties	1525
@@ -27,10 +25,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2004	AR	Logan	05083	Oil & Gas		Rents	107673.94
 2004	AR	Logan	05083	Gas	Unprocessed (Wet) Gas	Royalties	237944.76
 2004	AR	Montgomery	05097	Oil & Gas		Bonus	54851.28
-2004	AR	Montgomery	05097	Hardrock		Other Revenues	960
-2004	AR	Montgomery	05097	Hardrock		Rents	-174.33
 2004	AR	Montgomery	05097	Oil & Gas		Rents	122409.14
-2004	AR	Montgomery	05097	Quartz		Rents	20
 2004	AR	Ouachita	05103	Oil & Gas		Rents	10.5
 2004	AR	Polk	05113	Oil & Gas		Rents	2633.97
 2004	AR	Pope	05115	Oil & Gas		Bonus	65701.79
@@ -52,6 +47,11 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2004	AR	Yell	05149	Oil & Gas		Other Royalties	88590.12
 2004	AR	Yell	05149	Oil & Gas		Rents	99199.06
 2004	AR	Yell	05149	Gas	Unprocessed (Wet) Gas	Royalties	737072.99
+2004	AR		05	Hardrock		Other Revenues	1440
+2004	AR		05	Hardrock		Other Revenues	681.5
+2004	AR		05	Hardrock		Rents	-414.33
+2004	AR		05	Quartz		Rents	20
+2004	AR		05	Quartz Crystal	Quartz Crystal	Royalties	235.5
 2005	AR	Columbia	05027	Gas	Processed (Residue) Gas	Royalties	5801.98
 2005	AR	Columbia	05027	Oil	Oil	Royalties	251.75
 2005	AR	Conway	05029	Oil & Gas		Rents	9933
@@ -69,7 +69,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2005	AR	Franklin	05047	Oil & Gas		Other Royalties	950
 2005	AR	Franklin	05047	Oil & Gas		Rents	53264.68
 2005	AR	Franklin	05047	Gas	Unprocessed (Wet) Gas	Royalties	190344.37
-2005	AR	Garland	05051	Hardrock		Rents	240
 2005	AR	Johnson	05071	Oil & Gas		Bonus	6059565
 2005	AR	Johnson	05071	Oil & Gas		Rents	156435.72
 2005	AR	Johnson	05071	Gas	Processed (Residue) Gas	Royalties	368.37
@@ -82,8 +81,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2005	AR	Madison	05087	Oil & Gas		Bonus	800
 2005	AR	Madison	05087	Oil & Gas		Rents	600
 2005	AR	Montgomery	05097	Oil & Gas		Bonus	6075
-2005	AR	Montgomery	05097	Hardrock		Other Revenues	480
-2005	AR	Montgomery	05097	Hardrock		Rents	-0.25
 2005	AR	Montgomery	05097	Oil & Gas		Rents	124459.64
 2005	AR	Ouachita	05103	Oil & Gas		Rents	10.5
 2005	AR	Polk	05113	Oil & Gas		Bonus	400
@@ -107,6 +104,10 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2005	AR	Yell	05149	Oil & Gas		Other Royalties	51226.3
 2005	AR	Yell	05149	Oil & Gas		Rents	129301.31
 2005	AR	Yell	05149	Gas	Unprocessed (Wet) Gas	Royalties	1956420.95
+2005	AR		05	Hardrock		Other Revenues	480
+2005	AR		05	Hardrock		Other Revenues	386.4
+2005	AR		05	Hardrock		Rents	239.75
+2005	AR		05	Quartz Crystal	Quartz Crystal	Royalties	345.85
 2006	AR	Columbia	05027	Gas	Processed (Residue) Gas	Royalties	4569.36
 2006	AR	Columbia	05027	Oil	Oil	Royalties	243.75
 2006	AR	Conway	05029	Oil & Gas		Rents	7027.5
@@ -123,8 +124,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2006	AR	Franklin	05047	Oil & Gas		Other Royalties	2000
 2006	AR	Franklin	05047	Oil & Gas		Rents	147287.68
 2006	AR	Franklin	05047	Gas	Unprocessed (Wet) Gas	Royalties	162113.81
-2006	AR	Garland	05051	Hardrock		Other Revenues	480
-2006	AR	Garland	05051	Hardrock		Rents	-80
 2006	AR	Johnson	05071	Oil & Gas		Bonus	145412.06
 2006	AR	Johnson	05071	Oil & Gas		Rents	153470.86
 2006	AR	Johnson	05071	Gas	Unprocessed (Wet) Gas	Royalties	599942.85
@@ -140,9 +139,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2006	AR	Madison	05087	Oil & Gas		Bonus	68216.94
 2006	AR	Madison	05087	Oil & Gas		Rents	9497.86
 2006	AR	Montgomery	05097	Oil & Gas		Bonus	1040
-2006	AR	Montgomery	05097	Hardrock		Rents	49
 2006	AR	Montgomery	05097	Oil & Gas		Rents	132529.64
-2006	AR	Montgomery	05097	Quartz		Rents	40
 2006	AR	Ouachita	05103	Oil & Gas		Rents	10.5
 2006	AR	Perry	05105	Oil & Gas		Bonus	9140
 2006	AR	Perry	05105	Oil & Gas		Rents	47254.43
@@ -166,6 +163,11 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2006	AR	Yell	05149	Oil & Gas		Other Royalties	-38565.39
 2006	AR	Yell	05149	Oil & Gas		Rents	143447.88
 2006	AR	Yell	05149	Gas	Unprocessed (Wet) Gas	Royalties	2262976.32
+2006	AR		05	Hardrock		Other Revenues	811
+2006	AR		05	Hardrock		Other Revenues	480
+2006	AR		05	Hardrock		Rents	-31
+2006	AR		05	Quartz		Rents	40
+2006	AR		05	Quartz Crystal	Quartz Crystal	Royalties	267
 2007	AR	Cleburne	05023	Oil & Gas		Bonus	240
 2007	AR	Cleburne	05023	Oil & Gas		Rents	180
 2007	AR	Columbia	05027	Oil & Gas		Other Royalties	316
@@ -190,7 +192,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2007	AR	Franklin	05047	Gas	Unprocessed (Wet) Gas	Royalties	154143.39
 2007	AR	Fulton	05049	Oil & Gas		Bonus	640
 2007	AR	Fulton	05049	Oil & Gas		Rents	120
-2007	AR	Garland	05051	Hardrock		Rents	-80
 2007	AR	Johnson	05071	Oil & Gas		Bonus	97385
 2007	AR	Johnson	05071	Oil & Gas		Other Revenues	58.95
 2007	AR	Johnson	05071	Oil & Gas		Other Royalties	-1157.21
@@ -205,8 +206,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2007	AR	Logan	05083	Gas	Unprocessed (Wet) Gas	Royalties	612416.08
 2007	AR	Madison	05087	Oil & Gas		Rents	5048.93
 2007	AR	Montgomery	05097	Oil & Gas		Bonus	560
-2007	AR	Montgomery	05097	Hardrock		Other Revenues	1689
-2007	AR	Montgomery	05097	Hardrock		Rents	-495
 2007	AR	Montgomery	05097	Oil & Gas		Rents	187711.14
 2007	AR	Ouachita	05103	Oil & Gas		Rents	14
 2007	AR	Perry	05105	Oil & Gas		Bonus	2860
@@ -233,6 +232,10 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2007	AR	Yell	05149	Oil & Gas		Other Royalties	-29399.96
 2007	AR	Yell	05149	Oil & Gas		Rents	192187.31
 2007	AR	Yell	05149	Gas	Unprocessed (Wet) Gas	Royalties	1663611.83
+2007	AR		05	Hardrock		Other Revenues	1689
+2007	AR		05	Hardrock		Other Revenues	398.4
+2007	AR		05	Hardrock		Rents	-575
+2007	AR		05	Quartz Crystal	Quartz Crystal	Royalties	323.8
 2008	AR	Cleburne	05023	Oil & Gas		Bonus	711760
 2008	AR	Cleburne	05023	Oil & Gas		Rents	240
 2008	AR	Columbia	05027	Gas	Processed (Residue) Gas	Royalties	4838.19
@@ -254,7 +257,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2008	AR	Franklin	05047	Oil & Gas		Rents	101286.74
 2008	AR	Franklin	05047	Gas	Unprocessed (Wet) Gas	Royalties	177466.95
 2008	AR	Fulton	05049	Oil & Gas		Rents	120
-2008	AR	Garland	05051	Hardrock		Other Revenues	240
 2008	AR	Johnson	05071	Oil & Gas		Bonus	97732
 2008	AR	Johnson	05071	Oil & Gas		Other Revenues	1264.62
 2008	AR	Johnson	05071	Oil & Gas		Other Royalties	200
@@ -268,10 +270,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2008	AR	Logan	05083	Oil & Gas		Rents	139634.6
 2008	AR	Logan	05083	Gas	Unprocessed (Wet) Gas	Royalties	2640449.5
 2008	AR	Madison	05087	Oil & Gas		Rents	5048.93
-2008	AR	Montgomery	05097	Hardrock		Other Revenues	705.24
-2008	AR	Montgomery	05097	Hardrock		Rents	-42.45
 2008	AR	Montgomery	05097	Oil & Gas		Rents	205419.64
-2008	AR	Montgomery	05097	Quartz Crystal	Quartz Crystal	Royalties	1038.77
 2008	AR	Ouachita	05103	Oil & Gas		Bonus	22743.5
 2008	AR	Ouachita	05103	Oil & Gas		Rents	74
 2008	AR	Perry	05105	Oil & Gas		Rents	34563
@@ -299,6 +298,12 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2008	AR	Yell	05149	Oil & Gas		Other Royalties	-39748.5
 2008	AR	Yell	05149	Oil & Gas		Rents	151879
 2008	AR	Yell	05149	Gas	Unprocessed (Wet) Gas	Royalties	1249662.95
+2008	AR		05	Hardrock		Other Revenues	945.24
+2008	AR		05	Hardrock		Other Revenues	55.22
+2008	AR		05	Hardrock		Rents	-42.45
+2008	AR		05	Quartz Crystal	Quartz Crystal	Royalties	1428.3
+2008	AR		05	Quartz Crystal	Quartz Crystal	Royalties	1038.77
+2008	AR		05	Wavellite	Wavellite	Royalties	466.8
 2009	AR	Cleburne	05023	Oil & Gas		Rents	240
 2009	AR	Columbia	05027	Oil & Gas		Other Royalties	-400
 2009	AR	Columbia	05027	Gas	Processed (Residue) Gas	Royalties	1782.13
@@ -320,8 +325,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2009	AR	Franklin	05047	Oil	Condensate	Royalties	33.99
 2009	AR	Franklin	05047	Oil	Drip or Scrubber Condensate	Royalties	20.55
 2009	AR	Franklin	05047	Oil	Oil	Royalties	7.26
-2009	AR	Garland	05051	Hardrock		Other Revenues	240
-2009	AR	Garland	05051	Hardrock		Rents	55.52
 2009	AR	Johnson	05071	Oil & Gas		Bonus	-646.14
 2009	AR	Johnson	05071	Oil & Gas		Other Revenues	670
 2009	AR	Johnson	05071	Oil & Gas		Other Royalties	16826.74
@@ -335,8 +338,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2009	AR	Logan	05083	Oil & Gas		Rents	84005.8
 2009	AR	Logan	05083	Gas	Unprocessed (Wet) Gas	Royalties	2433286.29
 2009	AR	Madison	05087	Oil & Gas		Rents	6448.93
-2009	AR	Montgomery	05097	Hardrock		Other Revenues	657.5
-2009	AR	Montgomery	05097	Hardrock		Rents	260
 2009	AR	Montgomery	05097	Oil & Gas		Rents	65860.52
 2009	AR	Ouachita	05103	Oil & Gas		Rents	14
 2009	AR	Perry	05105	Oil & Gas		Rents	34584
@@ -365,6 +366,11 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2009	AR	Yell	05149	Oil & Gas		Other Royalties	-3829.04
 2009	AR	Yell	05149	Oil & Gas		Rents	170334.5
 2009	AR	Yell	05149	Gas	Unprocessed (Wet) Gas	Royalties	368639.88
+2009	AR		05	Hardrock		Other Revenues	897.5
+2009	AR		05	Hardrock		Other Revenues	-296.9
+2009	AR		05	Hardrock		Rents	315.52
+2009	AR		05	Quartz Crystal	Quartz Crystal	Royalties	191.55
+2009	AR		05	Wavellite	Wavellite	Royalties	777.36
 2010	AR	Cleburne	05023	Oil & Gas		Bonus	120000
 2010	AR	Cleburne	05023	Oil & Gas		Other Royalties	64379.55
 2010	AR	Cleburne	05023	Oil & Gas		Rents	120
@@ -393,8 +399,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2010	AR	Franklin	05047	Oil	Oil	Royalties	32.4
 2010	AR	Fulton	05049	Oil & Gas		Other Royalties	50
 2010	AR	Fulton	05049	Gas	Unprocessed (Wet) Gas	Royalties	900.84
-2010	AR	Garland	05051	Hardrock		Other Revenues	240
-2010	AR	Garland	05051	Hardrock		Rents	-55.52
 2010	AR	Johnson	05071	Oil & Gas		Bonus	1506
 2010	AR	Johnson	05071	Oil & Gas		Other Revenues	1003.4
 2010	AR	Johnson	05071	Oil & Gas		Other Royalties	-3382.75
@@ -408,8 +412,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2010	AR	Logan	05083	Oil & Gas		Rents	79594.5
 2010	AR	Logan	05083	Gas	Unprocessed (Wet) Gas	Royalties	4352805.15
 2010	AR	Madison	05087	Oil & Gas		Rents	5931.91
-2010	AR	Montgomery	05097	Hardrock		Other Revenues	160
-2010	AR	Montgomery	05097	Hardrock		Rents	-237.55
 2010	AR	Montgomery	05097	Oil & Gas		Rents	62539.02
 2010	AR	Ouachita	05103	Oil & Gas		Rents	14
 2010	AR	Perry	05105	Oil & Gas		Rents	44565
@@ -442,6 +444,11 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2010	AR	Yell	05149	Oil & Gas		Other Royalties	-7652.56
 2010	AR	Yell	05149	Oil & Gas		Rents	158884
 2010	AR	Yell	05149	Gas	Unprocessed (Wet) Gas	Royalties	386902.24
+2010	AR		05	Hardrock		Other Revenues	846.77
+2010	AR		05	Hardrock		Other Revenues	400
+2010	AR		05	Hardrock		Rents	-293.07
+2010	AR		05	Quartz Crystal	Quartz Crystal	Royalties	50.25
+2010	AR		05	Wavellite	Wavellite	Royalties	69.1
 2011	AR	Cleburne	05023	Oil & Gas		Other Royalties	-60096.54
 2011	AR	Cleburne	05023	Oil & Gas		Rents	120
 2011	AR	Cleburne	05023	Gas	Unprocessed (Wet) Gas	Royalties	-41604.5
@@ -467,7 +474,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2011	AR	Franklin	05047	Gas	Unprocessed (Wet) Gas	Royalties	82230.36
 2011	AR	Franklin	05047	Oil	Oil	Royalties	23.29
 2011	AR	Fulton	05049	Gas	Unprocessed (Wet) Gas	Royalties	212.93
-2011	AR	Garland	05051	Hardrock		Rents	80
 2011	AR	Johnson	05071	Oil & Gas		Bonus	300
 2011	AR	Johnson	05071	Oil & Gas		Other Revenues	3056.54
 2011	AR	Johnson	05071	Oil & Gas		Other Royalties	-11432.59
@@ -481,8 +487,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2011	AR	Logan	05083	Oil & Gas		Rents	54163.5
 2011	AR	Logan	05083	Gas	Unprocessed (Wet) Gas	Royalties	3225320.95
 2011	AR	Madison	05087	Oil & Gas		Rents	6131.91
-2011	AR	Montgomery	05097	Hardrock		Other Revenues	120
-2011	AR	Montgomery	05097	Hardrock		Rents	-40
 2011	AR	Montgomery	05097	Oil & Gas		Rents	61197.02
 2011	AR	Ouachita	05103	Oil & Gas		Rents	14
 2011	AR	Perry	05105	Oil & Gas		Rents	36285
@@ -512,6 +516,10 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2011	AR	Yell	05149	Oil & Gas		Rents	84571
 2011	AR	Yell	05149	Gas	Unprocessed (Wet) Gas	Royalties	414765.95
 2011	AR	Yell	05149	Oil & Gas		Royalties	-2.84
+2011	AR		05	Hardrock		Other Revenues	1006.65
+2011	AR		05	Hardrock		Other Revenues	120
+2011	AR		05	Hardrock		Rents	40
+2011	AR		05	Quartz Crystal	Quartz Crystal	Royalties	7.35
 2012	AR	Cleburne	05023	Oil & Gas		Other Royalties	1550
 2012	AR	Cleburne	05023	Oil & Gas		Rents	120
 2012	AR	Cleburne	05023	Gas	Unprocessed (Wet) Gas	Royalties	-103995.19
@@ -538,7 +546,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2012	AR	Franklin	05047	Oil	Drip or Scrubber Condensate	Royalties	-20.55
 2012	AR	Franklin	05047	Oil	Oil	Royalties	-62.95
 2012	AR	Fulton	05049	Gas	Unprocessed (Wet) Gas	Royalties	106.83
-2012	AR	Garland	05051	Hardrock		Rents	-80
 2012	AR	Johnson	05071	Oil & Gas		Bonus	-3600
 2012	AR	Johnson	05071	Oil & Gas		Other Revenues	1379.92
 2012	AR	Johnson	05071	Oil & Gas		Other Royalties	-356.4
@@ -551,8 +558,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2012	AR	Logan	05083	Oil & Gas		Other Royalties	225.17
 2012	AR	Logan	05083	Oil & Gas		Rents	24385.5
 2012	AR	Logan	05083	Gas	Unprocessed (Wet) Gas	Royalties	1878278.39
-2012	AR	Montgomery	05097	Hardrock		Other Revenues	240
-2012	AR	Montgomery	05097	Hardrock		Rents	-40
 2012	AR	Perry	05105	Oil & Gas		Rents	20525.5
 2012	AR	Polk	05113	Oil & Gas		Rents	3390
 2012	AR	Pope	05115	Oil & Gas		Bonus	2912
@@ -578,6 +583,10 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2012	AR	Yell	05149	Oil & Gas		Other Revenues	343.76
 2012	AR	Yell	05149	Oil & Gas		Rents	40984.5
 2012	AR	Yell	05149	Gas	Unprocessed (Wet) Gas	Royalties	176589.8
+2012	AR		05	Hardrock		Other Revenues	762.7
+2012	AR		05	Hardrock		Other Revenues	240
+2012	AR		05	Hardrock		Rents	-120
+2012	AR		05	Quartz Crystal	Quartz Crystal	Royalties	11.3
 2013	AR	Cleburne	05023	Oil & Gas		Other Revenues	120
 2013	AR	Cleburne	05023	Oil & Gas		Other Royalties	1550
 2013	AR	Cleburne	05023	Gas	Unprocessed (Wet) Gas	Royalties	180981.71
@@ -597,7 +606,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2013	AR	Franklin	05047	Gas	Unprocessed (Wet) Gas	Royalties	54093.59
 2013	AR	Fulton	05049	Oil & Gas		Other Royalties	-50
 2013	AR	Fulton	05049	Gas	Unprocessed (Wet) Gas	Royalties	135.54
-2013	AR	Garland	05051	Hardrock		Other Revenues	240
 2013	AR	Johnson	05071	Oil & Gas		Other Revenues	927.06
 2013	AR	Johnson	05071	Oil & Gas		Other Royalties	1012
 2013	AR	Johnson	05071	Oil & Gas		Rents	23862.5
@@ -609,8 +617,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2013	AR	Logan	05083	Oil & Gas		Rents	18624
 2013	AR	Logan	05083	Gas	Fuel Gas	Royalties	1472.8
 2013	AR	Logan	05083	Gas	Unprocessed (Wet) Gas	Royalties	2214838.85
-2013	AR	Montgomery	05097	Hardrock		Other Revenues	120
-2013	AR	Montgomery	05097	Hardrock		Rents	-100
 2013	AR	Perry	05105	Oil & Gas		Rents	52686
 2013	AR	Polk	05113	Oil & Gas		Rents	3390
 2013	AR	Pope	05115	Oil & Gas		Other Revenues	298.5
@@ -638,30 +644,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2013	AR	Yell	05149	Oil & Gas		Rents	35635.5
 2013	AR	Yell	05149	Gas	Fuel Gas	Royalties	1407.79
 2013	AR	Yell	05149	Gas	Unprocessed (Wet) Gas	Royalties	179433.76
-2004	AR	Montgomery	05097	Hardrock		Other Revenues	681.5
-2004	AR	Montgomery	05097	Quartz Crystal	Quartz Crystal	Royalties	235.5
-2005	AR	Montgomery	05097	Hardrock		Other Revenues	386.4
-2005	AR	Montgomery	05097	Quartz Crystal	Quartz Crystal	Royalties	345.85
-2006	AR	Montgomery	05097	Hardrock		Other Revenues	811
-2006	AR	Montgomery	05097	Quartz Crystal	Quartz Crystal	Royalties	267
-2007	AR	Montgomery	05097	Hardrock		Other Revenues	398.4
-2007	AR	Montgomery	05097	Quartz Crystal	Quartz Crystal	Royalties	323.8
-2008	AR	Garland	05051	Hardrock		Other Revenues	-86.8
-2008	AR	Garland	05051	Wavellite	Wavellite	Royalties	166.8
-2008	AR	Montgomery	05097	Hardrock		Other Revenues	142.02
-2008	AR	Montgomery	05097	Quartz Crystal	Quartz Crystal	Royalties	1428.3
-2008	AR	Montgomery	05097	Wavellite	Wavellite	Royalties	300
-2009	AR	Garland	05051	Hardrock		Other Revenues	-260.6
-2009	AR	Garland	05051	Wavellite	Wavellite	Royalties	777.36
-2009	AR	Montgomery	05097	Hardrock		Other Revenues	-36.3
-2009	AR	Montgomery	05097	Quartz Crystal	Quartz Crystal	Royalties	191.55
-2010	AR	Garland	05051	Hardrock		Other Revenues	-93.58
-2010	AR	Garland	05051	Wavellite	Wavellite	Royalties	69.1
-2010	AR	Montgomery	05097	Hardrock		Other Revenues	940.35
-2010	AR	Montgomery	05097	Quartz Crystal	Quartz Crystal	Royalties	50.25
-2011	AR	Montgomery	05097	Hardrock		Other Revenues	1006.65
-2011	AR	Montgomery	05097	Quartz Crystal	Quartz Crystal	Royalties	7.35
-2012	AR	Montgomery	05097	Hardrock		Other Revenues	762.7
-2012	AR	Montgomery	05097	Quartz Crystal	Quartz Crystal	Royalties	11.3
-2013	AR	Montgomery	05097	Hardrock		Other Revenues	1009.55
-2013	AR	Montgomery	05097	Quartz Crystal	Quartz Crystal	Royalties	4.45
+2013	AR		05	Hardrock		Other Revenues	1009.55
+2013	AR		05	Hardrock		Other Revenues	360
+2013	AR		05	Hardrock		Rents	-100
+2013	AR		05	Quartz Crystal	Quartz Crystal	Royalties	4.45

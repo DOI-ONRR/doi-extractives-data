@@ -15,7 +15,12 @@
   top: auto;
   width: 1px;
   height: px;
-  overflow: hidden; 
+  overflow: hidden;
+}
+
+.u-img {
+  border-radius: $base-border-radius;
+  width: 100%;
 }
 
 ul.bullet {
@@ -78,7 +83,7 @@ strong {
 
 a {
 
-  .expand, 
+  .expand,
   .more {
     @include font-size(0.75);
     text-transform: uppercase;
@@ -135,11 +140,11 @@ header {
   }
 
   div:first-of-type {
-    @include span-columns(6);
+    @include span-columns(5);
   }
 
   nav {
-    @include span-columns(6);
+    @include span-columns(7);
     @include omega();
 
     ul li {
@@ -161,30 +166,40 @@ footer {
   padding-top: $base-padding-extra;
   padding-bottom: $base-padding-extra;
 
-  img {
-    width: 150px;
-  }
-
-  h1 {
-    @include font-size($h4);
+  h3 {
     color: $white;
     padding-bottom: $base-padding-lite;
   }
 
+  a {
+    color: $white;
+    text-decoration: underline;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+
   p {
     color: $white;
+    
     &.footer-intro {
       @include font-size($h1);
       line-height: 1.2;
       margin-bottom: 1em;
     }
 
-    &:nth-of-type(2) {
+    + p {
       @include font-size($h3);
       margin-bottom: $base-padding-extra;
     }
+
+    + h3 {
+      padding-top: $base-padding-large;
+    }
   }
-  
+
   .footer-col-left {
     @include span-columns(8);
   }
@@ -225,7 +240,7 @@ footer {
     width: 93%;
   }
 
-  ul {  
+  ul {
   display: inline-block;
   margin-bottom: $base-padding-lite;
 
@@ -302,7 +317,7 @@ footer {
   padding-top: $base-padding-large;
   padding-bottom: $base-padding;
 
-  img {
+  .comm-intro-img {
     height: 310px;
   }
 
@@ -329,11 +344,16 @@ footer {
 .communities-right {
   @include span-columns(5);
 }
-
+.communities-sticky-nav{
+    position: absolute;
+    left: percentage(7 / 12);
+    padding-left: $base-padding-extra;
+    top: 0;
+}
 .communities-content {
   padding-top: $base-padding;
   padding-bottom: $base-padding-extra;
-
+  position: relative;
   h2 {
     @extend .article_heading;
     padding-bottom: $base-padding;
@@ -650,7 +670,7 @@ footer {
     color: $light-black;
   }
 
-  ul { 
+  ul {
     position: absolute;
     left: 50%;
     margin-right: -50%;
@@ -889,7 +909,7 @@ footer {
     }
 
     .revenues-section-involved-participate {
-      
+
       margin-bottom: 100px;
       > div:first-of-type {
         @include span-columns(8 of 12);
@@ -1162,7 +1182,7 @@ a[aria-describedby="footnote-label"] {
   outline: none; // 2
   text-decoration: none; // 2
 }
- 
+
  // Actual numbered references
  // 1. Display the current state of the counter (e.g. `[1]`)
  // 2. Align text as superscript
@@ -1179,7 +1199,7 @@ a[aria-describedby="footnote-label"]:after {
   margin-left: 2px; // 4
   vertical-align: super; // 2
 }
- 
+
 // Resetting the default focused styles on the number
 
 a[aria-describedby="footnote-label"]:focus:after,
@@ -1198,3 +1218,27 @@ a[aria-label="Back to content"] {
   }
 }
 
+
+// About
+//============================================
+
+.bureaus {
+  > article {
+    @include span-columns(12);
+
+    > div {
+      &:first-of-type {
+        @include span-columns(3 of 12);
+      }
+
+      &:last-of-type {
+        @include span-columns(9 of 12);
+      }
+
+      img {
+        padding-top: $base-padding;
+        max-width: 100px;
+      }
+    }
+  }
+}

@@ -77,6 +77,9 @@
     "Hardrock": {
       "group": "minerals"
     },
+    "Iron": {
+      "group": "minerals"
+    },
     "Limestone": {
       "group": "minerals"
     },
@@ -105,6 +108,9 @@
       "group": "minerals"
     },
     "Sulfur": {
+      "group": "minerals"
+    },
+    "Mining": {
       "group": "minerals"
     },
     "Other": {

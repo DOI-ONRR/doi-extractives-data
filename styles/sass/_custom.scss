@@ -418,6 +418,27 @@ footer {
     padding-bottom: $base-padding;
   }
 
+  table{
+    border: 1px solid $mid-gray;
+    border-spacing: 2px;
+    @include font-size(0.9);
+    color: darken($dark-putty, 15%);
+    font-weight: 200;
+    margin-bottom: $base-padding;
+  }
+
+  thead{
+    border-bottom: 2px solid $mid-gray;
+    font-weight: 400;
+    text-align: center;
+    background-color: $mid-gray
+  }
+
+  td{
+    border: 1px solid $mid-gray;
+    padding: 5px;
+  }
+
   .communities-county {
     width: 200px;
   }
@@ -425,6 +446,14 @@ footer {
   .communities-left {
     padding-right: $base-padding-extra;
     //order-right: 1px solid $mid-gray;
+      ul{
+      list-style-type: square;
+      padding-left: $base-padding;
+      @include font-size(0.9);
+      color: darken($dark-putty, 15%);
+      font-weight: 200; 
+      padding-bottom: $base-padding;
+    }
   }
 
   .communities-right {
@@ -1242,3 +1271,4 @@ a[aria-label="Back to content"] {
     }
   }
 }
+

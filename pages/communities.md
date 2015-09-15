@@ -103,11 +103,11 @@ permalink: /communities/
       <nav>
 
         <ul>
-          <li class="active"><a href="#intro">Introduction</a></li>
-          <li><a href="#reven">Revenue Sustainability</a></li>
-          <li><a href="#county-rev">Revenues</a></li>
-          <li><a href="#county-cos">Costs</a></li>
-          <li><a href="#data">Our Data</a></li>
+          <li class="communities-nav-item active"><a name="intro" href="#intro">Introduction</a></li>
+          <li class="communities-nav-item"><a href="#reven">Revenue Sustainability</a></li>
+          <li class="communities-nav-item"><a href="#county-rev">Revenues</a></li>
+          <li class="communities-nav-item"><a href="#county-cos">Costs</a></li>
+          <li class="communities-nav-item"><a href="#data">Our Data</a></li>
         </ul>
 
       </nav>
@@ -119,3 +119,6 @@ permalink: /communities/
 </div>
 
 <script src="/js/pages/communities.js"></script>
+
+
+

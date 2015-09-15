@@ -3013,10 +3013,34 @@ footer {
         color: #1075a5; }
   .communities-content p {
     padding-bottom: 1.25em; }
+  .communities-content table {
+    border: 1px solid #e1e1e1;
+    border-spacing: 2px;
+    font-size: 9px;
+    font-size: 0.9rem;
+    color: #5d5d5d;
+    font-weight: 200;
+    margin-bottom: 1.25em; }
+  .communities-content thead {
+    border-bottom: 2px solid #e1e1e1;
+    font-weight: 400;
+    text-align: center;
+    background-color: #e1e1e1; }
+  .communities-content td {
+    border: 1px solid #e1e1e1;
+    padding: 5px; }
   .communities-content .communities-county {
     width: 200px; }
   .communities-content .communities-left {
     padding-right: 3.125em; }
+    .communities-content .communities-left ul {
+      list-style-type: square;
+      padding-left: 1.25em;
+      font-size: 9px;
+      font-size: 0.9rem;
+      color: #5d5d5d;
+      font-weight: 200;
+      padding-bottom: 1.25em; }
 
 .communities-choose {
   padding-bottom: 1.25em; }

@@ -22,7 +22,7 @@ var async = require('async');
 var streamify = require('stream-array');
 var d3 = require('d3');
 
-var revenueKey = 'Royalty/Revenue';
+var revenueKey = 'Total';
 var regionKey = 'Offshore Region';
 var areaKey = 'Planning Area';
 var yearKey = 'Calendar Year'; // 'CY'

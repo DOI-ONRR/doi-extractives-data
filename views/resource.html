@@ -62,9 +62,9 @@
             <form>
               <select name="datatype" onchange="location.href = location.href.replace('{{ request.params.datatype }}', this.value);">
                 <option value="revenue"{% if request.params.datatype == 'revenue' %} selected{% endif %}>Revenues</option>
-                <option value="production"{% if request.params.datatype == 'production' %} selected{% endif %}>Production</option>
+                <option disabled value="production"{% if request.params.datatype == 'production' %} selected{% endif %}>Production</option>
                 <option value="exports"{% if request.params.datatype == 'exports' %} selected{% endif %}>Exports</option>
-                <option value="jobs"{% if request.params.datatype == 'jobs' %} selected{% endif %}>Jobs</option>
+                <option disabled value="jobs"{% if request.params.datatype == 'jobs' %} selected{% endif %}>Jobs</option>
               </select>
             </form>
           </div>

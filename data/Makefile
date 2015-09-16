@@ -106,8 +106,10 @@ output/state/gdp.tsv:
 # state export figures
 output/state/exports-by-industry.tsv: input/census/top-state-exports.tsv
 	mkdir -p $(dir $@)
-	bin/parse-census-commodities.js \
-		$< > $@
+	bin/parse-census-commodities.js $< | \
+		bin/add-resource-group.js | \
+		bin/abbr-state.js --if tsv --of tsv \
+		> $@
 
 # offshore revenues by region and area
 output/offshore/revenues.tsv: input/onrr/offshore-revenues.tsv

@@ -94,14 +94,16 @@ async.waterfall([
 
     rows.forEach(function(d, i) {
       if (i === 0) console.warn(d, years);
-      years.forEach(function(y) {
+      years.forEach(function(year) {
+        var value = +d['val' + year];
+        if (!value) return;
         result.push({
           State:  d.State,
           Commodity: d.Commodity,
           HS6:    d.HS6,
-          Year:   y,
-          Value:  +d['val' + y],
-          Share:  +d['share' + y.substr(-2)]
+          Year:   year,
+          Value:  value,
+          Share:  +d['share' + year.substr(-2)]
         });
       });
     });

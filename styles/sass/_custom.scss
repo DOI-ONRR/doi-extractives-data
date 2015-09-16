@@ -870,10 +870,6 @@ footer {
           background-color: #7f6e61;
         }
       }
-      @include respond-to(medium-up) {
-        margin-top: 50%;
-        @include span-columns(4);
-      }
     }
   }
 
@@ -906,11 +902,9 @@ footer {
       padding-bottom: $base-padding;
       padding-left: 60px;
     }
-    &.revenues-steps-group-onshore-oil{
-      @include respond-to(medium-up) {
-        @include span-columns(7);
-        @include shift(1);
-      }
+    @include respond-to(medium-up) {
+      @include span-columns(7);
+      @include shift(3);
     }
   }
 

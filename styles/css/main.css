@@ -3366,11 +3366,17 @@ footer {
     background-position: 0px -100px;
     background-size: 100%;
     margin-top: 0; }
+<<<<<<< 5245a214ddf38430c5baaaefbacb68e50b32b57a
   .revenues-section-subpage-steps.renew-off {
     background: url(/img/revenues/renew-offshore.svg) no-repeat;
     background-position: 0px -100px;
     background-size: 100%;
     margin-top: 0; }
+=======
+  .revenues-section-subpage-steps.rev-coal {
+    background: url(/img/revenues/rev-coal.png) no-repeat;
+    background-size: 100%; }
+>>>>>>> added bulk of content
   .revenues-section-subpage-steps .revenues-section-subpage-dyk {
     position: relative; }
     .revenues-section-subpage-steps .revenues-section-subpage-dyk p {
@@ -3409,10 +3415,15 @@ footer {
       border-radius: 5px 5px 0 0; }
     .revenues-section-subpage-steps .revenues-steps-group li:last-of-type {
       border-radius: 0 0 5px 5px; }
-  .revenues-section-subpage-steps .revenues-steps-group p {
+  .revenues-section-subpage-steps .revenues-steps-group p, .revenues-section-subpage-steps .revenues-steps-group ul {
     padding-right: 1.25em;
     padding-bottom: 1.25em;
     padding-left: 60px; }
+  .revenues-section-subpage-steps .revenues-steps-group ul {
+    list-style-type: disc;
+    padding-left: 80px; }
+    .revenues-section-subpage-steps .revenues-steps-group ul li {
+      padding: 0; }
   @media only screen and (min-width: 48em) {
     .revenues-section-subpage-steps .revenues-steps-group {
       float: left;

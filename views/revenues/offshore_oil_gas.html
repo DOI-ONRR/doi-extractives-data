@@ -168,26 +168,3 @@
 
 
 {% endblock %}
-
-{% block script %}
-<script>
-(function() {
-  console.log('click')
-  var page = 'offshore';
-  // var window.page = 'offshore'
-  var revenuesNavOption = document.getElementsByClassName("revenues-subpage-nav-option");
-
-  var changePage = function(page){
-    page = page;
-    console.log('page')
-  }
-  for (var i = 0; i < revenuesNavOption.length; i++) {
-    console.log(revenuesNavOption)
-    revenuesNavOption[i].addEventListener("click", changePage('brian'));
-  };
-
-
-
-})();
-</script>
-{% endblock %}

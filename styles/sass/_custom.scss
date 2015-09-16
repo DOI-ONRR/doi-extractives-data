@@ -821,6 +821,7 @@ footer {
   }
   &.onshore-oil{
     background: url(/img/revenues/rev-onshore-oil.png) no-repeat;
+    background-size: 100%;
   }
   .revenues-section-subpage-dyk {
     position: relative;
@@ -850,6 +851,20 @@ footer {
     @include respond-to(medium-up) {
       margin-top: 50%;
       @include span-columns(2);
+    }
+    &.revenues-section-subpage-dyk-onshore-oil{
+      p {
+        color: darken($dark-putty, 15%);
+      }
+      > div {
+        &:first-of-type {
+          background-color: #7f6e61;
+        }
+      }
+      @include respond-to(medium-up) {
+        margin-top: 50%;
+        @include span-columns(4);
+      }
     }
   }
 
@@ -882,10 +897,11 @@ footer {
       padding-bottom: $base-padding;
       padding-left: 60px;
     }
-
-    @include respond-to(medium-up) {
-      @include span-columns(7);
-      @include shift(3);
+    &.revenues-steps-group-onshore-oil{
+      @include respond-to(medium-up) {
+        @include span-columns(7);
+        @include shift(1);
+      }
     }
   }
 

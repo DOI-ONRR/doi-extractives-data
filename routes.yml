@@ -12,6 +12,8 @@
   view: revenues-home
 /resource_revenues/offshore_oil_gas:
   view: revenues/offshore_oil_gas
+/resource_revenues/onshore_renewables:
+  view: revenues/onshore_renewables
 
 /locations:
   view: locations

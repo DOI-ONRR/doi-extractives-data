@@ -3353,24 +3353,22 @@ footer {
     font-size: 1.9rem;
     line-height: 1.2; }
 
-<<<<<<< f7127345935cf0809e2f7d97ea15b4096fb81f24
 .revenues-section-subpage-steps-wrapper {
   background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPgo8bGluZWFyR3JhZGllbnQgaWQ9Imc0NjQiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMTAwJSI+CjxzdG9wIHN0b3AtY29sb3I9IiNmNGY0ZjQiIG9mZnNldD0iMCIvPjxzdG9wIHN0b3AtY29sb3I9IiNCOUUzRjkiIG9mZnNldD0iMSIvPgo8L2xpbmVhckdyYWRpZW50Pgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2c0NjQpIiAvPgo8L3N2Zz4=); }
-=======
+
 .forms-light-blue {
   color: #1e7caa; }
->>>>>>> bottom section onshore
 
 .revenues-section-subpage-steps {
   background-position: 0px 100px;
   background-size: 100%;
   margin-top: 1.875em; }
-<<<<<<< f7127345935cf0809e2f7d97ea15b4096fb81f24
   .revenues-section-subpage-steps.renew-on {
     background: url(/img/revenues/renew-onshore.svg) no-repeat;
     background-position: 0px -100px;
     background-size: 100%;
     margin-top: 0; }
+<<<<<<< 2aca52f94ab858cb7c433998d0061ad0d2a9feff
 <<<<<<< 8aa54673bbb7b50de90cac199c46a72735feb55e
   .revenues-section-subpage-steps.renew-off {
     background: url(/img/revenues/renew-offshore.svg) no-repeat;
@@ -3385,6 +3383,13 @@ footer {
     background: url(/img/revenues/rev-onshore-oil.png) no-repeat; }
 >>>>>>> bottom section onshore
 >>>>>>> bottom section onshore
+=======
+  .revenues-section-subpage-steps.offshore-oil {
+    background: url(/img/revenues/offshore-oil.png) no-repeat; }
+  .revenues-section-subpage-steps.onshore-oil {
+    background: url(/img/revenues/rev-onshore-oil.png) no-repeat;
+    background-size: 100%; }
+>>>>>>> social media and did you know in place
   .revenues-section-subpage-steps .revenues-section-subpage-dyk {
     position: relative; }
     .revenues-section-subpage-steps .revenues-section-subpage-dyk p {
@@ -3410,6 +3415,19 @@ footer {
         width: 14.70196%; }
         .revenues-section-subpage-steps .revenues-section-subpage-dyk:last-child {
           margin-right: 0; } }
+    .revenues-section-subpage-steps .revenues-section-subpage-dyk.revenues-section-subpage-dyk-onshore-oil p {
+      color: #5d5d5d; }
+    .revenues-section-subpage-steps .revenues-section-subpage-dyk.revenues-section-subpage-dyk-onshore-oil > div:first-of-type {
+      background-color: #7f6e61; }
+    @media only screen and (min-width: 48em) {
+      .revenues-section-subpage-steps .revenues-section-subpage-dyk.revenues-section-subpage-dyk-onshore-oil {
+        margin-top: 50%;
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 31.76157%; }
+        .revenues-section-subpage-steps .revenues-section-subpage-dyk.revenues-section-subpage-dyk-onshore-oil:last-child {
+          margin-right: 0; } }
   .revenues-section-subpage-steps .revenues-steps-group a {
     text-decoration: underline; }
     .revenues-section-subpage-steps .revenues-steps-group a:hover,
@@ -3428,13 +3446,13 @@ footer {
     padding-bottom: 1.25em;
     padding-left: 60px; }
   @media only screen and (min-width: 48em) {
-    .revenues-section-subpage-steps .revenues-steps-group {
+    .revenues-section-subpage-steps .revenues-steps-group.revenues-steps-group-onshore-oil {
       float: left;
       display: block;
       margin-right: 2.35765%;
       width: 57.35098%;
-      margin-left: 25.58941%; }
-      .revenues-section-subpage-steps .revenues-steps-group:last-child {
+      margin-left: 8.5298%; }
+      .revenues-section-subpage-steps .revenues-steps-group.revenues-steps-group-onshore-oil:last-child {
         margin-right: 0; } }
   .revenues-section-subpage-steps .revenues-steps-number {
     border: 2px solid #e1e1e1;

@@ -25,6 +25,7 @@
   view: revenues/offshore_renewables
 
 
+
 /locations:
   view: locations
 /locations/onshore:

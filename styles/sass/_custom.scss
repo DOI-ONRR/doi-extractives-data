@@ -862,6 +862,9 @@ footer {
       p {
         color: darken($dark-putty, 15%);
       }
+      > a {
+        color: white;
+      }
       > div {
         &:first-of-type {
           background-color: #7f6e61;

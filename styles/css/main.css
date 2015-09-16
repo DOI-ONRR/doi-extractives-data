@@ -3417,6 +3417,8 @@ footer {
           margin-right: 0; } }
     .revenues-section-subpage-steps .revenues-section-subpage-dyk.revenues-section-subpage-dyk-onshore-oil p {
       color: #5d5d5d; }
+    .revenues-section-subpage-steps .revenues-section-subpage-dyk.revenues-section-subpage-dyk-onshore-oil > a {
+      color: white; }
     .revenues-section-subpage-steps .revenues-section-subpage-dyk.revenues-section-subpage-dyk-onshore-oil > div:first-of-type {
       background-color: #7f6e61; }
     @media only screen and (min-width: 48em) {

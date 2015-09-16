@@ -236,6 +236,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2010	OH	Washington	39167	Oil & Gas		Rents	1886.41
 2010	OH	Washington	39167	Gas	Unprocessed (Wet) Gas	Royalties	35094.3
 2010	OH	Washington	39167	Oil	Oil	Royalties	32806.35
+2010	OH		39	Coal	Coal	Royalties	3372.86
 2011	OH	Athens	39009	Gas	Unprocessed (Wet) Gas	Royalties	6117.46
 2011	OH	Athens	39009	Oil	Oil	Royalties	2597.35
 2011	OH	Gallia	39053	Oil & Gas		Rents	5072.5
@@ -336,4 +337,3 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2013	OH	Washington	39167	Oil & Gas		Rents	882.02
 2013	OH	Washington	39167	Gas	Unprocessed (Wet) Gas	Royalties	14319.28
 2013	OH	Washington	39167	Oil	Oil	Royalties	24398.49
-2010	OH	Athens	39009	Coal	Coal	Royalties	3372.86

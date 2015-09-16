@@ -4,9 +4,9 @@ Year	State	County	FIPS	Resource	Revenue
 2004	WA	Franklin	53021	oilgas	1139275.92
 2004	WA	Grant	53025	oilgas	787756.50
 2004	WA	Kittitas	53037	oilgas	52046.50
-2004	WA	Lewis	53041	coal	25517.65
 2004	WA	Walla Walla	53071	oilgas	780.00
 2004	WA	Yakima	53077	oilgas	364542.50
+2004	WA		53	coal	25517.65
 2005	WA	Adams	53001	oilgas	47509.50
 2005	WA	Benton	53005	oilgas	99257.03
 2005	WA	Douglas	53017	oilgas	2436.46
@@ -14,9 +14,9 @@ Year	State	County	FIPS	Resource	Revenue
 2005	WA	Grant	53025	oilgas	349473.04
 2005	WA	Kittitas	53037	oilgas	35478.00
 2005	WA	Klickitat	53039	oilgas	12180.00
-2005	WA	Lewis	53041	coal	5218.70
 2005	WA	Walla Walla	53071	oilgas	780.00
 2005	WA	Yakima	53077	oilgas	67405.50
+2005	WA		53	coal	5218.70
 2006	WA	Adams	53001	oilgas	47636.00
 2006	WA	Benton	53005	oilgas	382957.03
 2006	WA	Chelan	53007	oilgas	299.26
@@ -25,9 +25,9 @@ Year	State	County	FIPS	Resource	Revenue
 2006	WA	Grant	53025	oilgas	3689561.40
 2006	WA	Kittitas	53037	oilgas	125291.00
 2006	WA	Klickitat	53039	oilgas	890978.00
-2006	WA	Lewis	53041	coal	12234.65
 2006	WA	Walla Walla	53071	oilgas	780.00
 2006	WA	Yakima	53077	oilgas	138738.50
+2006	WA		53	coal	12234.65
 2007	WA	Adams	53001	oilgas	47509.50
 2007	WA	Benton	53005	oilgas	53109.03
 2007	WA	Chelan	53007	oilgas	128.25
@@ -36,45 +36,45 @@ Year	State	County	FIPS	Resource	Revenue
 2007	WA	Grant	53025	oilgas	458244.02
 2007	WA	Kittitas	53037	oilgas	42820.00
 2007	WA	Klickitat	53039	oilgas	27219.50
-2007	WA	Lewis	53041	coal	-45938.18
 2007	WA	Walla Walla	53071	oilgas	1040.00
 2007	WA	Yakima	53077	oilgas	121246.50
+2007	WA		53	coal	-45938.18
 2008	WA	Adams	53001	oilgas	53268.00
 2008	WA	Benton	53005	oilgas	45112.53
 2008	WA	Franklin	53021	oilgas	281821.47
 2008	WA	Grant	53025	oilgas	430399.00
 2008	WA	Kittitas	53037	oilgas	42820.00
 2008	WA	Klickitat	53039	oilgas	27217.50
-2008	WA	Lewis	53041	coal	207864.90
 2008	WA	Walla Walla	53071	oilgas	1040.00
 2008	WA	Yakima	53077	oilgas	106350.50
+2008	WA		53	coal	207864.90
 2009	WA	Adams	53001	oilgas	62316.00
 2009	WA	Benton	53005	oilgas	67270.05
 2009	WA	Franklin	53021	oilgas	434321.95
 2009	WA	Grant	53025	oilgas	372256.00
 2009	WA	Kittitas	53037	oilgas	46656.50
 2009	WA	Klickitat	53039	oilgas	25933.50
-2009	WA	Lewis	53041	coal	2406.00
 2009	WA	Walla Walla	53071	oilgas	1040.00
 2009	WA	Yakima	53077	oilgas	39769.00
+2009	WA		53	coal	2406.00
 2010	WA	Adams	53001	oilgas	12169.00
 2010	WA	Benton	53005	oilgas	43664.00
 2010	WA	Franklin	53021	oilgas	335643.00
 2010	WA	Grant	53025	oilgas	97806.00
 2010	WA	Kittitas	53037	oilgas	20326.50
 2010	WA	Klickitat	53039	oilgas	17983.50
-2010	WA	Lewis	53041	coal	726.00
 2010	WA	Walla Walla	53071	oilgas	1040.00
 2010	WA	Yakima	53077	oilgas	11399.00
+2010	WA		53	coal	726.00
 2011	WA	Benton	53005	oilgas	5707.50
 2011	WA	Franklin	53021	oilgas	305533.00
 2011	WA	Grant	53025	oilgas	52652.00
 2011	WA	Kittitas	53037	oilgas	1440.00
 2011	WA	Klickitat	53039	oilgas	14306.00
-2011	WA	Lewis	53041	coal	1566.00
-2011	WA	Whatcom	53073	renewables	16874.00
+2011	WA		53	coal	1566.00
+2011	WA		53	renewables	16874.00
 2012	WA	Benton	53005	oilgas	5707.50
 2012	WA	Klickitat	53039	oilgas	3848.00
-2012	WA	Lewis	53041	coal	1566.00
-2013	WA	Lewis	53041	coal	2406.00
-2013	WA	Whatcom	53073	renewables	8437.00
+2012	WA		53	coal	1566.00
+2013	WA		53	coal	2406.00
+2013	WA		53	renewables	8437.00

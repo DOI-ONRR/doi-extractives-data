@@ -1,4 +1,6 @@
 Year	State	County	FIPS	Commodity	Product	Type	Revenue
+2004	AK	Bristol Bay Borough	02060	Oil & Gas		Bonus	-1851000
+2004	AK	Bristol Bay Borough	02185	Oil & Gas		Rents	213831
 2004	AK	Kenai Peninsula Borough	02122	Oil & Gas		Other Revenues	10052.54
 2004	AK	Kenai Peninsula Borough	02122	Gas	Unprocessed (Wet) Gas	Other Royalties	224935.2
 2004	AK	Kenai Peninsula Borough	02122	Oil & Gas		Other Royalties	265932.36
@@ -7,9 +9,10 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2004	AK	Kenai Peninsula Borough	02122	Gas	Unprocessed (Wet) Gas	Royalties	10243750.68
 2004	AK	Kenai Peninsula Borough	02122	NGL	Gas Plant Products	Royalties	371339.82
 2004	AK	Kenai Peninsula Borough	02122	Oil	Oil	Royalties	944070.81
-2004	AK	North Slope Borough	02185	Oil & Gas		Bonus	53904491
-2004	AK	North Slope Borough	02185	Coal		Rents	2560
-2004	AK	North Slope Borough	02185	Oil & Gas		Rents	8886528
+2004	AK	North Slope Borough	02185	Oil & Gas		Bonus	55755491
+2004	AK	North Slope Borough	02185	Oil & Gas		Rents	8672697
+2004	AK		02	Coal		Rents	2560
+2005	AK	Bristol Bay Borough	02185	Oil & Gas		Rents	7680
 2005	AK	Kenai Peninsula Borough	02122	Oil & Gas		Other Revenues	14469.52
 2005	AK	Kenai Peninsula Borough	02122	Gas	Unprocessed (Wet) Gas	Other Royalties	267377.24
 2005	AK	Kenai Peninsula Borough	02122	Oil & Gas		Other Royalties	103709.95
@@ -18,8 +21,9 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2005	AK	Kenai Peninsula Borough	02122	Gas	Unprocessed (Wet) Gas	Royalties	11584825.51
 2005	AK	Kenai Peninsula Borough	02122	NGL	Gas Plant Products	Royalties	337028.07
 2005	AK	Kenai Peninsula Borough	02122	Oil	Oil	Royalties	1440869.2
-2005	AK	North Slope Borough	02185	Coal		Rents	7680
-2005	AK	North Slope Borough	02185	Oil & Gas		Rents	8966257
+2005	AK	North Slope Borough	02185	Oil & Gas		Rents	8958577
+2005	AK		02	Coal		Rents	7680
+2006	AK	Bristol Bay Borough	02185	Oil & Gas		Rents	5120
 2006	AK	Kenai Peninsula Borough	02122	Oil & Gas		Other Revenues	80025.82
 2006	AK	Kenai Peninsula Borough	02122	Oil	Oil	Other Revenues	-11.6
 2006	AK	Kenai Peninsula Borough	02122	Gas	Unprocessed (Wet) Gas	Other Royalties	180625.92
@@ -29,8 +33,9 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2006	AK	Kenai Peninsula Borough	02122	Gas	Unprocessed (Wet) Gas	Royalties	13895828.69
 2006	AK	Kenai Peninsula Borough	02122	NGL	Gas Plant Products	Royalties	139228.34
 2006	AK	Kenai Peninsula Borough	02122	Oil	Oil	Royalties	1810092.43
-2006	AK	North Slope Borough	02185	Coal		Rents	5120
-2006	AK	North Slope Borough	02185	Oil & Gas		Rents	8961282
+2006	AK	North Slope Borough	02185	Oil & Gas		Rents	8956162
+2006	AK		02	Coal		Rents	5120
+2007	AK	Bristol Bay Borough	02185	Oil & Gas		Rents	5120
 2007	AK	Kenai Peninsula Borough	02122	Oil & Gas		Other Revenues	50387.43
 2007	AK	Kenai Peninsula Borough	02122	Gas	Unprocessed (Wet) Gas	Other Royalties	107431.34
 2007	AK	Kenai Peninsula Borough	02122	Oil & Gas		Other Royalties	36383.43
@@ -40,8 +45,9 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2007	AK	Kenai Peninsula Borough	02122	NGL	Gas Plant Products	Royalties	34629.51
 2007	AK	Kenai Peninsula Borough	02122	Oil	Oil	Royalties	1587414.5
 2007	AK	North Slope Borough	02185	Oil & Gas		Bonus	13763715
-2007	AK	North Slope Borough	02185	Coal		Rents	5120
-2007	AK	North Slope Borough	02185	Oil & Gas		Rents	11248990
+2007	AK	North Slope Borough	02185	Oil & Gas		Rents	11243870
+2007	AK		02	Coal		Rents	5120
+2008	AK	Bristol Bay Borough	02185	Oil & Gas		Rents	26150
 2008	AK	Kenai Peninsula Borough	02122	Oil & Gas		Other Revenues	59545.04
 2008	AK	Kenai Peninsula Borough	02122	Gas	Unprocessed (Wet) Gas	Other Royalties	35338.98
 2008	AK	Kenai Peninsula Borough	02122	Oil & Gas		Other Royalties	-10677.22
@@ -50,9 +56,9 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2008	AK	Kenai Peninsula Borough	02122	Gas	Unprocessed (Wet) Gas	Royalties	14654902.74
 2008	AK	Kenai Peninsula Borough	02122	NGL	Gas Plant Products	Royalties	40379.74
 2008	AK	Kenai Peninsula Borough	02122	Oil	Oil	Royalties	1981467.17
-2008	AK	North Slope Borough	02185	Coal		Rents	5120
-2008	AK	North Slope Borough	02185	Oil & Gas		Rents	11909087
+2008	AK	North Slope Borough	02185	Oil & Gas		Rents	11882937
 2008	AK	North Slope Borough	02185	Oil	Oil	Royalties	79698.34
+2008	AK		02	Coal		Rents	5120
 2009	AK	Kenai Peninsula Borough	02122	Oil & Gas		Other Revenues	92185.1
 2009	AK	Kenai Peninsula Borough	02122	Gas	Unprocessed (Wet) Gas	Other Royalties	669201.79
 2009	AK	Kenai Peninsula Borough	02122	Oil & Gas		Other Royalties	-282003.13
@@ -101,7 +107,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2013	AK	Kenai Peninsula Borough	02122	Oil & Gas		Other Revenues	83867.71
 2013	AK	Kenai Peninsula Borough	02122	Gas	Unprocessed (Wet) Gas	Other Royalties	-4658.55
 2013	AK	Kenai Peninsula Borough	02122	Oil & Gas		Other Royalties	-251482.74
-2013	AK	Kenai Peninsula Borough	02122	Geothermal		Rents	7680
 2013	AK	Kenai Peninsula Borough	02122	Oil & Gas		Rents	12409.77
 2013	AK	Kenai Peninsula Borough	02122	Gas	Unprocessed (Wet) Gas	Royalties	6988259.54
 2013	AK	Kenai Peninsula Borough	02122	Oil	Oil	Royalties	6549021
@@ -109,3 +114,4 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2013	AK	North Slope Borough	02185	Oil & Gas		Other Revenues	98535
 2013	AK	North Slope Borough	02185	Oil & Gas		Rents	5310452.72
 2013	AK	North Slope Borough	02185	Oil	Oil	Royalties	49189.68
+2013	AK		02	Geothermal		Rents	7680

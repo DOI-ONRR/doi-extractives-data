@@ -4,7 +4,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2004	OR	Wheeler	41069	Oil & Gas		Rents	17306
 2005	OR	Jefferson	41031	Oil & Gas		Rents	32945
 2005	OR	Wheeler	41069	Oil & Gas		Rents	19233.5
-2006	OR	Deschutes	41017	Geothermal		Rents	3111
 2006	OR	Jefferson	41031	Oil & Gas		Rents	19451.5
 2006	OR	Malheur	41045	Oil & Gas		Bonus	351868
 2006	OR	Malheur	41045	Oil & Gas		Rents	303658.5
@@ -13,11 +12,10 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2006	OR	Umatilla	41059	Oil & Gas		Bonus	73227.58
 2006	OR	Umatilla	41059	Oil & Gas		Rents	23599.18
 2006	OR	Wheeler	41069	Oil & Gas		Rents	20259.5
-2007	OR	Deschutes	41017	Geothermal		Rents	198259.09
+2006	OR		41	Geothermal		Rents	3111
 2007	OR	Gilliam	41021	Oil & Gas		Bonus	456346.85
 2007	OR	Gilliam	41021	Oil & Gas		Rents	33994.6
 2007	OR	Jefferson	41031	Oil & Gas		Rents	21813
-2007	OR	Lake	41037	Geothermal		Rents	2510
 2007	OR	Malheur	41045	Oil & Gas		Rents	303658.5
 2007	OR	Morrow	41049	Oil & Gas		Bonus	8966
 2007	OR	Morrow	41049	Oil & Gas		Rents	56197.82
@@ -28,58 +26,50 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2007	OR	Wasco	41065	Oil & Gas		Bonus	1756
 2007	OR	Wasco	41065	Oil & Gas		Rents	7694.86
 2007	OR	Wheeler	41069	Oil & Gas		Rents	20259.5
-2008	OR	Deschutes	41017	Geothermal		Rents	26574.99
+2007	OR		41	Geothermal		Rents	200769.09
 2008	OR	Gilliam	41021	Oil & Gas		Rents	18531.86
 2008	OR	Jefferson	41031	Oil & Gas		Rents	34075
-2008	OR	Lake	41037	Geothermal		Rents	5020
 2008	OR	Malheur	41045	Oil & Gas		Rents	265465.5
 2008	OR	Morrow	41049	Oil & Gas		Rents	54333.32
 2008	OR	Sherman	41055	Oil & Gas		Rents	3735.64
 2008	OR	Umatilla	41059	Oil & Gas		Rents	24428.68
 2008	OR	Wasco	41065	Oil & Gas		Rents	3411
 2008	OR	Wheeler	41069	Oil & Gas		Rents	5134.5
-2009	OR	Deschutes	41017	Geothermal		Rents	189779.41
+2008	OR		41	Geothermal		Rents	31594.99
 2009	OR	Gilliam	41021	Oil & Gas		Rents	14651.93
 2009	OR	Jefferson	41031	Oil & Gas		Rents	31515
-2009	OR	Lake	41037	Geothermal		Bonus	702815
-2009	OR	Lake	41037	Geothermal		Rents	82790
 2009	OR	Malheur	41045	Oil & Gas		Rents	265465.5
 2009	OR	Morrow	41049	Oil & Gas		Rents	54333.32
 2009	OR	Sherman	41055	Oil & Gas		Rents	3384.07
 2009	OR	Umatilla	41059	Oil & Gas		Rents	24428.68
 2009	OR	Wasco	41065	Oil & Gas		Rents	3052.5
 2009	OR	Wheeler	41069	Oil & Gas		Rents	10684.5
-2010	OR	Deschutes	41017	Geothermal		Rents	153866
+2009	OR		41	Geothermal		Bonus	702815
+2009	OR		41	Geothermal		Rents	272569.41
 2010	OR	Gilliam	41021	Oil & Gas		Rents	14651.93
 2010	OR	Jefferson	41031	Oil & Gas		Rents	26395
-2010	OR	Lake	41037	Geothermal		Rents	129205
 2010	OR	Malheur	41045	Oil & Gas		Rents	265465.5
 2010	OR	Morrow	41049	Oil & Gas		Rents	47908.82
 2010	OR	Sherman	41055	Oil & Gas		Rents	3384.07
 2010	OR	Umatilla	41059	Oil & Gas		Rents	24428.68
 2010	OR	Wasco	41065	Oil & Gas		Rents	780
 2010	OR	Wheeler	41069	Oil & Gas		Rents	8892
-2011	OR	Deschutes	41017	Geothermal		Rents	131032
+2010	OR		41	Geothermal		Rents	283071
 2011	OR	Gilliam	41021	Oil & Gas		Rents	4566.22
-2011	OR	Hood River	41027	Geothermal		Rents	8112
 2011	OR	Jefferson	41031	Oil & Gas		Rents	24557
-2011	OR	Lake	41037	Geothermal		Rents	126695
 2011	OR	Malheur	41045	Oil & Gas		Rents	353954
 2011	OR	Morrow	41049	Oil & Gas		Rents	63878.42
 2011	OR	Sherman	41055	Oil & Gas		Rents	3963.78
 2011	OR	Umatilla	41059	Oil & Gas		Rents	32571.58
 2011	OR	Wasco	41065	Oil & Gas		Rents	780
 2011	OR	Wheeler	41069	Oil & Gas		Rents	7866
-2012	OR	Deschutes	41017	Geothermal		Rents	121125
-2012	OR	Hood River	41027	Geothermal		Rents	8112
+2011	OR		41	Geothermal		Rents	265839
 2012	OR	Jefferson	41031	Oil & Gas		Rents	24557
-2012	OR	Lake	41037	Geothermal		Rents	124185
 2012	OR	Malheur	41045	Oil & Gas		Rents	353954
 2012	OR	Morrow	41049	Oil & Gas		Rents	19168.42
 2012	OR	Umatilla	41059	Oil & Gas		Rents	22441.58
 2012	OR	Wheeler	41069	Oil & Gas		Rents	7866
-2013	OR	Deschutes	41017	Geothermal		Rents	106562
-2013	OR	Hood River	41027	Geothermal		Rents	8112
+2012	OR		41	Geothermal		Rents	253422
 2013	OR	Jefferson	41031	Oil & Gas		Rents	31736
-2013	OR	Lake	41037	Geothermal		Rents	124188
 2013	OR	Malheur	41045	Oil & Gas		Rents	345738
+2013	OR		41	Geothermal		Rents	238862

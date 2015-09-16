@@ -1,11 +1,7 @@
 Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2004	MT	Beaverhead	30001	Oil & Gas		Rents	1280
-2004	MT	Big Horn	30003	Coal		Bonus	348040.01
 2004	MT	Big Horn	30003	Oil & Gas		Other Revenues	24523.09
-2004	MT	Big Horn	30003	Coal		Other Royalties	75000
-2004	MT	Big Horn	30003	Coal		Rents	22398
 2004	MT	Big Horn	30003	Oil & Gas		Rents	360013.24
-2004	MT	Big Horn	30003	Coal	Coal-Subbituminous-Raw	Royalties	-671286.55
 2004	MT	Big Horn	30003	Gas	Coal Bed Methane	Royalties	1140176.17
 2004	MT	Blaine	30005	Oil & Gas		Bonus	17290
 2004	MT	Blaine	30005	Oil & Gas		Other Revenues	56382.43
@@ -24,7 +20,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2004	MT	Carbon	30009	NGL	Gas Plant Products	Royalties	84931.92
 2004	MT	Carbon	30009	Oil	Condensate	Royalties	1755.19
 2004	MT	Carbon	30009	Oil	Oil	Royalties	1065912.25
-2004	MT	Carbon	30009	Sulfur	Sulfur	Royalties	986.36
 2004	MT	Carter	30011	Oil & Gas		Bonus	11268
 2004	MT	Carter	30011	Oil & Gas		Other Revenues	20534
 2004	MT	Carter	30011	Oil & Gas		Rents	453421
@@ -83,8 +78,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2004	MT	Musselshell	30065	Oil & Gas		Other Revenues	1714
 2004	MT	Musselshell	30065	Oil & Gas		Rents	47882.19
 2004	MT	Musselshell	30065	Oil	Oil	Royalties	11428.31
-2004	MT	Petroleum	30069	Gemstones		Rents	240
-2004	MT	Petroleum	30069	Hardrock		Rents	118.5
 2004	MT	Petroleum	30069	Oil & Gas		Rents	5698
 2004	MT	Petroleum	30069	Oil	Oil	Royalties	2186.82
 2004	MT	Phillips	30071	Oil & Gas		Other Revenues	8897.62
@@ -106,7 +99,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2004	MT	Prairie	30079	Oil	Oil	Royalties	567367.75
 2004	MT	Richland	30083	Oil & Gas		Bonus	562647.5
 2004	MT	Richland	30083	Oil & Gas		Other Royalties	23118.57
-2004	MT	Richland	30083	Coal		Rents	1320
 2004	MT	Richland	30083	Oil & Gas		Rents	66728.37
 2004	MT	Richland	30083	Gas	Processed (Residue) Gas	Royalties	10469.48
 2004	MT	Richland	30083	Gas	Unprocessed (Wet) Gas	Royalties	74813.93
@@ -123,8 +115,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2004	MT	Roosevelt	30085	NGL	Gas Plant Products	Royalties	464.44
 2004	MT	Roosevelt	30085	Oil	Drip or Scrubber Condensate	Royalties	58.93
 2004	MT	Roosevelt	30085	Oil	Oil	Royalties	59743.15
-2004	MT	Rosebud	30087	Coal		Bonus	11302.5
-2004	MT	Rosebud	30087	Coal		Rents	80202.17
 2004	MT	Rosebud	30087	Oil & Gas		Rents	268295.1
 2004	MT	Rosebud	30087	Oil	Condensate	Royalties	4278.61
 2004	MT	Rosebud	30087	Oil	Oil	Royalties	53217.97
@@ -147,7 +137,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2004	MT	Toole	30101	Oil & Gas		Rents	49053.14
 2004	MT	Toole	30101	Gas	Unprocessed (Wet) Gas	Royalties	103515.49
 2004	MT	Toole	30101	Oil	Oil	Royalties	42275.47
-2004	MT	Treasure	30103	Coal		Rents	2760.16
 2004	MT	Treasure	30103	Oil & Gas		Rents	9387
 2004	MT	Valley	30105	Oil & Gas		Bonus	59508
 2004	MT	Valley	30105	Oil & Gas		Other Revenues	534.65
@@ -164,12 +153,17 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2004	MT	Yellowstone	30111	Oil & Gas		Other Revenues	160.39
 2004	MT	Yellowstone	30111	Oil & Gas		Rents	13275.81
 2004	MT	Yellowstone	30111	Oil	Oil	Royalties	1382.51
-2005	MT	Beaverhead	30001	Phosphate		Rents	1409
-2005	MT	Big Horn	30003	Coal		Bonus	348040.01
+2004	MT		30	Coal		Bonus	359342.51
+2004	MT		30	Phosphate		Other Revenues	4227
+2004	MT		30	Coal		Other Royalties	75000
+2004	MT		30	Coal		Rents	106680.33
+2004	MT		30	Gemstones		Rents	240
+2004	MT		30	Hardrock		Rents	118.5
+2004	MT		30	Coal	Coal	Royalties	33849411.02
+2004	MT		30	Coal	Coal-Subbituminous-Raw	Royalties	-671286.55
+2004	MT		30	Sulfur	Sulfur	Royalties	986.36
 2005	MT	Big Horn	30003	Oil & Gas		Bonus	480
 2005	MT	Big Horn	30003	Oil & Gas		Other Revenues	37397.42
-2005	MT	Big Horn	30003	Coal		Other Royalties	1875000
-2005	MT	Big Horn	30003	Coal		Rents	53838
 2005	MT	Big Horn	30003	Oil & Gas		Rents	101882.12
 2005	MT	Big Horn	30003	Gas	Coal Bed Methane	Royalties	2931795.47
 2005	MT	Big Horn	30003	Gas	Unprocessed (Wet) Gas	Royalties	758.47
@@ -187,7 +181,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2005	MT	Carbon	30009	Gas	Unprocessed (Wet) Gas	Royalties	119172.59
 2005	MT	Carbon	30009	NGL	Gas Plant Products	Royalties	105215.58
 2005	MT	Carbon	30009	Oil	Oil	Royalties	1322756.19
-2005	MT	Carbon	30009	Sulfur	Sulfur	Royalties	1617.45
 2005	MT	Carter	30011	Oil & Gas		Other Revenues	32915
 2005	MT	Carter	30011	Oil & Gas		Rents	414116.5
 2005	MT	Carter	30011	Oil	Oil	Royalties	2550.53
@@ -270,7 +263,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2005	MT	Prairie	30079	Oil	Oil	Royalties	687392.36
 2005	MT	Richland	30083	Oil & Gas		Bonus	338950
 2005	MT	Richland	30083	Oil & Gas		Other Royalties	10350.3
-2005	MT	Richland	30083	Coal		Rents	1320
 2005	MT	Richland	30083	Oil & Gas		Rents	68991.37
 2005	MT	Richland	30083	Gas	Processed (Residue) Gas	Royalties	26344.97
 2005	MT	Richland	30083	Gas	Unprocessed (Wet) Gas	Royalties	113726.51
@@ -289,9 +281,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2005	MT	Roosevelt	30085	Oil	Oil	Royalties	99025.86
 2005	MT	Rosebud	30087	Oil & Gas		Bonus	30000
 2005	MT	Rosebud	30087	Oil & Gas		Other Revenues	16080
-2005	MT	Rosebud	30087	Coal		Rents	74345.84
 2005	MT	Rosebud	30087	Oil & Gas		Rents	234196.4
-2005	MT	Rosebud	30087	Coal	Coal	Royalties	-0.17
 2005	MT	Rosebud	30087	Oil	Condensate	Royalties	12035.99
 2005	MT	Rosebud	30087	Oil	Oil	Royalties	83781.7
 2005	MT	Sheridan	30091	Oil & Gas		Bonus	52824.49
@@ -310,7 +300,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2005	MT	Toole	30101	Oil & Gas		Rents	45734.36
 2005	MT	Toole	30101	Gas	Unprocessed (Wet) Gas	Royalties	148101.79
 2005	MT	Toole	30101	Oil	Oil	Royalties	70118.31
-2005	MT	Treasure	30103	Coal		Rents	2760.16
 2005	MT	Treasure	30103	Oil & Gas		Rents	3597
 2005	MT	Valley	30105	Oil & Gas		Bonus	41909.75
 2005	MT	Valley	30105	Oil & Gas		Other Revenues	2008.42
@@ -326,14 +315,18 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2005	MT	Wibaux	30109	Oil	Oil	Royalties	2016882.68
 2005	MT	Yellowstone	30111	Oil & Gas		Other Revenues	160
 2005	MT	Yellowstone	30111	Oil & Gas		Rents	9132
+2005	MT		30	Coal		Bonus	348040.01
+2005	MT		30	Coal		Other Revenues	635100.51
+2005	MT		30	Coal		Other Royalties	1875000
+2005	MT		30	Coal		Rents	132264
+2005	MT		30	Phosphate		Rents	1409
+2005	MT		30	Coal	Coal	Royalties	30344606.69
+2005	MT		30	Coal	Coal	Royalties	-0.17
+2005	MT		30	Sulfur	Sulfur	Royalties	1617.45
 2006	MT	Beaverhead	30001	Oil & Gas		Bonus	54380
-2006	MT	Beaverhead	30001	Phosphate		Other Revenues	12681
 2006	MT	Beaverhead	30001	Oil & Gas		Rents	19081.5
-2006	MT	Big Horn	30003	Coal		Bonus	456320
 2006	MT	Big Horn	30003	Oil & Gas		Other Revenues	17924
-2006	MT	Big Horn	30003	Coal		Rents	54204.3
 2006	MT	Big Horn	30003	Oil & Gas		Rents	45154.96
-2006	MT	Big Horn	30003	Coal	Coal	Royalties	-10.14
 2006	MT	Big Horn	30003	Gas	Coal Bed Methane	Royalties	2730708.37
 2006	MT	Blaine	30005	Oil & Gas		Other Revenues	43786.17
 2006	MT	Blaine	30005	Oil & Gas		Other Royalties	34800.94
@@ -350,7 +343,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2006	MT	Carbon	30009	Gas	Unprocessed (Wet) Gas	Royalties	102181.06
 2006	MT	Carbon	30009	NGL	Gas Plant Products	Royalties	178732.56
 2006	MT	Carbon	30009	Oil	Oil	Royalties	1553049.27
-2006	MT	Carbon	30009	Sulfur	Sulfur	Royalties	2321.49
 2006	MT	Carter	30011	Oil & Gas		Bonus	9270
 2006	MT	Carter	30011	Oil & Gas		Other Revenues	32727
 2006	MT	Carter	30011	Oil & Gas		Rents	473174
@@ -416,7 +408,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2006	MT	Musselshell	30065	Oil & Gas		Other Revenues	243
 2006	MT	Musselshell	30065	Oil & Gas		Rents	42946.27
 2006	MT	Musselshell	30065	Oil	Oil	Royalties	23326.48
-2006	MT	Petroleum	30069	Hardrock		Rents	2210.5
 2006	MT	Petroleum	30069	Oil & Gas		Rents	101370.41
 2006	MT	Petroleum	30069	Oil	Oil	Royalties	8362.09
 2006	MT	Phillips	30071	Oil & Gas		Bonus	69038
@@ -443,7 +434,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2006	MT	Richland	30083	Oil & Gas		Bonus	383420.5
 2006	MT	Richland	30083	Oil & Gas		Other Revenues	960
 2006	MT	Richland	30083	Oil & Gas		Other Royalties	1150
-2006	MT	Richland	30083	Coal		Rents	1320
 2006	MT	Richland	30083	Oil & Gas		Rents	67916
 2006	MT	Richland	30083	Gas	Processed (Residue) Gas	Royalties	56752.93
 2006	MT	Richland	30083	Gas	Unprocessed (Wet) Gas	Royalties	119777.79
@@ -461,9 +451,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2006	MT	Roosevelt	30085	Oil	Drip or Scrubber Condensate	Royalties	26.41
 2006	MT	Roosevelt	30085	Oil	Oil	Royalties	112271.15
 2006	MT	Rosebud	30087	Oil & Gas		Other Revenues	16080
-2006	MT	Rosebud	30087	Coal		Rents	74345.84
 2006	MT	Rosebud	30087	Oil & Gas		Rents	235585.24
-2006	MT	Rosebud	30087	Coal	Coal	Royalties	-0.06
 2006	MT	Rosebud	30087	Oil	Condensate	Royalties	1501.47
 2006	MT	Rosebud	30087	Oil	Oil	Royalties	105565.17
 2006	MT	Sheridan	30091	Oil & Gas		Bonus	7000
@@ -488,7 +476,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2006	MT	Toole	30101	Gas	Unprocessed (Wet) Gas	Royalties	152920.51
 2006	MT	Toole	30101	Oil & Gas		Royalties	-99.42
 2006	MT	Toole	30101	Oil	Oil	Royalties	196272
-2006	MT	Treasure	30103	Coal		Rents	2760.16
 2006	MT	Treasure	30103	Oil & Gas		Rents	3597
 2006	MT	Valley	30105	Oil & Gas		Bonus	34118
 2006	MT	Valley	30105	Oil & Gas		Other Revenues	2215.19
@@ -510,11 +497,17 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2006	MT	Yellowstone	30111	Oil & Gas		Other Revenues	40
 2006	MT	Yellowstone	30111	Oil & Gas		Rents	11172.23
 2006	MT	Yellowstone	30111	Oil	Condensate	Royalties	4585.18
+2006	MT		30	Coal		Bonus	456320
+2006	MT		30	Coal		Other Revenues	742861.13
+2006	MT		30	Phosphate		Other Revenues	12681
+2006	MT		30	Coal		Rents	132630.3
+2006	MT		30	Hardrock		Rents	2210.5
+2006	MT		30	Coal	Coal	Royalties	29069978.53
+2006	MT		30	Coal	Coal	Royalties	-10.2
+2006	MT		30	Sulfur	Sulfur	Royalties	2321.49
 2007	MT	Beaverhead	30001	Oil & Gas		Bonus	50432
 2007	MT	Beaverhead	30001	Oil & Gas		Rents	67089.23
-2007	MT	Big Horn	30003	Coal		Bonus	3980440
 2007	MT	Big Horn	30003	Oil & Gas		Other Revenues	11852
-2007	MT	Big Horn	30003	Coal		Rents	57495
 2007	MT	Big Horn	30003	Oil & Gas		Rents	26714
 2007	MT	Big Horn	30003	Gas	Coal Bed Methane	Royalties	2033846.26
 2007	MT	Big Horn	30003	Gas	Processed (Residue) Gas	Royalties	-1.43
@@ -533,7 +526,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2007	MT	Carbon	30009	Gas	Unprocessed (Wet) Gas	Royalties	74293.81
 2007	MT	Carbon	30009	NGL	Gas Plant Products	Royalties	127320.27
 2007	MT	Carbon	30009	Oil	Oil	Royalties	1691571.76
-2007	MT	Carbon	30009	Sulfur	Sulfur	Royalties	1881.74
 2007	MT	Carter	30011	Oil & Gas		Other Revenues	7355
 2007	MT	Carter	30011	Oil & Gas		Rents	456147.5
 2007	MT	Carter	30011	Gas	Unprocessed (Wet) Gas	Royalties	21503.21
@@ -599,7 +591,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2007	MT	Musselshell	30065	Oil & Gas		Bonus	1340
 2007	MT	Musselshell	30065	Oil & Gas		Rents	43310.76
 2007	MT	Musselshell	30065	Oil	Oil	Royalties	25301.04
-2007	MT	Petroleum	30069	Hardrock		Rents	15
 2007	MT	Petroleum	30069	Oil & Gas		Rents	104402.41
 2007	MT	Petroleum	30069	Oil	Oil	Royalties	17327.19
 2007	MT	Phillips	30071	Oil & Gas		Bonus	23254
@@ -638,9 +629,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2007	MT	Roosevelt	30085	Gas	Unprocessed (Wet) Gas	Royalties	4865.85
 2007	MT	Roosevelt	30085	Oil	Oil	Royalties	102362.99
 2007	MT	Rosebud	30087	Oil & Gas		Other Revenues	21065.12
-2007	MT	Rosebud	30087	Coal		Rents	69455.84
 2007	MT	Rosebud	30087	Oil & Gas		Rents	33519
-2007	MT	Rosebud	30087	Coal	Coal	Royalties	-0.01
 2007	MT	Rosebud	30087	Oil	Oil	Royalties	123844.44
 2007	MT	Sheridan	30091	Oil & Gas		Bonus	800
 2007	MT	Sheridan	30091	Oil & Gas		Other Revenues	1286.73
@@ -658,7 +647,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2007	MT	Toole	30101	Oil & Gas		Rents	45599.95
 2007	MT	Toole	30101	Gas	Unprocessed (Wet) Gas	Royalties	166241.85
 2007	MT	Toole	30101	Oil	Oil	Royalties	278876.32
-2007	MT	Treasure	30103	Coal		Rents	2760.16
 2007	MT	Treasure	30103	Oil & Gas		Rents	4796
 2007	MT	Valley	30105	Oil & Gas		Bonus	1040
 2007	MT	Valley	30105	Oil & Gas		Other Revenues	114.95
@@ -675,14 +663,17 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2007	MT	Wibaux	30109	Oil	Oil	Royalties	2478635.23
 2007	MT	Yellowstone	30111	Oil & Gas		Rents	13540.5
 2007	MT	Yellowstone	30111	Oil	Condensate	Royalties	3650.53
+2007	MT		30	Coal		Bonus	3980440
+2007	MT		30	Coal		Other Revenues	833655.27
+2007	MT		30	Coal		Rents	129711
+2007	MT		30	Hardrock		Rents	15
+2007	MT		30	Coal	Coal	Royalties	35491283.57
+2007	MT		30	Coal	Coal	Royalties	-0.01
+2007	MT		30	Sulfur	Sulfur	Royalties	1881.74
 2008	MT	Beaverhead	30001	Oil & Gas		Bonus	12550
-2008	MT	Beaverhead	30001	Phosphate		Other Revenues	4227
 2008	MT	Beaverhead	30001	Oil & Gas		Rents	89238
-2008	MT	Beaverhead	30001	Phosphate		Rents	1409
-2008	MT	Big Horn	30003	Coal		Bonus	3980440
 2008	MT	Big Horn	30003	Oil & Gas		Other Revenues	12080.8
 2008	MT	Big Horn	30003	Oil & Gas		Other Royalties	18279.31
-2008	MT	Big Horn	30003	Coal		Rents	57495
 2008	MT	Big Horn	30003	Oil & Gas		Rents	15404.39
 2008	MT	Big Horn	30003	Gas	Coal Bed Methane	Royalties	3133494.68
 2008	MT	Big Horn	30003	Gas	Unprocessed (Wet) Gas	Royalties	2699.32
@@ -702,7 +693,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2008	MT	Carbon	30009	Gas	Unprocessed (Wet) Gas	Royalties	131535.34
 2008	MT	Carbon	30009	NGL	Gas Plant Products	Royalties	249439.76
 2008	MT	Carbon	30009	Oil	Oil	Royalties	2741494.62
-2008	MT	Carbon	30009	Sulfur	Sulfur	Royalties	27255.51
 2008	MT	Carter	30011	Oil & Gas		Rents	216765.79
 2008	MT	Carter	30011	Gas	Unprocessed (Wet) Gas	Royalties	22383.95
 2008	MT	Carter	30011	Oil	Oil	Royalties	754904.98
@@ -746,7 +736,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2008	MT	Glacier	30035	Oil	Oil	Royalties	38692.89
 2008	MT	Golden Vally	30037	Oil & Gas		Bonus	24204.35
 2008	MT	Golden Vally	30037	Oil & Gas		Rents	24940.63
-2008	MT	Granite	30039	Hardrock		Rents	41.5
 2008	MT	Hill	30041	Oil & Gas		Other Revenues	6401.71
 2008	MT	Hill	30041	Oil & Gas		Other Royalties	-32415
 2008	MT	Hill	30041	Oil & Gas		Rents	92461.4
@@ -765,8 +754,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2008	MT	Musselshell	30065	Oil & Gas		Rents	80863.87
 2008	MT	Musselshell	30065	Oil	Oil	Royalties	52295.8
 2008	MT	Petroleum	30069	Oil & Gas		Bonus	110214.72
-2008	MT	Petroleum	30069	Gemstones		Rents	240
-2008	MT	Petroleum	30069	Hardrock		Rents	3608
 2008	MT	Petroleum	30069	Oil & Gas		Rents	107386.31
 2008	MT	Petroleum	30069	Oil	Oil	Royalties	7182.32
 2008	MT	Phillips	30071	Oil & Gas		Bonus	540
@@ -790,7 +777,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2008	MT	Richland	30083	Oil & Gas		Bonus	209501.71
 2008	MT	Richland	30083	Oil & Gas		Other Revenues	820
 2008	MT	Richland	30083	Oil & Gas		Other Royalties	106714.84
-2008	MT	Richland	30083	Coal		Rents	2640
 2008	MT	Richland	30083	Oil & Gas		Rents	81965.68
 2008	MT	Richland	30083	Gas	Processed (Residue) Gas	Royalties	96836.26
 2008	MT	Richland	30083	Gas	Unprocessed (Wet) Gas	Royalties	146089.55
@@ -805,7 +791,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2008	MT	Roosevelt	30085	Oil	Oil	Royalties	133907.71
 2008	MT	Rosebud	30087	Oil & Gas		Bonus	182147.5
 2008	MT	Rosebud	30087	Oil & Gas		Other Revenues	11254.89
-2008	MT	Rosebud	30087	Coal		Rents	79235.84
 2008	MT	Rosebud	30087	Oil & Gas		Rents	86910.4
 2008	MT	Rosebud	30087	Oil	Condensate	Royalties	1043.19
 2008	MT	Rosebud	30087	Oil	Oil	Royalties	261846.49
@@ -823,7 +808,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2008	MT	Toole	30101	Oil & Gas		Rents	27653.98
 2008	MT	Toole	30101	Gas	Unprocessed (Wet) Gas	Royalties	207854.82
 2008	MT	Toole	30101	Oil	Oil	Royalties	657942.42
-2008	MT	Treasure	30103	Coal		Rents	2760.16
 2008	MT	Treasure	30103	Oil & Gas		Rents	4796
 2008	MT	Valley	30105	Oil & Gas		Other Royalties	65.16
 2008	MT	Valley	30105	Oil & Gas		Rents	713223.82
@@ -841,13 +825,20 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2008	MT	Yellowstone	30111	Oil & Gas		Rents	13300.5
 2008	MT	Yellowstone	30111	Oil	Condensate	Royalties	1047.31
 2008	MT	Yellowstone	30111	Oil	Oil	Royalties	3051.99
+2008	MT		30	Coal		Bonus	3980440
+2008	MT		30	Coal		Other Revenues	902438.7
+2008	MT		30	Phosphate		Other Revenues	4227
+2008	MT		30	Coal		Other Royalties	30474
+2008	MT		30	Coal		Rents	142131
+2008	MT		30	Gemstones		Rents	240
+2008	MT		30	Hardrock		Rents	3649.5
+2008	MT		30	Phosphate		Rents	1409
+2008	MT		30	Coal	Coal	Royalties	37411561.07
+2008	MT		30	Sulfur	Sulfur	Royalties	27255.51
 2009	MT	Beaverhead	30001	Oil & Gas		Bonus	65146.67
-2009	MT	Beaverhead	30001	Phosphate		Other Revenues	4227
 2009	MT	Beaverhead	30001	Oil & Gas		Rents	151461.13
-2009	MT	Big Horn	30003	Coal		Bonus	3980440
 2009	MT	Big Horn	30003	Oil & Gas		Other Revenues	14552.12
 2009	MT	Big Horn	30003	Oil & Gas		Other Royalties	-12236.58
-2009	MT	Big Horn	30003	Coal		Rents	57495
 2009	MT	Big Horn	30003	Oil & Gas		Rents	316938.24
 2009	MT	Big Horn	30003	Gas	Coal Bed Methane	Royalties	1841017.26
 2009	MT	Big Horn	30003	Gas	Unprocessed (Wet) Gas	Royalties	-629.85
@@ -867,7 +858,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2009	MT	Carbon	30009	Gas	Unprocessed (Wet) Gas	Royalties	54502.73
 2009	MT	Carbon	30009	NGL	Gas Plant Products	Royalties	87788.01
 2009	MT	Carbon	30009	Oil	Oil	Royalties	1598133.38
-2009	MT	Carbon	30009	Sulfur	Sulfur	Royalties	-9594.46
 2009	MT	Carter	30011	Oil & Gas		Bonus	2402
 2009	MT	Carter	30011	Oil & Gas		Other Revenues	1000
 2009	MT	Carter	30011	Oil & Gas		Rents	99815.06
@@ -933,7 +923,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2009	MT	Musselshell	30065	Oil & Gas		Other Royalties	-550
 2009	MT	Musselshell	30065	Oil & Gas		Rents	90502.37
 2009	MT	Musselshell	30065	Oil	Oil	Royalties	49273.47
-2009	MT	Petroleum	30069	Hardrock		Rents	146.5
 2009	MT	Petroleum	30069	Oil & Gas		Rents	98185.42
 2009	MT	Petroleum	30069	Oil	Oil	Royalties	65755.64
 2009	MT	Phillips	30071	Oil & Gas		Bonus	10936
@@ -957,7 +946,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2009	MT	Richland	30083	Oil & Gas		Bonus	355448
 2009	MT	Richland	30083	Oil & Gas		Other Revenues	4532.25
 2009	MT	Richland	30083	Oil & Gas		Other Royalties	-95482.71
-2009	MT	Richland	30083	Coal		Rents	1320
 2009	MT	Richland	30083	Oil & Gas		Rents	75048.79
 2009	MT	Richland	30083	Gas	Processed (Residue) Gas	Royalties	7063.17
 2009	MT	Richland	30083	Gas	Unprocessed (Wet) Gas	Royalties	101451.25
@@ -970,7 +958,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2009	MT	Roosevelt	30085	Gas	Unprocessed (Wet) Gas	Royalties	2087.85
 2009	MT	Roosevelt	30085	Oil	Oil	Royalties	60030.23
 2009	MT	Rosebud	30087	Oil & Gas		Other Revenues	16079.99
-2009	MT	Rosebud	30087	Coal		Rents	74345.84
 2009	MT	Rosebud	30087	Oil & Gas		Rents	168139.08
 2009	MT	Rosebud	30087	Oil	Condensate	Royalties	13661.9
 2009	MT	Rosebud	30087	Oil	Oil	Royalties	188599.55
@@ -991,7 +978,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2009	MT	Toole	30101	Oil & Gas		Rents	30965
 2009	MT	Toole	30101	Gas	Unprocessed (Wet) Gas	Royalties	93630.28
 2009	MT	Toole	30101	Oil	Oil	Royalties	235658.14
-2009	MT	Treasure	30103	Coal		Rents	2760.16
 2009	MT	Treasure	30103	Oil & Gas		Rents	4796
 2009	MT	Valley	30105	Oil & Gas		Other Royalties	550
 2009	MT	Valley	30105	Oil & Gas		Rents	224166
@@ -1007,14 +993,19 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2009	MT	Yellowstone	30111	Oil & Gas		Bonus	1682
 2009	MT	Yellowstone	30111	Oil & Gas		Rents	14680
 2009	MT	Yellowstone	30111	Oil	Condensate	Royalties	439.45
+2009	MT		30	Coal		Bonus	3980440
+2009	MT		30	Coal		Other Revenues	998735.52
+2009	MT		30	Phosphate		Other Revenues	4227
+2009	MT		30	Coal		Other Royalties	-30474
+2009	MT		30	Coal		Other Royalties	12239538.22
+2009	MT		30	Coal		Rents	135921
+2009	MT		30	Hardrock		Rents	146.5
+2009	MT		30	Coal	Coal	Royalties	35816360.4
+2009	MT		30	Sulfur	Sulfur	Royalties	-9594.46
 2010	MT	Beaverhead	30001	Oil & Gas		Bonus	2396
-2010	MT	Beaverhead	30001	Phosphate		Other Revenues	4227
 2010	MT	Beaverhead	30001	Oil & Gas		Rents	125104.13
-2010	MT	Beaverhead	30001	Phosphate		Rents	-1409
-2010	MT	Big Horn	30003	Coal		Bonus	7870440
 2010	MT	Big Horn	30003	Oil & Gas		Other Revenues	23420.38
 2010	MT	Big Horn	30003	Oil & Gas		Other Royalties	-1499.9
-2010	MT	Big Horn	30003	Coal		Rents	59379
 2010	MT	Big Horn	30003	Oil & Gas		Rents	272579.71
 2010	MT	Big Horn	30003	Gas	Coal Bed Methane	Royalties	1876972.69
 2010	MT	Big Horn	30003	Oil	Oil	Royalties	35159.87
@@ -1033,7 +1024,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2010	MT	Carbon	30009	Gas	Unprocessed (Wet) Gas	Royalties	65664.1
 2010	MT	Carbon	30009	NGL	Gas Plant Products	Royalties	133928.21
 2010	MT	Carbon	30009	Oil	Oil	Royalties	1955280.98
-2010	MT	Carbon	30009	Sulfur	Sulfur	Royalties	3906.01
 2010	MT	Carter	30011	Oil & Gas		Bonus	13991.75
 2010	MT	Carter	30011	Oil & Gas		Rents	67036.5
 2010	MT	Carter	30011	Gas	Unprocessed (Wet) Gas	Royalties	17382.49
@@ -1071,7 +1061,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2010	MT	Glacier	30035	Gas	Unprocessed (Wet) Gas	Royalties	11839.92
 2010	MT	Glacier	30035	Oil	Oil	Royalties	36563.86
 2010	MT	Golden Vally	30037	Oil & Gas		Rents	25180.63
-2010	MT	Granite	30039	Hardrock		Rents	83
 2010	MT	Hill	30041	Oil & Gas		Bonus	640
 2010	MT	Hill	30041	Oil & Gas		Other Revenues	1010.53
 2010	MT	Hill	30041	Oil & Gas		Other Royalties	-2786
@@ -1090,7 +1079,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2010	MT	Musselshell	30065	Oil & Gas		Other Revenues	240
 2010	MT	Musselshell	30065	Oil & Gas		Rents	83079.37
 2010	MT	Musselshell	30065	Oil	Oil	Royalties	186573.57
-2010	MT	Petroleum	30069	Hardrock		Rents	136.5
 2010	MT	Petroleum	30069	Oil & Gas		Rents	112848.84
 2010	MT	Petroleum	30069	Oil	Oil	Royalties	55259.05
 2010	MT	Phillips	30071	Oil & Gas		Bonus	312
@@ -1112,7 +1100,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2010	MT	Richland	30083	Oil & Gas		Bonus	2454840.88
 2010	MT	Richland	30083	Oil & Gas		Other Revenues	3908
 2010	MT	Richland	30083	Oil & Gas		Other Royalties	-36238.85
-2010	MT	Richland	30083	Coal		Rents	1320
 2010	MT	Richland	30083	Oil & Gas		Rents	107760.9
 2010	MT	Richland	30083	Gas	Processed (Residue) Gas	Royalties	-4374.94
 2010	MT	Richland	30083	Gas	Unprocessed (Wet) Gas	Royalties	133932.94
@@ -1129,9 +1116,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2010	MT	Roosevelt	30085	Oil	Drip or Scrubber Condensate	Royalties	-271.44
 2010	MT	Roosevelt	30085	Oil	Oil	Royalties	84605.39
 2010	MT	Rosebud	30087	Oil & Gas		Other Revenues	16080
-2010	MT	Rosebud	30087	Coal		Rents	74345.84
 2010	MT	Rosebud	30087	Oil & Gas		Rents	178771.95
-2010	MT	Rosebud	30087	Coal	Coal	Royalties	0.08
 2010	MT	Rosebud	30087	Oil	Condensate	Royalties	5697.64
 2010	MT	Rosebud	30087	Oil	Oil	Royalties	219404.27
 2010	MT	Sheridan	30091	Oil & Gas		Bonus	6500
@@ -1151,9 +1136,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2010	MT	Toole	30101	Oil & Gas		Rents	27569
 2010	MT	Toole	30101	Gas	Unprocessed (Wet) Gas	Royalties	91325.14
 2010	MT	Toole	30101	Oil	Oil	Royalties	521360.43
-2010	MT	Treasure	30103	Coal		Rents	2760.16
 2010	MT	Treasure	30103	Oil & Gas		Rents	4796
-2010	MT	Treasure	30103	Coal	Coal	Royalties	0.02
 2010	MT	Valley	30105	Oil & Gas		Other Revenues	37.98
 2010	MT	Valley	30105	Oil & Gas		Rents	206372.5
 2010	MT	Valley	30105	Gas	Unprocessed (Wet) Gas	Royalties	293374.69
@@ -1169,12 +1152,18 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2010	MT	Wibaux	30109	Oil	Oil	Royalties	2767829.1
 2010	MT	Yellowstone	30111	Oil & Gas		Rents	15964.5
 2010	MT	Yellowstone	30111	Oil	Condensate	Royalties	440.42
+2010	MT		30	Coal		Bonus	7870440
+2010	MT		30	Coal		Other Revenues	1366497.63
+2010	MT		30	Phosphate		Other Revenues	4227
+2010	MT		30	Coal		Rents	137805
+2010	MT		30	Hardrock		Rents	219.5
+2010	MT		30	Phosphate		Rents	-1409
+2010	MT		30	Coal	Coal	Royalties	44802675.39
+2010	MT		30	Coal	Coal	Royalties	0.1
+2010	MT		30	Sulfur	Sulfur	Royalties	3906.01
 2011	MT	Beaverhead	30001	Oil & Gas		Rents	144326.39
-2011	MT	Beaverhead	30001	Phosphate		Rents	1409
-2011	MT	Big Horn	30003	Coal		Bonus	3980440
 2011	MT	Big Horn	30003	Oil & Gas		Other Revenues	13594.18
 2011	MT	Big Horn	30003	Oil & Gas		Other Royalties	82354.34
-2011	MT	Big Horn	30003	Coal		Rents	48976
 2011	MT	Big Horn	30003	Oil & Gas		Rents	266355.3
 2011	MT	Big Horn	30003	Gas	Coal Bed Methane	Royalties	1187087.27
 2011	MT	Big Horn	30003	Oil	Oil	Royalties	-35159.87
@@ -1194,7 +1183,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2011	MT	Carbon	30009	Gas	Unprocessed (Wet) Gas	Royalties	60370.09
 2011	MT	Carbon	30009	NGL	Gas Plant Products	Royalties	185568.51
 2011	MT	Carbon	30009	Oil	Oil	Royalties	2342825.58
-2011	MT	Carbon	30009	Sulfur	Sulfur	Royalties	9789.04
 2011	MT	Carter	30011	Oil & Gas		Other Revenues	2986
 2011	MT	Carter	30011	Oil & Gas		Rents	52169.5
 2011	MT	Carter	30011	Gas	Unprocessed (Wet) Gas	Royalties	16328.82
@@ -1234,7 +1222,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2011	MT	Glacier	30035	Gas	Unprocessed (Wet) Gas	Royalties	9406.04
 2011	MT	Glacier	30035	Oil	Oil	Royalties	43225.4
 2011	MT	Golden Vally	30037	Oil & Gas		Rents	25140.63
-2011	MT	Granite	30039	Hardrock		Rents	51.5
 2011	MT	Hill	30041	Oil & Gas		Other Revenues	120
 2011	MT	Hill	30041	Oil & Gas		Other Royalties	1187
 2011	MT	Hill	30041	Oil & Gas		Rents	17794
@@ -1253,7 +1240,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2011	MT	Musselshell	30065	Oil & Gas		Rents	89724.37
 2011	MT	Musselshell	30065	Oil	Oil	Royalties	-152369.91
 2011	MT	Park	30067	Oil & Gas		Rents	240
-2011	MT	Petroleum	30069	Hardrock		Rents	70
 2011	MT	Petroleum	30069	Oil & Gas		Rents	113620.06
 2011	MT	Petroleum	30069	Oil	Oil	Royalties	418664.94
 2011	MT	Phillips	30071	Oil & Gas		Other Revenues	-15732.75
@@ -1277,7 +1263,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2011	MT	Richland	30083	Oil & Gas		Bonus	3496380
 2011	MT	Richland	30083	Oil & Gas		Other Revenues	3190
 2011	MT	Richland	30083	Oil & Gas		Other Royalties	25581.61
-2011	MT	Richland	30083	Coal		Rents	1320
 2011	MT	Richland	30083	Oil & Gas		Rents	128496.15
 2011	MT	Richland	30083	Gas	Gas Lost - Flared or Vented	Royalties	267.63
 2011	MT	Richland	30083	Gas	Processed (Residue) Gas	Royalties	6915.07
@@ -1291,7 +1276,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2011	MT	Roosevelt	30085	Gas	Unprocessed (Wet) Gas	Royalties	1564.15
 2011	MT	Roosevelt	30085	Oil	Oil	Royalties	78396.58
 2011	MT	Rosebud	30087	Oil & Gas		Other Revenues	16160
-2011	MT	Rosebud	30087	Coal		Rents	74345.84
 2011	MT	Rosebud	30087	Oil & Gas		Rents	134846
 2011	MT	Rosebud	30087	Oil	Condensate	Royalties	1951.14
 2011	MT	Rosebud	30087	Oil	Oil	Royalties	194065.11
@@ -1311,7 +1295,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2011	MT	Toole	30101	Oil & Gas		Rents	13421
 2011	MT	Toole	30101	Gas	Unprocessed (Wet) Gas	Royalties	78538.39
 2011	MT	Toole	30101	Oil	Oil	Royalties	438267.76
-2011	MT	Treasure	30103	Coal		Rents	2760.16
 2011	MT	Treasure	30103	Oil & Gas		Rents	4796
 2011	MT	Valley	30105	Oil & Gas		Other Revenues	1239.16
 2011	MT	Valley	30105	Oil & Gas		Other Royalties	24162
@@ -1329,11 +1312,16 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2011	MT	Wibaux	30109	Oil	Oil	Royalties	3107572.8
 2011	MT	Yellowstone	30111	Oil & Gas		Rents	5997.5
 2011	MT	Yellowstone	30111	Oil	Condensate	Royalties	640.4
+2011	MT		30	Coal		Bonus	3980440
+2011	MT		30	Coal		Other Revenues	1425192.83
+2011	MT		30	Coal		Rents	127402
+2011	MT		30	Hardrock		Rents	121.5
+2011	MT		30	Phosphate		Rents	1409
+2011	MT		30	Coal	Coal	Royalties	43776576.85
+2011	MT		30	Sulfur	Sulfur	Royalties	9789.04
 2012	MT	Beaverhead	30001	Oil & Gas		Rents	113195.5
-2012	MT	Beaverhead	30001	Phosphate		Rents	1409
 2012	MT	Big Horn	30003	Oil & Gas		Other Revenues	18967.19
 2012	MT	Big Horn	30003	Oil & Gas		Other Royalties	-4372.17
-2012	MT	Big Horn	30003	Coal		Rents	58995
 2012	MT	Big Horn	30003	Oil & Gas		Rents	209699
 2012	MT	Big Horn	30003	Gas	Coal Bed Methane	Royalties	538844.74
 2012	MT	Blaine	30005	Oil & Gas		Other Revenues	39300.09
@@ -1349,7 +1337,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2012	MT	Carbon	30009	Gas	Unprocessed (Wet) Gas	Royalties	37386.79
 2012	MT	Carbon	30009	NGL	Gas Plant Products	Royalties	166137.32
 2012	MT	Carbon	30009	Oil	Oil	Royalties	2242800.01
-2012	MT	Carbon	30009	Sulfur	Sulfur	Royalties	4657.08
 2012	MT	Carter	30011	Oil & Gas		Other Revenues	28094
 2012	MT	Carter	30011	Oil & Gas		Rents	26388.5
 2012	MT	Carter	30011	Gas	Unprocessed (Wet) Gas	Royalties	6123.75
@@ -1386,7 +1373,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2012	MT	Glacier	30035	Oil	Oil	Royalties	42614.91
 2012	MT	Golden Vally	30037	Oil & Gas		Bonus	80
 2012	MT	Golden Vally	30037	Oil & Gas		Rents	26039.63
-2012	MT	Granite	30039	Hardrock		Rents	51.5
 2012	MT	Hill	30041	Oil & Gas		Other Revenues	120
 2012	MT	Hill	30041	Oil & Gas		Other Royalties	1320.76
 2012	MT	Hill	30041	Oil & Gas		Rents	11184
@@ -1401,14 +1387,11 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2012	MT	Madison	30057	Oil & Gas		Rents	480
 2012	MT	Mccone	30055	Oil & Gas		Bonus	3246263
 2012	MT	Mccone	30055	Oil & Gas		Rents	154696.5
-2012	MT	Musselshell	30065	Coal		Bonus	10650000
 2012	MT	Musselshell	30065	Oil & Gas		Bonus	1102.5
-2012	MT	Musselshell	30065	Coal		Rents	8040
 2012	MT	Musselshell	30065	Oil & Gas		Rents	67589.87
 2012	MT	Musselshell	30065	Oil	Oil	Royalties	34412.02
 2012	MT	Park	30067	Oil & Gas		Rents	240
 2012	MT	Petroleum	30069	Oil & Gas		Bonus	254.25
-2012	MT	Petroleum	30069	Hardrock		Rents	-3310.5
 2012	MT	Petroleum	30069	Oil & Gas		Rents	99450.84
 2012	MT	Petroleum	30069	Oil	Oil	Royalties	102817.44
 2012	MT	Phillips	30071	Oil & Gas		Bonus	54672.25
@@ -1433,7 +1416,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2012	MT	Richland	30083	Oil & Gas		Bonus	1389325
 2012	MT	Richland	30083	Oil & Gas		Other Revenues	667
 2012	MT	Richland	30083	Oil & Gas		Other Royalties	5184.5
-2012	MT	Richland	30083	Coal		Rents	1320
 2012	MT	Richland	30083	Oil & Gas		Rents	110535.57
 2012	MT	Richland	30083	Gas	Processed (Residue) Gas	Royalties	16011.68
 2012	MT	Richland	30083	Gas	Unprocessed (Wet) Gas	Royalties	91527.68
@@ -1448,7 +1430,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2012	MT	Roosevelt	30085	Oil	Oil	Royalties	292532.77
 2012	MT	Rosebud	30087	Oil & Gas		Bonus	10400
 2012	MT	Rosebud	30087	Oil & Gas		Other Revenues	16160
-2012	MT	Rosebud	30087	Coal		Rents	71705.84
 2012	MT	Rosebud	30087	Oil & Gas		Rents	110736
 2012	MT	Rosebud	30087	Oil	Oil	Royalties	188402.68
 2012	MT	Sheridan	30091	Oil & Gas		Bonus	886020
@@ -1468,7 +1449,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2012	MT	Toole	30101	Oil & Gas		Rents	12455
 2012	MT	Toole	30101	Gas	Unprocessed (Wet) Gas	Royalties	39779.33
 2012	MT	Toole	30101	Oil	Oil	Royalties	371291.17
-2012	MT	Treasure	30103	Coal		Rents	2760.16
 2012	MT	Valley	30105	Oil & Gas		Bonus	1896
 2012	MT	Valley	30105	Oil & Gas		Other Revenues	475.86
 2012	MT	Valley	30105	Oil & Gas		Other Royalties	-1986
@@ -1486,12 +1466,16 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2012	MT	Wibaux	30109	Oil	Oil	Royalties	2537925.93
 2012	MT	Yellowstone	30111	Oil & Gas		Rents	2787.5
 2012	MT	Yellowstone	30111	Oil	Oil	Royalties	576.29
-2013	MT	Beaverhead	30001	Phosphate		Other Revenues	2818
+2012	MT		30	Coal		Bonus	10650000
+2012	MT		30	Coal		Other Revenues	1523323.87
+2012	MT		30	Coal		Rents	142821
+2012	MT		30	Hardrock		Rents	-3259
+2012	MT		30	Phosphate		Rents	1409
+2012	MT		30	Coal	Coal	Royalties	44121466.05
+2012	MT		30	Sulfur	Sulfur	Royalties	4657.08
 2013	MT	Beaverhead	30001	Oil & Gas		Rents	145725.26
-2013	MT	Beaverhead	30001	Phosphate		Rents	-4227
 2013	MT	Big Horn	30003	Oil & Gas		Other Revenues	26603.94
 2013	MT	Big Horn	30003	Oil & Gas		Other Royalties	-79525
-2013	MT	Big Horn	30003	Coal		Rents	58995
 2013	MT	Big Horn	30003	Oil & Gas		Rents	146515.33
 2013	MT	Big Horn	30003	Gas	Coal Bed Methane	Royalties	143377.59
 2013	MT	Blaine	30005	Oil & Gas		Other Revenues	39673.5
@@ -1506,7 +1490,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2013	MT	Carbon	30009	Gas	Unprocessed (Wet) Gas	Royalties	55347.63
 2013	MT	Carbon	30009	NGL	Gas Plant Products	Royalties	161160.07
 2013	MT	Carbon	30009	Oil	Oil	Royalties	2224919.03
-2013	MT	Carbon	30009	Sulfur	Sulfur	Royalties	5314.96
 2013	MT	Carter	30011	Oil & Gas		Other Revenues	33214
 2013	MT	Carter	30011	Oil & Gas		Rents	25335.5
 2013	MT	Carter	30011	Oil	Oil	Royalties	271352.94
@@ -1554,10 +1537,8 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2013	MT	Madison	30057	Oil & Gas		Rents	21278.74
 2013	MT	Mccone	30055	Oil & Gas		Bonus	69502
 2013	MT	Mccone	30055	Oil & Gas		Rents	152558.5
-2013	MT	Musselshell	30065	Coal		Rents	8040
 2013	MT	Musselshell	30065	Oil & Gas		Rents	103851.82
 2013	MT	Musselshell	30065	Oil	Oil	Royalties	33917.1
-2013	MT	Petroleum	30069	Hardrock		Rents	20
 2013	MT	Petroleum	30069	Oil & Gas		Rents	45892.51
 2013	MT	Petroleum	30069	Oil	Oil	Royalties	79711.64
 2013	MT	Phillips	30071	Oil & Gas		Bonus	29159
@@ -1578,7 +1559,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2013	MT	Richland	30083	Oil & Gas		Bonus	158567.75
 2013	MT	Richland	30083	Oil & Gas		Other Revenues	9395.03
 2013	MT	Richland	30083	Oil & Gas		Other Royalties	16572.69
-2013	MT	Richland	30083	Coal		Rents	1320
 2013	MT	Richland	30083	Oil & Gas		Rents	94309.31
 2013	MT	Richland	30083	Gas	Processed (Residue) Gas	Royalties	386.36
 2013	MT	Richland	30083	Gas	Unprocessed (Wet) Gas	Royalties	96953.58
@@ -1593,7 +1573,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2013	MT	Roosevelt	30085	Gas	Unprocessed (Wet) Gas	Royalties	8544.62
 2013	MT	Roosevelt	30085	Oil	Oil	Royalties	295439.05
 2013	MT	Rosebud	30087	Oil & Gas		Other Revenues	16160
-2013	MT	Rosebud	30087	Coal		Rents	40580.84
 2013	MT	Rosebud	30087	Oil & Gas		Rents	130663
 2013	MT	Rosebud	30087	Oil	Oil	Royalties	187988.97
 2013	MT	Sheridan	30091	Oil & Gas		Other Revenues	230.26
@@ -1610,7 +1589,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2013	MT	Toole	30101	Oil & Gas		Rents	2591
 2013	MT	Toole	30101	Gas	Unprocessed (Wet) Gas	Royalties	50526.14
 2013	MT	Toole	30101	Oil	Oil	Royalties	464215.08
-2013	MT	Treasure	30103	Coal		Rents	2760.16
 2013	MT	Valley	30105	Oil & Gas		Bonus	1762
 2013	MT	Valley	30105	Oil & Gas		Other Revenues	1609.72
 2013	MT	Valley	30105	Oil & Gas		Other Royalties	1160
@@ -1624,52 +1602,9 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2013	MT	Yellowstone	30111	Oil & Gas		Bonus	296
 2013	MT	Yellowstone	30111	Oil & Gas		Rents	4945.5
 2013	MT	Yellowstone	30111	Oil	Condensate	Royalties	4516.55
-2004	MT	Beaverhead	30001	Phosphate		Other Revenues	4227
-2004	MT	Big Horn	30003	Coal	Coal	Royalties	21292302.07
-2004	MT	Richland	30083	Coal	Coal	Royalties	45221
-2004	MT	Rosebud	30087	Coal	Coal	Royalties	12511887.95
-2005	MT	Big Horn	30003	Coal	Coal	Royalties	20770994.8
-2005	MT	Richland	30083	Coal	Coal	Royalties	70366.81
-2005	MT	Rosebud	30087	Coal		Other Revenues	635100.51
-2005	MT	Rosebud	30087	Coal	Coal	Royalties	9367248.3
-2005	MT	Treasure	30103	Coal	Coal	Royalties	135996.78
-2006	MT	Big Horn	30003	Coal	Coal	Royalties	21211769.14
-2006	MT	Richland	30083	Coal	Coal	Royalties	5697.28
-2006	MT	Rosebud	30087	Coal		Other Revenues	742861.13
-2006	MT	Rosebud	30087	Coal	Coal	Royalties	7449702.55
-2006	MT	Treasure	30103	Coal	Coal	Royalties	402809.56
-2007	MT	Big Horn	30003	Coal	Coal	Royalties	23876911.03
-2007	MT	Rosebud	30087	Coal		Other Revenues	833655.27
-2007	MT	Rosebud	30087	Coal	Coal	Royalties	11262085.87
-2007	MT	Treasure	30103	Coal	Coal	Royalties	352286.67
-2008	MT	Big Horn	30003	Coal	Coal	Royalties	26055482.79
-2008	MT	Rosebud	30087	Coal		Other Revenues	902438.7
-2008	MT	Rosebud	30087	Coal		Other Royalties	27713.84
-2008	MT	Rosebud	30087	Coal	Coal	Royalties	10528023.47
-2008	MT	Treasure	30103	Coal		Other Royalties	2760.16
-2008	MT	Treasure	30103	Coal	Coal	Royalties	828054.81
-2009	MT	Big Horn	30003	Coal	Coal	Royalties	26222183.15
-2009	MT	Rosebud	30087	Coal		Other Revenues	998735.52
-2009	MT	Rosebud	30087	Coal		Other Royalties	-27713.84
-2009	MT	Rosebud	30087	Coal		Other Royalties	10884705.42
-2009	MT	Rosebud	30087	Coal	Coal	Royalties	8332646.21
-2009	MT	Treasure	30103	Coal		Other Royalties	-2760.16
-2009	MT	Treasure	30103	Coal		Other Royalties	1354832.8
-2009	MT	Treasure	30103	Coal	Coal	Royalties	1261531.04
-2010	MT	Big Horn	30003	Coal	Coal	Royalties	27877526.46
-2010	MT	Rosebud	30087	Coal		Other Revenues	1366497.63
-2010	MT	Rosebud	30087	Coal	Coal	Royalties	14363055.55
-2010	MT	Treasure	30103	Coal	Coal	Royalties	2562093.38
-2011	MT	Big Horn	30003	Coal	Coal	Royalties	27065045.08
-2011	MT	Rosebud	30087	Coal		Other Revenues	1425192.83
-2011	MT	Rosebud	30087	Coal	Coal	Royalties	13461676.47
-2011	MT	Treasure	30103	Coal	Coal	Royalties	3249855.3
-2012	MT	Big Horn	30003	Coal	Coal	Royalties	28556786.58
-2012	MT	Richland	30083	Coal	Coal	Royalties	11755.13
-2012	MT	Rosebud	30087	Coal		Other Revenues	1523323.87
-2012	MT	Rosebud	30087	Coal	Coal	Royalties	12189656.2
-2012	MT	Treasure	30103	Coal	Coal	Royalties	3363268.14
-2013	MT	Big Horn	30003	Coal	Coal	Royalties	27388763.63
-2013	MT	Musselshell	30065	Coal	Coal	Royalties	20996.3
-2013	MT	Rosebud	30087	Coal	Coal	Royalties	15340377.94
-2013	MT	Treasure	30103	Coal	Coal	Royalties	2139339.69
+2013	MT		30	Phosphate		Other Revenues	2818
+2013	MT		30	Coal		Rents	111696
+2013	MT		30	Hardrock		Rents	20
+2013	MT		30	Phosphate		Rents	-4227
+2013	MT		30	Coal	Coal	Royalties	44889477.56
+2013	MT		30	Sulfur	Sulfur	Royalties	5314.96

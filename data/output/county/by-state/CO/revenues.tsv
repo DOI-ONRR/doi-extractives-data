@@ -26,10 +26,8 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2004	CO	Cheyenne	08017	Oil & Gas		Rents	1328
 2004	CO	Cheyenne	08017	NGL	Gas Plant Products	Royalties	10292.06
 2004	CO	Cheyenne	08017	Oil	Oil	Royalties	66462.6
-2004	CO	Delta	08029	Coal		Bonus	3787839.92
 2004	CO	Delta	08029	Oil & Gas		Bonus	303713.77
 2004	CO	Delta	08029	Oil & Gas		Other Revenues	2280
-2004	CO	Delta	08029	Coal		Rents	59857.32
 2004	CO	Delta	08029	Oil & Gas		Rents	149633.72
 2004	CO	Delta	08029	Gas	Unprocessed (Wet) Gas	Royalties	9430.23
 2004	CO	Delta	08029	Oil	Condensate	Royalties	12.77
@@ -42,41 +40,31 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2004	CO	Dolores	08033	NGL	Gas Plant Products	Royalties	16624.77
 2004	CO	Dolores	08033	Oil	Condensate	Royalties	2127.66
 2004	CO	Dolores	08033	Oil	Oil	Royalties	231163.35
-2004	CO	Dolores	08033	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2)	Royalties	952516.85
 2004	CO	Eagle	08037	Oil & Gas		Rents	30244.5
 2004	CO	El Paso	08041	Oil & Gas		Rents	738
-2004	CO	Garfield	08045	Coal		Bonus	413000
 2004	CO	Garfield	08045	Oil & Gas		Bonus	5698844.52
 2004	CO	Garfield	08045	Oil & Gas		Other Revenues	52664.11
 2004	CO	Garfield	08045	Oil & Gas		Other Royalties	2165160.69
-2004	CO	Garfield	08045	Coal		Rents	49479
 2004	CO	Garfield	08045	Oil & Gas		Rents	566021.02
-2004	CO	Garfield	08045	Coal	Coal-Bituminous-Raw	Royalties	3102.81
 2004	CO	Garfield	08045	Gas	Coal Bed Methane	Royalties	225303.75
 2004	CO	Garfield	08045	Gas	Processed (Residue) Gas	Royalties	110343.45
 2004	CO	Garfield	08045	Gas	Unprocessed (Wet) Gas	Royalties	34398559.39
 2004	CO	Garfield	08045	NGL	Gas Plant Products	Royalties	2694.15
 2004	CO	Garfield	08045	Oil	Condensate	Royalties	957037.27
 2004	CO	Garfield	08045	Oil	Oil	Royalties	44134.91
-2004	CO	Gunnison	08051	Coal		Bonus	1811744.66
 2004	CO	Gunnison	08051	Oil & Gas		Bonus	397591.23
 2004	CO	Gunnison	08051	Oil & Gas		Other Revenues	11215.97
-2004	CO	Gunnison	08051	Coal		Rents	44967.68
 2004	CO	Gunnison	08051	Oil & Gas		Rents	87605.06
-2004	CO	Gunnison	08051	Coal	Coal	Royalties	-5557222.32
-2004	CO	Gunnison	08051	Coal	Coal-Bituminous-Raw	Royalties	-2173166.12
 2004	CO	Gunnison	08051	Gas	Processed (Residue) Gas	Royalties	3344.36
 2004	CO	Gunnison	08051	Gas	Unprocessed (Wet) Gas	Royalties	35366.08
 2004	CO	Gunnison	08051	Oil	Condensate	Royalties	696.78
 2004	CO	Huerfano	08055	Oil & Gas		Bonus	1394
 2004	CO	Huerfano	08055	Oil & Gas		Other Revenues	160
 2004	CO	Huerfano	08055	Oil & Gas		Rents	40074.24
-2004	CO	Huerfano	08055	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2)	Royalties	516898.25
 2004	CO	Jackson	08057	Oil & Gas		Bonus	69560
 2004	CO	Jackson	08057	Oil & Gas		Other Revenues	450.67
 2004	CO	Jackson	08057	Oil & Gas		Rents	159044.62
 2004	CO	Jackson	08057	Oil	Oil	Royalties	245826.36
-2004	CO	Jackson	08057	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2)	Royalties	31970.45
 2004	CO	Kiowa	08061	Oil & Gas		Bonus	2686
 2004	CO	Kiowa	08061	Oil & Gas		Other Royalties	-75
 2004	CO	Kiowa	08061	Oil & Gas		Rents	2623
@@ -84,12 +72,9 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2004	CO	Kiowa	08061	Oil	Condensate	Royalties	173.4
 2004	CO	Kiowa	08061	Oil	Oil	Royalties	25616.5
 2004	CO	Kit Carson	08063	Oil & Gas		Rents	2145
-2004	CO	La Plata	08067	Coal		Bonus	79344
 2004	CO	La Plata	08067	Oil & Gas		Other Revenues	-480
 2004	CO	La Plata	08067	Oil & Gas		Other Royalties	72634.47
-2004	CO	La Plata	08067	Coal		Rents	7542
 2004	CO	La Plata	08067	Oil & Gas		Rents	1707.36
-2004	CO	La Plata	08067	Coal	Coal-Bituminous-Raw	Royalties	-9019.74
 2004	CO	La Plata	08067	Gas	Coal Bed Methane	Royalties	3483203.51
 2004	CO	La Plata	08067	Gas	Processed (Residue) Gas	Royalties	5875.84
 2004	CO	La Plata	08067	Gas	Unprocessed (Wet) Gas	Royalties	2491195.09
@@ -114,10 +99,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2004	CO	Moffat	08081	Oil & Gas		Bonus	1559825
 2004	CO	Moffat	08081	Oil & Gas		Other Revenues	17368.16
 2004	CO	Moffat	08081	Oil & Gas		Other Royalties	331036.45
-2004	CO	Moffat	08081	Coal		Rents	49050
 2004	CO	Moffat	08081	Oil & Gas		Rents	1462413.63
-2004	CO	Moffat	08081	Coal	Coal	Royalties	-846126.56
-2004	CO	Moffat	08081	Coal	Coal-Subbituminous-Raw	Royalties	-2100588.06
 2004	CO	Moffat	08081	Gas	Processed (Residue) Gas	Royalties	1829736.59
 2004	CO	Moffat	08081	Gas	Unprocessed (Wet) Gas	Royalties	7732933.16
 2004	CO	Moffat	08081	NGL	Gas Plant Products	Royalties	110962.86
@@ -131,7 +113,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2004	CO	Montezuma	08083	NGL	Gas Plant Products	Royalties	222495.69
 2004	CO	Montezuma	08083	Oil	Condensate	Royalties	5467.28
 2004	CO	Montezuma	08083	Oil	Oil	Royalties	895429.91
-2004	CO	Montezuma	08083	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2)	Royalties	11623220.43
 2004	CO	Montrose	08085	Oil & Gas		Rents	426652.72
 2004	CO	Morgan	08087	Oil & Gas		Other Revenues	354
 2004	CO	Morgan	08087	Oil & Gas		Rents	2415
@@ -145,29 +126,20 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2004	CO	Prowers	08099	Oil & Gas		Bonus	800
 2004	CO	Prowers	08099	Oil & Gas		Rents	1440
 2004	CO	Prowers	08099	Gas	Unprocessed (Wet) Gas	Royalties	5027.51
-2004	CO	Rio Blanco	08103	Coal		Bonus	16000
 2004	CO	Rio Blanco	08103	Oil & Gas		Bonus	1551378
 2004	CO	Rio Blanco	08103	Oil & Gas		Other Revenues	61595.14
-2004	CO	Rio Blanco	08103	Sodium		Other Revenues	102491
 2004	CO	Rio Blanco	08103	Oil & Gas		Other Royalties	954014.51
-2004	CO	Rio Blanco	08103	Coal		Rents	5685
 2004	CO	Rio Blanco	08103	Oil & Gas		Rents	1369815.21
-2004	CO	Rio Blanco	08103	Sodium		Rents	1349.73
-2004	CO	Rio Blanco	08103	Coal	Coal-Subbituminous-Processed	Royalties	59676.28
 2004	CO	Rio Blanco	08103	Gas	Gas Lost - Flared or Vented	Royalties	431.38
 2004	CO	Rio Blanco	08103	Gas	Processed (Residue) Gas	Royalties	11338060.41
 2004	CO	Rio Blanco	08103	Gas	Unprocessed (Wet) Gas	Royalties	4830552.82
 2004	CO	Rio Blanco	08103	NGL	Gas Plant Products	Royalties	1709743.98
 2004	CO	Rio Blanco	08103	Oil	Condensate	Royalties	764515.29
 2004	CO	Rio Blanco	08103	Oil	Oil	Royalties	12612198.05
-2004	CO	Rio Blanco	08103	Soda Ash-Granular	Soda Ash-Granular	Royalties	-127123.91
-2004	CO	Rio Blanco	08103	Sodium Bicarbonate Animal Feed	Sodium Bicarbonate Animal Feed	Royalties	-28843.19
 2004	CO	Rio Grande	08105	Oil & Gas		Rents	21255.5
 2004	CO	Routt	08107	Oil & Gas		Bonus	1440
 2004	CO	Routt	08107	Oil & Gas		Other Royalties	800
-2004	CO	Routt	08107	Coal		Rents	23611.41
 2004	CO	Routt	08107	Oil & Gas		Rents	229663
-2004	CO	Routt	08107	Coal	Coal-Subbituminous-Processed	Royalties	-527491.56
 2004	CO	Routt	08107	Oil	Oil	Royalties	55682.26
 2004	CO	San Miguel	08113	Oil & Gas		Bonus	16531.36
 2004	CO	San Miguel	08113	Oil & Gas		Other Revenues	1379.46
@@ -197,6 +169,22 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2004	CO	Yuma	08125	Oil & Gas		Other Royalties	-6000
 2004	CO	Yuma	08125	Oil & Gas		Rents	43276
 2004	CO	Yuma	08125	Gas	Unprocessed (Wet) Gas	Royalties	475142.64
+2004	CO		08	Coal		Bonus	6107928.58
+2004	CO		08	Sodium		Other Revenues	102491
+2004	CO		08	Sodium		Other Revenues	-9100.72
+2004	CO		08	Coal		Rents	240192.41
+2004	CO		08	Sodium		Rents	1349.73
+2004	CO		08	Coal	Coal	Royalties	47277146.36
+2004	CO		08	Coal	Coal	Royalties	-6403348.88
+2004	CO		08	Coal	Coal-Bituminous-Raw	Royalties	-2179083.05
+2004	CO		08	Coal	Coal-Subbituminous-Processed	Royalties	-467815.28
+2004	CO		08	Coal	Coal-Subbituminous-Raw	Royalties	-2100588.06
+2004	CO		08	Carbon Dioxide	Carbon Dioxide	Royalties	241
+2004	CO		08	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2)	Royalties	13124605.98
+2004	CO		08	Soda Ash	Soda Ash	Royalties	559202.05
+2004	CO		08	Soda Ash-Granular	Soda Ash-Granular	Royalties	-127123.91
+2004	CO		08	Sodium Bi-Carbonate	Sodium Bi-Carbonate	Royalties	704432.51
+2004	CO		08	Sodium Bicarbonate Animal Feed	Sodium Bicarbonate Animal Feed	Royalties	-28843.19
 2005	CO	Adams	08001	Oil & Gas		Rents	240
 2005	CO	Alamosa	08003	Oil & Gas		Rents	742
 2005	CO	Arapahoe	08005	Oil	Condensate	Royalties	247.68
@@ -224,10 +212,8 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2005	CO	Cheyenne	08017	Oil & Gas		Rents	1434.5
 2005	CO	Cheyenne	08017	NGL	Gas Plant Products	Royalties	12773.74
 2005	CO	Cheyenne	08017	Oil	Oil	Royalties	79775.24
-2005	CO	Delta	08029	Coal		Bonus	866459.29
 2005	CO	Delta	08029	Oil & Gas		Bonus	220772.22
 2005	CO	Delta	08029	Oil & Gas		Other Revenues	-305.63
-2005	CO	Delta	08029	Coal		Rents	94338.32
 2005	CO	Delta	08029	Oil & Gas		Rents	156919.63
 2005	CO	Delta	08029	Gas	Processed (Residue) Gas	Royalties	842.38
 2005	CO	Delta	08029	Gas	Unprocessed (Wet) Gas	Royalties	890.69
@@ -240,13 +226,10 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2005	CO	Dolores	08033	NGL	Gas Plant Products	Royalties	106464.52
 2005	CO	Dolores	08033	Oil	Condensate	Royalties	1371.75
 2005	CO	Dolores	08033	Oil	Oil	Royalties	315473.92
-2005	CO	Dolores	08033	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2)	Royalties	1374346.48
 2005	CO	Eagle	08037	Oil & Gas		Rents	20128.5
-2005	CO	Garfield	08045	Coal		Bonus	413000
 2005	CO	Garfield	08045	Oil & Gas		Bonus	1636565
 2005	CO	Garfield	08045	Oil & Gas		Other Revenues	44375.79
 2005	CO	Garfield	08045	Oil & Gas		Other Royalties	868060.86
-2005	CO	Garfield	08045	Coal		Rents	27021
 2005	CO	Garfield	08045	Oil & Gas		Rents	514693.1
 2005	CO	Garfield	08045	Gas	Coal Bed Methane	Royalties	181013.95
 2005	CO	Garfield	08045	Gas	Processed (Residue) Gas	Royalties	862213.57
@@ -254,32 +237,25 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2005	CO	Garfield	08045	NGL	Gas Plant Products	Royalties	5957.9
 2005	CO	Garfield	08045	Oil	Condensate	Royalties	1504432.3
 2005	CO	Garfield	08045	Oil	Oil	Royalties	107416.27
-2005	CO	Garfield	08045	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2)	Royalties	11791.98
-2005	CO	Gunnison	08051	Coal		Bonus	925071.76
 2005	CO	Gunnison	08051	Oil & Gas		Bonus	294665.78
 2005	CO	Gunnison	08051	Oil & Gas		Other Revenues	8153.61
-2005	CO	Gunnison	08051	Coal		Rents	40563.68
 2005	CO	Gunnison	08051	Oil & Gas		Rents	100486.44
 2005	CO	Gunnison	08051	Gas	Unprocessed (Wet) Gas	Royalties	3044.12
 2005	CO	Gunnison	08051	Oil	Condensate	Royalties	-386.19
 2005	CO	Huerfano	08055	Oil & Gas		Bonus	1240
 2005	CO	Huerfano	08055	Oil & Gas		Other Revenues	708
 2005	CO	Huerfano	08055	Oil & Gas		Rents	15082.07
-2005	CO	Huerfano	08055	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2)	Royalties	430811.33
 2005	CO	Jackson	08057	Oil & Gas		Bonus	1176
 2005	CO	Jackson	08057	Oil & Gas		Other Revenues	77
 2005	CO	Jackson	08057	Oil & Gas		Rents	163943.06
 2005	CO	Jackson	08057	Oil	Oil	Royalties	288877.11
-2005	CO	Jackson	08057	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2)	Royalties	39058.95
 2005	CO	Kiowa	08061	Oil & Gas		Other Revenues	202.25
 2005	CO	Kiowa	08061	Oil & Gas		Rents	2048.5
 2005	CO	Kiowa	08061	Gas	Unprocessed (Wet) Gas	Royalties	19452.84
 2005	CO	Kiowa	08061	Oil	Oil	Royalties	25604.88
 2005	CO	Kit Carson	08063	Oil & Gas		Rents	2145
-2005	CO	La Plata	08067	Coal		Bonus	79344
 2005	CO	La Plata	08067	Oil & Gas		Other Revenues	1097.16
 2005	CO	La Plata	08067	Oil & Gas		Other Royalties	459006.67
-2005	CO	La Plata	08067	Coal		Rents	6042
 2005	CO	La Plata	08067	Oil & Gas		Rents	1562.83
 2005	CO	La Plata	08067	Gas	Coal Bed Methane	Royalties	4893971.91
 2005	CO	La Plata	08067	Gas	Processed (Residue) Gas	Royalties	10331.54
@@ -305,11 +281,9 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2005	CO	Mesa	08077	Oil	Condensate	Royalties	58573.08
 2005	CO	Mesa	08077	Oil	Drip or Scrubber Condensate	Royalties	19157.66
 2005	CO	Mesa	08077	Oil	Oil	Royalties	4542.11
-2005	CO	Moffat	08081	Coal		Bonus	6000
 2005	CO	Moffat	08081	Oil & Gas		Bonus	8171181
 2005	CO	Moffat	08081	Oil & Gas		Other Revenues	14042.86
 2005	CO	Moffat	08081	Oil & Gas		Other Royalties	889911.85
-2005	CO	Moffat	08081	Coal		Rents	49560
 2005	CO	Moffat	08081	Oil & Gas		Rents	1487981.62
 2005	CO	Moffat	08081	Gas	Fuel Gas	Royalties	18.6
 2005	CO	Moffat	08081	Gas	Processed (Residue) Gas	Royalties	7576968.89
@@ -326,7 +300,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2005	CO	Montezuma	08083	NGL	Gas Plant Products	Royalties	305362.46
 2005	CO	Montezuma	08083	Oil	Condensate	Royalties	6675.82
 2005	CO	Montezuma	08083	Oil	Oil	Royalties	1279673.87
-2005	CO	Montezuma	08083	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2)	Royalties	17347613.57
 2005	CO	Montrose	08085	Oil & Gas		Bonus	1026579
 2005	CO	Montrose	08085	Oil & Gas		Rents	336661.7
 2005	CO	Morgan	08087	Oil & Gas		Bonus	6312
@@ -344,11 +317,8 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2005	CO	Rio Blanco	08103	Oil & Gas		Bonus	4346652
 2005	CO	Rio Blanco	08103	Oil & Gas		Other Revenues	30652.53
 2005	CO	Rio Blanco	08103	Oil Shale		Other Revenues	30000
-2005	CO	Rio Blanco	08103	Sodium		Other Revenues	6561
 2005	CO	Rio Blanco	08103	Oil & Gas		Other Royalties	200037.67
-2005	CO	Rio Blanco	08103	Coal		Rents	5685
 2005	CO	Rio Blanco	08103	Oil & Gas		Rents	1297562.25
-2005	CO	Rio Blanco	08103	Sodium		Rents	-8747.52
 2005	CO	Rio Blanco	08103	Gas	Processed (Residue) Gas	Royalties	12280470.09
 2005	CO	Rio Blanco	08103	Gas	Unprocessed (Wet) Gas	Royalties	8157949.33
 2005	CO	Rio Blanco	08103	NGL	Gas Plant Products	Royalties	2133594.71
@@ -357,9 +327,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2005	CO	Rio Grande	08105	Oil & Gas		Rents	20423
 2005	CO	Routt	08107	Oil & Gas		Bonus	333814
 2005	CO	Routt	08107	Oil & Gas		Other Royalties	177
-2005	CO	Routt	08107	Coal		Rents	29451
 2005	CO	Routt	08107	Oil & Gas		Rents	214662.5
-2005	CO	Routt	08107	Coal	Coal	Royalties	-0.01
 2005	CO	Routt	08107	Oil	Oil	Royalties	83985.49
 2005	CO	San Miguel	08113	Oil & Gas		Bonus	696923.99
 2005	CO	San Miguel	08113	Oil & Gas		Other Revenues	40
@@ -390,6 +358,16 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2005	CO	Yuma	08125	Oil & Gas		Other Royalties	-75452.5
 2005	CO	Yuma	08125	Oil & Gas		Rents	47498
 2005	CO	Yuma	08125	Gas	Unprocessed (Wet) Gas	Royalties	578495.45
+2005	CO		08	Coal		Bonus	2289875.05
+2005	CO		08	Coal		Other Revenues	172318.15
+2005	CO		08	Sodium		Other Revenues	6561
+2005	CO		08	Sodium		Other Revenues	80
+2005	CO		08	Coal		Rents	252661
+2005	CO		08	Sodium		Rents	-8747.52
+2005	CO		08	Coal	Coal	Royalties	37140214.78
+2005	CO		08	Coal	Coal	Royalties	-0.01
+2005	CO		08	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2)	Royalties	19203622.31
+2005	CO		08	Sodium Bi-Carbonate	Sodium Bi-Carbonate	Royalties	409652.18
 2006	CO	Adams	08001	Oil & Gas		Rents	320
 2006	CO	Arapahoe	08005	Oil	Condensate	Royalties	115.36
 2006	CO	Arapahoe	08005	Oil	Oil	Royalties	641.33
@@ -412,11 +390,9 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2006	CO	Cheyenne	08017	Oil & Gas		Rents	1018.5
 2006	CO	Cheyenne	08017	NGL	Gas Plant Products	Royalties	13454.37
 2006	CO	Cheyenne	08017	Oil	Oil	Royalties	91901.65
-2006	CO	Delta	08029	Coal		Bonus	16268.8
 2006	CO	Delta	08029	Oil & Gas		Bonus	97509.37
 2006	CO	Delta	08029	Oil & Gas		Other Revenues	2280
 2006	CO	Delta	08029	Oil & Gas		Other Royalties	2500
-2006	CO	Delta	08029	Coal		Rents	40070.32
 2006	CO	Delta	08029	Oil & Gas		Rents	228891.15
 2006	CO	Delta	08029	Gas	Processed (Residue) Gas	Royalties	5183.86
 2006	CO	Delta	08029	Gas	Unprocessed (Wet) Gas	Royalties	-502.4
@@ -430,14 +406,11 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2006	CO	Dolores	08033	NGL	Gas Plant Products	Royalties	160595.12
 2006	CO	Dolores	08033	Oil	Condensate	Royalties	1161.78
 2006	CO	Dolores	08033	Oil	Oil	Royalties	337008.79
-2006	CO	Dolores	08033	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2)	Royalties	1731143.27
 2006	CO	Eagle	08037	Oil & Gas		Rents	20128.5
-2006	CO	Garfield	08045	Coal		Bonus	413000
 2006	CO	Garfield	08045	Oil & Gas		Bonus	3169350
 2006	CO	Garfield	08045	Oil & Gas		Other Revenues	40529.81
 2006	CO	Garfield	08045	Oil	Oil	Other Revenues	-5.46
 2006	CO	Garfield	08045	Oil & Gas		Other Royalties	558956.32
-2006	CO	Garfield	08045	Coal		Rents	27021
 2006	CO	Garfield	08045	Oil & Gas		Rents	500664.16
 2006	CO	Garfield	08045	Gas	Coal Bed Methane	Royalties	22160
 2006	CO	Garfield	08045	Gas	Processed (Residue) Gas	Royalties	25533770.17
@@ -446,23 +419,18 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2006	CO	Garfield	08045	Oil	Condensate	Royalties	2112074.87
 2006	CO	Garfield	08045	Oil	Drip or Scrubber Condensate	Royalties	193042.23
 2006	CO	Garfield	08045	Oil	Oil	Royalties	356577.23
-2006	CO	Garfield	08045	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2)	Royalties	6608.21
-2006	CO	Gunnison	08051	Coal		Bonus	46530.07
 2006	CO	Gunnison	08051	Oil & Gas		Bonus	334785
 2006	CO	Gunnison	08051	Oil & Gas		Other Revenues	13181
 2006	CO	Gunnison	08051	Oil & Gas		Other Royalties	1100
-2006	CO	Gunnison	08051	Coal		Rents	54842.08
 2006	CO	Gunnison	08051	Oil & Gas		Rents	151824.3
 2006	CO	Gunnison	08051	Gas	Unprocessed (Wet) Gas	Royalties	42349.52
 2006	CO	Gunnison	08051	Oil & Gas		Royalties	-0.2
 2006	CO	Gunnison	08051	Oil	Condensate	Royalties	1672.82
 2006	CO	Huerfano	08055	Oil & Gas		Bonus	21142
 2006	CO	Huerfano	08055	Oil & Gas		Rents	26157.82
-2006	CO	Huerfano	08055	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2)	Royalties	590682.21
 2006	CO	Jackson	08057	Oil & Gas		Other Revenues	147
 2006	CO	Jackson	08057	Oil & Gas		Rents	232638.63
 2006	CO	Jackson	08057	Oil	Oil	Royalties	486150.78
-2006	CO	Jackson	08057	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2)	Royalties	60984.75
 2006	CO	Kiowa	08061	Oil & Gas		Bonus	2018
 2006	CO	Kiowa	08061	Oil & Gas		Other Revenues	400
 2006	CO	Kiowa	08061	Oil & Gas		Rents	1642
@@ -470,10 +438,8 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2006	CO	Kiowa	08061	Oil	Oil	Royalties	28082.04
 2006	CO	Kit Carson	08063	Oil & Gas		Bonus	8640
 2006	CO	Kit Carson	08063	Oil & Gas		Rents	3165
-2006	CO	La Plata	08067	Coal		Bonus	79344
 2006	CO	La Plata	08067	Oil & Gas		Other Revenues	34.64
 2006	CO	La Plata	08067	Oil & Gas		Other Royalties	-218268.46
-2006	CO	La Plata	08067	Coal		Rents	7542
 2006	CO	La Plata	08067	Oil & Gas		Rents	1240
 2006	CO	La Plata	08067	Gas	Coal Bed Methane	Royalties	3879814.33
 2006	CO	La Plata	08067	Gas	Processed (Residue) Gas	Royalties	9376.46
@@ -504,9 +470,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2006	CO	Moffat	08081	Oil & Gas		Other Revenues	21421.63
 2006	CO	Moffat	08081	Oil	Oil	Other Revenues	-160
 2006	CO	Moffat	08081	Oil & Gas		Other Royalties	-600129.23
-2006	CO	Moffat	08081	Coal		Rents	49785
 2006	CO	Moffat	08081	Oil & Gas		Rents	1640974.97
-2006	CO	Moffat	08081	Coal	Coal-Subbituminous-Raw	Royalties	-0.1
 2006	CO	Moffat	08081	Gas	Processed (Residue) Gas	Royalties	5106591.16
 2006	CO	Moffat	08081	Gas	Unprocessed (Wet) Gas	Royalties	8723247.53
 2006	CO	Moffat	08081	NGL	Gas Plant Products	Royalties	365005.42
@@ -522,7 +486,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2006	CO	Montezuma	08083	Oil & Gas		Royalties	-76.96
 2006	CO	Montezuma	08083	Oil	Condensate	Royalties	15721.2
 2006	CO	Montezuma	08083	Oil	Oil	Royalties	1562060.62
-2006	CO	Montezuma	08083	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2)	Royalties	21890230.35
 2006	CO	Montrose	08085	Oil & Gas		Bonus	275596.13
 2006	CO	Montrose	08085	Oil & Gas		Rents	526906.27
 2006	CO	Morgan	08087	Oil & Gas		Bonus	640
@@ -543,12 +506,9 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2006	CO	Rio Blanco	08103	Oil & Gas		Other Revenues	39177.19
 2006	CO	Rio Blanco	08103	Oil	Oil	Other Revenues	-5
 2006	CO	Rio Blanco	08103	Oil Shale		Other Revenues	20000
-2006	CO	Rio Blanco	08103	Sodium		Other Revenues	6561
 2006	CO	Rio Blanco	08103	Oil & Gas		Other Royalties	51467.69
-2006	CO	Rio Blanco	08103	Coal		Rents	5685
 2006	CO	Rio Blanco	08103	Oil & Gas		Rents	1300844.96
 2006	CO	Rio Blanco	08103	Oil Shale		Rents	15264
-2006	CO	Rio Blanco	08103	Sodium		Rents	-8224
 2006	CO	Rio Blanco	08103	Gas	Coal Bed Methane	Royalties	848102.03
 2006	CO	Rio Blanco	08103	Gas	Processed (Residue) Gas	Royalties	14096668.27
 2006	CO	Rio Blanco	08103	Gas	Unprocessed (Wet) Gas	Royalties	11571839.77
@@ -559,7 +519,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2006	CO	Rio Grande	08105	Oil & Gas		Bonus	1120
 2006	CO	Rio Grande	08105	Oil & Gas		Rents	25110.5
 2006	CO	Routt	08107	Oil & Gas		Bonus	142902
-2006	CO	Routt	08107	Coal		Rents	3201
 2006	CO	Routt	08107	Oil & Gas		Rents	181762.9
 2006	CO	Routt	08107	Oil	Oil	Royalties	100432.15
 2006	CO	Saguache	08109	Oil & Gas		Rents	960
@@ -589,6 +548,15 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2006	CO	Yuma	08125	Oil & Gas		Bonus	4160
 2006	CO	Yuma	08125	Oil & Gas		Rents	58063.5
 2006	CO	Yuma	08125	Gas	Unprocessed (Wet) Gas	Royalties	557635.23
+2006	CO		08	Coal		Bonus	555142.87
+2006	CO		08	Sodium		Other Revenues	6561
+2006	CO		08	Sodium		Other Revenues	-24592
+2006	CO		08	Coal		Rents	188146.4
+2006	CO		08	Sodium		Rents	-8224
+2006	CO		08	Coal	Coal	Royalties	48424625.89
+2006	CO		08	Coal	Coal-Subbituminous-Raw	Royalties	-0.1
+2006	CO		08	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2)	Royalties	24279648.79
+2006	CO		08	Sodium Bi-Carbonate	Sodium Bi-Carbonate	Royalties	361867.12
 2007	CO	Adams	08001	Oil & Gas		Rents	320
 2007	CO	Arapahoe	08005	Oil & Gas		Bonus	4160
 2007	CO	Arapahoe	08005	Oil & Gas		Rents	3120
@@ -616,11 +584,9 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2007	CO	Cheyenne	08017	Oil	Oil	Royalties	72228.61
 2007	CO	Crowley	08025	Oil & Gas		Bonus	25480
 2007	CO	Crowley	08025	Oil & Gas		Rents	588
-2007	CO	Delta	08029	Coal		Bonus	72307.33
 2007	CO	Delta	08029	Oil & Gas		Bonus	779911.39
 2007	CO	Delta	08029	Oil & Gas		Other Revenues	320
 2007	CO	Delta	08029	Oil & Gas		Other Royalties	-2575.06
-2007	CO	Delta	08029	Coal		Rents	40305.16
 2007	CO	Delta	08029	Oil & Gas		Rents	233718.02
 2007	CO	Dolores	08033	Oil & Gas		Bonus	78330
 2007	CO	Dolores	08033	Oil & Gas		Other Revenues	41981.3
@@ -631,13 +597,10 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2007	CO	Dolores	08033	NGL	Gas Plant Products	Royalties	143102.95
 2007	CO	Dolores	08033	Oil	Condensate	Royalties	3114.68
 2007	CO	Dolores	08033	Oil	Oil	Royalties	369403.9
-2007	CO	Dolores	08033	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2)	Royalties	1672535.56
 2007	CO	Eagle	08037	Oil & Gas		Rents	23188.5
-2007	CO	Garfield	08045	Coal		Bonus	413000
 2007	CO	Garfield	08045	Oil & Gas		Bonus	3633968
 2007	CO	Garfield	08045	Oil & Gas		Other Revenues	48177.41
 2007	CO	Garfield	08045	Oil & Gas		Other Royalties	1412502.25
-2007	CO	Garfield	08045	Coal		Rents	27021
 2007	CO	Garfield	08045	Oil & Gas		Rents	525110.29
 2007	CO	Garfield	08045	Gas	Coal Bed Methane	Royalties	71213.43
 2007	CO	Garfield	08045	Gas	Processed (Residue) Gas	Royalties	36449583.71
@@ -646,27 +609,20 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2007	CO	Garfield	08045	Oil	Condensate	Royalties	1783487.23
 2007	CO	Garfield	08045	Oil	Drip or Scrubber Condensate	Royalties	319961.17
 2007	CO	Garfield	08045	Oil	Oil	Royalties	712465.86
-2007	CO	Garfield	08045	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2)	Royalties	4131.63
 2007	CO	Grand	08049	Oil & Gas		Bonus	9900
 2007	CO	Grand	08049	Oil & Gas		Rents	17243.5
-2007	CO	Gunnison	08051	Coal		Bonus	726797.54
 2007	CO	Gunnison	08051	Oil & Gas		Bonus	785870.04
 2007	CO	Gunnison	08051	Oil & Gas		Other Revenues	-1150
 2007	CO	Gunnison	08051	Oil & Gas		Other Royalties	27875.06
-2007	CO	Gunnison	08051	Coal		Rents	38673.91
 2007	CO	Gunnison	08051	Oil & Gas		Rents	147870.44
-2007	CO	Gunnison	08051	Coal		Royalties	-218553.06
-2007	CO	Gunnison	08051	Coal	Coal-Bituminous-Raw	Royalties	27121.87
 2007	CO	Gunnison	08051	Gas	Coal Bed Methane	Royalties	60329.66
 2007	CO	Gunnison	08051	Gas	Unprocessed (Wet) Gas	Royalties	37539.67
 2007	CO	Huerfano	08055	Oil & Gas		Bonus	67853
 2007	CO	Huerfano	08055	Oil & Gas		Rents	50414.69
-2007	CO	Huerfano	08055	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2)	Royalties	370622.11
 2007	CO	Jackson	08057	Oil & Gas		Bonus	224009
 2007	CO	Jackson	08057	Oil & Gas		Other Revenues	4835
 2007	CO	Jackson	08057	Oil & Gas		Rents	225302
 2007	CO	Jackson	08057	Oil	Oil	Royalties	431325.86
-2007	CO	Jackson	08057	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2)	Royalties	101739.59
 2007	CO	Kiowa	08061	Oil & Gas		Bonus	2904
 2007	CO	Kiowa	08061	Oil & Gas		Rents	3014.5
 2007	CO	Kiowa	08061	Gas	Unprocessed (Wet) Gas	Royalties	14619.54
@@ -675,7 +631,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2007	CO	Kit Carson	08063	Oil & Gas		Rents	4041.27
 2007	CO	La Plata	08067	Oil & Gas		Other Revenues	40
 2007	CO	La Plata	08067	Oil & Gas		Other Royalties	-170871.5
-2007	CO	La Plata	08067	Coal		Rents	7542
 2007	CO	La Plata	08067	Oil & Gas		Rents	1417.36
 2007	CO	La Plata	08067	Gas	Coal Bed Methane	Royalties	2473014.17
 2007	CO	La Plata	08067	Gas	Processed (Residue) Gas	Royalties	-1012.71
@@ -701,12 +656,9 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2007	CO	Mesa	08077	Oil	Condensate	Royalties	172571.57
 2007	CO	Mesa	08077	Oil	Drip or Scrubber Condensate	Royalties	5735.99
 2007	CO	Mesa	08077	Oil	Oil	Royalties	20466.49
-2007	CO	Moffat	08081	Coal		Bonus	2621320
 2007	CO	Moffat	08081	Oil & Gas		Bonus	8110061.5
-2007	CO	Moffat	08081	Coal		Other Revenues	-5623.23
 2007	CO	Moffat	08081	Oil & Gas		Other Revenues	21727
 2007	CO	Moffat	08081	Oil & Gas		Other Royalties	-186347.85
-2007	CO	Moffat	08081	Coal		Rents	52830
 2007	CO	Moffat	08081	Oil & Gas		Rents	2123681.93
 2007	CO	Moffat	08081	Gas	Coal Bed Methane	Royalties	685.21
 2007	CO	Moffat	08081	Gas	Processed (Residue) Gas	Royalties	2847193.89
@@ -723,7 +675,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2007	CO	Montezuma	08083	NGL	Gas Plant Products	Royalties	202603.31
 2007	CO	Montezuma	08083	Oil	Condensate	Royalties	15661.86
 2007	CO	Montezuma	08083	Oil	Oil	Royalties	1349765.79
-2007	CO	Montezuma	08083	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2)	Royalties	20600843.37
 2007	CO	Montrose	08085	Oil & Gas		Bonus	1414540
 2007	CO	Montrose	08085	Oil & Gas		Rents	600195.84
 2007	CO	Morgan	08087	Oil & Gas		Other Revenues	406
@@ -734,18 +685,13 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2007	CO	Phillips	08095	Oil & Gas		Rents	9963
 2007	CO	Pitkin	08097	Oil & Gas		Bonus	54420
 2007	CO	Pitkin	08097	Oil & Gas		Other Revenues	31053.84
-2007	CO	Pitkin	08097	Coal		Rents	-678.29
 2007	CO	Pitkin	08097	Oil & Gas		Rents	39727.52
-2007	CO	Pitkin	08097	Coal		Royalties	-22170.65
 2007	CO	Prowers	08099	Oil & Gas		Bonus	2520
 2007	CO	Prowers	08099	Oil & Gas		Rents	5092.5
 2007	CO	Prowers	08099	Gas	Unprocessed (Wet) Gas	Royalties	1673.15
-2007	CO	Rio Blanco	08103	Coal		Bonus	96000
 2007	CO	Rio Blanco	08103	Oil & Gas		Bonus	1778753
 2007	CO	Rio Blanco	08103	Oil & Gas		Other Revenues	36668.34
-2007	CO	Rio Blanco	08103	Sodium		Other Revenues	6561
 2007	CO	Rio Blanco	08103	Oil & Gas		Other Royalties	598699.17
-2007	CO	Rio Blanco	08103	Coal		Rents	5685
 2007	CO	Rio Blanco	08103	Oil & Gas		Rents	1291798.55
 2007	CO	Rio Blanco	08103	Gas	Coal Bed Methane	Royalties	553775.43
 2007	CO	Rio Blanco	08103	Gas	Processed (Residue) Gas	Royalties	11719128.32
@@ -754,14 +700,10 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2007	CO	Rio Blanco	08103	Oil	Condensate	Royalties	749907.67
 2007	CO	Rio Blanco	08103	Oil	Drip or Scrubber Condensate	Royalties	18820.72
 2007	CO	Rio Blanco	08103	Oil	Oil	Royalties	26863905.37
-2007	CO	Rio Blanco	08103	Sodium Bi-Carbonate	Sodium Bi-Carbonate	Royalties	-0.04
 2007	CO	Rio Grande	08105	Oil & Gas		Bonus	3422
 2007	CO	Rio Grande	08105	Oil & Gas		Rents	30233
-2007	CO	Routt	08107	Coal		Bonus	360000
 2007	CO	Routt	08107	Oil & Gas		Bonus	542860
-2007	CO	Routt	08107	Coal		Rents	31941
 2007	CO	Routt	08107	Oil & Gas		Rents	184105.5
-2007	CO	Routt	08107	Coal	Coal	Royalties	-5.46
 2007	CO	Routt	08107	Oil	Oil	Royalties	97396.55
 2007	CO	Saguache	08109	Oil & Gas		Rents	2544
 2007	CO	San Miguel	08113	Oil & Gas		Bonus	2034337
@@ -791,6 +733,18 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2007	CO	Yuma	08125	Oil & Gas		Other Royalties	10650
 2007	CO	Yuma	08125	Oil & Gas		Rents	41999
 2007	CO	Yuma	08125	Gas	Unprocessed (Wet) Gas	Royalties	707366.87
+2007	CO		08	Coal		Bonus	4289424.87
+2007	CO		08	Coal		Other Revenues	107145.55
+2007	CO		08	Coal		Other Revenues	-5623.23
+2007	CO		08	Sodium		Other Revenues	6561
+2007	CO		08	Coal		Rents	203319.78
+2007	CO		08	Coal		Royalties	-240723.71
+2007	CO		08	Coal	Coal	Royalties	45814707.4
+2007	CO		08	Coal	Coal	Royalties	-5.46
+2007	CO		08	Coal	Coal-Bituminous-Raw	Royalties	27121.87
+2007	CO		08	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2)	Royalties	22749872.26
+2007	CO		08	Sodium Bi-Carbonate	Sodium Bi-Carbonate	Royalties	245418.6
+2007	CO		08	Sodium Bi-Carbonate	Sodium Bi-Carbonate	Royalties	-0.04
 2008	CO	Adams	08001	Oil & Gas		Rents	320
 2008	CO	Arapahoe	08005	Oil & Gas		Other Revenues	88
 2008	CO	Arapahoe	08005	Oil & Gas		Rents	1560
@@ -814,13 +768,10 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2008	CO	Cheyenne	08017	NGL	Gas Plant Products	Royalties	14592
 2008	CO	Cheyenne	08017	Oil	Oil	Royalties	83121.39
 2008	CO	Crowley	08025	Oil & Gas		Rents	588
-2008	CO	Delta	08029	Coal		Bonus	225180
 2008	CO	Delta	08029	Oil & Gas		Bonus	22236.25
 2008	CO	Delta	08029	Oil & Gas		Other Revenues	1573.48
 2008	CO	Delta	08029	Oil & Gas		Other Royalties	4062.58
-2008	CO	Delta	08029	Coal		Rents	22195.05
 2008	CO	Delta	08029	Oil & Gas		Rents	235859.97
-2008	CO	Delta	08029	Coal	Coal-Bituminous-Raw	Royalties	175.01
 2008	CO	Delta	08029	Gas	Unprocessed (Wet) Gas	Royalties	25764.83
 2008	CO	Delta	08029	NGL	Gas Plant Products	Royalties	1015
 2008	CO	Dolores	08033	Oil & Gas		Bonus	2850789.86
@@ -832,15 +783,12 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2008	CO	Dolores	08033	NGL	Gas Plant Products	Royalties	167802.74
 2008	CO	Dolores	08033	Oil	Condensate	Royalties	2141.74
 2008	CO	Dolores	08033	Oil	Oil	Royalties	425786.03
-2008	CO	Dolores	08033	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2)	Royalties	8622329.59
 2008	CO	Eagle	08037	Oil & Gas		Rents	24476
 2008	CO	Fremont	08043	Oil & Gas		Bonus	320
 2008	CO	Fremont	08043	Oil & Gas		Rents	240
-2008	CO	Garfield	08045	Coal		Bonus	413000
 2008	CO	Garfield	08045	Oil & Gas		Bonus	120274357
 2008	CO	Garfield	08045	Oil & Gas		Other Revenues	31322.43
 2008	CO	Garfield	08045	Oil & Gas		Other Royalties	208142.02
-2008	CO	Garfield	08045	Coal		Rents	27021
 2008	CO	Garfield	08045	Oil & Gas		Rents	578882.63
 2008	CO	Garfield	08045	Gas	Coal Bed Methane	Royalties	60958.68
 2008	CO	Garfield	08045	Gas	Processed (Residue) Gas	Royalties	82502978.67
@@ -849,27 +797,21 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2008	CO	Garfield	08045	Oil	Condensate	Royalties	3384565.19
 2008	CO	Garfield	08045	Oil	Drip or Scrubber Condensate	Royalties	1089777.3
 2008	CO	Garfield	08045	Oil	Oil	Royalties	1067510.39
-2008	CO	Garfield	08045	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2)	Royalties	5262.39
 2008	CO	Grand	08049	Oil & Gas		Bonus	25954
 2008	CO	Grand	08049	Oil & Gas		Rents	42811.5
-2008	CO	Gunnison	08051	Coal		Bonus	643398.87
 2008	CO	Gunnison	08051	Oil & Gas		Other Revenues	5535.62
 2008	CO	Gunnison	08051	Oil & Gas		Other Royalties	19498.83
-2008	CO	Gunnison	08051	Coal		Rents	54459.64
 2008	CO	Gunnison	08051	Oil & Gas		Rents	239279.56
-2008	CO	Gunnison	08051	Coal	Coal-Bituminous-Raw	Royalties	217359.48
 2008	CO	Gunnison	08051	Gas	Coal Bed Methane	Royalties	218937.03
 2008	CO	Gunnison	08051	Gas	Unprocessed (Wet) Gas	Royalties	59563.86
 2008	CO	Gunnison	08051	NGL	Gas Plant Products	Royalties	2678.41
 2008	CO	Gunnison	08051	Oil	Condensate	Royalties	1208.89
 2008	CO	Huerfano	08055	Oil & Gas		Bonus	80880
 2008	CO	Huerfano	08055	Oil & Gas		Rents	42831.5
-2008	CO	Huerfano	08055	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2)	Royalties	585625.87
 2008	CO	Jackson	08057	Oil & Gas		Bonus	787437
 2008	CO	Jackson	08057	Oil & Gas		Other Revenues	4875
 2008	CO	Jackson	08057	Oil & Gas		Rents	293692
 2008	CO	Jackson	08057	Oil	Oil	Royalties	585329.25
-2008	CO	Jackson	08057	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2)	Royalties	85188.77
 2008	CO	Kiowa	08061	Oil & Gas		Rents	1878
 2008	CO	Kiowa	08061	Gas	Unprocessed (Wet) Gas	Royalties	16904.44
 2008	CO	Kiowa	08061	Oil	Oil	Royalties	36804.47
@@ -877,7 +819,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2008	CO	Kit Carson	08063	Oil & Gas		Rents	3080.79
 2008	CO	La Plata	08067	Oil & Gas		Other Revenues	640
 2008	CO	La Plata	08067	Oil & Gas		Other Royalties	270587.06
-2008	CO	La Plata	08067	Coal		Rents	11169
 2008	CO	La Plata	08067	Oil & Gas		Rents	1417.36
 2008	CO	La Plata	08067	Gas	Coal Bed Methane	Royalties	3247002.35
 2008	CO	La Plata	08067	Gas	Processed (Residue) Gas	Royalties	-1567.54
@@ -902,11 +843,9 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2008	CO	Mesa	08077	Oil	Condensate	Royalties	236759.75
 2008	CO	Mesa	08077	Oil	Drip or Scrubber Condensate	Royalties	77411.97
 2008	CO	Mesa	08077	Oil	Oil	Royalties	209934.52
-2008	CO	Moffat	08081	Coal		Bonus	2621320
 2008	CO	Moffat	08081	Oil & Gas		Bonus	3801887
 2008	CO	Moffat	08081	Oil & Gas		Other Revenues	9730.24
 2008	CO	Moffat	08081	Oil & Gas		Other Royalties	750246.82
-2008	CO	Moffat	08081	Coal		Rents	55032
 2008	CO	Moffat	08081	Oil & Gas		Rents	1770310.95
 2008	CO	Moffat	08081	Gas	Coal Bed Methane	Royalties	837.63
 2008	CO	Moffat	08081	Gas	Processed (Residue) Gas	Royalties	3601306.38
@@ -923,7 +862,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2008	CO	Montezuma	08083	NGL	Gas Plant Products	Royalties	237196.83
 2008	CO	Montezuma	08083	Oil	Condensate	Royalties	2767.89
 2008	CO	Montezuma	08083	Oil	Oil	Royalties	1776832.37
-2008	CO	Montezuma	08083	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2)	Royalties	47980448.41
 2008	CO	Montrose	08085	Oil & Gas		Bonus	1449829.37
 2008	CO	Montrose	08085	Oil & Gas		Rents	531253.89
 2008	CO	Morgan	08087	Oil & Gas		Bonus	1280
@@ -940,11 +878,8 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2008	CO	Prowers	08099	Gas	Unprocessed (Wet) Gas	Royalties	2213.96
 2008	CO	Rio Blanco	08103	Oil & Gas		Bonus	10790
 2008	CO	Rio Blanco	08103	Oil & Gas		Other Revenues	92531.94
-2008	CO	Rio Blanco	08103	Sodium		Other Revenues	161390.72
 2008	CO	Rio Blanco	08103	Oil & Gas		Other Royalties	343004.24
-2008	CO	Rio Blanco	08103	Coal		Rents	5685
 2008	CO	Rio Blanco	08103	Oil & Gas		Rents	1206769.26
-2008	CO	Rio Blanco	08103	Sodium		Rents	-28581.73
 2008	CO	Rio Blanco	08103	Gas	Coal Bed Methane	Royalties	719232.25
 2008	CO	Rio Blanco	08103	Gas	Gas Lost - Flared or Vented	Royalties	1733.4
 2008	CO	Rio Blanco	08103	Gas	Processed (Residue) Gas	Royalties	21981125.6
@@ -955,10 +890,8 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2008	CO	Rio Blanco	08103	Oil	Oil	Royalties	34662339.9
 2008	CO	Rio Grande	08105	Oil & Gas		Bonus	-1140
 2008	CO	Rio Grande	08105	Oil & Gas		Rents	30597.5
-2008	CO	Routt	08107	Coal		Bonus	465000
 2008	CO	Routt	08107	Oil & Gas		Bonus	774928
 2008	CO	Routt	08107	Oil & Gas		Other Royalties	500
-2008	CO	Routt	08107	Coal		Rents	57195
 2008	CO	Routt	08107	Oil & Gas		Rents	210178.71
 2008	CO	Routt	08107	Oil	Oil	Royalties	91133.68
 2008	CO	Saguache	08109	Oil & Gas		Bonus	31752
@@ -992,6 +925,15 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2008	CO	Yuma	08125	Oil & Gas		Other Royalties	28565.56
 2008	CO	Yuma	08125	Oil & Gas		Rents	53186.74
 2008	CO	Yuma	08125	Gas	Unprocessed (Wet) Gas	Royalties	1379082.6
+2008	CO		08	Coal		Bonus	4367898.87
+2008	CO		08	Sodium		Other Revenues	180672
+2008	CO		08	Sodium		Other Revenues	161390.72
+2008	CO		08	Coal		Rents	232756.69
+2008	CO		08	Sodium		Rents	-28581.73
+2008	CO		08	Coal	Coal	Royalties	56335614.18
+2008	CO		08	Coal	Coal-Bituminous-Raw	Royalties	217534.49
+2008	CO		08	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2)	Royalties	57278855.03
+2008	CO		08	Sodium Bi-Carbonate	Sodium Bi-Carbonate	Royalties	282035.96
 2009	CO	Adams	08001	Oil & Gas		Rents	320
 2009	CO	Arapahoe	08005	Oil & Gas		Other Revenues	88
 2009	CO	Arapahoe	08005	Oil & Gas		Rents	1560
@@ -1019,10 +961,8 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2009	CO	Cheyenne	08017	NGL	Gas Plant Products	Royalties	6479.27
 2009	CO	Cheyenne	08017	Oil	Oil	Royalties	22874.12
 2009	CO	Crowley	08025	Oil & Gas		Rents	588
-2009	CO	Delta	08029	Coal		Bonus	23144.6
 2009	CO	Delta	08029	Oil & Gas		Bonus	-1512.22
 2009	CO	Delta	08029	Oil & Gas		Other Revenues	520
-2009	CO	Delta	08029	Coal		Rents	42473.92
 2009	CO	Delta	08029	Oil & Gas		Rents	223883.82
 2009	CO	Delta	08029	Gas	Coal Bed Methane	Royalties	3006.7
 2009	CO	Delta	08029	Gas	Unprocessed (Wet) Gas	Royalties	2845.82
@@ -1036,13 +976,11 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2009	CO	Dolores	08033	NGL	Gas Plant Products	Royalties	12723.43
 2009	CO	Dolores	08033	Oil	Condensate	Royalties	2428.13
 2009	CO	Dolores	08033	Oil	Oil	Royalties	155973.17
-2009	CO	Dolores	08033	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2)	Royalties	6247017.96
 2009	CO	Eagle	08037	Oil & Gas		Rents	5150
 2009	CO	Fremont	08043	Oil & Gas		Rents	240
 2009	CO	Garfield	08045	Oil & Gas		Bonus	4745440.01
 2009	CO	Garfield	08045	Oil & Gas		Other Revenues	29812.9
 2009	CO	Garfield	08045	Oil & Gas		Other Royalties	978472.62
-2009	CO	Garfield	08045	Coal		Rents	27021
 2009	CO	Garfield	08045	Oil & Gas		Rents	705540.71
 2009	CO	Garfield	08045	Gas	Coal Bed Methane	Royalties	14845.65
 2009	CO	Garfield	08045	Gas	Processed (Residue) Gas	Royalties	-16276943.24
@@ -1051,32 +989,25 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2009	CO	Garfield	08045	Oil	Condensate	Royalties	796119.9
 2009	CO	Garfield	08045	Oil	Drip or Scrubber Condensate	Royalties	43168.4
 2009	CO	Garfield	08045	Oil	Oil	Royalties	764622.63
-2009	CO	Garfield	08045	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2)	Royalties	45257.43
 2009	CO	Grand	08049	Oil & Gas		Rents	28686
-2009	CO	Gunnison	08051	Coal		Bonus	628916.4
 2009	CO	Gunnison	08051	Oil & Gas		Bonus	-247.78
 2009	CO	Gunnison	08051	Oil & Gas		Other Revenues	2372
-2009	CO	Gunnison	08051	Coal		Rents	54518.39
 2009	CO	Gunnison	08051	Oil & Gas		Rents	195755.47
-2009	CO	Gunnison	08051	Coal	Coal	Royalties	0.02
 2009	CO	Gunnison	08051	Gas	Coal Bed Methane	Royalties	149428.53
 2009	CO	Gunnison	08051	Gas	Unprocessed (Wet) Gas	Royalties	21247.61
 2009	CO	Gunnison	08051	NGL	Gas Plant Products	Royalties	415.69
 2009	CO	Huerfano	08055	Oil & Gas		Bonus	264772
 2009	CO	Huerfano	08055	Oil & Gas		Rents	54016.5
-2009	CO	Huerfano	08055	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2)	Royalties	307939.77
 2009	CO	Jackson	08057	Oil & Gas		Bonus	15532
 2009	CO	Jackson	08057	Oil & Gas		Other Revenues	4751
 2009	CO	Jackson	08057	Oil & Gas		Rents	330936.4
 2009	CO	Jackson	08057	Oil	Oil	Royalties	412353.54
-2009	CO	Jackson	08057	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2)	Royalties	35332.58
 2009	CO	Kiowa	08061	Oil & Gas		Bonus	33232
 2009	CO	Kiowa	08061	Oil & Gas		Rents	3075
 2009	CO	Kiowa	08061	Gas	Unprocessed (Wet) Gas	Royalties	5824.92
 2009	CO	Kiowa	08061	Oil	Oil	Royalties	21687.19
 2009	CO	Kit Carson	08063	Oil & Gas		Rents	2796
 2009	CO	La Plata	08067	Oil & Gas		Other Royalties	-405970.55
-2009	CO	La Plata	08067	Coal		Rents	7542
 2009	CO	La Plata	08067	Oil & Gas		Rents	817.36
 2009	CO	La Plata	08067	Gas	Coal Bed Methane	Royalties	1197250.63
 2009	CO	La Plata	08067	Gas	Processed (Residue) Gas	Royalties	1940.98
@@ -1104,11 +1035,9 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2009	CO	Mesa	08077	Oil	Condensate	Royalties	178549.01
 2009	CO	Mesa	08077	Oil	Drip or Scrubber Condensate	Royalties	4972.9
 2009	CO	Mesa	08077	Oil	Oil	Royalties	70560.54
-2009	CO	Moffat	08081	Coal		Bonus	2621320
 2009	CO	Moffat	08081	Oil & Gas		Bonus	-9027
 2009	CO	Moffat	08081	Oil & Gas		Other Revenues	21706
 2009	CO	Moffat	08081	Oil & Gas		Other Royalties	-763556.96
-2009	CO	Moffat	08081	Coal		Rents	52830
 2009	CO	Moffat	08081	Oil & Gas		Rents	1401512.27
 2009	CO	Moffat	08081	Gas	Coal Bed Methane	Royalties	787.36
 2009	CO	Moffat	08081	Gas	Processed (Residue) Gas	Royalties	1434085.47
@@ -1125,7 +1054,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2009	CO	Montezuma	08083	NGL	Gas Plant Products	Royalties	62862.35
 2009	CO	Montezuma	08083	Oil	Condensate	Royalties	1128.22
 2009	CO	Montezuma	08083	Oil	Oil	Royalties	682209.77
-2009	CO	Montezuma	08083	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2)	Royalties	32079436.98
 2009	CO	Montrose	08085	Oil & Gas		Bonus	2228
 2009	CO	Montrose	08085	Oil & Gas		Rents	491270.51
 2009	CO	Morgan	08087	Oil & Gas		Bonus	6404
@@ -1142,14 +1070,10 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2009	CO	Prowers	08099	Oil & Gas		Bonus	51518
 2009	CO	Prowers	08099	Oil & Gas		Rents	6107
 2009	CO	Prowers	08099	Gas	Unprocessed (Wet) Gas	Royalties	672.7
-2009	CO	Rio Blanco	08103	Coal		Bonus	40000
 2009	CO	Rio Blanco	08103	Oil & Gas		Bonus	936006
 2009	CO	Rio Blanco	08103	Oil & Gas		Other Revenues	194232.16
-2009	CO	Rio Blanco	08103	Sodium		Other Revenues	-190506
 2009	CO	Rio Blanco	08103	Oil & Gas		Other Royalties	1353975.92
-2009	CO	Rio Blanco	08103	Coal		Rents	5685
 2009	CO	Rio Blanco	08103	Oil & Gas		Rents	1063817.2
-2009	CO	Rio Blanco	08103	Sodium		Rents	-867
 2009	CO	Rio Blanco	08103	Gas	Coal Bed Methane	Royalties	249293.86
 2009	CO	Rio Blanco	08103	Gas	Processed (Residue) Gas	Royalties	10231016.98
 2009	CO	Rio Blanco	08103	Gas	Unprocessed (Wet) Gas	Royalties	5986293.98
@@ -1158,12 +1082,9 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2009	CO	Rio Blanco	08103	Oil	Drip or Scrubber Condensate	Royalties	531208.37
 2009	CO	Rio Blanco	08103	Oil	Oil	Royalties	15448559.38
 2009	CO	Rio Grande	08105	Oil & Gas		Rents	17917.5
-2009	CO	Routt	08107	Coal		Bonus	430000
 2009	CO	Routt	08107	Oil & Gas		Bonus	35880
 2009	CO	Routt	08107	Oil & Gas		Other Royalties	3000
-2009	CO	Routt	08107	Coal		Rents	5970
 2009	CO	Routt	08107	Oil & Gas		Rents	186269.22
-2009	CO	Routt	08107	Coal	Coal	Royalties	-0.3
 2009	CO	Routt	08107	Oil	Oil	Royalties	115124.7
 2009	CO	Saguache	08109	Oil & Gas		Rents	2232
 2009	CO	San Miguel	08113	Oil & Gas		Bonus	3533
@@ -1192,6 +1113,16 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2009	CO	Yuma	08125	Oil & Gas		Rents	52854.5
 2009	CO	Yuma	08125	Gas	Unprocessed (Wet) Gas	Royalties	590777.81
 2009	CO	Yuma	08125	Oil	Oil	Royalties	1869.68
+2009	CO		08	Coal		Bonus	3743381
+2009	CO		08	Coal		Other Revenues	721584.52
+2009	CO		08	Sodium		Other Revenues	49344
+2009	CO		08	Sodium		Other Revenues	-190506
+2009	CO		08	Coal		Rents	196040.31
+2009	CO		08	Sodium		Rents	-867
+2009	CO		08	Coal	Coal	Royalties	41577742.94
+2009	CO		08	Coal	Coal	Royalties	-0.28
+2009	CO		08	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2)	Royalties	38714984.72
+2009	CO		08	Sodium Bi-Carbonate	Sodium Bi-Carbonate	Royalties	295578.5
 2010	CO	Arapahoe	08005	Oil & Gas		Other Revenues	88
 2010	CO	Arapahoe	08005	Oil	Condensate	Royalties	92.58
 2010	CO	Arapahoe	08005	Oil	Oil	Royalties	451.02
@@ -1220,7 +1151,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2010	CO	Cheyenne	08017	Oil	Oil	Royalties	128598.34
 2010	CO	Delta	08029	Oil & Gas		Other Revenues	7244.02
 2010	CO	Delta	08029	Oil & Gas		Other Royalties	-2458.19
-2010	CO	Delta	08029	Coal		Rents	22922.91
 2010	CO	Delta	08029	Oil & Gas		Rents	221012.67
 2010	CO	Delta	08029	Gas	Coal Bed Methane	Royalties	3515.4
 2010	CO	Delta	08029	NGL	Gas Plant Products	Royalties	137.08
@@ -1233,7 +1163,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2010	CO	Dolores	08033	NGL	Gas Plant Products	Royalties	22663.94
 2010	CO	Dolores	08033	Oil	Condensate	Royalties	1954.85
 2010	CO	Dolores	08033	Oil	Oil	Royalties	233693.41
-2010	CO	Dolores	08033	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2)	Royalties	6245700.08
 2010	CO	Eagle	08037	Oil & Gas		Rents	5150
 2010	CO	El Paso	08041	Oil & Gas		Bonus	320
 2010	CO	El Paso	08041	Oil & Gas		Rents	5584.5
@@ -1242,7 +1171,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2010	CO	Garfield	08045	Oil & Gas		Bonus	48461.38
 2010	CO	Garfield	08045	Oil & Gas		Other Revenues	28077.04
 2010	CO	Garfield	08045	Oil & Gas		Other Royalties	-1132234.54
-2010	CO	Garfield	08045	Coal		Rents	27021
 2010	CO	Garfield	08045	Oil & Gas		Rents	484294.09
 2010	CO	Garfield	08045	Gas	Coal Bed Methane	Royalties	7767.96
 2010	CO	Garfield	08045	Gas	Fuel Gas	Royalties	2666.5
@@ -1252,27 +1180,21 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2010	CO	Garfield	08045	Oil	Condensate	Royalties	3978610.19
 2010	CO	Garfield	08045	Oil	Drip or Scrubber Condensate	Royalties	221093.2
 2010	CO	Garfield	08045	Oil	Oil	Royalties	1038356.46
-2010	CO	Garfield	08045	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2)	Royalties	14762.27
 2010	CO	Grand	08049	Oil & Gas		Rents	28686
-2010	CO	Gunnison	08051	Coal		Bonus	605000
 2010	CO	Gunnison	08051	Oil & Gas		Other Revenues	13080.6
 2010	CO	Gunnison	08051	Oil & Gas		Other Royalties	24650.59
-2010	CO	Gunnison	08051	Coal		Rents	50508.09
 2010	CO	Gunnison	08051	Oil & Gas		Rents	123637.32
-2010	CO	Gunnison	08051	Coal	Coal	Royalties	0.02
 2010	CO	Gunnison	08051	Gas	Coal Bed Methane	Royalties	191267.75
 2010	CO	Gunnison	08051	Gas	Processed (Residue) Gas	Royalties	90110.89
 2010	CO	Gunnison	08051	Gas	Unprocessed (Wet) Gas	Royalties	43503.63
 2010	CO	Gunnison	08051	NGL	Gas Plant Products	Royalties	743.47
 2010	CO	Huerfano	08055	Oil & Gas		Bonus	283554
 2010	CO	Huerfano	08055	Oil & Gas		Rents	129992.5
-2010	CO	Huerfano	08055	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2)	Royalties	425070.96
 2010	CO	Jackson	08057	Oil & Gas		Bonus	2480
 2010	CO	Jackson	08057	Oil & Gas		Other Revenues	16089.5
 2010	CO	Jackson	08057	Oil & Gas		Other Royalties	3000
 2010	CO	Jackson	08057	Oil & Gas		Rents	320877.43
 2010	CO	Jackson	08057	Oil	Oil	Royalties	420995.67
-2010	CO	Jackson	08057	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2)	Royalties	67359.38
 2010	CO	Kiowa	08061	Oil & Gas		Bonus	350
 2010	CO	Kiowa	08061	Oil & Gas		Other Royalties	-497.76
 2010	CO	Kiowa	08061	Oil & Gas		Rents	2697
@@ -1283,9 +1205,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2010	CO	Kit Carson	08063	Oil & Gas		Rents	14697
 2010	CO	La Plata	08067	Oil & Gas		Other Revenues	600
 2010	CO	La Plata	08067	Oil & Gas		Other Royalties	83937.49
-2010	CO	La Plata	08067	Coal		Rents	6480
 2010	CO	La Plata	08067	Oil & Gas		Rents	817.36
-2010	CO	La Plata	08067	Coal	Coal	Royalties	-0.06
 2010	CO	La Plata	08067	Gas	Coal Bed Methane	Royalties	2675933.24
 2010	CO	La Plata	08067	Gas	Processed (Residue) Gas	Royalties	-29204.28
 2010	CO	La Plata	08067	Gas	Unprocessed (Wet) Gas	Royalties	3852539.77
@@ -1312,11 +1232,9 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2010	CO	Mesa	08077	Oil	Condensate	Royalties	176200.6
 2010	CO	Mesa	08077	Oil	Drip or Scrubber Condensate	Royalties	42.07
 2010	CO	Mesa	08077	Oil	Oil	Royalties	79886.03
-2010	CO	Moffat	08081	Coal		Bonus	2621320
 2010	CO	Moffat	08081	Oil & Gas		Bonus	13346
 2010	CO	Moffat	08081	Oil & Gas		Other Revenues	33184.7
 2010	CO	Moffat	08081	Oil & Gas		Other Royalties	44560.5
-2010	CO	Moffat	08081	Coal		Rents	55032
 2010	CO	Moffat	08081	Oil & Gas		Rents	1204104.13
 2010	CO	Moffat	08081	Gas	Fuel Gas	Royalties	3266.27
 2010	CO	Moffat	08081	Gas	Processed (Residue) Gas	Royalties	1815067.71
@@ -1333,7 +1251,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2010	CO	Montezuma	08083	NGL	Gas Plant Products	Royalties	90818.28
 2010	CO	Montezuma	08083	Oil	Condensate	Royalties	1439.78
 2010	CO	Montezuma	08083	Oil	Oil	Royalties	894373.09
-2010	CO	Montezuma	08083	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2)	Royalties	35481971.05
 2010	CO	Montrose	08085	Oil & Gas		Rents	289096.41
 2010	CO	Morgan	08087	Oil & Gas		Bonus	7488
 2010	CO	Morgan	08087	Oil & Gas		Other Royalties	5.51
@@ -1352,11 +1269,8 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2010	CO	Pueblo	08101	Oil & Gas		Rents	2583
 2010	CO	Rio Blanco	08103	Oil & Gas		Bonus	36767
 2010	CO	Rio Blanco	08103	Oil & Gas		Other Revenues	57844.32
-2010	CO	Rio Blanco	08103	Sodium		Other Revenues	21399
 2010	CO	Rio Blanco	08103	Oil & Gas		Other Royalties	-690.91
-2010	CO	Rio Blanco	08103	Coal		Rents	5685
 2010	CO	Rio Blanco	08103	Oil & Gas		Rents	1111664.93
-2010	CO	Rio Blanco	08103	Sodium		Rents	-1320
 2010	CO	Rio Blanco	08103	Gas	Coal Bed Methane	Royalties	255921.03
 2010	CO	Rio Blanco	08103	Gas	Fuel Gas	Royalties	103226.78
 2010	CO	Rio Blanco	08103	Gas	Processed (Residue) Gas	Royalties	29770179.48
@@ -1366,13 +1280,9 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2010	CO	Rio Blanco	08103	Oil	Drip or Scrubber Condensate	Royalties	336736.88
 2010	CO	Rio Blanco	08103	Oil	Oil	Royalties	21975600.25
 2010	CO	Rio Grande	08105	Oil & Gas		Rents	9999
-2010	CO	Routt	08107	Coal		Bonus	430000
 2010	CO	Routt	08107	Oil & Gas		Bonus	182256
-2010	CO	Routt	08107	Coal		Other Royalties	-258897
 2010	CO	Routt	08107	Oil & Gas		Other Royalties	1523.82
-2010	CO	Routt	08107	Coal		Rents	57324
 2010	CO	Routt	08107	Oil & Gas		Rents	138014.5
-2010	CO	Routt	08107	Coal	Coal	Royalties	0.82
 2010	CO	Routt	08107	Oil	Oil	Royalties	105341.61
 2010	CO	Saguache	08109	Oil & Gas		Rents	2232
 2010	CO	San Miguel	08113	Oil & Gas		Bonus	29184
@@ -1401,6 +1311,17 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2010	CO	Yuma	08125	Oil & Gas		Rents	50308.5
 2010	CO	Yuma	08125	Gas	Unprocessed (Wet) Gas	Royalties	747031.35
 2010	CO	Yuma	08125	Oil	Oil	Royalties	1557.39
+2010	CO		08	Coal		Bonus	3656320
+2010	CO		08	Coal		Other Revenues	500526.63
+2010	CO		08	Sodium		Other Revenues	21399
+2010	CO		08	Coal		Other Royalties	258897
+2010	CO		08	Coal		Other Royalties	-258897
+2010	CO		08	Coal		Rents	224973
+2010	CO		08	Sodium		Rents	-1320
+2010	CO		08	Coal	Coal	Royalties	57800184.18
+2010	CO		08	Coal	Coal	Royalties	0.78
+2010	CO		08	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2)	Royalties	42234863.74
+2010	CO		08	Sodium Bi-Carbonate	Sodium Bi-Carbonate	Royalties	369823.6
 2011	CO	Arapahoe	08005	Oil & Gas		Other Royalties	1.8
 2011	CO	Arapahoe	08005	Oil	Oil	Royalties	189.11
 2011	CO	Archuleta	08007	Oil & Gas		Other Revenues	4006
@@ -1423,18 +1344,13 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2011	CO	Broomfield	08014	Oil	Condensate	Royalties	167.73
 2011	CO	Broomfield	08014	Oil	Drip or Scrubber Condensate	Royalties	0.25
 2011	CO	Broomfield	08014	Oil	Oil	Royalties	554.24
-2011	CO	Chaffee	08015	Geothermal		Bonus	29600
-2011	CO	Chaffee	08015	Geothermal		Rents	3200
 2011	CO	Cheyenne	08017	Oil & Gas		Other Revenues	76.5
 2011	CO	Cheyenne	08017	Oil & Gas		Other Royalties	324.45
 2011	CO	Cheyenne	08017	Oil & Gas		Rents	1547.5
 2011	CO	Cheyenne	08017	Gas	Unprocessed (Wet) Gas	Royalties	227.19
 2011	CO	Cheyenne	08017	NGL	Gas Plant Products	Royalties	9208.51
 2011	CO	Cheyenne	08017	Oil	Oil	Royalties	88044.83
-2011	CO	Cheyenne	08017	Helium	Helium	Royalties	58.22
-2011	CO	Delta	08029	Coal		Bonus	40000
 2011	CO	Delta	08029	Oil & Gas		Other Revenues	7244.02
-2011	CO	Delta	08029	Coal		Rents	65148.87
 2011	CO	Delta	08029	Oil & Gas		Rents	183867.67
 2011	CO	Delta	08029	Gas	Coal Bed Methane	Royalties	8544.6
 2011	CO	Delta	08029	NGL	Gas Plant Products	Royalties	599.28
@@ -1446,14 +1362,12 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2011	CO	Dolores	08033	NGL	Gas Plant Products	Royalties	18421.76
 2011	CO	Dolores	08033	Oil	Condensate	Royalties	2565.99
 2011	CO	Dolores	08033	Oil	Oil	Royalties	247884.69
-2011	CO	Dolores	08033	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2)	Royalties	8133585.97
 2011	CO	Eagle	08037	Oil & Gas		Rents	5150
 2011	CO	El Paso	08041	Oil & Gas		Rents	5584.5
 2011	CO	Elbert	08039	Oil & Gas		Rents	120
 2011	CO	Fremont	08043	Oil & Gas		Rents	240
 2011	CO	Garfield	08045	Oil & Gas		Other Revenues	53375.13
 2011	CO	Garfield	08045	Oil & Gas		Other Royalties	1702913.23
-2011	CO	Garfield	08045	Coal		Rents	-27021
 2011	CO	Garfield	08045	Oil & Gas		Rents	469452.29
 2011	CO	Garfield	08045	Gas	Coal Bed Methane	Royalties	-117583.3
 2011	CO	Garfield	08045	Gas	Fuel Gas	Royalties	307.65
@@ -1464,11 +1378,8 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2011	CO	Garfield	08045	Oil	Drip or Scrubber Condensate	Royalties	-1165575.93
 2011	CO	Garfield	08045	Oil	Inlet Scrubber	Royalties	3062.23
 2011	CO	Garfield	08045	Oil	Oil	Royalties	1549047.68
-2011	CO	Garfield	08045	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2)	Royalties	16545.87
 2011	CO	Grand	08049	Oil & Gas		Rents	28686
-2011	CO	Gunnison	08051	Coal		Bonus	605000
 2011	CO	Gunnison	08051	Oil & Gas		Other Revenues	11295.51
-2011	CO	Gunnison	08051	Coal		Rents	51502.13
 2011	CO	Gunnison	08051	Oil & Gas		Rents	167505.37
 2011	CO	Gunnison	08051	Gas	Coal Bed Methane	Royalties	96554.55
 2011	CO	Gunnison	08051	Gas	Processed (Residue) Gas	Royalties	146343.96
@@ -1476,12 +1387,10 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2011	CO	Gunnison	08051	NGL	Gas Plant Products	Royalties	5893.55
 2011	CO	Huerfano	08055	Oil & Gas		Other Revenues	468
 2011	CO	Huerfano	08055	Oil & Gas		Rents	126949
-2011	CO	Huerfano	08055	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2)	Royalties	369337.9
 2011	CO	Jackson	08057	Oil & Gas		Other Revenues	27980.5
 2011	CO	Jackson	08057	Oil & Gas		Other Royalties	7500
 2011	CO	Jackson	08057	Oil & Gas		Rents	277368.37
 2011	CO	Jackson	08057	Oil	Oil	Royalties	627061.66
-2011	CO	Jackson	08057	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2)	Royalties	47331.06
 2011	CO	Kiowa	08061	Oil & Gas		Other Royalties	200
 2011	CO	Kiowa	08061	Oil & Gas		Rents	2857
 2011	CO	Kiowa	08061	Gas	Unprocessed (Wet) Gas	Royalties	7298.57
@@ -1489,7 +1398,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2011	CO	Kiowa	08061	Oil	Oil	Royalties	29997.49
 2011	CO	Kit Carson	08063	Oil & Gas		Rents	9774
 2011	CO	La Plata	08067	Oil & Gas		Other Royalties	102400.04
-2011	CO	La Plata	08067	Coal		Rents	3015
 2011	CO	La Plata	08067	Oil & Gas		Rents	817.36
 2011	CO	La Plata	08067	Gas	Coal Bed Methane	Royalties	4954136.21
 2011	CO	La Plata	08067	Gas	Unprocessed (Wet) Gas	Royalties	23244.99
@@ -1516,12 +1424,10 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2011	CO	Mesa	08077	Oil	Condensate	Royalties	214131.21
 2011	CO	Mesa	08077	Oil	Drip or Scrubber Condensate	Royalties	39310.21
 2011	CO	Mesa	08077	Oil	Oil	Royalties	94980.35
-2011	CO	Moffat	08081	Coal		Bonus	2621320
 2011	CO	Moffat	08081	Oil & Gas		Bonus	-17920
 2011	CO	Moffat	08081	Oil & Gas		Other Revenues	31335.39
 2011	CO	Moffat	08081	NGL	Gas Plant Products	Other Royalties	156525.92
 2011	CO	Moffat	08081	Oil & Gas		Other Royalties	224005.48
-2011	CO	Moffat	08081	Coal		Rents	53796
 2011	CO	Moffat	08081	Oil & Gas		Rents	1106542.55
 2011	CO	Moffat	08081	Gas	Nitrogen	Royalties	-283.41
 2011	CO	Moffat	08081	Gas	Processed (Residue) Gas	Royalties	1562901.28
@@ -1538,7 +1444,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2011	CO	Montezuma	08083	NGL	Gas Plant Products	Royalties	112236.86
 2011	CO	Montezuma	08083	Oil	Condensate	Royalties	1738.87
 2011	CO	Montezuma	08083	Oil	Oil	Royalties	1125479.41
-2011	CO	Montezuma	08083	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2)	Royalties	41177862.44
 2011	CO	Montrose	08085	Oil & Gas		Rents	335780.71
 2011	CO	Morgan	08087	Oil & Gas		Other Revenues	472
 2011	CO	Morgan	08087	Oil & Gas		Rents	3243.5
@@ -1553,12 +1458,9 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2011	CO	Pueblo	08101	Oil & Gas		Rents	2583
 2011	CO	Rio Blanco	08103	Oil & Gas		Bonus	1642
 2011	CO	Rio Blanco	08103	Oil & Gas		Other Revenues	192874.24
-2011	CO	Rio Blanco	08103	Sodium		Other Revenues	21399
 2011	CO	Rio Blanco	08103	Oil & Gas		Other Royalties	432835.63
-2011	CO	Rio Blanco	08103	Coal		Rents	5685
 2011	CO	Rio Blanco	08103	Oil & Gas		Rents	1096106.53
 2011	CO	Rio Blanco	08103	Oil Shale		Rents	1252
-2011	CO	Rio Blanco	08103	Sodium		Rents	13051
 2011	CO	Rio Blanco	08103	Gas	Coal Bed Methane	Royalties	-1698208.63
 2011	CO	Rio Blanco	08103	Gas	Fuel Gas	Royalties	-1607.22
 2011	CO	Rio Blanco	08103	Gas	Processed (Residue) Gas	Royalties	30543058.65
@@ -1568,10 +1470,8 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2011	CO	Rio Blanco	08103	Oil	Drip or Scrubber Condensate	Royalties	439117.31
 2011	CO	Rio Blanco	08103	Oil	Oil	Royalties	23666786.9
 2011	CO	Rio Grande	08105	Oil & Gas		Rents	8605.5
-2011	CO	Routt	08107	Coal		Bonus	325000
 2011	CO	Routt	08107	Oil & Gas		Bonus	884250
 2011	CO	Routt	08107	Oil & Gas		Other Revenues	4480
-2011	CO	Routt	08107	Coal		Rents	31392
 2011	CO	Routt	08107	Oil & Gas		Rents	145028
 2011	CO	Routt	08107	Oil	Oil	Royalties	152443.52
 2011	CO	Saguache	08109	Oil & Gas		Rents	2816
@@ -1604,6 +1504,17 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2011	CO	Yuma	08125	Gas	Unprocessed (Wet) Gas	Royalties	619142.85
 2011	CO	Yuma	08125	NGL	Gas Plant Products	Royalties	822.91
 2011	CO	Yuma	08125	Oil	Oil	Royalties	1993.65
+2011	CO		08	Coal		Bonus	3591320
+2011	CO		08	Geothermal		Bonus	29600
+2011	CO		08	Coal		Other Revenues	472806.87
+2011	CO		08	Sodium		Other Revenues	21399
+2011	CO		08	Coal		Rents	183518
+2011	CO		08	Geothermal		Rents	3200
+2011	CO		08	Sodium		Rents	13051
+2011	CO		08	Coal	Coal	Royalties	58407772.84
+2011	CO		08	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2)	Royalties	49744663.24
+2011	CO		08	Helium	Helium	Royalties	58.22
+2011	CO		08	Sodium Bi-Carbonate	Sodium Bi-Carbonate	Royalties	513414.2
 2012	CO	Adams	08001	Oil & Gas		Rents	467.3
 2012	CO	Arapahoe	08005	Oil & Gas		Other Revenues	68
 2012	CO	Arapahoe	08005	Oil & Gas		Rents	330.7
@@ -1632,11 +1543,8 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2012	CO	Cheyenne	08017	Gas	Unprocessed (Wet) Gas	Royalties	134.23
 2012	CO	Cheyenne	08017	NGL	Gas Plant Products	Royalties	5992.52
 2012	CO	Cheyenne	08017	Oil	Oil	Royalties	72954.75
-2012	CO	Cheyenne	08017	Helium	Helium	Royalties	55.43
 2012	CO	Custer	08027	Oil & Gas		Rents	981.48
-2012	CO	Delta	08029	Coal		Bonus	376819.62
 2012	CO	Delta	08029	Oil & Gas		Other Revenues	320
-2012	CO	Delta	08029	Coal		Rents	45168.29
 2012	CO	Delta	08029	Oil & Gas		Rents	171669.9
 2012	CO	Delta	08029	Gas	Coal Bed Methane	Royalties	3180.77
 2012	CO	Delta	08029	NGL	Gas Plant Products	Royalties	261.06
@@ -1648,7 +1556,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2012	CO	Dolores	08033	NGL	Gas Plant Products	Royalties	17289.25
 2012	CO	Dolores	08033	Oil	Condensate	Royalties	2870.14
 2012	CO	Dolores	08033	Oil	Oil	Royalties	330293.73
-2012	CO	Dolores	08033	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2)	Royalties	10303413.51
 2012	CO	Douglas	08035	Oil & Gas		Rents	20686.7
 2012	CO	Eagle	08037	Oil & Gas		Rents	5150
 2012	CO	El Paso	08041	Oil & Gas		Rents	19085.47
@@ -1656,7 +1563,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2012	CO	Garfield	08045	Oil & Gas		Bonus	368138
 2012	CO	Garfield	08045	Oil & Gas		Other Revenues	54971.11
 2012	CO	Garfield	08045	Oil & Gas		Other Royalties	-556971.8
-2012	CO	Garfield	08045	Coal		Rents	13689
 2012	CO	Garfield	08045	Oil & Gas		Rents	433103.37
 2012	CO	Garfield	08045	Gas	Coal Bed Methane	Royalties	12389.33
 2012	CO	Garfield	08045	Gas	Processed (Residue) Gas	Royalties	28388299.38
@@ -1666,14 +1572,9 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2012	CO	Garfield	08045	Oil	Drip or Scrubber Condensate	Royalties	194549.61
 2012	CO	Garfield	08045	Oil	Inlet Scrubber	Royalties	-3062.23
 2012	CO	Garfield	08045	Oil	Oil	Royalties	2146156.83
-2012	CO	Garfield	08045	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2)	Royalties	12763.66
 2012	CO	Grand	08049	Oil & Gas		Rents	38248
-2012	CO	Gunnison	08051	Coal		Bonus	998344.38
-2012	CO	Gunnison	08051	Geothermal		Bonus	16708
 2012	CO	Gunnison	08051	Oil & Gas		Bonus	200
 2012	CO	Gunnison	08051	Oil & Gas		Other Revenues	7065.21
-2012	CO	Gunnison	08051	Coal		Rents	53046.46
-2012	CO	Gunnison	08051	Geothermal		Rents	16708
 2012	CO	Gunnison	08051	Oil & Gas		Rents	174848.07
 2012	CO	Gunnison	08051	Gas	Coal Bed Methane	Royalties	-10780.16
 2012	CO	Gunnison	08051	Gas	Processed (Residue) Gas	Royalties	146194.35
@@ -1681,12 +1582,10 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2012	CO	Gunnison	08051	NGL	Gas Plant Products	Royalties	5888.42
 2012	CO	Huerfano	08055	Oil & Gas		Bonus	380866
 2012	CO	Huerfano	08055	Oil & Gas		Rents	102775.52
-2012	CO	Huerfano	08055	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2)	Royalties	388619.96
 2012	CO	Jackson	08057	Oil & Gas		Other Revenues	22998.7
 2012	CO	Jackson	08057	Oil & Gas		Other Royalties	-3500
 2012	CO	Jackson	08057	Oil & Gas		Rents	220282.1
 2012	CO	Jackson	08057	Oil	Oil	Royalties	486867.94
-2012	CO	Jackson	08057	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2)	Royalties	47337.27
 2012	CO	Kiowa	08061	Oil & Gas		Other Revenues	188.02
 2012	CO	Kiowa	08061	Oil & Gas		Rents	2377
 2012	CO	Kiowa	08061	Gas	Unprocessed (Wet) Gas	Royalties	1241.52
@@ -1694,7 +1593,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2012	CO	Kiowa	08061	Oil	Oil	Royalties	20637.64
 2012	CO	Kit Carson	08063	Oil & Gas		Rents	10562
 2012	CO	La Plata	08067	Oil & Gas		Other Royalties	-75151.13
-2012	CO	La Plata	08067	Coal		Rents	3915
 2012	CO	La Plata	08067	Oil & Gas		Rents	955.88
 2012	CO	La Plata	08067	Gas	Coal Bed Methane	Royalties	3725724.38
 2012	CO	La Plata	08067	Gas	Unprocessed (Wet) Gas	Royalties	-607380.59
@@ -1724,7 +1622,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2012	CO	Moffat	08081	Oil & Gas		Bonus	1811383.51
 2012	CO	Moffat	08081	Oil & Gas		Other Revenues	19338.77
 2012	CO	Moffat	08081	Oil & Gas		Other Royalties	-241054.11
-2012	CO	Moffat	08081	Coal		Rents	53796
 2012	CO	Moffat	08081	Oil & Gas		Rents	966893.86
 2012	CO	Moffat	08081	Gas	Processed (Residue) Gas	Royalties	1978001.1
 2012	CO	Moffat	08081	Gas	Unprocessed (Wet) Gas	Royalties	3243022.63
@@ -1740,7 +1637,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2012	CO	Montezuma	08083	NGL	Gas Plant Products	Royalties	77527.57
 2012	CO	Montezuma	08083	Oil	Condensate	Royalties	3250.76
 2012	CO	Montezuma	08083	Oil	Oil	Royalties	1180450.26
-2012	CO	Montezuma	08083	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2)	Royalties	49905955.91
 2012	CO	Montrose	08085	Oil & Gas		Rents	163336.71
 2012	CO	Morgan	08087	Oil & Gas		Bonus	245450
 2012	CO	Morgan	08087	Oil & Gas		Other Revenues	52
@@ -1758,12 +1654,9 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2012	CO	Pueblo	08101	Oil & Gas		Rents	2583
 2012	CO	Rio Blanco	08103	Oil & Gas		Bonus	4374651.49
 2012	CO	Rio Blanco	08103	Oil & Gas		Other Revenues	76367.19
-2012	CO	Rio Blanco	08103	Sodium		Other Revenues	21399
 2012	CO	Rio Blanco	08103	Oil & Gas		Other Royalties	-325846.21
-2012	CO	Rio Blanco	08103	Coal		Rents	5685
 2012	CO	Rio Blanco	08103	Oil & Gas		Rents	1093447.79
 2012	CO	Rio Blanco	08103	Oil Shale		Rents	1860
-2012	CO	Rio Blanco	08103	Sodium		Rents	5694
 2012	CO	Rio Blanco	08103	Gas	Coal Bed Methane	Royalties	127652.02
 2012	CO	Rio Blanco	08103	Gas	Fuel Gas	Royalties	32.28
 2012	CO	Rio Blanco	08103	Gas	Processed (Residue) Gas	Royalties	16261092.42
@@ -1773,11 +1666,9 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2012	CO	Rio Blanco	08103	Oil	Drip or Scrubber Condensate	Royalties	451325.93
 2012	CO	Rio Blanco	08103	Oil	Oil	Royalties	24546814.45
 2012	CO	Rio Grande	08105	Oil & Gas		Rents	8944
-2012	CO	Routt	08107	Coal		Bonus	230000
 2012	CO	Routt	08107	Oil & Gas		Bonus	340633
 2012	CO	Routt	08107	Oil & Gas		Other Revenues	6880
 2012	CO	Routt	08107	Oil & Gas		Other Royalties	7.45
-2012	CO	Routt	08107	Coal		Rents	32592
 2012	CO	Routt	08107	Oil & Gas		Rents	108716.5
 2012	CO	Routt	08107	Oil	Oil	Royalties	110373.46
 2012	CO	Saguache	08109	Oil & Gas		Rents	2816
@@ -1810,6 +1701,18 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2012	CO	Yuma	08125	Oil & Gas		Rents	38488
 2012	CO	Yuma	08125	Gas	Unprocessed (Wet) Gas	Royalties	388398.2
 2012	CO	Yuma	08125	Oil	Oil	Royalties	-3600.56
+2012	CO		08	Coal		Bonus	1605164
+2012	CO		08	Geothermal		Bonus	16708
+2012	CO		08	Coal		Other Revenues	251193.52
+2012	CO		08	Sodium		Other Revenues	21399
+2012	CO		08	Coal		Other Royalties	615666.13
+2012	CO		08	Coal		Rents	207891.75
+2012	CO		08	Geothermal		Rents	16708
+2012	CO		08	Sodium		Rents	5694
+2012	CO		08	Coal	Coal	Royalties	53360266.9
+2012	CO		08	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2)	Royalties	60658090.31
+2012	CO		08	Helium	Helium	Royalties	55.43
+2012	CO		08	Sodium Bi-Carbonate	Sodium Bi-Carbonate	Royalties	1108450.12
 2013	CO	Adams	08001	Oil & Gas		Rents	613.26
 2013	CO	Arapahoe	08005	Oil & Gas		Other Revenues	88.16
 2013	CO	Arapahoe	08005	Oil & Gas		Rents	184.74
@@ -1833,20 +1736,16 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2013	CO	Broomfield	08014	NGL	Gas Plant Products	Royalties	5065.05
 2013	CO	Broomfield	08014	Oil	Condensate	Royalties	3066.66
 2013	CO	Broomfield	08014	Oil	Drip or Scrubber Condensate	Royalties	214.53
-2013	CO	Chaffee	08015	Geothermal		Rents	3200
 2013	CO	Cheyenne	08017	Oil & Gas		Bonus	76756
 2013	CO	Cheyenne	08017	Oil & Gas		Rents	4624
 2013	CO	Cheyenne	08017	Gas	Unprocessed (Wet) Gas	Royalties	154.51
 2013	CO	Cheyenne	08017	NGL	Gas Plant Products	Royalties	3769.72
 2013	CO	Cheyenne	08017	Oil	Oil	Royalties	79310.97
-2013	CO	Cheyenne	08017	Helium	Helium	Royalties	66.23
 2013	CO	Crowley	08025	Oil & Gas		Bonus	1764
 2013	CO	Crowley	08025	Oil & Gas		Rents	1323
 2013	CO	Custer	08027	Oil & Gas		Rents	490.74
-2013	CO	Delta	08029	Coal		Bonus	-118.65
 2013	CO	Delta	08029	Oil & Gas		Bonus	55529.41
 2013	CO	Delta	08029	Oil & Gas		Other Revenues	6659.56
-2013	CO	Delta	08029	Coal		Rents	-169638.08
 2013	CO	Delta	08029	Oil & Gas		Rents	140375.05
 2013	CO	Delta	08029	Oil	Condensate	Royalties	721.16
 2013	CO	Dolores	08033	Oil & Gas		Other Revenues	2256.48
@@ -1857,14 +1756,11 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2013	CO	Dolores	08033	NGL	Gas Plant Products	Royalties	7802.43
 2013	CO	Dolores	08033	Oil	Condensate	Royalties	1482
 2013	CO	Dolores	08033	Oil	Oil	Royalties	197622.93
-2013	CO	Dolores	08033	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2)	Royalties	11682288.01
 2013	CO	El Paso	08041	Oil & Gas		Rents	5584.5
 2013	CO	Elbert	08039	Oil & Gas		Bonus	10850
 2013	CO	Elbert	08039	Oil & Gas		Rents	18255
-2013	CO	Garfield	08045	Coal		Bonus	110880
 2013	CO	Garfield	08045	Oil & Gas		Other Revenues	43686.98
 2013	CO	Garfield	08045	Oil & Gas		Other Royalties	-26424.37
-2013	CO	Garfield	08045	Coal		Rents	73601.25
 2013	CO	Garfield	08045	Oil & Gas		Rents	358034.7
 2013	CO	Garfield	08045	Gas	Coal Bed Methane	Royalties	4151.1
 2013	CO	Garfield	08045	Gas	Fuel Gas	Royalties	71170.22
@@ -1876,14 +1772,10 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2013	CO	Garfield	08045	Oil	Drip or Scrubber Condensate	Royalties	-29667.56
 2013	CO	Garfield	08045	Oil	Inlet Scrubber	Royalties	284285.05
 2013	CO	Garfield	08045	Oil	Oil	Royalties	1351491.44
-2013	CO	Garfield	08045	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2)	Royalties	2860.35
 2013	CO	Grand	08049	Oil & Gas		Rents	38248
-2013	CO	Gunnison	08051	Coal		Bonus	436780
 2013	CO	Gunnison	08051	Oil & Gas		Bonus	275483.09
 2013	CO	Gunnison	08051	Oil & Gas		Other Revenues	11057.96
 2013	CO	Gunnison	08051	Oil & Gas		Other Royalties	8949.04
-2013	CO	Gunnison	08051	Coal		Rents	54537.61
-2013	CO	Gunnison	08051	Geothermal		Rents	25062
 2013	CO	Gunnison	08051	Oil & Gas		Rents	117300.7
 2013	CO	Gunnison	08051	Gas	Coal Bed Methane	Royalties	50651.09
 2013	CO	Gunnison	08051	Gas	Processed (Residue) Gas	Royalties	433047.67
@@ -1891,11 +1783,9 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2013	CO	Gunnison	08051	Oil	Condensate	Royalties	668.71
 2013	CO	Huerfano	08055	Oil & Gas		Bonus	2850
 2013	CO	Huerfano	08055	Oil & Gas		Rents	132162.76
-2013	CO	Huerfano	08055	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2)	Royalties	371401.62
 2013	CO	Jackson	08057	Oil & Gas		Other Revenues	3742.73
 2013	CO	Jackson	08057	Oil & Gas		Rents	233394.35
 2013	CO	Jackson	08057	Oil	Oil	Royalties	474483.37
-2013	CO	Jackson	08057	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2)	Royalties	18266.08
 2013	CO	Kiowa	08061	Oil & Gas		Bonus	181252
 2013	CO	Kiowa	08061	Oil & Gas		Other Royalties	-35
 2013	CO	Kiowa	08061	Oil & Gas		Rents	10278.5
@@ -1905,7 +1795,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2013	CO	Kit Carson	08063	Oil & Gas		Rents	11738
 2013	CO	La Plata	08067	Oil & Gas		Other Revenues	4.86
 2013	CO	La Plata	08067	Oil & Gas		Other Royalties	24206.1
-2013	CO	La Plata	08067	Coal		Rents	4155
 2013	CO	La Plata	08067	Oil & Gas		Rents	955.88
 2013	CO	La Plata	08067	Gas	Coal Bed Methane	Royalties	7618562.97
 2013	CO	La Plata	08067	Gas	Fuel Gas	Royalties	64.42
@@ -1935,11 +1824,9 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2013	CO	Mesa	08077	Oil	Condensate	Royalties	113303.24
 2013	CO	Mesa	08077	Oil	Drip or Scrubber Condensate	Royalties	43587.12
 2013	CO	Mesa	08077	Oil	Oil	Royalties	85675.54
-2013	CO	Moffat	08081	Coal		Bonus	128178.29
 2013	CO	Moffat	08081	Oil & Gas		Bonus	752477
 2013	CO	Moffat	08081	Oil & Gas		Other Revenues	22534.05
 2013	CO	Moffat	08081	Oil & Gas		Other Royalties	-118939.33
-2013	CO	Moffat	08081	Coal		Rents	54745.3
 2013	CO	Moffat	08081	Oil & Gas		Rents	966042.96
 2013	CO	Moffat	08081	Gas	Fuel Gas	Royalties	719.72
 2013	CO	Moffat	08081	Gas	Nitrogen	Royalties	283.41
@@ -1956,7 +1843,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2013	CO	Montezuma	08083	Gas	Unprocessed (Wet) Gas	Royalties	2595.62
 2013	CO	Montezuma	08083	NGL	Gas Plant Products	Royalties	30697.31
 2013	CO	Montezuma	08083	Oil	Oil	Royalties	945308.03
-2013	CO	Montezuma	08083	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2)	Royalties	49584950.83
 2013	CO	Montrose	08085	Oil & Gas		Other Revenues	1640
 2013	CO	Montrose	08085	Oil & Gas		Rents	148540
 2013	CO	Morgan	08087	Oil & Gas		Bonus	197222
@@ -1974,15 +1860,11 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2013	CO	Prowers	08099	Oil & Gas		Rents	6178.5
 2013	CO	Prowers	08099	Gas	Unprocessed (Wet) Gas	Royalties	386.94
 2013	CO	Pueblo	08101	Oil & Gas		Rents	1020
-2013	CO	Rio Blanco	08103	Coal		Bonus	1149821.71
 2013	CO	Rio Blanco	08103	Oil & Gas		Bonus	118145
 2013	CO	Rio Blanco	08103	Oil & Gas		Other Revenues	78842.64
-2013	CO	Rio Blanco	08103	Sodium		Other Revenues	29319
 2013	CO	Rio Blanco	08103	Oil & Gas		Other Royalties	388417.77
-2013	CO	Rio Blanco	08103	Coal		Rents	14200.7
 2013	CO	Rio Blanco	08103	Oil & Gas		Rents	961389.73
 2013	CO	Rio Blanco	08103	Oil Shale		Rents	1556
-2013	CO	Rio Blanco	08103	Sodium		Rents	-11841
 2013	CO	Rio Blanco	08103	Gas	Coal Bed Methane	Royalties	-43696.28
 2013	CO	Rio Blanco	08103	Gas	Fuel Gas	Royalties	9637.08
 2013	CO	Rio Blanco	08103	Gas	Processed (Residue) Gas	Royalties	21112550.46
@@ -1993,17 +1875,14 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2013	CO	Rio Blanco	08103	Oil	Inlet Scrubber	Royalties	346556.58
 2013	CO	Rio Blanco	08103	Oil	Oil	Royalties	26814312.66
 2013	CO	Rio Grande	08105	Oil & Gas		Rents	8944
-2013	CO	Routt	08107	Coal		Bonus	243660
 2013	CO	Routt	08107	Oil & Gas		Bonus	33190
 2013	CO	Routt	08107	Oil & Gas		Other Revenues	2560
-2013	CO	Routt	08107	Coal		Rents	32722
 2013	CO	Routt	08107	Oil & Gas		Rents	143268
 2013	CO	Routt	08107	Oil	Oil	Royalties	142920.17
 2013	CO	Saguache	08109	Oil & Gas		Rents	2336
 2013	CO	San Miguel	08113	Oil & Gas		Other Revenues	16383.94
 2013	CO	San Miguel	08113	Oil & Gas		Other Royalties	-2861.93
 2013	CO	San Miguel	08113	Oil & Gas		Rents	71806.57
-2013	CO	San Miguel	08113	Potassium		Rents	8720
 2013	CO	San Miguel	08113	Gas	Processed (Residue) Gas	Royalties	974953.65
 2013	CO	San Miguel	08113	Gas	Unprocessed (Wet) Gas	Royalties	577843.58
 2013	CO	San Miguel	08113	NGL	Gas Plant Products	Royalties	153941.99
@@ -2032,101 +1911,15 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2013	CO	Yuma	08125	Gas	Unprocessed (Wet) Gas	Royalties	436072.64
 2013	CO	Yuma	08125	NGL	Gas Plant Products	Royalties	-723.96
 2013	CO	Yuma	08125	Oil	Oil	Royalties	-1096.78
-2004	CO	Delta	08029	Coal	Coal	Royalties	3860270.72
-2004	CO	Garfield	08045	Coal	Coal	Royalties	1171269.69
-2004	CO	Gunnison	08051	Coal	Coal	Royalties	19295931.52
-2004	CO	La Plata	08067	Coal	Coal	Royalties	716095.26
-2004	CO	Moffat	08081	Coal	Coal	Royalties	19292020.76
-2004	CO	Rio Blanco	08103	Sodium		Other Revenues	-9100.72
-2004	CO	Rio Blanco	08103	Coal	Coal	Royalties	1115361.15
-2004	CO	Rio Blanco	08103	Carbon Dioxide	Carbon Dioxide	Royalties	241
-2004	CO	Rio Blanco	08103	Soda Ash	Soda Ash	Royalties	559202.05
-2004	CO	Rio Blanco	08103	Sodium Bi-Carbonate	Sodium Bi-Carbonate	Royalties	704432.51
-2004	CO	Routt	08107	Coal	Coal	Royalties	1826197.26
-2005	CO	Delta	08029	Coal	Coal	Royalties	7611283.48
-2005	CO	Garfield	08045	Coal	Coal	Royalties	455002.59
-2005	CO	Gunnison	08051	Coal	Coal	Royalties	12019242.77
-2005	CO	La Plata	08067	Coal	Coal	Royalties	110898.45
-2005	CO	Moffat	08081	Coal		Other Revenues	172318.15
-2005	CO	Moffat	08081	Coal	Coal	Royalties	14980427.94
-2005	CO	Rio Blanco	08103	Sodium		Other Revenues	80
-2005	CO	Rio Blanco	08103	Coal	Coal	Royalties	503343.74
-2005	CO	Rio Blanco	08103	Sodium Bi-Carbonate	Sodium Bi-Carbonate	Royalties	409652.18
-2005	CO	Routt	08107	Coal	Coal	Royalties	1460015.81
-2006	CO	Delta	08029	Coal	Coal	Royalties	9306916.01
-2006	CO	Garfield	08045	Coal	Coal	Royalties	75122.4
-2006	CO	Gunnison	08051	Coal	Coal	Royalties	15215707.59
-2006	CO	La Plata	08067	Coal	Coal	Royalties	221789.63
-2006	CO	Moffat	08081	Coal	Coal	Royalties	22415634.4
-2006	CO	Rio Blanco	08103	Sodium		Other Revenues	-24592
-2006	CO	Rio Blanco	08103	Coal	Coal	Royalties	833679.88
-2006	CO	Rio Blanco	08103	Sodium Bi-Carbonate	Sodium Bi-Carbonate	Royalties	361867.12
-2006	CO	Routt	08107	Coal	Coal	Royalties	355775.98
-2007	CO	Delta	08029	Coal	Coal	Royalties	9756669.31
-2007	CO	Garfield	08045	Coal	Coal	Royalties	580267.58
-2007	CO	Gunnison	08051	Coal	Coal	Royalties	17623630.01
-2007	CO	La Plata	08067	Coal	Coal	Royalties	345483.04
-2007	CO	Moffat	08081	Coal		Other Revenues	107145.55
-2007	CO	Moffat	08081	Coal	Coal	Royalties	16965170.81
-2007	CO	Rio Blanco	08103	Coal	Coal	Royalties	543486.65
-2007	CO	Rio Blanco	08103	Sodium Bi-Carbonate	Sodium Bi-Carbonate	Royalties	245418.6
-2008	CO	Delta	08029	Coal	Coal	Royalties	14289801.58
-2008	CO	Garfield	08045	Coal	Coal	Royalties	685070.94
-2008	CO	Gunnison	08051	Coal	Coal	Royalties	21723845.52
-2008	CO	La Plata	08067	Coal	Coal	Royalties	586624.85
-2008	CO	Moffat	08081	Coal	Coal	Royalties	15060534.11
-2008	CO	Rio Blanco	08103	Sodium		Other Revenues	180672
-2008	CO	Rio Blanco	08103	Coal	Coal	Royalties	3962389.17
-2008	CO	Rio Blanco	08103	Sodium Bi-Carbonate	Sodium Bi-Carbonate	Royalties	282035.96
-2008	CO	Routt	08107	Coal	Coal	Royalties	27348.01
-2009	CO	Delta	08029	Coal	Coal	Royalties	5363410.04
-2009	CO	Garfield	08045	Coal	Coal	Royalties	367037.68
-2009	CO	Gunnison	08051	Coal	Coal	Royalties	16513436.41
-2009	CO	La Plata	08067	Coal	Coal	Royalties	1021197.49
-2009	CO	Moffat	08081	Coal		Other Revenues	721584.52
-2009	CO	Moffat	08081	Coal	Coal	Royalties	11947406.54
-2009	CO	Rio Blanco	08103	Sodium		Other Revenues	49344
-2009	CO	Rio Blanco	08103	Coal	Coal	Royalties	4840714.64
-2009	CO	Rio Blanco	08103	Sodium Bi-Carbonate	Sodium Bi-Carbonate	Royalties	295578.5
-2009	CO	Routt	08107	Coal	Coal	Royalties	1524540.14
-2010	CO	Delta	08029	Coal	Coal	Royalties	13723648.02
-2010	CO	Garfield	08045	Coal		Other Revenues	165398.79
-2010	CO	Garfield	08045	Coal	Coal	Royalties	573330.18
-2010	CO	Gunnison	08051	Coal	Coal	Royalties	22146185.51
-2010	CO	La Plata	08067	Coal	Coal	Royalties	1568753.96
-2010	CO	Moffat	08081	Coal		Other Revenues	335127.84
-2010	CO	Moffat	08081	Coal	Coal	Royalties	9637581.86
-2010	CO	Rio Blanco	08103	Coal	Coal	Royalties	6030685.56
-2010	CO	Rio Blanco	08103	Sodium Bi-Carbonate	Sodium Bi-Carbonate	Royalties	369823.6
-2010	CO	Routt	08107	Coal		Other Royalties	258897
-2010	CO	Routt	08107	Coal	Coal	Royalties	4119999.09
-2011	CO	Delta	08029	Coal	Coal	Royalties	13664505.16
-2011	CO	Garfield	08045	Coal		Other Revenues	195122.25
-2011	CO	Garfield	08045	Coal	Coal	Royalties	-22468.37
-2011	CO	Gunnison	08051	Coal	Coal	Royalties	23551463.5
-2011	CO	La Plata	08067	Coal	Coal	Royalties	1920855.08
-2011	CO	Moffat	08081	Coal		Other Revenues	277684.62
-2011	CO	Moffat	08081	Coal	Coal	Royalties	8788600.26
-2011	CO	Rio Blanco	08103	Coal	Coal	Royalties	8302700.65
-2011	CO	Rio Blanco	08103	Sodium Bi-Carbonate	Sodium Bi-Carbonate	Royalties	513414.2
-2011	CO	Routt	08107	Coal	Coal	Royalties	2202116.56
-2012	CO	Delta	08029	Coal	Coal	Royalties	16713902.42
-2012	CO	Gunnison	08051	Coal	Coal	Royalties	12559254.93
-2012	CO	La Plata	08067	Coal	Coal	Royalties	2497338.99
-2012	CO	Moffat	08081	Coal		Other Revenues	251193.52
-2012	CO	Moffat	08081	Coal		Other Royalties	439753.56
-2012	CO	Moffat	08081	Coal	Coal	Royalties	12100386.07
-2012	CO	Rio Blanco	08103	Coal		Other Royalties	175912.57
-2012	CO	Rio Blanco	08103	Coal	Coal	Royalties	7815544.28
-2012	CO	Rio Blanco	08103	Sodium Bi-Carbonate	Sodium Bi-Carbonate	Royalties	1108450.12
-2012	CO	Routt	08107	Coal	Coal	Royalties	1673840.21
-2013	CO	Delta	08029	Coal	Coal	Royalties	8545611.45
-2013	CO	Gunnison	08051	Coal	Coal	Royalties	8855290.02
-2013	CO	La Plata	08067	Coal	Coal	Royalties	2471095.71
-2013	CO	Moffat	08081	Coal		Other Revenues	332429.1
-2013	CO	Moffat	08081	Coal		Other Royalties	7092.59
-2013	CO	Moffat	08081	Coal	Coal	Royalties	6432977.07
-2013	CO	Rio Blanco	08103	Coal		Other Royalties	-20836.79
-2013	CO	Rio Blanco	08103	Coal	Coal	Royalties	-1184729.41
-2013	CO	Rio Blanco	08103	Sodium Bi-Carbonate	Sodium Bi-Carbonate	Royalties	1088703.02
-2013	CO	Routt	08107	Coal	Coal	Royalties	1121997.36
+2013	CO		08	Coal		Bonus	2069201.35
+2013	CO		08	Coal		Other Revenues	332429.1
+2013	CO		08	Sodium		Other Revenues	29319
+2013	CO		08	Coal		Other Royalties	-13744.2
+2013	CO		08	Coal		Rents	64323.78
+2013	CO		08	Geothermal		Rents	28262
+2013	CO		08	Potassium		Rents	8720
+2013	CO		08	Sodium		Rents	-11841
+2013	CO		08	Coal	Coal	Royalties	26242242.2
+2013	CO		08	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2)	Royalties	61659766.89
+2013	CO		08	Helium	Helium	Royalties	66.23
+2013	CO		08	Sodium Bi-Carbonate	Sodium Bi-Carbonate	Royalties	1088703.02

@@ -94,6 +94,7 @@ Year	State	County	FIPS	Resource	Revenue
 2010	OH	Stark	39151	oilgas	19659.67
 2010	OH	Trumbull	39155	oilgas	86113.98
 2010	OH	Washington	39167	oilgas	124572.50
+2010	OH		39	coal	3372.86
 2011	OH	Athens	39009	oilgas	8714.81
 2011	OH	Gallia	39053	oilgas	5072.50
 2011	OH	Hocking	39073	oilgas	44311.14
@@ -136,4 +137,3 @@ Year	State	County	FIPS	Resource	Revenue
 2013	OH	Trumbull	39155	oilgas	46640.74
 2013	OH	Vinton	39163	oilgas	1680.00
 2013	OH	Washington	39167	oilgas	51616.85
-2010	OH	Athens	39009	coal	3372.86

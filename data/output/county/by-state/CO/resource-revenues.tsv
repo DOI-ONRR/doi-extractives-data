@@ -7,50 +7,40 @@ Year	State	County	FIPS	Resource	Revenue
 2004	CO	Bent	08011	oilgas	29454.29
 2004	CO	Broomfield	08014	oilgas	351.15
 2004	CO	Cheyenne	08017	oilgas	78633.16
-2004	CO	Delta	08029	coal	7707967.96
 2004	CO	Delta	08029	oilgas	465070.49
 2004	CO	Dolores	08033	oilgas	579595.00
-2004	CO	Dolores	08033	other	952516.85
 2004	CO	Eagle	08037	oilgas	30244.50
 2004	CO	El Paso	08041	oilgas	738.00
-2004	CO	Garfield	08045	coal	1636851.50
 2004	CO	Garfield	08045	oilgas	44220763.26
-2004	CO	Gunnison	08051	coal	13422255.42
 2004	CO	Gunnison	08051	oilgas	535819.48
 2004	CO	Huerfano	08055	oilgas	41628.24
-2004	CO	Huerfano	08055	other	516898.25
 2004	CO	Jackson	08057	oilgas	474881.65
-2004	CO	Jackson	08057	other	31970.45
 2004	CO	Kiowa	08061	oilgas	47588.35
 2004	CO	Kit Carson	08063	oilgas	2145.00
-2004	CO	La Plata	08067	coal	793961.52
 2004	CO	La Plata	08067	oilgas	6055364.99
 2004	CO	Larimer	08069	oilgas	6721.91
 2004	CO	Las Animas	08071	oilgas	2080797.68
 2004	CO	Logan	08075	oilgas	10757.30
 2004	CO	Mesa	08077	oilgas	3633536.38
 2004	CO	Moffat	08081	oilgas	13959820.20
-2004	CO	Moffat	08081	coal	16394356.14
 2004	CO	Montezuma	08083	oilgas	1959835.59
-2004	CO	Montezuma	08083	other	11623220.43
 2004	CO	Montrose	08085	oilgas	426652.72
 2004	CO	Morgan	08087	oilgas	4625.57
 2004	CO	Park	08093	oilgas	186357.50
 2004	CO	Phillips	08095	oilgas	7599.00
 2004	CO	Pitkin	08097	oilgas	87163.57
 2004	CO	Prowers	08099	oilgas	7267.51
-2004	CO	Rio Blanco	08103	coal	1196722.43
 2004	CO	Rio Blanco	08103	oilgas	35192304.79
-2004	CO	Rio Blanco	08103	minerals	-32383.90
-2004	CO	Rio Blanco	08103	other	1235032.37
 2004	CO	Rio Grande	08105	oilgas	21255.50
 2004	CO	Routt	08107	oilgas	287585.26
-2004	CO	Routt	08107	coal	1322317.11
 2004	CO	San Miguel	08113	oilgas	10407639.24
 2004	CO	Sedgwick	08115	oilgas	60.00
 2004	CO	Washington	08121	oilgas	74133.60
 2004	CO	Weld	08123	oilgas	1875267.24
 2004	CO	Yuma	08125	oilgas	543220.64
+2004	CO		08	coal	42474432.08
+2004	CO		08	minerals	-32383.90
+2004	CO		08	other	14359638.35
 2005	CO	Adams	08001	oilgas	240.00
 2005	CO	Alamosa	08003	oilgas	742.00
 2005	CO	Arapahoe	08005	oilgas	900.47
@@ -59,32 +49,22 @@ Year	State	County	FIPS	Resource	Revenue
 2005	CO	Bent	08011	oilgas	31246.12
 2005	CO	Broomfield	08014	oilgas	412.49
 2005	CO	Cheyenne	08017	oilgas	96228.98
-2005	CO	Delta	08029	coal	8572081.09
 2005	CO	Delta	08029	oilgas	379119.29
 2005	CO	Dolores	08033	oilgas	952878.11
-2005	CO	Dolores	08033	other	1374346.48
 2005	CO	Eagle	08037	oilgas	20128.50
-2005	CO	Garfield	08045	coal	895023.59
 2005	CO	Garfield	08045	oilgas	75562492.14
-2005	CO	Garfield	08045	other	11791.98
-2005	CO	Gunnison	08051	coal	12984878.21
 2005	CO	Gunnison	08051	oilgas	405963.76
 2005	CO	Huerfano	08055	oilgas	17030.07
-2005	CO	Huerfano	08055	other	430811.33
 2005	CO	Jackson	08057	oilgas	454073.17
-2005	CO	Jackson	08057	other	39058.95
 2005	CO	Kiowa	08061	oilgas	47308.47
 2005	CO	Kit Carson	08063	oilgas	2145.00
-2005	CO	La Plata	08067	coal	196284.45
 2005	CO	La Plata	08067	oilgas	8925467.64
 2005	CO	Larimer	08069	oilgas	8542.18
 2005	CO	Las Animas	08071	oilgas	2387948.19
 2005	CO	Logan	08075	oilgas	17934.22
 2005	CO	Mesa	08077	oilgas	6772473.97
-2005	CO	Moffat	08081	coal	15208306.09
 2005	CO	Moffat	08081	oilgas	25786099.99
 2005	CO	Montezuma	08083	oilgas	7046736.97
-2005	CO	Montezuma	08083	other	17347613.57
 2005	CO	Montrose	08085	oilgas	1363240.70
 2005	CO	Morgan	08087	oilgas	22125.05
 2005	CO	Park	08093	oilgas	390926.50
@@ -92,16 +72,16 @@ Year	State	County	FIPS	Resource	Revenue
 2005	CO	Pitkin	08097	oilgas	64136.34
 2005	CO	Prowers	08099	oilgas	3141.92
 2005	CO	Rio Blanco	08103	oilgas	46941455.77
-2005	CO	Rio Blanco	08103	minerals	-2106.52
-2005	CO	Rio Blanco	08103	coal	509028.74
 2005	CO	Rio Grande	08105	oilgas	20423.00
 2005	CO	Routt	08107	oilgas	632638.99
-2005	CO	Routt	08107	coal	1489466.80
 2005	CO	San Miguel	08113	oilgas	14775591.37
 2005	CO	Sedgwick	08115	oilgas	6155.00
 2005	CO	Washington	08121	oilgas	97629.30
 2005	CO	Weld	08123	oilgas	2616210.54
 2005	CO	Yuma	08125	oilgas	786914.95
+2005	CO		08	coal	39855068.97
+2005	CO		08	minerals	-2106.52
+2005	CO		08	other	19613274.49
 2006	CO	Adams	08001	oilgas	320.00
 2006	CO	Arapahoe	08005	oilgas	756.69
 2006	CO	Archuleta	08007	oilgas	209443.69
@@ -109,32 +89,22 @@ Year	State	County	FIPS	Resource	Revenue
 2006	CO	Bent	08011	oilgas	19859.99
 2006	CO	Broomfield	08014	oilgas	505.06
 2006	CO	Cheyenne	08017	oilgas	106451.02
-2006	CO	Delta	08029	coal	9363255.13
 2006	CO	Delta	08029	oilgas	336575.83
 2006	CO	Dolores	08033	oilgas	4755679.82
-2006	CO	Dolores	08033	other	1731143.27
 2006	CO	Eagle	08037	oilgas	20128.50
-2006	CO	Garfield	08045	coal	515143.40
 2006	CO	Garfield	08045	oilgas	96321634.49
-2006	CO	Garfield	08045	other	6608.21
-2006	CO	Gunnison	08051	coal	15317079.74
 2006	CO	Gunnison	08051	oilgas	544912.44
 2006	CO	Huerfano	08055	oilgas	47299.82
-2006	CO	Huerfano	08055	other	590682.21
 2006	CO	Jackson	08057	oilgas	718936.41
-2006	CO	Jackson	08057	other	60984.75
 2006	CO	Kiowa	08061	oilgas	49731.64
 2006	CO	Kit Carson	08063	oilgas	11805.00
-2006	CO	La Plata	08067	coal	308675.63
 2006	CO	La Plata	08067	oilgas	9164903.09
 2006	CO	Larimer	08069	oilgas	10159.40
 2006	CO	Las Animas	08071	oilgas	2375903.90
 2006	CO	Logan	08075	oilgas	19216.77
 2006	CO	Mesa	08077	oilgas	14059625.99
 2006	CO	Moffat	08081	oilgas	18237395.10
-2006	CO	Moffat	08081	coal	22465419.30
 2006	CO	Montezuma	08083	oilgas	2443417.30
-2006	CO	Montezuma	08083	other	21890230.35
 2006	CO	Montrose	08085	oilgas	802502.40
 2006	CO	Morgan	08087	oilgas	18460.14
 2006	CO	Ouray	08091	oilgas	25590.00
@@ -143,17 +113,17 @@ Year	State	County	FIPS	Resource	Revenue
 2006	CO	Pitkin	08097	oilgas	65102.64
 2006	CO	Prowers	08099	oilgas	7653.12
 2006	CO	Rio Blanco	08103	oilgas	62420328.26
-2006	CO	Rio Blanco	08103	minerals	-26255.00
-2006	CO	Rio Blanco	08103	coal	839364.88
 2006	CO	Rio Grande	08105	oilgas	26230.50
 2006	CO	Routt	08107	oilgas	425097.05
-2006	CO	Routt	08107	coal	358976.98
 2006	CO	Saguache	08109	oilgas	960.00
 2006	CO	San Miguel	08113	oilgas	18719562.20
 2006	CO	Sedgwick	08115	oilgas	1263.50
 2006	CO	Washington	08121	oilgas	122214.67
 2006	CO	Weld	08123	oilgas	2294669.40
 2006	CO	Yuma	08125	oilgas	619858.73
+2006	CO		08	coal	49167915.06
+2006	CO		08	minerals	-26255.00
+2006	CO		08	other	24641515.91
 2007	CO	Adams	08001	oilgas	320.00
 2007	CO	Arapahoe	08005	oilgas	7888.02
 2007	CO	Archuleta	08007	oilgas	178588.52
@@ -162,47 +132,32 @@ Year	State	County	FIPS	Resource	Revenue
 2007	CO	Broomfield	08014	oilgas	277.32
 2007	CO	Cheyenne	08017	oilgas	82937.42
 2007	CO	Crowley	08025	oilgas	26068.00
-2007	CO	Delta	08029	coal	9869281.80
 2007	CO	Delta	08029	oilgas	1011374.35
 2007	CO	Dolores	08033	oilgas	1338777.87
-2007	CO	Dolores	08033	other	1672535.56
 2007	CO	Eagle	08037	oilgas	23188.50
-2007	CO	Garfield	08045	coal	1020288.58
 2007	CO	Garfield	08045	oilgas	81734211.12
-2007	CO	Garfield	08045	other	4131.63
 2007	CO	Grand	08049	oilgas	27143.50
-2007	CO	Gunnison	08051	coal	18197670.27
 2007	CO	Gunnison	08051	oilgas	1058334.87
 2007	CO	Huerfano	08055	oilgas	118267.69
-2007	CO	Huerfano	08055	other	370622.11
 2007	CO	Jackson	08057	oilgas	885471.86
-2007	CO	Jackson	08057	other	101739.59
 2007	CO	Kiowa	08061	oilgas	52834.43
 2007	CO	Kit Carson	08063	oilgas	4393.27
 2007	CO	La Plata	08067	oilgas	7704367.92
-2007	CO	La Plata	08067	coal	353025.04
 2007	CO	Larimer	08069	oilgas	10551.35
 2007	CO	Las Animas	08071	oilgas	2622710.39
 2007	CO	Logan	08075	oilgas	22880.05
 2007	CO	Mesa	08077	oilgas	12468077.00
-2007	CO	Moffat	08081	coal	19740843.13
 2007	CO	Moffat	08081	oilgas	19873535.66
 2007	CO	Montezuma	08083	oilgas	1999183.83
-2007	CO	Montezuma	08083	other	20600843.37
 2007	CO	Montrose	08085	oilgas	2014735.84
 2007	CO	Morgan	08087	oilgas	16430.78
 2007	CO	Ouray	08091	oilgas	6615.00
 2007	CO	Park	08093	oilgas	86451.00
 2007	CO	Phillips	08095	oilgas	9963.00
 2007	CO	Pitkin	08097	oilgas	125201.36
-2007	CO	Pitkin	08097	coal	-22848.94
 2007	CO	Prowers	08099	oilgas	9285.65
-2007	CO	Rio Blanco	08103	coal	645171.65
 2007	CO	Rio Blanco	08103	oilgas	53894487.12
-2007	CO	Rio Blanco	08103	minerals	6561.00
-2007	CO	Rio Blanco	08103	other	245418.56
 2007	CO	Rio Grande	08105	oilgas	33655.00
-2007	CO	Routt	08107	coal	391935.54
 2007	CO	Routt	08107	oilgas	824362.05
 2007	CO	Saguache	08109	oilgas	2544.00
 2007	CO	San Miguel	08113	oilgas	12530332.91
@@ -210,6 +165,9 @@ Year	State	County	FIPS	Resource	Revenue
 2007	CO	Washington	08121	oilgas	118534.60
 2007	CO	Weld	08123	oilgas	1710328.98
 2007	CO	Yuma	08125	oilgas	771325.87
+2007	CO		08	coal	50195367.07
+2007	CO		08	minerals	6561.00
+2007	CO		08	other	22995290.82
 2008	CO	Adams	08001	oilgas	320.00
 2008	CO	Arapahoe	08005	oilgas	2362.75
 2008	CO	Archuleta	08007	oilgas	249598.38
@@ -218,34 +176,24 @@ Year	State	County	FIPS	Resource	Revenue
 2008	CO	Broomfield	08014	oilgas	426.48
 2008	CO	Cheyenne	08017	oilgas	99299.39
 2008	CO	Crowley	08025	oilgas	588.00
-2008	CO	Delta	08029	coal	14537351.64
 2008	CO	Delta	08029	oilgas	290512.11
 2008	CO	Dolores	08033	oilgas	4501065.73
-2008	CO	Dolores	08033	other	8622329.59
 2008	CO	Eagle	08037	oilgas	24476.00
 2008	CO	Fremont	08043	oilgas	560.00
-2008	CO	Garfield	08045	coal	1125091.94
 2008	CO	Garfield	08045	oilgas	256786454.92
-2008	CO	Garfield	08045	other	5262.39
 2008	CO	Grand	08049	oilgas	68765.50
-2008	CO	Gunnison	08051	coal	22639063.51
 2008	CO	Gunnison	08051	oilgas	546702.20
 2008	CO	Huerfano	08055	oilgas	123711.50
-2008	CO	Huerfano	08055	other	585625.87
 2008	CO	Jackson	08057	oilgas	1671333.25
-2008	CO	Jackson	08057	other	85188.77
 2008	CO	Kiowa	08061	oilgas	55586.91
 2008	CO	Kit Carson	08063	oilgas	3176.79
 2008	CO	La Plata	08067	oilgas	10241633.90
-2008	CO	La Plata	08067	coal	597793.85
 2008	CO	Larimer	08069	oilgas	16067.65
 2008	CO	Las Animas	08071	oilgas	4704253.75
 2008	CO	Logan	08075	oilgas	34693.75
 2008	CO	Mesa	08077	oilgas	22434002.32
-2008	CO	Moffat	08081	coal	17736886.11
 2008	CO	Moffat	08081	oilgas	21781210.70
 2008	CO	Montezuma	08083	oilgas	7703907.62
-2008	CO	Montezuma	08083	other	47980448.41
 2008	CO	Montrose	08085	oilgas	1981083.26
 2008	CO	Morgan	08087	oilgas	22642.20
 2008	CO	Ouray	08091	oilgas	6615.00
@@ -254,10 +202,7 @@ Year	State	County	FIPS	Resource	Revenue
 2008	CO	Pitkin	08097	oilgas	66392.93
 2008	CO	Prowers	08099	oilgas	6626.46
 2008	CO	Rio Blanco	08103	oilgas	75886212.02
-2008	CO	Rio Blanco	08103	minerals	313480.99
-2008	CO	Rio Blanco	08103	coal	3968074.17
 2008	CO	Rio Grande	08105	oilgas	29457.50
-2008	CO	Routt	08107	coal	549543.01
 2008	CO	Routt	08107	oilgas	1076740.39
 2008	CO	Saguache	08109	oilgas	36318.00
 2008	CO	San Miguel	08113	oilgas	15345529.24
@@ -265,6 +210,9 @@ Year	State	County	FIPS	Resource	Revenue
 2008	CO	Washington	08121	oilgas	137635.97
 2008	CO	Weld	08123	oilgas	4606791.79
 2008	CO	Yuma	08125	oilgas	1468335.27
+2008	CO		08	coal	61153804.23
+2008	CO		08	minerals	313480.99
+2008	CO		08	other	57560890.99
 2009	CO	Adams	08001	oilgas	320.00
 2009	CO	Arapahoe	08005	oilgas	2099.43
 2009	CO	Archuleta	08007	oilgas	104609.85
@@ -273,35 +221,25 @@ Year	State	County	FIPS	Resource	Revenue
 2009	CO	Broomfield	08014	oilgas	191.86
 2009	CO	Cheyenne	08017	oilgas	33655.89
 2009	CO	Crowley	08025	oilgas	588.00
-2009	CO	Delta	08029	coal	5429028.56
 2009	CO	Delta	08029	oilgas	228890.43
 2009	CO	Dolores	08033	oilgas	519078.91
-2009	CO	Dolores	08033	other	6247017.96
 2009	CO	Eagle	08037	oilgas	5150.00
 2009	CO	Fremont	08043	oilgas	240.00
 2009	CO	Garfield	08045	oilgas	54748314.72
-2009	CO	Garfield	08045	coal	394058.68
-2009	CO	Garfield	08045	other	45257.43
 2009	CO	Grand	08049	oilgas	28686.00
-2009	CO	Gunnison	08051	coal	17196871.22
 2009	CO	Gunnison	08051	oilgas	368971.52
 2009	CO	Huerfano	08055	oilgas	318788.50
-2009	CO	Huerfano	08055	other	307939.77
 2009	CO	Jackson	08057	oilgas	763572.94
-2009	CO	Jackson	08057	other	35332.58
 2009	CO	Kiowa	08061	oilgas	63819.11
 2009	CO	Kit Carson	08063	oilgas	2796.00
 2009	CO	La Plata	08067	oilgas	3473317.69
-2009	CO	La Plata	08067	coal	1028739.49
 2009	CO	Larimer	08069	oilgas	9100.55
 2009	CO	Las Animas	08071	oilgas	1174583.54
 2009	CO	Lincoln	08073	oilgas	21157.50
 2009	CO	Logan	08075	oilgas	12332.65
 2009	CO	Mesa	08077	oilgas	7572308.83
-2009	CO	Moffat	08081	coal	15343141.06
 2009	CO	Moffat	08081	oilgas	7639878.30
 2009	CO	Montezuma	08083	oilgas	1227827.21
-2009	CO	Montezuma	08083	other	32079436.98
 2009	CO	Montrose	08085	oilgas	493498.51
 2009	CO	Morgan	08087	oilgas	18044.38
 2009	CO	Ouray	08091	oilgas	3834.00
@@ -309,11 +247,8 @@ Year	State	County	FIPS	Resource	Revenue
 2009	CO	Phillips	08095	oilgas	8852.00
 2009	CO	Pitkin	08097	oilgas	49350.84
 2009	CO	Prowers	08099	oilgas	58297.70
-2009	CO	Rio Blanco	08103	coal	4886399.64
 2009	CO	Rio Blanco	08103	oilgas	39398540.79
-2009	CO	Rio Blanco	08103	minerals	-142029.00
 2009	CO	Rio Grande	08105	oilgas	17917.50
-2009	CO	Routt	08107	coal	1960509.84
 2009	CO	Routt	08107	oilgas	340273.92
 2009	CO	Saguache	08109	oilgas	2232.00
 2009	CO	San Miguel	08113	oilgas	4233187.72
@@ -321,6 +256,9 @@ Year	State	County	FIPS	Resource	Revenue
 2009	CO	Washington	08121	oilgas	57881.32
 2009	CO	Weld	08123	oilgas	1992394.13
 2009	CO	Yuma	08125	oilgas	640107.28
+2009	CO		08	coal	46238748.49
+2009	CO		08	minerals	-142029.00
+2009	CO		08	other	39010563.22
 2010	CO	Arapahoe	08005	oilgas	631.60
 2010	CO	Archuleta	08007	oilgas	135611.36
 2010	CO	Baca	08009	oilgas	240891.82
@@ -328,36 +266,26 @@ Year	State	County	FIPS	Resource	Revenue
 2010	CO	Broomfield	08014	oilgas	1065.85
 2010	CO	Cheyenne	08017	oilgas	138065.60
 2010	CO	Delta	08029	oilgas	229450.98
-2010	CO	Delta	08029	coal	13746570.93
 2010	CO	Dolores	08033	oilgas	1283931.06
-2010	CO	Dolores	08033	other	6245700.08
 2010	CO	Eagle	08037	oilgas	5150.00
 2010	CO	El Paso	08041	oilgas	5904.50
 2010	CO	Elbert	08039	oilgas	120.00
 2010	CO	Fremont	08043	oilgas	240.00
 2010	CO	Garfield	08045	oilgas	81459014.88
-2010	CO	Garfield	08045	coal	765749.97
-2010	CO	Garfield	08045	other	14762.27
 2010	CO	Grand	08049	oilgas	28686.00
-2010	CO	Gunnison	08051	coal	22801693.62
 2010	CO	Gunnison	08051	oilgas	486994.25
 2010	CO	Huerfano	08055	oilgas	413546.50
-2010	CO	Huerfano	08055	other	425070.96
 2010	CO	Jackson	08057	oilgas	763442.60
-2010	CO	Jackson	08057	other	67359.38
 2010	CO	Kiowa	08061	oilgas	23974.81
 2010	CO	Kit Carson	08063	oilgas	15269.00
 2010	CO	La Plata	08067	oilgas	6577899.03
-2010	CO	La Plata	08067	coal	1575233.90
 2010	CO	Larimer	08069	oilgas	11775.87
 2010	CO	Las Animas	08071	oilgas	1604055.17
 2010	CO	Lincoln	08073	oilgas	16556.50
 2010	CO	Logan	08075	oilgas	15272.74
 2010	CO	Mesa	08077	oilgas	9572497.89
-2010	CO	Moffat	08081	coal	12649061.70
 2010	CO	Moffat	08081	oilgas	11682247.20
 2010	CO	Montezuma	08083	oilgas	6958925.82
-2010	CO	Montezuma	08083	other	35481971.05
 2010	CO	Montrose	08085	oilgas	289096.41
 2010	CO	Morgan	08087	oilgas	22271.13
 2010	CO	Ouray	08091	oilgas	4852.00
@@ -367,10 +295,7 @@ Year	State	County	FIPS	Resource	Revenue
 2010	CO	Prowers	08099	oilgas	7071.24
 2010	CO	Pueblo	08101	oilgas	2583.00
 2010	CO	Rio Blanco	08103	oilgas	67472516.27
-2010	CO	Rio Blanco	08103	minerals	20079.00
-2010	CO	Rio Blanco	08103	coal	6036370.56
 2010	CO	Rio Grande	08105	oilgas	9999.00
-2010	CO	Routt	08107	coal	4607323.91
 2010	CO	Routt	08107	oilgas	427135.93
 2010	CO	Saguache	08109	oilgas	2232.00
 2010	CO	San Miguel	08113	oilgas	2495414.90
@@ -378,45 +303,36 @@ Year	State	County	FIPS	Resource	Revenue
 2010	CO	Washington	08121	oilgas	89140.27
 2010	CO	Weld	08123	oilgas	2974192.50
 2010	CO	Yuma	08125	oilgas	797597.24
+2010	CO		08	coal	62182004.59
+2010	CO		08	minerals	20079.00
+2010	CO		08	other	42604687.34
 2011	CO	Arapahoe	08005	oilgas	190.91
 2011	CO	Archuleta	08007	oilgas	120602.55
 2011	CO	Baca	08009	oilgas	281632.11
 2011	CO	Bent	08011	oilgas	12739.03
 2011	CO	Broomfield	08014	oilgas	995.28
-2011	CO	Chaffee	08015	renewables	32800.00
 2011	CO	Cheyenne	08017	oilgas	99428.98
-2011	CO	Cheyenne	08017	other	58.22
-2011	CO	Delta	08029	coal	13769654.03
 2011	CO	Delta	08029	oilgas	200255.57
 2011	CO	Dolores	08033	oilgas	625143.95
-2011	CO	Dolores	08033	other	8133585.97
 2011	CO	Eagle	08037	oilgas	5150.00
 2011	CO	El Paso	08041	oilgas	5584.50
 2011	CO	Elbert	08039	oilgas	120.00
 2011	CO	Fremont	08043	oilgas	240.00
 2011	CO	Garfield	08045	oilgas	91143229.73
-2011	CO	Garfield	08045	coal	145632.88
-2011	CO	Garfield	08045	other	16545.87
 2011	CO	Grand	08049	oilgas	28686.00
-2011	CO	Gunnison	08051	coal	24207965.63
 2011	CO	Gunnison	08051	oilgas	557470.47
 2011	CO	Huerfano	08055	oilgas	127417.00
-2011	CO	Huerfano	08055	other	369337.90
 2011	CO	Jackson	08057	oilgas	939910.53
-2011	CO	Jackson	08057	other	47331.06
 2011	CO	Kiowa	08061	oilgas	44339.35
 2011	CO	Kit Carson	08063	oilgas	9774.00
 2011	CO	La Plata	08067	oilgas	5080598.60
-2011	CO	La Plata	08067	coal	1923870.08
 2011	CO	Larimer	08069	oilgas	11826.50
 2011	CO	Las Animas	08071	oilgas	1351661.03
 2011	CO	Lincoln	08073	oilgas	2992.50
 2011	CO	Logan	08075	oilgas	21217.86
 2011	CO	Mesa	08077	oilgas	9434843.88
-2011	CO	Moffat	08081	coal	11741400.88
 2011	CO	Moffat	08081	oilgas	11725854.25
 2011	CO	Montezuma	08083	oilgas	1508142.00
-2011	CO	Montezuma	08083	other	41177862.44
 2011	CO	Montrose	08085	oilgas	335780.71
 2011	CO	Morgan	08087	oilgas	15038.42
 2011	CO	Ouray	08091	oilgas	4072.00
@@ -426,10 +342,7 @@ Year	State	County	FIPS	Resource	Revenue
 2011	CO	Prowers	08099	oilgas	6012.84
 2011	CO	Pueblo	08101	oilgas	2583.00
 2011	CO	Rio Blanco	08103	oilgas	77414770.84
-2011	CO	Rio Blanco	08103	minerals	34450.00
-2011	CO	Rio Blanco	08103	coal	8308385.65
 2011	CO	Rio Grande	08105	oilgas	8605.50
-2011	CO	Routt	08107	coal	2558508.56
 2011	CO	Routt	08107	oilgas	1186201.52
 2011	CO	Saguache	08109	oilgas	2816.00
 2011	CO	San Miguel	08113	oilgas	2478155.76
@@ -437,6 +350,10 @@ Year	State	County	FIPS	Resource	Revenue
 2011	CO	Washington	08121	oilgas	88604.56
 2011	CO	Weld	08123	oilgas	3949237.70
 2011	CO	Yuma	08125	oilgas	665726.08
+2011	CO		08	coal	62655417.71
+2011	CO		08	renewables	32800.00
+2011	CO		08	minerals	34450.00
+2011	CO		08	other	50258135.66
 2012	CO	Adams	08001	oilgas	467.30
 2012	CO	Arapahoe	08005	oilgas	1005.40
 2012	CO	Archuleta	08007	oilgas	75961.81
@@ -444,40 +361,28 @@ Year	State	County	FIPS	Resource	Revenue
 2012	CO	Bent	08011	oilgas	14343.67
 2012	CO	Broomfield	08014	oilgas	5178.72
 2012	CO	Cheyenne	08017	oilgas	80093.50
-2012	CO	Cheyenne	08017	other	55.43
 2012	CO	Custer	08027	oilgas	981.48
-2012	CO	Delta	08029	coal	17135890.33
 2012	CO	Delta	08029	oilgas	175431.73
 2012	CO	Dolores	08033	oilgas	750389.65
-2012	CO	Dolores	08033	other	10303413.51
 2012	CO	Douglas	08035	oilgas	20686.70
 2012	CO	Eagle	08037	oilgas	5150.00
 2012	CO	El Paso	08041	oilgas	19085.47
 2012	CO	Fremont	08043	oilgas	240.00
 2012	CO	Garfield	08045	oilgas	71731509.27
-2012	CO	Garfield	08045	coal	13689.00
-2012	CO	Garfield	08045	other	12763.66
 2012	CO	Grand	08049	oilgas	38248.00
-2012	CO	Gunnison	08051	coal	13610645.77
-2012	CO	Gunnison	08051	renewables	33416.00
 2012	CO	Gunnison	08051	oilgas	423745.78
 2012	CO	Huerfano	08055	oilgas	483641.52
-2012	CO	Huerfano	08055	other	388619.96
 2012	CO	Jackson	08057	oilgas	726648.74
-2012	CO	Jackson	08057	other	47337.27
 2012	CO	Kiowa	08061	oilgas	24816.81
 2012	CO	Kit Carson	08063	oilgas	10562.00
 2012	CO	La Plata	08067	oilgas	3044148.54
-2012	CO	La Plata	08067	coal	2501253.99
 2012	CO	Larimer	08069	oilgas	15470.33
 2012	CO	Las Animas	08071	oilgas	1346308.03
 2012	CO	Lincoln	08073	oilgas	1629.00
 2012	CO	Logan	08075	oilgas	12811.22
 2012	CO	Mesa	08077	oilgas	8403188.83
 2012	CO	Moffat	08081	oilgas	10456688.90
-2012	CO	Moffat	08081	coal	12845129.15
 2012	CO	Montezuma	08083	oilgas	2560836.27
-2012	CO	Montezuma	08083	other	49905955.91
 2012	CO	Montrose	08085	oilgas	163336.71
 2012	CO	Morgan	08087	oilgas	266012.43
 2012	CO	Ouray	08091	oilgas	4072.00
@@ -487,10 +392,7 @@ Year	State	County	FIPS	Resource	Revenue
 2012	CO	Prowers	08099	oilgas	6572.73
 2012	CO	Pueblo	08101	oilgas	2583.00
 2012	CO	Rio Blanco	08103	oilgas	75250185.88
-2012	CO	Rio Blanco	08103	minerals	27093.00
-2012	CO	Rio Blanco	08103	coal	7997141.85
 2012	CO	Rio Grande	08105	oilgas	8944.00
-2012	CO	Routt	08107	coal	1936432.21
 2012	CO	Routt	08107	oilgas	566610.41
 2012	CO	Saguache	08109	oilgas	2816.00
 2012	CO	San Miguel	08113	oilgas	3460474.93
@@ -498,47 +400,38 @@ Year	State	County	FIPS	Resource	Revenue
 2012	CO	Washington	08121	oilgas	65203.68
 2012	CO	Weld	08123	oilgas	6200867.01
 2012	CO	Yuma	08125	oilgas	422033.65
+2012	CO		08	coal	56040182.30
+2012	CO		08	renewables	33416.00
+2012	CO		08	minerals	27093.00
+2012	CO		08	other	61766595.86
 2013	CO	Adams	08001	oilgas	613.26
 2013	CO	Arapahoe	08005	oilgas	861.11
 2013	CO	Archuleta	08007	oilgas	108503.50
 2013	CO	Baca	08009	oilgas	212277.56
 2013	CO	Bent	08011	oilgas	1476287.53
 2013	CO	Broomfield	08014	oilgas	12960.91
-2013	CO	Chaffee	08015	renewables	3200.00
 2013	CO	Cheyenne	08017	oilgas	164615.20
-2013	CO	Cheyenne	08017	other	66.23
 2013	CO	Crowley	08025	oilgas	3087.00
 2013	CO	Custer	08027	oilgas	490.74
-2013	CO	Delta	08029	coal	8375854.72
 2013	CO	Delta	08029	oilgas	203285.18
 2013	CO	Dolores	08033	oilgas	304228.71
-2013	CO	Dolores	08033	other	11682288.01
 2013	CO	El Paso	08041	oilgas	5584.50
 2013	CO	Elbert	08039	oilgas	29105.00
-2013	CO	Garfield	08045	coal	184481.25
 2013	CO	Garfield	08045	oilgas	98891289.39
-2013	CO	Garfield	08045	other	2860.35
 2013	CO	Grand	08049	oilgas	38248.00
-2013	CO	Gunnison	08051	coal	9346607.63
 2013	CO	Gunnison	08051	oilgas	899866.98
-2013	CO	Gunnison	08051	renewables	25062.00
 2013	CO	Huerfano	08055	oilgas	135012.76
-2013	CO	Huerfano	08055	other	371401.62
 2013	CO	Jackson	08057	oilgas	711620.45
-2013	CO	Jackson	08057	other	18266.08
 2013	CO	Kiowa	08061	oilgas	235157.08
 2013	CO	Kit Carson	08063	oilgas	11738.00
 2013	CO	La Plata	08067	oilgas	4014744.78
-2013	CO	La Plata	08067	coal	2475250.71
 2013	CO	Larimer	08069	oilgas	35331.29
 2013	CO	Las Animas	08071	oilgas	849218.95
 2013	CO	Lincoln	08073	oilgas	2435.00
 2013	CO	Logan	08075	oilgas	15917.80
 2013	CO	Mesa	08077	oilgas	10618518.55
-2013	CO	Moffat	08081	coal	6955422.35
 2013	CO	Moffat	08081	oilgas	11914145.61
 2013	CO	Montezuma	08083	oilgas	839830.51
-2013	CO	Montezuma	08083	other	49584950.83
 2013	CO	Montrose	08085	oilgas	150180.00
 2013	CO	Morgan	08087	oilgas	254835.60
 2013	CO	Ouray	08091	oilgas	2060.00
@@ -547,24 +440,16 @@ Year	State	County	FIPS	Resource	Revenue
 2013	CO	Pitkin	08097	oilgas	34441.49
 2013	CO	Prowers	08099	oilgas	19021.44
 2013	CO	Pueblo	08101	oilgas	1020.00
-2013	CO	Rio Blanco	08103	coal	-41543.79
 2013	CO	Rio Blanco	08103	oilgas	66679128.28
-2013	CO	Rio Blanco	08103	minerals	17478.00
 2013	CO	Rio Grande	08105	oilgas	8944.00
-2013	CO	Routt	08107	coal	1398379.36
 2013	CO	Routt	08107	oilgas	321938.17
 2013	CO	Saguache	08109	oilgas	2336.00
 2013	CO	San Miguel	08113	oilgas	1898791.12
-2013	CO	San Miguel	08113	minerals	8720.00
 2013	CO	Sedgwick	08115	oilgas	1638.00
 2013	CO	Washington	08121	oilgas	53072.48
 2013	CO	Weld	08123	oilgas	6394534.73
 2013	CO	Yuma	08125	oilgas	448471.06
-2005	CO	Rio Blanco	08103	other	409652.18
-2006	CO	Rio Blanco	08103	other	361867.12
-2008	CO	Rio Blanco	08103	other	282035.96
-2009	CO	Rio Blanco	08103	other	295578.50
-2010	CO	Rio Blanco	08103	other	369823.60
-2011	CO	Rio Blanco	08103	other	513414.20
-2012	CO	Rio Blanco	08103	other	1108450.12
-2013	CO	Rio Blanco	08103	other	1088703.02
+2013	CO		08	coal	28694452.23
+2013	CO		08	minerals	26198.00
+2013	CO		08	renewables	28262.00
+2013	CO		08	other	62748536.14

@@ -67,7 +67,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2004	KS	Seward	20175	Gas	Unprocessed (Wet) Gas	Royalties	69274.32
 2004	KS	Seward	20175	NGL	Gas Plant Products	Royalties	1954.58
 2004	KS	Seward	20175	Oil	Oil	Royalties	590.9
-2004	KS	Seward	20175	Helium	Helium	Royalties	57.39
 2004	KS	Stanton	20187	Oil & Gas		Other Royalties	213.6
 2004	KS	Stanton	20187	Gas	Processed (Residue) Gas	Royalties	12642.19
 2004	KS	Stanton	20187	Gas	Unprocessed (Wet) Gas	Royalties	160.14
@@ -79,6 +78,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2004	KS	Stevens	20189	Gas	Unprocessed (Wet) Gas	Royalties	205288.76
 2004	KS	Stevens	20189	NGL	Gas Plant Products	Royalties	3496.22
 2004	KS	Trego	20195	Oil	Oil	Royalties	7760.06
+2004	KS		20	Helium	Helium	Royalties	57.39
 2005	KS	Cheyenne	20023	Oil & Gas		Rents	2287.5
 2005	KS	Clark	20025	Oil & Gas		Rents	73.55
 2005	KS	Comanche	20033	Oil & Gas		Other Royalties	10.89
@@ -222,7 +222,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2006	KS	Seward	20175	NGL	Gas Plant Products	Royalties	7253.65
 2006	KS	Seward	20175	Oil	Drip or Scrubber Condensate	Royalties	-24.48
 2006	KS	Seward	20175	Oil	Oil	Royalties	1031.29
-2006	KS	Seward	20175	Helium	Helium	Royalties	-57.39
 2006	KS	Stanton	20187	Oil & Gas		Other Royalties	-825.23
 2006	KS	Stanton	20187	Gas	Processed (Residue) Gas	Royalties	6554.5
 2006	KS	Stanton	20187	Gas	Unprocessed (Wet) Gas	Royalties	187.7
@@ -235,6 +234,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2006	KS	Stevens	20189	NGL	Gas Plant Products	Royalties	11428.2
 2006	KS	Trego	20195	Oil & Gas		Rents	840
 2006	KS	Trego	20195	Oil	Oil	Royalties	16379.88
+2006	KS		20	Helium	Helium	Royalties	-57.39
 2007	KS	Barber	20007	Oil & Gas		Bonus	280
 2007	KS	Barber	20007	Oil & Gas		Rents	60
 2007	KS	Cheyenne	20023	Oil & Gas		Rents	3290
@@ -482,7 +482,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2009	KS	Seward	20175	NGL	Gas Plant Products	Royalties	5966.85
 2009	KS	Seward	20175	Oil	Condensate	Royalties	479.99
 2009	KS	Seward	20175	Oil	Oil	Royalties	1197.76
-2009	KS	Seward	20175	Helium	Helium	Royalties	20.06
 2009	KS	Sherman	20181	Oil & Gas		Bonus	640
 2009	KS	Sherman	20181	Oil & Gas		Rents	480
 2009	KS	Stanton	20187	Oil & Gas		Other Royalties	-1710.73
@@ -498,6 +497,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2009	KS	Trego	20195	Oil	Oil	Royalties	13548.45
 2009	KS	Wilson	20205	Oil & Gas		Rents	45.97
 2009	KS	Woodson	20207	Oil & Gas		Rents	1035.53
+2009	KS		20	Helium	Helium	Royalties	20.06
 2010	KS	Cheyenne	20023	Oil & Gas		Bonus	-1120
 2010	KS	Cheyenne	20023	Oil & Gas		Rents	17932
 2010	KS	Comanche	20033	Oil & Gas		Other Royalties	-11.73
@@ -650,7 +650,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2011	KS	Morton	20129	Oil	Condensate	Royalties	2300.21
 2011	KS	Morton	20129	Oil	Oil	Royalties	2523417.21
 2011	KS	Morton	20129	Oil	Other Liquid Hydrocarbons	Royalties	0.5
-2011	KS	Morton	20129	Helium	Helium	Royalties	27.06
 2011	KS	Russell	20167	Oil & Gas		Rents	320
 2011	KS	Seward	20175	Oil & Gas		Other Revenues	-0.52
 2011	KS	Seward	20175	Oil & Gas		Other Royalties	144.89
@@ -659,7 +658,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2011	KS	Seward	20175	Gas	Unprocessed (Wet) Gas	Royalties	14840.42
 2011	KS	Seward	20175	NGL	Gas Plant Products	Royalties	10558.63
 2011	KS	Seward	20175	Oil	Oil	Royalties	1721.28
-2011	KS	Seward	20175	Helium	Helium	Royalties	5.59
 2011	KS	Sherman	20181	Oil & Gas		Rents	480
 2011	KS	Stanton	20187	Oil & Gas		Other Royalties	687.27
 2011	KS	Stanton	20187	Gas	Nitrogen	Royalties	6.66
@@ -674,6 +672,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2011	KS	Trego	20195	Oil	Oil	Royalties	20239.21
 2011	KS	Wilson	20205	Oil & Gas		Rents	45.97
 2011	KS	Woodson	20207	Oil & Gas		Rents	1035.53
+2011	KS		20	Helium	Helium	Royalties	32.65
 2012	KS	Cheyenne	20023	Oil & Gas		Rents	5862
 2012	KS	Comanche	20033	Oil & Gas		Other Royalties	-80.75
 2012	KS	Comanche	20033	Oil & Gas		Rents	660
@@ -739,7 +738,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2012	KS	Morton	20129	Oil	Condensate	Royalties	1334.41
 2012	KS	Morton	20129	Oil	Drip or Scrubber Condensate	Royalties	1.88
 2012	KS	Morton	20129	Oil	Oil	Royalties	1994901.46
-2012	KS	Morton	20129	Helium	Helium	Royalties	4.62
 2012	KS	Russell	20167	Oil & Gas		Rents	320
 2012	KS	Seward	20175	Oil & Gas		Other Revenues	-7.58
 2012	KS	Seward	20175	Oil & Gas		Other Royalties	421.25
@@ -749,7 +747,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2012	KS	Seward	20175	NGL	Gas Plant Products	Royalties	8902.89
 2012	KS	Seward	20175	Oil	Condensate	Royalties	380.08
 2012	KS	Seward	20175	Oil	Oil	Royalties	2816.55
-2012	KS	Seward	20175	Helium	Helium	Royalties	-0.89
 2012	KS	Sherman	20181	Oil & Gas		Rents	480
 2012	KS	Stanton	20187	Oil & Gas		Other Royalties	845.27
 2012	KS	Stanton	20187	Gas	Nitrogen	Royalties	4.34
@@ -766,6 +763,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2012	KS	Trego	20195	Oil	Oil	Royalties	25371.54
 2012	KS	Wilson	20205	Oil & Gas		Rents	61.29
 2012	KS	Woodson	20207	Oil & Gas		Rents	1380.71
+2012	KS		20	Helium	Helium	Royalties	3.73
 2013	KS	Barber	20007	Oil & Gas		Rents	80
 2013	KS	Cheyenne	20023	Oil & Gas		Bonus	24000
 2013	KS	Cheyenne	20023	Oil & Gas		Rents	6162
@@ -833,7 +831,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2013	KS	Morton	20129	NGL	Gas Plant Products	Royalties	399694.52
 2013	KS	Morton	20129	Oil	Condensate	Royalties	1411.55
 2013	KS	Morton	20129	Oil	Oil	Royalties	1640136.28
-2013	KS	Morton	20129	Helium	Helium	Royalties	-0.13
 2013	KS	Russell	20167	Oil & Gas		Rents	320
 2013	KS	Seward	20175	Oil & Gas		Other Revenues	-6.78
 2013	KS	Seward	20175	Oil & Gas		Other Royalties	60.5
@@ -843,7 +840,6 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2013	KS	Seward	20175	NGL	Gas Plant Products	Royalties	7545.81
 2013	KS	Seward	20175	Oil	Condensate	Royalties	121.46
 2013	KS	Seward	20175	Oil	Oil	Royalties	755.36
-2013	KS	Seward	20175	Helium	Helium	Royalties	-0.09
 2013	KS	Sherman	20181	Oil & Gas		Rents	480
 2013	KS	Stanton	20187	Oil & Gas		Other Royalties	-1132.49
 2013	KS	Stanton	20187	Gas	Nitrogen	Royalties	4.08
@@ -860,3 +856,4 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2013	KS	Trego	20195	Oil	Oil	Royalties	22187.24
 2013	KS	Wilson	20205	Oil & Gas		Rents	61.29
 2013	KS	Woodson	20207	Oil & Gas		Rents	1380.71
+2013	KS		20	Helium	Helium	Royalties	-0.22

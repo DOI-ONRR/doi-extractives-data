@@ -849,6 +849,16 @@ footer {
       position: absolute;
       right: 0;
     }
+    &.revenues-section-subpage-dyk-coal{
+      > div {
+        &:first-of-type {
+          background-color: #d54740;
+        }
+      }
+      .link-more-after {
+        color:white;
+      }
+    }
 
     @include respond-to(medium-up) {
       margin-top: 50%;

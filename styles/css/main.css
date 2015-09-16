@@ -3366,17 +3366,14 @@ footer {
     background-position: 0px -100px;
     background-size: 100%;
     margin-top: 0; }
-<<<<<<< 5245a214ddf38430c5baaaefbacb68e50b32b57a
+  .revenues-section-subpage-steps.rev-coal {
+    background: url(/img/revenues/rev-coal.png) no-repeat;
+    background-size: 100%; }
   .revenues-section-subpage-steps.renew-off {
     background: url(/img/revenues/renew-offshore.svg) no-repeat;
     background-position: 0px -100px;
     background-size: 100%;
     margin-top: 0; }
-=======
-  .revenues-section-subpage-steps.rev-coal {
-    background: url(/img/revenues/rev-coal.png) no-repeat;
-    background-size: 100%; }
->>>>>>> added bulk of content
   .revenues-section-subpage-steps .revenues-section-subpage-dyk {
     position: relative; }
     .revenues-section-subpage-steps .revenues-section-subpage-dyk p {
@@ -3393,6 +3390,10 @@ footer {
     .revenues-section-subpage-steps .revenues-section-subpage-dyk .link-more-after {
       position: absolute;
       right: 0; }
+    .revenues-section-subpage-steps .revenues-section-subpage-dyk.revenues-section-subpage-dyk-coal > div:first-of-type {
+      background-color: #d54740; }
+    .revenues-section-subpage-steps .revenues-section-subpage-dyk.revenues-section-subpage-dyk-coal .link-more-after {
+      color: white; }
     @media only screen and (min-width: 48em) {
       .revenues-section-subpage-steps .revenues-section-subpage-dyk {
         margin-top: 50%;

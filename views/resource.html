@@ -198,10 +198,11 @@
   var year, valuesByYear;
 
   var formatDollars = d3.format('$,');
+  var dataURL;
 
 {% if request.params.state %}
 
-  var dataURL = '/data/county/by-state/{{ request.params.state }}/resource-revenues.tsv';
+  dataURL = '/data/county/by-state/{{ request.params.state }}/resource-revenues.tsv';
   var regionField = 'FIPS';
   var pathSelector = '.counties path.feature';
   // FIXME: these should have the right IDs
@@ -209,7 +210,7 @@
 
 {% else %}
 
-  var dataURL = '/data/regional/resource-revenues.tsv';
+  dataURL = '/data/regional/resource-revenues.tsv';
   var regionField = 'Region';
   var pathSelector = 'path.feature';
   var featureId = dl.accessor('id');
@@ -219,6 +220,15 @@
 {% if request.params.datatype == 'revenue' %}
 
   var sumField = 'Revenue';
+  var aggregate = function(d) {
+    return d3.sum(d, dl.accessor(sumField));
+  };
+
+{% elif request.params.datatype == 'exports' %}
+
+  dataURL = '/data/state/exports-by-industry.tsv';
+  var regionField = 'State';
+  var sumField = 'Value';
   var aggregate = function(d) {
     return d3.sum(d, dl.accessor(sumField));
   };

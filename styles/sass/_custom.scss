@@ -938,8 +938,12 @@ footer {
     }
 
     .revenues-section-involved-participate {
-
       margin-bottom: 100px;
+
+      > div p {
+          margin-bottom: $base-padding-lite;
+      }
+
       > div:first-of-type {
         @include span-columns(8 of 12);
       }

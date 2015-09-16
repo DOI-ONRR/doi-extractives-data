@@ -3469,6 +3469,8 @@ footer {
         margin-right: 0; }
     .revenues-section-involved .revenues-section-involved-participate {
       margin-bottom: 100px; }
+      .revenues-section-involved .revenues-section-involved-participate > div p {
+        margin-bottom: 0.41667em; }
       .revenues-section-involved .revenues-section-involved-participate > div:first-of-type {
         float: left;
         display: block;

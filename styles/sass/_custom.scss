@@ -806,23 +806,31 @@ footer {
 }
 
 .revenues-section-subpage-steps {
-  
   background-position: 0px 100px;
   background-size: 100%;
   margin-top: $base-padding-large;
+
   &.renew-on {
     background: url(/img/revenues/renew-onshore.svg) no-repeat;
     background-position: 0px -100px;
     background-size: 100%;
     margin-top: 0;
+
   }
   &.offshore-oil{
     background: url(/img/revenues/offshore-oil.png) no-repeat;
+    background-position: 0px 100px;
+    background-size: 100%;
+    margin-top: $base-padding-large;
   }
+
   &.onshore-oil{
     background: url(/img/revenues/rev-onshore-oil.png) no-repeat;
+    background-position: 0px 100px;
     background-size: 100%;
+    margin-top: $base-padding-large;
   }
+
   .revenues-section-subpage-dyk {
     position: relative;
 
@@ -852,6 +860,7 @@ footer {
       margin-top: 50%;
       @include span-columns(2);
     }
+    
     &.revenues-section-subpage-dyk-onshore-oil{
       p {
         color: darken($dark-putty, 15%);

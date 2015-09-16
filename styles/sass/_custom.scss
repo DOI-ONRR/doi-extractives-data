@@ -815,6 +815,13 @@ footer {
     margin-top: 0;
   }
 
+  &.renew-off {
+    background: url(/img/revenues/renew-offshore.svg) no-repeat;
+    background-position: 0px -100px;
+    background-size: 100%;
+    margin-top: 0;
+  }
+
   .revenues-section-subpage-dyk {
     position: relative;
 

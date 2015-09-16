@@ -11,14 +11,11 @@
 
     <div class="revenues-subpage-nav">
       <ul>
-        {% set page = 'offshore' %}
-        <a onclick="changeResourcesPage('offshore')" href="#">
-          <li {%if(page == 'offshore') %}class="active"{% endif %}>Offshore</li>
-        </a>
-        <a onclick="changeResourcesPage('onshore')" href="#">
-          {{page}}
-          <li {%if(page == 'onshore') %}class="active"{% endif %}>Onshore</li>
-          </a>
+        <div>{{ page }}</div>
+        
+          <li class="revenues-subpage-nav-option" {%if(request.url == '/resource_revenues/offshore_oil_gas') %}class="active"{% endif %}>Offshore</li>
+
+          <li class="revenues-subpage-nav-option" {%if(request.url == '/resource_revenues/onshore_oil_gas') %}class="active"{% endif %}>Onshore</li>
       </ul>
     </div>
 
@@ -30,7 +27,7 @@
       {% endif %}
     </div>
 
-
+    
   </section>
 
   <div class="revenues-section-subpage-steps">
@@ -54,7 +51,7 @@
 
         <div>
           <h3>Rent</h3>
-          <p class="forms-numbers"><span>$1.50 &ndash; $44.00<br></span> per acre</p>
+          <p class="forms-numbers"><span>$1.50 &mdash; $44.00<br></span> per acre</p>
           <p>Rent is an annual payment made on leased land for the right to continue exploration and development of federal land for future production. Rent is set in the lease.</p>
         </div>
 
@@ -147,7 +144,7 @@
           </div>
 
         </div>
-
+        
       </div>
 
     </section>
@@ -173,5 +170,8 @@
 
 
 </div>
+
+
+
 
 {% endblock %}

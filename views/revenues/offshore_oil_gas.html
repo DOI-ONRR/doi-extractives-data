@@ -10,35 +10,25 @@
     </div>
 
     <div class="revenues-subpage-nav">
-      <ul>
-        {% set page = 'offshore' %}
-        <a onclick="changeResourcesPage('offshore')" href="#">
-          <li {%if(page == 'offshore') %}class="active"{% endif %}>Offshore</li>
-        </a>
-        <a onclick="changeResourcesPage('onshore')" href="#">
-          {{page}}
-          <li {%if(page == 'onshore') %}class="active"{% endif %}>Onshore</li>
+      <ul>        
+          <a href="/resource_revenues/offshore_oil_gas">
+            <li class="active">Offshore</li>
+          </a>
+          <a href="/resource_revenues/onshore_oil_gas">
+            <li>Onshore</li>
           </a>
       </ul>
     </div>
 
     <div>
-      {% if (request.url == '/resource_revenues/onshore_oil_gas') %}
-        {% include 'includes/revenues/onshore_oil_gas_intro.html' %}
-      {% elif (request.url == '/resource_revenues/offshore_oil_gas') %}
-        {% include 'includes/revenues/offshore_oil_gas_intro.html' %}
-      {% endif %}
+      {% include 'includes/revenues/offshore_oil_gas_intro.html' %}
     </div>
 
 
   </section>
 
-  <div class="revenues-section-subpage-steps">
-    {% if (request.url == '/resource_revenues/onshore_oil_gas') %}
-      {% include 'includes/revenues/onshore_oil_gas_steps.html' %}
-    {% elif (request.url == '/resource_revenues/offshore_oil_gas') %}
-      {% include 'includes/revenues/offshore_oil_gas_steps.html' %}
-    {% endif %}
+  <div class="revenues-section-subpage-steps offshore-oil">
+    {% include 'includes/revenues/offshore_oil_gas_steps.html' %}
   </div>
 
   <div class="revenues-section-forms revenues-section-forms-subpage">
@@ -174,24 +164,26 @@
 
 </div>
 
+
+
+
 {% endblock %}
 
 {% block script %}
 <script>
 (function() {
   console.log('click')
-  // page = 'offshore';
+  var page = 'offshore';
   // var window.page = 'offshore'
   var revenuesNavOption = document.getElementsByClassName("revenues-subpage-nav-option");
-  // console.log(page)
-  changeResourcesPage = function(page){
+
+  var changePage = function(page){
     page = page;
-    console.log(page)
+    console.log('page')
   }
-  // console.log(page,changePage)
   for (var i = 0; i < revenuesNavOption.length; i++) {
     console.log(revenuesNavOption)
-    // revenuesNavOption[i].addEventListener("click", changePage('brian'));
+    revenuesNavOption[i].addEventListener("click", changePage('brian'));
   };
 
 

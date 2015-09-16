@@ -10,32 +10,25 @@
     </div>
 
     <div class="revenues-subpage-nav">
-      <ul>
-        <div>{{ page }}</div>
-        
-          <li class="revenues-subpage-nav-option" {%if(request.url == '/resource_revenues/offshore_oil_gas') %}class="active"{% endif %}>Offshore</li>
-
-          <li class="revenues-subpage-nav-option" {%if(request.url == '/resource_revenues/onshore_oil_gas') %}class="active"{% endif %}>Onshore</li>
+      <ul>        
+          <a href="/resource_revenues/offshore_oil_gas">
+            <li>Offshore</li>
+          </a>
+          <a href="/resource_revenues/onshore_oil_gas">
+            <li class="active">Onshore</li>
+          </a>
       </ul>
     </div>
 
     <div>
-      {% if (request.url == '/resource_revenues/onshore_oil_gas') %}
-        {% include 'includes/revenues/onshore_oil_gas_intro.html' %}
-      {% elif (request.url == '/resource_revenues/offshore_oil_gas') %}
-        {% include 'includes/revenues/offshore_oil_gas_intro.html' %}
-      {% endif %}
+      {% include 'includes/revenues/onshore_oil_gas_intro.html' %}
     </div>
 
     
   </section>
 
-  <div class="revenues-section-subpage-steps">
-    {% if (request.url == '/resource_revenues/onshore_oil_gas') %}
-      {% include 'includes/revenues/onshore_oil_gas_steps.html' %}
-    {% elif (request.url == '/resource_revenues/offshore_oil_gas') %}
-      {% include 'includes/revenues/offshore_oil_gas_steps.html' %}
-    {% endif %}
+  <div class="revenues-section-subpage-steps onshore-oil">
+    {% include 'includes/revenues/onshore_oil_gas_steps.html' %}
   </div>
 
   <div class="revenues-section-forms revenues-section-forms-subpage">
@@ -51,14 +44,12 @@
 
         <div>
           <h3>Rent</h3>
-          <p class="forms-numbers"><span>$1.50 &mdash; $44.00<br></span> per acre</p>
-          <p>Rent is an annual payment made on leased land for the right to continue exploration and development of federal land for future production. Rent is set in the lease.</p>
+          <p>Rent is an annual payment made on leased land, for the exclusive right to apply to explore for and develop natural resources on federal land for future production. <span class="forms-light-blue">$1.50</span> per acre for the first five years, and <span class="forms-light-blue">$2.00</span> per acre thereafter.</p>
         </div>
 
         <div>
           <h3>Royalty</h3>
-          <p class="forms-numbers"><span>12.5%, 16.67%,</span> or <span>18.75%</span></p>
-          <p>A royalty is a percentage of the market value of the produced commodity.</p>
+          <p>A royalty is a payment determined by the percentage of the market value of the produced commodity. <span class="forms-light-blue">12.5%</span> onshore rate.</p>
         </div>
 
         <div>

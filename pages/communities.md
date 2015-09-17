@@ -103,7 +103,7 @@ permalink: /communities/
       <nav>
 
         <ul>
-          <li class="communities-nav-item active intro"><a name="intro" href="#intro">Introduction</a></li>
+          <li class="communities-nav-item active intro"><a name="#intro" href="#intro">Introduction</a></li>
           <li class="communities-nav-item reven"><a href="#reven">Revenue Sustainability</a></li>
           <li class="communities-nav-item county-rev"><a href="#county-rev">Revenues</a></li>
           <li class="communities-nav-item county-cos"><a href="#county-cos">Costs</a></li>

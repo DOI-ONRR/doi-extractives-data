@@ -119,4 +119,3 @@ permalink: /communities/
 </div>
 
 <script src="/js/pages/communities.js"></script>
-

@@ -47,7 +47,7 @@
         <img src="/img/gold.png" alt="goal inguts">
         <img src="/img/copper.png" alt="copper penny" class="copper">
         <img src="/img/iron.png" alt="iron ore" class="iron">
-        <a name="intro">Six commodities</a>
+        <a class="communities-section" name="intro">Six commodities</a>
       </h3>
 
       <h2>Twelve county narratives</h2>
@@ -65,7 +65,7 @@
 
       <h3>Or, read more about how to interpret these studies:</h3>
 
-      <h3><a name="reven">Revenue Sustainability</a></h3>
+      <h3><a class="communities-section" name="reven">Revenue Sustainability</a></h3>
 
       <p>Local governments and communities must consider the many ways natural resource management and extraction can affect their fiscal health. One of the most significant considerations is the sustainability of the revenues local governments receive due to natural resource extraction. Multiple EITI guiding principles reference revenue sustainability as a critical factor in making natural resource wealth <a href="#eiti-engine" aria-describedby="footnote-label" id="footnotes-ref">&ldquo;an engine for sustainable economic growth.&rdquo;</a> However, when it comes to managing this critical factor, there are two challenges localities need to address:</p>
 
@@ -76,7 +76,7 @@
 
       <p>Each county narrative provides historical context, commodity production rates, employment levels, revenues generated from production, and—where publically available from a government source—local public fiscal costs stemming from extraction (specifically, transportation/roads, water, reclamation, and emergency services).</p>
 
-      <h3><a name="county-rev">Community Revenues</a></h3>
+      <h3><a name="county-rev" class="communities-section">Community Revenues</a></h3>
 
       <p>At the county level, revenues received from extractive activities take many forms. For example, some payments originate from taxes on land ownership, while others are based on ownership of the natural resource itself. There are also different methods of valuation, ranging from payments at the point-of-sale, to annual taxes, to those based on an estimated value. For the purposes of this report, the four most common categories are: property taxes, sales and use taxes, state transfer payments, and additional production taxes.</p>
 
@@ -87,7 +87,7 @@
         <li><strong>County production taxes.</strong> Severance taxes or other payments paid by extractive industries to the county based on the volume or value of resources extracted, or per lease terms if the county is the landowner.</li>
       </ul>
 
-      <h3><a name="county-cos">Community Costs</a></h3>
+      <h3><a name="county-cos" class="communities-section">Community Costs</a></h3>
 
       <p>More often than not, local governments must also make financial investments in their communities to support the extractive industries. These can vary based on the size of the community, the state of its current infrastructure, and the type of natural resources extracted (e.g., coal mining vs. natural gas drilling). <a href="#local-gov-costs-rev" aria-describedby="footnote-label" id="footnotes-ref">In some circumstances, these costs are outweighed by the influx of revenues, while in other cases costs can result in net negative fiscal effects on local governments.</a> Given these possibilities and considerations, these case studies focus on four types of fiscal costs at the local level:</p>
 
@@ -100,7 +100,7 @@
 
       <p>There are additional fiscal benefits and burdens associated with extractive activities than those addressed in this report. For example, a local government may receive in-kind revenues from the extractive industries, such as payment for a new public road that company employees will also use to access work sites. Another fiscal cost may be the additional government staff needed to manage growing public services required to support extractive activities. While all are worthy of careful consideration by local communities and governments, this year’s report begins this discussion by focusing on the revenues and costs as defined above.</p>
 
-      <h3><a name="data">Where We Got Our Data</a></h3>
+      <h3><a name="data" class="communities-section">Where We Got Our Data</a></h3>
 
       <p>This work used a range of publically-available online information to write these community case studies, including government databases, documents, and reports, as well as those produced by government councils. They integrate data and analysis already reported elsewhere by government bodies. Local data sources were prioritized, and data was collected and presented at the most granular level available. For example, state information took the place of county information when the latter was not available.</p>
 
@@ -130,11 +130,11 @@
       <nav>
 
         <ul>
-          <li class="communities-nav-item active"><a name="intro" href="#intro">Introduction</a></li>
-          <li class="communities-nav-item"><a href="#reven">Revenue Sustainability</a></li>
-          <li class="communities-nav-item"><a href="#county-rev">Revenues</a></li>
-          <li class="communities-nav-item"><a href="#county-cos">Costs</a></li>
-          <li class="communities-nav-item"><a href="#data">Our Data</a></li>
+          <li class="communities-nav-item active" id="intro"><a name="intro" href="#intro">Introduction</a></li>
+          <li class="communities-nav-item" id="reven"><a href="#reven">Revenue Sustainability</a></li>
+          <li class="communities-nav-item" id="county-rev"><a href="#county-rev">Revenues</a></li>
+          <li class="communities-nav-item" id="county-cos"><a href="#county-cos">Costs</a></li>
+          <li class="communities-nav-item" id="data"><a href="#data">Our Data</a></li>
         </ul>
 
       </nav>
@@ -151,14 +151,15 @@
 {% block script %}
 <script>
   (function() {
-    var scrollLeft, scrollTop;
+    var scrollLeft, 
+      scrollTop, 
+      sections;
     var findScrollPositions = function(){
       scrollLeft = (window.pageXOffset !== undefined) ? window.pageXOffset : (document.documentElement || document.body.parentNode || document.body).scrollLeft;
       scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
     };
     var communitiesContent = document.getElementsByClassName("communities-content")[0];
     var csn = document.getElementsByClassName("communities-sticky-nav")
-    var child = csn
     
 
 
@@ -168,38 +169,66 @@
         communitiesNavItems[i].classList.remove('active');
       }
     }
-    var addActive = function(){
-      console.log('add active')
+    var addActive = function(name){
       var communitiesNavItems = document.getElementsByClassName("communities-nav-item")
+      console.log(name)
+      if (name){
+        removeActive();
+        var navItem = document.querySelector(('#'+name))
+        console.log(name)
+        navItem.classList.add('active');
+      }
+      console.log('add active')
+      
       for (var i = 0; i < communitiesNavItems.length; i++) {
         var item = communitiesNavItems[i];
         item.addEventListener('click', function () {
-          console.log('click')
           removeActive()
-           this.classList.add('active');
+          this.classList.add('active');
         });
       }
     }
-    window.onload = function(){
-      addActive()
+
+    
+    var setPageSections = function(){
+      var communitiesSections = document.getElementsByClassName("communities-section"),
+        sections = [];
+      for (var i = 0; i < communitiesSections.length; i++) {
+        console.log(communitiesSections)
+        var section = communitiesSections[i];
+        console.log('section',section.offsetTop, section.getAttribute('name'))
+        console.log(window)
+        sections.push({
+          name : section.getAttribute('name'),
+          top : section.offsetTop
+        })
+      }
+      return sections;
     }
-    
-    
+    sections = setPageSections();
+    var chooseNavByScroll = function(){
+      // var communitiesSections = document.getElementsByClassName("communities-section"),
+      console.log(sections)
+      for (var i = 0; i < sections.length; i++) {
+        var section = sections[i];
+        // hack to default to 'intro'
+        if(scrollTop > section.top){
+          addActive(section.name);
+        }
+      }
+    }
+    // chooseNavByScroll()
 
-
+    window.onload = function(){
+      addActive();    
+      sections = setPageSections();
+    }
 
     var setStickyPos = function () {
       var stickyNav = document.getElementsByClassName("communities-sticky-nav")[0],
           ccOffsetTop = communitiesContent.offsetTop;
-      // console.log(csn, communitiesNavItems, communitiesNavItems[0])
       addActive()
 
-      // for (var i = 0; i < communitiesNavItems.length; i++) {
-      //   item = communitiesNavItems[i];
-      //   console.log(item)
-      //   var href = item.getAttribute('href')
-      //   console.log(href)
-      // };
         
       // scrollDifference is the difference in height between the location of the top of the window and the top of the 'communities-content' div
       var scrollDifference = scrollTop - ccOffsetTop;
@@ -230,6 +259,7 @@
     window.onscroll = function() {
         findScrollPositions();
         setStickyPos();
+        chooseNavByScroll();
     };
   })();
 </script>

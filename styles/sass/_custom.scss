@@ -842,6 +842,14 @@ footer {
     background: url(/img/revenues/rev-coal.png) no-repeat;
     background-position: 0 100px;
     background-size: 100%;
+    padding-bottom: 100px; //TODO remove. This is set to look good for the screen size for our presentation.
+  }
+
+  &.rev-hardrock{
+    background: url(/img/revenues/rev-hardrock.svg) no-repeat;
+    background-position: 0 100px;
+    background-size: 100%;
+    padding-bottom: 230px; //TODO remove. This is set to look good for the screen size for our presentation.
   }
 
   .revenues-section-subpage-dyk {

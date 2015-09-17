@@ -208,13 +208,14 @@ footer {
     }
 
     li {
-      padding-bottom: 8px;
+      line-height: 1.3;
+      padding-right: 15px;
+      padding-bottom: 15px;
     }
   }
 
   .footer-col {
     @include span-columns(3);
-    border-right: 1px solid $mid-gray;
     margin-top: $base-padding;
 
     &:first-of-type {

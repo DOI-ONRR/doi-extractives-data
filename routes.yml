@@ -25,6 +25,8 @@
   view: revenues/onshore_renewables
 /resource_revenues/offshore_renewables:
   view: revenues/offshore_renewables
+/resource_revenues/hardrock:
+  view: revenues/hardrock
 
 
 

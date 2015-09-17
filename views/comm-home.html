@@ -171,14 +171,11 @@
     }
     var addActive = function(name){
       var communitiesNavItems = document.getElementsByClassName("communities-nav-item")
-      console.log(name)
       if (name){
         removeActive();
         var navItem = document.querySelector(('#'+name))
-        console.log(name)
         navItem.classList.add('active');
       }
-      console.log('add active')
       
       for (var i = 0; i < communitiesNavItems.length; i++) {
         var item = communitiesNavItems[i];
@@ -194,10 +191,7 @@
       var communitiesSections = document.getElementsByClassName("communities-section"),
         sections = [];
       for (var i = 0; i < communitiesSections.length; i++) {
-        console.log(communitiesSections)
         var section = communitiesSections[i];
-        console.log('section',section.offsetTop, section.getAttribute('name'))
-        console.log(window)
         sections.push({
           name : section.getAttribute('name'),
           top : section.offsetTop
@@ -207,8 +201,7 @@
     }
     sections = setPageSections();
     var chooseNavByScroll = function(){
-      // var communitiesSections = document.getElementsByClassName("communities-section"),
-      console.log(sections)
+
       for (var i = 0; i < sections.length; i++) {
         var section = sections[i];
         // hack to default to 'intro'
@@ -217,7 +210,6 @@
         }
       }
     }
-    // chooseNavByScroll()
 
     window.onload = function(){
       addActive();    

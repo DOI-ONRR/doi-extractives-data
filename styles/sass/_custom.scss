@@ -806,36 +806,42 @@ footer {
 }
 
 .revenues-section-subpage-steps {
-  background-position: 0px 100px;
+  background-position: 0 100px;
   background-size: 100%;
   margin-top: $base-padding-large;
 
   &.onshore-oil{
     background: url(/img/revenues/rev-onshore-oil.png) no-repeat;
-    background-position: 0px 100px;
+    background-position: 0 100px;
     background-size: 100%;
     margin-top: $base-padding-large;
   }
 
   &.offshore-oil{
     background: url(/img/revenues/offshore-oil.png) no-repeat;
-    background-position: 0px 100px;
+    background-position: 0 100px;
     background-size: 100%;
     margin-top: $base-padding-large;
   }
 
   &.renew-on {
     background: url(/img/revenues/renew-onshore.svg) no-repeat;
-    background-position: 0px 20px;
+    background-position: 0 20px;
     background-size: 100%;
     margin-top: 0;
   }
 
   &.renew-off {
     background: url(/img/revenues/renew-offshore.svg) no-repeat;
-    background-position: 0px -150px;
+    background-position: 0 -150px;
     background-size: 100%;
     margin-top: 0;
+  }
+
+  &.rev-coal{
+    background: url(/img/revenues/rev-coal.png) no-repeat;
+    background-position: 0 100px;
+    background-size: 100%;
   }
 
   .revenues-section-subpage-dyk {
@@ -857,10 +863,19 @@ footer {
         border-radius: 0 0 $base-border-radius $base-border-radius;
       }
     }
-
     .link-more-after {
       position: absolute;
       right: 0;
+    }
+    &.revenues-section-subpage-dyk-coal{
+      > div {
+        &:first-of-type {
+          background-color: #d54740;
+        }
+      }
+      .link-more-after {
+        color:white;
+      }
     }
 
     @include respond-to(medium-up) {
@@ -907,11 +922,20 @@ footer {
       }
     }
 
-    p {
+    p, ul{
       padding-right: $base-padding;
       padding-bottom: $base-padding;
       padding-left: 60px;
     }
+
+    ul{
+      list-style-type: disc;
+      padding-left: 80px;
+      li{
+        padding: 0;
+      }
+    }
+
     @include respond-to(medium-up) {
       @include span-columns(7);
       @include shift(3);

@@ -801,16 +801,32 @@ footer {
 .revenues-section-subpage-steps-wrapper {
   background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPgo8bGluZWFyR3JhZGllbnQgaWQ9Imc0NjQiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMTAwJSI+CjxzdG9wIHN0b3AtY29sb3I9IiNmNGY0ZjQiIG9mZnNldD0iMCIvPjxzdG9wIHN0b3AtY29sb3I9IiNCOUUzRjkiIG9mZnNldD0iMSIvPgo8L2xpbmVhckdyYWRpZW50Pgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2c0NjQpIiAvPgo8L3N2Zz4=);
 }
+.forms-light-blue{
+  color: $blue;
+}
 
 .revenues-section-subpage-steps {
-  background: url(/img/revenues/offshore-oil.png) no-repeat;
   background-position: 0px 100px;
   background-size: 100%;
   margin-top: $base-padding-large;
 
+  &.onshore-oil{
+    background: url(/img/revenues/rev-onshore-oil.png) no-repeat;
+    background-position: 0px 100px;
+    background-size: 100%;
+    margin-top: $base-padding-large;
+  }
+
+  &.offshore-oil{
+    background: url(/img/revenues/offshore-oil.png) no-repeat;
+    background-position: 0px 100px;
+    background-size: 100%;
+    margin-top: $base-padding-large;
+  }
+
   &.renew-on {
     background: url(/img/revenues/renew-onshore.svg) no-repeat;
-    background-position: 0px -100px;
+    background-position: 0px 20px;
     background-size: 100%;
     margin-top: 0;
   }
@@ -821,7 +837,7 @@ footer {
 
   &.renew-off {
     background: url(/img/revenues/renew-offshore.svg) no-repeat;
-    background-position: 0px -100px;
+    background-position: 0px -150px;
     background-size: 100%;
     margin-top: 0;
   }
@@ -864,6 +880,20 @@ footer {
       margin-top: 50%;
       @include span-columns(2);
     }
+
+    &.revenues-section-subpage-dyk-onshore-oil{
+      p {
+        color: darken($dark-putty, 15%);
+      }
+      > a {
+        color: white;
+      }
+      > div {
+        &:first-of-type {
+          background-color: #7f6e61;
+        }
+      }
+    }
   }
 
   .revenues-steps-group {
@@ -895,6 +925,7 @@ footer {
       padding-bottom: $base-padding;
       padding-left: 60px;
     }
+
     ul{
       list-style-type: disc;
       padding-left: 80px;

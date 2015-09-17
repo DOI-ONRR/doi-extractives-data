@@ -130,7 +130,7 @@
       <nav>
 
         <ul>
-          <li class="communities-nav-item active intro"><a name="intro" href="#intro">Introduction</a></li>
+          <li class="communities-nav-item active intro"><a name="#intro" href="#intro">Introduction</a></li>
           <li class="communities-nav-item reven"><a href="#reven">Revenue Sustainability</a></li>
           <li class="communities-nav-item county-rev"><a href="#county-rev">Revenues</a></li>
           <li class="communities-nav-item county-cos"><a href="#county-cos">Costs</a></li>
@@ -169,20 +169,20 @@
       }
     }
     var addActive = function(name){
-      var communitiesNavItems = document.getElementsByClassName("communities-nav-item")
       if (name){
         removeActive();
         var navItem = document.querySelector(('.'+name));
         navItem.classList.add('active');
       }
-      
-      for (var i = 0; i < communitiesNavItems.length; i++) {
-        var item = communitiesNavItems[i];
-        item.addEventListener('click', function () {
-          removeActive();
-          this.classList.add('active');
-        });
-      }
+    }
+
+    var communitiesNavItems = document.getElementsByClassName("communities-nav-item");
+    for (var i = 0; i < communitiesNavItems.length; i++) {
+      var item = communitiesNavItems[i];
+      item.addEventListener('click', function () {
+        removeActive();
+        this.classList.add('active');
+      });
     }
 
     
@@ -193,8 +193,8 @@
         var section = communitiesSections[i];
         sections.push({
           name : section.getAttribute('name'),
-          top : section.offsetTop
-        })
+          top : section.offsetTop - section.offsetHeight + communitiesContent.offsetTop
+        });
       }
       return sections;
     }
@@ -203,22 +203,15 @@
 
       for (var i = 0; i < sections.length; i++) {
         var section = sections[i];
-        // hack to default to 'intro'
-        if(scrollTop > section.top){
+        if(scrollTop >= section.top){
           addActive(section.name);
         }
       }
     }
 
-    window.onload = function(){
-      addActive();    
-    }
-
     var setStickyPos = function () {
       var stickyNav = document.getElementsByClassName("communities-sticky-nav")[0],
           ccOffsetTop = communitiesContent.offsetTop;
-
-      addActive();
 
       // scrollDifference is the difference in height between the location of the top of the window and the top of the 'communities-content' div
       var scrollDifference = scrollTop - ccOffsetTop;
@@ -249,8 +242,12 @@
     window.onscroll = function() {
         findScrollPositions();
         setStickyPos();
-        // chooseNavByScroll();
+        chooseNavByScroll();
     };
+    window.onresize = function(){
+      sections = setPageSections();
+      chooseNavByScroll();
+    }
   })();
 </script>
 {% endblock %}

@@ -190,31 +190,40 @@ footer {
       margin-bottom: 1em;
     }
 
-    + p {
-      @include font-size($h3);
-      margin-bottom: $base-padding-extra;
-    }
-
     + h3 {
       padding-top: $base-padding-large;
     }
   }
 
-  .footer-col-left {
-    @include span-columns(8);
+  ul {
+    font-weight: 200;
+
+    a {
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
+    }
+
+    li {
+      padding-bottom: 8px;
+    }
+  }
+
+  .footer-col {
+    @include span-columns(3);
+    border-right: 1px solid $mid-gray;
+    margin-top: $base-padding;
+
+    &:first-of-type {
+      @include span-columns(2);
+    }
   }
 
   .footer-col-right {
     @include span-columns(4);
-    @include omega();
-  }
-
-  .footer-col-inner-left {
-    @include span-columns(5 of 8);
-  }
-
-  .footer-col-inner-right {
-    @include span-columns(3 of 8);
     @include omega();
   }
 }

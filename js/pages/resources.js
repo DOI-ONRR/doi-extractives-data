@@ -27,21 +27,33 @@ var ResourceRouter = Backbone.Router.extend({
    * @param Object options
    */
   initialize: function(options) {
-    this.options = options || {};
+    this.options = options = _.defaultsDeep(options || {}, {
+      root: '#resources',
+      inputs: {
+        resource:   '#resource-selector',
+        datatype:   '#datatype-selector',
+        region:     '#region-selector',
+        subregion:  '#subregion-selector',
+        year:       '#year-slider',
+      }
+    });
 
-    this.resourceSelector = document.querySelector('#resource-selector');
+    this.root = document.querySelector(options.root);
+    if (!this.root) throw new Error('no such root element: "' + this.options.root + '"');
+
+    this.resourceSelector = this.root.querySelector(options.inputs.resource);
     this.resourceSelector.addEventListener('change', this.onResourceChange.bind(this));
 
-    this.regionSelector = document.querySelector('#region-selector');
+    this.regionSelector = this.root.querySelector(options.inputs.region);
     this.regionSelector.addEventListener('change', this.onRegionChange.bind(this));
 
-    this.dataTypeSelector = document.querySelector('#datatype-selector');
+    this.dataTypeSelector = this.root.querySelector(options.inputs.datatype);
     this.dataTypeSelector.addEventListener('change', this.onDataTypeChange.bind(this));
 
-    this.subregionSelector = document.querySelector('#subregion-selector');
+    this.subregionSelector = this.root.querySelector(options.inputs.subregion);
     this.subregionSelector.addEventListener('change', this.onSubregionChange.bind(this));
 
-    this.yearSlider = document.querySelector('#year-slider');
+    this.yearSlider = this.root.querySelector(options.inputs.year);
     this.yearSlider.addEventListener('change', this.onYearChange.bind(this));
   },
 
@@ -70,7 +82,7 @@ var ResourceRouter = Backbone.Router.extend({
     if (params.year) {
       url += '?year=' + params.year;
     }
-    this.navigate(url);
+    this.navigate(url, {trigger: true});
   },
 
   /**
@@ -162,6 +174,7 @@ var ResourceRouter = Backbone.Router.extend({
 
     // request new subregions if there's a "region" param
     if (params.region) {
+      // TODO: show the selector
 
       var selector = d3.select(this.subregionSelector);
       var options = selector.selectAll('option.subregion');
@@ -193,6 +206,9 @@ var ResourceRouter = Backbone.Router.extend({
 
         selector.property('value', params.subregion);
       });
+
+    } else {
+      // TODO: hide the selector
     }
   },
 

@@ -20,7 +20,9 @@ permalink: /resources/
       <form>
         <!-- region "{{ region|jsonify }}" -->
         <label>
-          {{ assign location_selector_id = 'resources-location' }}
+          {% assign location_selector_id = 'region-selector' %}
+          {% assign location_selector_none_value = 'US' %}
+          {% assign location_selector_none = 'All US' %}
           {% include location_selector.html %}
         </label>
       </form>
@@ -51,7 +53,7 @@ permalink: /resources/
 
           <div class="group_inline-right">
             <form>
-              <select name="datatype">
+              <select id="datatype-selector" name="datatype">
                 <option value="revenue">Revenues</option>
                 <option disabled value="production">Production</option>
                 <option value="exports">Exports</option>

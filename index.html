@@ -12,7 +12,7 @@ layout: default
       <h2>Choose a natural resource to learn more</h2>
 
       <ul>
-        {% for group in resources.groups %}
+        {% for group in site.data.resources.groups %}
           <a href="/resources/{{ group[0] }}"><li class="product-{{ group[0] }}">{{ group[1] }}</li></a>
         {% endfor %}
       </ul>

@@ -5,7 +5,6 @@ sass:
 
 exclude:
 - bin
-- data
 - lib
 - node_modules
 - package.json

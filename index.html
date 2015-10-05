@@ -13,7 +13,7 @@ layout: default
 
       <ul>
         {% for group in site.data.resources.groups %}
-          <a href="/resources/{{ group[0] }}"><li class="product-{{ group[0] }}">{{ group[1] }}</li></a>
+          <a href="/resources/#{{ group[0] }}"><li class="product-{{ group[0] }}">{{ group[1] }}</li></a>
         {% endfor %}
       </ul>
 
@@ -33,7 +33,8 @@ layout: default
 
         <form>
           <label>Choose a location
-            TODO
+            {% assign location_selector_url_prefix = '/locations/' %}
+            {% include location_selector.html %}
           </label>
         </form>
 

@@ -91,7 +91,7 @@ a {
 }
 
 @each $name, $value in $colors {
-  .product-#{$name} {
+  .product-#{'' + $name} {
     background-color: $value;
     box-shadow: inset 0 0 4px $value;
     -webkit-font-smoothing: antialiased;
@@ -999,7 +999,7 @@ footer {
   }
 
   .fa-stack {
-    @extend .light-on-dark;
+    // @extend .light-on-dark;
     color: $cobalt;
     line-height: 2.1em;
   }
@@ -1234,7 +1234,7 @@ footer {
 //============================================
 
 @each $name, $value in $guide-colors {
-  .guide-#{$name} {
+  .guide-#{'' + $name} {
     background-color: $value;
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: grayscale;

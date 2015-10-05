@@ -1,4 +1,6 @@
-<select onchange="window.location = '{{ location_selector_url_prefix }}' + this.value"
+<select
+  id="{{ location_selector_id }}"
+  onchange="window.location = '{{ location_selector_url_prefix }}' + this.value"
   data-selected="{{ location_selector_selected }}">
   {% if location_selector_none %}<option value="">{{ location_selector_none }}</option>{% endif %}
   <optgroup label="States">

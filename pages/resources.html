@@ -10,11 +10,12 @@ permalink: /resources/
 
     <div class="map-left">
       <form>
-        {% raw %}
-        <!-- resource: "{{ resource|jsonify }}" -->
-        {% set resource_url_template = request.url.replace(resource.slug, '@') %}
-        {{ url_selector(resources.groups, resource_url_template, resource.slug, none_option=['all', 'All']) }}
-        {% endraw %}
+        <select id="resource-selector">
+          <option value="all">All Resources</option>
+          {% for group in site.data.resources.groups %}
+          <option value="{{ group[0] }}">{{ group[1] }}</option>
+          {% endfor %}
+        </select>
       </form>
 
       <form>
@@ -28,16 +29,11 @@ permalink: /resources/
       </form>
 
 
-      <form class="counties">
+      <form class="subregions">
         <label>
-          {% raw %}
-          {% set county_url_template = location_prefix_url + 'onshore/' + request.params.state + '/@' %}
-          {{ url_selector(counties,
-              county_url_template,
-              selected=request.params.county,
-              none_option=['', 'No county'],
-              access=['FIPS', 'name']) }}
-          {% endraw %}
+          <select id="subregion-selector">
+            <option value="">All</option>
+          </select>
         </label>
       </form>
 

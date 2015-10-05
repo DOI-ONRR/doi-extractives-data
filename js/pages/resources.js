@@ -55,6 +55,8 @@ var ResourceRouter = Backbone.Router.extend({
 
     this.yearSlider = this.root.querySelector(options.inputs.year);
     this.yearSlider.addEventListener('change', this.onYearChange.bind(this));
+
+    this.params = {};
   },
 
   /**
@@ -106,13 +108,18 @@ var ResourceRouter = Backbone.Router.extend({
       arguments[arguments.length - 1] = null;
     }
 
-    var params = {
-      resource: resource || 'all',
-      datatype: datatype || 'revenue',
-      regiontype: regiontype || 'US',
+    var params = _.defaults({
+      resource: resource,
+      datatype: datatype,
+      regiontype: regiontype,
       region: region,
       subregion: subregion
-    };
+    }, {
+      resource: 'all',
+      datatype: 'revenue',
+      regiontype: 'US',
+      year: this.yearSlider.value
+    });
 
     if (query) {
       params = _.extend(params, query);
@@ -325,3 +332,10 @@ var ResourceRouter = Backbone.Router.extend({
 // kick off the router
 var router = new ResourceRouter();
 Backbone.history.start();
+if (!location.hash) {
+  router.navigateToParameters({
+    resource: 'all',
+    datatype: 'revenue',
+    regiontype: 'US'
+  });
+}

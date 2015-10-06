@@ -29,7 +29,9 @@
      */
     initialize: function(options) {
       this.options = options = _.defaultsDeep(options || {}, {
+        dataPath: '/data',
         root: '#resources',
+        map: '#region-map',
         inputs: {
           resource:   '#resource-selector',
           datatype:   '#datatype-selector',
@@ -39,23 +41,25 @@
         }
       });
 
-      this.root = document.querySelector(options.root);
+      var root = this.root = document.querySelector(options.root);
       if (!this.root) throw new Error('no such root element: "' + this.options.root + '"');
 
-      this.resourceSelector = this.root.querySelector(options.inputs.resource);
+      this.resourceSelector = root.querySelector(options.inputs.resource);
       this.resourceSelector.addEventListener('change', this.onResourceChange.bind(this));
 
-      this.regionSelector = this.root.querySelector(options.inputs.region);
+      this.regionSelector = root.querySelector(options.inputs.region);
       this.regionSelector.addEventListener('change', this.onRegionChange.bind(this));
 
-      this.dataTypeSelector = this.root.querySelector(options.inputs.datatype);
+      this.dataTypeSelector = root.querySelector(options.inputs.datatype);
       this.dataTypeSelector.addEventListener('change', this.onDataTypeChange.bind(this));
 
-      this.subregionSelector = this.root.querySelector(options.inputs.subregion);
+      this.subregionSelector = root.querySelector(options.inputs.subregion);
       this.subregionSelector.addEventListener('change', this.onSubregionChange.bind(this));
 
-      this.yearSlider = this.root.querySelector(options.inputs.year);
+      this.yearSlider = root.querySelector(options.inputs.year);
       this.yearSlider.addEventListener('change', this.onYearChange.bind(this));
+
+      this.map = root.querySelector(options.map);
 
       this.params = {};
     },
@@ -71,9 +75,9 @@
     navigateToParameters: function(params) {
       params = _.extend(this.params, params);
       var path = [
-        params.resource || 'all',
-        params.datatype || 'revenue',
-        params.regiontype || 'US'
+        params.resource,
+        params.datatype,
+        params.regiontype,
       ];
       if (params.region) {
         path.push(params.region);
@@ -148,7 +152,88 @@
         this.yearSlider.value = +params.year;
       }
 
+      this.updateMap(params);
+
       this._updating = false;
+    },
+
+    /**
+     * Update the map.
+     * @param Object params
+     */
+    updateMap: function(params) {
+      var map = this.map;
+
+      var featureId = null;
+      switch (params.regiontype) {
+        case 'onshore':
+        case 'offshore':
+          featureId = params.region;
+          break;
+      }
+
+      onMapLoaded(map, function() {
+        map.zoomTo(featureId);
+      });
+
+      var url = this.getDataURL(params);
+      console.log('loading data from:', url);
+
+      if (this.dataRequest) {
+        this.dataRequest.abort();
+      }
+
+      var that = this;
+      this.dataRequest = eiti.load(url, function(error, data) {
+        that.dataRequest = null;
+
+        if (error) {
+          return console.error('unable to load data from %s:', url, error.responseText);
+        }
+
+        console.warn('loaded data:', data);
+        onMapLoaded(map, function() {
+          // TODO: display some data!
+        });
+      });
+    },
+
+    /**
+     * Get the URL of the relevant data file for a given set of parameters.
+     * @param Object params
+     * @return String the data URL
+     */
+    getDataURL: function(params) {
+      var path = [
+        this.options.dataPath
+      ];
+
+      switch (params.regiontype) {
+        case 'onshore':
+          path.push('county', 'by-state', params.region);
+          break;
+
+        case 'offshore':
+          // FIXME: make sure these data files exist
+          path.push('offshore');
+          break;
+
+        default:
+          path.push('regional');
+          break;
+      }
+
+      switch (params.datatype) {
+        case 'revenue':
+          path.push('resource-revenues.tsv');
+          break;
+
+        default:
+          // FIXME: vary by datatype
+          break;
+      }
+
+      return path.join('/');
     },
 
     /**
@@ -202,7 +287,10 @@
 
         console.log('loading subregions:', subregionURL);
 
-        this.subregionRequest = d3.tsv(subregionURL, function(error, subregions) {
+        var that = this;
+        this.subregionRequest = eiti.load(subregionURL, function(error, subregions) {
+          that.subregionRequest = null;
+
           if (error) {
             return console.error('unable to load subregions:', error.responseText);
           }
@@ -351,5 +439,18 @@
   }
 
   exports.router = router;
+
+  function onMapLoaded(map, callback) {
+    if (map.loaded) {
+      return callback(map);
+    } else {
+      var onload;
+      map.addEventListener('load', onload = function(e) {
+        map.removeEventListener('load', onload);
+        map.loaded = true;
+        callback(map);
+      });
+    }
+  }
 
 })(this);

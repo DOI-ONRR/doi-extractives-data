@@ -1,7 +1,6 @@
 ---
-
+# Jekyll frontmatter
 ---
-
 (function(exports) {
 
   /**
@@ -221,7 +220,7 @@
     * @param Object params
     * @return void
     */
-    loadData: function(params){
+    loadData: function(params) {
       var url = this.getDataURL(params);
 // 
       var that = this;
@@ -249,7 +248,7 @@
         this.options.dataPath
       ];
 
-      if (params.subregion){
+      if (params.subregion) {
         switch (params.datatype) {
           case 'revenue':
             switch (params.regiontype) {
@@ -306,27 +305,28 @@
     findDataMatch: function(data, params) {
       params = params || this.params;
       console.warn('behold, your data: ', data);
-      params.year = (params.year).toString();
-      var that = this, ensureMatch = function(params){
-        if (this.currentDataMatch){
+
+      params.year = String(params.year);
+      var that = this;
+      var ensureMatch = function(params) {
+        if (this.currentDataMatch) {
           console.warn('matching data: ', this.currentDataMatch)
           that.updateOutputs(params);
-
         } else {
           console.warn('no available ' + params.datatype +  ' data')
           that.updateOutputs(params);
         }
       }
 
-      if (params.region && params.resource && params.year && params.datatype == 'revenue'){
-        if (!params.subregion){
+      if (params.region && params.resource && params.year && params.datatype == 'revenue') {
+        if (!params.subregion) {
           this.currentDataMatch = _.findWhere(data, {
             "Region": params.region,
             "Resource": params.resource,
             "Year": params.year
           });
           
-        } else if (params.subregion){
+        } else if (params.subregion) {
           this.currentDataMatch = _.findWhere(data, {
             "State": params.region,
             "County": params.subregion,
@@ -336,7 +336,7 @@
         }
         ensureMatch(params);
       } else {
-        if (!params.subregion){
+        if (!params.subregion) {
           this.currentDataMatch = _.findWhere(data, {
             "State": params.region,
             "Resource": params.resource,
@@ -362,7 +362,6 @@
      * @return void
      */
     updateSelectors: function(params) {
-
       this.updateResourceSelector(params);
       this.updateRegionSelector(params);
       this.updateDataTypeSelector(params);
@@ -551,8 +550,8 @@
      * @return void
      */
     displayNumericalTotal: function(params) {
-      if (params){
-        switch (params.datatype){
+      if (params) {
+        switch (params.datatype) {
           case 'revenue':
             this.displayNumericalTotalEl.innerHTML = this.currentDataMatch 
               ? '$' + this.currentDataMatch.Revenue

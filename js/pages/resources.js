@@ -161,14 +161,14 @@
     update: function(params) {
       this._updating = true;
 
-      this.updateSelectors(params);
-      this.loadData(params);
-      this.updateMap(params);
+      this.updateSelectors(params);  
 
       if (params.year) {
-        this.yearSlider.value = params.year;
+        this.yearSlider.value = +params.year;
       }
       
+      this.loadData(params);
+      this.updateMap(params);
 
       this._updating = false;
     },
@@ -200,7 +200,7 @@
       }
 
       var that = this;
-      this.dataRequest = d3.tsv(url, function(error, data) {
+      this.dataRequest = eiti.load(url, function(error, data) {
         that.dataRequest = null;
 
         if (error) {
@@ -217,9 +217,9 @@
     },
 
     /**
-    * Get the URL of the relevant data file for a given set of parameters.
+    * Load data given a set of parameters
     * @param Object params
-    * @return String the data URL
+    * @return void
     */
     loadData: function(params){
       var url = this.getDataURL(params);
@@ -296,7 +296,9 @@
 
     /**
     * This filters data (onshore and offshore)
-    * when parameters change
+    * when parameters change,
+    * triggers this.updateOutputs, which updates elements 
+    * with relevant/current data 
     *
     * @param Object params
     * @return 
@@ -305,8 +307,18 @@
       params = params || this.params;
       console.warn('behold, your data: ', data);
       params.year = (params.year).toString();
+      var that = this, ensureMatch = function(params){
+        if (this.currentDataMatch){
+          console.warn('matching data: ', this.currentDataMatch)
+          that.updateOutputs(params);
+
+        } else {
+          console.warn('no available ' + params.datatype +  ' data')
+          that.updateOutputs(params);
+        }
+      }
+
       if (params.region && params.resource && params.year && params.datatype == 'revenue'){
-        console.log('params',params)
         if (!params.subregion){
           this.currentDataMatch = _.findWhere(data, {
             "Region": params.region,
@@ -322,19 +334,22 @@
             "Year": params.year
           });
         }
-        if (this.currentDataMatch){
-          console.warn('matching regional revenues data', this.currentDataMatch)
-          this.updateOutputs(params);
-
+        ensureMatch(params);
+      } else {
+        if (!params.subregion){
+          this.currentDataMatch = _.findWhere(data, {
+            "State": params.region,
+            "Resource": params.resource,
+            "Year": params.year
+          });
+          ensureMatch(params);
+          
         } else {
-          console.warn('no available revenues data')
+          console.warn('no filter in place for exports data.')
+          this.currentDataMatch = null;
           this.updateOutputs(params);
         }
-      } else {
-        // TODO filter for exports
-        console.warn('no filter in place for exports data.')
-        this.currentDataMatch = null;
-        this.updateOutputs(params);
+        
       }
       
     },
@@ -535,10 +550,24 @@
      * @param Object params
      * @return void
      */
-    displayNumericalTotal: function() {
-      this.displayNumericalTotalEl.innerHTML = this.currentDataMatch 
-        ? '$' + this.currentDataMatch.Revenue
-        : 'N/A';
+    displayNumericalTotal: function(params) {
+      if (params){
+        switch (params.datatype){
+          case 'revenue':
+            this.displayNumericalTotalEl.innerHTML = this.currentDataMatch 
+              ? '$' + this.currentDataMatch.Revenue
+              : 'N/A';
+            break;
+          case 'exports':
+            this.displayNumericalTotalEl.innerHTML = this.currentDataMatch 
+              ? '$' + this.currentDataMatch.Value
+              : 'N/A';
+            break;
+
+          default:
+            break
+        }
+      }
     },
 
     /**
@@ -580,7 +609,7 @@
      */
     updateOutputs: function(params) {
       this.displayFilterParameters(params);
-      this.displayNumericalTotal();
+      this.displayNumericalTotal(params);
     }
 
   });
@@ -600,7 +629,7 @@
   router.updateOutputs();
   router.loadData(router.params);
 
-  // exports.router = router;
+  exports.router = router;
 
   function onMapLoaded(map, callback) {
     if (map.loaded) {

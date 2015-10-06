@@ -1,3 +1,7 @@
+---
+
+---
+
 (function(exports) {
 
   /**
@@ -33,11 +37,16 @@
         root: '#resources',
         map: '#region-map',
         inputs: {
-          resource:   '#resource-selector',
-          datatype:   '#datatype-selector',
-          region:     '#region-selector',
-          subregion:  '#subregion-selector',
-          year:       '#year-slider',
+          resource:       '#resource-selector',
+          datatype:       '#datatype-selector',
+          region:         '#region-selector',
+          subregion:      '#subregion-selector',
+          year:           '#year-slider',
+        },
+        outputs: {
+          year:           '#output-year',
+          text:           '#output-text',
+          numericalTotal: '#output-numerical-total'
         }
       });
 
@@ -60,6 +69,12 @@
       this.yearSlider.addEventListener('change', this.onYearChange.bind(this));
 
       this.map = root.querySelector(options.map);
+
+      this.displayYear = this.root.querySelector(options.outputs.year);
+
+      this.displayText = this.root.querySelector(options.outputs.text);
+
+      this.displayNumericalTotalEl = this.root.querySelector(options.outputs.numericalTotal);
 
       this.params = {};
     },
@@ -146,12 +161,13 @@
     update: function(params) {
       this._updating = true;
 
-      this.updateSelectors(params);
+      this.updateSelectors(params);  
 
       if (params.year) {
         this.yearSlider.value = +params.year;
       }
-
+      
+      this.loadData(params);
       this.updateMap(params);
 
       this._updating = false;
@@ -191,12 +207,37 @@
           return console.error('unable to load data from %s:', url, error.responseText);
         }
 
+        that.findDataMatch(data, params);
+
         console.warn('loaded data:', data);
         onMapLoaded(map, function() {
           // TODO: display some data!
         });
       });
     },
+
+    /**
+    * Load data given a set of parameters
+    * @param Object params
+    * @return void
+    */
+    loadData: function(params){
+      var url = this.getDataURL(params);
+// 
+      var that = this;
+      this.loadDataRequest = d3.tsv(url, function(error, data) {
+        that.loadDataRequest = null;
+
+        if (error) {
+          return console.error('unable to load data from %s:', url, error.responseText);
+        }
+
+        that.findDataMatch(data, params);
+
+        console.warn('loadData() loaded data:', data);
+ 
+      });
+     },
 
     /**
      * Get the URL of the relevant data file for a given set of parameters.
@@ -208,32 +249,109 @@
         this.options.dataPath
       ];
 
-      switch (params.regiontype) {
-        case 'onshore':
-          path.push('county', 'by-state', params.region);
-          break;
+      if (params.subregion){
+        switch (params.datatype) {
+          case 'revenue':
+            switch (params.regiontype) {
+              case 'onshore':
+                // onshore county-level revenue
+                path.push('county', 'by-state', params.region, 'resource-revenues.tsv');
+                break;
 
-        case 'offshore':
-          // FIXME: make sure these data files exist
-          path.push('offshore');
-          break;
+              case 'offshore':
+                // FIXME: make sure these data files exist
+                // offshore county-level revenue
+                path.push('offshore');
+                break;
 
-        default:
-          path.push('regional');
-          break;
+              default:
+                break;
+            }
+            break;
+          // FIXME: add 'exports case'
+          default:
+            // FIXME: vary by datatype
+            break;
+        }
+      } else {
+        switch (params.datatype) {
+          case 'revenue':
+            // state level revenue
+            path.push('regional','resource-revenues.tsv');
+            break;
+          case 'exports':
+            // state level exports
+            path.push('state','exports-by-industry.tsv');
+            break;
+
+          default:
+            // FIXME: vary by datatype
+            break;
+        }
       }
-
-      switch (params.datatype) {
-        case 'revenue':
-          path.push('resource-revenues.tsv');
-          break;
-
-        default:
-          // FIXME: vary by datatype
-          break;
-      }
+      
 
       return path.join('/');
+    },
+
+    /**
+    * This filters data (onshore and offshore)
+    * when parameters change,
+    * triggers this.updateOutputs, which updates elements 
+    * with relevant/current data 
+    *
+    * @param Object params
+    * @return 
+    */
+    findDataMatch: function(data, params) {
+      params = params || this.params;
+      console.warn('behold, your data: ', data);
+      params.year = (params.year).toString();
+      var that = this, ensureMatch = function(params){
+        if (this.currentDataMatch){
+          console.warn('matching data: ', this.currentDataMatch)
+          that.updateOutputs(params);
+
+        } else {
+          console.warn('no available ' + params.datatype +  ' data')
+          that.updateOutputs(params);
+        }
+      }
+
+      if (params.region && params.resource && params.year && params.datatype == 'revenue'){
+        if (!params.subregion){
+          this.currentDataMatch = _.findWhere(data, {
+            "Region": params.region,
+            "Resource": params.resource,
+            "Year": params.year
+          });
+          
+        } else if (params.subregion){
+          this.currentDataMatch = _.findWhere(data, {
+            "State": params.region,
+            "County": params.subregion,
+            "Resource": params.resource,
+            "Year": params.year
+          });
+        }
+        ensureMatch(params);
+      } else {
+        if (!params.subregion){
+          this.currentDataMatch = _.findWhere(data, {
+            "State": params.region,
+            "Resource": params.resource,
+            "Year": params.year
+          });
+          ensureMatch(params);
+          
+        } else {
+          console.warn('no filter in place for exports data.')
+          this.currentDataMatch = null;
+          this.updateOutputs(params);
+        }
+        
+      }
+      
     },
 
     /**
@@ -244,6 +362,7 @@
      * @return void
      */
     updateSelectors: function(params) {
+
       this.updateResourceSelector(params);
       this.updateRegionSelector(params);
       this.updateDataTypeSelector(params);
@@ -299,7 +418,6 @@
           subregions.sort(function(a, b) {
             return d3.ascending(a.name, b.name);
           });
-
           options = options.data(subregions);
           options.exit().remove();
           options.enter().append('option')
@@ -423,8 +541,79 @@
         query[bits[0]] = value;
         return query;
       }, {});
+    },
+
+    /**
+     * This updates the total (in dollars) associated with data filters
+     * change.
+     *
+     * @param Object params
+     * @return void
+     */
+    displayNumericalTotal: function(params) {
+      if (params){
+        switch (params.datatype){
+          case 'revenue':
+            this.displayNumericalTotalEl.innerHTML = this.currentDataMatch 
+              ? '$' + this.currentDataMatch.Revenue
+              : 'N/A';
+            break;
+          case 'exports':
+            this.displayNumericalTotalEl.innerHTML = this.currentDataMatch 
+              ? '$' + this.currentDataMatch.Value
+              : 'N/A';
+            break;
+
+          default:
+            break
+        }
+      }
+    },
+
+    /**
+     * This displays the data filter parameters
+     * change.
+     *
+     * @param Object params
+     * @return void
+     */
+    displayFilterParameters: function(params) {
+      params = params || this.params;
+      this.resourceSelector.selectedIndex != -1 
+        ? this.resourceSelector.selectedIndex
+        : 0;
+      var selectedResourceIndex = this.resourceSelector.selectedIndex;
+      var resource = this.resourceSelector[selectedResourceIndex].innerHTML;
+      // placeholder logic while there are only two options
+      var dataType = params.datatype === 'revenue'
+        ? 'Revenues'
+        : 'Exports';
+      var selectedRegionIndex = this.regionSelector.selectedIndex;
+      var regionName = this.regionSelector[selectedRegionIndex].innerHTML || 'All US';
+      var region = params.subregion 
+        ? params.subregion + ', ' + regionName
+        : regionName;
+      var year = this.displayYear.innerHTML = params.year || '2013';
+
+      // format the text to be displayed
+      var displayText = resource + ' ' + dataType + ' in ' + region + ' in ' + year;
+      this.displayText.innerHTML = displayText;
+    },
+
+    /**
+     * This triggers functions that display the data filter parameters
+     * and display the total $$ associated with those filters
+     *
+     * @param Object params
+     * @return void
+     */
+    updateOutputs: function(params) {
+      this.displayFilterParameters(params);
+      this.displayNumericalTotal(params);
     }
+
   });
+
 
   // kick off the router
   var router = new ResourceRouter();
@@ -437,6 +626,8 @@
       regiontype: 'US'
     });
   }
+  router.updateOutputs();
+  router.loadData(router.params);
 
   exports.router = router;
 

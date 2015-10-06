@@ -1,0 +1,14 @@
+  <select id="" onchange="window.location = '/communities/' + this.value">
+    <option value=""></option>
+
+    <optgroup label="Natural Gas">
+      <option
+        {% if page.url == '/communities/tar' %}selected{% endif %}
+        value="tar">Tarrant &amp; Johnson Counties, Texas</option>
+    </optgroup>
+    <optgroup label="Oil">
+      <option
+        {% if page.url == '/communities/nor' %}selected{% endif %}
+        value="nor">North Slope Borough, Alaska</option>
+    </optgroup>
+  </select>

@@ -1,8 +1,9 @@
-{% extends 'base.html' %}
+---
+title: Resource Revenues – Coal
+layout: default
+permalink: /resource_revenues/coal/
+---
 
-{% from 'macros.html' import location_selector %}
-
-{% block main %}
   <section class="container">
 
     <div class="revenues-subpage-back">
@@ -263,7 +264,7 @@
         <a href="/resource_revenues" class="link-more"><span class="shrink-fa"><i class="fa fa-chevron-left"></i></span> Or, back to revenues overview</a>
       </div>
 
-      {% include 'includes/revenues/revenues-footer.html' %}
+      {% include revenues/revenues-footer.html %}
 
     </section>
   </div>
@@ -271,7 +272,3 @@
 
 </div>
 
-
-
-
-{% endblock %}

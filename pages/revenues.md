@@ -1,6 +1,8 @@
-{% extends 'base.html' %}
-
-{% block subpage_hero %}
+---
+title: Resource Revenues
+layout: default
+permalink: /resource_revenues/
+---
 
 <div class="communities">
 
@@ -34,9 +36,6 @@
 
   </div>
 
-{% endblock %}
-
-{% block main %}
 
   <section class="container">
     <h2 class="h1">Choose a resource to see how the process works &#8230;</h2>
@@ -213,5 +212,3 @@
 
 
 </div>
-
-{% endblock %}

@@ -162,17 +162,13 @@
       this._updating = true;
 
       this.updateSelectors(params);
-      this.loadCountyRevenues(params);
-      this.filterRegionalRevenues(params);
-      this.filterCountyRevenues(params);
-
-      this.updateOutputs(params);
-      
-      if (params.year) {
-        this.yearSlider.value = +params.year;
-      }
-
+      this.loadData(params);
       this.updateMap(params);
+
+      if (params.year) {
+        this.yearSlider.value = params.year;
+      }
+      
 
       this._updating = false;
     },
@@ -204,12 +200,14 @@
       }
 
       var that = this;
-      this.dataRequest = eiti.load(url, function(error, data) {
+      this.dataRequest = d3.tsv(url, function(error, data) {
         that.dataRequest = null;
 
         if (error) {
           return console.error('unable to load data from %s:', url, error.responseText);
         }
+
+        that.findDataMatch(data, params);
 
         console.warn('loaded data:', data);
         onMapLoaded(map, function() {
@@ -217,6 +215,29 @@
         });
       });
     },
+
+    /**
+    * Get the URL of the relevant data file for a given set of parameters.
+    * @param Object params
+    * @return String the data URL
+    */
+    loadData: function(params){
+      var url = this.getDataURL(params);
+// 
+      var that = this;
+      this.loadDataRequest = d3.tsv(url, function(error, data) {
+        that.loadDataRequest = null;
+
+        if (error) {
+          return console.error('unable to load data from %s:', url, error.responseText);
+        }
+
+        that.findDataMatch(data, params);
+
+        console.warn('loadData() loaded data:', data);
+ 
+      });
+     },
 
     /**
      * Get the URL of the relevant data file for a given set of parameters.
@@ -228,32 +249,94 @@
         this.options.dataPath
       ];
 
-      switch (params.regiontype) {
-        case 'onshore':
-          path.push('county', 'by-state', params.region);
-          break;
+      if (params.subregion){
+        switch (params.datatype) {
+          case 'revenue':
+            switch (params.regiontype) {
+              case 'onshore':
+                // onshore county-level revenue
+                path.push('county', 'by-state', params.region, 'resource-revenues.tsv');
+                break;
 
-        case 'offshore':
-          // FIXME: make sure these data files exist
-          path.push('offshore');
-          break;
+              case 'offshore':
+                // FIXME: make sure these data files exist
+                // offshore county-level revenue
+                path.push('offshore');
+                break;
 
-        default:
-          path.push('regional');
-          break;
+              default:
+                break;
+            }
+            break;
+          // FIXME: add 'exports case'
+          default:
+            // FIXME: vary by datatype
+            break;
+        }
+      } else {
+        switch (params.datatype) {
+          case 'revenue':
+            // state level revenue
+            path.push('regional','resource-revenues.tsv');
+            break;
+          case 'exports':
+            // state level exports
+            path.push('state','exports-by-industry.tsv');
+            break;
+
+          default:
+            // FIXME: vary by datatype
+            break;
+        }
       }
-
-      switch (params.datatype) {
-        case 'revenue':
-          path.push('resource-revenues.tsv');
-          break;
-
-        default:
-          // FIXME: vary by datatype
-          break;
-      }
+      
 
       return path.join('/');
+    },
+
+    /**
+    * This filters data (onshore and offshore)
+    * when parameters change
+    *
+    * @param Object params
+    * @return 
+    */
+    findDataMatch: function(data, params) {
+      params = params || this.params;
+      console.warn('behold, your data: ', data);
+      params.year = (params.year).toString();
+      if (params.region && params.resource && params.year && params.datatype == 'revenue'){
+        console.log('params',params)
+        if (!params.subregion){
+          this.currentDataMatch = _.findWhere(data, {
+            "Region": params.region,
+            "Resource": params.resource,
+            "Year": params.year
+          });
+          
+        } else if (params.subregion){
+          this.currentDataMatch = _.findWhere(data, {
+            "State": params.region,
+            "County": params.subregion,
+            "Resource": params.resource,
+            "Year": params.year
+          });
+        }
+        if (this.currentDataMatch){
+          console.warn('matching regional revenues data', this.currentDataMatch)
+          this.updateOutputs(params);
+
+        } else {
+          console.warn('no available revenues data')
+          this.updateOutputs(params);
+        }
+      } else {
+        // TODO filter for exports
+        console.warn('no filter in place for exports data.')
+        this.currentDataMatch = null;
+        this.updateOutputs(params);
+      }
+      
     },
 
     /**
@@ -264,6 +347,7 @@
      * @return void
      */
     updateSelectors: function(params) {
+
       this.updateResourceSelector(params);
       this.updateRegionSelector(params);
       this.updateDataTypeSelector(params);
@@ -444,114 +528,6 @@
       }, {});
     },
 
-
-
-    /**
-     * This loads the regional revenues data (onshore and offshore)
-     * uses /data/regional/resource-revenues.tsv
-     *
-     * @param 
-     * @return
-     */
-    loadRegionalRevenues: function() {
-      if (this.regionalRevenuesRequest) {
-        this.regionalRevenuesRequest.abort();
-      }
-      self = this;
-      this.regionalRevenuesRequest = d3.tsv('/data/regional/resource-revenues.tsv', 
-        function(error, regionalRevenues) {
-        if (error) {
-          return console.error('unable to load regionalRevenues:', error.responseText);
-        }
-
-        console.warn('loaded regionalRevenues:', regionalRevenues);
-        self.regionalRevenues = regionalRevenues;
-      });
-    },
-
-    /**
-     * This loads the county-level revenues within a given state
-     * uses /data/county/by-state/:state/resource-revenues.tsv
-     *
-     * @param 
-     * @return
-     */
-    loadCountyRevenues: function(params) {
-      var params = params || this.params;
-      if (this.countyRevenuesRequest) {
-        this.countyRevenuesRequest.abort();
-      }
-      if (params.region){
-        var requestUrl = '/data/county/by-state/'+ params.region +'/resource-revenues.tsv';
-        self = this;
-        this.countyRevenuesRequest = d3.tsv(requestUrl, 
-          function(error, countyRevenues) {
-          if (error) {
-            return console.error('unable to load countyRevenues:', error.responseText);
-          }
-
-          console.warn('loaded countyRevenues:', countyRevenues);
-          self.countyRevenues = countyRevenues;
-        });
-      } else {
-        console.warn('There is no region selected in the parameters')
-      }
-    },
-
-    /**
-     * This filters regional revenues data (onshore and offshore)
-     * when parameters change
-     *
-     * @param Object params
-     * @return 
-     */
-    filterRegionalRevenues: function(params) {
-      params = params || this.params;
-      regionalRevenues = this.regionalRevenues;
-      console.warn('behold, your regional revenues: ', this.regionalRevenues)
-      if (params.region && params.resource && params.year && params.datatype == 'revenue'){
-        this.currentMatch = _.findWhere(regionalRevenues, {
-          "Region": params.region,
-          "Resource": params.resource,
-          "Year": params.year
-        });
-        if (this.currentMatch){
-          console.warn('matching regional revenues data', this.currentMatch)
-
-        } else {
-          console.warn('no available regional revenues data')
-        }
-      }
-    },
-
-        /**
-     * This filters county-level revenues data (onshore and offshore)
-     * when parameters change
-     *
-     * @param Object params
-     * @return 
-     */
-    filterCountyRevenues: function(params) {
-      params = params || this.params;
-      countyRevenues = this.countyRevenues;
-      console.warn('revenues by county: ', this.countyRevenues)
-      if (params.region && params.subregion && params.resource && params.year && params.datatype == 'revenue'){
-        this.currentMatch = _.findWhere(countyRevenues, {
-          "State": params.region,
-          "County": params.subregion,
-          "Resource": params.resource,
-          "Year": params.year
-        });
-        if (this.currentMatch){
-          console.warn('matching county-level revenues data', this.currentMatch)
-
-        } else {
-          console.warn('no available county-level revenues data')
-        }
-      }
-      
-    },
-
     /**
      * This updates the total (in dollars) associated with data filters
      * change.
@@ -559,9 +535,9 @@
      * @param Object params
      * @return void
      */
-    displayNumericalTotal: function(match) {
-      this.displayNumericalTotalEl.innerHTML = match 
-        ? '$' + match.Revenue
+    displayNumericalTotal: function() {
+      this.displayNumericalTotalEl.innerHTML = this.currentDataMatch 
+        ? '$' + this.currentDataMatch.Revenue
         : 'N/A';
     },
 
@@ -574,7 +550,9 @@
      */
     displayFilterParameters: function(params) {
       params = params || this.params;
-
+      this.resourceSelector.selectedIndex != -1 
+        ? this.resourceSelector.selectedIndex
+        : 0;
       var selectedResourceIndex = this.resourceSelector.selectedIndex;
       var resource = this.resourceSelector[selectedResourceIndex].innerHTML;
       // placeholder logic while there are only two options
@@ -602,7 +580,7 @@
      */
     updateOutputs: function(params) {
       this.displayFilterParameters(params);
-      this.displayNumericalTotal(this.currentMatch);
+      this.displayNumericalTotal();
     }
 
   });
@@ -620,10 +598,9 @@
     });
   }
   router.updateOutputs();
-  router.loadRegionalRevenues();
-  router.loadCountyRevenues();
+  router.loadData(router.params);
 
-  exports.router = router;
+  // exports.router = router;
 
   function onMapLoaded(map, callback) {
     if (map.loaded) {

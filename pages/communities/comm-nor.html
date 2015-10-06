@@ -1,6 +1,11 @@
-{% extends 'comm-home.html' %}
+---
+title: Communities Nor
+layout: default
+permalink: /communities/nor
+---
+<div id="communities" class="communities">
 
-{% block main %}
+  {% include communities_intro.html %}
 
   <section class="container communities-content">
 
@@ -92,7 +97,7 @@
 
         <ol class="decimal list-para">
 
-          {% include 'includes/footnotes/footnotes_nor.html' %}
+          {% include footnotes/footnotes_nor.html %}
 
         </ol>
 
@@ -123,4 +128,4 @@
 
 </div>
 
-{% endblock %}
+<script src="/js/pages/communities.js"></script>

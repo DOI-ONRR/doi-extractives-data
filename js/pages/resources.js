@@ -68,8 +68,11 @@
       this.yearSlider = root.querySelector(options.inputs.year);
       this.yearSlider.addEventListener('change', this.onYearChange.bind(this));
 
+<<<<<<< HEAD
       this.map = root.querySelector(options.map);
 
+=======
+>>>>>>> 025af6015cce959d30b46766bbe142586cd2543b
       this.displayYear = this.root.querySelector(options.outputs.year);
 
       this.displayText = this.root.querySelector(options.outputs.text);
@@ -161,8 +164,17 @@
     update: function(params) {
       this._updating = true;
 
+<<<<<<< HEAD
       this.updateSelectors(params);  
+=======
+      this.updateSelectors(params);
+      this.loadCountyRevenues(params);
+      this.filterRegionalRevenues(params);
+      this.filterCountyRevenues(params);
+>>>>>>> 025af6015cce959d30b46766bbe142586cd2543b
 
+      this.updateOutputs(params);
+      
       if (params.year) {
         this.yearSlider.value = +params.year;
       }
@@ -543,6 +555,7 @@
       }, {});
     },
 
+<<<<<<< HEAD
     /**
      * This updates the total (in dollars) associated with data filters
      * change.
@@ -568,6 +581,127 @@
             break
         }
       }
+=======
+
+
+    /**
+     * This loads the regional revenues data (onshore and offshore)
+     * uses /data/regional/resource-revenues.tsv
+     *
+     * @param 
+     * @return
+     */
+    loadRegionalRevenues: function() {
+      if (this.regionalRevenuesRequest) {
+        this.regionalRevenuesRequest.abort();
+      }
+      self = this;
+      this.regionalRevenuesRequest = d3.tsv('/data/regional/resource-revenues.tsv', 
+        function(error, regionalRevenues) {
+        if (error) {
+          return console.error('unable to load regionalRevenues:', error.responseText);
+        }
+
+        console.warn('loaded regionalRevenues:', regionalRevenues);
+        self.regionalRevenues = regionalRevenues;
+      });
+    },
+
+    /**
+     * This loads the county-level revenues within a given state
+     * uses /data/county/by-state/:state/resource-revenues.tsv
+     *
+     * @param 
+     * @return
+     */
+    loadCountyRevenues: function(params) {
+      var params = params || this.params;
+      if (this.countyRevenuesRequest) {
+        this.countyRevenuesRequest.abort();
+      }
+      if (params.region){
+        var requestUrl = '/data/county/by-state/'+ params.region +'/resource-revenues.tsv';
+        self = this;
+        this.countyRevenuesRequest = d3.tsv(requestUrl, 
+          function(error, countyRevenues) {
+          if (error) {
+            return console.error('unable to load countyRevenues:', error.responseText);
+          }
+
+          console.warn('loaded countyRevenues:', countyRevenues);
+          self.countyRevenues = countyRevenues;
+        });
+      } else {
+        console.warn('There is no region selected in the parameters')
+      }
+    },
+
+    /**
+     * This filters regional revenues data (onshore and offshore)
+     * when parameters change
+     *
+     * @param Object params
+     * @return 
+     */
+    filterRegionalRevenues: function(params) {
+      params = params || this.params;
+      regionalRevenues = this.regionalRevenues;
+      console.warn('behold, your regional revenues: ', this.regionalRevenues)
+      if (params.region && params.resource && params.year && params.datatype == 'revenue'){
+        this.currentMatch = _.findWhere(regionalRevenues, {
+          "Region": params.region,
+          "Resource": params.resource,
+          "Year": params.year
+        });
+        if (this.currentMatch){
+          console.warn('matching regional revenues data', this.currentMatch)
+
+        } else {
+          console.warn('no available regional revenues data')
+        }
+      }
+    },
+
+        /**
+     * This filters county-level revenues data (onshore and offshore)
+     * when parameters change
+     *
+     * @param Object params
+     * @return 
+     */
+    filterCountyRevenues: function(params) {
+      params = params || this.params;
+      countyRevenues = this.countyRevenues;
+      console.warn('revenues by county: ', this.countyRevenues)
+      if (params.region && params.subregion && params.resource && params.year && params.datatype == 'revenue'){
+        this.currentMatch = _.findWhere(countyRevenues, {
+          "State": params.region,
+          "County": params.subregion,
+          "Resource": params.resource,
+          "Year": params.year
+        });
+        if (this.currentMatch){
+          console.warn('matching county-level revenues data', this.currentMatch)
+
+        } else {
+          console.warn('no available county-level revenues data')
+        }
+      }
+      
+    },
+
+    /**
+     * This updates the total (in dollars) associated with data filters
+     * change.
+     *
+     * @param Object params
+     * @return void
+     */
+    displayNumericalTotal: function(match) {
+      this.displayNumericalTotalEl.innerHTML = match 
+        ? '$' + match.Revenue
+        : 'N/A';
+>>>>>>> 025af6015cce959d30b46766bbe142586cd2543b
     },
 
     /**
@@ -579,9 +713,13 @@
      */
     displayFilterParameters: function(params) {
       params = params || this.params;
+<<<<<<< HEAD
       this.resourceSelector.selectedIndex != -1 
         ? this.resourceSelector.selectedIndex
         : 0;
+=======
+
+>>>>>>> 025af6015cce959d30b46766bbe142586cd2543b
       var selectedResourceIndex = this.resourceSelector.selectedIndex;
       var resource = this.resourceSelector[selectedResourceIndex].innerHTML;
       // placeholder logic while there are only two options
@@ -609,7 +747,11 @@
      */
     updateOutputs: function(params) {
       this.displayFilterParameters(params);
+<<<<<<< HEAD
       this.displayNumericalTotal(params);
+=======
+      this.displayNumericalTotal(this.currentMatch);
+>>>>>>> 025af6015cce959d30b46766bbe142586cd2543b
     }
 
   });
@@ -627,7 +769,12 @@
     });
   }
   router.updateOutputs();
+<<<<<<< HEAD
   router.loadData(router.params);
+=======
+  router.loadRegionalRevenues();
+  router.loadCountyRevenues();
+>>>>>>> 025af6015cce959d30b46766bbe142586cd2543b
 
   exports.router = router;
 

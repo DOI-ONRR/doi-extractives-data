@@ -162,8 +162,10 @@
       this._updating = true;
 
       this.updateSelectors(params);
+      this.loadCountyRevenues(params);
       this.filterRegionalRevenues(params);
-      
+      this.filterCountyRevenues(params);
+
       this.updateOutputs(params);
       
       if (params.year) {
@@ -452,11 +454,9 @@
      * @return
      */
     loadRegionalRevenues: function() {
-      // cancel the outbound subregion request
       if (this.regionalRevenuesRequest) {
         this.regionalRevenuesRequest.abort();
       }
-      // TODO: show the selector
       self = this;
       this.regionalRevenuesRequest = d3.tsv('/data/regional/resource-revenues.tsv', 
         function(error, regionalRevenues) {
@@ -470,6 +470,35 @@
     },
 
     /**
+     * This loads the county-level revenues within a given state
+     * uses /data/county/by-state/:state/resource-revenues.tsv
+     *
+     * @param 
+     * @return
+     */
+    loadCountyRevenues: function(params) {
+      var params = params || this.params;
+      if (this.countyRevenuesRequest) {
+        this.countyRevenuesRequest.abort();
+      }
+      if (params.region){
+        var requestUrl = '/data/county/by-state/'+ params.region +'/resource-revenues.tsv';
+        self = this;
+        this.countyRevenuesRequest = d3.tsv(requestUrl, 
+          function(error, countyRevenues) {
+          if (error) {
+            return console.error('unable to load countyRevenues:', error.responseText);
+          }
+
+          console.warn('loaded countyRevenues:', countyRevenues);
+          self.countyRevenues = countyRevenues;
+        });
+      } else {
+        console.warn('There is no region selected in the parameters')
+      }
+    },
+
+    /**
      * This filters regional revenues data (onshore and offshore)
      * when parameters change
      *
@@ -480,17 +509,45 @@
       params = params || this.params;
       regionalRevenues = this.regionalRevenues;
       console.warn('behold, your regional revenues: ', this.regionalRevenues)
-      if (params.region && params.resource && params.year)
-      this.currentMatch = _.findWhere(regionalRevenues, {
-        "Region": params.region,
-        "Resource": params.resource,
-        "Year": params.year
-      });
-      if (this.currentMatch){
-        console.warn('matching regional revenues data', this.currentMatch)
+      if (params.region && params.resource && params.year && params.datatype == 'revenue'){
+        this.currentMatch = _.findWhere(regionalRevenues, {
+          "Region": params.region,
+          "Resource": params.resource,
+          "Year": params.year
+        });
+        if (this.currentMatch){
+          console.warn('matching regional revenues data', this.currentMatch)
 
-      } else {
-        console.warn('no available regional revenues data')
+        } else {
+          console.warn('no available regional revenues data')
+        }
+      }
+    },
+
+        /**
+     * This filters county-level revenues data (onshore and offshore)
+     * when parameters change
+     *
+     * @param Object params
+     * @return 
+     */
+    filterCountyRevenues: function(params) {
+      params = params || this.params;
+      countyRevenues = this.countyRevenues;
+      console.warn('revenues by county: ', this.countyRevenues)
+      if (params.region && params.subregion && params.resource && params.year && params.datatype == 'revenue'){
+        this.currentMatch = _.findWhere(countyRevenues, {
+          "State": params.region,
+          "County": params.subregion,
+          "Resource": params.resource,
+          "Year": params.year
+        });
+        if (this.currentMatch){
+          console.warn('matching county-level revenues data', this.currentMatch)
+
+        } else {
+          console.warn('no available county-level revenues data')
+        }
       }
       
     },
@@ -503,10 +560,9 @@
      * @return void
      */
     displayNumericalTotal: function(match) {
-      console.log('displayNumericalTotal----->',match)
       this.displayNumericalTotalEl.innerHTML = match 
         ? '$' + match.Revenue
-        : '$XXXX';
+        : 'N/A';
     },
 
     /**
@@ -565,6 +621,7 @@
   }
   router.updateOutputs();
   router.loadRegionalRevenues();
+  router.loadCountyRevenues();
 
   exports.router = router;
 

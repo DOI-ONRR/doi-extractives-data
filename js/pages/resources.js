@@ -1,3 +1,7 @@
+---
+
+---
+
 (function(exports) {
 
   /**
@@ -31,11 +35,16 @@
       this.options = options = _.defaultsDeep(options || {}, {
         root: '#resources',
         inputs: {
-          resource:   '#resource-selector',
-          datatype:   '#datatype-selector',
-          region:     '#region-selector',
-          subregion:  '#subregion-selector',
-          year:       '#year-slider',
+          resource:       '#resource-selector',
+          datatype:       '#datatype-selector',
+          region:         '#region-selector',
+          subregion:      '#subregion-selector',
+          year:           '#year-slider',
+        },
+        outputs: {
+          year:           '#output-year',
+          text:           '#output-text',
+          numericalTotal: '#output-numerical-total'
         }
       });
 
@@ -56,6 +65,12 @@
 
       this.yearSlider = this.root.querySelector(options.inputs.year);
       this.yearSlider.addEventListener('change', this.onYearChange.bind(this));
+
+      this.displayYear = this.root.querySelector(options.outputs.year);
+
+      this.displayText = this.root.querySelector(options.outputs.text);
+
+      this.displayNumericalTotalEl = this.root.querySelector(options.outputs.numericalTotal);
 
       this.params = {};
     },
@@ -143,7 +158,10 @@
       this._updating = true;
 
       this.updateSelectors(params);
-
+      this.filterRegionalRevenues(params);
+      
+      this.updateOutputs(params);
+      
       if (params.year) {
         this.yearSlider.value = +params.year;
       }
@@ -211,7 +229,6 @@
           subregions.sort(function(a, b) {
             return d3.ascending(a.name, b.name);
           });
-
           options = options.data(subregions);
           options.exit().remove();
           options.enter().append('option')
@@ -335,8 +352,117 @@
         query[bits[0]] = value;
         return query;
       }, {});
+    },
+
+
+
+    /**
+     * This loads the regional revenues data (onshore and offshore)
+     * uses /data/regional/resource-revenues.tsv
+     *
+     * @param 
+     * @return
+     */
+    loadRegionalRevenues: function() {
+      // cancel the outbound subregion request
+      if (this.regionalRevenuesRequest) {
+        this.regionalRevenuesRequest.abort();
+      }
+      // TODO: show the selector
+      self = this;
+      this.regionalRevenuesRequest = d3.tsv('/data/regional/resource-revenues.tsv', 
+        function(error, regionalRevenues) {
+        if (error) {
+          return console.error('unable to load regionalRevenues:', error.responseText);
+        }
+
+        console.warn('loaded regionalRevenues:', regionalRevenues);
+        self.regionalRevenues = regionalRevenues;
+      });
+    },
+
+    /**
+     * This filters regional revenues data (onshore and offshore)
+     * when parameters change
+     *
+     * @param Object params
+     * @return 
+     */
+    filterRegionalRevenues: function(params) {
+      params = params || this.params;
+      regionalRevenues = this.regionalRevenues;
+      console.warn('behold, your regional revenues: ', this.regionalRevenues)
+      if (params.region && params.resource && params.year)
+      this.currentMatch = _.findWhere(regionalRevenues, {
+        "Region": params.region,
+        "Resource": params.resource,
+        "Year": params.year
+      });
+      if (this.currentMatch){
+        console.warn('matching regional revenues data', this.currentMatch)
+
+      } else {
+        console.warn('no available regional revenues data')
+      }
+      
+    },
+
+    /**
+     * This updates the total (in dollars) associated with data filters
+     * change.
+     *
+     * @param Object params
+     * @return void
+     */
+    displayNumericalTotal: function(match) {
+      console.log('displayNumericalTotal----->',match)
+      this.displayNumericalTotalEl.innerHTML = match 
+        ? '$' + match.Revenue
+        : '$XXXX';
+    },
+
+    /**
+     * This displays the data filter parameters
+     * change.
+     *
+     * @param Object params
+     * @return void
+     */
+    displayFilterParameters: function(params) {
+      params = params || this.params;
+
+      var selectedResourceIndex = this.resourceSelector.selectedIndex;
+      var resource = this.resourceSelector[selectedResourceIndex].innerHTML;
+      // placeholder logic while there are only two options
+      var dataType = params.datatype === 'revenue'
+        ? 'Revenues'
+        : 'Exports';
+      var selectedRegionIndex = this.regionSelector.selectedIndex;
+      var regionName = this.regionSelector[selectedRegionIndex].innerHTML || 'All US';
+      var region = params.subregion 
+        ? params.subregion + ', ' + regionName
+        : regionName;
+      var year = this.displayYear.innerHTML = params.year || '2013';
+
+      // format the text to be displayed
+      var displayText = resource + ' ' + dataType + ' in ' + region + ' in ' + year;
+      this.displayText.innerHTML = displayText;
+    },
+
+    /**
+     * This triggers functions that display the data filter parameters
+     * and display the total $$ associated with those filters
+     *
+     * @param Object params
+     * @return void
+     */
+    updateOutputs: function(params) {
+      this.displayFilterParameters(params);
+      this.displayNumericalTotal(this.currentMatch);
     }
+
   });
+
 
   // kick off the router
   var router = new ResourceRouter();
@@ -349,6 +475,8 @@
       regiontype: 'US'
     });
   }
+  router.updateOutputs();
+  router.loadRegionalRevenues();
 
   exports.router = router;
 

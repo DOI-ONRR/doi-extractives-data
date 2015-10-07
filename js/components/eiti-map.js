@@ -47,7 +47,7 @@
 
             switch (typeof this.onload) {
               case 'string':
-                this.onload = new Function('', this.onload);
+                this.onload = new Function('event', this.onload);
               case 'function':
                 this.addEventListener('load', this.onload);
                 break;

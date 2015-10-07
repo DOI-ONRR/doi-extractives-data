@@ -127,18 +127,14 @@
         arguments[arguments.length - 1] = null;
       }
 
-      var params = _.defaults({
-        resource: resource,
-        datatype: datatype,
-        regiontype: regiontype,
+      var params = {
+        resource: resource || 'all',
+        datatype: datatype || 'revenue',
+        regiontype: regiontype || 'US',
         region: region,
-        subregion: subregion
-      }, {
-        resource: 'all',
-        datatype: 'revenue',
-        regiontype: 'US',
+        subregion: subregion,
         year: this.yearSlider.value
-      });
+      };
 
       if (query) {
         params = _.extend(params, query);
@@ -159,16 +155,13 @@
      */
     update: function(params) {
       this._updating = true;
-
-      this.updateSelectors(params);  
+      this.updateSelectors(params);
 
       if (params.year) {
         this.yearSlider.value = +params.year;
       }
-      
-      this.loadData(params);
-      this.updateMap(params);
 
+      this.loadData(params);
       this._updating = false;
     },
 
@@ -176,7 +169,7 @@
      * Update the map.
      * @param Object params
      */
-    updateMap: function(params) {
+    updateMap: function(data, params) {
       var map = this.map;
 
       var featureId = null;
@@ -187,32 +180,56 @@
           break;
       }
 
+      console.log('zooming to:', featureId);
       onMapLoaded(map, function() {
         map.zoomTo(featureId);
       });
 
-      var url = this.getDataURL(params);
-      console.log('loading data from:', url);
+      var groupKey = 'Region';
+      var sumKey;
 
-      if (this.dataRequest) {
-        this.dataRequest.abort();
+      switch (params.datatype) {
+        case 'revenue':
+          sumKey = 'Revenue';
+          break;
       }
 
-      var that = this;
-      this.dataRequest = eiti.load(url, function(error, data) {
-        that.dataRequest = null;
+      if (!groupKey || !sumKey) {
+        return console.error('no group/sum key for params:', [groupKey, sumKey], params);
+      }
 
-        if (error) {
-          return console.error('unable to load data from %s:', url, error.responseText);
-        }
+      // ensure that groupKey is an array
+      if (!Array.isArray(groupKey)) {
+        groupKey = [groupKey];
+      }
 
-        that.findDataMatch(data, params);
-
-        console.warn('loaded data:', data);
-        onMapLoaded(map, function() {
-          // TODO: display some data!
-        });
+      var nest = d3.nest();
+      groupKey.forEach(function(key) {
+        nest.key(eiti.data.getter(key));
       });
+
+      nest.rollup(function(d) {
+        return d3.sum(d, eiti.data.getter(sumKey));
+      });
+
+      var nested = nest.map(data);
+      console.log('nested data:', nested);
+
+      var max = d3.max(d3.values(nested));
+      var scale = d3.scale.linear()
+        .domain([0, max])
+        .range(['#ddd', '#000'])
+        .clamp(true);
+
+      d3.select(map)
+        .selectAll('path.feature')
+        .style('fill', function(d) {
+          if (d.id in nested) {
+            return scale(nested[d.id]);
+          }
+          // console.warn('no data for', d.id);
+          return null;
+        });
     },
 
     /**
@@ -222,7 +239,7 @@
     */
     loadData: function(params) {
       var url = this.getDataURL(params);
-// 
+
       var that = this;
       this.loadDataRequest = d3.tsv(url, function(error, data) {
         that.loadDataRequest = null;
@@ -231,10 +248,8 @@
           return console.error('unable to load data from %s:', url, error.responseText);
         }
 
-        that.findDataMatch(data, params);
-
         console.warn('loadData() loaded data:', data);
- 
+        that.updateData(data, params);
       });
      },
 
@@ -288,21 +303,19 @@
             break;
         }
       }
-      
 
       return path.join('/');
     },
 
     /**
-    * This filters data (onshore and offshore)
-    * when parameters change,
-    * triggers this.updateOutputs, which updates elements 
-    * with relevant/current data 
+    * This filters data (onshore and offshore) when parameters change, triggers
+    * this.updateOutputs, which updates elements with relevant/current data.
     *
+    * @param Array data
     * @param Object params
-    * @return 
+    * @return
     */
-    findDataMatch: function(data, params) {
+    updateData: function(data, params) {
       params = params || this.params;
       console.warn('behold, your data: ', data);
 
@@ -318,40 +331,29 @@
         }
       }
 
-      if (params.region && params.resource && params.year && params.datatype == 'revenue') {
-        if (!params.subregion) {
-          this.currentDataMatch = _.findWhere(data, {
-            "Region": params.region,
-            "Resource": params.resource,
-            "Year": params.year
-          });
-          
-        } else if (params.subregion) {
-          this.currentDataMatch = _.findWhere(data, {
-            "State": params.region,
-            "County": params.subregion,
-            "Resource": params.resource,
-            "Year": params.year
-          });
-        }
-        ensureMatch(params);
-      } else {
-        if (!params.subregion) {
-          this.currentDataMatch = _.findWhere(data, {
-            "State": params.region,
-            "Resource": params.resource,
-            "Year": params.year
-          });
-          ensureMatch(params);
-          
-        } else {
-          console.warn('no filter in place for exports data.')
-          this.currentDataMatch = null;
-          this.updateOutputs(params);
-        }
-        
+      var where = {};
+      if (params.region) {
+        where.Region = params.region;
       }
-      
+      if (params.resource && params.resource !== 'all') {
+        where.Resource = params.resource;
+      }
+      if (params.year) {
+        where.Year = params.year;
+      }
+
+      if (params.regiontype === 'onshore') {
+        if (params.subregion) {
+          where.County = params.subregion;
+        } else {
+          where.State = params.region;
+        }
+      } else if (params.regiontype === 'offshore') {
+        where.Area = params.subregion;
+      }
+
+      this.data = _.filter(data, where);
+      this.updateMap(this.data, params);
     },
 
     /**
@@ -625,8 +627,6 @@
       regiontype: 'US'
     });
   }
-  router.updateOutputs();
-  router.loadData(router.params);
 
   exports.router = router;
 

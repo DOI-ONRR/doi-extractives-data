@@ -8,7 +8,7 @@ tito = $(BIN)/tito
 datex = $(BIN)/datex
 
 # force TopoJSON to use spherical projections
-topo_options ?= --spherical
+topo_options ?= --spherical --bbox
 
 # revenue-related files
 REVENUE_FILES = \

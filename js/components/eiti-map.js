@@ -78,7 +78,7 @@
           d3.select(this)
             .selectAll('path')
             .classed('zoomed', function(d) {
-              if (!feature && d.id == featureId) {
+              if (!feature && d.id && d.id == featureId) {
                 feature = d;
                 return true;
               }

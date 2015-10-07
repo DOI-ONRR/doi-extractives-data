@@ -213,7 +213,7 @@
       });
 
       var nested = nest.map(data);
-      console.log('nested data:', nested);
+      // console.log('nested data:', nested);
 
       var max = d3.max(d3.values(nested));
       var scale = d3.scale.linear()
@@ -222,9 +222,6 @@
         .clamp(true);
 
       onMapLoaded(map, function() {
-        console.log('zooming to:', featureId);
-        map.zoomTo(featureId);
-
         d3.select(map)
           .selectAll('path.feature')
           .style('fill', function(d) {
@@ -234,6 +231,9 @@
             // console.warn('no data for', d.id);
             return null;
           });
+
+        // console.log('zooming to:', featureId);
+        map.zoomTo(featureId);
       });
     },
 

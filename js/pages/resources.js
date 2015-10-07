@@ -180,11 +180,6 @@
           break;
       }
 
-      console.log('zooming to:', featureId);
-      onMapLoaded(map, function() {
-        map.zoomTo(featureId);
-      });
-
       var groupKey = 'Region';
       var sumKey;
 
@@ -226,15 +221,20 @@
         .range(['#ddd', '#000'])
         .clamp(true);
 
-      d3.select(map)
-        .selectAll('path.feature')
-        .style('fill', function(d) {
-          if (d.id in nested) {
-            return scale(nested[d.id]);
-          }
-          // console.warn('no data for', d.id);
-          return null;
-        });
+      onMapLoaded(map, function() {
+        console.log('zooming to:', featureId);
+        map.zoomTo(featureId);
+
+        d3.select(map)
+          .selectAll('path.feature')
+          .style('fill', function(d) {
+            if (d.id in nested) {
+              return scale(nested[d.id]);
+            }
+            // console.warn('no data for', d.id);
+            return null;
+          });
+      });
     },
 
     /**
@@ -253,7 +253,7 @@
           return console.error('unable to load data from %s:', url, error.responseText);
         }
 
-        console.warn('loadData() loaded data:', data);
+        // console.warn('loadData() loaded data:', data);
         that.updateData(data, params);
       });
      },
@@ -323,7 +323,6 @@
     updateData: function(data, params) {
       // XXX: this shouldn't be necessary
       params = params || this.params;
-      console.warn('behold, your data: ', data);
 
       var where = {};
       if (params.region) {
@@ -339,14 +338,13 @@
       if (params.regiontype === 'onshore') {
         if (params.subregion) {
           where.County = params.subregion;
-        } else {
-          where.State = params.region;
         }
       } else if (params.regiontype === 'offshore') {
         where.Area = params.subregion;
       }
 
       var filtered = _.filter(data, where);
+      // console.warn('behold, your data: ', where, filtered);
       this.updateMap(filtered, params);
       this.updateOutputs(filtered, params);
     },
@@ -410,7 +408,7 @@
             return console.error('unable to load subregions:', error.responseText);
           }
 
-          console.warn('loaded subregions:', subregions);
+          // console.warn('loaded subregions:', subregions);
           subregions.sort(function(a, b) {
             return d3.ascending(a.name, b.name);
           });

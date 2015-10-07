@@ -16,12 +16,12 @@ nav_items:
 ---
 
 <h3>
-  <img src="/img/oil.png" alt="oil rig">
-  <img src="/img/gas.png" alt="gas burner" class="gas">
-  <img src="/img/coal.png" alt="coal cart">
-  <img src="/img/gold.png" alt="goal inguts">
-  <img src="/img/copper.png" alt="copper penny" class="copper">
-  <img src="/img/iron.png" alt="iron ore" class="iron">
+  <img src="{{ site.baseurl }}/img/oil.png" alt="oil rig">
+  <img src="{{ site.baseurl }}/img/gas.png" alt="gas burner" class="gas">
+  <img src="{{ site.baseurl }}/img/coal.png" alt="coal cart">
+  <img src="{{ site.baseurl }}/img/gold.png" alt="goal inguts">
+  <img src="{{ site.baseurl }}/img/copper.png" alt="copper penny" class="copper">
+  <img src="{{ site.baseurl }}/img/iron.png" alt="iron ore" class="iron">
   <a name="intro">Six commodities</a>
 </h3>
 
@@ -34,8 +34,8 @@ This section provides a snapshot into twelve communities that, over about the la
 ### Choose a community to get started
 
 <ul class="communities-choose">
-  <li>Gas: <a href="/communities/tar">Tarrant &amp; Johnson Counties, Texas</a></li>
-  <li>Oil: <a href="/communities/nor">North Slope Borough, Alaska</a></li>
+  <li>Gas: <a href="{{ site.baseurl }}/communities/tar">Tarrant &amp; Johnson Counties, Texas</a></li>
+  <li>Oil: <a href="{{ site.baseurl }}/communities/nor">North Slope Borough, Alaska</a></li>
 </ul>
 
 ### Or, read more about how to interpret these studies:

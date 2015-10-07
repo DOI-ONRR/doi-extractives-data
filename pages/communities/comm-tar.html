@@ -1,6 +1,11 @@
-{% extends 'comm-home.html' %}
+---
+title: Communities Tar
+layout: default
+permalink: /communities/tar
+---
+<div id="communities" class="communities">
 
-{% block main %}
+  {% include communities_intro.html %}
 
   <section class="container communities-content">
 
@@ -55,7 +60,7 @@
         <h3 id="footnote-label">Notes</h3>
 
         <ol class="decimal list-para">
-          {% include 'includes/footnotes/footnotes_tar.html' %}
+          {% include footnotes/footnotes_tar.html %}
         </ol>
 
       </section>
@@ -84,4 +89,4 @@
 
 </div>
 
-{% endblock %}
+<script src="/js/pages/communities.js"></script>

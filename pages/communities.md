@@ -1,40 +1,13 @@
-{% extends 'base.html' %}
+---
+title: Communities
+layout: default
+permalink: /communities/
+---
 
-{% block subpage_hero %}
 
-<div class="communities">
+<div id="communities" class="communities">
 
-  <div class="communities-intro">
-
-    <section class="container">
-
-      <div class="communities-left">
-
-        <h1>How do extractive industries impact communities like mine?</h1>
-
-        <p>In some communities, extractive industries play a much larger role than in others. These narratives provide  snapshots into twelve communities that, over the last decade, have led in production of one of six resources: iron, copper, gold, coal, oil, and natural gas.</p>
-
-        <label>Choose a community
-          {% include 'includes/community_selector.html' %}
-        </label>
-
-        <a href="/communities/#intro" class="link-more home-intro-more" style="display:block">Or, go to the overview <span class="shrink-fa"><i class="fa fa-chevron-right"></i></span></a>
-
-      </div>
-
-      <div class="communities-right">
-
-        <img src="/img/comm-mapFPO.png" class="comm-intro-img">
-
-      </div>
-
-    </section>
-
-  </div>
-
-{% endblock %}
-
-{% block main %}
+  {% include communities_intro.html %}
 
   <section class="container communities-content">
 
@@ -145,53 +118,4 @@
 
 </div>
 
-{% endblock %}
-
-
-{% block script %}
-<script>
-  (function() {
-    var scrollLeft, scrollTop;
-    var findScrollPositions = function(){
-      scrollLeft = (window.pageXOffset !== undefined) ? window.pageXOffset : (document.documentElement || document.body.parentNode || document.body).scrollLeft;
-      scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
-    };
-    var communitiesContent = document.getElementsByClassName("communities-content")[0];
-
-    var setStickyPos = function () {
-      var stickyNav = document.getElementsByClassName("communities-sticky-nav")[0],
-          ccOffsetTop = communitiesContent.offsetTop;
-
-      // scrollDifference is the difference in height between the location of the top of the window and the top of the 'communities-content' div
-      var scrollDifference = scrollTop - ccOffsetTop;
-
-      var combinedOffset = ccOffsetTop + communitiesContent.offsetHeight;
-      var stickyNavHeight = stickyNav.clientHeight;
-      var ccPadding = 50; // set value at all widths (I believe)
-
-      // scrollTopFooterOffset is the combined height of the content offsets less the height the sticky div and the content's bottom padding
-      // when scrollTop is greater than scrollTopFooterOffset 'top' property of stickyFooter should be set to scrollTopFooterOffset
-      var scrollTopFooterOffset = combinedOffset - stickyNavHeight - 50;
-
-      if (scrollDifference >= 0){
-        stickyNav.style.position = 'fixed';
-        stickyNav.style.top = 0;
-        if (scrollTop > scrollTopFooterOffset){
-          stickyNav.style.position = 'absolute';
-          stickyNav.style.top = scrollTopFooterOffset - ccOffsetTop + 'px';
-        } else {
-          stickyNav.style.position = 'fixed';
-          stickyNav.style.top = 0;
-        }
-      } else {
-        stickyNav.style.position = 'absolute';
-      }
-    };
-
-    window.onscroll = function() {
-        findScrollPositions();
-        setStickyPos();
-    };
-  })();
-</script>
-{% endblock %}
+<script src="/js/pages/communities.js"></script>

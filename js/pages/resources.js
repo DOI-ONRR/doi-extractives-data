@@ -192,6 +192,11 @@
         case 'revenue':
           sumKey = 'Revenue';
           break;
+        case 'exports':
+          sumKey = 'Value';
+          // XXX all of the exports data is state-specific
+          groupKey = 'State';
+          break;
       }
 
       if (!groupKey || !sumKey) {
@@ -316,20 +321,9 @@
     * @return
     */
     updateData: function(data, params) {
+      // XXX: this shouldn't be necessary
       params = params || this.params;
       console.warn('behold, your data: ', data);
-
-      params.year = String(params.year);
-      var that = this;
-      var ensureMatch = function(params) {
-        if (this.currentDataMatch) {
-          console.warn('matching data: ', this.currentDataMatch)
-          that.updateOutputs(params);
-        } else {
-          console.warn('no available ' + params.datatype +  ' data')
-          that.updateOutputs(params);
-        }
-      }
 
       var where = {};
       if (params.region) {
@@ -339,7 +333,7 @@
         where.Resource = params.resource;
       }
       if (params.year) {
-        where.Year = params.year;
+        where.Year = String(params.year);
       }
 
       if (params.regiontype === 'onshore') {
@@ -352,8 +346,9 @@
         where.Area = params.subregion;
       }
 
-      this.data = _.filter(data, where);
-      this.updateMap(this.data, params);
+      var filtered = _.filter(data, where);
+      this.updateMap(filtered, params);
+      this.updateOutputs(filtered, params);
     },
 
     /**
@@ -551,24 +546,27 @@
      * @param Object params
      * @return void
      */
-    displayNumericalTotal: function(params) {
+    displayNumericalTotal: function(data, params) {
+      var sumKey;
       if (params) {
         switch (params.datatype) {
           case 'revenue':
-            this.displayNumericalTotalEl.innerHTML = this.currentDataMatch 
-              ? '$' + this.currentDataMatch.Revenue
-              : 'N/A';
+            sumKey = 'Revenue';
             break;
           case 'exports':
-            this.displayNumericalTotalEl.innerHTML = this.currentDataMatch 
-              ? '$' + this.currentDataMatch.Value
-              : 'N/A';
+            sumKey = 'Value';
             break;
 
           default:
-            break
+            console.warn('unable to sum:', params.datatype);
+            return false;
         }
       }
+
+      var sum = ~~d3.sum(data, eiti.data.getter(sumKey));
+      var format = d3.format('$,');
+      d3.select(this.displayNumericalTotalEl)
+        .text(format(sum));
     },
 
     /**
@@ -578,7 +576,7 @@
      * @param Object params
      * @return void
      */
-    displayFilterParameters: function(params) {
+    displayFilterParameters: function(data, params) {
       params = params || this.params;
       this.resourceSelector.selectedIndex != -1 
         ? this.resourceSelector.selectedIndex
@@ -586,9 +584,7 @@
       var selectedResourceIndex = this.resourceSelector.selectedIndex;
       var resource = this.resourceSelector[selectedResourceIndex].innerHTML;
       // placeholder logic while there are only two options
-      var dataType = params.datatype === 'revenue'
-        ? 'Revenues'
-        : 'Exports';
+      var dataType = params.datatype;
       var selectedRegionIndex = this.regionSelector.selectedIndex;
       var regionName = this.regionSelector[selectedRegionIndex].innerHTML || 'All US';
       var region = params.subregion 
@@ -608,9 +604,9 @@
      * @param Object params
      * @return void
      */
-    updateOutputs: function(params) {
-      this.displayFilterParameters(params);
-      this.displayNumericalTotal(params);
+    updateOutputs: function(data, params) {
+      this.displayFilterParameters(data, params);
+      this.displayNumericalTotal(data, params);
     }
 
   });

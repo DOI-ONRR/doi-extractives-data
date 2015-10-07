@@ -1,23 +1,6 @@
 (function(exports) {
 
-  // requires d3, topojson
-
-  var load = (function(maxLength) {
-    var cache = {};
-    var urls = [];
-    return function(url, done) {
-      if (cache[url]) return done(null, cache[url]);
-      var ext = url.split('?').shift().split('.').pop() || 'json';
-      return d3[ext](url, function(error, data) {
-        if (error) return done(error);
-        if (urls.length === maxLength) {
-          delete cache[urls.shift()];
-        }
-        urls.push(url);
-        return done(null, cache[url] = data);
-      });
-    };
-  })(10);
+  // XXX requires d3, topojson
 
   exports.EITIMap = document.registerElement('eiti-map', {
     'extends': 'svg',
@@ -308,6 +291,7 @@
 
       if (!bbox) {
         var bboxes = layers.data()
+          .filter(function(d) { return d; })
           .map(function(d) {
             return bounds(d);
           });
@@ -360,7 +344,7 @@
     if (!url) return done('no URL');
 
     layer.classList.add('js-loading');
-    load(url, function(error, data) {
+    eiti.load(url, function(error, data) {
       layer.classList.remove('js-loading');
       if (error) {
         layer.classList.add('js-error');
@@ -387,6 +371,7 @@
         len = bboxes.length;
     for (var i = 0; i < len; i++) {
       var b = bboxes[i];
+      if (!b) continue;
       if (b[0][0] < xmin) xmin = b[0][0];
       if (b[0][1] < ymin) ymin = b[0][1];
       if (b[1][0] > xmax) xmax = b[1][0];

@@ -215,10 +215,11 @@
       var nested = nest.map(data);
       // console.log('nested data:', nested);
 
-      var max = d3.max(d3.values(nested));
+      var domain = d3.extent(d3.values(nested));
       var scale = d3.scale.linear()
-        .domain([0, max])
+        .domain(domain)
         .range(['#ddd', '#000'])
+        .nice()
         .clamp(true);
 
       onMapLoaded(map, function() {
@@ -576,23 +577,18 @@
      */
     displayFilterParameters: function(data, params) {
       params = params || this.params;
-      this.resourceSelector.selectedIndex != -1 
-        ? this.resourceSelector.selectedIndex
-        : 0;
-      var selectedResourceIndex = this.resourceSelector.selectedIndex;
-      var resource = this.resourceSelector[selectedResourceIndex].innerHTML;
+      var resource = getSelectedLabel(this.resourceSelector);
       // placeholder logic while there are only two options
       var dataType = params.datatype;
-      var selectedRegionIndex = this.regionSelector.selectedIndex;
-      var regionName = this.regionSelector[selectedRegionIndex].innerHTML || 'All US';
-      var region = params.subregion 
+      var regionName = getSelectedLabel(this.regionSelector);
+      var region = params.subregion
         ? params.subregion + ', ' + regionName
         : regionName;
-      var year = this.displayYear.innerHTML = params.year || '2013';
+      var year = this.displayYear.textContent = params.year;
 
       // format the text to be displayed
       var displayText = resource + ' ' + dataType + ' in ' + region + ' in ' + year;
-      this.displayText.innerHTML = displayText;
+      this.displayText.textContent = displayText;
     },
 
     /**
@@ -635,6 +631,12 @@
         callback(map);
       });
     }
+  }
+
+  function getSelectedLabel(select) {
+    var index = select.selectedIndex;
+    var option = select.options[index];
+    return option.label;
   }
 
 })(this);

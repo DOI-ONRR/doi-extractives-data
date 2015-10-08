@@ -12,12 +12,46 @@
         }},
 
         attachedCallback: {value: function() {
+          switch (typeof this.onload) {
+            case 'string':
+              this.onload = new Function('event', this.onload);
+            case 'function':
+              this.addEventListener('load', this.onload);
+              break;
+          }
+
+          this.load();
+        }},
+
+        attributeChangedCallback: {value: function(attr, old, value) {
+          switch (attr) {
+            case 'width':
+            case 'height':
+              updateSize(this);
+              break;
+
+            case 'zoom-to':
+              this.zoomTo(value);
+              break;
+          }
+        }},
+
+        detachedCallback: {value: function() {
+        }},
+
+        load: {value: function() {
+          this.loaded = false;
+
           var map = this;
           var layers = getDataLayers(this);
 
           var q = queue();
           var len = 0;
           layers.each(function() {
+            if (this.getAttribute('data-load') === 'false') {
+              console.warn('<eiti-map> not loading layer:', this);
+              return;
+            }
             var layer = this;
             q.defer(function(done) {
               loadLayer(layer, done);
@@ -43,34 +77,12 @@
 
               selection.classed('js-loaded', true);
               map.dispatchEvent(new CustomEvent('load'));
+              map.loaded = true;
             });
 
-            switch (typeof this.onload) {
-              case 'string':
-                this.onload = new Function('event', this.onload);
-              case 'function':
-                this.addEventListener('load', this.onload);
-                break;
-            }
           } else {
             console.warn('no data layers in:', this);
           }
-        }},
-
-        attributeChangedCallback: {value: function(attr, old, value) {
-          switch (attr) {
-            case 'width':
-            case 'height':
-              updateSize(this);
-              break;
-
-            case 'zoom-to':
-              this.zoomTo(value);
-              break;
-          }
-        }},
-
-        detachedCallback: {value: function() {
         }},
 
         zoomTo: {value: function(featureId, duration) {
@@ -199,7 +211,7 @@
         if (this.hasAttribute('data-href')) {
 
           var link = layer.selectAll('a')
-            .data(features);
+            .data(features, function(d) { return d.id; });
 
           link.exit().remove();
           link.enter().append('a')

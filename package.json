@@ -30,6 +30,7 @@
     "yargs": "^3.7.1"
   },
   "devDependencies": {
+    "mocha": "^2.3.3"
   },
   "scripts": {
     "test": "mocha",

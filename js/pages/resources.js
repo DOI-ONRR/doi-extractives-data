@@ -4,6 +4,113 @@
 (function(exports) {
 
   /**
+   * This object encapsulates all of the logic of a specific data type such as
+   * revenue, production, exports or jobs (GDP). The constructor takes an
+   * object that describes the type's behavior, including:
+   *
+   * `.geo`: the geographic hierarchies available in this data type
+   * `.data`: an array of data URL specs that are used to determine which URL
+   * to load for a given set of parameters.
+   *
+   * @param Object spec
+   */
+  var DataType = function(spec) {
+    this.spec = spec || {};
+  };
+
+  DataType.prototype = {
+
+    /**
+     * Determine the "data spec" for a given set of parameters. This iterates
+     * over the spec object's `data` array _in reverse order_ and returns the
+     * first entry for which {@link matchesParams} returns `true`.
+     *
+     * @param Object params
+     * @return {Object|null} the relevant data spec object with at least a
+     *  `url` property
+     */
+    getDataSpec: function(params) {
+      if (!Array.isArray(this.spec.data)) {
+        throw new Error('missing "data" spec property');
+      }
+
+      var data = this.spec.data;
+      for (var i = data.length - 1; i >= 0; i--) {
+        var spec = data[i];
+        if (this.matchesParams(spec, params)) {
+          return spec;
+        } else {
+          // console.warn('does not match:', spec, params);
+        }
+      }
+      return null;
+    },
+
+    /**
+     * Get the data URL for a given set of parameters. This first finds the
+     * relevant spec using {@link getDataSpec}, then returns its `url` if one
+     * is found.
+     *
+     * @param Object params
+     * @return {String|null}
+     */
+    getDataURL: function(params) {
+      var spec = this.getDataSpec(params);
+      return spec
+        ? this.expand(spec.url, params)
+        : null;
+    },
+
+    /**
+     * Determine whether a given set of parameters matches a known "spec". If
+     * the `spec` is an Object, the following must be true for every
+     * key/property:
+     *
+     * - the value is `true`, or
+     * - the same key of `params` must be equal (`==`)
+     *
+     * @example
+     * var type = new DataType({});
+     * var params = {foo: 1};
+     * assert.equal(true, type.matchesParams({foo: 1}, foo));
+     * assert.equal(true, type.matchesParams({foo: true}, foo));
+     * assert.equal(false, type.matchesParams({bar: 1}, foo));
+     * assert.equal(true, type.matchesParams(true, foo));
+     * assert.equal(false, type.matchesParams(false, foo));
+     *
+     * @param {*} spec
+     * @param {Object} params
+     * @return Boolean
+     */
+    matchesParams: function(spec, params) {
+      if (!spec || typeof spec === 'boolean') {
+        return !!spec;
+      }
+      var needs = spec.params;
+      return !needs || Object.keys(needs).every(function(key) {
+        return (needs[key] === true)
+          ? (key in params)
+          : (params[key] == needs[key]);
+      });
+    },
+
+    /**
+     * Expands a Backbone-style URL template with placeholders in the regex
+     * form /:(\w+)/.
+     *
+     * @param String template
+     * @param Object params
+     * @return String
+     */
+    expand: function(urlTemplate, params) {
+      return urlTemplate.replace(/:(\w+)/g, function(_, key) {
+        return params[key];
+      });
+    },
+
+  };
+
+  /**
    * @class ResourceRouter
    *
    * @example
@@ -23,6 +130,12 @@
       ':resource/:datatype/:regiontype/:region':            'resource',
       // #coal/exports/onshore/CA/Inyo
       ':resource/:datatype/:regiontype/:region/:subregion': 'resource',
+    },
+
+    dataTypes: {
+      {% for datatype in site.data.datatypes %}
+      '{{ datatype[0] }}': new DataType(({{ datatype[1]|jsonify }})),
+      {% endfor %}
     },
 
     /**
@@ -87,7 +200,7 @@
      * @return void
      */
     navigateToParameters: function(params) {
-      params = _.extend(this.params, params);
+      params = _.extend({}, this.params, params);
       var path = [
         params.resource,
         params.datatype,
@@ -140,7 +253,9 @@
         params = _.extend(params, query);
       }
 
+      this.diff = diffObject(this.params, params);
       this.params = params;
+
       console.log('resource():', params);
       this.update(params);
     },
@@ -176,23 +291,19 @@
       switch (params.regiontype) {
         case 'onshore':
         case 'offshore':
+          // FIXME: zoom to subregion?
+          // note: for counties this should be the FIPS, *not* the name
           featureId = params.region;
           break;
       }
 
-      var groupKey = 'Region';
-      var sumKey;
+      var type = this.dataTypes[params.datatype];
+      this.updateMapLayers(map, type, params);
 
-      switch (params.datatype) {
-        case 'revenue':
-          sumKey = 'Revenue';
-          break;
-        case 'exports':
-          sumKey = 'Value';
-          // XXX all of the exports data is state-specific
-          groupKey = 'State';
-          break;
-      }
+      var spec = type.getDataSpec(params);
+
+      var groupKey = spec.geo || 'Region';
+      var sumKey = spec.value;
 
       if (!groupKey || !sumKey) {
         return console.error('no group/sum key for params:', [groupKey, sumKey], params);
@@ -205,7 +316,12 @@
 
       var nest = d3.nest();
       groupKey.forEach(function(key) {
-        nest.key(eiti.data.getter(key));
+        if (key.charAt(0) === '+') {
+          key = key.substr(1);
+          nest.key(function(d) { return +d[key]; });
+        } else {
+          nest.key(eiti.data.getter(key));
+        }
       });
 
       nest.rollup(function(d) {
@@ -213,9 +329,11 @@
       });
 
       var nested = nest.map(data);
-      // console.log('nested data:', nested);
+      console.log('nested data:', nested);
 
       var domain = d3.extent(d3.values(nested));
+      // ensure that the domain min is <= 0
+      if (domain[0] > 0) domain[0] = 0;
       var scale = d3.scale.linear()
         .domain(domain)
         .range(['#ddd', '#000'])
@@ -239,6 +357,65 @@
     },
 
     /**
+     * Update the individual layers of the given <eiti-map> instance with the
+     * geo information from the provided data type and parameters.
+     *
+     * @param EITIMap map
+     * @param DataType type
+     * @param Object params
+     * @return Boolean true if changed, false otherwise
+     */
+    updateMapLayers: function(map, type, params) {
+      var geo = type.spec.geo || {};
+
+      var changed = false;
+
+      // iterate over each layer
+      var layers = d3.select(map)
+        .selectAll('g[data-url]')
+        .each(function() {
+          var geoType = this.getAttribute('data-object') || this.getAttribute('data-layer-type');
+
+          // determine if this layer is visible in the current dataType
+          var visible = geo[geoType]
+            ? type.matchesParams(geo[geoType], params)
+            : false;
+
+          // XXX <eiti-map> skips layers with data-load="false"
+          var attrs = {
+            'data-load': String(visible),
+          };
+
+          // if the layer has a filter template, interpolate the current set
+          // of parameters into it and use that as the data-filter attribute,
+          // which <eiti-map> will use to filter the visible geometries
+          if (this.hasAttribute('data-filter-template')) {
+            var template = this.getAttribute('data-filter-template');
+            attrs['data-filter'] = template.replace(/{(\w+)}/g, function(_, key) {
+              return params[key];
+            });
+          }
+
+          // iterate over the attributes and set the changed flag to true if
+          // any differ from the current attributes
+          for (var attr in attrs) {
+            var value = this.getAttribute(attr);
+            if (value !== attrs[attr]) {
+              changed = true;
+              this.setAttribute(attr, attrs[attr]);
+            }
+          }
+        });
+
+      // only reload the map if geo data has changed
+      if (changed) {
+        map.load();
+      }
+
+      return changed;
+    },
+
+    /**
     * Load data given a set of parameters
     * @param Object params
     * @return void
@@ -251,7 +428,8 @@
         that.loadDataRequest = null;
 
         if (error) {
-          return console.error('unable to load data from %s:', url, error.responseText);
+          console.error('unable to load data from', url);
+          data = [];
         }
 
         // console.warn('loadData() loaded data:', data);
@@ -265,52 +443,11 @@
      * @return String the data URL
      */
     getDataURL: function(params) {
-      var path = [
-        this.options.dataPath
-      ];
-
-      if (params.subregion) {
-        switch (params.datatype) {
-          case 'revenue':
-            switch (params.regiontype) {
-              case 'onshore':
-                // onshore county-level revenue
-                path.push('county', 'by-state', params.region, 'resource-revenues.tsv');
-                break;
-
-              case 'offshore':
-                // FIXME: make sure these data files exist
-                // offshore county-level revenue
-                path.push('offshore');
-                break;
-
-              default:
-                break;
-            }
-            break;
-          // FIXME: add 'exports case'
-          default:
-            // FIXME: vary by datatype
-            break;
-        }
-      } else {
-        switch (params.datatype) {
-          case 'revenue':
-            // state level revenue
-            path.push('regional','resource-revenues.tsv');
-            break;
-          case 'exports':
-            // state level exports
-            path.push('state','exports-by-industry.tsv');
-            break;
-
-          default:
-            // FIXME: vary by datatype
-            break;
-        }
+      var type = this.dataTypes[params.datatype];
+      if (!type) {
+        throw new Error('unrecognized data type: "' + params.datatype + '"');
       }
-
-      return path.join('/');
+      return type.getDataURL(params);
     },
 
     /**
@@ -326,9 +463,6 @@
       params = params || this.params;
 
       var where = {};
-      if (params.region) {
-        where.Region = params.region;
-      }
       if (params.resource && params.resource !== 'all') {
         where.Resource = params.resource;
       }
@@ -345,7 +479,7 @@
       }
 
       var filtered = _.filter(data, where);
-      // console.warn('behold, your data: ', where, filtered);
+      console.warn('behold, your data: ', where, filtered);
       this.updateMap(filtered, params);
       this.updateOutputs(filtered, params);
     },
@@ -387,46 +521,60 @@
         this.subregionRequest.abort();
       }
 
+      // hide the selector by default
+      var selector = d3.select(this.subregionSelector)
+        .style('display', 'none');
+
+      var options = selector.selectAll('option.subregion');
+
       // request new subregions if there's a "region" param
       if (params.region) {
-        // TODO: show the selector
 
-        var selector = d3.select(this.subregionSelector);
-        var options = selector.selectAll('option.subregion');
-        var subregionURL = [
-          '/data/county/by-state',
-          params.region,
-          'counties.tsv'
-        ].join('/');
+          // show the selector
+          selector.style('display', null);
 
-        console.log('loading subregions:', subregionURL);
+        var type = this.dataTypes[params.datatype];
+        var spec = type.getDataSpec(params);
+        if (spec && spec.subregions) {
+          var subregionURL = type.expand(spec.subregions, params);
 
-        var that = this;
-        this.subregionRequest = eiti.load(subregionURL, function(error, subregions) {
-          that.subregionRequest = null;
+          console.log('loading subregions:', subregionURL);
 
-          if (error) {
-            return console.error('unable to load subregions:', error.responseText);
-          }
+          var that = this;
+          return this.subregionRequest = eiti.load(subregionURL, function(error, subregions) {
+            that.subregionRequest = null;
 
-          // console.warn('loaded subregions:', subregions);
-          subregions.sort(function(a, b) {
-            return d3.ascending(a.name, b.name);
+            if (error) {
+              console.error('unable to load subregions from', subregionURL);
+              subregions = [];
+            } else {
+              // console.warn('loaded subregions:', subregions);
+              subregions.sort(function(a, b) {
+                return d3.ascending(a.name, b.name);
+              });
+            }
+
+            options = options.data(subregions);
+            options.exit().remove();
+            options.enter().append('option')
+              .attr('class', 'subregion');
+            options.text(function(d) {
+              return d.name;
+            });
+
+            selector
+              .property('selectedIndex', 0)
+              .property('value', params.subregion);
           });
-          options = options.data(subregions);
-          options.exit().remove();
-          options.enter().append('option')
-            .attr('class', 'subregion');
-          options.text(function(d) {
-            return d.name;
-          });
-
-          selector.property('value', params.subregion);
-        });
+        } else {
+          console.warn('not loading subregions for', params);
+        }
 
       } else {
         // TODO: hide the selector
       }
+
+      options.remove();
     },
 
     /**
@@ -627,7 +775,6 @@
       var onload;
       map.addEventListener('load', onload = function(e) {
         map.removeEventListener('load', onload);
-        map.loaded = true;
         callback(map);
       });
     }
@@ -637,6 +784,18 @@
     var index = select.selectedIndex;
     var option = select.options[index];
     return option.label;
+  }
+
+  function diffObject(a, b) {
+    var diff = {};
+    var key;
+    for (key in a) {
+      if (b[key] != a[key]) diff[key] = true;
+    }
+    for (key in b) {
+      if (!diff[key] && b[key] != a[key]) diff[key] = true;
+    }
+    return diff;
   }
 
 })(this);

@@ -32,7 +32,7 @@ permalink: /resources/
       <form class="subregions">
         <label>
           <select id="subregion-selector">
-            <option value="">All</option>
+            <option value="">All Counties</option>
           </select>
         </label>
       </form>
@@ -50,10 +50,9 @@ permalink: /resources/
           <div class="group_inline-right">
             <form>
               <select id="datatype-selector" name="datatype">
-                <option value="revenue">Revenues</option>
-                <option disabled value="production">Production</option>
-                <option value="exports">Exports</option>
-                <option disabled value="jobs">Jobs</option>
+                {% for datatype in site.data.datatypes %}
+                <option value="{{ datatype[0] }}"{% if datatype[1].disabled %} disabled{% endif %}>{{ datatype[1].name }}</option>
+                {% endfor %}
               </select>
             </form>
           </div>
@@ -98,24 +97,21 @@ permalink: /resources/
         <svg is="eiti-map" id="region-map" simplify="1e-2"
           projection="albersCustom" data-path="/data/geo/">
           <g class="offshore areas" data-url="offshore-simple.json"
+            data-layer-type="offshore"
             data-title="properties.name"
             data-mesh="true">
           </g>
           <g class="onshore states" data-url="us-topology.json"
             data-object="states"
-            data-title="properties.name || properties.abbr">
-          </g>
-          <g class="onshore states" data-url="us-topology.json"
-            data-object="states"
+            data-title="properties.name || properties.abbr"
             data-mesh="true">
           </g>
-          <!--
           <g class="onshore counties" data-url="us-topology.json"
-            data-mesh="true"
             data-object="counties"
-            data-title="properties.county">
+            data-filter-template="properties.state === '{region}'"
+            data-title="properties.county"
+            data-mesh="true">
           </g>
-          -->
         </svg>
 
       </div>

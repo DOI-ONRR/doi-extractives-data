@@ -18,6 +18,8 @@
         var spec = data[i];
         if (this.matchesParams(spec, params)) {
           return spec;
+        } else {
+          // console.warn('does not match:', spec, params);
         }
       }
       return null;
@@ -298,7 +300,7 @@
         that.loadDataRequest = null;
 
         if (error) {
-          console.error('unable to load data from %s:', url, error.responseText);
+          console.error('unable to load data from', url);
           data = [];
         }
 
@@ -391,48 +393,60 @@
         this.subregionRequest.abort();
       }
 
+      // hide the selector by default
+      var selector = d3.select(this.subregionSelector)
+        .style('display', 'none');
+
+      var options = selector.selectAll('option.subregion');
+
       // request new subregions if there's a "region" param
       if (params.region) {
-        // TODO: show the selector
 
-        var selector = d3.select(this.subregionSelector);
-        var options = selector.selectAll('option.subregion');
-        var subregionURL = [
-          '/data/county/by-state',
-          params.region,
-          'counties.tsv'
-        ].join('/');
+          // show the selector
+          selector.style('display', null);
 
-        console.log('loading subregions:', subregionURL);
+        var type = this.dataTypes[params.datatype];
+        var spec = type.getDataSpec(params);
+        if (spec && spec.subregions) {
+          var subregionURL = type.expand(spec.subregions, params);
 
-        var that = this;
-        this.subregionRequest = eiti.load(subregionURL, function(error, subregions) {
-          that.subregionRequest = null;
+          console.log('loading subregions:', subregionURL);
 
-          if (error) {
-            console.error('unable to load subregions:', error.responseText);
-            subregions = [];
-          } else {
-            // console.warn('loaded subregions:', subregions);
-            subregions.sort(function(a, b) {
-              return d3.ascending(a.name, b.name);
+          var that = this;
+          return this.subregionRequest = eiti.load(subregionURL, function(error, subregions) {
+            that.subregionRequest = null;
+
+            if (error) {
+              console.error('unable to load subregions from', subregionURL);
+              subregions = [];
+            } else {
+              // console.warn('loaded subregions:', subregions);
+              subregions.sort(function(a, b) {
+                return d3.ascending(a.name, b.name);
+              });
+            }
+
+            options = options.data(subregions);
+            options.exit().remove();
+            options.enter().append('option')
+              .attr('class', 'subregion');
+            options.text(function(d) {
+              return d.name;
             });
-          }
 
-          options = options.data(subregions);
-          options.exit().remove();
-          options.enter().append('option')
-            .attr('class', 'subregion');
-          options.text(function(d) {
-            return d.name;
+            selector
+              .property('selectedIndex', 0)
+              .property('value', params.subregion);
           });
-
-          selector.property('value', params.subregion);
-        });
+        } else {
+          console.warn('not loading subregions for', params);
+        }
 
       } else {
         // TODO: hide the selector
       }
+
+      options.remove();
     },
 
     /**

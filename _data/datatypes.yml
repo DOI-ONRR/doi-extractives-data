@@ -54,7 +54,7 @@ revenue:
         regiontype: onshore
         region: true
       value: Revenue
-      geo: FIPS # group by county
+      geo: +FIPS # group by county
 
     - url: /data/offshore/revenues.tsv
       params:

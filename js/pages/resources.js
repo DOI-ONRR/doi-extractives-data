@@ -3,11 +3,32 @@
 ---
 (function(exports) {
 
+  /**
+   * This object encapsulates all of the logic of a specific data type such as
+   * revenue, production, exports or jobs (GDP). The constructor takes an
+   * object that describes the type's behavior, including:
+   *
+   * `.geo`: the geographic hierarchies available in this data type
+   * `.data`: an array of data URL specs that are used to determine which URL
+   * to load for a given set of parameters.
+   *
+   * @param Object spec
+   */
   var DataType = function(spec) {
     this.spec = spec || {};
   };
 
   DataType.prototype = {
+
+    /**
+     * Determine the "data spec" for a given set of parameters. This iterates
+     * over the spec object's `data` array _in reverse order_ and returns the
+     * first entry for which {@link matchesParams} returns `true`.
+     *
+     * @param Object params
+     * @return {Object|null} the relevant data spec object with at least a
+     *  `url` property
+     */
     getDataSpec: function(params) {
       if (!Array.isArray(this.spec.data)) {
         throw new Error('missing "data" spec property');
@@ -25,6 +46,14 @@
       return null;
     },
 
+    /**
+     * Get the data URL for a given set of parameters. This first finds the
+     * relevant spec using {@link getDataSpec}, then returns its `url` if one
+     * is found.
+     *
+     * @param Object params
+     * @return {String|null}
+     */
     getDataURL: function(params) {
       var spec = this.getDataSpec(params);
       return spec
@@ -32,7 +61,31 @@
         : null;
     },
 
+    /**
+     * Determine whether a given set of parameters matches a known "spec". If
+     * the `spec` is an Object, the following must be true for every
+     * key/property:
+     *
+     * - the value is `true`, or
+     * - the same key of `params` must be equal (`==`)
+     *
+     * @example
+     * var type = new DataType({});
+     * var params = {foo: 1};
+     * assert.equal(true, type.matchesParams({foo: 1}, foo));
+     * assert.equal(true, type.matchesParams({foo: true}, foo));
+     * assert.equal(false, type.matchesParams({bar: 1}, foo));
+     * assert.equal(true, type.matchesParams(true, foo));
+     * assert.equal(false, type.matchesParams(false, foo));
+     *
+     * @param {*} spec
+     * @param {Object} params
+     * @return Boolean
+     */
     matchesParams: function(spec, params) {
+      if (!spec || typeof spec === 'boolean') {
+        return !!spec;
+      }
       var needs = spec.params;
       return !needs || Object.keys(needs).every(function(key) {
         return (needs[key] === true)
@@ -41,12 +94,15 @@
       });
     },
 
+    /**
+     * Expands a Backbone-style URL template with placeholders in the regex
+     * form /:(\w+)/.
+     *
+     * @param String template
+     * @param Object params
+     * @return String
+     */
     expand: function(urlTemplate, params) {
-      if (Array.isArray(urlTemplate)) {
-        return urlTemplate.map(function(url) {
-          return this.expand(url, params);
-        }, this);
-      }
       return urlTemplate.replace(/:(\w+)/g, function(_, key) {
         return params[key];
       });

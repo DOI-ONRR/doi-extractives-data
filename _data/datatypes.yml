@@ -43,6 +43,7 @@ revenue:
     offshore: true
     counties:
       regiontype: onshore
+      region: true
   data:
     - url: /data/regional/resource-revenues.tsv
       value: Revenue

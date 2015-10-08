@@ -46,12 +46,15 @@ revenue:
   data:
     - url: /data/regional/resource-revenues.tsv
       value: Revenue
+
     - url: /data/county/by-state/:region/resource-revenues.tsv
+      subregions: /data/county/by-state/:region/counties.tsv
       params:
         regiontype: onshore
         region: true
       value: Revenue
       geo: FIPS # group by county
+
     - url: /data/offshore/revenues.tsv
       params:
         regiontype: offshore
@@ -69,10 +72,12 @@ production:
     - Product
   data:
     - url: /data/state/production.tsv
+      subregions: /data/county/by-state/:region/counties.tsv
       params:
         regiontype: onshore
       value: Volume
       geo: State
+
     - url: /data/offshore/production.tsv
       params:
         regiontype: offshore

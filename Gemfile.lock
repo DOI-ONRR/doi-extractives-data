@@ -25,8 +25,11 @@ GEM
     rb-fsevent (0.9.6)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
+<<<<<<< 00d25076049054002e0313d001e774f42dc0fcd0
 <<<<<<< ce9d4313a9f15daf117319418ed215bc95b6464c
     redcarpet (3.3.3)
+=======
+>>>>>>> example.md in place
 =======
 >>>>>>> example.md in place
     rouge (1.10.1)
@@ -39,8 +42,12 @@ PLATFORMS
 DEPENDENCIES
   jekyll (= 3.0.0.pre.beta9)
   jekyll-watch
+<<<<<<< 00d25076049054002e0313d001e774f42dc0fcd0
 <<<<<<< ce9d4313a9f15daf117319418ed215bc95b6464c
   redcarpet
+=======
+  kramdown
+>>>>>>> example.md in place
 =======
   kramdown
 >>>>>>> example.md in place

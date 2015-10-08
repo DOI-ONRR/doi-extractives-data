@@ -410,14 +410,15 @@
         );
       }
 
-      return mesh === 'true'
-        ? [getMesh(d, obj, filter)]
-        : (mesh && d.objects[mesh])
-          ? topojson.feature(d, obj).features
-            .concat([getMesh(d, d.objects[mesh], filter)])
-          : topojson.feature(d, obj).features;
+      features = topojson.feature(d, obj).features;
+
+      if (mesh) {
+        features.push(d.objects[mesh]
+          ? getMesh(d, d.objects[mesh], filter)
+          : getMesh(d, obj, filter));
+      }
     } else {
-      var features = [];
+      features = [];
       var keys = Object.keys(d.objects);
       var meshIds = (mesh || '').split(',');
       for (key in d.objects) {
@@ -426,8 +427,8 @@
           features.push(getMesh(d, d.objects[key], filter));
         }
       }
-      return features;
     }
+    return features;
   }
 
   function getMesh(topology, object, filter) {

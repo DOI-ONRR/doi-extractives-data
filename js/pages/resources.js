@@ -298,7 +298,8 @@
         that.loadDataRequest = null;
 
         if (error) {
-          return console.error('unable to load data from %s:', url, error.responseText);
+          console.error('unable to load data from %s:', url, error.responseText);
+          data = [];
         }
 
         // console.warn('loadData() loaded data:', data);
@@ -332,9 +333,6 @@
       params = params || this.params;
 
       var where = {};
-      if (params.region) {
-        where.Region = params.region;
-      }
       if (params.resource && params.resource !== 'all') {
         where.Resource = params.resource;
       }
@@ -351,7 +349,7 @@
       }
 
       var filtered = _.filter(data, where);
-      // console.warn('behold, your data: ', where, filtered);
+      console.warn('behold, your data: ', where, filtered);
       this.updateMap(filtered, params);
       this.updateOutputs(filtered, params);
     },
@@ -412,13 +410,15 @@
           that.subregionRequest = null;
 
           if (error) {
-            return console.error('unable to load subregions:', error.responseText);
+            console.error('unable to load subregions:', error.responseText);
+            subregions = [];
+          } else {
+            // console.warn('loaded subregions:', subregions);
+            subregions.sort(function(a, b) {
+              return d3.ascending(a.name, b.name);
+            });
           }
 
-          // console.warn('loaded subregions:', subregions);
-          subregions.sort(function(a, b) {
-            return d3.ascending(a.name, b.name);
-          });
           options = options.data(subregions);
           options.exit().remove();
           options.enter().append('option')

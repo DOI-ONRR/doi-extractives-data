@@ -97,21 +97,20 @@ permalink: /resources/
         <svg is="eiti-map" id="region-map" simplify="1e-2"
           projection="albersCustom" data-path="/data/geo/">
           <g class="offshore areas" data-url="offshore-simple.json"
+            data-layer-type="offshore"
             data-title="properties.name"
             data-mesh="true">
           </g>
           <g class="onshore states" data-url="us-topology.json"
             data-object="states"
-            data-title="properties.name || properties.abbr">
-          </g>
-          <g class="onshore states" data-url="us-topology.json"
-            data-object="states"
+            data-title="properties.name || properties.abbr"
             data-mesh="true">
           </g>
           <g class="onshore counties" data-url="us-topology.json"
-            data-mesh="true"
             data-object="counties"
-            data-title="properties.county">
+            data-filter-template="properties.state === '{region}'"
+            data-title="properties.county"
+            data-mesh="true">
           </g>
         </svg>
 

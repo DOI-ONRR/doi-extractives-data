@@ -332,6 +332,8 @@
       console.log('nested data:', nested);
 
       var domain = d3.extent(d3.values(nested));
+      // ensure that the domain min is <= 0
+      if (domain[0] > 0) domain[0] = 0;
       var scale = d3.scale.linear()
         .domain(domain)
         .range(['#ddd', '#000'])

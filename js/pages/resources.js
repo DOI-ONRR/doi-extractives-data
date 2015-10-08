@@ -291,28 +291,14 @@
       switch (params.regiontype) {
         case 'onshore':
         case 'offshore':
+          // FIXME: zoom to subregion?
+          // note: for counties this should be the FIPS, *not* the name
           featureId = params.region;
           break;
       }
 
       var type = this.dataTypes[params.datatype];
-      var geo = type.spec.geo;
-
-      if (geo) {
-        for (var geoType in geo) {
-          var visible = type.matchesParams(geo[geoType], params);
-          var layer = d3.select(map)
-            .selectAll('g.' + geoType)
-            .attr('data-load', visible)
-            .attr('data-filter', (geoType === 'counties')
-              ? ('properties.state === "' + params.region + '"')
-              : null);
-          console.log('layer:', geoType, layer.node());
-        }
-        map.load();
-      } else {
-        console.warn('no geo info for this type:', type, this.diff);
-      }
+      this.updateMapLayers(map, type, params);
 
       var spec = type.getDataSpec(params);
 
@@ -330,7 +316,12 @@
 
       var nest = d3.nest();
       groupKey.forEach(function(key) {
-        nest.key(eiti.data.getter(key));
+        if (key.charAt(0) === '+') {
+          key = key.substr(1);
+          nest.key(function(d) { return +d[key]; });
+        } else {
+          nest.key(eiti.data.getter(key));
+        }
       });
 
       nest.rollup(function(d) {
@@ -354,13 +345,72 @@
             if (d.id in nested) {
               return scale(nested[d.id]);
             }
-            console.warn('no data for', d.id);
+            // console.warn('no data for', d.id);
             return null;
           });
 
-        console.log('zooming to:', featureId);
+        // console.log('zooming to:', featureId);
         map.zoomTo(featureId);
       });
+    },
+
+    /**
+     * Update the individual layers of the given <eiti-map> instance with the
+     * geo information from the provided data type and parameters.
+     *
+     * @param EITIMap map
+     * @param DataType type
+     * @param Object params
+     * @return Boolean true if changed, false otherwise
+     */
+    updateMapLayers: function(map, type, params) {
+      var geo = type.spec.geo || {};
+
+      var changed = false;
+
+      // iterate over each layer
+      var layers = d3.select(map)
+        .selectAll('g[data-url]')
+        .each(function() {
+          var geoType = this.getAttribute('data-object') || this.getAttribute('data-layer-type');
+
+          // determine if this layer is visible in the current dataType
+          var visible = geo[geoType]
+            ? type.matchesParams(geo[geoType], params)
+            : false;
+
+          // XXX <eiti-map> skips layers with data-load="false"
+          var attrs = {
+            'data-load': String(visible),
+          };
+
+          // if the layer has a filter template, interpolate the current set
+          // of parameters into it and use that as the data-filter attribute,
+          // which <eiti-map> will use to filter the visible geometries
+          if (this.hasAttribute('data-filter-template')) {
+            var template = this.getAttribute('data-filter-template');
+            attrs['data-filter'] = template.replace(/{(\w+)}/g, function(_, key) {
+              return params[key];
+            });
+          }
+
+          // iterate over the attributes and set the changed flag to true if
+          // any differ from the current attributes
+          for (var attr in attrs) {
+            var value = this.getAttribute(attr);
+            if (value !== attrs[attr]) {
+              changed = true;
+              this.setAttribute(attr, attrs[attr]);
+            }
+          }
+        });
+
+      // only reload the map if geo data has changed
+      if (changed) {
+        map.load();
+      }
+
+      return changed;
     },
 
     /**

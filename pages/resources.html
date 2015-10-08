@@ -50,10 +50,9 @@ permalink: /resources/
           <div class="group_inline-right">
             <form>
               <select id="datatype-selector" name="datatype">
-                <option value="revenue">Revenues</option>
-                <option disabled value="production">Production</option>
-                <option value="exports">Exports</option>
-                <option disabled value="jobs">Jobs</option>
+                {% for datatype in site.data.datatypes %}
+                <option value="{{ datatype[0] }}"{% if datatype[1].disabled %} disabled{% endif %}>{{ datatype[1].name }}</option>
+                {% endfor %}
               </select>
             </form>
           </div>

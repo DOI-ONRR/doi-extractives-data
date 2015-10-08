@@ -3,6 +3,55 @@
 ---
 (function(exports) {
 
+  var DataType = function(spec) {
+    this.spec = spec || {};
+  };
+
+  DataType.prototype = {
+    getDataSpec: function(params) {
+      if (!Array.isArray(this.spec.data)) {
+        throw new Error('missing "data" spec property');
+      }
+
+      var data = this.spec.data;
+      for (var i = data.length - 1; i >= 0; i--) {
+        var spec = data[i];
+        if (this.matchesParams(spec, params)) {
+          return spec;
+        }
+      }
+      return null;
+    },
+
+    getDataURL: function(params) {
+      var spec = this.getDataSpec(params);
+      return spec
+        ? this.expand(spec.url, params)
+        : null;
+    },
+
+    matchesParams: function(spec, params) {
+      var needs = spec.params;
+      return !needs || Object.keys(needs).every(function(key) {
+        return (needs[key] === true)
+          ? (key in params)
+          : (params[key] == needs[key]);
+      });
+    },
+
+    expand: function(urlTemplate, params) {
+      if (Array.isArray(urlTemplate)) {
+        return urlTemplate.map(function(url) {
+          return this.expand(url, params);
+        }, this);
+      }
+      return urlTemplate.replace(/:(\w+)/g, function(_, key) {
+        return params[key];
+      });
+    },
+
+  };
+
   /**
    * @class ResourceRouter
    *
@@ -23,6 +72,12 @@
       ':resource/:datatype/:regiontype/:region':            'resource',
       // #coal/exports/onshore/CA/Inyo
       ':resource/:datatype/:regiontype/:region/:subregion': 'resource',
+    },
+
+    dataTypes: {
+      {% for datatype in site.data.datatypes %}
+      '{{ datatype[0] }}': new DataType(({{ datatype[1]|jsonify }})),
+      {% endfor %}
     },
 
     /**
@@ -180,19 +235,11 @@
           break;
       }
 
-      var groupKey = 'Region';
-      var sumKey;
+      var type = this.dataTypes[params.datatype];
+      var spec = type.getDataSpec(params);
 
-      switch (params.datatype) {
-        case 'revenue':
-          sumKey = 'Revenue';
-          break;
-        case 'exports':
-          sumKey = 'Value';
-          // XXX all of the exports data is state-specific
-          groupKey = 'State';
-          break;
-      }
+      var groupKey = spec.region || 'Region';
+      var sumKey = spec.value;
 
       if (!groupKey || !sumKey) {
         return console.error('no group/sum key for params:', [groupKey, sumKey], params);
@@ -265,52 +312,11 @@
      * @return String the data URL
      */
     getDataURL: function(params) {
-      var path = [
-        this.options.dataPath
-      ];
-
-      if (params.subregion) {
-        switch (params.datatype) {
-          case 'revenue':
-            switch (params.regiontype) {
-              case 'onshore':
-                // onshore county-level revenue
-                path.push('county', 'by-state', params.region, 'resource-revenues.tsv');
-                break;
-
-              case 'offshore':
-                // FIXME: make sure these data files exist
-                // offshore county-level revenue
-                path.push('offshore');
-                break;
-
-              default:
-                break;
-            }
-            break;
-          // FIXME: add 'exports case'
-          default:
-            // FIXME: vary by datatype
-            break;
-        }
-      } else {
-        switch (params.datatype) {
-          case 'revenue':
-            // state level revenue
-            path.push('regional','resource-revenues.tsv');
-            break;
-          case 'exports':
-            // state level exports
-            path.push('state','exports-by-industry.tsv');
-            break;
-
-          default:
-            // FIXME: vary by datatype
-            break;
-        }
+      var type = this.dataTypes[params.datatype];
+      if (!type) {
+        throw new Error('unrecognized data type: "' + params.datatype + '"');
       }
-
-      return path.join('/');
+      return type.getDataURL(params);
     },
 
     /**

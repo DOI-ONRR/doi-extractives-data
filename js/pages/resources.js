@@ -242,7 +242,7 @@
       var type = this.dataTypes[params.datatype];
       var geo = type.spec.geo;
 
-      if (geo && this.diff.region) {
+      if (geo) {
         for (var geoType in geo) {
           var visible = type.matchesParams(geo[geoType], params);
           var layer = d3.select(map)
@@ -251,10 +251,11 @@
             .attr('data-filter', (geoType === 'counties')
               ? ('properties.state === "' + params.region + '"')
               : null);
+          console.log('layer:', geoType, layer.node());
         }
         map.load();
       } else {
-        console.warn('no geo info for this type:', type);
+        console.warn('no geo info for this type:', type, this.diff);
       }
 
       var spec = type.getDataSpec(params);
@@ -281,7 +282,7 @@
       });
 
       var nested = nest.map(data);
-      // console.log('nested data:', nested);
+      console.log('nested data:', nested);
 
       var domain = d3.extent(d3.values(nested));
       var scale = d3.scale.linear()
@@ -297,7 +298,7 @@
             if (d.id in nested) {
               return scale(nested[d.id]);
             }
-            // console.warn('no data for', d.id);
+            console.warn('no data for', d.id);
             return null;
           });
 

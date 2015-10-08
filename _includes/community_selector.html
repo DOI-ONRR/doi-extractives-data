@@ -1,14 +1,17 @@
+
+url: {{page.url}}
+peralink: {{page.permalink}}
 <select id="" onchange="window.location = '/communities/' + this.value">
   <option value=""></option>
 
   <optgroup label="Natural Gas">
     <option
-      {% if page.permalink == '/communities/tar/' %}selected{% endif %}
+      {% if page.permalink == '/communities/tar' %}selected{% endif %}
       value="tar">Tarrant &amp; Johnson Counties, Texas</option>
   </optgroup>
   <optgroup label="Oil">
     <option
-      {% if page.permalink == '/communities/nor/' %}selected{% endif %}
+      {% if page.permalink == '/communities/nor' %}selected{% endif %}
       value="nor">North Slope Borough, Alaska</option>
   </optgroup>
 </select>

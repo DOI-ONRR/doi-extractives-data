@@ -144,7 +144,7 @@
      * @return void
      */
     navigateToParameters: function(params) {
-      params = _.extend(this.params, params);
+      params = _.extend({}, this.params, params);
       var path = [
         params.resource,
         params.datatype,
@@ -197,7 +197,9 @@
         params = _.extend(params, query);
       }
 
+      this.diff = diffObject(this.params, params);
       this.params = params;
+
       console.log('resource():', params);
       this.update(params);
     },
@@ -238,10 +240,11 @@
       }
 
       var type = this.dataTypes[params.datatype];
+      var geo = type.spec.geo;
 
-      if (type.spec.geo) {
-        for (var geoType in type.spec.geo) {
-          var visible = type.matchesParams(type.spec.geo[geoType], params);
+      if (geo && this.diff.region) {
+        for (var geoType in geo) {
+          var visible = type.matchesParams(geo[geoType], params);
           var layer = d3.select(map)
             .selectAll('g.' + geoType)
             .attr('data-load', visible)
@@ -672,6 +675,18 @@
     var index = select.selectedIndex;
     var option = select.options[index];
     return option.label;
+  }
+
+  function diffObject(a, b) {
+    var diff = {};
+    var key;
+    for (key in a) {
+      if (b[key] != a[key]) diff[key] = true;
+    }
+    for (key in b) {
+      if (!diff[key] && b[key] != a[key]) diff[key] = true;
+    }
+    return diff;
   }
 
 })(this);

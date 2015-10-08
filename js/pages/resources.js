@@ -238,9 +238,25 @@
       }
 
       var type = this.dataTypes[params.datatype];
+
+      if (type.spec.geo) {
+        for (var geoType in type.spec.geo) {
+          var visible = type.matchesParams(type.spec.geo[geoType], params);
+          var layer = d3.select(map)
+            .selectAll('g.' + geoType)
+            .attr('data-load', visible)
+            .attr('data-filter', (geoType === 'counties')
+              ? ('properties.state === "' + params.region + '"')
+              : null);
+        }
+        map.load();
+      } else {
+        console.warn('no geo info for this type:', type);
+      }
+
       var spec = type.getDataSpec(params);
 
-      var groupKey = spec.region || 'Region';
+      var groupKey = spec.geo || 'Region';
       var sumKey = spec.value;
 
       if (!groupKey || !sumKey) {
@@ -282,7 +298,7 @@
             return null;
           });
 
-        // console.log('zooming to:', featureId);
+        console.log('zooming to:', featureId);
         map.zoomTo(featureId);
       });
     },
@@ -647,7 +663,6 @@
       var onload;
       map.addEventListener('load', onload = function(e) {
         map.removeEventListener('load', onload);
-        map.loaded = true;
         callback(map);
       });
     }

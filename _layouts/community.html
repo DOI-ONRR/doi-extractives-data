@@ -6,6 +6,73 @@ script: <script src="/js/pages/communities.js"></script>
 <div id="communities" class="communities">
   {% include communities_intro.html %}
   <section class="container communities-content">
-     {{ content }}
+     
+
+	<article class="communities-left">
+
+		{% if page.resource == 'oil' %}
+		  <h3><img src="/img/oil.png" alt="oil rig">Oil</h3>
+		{% elsif page.resource == 'gas' %}
+			<h3><img src="/img/gas.png" alt="gas burner" class="gas">Natural Gas</h3>
+		{% endif %}
+	  
+	  {% for section in page.sections %}
+	    {% if section.name == page.sections[0].name %}
+	      <h2><a name="{{section.name}}">{{section.title}}</a></h2>
+	    {% else %}
+	      <h3><a name="{{section.name}}">{{section.title}}</a></h3>
+	    {% endif %}
+
+	    {% for paragraph in section.paragraphs %}
+	      <p>{{paragraph}}</p>
+	    {% endfor %}
+	    {% if section.images %}
+	      {% for image in section.images %}
+	        <img src="{{image.src}}" alt="{{image.alt}}" class="community-graph">
+	      {% endfor %}
+	    {% endif %}
+	  {% endfor %}
+
+
+		 <section class="footnotes">
+
+	    <h3 id="footnote-label">Notes</h3>
+
+	    <ol class="decimal list-para">
+
+	     {% for footnote in page.footnotes %}
+	        {% if footnote.href %}
+	          <li id="{{footnote.name}}"><a href="{{footnote.href}}">{{footnote.text}}</a> <a href="#footnotes-ref" aria-label="Back to content">[back ↑]</a></li>
+	        {% else %}
+	          <li id="{{footnote.name}}">{{footnote.text}} <a href="#footnotes-ref" aria-label="Back to content">[back ↑]</a></li>
+	        {% endif %}
+	      {% endfor %}
+	      
+	    </ol>
+
+	  </section>
+
+
+	</article>
+
+		<div class="communities-right communities-sticky-nav">
+
+		  <nav>
+
+		    <ul>
+		      {% for section in page.sections %}
+		        {% if section.name == page.sections[0].name %}
+		          <li class="active"><a href="#{{section.name}}">{{section.title}}</a></li>
+		        {% else %}
+		          <li><a href="#{{section.name}}">{{section.title}}</a></li>
+		        {% endif %}
+		      {% endfor %}
+		    </ul>
+
+		  </nav>
+
+		</div>
+
+
   </section>
 </div>

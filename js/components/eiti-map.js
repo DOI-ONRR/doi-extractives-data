@@ -1,23 +1,6 @@
 (function(exports) {
 
-  // requires d3, topojson
-
-  var load = (function(maxLength) {
-    var cache = {};
-    var urls = [];
-    return function(url, done) {
-      if (cache[url]) return done(null, cache[url]);
-      var ext = url.split('?').shift().split('.').pop() || 'json';
-      return d3[ext](url, function(error, data) {
-        if (error) return done(error);
-        if (urls.length === maxLength) {
-          delete cache[urls.shift()];
-        }
-        urls.push(url);
-        return done(null, cache[url] = data);
-      });
-    };
-  })(10);
+  // XXX requires d3, topojson
 
   exports.EITIMap = document.registerElement('eiti-map', {
     'extends': 'svg',
@@ -29,12 +12,46 @@
         }},
 
         attachedCallback: {value: function() {
+          switch (typeof this.onload) {
+            case 'string':
+              this.onload = new Function('event', this.onload);
+            case 'function':
+              this.addEventListener('load', this.onload);
+              break;
+          }
+
+          this.load();
+        }},
+
+        attributeChangedCallback: {value: function(attr, old, value) {
+          switch (attr) {
+            case 'width':
+            case 'height':
+              updateSize(this);
+              break;
+
+            case 'zoom-to':
+              this.zoomTo(value);
+              break;
+          }
+        }},
+
+        detachedCallback: {value: function() {
+        }},
+
+        load: {value: function() {
+          this.loaded = false;
+
           var map = this;
           var layers = getDataLayers(this);
 
           var q = queue();
           var len = 0;
           layers.each(function() {
+            if (this.getAttribute('data-load') === 'false') {
+              console.warn('<eiti-map> not loading layer:', this);
+              return;
+            }
             var layer = this;
             q.defer(function(done) {
               loadLayer(layer, done);
@@ -60,34 +77,12 @@
 
               selection.classed('js-loaded', true);
               map.dispatchEvent(new CustomEvent('load'));
+              map.loaded = true;
             });
 
-            switch (typeof this.onload) {
-              case 'string':
-                this.onload = new Function('', this.onload);
-              case 'function':
-                this.addEventListener('load', this.onload);
-                break;
-            }
           } else {
             console.warn('no data layers in:', this);
           }
-        }},
-
-        attributeChangedCallback: {value: function(attr, old, value) {
-          switch (attr) {
-            case 'width':
-            case 'height':
-              updateSize(this);
-              break;
-
-            case 'zoom-to':
-              this.zoomTo(value);
-              break;
-          }
-        }},
-
-        detachedCallback: {value: function() {
         }},
 
         zoomTo: {value: function(featureId, duration) {
@@ -95,7 +90,7 @@
           d3.select(this)
             .selectAll('path')
             .classed('zoomed', function(d) {
-              if (!feature && d.id == featureId) {
+              if (!feature && d.id && d.id == featureId) {
                 feature = d;
                 return true;
               }
@@ -216,7 +211,7 @@
         if (this.hasAttribute('data-href')) {
 
           var link = layer.selectAll('a')
-            .data(features);
+            .data(features, function(d) { return d.id; });
 
           link.exit().remove();
           link.enter().append('a')
@@ -308,6 +303,7 @@
 
       if (!bbox) {
         var bboxes = layers.data()
+          .filter(function(d) { return d; })
           .map(function(d) {
             return bounds(d);
           });
@@ -360,7 +356,7 @@
     if (!url) return done('no URL');
 
     layer.classList.add('js-loading');
-    load(url, function(error, data) {
+    eiti.load(url, function(error, data) {
       layer.classList.remove('js-loading');
       if (error) {
         layer.classList.add('js-error');
@@ -387,6 +383,7 @@
         len = bboxes.length;
     for (var i = 0; i < len; i++) {
       var b = bboxes[i];
+      if (!b) continue;
       if (b[0][0] < xmin) xmin = b[0][0];
       if (b[0][1] < ymin) ymin = b[0][1];
       if (b[1][0] > xmax) xmax = b[1][0];
@@ -413,14 +410,15 @@
         );
       }
 
-      return mesh === 'true'
-        ? [getMesh(d, obj, filter)]
-        : (mesh && d.objects[mesh])
-          ? topojson.feature(d, obj).features
-            .concat([getMesh(d, d.objects[mesh], filter)])
-          : topojson.feature(d, obj).features;
+      features = topojson.feature(d, obj).features;
+
+      if (mesh) {
+        features.push(d.objects[mesh]
+          ? getMesh(d, d.objects[mesh], filter)
+          : getMesh(d, obj, filter));
+      }
     } else {
-      var features = [];
+      features = [];
       var keys = Object.keys(d.objects);
       var meshIds = (mesh || '').split(',');
       for (key in d.objects) {
@@ -429,8 +427,8 @@
           features.push(getMesh(d, d.objects[key], filter));
         }
       }
-      return features;
     }
+    return features;
   }
 
   function getMesh(topology, object, filter) {

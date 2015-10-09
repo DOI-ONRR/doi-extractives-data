@@ -1,0 +1,144 @@
+{
+  "groups": {
+    "oilgas":     "Oil & Gas",
+    "coal":       "Coal",
+    "minerals":   "Hard Minerals",
+    "renewables": "Renewables"
+  },
+  "subgroups": {
+  },
+  "commodities": {
+    "Oil": {
+      "group": "oilgas"
+    },
+    "Gas": {
+      "group": "oilgas"
+    },
+    "Oil & Gas": {
+      "group": "oilgas"
+    },
+    "Oil Shale": {
+      "group": "oilgas"
+    },
+    "NGL": {
+      "group": "oilgas"
+    },
+    "Tar Sands": {
+      "group": "oilgas"
+    },
+    "Coal": {
+      "group": "coal"
+    },
+    "Geothermal": {
+      "group": "renewables"
+    },
+    "Wind": {
+      "group": "renewables"
+    },
+    "Asphalt": {
+      "group": "minerals"
+    },
+    "Anhydrous Sodium Sulfate": {
+      "group": "minerals"
+    },
+    "Borax-Anhydrous": {
+      "group": "minerals"
+    },
+    "Borax-Decahydrate": {
+      "group": "minerals"
+    },
+    "Borax-Pentahydrate": {
+      "group": "minerals"
+    },
+    "Boric Acid": {
+      "group": "minerals"
+    },
+    "Boric Oxide": {
+      "group": "minerals"
+    },
+    "Clay": {
+      "group": "minerals"
+    },
+    "Copper": {
+      "group": "minerals"
+    },
+    "Garnet": {
+      "group": "minerals"
+    },
+    "Gemstones": {
+      "group": "minerals"
+    },
+    "Gilsonite": {
+      "group": "minerals"
+    },
+    "Gold": {
+      "group": "minerals"
+    },
+    "Hardrock": {
+      "group": "minerals"
+    },
+    "Iron": {
+      "group": "minerals"
+    },
+    "Limestone": {
+      "group": "minerals"
+    },
+    "Phosphate": {
+      "group": "minerals"
+    },
+    "Potassium": {
+      "group": "minerals"
+    },
+    "Quartz": {
+      "group": "minerals"
+    },
+    "Salt": {
+      "group": "minerals"
+    },
+    "Salt-Waste": {
+      "group": "minerals"
+    },
+    "Sand & Gravel": {
+      "group": "minerals"
+    },
+    "Soda Ash-Granular": {
+      "group": "minerals"
+    },
+    "Sodium": {
+      "group": "minerals"
+    },
+    "Sulfur": {
+      "group": "minerals"
+    },
+    "Mining": {
+      "group": "minerals"
+    },
+    "Other": {
+      "group": "other"
+    },
+    "Other Products": {
+      "group": "other"
+    },
+    "Hot Springs": {
+      "group": "other"
+    }
+  },
+
+  "colors": {
+    "oilgas": {
+      "primary": "#a0a539"
+    },
+    "coal": {
+      "primary": "#955dce"
+    },
+    "minerals": {
+      "primary": "#c63e3a"
+    },
+    "renewables": {
+      "primary": "#177dab"
+    },
+    "other": {
+      "primary": "#999999"
+    }
+  }
+}

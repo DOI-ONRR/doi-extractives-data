@@ -1,0 +1,107 @@
+# this YAML file should have one key per "data type" on the resources page.
+# the spec for each looks like this:
+#
+# slug:
+#   # the human-readable name of this data type (e.g. "Revenue")
+#   name: Name of Type
+#
+#   # if true, disable this option in the <select> element
+#   disabled: false
+#
+#   # determines which geographical features will be visible on the map
+#   geo:
+#     (states|offshore): true
+#     counties:
+#       (filters)
+#
+#   # an optional list of hierarchies within this data type
+#   hierarchy:
+#     - Product
+#
+#   # a list of data URLs, least specific to most, with optional filters that
+#   # will only match on specific parameter combinations
+#   data:
+#     - url: /path/to/data/:parameter.tsv
+#       # the "value" column to sum on
+#       value: Value
+#       # the optional column on which to group by geographic region
+#       geo: Region
+#       params:
+#         (filters)
+#     - url: /some/other/path.tsv
+#
+# Conventions:
+#
+# * (filters) is a hash in which each key is one that should exist in the
+#   parameters for a given view. A value of `true` indicates that the key
+#   should just be present; other values will require a equality with `==`.
+
+revenue:
+  name: Revenue
+  geo:
+    states: true
+    offshore: true
+    counties:
+      regiontype: onshore
+      region: true
+  data:
+    - url: /data/regional/resource-revenues.tsv
+      value: Revenue
+
+    - url: /data/county/by-state/:region/resource-revenues.tsv
+      subregions: /data/county/by-state/:region/counties.tsv
+      params:
+        regiontype: onshore
+        region: true
+      value: Revenue
+      geo: +FIPS # group by county
+
+    - url: /data/offshore/revenues.tsv
+      params:
+        regiontype: offshore
+      value: Revenue
+
+production:
+  name: Production
+  disabled: true
+  geo:
+    states: true
+    offshore: true
+    counties:
+      regiontype: onshore
+  hierarchy:
+    - Product
+  data:
+    - url: /data/state/production.tsv
+      subregions: /data/county/by-state/:region/counties.tsv
+      params:
+        regiontype: onshore
+      value: Volume
+      geo: State
+
+    - url: /data/offshore/production.tsv
+      params:
+        regiontype: offshore
+      value: Volume
+      geo: Area
+
+exports:
+  name: Exports
+  geo:
+    states: true
+  data:
+    - url: /data/state/exports-by-industry.tsv
+      value: Value
+      geo: State
+
+jobs:
+  name: Jobs
+  disabled: true
+  geo:
+    states: true
+  varies:
+    - Type
+  data:
+    - url: /data/state/gdp.tsv
+      geo: State
+      value: GDP

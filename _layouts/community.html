@@ -10,7 +10,8 @@ layout: default
   <section class="container communities-content">
   
 		<article class="communities-left">
-			{% if page.permalink != '/communities/' %}
+
+			{% if page.template == custom %}
 		    
 				{% if page.resource == 'oil' %}
 				  <h3><img src="/img/oil.png" alt="oil rig">Oil</h3>

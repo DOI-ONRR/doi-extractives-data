@@ -5,100 +5,90 @@ layout: default
 <div id="communities" class="communities">
 
   {% include communities_intro.html %}
+  
   <section class="container communities-content">
-     
+  
+		<article class="communities-left">
+			{% if page.permalink != '/communities/' %}
+		    
+				{% if page.resource == 'oil' %}
+				  <h3><img src="/img/oil.png" alt="oil rig">Oil</h3>
+				{% elsif page.resource == 'gas' %}
+					<h3><img src="/img/gas.png" alt="gas burner" class="gas">Natural Gas</h3>
+				{% elsif page.resource == 'coal' %}
+					<h3><img src="/img/coal.png" alt="coal cart">Coal</h3>
+				{% elsif page.resource == 'gold' %}
+					<h3><img src="/img/gold.png" alt="goal inguts">Gold</h3>
+				{% elsif page.resource == 'copper' %}
+					<h3><img src="/img/copper.png" alt="copper penny" class="copper">Copper</h3>
+				{% elsif page.resource == 'iron' %}
+					<h3><img src="/img/iron.png" alt="iron ore" class="iron">Iron</h3>
+				{% endif %}
 
-	<article class="communities-left">
-    
-		{% if page.resource == 'oil' %}
-		  <h3><img src="/img/oil.png" alt="oil rig">Oil</h3>
-		{% elsif page.resource == 'gas' %}
-			<h3><img src="/img/gas.png" alt="gas burner" class="gas">Natural Gas</h3>
-		{% elsif page.resource == 'coal' %}
-			<h3><img src="/img/coal.png" alt="coal cart">Coal</h3>
-		{% elsif page.resource == 'gold' %}
-			<h3><img src="/img/gold.png" alt="goal inguts">Gold</h3>
-		{% elsif page.resource == 'copper' %}
-			<h3><img src="/img/copper.png" alt="copper penny" class="copper">Copper</h3>
-		{% elsif page.resource == 'iron' %}
-			<h3><img src="/img/iron.png" alt="iron ore" class="iron">Iron</h3>
-		{% endif %}
+			  {% for section in page.sections %}
+			    {% if section.name == page.sections[0].name %}
+			      <h2><a name="{{section.name}}">{{section.title}}</a></h2>
+			    {% else %}
+			      <h3><a name="{{section.name}}">{{section.title}}</a></h3>
+			    {% endif %}
 
-	  {% for section in page.sections %}
-	    {% if section.name == page.sections[0].name %}
-	      <h2><a name="{{section.name}}">{{section.title}}</a></h2>
-	    {% else %}
-	      <h3><a name="{{section.name}}">{{section.title}}</a></h3>
-	    {% endif %}
+			    {% for paragraph in section.paragraphs %}
+			    	{% if paragraph.list %}
+			    		<ul>
+			    		{% for item in paragraph.list %}
+			    			<li>{{item}}</li>
+			    		{% endfor %}
+			    		</ul>
+			    	{% else %}
+				      <p>{{paragraph}}</p>
+				    {% endif %}
+			    {% endfor %}
 
-	    {% for paragraph in section.paragraphs %}
-	      <p>{{paragraph}}</p>
-	    {% endfor %}
-
-	    {% if section.images %}
-	      {% for image in section.images %}
-	        <img src="{{image.src}}" alt="{{image.description}}" class="community-graph">
-	      {% endfor %}
-	    {% endif %}
-
-	    {% if section.table %}
-		    <table>
-		      	<thead>
-			      {% for columns in section.table %}
-			      		{% for column in columns %}
-			      		<th>{{column[0]}}</th>
-			      		{% endfor %}
+			    {% if section.images %}
+			      {% for image in section.images %}
+			        <img src="{{image.src}}" alt="{{image.description}}" class="community-graph">
 			      {% endfor %}
-	      	</thead>
-			      	<tbody>
-			      	{% for columns in section.table %}
-				      	{% capture rows %}{{ section.table | size }}{% endcapture %}
-				      		{% for num in (0..rows) %}
-					      	{% for column in columns limit: rows %}		
-					      			<tr>
-					      			
-							      		{% capture header %}{{column[0]}}{% endcapture %}
-							      		<td>{{columns[header][num]}}</td>
-							      		
-						      		</tr>
-						      		
-					      		
-				      		{% endfor %}
-				      		{% endfor %}
-				      {% endfor %}
-			       	</tbody>
-	      	
-	      </table>
-	    {% endif %}
+			    {% endif %}
 
-	  {% endfor %}
+			    {% if section.list %}
+				    <ul class="bullet list-para">
+			      {% for item in section.list %}
+			        
+			          <li>{{item}}</li>
+			      {% endfor %}
+			      </ul>
+			    {% endif %}
 
-<!-- {% for row in columns[column[0]] %}
-						      		<td>{{row}}</td>
-					      		{% endfor %} -->
-	  {{content}}
+			    {% if section.table %}
+				    <div>{{section.table}}</div>
+			    {% endif %}
 
-		 <section class="footnotes">
+			  {% endfor %}				      
 
-	    <h3 id="footnote-label">Notes</h3>
+			  {{content}}
+		  {% else %}
+				{{content}}
+			{% endif %}
 
-	    <ol class="decimal list-para">
-	    {% if page.footnotes %}
-	     	{% for footnote in page.footnotes %}
-	        {% if footnote.href %}
-	          <li id="{{footnote.name}}"><a href="{{footnote.href}}">{{footnote.text}}</a> <a href="#footnotes-ref" aria-label="Back to content">[back ↑]</a></li>
-	        {% else %}
-	          <li id="{{footnote.name}}">{{footnote.text}} <a href="#footnotes-ref" aria-label="Back to content">[back ↑]</a></li>
-	        {% endif %}
-	      {% endfor %}
-	    {% endif %}
-	      
-	    </ol>
+			<section class="footnotes">
 
-	  </section>
+		    <h3 id="footnote-label">Notes</h3>
 
+		    <ol class="decimal list-para">
+			    {% if page.footnotes %}
+			     	{% for footnote in page.footnotes %}
+			        {% if footnote.href %}
+			          <li id="{{footnote.name}}"><a href="{{footnote.href}}">{{footnote.text}}</a> <a href="#footnotes-ref" aria-label="Back to content">[back ↑]</a></li>
+			        {% else %}
+			          <li id="{{footnote.name}}">{{footnote.text}} <a href="#footnotes-ref" aria-label="Back to content">[back ↑]</a></li>
+			        {% endif %}
+			      {% endfor %}
+			    {% endif %}
+		    </ol>
 
-	</article>
+		  </section>
+
+		</article>
 
 		<div class="communities-right communities-sticky-nav">
 
@@ -106,18 +96,25 @@ layout: default
 
 		    <ul>
 		      {% for section in page.sections %}
-		        {% if section.name == page.sections[0].name %}
-		          <li class="active"><a href="#{{section.name}}">{{section.title}}</a></li>
-		        {% else %}
-		          <li><a href="#{{section.name}}">{{section.title}}</a></li>
-		        {% endif %}
+		      	{% if section.nav_name %}
+			        {% if section.name == page.sections[0].name %}
+			          <li class="active"><a href="#{{section.name}}">{{section.nav_name}}</a></li>
+			        {% else %}
+			          <li><a href="#{{section.name}}">{{section.nav_name}}</a></li>
+			        {% endif %}
+			      {% else %}
+			      	{% if section.name == page.sections[0].name %}
+			          <li class="active"><a href="#{{section.name}}">{{section.title}}</a></li>
+			        {% else %}
+			          <li><a href="#{{section.name}}">{{section.title}}</a></li>
+			        {% endif %}
+			      {% endif %}
 		      {% endfor %}
 		    </ul>
 
 		  </nav>
 
 		</div>
-
 
   </section>
 </div>

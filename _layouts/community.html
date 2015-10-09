@@ -36,13 +36,48 @@ layout: default
 	    {% for paragraph in section.paragraphs %}
 	      <p>{{paragraph}}</p>
 	    {% endfor %}
+
 	    {% if section.images %}
 	      {% for image in section.images %}
-	        <img src="{{image.src}}" alt="{{image.alt}}" class="community-graph">
+	        <img src="{{image.src}}" alt="{{image.description}}" class="community-graph">
 	      {% endfor %}
 	    {% endif %}
+
+	    {% if section.table %}
+		    <table>
+		      	<thead>
+			      {% for columns in section.table %}
+			      		{% for column in columns %}
+			      		<th>{{column[0]}}</th>
+			      		{% endfor %}
+			      {% endfor %}
+	      	</thead>
+			      	<tbody>
+			      	{% for columns in section.table %}
+				      	{% capture rows %}{{ section.table | size }}{% endcapture %}
+				      		{% for num in (0..rows) %}
+					      	{% for column in columns limit: rows %}		
+					      			<tr>
+					      			
+							      		{% capture header %}{{column[0]}}{% endcapture %}
+							      		<td>{{columns[header][num]}}</td>
+							      		
+						      		</tr>
+						      		
+					      		
+				      		{% endfor %}
+				      		{% endfor %}
+				      {% endfor %}
+			       	</tbody>
+	      	
+	      </table>
+	    {% endif %}
+
 	  {% endfor %}
 
+<!-- {% for row in columns[column[0]] %}
+						      		<td>{{row}}</td>
+					      		{% endfor %} -->
 	  {{content}}
 
 		 <section class="footnotes">

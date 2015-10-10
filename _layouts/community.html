@@ -9,8 +9,6 @@ layout: default
   <section class="container communities-content">
   
 		<article class="communities-left">
-
-			{% if page.template == custom %}
 		    
 				{% if page.resource == 'oil' %}
 				  <h3><img src="/img/oil.png" alt="oil rig">Oil</h3>
@@ -26,68 +24,8 @@ layout: default
 					<h3><img src="/img/iron.png" alt="iron ore" class="iron">Iron</h3>
 				{% endif %}
 
-			  {% for section in page.sections %}
-			    {% if section.name == page.sections[0].name %}
-			      <h2><a name="{{section.name}}">{{section.title}}</a></h2>
-			    {% else %}
-			      <h3><a name="{{section.name}}">{{section.title}}</a></h3>
-			    {% endif %}
-
-			    {% for paragraph in section.paragraphs %}
-			    	{% if paragraph.list %}
-			    		<ul>
-			    		{% for item in paragraph.list %}
-			    			<li>{{item}}</li>
-			    		{% endfor %}
-			    		</ul>
-			    	{% else %}
-				      <p>{{paragraph}}</p>
-				    {% endif %}
-			    {% endfor %}
-
-			    {% if section.images %}
-			      {% for image in section.images %}
-			        <img src="{{image.src}}" alt="{{image.description}}" class="community-graph">
-			      {% endfor %}
-			    {% endif %}
-
-			    {% if section.list %}
-				    <ul class="bullet list-para">
-			      {% for item in section.list %}
-			        
-			          <li>{{item}}</li>
-			      {% endfor %}
-			      </ul>
-			    {% endif %}
-
-			    {% if section.table %}
-				    <div>{{section.table}}</div>
-			    {% endif %}
-
-			  {% endfor %}				      
-
-			  {{content}}
-		  {% else %}
-				{{content}}
-			{% endif %}
-
-			<section class="footnotes">
-
-		    <h3 id="footnote-label">Notes</h3>
-
-		    <ol class="decimal list-para">
-			    {% if page.footnotes %}
-			     	{% for footnote in page.footnotes %}
-			        {% if footnote.href %}
-			          <li id="{{footnote.name}}"><a href="{{footnote.href}}">{{footnote.text}}</a> <a href="#footnotes-ref" aria-label="Back to content">[back ↑]</a></li>
-			        {% else %}
-			          <li id="{{footnote.name}}">{{footnote.text}} <a href="#footnotes-ref" aria-label="Back to content">[back ↑]</a></li>
-			        {% endif %}
-			      {% endfor %}
-			    {% endif %}
-		    </ol>
-
-		  </section>
+			  {{content | markdownify}}
+		
 
 		</article>
 
@@ -96,21 +34,15 @@ layout: default
 		  <nav>
 
 		    <ul>
-		      {% for section in page.sections %}
-		      	{% if section.nav_name %}
-			        {% if section.name == page.sections[0].name %}
-			          <li class="active"><a href="#{{section.name}}">{{section.nav_name}}</a></li>
+		      {% if page.nav_items %}
+		      	{% for item in page.nav_items %}
+			        {% if item.name == page.nav_items[0].name %}
+			          <li class="active"><a href="#{{item.name}}">{{item.title}}</a></li>
 			        {% else %}
-			          <li><a href="#{{section.name}}">{{section.nav_name}}</a></li>
+			          <li><a href="#{{item.name}}">{{item.title}}</a></li>
 			        {% endif %}
-			      {% else %}
-			      	{% if section.name == page.sections[0].name %}
-			          <li class="active"><a href="#{{section.name}}">{{section.title}}</a></li>
-			        {% else %}
-			          <li><a href="#{{section.name}}">{{section.title}}</a></li>
-			        {% endif %}
-			      {% endif %}
-		      {% endfor %}
+			      {% endfor %}
+		      {% endif %}
 		    </ul>
 
 		  </nav>

@@ -10,8 +10,6 @@ layout: default
   <section class="container communities-content">
 
 		<article class="communities-left">
-
-			{% if page.template == custom %}
 		    
 				{% if page.resource == 'oil' %}
 				  <h3><img src="{{ site.baseurl }}/img/oil.png" alt="oil rig">Oil</h3>
@@ -30,7 +28,6 @@ layout: default
 
 			  {{content | markdownify}}
 		
-
 		</article>
      
 

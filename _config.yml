@@ -1,5 +1,9 @@
 title: US EITI
 
+markdown: redcarpet
+redcarpet:
+  extensions: [footnotes]
+
 sass:
   style: compressed
 
@@ -14,3 +18,8 @@ exclude:
 - styles
 - test
 - views
+
+collections:
+  communities:
+    output: true
+    permalink: /communities/:community/

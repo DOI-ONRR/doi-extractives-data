@@ -1,9 +1,5 @@
 title: US EITI
 
-markdown: redcarpet
-redcarpet:
-  extensions: [footnotes]
-
 sass:
   style: compressed
 

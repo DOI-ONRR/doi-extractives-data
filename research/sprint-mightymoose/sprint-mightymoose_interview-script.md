@@ -1,4 +1,4 @@
-# Front page user interview questions, sprint 17b
+# Information architecture user interview questions, Sprint Mighty Moose
 
 
 ## Introductory comments

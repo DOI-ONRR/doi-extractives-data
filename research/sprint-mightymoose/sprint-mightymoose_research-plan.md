@@ -1,4 +1,4 @@
-# Front page research plan
+# Information architecture research plan
 
 ## Goals / Questions
 Goals | Questions

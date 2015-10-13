@@ -3,8 +3,8 @@
 ## Goals / Questions
 Goals | Questions
 :----- | :---------
-Evaluate global navigation | Do people understand the terms we've chosen for the global navigation
- | What do people think they'll find if they click on those terms
+Evaluate global navigation | Do people understand the terms we've chosen for the global navigation?
+ | What do people think they'll find if they click on those terms?
 Evaluate front page | Do people understand what the site is about?
 Prioritize what to fix | What problems are most severe?
 

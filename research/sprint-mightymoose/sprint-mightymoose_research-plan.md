@@ -13,7 +13,7 @@ Prioritize what to fix | What problems are most severe?
 
 After a development pause to wait for multi-stakeholder group decisions on content and available datasets, the team is back in full-time business to continue site work. With this additional information about content and data, we have re-thought the site information architecture and have proposed changes to test.
 
-More information on the proposed information architecture is [here](https://github.com/18F/doi-extractives-data/issues/622).
+More information on the proposed information architecture is [here](https://github.com/18F/doi-extractives-data/issues/622). We have two versions of microcopy for the global nav to test.
 
 
 ### Metrics

@@ -10,6 +10,8 @@ Very brief discussion of the **purpose** of today's test:  "My goal today is to 
 
 ## Main questions
 
+_Pull up one of the versions of the site png in a web browser. Record which one you're using for this test in your notes. We will only use one per participant._
+
 "I’ve got a sample page from our new site here. This is just a picture of what it will look like, it's not clickable."
 
 "Imagine somebody sent you a link to this site and this is what popped up in front of you when you clicked on the link. I'd like to ask you some general questions about what you see here. If you could, please talk out loud as you explore and walk me through what you're thinking. This will help us understand how to improve things later."
@@ -18,13 +20,9 @@ Very brief discussion of the **purpose** of today's test:  "My goal today is to 
 
 2. "Who do you think the intended audience is for the site?"
 
-3. "What does this website tell you about natural resources?"
+3. _Draw the participant's attention to the global nav_ "Can you tell me what you think you'll see when you click on [nav item]?" _Ask this question for all nav items except HOME._
 
-4. _Draw the participant's attention to the global nav_ "Can you tell me what you think you'll find when you click on [nav item]?"
-
-5. "What did you learn from this website?"
-
-6. "What questions does this leave you with? Can you walk me through things you think are confusing?"
+4. "What questions does this site leave you with? Can you walk me through things you think are confusing?"
 
 
 ## Wrap up

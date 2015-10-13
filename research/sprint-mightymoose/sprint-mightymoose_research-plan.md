@@ -34,3 +34,7 @@ Script available [here](https://github.com/18F/doi-extractives-data/blob/researc
 
 
 ## Test asset(s)
+
+[Version A](https://github.com/18F/doi-extractives-data/blob/research/assets/img/mightymoose/EITI-Home-101315-A.png)
+
+[Version B](https://github.com/18F/doi-extractives-data/blob/research/assets/img/mightymoose/EITI-Home-101315-B.png)

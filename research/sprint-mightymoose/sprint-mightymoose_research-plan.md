@@ -3,39 +3,34 @@
 ## Goals / Questions
 Goals | Questions
 :----- | :---------
+Evaluate global navigation | Do people understand the terms we've chosen for the global navigation
+ | What do people think they'll find if they click on those terms
 Evaluate front page | Do people understand what the site is about?
- | Do people feel comfortable with the story structure on the site?
-Test terms | Do people understand the term 'extractive resources'?
- | Do people understand the term 'civil society'?
 Prioritize what to fix | What problems are most severe?
 
 
 ## Background
 
-Sprint 17 research revealed that the site was conveying the general tone and content effectivly. However, people did not understand what the USEITI was, why they should care or what the site was for writ large. Potentially related was a general feeling of 'un-archored' -- what should I click on first? Is there an order to this site?
+After a development pause to wait for multi-stakeholder group decisions on content and available datasets, the team is back in full-time business to continue site work. With this additional information about content and data, we have re-thought the site information architecture and have proposed changes to test.
 
-We have made adjustments to the layout and content that attempt to address these results and are running another test in the second week of Sprint 17 to test these changes.
+More information on the proposed information architecture is [here](https://github.com/18F/doi-extractives-data/issues/622).
 
 
 ### Metrics
 
+* Whether participants understand what they'll find when they click on words in the global navigation
 * Whether participants understand what the USEITI is
-* Whether participants seem engaged/excited to learn more and click into content
-* Whether participants feel comforable engaging with/clicking on content
 
 
 ## Methods
-* 5-10 min interview with 18F-ers and Deloitte-ers who are unfamiliar with USEITI
+* 5-10 min interview with GSA-ers and Pima County, Arizona citizens who are unfamiliar with USEITI.
 * Notes, no recording
 * In-person
 
 
 ## Script
 
-Script available [here](https://github.com/18F/doi-extractives-data/blob/research/research/sprint17b/sprint17b_interview-script.md).
+Script available [here](https://github.com/18F/doi-extractives-data/blob/research/research/sprint17b/sprint-mightymoose_interview-script.md).
 
 
 ## Test asset(s)
-
-We will be testing a live prototype site at [eiti-content.webflow.io](http://eiti-content.webflow.io). A record of what that url looked like during testing is available [here](https://github.com/18F/doi-extractives-data/blob/research/assets/img/sprint17b-frontpage.png).
-

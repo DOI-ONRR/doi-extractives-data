@@ -10,19 +10,21 @@ Very brief discussion of the **purpose** of today's test:  "My goal today is to 
 
 ## Main questions
 
-"I’ve got a prototype version of our new site here. It is not really 'real' yet -- it is more like a Powerpoint than a full website, and some parts aren't clickable yet."
+"I’ve got a sample page from our new site here. This is just a picture of what it will look like, it's not clickable."
 
 "Imagine somebody sent you a link to this site and this is what popped up in front of you when you clicked on the link. I'd like to ask you some general questions about what you see here. If you could, please talk out loud as you explore and walk me through what you're thinking. This will help us understand how to improve things later."
 
-1. "OK. First of all, can you tell me (in your own words) what you think this site is for?" 
+1. "OK. First of all, can you tell me (in your own words) what you think this site is for?"
 
 2. "Who do you think the intended audience is for the site?"
 
-3. "What does this website tell you about extractive resources?" _Note: notice whether or not participants understand this term. If they are confused, explain that extractive resources are things like oil, gas, coal and gold._
+3. "What does this website tell you about natural resources?"
 
-3. "What did you learn from this website?"
+4. _Draw the participant's attention to the global nav_ "Can you tell me what you think you'll find when you click on [nav item]?"
 
-4. "What questions does this leave you with? Can you walk me through things you think are confusing?"
+5. "What did you learn from this website?"
+
+6. "What questions does this leave you with? Can you walk me through things you think are confusing?"
 
 
 ## Wrap up

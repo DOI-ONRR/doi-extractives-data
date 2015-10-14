@@ -34,7 +34,7 @@ Oil production increased dramatically in 1977 with the opening of the Alaska Pip
 
 In 2013, the North Slope Borough produced 182.5 million bbl of oil, on both state-owned and federal land.[^8] Since production at Prudhoe Bay commenced, all of the North Slope’s extraction has taken place in the northern portion of the Colville-Canning province, administered by either the Alaska Dept. of Natural Resourcesor the Bureau of Land Management (BLM). Once exclusively dominated by three companies, North Slope exploration and extraction has diversified significantly, with 63 current lease holders from seven countries.[^9] Annual oil production in the borough peaked in 1988 at 722 million bbl and has steadily declined since that time.[^10]
 
-<img src="/img/counties/ak-production.png" alt="Oil Production in North Slope" class="community-graph">
+<img src="{{ site.baseurl }}/img/counties/ak-production.png" alt="Oil Production in North Slope" class="community-graph">
 
 <h3><a name="emplo">Employment</a></h3>
 

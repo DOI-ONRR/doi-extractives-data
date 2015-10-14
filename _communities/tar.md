@@ -34,13 +34,13 @@ For many years, the Barnett Shale acted as an important sealing cap rock for con
 
 In 2013, Tarrant and Johnson counties produced a combined 1.16 trillion cubic feet of natural gas from state-owned lands, constituting a significant portion of Texas’ total 7.73 trillion cubic feet output.[^4] Almost all other drilling in the state occurs on private lands, as only 1.8% of the acreage in the state of Texas is federal land.[^5] This output is particularly remarkable given that only ten years prior, the two counties were producing 7% of their 2013 amount.[^6] However, production began to drop in 2013 with falling natural gas prices and strong global supplies.
 
-<img src="/img/counties/tx-production.png" alt="Tarrant and Johnson Counties Natural Gas Production on State-Owned Lands 2004 – 2013" class="community-graph">
+<img src="{{ site.baseurl }}/img/counties/tx-production.png" alt="Tarrant and Johnson Counties Natural Gas Production on State-Owned Lands 2004 – 2013" class="community-graph">
 
 <h3><a name="emplo">Employment</a></h3>
 
 The boom in natural gas production in the Barnett Shale over the past decade increased employment in the sector. In 2013, the oil and gas industry, including extraction, drilling, and support services, employed an estimated 7,371 residents, or &lt;.01% of the two counties’ total population of 2.07 million.[^7] Based on data from the U.S. Census Bureau, this employment number has more than quadrupled in the past decade.[^8]
 
-<img src="/img/counties/tx-employment.png" alt="Tarrant and Johnson Counties Oil and Gas Industry Employment Trend 2004 - 2013" class="community-graph">
+<img src="{{ site.baseurl }}/img/counties/tx-employment.png" alt="Tarrant and Johnson Counties Oil and Gas Industry Employment Trend 2004 - 2013" class="community-graph">
 
 <h3><a name="reven">Revenues</a></h3>
 

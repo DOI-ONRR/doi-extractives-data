@@ -1,7 +1,7 @@
 <select
   id="{{ location_selector_id }}"
   {% if location_selector_url_prefix %}
-  onchange="window.location = '{{ location_selector_url_prefix }}' + this.value"
+  onchange="window.location = '{{ site.baseurl }}{{ location_selector_url_prefix }}' + this.value"
   {% endif %}
   data-selected="{{ location_selector_selected }}">
   {% if location_selector_none %}

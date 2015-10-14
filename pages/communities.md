@@ -20,7 +20,7 @@ permalink: /communities/
         <img src="/img/gold.png" alt="goal inguts">
         <img src="/img/copper.png" alt="copper penny" class="copper">
         <img src="/img/iron.png" alt="iron ore" class="iron">
-        <a name="intro">Six commodities</a>
+        <a class="communities-section" name="intro">Six commodities</a>
       </h3>
 
       <h2>Twelve community narratives</h2>
@@ -38,7 +38,7 @@ permalink: /communities/
 
       <h3>Or, read more about how to interpret these studies:</h3>
 
-      <h3><a name="reven">Revenue Sustainability</a></h3>
+      <h3><a class="communities-section" name="reven">Revenue Sustainability</a></h3>
 
       <p>Local governments and communities must consider the many ways natural resource management and extraction can affect their fiscal health. One of the most significant considerations is the sustainability of the revenues local governments receive due to natural resource extraction. Multiple EITI guiding principles reference revenue sustainability as a critical factor in making natural resource wealth <a href="#eiti-engine" aria-describedby="footnote-label" id="footnotes-ref">&ldquo;an engine for sustainable economic growth.&rdquo;</a> However, when it comes to managing this critical factor, there are two challenges localities need to address:</p>
 
@@ -49,7 +49,7 @@ permalink: /communities/
 
       <p>Each county narrative provides historical context, commodity production rates, employment levels, revenues generated from production, and—where publically available from a government source—local public fiscal costs stemming from extraction (specifically, transportation/roads, water, reclamation, and emergency services).</p>
 
-      <h3><a name="county-rev">Community Revenues</a></h3>
+      <h3><a name="county-rev" class="communities-section">Community Revenues</a></h3>
 
       <p>At the county level, revenues received from extractive activities take many forms. For example, some payments originate from taxes on land ownership, while others are based on ownership of the natural resource itself. There are also different methods of valuation, ranging from payments at the point-of-sale, to annual taxes, to those based on an estimated value. For the purposes of this report, the four most common categories are: property taxes, sales and use taxes, state transfer payments, and additional production taxes.</p>
 
@@ -60,7 +60,7 @@ permalink: /communities/
         <li><strong>County production taxes.</strong> Severance taxes or other payments paid by extractive industries to the county based on the volume or value of resources extracted, or per lease terms if the county is the landowner.</li>
       </ul>
 
-      <h3><a name="county-cos">Community Costs</a></h3>
+      <h3><a name="county-cos" class="communities-section">Community Costs</a></h3>
 
       <p>More often than not, local governments must also make financial investments in their communities to support the extractive industries. These can vary based on the size of the community, the state of its current infrastructure, and the type of natural resources extracted (e.g., coal mining vs. natural gas drilling). <a href="#local-gov-costs-rev" aria-describedby="footnote-label" id="footnotes-ref">In some circumstances, these costs are outweighed by the influx of revenues, while in other cases costs can result in net negative fiscal effects on local governments.</a> Given these possibilities and considerations, these case studies focus on four types of fiscal costs at the local level:</p>
 
@@ -73,7 +73,7 @@ permalink: /communities/
 
       <p>There are additional fiscal benefits and burdens associated with extractive activities than those addressed in this report. For example, a local government may receive in-kind revenues from the extractive industries, such as payment for a new public road that company employees will also use to access work sites. Another fiscal cost may be the additional government staff needed to manage growing public services required to support extractive activities. While all are worthy of careful consideration by local communities and governments, this year’s report begins this discussion by focusing on the revenues and costs as defined above.</p>
 
-      <h3><a name="data">Where We Got Our Data</a></h3>
+      <h3><a name="data" class="communities-section">Where We Got Our Data</a></h3>
 
       <p>This work used a range of publically-available online information to write these community case studies, including government databases, documents, and reports, as well as those produced by government councils. They integrate data and analysis already reported elsewhere by government bodies. Local data sources were prioritized, and data was collected and presented at the most granular level available. For example, state information took the place of county information when the latter was not available.</p>
 
@@ -103,11 +103,11 @@ permalink: /communities/
       <nav>
 
         <ul>
-          <li class="active"><a href="#intro">Introduction</a></li>
-          <li><a href="#reven">Revenue Sustainability</a></li>
-          <li><a href="#county-rev">Revenues</a></li>
-          <li><a href="#county-cos">Costs</a></li>
-          <li><a href="#data">Our Data</a></li>
+          <li class="communities-nav-item active intro"><a name="#intro" href="#intro">Introduction</a></li>
+          <li class="communities-nav-item reven"><a href="#reven">Revenue Sustainability</a></li>
+          <li class="communities-nav-item county-rev"><a href="#county-rev">Revenues</a></li>
+          <li class="communities-nav-item county-cos"><a href="#county-cos">Costs</a></li>
+          <li class="communities-nav-item data"><a href="#data">Our Data</a></li>
         </ul>
 
       </nav>

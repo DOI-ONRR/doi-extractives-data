@@ -39,9 +39,9 @@ scripts:
 		      {% if page.nav_items %}
 		      	{% for item in page.nav_items %}
 			        {% if item.name == page.nav_items[0].name %}
-			          <li class="active"><a href="#{{item.name}}">{{item.title}}</a></li>
+			          <li class="communities-nav-item active {{item.name}}"><a href="#{{item.name}}">{{item.title}}</a></li>
 			        {% else %}
-			          <li><a href="#{{item.name}}">{{item.title}}</a></li>
+			          <li class="communities-nav-item {{item.name}}"><a href="#{{item.name}}">{{item.title}}</a></li>
 			        {% endif %}
 			      {% endfor %}
 		      {% endif %}

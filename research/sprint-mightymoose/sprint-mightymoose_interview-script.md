@@ -10,7 +10,7 @@ Very brief discussion of the **purpose** of today's test:  "My goal today is to 
 
 ## Main questions
 
-_Pull up one of the versions of the site png in a web browser. Record which one you're using for this test in your notes. We will only use one per participant._
+_Show the in-person participant the latest version of the site and give them computer control, or ask the remote participant to click on the InVision link to the 'live' mock and share their screen._
 
 "I’ve got a sample page from our new site here. This is just a picture of what it will look like, it's not clickable."
 

@@ -24,7 +24,7 @@ More information on the proposed information architecture is [here](https://gith
 
 
 ## Methods
-* 5-10 min interview with GSA-ers and Pima County, Arizona citizens who are unfamiliar with USEITI.
+* 5-10 min interviews with GSA-ers and citizens of Tucson, Arizona; Minneapolis, Minnesota; and St. Germain, Wisconsin.
 * Notes, no recording
 * In-person
 

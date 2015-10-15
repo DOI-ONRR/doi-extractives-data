@@ -6,6 +6,7 @@ Goals | Questions
 Evaluate global navigation | Do people understand the terms we've chosen for the global navigation?
  | What do people think they'll find if they click on those terms?
 Evaluate front page | Do people understand what the site is about?
+ | We've starting moving towards global nav as categories throughout the site. Is this making the information structure clearer?
 Prioritize what to fix | What problems are most severe?
 
 
@@ -13,7 +14,7 @@ Prioritize what to fix | What problems are most severe?
 
 After a development pause to wait for multi-stakeholder group decisions on content and available datasets, the team is back in full-time business to continue site work. With this additional information about content and data, we have re-thought the site information architecture and have proposed changes to test.
 
-More information on the proposed information architecture is [here](https://github.com/18F/doi-extractives-data/issues/622). We have two versions of microcopy for the global nav to test.
+More information on the proposed information architecture is [here](https://github.com/18F/doi-extractives-data/issues/622).
 
 
 ### Metrics
@@ -35,6 +36,6 @@ Script available [here](https://github.com/18F/doi-extractives-data/blob/researc
 
 ## Test asset(s)
 
-[Version A](https://github.com/18F/doi-extractives-data/blob/research/assets/img/mightymoose/EITI-Home-101315-A.png)
+[Liveshare](https://invis.io/Z74KBDQQH)
 
-[Version B](https://github.com/18F/doi-extractives-data/blob/research/assets/img/mightymoose/EITI-Home-101315-B.png)
+[Image](https://github.com/18F/doi-extractives-data/blob/research/assets/img/mightymoose/mighty-moose.png)

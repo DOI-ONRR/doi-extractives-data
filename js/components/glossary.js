@@ -20,7 +20,6 @@ var accessibility = {
   }
 }
 
-
 var KEYCODE_ESC = 27;
 
 var defaultSelectors = {

@@ -28,7 +28,7 @@ permalink: /about/
 
       <div class="communities-right">
 
-        <img src="/img/eiti-report.jpg" alt="The EITI report process" class="u-img" style="padding-top:50px;">
+        <img src="{{ site.baseurl }}/img/eiti-report.jpg" alt="The EITI report process" class="u-img" style="padding-top:50px;">
 
       </div>
 
@@ -46,7 +46,7 @@ permalink: /about/
 
       <div class="communities-right">
 
-        <img src="/img/nat-gas-well.jpg" alt="Natural gas well in Colorado" class="u-img">
+        <img src="{{ site.baseurl }}/img/nat-gas-well.jpg" alt="Natural gas well in Colorado" class="u-img">
 
       </div>
 
@@ -62,7 +62,7 @@ permalink: /about/
 
       <div class="communities-right">
 
-        <img src="/img/eiti-msg.jpg" alt="Multi-stakeholder group process" class="u-img" style="width:70%;">
+        <img src="{{ site.baseurl }}/img/eiti-msg.jpg" alt="Multi-stakeholder group process" class="u-img" style="width:70%;">
 
       </div>
 
@@ -82,7 +82,7 @@ permalink: /about/
 
       <article>
         <div>
-          <img src="/img/logos/BIA-mark.png" alt="U.S. Department of the Interior Bureau of Indian Affairs 1824 Seal">
+          <img src="{{ site.baseurl }}/img/logos/BIA-mark.png" alt="U.S. Department of the Interior Bureau of Indian Affairs 1824 Seal">
         </div>
         <div>
           <h3>Bureau of Indian Affairs</h3>
@@ -93,7 +93,7 @@ permalink: /about/
 
       <article>
         <div>
-          <img src="/img/logos/BLM-mark.png" alt="U.S. Department of the Interior Bureau of Land Management Seal">
+          <img src="{{ site.baseurl }}/img/logos/BLM-mark.png" alt="U.S. Department of the Interior Bureau of Land Management Seal">
         </div>
         <div>
           <h3>Bureau of Land Management</h3>
@@ -104,7 +104,7 @@ permalink: /about/
 
       <article>
         <div>
-          <img src="/img/logos/BOEM-mark.png" alt="BOEM Bureau of Ocean Energy Management Seal">
+          <img src="{{ site.baseurl }}/img/logos/BOEM-mark.png" alt="BOEM Bureau of Ocean Energy Management Seal">
         </div>
         <div>
           <h3>Bureau of Ocean Energy Management</h3>
@@ -115,7 +115,7 @@ permalink: /about/
 
       <article>
         <div>
-          <img src="/img/logos/USBR-mark.png" alt="U.S. Department of the Interior Bureau of Reclamation Seal">
+          <img src="{{ site.baseurl }}/img/logos/USBR-mark.png" alt="U.S. Department of the Interior Bureau of Reclamation Seal">
         </div>
         <div>
           <h3>Bureau of Reclamation</h3>
@@ -126,7 +126,7 @@ permalink: /about/
 
       <article>
         <div>
-          <img src="/img/logos/BSEE-mark.png" alt="BSEE Bureau of Safety and Environmental Enforcement Seal">
+          <img src="{{ site.baseurl }}/img/logos/BSEE-mark.png" alt="BSEE Bureau of Safety and Environmental Enforcement Seal">
         </div>
         <div>
           <h3>Bureau of Safety and Environmental Enforcement</h3>
@@ -137,7 +137,7 @@ permalink: /about/
 
       <article>
         <div>
-          <img src="/img/logos/NPS-mark.png" alt="National Park Service Seal">
+          <img src="{{ site.baseurl }}/img/logos/NPS-mark.png" alt="National Park Service Seal">
         </div>
         <div>
           <h3>National Park Service</h3>
@@ -148,7 +148,7 @@ permalink: /about/
 
       <article>
         <div>
-          <img src="/img/logos/DOI-mark.png" alt="U.S. Department of the Interior March 3, 1849 Seal">
+          <img src="{{ site.baseurl }}/img/logos/DOI-mark.png" alt="U.S. Department of the Interior March 3, 1849 Seal">
         </div>
         <div>
           <h3>Office of Natural Resources Revenue</h3>
@@ -159,7 +159,7 @@ permalink: /about/
 
       <article>
         <div>
-          <img src="/img/logos/OSMRE-mark.png" alt="U.S. Department of the Interior Office of Surface Mining Seal">
+          <img src="{{ site.baseurl }}/img/logos/OSMRE-mark.png" alt="U.S. Department of the Interior Office of Surface Mining Seal">
         </div>
         <div>
           <h3>Office of Surface Mining, Reclamation and Enforcement</h3>
@@ -170,7 +170,7 @@ permalink: /about/
 
       <article>
         <div>
-          <img src="/img/logos/USFWS-mark.png" alt="U.S. Fish and Wildlife Service Department of the Interior Seal">
+          <img src="{{ site.baseurl }}/img/logos/USFWS-mark.png" alt="U.S. Fish and Wildlife Service Department of the Interior Seal">
         </div>
         <div>
           <h3>United States Fish and Wildlife Service</h3>
@@ -181,7 +181,7 @@ permalink: /about/
 
       <article>
         <div>
-          <img src="/img/logos/USGS-mark.png" alt="USGS Science for a changing world Seal">
+          <img src="{{ site.baseurl }}/img/logos/USGS-mark.png" alt="USGS Science for a changing world Seal">
         </div>
         <div>
           <h3>United States Geological Survey</h3>

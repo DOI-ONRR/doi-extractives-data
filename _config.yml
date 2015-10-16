@@ -4,16 +4,11 @@ sass:
   style: compressed
 
 exclude:
-- bin
-- lib
-- node_modules
-- package.json
-- routes.yml
-- server.js
-- show
-- styles
-- test
-- views
+  - lib
+  - node_modules
+  - package.json
+  - show
+  - test
 
 collections:
   communities:

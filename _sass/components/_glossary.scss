@@ -1,0 +1,94 @@
+// Glossary
+//
+// Styleguide modules.glossary
+$secondary-contrast: #434343;
+$secondary: #cecece;
+$z-glossary: 5000;
+$sans-serif: Helvetica;
+
+.glossary {
+  // @include u-bg--secondary();
+  // @include transition(right, .3s);
+  border-left: 4px solid $secondary-contrast;
+  bottom: 0;
+  max-width: 30rem;
+  overflow-y: scroll;
+  padding: 2rem;
+  position: fixed;
+  top: 0;
+  width: 75%;
+  z-index: $z-glossary;
+  
+  &[aria-hidden=true] {
+    display: block !important;
+    right: -100%;
+  }
+
+  &[aria-hidden=false] {
+    // @include transition(right, .3s);
+    right: 0;
+  }
+
+  .button--close {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+.glossary__content {
+  padding: 4rem 0;
+}
+
+.glossary__item {
+  border-bottom: 1px solid $secondary-contrast;
+
+  .glossary-term {
+    margin: 0;
+  }
+
+  .glossary-definition {
+    font-family: $sans-serif;
+  }
+
+  .accordion__header {
+    padding: 1rem 4rem 1rem 0;
+  }
+
+  .accordion__button {
+    background-size: 50%;
+    margin-top: -1rem;
+    height: 2rem;
+    width: 2rem;
+  }
+}
+
+// Term classes
+//
+// Wrap glossary terms with these classes
+//
+// .term          - Standard class -- adds the book icon
+// .term--p       - Used when the term is in a body paragaraph of text, reduces padding and adds margin
+
+.term {
+  // @include u-background-image('i-term--primary', 100% 40%);
+  // @include transition(background-color, .2s, box-shadow, .2s, color, .2s);
+  background-color: transparent;
+  box-shadow: 0 0 0 4px transparent;
+  border-bottom: none;
+  cursor: pointer;
+  padding-right: 1em;
+
+  &:focus,
+  &:hover {
+    // @include u-background-image('i-term--secondary', 100% 40%);
+    box-shadow: 0 0 0 4px rgba($secondary-contrast, .7);
+    background-color: rgba($secondary-contrast, .7);
+    color: $secondary;
+  }
+}
+
+.term--p {
+  margin-right: .5rem;
+  box-shadow: none;
+}

@@ -238,9 +238,7 @@
 
         feature
           .attr('d', path)
-          .attr('id', function(d) {
-            return d.id;
-          })
+          .attr('id', evaluator(this.getAttribute('data-id') || 'id'))
           .attr('class', function(d) {
             var klass = [];
             if (d.mesh) klass.push('mesh');
@@ -445,13 +443,13 @@
     }
     if (filter) {
       filter = evaluator(filter);
-      console.log('filtering %d geometries', object.geometries.length);
+      // console.log('filtering %d geometries', object.geometries.length);
       object = {
         type: 'GeometryCollection',
         geometries: object.geometries
           .filter(filter)
       };
-      console.log('filtered %d geometries', object.geometries.length);
+      // console.log('filtered %d geometries', object.geometries.length);
     }
     var mesh = topojson.mesh(topology, object);
     mesh.mesh = true;

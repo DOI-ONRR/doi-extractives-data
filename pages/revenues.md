@@ -22,7 +22,7 @@ permalink: /resource_revenues/
 
         <figure>
 
-          <img src="/img/solar-doi.png" alt="Solar energy installation on federal land">
+          <img src="{{ site.baseurl }}/img/solar-doi.png" alt="Solar energy installation on federal land">
 
           <figcaption class="article_module-content">
             Federal desert solar farm
@@ -48,7 +48,7 @@ permalink: /resource_revenues/
           <h3>Coal <span class="revenues-fa"><i class="fa fa-chevron-right"></i></span></h3>
 
           <div class="revenues-module-icon">
-            <img src="/img/icons/coal.svg" alt="coal">
+            <img src="{{ site.baseurl }}/img/icons/coal.svg" alt="coal">
           </div>
         </div></a>
 
@@ -68,7 +68,7 @@ permalink: /resource_revenues/
           <h3>Oil &amp; Gas <span class="revenues-fa"><i class="fa fa-chevron-right"></i></span></h3>
 
           <div class="revenues-module-icon">
-            <img src="/img/icons/oil.svg" alt="oil">
+            <img src="{{ site.baseurl }}/img/icons/oil.svg" alt="oil">
           </div>
         </div></a>
 
@@ -88,7 +88,7 @@ permalink: /resource_revenues/
           <h3>Hardock <br>Minerals <span class="revenues-fa"><i class="fa fa-chevron-right"></i></span></h3>
 
           <div class="revenues-module-icon">
-            <img src="/img/icons/hardrock.svg" alt="hardrock minerals">
+            <img src="{{ site.baseurl }}/img/icons/hardrock.svg" alt="hardrock minerals">
           </div>
         </div></a>
 
@@ -108,7 +108,7 @@ permalink: /resource_revenues/
           <h3>Renewables <span class="revenues-fa"><i class="fa fa-chevron-right"></i></span></h3>
 
           <div class="revenues-module-icon">
-            <img src="/img/icons/renewables.svg" alt="renewables">
+            <img src="{{ site.baseurl }}/img/icons/renewables.svg" alt="renewables">
           </div>
         </div></a>
 
@@ -201,10 +201,10 @@ permalink: /resource_revenues/
 
 
       <ul>
-        <li><a href="/coal"><img src="/img/icons/coal.svg" alt="coal">Coal</a></li>
-        <li><a href="/resource_revenues/offshore_oil_gas"><img src="/img/icons/oil.svg" alt="coal">Oil &amp; Gas</a></li>
-        <li><a href="#"><img src="/img/icons/hardrock.svg" alt="coal">Hardrock Minerals</a></li>
-        <li><a href="/resource_revenues/onshore_renewables"><img src="/img/icons/renewables.svg" alt="coal">Renewables</a></li>
+        <li><a href="/coal"><img src="{{ site.baseurl }}/img/icons/coal.svg" alt="coal">Coal</a></li>
+        <li><a href="/resource_revenues/offshore_oil_gas"><img src="{{ site.baseurl }}/img/icons/oil.svg" alt="coal">Oil &amp; Gas</a></li>
+        <li><a href="#"><img src="{{ site.baseurl }}/img/icons/hardrock.svg" alt="coal">Hardrock Minerals</a></li>
+        <li><a href="/resource_revenues/onshore_renewables"><img src="{{ site.baseurl }}/img/icons/renewables.svg" alt="coal">Renewables</a></li>
       </ul>
 
     </section>

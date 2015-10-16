@@ -39,7 +39,7 @@
           <li><a href="{{ site.baseurl }}/about">About</a></li>
           <li><a href="{{ site.baseurl }}/data">Data</a></li>
           <li><a href="{{ site.baseurl }}/reports">Executive Summary</a></li>
-          <li><button title="View site glossary" class="js-glossary-toggle">Glossary</button></li>
+          <li><a href="#" title="View site glossary" class="js-glossary-toggle">Glossary</a></li>
           <li class="search">
             <label>Search <input type="search" name="query"></label>
           </li>
@@ -49,6 +49,8 @@
     </header>
 
     <main>
+      {% include glossary.html %}
+
       {{ content }}
     </main>
 
@@ -65,8 +67,7 @@
             <li><a href="{{ site.baseurl }}/reports">Executive Summary</a></li>
             <li><a href="{{ site.baseurl }}/reports">Reconciliation</a></li>
             <li><a href="{{ site.baseurl }}#">Search</a></li>
-            <!-- <li><a href="{{ site.baseurl }}#">Glossary</a></li> -->
-            <button title="View site glossary" class="js-glossary-toggle button--neutral site-nav__button site-nav__button--right">Glossary</button>
+            <li><a href="{{ site.baseurl }}#">Glossary</a></li>
 
           </ul>
 
@@ -111,7 +112,10 @@
       </div>
 
     </footer>
-    
+    <script src="{{ site.baseurl }}/js/vendor/jquery.min.js"></script>
+    <script src="{{ site.baseurl }}/js/vendor/lodash.min.js"></script>
+    <script src="{{ site.baseurl }}/js/vendor/list.js"></script>
+    <script src="{{ site.baseurl }}/js/components/glossary.js"></script>
     {{ page.script }}
   </body>
 

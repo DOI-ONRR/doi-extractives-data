@@ -4,7 +4,7 @@
 $secondary-contrast: #434343;
 $secondary: #cecece;
 $z-glossary: 5000;
-$sans-serif: Helvetica;
+$sans-serif: $base-font-family;
 
 .glossary {
   // @include u-bg--secondary();
@@ -16,8 +16,11 @@ $sans-serif: Helvetica;
   padding: 2rem;
   position: fixed;
   top: 0;
-  width: 75%;
+  // width: 75%;
   z-index: $z-glossary;
+
+  width:300px;
+  background-color: $white;
   
   &[aria-hidden=true] {
     display: block !important;
@@ -34,6 +37,7 @@ $sans-serif: Helvetica;
     right: 0;
     top: 0;
   }
+
 }
 
 .glossary__content {
@@ -49,17 +53,6 @@ $sans-serif: Helvetica;
 
   .glossary-definition {
     font-family: $sans-serif;
-  }
-
-  .accordion__header {
-    padding: 1rem 4rem 1rem 0;
-  }
-
-  .accordion__button {
-    background-size: 50%;
-    margin-top: -1rem;
-    height: 2rem;
-    width: 2rem;
   }
 }
 

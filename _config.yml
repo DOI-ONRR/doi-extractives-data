@@ -2,6 +2,7 @@ title: US EITI
 
 sass:
   style: compressed
+  sass_dir: _sass
 
 exclude:
 - bin

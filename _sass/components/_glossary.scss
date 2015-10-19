@@ -1,23 +1,22 @@
 // Glossary
-//
-// Styleguide modules.glossary
-$secondary-contrast: #434343;
-$secondary: #cecece;
-$z-glossary: 5000;
-$sans-serif: $base-font-family;
+
+@mixin u-background-image($image, $position: 50% 50%) {
+  background-image: url('/img/' + $image + '.png');
+  background-image: url('/img/' + $image + '.svg');
+  background-repeat: no-repeat;
+  background-position: $position;
+}
 
 .glossary {
-  // @include u-bg--secondary();
-  // @include transition(right, .3s);
-  border-left: 4px solid $secondary-contrast;
+  @include transition(right, .3s);
+  border-left: 4px solid $blue;
   bottom: 0;
   max-width: 30rem;
   overflow-y: scroll;
   padding: 2rem;
   position: fixed;
   top: 0;
-  // width: 75%;
-  z-index: $z-glossary;
+  z-index: 5000;
 
   width:300px;
   background-color: $white;
@@ -28,7 +27,7 @@ $sans-serif: $base-font-family;
   }
 
   &[aria-hidden=false] {
-    // @include transition(right, .3s);
+    @include transition(right, .3s);
     right: 0;
   }
 
@@ -43,19 +42,15 @@ $sans-serif: $base-font-family;
 
 }
 
-.glossary__content {
-  padding: 4rem 0;
-}
-
 .glossary__item {
-  border-bottom: 1px solid $secondary-contrast;
+  border-bottom: 1px solid $blue;
 
   .glossary-term {
     margin: 0;
   }
 
   .glossary-definition {
-    font-family: $sans-serif;
+    font-family: $base-font-family;
   }
 
   .accordion__header {
@@ -82,8 +77,8 @@ $sans-serif: $base-font-family;
 // .term--p       - Used when the term is in a body paragaraph of text, reduces padding and adds margin
 
 .term {
-  // @include u-background-image('i-term--primary', 100% 40%);
-  // @include transition(background-color, .2s, box-shadow, .2s, color, .2s);
+  @include u-background-image('glossary/i-term--primary', 100% 40%);
+  @include transition(background-color, .2s, box-shadow, .2s, color, .2s);
   background-color: transparent;
   box-shadow: 0 0 0 4px transparent;
   border-bottom: none;
@@ -92,10 +87,10 @@ $sans-serif: $base-font-family;
 
   &:focus,
   &:hover {
-    // @include u-background-image('i-term--secondary', 100% 40%);
-    box-shadow: 0 0 0 4px rgba($secondary-contrast, .7);
-    background-color: rgba($secondary-contrast, .7);
-    color: $secondary;
+    @include u-background-image('glossary/i-term--secondary', 100% 40%);
+    box-shadow: 0 0 0 4px rgba($blue, .7);
+    background-color: rgba($blue, .7);
+    color: $white;
   }
 }
 

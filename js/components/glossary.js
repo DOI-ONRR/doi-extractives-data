@@ -7,18 +7,18 @@
  * in a parent div. Useful for hiding elements off-canvas without setting
  * display:none, while still removing from the tab order
  */
-// var accessibility = {
-//   removeTabindex: function removeTabindex($elm) {
-//     $elm
-//       .find('a, button, :input, [tabindex]')
-//       .attr('tabindex', '-1');
-//   },
-//   restoreTabindex: function restoreTabindex($elm) {
-//     $elm
-//       .find('a, button, :input, [tabindex]')
-//       .attr('tabindex', '0');
-//   }
-// }
+var accessibility = {
+  removeTabindex: function removeTabindex($elm) {
+    $elm
+      .find('a, button, :input, [tabindex]')
+      .attr('tabindex', '-1');
+  },
+  restoreTabindex: function restoreTabindex($elm) {
+    $elm
+      .find('a, button, :input, [tabindex]')
+      .attr('tabindex', '0');
+  }
+}
 
 
 var KEYCODE_ESC = 27;
@@ -27,8 +27,7 @@ var defaultSelectors = {
   body: '#glossary',
   toggle: '.js-glossary-toggle',
   term: '.term',
-  accordionButton: '.accordion__button',
-  accordionDefinition: '.accordion__definition'
+  accordionButton: '.accordion__button'
 };
 
 /**
@@ -46,8 +45,7 @@ function Glossary(selectors) {
   self.$toggle = $(self.selectors.toggle);
   self.$search = this.$body.find('.glossary__search');
   self.$accordionButton = $(self.selectors.accordionButton);
-  self.$accordionDefinition = $(self.selectors.accordionDefinition);
-
+  
   // Initialize state
   self.isOpen = false;
 
@@ -56,7 +54,7 @@ function Glossary(selectors) {
   self.linkTerms();
 
   // Remove tabindices 
-  // accessibility.removeTabindex(self.$body);
+  accessibility.removeTabindex(self.$body);
   
   // Bind listeners
   self.$toggle.on('click', this.toggle.bind(this));
@@ -126,7 +124,7 @@ Glossary.prototype.show = function() {
   this.$toggle.addClass('active');
   this.$search.focus();
   this.isOpen = true;
-  // accessibility.restoreTabindex(this.$body);
+  accessibility.restoreTabindex(this.$body);
 };
 
 Glossary.prototype.hide = function() {
@@ -134,7 +132,7 @@ Glossary.prototype.hide = function() {
   this.$toggle.removeClass('active');
   this.$toggle.focus();
   this.isOpen = false;
-  // accessibility.removeTabindex(this.$body);
+  accessibility.removeTabindex(this.$body);
 };
 
 /** Remove existing filters on input */

@@ -158,10 +158,10 @@ Glossary.prototype.toggleAccordion = function(e) {
   // toggleClass is more concise, but this couples the button text 
   // and hide/show logic
   if ($thisDefinition.hasClass('hidden')){
-      $thisButton.text('–')
+      $thisButton.find('i').removeClass('fa-chevron-down').addClass('fa-chevron-up');
       $thisDefinition.removeClass('hidden');
   } else {
-      $thisButton.text('+')
+      $thisButton.find('i').removeClass('fa-chevron-up').addClass('fa-chevron-down');
       $thisDefinition.addClass('hidden');
   }
 };

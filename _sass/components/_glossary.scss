@@ -9,7 +9,6 @@
 
 .glossary {
   @include transition(right, .3s);
-  border-left: 4px solid $blue;
   bottom: 0;
   max-width: 30rem;
   overflow-y: scroll;
@@ -19,8 +18,12 @@
   z-index: 5000;
 
   width:300px;
-  background-color: $white;
+  background-color: $light-black;
+  color: $white;
   
+  h2, p, label, i {
+    color: $white;
+  }
   &[aria-hidden=true] {
     display: block !important;
     right: -100%;
@@ -41,16 +44,39 @@
   }
 
 }
+#glossary-header{
+  i {
+    margin-right: .75rem;
+  }
+}
+
+#glossary-search{
+  &::-webkit-input-placeholder {
+     font-style: italic;
+  }
+  &:-moz-placeholder { /* Firefox 18- */
+     font-style: italic;  
+  }
+  &::-moz-placeholder {  /* Firefox 19+ */
+     font-style: italic;  
+  }
+  &:-ms-input-placeholder {  
+     font-style: italic;  
+  }
+}
 
 .glossary__item {
-  border-bottom: 1px solid $blue;
-
+  border-bottom: 1px solid $mid-gray;
+  &:first-child{
+    border-top: 1px solid $mid-gray;
+  }
   .glossary-term {
     margin: 0;
   }
 
   .glossary-definition {
     font-family: $base-font-family;
+    padding-bottom: 1rem;
   }
 
   .accordion__header {
@@ -60,6 +86,7 @@
 
   .accordion__button {
     background-size: 50%;
+    background-color: transparent;
     margin-top: -1rem;
     height: 2rem;
     width: 2rem;

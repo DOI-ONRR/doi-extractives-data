@@ -1,11 +1,11 @@
 <div id="glossary" class="glossary"
       aria-describedby="glossary-result" aria-hidden="true">
     <button title="Close glossary"
-        class="button button--close toggle"><span class="u-visually-hidden">X</span>
+        class="button button--close toggle"><span class="u-visually-hidden"><i class="fa fa-times"></i></span>
     </button>
-    <h2>EITI Glossary</h2>
+    <h2 id="glossary-header"><i class="fa fa-book"></i> Glossary</h2>
     <label for="glossary-search" class="label">Search glossary terms</label>
-    <input id="glossary-search" class="glossary__search" type="search" placeholder="e.g. Bonus">
+    <input id="glossary-search" class="glossary__search" type="search" placeholder="e.g. Revenues">
     <div class="glossary__content" id="glossary-result">
       <ul class="glossary__list js-accordion">
         {% for term in site.data.terms %}
@@ -13,7 +13,7 @@
           <div class="js-accordion_header accordion__header">
             <h4 class="glossary-term">{{term[0]}}</h4>
             <button class="button button--secondary accordion__button js-accordion_button">
-            <span>+</span>
+            <i class="fa fa-chevron-down"></i>
               <span class="js-accordion_text u-visually-hidden" data-show="Show definition" data-hide="Hide definition"></span>
             </button>
           </div>

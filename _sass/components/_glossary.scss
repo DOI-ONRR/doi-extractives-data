@@ -1,8 +1,8 @@
 // Glossary
 
 @mixin u-background-image($image, $position: 50% 50%) {
-  background-image: url('/img/' + $image + '.png');
-  background-image: url('/img/' + $image + '.svg');
+  background-image: url($baseurl+'/img/' + $image + '.png');
+  background-image: url($baseurl+'/img/' + $image + '.svg');
   background-repeat: no-repeat;
   background-position: $position;
 }

@@ -67,6 +67,21 @@
     right: 1rem;
     top: 50%;
   }
+
+  .accordion__header {
+    padding: 1rem 4rem 1rem 0;
+    position: relative;
+  }
+
+  .accordion__button {
+    background-size: 50%;
+    margin-top: -1rem;
+    height: 2rem;
+    width: 2rem;
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+  }
 }
 
 // Term classes

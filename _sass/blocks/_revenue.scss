@@ -1,0 +1,16 @@
+section.revenue {
+
+  svg[is='eiti-map'] {
+    max-height: 300px;
+    max-height: 30vh; // 30% of the viewport height
+  }
+
+  .regions .region {
+    // display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+
+}

@@ -108,9 +108,7 @@ Glossary.prototype.findTerm = function(term) {
   this.list.search();
   _.each(this.list.visibleItems, function(item) {
     var $elm = $(item.elm).find('div');
-    if ($elm.hasClass('accordion--collapsed')) {
       $elm.find('.accordion__button').click();
-    }
   });
 };
 
@@ -160,7 +158,7 @@ Glossary.prototype.toggleAccordion = function(e) {
   // toggleClass is more concise, but this couples the button text 
   // and hide/show logic
   if ($thisDefinition.hasClass('hidden')){
-      $thisButton.text('-')
+      $thisButton.text('–')
       $thisDefinition.removeClass('hidden');
   } else {
       $thisButton.text('+')

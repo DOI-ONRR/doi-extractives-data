@@ -2,6 +2,10 @@
 title: Revenue
 layout: default
 permalink: /resources/revenue/
+regions:
+  CA:
+    content: |
+      Hey, this is California!
 ---
 <section class="revenue container">
   <h1>Revenue</h1>
@@ -34,19 +38,19 @@ permalink: /resources/revenue/
 
     </section>
 
-    {% for state in site.data.states %}
-    <section id="{{ state.id }}" class="region onshore">
-      <h1>{{ state.name }}</h1>
+    {% for region in site.data.states %}
+    <section id="{{ region.id }}" class="region onshore">
+      <h1>{{ region.name }}</h1>
 
-      <svg is="eiti-map" id="{{ state.id }}-map" simplify="1e-2"
-        projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/" zoom-to="{{ state.id }}">
+      <svg is="eiti-map" id="{{ region.id }}-map" simplify="1e-2"
+        projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/" zoom-to="{{ region.id }}">
         <g class="onshore states" data-url="us-topology.json"
           data-object="states"
-          data-filter="id === '{{ state.id }}'">
+          data-filter="id === '{{ region.id }}'">
         </g>
         <g class="onshore counties" data-url="us-topology.json"
           data-object="counties"
-          data-filter="properties.state === '{{ state.id }}'"
+          data-filter="properties.state === '{{ region.id }}'"
           data-title="properties.county"
           data-mesh="true">
         </g>
@@ -55,15 +59,15 @@ permalink: /resources/revenue/
     </section>
     {% endfor %}
 
-    {% for area in site.data.offshore_areas %}
-    <section id="{{ area.id }}" class="region offshore">
-      <h1>{{ area.name }}</h1>
+    {% for region in site.data.offshore_areas %}
+    <section id="{{ region.id }}" class="region offshore">
+      <h1>{{ region.name }}</h1>
 
-      <svg is="eiti-map" id="{{ area.id }}-map" simplify="1e-2"
-        projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/" zoom-to="{{ area.id }}">
+      <svg is="eiti-map" id="{{ region.id }}-map" simplify="1e-2"
+        projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/" zoom-to="{{ region.id }}">
         <g class="offshore areas" data-url="offshore-simple.json"
           data-title="properties.name"
-          data-filter="id === '{{ area.id }}'"
+          data-filter="id === '{{ region.id }}'"
           data-mesh="true">
         </g>
       </svg>

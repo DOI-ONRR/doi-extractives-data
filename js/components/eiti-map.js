@@ -211,7 +211,7 @@
         if (this.hasAttribute('data-href')) {
 
           var link = layer.selectAll('a')
-            .data(features, function(d) { return d.id; });
+            .data(features, function(d, i) { return d.id || i; });
 
           link.exit().remove();
           link.enter().append('a')

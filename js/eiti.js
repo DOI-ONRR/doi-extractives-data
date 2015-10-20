@@ -5,28 +5,77 @@
    */
   var eiti = exports.eiti = {};
 
+  /**
+   * Load a URL by inferring its data type based on the extension (.csv, .tsv,
+   * or .json) and cache responses for repeated calls.
+   *
+   * @param String      url       the URL to load
+   * @param Function    callback  the error-first (`(error, data)`) callback
+   *                              function
+   * @param {Boolean?}  fresh     if truthy, don't load this file from the cache
+   *
+   * @return Object a d3.xhr response (or -like) object with an `abort()` method.
+   */
   eiti.load = (function() {
     var cache = d3.map();
+
+    var loading = d3.map();
+    var loadIndex = 0;
 
     var loaders = {};
     ['csv', 'tsv', 'json'].forEach(function(type) {
       var loader = loaders[type] = d3[type];
+      /*
       d3[type] = function wrapped(url) {
         console.info('d3.' + type + '(', url, ')', cache.get(url));
         return loader.apply(this, arguments);
       };
+      */
     });
 
     var load = function(url, done, fresh) {
+      var req;
+      if (loading.has(url)) {
+        req = loading.get(url);
+        req.callbacks.push(done);
+        return req;
+      }
+
       var ext = url.split('.').pop().split('?').shift();
       var loader = loaders[ext];
       var cached = cache.get(url);
-      return cached && !fresh
-        ? done(null, cached)
-        : loader.call(d3, url, function(error, data) {
-          if (!error) cache.set(url, data);
-          return done.apply(this, arguments);
+      if (cached && !fresh) {
+        return defer(function() {
+          console.log('[defer] load cached:', url);
+          done(null, cached);
         });
+      }
+
+      req = loader.call(d3, url, function(error, data) {
+        console.log('loaded:', url);
+        loading.remove(url);
+        if (!error) cache.set(url, data);
+        process(req.callbacks, error, data);
+      });
+      req.callbacks = [done];
+      loading.set(url, req);
+      return req;
+    };
+
+    var process = function(callbacks, error, data) {
+      if (callbacks.length === 1) {
+        return callbacks[0](error, data);
+      }
+      var next = function() {
+        var cb = callbacks.shift();
+        cb(error, data);
+        if (callbacks.length) {
+          window.requestAnimationFrame(next);
+        } else {
+          // console.log('all done!');
+        }
+      };
+      return next();
     };
 
     load.clearCache = function() {

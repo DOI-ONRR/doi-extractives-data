@@ -149,8 +149,8 @@ Glossary.prototype.handleKeyup = function(e) {
 
 /** Toggles the state of an accordian nav item */
 Glossary.prototype.toggleAccordion = function(e) {
-  var $thisButton = $(e.currentTarget)
-  var $thisHeader = $(e.currentTarget.offsetParent)
+  var $thisButton = $(e.currentTarget);
+  var $thisHeader = $(e.currentTarget.offsetParent);
   var $thisDefinition = $($thisHeader.siblings()[0]);
 
   // toggleClass is more concise, but this couples the button text 

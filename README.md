@@ -28,6 +28,12 @@ This site is made with [Jekyll]. To run it locally, clone this repository then:
 ## Deployment
 This site is deployed on [Federalist](https://federalist.18f.gov), and will one day be deployed automatically whenever commits are pushed to the `master` branch. For now, see the [preview URLs wiki page](https://github.com/18F/doi-extractives-data/wiki/Preview-urls) for more information.
 
+## Styleguide
+```sh
+npm install -g npm-exec
+npm run build-styleguide
+```
+
 ## Tests
 The JavaScript tests currently only cover a small portion of data processing utilities. You can run them with [Node]:
 

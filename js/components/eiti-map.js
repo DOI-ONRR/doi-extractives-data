@@ -408,7 +408,7 @@
         );
       }
 
-      features = topojson.feature(d, obj).features;
+      features = getFeatures(d, obj);
 
       if (mesh) {
         features.push(d.objects[mesh]
@@ -487,6 +487,10 @@
           'return null; ',
         '} }'
       ].join(''));
+  }
+
+  function getFeatures(topology, obj) {
+    return topojson.feature(topology, obj).features;
   }
 
 })(this);

@@ -25,6 +25,12 @@ This is the development branch of the v2 [US EITI](https://useiti.doi.gov) site.
 ## Data
 See the [data](data/) directory for more info.
 
+## Styleguide
+```sh
+npm install -g npm-exec
+npm run build-styleguide
+```
+
 ## Tests
 To run the tests:
 

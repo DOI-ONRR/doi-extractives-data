@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<!--[if lte IE 6]>            <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IEMobile 7]>          <html class="no-js iem7" lang="en"> <![endif]-->
+<!--[if (IE 7)&(!IEMobile)]>  <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>                <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>KSS Style Guide</title>
+
+  <meta name="description" content="">
+  <meta name="generator" content="kss-node">
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="public/kss.css">
+  <link rel="stylesheet" href="../css/main.css">
+
+</head>
+<body id="kss-node">
+
+<div class="kss-sidebar kss-style">
+  <header class="kss-header">
+    <h1 class="kss-doc-title">KSS Style Guide</h1>
+  </header>
+  <nav class="kss-nav">
+    <ul class="kss-nav__menu">
+      <li class="kss-nav__menu-item">
+        <a href="./">
+          <span class="kss-nav__ref">0</span
+          ><span class="kss-nav__name">Overview</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-base.html">
+          <span class="kss-nav__ref">1</span
+          ><span class="kss-nav__name">Base</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-components.html">
+          <span class="kss-nav__ref">2</span
+          ><span class="kss-nav__name">Components</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-elements.html">
+          <span class="kss-nav__ref">3</span
+          ><span class="kss-nav__name">Elements</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-glossary.html">
+          <span class="kss-nav__ref">4</span
+          ><span class="kss-nav__name">Glossary</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-layout.html">
+          <span class="kss-nav__ref">5</span
+          ><span class="kss-nav__name">Layout</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-modules.html">
+          <span class="kss-nav__ref">6</span
+          ><span class="kss-nav__name">Modules</span>
+        </a>
+        <ul class="kss-nav__menu-child">
+            <li class="kss-nav__menu-item">
+              <a href="section-modules.html#kssref-modules-card">
+                <span class="kss-nav__ref">6.1</span
+                ><span class="kss-nav__name">Card</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-modules.html#kssref-modules-footer">
+                <span class="kss-nav__ref">6.2</span
+                ><span class="kss-nav__name">Footer</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-modules.html#kssref-modules-header">
+                <span class="kss-nav__ref">6.3</span
+                ><span class="kss-nav__name">Header</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-modules.html#kssref-modules-hero">
+                <span class="kss-nav__ref">6.4</span
+                ><span class="kss-nav__name">Hero</span>
+              </a>
+            </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</div>
+<article role="main" class="kss-main">
+
+      <div     id="kssref-modules" class="kss-section kss-section--depth-1">
+
+    <div class="kss-style">
+      <h1 class="kss-title kss-title--level-1">
+        <a class="kss-title__permalink" href="#kssref-modules">
+          <span class="kss-title__ref">
+              6
+            <span class="kss-title__permalink-hash">
+                #modules
+            </span>
+          </span>
+          Modules
+        </a>
+      </h1>
+
+
+      <div class="kss-description">
+        <p>Complex pieces made of components and elements</p>
+
+      </div>
+    </div>
+
+
+      </div>
+      <section id="kssref-modules-card" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-modules-card">
+          <span class="kss-title__ref">
+              6.1
+            <span class="kss-title__permalink-hash">
+                #modules.card
+            </span>
+          </span>
+          Card
+        </a>
+      </h2>
+
+
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <div class="container">
+<article class="card" class="cards-item">
+  <img class="card-image" src="/img/sectors.png" alt="U.S. natural resource sectors">
+  <div class="card-content">
+    <h1 class="card-title">What are natural resources?</h1>
+    <p>[This is where we say what natural resources are]</p>
+    <a href="#" class="card-link">Find out more <span class="shrink-fa"><i class="fa fa-chevron-right"></i></span></a>
+  </div>
+</article>
+</div>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;container&quot;&gt;
+&lt;article class=&quot;card&quot; class=&quot;cards-item&quot;&gt;
+  &lt;img class=&quot;card-image&quot; src=&quot;/img/sectors.png&quot; alt=&quot;U.S. natural resource sectors&quot;&gt;
+  &lt;div class=&quot;card-content&quot;&gt;
+    &lt;h1 class=&quot;card-title&quot;&gt;What are natural resources?&lt;/h1&gt;
+    &lt;p&gt;[This is where we say what natural resources are]&lt;/p&gt;
+    &lt;a href=&quot;#&quot; class=&quot;card-link&quot;&gt;Find out more &lt;span class=&quot;shrink-fa&quot;&gt;&lt;i class=&quot;fa fa-chevron-right&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/article&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-modules-footer" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-modules-footer">
+          <span class="kss-title__ref">
+              6.2
+            <span class="kss-title__permalink-hash">
+                #modules.footer
+            </span>
+          </span>
+          Footer
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>This is on the bottom of every page. Find in _includes/layout/footer.html</p>
+
+      </div>
+    </div>
+
+
+      </section>
+      <section id="kssref-modules-header" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-modules-header">
+          <span class="kss-title__ref">
+              6.3
+            <span class="kss-title__permalink-hash">
+                #modules.header
+            </span>
+          </span>
+          Header
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>This is on the top of every page. Find in _includes/layout/header.html</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <header class="header">
+  <div>
+    <a class="header-image_link" href="/">
+      <img class="header-image" src="/img/USEITI_Logotype.png" alt="USEITI logo">
+    </a>
+  </div>
+  <nav class="header-nav">
+    <ul class="header-nav_inner">
+      <li class="header-nav_item">
+        <a class="header-nav_item_link" href="/">Home</a>
+      </li>
+      <li class="header-nav_item">
+        <a class="header-nav_item_link" href="/about">About</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;header class=&quot;header&quot;&gt;
+  &lt;div&gt;
+    &lt;a class=&quot;header-image_link&quot; href=&quot;/&quot;&gt;
+      &lt;img class=&quot;header-image&quot; src=&quot;/img/USEITI_Logotype.png&quot; alt=&quot;USEITI logo&quot;&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+  &lt;nav class=&quot;header-nav&quot;&gt;
+    &lt;ul class=&quot;header-nav_inner&quot;&gt;
+      &lt;li class=&quot;header-nav_item&quot;&gt;
+        &lt;a class=&quot;header-nav_item_link&quot; href=&quot;/&quot;&gt;Home&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;header-nav_item&quot;&gt;
+        &lt;a class=&quot;header-nav_item_link&quot; href=&quot;/about&quot;&gt;About&lt;/a&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+&lt;/header&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-modules-hero" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-modules-hero">
+          <span class="kss-title__ref">
+              6.4
+            <span class="kss-title__permalink-hash">
+                #modules.hero
+            </span>
+          </span>
+          Hero
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>A hero is a prominent eye-catcher above the fold</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <div class="hero">
+  <h2><span class="hero-title_text">The United States Extractive Industries Transparency Initiative</span><br> was created to strengthen public accountability and promote trust in how revenues from oil, gas, mineral, and renewable energy resources in the US are managed.</h2>
+  <ul>
+    <button class="hero-button button-big button-primary">
+      <a href="/resource_revenues">Natural Resources</a>
+    </button>
+    <button class="hero-button button-big button-primary">
+      <a href="/resources">Explore Data</a>
+    </button>
+    <button class="hero-button button-big button-primary">
+      <a href="/communities">Local Impact</a>
+    </button>
+    <button class="hero-button button-big button-primary">
+      <a href="/data">Downloads</a>
+    </button>
+  </ul>
+</div>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;hero&quot;&gt;
+  &lt;h2&gt;&lt;span class=&quot;hero-title_text&quot;&gt;The United States Extractive Industries Transparency Initiative&lt;/span&gt;&lt;br&gt; was created to strengthen public accountability and promote trust in how revenues from oil, gas, mineral, and renewable energy resources in the US are managed.&lt;/h2&gt;
+  &lt;ul&gt;
+    &lt;button class=&quot;hero-button button-big button-primary&quot;&gt;
+      &lt;a href=&quot;/resource_revenues&quot;&gt;Natural Resources&lt;/a&gt;
+    &lt;/button&gt;
+    &lt;button class=&quot;hero-button button-big button-primary&quot;&gt;
+      &lt;a href=&quot;/resources&quot;&gt;Explore Data&lt;/a&gt;
+    &lt;/button&gt;
+    &lt;button class=&quot;hero-button button-big button-primary&quot;&gt;
+      &lt;a href=&quot;/communities&quot;&gt;Local Impact&lt;/a&gt;
+    &lt;/button&gt;
+    &lt;button class=&quot;hero-button button-big button-primary&quot;&gt;
+      &lt;a href=&quot;/data&quot;&gt;Downloads&lt;/a&gt;
+    &lt;/button&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
+</article>
+
+<!-- SCRIPTS -->
+<script src="public/kss.js"></script>
+<script src="public/prettify.js"></script>
+<script>
+  prettyPrint();
+</script>
+
+
+
+<!-- Automatically generated using <a href="https://github.com/kss-node/kss-node">kss-node</a>. -->
+</body>
+</html>

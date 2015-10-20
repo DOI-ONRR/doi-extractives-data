@@ -36,6 +36,6 @@ Script available [here](https://github.com/18F/doi-extractives-data/blob/researc
 
 ## Test asset(s)
 
-[Liveshare](https://invis.io/Z74KBDQQH)
+~~Liveshare~~ (The original live link is no longer available. See image below to see what we tested.)
 
 [Image](https://github.com/18F/doi-extractives-data/blob/research/assets/img/mightymoose/mighty-moose.png)

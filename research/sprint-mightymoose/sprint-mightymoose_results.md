@@ -4,10 +4,10 @@
 ## Hypotheses tested
 
 - Do people understand the terms we've chosen for the global navigation? KINDA!
-- What do people think they'll find if they click on those terms?
+- What do people think they'll find if they click on those terms? (see below)
 - Do people understand what the site is about? CLOSER!
 - We've starting moving towards global nav as categories throughout the site. Is this making the information structure clearer? TENTATIVE YES!
-- What problems are most severe?
+- What problems are most severe? (see below)
 
 
 ## Participants

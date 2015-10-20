@@ -10,6 +10,11 @@
 - What problems are most severe?
 
 
+## Participants
+
+- 8 people unfamiliar with USEITI in the following locations: Minneapolis, MN; Lawrence, KS; Washington, DC; St Germain, WI; San Francisco, CA.
+
+
 ## Let's talk about that global navigation
 
 The focus of this test was the global navigation, and by proxy, the information architecture of the site. We tested a navigation with five options: home, natural resources, explore data, local impact, and downloads.

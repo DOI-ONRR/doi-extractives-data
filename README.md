@@ -27,6 +27,7 @@ See the [data](data/) directory for more info.
 
 ## Styleguide
 ```sh
+npm install --save-dev kss
 npm install -g npm-exec
 npm run build-styleguide
 ```

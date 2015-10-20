@@ -58,6 +58,11 @@ The focus of this test was the global navigation, and by proxy, the information 
 - _If I just want to csv or something of all this stuff. Maybe papers that have been written somewhere and available here._
 
 
+## How about that global nav as categories throughout the site. Is this making the information structure clearer?
+
+This gets a tentative yes. Some participants picked up on the repetition of themes. Participants also noted that while the global nav on the upper right wasn't particularly noticable, they were able to navigate the site because of other features (which, as it happens, related to our repetition). However, this can't be confirmed until we get more content into the site and let people explore.
+
+
 ## General feedback
 
 Overall, we are ever-closer to a first-glance understanding of what the site is for.

@@ -1,12 +1,5 @@
 // Glossary
 
-@mixin u-background-image($image, $position: 50% 50%) {
-  background-image: url($baseurl+'/img/' + $image + '.png');
-  background-image: url($baseurl+'/img/' + $image + '.svg');
-  background-repeat: no-repeat;
-  background-position: $position;
-}
-
 .glossary {
   @include transition(right, .3s);
   bottom: 0;
@@ -119,20 +112,23 @@
 // .term--p       - Used when the term is in a body paragaraph of text, reduces padding and adds margin
 
 .term {
-  @include u-background-image('glossary/i-term--primary', 100% 40%);
   @include transition(background-color, .2s, box-shadow, .2s, color, .2s);
   background-color: transparent;
   box-shadow: 0 0 0 4px transparent;
   border-bottom: none;
   cursor: pointer;
-  padding-right: 1em;
-
+  // padding-right: 1em;
+  @extend .fa;
+  &:after{
+    content: $fa-var-book;
+    padding-left: .5rem;
+  }
   &:focus,
   &:hover {
-    @include u-background-image('glossary/i-term--secondary', 100% 40%);
     box-shadow: 0 0 0 4px rgba($blue, .7);
     background-color: rgba($blue, .7);
     color: $white;
+
   }
 }
 

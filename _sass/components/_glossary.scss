@@ -1,0 +1,137 @@
+// Glossary
+
+.glossary {
+  @include transition(right, .3s);
+  bottom: 0;
+  max-width: 30rem;
+  overflow-y: scroll;
+  padding: 2rem;
+  position: fixed;
+  top: 0;
+  z-index: 5000;
+
+  width:300px;
+  background-color: $light-black;
+  color: $white;
+  
+  h2, p, label, i {
+    color: $white;
+  }
+  &[aria-hidden=true] {
+    display: block !important;
+    right: -100%;
+  }
+
+  &[aria-hidden=false] {
+    @include transition(right, .3s);
+    right: 0;
+  }
+
+  .button--close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+  }
+
+}
+#glossary-header{
+  i {
+    margin-right: .75rem;
+  }
+}
+
+#glossary-search{
+  &::-webkit-input-placeholder {
+     font-style: italic;
+  }
+  &:-moz-placeholder { /* Firefox 18- */
+     font-style: italic;  
+  }
+  &::-moz-placeholder {  /* Firefox 19+ */
+     font-style: italic;  
+  }
+  &:-ms-input-placeholder {  
+     font-style: italic;  
+  }
+}
+
+.glossary__item {
+  border-bottom: 1px solid $mid-gray;
+  &:first-child{
+    border-top: 1px solid $mid-gray;
+  }
+  .glossary-term {
+    margin: 0;
+  }
+
+  .glossary-definition {
+    font-family: $base-font-family;
+    padding-bottom: 1rem;
+  }
+
+  .accordion__header {
+    padding: 1rem 4rem 1rem 0;
+    position: relative;
+  }
+
+  .accordion__button {
+    background-size: 50%;
+    background-color: transparent;
+    margin-top: -1rem;
+    height: 2rem;
+    width: 2rem;
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+  }
+
+  .accordion__header {
+    padding: 1rem 4rem 1rem 0;
+    position: relative;
+  }
+
+  .accordion__button {
+    background-size: 50%;
+    margin-top: -1rem;
+    height: 2rem;
+    width: 2rem;
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+  }
+}
+
+// Term classes
+//
+// Wrap glossary terms with these classes
+//
+// .term          - Standard class -- adds the book icon
+// .term--p       - Used when the term is in a body paragaraph of text, reduces padding and adds margin
+
+.term {
+  @include transition(background-color, .2s, box-shadow, .2s, color, .2s);
+  background-color: transparent;
+  box-shadow: 0 0 0 4px transparent;
+  border-bottom: none;
+  cursor: pointer;
+  @extend .fa;
+  &:after{
+    content: $fa-var-book;
+    padding-left: .5rem;
+  }
+  &:focus,
+  &:hover {
+    box-shadow: 0 0 0 4px rgba($blue, .7);
+    background-color: rgba($blue, .7);
+    color: $white;
+
+  }
+}
+
+.term--p {
+  margin-right: .5rem;
+  box-shadow: none;
+}

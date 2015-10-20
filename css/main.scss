@@ -1,7 +1,32 @@
 ---
-
+# Jekyll needs this to render Sass
 ---
+//
+$baseurl: "{{site.baseurl}}";
 
-// instantiates the baseurl that can be used for relative url paths in scss
-$baseurl: '{{site.baseurl}}';
-@import 'main';
+// include reset
+@import "reset";
+
+// include Bourbon & Neat
+@import "bourbon/bourbon";
+@import "neat/neat";
+
+// include site specific base styles
+@import "base/base";
+
+// include fonts (and @import font-face declarations from /css/fonts)
+@import "base/fonts";
+
+// include FontAwesome Sass variables, etc.
+@import "font-awesome/font-awesome";
+
+// import site-specific custom styles
+@import "custom";
+
+
+// Hard rules
+//
+// Style guide: hard-rule
+hr {
+  border-top: 5px solid #999;
+}

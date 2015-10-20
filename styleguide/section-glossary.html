@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<!--[if lte IE 6]>            <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IEMobile 7]>          <html class="no-js iem7" lang="en"> <![endif]-->
+<!--[if (IE 7)&(!IEMobile)]>  <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>                <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>KSS Style Guide</title>
+
+  <meta name="description" content="">
+  <meta name="generator" content="kss-node">
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="public/kss.css">
+  <link rel="stylesheet" href="../css/main.css">
+
+</head>
+<body id="kss-node">
+
+<div class="kss-sidebar kss-style">
+  <header class="kss-header">
+    <h1 class="kss-doc-title">KSS Style Guide</h1>
+  </header>
+  <nav class="kss-nav">
+    <ul class="kss-nav__menu">
+      <li class="kss-nav__menu-item">
+        <a href="./">
+          <span class="kss-nav__ref">0</span
+          ><span class="kss-nav__name">Overview</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-components.html">
+          <span class="kss-nav__ref">1</span
+          ><span class="kss-nav__name">Components</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-elements.html">
+          <span class="kss-nav__ref">2</span
+          ><span class="kss-nav__name">Elements</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-glossary.html">
+          <span class="kss-nav__ref">3</span
+          ><span class="kss-nav__name">Glossary</span>
+        </a>
+        <ul class="kss-nav__menu-child">
+            <li class="kss-nav__menu-item">
+              <a href="section-glossary.html#kssref-glossary-drawer">
+                <span class="kss-nav__ref">3.1</span
+                ><span class="kss-nav__name"></span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-glossary.html#kssref-glossary-term">
+                <span class="kss-nav__ref">3.2</span
+                ><span class="kss-nav__name">Term classes</span>
+              </a>
+            </li>
+        </ul>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-layout.html">
+          <span class="kss-nav__ref">4</span
+          ><span class="kss-nav__name">Layout</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-modules.html">
+          <span class="kss-nav__ref">6</span
+          ><span class="kss-nav__name">Modules</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+<article role="main" class="kss-main">
+
+      <div     id="kssref-glossary" class="kss-section kss-section--depth-1">
+
+    <div class="kss-style">
+      <h1 class="kss-title kss-title--level-1">
+        <a class="kss-title__permalink" href="#kssref-glossary">
+          <span class="kss-title__ref">
+              3
+            <span class="kss-title__permalink-hash">
+                #glossary
+            </span>
+          </span>
+          Glossary
+        </a>
+      </h1>
+
+
+      <div class="kss-description">
+        <p>The site glossary</p>
+
+      </div>
+    </div>
+
+
+      </div>
+      <section id="kssref-glossary-drawer" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-glossary-drawer">
+          <span class="kss-title__ref">
+              3.1
+            <span class="kss-title__permalink-hash">
+                #glossary.drawer
+            </span>
+          </span>
+          
+        </a>
+      </h2>
+
+
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          Glossary drawer
+<div class="glossary" style="right:0px;">
+  <button title="Close glossary"
+      class="button button--close toggle"><span class="u-visually-hidden"><i class="fa fa-times"></i></span>
+  </button>
+  <h2 id="glossary-header"><i class="fa fa-book"></i> Glossary</h2>
+  <label for="glossary-search" class="label">Search glossary terms</label>
+  <input id="glossary-search" type="search" placeholder="e.g. Revenues">
+  <div>
+    <ul>
+      <li class="glossary__item">
+        <div class="accordion__header">
+          <h4 class="glossary-term">Glossary term</h4>
+          <button class="button accordion__button">
+          <i class="fa fa-chevron-down"></i>
+            <span class="u-visually-hidden" data-show="Show definition" data-hide="Hide definition"></span>
+          </button>
+        </div>
+        <p class="glossary-definition">Glossary term definition</p>
+      </li>
+    </ul>
+  </div>
+</div>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">Glossary drawer
+&lt;div class=&quot;glossary&quot; style=&quot;right:0px;&quot;&gt;
+  &lt;button title=&quot;Close glossary&quot;
+      class=&quot;button button--close toggle&quot;&gt;&lt;span class=&quot;u-visually-hidden&quot;&gt;&lt;i class=&quot;fa fa-times&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;h2 id=&quot;glossary-header&quot;&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt; Glossary&lt;/h2&gt;
+  &lt;label for=&quot;glossary-search&quot; class=&quot;label&quot;&gt;Search glossary terms&lt;/label&gt;
+  &lt;input id=&quot;glossary-search&quot; type=&quot;search&quot; placeholder=&quot;e.g. Revenues&quot;&gt;
+  &lt;div&gt;
+    &lt;ul&gt;
+      &lt;li class=&quot;glossary__item&quot;&gt;
+        &lt;div class=&quot;accordion__header&quot;&gt;
+          &lt;h4 class=&quot;glossary-term&quot;&gt;Glossary term&lt;/h4&gt;
+          &lt;button class=&quot;button accordion__button&quot;&gt;
+          &lt;i class=&quot;fa fa-chevron-down&quot;&gt;&lt;/i&gt;
+            &lt;span class=&quot;u-visually-hidden&quot; data-show=&quot;Show definition&quot; data-hide=&quot;Hide definition&quot;&gt;&lt;/span&gt;
+          &lt;/button&gt;
+        &lt;/div&gt;
+        &lt;p class=&quot;glossary-definition&quot;&gt;Glossary term definition&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-glossary-term" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-glossary-term">
+          <span class="kss-title__ref">
+              3.2
+            <span class="kss-title__permalink-hash">
+                #glossary.term
+            </span>
+          </span>
+          Term classes
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>Wrap glossary terms with these classes</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Examples
+        </div>
+        <div class="kss-modifier__default-name kss-style">
+          Default styling
+        </div>
+        <div class="kss-modifier__example">
+          <p>What are <span class="term [modifier class]" data-term="extractive industry" title="Click to define" tabindex="0">
+    extractive industries
+    <i class="term-icon">
+</span>, Brian asked inquisitively</p>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .term
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Standard class -- adds the book icon
+        </div>
+        <div class="kss-modifier__example">
+          <p>What are <span class="term term" data-term="extractive industry" title="Click to define" tabindex="0">
+    extractive industries
+    <i class="term-icon">
+</span>, Brian asked inquisitively</p>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .term-p
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Used when the term is in a body paragaraph of text, reduces padding and adds margin
+        </div>
+        <div class="kss-modifier__example">
+          <p>What are <span class="term term-p" data-term="extractive industry" title="Click to define" tabindex="0">
+    extractive industries
+    <i class="term-icon">
+</span>, Brian asked inquisitively</p>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;p&gt;What are &lt;span class=&quot;term [modifier class]&quot; data-term=&quot;extractive industry&quot; title=&quot;Click to define&quot; tabindex=&quot;0&quot;&gt;
+    extractive industries
+    &lt;i class=&quot;term-icon&quot;&gt;
+&lt;/span&gt;, Brian asked inquisitively&lt;/p&gt;</code></pre>
+      </div>
+
+      </section>
+</article>
+
+<!-- SCRIPTS -->
+<script src="public/kss.js"></script>
+<script src="public/prettify.js"></script>
+<script>
+  prettyPrint();
+</script>
+
+
+
+<!-- Automatically generated using <a href="https://github.com/kss-node/kss-node">kss-node</a>. -->
+</body>
+</html>

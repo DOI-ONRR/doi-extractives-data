@@ -44,7 +44,6 @@ function Glossary(selectors) {
   self.$toggle = $(self.selectors.toggle);
   self.$search = this.$body.find('.glossary__search');
   self.$accordionButton = $(self.selectors.accordionButton);
-
   // Initialize state
   self.isOpen = false;
 

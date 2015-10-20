@@ -40,4 +40,4 @@ Script available [here](https://github.com/18F/doi-extractives-data/blob/researc
 
 [Live mockup](https://invis.io/564MCHYDR)
 
-[Image](https://github.com/18F/doi-extractives-data/blob/research/assets/img/mightymoose/mighty-moose.png)
+[Image](https://github.com/18F/doi-extractives-data/blob/research/assets/img/mightymoose/mighty-moose-b.png)

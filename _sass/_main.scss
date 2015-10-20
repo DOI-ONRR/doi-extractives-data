@@ -16,3 +16,37 @@
 
 // import site-specific custom styles
 @import "custom";
+
+
+// Hard rules
+//
+// Style guide: hard-rule
+hr {
+  border-top: 5px solid #999;
+}
+
+// Type Styles
+//
+// For classes that define type styles
+// Prefix these styles with t-
+//
+// Styleguide components.type-styles
+
+// Display
+//
+// Large type with top and bottom borders for major page headings. In order to have rules, apply .t-ruled
+// 
+// .t-ruled     - Apply top and bottom rules to the heading
+//
+// Markup:
+// <h2 class="t-display {{modifier_class}}">Some great heading</h2>
+//
+// Style guide: components.type-styles.display
+
+.t-display {
+  // @include heading(display);
+  
+  &.t-ruled {
+    border-width: 2px;
+  }
+}

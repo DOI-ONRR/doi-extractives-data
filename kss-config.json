@@ -1,0 +1,13 @@
+{
+  "source": [
+    "_sass"  
+  ],
+  "destination":  "styleguide/",
+  "//": "The css and js paths are URLs relative to the generated style guide.",
+  "css": [
+    "../css/main.css"
+  ],
+  "js": [
+  ]
+}
+

@@ -30,12 +30,14 @@
     "yargs": "^3.7.1"
   },
   "devDependencies": {
+    "kss": "^2.1.0",
     "mocha": "^2.3.3"
   },
   "scripts": {
     "test": "mocha",
-    "start": "node server.js",
-    "watch": "watchy -w '**/*.js,lib,routes.yml' -- node server.js"
+    "start": "jekyll serve",
+    "watch": "watchy -w '**/*.js,lib,routes.yml' -- node server.js",
+    "build-styleguide": "rm -rf styleguide && kss-node --config kss-config.json && open styleguide/index.html"
   },
   "repository": {
     "type": "git",

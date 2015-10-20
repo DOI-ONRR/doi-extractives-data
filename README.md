@@ -30,6 +30,7 @@ This site is deployed on [Federalist](https://federalist.18f.gov), and will one 
 
 ## Styleguide
 ```sh
+npm install --save-dev kss
 npm install -g npm-exec
 npm run build-styleguide
 ```

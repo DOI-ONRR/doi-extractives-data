@@ -1,0 +1,42 @@
+groups:
+  oilgas:
+    name: Oil & Gas
+    commodities:
+    - "Gas"
+    # FIXME: should this be listed as Gas as well?
+    - "NGL"
+    - "Oil & Gas"
+    - "Oil"
+    - "Oil Shale"
+    - "Tar Sands"
+
+  coal:
+    name: Coal
+
+  minerals:
+    name: Hardrock Minerals
+    commodities:
+    - "Asphalt"
+    - "Clay"
+    - "Copper"
+    - "Garnet"
+    - "Gemstones"
+    - "Gilsonite"
+    - "Gold"
+    - "Hardrock"
+    - "Limestone"
+    - "Phosphate"
+    - "Potassium"
+    - "Quartz"
+    - "Sand & Gravel"
+    - "Sodium"
+    - "Sulfur"
+
+  renewables:
+    name: Renewables
+    commodites:
+    - "Geothermal"
+    - "Wind"
+
+  other:
+    name: Other

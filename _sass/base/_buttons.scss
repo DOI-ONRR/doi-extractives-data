@@ -1,91 +1,50 @@
-// TODO: qualify button with a class? or specify as .button?
+// // TODO: qualify button with a class? or specify as .button?
+
+
+// Buttons
+//
+// Buttons suitable for clicking
+//
+// Markup: 
+// <button>Standard Button</button>
+// <button class="button">Button Class button</button>
+// <div class="button">Div Class button</div>
+// <button class="button-primary">Primary Button</button>
+// <button class="button-secondary">Secondary Button</button>
+//
+// Styleguide buttons
+
 button,
 .button,
 input[type="submit"] {
   @extend %button;
-  @include appearance(none);
-  border: none;
-  box-sizing: border-box;
-  -moz-box-sizing:border-box;
-  -webkit-box-sizing:border-box;
-  cursor: pointer;
-  height: 46px;
-  margin-bottom: 0.6em;
-  user-select: none;
-  vertical-align: middle;
-  width: 280px;
-
-  &.button-primary {
-    background-color: $base-button-color;
-    color: $white;
-    width: 300px;
-    -webkit-font-smoothing: antialiased;
-
-    &:hover,
-    &:focus {
-      background-color: $hover-button-color;
-      color: $white;
-    }
-  }
-
-  &.button-secondary,
-  &.button-compare {
-    height: 40px;
-    margin-bottom: 1.6em
-  }
-
-  &.button-secondary {
-    background-color: $secondary-button-color;
-    color: $black;
-    width: 230px;
-
-    &:hover,
-    &:focus {
-      background-color: $secondary-hover-button-color;
-      color: $black;
-    }
-  }
-
-  &.button-compare {
-    background-color: $base-button-color;
-    border-radius: 2px;
-    color: $white;
-    -webkit-font-smoothing: antialiased;
-
-    &:hover,
-    &:focus {
-      background-color: $hover-button-color;
-      color: $white;
-    }
-  }
-
-  &.button-wizard {
-    background-color: transparent;
-    border: 1px solid $white;
-    color: $white;
-    height: 100%;
-    padding-top: 0.9em;
-    padding-bottom: 0.8em;
-    -webkit-font-smoothing: antialiased;
-
-    &:hover,
-    &:focus {
-    box-shadow: 0 0 0 2px $white;
-    }
-  }
-
-  &.button-add {
-    @extend .link-more;
-    background-color: $white;
-    color: $green;
-    letter-spacing: 0;
-    margin-top: 20px;
-    width: 50px;
-
-    &:hover,
-    &:focus {
-      background-color: $white;
-      color: $darker-green;
-    }
-  }
 }
+
+.button-primary {
+    @extend %button;
+    background-color: $primary-button-bg-color;
+    color: $primary-button-color;
+    padding: $primary-button-padding;
+    -webkit-font-smoothing: antialiased;
+    width: 150px;
+    height: 35px;
+    &:hover,
+    &:focus {
+      background-color: $primary-hover-button-bg-color;
+      color: $primary-hover-button-color;
+    }
+  }
+
+.button-secondary{
+  @extend %button;
+  margin-bottom: 1.6em;
+  background-color: $secondary-button-bg-color;
+  color: $secondary-button-color;
+  border: 1px solid $secondary-button-border-color;
+    &:hover,
+    &:focus {
+      background-color: $secondary-hover-button-bg-color;
+      color: $secondary-hover-button-color;
+    }
+  }
+

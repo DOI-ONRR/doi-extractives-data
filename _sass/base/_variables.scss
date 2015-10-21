@@ -94,12 +94,16 @@ $base-link-color: $green;
 $hover-link-color: $darker-green;
 
 // Buttons
-$base-button-color: $blue;
-$hover-button-color: $blue;
-$secondary-button-color: $white;
-$secondary-hover-button-color: $white;
-$base-button-padding: .85em 2.1em;
-$secondary-button-padding: .7em 2.1em;
+$primary-button-bg-color: $blue;
+$primary-hover-button-bg-color: $blue;
+$primary-button-color: $white;
+$primary-hover-button-color: $white;
+$primary-button-padding: .85em 2.1em;
+$secondary-button-bg-color: $white;
+$secondary-hover-button-bg-color: $white;
+$secondary-button-color: $dark-gray;
+$secondary-hover-button-color: $dark-gray;
+$secondary-button-border-color: $mid-gray;
 
 // Radius
 $base-border-radius: 5px;

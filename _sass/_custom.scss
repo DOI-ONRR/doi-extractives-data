@@ -1,6 +1,22 @@
 // Utility classes (hopefully temporary)
 //============================================
 
+// Horizontal & Vertical Block Center
+//
+// Center a block element horizontally and vertically. TODO: Remove. This is an example
+//
+// Markup:
+// <div class="u-hv_center_block">
+//  <div class="u-hv_center_block-content">Content in the middle</div>
+// </div>
+//
+// Styleguide u-hv_center_block
+
+.u-hv_center_block {
+  position: relative;
+}
+
+
 .hidden {
   display: none;
 }

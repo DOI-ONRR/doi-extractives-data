@@ -17,7 +17,7 @@
   // typography
   font-family: $base-font-family;
   font-weight: $weight-book;
-  @include font-size(1);
+  @include font-size(.62);
   line-height: $base-heading-line-height;
   text-decoration: none;
 }

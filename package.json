@@ -35,7 +35,7 @@
   },
   "scripts": {
     "test": "mocha",
-    "watch": "watchy -w '**/*.js,lib,routes.yml' -- node server.js",
+    "watch": "watchy -w '_sass' -- npm run build-styleguide",
     "build-styleguide": "rm -rf styleguide && kss-node --config kss-config.json",
     "build-sg-exec": "rm -rf styleguide && npm-exec kss-node --config kss-config.json"
   },

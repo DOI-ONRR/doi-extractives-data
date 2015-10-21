@@ -5,7 +5,6 @@
   @include transition-delay(0s);
   @include appearance(none);
   display: inline-block;
-<<<<<<< fc8dc46d8703dd61004eee1a2239ef3c6bc25c3d
   border-radius: $small-border-radius;
   border: none;
   box-sizing: border-box;
@@ -25,18 +24,4 @@
   padding-top: 8px;
   padding-bottom: 8px;
   line-height: 1;
-=======
-  line-height: $base-heading-line-height;
-  text-decoration: none;
-  border-radius: 5px;
-  font-family: $base-font-family;
-  border: none;
-  box-sizing: border-box;
-  -moz-box-sizing:border-box;
-  -webkit-box-sizing:border-box;
-  cursor: pointer;
-  margin-bottom: 0.6em;
-  user-select: none;
-  vertical-align: middle;
->>>>>>> buttons down
 }

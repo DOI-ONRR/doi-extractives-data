@@ -35,9 +35,8 @@
   },
   "scripts": {
     "test": "mocha",
-    "start": "jekyll serve",
     "watch": "watchy -w '**/*.js,lib,routes.yml' -- node server.js",
-    "build-styleguide": "rm -rf styleguide && kss-node --config kss-config.json && open styleguide/index.html"
+    "build-styleguide": "rm -rf styleguide && kss-node --config kss-config.json"
   },
   "repository": {
     "type": "git",

@@ -43,7 +43,7 @@ select[multiple=multiple] {
   @include placeholder {
     color: $form-input-color;
     opacity: 1;
-    font-weight: 400;
+    font-weight: $weight-book;
   }
   @include transition(border-color);
   background-color: white;
@@ -78,7 +78,7 @@ input[type="search"] {
 label.checkbox,
 label.radio {
   display: inline-block;
-  font-weight: 400;
+  font-weight: $weight-book;
   margin-bottom: 0.5em;
 
   input[type="checkbox"] + span {
@@ -176,7 +176,7 @@ select {
   border: 1px solid $form-border-color;
   border-radius: $form-border-radius;
   color: $dark-gray;
-  font-weight: 200;
+  font-weight: $weight-light;
   margin-bottom: 1em;
   overflow: hidden;
   padding: 0.5em 7rem 0.5em 0.8rem;

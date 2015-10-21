@@ -27,7 +27,7 @@ nav_items:
 
 ## Twelve community narratives
 
-While extractive industries make up a small but important part of the national economy in the U.S. at 2.6% of 2013 GDP, in some local communities, extractive industries play a much larger role. For example, extractive industries make up more than a third (37%) of the State of Wyoming’s GDP.[^1] At the county level, certain communities and local economies can be even more dependent on extractive industries.
+While extractive industries make up a small but important part of the national economy in the U.S. at 2.6% of 2013 GDP, in some local communities, extractive industries play a much larger role. For example, extractive industries make up more than a third (37%) of the State of Wyoming’s GDP.[^1] At the county level, certain communities and local economies can be even more dependent on <span class="term" data-term="extractive industry" title="Click to define" tabindex="0">extractive industry</span>.
 
 This section provides a snapshot into twelve communities that, over about the last decade, have led U.S. counties in production of one of the following resources: iron, copper, gold, coal, oil, and natural gas. These counties, or in some cases clusters of counties given geological formations, were selected based on their recent high levels of production. We hope this will help you understand the economic and fiscal effects of oil, gas, and mineral extraction on local communities, including revenue sustainability.
 

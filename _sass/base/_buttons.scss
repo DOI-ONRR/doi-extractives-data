@@ -1,23 +1,17 @@
 // // TODO: qualify button with a class? or specify as .button?
 
-
 // Buttons
 //
 // Buttons suitable for clicking.
-// There are three styles of buttons – default, primary, and secondary
-// There are two sizes of buttons – default and big
+//
+// .button              - Standard class -- creates generic button
+// .button--primary      - primary style of button
+// .button--secondary     - primary style of button
+// .button--big           - larger button
 //
 // Markup: 
-// <button>Standard Button</button>
-// <button class="button">Button Class button</button>
-// <div class="button">Div Class button</div>
-// <button class="button-primary">Primary Button</button>
-// <button class="button-secondary">Secondary Button</button>
-// <button class="button-big">Big Button</button>
-// <button class="button-primary button-big">Big Primary Button</button>
-// <button class="button-secondary button-big">Big Secondary Button</button>
-//
-// Styleguide buttons
+// <button class="button {{modifier_class}}">{{modifier_class}}</button>
+// Styleguide base.buttons
 
 button,
 .button,
@@ -25,7 +19,7 @@ input[type="submit"] {
   @extend %button;
 }
 
-.button-primary{
+.button--primary{
   @extend %button;
   background-color: $primary-button-bg-color;
   color: $primary-button-color;
@@ -36,7 +30,7 @@ input[type="submit"] {
     }
 }
 
-.button-secondary{
+.button--secondary{
   @extend %button;
   background-color: $secondary-button-bg-color;
   color: $secondary-button-color;
@@ -48,10 +42,10 @@ input[type="submit"] {
   }
 }
 
-.button-big {
+.button--big {
   -webkit-font-smoothing: antialiased;
   width: 150px;
   height: 35px;
   // typography
-  @include font-size(1.6);
+  @include font-size(1);
 }

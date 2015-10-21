@@ -66,24 +66,24 @@ h4,
 
 // Buttons
 
-button {
-  @include font-size(1.125);
-  font-family: $base-font-family;
-  font-weight: $weight-book;
-  letter-spacing: 3.6px;
+// button {
+//   @include font-size(1.125);
+//   font-family: $base-font-family;
+//   font-weight: $weight-book;
+//   letter-spacing: 3.6px;
 
-  &.button-secondary,
-  &.button-compare {
-    @include font-size(1);
-    letter-spacing: 2px;
-  }
+//   &.button-secondary,
+//   &.button-compare {
+//     @include font-size(1);
+//     letter-spacing: 2px;
+//   }
 
-  &.button-wizard {
-    @include font-size(0.875);
-    letter-spacing: 2px;
-    line-height: 18px;
-  }
-}
+//   &.button-wizard {
+//     @include font-size(0.875);
+//     letter-spacing: 2px;
+//     line-height: 18px;
+//   }
+// }
 
 // Other type
 

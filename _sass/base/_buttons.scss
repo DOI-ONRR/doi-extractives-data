@@ -3,7 +3,9 @@
 
 // Buttons
 //
-// Buttons suitable for clicking
+// Buttons suitable for clicking.
+// There are three styles of buttons – default, primary, and secondary
+// There are two sizes of buttons – default and big
 //
 // Markup: 
 // <button>Standard Button</button>
@@ -11,6 +13,9 @@
 // <div class="button">Div Class button</div>
 // <button class="button-primary">Primary Button</button>
 // <button class="button-secondary">Secondary Button</button>
+// <button class="button-big">Big Button</button>
+// <button class="button-primary button-big">Big Primary Button</button>
+// <button class="button-secondary button-big">Big Secondary Button</button>
 //
 // Styleguide buttons
 
@@ -20,31 +25,33 @@ input[type="submit"] {
   @extend %button;
 }
 
-.button-primary {
-    @extend %button;
-    background-color: $primary-button-bg-color;
-    color: $primary-button-color;
-    padding: $primary-button-padding;
-    -webkit-font-smoothing: antialiased;
-    width: 150px;
-    height: 35px;
-    &:hover,
+.button-primary{
+  @extend %button;
+  background-color: $primary-button-bg-color;
+  color: $primary-button-color;
+  &:hover,
     &:focus {
       background-color: $primary-hover-button-bg-color;
       color: $primary-hover-button-color;
     }
-  }
+}
 
 .button-secondary{
   @extend %button;
-  margin-bottom: 1.6em;
   background-color: $secondary-button-bg-color;
   color: $secondary-button-color;
   border: 1px solid $secondary-button-border-color;
-    &:hover,
-    &:focus {
-      background-color: $secondary-hover-button-bg-color;
-      color: $secondary-hover-button-color;
-    }
+  &:hover,
+  &:focus {
+    background-color: $secondary-hover-button-bg-color;
+    color: $secondary-hover-button-color;
   }
+}
 
+.button-big {
+  -webkit-font-smoothing: antialiased;
+  width: 150px;
+  height: 35px;
+  // typography
+  @include font-size(1.6);
+}

@@ -19,8 +19,20 @@ $base-line-height: 1.5;
 $base-heading-line-height: 1.3;
 
 // Colors
+// v3
 $white: #ffffff;
 $black: #040404; //-
+$blue: #157BAC;//
+$light-blue: #e6f9ff;
+$pale-blue: #f2fcff;
+$mid-blue: #c6e9ff;
+$light-gray: #f7f7f7;
+$mid-gray: #ebebeb;
+$dark-gray: #4a4a4a;
+
+// v2
+// $white: #ffffff;
+// $black: #040404; //-
 $light-black: #303030; //-
 $putty: #f4f4f4; //-
 $dark-putty: #838383; //-
@@ -28,15 +40,12 @@ $green: #9fa63b; //
 $shock-green: #acb626;
 $purple: #965bcd;//
 $red: #c5403c;//
-$blue: #1e7caa;//
+// $blue: #1e7caa;// previously  ;
 $cobalt: #1075a5; //-
-$dark-gray: #666666;//
-$mid-gray: #e1e1e1; //-EBEBEB
+// $dark-gray: #666666;//
+// $mid-gray: #e1e1e1; //-EBEBEB
 
-// old colors here. deprecate.
-$dark-blue: #0e365b;
-$mid-blue: #2b6091;
-$lighter-blue: tint($dark-blue, 6%);
+// v1 old colors here. deprecate.
 $darker-green: #216d09;
 $darkest-green: #174b06;
 $yellow: #f0d704;
@@ -63,12 +72,15 @@ $guide-colors: (
 );
 
 // Background Color
-$secondary-background-color: $dark-blue;
+$primary-background-color: $white;
+$secondary-background-color: $light-gray;
 $tertiary-background-color: $mid-gray;
-$quaternary-background-color: $mid-blue;
+$quaternary-background-color: $light-blue;
+$fifth-background-color: $pale-blue;
+$sixth-background-color: $mid-blue;
 
 // Font Colors
-$base-font-color: $black;
+$base-font-color: $dark-gray;
 $base-accent-color: $mid-blue;
 
 // Padding
@@ -82,10 +94,10 @@ $base-link-color: $green;
 $hover-link-color: $darker-green;
 
 // Buttons
-$base-button-color: $green;
-$hover-button-color: $darker-green;
-$secondary-button-color: $yellow;
-$secondary-hover-button-color: $darker-yellow;
+$base-button-color: $blue;
+$hover-button-color: $blue;
+$secondary-button-color: $white;
+$secondary-hover-button-color: $white;
 $base-button-padding: .85em 2.1em;
 $secondary-button-padding: .7em 2.1em;
 

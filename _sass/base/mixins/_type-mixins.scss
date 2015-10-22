@@ -1,0 +1,67 @@
+// Typography Mixins
+
+@mixin heading($level) {
+  margin: 0 0 1em 0;
+  color: $base-font-color;
+  font-family: $base-font-family;
+
+  @if $level == display {
+    border-bottom: 0;
+    font-size: 3.6rem;
+    font-weight: bold;
+    line-height: 1;
+    margin: 0 0 1rem 0;
+    padding: 1.2rem 0;
+
+    @include media($med) {
+      font-size: 4.8rem;
+    }
+  }
+
+  @if $level == h1 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 1.15;
+    
+    @include media($med) {
+      font-size: 2.8rem;
+    }    
+  }
+
+  @if $level == h2 {
+    font-size: 2.0rem;
+    font-weight: bold;
+    line-height: 1.2;
+    
+    @include media($med) {
+      font-size: 2.2rem;
+    }        
+  }
+
+  @if $level == h3 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 1.14;      
+  }
+
+  @if $level == h4 {
+    font-size: 1.6rem;
+    font-weight: normal;
+    line-height: 1.14;
+    margin: 2rem 0 .5rem 0;
+    line-height: 1.14;      
+  }
+
+  @if $level == h5 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.33;
+  }
+
+  @if $level == h6 {
+    font-size: 1.3rem;
+    font-weight: normal;
+    line-height: 1.63;
+    text-transform: uppercase;
+  }
+}

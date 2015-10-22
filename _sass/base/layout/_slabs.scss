@@ -1,0 +1,73 @@
+// Slabs
+//
+// Slabs are full-width blocks of color. Slabs should contain containers to center content. 
+// Slabs can can have background color styles applied. By default is a neutral background.
+// 
+// .slab-white - full width slab of white
+// .slab-blue - full width slab of blue
+// .slab-gray - full width slab of gray
+// .slab-left - 8/12 width slab that floats left
+// .slab-right - 4/12 width slab that floats left
+// .slab-half - 6/12 width slab that floats left
+// .slab-padded - full width slab with padding
+//
+// Markup: 
+// <section class="slab-blue">
+// <div class="container">
+//   <div class="slab-left">
+//     <h1>This is on the left</h1>
+// 	 </div>
+// <div class="slab-right">
+//     <h1>This is on the right</h1>
+// 	 </div>
+// </div>
+// </section>
+// <section class="slab-gray">
+// <div class="container">
+//   <div class="slab-half">
+//     <h1>This is on the left</h1>
+// 	 </div>
+// 	 <div class="slab-half">
+//     <h1>This is on the right</h1>
+// 	 </div>
+// </div>
+// </section>
+// <section class="slab-blue">
+//     <div class="container">
+//   <div class="slab-padded">
+//     <h1>This is padded</h1>
+// 	 </div>
+// </div>
+// </section>
+//
+// Styleguide blocks.slabs
+
+.slab-white{
+	background-color: $white;
+}
+
+.slab-blue{
+	background-color: $light-blue;
+}
+
+.slab-gray{
+	background-color: $light-gray;
+}
+
+.slab-left {
+  @include span-columns(8);
+}
+
+.slab-right {
+  @include span-columns(4);
+}
+
+.slab-half {
+  @include span-columns(6);
+}
+
+.slab-padded {
+  @include span-columns(12);
+  padding-top: $base-padding-extra;
+  padding-bottom: $base-padding-extra;
+}

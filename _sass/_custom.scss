@@ -226,91 +226,10 @@ footer {
 // Home
 //============================================
 
-.home-intro {
-  margin-top: $base-padding;
-
-  article {
-    @include span-columns (4);
-    @include omega();
-  }
-
-  > div:first-of-type {
-    @include span-columns(8);
-  }
-
-  .home-intro-callout {
-    @extend .callout;
-    width: 93%;
-  }
-
-  ul {
-  display: inline-block;
-  margin-bottom: $base-padding-lite;
-
-    li {
-      border-radius: $base-border-radius;
-      color: $white;
-      float: left;
-      font-weight: 600;
-      padding: $base-padding/2;
-      margin-right: $base-padding/2;
-      width: 150px;
-    }
-  }
-}
-
-.home-intro-more {
-  display: block;
-}
-
-.article_module {
-  background-color: $white;
-  border-radius: 10px;
-  height: 500px;
-  position: relative;
-  margin-top: $base-padding;
-
-  h1 {
-    @extend .article_heading;
-    padding-right: $base-padding;
-    margin-bottom: $base-padding-lite;
-
-    a {
-      color: $light-black;
-    }
-  }
-
-  form,
-  .link-more {
-    position: absolute;
-    bottom: $base-padding;
-  }
-
-  img {
-    border-bottom: 6px solid $putty;
-    border-radius: 10px 10px 0 0;
-    width: 100%;
-  }
-}
-
 .article_module-content {
   padding: $base-padding;
 }
 
-.home-modules {
-  article {
-    @include span-columns (4);
-    @include omega(3n);
-    @extend .article_module;
-  }
-}
-
-.home-final {
-  @include span-columns(12);
-  padding-top: $base-padding-extra;
-  padding-bottom: $base-padding-extra;
-  text-align: center;
-}
 
 // Community Case Studies
 //============================================

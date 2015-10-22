@@ -71,6 +71,7 @@ p,
   @include font-size(0.9);
   color: darken($dark-putty, 15%);
   font-weight: $weight-light;
+  padding-bottom: 1.25em;
 }
 
 .article_heading {

@@ -98,7 +98,7 @@ function mapRow(row, enc, next) {
   return next(null, {
     Year:     row.Year,
     Code:     row.Industry,
-    // nice typo, guys
+    // nice typo, y'all
     Industry: row.IndustryDescription || row.IndustrYDescription,
     GDP:      row.DataValue
   });

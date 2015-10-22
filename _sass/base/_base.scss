@@ -25,7 +25,14 @@
 @import 'extends/buttons';
 
 // Layout
-@import 'layout';
+//
+// Site layout styles
+//
+// Styleguide layout
+
+@import 'layout/layout';
+@import 'layout/slabs';
+@import 'layout/utility';
 
 // Typography and Elements
 @import 'buttons';
@@ -43,6 +50,7 @@
 @import 'components/eiti-map';
 @import 'components/glossary';
 @import 'components/carousel';
+@import 'components/cards';
 
 // Blocks
 //
@@ -50,5 +58,4 @@
 //
 // Styleguide blocks
 
-@import 'blocks/banner';
 @import 'blocks/hero';

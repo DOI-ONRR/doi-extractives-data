@@ -1,3 +1,27 @@
+%button {
+  @include transition-property(background-color);
+  @include transition-duration(0.25s);
+  @include transition-timing-function(ease-out);
+  @include transition-delay(0s);
+  @include appearance(none);
+  display: inline-block;
+  border-radius: $small-border-radius;
+  border: none;
+  box-sizing: border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  cursor: pointer;
+  margin-bottom: 0.6em;
+  user-select: none;
+  vertical-align: middle;
+  // typography
+  font-family: $base-font-family;
+  font-weight: $weight-book;
+  @include font-size(.62);
+  line-height: $base-heading-line-height;
+  text-decoration: none;
+}
+
 // Buttons
 //
 // Buttons suitable for clicking
@@ -28,12 +52,11 @@ input[type="submit"] {
       color: $primary-hover-button-color;
       a{
         color: $primary-button-color;
-        border-bottom:none;
+        text-decoration: none;
       }
     }
   a{
     color: $primary-button-color;
-    border-bottom:none;
   }
 }
 
@@ -48,12 +71,11 @@ input[type="submit"] {
     color: $secondary-hover-button-color;
     a{
       color: $secondary-button-color;
-      border-bottom:none;
+      text-decoration: none;
     }
   }
   a{
     color: $secondary-button-color;
-    border-bottom:none;
   }
 }
 
@@ -62,5 +84,5 @@ input[type="submit"] {
   width: 150px;
   height: 35px;
   // typography
-  font-size: $base-font-size;
+  @include font-size(1);
 }

@@ -11,11 +11,10 @@
 
 body {
   color: $base-font-color;
-  font-size: $base-font-size;
+  font-size: font-size($base-font-size);
   font-family: $base-font-family;
   line-height: $base-line-height;
   font-weight: $base-font-weight;
-  -webkit-font-smoothing: antialiased;
 }
 
 button {
@@ -29,7 +28,7 @@ h1, h2, h3, h4, h5 {
 }
 
 strong {
-  font-weight: 700;
+  font-weight: $weight-bold;
 }
 
 a img {

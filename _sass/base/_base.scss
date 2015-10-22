@@ -17,14 +17,16 @@
 //
 // Styleguide elements
 @import 'elements/elements';
-@import 'elements/typography';
 
 // Neat Settings -- uncomment if using Neat -- must be imported before Neat
 // @import 'grid-settings';
 
 // Mixins
-@import 'mixins/font-size';
+// @import 'mixins/font-size';
+@import 'mixins/type-mixins';
 @import 'grid';
+
+@import 'elements/typography';
 
 // Extends
 @import 'extends/buttons';
@@ -54,7 +56,6 @@
 @import 'components/eiti-map';
 @import 'components/glossary';
 @import 'components/carousel';
-@import 'components/cards';
 
 // Modules
 //
@@ -62,4 +63,4 @@
 //
 // Styleguide modules
 @import 'modules/hero';
-@import 'modules/modules';
+@import 'modules/cards';

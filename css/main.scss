@@ -6,8 +6,8 @@
 @import "reset";
 
 // include Bourbon & Neat
-@import "bourbon/bourbon";
-@import "neat/neat";
+@import "lib/bourbon/bourbon";
+@import "lib/neat/neat";
 
 // include site specific base styles
 @import "base/base";
@@ -16,7 +16,7 @@
 @import "base/fonts";
 
 // include FontAwesome Sass variables, etc.
-@import "font-awesome/font-awesome";
+@import "lib/font-awesome/font-awesome";
 
 // import site-specific custom styles
 @import "custom";

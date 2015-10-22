@@ -24,6 +24,9 @@
 // Extends
 @import 'extends/buttons';
 
+// Layout
+@import 'layout';
+
 // Typography and Elements
 @import 'buttons';
 @import 'fonts';
@@ -36,7 +39,16 @@
 //
 // Styleguide components
 
-// Components
-@import "components/eiti-slider";
-@import "components/eiti-map";
-@import "components/glossary";
+@import 'components/eiti-slider';
+@import 'components/eiti-map';
+@import 'components/glossary';
+@import 'components/carousel';
+
+// Blocks
+//
+// Site blocks
+//
+// Styleguide blocks
+
+@import 'blocks/banner';
+@import 'blocks/hero';

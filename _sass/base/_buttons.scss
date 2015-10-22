@@ -1,16 +1,15 @@
-// // TODO: qualify button with a class? or specify as .button?
-
 // Buttons
 //
-// Buttons suitable for clicking.
+// Buttons suitable for clicking
 //
 // .button              - Standard class -- creates generic button
-// .button--primary      - primary style of button
-// .button--secondary     - primary style of button
-// .button--big           - larger button
+// .button-primary      - primary style of button
+// .button-secondary     - primary style of button
+// .button-big           - larger button
 //
 // Markup: 
 // <button class="button {{modifier_class}}">{{modifier_class}}</button>
+//
 // Styleguide base.buttons
 
 button,
@@ -19,7 +18,7 @@ input[type="submit"] {
   @extend %button;
 }
 
-.button--primary{
+.button-primary{
   @extend %button;
   background-color: $primary-button-bg-color;
   color: $primary-button-color;
@@ -27,10 +26,17 @@ input[type="submit"] {
     &:focus {
       background-color: $primary-hover-button-bg-color;
       color: $primary-hover-button-color;
+      a{
+        color: $primary-button-color;
+        text-decoration: none;
+      }
     }
+  a{
+    color: $primary-button-color;
+  }
 }
 
-.button--secondary{
+.button-secondary{
   @extend %button;
   background-color: $secondary-button-bg-color;
   color: $secondary-button-color;
@@ -39,10 +45,17 @@ input[type="submit"] {
   &:focus {
     background-color: $secondary-hover-button-bg-color;
     color: $secondary-hover-button-color;
+    a{
+      color: $secondary-button-color;
+      text-decoration: none;
+    }
+  }
+  a{
+    color: $secondary-button-color;
   }
 }
 
-.button--big {
+.button-big {
   -webkit-font-smoothing: antialiased;
   width: 150px;
   height: 35px;

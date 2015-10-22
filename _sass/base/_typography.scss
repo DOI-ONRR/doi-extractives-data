@@ -31,10 +31,10 @@ h1, h2, h3, h4
 .h1, .h2, .h3, .h4 {
   color: $dark-gray;
   font-family: $header-font-family;
-  font-weight: 200;
+  font-weight: $weight-light;
   line-height: $base-heading-line-height;
   margin: 0;
-  padding-top: 0.7em; 
+  // padding-top: 0.7em; 
   text-rendering: optimizeLegibility;
   // ^^ Fix character spacing for headings
   // by enabling ligatures in text smaller than 20px
@@ -84,10 +84,6 @@ p,
   @include font-size(2.1); //33px
   color: $light-black;
   margin-bottom: $base-padding;
-}
-
-.huge {
-  @include font-size(3); //48px
 }
 
 .search_category {

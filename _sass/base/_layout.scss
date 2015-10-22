@@ -1,0 +1,10 @@
+.container{
+	  @include outer-container($max-width);
+}
+.container-seven {
+  @include span-columns(7);
+}
+
+.container-five {
+  @include span-columns(5);
+}

@@ -37,23 +37,6 @@ $huge-up: new-breakpoint(min-width $huge);
   }
 }
 
-// Outer container with padding based on media queries
-
-@mixin padded-container($local-max-width: $max-width) {
-  @include outer-container($local-max-width);
-  padding: {
-    left: em(20);
-    right: em(20);
-  }
-
-  @include respond-to(medium-up) {
-    padding: {
-      left: em(30);
-      right: em(30);
-    }
-  }
-}
-
 // Omega reset
 // http://www.joshfry.me/blog/2013/05/13/omega-reset-for-bourbon-neat
 @mixin omega-reset($nth) {

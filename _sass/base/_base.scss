@@ -12,14 +12,19 @@
 @import 'variables';
 
 // Elements
-@import 'elements';
+//
+// These are site elements
+//
+// Styleguide elements
+@import 'elements/elements';
+@import 'elements/typography';
 
 // Neat Settings -- uncomment if using Neat -- must be imported before Neat
 // @import 'grid-settings';
 
 // Mixins
 @import 'mixins/font-size';
-@import 'mixins/grid-settings';
+@import 'grid';
 
 // Extends
 @import 'extends/buttons';
@@ -35,27 +40,26 @@
 @import 'layout/utility';
 
 // Typography and Elements
-@import 'buttons';
 @import 'fonts';
-@import 'forms';
-@import 'typography';
+// @import 'forms';
+// @import 'typography';
 
 // Components
 //
 // Site components
 //
 // Styleguide components
-
+@import 'components/buttons';
 @import 'components/eiti-slider';
 @import 'components/eiti-map';
 @import 'components/glossary';
 @import 'components/carousel';
 @import 'components/cards';
 
-// Blocks
+// Modules
 //
-// Site blocks
+// Complex pieces made of components and elements
 //
-// Styleguide blocks
-
-@import 'blocks/hero';
+// Styleguide modules
+@import 'modules/hero';
+@import 'modules/modules';

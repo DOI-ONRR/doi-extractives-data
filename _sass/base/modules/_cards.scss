@@ -19,10 +19,8 @@
   margin-top: $base-padding;
 
   h1 {
-    @extend .article_heading;
     padding-right: $base-padding;
     margin-bottom: $base-padding-lite;
-
     a {
       color: $light-black;
     }

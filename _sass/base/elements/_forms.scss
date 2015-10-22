@@ -35,7 +35,7 @@ legend {
 input,
 label,
 select {
-  @include font-size(1);
+  font-size: $base-font-size;
   display: block;
   font-family: $form-font-family;
 }
@@ -56,7 +56,7 @@ label {
 textarea,
 #{$all-text-inputs},
 select[multiple=multiple] {
-  @include font-size(1);
+  font-size: $base-font-size;
   @include placeholder {
     color: $form-input-color;
     opacity: 1;

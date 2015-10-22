@@ -1,22 +1,18 @@
-@import "../font-awesome/font-awesome/variables";
+@import "../lib/font-awesome/font-awesome/variables";
 
 // Typography
-$weight-light: 200;
-$weight-book: 400;
+$weight-light: 200; // use
+$weight-book: 400; // use
 $weight-medium: 500;
 $weight-semibold: 600;
-$weight-bold: 700;
+$weight-bold: 700; // use
 $weight-black: 800;
 
 $sans-serif: Lato, "Helvetica Neue", Helvetica, arial, sans-serif;
 $base-font-family: $sans-serif;
-$header-font-family: $base-font-family;
-$base-font-weight: $weight-book;
-
-// Sizes
-$base-font-size: 1;
-$base-line-height: 1.5;
-$base-heading-line-height: 1.3;
+$base-font-weight: 400;
+$base-font-size: 1rem;
+$base-line-height: 1.375rem;
 
 // Colors
 // v3 

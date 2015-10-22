@@ -1,136 +1,136 @@
-body {
-  color: $base-font-color;
-  font-size: font-size($base-font-size);
-  font-family: $base-font-family;
-  line-height: $base-line-height;
-  font-weight: $base-font-weight;
-}
+// body {
+//   color: $base-font-color;
+//   font-size: $base-font-size;
+//   font-family: $base-font-family;
+//   line-height: $base-line-height;
+//   font-weight: $base-font-weight;
+// }
 
-ul li {
-  font-family: $base-font-family;
-}
+// ul li {
+//   font-family: $base-font-family;
+// }
 
-a {
-  color: $blue;
-  text-decoration: none;
+// a {
+//   color: $blue;
+//   text-decoration: none;
 
-  &:hover,
-  &:focus {
-    text-decoration: underline;
-  }
-}
+//   &:hover,
+//   &:focus {
+//     text-decoration: underline;
+//   }
+// }
 
-// Typeographic multipliers, base 16
-$h1: 1.9; //30px
-$h2: 1.4; //22px
-$h3: 1.125; //18px
-$h4: 1; //16px
+// // Typeographic multipliers, base 16
+// $h1: 1.9; //30px
+// $h2: 1.4; //22px
+// $h3: 1.125; //18px
+// $h4: 1; //16px
 
-// Heading styles
-h1, h2, h3, h4
-.h1, .h2, .h3, .h4 {
-  color: $dark-gray;
-  font-family: $header-font-family;
-  font-weight: $weight-light;
-  line-height: $base-heading-line-height;
-  margin: 0;
-  // padding-top: 0.7em; 
-  text-rendering: optimizeLegibility;
-  // ^^ Fix character spacing for headings
-  // by enabling ligatures in text smaller than 20px
-  // if they are available in the font
-}
+// // Heading styles
+// h1, h2, h3, h4
+// .h1, .h2, .h3, .h4 {
+//   color: $dark-gray;
+//   font-family: $header-font-family;
+//   font-weight: $weight-light;
+//   line-height: $base-line-height;
+//   margin: 0;
+//   // padding-top: 0.7em; 
+//   text-rendering: optimizeLegibility;
+//   // ^^ Fix character spacing for headings
+//   // by enabling ligatures in text smaller than 20px
+//   // if they are available in the font
+// }
 
-// Classes for use with @extend
-h1,
-.h1 {
-  @include font-size($h1);
-}
+// // Classes for use with @extend
+// h1,
+// .h1 {
+//   @include font-size($h1);
+// }
 
-h2,
-.h2 {
-  @include font-size($h2);
-  color: $dark-putty;
-  padding-bottom: $base-padding-lite;
-}
+// h2,
+// .h2 {
+//   @include font-size($h2);
+//   color: $dark-putty;
+//   padding-bottom: $base-padding-lite;
+// }
 
-h3,
-.h3 {
-  @include font-size($h3);
-}
+// h3,
+// .h3 {
+//   @include font-size($h3);
+// }
 
-h4,
-.h4 {
-  @include font-size($h4);
-}
+// h4,
+// .h4 {
+//   @include font-size($h4);
+// }
 
-// Other type
+// // Other type
 
-p,
-.list-para {
-  @include font-size(0.9);
-  color: darken($dark-putty, 15%);
-  font-weight: $weight-light;
-  padding-bottom: 1.25em;
-}
+// p,
+// .list-para {
+//   @include font-size(0.9);
+//   color: darken($dark-putty, 15%);
+//   font-weight: $weight-light;
+//   padding-bottom: 1.25em;
+// }
 
-.article_heading {
-  @include font-size($h2);
-  color: $light-black;
-  font-weight: $weight-semibold;
-  padding-top: 0;
-}
+// .article_heading {
+//   @include font-size($h2);
+//   color: $light-black;
+//   font-weight: $weight-semibold;
+//   padding-top: 0;
+// }
 
-.callout {
-  @include font-size(2.1); //33px
-  color: $light-black;
-  margin-bottom: $base-padding;
-}
+// .callout {
+//   @include font-size(2.1); //33px
+//   color: $light-black;
+//   margin-bottom: $base-padding;
+// }
 
-.search_category {
-  @include font-size($h1);
-  font-weight: 400;
-  margin-bottom: 0.3em;
-}
+// .search_category {
+//   @include font-size($h1);
+//   font-weight: 400;
+//   margin-bottom: 0.3em;
+// }
 
-.key_fact {
-  @include font-size($h3);
-  font-weight: 400;
-}
+// .key_fact {
+//   @include font-size($h3);
+//   font-weight: 400;
+// }
 
-.supporting_copy {
-  @include font-size(0.875);
-}
+// .supporting_copy {
+//   @include font-size(0.875);
+// }
 
-.nested_fieldset {
-  border-top: none;
+// .nested_fieldset {
+//   border-top: none;
 
-  h1 {
-    @include font-size($h3);
-    font-weight: 400;
-    margin-bottom: 0.5em;
-  }
-}
+//   h1 {
+//     @include font-size($h3);
+//     font-weight: 400;
+//     margin-bottom: 0.5em;
+//   }
+// }
 
-.link-expand,
-.link-more {
-  @include font-size(0.85); //13px
-  color: $cobalt;
-  font-weight: 500;
-  text-decoration: none;
+// .link-expand,
+// .link-more {
+//   @include font-size(0.85); //13px
+//   color: $cobalt;
+//   font-weight: 500;
+//   text-decoration: none;
 
-  &:hover,
-  &:focus {
-    text-decoration: underline;
-  }
+//   &:hover,
+//   &:focus {
+//     text-decoration: underline;
+//   }
 
-  .shrink-fa {
-    @include font-size(0.65);
-    // TODO generalize this
-    // should be some percentage of parent text
-  }
-}
+//   .shrink-fa {
+//     @include font-size(0.65);
+//     // TODO generalize this
+//     // should be some percentage of parent text
+//   }
+// }
 
-.subpage-p {
-  @include font-size(1.3);
-}
+// .subpage-p {
+//   @include font-size(1.3);
+// }

@@ -1,3 +1,27 @@
+%button {
+  @include transition-property(background-color);
+  @include transition-duration(0.25s);
+  @include transition-timing-function(ease-out);
+  @include transition-delay(0s);
+  @include appearance(none);
+  display: inline-block;
+  border-radius: $small-border-radius;
+  border: none;
+  box-sizing: border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  cursor: pointer;
+  margin-bottom: 0.6em;
+  user-select: none;
+  vertical-align: middle;
+  // typography
+  font-family: $base-font-family;
+  font-weight: $weight-book;
+  @include font-size(.62);
+  line-height: $base-heading-line-height;
+  text-decoration: none;
+}
+
 // Buttons
 //
 // Buttons suitable for clicking
@@ -10,7 +34,7 @@
 // Markup: 
 // <button class="button {{modifier_class}}">{{modifier_class}}</button>
 //
-// Styleguide base.buttons
+// Styleguide components.buttons
 
 button,
 .button,

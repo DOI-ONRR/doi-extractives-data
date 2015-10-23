@@ -46,13 +46,13 @@
       var cached = cache.get(url);
       if (cached && !fresh) {
         return defer(function() {
-          console.log('[defer] load cached:', url);
+          // console.log('[defer] load cached:', url);
           done(null, cached);
         });
       }
 
       req = loader.call(d3, url, function(error, data) {
-        console.log('loaded:', url);
+        // console.log('loaded:', url);
         loading.remove(url);
         if (!error) cache.set(url, data);
         process(req.callbacks, error, data);

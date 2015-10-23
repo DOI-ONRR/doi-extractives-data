@@ -1,0 +1,37 @@
+// Lists
+// 
+// Default list markup
+//
+// Markup:
+// <ul class="bullet">
+// 	<li>Bulleted list</li>
+// </ul>
+// <ol class="decimal">
+// 	<li>Decimal list</li>
+// </ol>
+//
+// Styleguide elements.lists
+
+.bullet {
+  list-style-type: disc;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: $base-padding;
+
+  li {
+    padding-bottom: $base-padding-lite;
+  }
+}
+
+.decimal {
+  list-style-type: decimal;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: $base-padding;
+
+  li {
+    padding-bottom: $base-padding-lite;
+  }
+}

@@ -100,14 +100,6 @@
 // }
 
 
-// // Home
-// //============================================
-
-// .article_module-content {
-//   padding: $base-padding;
-// }
-
-
 // // Resource to revenues
 // //============================================
 
@@ -856,26 +848,4 @@
 // }
 
 
-// // About
-// //============================================
 
-// .bureaus {
-//   > article {
-//     @include span-columns(12);
-
-//     > div {
-//       &:first-of-type {
-//         @include span-columns(3 of 12);
-//       }
-
-//       &:last-of-type {
-//         @include span-columns(9 of 12);
-//       }
-
-//       img {
-//         padding-top: $base-padding;
-//         max-width: 100px;
-//       }
-//     }
-//   }
-// }

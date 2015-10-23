@@ -23,7 +23,6 @@
 }
 
 .container-padded {
-  @include span-columns(12);
   padding-top: $base-padding-extra;
   padding-bottom: $base-padding-extra;
 }

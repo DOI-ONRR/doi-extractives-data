@@ -4,7 +4,7 @@
 //
 // Markup:
 // <div class="container">
-// <article class="card" class="cards-item">
+// <article class="card">
 //   <img class="card-image" src="{{ site.baseurl }}/img/sectors.png" alt="U.S. natural resource sectors">
 //   <div class="card-content">
 //     <h1 class="card-title">What are natural resources?</h1>
@@ -24,6 +24,31 @@
   position: relative;
   margin-top: $base-padding;
   height: 550px;
+}
+
+.card-secondary {
+  height: 450px;
+  @include span-columns(3);
+  // Todo, add responsive breakpoints, omega-override
+}
+
+.card-splash{
+  background-color: $light-black;
+  color: $white;
+  border-radius: 10px 10px 0 0;
+  position: relative;
+  height: 170px;
+  padding: $base-padding;
+}
+
+.card-splash_title {
+  color: $white;
+}
+
+.card-splash_image {
+  position: absolute;
+  right: $base-padding;
+  bottom: $base-padding;
 }
 
 img.card-image {

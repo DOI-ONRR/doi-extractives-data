@@ -1,0 +1,54 @@
+// Footer
+// 
+// This is on the bottom of every page. Find in _includes/layout/footer.html
+//
+//
+// Styleguide modules.footer
+
+footer,
+.footer {
+  background-color: $light-black;
+  color: $white;
+  padding-top: $base-padding-extra;
+  padding-bottom: $base-padding-extra;
+}
+
+.footer-col {
+  @include span-columns(3);
+  margin-top: $base-padding;
+
+  &:first-of-type {
+    @include span-columns(2);
+  }
+}
+
+.footer-col-right {
+  @include span-columns(4);
+  @include omega();
+}
+
+.footer-heading {
+  color: $white;
+  padding-bottom: $base-padding-lite;
+}
+
+.footer-para {
+  color: $white;
+
+  &.footer-intro {
+    line-height: 1.2;
+    margin-bottom: 1em;
+  }
+}
+
+.footer-list {
+  font-weight: $weight-light;
+}
+
+.footer-list_item {
+  line-height: 1.3;
+  padding-right: $base-padding;
+  padding-bottom: $base-padding;
+}
+
+

@@ -1,7 +1,4 @@
 ---
-
+# Jekyll only builds Sass files with front matter
 ---
-
-// instantiates the baseurl that can be used for relative url paths in scss
-$baseurl: '{{site.baseurl}}';
 @import 'main';

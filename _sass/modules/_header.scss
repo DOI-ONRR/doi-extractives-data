@@ -68,7 +68,7 @@ header,
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-size: .8rem;
+  @include font-size(.8);
 }
 
 .header-glossary {
@@ -79,4 +79,5 @@ header,
   padding-left: $base-padding-extra;
   padding-right: $base-padding-extra;
   z-index: $z-mid;
+  background-color: $white;
 }

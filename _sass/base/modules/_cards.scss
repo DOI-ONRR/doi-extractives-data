@@ -23,12 +23,17 @@
   border-radius: 10px;
   position: relative;
   margin-top: $base-padding;
+  height: 550px;
 }
 
 .card-image {
   border-bottom: 6px solid $dark-gray;
   border-radius: 10px 10px 0 0;
   width: 100%;
+}
+
+.card-content {
+  padding: $base-padding;
 }
 
 .card-title {
@@ -39,7 +44,7 @@
   }
 }
 
-.card-content {
-  padding: $base-padding;
+.card-link {
+  position: absolute;
+  bottom: $base-padding;
 }
-

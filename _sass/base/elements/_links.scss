@@ -7,20 +7,41 @@
 // 
 // Styleguide elements.links
 
-a {
+a,
+.link-alpha {
   border: none;
   color: $base-font-color;
   cursor: pointer;
   text-decoration: none;
   transition: color 0.1s linear;
-
   &:active,
   &:hover {
     text-decoration: none;
     border-bottom: 1px dotted $base-font-color;
+    img{
+      border: none;
+    }
   }
 
+  &.button, 
+  &.button-primary,
+  &.button-secondary {
+    border: none;
+  }
   img {
     border: none;
+  }
+
+}
+.link-beta {
+  @extend a;
+  color: $white;
+  &:active,
+  &:hover {
+    text-decoration: none;
+    border-bottom: 1px dotted $white;
+    img{
+      border: none;
+    }
   }
 }

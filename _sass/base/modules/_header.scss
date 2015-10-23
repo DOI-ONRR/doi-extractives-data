@@ -1,0 +1,71 @@
+// Header
+// 
+// This is on the top of every page. Find in _includes/layout/header.html
+//
+// Markup:
+// <header class="header">
+//   <div>
+//     <a class="header-image_link" href="/">
+//       <img class="header-image" src="{{ site.baseurl }}/img/USEITI_Logotype.png" alt="USEITI logo">
+//     </a>
+//   </div>
+//   <nav class="header-nav">
+//     <ul class="header-nav_inner">
+//       <li class="header-nav_item">
+//         <a class="header-nav_item_link" href="{{ site.baseurl }}/">Home</a>
+//       </li>
+//       <li class="header-nav_item">
+//         <a class="header-nav_item_link" href="{{ site.baseurl }}/about">About</a>
+//       </li>
+//     </ul>
+//   </nav>
+// </header>
+//
+// Styleguide modules.header
+
+header,
+.header {
+  @include outer-container($max-width);
+  margin-bottom: $base-padding;
+  margin-top: $base-padding;
+
+  div:first-of-type {
+    @include span-columns(5);
+  }
+}
+
+.header-image_link {
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    border: none;
+  }
+}
+
+.header-image {
+  margin-top: $base-padding/2;
+  width: 280px;
+}
+
+.header-nav {
+  @include span-columns(7);
+  @include omega();
+}
+
+.header-nav_inner {
+
+}
+
+.header-nav_item {
+  display: inline-block;
+  padding-right: $base-padding-large;
+}
+
+.header-nav_item_link {
+  color: $dark-gray;
+  font-weight: $weight-light;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: .8rem;
+}

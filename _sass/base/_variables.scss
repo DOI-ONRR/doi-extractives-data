@@ -25,29 +25,15 @@ $mid-gray: #ebebeb;
 $dark-gray: #4a4a4a;
 $light-black: #303030; //-
 
-// v2
-// $white: #ffffff;
-// $black: #040404; //-
-
+// v2 - deprecate
 $putty: #f4f4f4; //-
 $dark-putty: #838383; //-
 $green: #9fa63b; //
 $shock-green: #acb626;
 $purple: #965bcd;//
 $red: #c5403c;//
-// $blue: #1e7caa;// previously  ;
 $cobalt: #1075a5; //-
-// $dark-gray: #666666;//
-// $mid-gray: #e1e1e1; //-EBEBEB
 
-// Color map
-$colors: (
-  oilgas: $green,
-  coal: $purple,
-  minerals: $red,
-  renewables: $blue,
-  other: $dark-gray
-);
 
 // Font Colors
 $base-font-color: $dark-gray;

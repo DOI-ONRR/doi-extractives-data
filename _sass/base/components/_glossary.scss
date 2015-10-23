@@ -145,6 +145,7 @@
 // Markup: 
 // <p>What are <span class="term {{modifier_class}}" data-term="extractive industry" title="Click to define" tabindex="0">
 //     extractive industries
+//     <i class="fa fa-book"></i>
 // </span>, Brian asked inquisitively</p>
 //
 // Styleguide glossary.term
@@ -155,14 +156,12 @@
   box-shadow: 0 0 0 4px transparent;
   border-bottom: none;
   cursor: pointer;
-  @extend .fa;
-  &:after{
-    content: $fa-var-book;
-    padding-left: .5rem;
+  i {
+    padding-left: .25em;
   }
   &:focus,
   &:hover {
-    border-bottom: 1px dotted;
+    border-bottom: 1px dotted $base-font-color;
   }
 }
 

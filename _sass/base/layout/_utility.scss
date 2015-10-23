@@ -1,3 +1,12 @@
 .u-centered{
 	text-align: center;
 }
+
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: px;
+  overflow: hidden;
+}

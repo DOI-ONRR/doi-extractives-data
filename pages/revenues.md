@@ -10,7 +10,7 @@ permalink: /resource_revenues/
 
     <section class="container">
 
-      <div class="communities-left">
+      <div class="container-left">
 
         <h1>How do natural resources on federal lands result in U.S. revenues?</h1>
 
@@ -18,7 +18,7 @@ permalink: /resource_revenues/
 
       </div>
 
-      <div class="communities-right article_module">
+      <div class="container-right article_module">
 
         <figure>
 

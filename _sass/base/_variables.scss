@@ -3,15 +3,13 @@
 // Typography
 $weight-light: 200; // use
 $weight-book: 400; // use
-$weight-medium: 500;
-$weight-semibold: 600;
 $weight-bold: 700; // use
-$weight-black: 800;
 
 $sans-serif: Lato, "Helvetica Neue", Helvetica, arial, sans-serif;
 $base-font-family: $sans-serif;
 $base-font-weight: 400;
 $base-font-size: 1rem;
+$base-font-multiplier: 1;
 $base-line-height: 1.375rem;
 
 // Colors
@@ -47,14 +45,6 @@ $cobalt: #1075a5; //-
 // $dark-gray: #666666;//
 // $mid-gray: #e1e1e1; //-EBEBEB
 
-// v1 old colors here. deprecate.
-$darker-green: #216d09;
-$darkest-green: #174b06;
-$yellow: #f0d704;
-$darker-yellow: #eeba28;
-$red: #d44116;
-$darker-red: #b93610;
-
 // Color map
 $colors: (
   oilgas: $green,
@@ -63,23 +53,6 @@ $colors: (
   renewables: $blue,
   other: $dark-gray
 );
-
-$guide-colors: (
-  black: $black,
-  light-black: $light-black,
-  putty: $putty,
-  dark-putty: $dark-putty,
-  cobalt: $cobalt,
-  mid-gray: $mid-gray
-);
-
-// Background Color
-$primary-background-color: $white;
-$secondary-background-color: $light-gray;
-$tertiary-background-color: $mid-gray;
-$quaternary-background-color: $light-blue;
-$fifth-background-color: $pale-blue;
-$sixth-background-color: $mid-blue;
 
 // Font Colors
 $base-font-color: $dark-gray;
@@ -92,8 +65,7 @@ $base-padding-large: 1.875em; //30px
 $base-padding-extra: 3.125em; //50px
 
 // Link Colors
-$base-link-color: $green;
-$hover-link-color: $darker-green;
+$base-link-color: $dark-gray;
 
 // Buttons
 $primary-button-bg-color: $blue;
@@ -120,7 +92,5 @@ $thick-border-size: 8px;
 $form-border-color: $base-border-color;
 $form-border-color-hover: darken($base-border-color, 10);
 $form-border-radius: $base-border-radius;
-$form-box-shadow: none;
-$form-box-shadow-focus: 0 0 0 2px $mid-blue;
-$form-font-family: $base-font-family;
-$form-input-color: $dark-gray;
+$form-box-shadow-focus: 0 0 0 2px $form-border-color-hover;
+

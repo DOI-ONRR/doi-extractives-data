@@ -6,11 +6,15 @@
 // Styleguide modules.footer
 
 footer,
+.footer,
+.footer-heading,
+.footer-para {
+  color: $white;
+}
+footer,
 .footer {
   background-color: $light-black;
-  color: $white;
-  padding-top: $base-padding-extra;
-  padding-bottom: $base-padding-extra;
+  padding-bottom: $base-padding;
 }
 
 .footer-col {
@@ -28,21 +32,7 @@ footer,
 }
 
 .footer-heading {
-  color: $white;
   padding-bottom: $base-padding-lite;
-}
-
-.footer-para {
-  color: $white;
-
-  &.footer-intro {
-    line-height: 1.2;
-    margin-bottom: 1em;
-  }
-}
-
-.footer-list {
-  font-weight: $weight-light;
 }
 
 .footer-list_item {

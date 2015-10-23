@@ -11,6 +11,12 @@
 // Variables
 @import 'variables';
 
+
+// Mixins
+// @import 'mixins/font-size';
+@import 'mixins/type-mixins';
+
+
 // Elements
 //
 // These are site elements
@@ -18,12 +24,9 @@
 // Styleguide elements
 @import 'elements/elements';
 
-// Neat Settings -- uncomment if using Neat -- must be imported before Neat
-// @import 'grid-settings';
 
-// Mixins
-// @import 'mixins/font-size';
-@import 'mixins/type-mixins';
+// Utility classes
+@import 'layout/utility';
 
 // Grid
 @import 'grid';
@@ -31,6 +34,7 @@
 // @import all other elements
 @import 'elements/typography';
 @import 'elements/links';
+@import 'elements/forms';
 
 // Extends
 @import 'extends/buttons';
@@ -43,11 +47,11 @@
 
 @import 'layout/layout';
 @import 'layout/slabs';
-@import 'layout/utility';
+
 
 // Typography and Elements
 @import 'fonts';
-// @import 'forms';
+
 // @import 'typography';
 
 // Components
@@ -58,15 +62,20 @@
 @import 'components/buttons';
 @import 'components/eiti-slider';
 @import 'components/eiti-map';
-@import 'components/glossary';
-@import 'components/carousel';
+@import 'components/footnotes';
+
 
 // Modules
 //
 // Complex pieces made of components and elements
 //
 // Styleguide modules
-@import 'modules/hero';
-@import 'modules/cards';
 @import 'modules/header';
 @import 'modules/footer';
+@import 'modules/glossary';
+@import 'modules/sticky_nav';
+@import 'modules/carousel';
+@import 'modules/hero';
+@import 'modules/cards';
+@import 'modules/communities_intro';
+@import 'modules/communities_content';

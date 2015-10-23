@@ -12,8 +12,7 @@
   }
 
   h3 {
-    @extend .h2;
-    color: $cobalt;
+    @include heading(h3);
     padding-bottom: 5px;
     margin-bottom: 8px;
   }

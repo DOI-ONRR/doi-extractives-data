@@ -116,14 +116,14 @@
     }
 
     &.active {
-      border: $thin-border-size solid $dark-putty;
+      border: $thin-border-size solid $mid-gray;
       color: $light-black;
       font-weight: 600;
     }
 
     &:hover,
     &:focus {
-      border: $thin-border-size solid $dark-putty;
+      border: $thin-border-size solid $mid-gray;
     }
   }
 }
@@ -150,9 +150,9 @@
   ul li {
     @include font-size(0.8);
     background-color: $white;
-    border: $thin-border-size solid $cobalt;
+    border: $thin-border-size solid $blue;
     border-radius: $base-border-radius;
-    color: $cobalt;
+    color: $blue;
     display: inline-block;
     padding: 5px;
     margin-left: 10px;
@@ -171,6 +171,6 @@
 }
 
 .map-notes {
-  border-top: $thin-border-size solid $dark-putty;
+  border-top: $thin-border-size solid $mid-gray;
   padding-bottom: $base-padding-large;
 }

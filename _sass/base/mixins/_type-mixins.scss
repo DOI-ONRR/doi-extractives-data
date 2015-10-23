@@ -1,5 +1,9 @@
-// Typography Mixins
-
+// heading() mixin
+//
+// Use the heading() mixin to add bundles of 
+// typographical styles to a selector
+//
+// Styleguide mixins.heading
 @mixin heading($level) {
   margin: 0 0 1rem 0;
   color: $base-font-color;
@@ -66,3 +70,17 @@
     margin-bottom: .625rem; // 10px
   }
 }
+
+
+// font-size() mixin
+//
+// Use the font-size() to set a specific size to an element or class
+// typographical styles to a selector
+//
+// Styleguide mixins.font-size
+
+@mixin font-size($scale: 1) {
+  font-size: ($scale * $base-font-multiplier * 10) + px;
+  font-size: ($scale * $base-font-multiplier) + rem;
+}
+

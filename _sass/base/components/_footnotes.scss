@@ -1,0 +1,98 @@
+// Footnotes
+//
+// Technique from http://www.sitepoint.com/accessible-footnotes-css/
+// Initialiazing a `footnotes` counter on the wrapper
+//
+// Markup: 
+// <p>This is an example foonote.<sup id="fnref:26">
+// 	<a href="#fn:26" class="footnote">26</a>
+// </sup>
+// </p>
+// <div class="footnotes">
+//   <ol>
+//     <li id="fn:26">
+//       <p>Barrels noted as “bbl” when used as a unit of measure <a href="#fnref:1" class="reversefootnote">↩</a></p>
+//     </li>
+//   </ol>
+// </div>
+// Styleguide components.footnotes
+
+body {
+  counter-reset: footnotes;
+}
+
+.footnotes {
+  padding-top-top: $base-padding-extra;
+  padding-bottom: $base-padding-extra;
+
+  a {
+    text-decoration: underline;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+
+  ol {
+    padding-top: $base-padding-lite;
+    
+    list-style-type: decimal;
+    padding-left: $base-padding;
+    @include heading('para-sm');
+    font-weight: 200;
+    padding-bottom: $base-padding;
+
+    & :target {
+    background-color: $mid-blue;
+    }
+  }
+
+  p {
+    padding-bottom: $base-padding-lite;
+  }
+  li {
+    list-style-type: decimal;
+  }
+}
+
+// Inline footnotes references
+// 1. Increment the counter at each new reference
+// 2. Reset link styles to make it appear like regular text
+
+a[aria-describedby="footnote-label"] {
+  color: inherit; // 2
+  counter-increment: footnotes; // 1
+  cursor: default; // 2
+  outline: none; // 2
+  text-decoration: none; // 2
+}
+
+ // Actual numbered references
+ // 1. Display the current state of the counter (e.g. `[1]`)
+ // 2. Align text as superscript
+ // 3. Make the number smaller (since it's superscript)
+ // 4. Slightly offset the number from the text
+ // 5. Reset link styles on the number to show it's usable
+sup a[rel="footnote"]{
+  vertical-align: super; // 2
+  font-size: smaller;
+}
+sup a[rel="footnote"]:after {
+  @include font-size(0.7); // 3
+  font-weight: $weight-book;
+  color: $blue; // 5
+  // content: '[' counter(footnotes) ']'; // 1
+  cursor: pointer; // 5
+  margin-left: 2px; // 4
+  vertical-align: super; // 2
+  font-size: smaller;
+}
+
+// Resetting the default focused styles on the number
+
+a[rel="footnote"]:focus:after,
+a[rel="footnote"]:hover:after {
+  outline: thin dotted;
+  outline-offset: 2px;
+}

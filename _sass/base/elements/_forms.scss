@@ -15,13 +15,14 @@
 //
 // Styleguide elements.forms
 
+
 form {
   text-align: left;
 }
 
 fieldset {
-  border-top: $regular-border-size solid $base-border-color;
-  padding-bottom: 1em;
+  border-top: 1px solid $base-border-color;
+  padding-bottom: $base-padding;
 
   > fieldset {
     border-top: none;
@@ -37,7 +38,6 @@ label,
 select {
   font-size: $base-font-size;
   display: block;
-  font-family: $form-font-family;
 }
 
 label {
@@ -58,7 +58,7 @@ textarea,
 select[multiple=multiple] {
   font-size: $base-font-size;
   @include placeholder {
-    color: $form-input-color;
+    color: $dark-gray;
     opacity: 1;
     font-weight: $weight-book;
   }
@@ -66,10 +66,10 @@ select[multiple=multiple] {
   background-color: white;
   border-radius: $form-border-radius;
   border: 1px solid $form-border-color;
-  box-shadow: $form-box-shadow;
+  box-shadow: none;
   box-sizing: border-box;
-  font-family: $form-font-family;
-  margin-bottom: 1em;
+  // font-family: $base-font-family;
+  margin-bottom: $base-padding;
   padding: 0.6em 0.8em;
   width: 100%;
 
@@ -90,90 +90,6 @@ textarea {
 
 input[type="search"] {
   @include appearance(none);
-}
-
-label.checkbox,
-label.radio {
-  display: inline-block;
-  font-weight: $weight-book;
-  margin-bottom: 0.5em;
-
-  input[type="checkbox"] + span {
-    box-shadow: 0 0 1px $black;
-    border-radius: 1px;
-    display: inline-block;
-    height: 20px;
-    margin-top: 0;
-    margin-right: 0.5em;
-    margin-bottom: 0;
-    vertical-align: -4px;
-    padding-top: 4px; //compensate for FA vertical-align
-    width: 20px;
-  }
-
-  input[type="radio"] + span {
-    box-shadow: 0 0 1px $black;
-    border-radius: 500px;
-    display: inline-block;
-    height: 20px;
-    margin-top: 0;
-    margin-right: 0.5em;
-    margin-bottom: 0;
-    vertical-align: -4px;
-    width: 20px;
-  }
-}
-
-label.checkbox :checked + span {
-  background-color: $green;
-  border: 1px solid $green;
-  box-shadow: 0 0 0 0 $white;
-  position: relative;
-
-  &:after {
-    color: $white;
-    font-family: "FontAwesome";
-    content: $fa-var-check;
-    position: relative;
-    left: 2px;
-    top: -5px;
-  }
-}
-
-label.radio :checked + span {
-  background-color: $green;
-  border: 6px solid $white !important;
-  box-shadow: 0 0 1px $black;
-  vertical-align: -4px;
-  position: relative;
-}
-
-input[type="checkbox"],
-input[type="radio"] {
-  @include appearance(none);
-  display: inline-block;
-  height: 20px;
-  width: 20px;
-  vertical-align: -4px;
-
-  // to hide checkbox/radio from visual but 
-  // still read to screenreaders
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-
-  &:focus {
-    + .checkbox-focus {
-      border: 1px solid $white;
-      box-shadow: $form-box-shadow-focus;
-      outline: none;
-    }
-  }
 }
 
 input[type="file"] {

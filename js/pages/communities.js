@@ -6,12 +6,12 @@
       scrollLeft = (window.pageXOffset !== undefined) ? window.pageXOffset : (document.documentElement || document.body.parentNode || document.body).scrollLeft;
       scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
     };
-    var communitiesContent = document.getElementsByClassName("communities-content")[0];
+    var communitiesContent = document.getElementsByClassName("communities_content")[0];
     
 
 
     var removeActive = function(){
-      var communitiesNavItems = document.getElementsByClassName("communities-nav-item")
+      var communitiesNavItems = document.getElementsByClassName("js-comm_nav_item")
       for (var i = 0; i < communitiesNavItems.length; i++) {
         communitiesNavItems[i].classList.remove('active');
       }
@@ -24,7 +24,7 @@
       }
     }
 
-    var communitiesNavItems = document.getElementsByClassName("communities-nav-item");
+    var communitiesNavItems = document.getElementsByClassName("js-comm_nav_item");
     for (var i = 0; i < communitiesNavItems.length; i++) {
       var item = communitiesNavItems[i];
       item.addEventListener('click', function () {
@@ -35,7 +35,7 @@
 
     
     var setPageSections = function(){
-      var communitiesSections = document.getElementsByClassName("communities-section"),
+      var communitiesSections = document.getElementsByClassName("js-comm_section"),
         sections = [];
       for (var i = 0; i < communitiesSections.length; i++) {
         var section = communitiesSections[i];
@@ -58,10 +58,10 @@
     }
 
     var setStickyPos = function () {
-      var stickyNav = document.getElementsByClassName("communities-sticky-nav")[0],
+      var stickyNav = document.getElementsByClassName("sticky_nav")[0],
           ccOffsetTop = communitiesContent.offsetTop;
 
-      // scrollDifference is the difference in height between the location of the top of the window and the top of the 'communities-content' div
+      // scrollDifference is the difference in height between the location of the top of the window and the top of the 'communities_content' div
       var scrollDifference = scrollTop - ccOffsetTop;
 
       var combinedOffset = ccOffsetTop + communitiesContent.offsetHeight;

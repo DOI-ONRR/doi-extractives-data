@@ -1,0 +1,56 @@
+// Carousel
+//
+// A carousel with circle pagination
+//
+// Markup: 
+// <div class="carousel">
+//   <h3 class="carousel-header_text">How do natural resources become federal revenues?</h3>
+//   <button class="carousel-button button-big button-primary">See how it works</button>
+//   <h2>Step 1: Plan</h2>
+//   <img class="carousel-image" src="/img/revenues.png" alt="revenues">
+//   <ul class="carousel-pagination">
+//     <li class="carousel-pagination_item active"></li>
+//     <li class="carousel-pagination_item"></li>
+//     <li class="carousel-pagination_item"></li>
+//     <li class="carousel-pagination_item"></li>
+//   </ul>
+// </div>
+//
+// Styleguide modules.carousel
+
+.carousel{
+  background-color: $pale-blue;
+  text-align: center;
+  border-left: 4px solid $white;
+  border-right: 4px solid $white;
+}
+.carousel-header_text{
+  padding-top: 2em;
+  padding-left: 2em;
+  padding-bottom: 1em;
+  padding-right: 2em;
+}
+.carousel-button{
+  margin-bottom: 1em;
+}
+.carousel-image{
+  width: 100%;
+}
+.carousel-pagination{
+  background-color: $mid-blue;
+  width: 100%;
+}
+.carousel-pagination_item{
+  width: 1em;
+  height: 1em;
+  background-color: $white;
+  border: 2px solid $white;
+  display: inline-block;
+  border-radius: 50%;
+  margin: .5em;
+  cursor: pointer;
+  &.active{
+    background-color: $mid-blue;
+    border: 2px solid $white;  
+  }
+}

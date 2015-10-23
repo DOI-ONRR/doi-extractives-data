@@ -40,3 +40,24 @@ a img {
 [aria-hidden="true"] {
   display: none;
 }
+
+table{
+  border: 1px solid $mid-gray;
+  border-spacing: 2px;
+  @include font-size(0.9);
+  color: $dark-gray;
+  font-weight: $weight-light;
+  margin-bottom: $base-padding;
+}
+
+thead{
+  border-bottom: 2px solid $mid-gray;
+  font-weight: $weight-book;
+  text-align: center;
+  background-color: $mid-gray;
+}
+
+td{
+  border: 1px solid $mid-gray;
+  padding: 5px;
+}

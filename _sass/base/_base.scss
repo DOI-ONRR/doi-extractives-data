@@ -24,9 +24,13 @@
 // Mixins
 // @import 'mixins/font-size';
 @import 'mixins/type-mixins';
+
+// Grid
 @import 'grid';
 
+// @import all other elements
 @import 'elements/typography';
+@import 'elements/links';
 
 // Extends
 @import 'extends/buttons';

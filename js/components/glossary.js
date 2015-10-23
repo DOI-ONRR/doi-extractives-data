@@ -119,7 +119,7 @@ Glossary.prototype.show = function() {
   this.$toggle.addClass('active');
   this.$search.focus();
   this.isOpen = true;
-  accessibility.restoreTabindex(this.$body);
+  // accessibility.restoreTabindex(this.$body);
 };
 
 Glossary.prototype.hide = function() {
@@ -127,7 +127,7 @@ Glossary.prototype.hide = function() {
   this.$toggle.removeClass('active');
   this.$toggle.focus();
   this.isOpen = false;
-  accessibility.removeTabindex(this.$body);
+  // accessibility.removeTabindex(this.$body);
 };
 
 /** Remove existing filters on input */

@@ -11,7 +11,7 @@
 //       class="button button--close toggle"><span class="u-visually-hidden"><i class="fa fa-times"></i></span>
 //   </button>
 //   <h2 id="glossary-header"><i class="fa fa-book"></i> Glossary</h2>
-//   <label for="glossary-search" class="label">Search glossary terms</label>
+//   <label for="glossary-search" class="label">Filter glossary terms</label>
 //   <input id="glossary-search" type="search" placeholder="e.g. Revenues">
 //   <div>
 //     <ul>
@@ -156,13 +156,16 @@
   box-shadow: 0 0 0 4px transparent;
   border-bottom: none;
   cursor: pointer;
-  i {
-    padding-left: .25em;
-  }
+
   &:focus,
   &:hover {
     border-bottom: 1px dotted $base-font-color;
   }
+}
+
+.term-icon {
+  padding-left: $base-padding-lite;
+  background: url('../img/icons/glossary/icon-book-inline.svg') no-repeat;
 }
 
 .term-p {

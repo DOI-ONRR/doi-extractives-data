@@ -30,7 +30,7 @@ header,
   margin-top: $base-padding;
 
   div:first-of-type {
-    @include span-columns(5);
+    @include span-columns(4);
   }
 }
 
@@ -48,7 +48,7 @@ header,
 }
 
 .header-nav {
-  @include span-columns(7);
+  @include span-columns(8);
   @include omega();
 }
 
@@ -59,6 +59,7 @@ header,
 .header-nav_item {
   display: inline-block;
   padding-right: $base-padding-large;
+  padding-top: $base-padding;
 }
 
 .header-nav_item_link {
@@ -68,4 +69,14 @@ header,
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: .8rem;
+}
+
+.header-glossary {
+  position: fixed;
+  right: 0px;
+  border: 1px solid $mid-gray;
+  padding: $base-padding;
+  padding-left: $base-padding-extra;
+  padding-right: $base-padding-extra;
+  z-index: $z-mid;
 }

@@ -37,7 +37,7 @@ npm run watch
 
 ## Styleguide
 ```sh
-npm install --save-dev kss
+npm install --dev
 npm run init-stylguide
 npm run watch
 ```

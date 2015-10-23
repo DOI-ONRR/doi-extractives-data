@@ -68,6 +68,11 @@
   }
 
 }
+
+.glossary-icon {
+  padding-right: $base-padding-lite;
+}
+
 #glossary-header{
   i {
     margin-right: .75rem;
@@ -96,6 +101,7 @@
   }
   .glossary-term {
     margin: 0;
+    color: $white;
   }
 
   .glossary-definition {
@@ -135,6 +141,10 @@
   }
 }
 
+.glossary-term {
+  color: $white;
+}
+
 // Term classes
 //
 // Wrap glossary terms with these classes
@@ -145,28 +155,30 @@
 // Markup: 
 // <p>What are <span class="term {{modifier_class}}" data-term="extractive industry" title="Click to define" tabindex="0">
 //     extractive industries
-//     <i class="fa fa-book"></i>
+//     <i class="term-icon">
 // </span>, Brian asked inquisitively</p>
 //
 // Styleguide glossary.term
 
 .term {
   @include transition(background-color, .2s, box-shadow, .2s, color, .2s);
-  background-color: transparent;
+  // background-color: transparent;
   box-shadow: 0 0 0 4px transparent;
   border-bottom: none;
   cursor: pointer;
-  i {
-    padding-left: .25em;
-  }
   &:focus,
   &:hover {
     border-bottom: 1px dotted $base-font-color;
   }
 }
+.term-icon {
+  background: url('../img/icons/glossary/icon-book-inline.svg') no-repeat;
+  padding-left: 0.75em;
+  margin-left: $base-padding-lite;
+}
 
 .term-p {
   @extend .term;
-  margin-right: .5rem;
+  margin-right: 0.5rem;
   box-shadow: none;
 }

@@ -35,6 +35,13 @@ npm run init-stylguide
 npm run watch
 ```
 
+## Styleguide
+```sh
+npm install --save-dev kss
+npm run init-stylguide
+npm run watch
+```
+
 ## Tests
 The JavaScript tests currently only cover a small portion of data processing utilities. You can run them with [Node]:
 

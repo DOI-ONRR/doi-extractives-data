@@ -1,0 +1,26 @@
+// Links
+// 
+// Use them like this
+//
+// Markup:
+// <a href="...">Link</a>
+// 
+// Styleguide elements.links
+
+a {
+  border: none;
+  color: $base-font-color;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.1s linear;
+
+  &:active,
+  &:hover {
+    text-decoration: none;
+    border-bottom: 1px dotted $base-font-color;
+  }
+
+  img {
+    border: none;
+  }
+}

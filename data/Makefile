@@ -34,8 +34,8 @@ EXPORT_FILES = \
 
 # GDP figures from the Bureau of Economic Analysis
 GDP_FILES = \
-	national/gdp.tsv \
-	state/gdp.tsv
+	gdp/US.tsv \
+	gdp/states.tsv
 
 # a list of all of the individual files to build.
 # unless otherwise noted, all of these files are broken
@@ -74,7 +74,7 @@ national/production.tsv: state/production.tsv offshore/production.tsv
 		-o $@ $^
 
 # national GDP figures
-national/gdp.tsv:
+gdp/US.tsv:
 	mkdir -p $(dir $@)
 	bin/get-bea-data.js --in-topo $(input)geo/us-counties.json --geo us -o $@
 
@@ -101,7 +101,7 @@ state/production.tsv: county/production.tsv
 		-o $@ $<
 
 # state GDP figures
-state/gdp.tsv:
+gdp/states.tsv:
 	mkdir -p $(dir $@)
 	bin/get-bea-data.js --in-topo $(input)geo/us-counties.json --geo state -o $@
 

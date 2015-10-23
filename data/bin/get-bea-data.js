@@ -17,7 +17,7 @@ var options = require('../../lib/args')({
   industry: {
     desc: 'industries to list',
     // BEA industry codes; see input/bea/industries.json
-    default: '21,211,212,327,331',
+    default: '21',
     alias: 'I'
   },
   of: {
@@ -98,7 +98,7 @@ function mapRow(row, enc, next) {
   return next(null, {
     Year:     row.Year,
     Code:     row.Industry,
-    // nice typo, guys
+    // nice typo, y'all
     Industry: row.IndustryDescription || row.IndustrYDescription,
     GDP:      row.DataValue
   });

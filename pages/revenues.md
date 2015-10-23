@@ -4,9 +4,9 @@ layout: default
 permalink: /resource_revenues/
 ---
 
-<div class="communities">
+<div>
 
-  <div class="communities-intro revenues-intro">
+  <div>
 
     <section class="container">
 
@@ -18,13 +18,13 @@ permalink: /resource_revenues/
 
       </div>
 
-      <div class="container-right article_module">
+      <div class="container-right">
 
         <figure>
 
-          <img src="{{ site.baseurl }}/img/solar-doi.png" alt="Solar energy installation on federal land">
+          <img class="revenues_intro-image" src="{{ site.baseurl }}/img/solar-doi.png" alt="Solar energy installation on federal land">
 
-          <figcaption class="article_module-content">
+          <figcaption class="revenues_intro-image_caption">
             Federal desert solar farm
           </figcaption>
 
@@ -73,7 +73,7 @@ permalink: /resource_revenues/
           </div>
         </div></a>
 
-        <div class="article_module-content">
+        <div  class="card-content">
 
           <p>Oil and gas are fossil fuels. Oil forms in underground reservoirs, taking tens of millions of years. Gas – or “natural gas” – forms over thousands of years, both on land and offshore.</p>
 
@@ -93,7 +93,7 @@ permalink: /resource_revenues/
           </div>
         </div></a>
 
-        <div class="article_module-content">
+        <div  class="card-content">
 
           <p>Gold, copper and iron are the chief sources of hardrock-mineral revenues in the U.S. Hardrock minerals contain metals such as these and silver, zinc, nickel, tin, and lead. In 2013, U.S. metal production totaled $32 billion in value.</p>
 
@@ -113,7 +113,7 @@ permalink: /resource_revenues/
           </div>
         </div></a>
 
-        <div class="article_module-content">
+        <div  class="card-content">
 
           <p>Environmentally sustainable energy sources like solar and wind play an ever increasing role in meeting our country’s electricity needs. Solar energy converts solar radiation into heat and electricity, while wind powers turbines.</p>
 

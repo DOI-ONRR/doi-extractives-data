@@ -1,0 +1,24 @@
+name: Revenue for Production on Federal Lands
+description: |
+  The actual commodity volumes produced by the companies that extract natural
+  resources on federal land and waters.
+
+source: |
+  Obtained from the <a href="http://onrr.doi.gov/">Office of Natural Resource Revenue</a>.
+
+resources:
+  commodities: true
+
+columns:
+  value: Revenue
+  region: Region
+
+geo:
+  national:
+    filename: US.tsv
+
+  regional:
+    filename: regional.tsv
+
+  subregional:
+    filename: regional/{region}/subregions.tsv

@@ -1,0 +1,28 @@
+name: Exports
+description: |
+  The amount of money earned in each state, expressed in US dollars and as a
+  percentage of each state's total economic output.
+
+source: |
+  Obtained from the <a href="https://www.census.gov/foreign-trade/statistics/state/data/index.html">US Census</a>.
+
+resources:
+  only:
+    - coal
+    - oilgas
+    - minerals
+
+columns:
+  - label: Value
+    value: Value
+    region: State
+  - label: Share
+    value: Share
+    region: State
+
+geo:
+  national:
+    filename: US.tsv
+
+  regional:
+    filename: states.tsv

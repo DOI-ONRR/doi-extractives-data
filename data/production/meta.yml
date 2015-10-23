@@ -1,0 +1,31 @@
+name: Production on Federal Lands
+description: |
+  Federal revenue from natural resource extraction on federal land and waters.
+
+source: |
+  Obtained from the <a href="http://onrr.doi.gov/">Office of Natural Resource Revenue</a>.
+
+resources:
+  commodities: true
+
+hierarchy:
+  - name: Product
+    column: Product
+
+geo:
+  national:
+    filename: US.tsv
+    columns:
+      value: Volume
+
+  regional:
+    filename: regional.tsv
+    columns:
+      region: Region
+      value: Volume
+
+  subregional:
+    filename: regional/{region}/subregions.tsv
+    columns:
+      region: Region
+      value: Revenue

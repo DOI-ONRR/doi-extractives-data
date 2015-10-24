@@ -21,25 +21,23 @@ This was a continuation of the our Sprint-MightyMoose testing cycle. Based on [i
 
 ### How it works
 
-- Our previous iteration of this navigation called this 'Natural Resources,' which led to confusion on the difference between this section and 'Explore Data.' This iteration, switching the words to 'How it works' solved the confusion problem, but what might be found here is still ambiguous for people.
-
-- However, people **are** linking 'How it works' to the carousel below for further clues.
+Our previous iteration of this navigation called this 'Natural Resources,' which led to confusion on the difference between this section and 'Explore Data.' This iteration, switching the words to 'How it works' solved the confusion problem, but what might be found here is still ambiguous for people. However, people **are** linking 'How it works' to the carousel below for further clues.
 
 - _This is ambiguous. I get a little clue from this [points to carousel with similar words in it] but I’m just not sure. What is ‘it’?_
 
 - _Um, presumably something like the box below that’s like ‘how do natural resources become natural revenues?” I’m thinking this is something about the extraction about this stuff get extracted and the revenues that the government gets._
 
-- Instead of having overlap between this section and 'Explore Data,' we now have a bit of mental map overlap with this section and "about this site"- or "about USEITI"-type of information.
+Instead of having overlap between this section and 'Explore Data,' we now have a bit of mental map overlap with this section and "about this site"- or "about USEITI"-type of information.
 
 - _I don’t think it means how the site works._
 
-- _Based on what I’ve seen, I would expect this section to describe all the legal background for creating this initiative, how its funded, the organization, presentation of the data is carried out. Maybe a paragraph saying ‘we have offices in Houston, and DC, to find data and make it transparent’ or ‘we hire conversation. I would not expect it to tell me how to use the site or the data, primarily because I see explore next to it._
+- _Based on what I’ve seen, I would expect this section to describe all the legal background for creating this initiative, how its funded, the organization, presentation of the data is carried out. Maybe a paragraph saying ‘we have offices in Houston, and DC, to find data and make it transparent’ or ‘who we hire’ (like, what contractors). I would not expect it to tell me how to use the site or the data, primarily because I see explore next to it._
 
-- **Potential solution:** Add 'About USEITI' to the global navigation.
+**Potential solution:** Add 'About USEITI' to the global navigation.
 
 ### Explore Data
 
-- The term Explore Data still stayed clear in this iteration, as it did last time. People expected data, and generally expected some sort of ability to interact with data and drill in.
+The term Explore Data still stayed clear in this iteration, as it was last time. People expected data, and generally expected some sort of ability to interact with data and drill in.
 
 - _For something like this, for accountability and trust, I would expect curated data...so we can make our own conclusions._
 
@@ -49,9 +47,9 @@ This was a continuation of the our Sprint-MightyMoose testing cycle. Based on [i
 
 ### Local Impact
 
-- Trends for this navigation item continued from our first study, with people expecting local engagement in this section, either through the ability to see information (narrative and data) by state or local area, or through ways to contact governments or organizations to get involved.
+Trends for this navigation item continued from our first study, with people expecting local engagement in this section, either through the ability to see information (narrative and data) by state or local area, or through ways to contact governments or organizations to get involved.
 
-- As with before, the word 'impact' is not clear because people want to know what *kind* of impact, and that word is extremely associated with the phrase *environmental impact*.
+As with before, the word 'impact' is not clear because people wonder about what *kind* of impact, and in addition the word *impact* is strongly associated with the phrase *environmental impact*.
 
 - _Um, so at first I assumed it was location-specific revenue. Now I think it’s like ‘here’s what the money did after it got to your region’, but this is federal money, so I don’t think so. Back to my first guess._
 
@@ -59,12 +57,12 @@ This was a continuation of the our Sprint-MightyMoose testing cycle. Based on [i
 
 - _I’m really interested in that [local impact]. [However] Are we talking about digging, like environmental impact? Or the money coming back to communities from extraction?_
 
-- As we adjust the content on the main page to be less revenues-focused, I hypothesize that the answers to this question will change. We will continue to test.
+As we adjust the content on the main page to be less revenues-focused, I hypothesize that the answers to this question will change. We will continue to test.
 
 
 ### Downloads
 
-- As with our first tests, people were in general confused about this term. Many people were able to guess what would be here, but it causes a pause.
+As with our first tests, people were in general confused about this term. Many people were able to guess what would be here, but it causes a pause.
 
 - _Can I get data and manipulate it myself?_
 
@@ -75,12 +73,12 @@ This was a continuation of the our Sprint-MightyMoose testing cycle. Based on [i
 
 ## How about that global nav as categories throughout the site? Is this making the information structure clearer?
 
-This still gets a tentative yes. Some participants picked up on the repetition of themes, in particular now that we've changed 'Natural Resources' to 'How it works.' However, this can't be confirmed until we get more content into the site and let people explore.
+This still gets a tentative yes. Some participants picked up on the repetition of themes, in particular now that we've changed 'Natural Resources' to 'How it works' because words like this feature prominently in the intro carousel. However, this can't be confirmed until we get more content into the site and let people explore.
 
 
 ## We snuck a first-version glossary icon into this layout, how did it do?
 
-- Not so hot. Almost every participant went straight to that icon when asked the final "Is there anything that confuses you about this site" question.
+**Not so hot.** Almost every participant went straight to that icon when asked the final "Is there anything that confuses you about this site" question.
 
 - _[immediately] Waaay upper right, the little book icon. First of all it looked like a shopping bag at first. I don’t know what it is._
 
@@ -99,17 +97,15 @@ We still see skepticism around the initiative.
 
 - _Right off the bat, I can’t tell if this is a government site or a corporate site. I’m very suspicious of corporate sites._
 
-- _My first impression is that this is an industry site....So, now that I’ve looked further down, maybe this [site] is from someone who doesn’t like the oil and gas industry? Maybe its not a government site.Like, The United states extractive industries transparency initiative, ha, is a lot to swallow. But...wait [reads words under it] the words here describe what’s going on pretty well. But the agency name makes no sense to me. Sounds like it’s a bill in congress._
+- _My first impression is that this is an industry site....So, now that I’ve looked further down, maybe this [site] is from someone who doesn’t like the oil and gas industry? Maybe its not a government site. Like, The United States Extractive Industries Transparency Initiative, ha, is a lot to swallow. But...wait [reads words under it] the words here describe what’s going on pretty well. But the agency name makes no sense to me. Sounds like it’s a bill in Congress._
 
 We will continue to test this as we add more content to the site. Also, we're going to test adding an in-context link in the intro to the 'About USEITI' part of the site, and adding an 'About USEITI' to the global navigation.
 
 
 ### What problems were most severe?
 
-The biggest problem is the confusion over what people will get when they click on 'How it works'. We have solved the mix-up between that content and 'Explore Data' that we had previously, but now there's confusion between 'How it works' and 'About USEITI' information.
+The biggest problem is the confusion over what people will get when they click on 'How it works'. We have solved the mix-up between that content and the content in 'Explore Data' that we had previously, but now there's confusion between 'How it works' and 'About USEITI' information.
 
 Potential solutions are linked to the continued skepticism about the overall site purpose. The most important thing to test next is methods to provide more obvious links to the USEITI process. We are considering an in-text link in the intro block and an additional global navigation item called 'About USEITI' or 'About the initiative'.
-
-As for the confusion about what to do on the site in general, we will re-test this on a more fully-formed site.
 
 As with our previous tests, 'Local Impact' and 'Downloads,' while unclear in certain ways, are less risky to leave as-is for now because their problems so not indicate essential issues for site architecture. As the content of the site fills out, we will revisit those terms and test on a more full-formed site.

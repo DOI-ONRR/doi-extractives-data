@@ -2,7 +2,7 @@
 //
 // The site glossary
 //
-// Styleguide glossary
+// Styleguide components.glossary
 
 // Glossary drawer
 // Markup: 
@@ -23,13 +23,13 @@
 //             <span class="u-visually-hidden" data-show="Show definition" data-hide="Hide definition"></span>
 //           </button>
 //         </div>
-//         <p class="glossary-definition">Glossary term definition</p>
+//         <p class="glossary-definition hidden">Glossary term definition</p>
 //       </li>
 //     </ul>
 //   </div>
 // </div>
 //
-// Styleguide glossary.drawer
+// Styleguide components.glossary.drawer
 
 .glossary {
   @include transition(right, .3s);
@@ -155,14 +155,13 @@
 // Markup: 
 // <p>What are <span class="term {{modifier_class}}" data-term="extractive industry" title="Click to define" tabindex="0">
 //     extractive industries
-//     <i class="term-icon">
+//     <i class="term-icon"></i>
 // </span>, Brian asked inquisitively</p>
 //
-// Styleguide glossary.term
+// Styleguide components.glossary.term
 
 .term {
   @include transition(background-color, .2s, box-shadow, .2s, color, .2s);
-  // background-color: transparent;
   box-shadow: 0 0 0 4px transparent;
   border-bottom: none;
   cursor: pointer;

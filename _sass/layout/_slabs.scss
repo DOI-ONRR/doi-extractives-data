@@ -3,9 +3,12 @@
 // Slabs are full-width blocks of color. Slabs should contain containers to center content. 
 // Slabs can can have background color styles applied. By default is a neutral background.
 // 
-// .slab-alpha - full width slab of white
-// .slab-beta - full width slab of blue
-// .slab-charlie - full width slab of gray
+// .slab-alpha - full width slab of $white
+// .slab-beta - full width slab of $light-gray
+// .slab-charlie - full width slab of $mid-gray
+// .slab-delta - full width slab of $light-blue
+// .slab-echo - full width slab of $pale-blue
+// .slab-foxtrot - full width slab of $mid-blue
 //
 // Markup: 
 // <section class="slab {{modifier_class}}">

@@ -4,18 +4,8 @@
 // Variables
 @import 'variables';
 
-
 // Mixins
-@import 'mixins/type-mixins';
-
-
-// Elements
-//
-// These are site elements
-//
-// Styleguide elements
-@import 'elements/elements';
-
+@import 'mixins/all';
 
 // Utility classes
 @import 'layout/utility';
@@ -23,11 +13,12 @@
 // Grid
 @import 'grid';
 
-// @import all other elements
-@import 'elements/typography';
-@import 'elements/links';
-@import 'elements/forms';
-@import 'elements/lists';
+// Elements
+//
+// These are site elements
+//
+// Styleguide elements
+@import 'elements/all';
 
 // Extends
 @import 'extends/buttons';
@@ -41,43 +32,19 @@
 @import 'layout/slabs';
 
 
-// Typography and Elements
+// Import Fonts
 @import 'fonts';
-
-// @import 'typography';
 
 // Components
 //
 // Site components
 //
 // Styleguide components
-@import 'components/buttons';
-@import 'components/eiti-slider';
-@import 'components/eiti-map';
-@import 'components/footnotes';
-@import 'components/glossary';
+@import 'components/all';
 
-
-// Modules
+// Blocks
 //
-// Complex pieces made of components and elements
+// Styles applied to pages or non-modular blocks of html
 //
-// Styleguide modules
-@import 'modules/header';
-@import 'modules/footer';
-@import 'modules/sticky_nav';
-@import 'modules/carousel';
-@import 'modules/hero';
-@import 'modules/cards';
-@import 'modules/communities_intro';
-@import 'modules/communities_content';
-@import 'modules/bureau';
-@import 'modules/map';
-@import 'modules/revenues_steps';
-
-// TODO: break the following apart
-@import 'modules/revenues_forms';
-@import 'modules/revenues_intro';
-@import 'modules/revenues_subpage';
-@import 'modules/revenues_subpage_nav';
-@import 'modules/revenues_subpage_forms';
+// Styleguide blocks
+@import 'blocks/all';

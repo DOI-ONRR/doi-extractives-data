@@ -1,0 +1,52 @@
+// Communities
+//
+// The communities page main content
+//
+// Styleguide modules.communities
+
+// // Community Case Studies
+// //============================================
+
+.communities_content {
+  padding-top: $base-padding;
+  padding-bottom: $base-padding-extra;
+  position: relative;
+  // done this way because the lists are generated in markdown
+  ul {
+  	list-style-type: square;
+	  padding-left: $base-padding;
+	  @include heading('para-sm');
+	  font-weight: $weight-light;
+	  padding-bottom: $base-padding;
+  }
+} 
+.communities_content-heading {
+  padding-bottom: $base-padding-lite;
+}
+
+.communities_content-icon img{
+  height: 20px;
+  padding-right: 8px;
+
+  &.iron {
+    height: 16px;
+  }
+
+  &.copper {
+    height: 22px;
+  }
+
+  &.gas {
+    height: 25px;
+  }
+}
+
+.communities_content-select {
+  padding-bottom: $base-padding;
+}
+
+.communities_content-graph {
+  border: $thin-border-size solid $base-border-color;
+  margin-bottom: $base-padding;
+  width: 75%;
+}

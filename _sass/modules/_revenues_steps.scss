@@ -1,0 +1,53 @@
+// Revenues Steps
+//
+// Table display of different revenues steps
+//
+// Styleguide modules.revenues_steps
+
+.revenues_steps-heading {
+	@include heading(h1);
+  color: $red;
+  display: inline;
+  padding-right: 8px;
+  font-weight: $weight-light;
+}
+
+.revenues_steps-number {
+  @include font-size(1.8);
+  background-color: $white;
+  border-radius: 50%;
+  color: $dark-gray;
+  display: inline-block;
+  padding-right: 13px;
+  padding-top: 10px;
+  height: 43px;
+  width: 43px;
+}
+
+.revenues-steps-group {
+  display: table;
+  width: 100%;
+
+  @include respond-to(medium-up) {
+    @include span-columns(10);
+    @include shift(1);
+  }
+}
+
+.revenues_steps-group_item {
+    padding-top: $base-padding;
+    font-weight: $weight-light;
+}
+
+.revenues_steps-group_left {
+  display: table-cell;
+  padding-right: 10px;
+  text-align: right;
+  width: 275px;
+}
+
+.revenues_steps-group_right {
+  display: table-cell;
+  padding-left: 10px;
+  vertical-align: middle;
+}

@@ -26,6 +26,9 @@ $huge-up: new-breakpoint(min-width $huge);
   @else if $media == small-up {
     @media only screen and (min-width: $small) { @content; }
   }
+  @else if $media == medium-down {
+    @media only screen and (max-width: $medium) { @content; }
+  }
   @else if $media == medium-up {
     @media only screen and (min-width: $medium) { @content; }
   }

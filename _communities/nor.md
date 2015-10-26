@@ -1,7 +1,7 @@
 ---
 title: North Slope Borough, Alaska
 layout: community
-permalink: /communities/nor
+permalink: /communities/nor/
 resource: oil
 nav_items:
   - name: intro

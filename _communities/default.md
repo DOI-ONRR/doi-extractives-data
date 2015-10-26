@@ -80,4 +80,4 @@ County and state budget documents and state agency websites were the primary dat
 <h3 class="communities_content-heading">Notes:</h3> 
 [^1]: U.S. Bureau of Economic Analysis, as cited on Wyoming Department of Administration &amp; Information Economic Analysis Division [website](http://eadiv.state.wy.us/i&e/WyoGDP97_13.htm), 2013
 [^2]: EITI International Secretariat, [The EITI Standard](https://eiti.org/files/English_EITI_STANDARD.pdf), 2015.
-[^3]: Raimi and Newell, Duke University Energy Initiative, [Shale Public Finance&colon Local government revenues and costs associated with oil and gas development](http://dukespace.lib.duke.edu/dspace/handle/10161/9216), 2014.
+[^3]: Raimi and Newell, Duke University Energy Initiative, [Shale Public Finance: Local government revenues and costs associated with oil and gas development](http://dukespace.lib.duke.edu/dspace/handle/10161/9216), 2014.

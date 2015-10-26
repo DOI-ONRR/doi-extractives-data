@@ -10,7 +10,7 @@ permalink: /about/
 
     <section class="container">
 
-      <div class="container-left">
+      <div class="container-left-7">
 
         <h1>About USEITI</h1>
 
@@ -26,7 +26,7 @@ permalink: /about/
 
       </div>
 
-      <div class="container-right">
+      <div class="container-right-5">
 
         <img src="{{ site.baseurl }}/img/eiti-report.jpg" alt="The EITI report process" class="u-img" style="padding-top:50px;">
 
@@ -36,7 +36,7 @@ permalink: /about/
 
     <section class="container">
 
-      <div class="container-left">
+      <div class="container-left-7">
 
         <p><strong>The United States is committed to implementing the EITI Standard.</strong> In September 2011, the U.S. announced that it would begin the multi-year process of becoming an EITI Compliant country. The U.S. intends to implement EITI to provide accessible and useful information about public resources and their associated revenues. Doing so will bolster the social license to operate and strengthen the investment climate for extractive industries. Public policy will be better informed, and public trust will be strengthened. With this effort in participatory government and collaborative decision-making, public financial management will be enhanced and citizens will ensure that the government receives a fair return for the public resources it manages on their behalf. <a href="/docs/USEITI-Fact-Sheet-February-2015.pdf">Download factsheet.</a></p>
 
@@ -44,7 +44,7 @@ permalink: /about/
 
       </div>
 
-      <div class="container-right">
+      <div class="container-right-5">
 
         <img src="{{ site.baseurl }}/img/nat-gas-well.jpg" alt="Natural gas well in Colorado" class="u-img">
 
@@ -54,13 +54,13 @@ permalink: /about/
 
     <section class="container">
 
-      <div class="container-left">
+      <div class="container-left-7">
 
         <p><strong>Today.</strong> The USEITI Multi-Stakeholder Group meets regularly and is responsible for working collaboratively to oversee USEITI implementation. It is a consensus-based decision making body, and in accordance with EITI principles, is comprised of representatives from government, industry, and civil society (public) stakeholders. To see the latest from this process, visit the <a href="https://www.doi.gov/eiti/FACA">USEITI MSG homepage</a>.</p>
 
       </div>
 
-      <div class="container-right">
+      <div class="container-right-5">
 
         <img src="{{ site.baseurl }}/img/eiti-msg.jpg" alt="Multi-stakeholder group process" class="u-img" style="width:70%;">
 
@@ -72,7 +72,7 @@ permalink: /about/
 
   <section class="container communities-content">
 
-    <article class="container-left bureaus">
+    <article class="container-left-7 bureaus">
 
       <h3>
         <a name="intro">Department of the Interior</a>

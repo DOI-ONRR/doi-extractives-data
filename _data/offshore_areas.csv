@@ -1,4 +1,8 @@
 region,id,name
+Alaska,ALA,Aleutian Arc
+Alaska,ALB,Aleutian Basin
+Alaska,BFT,Beaufort Sea
+Alaska,BOW,Bowers Basin
 Alaska,CHU,Chukchi Sea
 Alaska,COK,Cook Inlet
 Alaska,GEO,St. George Basin
@@ -14,11 +18,6 @@ Atlantic,FLS,Florida Straits
 Atlantic,MDA,Mid Atlantic
 Atlantic,NOA,North Atlantic
 Atlantic,SOA,South Atlantic
-Gulf,GUL,Gulf
-Gulf,ALA,Aleutian Arc
-Gulf,ALB,Aleutian Basin
-Gulf,BFT,Beaufort Sea
-Gulf,BOW,Bowers Basin
 Gulf,CGM,Central Gulf of Mexico
 Gulf,EGM,Eastern Gulf of Mexico
 Gulf,WGM,Western Gulf of Mexico

@@ -1,0 +1,45 @@
+@import 'lib/neat/neat-helpers';
+
+$max-width: em(1024) !default;
+
+// Breakpoints
+$tiny: em(480);
+$small: em(600);
+$medium: em(768);
+$large: em(990);
+$huge: em(1024);                                                                                                                                                              
+
+$tiny-down: new-breakpoint(max-width $tiny);
+$tiny-up: new-breakpoint(min-width $tiny);
+$small-up: new-breakpoint(min-width $small); // commonly-used 
+$medium-up: new-breakpoint(min-width $medium); // commonly-used 
+$large-up: new-breakpoint(min-width $large); // commonly-used
+$huge-up: new-breakpoint(min-width $huge);  
+
+@mixin respond-to($media) {
+  @if $media == tiny-down {
+    @media only screen and (max-width: $tiny) { @content; }
+  }
+  @else if $media == tiny-up {
+    @media only screen and (min-width: $tiny) { @content; }
+  }
+  @else if $media == small-up {
+    @media only screen and (min-width: $small) { @content; }
+  }
+  @else if $media == medium-up {
+    @media only screen and (min-width: $medium) { @content; }
+  }
+  @else if $media == large-up {
+    @media only screen and (min-width: $large) { @content; }
+  }
+  @else if $media == huge-up {
+    @media only screen and (min-width: $huge) { @content; }
+  }
+}
+
+// Omega reset
+// http://www.joshfry.me/blog/2013/05/13/omega-reset-for-bourbon-neat
+@mixin omega-reset($nth) {
+  &:nth-child(#{$nth}) { margin-right: flex-gutter(); }
+  &:nth-child(#{$nth}+1) { clear: none }
+}

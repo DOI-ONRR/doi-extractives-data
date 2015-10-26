@@ -1,0 +1,36 @@
+// Bureaus
+//
+// Bureaus live on the About page
+//
+// Markup:
+// <div class="container">
+//  <article class="bureau">
+//    <div class="bureau-left">
+//      <img class="bureau-image" src="{{ site.baseurl }}/img/logos/USFWS-mark.png" alt="U.S. Fish and Wildlife Service Department of the Interior Seal">
+//    </div>
+//    <div class="bureau-right">
+//      <h3>United States Fish and Wildlife Service</h3>
+//      <p>Mission: to work with others to conserve, protect and enhance fish, wildlife, and plants and their habitats for the continuing benefit of the American people. USFWS manages the 150 million-acre National Wildlife Refuge System primarily for the benefit of fish and wildlife; manages 70 fish hatcheries and other related facilities for endangered species recovery and to restore native fisheries populations; protects and conserves migratory birds, threatened and endangered species, and certain marine mammals; and hosts approximately 47 million visitors annually at 561 refuges located in all 50 states and 38 wetland management districts.</p>
+//      <p><a href="http://www.fws.gov/">Go to the USFWS website &#8594;</a></p>
+//    </div>
+//  </article>
+// </div>
+//
+// Styleguide components.bureaus
+
+.bureau {
+  @include span-columns(12);
+}
+
+.bureau-left {
+  @include span-columns(3 of 12);
+}
+
+.bureau-right {
+  @include span-columns(9 of 12);
+}
+
+.bureau-image {
+  padding-top: $base-padding;
+  max-width: 100px;
+}

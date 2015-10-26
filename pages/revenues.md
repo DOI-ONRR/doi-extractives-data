@@ -4,13 +4,13 @@ layout: default
 permalink: /resource_revenues/
 ---
 
-<div class="communities">
+<div>
 
-  <div class="communities-intro revenues-intro">
+  <div>
 
     <section class="container">
 
-      <div class="communities-left">
+      <div class="container-left">
 
         <h1>How do natural resources on federal lands result in U.S. revenues?</h1>
 
@@ -18,13 +18,13 @@ permalink: /resource_revenues/
 
       </div>
 
-      <div class="communities-right article_module">
+      <div class="container-right">
 
         <figure>
 
-          <img src="{{ site.baseurl }}/img/solar-doi.png" alt="Solar energy installation on federal land">
+          <img class="revenues_intro-image" src="{{ site.baseurl }}/img/solar-doi.png" alt="Solar energy installation on federal land">
 
-          <figcaption class="article_module-content">
+          <figcaption class="revenues_intro-image_caption">
             Federal desert solar farm
           </figcaption>
 
@@ -37,127 +37,128 @@ permalink: /resource_revenues/
   </div>
 
 
-  <section class="container">
+  <section class="slab-beta">
+    <div class="container container-padded">
     <h2 class="h1">Choose a resource to see how the process works &#8230;</h2>
 
     <div class="revenues-modules">
 
-      <article>
+      <article class="card card-secondary">
 
-        <a href="/resource_revenues/coal"><div class="revenues-module-spash">
-          <h3>Coal <span class="revenues-fa"><i class="fa fa-chevron-right"></i></span></h3>
+        <a href="/resource_revenues/coal"><div class="card-splash">
+          <h3 class="card-splash_title">Coal <span class="revenues-fa"><i class="fa fa-chevron-right"></i></span></h3>
 
-          <div class="revenues-module-icon">
-            <img src="{{ site.baseurl }}/img/icons/coal.svg" alt="coal">
+          <div class="card-splash_image">
+            <img class="" src="{{ site.baseurl }}/img/icons/coal.svg" alt="coal">
           </div>
         </div></a>
 
-        <div class="article_module-content">
+        <div class="card-content">
 
           <p>Fossil fuels like coal are the main source of electricity in the U.S. Coal forms in the ground in seams or beds over tens of millions of years. Miners extract coal through surface and underground mining.</p>
 
-          <a href="/resource_revenues/coal" class="link-more">Visit this page <span class="shrink-fa"><i class="fa fa-chevron-right"></i></span></a>
+          <a class="card-link" href="/resource_revenues/coal">Visit this page <span class="shrink-fa"><i class="fa fa-chevron-right"></i></span></a>
 
         </div>
 
       </article>
 
-      <article>
+      <article class="card card-secondary">
 
-        <a href="/resource_revenues/offshore_oil_gas"><div class="revenues-module-spash">
-          <h3>Oil &amp; Gas <span class="revenues-fa"><i class="fa fa-chevron-right"></i></span></h3>
+        <a href="/resource_revenues/offshore_oil_gas"><div class="card-splash">
+          <h3 class="card-splash_title">Oil &amp; Gas <span class="revenues-fa"><i class="fa fa-chevron-right"></i></span></h3>
 
-          <div class="revenues-module-icon">
+          <div class="card-splash_image">
             <img src="{{ site.baseurl }}/img/icons/oil.svg" alt="oil">
           </div>
         </div></a>
 
-        <div class="article_module-content">
+        <div  class="card-content">
 
           <p>Oil and gas are fossil fuels. Oil forms in underground reservoirs, taking tens of millions of years. Gas – or “natural gas” – forms over thousands of years, both on land and offshore.</p>
 
-          <a href="/resource_revenues/offshore_oil_gas" class="link-more">Visit this page <span class="shrink-fa"><i class="fa fa-chevron-right"></i></span></a>
+          <a class="card-link" href="/resource_revenues/offshore_oil_gas">Visit this page <span class="shrink-fa"><i class="fa fa-chevron-right"></i></span></a>
 
         </div>
 
       </article>
 
-      <article>
+      <article class="card card-secondary">
 
-        <a href="/resource_revenues/hardrock"><div class="revenues-module-spash">
-          <h3>Hardock <br>Minerals <span class="revenues-fa"><i class="fa fa-chevron-right"></i></span></h3>
+        <a href="/resource_revenues/hardrock"><div class="card-splash">
+          <h3 class="card-splash_title">Hardock <br>Minerals <span class="revenues-fa"><i class="fa fa-chevron-right"></i></span></h3>
 
-          <div class="revenues-module-icon">
+          <div class="card-splash_image">
             <img src="{{ site.baseurl }}/img/icons/hardrock.svg" alt="hardrock minerals">
           </div>
         </div></a>
 
-        <div class="article_module-content">
+        <div  class="card-content">
 
           <p>Gold, copper and iron are the chief sources of hardrock-mineral revenues in the U.S. Hardrock minerals contain metals such as these and silver, zinc, nickel, tin, and lead. In 2013, U.S. metal production totaled $32 billion in value.</p>
 
-          <a href="/resource_revenues/hardrock" class="link-more">Visit this page <span class="shrink-fa"><i class="fa fa-chevron-right"></i></span></a>
+          <a class="card-link" href="/resource_revenues/hardrock">Visit this page <span class="shrink-fa"><i class="fa fa-chevron-right"></i></span></a>
 
         </div>
 
       </article>
 
-      <article>
+      <article class="card card-secondary">
 
-        <a href="/resource_revenues/offshore_renewables"><div class="revenues-module-spash">
-          <h3>Renewables <span class="revenues-fa"><i class="fa fa-chevron-right"></i></span></h3>
+        <a href="/resource_revenues/offshore_renewables"><div class="card-splash">
+          <h3 class="card-splash_title">Renewables <span class="revenues-fa"><i class="fa fa-chevron-right"></i></span></h3>
 
-          <div class="revenues-module-icon">
+          <div class="card-splash_image">
             <img src="{{ site.baseurl }}/img/icons/renewables.svg" alt="renewables">
           </div>
         </div></a>
 
-        <div class="article_module-content">
+        <div  class="card-content">
 
           <p>Environmentally sustainable energy sources like solar and wind play an ever increasing role in meeting our country’s electricity needs. Solar energy converts solar radiation into heat and electricity, while wind powers turbines.</p>
 
-          <a href="/resource_revenues/offshore_renewables" class="link-more">Visit this page <span class="shrink-fa"><i class="fa fa-chevron-right"></i></span></a>
+          <a class="card-link" href="/resource_revenues/offshore_renewables">Visit this page <span class="shrink-fa"><i class="fa fa-chevron-right"></i></span></a>
 
         </div>
 
       </article>
 
+      </div>
     </div>
-
   </section>
 
-  <div class="revenues-section-steps">
-    <section class="container">
-      <h2 class="h1">These resources share four general steps in common &#8230;</h2>
+  <div class="slab-charlie revenues-section-steps">
+    <section class="container container-padded">
+      <h1>These resources share four general steps in common &#8230;</h1>
 
-      <ul class="revenues-steps-group">
-        <li>
-          <div class="revenues-steps-group-left">
-            <h3>Plan</h3>
-            <div class="revenues-steps-number">1</div>
+      <ul class="revenues_steps-group">
+        <li class="revenues_steps-group_item">
+          <div class="revenues_steps-group_left">
+            <h3 class="revenues_steps-heading">Plan</h3>
+            <div class="revenues_steps-number">1</div>
           </div>
-          <div class="revenues-steps-group-right">Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitu.</div>
+          <div class="revenues_steps-group_right">Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitu.</div>
         </li>
-        <li>
-          <div class="revenues-steps-group-left">
-            <h3>Lease</h3>
-            <div class="revenues-steps-number">2</div>
+        <li class="revenues_steps-group_item">
+          <div class="revenues_steps-group_left">
+            <h3 class="revenues_steps-heading">Lease</h3>
+            <div class="revenues_steps-number">2</div>
           </div>
-          <div class="revenues-steps-group-right">Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitu.</div>
+          <div class="revenues_steps-group_right">Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitu.</div>
         </li>
-        <li>
-          <div class="revenues-steps-group-left">
-            <h3>Develop</h3>
-            <div class="revenues-steps-number">3</div>
+        <li class="revenues_steps-group_item">
+          <div class="revenues_steps-group_left">
+            <h3 class="revenues_steps-heading">Develop</h3>
+            <div class="revenues_steps-number">3</div>
           </div>
-          <div class="revenues-steps-group-right">Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitu.</div>
+          <div class="revenues_steps-group_right">Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitu.</div>
         </li>
-        <li>
-          <div class="revenues-steps-group-left">
-            <h3>Decommission</h3>
-            <div class="revenues-steps-number">4</div>
+        <li class="revenues_steps-group_item">
+          <div class="revenues_steps-group_left">
+            <h3 class="revenues_steps-heading">Decommission</h3>
+            <div class="revenues_steps-number">4</div>
           </div>
-          <div class="revenues-steps-group-right">Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitu.</div>
+          <div class="revenues_steps-group_right">Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitu.</div>
         </li>
       </ul>
 

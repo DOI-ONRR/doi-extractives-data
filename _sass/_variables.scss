@@ -1,0 +1,81 @@
+@import "lib/font-awesome/font-awesome/variables";
+
+// Typography
+$weight-light: 200; // use
+$weight-book: 400; // use
+$weight-bold: 700; // use
+
+$sans-serif: Lato, "Helvetica Neue", Helvetica, arial, sans-serif;
+$base-font-family: $sans-serif;
+$base-font-weight: 400;
+$base-font-size: 1rem;
+$base-font-multiplier: 1;
+$base-line-height: 1.375rem;
+
+$z-roof: 9000;
+$z-mid: 500;
+
+// Colors
+
+// v3
+$white: #ffffff;
+$black: #040404; //-
+$blue: #157BAC;//
+$light-blue: #e6f9ff;
+$pale-blue: #f2fcff;
+$mid-blue: #c6e9ff;
+$light-gray: #f7f7f7;
+$mid-gray: #ebebeb;
+$dark-gray: #4a4a4a;
+$light-black: #303030; //-
+
+// v2 - deprecate
+$putty: #f4f4f4; //-
+$dark-putty: #838383; //-
+$green: #9fa63b; //
+$shock-green: #acb626;
+$purple: #965bcd;//
+$red: #c5403c;//
+$cobalt: #1075a5; //-
+
+
+// Font Colors
+$base-font-color: $dark-gray;
+$base-accent-color: $mid-blue;
+
+// Padding
+$base-padding: 1.25em; //20px
+$base-padding-lite: $base-padding/3;
+$base-padding-large: 1.875em; //30px
+$base-padding-extra: 3.125em; //50px
+
+// Link Colors
+$base-link-color: $dark-gray;
+
+// Buttons
+$primary-button-bg-color: $blue;
+$primary-hover-button-bg-color: $blue;
+$primary-button-color: $white;
+$primary-hover-button-color: $white;
+$secondary-button-bg-color: $white;
+$secondary-hover-button-bg-color: $white;
+$secondary-button-color: $dark-gray;
+$secondary-hover-button-color: $dark-gray;
+$secondary-button-border-color: $mid-gray;
+
+// Radius
+$base-border-radius: 5px;
+$small-border-radius: 3px;
+
+// Border
+$base-border-color: $light-black;
+$thin-border-size: 1px;
+$regular-border-size: 3px;
+$thick-border-size: 8px;
+
+// Forms
+$form-border-color: $base-border-color;
+$form-border-color-hover: darken($base-border-color, 10);
+$form-border-radius: $base-border-radius;
+$form-box-shadow-focus: 0 0 0 2px $form-border-color-hover;
+

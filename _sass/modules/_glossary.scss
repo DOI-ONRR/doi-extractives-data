@@ -1,0 +1,175 @@
+// Glossary
+//
+// The site glossary
+//
+// Styleguide modules.glossary
+
+// Glossary drawer
+// Markup: 
+// <div class="glossary" style="right:0px;">
+//   <button title="Close glossary"
+//       class="button button--close toggle"><span class="u-visually-hidden"><i class="fa fa-times"></i></span>
+//   </button>
+//   <h2 id="glossary-header"><i class="fa fa-book"></i> Glossary</h2>
+//   <label for="glossary-search" class="label">Filter glossary terms</label>
+//   <input id="glossary-search" type="search" placeholder="e.g. Revenues">
+//   <div>
+//     <ul>
+//       <li class="glossary__item">
+//         <div class="accordion__header">
+//           <h4 class="glossary-term">Glossary term</h4>
+//           <button class="button accordion__button">
+//           <i class="fa fa-chevron-down"></i>
+//             <span class="u-visually-hidden" data-show="Show definition" data-hide="Hide definition"></span>
+//           </button>
+//         </div>
+//         <p class="glossary-definition">Glossary term definition</p>
+//       </li>
+//     </ul>
+//   </div>
+// </div>
+//
+// Styleguide modules.glossary.drawer
+
+.glossary {
+  @include transition(right, .3s);
+  bottom: 0;
+  max-width: 30rem;
+  overflow-y: scroll;
+  padding: 2rem;
+  position: fixed;
+  top: 0;
+  z-index: 5000;
+
+  width:300px;
+  background-color: $light-black;
+  color: $white;
+  
+  h2, p, label, i {
+    color: $white;
+  }
+  &[aria-hidden=true] {
+    display: block !important;
+    right: -100%;
+  }
+
+  &[aria-hidden=false] {
+    @include transition(right, .3s);
+    right: 0;
+  }
+
+  .button--close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+  }
+
+}
+#glossary-header{
+  i {
+    margin-right: .75rem;
+  }
+}
+
+#glossary-search{
+  &::-webkit-input-placeholder {
+     font-style: italic;
+  }
+  &:-moz-placeholder { /* Firefox 18- */
+     font-style: italic;  
+  }
+  &::-moz-placeholder {  /* Firefox 19+ */
+     font-style: italic;  
+  }
+  &:-ms-input-placeholder {  
+     font-style: italic;  
+  }
+}
+
+.glossary__item {
+  border-bottom: 1px solid $mid-gray;
+  &:first-child{
+    border-top: 1px solid $mid-gray;
+  }
+  .glossary-term {
+    margin: 0;
+  }
+
+  .glossary-definition {
+    font-family: $base-font-family;
+    padding-bottom: 1rem;
+  }
+
+  .accordion__header {
+    padding: 1rem 4rem 1rem 0;
+    position: relative;
+  }
+
+  .accordion__button {
+    background-size: 50%;
+    background-color: transparent;
+    margin-top: -1rem;
+    height: 2rem;
+    width: 2rem;
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+  }
+
+  .accordion__header {
+    padding: 1rem 4rem 1rem 0;
+    position: relative;
+  }
+
+  .accordion__button {
+    background-size: 50%;
+    margin-top: -1rem;
+    height: 2rem;
+    width: 2rem;
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+  }
+}
+
+// Glossary term classes
+//
+// Wrap glossary terms with these classes
+//
+// .term          - Standard class -- adds the book icon
+// .term-p       - Used when the term is in a body paragaraph of text, reduces padding and adds margin
+//
+// Markup: 
+// <p>What are <span class="term {{modifier_class}}" data-term="extractive industry" title="Click to define" tabindex="0">
+//     extractive industries
+//     <i class="fa fa-book"></i>
+// </span>, Brian asked inquisitively</p>
+//
+// Styleguide modules.glossary.term
+
+.term {
+  @include transition(background-color, .2s, box-shadow, .2s, color, .2s);
+  background-color: transparent;
+  box-shadow: 0 0 0 4px transparent;
+  border-bottom: none;
+  cursor: pointer;
+
+  &:focus,
+  &:hover {
+    border-bottom: 1px dotted $base-font-color;
+  }
+}
+
+.term-icon {
+  padding-left: $base-padding-lite;
+  background: url('../img/icons/glossary/icon-book-inline.svg') no-repeat;
+}
+
+.term-p {
+  @extend .term;
+  margin-right: .5rem;
+  box-shadow: none;
+}

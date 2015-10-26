@@ -1,0 +1,28 @@
+// Container
+//
+// .container-left - 8/12 width container that floats left
+// .container-right - 4/12 width container that floats left
+// .container-half - 6/12 width container that floats left
+// .container-padded - full width container with padding
+//
+// Styleguide layout.container
+.container{
+	  @include outer-container($max-width);
+}
+
+.container-left {
+  @include span-columns(8);
+}
+
+.container-right {
+  @include span-columns(4);
+}
+
+.container-half {
+  @include span-columns(6);
+}
+
+.container-padded {
+  padding-top: $base-padding-extra;
+  padding-bottom: $base-padding-extra;
+}

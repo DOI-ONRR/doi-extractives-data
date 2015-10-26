@@ -32,7 +32,7 @@ This site is deployed on [Federalist](https://federalist.18f.gov), and will one 
 ## Styleguide
 ```sh
 npm install --dev
-npm run init-stylguide
+npm run init-styleguide
 npm run watch
 ```
 

@@ -19,20 +19,17 @@ $huge-up: new-breakpoint(min-width $huge);
 @mixin respond-to($media) {
   @if $media == tiny-down {
     @media only screen and (max-width: $tiny) { @content; }
-  }
-  @else if $media == tiny-up {
+  } @else if $media == tiny-up {
     @media only screen and (min-width: $tiny) { @content; }
-  }
-  @else if $media == small-up {
+  } @else if $media == small-up {
     @media only screen and (min-width: $small) { @content; }
-  }
-  @else if $media == medium-up {
+  } @else if $media == medium-down {
+    @media only screen and (max-width: $medium) { @content; }
+  } @else if $media == medium-up {
     @media only screen and (min-width: $medium) { @content; }
-  }
-  @else if $media == large-up {
+  } @else if $media == large-up {
     @media only screen and (min-width: $large) { @content; }
-  }
-  @else if $media == huge-up {
+  } @else if $media == huge-up {
     @media only screen and (min-width: $huge) { @content; }
   }
 }

@@ -1,7 +1,7 @@
 ---
 title: Tarrant and Johnson Counties, Texas
 layout: community
-permalink: /communities/tar
+permalink: /communities/tar/
 resource: gas
 nav_items:
   - name: intro

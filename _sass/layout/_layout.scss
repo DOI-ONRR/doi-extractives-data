@@ -10,61 +10,60 @@
 //
 // Styleguide layout.container
 .container{
-	  @include outer-container($max-width);
+  @include outer-container($max-width);
 }
 
 %container-side {
-	@include respond-to(tiny-down) {
-  	@include span-columns(12);
-  	padding-left: $base-padding;
-  	padding-right: $base-padding;
-  	padding-bottom: $base-padding;
+  @include respond-to(tiny-down) {
+    @include span-columns(12);
+    padding-left: $base-padding;
+    padding-right: $base-padding;
+    padding-bottom: $base-padding;
   }
-
   @include respond-to(tiny-up) {
-  	@include span-columns(12);
-  	padding-left: $base-padding;
-  	padding-right: $base-padding;
-  	padding-bottom: $base-padding;
+    @include span-columns(12);
+    padding-left: $base-padding;
+    padding-right: $base-padding;
+    padding-bottom: $base-padding;
   }
   @include respond-to(huge-up){
-  	padding-left: 0;
-  	padding-right: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
 .container-left,
 .container-left-7 {
-	@extend %container-side;
-	@include respond-to(medium-up){
-  	@include span-columns(7);
+  @extend %container-side;
+  @include respond-to(medium-up){
+    @include span-columns(7);
   }
 }
 
 .container-left-8 {
-	@extend %container-side;
-	@include respond-to(medium-up){
-  	@include span-columns(8);
+  @extend %container-side;
+  @include respond-to(medium-up){
+    @include span-columns(8);
   }
 }
 
 .container-right,
 .container-right-5 {
-	@extend %container-side;
-	@include respond-to(medium-up){
-  	@include span-columns(5);
+  @extend %container-side;
+  @include respond-to(medium-up){
+    @include span-columns(5);
   }
 }
 
 .container-right-4 {
-	@extend %container-side;
-	@include respond-to(medium-up){
-  	@include span-columns(4);
+  @extend %container-side;
+  @include respond-to(medium-up){
+    @include span-columns(4);
   }
 }
 
 .container-half {
-	@extend %container-side;
+  @extend %container-side;
   @include span-columns(6);
 }
 

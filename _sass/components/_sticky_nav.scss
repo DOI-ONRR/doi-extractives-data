@@ -3,7 +3,7 @@
   left: percentage(8 / 12);
   padding-left: $base-padding-extra;
   top: 0;  
-  @include respond-to(medium-down){
+  @include respond-to(medium-down) {
      display: none !important;
   }
 }
@@ -12,9 +12,9 @@
 }
 
 .sticky_nav-nav_item {
-	padding: $base-padding-lite;
-	list-style-type: none;
+  padding: $base-padding-lite;
+  list-style-type: none;
   &.active a {
-  	border-bottom: 1px dotted $base-link-color;
+    border-bottom: 1px dotted $base-link-color;
   }
 }

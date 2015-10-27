@@ -73,6 +73,8 @@ $base-border-color: $light-black;
 $thin-border-size: 1px;
 $regular-border-size: 3px;
 $thick-border-size: 8px;
+$base-border-size: $regular-border-size;
+
 
 // Forms
 $form-border-color: $base-border-color;

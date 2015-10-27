@@ -1,6 +1,6 @@
 // Container
 // 
-// 
+// .container-outer - should be placed on an outer div for appropriate padding
 // .container-left - 7/12 width container that floats left
 // .container-right - 5/12 width container that floats left
 // .container-left-8 - 8/12 width container that floats left
@@ -10,7 +10,19 @@
 //
 // Styleguide layout.container
 .container{
+
   @include outer-container($max-width);
+
+}
+
+.container-outer {
+  @extend .container;
+
+  @include respond-to(huge-plus) {
+    margin-left: $base-padding;
+    margin-right: $base-padding;
+  }
+
 }
 
 %container-side {

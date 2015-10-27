@@ -24,14 +24,14 @@
   width: 43px;
 }
 
-.revenues-steps-group {
+.revenues_steps-group {
   display: table;
   width: 100%;
 
-  @include respond-to(medium-up) {
-    @include span-columns(10);
-    @include shift(1);
-  }
+  // @include respond-to(medium-up) {
+  //   @include span-columns(10);
+  //   @include shift(1);
+  // }
 }
 
 .revenues_steps-group_item {

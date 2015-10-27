@@ -7,7 +7,9 @@
 .communities_content {
   position: relative;
   ul {
+
     @include heading("para-sm");
+    
   	list-style-type: square;
     font-weight: $weight-light;
 	  padding-left: $base-padding;
@@ -40,7 +42,9 @@
   border: $thin-border-size solid $base-border-color;
   margin-bottom: $base-padding;
   width: 100%;
+
   @include respond-to(small-up) {
     width: 75%;
   }
+
 }

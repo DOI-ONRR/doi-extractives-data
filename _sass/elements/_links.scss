@@ -7,17 +7,21 @@
 // 
 // Styleguide elements.links
 
-a,
-.link-alpha {
-  border: none;
-  color: $base-font-color;
+%link {
   cursor: pointer;
   text-decoration: none;
+  border: none;
   transition: color 0.1s linear;
+}
+
+a,
+.link-alpha {
+  @extend %link;
+  color: $base-font-color;
   &:active,
   &:hover {
     text-decoration: none;
-    border-bottom: 1px dotted $base-link-color;
+    border-bottom: $thin-border-size dotted $base-link-color;
     img{
       border: none;
     }
@@ -34,14 +38,25 @@ a,
 
 }
 .link-beta {
-  @extend a;
+  @extend %link;
   color: $white;
   &:active,
   &:hover {
     text-decoration: none;
-    border-bottom: 1px dotted $white;
+    border-bottom: $thin-border-size dotted $white;
     img{
       border: none;
     }
   }
+}
+
+.link-active,
+.link-active-alpha {
+  @extend .link-alpha;
+  border-bottom: $thin-border-size dotted $base-link-color;
+}
+
+.link-active-beta {
+  @extend .link-beta;
+  border-bottom: $thin-border-size dotted $white;
 }

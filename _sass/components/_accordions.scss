@@ -1,0 +1,43 @@
+[accordion-item] {
+	position: relative;
+
+	&[accordion-open=true] {
+	  .accordion-button:after {
+	  	content: "\f077";
+		}
+
+		.accordion-content {
+			display: inline-block;
+		}
+  }
+
+  &[accordion-open=false] {
+	  .accordion-button:after {
+	  	content: "\f078";
+		}
+		.accordion-content {
+			display: none;
+		}
+  }
+
+
+}
+
+.accordion-button {
+  background-size: 50%;
+  background-color: transparent;
+  height: 2rem;
+  width: 2rem;
+  position: absolute;
+  margin: 0;
+  right: $base-padding;
+  
+
+  &:after {
+  	font-family: FontAwesome;
+	  font-style: normal;
+	  font-weight: normal;
+	  text-decoration: inherit;
+  } 
+}
+

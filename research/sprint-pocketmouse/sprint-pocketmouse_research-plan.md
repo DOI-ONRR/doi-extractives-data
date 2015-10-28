@@ -49,4 +49,4 @@ We have two versions of this test, one with a simpler glossary icon (open book) 
 
 [Liveshare](https://invis.io/974Q36H6Q)
 
-[Image](https://github.com/18F/doi-extractives-data/blob/research/assets/img/pocketmouse/sprint-pocketmouse-img-a.png).
+[Image](https://github.com/18F/doi-extractives-data/blob/research/assets/img/pocketmouse/sprint-pocketmouse-img-a.png)

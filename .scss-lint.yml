@@ -1,4 +1,6 @@
-scss_files: "**/*.scss"
+scss_files: '_sass/**/*.scss'
+exclude: '_sass/lib/**/*.scss'
+
 linters:
   BangFormat:
     enabled: true

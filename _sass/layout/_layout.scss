@@ -9,7 +9,7 @@
 // .container-padded - full width container with padding
 //
 // Styleguide layout.container
-.container{
+.container {
   @include outer-container($max-width);
 }
 

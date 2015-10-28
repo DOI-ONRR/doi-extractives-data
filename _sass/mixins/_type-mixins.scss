@@ -45,21 +45,21 @@
     line-height: 1.6875rem; // 27px
   }
 
-  @if $level == "para-lg" {
+  @if $level == 'para-lg' {
     // light 18/27 (10px bottom margin)
     font-size: 1.125rem; // 18px
     font-weight: $weight-light;
     line-height: 1.6875rem; // 27px
     margin-bottom: 0.625rem; // 10px
   }
-  @if $level == "para-md" {
+  @if $level == 'para-md' {
     font-size: $base-font-size; // 16px
     font-weight: $weight-light; // light
     line-height: $base-line-height; // 22px
     margin-bottom: 0.625rem; // 10px
     // light 16/22 (10px bottom margin)
   }
-  @if $level == "para-sm" {
+  @if $level == 'para-sm' {
     // light 13/19 (10px bottom margin)
     font-size: 0.8125rem; // 13px
     font-weight: $weight-light;

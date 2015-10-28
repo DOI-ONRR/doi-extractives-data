@@ -1,0 +1,80 @@
+// Revenues Forms
+//
+// 
+//
+// Styleguide blocks.revenues_forms
+
+.revenues-section-forms {
+  background-color: $white;
+  padding-top: $base-padding-large;
+  padding-bottom: $base-padding-large;
+
+  h2 {
+    color: $light-black;
+  }
+
+  h3 {
+    @include heading(h1);
+    border-bottom: 4px solid #cccccc;
+    padding-bottom: 5px;
+    margin-bottom: 8px;
+  }
+
+  @include respond-to(small-up) {
+    .revenues-section-forms-options > div {
+      @include span-columns(4 of 8);
+      @include omega(2n);
+    }
+  }
+
+  @include respond-to(medium-up) {
+    h2 {
+      @include span-columns(4);
+    }
+    .revenues-section-forms-options {
+      @include span-columns(8);
+      @include omega();
+
+      > div {
+        @include omega-reset(2n);
+        @include span-columns(2 of 8);
+        @include omega(4n);
+      }
+    }
+  }
+}
+
+.revenues-section-last {
+  padding-top: $base-padding-large;
+  padding-bottom: $base-padding-large;
+
+  h2 {
+    @include font-size(1.2);
+    color: $light-black;
+    font-weight: normal;
+    padding-top: 0;
+  }
+
+  ul li {
+    @include font-size(1.2);
+    display: inline-block;
+    font-weight: 200;
+    margin-right: $base-padding;
+
+    img {
+      height: 18px;
+      padding-right: 8px;
+    }
+  }
+
+  @include respond-to(medium-up) {
+    .revenues-section-last-intro {
+      @include span-columns(4 of 12);
+    }
+
+    ul {
+      @include span-columns(8 of 12);
+      @include omega();
+    }
+  }
+}

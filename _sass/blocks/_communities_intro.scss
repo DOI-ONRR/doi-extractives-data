@@ -1,0 +1,31 @@
+// Communities Intro
+//
+// The communities intro is the introduction to the /communities page
+//
+// Styleguide blocks.communities_intro
+
+.communities_intro {
+  background-color: $white;
+  padding-top: $base-padding;
+  padding-bottom: $base-padding;
+}
+
+.communities_intro-heading {
+  padding-right: $base-padding;
+  margin-bottom: $base-padding-lite;
+  padding-bottom: $base-padding-lite;
+}
+
+.communities_intro-para {
+	margin-bottom: $base-padding-large;
+}
+
+.communities_intro-image {
+  max-width: 420px;
+  width: 100%;
+}
+
+.communities_intro-select {
+  max-width: 400px;
+  width: 100%;
+}

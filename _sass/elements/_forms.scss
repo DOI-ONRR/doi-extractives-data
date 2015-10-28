@@ -1,0 +1,138 @@
+// Forms
+//
+// TODO: More variety
+//
+// Markup: 
+// <legend>Legend</legend>
+// Input: <input/>
+// <label>Label</label>
+// Select:
+// <select>
+//    <option>Option 1</option>
+//    <option>Option 2</option>
+// </select>
+// <textarea>Textarea</textarea>
+//
+// Styleguide elements.forms
+
+
+form {
+  text-align: left;
+}
+
+fieldset {
+  border-top: 1px solid $base-border-color;
+  padding-bottom: $base-padding;
+
+  > fieldset {
+    border-top: none;
+  }
+}
+
+legend {
+  @extend .sr-only;
+}
+
+input,
+label,
+select {
+  font-size: $base-font-size;
+  display: block;
+}
+
+label {
+  color: $dark-gray;
+  margin-bottom: $base-line-height / 4;
+
+  &.required:after {
+    content: "*";
+  }
+
+  abbr {
+    display: none;
+  }
+}
+
+textarea,
+#{$all-text-inputs},
+select[multiple=multiple] {
+  font-size: $base-font-size;
+  @include placeholder {
+    color: $dark-gray;
+    opacity: 1;
+    font-weight: $weight-book;
+  }
+  @include transition(border-color);
+  background-color: white;
+  border-radius: $form-border-radius;
+  border: 1px solid $form-border-color;
+  box-shadow: none;
+  box-sizing: border-box;
+  // font-family: $base-font-family;
+  margin-bottom: $base-padding;
+  padding: 0.6em 0.8em;
+  width: 100%;
+
+  &:hover {
+    border-color: $form-border-color-hover;
+  }
+
+  &:focus {
+    border: 1px solid $white;
+    box-shadow: $form-box-shadow-focus;
+    outline: none;
+  }
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="search"] {
+  @include appearance(none);
+}
+
+input[type="file"] {
+  margin-bottom: $base-line-height / 2;
+  padding-bottom: ($base-line-height / 3);
+  width: 100%;
+}
+
+select {
+  @include appearance(none);
+  width: 100%;
+  background-image: url('../img/angle-down.png');
+  background-repeat: no-repeat;
+  background-position: 99% 50%;
+  background-size: 2rem;
+  background-color: $white;
+  border: 1px solid $form-border-color;
+  border-radius: $form-border-radius;
+  color: $dark-gray;
+  font-weight: $weight-light;
+  margin-bottom: 1em;
+  overflow: hidden;
+  padding: 0.5em 7rem 0.5em 0.8rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  &:focus {
+    border: 1px solid $white;
+    box-shadow: $form-box-shadow-focus;
+    outline: none;
+  }
+
+  &::-ms-expand {
+    display: none;
+  }
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}

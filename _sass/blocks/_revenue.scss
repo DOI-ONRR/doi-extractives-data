@@ -1,0 +1,22 @@
+// Revenue
+//
+// Revenues block within resources page
+//
+// Styleguide blocks.revenue
+
+section.revenue {
+
+  svg[is='eiti-map'] {
+    height: 250px;
+    max-height: 30vh; // 30% of the viewport height
+  }
+
+  .regions .region {
+    // display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+
+}

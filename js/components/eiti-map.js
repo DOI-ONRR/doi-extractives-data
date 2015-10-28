@@ -211,7 +211,7 @@
         if (this.hasAttribute('data-href')) {
 
           var link = layer.selectAll('a')
-            .data(features, function(d) { return d.id; });
+            .data(features, function(d, i) { return d.id || i; });
 
           link.exit().remove();
           link.enter().append('a')
@@ -238,9 +238,7 @@
 
         feature
           .attr('d', path)
-          .attr('id', function(d) {
-            return d.id;
-          })
+          .attr('id', evaluator(this.getAttribute('data-id') || 'id'))
           .attr('class', function(d) {
             var klass = [];
             if (d.mesh) klass.push('mesh');
@@ -410,7 +408,7 @@
         );
       }
 
-      features = topojson.feature(d, obj).features;
+      features = getFeatures(d, obj);
 
       if (mesh) {
         features.push(d.objects[mesh]
@@ -445,13 +443,13 @@
     }
     if (filter) {
       filter = evaluator(filter);
-      console.log('filtering %d geometries', object.geometries.length);
+      // console.log('filtering %d geometries', object.geometries.length);
       object = {
         type: 'GeometryCollection',
         geometries: object.geometries
           .filter(filter)
       };
-      console.log('filtered %d geometries', object.geometries.length);
+      // console.log('filtered %d geometries', object.geometries.length);
     }
     var mesh = topojson.mesh(topology, object);
     mesh.mesh = true;
@@ -489,6 +487,10 @@
           'return null; ',
         '} }'
       ].join(''));
+  }
+
+  function getFeatures(topology, obj) {
+    return topojson.feature(topology, obj).features;
   }
 
 })(this);

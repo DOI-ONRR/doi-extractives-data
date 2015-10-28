@@ -12,7 +12,7 @@ Prioritize what to fix | What problems are most severe?
 
 ## Background
 
-We are continuing to fine-tune the global navigation micro-copy on our site. Changes in this testing round include:
+We are continuing to fine-tune the global navigation micro-copy on our site beased on the results from Sprint-MightyMoose research. Changes in this testing round include:
 
 1. Changing 'local impact' to 'case studies' to more accurately reflect what's found under that link. Previously, people expected a much more robust set of content than we have for the December version of the site.
 
@@ -24,7 +24,7 @@ More information on the proposed information architecture writ large is [here](h
 ### Metrics
 
 * Whether participants understand what they'll find when they click on words in the global navigation
-* Whether participants understand that we have a glossary
+* Whether participants understand that we have a glossary of extraction terms.
 * Whether participants understand what the USEITI is
 
 

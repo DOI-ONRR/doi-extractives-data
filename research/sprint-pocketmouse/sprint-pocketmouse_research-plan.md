@@ -47,6 +47,6 @@ Script available [here](https://github.com/18F/doi-extractives-data/blob/researc
 
 We have two versions of this test, one with a simpler glossary icon (open book) and one with a slightly more complex icon (open book with bookmark). We will start testing with the simpler icon, but if that is not clear, move to the more complex icon.
 
-Liveshare coming soon.
+[Liveshare](https://invis.io/974Q36H6Q)
 
 [Image](https://github.com/18F/doi-extractives-data/blob/research/assets/img/pocketmouse/sprint-pocketmouse-img-a.png).

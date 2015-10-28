@@ -4,12 +4,11 @@
 //
 // Styleguide blocks.revenues_forms
 
-.revenues-section-forms {
-  background-color: $white;
-  padding-top: $base-padding-large;
-  padding-bottom: $base-padding-large;
+.revenues_page-forms {
+  padding-top: $base-padding;
+  padding-bottom: $base-padding;
 
-  h2 {
+  h1 {
     color: $light-black;
   }
 
@@ -21,17 +20,17 @@
   }
 
   @include respond-to(small-up) {
-    .revenues-section-forms-options > div {
+    .revenues_page-forms_options > div {
       @include span-columns(4 of 8);
       @include omega(2n);
     }
   }
 
   @include respond-to(medium-up) {
-    h2 {
+    h1 {
       @include span-columns(4);
     }
-    .revenues-section-forms-options {
+    .revenues_page-forms_options {
       @include span-columns(8);
       @include omega();
 
@@ -44,7 +43,7 @@
   }
 }
 
-.revenues-section-last {
+.revenues_page-last {
   padding-top: $base-padding-large;
   padding-bottom: $base-padding-large;
 
@@ -68,7 +67,8 @@
   }
 
   @include respond-to(medium-up) {
-    .revenues-section-last-intro {
+    .revenues_page-last,
+    .revenues_subpage-last_intro {
       @include span-columns(4 of 12);
     }
 

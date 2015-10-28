@@ -16,7 +16,11 @@ We are continuing to fine-tune the global navigation micro-copy on our site beas
 
 1. Changing 'local impact' to 'case studies' to more accurately reflect what's found under that link. Previously, people expected a much more robust set of content than we have for the December version of the site.
 
-1. Creating two options for the glossary to test. One has an icon and looks like a tab, separate from the rest of the global nav. The other makes a 'utility' section of the global navigation that includes 'downloads' and 'glossary'.
+1. Pulling 'utility'-type links into a separate global navigation chunk. This includes 'downloads', 'glossary', and search.
+
+1. Creating two options for the glossary icon to test. The icon itself is no longer in a tab on the upper right. It is instead used throughout the site to indicate when there is a word that is defined in the glossary, and when clicked will open the glossary drawer.
+
+1. Adding a 'Learn more about USEITI' text link to the intro block.
 
 More information on the proposed information architecture writ large is [here](https://github.com/18F/doi-extractives-data/issues/622).
 
@@ -24,7 +28,7 @@ More information on the proposed information architecture writ large is [here](h
 ### Metrics
 
 * Whether participants understand what they'll find when they click on words in the global navigation
-* Whether participants understand that we have a glossary of extraction terms.
+* Whether participants understand that click on an underlined word with a book icon means that we have a glossary of extraction terms that they can access.
 * Whether participants understand what the USEITI is
 
 

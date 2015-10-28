@@ -20,9 +20,9 @@ _Show the in-person participant the latest version of the site and give them com
 
 1. "Who do you think the intended audience is for the site?"
 
-1. _Draw the participant's attention to the global nav_ "Can you tell me what you think you'll see when you click on [nav item]?" _Ask this question for all nav items except HOME._
+1. _Draw the participant's attention to the global nav_ "Can you tell me what you think you'll see when you click on [nav item]?" _Ask this question for all nav items except HOME. Include the new 'utility' nav items._
 
-1. _Draw the participant's attention to the glossary icon_ "Can you tell me what you think you'll see when you click on this?"
+1. _Draw the participant's attention to the underlined word with the book icon_ "Can you tell me what you think you'll see when you click on this?"
 
 1. "What questions does this site leave you with? Can you walk me through things you think are confusing?"
 

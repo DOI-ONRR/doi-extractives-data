@@ -31,24 +31,36 @@
 }
 .revenues_subpage-text {
 
-  @include span-columns(9);
+  @include span-columns(10);
+
+  @include respond-to(medium-up) {
+    @include span-columns(9);
+  }
+
   padding-left: $base-padding;
   padding-bottom: $base-padding;
-  padding-right: $base-padding;
+  padding-right: $base-padding-lite;
 
 }
 
 .revenues_subpage-office_logos {
 
-  @include span-columns(3);
+  @include span-columns(2);  
+
+  @include respond-to(medium-up) {
+    @include span-columns(3);
+  }
+  
   padding-right: $base-padding;
   padding-bottom: $base-padding;
-  
 }
 
 .revenues_subpage-office_logo {
   width: 50px;
   float: right;
+  margin-bottom: $base-padding-lite;
+
+
 }
 
 .forms-numbers {

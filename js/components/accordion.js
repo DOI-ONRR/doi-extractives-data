@@ -1,54 +1,58 @@
 (function(exports) {
-	console.log('hello')
-	function getElementsByAttribute(attribute, context) {
-	  var nodeList = (context || document).getElementsByTagName('*');
-	  var nodeArray = [];
-	  var iterator = 0;
-	  var node = null;
 
-	  while (node = nodeList[iterator++]) {
-	    if (node.getAttribute(attribute)) nodeArray.push(node);
-	  }
+	var Accordion = function() {
+		this.accordionButtons = document.querySelectorAll('[accordion-button]');
+  };
 
-	  return nodeArray;
-	}
-	var accordion = document.querySelectorAll('[accordion]')
-	var accordionButtons = document.querySelectorAll('[accordion-button]');
+  Accordion.prototype = {
+  	/**
+     * Used to traverse up the DOM tree to find a parent with 
+     * the a specific attribute
+     *
+     * @param String parentAttr
+     * @param Object childObj
+     * @return Obj
+     */
+  	findParentNode: function (parentAttr, childObj) {
+	    var obj = childObj.parentNode;
 
-	
+	    while(obj.getAttribute(parentAttr)) {
+	        obj = obj.parentNode;
+	    }
+	    return obj; 
+	  },
+	  /**
+     * Triggered by a click handler 
+     * finds a parent node and toggles the 'accordion-open' attribute
+     *
+     * @return void
+     */
+	  toggleAccordion: function () {
+			var e = e || window.event;
+	    var target = e.target || e.srcElement;
 
-  function findParentNode(parentAttr, childObj) {
-    var obj = childObj.parentNode;
+	    var accordionItem = this.findParentNode('accordion-item', target),
+				accordionStatus = accordionItem.getAttribute('accordion-open');
 
-    while(obj.getAttribute(parentAttr)) {
-        obj = obj.parentNode;
-    }
-    return obj; 
-  }
+			accordionStatus = (accordionStatus == 'true') ? 'false' : 'true';
 
-	function toggleAccordion () {
-		var e = e || window.event;
-    var target = e.target || e.srcElement
-
-    var accordionItem = findParentNode('accordion-item', target)
-
-		var accordionStatus = accordionItem.getAttribute('accordion-open');
-
-		if (accordionStatus == 'true') {
-			accordionStatus = 'false'
-		} else {
-			accordionStatus = 'true'
+			accordionItem.setAttribute('accordion-open', accordionStatus);
+		},
+		/**
+     * Event handler that binds 
+     * to the toggleAccordion function
+     *
+     * @return void
+     */
+		registerEventListeners: function () {
+			for (var i = 0; i < this.accordionButtons.length; i++) {
+				this.accordionButtons[i].addEventListener("click", this.toggleAccordion.bind(this));
+			};
 		}
-		accordionItem.setAttribute('accordion-open', accordionStatus);
-	}
-
-	// register Event Listener
-	for (var i = 0; i < accordionButtons.length; i++) {
-		accordionButtons[i].addEventListener("click", toggleAccordion);
 	};
 
+	var accordion = new Accordion();
 
-
+	accordion.registerEventListeners();
 	
-
-})();
+})(this);

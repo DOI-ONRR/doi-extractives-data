@@ -3,17 +3,17 @@
 ---
 
 // include reset
-@import "reset";
+@import 'reset';
 
 // include Bourbon & Neat
-@import "lib/bourbon/bourbon";
-@import "lib/neat/neat";
+@import 'lib/bourbon/bourbon';
+@import 'lib/neat/neat';
 
 // include site specific base styles
-@import "base";
+@import 'base';
 
 // include fonts (and @import font-face declarations from /css/fonts)
-@import "fonts";
+@import 'fonts';
 
 // include FontAwesome Sass variables, etc.
-@import "lib/font-awesome/font-awesome";
+@import 'lib/font-awesome/font-awesome';

@@ -17,12 +17,17 @@
 
 .container-outer {
   @extend .container;
-
+  padding-left: $base-padding;
+  padding-right: $base-padding;
   @include respond-to(huge-plus) {
     margin-left: $base-padding;
     margin-right: $base-padding;
+    
   }
-
+  @include respond-to(huge-up) {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 
 %container-side {

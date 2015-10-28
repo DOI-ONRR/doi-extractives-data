@@ -30,15 +30,17 @@
     "yargs": "^3.7.1"
   },
   "devDependencies": {
-    "npm-exec": "^0.1.3",
+    "jshint": "^2.8.0",
     "kss": "^2.1.0",
-    "mocha": "^2.3.3"
+    "mocha": "^2.3.3",
+    "npm-exec": "^0.1.3"
   },
   "scripts": {
     "test": "mocha",
     "watch": "watchy -w '_sass' -- npm run build-styleguide",
     "build-styleguide": "rm -rf styleguide && kss-node --config kss-config.json",
-    "init-styleguide": "npm-exec kss-node --config kss-config.json"
+    "init-styleguide": "npm-exec kss-node --config kss-config.json",
+    "lint": "jshint -c .jshintrc --exclude-path .jshintignore js"
   },
   "repository": {
     "type": "git",

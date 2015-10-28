@@ -1,41 +1,46 @@
-# Information architecture research plan
+# Sprint-PocketMouse research plan
 
 ## Goals / Questions
 Goals | Questions
 :----- | :---------
 Evaluate global navigation | Do people understand the terms we've chosen for the global navigation?
  | What do people think they'll find if they click on those terms?
+Evaluate glossary indicator | Do people understand what the glossary icon means?
 Evaluate front page | Do people understand what the site is about?
- | We've starting moving towards global nav as categories throughout the site. Is this making the information structure clearer?
 Prioritize what to fix | What problems are most severe?
 
 
 ## Background
 
-After a development pause to wait for multi-stakeholder group decisions on content and available datasets, the team is back in full-time business to continue site work. With this additional information about content and data, we have re-thought the site information architecture and have proposed changes to test.
+We are continuing to fine-tune the global navigation micro-copy on our site. Changes in this testing round include:
 
-More information on the proposed information architecture is [here](https://github.com/18F/doi-extractives-data/issues/622).
+1. Changing 'local impact' to 'case studies' to more accurately reflect what's found under that link. Previously, people expected a much more robust set of content than we have for the December version of the site.
+
+1. Creating two options for the glossary to test. One has an icon and looks like a tab, separate from the rest of the global nav. The other makes a 'utility' section of the global navigation that includes 'downloads' and 'glossary'.
+
+More information on the proposed information architecture writ large is [here](https://github.com/18F/doi-extractives-data/issues/622).
 
 
 ### Metrics
 
 * Whether participants understand what they'll find when they click on words in the global navigation
+* Whether participants understand that we have a glossary
 * Whether participants understand what the USEITI is
 
 
 ## Methods
-* 5-10 min interviews with GSA-ers and citizens of Tucson, AZ; Minneapolis, MN; Lawrence, KS; Washington, DC; St Germain, WI; and San Francisco, CA.
+* 10 min interviews with people unfamiliar with USEITI
 * Notes, no recording
 * In-person and remote
 
 
 ## Script
 
-Script available [here](https://github.com/18F/doi-extractives-data/blob/research/research/sprint-mightymoose/sprint-mightymoose_interview-script.md).
+Script available [here](https://github.com/18F/doi-extractives-data/blob/research/research/sprint-pocketmouse/sprint-pocketmouse_interview-script.md).
 
 
 ## Test asset(s)
 
-~~Liveshare~~ (The original live link is no longer available. See image below to see what we tested.)
+Liveshare coming soon.
 
-[Image](https://github.com/18F/doi-extractives-data/blob/research/assets/img/mightymoose/mighty-moose.png)
+Image coming soon.

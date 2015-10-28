@@ -1,4 +1,4 @@
-# Information architecture user interview questions, Sprint Mighty Moose
+# Sprint-PocketMouse interview script
 
 
 ## Introductory comments

@@ -84,34 +84,10 @@
   margin-bottom: $base-padding;
   overflow: hidden;
 
-  &.revenues_subpage-dyk_coal{
-    > div {
-      &:first-of-type {
-        background-color: #d54740;
-      }
-    }
-    .link-more-after {
-      color:white;
-    }
-  }
-
- 
   @include respond-to(medium-up) {
     display: block;
     margin-top: 40%;
     @include span-columns(3);
-  }
-
-  &.revenues_subpage-dyk_onshore_oil{
-
-    > a {
-      color: white;
-    }
-    > div {
-      &:first-of-type {
-        background-color: #7f6e61;
-      }
-    }
   }
 }
 
@@ -141,46 +117,30 @@
   }
 }
 
-.revenues_subpage-steps_inner {
-  @include respond-to(huge-down) {
-    padding-left: $base-padding;
-    padding-right: $base-padding;
-  }
-  
-}
 
 .revenues_subpage-steps_group {
 
   p {
 
     @include respond-to(medium-up) {
-      padding-left: 60px;
+      padding-left: 56px;
+    }
+
+    @include respond-to(medium-down) {
+      margin-top: $base-padding-lite;
     }
     
   }
 
-  ul{
-    padding-right: $base-padding;
-    padding-bottom: $base-padding;
-    list-style-type: disc;
-    padding-left: 80px;
-    li{
-      padding: 0;
-    }
-  }
-
   @include respond-to(medium-up) {
-    // @include span-columns(10);
-    // @include shift(2);
     @include span-columns(7);
     @include shift(2);
   }
 
   @include respond-to(huge-up) {
-    // @include span-columns(7);
-    // @include shift(3);
     padding-right: 0px;
   }
+
   &:last-of-type {
     padding-bottom: $base-padding;
   }
@@ -205,14 +165,15 @@
 
 .revenues_subpage-steps_heading {
 	@extend .revenues_steps-heading;
-  display: inline;
+  display: inline-block;
 }
 .revenues_subpage-steps_number {
 	@extend .revenues_steps-number;
-  border: 2px solid $mid-gray;
-  height: 47px;
+  border: 2px solid #ebebeb;
   margin-right: 8px;
-  padding-left: 13px;
-  width: 47px;
+  padding-left: 11px;
+  padding-top: 8px;
+
+  
 }
 

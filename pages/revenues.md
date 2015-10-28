@@ -165,7 +165,7 @@ permalink: /resource_revenues/
     </section>
   </div>
 
-  <div class="revenues-section-forms">
+  <div class="revenues-subpage-forms">
     <section class="container">
       <h2 class="h1">&#8230; and the money collected takes one of several forms.</h2>
 

@@ -4,11 +4,11 @@
 //
 // Styleguide blocks.revenues_subpage_forms
 
-.revenues-section-forms-subpage {
+.revenues_subpage-forms {
   background-color: $light-gray;
 }
 
-.revenues-section-involved {
+.revenues_subpage-involved {
   background-color: $white;
   padding-top: $base-padding-large;
   padding-bottom: $base-padding-large;
@@ -36,29 +36,29 @@
     line-height: 2.1em;
   }
 
-  .revenues-section-involved-intro {
+  .revenues_subpage-involved_intro {
     p {
       @include heading(h2);
     }
   }
 
   @include respond-to(small-up) {
-    .revenues-section-involved-options > div {
+    .revenues_subpage-involved_options > div {
       @include span-columns(4 of 8);
       @include omega(2n);
     }
   }
 
   @include respond-to(medium-up) {
-    .revenues-section-involved-intro {
+    .revenues_subpage-involved_intro {
       @include span-columns(4 of 12);
     }
 
-    .revenues-section-involved-right {
+    .revenues_subpage-involved_right {
       @include span-columns(8 of 12);
     }
 
-    .revenues-section-involved-participate {
+    .revenues_subpage-involved_participate {
       margin-bottom: 100px;
 
       > div p {
@@ -74,7 +74,7 @@
       }
     }
 
-    .revenues-section-involved-options {
+    .revenues_subpage-involved_options {
       > div {
         margin-top: $base-padding-large;
         @include omega-reset(2n);

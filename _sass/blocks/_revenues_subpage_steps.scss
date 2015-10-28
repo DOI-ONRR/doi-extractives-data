@@ -1,0 +1,218 @@
+// Revenues Subpage Steps
+//
+// Diving Graphics and associated steps
+//
+// Styleguide blocks.revenues_subpage_steps
+
+@mixin diving-bg-size($size, $position-left, $position-top) {
+  @include respond-to(medium-down) {
+    background-position: $position-left;
+    background-size: $size;
+    background: none;
+  }
+
+  @include respond-to(medium-up) {
+    background-position: -950px 0px;
+    background-size: 500%;
+  }
+
+  @include respond-to(large-up) {
+    background-position: -550px 0px;
+    background-size: 300%;
+  }
+
+  @include respond-to(huge-up) {
+    background-position: -200px 0px;
+    background-size: 200%;
+  }
+
+  @include respond-to(jumbo-up) {
+    background-position: -350px 100px;
+    background-size: 150%;
+  }
+}
+
+
+.revenues_subpage-steps {
+  
+  @include diving-bg-size(100%, 0px, 100px);
+
+  &.onshore-oil{
+    background: url(/img/revenues/rev-onshore-oil.png) no-repeat;
+    background-position: 0 100px;
+    background-size: 100%;
+    margin-top: $base-padding-large;
+  }
+
+  &.offshore-oil{
+    background: url(/img/revenues/offshore-oil.png) no-repeat;
+
+    @include diving-bg-size(200%, -200px, 200px);
+  }
+
+  &.renew-on {
+    background: url(/img/revenues/renew-onshore.svg) no-repeat;
+    background-position: 0 20px;
+    background-size: 100%;
+    margin-top: 0;
+  }
+
+  &.renew-off {
+    background: url(/img/revenues/renew-offshore.svg) no-repeat;
+    background-position: 0 -150px;
+    background-size: 100%;
+    margin-top: 0;
+  }
+
+  &.rev-coal{
+    background: url(/img/revenues/rev-coal.png) no-repeat;
+    background-position: 0 100px;
+    background-size: 100%;
+  }
+
+  &.rev-hardrock{
+    background: url(/img/revenues/rev-hardrock.svg) no-repeat;
+    background-position: 0 100px;
+    background-size: 100%;
+  }
+}
+
+.revenues_subpage-dyk {
+  position: relative;
+  border: $base-border-size solid $mid-gray;
+  border-radius: $base-border-radius;
+  margin-bottom: $base-padding;
+  overflow: hidden;
+
+  &.revenues_subpage-dyk_coal{
+    > div {
+      &:first-of-type {
+        background-color: #d54740;
+      }
+    }
+    .link-more-after {
+      color:white;
+    }
+  }
+
+ 
+  @include respond-to(medium-up) {
+    display: block;
+    margin-top: 40%;
+    @include span-columns(3);
+  }
+
+  &.revenues_subpage-dyk_onshore_oil{
+
+    > a {
+      color: white;
+    }
+    > div {
+      &:first-of-type {
+        background-color: #7f6e61;
+      }
+    }
+  }
+}
+
+.revenues_subpage-dyk_heading {
+  color: $white;
+  background-color: $blue;
+  padding: $base-padding;
+  margin: 0;
+  text-align: center;
+}
+
+.revenues_subpage-dyk_text {
+  background-color: $white;
+  margin: 0;
+  padding: $base-padding;
+  padding-bottom: $base-padding-extra;
+}
+
+.revenues_subpage_dyk-link {
+  position: absolute;
+  right: $base-padding;
+  bottom: $base-padding;
+  span {
+    @include heading(h4);
+    line-height: $base-line-height;
+    vertical-align: bottom;
+  }
+}
+
+.revenues_subpage-steps_inner {
+  @include respond-to(huge-down) {
+    padding-left: $base-padding;
+    padding-right: $base-padding;
+  }
+  
+}
+
+.revenues_subpage-steps_group {
+
+  p {
+
+    @include respond-to(medium-up) {
+      padding-left: 60px;
+    }
+    
+  }
+
+  ul{
+    padding-right: $base-padding;
+    padding-bottom: $base-padding;
+    list-style-type: disc;
+    padding-left: 80px;
+    li{
+      padding: 0;
+    }
+  }
+
+  @include respond-to(medium-up) {
+    // @include span-columns(10);
+    // @include shift(2);
+    @include span-columns(7);
+    @include shift(2);
+  }
+
+  @include respond-to(huge-up) {
+    // @include span-columns(7);
+    // @include shift(3);
+    padding-right: 0px;
+  }
+  &:last-of-type {
+    padding-bottom: $base-padding;
+  }
+}
+
+.revenues_subpage-steps_group_item {
+    background-color: $white;
+    margin-bottom: 4px;
+    padding: $base-padding;
+    border-bottom: $base-border-size solid $mid-gray;
+    border-top: $base-border-size solid $mid-gray;
+    border: $base-border-size solid $mid-gray;
+
+    &:first-of-type {
+      border-radius: $base-border-radius $base-border-radius 0 0;
+    }
+
+    &:last-of-type {
+      border-radius: 0 0 $base-border-radius $base-border-radius;
+    }
+  }
+
+.revenues_subpage-steps_heading {
+	@extend .revenues_steps-heading;
+  display: inline;
+}
+.revenues_subpage-steps_number {
+	@extend .revenues_steps-number;
+  border: 2px solid $mid-gray;
+  height: 47px;
+  margin-right: 8px;
+  padding-left: 13px;
+  width: 47px;
+}
+

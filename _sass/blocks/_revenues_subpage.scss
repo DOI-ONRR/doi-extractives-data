@@ -33,16 +33,11 @@
   background-color: $white;
   border: 2px solid $mid-gray;
   border-radius: $base-border-radius;
-  margin-top: $base-padding;
-  padding: $base-padding-lite 10px;
+  margin-bottom: $base-padding;
+  padding-top: $base-padding;
+}
+.revenues_subpage-text {
 
-<<<<<<< 628caf84c0c022a94ca0d2b61066bd99b3309c86
-  img {
-    float: right;
-    width: 50px;
-    margin: 5px;
-  }
-=======
   @include span-columns(10);
 
   @include respond-to(medium-up) {
@@ -54,23 +49,11 @@
   padding-right: $base-padding-lite;
 
 }
->>>>>>> improve accordion.js
 
   p:nth-of-type(2) {
     margin-top: 10px;
   }
 
-<<<<<<< 628caf84c0c022a94ca0d2b61066bd99b3309c86
-  span {
-    font-weight: normal;
-  }
-}
-
-.enbiggen {
-  @include font-size(1.8);
-  font-weight: $weight-light;
-  vertical-align: -6px;
-=======
   @include span-columns(2);  
 
   @include respond-to(medium-up) {
@@ -87,7 +70,6 @@
   margin-bottom: $base-padding-lite;
 
 
->>>>>>> improve accordion.js
 }
 
 .forms-numbers {

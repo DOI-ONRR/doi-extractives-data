@@ -4,38 +4,10 @@
 //
 // Styleguide blocks.revenues_subpage_steps
 
-@mixin diving-bg-size($size, $position-left, $position-top) {
-  @include respond-to(medium-down) {
-    background-position: $position-left;
-    background-size: $size;
-    background: none;
-  }
-
-  @include respond-to(medium-up) {
-    background-position: -950px 0px;
-    background-size: 500%;
-  }
-
-  @include respond-to(large-up) {
-    background-position: -550px 0px;
-    background-size: 300%;
-  }
-
-  @include respond-to(huge-up) {
-    background-position: -200px 0px;
-    background-size: 200%;
-  }
-
-  @include respond-to(jumbo-up) {
-    background-position: -350px 100px;
-    background-size: 150%;
-  }
-}
-
-
 .revenues_subpage-steps {
   
-  @include diving-bg-size(100%, 0px, 100px);
+  background-position: 0 0;
+  background-size: 100%;
 
   &.onshore-oil{
     background: url(/img/revenues/rev-onshore-oil.png) no-repeat;
@@ -45,9 +17,53 @@
   }
 
   &.offshore-oil{
-    background: url(/img/revenues/offshore-oil.png) no-repeat;
 
-    @include diving-bg-size(200%, -200px, 200px);
+    background: #b3e4f9;
+    padding-top: $base-padding;
+    
+    @include respond-to(medium-up) {
+      background: url(/img/revenues/offshore-oil-top-long.png) top left no-repeat, url(/img/revenues/offshore-oil-bottom-long.png) bottom left no-repeat;
+      background-size: 100%, 100%;
+      padding-top: 50px;
+      position: relative;
+      height: 100%;
+      z-index: 2;
+      &:before {
+        content: '';
+        z-index: -1;
+        right: 0;
+        left: 0;
+        top: 362px;
+        bottom: 448px;
+        position: absolute;
+        background: url(/img/revenues/offshore-oil-middle.png) top left repeat-y;
+        background-size: 100%;
+      }
+
+    }
+
+    @include respond-to(large-up) {
+
+      &:before {
+        top: 467px;
+        bottom: 577px;
+      }
+    }
+
+    @include respond-to(huge-up) {
+      &:before {
+        top: 483px;
+        bottom: 597px;
+      }
+    }
+
+    @include respond-to(jumbo-up) {
+      &:before {
+        top: 708px;
+        bottom: 875px;
+      }
+    }
+  
   }
 
   &.renew-on {
@@ -79,7 +95,6 @@
 
 .revenues_subpage-dyk {
   position: relative;
-  border: $base-border-size solid $mid-gray;
   border-radius: $base-border-radius;
   margin-bottom: $base-padding;
   overflow: hidden;
@@ -150,9 +165,6 @@
     background-color: $white;
     margin-bottom: 4px;
     padding: $base-padding;
-    border-bottom: $base-border-size solid $mid-gray;
-    border-top: $base-border-size solid $mid-gray;
-    border: $base-border-size solid $mid-gray;
 
     &:first-of-type {
       border-radius: $base-border-radius $base-border-radius 0 0;
@@ -166,6 +178,7 @@
 .revenues_subpage-steps_heading {
 	@extend .revenues_steps-heading;
   display: inline-block;
+  margin: 0;
 }
 .revenues_subpage-steps_number {
 	@extend .revenues_steps-number;

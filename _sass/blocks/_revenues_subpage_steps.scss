@@ -13,6 +13,7 @@ $coal-secondary-color: #c5403c;
 $minerals-primary-color: #534136;
 $minerals-secondary-color: #c5403c;
 
+
 .revenues_subpage-steps {
   
   background-position: 0 0;
@@ -346,6 +347,7 @@ $minerals-secondary-color: #c5403c;
 .revenues_subpage-steps_heading {
 	@extend .revenues_steps-heading;
   display: inline-block;
+  margin: 0;
 }
 .revenues_subpage-steps_number {
 	@extend .revenues_steps-number;

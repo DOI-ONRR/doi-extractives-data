@@ -27,7 +27,7 @@
      *
      * @return void
      */
-	  toggleAccordion: function () {
+	  toggleAccordion: function (statusAll) {
 			var e = e || window.event;
 	    var target = e.target || e.srcElement;
 

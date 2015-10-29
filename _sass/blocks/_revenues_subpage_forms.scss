@@ -11,10 +11,10 @@
 
   h2 {
     color: $light-black;
+    font-weight: $weight-light;
   }
 
   h3 {
-    @include heading(h3);
     padding-bottom: 5px;
     margin-bottom: 8px;
   }
@@ -34,7 +34,7 @@
 
   .revenues_subpage-involved_intro {
     p {
-      @include heading(h2);
+      @include heading(h4);
     }
   }
 

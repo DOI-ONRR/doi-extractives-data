@@ -173,6 +173,10 @@
     &:last-of-type {
       border-radius: 0 0 $base-border-radius $base-border-radius;
     }
+
+    a {
+      @extend .link-active;
+    }
   }
 
 .revenues_subpage-steps_heading {

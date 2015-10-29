@@ -165,11 +165,11 @@ permalink: /resource_revenues/
     </section>
   </div>
 
-  <div class="revenues-subpage-forms">
+  <div class="revenues_page-forms">
     <section class="container">
       <h2 class="h1">&#8230; and the money collected takes one of several forms.</h2>
 
-      <div class="revenues-section-forms-options">
+      <div class="revenues_page-forms_options">
 
         <div>
           <h3>Bonus</h3>
@@ -195,10 +195,10 @@ permalink: /resource_revenues/
     </section>
   </div>
 
-  <div class="revenues-section-last">
+  <div class="revenues_page-last">
     <section class="container">
 
-      <h2 class="revenues-section-last-intro">Choose a resource to explore:</h2>
+      <h2>Choose a resource to explore:</h2>
 
 
       <ul>

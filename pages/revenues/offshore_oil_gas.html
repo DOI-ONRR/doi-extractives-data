@@ -4,19 +4,21 @@ layout: default
 permalink: /resource_revenues/offshore_oil_gas/
 ---
 
-  <section>
-    <div class="revenues-subpage-back">
-      <a href="{{ site.baseurl }}/resource_revenues" class="link-more"><span class="shrink-fa"><i class="fa fa-chevron-left"></i></span> Back to revenues overview</a>
+  <section class="revenues_subpage-nav">
+    <div class="revenues_subpage-back">
+      <a href="{{ site.baseurl }}/resource_revenues/"><span class="shrink-fa"><i class="fa fa-chevron-left"></i></span> Back to revenues overview</a>
     </div>
 
-    <div class="revenues_subpage-nav">
+    <div class="revenues_subpage-tabs">
       <ul>
-          <a href="{{ site.baseurl }}/resource_revenues/offshore_oil_gas">
-            <li class="active">Offshore</li>
+          
+          <li class="revenues_subpage-tab active">
+            <a href="{{ site.baseurl }}/resource_revenues/offshore_oil_gas/">Offshore</a>
+          </li>
           </a>
-          <a href="{{ site.baseurl }}/resource_revenues/onshore_oil_gas">
-            <li>Onshore</li>
-          </a>
+          <li class="revenues_subpage-tab">
+            <a href="{{ site.baseurl }}/resource_revenues/onshore_oil_gas/">Onshore</a>
+          </li>
       </ul>
     </div>
   </section>
@@ -34,132 +36,21 @@ permalink: /resource_revenues/offshore_oil_gas/
   
 
   <div class="slab-beta revenues_page-forms">
-    <section class="container-outer">
-      <h1>Revenue collected by the Office of Natural Resources Revenue</h1>
-
-      <div class="revenues_page-forms_options">
-
-        <div>
-          <h3 class="revenues_subpage-steps_heading">Bonus</h3>
-          <p>The bonus is the amount paid by the highest bidder for a natural resource lease on federal land.</p>
-        </div>
-
-        <div>
-          <h3 class="revenues_subpage-steps_heading">Rent</h3>
-          <p class="forms-numbers"><span>$1.50 &ndash; $44.00<br></span> per acre</p>
-          <p>Rent is an annual payment made on leased land for the right to continue exploration and development of federal land for future production. Rent is set in the lease.</p>
-        </div>
-
-        <div>
-          <h3 class="revenues_subpage-steps_heading">Royalty</h3>
-          <p class="forms-numbers"><span>12.5%, 16.67%,</span> or <span>18.75%</span></p>
-          <p>A royalty is a percentage of the market value of the produced commodity.</p>
-        </div>
-
-        <div>
-        </div>
-      </div>
-
-    </section>
+    {% include revenues/offshore_oil_gas_forms.html %}
   </div>
 
   <div class="slab-alpha revenues_subpage-involved">
-    <section class="container-outer">
-
-      <div class="revenues_subpage-involved_intro">
-        <h2 class="h1">Get involved</h2>
-        <p>There are many opportunities to get involved throughout the offshore oil &amp; gas process</p>
-      </div>
-
-      <div class="revenues_subpage-involved_right">
-
-        <div class="revenues_subpage-involved_participate">
-
-          <div>
-            <a href="http://boemoceaninfo.com/learn/">
-            <span class="fa-stack fa-lg">
-              <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-youtube-play fa-stack-1x fa-inverse"></i>
-            </span>
-            <h3>YouTube: See how to participate</h3>
-            </a>
-            <p>BOEM is reaching out to you to get as much input as possible for potential new oil and gas leases in the Mid- and South Atlantic, Gulf of Mexico, and Alaska. Watch the video here to learn more about how you can comment on the Programmatic Environmental Impact Statement for the 2017-2022 Leasing Program, or visit <a href="http://boemoceaninfo.com/learn/">BOEM's Programmatic EIS website</a> for all the details.</p>
-          </div>
-
-          <div>
-            <!-- <iframe height="180px" src="https://www.youtube.com/embed/Xkqip8Sm8ng" frameborder="0" allowfullscreen></iframe> -->
-          </div>
-
-        </div>
-
-        <div class="revenues_subpage-involved_options">
-
-          <div>
-            <a href="https://www.facebook.com/BureauOfOceanEnergyManagement">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-              </span>
-              <h3>Facebook</h3>
-            </a>
-            <p>Like BOEM on Facebook to get the latest in ocean energy management in your feed.</p>
-          </div>
-
-          <div>
-            <a href="https://twitter.com/boem_doi">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-              </span>
-              <h3>Twitter</h3>
-            </a>
-            <p>Follow BOEM to keep up with the latest oil &amp; gas leasing info.</p>
-          </div>
-
-          <div>
-            <a href="https://www.flickr.com/photos/boemgov/sets/">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-flickr fa-stack-1x fa-inverse"></i>
-              </span>
-              <h3>Flickr</h3>
-            </a>
-            <p>A picture is worth a thousand words; see BOEM's work on Flickr.</p>
-          </div>
-
-          <div>
-            <a href="http://boemoceaninfo.com/">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-info fa-stack-1x fa-inverse"></i>
-              </span>
-              <h3>Coastal States</h3>
-            </a>
-            <p>BOEM has set up federal-state task forces in 16 coastal states to coordinate public engagement. <a href="http://boemoceaninfo.com/">Click to learn about your state's task force</a> and to get involved.</p>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
+      {% include revenues/offshore_oil_gas_involved.html %}
   </div>
 
-  <div class="container-outer revenues_page-last">
-    <section class="container-outer">
-
-      <div class="container">
-        <h2>Choose a resource to explore:</h2>
-        <a href="{{ site.baseurl }}/resource_revenues" class="link-more"><span class="shrink-fa"><i class="fa fa-chevron-left"></i></span> Or, back to revenues overview</a>
-      </div>
+  <div class="container-outer revenues_page-footer">
 
       {% include revenues/revenues-footer.html %}
 
-    </section>
   </div>
 
 
 </div>
 
 <!-- Components -->
-  <script src="{{ site.baseurl }}/js/components/accordion.js"></script>
+<script src="{{ site.baseurl }}/js/components/accordion.js"></script>

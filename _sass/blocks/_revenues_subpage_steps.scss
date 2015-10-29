@@ -143,10 +143,61 @@ $coal-secondary-color: #c5403c;
     margin-top: 0;
   }
 
-  &.rev-coal{
-    background: url(/img/revenues/rev-coal.png) no-repeat;
-    background-position: 0 100px;
-    background-size: 100%;
+  &.coal{
+    
+
+    background: $coal-primary-color;
+    padding-top: $base-padding;
+    
+    .revenues_subpage-dyk_heading {
+      background-color: $coal-secondary-color;
+    }
+    .revenues_subpage-steps_heading {
+      color: $coal-secondary-color;
+    }
+
+    @include respond-to(medium-up) {
+      background: url(/img/revenues/coal-top.png) top left no-repeat, url(/img/revenues/coal-bottom.png) bottom left no-repeat;
+      background-size: 100%, 100%;
+      padding-top: 50px;
+      position: relative;
+      height: 100%;
+      z-index: 2;
+      &:before {
+        content: '';
+        z-index: -1;
+        right: 0;
+        left: 0;
+        top: 377px;
+        bottom: 603px;
+        position: absolute;
+        background: url(/img/revenues/coal-middle.png) top left repeat-y;
+        background-size: 100%;
+      }
+
+    }
+
+    @include respond-to(large-up) {
+
+      &:before {
+        top: 486px;
+        bottom: 777px;
+      }
+    }
+
+    @include respond-to(huge-up) {
+      &:before {
+        top: 503px;
+        bottom: 804px;
+      }
+    }
+
+    @include respond-to(jumbo-up) {
+      &:before {
+        top: 737px;
+        bottom: 1178px;
+      }
+    }
   }
 
   &.rev-hardrock{

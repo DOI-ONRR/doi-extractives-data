@@ -27,7 +27,7 @@
      *
      * @return void
      */
-	  toggleAccordion: function () {
+	  toggleAccordion: function (statusAll) {
 			var e = e || window.event;
 	    var target = e.target || e.srcElement;
 
@@ -47,6 +47,9 @@
 		registerEventListeners: function () {
 			for (var i = 0; i < this.accordionButtons.length; i++) {
 				this.accordionButtons[i].addEventListener("click", this.toggleAccordion.bind(this));
+				if (i != 0) {
+					this.accordionButtons[i].click();
+				}
 			};
 		}
 	};

@@ -4,8 +4,7 @@ layout: default
 permalink: /resource_revenues/offshore_oil_gas/
 ---
 
-  <section class="container-outer">
-
+  <section>
     <div class="revenues-subpage-back">
       <a href="{{ site.baseurl }}/resource_revenues" class="link-more"><span class="shrink-fa"><i class="fa fa-chevron-left"></i></span> Back to revenues overview</a>
     </div>
@@ -20,17 +19,19 @@ permalink: /resource_revenues/offshore_oil_gas/
           </a>
       </ul>
     </div>
+  </section>
+  <section class="slab-beta">
 
-    <div>
-      {% include revenues/offshore_oil_gas_intro.html %}
-    </div>
+      <div class="container-outer revenues_subpage-intro">
+        {% include revenues/offshore_oil_gas_intro.html %}
+      </div>
 
-
+      <div class="revenues_subpage-steps offshore-oil">
+        {% include revenues/offshore_oil_gas_steps.html %}
+      </div>
   </section>
 
-  <div class="revenues_subpage-steps offshore-oil">
-    {% include revenues/offshore_oil_gas_steps.html %}
-  </div>
+  
 
   <div class="slab-beta revenues_page-forms">
     <section class="container-outer">

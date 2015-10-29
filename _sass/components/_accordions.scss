@@ -17,6 +17,9 @@
 		}
 		.accordion-content {
 			display: none;
+			@include respond-to(medium-up) {
+				display: inline-block;
+			}
 		}
   }
 
@@ -39,5 +42,8 @@
 	  font-weight: normal;
 	  text-decoration: inherit;
   } 
+  @include respond-to(medium-up) {
+		display: none;
+	}
 }
 

@@ -8,25 +8,12 @@
 // Styleguide elements.links
 
 %link {
-<<<<<<< 8ae4a30c73f6e975365999ede1c57bd3967e15a9
   cursor: pointer;
   text-decoration: none;
   border: none;
   transition: color 0.1s linear;
 }
 
-
-a,
-.link-alpha {
-  border: none;
-  color: $base-font-color;
-=======
->>>>>>> half way through offshore oil
-  cursor: pointer;
-  text-decoration: none;
-  border: none;
-  transition: color 0.1s linear;
-}
 
 a,
 .link-alpha {
@@ -36,11 +23,7 @@ a,
   &:hover {
     text-decoration: none;
     border-bottom: $thin-border-size dotted $base-link-color;
-<<<<<<< 8ae4a30c73f6e975365999ede1c57bd3967e15a9
     img, i, span{
-=======
-    img{
->>>>>>> half way through offshore oil
       border: none;
     }
   }

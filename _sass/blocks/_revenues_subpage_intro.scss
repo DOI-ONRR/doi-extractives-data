@@ -4,7 +4,7 @@
 //
 // Styleguide blocks.revenues_subpage_intro
 
-.revenues-subpage-intro {
+.revenues_subpage-intro {
   padding-top: $base-padding;
 
   h1 {
@@ -16,9 +16,6 @@
     padding-bottom: $base-padding;
   }
 
-  @include respond-to(medium-up) {
-    @include span-columns(9);
-  }
 }
 
 .revenues_subpage-office {
@@ -51,9 +48,7 @@
 
 }
 
-  p:nth-of-type(2) {
-    margin-top: 10px;
-  }
+.revenues_subpage-office_logos {
 
   @include span-columns(2);  
 

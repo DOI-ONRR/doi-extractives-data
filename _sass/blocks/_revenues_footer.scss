@@ -1,0 +1,34 @@
+.revenues_page-footer {
+  padding-top: $base-padding-large;
+  padding-bottom: $base-padding-large;
+
+  h2 {
+    @include font-size(1.2);
+    color: $light-black;
+    font-weight: normal;
+    padding-top: 0;
+  }
+
+  ul li {
+    @include font-size(1.2);
+    display: inline-block;
+    font-weight: 200;
+    margin-right: $base-padding;
+
+    img {
+      height: 18px;
+      padding-right: 8px;
+    }
+  }
+
+  @include respond-to(medium-up) {
+    .revenues_page-last {
+      @include span-columns(4 of 12);
+    }
+
+    ul {
+      @include span-columns(8 of 12);
+      @include omega();
+    }
+  }
+}

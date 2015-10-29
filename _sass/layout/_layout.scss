@@ -38,7 +38,7 @@
 
     padding-bottom: $base-padding;
   }
-
+  
   @include respond-to(tiny-up) {
 
     @include span-columns(12);
@@ -72,7 +72,16 @@
     @include span-columns(8);
 
   }
+}
 
+.container-left-4 {
+  @extend %container-side;
+
+  @include respond-to(medium-up) {
+
+    @include span-columns(4);
+
+  }
 }
 
 .container-right,
@@ -84,7 +93,6 @@
     @include span-columns(5);
 
   }
-
 }
 
 .container-right-4 {
@@ -95,14 +103,26 @@
     @include span-columns(4);
 
   }
+}
 
+.container-right-8 {
+  @extend %container-side;
+
+  @include respond-to(medium-up) {
+
+    @include span-columns(8);
+
+  }
 }
 
 .container-half {
   @extend %container-side;
 
-  @include span-columns(6);
+  @include respond-to(medium-up) {
 
+    @include span-columns(6);
+    
+  }
 }
 
 .container-padded {

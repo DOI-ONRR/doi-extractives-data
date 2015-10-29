@@ -9,7 +9,7 @@ $medium: em(768);
 $large: em(990);
 $huge: em(1024);                                                                                                                                                              
 $huge-plus: $huge + $base-padding;
-$jumbo: em(1800);
+$jumbo: em(1500);
 
 $tiny-down: new-breakpoint(max-width $tiny);
 $tiny-up: new-breakpoint(min-width $tiny);

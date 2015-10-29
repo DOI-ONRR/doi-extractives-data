@@ -23,14 +23,9 @@ body {
 }
 
 .footnotes {
-  
-  a {
-    text-decoration: underline;
 
-    &:hover,
-    &:focus {
-      text-decoration: none;
-    }
+  a {
+    @extend .link-active;
   }
 
   ol {

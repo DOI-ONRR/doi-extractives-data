@@ -15,7 +15,7 @@
 
   h3 {
     @include heading(h1);
-    border-bottom: 4px solid #cccccc;
+    border-bottom: $regular-border-size solid $dark-gray;
     padding-bottom: 5px;
     margin-bottom: 8px;
   }
@@ -44,38 +44,13 @@
   }
 }
 
-.revenues_page-last {
-  padding-top: $base-padding-large;
-  padding-bottom: $base-padding-large;
+.revenues_page-forms_numbers {
+  border-bottom: 2px solid $dark-gray;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
 
-  h2 {
-    @include font-size(1.2);
-    color: $light-black;
-    font-weight: normal;
-    padding-top: 0;
-  }
-
-  ul li {
-    @include font-size(1.2);
-    display: inline-block;
-    font-weight: 200;
-    margin-right: $base-padding;
-
-    img {
-      height: 18px;
-      padding-right: 8px;
-    }
-  }
-
-  @include respond-to(medium-up) {
-    .revenues_page-last,
-    .revenues_subpage-last_intro {
-      @include span-columns(4 of 12);
-    }
-
-    ul {
-      @include span-columns(8 of 12);
-      @include omega();
-    }
+  span {
+    @include heading(h1);
+    line-height: 1.2;
   }
 }

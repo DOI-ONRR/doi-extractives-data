@@ -7,6 +7,14 @@
 // 
 // Styleguide elements.links
 
+%link {
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  transition: color 0.1s linear;
+}
+
+
 a,
 .link-alpha {
   border: none;
@@ -17,8 +25,8 @@ a,
   &:active,
   &:hover {
     text-decoration: none;
-    border-bottom: 1px dotted $base-link-color;
-    img{
+    border-bottom: $thin-border-size dotted $base-link-color;
+    img, i, span{
       border: none;
     }
   }
@@ -28,7 +36,7 @@ a,
   &.button-secondary {
     border: none;
   }
-  img {
+  img, i, span {
     border: none;
   }
 
@@ -39,9 +47,30 @@ a,
   &:active,
   &:hover {
     text-decoration: none;
-    border-bottom: 1px dotted $white;
-    img{
+    border-bottom: $thin-border-size dotted $white;
+    img, i, span{
       border: none;
     }
+  }
+}
+
+
+.link-active,
+.link-active-alpha {
+  @extend .link-alpha;
+  border-bottom: $thin-border-size dotted $base-link-color;
+}
+
+.link-active-beta {
+  @extend .link-beta;
+  border-bottom: $thin-border-size dotted $white;
+}
+
+a.link-no_under {
+  @extend %link;
+  border: none;
+  &:active,
+  &:hover {
+    border: none;
   }
 }

@@ -10,10 +10,51 @@
   background-size: 100%;
 
   &.onshore-oil{
-    background: url(/img/revenues/rev-onshore-oil.png) no-repeat;
-    background-position: 0 100px;
-    background-size: 100%;
-    margin-top: $base-padding-large;
+    background: #534136;
+    padding-top: $base-padding;
+    
+    @include respond-to(medium-up) {
+      background: url(/img/revenues/onshore-oil-top.png) top left no-repeat, url(/img/revenues/onshore-oil-bottom.png) bottom left no-repeat;
+      background-size: 100%, 100%;
+      padding-top: 50px;
+      position: relative;
+      height: 100%;
+      z-index: 2;
+      &:before {
+        content: '';
+        z-index: -1;
+        right: 0;
+        left: 0;
+        top: 362px;
+        bottom: 448px;
+        position: absolute;
+        background: url(/img/revenues/onshore-oil-middle.png) top left repeat-y;
+        background-size: 100%;
+      }
+
+    }
+
+    @include respond-to(large-up) {
+
+      &:before {
+        top: 467px;
+        bottom: 577px;
+      }
+    }
+
+    @include respond-to(huge-up) {
+      &:before {
+        top: 483px;
+        bottom: 597px;
+      }
+    }
+
+    @include respond-to(jumbo-up) {
+      &:before {
+        top: 708px;
+        bottom: 875px;
+      }
+    }
   }
 
   &.offshore-oil{
@@ -22,7 +63,7 @@
     padding-top: $base-padding;
     
     @include respond-to(medium-up) {
-      background: url(/img/revenues/offshore-oil-top-long.png) top left no-repeat, url(/img/revenues/offshore-oil-bottom-long.png) bottom left no-repeat;
+      background: url(/img/revenues/offshore-oil-top.png) top left no-repeat, url(/img/revenues/offshore-oil-bottom.png) bottom left no-repeat;
       background-size: 100%, 100%;
       padding-top: 50px;
       position: relative;

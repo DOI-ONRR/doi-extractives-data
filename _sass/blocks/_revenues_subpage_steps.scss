@@ -4,14 +4,29 @@
 //
 // Styleguide blocks.revenues_subpage_steps
 
+$onshore-oil-primary-color: #534136;
+$onshore-oil-secondary-color: #c5403c;
+$offshore-oil-primary-color: #b3e4f9;
+$offshore-oil-secondary-color: $blue;
+$coal-primary-color: #534136;
+$coal-secondary-color: #c5403c;
+
+
 .revenues_subpage-steps {
   
   background-position: 0 0;
   background-size: 100%;
 
   &.onshore-oil{
-    background: #534136;
+    background: $onshore-oil-primary-color;
     padding-top: $base-padding;
+
+    .revenues_subpage-dyk_heading {
+      background-color: $onshore-oil-secondary-color;
+    }
+    .revenues_subpage-steps_heading {
+      color: $onshore-oil-secondary-color;
+    }
     
     @include respond-to(medium-up) {
       background: url(/img/revenues/onshore-oil-top.png) top left no-repeat, url(/img/revenues/onshore-oil-bottom.png) bottom left no-repeat;
@@ -59,9 +74,16 @@
 
   &.offshore-oil{
 
-    background: #b3e4f9;
+    background: $offshore-oil-primary-color;
     padding-top: $base-padding;
     
+    .revenues_subpage-dyk_heading {
+      background-color: $offshore-oil-secondary-color;
+    }
+    .revenues_subpage-steps_heading {
+      color: $offshore-oil-secondary-color;
+    }
+
     @include respond-to(medium-up) {
       background: url(/img/revenues/offshore-oil-top.png) top left no-repeat, url(/img/revenues/offshore-oil-bottom.png) bottom left no-repeat;
       background-size: 100%, 100%;
@@ -149,7 +171,7 @@
 
 .revenues_subpage-dyk_heading {
   color: $white;
-  background-color: $blue;
+  background-color: $offshore-oil-secondary-color;
   padding: $base-padding;
   margin: 0;
   text-align: center;
@@ -231,7 +253,6 @@
   margin-right: 8px;
   padding-left: 11px;
   padding-top: 8px;
-
-  
 }
+
 

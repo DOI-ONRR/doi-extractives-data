@@ -85,11 +85,11 @@ permalink: /resource_revenues/
 
       <article class="card card-secondary">
 
-        <a href="/resource_revenues/hardrock"><div class="card-splash">
+        <a href="/resource_revenues/minerals"><div class="card-splash">
           <h3 class="card-splash_title">Hardock <br>Minerals <span class="revenues-fa"><i class="fa fa-chevron-right"></i></span></h3>
 
           <div class="card-splash_image">
-            <img src="{{ site.baseurl }}/img/icons/hardrock.svg" alt="hardrock minerals">
+            <img src="{{ site.baseurl }}/img/icons/hardrock.svg" alt="minerals">
           </div>
         </div></a>
 
@@ -97,7 +97,7 @@ permalink: /resource_revenues/
 
           <p>Gold, copper and iron are the chief sources of hardrock-mineral revenues in the U.S. Hardrock minerals contain metals such as these and silver, zinc, nickel, tin, and lead. In 2013, U.S. metal production totaled $32 billion in value.</p>
 
-          <a class="card-link" href="/resource_revenues/hardrock">Visit this page <span class="shrink-fa"><i class="fa fa-chevron-right"></i></span></a>
+          <a class="card-link" href="/resource_revenues/minerals">Visit this page <span class="shrink-fa"><i class="fa fa-chevron-right"></i></span></a>
 
         </div>
 
@@ -204,7 +204,7 @@ permalink: /resource_revenues/
       <ul>
         <li><a href="/coal"><img src="{{ site.baseurl }}/img/icons/coal.svg" alt="coal">Coal</a></li>
         <li><a href="/resource_revenues/offshore_oil_gas"><img src="{{ site.baseurl }}/img/icons/oil.svg" alt="coal">Oil &amp; Gas</a></li>
-        <li><a href="#"><img src="{{ site.baseurl }}/img/icons/hardrock.svg" alt="coal">Hardrock Minerals</a></li>
+        <li><a href="#"><img src="{{ site.baseurl }}/img/icons/hardrock.svg" alt="coal">Non-Energy Minerals</a></li>
         <li><a href="/resource_revenues/onshore_renewables"><img src="{{ site.baseurl }}/img/icons/renewables.svg" alt="coal">Renewables</a></li>
       </ul>
 

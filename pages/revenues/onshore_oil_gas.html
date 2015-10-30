@@ -4,48 +4,46 @@ layout: default
 permalink: /resource_revenues/onshore_oil_gas/
 ---
 
-  <section class="revenues_subpage-nav container">
-    <div>
-      <a class="revenues_subpage-back" href="{{ site.baseurl }}/resource_revenues/"><i class="fa fa-chevron-left"></i> Back <span>to revenues overview</span></a>
+<section class="revenues_subpage-nav container">
+  <div>
+    <a class="revenues_subpage-back" href="{{ site.baseurl }}/resource_revenues/"><i class="fa fa-chevron-left"></i> Back <span>to revenues overview</span></a>
+  </div>
+
+  <div class="revenues_subpage-tabs">
+    <ul>
+        <li class="revenues_subpage-tab active">
+          <a href="{{ site.baseurl }}/resource_revenues/offshore_oil_gas/">Offshore</a>
+        </li>
+        </a>
+        <li class="revenues_subpage-tab">
+          <a href="{{ site.baseurl }}/resource_revenues/onshore_oil_gas/">Onshore</a>
+        </li>
+    </ul>
+  </div>
+</section>
+
+<section class="slab-beta">
+
+    <div class="container-outer revenues_subpage-intro">
+      {% include revenues/onshore_oil_gas_intro.html %}
     </div>
 
-    <div class="revenues_subpage-tabs">
-      <ul>
-          <li class="revenues_subpage-tab active">
-            <a href="{{ site.baseurl }}/resource_revenues/offshore_oil_gas/">Offshore</a>
-          </li>
-          </a>
-          <li class="revenues_subpage-tab">
-            <a href="{{ site.baseurl }}/resource_revenues/onshore_oil_gas/">Onshore</a>
-          </li>
-      </ul>
+    <div class="revenues_subpage-steps onshore-oil">
+      {% include revenues/onshore_oil_gas_steps.html %}
     </div>
-  </section>
+</section>
 
-  <section class="slab-beta">
+<div class="slab-beta revenues_page-forms">
+  {% include revenues/onshore_oil_gas_forms.html %}
+</div>
 
-      <div class="container-outer revenues_subpage-intro">
-        {% include revenues/onshore_oil_gas_intro.html %}
-      </div>
+<div class="slab-alpha revenues_subpage-involved">
+  {% include revenues/onshore_oil_gas_involved.html %}
+</div>
 
-      <div class="revenues_subpage-steps onshore-oil">
-        {% include revenues/onshore_oil_gas_steps.html %}
-      </div>
-  </section>
+<div class="container-outer revenues_page-footer">
 
-  <div class="slab-beta revenues_page-forms">
-    {% include revenues/onshore_oil_gas_forms.html %}
-  </div>
-
-  <div class="slab-alpha revenues_subpage-involved">
-    {% include revenues/onshore_oil_gas_involved.html %}
-  </div>
-
-  <div class="container-outer revenues_page-footer">
-
-      {% include revenues/revenues-footer.html %}
-
-  </div>
+    {% include revenues/revenues-footer.html %}
 
 </div>
 

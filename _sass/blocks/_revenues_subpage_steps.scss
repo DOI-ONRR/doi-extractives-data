@@ -313,15 +313,13 @@ $minerals-secondary-color: #c5403c;
   @include respond-to(medium-up) {
     @include span-columns(7);
     @include shift(2);
+    padding-bottom: 6.225em; // 100px twice $base-padding-extra;
   }
 
   @include respond-to(huge-up) {
     padding-right: 0px;
   }
-
-  &:last-of-type {
-    padding-bottom: $base-padding;
-  }
+  
 }
 
 .revenues_subpage-steps_group_item {

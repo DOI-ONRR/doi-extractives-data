@@ -10,7 +10,8 @@ $offshore-oil-primary-color: #b3e4f9;
 $offshore-oil-secondary-color: $blue;
 $coal-primary-color: #534136;
 $coal-secondary-color: #c5403c;
-
+$minerals-primary-color: #534136;
+$minerals-secondary-color: #c5403c;
 
 .revenues_subpage-steps {
   
@@ -145,7 +146,6 @@ $coal-secondary-color: #c5403c;
 
   &.coal{
     
-
     background: $coal-primary-color;
     padding-top: $base-padding;
     
@@ -200,10 +200,59 @@ $coal-secondary-color: #c5403c;
     }
   }
 
-  &.rev-hardrock{
-    background: url(/img/revenues/rev-hardrock.svg) no-repeat;
-    background-position: 0 100px;
-    background-size: 100%;
+  &.minerals{
+    background: $minerals-primary-color;
+    padding-top: $base-padding;
+    
+    .revenues_subpage-dyk_heading {
+      background-color: $minerals-secondary-color;
+    }
+    .revenues_subpage-steps_heading {
+      color: $minerals-secondary-color;
+    }
+
+    @include respond-to(medium-up) {
+      background: url(/img/revenues/minerals-top.png) top left no-repeat, url(/img/revenues/minerals-bottom.png) bottom left no-repeat;
+      background-size: 100%, 100%;
+      padding-top: 50px;
+      position: relative;
+      height: 100%;
+      z-index: 2;
+      &:before {
+        content: '';
+        z-index: -1;
+        right: 0;
+        left: 0;
+        top: 403px;
+        bottom: 630px;
+        position: absolute;
+        background: url(/img/revenues/minerals-middle.png) top left repeat-y;
+        background-size: 100%;
+      }
+    }
+
+    @include respond-to(large-up) {
+
+      &:before {
+        top: 519px;
+        bottom: 812px;
+      }
+    }
+
+    @include respond-to(huge-up) {
+      &:before {
+        top: 537px;
+        bottom: 840px;
+      }
+    }
+
+    @include respond-to(jumbo-up) {
+      background: url(/img/revenues/minerals.png) no-repeat;
+      background-size: 100%;
+      &:before {
+        background: none;
+      }
+    }
   }
 }
 

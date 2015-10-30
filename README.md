@@ -44,6 +44,46 @@ npm install --dev
 npm test
 ```
 
+## Code Style
+We use [Hound CI](https://houndci.com/) to enforce SCSS and JavaScript
+formatting conventions on new commits. You can run both of the linters with:
+
+```sh
+npm run lint
+```
+
+This runs both of the linters below in series.
+
+#### JavaScript Linting
+Hound uses [jshint](http://jshint.com/), which you can install as part of the
+npm package's `devDependencies` with:
+
+```sh
+npm install --dev
+```
+
+Or you can install it globally with `npm i -g jshint`. Then, to lint the
+JavaScript, run:
+
+```sh
+npm run lint-js
+```
+
+#### SCSS Linting
+Hound uses [scss-lint](https://github.com/brigade/scss-lint), which you can
+install with `gem install scss_lint` if you haven't already run `bundle
+install` to get Jekyll and its dependencies. To lint the SCSS files, run:
+
+```sh
+bundle exec scss-lint -c .scss-lint.yml
+```
+
+or simply:
+
+```sh
+npm run lint-scss
+```
+
 ## Roadmap
 Broadly, we are working now on:
 

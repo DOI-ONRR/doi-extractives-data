@@ -297,7 +297,7 @@ $minerals-secondary-color: #c5403c;
 
 
 .revenues_subpage-steps_group {
-
+  padding-bottom: $base-padding;
   p {
 
     @include respond-to(medium-up) {

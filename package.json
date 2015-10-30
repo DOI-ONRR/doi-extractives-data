@@ -40,9 +40,9 @@
     "watch": "watchy -w '_sass' -- npm run build-styleguide",
     "build-styleguide": "rm -rf styleguide && kss-node --config kss-config.json",
     "init-styleguide": "npm-exec kss-node --config kss-config.json",
-    "lint": "npm run lint-js; npm run lint-scss",
-    "lint-js": "jshint -c .jshintrc --exclude-path .jshintignore js",
-    "lint-scss": "bundle exec scss-lint -c .scss-lint.yml"
+    "lint": "(npm run lint-js; npm run lint-scss) || echo '(there were linting errors)'",
+    "lint-js": "jshint -c .jshintrc --exclude-path .jshintignore js || echo '(there were JavaScript linting errors)'",
+    "lint-scss": "bundle exec scss-lint -c .scss-lint.yml || echo '(there were SCSS linting errors)'"
   },
   "repository": {
     "type": "git",

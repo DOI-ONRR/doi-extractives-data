@@ -86,6 +86,7 @@ permalink: /resource_revenues/
       <article class="card card-secondary">
 
         <a href="/resource_revenues/minerals/"><div class="card-splash">
+
           <h3 class="card-splash_title">Hardock <br>Minerals <span class="revenues-fa"><i class="fa fa-chevron-right"></i></span></h3>
 
           <div class="card-splash_image">

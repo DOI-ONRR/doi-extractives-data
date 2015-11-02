@@ -11,8 +11,6 @@
 // Styleguide layout.container
 .container {
   @include outer-container($max-width);
-
-
 }
 
 .container-outer {
@@ -30,7 +28,7 @@
     padding-left: 0;
     padding-right: 0;
   }
-  
+
 }
 
 %container-side {

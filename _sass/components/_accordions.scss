@@ -51,13 +51,13 @@
   margin: 0;
   right: $base-padding;
   
-
   &:after {
     font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
     text-decoration: inherit;
   } 
+  
   @include respond-to(medium-up) {
     display: none;
   }

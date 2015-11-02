@@ -14,10 +14,10 @@
 //
 // Styleguide components.accordions
 
-['accordion-item'] {
+[accordion-item] {
   position: relative;
 
-  &['accordion-open'='true'] {
+  &[accordion-open=true] {
     .accordion-button:after {
       content: "\f077";
     }
@@ -27,7 +27,7 @@
     }
   }
 
-  &['accordion-open'='false'] {
+  &[accordion-open=false] {
     .accordion-button:after {
       content: "\f078";
     }

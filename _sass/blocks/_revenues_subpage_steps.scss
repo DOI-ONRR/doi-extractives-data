@@ -73,6 +73,12 @@ $onshore-renewables-secondary-color: $blue;
     
   }
 
+  ul {
+    @include respond-to(medium-up) {
+      padding-left: 76px;
+    }
+  }
+
   @include respond-to(medium-up) {
     @include span-columns(7);
     @include shift(2);

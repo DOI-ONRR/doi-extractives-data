@@ -15,28 +15,28 @@
 // Styleguide components.accordions
 
 [accordion-item] {
-	position: relative;
+  position: relative;
 
-	&[accordion-open=true] {
-	  .accordion-button:after {
-	  	content: "\f077";
-		}
+  &[accordion-open=true] {
+    .accordion-button:after {
+      content: "\f077";
+    }
 
-		.accordion-content {
-			display: inline-block;
-		}
+    .accordion-content {
+      display: inline-block;
+    }
   }
 
   &[accordion-open=false] {
-	  .accordion-button:after {
-	  	content: "\f078";
-		}
-		.accordion-content {
-			display: none;
-			@include respond-to(medium-up) {
-				display: inline-block;
-			}
-		}
+    .accordion-button:after {
+      content: "\f078";
+    }
+    .accordion-content {
+      display: none;
+      @include respond-to(medium-up) {
+        display: inline-block;
+      }
+    }
   }
 
 
@@ -53,13 +53,13 @@
   
 
   &:after {
-  	font-family: FontAwesome;
-	  font-style: normal;
-	  font-weight: normal;
-	  text-decoration: inherit;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
   } 
   @include respond-to(medium-up) {
-		display: none;
-	}
+    display: none;
+  }
 }
 

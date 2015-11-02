@@ -9,32 +9,28 @@
 // .container-padded - full width container with padding
 //
 // Styleguide layout.container
-<<<<<<< HEAD
 .container {
   @include outer-container($max-width);
 
 
-=======
-.container{
-
-  @include outer-container($max-width);
-
->>>>>>> e247dabb7a764acd007a5a96dd9dfb6c43c89dd3
 }
 
 .container-outer {
   @extend .container;
   padding-left: $base-padding;
   padding-right: $base-padding;
+
   @include respond-to(huge-plus) {
     margin-left: $base-padding;
     margin-right: $base-padding;
     
   }
+
   @include respond-to(huge-up) {
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 0;
+    padding-right: 0;
   }
+  
 }
 
 %container-side {
@@ -85,15 +81,9 @@
   @extend %container-side;
 
   @include respond-to(medium-up) {
-<<<<<<< HEAD
 
     @include span-columns(4);
 
-=======
-
-    @include span-columns(4);
-
->>>>>>> e247dabb7a764acd007a5a96dd9dfb6c43c89dd3
   }
 }
 

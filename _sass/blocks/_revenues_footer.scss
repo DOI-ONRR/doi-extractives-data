@@ -1,6 +1,6 @@
 .revenues_page-footer {
-  padding-top: $base-padding-large;
   padding-bottom: $base-padding-large;
+  padding-top: $base-padding-large;
 
   h2 {
     @include font-size(1.2);
@@ -9,7 +9,7 @@
     padding-top: 0;
   }
 
-  ul li {
+  li {
     @include font-size(1.2);
     display: inline-block;
     font-weight: 200;
@@ -21,14 +21,4 @@
     }
   }
 
-  @include respond-to(medium-up) {
-    .revenues_page-last {
-      @include span-columns(4 of 12);
-    }
-
-    ul {
-      @include span-columns(8 of 12);
-      @include omega();
-    }
-  }
 }

@@ -1,5 +1,5 @@
 // Header
-// 
+//
 // This is on the top of every page. Find in _includes/layout/header.html
 //
 // Markup:
@@ -37,23 +37,19 @@ header,
 .header-image_link {
   &:hover,
   &:focus {
-    text-decoration: none;
     border: none;
+    text-decoration: none;
   }
 }
 
 .header-image {
-  margin-top: $base-padding/2;
+  margin-top: $base-padding / 2;
   width: 280px;
 }
 
 .header-nav {
   @include span-columns(8);
   @include omega();
-}
-
-.header-nav_inner {
-
 }
 
 .header-nav_item {
@@ -63,21 +59,23 @@ header,
 }
 
 .header-nav_item_link {
+
+  @include font-size(0.8);
+
   color: $dark-gray;
   font-weight: $weight-light;
+  letter-spacing: 2px;
   text-decoration: none;
   text-transform: uppercase;
-  letter-spacing: 2px;
-  @include font-size(.8);
 }
 
 .header-glossary {
-  position: fixed;
-  right: 0px;
+  background-color: $white;
   border: 1px solid $mid-gray;
   padding: $base-padding;
   padding-left: $base-padding-extra;
   padding-right: $base-padding-extra;
+  position: fixed;
+  right: 0;
   z-index: $z-mid;
-  background-color: $white;
 }

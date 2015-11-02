@@ -1,3 +1,19 @@
+// Accordions
+//
+// Togglable accordion. Button is visible only in 
+// screen sizes smaller than medium
+//
+// Markup: 
+// <ul accordion>
+//    <li accordion-item accordion-open="true">
+//        <h3>Heading</h3>
+//        <button class="accordion-button" accordion-button></button>
+//        <div class="accordion-content">Accordion Content</div
+//    </li>
+// </ul>
+//
+// Styleguide components.accordions
+
 [accordion-item] {
 	position: relative;
 

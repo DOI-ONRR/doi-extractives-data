@@ -5,7 +5,7 @@
   padding-top: $base-padding;
   
   &.onshore-oil{
-    background: $onshore-oil-primary-color;;
+    background: $onshore-oil-primary-color;
 
     .revenues_subpage-dyk_heading {
       background-color: $onshore-oil-secondary-color;
@@ -15,7 +15,7 @@
     }
     
     @include respond-to(medium-up) {
-      background: url(/img/revenues/onshore-oil-top.png) top left no-repeat, url(/img/revenues/onshore-oil-bottom.png) bottom left no-repeat;
+      background: url('../img/revenues/onshore-oil-top.png') top left no-repeat, url('../img/revenues/onshore-oil-bottom.png') bottom left no-repeat;
       background-size: 100%, 100%;
       padding-top: 50px;
       position: relative;
@@ -29,7 +29,7 @@
         top: 362px;
         bottom: 448px;
         position: absolute;
-        background: url(/img/revenues/onshore-oil-middle.png) top left repeat-y;
+        background: url('../img/revenues/onshore-oil-middle.png') top left repeat-y;
         background-size: 100%;
       }
 
@@ -60,7 +60,7 @@
 
   &.offshore-oil{
 
-    background: $offshore-oil-primary-color;;
+    background: $offshore-oil-primary-color;
     
     .revenues_subpage-dyk_heading {
       background-color: $offshore-oil-secondary-color;
@@ -70,7 +70,7 @@
     }
 
     @include respond-to(medium-up) {
-      background: url(/img/revenues/offshore-oil-top.png) top left no-repeat, url(/img/revenues/offshore-oil-bottom.png) bottom left no-repeat;
+      background: url('../img/revenues/offshore-oil-top.png') top left no-repeat, url('../img/revenues/offshore-oil-bottom.png') bottom left no-repeat;
       background-size: 100%, 100%;
       padding-top: 50px;
       position: relative;
@@ -84,7 +84,7 @@
         top: 362px;
         bottom: 448px;
         position: absolute;
-        background: url(/img/revenues/offshore-oil-middle.png) top left repeat-y;
+        background: url('../img/revenues/offshore-oil-middle.png') top left repeat-y;
         background-size: 100%;
       }
 
@@ -125,9 +125,8 @@
     }
 
     @include respond-to(medium-up) {
-      background: url(/img/revenues/renew-onshore.svg) bottom left no-repeat;
+      background: url('../img/revenues/renew-onshore.svg') bottom left no-repeat;
       background-size: 100%;
-      // margin-top: 0;
     }
   }
 
@@ -141,15 +140,14 @@
     }
 
     @include respond-to(medium-up) {
-      background: url(/img/revenues/renew-offshore.svg) bottom left no-repeat;
+      background: url('../img/revenues/renew-offshore.svg') bottom left no-repeat;
       background-size: 100%;
-      // margin-top: 0;
     }
   }
 
   &.coal{
     
-    background: $coal-primary-color;;
+    background: $coal-primary-color;
     
     .revenues_subpage-dyk_heading {
       background-color: $coal-secondary-color;
@@ -159,7 +157,7 @@
     }
 
     @include respond-to(medium-up) {
-      background: url(/img/revenues/coal-top.png) top left no-repeat, url(/img/revenues/coal-bottom.png) bottom left no-repeat;
+      background: url('../img/revenues/coal-top.png') top left no-repeat, url('../img/revenues/coal-bottom.png') bottom left no-repeat;
       background-size: 100%, 100%;
       padding-top: 50px;
       position: relative;
@@ -173,7 +171,7 @@
         top: 377px;
         bottom: 603px;
         position: absolute;
-        background: url(/img/revenues/coal-middle.png) top left repeat-y;
+        background: url('../img/revenues/coal-middle.png') top left repeat-y;
         background-size: 100%;
       }
 
@@ -203,7 +201,7 @@
   }
 
   &.minerals{
-    background: $minerals-primary-color;;
+    background: $minerals-primary-color;
     
     .revenues_subpage-dyk_heading {
       background-color: $minerals-secondary-color;
@@ -213,7 +211,7 @@
     }
 
     @include respond-to(medium-up) {
-      background: url(/img/revenues/minerals-top.png) top left no-repeat, url(/img/revenues/minerals-bottom.png) bottom left no-repeat;
+      background: url('../img/revenues/minerals-top.png') top left no-repeat, url('../img/revenues/minerals-bottom.png') bottom left no-repeat;
       background-size: 100%, 100%;
       padding-top: 50px;
       position: relative;
@@ -227,7 +225,7 @@
         top: 403px;
         bottom: 630px;
         position: absolute;
-        background: url(/img/revenues/minerals-middle.png) top left repeat-y;
+        background: url('../img/revenues/minerals-middle.png') top left repeat-y;
         background-size: 100%;
       }
     }
@@ -248,7 +246,7 @@
     }
 
     @include respond-to(jumbo-up) {
-      background: url(/img/revenues/minerals.png) no-repeat;
+      background: url('../img/revenues/minerals.png') no-repeat;
       background-size: 100%;
       &:before {
         background: none;

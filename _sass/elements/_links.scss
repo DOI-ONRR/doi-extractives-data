@@ -24,6 +24,7 @@ a,
   &:hover {
     text-decoration: none;
     border-bottom: $thin-border-size dotted $base-link-color;
+
     img, 
     i, 
     span {
@@ -36,6 +37,7 @@ a,
   &.button-secondary {
     border: none;
   }
+  
   img, 
   i, 
   span {
@@ -51,6 +53,7 @@ a,
   &:hover {
     text-decoration: none;
     border-bottom: $thin-border-size dotted $white;
+
     img, 
     i, 
     span {
@@ -73,7 +76,7 @@ a,
 a.link-no_under {
   @extend %link;
   border: none;
-  
+
   &:active,
   &:hover {
     border: none;

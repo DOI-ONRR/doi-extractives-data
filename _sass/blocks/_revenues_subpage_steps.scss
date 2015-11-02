@@ -80,7 +80,7 @@ $onshore-renewables-secondary-color: $blue;
   }
 
   @include respond-to(huge-up) {
-    padding-right: 0px;
+    padding-right: 0;
   }
   
 }

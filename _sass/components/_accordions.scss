@@ -14,10 +14,10 @@
 //
 // Styleguide components.accordions
 
-[accordion-item] {
+['accordion-item'] {
   position: relative;
 
-  &[accordion-open=true] {
+  &['accordion-open'='true'] {
     .accordion-button:after {
       content: "\f077";
     }
@@ -27,15 +27,17 @@
     }
   }
 
-  &[accordion-open=false] {
+  &['accordion-open'='false'] {
     .accordion-button:after {
       content: "\f078";
     }
     .accordion-content {
-      display: none;
+
       @include respond-to(medium-up) {
         display: inline-block;
       }
+
+      display: none; 
     }
   }
 
@@ -46,10 +48,10 @@
   background-size: 50%;
   background-color: transparent;
   height: 2rem;
-  width: 2rem;
-  position: absolute;
   margin: 0;
+  position: absolute;
   right: $base-padding;
+  width: 2rem;
   
   &:after {
     font-family: FontAwesome;
@@ -57,7 +59,7 @@
     font-weight: normal;
     text-decoration: inherit;
   } 
-  
+
   @include respond-to(medium-up) {
     display: none;
   }

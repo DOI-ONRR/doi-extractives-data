@@ -21,7 +21,6 @@
   @include respond-to(huge-plus) {
     margin-left: $base-padding;
     margin-right: $base-padding;
-    
   }
 
   @include respond-to(huge-up) {

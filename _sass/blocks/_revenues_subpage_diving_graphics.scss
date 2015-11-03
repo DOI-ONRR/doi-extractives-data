@@ -159,7 +159,6 @@
     @include respond-to(medium-up) {
       background: url('../img/revenues/coal-top.png') top left no-repeat, url('../img/revenues/coal-bottom.png') bottom left no-repeat;
       background-size: 100%, 100%;
-      padding-top: 50px;
       position: relative;
       height: 100%;
       z-index: 2;
@@ -193,9 +192,12 @@
     }
 
     @include respond-to(jumbo-up) {
+
+      background: url('../img/revenues/coal-wide.png') no-repeat;
+      background-size: 185%;
+      background-position-x: -500px;
       &:before {
-        top: 737px;
-        bottom: 1178px;
+        background: none;
       }
     }
   }

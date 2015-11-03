@@ -40,16 +40,21 @@ testable: true
 #   id: Internal team identifier/user name
 #   role: Team member's role; leads should be designated as 'lead'
 team:
-- github: meiqimichelle
+- id: mhz
+  github: meiqimichelle
   role: 18F Product Lead
 - id: shawn
+  github: shawnbot
   role: Developer
-- github: gemfarmer
+- id: brian
+  github: gemfarmer
   role: Developer
-- github: ericronne
+- id: ericronne
+  github: ericronne
   role: 18F Designer, UX
-- github: nicoleslaw
-  role: Front-End Developer
+- id: nicole.fenton
+  github: nicoleslaw
+  role: Content Designer
 
 # Partners for whom the project is developed
 partners:
@@ -64,9 +69,10 @@ milestones:
 
 # Technologies used to build the project
 stack:
-- Javascript
+- JavaScript
 - D3
 - Federalist
+- Jekyll
 
 # Brief description of the project's outcomes
 impact: >

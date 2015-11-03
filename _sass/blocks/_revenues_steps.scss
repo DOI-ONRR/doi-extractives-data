@@ -6,16 +6,23 @@
 
 .revenues_steps-heading {
 
+  @include respond-to(medium-down) {
+    
+    @include heading(h4);
+  
+  }
+
   @include respond-to(tiny-down) {
+
     @include heading(h5);
+    
     font-weight: $weight-light;
   }
 
-  @include respond-to(medium-down) {
-    @include heading(h4);
-  }
+  
 
   @include heading(h1);
+  
   color: $red;
   display: inline;
   padding-right: 8px;

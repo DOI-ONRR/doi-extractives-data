@@ -1,35 +1,55 @@
 // Revenues Subpage Nav
 //
-// 
+// This block styles the tags that enable navigation between
+// like subpages
 //
 // Styleguide blocks.revenues_subpage_nav
 
-.revenues-subpage-nav {
-  border-bottom: 1px solid $mid-gray;
-  position: relative;
 
+.revenues_subpage-nav {
+  padding-left: $base-padding;
+  padding-right: $base-padding;
+  @include respond-to(medium-up) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
   a {
     color: $light-black;
   }
+}
+.revenues_subpage-nav {
+  span {
+    display: none;
+    @include respond-to(medium-up) {
+      display: inline-block;
+    }
+  }
+}
+.revenues_subpage-tabs {
+  border-bottom: 1px solid $mid-gray;
+  position: relative;
 
   ul {
     position: absolute;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%,-97%);
-    li {
-      display: inline-block;
-      font-weight: 200;
-      padding: 8px 10px;
-
-      &.active {
-        background-color: $light-gray;
-        border-top: 1px solid $mid-gray;
-        border-right: 1px solid $mid-gray;
-        border-left: 1px solid $mid-gray;
-        font-weight: normal;
-      }
-
-    }
+    
   }
 }
+.revenues_subpage-tab {
+  display: inline-block;
+  font-weight: 200;
+  padding: 8px 10px;
+
+  &.active {
+    background-color: $light-gray;
+    border-top: 1px solid $mid-gray;
+    border-right: 1px solid $mid-gray;
+    border-left: 1px solid $mid-gray;
+    font-weight: normal;
+  }
+
+}
+

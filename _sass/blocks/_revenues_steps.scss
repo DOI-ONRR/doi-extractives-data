@@ -5,14 +5,44 @@
 // Styleguide blocks.revenues_steps
 
 .revenues_steps-heading {
-	@include heading(h1);
+
+  @include respond-to(medium-down) {
+    
+    @include heading(h4);
+  
+  }
+
+  @include respond-to(tiny-down) {
+
+    @include heading(h5);
+    
+    font-weight: $weight-light;
+  }
+
+  
+
+  @include heading(h1);
+  
   color: $red;
   display: inline;
   padding-right: 8px;
   font-weight: $weight-light;
+
+
 }
 
 .revenues_steps-number {
+
+  @include respond-to(tiny-down) {
+    @include font-size(1.125);
+    padding-left: 14px;
+  }
+
+  @include respond-to(medium-down) {
+    @include font-size(1.5);
+    padding-right: 15px;
+  }
+
   @include font-size(1.8);
   background-color: $white;
   border-radius: 50%;
@@ -24,14 +54,9 @@
   width: 43px;
 }
 
-.revenues-steps-group {
+.revenues_steps-group {
   display: table;
   width: 100%;
-
-  @include respond-to(medium-up) {
-    @include span-columns(10);
-    @include shift(1);
-  }
 }
 
 .revenues_steps-group_item {

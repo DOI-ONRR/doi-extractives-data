@@ -45,7 +45,7 @@ permalink: /resource_revenues/
 
       <article class="card card-secondary">
 
-        <a href="/resource_revenues/coal"><div class="card-splash">
+        <a href="{{ site.baseurl }}/resource_revenues/coal/"><div class="card-splash">
           <h3 class="card-splash_title">Coal <span class="revenues-fa"><i class="fa fa-chevron-right"></i></span></h3>
 
           <div class="card-splash_image">
@@ -57,7 +57,7 @@ permalink: /resource_revenues/
 
           <p>Fossil fuels like coal are the main source of electricity in the U.S. Coal forms in the ground in seams or beds over tens of millions of years. Miners extract coal through surface and underground mining.</p>
 
-          <a class="card-link" href="/resource_revenues/coal">Visit this page <span class="shrink-fa"><i class="fa fa-chevron-right"></i></span></a>
+          <a class="card-link" href="{{ site.baseurl }}/resource_revenues/coal/">Visit this page <span class="shrink-fa"><i class="fa fa-chevron-right"></i></span></a>
 
         </div>
 
@@ -65,7 +65,7 @@ permalink: /resource_revenues/
 
       <article class="card card-secondary">
 
-        <a href="/resource_revenues/offshore_oil_gas"><div class="card-splash">
+        <a href="{{ site.baseurl }}/resource_revenues/offshore_oil_gas/"><div class="card-splash">
           <h3 class="card-splash_title">Oil &amp; Gas <span class="revenues-fa"><i class="fa fa-chevron-right"></i></span></h3>
 
           <div class="card-splash_image">
@@ -77,7 +77,7 @@ permalink: /resource_revenues/
 
           <p>Oil and gas are fossil fuels. Oil forms in underground reservoirs, taking tens of millions of years. Gas – or “natural gas” – forms over thousands of years, both on land and offshore.</p>
 
-          <a class="card-link" href="/resource_revenues/offshore_oil_gas">Visit this page <span class="shrink-fa"><i class="fa fa-chevron-right"></i></span></a>
+          <a class="card-link" href="{{ site.baseurl }}/resource_revenues/offshore_oil_gas/">Visit this page <span class="shrink-fa"><i class="fa fa-chevron-right"></i></span></a>
 
         </div>
 
@@ -85,11 +85,11 @@ permalink: /resource_revenues/
 
       <article class="card card-secondary">
 
-        <a href="/resource_revenues/hardrock"><div class="card-splash">
-          <h3 class="card-splash_title">Hardock <br>Minerals <span class="revenues-fa"><i class="fa fa-chevron-right"></i></span></h3>
+        <a href="{{ site.baseurl }}/resource_revenues/minerals/"><div class="card-splash">
+          <h3 class="card-splash_title">Nonenergy <br>Minerals <span class="revenues-fa"><i class="fa fa-chevron-right"></i></span></h3>
 
           <div class="card-splash_image">
-            <img src="{{ site.baseurl }}/img/icons/hardrock.svg" alt="hardrock minerals">
+            <img src="{{ site.baseurl }}/img/icons/hardrock.svg" alt="minerals">
           </div>
         </div></a>
 
@@ -97,7 +97,7 @@ permalink: /resource_revenues/
 
           <p>Gold, copper and iron are the chief sources of hardrock-mineral revenues in the U.S. Hardrock minerals contain metals such as these and silver, zinc, nickel, tin, and lead. In 2013, U.S. metal production totaled $32 billion in value.</p>
 
-          <a class="card-link" href="/resource_revenues/hardrock">Visit this page <span class="shrink-fa"><i class="fa fa-chevron-right"></i></span></a>
+          <a class="card-link" href="{{ site.baseurl }}/resource_revenues/minerals/">Visit this page <span class="shrink-fa"><i class="fa fa-chevron-right"></i></span></a>
 
         </div>
 
@@ -105,7 +105,7 @@ permalink: /resource_revenues/
 
       <article class="card card-secondary">
 
-        <a href="/resource_revenues/offshore_renewables"><div class="card-splash">
+        <a href="{{ site.baseurl }}/resource_revenues/offshore_renewables/"><div class="card-splash">
           <h3 class="card-splash_title">Renewables <span class="revenues-fa"><i class="fa fa-chevron-right"></i></span></h3>
 
           <div class="card-splash_image">
@@ -117,7 +117,7 @@ permalink: /resource_revenues/
 
           <p>Environmentally sustainable energy sources like solar and wind play an ever increasing role in meeting our country’s electricity needs. Solar energy converts solar radiation into heat and electricity, while wind powers turbines.</p>
 
-          <a class="card-link" href="/resource_revenues/offshore_renewables">Visit this page <span class="shrink-fa"><i class="fa fa-chevron-right"></i></span></a>
+          <a class="card-link" href="{{ site.baseurl }}/resource_revenues/offshore_renewables/">Visit this page <span class="shrink-fa"><i class="fa fa-chevron-right"></i></span></a>
 
         </div>
 
@@ -165,11 +165,11 @@ permalink: /resource_revenues/
     </section>
   </div>
 
-  <div class="revenues-section-forms">
+  <div class="revenues_page-forms">
     <section class="container">
       <h2 class="h1">&#8230; and the money collected takes one of several forms.</h2>
 
-      <div class="revenues-section-forms-options">
+      <div class="revenues_page-forms_options">
 
         <div>
           <h3>Bonus</h3>
@@ -195,16 +195,16 @@ permalink: /resource_revenues/
     </section>
   </div>
 
-  <div class="revenues-section-last">
+  <div class="revenues_page-last">
     <section class="container">
 
-      <h2 class="revenues-section-last-intro">Choose a resource to explore:</h2>
+      <h2>Choose a resource to explore:</h2>
 
 
       <ul>
         <li><a href="/coal"><img src="{{ site.baseurl }}/img/icons/coal.svg" alt="coal">Coal</a></li>
         <li><a href="/resource_revenues/offshore_oil_gas"><img src="{{ site.baseurl }}/img/icons/oil.svg" alt="coal">Oil &amp; Gas</a></li>
-        <li><a href="#"><img src="{{ site.baseurl }}/img/icons/hardrock.svg" alt="coal">Hardrock Minerals</a></li>
+        <li><a href="#"><img src="{{ site.baseurl }}/img/icons/hardrock.svg" alt="coal">Non-Energy Minerals</a></li>
         <li><a href="/resource_revenues/onshore_renewables"><img src="{{ site.baseurl }}/img/icons/renewables.svg" alt="coal">Renewables</a></li>
       </ul>
 

@@ -86,7 +86,7 @@ permalink: /resource_revenues/
       <article class="card card-secondary">
 
         <a href="{{ site.baseurl }}/resource_revenues/minerals/"><div class="card-splash">
-          <h3 class="card-splash_title">Hardock <br>Minerals <span class="revenues-fa"><i class="fa fa-chevron-right"></i></span></h3>
+          <h3 class="card-splash_title">Nonenergy <br>Minerals <span class="revenues-fa"><i class="fa fa-chevron-right"></i></span></h3>
 
           <div class="card-splash_image">
             <img src="{{ site.baseurl }}/img/icons/hardrock.svg" alt="minerals">

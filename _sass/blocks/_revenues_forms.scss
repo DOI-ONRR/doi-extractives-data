@@ -16,8 +16,8 @@
   h3 {
     @include heading(h1);
     border-bottom: $regular-border-size solid $dark-gray;
-    padding-bottom: 5px;
-    margin-bottom: 8px;
+    padding-bottom: $base-padding-lite;
+    margin-bottom: $base-padding-lite;
   }
 
   @include respond-to(small-up) {
@@ -44,13 +44,25 @@
   }
 }
 
-.revenues_page-forms_numbers {
-  border-bottom: 2px solid $dark-gray;
-  padding-bottom: 8px;
-  margin-bottom: 8px;
+
+
+.revenues_page-forms_numbers,
+.revenues_page-forms_numbers_first,
+.revenues_page-forms_numbers_last {
 
   span {
     @include heading(h1);
     line-height: 1.2;
   }
+}
+.revenues_page-forms_numbers_first {
+  border-bottom: 2px solid $dark-gray;
+  padding-bottom: $base-padding-lite;
+  margin-bottom: $base-padding-lite;
+}
+
+.revenues_page-forms_numbers_last {
+  border-top: 2px solid $dark-gray;
+  padding-top: $base-padding-lite;
+  margin-top: $base-padding-lite;
 }

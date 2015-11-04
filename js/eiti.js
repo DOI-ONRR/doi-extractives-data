@@ -440,7 +440,7 @@
   };
 
   /**
-   * Create a margin object {top, right, left, bottom} from any 
+   * Create a margin object {top, right, left, bottom} from any
    * of the following types:
    *
    * - string: coerce to a number
@@ -547,20 +547,29 @@
   eiti.util.classify = classify;
 
 
-  eiti.format = {};
+  /**
+   * Coerce a d3-style format string or function into a number
+   * format function.
+   */
+  eiti.format = function(format) {
+    return (typeof format === 'function')
+      ? format
+      : d3.format(format);
+  };
 
   /**
    * Create a composite format that wraps a d3 format (or any other
    * formatting function) with a transform function.
+   *
    * @name eiti.format.transform
+   * @function
+   *
    * @param {String|Function} format
    * @param {Function} transform
    * @return {Function}
    */
   eiti.format.transform = function(format, transform) {
-    if (typeof format === 'string') {
-      format = d3.format(format);
-    }
+    format = eiti.format(format);
     return function(d) {
       return transform(format(d) || '');
     };
@@ -576,9 +585,7 @@
    * @return {Function}
    */
   eiti.format.range = function(format, glue) {
-    if (typeof format === 'string') {
-      format = d3.format(format);
-    }
+    format = eiti.format(format);
     if (!glue) glue = ' – ';
     return function(range) {
       range = range.map(function(d, i) {
@@ -602,6 +609,7 @@
   /**
    * This is a format transform that turns metric SI suffixes into more
    * US-friendly ones: M -> m, G -> b, etc.
+   *
    * @param {String} str the formatted string
    * @return {String} the formatted string with replaced SI suffix
    */
@@ -615,29 +623,43 @@
   })();
 
   /**
-   * Produces international system/metric form, e.g. `4.1M`
+   * Produces international system ("IS")/metric form.
+   *
+   * @example
+   * assert.equal(eiti.format.is(4.2e6), '4.2m');
+   *
    * @name eiti.format.metric
    * @function
+   *
    * @param {Number} num
    * @return {String}
    */
-  eiti.format.metric = eiti.format.transform('.2s', eiti.format.transformMetric);
+  eiti.format.is = eiti.format.transform('.2s', eiti.format.transformMetric);
 
   /**
-   * Produces whole dollar strings with thousands separators, e.g.
-   * `$1,234,567`.
+   * Produces whole dollar strings in IS/metric form, prefixed
+   * with a '$', and negative numbers in parentheses.
+   *
    * @name eiti.format.dollars
    * @function
+   *
    * @param {Number} num
    * @return {String}
    */
-  eiti.format.dollars = d3.format('$,.0f');
+  eiti.format.dollars = eiti.format.transform(eiti.format.is, function(str) {
+    if (str.charAt(0) === '-') {
+      str = '(' + str.substr(1) + ')';
+    }
+    return '$' + str;
+  });
 
   /**
    * Produces dollar strings with thousands separators and 2-decimal
    * cents, e.g. `$1,234,567.89`.
+   *
    * @name eiti.format.dollarsAndCents
    * @function
+   *
    * @param {Number} num
    * @return {String}
    */

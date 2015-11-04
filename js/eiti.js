@@ -45,10 +45,11 @@
       var loader = loaders[ext];
       var cached = cache.get(url);
       if (cached && !fresh) {
-        return defer(function() {
+        requestAnimationFrame(function() {
           // console.log('[defer] load cached:', url);
           done(null, cached);
         });
+        return;
       }
 
       req = loader.call(d3, url, function(error, data) {

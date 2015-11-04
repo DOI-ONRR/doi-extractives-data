@@ -1,13 +1,28 @@
 <header class="header">
 
   <div>
-    <a class="header-image_link" href="/">
+    <a class="header-image_link" href="{{ site.baseurl }}/">
       <img class="header-image" src="{{ site.baseurl }}/img/USEITI_Logotype.png" alt="USEITI logo">
     </a>
   </div>
 
   <nav class="header-nav">
-    <ul class="header-nav_inner">
+    <ul class="header-nav_top">
+      <li class="header-nav_item_top">
+        <a class="header-nav_item_link_top" href="{{ site.baseurl }}/">Glossary</a>
+      </li>
+      <span class="header-nav_item_link_spacer"> | </span>
+      <li class="header-nav_item_top">
+        <a class="header-nav_item_link_top" href="{{ site.baseurl }}/resource_revenues/">Downloads</a>
+      </li>
+
+      <li class="header-nav_item_top">
+        <input type="search" class="header-nav_search" placeholder="Search"/>
+        <span class="header-nav_search_icon"><i class="fa fa-search"></i></span>
+      </li>
+
+    </ul>
+    <ul class="header-nav_bottom">
       <li class="header-nav_item">
         <a class="header-nav_item_link" href="{{ site.baseurl }}/">Home</a>
       </li>

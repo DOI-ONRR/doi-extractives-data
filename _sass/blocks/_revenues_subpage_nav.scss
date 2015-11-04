@@ -15,19 +15,16 @@
   }
   
   a {
-    color: $light-black;
+    color: $dark-gray;
   }
 }
+
 .revenues_subpage-nav {
-  span {
-    display: none;
-    @include respond-to(medium-up) {
-      display: inline-block;
-    }
-  }
+  padding-top: $base-padding-extra;
 }
+
 .revenues_subpage-tabs {
-  border-bottom: 1px solid $mid-gray;
+  
   position: relative;
 
   ul {
@@ -48,7 +45,7 @@
     border-top: 1px solid $mid-gray;
     border-right: 1px solid $mid-gray;
     border-left: 1px solid $mid-gray;
-    font-weight: normal;
+    font-weight: $weight-book;
   }
 
 }

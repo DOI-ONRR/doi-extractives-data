@@ -15,31 +15,28 @@
 }
 
 
-a,
 .link-alpha {
   @extend %link;
-  color: $base-font-color;
+  color: $blue;
+  text-decoration: underline;
 
   &:active,
   &:hover {
     text-decoration: none;
-    border-bottom: $thin-border-size dotted $base-link-color;
 
     img, 
-    i, 
     span {
-      border: none;
+      text-decoration: none;
     }
   }
 
   &.button, 
   &.button-primary,
   &.button-secondary {
-    border: none;
+    text-decoration: none;
   }
   
   img, 
-  i, 
   span {
     border: none;
   }
@@ -48,29 +45,27 @@ a,
 .link-beta {
   @extend %link;
   color: $white;
-
+}
+a,
+.link-charlie {
+  @extend %link;
+  color: $blue;
+  text-decoration: none;
   &:active,
   &:hover {
-    text-decoration: none;
-    border-bottom: $thin-border-size dotted $white;
-
-    img, 
-    i, 
-    span {
-      border: none;
-    }
+    text-decoration: underline;
   }
 }
 
 .link-active,
 .link-active-alpha {
   @extend .link-alpha;
-  border-bottom: $thin-border-size dotted $base-link-color;
+  text-decoration: underline;
 }
 
 .link-active-beta {
   @extend .link-beta;
-  border-bottom: $thin-border-size dotted $white;
+  text-decoration: underline;
 }
 
 a.link-no_under {

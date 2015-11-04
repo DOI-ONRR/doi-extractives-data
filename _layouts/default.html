@@ -16,6 +16,9 @@
 
     <!-- EITI libs -->
     <script src="{{ site.baseurl }}/js/eiti.js"></script>
+    <script>
+      eiti.commodities = ({{ site.data.commodities|jsonify }});
+    </script>
 
     <!-- custom elements -->
     <script src="{{ site.baseurl }}/js/vendor/document-register-element.js"></script>
@@ -26,8 +29,6 @@
     <script src="{{ site.baseurl }}/js/vendor/jquery.min.js"></script>
     <script src="{{ site.baseurl }}/js/vendor/lodash.min.js"></script>
     <script src="{{ site.baseurl }}/js/vendor/list.min.js"></script>
-
-    
 
     <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
   </head>

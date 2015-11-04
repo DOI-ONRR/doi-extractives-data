@@ -48,4 +48,25 @@ section.revenue {
     }
   }
 
+  .bar {
+    display: inline-block;
+    width: 10em;
+
+    .value {
+      background: #999;
+      display: inline-block;
+      height: 1em;
+
+      transition: width .5s;
+    }
+
+    &.negative {
+      text-align: right;
+    }
+
+    &:after {
+      clear: both;
+    }
+  }
+
 }

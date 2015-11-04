@@ -2,7 +2,7 @@
 
   var state = new Immutable.Map();
   var getter = eiti.data.getter;
-  var NONE_COLOR = '#f7f7f7';
+  var NONE_FILL = '#f7f7f7';
 
   var regionSections = d3.selectAll('.regions > .region');
   var formatNumber = eiti.format.dollars;
@@ -28,7 +28,7 @@
       if (req) req.abort();
       var url = getDataURL(state);
       return req = eiti.load(url, function(error, data) {
-        if (error) return done(error);
+        if (error) data = [];
         applyFilters(data, state, done);
       });
     };
@@ -148,7 +148,8 @@
   }
 
   function renderRegion(selection, state) {
-    var fields = getFields(state.get('region'));
+    var regionId = state.get('region');
+    var fields = getFields(regionId);
 
     model.load(state, function(error, data) {
       if (error) {
@@ -163,7 +164,10 @@
 
       var map = selection.select('[is="eiti-map"]');
       onMapLoaded(map, function() {
-        var subregions = map.selectAll('path.feature');
+        var subregions = map.selectAll('path.feature')
+          .filter(function(d) {
+            return d.id !== regionId;
+          });
 
         var features = subregions.data();
         var dataByFeatureId = d3.nest()
@@ -189,7 +193,7 @@
         subregions.style('fill', function(d) {
           var v = value(d);
           return v === undefined
-            ? NONE_COLOR
+            ? NONE_FILL
             : scale(v);
         });
 
@@ -213,7 +217,10 @@
 
   function updateSubregions(selection, features, scale) {
     var list = selection.select('.subregions');
-    if (list.empty()) return;
+    if (list.empty()) {
+      console.warn('no subregions list:', selection.node());
+      return;
+    }
 
     var items = list.selectAll('li')
       .data(features.filter(function(d) {
@@ -224,11 +231,11 @@
     var enter = items.enter()
       .append('li')
         .attr('class', 'subregion');
-    enter.append('span')
+    enter.append('h2')
       .attr('class', 'subregion-name')
-      .text(function(d) {
+      .text(function(f) {
         // XXX all features need a name!
-        return d.properties.name;
+        return f.properties.name || f.id;
       });
     enter.append('div')
       .attr('class', 'subregion-chart')
@@ -253,22 +260,21 @@
     var positive = selection.append('span')
       .attr('class', 'bar positive');
     positive.append('span')
-      .attr('class', 'label');
-    positive.append('span')
       .attr('class', 'value')
       .style('width', '0%');
+    positive.append('span')
+      .attr('class', 'label');
   }
 
   function updateBarChart(selection) {
     var values = selection.data().map(function(d) {
       return d.value;
     });
-    console.log('values:', values);
 
     var max = d3.max(values);
     var scale = d3.scale.linear()
       .domain([0, max])
-      .range(['0%', '100%']);
+      .range(['0%', '50%']);
 
     selection.each(function(d) {
       var value = d.value;
@@ -323,7 +329,7 @@
         };
       });
     data.push({
-      color: NONE_COLOR,
+      color: NONE_FILL,
       range: ['no value']
     });
     var steps = legend.selectAll('.step')

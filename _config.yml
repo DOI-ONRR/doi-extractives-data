@@ -15,3 +15,6 @@ collections:
   communities:
     output: true
     permalink: /communities/:community/
+  explores:
+    output: true
+    permalink: /explores/:explore/

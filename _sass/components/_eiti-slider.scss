@@ -1,12 +1,12 @@
 eiti-slider {
-  background: #fff;
+  background: #ddd;
   cursor: pointer;
   cursor: pointer;
   display: block;
   height: .3em;
-  margin: 1em 15px 1em 50px;
-  margin-bottom: 1em;
-  margin-top: 2.5em;
+  margin: 15px;
+  margin-bottom: 2.5em;
+  margin-top: 2em;
   opacity: 1;
   position: relative;
   position: relative;
@@ -33,6 +33,7 @@ eiti-slider {
     margin-top: -0.55em;
     position: absolute;
     width: 1.4em;
+	z-index: 100;
 
     &:after {
       border-color:  #ccc;
@@ -55,7 +56,7 @@ eiti-slider {
     z-index: 50;
 
     &:after {
-      background: #fff;
+      background: #ddd;
       border-radius: 500em;
       content: " ";
       display: block;

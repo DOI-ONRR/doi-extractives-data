@@ -42,3 +42,5 @@ groups:
 
   other:
     name: Other
+    commodities:
+    - "Other" # XXX: need other commodities here?

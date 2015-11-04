@@ -135,9 +135,15 @@
 
   function renderRegion(selection, state) {
     var fields = getFields(state.get('region'));
+    var formatNumber = d3.format(fields.format);
 
     model.load(state, function(error, data) {
       if (error) return console.error('error:', error);
+
+      var total = d3.sum(data, getter(fields.value));
+      total = Math.floor(total);
+      selection.select('.total')
+        .text(formatNumber(total));
 
       var map = selection.select('[is="eiti-map"]');
       onMapLoaded(map, function() {
@@ -246,6 +252,7 @@
     var fields = {
       region: 'Region',
       value: 'Revenue',
+      format: '$,',
       featureId: 'id'
     };
     var field = 'Region';

@@ -195,6 +195,9 @@
 
         selection.select('.map-legend')
           .call(updateLegend, scale);
+
+        selection
+          .call(updateSubregions, features, scale);
       });
     });
   }
@@ -206,6 +209,84 @@
     return map.on('load', function() {
       fn.apply(this, arguments);
     });
+  }
+
+  function updateSubregions(selection, features, scale) {
+    var list = selection.select('.subregions');
+    if (list.empty()) return;
+
+    var items = list.selectAll('li')
+      .data(features.filter(function(d) {
+        return !!d.value;
+      }), function(d) { return d.id; });
+
+    items.exit().remove();
+    var enter = items.enter()
+      .append('li')
+        .attr('class', 'subregion');
+    enter.append('span')
+      .attr('class', 'subregion-name')
+      .text(function(d) {
+        // XXX all features need a name!
+        return d.properties.name;
+      });
+    enter.append('div')
+      .attr('class', 'subregion-chart')
+      .call(createBarChart);
+
+    items.sort(function(a, b) {
+      return d3.descending(a.value, b.value);
+    });
+
+    items.select('.subregion-chart')
+      .call(updateBarChart);
+  }
+
+  function createBarChart(selection) {
+    var negative = selection.append('span')
+      .attr('class', 'bar negative');
+    negative.append('span')
+      .attr('class', 'label');
+    negative.append('span')
+      .attr('class', 'value')
+      .style('width', '0%');
+    var positive = selection.append('span')
+      .attr('class', 'bar positive');
+    positive.append('span')
+      .attr('class', 'label');
+    positive.append('span')
+      .attr('class', 'value')
+      .style('width', '0%');
+  }
+
+  function updateBarChart(selection) {
+    var values = selection.data().map(function(d) {
+      return d.value;
+    });
+    console.log('values:', values);
+
+    var max = d3.max(values);
+    var scale = d3.scale.linear()
+      .domain([0, max])
+      .range(['0%', '100%']);
+
+    selection.each(function(d) {
+      var value = d.value;
+      var positive = value >= 0 ? value : 0;
+      var negative = value < 0 ? value : 0;
+      var row = d3.select(this);
+      row.select('.bar.positive')
+        .call(updateBar, positive);
+      row.select('.bar.negative')
+        .call(updateBar, negative);
+    });
+
+    function updateBar(selection, value) {
+      selection.select('.label')
+        .text(value ? formatNumber(value) : '');
+      selection.select('.value')
+        .style('width', scale(Math.abs(value)));
+    }
   }
 
   function createScale(values) {

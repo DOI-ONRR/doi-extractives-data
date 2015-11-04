@@ -21,7 +21,7 @@ permalink: /resources/revenue/
 
   <form class="filters container">
     <div class="filter">
-      <label for="commodity-group-selector">Commodity Group</label>
+      <label for="commodity-group-selector">Commodity Category</label>
       <select id="commodity-group-selector" name="group">
         <option value="">All</option>
         {% for group in site.data.commodities.groups %}
@@ -30,7 +30,7 @@ permalink: /resources/revenue/
       </select>
     </div>
 
-    <div class="filter" aria-hidden="true">
+    <div id="commodity-filter" class="filter">
       <label for="commodity-selector">Commodity</label>
       <select id="commodity-selector" name="commodity">
         <option value="">All</option>

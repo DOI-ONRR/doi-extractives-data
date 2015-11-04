@@ -102,6 +102,31 @@
         return this.id === region;
       })
       .filter('.active');
+
+    var group = state.get('group');
+    var commodityFilter = d3.select('#commodity-filter')
+      .style('display', group ? null : 'none');
+    if (group) {
+      var commodities = getGroupCommodities(group).toJS();
+      var select = commodityFilter
+        .select('select');
+      var value = select.property('value');
+      var options = select
+        .selectAll('option.commodity')
+        .data(commodities);
+      options.exit()
+        .remove();
+      options.enter()
+        .append('option')
+          .attr('class', 'commodity');
+      options
+        .attr('value', identity)
+        .text(identity);
+      if (select.property('value') !== value) {
+        select.property('selectedIndex', 0);
+      }
+    }
+
     selected.call(renderRegion, state);
     return true;
   }
@@ -240,6 +265,10 @@
         break;
     }
     return fields;
+  }
+
+  function identity(d) {
+    return d;
   }
 
 })(this);

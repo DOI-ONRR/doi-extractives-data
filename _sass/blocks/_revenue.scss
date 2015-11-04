@@ -48,24 +48,41 @@ section.revenue {
     }
   }
 
-  .bar {
-    display: inline-block;
-    width: 10em;
+  .subregion {
+    @include row();
 
-    .value {
-      background: #999;
+    .subregion-name {
+      @include span-columns(8);
+      margin: 0;
+    }
+
+    .subregion-chart {
+      @include span-columns(4);
+    }
+
+    .bar {
       display: inline-block;
-      height: 1em;
+      // border: 1px solid red;
+      width: 50%;
 
-      transition: width .5s;
-    }
+      .label {
+        float: right;
+      }
 
-    &.negative {
-      text-align: right;
-    }
+      .value {
+        background: #999;
+        display: inline-block;
+        height: 1em;
+        min-width: .5px;
+      }
 
-    &:after {
-      clear: both;
+      &.negative {
+        text-align: right;
+
+        .label {
+          float: left;
+        }
+      }
     }
   }
 

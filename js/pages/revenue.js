@@ -15,8 +15,11 @@
       });
     });
 
+  var timeline = d3.select('#timeline');
+
   var model = (function() {
     var model = {};
+    var dispatch = d3.dispatch('yearly');
     var req;
 
     model.load = function(state, done) {
@@ -55,6 +58,8 @@
         });
       }
 
+      dispatch.yearly(data);
+
       var year = state.get('year');
       if (year) {
         data = data.filter(function(d) {
@@ -68,7 +73,7 @@
       return done(null, data);
     }
 
-    return model;
+    return d3.rebind(model, dispatch, 'on');
   })();
 
   initialize();
@@ -89,13 +94,13 @@
     var old = state;
     state = fn(state);
     if (old !== state) {
-      render(state);
+      render(state, old);
       return true;
     }
     return false;
   }
 
-  function render(state) {
+  function render(state, previous) {
     var region = state.get('region') || 'US';
     var selected = regionSections
       .classed('active', function() {
@@ -106,10 +111,14 @@
     var group = state.get('group');
     var commodityFilter = d3.select('#commodity-filter')
       .style('display', group ? null : 'none');
-    if (group) {
+
+    if (group !== previous.get('group')) {
+      state = state.set('commodity', null);
+
       var commodities = getGroupCommodities(group).toJS();
       var select = commodityFilter
-        .select('select');
+        .select('select')
+          .property('selectedIndex', 0);
       var value = select.property('value');
       var options = select
         .selectAll('option.commodity')
@@ -122,12 +131,11 @@
       options
         .attr('value', identity)
         .text(identity);
-      if (select.property('value') !== value) {
-        select.property('selectedIndex', 0);
-      }
-    } else {
-      state = state.set('commodity', null);
     }
+
+    model.on('yearly', function(data) {
+      timeline.call(updateTimeline, data, state);
+    });
 
     selected.call(renderRegion, state);
     return true;
@@ -274,6 +282,138 @@
         break;
     }
     return fields;
+  }
+
+  function updateTimeline(selection, data, state) {
+    var fields = getFields(state.get('region'));
+
+    var value = getter(fields.value);
+    var dataByYearPolarity = d3.nest()
+      .key(function(d) {
+        return value(d) < 0 ? 'negative' : 'positive';
+      })
+      .key(getter('Year'))
+      .rollup(function(d) {
+        return d3.sum(d, value);
+      })
+      .map(data);
+
+    console.log('data by year/polarity:', dataByYearPolarity);
+    var positiveYears = dataByYearPolarity.positive || {};
+    var positiveExtent = d3.extent(d3.values(positiveYears));
+    var negativeYears = dataByYearPolarity.negative || {};
+    var negativeExtent = d3.extent(d3.values(negativeYears));
+
+    // get the slider to determine the year range
+    var slider = d3.select('#year-selector').node();
+
+    // XXX: d3.range() is exclusive, so we need to add two
+    // in order to include the last year *and* make the area render the right
+    // edge of the last year.
+    var years = d3.range(slider.min, slider.max + 2, 1);
+
+    var w = 500;
+    var h = 40;
+    var viewBox = selection.attr('viewBox');
+    // if there is a viewBox already, derive the dimensions from it
+    if (viewBox) {
+      viewBox = viewBox.split(' ').map(Number);
+      w = viewBox[2];
+      h = viewBox[3];
+    } else {
+      // otherwise, set up the viewBox with our default dimensions
+      selection.attr('viewBox', [0, 0, w, h].join(' '));
+    }
+
+    var left = w / 10;
+    var right = w;
+
+    // the x-axis scale
+    var x = d3.scale.linear()
+      .domain(d3.extent(years))
+      .range([left, right]);
+
+    // the y-axis domain sets a specific point for zero.
+    // the `|| -100` and `|| 100` bits here ensure that the domain has some
+    // size, even if there is no data from which to derive an extent.
+    var yDomain = [
+      negativeExtent[0] || -100,
+      positiveExtent[1] || 100
+    ];
+    // the y-axis scale, with the zero point at 3/4 the height
+    // XXX: note that this exaggerates the negative scale!
+    var y = d3.scale.linear()
+      .domain(yDomain)
+      .range([h, 0]);
+
+    var area = d3.svg.area()
+      .interpolate('step-after')
+      .x(function(d) { return x(d.year); })
+      .y0(y(0))
+      .y1(function(d) { return y(d.value); });
+
+    var areas = selection.selectAll('path.area')
+      .data([
+        {
+          polarity: 'positive',
+          values: years.map(function(year) {
+            return {
+              year: year,
+              value: positiveYears[year] || 0
+            };
+          })
+        },
+        {
+          polarity: 'negative',
+          values: years.map(function(year) {
+            return {
+              year: year,
+              value: negativeYears[year] || 0
+            };
+          })
+        }
+      ]);
+
+    areas.exit().remove();
+    areas.enter().append('path')
+      .attr('class', function(d) {
+        return 'area ' + d.polarity;
+      });
+
+    var zero = selection.select('g.zero');
+    if (zero.empty()) {
+      zero = selection.append('g')
+        .attr('class', 'zero');
+      zero.append('line');
+      zero.append('text')
+        .attr('class', 'label')
+        .attr('text-anchor', 'end')
+        .attr('dy', .5)
+        .text(0);
+    }
+
+    var updated = selection.property('updated');
+    var t = function(d) { return d; };
+    if (updated) {
+      t = function(d) {
+        return d.transition()
+          .duration(500);
+      };
+    }
+
+    zero.select('line')
+      .attr('x1', left)
+      .attr('x2', right);
+
+    zero.select('.label')
+      .attr('transform', 'translate(' + [left, 0] + ')');
+
+    t(zero).attr('transform', 'translate(' + [0, y(0)] + ')');
+
+    t(areas).attr('d', function(d) {
+      return area(d.values);
+    });
+    selection.property('updated', true);
   }
 
   function identity(d) {

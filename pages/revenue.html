@@ -5,10 +5,37 @@ permalink: /explore/revenue/
 ---
 <style>
 
-  section.region {
-    display: none;
+  .map-legend {
+    display: flex;
+    margin-bottom: 1em;
   }
 
+  .map-legend .step {
+    display: block;
+    flex: 1;
+    height: 1em;
+  }
+
+  .timeline {
+  }
+
+  .timeline .area {
+    fill: #999;
+  }
+
+  .timeline .area.negative {
+    fill: #ccc;
+  }
+
+  .timeline .zero line {
+    fill: none;
+    stroke: black;
+    stroke-width: .5;
+    stroke-linecap: square;
+    vector-effect: non-scaling-stroke;
+  }
+
+  section.region { display: none; } 
   section.region.active {
     display: block;
   }
@@ -54,6 +81,8 @@ permalink: /explore/revenue/
       </select>
     </div>
 
+    <svg id="timeline" class="timeline" viewBox="0 0 800 40"></svg>
+
     <div class="filter">
       <label for="year-selector">Year</label>
       <eiti-slider id="year-selector" name="year"
@@ -95,6 +124,7 @@ permalink: /explore/revenue/
     {% for region in site.data.states %}
     <section id="{{ region.id }}" class="region onshore">
       <h1>{{ region.name }}</h1>
+      <h2 class="total">$0</h2>
 
       <svg is="eiti-map" id="{{ region.id }}-map" simplify="1e-2"
         projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/" zoom-to="{{ region.id }}">
@@ -116,6 +146,7 @@ permalink: /explore/revenue/
     {% for region in site.data.offshore_areas %}
     <section id="{{ region.id }}" class="region offshore">
       <h1>{{ region.name }}</h1>
+      <h2 class="total">$0</h2>
 
       <svg is="eiti-map" id="{{ region.id }}-map" simplify="1e-2"
         projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/" zoom-to="{{ region.id }}">

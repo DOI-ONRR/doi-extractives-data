@@ -21,6 +21,7 @@
     var model = {};
     var dispatch = d3.dispatch('yearly');
     var req;
+    var previous;
 
     model.load = function(state, done) {
       if (req) req.abort();
@@ -43,7 +44,7 @@
     }
 
     function applyFilters(data, state, done) {
-      console.log('applying filters:', state.toJS());
+      // console.log('applying filters:', state.toJS());
 
       var commodity = state.get('commodity');
       var group = state.get('group');
@@ -58,7 +59,10 @@
         });
       }
 
-      dispatch.yearly(data);
+      if (!previous || !onlyYearDiffers(state, previous)) {
+        if (previous) console.log('yearly change:', previous.toJS(), '->', state.toJS());
+        dispatch.yearly(data);
+      }
 
       var year = state.get('year');
       if (year) {
@@ -68,7 +72,8 @@
         });
       }
 
-      console.log('filtered to %d rows', data.length);
+      // console.log('filtered to %d rows', data.length);
+      previous = state;
 
       return done(null, data);
     }
@@ -113,7 +118,7 @@
       .style('display', group ? null : 'none');
 
     if (group !== previous.get('group')) {
-      state = state.set('commodity', null);
+      state = state.delete('commodity');
 
       var commodities = getGroupCommodities(group).toJS();
       var select = commodityFilter
@@ -146,7 +151,10 @@
     var formatNumber = d3.format(fields.format);
 
     model.load(state, function(error, data) {
-      if (error) return console.error('error:', error);
+      if (error) {
+        console.warn('error:', error.status, error.statusText);
+        data = [];
+      }
 
       var total = d3.sum(data, getter(fields.value));
       total = Math.floor(total);
@@ -298,7 +306,7 @@
       })
       .map(data);
 
-    console.log('data by year/polarity:', dataByYearPolarity);
+    // console.log('data by year/polarity:', dataByYearPolarity);
     var positiveYears = dataByYearPolarity.positive || {};
     var positiveExtent = d3.extent(d3.values(positiveYears));
     var negativeYears = dataByYearPolarity.negative || {};
@@ -414,6 +422,11 @@
       return area(d.values);
     });
     selection.property('updated', true);
+  }
+
+  function onlyYearDiffers(a, b) {
+    var c = b.set('year', a.get('year'));
+    return Immutable.is(a, c);
   }
 
   function identity(d) {

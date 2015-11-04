@@ -125,6 +125,8 @@
       if (select.property('value') !== value) {
         select.property('selectedIndex', 0);
       }
+    } else {
+      state = state.set('commodity', null);
     }
 
     selected.call(renderRegion, state);

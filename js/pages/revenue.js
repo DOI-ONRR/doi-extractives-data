@@ -5,6 +5,7 @@
   var NONE_COLOR = '#f7f7f7';
 
   var regionSections = d3.selectAll('.regions > .region');
+  var formatNumber = eiti.format.dollars;
   
   var filters = d3.selectAll('.filters [name]')
     .on('change', function() {
@@ -148,7 +149,6 @@
 
   function renderRegion(selection, state) {
     var fields = getFields(state.get('region'));
-    var formatNumber = d3.format(fields.format);
 
     model.load(state, function(error, data) {
       if (error) {
@@ -268,7 +268,6 @@
     var fields = {
       region: 'Region',
       value: 'Revenue',
-      format: '$,',
       featureId: 'id'
     };
     var field = 'Region';

@@ -2,13 +2,13 @@
 @import 'footer';
 @import 'communities_intro';
 @import 'communities_content';
-@import 'revenues_steps';
-// TODO: break the following apart
-@import 'revenues_forms';
-@import 'revenues_intro';
-@import 'revenues_footer';
-@import 'revenues_subpage_intro';
-@import 'revenues_subpage_steps';
-@import 'revenues_subpage_nav';
-@import 'revenues_subpage_involved';
+@import 'revenues/revenues_steps';
+@import 'revenues/revenues_forms';
+@import 'revenues/revenues_intro';
+@import 'revenues/revenues_footer';
+@import 'revenues/revenues_subpage_intro';
+@import 'revenues/revenues_subpage_steps';
+@import 'revenues/revenues_subpage_nav';
+@import 'revenues/revenues_subpage_involved';
+@import 'explore/overview';
 @import 'revenue';

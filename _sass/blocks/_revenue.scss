@@ -12,10 +12,39 @@ section.revenue {
   }
 
   .regions .region {
-    // display: none;
+    display: none;
 
     &.active {
       display: block;
+    }
+  }
+
+  .map-legend {
+    display: flex;
+    margin-bottom: 1em;
+  }
+
+  .map-legend .step {
+    display: block;
+    flex: 1;
+    height: 1em;
+  }
+
+  .timeline {
+    .area {
+      fill: #999;
+
+      &.negative {
+        fill: #ccc;
+      }
+    }
+
+    .zero line {
+      fill: none;
+      stroke: black;
+      stroke-linecap: square;
+      stroke-width: .5;
+      vector-effect: non-scaling-stroke;
     }
   }
 

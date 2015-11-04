@@ -10,6 +10,7 @@ exclude:
   - package.json
   - show
   - test
+  - 'Gemfile*'
 
 collections:
   communities:

@@ -3,7 +3,7 @@ title: Revenue
 layout: default
 permalink: /explore/revenue/
 ---
-<section class="revenue container">
+<section id="revenue" class="revenue container">
   <h1>Revenue</h1>
 
   <p><strong>Something about revenue here.</strong> Lorem ipsum.</p>
@@ -68,14 +68,14 @@ permalink: /explore/revenue/
         projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/">
         <g class="offshore areas" data-url="offshore-simple.json"
           data-id="'US-' + id"
-          data-href="'#' + id"
+          data-href="'#?region=' + id"
           data-title="properties.name"
           data-mesh="true">
         </g>
         <g class="onshore states" data-url="us-topology.json"
           data-object="states"
           data-id="'US-' + id"
-          data-href="'#' + id"
+          data-href="'#?region=' + id"
           data-title="properties.name || properties.abbr"
           data-mesh="true">
         </g>

@@ -1,14 +1,20 @@
 (function(exports) {
 
   var state = new Immutable.Map();
+  var mutating = false;
   var getter = eiti.data.getter;
   var NULL_FILL = '#eee';
 
   var regionSections = d3.selectAll('.regions > .region');
   var formatNumber = eiti.format.dollars;
-  
+
   var filters = d3.selectAll('.filters [name]')
+    // intialize the state props
+    .each(function() {
+      state = state.set(this.name, this.value);
+    })
     .on('change', function() {
+      if (mutating) return;
       var prop = this.name;
       var value = this.value;
       mutateState(function(state) {
@@ -17,6 +23,15 @@
     });
 
   var timeline = d3.select('#timeline');
+
+  d3.select(window)
+    .on('hashchange', function() {
+      if (mutating) return;
+      var props = parseHash();
+      mutateState(function() {
+        return new Immutable.Map(props);
+      });
+    });
 
   var model = (function() {
     var model = {};
@@ -62,7 +77,6 @@
       }
 
       if (!previous || !onlyYearDiffers(state, previous)) {
-        if (previous) console.log('yearly change:', previous.toJS(), '->', state.toJS());
         dispatch.yearly(data);
       }
 
@@ -86,28 +100,38 @@
   initialize();
 
   function initialize() {
-    var props = {};
-    filters.each(function() {
-      if (this.value) {
-        props[this.name] = this.value;
-      }
-    });
+    var props = parseHash();
     return mutateState(function(state) {
       return state.merge(props);
-    });
+    }) || render();
+  }
+
+  function parseHash() {
+    if (!location.hash) return {};
+    var hash = location.hash.substr(1);
+    return eiti.url.qs.parse(hash);
   }
 
   function mutateState(fn) {
+    mutating = true;
     var old = state;
     state = fn(state);
-    if (old !== state) {
+    if (!Immutable.is(old, state)) {
       render(state, old);
+      location.hash = eiti.url.qs.format(state.toJS());
+      mutating = false;
       return true;
     }
+    mutating = false;
     return false;
   }
 
   function render(state, previous) {
+    // update the filters
+    filters.each(function() {
+      this.value = state.get(this.name);
+    });
+
     var region = state.get('region') || 'US';
     var selected = regionSections
       .classed('active', function() {
@@ -166,6 +190,12 @@
       var map = selection.select('[is="eiti-map"]');
       onMapLoaded(map, function() {
         var subregions = map.selectAll('path.feature');
+
+        switch (regionId) {
+          case 'US':
+            subregions.on('click.mutate', eventMutator('region', 'id'));
+            break;
+        }
 
         var features = subregions.data();
         var dataByFeatureId = d3.nest()
@@ -538,6 +568,17 @@
   function onlyYearDiffers(a, b) {
     var c = b.set('year', a.get('year'));
     return Immutable.is(a, c);
+  }
+
+  function eventMutator(destProp, sourceKey) {
+    sourceKey = getter(sourceKey);
+    return function(d) {
+      var value = sourceKey(d);
+      mutateState(function(state) {
+        return state.set(destProp, value);
+      });
+      d3.event.preventDefault();
+    };
   }
 
   function identity(d) {

@@ -59,6 +59,9 @@
     var old = state;
     state = fn(state);
     if (!Immutable.is(old, state)) {
+      if (!state.get('group') || state.get('group') !== old.get('group')) {
+        state = state.delete('commodity');
+      }
       render(state, old);
       location.hash = eiti.url.qs.format(state.toJS());
       mutating = false;
@@ -92,9 +95,6 @@
 
     if (needsCommodityUpdate) {
       var commodities = getGroupCommodities(group);
-      if (!commodities.has(state.get('commodity'))) {
-        state = state.delete('commodity');
-      }
 
       commodities = commodities.toJS();
       if (commodities.length > 1) {

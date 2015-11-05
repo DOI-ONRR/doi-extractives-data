@@ -11,6 +11,23 @@
   var formatNumber = eiti.format.dollars;
   var NULL_FILL = '#eee';
 
+  d3.selectAll('button[aria-controls]')
+    .datum(function() {
+      var text = this.textContent;
+      return {
+        'true': this.getAttribute('data-expanded-text') || text,
+        'false': this.getAttribute('data-collapsed-text') || text
+      };
+    })
+    .on('click.aria', function(text) {
+      var id = this.getAttribute('aria-controls');
+      var attr = 'aria-expanded';
+      var controls = d3.select('#' + id);
+      var expanded = controls.attr(attr) !== 'true';
+      controls.attr(attr, expanded);
+      this.textContent = text[expanded];
+    });
+
   // get the filters and add change event handlers
   var filters = root.selectAll('.filters [name]')
     // intialize the state props
@@ -211,7 +228,7 @@
   function updateSubregions(selection, features, scale) {
     var list = selection.select('.subregions');
     if (list.empty()) {
-      console.warn('no subregions list:', selection.node());
+      // console.warn('no subregions list:', selection.node());
       return;
     }
 

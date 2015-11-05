@@ -22,15 +22,42 @@
       content: "\f077";
     }
 
-    .accordion-content {
+    .accordion-button_more {
+      display: none;
+    }
+
+    .accordion-button_less {
+      display: inline-block;
+
+      &::after {
+        content: '–';
+      }
+    }
+
+    .accordion-content,
+    .accordion-more {
       display: inline-block;
     }
+
   }
 
   &[accordion-open=false] {
     .accordion-button:after {
       content: "\f078";
     }
+
+    .accordion-button_more {
+      &::after {
+        content: '+';
+      }
+
+      display: inline-block; 
+    }
+
+    .accordion-button_less {
+      display: none;
+    }
+
     .accordion-content {
 
       @include respond-to(medium-up) {
@@ -39,6 +66,11 @@
 
       display: none; 
     }
+
+    .accordion-more {
+      display: none; 
+    }
+    
   }
 
 

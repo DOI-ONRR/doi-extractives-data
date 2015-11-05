@@ -45,11 +45,18 @@
      * @return void
      */
     registerEventListeners: function () {
+      var nextStep = false;
       for (var i = 0; i < this.accordionButtons.length; i++) {
         this.accordionButtons[i].addEventListener("click", this.toggleAccordion.bind(this));
-        if (i !== 0) {
-          this.accordionButtons[i].click();
+
+        if (this.accordionButtons[i].classList.contains('accordion-button')) {
+          if (nextStep) {
+            this.accordionButtons[i].click();
+          } else {
+            nextStep = true;
+          }
         }
+        
       };
     }
   }

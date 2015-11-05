@@ -1,31 +1,44 @@
 <header class="header">
 
   <div>
-    <a class="header-image_link" href="/">
+    <a class="header-image_link" href="{{ site.baseurl }}/">
       <img class="header-image" src="{{ site.baseurl }}/img/USEITI_Logotype.png" alt="USEITI logo">
     </a>
   </div>
 
   <nav class="header-nav">
-    <ul class="header-nav_inner">
-      <li class="header-nav_item">
+    <ul class="header-nav_top">
+      <li class="header-nav_item_top">
+        <a class="header-nav_item_link_top js-glossary-toggle" alt="this is the glossary drawer">Glossary</a>
+      </li>
+      <span class="header-nav_item_link_spacer"> | </span>
+      <li class="header-nav_item_top">
+        <a class="header-nav_item_link_top" href="{{ site.baseurl }}/downloads/">Downloads</a>
+      </li>
+
+      <li class="header-nav_item_top">
+        <input type="search" class="header-nav_search" placeholder="Search"/>
+        <span class="header-nav_search_icon"><i class="fa fa-search"></i></span>
+      </li>
+
+    </ul>
+    <ul class="header-nav_bottom">
+      <li class="header-nav_item {% if page.title == 'Home' %}active{% endif %}">
         <a class="header-nav_item_link" href="{{ site.baseurl }}/">Home</a>
       </li>
-      <li class="header-nav_item">
+      <li class="header-nav_item {% page.permalink == '/about/' %}active{% endif %}">
+        <a class="header-nav_item_link" href="{{ site.baseurl }}/about/">About USEITI</a>
+      </li>
+      <li class="header-nav_item {% if page.permalink == '/resource_revenues/' %}active{% endif %}">
         <a class="header-nav_item_link" href="{{ site.baseurl }}/resource_revenues/">How it works</a>
       </li>
-      <li class="header-nav_item">
+      <li class="header-nav_item {% if page.permalink == '/resources/' %}active{% endif %}">
         <a class="header-nav_item_link" href="{{ site.baseurl }}/resources/">Explore Data</a>
       </li>
-      <li class="header-nav_item">
+      <li class="header-nav_item {% if page.permalink == '/communities/' %}active{% endif %}">
         <a class="header-nav_item_link" href="{{ site.baseurl }}/communities/">Local Impact</a>
       </li>
-      <li class="header-nav_item">
-        <a class="header-nav_item_link" href="{{ site.baseurl }}/data/">Downloads</a>
-      </li>
-      <li class="header-nav_item header-glossary">
-        <a class="header-nav_item_link js-glossary-toggle" href="#" title="View site glossary"><img src="{{ site.baseurl }}/img/icons/glossary/icon-book-nav.svg" alt="this is the glossary drawer"></a>
-      </li>
+
     </ul>
   </nav>
 

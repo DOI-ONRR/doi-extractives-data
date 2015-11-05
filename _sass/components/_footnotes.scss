@@ -53,4 +53,5 @@ body {
 .footnote {
   vertical-align: super; // 2
   font-size: smaller;
+  @extend .link-charlie;
 }

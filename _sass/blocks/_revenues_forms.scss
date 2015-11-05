@@ -10,11 +10,9 @@
 
   h1 {
     color: $light-black;
-    font-weight: $weight-light;
   }
 
-  h3 {
-    @include heading(h1);
+  h2 {
     border-bottom: $regular-border-size solid $dark-gray;
     padding-bottom: $base-padding-lite;
     margin-bottom: $base-padding-lite;

@@ -1,7 +1,7 @@
 ---
-title: Data
+title: Downloads
 layout: default
-permalink: /data/
+permalink: /downloads/
 ---
 
 <div class="communities">
@@ -9,7 +9,7 @@ permalink: /data/
   <div class="communities-intro">
 
     <section id="executive-summary" class="container">
-    <h1>Data</h1>
+    <h1>Downloads</h1>
     <h2>
       This is where the data will be.
     </h2>

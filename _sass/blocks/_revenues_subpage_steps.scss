@@ -28,16 +28,28 @@ $onshore-renewables-secondary-color: $blue;
   @include respond-to(medium-up) {
     display: block;
     margin-top: 40%;
-    @include span-columns(3);
+    @include span-columns(2);
+    &[accordion-open=true] {
+      @include span-columns(3);
+    }
   }
+
+}
+
+
+.revenues_subpage-dyk_heading,
+.revenues_subpage-dyk_text,
+.revenues_subpage-dyk_text p {
+  @include heading('para-sm');
 }
 
 .revenues_subpage-dyk_heading {
-  color: $white;
   background-color: $offshore-oil-secondary-color;
-  padding: $base-padding;
+  color: $white;
+  font-weight: $weight-bold;
   margin: 0;
-  text-align: center;
+  padding: $base-padding;
+  text-align: left;
 }
 
 .revenues_subpage-dyk_text {
@@ -51,7 +63,9 @@ $onshore-renewables-secondary-color: $blue;
   position: absolute;
   right: $base-padding;
   bottom: $base-padding;
-  span {
+
+  span,
+  &::after {
     @include heading(h4);
     line-height: $base-line-height;
     vertical-align: bottom;
@@ -80,8 +94,13 @@ $onshore-renewables-secondary-color: $blue;
   }
 
   @include respond-to(medium-up) {
-    @include span-columns(7);
-    @include shift(2);
+
+    @include direction-context(right-to-left) {
+
+      @include span-columns(7);
+
+    }
+
     padding-bottom: 6.225em; // 100px twice $base-padding-extra;
   }
 
@@ -90,6 +109,7 @@ $onshore-renewables-secondary-color: $blue;
   }
   
 }
+
 
 .revenues_subpage-steps_group_item {
     background-color: $white;

@@ -195,20 +195,8 @@ permalink: /resource_revenues/
     </section>
   </div>
 
-  <div class="revenues_page-last">
-    <section class="container">
-
-      <h2>Choose a resource to explore:</h2>
-
-
-      <ul>
-        <li><a href="/coal"><img src="{{ site.baseurl }}/img/icons/coal.svg" alt="coal">Coal</a></li>
-        <li><a href="/resource_revenues/offshore_oil_gas"><img src="{{ site.baseurl }}/img/icons/oil.svg" alt="coal">Oil &amp; Gas</a></li>
-        <li><a href="#"><img src="{{ site.baseurl }}/img/icons/hardrock.svg" alt="coal">Non-Energy Minerals</a></li>
-        <li><a href="/resource_revenues/onshore_renewables"><img src="{{ site.baseurl }}/img/icons/renewables.svg" alt="coal">Renewables</a></li>
-      </ul>
-
-    </section>
+  <div class="container-outer revenues_page-footer">
+    {% include revenues/revenues-footer.html %}
   </div>
 
 

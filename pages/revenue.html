@@ -167,4 +167,15 @@ permalink: /explore/revenue/
   </div>
 </section>
 <script src="{{ site.baseurl }}/js/vendor/immutable.min.js"></script>
+<script>
+  var REGION_ID_NAME = {
+    {% for state in site.data.states %}
+    '{{ state.id }}': '{{ state.name }}',
+    {% endfor %}
+    {% for area in site.data.offshore_areas %}
+    '{{ area.id }}': '{{ area.name }}',
+    {% endfor %}
+    'US': 'entire U.S.'
+  };
+</script>
 <script src="{{ site.baseurl }}/js/pages/revenue.js"></script>

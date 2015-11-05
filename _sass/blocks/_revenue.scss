@@ -5,6 +5,11 @@
 // Styleguide blocks.revenue
 
 #revenue {
+  $dark-blue: #4b9bbf;
+
+  .filters {
+    color: $dark-blue;
+  }
 
   /*
   .filter-description {
@@ -15,6 +20,38 @@
     }
   }
   */
+
+  button.toggle {
+    background: transparent;
+    // border: 1px solid;
+    color: $dark-blue;
+    display: block;
+    font: inherit;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    text-align: left;
+    width: 100%;
+
+    &:after {
+      content: $fa-var-chevron-down;
+      font-family: FontAwesome;
+      font-size: 1.2em;
+      line-height: 1;
+      margin-top: -.5em;
+      position: absolute;
+      right: .5em;
+      top: 50%;
+    }
+
+    &[aria-expanded=true] {
+      margin-top: 1em;
+    }
+
+    &[aria-expanded=true]:after {
+      content: $fa-var-chevron-up;
+    }
+  }
 
   [aria-expanded=false] {
     display: none;

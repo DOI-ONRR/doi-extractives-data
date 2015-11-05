@@ -11,14 +11,16 @@
   padding-top: $base-padding-extra;
 
   h1 {
-    margin-bottom: 0.7rem;
     line-height: 2rem;
+    margin-bottom: 0.7rem;
   }
 
 }
 
 .revenues_subpage-intro_text{
+
   @include heading('para-lg');
+
   padding-bottom: $base-padding;
 }
 
@@ -31,14 +33,14 @@
 .revenues_subpage-office {
   background-color: $white;
   &:first-child {
-    padding-top: $base-padding;
     border-top-left-radius: $base-border-radius;
     border-top-right-radius: $base-border-radius;
+    padding-top: $base-padding;
   }
   &:last-child {
-    margin-bottom: $base-padding-extra;
     border-bottom-left-radius: $base-border-radius;
     border-bottom-right-radius: $base-border-radius;
+    margin-bottom: $base-padding-extra;
   }
 }
 
@@ -94,10 +96,8 @@
 }
 
 .revenues_subpage-office_logo {
-  width: 40px;
   float: right;
   margin-bottom: $base-padding-lite;
-
-
+  width: 40px;
 }
 

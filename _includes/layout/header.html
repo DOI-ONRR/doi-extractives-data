@@ -23,19 +23,19 @@
 
     </ul>
     <ul class="header-nav_bottom">
-      <li class="header-nav_item">
+      <li class="header-nav_item {% if page.title == 'Home' %}active{% endif %}">
         <a class="header-nav_item_link" href="{{ site.baseurl }}/">Home</a>
       </li>
-      <li class="header-nav_item">
+      <li class="header-nav_item {% if page.permalink == '/resource_revenues/' %}active{% endif %}">
         <a class="header-nav_item_link" href="{{ site.baseurl }}/resource_revenues/">How it works</a>
       </li>
-      <li class="header-nav_item">
+      <li class="header-nav_item {% if page.permalink == '/resources/' %}active{% endif %}">
         <a class="header-nav_item_link" href="{{ site.baseurl }}/resources/">Explore Data</a>
       </li>
-      <li class="header-nav_item">
+      <li class="header-nav_item {% if page.permalink == '/communities/' %}active{% endif %}">
         <a class="header-nav_item_link" href="{{ site.baseurl }}/communities/">Local Impact</a>
       </li>
-      <li class="header-nav_item">
+      <li class="header-nav_item {% if page.permalink == '/data/' %}active{% endif %}">
         <a class="header-nav_item_link" href="{{ site.baseurl }}/data/">Downloads</a>
       </li>
       <li class="header-nav_item header-glossary">

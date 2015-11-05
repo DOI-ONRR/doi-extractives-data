@@ -305,21 +305,20 @@
     var min = extent[0];
     var max = extent[1];
 
-    var domain = (min < 0)
-      ? [Math.min(min, 0), max]
-      : [0, max];
-
     var colors = (min < 0)
       ? colorbrewer.Blues
       : colorbrewer.Blues;
-    if (max >= 1e9) {
-      colors = colors[9];
-      max = 1e9;
-    } else if (max >= 1e6) {
+    if (max >= 2e9) {
       colors = colors[7];
-    } else {
+    } else if (max >= 1e6) {
       colors = colors[5];
+    } else {
+      colors = colors[3];
     }
+
+    var domain = (min < 0)
+      ? [Math.min(min, 0), max]
+      : [0, max];
 
     domain = d3.scale.linear()
       .domain(domain)

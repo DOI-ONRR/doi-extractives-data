@@ -4,7 +4,7 @@ eiti-slider {
   cursor: pointer;
   display: block;
   height: .3em;
-  margin: 2em 20px 2.5em;
+  margin: 2em 25px 2.5em 10px;
   opacity: 1;
   position: relative;
   position: relative;
@@ -78,6 +78,25 @@ eiti-slider {
 
     &.selected .label {
       font-weight: bold;
+    }
+  }
+
+  @include respond-to(medium-down) {
+    .tick .label {
+      font-size: $base-font-size * .8;
+    }
+  }
+
+  @include respond-to(small-down) {
+    .tick {
+      .label {
+        display: none;
+      }
+
+      &:nth-child(2) .label,
+      &:last-child .label {
+        display: block;
+      }
     }
   }
 }

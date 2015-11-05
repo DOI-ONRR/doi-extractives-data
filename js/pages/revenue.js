@@ -137,6 +137,8 @@
       }
     }
 
+    updateFilterDescription(state);
+
     model.on('yearly', function(data) {
       timeline.call(updateTimeline, data, state);
     });
@@ -639,6 +641,24 @@
   function onlyYearDiffers(a, b) {
     var c = b.set('year', a.get('year'));
     return Immutable.is(a, c);
+  }
+
+  function updateFilterDescription(state) {
+    var desc = root.select('#filter-description');
+    var commodity = state.get('commodity') ||
+      (state.get('group')
+       ? eiti.commodities.groups[state.get('group')].name
+       : 'all commodities')
+    var data = {
+      commodity: commodity.toLowerCase(),
+      region: state.get('region') || 'the entire U.S.',
+      year: state.get('year')
+    };
+
+    desc.selectAll('[data-key]')
+      .text(function() {
+        return data[this.getAttribute('data-key')];
+      });
   }
 
   function eventMutator(destProp, sourceKey) {

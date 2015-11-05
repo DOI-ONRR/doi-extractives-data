@@ -35,7 +35,7 @@ permalink: /explore/revenue/
       <div class="filter">
         <label for="commodity-group-selector">Commodity Category</label>
         <select id="commodity-group-selector" name="group">
-          <option value="">All</option>
+          <option value="">All commodity categories</option>
           {% for group in site.data.commodities.groups %}
           <option value="{{ group[0] }}">{{ group[1].name }}</option>
           {% endfor %}
@@ -45,7 +45,7 @@ permalink: /explore/revenue/
       <div id="commodity-filter" class="filter">
         <label for="commodity-selector">Commodity</label>
         <select id="commodity-selector" name="commodity">
-          <option value="">All</option>
+          <option value="">All commodities</option>
         </select>
       </div>
 
@@ -79,13 +79,20 @@ permalink: /explore/revenue/
   </div>
 
   <div class="slab-alpha">
+    <div class="container-outer">
+      <h1 id="filter-description" class="filter-description">
+        Combined revenue from
+        <span class="filter-part" data-key="commodity">all commodities</span>
+        in
+        <span class="filter-part" data-key="region">the entire U.S.</span>
+        for
+        <span class="filter-part" data-key="year">2013</span>
+      </h1>
+    </div>
+
     <div class="regions container-outer">
 
       <section id="US" class="region active">
-        <h2>United States</h2>
-        <h3 class="total">$0</h3>
-
-        <p>Some text about the entire US?</p>
 
         <div class="map-legend"></div>
 
@@ -114,8 +121,6 @@ permalink: /explore/revenue/
 
       {% for region in site.data.states %}
       <section id="{{ region.id }}" class="region onshore">
-        <h2>{{ region.name }}</h2>
-        <h3 class="total">$0</h3>
 
         <div class="map-legend"></div>
 

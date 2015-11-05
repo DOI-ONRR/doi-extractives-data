@@ -118,7 +118,7 @@
     var commodityFilter = d3.select('#commodity-filter')
       .style('display', group ? null : 'none');
 
-    if (group !== previous.get('group')) {
+    if (group && group !== previous.get('group')) {
       state = state.delete('commodity');
 
       var commodities = getGroupCommodities(group).toJS();

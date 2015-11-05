@@ -1,5 +1,6 @@
 eiti-slider {
-  background: #ddd;
+  $slider-background: darken($mid-blue, 30%);
+  background: $slider-background;
   cursor: pointer;
   display: block;
   height: .3em;
@@ -53,7 +54,7 @@ eiti-slider {
     z-index: 50;
 
     &:after {
-      background: #ddd;
+      background: $slider-background;
       border-radius: 500em;
       content: " ";
       display: block;

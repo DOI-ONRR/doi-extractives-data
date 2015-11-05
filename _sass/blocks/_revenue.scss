@@ -43,10 +43,10 @@
 
   .timeline {
     .area {
-      fill: #999;
+      fill: $pale-blue;
 
       &.negative {
-        fill: #ccc;
+        fill: #999;
       }
     }
 

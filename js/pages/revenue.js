@@ -45,7 +45,7 @@
     var props = parseHash();
     return mutateState(function(state) {
       return state.merge(props);
-    }) || render();
+    }) || render(state);
   }
 
   function parseHash() {
@@ -87,7 +87,10 @@
     var commodityFilter = d3.select('#commodity-filter')
       .style('display', group ? null : 'none');
 
-    if (group && group !== previous.get('group')) {
+    var needsCommodityUpdate = group &&
+      (!previous || group !== previous.get('group'));
+
+    if (needsCommodityUpdate) {
       var commodities = getGroupCommodities(group);
       if (!commodities.has(state.get('commodity'))) {
         state = state.delete('commodity');

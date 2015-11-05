@@ -1,0 +1,70 @@
+// Revenues Subpage Intro Section
+//
+// This is the first block on a revenues subpage
+//
+// Styleguide blocks.revenues_subpage_intro
+
+.revenues_subpage-intro {
+  padding-top: $base-padding;
+
+  h1 {
+    @include heading(h1);
+    padding-bottom: ($base-padding / 2);
+  }
+
+  p {
+    padding-bottom: $base-padding;
+  }
+
+}
+
+.revenues_subpage-office {
+  background-color: $white;
+  border: $base-border-size solid $mid-gray;
+  border-radius: $base-border-radius;
+  margin-bottom: $base-padding;
+  padding-top: $base-padding;
+}
+
+.revenues_subpage-office_container {
+  position: relative;
+
+  a {
+    color: $dark-gray;
+  }
+}
+
+.revenues_subpage-office_text {
+
+  @include span-columns(10);
+
+  @include respond-to(medium-up) {
+    @include span-columns(9);
+  }
+
+  padding-left: $base-padding;
+  padding-bottom: $base-padding;
+  padding-right: $base-padding-lite;
+
+}
+
+.revenues_subpage-office_logos {
+
+  @include span-columns(2);  
+
+  @include respond-to(medium-up) {
+    @include span-columns(3);
+  }
+  
+  padding-right: $base-padding;
+  padding-bottom: $base-padding;
+}
+
+.revenues_subpage-office_logo {
+  width: 50px;
+  float: right;
+  margin-bottom: $base-padding-lite;
+
+
+}
+

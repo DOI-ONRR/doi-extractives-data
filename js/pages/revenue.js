@@ -27,6 +27,7 @@
     model.load = function(state, done) {
       if (req) req.abort();
       var url = getDataURL(state);
+      // console.log('model.load():', url);
       return req = eiti.load(url, function(error, data) {
         if (error) data = [];
         applyFilters(data, state, done);
@@ -35,12 +36,12 @@
 
     function getDataURL(state) {
       var region = state.get('region');
-      var path = '../../data/';
+      var path = eiti.data.path;
       path += (!region || region === 'US')
-        ? path + 'regional/'
+        ? 'regional/'
         : region.length === 2
-          ? (path + 'county/by-state/' + region + '/')
-          : (path + 'offshore/')
+          ? 'county/by-state/' + region + '/'
+          : 'offshore/'
       return path + 'revenues.tsv';
     }
 

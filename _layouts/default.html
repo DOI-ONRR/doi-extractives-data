@@ -17,6 +17,7 @@
     <!-- EITI libs -->
     <script src="{{ site.baseurl }}/js/eiti.js"></script>
     <script>
+      eiti.data.path = '{{ site.baseurl }}/data/';
       eiti.commodities = ({{ site.data.commodities|jsonify }});
     </script>
 

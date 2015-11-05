@@ -11,7 +11,7 @@
   var formatNumber = eiti.format.dollars;
   var NULL_FILL = '#eee';
 
-  d3.selectAll('button[aria-controls]')
+  var expanders = d3.selectAll('button[aria-controls]')
     .datum(function() {
       var text = this.textContent;
       return {
@@ -19,14 +19,7 @@
         'false': this.getAttribute('data-collapsed-text') || text
       };
     })
-    .on('click.aria', function(text) {
-      var id = this.getAttribute('aria-controls');
-      var attr = 'aria-expanded';
-      var controls = d3.select('#' + id);
-      var expanded = controls.attr(attr) !== 'true';
-      controls.attr(attr, expanded);
-      this.textContent = text[expanded];
-    });
+    .on('click.aria', toggleExpander);
 
   // get the filters and add change event handlers
   var filters = root.selectAll('.filters [name]')
@@ -61,6 +54,9 @@
 
   function initialize() {
     var props = parseHash();
+    if (Object.keys(props).length) {
+      expanders.each(toggleExpander);
+    }
     return mutateState(function(state) {
       return state.merge(props);
     }) || render(state);
@@ -90,7 +86,7 @@
   }
 
   function render(state, previous) {
-    console.time('render');
+    // console.time('render');
 
     // update the filters
     filters.each(function() {
@@ -144,7 +140,7 @@
     });
 
     selected.call(renderRegion, state);
-    console.timeEnd('render');
+    // console.timeEnd('render');
     return true;
   }
 
@@ -152,17 +148,17 @@
     var regionId = state.get('region') || 'US';
     var fields = getFields(regionId);
 
-    console.log('loading', regionId);
-    console.time('load');
+    // console.log('loading', regionId);
+    // console.time('load');
     model.load(state, function(error, data) {
-      console.timeEnd('load');
+      // console.timeEnd('load');
 
       if (error) {
         console.warn('error:', error.status, error.statusText);
         data = [];
       }
 
-      console.time('render regions');
+      // console.time('render regions');
 
       var total = d3.sum(data, getter(fields.value));
       total = Math.floor(total);
@@ -213,7 +209,7 @@
         selection
           .call(updateSubregions, features, scale);
 
-        console.timeEnd('render regions');
+        // console.timeEnd('render regions');
       });
     });
   }
@@ -350,6 +346,14 @@
   }
 
   function updateLegend(legend, scale) {
+    var domain = scale.domain();
+    if (domain.some(isNaN)) {
+      legend.classed('legend-invalid', true);
+      return;
+    }
+
+    legend.classed('legend-invalid', false);
+
     var data = scale.range().map(function(y) {
         return {
           color: y,
@@ -402,7 +406,6 @@
       value: 'Revenue',
       featureId: 'id'
     };
-    var field = 'Region';
     if (!regionId) return fields;
     switch (regionId.length) {
       case 2:
@@ -476,7 +479,7 @@
     // the `|| -100` and `|| 100` bits here ensure that the domain has some
     // size, even if there is no data from which to derive an extent.
     var yDomain = [
-      negativeExtent[0] || -100,
+      negativeExtent[0] || 0,
       positiveExtent[1] || 100
     ];
     // the y-axis scale, with the zero point at 3/4 the height
@@ -545,6 +548,14 @@
         .attr('x', w)
         .attr('width', w)
         .attr('height', h);
+      mask.append('line')
+        .attr('class', 'before')
+        .attr('y1', 0)
+        .attr('y2', h);
+      mask.append('line')
+        .attr('class', 'after')
+        .attr('y1', 0)
+        .attr('y2', h);
     }
 
     var updated = selection.property('updated');
@@ -556,10 +567,25 @@
       };
     }
 
-    mask.select('.before')
-      .attr('width', x(slider.value));
-    mask.select('.after')
-      .attr('x', x(slider.value + 1));
+    var year1 = slider.value;
+    var year2 = slider.value + 1;
+    var beforeX = Math.max(x(year1), 1);
+    var afterX = Math.min(x(year2), w - 1);
+    // don't transition these
+    mask.select('rect.before')
+      .attr('width', beforeX);
+    mask.select('rect.after')
+      .attr('x', afterX);
+    mask.select('line.before')
+      .attr('transform', 'translate(' + [beforeX, 0] + ')');
+    mask.select('line.after')
+      .attr('transform', 'translate(' + [afterX, 0] + ')');
+
+    // transition these
+    // mask = t(mask);
+    mask.selectAll('line')
+      .attr('y1', y(positiveYears[year1] || 0))
+      .attr('y2', y(negativeYears[year1] || 0));
 
     zero.select('line')
       .attr('x1', left)
@@ -670,6 +696,15 @@
       });
       d3.event.preventDefault();
     };
+  }
+
+  function toggleExpander(text) {
+    var id = this.getAttribute('aria-controls');
+    var attr = 'aria-expanded';
+    var controls = d3.select('#' + id);
+    var expanded = controls.attr(attr) !== 'true';
+    controls.attr(attr, expanded);
+    this.textContent = text[expanded];
   }
 
   function identity(d) {

@@ -92,6 +92,8 @@ permalink: /explore/revenue/
       <h1>{{ region.name }}</h1>
       <h2 class="total">$0</h2>
 
+      <div class="map-legend"></div>
+
       <svg is="eiti-map" id="{{ region.id }}-map" simplify="1e-2"
         projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/" zoom-to="{{ region.id }}">
         <g class="onshore states" data-url="us-topology.json"

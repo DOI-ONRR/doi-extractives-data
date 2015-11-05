@@ -2,7 +2,7 @@
 
   var state = new Immutable.Map();
   var getter = eiti.data.getter;
-  var NONE_FILL = '#f7f7f7';
+  var NULL_FILL = '#eee';
 
   var regionSections = d3.selectAll('.regions > .region');
   var formatNumber = eiti.format.dollars;
@@ -149,7 +149,7 @@
   }
 
   function renderRegion(selection, state) {
-    var regionId = state.get('region');
+    var regionId = state.get('region') || 'US';
     var fields = getFields(regionId);
 
     model.load(state, function(error, data) {
@@ -191,7 +191,7 @@
         subregions.style('fill', function(d) {
           var v = value(d);
           return v === undefined
-            ? NONE_FILL
+            ? NULL_FILL
             : scale(v);
         });
 
@@ -338,22 +338,37 @@
           range: scale.invertExtent(y)
         };
       });
-    data.push({
-      color: NONE_FILL,
-      range: ['no value']
+
+    data.unshift({
+      color: NULL_FILL,
+      range: ['no data'],
+      none: true
     });
+
+    var last = data.length - 1;
+
     var steps = legend.selectAll('.step')
       .data(data);
 
     steps.exit().remove();
     steps.enter().append('div')
-      .attr('class', 'step');
+      .attr('class', 'step')
+      .append('span')
+        .attr('class', 'label');
 
     steps
-      .style('background-color', getter('color'))
+      .style('border-color', getter('color'))
       .attr('title', function(d) {
         return d.range.join(' to ');
-      });
+      })
+      .select('.label')
+        .text(function(d, i) {
+          return d.none
+            ? d.range[0]
+            : i === last
+              ? formatNumber(d.range[0]) + '+'
+              : formatNumber(d.range[0]);
+        });
   }
 
   function getGroupCommodities(group) {

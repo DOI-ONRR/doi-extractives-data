@@ -27,7 +27,9 @@ section.revenue {
   .map-legend .step {
     display: block;
     flex: 1;
-    height: 1em;
+    border-bottom-style: solid;
+    border-bottom-width: .5em;
+    padding-left: .1em;
   }
 
   .timeline {

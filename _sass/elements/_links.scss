@@ -43,10 +43,12 @@ p a,
   }
 
 }
+
 .link-beta {
   @extend %link;
   color: $white;
 }
+
 a,
 .link-charlie {
   @extend %link;

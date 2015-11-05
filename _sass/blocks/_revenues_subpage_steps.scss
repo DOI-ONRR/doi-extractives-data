@@ -43,11 +43,11 @@ $onshore-renewables-secondary-color: $blue;
   @include heading('para-sm');
 }
 .revenues_subpage-dyk_heading {
-  font-weight: $weight-bold;
-  color: $white;
   background-color: $offshore-oil-secondary-color;
-  padding: $base-padding;
+  color: $white;
+  font-weight: $weight-bold;
   margin: 0;
+  padding: $base-padding;
   text-align: left;
 }
 
@@ -93,10 +93,13 @@ $onshore-renewables-secondary-color: $blue;
   }
 
   @include respond-to(medium-up) {
+
     @include direction-context(right-to-left) {
+
       @include span-columns(7);
+
     }
-    // @include shift(3);
+
     padding-bottom: 6.225em; // 100px twice $base-padding-extra;
   }
 

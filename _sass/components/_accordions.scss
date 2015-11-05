@@ -21,15 +21,19 @@
     .accordion-button:after {
       content: "\f077";
     }
+
     .accordion-button_more {
       display: none;
     }
+
     .accordion-button_less {
+      display: inline-block;
+
       &::after {
         content: '–';
       }
-      display: inline-block;
     }
+
     .accordion-content,
     .accordion-more {
       display: inline-block;
@@ -43,14 +47,17 @@
     }
 
     .accordion-button_more {
-      display: inline-block;
       &::after {
         content: '+';
       }
+
+      display: inline-block; 
     }
+
     .accordion-button_less {
       display: none;
     }
+
     .accordion-content {
 
       @include respond-to(medium-up) {
@@ -63,6 +70,7 @@
     .accordion-more {
       display: none; 
     }
+    
   }
 
 

@@ -3,61 +3,30 @@
 // This is the first block on a revenues subpage
 //
 // Styleguide blocks.revenues_subpage_intro
-.revenues_subpage-intro_wrapper {
-  border-top: 1px solid $mid-gray;
-}
 
 .revenues_subpage-intro {
-  padding-top: $base-padding-extra;
+  padding-top: $base-padding;
 
   h1 {
-    line-height: 2rem;
-    margin-bottom: 0.7rem;
+    @include heading(h1);
+    padding-bottom: ($base-padding / 2);
   }
 
-}
-
-.revenues_subpage-intro_text{
-
-  @include heading('para-lg');
-
-  padding-bottom: $base-padding;
-}
-
-.revenues_subpage-breadcrumb {
-  color: $dark-gray;
-  @include heading('para-lg');
+  p {
+    padding-bottom: $base-padding;
+  }
 
 }
 
 .revenues_subpage-office {
   background-color: $white;
-
-  &:first-child {
-    border-top-left-radius: $base-border-radius;
-    border-top-right-radius: $base-border-radius;
-    padding-top: $base-padding;
-  }
-
-  &:last-child {
-    border-bottom-left-radius: $base-border-radius;
-    border-bottom-right-radius: $base-border-radius;
-    margin-bottom: $base-padding-extra;
-  }
-
+  border: $base-border-size solid $mid-gray;
+  border-radius: $base-border-radius;
+  margin-bottom: $base-padding;
+  padding-top: $base-padding;
 }
 
 .revenues_subpage-office_container {
-
-  @extend %container-side;
-
-  @include respond-to(medium-up) {
-
-    @include span-columns(3);
-    @include shift(1);
-
-  }
-
   position: relative;
 
   a {
@@ -74,17 +43,9 @@
   }
 
   padding-left: $base-padding;
-  padding-bottom: 0;
+  padding-bottom: $base-padding;
   padding-right: $base-padding-lite;
 
-  strong {
-    font-weight: $weight-book;
-  }
-
-}
-.revenues_subpage-office_text,
-.revenues_subpage-office_text p {
-  @include heading('para-sm');
 }
 
 .revenues_subpage-office_logos {
@@ -100,8 +61,10 @@
 }
 
 .revenues_subpage-office_logo {
+  width: 50px;
   float: right;
   margin-bottom: $base-padding-lite;
-  width: 40px;
+
+
 }
 

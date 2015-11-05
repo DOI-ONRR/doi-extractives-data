@@ -15,7 +15,10 @@
 .sticky_nav-nav_item {
   list-style-type: none;
   padding: $base-padding-lite;
+  @include heading('para-lg');
+  margin-bottom: 0;
   &.active a {
-    border-bottom: 1px dotted $base-link-color;
+    color: $dark-gray;
+    font-weight: $weight-book;
   }
 }

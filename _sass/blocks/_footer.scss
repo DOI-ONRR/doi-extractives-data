@@ -19,7 +19,7 @@ footer,
 }
 
 .footer-col {
-  @include span-columns(3);
+  @include span-columns(2);
   margin-top: $base-padding;
 
   &:first-of-type {

@@ -20,8 +20,10 @@
   }
 
   svg[is='eiti-map'] {
+    display: block;
     height: 250px;
     max-height: 30vh; // 30% of the viewport height
+    max-width: 100%;
   }
 
   .regions .region {

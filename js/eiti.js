@@ -58,6 +58,16 @@
         if (!error) cache.set(url, data);
         process(req.callbacks, error, data);
       });
+
+      // override the abort() method to remove this
+      // request from the loading map
+      var abort = req.abort;
+      req.abort = function() {
+        // console.info('[eiti.load] aborted:', url);
+        loading.remove(url);
+        abort();
+      };
+
       req.callbacks = [done];
       loading.set(url, req);
       return req;

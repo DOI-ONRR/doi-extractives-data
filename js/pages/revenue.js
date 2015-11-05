@@ -147,21 +147,25 @@
       state = state.delete('commodity');
 
       var commodities = getGroupCommodities(group).toJS();
-      var select = commodityFilter
-        .select('select')
-          .property('selectedIndex', 0);
-      var value = select.property('value');
-      var options = select
-        .selectAll('option.commodity')
-        .data(commodities);
-      options.exit()
-        .remove();
-      options.enter()
-        .append('option')
-          .attr('class', 'commodity');
-      options
-        .attr('value', identity)
-        .text(identity);
+      if (commodities.length > 1) {
+        var select = commodityFilter
+          .select('select')
+            .property('selectedIndex', 0);
+        var value = select.property('value');
+        var options = select
+          .selectAll('option.commodity')
+          .data(commodities);
+        options.exit()
+          .remove();
+        options.enter()
+          .append('option')
+            .attr('class', 'commodity');
+        options
+          .attr('value', identity)
+          .text(identity);
+      } else {
+        commodityFilter.style('display', 'none');
+      }
     }
 
     model.on('yearly', function(data) {

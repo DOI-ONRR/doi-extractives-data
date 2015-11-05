@@ -3,15 +3,16 @@
   var state = new Immutable.Map();
   var mutating = false;
 
-  var regionSections = d3.selectAll('.regions > .region');
-  var timeline = d3.select('#timeline');
+  var root = d3.select('#revenue');
+  var regionSections = root.selectAll('.regions > .region');
+  var timeline = root.select('#timeline');
 
   var getter = eiti.data.getter;
   var formatNumber = eiti.format.dollars;
   var NULL_FILL = '#eee';
 
   // get the filters and add change event handlers
-  var filters = d3.selectAll('.filters [name]')
+  var filters = root.selectAll('.filters [name]')
     // intialize the state props
     .each(function() {
       state = state.set(this.name, this.value);
@@ -87,7 +88,7 @@
       .filter('.active');
 
     var group = state.get('group');
-    var commodityFilter = d3.select('#commodity-filter')
+    var commodityFilter = root.select('#commodity-filter')
       .style('display', group ? null : 'none');
 
     var needsCommodityUpdate = group &&
@@ -223,7 +224,7 @@
     var enter = items.enter()
       .append('li')
         .attr('class', 'subregion');
-    var title = enter.append('h2')
+    var title = enter.append('h4')
       .attr('class', 'subregion-name');
     title.append('span')
       .attr('class', 'color-swatch');
@@ -309,7 +310,7 @@
       : [0, max];
 
     var colors = (min < 0)
-      ? colorbrewer.PuBuGn
+      ? colorbrewer.Blues
       : colorbrewer.Blues;
     if (max >= 1e9) {
       colors = colors[9];
@@ -319,6 +320,11 @@
     } else {
       colors = colors[5];
     }
+
+    domain = d3.scale.linear()
+      .domain(domain)
+      .nice()
+      .domain();
 
     return d3.scale.quantize()
       .domain(domain)
@@ -353,7 +359,9 @@
     steps
       .style('border-color', getter('color'))
       .attr('title', function(d) {
-        return d.range.join(' to ');
+        return d.range
+          .map(Math.round)
+          .join(' to ');
       })
       .select('.label')
         .text(function(d, i) {
@@ -418,7 +426,7 @@
     var negativeExtent = d3.extent(d3.values(negativeYears));
 
     // get the slider to determine the year range
-    var slider = d3.select('#year-selector').node();
+    var slider = root.select('#year-selector').node();
 
     // XXX: d3.range() is exclusive, so we need to add two
     // in order to include the last year *and* make the area render the right
@@ -438,13 +446,13 @@
       selection.attr('viewBox', [0, 0, w, h].join(' '));
     }
 
-    var left = 20;
+    var left = 0; // XXX need to make room for axis labels
     var right = w;
 
     // the x-axis scale
     var x = d3.scale.linear()
       .domain(d3.extent(years))
-      .range([left, right]);
+      .range([left, right + 2]);
 
     // the y-axis domain sets a specific point for zero.
     // the `|| -100` and `|| 100` bits here ensure that the domain has some
@@ -505,6 +513,22 @@
         // .text(0);
     }
 
+    var mask = selection.select('g.mask');
+    if (mask.empty()) {
+      mask = selection.append('g')
+        .attr('class', 'mask');
+      mask.append('rect')
+        .attr('class', 'before')
+        .attr('x', 0)
+        .attr('width', 0)
+        .attr('height', h);
+      mask.append('rect')
+        .attr('class', 'after')
+        .attr('x', w)
+        .attr('width', w)
+        .attr('height', h);
+    }
+
     var updated = selection.property('updated');
     var t = function(d) { return d; };
     if (updated) {
@@ -513,6 +537,11 @@
           .duration(500);
       };
     }
+
+    mask.select('.before')
+      .attr('width', x(slider.value));
+    mask.select('.after')
+      .attr('x', x(slider.value + 1));
 
     zero.select('line')
       .attr('x1', left)
@@ -572,9 +601,7 @@
         });
       }
 
-      if (!previous || !onlyYearDiffers(state, previous)) {
-        dispatch.yearly(data);
-      }
+      dispatch.yearly(data);
 
       var year = state.get('year');
       if (year) {

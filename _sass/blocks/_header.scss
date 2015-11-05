@@ -137,14 +137,3 @@ header,
 .header-nav_item_link_spacer {
   color: $dark-gray;
 }
-
-.header-glossary {
-  background-color: $white;
-  border: 1px solid $mid-gray;
-  padding: $base-padding;
-  padding-left: $base-padding-extra;
-  padding-right: $base-padding-extra;
-  position: fixed;
-  right: 0;
-  z-index: $z-mid;
-}

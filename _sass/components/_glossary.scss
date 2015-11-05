@@ -163,11 +163,13 @@
 .term {
   @include transition(background-color, .2s, box-shadow, .2s, color, .2s);
   box-shadow: 0 0 0 4px transparent;
-  border-bottom: none;
+  border-bottom: 1px dotted $base-font-color;
   cursor: pointer;
+  text-decoration: none;
   &:focus,
   &:hover {
-    border-bottom: 1px dotted $base-font-color;
+    border-bottom: 1px solid $base-font-color;
+    text-decoration: none;
   }
 }
 .term-icon {

@@ -9,7 +9,7 @@
   <nav class="header-nav">
     <ul class="header-nav_top">
       <li class="header-nav_item_top">
-        <a class="header-nav_item_link_top" href="{{ site.baseurl }}/">Glossary</a>
+        <a class="header-nav_item_link_top js-glossary-toggle" alt="this is the glossary drawer">Glossary</a>
       </li>
       <span class="header-nav_item_link_spacer"> | </span>
       <li class="header-nav_item_top">
@@ -35,12 +35,7 @@
       <li class="header-nav_item {% if page.permalink == '/communities/' %}active{% endif %}">
         <a class="header-nav_item_link" href="{{ site.baseurl }}/communities/">Local Impact</a>
       </li>
-      <li class="header-nav_item {% if page.permalink == '/data/' %}active{% endif %}">
-        <a class="header-nav_item_link" href="{{ site.baseurl }}/data/">Downloads</a>
-      </li>
-      <li class="header-nav_item header-glossary">
-        <a class="header-nav_item_link js-glossary-toggle" href="#" title="View site glossary"><img src="{{ site.baseurl }}/img/icons/glossary/icon-book-nav.svg" alt="this is the glossary drawer"></a>
-      </li>
+
     </ul>
   </nav>
 

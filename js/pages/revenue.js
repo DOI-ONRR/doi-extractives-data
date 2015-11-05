@@ -2,12 +2,15 @@
 
   var state = new Immutable.Map();
   var mutating = false;
-  var getter = eiti.data.getter;
-  var NULL_FILL = '#eee';
 
   var regionSections = d3.selectAll('.regions > .region');
-  var formatNumber = eiti.format.dollars;
+  var timeline = d3.select('#timeline');
 
+  var getter = eiti.data.getter;
+  var formatNumber = eiti.format.dollars;
+  var NULL_FILL = '#eee';
+
+  // get the filters and add change event handlers
   var filters = d3.selectAll('.filters [name]')
     // intialize the state props
     .each(function() {
@@ -22,8 +25,13 @@
       });
     });
 
-  var timeline = d3.select('#timeline');
+  // create our data "model"
+  var model = createModel();
 
+  // kick off the "app"
+  initialize();
+
+  // when the hash changes, update the state
   d3.select(window)
     .on('hashchange', function() {
       if (mutating) return;
@@ -32,72 +40,6 @@
         return new Immutable.Map(props);
       });
     });
-
-  var model = (function() {
-    var model = {};
-    var dispatch = d3.dispatch('yearly');
-    var req;
-    var previous;
-
-    model.load = function(state, done) {
-      if (req) req.abort();
-      var url = getDataURL(state);
-      // console.log('model.load():', url);
-      return req = eiti.load(url, function(error, data) {
-        if (error) data = [];
-        applyFilters(data, state, done);
-      });
-    };
-
-    function getDataURL(state) {
-      var region = state.get('region');
-      var path = eiti.data.path;
-      path += (!region || region === 'US')
-        ? 'regional/'
-        : region.length === 2
-          ? 'county/by-state/' + region + '/'
-          : 'offshore/'
-      return path + 'revenues.tsv';
-    }
-
-    function applyFilters(data, state, done) {
-      // console.log('applying filters:', state.toJS());
-
-      var commodity = state.get('commodity');
-      var group = state.get('group');
-      if (commodity) {
-        data = data.filter(function(d) {
-          return d.Commodity === commodity;
-        });
-      } else if (group) {
-        var commodities = getGroupCommodities(group);
-        data = data.filter(function(d) {
-          return commodities.has(d.Commodity);
-        });
-      }
-
-      if (!previous || !onlyYearDiffers(state, previous)) {
-        dispatch.yearly(data);
-      }
-
-      var year = state.get('year');
-      if (year) {
-        data = data.filter(function(d) {
-          // XXX jshint ignore
-          return d.Year == year;
-        });
-      }
-
-      // console.log('filtered to %d rows', data.length);
-      previous = state;
-
-      return done(null, data);
-    }
-
-    return d3.rebind(model, dispatch, 'on');
-  })();
-
-  initialize();
 
   function initialize() {
     var props = parseHash();
@@ -127,9 +69,11 @@
   }
 
   function render(state, previous) {
+    console.time('render');
+
     // update the filters
     filters.each(function() {
-      this.value = state.get(this.name);
+      this.value = state.get(this.name) || '';
     });
 
     var region = state.get('region') || 'US';
@@ -144,13 +88,15 @@
       .style('display', group ? null : 'none');
 
     if (group && group !== previous.get('group')) {
-      state = state.delete('commodity');
+      var commodities = getGroupCommodities(group);
+      if (!commodities.has(state.get('commodity'))) {
+        state = state.delete('commodity');
+      }
 
-      var commodities = getGroupCommodities(group).toJS();
+      commodities = commodities.toJS();
       if (commodities.length > 1) {
         var select = commodityFilter
-          .select('select')
-            .property('selectedIndex', 0);
+          .select('select');
         var value = select.property('value');
         var options = select
           .selectAll('option.commodity')
@@ -163,6 +109,8 @@
         options
           .attr('value', identity)
           .text(identity);
+
+        select.property('value', state.get('commodity') || '');
       } else {
         commodityFilter.style('display', 'none');
       }
@@ -173,6 +121,7 @@
     });
 
     selected.call(renderRegion, state);
+    console.timeEnd('render');
     return true;
   }
 
@@ -180,11 +129,17 @@
     var regionId = state.get('region') || 'US';
     var fields = getFields(regionId);
 
+    console.log('loading', regionId);
+    console.time('load');
     model.load(state, function(error, data) {
+      console.timeEnd('load');
+
       if (error) {
         console.warn('error:', error.status, error.statusText);
         data = [];
       }
+
+      console.time('render regions');
 
       var total = d3.sum(data, getter(fields.value));
       total = Math.floor(total);
@@ -234,6 +189,8 @@
 
         selection
           .call(updateSubregions, features, scale);
+
+        console.timeEnd('render regions');
       });
     });
   }
@@ -567,6 +524,70 @@
       return area(d.values);
     });
     selection.property('updated', true);
+  }
+
+  function createModel() {
+    var model = {};
+    var dispatch = d3.dispatch('yearly');
+    var req;
+    var previous;
+
+    model.load = function(state, done) {
+      if (req) req.abort();
+      var url = getDataURL(state);
+      // console.log('model.load():', url);
+      return req = eiti.load(url, function(error, data) {
+        if (error) data = [];
+        applyFilters(data, state, done);
+      });
+    };
+
+    function getDataURL(state) {
+      var region = state.get('region');
+      var path = eiti.data.path;
+      path += (!region || region === 'US')
+        ? 'regional/'
+        : region.length === 2
+          ? 'county/by-state/' + region + '/'
+          : 'offshore/'
+      return path + 'revenues.tsv';
+    }
+
+    function applyFilters(data, state, done) {
+      // console.log('applying filters:', state.toJS());
+
+      var commodity = state.get('commodity');
+      var group = state.get('group');
+      if (commodity) {
+        data = data.filter(function(d) {
+          return d.Commodity === commodity;
+        });
+      } else if (group) {
+        var commodities = getGroupCommodities(group);
+        data = data.filter(function(d) {
+          return commodities.has(d.Commodity);
+        });
+      }
+
+      if (!previous || !onlyYearDiffers(state, previous)) {
+        dispatch.yearly(data);
+      }
+
+      var year = state.get('year');
+      if (year) {
+        data = data.filter(function(d) {
+          // XXX jshint ignore
+          return d.Year == year;
+        });
+      }
+
+      // console.log('filtered to %d rows', data.length);
+      previous = state;
+
+      return done(null, data);
+    }
+
+    return d3.rebind(model, dispatch, 'on');
   }
 
   function onlyYearDiffers(a, b) {

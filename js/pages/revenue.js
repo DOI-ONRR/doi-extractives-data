@@ -645,6 +645,15 @@
         });
       }
 
+      var region = state.get('region');
+      if (region && region.length === 3) {
+        var fields = getFields(region);
+        var regionName = REGION_ID_NAME[region];
+        data = data.filter(function(d) {
+          return d[fields.region] === regionName;
+        });
+      }
+
       dispatch.yearly(data);
 
       var year = state.get('year');
@@ -677,7 +686,7 @@
        : 'all commodities')
     var data = {
       commodity: commodity.toLowerCase(),
-      region: state.get('region') || 'the entire U.S.',
+      region: REGION_ID_NAME[state.get('region') || 'US'],
       year: state.get('year')
     };
 

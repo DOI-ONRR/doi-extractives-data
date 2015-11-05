@@ -714,6 +714,7 @@
     var expanded = controls.attr(attr) !== 'true';
     controls.attr(attr, expanded);
     this.textContent = text[expanded];
+    this.setAttribute('aria-expanded', expanded);
   }
 
   function identity(d) {

@@ -54,6 +54,13 @@ section.revenue {
     .subregion-name {
       @include span-columns(8);
       margin: 0;
+
+      .color-swatch {
+        display: inline-block;
+        height: .7em;
+        margin-right: .2em;
+        width: .7em;
+      }
     }
 
     .subregion-chart {
@@ -74,6 +81,8 @@ section.revenue {
         display: inline-block;
         height: 1em;
         min-width: .5px;
+        transition: width .2s;
+        width: 0%;
       }
 
       &.negative {
@@ -81,6 +90,10 @@ section.revenue {
 
         .label {
           float: left;
+        }
+
+        .value {
+          background: #ccc;
         }
       }
     }

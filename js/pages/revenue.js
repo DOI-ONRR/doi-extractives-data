@@ -569,8 +569,8 @@
 
     var year1 = slider.value;
     var year2 = slider.value + 1;
-    var beforeX = Math.max(x(year1), 1);
-    var afterX = Math.min(x(year2), w - 1);
+    var beforeX = x(year1);
+    var afterX = Math.min(x(year2), w);
     // don't transition these
     mask.select('rect.before')
       .attr('width', beforeX);

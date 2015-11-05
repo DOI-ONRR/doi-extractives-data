@@ -26,7 +26,7 @@
       <li class="header-nav_item {% if page.title == 'Home' %}active{% endif %}">
         <a class="header-nav_item_link" href="{{ site.baseurl }}/">Home</a>
       </li>
-      <li class="header-nav_item {% page.permalink == '/about/' %}active{% endif %}">
+      <li class="header-nav_item {% if page.permalink == '/about/' %}active{% endif %}">
         <a class="header-nav_item_link" href="{{ site.baseurl }}/about/">About USEITI</a>
       </li>
       <li class="header-nav_item {% if page.permalink == '/resource_revenues/' %}active{% endif %}">

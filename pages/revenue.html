@@ -1,5 +1,5 @@
 ---
-title: Revenue
+title: Explore Revenue
 layout: default
 permalink: /explore/revenue/
 ---
@@ -8,12 +8,30 @@ permalink: /explore/revenue/
     <div class="container-outer">
       <h1>Revenue</h1>
 
-      <p><strong>Something about revenue here.</strong> Lorem ipsum.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+        elit. Praesent eget justo sodales neque fermentum
+        consequat eu sit amet libero. Aliquam eu eleifend leo.
+        Donec sem dolor, volutpat quis tortor pretium,
+        tincidunt pretium massa. Curabitur sed euismod velit.
+        Aenean eu venenatis turpis, mattis tempus orci.
+        Maecenas laoreet, ex ac vulputate vestibulum, elit mi
+        auctor odio, quis imperdiet diam ligula eu quam. Fusce
+        vitae lorem elit. Donec urna orci, pulvinar at sem
+        vulputate, tincidunt bibendum lacus. Maecenas
+        imperdiet ex ut porttitor mattis. Nunc id purus
+        sodales, rhoncus magna sit amet, eleifend enim.
+        Pellentesque sit amet dictum lacus. Curabitur in
+        tincidunt mauris, vitae volutpat orci. Nunc eleifend
+        arcu ut malesuada aliquet.</p>
     </div>
   </div>
 
   <div class="slab-foxtrot">
-    <form class="filters container-outer">
+    <div class="container-outer">
+      <button aria-controls="filters" data-expanded-text="Hide Filters">Show Filters</button>
+    </div>
+
+    <form id="filters" aria-expanded="false" class="filters container-outer">
       <div class="filter">
         <label for="commodity-group-selector">Commodity Category</label>
         <select id="commodity-group-selector" name="group">
@@ -65,7 +83,7 @@ permalink: /explore/revenue/
 
       <section id="US" class="region active">
         <h2>United States</h2>
-        <h2 class="total">$0</h2>
+        <h3 class="total">$0</h3>
 
         <p>Some text about the entire US?</p>
 
@@ -124,8 +142,8 @@ permalink: /explore/revenue/
 
       {% for region in site.data.offshore_areas %}
       <section id="{{ region.id }}" class="region offshore">
-        <h1>{{ region.name }}</h1>
-        <h2 class="total">$0</h2>
+        <h2>{{ region.name }}</h2>
+        <h3 class="total">$0</h3>
 
         <svg is="eiti-map" id="{{ region.id }}-map" simplify="1e-2"
           projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/" zoom-to="{{ region.id }}">

@@ -3,8 +3,9 @@
 	margin-bottom: $base-padding;
 }
 
-.explore-heading {
-
+.explore-heading,
+.explore-heading a {
+	color: $dark-gray;
 }
 
 .explore-description {

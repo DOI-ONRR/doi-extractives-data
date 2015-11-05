@@ -618,7 +618,8 @@
     return function(str) {
       return str.replace(/(\.0+)?([kMG])$/, function(_, zeroes, s) {
         return suffix[s] || s;
-      });
+      })
+      .replace(/\.0+$/, '');
     };
   })();
 
@@ -794,7 +795,8 @@
     qs.format = function(obj, separator, sortKeys) {
       var entries = [];
       for (var key in obj) {
-        if (obj.hasOwnProperty(key) && typeof obj[key] !== 'function' && typeof obj[key] !== 'undefined') {
+        var value = obj[key];
+        if (obj.hasOwnProperty(key) && (typeof value !== 'undefined') && value !== '') {
           entries.push({key: key, value: String(obj[key])});
         }
       }
@@ -833,5 +835,9 @@
 
     return qs;
   })();
+
+  function forEach(list, fn, context) {
+    return Array.prototype.forEach.call(list, fn, context);
+  }
 
 })(this);

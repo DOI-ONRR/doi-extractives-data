@@ -3,137 +3,145 @@ title: Revenue
 layout: default
 permalink: /explore/revenue/
 ---
-<section id="revenue" class="revenue container">
-  <h1>Revenue</h1>
+<section id="revenue">
+  <div class="slab-delta">
+    <div class="container-outer">
+      <h1>Revenue</h1>
 
-  <p><strong>Something about revenue here.</strong> Lorem ipsum.</p>
-
-  <form class="filters container">
-    <div class="filter">
-      <label for="commodity-group-selector">Commodity Category</label>
-      <select id="commodity-group-selector" name="group">
-        <option value="">All</option>
-        {% for group in site.data.commodities.groups %}
-        <option value="{{ group[0] }}">{{ group[1].name }}</option>
-        {% endfor %}
-      </select>
+      <p><strong>Something about revenue here.</strong> Lorem ipsum.</p>
     </div>
-
-    <div id="commodity-filter" class="filter">
-      <label for="commodity-selector">Commodity</label>
-      <select id="commodity-selector" name="commodity">
-        <option value="">All</option>
-      </select>
-    </div>
-
-    <div class="filter">
-      <label for="region-selector">Region</label>
-      <select id="region-selector" name="region">
-        <option value="">All U.S.</option>
-        <optgroup label="States">
-          {% for state in site.data.states %}
-          <option value="{{ state.id }}">{{ state.name }}</option>
-          {% endfor %}
-        </optgroup>
-        <optgroup label="Offshore Areas">
-          {% for area in site.data.offshore_areas %}
-          <option value="{{ area.id }}">{{ area.name }}</option>
-          {% endfor %}
-        </optgroup>
-      </select>
-    </div>
-
-    <svg id="timeline" class="timeline" viewBox="0 0 800 40"></svg>
-
-    <div class="filter">
-      <label for="year-selector">Year</label>
-      <eiti-slider id="year-selector" name="year"
-        min="2004" max="2013" snap="1" value="2013">
-      </eiti-slider>
-    </div>
-
-  </form>
-
-  <div class="regions">
-
-    <section id="US" class="region active">
-      <h1>United States</h1>
-      <h2 class="total">$0</h2>
-
-      <p>Some text about the entire US?</p>
-
-      <div class="map-legend"></div>
-
-      <svg is="eiti-map" id="US-map" simplify="1e-2"
-        projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/">
-        <g class="offshore areas" data-url="offshore-simple.json"
-          data-id="'US-' + id"
-          data-href="'#?region=' + id"
-          data-title="properties.name"
-          data-mesh="true">
-        </g>
-        <g class="onshore states" data-url="us-topology.json"
-          data-object="states"
-          data-id="'US-' + id"
-          data-href="'#?region=' + id"
-          data-title="properties.name || properties.abbr"
-          data-mesh="true">
-        </g>
-      </svg>
-
-      <h3>Revenues by State or Offshore Area</h3>
-      <ol class="subregions">
-      </ol>
-
-    </section>
-
-    {% for region in site.data.states %}
-    <section id="{{ region.id }}" class="region onshore">
-      <h1>{{ region.name }}</h1>
-      <h2 class="total">$0</h2>
-
-      <div class="map-legend"></div>
-
-      <svg is="eiti-map" id="{{ region.id }}-map" simplify="1e-2"
-        projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/" zoom-to="{{ region.id }}">
-        <g class="onshore states" data-url="us-topology.json"
-          data-object="states"
-          data-filter="id === '{{ region.id }}'">
-        </g>
-        <g class="onshore counties" data-url="us-topology.json"
-          data-object="counties"
-          data-filter="properties.state === '{{ region.id }}'"
-          data-title="properties.county"
-          data-mesh="true">
-        </g>
-      </svg>
-
-      <h3>Revenues by County</h3>
-      <ol class="subregions">
-      </ol>
-
-    </section>
-    {% endfor %}
-
-    {% for region in site.data.offshore_areas %}
-    <section id="{{ region.id }}" class="region offshore">
-      <h1>{{ region.name }}</h1>
-      <h2 class="total">$0</h2>
-
-      <svg is="eiti-map" id="{{ region.id }}-map" simplify="1e-2"
-        projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/" zoom-to="{{ region.id }}">
-        <g class="offshore areas" data-url="offshore-simple.json"
-          data-title="properties.name"
-          data-filter="id === '{{ region.id }}'"
-          data-mesh="true">
-        </g>
-      </svg>
-
-    </section>
-    {% endfor %}
-
   </div>
 
+  <div class="slab-foxtrot">
+    <form class="filters container-outer">
+      <div class="filter">
+        <label for="commodity-group-selector">Commodity Category</label>
+        <select id="commodity-group-selector" name="group">
+          <option value="">All</option>
+          {% for group in site.data.commodities.groups %}
+          <option value="{{ group[0] }}">{{ group[1].name }}</option>
+          {% endfor %}
+        </select>
+      </div>
+
+      <div id="commodity-filter" class="filter">
+        <label for="commodity-selector">Commodity</label>
+        <select id="commodity-selector" name="commodity">
+          <option value="">All</option>
+        </select>
+      </div>
+
+      <div class="filter">
+        <label for="region-selector">Region</label>
+        <select id="region-selector" name="region">
+          <option value="">All U.S.</option>
+          <optgroup label="States">
+            {% for state in site.data.states %}
+            <option value="{{ state.id }}">{{ state.name }}</option>
+            {% endfor %}
+          </optgroup>
+          <optgroup label="Offshore Areas">
+            {% for area in site.data.offshore_areas %}
+            <option value="{{ area.id }}">{{ area.name }}</option>
+            {% endfor %}
+          </optgroup>
+        </select>
+      </div>
+
+      <label for="year-selector">Revenue by Year</label>
+      <svg id="timeline" class="timeline" viewBox="0 0 800 40"></svg>
+
+      <div class="filter">
+        <eiti-slider id="year-selector" name="year"
+          min="2004" max="2013" snap="1" value="2013">
+        </eiti-slider>
+      </div>
+
+    </form>
+  </div>
+
+  <div class="slab-alpha">
+    <div class="regions container-outer">
+
+      <section id="US" class="region active">
+        <h2>United States</h2>
+        <h2 class="total">$0</h2>
+
+        <p>Some text about the entire US?</p>
+
+        <div class="map-legend"></div>
+
+        <svg is="eiti-map" id="US-map" simplify="1e-2"
+          projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/">
+          <g class="offshore areas" data-url="offshore-simple.json"
+            data-id="'US-' + id"
+            data-href="'#?region=' + id"
+            data-title="properties.name"
+            data-mesh="true">
+          </g>
+          <g class="onshore states" data-url="us-topology.json"
+            data-object="states"
+            data-id="'US-' + id"
+            data-href="'#?region=' + id"
+            data-title="properties.name || properties.abbr"
+            data-mesh="true">
+          </g>
+        </svg>
+
+        <h3>Revenues by State or Offshore Area</h3>
+        <ol class="subregions">
+        </ol>
+
+      </section>
+
+      {% for region in site.data.states %}
+      <section id="{{ region.id }}" class="region onshore">
+        <h2>{{ region.name }}</h2>
+        <h3 class="total">$0</h3>
+
+        <div class="map-legend"></div>
+
+        <svg is="eiti-map" id="{{ region.id }}-map" simplify="1e-2"
+          projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/" zoom-to="{{ region.id }}">
+          <g class="onshore states" data-url="us-topology.json"
+            data-object="states"
+            data-filter="id === '{{ region.id }}'">
+          </g>
+          <g class="onshore counties" data-url="us-topology.json"
+            data-object="counties"
+            data-filter="properties.state === '{{ region.id }}'"
+            data-title="properties.county"
+            data-mesh="true">
+          </g>
+        </svg>
+
+        <h3>Revenues by County</h3>
+        <ol class="subregions">
+        </ol>
+
+      </section>
+      {% endfor %}
+
+      {% for region in site.data.offshore_areas %}
+      <section id="{{ region.id }}" class="region offshore">
+        <h1>{{ region.name }}</h1>
+        <h2 class="total">$0</h2>
+
+        <svg is="eiti-map" id="{{ region.id }}-map" simplify="1e-2"
+          projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/" zoom-to="{{ region.id }}">
+          <g class="offshore areas" data-url="offshore-simple.json"
+            data-title="properties.name"
+            data-filter="id === '{{ region.id }}'"
+            data-mesh="true">
+          </g>
+        </svg>
+
+      </section>
+      {% endfor %}
+
+    </div>
+
+  </div>
 </section>
 <script src="{{ site.baseurl }}/js/vendor/immutable.min.js"></script>
 <script src="{{ site.baseurl }}/js/pages/revenue.js"></script>

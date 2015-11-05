@@ -4,7 +4,16 @@
 //
 // Styleguide blocks.revenue
 
-section.revenue {
+#revenue {
+
+  div[class^=slab] {
+    padding-bottom: 1em;
+    padding-top: 1em;
+  }
+
+  eiti-slider {
+    margin-top: 1em;
+  }
 
   svg[is='eiti-map'] {
     height: 250px;
@@ -41,12 +50,26 @@ section.revenue {
       }
     }
 
+    /*
     .zero line {
       fill: none;
       stroke: black;
       stroke-linecap: square;
       stroke-width: .5;
       vector-effect: non-scaling-stroke;
+    }
+    */
+
+    .mask {
+      fill: white;
+      opacity: .6;
+    }
+
+  }
+
+  .slab-foxtrot .timeline {
+    .mask {
+      fill: $mid-blue;
     }
   }
 

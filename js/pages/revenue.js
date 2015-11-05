@@ -164,10 +164,7 @@
 
       var map = selection.select('[is="eiti-map"]');
       onMapLoaded(map, function() {
-        var subregions = map.selectAll('path.feature')
-          .filter(function(d) {
-            return d.id !== regionId;
-          });
+        var subregions = map.selectAll('path.feature');
 
         var features = subregions.data();
         var dataByFeatureId = d3.nest()
@@ -231,8 +228,12 @@
     var enter = items.enter()
       .append('li')
         .attr('class', 'subregion');
-    enter.append('h2')
-      .attr('class', 'subregion-name')
+    var title = enter.append('h2')
+      .attr('class', 'subregion-name');
+    title.append('span')
+      .attr('class', 'color-swatch');
+    title.append('span')
+      .attr('class', 'text')
       .text(function(f) {
         // XXX all features need a name!
         return f.properties.name || f.id;
@@ -245,8 +246,12 @@
       return d3.descending(a.value, b.value);
     });
 
+    items.select('.color-swatch')
+      .style('background-color', function(d) {
+        return scale(d.value);
+      });
     items.select('.subregion-chart')
-      .call(updateBarChart);
+      .call(updateBarChart, scale);
   }
 
   function createBarChart(selection) {
@@ -266,7 +271,7 @@
       .attr('class', 'label');
   }
 
-  function updateBarChart(selection) {
+  function updateBarChart(selection, colorScale) {
     var values = selection.data().map(function(d) {
       return d.value;
     });
@@ -292,6 +297,10 @@
         .text(value ? formatNumber(value) : '');
       selection.select('.value')
         .style('width', scale(Math.abs(value)));
+      /*
+        .style('background-color',
+               value ? colorScale(value) : null);
+      */
     }
   }
 
@@ -419,7 +428,7 @@
       selection.attr('viewBox', [0, 0, w, h].join(' '));
     }
 
-    var left = w / 10;
+    var left = 20;
     var right = w;
 
     // the x-axis scale
@@ -482,8 +491,8 @@
       zero.append('text')
         .attr('class', 'label')
         .attr('text-anchor', 'end')
-        .attr('dy', .5)
-        .text(0);
+        .attr('dy', .5);
+        // .text(0);
     }
 
     var updated = selection.property('updated');

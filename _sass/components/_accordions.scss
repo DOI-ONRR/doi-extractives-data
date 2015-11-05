@@ -21,15 +21,35 @@
     .accordion-button:after {
       content: "\f077";
     }
-
-    .accordion-content {
+    .accordion-button_more {
+      display: none;
+    }
+    .accordion-button_less {
+      &::after {
+        content: '–';
+      }
       display: inline-block;
     }
+    .accordion-content,
+    .accordion-more {
+      display: inline-block;
+    }
+
   }
 
   &[accordion-open=false] {
     .accordion-button:after {
       content: "\f078";
+    }
+
+    .accordion-button_more {
+      display: inline-block;
+      &::after {
+        content: '+';
+      }
+    }
+    .accordion-button_less {
+      display: none;
     }
     .accordion-content {
 
@@ -37,6 +57,10 @@
         display: inline-block;
       }
 
+      display: none; 
+    }
+
+    .accordion-more {
       display: none; 
     }
   }

@@ -29,7 +29,11 @@ $onshore-renewables-secondary-color: $blue;
     display: block;
     margin-top: 40%;
     @include span-columns(2);
+    &[accordion-open=true] {
+      @include span-columns(3);
+    }
   }
+
 }
 
 
@@ -58,7 +62,9 @@ $onshore-renewables-secondary-color: $blue;
   position: absolute;
   right: $base-padding;
   bottom: $base-padding;
-  span {
+
+  span,
+  &::after {
     @include heading(h4);
     line-height: $base-line-height;
     vertical-align: bottom;
@@ -87,9 +93,10 @@ $onshore-renewables-secondary-color: $blue;
   }
 
   @include respond-to(medium-up) {
-
-    @include span-columns(7);
-    @include shift(3);
+    @include direction-context(right-to-left) {
+      @include span-columns(7);
+    }
+    // @include shift(3);
     padding-bottom: 6.225em; // 100px twice $base-padding-extra;
   }
 

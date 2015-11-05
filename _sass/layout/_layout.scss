@@ -114,6 +114,15 @@
 
   }
 }
+.container-right-7 {
+  @extend %container-side;
+
+  @include respond-to(medium-up) {
+
+    @include span-columns(8);
+
+  }
+}
 
 .container-right-8 {
   @extend %container-side;

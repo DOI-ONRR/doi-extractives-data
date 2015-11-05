@@ -47,38 +47,48 @@
   .map-legend {
     display: flex;
     margin-bottom: 1em;
-  }
 
-  .map-legend .step {
-    display: block;
-    flex: 1;
-    border-bottom-style: solid;
-    border-bottom-width: .5em;
-    padding-left: .1em;
+    .step {
+      display: block;
+      flex: 1;
+      border-bottom-style: solid;
+      border-bottom-width: .5em;
+      padding-left: .1em;
+    }
+
+    &.legend-invalid {
+      .step .label {
+        visibility: hidden;
+      }
+    }
   }
 
   .timeline {
+    shape-rendering: crispEdges;
+
+    line {
+      fill: none;
+      stroke: #4b9bbf;
+      stroke-linecap: square;
+      stroke-width: 1;
+      vector-effect: non-scaling-stroke;
+    }
+
     .area {
       fill: $pale-blue;
 
       &.negative {
-        fill: #999;
+        fill: #bbb;
       }
     }
 
-    /*
-    .zero line {
-      fill: none;
-      stroke: black;
-      stroke-linecap: square;
-      stroke-width: .5;
-      vector-effect: non-scaling-stroke;
-    }
-    */
-
     .mask {
       fill: white;
-      opacity: .6;
+      opacity: .5;
+
+      line {
+        stroke-width: 2;
+      }
     }
 
   }
@@ -121,7 +131,6 @@
         background: #999;
         display: inline-block;
         height: 1em;
-        min-width: .5px;
         transition: width .2s;
         width: 0%;
       }

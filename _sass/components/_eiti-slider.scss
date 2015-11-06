@@ -3,7 +3,7 @@ eiti-slider {
   background: $slider-background;
   cursor: pointer;
   display: block;
-  height: .3em;
+  height: 0.3em;
   margin: 2em 25px 2.5em 10px;
   opacity: 1;
   position: relative;
@@ -18,7 +18,7 @@ eiti-slider {
     margin-left: -1em;
     position: absolute;
     text-transform: uppercase;
-    top: -.5em;
+    top: -0.5em;
   }
 
   .handle {
@@ -40,12 +40,12 @@ eiti-slider {
       box-sizing: border-box;
       content: "";
       display: block;
-      height: .6em;
+      height: 0.6em;
       left: 50%;
-      margin: -.3em 0 0 -.1em;
+      margin: -0.3em 0 0 -0.1em;
       position: absolute;
       top: 50%;
-      width: .2em;
+      width: 0.2em;
     }
   }
 
@@ -59,7 +59,7 @@ eiti-slider {
       content: " ";
       display: block;
       height: 1.2em;
-      margin: -0.45em 0 0 -.25em;
+      margin: -0.45em 0 0 -0.25em;
       position: absolute;
       width: 1.2em;
     }
@@ -83,7 +83,7 @@ eiti-slider {
 
   @include respond-to(medium-down) {
     .tick .label {
-      font-size: $base-font-size * .8;
+      font-size: $base-font-size * 0.8;
     }
   }
 

@@ -121,7 +121,6 @@
       if (commodities.length > 1) {
         var select = commodityFilter
           .select('select');
-        var value = select.property('value');
         var options = select
           .selectAll('option.commodity')
           .data(commodities);
@@ -712,17 +711,12 @@
     return d3.rebind(model, dispatch, 'on');
   }
 
-  function onlyYearDiffers(a, b) {
-    var c = b.set('year', a.get('year'));
-    return Immutable.is(a, c);
-  }
-
   function updateFilterDescription(state) {
     var desc = root.select('#filter-description');
     var commodity = state.get('commodity') ||
       (state.get('group')
        ? eiti.commodities.groups[state.get('group')].name
-       : 'all commodities')
+       : 'all commodities');
     var data = {
       commodity: commodity.toLowerCase(),
       region: REGION_ID_NAME[state.get('region') || 'US'],

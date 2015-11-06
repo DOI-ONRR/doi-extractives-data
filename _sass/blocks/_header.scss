@@ -63,6 +63,10 @@ header,
   font-weight: $weight-light;
 }
 
+.header-nav_item:last-child {
+  padding-right: 0;
+}
+
 .header-nav_item.active {
   font-weight: $weight-book;
 }

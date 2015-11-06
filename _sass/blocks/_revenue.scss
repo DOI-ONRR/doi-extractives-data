@@ -13,7 +13,7 @@
     color: $dark-blue;
   }
 
-  button.toggle {
+  .toggle {
     background: transparent;
     // border: 1px solid;
     color: $dark-blue;
@@ -176,7 +176,8 @@
     }
   }
 
-  @include respond-to(medium-down) {
+  // smaller screen rules go here
+  @media screen and (max-width: $medium) {
     .map-legend {
       font-size: 0.8em;
     }

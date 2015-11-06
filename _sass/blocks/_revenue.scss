@@ -117,7 +117,7 @@
     }
 
     .mask {
-      fill: white;
+      fill: $mid-blue;
       opacity: .5;
 
       line {
@@ -125,12 +125,6 @@
       }
     }
 
-  }
-
-  .slab-foxtrot .timeline {
-    .mask {
-      fill: $mid-blue;
-    }
   }
 
   .subregion {
@@ -154,34 +148,34 @@
         width: .7em;
       }
     }
+  }
 
-    .subregion-chart {
-      display: inline-block;
-      float: right;
-      height: 1em;
-      margin-top: -1.5em;
-      width: 33%;
-      min-width: 200px;
+  .subregion-chart {
+    display: inline-block;
+    float: right;
+    height: 1em;
+    margin-top: -1.5em;
+    width: 33%;
+    min-width: 200px;
 
-      .bars {
-        display: block;
-        vertical-align: baseline;
+    .bars {
+      display: block;
+      vertical-align: baseline;
 
-        .label {
-          font-weight: $weight-light;
-        }
+      .label {
+        font-weight: $weight-light;
+      }
 
-        .negative .label {
-          font-size: .8em;
-        }
+      .negative .label {
+        font-size: .8em;
+      }
 
-        .negative .bar {
-          fill: $negative-fill;
-        }
+      .negative .bar {
+        fill: $negative-fill;
+      }
 
-        .positive .bar {
-          fill: $dark-gray;
-        }
+      .positive .bar {
+        fill: $dark-gray;
       }
     }
   }

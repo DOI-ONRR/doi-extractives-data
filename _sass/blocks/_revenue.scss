@@ -78,10 +78,6 @@
     display: flex;
     margin-bottom: 1em;
 
-    @include respond-to(medium-down) {
-      font-size: 0.8em;
-    }
-
     .step {
       display: block;
       flex: 1;
@@ -177,6 +173,12 @@
       .positive .bar {
         fill: $dark-gray;
       }
+    }
+  }
+
+  @include respond-to(medium-down) {
+    .map-legend {
+      font-size: 0.8em;
     }
   }
 

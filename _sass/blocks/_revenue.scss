@@ -157,22 +157,22 @@
     .bars {
       display: block;
       vertical-align: baseline;
+    }
 
-      .label {
-        font-weight: $weight-light;
-      }
+    .label {
+      font-weight: $weight-light;
+    }
 
-      .negative .label {
-        font-size: 0.8em;
-      }
+    .negative .label {
+      font-size: 0.8em;
+    }
 
-      .negative .bar {
-        fill: $negative-fill;
-      }
+    .negative .bar {
+      fill: $negative-fill;
+    }
 
-      .positive .bar {
-        fill: $dark-gray;
-      }
+    .positive .bar {
+      fill: $dark-gray;
     }
   }
 

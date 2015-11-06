@@ -281,7 +281,7 @@
         return scale(d.value);
       });
     items.select('.subregion-chart')
-      .call(updateBarChart, scale);
+      .call(updateBarChart);
   }
 
   function createBarChart(selection) {
@@ -305,7 +305,7 @@
       .attr('x', w - 2);
   }
 
-  function updateBarChart(selection, colorScale) {
+  function updateBarChart(selection) {
     if (selection.empty()) return;
 
     var svg = selection.select('svg');

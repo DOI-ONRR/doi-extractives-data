@@ -1,11 +1,23 @@
+.explore-section_top,
 .explore-section {
-	border-bottom: $base-border-size solid $dark-gray;
-	margin-bottom: $base-padding;
+	padding-bottom: $base-padding;
+	padding-top: $base-padding;	
+}
+
+.explore-section {
+	border-bottom: $thin-border-size solid $mid-gray;
+}
+
+.explore-section_category {
+	text-align: center;
+  margin-top: 1.25rem;
+  border-bottom: $thin-border-size solid $mid-gray;
 }
 
 .explore-heading,
 .explore-heading a {
 	color: $dark-gray;
+	display: inline;
 }
 
 .explore-description {

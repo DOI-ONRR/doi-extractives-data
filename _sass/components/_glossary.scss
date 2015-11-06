@@ -173,17 +173,6 @@
   }
 }
 
-.term-icon {
-  background: url('../img/icons/glossary/icon-book.svg') no-repeat;
-  padding-left: 0.75em;
-  margin-left: $base-padding-lite;
-  background-size: 100%;
-}
-
-.term-icon_large {
-  background-position-y: 9px;
-}
-
 .term-p {
   @extend .term;
   margin-right: 0.25rem;

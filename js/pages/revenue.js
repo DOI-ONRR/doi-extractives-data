@@ -644,7 +644,9 @@
     var previous;
 
     model.load = function(state, done) {
-      if (req) req.abort();
+      if (req) {
+        req.abort();
+      }
       var url = getDataURL(state);
       // console.log('model.load():', url);
       req = eiti.load(url, function(error, data) {

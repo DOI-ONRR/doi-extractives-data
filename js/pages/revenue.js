@@ -1,4 +1,5 @@
 (function() {
+  'use strict';
 
   // local alias for region id => name lookups
   var REGION_ID_NAME = eiti.data.REGION_ID_NAME;

@@ -9,9 +9,11 @@
 }
 
 .explore-section_category {
-	text-align: center;
-  margin-top: 1.25rem;
+  margin-top: $base-padding-lite;
+  margin-bottom: 0;
+  padding-bottom: $base-padding-lite;
   border-bottom: $thin-border-size solid $mid-gray;
+
 }
 
 .explore-heading,

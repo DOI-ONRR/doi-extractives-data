@@ -654,7 +654,7 @@
         ? 'regional/'
         : region.length === 2
           ? 'county/by-state/' + region + '/'
-          : 'offshore/'
+          : 'offshore/';
       return path + 'revenues.tsv';
     }
 

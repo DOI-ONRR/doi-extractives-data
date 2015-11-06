@@ -17,7 +17,6 @@ var args = options._;
 var fs = require('fs');
 var tito = require('tito').formats;
 var thru = require('through2').obj;
-var topojson = require('topojson');
 var abbrToName = {};
 
 fs.createReadStream(options.states)

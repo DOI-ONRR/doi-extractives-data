@@ -649,7 +649,9 @@
       var url = getDataURL(state);
       // console.log('model.load():', url);
       req = eiti.load(url, function(error, data) {
-        if (error) data = [];
+        if (error) {
+          data = [];
+        }
         applyFilters(data, state, done);
       });
       return req;

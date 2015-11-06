@@ -153,10 +153,10 @@
   .subregion-chart {
     display: inline-block;
     float: right;
-    height: 1em;
-    margin-top: -1.5em;
-    width: 33%;
     min-width: 200px;
+    position: relative;
+    top: .4em;
+    width: 33%;
 
     .bars {
       display: block;

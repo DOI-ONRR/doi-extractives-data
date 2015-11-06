@@ -134,6 +134,10 @@ header,
   font-weight: $weight-light;
   text-transform: capitalize;
 
+  &.active {
+    font-weight: $weight-book;
+  }
+
 }
 
 

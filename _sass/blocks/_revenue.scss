@@ -32,7 +32,7 @@
       line-height: 1;
       margin-top: -.5em;
       position: absolute;
-      right: .5em;
+      right: 0.5em;
       top: 50%;
     }
 
@@ -79,15 +79,15 @@
     margin-bottom: 1em;
 
     @include respond-to(medium-down) {
-      font-size: .8em;
+      font-size: 0.8em;
     }
 
     .step {
       display: block;
       flex: 1;
       border-bottom-style: solid;
-      border-bottom-width: .5em;
-      padding-left: .1em;
+      border-bottom-width: 0.5em;
+      padding-left: 0.1em;
     }
 
     &.legend-invalid {
@@ -118,7 +118,7 @@
 
     .mask {
       fill: $mid-blue;
-      opacity: .5;
+      opacity: 0.5;
 
       line {
         stroke-width: 2;
@@ -130,7 +130,7 @@
   .subregion {
     // @include row();
     clear: both;
-    padding: 0 .2em;
+    padding: 0 0.2em;
     position: relative;
     border-top: 1px solid $mid-gray;
 
@@ -143,9 +143,9 @@
 
       .color-swatch {
         display: inline-block;
-        height: .7em;
-        margin-right: .2em;
-        width: .7em;
+        height: 0.7em;
+        margin-right: 0.2em;
+        width: 0.7em;
       }
     }
   }
@@ -155,7 +155,7 @@
     float: right;
     min-width: 200px;
     position: relative;
-    top: .4em;
+    top: 0.4em;
     width: 33%;
 
     .bars {
@@ -167,7 +167,7 @@
       }
 
       .negative .label {
-        font-size: .8em;
+        font-size: 0.8em;
       }
 
       .negative .bar {

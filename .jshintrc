@@ -20,7 +20,8 @@
     "eiti",
     "Immutable",
     "jQuery",
-    "module"
+    "module",
+    "topojson"
   ],
   "quotmark": true,
   "trailing": true,

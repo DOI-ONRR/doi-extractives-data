@@ -1,8 +1,14 @@
-(function(exports) {
+(function() {
 
+  // local alias for region id => name lookups
+  var REGION_ID_NAME = eiti.data.REGION_ID_NAME;
+
+  // our state is immutable!
   var state = new Immutable.Map();
+  // this flag indicates whether we're in the middle of a state mutation
   var mutating = false;
 
+  // create references for often-used elements
   var root = d3.select('#revenue');
   var regionSections = root.selectAll('.regions > .region');
   var timeline = root.select('#timeline');
@@ -11,6 +17,7 @@
   var formatNumber = eiti.format.dollars;
   var NULL_FILL = '#eee';
 
+  // buttons that expand and collapse other elements
   var expanders = d3.selectAll('button[aria-controls]')
     .datum(function() {
       var text = this.textContent;
@@ -172,7 +179,7 @@
         .datum({
           value: total,
           properties: {
-            name: REGION_ID_NAME[regionId]
+            name: REGION_ID_NAME[regionId] || '???'
           }
         })
         .call(updateBarChart);

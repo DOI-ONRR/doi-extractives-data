@@ -81,13 +81,15 @@ eiti-slider {
     }
   }
 
-  @include respond-to(medium-down) {
+  // shrink the fonts on medium screens and smaller
+  @media screen and (max-width: $medium) {
     .tick .label {
       font-size: $base-font-size * 0.8;
     }
   }
 
-  @include respond-to(small-down) {
+  // hide all but the first and last labels on small screens
+  @media screen and (max-width: $small) {
     .tick {
       .label {
         display: none;

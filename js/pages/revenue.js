@@ -565,7 +565,7 @@
       zero.append('text')
         .attr('class', 'label')
         .attr('text-anchor', 'end')
-        .attr('dy', .5);
+        .attr('dy', 0.5);
         // .text(0);
     }
 

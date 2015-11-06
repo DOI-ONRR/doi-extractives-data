@@ -124,7 +124,6 @@
         stroke-width: 2;
       }
     }
-
   }
 
   .subregion {
@@ -134,19 +133,20 @@
     padding: 0 0.2em;
     position: relative;
 
-    .subregion-name {
-      @extend .h4;
+  }
 
-      margin: 0;
-      width: 66%;
-      // border: 1px solid red;
+  .subregion-name {
+    @extend .h4;
 
-      .color-swatch {
-        display: inline-block;
-        height: 0.7em;
-        margin-right: 0.2em;
-        width: 0.7em;
-      }
+    margin: 0;
+    width: 66%;
+    // border: 1px solid red;
+
+    .color-swatch {
+      display: inline-block;
+      height: 0.7em;
+      margin-right: 0.2em;
+      width: 0.7em;
     }
   }
 

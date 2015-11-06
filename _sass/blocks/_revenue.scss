@@ -141,6 +141,8 @@
     border-top: 1px solid $mid-gray;
 
     .subregion-name {
+      @extend .h4;
+
       margin: 0;
       width: 66%;
       // border: 1px solid red;

@@ -96,7 +96,10 @@ permalink: /explore/revenue/
 
       <section id="US" class="region active">
 
-        <div class="map-legend"></div>
+        <div class="subregion region-header">
+          <h2 class="subregion-name">Entire U.S.</h2>
+          <span class="subregion-chart"></span>
+        </div>
 
         <svg is="eiti-map" id="US-map" simplify="1e-2"
           preserveAspectRatio="xMidYMid meet"
@@ -116,6 +119,8 @@ permalink: /explore/revenue/
           </g>
         </svg>
 
+        <div class="map-legend"></div>
+
         <h3>Revenues by State or Offshore Area</h3>
         <ol class="subregions">
         </ol>
@@ -125,7 +130,10 @@ permalink: /explore/revenue/
       {% for region in site.data.states %}
       <section id="{{ region.id }}" class="region onshore">
 
-        <div class="map-legend"></div>
+        <div class="subregion region-header">
+          <h2 class="subregion-name">{{ region.name }}</h2>
+          <span class="subregion-chart"></span>
+        </div>
 
         <svg is="eiti-map" id="{{ region.id }}-map" simplify="1e-2"
           preserveAspectRatio="xMidYMid meet"
@@ -142,6 +150,8 @@ permalink: /explore/revenue/
           </g>
         </svg>
 
+        <div class="map-legend"></div>
+
         <h3>Revenues by County</h3>
         <ol class="subregions">
         </ol>
@@ -151,8 +161,11 @@ permalink: /explore/revenue/
 
       {% for region in site.data.offshore_areas %}
       <section id="{{ region.id }}" class="region offshore">
-        <h2>{{ region.name }}</h2>
-        <h3 class="total">$0</h3>
+
+        <div class="subregion region-header">
+          <h2 class="subregion-name">{{ region.name }}</h2>
+          <span class="subregion-chart"></span>
+        </div>
 
         <svg is="eiti-map" id="{{ region.id }}-map" simplify="1e-2"
           preserveAspectRatio="xMidYMid meet"

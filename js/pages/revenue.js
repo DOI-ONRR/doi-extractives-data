@@ -160,10 +160,22 @@
 
       // console.time('render regions');
 
+      var header = selection.select('.region-header');
+      if (header.select('.subregion-chart svg').empty()) {
+        header.select('.subregion-chart')
+          .call(createBarChart);
+      }
+
       var total = d3.sum(data, getter(fields.value));
       total = Math.floor(total);
-      selection.select('.total')
-        .text(formatNumber(total));
+      header
+        .datum({
+          value: total,
+          properties: {
+            name: REGION_ID_NAME[regionId]
+          }
+        })
+        .call(updateBarChart);
 
       var map = selection.select('[is="eiti-map"]');
       onMapLoaded(map, function() {
@@ -224,6 +236,7 @@
   }
 
   function updateSubregions(selection, features, scale) {
+
     var list = selection.select('.subregions');
     if (list.empty()) {
       // console.warn('no subregions list:', selection.node());
@@ -239,7 +252,7 @@
     var enter = items.enter()
       .append('li')
         .attr('class', 'subregion');
-    var title = enter.append('h4')
+    var title = enter.append('span')
       .attr('class', 'subregion-name');
     title.append('span')
       .attr('class', 'color-swatch');
@@ -314,14 +327,14 @@
       var value = d.value;
       var chart = d3.select(this);
       chart.select('.positive')
-        .call(updateBar, value >= 0 ? value : 0);
+        .call(updateBar, value >= 0 ? value : 0, true);
       chart.select('.negative')
         .call(updateBar, value < 0 ? value : 0);
     });
 
-    function updateBar(selection, value) {
+    function updateBar(selection, value, force) {
       selection.select('.label')
-        .text(value ? formatNumber(value) : '');
+        .text((value || force) ? formatNumber(value) : '');
       var width = scale(Math.abs(value));
       // round up to 1px
       if (width > 0) width = Math.ceil(width);

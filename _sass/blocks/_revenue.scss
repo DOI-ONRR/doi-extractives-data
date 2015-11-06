@@ -6,20 +6,12 @@
 
 #revenue {
   $dark-blue: #4b9bbf;
+  $positive-fill: $pale-blue;
+  $negative-fill: #bbb;
 
   .filters {
     color: $dark-blue;
   }
-
-  /*
-  .filter-description {
-    font-weight: normal;
-
-    .filter-part {
-      font-weight: bold;
-    }
-  }
-  */
 
   button.toggle {
     background: transparent;
@@ -69,8 +61,9 @@
   svg[is='eiti-map'] {
     display: block;
     height: 250px;
+    margin-bottom: 1em;
     max-height: 30vh; // 30% of the viewport height
-    max-width: 100%;
+    width: 100%;
   }
 
   .regions .region {
@@ -84,6 +77,10 @@
   .map-legend {
     display: flex;
     margin-bottom: 1em;
+
+    @include respond-to(medium-down) {
+      font-size: .8em;
+    }
 
     .step {
       display: block;
@@ -112,10 +109,10 @@
     }
 
     .area {
-      fill: $pale-blue;
+      fill: $positive-fill;
 
       &.negative {
-        fill: #bbb;
+        fill: $negative-fill;
       }
     }
 
@@ -137,11 +134,16 @@
   }
 
   .subregion {
-    @include row();
+    // @include row();
+    clear: both;
+    padding: 0 .2em;
+    position: relative;
+    border-top: 1px solid $mid-gray;
 
     .subregion-name {
-      @include span-columns(8);
       margin: 0;
+      width: 66%;
+      // border: 1px solid red;
 
       .color-swatch {
         display: inline-block;
@@ -152,35 +154,31 @@
     }
 
     .subregion-chart {
-      @include span-columns(4);
-    }
-
-    .bar {
       display: inline-block;
-      // border: 1px solid red;
-      width: 50%;
+      float: right;
+      height: 1em;
+      margin-top: -1.5em;
+      width: 33%;
+      min-width: 200px;
 
-      .label {
-        float: right;
-      }
-
-      .value {
-        background: #999;
-        display: inline-block;
-        height: 1em;
-        transition: width .2s;
-        width: 0%;
-      }
-
-      &.negative {
-        text-align: right;
+      .bars {
+        display: block;
+        vertical-align: baseline;
 
         .label {
-          float: left;
+          font-weight: $weight-light;
         }
 
-        .value {
-          background: #ccc;
+        .negative .label {
+          font-size: .8em;
+        }
+
+        .negative .bar {
+          fill: $negative-fill;
+        }
+
+        .positive .bar {
+          fill: $dark-gray;
         }
       }
     }

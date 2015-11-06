@@ -249,7 +249,7 @@
         // XXX all features need a name!
         return f.properties.name || f.id;
       });
-    enter.append('div')
+    enter.append('span')
       .attr('class', 'subregion-chart')
       .call(createBarChart);
 
@@ -266,59 +266,75 @@
   }
 
   function createBarChart(selection) {
-    var negative = selection.append('span')
-      .attr('class', 'bar negative');
-    negative.append('span')
-      .attr('class', 'label');
-    negative.append('span')
-      .attr('class', 'value')
-      .style('width', '0%');
-    var positive = selection.append('span')
-      .attr('class', 'bar positive');
-    positive.append('span')
-      .attr('class', 'value')
-      .style('width', '0%');
-    positive.append('span')
-      .attr('class', 'label');
+    var w = 250;
+    var h = 18;
+    var svg = selection.append('svg')
+      .attr('class', 'bars')
+      .attr('viewBox', [0, 0, w, h].join(' '));
+    svg.append('g').attr('class', 'negative');
+    svg.append('g').attr('class', 'positive');
+    var g = svg.selectAll('g');
+    g.append('rect')
+      .attr('class', 'bar')
+      .attr('y', '20%')
+      .attr('height', '60%');
+    g.append('text')
+      .attr('class', 'label')
+      .attr('dy', '80%');
+    svg.select('.positive .label')
+      .attr('text-anchor', 'end')
+      .attr('x', w - 2);
   }
 
   function updateBarChart(selection, colorScale) {
-    var values = selection.data().map(function(d) {
-      return d.value;
-    });
+    if (selection.empty()) return;
 
-    var max = d3.max(values);
+    var svg = selection.select('svg');
+    var viewBox = svg.attr('viewBox')
+      .split(' ')
+      .map(Number);
+
+    var w = viewBox[2];
+    var h = viewBox[3];
+    var center = w / 2;
+    var labelSize = w / 4;
+
+    var values = selection.data()
+      .map(function(d) {
+        return d.value;
+      })
+      .sort(d3.ascending);
+
+    var max = d3.max(values.map(Math.abs));
     var scale = d3.scale.linear()
       .domain([0, max])
-      .range(['0%', '50%']);
+      .range([0, center - labelSize]);
 
-    selection.each(function(d) {
+    svg.each(function(d) {
       var value = d.value;
-      var positive = value >= 0 ? value : 0;
-      var negative = value < 0 ? value : 0;
-      var row = d3.select(this);
-      row.select('.bar.positive')
-        .call(updateBar, positive);
-      row.select('.bar.negative')
-        .call(updateBar, negative);
+      var chart = d3.select(this);
+      chart.select('.positive')
+        .call(updateBar, value >= 0 ? value : 0);
+      chart.select('.negative')
+        .call(updateBar, value < 0 ? value : 0);
     });
 
     function updateBar(selection, value) {
       selection.select('.label')
         .text(value ? formatNumber(value) : '');
-      selection.select('.value')
-        .style('width', scale(Math.abs(value)));
-      /*
-        .style('background-color',
-               value ? colorScale(value) : null);
-      */
+      var width = scale(Math.abs(value));
+      // round up to 1px
+      if (width > 0) width = Math.ceil(width);
+      selection.select('.bar')
+        .attr('x', value < 0 ? (center - width) : center)
+        .attr('width', width);
     }
   }
 
   function createScale(values) {
     var extent = d3.extent(values);
     var min = extent[0];
-    var max = extent[1];
+    var max = Math.max(extent[1], 0);
 
     var colors = (min < 0)
       ? colorbrewer.Blues

@@ -20,10 +20,11 @@
 
 .revenues_subpage-office {
   background-color: $white;
+
   &:first-child {
-    padding-top: $base-padding;
     border-top-left-radius: $base-border-radius;
     border-top-right-radius: $base-border-radius;
+    padding-top: $base-padding;
   }
 
   &:last-child {

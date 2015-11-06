@@ -35,7 +35,9 @@
       state = state.set(this.name, this.value);
     })
     .on('change', function() {
-      if (mutating) return;
+      if (mutating) {
+        return;
+      }
       var prop = this.name;
       var value = this.value;
       mutateState(function(state) {
@@ -52,7 +54,9 @@
   // when the hash changes, update the state
   d3.select(window)
     .on('hashchange', function() {
-      if (mutating) return;
+      if (mutating) {
+        return;
+      }
       var props = parseHash();
       mutateState(function() {
         return new Immutable.Map(props);
@@ -70,7 +74,9 @@
   }
 
   function parseHash() {
-    if (!location.hash) return {};
+    if (!location.hash) {
+      return {};
+    }
     var hash = location.hash.substr(1);
     return eiti.url.qs.parse(hash);
   }
@@ -306,7 +312,9 @@
   }
 
   function updateBarChart(selection) {
-    if (selection.empty()) return;
+    if (selection.empty()) {
+      return;
+    }
 
     var svg = selection.select('svg');
     var viewBox = svg.attr('viewBox')
@@ -343,7 +351,9 @@
         .text((value || force) ? formatNumber(value) : '');
       var width = scale(Math.abs(value));
       // round up to 1px
-      if (width > 0) width = Math.ceil(width);
+      if (width > 0) {
+        width = Math.ceil(width);
+      }
       selection.select('.bar')
         .attr('x', value < 0 ? (center - width) : center)
         .attr('width', width);

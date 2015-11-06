@@ -61,10 +61,6 @@ linters:
   MergeableSelector:
     enabled: true
     force_nesting: true
-  NameFormat:
-    enabled: true
-    allow_leading_underscore: true
-    convention: hyphenated_lowercase
   NestingDepth:
     enabled: true
     max_depth: 4

@@ -806,7 +806,8 @@
       var entries = [];
       for (var key in obj) {
         var value = obj[key];
-        if (obj.hasOwnProperty(key) && (typeof value !== 'undefined') && value !== '') {
+        if (obj.hasOwnProperty(key) &&
+            (typeof value !== 'undefined') && value !== '') {
           entries.push({key: key, value: String(obj[key])});
         }
       }

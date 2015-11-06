@@ -101,7 +101,7 @@ permalink: /explore/revenue/
           <span class="subregion-chart"></span>
         </div>
 
-        <svg is="eiti-map" id="US-map" simplify="1e-2"
+        <svg is="eiti-map" id="US-map" class="region-map" simplify="1e-2"
           preserveAspectRatio="xMidYMid meet"
           projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/">
           <g class="offshore areas" data-url="offshore-simple.json"
@@ -135,7 +135,7 @@ permalink: /explore/revenue/
           <span class="subregion-chart"></span>
         </div>
 
-        <svg is="eiti-map" id="{{ region.id }}-map" simplify="1e-2"
+        <svg is="eiti-map" id="{{ region.id }}-map" class="region-map" simplify="1e-2"
           preserveAspectRatio="xMidYMid meet"
           projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/" zoom-to="{{ region.id }}">
           <g class="onshore states" data-url="us-topology.json"
@@ -167,7 +167,7 @@ permalink: /explore/revenue/
           <span class="subregion-chart"></span>
         </div>
 
-        <svg is="eiti-map" id="{{ region.id }}-map" simplify="1e-2"
+        <svg is="eiti-map" id="{{ region.id }}-map" class="region-map" simplify="1e-2"
           preserveAspectRatio="xMidYMid meet"
           projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/" zoom-to="{{ region.id }}">
           <g class="offshore areas" data-url="offshore-simple.json"

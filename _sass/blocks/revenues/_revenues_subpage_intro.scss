@@ -20,10 +20,19 @@
 
 .revenues_subpage-office {
   background-color: $white;
-  border: $base-border-size solid $mid-gray;
-  border-radius: $base-border-radius;
-  margin-bottom: $base-padding;
-  padding-top: $base-padding;
+  // border: $base-border-size solid $mid-gray;
+  // border-radius: $base-border-radius;
+  &:first-child {
+    padding-top: $base-padding;
+    border-top-left-radius: $base-border-radius;
+    border-top-right-radius: $base-border-radius;
+  }
+  &:last-child {
+    border-bottom-left-radius: $base-border-radius;
+    border-bottom-right-radius: $base-border-radius;
+  }
+  // margin-bottom: $base-padding;
+  
 }
 
 .revenues_subpage-office_container {
@@ -43,7 +52,7 @@
   }
 
   padding-left: $base-padding;
-  padding-bottom: $base-padding;
+  // padding-bottom: $base-padding;
   padding-right: $base-padding-lite;
 
 }
@@ -61,7 +70,7 @@
 }
 
 .revenues_subpage-office_logo {
-  width: 50px;
+  width: 40px;
   float: right;
   margin-bottom: $base-padding-lite;
 

@@ -12,7 +12,7 @@
 
 ## Participants
 
-- 4 people unfamiliar with USEITI in the following locations: Washington, DC; Minneapolis, MN; and Tucson, AZ
+- 4 people unfamiliar with USEITI in the following locations: Washington, DC; Minneapolis, MN; and Tucson, AZ.
 
 
 ## Let's talk about that global navigation
@@ -23,23 +23,23 @@ This was a continuation of the our Sprint-MightyMoose testing cycle. Based on [i
 
 People understood what information will be in this section.
 
-_Probably mission statement, purpose, links to staff._
+- _Probably mission statement, purpose, links to staff._
 
-_Information about the program, and about what you guys do._
+- _Information about the program, and about what you guys do._
 
-_I’d expect information about who is responsible for reporting. What the initiative is intended for. I could find information here that would let me understand if this site is relevant for me._
+- _I’d expect information about who is responsible for reporting. What the initiative is intended for. I could find information here that would let me understand if this site is relevant for me._
 
 ### How it works
 
-Our previous iteration of this navigation found that people were confused about this heading, and sometimes expected information about how USEITI works. We tested adding an additional 'About USEITI' heading to differentiate. This resolved that confusion, and this terms tests clearer, though still does not inspire an immediate 'of course!' response to what might be here.
+Our previous iteration of this navigation found that people were confused about this heading, and sometimes expected information about how USEITI works, and sometimes expected information about how natural resource extraction in the US works. We tested adding an additional 'About USEITI' heading to clarify this point. Adding that additional section resolved that particular confusion. In general, this nav configuration is the most effective yet, though still does not inspire an immediate 'of course!' response.
 
 - _Um, I would expect to see a workflow essentially, I guess? When I see how it works, I’d like to see the processes associated with the oil and gas industry. I’d like a big picture of the entire process._
 
-_Maybe more about how they are managed._
+- _Maybe more about how they are managed._
 
-_[Pause] I honestly don’t know at this point. Is this an API? Data? How the mission is being met? How the mission in implemented?_
+- _[Pause] I honestly don’t know at this point. Is this an API? Data? How the mission is being met? How the mission in implemented?_
 
-_[I would expect] An explanation of where their data is coming from._
+- _[I would expect] An explanation of where their data is coming from._
 
 
 ### Explore Data
@@ -55,9 +55,9 @@ The term Explore Data still stayed clear in this iteration, as it was last time.
 
 ### Case studies
 
-In previous tests, this section was called 'Local Impact,' and people expected ways to reach out to their local political units, or ways to get engaged. This was far more than the actual content in that section, and so we tested a scoped-down word so as not to over-promise.
+In previous tests, this section was called 'Local Impact,' and people expected ways to reach out to their local political units, or ways to get engaged. This was far more than the actual content in that section, and so we tested a scoped-down word so as not to over-promise (and then disappoint).
 
-The expectations with the words 'case studies' were closer to our results, but still broader than we'd like. They do have in common the idea that this is where real-world extractive stories might be, but there is a tendency to expect the case studies to be about how USEITI data is being used, rather than what we actually have, which is just generally how extractives impact communities. Perhaps this is close enough.
+The expectations with the words 'case studies' were closer to our intended scope, but still returned a wider interpretation on potential content than we'd like. The responses do tend to have in common the idea that 'case studies' is where real-world extractive stories might be; this is good. However, there is a tendency to expect the case studies to be about how USEITI data is being used, rather than what we actually have, which is just generally how extractives impact communities. Perhaps this is close enough.
 
 - _How the data is being used in the real world, how it being implemented in policy._
 
@@ -98,11 +98,11 @@ Overall, we are ever-closer to a first-glance understanding of what the site is 
 
 - _Ummm. Well. The first thing that pops up. I see the logo. Strangely, my eye first went to the oil well because that’s the picture and I like pictures. So I guess the site is about oil and gas._
 
-_I’m reading the tagline and I see the oil graphic [in the carousel] so I’m guessing its about administrating federal oil and gas._
+- _I’m reading the tagline and I see the oil graphic [in the carousel] so I’m guessing its about administrating federal oil and gas._
 
-We still see skepticism around the initiative.
+Audience relatively reflects our intention.
 
-- _Ummmm…..primarily for lobbyists or people in industry to evaluate data available in one place, condensed information. Or, research institutions or think thanks -- to come up with new ideas._
+- _Ummmm...primarily for lobbyists or people in industry to evaluate data available in one place, condensed information. Or, research institutions or think thanks -- to come up with new ideas._
 
 - _Ummmm [questioning] it looks like, I was thinking….let’s see, I’m going to go down. It looks like any stakeholder involved in oil and gas. Plus potentially the public._
 
@@ -115,4 +115,4 @@ We will continue to test this as we add more content to the site.
 
 ### What problems were most severe?
 
-With this iteration, there are no severe issues with site navigation that can be tested further. The remaining problems (difficulty with the terms 'How it works' and 'Case studies') may be resolved when the homepage is built out further with content that reinforces what will be in each section of the site. 
+With this iteration of testing, **we feel confident that our information architecture is on relatively solid footing, and that site development can continue** with this architecture as a guide. Since we're now able to take further development steps, we will return to the remaining problems (difficulty with the terms 'How it works' and 'Case studies') when the site is in a more mature state of development. They may be resolved when the homepage is built out further with content that reinforces our navigation scheme.

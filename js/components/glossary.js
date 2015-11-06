@@ -125,7 +125,6 @@ Glossary.prototype.show = function() {
 Glossary.prototype.hide = function() {
   this.$body.removeClass('is-open').attr('aria-hidden', 'true');
   this.$toggle.removeClass('active');
-  this.$toggle.focus();
   this.isOpen = false;
   accessibility.removeTabindex(this.$body);
 };

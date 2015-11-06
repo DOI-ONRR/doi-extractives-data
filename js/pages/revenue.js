@@ -648,10 +648,11 @@
       if (req) req.abort();
       var url = getDataURL(state);
       // console.log('model.load():', url);
-      return req = eiti.load(url, function(error, data) {
+      req = eiti.load(url, function(error, data) {
         if (error) data = [];
         applyFilters(data, state, done);
       });
+      return req;
     };
 
     function getDataURL(state) {

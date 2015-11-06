@@ -129,10 +129,10 @@
 
   .subregion {
     // @include row();
+    border-top: 1px solid $mid-gray;
     clear: both;
     padding: 0 0.2em;
     position: relative;
-    border-top: 1px solid $mid-gray;
 
     .subregion-name {
       @extend .h4;

@@ -441,7 +441,9 @@
       value: 'Revenue',
       featureId: 'id'
     };
-    if (!regionId) return fields;
+    if (!regionId) {
+      return fields;
+    }
     switch (regionId.length) {
       case 2:
         if (regionId !== 'US') {

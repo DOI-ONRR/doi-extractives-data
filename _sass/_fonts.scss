@@ -11,7 +11,7 @@
 // .icon-book         - book icon (for glossary)
 // .icon-map          - map icon
 // .icon-hardrock     - hardrock
-// .icon-download
+// .icon-cloud        - download icon
 //
 // Markup: 
 // <i style="font-size: 2rem; color: #4a4a4a;" class="icon {{modifier_class}}"></i>
@@ -46,7 +46,7 @@
 .icon-renewables:before{content:'\0043';}
 .icon-book:before{content:'\0044';}
 .icon-map:before{content:'\0048';}
-.icon-download:before{content:'\004B';}
+.icon-cloud:before{content:'\004B';}
 .icon-hardrock:before{content:'\0051';}
 
 

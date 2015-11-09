@@ -3,15 +3,37 @@
 
 // EITI Webfont Icons
 //
-// Buttons suitable for clicking
+// This is a custom webfont made for the eiti project. 
+// Font icons are namespaced with a '.icon-' class.
+// To use a font, the recommended use is to create an
+// <i> element with the class attribute set to your icon of choice.
+// Alternatively, use an icon by specifying font-family: 'eiti',
+// and setting the content property of :before or :after pseudo-selectors
+// to correspond with that of the intended icon.
 //
 // .icon              - Void – All of the following icons are displayed at 2rem
 // .icon-coal         - coal icon
+// .icon-oil          - oil icon
+// .icon-gold         - gold icon
+// .icon-iron         - iron icon
+// .icon-wind         - wind icon (similar to renewables)
+// .icon-geo          - geo icon
+// .icon-copper       - copper icon
+// .icon-gas          - gas icon
+// .icon-hardrock     - hardrock
 // .icon-renewables   - renewables icon
 // .icon-book         - book icon (for glossary)
 // .icon-map          - map icon
-// .icon-hardrock     - hardrock
 // .icon-cloud        - download icon
+// .icon-close-x      - close button
+// .icon-chevron-sm   - small chevron
+// .icon-chevron-lg   - large chevron
+// .icon-dash-sm      - small dash
+// .icon-dash-lg      - large dash
+// .icon-plus-sm      - small plus
+// .icon-plus-lg      - large plus
+// .icon-search       - search icon
+// 
 //
 // Markup: 
 // <i style="font-size: 2rem; color: #4a4a4a;" class="icon {{modifier_class}}"></i>
@@ -42,11 +64,50 @@
   padding-left: $base-padding-lite;
   padding-right: $base-padding-lite;
 }
-.icon-coal:before{content:'\0041';}
+// .icon-coal:before{content:'\0041';}
+// .icon-oil:before{content:'\0042';}
+// .icon-renewables:before{content:'\0043';}
+// .icon-book:before{content:'\0044';}
+// .icon-close-x:before{content:'\0045';}
+// .icon-map:before{content:'\0048';}
+// .icon-cloud:before{content:'\004B';}
+// .icon-hardrock:before{content:'\0051';}
+
+// .icon-gold:before{content:'\0041';}
+// .icon-iron:before{content:'\0042';}
+// .icon-renewables:before{content:'\0043';}
+// .icon-book:before{content:'\0044';}
+// .icon-geo:before{content:'\0045';}
+// .icon-copper:before{content:'\0047';}
+// .icon-map:before{content:'\0048';}
+// .icon-cloud:before{content:'\004B';}
+// .icon-minerals:before{content:'\004D';}
+// .icon-oil:before{content:'\004E';}
+// .icon-wind:before{content:'\004F';}
+// .icon-coal:before{content:'\0050';}
+// .icon-hardrock:before{content:'\0051';}
+// .icon-gas:before{content:'\0053';}
+
+.icon-gold:before{content:'\0041';}
+.icon-iron:before{content:'\0042';}
 .icon-renewables:before{content:'\0043';}
 .icon-book:before{content:'\0044';}
+.icon-geo:before{content:'\0045';}
+.icon-chevron-sm:before{content:'\0046';}
+.icon-copper:before{content:'\0047';}
 .icon-map:before{content:'\0048';}
+.icon-dash-lg:before{content:'\0049';}
+.icon-dash-sm:before{content:'\004A';}
 .icon-cloud:before{content:'\004B';}
+.icon-plus-lg:before{content:'\004C';}
+.icon-minerals:before{content:'\004D';}
+.icon-oil:before{content:'\004E';}
+.icon-wind:before{content:'\004F';}
+.icon-coal:before{content:'\0050';}
 .icon-hardrock:before{content:'\0051';}
+.icon-plus-sm:before{content:'\0052';}
+.icon-gas:before{content:'\0053';}
+.icon-chevron-lg:before{content:'\0054';}
+.icon-search:before{content:'\0055';}
 
 

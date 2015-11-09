@@ -1,6 +1,4 @@
----
-# Jekyll frontmatter
----
+
 (function(exports) {
 
   /**

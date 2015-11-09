@@ -47,7 +47,8 @@
     registerEventListeners: function () {
       var nextStep = false;
       for (var i = 0; i < this.accordionButtons.length; i++) {
-        this.accordionButtons[i].addEventListener("click", this.toggleAccordion.bind(this));
+        this.accordionButtons[i].addEventListener('click', 
+          this.toggleAccordion.bind(this));
 
         if (this.accordionButtons[i].classList.contains('accordion-button')) {
           if (nextStep) {
@@ -55,11 +56,10 @@
           } else {
             nextStep = true;
           }
-        }
-        
-      };
+        } 
+      }
     }
-  }
+  };
 
   var accordion = new Accordion();
 

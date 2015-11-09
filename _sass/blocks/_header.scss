@@ -118,11 +118,10 @@ header,
     color: white;
     border-bottom-right-radius: $base-border-radius;
     border-top-right-radius: $base-border-radius;
-    border-bottom-color: $dark-gray;
-    border-top-color: $dark-gray;
-    border-right-color: $dark-gray;
+    border: 1px solid $dark-gray;
     cursor: pointer;
-    padding: 0.26rem;
+    padding: 0.22rem;
+    padding-left: 0.64rem;
   }
 }
 

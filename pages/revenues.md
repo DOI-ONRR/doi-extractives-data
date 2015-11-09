@@ -46,7 +46,7 @@ permalink: /resource_revenues/
       <article class="card card-secondary">
 
         <a href="{{ site.baseurl }}/resource_revenues/coal/"><div class="card-splash">
-          <h3 class="card-splash_title">Coal <span class="revenues-fa"><i class="icon-chevron-sm"></i></span></h3>
+          <h3 class="card-splash_title">Coal <i class="icon-chevron-sm"></i></h3>
 
           <div class="card-splash_image">
             <img class="" src="{{ site.baseurl }}/img/icons/coal.svg" alt="coal">
@@ -57,7 +57,7 @@ permalink: /resource_revenues/
 
           <p>Fossil fuels like coal are the main source of electricity in the U.S. Coal forms in the ground in seams or beds over tens of millions of years. Miners extract coal through surface and underground mining.</p>
 
-          <a class="card-link" href="{{ site.baseurl }}/resource_revenues/coal/">Visit this page <span class="shrink-fa"><i class="icon-chevron-sm"></i></span></a>
+          <a class="card-link" href="{{ site.baseurl }}/resource_revenues/coal/">Visit this page <i class="icon-chevron-sm"></i></a>
 
         </div>
 
@@ -66,7 +66,7 @@ permalink: /resource_revenues/
       <article class="card card-secondary">
 
         <a href="{{ site.baseurl }}/resource_revenues/offshore_oil_gas/"><div class="card-splash">
-          <h3 class="card-splash_title">Oil &amp; Gas <span class="revenues-fa"><i class="icon-chevron-sm"></i></span></h3>
+          <h3 class="card-splash_title">Oil &amp; Gas <i class="icon-chevron-sm"></i></h3>
 
           <div class="card-splash_image">
             <img src="{{ site.baseurl }}/img/icons/oil.svg" alt="oil">
@@ -86,7 +86,7 @@ permalink: /resource_revenues/
       <article class="card card-secondary">
 
         <a href="{{ site.baseurl }}/resource_revenues/minerals/"><div class="card-splash">
-          <h3 class="card-splash_title">Nonenergy <br>Minerals <span class="revenues-fa"><i class="icon-chevron-sm"></i></span></h3>
+          <h3 class="card-splash_title">Nonenergy <br>Minerals <i class="icon-chevron-sm"></i></h3>
 
           <div class="card-splash_image">
             <img src="{{ site.baseurl }}/img/icons/hardrock.svg" alt="minerals">
@@ -106,7 +106,7 @@ permalink: /resource_revenues/
       <article class="card card-secondary">
 
         <a href="{{ site.baseurl }}/resource_revenues/offshore_renewables/"><div class="card-splash">
-          <h3 class="card-splash_title">Renewables <span class="revenues-fa"><i class="icon-chevron-sm"></i></span></h3>
+          <h3 class="card-splash_title">Renewables <i class="icon-chevron-sm"></i></h3>
 
           <div class="card-splash_image">
             <img src="{{ site.baseurl }}/img/icons/renewables.svg" alt="renewables">
@@ -117,7 +117,7 @@ permalink: /resource_revenues/
 
           <p>Environmentally sustainable energy sources like solar and wind play an ever increasing role in meeting our country’s electricity needs. Solar energy converts solar radiation into heat and electricity, while wind powers turbines.</p>
 
-          <a class="card-link" href="{{ site.baseurl }}/resource_revenues/offshore_renewables/">Visit this page <span class="shrink-fa"><i class="icon-chevron-sm"></i></span></a>
+          <a class="card-link" href="{{ site.baseurl }}/resource_revenues/offshore_renewables/">Visit this page <i class="icon-chevron-sm"></i></a>
 
         </div>
 

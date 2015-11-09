@@ -8,7 +8,7 @@
 // Markup: 
 // <div class="glossary" style="right:0px;">
 //   <button title="Close glossary"
-//       class="button button--close toggle"><span class="u-visually-hidden"><i class="fa fa-times"></i></span>
+//       class="button button--close toggle"><span class="u-visually-hidden"><i class="icon-close-x"></i></span>
 //   </button>
 //   <h2 id="glossary-header"><i class="fa fa-book"></i> Glossary</h2>
 //   <label for="glossary-search" class="label">Search glossary terms</label>
@@ -65,6 +65,7 @@
     width: 50px;
     height: 50px;
     background-color: transparent;
+    color: white;
   }
 
 }

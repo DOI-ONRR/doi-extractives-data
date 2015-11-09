@@ -63,6 +63,10 @@ header,
   font-weight: $weight-light;
 }
 
+.header-nav_item:last-child {
+  padding-right: 0;
+}
+
 .header-nav_item.active {
   font-weight: $weight-book;
 }
@@ -129,6 +133,10 @@ header,
   @include font-size(0.75px);
   font-weight: $weight-light;
   text-transform: capitalize;
+
+  &.active {
+    font-weight: $weight-book;
+  }
 
 }
 

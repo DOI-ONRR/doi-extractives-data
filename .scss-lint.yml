@@ -61,6 +61,10 @@ linters:
   MergeableSelector:
     enabled: true
     force_nesting: true
+  NameFormat:
+    enabled: true
+    allow_leading_underscore: true
+    convention: '^([\.\%]?[a-z]*[-]?[a-z0-9\-]*)(\.[a-z0-9\-]*)?(_[a-z0-9]*[_]?[a-z0-9\-]*)?(\:[a-z]*)*$'
   NestingDepth:
     enabled: true
     max_depth: 4

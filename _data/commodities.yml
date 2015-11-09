@@ -8,10 +8,12 @@ groups:
     - "Oil & Gas"
     - "Oil"
     - "Oil Shale"
-    - "Tar Sands"
+    # - "Tar Sands"
 
   coal:
     name: Coal
+    commodities:
+    - "Coal"
 
   minerals:
     name: Hardrock Minerals
@@ -34,9 +36,11 @@ groups:
 
   renewables:
     name: Renewables
-    commodites:
+    commodities:
     - "Geothermal"
     - "Wind"
 
   other:
     name: Other
+    commodities:
+    - "Other" # XXX: need other commodities here?

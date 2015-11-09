@@ -27,7 +27,7 @@
 
   &[accordion-open=true] {
     .accordion-button {
-      @include rotate(270deg,3);
+      @include rotate(270deg, 3);
 
       &:after {
         content: '\0046';
@@ -57,7 +57,7 @@
 
   &[accordion-open=false] {
     .accordion-button {
-      @include rotate(90deg,1);
+      @include rotate(90deg, 1);
 
       &:after {
         content: '\0046';

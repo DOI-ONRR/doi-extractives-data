@@ -42,7 +42,7 @@
 // .icon-plus-lg             - large plus
 // .icon-search              - search icon
 //
-// Markup: 
+// Markup:
 // <i style="font-size: 2rem; color: #4a4a4a;" class="icon {{modifier_class}}"></i>
 // <i style="font-size: 2rem; color: #157bac;" class="icon {{modifier_class}}"></i>
 //
@@ -74,45 +74,45 @@
   padding-right: $base-padding-lite;
 }
 
-.icon-gold:before{content:'\0041';}
-.icon-close-x:before{content:'\0042';}
-.icon-renewables:before{content:'\0043';}
-.icon-book:before{content:'\0044';}
-.icon-geo:before{content:'\0045';}
+.icon-gold:before{ content:'\0041'; }
+.icon-close-x:before{ content:'\0042'; }
+.icon-renewables:before{ content:'\0043'; }
+.icon-book:before{ content:'\0044'; }
+.icon-geo:before{ content:'\0045'; }
 [class*='icon-chevron-sm-']:before,
 .icon-chevron-sm:before {
   content: '\0046';
 }
-.icon-copper:before{content:'\0047';}
-.icon-map:before{content:'\0048';}
-.icon-dash-lg:before{content:'\0049';}
-.icon-dash-sm:before{content:'\004A';}
-.icon-cloud:before{content:'\004B';}
-.icon-plus-lg:before{content:'\004C';}
-.icon-minerals:before{content:'\004D';}
-.icon-oil:before{content:'\004E';}
-.icon-wind:before{content:'\004F';}
-.icon-coal:before{content:'\0050';}
-.icon-hardrock:before{content:'\0051';}
-.icon-plus-sm:before{content:'\0052';}
-.icon-gas:before{content:'\0053';}
+.icon-copper:before{ content:'\0047'; }
+.icon-map:before{ content:'\0048'; }
+.icon-dash-lg:before{ content:'\0049'; }
+.icon-dash-sm:before{ content:'\004A'; }
+.icon-cloud:before{ content:'\004B'; }
+.icon-plus-lg:before{ content:'\004C'; }
+.icon-minerals:before{ content:'\004D'; }
+.icon-oil:before{ content:'\004E'; }
+.icon-wind:before{ content:'\004F'; }
+.icon-coal:before{ content:'\0050'; }
+.icon-hardrock:before{ content:'\0051'; }
+.icon-plus-sm:before{ content:'\0052'; }
+.icon-gas:before{ content:'\0053'; }
 [class*='icon-chevron-lg-']:before,
 .icon-chevron-lg:before {
   content: '\0054';
 }
-.icon-search:before{content:'\0055';}
-.icon-iron:before{content:'\0057';}
+.icon-search:before{ content:'\0055'; }
+.icon-iron:before{ content:'\0057'; }
 
 .icon-chevron-sm-left:before,
 .icon-chevron-lg-left:before {
-  @include rotate(180deg,2);
+  @include rotate(180deg, 2);
 }
 .icon-chevron-sm-down:before,
 .icon-chevron-lg-down:before {
-  @include rotate(90deg,1);
+  @include rotate(90deg, 1);
 }
 .icon-chevron-sm-up:before,
 .icon-chevron-lg-up:before {
-  @include rotate(270deg,3);
+  @include rotate(270deg, 3);
 }
 

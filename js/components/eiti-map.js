@@ -15,6 +15,7 @@
           switch (typeof this.onload) {
             case 'string':
               this.onload = new Function('event', this.onload);
+              break;
             case 'function':
               this.addEventListener('load', this.onload);
               break;
@@ -101,7 +102,7 @@
           if (feature) {
             var path = getSVGPath(this);
             var bbox = path.bounds(feature);
-            var viewBox = bboxToViewBox(bbox)
+            viewBox = bboxToViewBox(bbox);
           } else {
             viewBox = getViewBox(this);
           }
@@ -125,9 +126,13 @@
   }
 
   function getProjection(map) {
-    if (map.__projection) return map.__projection;
+    if (map.__projection) {
+      return map.__projection;
+    }
     var proj = map.getAttribute('projection') || 'albersUsa';
-    if (!d3.geo[proj]) throw new Error('invalid projection: "' + proj + '"');
+    if (!d3.geo[proj]) {
+      throw new Error('invalid projection: "' + proj + '"');
+    }
     proj = d3.geo[proj]();
     // TODO: additional projection parameters?
     return map.__projection = proj;
@@ -154,7 +159,9 @@
         polygon: function(d) {
           skipped = 0;
           this.stream.polygon(d);
-          if (skipped) console.log('skipped %d points in polygon:', skipped, polygon);
+          if (skipped) {
+            console.log('skipped %d points in polygon:', skipped, polygon);
+          }
         }
       });
       return path.projection(simplify);

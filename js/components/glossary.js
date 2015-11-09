@@ -1,7 +1,6 @@
 ---
+# Jekyll front matter lives here.
 ---
-/* global require, module, document */
-
 /**
  * Utilities for setting or removing tabindex on all focusable elements
  * in a parent div. Useful for hiding elements off-canvas without setting
@@ -18,7 +17,7 @@ var accessibility = {
       .find('a, button, :input, [tabindex]')
       .attr('tabindex', '0');
   }
-}
+};
 
 var KEYCODE_ESC = 27;
 
@@ -32,7 +31,8 @@ var defaultSelectors = {
 /**
  * Glossary widget
  * @constructor
- * @param {Array} terms - Term objects with "glossary-term" and "glossary-definition" keys
+ * @param {Array} terms - Term objects with 
+ * "glossary-term" and "glossary-definition" keys
  * @param {Object} selectors - CSS selectors for glossary components
  */
 function Glossary(selectors) {
@@ -130,7 +130,7 @@ Glossary.prototype.hide = function() {
 };
 
 /** Remove existing filters on input */
-Glossary.prototype.handleInput = function(e) {
+Glossary.prototype.handleInput = function() {
   if (this.list.filtered) {
     this.list.filter();
   }
@@ -154,10 +154,12 @@ Glossary.prototype.toggleAccordion = function(e) {
   // toggleClass is more concise, but this couples the button text 
   // and hide/show logic
   if ($thisDefinition.hasClass('hidden')){
-      $thisButton.find('i').removeClass('fa-chevron-down').addClass('fa-chevron-up');
+      $thisButton.find('i').removeClass('fa-chevron-down')
+        .addClass('fa-chevron-up');
       $thisDefinition.removeClass('hidden');
   } else {
-      $thisButton.find('i').removeClass('fa-chevron-up').addClass('fa-chevron-down');
+      $thisButton.find('i').removeClass('fa-chevron-up')
+        .addClass('fa-chevron-down');
       $thisDefinition.addClass('hidden');
   }
 };

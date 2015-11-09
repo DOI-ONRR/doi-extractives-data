@@ -11,6 +11,14 @@
 //        <div class="accordion-content">Accordion Content</div
 //    </li>
 // </ul>
+// <ul accordion>
+//    <li accordion-item accordion-open="true">
+//        <h3>Heading</h3>
+//        <button class="accordion-button_more" accordion-button>more</button>
+//        <button class="accordion-button_more" accordion-button>less</button>
+//        <div class="accordion-content">Accordion Content</div
+//    </li>
+// </ul>
 //
 // Styleguide components.accordions
 
@@ -35,7 +43,6 @@
       display: inline-block;
 
       &::after {
-        // content: '–';
         content:'\004A';
       }
     }
@@ -60,7 +67,6 @@
 
     .accordion-button_more {
       &::after {
-        // content: '+';
         content:'\0052';
       }
 

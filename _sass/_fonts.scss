@@ -52,41 +52,16 @@
 }
 [class*='icon-']:before{
   display: inline-block;
-   font-family: 'eiti';
-   font-style: normal;
-   font-weight: normal;
-   line-height: 1;
-   -webkit-font-smoothing: antialiased;
-   -moz-osx-font-smoothing: grayscale;
+  font-family: 'eiti';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 
-   /* added by EITI developers */
+  /* added by EITI developers */
   vertical-align: text-bottom;
-  padding-left: $base-padding-lite;
-  padding-right: $base-padding-lite;
 }
-// .icon-coal:before{content:'\0041';}
-// .icon-oil:before{content:'\0042';}
-// .icon-renewables:before{content:'\0043';}
-// .icon-book:before{content:'\0044';}
-// .icon-close-x:before{content:'\0045';}
-// .icon-map:before{content:'\0048';}
-// .icon-cloud:before{content:'\004B';}
-// .icon-hardrock:before{content:'\0051';}
-
-// .icon-gold:before{content:'\0041';}
-// .icon-iron:before{content:'\0042';}
-// .icon-renewables:before{content:'\0043';}
-// .icon-book:before{content:'\0044';}
-// .icon-geo:before{content:'\0045';}
-// .icon-copper:before{content:'\0047';}
-// .icon-map:before{content:'\0048';}
-// .icon-cloud:before{content:'\004B';}
-// .icon-minerals:before{content:'\004D';}
-// .icon-oil:before{content:'\004E';}
-// .icon-wind:before{content:'\004F';}
-// .icon-coal:before{content:'\0050';}
-// .icon-hardrock:before{content:'\0051';}
-// .icon-gas:before{content:'\0053';}
 
 .icon-gold:before{content:'\0041';}
 .icon-iron:before{content:'\0042';}

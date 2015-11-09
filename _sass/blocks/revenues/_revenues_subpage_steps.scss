@@ -66,9 +66,9 @@ $onshore-renewables-secondary-color: $blue;
 
   span,
   &::after {
-    @include heading(h4);
     line-height: $base-line-height;
     vertical-align: bottom;
+    padding-left: $base-padding-lite;
   }
 }
 

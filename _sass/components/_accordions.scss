@@ -18,8 +18,13 @@
   position: relative;
 
   &[accordion-open=true] {
-    .accordion-button:after {
-      content: "\f077";
+    .accordion-button {
+      -ms-transform: rotate(-90deg); /* IE 9 */
+      -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+      transform: rotate(-90deg);
+      &:after {
+        content:'\0046';
+      }
     }
 
     .accordion-button_more {
@@ -30,7 +35,8 @@
       display: inline-block;
 
       &::after {
-        content: '–';
+        // content: '–';
+        content:'\004A';
       }
     }
 
@@ -42,13 +48,20 @@
   }
 
   &[accordion-open=false] {
-    .accordion-button:after {
-      content: "\f078";
+    .accordion-button {
+      -ms-transform: rotate(90deg); /* IE 9 */
+      -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+      transform: rotate(90deg);
+      
+      &:after {
+        content:'\0046';
+      }
     }
 
     .accordion-button_more {
       &::after {
-        content: '+';
+        // content: '+';
+        content:'\0052';
       }
 
       display: inline-block; 
@@ -76,6 +89,18 @@
 
 }
 
+.accordion-button,
+.accordion-button_more,
+.accordion-button_less {
+  &:after {
+    // font-family: FontAwesome;
+    font-family: 'eiti';
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+  } 
+}
+
 .accordion-button {
   background-size: 50%;
   background-color: transparent;
@@ -86,7 +111,8 @@
   width: 2rem;
   
   &:after {
-    font-family: FontAwesome;
+    // font-family: FontAwesome;
+    font-family: 'eiti';
     font-style: normal;
     font-weight: normal;
     text-decoration: inherit;

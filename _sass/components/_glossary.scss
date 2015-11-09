@@ -74,8 +74,9 @@
 }
 
 #glossary-header{
-  i {
-    margin-right: .75rem;
+  i:before {
+    padding-left: 0;
+    padding-right: $base-padding-lite;
   }
 }
 
@@ -150,7 +151,7 @@
 // Wrap glossary terms with these classes
 //
 // .term          - Standard class -- adds the book icon
-// .term-p       - Used when the term is in a body paragaraph of text, reduces padding and adds margin
+// .term-p        - Used in conjuction with .term when the term is in a body paragaraph of text, reduces padding and adds margin
 //
 // Markup: 
 // <p>What are <span class="term {{modifier_class}}" data-term="extractive industry" title="Click to define" tabindex="0">
@@ -170,6 +171,9 @@
   &:hover {
     border-bottom: 1px solid $base-font-color;
     text-decoration: none;
+  }
+  i:before {
+    padding-left: $base-padding-lite;
   }
 }
 

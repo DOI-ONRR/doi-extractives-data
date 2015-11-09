@@ -17,21 +17,8 @@
   }
 } 
 
-.communities_content-icon img{
-  height: 20px;
-  padding-right: 8px;
-
-  &.iron {
-    height: 16px;
-  }
-
-  &.copper {
-    height: 22px;
-  }
-
-  &.gas {
-    height: 25px;
-  }
+.communities_content-icon i{
+  padding-right: $base-padding-lite / 2;
 }
 
 .communities_content-select {

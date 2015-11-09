@@ -32,7 +32,7 @@
       &:after {
         content: '\0046';
       }
-      
+
     }
 
     .accordion-button_more {
@@ -60,13 +60,13 @@
       @include rotate(90deg,1);
 
       &:after {
-        content:'\0046';
+        content: '\0046';
       }
     }
 
     .accordion-button_more {
       &::after {
-        content:'\0052';
+        content: '\0052';
       }
 
       display: inline-block; 

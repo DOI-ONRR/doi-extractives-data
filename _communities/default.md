@@ -16,18 +16,18 @@ nav_items:
 ---
 
 <h3 class="communities_content-icon">
-  <img src="{{ site.baseurl }}/img/oil.png" alt="oil rig">
-  <img src="{{ site.baseurl }}/img/gas.png" alt="gas burner" class="gas">
-  <img src="{{ site.baseurl }}/img/coal.png" alt="coal cart">
-  <img src="{{ site.baseurl }}/img/gold.png" alt="goal inguts">
-  <img src="{{ site.baseurl }}/img/copper.png" alt="copper penny" class="copper">
-  <img src="{{ site.baseurl }}/img/iron.png" alt="iron ore" class="iron">
+  <i class="icon-oil"></i>
+  <i class="icon-gas"></i>
+  <i class="icon-coal"></i>
+  <i class="icon-gold"></i>
+  <i class="icon-copper"></i>
+  <i class="icon-iron"></i>
   <a name="intro" class="communities_content-heading js-comm_section">Six commodities</a>
 </h3>
 
 ## Twelve community narratives
 
-While extractive industries make up a small but important part of the national economy in the U.S. at 2.6% of 2013 GDP, in some local communities, extractive industries play a much larger role. For example, extractive industries make up more than a third (37%) of the State of Wyoming’s GDP.[^1] At the county level, certain communities and local economies can be even more dependent on <span class="term" data-term="extractive industry" title="Click to define" tabindex="0">extractive industry</span><i class="term-icon"></i>.
+While extractive industries make up a small but important part of the national economy in the U.S. at 2.6% of 2013 GDP, in some local communities, extractive industries play a much larger role. For example, extractive industries make up more than a third (37%) of the State of Wyoming’s GDP.[^1] At the county level, certain communities and local economies can be even more dependent on <span class="term" data-term="extractive industry" title="Click to define" tabindex="0">extractive industry<i class="icon-book"></i></span>.
 
 This section provides a snapshot into twelve communities that, over about the last decade, have led U.S. counties in production of one of the following resources: iron, copper, gold, coal, oil, and natural gas. These counties, or in some cases clusters of counties given geological formations, were selected based on their recent high levels of production. We hope this will help you understand the economic and fiscal effects of oil, gas, and mineral extraction on local communities, including revenue sustainability.
 

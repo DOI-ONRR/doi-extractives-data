@@ -5,10 +5,10 @@
 // Styleguide components.glossary
 
 // Glossary drawer
-// Markup: 
+// Markup:
 // <div class="glossary" style="right:0px;">
 //   <button title="Close glossary"
-//       class="button button--close toggle"><span class="u-visually-hidden"><i class="fa fa-times"></i></span>
+//       class="button button--close toggle"><span class="u-visually-hidden"><i class="icon-close-x"></i></span>
 //   </button>
 //   <h2 id="glossary-header"><i class="fa fa-book"></i> Glossary</h2>
 //   <label for="glossary-search" class="label">Search glossary terms</label>
@@ -44,7 +44,7 @@
   width:300px;
   background-color: $light-black;
   color: $white;
-  
+
   h2, p, label, i {
     color: $white;
   }
@@ -65,6 +65,7 @@
     width: 50px;
     height: 50px;
     background-color: transparent;
+    color: $white;
   }
 
 }
@@ -74,8 +75,9 @@
 }
 
 #glossary-header{
-  i {
-    margin-right: .75rem;
+  i:before {
+    padding-left: 0;
+    padding-right: $base-padding-lite;
   }
 }
 
@@ -84,13 +86,13 @@
      font-style: italic;
   }
   &:-moz-placeholder { /* Firefox 18- */
-     font-style: italic;  
+     font-style: italic;
   }
   &::-moz-placeholder {  /* Firefox 19+ */
-     font-style: italic;  
+     font-style: italic;
   }
-  &:-ms-input-placeholder {  
-     font-style: italic;  
+  &:-ms-input-placeholder {
+     font-style: italic;
   }
 }
 
@@ -150,9 +152,9 @@
 // Wrap glossary terms with these classes
 //
 // .term          - Standard class -- adds the book icon
-// .term-p       - Used when the term is in a body paragaraph of text, reduces padding and adds margin
+// .term-p        - Used in conjuction with .term when the term is in a body paragaraph of text, reduces padding and adds margin
 //
-// Markup: 
+// Markup:
 // <p>What are <span class="term {{modifier_class}}" data-term="extractive industry" title="Click to define" tabindex="0">
 //     extractive industries
 //     <i class="term-icon"></i>
@@ -171,17 +173,12 @@
     border-bottom: 1px solid $base-font-color;
     text-decoration: none;
   }
-}
-
-.term-icon {
-  background: url('../img/icons/glossary/icon-book.svg') no-repeat;
-  padding-left: 0.75em;
-  margin-left: $base-padding-lite;
-  background-size: 100%;
-}
-
-.term-icon_large {
-  background-position-y: 9px;
+  i {
+    font-size: 0.75em;
+    &:before {
+      padding-left: $base-padding-lite * 0.75;
+    }
+  }
 }
 
 .term-p {

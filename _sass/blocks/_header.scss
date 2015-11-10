@@ -112,18 +112,16 @@ header,
 
   .header-nav_search_icon {
     float: right;
-    width: 40px;
+    width: 37px;
     height: 100%;
     background-color: $blue;
     color: white;
     border-bottom-right-radius: $base-border-radius;
     border-top-right-radius: $base-border-radius;
-    border-bottom-color: $dark-gray;
-    border-top-color: $dark-gray;
-    border-right-color: $dark-gray;
+    border: 1px solid $dark-gray;
     cursor: pointer;
-    padding: 0.26rem;
-    padding-left: 0.75rem;
+    padding: 0.22rem;
+    padding-left: 0.64rem;
   }
 }
 

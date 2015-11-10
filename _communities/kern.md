@@ -13,7 +13,7 @@ nav_items:
   - name: emplo
     title: Employment
   - name: reven
-    title: Revenues
+    title: Revenue
   - name: costs
     title: Costs
   - name: data
@@ -37,7 +37,7 @@ Production Content
 
 Employment Content
 
-<h3><a name="reven" class="communities_content-heading js-comm_section">Revenues</a></h3>
+<h3><a name="reven" class="communities_content-heading js-comm_section">Revenue</a></h3>
 
 Revenues Content
 
@@ -48,7 +48,37 @@ Cost Content
 
 <h3><a name="data" class="communities_content-heading js-comm_section">Data Availability</a></h3>
 
-Data Content
+<table>
+  <thead>
+    <tr>
+      <td>Measure</td>
+      <td>Data Availability</td>
+      <td>Data Gaps</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Production</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Employment</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Revenue</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Costs</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
-<h3 class="communities_content-heading">Notes:</h3>
+<h3 class="communities_content-heading">Notes</h3>
 [^1]: Dummy footnote. [Dummy footnote link](http://google.com)

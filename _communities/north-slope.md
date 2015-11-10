@@ -13,7 +13,7 @@ nav_items:
   - name: emplo
     title: Employment
   - name: reven
-    title: Revenues
+    title: Revenue
   - name: costs
     title: Costs
   - name: data

@@ -1,7 +1,7 @@
 ---
 title: North Slope Borough, Alaska
 layout: community
-permalink: /communities/nor/
+permalink: /communities/north-slope/
 resource: oil
 nav_items:
   - name: intro
@@ -20,14 +20,14 @@ nav_items:
     title: Data Availablity
 ---
 
-<h3><a name="intro" class="communities_content-heading js-comm_section">North Slope Borough, Alaska</a></h3>
+<h3><a name="intro" class="communities_content-heading js-comm_section">{{ page.title }}</a></h3>
 
 The United States has experienced rapid change in domestic oil production since 2008, when crude oil production reached a low of 3.98 million bbl/day.[^1] Fast forward five years, and the United States had nearly doubled its daily production output, with Texas and North Dakota driving much of the growth.[^2] [^3] Alaska—which was the fourth largest state producer of crude oil in 2013—did not experience the same production boom, with crude oil output in steady decline throughout the past decade.[^4] In spite of that downward trend, the nation’s largest oil-producing county is Alaska’s North Slope Borough.[^5]
 
 
 <h3><a name="geolo" class="communities_content-heading js-comm_section">Geology and History</a></h3>
 
-The North Slope Borough is the country’s largest organized local jurisdiction, spanning more than 94,000 miles north of the Arctic Circle. Its 9,686 residents, most of whom are Inupiat Alaskan Natives, are spread across eight separate communities.[^6] The northern coast of Alaska was documented as a potential oil-producing region as early as 1900. However, the borough’s government was not formally incorporated until 1972, soon after the discovery of oil at Prudhoe Bay, the largest single oil field in North America.[^7] 
+The North Slope Borough is the country’s largest organized local jurisdiction, spanning more than 94,000 miles north of the Arctic Circle. Its 9,686 residents, most of whom are Inupiat Alaskan Natives, are spread across eight separate communities.[^6] The northern coast of Alaska was documented as a potential oil-producing region as early as 1900. However, the borough’s government was not formally incorporated until 1972, soon after the discovery of oil at Prudhoe Bay, the largest single oil field in North America.[^7]
 
 Oil production increased dramatically in 1977 with the opening of the Alaska Pipeline, which provided the first economically viable way to transport large amounts of crude oil from the North Slope to market. In 1994, ARCO identified another significant deposit at the Alpine Field, located on state land east of the Colville River and extending into the federally administered National Petroleum Reserve of Alaska. The North Slope’s Prudhoe Bay, Alpine Field, and Kuparuk River constitute the majority of the state of Alaska’s oil production. Today, the borough’s oil reserve base is extensive, with approximately six billion barrels of proved oil.[^8]
 
@@ -53,12 +53,12 @@ At the state level, the Alaska government collects oil-related revenue for the b
 * Oil and gas corporate net income tax is set at a maximum of 9.4% on Alaskan income more than $90,000. In 2013, $434 million was deposited in the state’s General Fund from this tax.
 
 Alaskan residents also receive annual dividend payments from the state’s Permanent Fund, based on a five-year average of the fund’s performance. The state established the Permanent Fund in 1976 as construction of the Alaska Pipeline concluded. Twenty-five percent of revenue from mineral leases on state-owned lands and from federal mineral revenue-sharing payments go into the Permanent Fund for investment. In 2013, Alaskan residents each received $900 as a result of this payout.[^19]
- 
+
 <h3><a name="costs" class="communities_content-heading js-comm_section">Costs</a></h3>
 
 Oil extraction also incurs certain fiscal costs. Oil exploration and development on the North Slope requires infrastructure, including airports, docks, pads and roads, ports, production-related facilities, pipelines, and gravel islands, for example.[^20] The North Slope Borough is responsible for maintaining approximately 100 miles of roads, as well as boat ramps, boat landings, port facilities, nine public airports, and thousands of miles of winter trails and roads.[^21]
 
-In terms of transportation infrastructure in the borough, Dalton Highway is the only permanent road connecting the North Slope Borough to the main Alaska Marine Highway system. Dalton Highway was originally financed and constructed by the oil and gas industry, and is still mainly used as an industrial road. However, the Alaska Department of Transportation reported spending approximately $15,260 per mile annually on maintenance for Dalton Highway at the time of the last comprehensive borough transportation plan. Oil companies are required to maintain seasonal ice routes used for industry traffic in the winter, but these routes cost the borough approximately $100,000 per mile to initially construct in the Prudhoe Bay region.[^22] 
+In terms of transportation infrastructure in the borough, Dalton Highway is the only permanent road connecting the North Slope Borough to the main Alaska Marine Highway system. Dalton Highway was originally financed and constructed by the oil and gas industry, and is still mainly used as an industrial road. However, the Alaska Department of Transportation reported spending approximately $15,260 per mile annually on maintenance for Dalton Highway at the time of the last comprehensive borough transportation plan. Oil companies are required to maintain seasonal ice routes used for industry traffic in the winter, but these routes cost the borough approximately $100,000 per mile to initially construct in the Prudhoe Bay region.[^22]
 
 Unlike many other Alaska municipalities, the North Slope Borough is responsible for its airports, which serve the local population as well as a range of commercial and recreational visitors.[^23] Annual costs for airport maintenance across the North Slope are about $1.4 million per year, including spending on airports and landing strips that are labeled as “unrestricted,” or permissible for oil and gas industry use.[^24] It is unclear what percentage of the annual airport maintenance budget is spent specifically on support activities for the oil and gas industry.
 
@@ -102,7 +102,7 @@ The table below highlights the data sources used to compile this county case stu
   </tbody>
 </table>
 
-<h3 class="communities_content-heading">Notes:</h3> 
+<h3 class="communities_content-heading">Notes:</h3>
 [^1]: Barrels are noted as “bbl” when used as a unit of measure.
 [^2]: [Department of Energy, U.S. Domestic Oil Production Exceeds Imports for First Time in 18 Years](http://energy.gov/articles/us-domestic-oil-production-exceeds-imports-first-time-18-years)
 [^3]: [U.S. Energy Information Administration, Crude Oil Production](http://www.eia.gov/dnav/pet/pet_crd_crpdn_adc_mbbl_a.htm)

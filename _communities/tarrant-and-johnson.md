@@ -1,7 +1,7 @@
 ---
 title: Tarrant and Johnson Counties, Texas
 layout: community
-permalink: /communities/tar/
+permalink: /communities/tarrant-and-johnson/
 resource: gas
 nav_items:
   - name: intro
@@ -20,7 +20,7 @@ nav_items:
     title: Data Availablity
 ---
 
-<h3><a name="intro" class="communities_content-heading js-comm_section">Tarrant and Johnson Counties, Texas</a></h3>
+<h3><a name="intro" class="communities_content-heading js-comm_section">{{ page.title }}</a></h3>
 
 Texas leads the country in natural gas production, generating more gas on an annual basis than the next three highest-producing states combined (Louisiana, Oklahoma, and Wyoming).[^1] Tarrant and Johnson counties contribute significantly to Texas’s natural gas production due to their geographic positioning atop the rich reserves of the Barnett Shale field in the Bend Arch-Fort Worth Basin.
 
@@ -95,7 +95,7 @@ The table below highlights the data sources used to compile this county narrativ
 </table>
 
 
-<h3 class="communities_content-heading">Notes:</h3> 
+<h3 class="communities_content-heading">Notes:</h3>
 
 [^1]: U.S. Energy Administration, [Natural Gas Gross Withdrawals and Production](http://www.eia.gov/dnav/ng/ng_prod_sum_a_EPG0_VGM_mmcf_a.htm)
 [^2]: U.S. Energy Administration, [Review of Emerging Resources – U.S. Shale Gas and Shale Oil Plays](http://www.eia.gov/analysis/studies/usshalegas/), 2011
@@ -114,7 +114,7 @@ The table below highlights the data sources used to compile this county narrativ
 [^15]: Texas General Land Office, [Permanent School Fund](http://www.glo.texas.gov/what-we-do/state-lands/permanent-school-fund/index.html)
 [^16]: Texas General Land Office, [Oil & Natural Gas](http://www.glo.texas.gov/what-we-do/energy-and-minerals/oil_gas/)
 [^17]: Tarrant County Texas, [FAQ’s – Property Tax and Mineral Tax](http://access.tarrantcounty.com/en/tax/property-tax/FAQs-Property-Tax.html)
-[^18]: [Johnson County Financial Report, 2012](http://www.johnsoncountytx.org/webadmin/uploads/fy12-cafr_001.pdf) 
+[^18]: [Johnson County Financial Report, 2012](http://www.johnsoncountytx.org/webadmin/uploads/fy12-cafr_001.pdf)
 [^19]: [Tarrant County Financial Report, 2012](http://access.tarrantcounty.com/content/dam/main/auditor/FinancialAccountingReports/Annual%20Financial%20Reports/CAFR/FY2013_Comprehensive_Annual_Financial_Report.pdf)
 [^20]: Texas Department of Transportation, [Impact of Energy Development Activities on the Texas Transportation Infrastructure](http://ftp.dot.state.tx.us/pub/txdot-info/energy/testimony_062612.pdf)
 [^21]: Texas Water Development Board, [Water For Texas 2012 State Water Plan](http://www.twdb.texas.gov/publications/state_water_plan/2012/2012_SWP.pdf)

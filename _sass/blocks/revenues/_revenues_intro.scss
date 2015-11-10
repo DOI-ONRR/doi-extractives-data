@@ -1,6 +1,6 @@
 // Revenues Intro
 //
-// 
+//
 //
 // Styleguide blocks.revenues_intro
 
@@ -9,7 +9,7 @@
 }
 
 .revenues_intro-image_caption {
-	@include heading(h4);
+  @include heading(h4);
   @include font-size(1.2);
   padding: $base-padding-lite;
 }

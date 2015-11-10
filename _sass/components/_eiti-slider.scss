@@ -22,7 +22,7 @@ eiti-slider {
   }
 
   .handle {
-    background: #fff;
+    background: $white;
     border: 1px solid #999;
     border-radius: 1em;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
@@ -34,11 +34,11 @@ eiti-slider {
     z-index: 100;
 
     &:after {
-      border-color:  #ccc;
+      border-color: #ccc;
       border-style: solid;
       border-width: 0 1px;
       box-sizing: border-box;
-      content: "";
+      content: '';
       display: block;
       height: 0.6em;
       left: 50%;
@@ -56,7 +56,7 @@ eiti-slider {
     &:after {
       background: $slider-background;
       border-radius: 500em;
-      content: " ";
+      content: ' ';
       display: block;
       height: 1.2em;
       margin: -0.45em 0 0 -0.25em;
@@ -65,7 +65,6 @@ eiti-slider {
     }
 
     .label {
-      // @include font-size(1);
       font-size: $base-font-size;
       left: 50%;
       margin-left: -1.2em;

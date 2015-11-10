@@ -87,7 +87,7 @@ The table below highlights the data sources used to compile this county case stu
     <tr>
       <td>Employment</td>
       <td>The Bureau of Labor Statistics (BLS) publishes the Alaska North Slope Borough annual average employment for oil and gas extraction (North American Industry Classification System (NAICS) Code 211).</td>
-      <td>Neither the BLS nor the US Census Bureau has ten-year employment-trend data for the oil and gas industry at the North Slope Borough level for 2004 through 2013. There are several years and subindustries without data.</td>
+      <td>Neither the BLS nor the U.S. Census Bureau has ten-year employment-trend data for the oil and gas industry at the North Slope Borough level for 2004 through 2013. There are several years and subindustries without data.</td>
     </tr>
     <tr>
       <td>Revenue</td>

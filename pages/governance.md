@@ -19,6 +19,9 @@ permalink: /resource_revenues/governance/
     <li>Tribal laws, regulations, and info</li>
   </ul>
 
+  <h4>Subpages:</h4>
+  <a href="{{ site.baseurl }}/resource_revenues/governance/legal/">State Legal and Fiscal Information</a>
+
 </div>
 
 

@@ -2,7 +2,7 @@
 //
 // TODO: More variety
 //
-// Markup: 
+// Markup:
 // <legend>Legend</legend>
 // Input: <input/>
 // <label>Label</label>
@@ -36,8 +36,9 @@ legend {
 input,
 label,
 select {
-  font-size: $base-font-size;
   display: block;
+  font-size: $base-font-size;
+
 }
 
 label {
@@ -45,7 +46,7 @@ label {
   margin-bottom: $base-line-height / 4;
 
   &.required:after {
-    content: "*";
+    content: '*';
   }
 
   abbr {
@@ -57,18 +58,20 @@ textarea,
 #{$all-text-inputs},
 select[multiple=multiple] {
   font-size: $base-font-size;
+
   @include placeholder {
     color: $dark-gray;
-    opacity: 1;
     font-weight: $weight-book;
+    opacity: 1;
   }
+
   @include transition(border-color);
-  background-color: white;
-  border-radius: $form-border-radius;
+
+  background-color: $white;
   border: 1px solid $form-border-color;
+  border-radius: $form-border-radius;
   box-shadow: none;
   box-sizing: border-box;
-  // font-family: $base-font-family;
   margin-bottom: $base-padding;
   padding: 0.6em 0.8em;
   width: 100%;
@@ -86,11 +89,11 @@ textarea {
   resize: vertical;
 }
 
-input[type="search"] {
+input[type='search'] {
   @include appearance(none);
 }
 
-input[type="file"] {
+input[type='file'] {
   margin-bottom: $base-line-height / 2;
   padding-bottom: ($base-line-height / 3);
   width: 100%;
@@ -98,12 +101,12 @@ input[type="file"] {
 
 select {
   @include appearance(none);
-  width: 100%;
-  background-image: url('../img/angle-down.png');
-  background-repeat: no-repeat;
-  background-position: 99% 50%;
-  background-size: 2rem;
+
   background-color: $white;
+  background-image: url('../img/angle-down.png');
+  background-position: 99% 50%;
+  background-repeat: no-repeat;
+  background-size: 2rem;
   border: 1px solid $form-border-color;
   border-radius: $form-border-radius;
   color: $dark-gray;
@@ -113,6 +116,7 @@ select {
   padding: 0.5em 7rem 0.5em 0.8rem;
   text-overflow: ellipsis;
   white-space: nowrap;
+  width: 100%;
 
   &:focus {
     border: 1px solid $white;
@@ -125,8 +129,8 @@ select {
   }
 }
 
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }

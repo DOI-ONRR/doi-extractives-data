@@ -1,6 +1,6 @@
 // heading() mixin
 //
-// Use the heading() mixin to add bundles of 
+// Use the heading() mixin to add bundles of
 // typographical styles to a selector
 //
 // Styleguide mixins.heading
@@ -33,7 +33,7 @@
 
   @if $level == h4 {
     // light 24/34
-    font-size: 1.5rem; // 24px 
+    font-size: 1.5rem; // 24px
     font-weight: $weight-light;
     line-height: 2.125rem; // 34px
   }

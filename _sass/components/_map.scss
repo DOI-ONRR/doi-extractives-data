@@ -4,8 +4,8 @@
 
 .map {
   background-color: $mid-gray;
-  padding-top: $base-padding-large;
   padding-bottom: $base-padding-extra;
+  padding-top: $base-padding-large;
 }
 
 .map-left {
@@ -76,21 +76,21 @@
     color: $dark-gray;
     display: inline-block;
     height: 55px;
-    padding: 33px 0px 10px 0px;
     margin-left: 10px;
+    padding: 33px 0 10px 0;
     text-align: center;
     width: 55px;
 
     &.map {
-      background: url(../img/icons/map.png) no-repeat;
-      background: url(../img/icons/map.svg) no-repeat,
+      background: url('../img/icons/map.png') no-repeat;
+      background: url('../img/icons/map.svg') no-repeat,
         linear-gradient(transparent, transparent);
       background-position: top center;
       background-size: 40px 40px;
 
       &.active {
-        background: url(../img/icons/map-dark.png) no-repeat;
-        background: url(../img/icons/map-dark.svg) no-repeat,
+        background: url('../img/icons/map-dark.png') no-repeat;
+        background: url('../img/icons/map-dark.svg') no-repeat,
           linear-gradient(transparent, transparent);
         background-color: $white;
         background-position: top center;
@@ -99,15 +99,15 @@
     }
 
     &.charts {
-      background: url(../img/icons/charts.png) no-repeat;
-      background: url(../img/icons/charts.svg) no-repeat,
+      background: url('../img/icons/charts.png') no-repeat;
+      background: url('../img/icons/charts.svg') no-repeat,
         linear-gradient(transparent, transparent);
       background-position: top center;
       background-size: 40px 40px;
 
       &.active {
-        background: url(../img/icons/charts-dark.png) no-repeat;
-        background: url(../img/icons/charts-dark.svg) no-repeat,
+        background: url('../img/icons/charts-dark.png') no-repeat;
+        background: url('../img/icons/charts-dark.svg') no-repeat,
           linear-gradient(transparent, transparent);
         background-color: $white;
         background-position: top center;
@@ -129,14 +129,14 @@
 }
 
 .map-map {
-  padding-top: $base-padding-large;
-  padding-right: $base-padding-large;
   padding-left: $base-padding-large;
+  padding-right: $base-padding-large;
+  padding-top: $base-padding-large;
 
   svg {
     display: block;
-    width: 100%;
     height: 350px;
+    width: 100%;
   }
 }
 
@@ -154,8 +154,8 @@
     border-radius: $base-border-radius;
     color: $blue;
     display: inline-block;
-    padding: 5px;
     margin-left: 10px;
+    padding: 5px;
 
     &:hover,
     &:focus {
@@ -165,8 +165,8 @@
 }
 
 .map-contextual {
-  padding-top: $base-padding;
   padding-bottom: $base-padding-extra;
+  padding-top: $base-padding;
   text-align: center;
 }
 

@@ -5,7 +5,7 @@
 // Styleguide components.glossary
 
 // Glossary drawer
-// Markup: 
+// Markup:
 // <div class="glossary" style="right:0px;">
 //   <button title="Close glossary"
 //       class="button button--close toggle"><span class="u-visually-hidden"><i class="icon-close-x"></i></span>
@@ -44,7 +44,7 @@
   width:300px;
   background-color: $light-black;
   color: $white;
-  
+
   h2, p, label, i {
     color: $white;
   }
@@ -86,13 +86,13 @@
      font-style: italic;
   }
   &:-moz-placeholder { /* Firefox 18- */
-     font-style: italic;  
+     font-style: italic;
   }
   &::-moz-placeholder {  /* Firefox 19+ */
-     font-style: italic;  
+     font-style: italic;
   }
-  &:-ms-input-placeholder {  
-     font-style: italic;  
+  &:-ms-input-placeholder {
+     font-style: italic;
   }
 }
 
@@ -154,7 +154,7 @@
 // .term          - Standard class -- adds the book icon
 // .term-p        - Used in conjuction with .term when the term is in a body paragaraph of text, reduces padding and adds margin
 //
-// Markup: 
+// Markup:
 // <p>What are <span class="term {{modifier_class}}" data-term="extractive industry" title="Click to define" tabindex="0">
 //     extractive industries
 //     <i class="term-icon"></i>
@@ -173,8 +173,11 @@
     border-bottom: 1px solid $base-font-color;
     text-decoration: none;
   }
-  i:before {
-    padding-left: $base-padding-lite;
+  i {
+    font-size: 0.75em;
+    &:before {
+      padding-left: $base-padding-lite * 0.75;
+    }
   }
 }
 

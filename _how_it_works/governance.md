@@ -1,7 +1,7 @@
 ---
-title: Governance
+title: How it Works – Governance
 layout: default
-permalink: /resource_revenues/governance/
+permalink: /how-it-works/governance/
 ---
 
 <div class="container-outer container-padded">
@@ -21,8 +21,8 @@ permalink: /resource_revenues/governance/
 
   <h4>Subpages:</h4>
   <ul>
-    <li><a href="{{ site.baseurl }}/resource_revenues/governance/legal/">State Legal and Fiscal Information</a></li>
-    <li><a href="{{ site.baseurl }}/resource_revenues/governance/taxes/">Tax Expenditures</a></li>
+    <li><a href="{{ site.baseurl }}/how-it-works/governance/legal/">State Legal and Fiscal Information</a></li>
+    <li><a href="{{ site.baseurl }}/how-it-works/governance/taxes/">Tax Expenditures</a></li>
   </ul>
 </div>
 

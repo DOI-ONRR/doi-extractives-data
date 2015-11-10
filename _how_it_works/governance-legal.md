@@ -1,7 +1,7 @@
 ---
-title: State Legal and Fiscal Information
+title: How it Works – State Legal and Fiscal Information
 layout: default
-permalink: /resource_revenues/governance/legal/
+permalink: /how-it-works/governance/legal/
 ---
 
 <div class="container-outer container-padded">

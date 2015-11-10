@@ -1,7 +1,7 @@
 ---
-title: Tax Expenditures
+title: How it Works – Tax Expenditures
 layout: default
-permalink: /resource_revenues/governance/taxes/
+permalink: /how-it-works/governance/taxes/
 ---
 
 <div class="container-outer container-padded">

@@ -19,3 +19,6 @@ collections:
   explores:
     output: true
     permalink: /explores/:explore/
+  how_it_works:
+    output: true
+    permalink: /how-it-works/:subpage/

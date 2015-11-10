@@ -20,7 +20,6 @@ $onshore-renewables-secondary-color: $blue;
 @import 'revenues_subpage_diving_graphics';
 
 .revenues_subpage-dyk {
-
   @include respond-to(medium-up) {
     display: block;
     margin-top: 40%;
@@ -32,13 +31,11 @@ $onshore-renewables-secondary-color: $blue;
     }
   }
 
-
   border-radius: $base-border-radius;
   margin-bottom: $base-padding;
   overflow: hidden;
   position: relative;
   z-index: 3;
-
 }
 
 
@@ -134,6 +131,7 @@ $onshore-renewables-secondary-color: $blue;
 .revenues_subpage-steps_heading,
 .revenues_subpage-steps_heading_more {
   @extend .revenues_steps-heading;
+
   display: inline-block;
   margin: 0;
 }

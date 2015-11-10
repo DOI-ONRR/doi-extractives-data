@@ -7,13 +7,12 @@
 .communities_content {
   position: relative;
   ul {
+    @include heading('para-sm');
 
-    @include heading("para-sm");
-
-  	list-style-type: square;
     font-weight: $weight-light;
-	  padding-left: $base-padding;
-	  padding-bottom: $base-padding;
+    list-style-type: square;
+    padding-left: $base-padding;
+    padding-bottom: $base-padding;
   }
 }
 
@@ -35,6 +34,7 @@
   }
 
 }
+
 .communities_content-heading {
   color: $dark-gray;
 }

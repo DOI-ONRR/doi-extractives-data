@@ -15,7 +15,6 @@
   p {
     padding-bottom: $base-padding;
   }
-
 }
 
 .revenues_subpage-office {
@@ -31,7 +30,6 @@
     border-bottom-left-radius: $base-border-radius;
     border-bottom-right-radius: $base-border-radius;
   }
-
 }
 
 .revenues_subpage-office_container {
@@ -57,14 +55,14 @@
 
 .revenues_subpage-office_logos {
 
-  @include span-columns(2);  
+  @include span-columns(2);
 
   @include respond-to(medium-up) {
     @include span-columns(3);
   }
-  
-  padding-right: $base-padding;
+
   padding-bottom: $base-padding;
+  padding-right: $base-padding;
 }
 
 .revenues_subpage-office_logo {

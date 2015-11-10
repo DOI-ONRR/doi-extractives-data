@@ -20,20 +20,27 @@ $onshore-renewables-secondary-color: $blue;
 @import 'revenues_subpage_diving_graphics';
 
 .revenues_subpage-dyk {
-  position: relative;
   border-radius: $base-border-radius;
   margin-bottom: $base-padding;
   overflow: hidden;
+  position: relative;
   z-index: 3;
 
   @include respond-to(medium-up) {
     display: block;
     margin-top: 40%;
+
     @include span-columns(2);
+
     &[accordion-open=true] {
       @include span-columns(3);
     }
   }
+
+  border-radius: $base-border-radius;
+  margin-bottom: $base-padding;
+  overflow: hidden;
+  position: relative;
 
 }
 
@@ -61,23 +68,23 @@ $onshore-renewables-secondary-color: $blue;
 }
 
 .revenues_subpage_dyk-link {
+  bottom: $base-padding;
   position: absolute;
   right: $base-padding;
-  bottom: $base-padding;
 
   span,
   &::after {
     line-height: $base-line-height;
-    vertical-align: bottom;
     padding-left: $base-padding-lite;
+    vertical-align: bottom;
   }
 }
 
 
 .revenues_subpage-steps_group {
   padding-bottom: $base-padding;
-  p {
 
+  p {
     @include respond-to(medium-up) {
       padding-left: 56px;
     }
@@ -85,7 +92,6 @@ $onshore-renewables-secondary-color: $blue;
     @include respond-to(medium-down) {
       margin-top: $base-padding-lite;
     }
-
   }
 
   ul {
@@ -95,11 +101,8 @@ $onshore-renewables-secondary-color: $blue;
   }
 
   @include respond-to(medium-up) {
-
     @include direction-context(right-to-left) {
-
       @include span-columns(7);
-
     }
 
     padding-bottom: 6.225em; // 100px twice $base-padding-extra;
@@ -113,27 +116,28 @@ $onshore-renewables-secondary-color: $blue;
 
 
 .revenues_subpage-steps_group_item {
-    background-color: $white;
-    margin-bottom: 4px;
-    padding: $base-padding;
-    z-index: 3;
+  background-color: $white;
+  margin-bottom: 4px;
+  padding: $base-padding;
+  z-index: 3;
 
-    &:first-of-type {
-      border-radius: $base-border-radius $base-border-radius 0 0;
-    }
-
-    &:last-of-type {
-      border-radius: 0 0 $base-border-radius $base-border-radius;
-    }
-
-    a {
-      @extend .link-active;
-    }
+  a {
+    @extend .link-active;
   }
+
+  &:first-of-type {
+    border-radius: $base-border-radius $base-border-radius 0 0;
+  }
+
+  &:last-of-type {
+    border-radius: 0 0 $base-border-radius $base-border-radius;
+  }
+}
 
 .revenues_subpage-steps_heading,
 .revenues_subpage-steps_heading_more {
 	@extend .revenues_steps-heading;
+
   display: inline-block;
   margin: 0;
 }
@@ -143,11 +147,10 @@ $onshore-renewables-secondary-color: $blue;
 }
 
 .revenues_subpage-steps_number {
-	@extend .revenues_steps-number;
-  border: 2px solid #ebebeb;
+  @extend .revenues_steps-number;
+
+  border: 2px solid $mid-gray;
   margin-right: 8px;
   padding-left: 11px;
   padding-top: 8px;
 }
-
-

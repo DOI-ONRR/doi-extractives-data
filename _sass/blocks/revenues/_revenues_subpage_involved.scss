@@ -7,8 +7,8 @@
 
 .revenues_subpage-involved {
   background-color: $white;
-  padding-top: $base-padding-large;
   padding-bottom: $base-padding-large;
+  padding-top: $base-padding-large;
 
   h2 {
     color: $light-black;
@@ -16,33 +16,33 @@
   }
 
   h3 {
-    padding-bottom: 5px;
     margin-bottom: 8px;
+    padding-bottom: 5px;
   }
 
   .fa-stack {
     line-height: 2.1em;
   }
-
-
 }
 
 .revenues_subpage-involved_option {
   @include respond-to(small-up) {
-      @include span-columns(4 of 8);
-      @include omega(2n);
+    @include span-columns(4 of 8);
+    @include omega(2n);
   }
 
   @include respond-to(medium-up) {
-    margin-top: $base-padding-large;
     @include omega-reset(2n);
     @include span-columns(3 of 12);
     @include omega(4n);
+
+    margin-top: $base-padding-large;
   }
 }
+
 .revenues_subpage-involved_video {
   text-align: center;
-  
+
   @include respond-to(medium-up) {
     iframe {
       width: 100%;

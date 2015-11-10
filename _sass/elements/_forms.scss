@@ -78,8 +78,6 @@ select[multiple=multiple] {
   }
 
   &:focus {
-    border: 1px solid $white;
-    box-shadow: $form-box-shadow-focus;
     outline: none;
   }
 }

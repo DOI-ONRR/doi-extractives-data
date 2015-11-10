@@ -1,6 +1,6 @@
 .sticky_nav{
   position: absolute;
-  left: percentage(8 / 12);
+  left: percentage(7 / 12);
   padding-left: $base-padding-extra;
   top: 0;  
   
@@ -15,7 +15,10 @@
 .sticky_nav-nav_item {
   list-style-type: none;
   padding: $base-padding-lite;
+  @include heading('para-lg');
+  margin-bottom: 0;
   &.active a {
-    border-bottom: 1px dotted $base-link-color;
+    color: $dark-gray;
+    font-weight: $weight-book;
   }
 }

@@ -23,14 +23,9 @@ body {
 }
 
 .footnotes {
-  
-  a {
-    text-decoration: underline;
 
-    &:hover,
-    &:focus {
-      text-decoration: none;
-    }
+  a {
+    @extend .link-active;
   }
 
   ol {
@@ -58,4 +53,5 @@ body {
 .footnote {
   vertical-align: super; // 2
   font-size: smaller;
+  @extend .link-charlie;
 }

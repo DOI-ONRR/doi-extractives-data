@@ -1,0 +1,100 @@
+// Accordions
+//
+// Togglable accordion. Button is visible only in 
+// screen sizes smaller than medium
+//
+// Markup: 
+// <ul accordion>
+//    <li accordion-item accordion-open="true">
+//        <h3>Heading</h3>
+//        <button class="accordion-button" accordion-button></button>
+//        <div class="accordion-content">Accordion Content</div
+//    </li>
+// </ul>
+//
+// Styleguide components.accordions
+
+[accordion-item] {
+  position: relative;
+
+  &[accordion-open=true] {
+    .accordion-button:after {
+      content: "\f077";
+    }
+
+    .accordion-button_more {
+      display: none;
+    }
+
+    .accordion-button_less {
+      display: inline-block;
+
+      &::after {
+        content: '–';
+      }
+    }
+
+    .accordion-content,
+    .accordion-more {
+      display: inline-block;
+    }
+
+  }
+
+  &[accordion-open=false] {
+    .accordion-button:after {
+      content: "\f078";
+    }
+
+    .accordion-button_more {
+      &::after {
+        content: '+';
+      }
+
+      display: inline-block; 
+    }
+
+    .accordion-button_less {
+      display: none;
+    }
+
+    .accordion-content {
+
+      @include respond-to(medium-up) {
+        display: inline-block;
+      }
+
+      display: none; 
+    }
+
+    .accordion-more {
+      display: none; 
+    }
+    
+  }
+
+
+}
+
+.accordion-button {
+  background-size: 50%;
+  background-color: transparent;
+  height: 2rem;
+  margin: 0;
+  position: absolute;
+  right: $base-padding;
+  width: 2rem;
+  
+  &:after {
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+  } 
+
+  @include respond-to(medium-up) {
+    display: none;
+  }
+}
+
+

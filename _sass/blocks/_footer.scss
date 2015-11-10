@@ -1,5 +1,5 @@
 // Footer
-// 
+//
 // This is on the bottom of every page. Find in _includes/layout/footer.html
 //
 //
@@ -11,6 +11,7 @@ footer,
 .footer-para {
   color: $white;
 }
+
 footer,
 .footer {
   background-color: $light-black;
@@ -18,7 +19,7 @@ footer,
 }
 
 .footer-col {
-  @include span-columns(3);
+  @include span-columns(2);
   margin-top: $base-padding;
 
   &:first-of-type {
@@ -37,8 +38,8 @@ footer,
 
 .footer-list_item {
   line-height: 1.3;
-  padding-right: $base-padding;
   padding-bottom: $base-padding;
+  padding-right: $base-padding;
 }
 
 

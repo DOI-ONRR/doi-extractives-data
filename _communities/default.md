@@ -22,12 +22,12 @@ nav_items:
   <img src="{{ site.baseurl }}/img/gold.png" alt="goal inguts">
   <img src="{{ site.baseurl }}/img/copper.png" alt="copper penny" class="copper">
   <img src="{{ site.baseurl }}/img/iron.png" alt="iron ore" class="iron">
-  <a name="intro" class="js-comm_section">Six commodities</a>
+  <a name="intro" class="communities_content-heading js-comm_section">Six commodities</a>
 </h3>
 
 ## Twelve community narratives
 
-While extractive industries make up a small but important part of the national economy in the U.S. at 2.6% of 2013 GDP, in some local communities, extractive industries play a much larger role. For example, extractive industries make up more than a third (37%) of the State of Wyoming’s GDP.[^1] At the county level, certain communities and local economies can be even more dependent on <span class="term" data-term="extractive industry" title="Click to define" tabindex="0">extractive industry<i class="term-icon"></i></span>.
+While extractive industries make up a small but important part of the national economy in the U.S. at 2.6% of 2013 GDP, in some local communities, extractive industries play a much larger role. For example, extractive industries make up more than a third (37%) of the State of Wyoming’s GDP.[^1] At the county level, certain communities and local economies can be even more dependent on <span class="term" data-term="extractive industry" title="Click to define" tabindex="0">extractive industry</span><i class="term-icon"></i>.
 
 This section provides a snapshot into twelve communities that, over about the last decade, have led U.S. counties in production of one of the following resources: iron, copper, gold, coal, oil, and natural gas. These counties, or in some cases clusters of counties given geological formations, were selected based on their recent high levels of production. We hope this will help you understand the economic and fiscal effects of oil, gas, and mineral extraction on local communities, including revenue sustainability.
 
@@ -40,7 +40,7 @@ This section provides a snapshot into twelve communities that, over about the la
 
 ### Or, read more about how to interpret these studies:
 
-<h3 class="communities_content-heading" class="communities_content-heading"><a name="reven" class="js-comm_section">Revenue Sustainability</a></h3>
+<h3><a name="reven" class="communities_content-heading js-comm_section">Revenue Sustainability</a></h3>
 
 Local governments and communities must consider the many ways natural resource management and extraction can affect their fiscal health. One of the most significant considerations is the sustainability of the revenues local governments receive due to natural resource extraction. Multiple EITI guiding principles reference revenue sustainability as a critical factor in making natural resource wealth &ldquo;an engine for sustainable economic growth.&rdquo;[^2] However, when it comes to managing this critical factor, there are two challenges localities need to address:
 
@@ -51,7 +51,7 @@ Local governments and communities must consider the many ways natural resource m
 
 Each county narrative provides historical context, commodity production rates, employment levels, revenues generated from production, and—where publically available from a government source—local public fiscal costs stemming from extraction (specifically, transportation/roads, water, reclamation, and emergency services).
 
-<h3 class="communities_content-heading"><a name="county-rev" class="js-comm_section">Community Revenues</a></h3>
+<h3 ><a name="county-rev" class="communities_content-heading js-comm_section">Community Revenues</a></h3>
 
 At the county level, revenues received from extractive activities take many forms. For example, some payments originate from taxes on land ownership, while others are based on ownership of the natural resource itself. There are also different methods of valuation, ranging from payments at the point-of-sale, to annual taxes, to those based on an estimated value. For the purposes of this report, the four most common categories are: property taxes, sales and use taxes, state transfer payments, and additional production taxes.
 
@@ -60,7 +60,7 @@ At the county level, revenues received from extractive activities take many form
 * **State transfer payments.** Revenues transferred to the county by the state that come from sources such as **severance taxes** paid by extractives industries to the state based on the volume and/or value of the resources extracted, and **lease payments**, such as bonuses, rents, and royalties, paid by the extractive industries to a public land and mineral owner, either the Federal Government or the state.
 * **County production taxes.** Severance taxes or other payments paid by extractive industries to the county based on the volume or value of resources extracted, or per lease terms if the county is the landowner.
 
-<h3 class="communities_content-heading"><a name="county-cos" class="js-comm_section">Community Costs</a></h3>
+<h3><a name="county-cos" class="communities_content-heading js-comm_section">Community Costs</a></h3>
 
 More often than not, local governments must also make financial investments in their communities to support the extractive industries. These can vary based on the size of the community, the state of its current infrastructure, and the type of natural resources extracted (e.g., coal mining vs. natural gas drilling). In some circumstances, these costs are outweighed by the influx of revenues, while in other cases costs can result in net negative fiscal effects on local governments.[^3] Given these possibilities and considerations, these case studies focus on four types of fiscal costs at the local level:
 
@@ -71,7 +71,7 @@ More often than not, local governments must also make financial investments in t
 
 There are additional fiscal benefits and burdens associated with extractive activities than those addressed in this report. For example, a local government may receive in-kind revenues from the extractive industries, such as payment for a new public road that company employees will also use to access work sites. Another fiscal cost may be the additional government staff needed to manage growing public services required to support extractive activities. While all are worthy of careful consideration by local communities and governments, this year’s report begins this discussion by focusing on the revenues and costs as defined above.
 
-<h3 class="communities_content-heading"><a name="data" class="js-comm_section">Where We Got Our Data</a></h3>
+<h3><a name="data" class="communities_content-heading js-comm_section">Where We Got Our Data</a></h3>
 
 This work used a range of publically-available online information to write these community case studies, including government databases, documents, and reports, as well as those produced by government councils. They integrate data and analysis already reported elsewhere by government bodies. Local data sources were prioritized, and data was collected and presented at the most granular level available. For example, state information took the place of county information when the latter was not available.
 

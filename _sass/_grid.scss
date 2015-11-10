@@ -7,14 +7,19 @@ $tiny: em(480);
 $small: em(600);
 $medium: em(768);
 $large: em(990);
-$huge: em(1024);                                                                                                                                                              
+$huge: em(1024);
+$huge-plus: $huge + $base-padding;
+$jumbo: em(1500);
+$massive: em(1800);
 
 $tiny-down: new-breakpoint(max-width $tiny);
 $tiny-up: new-breakpoint(min-width $tiny);
-$small-up: new-breakpoint(min-width $small); // commonly-used 
-$medium-up: new-breakpoint(min-width $medium); // commonly-used 
+$small-up: new-breakpoint(min-width $small); // commonly-used
+$medium-up: new-breakpoint(min-width $medium); // commonly-used
 $large-up: new-breakpoint(min-width $large); // commonly-used
-$huge-up: new-breakpoint(min-width $huge);  
+$huge-up: new-breakpoint(min-width $huge);
+$jumbo-up: new-breakpoint(min-width $jumbo);
+$massive-up: new-breakpoint(min-width $massive);
 
 @mixin respond-to($media) {
   @if $media == tiny-down {
@@ -29,8 +34,16 @@ $huge-up: new-breakpoint(min-width $huge);
     @media only screen and (min-width: $medium) { @content; }
   } @else if $media == large-up {
     @media only screen and (min-width: $large) { @content; }
+  } @else if $media == huge-down {
+    @media only screen and (max-width: $huge) { @content; }
   } @else if $media == huge-up {
     @media only screen and (min-width: $huge) { @content; }
+  } @else if $media == huge-plus {
+    @media only screen and (min-width: $huge) and (max-width: $huge-plus) { @content; }
+  } @else if $media == jumbo-up {
+    @media only screen and (min-width: $jumbo) { @content; }
+  } @else if $media == massive-up {
+    @media only screen and (min-width: $massive) { @content; }
   }
 }
 

@@ -213,9 +213,10 @@ geo/us-topology.json: $(input)geo/us-10m.json
 		--id.states 'abbr' \
 		--props.states '{abbr: STATE, FIPS: STATE_FIPS}' \
 		--filter.states '["AS", "GU", "PR", "VI"].indexOf(abbr) === -1' \
-		--props.counties '{state: STATE, county: COUNTY, FIPS: FIPS}' \
+		--props.counties '{state: STATE, name: COUNTY, FIPS: FIPS}' \
 		--filter.counties '["AS", "GU", "PR", "VI"].indexOf(state) === -1' \
 		-o $@ -- $<
+	bin/add-state-names.js --states $(input)geo/states.csv $@
 
 # generate US topology for only those counties with data
 geo/us-topology-filtered.json: county/revenues.tsv geo/us-topology.json

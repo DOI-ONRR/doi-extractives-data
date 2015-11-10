@@ -1,6 +1,6 @@
 // Container
 // 
-// 
+// .container-outer - should be placed on an outer div for appropriate padding
 // .container-left - 7/12 width container that floats left
 // .container-right - 5/12 width container that floats left
 // .container-left-8 - 8/12 width container that floats left
@@ -9,8 +9,25 @@
 // .container-padded - full width container with padding
 //
 // Styleguide layout.container
-.container{
+.container {
   @include outer-container($max-width);
+}
+
+.container-outer {
+  @extend .container;
+  padding-left: $base-padding;
+  padding-right: $base-padding;
+
+  @include respond-to(huge-plus) {
+    margin-left: $base-padding;
+    margin-right: $base-padding;
+  }
+
+  @include respond-to(huge-up) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
 }
 
 %container-side {
@@ -20,17 +37,13 @@
     @include span-columns(12);
 
     padding-bottom: $base-padding;
-    padding-left: $base-padding;
-    padding-right: $base-padding; 
   }
-
+  
   @include respond-to(tiny-up) {
 
     @include span-columns(12);
     
     padding-bottom: $base-padding;
-    padding-left: $base-padding;
-    padding-right: $base-padding;
   }
 
   @include respond-to(huge-up) {
@@ -59,7 +72,26 @@
     @include span-columns(8);
 
   }
+}
 
+.container-left-9 {
+  @extend %container-side;
+
+  @include respond-to(medium-up) {
+
+    @include span-columns(9);
+
+  }
+}
+
+.container-left-4 {
+  @extend %container-side;
+
+  @include respond-to(medium-up) {
+
+    @include span-columns(4);
+
+  }
 }
 
 .container-right,
@@ -71,7 +103,6 @@
     @include span-columns(5);
 
   }
-
 }
 
 .container-right-4 {
@@ -82,17 +113,40 @@
     @include span-columns(4);
 
   }
+}
+.container-right-7 {
+  @extend %container-side;
 
+  @include respond-to(medium-up) {
+
+    @include span-columns(8);
+
+  }
+}
+
+.container-right-8 {
+  @extend %container-side;
+
+  @include respond-to(medium-up) {
+
+    @include span-columns(8);
+
+  }
 }
 
 .container-half {
   @extend %container-side;
 
-  @include span-columns(6);
+  @include respond-to(medium-up) {
 
+    @include span-columns(6);
+
+    @include omega(odd);
+    
+  }
 }
 
 .container-padded {
-  padding-top: $base-padding-extra;
   padding-bottom: $base-padding-extra;
+  padding-top: $base-padding-extra;
 }

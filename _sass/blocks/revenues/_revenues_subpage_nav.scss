@@ -1,0 +1,52 @@
+// Revenues Subpage Nav
+//
+// This block styles the tags that enable navigation between
+// like subpages
+//
+// Styleguide blocks.revenues_subpage_nav
+
+
+.revenues_subpage-nav {
+  padding-left: $base-padding;
+  padding-right: $base-padding;
+  @include respond-to(medium-up) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  a {
+    color: $dark-gray;
+  }
+}
+
+.revenues_subpage-nav {
+  padding-top: $base-padding-extra;
+}
+
+.revenues_subpage-tabs {
+  
+  position: relative;
+
+  ul {
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%,-97%);
+    
+  }
+}
+.revenues_subpage-tab {
+  display: inline-block;
+  font-weight: 200;
+  padding: 8px 10px;
+
+  &.active {
+    background-color: $light-gray;
+    border-top: 1px solid $mid-gray;
+    border-right: 1px solid $mid-gray;
+    border-left: 1px solid $mid-gray;
+    font-weight: $weight-book;
+  }
+
+}
+

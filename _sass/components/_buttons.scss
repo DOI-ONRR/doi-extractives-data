@@ -7,60 +7,67 @@
 // .button-secondary     - primary style of button
 // .button-big           - larger button
 //
-// Markup: 
-// <button class="button {{modifier_class}}">{{modifier_class}}</button>
+// Markup:
+// <button class='button {{modifier_class}}'>{{modifier_class}}</button>
 //
 // Styleguide components.buttons
 
 button,
 .button,
-input[type="submit"] {
+input[type='submit'] {
   @extend %button;
 }
 
-.button-primary{
+.button-primary {
   @extend %button;
+
   background-color: $primary-button-bg-color;
   color: $primary-button-color;
+
   &:hover,
-    &:focus {
-      background-color: $primary-hover-button-bg-color;
-      color: $primary-hover-button-color;
-      a{
-        color: $primary-button-color;
-        border-bottom:none;
-      }
+  &:focus {
+    background-color: $primary-hover-button-bg-color;
+    color: $primary-hover-button-color;
+
+    a {
+      border-bottom: none;
+      color: $primary-button-color;
     }
-  a{
+  }
+
+  a {
+    border-bottom: none;
     color: $primary-button-color;
-    border-bottom:none;
   }
 }
 
-.button-secondary{
+.button-secondary {
   @extend %button;
+
   background-color: $secondary-button-bg-color;
-  color: $secondary-button-color;
   border: 1px solid $secondary-button-border-color;
+  color: $secondary-button-color;
+
   &:hover,
   &:focus {
     background-color: $secondary-hover-button-bg-color;
     color: $secondary-hover-button-color;
-    a{
+
+    a {
+      border-bottom: none;
       color: $secondary-button-color;
-      border-bottom:none;
     }
   }
-  a{
+
+  a {
+    border-bottom: none;
     color: $secondary-button-color;
-    border-bottom:none;
   }
 }
 
 .button-big {
-  -webkit-font-smoothing: antialiased;
-  width: 150px;
-  height: 35px;
-  // typography
   font-size: $base-font-size;
+  -webkit-font-smoothing: antialiased;
+  height: 35px;
+  width: 150px;
 }

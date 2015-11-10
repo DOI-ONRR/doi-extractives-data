@@ -7,28 +7,24 @@
 .revenues_steps-heading {
 
   @include respond-to(medium-down) {
-    
+
     @include heading(h4);
-  
+
   }
 
   @include respond-to(tiny-down) {
 
     @include heading(h5);
-    
+
     font-weight: $weight-light;
   }
 
-  
-
   @include heading(h1);
-  
+
   color: $red;
   display: inline;
-  padding-right: 8px;
   font-weight: $weight-light;
-
-
+  padding-right: 8px;
 }
 
 .revenues_steps-number {
@@ -44,13 +40,14 @@
   }
 
   @include font-size(1.8);
+
   background-color: $white;
   border-radius: 50%;
   color: $dark-gray;
   display: inline-block;
+  height: 43px;
   padding-right: 13px;
   padding-top: 10px;
-  height: 43px;
   width: 43px;
 }
 
@@ -60,8 +57,8 @@
 }
 
 .revenues_steps-group_item {
-    padding-top: $base-padding;
-    font-weight: $weight-light;
+  font-weight: $weight-light;
+  padding-top: $base-padding;
 }
 
 .revenues_steps-group_left {

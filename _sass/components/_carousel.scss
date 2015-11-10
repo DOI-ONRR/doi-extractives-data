@@ -2,7 +2,7 @@
 //
 // A carousel with circle pagination
 //
-// Markup: 
+// Markup:
 // <div class="carousel">
 //   <h3 class="carousel-header_text">How do natural resources become federal revenues?</h3>
 //   <button class="carousel-button button-big button-primary">See how it works</button>
@@ -18,39 +18,45 @@
 //
 // Styleguide components.carousel
 
-.carousel{
+.carousel {
   background-color: $pale-blue;
-  text-align: center;
   border-left: 4px solid $white;
   border-right: 4px solid $white;
+  text-align: center;
 }
-.carousel-header_text{
-  padding-top: 2em;
-  padding-left: 2em;
+
+.carousel-header_text {
   padding-bottom: 1em;
+  padding-left: 2em;
   padding-right: 2em;
+  padding-top: 2em;
 }
-.carousel-button{
+
+.carousel-button {
   margin-bottom: 1em;
 }
-.carousel-image{
+
+.carousel-image {
   width: 100%;
 }
-.carousel-pagination{
+
+.carousel-pagination {
   background-color: $mid-blue;
   width: 100%;
 }
-.carousel-pagination_item{
-  width: 1em;
-  height: 1em;
+
+.carousel-pagination_item {
   background-color: $white;
   border: 2px solid $white;
-  display: inline-block;
   border-radius: 50%;
-  margin: .5em;
   cursor: pointer;
-  &.active{
+  display: inline-block;
+  height: 1em;
+  margin: 0.5em;
+  width: 1em;
+
+  &.active {
     background-color: $mid-blue;
-    border: 2px solid $white;  
+    border: 2px solid $white;
   }
 }

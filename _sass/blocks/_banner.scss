@@ -13,8 +13,8 @@
   @include heading('para-sm');
   @include font-size(0.75);
 
-  border-bottom: 1px solid #ccc;
-  padding: 0.5rem 2rem;
+  border-bottom: 1px solid $mid-gray;
+  padding: ($base-padding / 2) 2rem;
   text-align: center;
 }
 

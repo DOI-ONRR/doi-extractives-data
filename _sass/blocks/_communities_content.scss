@@ -9,13 +9,13 @@
   ul {
 
     @include heading("para-sm");
-    
+
   	list-style-type: square;
     font-weight: $weight-light;
 	  padding-left: $base-padding;
 	  padding-bottom: $base-padding;
   }
-} 
+}
 
 .communities_content-icon i {
   padding-right: $base-padding-lite / 2;

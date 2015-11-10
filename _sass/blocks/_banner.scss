@@ -18,7 +18,7 @@
   @include font-size(0.75);
 
   border-bottom: 1px solid $mid-gray;
-  padding: ($base-padding / 2) 2rem;
+  padding: ($base-padding / 2) $base-padding-large;
   text-align: center;
 }
 

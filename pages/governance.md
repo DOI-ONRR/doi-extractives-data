@@ -20,8 +20,10 @@ permalink: /resource_revenues/governance/
   </ul>
 
   <h4>Subpages:</h4>
-  <a href="{{ site.baseurl }}/resource_revenues/governance/legal/">State Legal and Fiscal Information</a>
-
+  <ul>
+    <li><a href="{{ site.baseurl }}/resource_revenues/governance/legal/">State Legal and Fiscal Information</a></li>
+    <li><a href="{{ site.baseurl }}/resource_revenues/governance/taxes/">Tax Expenditures</a></li>
+  </ul>
 </div>
 
 

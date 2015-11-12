@@ -1,18 +1,18 @@
 // ------------------------------------------------------------------------------
 //   @group Variables - Colors, Fonts, etc.
 // ------------------------------------------------------------------------------
-@kss-colors-background     : #fffff6;
+@kss-colors-background     : #fff;
 
 @kss-colors-foreground     : #444;
 @kss-colors-heading        : #111;
 @kss-colors-quotes         : #666;
 
-@kss-colors-link           : #36BDBB;
-@kss-colors-link-visited   : #36BDBB;
-@kss-colors-link-hover     : #36BDBB;
-@kss-colors-link-active    : #36BDBB;
+@kss-colors-link           : #0645ad;
+@kss-colors-link-visited   : #0645ad;
+@kss-colors-link-hover     : lighten(@kss-colors-link, 20%);
+@kss-colors-link-active    : #faa700;
 
-@kss-font-body             : 'Karla Sans', Arial, sans-serif;
+@kss-font-body             : Helvetica, 'Helvetica Neue', Arial, sans-serif;
 @kss-font-code             : Menlo, 'Ubuntu Mono', 'Lucida Console', 'Courier New', Courier, monospace;
 
 @kss-font-size             : 16px;
@@ -21,10 +21,6 @@
 // ------------------------------------------------------------------------------
 // Wrap all of this template's base HTML styling inside a .kss-style selector.
 // ------------------------------------------------------------------------------
-
-html {
-  height: 100%;
-}
 
 .kss-style {
   color: @kss-colors-foreground;
@@ -37,7 +33,6 @@ html {
     text-decoration: none;
     transition-property: color;
     transition-duration: 0.5s;
-    border-bottom: none;
 
     &:visited { color: @kss-colors-link-visited; }
     &:hover,
@@ -167,20 +162,37 @@ html {
 
 #kss-node {
   margin: 0;
-  padding: 0;
-  background: #fffff9;
-  min-height: 100%;
+  padding: 20px;
+  background: #fff;
 
   @media screen and (min-width: 769px) {
-    display: flex;
     padding: 0;
 
-    .kss-sidebar {
-      width: 20%;
-    }
+    /* Old browsers */
+    background: #eee;
+    /* FF3.6+ */
+    background: -webkit-linear-gradient(left, #eee, #e5e5e5 50%, #d7d7d7 100%) 20% 0 ~"/ 10px 1px" repeat-y,
+                -webkit-linear-gradient(left, #eee, #eee 20%, #fff 20%) 0 0 ~"/ 100% 1px";
+    /* Chrome, Safari4+ */
+    background:        -webkit-gradient(linear, left top, right top, color-stop(0%,#eee), color-stop(50%,#e5e5e5), color-stop(100%,#d7d7d7)) 20% 0 ~"/ 10px 1px" repeat-y,
+                       -webkit-gradient(linear, left top, right top, color-stop(0%,#eee), color-stop(20%,#eee), color-stop(20%,#fff)) 0 0 ~"/ 100% 1px";
+    /* Chrome10+, Safari5.1+ */
+    background: -webkit-linear-gradient(to right, #eee, #e5e5e5 50%, #d7d7d7 100%) 20% 0 ~"/ 10px 1px" repeat-y,
+                -webkit-linear-gradient(to right, #eee, #eee 20%, #fff 20%) 0 0 ~"/ 100% 1px";
+    /* Opera 11.10+ */
+    background:      -o-linear-gradient(to right, #eee, #e5e5e5 50%, #d7d7d7 100%) 20% 0 ~"/ 10px 1px" repeat-y,
+                     -o-linear-gradient(to right, #eee, #eee 20%, #fff 20%) 0 0 ~"/ 100% 1px";
+    /* IE10+ */
+    background:     -ms-linear-gradient(to right, #eee, #e5e5e5 50%, #d7d7d7 100%) 20% 0 ~"/ 10px 1px" repeat-y,
+                    -ms-linear-gradient(to right, #eee, #eee 20%, #fff 20%) 0 0 ~"/ 100% 1px";
+    /* W3C */
+    background:         linear-gradient(to right, #eee, #e5e5e5 50%, #d7d7d7 100%) 20% 0 ~"/ 10px 1px" repeat-y,
+                        linear-gradient(to right, #eee, #eee 20%, #fff 20%) 0 0 ~"/ 100% 1px";
 
     .kss-main,
     .kss-sidebar {
+      float: left;
+      margin-right: -100%;
       box-sizing: border-box;
     }
   }
@@ -191,13 +203,13 @@ html {
 
     @media screen and (min-width: 769px) {
       width: 80%;
+      margin-left: 20%;
       padding: 0 20px 0 30px;
     }
   }
 
   .kss-sidebar {
     border-bottom:1px solid #ddd;
-    background-color: #022C53;
 
     @media screen and (min-width: 769px) {
       width: 20%;
@@ -215,8 +227,6 @@ html {
 
   .kss-doc-title {
     margin: 0;
-    border-bottom: 0;
-    color: #36BDBB;
 
     @media screen and (min-width: 769px) {
       font-size: 1.5em;
@@ -251,32 +261,29 @@ html {
     display: none;
 
     @media screen and (min-width: 769px) {
-      background-color: #164F85;
       display: block;
       list-style-type: none;
       margin: 0;
       padding: 0;
 
-      li {
-        padding: 0 10px;
-      }
-
       // @TODO: The ul is output even when there are no children. Fix this, so
       // we can put these :first-child and :last child styles back on the ul.
       li:first-child {
         margin: 10px 0 0;
-        padding: 10px 10px 0 10px;
+        border-top: 1px solid #ccc;
+        padding: 10px 0 0;
       }
 
       li:last-child {
         margin: 0 0 10px;
-        padding: 0 10px 10px 10px;
+        border-bottom: 1px solid #ccc;
+        padding: 0 0 10px;
       }
     }
   }
 
   .kss-nav__ref {
-    color: #36BDBB;
+    color: #333;
     font-weight: bold;
 
     &:after {
@@ -295,15 +302,14 @@ html {
 #kss-node {
 
   .kss-section {
+    max-width: 48em;
     margin-bottom: (@kss-vertical-rhythm * 2);
   }
 
 
   .kss-title {
-    margin-bottom: 2rem;
-    border-bottom: 0;
+    margin-bottom: 0;
   }
-
   .kss-title__ref {
     display: block;
     font-size: @kss-font-size;
@@ -318,7 +324,6 @@ html {
     display: block;
     color: #000;
     text-decoration: none;
-    border: none;
 
     &:hover,
     &:focus,
@@ -355,52 +360,41 @@ html {
   }
 
   .kss-modifier__wrapper {
-    border: 1px solid #efdecd;
+    border: 1px solid #ccc;
     padding: 10px;
   }
   .kss-modifier__heading {
     margin: -10px -10px 10px -10px;
     padding: 10px;
-    border-bottom: 1px solid #efdecd;
-    background-color: #fffff6;
+    border-bottom: 1px solid #ccc;
+    background-color: #eee;
     font-weight: bold;
   }
   .kss-modifier__default-name {
     font-weight: bold;
     margin-bottom: (@kss-vertical-rhythm / 2);
-    border-bottom: 1px solid #efdecd;
   }
-  
   .kss-modifier__name {
     float: left;
-    pre {
-      margin: 0 20px 0 0;
-      font-weight: bold;
-    }
+    padding-right: 10px;
+    font-weight: bold;
   }
-
   .kss-modifier__description {
     margin-bottom: (@kss-vertical-rhythm / 2);
-    border-bottom: 1px solid #efdecd;
   }
   .kss-modifier__example {
     clear: left;
     padding: 1px 0; // Contain the example's margins.
     margin: 0 0 (@kss-vertical-rhythm - 1px) 0;
-    position: relative;
 
     &:last-child {
       margin: 0;
-    }
-
-    .container {
-      padding: 0 2rem;
     }
   }
 
   .kss-markup {
     margin: -1px 0 @kss-vertical-rhythm 0;
-    border: 1px solid #efdecd;
+    border: 1px solid #999;
   }
   .kss-markup pre {
     margin: 0;

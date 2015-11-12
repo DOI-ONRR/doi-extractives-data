@@ -38,10 +38,6 @@
   "scripts": {
     "test": "mocha",
     "watch": "watchy -w '_sass' -- npm run build-styleguide",
-    "copy-images": "cp -R img styleguide/img",
-    "copy-css": "cp -R css styleguide/css",
-    "copy-js": "cp -R js styleguide/js",
-    "build-styleguide-assets": "npm run copy-images && npm run copy-css && npm run copy-js",
     "build-styleguide": "rm -rf styleguide && kss-node --config kss-config.json && cd styleguide-template/ && npm run less",
     "init-styleguide": "npm-exec kss-node --config kss-config.json",
     "lint": "(npm run lint-js; npm run lint-scss) || echo '(there were linting errors)'",

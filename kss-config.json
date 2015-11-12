@@ -1,8 +1,9 @@
 {
   "source": [
-    "_sass"  
+    "_sass"
   ],
   "destination":  "styleguide/",
+  "template": "styleguide-template",
   "//": "The css and js paths are URLs relative to the generated style guide.",
   "css": [
     "../css/main.css"

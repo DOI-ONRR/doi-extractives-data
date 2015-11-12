@@ -54,7 +54,6 @@ A number of state-level resources, which are listed below, shed light on Elko an
 	<li>Nevada Department of Health and Human Services EMS Assessment</a></li>
 </ul>	
 
-
 <h3><a name="data" class="communities_content-heading js-comm_section">Data Availability</a></h3>
 
 The table below highlights the data sources used to compile this county narrative, as well as any gaps that exist in publicly available data.

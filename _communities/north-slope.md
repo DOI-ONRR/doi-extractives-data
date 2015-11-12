@@ -7,7 +7,7 @@ nav_items:
   - name: intro
     title: Introduction
   - name: geolo
-    title: Geology & History
+    title: Geology and history
   - name: produ
     title: Production
   - name: emplo
@@ -17,7 +17,7 @@ nav_items:
   - name: costs
     title: Costs
   - name: data
-    title: Data Availablity
+    title: Data availablity
 ---
 
 <h3><a name="intro" class="communities_content-heading js-comm_section">{{ page.title }}</a></h3>
@@ -25,7 +25,7 @@ nav_items:
 The United States has experienced rapid change in domestic oil production since 2008, when crude oil production reached a low of 3.98 million bbl/day.[^1] Fast forward five years, and the United States had nearly doubled its daily production output, with Texas and North Dakota driving much of the growth.[^2] [^3] Alaska—which was the fourth largest state producer of crude oil in 2013—did not experience the same production boom, with crude oil output in steady decline throughout the past decade.[^4] In spite of that downward trend, the nation’s largest oil-producing county is Alaska’s North Slope Borough.[^5]
 
 
-<h3><a name="geolo" class="communities_content-heading js-comm_section">Geology and History</a></h3>
+<h3><a name="geolo" class="communities_content-heading js-comm_section">Geology and history</a></h3>
 
 The North Slope Borough is the country’s largest organized local jurisdiction, spanning more than 94,000 miles north of the Arctic Circle. Its 9,686 residents, most of whom are Inupiat Alaskan Natives, are spread across eight separate communities.[^6] The northern coast of Alaska was documented as a potential oil-producing region as early as 1900. However, the borough’s government was not formally incorporated until 1972, soon after the discovery of oil at Prudhoe Bay, the largest single oil field in North America.[^7]
 
@@ -66,7 +66,7 @@ The State also spends public dollars on reclamation services, including managing
 
 The North Slope Borough often responds to, and pays for, emergency services on the oilfield roads, such as the Kuparuk Oilfield roads.[^27] The Alaska state government also invests a significant amount of tax dollars to prevent and respond to oil and hazardous substance emergencies in the state. For example, the Office of Management and Budget appropriated $750,000 toward oil and hazardous substance first-responder equipment and preparedness in 2013.[^28]
 
-<h3><a name="data" class="communities_content-heading js-comm_section">Data Availability</a></h3>
+<h3><a name="data" class="communities_content-heading js-comm_section">Data availability</a></h3>
 
 The table below highlights the data sources used to compile this county case study, as well as any gaps that exist in publically available data.
 
@@ -74,8 +74,8 @@ The table below highlights the data sources used to compile this county case stu
   <thead>
     <tr>
       <td>Measure</td>
-      <td>Data Availability</td>
-      <td>Data Gaps</td>
+      <td>Data availability</td>
+      <td>Data gaps</td>
     </tr>
   </thead>
   <tbody>

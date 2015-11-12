@@ -2,12 +2,12 @@
 title: Marquette County, Michigan
 layout: community
 permalink: /communities/marquette/
-resource: iron ore
+resource: iron
 nav_items:
   - name: intro
     title: Introduction
   - name: geolo
-    title: Geology & History
+    title: Geology and history
   - name: produ
     title: Production
   - name: emplo
@@ -17,14 +17,14 @@ nav_items:
   - name: costs
     title: Costs
   - name: data
-    title: Data Availablity
+    title: Data availablity
 ---
 
 <h3><a name="intro" class="communities_content-heading js-comm_section">{{ page.title }}</a></h3>
 
 Iron ore is the primary mineral substance for the world’s iron and steel industries. Michigan is the second-largest producer of iron ore in the country behind Minnesota. All of Michigan’s iron-production operations are located in the northern reaches of the state, in Marquette County.
 
-<h3><a name="geolo" class="communities_content-heading js-comm_section">Geology and History</a></h3>
+<h3><a name="geolo" class="communities_content-heading js-comm_section">Geology and history</a></h3>
 
 Marquette County generated 20% of the national iron output in 2012.[^1] This iron ore is located in the Marquette Iron Range, a narrow basin of iron formations running approximately 33 miles through the towns of Negaunee and Ishpeming. Discovered in 1844, this range houses Michigan’s oldest iron-mining operations; the Jackson Mining Company began extraction here in 1848. In the following decades, the development of critical infrastructure—including roads, railroads, and a canal connecting Lake Superior and Lake Huron—spurred additional mining activity. It was iron mining that originally drew settlers to the area.
 
@@ -48,14 +48,14 @@ The State of Michigan assesses mining operations under the same state and local 
 
 No public sources delineating specific fiscal costs of iron-ore mining in Marquette County were found.
 
-<h3><a name="data" class="communities_content-heading js-comm_section">Data Availability</a></h3>
+<h3><a name="data" class="communities_content-heading js-comm_section">Data availability</a></h3>
 
 <table>
   <thead>
     <tr>
       <td>Measure</td>
-      <td>Data Availability</td>
-      <td>Data Gaps</td>
+      <td>Data availability</td>
+      <td>Data gaps</td>
     </tr>
   </thead>
   <tbody>

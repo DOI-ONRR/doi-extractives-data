@@ -2,12 +2,12 @@
 title: St. Louis County, Minnesota
 layout: community
 permalink: /communities/st-louis/
-resource: iron ore
+resource: iron
 nav_items:
   - name: intro
     title: Introduction
   - name: geolo
-    title: Geology & History
+    title: Geology and history
   - name: produ
     title: Production
   - name: emplo
@@ -17,14 +17,14 @@ nav_items:
   - name: costs
     title: Costs
   - name: data
-    title: Data Availablity
+    title: Data availablity
 ---
 
 <h3><a name="intro" class="communities_content-heading js-comm_section">{{ page.title }}</a></h3>
 
 Iron ore is the primary mineral substance for the world's iron and steel industries. The United States is estimated to possess iron ore reserves of 110 billion tons, which can produce approximately 27 billion tons of metallic iron. In 2013, the United States was the world’s eighth-largest producer of iron ore, generating an output of 53 million metric tons. More than three-fourths of that output came from the iron mines located in a single area of Minnesota, St. Louis County.[^1]
 
-<h3><a name="geolo" class="communities_content-heading js-comm_section">Geology and History</a></h3>
+<h3><a name="geolo" class="communities_content-heading js-comm_section">Geology and history</a></h3>
 
 All of the iron mining in St. Louis County takes place along the Mesabi Iron Range. The Mesabi Range is a narrow, 120-mile-long iron deposit stretching from Babbitt to Grand Rapids that has shaped the economic development of the region throughout the past century. Iron ore was first discovered in the Mesabi Range in 1866; extractive operations began in the 1890s, focused on exploiting the rich reserves of high-grade natural ore that could be easily processed into steel. However, after extracting approximately 2.5 billion tons of this natural ore, the industry largely exhausted the supply by the 1950s, and companies began mining a lower-grade iron ore alternative: taconite. Taconite mining targets chert-magnetite ores that are processed and upgraded into higher-grade iron pellets to feed steel mill blast furnaces. To date, the industry has produced approximately 1.6 billion tons of these iron pellets from Mesabi Range ore.[^2]
 
@@ -54,7 +54,7 @@ The Port of Duluth/Superior is the busiest port on the Great Lakes, and handles 
 
 In Minnesota, the Department of Natural Resources (DNR) has the authority to regulate the reclamation of lands subject to metallic mining operations. The finances for any publicly funded reclamation activities come from a variety of sources, including: the General Fund, annual fees directly from the permit holders, application and supplemental fees for permits, and industry and other governmental agencies.[^17] In FY 2012–2013, the Minnesota DNR Resources Land and Minerals Program spent $4.4 million, or 6% of its budget, on mine land reclamation.[^18] Generally, the mining-operation permit holder bears the cost of reclamation, except in cases in which the mine is abandoned and there is no party under legal obligation to reclaim the site, or the mine operator is fiscally insolvent.
 
-<h3><a name="data" class="communities_content-heading js-comm_section">Data Availability</a></h3>
+<h3><a name="data" class="communities_content-heading js-comm_section">Data availability</a></h3>
 
 The table below highlights the data sources used to compile this county case study, as well as any gaps that exist in publicly available data.
 
@@ -62,8 +62,8 @@ The table below highlights the data sources used to compile this county case stu
   <thead>
     <tr>
       <td>Measure</td>
-      <td>Data Availability</td>
-      <td>Data Gaps</td>
+      <td>Data availability</td>
+      <td>Data gaps</td>
     </tr>
   </thead>
   <tbody>

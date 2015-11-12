@@ -32,7 +32,7 @@ In 1962, Newmont Mining Corporation discovered large deposits of gold ore along 
 
 <h3><a name="produ" class="communities_content-heading js-comm_section">Production</a></h3>
 
-Nevada is in the midst of the biggest gold boom in US history, which began in 1981 and has produced over 240 million ounces, often from public lands. This surge in production is largely the result of discovering sediment-hosted deposits that contain microscopic gold particles.[^7] These deposits occur when gold is deposited quickly and disseminated into the surrounding rock.
+Nevada is in the midst of the biggest gold boom in U.S. history, which began in 1981 and has produced over 240 million ounces, often from public lands. This surge in production is largely the result of discovering sediment-hosted deposits that contain microscopic gold particles.[^7] These deposits occur when gold is deposited quickly and disseminated into the surrounding rock.
 
 The two major gold-mining companies driving this development are Newmont Mining Corporation and Barrick Gold Corporation, which operate both open-pit and underground mining operations.[^8] In 2012, gold production in Elko and Eureka counties totaled 2,474,623 ounces.[^9] In Eureka County, the top-producing mine was the Eastern Nevada Operations (Newmont), while the Meikle Mine (Goldstrike – Barrick Corporation) led production in Elko County.
 
@@ -69,13 +69,13 @@ The table below highlights the data sources used to compile this county narrativ
   <tbody>
     <tr>
       <td>Production</td>
-      <td>The US Geological Survey published gold extraction data at the county level for 2008 through 2012.</td>
+      <td>The U.S. Geological Survey published gold extraction data at the county level for 2008 through 2012.</td>
       <td></td>
     </tr>
     <tr>
       <td>Employment</td>
       <td>The Nevada Department of Taxation published Elko and Eureka counties’ gold-mining industry employment totals for 2012.</td>
-      <td>Neither the Bureau of Labor Statistics nor the US Census Bureau has ten-year employment trend data for the mining industry at the Elko or Eureka County level for 2004 through 2013. There are several years and subindustries without data.</td>
+      <td>Neither the Bureau of Labor Statistics nor the U.S. Census Bureau has ten-year employment trend data for the mining industry at the Elko or Eureka County level for 2004 through 2013. There are several years and subindustries without data.</td>
     </tr>
     <tr>
       <td>Revenue</td>

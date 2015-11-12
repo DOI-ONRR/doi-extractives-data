@@ -32,7 +32,7 @@ The major gold mines in Humboldt and Lander counties represent more recent produ
 
 <h3><a name="produ" class="communities_content-heading js-comm_section">Production</a></h3>
 
-Nevada is currently experiencing the biggest gold boom in US history, which began in 1981 and has produced over 240 million ounces, often from public lands.[^6] This surge in production is largely the result of discovering deposits that contain microscopic gold particles.[^7] These deposits occur when gold is deposited quickly and disseminated into the surrounding rock.
+Nevada is currently experiencing the biggest gold boom in U.S. history, which began in 1981 and has produced over 240 million ounces, often from public lands.[^6] This surge in production is largely the result of discovering deposits that contain microscopic gold particles.[^7] These deposits occur when gold is deposited quickly and disseminated into the surrounding rock.
 
 The two major gold-mining companies behind this development are Newmont Mining Corporation and Barrick Gold Corporation, which operate open pit mining operations.[^8] Gold production in Humboldt and Lander counties totaled 2,419,790 ounces in 2012, accounting for 43% of the state’s total gold production that year.[^9]
 
@@ -75,7 +75,7 @@ The table below highlights the data sources used to compile this county case stu
     <tr>
       <td>Employment</td>
       <td>The Nevada Department of Taxation published Humboldt and Lander county gold-mining industry employment totals for 2012.</td>
-      <td>Neither the Bureau of Labor Statistics nor the US Census Bureau has ten-year employment-trend data for the mining industry at the Humboldt or Lander county level for 2004 through 2013. There are several years and subindustries without data.</td>
+      <td>Neither the Bureau of Labor Statistics nor the U.S. Census Bureau has ten-year employment-trend data for the mining industry at the Humboldt or Lander county level for 2004 through 2013. There are several years and subindustries without data.</td>
     </tr>
     <tr>
       <td>Revenue</td>

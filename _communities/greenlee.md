@@ -63,13 +63,13 @@ The table below highlights the data sources used to compile this county case stu
   <tbody>
     <tr>
       <td>Production</td>
-      <td>The US Geological Survey published copper production data at the county level for 2012. Production information from a 2011 Freeport-McMoRan Inc. report shed light on the six-year trend of production at the largest copper mine in the county (and state). Data for 2013 was not found.</td>
+      <td>The U.S. Geological Survey published copper production data at the county level for 2012. Production information from a 2011 Freeport-McMoRan Inc. report shed light on the six-year trend of production at the largest copper mine in the county (and state). Data for 2013 was not found.</td>
       <td></td>
     </tr>
     <tr>
       <td>Employment</td>
       <td>The Bureau of Labor Statistics (BLS) provided Greenlee County copper-mining employment data for 2011. The Arizona State University William Siedman Research Institute provided supplemental information on mining employment trends.</td>
-      <td>Neither the BLS nor the US Census Bureau has ten-year employment-trend data for the copper mining industry at the Greenlee County level for 2004 through 2013. There are several years and subindustries without data.</td>
+      <td>Neither the BLS nor the U.S. Census Bureau has ten-year employment-trend data for the copper mining industry at the Greenlee County level for 2004 through 2013. There are several years and subindustries without data.</td>
     </tr>
     <tr>
       <td>Revenue</td>

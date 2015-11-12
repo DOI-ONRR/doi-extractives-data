@@ -98,7 +98,7 @@ The DeSoto Parish Emergency Medical Services (EMS) Department formed in 2001, fu
 [^1]: [DeSoto parish’s instant millionaires hold on to their humble roots](http://www.nola.com/politics/index.ssf/2011/03/desoto_parishs_instant_million.html), 2011
 [^2]: Louisiana Department of Natural Resources, [Louisiana Energy Facts and Figures](http://dnr.louisiana.gov/index.cfm?md=navigation&tmp=iframe&pnid=0&nid=336)
 [^3]: Ibid.
-[^4]: U.S. Energy Information Administration, [U.S. Crude Oil and Natural Gas Proved Reserves](http://www.eia.gov/naturalgas/crudeoilreserves/) Table 4, US Shale Gas Plays
+[^4]: U.S. Energy Information Administration, [U.S. Crude Oil and Natural Gas Proved Reserves](http://www.eia.gov/naturalgas/crudeoilreserves/), table 4, U.S. Shale Gas Plays
 [^5]: Bureau of Labor Statistics, [Quarterly Census of Employment and Wages: 2013 Annual Averages](http://www.bls.gov/cew/apps/table_maker/v3/table_maker.htm#type=2&st=22&year=2013&qtr=A&own=5&ind=213&supp=0)
 [^6]: Data for those employed in oil and gas extraction (NAICS 211) is not publicly available.
 [^7]: Bureau of Labor Statistics, [Quarterly Census of Employment and Wages: 2013 Annual Averages](http://www.bls.gov/cew/apps/table_maker/v4/table_maker.htm#type=1&year=2013&qtr=A&own=5&ind=213112&supp=0)

@@ -1,7 +1,7 @@
 ---
-title: Resource Revenues – Onshore Oil & Gas
+title: How it Works – Onshore Renewables
 layout: default
-permalink: /resource_revenues/onshore_oil_gas/
+permalink: /how-it-works/onshore-renewables/
 ---
 
 <section class="revenues_subpage-nav container">
@@ -9,40 +9,39 @@ permalink: /resource_revenues/onshore_oil_gas/
   <div class="revenues_subpage-tabs">
     <ul>
         <li class="revenues_subpage-tab">
-          <a href="{{ site.baseurl }}/resource_revenues/offshore_oil_gas/">Offshore</a>
+          <a href="{{ site.baseurl }}/how-it-works/offshore-renewables/">Offshore</a>
         </li>
         </a>
         <li class="revenues_subpage-tab active">
-          <a href="{{ site.baseurl }}/resource_revenues/onshore_oil_gas/">Onshore</a>
+          <a href="{{ site.baseurl }}/how-it-works/onshore-renewables/">Onshore</a>
         </li>
     </ul>
   </div>
 </section>
 
 <section class="slab-beta revenues_subpage-intro_wrapper">
+  <div class="container-outer revenues_subpage-intro">
+    {% include revenues/onshore_renewables_intro.html %}
+  </div>
 
-    <div class="container-outer revenues_subpage-intro">
-      {% include revenues/onshore_oil_gas_intro.html %}
-    </div>
-
-    <div class="revenues_subpage-steps onshore-oil">
-      {% include revenues/onshore_oil_gas_steps.html %}
-    </div>
+  <div class="revenues_subpage-steps onshore-renewables">
+    {% include revenues/onshore_renewables_steps.html %}
+  </div>
 </section>
 
 <div class="slab-beta revenues_page-forms">
-  {% include revenues/onshore_oil_gas_forms.html %}
+  {% include revenues/onshore_renewables_forms.html %}
 </div>
 
 <div class="slab-alpha revenues_subpage-involved">
-  {% include revenues/onshore_oil_gas_involved.html %}
+    {% include revenues/onshore_renewables_involved.html %}
 </div>
 
 <div class="container-outer revenues_page-footer">
-
     {% include revenues/revenues-footer.html %}
-
 </div>
+
 
 <!-- Accordion -->
 <script src="{{ site.baseurl }}/js/components/accordion.js"></script>
+

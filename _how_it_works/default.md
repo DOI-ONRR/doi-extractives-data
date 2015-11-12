@@ -1,7 +1,7 @@
 ---
-title: Resource Revenues
+title: How it Works
 layout: default
-permalink: /resource_revenues/
+permalink: /how-it-works/
 ---
 
 <div>
@@ -45,7 +45,7 @@ permalink: /resource_revenues/
 
       <article class="card card-secondary">
 
-        <a href="{{ site.baseurl }}/resource_revenues/coal/"><div class="card-splash">
+        <a href="{{ site.baseurl }}/how-it-works/coal/"><div class="card-splash">
           <h3 class="card-splash_title">Coal <i class="icon-chevron-sm"></i></h3>
 
           <div class="card-splash_image">
@@ -57,7 +57,7 @@ permalink: /resource_revenues/
 
           <p>Fossil fuels like coal are the main source of electricity in the U.S. Coal forms in the ground in seams or beds over tens of millions of years. Miners extract coal through surface and underground mining.</p>
 
-          <a class="card-link" href="{{ site.baseurl }}/resource_revenues/coal/">Visit this page <i class="icon-chevron-sm"></i></a>
+          <a class="card-link" href="{{ site.baseurl }}/how-it-works/coal/">Visit this page <i class="icon-chevron-sm"></i></a>
 
         </div>
 
@@ -65,7 +65,7 @@ permalink: /resource_revenues/
 
       <article class="card card-secondary">
 
-        <a href="{{ site.baseurl }}/resource_revenues/offshore_oil_gas/"><div class="card-splash">
+        <a href="{{ site.baseurl }}/how-it-works/offshore-oil-gas/"><div class="card-splash">
           <h3 class="card-splash_title">Oil &amp; Gas <i class="icon-chevron-sm"></i></h3>
 
           <div class="card-splash_image">
@@ -77,7 +77,7 @@ permalink: /resource_revenues/
 
           <p>Oil and gas are fossil fuels. Oil forms in underground reservoirs, taking tens of millions of years. Gas – or “natural gas” – forms over thousands of years, both on land and offshore.</p>
 
-          <a class="card-link" href="{{ site.baseurl }}/resource_revenues/offshore_oil_gas/">Visit this page <span class="shrink-fa"><i class="icon-chevron-sm"></i></span></a>
+          <a class="card-link" href="{{ site.baseurl }}/how-it-works/offshore-oil-gas/">Visit this page <span class="shrink-fa"><i class="icon-chevron-sm"></i></span></a>
 
         </div>
 
@@ -85,7 +85,7 @@ permalink: /resource_revenues/
 
       <article class="card card-secondary">
 
-        <a href="{{ site.baseurl }}/resource_revenues/minerals/"><div class="card-splash">
+        <a href="{{ site.baseurl }}/how-it-works/minerals/"><div class="card-splash">
           <h3 class="card-splash_title">Nonenergy <br>Minerals <i class="icon-chevron-sm"></i></h3>
 
           <div class="card-splash_image">
@@ -97,7 +97,7 @@ permalink: /resource_revenues/
 
           <p>Gold, copper and iron are the chief sources of hardrock-mineral revenues in the U.S. Hardrock minerals contain metals such as these and silver, zinc, nickel, tin, and lead. In 2013, U.S. metal production totaled $32 billion in value.</p>
 
-          <a class="card-link" href="{{ site.baseurl }}/resource_revenues/minerals/">Visit this page <span class="shrink-fa"><i class="icon-chevron-sm"></i></span></a>
+          <a class="card-link" href="{{ site.baseurl }}/how-it-works/minerals/">Visit this page <span class="shrink-fa"><i class="icon-chevron-sm"></i></span></a>
 
         </div>
 
@@ -105,7 +105,7 @@ permalink: /resource_revenues/
 
       <article class="card card-secondary">
 
-        <a href="{{ site.baseurl }}/resource_revenues/offshore_renewables/"><div class="card-splash">
+        <a href="{{ site.baseurl }}/how-it-works/offshore-renewables/"><div class="card-splash">
           <h3 class="card-splash_title">Renewables <i class="icon-chevron-sm"></i></h3>
 
           <div class="card-splash_image">
@@ -117,7 +117,7 @@ permalink: /resource_revenues/
 
           <p>Environmentally sustainable energy sources like solar and wind play an ever increasing role in meeting our country’s electricity needs. Solar energy converts solar radiation into heat and electricity, while wind powers turbines.</p>
 
-          <a class="card-link" href="{{ site.baseurl }}/resource_revenues/offshore_renewables/">Visit this page <i class="icon-chevron-sm"></i></a>
+          <a class="card-link" href="{{ site.baseurl }}/how-it-works/offshore-renewables/">Visit this page <i class="icon-chevron-sm"></i></a>
 
         </div>
 

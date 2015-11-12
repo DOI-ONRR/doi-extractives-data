@@ -7,7 +7,7 @@ nav_items:
   - name: intro
     title: Introduction
   - name: geolo
-    title: Geology & History
+    title: Geology and history
   - name: produ
     title: Production
   - name: emplo
@@ -17,14 +17,14 @@ nav_items:
   - name: costs
     title: Costs
   - name: data
-    title: Data Availablity
+    title: Data availablity
 ---
 
 <h3><a name="intro" class="communities_content-heading js-comm_section">{{ page.title }}</a></h3>
 
 Kern County is situated in the southernmost region of the San Joaquin Valley, in California’s interior. While Kern County has significant deposits of many different resources—including natural gas, geothermal steam, wind, gold, and other minerals—oil in particular has shaped Kern County’s local economy for more than 100 years.
 
-<h3><a name="geolo" class="communities_content-heading js-comm_section">Geology and History</a></h3>
+<h3><a name="geolo" class="communities_content-heading js-comm_section">Geology and history</a></h3>
 
 Starting in the 1850s, companies began extracting oil at a commercial level in California, inspired by the oil rush in Pennsylvania and a growing market for oil-fueled lighting. In the 1860s, production began in Kern County, where extractors dug holes into oil seeps to remove the fuel. Towards the turn of the century, extraction in the county grew into commercial drilling, helped by the 1890 discovery of the Midway-Sunset field, which is still the largest-producing oil field in California today.[^1]
 
@@ -61,14 +61,14 @@ A number of resources, which are listed below, shed light on Kern County’s tra
 	<li><a href="http://www.co.kern.ca.us/CAO/policy/16.pdf">Kern County Policy and Administrative Procedures Manual: Emergency Preparedness</a></li>
 </ul>
 
-<h3><a name="data" class="communities_content-heading js-comm_section">Data Availability</a></h3>
+<h3><a name="data" class="communities_content-heading js-comm_section">Data availability</a></h3>
 
 <table>
   <thead>
     <tr>
       <td>Measure</td>
-      <td>Data Availability</td>
-      <td>Data Gaps</td>
+      <td>Data availability</td>
+      <td>Data gaps</td>
     </tr>
   </thead>
   <tbody>

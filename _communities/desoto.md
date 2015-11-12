@@ -7,7 +7,7 @@ nav_items:
   - name: intro
     title: Introduction
   - name: geolo
-    title: Geology & History
+    title: Geology and history
   - name: produ
     title: Production
   - name: emplo
@@ -17,14 +17,14 @@ nav_items:
   - name: costs
     title: Costs
   - name: data
-    title: Data Availablity
+    title: Data availablity
 ---
 
 <h3><a name="intro" class="communities_content-heading js-comm_section">{{ page.title }}</a></h3>
 
 For years, natural gas production in the Haynesville Shale in the southern United States was too difficult and costly. However, in the mid- to late-2000s, advances in hydraulic fracturing and horizontal drilling techniques, as well as rising natural gas prices, made extracting natural gas in the region both technically feasible and profitable for the extractive industries.
 
-<h3><a name="geolo" class="communities_content-heading js-comm_section">Geology and History</a></h3>
+<h3><a name="geolo" class="communities_content-heading js-comm_section">Geology and history</a></h3>
 
 The Haynesville sedimentary rock formation rests 10,000 feet to 13,000 feet below the surface of northwestern Louisiana, eastern Texas, and southwestern Arkansas. DeSoto Parish, home to 27,112 residents, sits at the center of the Haynesville Shale. In the early 2000s, DeSoto Parish’s economy consisted primarily of cattle and dairy farming, and forest extraction. However, DeSoto’s economy transformed when the Chesapeake Energy Corporation drilled the first exploratory well in the Haynesville Shale in 2007, setting off a natural gas boom in the parish in 2008.[^1]
 
@@ -60,14 +60,14 @@ Louisiana completed a Hydraulic Fracturing State Review in March 2011, which exp
 
 The DeSoto Parish Emergency Medical Services (EMS) Department formed in 2001, funded by a four percent millage tax.[^25] Since then, the DeSoto EMS Department has worked closely with gas companies on safety measures, including answering numerous calls related to gas-well site incidents. The parish is not bearing the full burden of these incidents, however; the parish has received donations from private companies to offset its equipment costs. The frequency and value of the donations is not published.
 
-<h3><a name="data" class="communities_content-heading js-comm_section">Data Availability</a></h3>
+<h3><a name="data" class="communities_content-heading js-comm_section">Data availability</a></h3>
 
 <table>
   <thead>
     <tr>
       <td>Measure</td>
-      <td>Data Availability</td>
-      <td>Data Gaps</td>
+      <td>Data availability</td>
+      <td>Data gaps</td>
     </tr>
   </thead>
   <tbody>

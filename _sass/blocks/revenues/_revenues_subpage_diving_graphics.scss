@@ -1,9 +1,9 @@
 .revenues_subpage-steps {
-  
+
   background-position: 0 0;
   background-size: 100%;
   padding-top: $base-padding;
-  
+
   &.onshore-oil{
     background: $onshore-oil-primary-color;
 
@@ -13,7 +13,7 @@
     .revenues_subpage-steps_heading {
       color: $onshore-oil-secondary-color;
     }
-    
+
     @include respond-to(medium-up) {
       background: url('../img/revenues/onshore-oil-top.png') top left no-repeat, url('../img/revenues/onshore-oil-bottom.png') bottom left no-repeat;
       background-size: 100%, 100%;
@@ -69,7 +69,7 @@
   &.offshore-oil{
 
     background: $offshore-oil-primary-color;
-    
+
     .revenues_subpage-dyk_heading {
       background-color: $offshore-oil-secondary-color;
     }
@@ -127,7 +127,7 @@
         background: none;
       }
     }
-  
+
   }
 
   &.onshore-renewables {
@@ -141,8 +141,9 @@
     }
 
     @include respond-to(medium-up) {
-      background: url('../img/revenues/renew-onshore.svg') bottom left no-repeat;
-      background-size: 100%;
+      &:after {
+        background: url('../img/revenues/renew-onshore.svg') bottom left no-repeat;
+      }
     }
   }
 
@@ -156,15 +157,47 @@
     }
 
     @include respond-to(medium-up) {
-      background: url('../img/revenues/renew-offshore.svg') bottom left no-repeat;
-      background-size: 100%;
+      &:after {
+        background: url('../img/revenues/renew-offshore.svg') bottom left no-repeat;
+      }
+    }
+  }
+
+  &.offshore-renewables,
+  &.onshore-renewables {
+    @include respond-to(medium-up) {
+      position: relative;
+      z-index: 1;
+
+      &:before {
+        background: url('../img/revenues/renewables-bg-gradient.png') top left repeat-x;
+        background-size: contain;
+        bottom: 0;
+        content: '';
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -1;
+      }
+
+      &:after {
+        background-size: 100%;
+        bottom: 0;
+        content: '';
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 2;
+      }
     }
   }
 
   &.coal{
-    
+
     background: $coal-primary-color;
-    
+
     .revenues_subpage-dyk_heading {
       background-color: $coal-secondary-color;
     }
@@ -211,7 +244,7 @@
       &:before {
         top: 737px;
         bottom: 1178px;
-      } 
+      }
     }
     @include respond-to(massive-up) {
       background: url('../img/revenues/coal-wide.png') no-repeat;
@@ -225,7 +258,7 @@
 
   &.minerals{
     background: $minerals-primary-color;
-    
+
     .revenues_subpage-dyk_heading {
       background-color: $minerals-secondary-color;
     }

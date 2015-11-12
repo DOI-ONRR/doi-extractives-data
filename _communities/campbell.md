@@ -7,7 +7,7 @@ nav_items:
   - name: intro
     title: Introduction
   - name: geolo
-    title: Geology & History
+    title: Geology and history
   - name: produ
     title: Production
   - name: emplo
@@ -17,14 +17,14 @@ nav_items:
   - name: costs
     title: Costs
   - name: data
-    title: Data Availablity
+    title: Data availablity
 ---
 
 <h3><a name="intro" class="communities_content-heading js-comm_section">{{ page.title }}</a></h3>
 
 Coal has long been used as an energy resource to generate electricity. Most of the coal consumed in the United States fuels the country’s electricity needs, and it constitutes 39% of all electricity generated in the United States.[^1] Wyoming leads domestic coal production and accounts for two-fifths of the nation’s output.[^2] More coal is extracted in Wyoming than in the next four largest-producing states combined, with nine out of ten of the nation’s largest mines located in the state.[^3] Campbell County, in the northeast corner of the state, supplies more coal for generating electricity than any other county in the United States.
 
-<h3><a name="geolo" class="communities_content-heading js-comm_section">Geology and History</a></h3>
+<h3><a name="geolo" class="communities_content-heading js-comm_section">Geology and history</a></h3>
 
 Campbell County’s geographic position atop the Powder River Basin came with such plentiful coal deposits that early cattle ranchers in the area could dig their own coal.[^4] Significant mining operations in the region began in the early twentieth century, with the Peerless and Wyodak Mines near the city of Gillette. Further coal development and the discovery of oil spurred population growth in the county throughout the decades that followed.
 
@@ -56,14 +56,14 @@ Campbell County and the Wyoming Department of Transportation (DOT) published the
 
 No publicly available government data discussing the emergency services, reclamation, or water-infrastructure costs of coal mining in Campbell County was found.
 
-<h3><a name="data" class="communities_content-heading js-comm_section">Data Availability</a></h3>
+<h3><a name="data" class="communities_content-heading js-comm_section">Data availability</a></h3>
 
 <table>
   <thead>
     <tr>
       <td>Measure</td>
-      <td>Data Availability</td>
-      <td>Data Gaps</td>
+      <td>Data availability</td>
+      <td>Data gaps</td>
     </tr>
   </thead>
   <tbody>

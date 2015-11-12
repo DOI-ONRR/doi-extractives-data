@@ -7,7 +7,7 @@ nav_items:
   - name: intro
     title: Introduction
   - name: geolo
-    title: Geology & History
+    title: Geology and history
   - name: produ
     title: Production
   - name: emplo
@@ -17,14 +17,14 @@ nav_items:
   - name: costs
     title: Costs
   - name: data
-    title: Data Availablity
+    title: Data availablity
 ---
 
 <h3><a name="intro" class="communities_content-heading js-comm_section">{{ page.title }}</a></h3>
 
 Copper is a major industrial metal used in construction, electronics, transportation, industrial machinery, and consumer products. In 2012, the United States was the world’s fourth-largest copper producer, mining 1.15 million tons of copper worth approximately $9 billion.[^1] Of the five major copper-producing states (Arizona, Utah, New Mexico, Nevada, and Montana), Arizona was the most productive in 2011; its copper output totaled 751,000 metric tons, representing 68% of the national total.[^2] Greenlee and Pima counties generated the majority of that production.
 
-<h3><a name="geolo" class="communities_content-heading js-comm_section">Geology and History</a></h3>
+<h3><a name="geolo" class="communities_content-heading js-comm_section">Geology and history</a></h3>
 
 Pima County is one of the original four territorial counties of Arizona and, much like nearby Greenlee County, local copper mining began in the 1870s. Mining activity in Pima County flourished in the late nineteeth century, particularly as the arrival of the Southern Pacific Railroad brought increased commerce and traffic to the region. The copper-mining industry followed a series of boom-and-bust cycles throughout the following decades, with particular spikes during the two world wars as demand for the mineral soared. Today, copper output in Pima County is driven by operations at three open-pit mines: Sierrita, Mission Complex, and Silver Bell.
 
@@ -48,7 +48,7 @@ Additionally, ASARCO LLC pays royalties to both the State of Arizona and the Toh
 
 No publically available government sources delineating specific fiscal costs of copper mining in Pima County were found.
 
-<h3><a name="data" class="communities_content-heading js-comm_section">Data Availability</a></h3>
+<h3><a name="data" class="communities_content-heading js-comm_section">Data availability</a></h3>
 
 The table below highlights the data sources used to compile this county case study, as well as any gaps that exist in publicly available data.
 
@@ -56,8 +56,8 @@ The table below highlights the data sources used to compile this county case stu
   <thead>
     <tr>
       <td>Measure</td>
-      <td>Data Availability</td>
-      <td>Data Gaps</td>
+      <td>Data availability</td>
+      <td>Data gaps</td>
     </tr>
   </thead>
   <tbody>

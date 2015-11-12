@@ -7,7 +7,7 @@ nav_items:
   - name: intro
     title: Introduction
   - name: geolo
-    title: Geology & History
+    title: Geology and history
   - name: produ
     title: Production
   - name: emplo
@@ -17,7 +17,7 @@ nav_items:
   - name: costs
     title: Costs
   - name: data
-    title: Data Availablity
+    title: Data availablity
 ---
 
 <h3><a name="intro" class="communities_content-heading js-comm_section">{{ page.title }}</a></h3>
@@ -26,7 +26,7 @@ The United States possesses the largest estimated recoverable coal reserves in t
 
 One of the most productive coal deposits in the country is the Central Appalachian Coal Basin, supplying the numerous surface and underground mines of West Virginia. The counties in the southern half of the state maintain estimated recoverable coal reserves of 1.2 billion tons.[^2] In particular, the contiguous Boone, Logan, and Mingo counties have long been a center of coal exploration and extraction.
 
-<h3><a name="geolo" class="communities_content-heading js-comm_section">Geology and History</a></h3>
+<h3><a name="geolo" class="communities_content-heading js-comm_section">Geology and history</a></h3>
 
 Coal has driven economic development across Boone, Logan, and Mingo counties for many decades. Bituminous coal was first discovered by explorer John Peter Salley in 1742, in what would later become Boone County. Although forest extraction was the first major industry in the region, large-scale coal mining began in Boone County in the 1880s. The arrival of the Norfolk & Western Railroad in the 1890s and the Chesapeake & Ohio Railroad soon thereafter launched a coal extraction boom in all three counties. The early decades of the twentieth century ushered in a frenzied pace of development in these counties. While coal continued to drive the counties’ economies in the decades that followed, population numbers declined as mechanization and a shift to greater surface mining reduced the need for labor.[^3]
 
@@ -52,14 +52,14 @@ The West Virginia Department of Transportation (DOT) consists of three operating
 
 The West Virginia Office of Miners’ Health, Safety, and Training (WVOMHST) is the lead state agency for incidents involving coal mine emergencies. In 2013, the state agency’s expenditures totaled $15,346,893.[^20] Of that total, $12.8 million came from a general revenue fund, $2.2 million from industry fees, and the remainder from consolidated federal funds.[^21] The West Virginia Emergency Operations Plan sheds light on various WVOMHST tasks, which range from coordinating all rescue-related activities, to maintaining the Mine and Industrial Accident Emergency Operations Center, to keeping the coal mine emergency contact list current.[^22] Publicly available government documents do not clarify how much Boone, Logan, and Mingo counties spend on coal mine-related emergency services.
 
-<h3><a name="data" class="communities_content-heading js-comm_section">Data Availability</a></h3>
+<h3><a name="data" class="communities_content-heading js-comm_section">Data availability</a></h3>
 
 <table>
   <thead>
     <tr>
       <td>Measure</td>
-      <td>Data Availability</td>
-      <td>Data Gaps</td>
+      <td>Data availability</td>
+      <td>Data gaps</td>
     </tr>
   </thead>
   <tbody>

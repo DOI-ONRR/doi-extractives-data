@@ -7,7 +7,7 @@ nav_items:
   - name: intro
     title: Introduction
   - name: geolo
-    title: Geology & History
+    title: Geology and history
   - name: produ
     title: Production
   - name: emplo
@@ -17,14 +17,14 @@ nav_items:
   - name: costs
     title: Costs
   - name: data
-    title: Data Availablity
+    title: Data availablity
 ---
 
 <h3><a name="intro" class="communities_content-heading js-comm_section">{{ page.title }}</a></h3>
 
 Gold is a precious mineral, highly valued for its durability and beauty. It is used to make jewelry and art, and has technological uses such as memory chip conductors and reflective satellite coverings. In 2013, the United States was the third largest producer of gold, extracting 227 tons valued at $10.2 billion.[^1] The United States gold reserves, with an estimated size of 3,000 tons, are the fifth largest in the world.[^2] Within the United States, the Great Basin, located primarily in Nevada, accounts for 74% of total gold production.[^3]
 
-<h3><a name="geolo" class="communities_content-heading js-comm_section">Geology and History</a></h3>
+<h3><a name="geolo" class="communities_content-heading js-comm_section">Geology and history</a></h3>
 
 Mineral mining in Nevada began shortly after the onset of the California Gold Rush in 1849. The 1859 discovery of the Comstock Lode silver deposit in the Virginia Range of western Nevada was the first major discovery of silver ore in the country.[^4] All told, the Great Basin geological region, which covers most of Nevada and crosses into Oregon, Utah, and California, has a total resource potential that exceeds 3,200 metric tons (100,000,000 ounces) of gold.[^5]
 
@@ -54,7 +54,7 @@ A number of state-level resources, which are listed below, shed light on Humbold
 	<li>Nevada Department of Health and Human Services EMS Assessment</a></li>
 </ul>
 
-<h3><a name="data" class="communities_content-heading js-comm_section">Data Availability</a></h3>
+<h3><a name="data" class="communities_content-heading js-comm_section">Data availability</a></h3>
 
 The table below highlights the data sources used to compile this county case study, as well as any gaps that exist in publicly available data.
 
@@ -62,8 +62,8 @@ The table below highlights the data sources used to compile this county case stu
   <thead>
     <tr>
       <td>Measure</td>
-      <td>Data Availability</td>
-      <td>Data Gaps</td>
+      <td>Data availability</td>
+      <td>Data gaps</td>
     </tr>
   </thead>
   <tbody>

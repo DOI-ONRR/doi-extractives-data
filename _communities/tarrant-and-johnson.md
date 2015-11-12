@@ -7,7 +7,7 @@ nav_items:
   - name: intro
     title: Introduction
   - name: geolo
-    title: Geology & History
+    title: Geology and history
   - name: produ
     title: Production
   - name: emplo
@@ -17,14 +17,14 @@ nav_items:
   - name: costs
     title: Costs
   - name: data
-    title: Data Availablity
+    title: Data availablity
 ---
 
 <h3><a name="intro" class="communities_content-heading js-comm_section">{{ page.title }}</a></h3>
 
 Texas leads the country in natural gas production, generating more gas on an annual basis than the next three highest-producing states combined (Louisiana, Oklahoma, and Wyoming).[^1] Tarrant and Johnson counties contribute significantly to Texas’s natural gas production due to their geographic positioning atop the rich reserves of the Barnett Shale field in the Bend Arch-Fort Worth Basin.
 
-<h3><a name="geolo" class="communities_content-heading js-comm_section">Geology and History</a></h3>
+<h3><a name="geolo" class="communities_content-heading js-comm_section">Geology and history</a></h3>
 
 The Barnett Shale reserve spans approximately 5,000 square miles of sedimentary clay and quartz rock, with much of the productive portion of the rock located beneath Tarrant and Johnson counties. Containing an estimated 43 trillion cubic feet of proved reserves of natural gas, the Barnett Shale is one of the largest onshore natural gas formations in the country.[^2]
 
@@ -58,7 +58,7 @@ In its 2012 State Water Report, the Texas Water Development Board recommended $4
 
 In Texas, the Texas Railroad Commission requires operators to remove water from extraction pits and refill them with sediment within set time frames, as well as complete the appropriate paperwork for any dry or inactive wells that will remain offline for more than a year.[^23] However, in cases where operators do not comply, Texas relies on its Oil and Gas Regulation Cleanup Fund to reclaim oil and gas wells.[^24] In FY 2013,[^25] the fund paid $54,263,532 for well plugging, site reclamation, monitoring and inspections, oil and gas permitting, and administration, and set aside an additional $22,277,506 in encumbrances for these activities.[^26] A combination of industry permitting fees, production taxes, enforcement penalties, reimbursements, proceeds from the sale of salvaged equipment and hydrocarbons, and federal money from the Coastal Impact Assistance Program finance the fund.[^27]
 
-<h3><a name="data" class="communities_content-heading js-comm_section">Data Availability</a></h3>
+<h3><a name="data" class="communities_content-heading js-comm_section">Data availability</a></h3>
 
 The table below highlights the data sources used to compile this county narrative, as well as any gaps that exist in publicly available data.
 
@@ -66,8 +66,8 @@ The table below highlights the data sources used to compile this county narrativ
   <thead>
     <tr>
       <td>Measure</td>
-      <td>Data Availability</td>
-      <td>Data Gaps</td>
+      <td>Data availability</td>
+      <td>Data gaps</td>
     </tr>
   </thead>
   <tbody>

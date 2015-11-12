@@ -1,5 +1,5 @@
 ---
-title: Communities – Home
+title: Case Studies – Home
 layout: community
 permalink: /communities/
 nav_items:

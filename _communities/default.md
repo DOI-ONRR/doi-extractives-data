@@ -8,7 +8,7 @@ nav_items:
   - name: reven
     title: Revenue Sustainability
   - name: county-rev
-    title: Revenues
+    title: Revenue
   - name: county-cos
     title: Costs
   - name: data
@@ -77,7 +77,7 @@ This work used a range of publically-available online information to write these
 
 County and state budget documents and state agency websites were the primary data sources. Federal agency websites and reports also provided critical information on employment in the extractives industries, proved reserves of various natural resources, and production estimates. Any non-governmental sources used were approved by the Multi-Stakeholder Group that together guides the USEITI process.
 
-<h3 class="communities_content-heading">Notes:</h3> 
+<h3 class="communities_content-heading">Notes</h3> 
 [^1]: U.S. Bureau of Economic Analysis, as cited on Wyoming Department of Administration &amp; Information Economic Analysis Division [website](http://eadiv.state.wy.us/i&e/WyoGDP97_13.htm), 2013
 [^2]: EITI International Secretariat, [The EITI Standard](https://eiti.org/files/English_EITI_STANDARD.pdf), 2015.
 [^3]: Raimi and Newell, Duke University Energy Initiative, [Shale Public Finance: Local government revenues and costs associated with oil and gas development](http://dukespace.lib.duke.edu/dspace/handle/10161/9216), 2014.

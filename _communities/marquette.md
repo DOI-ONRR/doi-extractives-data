@@ -2,7 +2,7 @@
 title: Marquette County, Michigan
 layout: community
 permalink: /communities/marquette/
-resource: iron ore
+resource: iron
 nav_items:
   - name: intro
     title: Introduction

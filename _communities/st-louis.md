@@ -2,7 +2,7 @@
 title: St. Louis County, Minnesota
 layout: community
 permalink: /communities/st-louis/
-resource: iron ore
+resource: iron
 nav_items:
   - name: intro
     title: Introduction

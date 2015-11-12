@@ -13,7 +13,7 @@ nav_items:
   - name: emplo
     title: Employment
   - name: reven
-    title: Revenues
+    title: Revenue
   - name: costs
     title: Costs
   - name: data
@@ -87,7 +87,7 @@ The table below highlights the data sources used to compile this county case stu
     <tr>
       <td>Employment</td>
       <td>The Bureau of Labor Statistics (BLS) publishes the Alaska North Slope Borough annual average employment for oil and gas extraction (North American Industry Classification System (NAICS) Code 211).</td>
-      <td>Neither the BLS nor the US Census Bureau has ten-year employment-trend data for the oil and gas industry at the North Slope Borough level for 2004 through 2013. There are several years and subindustries without data.</td>
+      <td>Neither the BLS nor the U.S. Census Bureau has ten-year employment-trend data for the oil and gas industry at the North Slope Borough level for 2004 through 2013. There are several years and subindustries without data.</td>
     </tr>
     <tr>
       <td>Revenue</td>
@@ -102,32 +102,32 @@ The table below highlights the data sources used to compile this county case stu
   </tbody>
 </table>
 
-<h3 class="communities_content-heading">Notes:</h3>
+<h3 class="communities_content-heading">Notes</h3>
 [^1]: Barrels are noted as “bbl” when used as a unit of measure.
-[^2]: [Department of Energy, U.S. Domestic Oil Production Exceeds Imports for First Time in 18 Years](http://energy.gov/articles/us-domestic-oil-production-exceeds-imports-first-time-18-years)
-[^3]: [U.S. Energy Information Administration, Crude Oil Production](http://www.eia.gov/dnav/pet/pet_crd_crpdn_adc_mbbl_a.htm)
+[^2]: Department of Energy, [U.S. Domestic Oil Production Exceeds Imports for First Time in 18 Years](http://energy.gov/articles/us-domestic-oil-production-exceeds-imports-first-time-18-years), 2013
+[^3]: U.S. Energy Information Administration, [Crude Oil Production](http://www.eia.gov/dnav/pet/pet_crd_crpdn_adc_mbbl_a.htm), 2015
 [^4]: Ibid.
 [^5]: In Alaska, county-level governments are called boroughs.
-[^6]: U.S. Census Bureau, [North Slope Borough 2013 population](http://quickfacts.census.gov/qfd/states/02/02185.html)
-[^7]: [U.S. Geological Survey, The National Petroleum Reserve–Alaska (NPRA) Data Archive, 2001](http://pubs.usgs.gov/fs/fs024-01/fs024-01.pdf)
-[^8]: [Oil and Gas Technical Report: Planning for Oil and Gas Activities in the National Petroleum Reserve – Alaska, 2013](http://www.north-slope.org/assets/images/uploads/NorthSlope_OG_Technical_report_CHAPTER3.pdf)
-[^9]: [U.S. Energy Information Administration, Alaska North Slope Crude Oil Production, 2014](http://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=MANFPAK1&f=A)
-[^10]: [Oil and Gas Technical Report: Planning for Oil and Gas Activities in the National Petroleum Reserve – Alaska, 2013](http://www.north-slope.org/assets/images/uploads/NorthSlope_OG_Technical_report_CHAPTER3.pdf)
-[^11]: [U.S. Energy Information Administration, Alaska North Slope Crude Oil Production, 2014](http://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=MANFPAK1&f=A)
-[^12]: [Bureau of Labor Statistics, Alaska North Slope Borough annual average employment for Oil and Gas Extraction, 2013](http://www.bls.gov/cew/apps/data_views/data_views.htm#tab=Tables)
-[^13]: Bureau of Labor Statistics (BLS) county employment data is not linked to county residency
-[^14]: [Alaska Department of Labor and Workforce Development, Non-Residents Working in Alaska, 2013](http://labor.alaska.gov/research/reshire/NONRES.pdf)
-[^15]: [North Slope Regional Energy Plan, 2015](http://www.north-slope.org/assets/images/uploads/Feb2015_draft_NSB_Energy_Plan_2.6.15.pdf)
-[^16]: [Comprehensive Annual Financial Report of the North Slope Borough, Alaska, 2013](http://www.north-slope.org/assets/images/uploads/2013_NSB_CAFR.pdf)
-[^17]: [Alaska Department of Revenue, 2013 Annual Report](http://www.tax.alaska.gov/programs/documentviewer/viewer.aspx?1095r)
-[^18]: [Alaska Department of Revenue Tax Division, Revenue Sources Book, 2014 Spring](http://www.tax.alaska.gov/programs/documentviewer/viewer.aspx?1048r)
-[^19]: [Alaska Permanent Fund Corporation, Historical Annual Dividend Payouts](http://www.apfc.org/home/Content/dividend/dividendamounts.cfm)
-[^20]: [Oil and Gas Technical Report: Planning for Oil and Gas Activities in the National Petroleum Reserve – Alaska, 2013](http://www.north-slope.org/assets/images/uploads/NorthSlope_OG_Technical_report_CHAPTER3.pdf)
-[^21]: [North Slope Borough, Comprehensive Transportation Plan 2005](http://www.north-slope.org/assets/images/uploads/TransportationPlan_Final.pdf)
-[^22]: [North Slope Borough, “Comprehensive Transportation Plan 2005,” p. 14, p. 45, p. 87](http://www.north-slope.org/assets/images/uploads/TransportationPlan_Final.pdf)
-[^23]: [Oil and Gas Technical Report: Planning for Oil and Gas Activities in the National Petroleum Reserve – Alaska, 2013](http://www.north-slope.org/assets/images/uploads/NorthSlope_OG_Technical_report_CHAPTER1.pdf)
-[^24]: [North Slope Borough, Comprehensive Transportation Plan 2005](http://www.north-slope.org/assets/images/uploads/TransportationPlan_Final.pdf)
-[^25]: [Alaska Department of Environmental Conservation, Spill Prevention and Response](https://dec.alaska.gov/spar/rfa/history.htm)
-[^26]: [Alaska Department of Environmental Conservation, Division of Spill Prevention and Response, 2011-2012](http://dec.alaska.gov/spar/rfa/docs/budget/biennial/)
-[^27]: [North Slope Borough, Comprehensive Transportation Plan 2005](http://www.north-slope.org/assets/images/uploads/TransportationPlan_Final.pdf)
-[^28]: [Alaska Office of Management and Budget, 2012 Appropriations](https://www.omb.alaska.gov/ombfiles/13_budget/PDFs/Capital_Bill_SB0160Zrev.pdf)
+[^6]: U.S. Census Bureau, [North Slope Borough, Alaska](http://quickfacts.census.gov/qfd/states/02/02185.html), 2014
+[^7]: U.S. Geological Survey, [The National Petroleum Reserve–Alaska (NPRA) Data Archive](http://pubs.usgs.gov/fs/fs024-01/fs024-01.pdf), 2001
+[^8]: [Oil and Gas Technical Report: Planning for Oil and Gas Activities in the National Petroleum Reserve – Alaska](http://www.north-slope.org/assets/images/uploads/NorthSlope_OG_Technical_report_CHAPTER3.pdf), 2013
+[^9]: U.S. Energy Information Administration, [Alaska North Slope Crude Oil Production](http://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=MANFPAK1&f=A), 2014
+[^10]: [Oil and Gas Technical Report: Planning for Oil and Gas Activities in the National Petroleum Reserve – Alaska](http://www.north-slope.org/assets/images/uploads/NorthSlope_OG_Technical_report_CHAPTER3.pdf), 2013
+[^11]: U.S. Energy Information Administration, [Alaska North Slope Crude Oil Production](http://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=MANFPAK1&f=A), 2014
+[^12]: Bureau of Labor Statistics, [Alaska North Slope Borough annual average employment for Oil and Gas Extraction](http://www.bls.gov/cew/apps/data_views/data_views.htm#tab=Tables), 2013
+[^13]: Bureau of Labor Statistics (BLS) county employment data is not linked to county residency.
+[^14]: Alaska Department of Labor and Workforce Development, [Nonresidents Working in Alaska](http://labor.alaska.gov/research/reshire/NONRES.pdf), 2013
+[^15]: [North Slope Regional Energy Plan](http://www.north-slope.org/assets/images/uploads/Feb2015_draft_NSB_Energy_Plan_2.6.15.pdf), 2015
+[^16]: [Comprehensive Annual Financial Report of the North Slope Borough, Alaska](http://www.north-slope.org/assets/images/uploads/2013_NSB_CAFR.pdf), 2013
+[^17]: Alaska Department of Revenue, [2013 Annual Report](http://www.tax.alaska.gov/programs/documentviewer/viewer.aspx?1095r)
+[^18]: Alaska Department of Revenue, [Revenue Sources Book](http://www.tax.alaska.gov/programs/documentviewer/viewer.aspx?1048r), 2014 Spring
+[^19]: Alaska Permanent Fund Corporation, [Annual Dividend Payouts](http://www.apfc.org/home/Content/dividend/dividendamounts.cfm), 2015
+[^20]: [Oil and Gas Technical Report: Planning for Oil and Gas Activities in the National Petroleum Reserve – Alaska](http://www.north-slope.org/assets/images/uploads/NorthSlope_OG_Technical_report_CHAPTER3.pdf), 2013
+[^21]: [North Slope Borough, Comprehensive Transportation Plan](http://www.north-slope.org/assets/images/uploads/TransportationPlan_Final.pdf), 2005
+[^22]: [North Slope Borough, Comprehensive Transportation Plan](http://www.north-slope.org/assets/images/uploads/TransportationPlan_Final.pdf), 2005, p. 14, 45, and 87
+[^23]: [Oil and Gas Technical Report: Planning for Oil and Gas Activities in the National Petroleum Reserve – Alaska](http://www.north-slope.org/assets/images/uploads/NorthSlope_OG_Technical_report_CHAPTER1.pdf), 2013
+[^24]: North Slope Borough, [Comprehensive Transportation Plan](http://www.north-slope.org/assets/images/uploads/TransportationPlan_Final.pdf), 2005
+[^25]: Alaska Department of Environmental Conservation, [Response Fund Administration: History of the Fund](https://dec.alaska.gov/spar/rfa/history.htm)
+[^26]: Alaska Department of Environmental Conservation, [Division of Spill Prevention and Response Biennial Report](http://dec.alaska.gov/spar/rfa/docs/budget/biennial/OHSRPRF%202011-2012%20Report%20.pdf), 2011–2012
+[^27]: North Slope Borough, [Comprehensive Transportation Plan](http://www.north-slope.org/assets/images/uploads/TransportationPlan_Final.pdf), 2005
+[^28]: Office of Management and Budget, [Laws of Alaska](https://www.omb.alaska.gov/ombfiles/13_budget/PDFs/Capital_Bill_SB0160Zrev.pdf), 2012

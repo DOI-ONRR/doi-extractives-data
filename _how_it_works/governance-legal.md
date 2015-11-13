@@ -1,5 +1,6 @@
 ---
-title: How it Works – State Legal and Fiscal Information
+title: How it Works
+subpage: State Legal and Fiscal Information
 layout: default
 permalink: /how-it-works/governance/legal/
 nav_items:

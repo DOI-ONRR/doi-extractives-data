@@ -1,26 +1,26 @@
-.explore-section_top,
-.explore-section_open,
-.explore-section {
+.landing-section_top,
+.landing-section_open,
+.landing-section {
 	padding-bottom: $base-padding;
 	padding-top: $base-padding;
 }
 
-.explore-section {
+.landing-section {
 	@include respond-to(medium-up) {
+		@include span-columns(5.5);
+
 		border-bottom: none;
+
+		&:nth-child(even) {
+			@include shift(1);
+		}
 	}
 
 	border-bottom: $thin-border-size solid $mid-gray;
-
-	@include span-columns(5.5);
-
-	&:nth-child(even) {
-		@include shift(1);
-	}
 }
 
-.explore-section_open {
-	@extend .explore-section;
+.landing-section_open {
+	@extend .landing-section;
 
 	&.oil-gas {
 		background: url('../img/revenues/cards/oil-gas.png') bottom right no-repeat;
@@ -45,18 +45,18 @@
 		background-size: 100%;
 		height: 310px;
 
-		.explore-description {
+		.landing-description {
 			@include span-columns(6);
 		}
 	}
 
-	.explore-heading {
+	.landing-heading {
 		display: block;
 	}
 
 }
 
-.explore-section_category {
+.landing-section_category {
   margin-top: $base-padding;
   margin-bottom: 0;
   padding-bottom: $base-padding-lite;
@@ -64,21 +64,21 @@
 
 }
 
-.explore-heading,
-.explore-heading a {
+.landing-heading,
+.landing-heading a {
 	color: $dark-gray;
 	display: inline;
 }
 
-.explore-description {
+.landing-description {
 	@include heading('para-sm');
 }
 
-.explore-image {
+.landing-image {
 	width: 100%;
 }
 
-.explore-steps {
+.landing-steps {
 	icon {
 		color: $mid-gray;
 	}

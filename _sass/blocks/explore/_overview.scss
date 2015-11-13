@@ -11,6 +11,12 @@
 	}
 
 	border-bottom: $thin-border-size solid $mid-gray;
+
+	@include span-columns(5.5);
+
+	&:nth-child(even) {
+		@include shift(1);
+	}
 }
 
 .explore-section_open {
@@ -48,10 +54,6 @@
 		display: block;
 	}
 
-}
-
-.explore-section_content {
-	padding-left: $base-padding-extra;
 }
 
 .explore-section_category {

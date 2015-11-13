@@ -83,7 +83,11 @@ permalink: /how-it-works/
 				<p class="landing-description">Gold, copper and iron are the chief sources of hardrock-mineral revenues in the U.S. Hardrock minerals contain metals such as these and silver, zinc, nickel, tin, and lead. In 2013, U.S. metal production totaled $32 billion in value.</p>
 		</div>
 		<div class="container-half landing-section_open renewables">
+<<<<<<< cd3dd235614cbb65960956239a9ef6bbd1af73e9
 			<h5 class="landing-heading"><a href="{{site.baseurl}}/how-it-works/onshore-renewables/">Renewables</a></h5>
+=======
+			<h4 class="landing-heading"><a href="{{site.baseurl}}/how-it-works/onshore-renewables/">Renewables</a></h4>
+>>>>>>> breadcrumbs
 			<p class="landing-description">Environmentally sustainable energy sources like solar and wind play an ever increasing role in meeting our country’s electricity needs. Solar energy converts solar radiation into heat and electricity, while wind powers turbines.</p>
 		</div>
 	</section>

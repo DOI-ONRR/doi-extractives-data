@@ -44,7 +44,7 @@ nav_items:
 
 <div class="container-outer container-padded">
 
-  <h1>{{page.title}}</h1>
+  <h1>{{page.subpage}}</h1>
 
   <h3><a name="ak">Alaska</a></h3>
 

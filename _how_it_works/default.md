@@ -1,7 +1,7 @@
 ---
 title: How It Works
 layout: default
-permalink: /how-it-works/
+<!-- permalink: /how-it-works/ -->
 ---
 
 <section class="slab-delta">

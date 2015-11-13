@@ -1,83 +1,84 @@
 .landing-section_top,
 .landing-section_open,
 .landing-section {
-	padding-bottom: $base-padding;
-	padding-top: $base-padding;
+  padding-bottom: $base-padding;
+  padding-top: $base-padding;
 }
 
 .landing-section {
-	@include respond-to(medium-up) {
-		@include span-columns(5.5);
+  @include respond-to(medium-up) {
+    @include span-columns(5.5);
 
-		border-bottom: none;
+    border-bottom: none;
 
-		&:nth-child(even) {
-			@include shift(1);
-		}
-	}
+    &:nth-child(even) {
+      @include shift(1);
+    }
+  }
 
-	border-bottom: $thin-border-size solid $mid-gray;
+  border-bottom: $thin-border-size solid $mid-gray;
 }
 
 .landing-section_open {
-	@extend .landing-section;
+  @extend .landing-section;
 
-	&.oil-gas {
-		background: url('../img/revenues/cards/oil-gas.png') bottom right no-repeat;
-	}
+  &.oil-gas {
+    background: url('../img/revenues/cards/oil-gas.png') bottom right no-repeat;
+  }
 
-	&.minerals {
-		background: url('../img/revenues/cards/minerals.png') bottom right no-repeat;
-	}
+  &.minerals {
+    background: url('../img/revenues/cards/minerals.png') bottom right no-repeat;
+  }
 
-	&.coal {
-		background: url('../img/revenues/cards/coal.png') bottom right no-repeat;
-	}
+  &.coal {
+    background: url('../img/revenues/cards/coal.png') bottom right no-repeat;
+  }
 
-	&.renewables {
-		background: url('../img/revenues/cards/renewables.png') bottom right no-repeat;
-	}
+  &.renewables {
+    background: url('../img/revenues/cards/renewables.png') bottom right no-repeat;
+  }
 
-	&.oil-gas,
-	&.coal,
-	&.minerals,
-	&.renewables {
-		background-size: 100%;
-		height: 310px;
+  &.oil-gas,
+  &.coal,
+  &.minerals,
+  &.renewables {
+    background-size: 100%;
+    height: 310px;
 
-		.landing-description {
-			@include span-columns(6);
-		}
-	}
+    .landing-description {
+      @include span-columns(6);
+    }
+  }
 
-	.landing-heading {
-		display: block;
-	}
+  .landing-heading {
+    display: block;
+  }
 
 }
 
 .landing-section_category {
-  margin-top: $base-padding;
+  border-bottom: $thin-border-size solid $mid-gray;
   margin-bottom: 0;
+  margin-top: $base-padding;
   padding-bottom: $base-padding-lite;
 }
 
 .landing-heading,
 .landing-heading a {
-	color: $dark-gray;
-	display: inline;
+  color: $dark-gray;
+  display: inline;
 }
 
 .landing-description {
-	@include heading('para-sm');
+  @include heading('para-sm');
 }
 
 .landing-image {
-	width: 100%;
+  width: 100%;
 }
 
 .landing-steps {
-	icon {
-		color: $mid-gray;
-	}
+  icon {
+    color: $mid-gray;
+  }
 }

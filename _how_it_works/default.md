@@ -66,7 +66,7 @@ permalink: /how-it-works/
 	<section class="container">
 		<h1 class="landing-section_category">Extraction Processes</h1>
 		<div class="container-half landing-section_open">
-			<h4 class="landing-heading"><a href="{{site.baseurl}}/how-it-works/revenue/">Overview</a></h4>
+			<h4 class="landing-heading">Overview</h4>
 			<p class="landing-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
 			<p class="para-lg landing-steps">
 				<span>Plan <icon class="icon-chevron-lg"></icon></span>

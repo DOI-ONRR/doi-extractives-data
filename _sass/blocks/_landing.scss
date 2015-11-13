@@ -1,139 +1,85 @@
+.landing-section_top,
 .landing-section_open,
 .landing-section {
-  padding-bottom: $base-padding;
-  padding-top: $base-padding;
-}
-
-.landing-section,
-.landing-section_open {
-  @include respond-to(medium-up) {
-    @include span-columns(5);
-
-    border-bottom: none;
-  }
-
-  border-bottom: $thin-border-size solid $mid-gray;
-}
-
-.landing-section_top {
-  margin-bottom: $base-padding-extra;
+	padding-bottom: $base-padding;
+	padding-top: $base-padding;
 }
 
 .landing-section {
-  @include respond-to(medium-up) {
-    &:nth-child(even) {
-      @include shift(2);
-    }
+	@include respond-to(medium-up) {
+		@include span-columns(5.5);
 
-    &:nth-child(odd) {
-      @include omega();
-    }
-  }
+		border-bottom: none;
+
+		&:nth-child(even) {
+			@include shift(1);
+		}
+	}
+
+	border-bottom: $thin-border-size solid $mid-gray;
 }
 
 .landing-section_open {
-  &.oil-gas {
-    background: url('../img/revenues/cards/oil-gas.png') bottom right no-repeat;
-  }
+	@extend .landing-section;
 
-  &.coal {
-    background: url('../img/revenues/cards/coal.png') bottom right no-repeat;
-  }
+	&.oil-gas {
+		background: url('../img/revenues/cards/oil-gas.png') bottom right no-repeat;
+	}
 
-  &.minerals {
-    background: url('../img/revenues/cards/minerals.png') bottom right no-repeat;
-  }
+	&.minerals {
+		background: url('../img/revenues/cards/minerals.png') bottom right no-repeat;
+	}
 
-  &.renewables {
-    background: url('../img/revenues/cards/renewables.png') bottom right no-repeat;
-  }
+	&.coal {
+		background: url('../img/revenues/cards/coal.png') bottom right no-repeat;
+	}
 
-  &.overview {
-    color: $mid-gray;
+	&.renewables {
+		background: url('../img/revenues/cards/renewables.png') bottom right no-repeat;
+	}
 
-    .landing-description {
-      @include span-columns(8);
-    }
+	&.oil-gas,
+	&.coal,
+	&.minerals,
+	&.renewables {
+		background-size: 100%;
+		height: 310px;
 
-    .landing-icons {
-      @include span-columns(4);
-      @include font-size(3);
-      @include omega();
+		.landing-description {
+			@include span-columns(6);
+		}
+	}
 
-      margin-bottom: $base-padding-lite;
-    }
+	.landing-heading {
+		display: block;
+	}
 
-    .landing-steps {
-      @include span-columns(12);
-      font-size: 0.9em;
-
-      border: 1px solid $mid-gray;
-      padding: $base-padding-lite;
-      text-align: center;
-
-      icon {
-        color: $mid-gray;
-      }
-    }
-  }
-
-  &.oil-gas,
-  &.coal,
-  &.minerals,
-  &.renewables {
-    background-size: 100%;
-    height: 310px;
-
-    .landing-description {
-      @include span-columns(6);
-    }
-  }
-
-  @include respond-to(medium-up) {
-    &.oil-gas {
-      @include shift(2);
-    }
-
-    &.coal {
-      @include omega();
-    }
-
-    &.minerals {
-      @include shift(2);
-    }
-
-    &.renewables {
-      @include omega();
-    }
-
-    &.overview {
-      @include span-columns(5);
-      @include shift(2);
-    }
-  }
-
-  .landing-heading {
-    display: block;
-  }
 }
 
-
 .landing-section_category {
-  border-bottom: 2px solid $mid-gray;
-  margin-bottom: 0;
   margin-top: $base-padding;
+  margin-bottom: 0;
   padding-bottom: $base-padding-lite;
+  border-bottom: $thin-border-size solid $mid-gray;
+
 }
 
 .landing-heading,
 .landing-heading a {
-  display: inline;
+	color: $dark-gray;
+	display: inline;
 }
 
 .landing-description {
-  @include heading('para-sm');
+	@include heading('para-sm');
 }
 
 .landing-image {
-  width: 100%;
+	width: 100%;
+}
+
+.landing-steps {
+	icon {
+		color: $mid-gray;
+	}
 }

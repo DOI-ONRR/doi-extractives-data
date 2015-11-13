@@ -14,8 +14,8 @@ permalink: /how-it-works/
     </div>
     <div class="container-right-4">
       <div class="carousel">
-        <h3 class="carousel-header_text">How do natural resources become federal revenues?</h3>
-        <button class="carousel-button button-big button-primary">See how it works</button>
+        <h3 class="carousel-header_text">Tantalizing Title</h3>
+        <button class="carousel-button button-big button-primary">Click me!</button>
         <h2>Step 1: Plan</h2>
         <img class="card-image" class="carousel-image" src="{{ site.baseurl }}/img/revenues.png" alt="revenues">
         <ul class="carousel-pagination">
@@ -32,36 +32,38 @@ permalink: /how-it-works/
 <section accordion class="container-outer">
 	<section class="container">
 		<h1 class="explore-section_category">Natural Resources in the United States</h1>
-		<div class="container-half explore-section" accordion-item accordion-open="true">
-			<h4 class="explore-heading"><a href="{{site.baseurl}}/how-it-works/ownership/">Ownership</a></h4>
-			<button class="accordion-button" accordion-button></button>
-			<div class="accordion-content">
-				<p class="explore-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-				<a href="{{site.baseurl}}/how-it-works/ownership/">
-					<img class="explore-image" src="{{site.baseurl}}/img/explore-placeholders/placeholder.png">
-				</a>
+		<!-- <div class="explore-section_content"> -->
+			<div class="container-half explore-section" accordion-item accordion-open="true">
+				<h4 class="explore-heading"><a href="{{site.baseurl}}/how-it-works/ownership/">Ownership</a></h4>
+				<button class="accordion-button" accordion-button></button>
+				<div class="accordion-content">
+					<p class="explore-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+					<a href="{{site.baseurl}}/how-it-works/ownership/">
+						<img class="explore-image" src="{{site.baseurl}}/img/explore-placeholders/placeholder.png">
+					</a>
+				</div>
 			</div>
-		</div>
-		<div class="container-half explore-section" accordion-item accordion-open="true">
-			<h4 class="explore-heading"><a href="{{site.baseurl}}/how-it-works/production/">Production</a></h4>
-			<button class="accordion-button" accordion-button></button>
-			<div class="accordion-content">
-				<p class="explore-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-				<a href="{{site.baseurl}}/how-it-works/production/">
-					<img class="explore-image" src="{{site.baseurl}}/img/explore-placeholders/placeholder.png">
-				</a>
+			<div class="container-half explore-section" accordion-item accordion-open="true">
+				<h4 class="explore-heading"><a href="{{site.baseurl}}/how-it-works/production/">Production</a></h4>
+				<button class="accordion-button" accordion-button></button>
+				<div class="accordion-content">
+					<p class="explore-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+					<a href="{{site.baseurl}}/how-it-works/production/">
+						<img class="explore-image" src="{{site.baseurl}}/img/explore-placeholders/placeholder.png">
+					</a>
+				</div>
 			</div>
-		</div>
-		<div class="container-half explore-section" accordion-item accordion-open="true">
-			<h4 class="explore-heading"><a href="{{site.baseurl}}/how-it-works/production/">Revenues</a></h4>
-			<button class="accordion-button" accordion-button></button>
-			<div class="accordion-content">
-				<p class="explore-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-				<a href="{{site.baseurl}}/how-it-works/production/">
-					<img class="explore-image" src="{{site.baseurl}}/img/explore-placeholders/placeholder.png">
-				</a>
+			<div class="container-half explore-section" accordion-item accordion-open="true">
+				<h4 class="explore-heading"><a href="{{site.baseurl}}/how-it-works/revenues/">Revenues</a></h4>
+				<button class="accordion-button" accordion-button></button>
+				<div class="accordion-content">
+					<p class="explore-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+					<a href="{{site.baseurl}}/how-it-works/revenues/">
+						<img class="explore-image" src="{{site.baseurl}}/img/explore-placeholders/placeholder.png">
+					</a>
+				</div>
 			</div>
-		</div>
+		<!-- </div> -->
 	</section>
 	<section class="container">
 		<h1 class="explore-section_category">Extraction Processes</h1>
@@ -71,6 +73,7 @@ permalink: /how-it-works/
 			<p class="para-lg explore-steps">
 				<span>Plan <icon class="icon-chevron-lg"></icon></span>
 				<span>Lease <icon class="icon-chevron-lg"></icon></span>
+				<span>Explore <icon class="icon-chevron-lg"></icon></span>
 				<span>Develop <icon class="icon-chevron-lg"></icon></span>
 				<span>Decommission</span>
 			</p>
@@ -78,51 +81,51 @@ permalink: /how-it-works/
 		<div class="container-half explore-section_open oil-gas">
 			<div>
 				<h4 class="explore-heading"><a href="{{site.baseurl}}/how-it-works/offshore-oil-gas/">Oil & Gas</a></h4>
-				<p class="explore-description">The federal government issues leases granting rights to explore for natural resources which may exist on federal lands.</p>
+				<p class="explore-description">Oil and gas are fossil fuels. Oil forms in underground reservoirs, taking tens of millions of years. Gas – or “natural gas” – forms over thousands of years, both on land and offshore.</p>
 			</div>
 		</div>
 		<div class="container-half explore-section_open coal">
 			<h4 class="explore-heading"><a href="{{site.baseurl}}/how-it-works/coal/">Coal</a></h4>
-			<p class="explore-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+			<p class="explore-description">Fossil fuels like coal are the main source of electricity in the U.S. Coal forms in the ground in seams or beds over tens of millions of years. Miners extract coal through surface and underground mining.</p>
 		</div>
 		<div class="container-half explore-section_open minerals">
 			<h4 class="explore-heading"><a href="{{site.baseurl}}/how-it-works/minerals/">Hardrock Minerals</a></h4>
-				<p class="explore-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+				<p class="explore-description">Gold, copper and iron are the chief sources of hardrock-mineral revenues in the U.S. Hardrock minerals contain metals such as these and silver, zinc, nickel, tin, and lead. In 2013, U.S. metal production totaled $32 billion in value.</p>
 		</div>
 		<div class="container-half explore-section_open renewables">
 			<h4 class="explore-heading"><a href="{{site.baseurl}}/how-it-works/renewables/">Renewables</a></h4>
-			<p class="explore-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+			<p class="explore-description">Environmentally sustainable energy sources like solar and wind play an ever increasing role in meeting our country’s electricity needs. Solar energy converts solar radiation into heat and electricity, while wind powers turbines.</p>
 		</div>
 	</section>
 	<section class="container">
 		<h1 class="explore-section_category">Laws and Regulations</h1>
 		<div class="container-half explore-section" accordion-item accordion-open="true">
-			<h4 class="explore-heading"><a href="{{site.baseurl}}/how-it-works/gdp/">Federal</a></h4>
+			<h4 class="explore-heading"><a href="{{site.baseurl}}/how-it-works/governance/">Federal</a></h4>
 			<button class="accordion-button" accordion-button></button>
 			<div class="accordion-content">
 				<p class="explore-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-				<a href="{{site.baseurl}}/how-it-works/gdp/">
+				<a href="{{site.baseurl}}/how-it-works/governance/">
 					<img class="explore-image" src="{{site.baseurl}}/img/explore-placeholders/placeholder.png">
 				</a>
 			</div>
 		</div>
 		<div class="container-half explore-section" accordion-item accordion-open="true">
-			<h4 class="explore-heading"><a href="{{site.baseurl}}/how-it-works/exports/">State</a></h4>
+			<h4 class="explore-heading"><a href="{{site.baseurl}}/how-it-works/governance/">State</a></h4>
 			<button class="accordion-button" accordion-button></button>
 			<div class="accordion-content">
 				<p class="explore-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-				<a href="{{site.baseurl}}/how-it-works/exports/">
-					<img class="explore-image" src="{{site.baseurl}}/img/explore-placeholders/placeholder.png">
+				<a href="{{site.baseurl}}/how-it-works/governance/">
+					<img class="explore-image" src="{{site.baseurl}}/img/placeholders/map.png">
 				</a>
 			</div>
 		</div>
 		<div class="container-half explore-section" accordion-item accordion-open="true">
-			<h4 class="explore-heading"><a href="{{site.baseurl}}/how-it-works/jobs/">Tribal</a></h4>
+			<h4 class="explore-heading"><a href="{{site.baseurl}}/how-it-works/governance/">Tribal</a></h4>
 			<button class="accordion-button" accordion-button></button>
 			<div class="accordion-content">
 				<p class="explore-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-				<a href="{{site.baseurl}}/how-it-works/jobs/">
-					<img class="explore-image" src="{{site.baseurl}}/img/explore-placeholders/placeholder.png">
+				<a href="{{site.baseurl}}/how-it-works/governance/">
+					<img class="explore-image" src="{{site.baseurl}}/img/placeholders/map.png">
 				</a>
 			</div>
 		</div>

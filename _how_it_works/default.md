@@ -1,5 +1,5 @@
 ---
-title: How it Works
+title: How It Works
 layout: default
 permalink: /how-it-works/
 ---
@@ -8,7 +8,7 @@ permalink: /how-it-works/
   <div class="container-outer">
     <div class="container-left-8">
       <div class="hero">
-        <h3 class="hero-title_text">{{ page.title }}</h3>
+        <h1>{{ page.title }}</h1>
         <p class="para-lg">Large text The federal government issues leases granting rights to explore for natural resources which may exist on federal lands. In return, part of the sales value for many of these commodities is paid back to the government as “royalties” (along with other types of revenues), for the benefit of the American people.</p>
       </div>
     </div>
@@ -91,7 +91,7 @@ permalink: /how-it-works/
 				<p class="landing-description">Gold, copper and iron are the chief sources of hardrock-mineral revenues in the U.S. Hardrock minerals contain metals such as these and silver, zinc, nickel, tin, and lead. In 2013, U.S. metal production totaled $32 billion in value.</p>
 		</div>
 		<div class="container-half landing-section_open renewables">
-			<h4 class="landing-heading"><a href="{{site.baseurl}}/how-it-works/renewables/">Renewables</a></h4>
+			<h4 class="landing-heading"><a href="{{site.baseurl}}/how-it-works/onshore-renewables/">Renewables</a></h4>
 			<p class="landing-description">Environmentally sustainable energy sources like solar and wind play an ever increasing role in meeting our country’s electricity needs. Solar energy converts solar radiation into heat and electricity, while wind powers turbines.</p>
 		</div>
 	</section>

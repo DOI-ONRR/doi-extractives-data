@@ -1,7 +1,7 @@
 ---
 title: How it Works
 layout: default
-permalink: /how-it-works/
+<!-- permalink: /how-it-works/ -->
 ---
 
 <div>

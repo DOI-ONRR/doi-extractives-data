@@ -12,7 +12,7 @@ permalink: /downloads/
   <h4>
 		Download Data + Documentation
   </h4>
-  <ul class="bullet">
+  <ul class="list-bullet">
   	<li>Resources</li>
   	<li>Companies</li>
 		<li>Disbursements</li>

@@ -9,7 +9,7 @@ permalink: /how-it-works/governance/
   <h1>{{page.title}}</h1>
   <h4>From <a href="https://github.com/18F/doi-extractives-data/wiki/Information-Architecture">Information Architecture</a>:</h4>
 
-  <ul class="bullet">
+  <ul class="list-bullet">
   	<li>Who owns land and natural resources in the US?</li>
 		<li>Federal laws governing natural resource extraction</li>
     <ul>

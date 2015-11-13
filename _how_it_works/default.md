@@ -1,7 +1,7 @@
 ---
 title: How It Works
 layout: default
-<!-- permalink: /how-it-works/ -->
+permalink: /how-it-works/
 ---
 
 <section class="slab-delta">
@@ -16,7 +16,6 @@ layout: default
           <img class="hero-right_image" src="{{ site.baseurl }}/img/landing-placeholders/federal-rev.png"/>
           <figcaption class="hero-right_caption"><a href="">Link to how something works</a></figcaption>
         </figure>
-
       </div>
     </div>
   </div>

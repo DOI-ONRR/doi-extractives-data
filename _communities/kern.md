@@ -38,9 +38,13 @@ Since peaking in 1985, California’s oil production has trended downward. As il
 
 While oil production is declining, the State of California estimates that, as of December 31, 2009, a total of 3 billion bbl of proved oil reserves remained within the state.[^7]
 
+<img src="{{ site.baseurl }}/img/counties/ca-production.png" alt="Kern County Oil Production from 2004–2013" class="communities_content-graph">
+
 <h3><a name="emplo" class="communities_content-heading js-comm_section">Employment</a></h3>
 
 In 2013 oil and gas extraction employed upwards of 10,000 of Kern County’s 865,923 residents, or between 1% to 2% of the population and 3.3% of total employment.[^8] [^9] In particular, 3,309 were employed in oil and gas extraction, and 8,039 in support activities (1,748 in drilling for oil and gas, and 6,289 in support activities for oil and gas operations).[^10] Although oil production in the county has decreased, oil and gas industry employment increased from 2010 to 2013, based on the introduction of hydraulic fracturing methods used to extract natural gas.
+
+<img src="{{ site.baseurl }}/img/counties/ca-wage.png" alt="Kern County Oil and Gas Industry vs. All Other Industries Wage and Salary Employment from 2004–2013" class="communities_content-graph">
 
 <h3><a name="reven" class="communities_content-heading js-comm_section">Revenue</a></h3>
 
@@ -96,7 +100,7 @@ A number of resources, which are listed below, shed light on Kern County’s tra
 </table>
 
 <h3 class="communities_content-heading">Notes</h3>
-[^1]: [Oil and Gas Production, History in California](ftp://ftp.consrv.ca.gov/pub/oil/history/History_of_Calif.pdf) 
+[^1]: [Oil and Gas Production, History in California](ftp://ftp.consrv.ca.gov/pub/oil/history/History_of_Calif.pdf)
 [^2]: Ibid.
 [^3]: California Department of Conservation, [Online Production and Injection Data](http://opi.consrv.ca.gov/opi/opi.dll)
 [^4]: The total statewide production was 197.5 m bbls, including offshore production. California Department of Conservation, Division of Oil, Gas, and Geothermal Resources, [2012 Preliminary Report of California Oil and Gas Production Statistics](ftp://ftp.consrv.ca.gov/pub/oil/annual_reports/2012/PR03_PreAnnual_2012.pdf), April 2013, p. 1

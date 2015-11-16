@@ -36,6 +36,8 @@ In 2012, the combined copper production from Pima County’s three major mines t
 
 Copper mining makes up a relatively small portion of Pima County’s overall employment, largely as a result of the Tucson metropolitan area’s more diversified economy and workforce. Of Pima County’s total 2012 employment of 346,828, copper mining (and related support activities) constitute less than 1% (1,745 workers).[^8] The county cites a 58% growth in employment in this sector compared to 2004 levels.[^9] Data for mining and support activities for the entire mining industry shows an overall increase in employment in Pima County from 2004 through 2013.[^10] [^11]
 
+<img src="{{ site.baseurl }}/img/counties/az-wage.png" alt="Mining Industry vs. All Other Industries Wage and Salary Pima County Employment from 2004–2013" class="communities_content-graph">
+
 <h3><a name="reven" class="communities_content-heading js-comm_section">Revenue</a></h3>
 
 State revenue from copper extraction is directed back to Pima County primarily through the state’s severance tax. Arizona levies this tax on metal minerals (including copper) set at 2.5% on 50% of the difference between the gross value of production and the production costs. While 47.6% of this revenue goes to the state’s General Fund, the other 52.4% is distributed to cities and counties.[^12] In 2013, $21 million was distributed to all cities and counties in Arizona from the severance tax on metals.[^13] Arizona also collects a Transaction Privilege Tax, although this tax does not apply to copper revenue.[^14]
@@ -95,7 +97,7 @@ The table below highlights the data sources used to compile this county case stu
 [^8]: Bureau of Labor Statistics, [Employment Data, 2012 Annual Averages](http://www.bls.gov/cew/apps/data_views/data_views.htm#tab=Tables)
 [^9]: Pima County [Comprehensive annual Financial Report](http://webcms.pima.gov/UserFiles/Servers/Server_6/File/Government/Finance%20and%20Risk%20Management/Reports/audited%20financial%20reports/CAFR/CAFR_2012.pdf), 2012, p. 152
 [^10]: Bureau of Labor Statistics, [Quarterly Census of Employment and Wages for NAICS Codes 212 (Mining Except Oil and Gas) and 213 (Support Activities for Mining) 2004–2013](http://www.bls.gov/cew/apps/data_views/data_views.htm#tab=Tables)
-[^11]: 2010 mining industry employment value is from “Natural Resources and Mining” category in historic BLS data, and no ten-year trend data is available specific to copper mining. 
+[^11]: 2010 mining industry employment value is from “Natural Resources and Mining” category in historic BLS data, and no ten-year trend data is available specific to copper mining.
 [^12]: State of Arizona, [2013 Tax Handbook](http://www.azleg.gov/jlbc/13taxbook/13taxbk.pdf), p. 25
 [^13]: Arizona Department of Revenue, [2014 Annual Report](https://www.azdor.gov/Portals/0/AnnualReports/FY14%20Annual%20Report%20W.pdf), p. 39, table 7
 [^14]: State of Arizona, [2013 Tax Handbook](http://www.azleg.gov/jlbc/13taxbook/13taxbk.pdf), p. 8, table 4

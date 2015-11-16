@@ -36,6 +36,8 @@ Nevada is currently experiencing the biggest gold boom in U.S. history, which be
 
 The two major gold-mining companies behind this development are Newmont Mining Corporation and Barrick Gold Corporation, which operate open pit mining operations.[^8] Gold production in Humboldt and Lander counties totaled 2,419,790 ounces in 2012, accounting for 43% of the state’s total gold production that year.[^9]
 
+<img src="{{ site.baseurl }}/img/counties/nv-humboldt-production.png" alt="Humboldt and Lander Counties Gold Production from 2008–2012" class="communities_content-graph">
+
 <h3><a name="emplo" class="communities_content-heading js-comm_section">Employment</a></h3>
 
 Gold extraction provided jobs for 3,704 workers and 2,156 contractors in 2012, which represents 25% of the entire county population of 22,981, and 58% of total employment in the two counties.[^10] [^11]
@@ -104,4 +106,4 @@ The table below highlights the data sources used to compile this county case stu
 [^11]: Ibid.
 [^12]: Humboldt and Lander counties’ fiscal years go from July 1 until June 30.
 [^13]: [Understanding Nevada’s Fiscal System: Taxes on Patented Mines and Proceeds of Minerals](http://www.unce.unr.edu/publications/files/cd/2013/fs1334.pdf), table 2
-[^14]: Ibid. 
+[^14]: Ibid.

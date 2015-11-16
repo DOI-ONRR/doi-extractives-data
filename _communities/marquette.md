@@ -36,6 +36,8 @@ Today’s iron mining along the Marquette Iron Range is centered on the Empire a
 
 Major corporate landowners own a significant portion of the land used for natural resource extraction in Marquette County; lands in public ownership make up only 25% of the county.[^5]
 
+<img src="{{ site.baseurl }}/img/counties/mi-production.png" alt="Marquette County Crude vs. Usable Iron Production from 2003–2012" class="communities_content-graph">
+
 <h3><a name="emplo" class="communities_content-heading js-comm_section">Employment</a></h3>
 
 According to the Bureau of Labor Statistics (BLS), total private sector employment in Marquette County stood at 27,195 in 2012.[^6] The iron-mining industry employed 1,500 individuals (6% of total employment). Iron-ore reserve estimates project a thirty-year supply at Tilden Mine, suggesting continued employment opportunities for the near future.[^7] Empire Mine production, on the other hand, was slated to halt in 2014 until a partnership agreement with ArcelorMittal USA Inc. extended the mine’s operations (and employment potential) through 2016.[^8]

@@ -8,7 +8,7 @@ permalink: /how-it-works/
   <div class="container-outer">
     <div class="container-left-8 hero-left">
       <h1>{{ page.title }}</h1>
-      <p class="para-lg">Large text The federal government issues leases granting rights to explore for natural resources which may exist on federal lands. In return, part of the sales value for many of these commodities is paid back to the government as “royalties” (along with other types of revenues), for the benefit of the American people.</p>
+      <p class="hero-description">Large text The federal government issues leases granting rights to explore for natural resources which may exist on federal lands. In return, part of the sales value for many of these commodities is paid back to the government as “royalties” (along with other types of revenues), for the benefit of the American people.</p>
     </div>
     <div class="container-right-4 hero-right">
       <div class="hero-right_square">

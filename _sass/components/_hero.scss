@@ -38,8 +38,8 @@
 }
 
 .hero-left {
-	padding-top: $base-padding-large;
-	padding-bottom: $base-padding-large;
+	padding-top: $base-padding;
+	padding-bottom: $base-padding;
 }
 
 .hero-right {
@@ -70,4 +70,8 @@
 	a {
 		color: $dark-gray;
 	}
+}
+
+.hero-description {
+	@include heading('para-lg');
 }

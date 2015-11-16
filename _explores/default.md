@@ -6,10 +6,19 @@ permalink: /explore/
 ---
 
 <section class="slab-delta">
-  <div class="container-outer landing-section_top">
-  	<h5> <a href="{{ site.baseurl }}/explore/">Explore Data</a> / {{ page.subpage_title }}</h5>
-		<h1 class="landing-heading">Explore Data</h1>
-		<p class="landing-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+  <div class="container-outer">
+	  <div class="container-left-8 hero-left">
+			<h1>{{ page.title }}</h1>
+			<p class="hero-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+		</div>
+		<div class="container-right-4 hero-right">
+      <div class="hero-right_square">
+        <figure>
+          <img class="hero-right_image" src="{{ site.baseurl }}/img/landing-placeholders/federal-rev.png"/>
+          <figcaption class="hero-right_caption"><a href="">Link to how something works</a></figcaption>
+        </figure>
+      </div>
+    </div>
 	</div>
 </section>
 

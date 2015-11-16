@@ -20,6 +20,7 @@ $onshore-renewables-secondary-color: $blue;
 @import 'revenues_subpage_diving_graphics';
 
 .revenues_subpage-dyk {
+
   @include respond-to(medium-up) {
     display: block;
     margin-top: 40%;

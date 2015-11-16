@@ -68,7 +68,7 @@
     }
   }
 
-  &.offshore-oil{
+  &.offshore-oil {
     @include respond-to(medium-up) {
       background: url('../img/revenues/offshore-oil-top.png') top left no-repeat, url('../img/revenues/offshore-oil-bottom.png') bottom left no-repeat;
       background-size: 100%, 100%;
@@ -203,7 +203,7 @@
     }
   }
 
-  &.coal{
+  &.coal {
     @include respond-to(medium-up) {
       background: url('../img/revenues/coal-top.png') top left no-repeat, url('../img/revenues/coal-bottom.png') bottom left no-repeat;
       background-size: 100%, 100%;
@@ -268,7 +268,7 @@
     }
   }
 
-  &.minerals{
+  &.minerals {
     @include respond-to(medium-up) {
       background: url('../img/revenues/minerals-top.png') top left no-repeat, url('../img/revenues/minerals-bottom.png') bottom left no-repeat;
       background-size: 100%, 100%;

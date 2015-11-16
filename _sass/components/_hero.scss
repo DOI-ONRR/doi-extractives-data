@@ -74,3 +74,38 @@
 .hero-description {
   @include heading('para-lg');
 }
+
+.hero-left {
+	padding-top: $base-padding-large;
+	padding-bottom: $base-padding-large;
+}
+
+.hero-right {
+	padding-bottom: 0px;
+}
+
+.hero-right_square {
+	background-color: $pale-blue;
+  border-left: 4px solid $white;
+  border-right: 4px solid $white;
+  padding-top: 4px;
+  text-align: center;
+}
+
+.hero-right_image {
+  width: 100%;
+}
+
+.hero-right_caption {
+	@include heading('para-sm');
+
+	background-color: $mid-blue;
+	color: $dark-gray;
+	margin-bottom: 0;
+	padding: $base-padding-lite;
+	text-align: left;
+
+	a {
+		color: $dark-gray;
+	}
+}

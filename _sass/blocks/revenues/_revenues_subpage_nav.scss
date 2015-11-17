@@ -7,14 +7,14 @@
 
 
 .revenues_subpage-nav {
+  padding-left: $base-padding;
+  padding-right: $base-padding;
+  padding-top: $base-padding-extra;
+
   @include respond-to(medium-up) {
     padding-left: 0;
     padding-right: 0;
   }
-
-  padding-left: $base-padding;
-  padding-right: $base-padding;
-  padding-top: $base-padding-extra;
 
   a {
     color: $dark-gray;

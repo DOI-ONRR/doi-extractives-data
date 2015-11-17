@@ -77,12 +77,11 @@
     }
 
     .accordion-content {
+      display: none;
 
       @include respond-to(medium-up) {
         display: inline-block;
       }
-
-      display: none;
     }
 
     .accordion-more {
@@ -104,10 +103,6 @@
 }
 
 .accordion-button {
-  @include respond-to(medium-up) {
-    display: none;
-  }
-
   background-color: transparent;
   background-size: 50%;
   height: 2rem;
@@ -115,6 +110,10 @@
   position: absolute;
   right: $base-padding;
   width: 2rem;
+
+  @include respond-to(medium-up) {
+    display: none;
+  }
 }
 
 

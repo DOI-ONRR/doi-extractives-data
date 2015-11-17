@@ -15,6 +15,10 @@
   border-bottom: $thin-border-size solid $mid-gray;
 }
 
+.landing-section_top {
+  margin-bottom: $base-padding-extra;
+}
+
 .landing-section {
   @include respond-to(medium-up) {
     &:nth-child(even) {
@@ -115,7 +119,7 @@
 
 
 .landing-section_category {
-  border-bottom: $thin-border-size solid $mid-gray;
+  border-bottom: 2px solid $mid-gray;
   margin-bottom: 0;
   margin-top: $base-padding;
   padding-bottom: $base-padding-lite;

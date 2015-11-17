@@ -42,7 +42,7 @@ testable: true
 team:
 - id: mhz
   github: meiqimichelle
-  role: 18F Product Lead
+  role: lead
 - id: shawn
   github: shawnbot
   role: Developer
@@ -51,7 +51,7 @@ team:
   role: Developer
 - id: ericronne
   github: ericronne
-  role: 18F Designer, UX
+  role: UX Designer
 - id: nicole.fenton
   github: nicoleslaw
   role: Content Designer

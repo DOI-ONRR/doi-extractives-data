@@ -2,6 +2,43 @@
 title: How it Works – State Legal and Fiscal Information
 layout: default
 permalink: /how-it-works/governance/legal/
+nav_items:
+  - name: ak
+    title: Alaska
+  - name: az
+    title: Arizona
+  - name: ca
+    title: California
+  - name: co
+    title: Colorado
+  - name: il
+    title: Illinois
+  - name: ky
+    title: Kentucky
+  - name: la
+    title: Louisiana
+  - name: mn
+    title: Minnesota
+  - name: mt
+    title: Montana
+  - name: nv
+    title: Nevada
+  - name: nm
+    title: New Mexico
+  - name: nd
+    title: North Dakota
+  - name: ok
+    title: Oklahome
+  - name: pa
+    title: Pennsylvania
+  - name: tx
+    title: Texas
+  - name: ut
+    title: Utah
+  - name: wv
+    title: West Virginia
+  - name: wy
+    title: Wyoming
 ---
 
 <div class="container-outer container-padded">

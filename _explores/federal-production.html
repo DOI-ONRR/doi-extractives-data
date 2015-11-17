@@ -4,7 +4,7 @@ subpage_title: Federal Production
 layout: default
 permalink: /explore/federal-production/
 ---
-<section id="production" class="explore-section">
+<section id="federal-production" class="explore-subpage">
   <section class="slab-delta">
     <div class="container-outer explore-section_top">
       <h5> <a href="{{ site.baseurl }}/explore/">Explore Data</a> / {{ page.subpage_title }}</h5>
@@ -15,7 +15,7 @@ permalink: /explore/federal-production/
 
   <div class="slab-foxtrot">
 
-    <form id="filters" aria-expanded="false" class="filters container-outer">
+    <form id="filters" aria-hidden="true" class="filters container-outer">
       <div class="filter">
         <label for="commodity-group-selector">Commodity Category</label>
         <select id="commodity-group-selector" name="group">
@@ -183,4 +183,4 @@ permalink: /explore/federal-production/
     'US': 'entire U.S.'
   };
 </script>
-<script src="{{ site.baseurl }}/js/pages/revenue.js"></script>
+<script src="{{ site.baseurl }}/js/pages/federal-production.js"></script>

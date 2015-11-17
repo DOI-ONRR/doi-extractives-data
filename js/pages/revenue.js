@@ -19,15 +19,8 @@
   var NULL_FILL = '#eee';
 
   // buttons that expand and collapse other elements
-  var expanders = d3.selectAll('button[aria-controls]')
-    .datum(function() {
-      var text = this.textContent;
-      return {
-        'true': this.getAttribute('data-expanded-text') || text,
-        'false': this.getAttribute('data-collapsed-text') || text
-      };
-    })
-    .on('click.aria', toggleExpander);
+  var expanders = root.selectAll('button[aria-controls]')
+    .call(eiti.ui.expando);
 
   // get the filters and add change event handlers
   var filters = root.selectAll('.filters [name]')
@@ -67,7 +60,7 @@
   function initialize() {
     var props = parseHash();
     if (Object.keys(props).length) {
-      expanders.each(toggleExpander);
+      expanders.each(eiti.ui.expando.toggle);
     }
     return mutateState(function(state) {
       return state.merge(props);

@@ -32,6 +32,8 @@ Greenlee County has a long history of copper mining dating back to the mineral�
 
 The largest-producing copper mine in North America is the privately owned Morenci Mine, located in Greenlee County. In 2012, the Morenci Mine produced 537 million pounds of recoverable copper.[^4] This amount reflects a 22% decrease in production from its output five years prior as a result of the deleterious effects of the 2008 global recession and associated price drop.[^5] [^6] However, production increased 19% between 2010 and 2011, reflecting a healthy rebound in production in conjunction with rising copper prices. Moreover, in 2012 the Morenci Mine maintained a total output capacity of 420,000 metric tons of copper-molybdenum ore—an amount greater than the combined output capacity of the next three largest copper mines in the state.[^7]
 
+<img src="{{ site.baseurl }}/img/counties/az-production.png" alt="Morencini Copper Production vs. Average Price from 2007-2012" class="communities_content-graph">
+
 <h3><a name="emplo" class="communities_content-heading js-comm_section">Employment</a></h3>
 
 Copper production employed 10,637 workers in Arizona in 2011, comprising less than 1% of statewide private-sector employment (1,992,727 total workers).[^8] [^9] In Greenlee County, the ebbs and flows of employment mirror trends in the copper industry. County unemployment reached 18% in 2009 at the height of the recession before falling to around 7% in 2013, as global demand and prices stabilized.[^10] Freeport-McMoRan Inc. owns and operates Greenlee County’s Morenci Mine, after merging with Phelps Dodge Corporation in 2007, and serves as the key copper-mining employer. Mining activities in the county employed approximately 2,296 workers in 2011 out of a population of 8,594.[^11]
@@ -41,7 +43,7 @@ Copper production employed 10,637 workers in Arizona in 2011, comprising less th
 State revenue from copper extraction is directed back to Greenlee County primarily through the state’s severance tax. Arizona levies this tax on metal minerals (including copper) set at 2.5% on 50% of the difference between the gross value of production and the production costs. While 47.6% of this revenue goes to the state’s General Fund, the other 52.4% is distributed to cities and counties.[^12]
 
 Arizona also collects a Transaction Privilege Tax for the right to do business in the state at a rate of 3.125% on the total gross receipts of taxable business.[^13] However, this tax does not apply to copper mining.
- 
+
 In 2012, Greenlee County received $4,376,829 in transaction privilege and severance tax disbursements.[^14] In publicly available documents, the Arizona Department of Revenue reports this revenue as one sum, and does not specify what percentage of the tax stems from copper mining. Greenlee County also collected $2,763,245 in local property taxes levied for general purposes, public health services, and flood control (out of a total $17.1 million in county revenue) in 2012.[^15] While some portion of property taxes stems from copper mining, the percentage is not specified in publicly available data.
 
 <h3><a name="costs" class="communities_content-heading js-comm_section">Costs</a></h3>
@@ -101,4 +103,4 @@ The table below highlights the data sources used to compile this county case stu
 [^14]: Arizona Department of Revenue, [June 2012 Tax Facts](http://www.azdor.gov/Portals/0/TaxFacts/0612Taxfact.pdf), p. 7
 [^15]: Greenlee County, Arizona, [Annual Financial Report](http://azmemory.azlibrary.gov/cdm/ref/collection/statepubs/id/15685), FY 2013, p. 10
 [^16]: [Southern Greenlee County Small Area Transportation Study, Addendum to Transportation Plan](http://www.co.greenlee.az.us/engineering/roads/Greenlee%20Addendum%20Final%20Report%200809.pdf), p. 5
- 
+

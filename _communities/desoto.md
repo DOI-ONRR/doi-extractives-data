@@ -34,9 +34,13 @@ From 2007 to 2011, natural gas production in northern Louisiana, where DeSoto Pa
 
 In 2013, the U.S. Energy Information Administration estimated that there were 16.1 trillion cubic feet of proved reserves in the Haneysville/Bossier Shale in Texas and Louisiana.[^4]
 
+<img src="{{ site.baseurl }}/img/counties/la-production.png" alt="Northern Louisiana Natural Gas Production" class="communities_content-graph">
+
 <h3><a name="emplo" class="communities_content-heading js-comm_section">Employment</a></h3>
 
 Out of DeSoto’s nearly 28,000 residents, 548 people (or about 2% of the population) are employed in mining-support activities, which include oil and gas extraction.[^5] [^6] Out of this group, 271 people are employed specifically in support activities for oil and gas extraction.[^7] Employment data for the complete oil and gas industry in the parish is unavailable. The chart below shows the increase in employment in broader extractive industries—specifically Mining, Quarrying, and Oil and Gas Extraction—in DeSoto Parish between 2004 and 2013.[^8]
+
+<img src="{{ site.baseurl }}/img/counties/la-wage.png" alt="DeSoto Parish Mining, Quarrying, and Oil and Gas Extraction Industries vs. All Other Industries Wage and Salary Employment 2004–2013" class="communities_content-graph">
 
 <h3><a name="reven" class="communities_content-heading js-comm_section">Revenue</a></h3>
 

@@ -36,6 +36,8 @@ Nevada is in the midst of the biggest gold boom in U.S. history, which began in 
 
 The two major gold-mining companies driving this development are Newmont Mining Corporation and Barrick Gold Corporation, which operate both open-pit and underground mining operations.[^8] In 2012, gold production in Elko and Eureka counties totaled 2,474,623 ounces.[^9] In Eureka County, the top-producing mine was the Eastern Nevada Operations (Newmont), while the Meikle Mine (Goldstrike – Barrick Corporation) led production in Elko County.
 
+<img src="{{ site.baseurl }}/img/counties/nv-production.png" alt="Elko and Eureka Counties Gold Production 2008–2012" class="communities_content-graph">
+
 <h3><a name="emplo" class="communities_content-heading js-comm_section">Employment</a></h3>
 
 Between these two counties, gold-mining operations employed approximately 10% of the total population in 2012, or 5,196 workers and 1,121 contractors within a two-county population of 52,957. Gold-mining employment represented 26% of the total employment in the counties in 2012.[^10]
@@ -52,7 +54,7 @@ A number of state-level resources, which are listed below, shed light on Elko an
 	<li><a href="http://www.nevadadot.com/Documents/Reports_and_Publications.aspx">Nevada Department of Transportation: Reports and Publications</a></li>
 	<li><a href="http://ndep.nv.gov/bmrr/cost.htm">Nevada Bureau of Mining Regulation & Reclamation Cost Estimator</a></li>
 	<li>Nevada Department of Health and Human Services EMS Assessment</a></li>
-</ul>	
+</ul>
 
 <h3><a name="data" class="communities_content-heading js-comm_section">Data availability</a></h3>
 

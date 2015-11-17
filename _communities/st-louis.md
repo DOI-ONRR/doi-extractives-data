@@ -34,6 +34,8 @@ In 2012, eight iron mines were operational in St. Louis County, producing 41.7 m
 
 In Minnesota, the state government is the largest owner of mineral rights. It owns approximately 12 million acres of mineral rights, which is equivalent to 24% of the mineral rights in the state.[^5] Minnesota has a policy that prohibits selling state-owned mineral rights, although it does lease its lands and mineral rights for exploration and development.[^6]
 
+<img src="{{ site.baseurl }}/img/counties/mn-production.png" alt="Iron Ore Production from 2003 - 2012" class="communities_content-graph">
+
 <h3><a name="emplo" class="communities_content-heading js-comm_section">Employment</a></h3>
 
 The iron industry employs thousands of people in St. Louis County. The three major companies that operate the county’s iron mines and processing facilities are Cliffs Natural Resources, ArcelorMittal USA Inc., and the United States Steel Corporation. The eight mines in St. Louis County operated by these and other companies provided 3,970 jobs in 2012, comprising 4% of the county’s total 93,615 employment.[^7] [^8]

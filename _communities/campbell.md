@@ -34,11 +34,15 @@ Most Campbell County coal is sub-bituminous, meaning it contains 35% to 45% carb
 
 In 2013, Campbell County produced 343 million tons of coal, accounting for 88% of the state’s total production.[^8] Wyoming coal mines operate largely on federal lands managed by the Bureau of Land Management under the U.S. Department of the Interior.[^9] In fact, Wyoming is the site of more coal mining on federal and Indian lands than any other state in the country, constituting 80% of the total coal production on federal and Indian lands in FY 2014.[^10] [^11]
 
-Production levels have fluctuated throughout the years from 2004 to 2013—2013’s levels were 3% below those in 2004, for instance, partially due to lower natural gas prices that prompted some power companies to abandon coal use.[^12] Underground mining no longer exists in Campbell County, but 11 of Wyoming’s 17 open-pit coal mines are located in the county. The Peabody North Antelope Rochelle Mine and Arch Coal’s Black Thunder Mine, both in Campbell County, are the two largest coal mines in the United States. 
+Production levels have fluctuated throughout the years from 2004 to 2013—2013’s levels were 3% below those in 2004, for instance, partially due to lower natural gas prices that prompted some power companies to abandon coal use.[^12] Underground mining no longer exists in Campbell County, but 11 of Wyoming’s 17 open-pit coal mines are located in the county. The Peabody North Antelope Rochelle Mine and Arch Coal’s Black Thunder Mine, both in Campbell County, are the two largest coal mines in the United States.
+
+<img src="{{ site.baseurl }}/img/counties/wy-production.png" alt="Campbell County Coal Production 2004–2013" class="communities_content-graph">
 
 <h3><a name="emplo" class="communities_content-heading js-comm_section">Employment</a></h3>
 
 The coal mining industry provides employment for 5,195 workers in Campbell County (out of a total population of 48,176), representing approximately 11% of county residents and 24% of total employment.[^13] The chart below shows the county employment trend in the broader mining industry from 2004 through 2013, including mining and mining-support activities.[^14]
+
+<img src="{{ site.baseurl }}/img/counties/wy-wage.png" alt="Campbell County Mining Industry vs. All Other Industries Wage and Salary Employment 2004–2013" class="communities_content-graph">
 
 <h3><a name="reven" class="communities_content-heading js-comm_section">Revenue</a></h3>
 

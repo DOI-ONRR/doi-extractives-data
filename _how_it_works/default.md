@@ -130,7 +130,7 @@ permalink: /how-it-works/
 </section>
 <section class="slab-beta">
 	<div class="container-outer container-padded u-centered">
-	  <h2><a href="resource_revenues">Perhaps a link here to the Process Landing <icon class="icon-chevron-lg"></icon></a></h2>
+	  <h4><a href="resource_revenues">Perhaps a link here to the Process Landing <icon class="icon-chevron-lg"></icon></a></h4>
   </div>
 </section>
 

@@ -1,10 +1,9 @@
-// Revenue
+// Explore
 //
-// Revenues block within resources page
+// General layout for Explore Data sections
 //
-// Styleguide blocks.revenue
-
-.revenue-section {
+// Styleguide blocks.explore
+.explore-subpage {
   $dark-blue: #4b9bbf;
   $positive-fill: $pale-blue;
   $negative-fill: #bbb;
@@ -45,13 +44,13 @@
     }
   }
 
-  [aria-expanded=false] {
+  [aria-hidden=true] {
     display: none;
   }
 
   [class^=slab] {
-    padding-bottom: 1em;
-    padding-top: 1em;
+    padding-bottom: $base-padding;
+    padding-top: $base-padding;
   }
 
   eiti-slider {

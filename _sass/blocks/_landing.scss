@@ -7,7 +7,7 @@
 .landing-section,
 .landing-section_open {
   @include respond-to(medium-up) {
-    @include span-columns(5.5);
+    @include span-columns(5);
 
     border-bottom: none;
   }
@@ -18,7 +18,7 @@
 .landing-section {
   @include respond-to(medium-up) {
     &:nth-child(even) {
-      @include shift(1);
+      @include shift(2);
     }
 
     &:nth-child(odd) {
@@ -87,7 +87,7 @@
 
   @include respond-to(medium-up) {
     &.oil-gas {
-      @include shift(1);
+      @include shift(2);
     }
 
     &.coal {
@@ -95,7 +95,7 @@
     }
 
     &.minerals {
-      @include shift(1);
+      @include shift(2);
     }
 
     &.renewables {
@@ -103,8 +103,8 @@
     }
 
     &.overview {
-      @include span-columns(5.5);
-      @include shift();
+      @include span-columns(5);
+      @include shift(2);
     }
   }
 

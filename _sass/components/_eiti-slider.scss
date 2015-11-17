@@ -34,7 +34,7 @@ eiti-slider {
     z-index: 100;
 
     &:after {
-      border-color: #ccc;
+      border-color: $neutral-gray;
       border-style: solid;
       border-width: 0 1px;
       box-sizing: border-box;

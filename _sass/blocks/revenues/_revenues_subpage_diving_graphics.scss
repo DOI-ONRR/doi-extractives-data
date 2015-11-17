@@ -69,6 +69,8 @@
   }
 
   &.offshore-oil {
+    background: $offshore-oil-primary-color;
+
     @include respond-to(medium-up) {
       background: url('../img/revenues/offshore-oil-top.png') top left no-repeat, url('../img/revenues/offshore-oil-bottom.png') bottom left no-repeat;
       background-size: 100%, 100%;
@@ -121,8 +123,6 @@
       }
     }
 
-    background: $offshore-oil-primary-color;
-
     .revenues_subpage-dyk_heading {
       background-color: $offshore-oil-secondary-color;
     }
@@ -135,13 +135,13 @@
 
   &.onshore-renewables {
 
+    background: $onshore-renewables-primary-color;
+
     @include respond-to(medium-up) {
       &:after {
         background: url('../img/revenues/renew-onshore.svg') bottom left no-repeat;
       }
     }
-
-    background: $onshore-renewables-primary-color;
 
     .revenues_subpage-dyk_heading {
       background-color: $onshore-renewables-secondary-color;
@@ -163,6 +163,8 @@
 
   &.offshore-renewables,
   &.onshore-renewables {
+    background: $offshore-renewables-primary-color;
+
     @include respond-to(medium-up) {
       position: relative;
       z-index: 1;
@@ -191,8 +193,6 @@
       }
     }
 
-    background: $offshore-renewables-primary-color;
-
     .revenues_subpage-dyk_heading {
       background-color: $offshore-renewables-secondary-color;
     }
@@ -204,6 +204,8 @@
   }
 
   &.coal {
+    background: $coal-primary-color;
+
     @include respond-to(medium-up) {
       background: url('../img/revenues/coal-top.png') top left no-repeat, url('../img/revenues/coal-bottom.png') bottom left no-repeat;
       background-size: 100%, 100%;
@@ -256,8 +258,6 @@
       }
     }
 
-    background: $coal-primary-color;
-
     .revenues_subpage-dyk_heading {
       background-color: $coal-secondary-color;
     }
@@ -269,6 +269,8 @@
   }
 
   &.minerals {
+    background: $minerals-primary-color;
+
     @include respond-to(medium-up) {
       background: url('../img/revenues/minerals-top.png') top left no-repeat, url('../img/revenues/minerals-bottom.png') bottom left no-repeat;
       background-size: 100%, 100%;
@@ -313,8 +315,6 @@
         background: none;
       }
     }
-
-    background: $minerals-primary-color;
 
     .revenues_subpage-dyk_heading {
       background-color: $minerals-secondary-color;

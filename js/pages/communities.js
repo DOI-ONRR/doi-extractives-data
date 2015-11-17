@@ -1,25 +1,25 @@
 (function() {
-    var scrollLeft, 
-      scrollTop, 
+    var scrollLeft,
+      scrollTop,
       sections;
     var findScrollPositions = function(){
-      scrollLeft = (window.pageXOffset !== undefined) 
-        ? window.pageXOffset 
-        : (document.documentElement 
-          || document.body.parentNode 
+      scrollLeft = (window.pageXOffset !== undefined)
+        ? window.pageXOffset
+        : (document.documentElement
+          || document.body.parentNode
           || document.body).scrollLeft;
-      scrollTop = (window.pageYOffset !== undefined) 
-        ? window.pageYOffset 
-        : (document.documentElement 
-          || document.body.parentNode 
+      scrollTop = (window.pageYOffset !== undefined)
+        ? window.pageYOffset
+        : (document.documentElement
+          || document.body.parentNode
           || document.body).scrollTop;
     };
-    var communitiesContent = document.getElementsByClassName('communities_content')[0];
-    
+    var communitiesContent = document.querySelector('.communities_content');
+
 
 
     var removeActive = function(){
-      var communitiesNavItems = document.getElementsByClassName('js-comm_nav_item');
+      var communitiesNavItems = document.querySelectorAll('.js-comm_nav_item');
       for (var i = 0; i < communitiesNavItems.length; i++) {
         communitiesNavItems[i].classList.remove('active');
       }
@@ -32,7 +32,7 @@
       }
     };
 
-    var communitiesNavItems = document.getElementsByClassName('js-comm_nav_item');
+    var communitiesNavItems = document.querySelectorAll('.js-comm_nav_item');
     for (var i = 0; i < communitiesNavItems.length; i++) {
       var item = communitiesNavItems[i];
       item.addEventListener('click', function () {
@@ -41,9 +41,9 @@
       });
     }
 
-    
+
     var setPageSections = function(){
-      var communitiesSections = document.getElementsByClassName('js-comm_section'),
+      var communitiesSections = document.querySelector('.js-comm_section'),
         sections = [];
       for (var i = 0; i < communitiesSections.length; i++) {
         var section = communitiesSections[i];
@@ -67,11 +67,11 @@
     };
 
     var setStickyPos = function () {
-      var stickyNav = document.getElementsByClassName('sticky_nav')[0],
+      var stickyNav = document.querySelector('.sticky_nav'),
           ccOffsetTop = communitiesContent.offsetTop;
 
       // scrollDifference is the difference in height between
-      // the location of the top of the window and 
+      // the location of the top of the window and
       // the top of the 'communities_content' div
       var scrollDifference = scrollTop - ccOffsetTop;
 
@@ -79,9 +79,9 @@
       var stickyNavHeight = stickyNav.clientHeight;
 
       // scrollTopFooterOffset is the combined height of the content
-      // offsets less the height the sticky div 
+      // offsets less the height the sticky div
       // and the content's bottom padding
-      // when scrollTop is greater than scrollTopFooterOffset 'top' 
+      // when scrollTop is greater than scrollTopFooterOffset 'top'
       // property of stickyFooter should be set to scrollTopFooterOffset
       var scrollTopFooterOffset = combinedOffset - stickyNavHeight - 50;
 

@@ -49,8 +49,8 @@ Unknown tasks or dependencies that need investigation
 ## 18F team workflow
 
 1. Pull an issue from the current sprint only, please (unless there is an *URGENT* issue). Take an unassigned issue. If a non *URGENT* issue comes up, but you want to prioritize it, coordinate with the PM or tech lead on slack.
-2. Before starting, [write the dev issue checklist](https://github.com/18f/doi-extractives-data/blob/develop/CONTRIBUTING.md#issues).
-3. While working, submit `[WIP]` [pull requests](https://github.com/18f/doi-extractives-data/blob/develop/CONTRIBUTING.md#pull-requests) liberally.
+2. Before starting, [write the dev issue checklist](CONTRIBUTING.md#issues).
+3. While working, submit `[WIP]` [pull requests](CONTRIBUTING.md#pull-requests) liberally.
 4. Time boxing! If you have spent half the time of the estimated size of the issue and you're not sure that you're half-way finished, notify the tech lead or PM in slack. This isn't bad, we just like knowing what's up. :)
 5. Make sure your PR includes significant test coverage.
 6. Once you're done with your PR, notify the team in slack that your PR is ready for review. Do a review of someone else's PR. (Follow the above PR guidelines.)

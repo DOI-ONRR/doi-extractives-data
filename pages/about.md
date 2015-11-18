@@ -23,9 +23,7 @@ permalink: /about/
       </div>
 
       <div class="container-right-5">
-
-        <img src="{{ site.baseurl }}/img/eiti-report.jpg" alt="The EITI report process" class="u-img" style="padding-top:50px;">
-
+		  <img src="{{ site.baseurl }}/img/nat-gas-well.jpg" alt="Natural gas well in Colorado" class="u-img">
       </div>
 
     </section>
@@ -38,14 +36,10 @@ permalink: /about/
 		  
 		  <p>In 2011, the U.S. joined seven other countries in launching the <a href="http://www.opengovpartnership.org/">Open Government Partnership</a>, a global platform of participating countries dedicated to making governments more open, accountable, and responsive to citizens. As part of the <a href="https://www.whitehouse.gov/sites/default/files/us_national_action_plan_final_2.pdf">2011 National Action Plan</a>, the U.S. sought to improve the transparency of extractive industries for US citizens, as well as manage public resources—specifically natural resources on federal lands—more effectively by joining the Extractive Industries Transparency Initiative (EITI). In 2013, we restated this commitment in the second <a href="https://www.whitehouse.gov/sites/default/files/docs/us_national_action_plan_6p.pdf">National Action Plan</a>.</p>
 		  
-		  
-		  
       </div>
 
       <div class="container-right-5">
-
-        <img src="{{ site.baseurl }}/img/nat-gas-well.jpg" alt="Natural gas well in Colorado" class="u-img">
-
+          <img src="{{ site.baseurl }}/img/eiti-report.jpg" alt="The EITI report process" class="u-img" style="padding-top:50px;">
       </div>
 
     </section>
@@ -54,13 +48,16 @@ permalink: /about/
 
       <div class="container-left-7">
 		  
-		  <h3>History</h3>
+		<h2>Who’s involved</h2>
 		  
-		  
-
-
         <p><strong>Today.</strong> The Multi-stakeholder Group meets regularly and is responsible for working collaboratively to oversee USEITI implementation. It is a consensus-based decision making body, and in accordance with EITI principles, is comprised of representatives from government, industry, and civil society (public) stakeholders. To see the latest from this process, visit the <a href="https://www.doi.gov/eiti/FACA">USEITI MSG homepage</a>.</p>
-
+		
+		<h3>Multi-stakeholder group</h3>
+		
+		<p>To increase transparency and accountability, the EITI relies on a cross-sector partnership between government (agencies that oversee extraction in the U.S.), industry (companies operating in the extractive industries), and civil society (individuals and organizations that represent community and citizen interests). Together, all three sectors make up the Multi-stakeholder Group (MSG) responsible for overseeing the EITI.</p>
+		
+		<p>An Independent Administrator (IA) also assists in implementing the EITI Standard. Later, a Validator commissioned by the EITI International Secretariat assesses whether or not the country successfully implemented the EITI Standard.</p>
+		
       </div>
 
       <div class="container-right-5">
@@ -76,14 +73,6 @@ permalink: /about/
   <section class="container communities-content">
 
     <article class="container-left-7 bureaus">
-		
-		<h2>Who’s involved</h2>
-		
-		<h3>Multi-stakeholder group</h3>
-		
-		<p>To increase transparency and accountability, the EITI relies on a cross-sector partnership between government (agencies that oversee extraction in the U.S.), industry (companies operating in the extractive industries), and civil society (individuals and organizations that represent community and citizen interests). Together, all three sectors make up the Multi-stakeholder Group (MSG) responsible for overseeing the EITI.</p>
-		
-		<p>An Independent Administrator (IA) also assists in implementing the EITI Standard. Later, a Validator commissioned by the EITI International Secretariat assesses whether or not the country successfully implemented the EITI Standard.</p>
 		
 		<p>To implement the EITI Standard, all three sectors in a participating country collaborate in a disclosure process regarding natural resource revenue, called reconciliation. Government, industry, and civil society develop a framework for the reconciliation. Government and industry share with the IA the total amount of revenue the government received and industry paid in the year under review. The IA reconciles the reported revenue and investigates any discrepancies. The public can see the results for their respective country in an annual EITI report, which includes a contextual narrative of the country’s legal and fiscal regime. There are currently 48 EITI-implementing countries, 31 of which are compliant with the EITI Standard.</p>
 		
@@ -107,7 +96,7 @@ permalink: /about/
           <img class="bureau-image" src="{{ site.baseurl }}/img/logos/DOI-mark.png" alt="U.S. Department of the Interior Seal">
         </div>
         <div class="bureau-right">
-          <h3>U.S. Department of the Interior (DOI)</h3>
+          <h3>Department of the Interior (DOI)</h3>
           <p><a href="https://www.doi.gov/">DOI</a> protects and manages the nation’s natural resources and cultural heritage; provides scientific and other information about those resources; and honors its trust responsibilities or special commitments to American Indians, Alaska Natives, and affiliated island communities.</p>
 		  
 		  <p>Bureaus and offices within DOI fulfill this mission by serving three primary functions related to natural resource extraction: (1) managing federal and Indian lands and natural resources; (2) enforcing regulations and rules; and (3) collecting, managing, and disbursing revenue from natural resource extraction on federal and Indian lands.</p>

@@ -140,6 +140,19 @@ regional/revenues.tsv: state/revenues.tsv offshore/revenues.tsv
 			--sum 'Revenue' \
 			-o $@
 
+# regional (state and offshore) revenues
+regional/production.tsv: state/production.tsv offshore/production.tsv
+	mkdir -p $(dir $@)
+	bin/union-regions.js \
+		--onshore state/production.tsv \
+		--states $(input)geo/states.csv \
+		--offshore offshore/production.tsv \
+		--areas $(input)geo/offshore/areas.tsv \
+		| bin/sum.js \
+			--group 'Year,Region,Commodity,Product' \
+			--sum 'Volume' \
+			-o $@
+
 # regional (state and offshore) revenues by resource group
 regional/resource-revenues.tsv: regional/revenues.tsv
 	cat $< \

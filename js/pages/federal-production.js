@@ -47,6 +47,8 @@
     .on('products', function(products) {
       updateProductList(products)
         .property('value', state.get('product') || '');
+      root.select('#product-filter')
+        .style('display', products.length > 1 ? null : 'none');
     });
 
   // kick off the "app"
@@ -110,12 +112,14 @@
     if (product) {
       var match = product.match(/( \(.+\))\s*$/);
       var units = match ? match[1] : '';
-      console.log('product units:', units);
+      // console.log('product units:', units);
       formatNumber = eiti.format.transform(eiti.format.si, function(str) {
         return str + units;
       });
     } else {
-      formatNumber = eiti.format.si;
+      formatNumber = function(n) {
+        return n + eiti.format.pluralize(n, ' product');
+      };
     }
 
     // update the filters
@@ -171,6 +175,7 @@
 
   function renderRegion(selection, state) {
     var regionId = state.get('region') || 'US';
+    var product = state.get('product');
     var fields = getFields(regionId);
 
     // console.log('loading', regionId);
@@ -191,11 +196,12 @@
           .call(createBarChart);
       }
 
-      var total = d3.sum(data, getter(fields.value));
-      total = Math.floor(total);
+      var total = product
+        ? d3.sum(data, getter(fields.value))
+        : unique(data, 'Product').length;
       header
         .datum({
-          value: total,
+          value: Math.floor(total),
           properties: {
             name: REGION_ID_NAME[regionId] || '???'
           }
@@ -213,11 +219,16 @@
         }
 
         var features = subregions.data();
+        var rollup = product
+          ? function(d) {
+              return d3.sum(d, getter(fields.value));
+            }
+          : function(d) {
+              return d[0][fields.value];
+            };
         var dataByFeatureId = d3.nest()
           .key(getter(fields.region))
-          .rollup(function(d) {
-            return d3.sum(d, getter(fields.value));
-          })
+          .rollup(rollup)
           .map(data);
 
         // console.log('data by feature id:', dataByFeatureId);
@@ -729,7 +740,9 @@
           return d.Product === product;
         });
       } else {
-        // TODO: count products?
+        // console.info('before:', data);
+        data = aggregateProducts(data, state);
+        // console.info('after:', data);
       }
 
       dispatch.yearly(data);
@@ -808,6 +821,33 @@
       .key(getter(key))
       .entries(data)
       .map(getter('key'));
+  }
+
+  function aggregateProducts(data, state) {
+    var lookup = {};
+    var fields = getFields(state.get('region'));
+    var keys = [fields.region, 'Year'].map(getter);
+    data.forEach(function(d) {
+      var key = keys
+        .map(function(k) { return k(d); })
+        .join('/');
+      if (key in lookup) {
+        lookup[key].products = lookup[key].products.add(d.Product);
+      } else {
+        lookup[key] = {
+          sample: d,
+          products: new Immutable.Set(d.Product)
+        };
+      }
+    });
+    return d3.values(lookup)
+      .map(function(d) {
+        return eiti.util.extend({}, d.sample, {
+          Type: null,
+          Product: null,
+          Volume: d.products.size
+        });
+      });
   }
 
   function identity(d) {

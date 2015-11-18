@@ -24,7 +24,9 @@ permalink: /how-it-works/governance/
 
   <h4>Subpages:</h4>
   <ul>
-    <li><a href="{{ site.baseurl }}/how-it-works/governance/legal/">State Legal and Fiscal Information</a></li>
+    <li><a href="{{ site.baseurl }}/how-it-works/state-laws-and-regulations/">Federal Laws and Reforms</a></li>
+    <li><a href="{{ site.baseurl }}/how-it-works/state-laws-and-regulations/">State Laws and Regulations</a></li>
+    <li><a href="{{ site.baseurl }}/how-it-works/state-laws-and-regulations/">Tribal Laws and Regulations</a></li>
     <li><a href="{{ site.baseurl }}/how-it-works/governance/taxes/">Tax Expenditures</a></li>
   </ul>
 </div>

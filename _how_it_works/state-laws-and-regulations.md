@@ -1,8 +1,8 @@
 ---
 title: How it Works
-subpage: State Legal and Fiscal Information
+subpage: State Laws and Regulations
 layout: default
-permalink: /how-it-works/governance/legal/
+permalink: /how-it-works/state-laws-and-regulations/
 nav_items:
   - name: ak
     title: Alaska

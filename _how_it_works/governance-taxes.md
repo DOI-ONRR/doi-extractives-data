@@ -1,16 +1,19 @@
 ---
-title: How It Works – Tax Expenditures
+title: How It Works
+subpage: Tax Expenditures
 layout: default
 permalink: /how-it-works/governance/taxes/
 ---
 
 <div class="container-outer container-padded">
 
-  <h1>{{page.title}}</h1>
+	<h5><a href="{{site.baseurl}}{{site.permalink}}">{{page.title}}</a> /</h5>
+  <h1>{{page.subpage}}</h1>
+
   <p>Tax expenditures are defined in the law as revenue losses attributable to provisions of the federal tax laws which allow a special exclusion, exemption, or deduction from gross income or which provide a special credit, a preferential rate of tax, or a deferral of tax liability. These exceptions may be viewed as alternatives to other policy instruments, such as spending or regulatory programs.</p>
   <p>The U.S. Department of the Treasury estimates the total dollar amount of each tax expenditure in a given year, and <a href="http://www.treasury.gov/resource-center/tax-policy/Documents/Tax-Expenditures-FY2015.pdf">publishes a report of these estimates</a>.</p>
   <p>The Treasury provides estimates for tax expenditures related to extracting fossil fuels, developing renewable energy, and extracting nonenergy minerals. The table below provides details and estimates for each of the relevant tax expenditures, using 2013 data.</p>
-  
+
   <h3>Fossil fuels</h3>
   <table>
   	<tr>
@@ -53,7 +56,7 @@ permalink: /how-it-works/governance/taxes/
 		<td>$20 million</td>
 	</tr>
   </table>
-  
+
   <h3>Renewables</h3>
   <table>
   	<tr>
@@ -87,7 +90,7 @@ permalink: /how-it-works/governance/taxes/
 		<td>$70 million</td>
 	</tr>
   </table>
-  
+
   <h3>Nonenergy minerals</h3>
   <table>
   	<tr>

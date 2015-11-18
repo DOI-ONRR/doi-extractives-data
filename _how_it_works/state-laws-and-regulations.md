@@ -1,7 +1,8 @@
 ---
-title: How it Works – State Legal and Fiscal Information
+title: How it Works
+subpage: State Laws and Regulations
 layout: default
-permalink: /how-it-works/governance/legal/
+permalink: /how-it-works/state-laws-and-regulations/
 nav_items:
   - name: ak
     title: Alaska
@@ -43,7 +44,7 @@ nav_items:
 
 <div class="container-outer container-padded">
 
-  <h1>{{page.title}}</h1>
+  <h1>{{page.subpage}}</h1>
 
   <h3><a name="ak">Alaska</a></h3>
 

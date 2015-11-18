@@ -75,10 +75,9 @@ permalink: /how-it-works/
 			</p>
 		</div>
 		<div class="container landing-section_open oil-gas">
-			<div>
-				<h5 class="landing-heading"><a href="{{site.baseurl}}/how-it-works/offshore-oil-gas/">Oil & Gas</a></h5>
-				<p class="landing-description">Oil and gas are fossil fuels. Oil forms in underground reservoirs, taking tens of millions of years. Gas – or “natural gas” – forms over thousands of years, both on land and offshore.</p>
-			</div>
+			<h5 class="landing-heading"><a href="{{site.baseurl}}/how-it-works/offshore-oil-gas/">Oil & Gas</a></h5>
+			<p class="landing-description">Oil and gas are fossil fuels. Oil forms in underground reservoirs, taking tens of millions of years. Gas – or “natural gas” – forms over thousands of years, both on land and offshore.</p>
+		</div>
 		</div>
 		<div class="container landing-section_open coal">
 			<h5 class="landing-heading"><a href="{{site.baseurl}}/how-it-works/coal/">Coal</a></h5>

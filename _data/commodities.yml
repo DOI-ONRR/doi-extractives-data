@@ -26,13 +26,18 @@ groups:
     - "Gilsonite"
     - "Gold"
     - "Hardrock"
+    - "Langbeinite"
     - "Limestone"
     - "Phosphate"
+    - "Potash"
     - "Potassium"
     - "Quartz"
     - "Sand & Gravel"
+    - "Salt"
+    - "Soda Ash"
     - "Sodium"
     - "Sulfur"
+    - "Trona Ore"
 
   renewables:
     name: Renewables
@@ -43,4 +48,14 @@ groups:
   other:
     name: Other
     commodities:
-    - "Other" # XXX: need other commodities here?
+    - "Other"
+    # XXX no idea, but ONRR groups it under "Other Products"
+    - "Brine Barrels"
+    # FIXME: does this belong in Minerals?
+    - "Lead"
+    # FIXME: does this belong in Minerals?
+    - "Muriate of Potash" # " of Potash"
+    # XXX no idea, but ONRR groups it under "Other Products"
+    - "Purge Liquor"
+    # FIXME: does this belong in Minerals?
+    - "Zinc"

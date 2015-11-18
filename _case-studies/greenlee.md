@@ -1,7 +1,7 @@
 ---
 title: Greenlee County, Arizona
-layout: community
-permalink: /communities/greenlee/
+layout: case-studies
+permalink: /case-studies/greenlee/
 resource: copper
 nav_items:
   - name: intro

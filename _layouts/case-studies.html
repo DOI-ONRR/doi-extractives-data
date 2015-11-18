@@ -3,12 +3,12 @@ layout: default
 ---
 
 
-{% include communities_intro.html %}
+{% include case-studies_intro.html %}
 
 <section class="container-outer communities_content">
 
 	<article class="container-left-7">
-	    
+
 			{% if page.resource == 'oil' %}
 			  <h3 class="communities_content-icon"><i class="icon-oil"></i>Oil</h3>
 			{% elsif page.resource == 'gas' %}
@@ -25,7 +25,7 @@ layout: default
 
 
 		  {{content | markdownify}}
-	
+
 	</article>
 
 	<div class="container-right-5 sticky_nav">
@@ -51,4 +51,4 @@ layout: default
 </section>
 
 
-<script src="{{ site.baseurl }}/js/pages/communities.js"></script>
+<script src="{{ site.baseurl }}/js/pages/case-studies.js"></script>

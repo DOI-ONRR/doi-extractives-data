@@ -1,7 +1,7 @@
 ---
 title: Campbell County, Wyoming
-layout: community
-permalink: /communities/campbell/
+layout: case-studies
+permalink: /case-studies/campbell/
 resource: coal
 nav_items:
   - name: intro

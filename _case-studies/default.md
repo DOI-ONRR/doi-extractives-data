@@ -1,7 +1,7 @@
 ---
 title: Case Studies – Home
-layout: community
-permalink: /communities/
+layout: case-studies
+permalink: /case-studies/
 nav_items:
   - name: intro
     title: Introduction
@@ -34,8 +34,8 @@ This section includes 12 case studies that provide a snapshot into communities t
 ### Choose a community to get started
 
 <ul class="communities_content-select">
-  <li>Gas: <a href="{{ site.baseurl }}/communities/tar">Tarrant &amp; Johnson Counties, Texas</a></li>
-  <li>Oil: <a href="{{ site.baseurl }}/communities/nor">North Slope Borough, Alaska</a></li>
+  <li>Gas: <a href="{{ site.baseurl }}/case-studies/tar">Tarrant &amp; Johnson Counties, Texas</a></li>
+  <li>Oil: <a href="{{ site.baseurl }}/case-studies/nor">North Slope Borough, Alaska</a></li>
 </ul>
 
 ### Or, read more about how to interpret these studies:
@@ -80,7 +80,7 @@ County and state budget documents and state agency websites were the primary dat
 
 This year’s data collection process was the first step in bringing information about extractive industries’ impacts on local communities and governments to the public in a clear, digestible way. We reached out to each county we profiled to communicate the purpose and status of the USEITI, verify content, and lay the foundation for future collaboration.
 
-<h3 class="communities_content-heading">Notes</h3> 
+<h3 class="communities_content-heading">Notes</h3>
 [^1]: U.S. Bureau of Economic Analysis, [Wyoming Department of Administration &amp; Information Economic Analysis Division](http://eadiv.state.wy.us/i&e/WyoGDP97_13.htm), 2013
 [^2]: EITI International Secretariat, [The EITI Standard](https://eiti.org/files/English_EITI_STANDARD.pdf), 2015, p. 9
 [^3]: Duke University Energy Initiative, [Shale Public Finance: Local government revenues and costs associated with oil and gas development](http://dukespace.lib.duke.edu/dspace/handle/10161/9216), 2014

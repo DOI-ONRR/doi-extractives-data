@@ -1,7 +1,7 @@
 ---
 title: DeSoto Parish, Louisiana
-layout: community
-permalink: /communities/desoto/
+layout: case-studies
+permalink: /case-studies/desoto/
 resource: gas
 nav_items:
   - name: intro

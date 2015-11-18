@@ -1,7 +1,7 @@
 ---
 title: Tarrant and Johnson Counties, Texas
-layout: community
-permalink: /communities/tarrant-and-johnson/
+layout: case-studies
+permalink: /case-studies/tarrant-and-johnson/
 resource: gas
 nav_items:
   - name: intro

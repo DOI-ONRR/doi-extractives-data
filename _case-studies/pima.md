@@ -1,7 +1,7 @@
 ---
 title: Pima County, Arizona
-layout: community
-permalink: /communities/pima/
+layout: case-studies
+permalink: /case-studies/pima/
 resource: copper
 nav_items:
   - name: intro

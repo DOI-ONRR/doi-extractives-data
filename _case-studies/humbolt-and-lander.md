@@ -1,7 +1,7 @@
 ---
 title: Humbolt and Lander Counties, Nevada
-layout: community
-permalink: /communities/humboldt-and-lander/
+layout: case-studies
+permalink: /case-studies/humboldt-and-lander/
 resource: gold
 nav_items:
   - name: intro

@@ -1,7 +1,7 @@
 ---
 title: Marquette County, Michigan
-layout: community
-permalink: /communities/marquette/
+layout: case-studies
+permalink: /case-studies/marquette/
 resource: iron
 nav_items:
   - name: intro

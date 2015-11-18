@@ -1,7 +1,7 @@
 ---
 title: St. Louis County, Minnesota
-layout: community
-permalink: /communities/st-louis/
+layout: case-studies
+permalink: /case-studies/st-louis/
 resource: iron
 nav_items:
   - name: intro

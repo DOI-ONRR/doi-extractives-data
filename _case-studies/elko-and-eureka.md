@@ -1,7 +1,7 @@
 ---
 title: Elko and Eureka Counties, Nevada
-layout: community
-permalink: /communities/elko-and-eureka/
+layout: case-studies
+permalink: /case-studies/elko-and-eureka/
 resource: gold
 nav_items:
   - name: intro

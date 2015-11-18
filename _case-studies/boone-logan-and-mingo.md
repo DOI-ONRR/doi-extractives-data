@@ -1,7 +1,7 @@
 ---
 title: Boone, Logan, and Mingo Counties, West Virginia
-layout: community
-permalink: /communities/boone-logan-and-mingo/
+layout: case-studies
+permalink: /case-studies/boone-logan-and-mingo/
 resource: coal
 nav_items:
   - name: intro

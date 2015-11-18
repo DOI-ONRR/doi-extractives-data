@@ -1,7 +1,7 @@
 ---
 title: Kern County, California
-layout: community
-permalink: /communities/kern/
+layout: case-studies
+permalink: /case-studies/kern/
 resource: oil
 nav_items:
   - name: intro

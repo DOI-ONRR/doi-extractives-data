@@ -7,7 +7,6 @@ var yargs = require('yargs')
   .describe('group', 'comma-separated list of keys to group on')
   .default('group', 'Year,Commodity')
   .describe('sum', 'the column to sum')
-  .default('sum', 'Revenue')
   .describe('count', 'include the grouped row count as this named column')
   .describe('o', 'write to this file')
   .default('o', '/dev/stdout')
@@ -58,7 +57,9 @@ async.series(args.map(function(filename) {
   })
   .map(function(entry) {
     var row = entry.key;
-    row[options.sum] = entry.value;
+    if (options.sum) {
+      row[options.sum] = entry.value;
+    }
     if (options.count) {
       row[options.count] = entry.length;
     }

@@ -15,7 +15,7 @@
   var timeline = root.select('#timeline');
 
   var getter = eiti.data.getter;
-  var formatNumber = eiti.format.dollars;
+  var formatNumber = String;
   var NULL_FILL = '#eee';
 
   // buttons that expand and collapse other elements
@@ -94,6 +94,16 @@
 
   function render(state, previous) {
     // console.time('render');
+    var product = state.get('product');
+    if (product) {
+      var match = product.match(/( \(.+\))\s*$/);
+      var units = match ? match[1] : '';
+      formatNumber = eiti.format.transform(eiti.format.si, function(str) {
+        return str + units;
+      });
+    } else {
+      formatNumber = eiti.format.si;
+    }
 
     // update the filters
     filters.each(function() {
@@ -442,7 +452,7 @@
   function getFields(regionId) {
     var fields = {
       region: 'Region',
-      value: 'Revenue',
+      value: 'Volume',
       featureId: 'id'
     };
     if (!regionId) {
@@ -672,7 +682,7 @@
         : region.length === 2
           ? 'county/by-state/' + region + '/'
           : 'offshore/';
-      return path + 'revenues.tsv';
+      return path + 'production.tsv';
     }
 
     function applyFilters(data, state, done) {
@@ -698,6 +708,15 @@
         data = data.filter(function(d) {
           return d[fields.region] === regionName;
         });
+      }
+
+      var product = state.get('product');
+      if (product) {
+        data = data.filter(function(d) {
+          return d.Product === product;
+        });
+      } else {
+        // TODO: count products?
       }
 
       dispatch.yearly(data);

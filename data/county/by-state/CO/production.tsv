@@ -1,1008 +1,724 @@
-Year	State	County	FIPS	Commodity	Product	Type	Volume
-2004	CO	Arapahoe	08005	Oil	Condensate (bbl)	Royalties	20.61
-2004	CO	Arapahoe	08005	Oil	Oil (bbl)	Royalties	81.92
-2004	CO	Archuleta	08007	Gas	Coal Bed Methane (mcf)	Royalties	17834.5
-2004	CO	Archuleta	08007	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	249353
-2004	CO	Baca	08009	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	61045.02
-2004	CO	Baca	08009	Oil	Oil (bbl)	Royalties	39366.21
-2004	CO	Bent	08011	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	44411.17
-2004	CO	Bent	08011	Oil	Condensate (bbl)	Royalties	23.33
-2004	CO	Broomfield	08014	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	457.58
-2004	CO	Broomfield	08014	Oil	Oil (bbl)	Royalties	25.11
-2004	CO	Cheyenne	08017	NGL	Gas Plant Products (gal)	Royalties	240701.28
-2004	CO	Cheyenne	08017	Oil	Oil (bbl)	Royalties	41309.24
-2004	CO	Delta	08029	Coal	Coal (ton)	Royalties	3400422.58
-2004	CO	Delta	08029	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	15647.6
-2004	CO	Dolores	08033	Gas	Processed (Residue) Gas (mcf)	Royalties	137002.97
-2004	CO	Dolores	08033	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	165887.97
-2004	CO	Dolores	08033	NGL	Gas Plant Products (gal)	Royalties	278407.54
-2004	CO	Dolores	08033	Oil	Condensate (bbl)	Royalties	644.63
-2004	CO	Dolores	08033	Oil	Oil (bbl)	Royalties	45024.67
-2004	CO	Dolores	08033	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	20770811.38
-2004	CO	Garfield	08045	Coal	Coal (ton)	Royalties	295837
-2004	CO	Garfield	08045	Gas	Coal Bed Methane (mcf)	Royalties	404334.08
-2004	CO	Garfield	08045	Gas	Processed (Residue) Gas (mcf)	Royalties	440339.89
-2004	CO	Garfield	08045	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	65145124.45
-2004	CO	Garfield	08045	NGL	Gas Plant Products (gal)	Royalties	73102.35
-2004	CO	Garfield	08045	Oil	Condensate (bbl)	Royalties	199912.36
-2004	CO	Garfield	08045	Oil	Drip or Scrubber Condensate (bbl)	Royalties	136.6
-2004	CO	Garfield	08045	Oil	Oil (bbl)	Royalties	8849.83
-2004	CO	Garfield	08045	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	50286.93
-2004	CO	Gunnison	08051	Coal	Coal (ton)	Royalties	6989782.42
-2004	CO	Gunnison	08051	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	25002.67
-2004	CO	Huerfano	08055	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	12486449.15
-2004	CO	Jackson	08057	Oil	Oil (bbl)	Royalties	107224.83
-2004	CO	Jackson	08057	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	767408.28
-2004	CO	Kiowa	08061	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	22242.09
-2004	CO	Kiowa	08061	Oil	Condensate (bbl)	Royalties	40
-2004	CO	Kiowa	08061	Oil	Oil (bbl)	Royalties	4406.7
-2004	CO	La Plata	08067	Coal	Coal (ton)	Royalties	391332
-2004	CO	La Plata	08067	Gas	Coal Bed Methane (mcf)	Royalties	6003366.65
-2004	CO	La Plata	08067	Gas	Processed (Residue) Gas (mcf)	Royalties	220.33
-2004	CO	La Plata	08067	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	4898073.81
-2004	CO	La Plata	08067	NGL	Gas Plant Products (gal)	Royalties	408.01
-2004	CO	Larimer	08069	Oil	Oil (bbl)	Royalties	1289.7
-2004	CO	Las Animas	08071	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2529850.07
-2004	CO	Logan	08075	Oil	Oil (bbl)	Royalties	2409.87
-2004	CO	Mesa	08077	Gas	Coal Bed Methane (mcf)	Royalties	16992.14
-2004	CO	Mesa	08077	Gas	Processed (Residue) Gas (mcf)	Royalties	1654697.42
-2004	CO	Mesa	08077	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3062342.49
-2004	CO	Mesa	08077	NGL	Gas Plant Products (gal)	Royalties	991380.17
-2004	CO	Mesa	08077	Oil	Condensate (bbl)	Royalties	3448.88
-2004	CO	Mesa	08077	Oil	Drip or Scrubber Condensate (bbl)	Royalties	1417
-2004	CO	Mesa	08077	Oil	Oil (bbl)	Royalties	2443.3
-2004	CO	Moffat	08081	Coal	Coal (ton)	Royalties	7589226
-2004	CO	Moffat	08081	Gas	Processed (Residue) Gas (mcf)	Royalties	6346208.37
-2004	CO	Moffat	08081	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	10425989.33
-2004	CO	Moffat	08081	NGL	Gas Plant Products (gal)	Royalties	1634165.57
-2004	CO	Moffat	08081	Oil	Condensate (bbl)	Royalties	53476.69
-2004	CO	Moffat	08081	Oil	Oil (bbl)	Royalties	199193.17
-2004	CO	Montezuma	08083	Gas	Processed (Residue) Gas (mcf)	Royalties	923499.62
-2004	CO	Montezuma	08083	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	38224.03
-2004	CO	Montezuma	08083	NGL	Gas Plant Products (gal)	Royalties	3255634.74
-2004	CO	Montezuma	08083	Oil	Condensate (bbl)	Royalties	1860.35
-2004	CO	Montezuma	08083	Oil	Oil (bbl)	Royalties	235441.97
-2004	CO	Montezuma	08083	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	229045777.49
-2004	CO	Morgan	08087	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	36526
-2004	CO	Morgan	08087	Oil	Oil (bbl)	Royalties	1282.61
-2004	CO	Prowers	08099	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	36301.86
-2004	CO	Rio Blanco	08103	Coal	Coal (ton)	Royalties	2552763
-2004	CO	Rio Blanco	08103	Gas	Coal Bed Methane (mcf)	Royalties	8279.68
-2004	CO	Rio Blanco	08103	Gas	Processed (Residue) Gas (mcf)	Royalties	16316205.82
-2004	CO	Rio Blanco	08103	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	8936719.11
-2004	CO	Rio Blanco	08103	NGL	Gas Plant Products (gal)	Royalties	34848760.23
-2004	CO	Rio Blanco	08103	Oil	Condensate (bbl)	Royalties	58233.75
-2004	CO	Rio Blanco	08103	Oil	Drip or Scrubber Condensate (bbl)	Royalties	38916.28
-2004	CO	Rio Blanco	08103	Oil	Oil (bbl)	Royalties	2891742.46
-2004	CO	Rio Blanco	08103	Carbon Dioxide	Carbon Dioxide (ton)	Royalties	121
-2004	CO	Rio Blanco	08103	Soda Ash	Soda Ash (ton)	Royalties	188834
-2004	CO	Rio Blanco	08103	Sodium Bi-Carbonate	Sodium Bi-Carbonate (ton)	Royalties	135488
-2004	CO	Routt	08107	Coal	Coal (ton)	Royalties	821219
-2004	CO	Routt	08107	Oil	Oil (bbl)	Royalties	12664.99
-2004	CO	San Miguel	08113	Gas	Processed (Residue) Gas (mcf)	Royalties	239638.44
-2004	CO	San Miguel	08113	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	20199162.21
-2004	CO	San Miguel	08113	NGL	Gas Plant Products (gal)	Royalties	993703.94
-2004	CO	San Miguel	08113	Oil	Condensate (bbl)	Royalties	23226.37
-2004	CO	San Miguel	08113	Oil	Oil (bbl)	Royalties	390.69
-2004	CO	Washington	08121	Gas	Processed (Residue) Gas (mcf)	Royalties	14193
-2004	CO	Washington	08121	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	76770.59
-2004	CO	Washington	08121	Oil	Oil (bbl)	Royalties	12154.96
-2004	CO	Weld	08123	Gas	Processed (Residue) Gas (mcf)	Royalties	943677.04
-2004	CO	Weld	08123	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	961435.36
-2004	CO	Weld	08123	NGL	Gas Plant Products (gal)	Royalties	1432758.62
-2004	CO	Weld	08123	Oil	Condensate (bbl)	Royalties	6167.83
-2004	CO	Weld	08123	Oil	Oil (bbl)	Royalties	166850.31
-2004	CO	Yuma	08125	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1310883.07
-2005	CO	Arapahoe	08005	Oil	Condensate (bbl)	Royalties	23.81
-2005	CO	Arapahoe	08005	Oil	Oil (bbl)	Royalties	105.79
-2005	CO	Archuleta	08007	Gas	Coal Bed Methane (mcf)	Royalties	17215.82
-2005	CO	Archuleta	08007	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	264837
-2005	CO	Baca	08009	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	40332.92
-2005	CO	Baca	08009	Oil	Oil (bbl)	Royalties	37251.1
-2005	CO	Bent	08011	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	44697.31
-2005	CO	Bent	08011	Oil	Oil (bbl)	Royalties	6
-2005	CO	Broomfield	08014	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	376.3
-2005	CO	Broomfield	08014	Oil	Oil (bbl)	Royalties	20.69
-2005	CO	Cheyenne	08017	NGL	Gas Plant Products (gal)	Royalties	81871.33
-2005	CO	Cheyenne	08017	Oil	Oil (bbl)	Royalties	36140.2
-2005	CO	Delta	08029	Coal	Coal (ton)	Royalties	5392384.94
-2005	CO	Delta	08029	Gas	Processed (Residue) Gas (mcf)	Royalties	968
-2005	CO	Delta	08029	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1737.49
-2005	CO	Dolores	08033	Gas	Processed (Residue) Gas (mcf)	Royalties	284803.77
-2005	CO	Dolores	08033	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	149806.52
-2005	CO	Dolores	08033	NGL	Gas Plant Products (gal)	Royalties	1551866.72
-2005	CO	Dolores	08033	Oil	Condensate (bbl)	Royalties	241.43
-2005	CO	Dolores	08033	Oil	Oil (bbl)	Royalties	53461.15
-2005	CO	Dolores	08033	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	22701133.22
-2005	CO	Garfield	08045	Coal	Coal (ton)	Royalties	266352
-2005	CO	Garfield	08045	Gas	Coal Bed Methane (mcf)	Royalties	81528.42
-2005	CO	Garfield	08045	Gas	Processed (Residue) Gas (mcf)	Royalties	1456061.51
-2005	CO	Garfield	08045	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	91264715.55
-2005	CO	Garfield	08045	NGL	Gas Plant Products (gal)	Royalties	55822.26
-2005	CO	Garfield	08045	Oil	Condensate (bbl)	Royalties	240929.07
-2005	CO	Garfield	08045	Oil	Drip or Scrubber Condensate (bbl)	Royalties	146.8
-2005	CO	Garfield	08045	Oil	Oil (bbl)	Royalties	16937.46
-2005	CO	Garfield	08045	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	585249.28
-2005	CO	Gunnison	08051	Coal	Coal (ton)	Royalties	8557481.06
-2005	CO	Gunnison	08051	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	7639.64
-2005	CO	Huerfano	08055	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	10083951.98
-2005	CO	Jackson	08057	Oil	Oil (bbl)	Royalties	98045.1
-2005	CO	Jackson	08057	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	644136.15
-2005	CO	Kiowa	08061	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	21006
-2005	CO	Kiowa	08061	Oil	Oil (bbl)	Royalties	4190.36
-2005	CO	La Plata	08067	Coal	Coal (ton)	Royalties	70750
-2005	CO	La Plata	08067	Gas	Coal Bed Methane (mcf)	Royalties	6383784.48
-2005	CO	La Plata	08067	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	5003255.9
-2005	CO	Larimer	08069	Oil	Oil (bbl)	Royalties	1279.14
-2005	CO	Las Animas	08071	Gas	Processed (Residue) Gas (mcf)	Royalties	165532.96
-2005	CO	Las Animas	08071	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2475526.37
-2005	CO	Logan	08075	Oil	Oil (bbl)	Royalties	2191.69
-2005	CO	Mesa	08077	Gas	Coal Bed Methane (mcf)	Royalties	5137.56
-2005	CO	Mesa	08077	Gas	Processed (Residue) Gas (mcf)	Royalties	2315230.47
-2005	CO	Mesa	08077	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	4664462.69
-2005	CO	Mesa	08077	NGL	Gas Plant Products (gal)	Royalties	775919.88
-2005	CO	Mesa	08077	Oil	Condensate (bbl)	Royalties	10827.87
-2005	CO	Mesa	08077	Oil	Drip or Scrubber Condensate (bbl)	Royalties	131.11
-2005	CO	Mesa	08077	Oil	Oil (bbl)	Royalties	1420.96
-2005	CO	Moffat	08081	Coal	Coal (ton)	Royalties	7166224
-2005	CO	Moffat	08081	Gas	Fuel Gas (mcf)	Royalties	21
-2005	CO	Moffat	08081	Gas	Processed (Residue) Gas (mcf)	Royalties	5941884.96
-2005	CO	Moffat	08081	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	10362597.4
-2005	CO	Moffat	08081	NGL	Gas Plant Products (gal)	Royalties	2486096.67
-2005	CO	Moffat	08081	Oil	Condensate (bbl)	Royalties	57145.89
-2005	CO	Moffat	08081	Oil	Drip or Scrubber Condensate (bbl)	Royalties	212.41
-2005	CO	Moffat	08081	Oil	Oil (bbl)	Royalties	168685.3
-2005	CO	Montezuma	08083	Gas	Processed (Residue) Gas (mcf)	Royalties	814943.51
-2005	CO	Montezuma	08083	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	36708.85
-2005	CO	Montezuma	08083	NGL	Gas Plant Products (gal)	Royalties	2907374.86
-2005	CO	Montezuma	08083	Oil	Condensate (bbl)	Royalties	1731.85
-2005	CO	Montezuma	08083	Oil	Oil (bbl)	Royalties	1264520.28
-2005	CO	Montezuma	08083	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	252106076.51
-2005	CO	Morgan	08087	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2924
-2005	CO	Morgan	08087	Oil	Oil (bbl)	Royalties	1363.47
-2005	CO	Prowers	08099	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	9168.66
-2005	CO	Rio Blanco	08103	Coal	Coal (ton)	Royalties	2141549
-2005	CO	Rio Blanco	08103	Gas	Coal Bed Methane (mcf)	Royalties	57774
-2005	CO	Rio Blanco	08103	Gas	Fuel Gas (mcf)	Royalties	35507.08
-2005	CO	Rio Blanco	08103	Gas	Processed (Residue) Gas (mcf)	Royalties	18713395.37
-2005	CO	Rio Blanco	08103	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	11545433.5
-2005	CO	Rio Blanco	08103	NGL	Gas Plant Products (gal)	Royalties	35337308.81
-2005	CO	Rio Blanco	08103	Oil	Condensate (bbl)	Royalties	67237.67
-2005	CO	Rio Blanco	08103	Oil	Oil (bbl)	Royalties	2968361.01
-2005	CO	Rio Blanco	08103	Sodium Bi-Carbonate	Sodium Bi-Carbonate (ton)	Royalties	87749
-2005	CO	Routt	08107	Coal	Coal (ton)	Royalties	685131
-2005	CO	Routt	08107	Oil	Oil (bbl)	Royalties	13005.45
-2005	CO	San Miguel	08113	Gas	Processed (Residue) Gas (mcf)	Royalties	167029.03
-2005	CO	San Miguel	08113	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	18185301.66
-2005	CO	San Miguel	08113	NGL	Gas Plant Products (gal)	Royalties	694317.94
-2005	CO	San Miguel	08113	Oil	Condensate (bbl)	Royalties	12626.06
-2005	CO	San Miguel	08113	Oil	Oil (bbl)	Royalties	203.92
-2005	CO	Washington	08121	Gas	Processed (Residue) Gas (mcf)	Royalties	11823
-2005	CO	Washington	08121	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	67663.64
-2005	CO	Washington	08121	Oil	Oil (bbl)	Royalties	11192.38
-2005	CO	Weld	08123	Gas	Processed (Residue) Gas (mcf)	Royalties	1035430.15
-2005	CO	Weld	08123	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	724935.7
-2005	CO	Weld	08123	NGL	Gas Plant Products (gal)	Royalties	1781098.48
-2005	CO	Weld	08123	Oil	Condensate (bbl)	Royalties	7167.75
-2005	CO	Weld	08123	Oil	Oil (bbl)	Royalties	212907.13
-2005	CO	Yuma	08125	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	15099089.64
-2006	CO	Arapahoe	08005	Oil	Condensate (bbl)	Royalties	11.85
-2006	CO	Arapahoe	08005	Oil	Oil (bbl)	Royalties	71.2
-2006	CO	Archuleta	08007	Gas	Coal Bed Methane (mcf)	Royalties	13542.39
-2006	CO	Archuleta	08007	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	246676.49
-2006	CO	Baca	08009	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	45199.36
-2006	CO	Baca	08009	Oil	Oil (bbl)	Royalties	30208.45
-2006	CO	Bent	08011	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	43543.34
-2006	CO	Bent	08011	Oil	Oil (bbl)	Royalties	15
-2006	CO	Broomfield	08014	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	495.97
-2006	CO	Broomfield	08014	Oil	Oil (bbl)	Royalties	21.45
-2006	CO	Cheyenne	08017	NGL	Gas Plant Products (gal)	Royalties	87781.98
-2006	CO	Cheyenne	08017	Oil	Oil (bbl)	Royalties	20487.88
-2006	CO	Delta	08029	Coal	Coal (ton)	Royalties	5476711.58
-2006	CO	Delta	08029	Gas	Processed (Residue) Gas (mcf)	Royalties	6445
-2006	CO	Delta	08029	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	204.91
-2006	CO	Delta	08029	Oil	Condensate (bbl)	Royalties	87.42
-2006	CO	Dolores	08033	Gas	Processed (Residue) Gas (mcf)	Royalties	570744.72
-2006	CO	Dolores	08033	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	175490.34
-2006	CO	Dolores	08033	NGL	Gas Plant Products (gal)	Royalties	2002319.11
-2006	CO	Dolores	08033	Oil	Condensate (bbl)	Royalties	149.37
-2006	CO	Dolores	08033	Oil	Oil (bbl)	Royalties	48548.55
-2006	CO	Dolores	08033	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	22789428.86
-2006	CO	Garfield	08045	Coal	Coal (ton)	Royalties	261783
-2006	CO	Garfield	08045	Gas	Coal Bed Methane (mcf)	Royalties	43003.98
-2006	CO	Garfield	08045	Gas	Fuel Gas (mcf)	Royalties	950.88
-2006	CO	Garfield	08045	Gas	Processed (Residue) Gas (mcf)	Royalties	10985298.56
-2006	CO	Garfield	08045	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	94566266.1
-2006	CO	Garfield	08045	NGL	Gas Plant Products (gal)	Royalties	2101708.33
-2006	CO	Garfield	08045	Oil	Condensate (bbl)	Royalties	253351.75
-2006	CO	Garfield	08045	Oil	Drip or Scrubber Condensate (bbl)	Royalties	8345.86
-2006	CO	Garfield	08045	Oil	Inlet Scrubber (bbl)	Royalties	0.48
-2006	CO	Garfield	08045	Oil	Oil (bbl)	Royalties	57735.68
-2006	CO	Garfield	08045	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	590058.84
-2006	CO	Gunnison	08051	Coal	Coal (ton)	Royalties	7552580.42
-2006	CO	Gunnison	08051	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	23797.75
-2006	CO	Gunnison	08051	Oil	Condensate (bbl)	Royalties	204.86
-2006	CO	Huerfano	08055	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	8612384.42
-2006	CO	Jackson	08057	Oil	Oil (bbl)	Royalties	95455.45
-2006	CO	Jackson	08057	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	511925.56
-2006	CO	Kiowa	08061	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	19989.43
-2006	CO	Kiowa	08061	Oil	Oil (bbl)	Royalties	3810.65
-2006	CO	La Plata	08067	Coal	Coal (ton)	Royalties	82621
-2006	CO	La Plata	08067	Gas	Coal Bed Methane (mcf)	Royalties	4588159.72
-2006	CO	La Plata	08067	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	7294335.71
-2006	CO	Larimer	08069	Oil	Oil (bbl)	Royalties	1376.66
-2006	CO	Las Animas	08071	Gas	Coal Bed Methane (mcf)	Royalties	2768108.39
-2006	CO	Las Animas	08071	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	124505.09
-2006	CO	Logan	08075	Oil	Oil (bbl)	Royalties	2305.64
-2006	CO	Mesa	08077	Gas	Coal Bed Methane (mcf)	Royalties	1441.88
-2006	CO	Mesa	08077	Gas	Processed (Residue) Gas (mcf)	Royalties	3205197.75
-2006	CO	Mesa	08077	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	6615458.84
-2006	CO	Mesa	08077	NGL	Gas Plant Products (gal)	Royalties	650743.44
-2006	CO	Mesa	08077	Oil	Condensate (bbl)	Royalties	17535.61
-2006	CO	Mesa	08077	Oil	Drip or Scrubber Condensate (bbl)	Royalties	815.07
-2006	CO	Mesa	08077	Oil	Oil (bbl)	Royalties	1479.56
-2006	CO	Moffat	08081	Coal	Coal (ton)	Royalties	7989261
-2006	CO	Moffat	08081	Gas	Processed (Residue) Gas (mcf)	Royalties	7054644.15
-2006	CO	Moffat	08081	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	10933209.98
-2006	CO	Moffat	08081	NGL	Gas Plant Products (gal)	Royalties	4595293.22
-2006	CO	Moffat	08081	Oil	Condensate (bbl)	Royalties	45864.44
-2006	CO	Moffat	08081	Oil	Oil (bbl)	Royalties	172636.94
-2006	CO	Montezuma	08083	Gas	Processed (Residue) Gas (mcf)	Royalties	580440.36
-2006	CO	Montezuma	08083	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	26575.38
-2006	CO	Montezuma	08083	NGL	Gas Plant Products (gal)	Royalties	2482023.8
-2006	CO	Montezuma	08083	Oil	Condensate (bbl)	Royalties	2836.3
-2006	CO	Montezuma	08083	Oil	Oil (bbl)	Royalties	1443777.35
-2006	CO	Montezuma	08083	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	252319053.73
-2006	CO	Morgan	08087	Oil	Oil (bbl)	Royalties	1282.31
-2006	CO	Prowers	08099	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	40183.16
-2006	CO	Rio Blanco	08103	Coal	Coal (ton)	Royalties	1723125
-2006	CO	Rio Blanco	08103	Gas	Coal Bed Methane (mcf)	Royalties	254223.64
-2006	CO	Rio Blanco	08103	Gas	Fuel Gas (mcf)	Royalties	31467.2
-2006	CO	Rio Blanco	08103	Gas	Processed (Residue) Gas (mcf)	Royalties	21783127.96
-2006	CO	Rio Blanco	08103	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	13047623.76
-2006	CO	Rio Blanco	08103	NGL	Gas Plant Products (gal)	Royalties	33806645.59
-2006	CO	Rio Blanco	08103	Oil	Condensate (bbl)	Royalties	93014.26
-2006	CO	Rio Blanco	08103	Oil	Drip or Scrubber Condensate (bbl)	Royalties	1116.24
-2006	CO	Rio Blanco	08103	Oil	Oil (bbl)	Royalties	2975060.31
-2006	CO	Rio Blanco	08103	Sodium Bi-Carbonate	Sodium Bi-Carbonate (ton)	Royalties	94958
-2006	CO	Routt	08107	Coal	Coal (ton)	Royalties	55171
-2006	CO	Routt	08107	Oil	Oil (bbl)	Royalties	12529.49
-2006	CO	San Miguel	08113	Gas	Processed (Residue) Gas (mcf)	Royalties	129233.32
-2006	CO	San Miguel	08113	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	17355738.29
-2006	CO	San Miguel	08113	NGL	Gas Plant Products (gal)	Royalties	519148.02
-2006	CO	San Miguel	08113	Oil	Condensate (bbl)	Royalties	5793.57
-2006	CO	Washington	08121	Gas	Processed (Residue) Gas (mcf)	Royalties	9410
-2006	CO	Washington	08121	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	82124
-2006	CO	Washington	08121	Oil	Oil (bbl)	Royalties	9231.87
-2006	CO	Weld	08123	Gas	Processed (Residue) Gas (mcf)	Royalties	848365.54
-2006	CO	Weld	08123	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	546001.14
-2006	CO	Weld	08123	NGL	Gas Plant Products (gal)	Royalties	1919992.53
-2006	CO	Weld	08123	Oil	Condensate (bbl)	Royalties	10450.65
-2006	CO	Weld	08123	Oil	Oil (bbl)	Royalties	137962.46
-2006	CO	Yuma	08125	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1529773.63
-2007	CO	Arapahoe	08005	Oil	Condensate (bbl)	Royalties	23.33
-2007	CO	Arapahoe	08005	Oil	Oil (bbl)	Royalties	70.78
-2007	CO	Archuleta	08007	Gas	Coal Bed Methane (mcf)	Royalties	31393.57
-2007	CO	Archuleta	08007	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	228126
-2007	CO	Baca	08009	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	43942.54
-2007	CO	Baca	08009	Oil	Oil (bbl)	Royalties	25516.73
-2007	CO	Bent	08011	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	41950
-2007	CO	Broomfield	08014	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	272.6
-2007	CO	Broomfield	08014	Oil	Oil (bbl)	Royalties	14.25
-2007	CO	Cheyenne	08017	NGL	Gas Plant Products (gal)	Royalties	58057.73
-2007	CO	Cheyenne	08017	Oil	Oil (bbl)	Royalties	8943.98
-2007	CO	Delta	08029	Coal	Coal (ton)	Royalties	5091997.49
-2007	CO	Delta	08029	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	14449.79
-2007	CO	Delta	08029	NGL	Gas Plant Products (gal)	Royalties	5485.32
-2007	CO	Dolores	08033	Gas	Processed (Residue) Gas (mcf)	Royalties	651667.91
-2007	CO	Dolores	08033	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	204492
-2007	CO	Dolores	08033	NGL	Gas Plant Products (gal)	Royalties	1696155.73
-2007	CO	Dolores	08033	Oil	Condensate (bbl)	Royalties	394.33
-2007	CO	Dolores	08033	Oil	Oil (bbl)	Royalties	46932.78
-2007	CO	Dolores	08033	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	22725368.07
-2007	CO	Garfield	08045	Coal	Coal (ton)	Royalties	243749
-2007	CO	Garfield	08045	Gas	Coal Bed Methane (mcf)	Royalties	34892.06
-2007	CO	Garfield	08045	Gas	Fuel Gas (mcf)	Royalties	996.16
-2007	CO	Garfield	08045	Gas	Processed (Residue) Gas (mcf)	Royalties	39525739.94
-2007	CO	Garfield	08045	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	77187868.28
-2007	CO	Garfield	08045	NGL	Gas Plant Products (gal)	Royalties	8530424.28
-2007	CO	Garfield	08045	Oil	Condensate (bbl)	Royalties	310883.2
-2007	CO	Garfield	08045	Oil	Drip or Scrubber Condensate (bbl)	Royalties	846.73
-2007	CO	Garfield	08045	Oil	Inlet Scrubber (bbl)	Royalties	3555
-2007	CO	Garfield	08045	Oil	Oil (bbl)	Royalties	83369.94
-2007	CO	Garfield	08045	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	618539.92
-2007	CO	Gunnison	08051	Coal	Coal (ton)	Royalties	8005380.51
-2007	CO	Gunnison	08051	Gas	Coal Bed Methane (mcf)	Royalties	151149
-2007	CO	Gunnison	08051	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	18425.25
-2007	CO	Gunnison	08051	NGL	Gas Plant Products (gal)	Royalties	12180.46
-2007	CO	Gunnison	08051	Oil	Condensate (bbl)	Royalties	22.14
-2007	CO	Huerfano	08055	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	7550432.34
-2007	CO	Jackson	08057	Oil	Oil (bbl)	Royalties	85836.01
-2007	CO	Jackson	08057	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	689202.47
-2007	CO	Kiowa	08061	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	21956.01
-2007	CO	Kiowa	08061	Oil	Oil (bbl)	Royalties	3502.88
-2007	CO	La Plata	08067	Coal	Coal (ton)	Royalties	143747
-2007	CO	La Plata	08067	Gas	Coal Bed Methane (mcf)	Royalties	5925694.61
-2007	CO	La Plata	08067	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	5298341.89
-2007	CO	Larimer	08069	Oil	Oil (bbl)	Royalties	1449.79
-2007	CO	Las Animas	08071	Gas	Coal Bed Methane (mcf)	Royalties	22133716.93
-2007	CO	Las Animas	08071	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	40869.67
-2007	CO	Las Animas	08071	Oil	Oil (bbl)	Royalties	561.31
-2007	CO	Logan	08075	Oil	Oil (bbl)	Royalties	2801.25
-2007	CO	Mesa	08077	Gas	Coal Bed Methane (mcf)	Royalties	30.19
-2007	CO	Mesa	08077	Gas	Processed (Residue) Gas (mcf)	Royalties	8548730.03
-2007	CO	Mesa	08077	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	8842628.84
-2007	CO	Mesa	08077	NGL	Gas Plant Products (gal)	Royalties	1842897.12
-2007	CO	Mesa	08077	Oil	Condensate (bbl)	Royalties	28686.05
-2007	CO	Mesa	08077	Oil	Drip or Scrubber Condensate (bbl)	Royalties	5085.7
-2007	CO	Mesa	08077	Oil	Oil (bbl)	Royalties	1633.26
-2007	CO	Moffat	08081	Coal	Coal (ton)	Royalties	7141125
-2007	CO	Moffat	08081	Gas	Coal Bed Methane (mcf)	Royalties	865.23
-2007	CO	Moffat	08081	Gas	Fuel Gas (mcf)	Royalties	311.2
-2007	CO	Moffat	08081	Gas	Processed (Residue) Gas (mcf)	Royalties	6755085.92
-2007	CO	Moffat	08081	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	7896374.09
-2007	CO	Moffat	08081	NGL	Gas Plant Products (gal)	Royalties	6746569.2
-2007	CO	Moffat	08081	Oil	Condensate (bbl)	Royalties	49942.91
-2007	CO	Moffat	08081	Oil	Drip or Scrubber Condensate (bbl)	Royalties	1262.35
-2007	CO	Moffat	08081	Oil	Oil (bbl)	Royalties	162460.09
-2007	CO	Montezuma	08083	Gas	Processed (Residue) Gas (mcf)	Royalties	314265.14
-2007	CO	Montezuma	08083	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	213339.8
-2007	CO	Montezuma	08083	NGL	Gas Plant Products (gal)	Royalties	1607351.25
-2007	CO	Montezuma	08083	Oil	Condensate (bbl)	Royalties	1341.85
-2007	CO	Montezuma	08083	Oil	Oil (bbl)	Royalties	715268.02
-2007	CO	Montezuma	08083	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	251023991.63
-2007	CO	Morgan	08087	Oil	Oil (bbl)	Royalties	1260.13
-2007	CO	Prowers	08099	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	21020.65
-2007	CO	Rio Blanco	08103	Coal	Coal (ton)	Royalties	1458646
-2007	CO	Rio Blanco	08103	Gas	Coal Bed Methane (mcf)	Royalties	121526.11
-2007	CO	Rio Blanco	08103	Gas	Fuel Gas (mcf)	Royalties	57377.12
-2007	CO	Rio Blanco	08103	Gas	Gas Lost - Flared or Vented (mcf)	Royalties	1210
-2007	CO	Rio Blanco	08103	Gas	Processed (Residue) Gas (mcf)	Royalties	25694665.47
-2007	CO	Rio Blanco	08103	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	13059098.77
-2007	CO	Rio Blanco	08103	NGL	Gas Plant Products (gal)	Royalties	34177094.63
-2007	CO	Rio Blanco	08103	Oil	Condensate (bbl)	Royalties	111849.98
-2007	CO	Rio Blanco	08103	Oil	Drip or Scrubber Condensate (bbl)	Royalties	2141.46
-2007	CO	Rio Blanco	08103	Oil	Inlet Scrubber (bbl)	Royalties	203.2
-2007	CO	Rio Blanco	08103	Oil	Oil (bbl)	Royalties	2928509.27
-2007	CO	Rio Blanco	08103	Sodium Bi-Carbonate	Sodium Bi-Carbonate (ton)	Royalties	102617
-2007	CO	Routt	08107	Oil	Oil (bbl)	Royalties	12504.55
-2007	CO	San Miguel	08113	Gas	Processed (Residue) Gas (mcf)	Royalties	4400.43
-2007	CO	San Miguel	08113	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	13053007.81
-2007	CO	San Miguel	08113	NGL	Gas Plant Products (gal)	Royalties	16301.76
-2007	CO	San Miguel	08113	Oil	Condensate (bbl)	Royalties	4494.28
-2007	CO	Washington	08121	Gas	Processed (Residue) Gas (mcf)	Royalties	8688
-2007	CO	Washington	08121	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	95955.43
-2007	CO	Washington	08121	Oil	Oil (bbl)	Royalties	10285.59
-2007	CO	Weld	08123	Gas	Processed (Residue) Gas (mcf)	Royalties	701147.32
-2007	CO	Weld	08123	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	375112.62
-2007	CO	Weld	08123	NGL	Gas Plant Products (gal)	Royalties	2261063.9
-2007	CO	Weld	08123	Oil	Condensate (bbl)	Royalties	12278.5
-2007	CO	Weld	08123	Oil	Oil (bbl)	Royalties	86213.3
-2007	CO	Yuma	08125	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2165897.52
-2008	CO	Arapahoe	08005	Oil	Condensate (bbl)	Royalties	17.38
-2008	CO	Arapahoe	08005	Oil	Oil (bbl)	Royalties	47.13
-2008	CO	Archuleta	08007	Gas	Coal Bed Methane (mcf)	Royalties	59661.6
-2008	CO	Archuleta	08007	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	199849
-2008	CO	Baca	08009	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	55156.09
-2008	CO	Baca	08009	Oil	Oil (bbl)	Royalties	24802.34
-2008	CO	Bent	08011	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	38263.09
-2008	CO	Broomfield	08014	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	268.14
-2008	CO	Broomfield	08014	Oil	Oil (bbl)	Royalties	10.52
-2008	CO	Cheyenne	08017	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	690.6
-2008	CO	Cheyenne	08017	NGL	Gas Plant Products (gal)	Royalties	210315.37
-2008	CO	Cheyenne	08017	Oil	Oil (bbl)	Royalties	237192.06
-2008	CO	Delta	08029	Coal	Coal (ton)	Royalties	5445483.6
-2008	CO	Delta	08029	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	27790.22
-2008	CO	Delta	08029	NGL	Gas Plant Products (gal)	Royalties	24580.8
-2008	CO	Dolores	08033	Gas	Processed (Residue) Gas (mcf)	Royalties	173364.04
-2008	CO	Dolores	08033	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	491047.1
-2008	CO	Dolores	08033	NGL	Gas Plant Products (gal)	Royalties	672154.86
-2008	CO	Dolores	08033	Oil	Condensate (bbl)	Royalties	331.29
-2008	CO	Dolores	08033	Oil	Oil (bbl)	Royalties	37589.55
-2008	CO	Dolores	08033	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	53725632.02
-2008	CO	Garfield	08045	Coal	Coal (ton)	Royalties	279132
-2008	CO	Garfield	08045	Gas	Coal Bed Methane (mcf)	Royalties	34791.58
-2008	CO	Garfield	08045	Gas	Fuel Gas (mcf)	Royalties	1888.56
-2008	CO	Garfield	08045	Gas	Processed (Residue) Gas (mcf)	Royalties	103981411.71
-2008	CO	Garfield	08045	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	38271313.94
-2008	CO	Garfield	08045	NGL	Gas Plant Products (gal)	Royalties	89379114.95
-2008	CO	Garfield	08045	Oil	Condensate (bbl)	Royalties	394728.03
-2008	CO	Garfield	08045	Oil	Drip or Scrubber Condensate (bbl)	Royalties	8014.93
-2008	CO	Garfield	08045	Oil	Inlet Scrubber (bbl)	Royalties	15126.63
-2008	CO	Garfield	08045	Oil	Oil (bbl)	Royalties	108307.66
-2008	CO	Garfield	08045	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	762977.3
-2008	CO	Gunnison	08051	Coal	Coal (ton)	Royalties	7314892.4
-2008	CO	Gunnison	08051	Gas	Coal Bed Methane (mcf)	Royalties	309299
-2008	CO	Gunnison	08051	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	82445.46
-2008	CO	Gunnison	08051	NGL	Gas Plant Products (gal)	Royalties	70713.66
-2008	CO	Huerfano	08055	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	7286468.6
-2008	CO	Jackson	08057	Oil	Oil (bbl)	Royalties	82889.65
-2008	CO	Jackson	08057	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	737612.51
-2008	CO	Kiowa	08061	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	18263.46
-2008	CO	Kiowa	08061	Oil	Oil (bbl)	Royalties	2719.85
-2008	CO	La Plata	08067	Coal	Coal (ton)	Royalties	199042
-2008	CO	La Plata	08067	Gas	Coal Bed Methane (mcf)	Royalties	6225332.54
-2008	CO	La Plata	08067	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	4879188.33
-2008	CO	Larimer	08069	Oil	Oil (bbl)	Royalties	1436.06
-2008	CO	Las Animas	08071	Gas	Coal Bed Methane (mcf)	Royalties	4306373.14
-2008	CO	Las Animas	08071	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	277241.15
-2008	CO	Las Animas	08071	Oil	Oil (bbl)	Royalties	2628.89
-2008	CO	Logan	08075	Oil	Oil (bbl)	Royalties	2785.4
-2008	CO	Mesa	08077	Gas	Fuel Gas (mcf)	Royalties	6271.08
-2008	CO	Mesa	08077	Gas	Processed (Residue) Gas (mcf)	Royalties	12161518.9
-2008	CO	Mesa	08077	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	9710114.56
-2008	CO	Mesa	08077	NGL	Gas Plant Products (gal)	Royalties	11764649.06
-2008	CO	Mesa	08077	Oil	Condensate (bbl)	Royalties	20324.53
-2008	CO	Mesa	08077	Oil	Drip or Scrubber Condensate (bbl)	Royalties	9583.46
-2008	CO	Mesa	08077	Oil	Oil (bbl)	Royalties	17585.52
-2008	CO	Moffat	08081	Coal	Coal (ton)	Royalties	5375067
-2008	CO	Moffat	08081	Gas	Coal Bed Methane (mcf)	Royalties	4359.19
-2008	CO	Moffat	08081	Gas	Fuel Gas (mcf)	Royalties	3752.64
-2008	CO	Moffat	08081	Gas	Processed (Residue) Gas (mcf)	Royalties	4326036.34
-2008	CO	Moffat	08081	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	12347794.9
-2008	CO	Moffat	08081	NGL	Gas Plant Products (gal)	Royalties	4464510.37
-2008	CO	Moffat	08081	Oil	Condensate (bbl)	Royalties	72567.8
-2008	CO	Moffat	08081	Oil	Drip or Scrubber Condensate (bbl)	Royalties	2048.4
-2008	CO	Moffat	08081	Oil	Oil (bbl)	Royalties	143236.34
-2008	CO	Montezuma	08083	Gas	Processed (Residue) Gas (mcf)	Royalties	187490.88
-2008	CO	Montezuma	08083	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	186321.86
-2008	CO	Montezuma	08083	NGL	Gas Plant Products (gal)	Royalties	1204153.4
-2008	CO	Montezuma	08083	Oil	Condensate (bbl)	Royalties	370.08
-2008	CO	Montezuma	08083	Oil	Oil (bbl)	Royalties	293473.03
-2008	CO	Montezuma	08083	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	264072999.29
-2008	CO	Morgan	08087	Oil	Oil (bbl)	Royalties	1423.94
-2008	CO	Prowers	08099	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	27425.21
-2008	CO	Rio Blanco	08103	Coal	Coal (ton)	Royalties	3171674
-2008	CO	Rio Blanco	08103	Gas	Coal Bed Methane (mcf)	Royalties	139145.08
-2008	CO	Rio Blanco	08103	Gas	Fuel Gas (mcf)	Royalties	26650.4
-2008	CO	Rio Blanco	08103	Gas	Gas Lost - Flared or Vented (mcf)	Royalties	695
-2008	CO	Rio Blanco	08103	Gas	Processed (Residue) Gas (mcf)	Royalties	32579619.33
-2008	CO	Rio Blanco	08103	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	11132731.71
-2008	CO	Rio Blanco	08103	NGL	Gas Plant Products (gal)	Royalties	37070528.7
-2008	CO	Rio Blanco	08103	Oil	Condensate (bbl)	Royalties	154860.51
-2008	CO	Rio Blanco	08103	Oil	Drip or Scrubber Condensate (bbl)	Royalties	268.42
-2008	CO	Rio Blanco	08103	Oil	Inlet Scrubber (bbl)	Royalties	2385.86
-2008	CO	Rio Blanco	08103	Oil	Oil (bbl)	Royalties	2774941.14
-2008	CO	Rio Blanco	08103	Sodium Bi-Carbonate	Sodium Bi-Carbonate (ton)	Royalties	102298
-2008	CO	Routt	08107	Coal	Coal (ton)	Royalties	19906
-2008	CO	Routt	08107	Oil	Oil (bbl)	Royalties	13607.72
-2008	CO	San Miguel	08113	Gas	Fuel Gas (mcf)	Royalties	12936
-2008	CO	San Miguel	08113	Gas	Processed (Residue) Gas (mcf)	Royalties	63847.48
-2008	CO	San Miguel	08113	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	13685266.64
-2008	CO	San Miguel	08113	NGL	Gas Plant Products (gal)	Royalties	219788.18
-2008	CO	San Miguel	08113	Oil	Condensate (bbl)	Royalties	5613.38
-2008	CO	San Miguel	08113	Oil	Oil (bbl)	Royalties	149.04
-2008	CO	Washington	08121	Gas	Processed (Residue) Gas (mcf)	Royalties	4931
-2008	CO	Washington	08121	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	77176.07
-2008	CO	Washington	08121	Oil	Oil (bbl)	Royalties	6490.68
-2008	CO	Weld	08123	Gas	Processed (Residue) Gas (mcf)	Royalties	1163976.09
-2008	CO	Weld	08123	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	413303.01
-2008	CO	Weld	08123	NGL	Gas Plant Products (gal)	Royalties	3272863.06
-2008	CO	Weld	08123	Oil	Condensate (bbl)	Royalties	103164.66
-2008	CO	Weld	08123	Oil	Oil (bbl)	Royalties	86069.32
-2008	CO	Yuma	08125	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1736238.19
-2009	CO	Arapahoe	08005	Oil	Condensate (bbl)	Royalties	33.54
-2009	CO	Arapahoe	08005	Oil	Oil (bbl)	Royalties	52.08
-2009	CO	Archuleta	08007	Gas	Coal Bed Methane (mcf)	Royalties	49157.73
-2009	CO	Archuleta	08007	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	250977
-2009	CO	Baca	08009	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	46312.45
-2009	CO	Baca	08009	Oil	Oil (bbl)	Royalties	25873.28
-2009	CO	Bent	08011	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	35193
-2009	CO	Broomfield	08014	Gas	Processed (Residue) Gas (mcf)	Royalties	144
-2009	CO	Broomfield	08014	NGL	Gas Plant Products (gal)	Royalties	532.34
-2009	CO	Broomfield	08014	Oil	Oil (bbl)	Royalties	18.79
-2009	CO	Cheyenne	08017	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	58
-2009	CO	Cheyenne	08017	NGL	Gas Plant Products (gal)	Royalties	284890.5
-2009	CO	Cheyenne	08017	Oil	Oil (bbl)	Royalties	389876.87
-2009	CO	Delta	08029	Coal	Coal (ton)	Royalties	3298644
-2009	CO	Delta	08029	Gas	Coal Bed Methane (mcf)	Royalties	10728
-2009	CO	Delta	08029	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1370.56
-2009	CO	Delta	08029	NGL	Gas Plant Products (gal)	Royalties	1222.1
-2009	CO	Dolores	08033	Gas	Processed (Residue) Gas (mcf)	Royalties	63133.27
-2009	CO	Dolores	08033	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	429115.4
-2009	CO	Dolores	08033	NGL	Gas Plant Products (gal)	Royalties	248810.94
-2009	CO	Dolores	08033	Oil	Condensate (bbl)	Royalties	200.81
-2009	CO	Dolores	08033	Oil	Oil (bbl)	Royalties	32003.11
-2009	CO	Dolores	08033	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	59249537.52
-2009	CO	Garfield	08045	Coal	Coal (ton)	Royalties	99832
-2009	CO	Garfield	08045	Gas	Coal Bed Methane (mcf)	Royalties	27541.99
-2009	CO	Garfield	08045	Gas	Fuel Gas (mcf)	Royalties	57345.38
-2009	CO	Garfield	08045	Gas	Processed (Residue) Gas (mcf)	Royalties	108971840.62
-2009	CO	Garfield	08045	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	35576836.99
-2009	CO	Garfield	08045	NGL	Gas Plant Products (gal)	Royalties	163706429.78
-2009	CO	Garfield	08045	Oil	Condensate (bbl)	Royalties	390571.76
-2009	CO	Garfield	08045	Oil	Drip or Scrubber Condensate (bbl)	Royalties	13875.61
-2009	CO	Garfield	08045	Oil	Inlet Scrubber (bbl)	Royalties	3386.63
-2009	CO	Garfield	08045	Oil	Oil (bbl)	Royalties	137497.26
-2009	CO	Garfield	08045	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	635018.01
-2009	CO	Gunnison	08051	Coal	Coal (ton)	Royalties	6196222
-2009	CO	Gunnison	08051	Gas	Coal Bed Methane (mcf)	Royalties	465482.85
-2009	CO	Gunnison	08051	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	22556.68
-2009	CO	Gunnison	08051	NGL	Gas Plant Products (gal)	Royalties	4970.43
-2009	CO	Huerfano	08055	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	7460976
-2009	CO	Jackson	08057	Oil	Oil (bbl)	Royalties	79830.91
-2009	CO	Jackson	08057	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	239948.31
-2009	CO	Kiowa	08061	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	13270.81
-2009	CO	Kiowa	08061	Oil	Oil (bbl)	Royalties	3330.46
-2009	CO	La Plata	08067	Coal	Coal (ton)	Royalties	303163
-2009	CO	La Plata	08067	Gas	Coal Bed Methane (mcf)	Royalties	7402881.43
-2009	CO	La Plata	08067	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	4569782.47
-2009	CO	Larimer	08069	Oil	Oil (bbl)	Royalties	1477.61
-2009	CO	Las Animas	08071	Gas	Coal Bed Methane (mcf)	Royalties	4035468.41
-2009	CO	Logan	08075	Oil	Oil (bbl)	Royalties	1683.5
-2009	CO	Mesa	08077	Gas	Coal Bed Methane (mcf)	Royalties	1201.15
-2009	CO	Mesa	08077	Gas	Processed (Residue) Gas (mcf)	Royalties	12577997.19
-2009	CO	Mesa	08077	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	4145147.31
-2009	CO	Mesa	08077	NGL	Gas Plant Products (gal)	Royalties	9297127.38
-2009	CO	Mesa	08077	Oil	Condensate (bbl)	Royalties	33448.68
-2009	CO	Mesa	08077	Oil	Drip or Scrubber Condensate (bbl)	Royalties	434.56
-2009	CO	Mesa	08077	Oil	Oil (bbl)	Royalties	16374.71
-2009	CO	Moffat	08081	Coal	Coal (ton)	Royalties	4078682
-2009	CO	Moffat	08081	Gas	Processed (Residue) Gas (mcf)	Royalties	3886091.66
-2009	CO	Moffat	08081	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	10578392.01
-2009	CO	Moffat	08081	NGL	Gas Plant Products (gal)	Royalties	4241755.72
-2009	CO	Moffat	08081	Oil	Condensate (bbl)	Royalties	74602.6
-2009	CO	Moffat	08081	Oil	Drip or Scrubber Condensate (bbl)	Royalties	827.52
-2009	CO	Moffat	08081	Oil	Oil (bbl)	Royalties	164204.21
-2009	CO	Montezuma	08083	Gas	Processed (Residue) Gas (mcf)	Royalties	153312.94
-2009	CO	Montezuma	08083	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	101300.52
-2009	CO	Montezuma	08083	NGL	Gas Plant Products (gal)	Royalties	970954.94
-2009	CO	Montezuma	08083	Oil	Condensate (bbl)	Royalties	193.56
-2009	CO	Montezuma	08083	Oil	Oil (bbl)	Royalties	128796.45
-2009	CO	Montezuma	08083	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	292884534.83
-2009	CO	Morgan	08087	Oil	Oil (bbl)	Royalties	1248.52
-2009	CO	Prowers	08099	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	9113.53
-2009	CO	Rio Blanco	08103	Coal	Coal (ton)	Royalties	2952601
-2009	CO	Rio Blanco	08103	Gas	Coal Bed Methane (mcf)	Royalties	-4685.76
-2009	CO	Rio Blanco	08103	Gas	Fuel Gas (mcf)	Royalties	36581.04
-2009	CO	Rio Blanco	08103	Gas	Processed (Residue) Gas (mcf)	Royalties	50614560.19
-2009	CO	Rio Blanco	08103	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	9983832.38
-2009	CO	Rio Blanco	08103	NGL	Gas Plant Products (gal)	Royalties	48266366.09
-2009	CO	Rio Blanco	08103	Oil	Condensate (bbl)	Royalties	181080.47
-2009	CO	Rio Blanco	08103	Oil	Drip or Scrubber Condensate (bbl)	Royalties	33557.95
-2009	CO	Rio Blanco	08103	Oil	Inlet Scrubber (bbl)	Royalties	1269.12
-2009	CO	Rio Blanco	08103	Oil	Oil (bbl)	Royalties	2522306.72
-2009	CO	Rio Blanco	08103	Sodium Bi-Carbonate	Sodium Bi-Carbonate (ton)	Royalties	95625
-2009	CO	Routt	08107	Coal	Coal (ton)	Royalties	731015
-2009	CO	Routt	08107	Oil	Oil (bbl)	Royalties	14440.77
-2009	CO	San Miguel	08113	Gas	Fuel Gas (mcf)	Royalties	19875
-2009	CO	San Miguel	08113	Gas	Processed (Residue) Gas (mcf)	Royalties	173752.05
-2009	CO	San Miguel	08113	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	8526243.1
-2009	CO	San Miguel	08113	NGL	Gas Plant Products (gal)	Royalties	689289.19
-2009	CO	San Miguel	08113	Oil	Condensate (bbl)	Royalties	4934.2
-2009	CO	Washington	08121	Gas	Processed (Residue) Gas (mcf)	Royalties	6800
-2009	CO	Washington	08121	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	89696.02
-2009	CO	Washington	08121	Oil	Oil (bbl)	Royalties	5774.33
-2009	CO	Weld	08123	Gas	Processed (Residue) Gas (mcf)	Royalties	1092426.36
-2009	CO	Weld	08123	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	303958.79
-2009	CO	Weld	08123	NGL	Gas Plant Products (gal)	Royalties	3798620.66
-2009	CO	Weld	08123	Oil	Condensate (bbl)	Royalties	69633.56
-2009	CO	Weld	08123	Oil	Oil (bbl)	Royalties	73810.48
-2009	CO	Yuma	08125	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1500074.79
-2010	CO	Arapahoe	08005	Oil	Condensate (bbl)	Royalties	11.12
-2010	CO	Arapahoe	08005	Oil	Oil (bbl)	Royalties	48.34
-2010	CO	Archuleta	08007	Gas	Coal Bed Methane (mcf)	Royalties	40260.19
-2010	CO	Archuleta	08007	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	229130
-2010	CO	Baca	08009	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	42258.59
-2010	CO	Baca	08009	Oil	Oil (bbl)	Royalties	21865.89
-2010	CO	Bent	08011	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	31845.15
-2010	CO	Bent	08011	Oil	Condensate (bbl)	Royalties	115.89
-2010	CO	Bent	08011	Oil	Oil (bbl)	Royalties	29.74
-2010	CO	Broomfield	08014	Gas	Processed (Residue) Gas (mcf)	Royalties	408
-2010	CO	Broomfield	08014	NGL	Gas Plant Products (gal)	Royalties	1351.55
-2010	CO	Broomfield	08014	Oil	Oil (bbl)	Royalties	100.96
-2010	CO	Cheyenne	08017	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	450
-2010	CO	Cheyenne	08017	NGL	Gas Plant Products (gal)	Royalties	231579.34
-2010	CO	Cheyenne	08017	Oil	Oil (bbl)	Royalties	290173.74
-2010	CO	Cheyenne	08017	Helium	Helium (bbl)	Royalties	98.8
-2010	CO	Delta	08029	Coal	Coal (ton)	Royalties	3201267.87
-2010	CO	Delta	08029	Gas	Coal Bed Methane (mcf)	Royalties	11779.5
-2010	CO	Delta	08029	NGL	Gas Plant Products (gal)	Royalties	1552.2
-2010	CO	Dolores	08033	Gas	Processed (Residue) Gas (mcf)	Royalties	-18741.01
-2010	CO	Dolores	08033	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	514126.36
-2010	CO	Dolores	08033	NGL	Gas Plant Products (gal)	Royalties	240031.68
-2010	CO	Dolores	08033	Oil	Condensate (bbl)	Royalties	246.35
-2010	CO	Dolores	08033	Oil	Oil (bbl)	Royalties	27043.67
-2010	CO	Dolores	08033	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	59173859.34
-2010	CO	Garfield	08045	Coal	Coal (ton)	Royalties	157483
-2010	CO	Garfield	08045	Gas	Coal Bed Methane (mcf)	Royalties	38111.43
-2010	CO	Garfield	08045	Gas	Fuel Gas (mcf)	Royalties	281.92
-2010	CO	Garfield	08045	Gas	Processed (Residue) Gas (mcf)	Royalties	116122974.04
-2010	CO	Garfield	08045	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	21452576.96
-2010	CO	Garfield	08045	NGL	Gas Plant Products (gal)	Royalties	225637603.19
-2010	CO	Garfield	08045	Oil	Condensate (bbl)	Royalties	404576.19
-2010	CO	Garfield	08045	Oil	Drip or Scrubber Condensate (bbl)	Royalties	15408.03
-2010	CO	Garfield	08045	Oil	Inlet Scrubber (bbl)	Royalties	11277.33
-2010	CO	Garfield	08045	Oil	Oil (bbl)	Royalties	109177.76
-2010	CO	Garfield	08045	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	639725.87
-2010	CO	Gunnison	08051	Coal	Coal (ton)	Royalties	6788485.13
-2010	CO	Gunnison	08051	Gas	Coal Bed Methane (mcf)	Royalties	339390.02
-2010	CO	Gunnison	08051	Gas	Processed (Residue) Gas (mcf)	Royalties	411833
-2010	CO	Gunnison	08051	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	114344
-2010	CO	Gunnison	08051	NGL	Gas Plant Products (gal)	Royalties	6706.04
-2010	CO	Huerfano	08055	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	6278472
-2010	CO	Jackson	08057	Oil	Oil (bbl)	Royalties	75297.71
-2010	CO	Jackson	08057	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	596578.61
-2010	CO	Kiowa	08061	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	9694.07
-2010	CO	Kiowa	08061	Oil	Condensate (bbl)	Royalties	169.6
-2010	CO	Kiowa	08061	Oil	Oil (bbl)	Royalties	1905.7
-2010	CO	La Plata	08067	Coal	Coal (ton)	Royalties	454002
-2010	CO	La Plata	08067	Gas	Coal Bed Methane (mcf)	Royalties	8301080.86
-2010	CO	La Plata	08067	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3655887.11
-2010	CO	Larimer	08069	Oil	Oil (bbl)	Royalties	1336.8
-2010	CO	Las Animas	08071	Gas	Coal Bed Methane (mcf)	Royalties	3683913.6
-2010	CO	Logan	08075	Oil	Oil (bbl)	Royalties	1819.5
-2010	CO	Mesa	08077	Gas	Coal Bed Methane (mcf)	Royalties	1309.48
-2010	CO	Mesa	08077	Gas	Fuel Gas (mcf)	Royalties	61055.2
-2010	CO	Mesa	08077	Gas	Processed (Residue) Gas (mcf)	Royalties	14232276.42
-2010	CO	Mesa	08077	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2327233
-2010	CO	Mesa	08077	NGL	Gas Plant Products (gal)	Royalties	29228962.45
-2010	CO	Mesa	08077	Oil	Condensate (bbl)	Royalties	22504.74
-2010	CO	Mesa	08077	Oil	Drip or Scrubber Condensate (bbl)	Royalties	3224.63
-2010	CO	Mesa	08077	Oil	Oil (bbl)	Royalties	10183.47
-2010	CO	Moffat	08081	Coal	Coal (ton)	Royalties	3212303
-2010	CO	Moffat	08081	Gas	Processed (Residue) Gas (mcf)	Royalties	3496248.07
-2010	CO	Moffat	08081	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	12945034.25
-2010	CO	Moffat	08081	NGL	Gas Plant Products (gal)	Royalties	3848167.6
-2010	CO	Moffat	08081	Oil	Condensate (bbl)	Royalties	99235.8
-2010	CO	Moffat	08081	Oil	Drip or Scrubber Condensate (bbl)	Royalties	1422.54
-2010	CO	Moffat	08081	Oil	Oil (bbl)	Royalties	143811.75
-2010	CO	Montezuma	08083	Gas	Processed (Residue) Gas (mcf)	Royalties	67141.1
-2010	CO	Montezuma	08083	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	82112.38
-2010	CO	Montezuma	08083	NGL	Gas Plant Products (gal)	Royalties	731824.96
-2010	CO	Montezuma	08083	Oil	Condensate (bbl)	Royalties	244.16
-2010	CO	Montezuma	08083	Oil	Oil (bbl)	Royalties	111191.41
-2010	CO	Montezuma	08083	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	294617619.25
-2010	CO	Morgan	08087	Oil	Oil (bbl)	Royalties	1098.08
-2010	CO	Prowers	08099	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	12725.54
-2010	CO	Rio Blanco	08103	Coal	Coal (ton)	Royalties	3044831
-2010	CO	Rio Blanco	08103	Gas	Coal Bed Methane (mcf)	Royalties	307468.37
-2010	CO	Rio Blanco	08103	Gas	Fuel Gas (mcf)	Royalties	17602.31
-2010	CO	Rio Blanco	08103	Gas	Processed (Residue) Gas (mcf)	Royalties	70895813
-2010	CO	Rio Blanco	08103	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	12430982.07
-2010	CO	Rio Blanco	08103	NGL	Gas Plant Products (gal)	Royalties	55908588.15
-2010	CO	Rio Blanco	08103	Oil	Condensate (bbl)	Royalties	238832.26
-2010	CO	Rio Blanco	08103	Oil	Drip or Scrubber Condensate (bbl)	Royalties	40290.77
-2010	CO	Rio Blanco	08103	Oil	Inlet Scrubber (bbl)	Royalties	3648.8
-2010	CO	Rio Blanco	08103	Oil	Oil (bbl)	Royalties	2359797.98
-2010	CO	Rio Blanco	08103	Sodium Bi-Carbonate	Sodium Bi-Carbonate (ton)	Royalties	123850
-2010	CO	Routt	08107	Coal	Coal (ton)	Royalties	1807177
-2010	CO	Routt	08107	Oil	Oil (bbl)	Royalties	14009.77
-2010	CO	San Miguel	08113	Gas	Fuel Gas (mcf)	Royalties	29562.32
-2010	CO	San Miguel	08113	Gas	Processed (Residue) Gas (mcf)	Royalties	827827.18
-2010	CO	San Miguel	08113	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	4922189.26
-2010	CO	San Miguel	08113	NGL	Gas Plant Products (gal)	Royalties	1029736.08
-2010	CO	San Miguel	08113	Oil	Condensate (bbl)	Royalties	7073.94
-2010	CO	San Miguel	08113	Oil	Oil (bbl)	Royalties	184.4
-2010	CO	Washington	08121	Gas	Processed (Residue) Gas (mcf)	Royalties	5644
-2010	CO	Washington	08121	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	88998.19
-2010	CO	Washington	08121	Oil	Oil (bbl)	Royalties	5050.78
-2010	CO	Weld	08123	Gas	Processed (Residue) Gas (mcf)	Royalties	1320278.49
-2010	CO	Weld	08123	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	285599.62
-2010	CO	Weld	08123	NGL	Gas Plant Products (gal)	Royalties	4707205.59
-2010	CO	Weld	08123	Oil	Condensate (bbl)	Royalties	65409.03
-2010	CO	Weld	08123	Oil	Drip or Scrubber Condensate (bbl)	Royalties	3.74
-2010	CO	Weld	08123	Oil	Inlet Scrubber (bbl)	Royalties	448.16
-2010	CO	Weld	08123	Oil	Oil (bbl)	Royalties	100814.18
-2010	CO	Yuma	08125	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1463653.4
-2011	CO	Arapahoe	08005	Oil	Oil (bbl)	Royalties	12.37
-2011	CO	Archuleta	08007	Gas	Coal Bed Methane (mcf)	Royalties	40366
-2011	CO	Archuleta	08007	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	212165
-2011	CO	Baca	08009	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	35423.83
-2011	CO	Baca	08009	Oil	Oil (bbl)	Royalties	21350.86
-2011	CO	Bent	08011	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	21993.7
-2011	CO	Bent	08011	Oil	Condensate (bbl)	Royalties	168.2
-2011	CO	Bent	08011	Oil	Oil (bbl)	Royalties	17.04
-2011	CO	Broomfield	08014	Gas	Processed (Residue) Gas (mcf)	Royalties	7862.49
-2011	CO	Broomfield	08014	NGL	Gas Plant Products (gal)	Royalties	28451.47
-2011	CO	Broomfield	08014	Oil	Condensate (bbl)	Royalties	252.95
-2011	CO	Broomfield	08014	Oil	Drip or Scrubber Condensate (bbl)	Royalties	23.06
-2011	CO	Broomfield	08014	Oil	Oil (bbl)	Royalties	33.73
-2011	CO	Cheyenne	08017	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	882.91
-2011	CO	Cheyenne	08017	NGL	Gas Plant Products (gal)	Royalties	54575.17
-2011	CO	Cheyenne	08017	Oil	Oil (bbl)	Royalties	7390.57
-2011	CO	Cheyenne	08017	Helium	Helium (bbl)	Royalties	451.32
-2011	CO	Delta	08029	Coal	Coal (ton)	Royalties	3724786.62
-2011	CO	Delta	08029	Gas	Coal Bed Methane (mcf)	Royalties	18396.98
-2011	CO	Delta	08029	NGL	Gas Plant Products (gal)	Royalties	2507.28
-2011	CO	Dolores	08033	Gas	Processed (Residue) Gas (mcf)	Royalties	25845.87
-2011	CO	Dolores	08033	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	362067.42
-2011	CO	Dolores	08033	NGL	Gas Plant Products (gal)	Royalties	139287.96
-2011	CO	Dolores	08033	Oil	Condensate (bbl)	Royalties	256.32
-2011	CO	Dolores	08033	Oil	Oil (bbl)	Royalties	25951.59
-2011	CO	Dolores	08033	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	57290223.29
-2011	CO	Garfield	08045	Coal	Coal (ton)	Royalties	378
-2011	CO	Garfield	08045	Gas	Coal Bed Methane (mcf)	Royalties	45098.97
-2011	CO	Garfield	08045	Gas	Fuel Gas (mcf)	Royalties	79.28
-2011	CO	Garfield	08045	Gas	Processed (Residue) Gas (mcf)	Royalties	149557740.66
-2011	CO	Garfield	08045	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	17977194.97
-2011	CO	Garfield	08045	NGL	Gas Plant Products (gal)	Royalties	282648593.06
-2011	CO	Garfield	08045	Oil	Condensate (bbl)	Royalties	502621.63
-2011	CO	Garfield	08045	Oil	Drip or Scrubber Condensate (bbl)	Royalties	17660.22
-2011	CO	Garfield	08045	Oil	Inlet Scrubber (bbl)	Royalties	9795.23
-2011	CO	Garfield	08045	Oil	Oil (bbl)	Royalties	193197.34
-2011	CO	Garfield	08045	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	693687.88
-2011	CO	Gunnison	08051	Coal	Coal (ton)	Royalties	7146311.38
-2011	CO	Gunnison	08051	Gas	Coal Bed Methane (mcf)	Royalties	180853.67
-2011	CO	Gunnison	08051	Gas	Processed (Residue) Gas (mcf)	Royalties	349343
-2011	CO	Gunnison	08051	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	250548
-2011	CO	Gunnison	08051	NGL	Gas Plant Products (gal)	Royalties	23401.18
-2011	CO	Huerfano	08055	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	4882336
-2011	CO	Jackson	08057	Oil	Oil (bbl)	Royalties	74070.31
-2011	CO	Jackson	08057	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	357834.91
-2011	CO	Kiowa	08061	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	10222.52
-2011	CO	Kiowa	08061	Oil	Condensate (bbl)	Royalties	61.93
-2011	CO	Kiowa	08061	Oil	Oil (bbl)	Royalties	2586.09
-2011	CO	La Plata	08067	Coal	Coal (ton)	Royalties	458636
-2011	CO	La Plata	08067	Gas	Coal Bed Methane (mcf)	Royalties	7729372.45
-2011	CO	La Plata	08067	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2726272.29
-2011	CO	Larimer	08069	Oil	Oil (bbl)	Royalties	1400.58
-2011	CO	Las Animas	08071	Gas	Coal Bed Methane (mcf)	Royalties	3534976.79
-2011	CO	Logan	08075	Oil	Oil (bbl)	Royalties	1467.23
-2011	CO	Mesa	08077	Gas	Coal Bed Methane (mcf)	Royalties	2091.33
-2011	CO	Mesa	08077	Gas	Fuel Gas (mcf)	Royalties	138947.92
-2011	CO	Mesa	08077	Gas	Processed (Residue) Gas (mcf)	Royalties	16302598.38
-2011	CO	Mesa	08077	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2084908.62
-2011	CO	Mesa	08077	NGL	Gas Plant Products (gal)	Royalties	20361233.48
-2011	CO	Mesa	08077	Oil	Condensate (bbl)	Royalties	21343.65
-2011	CO	Mesa	08077	Oil	Drip or Scrubber Condensate (bbl)	Royalties	2953.36
-2011	CO	Mesa	08077	Oil	Oil (bbl)	Royalties	10044.75
-2011	CO	Moffat	08081	Coal	Coal (ton)	Royalties	3186309
-2011	CO	Moffat	08081	Gas	Processed (Residue) Gas (mcf)	Royalties	3227518.45
-2011	CO	Moffat	08081	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	12972946.5
-2011	CO	Moffat	08081	NGL	Gas Plant Products (gal)	Royalties	2265578.38
-2011	CO	Moffat	08081	Oil	Condensate (bbl)	Royalties	114074.05
-2011	CO	Moffat	08081	Oil	Drip or Scrubber Condensate (bbl)	Royalties	1131.1
-2011	CO	Moffat	08081	Oil	Oil (bbl)	Royalties	141941.97
-2011	CO	Montezuma	08083	Gas	Processed (Residue) Gas (mcf)	Royalties	37761.78
-2011	CO	Montezuma	08083	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	74995.15
-2011	CO	Montezuma	08083	NGL	Gas Plant Products (gal)	Royalties	584994.25
-2011	CO	Montezuma	08083	Oil	Condensate (bbl)	Royalties	120.53
-2011	CO	Montezuma	08083	Oil	Oil (bbl)	Royalties	114120.46
-2011	CO	Montezuma	08083	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	296745033.77
-2011	CO	Morgan	08087	Oil	Oil (bbl)	Royalties	1088.22
-2011	CO	Prowers	08099	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	4067.81
-2011	CO	Rio Blanco	08103	Coal	Coal (ton)	Royalties	3542576
-2011	CO	Rio Blanco	08103	Gas	Coal Bed Methane (mcf)	Royalties	569687.24
-2011	CO	Rio Blanco	08103	Gas	Fuel Gas (mcf)	Royalties	1086.7
-2011	CO	Rio Blanco	08103	Gas	Processed (Residue) Gas (mcf)	Royalties	77287332.75
-2011	CO	Rio Blanco	08103	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	13086611.41
-2011	CO	Rio Blanco	08103	NGL	Gas Plant Products (gal)	Royalties	82687573.38
-2011	CO	Rio Blanco	08103	Oil	Condensate (bbl)	Royalties	360342.08
-2011	CO	Rio Blanco	08103	Oil	Drip or Scrubber Condensate (bbl)	Royalties	34724.97
-2011	CO	Rio Blanco	08103	Oil	Inlet Scrubber (bbl)	Royalties	14310.8
-2011	CO	Rio Blanco	08103	Oil	Oil (bbl)	Royalties	2383985.02
-2011	CO	Rio Blanco	08103	Sodium Bi-Carbonate	Sodium Bi-Carbonate (ton)	Royalties	128835
-2011	CO	Routt	08107	Coal	Coal (ton)	Royalties	696024
-2011	CO	Routt	08107	Oil	Oil (bbl)	Royalties	17333.59
-2011	CO	San Miguel	08113	Gas	Fuel Gas (mcf)	Royalties	10195.05
-2011	CO	San Miguel	08113	Gas	Processed (Residue) Gas (mcf)	Royalties	2947588.46
-2011	CO	San Miguel	08113	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3441502.44
-2011	CO	San Miguel	08113	NGL	Gas Plant Products (gal)	Royalties	2789445.57
-2011	CO	San Miguel	08113	Oil	Condensate (bbl)	Royalties	17411.59
-2011	CO	Washington	08121	Gas	Processed (Residue) Gas (mcf)	Royalties	4992.77
-2011	CO	Washington	08121	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	79050.84
-2011	CO	Washington	08121	Oil	Oil (bbl)	Royalties	4936.68
-2011	CO	Weld	08123	Gas	Processed (Residue) Gas (mcf)	Royalties	1270721.76
-2011	CO	Weld	08123	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	351301.72
-2011	CO	Weld	08123	NGL	Gas Plant Products (gal)	Royalties	5501180.14
-2011	CO	Weld	08123	Oil	Condensate (bbl)	Royalties	69351.65
-2011	CO	Weld	08123	Oil	Drip or Scrubber Condensate (bbl)	Royalties	490.61
-2011	CO	Weld	08123	Oil	Inlet Scrubber (bbl)	Royalties	2081.69
-2011	CO	Weld	08123	Oil	Oil (bbl)	Royalties	135947.11
-2011	CO	Yuma	08125	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1401529.62
-2011	CO	Yuma	08125	NGL	Gas Plant Products (gal)	Royalties	5693.74
-2011	CO	Yuma	08125	Oil	Oil (bbl)	Royalties	365.91
-2012	CO	Arapahoe	08005	Oil	Condensate (bbl)	Royalties	14.28
-2012	CO	Arapahoe	08005	Oil	Oil (bbl)	Royalties	48.86
-2012	CO	Archuleta	08007	Gas	Coal Bed Methane (mcf)	Royalties	49820.87
-2012	CO	Archuleta	08007	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	171355
-2012	CO	Baca	08009	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	38847.62
-2012	CO	Baca	08009	Oil	Oil (bbl)	Royalties	18706.77
-2012	CO	Bent	08011	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	21222.48
-2012	CO	Bent	08011	Oil	Condensate (bbl)	Royalties	50.04
-2012	CO	Bent	08011	Oil	Oil (bbl)	Royalties	0.48
-2012	CO	Broomfield	08014	Gas	Processed (Residue) Gas (mcf)	Royalties	2732.16
-2012	CO	Broomfield	08014	NGL	Gas Plant Products (gal)	Royalties	9055.2
-2012	CO	Broomfield	08014	Oil	Condensate (bbl)	Royalties	211.52
-2012	CO	Broomfield	08014	Oil	Drip or Scrubber Condensate (bbl)	Royalties	45.75
-2012	CO	Cheyenne	08017	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	968
-2012	CO	Cheyenne	08017	NGL	Gas Plant Products (gal)	Royalties	44508.44
-2012	CO	Cheyenne	08017	Oil	Oil (bbl)	Royalties	7191.06
-2012	CO	Cheyenne	08017	Helium	Helium (bbl)	Royalties	496.08
-2012	CO	Delta	08029	Coal	Coal (ton)	Royalties	4931685.74
-2012	CO	Delta	08029	Gas	Coal Bed Methane (mcf)	Royalties	8820.34
-2012	CO	Delta	08029	NGL	Gas Plant Products (gal)	Royalties	847.2
-2012	CO	Dolores	08033	Gas	Processed (Residue) Gas (mcf)	Royalties	23469.78
-2012	CO	Dolores	08033	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	317752.74
-2012	CO	Dolores	08033	NGL	Gas Plant Products (gal)	Royalties	156424.38
-2012	CO	Dolores	08033	Oil	Condensate (bbl)	Royalties	278.66
-2012	CO	Dolores	08033	Oil	Oil (bbl)	Royalties	25177.1
-2012	CO	Dolores	08033	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	57367097.19
-2012	CO	Garfield	08045	Gas	Coal Bed Methane (mcf)	Royalties	42397.27
-2012	CO	Garfield	08045	Gas	Fuel Gas (mcf)	Royalties	59.53
-2012	CO	Garfield	08045	Gas	Processed (Residue) Gas (mcf)	Royalties	150352330.19
-2012	CO	Garfield	08045	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	40741592.93
-2012	CO	Garfield	08045	NGL	Gas Plant Products (gal)	Royalties	274927234.87
-2012	CO	Garfield	08045	Oil	Condensate (bbl)	Royalties	551627.85
-2012	CO	Garfield	08045	Oil	Drip or Scrubber Condensate (bbl)	Royalties	9941.86
-2012	CO	Garfield	08045	Oil	Inlet Scrubber (bbl)	Royalties	4371.6
-2012	CO	Garfield	08045	Oil	Oil (bbl)	Royalties	190499.28
-2012	CO	Garfield	08045	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	895525.12
-2012	CO	Gunnison	08051	Coal	Coal (ton)	Royalties	7955766.26
-2012	CO	Gunnison	08051	Gas	Coal Bed Methane (mcf)	Royalties	117121.2
-2012	CO	Gunnison	08051	Gas	Processed (Residue) Gas (mcf)	Royalties	495900
-2012	CO	Gunnison	08051	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	464351
-2012	CO	Gunnison	08051	NGL	Gas Plant Products (gal)	Royalties	20363.92
-2012	CO	Huerfano	08055	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	4285088
-2012	CO	Jackson	08057	Oil	Oil (bbl)	Royalties	62271.8
-2012	CO	Jackson	08057	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	391797.36
-2012	CO	Kiowa	08061	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	8780.01
-2012	CO	Kiowa	08061	Oil	Condensate (bbl)	Royalties	15.57
-2012	CO	Kiowa	08061	Oil	Oil (bbl)	Royalties	1612.35
-2012	CO	La Plata	08067	Coal	Coal (ton)	Royalties	683562
-2012	CO	La Plata	08067	Gas	Coal Bed Methane (mcf)	Royalties	7322503.5
-2012	CO	La Plata	08067	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2424539.13
-2012	CO	Larimer	08069	Oil	Oil (bbl)	Royalties	1169.04
-2012	CO	Las Animas	08071	Gas	Coal Bed Methane (mcf)	Royalties	3493565.86
-2012	CO	Logan	08075	Oil	Oil (bbl)	Royalties	917.84
-2012	CO	Mesa	08077	Gas	Coal Bed Methane (mcf)	Royalties	1282.42
-2012	CO	Mesa	08077	Gas	Fuel Gas (mcf)	Royalties	156943.5
-2012	CO	Mesa	08077	Gas	Processed (Residue) Gas (mcf)	Royalties	18891735.52
-2012	CO	Mesa	08077	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	6960288.42
-2012	CO	Mesa	08077	NGL	Gas Plant Products (gal)	Royalties	18728621.9
-2012	CO	Mesa	08077	Oil	Condensate (bbl)	Royalties	12654.69
-2012	CO	Mesa	08077	Oil	Drip or Scrubber Condensate (bbl)	Royalties	1870.12
-2012	CO	Mesa	08077	Oil	Oil (bbl)	Royalties	8264.82
-2012	CO	Moffat	08081	Coal	Coal (ton)	Royalties	3483959
-2012	CO	Moffat	08081	Gas	Processed (Residue) Gas (mcf)	Royalties	2743867.63
-2012	CO	Moffat	08081	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	11477770.13
-2012	CO	Moffat	08081	NGL	Gas Plant Products (gal)	Royalties	2825232.77
-2012	CO	Moffat	08081	Oil	Condensate (bbl)	Royalties	132951.45
-2012	CO	Moffat	08081	Oil	Drip or Scrubber Condensate (bbl)	Royalties	265.93
-2012	CO	Moffat	08081	Oil	Oil (bbl)	Royalties	137735.21
-2012	CO	Montezuma	08083	Gas	Processed (Residue) Gas (mcf)	Royalties	23572.48
-2012	CO	Montezuma	08083	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	53758.75
-2012	CO	Montezuma	08083	NGL	Gas Plant Products (gal)	Royalties	416367.54
-2012	CO	Montezuma	08083	Oil	Condensate (bbl)	Royalties	313.69
-2012	CO	Montezuma	08083	Oil	Oil (bbl)	Royalties	102627.13
-2012	CO	Montezuma	08083	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	282649705.15
-2012	CO	Morgan	08087	Gas	Processed (Residue) Gas (mcf)	Royalties	775.94
-2012	CO	Morgan	08087	Oil	Oil (bbl)	Royalties	928.04
-2012	CO	Phillips	08095	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	32114
-2012	CO	Prowers	08099	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2019.48
-2012	CO	Rio Blanco	08103	Coal	Coal (ton)	Royalties	2823932
-2012	CO	Rio Blanco	08103	Gas	Coal Bed Methane (mcf)	Royalties	450500.48
-2012	CO	Rio Blanco	08103	Gas	Processed (Residue) Gas (mcf)	Royalties	57948135.49
-2012	CO	Rio Blanco	08103	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	30507653.86
-2012	CO	Rio Blanco	08103	NGL	Gas Plant Products (gal)	Royalties	101483435.06
-2012	CO	Rio Blanco	08103	Oil	Condensate (bbl)	Royalties	479684.43
-2012	CO	Rio Blanco	08103	Oil	Drip or Scrubber Condensate (bbl)	Royalties	38534.27
-2012	CO	Rio Blanco	08103	Oil	Inlet Scrubber (bbl)	Royalties	4085.07
-2012	CO	Rio Blanco	08103	Oil	Oil (bbl)	Royalties	2419838.26
-2012	CO	Rio Blanco	08103	Sodium Bi-Carbonate	Sodium Bi-Carbonate (ton)	Royalties	123604
-2012	CO	Routt	08107	Coal	Coal (ton)	Royalties	707219
-2012	CO	Routt	08107	Oil	Oil (bbl)	Royalties	10795.05
-2012	CO	San Miguel	08113	Gas	Fuel Gas (mcf)	Royalties	1135.18
-2012	CO	San Miguel	08113	Gas	Processed (Residue) Gas (mcf)	Royalties	2337072.96
-2012	CO	San Miguel	08113	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2216823.04
-2012	CO	San Miguel	08113	NGL	Gas Plant Products (gal)	Royalties	1956516.33
-2012	CO	San Miguel	08113	Oil	Condensate (bbl)	Royalties	13752.02
-2012	CO	Washington	08121	Gas	Processed (Residue) Gas (mcf)	Royalties	1189.31
-2012	CO	Washington	08121	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	70114.34
-2012	CO	Washington	08121	Oil	Oil (bbl)	Royalties	3865.79
-2012	CO	Weld	08123	Gas	Processed (Residue) Gas (mcf)	Royalties	1155909.14
-2012	CO	Weld	08123	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	292856.13
-2012	CO	Weld	08123	NGL	Gas Plant Products (gal)	Royalties	4597213.24
-2012	CO	Weld	08123	Oil	Condensate (bbl)	Royalties	100490.68
-2012	CO	Weld	08123	Oil	Drip or Scrubber Condensate (bbl)	Royalties	826.64
-2012	CO	Weld	08123	Oil	Inlet Scrubber (bbl)	Royalties	2173.04
-2012	CO	Weld	08123	Oil	Oil (bbl)	Royalties	265711.78
-2012	CO	Yuma	08125	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1216168.42
-2012	CO	Yuma	08125	Oil	Oil (bbl)	Royalties	23.43
-2013	CO	Arapahoe	08005	Oil	Condensate (bbl)	Royalties	13.61
-2013	CO	Arapahoe	08005	Oil	Oil (bbl)	Royalties	21.6
-2013	CO	Archuleta	08007	Gas	Coal Bed Methane (mcf)	Royalties	56282.41
-2013	CO	Archuleta	08007	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	167797.48
-2013	CO	Baca	08009	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	24861.78
-2013	CO	Baca	08009	Oil	Oil (bbl)	Royalties	15465.5
-2013	CO	Bent	08011	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	15457.31
-2013	CO	Bent	08011	Oil	Condensate (bbl)	Royalties	109.83
-2013	CO	Bent	08011	Oil	Oil (bbl)	Royalties	1.02
-2013	CO	Broomfield	08014	Gas	Processed (Residue) Gas (mcf)	Royalties	1884.96
-2013	CO	Broomfield	08014	NGL	Gas Plant Products (gal)	Royalties	6960.27
-2013	CO	Broomfield	08014	Oil	Condensate (bbl)	Royalties	127.2
-2013	CO	Broomfield	08014	Oil	Drip or Scrubber Condensate (bbl)	Royalties	0.21
-2013	CO	Cheyenne	08017	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	915
-2013	CO	Cheyenne	08017	NGL	Gas Plant Products (gal)	Royalties	22199.19
-2013	CO	Cheyenne	08017	Oil	Oil (bbl)	Royalties	6796.44
-2013	CO	Cheyenne	08017	Helium	Helium (bbl)	Royalties	486.48
-2013	CO	Delta	08029	Coal	Coal (ton)	Royalties	2843816.11
-2013	CO	Delta	08029	Oil	Condensate (bbl)	Royalties	69.95
-2013	CO	Dolores	08033	Gas	Processed (Residue) Gas (mcf)	Royalties	6615.47
-2013	CO	Dolores	08033	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	277050.57
-2013	CO	Dolores	08033	NGL	Gas Plant Products (gal)	Royalties	47489.4
-2013	CO	Dolores	08033	Oil	Condensate (bbl)	Royalties	148.08
-2013	CO	Dolores	08033	Oil	Oil (bbl)	Royalties	17522.5
-2013	CO	Dolores	08033	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	65947984.83
-2013	CO	Garfield	08045	Gas	Coal Bed Methane (mcf)	Royalties	5028.78
-2013	CO	Garfield	08045	Gas	Fuel Gas (mcf)	Royalties	373932.61
-2013	CO	Garfield	08045	Gas	Gas Lost - Flared or Vented (mcf)	Royalties	19748
-2013	CO	Garfield	08045	Gas	Processed (Residue) Gas (mcf)	Royalties	106607164.86
-2013	CO	Garfield	08045	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	108435058.76
-2013	CO	Garfield	08045	NGL	Gas Plant Products (gal)	Royalties	153791773.68
-2013	CO	Garfield	08045	Oil	Condensate (bbl)	Royalties	490251.25
-2013	CO	Garfield	08045	Oil	Drip or Scrubber Condensate (bbl)	Royalties	3112.41
-2013	CO	Garfield	08045	Oil	Inlet Scrubber (bbl)	Royalties	1655.89
-2013	CO	Garfield	08045	Oil	Oil (bbl)	Royalties	116440.71
-2013	CO	Garfield	08045	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	955607.52
-2013	CO	Gunnison	08051	Coal	Coal (ton)	Royalties	6141997.89
-2013	CO	Gunnison	08051	Gas	Coal Bed Methane (mcf)	Royalties	88068
-2013	CO	Gunnison	08051	Gas	Processed (Residue) Gas (mcf)	Royalties	951571.29
-2013	CO	Gunnison	08051	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	123944
-2013	CO	Gunnison	08051	Oil	Condensate (bbl)	Royalties	64.87
-2013	CO	Huerfano	08055	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	4236240
-2013	CO	Jackson	08057	Oil	Oil (bbl)	Royalties	76480.18
-2013	CO	Jackson	08057	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	120156.84
-2013	CO	Kiowa	08061	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	7147.26
-2013	CO	Kiowa	08061	Oil	Condensate (bbl)	Royalties	17.56
-2013	CO	Kiowa	08061	Oil	Oil (bbl)	Royalties	3396.45
-2013	CO	La Plata	08067	Coal	Coal (ton)	Royalties	701159
-2013	CO	La Plata	08067	Gas	Coal Bed Methane (mcf)	Royalties	7197388.77
-2013	CO	La Plata	08067	Gas	Fuel Gas (mcf)	Royalties	243
-2013	CO	La Plata	08067	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2421623.8
-2013	CO	Larimer	08069	Oil	Oil (bbl)	Royalties	1200.99
-2013	CO	Las Animas	08071	Gas	Coal Bed Methane (mcf)	Royalties	3196069.18
-2013	CO	Logan	08075	Oil	Oil (bbl)	Royalties	1510.08
-2013	CO	Mesa	08077	Gas	Fuel Gas (mcf)	Royalties	144008.74
-2013	CO	Mesa	08077	Gas	Processed (Residue) Gas (mcf)	Royalties	6151023.78
-2013	CO	Mesa	08077	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	14630341.15
-2013	CO	Mesa	08077	NGL	Gas Plant Products (gal)	Royalties	10200234.44
-2013	CO	Mesa	08077	Oil	Condensate (bbl)	Royalties	11507.76
-2013	CO	Mesa	08077	Oil	Drip or Scrubber Condensate (bbl)	Royalties	1292.88
-2013	CO	Mesa	08077	Oil	Oil (bbl)	Royalties	7900.53
-2013	CO	Moffat	08081	Coal	Coal (ton)	Royalties	2896684.08
-2013	CO	Moffat	08081	Gas	Fuel Gas (mcf)	Royalties	2923.88
-2013	CO	Moffat	08081	Gas	Processed (Residue) Gas (mcf)	Royalties	2634606.19
-2013	CO	Moffat	08081	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	11086192.14
-2013	CO	Moffat	08081	NGL	Gas Plant Products (gal)	Royalties	1884421.52
-2013	CO	Moffat	08081	Oil	Condensate (bbl)	Royalties	108232.06
-2013	CO	Moffat	08081	Oil	Oil (bbl)	Royalties	151293.35
-2013	CO	Montezuma	08083	Gas	Processed (Residue) Gas (mcf)	Royalties	19247.3
-2013	CO	Montezuma	08083	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	11692.24
-2013	CO	Montezuma	08083	NGL	Gas Plant Products (gal)	Royalties	276315.96
-2013	CO	Montezuma	08083	Oil	Oil (bbl)	Royalties	89526.99
-2013	CO	Montezuma	08083	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	271954201.33
-2013	CO	Morgan	08087	Oil	Oil (bbl)	Royalties	918.48
-2013	CO	Phillips	08095	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	29239
-2013	CO	Prowers	08099	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1450.7
-2013	CO	Rio Blanco	08103	Coal	Coal (ton)	Royalties	3056015.92
-2013	CO	Rio Blanco	08103	Gas	Coal Bed Methane (mcf)	Royalties	50561.08
-2013	CO	Rio Blanco	08103	Gas	Fuel Gas (mcf)	Royalties	18523.17
-2013	CO	Rio Blanco	08103	Gas	Processed (Residue) Gas (mcf)	Royalties	43938882.72
-2013	CO	Rio Blanco	08103	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	23256595.11
-2013	CO	Rio Blanco	08103	NGL	Gas Plant Products (gal)	Royalties	53038147.16
-2013	CO	Rio Blanco	08103	Oil	Condensate (bbl)	Royalties	346608.65
-2013	CO	Rio Blanco	08103	Oil	Drip or Scrubber Condensate (bbl)	Royalties	35578.75
-2013	CO	Rio Blanco	08103	Oil	Inlet Scrubber (bbl)	Royalties	12122.74
-2013	CO	Rio Blanco	08103	Oil	Oil (bbl)	Royalties	2215785.34
-2013	CO	Rio Blanco	08103	Sodium Bi-Carbonate	Sodium Bi-Carbonate (ton)	Royalties	81271
-2013	CO	Routt	08107	Coal	Coal (ton)	Royalties	234320
-2013	CO	Routt	08107	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	10663
-2013	CO	Routt	08107	Oil	Oil (bbl)	Royalties	13266.66
-2013	CO	San Miguel	08113	Gas	Processed (Residue) Gas (mcf)	Royalties	2426793.23
-2013	CO	San Miguel	08113	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	187181.41
-2013	CO	San Miguel	08113	NGL	Gas Plant Products (gal)	Royalties	1155493.1
-2013	CO	San Miguel	08113	Oil	Condensate (bbl)	Royalties	9351.15
-2013	CO	Washington	08121	Gas	Processed (Residue) Gas (mcf)	Royalties	53.17
-2013	CO	Washington	08121	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	67318.03
-2013	CO	Washington	08121	Oil	Oil (bbl)	Royalties	2820.55
-2013	CO	Weld	08123	Gas	Processed (Residue) Gas (mcf)	Royalties	1241710.99
-2013	CO	Weld	08123	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	401677.52
-2013	CO	Weld	08123	NGL	Gas Plant Products (gal)	Royalties	4773959.23
-2013	CO	Weld	08123	Oil	Condensate (bbl)	Royalties	119819.76
-2013	CO	Weld	08123	Oil	Drip or Scrubber Condensate (bbl)	Royalties	530.43
-2013	CO	Weld	08123	Oil	Inlet Scrubber (bbl)	Royalties	2221.05
-2013	CO	Weld	08123	Oil	Oil (bbl)	Royalties	325064.19
-2013	CO	Yuma	08125	Gas	Processed (Residue) Gas (mcf)	Royalties	15755.56
-2013	CO	Yuma	08125	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1036225.94
+Year	State	County	FIPS	Commodity	Product	Volume
+2008	CO	Broomfield County	08014		Oil (bbl)	0.21
+2007	CO	Broomfield County	08014		Oil (bbl)	0.23
+2005	CO	Broomfield County	08014		Oil (bbl)	0.33
+2009	CO	Broomfield County	08014		Oil (bbl)	0.34
+2006	CO	Broomfield County	08014		Oil (bbl)	0.39
+2010	CO	Gunnison County	08051		Oil (bbl)	2.5
+2014	CO	Kit Carson County	08063		Gas (mcf)	3.46
+2007	CO	Gunnison County	08051		Oil (bbl)	3.74
+2008	CO	Broomfield County	08014		Gas (mcf)	4.6
+2007	CO	Broomfield County	08014		Gas (mcf)	4.69
+2009	CO	Broomfield County	08014		Gas (mcf)	4.79
+2011	CO	Arapahoe County	08005		Gas (mcf)	5.08
+2013	CO	Kit Carson County	08063		Gas (mcf)	5.51
+2006	CO	Bent County	08011		Oil (bbl)	5.62
+2005	CO	Broomfield County	08014		Gas (mcf)	6.58
+2006	CO	Fremont County	08043		Oil (bbl)	6.62
+2010	CO	Broomfield County	08014		Oil (bbl)	7.09
+2014	CO	Arapahoe County	08005		Oil (bbl)	8.01
+2006	CO	Broomfield County	08014		Gas (mcf)	8.68
+2013	CO	Delta County	08029		Oil (bbl)	8.93
+2012	CO	Kit Carson County	08063		Oil (bbl)	9
+2013	CO	Kit Carson County	08063		Oil (bbl)	10.52
+2011	CO	Kit Carson County	08063		Oil (bbl)	10.59
+2014	CO	Kit Carson County	08063		Oil (bbl)	11
+2005	CO	Bent County	08011		Oil (bbl)	11.16
+2009	CO	Arapahoe County	08005		Gas (mcf)	11.66
+2009	CO	Bent County	08011		Oil (bbl)	12.25
+2007	CO	Bent County	08011		Oil (bbl)	12.64
+2012	CO	Arapahoe County	08005		Gas (mcf)	13.1
+2008	CO	Arapahoe County	08005		Gas (mcf)	13.59
+2006	CO	Kit Carson County	08063		Oil (bbl)	13.89
+2009	CO	Kit Carson County	08063		Oil (bbl)	14.5
+2013	CO	Arapahoe County	08005		Oil (bbl)	14.81
+2010	CO	Kit Carson County	08063		Oil (bbl)	15.15
+2008	CO	Bent County	08011		Oil (bbl)	15.84
+2008	CO	Kit Carson County	08063		Oil (bbl)	15.96
+2010	CO	Arapahoe County	08005		Gas (mcf)	16.14
+2012	CO	Kit Carson County	08063		Gas (mcf)	17.03
+2006	CO	Kit Carson County	08063		Gas (mcf)	17.25
+2011	CO	Kit Carson County	08063		Gas (mcf)	18.07
+2007	CO	Kit Carson County	08063		Oil (bbl)	18.29
+2011	CO	Arapahoe County	08005		Oil (bbl)	18.36
+2005	CO	Kit Carson County	08063		Oil (bbl)	19.96
+2009	CO	Delta County	08029		Oil (bbl)	20.83
+2006	CO	Gunnison County	08051		Oil (bbl)	21.46
+2009	CO	Kit Carson County	08063		Gas (mcf)	22.39
+2012	CO	Delta County	08029		Oil (bbl)	22.87
+2005	CO	Kit Carson County	08063		Gas (mcf)	23.68
+2007	CO	Kit Carson County	08063		Gas (mcf)	24.88
+2010	CO	Kit Carson County	08063		Gas (mcf)	28.41
+2005	CO	Mesa County	08077		Oil (bbl)	28.5
+2010	CO	Delta County	08029		Oil (bbl)	28.83
+2008	CO	Kit Carson County	08063		Gas (mcf)	29.85
+2009	CO	San Miguel County	08113		Oil (bbl)	32
+2009	CO	La Plata County	08067		Oil (bbl)	33.17
+2007	CO	Fremont County	08043		Gas (mcf)	34.22
+2010	CO	Delta County	08029		Oil (bbl)	35
+2010	CO	Broomfield County	08014		Gas (mcf)	37.07
+2013	CO	La Plata County	08067		Oil (bbl)	38
+2011	CO	Gunnison County	08051		Oil (bbl)	39.95
+2010	CO	La Plata County	08067		Oil (bbl)	40.16
+2012	CO	Bent County	08011		Oil (bbl)	40.39
+2014	CO	La Plata County	08067		Oil (bbl)	40.55
+2014	CO	Delta County	08029		Oil (bbl)	41.55
+2012	CO	Arapahoe County	08005		Oil (bbl)	41.71
+2008	CO	Arapahoe County	08005		Oil (bbl)	42.47
+2007	CO	Arapahoe County	08005		Gas (mcf)	44.18
+2014	CO	Broomfield County	08014		Oil (bbl)	44.64
+2012	CO	Fremont County	08043		Oil (bbl)	45.98
+2006	CO	La Plata County	08067		Oil (bbl)	47.63
+2011	CO	La Plata County	08067		Oil (bbl)	47.87
+2010	CO	Arapahoe County	08005		Oil (bbl)	48.84
+2007	CO	Arapahoe County	08005		Oil (bbl)	48.95
+2014	CO	San Miguel County	08113		Oil (bbl)	49
+2007	CO	La Plata County	08067		Oil (bbl)	49.23
+2009	CO	Arapahoe County	08005		Oil (bbl)	50.13
+2011	CO	Delta County	08029		Oil (bbl)	51.61
+2008	CO	Delta County	08029		Oil (bbl)	52.92
+2006	CO	Arapahoe County	08005		Gas (mcf)	53.32
+2006	CO	Arapahoe County	08005		Oil (bbl)	53.32
+2012	CO	Gunnison County	08051		Oil (bbl)	53.5
+2014	CO	Fremont County	08043		Oil (bbl)	53.68
+2009	CO	Mesa County	08077		Oil (bbl)	54.67
+2011	CO	Fremont County	08043		Oil (bbl)	57.63
+2006	CO	Gunnison County	08051		Oil (bbl)	64
+2010	CO	Fremont County	08043		Oil (bbl)	65.43
+2012	CO	La Plata County	08067		Oil (bbl)	65.74
+2005	CO	La Plata County	08067		Oil (bbl)	66.18
+2013	CO	Fremont County	08043		Oil (bbl)	66.67
+2013	CO	Broomfield County	08014		Oil (bbl)	68
+2005	CO	Arapahoe County	08005		Gas (mcf)	68.58
+2005	CO	Arapahoe County	08005		Oil (bbl)	68.58
+2006	CO	Delta County	08029		Oil (bbl)	72.9
+2009	CO	Fremont County	08043		Oil (bbl)	73.04
+2007	CO	Fremont County	08043		Oil (bbl)	73.23
+2008	CO	Gunnison County	08051		Oil (bbl)	74
+2005	CO	Fremont County	08043		Oil (bbl)	74.86
+2008	CO	Fremont County	08043		Oil (bbl)	83.01
+2008	CO	La Plata County	08067		Oil (bbl)	84.41
+2005	CO	Delta County	08029		Oil (bbl)	85.93
+2007	CO	Delta County	08029		Oil (bbl)	87.19
+2011	CO	San Miguel County	08113		Oil (bbl)	96
+2008	CO	Fremont County	08043		Gas (mcf)	102.32
+2008	CO	San Miguel County	08113		Oil (bbl)	103
+2012	CO	Fremont County	08043		Gas (mcf)	104.05
+2011	CO	Fremont County	08043		Gas (mcf)	105.43
+2014	CO	Fremont County	08043		Gas (mcf)	107.51
+2011	CO	Bent County	08011		Oil (bbl)	110.42
+2010	CO	Moffat County	08081		Gas (mcf)	112
+2013	CO	Gunnison County	08051		Oil (bbl)	115.37
+2012	CO	Broomfield County	08014		Oil (bbl)	117.2
+2013	CO	Fremont County	08043		Gas (mcf)	118.91
+2010	CO	Fremont County	08043		Gas (mcf)	124.1
+2009	CO	Fremont County	08043		Gas (mcf)	125.48
+2013	CO	Bent County	08011		Oil (bbl)	127.03
+2010	CO	San Miguel County	08113		Oil (bbl)	132
+2014	CO	Bent County	08011		Oil (bbl)	132.07
+2005	CO	Gunnison County	08051		Oil (bbl)	138
+2010	CO	Mesa County	08077		Oil (bbl)	151.67
+2011	CO	Gunnison County	08051		Oil (bbl)	154
+2011	CO	Larimer County	08069		Gas (mcf)	171.55
+2012	CO	Larimer County	08069		Gas (mcf)	171.55
+2013	CO	Larimer County	08069		Gas (mcf)	171.55
+2014	CO	Larimer County	08069		Gas (mcf)	171.55
+2010	CO	Gunnison County	08051		Oil (bbl)	173
+2013	CO	San Miguel County	08113		Oil (bbl)	183
+2010	CO	Larimer County	08069		Gas (mcf)	185.85
+2012	CO	Delta County	08029		Oil (bbl)	186.26
+2013	CO	Jackson County	08057		Oil (bbl)	187
+2007	CO	Gunnison County	08051		Oil (bbl)	195
+2010	CO	Bent County	08011		Oil (bbl)	195.45
+2006	CO	Moffat County	08081		Oil (bbl)	214
+2011	CO	Broomfield County	08014		Oil (bbl)	214.77
+2011	CO	Prowers County	08099		Gas (mcf)	219.87
+2012	CO	San Miguel County	08113		Oil (bbl)	229
+2011	CO	Moffat County	08081		Gas (mcf)	269
+2007	CO	San Miguel County	08113		Oil (bbl)	279
+2006	CO	Mesa County	08077		Oil (bbl)	279.5
+2009	CO	Gunnison County	08051		Oil (bbl)	288
+2013	CO	Morgan County	08087		Gas (mcf)	290.25
+2008	CO	Mesa County	08077		Oil (bbl)	296.33
+2005	CO	Larimer County	08069		Gas (mcf)	343.1
+2006	CO	Larimer County	08069		Gas (mcf)	343.1
+2007	CO	Larimer County	08069		Gas (mcf)	343.1
+2008	CO	Larimer County	08069		Gas (mcf)	343.1
+2009	CO	Larimer County	08069		Gas (mcf)	343.1
+2005	CO	Morgan County	08087		Gas (mcf)	390
+2007	CO	Mesa County	08077		Oil (bbl)	440.67
+2012	CO	Gunnison County	08051		Oil (bbl)	475.48
+2008	CO	Gunnison County	08051		Oil (bbl)	490
+2012	CO	Jackson County	08057		Oil (bbl)	511
+2005	CO	Moffat County	08081		Oil (bbl)	577
+2011	CO	Morgan County	08087		Gas (mcf)	623
+2014	CO	Prowers County	08099		Gas (mcf)	743.81
+2014	CO	Morgan County	08087		Oil (bbl)	778
+2013	CO	Morgan County	08087		Oil (bbl)	791.25
+2006	CO	San Miguel County	08113		Oil (bbl)	856
+2014	CO	Gunnison County	08051		Oil (bbl)	863.3
+2014	CO	Broomfield County	08014		Gas (mcf)	965.63
+2011	CO	Delta County	08029		Oil (bbl)	1020.24
+2005	CO	Morgan County	08087		Oil (bbl)	1065
+2013	CO	Logan County	08075		Oil (bbl)	1135
+2014	CO	Delta County	08029		Oil (bbl)	1160.05
+2012	CO	Larimer County	08069		Oil (bbl)	1165.98
+2011	CO	Larimer County	08069		Oil (bbl)	1173.56
+2010	CO	Morgan County	08087		Oil (bbl)	1175.5
+2011	CO	Morgan County	08087		Oil (bbl)	1183.25
+2006	CO	Morgan County	08087		Oil (bbl)	1197
+2013	CO	Broomfield County	08014		Gas (mcf)	1223.46
+2013	CO	Larimer County	08069		Oil (bbl)	1228.88
+2012	CO	Logan County	08075		Oil (bbl)	1257
+2009	CO	Morgan County	08087		Oil (bbl)	1260
+2007	CO	Morgan County	08087		Oil (bbl)	1276
+2014	CO	Larimer County	08069		Oil (bbl)	1281.92
+2005	CO	Larimer County	08069		Oil (bbl)	1284.28
+2012	CO	Morgan County	08087		Oil (bbl)	1309.5
+2010	CO	Larimer County	08069		Oil (bbl)	1353.12
+2008	CO	Morgan County	08087		Oil (bbl)	1364
+2006	CO	Larimer County	08069		Oil (bbl)	1393.43
+2014	CO	Logan County	08075		Oil (bbl)	1427
+2005	CO	Logan County	08075		Gas (mcf)	1440
+2006	CO	Logan County	08075		Gas (mcf)	1440
+2007	CO	Logan County	08075		Gas (mcf)	1440
+2008	CO	Logan County	08075		Gas (mcf)	1440
+2009	CO	Logan County	08075		Gas (mcf)	1440
+2010	CO	Logan County	08075		Gas (mcf)	1440
+2011	CO	Logan County	08075		Gas (mcf)	1440
+2012	CO	Logan County	08075		Gas (mcf)	1440
+2013	CO	Logan County	08075		Gas (mcf)	1440
+2014	CO	Logan County	08075		Gas (mcf)	1440
+2011	CO	Logan County	08075		Oil (bbl)	1450
+2013	CO	Prowers County	08099		Gas (mcf)	1451.7
+2007	CO	Larimer County	08069		Oil (bbl)	1455.19
+2009	CO	Larimer County	08069		Oil (bbl)	1471.77
+2008	CO	Larimer County	08069		Oil (bbl)	1566.77
+2012	CO	Kiowa County	08061		Oil (bbl)	1674.88
+2009	CO	Logan County	08075		Oil (bbl)	1688
+2005	CO	Garfield County	08045		Oil (bbl)	1770
+2010	CO	Kiowa County	08061		Oil (bbl)	1822.75
+2011	CO	Broomfield County	08014		Gas (mcf)	1829.81
+2010	CO	Logan County	08075		Oil (bbl)	1839
+2012	CO	Broomfield County	08014		Gas (mcf)	1844.3
+2012	CO	Prowers County	08099		Gas (mcf)	2019.97
+2014	CO	San Miguel County	08113		Oil (bbl)	2121.6
+2005	CO	Logan County	08075		Oil (bbl)	2153
+2006	CO	Garfield County	08045		Oil (bbl)	2163
+2012	CO	Morgan County	08087		Gas (mcf)	2176.5
+2014	CO	Adams County	08001		Oil (bbl)	2249.47
+2013	CO	Routt County	08107		Oil (bbl)	2281
+2006	CO	Logan County	08075		Oil (bbl)	2361
+2013	CO	La Plata County	08067		Gas (mcf)	2367.33
+2009	CO	Moffat County	08081		Oil (bbl)	2436
+2005	CO	San Miguel County	08113		Oil (bbl)	2524
+2005	CO	Prowers County	08099		Gas (mcf)	2529.25
+2011	CO	Kiowa County	08061		Oil (bbl)	2662.88
+2008	CO	Logan County	08075		Oil (bbl)	2725
+2008	CO	Kiowa County	08061		Oil (bbl)	2857
+2007	CO	Logan County	08075		Oil (bbl)	2911
+2013	CO	Delta County	08029		Oil (bbl)	3022.41
+2011	CO	Mesa County	08077		Oil (bbl)	3072.76
+2009	CO	San Miguel County	08113		Oil (bbl)	3215.36
+2014	CO	Adams County	08001		Gas (mcf)	3216.11
+2009	CO	Kiowa County	08061		Oil (bbl)	3290
+2014	CO	Kiowa County	08061		Oil (bbl)	3323.87
+2013	CO	Kiowa County	08061		Oil (bbl)	3409.21
+2009	CO	Prowers County	08099		Gas (mcf)	3438.22
+2007	CO	Kiowa County	08061		Oil (bbl)	3512
+2008	CO	Moffat County	08081		Oil (bbl)	3558
+2007	CO	Garfield County	08045		Oil (bbl)	3705.83
+2006	CO	Kiowa County	08061		Oil (bbl)	3774
+2005	CO	Kiowa County	08061		Oil (bbl)	3777.86
+2007	CO	Prowers County	08099		Gas (mcf)	3845.11
+2014	CO	Routt County	08107		Oil (bbl)	3903
+2010	CO	Moffat County	08081		Oil (bbl)	4137
+2007	CO	San Miguel County	08113		Oil (bbl)	4141.54
+2013	CO	Routt County	08107		Gas (mcf)	4444
+2008	CO	Garfield County	08045		Oil (bbl)	4457.67
+2013	CO	Washington County	08121		Oil (bbl)	4480
+2011	CO	Moffat County	08081		Oil (bbl)	4664
+2014	CO	Washington County	08121		Oil (bbl)	5034
+2008	CO	Prowers County	08099		Gas (mcf)	5635.79
+2013	CO	San Miguel County	08113		Oil (bbl)	5638.96
+2011	CO	Garfield County	08045		Oil (bbl)	5647
+2012	CO	Washington County	08121		Oil (bbl)	5804
+2010	CO	Kiowa County	08061		Gas (mcf)	6014.4
+2005	CO	Rio Blanco County	08103		Oil (bbl)	6120.5
+2014	CO	Kiowa County	08061		Gas (mcf)	6166.22
+2010	CO	Garfield County	08045		Oil (bbl)	6211.83
+2008	CO	San Miguel County	08113		Oil (bbl)	6283.88
+2005	CO	Mesa County	08077		Oil (bbl)	6352.43
+2011	CO	Kiowa County	08061		Gas (mcf)	6644.12
+2010	CO	Prowers County	08099		Gas (mcf)	6759.44
+2010	CO	San Miguel County	08113		Oil (bbl)	6876.97
+2011	CO	Washington County	08121		Oil (bbl)	6978
+2013	CO	Kiowa County	08061		Gas (mcf)	7148.29
+2006	CO	San Miguel County	08113		Oil (bbl)	7177.29
+2012	CO	Kiowa County	08061		Gas (mcf)	7274.05
+2007	CO	Moffat County	08081		Oil (bbl)	7304
+2010	CO	Washington County	08121		Oil (bbl)	7522
+2012	CO	Mesa County	08077		Oil (bbl)	7946.24
+2009	CO	Kiowa County	08061		Gas (mcf)	8049.16
+2009	CO	Washington County	08121		Oil (bbl)	8333
+2008	CO	Kiowa County	08061		Gas (mcf)	8486.91
+2007	CO	Kiowa County	08061		Gas (mcf)	8709.02
+2011	CO	Delta County	08029		Gas (mcf)	9042.43
+2006	CO	Kiowa County	08061		Gas (mcf)	9509.38
+2006	CO	Washington County	08121		Oil (bbl)	9536
+2006	CO	Prowers County	08099		Gas (mcf)	10000.77
+2008	CO	Washington County	08121		Oil (bbl)	10139
+2014	CO	Bent County	08011		Gas (mcf)	10171.78
+2007	CO	Washington County	08121		Oil (bbl)	10407
+2005	CO	San Miguel County	08113		Oil (bbl)	10661.54
+2005	CO	Kiowa County	08061		Gas (mcf)	10746.4
+2014	CO	La Plata County	08067		Gas (mcf)	10873.22
+2006	CO	Mesa County	08077		Oil (bbl)	11103.48
+2005	CO	Washington County	08121		Oil (bbl)	11173
+2012	CO	Routt County	08107		Oil (bbl)	11573.46
+2006	CO	Routt County	08107		Oil (bbl)	12621.98
+2007	CO	Routt County	08107		Oil (bbl)	12849.78
+2006	CO	Routt County	08107		Gas (mcf)	12891
+2012	CO	Garfield County	08045		Oil (bbl)	12909.5
+2005	CO	Routt County	08107		Oil (bbl)	12995.74
+2008	CO	Routt County	08107		Oil (bbl)	13016.52
+2008	CO	Routt County	08107		Gas (mcf)	13096.35
+2009	CO	Garfield County	08045		Oil (bbl)	13156.83
+2007	CO	Las Animas County	08071		Gas (mcf)	13226
+2013	CO	Mesa County	08077		Oil (bbl)	13259.44
+2014	CO	Routt County	08107		Oil (bbl)	13302.41
+2013	CO	Delta County	08029		Gas (mcf)	13302.91
+2012	CO	San Miguel County	08113		Oil (bbl)	13349.33
+2009	CO	Routt County	08107		Gas (mcf)	13481.28
+2013	CO	Routt County	08107		Oil (bbl)	14158.4
+2012	CO	Mesa County	08077		Oil (bbl)	14385.11
+2011	CO	Routt County	08107		Oil (bbl)	14400.89
+2012	CO	Routt County	08107		Gas (mcf)	14544.12
+2009	CO	Routt County	08107		Oil (bbl)	14617.85
+2010	CO	Routt County	08107		Oil (bbl)	14792.37
+2010	CO	Routt County	08107		Gas (mcf)	15190.19
+2005	CO	Routt County	08107		Gas (mcf)	15196.15
+2007	CO	Routt County	08107		Gas (mcf)	15298.15
+2013	CO	Bent County	08011		Gas (mcf)	15451.92
+2011	CO	Routt County	08107		Gas (mcf)	15688.82
+2006	CO	Rio Blanco County	08103		Oil (bbl)	15771.5
+2013	CO	Baca County	08009		Oil (bbl)	16116
+2005	CO	Gunnison County	08051		Gas (mcf)	16324.13
+2011	CO	Mesa County	08077		Oil (bbl)	16369.23
+2014	CO	Baca County	08009		Oil (bbl)	16424.79
+2005	CO	Mesa County	08077		Gas (mcf)	17111.5
+2011	CO	San Miguel County	08113		Oil (bbl)	17844.34
+2014	CO	Cheyenne County	08017		Oil (bbl)	18042.99
+2014	CO	Jackson County	08057		Gas (mcf)	18600
+2013	CO	Cheyenne County	08017		Oil (bbl)	18861.47
+2010	CO	Mesa County	08077		Oil (bbl)	19169.59
+2008	CO	Moffat County	08081		Gas (mcf)	19213
+2012	CO	Cheyenne County	08017		Oil (bbl)	19559.2
+2012	CO	Baca County	08009		Oil (bbl)	20599.16
+2011	CO	Cheyenne County	08017		Oil (bbl)	20762.83
+2013	CO	Routt County	08107		Gas (mcf)	21044.52
+2010	CO	Baca County	08009		Oil (bbl)	21491.23
+2014	CO	Mesa County	08077		Oil (bbl)	22235.12
+2011	CO	Baca County	08009		Oil (bbl)	22266.36
+2010	CO	Cheyenne County	08017		Oil (bbl)	22266.37
+2007	CO	Moffat County	08081		Gas (mcf)	22279
+2011	CO	Bent County	08011		Gas (mcf)	22575.02
+2012	CO	Bent County	08011		Gas (mcf)	22587.47
+2010	CO	Dolores County	08033		Oil (bbl)	23935.42
+2009	CO	Cheyenne County	08017		Oil (bbl)	24006.82
+2011	CO	Dolores County	08033		Oil (bbl)	24155.36
+2014	CO	Mesa County	08077		Oil (bbl)	24244.62
+2013	CO	Mesa County	08077		Oil (bbl)	24308.59
+2008	CO	Cheyenne County	08017		Oil (bbl)	24439.85
+2012	CO	Delta County	08029		Gas (mcf)	24589.07
+2008	CO	Baca County	08009		Oil (bbl)	24801.69
+2007	CO	Baca County	08009		Oil (bbl)	24805.9
+2012	CO	Delta County	08029		Gas (mcf)	24898.28
+2009	CO	Dolores County	08033		Oil (bbl)	25743.32
+2007	CO	Cheyenne County	08017		Oil (bbl)	25793.28
+2012	CO	Dolores County	08033		Oil (bbl)	25821.27
+2009	CO	Baca County	08009		Oil (bbl)	25903.01
+2013	CO	Dolores County	08033		Oil (bbl)	26015.75
+2007	CO	Mesa County	08077		Oil (bbl)	26175.73
+2007	CO	Rio Blanco County	08103		Oil (bbl)	26376.5
+2014	CO	Delta County	08029		Gas (mcf)	26680.78
+2008	CO	Dolores County	08033		Oil (bbl)	28433.9
+2013	CO	Garfield County	08045		Oil (bbl)	28589
+2010	CO	Delta County	08029		Gas (mcf)	29874.03
+2006	CO	Baca County	08009		Oil (bbl)	30033.39
+2014	CO	Routt County	08107		Gas (mcf)	31519
+2006	CO	Cheyenne County	08017		Oil (bbl)	31585.46
+2010	CO	Bent County	08011		Gas (mcf)	31600.61
+2014	CO	Jackson County	08057		Oil (bbl)	32139
+2007	CO	Dolores County	08033		Oil (bbl)	32722.76
+2006	CO	Dolores County	08033		Oil (bbl)	32879.21
+2009	CO	Bent County	08011		Gas (mcf)	33235.99
+2009	CO	Delta County	08029		Gas (mcf)	33319.84
+2005	CO	Cheyenne County	08017		Oil (bbl)	33785.81
+2014	CO	Garfield County	08045		Oil (bbl)	34114.83
+2005	CO	Baca County	08009		Oil (bbl)	34247.82
+2014	CO	Routt County	08107		Gas (mcf)	34354.1
+2009	CO	Mesa County	08077		Oil (bbl)	34472.53
+2014	CO	Delta County	08029		Gas (mcf)	35427.32
+2007	CO	Bent County	08011		Gas (mcf)	36682.16
+2005	CO	Dolores County	08033		Oil (bbl)	37292.34
+2011	CO	Delta County	08029		Gas (mcf)	37533.32
+2008	CO	Bent County	08011		Gas (mcf)	38199.73
+2014	CO	Dolores County	08033		Oil (bbl)	38741.21
+2006	CO	Gunnison County	08051		Gas (mcf)	39926
+2008	CO	Mesa County	08077		Oil (bbl)	41208.01
+2005	CO	Bent County	08011		Gas (mcf)	43948.45
+2013	CO	Archuleta County	08007		Gas (mcf)	44145.67
+2006	CO	Bent County	08011		Gas (mcf)	44906.61
+2008	CO	Rio Blanco County	08103		Oil (bbl)	45804
+2005	CO	Delta County	08029		Gas (mcf)	47818.72
+2013	CO	Baca County	08009		Gas (mcf)	48364.71
+2014	CO	Baca County	08009		Gas (mcf)	48583.55
+2014	CO	Phillips County	08095		Gas (mcf)	49049
+2011	CO	Baca County	08009		Gas (mcf)	49827.3
+2008	CO	Delta County	08029		Gas (mcf)	53191.02
+2007	CO	Delta County	08029		Gas (mcf)	54251.79
+2012	CO	Baca County	08009		Gas (mcf)	57680.33
+2013	CO	Phillips County	08095		Gas (mcf)	58461
+2006	CO	Gunnison County	08051		Gas (mcf)	58512
+2009	CO	Moffat County	08081		Gas (mcf)	58658
+2009	CO	Mesa County	08077		Gas (mcf)	59158.76
+2012	CO	Jackson County	08057		Oil (bbl)	62195.08
+2010	CO	Baca County	08009		Gas (mcf)	62547.73
+2005	CO	Baca County	08009		Gas (mcf)	63424.56
+2009	CO	Rio Blanco County	08103		Oil (bbl)	64119.5
+2012	CO	Phillips County	08095		Gas (mcf)	64217
+2006	CO	Baca County	08009		Gas (mcf)	64341.51
+2006	CO	Delta County	08029		Gas (mcf)	65223.03
+2014	CO	Moffat County	08081		Oil (bbl)	67796
+2006	CO	Mesa County	08077		Gas (mcf)	68375
+2009	CO	Baca County	08009		Gas (mcf)	72546.38
+2011	CO	Jackson County	08057		Oil (bbl)	73115
+2010	CO	Jackson County	08057		Oil (bbl)	75415.21
+2013	CO	Gunnison County	08051		Gas (mcf)	76696.5
+2013	CO	Delta County	08029		Gas (mcf)	76929.45
+2010	CO	Rio Blanco County	08103		Oil (bbl)	76991.5
+2012	CO	Gunnison County	08051		Gas (mcf)	77251.5
+2014	CO	Washington County	08121		Gas (mcf)	80132.03
+2009	CO	Jackson County	08057		Oil (bbl)	80474.28
+2014	CO	Jackson County	08057		Gas (mcf)	80614.95
+2008	CO	Jackson County	08057		Oil (bbl)	80871.64
+2010	CO	Mesa County	08077		Gas (mcf)	82358.04
+2008	CO	Baca County	08009		Gas (mcf)	83032.49
+2007	CO	Jackson County	08057		Oil (bbl)	84034.67
+2007	CO	Baca County	08009		Gas (mcf)	85314.76
+2013	CO	Washington County	08121		Gas (mcf)	86830.09
+2006	CO	Moffat County	08081		Gas (mcf)	87936
+2005	CO	Washington County	08121		Gas (mcf)	88820.19
+2013	CO	Montezuma County	08083		Oil (bbl)	88845.16
+2012	CO	Washington County	08121		Gas (mcf)	90276.13
+2006	CO	Weld County	08123		Oil (bbl)	90811.42
+2007	CO	Weld County	08123		Oil (bbl)	92228.57
+2012	CO	Moffat County	08081		Oil (bbl)	94540
+2006	CO	Jackson County	08057		Oil (bbl)	95786.35
+2008	CO	Washington County	08121		Gas (mcf)	98407.71
+2011	CO	Washington County	08121		Gas (mcf)	98972
+2005	CO	Jackson County	08057		Oil (bbl)	99632.33
+2006	CO	Las Animas County	08071		Gas (mcf)	100279
+2012	CO	Montezuma County	08083		Oil (bbl)	101025.28
+2008	CO	Rio Blanco County	08103		Sodium Bi-Carbonate (tons)	102512
+2005	CO	Weld County	08123		Oil (bbl)	102632.89
+2006	CO	Washington County	08121		Gas (mcf)	104565.48
+2013	CO	Jackson County	08057		Oil (bbl)	108482.03
+2014	CO	Moffat County	08081		Gas (mcf)	108976
+2011	CO	Rio Blanco County	08103		Oil (bbl)	110789
+2013	CO	Moffat County	08081		Oil (bbl)	111454
+2010	CO	Washington County	08121		Gas (mcf)	111829.77
+2014	CO	Cheyenne County	08017		Gas (mcf)	113798.38
+2009	CO	Washington County	08121		Gas (mcf)	114121.73
+2011	CO	Montezuma County	08083		Oil (bbl)	114522.54
+2010	CO	Montezuma County	08083		Oil (bbl)	115936.41
+2007	CO	Washington County	08121		Gas (mcf)	120001.58
+2013	CO	Cheyenne County	08017		Gas (mcf)	123289.23
+2014	CO	Montezuma County	08083		Oil (bbl)	123737.95
+2014	CO	Jackson County	08057		Oil (bbl)	125039.25
+2012	CO	Moffat County	08081		Gas (mcf)	129901
+2012	CO	Cheyenne County	08017		Gas (mcf)	130600.14
+2009	CO	Montezuma County	08083		Oil (bbl)	133505.52
+2010	CO	Cheyenne County	08017		Gas (mcf)	133774.71
+2009	CO	Cheyenne County	08017		Gas (mcf)	135645.71
+2013	CO	Rio Blanco County	08103		Oil (bbl)	136777
+2014	CO	Rio Blanco County	08103		Oil (bbl)	137606
+2011	CO	Cheyenne County	08017		Gas (mcf)	141258.08
+2009	CO	Weld County	08123		Oil (bbl)	148851.02
+2008	CO	Montezuma County	08083		Oil (bbl)	153053.46
+2008	CO	Cheyenne County	08017		Gas (mcf)	153061.57
+2007	CO	Cheyenne County	08017		Gas (mcf)	155106.79
+2007	CO	Montezuma County	08083		Oil (bbl)	167489.15
+2008	CO	Weld County	08123		Oil (bbl)	179318.39
+2008	CO	Mesa County	08077		Gas (mcf)	179368.98
+2011	CO	San Miguel County	08113		Gas (mcf)	186523
+2006	CO	Cheyenne County	08017		Gas (mcf)	192555.48
+2012	CO	Rio Blanco County	08103		Oil (bbl)	193991.5
+2007	CO	Moffat County	08081		Oil (bbl)	197354.58
+2014	CO	Moffat County	08081		Oil (bbl)	200702.97
+2005	CO	Montezuma County	08083		Oil (bbl)	201016.03
+2014	CO	Archuleta County	08007		Gas (mcf)	202762.78
+2005	CO	Moffat County	08081		Oil (bbl)	202994.1
+2006	CO	Montezuma County	08083		Oil (bbl)	205965.99
+2006	CO	Moffat County	08081		Oil (bbl)	206752.12
+2007	CO	Gunnison County	08051		Gas (mcf)	207447.88
+2007	CO	Mesa County	08077		Gas (mcf)	208146.16
+2011	CO	Weld County	08123		Oil (bbl)	210415.57
+2008	CO	Moffat County	08081		Oil (bbl)	210955.66
+2005	CO	Cheyenne County	08017		Gas (mcf)	212516.1
+2008	CO	La Plata County	08067		Coal (tons)	212605
+2005	CO	Las Animas County	08071		Gas (mcf)	215957
+2007	CO	Gunnison County	08051		Gas (mcf)	226749
+2010	CO	Weld County	08123		Oil (bbl)	227087.08
+2009	CO	Moffat County	08081		Oil (bbl)	231464.48
+2010	CO	Moffat County	08081		Oil (bbl)	232549.77
+2012	CO	San Miguel County	08113		Gas (mcf)	234207
+2013	CO	Moffat County	08081		Gas (mcf)	245634
+2011	CO	Moffat County	08081		Oil (bbl)	249925.7
+2013	CO	Moffat County	08081		Oil (bbl)	252585.89
+2006	CO	Garfield County	08045		Coal (tons)	262976
+2012	CO	Moffat County	08081		Oil (bbl)	266232.07
+2013	CO	Jackson County	08057		Gas (mcf)	277576.62
+2009	CO	Jackson County	08057		Gas (mcf)	281032.7
+2005	CO	Garfield County	08045		Oil (bbl)	300192.33
+2010	CO	San Miguel County	08113		Gas (mcf)	310540
+2014	CO	Gunnison County	08051		Gas (mcf)	316740
+2005	CO	Moffat County	08081		Gas (mcf)	322416
+2006	CO	Garfield County	08045		Oil (bbl)	349452.42
+2007	CO	Garfield County	08045		Oil (bbl)	360683.02
+2009	CO	Gunnison County	08051		Gas (mcf)	381287
+2012	CO	Weld County	08123		Oil (bbl)	385595.46
+2008	CO	Gunnison County	08051		Gas (mcf)	390307.94
+2011	CO	Jackson County	08057		Gas (mcf)	407863.12
+2008	CO	Gunnison County	08051		Gas (mcf)	431682
+2008	CO	Garfield County	08045		Oil (bbl)	445429.68
+2011	CO	Gunnison County	08051		Gas (mcf)	462253
+2010	CO	Garfield County	08045		Oil (bbl)	466859.88
+2014	CO	San Miguel County	08113		Gas (mcf)	480821
+2009	CO	Garfield County	08045		Oil (bbl)	481000.16
+2013	CO	Garfield County	08045		Oil (bbl)	481264.88
+2014	CO	Garfield County	08045		Oil (bbl)	511471.52
+2009	CO	San Miguel County	08113		Gas (mcf)	512120
+2009	CO	Gunnison County	08051		Gas (mcf)	513915.17
+2010	CO	Gunnison County	08051		Gas (mcf)	553045
+2012	CO	Jackson County	08057		Gas (mcf)	596606.02
+2012	CO	Garfield County	08045		Oil (bbl)	625867.45
+2013	CO	Weld County	08123		Oil (bbl)	626074.72
+2011	CO	Mesa County	08077		Gas (mcf)	626784.54
+2011	CO	Garfield County	08045		Oil (bbl)	643848.8
+2010	CO	Jackson County	08057		Gas (mcf)	670074.29
+2013	CO	San Miguel County	08113		Gas (mcf)	674414
+2006	CO	Jackson County	08057		Gas (mcf)	676149.67
+2007	CO	Garfield County	08045		Gas (mcf)	695910.84
+2006	CO	Garfield County	08045		Gas (mcf)	697270
+2005	CO	Garfield County	08045		Gas (mcf)	751219
+2011	CO	Gunnison County	08051		Gas (mcf)	791059.24
+2005	CO	Yuma County	08125		Gas (mcf)	801309.37
+2007	CO	Jackson County	08057		Gas (mcf)	806182.64
+2005	CO	Jackson County	08057		Gas (mcf)	820479.66
+2008	CO	Jackson County	08057		Gas (mcf)	821960.77
+2008	CO	San Miguel County	08113		Gas (mcf)	843487
+2010	CO	Gunnison County	08051		Gas (mcf)	869256.77
+2006	CO	Yuma County	08125		Gas (mcf)	937507.02
+2014	CO	Yuma County	08125		Gas (mcf)	971973
+2013	CO	Yuma County	08125		Gas (mcf)	1058515.43
+2012	CO	Yuma County	08125		Gas (mcf)	1231429.43
+2013	CO	Gunnison County	08051		Gas (mcf)	1289891.57
+2012	CO	Gunnison County	08051		Gas (mcf)	1306737
+2007	CO	San Miguel County	08113		Gas (mcf)	1327303
+2011	CO	Yuma County	08125		Gas (mcf)	1369732.6
+2014	CO	Weld County	08123		Oil (bbl)	1375280.37
+2007	CO	Yuma County	08125		Gas (mcf)	1416011.17
+2007	CO	Rio Blanco County	08103		Coal (tons)	1460127
+2010	CO	Yuma County	08125		Gas (mcf)	1479056.83
+2009	CO	Yuma County	08125		Gas (mcf)	1537712.77
+2014	CO	Archuleta County	08007		Gas (mcf)	1607571.26
+2012	CO	Mesa County	08077		Gas (mcf)	1658591.43
+2006	CO	San Miguel County	08113		Gas (mcf)	1709593
+2007	CO	Weld County	08123		Gas (mcf)	1716639.46
+2008	CO	Garfield County	08045		Gas (mcf)	1793489.52
+2013	CO	Archuleta County	08007		Gas (mcf)	1794097.64
+2008	CO	Yuma County	08125		Gas (mcf)	1813489.9
+2005	CO	Rio Blanco County	08103		Gas (mcf)	1861988.5
+2012	CO	Archuleta County	08007		Gas (mcf)	1870823.27
+2012	CO	Weld County	08123		Gas (mcf)	1969727.72
+2009	CO	Weld County	08123		Gas (mcf)	2014337.45
+2006	CO	Weld County	08123		Gas (mcf)	2015951.07
+2011	CO	Weld County	08123		Gas (mcf)	2071560.43
+2008	CO	Weld County	08123		Gas (mcf)	2140198.07
+2010	CO	Weld County	08123		Gas (mcf)	2164777.71
+2011	CO	Archuleta County	08007		Gas (mcf)	2204138.95
+2013	CO	Weld County	08123		Gas (mcf)	2268221.35
+2005	CO	Weld County	08123		Gas (mcf)	2326339.75
+2014	CO	Moffat County	08081		Coal (tons)	2399673.95
+2011	CO	Garfield County	08045		Gas (mcf)	2401230.53
+2013	CO	Rio Blanco County	08103		Oil (bbl)	2414439.64
+2014	CO	Gunnison County	08051		Gas (mcf)	2431958.67
+2014	CO	Rio Blanco County	08103		Oil (bbl)	2504563.41
+2010	CO	Rio Blanco County	08103		Oil (bbl)	2536813.35
+2012	CO	Rio Blanco County	08103		Oil (bbl)	2560864.37
+2011	CO	Rio Blanco County	08103		Oil (bbl)	2606227.38
+2010	CO	Archuleta County	08007		Gas (mcf)	2617033.1
+2009	CO	Rio Blanco County	08103		Oil (bbl)	2659873.71
+2008	CO	Archuleta County	08007		Gas (mcf)	2681825.85
+2012	CO	Rio Blanco County	08103		Coal (tons)	2743564
+2007	CO	Archuleta County	08007		Gas (mcf)	2792273.71
+2006	CO	Archuleta County	08007		Gas (mcf)	2843776
+2005	CO	San Miguel County	08113		Gas (mcf)	2872395
+2009	CO	Archuleta County	08007		Gas (mcf)	2887849.72
+2008	CO	Rio Blanco County	08103		Oil (bbl)	2890334.19
+2006	CO	Rio Blanco County	08103		Oil (bbl)	2970648.34
+2005	CO	Rio Blanco County	08103		Oil (bbl)	2974167.24
+2009	CO	Rio Blanco County	08103		Coal (tons)	2993675
+2013	CO	Moffat County	08081		Coal (tons)	3004099.08
+2007	CO	Rio Blanco County	08103		Oil (bbl)	3035579.13
+2014	CO	Las Animas County	08071		Gas (mcf)	3066334.01
+2010	CO	Rio Blanco County	08103		Coal (tons)	3074981
+2005	CO	Las Animas County	08071		Gas (mcf)	3081193.9
+2013	CO	Rio Blanco County	08103		Coal (tons)	3093859.92
+2010	CO	Delta County	08029		Coal (tons)	3116270.67
+2010	CO	Moffat County	08081		Coal (tons)	3174890
+2009	CO	Garfield County	08045		Gas (mcf)	3181171.74
+2014	CO	San Miguel County	08113		Gas (mcf)	3217123.24
+2008	CO	Rio Blanco County	08103		Coal (tons)	3242108
+2005	CO	Archuleta County	08007		Gas (mcf)	3261806.51
+2011	CO	Moffat County	08081		Coal (tons)	3328554
+2013	CO	Delta County	08029		Coal (tons)	3335957.54
+2013	CO	Las Animas County	08071		Gas (mcf)	3356607.45
+2012	CO	Moffat County	08081		Coal (tons)	3360036
+2009	CO	Delta County	08029		Coal (tons)	3374982.11
+2010	CO	Garfield County	08045		Gas (mcf)	3436940.46
+2013	CO	San Miguel County	08113		Gas (mcf)	3465118.56
+2014	CO	Rio Blanco County	08103		Coal (tons)	3481849.05
+2006	CO	Las Animas County	08071		Gas (mcf)	3572400.5
+2012	CO	Las Animas County	08071		Gas (mcf)	3663905.07
+2011	CO	Las Animas County	08071		Gas (mcf)	3706621.5
+2011	CO	Delta County	08029		Coal (tons)	3713026.54
+2011	CO	Rio Blanco County	08103		Coal (tons)	3729713
+2010	CO	Las Animas County	08071		Gas (mcf)	3865966.64
+2014	CO	Huerfano County	08055		Gas (mcf)	4037516.31
+2007	CO	Las Animas County	08071		Gas (mcf)	4075809.04
+2009	CO	Moffat County	08081		Coal (tons)	4158935
+2009	CO	Las Animas County	08071		Gas (mcf)	4221540.56
+2013	CO	Huerfano County	08055		Gas (mcf)	4342331.14
+2012	CO	Huerfano County	08055		Gas (mcf)	4386155.7
+2008	CO	Las Animas County	08071		Gas (mcf)	4492586.18
+2012	CO	San Miguel County	08113		Gas (mcf)	4563276.42
+2014	CO	Weld County	08123		Gas (mcf)	4612454.84
+2006	CO	Delta County	08029		Coal (tons)	4893433.88
+2012	CO	Delta County	08029		Coal (tons)	4964647.88
+2011	CO	Huerfano County	08055		Gas (mcf)	4984314.93
+2007	CO	Delta County	08029		Coal (tons)	5116763.46
+2008	CO	Delta County	08029		Coal (tons)	5171524.27
+2005	CO	Delta County	08029		Coal (tons)	5265388.14
+2014	CO	Mesa County	08077		Gas (mcf)	5301092.9
+2008	CO	Moffat County	08081		Coal (tons)	5371601
+2010	CO	San Miguel County	08113		Gas (mcf)	5700832.87
+2005	CO	Mesa County	08077		Gas (mcf)	5800416.31
+2011	CO	San Miguel County	08113		Gas (mcf)	5861915.54
+2013	CO	Gunnison County	08051		Coal (tons)	6045511.46
+2010	CO	Huerfano County	08055		Gas (mcf)	6378267.72
+2009	CO	Gunnison County	08051		Coal (tons)	6419159.89
+2013	CO	Mesa County	08077		Gas (mcf)	6421955.67
+2010	CO	Gunnison County	08051		Coal (tons)	6770923.33
+2007	CO	Moffat County	08081		Coal (tons)	7110106
+2008	CO	Gunnison County	08051		Coal (tons)	7140447.73
+2007	CO	Rio Blanco County	08103		Gas (mcf)	7164744
+2011	CO	Gunnison County	08051		Coal (tons)	7245772.46
+2006	CO	Mesa County	08077		Gas (mcf)	7257169.94
+2005	CO	Moffat County	08081		Coal (tons)	7274125
+2008	CO	Huerfano County	08055		Gas (mcf)	7361042.5
+2006	CO	Rio Blanco County	08103		Gas (mcf)	7467935
+2009	CO	Huerfano County	08055		Gas (mcf)	7564971.71
+2007	CO	Huerfano County	08055		Gas (mcf)	7585442.23
+2006	CO	Moffat County	08081		Coal (tons)	7799334
+2006	CO	Gunnison County	08051		Coal (tons)	7856183.12
+2005	CO	Gunnison County	08051		Coal (tons)	8063367.86
+2007	CO	Gunnison County	08051		Coal (tons)	8089480.54
+2012	CO	Gunnison County	08051		Coal (tons)	8123963.12
+2009	CO	San Miguel County	08113		Gas (mcf)	8234371.26
+2008	CO	Rio Blanco County	08103		Gas (mcf)	8627539.5
+2006	CO	Huerfano County	08055		Gas (mcf)	8647717.04
+2005	CO	Huerfano County	08055		Gas (mcf)	10119998.75
+2009	CO	Rio Blanco County	08103		Gas (mcf)	10584653.5
+2012	CO	Garfield County	08045		Gas (mcf)	10796966
+2014	CO	La Plata County	08067		Gas (mcf)	11043975.8
+2007	CO	San Miguel County	08113		Gas (mcf)	11152290.86
+2013	CO	La Plata County	08067		Gas (mcf)	11216123.2
+2012	CO	La Plata County	08067		Gas (mcf)	11399123.7
+2011	CO	La Plata County	08067		Gas (mcf)	12418650.75
+2014	CO	Moffat County	08081		Gas (mcf)	12673368.5
+2008	CO	San Miguel County	08113		Gas (mcf)	12702972.08
+2010	CO	Rio Blanco County	08103		Gas (mcf)	13212923.5
+2008	CO	La Plata County	08067		Gas (mcf)	13237454.03
+2007	CO	La Plata County	08067		Gas (mcf)	13340316.97
+2007	CO	Moffat County	08081		Gas (mcf)	13895043.81
+2010	CO	Mesa County	08077		Gas (mcf)	14027268.22
+2005	CO	La Plata County	08067		Gas (mcf)	14090021.92
+2013	CO	Mesa County	08077		Gas (mcf)	14218784.06
+2006	CO	La Plata County	08067		Gas (mcf)	14228103.61
+2010	CO	La Plata County	08067		Gas (mcf)	14232342.79
+2013	CO	Moffat County	08081		Gas (mcf)	14288206.7
+2007	CO	Mesa County	08077		Gas (mcf)	14410569.94
+2014	CO	Mesa County	08077		Gas (mcf)	14502136.55
+2009	CO	La Plata County	08067		Gas (mcf)	14529242.93
+2011	CO	Mesa County	08077		Gas (mcf)	14613454.22
+2012	CO	Moffat County	08081		Gas (mcf)	14963004.46
+2006	CO	San Miguel County	08113		Gas (mcf)	15134186.32
+2009	CO	Moffat County	08081		Gas (mcf)	15351856.69
+2005	CO	San Miguel County	08113		Gas (mcf)	15715072.29
+2009	CO	Mesa County	08077		Gas (mcf)	15876580.57
+2011	CO	Moffat County	08081		Gas (mcf)	16469261.63
+2005	CO	Moffat County	08081		Gas (mcf)	17074207.02
+2014	CO	Garfield County	08045		Gas (mcf)	17260230.28
+2006	CO	Moffat County	08081		Gas (mcf)	17285534.97
+2010	CO	Moffat County	08081		Gas (mcf)	17331426.52
+2008	CO	Moffat County	08081		Gas (mcf)	17518500.36
+2012	CO	Mesa County	08077		Gas (mcf)	18047493.59
+2008	CO	Mesa County	08077		Gas (mcf)	18456446.03
+2011	CO	Rio Blanco County	08103		Gas (mcf)	19075638.5
+2013	CO	Garfield County	08045		Gas (mcf)	24327566.38
+2014	CO	Rio Blanco County	08103		Gas (mcf)	32387747.5
+2012	CO	Rio Blanco County	08103		Gas (mcf)	37859002
+2013	CO	Rio Blanco County	08103		Gas (mcf)	43338018
+2005	CO	Rio Blanco County	08103		Gas (mcf)	51999161.74
+2006	CO	Rio Blanco County	08103		Gas (mcf)	61245920.48
+2007	CO	Rio Blanco County	08103		Gas (mcf)	63971235.99
+2008	CO	Rio Blanco County	08103		Gas (mcf)	65665065.42
+2013	CO	Rio Blanco County	08103		Gas (mcf)	73308195.07
+2009	CO	Rio Blanco County	08103		Gas (mcf)	82120723.74
+2014	CO	Rio Blanco County	08103		Gas (mcf)	83319632.48
+2012	CO	Rio Blanco County	08103		Gas (mcf)	92330487.84
+2005	CO	Garfield County	08045		Gas (mcf)	96769735.01
+2010	CO	Rio Blanco County	08103		Gas (mcf)	104530327.16
+2011	CO	Rio Blanco County	08103		Gas (mcf)	105916565.85
+2006	CO	Garfield County	08045		Gas (mcf)	110931358.62
+2007	CO	Garfield County	08045		Gas (mcf)	122102389.62
+2005	CO	Dolores County	08033		Gas (mcf)	131572648.1
+2005	CO	Montezuma County	08083		Gas (mcf)	133311952.77
+2007	CO	Dolores County	08033		Gas (mcf)	135489449.2
+2006	CO	Dolores County	08033		Gas (mcf)	135936815.61
+2007	CO	Montezuma County	08083		Gas (mcf)	136690431.93
+2006	CO	Montezuma County	08083		Gas (mcf)	136944763.01
+2008	CO	Montezuma County	08083		Gas (mcf)	143546783.52
+2008	CO	Garfield County	08045		Gas (mcf)	151517705.22
+2013	CO	Montezuma County	08083		Gas (mcf)	151579521.05
+2014	CO	Montezuma County	08083		Gas (mcf)	151861228.3
+2009	CO	Garfield County	08045		Gas (mcf)	153673513.79
+2010	CO	Garfield County	08045		Gas (mcf)	154923001.22
+2012	CO	Montezuma County	08083		Gas (mcf)	155144319.28
+2009	CO	Montezuma County	08083		Gas (mcf)	158953158.47
+2010	CO	Montezuma County	08083		Gas (mcf)	159622206.68
+2011	CO	Montezuma County	08083		Gas (mcf)	160743409.09
+2008	CO	Dolores County	08033		Gas (mcf)	169880124.49
+2013	CO	Garfield County	08045		Gas (mcf)	181955272.28
+2011	CO	Garfield County	08045		Gas (mcf)	185330964.18
+2012	CO	Dolores County	08033		Gas (mcf)	185646234.62
+2014	CO	Garfield County	08045		Gas (mcf)	185756177.1
+2011	CO	Dolores County	08033		Gas (mcf)	190240575.01
+2009	CO	Dolores County	08033		Gas (mcf)	190630020.05
+2013	CO	Dolores County	08033		Gas (mcf)	191109179.59
+2010	CO	Dolores County	08033		Gas (mcf)	191415675.4
+2012	CO	Garfield County	08045		Gas (mcf)	192979531.71
+2014	CO	Dolores County	08033		Gas (mcf)	207615758.04

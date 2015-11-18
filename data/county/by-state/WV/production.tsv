@@ -1,120 +1,83 @@
-Year	State	County	FIPS	Commodity	Product	Type	Volume
-2004	WV	Braxton	54007	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	170189
-2004	WV	Grant	54023	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	31504.09
-2004	WV	Lewis	54041	Gas	Processed (Residue) Gas (mcf)	Royalties	3500
-2004	WV	Lewis	54041	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	344517.67
-2004	WV	Lewis	54041	Oil	Oil (bbl)	Royalties	27.19
-2004	WV	Mingo	54059	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	101160
-2004	WV	Pendleton	54071	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	495.91
-2004	WV	Pocahontas	54075	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	96800.11
-2004	WV	Preston	54077	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	97846
-2004	WV	Randolph	54083	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	37648
-2004	WV	Tucker	54093	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	549073
-2004	WV	Wayne	54099	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	24338.16
-2004	WV	Wood	54107	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	0.02
-2004	WV	Wyoming	54109	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	12922.85
-2005	WV	Braxton	54007	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	186127
-2005	WV	Grant	54023	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	31397.4
-2005	WV	Lewis	54041	Gas	Processed (Residue) Gas (mcf)	Royalties	2123
-2005	WV	Lewis	54041	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	194888.36
-2005	WV	Lewis	54041	Oil	Oil (bbl)	Royalties	288
-2005	WV	Mingo	54059	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	91382
-2005	WV	Pendleton	54071	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	978.6
-2005	WV	Pocahontas	54075	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	96163.09
-2005	WV	Preston	54077	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	67267
-2005	WV	Randolph	54083	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	35848
-2005	WV	Tucker	54093	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1592510
-2005	WV	Wayne	54099	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	19344.86
-2005	WV	Wood	54107	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	4.05
-2005	WV	Wyoming	54109	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	13007.25
-2006	WV	Braxton	54007	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	162652
-2006	WV	Grant	54023	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	28740.02
-2006	WV	Lewis	54041	Gas	Processed (Residue) Gas (mcf)	Royalties	3364
-2006	WV	Lewis	54041	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	207554.86
-2006	WV	Lewis	54041	Oil	Oil (bbl)	Royalties	537.04
-2006	WV	Mingo	54059	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	110453.15
-2006	WV	Pendleton	54071	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	643.98
-2006	WV	Pocahontas	54075	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	80268.38
-2006	WV	Preston	54077	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	48035
-2006	WV	Randolph	54083	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	32232
-2006	WV	Tucker	54093	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	491586
-2006	WV	Wayne	54099	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	21514.32
-2006	WV	Wood	54107	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2.88
-2006	WV	Wyoming	54109	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	19825.61
-2007	WV	Braxton	54007	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	146730
-2007	WV	Grant	54023	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	22701.68
-2007	WV	Lewis	54041	Gas	Processed (Residue) Gas (mcf)	Royalties	3037
-2007	WV	Lewis	54041	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	190426.98
-2007	WV	Mingo	54059	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	157488.87
-2007	WV	Pendleton	54071	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	62195.91
-2007	WV	Pocahontas	54075	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	65639.91
-2007	WV	Preston	54077	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	42507
-2007	WV	Randolph	54083	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	35319
-2007	WV	Tucker	54093	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	147674.93
-2007	WV	Wayne	54099	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	21566.38
-2007	WV	Wood	54107	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	6.49
-2007	WV	Wyoming	54109	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	13232.2
-2008	WV	Braxton	54007	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	146268
-2008	WV	Lewis	54041	Gas	Processed (Residue) Gas (mcf)	Royalties	2773
-2008	WV	Lewis	54041	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	160728.25
-2008	WV	Mingo	54059	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	154822.36
-2008	WV	Pendleton	54071	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	188774.79
-2008	WV	Pocahontas	54075	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	49269.18
-2008	WV	Preston	54077	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	38566
-2008	WV	Randolph	54083	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	22189
-2008	WV	Tucker	54093	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	147066.72
-2008	WV	Wayne	54099	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	16944.68
-2008	WV	Wood	54107	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2.01
-2008	WV	Wyoming	54109	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	11419.06
-2009	WV	Braxton	54007	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	133645
-2009	WV	Lewis	54041	Gas	Processed (Residue) Gas (mcf)	Royalties	2208
-2009	WV	Lewis	54041	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	147228.22
-2009	WV	Mingo	54059	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	145741.07
-2009	WV	Pendleton	54071	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	63717.7
-2009	WV	Pocahontas	54075	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	51119.18
-2009	WV	Preston	54077	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	32788
-2009	WV	Randolph	54083	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	29828
-2009	WV	Tucker	54093	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	195075.32
-2009	WV	Wayne	54099	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	15147.48
-2009	WV	Wood	54107	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	77.59
-2009	WV	Wyoming	54109	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	9887.83
-2010	WV	Braxton	54007	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	122598
-2010	WV	Lewis	54041	Gas	Processed (Residue) Gas (mcf)	Royalties	1940.4
-2010	WV	Lewis	54041	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	123197.31
-2010	WV	Lewis	54041	Oil	Oil (bbl)	Royalties	20.05
-2010	WV	Mingo	54059	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	135714.79
-2010	WV	Pendleton	54071	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	77107.08
-2010	WV	Pocahontas	54075	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	50916.51
-2010	WV	Preston	54077	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	28979.12
-2010	WV	Randolph	54083	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	45554.15
-2010	WV	Tucker	54093	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	115781.68
-2010	WV	Wayne	54099	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	15858.86
-2010	WV	Wood	54107	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	93.13
-2010	WV	Wyoming	54109	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	9845.19
-2011	WV	Braxton	54007	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	9933
-2011	WV	Lewis	54041	Gas	Processed (Residue) Gas (mcf)	Royalties	1757.12
-2011	WV	Lewis	54041	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	107737.77
-2011	WV	Mingo	54059	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	128623.5
-2011	WV	Pendleton	54071	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	105433.26
-2011	WV	Pocahontas	54075	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	32664.64
-2011	WV	Preston	54077	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	25233
-2011	WV	Randolph	54083	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	41961.49
-2011	WV	Tucker	54093	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	147912.46
-2011	WV	Wayne	54099	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	8251.81
-2011	WV	Wayne	54099	Oil	Oil (bbl)	Royalties	0.08
-2011	WV	Wyoming	54109	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	10931.95
-2012	WV	Lewis	54041	Gas	Processed (Residue) Gas (mcf)	Royalties	1093.12
-2012	WV	Lewis	54041	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	52973.74
-2012	WV	Mingo	54059	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	90392.15
-2012	WV	Pendleton	54071	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	55115.49
-2012	WV	Preston	54077	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	24674
-2012	WV	Randolph	54083	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	24846.81
-2012	WV	Tucker	54093	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	27480.12
-2012	WV	Wayne	54099	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	7647.01
-2012	WV	Wyoming	54109	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	11165.17
-2013	WV	Lewis	54041	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	29351.19
-2013	WV	Lewis	54041	Oil	Oil (bbl)	Royalties	4
-2013	WV	Pendleton	54071	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	69166.28
-2013	WV	Preston	54077	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	22575
-2013	WV	Randolph	54083	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	26708.27
-2013	WV	Tucker	54093	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	17644
+Year	State	County	FIPS	Commodity	Product	Volume
+2010	WV	Lewis County	54041		Oil (bbl)	8
+2011	WV	Lewis County	54041		Oil (bbl)	14
+2009	WV	Lewis County	54041		Oil (bbl)	193
+2014	WV	Lewis County	54041		Gas (mcf)	811
+2014	WV	Wyoming County	54109		Gas (mcf)	928.34
+2013	WV	Wyoming County	54109		Gas (mcf)	983.32
+2012	WV	Wyoming County	54109		Gas (mcf)	1059.72
+2011	WV	Wyoming County	54109		Gas (mcf)	1168.03
+2010	WV	Wyoming County	54109		Gas (mcf)	1305.31
+2009	WV	Wyoming County	54109		Gas (mcf)	1428.16
+2008	WV	Wyoming County	54109		Gas (mcf)	1531.32
+2007	WV	Wyoming County	54109		Gas (mcf)	1729.51
+2006	WV	Pendleton County	54071		Gas (mcf)	1799.84
+2005	WV	Pendleton County	54071		Gas (mcf)	1976.86
+2006	WV	Wyoming County	54109		Gas (mcf)	2113.66
+2005	WV	Wyoming County	54109		Gas (mcf)	3521.4
+2008	WV	Randolph County	54083		Gas (mcf)	6605.85
+2009	WV	Lewis County	54041		Gas (mcf)	8661
+2010	WV	Lewis County	54041		Gas (mcf)	8881
+2011	WV	Lewis County	54041		Gas (mcf)	9237
+2012	WV	Randolph County	54083		Gas (mcf)	10016.83
+2008	WV	Lewis County	54041		Gas (mcf)	10906
+2007	WV	Lewis County	54041		Gas (mcf)	11766
+2006	WV	Lewis County	54041		Gas (mcf)	12720
+2012	WV	Grant County	54023		Gas (mcf)	16000.49
+2010	WV	Grant County	54023		Gas (mcf)	19104.86
+2007	WV	Randolph County	54083		Gas (mcf)	21344.32
+2014	WV	Preston County	54077		Gas (mcf)	22118
+2014	WV	Randolph County	54083		Gas (mcf)	23197.06
+2008	WV	Grant County	54023		Gas (mcf)	24070.18
+2009	WV	Grant County	54023		Gas (mcf)	24198.91
+2013	WV	Preston County	54077		Gas (mcf)	24355.94
+2014	WV	Pendleton County	54071		Gas (mcf)	25108.83
+2007	WV	Grant County	54023		Gas (mcf)	25486.73
+2012	WV	Pendleton County	54071		Gas (mcf)	25981.94
+2013	WV	Randolph County	54083		Gas (mcf)	26089.55
+2011	WV	Grant County	54023		Gas (mcf)	26946.2
+2007	WV	Pendleton County	54071		Gas (mcf)	27135.36
+2006	WV	Grant County	54023		Gas (mcf)	27482.33
+2011	WV	Preston County	54077		Gas (mcf)	27508.48
+2012	WV	Preston County	54077		Gas (mcf)	28865.1
+2005	WV	Grant County	54023		Gas (mcf)	30257.91
+2013	WV	Pendleton County	54071		Gas (mcf)	30857.31
+2010	WV	Preston County	54077		Gas (mcf)	30878.25
+2009	WV	Pendleton County	54071		Gas (mcf)	30932.91
+2011	WV	Pocahontas County	54075		Gas (mcf)	35218
+2009	WV	Preston County	54077		Gas (mcf)	35315.4
+2010	WV	Pendleton County	54071		Gas (mcf)	35471.64
+2006	WV	Randolph County	54083		Gas (mcf)	37097.86
+2010	WV	Pocahontas County	54075		Gas (mcf)	37511
+2008	WV	Preston County	54077		Gas (mcf)	38657.64
+2005	WV	Randolph County	54083		Gas (mcf)	39741.82
+2007	WV	Preston County	54077		Gas (mcf)	42498.78
+2014	WV	Tucker County	54093		Gas (mcf)	45254.5
+2009	WV	Pocahontas County	54075		Gas (mcf)	46394
+2011	WV	Pendleton County	54071		Gas (mcf)	47017.57
+2006	WV	Preston County	54077		Gas (mcf)	48010.28
+2008	WV	Pocahontas County	54075		Gas (mcf)	55075.5
+2014	WV	Mingo County	54059		Gas (mcf)	55205.66
+2012	WV	Tucker County	54093		Gas (mcf)	56641.83
+2013	WV	Tucker County	54093		Gas (mcf)	57221.28
+2013	WV	Mingo County	54059		Gas (mcf)	58474.68
+2012	WV	Mingo County	54059		Gas (mcf)	63018.28
+2005	WV	Preston County	54077		Gas (mcf)	66904.94
+2011	WV	Mingo County	54059		Gas (mcf)	69458.97
+2007	WV	Pocahontas County	54075		Gas (mcf)	69751
+2010	WV	Mingo County	54059		Gas (mcf)	77622.69
+2008	WV	Pendleton County	54071		Gas (mcf)	79843.72
+2009	WV	Mingo County	54059		Gas (mcf)	84927.84
+2006	WV	Pocahontas County	54075		Gas (mcf)	89762
+2008	WV	Mingo County	54059		Gas (mcf)	91062.68
+2007	WV	Mingo County	54059		Gas (mcf)	102848.49
+2005	WV	Pocahontas County	54075		Gas (mcf)	105698
+2006	WV	Mingo County	54059		Gas (mcf)	125692.34
+2010	WV	Tucker County	54093		Gas (mcf)	168632.92
+2005	WV	Mingo County	54059		Gas (mcf)	209406.6
+2011	WV	Tucker County	54093		Gas (mcf)	215917.91
+2007	WV	Tucker County	54093		Gas (mcf)	217288.22
+2006	WV	Tucker County	54093		Gas (mcf)	229622.63
+2009	WV	Tucker County	54093		Gas (mcf)	235810.31
+2005	WV	Tucker County	54093		Gas (mcf)	263500.67
+2008	WV	Tucker County	54093		Gas (mcf)	289169.42

@@ -1,186 +1,157 @@
-Year	State	County	FIPS	Commodity	Product	Type	Volume
-2004	AR	Columbia	05027	Gas	Processed (Residue) Gas (mcf)	Royalties	6755.76
-2004	AR	Columbia	05027	Oil	Oil (bbl)	Royalties	58.64
-2004	AR	Conway	05029	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	15214.06
-2004	AR	Crawford	05033	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	125520.89
-2004	AR	Franklin	05047	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	252772.91
-2004	AR	Johnson	05071	Gas	Processed (Residue) Gas (mcf)	Royalties	1647
-2004	AR	Johnson	05071	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	869578.12
-2004	AR	Logan	05083	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	631898.62
-2004	AR	Montgomery	05097	Quartz Crystal	Quartz Crystal (lb)	Royalties	7956
-2004	AR	Pope	05115	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	14345.51
-2004	AR	Sebastian	05131	Gas	Coal Bed Methane (mcf)	Royalties	2455.7
-2004	AR	Sebastian	05131	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	4540852.53
-2004	AR	Yell	05149	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1593579.93
-2005	AR	Columbia	05027	Gas	Processed (Residue) Gas (mcf)	Royalties	5461.36
-2005	AR	Columbia	05027	Oil	Oil (bbl)	Royalties	34.45
-2005	AR	Conway	05029	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	31501.09
-2005	AR	Crawford	05033	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	117240.26
-2005	AR	Franklin	05047	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	205574.69
-2005	AR	Johnson	05071	Gas	Processed (Residue) Gas (mcf)	Royalties	472
-2005	AR	Johnson	05071	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	771468.99
-2005	AR	Logan	05083	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1367762.03
-2005	AR	Montgomery	05097	Quartz Crystal	Quartz Crystal (lb)	Royalties	10236
-2005	AR	Pope	05115	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	12490.41
-2005	AR	Sebastian	05131	Gas	Coal Bed Methane (mcf)	Royalties	2073.6
-2005	AR	Sebastian	05131	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	4028795.61
-2005	AR	Yell	05149	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2695021.4
-2006	AR	Columbia	05027	Gas	Processed (Residue) Gas (mcf)	Royalties	4520.8
-2006	AR	Columbia	05027	Oil	Oil (bbl)	Royalties	27.76
-2006	AR	Conway	05029	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	23631.75
-2006	AR	Crawford	05033	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	108058.14
-2006	AR	Franklin	05047	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	196174.81
-2006	AR	Johnson	05071	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	655069.97
-2006	AR	Logan	05083	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1342699.07
-2006	AR	Montgomery	05097	Quartz Crystal	Quartz Crystal (lb)	Royalties	4133
-2006	AR	Pope	05115	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	11381.94
-2006	AR	Sebastian	05131	Gas	Coal Bed Methane (mcf)	Royalties	1698.77
-2006	AR	Sebastian	05131	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	4787544.67
-2006	AR	Yell	05149	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3361825.49
-2007	AR	Columbia	05027	Gas	Processed (Residue) Gas (mcf)	Royalties	3899.88
-2007	AR	Columbia	05027	Oil	Oil (bbl)	Royalties	22.8
-2007	AR	Conway	05029	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	131172.93
-2007	AR	Crawford	05033	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	115349.67
-2007	AR	Faulkner	05045	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	303.9
-2007	AR	Franklin	05047	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	181922.84
-2007	AR	Johnson	05071	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	654335.6
-2007	AR	Logan	05083	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1931265.18
-2007	AR	Montgomery	05097	Quartz Crystal	Quartz Crystal (lb)	Royalties	4679
-2007	AR	Montgomery	05097	Wavellite	Wavellite (spcmn)	Royalties	1600
-2007	AR	Pope	05115	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	10726.41
-2007	AR	Sebastian	05131	Gas	Coal Bed Methane (mcf)	Royalties	30573.08
-2007	AR	Sebastian	05131	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	4373668.36
-2007	AR	Van Buren	05141	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	68627.54
-2007	AR	Yell	05149	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1985409.1
-2008	AR	Cleburne	05023	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	6761
-2008	AR	Columbia	05027	Gas	Processed (Residue) Gas (mcf)	Royalties	3029.77
-2008	AR	Columbia	05027	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	408.29
-2008	AR	Columbia	05027	Oil	Oil (bbl)	Royalties	6.47
-2008	AR	Conway	05029	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	902400.99
-2008	AR	Crawford	05033	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	142779.65
-2008	AR	Faulkner	05045	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	43218.34
-2008	AR	Franklin	05047	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	201895.7
-2008	AR	Garland	05051	Wavellite	Wavellite (spcmn)	Royalties	180
-2008	AR	Johnson	05071	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	571300.41
-2008	AR	Logan	05083	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3054234.73
-2008	AR	Montgomery	05097	Quartz Crystal	Quartz Crystal (lb)	Royalties	13110
-2008	AR	Pope	05115	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	9649.17
-2008	AR	Sebastian	05131	Gas	Coal Bed Methane (mcf)	Royalties	61195.04
-2008	AR	Sebastian	05131	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	4218897
-2008	AR	Van Buren	05141	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	216359.3
-2008	AR	White	05145	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	35412.59
-2008	AR	Yell	05149	Gas	Fuel Gas (mcf)	Royalties	2940.08
-2008	AR	Yell	05149	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1826824.69
-2009	AR	Cleburne	05023	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	143244.39
-2009	AR	Columbia	05027	Gas	Processed (Residue) Gas (mcf)	Royalties	2348.44
-2009	AR	Columbia	05027	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	599.59
-2009	AR	Columbia	05027	Oil	Oil (bbl)	Royalties	5.36
-2009	AR	Conway	05029	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1133175.16
-2009	AR	Crawford	05033	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	120416.98
-2009	AR	Faulkner	05045	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	177647.18
-2009	AR	Franklin	05047	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	197790.47
-2009	AR	Fulton	05049	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1596
-2009	AR	Garland	05051	Wavellite	Wavellite (spcmn)	Royalties	843
-2009	AR	Johnson	05071	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	514997.79
-2009	AR	Logan	05083	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	6716648.16
-2009	AR	Montgomery	05097	Quartz Crystal	Quartz Crystal (lb)	Royalties	2086
-2009	AR	Pope	05115	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	9718.45
-2009	AR	Scott	05127	Gas	Coal Bed Methane (mcf)	Royalties	24728.76
-2009	AR	Scott	05127	Gas	Fuel Gas (mcf)	Royalties	1869.69
-2009	AR	Sebastian	05131	Gas	Coal Bed Methane (mcf)	Royalties	68882.18
-2009	AR	Sebastian	05131	Gas	Fuel Gas (mcf)	Royalties	350.31
-2009	AR	Sebastian	05131	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3725475.47
-2009	AR	Van Buren	05141	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	836094.24
-2009	AR	White	05145	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	57050.27
-2009	AR	Yell	05149	Gas	Fuel Gas (mcf)	Royalties	6360.5
-2009	AR	Yell	05149	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2452002.3
-2010	AR	Cleburne	05023	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	246715.87
-2010	AR	Columbia	05027	Gas	Processed (Residue) Gas (mcf)	Royalties	1999.92
-2010	AR	Columbia	05027	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	487.72
-2010	AR	Columbia	05027	Oil	Oil (bbl)	Royalties	2.24
-2010	AR	Conway	05029	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1176202.11
-2010	AR	Crawford	05033	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	130640.95
-2010	AR	Faulkner	05045	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	106075.66
-2010	AR	Franklin	05047	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	163761.52
-2010	AR	Fulton	05049	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	640
-2010	AR	Garland	05051	Wavellite	Wavellite (spcmn)	Royalties	87
-2010	AR	Johnson	05071	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	425451.57
-2010	AR	Logan	05083	Gas	Fuel Gas (mcf)	Royalties	9512
-2010	AR	Logan	05083	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	8886077.72
-2010	AR	Montgomery	05097	Quartz Crystal	Quartz Crystal (lb)	Royalties	1505
-2010	AR	Pope	05115	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	8659.57
-2010	AR	Scott	05127	Gas	Coal Bed Methane (mcf)	Royalties	13231.85
-2010	AR	Scott	05127	Gas	Fuel Gas (mcf)	Royalties	1035.07
-2010	AR	Sebastian	05131	Gas	Coal Bed Methane (mcf)	Royalties	47228.99
-2010	AR	Sebastian	05131	Gas	Fuel Gas (mcf)	Royalties	193.93
-2010	AR	Sebastian	05131	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3597974.94
-2010	AR	Van Buren	05141	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	771593.93
-2010	AR	White	05145	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	40802.9
-2010	AR	Yell	05149	Gas	Fuel Gas (mcf)	Royalties	3663.06
-2010	AR	Yell	05149	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1886912.25
-2011	AR	Cleburne	05023	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	286005.84
-2011	AR	Columbia	05027	Gas	Processed (Residue) Gas (mcf)	Royalties	1478.89
-2011	AR	Columbia	05027	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1018.7
-2011	AR	Columbia	05027	Oil	Oil (bbl)	Royalties	4.87
-2011	AR	Conway	05029	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1118376.3
-2011	AR	Crawford	05033	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	110753.56
-2011	AR	Faulkner	05045	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	25839.39
-2011	AR	Franklin	05047	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	167767.75
-2011	AR	Fulton	05049	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	444
-2011	AR	Johnson	05071	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	373084.62
-2011	AR	Logan	05083	Gas	Fuel Gas (mcf)	Royalties	11569
-2011	AR	Logan	05083	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	6209448.35
-2011	AR	Montgomery	05097	Quartz Crystal	Quartz Crystal (lb)	Royalties	158
-2011	AR	Pope	05115	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	8007.46
-2011	AR	Scott	05127	Gas	Coal Bed Methane (mcf)	Royalties	7005.44
-2011	AR	Scott	05127	Gas	Fuel Gas (mcf)	Royalties	363.83
-2011	AR	Sebastian	05131	Gas	Coal Bed Methane (mcf)	Royalties	40369.76
-2011	AR	Sebastian	05131	Gas	Fuel Gas (mcf)	Royalties	68.16
-2011	AR	Sebastian	05131	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3352252.9
-2011	AR	Van Buren	05141	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	648630.13
-2011	AR	White	05145	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	178099.96
-2011	AR	Yell	05149	Gas	Fuel Gas (mcf)	Royalties	1106.08
-2011	AR	Yell	05149	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	554477.54
-2012	AR	Cleburne	05023	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	381909.2
-2012	AR	Columbia	05027	Gas	Processed (Residue) Gas (mcf)	Royalties	1717.27
-2012	AR	Columbia	05027	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	572.74
-2012	AR	Columbia	05027	Oil	Condensate (bbl)	Royalties	1.93
-2012	AR	Conway	05029	Gas	Gas Lost - Flared or Vented (mcf)	Royalties	232.25
-2012	AR	Conway	05029	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1432502
-2012	AR	Crawford	05033	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	98474.13
-2012	AR	Faulkner	05045	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	41003.51
-2012	AR	Franklin	05047	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	141233.62
-2012	AR	Fulton	05049	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	341
-2012	AR	Johnson	05071	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	348872.23
-2012	AR	Logan	05083	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	5119034.99
-2012	AR	Montgomery	05097	Quartz Crystal	Quartz Crystal (lb)	Royalties	205
-2012	AR	Pope	05115	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	6635.92
-2012	AR	Scott	05127	Gas	Coal Bed Methane (mcf)	Royalties	4619.48
-2012	AR	Sebastian	05131	Gas	Coal Bed Methane (mcf)	Royalties	33951.79
-2012	AR	Sebastian	05131	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2980987.1
-2012	AR	Van Buren	05141	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	758575.39
-2012	AR	White	05145	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	123414.93
-2012	AR	Yell	05149	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	505369.93
-2013	AR	Cleburne	05023	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	393820.82
-2013	AR	Columbia	05027	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1777.89
-2013	AR	Columbia	05027	Oil	Condensate (bbl)	Royalties	0.65
-2013	AR	Columbia	05027	Oil	Oil (bbl)	Royalties	0.66
-2013	AR	Conway	05029	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1673854.45
-2013	AR	Crawford	05033	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	96971.56
-2013	AR	Faulkner	05045	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	45610.87
-2013	AR	Franklin	05047	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	124437.6
-2013	AR	Fulton	05049	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	333.53
-2013	AR	Johnson	05071	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	350618.09
-2013	AR	Logan	05083	Gas	Fuel Gas (mcf)	Royalties	8548.54
-2013	AR	Logan	05083	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	4182521.76
-2013	AR	Montgomery	05097	Quartz Crystal	Quartz Crystal (lb)	Royalties	84
-2013	AR	Pope	05115	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3883.53
-2013	AR	Scott	05127	Gas	Coal Bed Methane (mcf)	Royalties	6069.75
-2013	AR	Scott	05127	Gas	Fuel Gas (mcf)	Royalties	240.02
-2013	AR	Sebastian	05131	Gas	Coal Bed Methane (mcf)	Royalties	30173.36
-2013	AR	Sebastian	05131	Gas	Fuel Gas (mcf)	Royalties	772.75
-2013	AR	Sebastian	05131	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2668942.96
-2013	AR	Van Buren	05141	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	593759.16
-2013	AR	White	05145	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	138907.16
-2013	AR	Yell	05149	Gas	Fuel Gas (mcf)	Royalties	7562
-2013	AR	Yell	05149	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	403735.35
+Year	State	County	FIPS	Commodity	Product	Volume
+2014	AR	Columbia County	05027		Oil (bbl)	1.02
+2013	AR	Columbia County	05027		Oil (bbl)	1.4
+2011	AR	Columbia County	05027		Oil (bbl)	2.04
+2010	AR	Columbia County	05027		Oil (bbl)	2.24
+2012	AR	Columbia County	05027		Oil (bbl)	2.35
+2009	AR	Columbia County	05027		Oil (bbl)	5.68
+2008	AR	Columbia County	05027		Oil (bbl)	8.03
+2007	AR	Columbia County	05027		Oil (bbl)	20.96
+2006	AR	Columbia County	05027		Oil (bbl)	23.47
+2005	AR	Columbia County	05027		Oil (bbl)	32.14
+2012	AR	Sebastian County	05131		Gas (mcf)	1233.26
+2006	AR	Van Buren County	05141		Gas (mcf)	1676.93
+2013	AR	Sebastian County	05131		Gas (mcf)	1835.44
+2013	AR	Columbia County	05027		Gas (mcf)	1962.66
+2011	AR	Sebastian County	05131		Gas (mcf)	2040.49
+2014	AR	Columbia County	05027		Gas (mcf)	2347.57
+2014	AR	Sebastian County	05131		Gas (mcf)	2365.09
+2007	AR	Montgomery County	05097		Quartz Crystal (tickets/pounds)	2400
+2012	AR	Columbia County	05027		Gas (mcf)	2512.5
+2010	AR	Columbia County	05027		Gas (mcf)	2697.65
+2011	AR	Columbia County	05027		Gas (mcf)	2748.74
+2009	AR	Columbia County	05027		Gas (mcf)	3422.19
+2012	AR	Scott County	05127		Gas (mcf)	3800.74
+2010	AR	Sebastian County	05131		Gas (mcf)	3832.32
+2008	AR	Columbia County	05027		Gas (mcf)	4084.04
+2007	AR	Columbia County	05027		Gas (mcf)	4560.46
+2006	AR	Columbia County	05027		Gas (mcf)	5185.16
+2013	AR	Scott County	05127		Gas (mcf)	5656.56
+2005	AR	Columbia County	05027		Gas (mcf)	6123.83
+2011	AR	Scott County	05127		Gas (mcf)	6288.51
+2006	AR	Montgomery County	05097		Quartz Crystal (tickets/pounds)	6350
+2008	AR	Cleburne County	05023		Gas (mcf)	7113.94
+2014	AR	Scott County	05127		Gas (mcf)	7288.91
+2005	AR	Montgomery County	05097		Quartz Crystal (tickets/pounds)	8065
+2010	AR	Scott County	05127		Gas (mcf)	11810.68
+2009	AR	Sebastian County	05131		Gas (mcf)	11944.96
+2006	AR	Conway County	05029		Gas (mcf)	18020.25
+2009	AR	Scott County	05127		Gas (mcf)	18483.04
+2007	AR	Pope County	05115		Gas (mcf)	19939.73
+2008	AR	White County	05145		Gas (mcf)	20387.81
+2006	AR	Pope County	05115		Gas (mcf)	21148.1
+2005	AR	Pope County	05115		Gas (mcf)	22473.04
+2011	AR	Sharp County	05135		Gas (mcf)	27262.58
+2005	AR	Conway County	05029		Gas (mcf)	28015.5
+2009	AR	Sharp County	05135		Gas (mcf)	29010.18
+2014	AR	Sharp County	05135		Gas (mcf)	29092.75
+2010	AR	Sharp County	05135		Gas (mcf)	29153.83
+2013	AR	Sharp County	05135		Gas (mcf)	29710.35
+2007	AR	Sharp County	05135		Gas (mcf)	30484.8
+2012	AR	Sharp County	05135		Gas (mcf)	31334.28
+2008	AR	Sharp County	05135		Gas (mcf)	32237.3
+2006	AR	Sharp County	05135		Gas (mcf)	34327.64
+2005	AR	Sharp County	05135		Gas (mcf)	35750.61
+2010	AR	White County	05145		Gas (mcf)	47038.69
+2009	AR	White County	05145		Gas (mcf)	52594.25
+2007	AR	Van Buren County	05141		Gas (mcf)	68074.03
+2009	AR	Pope County	05115		Gas (mcf)	87393.52
+2014	AR	Crawford County	05033		Gas (mcf)	89567.62
+2013	AR	Crawford County	05033		Gas (mcf)	97667.92
+2012	AR	Crawford County	05033		Gas (mcf)	102821.31
+2009	AR	Crawford County	05033		Gas (mcf)	105772.12
+2009	AR	Cleburne County	05023		Gas (mcf)	107054.12
+2011	AR	Crawford County	05033		Gas (mcf)	107361.22
+2010	AR	Crawford County	05033		Gas (mcf)	107631.9
+2006	AR	Crawford County	05033		Gas (mcf)	120164.99
+2005	AR	Crawford County	05033		Gas (mcf)	122964.5
+2007	AR	Crawford County	05033		Gas (mcf)	123171.16
+2008	AR	Pope County	05115		Gas (mcf)	124119.43
+2008	AR	Crawford County	05033		Gas (mcf)	128826.07
+2014	AR	Franklin County	05047		Gas (mcf)	132575.31
+2014	AR	Pope County	05115		Gas (mcf)	141081.46
+2007	AR	Conway County	05029		Gas (mcf)	146172.41
+2013	AR	Pope County	05115		Gas (mcf)	154871.11
+2013	AR	Franklin County	05047		Gas (mcf)	158381.38
+2012	AR	Franklin County	05047		Gas (mcf)	179370.18
+2010	AR	Franklin County	05047		Gas (mcf)	187918.53
+2010	AR	Cleburne County	05023		Gas (mcf)	201978.85
+2012	AR	Pope County	05115		Gas (mcf)	205219.54
+2011	AR	Franklin County	05047		Gas (mcf)	209174.83
+2007	AR	Franklin County	05047		Gas (mcf)	222406.74
+2006	AR	Franklin County	05047		Gas (mcf)	222908.09
+2005	AR	Franklin County	05047		Gas (mcf)	227850.13
+2011	AR	Cleburne County	05023		Gas (mcf)	240179.82
+2009	AR	Franklin County	05047		Gas (mcf)	243782.69
+2008	AR	Franklin County	05047		Gas (mcf)	273242.04
+2011	AR	Pope County	05115		Gas (mcf)	286772.45
+2014	AR	Faulkner County	05045		Gas (mcf)	298942.06
+2007	AR	Faulkner County	05045		Gas (mcf)	299519
+2008	AR	Faulkner County	05045		Gas (mcf)	304517.52
+2014	AR	Johnson County	05071		Gas (mcf)	336600.87
+2012	AR	Cleburne County	05023		Gas (mcf)	348396.11
+2013	AR	Faulkner County	05045		Gas (mcf)	358604.57
+2013	AR	Johnson County	05071		Gas (mcf)	361008.46
+2012	AR	Johnson County	05071		Gas (mcf)	364227.25
+2011	AR	Johnson County	05071		Gas (mcf)	401920.11
+2010	AR	Faulkner County	05045		Gas (mcf)	421756.79
+2014	AR	Yell County	05149		Gas (mcf)	430656.42
+2010	AR	Pope County	05115		Gas (mcf)	448133.8
+2010	AR	Johnson County	05071		Gas (mcf)	457831.22
+2013	AR	Yell County	05149		Gas (mcf)	478408.5
+2005	AR	Logan County	05083		Gas (mcf)	491400.63
+2012	AR	Faulkner County	05045		Gas (mcf)	505481
+2009	AR	Faulkner County	05045		Gas (mcf)	519834.94
+2009	AR	Johnson County	05071		Gas (mcf)	531362.94
+2006	AR	Logan County	05083		Gas (mcf)	554252.37
+2012	AR	Yell County	05149		Gas (mcf)	573094.72
+2012	AR	White County	05145		Gas (mcf)	581713.78
+2008	AR	Johnson County	05071		Gas (mcf)	597933.67
+2011	AR	Faulkner County	05045		Gas (mcf)	614374.01
+2007	AR	Johnson County	05071		Gas (mcf)	622063.07
+2011	AR	Yell County	05149		Gas (mcf)	626120.71
+2013	AR	Cleburne County	05023		Gas (mcf)	655255.49
+2006	AR	Johnson County	05071		Gas (mcf)	672671.12
+2008	AR	Van Buren County	05141		Gas (mcf)	735188.73
+2011	AR	White County	05145		Gas (mcf)	765344.27
+2010	AR	Yell County	05149		Gas (mcf)	781423.87
+2005	AR	Johnson County	05071		Gas (mcf)	788733.21
+2013	AR	White County	05145		Gas (mcf)	907658.84
+2009	AR	Yell County	05149		Gas (mcf)	975999.09
+2014	AR	Cleburne County	05023		Gas (mcf)	996188.76
+2008	AR	Conway County	05029		Gas (mcf)	1133509.88
+2007	AR	Logan County	05083		Gas (mcf)	1308564.58
+2009	AR	Conway County	05029		Gas (mcf)	1487275.7
+2008	AR	Yell County	05149		Gas (mcf)	1573939.3
+2014	AR	White County	05145		Gas (mcf)	1654977.26
+2010	AR	Conway County	05029		Gas (mcf)	1669060.73
+2011	AR	Conway County	05029		Gas (mcf)	1964178.14
+2010	AR	Van Buren County	05141		Gas (mcf)	2305903.54
+2013	AR	Van Buren County	05141		Gas (mcf)	2394025.17
+2014	AR	Sebastian County	05131		Gas (mcf)	2503906.4
+2007	AR	Yell County	05149		Gas (mcf)	2600866.27
+2012	AR	Van Buren County	05141		Gas (mcf)	2606261.34
+2013	AR	Sebastian County	05131		Gas (mcf)	2772996.37
+2008	AR	Logan County	05083		Gas (mcf)	2882488.12
+2005	AR	Yell County	05149		Gas (mcf)	2987086.38
+2012	AR	Sebastian County	05131		Gas (mcf)	3041349.01
+2012	AR	Conway County	05029		Gas (mcf)	3055289.52
+2009	AR	Van Buren County	05141		Gas (mcf)	3149636.53
+2014	AR	Conway County	05029		Gas (mcf)	3376360.27
+2013	AR	Conway County	05029		Gas (mcf)	3413493.44
+2011	AR	Sebastian County	05131		Gas (mcf)	3420913.94
+2011	AR	Van Buren County	05141		Gas (mcf)	3470334.73
+2006	AR	Yell County	05149		Gas (mcf)	3642637.64
+2010	AR	Sebastian County	05131		Gas (mcf)	3746737.01
+2009	AR	Sebastian County	05131		Gas (mcf)	3823618.24
+2014	AR	Logan County	05083		Gas (mcf)	3847836.07
+2014	AR	Van Buren County	05141		Gas (mcf)	3875035.51
+2005	AR	Sebastian County	05131		Gas (mcf)	4075348.33
+2008	AR	Sebastian County	05131		Gas (mcf)	4223358.62
+2007	AR	Sebastian County	05131		Gas (mcf)	4415725.96
+2013	AR	Logan County	05083		Gas (mcf)	4415794.17
+2006	AR	Sebastian County	05131		Gas (mcf)	4628930.27
+2012	AR	Logan County	05083		Gas (mcf)	5434903.62
+2011	AR	Logan County	05083		Gas (mcf)	6362169.45
+2009	AR	Logan County	05083		Gas (mcf)	6755716.32
+2010	AR	Logan County	05083		Gas (mcf)	8486399.09

@@ -1,86 +1,96 @@
-Year	State	County	FIPS	Commodity	Product	Type	Volume
-2004	NV	Churchill	32001	Geothermal	Geothermal - Direct Utilization, Hundreds of Gallons (cgal)	Royalties	104184341
-2004	NV	Churchill	32001	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	580763733.37
-2004	NV	Clark	32003	Sand/Gravel	Sand/Gravel (ton)	Royalties	524208
-2004	NV	Esmeralda	32009	Potash	Potash (ton)	Royalties	1072
-2004	NV	Eureka	32011	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	2588860.55
-2004	NV	Eureka	32011	Oil	Oil (bbl)	Royalties	51853.31
-2004	NV	Lander	32015	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	46929426.54
-2004	NV	Nye	32023	Oil	Oil (bbl)	Royalties	408080.87
-2004	NV	Washoe	32031	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	44203028
-2005	NV	Churchill	32001	Geothermal	Geothermal - Direct Utilization, Hundreds of Gallons (cgal)	Royalties	90021493
-2005	NV	Churchill	32001	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	582078463.84
-2005	NV	Esmeralda	32009	Potash	Potash (ton)	Royalties	477
-2005	NV	Eureka	32011	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	2424604.36
-2005	NV	Eureka	32011	Oil	Oil (bbl)	Royalties	45247.46
-2005	NV	Lander	32015	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	39966452.72
-2005	NV	Nye	32023	Oil	Oil (bbl)	Royalties	402323.12
-2005	NV	Washoe	32031	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	57381624
-2006	NV	Churchill	32001	Geothermal	Geothermal - Direct Utilization, Hundreds of Gallons (cgal)	Royalties	85859889
-2006	NV	Churchill	32001	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	567343115.45
-2006	NV	Esmeralda	32009	Potash	Potash (ton)	Royalties	4729
-2006	NV	Eureka	32011	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	3184204.64
-2006	NV	Eureka	32011	Oil	Oil (bbl)	Royalties	41138.83
-2006	NV	Lander	32015	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	12898466.46
-2006	NV	Nye	32023	Oil	Oil (bbl)	Royalties	377196.41
-2006	NV	Washoe	32031	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	54503974.25
-2007	NV	Churchill	32001	Geothermal	Geothermal - Direct Utilization, Hundreds of Gallons (cgal)	Royalties	106272414
-2007	NV	Churchill	32001	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	522299372.36
-2007	NV	Esmeralda	32009	Potash	Potash (ton)	Royalties	268
-2007	NV	Eureka	32011	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	2858481.49
-2007	NV	Eureka	32011	Oil	Oil (bbl)	Royalties	39368.92
-2007	NV	Lander	32015	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	7195669.9
-2007	NV	Nye	32023	Oil	Oil (bbl)	Royalties	365577.34
-2007	NV	Washoe	32031	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	53715490.76
-2008	NV	Churchill	32001	Geothermal	Geothermal - Direct Utilization, Hundreds of Gallons (cgal)	Royalties	123838519
-2008	NV	Churchill	32001	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	448993874.74
-2008	NV	Eureka	32011	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	3114139.31
-2008	NV	Eureka	32011	Oil	Oil (bbl)	Royalties	44057.1
-2008	NV	Lander	32015	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	51332540.47
-2008	NV	Nye	32023	Oil	Oil (bbl)	Royalties	387556.43
-2008	NV	Washoe	32031	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	65982190
-2009	NV	Churchill	32001	Geothermal	Geothermal - Direct Utilization, Hundreds of Gallons (cgal)	Royalties	198988743
-2009	NV	Churchill	32001	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	567959046.94
-2009	NV	Eureka	32011	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	3092971.66
-2009	NV	Eureka	32011	Oil	Oil (bbl)	Royalties	77258.4
-2009	NV	Humboldt	32013	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	25011927.21
-2009	NV	Lander	32015	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	50983619.31
-2009	NV	Nye	32023	Oil	Oil (bbl)	Royalties	376542.91
-2009	NV	Washoe	32031	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	79796674
-2010	NV	Churchill	32001	Geothermal	Geothermal - Direct Utilization, Hundreds of Gallons (cgal)	Royalties	163346106
-2010	NV	Churchill	32001	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	756799448.94
-2010	NV	Eureka	32011	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	3012894.42
-2010	NV	Eureka	32011	Oil	Oil (bbl)	Royalties	57749.7
-2010	NV	Humboldt	32013	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	104166409.15
-2010	NV	Lander	32015	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	49663650.95
-2010	NV	Nye	32023	Oil	Oil (bbl)	Royalties	370836.79
-2010	NV	Washoe	32031	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	98063398.66
-2011	NV	Churchill	32001	Geothermal	Geothermal - Direct Utilization, Hundreds of Gallons (cgal)	Royalties	131014604
-2011	NV	Churchill	32001	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	730785288.79
-2011	NV	Eureka	32011	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	3216374.91
-2011	NV	Eureka	32011	Oil	Oil (bbl)	Royalties	43142.1
-2011	NV	Humboldt	32013	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	108388143.51
-2011	NV	Lander	32015	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	57045990.08
-2011	NV	Nye	32023	Oil	Oil (bbl)	Royalties	360809.81
-2011	NV	Pershing	32027	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	41560598.42
-2011	NV	Washoe	32031	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	82495841.63
-2012	NV	Churchill	32001	Geothermal	Geothermal - Direct Utilization, Hundreds of Gallons (cgal)	Royalties	123103803
-2012	NV	Churchill	32001	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	754945552.33
-2012	NV	Eureka	32011	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	2569342.64
-2012	NV	Eureka	32011	Oil	Oil (bbl)	Royalties	38176
-2012	NV	Humboldt	32013	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	100055016.86
-2012	NV	Lander	32015	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	218670408.2
-2012	NV	Nye	32023	Oil	Oil (bbl)	Royalties	316315.57
-2012	NV	Pershing	32027	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	50923704.89
-2012	NV	Washoe	32031	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	86077886.42
-2013	NV	Churchill	32001	Geothermal	Geothermal - Direct Utilization, Hundreds of Gallons (cgal)	Royalties	57238368
-2013	NV	Churchill	32001	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	813846736.08
-2013	NV	Eureka	32011	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	3064558.64
-2013	NV	Eureka	32011	Oil	Oil (bbl)	Royalties	40396
-2013	NV	Humboldt	32013	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	91901653.26
-2013	NV	Lander	32015	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	336324945.72
-2013	NV	Lyon	32019	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	1698.3
-2013	NV	Mineral	32021	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	19609001
-2013	NV	Nye	32023	Oil	Oil (bbl)	Royalties	291006.56
-2013	NV	Pershing	32027	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	68110796.97
-2013	NV	Washoe	32031	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	107973151.92
+Year	State	County	FIPS	Commodity	Product	Volume
+2013	NV	Lyon County	32019		Geothermal - Electrical Generation, Kilowatt Hours	1698.3
+2014	NV	Elko County	32007		Oil (bbl)	2247
+2014	NV	Nye County	32023		Gas (mcf)	3341
+2013	NV	Nye County	32023		Gas (mcf)	3422
+2012	NV	Nye County	32023		Gas (mcf)	3631
+2011	NV	Nye County	32023		Gas (mcf)	3836
+2010	NV	Nye County	32023		Gas (mcf)	4010
+2008	NV	Nye County	32023		Gas (mcf)	4227
+2009	NV	Nye County	32023		Gas (mcf)	4440
+2007	NV	Nye County	32023		Gas (mcf)	4573
+2006	NV	Nye County	32023		Gas (mcf)	4999
+2005	NV	Nye County	32023		Gas (mcf)	5281
+2014	NV	Lyon County	32019		Geothermal - Electrical Generation, Kilowatt Hours	11135.08
+2014	NV	Eureka County	32011		Oil (bbl)	32218
+2012	NV	Eureka County	32011		Oil (bbl)	38004
+2007	NV	Eureka County	32011		Oil (bbl)	39478
+2013	NV	Eureka County	32011		Oil (bbl)	40392
+2006	NV	Eureka County	32011		Oil (bbl)	41492
+2011	NV	Eureka County	32011		Oil (bbl)	43198
+2008	NV	Eureka County	32011		Oil (bbl)	43600
+2005	NV	Eureka County	32011		Oil (bbl)	45369
+2010	NV	Eureka County	32011		Oil (bbl)	57260
+2009	NV	Eureka County	32011		Oil (bbl)	77730
+2014	NV	Nye County	32023		Oil (bbl)	276842
+2013	NV	Nye County	32023		Oil (bbl)	290417
+2012	NV	Nye County	32023		Oil (bbl)	318293
+2011	NV	Nye County	32023		Oil (bbl)	361976
+2007	NV	Nye County	32023		Oil (bbl)	365676
+2010	NV	Nye County	32023		Oil (bbl)	370267
+2009	NV	Nye County	32023		Oil (bbl)	376792
+2006	NV	Nye County	32023		Oil (bbl)	381377
+2008	NV	Nye County	32023		Oil (bbl)	391854
+2005	NV	Nye County	32023		Oil (bbl)	398777
+2005	NV	Eureka County	32011		Geothermal - Electrical Generation, Kilowatt Hours	2424604.36
+2012	NV	Eureka County	32011		Geothermal - Electrical Generation, Kilowatt Hours	2569342.64
+2007	NV	Eureka County	32011		Geothermal - Electrical Generation, Kilowatt Hours	2858481.49
+2014	NV	Eureka County	32011		Geothermal - Electrical Generation, Kilowatt Hours	3010668.39
+2010	NV	Eureka County	32011		Geothermal - Electrical Generation, Kilowatt Hours	3012894.42
+2013	NV	Eureka County	32011		Geothermal - Electrical Generation, Kilowatt Hours	3064558.64
+2009	NV	Eureka County	32011		Geothermal - Electrical Generation, Kilowatt Hours	3092971.66
+2008	NV	Eureka County	32011		Geothermal - Electrical Generation, Kilowatt Hours	3114139.31
+2006	NV	Eureka County	32011		Geothermal - Electrical Generation, Kilowatt Hours	3184204.64
+2011	NV	Eureka County	32011		Geothermal - Electrical Generation, Kilowatt Hours	3216374.91
+2007	NV	Lander County	32015		Geothermal - Electrical Generation, Kilowatt Hours	7195669.9
+2006	NV	Lander County	32015		Geothermal - Electrical Generation, Kilowatt Hours	12898466.46
+2013	NV	Mineral County	32021		Geothermal - Electrical Generation, Kilowatt Hours	19609001
+2009	NV	Humboldt County	32013		Geothermal - Electrical Generation, Kilowatt Hours	25011927.21
+2005	NV	Lander County	32015		Geothermal - Electrical Generation, Kilowatt Hours	39966452.72
+2011	NV	Pershing County	32027		Geothermal - Electrical Generation, Kilowatt Hours	41560598.42
+2014	NV	Churchill County	32001		Geothermal - Direct Utilization, Hundreds of Gallons	46536534.78
+2010	NV	Lander County	32015		Geothermal - Electrical Generation, Kilowatt Hours	49663650.95
+2012	NV	Pershing County	32027		Geothermal - Electrical Generation, Kilowatt Hours	50923704.9
+2009	NV	Lander County	32015		Geothermal - Electrical Generation, Kilowatt Hours	50983619.31
+2008	NV	Lander County	32015		Geothermal - Electrical Generation, Kilowatt Hours	51332540.47
+2007	NV	Washoe County	32031		Geothermal - Electrical Generation, Kilowatt Hours	53715490.76
+2006	NV	Washoe County	32031		Geothermal - Electrical Generation, Kilowatt Hours	54503974.25
+2011	NV	Lander County	32015		Geothermal - Electrical Generation, Kilowatt Hours	57045990.09
+2013	NV	Churchill County	32001		Geothermal - Direct Utilization, Hundreds of Gallons	57238368
+2005	NV	Washoe County	32031		Geothermal - Electrical Generation, Kilowatt Hours	57381624
+2008	NV	Washoe County	32031		Geothermal - Electrical Generation, Kilowatt Hours	65982190
+2013	NV	Pershing County	32027		Geothermal - Electrical Generation, Kilowatt Hours	68110796.97
+2014	NV	Pershing County	32027		Geothermal - Electrical Generation, Kilowatt Hours	70194551.04
+2009	NV	Washoe County	32031		Geothermal - Electrical Generation, Kilowatt Hours	79796674
+2011	NV	Washoe County	32031		Geothermal - Electrical Generation, Kilowatt Hours	82495841.63
+2014	NV	Humboldt County	32013		Geothermal - Electrical Generation, Kilowatt Hours	85422511.08
+2006	NV	Churchill County	32001		Geothermal - Direct Utilization, Hundreds of Gallons	85859889
+2012	NV	Washoe County	32031		Geothermal - Electrical Generation, Kilowatt Hours	86077886.42
+2005	NV	Churchill County	32001		Geothermal - Direct Utilization, Hundreds of Gallons	90021493
+2013	NV	Humboldt County	32013		Geothermal - Electrical Generation, Kilowatt Hours	91901653.26
+2010	NV	Washoe County	32031		Geothermal - Electrical Generation, Kilowatt Hours	98063398.66
+2012	NV	Humboldt County	32013		Geothermal - Electrical Generation, Kilowatt Hours	100055016.86
+2014	NV	Washoe County	32031		Geothermal - Electrical Generation, Kilowatt Hours	100069643.93
+2010	NV	Humboldt County	32013		Geothermal - Electrical Generation, Kilowatt Hours	104166409.15
+2007	NV	Churchill County	32001		Geothermal - Direct Utilization, Hundreds of Gallons	106272414
+2013	NV	Washoe County	32031		Geothermal - Electrical Generation, Kilowatt Hours	107973151.92
+2011	NV	Humboldt County	32013		Geothermal - Electrical Generation, Kilowatt Hours	108388143.51
+2012	NV	Churchill County	32001		Geothermal - Direct Utilization, Hundreds of Gallons	123103803
+2008	NV	Churchill County	32001		Geothermal - Direct Utilization, Hundreds of Gallons	123838519
+2011	NV	Churchill County	32001		Geothermal - Direct Utilization, Hundreds of Gallons	131014604
+2014	NV	Mineral County	32021		Geothermal - Electrical Generation, Kilowatt Hours	150459000
+2010	NV	Churchill County	32001		Geothermal - Direct Utilization, Hundreds of Gallons	163346106
+2009	NV	Churchill County	32001		Geothermal - Direct Utilization, Hundreds of Gallons	198988743
+2012	NV	Lander County	32015		Geothermal - Electrical Generation, Kilowatt Hours	218670408.2
+2014	NV	Lander County	32015		Geothermal - Electrical Generation, Kilowatt Hours	331291677.86
+2013	NV	Lander County	32015		Geothermal - Electrical Generation, Kilowatt Hours	336324945.73
+2008	NV	Churchill County	32001		Geothermal - Electrical Generation, Kilowatt Hours	448993874.74
+2007	NV	Churchill County	32001		Geothermal - Electrical Generation, Kilowatt Hours	522299372.36
+2006	NV	Churchill County	32001		Geothermal - Electrical Generation, Kilowatt Hours	567343115.45
+2009	NV	Churchill County	32001		Geothermal - Electrical Generation, Kilowatt Hours	567959046.94
+2005	NV	Churchill County	32001		Geothermal - Electrical Generation, Kilowatt Hours	582078463.84
+2011	NV	Churchill County	32001		Geothermal - Electrical Generation, Kilowatt Hours	730785288.79
+2012	NV	Churchill County	32001		Geothermal - Electrical Generation, Kilowatt Hours	754945552.33
+2010	NV	Churchill County	32001		Geothermal - Electrical Generation, Kilowatt Hours	756799448.94
+2014	NV	Churchill County	32001		Geothermal - Electrical Generation, Kilowatt Hours	800554840.91
+2013	NV	Churchill County	32001		Geothermal - Electrical Generation, Kilowatt Hours	813846736.1

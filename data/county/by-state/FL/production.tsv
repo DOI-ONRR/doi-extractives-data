@@ -1,8 +1,2 @@
-Year	State	County	FIPS	Commodity	Product	Type	Volume
-2004	FL	Santa Rosa	12113	Oil	Oil (bbl)	Royalties	449.53
-2005	FL	Manatee	12081	Phosphate Raw Ore	Phosphate Raw Ore (ton)	Royalties	551502
-2010	FL	Polk	12105	Phosphate Raw Ore	Phosphate Raw Ore (ton)	Royalties	59628
-2011	FL	Polk	12105	Phosphate Raw Ore	Phosphate Raw Ore (ton)	Royalties	254552
-2012	FL	Hardee	12049	Phosphate Raw Ore	Phosphate Raw Ore (ton)	Royalties	695159
-2012	FL	Polk	12105	Phosphate Raw Ore	Phosphate Raw Ore (ton)	Royalties	151314
-2013	FL	Hardee	12049	Phosphate Raw Ore	Phosphate Raw Ore (ton)	Royalties	113187
+Year	State	County	FIPS	Commodity	Product	Volume
+2006	FL	Santa Rosa County	12113		Oil (bbl)	77

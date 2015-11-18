@@ -1,41 +1,40 @@
-Year	State	County	FIPS	Commodity	Product	Type	Volume
-2004	SD	Douglas	46043	Oil	Oil (bbl)	Royalties	252.24
-2004	SD	Fall River	46047	Oil	Oil (bbl)	Royalties	36960.22
-2004	SD	Harding	46063	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	239981.92
-2004	SD	Harding	46063	Oil	Oil (bbl)	Royalties	121258.91
-2005	SD	Douglas	46043	Oil	Oil (bbl)	Royalties	457.1
-2005	SD	Fall River	46047	Oil	Oil (bbl)	Royalties	26026.6
-2005	SD	Harding	46063	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	202685.29
-2005	SD	Harding	46063	Oil	Oil (bbl)	Royalties	161602.96
-2006	SD	Douglas	46043	Oil	Oil (bbl)	Royalties	470.89
-2006	SD	Fall River	46047	Oil	Oil (bbl)	Royalties	19664.72
-2006	SD	Harding	46063	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	205765.28
-2006	SD	Harding	46063	Oil	Oil (bbl)	Royalties	172555.03
-2007	SD	Douglas	46043	Oil	Oil (bbl)	Royalties	433.44
-2007	SD	Fall River	46047	Oil	Oil (bbl)	Royalties	18254.86
-2007	SD	Harding	46063	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	182275.49
-2007	SD	Harding	46063	Oil	Oil (bbl)	Royalties	181224.94
-2008	SD	Douglas	46043	Oil	Oil (bbl)	Royalties	422.82
-2008	SD	Fall River	46047	Oil	Oil (bbl)	Royalties	17661.56
-2008	SD	Harding	46063	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	305731.17
-2008	SD	Harding	46063	Oil	Oil (bbl)	Royalties	174288.23
-2009	SD	Douglas	46043	Oil	Oil (bbl)	Royalties	287.95
-2009	SD	Fall River	46047	Oil	Oil (bbl)	Royalties	18887.02
-2009	SD	Harding	46063	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	387405.33
-2009	SD	Harding	46063	Oil	Oil (bbl)	Royalties	156854.06
-2010	SD	Douglas	46043	Oil	Oil (bbl)	Royalties	294.73
-2010	SD	Fall River	46047	Oil	Oil (bbl)	Royalties	19797.75
-2010	SD	Harding	46063	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	285599.8
-2010	SD	Harding	46063	Oil	Oil (bbl)	Royalties	141687.4
-2011	SD	Douglas	46043	Oil	Oil (bbl)	Royalties	367.54
-2011	SD	Fall River	46047	Oil	Oil (bbl)	Royalties	17712.6
-2011	SD	Harding	46063	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	211960.93
-2011	SD	Harding	46063	Oil	Oil (bbl)	Royalties	152758.79
-2012	SD	Douglas	46043	Oil	Oil (bbl)	Royalties	554.8
-2012	SD	Fall River	46047	Oil	Oil (bbl)	Royalties	17965.14
-2012	SD	Harding	46063	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	152713.53
-2012	SD	Harding	46063	Oil	Oil (bbl)	Royalties	220147.32
-2013	SD	Douglas	46043	Oil	Oil (bbl)	Royalties	456.81
-2013	SD	Fall River	46047	Oil	Oil (bbl)	Royalties	14839.94
-2013	SD	Harding	46063	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	135188.65
-2013	SD	Harding	46063	Oil	Oil (bbl)	Royalties	211625.08
+Year	State	County	FIPS	Commodity	Product	Volume
+2013	SD	Fall River County	46047		Gas (mcf)	1643
+2007	SD	Fall River County	46047		Gas (mcf)	3794
+2006	SD	Fall River County	46047		Gas (mcf)	5957
+2008	SD	Fall River County	46047		Gas (mcf)	6271
+2012	SD	Fall River County	46047		Gas (mcf)	8419
+2011	SD	Fall River County	46047		Gas (mcf)	8549
+2005	SD	Fall River County	46047		Gas (mcf)	9840
+2014	SD	Fall River County	46047		Oil (bbl)	12931
+2009	SD	Fall River County	46047		Gas (mcf)	15346
+2013	SD	Fall River County	46047		Oil (bbl)	15403
+2012	SD	Fall River County	46047		Oil (bbl)	17667
+2011	SD	Fall River County	46047		Oil (bbl)	17922
+2007	SD	Fall River County	46047		Oil (bbl)	18076
+2008	SD	Fall River County	46047		Oil (bbl)	18253
+2009	SD	Fall River County	46047		Oil (bbl)	18624
+2010	SD	Fall River County	46047		Gas (mcf)	18947
+2010	SD	Fall River County	46047		Oil (bbl)	19245
+2006	SD	Fall River County	46047		Oil (bbl)	20524
+2005	SD	Fall River County	46047		Oil (bbl)	25793
+2010	SD	Harding County	46063		Oil (bbl)	130395.14
+2011	SD	Harding County	46063		Oil (bbl)	141422.03
+2005	SD	Harding County	46063		Oil (bbl)	147848.22
+2009	SD	Harding County	46063		Oil (bbl)	148082.91
+2006	SD	Harding County	46063		Oil (bbl)	158383.43
+2008	SD	Harding County	46063		Oil (bbl)	161400.96
+2007	SD	Harding County	46063		Oil (bbl)	170552.74
+2014	SD	Harding County	46063		Oil (bbl)	175964.74
+2013	SD	Harding County	46063		Oil (bbl)	187186.16
+2012	SD	Harding County	46063		Oil (bbl)	196791.47
+2005	SD	Harding County	46063		Gas (mcf)	1488126.02
+2006	SD	Harding County	46063		Gas (mcf)	1523508.52
+2007	SD	Harding County	46063		Gas (mcf)	1665964.7
+2008	SD	Harding County	46063		Gas (mcf)	1711995.43
+2010	SD	Harding County	46063		Gas (mcf)	1718576.98
+2009	SD	Harding County	46063		Gas (mcf)	1867168.9
+2011	SD	Harding County	46063		Gas (mcf)	1870584.59
+2014	SD	Harding County	46063		Gas (mcf)	2500311.27
+2012	SD	Harding County	46063		Gas (mcf)	2518858.7
+2013	SD	Harding County	46063		Gas (mcf)	2706298.41

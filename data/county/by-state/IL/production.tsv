@@ -1,27 +1,35 @@
-Year	State	County	FIPS	Commodity	Product	Type	Volume
-2004	IL	Clinton	17027	Oil	Oil (bbl)	Royalties	23945.81
-2004	IL	Franklin	17055	Oil	Oil (bbl)	Royalties	12928.34
-2005	IL	Clinton	17027	Oil	Oil (bbl)	Royalties	21755.45
-2005	IL	Franklin	17055	Oil	Oil (bbl)	Royalties	12584.2
-2006	IL	Clinton	17027	Oil	Oil (bbl)	Royalties	21579.19
-2006	IL	Fayette	17051	Oil	Oil (bbl)	Royalties	123.33
-2006	IL	Franklin	17055	Oil	Oil (bbl)	Royalties	15671.69
-2007	IL	Clinton	17027	Oil	Oil (bbl)	Royalties	20519.07
-2007	IL	Fayette	17051	Oil	Oil (bbl)	Royalties	188.64
-2007	IL	Franklin	17055	Oil	Oil (bbl)	Royalties	18975.94
-2008	IL	Clinton	17027	Oil	Oil (bbl)	Royalties	18508.46
-2008	IL	Fayette	17051	Oil	Oil (bbl)	Royalties	36.97
-2008	IL	Franklin	17055	Oil	Oil (bbl)	Royalties	15130.89
-2009	IL	Clinton	17027	Oil	Oil (bbl)	Royalties	19929.3
-2009	IL	Franklin	17055	Oil	Oil (bbl)	Royalties	12933.67
-2010	IL	Clinton	17027	Oil	Oil (bbl)	Royalties	19417.89
-2010	IL	Fayette	17051	Oil	Oil (bbl)	Royalties	32.19
-2010	IL	Franklin	17055	Oil	Oil (bbl)	Royalties	11875.94
-2011	IL	Clinton	17027	Oil	Oil (bbl)	Royalties	16904.12
-2011	IL	Franklin	17055	Oil	Oil (bbl)	Royalties	10344.32
-2012	IL	Clinton	17027	Oil	Oil (bbl)	Royalties	18234.25
-2012	IL	Fayette	17051	Oil	Oil (bbl)	Royalties	34
-2012	IL	Franklin	17055	Oil	Oil (bbl)	Royalties	9397.72
-2013	IL	Clinton	17027	Oil	Oil (bbl)	Royalties	17385.59
-2013	IL	Fayette	17051	Oil	Oil (bbl)	Royalties	35.96
-2013	IL	Franklin	17055	Oil	Oil (bbl)	Royalties	8953
+Year	State	County	FIPS	Commodity	Product	Volume
+2008	IL	Clinton County	17027		Gas (mcf)	180
+2005	IL	Clinton County	17027		Gas (mcf)	420
+2006	IL	Clinton County	17027		Gas (mcf)	720
+2007	IL	Clinton County	17027		Gas (mcf)	720
+2008	IL	Franklin County	17055		Gas (mcf)	6785
+2007	IL	Franklin County	17055		Gas (mcf)	7359
+2005	IL	Franklin County	17055		Gas (mcf)	7416
+2006	IL	Franklin County	17055		Gas (mcf)	7491
+2014	IL	Franklin County	17055		Oil (bbl)	7828.99
+2013	IL	Franklin County	17055		Oil (bbl)	8719.28
+2012	IL	Franklin County	17055		Oil (bbl)	9483.84
+2011	IL	Franklin County	17055		Oil (bbl)	10098.34
+2014	IL	Clinton County	17027		Oil (bbl)	11250
+2010	IL	Franklin County	17055		Oil (bbl)	11526.34
+2009	IL	Franklin County	17055		Gas (mcf)	12212.72
+2005	IL	Franklin County	17055		Oil (bbl)	12528.89
+2009	IL	Franklin County	17055		Oil (bbl)	13109.75
+2010	IL	Franklin County	17055		Gas (mcf)	14073.74
+2011	IL	Franklin County	17055		Gas (mcf)	14335.74
+2013	IL	Franklin County	17055		Gas (mcf)	14384.77
+2012	IL	Franklin County	17055		Gas (mcf)	14460.96
+2008	IL	Franklin County	17055		Oil (bbl)	14941.51
+2006	IL	Franklin County	17055		Oil (bbl)	15732.04
+2011	IL	Clinton County	17027		Oil (bbl)	17044
+2013	IL	Clinton County	17027		Oil (bbl)	17557
+2012	IL	Clinton County	17027		Oil (bbl)	18387
+2007	IL	Franklin County	17055		Oil (bbl)	18548.55
+2008	IL	Clinton County	17027		Oil (bbl)	19444
+2007	IL	Clinton County	17027		Oil (bbl)	20243
+2010	IL	Clinton County	17027		Oil (bbl)	20469
+2009	IL	Clinton County	17027		Oil (bbl)	21132
+2006	IL	Clinton County	17027		Oil (bbl)	21324
+2005	IL	Clinton County	17027		Oil (bbl)	22377
+2014	IL	Franklin County	17055		Gas (mcf)	26222.65

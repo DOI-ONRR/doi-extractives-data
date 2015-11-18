@@ -1,313 +1,314 @@
-Year	State	County	FIPS	Commodity	Product	Type	Volume
-2004	MS	Adams	28001	Oil	Oil (bbl)	Royalties	18663
-2004	MS	Chickasaw	28017	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	31584
-2004	MS	Clarke	28023	Oil	Oil (bbl)	Royalties	105.28
-2004	MS	Covington	28031	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	126
-2004	MS	Covington	28031	Oil	Oil (bbl)	Royalties	237.58
-2004	MS	Forrest	28035	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	259576
-2004	MS	Forrest	28035	Oil	Oil (bbl)	Royalties	558
-2004	MS	Franklin	28037	Oil	Oil (bbl)	Royalties	97821.81
-2004	MS	Hancock	28045	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	8.27
-2004	MS	Hancock	28045	Oil	Condensate (bbl)	Royalties	17.44
-2004	MS	Jasper	28061	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	78468.98
-2004	MS	Jasper	28061	Oil	Condensate (bbl)	Royalties	46
-2004	MS	Jeffer Davis	28065	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2896.53
-2004	MS	Jeffer Davis	28065	Oil	Condensate (bbl)	Royalties	4.62
-2004	MS	Jones	28067	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	33124.66
-2004	MS	Jones	28067	Oil	Condensate (bbl)	Royalties	4662.72
-2004	MS	Jones	28067	Oil	Oil (bbl)	Royalties	204.08
-2004	MS	Lamar	28073	Oil	Oil (bbl)	Royalties	10709.72
-2004	MS	Lawrence	28077	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	99542
-2004	MS	Lawrence	28077	Oil	Condensate (bbl)	Royalties	944.9
-2004	MS	Lowndes	28087	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	132370.42
-2004	MS	Monroe	28095	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1350.64
-2004	MS	Pearl River	28109	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2060
-2004	MS	Pearl River	28109	Oil	Oil (bbl)	Royalties	5316.12
-2004	MS	Perry	28111	Oil	Condensate (bbl)	Royalties	208910.65
-2004	MS	Perry	28111	Oil	Oil (bbl)	Royalties	12865.44
-2004	MS	Scott	28123	Oil	Oil (bbl)	Royalties	6233.29
-2004	MS	Stone	28131	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	104826.1
-2004	MS	Wayne	28153	NGL	Gas Plant Products (gal)	Royalties	162.3
-2004	MS	Wayne	28153	Oil	Oil (bbl)	Royalties	97168.11
-2004	MS	Wilkinson	28157	Gas	Processed (Residue) Gas (mcf)	Royalties	135919
-2004	MS	Wilkinson	28157	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	699
-2004	MS	Wilkinson	28157	Oil	Condensate (bbl)	Royalties	238.91
-2004	MS	Wilkinson	28157	Oil	Oil (bbl)	Royalties	10531.67
-2005	MS	Adams	28001	Oil	Oil (bbl)	Royalties	15538.02
-2005	MS	Chickasaw	28017	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	26432
-2005	MS	Clarke	28023	Oil	Oil (bbl)	Royalties	67.39
-2005	MS	Covington	28031	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	174
-2005	MS	Covington	28031	Oil	Oil (bbl)	Royalties	270.56
-2005	MS	Forrest	28035	Gas	Processed (Residue) Gas (mcf)	Royalties	86253.67
-2005	MS	Forrest	28035	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	204778.19
-2005	MS	Forrest	28035	Oil	Condensate (bbl)	Royalties	6932.81
-2005	MS	Forrest	28035	Oil	Oil (bbl)	Royalties	960.56
-2005	MS	Franklin	28037	Oil	Oil (bbl)	Royalties	95451.39
-2005	MS	Hancock	28045	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	7.96
-2005	MS	Jasper	28061	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	456187.94
-2005	MS	Jasper	28061	Oil	Condensate (bbl)	Royalties	175.38
-2005	MS	Jeffer Davis	28065	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	6260.09
-2005	MS	Jeffer Davis	28065	Oil	Condensate (bbl)	Royalties	4.78
-2005	MS	Jeffer Davis	28065	Oil	Oil (bbl)	Royalties	103.1
-2005	MS	Jones	28067	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	23753.76
-2005	MS	Jones	28067	Oil	Condensate (bbl)	Royalties	3001.46
-2005	MS	Lamar	28073	Oil	Oil (bbl)	Royalties	9336.38
-2005	MS	Lawrence	28077	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	131448
-2005	MS	Lawrence	28077	Oil	Condensate (bbl)	Royalties	2404.61
-2005	MS	Lowndes	28087	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	146825.23
-2005	MS	Lowndes	28087	Oil	Condensate (bbl)	Royalties	813.23
-2005	MS	Monroe	28095	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1043.84
-2005	MS	Pearl River	28109	Oil	Oil (bbl)	Royalties	4702.71
-2005	MS	Perry	28111	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	0.07
-2005	MS	Perry	28111	Oil	Oil (bbl)	Royalties	166481.81
-2005	MS	Scott	28123	Oil	Oil (bbl)	Royalties	12260.68
-2005	MS	Stone	28131	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	101235.94
-2005	MS	Wayne	28153	Oil	Oil (bbl)	Royalties	80871.86
-2005	MS	Wilkinson	28157	Gas	Processed (Residue) Gas (mcf)	Royalties	49644
-2005	MS	Wilkinson	28157	Oil	Oil (bbl)	Royalties	7394.22
-2006	MS	Adams	28001	Oil	Oil (bbl)	Royalties	12882.39
-2006	MS	Chickasaw	28017	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	67332
-2006	MS	Clarke	28023	Oil	Oil (bbl)	Royalties	6.94
-2006	MS	Covington	28031	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	194
-2006	MS	Covington	28031	Oil	Oil (bbl)	Royalties	253.76
-2006	MS	Forrest	28035	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	619771.58
-2006	MS	Forrest	28035	Oil	Condensate (bbl)	Royalties	4672.66
-2006	MS	Forrest	28035	Oil	Oil (bbl)	Royalties	193
-2006	MS	Franklin	28037	Oil	Oil (bbl)	Royalties	83687.6
-2006	MS	Hancock	28045	Oil	Oil (bbl)	Royalties	172.76
-2006	MS	Jasper	28061	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	15088.24
-2006	MS	Jasper	28061	Oil	Condensate (bbl)	Royalties	10.92
-2006	MS	Jeffer Davis	28065	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	13258
-2006	MS	Jeffer Davis	28065	Oil	Oil (bbl)	Royalties	316.13
-2006	MS	Jones	28067	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	5873.02
-2006	MS	Jones	28067	Oil	Condensate (bbl)	Royalties	1145.11
-2006	MS	Jones	28067	Oil	Oil (bbl)	Royalties	-177
-2006	MS	Lamar	28073	Oil	Oil (bbl)	Royalties	7024.58
-2006	MS	Lawrence	28077	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	12476
-2006	MS	Lawrence	28077	Oil	Condensate (bbl)	Royalties	185.26
-2006	MS	Lowndes	28087	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	85853.89
-2006	MS	Lowndes	28087	Oil	Condensate (bbl)	Royalties	540.37
-2006	MS	Monroe	28095	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1027.92
-2006	MS	Pearl River	28109	Oil	Oil (bbl)	Royalties	4629.99
-2006	MS	Perry	28111	Oil	Oil (bbl)	Royalties	114263.16
-2006	MS	Scott	28123	Oil	Oil (bbl)	Royalties	10658.37
-2006	MS	Stone	28131	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	72403.74
-2006	MS	Wayne	28153	Oil	Oil (bbl)	Royalties	61218.71
-2006	MS	Wilkinson	28157	Gas	Processed (Residue) Gas (mcf)	Royalties	15233
-2006	MS	Wilkinson	28157	Oil	Oil (bbl)	Royalties	5231.43
-2007	MS	Adams	28001	Oil	Oil (bbl)	Royalties	10337.37
-2007	MS	Chickasaw	28017	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	62387
-2007	MS	Clarke	28023	Oil	Oil (bbl)	Royalties	16.24
-2007	MS	Covington	28031	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	340
-2007	MS	Covington	28031	Oil	Oil (bbl)	Royalties	395.36
-2007	MS	Forrest	28035	Gas	Processed (Residue) Gas (mcf)	Royalties	23870.37
-2007	MS	Forrest	28035	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	396852.16
-2007	MS	Forrest	28035	Oil	Condensate (bbl)	Royalties	1713.39
-2007	MS	Forrest	28035	Oil	Oil (bbl)	Royalties	4.31
-2007	MS	Franklin	28037	Oil	Oil (bbl)	Royalties	85038.38
-2007	MS	Jasper	28061	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	22048.9
-2007	MS	Jasper	28061	Oil	Condensate (bbl)	Royalties	16.21
-2007	MS	Jeffer Davis	28065	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	12626.26
-2007	MS	Jeffer Davis	28065	Oil	Oil (bbl)	Royalties	92.22
-2007	MS	Jones	28067	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	5025.07
-2007	MS	Jones	28067	Oil	Condensate (bbl)	Royalties	1241.12
-2007	MS	Lamar	28073	Oil	Oil (bbl)	Royalties	4769.46
-2007	MS	Lawrence	28077	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	62552.17
-2007	MS	Lawrence	28077	Oil	Condensate (bbl)	Royalties	364.7
-2007	MS	Lowndes	28087	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	81120.72
-2007	MS	Lowndes	28087	Oil	Condensate (bbl)	Royalties	517.84
-2007	MS	Monroe	28095	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	988.4
-2007	MS	Pearl River	28109	Oil	Oil (bbl)	Royalties	5020.48
-2007	MS	Perry	28111	Oil	Oil (bbl)	Royalties	115820.39
-2007	MS	Scott	28123	Oil	Oil (bbl)	Royalties	9719.82
-2007	MS	Smith	28129	Oil	Oil (bbl)	Royalties	1978.82
-2007	MS	Stone	28131	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	50128.09
-2007	MS	Wayne	28153	Oil	Oil (bbl)	Royalties	55778.48
-2007	MS	Wilkinson	28157	Gas	Processed (Residue) Gas (mcf)	Royalties	15335.92
-2007	MS	Wilkinson	28157	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2659
-2007	MS	Wilkinson	28157	Oil	Oil (bbl)	Royalties	8331.3
-2008	MS	Adams	28001	Oil	Oil (bbl)	Royalties	7599
-2008	MS	Chickasaw	28017	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	46919
-2008	MS	Clarke	28023	Oil	Oil (bbl)	Royalties	166.99
-2008	MS	Covington	28031	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	300
-2008	MS	Covington	28031	Oil	Oil (bbl)	Royalties	329.6
-2008	MS	Forrest	28035	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	291629.87
-2008	MS	Forrest	28035	Oil	Condensate (bbl)	Royalties	2551.09
-2008	MS	Forrest	28035	Oil	Oil (bbl)	Royalties	12.38
-2008	MS	Franklin	28037	Oil	Oil (bbl)	Royalties	80005.47
-2008	MS	Jasper	28061	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	35271.84
-2008	MS	Jasper	28061	Oil	Condensate (bbl)	Royalties	54.18
-2008	MS	Jeffer Davis	28065	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	12311.74
-2008	MS	Jeffer Davis	28065	Oil	Condensate (bbl)	Royalties	2.94
-2008	MS	Jeffer Davis	28065	Oil	Oil (bbl)	Royalties	299.25
-2008	MS	Jones	28067	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1022.64
-2008	MS	Jones	28067	Oil	Condensate (bbl)	Royalties	372.47
-2008	MS	Jones	28067	Oil	Oil (bbl)	Royalties	96.17
-2008	MS	Lamar	28073	Oil	Oil (bbl)	Royalties	2289.05
-2008	MS	Lawrence	28077	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	73372.9
-2008	MS	Lawrence	28077	Oil	Condensate (bbl)	Royalties	287.06
-2008	MS	Lowndes	28087	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	66969.93
-2008	MS	Lowndes	28087	Oil	Condensate (bbl)	Royalties	408.55
-2008	MS	Monroe	28095	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	772.84
-2008	MS	Pearl River	28109	Oil	Oil (bbl)	Royalties	3567.07
-2008	MS	Perry	28111	Oil	Oil (bbl)	Royalties	79913.82
-2008	MS	Scott	28123	Oil	Oil (bbl)	Royalties	7617.53
-2008	MS	Stone	28131	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	57712.05
-2008	MS	Wayne	28153	Oil	Oil (bbl)	Royalties	49205.57
-2008	MS	Wilkinson	28157	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	60724
-2008	MS	Wilkinson	28157	Oil	Oil (bbl)	Royalties	6676.09
-2009	MS	Adams	28001	Oil	Oil (bbl)	Royalties	7838.45
-2009	MS	Chickasaw	28017	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	34156
-2009	MS	Clarke	28023	Oil	Oil (bbl)	Royalties	40.31
-2009	MS	Covington	28031	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	306
-2009	MS	Covington	28031	Oil	Oil (bbl)	Royalties	384.48
-2009	MS	Forrest	28035	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	281415.07
-2009	MS	Forrest	28035	Oil	Condensate (bbl)	Royalties	8876.35
-2009	MS	Forrest	28035	Oil	Oil (bbl)	Royalties	5.44
-2009	MS	Franklin	28037	Oil	Oil (bbl)	Royalties	77015.78
-2009	MS	Jasper	28061	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	15374.38
-2009	MS	Jasper	28061	Oil	Condensate (bbl)	Royalties	23.5
-2009	MS	Jeffer Davis	28065	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	9791.07
-2009	MS	Jeffer Davis	28065	Oil	Condensate (bbl)	Royalties	2.18
-2009	MS	Jeffer Davis	28065	Oil	Oil (bbl)	Royalties	261.76
-2009	MS	Jones	28067	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	8472.28
-2009	MS	Jones	28067	Oil	Condensate (bbl)	Royalties	1745.91
-2009	MS	Lamar	28073	Oil	Oil (bbl)	Royalties	389.15
-2009	MS	Lawrence	28077	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	89059.11
-2009	MS	Lawrence	28077	Oil	Condensate (bbl)	Royalties	344.86
-2009	MS	Lowndes	28087	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	73784.71
-2009	MS	Lowndes	28087	Oil	Condensate (bbl)	Royalties	446.87
-2009	MS	Monroe	28095	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1002
-2009	MS	Pearl River	28109	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	213763
-2009	MS	Pearl River	28109	Oil	Condensate (bbl)	Royalties	8760.95
-2009	MS	Pearl River	28109	Oil	Oil (bbl)	Royalties	4690.68
-2009	MS	Perry	28111	Oil	Oil (bbl)	Royalties	63653.03
-2009	MS	Scott	28123	Oil	Oil (bbl)	Royalties	5572.85
-2009	MS	Smith	28129	Oil	Oil (bbl)	Royalties	193
-2009	MS	Stone	28131	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	54924.12
-2009	MS	Wayne	28153	Oil	Oil (bbl)	Royalties	60814.53
-2009	MS	Wilkinson	28157	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	626
-2009	MS	Wilkinson	28157	Oil	Oil (bbl)	Royalties	4793.02
-2010	MS	Adams	28001	Oil	Oil (bbl)	Royalties	4606.34
-2010	MS	Chickasaw	28017	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	31958
-2010	MS	Clarke	28023	Oil	Oil (bbl)	Royalties	75.22
-2010	MS	Covington	28031	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	206
-2010	MS	Covington	28031	Oil	Oil (bbl)	Royalties	364.48
-2010	MS	Forrest	28035	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	267409.96
-2010	MS	Forrest	28035	Oil	Condensate (bbl)	Royalties	30577.9
-2010	MS	Forrest	28035	Oil	Oil (bbl)	Royalties	50.69
-2010	MS	Franklin	28037	Oil	Oil (bbl)	Royalties	74346.41
-2010	MS	Jasper	28061	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	11144.24
-2010	MS	Jasper	28061	Oil	Condensate (bbl)	Royalties	19.22
-2010	MS	Jeffer Davis	28065	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	9295.53
-2010	MS	Jeffer Davis	28065	Oil	Condensate (bbl)	Royalties	3.06
-2010	MS	Jeffer Davis	28065	Oil	Oil (bbl)	Royalties	234.49
-2010	MS	Jones	28067	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	9088.97
-2010	MS	Jones	28067	Oil	Condensate (bbl)	Royalties	1579.64
-2010	MS	Lawrence	28077	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	63506.53
-2010	MS	Lawrence	28077	Oil	Condensate (bbl)	Royalties	214.52
-2010	MS	Lowndes	28087	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	74249.6
-2010	MS	Lowndes	28087	Oil	Condensate (bbl)	Royalties	391.52
-2010	MS	Monroe	28095	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	53.36
-2010	MS	Pearl River	28109	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	287435.69
-2010	MS	Pearl River	28109	Oil	Condensate (bbl)	Royalties	7320.04
-2010	MS	Pearl River	28109	Oil	Oil (bbl)	Royalties	2525.25
-2010	MS	Perry	28111	Oil	Oil (bbl)	Royalties	76033
-2010	MS	Stone	28131	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	53605.81
-2010	MS	Wayne	28153	Oil	Oil (bbl)	Royalties	63874.69
-2010	MS	Wilkinson	28157	Oil	Oil (bbl)	Royalties	4343.74
-2011	MS	Adams	28001	Oil	Oil (bbl)	Royalties	2389.34
-2011	MS	Chickasaw	28017	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	29224
-2011	MS	Clarke	28023	Oil	Oil (bbl)	Royalties	5.46
-2011	MS	Covington	28031	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	254
-2011	MS	Covington	28031	Oil	Oil (bbl)	Royalties	416.96
-2011	MS	Forrest	28035	Gas	Processed (Residue) Gas (mcf)	Royalties	101234.16
-2011	MS	Forrest	28035	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	137348.07
-2011	MS	Forrest	28035	Oil	Condensate (bbl)	Royalties	5558.89
-2011	MS	Forrest	28035	Oil	Oil (bbl)	Royalties	22604.37
-2011	MS	Franklin	28037	Oil	Oil (bbl)	Royalties	75966.78
-2011	MS	Jasper	28061	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	9038.88
-2011	MS	Jasper	28061	Oil	Condensate (bbl)	Royalties	11.01
-2011	MS	Jeffer Davis	28065	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	7617.77
-2011	MS	Jeffer Davis	28065	Oil	Condensate (bbl)	Royalties	0.89
-2011	MS	Jeffer Davis	28065	Oil	Oil (bbl)	Royalties	195.16
-2011	MS	Jones	28067	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	11789.43
-2011	MS	Jones	28067	Oil	Condensate (bbl)	Royalties	833.24
-2011	MS	Jones	28067	Oil	Oil (bbl)	Royalties	799.19
-2011	MS	Lamar	28073	Oil	Oil (bbl)	Royalties	31060.75
-2011	MS	Lawrence	28077	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	37056.11
-2011	MS	Lawrence	28077	Oil	Condensate (bbl)	Royalties	133.65
-2011	MS	Lowndes	28087	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	56926.29
-2011	MS	Lowndes	28087	Oil	Condensate (bbl)	Royalties	327.28
-2011	MS	Monroe	28095	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	17.24
-2011	MS	Pearl River	28109	Gas	Processed (Residue) Gas (mcf)	Royalties	513149.33
-2011	MS	Pearl River	28109	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	30759.03
-2011	MS	Pearl River	28109	Oil	Condensate (bbl)	Royalties	12661.58
-2011	MS	Pearl River	28109	Oil	Oil (bbl)	Royalties	12980.23
-2011	MS	Perry	28111	Oil	Oil (bbl)	Royalties	83276.81
-2011	MS	Scott	28123	Oil	Oil (bbl)	Royalties	679
-2011	MS	Stone	28131	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	50191.17
-2011	MS	Wayne	28153	Oil	Oil (bbl)	Royalties	47518.81
-2011	MS	Wilkinson	28157	Oil	Oil (bbl)	Royalties	3903.39
-2012	MS	Adams	28001	Oil	Oil (bbl)	Royalties	3059.89
-2012	MS	Chickasaw	28017	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	22789
-2012	MS	Clarke	28023	Oil	Oil (bbl)	Royalties	20.97
-2012	MS	Covington	28031	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	216
-2012	MS	Covington	28031	Oil	Oil (bbl)	Royalties	464.9
-2012	MS	Forrest	28035	Gas	Processed (Residue) Gas (mcf)	Royalties	25379.53
-2012	MS	Forrest	28035	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	40004.52
-2012	MS	Forrest	28035	Oil	Condensate (bbl)	Royalties	926.59
-2012	MS	Forrest	28035	Oil	Oil (bbl)	Royalties	6186.62
-2012	MS	Franklin	28037	Oil	Oil (bbl)	Royalties	73267.02
-2012	MS	Jasper	28061	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	7573.62
-2012	MS	Jasper	28061	Oil	Condensate (bbl)	Royalties	5.62
-2012	MS	Jeffer Davis	28065	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	29995.74
-2012	MS	Jeffer Davis	28065	Oil	Condensate (bbl)	Royalties	22.43
-2012	MS	Jeffer Davis	28065	Oil	Oil (bbl)	Royalties	104.89
-2012	MS	Jones	28067	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	8690.42
-2012	MS	Jones	28067	Oil	Condensate (bbl)	Royalties	1299.46
-2012	MS	Lamar	28073	Oil	Oil (bbl)	Royalties	53513.79
-2012	MS	Lawrence	28077	Gas	Processed (Residue) Gas (mcf)	Royalties	266315
-2012	MS	Lawrence	28077	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	5526.64
-2012	MS	Lawrence	28077	Oil	Condensate (bbl)	Royalties	960.86
-2012	MS	Lowndes	28087	Gas	Processed (Residue) Gas (mcf)	Royalties	51735.42
-2012	MS	Lowndes	28087	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	7950.51
-2012	MS	Lowndes	28087	Oil	Oil (bbl)	Royalties	308.86
-2012	MS	Pearl River	28109	Gas	Processed (Residue) Gas (mcf)	Royalties	253988.99
-2012	MS	Pearl River	28109	Oil	Condensate (bbl)	Royalties	5729.04
-2012	MS	Pearl River	28109	Oil	Oil (bbl)	Royalties	3858.24
-2012	MS	Perry	28111	Oil	Oil (bbl)	Royalties	119892.61
-2012	MS	Stone	28131	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	47414.31
-2012	MS	Wayne	28153	Oil	Oil (bbl)	Royalties	45966.73
-2012	MS	Wilkinson	28157	Oil	Oil (bbl)	Royalties	4731.49
-2013	MS	Adams	28001	Oil	Oil (bbl)	Royalties	2691.68
-2013	MS	Chickasaw	28017	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	18576
-2013	MS	Clarke	28023	Oil	Oil (bbl)	Royalties	70.5
-2013	MS	Covington	28031	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	160
-2013	MS	Covington	28031	Oil	Oil (bbl)	Royalties	422.66
-2013	MS	Forrest	28035	Gas	Processed (Residue) Gas (mcf)	Royalties	9459.3
-2013	MS	Forrest	28035	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	32413
-2013	MS	Forrest	28035	Oil	Condensate (bbl)	Royalties	1613.86
-2013	MS	Forrest	28035	Oil	Oil (bbl)	Royalties	4788.24
-2013	MS	Franklin	28037	Oil	Oil (bbl)	Royalties	85138.89
-2013	MS	Jasper	28061	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	5774.15
-2013	MS	Jasper	28061	Oil	Condensate (bbl)	Royalties	1.15
-2013	MS	Jeffer Davis	28065	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	38071.79
-2013	MS	Jeffer Davis	28065	Oil	Condensate (bbl)	Royalties	26.3
-2013	MS	Jeffer Davis	28065	Oil	Oil (bbl)	Royalties	85.77
-2013	MS	Jones	28067	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	8888.45
-2013	MS	Jones	28067	Oil	Condensate (bbl)	Royalties	1142.2
-2013	MS	Lamar	28073	Oil	Oil (bbl)	Royalties	87811.46
-2013	MS	Lawrence	28077	Gas	Processed (Residue) Gas (mcf)	Royalties	61472
-2013	MS	Lawrence	28077	Oil	Condensate (bbl)	Royalties	358.58
-2013	MS	Lowndes	28087	Gas	Processed (Residue) Gas (mcf)	Royalties	49964.47
-2013	MS	Lowndes	28087	Oil	Oil (bbl)	Royalties	212.77
-2013	MS	Pearl River	28109	Gas	Processed (Residue) Gas (mcf)	Royalties	125927.64
-2013	MS	Pearl River	28109	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	34760.27
-2013	MS	Pearl River	28109	Oil	Condensate (bbl)	Royalties	2864.15
-2013	MS	Pearl River	28109	Oil	Oil (bbl)	Royalties	3158.87
-2013	MS	Perry	28111	Oil	Oil (bbl)	Royalties	183046.3
-2013	MS	Smith	28129	Oil	Condensate (bbl)	Royalties	1286.83
-2013	MS	Stone	28131	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	21621.08
-2013	MS	Wayne	28153	Oil	Oil (bbl)	Royalties	40452.47
-2013	MS	Wilkinson	28157	Oil	Oil (bbl)	Royalties	4221.23
+Year	State	County	FIPS	Commodity	Product	Volume
+2006	MS	Clarke County	28023		Oil (bbl)	0.03
+2007	MS	Clarke County	28023		Oil (bbl)	0.03
+2013	MS	Lawrence County	28077		Oil (bbl)	0.05
+2012	MS	Lawrence County	28077		Oil (bbl)	0.22
+2005	MS	Clarke County	28023		Oil (bbl)	0.28
+2011	MS	Lawrence County	28077		Oil (bbl)	0.37
+2007	MS	Lawrence County	28077		Oil (bbl)	0.55
+2013	MS	Jasper County	28061		Oil (bbl)	0.61
+2010	MS	Lawrence County	28077		Oil (bbl)	0.67
+2008	MS	Lawrence County	28077		Oil (bbl)	0.86
+2009	MS	Lawrence County	28077		Oil (bbl)	1.01
+2012	MS	Jasper County	28061		Oil (bbl)	2.88
+2013	MS	Wilkinson County	28157		Gas (mcf)	4
+2014	MS	Jasper County	28061		Oil (bbl)	5.04
+2006	MS	Jasper County	28061		Oil (bbl)	5.91
+2011	MS	Jasper County	28061		Oil (bbl)	6.36
+2005	MS	Jasper County	28061		Oil (bbl)	7.32
+2010	MS	Jasper County	28061		Oil (bbl)	8.33
+2005	MS	Hancock County	28045		Oil (bbl)	8.37
+2007	MS	Jasper County	28061		Oil (bbl)	9.77
+2013	MS	Lawrence County	28077		Gas (mcf)	11.6
+2010	MS	Wilkinson County	28157		Gas (mcf)	14
+2011	MS	Wilkinson County	28157		Gas (mcf)	16
+2012	MS	Wilkinson County	28157		Gas (mcf)	16
+2009	MS	Jasper County	28061		Oil (bbl)	17.08
+2005	MS	Hancock County	28045		Gas (mcf)	18.26
+2014	MS	Monroe County	28095		Oil (bbl)	20.75
+2008	MS	Jasper County	28061		Oil (bbl)	30.73
+2013	MS	Monroe County	28095		Oil (bbl)	31.4
+2010	MS	Scott County	28123		Oil (bbl)	53
+2012	MS	Monroe County	28095		Oil (bbl)	55.4
+2011	MS	Monroe County	28095		Oil (bbl)	60.46
+2012	MS	Lawrence County	28077		Gas (mcf)	66
+2009	MS	Monroe County	28095		Oil (bbl)	81.57
+2006	MS	Monroe County	28095		Oil (bbl)	86.08
+2005	MS	Monroe County	28095		Oil (bbl)	86.81
+2010	MS	Monroe County	28095		Oil (bbl)	86.81
+2008	MS	Monroe County	28095		Oil (bbl)	89.87
+2014	MS	Lowndes County	28087		Oil (bbl)	95.42
+2011	MS	Lawrence County	28077		Gas (mcf)	112.54
+2007	MS	Monroe County	28095		Oil (bbl)	112.97
+2007	MS	Lawrence County	28077		Gas (mcf)	128.19
+2013	MS	Lowndes County	28087		Oil (bbl)	138.72
+2005	MS	Jefferson Davis County	28065		Oil (bbl)	154.35
+2014	MS	Jefferson Davis County	28065		Oil (bbl)	165.72
+2010	MS	Lamar County	28073		Oil (bbl)	168.77
+2010	MS	Lawrence County	28077		Gas (mcf)	189.13
+2008	MS	Lawrence County	28077		Gas (mcf)	217.12
+2013	MS	Jefferson Davis County	28065		Oil (bbl)	224.16
+2009	MS	Lamar County	28073		Oil (bbl)	236.68
+2011	MS	Lowndes County	28087		Oil (bbl)	237.71
+2012	MS	Lowndes County	28087		Oil (bbl)	247.14
+2009	MS	Lawrence County	28077		Gas (mcf)	264.11
+2008	MS	Lowndes County	28087		Oil (bbl)	321.81
+2006	MS	Jefferson Davis County	28065		Oil (bbl)	324.7
+2012	MS	Jefferson Davis County	28065		Oil (bbl)	343.55
+2009	MS	Lowndes County	28087		Oil (bbl)	356.24
+2010	MS	Lowndes County	28087		Oil (bbl)	378.86
+2008	MS	Lamar County	28073		Gas (mcf)	411.62
+2007	MS	Lowndes County	28087		Oil (bbl)	423.96
+2011	MS	Jefferson Davis County	28065		Oil (bbl)	431.58
+2006	MS	Covington County	28031		Oil (bbl)	471.59
+2006	MS	Lowndes County	28087		Oil (bbl)	488.64
+2005	MS	Lowndes County	28087		Oil (bbl)	502.86
+2005	MS	Covington County	28031		Oil (bbl)	511.19
+2007	MS	Jefferson Davis County	28065		Oil (bbl)	523.72
+2014	MS	Jones County	28067		Oil (bbl)	599.04
+2007	MS	Smith County	28129		Gas (mcf)	613
+2008	MS	Jones County	28067		Oil (bbl)	616.23
+2008	MS	Covington County	28031		Oil (bbl)	617.9
+2010	MS	Jefferson Davis County	28065		Oil (bbl)	670.23
+2010	MS	Covington County	28031		Oil (bbl)	677.52
+2009	MS	Wilkinson County	28157		Gas (mcf)	725
+2005	MS	Covington County	28031		Gas (mcf)	729.59
+2009	MS	Covington County	28031		Oil (bbl)	736.72
+2008	MS	Forrest County	28035		Oil (bbl)	740.19
+2014	MS	Covington County	28031		Oil (bbl)	747.1
+2007	MS	Covington County	28031		Oil (bbl)	748.11
+2011	MS	Covington County	28031		Oil (bbl)	787.3
+2013	MS	Covington County	28031		Oil (bbl)	798.59
+2006	MS	Covington County	28031		Gas (mcf)	799.81
+2008	MS	Jefferson Davis County	28065		Oil (bbl)	814.02
+2012	MS	Covington County	28031		Gas (mcf)	841.86
+2013	MS	Covington County	28031		Gas (mcf)	851.92
+2012	MS	Covington County	28031		Oil (bbl)	874.15
+2005	MS	Lamar County	28073		Gas (mcf)	879.85
+2007	MS	Pearl River County	28109		Gas (mcf)	900.14
+2010	MS	Covington County	28031		Gas (mcf)	911.5
+2009	MS	Jefferson Davis County	28065		Oil (bbl)	912.01
+2007	MS	Lamar County	28073		Gas (mcf)	921.01
+2006	MS	Lamar County	28073		Gas (mcf)	921.01
+2011	MS	Covington County	28031		Gas (mcf)	943.23
+2013	MS	Jones County	28067		Oil (bbl)	946.61
+2014	MS	Covington County	28031		Gas (mcf)	962.36
+2006	MS	Jones County	28067		Oil (bbl)	966.41
+2009	MS	Covington County	28031		Gas (mcf)	973.84
+2008	MS	Covington County	28031		Gas (mcf)	978.35
+2007	MS	Covington County	28031		Gas (mcf)	1070.78
+2007	MS	Forrest County	28035		Oil (bbl)	1073.08
+2007	MS	Jones County	28067		Oil (bbl)	1126.27
+2012	MS	Jones County	28067		Oil (bbl)	1131.38
+2010	MS	Jones County	28067		Oil (bbl)	1243.83
+2013	MS	Smith County	28129		Oil (bbl)	1286.87
+2011	MS	Jones County	28067		Oil (bbl)	1289.36
+2008	MS	Lamar County	28073		Oil (bbl)	1296.62
+2008	MS	Pearl River County	28109		Gas (mcf)	1380.29
+2009	MS	Jones County	28067		Oil (bbl)	1483.08
+2014	MS	Adams County	28001		Oil (bbl)	1974
+2007	MS	Smith County	28129		Oil (bbl)	2163
+2011	MS	Franklin County	28037		Gas (mcf)	2200
+2007	MS	Lamar County	28073		Oil (bbl)	2532
+2011	MS	Adams County	28001		Oil (bbl)	2563
+2014	MS	Franklin County	28037		Gas (mcf)	2591
+2012	MS	Franklin County	28037		Gas (mcf)	2675
+2009	MS	Franklin County	28037		Gas (mcf)	2692
+2010	MS	Franklin County	28037		Gas (mcf)	2777
+2006	MS	Pearl River County	28109		Gas (mcf)	2800.47
+2013	MS	Adams County	28001		Oil (bbl)	2817
+2005	MS	Jones County	28067		Oil (bbl)	2888.82
+2012	MS	Adams County	28001		Oil (bbl)	2895
+2008	MS	Pearl River County	28109		Oil (bbl)	2927.58
+2013	MS	Franklin County	28037		Gas (mcf)	3118
+2008	MS	Franklin County	28037		Gas (mcf)	3268
+2014	MS	Jasper County	28061		Gas (mcf)	3269.97
+2006	MS	Lamar County	28073		Oil (bbl)	3566.72
+2013	MS	Jasper County	28061		Gas (mcf)	3617.89
+2010	MS	Wilkinson County	28157		Oil (bbl)	3724
+2009	MS	Wilkinson County	28157		Oil (bbl)	3784
+2009	MS	Perry County	28111		Gas (mcf)	3855.76
+2014	MS	Wilkinson County	28157		Oil (bbl)	3875.08
+2011	MS	Wilkinson County	28157		Oil (bbl)	4030.4
+2008	MS	Perry County	28111		Gas (mcf)	4074.47
+2010	MS	Adams County	28001		Oil (bbl)	4088
+2006	MS	Forrest County	28035		Oil (bbl)	4095.44
+2013	MS	Wilkinson County	28157		Oil (bbl)	4256.53
+2008	MS	Wilkinson County	28157		Oil (bbl)	4315.23
+2007	MS	Franklin County	28037		Gas (mcf)	4371
+2005	MS	Jasper County	28061		Gas (mcf)	4401.97
+2012	MS	Jasper County	28061		Gas (mcf)	4669.01
+2012	MS	Wilkinson County	28157		Oil (bbl)	4720.68
+2014	MS	Forrest County	28035		Oil (bbl)	4769.03
+2005	MS	Lamar County	28073		Oil (bbl)	4846.36
+2014	MS	Pearl River County	28109		Oil (bbl)	4953.8
+2006	MS	Wilkinson County	28157		Oil (bbl)	5039.69
+2006	MS	Pearl River County	28109		Oil (bbl)	5050.54
+2007	MS	Pearl River County	28109		Oil (bbl)	5064.51
+2013	MS	Forrest County	28035		Oil (bbl)	5083.03
+2005	MS	Franklin County	28037		Gas (mcf)	5166
+2005	MS	Pearl River County	28109		Oil (bbl)	5173.39
+2013	MS	Smith County	28129		Gas (mcf)	5215.72
+2009	MS	Scott County	28123		Oil (bbl)	5499
+2011	MS	Jasper County	28061		Gas (mcf)	5527.15
+2006	MS	Franklin County	28037		Gas (mcf)	5607
+2007	MS	Perry County	28111		Gas (mcf)	5878.31
+2013	MS	Pearl River County	28109		Oil (bbl)	6312.08
+2005	MS	Pearl River County	28109		Gas (mcf)	6365.91
+2005	MS	Wilkinson County	28157		Oil (bbl)	6631.22
+2010	MS	Perry County	28111		Gas (mcf)	6763.39
+2010	MS	Jasper County	28061		Gas (mcf)	6819.39
+2014	MS	Jones County	28067		Gas (mcf)	6832.47
+2007	MS	Wilkinson County	28157		Oil (bbl)	7111.52
+2012	MS	Forrest County	28035		Oil (bbl)	7130.01
+2009	MS	Adams County	28001		Oil (bbl)	7494
+2008	MS	Scott County	28123		Oil (bbl)	7533
+2008	MS	Adams County	28001		Oil (bbl)	7704
+2011	MS	Perry County	28111		Gas (mcf)	7785.24
+2005	MS	Forrest County	28035		Oil (bbl)	7908.56
+2010	MS	Forrest County	28035		Oil (bbl)	8177.97
+2006	MS	Jasper County	28061		Gas (mcf)	8179.81
+2009	MS	Pearl River County	28109		Oil (bbl)	8609.92
+2011	MS	Forrest County	28035		Oil (bbl)	8797.93
+2009	MS	Forrest County	28035		Oil (bbl)	9028.67
+2014	MS	Jefferson Davis County	28065		Gas (mcf)	9311.62
+2013	MS	Jones County	28067		Gas (mcf)	9315.89
+2009	MS	Jasper County	28061		Gas (mcf)	9505.09
+2009	MS	Jones County	28067		Gas (mcf)	9505.09
+2006	MS	Perry County	28111		Gas (mcf)	9709.93
+2010	MS	Pearl River County	28109		Oil (bbl)	9830.22
+2007	MS	Scott County	28123		Oil (bbl)	10068
+2012	MS	Jones County	28067		Gas (mcf)	10173.01
+2012	MS	Pearl River County	28109		Oil (bbl)	10185.74
+2007	MS	Adams County	28001		Oil (bbl)	10196
+2006	MS	Scott County	28123		Oil (bbl)	11280
+2005	MS	Scott County	28123		Oil (bbl)	12047
+2012	MS	Perry County	28111		Gas (mcf)	12068.25
+2011	MS	Pearl River County	28109		Oil (bbl)	12166.17
+2013	MS	Perry County	28111		Gas (mcf)	12166.96
+2006	MS	Wilkinson County	28157		Gas (mcf)	12650.79
+2007	MS	Jasper County	28061		Gas (mcf)	12821.46
+2006	MS	Adams County	28001		Oil (bbl)	13009
+2011	MS	Wayne County	28153		Gas (mcf)	13305.51
+2010	MS	Wayne County	28153		Gas (mcf)	13992.72
+2009	MS	Wayne County	28153		Gas (mcf)	14410.38
+2010	MS	Jones County	28067		Gas (mcf)	14875.39
+2008	MS	Wayne County	28153		Gas (mcf)	14997.41
+2007	MS	Wilkinson County	28157		Gas (mcf)	15030.16
+2006	MS	Jones County	28067		Gas (mcf)	15123.81
+2013	MS	Wayne County	28153		Gas (mcf)	15164.79
+2007	MS	Wayne County	28153		Gas (mcf)	15237.08
+2012	MS	Wayne County	28153		Gas (mcf)	15286.95
+2014	MS	Wayne County	28153		Gas (mcf)	15503.28
+2005	MS	Adams County	28001		Oil (bbl)	15590
+2005	MS	Perry County	28111		Gas (mcf)	15656
+2006	MS	Wayne County	28153		Gas (mcf)	15684.71
+2011	MS	Jones County	28067		Gas (mcf)	16056.65
+2014	MS	Chickasaw County	28017		Gas (mcf)	16697
+2005	MS	Wayne County	28153		Gas (mcf)	16831.67
+2013	MS	Jefferson Davis County	28065		Gas (mcf)	17688.15
+2007	MS	Jones County	28067		Gas (mcf)	17786.46
+2008	MS	Jasper County	28061		Gas (mcf)	18470.61
+2013	MS	Chickasaw County	28017		Gas (mcf)	18576
+2008	MS	Jones County	28067		Gas (mcf)	18855.61
+2013	MS	Stone County	28131		Gas (mcf)	19871.63
+2005	MS	Jefferson Davis County	28065		Gas (mcf)	19906.23
+2014	MS	Smith County	28129		Oil (bbl)	20561.42
+2014	MS	Monroe County	28095		Gas (mcf)	22023.86
+2012	MS	Chickasaw County	28017		Gas (mcf)	22789
+2006	MS	Jefferson Davis County	28065		Gas (mcf)	24362.06
+2014	MS	Perry County	28111		Gas (mcf)	26683.85
+2011	MS	Monroe County	28095		Gas (mcf)	28409.34
+2012	MS	Monroe County	28095		Gas (mcf)	28554.14
+2005	MS	Jones County	28067		Gas (mcf)	29616.47
+2013	MS	Monroe County	28095		Gas (mcf)	29760.1
+2011	MS	Chickasaw County	28017		Gas (mcf)	30116.5
+2011	MS	Lamar County	28073		Oil (bbl)	30836.3
+2010	MS	Monroe County	28095		Gas (mcf)	31024.6
+2014	MS	Lamar County	28073		Oil (bbl)	33161.46
+2014	MS	Lowndes County	28087		Gas (mcf)	33240.2
+2010	MS	Chickasaw County	28017		Gas (mcf)	36066
+2005	MS	Chickasaw County	28017		Gas (mcf)	37591
+2005	MS	Wilkinson County	28157		Gas (mcf)	40080.56
+2013	MS	Wayne County	28153		Oil (bbl)	40822.14
+2014	MS	Wayne County	28153		Oil (bbl)	41132.62
+2012	MS	Stone County	28131		Gas (mcf)	45345
+2012	MS	Wayne County	28153		Oil (bbl)	45579.81
+2009	MS	Chickasaw County	28017		Gas (mcf)	46864.5
+2007	MS	Stone County	28131		Gas (mcf)	47304
+2008	MS	Wayne County	28153		Oil (bbl)	47614.82
+2011	MS	Wayne County	28153		Oil (bbl)	47650.98
+2007	MS	Wayne County	28153		Oil (bbl)	50802.47
+2013	MS	Lowndes County	28087		Gas (mcf)	51198.99
+2011	MS	Stone County	28131		Gas (mcf)	52091.63
+2012	MS	Lamar County	28073		Oil (bbl)	53929.95
+2012	MS	Jefferson Davis County	28065		Gas (mcf)	53947.83
+2006	MS	Wayne County	28153		Oil (bbl)	55743.29
+2009	MS	Wayne County	28153		Oil (bbl)	56402.16
+2011	MS	Lowndes County	28087		Gas (mcf)	57611.4
+2010	MS	Stone County	28131		Gas (mcf)	58223.63
+2009	MS	Stone County	28131		Gas (mcf)	59655
+2008	MS	Chickasaw County	28017		Gas (mcf)	59812
+2010	MS	Wayne County	28153		Oil (bbl)	60184.28
+2012	MS	Lowndes County	28087		Gas (mcf)	60599.42
+2008	MS	Wilkinson County	28157		Gas (mcf)	61489
+2008	MS	Stone County	28131		Gas (mcf)	62679.75
+2009	MS	Perry County	28111		Oil (bbl)	63638.35
+2008	MS	Lowndes County	28087		Gas (mcf)	63796.45
+2005	MS	Wayne County	28153		Oil (bbl)	70620.95
+2009	MS	Lowndes County	28087		Gas (mcf)	72446.69
+2006	MS	Chickasaw County	28017		Gas (mcf)	73691.5
+2012	MS	Franklin County	28037		Oil (bbl)	73990.33
+2010	MS	Franklin County	28037		Oil (bbl)	74254.16
+2007	MS	Chickasaw County	28017		Gas (mcf)	74423.5
+2011	MS	Franklin County	28037		Oil (bbl)	75920.83
+2010	MS	Perry County	28111		Oil (bbl)	75999.63
+2010	MS	Lowndes County	28087		Gas (mcf)	76188.68
+2014	MS	Forrest County	28035		Gas (mcf)	77073.48
+2009	MS	Franklin County	28037		Oil (bbl)	77415.68
+2006	MS	Stone County	28131		Gas (mcf)	78642.38
+2007	MS	Lowndes County	28087		Gas (mcf)	78860.69
+2014	MS	Smith County	28129		Gas (mcf)	79675.68
+2008	MS	Perry County	28111		Oil (bbl)	81068.21
+2011	MS	Perry County	28111		Oil (bbl)	82898.84
+2008	MS	Monroe County	28095		Gas (mcf)	83052.52
+2006	MS	Franklin County	28037		Oil (bbl)	83355.07
+2008	MS	Franklin County	28037		Oil (bbl)	83628.85
+2011	MS	Jefferson Davis County	28065		Gas (mcf)	83958.64
+2006	MS	Lowndes County	28087		Gas (mcf)	84536.19
+2014	MS	Pearl River County	28109		Gas (mcf)	85373.86
+2013	MS	Franklin County	28037		Oil (bbl)	85510
+2007	MS	Franklin County	28037		Oil (bbl)	85928.64
+2013	MS	Lamar County	28073		Oil (bbl)	87928.03
+2013	MS	Forrest County	28035		Gas (mcf)	92768.39
+2005	MS	Lowndes County	28087		Gas (mcf)	94064.76
+2009	MS	Monroe County	28095		Gas (mcf)	95665.07
+2006	MS	Monroe County	28095		Gas (mcf)	96135.55
+2005	MS	Franklin County	28037		Oil (bbl)	96539.22
+2007	MS	Monroe County	28095		Gas (mcf)	99399.06
+2005	MS	Monroe County	28095		Gas (mcf)	100230.97
+2005	MS	Stone County	28131		Gas (mcf)	100970.63
+2007	MS	Jefferson Davis County	28065		Gas (mcf)	104077.08
+2007	MS	Perry County	28111		Oil (bbl)	114941.13
+2006	MS	Perry County	28111		Oil (bbl)	116437.13
+2012	MS	Forrest County	28035		Gas (mcf)	117994.62
+2012	MS	Perry County	28111		Oil (bbl)	121410.86
+2011	MS	Forrest County	28035		Gas (mcf)	126231.65
+2009	MS	Forrest County	28035		Gas (mcf)	129722.3
+2014	MS	Franklin County	28037		Oil (bbl)	133270.66
+2010	MS	Jefferson Davis County	28065		Gas (mcf)	135316.18
+2008	MS	Forrest County	28035		Gas (mcf)	138361.12
+2009	MS	Pearl River County	28109		Gas (mcf)	141024.1
+2014	MS	Perry County	28111		Oil (bbl)	153375.33
+2013	MS	Pearl River County	28109		Gas (mcf)	154604.7
+2005	MS	Perry County	28111		Oil (bbl)	157527.82
+2008	MS	Jefferson Davis County	28065		Gas (mcf)	158858.98
+2007	MS	Forrest County	28035		Gas (mcf)	172183.1
+2010	MS	Forrest County	28035		Gas (mcf)	172678.01
+2009	MS	Jefferson Davis County	28065		Gas (mcf)	184058.51
+2013	MS	Perry County	28111		Oil (bbl)	188171.29
+2005	MS	Forrest County	28035		Gas (mcf)	227584.87
+2006	MS	Forrest County	28035		Gas (mcf)	267442.06
+2012	MS	Pearl River County	28109		Gas (mcf)	272615.63
+2010	MS	Pearl River County	28109		Gas (mcf)	294606.84
+2011	MS	Pearl River County	28109		Gas (mcf)	350448.55

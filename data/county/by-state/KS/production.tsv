@@ -1,480 +1,220 @@
-Year	State	County	FIPS	Commodity	Product	Type	Volume
-2004	KS	Comanche	20033	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	8441.44
-2004	KS	Comanche	20033	Oil	Oil (bbl)	Royalties	9.95
-2004	KS	Ellsworth	20053	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	17805.94
-2004	KS	Finney	20055	Gas	Fuel Gas (mcf)	Royalties	2047.33
-2004	KS	Finney	20055	Gas	Processed (Residue) Gas (mcf)	Royalties	168825.02
-2004	KS	Finney	20055	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1364673.13
-2004	KS	Finney	20055	NGL	Gas Plant Products (gal)	Royalties	154683
-2004	KS	Finney	20055	Oil	Oil (bbl)	Royalties	47180.09
-2004	KS	Gove	20063	Oil	Oil (bbl)	Royalties	1957.95
-2004	KS	Grant	20067	Gas	Processed (Residue) Gas (mcf)	Royalties	22090.07
-2004	KS	Grant	20067	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	36312.27
-2004	KS	Grant	20067	NGL	Gas Plant Products (gal)	Royalties	56948.81
-2004	KS	Hamilton	20075	Gas	Processed (Residue) Gas (mcf)	Royalties	1096.91
-2004	KS	Hamilton	20075	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	45484.96
-2004	KS	Hamilton	20075	NGL	Gas Plant Products (gal)	Royalties	82.78
-2004	KS	Haskell	20081	Gas	Fuel Gas (mcf)	Royalties	4421.84
-2004	KS	Haskell	20081	Gas	Processed (Residue) Gas (mcf)	Royalties	13341.95
-2004	KS	Haskell	20081	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	494482.53
-2004	KS	Haskell	20081	NGL	Gas Plant Products (gal)	Royalties	12603
-2004	KS	Haskell	20081	Oil	Oil (bbl)	Royalties	22560.77
-2004	KS	Kearny	20093	Gas	Processed (Residue) Gas (mcf)	Royalties	918622.77
-2004	KS	Kearny	20093	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1797552.01
-2004	KS	Kearny	20093	NGL	Gas Plant Products (gal)	Royalties	2319521.01
-2004	KS	Kearny	20093	Oil	Oil (bbl)	Royalties	4555.11
-2004	KS	Lane	20101	Oil	Oil (bbl)	Royalties	2208.32
-2004	KS	Meade	20119	Gas	Processed (Residue) Gas (mcf)	Royalties	38.61
-2004	KS	Meade	20119	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	12022.14
-2004	KS	Morton	20129	Gas	Processed (Residue) Gas (mcf)	Royalties	356692.63
-2004	KS	Morton	20129	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	4011683.28
-2004	KS	Morton	20129	NGL	Gas Plant Products (gal)	Royalties	817600.29
-2004	KS	Morton	20129	Oil	Condensate (bbl)	Royalties	167.52
-2004	KS	Morton	20129	Oil	Oil (bbl)	Royalties	49078.5
-2004	KS	Seward	20175	Gas	Processed (Residue) Gas (mcf)	Royalties	25913.24
-2004	KS	Seward	20175	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	136870.17
-2004	KS	Seward	20175	NGL	Gas Plant Products (gal)	Royalties	21350.12
-2004	KS	Seward	20175	Oil	Oil (bbl)	Royalties	210.17
-2004	KS	Stanton	20187	Gas	Processed (Residue) Gas (mcf)	Royalties	19620.82
-2004	KS	Stanton	20187	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	238.71
-2004	KS	Stanton	20187	NGL	Gas Plant Products (gal)	Royalties	78879.4
-2004	KS	Stevens	20189	Gas	Processed (Residue) Gas (mcf)	Royalties	52615.6
-2004	KS	Stevens	20189	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	384485.41
-2004	KS	Stevens	20189	NGL	Gas Plant Products (gal)	Royalties	37187.65
-2004	KS	Trego	20195	Oil	Oil (bbl)	Royalties	2343.58
-2005	KS	Comanche	20033	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	7805.8
-2005	KS	Ellsworth	20053	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	14089.21
-2005	KS	Finney	20055	Gas	Fuel Gas (mcf)	Royalties	376.77
-2005	KS	Finney	20055	Gas	Processed (Residue) Gas (mcf)	Royalties	184105.9
-2005	KS	Finney	20055	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1186616.41
-2005	KS	Finney	20055	NGL	Gas Plant Products (gal)	Royalties	308475.34
-2005	KS	Finney	20055	Oil	Oil (bbl)	Royalties	47500.16
-2005	KS	Gove	20063	Oil	Oil (bbl)	Royalties	1847.57
-2005	KS	Grant	20067	Gas	Processed (Residue) Gas (mcf)	Royalties	17542.99
-2005	KS	Grant	20067	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	34967.04
-2005	KS	Grant	20067	NGL	Gas Plant Products (gal)	Royalties	40588.46
-2005	KS	Hamilton	20075	Gas	Processed (Residue) Gas (mcf)	Royalties	925.59
-2005	KS	Hamilton	20075	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	43710.69
-2005	KS	Hamilton	20075	NGL	Gas Plant Products (gal)	Royalties	930.87
-2005	KS	Haskell	20081	Gas	Fuel Gas (mcf)	Royalties	12
-2005	KS	Haskell	20081	Gas	Processed (Residue) Gas (mcf)	Royalties	15683.75
-2005	KS	Haskell	20081	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	470680.87
-2005	KS	Haskell	20081	NGL	Gas Plant Products (gal)	Royalties	15000
-2005	KS	Haskell	20081	Oil	Oil (bbl)	Royalties	20171.7
-2005	KS	Kearny	20093	Gas	Processed (Residue) Gas (mcf)	Royalties	808935.01
-2005	KS	Kearny	20093	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1603352.28
-2005	KS	Kearny	20093	NGL	Gas Plant Products (gal)	Royalties	1931491.78
-2005	KS	Kearny	20093	Oil	Oil (bbl)	Royalties	4392.3
-2005	KS	Lane	20101	Oil	Oil (bbl)	Royalties	2045.21
-2005	KS	Meade	20119	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	11038.14
-2005	KS	Morton	20129	Gas	Processed (Residue) Gas (mcf)	Royalties	401490.08
-2005	KS	Morton	20129	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3522606.91
-2005	KS	Morton	20129	NGL	Gas Plant Products (gal)	Royalties	967602.45
-2005	KS	Morton	20129	Oil	Condensate (bbl)	Royalties	295.84
-2005	KS	Morton	20129	Oil	Oil (bbl)	Royalties	220308.99
-2005	KS	Seward	20175	Gas	Processed (Residue) Gas (mcf)	Royalties	34344.18
-2005	KS	Seward	20175	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	144454.2
-2005	KS	Seward	20175	NGL	Gas Plant Products (gal)	Royalties	52423.65
-2005	KS	Seward	20175	Oil	Condensate (bbl)	Royalties	20.48
-2005	KS	Seward	20175	Oil	Oil (bbl)	Royalties	400.06
-2005	KS	Seward	20175	Helium	Helium (bbl)	Royalties	9.24
-2005	KS	Stanton	20187	Gas	Processed (Residue) Gas (mcf)	Royalties	18483.04
-2005	KS	Stanton	20187	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	238.73
-2005	KS	Stanton	20187	NGL	Gas Plant Products (gal)	Royalties	77183.32
-2005	KS	Stevens	20189	Gas	Processed (Residue) Gas (mcf)	Royalties	41757.78
-2005	KS	Stevens	20189	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	358317.76
-2005	KS	Stevens	20189	NGL	Gas Plant Products (gal)	Royalties	63472.39
-2005	KS	Trego	20195	Oil	Oil (bbl)	Royalties	2412.9
-2006	KS	Comanche	20033	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	7277.44
-2006	KS	Ellsworth	20053	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	9727.46
-2006	KS	Finney	20055	Gas	Fuel Gas (mcf)	Royalties	490.88
-2006	KS	Finney	20055	Gas	Processed (Residue) Gas (mcf)	Royalties	165117.33
-2006	KS	Finney	20055	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1091704.62
-2006	KS	Finney	20055	NGL	Gas Plant Products (gal)	Royalties	471674.72
-2006	KS	Finney	20055	Oil	Drip or Scrubber Condensate (bbl)	Royalties	25.68
-2006	KS	Finney	20055	Oil	Oil (bbl)	Royalties	46978.17
-2006	KS	Gove	20063	Oil	Oil (bbl)	Royalties	1817.32
-2006	KS	Grant	20067	Gas	Processed (Residue) Gas (mcf)	Royalties	19042.94
-2006	KS	Grant	20067	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	26069.52
-2006	KS	Grant	20067	NGL	Gas Plant Products (gal)	Royalties	58381.57
-2006	KS	Hamilton	20075	Gas	Processed (Residue) Gas (mcf)	Royalties	928.89
-2006	KS	Hamilton	20075	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	31888.07
-2006	KS	Hamilton	20075	NGL	Gas Plant Products (gal)	Royalties	2853.19
-2006	KS	Haskell	20081	Gas	Processed (Residue) Gas (mcf)	Royalties	26025.38
-2006	KS	Haskell	20081	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	411868.49
-2006	KS	Haskell	20081	NGL	Gas Plant Products (gal)	Royalties	45356
-2006	KS	Haskell	20081	Oil	Drip or Scrubber Condensate (bbl)	Royalties	1.6
-2006	KS	Haskell	20081	Oil	Oil (bbl)	Royalties	18573.41
-2006	KS	Kearny	20093	Gas	Processed (Residue) Gas (mcf)	Royalties	618655.02
-2006	KS	Kearny	20093	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1485748.17
-2006	KS	Kearny	20093	NGL	Gas Plant Products (gal)	Royalties	2437468.43
-2006	KS	Kearny	20093	Oil	Oil (bbl)	Royalties	4137.35
-2006	KS	Lane	20101	Oil	Oil (bbl)	Royalties	4827.03
-2006	KS	Meade	20119	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	7438.48
-2006	KS	Morton	20129	Gas	Processed (Residue) Gas (mcf)	Royalties	521114.65
-2006	KS	Morton	20129	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3081718.05
-2006	KS	Morton	20129	NGL	Gas Plant Products (gal)	Royalties	1491649.2
-2006	KS	Morton	20129	Oil	Condensate (bbl)	Royalties	263.35
-2006	KS	Morton	20129	Oil	Drip or Scrubber Condensate (bbl)	Royalties	0.02
-2006	KS	Morton	20129	Oil	Oil (bbl)	Royalties	435485.38
-2006	KS	Seward	20175	Gas	Processed (Residue) Gas (mcf)	Royalties	40723.73
-2006	KS	Seward	20175	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	118182.65
-2006	KS	Seward	20175	NGL	Gas Plant Products (gal)	Royalties	57227.83
-2006	KS	Seward	20175	Oil	Oil (bbl)	Royalties	368.18
-2006	KS	Seward	20175	Helium	Helium (bbl)	Royalties	50.83
-2006	KS	Stanton	20187	Gas	Processed (Residue) Gas (mcf)	Royalties	16494.26
-2006	KS	Stanton	20187	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	278.54
-2006	KS	Stanton	20187	NGL	Gas Plant Products (gal)	Royalties	74447.64
-2006	KS	Stanton	20187	Oil	Drip or Scrubber Condensate (bbl)	Royalties	0.02
-2006	KS	Stevens	20189	Gas	Processed (Residue) Gas (mcf)	Royalties	41863.58
-2006	KS	Stevens	20189	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	412457.97
-2006	KS	Stevens	20189	NGL	Gas Plant Products (gal)	Royalties	78183.85
-2006	KS	Trego	20195	Oil	Oil (bbl)	Royalties	2127.45
-2007	KS	Comanche	20033	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	7137.01
-2007	KS	Finney	20055	Gas	Fuel Gas (mcf)	Royalties	344.26
-2007	KS	Finney	20055	Gas	Processed (Residue) Gas (mcf)	Royalties	184346.57
-2007	KS	Finney	20055	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	969473.94
-2007	KS	Finney	20055	NGL	Gas Plant Products (gal)	Royalties	620651.66
-2007	KS	Finney	20055	Oil	Drip or Scrubber Condensate (bbl)	Royalties	21.76
-2007	KS	Finney	20055	Oil	Oil (bbl)	Royalties	41718.92
-2007	KS	Gove	20063	Oil	Oil (bbl)	Royalties	1611.86
-2007	KS	Grant	20067	Gas	Processed (Residue) Gas (mcf)	Royalties	11070.98
-2007	KS	Grant	20067	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	28959
-2007	KS	Grant	20067	NGL	Gas Plant Products (gal)	Royalties	44871.81
-2007	KS	Hamilton	20075	Gas	Processed (Residue) Gas (mcf)	Royalties	209.89
-2007	KS	Hamilton	20075	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	38183.64
-2007	KS	Hamilton	20075	NGL	Gas Plant Products (gal)	Royalties	536.24
-2007	KS	Haskell	20081	Gas	Processed (Residue) Gas (mcf)	Royalties	25252.03
-2007	KS	Haskell	20081	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	366547.06
-2007	KS	Haskell	20081	NGL	Gas Plant Products (gal)	Royalties	70896.32
-2007	KS	Haskell	20081	Oil	Drip or Scrubber Condensate (bbl)	Royalties	1.2
-2007	KS	Haskell	20081	Oil	Oil (bbl)	Royalties	17355.6
-2007	KS	Kearny	20093	Gas	Processed (Residue) Gas (mcf)	Royalties	560557.96
-2007	KS	Kearny	20093	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1422787.81
-2007	KS	Kearny	20093	NGL	Gas Plant Products (gal)	Royalties	2220058.41
-2007	KS	Kearny	20093	Oil	Oil (bbl)	Royalties	4177.77
-2007	KS	Lane	20101	Oil	Oil (bbl)	Royalties	5031.57
-2007	KS	Meade	20119	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	7591.88
-2007	KS	Morton	20129	Gas	Processed (Residue) Gas (mcf)	Royalties	522926.32
-2007	KS	Morton	20129	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2812089.5
-2007	KS	Morton	20129	NGL	Gas Plant Products (gal)	Royalties	1558649.3
-2007	KS	Morton	20129	Oil	Condensate (bbl)	Royalties	184.84
-2007	KS	Morton	20129	Oil	Oil (bbl)	Royalties	285101.74
-2007	KS	Seward	20175	Gas	Processed (Residue) Gas (mcf)	Royalties	64872.64
-2007	KS	Seward	20175	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	101448.98
-2007	KS	Seward	20175	NGL	Gas Plant Products (gal)	Royalties	135337.66
-2007	KS	Seward	20175	Oil	Condensate (bbl)	Royalties	105.52
-2007	KS	Seward	20175	Oil	Oil (bbl)	Royalties	197.29
-2007	KS	Seward	20175	Helium	Helium (bbl)	Royalties	46.91
-2007	KS	Stanton	20187	Gas	Processed (Residue) Gas (mcf)	Royalties	14286.5
-2007	KS	Stanton	20187	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3238.49
-2007	KS	Stanton	20187	NGL	Gas Plant Products (gal)	Royalties	61654.41
-2007	KS	Stevens	20189	Gas	Processed (Residue) Gas (mcf)	Royalties	37130.99
-2007	KS	Stevens	20189	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	389985.64
-2007	KS	Stevens	20189	NGL	Gas Plant Products (gal)	Royalties	68931.44
-2007	KS	Trego	20195	Oil	Oil (bbl)	Royalties	2226.27
-2008	KS	Comanche	20033	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	5762.17
-2008	KS	Ellsworth	20053	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	14133.16
-2008	KS	Finney	20055	Gas	Fuel Gas (mcf)	Royalties	416.77
-2008	KS	Finney	20055	Gas	Processed (Residue) Gas (mcf)	Royalties	184609.35
-2008	KS	Finney	20055	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	965307.69
-2008	KS	Finney	20055	NGL	Gas Plant Products (gal)	Royalties	613235.5
-2008	KS	Finney	20055	Oil	Drip or Scrubber Condensate (bbl)	Royalties	7.52
-2008	KS	Finney	20055	Oil	Oil (bbl)	Royalties	45406.89
-2008	KS	Gove	20063	Oil	Oil (bbl)	Royalties	1817.51
-2008	KS	Grant	20067	Gas	Processed (Residue) Gas (mcf)	Royalties	12170.58
-2008	KS	Grant	20067	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	26803.08
-2008	KS	Grant	20067	NGL	Gas Plant Products (gal)	Royalties	49444.22
-2008	KS	Hamilton	20075	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	40423.29
-2008	KS	Haskell	20081	Gas	Processed (Residue) Gas (mcf)	Royalties	34802.09
-2008	KS	Haskell	20081	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	331692.62
-2008	KS	Haskell	20081	NGL	Gas Plant Products (gal)	Royalties	119653.44
-2008	KS	Haskell	20081	Oil	Drip or Scrubber Condensate (bbl)	Royalties	0.48
-2008	KS	Haskell	20081	Oil	Oil (bbl)	Royalties	17174.8
-2008	KS	Kearny	20093	Gas	Fuel Gas (mcf)	Royalties	1651
-2008	KS	Kearny	20093	Gas	Processed (Residue) Gas (mcf)	Royalties	539054.33
-2008	KS	Kearny	20093	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1417755.64
-2008	KS	Kearny	20093	NGL	Gas Plant Products (gal)	Royalties	2128119.41
-2008	KS	Kearny	20093	Oil	Oil (bbl)	Royalties	4130.24
-2008	KS	Lane	20101	Oil	Oil (bbl)	Royalties	4540.22
-2008	KS	Meade	20119	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	10419.42
-2008	KS	Meade	20119	Oil	Condensate (bbl)	Royalties	24.8
-2008	KS	Morton	20129	Gas	Processed (Residue) Gas (mcf)	Royalties	804077.42
-2008	KS	Morton	20129	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2732160.69
-2008	KS	Morton	20129	NGL	Gas Plant Products (gal)	Royalties	1790954.55
-2008	KS	Morton	20129	Oil	Condensate (bbl)	Royalties	78.96
-2008	KS	Morton	20129	Oil	Oil (bbl)	Royalties	240478.3
-2008	KS	Seward	20175	Gas	Processed (Residue) Gas (mcf)	Royalties	56823
-2008	KS	Seward	20175	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	62795.41
-2008	KS	Seward	20175	NGL	Gas Plant Products (gal)	Royalties	126490.69
-2008	KS	Seward	20175	Oil	Condensate (bbl)	Royalties	113.6
-2008	KS	Seward	20175	Oil	Oil (bbl)	Royalties	216.21
-2008	KS	Seward	20175	Helium	Helium (bbl)	Royalties	33.53
-2008	KS	Stanton	20187	Gas	Processed (Residue) Gas (mcf)	Royalties	11620.41
-2008	KS	Stanton	20187	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	9343.4
-2008	KS	Stanton	20187	NGL	Gas Plant Products (gal)	Royalties	57091.12
-2008	KS	Stevens	20189	Gas	Processed (Residue) Gas (mcf)	Royalties	32802.47
-2008	KS	Stevens	20189	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	380717.41
-2008	KS	Stevens	20189	NGL	Gas Plant Products (gal)	Royalties	67711.28
-2008	KS	Stevens	20189	Oil	Condensate (bbl)	Royalties	23.44
-2008	KS	Trego	20195	Oil	Oil (bbl)	Royalties	2129.9
-2009	KS	Comanche	20033	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	5646.45
-2009	KS	Ellsworth	20053	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	10825.8
-2009	KS	Finney	20055	Gas	Fuel Gas (mcf)	Royalties	24586.07
-2009	KS	Finney	20055	Gas	Processed (Residue) Gas (mcf)	Royalties	524542.18
-2009	KS	Finney	20055	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	447176.07
-2009	KS	Finney	20055	NGL	Gas Plant Products (gal)	Royalties	1158036.19
-2009	KS	Finney	20055	Oil	Drip or Scrubber Condensate (bbl)	Royalties	9.52
-2009	KS	Finney	20055	Oil	Oil (bbl)	Royalties	43719.09
-2009	KS	Gove	20063	Oil	Oil (bbl)	Royalties	1503.28
-2009	KS	Grant	20067	Gas	Processed (Residue) Gas (mcf)	Royalties	16908.91
-2009	KS	Grant	20067	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	15031.68
-2009	KS	Grant	20067	NGL	Gas Plant Products (gal)	Royalties	65782.56
-2009	KS	Hamilton	20075	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	35728.6
-2009	KS	Haskell	20081	Gas	Fuel Gas (mcf)	Royalties	9938.56
-2009	KS	Haskell	20081	Gas	Processed (Residue) Gas (mcf)	Royalties	181466.58
-2009	KS	Haskell	20081	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	122585.78
-2009	KS	Haskell	20081	NGL	Gas Plant Products (gal)	Royalties	376310.2
-2009	KS	Haskell	20081	Oil	Drip or Scrubber Condensate (bbl)	Royalties	0.64
-2009	KS	Haskell	20081	Oil	Oil (bbl)	Royalties	16004.64
-2009	KS	Kearny	20093	Gas	Fuel Gas (mcf)	Royalties	39698.1
-2009	KS	Kearny	20093	Gas	Processed (Residue) Gas (mcf)	Royalties	1108787
-2009	KS	Kearny	20093	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	603386.63
-2009	KS	Kearny	20093	NGL	Gas Plant Products (gal)	Royalties	2957078.52
-2009	KS	Kearny	20093	Oil	Oil (bbl)	Royalties	3938.06
-2009	KS	Lane	20101	Oil	Oil (bbl)	Royalties	4682.63
-2009	KS	Meade	20119	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	8284.53
-2009	KS	Morton	20129	Gas	Processed (Residue) Gas (mcf)	Royalties	1295998.45
-2009	KS	Morton	20129	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2240677.57
-2009	KS	Morton	20129	NGL	Gas Plant Products (gal)	Royalties	1726587.58
-2009	KS	Morton	20129	Oil	Condensate (bbl)	Royalties	267.04
-2009	KS	Morton	20129	Oil	Drip or Scrubber Condensate (bbl)	Royalties	0.1
-2009	KS	Morton	20129	Oil	Oil (bbl)	Royalties	195428.63
-2009	KS	Seward	20175	Gas	Processed (Residue) Gas (mcf)	Royalties	42704.48
-2009	KS	Seward	20175	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	52804.47
-2009	KS	Seward	20175	NGL	Gas Plant Products (gal)	Royalties	98684.55
-2009	KS	Seward	20175	Oil	Condensate (bbl)	Royalties	65.12
-2009	KS	Seward	20175	Oil	Oil (bbl)	Royalties	475.48
-2009	KS	Seward	20175	Helium	Helium (bbl)	Royalties	4.49
-2009	KS	Stanton	20187	Gas	Processed (Residue) Gas (mcf)	Royalties	11917.05
-2009	KS	Stanton	20187	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2853.17
-2009	KS	Stanton	20187	NGL	Gas Plant Products (gal)	Royalties	46948.16
-2009	KS	Stanton	20187	Oil	Drip or Scrubber Condensate (bbl)	Royalties	0.33
-2009	KS	Stevens	20189	Gas	Processed (Residue) Gas (mcf)	Royalties	29279.04
-2009	KS	Stevens	20189	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	276811.5
-2009	KS	Stevens	20189	NGL	Gas Plant Products (gal)	Royalties	142684.68
-2009	KS	Trego	20195	Oil	Oil (bbl)	Royalties	1915.12
-2010	KS	Comanche	20033	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	5102.56
-2010	KS	Ellsworth	20053	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	7652.44
-2010	KS	Finney	20055	Gas	Fuel Gas (mcf)	Royalties	23188.7
-2010	KS	Finney	20055	Gas	Nitrogen (mcf)	Royalties	194.01
-2010	KS	Finney	20055	Gas	Processed (Residue) Gas (mcf)	Royalties	528805.1
-2010	KS	Finney	20055	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	372818.7
-2010	KS	Finney	20055	NGL	Gas Plant Products (gal)	Royalties	1024439.5
-2010	KS	Finney	20055	Oil	Drip or Scrubber Condensate (bbl)	Royalties	26.16
-2010	KS	Finney	20055	Oil	Oil (bbl)	Royalties	59920.3
-2010	KS	Gove	20063	Oil	Oil (bbl)	Royalties	1529.09
-2010	KS	Grant	20067	Gas	Processed (Residue) Gas (mcf)	Royalties	22969.44
-2010	KS	Grant	20067	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	5118.31
-2010	KS	Grant	20067	NGL	Gas Plant Products (gal)	Royalties	77818.26
-2010	KS	Hamilton	20075	Gas	Processed (Residue) Gas (mcf)	Royalties	3357.6
-2010	KS	Hamilton	20075	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	26706.44
-2010	KS	Haskell	20081	Gas	Fuel Gas (mcf)	Royalties	9857.04
-2010	KS	Haskell	20081	Gas	Nitrogen (mcf)	Royalties	10
-2010	KS	Haskell	20081	Gas	Processed (Residue) Gas (mcf)	Royalties	181607.06
-2010	KS	Haskell	20081	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	113381.03
-2010	KS	Haskell	20081	NGL	Gas Plant Products (gal)	Royalties	446383.48
-2010	KS	Haskell	20081	Oil	Drip or Scrubber Condensate (bbl)	Royalties	1.12
-2010	KS	Haskell	20081	Oil	Oil (bbl)	Royalties	21855.2
-2010	KS	Kearny	20093	Gas	Fuel Gas (mcf)	Royalties	27937.91
-2010	KS	Kearny	20093	Gas	Nitrogen (mcf)	Royalties	624.23
-2010	KS	Kearny	20093	Gas	Processed (Residue) Gas (mcf)	Royalties	879743.49
-2010	KS	Kearny	20093	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	679039.38
-2010	KS	Kearny	20093	NGL	Gas Plant Products (gal)	Royalties	2527752.99
-2010	KS	Kearny	20093	Oil	Oil (bbl)	Royalties	3927.59
-2010	KS	Lane	20101	Oil	Oil (bbl)	Royalties	3734.55
-2010	KS	Meade	20119	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	6856.38
-2010	KS	Morton	20129	Gas	Nitrogen (mcf)	Royalties	192.25
-2010	KS	Morton	20129	Gas	Processed (Residue) Gas (mcf)	Royalties	1280185.15
-2010	KS	Morton	20129	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1974825.74
-2010	KS	Morton	20129	NGL	Gas Plant Products (gal)	Royalties	3516802.59
-2010	KS	Morton	20129	Oil	Condensate (bbl)	Royalties	244.12
-2010	KS	Morton	20129	Oil	Drip or Scrubber Condensate (bbl)	Royalties	0.2
-2010	KS	Morton	20129	Oil	Oil (bbl)	Royalties	158875.07
-2010	KS	Morton	20129	Oil	Other Liquid Hydrocarbons (bbl)	Royalties	0.65
-2010	KS	Morton	20129	Helium	Helium (bbl)	Royalties	9.29
-2010	KS	Seward	20175	Gas	Processed (Residue) Gas (mcf)	Royalties	38341.2
-2010	KS	Seward	20175	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	42084.23
-2010	KS	Seward	20175	NGL	Gas Plant Products (gal)	Royalties	116236.97
-2010	KS	Seward	20175	Oil	Condensate (bbl)	Royalties	29.68
-2010	KS	Seward	20175	Oil	Oil (bbl)	Royalties	226.48
-2010	KS	Seward	20175	Helium	Helium (bbl)	Royalties	0.97
-2010	KS	Stanton	20187	Gas	Nitrogen (mcf)	Royalties	55.52
-2010	KS	Stanton	20187	Gas	Processed (Residue) Gas (mcf)	Royalties	14482.18
-2010	KS	Stanton	20187	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1513.6
-2010	KS	Stanton	20187	NGL	Gas Plant Products (gal)	Royalties	51095.18
-2010	KS	Stanton	20187	Oil	Drip or Scrubber Condensate (bbl)	Royalties	0.94
-2010	KS	Stevens	20189	Gas	Processed (Residue) Gas (mcf)	Royalties	110160.25
-2010	KS	Stevens	20189	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	148705.93
-2010	KS	Stevens	20189	NGL	Gas Plant Products (gal)	Royalties	381587.58
-2010	KS	Trego	20195	Oil	Oil (bbl)	Royalties	1620.11
-2011	KS	Comanche	20033	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	4791.58
-2011	KS	Ellsworth	20053	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	7307.79
-2011	KS	Finney	20055	Gas	Fuel Gas (mcf)	Royalties	24716.79
-2011	KS	Finney	20055	Gas	Nitrogen (mcf)	Royalties	439.12
-2011	KS	Finney	20055	Gas	Processed (Residue) Gas (mcf)	Royalties	478477.91
-2011	KS	Finney	20055	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	333666.32
-2011	KS	Finney	20055	NGL	Gas Plant Products (gal)	Royalties	944420.47
-2011	KS	Finney	20055	Oil	Drip or Scrubber Condensate (bbl)	Royalties	6.6
-2011	KS	Finney	20055	Oil	Oil (bbl)	Royalties	58989.33
-2011	KS	Gove	20063	Oil	Oil (bbl)	Royalties	1616.21
-2011	KS	Grant	20067	Gas	Processed (Residue) Gas (mcf)	Royalties	20946.29
-2011	KS	Grant	20067	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3842.68
-2011	KS	Grant	20067	NGL	Gas Plant Products (gal)	Royalties	81717.94
-2011	KS	Hamilton	20075	Gas	Processed (Residue) Gas (mcf)	Royalties	6715.44
-2011	KS	Hamilton	20075	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	21373.52
-2011	KS	Hamilton	20075	NGL	Gas Plant Products (gal)	Royalties	2320.32
-2011	KS	Haskell	20081	Gas	Fuel Gas (mcf)	Royalties	9855.6
-2011	KS	Haskell	20081	Gas	Nitrogen (mcf)	Royalties	19.91
-2011	KS	Haskell	20081	Gas	Processed (Residue) Gas (mcf)	Royalties	166522.81
-2011	KS	Haskell	20081	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	112138.23
-2011	KS	Haskell	20081	NGL	Gas Plant Products (gal)	Royalties	376877.4
-2011	KS	Haskell	20081	Oil	Drip or Scrubber Condensate (bbl)	Royalties	0.48
-2011	KS	Haskell	20081	Oil	Oil (bbl)	Royalties	38898.48
-2011	KS	Kearny	20093	Gas	Fuel Gas (mcf)	Royalties	30289.16
-2011	KS	Kearny	20093	Gas	Nitrogen (mcf)	Royalties	1434
-2011	KS	Kearny	20093	Gas	Processed (Residue) Gas (mcf)	Royalties	822556.1
-2011	KS	Kearny	20093	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	637847.41
-2011	KS	Kearny	20093	NGL	Gas Plant Products (gal)	Royalties	2487625.48
-2011	KS	Kearny	20093	Oil	Oil (bbl)	Royalties	3974.73
-2011	KS	Lane	20101	Oil	Oil (bbl)	Royalties	3730.53
-2011	KS	Meade	20119	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	6767.15
-2011	KS	Morton	20129	Gas	Nitrogen (mcf)	Royalties	412.73
-2011	KS	Morton	20129	Gas	Processed (Residue) Gas (mcf)	Royalties	1415267.04
-2011	KS	Morton	20129	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1184646.72
-2011	KS	Morton	20129	NGL	Gas Plant Products (gal)	Royalties	4286816.82
-2011	KS	Morton	20129	Oil	Condensate (bbl)	Royalties	202.8
-2011	KS	Morton	20129	Oil	Drip or Scrubber Condensate (bbl)	Royalties	0.12
-2011	KS	Morton	20129	Oil	Oil (bbl)	Royalties	160202.8
-2011	KS	Morton	20129	Helium	Helium (bbl)	Royalties	18.66
-2011	KS	Seward	20175	Gas	Processed (Residue) Gas (mcf)	Royalties	35451.61
-2011	KS	Seward	20175	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	36367.06
-2011	KS	Seward	20175	NGL	Gas Plant Products (gal)	Royalties	120205.91
-2011	KS	Seward	20175	Oil	Oil (bbl)	Royalties	164.74
-2011	KS	Seward	20175	Helium	Helium (bbl)	Royalties	43.35
-2011	KS	Stanton	20187	Gas	Nitrogen (mcf)	Royalties	127.44
-2011	KS	Stanton	20187	Gas	Processed (Residue) Gas (mcf)	Royalties	15034.82
-2011	KS	Stanton	20187	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	935.09
-2011	KS	Stanton	20187	NGL	Gas Plant Products (gal)	Royalties	52010.72
-2011	KS	Stanton	20187	Oil	Drip or Scrubber Condensate (bbl)	Royalties	0.4
-2011	KS	Stevens	20189	Gas	Processed (Residue) Gas (mcf)	Royalties	146501.29
-2011	KS	Stevens	20189	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	96411.37
-2011	KS	Stevens	20189	NGL	Gas Plant Products (gal)	Royalties	426704.51
-2011	KS	Stevens	20189	Oil	Oil (bbl)	Royalties	2357.76
-2011	KS	Trego	20195	Oil	Oil (bbl)	Royalties	2056.96
-2012	KS	Comanche	20033	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	4465.02
-2012	KS	Comanche	20033	Oil	Oil (bbl)	Royalties	9.65
-2012	KS	Ellsworth	20053	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	7100.67
-2012	KS	Finney	20055	Gas	Fuel Gas (mcf)	Royalties	25877.85
-2012	KS	Finney	20055	Gas	Nitrogen (mcf)	Royalties	615.36
-2012	KS	Finney	20055	Gas	Processed (Residue) Gas (mcf)	Royalties	441721.27
-2012	KS	Finney	20055	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	306019.55
-2012	KS	Finney	20055	NGL	Gas Plant Products (gal)	Royalties	819309.54
-2012	KS	Finney	20055	Oil	Drip or Scrubber Condensate (bbl)	Royalties	10.3
-2012	KS	Finney	20055	Oil	Oil (bbl)	Royalties	51955.52
-2012	KS	Gove	20063	Oil	Oil (bbl)	Royalties	1613.77
-2012	KS	Grant	20067	Gas	Processed (Residue) Gas (mcf)	Royalties	16739.09
-2012	KS	Grant	20067	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	5608.43
-2012	KS	Grant	20067	NGL	Gas Plant Products (gal)	Royalties	66748.53
-2012	KS	Hamilton	20075	Gas	Processed (Residue) Gas (mcf)	Royalties	3220.4
-2012	KS	Hamilton	20075	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	20789.87
-2012	KS	Hamilton	20075	NGL	Gas Plant Products (gal)	Royalties	8645.6
-2012	KS	Haskell	20081	Gas	Fuel Gas (mcf)	Royalties	10297.36
-2012	KS	Haskell	20081	Gas	Nitrogen (mcf)	Royalties	19.28
-2012	KS	Haskell	20081	Gas	Processed (Residue) Gas (mcf)	Royalties	154052.79
-2012	KS	Haskell	20081	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	105231.76
-2012	KS	Haskell	20081	NGL	Gas Plant Products (gal)	Royalties	289561.64
-2012	KS	Haskell	20081	Oil	Drip or Scrubber Condensate (bbl)	Royalties	0.72
-2012	KS	Haskell	20081	Oil	Oil (bbl)	Royalties	21228.56
-2012	KS	Kearny	20093	Gas	Fuel Gas (mcf)	Royalties	34656.06
-2012	KS	Kearny	20093	Gas	Nitrogen (mcf)	Royalties	1575.44
-2012	KS	Kearny	20093	Gas	Processed (Residue) Gas (mcf)	Royalties	798956.98
-2012	KS	Kearny	20093	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	581683.79
-2012	KS	Kearny	20093	NGL	Gas Plant Products (gal)	Royalties	2100656.75
-2012	KS	Kearny	20093	Oil	Oil (bbl)	Royalties	3790.06
-2012	KS	Lane	20101	Oil	Oil (bbl)	Royalties	3612.81
-2012	KS	Meade	20119	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	5876.46
-2012	KS	Morton	20129	Gas	Fuel Gas (mcf)	Royalties	1606.72
-2012	KS	Morton	20129	Gas	Nitrogen (mcf)	Royalties	410.85
-2012	KS	Morton	20129	Gas	Processed (Residue) Gas (mcf)	Royalties	1330442.75
-2012	KS	Morton	20129	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	666331.84
-2012	KS	Morton	20129	NGL	Gas Plant Products (gal)	Royalties	4294074.63
-2012	KS	Morton	20129	Oil	Condensate (bbl)	Royalties	162.29
-2012	KS	Morton	20129	Oil	Oil (bbl)	Royalties	171232.39
-2012	KS	Seward	20175	Gas	Processed (Residue) Gas (mcf)	Royalties	35922.49
-2012	KS	Seward	20175	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	28328.7
-2012	KS	Seward	20175	NGL	Gas Plant Products (gal)	Royalties	79430.71
-2012	KS	Seward	20175	Oil	Condensate (bbl)	Royalties	33.12
-2012	KS	Seward	20175	Oil	Oil (bbl)	Royalties	129.55
-2012	KS	Stanton	20187	Gas	Fuel Gas (mcf)	Royalties	349.36
-2012	KS	Stanton	20187	Gas	Nitrogen (mcf)	Royalties	117.12
-2012	KS	Stanton	20187	Gas	Processed (Residue) Gas (mcf)	Royalties	13270.22
-2012	KS	Stanton	20187	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	396.8
-2012	KS	Stanton	20187	NGL	Gas Plant Products (gal)	Royalties	40458.78
-2012	KS	Stevens	20189	Gas	Processed (Residue) Gas (mcf)	Royalties	140847.35
-2012	KS	Stevens	20189	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	58757.96
-2012	KS	Stevens	20189	NGL	Gas Plant Products (gal)	Royalties	461767.08
-2012	KS	Stevens	20189	Oil	Oil (bbl)	Royalties	1968.32
-2012	KS	Trego	20195	Oil	Oil (bbl)	Royalties	2069.92
-2013	KS	Comanche	20033	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3864.12
-2013	KS	Ellsworth	20053	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	9663.1
-2013	KS	Finney	20055	Gas	Fuel Gas (mcf)	Royalties	27646.53
-2013	KS	Finney	20055	Gas	Nitrogen (mcf)	Royalties	827.44
-2013	KS	Finney	20055	Gas	Processed (Residue) Gas (mcf)	Royalties	410892.74
-2013	KS	Finney	20055	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	271454.69
-2013	KS	Finney	20055	NGL	Gas Plant Products (gal)	Royalties	693222.17
-2013	KS	Finney	20055	Oil	Oil (bbl)	Royalties	53548.62
-2013	KS	Gove	20063	Oil	Oil (bbl)	Royalties	1208.82
-2013	KS	Grant	20067	Gas	Processed (Residue) Gas (mcf)	Royalties	17239.38
-2013	KS	Grant	20067	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2777.6
-2013	KS	Grant	20067	NGL	Gas Plant Products (gal)	Royalties	48484.67
-2013	KS	Hamilton	20075	Gas	Processed (Residue) Gas (mcf)	Royalties	3723.12
-2013	KS	Hamilton	20075	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	8971.54
-2013	KS	Hamilton	20075	NGL	Gas Plant Products (gal)	Royalties	7066.8
-2013	KS	Haskell	20081	Gas	Fuel Gas (mcf)	Royalties	8893.92
-2013	KS	Haskell	20081	Gas	Nitrogen (mcf)	Royalties	18.96
-2013	KS	Haskell	20081	Gas	Processed (Residue) Gas (mcf)	Royalties	140655.76
-2013	KS	Haskell	20081	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	98156.16
-2013	KS	Haskell	20081	NGL	Gas Plant Products (gal)	Royalties	273597.4
-2013	KS	Haskell	20081	Oil	Oil (bbl)	Royalties	19538
-2013	KS	Kearny	20093	Gas	Fuel Gas (mcf)	Royalties	41437.94
-2013	KS	Kearny	20093	Gas	Nitrogen (mcf)	Royalties	1356.56
-2013	KS	Kearny	20093	Gas	Processed (Residue) Gas (mcf)	Royalties	739772.4
-2013	KS	Kearny	20093	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	519169.79
-2013	KS	Kearny	20093	NGL	Gas Plant Products (gal)	Royalties	1631498.38
-2013	KS	Kearny	20093	Oil	Oil (bbl)	Royalties	3655.29
-2013	KS	Lane	20101	Oil	Oil (bbl)	Royalties	3461.62
-2013	KS	Meade	20119	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	5659.94
-2013	KS	Meade	20119	Oil	Condensate (bbl)	Royalties	23.84
-2013	KS	Morton	20129	Gas	Flash Gas (mcf)	Royalties	77.05
-2013	KS	Morton	20129	Gas	Fuel Gas (mcf)	Royalties	4279.6
-2013	KS	Morton	20129	Gas	Nitrogen (mcf)	Royalties	398.64
-2013	KS	Morton	20129	Gas	Processed (Residue) Gas (mcf)	Royalties	1232111.98
-2013	KS	Morton	20129	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	541821.61
-2013	KS	Morton	20129	NGL	Gas Plant Products (gal)	Royalties	4098657.52
-2013	KS	Morton	20129	Oil	Condensate (bbl)	Royalties	84.24
-2013	KS	Morton	20129	Oil	Oil (bbl)	Royalties	138473.88
-2013	KS	Seward	20175	Gas	Processed (Residue) Gas (mcf)	Royalties	34374.61
-2013	KS	Seward	20175	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	24733.79
-2013	KS	Seward	20175	NGL	Gas Plant Products (gal)	Royalties	90933.76
-2013	KS	Seward	20175	Oil	Condensate (bbl)	Royalties	9.92
-2013	KS	Seward	20175	Oil	Oil (bbl)	Royalties	114.89
-2013	KS	Stanton	20187	Gas	Fuel Gas (mcf)	Royalties	897.76
-2013	KS	Stanton	20187	Gas	Nitrogen (mcf)	Royalties	97.68
-2013	KS	Stanton	20187	Gas	Processed (Residue) Gas (mcf)	Royalties	10242.16
-2013	KS	Stanton	20187	NGL	Gas Plant Products (gal)	Royalties	29270.72
-2013	KS	Stevens	20189	Gas	Processed (Residue) Gas (mcf)	Royalties	126374.45
-2013	KS	Stevens	20189	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	50411.18
-2013	KS	Stevens	20189	NGL	Gas Plant Products (gal)	Royalties	407692.22
-2013	KS	Stevens	20189	Oil	Oil (bbl)	Royalties	2546.08
-2013	KS	Trego	20195	Oil	Oil (bbl)	Royalties	2107.22
+Year	State	County	FIPS	Commodity	Product	Volume
+2006	KS	Comanche County	20033		Oil (bbl)	0.44
+2013	KS	Comanche County	20033		Oil (bbl)	0.44
+2005	KS	Comanche County	20033		Oil (bbl)	1.12
+2007	KS	Comanche County	20033		Oil (bbl)	1.18
+2008	KS	Comanche County	20033		Oil (bbl)	1.18
+2010	KS	Comanche County	20033		Oil (bbl)	1.24
+2012	KS	Comanche County	20033		Oil (bbl)	1.24
+2007	KS	Stevens County	20189		Oil (bbl)	1.25
+2006	KS	Meade County	20119		Oil (bbl)	1.26
+2009	KS	Comanche County	20033		Oil (bbl)	1.43
+2011	KS	Comanche County	20033		Oil (bbl)	1.87
+2009	KS	Meade County	20119		Oil (bbl)	2.52
+2010	KS	Stevens County	20189		Oil (bbl)	4.5
+2008	KS	Meade County	20119		Oil (bbl)	10.97
+2007	KS	Meade County	20119		Oil (bbl)	39.1
+2008	KS	Stevens County	20189		Oil (bbl)	41
+2014	KS	Seward County	20175		Oil (bbl)	237.92
+2006	KS	Seward County	20175		Oil (bbl)	240.21
+2009	KS	Seward County	20175		Oil (bbl)	249.17
+2005	KS	Seward County	20175		Oil (bbl)	341.78
+2008	KS	Seward County	20175		Oil (bbl)	363.11
+2013	KS	Seward County	20175		Oil (bbl)	390.63
+2010	KS	Seward County	20175		Oil (bbl)	429.57
+2012	KS	Seward County	20175		Oil (bbl)	485.11
+2011	KS	Seward County	20175		Oil (bbl)	516.95
+2007	KS	Seward County	20175		Oil (bbl)	523.1
+2014	KS	Gove County	20063		Oil (bbl)	1150.72
+2013	KS	Gove County	20063		Oil (bbl)	1176.87
+2010	KS	Gove County	20063		Oil (bbl)	1453.45
+2009	KS	Gove County	20063		Oil (bbl)	1507.91
+2014	KS	Stevens County	20189		Oil (bbl)	1570.5
+2012	KS	Gove County	20063		Oil (bbl)	1582.19
+2007	KS	Gove County	20063		Oil (bbl)	1623.81
+2011	KS	Gove County	20063		Oil (bbl)	1643.11
+2010	KS	Trego County	20195		Oil (bbl)	1667.45
+2006	KS	Gove County	20063		Oil (bbl)	1735.83
+2008	KS	Gove County	20063		Oil (bbl)	1763.77
+2005	KS	Gove County	20063		Oil (bbl)	1777.7
+2009	KS	Trego County	20195		Oil (bbl)	1928.8
+2014	KS	Trego County	20195		Oil (bbl)	1981.03
+2012	KS	Stevens County	20189		Oil (bbl)	2004
+2013	KS	Trego County	20195		Oil (bbl)	2022.06
+2011	KS	Trego County	20195		Oil (bbl)	2023.25
+2012	KS	Trego County	20195		Oil (bbl)	2051.95
+2008	KS	Trego County	20195		Oil (bbl)	2128.45
+2006	KS	Trego County	20195		Oil (bbl)	2160.15
+2007	KS	Trego County	20195		Oil (bbl)	2160.18
+2005	KS	Trego County	20195		Oil (bbl)	2309.6
+2011	KS	Stevens County	20189		Oil (bbl)	2474.5
+2013	KS	Stevens County	20189		Oil (bbl)	2508.5
+2014	KS	Lane County	20101		Oil (bbl)	3382
+2013	KS	Lane County	20101		Oil (bbl)	3491
+2012	KS	Lane County	20101		Oil (bbl)	3499
+2010	KS	Lane County	20101		Oil (bbl)	3757
+2011	KS	Lane County	20101		Oil (bbl)	3758
+2013	KS	Comanche County	20033		Gas (mcf)	4136.83
+2014	KS	Comanche County	20033		Gas (mcf)	4305.55
+2009	KS	Lane County	20101		Oil (bbl)	4562
+2012	KS	Comanche County	20033		Gas (mcf)	4788.81
+2008	KS	Lane County	20101		Oil (bbl)	4999
+2007	KS	Lane County	20101		Oil (bbl)	5052
+2011	KS	Comanche County	20033		Gas (mcf)	5053.75
+2006	KS	Lane County	20101		Oil (bbl)	5140
+2010	KS	Comanche County	20033		Gas (mcf)	5562.16
+2014	KS	Meade County	20119		Gas (mcf)	5674.39
+2005	KS	Lane County	20101		Oil (bbl)	5840
+2013	KS	Meade County	20119		Gas (mcf)	6105.6
+2012	KS	Meade County	20119		Gas (mcf)	6407.96
+2009	KS	Comanche County	20033		Gas (mcf)	6570.25
+2011	KS	Meade County	20119		Gas (mcf)	6767.45
+2010	KS	Meade County	20119		Gas (mcf)	6858.29
+2008	KS	Comanche County	20033		Gas (mcf)	7057.19
+2007	KS	Comanche County	20033		Gas (mcf)	7255.35
+2006	KS	Meade County	20119		Gas (mcf)	7445.84
+2007	KS	Meade County	20119		Gas (mcf)	7526.89
+2006	KS	Comanche County	20033		Gas (mcf)	7852.94
+2009	KS	Meade County	20119		Gas (mcf)	8246.43
+2005	KS	Comanche County	20033		Gas (mcf)	8405.59
+2012	KS	Ellsworth County	20053		Gas (mcf)	8808.99
+2008	KS	Meade County	20119		Gas (mcf)	9854.38
+2013	KS	Ellsworth County	20053		Gas (mcf)	10042.03
+2005	KS	Meade County	20119		Gas (mcf)	11039.55
+2006	KS	Ellsworth County	20053		Gas (mcf)	12636.94
+2014	KS	Ellsworth County	20053		Gas (mcf)	13364.84
+2011	KS	Ellsworth County	20053		Gas (mcf)	14009.03
+2010	KS	Ellsworth County	20053		Gas (mcf)	14057.12
+2008	KS	Ellsworth County	20053		Gas (mcf)	14573.95
+2009	KS	Ellsworth County	20053		Gas (mcf)	17289.21
+2007	KS	Kearny County	20093		Oil (bbl)	18752.92
+2005	KS	Ellsworth County	20053		Gas (mcf)	19136.29
+2009	KS	Kearny County	20093		Oil (bbl)	19511.15
+2007	KS	Finney County	20055		Oil (bbl)	19822.24
+2008	KS	Kearny County	20093		Oil (bbl)	20029.7
+2006	KS	Kearny County	20093		Oil (bbl)	20524.36
+2014	KS	Kearny County	20093		Oil (bbl)	20635.57
+2005	KS	Kearny County	20093		Oil (bbl)	20641.74
+2009	KS	Finney County	20055		Oil (bbl)	20644.5
+2014	KS	Finney County	20055		Oil (bbl)	21225.13
+2008	KS	Finney County	20055		Oil (bbl)	21480.48
+2009	KS	Haskell County	20081		Oil (bbl)	21681.3
+2014	KS	Hamilton County	20075		Gas (mcf)	21929.64
+2007	KS	Haskell County	20081		Oil (bbl)	22181.8
+2006	KS	Finney County	20055		Oil (bbl)	22583.08
+2005	KS	Finney County	20055		Oil (bbl)	22870.71
+2012	KS	Kearny County	20093		Oil (bbl)	23122.09
+2014	KS	Haskell County	20081		Oil (bbl)	23124.08
+2008	KS	Haskell County	20081		Oil (bbl)	23175.31
+2013	KS	Kearny County	20093		Oil (bbl)	23717.58
+2012	KS	Finney County	20055		Oil (bbl)	24156.18
+2006	KS	Haskell County	20081		Oil (bbl)	24395.69
+2013	KS	Finney County	20055		Oil (bbl)	24569.36
+2011	KS	Kearny County	20093		Oil (bbl)	25742.94
+2013	KS	Hamilton County	20075		Gas (mcf)	26048.88
+2005	KS	Haskell County	20081		Oil (bbl)	26166.2
+2010	KS	Kearny County	20093		Oil (bbl)	26218.18
+2014	KS	Stanton County	20187		Gas (mcf)	26641.8
+2011	KS	Finney County	20055		Oil (bbl)	26792.44
+2013	KS	Haskell County	20081		Oil (bbl)	26948.19
+2010	KS	Finney County	20055		Oil (bbl)	27295.07
+2012	KS	Haskell County	20081		Oil (bbl)	28653.11
+2013	KS	Stanton County	20187		Gas (mcf)	28736.93
+2010	KS	Haskell County	20081		Oil (bbl)	30198.09
+2012	KS	Stanton County	20187		Gas (mcf)	31437.94
+2011	KS	Stanton County	20187		Gas (mcf)	34130.31
+2010	KS	Stanton County	20187		Gas (mcf)	34924.05
+2009	KS	Stanton County	20187		Gas (mcf)	35047.5
+2008	KS	Stanton County	20187		Gas (mcf)	39230.79
+2007	KS	Stanton County	20187		Gas (mcf)	40141.49
+2012	KS	Hamilton County	20075		Gas (mcf)	40871.72
+2011	KS	Hamilton County	20075		Gas (mcf)	44621.71
+2006	KS	Stanton County	20187		Gas (mcf)	44734.67
+2011	KS	Haskell County	20081		Oil (bbl)	47606.4
+2005	KS	Stanton County	20187		Gas (mcf)	48882.95
+2010	KS	Hamilton County	20075		Gas (mcf)	50060.2
+2009	KS	Hamilton County	20075		Gas (mcf)	54262.04
+2006	KS	Hamilton County	20075		Gas (mcf)	57600.6
+2008	KS	Hamilton County	20075		Gas (mcf)	59847.28
+2007	KS	Hamilton County	20075		Gas (mcf)	59875.13
+2005	KS	Hamilton County	20075		Gas (mcf)	62436.53
+2014	KS	Grant County	20067		Gas (mcf)	79003.11
+2014	KS	Seward County	20175		Gas (mcf)	79225.4
+2013	KS	Grant County	20067		Gas (mcf)	85602.99
+2014	KS	Morton County	20129		Oil (bbl)	96507.01
+2012	KS	Grant County	20067		Gas (mcf)	98054.44
+2013	KS	Seward County	20175		Gas (mcf)	103060.98
+2011	KS	Grant County	20067		Gas (mcf)	103633.21
+2010	KS	Grant County	20067		Gas (mcf)	111862.33
+2012	KS	Seward County	20175		Gas (mcf)	114746.09
+2013	KS	Morton County	20129		Oil (bbl)	114815.17
+2009	KS	Grant County	20067		Gas (mcf)	119331.07
+2011	KS	Seward County	20175		Gas (mcf)	121375.66
+2010	KS	Morton County	20129		Oil (bbl)	129037.39
+2008	KS	Grant County	20067		Gas (mcf)	129547.83
+2011	KS	Morton County	20129		Oil (bbl)	130559.66
+2007	KS	Grant County	20067		Gas (mcf)	135483.08
+2010	KS	Seward County	20175		Gas (mcf)	138070.59
+2012	KS	Morton County	20129		Oil (bbl)	140034.09
+2006	KS	Grant County	20067		Gas (mcf)	152744.32
+2009	KS	Seward County	20175		Gas (mcf)	158987.16
+2009	KS	Morton County	20129		Oil (bbl)	160170.28
+2005	KS	Grant County	20067		Gas (mcf)	171781.07
+2008	KS	Seward County	20175		Gas (mcf)	189313.51
+2005	KS	Morton County	20129		Oil (bbl)	190815.73
+2006	KS	Seward County	20175		Gas (mcf)	190890.14
+2005	KS	Seward County	20175		Gas (mcf)	192420.05
+2014	KS	Stevens County	20189		Gas (mcf)	201657.18
+2008	KS	Morton County	20129		Oil (bbl)	205473.92
+2013	KS	Stevens County	20189		Gas (mcf)	225287.82
+2014	KS	Haskell County	20081		Gas (mcf)	236909.06
+2012	KS	Stevens County	20189		Gas (mcf)	240259.67
+2007	KS	Morton County	20129		Oil (bbl)	240921.71
+2007	KS	Seward County	20175		Gas (mcf)	250445.64
+2013	KS	Haskell County	20081		Gas (mcf)	257381.08
+2011	KS	Stevens County	20189		Gas (mcf)	263222.87
+2010	KS	Stevens County	20189		Gas (mcf)	277482.75
+2012	KS	Haskell County	20081		Gas (mcf)	288655.82
+2009	KS	Stevens County	20189		Gas (mcf)	301997.57
+2011	KS	Haskell County	20081		Gas (mcf)	316786.31
+2010	KS	Haskell County	20081		Gas (mcf)	335980.65
+2008	KS	Stevens County	20189		Gas (mcf)	336919.72
+2009	KS	Haskell County	20081		Gas (mcf)	352431.41
+2007	KS	Stevens County	20189		Gas (mcf)	367704.87
+2006	KS	Morton County	20129		Oil (bbl)	367871.31
+2008	KS	Haskell County	20081		Gas (mcf)	392872.69
+2006	KS	Stevens County	20189		Gas (mcf)	407236.09
+2007	KS	Haskell County	20081		Gas (mcf)	430637.74
+2005	KS	Stevens County	20189		Gas (mcf)	431102.79
+2006	KS	Haskell County	20081		Gas (mcf)	472353.88
+2005	KS	Haskell County	20081		Gas (mcf)	515173.53
+2014	KS	Finney County	20055		Gas (mcf)	719959.82
+2013	KS	Finney County	20055		Gas (mcf)	808482.05
+2012	KS	Finney County	20055		Gas (mcf)	898048.11
+2011	KS	Finney County	20055		Gas (mcf)	975676.22
+2010	KS	Finney County	20055		Gas (mcf)	1048633.94
+2009	KS	Finney County	20055		Gas (mcf)	1102688.79
+2008	KS	Finney County	20055		Gas (mcf)	1227075.49
+2014	KS	Kearny County	20093		Gas (mcf)	1318143.93
+2007	KS	Finney County	20055		Gas (mcf)	1323898.77
+2013	KS	Kearny County	20093		Gas (mcf)	1487346.52
+2006	KS	Finney County	20055		Gas (mcf)	1491452.47
+2005	KS	Finney County	20055		Gas (mcf)	1589878.38
+2012	KS	Kearny County	20093		Gas (mcf)	1628754.44
+2011	KS	Kearny County	20093		Gas (mcf)	1715854.93
+2010	KS	Kearny County	20093		Gas (mcf)	1817203.73
+2014	KS	Morton County	20129		Gas (mcf)	1910436.93
+2009	KS	Kearny County	20093		Gas (mcf)	1974589.04
+2013	KS	Morton County	20129		Gas (mcf)	2108888.61
+2008	KS	Kearny County	20093		Gas (mcf)	2152141.15
+2007	KS	Kearny County	20093		Gas (mcf)	2227675.87
+2012	KS	Morton County	20129		Gas (mcf)	2321568.44
+2006	KS	Kearny County	20093		Gas (mcf)	2451005.39
+2005	KS	Kearny County	20093		Gas (mcf)	2671489.63
+2011	KS	Morton County	20129		Gas (mcf)	2720611.75
+2007	KS	Morton County	20129		Gas (mcf)	3203690.82
+2009	KS	Morton County	20129		Gas (mcf)	3238481.19
+2010	KS	Morton County	20129		Gas (mcf)	3274395.96
+2008	KS	Morton County	20129		Gas (mcf)	3350282.04
+2006	KS	Morton County	20129		Gas (mcf)	3500211.12
+2005	KS	Morton County	20129		Gas (mcf)	3762352.1

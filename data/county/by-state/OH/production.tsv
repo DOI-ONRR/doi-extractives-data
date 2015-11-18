@@ -1,236 +1,198 @@
-Year	State	County	FIPS	Commodity	Product	Type	Volume
-2004	OH	Athens	39009	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	18901
-2004	OH	Athens	39009	Oil	Oil (bbl)	Royalties	589.01
-2004	OH	Hocking	39073	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1653
-2004	OH	Hocking	39073	Oil	Oil (bbl)	Royalties	4808.02
-2004	OH	Lawrence	39087	Gas	Processed (Residue) Gas (mcf)	Royalties	13880
-2004	OH	Lawrence	39087	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	18113
-2004	OH	Licking	39089	Oil	Oil (bbl)	Royalties	141.54
-2004	OH	Mahoning	39099	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	74674.96
-2004	OH	Mahoning	39099	Oil	Oil (bbl)	Royalties	3411.16
-2004	OH	Monroe	39111	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	22285.87
-2004	OH	Monroe	39111	Oil	Oil (bbl)	Royalties	3351.32
-2004	OH	Muskingum	39119	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	92.53
-2004	OH	Muskingum	39119	Oil	Oil (bbl)	Royalties	207.75
-2004	OH	Perry	39127	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2458
-2004	OH	Perry	39127	Oil	Oil (bbl)	Royalties	1202.02
-2004	OH	Portage	39133	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	229079.01
-2004	OH	Portage	39133	Oil	Oil (bbl)	Royalties	10381.9
-2004	OH	Stark	39151	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	47878.19
-2004	OH	Stark	39151	Oil	Oil (bbl)	Royalties	336.39
-2004	OH	Trumbull	39155	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	183372.7
-2004	OH	Trumbull	39155	Oil	Oil (bbl)	Royalties	706.82
-2004	OH	Washington	39167	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	59260.33
-2004	OH	Washington	39167	Oil	Oil (bbl)	Royalties	4348.35
-2005	OH	Athens	39009	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	12375
-2005	OH	Athens	39009	Oil	Oil (bbl)	Royalties	475.42
-2005	OH	Hocking	39073	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1666
-2005	OH	Hocking	39073	Oil	Oil (bbl)	Royalties	4997.02
-2005	OH	Lawrence	39087	Gas	Processed (Residue) Gas (mcf)	Royalties	7822
-2005	OH	Lawrence	39087	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	19495
-2005	OH	Mahoning	39099	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	69119.69
-2005	OH	Mahoning	39099	Oil	Oil (bbl)	Royalties	3780.45
-2005	OH	Monroe	39111	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	27772.74
-2005	OH	Monroe	39111	Oil	Oil (bbl)	Royalties	2388.86
-2005	OH	Muskingum	39119	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	776.17
-2005	OH	Muskingum	39119	Oil	Oil (bbl)	Royalties	264
-2005	OH	Perry	39127	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3462.33
-2005	OH	Perry	39127	Oil	Oil (bbl)	Royalties	2414.73
-2005	OH	Portage	39133	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	219442.64
-2005	OH	Portage	39133	Oil	Oil (bbl)	Royalties	10989.09
-2005	OH	Stark	39151	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	46289.74
-2005	OH	Stark	39151	Oil	Oil (bbl)	Royalties	432.32
-2005	OH	Trumbull	39155	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	146790.71
-2005	OH	Trumbull	39155	Oil	Oil (bbl)	Royalties	756.26
-2005	OH	Washington	39167	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	77359.38
-2005	OH	Washington	39167	Oil	Oil (bbl)	Royalties	4697.21
-2006	OH	Athens	39009	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	17405
-2006	OH	Athens	39009	Oil	Oil (bbl)	Royalties	528.74
-2006	OH	Hocking	39073	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2928
-2006	OH	Hocking	39073	Oil	Oil (bbl)	Royalties	5029.03
-2006	OH	Lawrence	39087	Gas	Processed (Residue) Gas (mcf)	Royalties	5521
-2006	OH	Lawrence	39087	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	14389
-2006	OH	Mahoning	39099	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	76751.74
-2006	OH	Mahoning	39099	Oil	Oil (bbl)	Royalties	4343.89
-2006	OH	Monroe	39111	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	29682.4
-2006	OH	Monroe	39111	Oil	Oil (bbl)	Royalties	3444.15
-2006	OH	Muskingum	39119	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	428.05
-2006	OH	Muskingum	39119	Oil	Oil (bbl)	Royalties	282
-2006	OH	Perry	39127	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3033
-2006	OH	Perry	39127	Oil	Oil (bbl)	Royalties	2626.78
-2006	OH	Portage	39133	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	207470.66
-2006	OH	Portage	39133	Oil	Oil (bbl)	Royalties	9612.45
-2006	OH	Stark	39151	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	40108.29
-2006	OH	Stark	39151	Oil	Oil (bbl)	Royalties	650.8
-2006	OH	Trumbull	39155	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	145778.99
-2006	OH	Trumbull	39155	Oil	Oil (bbl)	Royalties	487
-2006	OH	Washington	39167	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	76639.26
-2006	OH	Washington	39167	Oil	Oil (bbl)	Royalties	4588.25
-2007	OH	Athens	39009	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	18298
-2007	OH	Athens	39009	Oil	Oil (bbl)	Royalties	590.48
-2007	OH	Hocking	39073	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2679
-2007	OH	Hocking	39073	Oil	Oil (bbl)	Royalties	5194.6
-2007	OH	Lawrence	39087	Gas	Processed (Residue) Gas (mcf)	Royalties	3710
-2007	OH	Lawrence	39087	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	10419
-2007	OH	Mahoning	39099	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	71924.68
-2007	OH	Mahoning	39099	Oil	Oil (bbl)	Royalties	3805.7
-2007	OH	Monroe	39111	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	41548.85
-2007	OH	Monroe	39111	Oil	Oil (bbl)	Royalties	5712.72
-2007	OH	Muskingum	39119	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1888.78
-2007	OH	Muskingum	39119	Oil	Oil (bbl)	Royalties	359.25
-2007	OH	Perry	39127	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	4174.26
-2007	OH	Perry	39127	Oil	Oil (bbl)	Royalties	2936
-2007	OH	Portage	39133	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	199952.9
-2007	OH	Portage	39133	Oil	Oil (bbl)	Royalties	10406.72
-2007	OH	Stark	39151	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	37236.99
-2007	OH	Stark	39151	Oil	Oil (bbl)	Royalties	315.04
-2007	OH	Trumbull	39155	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	185196.58
-2007	OH	Trumbull	39155	Oil	Oil (bbl)	Royalties	654.25
-2007	OH	Washington	39167	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	66409.26
-2007	OH	Washington	39167	Oil	Oil (bbl)	Royalties	3807.29
-2008	OH	Athens	39009	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	14560
-2008	OH	Athens	39009	Oil	Oil (bbl)	Royalties	353.68
-2008	OH	Hocking	39073	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3283
-2008	OH	Hocking	39073	Oil	Oil (bbl)	Royalties	3998.07
-2008	OH	Lawrence	39087	Gas	Processed (Residue) Gas (mcf)	Royalties	717
-2008	OH	Lawrence	39087	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	8203.96
-2008	OH	Licking	39089	Oil	Oil (bbl)	Royalties	311.42
-2008	OH	Mahoning	39099	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	67843.93
-2008	OH	Mahoning	39099	Oil	Oil (bbl)	Royalties	3596.71
-2008	OH	Monroe	39111	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	40727.05
-2008	OH	Monroe	39111	Oil	Oil (bbl)	Royalties	3780.47
-2008	OH	Muskingum	39119	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	4517.25
-2008	OH	Muskingum	39119	Oil	Oil (bbl)	Royalties	267.97
-2008	OH	Perry	39127	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3273
-2008	OH	Perry	39127	Oil	Oil (bbl)	Royalties	2875.75
-2008	OH	Portage	39133	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	194504.39
-2008	OH	Portage	39133	Oil	Oil (bbl)	Royalties	11286.72
-2008	OH	Stark	39151	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	39026.2
-2008	OH	Stark	39151	Oil	Oil (bbl)	Royalties	538.6
-2008	OH	Trumbull	39155	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	163100.84
-2008	OH	Trumbull	39155	Oil	Oil (bbl)	Royalties	516.94
-2008	OH	Washington	39167	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	59452.96
-2008	OH	Washington	39167	Oil	Oil (bbl)	Royalties	3858.78
-2009	OH	Athens	39009	Coal	Coal (ton)	Royalties	771
-2009	OH	Athens	39009	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	12868
-2009	OH	Athens	39009	Oil	Oil (bbl)	Royalties	344.28
-2009	OH	Hocking	39073	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2347
-2009	OH	Hocking	39073	Oil	Oil (bbl)	Royalties	4776.53
-2009	OH	Lawrence	39087	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	8095.92
-2009	OH	Licking	39089	Oil	Oil (bbl)	Royalties	480.06
-2009	OH	Mahoning	39099	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	64430.98
-2009	OH	Mahoning	39099	Oil	Oil (bbl)	Royalties	3744.14
-2009	OH	Monroe	39111	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	36125.09
-2009	OH	Monroe	39111	Oil	Oil (bbl)	Royalties	3208.93
-2009	OH	Muskingum	39119	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3981
-2009	OH	Muskingum	39119	Oil	Oil (bbl)	Royalties	378.66
-2009	OH	Perry	39127	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2447
-2009	OH	Perry	39127	Oil	Oil (bbl)	Royalties	2764.66
-2009	OH	Portage	39133	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	180259.52
-2009	OH	Portage	39133	Oil	Oil (bbl)	Royalties	10029.7
-2009	OH	Stark	39151	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	32931.82
-2009	OH	Stark	39151	Oil	Oil (bbl)	Royalties	449.38
-2009	OH	Trumbull	39155	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	140685.24
-2009	OH	Trumbull	39155	Oil	Oil (bbl)	Royalties	338.88
-2009	OH	Washington	39167	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	68699.65
-2009	OH	Washington	39167	Oil	Oil (bbl)	Royalties	4605.97
-2010	OH	Athens	39009	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	10032
-2010	OH	Athens	39009	Oil	Oil (bbl)	Royalties	485.74
-2010	OH	Hocking	39073	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1630
-2010	OH	Hocking	39073	Oil	Oil (bbl)	Royalties	3697.7
-2010	OH	Lawrence	39087	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	7534.39
-2010	OH	Licking	39089	Oil	Oil (bbl)	Royalties	466.38
-2010	OH	Mahoning	39099	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	66761.15
-2010	OH	Mahoning	39099	Oil	Oil (bbl)	Royalties	3232.98
-2010	OH	Monroe	39111	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	40652.43
-2010	OH	Monroe	39111	Oil	Oil (bbl)	Royalties	3146.8
-2010	OH	Muskingum	39119	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3774.75
-2010	OH	Muskingum	39119	Oil	Oil (bbl)	Royalties	206.51
-2010	OH	Perry	39127	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2786.89
-2010	OH	Perry	39127	Oil	Oil (bbl)	Royalties	2649.25
-2010	OH	Portage	39133	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	186219.94
-2010	OH	Portage	39133	Oil	Oil (bbl)	Royalties	8959
-2010	OH	Stark	39151	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	27328.13
-2010	OH	Stark	39151	Oil	Oil (bbl)	Royalties	305.13
-2010	OH	Trumbull	39155	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	147707.93
-2010	OH	Trumbull	39155	Oil	Oil (bbl)	Royalties	622.21
-2010	OH	Washington	39167	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	70082.05
-2010	OH	Washington	39167	Oil	Oil (bbl)	Royalties	4060.01
-2011	OH	Athens	39009	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	10099
-2011	OH	Athens	39009	Oil	Oil (bbl)	Royalties	231.22
-2011	OH	Hocking	39073	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1392
-2011	OH	Hocking	39073	Oil	Oil (bbl)	Royalties	3025.74
-2011	OH	Lawrence	39087	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1573.56
-2011	OH	Lawrence	39087	Oil	Oil (bbl)	Royalties	45.44
-2011	OH	Licking	39089	Oil	Oil (bbl)	Royalties	439.18
-2011	OH	Mahoning	39099	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	61995.25
-2011	OH	Mahoning	39099	Oil	Oil (bbl)	Royalties	3377.56
-2011	OH	Monroe	39111	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	29630.13
-2011	OH	Monroe	39111	Oil	Oil (bbl)	Royalties	2163.5
-2011	OH	Muskingum	39119	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3170.25
-2011	OH	Muskingum	39119	Oil	Oil (bbl)	Royalties	208.33
-2011	OH	Perry	39127	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2017
-2011	OH	Perry	39127	Oil	Oil (bbl)	Royalties	2788.05
-2011	OH	Portage	39133	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	177365.77
-2011	OH	Portage	39133	Oil	Oil (bbl)	Royalties	8078.18
-2011	OH	Stark	39151	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	21192.43
-2011	OH	Stark	39151	Oil	Oil (bbl)	Royalties	240.46
-2011	OH	Trumbull	39155	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	147106.88
-2011	OH	Trumbull	39155	Oil	Oil (bbl)	Royalties	354.94
-2011	OH	Washington	39167	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	55264.63
-2011	OH	Washington	39167	Oil	Oil (bbl)	Royalties	4314.79
-2012	OH	Athens	39009	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	8903
-2012	OH	Athens	39009	Oil	Oil (bbl)	Royalties	338.8
-2012	OH	Hocking	39073	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1210
-2012	OH	Hocking	39073	Oil	Oil (bbl)	Royalties	2897.09
-2012	OH	Lawrence	39087	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2548.34
-2012	OH	Lawrence	39087	NGL	Gas Plant Products (gal)	Royalties	573.94
-2012	OH	Lawrence	39087	Oil	Oil (bbl)	Royalties	52.79
-2012	OH	Licking	39089	Oil	Oil (bbl)	Royalties	605.41
-2012	OH	Mahoning	39099	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	59850.47
-2012	OH	Mahoning	39099	Oil	Oil (bbl)	Royalties	3026.08
-2012	OH	Monroe	39111	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	38652.16
-2012	OH	Monroe	39111	NGL	Gas Plant Products (gal)	Royalties	7227.42
-2012	OH	Monroe	39111	Oil	Oil (bbl)	Royalties	1223.41
-2012	OH	Muskingum	39119	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2614.25
-2012	OH	Muskingum	39119	Oil	Oil (bbl)	Royalties	278.81
-2012	OH	Perry	39127	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2220
-2012	OH	Perry	39127	Oil	Oil (bbl)	Royalties	616.93
-2012	OH	Portage	39133	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	167043.11
-2012	OH	Portage	39133	Oil	Oil (bbl)	Royalties	6549.26
-2012	OH	Stark	39151	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	22618.65
-2012	OH	Stark	39151	Oil	Oil (bbl)	Royalties	277.81
-2012	OH	Trumbull	39155	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	69861.18
-2012	OH	Trumbull	39155	Oil	Oil (bbl)	Royalties	66.61
-2012	OH	Washington	39167	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	41686.69
-2012	OH	Washington	39167	NGL	Gas Plant Products (gal)	Royalties	4790.25
-2012	OH	Washington	39167	Oil	Oil (bbl)	Royalties	6691.95
-2013	OH	Athens	39009	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	6478
-2013	OH	Athens	39009	Oil	Oil (bbl)	Royalties	80
-2013	OH	Hocking	39073	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	425
-2013	OH	Hocking	39073	Oil	Oil (bbl)	Royalties	2793.02
-2013	OH	Lawrence	39087	Gas	Processed (Residue) Gas (mcf)	Royalties	81.66
-2013	OH	Lawrence	39087	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	537.52
-2013	OH	Lawrence	39087	NGL	Gas Plant Products (gal)	Royalties	8.86
-2013	OH	Lawrence	39087	Oil	Oil (bbl)	Royalties	35.2
-2013	OH	Licking	39089	Oil	Oil (bbl)	Royalties	433.91
-2013	OH	Mahoning	39099	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	62349.96
-2013	OH	Mahoning	39099	Oil	Oil (bbl)	Royalties	2420.34
-2013	OH	Monroe	39111	Gas	Processed (Residue) Gas (mcf)	Royalties	2403.6
-2013	OH	Monroe	39111	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	11388.74
-2013	OH	Monroe	39111	NGL	Gas Plant Products (gal)	Royalties	125.31
-2013	OH	Monroe	39111	Oil	Oil (bbl)	Royalties	791.58
-2013	OH	Muskingum	39119	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2466.75
-2013	OH	Muskingum	39119	Oil	Oil (bbl)	Royalties	194.08
-2013	OH	Perry	39127	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2441
-2013	OH	Perry	39127	Oil	Oil (bbl)	Royalties	203.29
-2013	OH	Portage	39133	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	156240.91
-2013	OH	Portage	39133	Oil	Oil (bbl)	Royalties	6979.45
-2013	OH	Stark	39151	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	21778.24
-2013	OH	Stark	39151	Oil	Oil (bbl)	Royalties	232.38
-2013	OH	Trumbull	39155	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	91707.09
-2013	OH	Trumbull	39155	Oil	Oil (bbl)	Royalties	146.27
-2013	OH	Washington	39167	Gas	Processed (Residue) Gas (mcf)	Royalties	870.75
-2013	OH	Washington	39167	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	34366.73
-2013	OH	Washington	39167	NGL	Gas Plant Products (gal)	Royalties	72.92
-2013	OH	Washington	39167	Oil	Oil (bbl)	Royalties	1589.15
+Year	State	County	FIPS	Commodity	Product	Volume
+2012	OH	Athens County	39009		Oil (bbl)	14
+2007	OH	Athens County	39009		Oil (bbl)	36
+2012	OH	Trumbull County	39155		Oil (bbl)	59.38
+2014	OH	Athens County	39009		Gas (mcf)	109
+2014	OH	Perry County	39127		Oil (bbl)	176
+2014	OH	Stark County	39151		Oil (bbl)	180.47
+2014	OH	Trumbull County	39155		Oil (bbl)	208.11
+2013	OH	Trumbull County	39155		Oil (bbl)	212.33
+2010	OH	Perry County	39127		Oil (bbl)	217
+2007	OH	Perry County	39127		Oil (bbl)	233
+2009	OH	Perry County	39127		Oil (bbl)	234
+2013	OH	Perry County	39127		Oil (bbl)	251
+2013	OH	Muskingum County	39119		Oil (bbl)	259
+2013	OH	Stark County	39151		Oil (bbl)	265.26
+2008	OH	Perry County	39127		Oil (bbl)	266
+2014	OH	Muskingum County	39119		Oil (bbl)	272
+2006	OH	Perry County	39127		Oil (bbl)	274
+2009	OH	Stark County	39151		Oil (bbl)	282.55
+2011	OH	Perry County	39127		Oil (bbl)	283
+2005	OH	Perry County	39127		Oil (bbl)	286
+2008	OH	Licking County	39089		Oil (bbl)	286
+2012	OH	Perry County	39127		Oil (bbl)	287
+2012	OH	Muskingum County	39119		Oil (bbl)	290
+2011	OH	Stark County	39151		Oil (bbl)	298.1
+2012	OH	Stark County	39151		Oil (bbl)	300.12
+2010	OH	Stark County	39151		Oil (bbl)	306.41
+2011	OH	Muskingum County	39119		Oil (bbl)	329
+2010	OH	Muskingum County	39119		Oil (bbl)	340
+2008	OH	Stark County	39151		Oil (bbl)	357.09
+2007	OH	Stark County	39151		Oil (bbl)	358.43
+2006	OH	Stark County	39151		Oil (bbl)	373.43
+2009	OH	Muskingum County	39119		Oil (bbl)	375
+2008	OH	Muskingum County	39119		Oil (bbl)	383
+2013	OH	Licking County	39089		Oil (bbl)	390
+2005	OH	Muskingum County	39119		Oil (bbl)	406
+2006	OH	Muskingum County	39119		Oil (bbl)	419
+2007	OH	Muskingum County	39119		Oil (bbl)	425
+2014	OH	Licking County	39089		Oil (bbl)	428
+2005	OH	Stark County	39151		Oil (bbl)	429.64
+2011	OH	Trumbull County	39155		Oil (bbl)	430.09
+2011	OH	Licking County	39089		Oil (bbl)	439
+2009	OH	Trumbull County	39155		Oil (bbl)	448.47
+2009	OH	Licking County	39089		Oil (bbl)	482
+2010	OH	Licking County	39089		Oil (bbl)	497
+2008	OH	Trumbull County	39155		Oil (bbl)	498.23
+2005	OH	Trumbull County	39155		Oil (bbl)	498.92
+2012	OH	Licking County	39089		Oil (bbl)	555
+2010	OH	Trumbull County	39155		Oil (bbl)	614.83
+2009	OH	Monroe County	39111		Oil (bbl)	629
+2007	OH	Trumbull County	39155		Oil (bbl)	630.15
+2012	OH	Athens County	39009		Gas (mcf)	724
+2014	OH	Monroe County	39111		Oil (bbl)	742.93
+2006	OH	Trumbull County	39155		Oil (bbl)	845.25
+2011	OH	Athens County	39009		Gas (mcf)	850
+2008	OH	Monroe County	39111		Oil (bbl)	876
+2013	OH	Athens County	39009		Gas (mcf)	931
+2013	OH	Washington County	39167		Oil (bbl)	945.84
+2007	OH	Monroe County	39111		Oil (bbl)	948
+2010	OH	Monroe County	39111		Oil (bbl)	987
+2013	OH	Monroe County	39111		Oil (bbl)	994.51
+2013	OH	Hocking County	39073		Gas (mcf)	1050
+2014	OH	Hocking County	39073		Gas (mcf)	1080
+2011	OH	Hocking County	39073		Oil (bbl)	1198
+2010	OH	Hocking County	39073		Oil (bbl)	1202
+2012	OH	Monroe County	39111		Oil (bbl)	1224.38
+2012	OH	Hocking County	39073		Oil (bbl)	1373
+2010	OH	Athens County	39009		Gas (mcf)	1409
+2012	OH	Washington County	39167		Oil (bbl)	1479.74
+2006	OH	Monroe County	39111		Oil (bbl)	1487
+2007	OH	Hocking County	39073		Oil (bbl)	1506
+2005	OH	Washington County	39167		Oil (bbl)	1510
+2011	OH	Monroe County	39111		Oil (bbl)	1510.81
+2005	OH	Athens County	39009		Gas (mcf)	1534
+2007	OH	Washington County	39167		Oil (bbl)	1556.41
+2006	OH	Hocking County	39073		Oil (bbl)	1560
+2009	OH	Athens County	39009		Gas (mcf)	1584
+2009	OH	Washington County	39167		Oil (bbl)	1585.72
+2008	OH	Athens County	39009		Gas (mcf)	1663
+2005	OH	Monroe County	39111		Oil (bbl)	1665
+2009	OH	Hocking County	39073		Oil (bbl)	1680
+2006	OH	Washington County	39167		Oil (bbl)	1715
+2011	OH	Washington County	39167		Oil (bbl)	1728.57
+2005	OH	Hocking County	39073		Oil (bbl)	1751
+2010	OH	Washington County	39167		Oil (bbl)	1774.73
+2008	OH	Hocking County	39073		Oil (bbl)	1789
+2014	OH	Hocking County	39073		Oil (bbl)	1835
+2007	OH	Athens County	39009		Gas (mcf)	1878
+2008	OH	Washington County	39167		Oil (bbl)	1901.4
+2006	OH	Athens County	39009		Gas (mcf)	1986
+2013	OH	Hocking County	39073		Oil (bbl)	2072
+2014	OH	Perry County	39127		Gas (mcf)	2129
+2014	OH	Mahoning County	39099		Oil (bbl)	2136.21
+2014	OH	Washington County	39167		Oil (bbl)	2263.2
+2005	OH	Perry County	39127		Gas (mcf)	2416
+2010	OH	Perry County	39127		Gas (mcf)	2490
+2009	OH	Perry County	39127		Gas (mcf)	2497
+2011	OH	Perry County	39127		Gas (mcf)	2627
+2006	OH	Perry County	39127		Gas (mcf)	2652
+2013	OH	Mahoning County	39099		Oil (bbl)	2732.28
+2012	OH	Mahoning County	39099		Oil (bbl)	2923.06
+2012	OH	Perry County	39127		Gas (mcf)	2989
+2008	OH	Perry County	39127		Gas (mcf)	3052
+2013	OH	Perry County	39127		Gas (mcf)	3104
+2014	OH	Muskingum County	39119		Gas (mcf)	3268
+2011	OH	Mahoning County	39099		Oil (bbl)	3345.68
+2007	OH	Perry County	39127		Gas (mcf)	3351
+2010	OH	Mahoning County	39099		Oil (bbl)	3504.82
+2013	OH	Muskingum County	39119		Gas (mcf)	3649
+2008	OH	Mahoning County	39099		Oil (bbl)	3700.75
+2012	OH	Muskingum County	39119		Gas (mcf)	3782
+2009	OH	Mahoning County	39099		Oil (bbl)	3881.64
+2005	OH	Mahoning County	39099		Oil (bbl)	4044.99
+2007	OH	Mahoning County	39099		Oil (bbl)	4083.78
+2012	OH	Lawrence County	39087		Gas (mcf)	4121.58
+2011	OH	Muskingum County	39119		Gas (mcf)	4276
+2006	OH	Mahoning County	39099		Oil (bbl)	4364.08
+2006	OH	Muskingum County	39119		Gas (mcf)	4871
+2010	OH	Muskingum County	39119		Gas (mcf)	5018
+2009	OH	Lawrence County	39087		Gas (mcf)	5506.35
+2014	OH	Portage County	39133		Oil (bbl)	5541.24
+2009	OH	Muskingum County	39119		Gas (mcf)	5578
+2008	OH	Muskingum County	39119		Gas (mcf)	6645
+2013	OH	Portage County	39133		Oil (bbl)	6915.84
+2012	OH	Portage County	39133		Oil (bbl)	7253.28
+2011	OH	Portage County	39133		Oil (bbl)	7364.5
+2005	OH	Muskingum County	39119		Gas (mcf)	7989
+2010	OH	Portage County	39133		Oil (bbl)	8286.51
+2007	OH	Muskingum County	39119		Gas (mcf)	8491
+2008	OH	Lawrence County	39087		Gas (mcf)	8585.06
+2009	OH	Portage County	39133		Oil (bbl)	9227.79
+2006	OH	Portage County	39133		Oil (bbl)	9308.53
+2008	OH	Monroe County	39111		Gas (mcf)	9582
+2007	OH	Portage County	39133		Oil (bbl)	9630.2
+2007	OH	Lawrence County	39087		Gas (mcf)	10062.12
+2005	OH	Portage County	39133		Oil (bbl)	10483.66
+2010	OH	Monroe County	39111		Gas (mcf)	10520
+2008	OH	Portage County	39133		Oil (bbl)	10968.6
+2009	OH	Monroe County	39111		Gas (mcf)	11017
+2014	OH	Monroe County	39111		Gas (mcf)	11443.25
+2006	OH	Monroe County	39111		Gas (mcf)	11815
+2011	OH	Monroe County	39111		Gas (mcf)	11898.85
+2007	OH	Monroe County	39111		Gas (mcf)	12172
+2013	OH	Monroe County	39111		Gas (mcf)	12464.47
+2012	OH	Monroe County	39111		Gas (mcf)	13875.39
+2006	OH	Lawrence County	39087		Gas (mcf)	14035.23
+2005	OH	Monroe County	39111		Gas (mcf)	15453
+2014	OH	Stark County	39151		Gas (mcf)	19408.96
+2005	OH	Lawrence County	39087		Gas (mcf)	20104.24
+2011	OH	Stark County	39151		Gas (mcf)	21264.03
+2009	OH	Stark County	39151		Gas (mcf)	22030.84
+2013	OH	Stark County	39151		Gas (mcf)	22116.16
+2012	OH	Stark County	39151		Gas (mcf)	22708.24
+2010	OH	Stark County	39151		Gas (mcf)	23886.07
+2007	OH	Stark County	39151		Gas (mcf)	26705.1
+2008	OH	Stark County	39151		Gas (mcf)	27195.25
+2006	OH	Stark County	39151		Gas (mcf)	27586.15
+2005	OH	Stark County	39151		Gas (mcf)	31278.42
+2014	OH	Washington County	39167		Gas (mcf)	31843.5
+2009	OH	Washington County	39167		Gas (mcf)	32741.44
+2011	OH	Washington County	39167		Gas (mcf)	32924.95
+2013	OH	Washington County	39167		Gas (mcf)	33145.84
+2012	OH	Washington County	39167		Gas (mcf)	33815.38
+2008	OH	Washington County	39167		Gas (mcf)	34359.03
+2010	OH	Washington County	39167		Gas (mcf)	36818.33
+2007	OH	Washington County	39167		Gas (mcf)	37246.67
+2006	OH	Washington County	39167		Gas (mcf)	40326.71
+2005	OH	Washington County	39167		Gas (mcf)	45693
+2014	OH	Mahoning County	39099		Gas (mcf)	54232.75
+2011	OH	Mahoning County	39099		Gas (mcf)	60911.62
+2012	OH	Mahoning County	39099		Gas (mcf)	61094.06
+2013	OH	Mahoning County	39099		Gas (mcf)	63798.23
+2009	OH	Mahoning County	39099		Gas (mcf)	65698.19
+2010	OH	Mahoning County	39099		Gas (mcf)	67126.82
+2008	OH	Mahoning County	39099		Gas (mcf)	68983.06
+2005	OH	Mahoning County	39099		Gas (mcf)	70745.71
+2007	OH	Mahoning County	39099		Gas (mcf)	72970.52
+2012	OH	Trumbull County	39155		Gas (mcf)	74648.91
+2006	OH	Mahoning County	39099		Gas (mcf)	76912.36
+2014	OH	Trumbull County	39155		Gas (mcf)	87255.58
+2013	OH	Trumbull County	39155		Gas (mcf)	91657.06
+2009	OH	Trumbull County	39155		Gas (mcf)	135071.88
+2005	OH	Trumbull County	39155		Gas (mcf)	136930.89
+2011	OH	Trumbull County	39155		Gas (mcf)	138296.03
+2010	OH	Trumbull County	39155		Gas (mcf)	142282
+2014	OH	Portage County	39133		Gas (mcf)	152111
+2008	OH	Trumbull County	39155		Gas (mcf)	156499.89
+2013	OH	Portage County	39133		Gas (mcf)	162236.04
+2006	OH	Trumbull County	39155		Gas (mcf)	165315.72
+2011	OH	Portage County	39133		Gas (mcf)	169394.71
+2009	OH	Portage County	39133		Gas (mcf)	173774.44
+2012	OH	Portage County	39133		Gas (mcf)	174996.53
+2007	OH	Trumbull County	39155		Gas (mcf)	178615.92
+2010	OH	Portage County	39133		Gas (mcf)	182249.64
+2008	OH	Portage County	39133		Gas (mcf)	188806.94
+2007	OH	Portage County	39133		Gas (mcf)	193008.88
+2006	OH	Portage County	39133		Gas (mcf)	202907.6
+2005	OH	Portage County	39133		Gas (mcf)	212697.82

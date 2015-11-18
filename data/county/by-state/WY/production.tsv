@@ -1,1288 +1,656 @@
-Year	State	County	FIPS	Commodity	Product	Type	Volume
-2004	WY	Albany	56001	Gas	Fuel Gas (mcf)	Royalties	4083
-2004	WY	Albany	56001	Oil	Oil (bbl)	Royalties	50096.46
-2004	WY	Big Horn	56003	Gas	Processed (Residue) Gas (mcf)	Royalties	1560773.26
-2004	WY	Big Horn	56003	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1459005.07
-2004	WY	Big Horn	56003	NGL	Gas Plant Products (gal)	Royalties	3783617.68
-2004	WY	Big Horn	56003	Oil	Condensate (bbl)	Royalties	24436.33
-2004	WY	Big Horn	56003	Oil	Oil (bbl)	Royalties	882751.05
-2004	WY	Campbell	56005	Coal	Coal (ton)	Royalties	357105807.6
-2004	WY	Campbell	56005	Gas	Coal Bed Methane (mcf)	Royalties	74584932.63
-2004	WY	Campbell	56005	Gas	Processed (Residue) Gas (mcf)	Royalties	10174083.56
-2004	WY	Campbell	56005	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	21320672.48
-2004	WY	Campbell	56005	NGL	Gas Plant Products (gal)	Royalties	7007571.57
-2004	WY	Campbell	56005	Oil	Condensate (bbl)	Royalties	8577.14
-2004	WY	Campbell	56005	Oil	Oil (bbl)	Royalties	4944055.62
-2004	WY	Carbon	56007	Coal	Coal (ton)	Royalties	73468
-2004	WY	Carbon	56007	Gas	Coal Bed Methane (mcf)	Royalties	1066231.28
-2004	WY	Carbon	56007	Gas	Fuel Gas (mcf)	Royalties	5576.69
-2004	WY	Carbon	56007	Gas	Processed (Residue) Gas (mcf)	Royalties	13501242
-2004	WY	Carbon	56007	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	34470677.9
-2004	WY	Carbon	56007	NGL	Gas Plant Products (gal)	Royalties	28986394.51
-2004	WY	Carbon	56007	Oil	Condensate (bbl)	Royalties	402093.34
-2004	WY	Carbon	56007	Oil	Drip or Scrubber Condensate (bbl)	Royalties	104.27
-2004	WY	Carbon	56007	Oil	Oil (bbl)	Royalties	749320.31
-2004	WY	Converse	56009	Coal	Coal (ton)	Royalties	12874625.4
-2004	WY	Converse	56009	Gas	Coal Bed Methane (mcf)	Royalties	358231.06
-2004	WY	Converse	56009	Gas	Processed (Residue) Gas (mcf)	Royalties	1394768.62
-2004	WY	Converse	56009	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	9617218.98
-2004	WY	Converse	56009	NGL	Gas Plant Products (gal)	Royalties	4406185.19
-2004	WY	Converse	56009	Oil	Condensate (bbl)	Royalties	12428.05
-2004	WY	Converse	56009	Oil	Oil (bbl)	Royalties	1684126.44
-2004	WY	Crook	56011	Gas	Fuel Gas (mcf)	Royalties	1209
-2004	WY	Crook	56011	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3713
-2004	WY	Crook	56011	Oil	Oil (bbl)	Royalties	1337915.91
-2004	WY	Fremont	56013	Gas	Coal Bed Methane (mcf)	Royalties	20
-2004	WY	Fremont	56013	Gas	Processed (Residue) Gas (mcf)	Royalties	57266111.71
-2004	WY	Fremont	56013	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	38677164.49
-2004	WY	Fremont	56013	NGL	Gas Plant Products (gal)	Royalties	7880597.07
-2004	WY	Fremont	56013	Oil	Condensate (bbl)	Royalties	206368.78
-2004	WY	Fremont	56013	Oil	Oil (bbl)	Royalties	265815.42
-2004	WY	Fremont	56013	Sulfur	Sulfur (lton)	Royalties	356883.2
-2004	WY	Hot Springs	56017	Gas	Processed (Residue) Gas (mcf)	Royalties	206
-2004	WY	Hot Springs	56017	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	124572.03
-2004	WY	Hot Springs	56017	NGL	Gas Plant Products (gal)	Royalties	1293
-2004	WY	Hot Springs	56017	Oil	Condensate (bbl)	Royalties	188.69
-2004	WY	Hot Springs	56017	Oil	Oil (bbl)	Royalties	2262653.97
-2004	WY	Johnson	56019	Gas	Coal Bed Methane (mcf)	Royalties	13712891.59
-2004	WY	Johnson	56019	Gas	Processed (Residue) Gas (mcf)	Royalties	111079.83
-2004	WY	Johnson	56019	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	688644.86
-2004	WY	Johnson	56019	NGL	Gas Plant Products (gal)	Royalties	9998.35
-2004	WY	Johnson	56019	Oil	Condensate (bbl)	Royalties	897.73
-2004	WY	Johnson	56019	Oil	Oil (bbl)	Royalties	884507.5
-2004	WY	Laramie	56021	Oil	Oil (bbl)	Royalties	24648.48
-2004	WY	Lincoln	56023	Coal	Coal (ton)	Royalties	1465870
-2004	WY	Lincoln	56023	Gas	Processed (Residue) Gas (mcf)	Royalties	26244075.92
-2004	WY	Lincoln	56023	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	25173611.47
-2004	WY	Lincoln	56023	NGL	Gas Plant Products (gal)	Royalties	26432551.39
-2004	WY	Lincoln	56023	Oil	Condensate (bbl)	Royalties	836031.45
-2004	WY	Lincoln	56023	Oil	Drip or Scrubber Condensate (bbl)	Royalties	7794.97
-2004	WY	Lincoln	56023	Oil	Inlet Scrubber (bbl)	Royalties	15.42
-2004	WY	Lincoln	56023	Oil	Oil (bbl)	Royalties	105264.49
-2004	WY	Lincoln	56023	Sulfur	Sulfur (lton)	Royalties	105446.2
-2004	WY	Natrona	56025	Gas	Processed (Residue) Gas (mcf)	Royalties	32258348.62
-2004	WY	Natrona	56025	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	9379043.33
-2004	WY	Natrona	56025	NGL	Gas Plant Products (gal)	Royalties	46345863.69
-2004	WY	Natrona	56025	Oil	Condensate (bbl)	Royalties	198491.61
-2004	WY	Natrona	56025	Oil	Oil (bbl)	Royalties	2623144.76
-2004	WY	Natrona	56025	Sulfur	Sulfur (lton)	Royalties	29323.84
-2004	WY	Niobrara	56027	Gas	Processed (Residue) Gas (mcf)	Royalties	4277.99
-2004	WY	Niobrara	56027	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	74232.63
-2004	WY	Niobrara	56027	NGL	Gas Plant Products (gal)	Royalties	19680.06
-2004	WY	Niobrara	56027	Oil	Oil (bbl)	Royalties	270709.87
-2004	WY	Park	56029	Gas	Processed (Residue) Gas (mcf)	Royalties	3702164.53
-2004	WY	Park	56029	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3641315.61
-2004	WY	Park	56029	NGL	Gas Plant Products (gal)	Royalties	8647190.57
-2004	WY	Park	56029	Oil	Condensate (bbl)	Royalties	5135.91
-2004	WY	Park	56029	Oil	Drip or Scrubber Condensate (bbl)	Royalties	87.57
-2004	WY	Park	56029	Oil	Oil (bbl)	Royalties	5756317.74
-2004	WY	Park	56029	Sulfur	Sulfur (lton)	Royalties	5286.56
-2004	WY	Sheridan	56033	Gas	Coal Bed Methane (mcf)	Royalties	1858370.5
-2004	WY	Sheridan	56033	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	562452.14
-2004	WY	Sublette	56035	Gas	Coal Bed Methane (mcf)	Royalties	23745
-2004	WY	Sublette	56035	Gas	Processed (Residue) Gas (mcf)	Royalties	84283260.61
-2004	WY	Sublette	56035	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	398630462.78
-2004	WY	Sublette	56035	NGL	Gas Plant Products (gal)	Royalties	51241210.12
-2004	WY	Sublette	56035	Oil	Condensate (bbl)	Royalties	2920751.58
-2004	WY	Sublette	56035	Oil	Drip or Scrubber Condensate (bbl)	Royalties	1561.21
-2004	WY	Sublette	56035	Oil	Oil (bbl)	Royalties	1268585.85
-2004	WY	Sublette	56035	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	58441594.31
-2004	WY	Sublette	56035	Sulfur	Sulfur (lton)	Royalties	2636088.09
-2004	WY	Sweetwater	56037	Coal	Coal (ton)	Royalties	3427327
-2004	WY	Sweetwater	56037	Gas	Coal Bed Methane (mcf)	Royalties	51313.45
-2004	WY	Sweetwater	56037	Gas	Fuel Gas (mcf)	Royalties	46129.81
-2004	WY	Sweetwater	56037	Gas	Processed (Residue) Gas (mcf)	Royalties	27628101.96
-2004	WY	Sweetwater	56037	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	69150757.1
-2004	WY	Sweetwater	56037	NGL	Gas Plant Products (gal)	Royalties	55969557.37
-2004	WY	Sweetwater	56037	Oil	Condensate (bbl)	Royalties	571530.91
-2004	WY	Sweetwater	56037	Oil	Drip or Scrubber Condensate (bbl)	Royalties	1081.4
-2004	WY	Sweetwater	56037	Oil	Inlet Scrubber (bbl)	Royalties	1.82
-2004	WY	Sweetwater	56037	Oil	Oil (bbl)	Royalties	1421294.69
-2004	WY	Sweetwater	56037	Purge Liquor	Purge Liquor (ton)	Royalties	41385
-2004	WY	Sweetwater	56037	Soda Ash	Soda Ash (ton)	Royalties	1999311
-2004	WY	Sweetwater	56037	Sodium Bi-Carbonate	Sodium Bi-Carbonate (ton)	Royalties	22315
-2004	WY	Sweetwater	56037	Sodium Sesquicarbonate	Sodium Sesquicarbonate (ton)	Royalties	43432
-2004	WY	Sweetwater	56037	Sulfur	Sulfur (lton)	Royalties	9645.03
-2004	WY	Sweetwater	56037	Trona Ore	Trona Ore (ton)	Royalties	5480
-2004	WY	Uinta	56041	Gas	Processed (Residue) Gas (mcf)	Royalties	16084605.08
-2004	WY	Uinta	56041	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	8701740.36
-2004	WY	Uinta	56041	NGL	Gas Plant Products (gal)	Royalties	82123666.22
-2004	WY	Uinta	56041	Oil	Condensate (bbl)	Royalties	414455.95
-2004	WY	Uinta	56041	Oil	Drip or Scrubber Condensate (bbl)	Royalties	140494.99
-2004	WY	Uinta	56041	Oil	Oil (bbl)	Royalties	701361.3
-2004	WY	Uinta	56041	Sulfur	Sulfur (lton)	Royalties	79300.83
-2004	WY	Washakie	56043	Gas	Processed (Residue) Gas (mcf)	Royalties	624664.64
-2004	WY	Washakie	56043	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1407935.63
-2004	WY	Washakie	56043	NGL	Gas Plant Products (gal)	Royalties	1529853.54
-2004	WY	Washakie	56043	Oil	Condensate (bbl)	Royalties	9613.32
-2004	WY	Washakie	56043	Oil	Oil (bbl)	Royalties	695696.85
-2004	WY	Weston	56045	Gas	Processed (Residue) Gas (mcf)	Royalties	315520.04
-2004	WY	Weston	56045	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	637249.96
-2004	WY	Weston	56045	NGL	Gas Plant Products (gal)	Royalties	3113511.07
-2004	WY	Weston	56045	Oil	Oil (bbl)	Royalties	615939.68
-2005	WY	Albany	56001	Gas	Fuel Gas (mcf)	Royalties	3167
-2005	WY	Albany	56001	Oil	Oil (bbl)	Royalties	45045.07
-2005	WY	Big Horn	56003	Gas	Processed (Residue) Gas (mcf)	Royalties	1073787.11
-2005	WY	Big Horn	56003	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1256402.19
-2005	WY	Big Horn	56003	NGL	Gas Plant Products (gal)	Royalties	2477327.47
-2005	WY	Big Horn	56003	Oil	Condensate (bbl)	Royalties	19577.43
-2005	WY	Big Horn	56003	Oil	Oil (bbl)	Royalties	903356.07
-2005	WY	Campbell	56005	Coal	Coal (ton)	Royalties	341450822.83
-2005	WY	Campbell	56005	Gas	Coal Bed Methane (mcf)	Royalties	88210923.71
-2005	WY	Campbell	56005	Gas	Processed (Residue) Gas (mcf)	Royalties	7837747.45
-2005	WY	Campbell	56005	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	13680084.22
-2005	WY	Campbell	56005	NGL	Gas Plant Products (gal)	Royalties	4764600.67
-2005	WY	Campbell	56005	Oil	Condensate (bbl)	Royalties	11127.03
-2005	WY	Campbell	56005	Oil	Oil (bbl)	Royalties	4817867.56
-2005	WY	Carbon	56007	Gas	Coal Bed Methane (mcf)	Royalties	3409613.01
-2005	WY	Carbon	56007	Gas	Fuel Gas (mcf)	Royalties	3143.79
-2005	WY	Carbon	56007	Gas	Processed (Residue) Gas (mcf)	Royalties	9858289.1
-2005	WY	Carbon	56007	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	39226492.48
-2005	WY	Carbon	56007	NGL	Gas Plant Products (gal)	Royalties	26628810.97
-2005	WY	Carbon	56007	Oil	Condensate (bbl)	Royalties	415739.43
-2005	WY	Carbon	56007	Oil	Drip or Scrubber Condensate (bbl)	Royalties	139.9
-2005	WY	Carbon	56007	Oil	Oil (bbl)	Royalties	617964.76
-2005	WY	Converse	56009	Coal	Coal (ton)	Royalties	12861407.17
-2005	WY	Converse	56009	Gas	Coal Bed Methane (mcf)	Royalties	866018.78
-2005	WY	Converse	56009	Gas	Processed (Residue) Gas (mcf)	Royalties	712671.92
-2005	WY	Converse	56009	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	8010762.56
-2005	WY	Converse	56009	NGL	Gas Plant Products (gal)	Royalties	1798341.33
-2005	WY	Converse	56009	Oil	Condensate (bbl)	Royalties	10861.63
-2005	WY	Converse	56009	Oil	Oil (bbl)	Royalties	1581933.92
-2005	WY	Crook	56011	Gas	Fuel Gas (mcf)	Royalties	20690
-2005	WY	Crook	56011	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	4417
-2005	WY	Crook	56011	Oil	Oil (bbl)	Royalties	1265234.79
-2005	WY	Fremont	56013	Gas	Coal Bed Methane (mcf)	Royalties	6642.08
-2005	WY	Fremont	56013	Gas	Processed (Residue) Gas (mcf)	Royalties	61460542.07
-2005	WY	Fremont	56013	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	37827048.29
-2005	WY	Fremont	56013	NGL	Gas Plant Products (gal)	Royalties	7966717.22
-2005	WY	Fremont	56013	Oil	Condensate (bbl)	Royalties	266731.92
-2005	WY	Fremont	56013	Oil	Oil (bbl)	Royalties	226549.05
-2005	WY	Fremont	56013	Sulfur	Sulfur (lton)	Royalties	390538.81
-2005	WY	Hot Springs	56017	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	117433.23
-2005	WY	Hot Springs	56017	Oil	Condensate (bbl)	Royalties	354.82
-2005	WY	Hot Springs	56017	Oil	Inlet Scrubber (bbl)	Royalties	3521.02
-2005	WY	Hot Springs	56017	Oil	Oil (bbl)	Royalties	2289741.82
-2005	WY	Johnson	56019	Gas	Coal Bed Methane (mcf)	Royalties	32061192.91
-2005	WY	Johnson	56019	Gas	Processed (Residue) Gas (mcf)	Royalties	135707.39
-2005	WY	Johnson	56019	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	214282.26
-2005	WY	Johnson	56019	NGL	Gas Plant Products (gal)	Royalties	16388.01
-2005	WY	Johnson	56019	Oil	Oil (bbl)	Royalties	1011668.05
-2005	WY	Laramie	56021	Oil	Oil (bbl)	Royalties	21171.66
-2005	WY	Lincoln	56023	Coal	Coal (ton)	Royalties	474708
-2005	WY	Lincoln	56023	Gas	Processed (Residue) Gas (mcf)	Royalties	25082058.54
-2005	WY	Lincoln	56023	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	27559429.26
-2005	WY	Lincoln	56023	NGL	Gas Plant Products (gal)	Royalties	29489592.08
-2005	WY	Lincoln	56023	Oil	Condensate (bbl)	Royalties	383016.44
-2005	WY	Lincoln	56023	Oil	Drip or Scrubber Condensate (bbl)	Royalties	12649.32
-2005	WY	Lincoln	56023	Oil	Inlet Scrubber (bbl)	Royalties	47.6
-2005	WY	Lincoln	56023	Oil	Oil (bbl)	Royalties	139409.6
-2005	WY	Lincoln	56023	Sulfur	Sulfur (lton)	Royalties	79378.21
-2005	WY	Natrona	56025	Gas	Coal Bed Methane (mcf)	Royalties	51470.08
-2005	WY	Natrona	56025	Gas	Processed (Residue) Gas (mcf)	Royalties	27453789.79
-2005	WY	Natrona	56025	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	11911637.67
-2005	WY	Natrona	56025	NGL	Gas Plant Products (gal)	Royalties	44176661.64
-2005	WY	Natrona	56025	Oil	Condensate (bbl)	Royalties	248327.63
-2005	WY	Natrona	56025	Oil	Oil (bbl)	Royalties	3178691.64
-2005	WY	Natrona	56025	Sulfur	Sulfur (lton)	Royalties	32089.17
-2005	WY	Niobrara	56027	Gas	Processed (Residue) Gas (mcf)	Royalties	4899.09
-2005	WY	Niobrara	56027	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	79095.07
-2005	WY	Niobrara	56027	NGL	Gas Plant Products (gal)	Royalties	23470.76
-2005	WY	Niobrara	56027	Oil	Oil (bbl)	Royalties	277735
-2005	WY	Park	56029	Gas	Processed (Residue) Gas (mcf)	Royalties	3721183.73
-2005	WY	Park	56029	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3237736.19
-2005	WY	Park	56029	NGL	Gas Plant Products (gal)	Royalties	7686333.62
-2005	WY	Park	56029	Oil	Condensate (bbl)	Royalties	4202.68
-2005	WY	Park	56029	Oil	Drip or Scrubber Condensate (bbl)	Royalties	2151.02
-2005	WY	Park	56029	Oil	Inlet Scrubber (bbl)	Royalties	38149.59
-2005	WY	Park	56029	Oil	Oil (bbl)	Royalties	5732480.66
-2005	WY	Park	56029	Sulfur	Sulfur (lton)	Royalties	3805.42
-2005	WY	Sheridan	56033	Gas	Coal Bed Methane (mcf)	Royalties	4244830.44
-2005	WY	Sheridan	56033	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	61841.14
-2005	WY	Sheridan	56033	Oil	Condensate (bbl)	Royalties	1127.92
-2005	WY	Sublette	56035	Gas	Processed (Residue) Gas (mcf)	Royalties	107800037.89
-2005	WY	Sublette	56035	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	466810863.77
-2005	WY	Sublette	56035	NGL	Gas Plant Products (gal)	Royalties	60329242.59
-2005	WY	Sublette	56035	Oil	Condensate (bbl)	Royalties	3319765.36
-2005	WY	Sublette	56035	Oil	Drip or Scrubber Condensate (bbl)	Royalties	1552.42
-2005	WY	Sublette	56035	Oil	Oil (bbl)	Royalties	1283954.41
-2005	WY	Sublette	56035	Oil	Other Liquid Hydrocarbons (bbl)	Royalties	634.08
-2005	WY	Sublette	56035	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	70652957.93
-2005	WY	Sublette	56035	Sulfur	Sulfur (lton)	Royalties	1621725.6
-2005	WY	Sweetwater	56037	Coal	Coal (ton)	Royalties	2345926
-2005	WY	Sweetwater	56037	Gas	Coal Bed Methane (mcf)	Royalties	34642.48
-2005	WY	Sweetwater	56037	Gas	Fuel Gas (mcf)	Royalties	34374.12
-2005	WY	Sweetwater	56037	Gas	Processed (Residue) Gas (mcf)	Royalties	27664000.17
-2005	WY	Sweetwater	56037	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	69055745.8
-2005	WY	Sweetwater	56037	NGL	Gas Plant Products (gal)	Royalties	52989683.41
-2005	WY	Sweetwater	56037	Oil	Condensate (bbl)	Royalties	549408.12
-2005	WY	Sweetwater	56037	Oil	Drip or Scrubber Condensate (bbl)	Royalties	1063.84
-2005	WY	Sweetwater	56037	Oil	Inlet Scrubber (bbl)	Royalties	0.97
-2005	WY	Sweetwater	56037	Oil	Oil (bbl)	Royalties	1519220.21
-2005	WY	Sweetwater	56037	Purge Liquor	Purge Liquor (ton)	Royalties	61925
-2005	WY	Sweetwater	56037	Soda Ash	Soda Ash (ton)	Royalties	3469943
-2005	WY	Sweetwater	56037	Sodium Bi-Carbonate	Sodium Bi-Carbonate (ton)	Royalties	15460
-2005	WY	Sweetwater	56037	Sodium Bisulfite	Sodium Bisulfite (ton)	Royalties	628
-2005	WY	Sweetwater	56037	Sodium Decahydrate	Sodium Decahydrate (ton)	Royalties	1107
-2005	WY	Sweetwater	56037	Sodium Sesquicarbonate	Sodium Sesquicarbonate (ton)	Royalties	35357
-2005	WY	Sweetwater	56037	Sulfide	Sulfide (ton)	Royalties	4830
-2005	WY	Sweetwater	56037	Sulfur	Sulfur (lton)	Royalties	12766.16
-2005	WY	Sweetwater	56037	Trona Ore	Trona Ore (ton)	Royalties	26516
-2005	WY	Uinta	56041	Gas	Processed (Residue) Gas (mcf)	Royalties	13455553.33
-2005	WY	Uinta	56041	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	8240787.46
-2005	WY	Uinta	56041	NGL	Gas Plant Products (gal)	Royalties	67057768.39
-2005	WY	Uinta	56041	Oil	Condensate (bbl)	Royalties	235176.13
-2005	WY	Uinta	56041	Oil	Drip or Scrubber Condensate (bbl)	Royalties	130601.18
-2005	WY	Uinta	56041	Oil	Oil (bbl)	Royalties	709001.52
-2005	WY	Uinta	56041	Sulfur	Sulfur (lton)	Royalties	71019.76
-2005	WY	Washakie	56043	Gas	Processed (Residue) Gas (mcf)	Royalties	617895.89
-2005	WY	Washakie	56043	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	800039.01
-2005	WY	Washakie	56043	NGL	Gas Plant Products (gal)	Royalties	1844264.2
-2005	WY	Washakie	56043	Oil	Condensate (bbl)	Royalties	11971.69
-2005	WY	Washakie	56043	Oil	Oil (bbl)	Royalties	593732.96
-2005	WY	Weston	56045	Gas	Processed (Residue) Gas (mcf)	Royalties	291061.26
-2005	WY	Weston	56045	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	625769.9
-2005	WY	Weston	56045	NGL	Gas Plant Products (gal)	Royalties	2798385.42
-2005	WY	Weston	56045	Oil	Oil (bbl)	Royalties	578980.92
-2006	WY	Albany	56001	Gas	Fuel Gas (mcf)	Royalties	3417
-2006	WY	Albany	56001	Oil	Oil (bbl)	Royalties	37630.32
-2006	WY	Big Horn	56003	Gas	Processed (Residue) Gas (mcf)	Royalties	868858.96
-2006	WY	Big Horn	56003	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1188968.57
-2006	WY	Big Horn	56003	NGL	Gas Plant Products (gal)	Royalties	2026156.91
-2006	WY	Big Horn	56003	Oil	Condensate (bbl)	Royalties	16321.77
-2006	WY	Big Horn	56003	Oil	Oil (bbl)	Royalties	916887.78
-2006	WY	Campbell	56005	Coal	Coal (ton)	Royalties	343227074.38
-2006	WY	Campbell	56005	Gas	Coal Bed Methane (mcf)	Royalties	76058030.99
-2006	WY	Campbell	56005	Gas	Processed (Residue) Gas (mcf)	Royalties	958469.95
-2006	WY	Campbell	56005	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	11331718.29
-2006	WY	Campbell	56005	NGL	Gas Plant Products (gal)	Royalties	4260161.94
-2006	WY	Campbell	56005	Oil	Condensate (bbl)	Royalties	29622.09
-2006	WY	Campbell	56005	Oil	Oil (bbl)	Royalties	4990383.57
-2006	WY	Carbon	56007	Gas	Coal Bed Methane (mcf)	Royalties	3696587.94
-2006	WY	Carbon	56007	Gas	Fuel Gas (mcf)	Royalties	4692.93
-2006	WY	Carbon	56007	Gas	Processed (Residue) Gas (mcf)	Royalties	9417041.69
-2006	WY	Carbon	56007	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	41912932.2
-2006	WY	Carbon	56007	NGL	Gas Plant Products (gal)	Royalties	31313725.54
-2006	WY	Carbon	56007	Oil	Condensate (bbl)	Royalties	446848.08
-2006	WY	Carbon	56007	Oil	Drip or Scrubber Condensate (bbl)	Royalties	122.44
-2006	WY	Carbon	56007	Oil	Oil (bbl)	Royalties	696334.64
-2006	WY	Converse	56009	Coal	Coal (ton)	Royalties	15510159.62
-2006	WY	Converse	56009	Gas	Coal Bed Methane (mcf)	Royalties	1840690.7
-2006	WY	Converse	56009	Gas	Processed (Residue) Gas (mcf)	Royalties	648278.8
-2006	WY	Converse	56009	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	6469740
-2006	WY	Converse	56009	NGL	Gas Plant Products (gal)	Royalties	1499707.09
-2006	WY	Converse	56009	Oil	Condensate (bbl)	Royalties	9900.29
-2006	WY	Converse	56009	Oil	Oil (bbl)	Royalties	1599759.37
-2006	WY	Crook	56011	Gas	Fuel Gas (mcf)	Royalties	22604
-2006	WY	Crook	56011	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	4314
-2006	WY	Crook	56011	Oil	Oil (bbl)	Royalties	1168297.82
-2006	WY	Fremont	56013	Gas	Coal Bed Methane (mcf)	Royalties	-5215.04
-2006	WY	Fremont	56013	Gas	Processed (Residue) Gas (mcf)	Royalties	91073791.02
-2006	WY	Fremont	56013	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	13591390.5
-2006	WY	Fremont	56013	NGL	Gas Plant Products (gal)	Royalties	16038398.53
-2006	WY	Fremont	56013	Oil	Condensate (bbl)	Royalties	288483.56
-2006	WY	Fremont	56013	Oil	Oil (bbl)	Royalties	235223.04
-2006	WY	Fremont	56013	Sulfur	Sulfur (lton)	Royalties	382210.8
-2006	WY	Hot Springs	56017	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	27769.92
-2006	WY	Hot Springs	56017	Oil	Condensate (bbl)	Royalties	34.61
-2006	WY	Hot Springs	56017	Oil	Oil (bbl)	Royalties	2334222.49
-2006	WY	Johnson	56019	Gas	Coal Bed Methane (mcf)	Royalties	44027276.03
-2006	WY	Johnson	56019	Gas	Processed (Residue) Gas (mcf)	Royalties	112502.29
-2006	WY	Johnson	56019	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	235247.73
-2006	WY	Johnson	56019	NGL	Gas Plant Products (gal)	Royalties	237124.73
-2006	WY	Johnson	56019	Oil	Oil (bbl)	Royalties	879020.14
-2006	WY	Laramie	56021	Oil	Oil (bbl)	Royalties	21101.57
-2006	WY	Lincoln	56023	Coal	Coal (ton)	Royalties	789305
-2006	WY	Lincoln	56023	Gas	Processed (Residue) Gas (mcf)	Royalties	28686970.18
-2006	WY	Lincoln	56023	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	27521473.22
-2006	WY	Lincoln	56023	NGL	Gas Plant Products (gal)	Royalties	31017374.97
-2006	WY	Lincoln	56023	Oil	Condensate (bbl)	Royalties	358624.42
-2006	WY	Lincoln	56023	Oil	Drip or Scrubber Condensate (bbl)	Royalties	8994.01
-2006	WY	Lincoln	56023	Oil	Inlet Scrubber (bbl)	Royalties	59.06
-2006	WY	Lincoln	56023	Oil	Oil (bbl)	Royalties	129783.96
-2006	WY	Lincoln	56023	Salt	Salt (ton)	Royalties	135300
-2006	WY	Lincoln	56023	Sulfur	Sulfur (lton)	Royalties	68785.06
-2006	WY	Natrona	56025	Gas	Coal Bed Methane (mcf)	Royalties	4083
-2006	WY	Natrona	56025	Gas	Processed (Residue) Gas (mcf)	Royalties	25523303.26
-2006	WY	Natrona	56025	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	8871629.37
-2006	WY	Natrona	56025	NGL	Gas Plant Products (gal)	Royalties	41931820.21
-2006	WY	Natrona	56025	Oil	Condensate (bbl)	Royalties	168831
-2006	WY	Natrona	56025	Oil	Oil (bbl)	Royalties	3268439.16
-2006	WY	Natrona	56025	Sulfur	Sulfur (lton)	Royalties	30827.5
-2006	WY	Niobrara	56027	Gas	Processed (Residue) Gas (mcf)	Royalties	216
-2006	WY	Niobrara	56027	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	300270.49
-2006	WY	Niobrara	56027	NGL	Gas Plant Products (gal)	Royalties	11341.92
-2006	WY	Niobrara	56027	Oil	Oil (bbl)	Royalties	307710.96
-2006	WY	Niobrara	56027	Oil	Other Liquid Hydrocarbons (bbl)	Royalties	319.53
-2006	WY	Park	56029	Gas	Processed (Residue) Gas (mcf)	Royalties	3737344.02
-2006	WY	Park	56029	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2989628.44
-2006	WY	Park	56029	NGL	Gas Plant Products (gal)	Royalties	7700193.84
-2006	WY	Park	56029	Oil	Condensate (bbl)	Royalties	7503.02
-2006	WY	Park	56029	Oil	Drip or Scrubber Condensate (bbl)	Royalties	1738.16
-2006	WY	Park	56029	Oil	Oil (bbl)	Royalties	5802608.38
-2006	WY	Park	56029	Sulfur	Sulfur (lton)	Royalties	3398
-2006	WY	Sheridan	56033	Gas	Coal Bed Methane (mcf)	Royalties	8215772.19
-2006	WY	Sheridan	56033	Oil	Oil (bbl)	Royalties	1508.45
-2006	WY	Sublette	56035	Gas	Processed (Residue) Gas (mcf)	Royalties	173807784.27
-2006	WY	Sublette	56035	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	459491375.29
-2006	WY	Sublette	56035	NGL	Gas Plant Products (gal)	Royalties	110960409.44
-2006	WY	Sublette	56035	Oil	Condensate (bbl)	Royalties	3915097.74
-2006	WY	Sublette	56035	Oil	Drip or Scrubber Condensate (bbl)	Royalties	1559.63
-2006	WY	Sublette	56035	Oil	Oil (bbl)	Royalties	1366410.96
-2006	WY	Sublette	56035	Oil	Other Liquid Hydrocarbons (bbl)	Royalties	3284.14
-2006	WY	Sublette	56035	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	50851950.38
-2006	WY	Sweetwater	56037	Coal	Coal (ton)	Royalties	2872903
-2006	WY	Sweetwater	56037	Gas	Coal Bed Methane (mcf)	Royalties	29216.31
-2006	WY	Sweetwater	56037	Gas	Fuel Gas (mcf)	Royalties	3786.98
-2006	WY	Sweetwater	56037	Gas	Processed (Residue) Gas (mcf)	Royalties	24160871.33
-2006	WY	Sweetwater	56037	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	76426453.43
-2006	WY	Sweetwater	56037	NGL	Gas Plant Products (gal)	Royalties	50980611.88
-2006	WY	Sweetwater	56037	Oil	Condensate (bbl)	Royalties	588117.87
-2006	WY	Sweetwater	56037	Oil	Drip or Scrubber Condensate (bbl)	Royalties	343.25
-2006	WY	Sweetwater	56037	Oil	Inlet Scrubber (bbl)	Royalties	5.78
-2006	WY	Sweetwater	56037	Oil	Oil (bbl)	Royalties	1713912.82
-2006	WY	Sweetwater	56037	Purge Liquor	Purge Liquor (ton)	Royalties	69814
-2006	WY	Sweetwater	56037	Soda Ash	Soda Ash (ton)	Royalties	4716416
-2006	WY	Sweetwater	56037	Sodium Bi-Carbonate	Sodium Bi-Carbonate (ton)	Royalties	19095
-2006	WY	Sweetwater	56037	Sodium Bisulfite	Sodium Bisulfite (ton)	Royalties	3033
-2006	WY	Sweetwater	56037	Sodium Decahydrate	Sodium Decahydrate (ton)	Royalties	4858
-2006	WY	Sweetwater	56037	Sodium Sesquicarbonate	Sodium Sesquicarbonate (ton)	Royalties	43476
-2006	WY	Sweetwater	56037	Sulfide	Sulfide (ton)	Royalties	30692
-2006	WY	Sweetwater	56037	Sulfur	Sulfur (lton)	Royalties	10331.81
-2006	WY	Sweetwater	56037	Trona Ore	Trona Ore (ton)	Royalties	123744
-2006	WY	Uinta	56041	Gas	Processed (Residue) Gas (mcf)	Royalties	12000526.06
-2006	WY	Uinta	56041	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	7148785.13
-2006	WY	Uinta	56041	NGL	Gas Plant Products (gal)	Royalties	60617660.03
-2006	WY	Uinta	56041	Oil	Condensate (bbl)	Royalties	274534.71
-2006	WY	Uinta	56041	Oil	Drip or Scrubber Condensate (bbl)	Royalties	121998.96
-2006	WY	Uinta	56041	Oil	Inlet Scrubber (bbl)	Royalties	0.81
-2006	WY	Uinta	56041	Oil	Oil (bbl)	Royalties	499190.44
-2006	WY	Uinta	56041	Sulfur	Sulfur (lton)	Royalties	63874.47
-2006	WY	Washakie	56043	Gas	Processed (Residue) Gas (mcf)	Royalties	531385.51
-2006	WY	Washakie	56043	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	689239.81
-2006	WY	Washakie	56043	NGL	Gas Plant Products (gal)	Royalties	1572596.13
-2006	WY	Washakie	56043	Oil	Condensate (bbl)	Royalties	10509.87
-2006	WY	Washakie	56043	Oil	Oil (bbl)	Royalties	605417.83
-2006	WY	Weston	56045	Gas	Processed (Residue) Gas (mcf)	Royalties	285682.14
-2006	WY	Weston	56045	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	628576.84
-2006	WY	Weston	56045	NGL	Gas Plant Products (gal)	Royalties	2745544.7
-2006	WY	Weston	56045	Oil	Oil (bbl)	Royalties	542404.49
-2007	WY	Albany	56001	Gas	Fuel Gas (mcf)	Royalties	2426
-2007	WY	Albany	56001	Oil	Oil (bbl)	Royalties	29756.91
-2007	WY	Big Horn	56003	Gas	Processed (Residue) Gas (mcf)	Royalties	747455.99
-2007	WY	Big Horn	56003	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1017904.24
-2007	WY	Big Horn	56003	NGL	Gas Plant Products (gal)	Royalties	1671133.09
-2007	WY	Big Horn	56003	Oil	Condensate (bbl)	Royalties	13771.24
-2007	WY	Big Horn	56003	Oil	Oil (bbl)	Royalties	850582.2
-2007	WY	Campbell	56005	Coal	Coal (ton)	Royalties	357827344.9
-2007	WY	Campbell	56005	Gas	Coal Bed Methane (mcf)	Royalties	76668941.29
-2007	WY	Campbell	56005	Gas	Processed (Residue) Gas (mcf)	Royalties	1149020.95
-2007	WY	Campbell	56005	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	12540895.54
-2007	WY	Campbell	56005	NGL	Gas Plant Products (gal)	Royalties	3442268.37
-2007	WY	Campbell	56005	Oil	Condensate (bbl)	Royalties	28763.51
-2007	WY	Campbell	56005	Oil	Oil (bbl)	Royalties	4699783.8
-2007	WY	Carbon	56007	Coal	Coal (ton)	Royalties	104870
-2007	WY	Carbon	56007	Gas	Coal Bed Methane (mcf)	Royalties	3859292.38
-2007	WY	Carbon	56007	Gas	Fuel Gas (mcf)	Royalties	4596.76
-2007	WY	Carbon	56007	Gas	Processed (Residue) Gas (mcf)	Royalties	11590738.15
-2007	WY	Carbon	56007	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	39925780.5
-2007	WY	Carbon	56007	NGL	Gas Plant Products (gal)	Royalties	47422348.53
-2007	WY	Carbon	56007	Oil	Condensate (bbl)	Royalties	467261.48
-2007	WY	Carbon	56007	Oil	Drip or Scrubber Condensate (bbl)	Royalties	117.81
-2007	WY	Carbon	56007	Oil	Oil (bbl)	Royalties	754950.73
-2007	WY	Converse	56009	Coal	Coal (ton)	Royalties	20800672.1
-2007	WY	Converse	56009	Gas	Coal Bed Methane (mcf)	Royalties	3579739.33
-2007	WY	Converse	56009	Gas	Processed (Residue) Gas (mcf)	Royalties	611759.94
-2007	WY	Converse	56009	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	6084088.06
-2007	WY	Converse	56009	NGL	Gas Plant Products (gal)	Royalties	1356273.43
-2007	WY	Converse	56009	Oil	Condensate (bbl)	Royalties	10041.47
-2007	WY	Converse	56009	Oil	Oil (bbl)	Royalties	1539957.09
-2007	WY	Crook	56011	Gas	Fuel Gas (mcf)	Royalties	13739
-2007	WY	Crook	56011	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	4252
-2007	WY	Crook	56011	Oil	Condensate (bbl)	Royalties	453.95
-2007	WY	Crook	56011	Oil	Oil (bbl)	Royalties	1145628.62
-2007	WY	Fremont	56013	Gas	Fuel Gas (mcf)	Royalties	256808.24
-2007	WY	Fremont	56013	Gas	Processed (Residue) Gas (mcf)	Royalties	23156955.15
-2007	WY	Fremont	56013	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	67247680.29
-2007	WY	Fremont	56013	NGL	Gas Plant Products (gal)	Royalties	22547485.2
-2007	WY	Fremont	56013	Oil	Condensate (bbl)	Royalties	331873.55
-2007	WY	Fremont	56013	Oil	Drip or Scrubber Condensate (bbl)	Royalties	2277
-2007	WY	Fremont	56013	Oil	Oil (bbl)	Royalties	270176.51
-2007	WY	Fremont	56013	Sulfur	Sulfur (lton)	Royalties	206471.59
-2007	WY	Hot Springs	56017	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	205358.42
-2007	WY	Hot Springs	56017	NGL	Gas Plant Products (gal)	Royalties	75766.48
-2007	WY	Hot Springs	56017	Oil	Condensate (bbl)	Royalties	217.95
-2007	WY	Hot Springs	56017	Oil	Oil (bbl)	Royalties	2296184.68
-2007	WY	Johnson	56019	Gas	Coal Bed Methane (mcf)	Royalties	139816535.23
-2007	WY	Johnson	56019	Gas	Processed (Residue) Gas (mcf)	Royalties	79993.84
-2007	WY	Johnson	56019	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	329651.1
-2007	WY	Johnson	56019	NGL	Gas Plant Products (gal)	Royalties	10040.72
-2007	WY	Johnson	56019	Oil	Oil (bbl)	Royalties	777389.23
-2007	WY	Laramie	56021	Oil	Oil (bbl)	Royalties	19469.21
-2007	WY	Lincoln	56023	Coal	Coal (ton)	Royalties	157461
-2007	WY	Lincoln	56023	Gas	Processed (Residue) Gas (mcf)	Royalties	32591557.57
-2007	WY	Lincoln	56023	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	32323424.45
-2007	WY	Lincoln	56023	NGL	Gas Plant Products (gal)	Royalties	41490517.11
-2007	WY	Lincoln	56023	Oil	Condensate (bbl)	Royalties	402511.63
-2007	WY	Lincoln	56023	Oil	Drip or Scrubber Condensate (bbl)	Royalties	5540.77
-2007	WY	Lincoln	56023	Oil	Inlet Scrubber (bbl)	Royalties	231.19
-2007	WY	Lincoln	56023	Oil	Oil (bbl)	Royalties	123588.69
-2007	WY	Lincoln	56023	Salt	Salt (ton)	Royalties	184500
-2007	WY	Lincoln	56023	Sulfur	Sulfur (lton)	Royalties	60605.15
-2007	WY	Natrona	56025	Gas	Coal Bed Methane (mcf)	Royalties	5839.01
-2007	WY	Natrona	56025	Gas	Processed (Residue) Gas (mcf)	Royalties	20385631.88
-2007	WY	Natrona	56025	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	8575616.7
-2007	WY	Natrona	56025	NGL	Gas Plant Products (gal)	Royalties	35294946.53
-2007	WY	Natrona	56025	Oil	Condensate (bbl)	Royalties	149679.58
-2007	WY	Natrona	56025	Oil	Oil (bbl)	Royalties	3592048.29
-2007	WY	Natrona	56025	Sulfur	Sulfur (lton)	Royalties	15019.42
-2007	WY	Niobrara	56027	Gas	Processed (Residue) Gas (mcf)	Royalties	409
-2007	WY	Niobrara	56027	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	652185.89
-2007	WY	Niobrara	56027	NGL	Gas Plant Products (gal)	Royalties	5814.52
-2007	WY	Niobrara	56027	Oil	Oil (bbl)	Royalties	293864.31
-2007	WY	Park	56029	Gas	Processed (Residue) Gas (mcf)	Royalties	3483161.14
-2007	WY	Park	56029	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2004250.38
-2007	WY	Park	56029	NGL	Gas Plant Products (gal)	Royalties	7930122.81
-2007	WY	Park	56029	Oil	Condensate (bbl)	Royalties	7506.09
-2007	WY	Park	56029	Oil	Drip or Scrubber Condensate (bbl)	Royalties	1199.25
-2007	WY	Park	56029	Oil	Oil (bbl)	Royalties	5887379.12
-2007	WY	Park	56029	Sulfur	Sulfur (lton)	Royalties	3824.23
-2007	WY	Sheridan	56033	Gas	Coal Bed Methane (mcf)	Royalties	8992235.01
-2007	WY	Sheridan	56033	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	48811.51
-2007	WY	Sheridan	56033	Oil	Oil (bbl)	Royalties	3127.31
-2007	WY	Sublette	56035	Gas	Coal Bed Methane (mcf)	Royalties	9346.78
-2007	WY	Sublette	56035	Gas	Processed (Residue) Gas (mcf)	Royalties	568348076.88
-2007	WY	Sublette	56035	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	189535366.37
-2007	WY	Sublette	56035	NGL	Gas Plant Products (gal)	Royalties	280171278.94
-2007	WY	Sublette	56035	Oil	Condensate (bbl)	Royalties	4837248.62
-2007	WY	Sublette	56035	Oil	Drip or Scrubber Condensate (bbl)	Royalties	2161.74
-2007	WY	Sublette	56035	Oil	Inlet Scrubber (bbl)	Royalties	15921.41
-2007	WY	Sublette	56035	Oil	Oil (bbl)	Royalties	1649950.72
-2007	WY	Sublette	56035	Oil	Other Liquid Hydrocarbons (bbl)	Royalties	4338.88
-2007	WY	Sublette	56035	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	71392980.47
-2007	WY	Sweetwater	56037	Coal	Coal (ton)	Royalties	2652717
-2007	WY	Sweetwater	56037	Gas	Coal Bed Methane (mcf)	Royalties	14246.47
-2007	WY	Sweetwater	56037	Gas	Fuel Gas (mcf)	Royalties	5527.97
-2007	WY	Sweetwater	56037	Gas	Processed (Residue) Gas (mcf)	Royalties	36067146.43
-2007	WY	Sweetwater	56037	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	86080552.96
-2007	WY	Sweetwater	56037	NGL	Gas Plant Products (gal)	Royalties	53898890.16
-2007	WY	Sweetwater	56037	Oil	Condensate (bbl)	Royalties	702910.11
-2007	WY	Sweetwater	56037	Oil	Drip or Scrubber Condensate (bbl)	Royalties	200.9
-2007	WY	Sweetwater	56037	Oil	Inlet Scrubber (bbl)	Royalties	18.27
-2007	WY	Sweetwater	56037	Oil	Oil (bbl)	Royalties	1889399.76
-2007	WY	Sweetwater	56037	Purge Liquor	Purge Liquor (ton)	Royalties	98707
-2007	WY	Sweetwater	56037	Soda Ash	Soda Ash (ton)	Royalties	5675354
-2007	WY	Sweetwater	56037	Sodium Bi-Carbonate	Sodium Bi-Carbonate (ton)	Royalties	49045
-2007	WY	Sweetwater	56037	Sodium Bisulfite	Sodium Bisulfite (ton)	Royalties	1455
-2007	WY	Sweetwater	56037	Sodium Sesquicarbonate	Sodium Sesquicarbonate (ton)	Royalties	102096
-2007	WY	Sweetwater	56037	Sulfide	Sulfide (ton)	Royalties	13936
-2007	WY	Sweetwater	56037	Sulfur	Sulfur (lton)	Royalties	8900.08
-2007	WY	Sweetwater	56037	Trona Ore	Trona Ore (ton)	Royalties	74050
-2007	WY	Uinta	56041	Gas	Nitrogen (mcf)	Royalties	9234.31
-2007	WY	Uinta	56041	Gas	Processed (Residue) Gas (mcf)	Royalties	17242262.24
-2007	WY	Uinta	56041	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	6442707.13
-2007	WY	Uinta	56041	NGL	Gas Plant Products (gal)	Royalties	51466690.84
-2007	WY	Uinta	56041	Oil	Condensate (bbl)	Royalties	261029.7
-2007	WY	Uinta	56041	Oil	Drip or Scrubber Condensate (bbl)	Royalties	102193.43
-2007	WY	Uinta	56041	Oil	Inlet Scrubber (bbl)	Royalties	234.54
-2007	WY	Uinta	56041	Oil	Oil (bbl)	Royalties	383122.77
-2007	WY	Uinta	56041	Sulfur	Sulfur (lton)	Royalties	52922.11
-2007	WY	Washakie	56043	Gas	Processed (Residue) Gas (mcf)	Royalties	477046.29
-2007	WY	Washakie	56043	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	583275.88
-2007	WY	Washakie	56043	NGL	Gas Plant Products (gal)	Royalties	1400489.89
-2007	WY	Washakie	56043	Oil	Condensate (bbl)	Royalties	8970.06
-2007	WY	Washakie	56043	Oil	Oil (bbl)	Royalties	600900.37
-2007	WY	Weston	56045	Gas	Processed (Residue) Gas (mcf)	Royalties	276435.23
-2007	WY	Weston	56045	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	641710.15
-2007	WY	Weston	56045	NGL	Gas Plant Products (gal)	Royalties	2622281.14
-2007	WY	Weston	56045	Oil	Oil (bbl)	Royalties	526607.38
-2008	WY	Albany	56001	Gas	Fuel Gas (mcf)	Royalties	3201
-2008	WY	Albany	56001	Oil	Oil (bbl)	Royalties	20813.11
-2008	WY	Big Horn	56003	Gas	Processed (Residue) Gas (mcf)	Royalties	656121.85
-2008	WY	Big Horn	56003	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1053854.72
-2008	WY	Big Horn	56003	NGL	Gas Plant Products (gal)	Royalties	1417421.3
-2008	WY	Big Horn	56003	Oil	Condensate (bbl)	Royalties	14191.27
-2008	WY	Big Horn	56003	Oil	Oil (bbl)	Royalties	817022
-2008	WY	Campbell	56005	Coal	Coal (ton)	Royalties	387109987.05
-2008	WY	Campbell	56005	Gas	Coal Bed Methane (mcf)	Royalties	76553651.59
-2008	WY	Campbell	56005	Gas	Fuel Gas (mcf)	Royalties	1688.87
-2008	WY	Campbell	56005	Gas	Processed (Residue) Gas (mcf)	Royalties	2545381.66
-2008	WY	Campbell	56005	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	10249742.62
-2008	WY	Campbell	56005	NGL	Gas Plant Products (gal)	Royalties	4413995.05
-2008	WY	Campbell	56005	Oil	Condensate (bbl)	Royalties	47890.91
-2008	WY	Campbell	56005	Oil	Oil (bbl)	Royalties	4312041.83
-2008	WY	Carbon	56007	Coal	Coal (ton)	Royalties	158476
-2008	WY	Carbon	56007	Gas	Coal Bed Methane (mcf)	Royalties	10852090.99
-2008	WY	Carbon	56007	Gas	Fuel Gas (mcf)	Royalties	4029.33
-2008	WY	Carbon	56007	Gas	Processed (Residue) Gas (mcf)	Royalties	13440565.98
-2008	WY	Carbon	56007	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	34902493.72
-2008	WY	Carbon	56007	NGL	Gas Plant Products (gal)	Royalties	50385326.58
-2008	WY	Carbon	56007	Oil	Condensate (bbl)	Royalties	417536.82
-2008	WY	Carbon	56007	Oil	Drip or Scrubber Condensate (bbl)	Royalties	72.94
-2008	WY	Carbon	56007	Oil	Oil (bbl)	Royalties	623794.32
-2008	WY	Converse	56009	Coal	Coal (ton)	Royalties	27571449.95
-2008	WY	Converse	56009	Gas	Coal Bed Methane (mcf)	Royalties	3831204.39
-2008	WY	Converse	56009	Gas	Processed (Residue) Gas (mcf)	Royalties	337892.93
-2008	WY	Converse	56009	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	4926420.57
-2008	WY	Converse	56009	NGL	Gas Plant Products (gal)	Royalties	747153.63
-2008	WY	Converse	56009	Oil	Condensate (bbl)	Royalties	49435.88
-2008	WY	Converse	56009	Oil	Inlet Scrubber (bbl)	Royalties	9.2
-2008	WY	Converse	56009	Oil	Oil (bbl)	Royalties	1405812.87
-2008	WY	Crook	56011	Gas	Fuel Gas (mcf)	Royalties	14188
-2008	WY	Crook	56011	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	5014
-2008	WY	Crook	56011	Oil	Condensate (bbl)	Royalties	222.37
-2008	WY	Crook	56011	Oil	Oil (bbl)	Royalties	1054563.88
-2008	WY	Fremont	56013	Gas	Coal Bed Methane (mcf)	Royalties	306117.01
-2008	WY	Fremont	56013	Gas	Fuel Gas (mcf)	Royalties	371562.72
-2008	WY	Fremont	56013	Gas	Processed (Residue) Gas (mcf)	Royalties	32559010.79
-2008	WY	Fremont	56013	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	36416487.34
-2008	WY	Fremont	56013	NGL	Gas Plant Products (gal)	Royalties	22484142.69
-2008	WY	Fremont	56013	Oil	Condensate (bbl)	Royalties	282682.75
-2008	WY	Fremont	56013	Oil	Drip or Scrubber Condensate (bbl)	Royalties	4320.16
-2008	WY	Fremont	56013	Oil	Oil (bbl)	Royalties	349642.85
-2008	WY	Fremont	56013	Sulfur	Sulfur (lton)	Royalties	239088.31
-2008	WY	Hot Springs	56017	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	274111.8
-2008	WY	Hot Springs	56017	NGL	Gas Plant Products (gal)	Royalties	93928.64
-2008	WY	Hot Springs	56017	Oil	Condensate (bbl)	Royalties	190.54
-2008	WY	Hot Springs	56017	Oil	Oil (bbl)	Royalties	2267050.81
-2008	WY	Johnson	56019	Gas	Coal Bed Methane (mcf)	Royalties	227202337.23
-2008	WY	Johnson	56019	Gas	Processed (Residue) Gas (mcf)	Royalties	205111.23
-2008	WY	Johnson	56019	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	311897.46
-2008	WY	Johnson	56019	NGL	Gas Plant Products (gal)	Royalties	2129.28
-2008	WY	Johnson	56019	Oil	Oil (bbl)	Royalties	844620.98
-2008	WY	Laramie	56021	Oil	Oil (bbl)	Royalties	18916.83
-2008	WY	Lincoln	56023	Coal	Coal (ton)	Royalties	548837
-2008	WY	Lincoln	56023	Gas	Fuel Gas (mcf)	Royalties	0.29
-2008	WY	Lincoln	56023	Gas	Processed (Residue) Gas (mcf)	Royalties	27662714.45
-2008	WY	Lincoln	56023	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	24181278.96
-2008	WY	Lincoln	56023	NGL	Gas Plant Products (gal)	Royalties	57231834.48
-2008	WY	Lincoln	56023	Oil	Condensate (bbl)	Royalties	416419.82
-2008	WY	Lincoln	56023	Oil	Drip or Scrubber Condensate (bbl)	Royalties	919.34
-2008	WY	Lincoln	56023	Oil	Inlet Scrubber (bbl)	Royalties	2428.16
-2008	WY	Lincoln	56023	Oil	Oil (bbl)	Royalties	121503.91
-2008	WY	Lincoln	56023	Salt	Salt (ton)	Royalties	127100
-2008	WY	Lincoln	56023	Sulfur	Sulfur (lton)	Royalties	51284.17
-2008	WY	Natrona	56025	Gas	Processed (Residue) Gas (mcf)	Royalties	16395285.65
-2008	WY	Natrona	56025	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	11476914.41
-2008	WY	Natrona	56025	NGL	Gas Plant Products (gal)	Royalties	31144431.24
-2008	WY	Natrona	56025	Oil	Condensate (bbl)	Royalties	148868.3
-2008	WY	Natrona	56025	Oil	Oil (bbl)	Royalties	3908817.56
-2008	WY	Natrona	56025	Sulfur	Sulfur (lton)	Royalties	19554.4
-2008	WY	Niobrara	56027	Gas	Processed (Residue) Gas (mcf)	Royalties	-1750.5
-2008	WY	Niobrara	56027	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	612114.86
-2008	WY	Niobrara	56027	NGL	Gas Plant Products (gal)	Royalties	14180.43
-2008	WY	Niobrara	56027	Oil	Oil (bbl)	Royalties	299439.24
-2008	WY	Park	56029	Gas	Processed (Residue) Gas (mcf)	Royalties	3219761.76
-2008	WY	Park	56029	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1484188.88
-2008	WY	Park	56029	NGL	Gas Plant Products (gal)	Royalties	8163936.49
-2008	WY	Park	56029	Oil	Condensate (bbl)	Royalties	4724.4
-2008	WY	Park	56029	Oil	Drip or Scrubber Condensate (bbl)	Royalties	1090.56
-2008	WY	Park	56029	Oil	Oil (bbl)	Royalties	5606148.35
-2008	WY	Park	56029	Sulfur	Sulfur (lton)	Royalties	4367.07
-2008	WY	Sheridan	56033	Gas	Coal Bed Methane (mcf)	Royalties	13081523.76
-2008	WY	Sheridan	56033	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	112175.95
-2008	WY	Sheridan	56033	Oil	Oil (bbl)	Royalties	5820.85
-2008	WY	Sublette	56035	Gas	Coal Bed Methane (mcf)	Royalties	63783.05
-2008	WY	Sublette	56035	Gas	Processed (Residue) Gas (mcf)	Royalties	840652002.94
-2008	WY	Sublette	56035	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	38941281.38
-2008	WY	Sublette	56035	NGL	Gas Plant Products (gal)	Royalties	348191346.32
-2008	WY	Sublette	56035	Oil	Condensate (bbl)	Royalties	5167869.32
-2008	WY	Sublette	56035	Oil	Drip or Scrubber Condensate (bbl)	Royalties	2103.9
-2008	WY	Sublette	56035	Oil	Inlet Scrubber (bbl)	Royalties	2820.62
-2008	WY	Sublette	56035	Oil	Oil (bbl)	Royalties	1867657.15
-2008	WY	Sublette	56035	Oil	Other Liquid Hydrocarbons (bbl)	Royalties	6737.87
-2008	WY	Sublette	56035	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	73764973.81
-2008	WY	Sweetwater	56037	Coal	Coal (ton)	Royalties	2330899
-2008	WY	Sweetwater	56037	Gas	Coal Bed Methane (mcf)	Royalties	11955.52
-2008	WY	Sweetwater	56037	Gas	Fuel Gas (mcf)	Royalties	2617.97
-2008	WY	Sweetwater	56037	Gas	Processed (Residue) Gas (mcf)	Royalties	29027451.02
-2008	WY	Sweetwater	56037	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	85366514.72
-2008	WY	Sweetwater	56037	NGL	Gas Plant Products (gal)	Royalties	57488949.25
-2008	WY	Sweetwater	56037	Oil	Condensate (bbl)	Royalties	697506.57
-2008	WY	Sweetwater	56037	Oil	Drip or Scrubber Condensate (bbl)	Royalties	-79.05
-2008	WY	Sweetwater	56037	Oil	Inlet Scrubber (bbl)	Royalties	156.15
-2008	WY	Sweetwater	56037	Oil	Oil (bbl)	Royalties	1692408.08
-2008	WY	Sweetwater	56037	Purge Liquor	Purge Liquor (ton)	Royalties	116333
-2008	WY	Sweetwater	56037	Soda Ash	Soda Ash (ton)	Royalties	7101305
-2008	WY	Sweetwater	56037	Sodium Bi-Carbonate	Sodium Bi-Carbonate (ton)	Royalties	38213
-2008	WY	Sweetwater	56037	Sodium Bisulfite	Sodium Bisulfite (ton)	Royalties	2242
-2008	WY	Sweetwater	56037	Sodium Sesquicarbonate	Sodium Sesquicarbonate (ton)	Royalties	82430
-2008	WY	Sweetwater	56037	Sulfide	Sulfide (ton)	Royalties	24850
-2008	WY	Sweetwater	56037	Sulfur	Sulfur (lton)	Royalties	4711.03
-2008	WY	Sweetwater	56037	Trona Ore	Trona Ore (ton)	Royalties	137476
-2008	WY	Uinta	56041	Gas	Processed (Residue) Gas (mcf)	Royalties	9742780.76
-2008	WY	Uinta	56041	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	8369383.91
-2008	WY	Uinta	56041	NGL	Gas Plant Products (gal)	Royalties	40920436.17
-2008	WY	Uinta	56041	Oil	Condensate (bbl)	Royalties	257775.22
-2008	WY	Uinta	56041	Oil	Drip or Scrubber Condensate (bbl)	Royalties	92548.88
-2008	WY	Uinta	56041	Oil	Inlet Scrubber (bbl)	Royalties	160.97
-2008	WY	Uinta	56041	Oil	Oil (bbl)	Royalties	308943.83
-2008	WY	Uinta	56041	Sulfur	Sulfur (lton)	Royalties	61661.46
-2008	WY	Washakie	56043	Gas	Processed (Residue) Gas (mcf)	Royalties	421223.33
-2008	WY	Washakie	56043	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	496960.69
-2008	WY	Washakie	56043	NGL	Gas Plant Products (gal)	Royalties	1246062.67
-2008	WY	Washakie	56043	Oil	Condensate (bbl)	Royalties	9413.14
-2008	WY	Washakie	56043	Oil	Oil (bbl)	Royalties	556089.58
-2008	WY	Weston	56045	Gas	Processed (Residue) Gas (mcf)	Royalties	245594.98
-2008	WY	Weston	56045	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	366217.32
-2008	WY	Weston	56045	NGL	Gas Plant Products (gal)	Royalties	2288785.23
-2008	WY	Weston	56045	Oil	Oil (bbl)	Royalties	469091.61
-2009	WY	Albany	56001	Gas	Fuel Gas (mcf)	Royalties	3336
-2009	WY	Albany	56001	Oil	Oil (bbl)	Royalties	25708.58
-2009	WY	Big Horn	56003	Gas	Processed (Residue) Gas (mcf)	Royalties	555160.98
-2009	WY	Big Horn	56003	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1124329.36
-2009	WY	Big Horn	56003	NGL	Gas Plant Products (gal)	Royalties	1150913.31
-2009	WY	Big Horn	56003	Oil	Condensate (bbl)	Royalties	13509.23
-2009	WY	Big Horn	56003	Oil	Oil (bbl)	Royalties	769060.89
-2009	WY	Campbell	56005	Coal	Coal (ton)	Royalties	359846462.14
-2009	WY	Campbell	56005	Gas	Coal Bed Methane (mcf)	Royalties	66852152.89
-2009	WY	Campbell	56005	Gas	Fuel Gas (mcf)	Royalties	1558.43
-2009	WY	Campbell	56005	Gas	Processed (Residue) Gas (mcf)	Royalties	2625082.01
-2009	WY	Campbell	56005	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	11057489.01
-2009	WY	Campbell	56005	NGL	Gas Plant Products (gal)	Royalties	2236171.11
-2009	WY	Campbell	56005	Oil	Condensate (bbl)	Royalties	41288.75
-2009	WY	Campbell	56005	Oil	Oil (bbl)	Royalties	3952303.88
-2009	WY	Carbon	56007	Coal	Coal (ton)	Royalties	120832
-2009	WY	Carbon	56007	Gas	Coal Bed Methane (mcf)	Royalties	6349765.07
-2009	WY	Carbon	56007	Gas	Fuel Gas (mcf)	Royalties	4578.18
-2009	WY	Carbon	56007	Gas	Processed (Residue) Gas (mcf)	Royalties	17811459.56
-2009	WY	Carbon	56007	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	36087357.93
-2009	WY	Carbon	56007	NGL	Gas Plant Products (gal)	Royalties	74225992.14
-2009	WY	Carbon	56007	Oil	Condensate (bbl)	Royalties	375776.56
-2009	WY	Carbon	56007	Oil	Drip or Scrubber Condensate (bbl)	Royalties	115.27
-2009	WY	Carbon	56007	Oil	Oil (bbl)	Royalties	627002.47
-2009	WY	Converse	56009	Coal	Coal (ton)	Royalties	27256701.86
-2009	WY	Converse	56009	Gas	Coal Bed Methane (mcf)	Royalties	2774947.01
-2009	WY	Converse	56009	Gas	Processed (Residue) Gas (mcf)	Royalties	262362.57
-2009	WY	Converse	56009	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	4230595.58
-2009	WY	Converse	56009	NGL	Gas Plant Products (gal)	Royalties	1151745.75
-2009	WY	Converse	56009	Oil	Condensate (bbl)	Royalties	44032.89
-2009	WY	Converse	56009	Oil	Inlet Scrubber (bbl)	Royalties	226.5
-2009	WY	Converse	56009	Oil	Oil (bbl)	Royalties	1513808.27
-2009	WY	Crook	56011	Gas	Fuel Gas (mcf)	Royalties	11370
-2009	WY	Crook	56011	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	4252
-2009	WY	Crook	56011	Oil	Condensate (bbl)	Royalties	255.67
-2009	WY	Crook	56011	Oil	Oil (bbl)	Royalties	979015.21
-2009	WY	Fremont	56013	Gas	Coal Bed Methane (mcf)	Royalties	841537.5
-2009	WY	Fremont	56013	Gas	Processed (Residue) Gas (mcf)	Royalties	61246732.83
-2009	WY	Fremont	56013	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	20683381.59
-2009	WY	Fremont	56013	NGL	Gas Plant Products (gal)	Royalties	23521515.47
-2009	WY	Fremont	56013	Oil	Condensate (bbl)	Royalties	257092.4
-2009	WY	Fremont	56013	Oil	Drip or Scrubber Condensate (bbl)	Royalties	3508.48
-2009	WY	Fremont	56013	Oil	Oil (bbl)	Royalties	416944.49
-2009	WY	Fremont	56013	Sulfur	Sulfur (lton)	Royalties	239002.19
-2009	WY	Hot Springs	56017	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	162044.57
-2009	WY	Hot Springs	56017	NGL	Gas Plant Products (gal)	Royalties	93550.64
-2009	WY	Hot Springs	56017	Oil	Condensate (bbl)	Royalties	218.79
-2009	WY	Hot Springs	56017	Oil	Oil (bbl)	Royalties	2096971.42
-2009	WY	Johnson	56019	Gas	Coal Bed Methane (mcf)	Royalties	272459834.96
-2009	WY	Johnson	56019	Gas	Processed (Residue) Gas (mcf)	Royalties	158117.96
-2009	WY	Johnson	56019	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	497487.74
-2009	WY	Johnson	56019	NGL	Gas Plant Products (gal)	Royalties	14452.08
-2009	WY	Johnson	56019	Oil	Oil (bbl)	Royalties	753592.11
-2009	WY	Laramie	56021	Oil	Oil (bbl)	Royalties	16727.02
-2009	WY	Lincoln	56023	Coal	Coal (ton)	Royalties	1516543
-2009	WY	Lincoln	56023	Gas	Processed (Residue) Gas (mcf)	Royalties	27684368.23
-2009	WY	Lincoln	56023	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	19433933.25
-2009	WY	Lincoln	56023	NGL	Gas Plant Products (gal)	Royalties	68037002.09
-2009	WY	Lincoln	56023	Oil	Condensate (bbl)	Royalties	348682.41
-2009	WY	Lincoln	56023	Oil	Inlet Scrubber (bbl)	Royalties	3116.16
-2009	WY	Lincoln	56023	Oil	Oil (bbl)	Royalties	149575.3
-2009	WY	Lincoln	56023	Salt	Salt (ton)	Royalties	143500
-2009	WY	Lincoln	56023	Sulfur	Sulfur (lton)	Royalties	25893.31
-2009	WY	Natrona	56025	Gas	Processed (Residue) Gas (mcf)	Royalties	13579221.04
-2009	WY	Natrona	56025	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	13247428.99
-2009	WY	Natrona	56025	NGL	Gas Plant Products (gal)	Royalties	28704096.68
-2009	WY	Natrona	56025	Oil	Condensate (bbl)	Royalties	115615.78
-2009	WY	Natrona	56025	Oil	Oil (bbl)	Royalties	4265396.81
-2009	WY	Natrona	56025	Sulfur	Sulfur (lton)	Royalties	19637.41
-2009	WY	Niobrara	56027	Gas	Processed (Residue) Gas (mcf)	Royalties	742
-2009	WY	Niobrara	56027	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	601644.26
-2009	WY	Niobrara	56027	NGL	Gas Plant Products (gal)	Royalties	9244.55
-2009	WY	Niobrara	56027	Oil	Oil (bbl)	Royalties	294703.55
-2009	WY	Park	56029	Gas	Processed (Residue) Gas (mcf)	Royalties	2483502.57
-2009	WY	Park	56029	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1071289.51
-2009	WY	Park	56029	NGL	Gas Plant Products (gal)	Royalties	7324130.5
-2009	WY	Park	56029	Oil	Condensate (bbl)	Royalties	4063.1
-2009	WY	Park	56029	Oil	Drip or Scrubber Condensate (bbl)	Royalties	731.96
-2009	WY	Park	56029	Oil	Oil (bbl)	Royalties	5196119.5
-2009	WY	Park	56029	Sulfur	Sulfur (lton)	Royalties	493.45
-2009	WY	Sheridan	56033	Gas	Coal Bed Methane (mcf)	Royalties	11336261
-2009	WY	Sheridan	56033	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	87384.46
-2009	WY	Sheridan	56033	Oil	Oil (bbl)	Royalties	6388.55
-2009	WY	Sublette	56035	Gas	Coal Bed Methane (mcf)	Royalties	82213.14
-2009	WY	Sublette	56035	Gas	Processed (Residue) Gas (mcf)	Royalties	770606891.3
-2009	WY	Sublette	56035	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	183712361.55
-2009	WY	Sublette	56035	NGL	Gas Plant Products (gal)	Royalties	241989601.21
-2009	WY	Sublette	56035	Oil	Condensate (bbl)	Royalties	5186513.13
-2009	WY	Sublette	56035	Oil	Drip or Scrubber Condensate (bbl)	Royalties	1939.53
-2009	WY	Sublette	56035	Oil	Inlet Scrubber (bbl)	Royalties	1293.73
-2009	WY	Sublette	56035	Oil	Oil (bbl)	Royalties	2130558.66
-2009	WY	Sublette	56035	Oil	Other Liquid Hydrocarbons (bbl)	Royalties	8500.42
-2009	WY	Sublette	56035	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	78285523.29
-2009	WY	Sweetwater	56037	Coal	Coal (ton)	Royalties	2007958
-2009	WY	Sweetwater	56037	Gas	Coal Bed Methane (mcf)	Royalties	2034.5
-2009	WY	Sweetwater	56037	Gas	Fuel Gas (mcf)	Royalties	22511.93
-2009	WY	Sweetwater	56037	Gas	Processed (Residue) Gas (mcf)	Royalties	22566477.13
-2009	WY	Sweetwater	56037	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	75519789.17
-2009	WY	Sweetwater	56037	NGL	Gas Plant Products (gal)	Royalties	72993367.81
-2009	WY	Sweetwater	56037	Oil	Condensate (bbl)	Royalties	702386.48
-2009	WY	Sweetwater	56037	Oil	Drip or Scrubber Condensate (bbl)	Royalties	-1580.77
-2009	WY	Sweetwater	56037	Oil	Inlet Scrubber (bbl)	Royalties	228.51
-2009	WY	Sweetwater	56037	Oil	Oil (bbl)	Royalties	1596192.19
-2009	WY	Sweetwater	56037	Purge Liquor	Purge Liquor (ton)	Royalties	118021
-2009	WY	Sweetwater	56037	Soda Ash	Soda Ash (ton)	Royalties	5570260
-2009	WY	Sweetwater	56037	Sodium Bi-Carbonate	Sodium Bi-Carbonate (ton)	Royalties	29729
-2009	WY	Sweetwater	56037	Sodium Bisulfite	Sodium Bisulfite (ton)	Royalties	931
-2009	WY	Sweetwater	56037	Sodium Sesquicarbonate	Sodium Sesquicarbonate (ton)	Royalties	60314
-2009	WY	Sweetwater	56037	Sulfide	Sulfide (ton)	Royalties	31532
-2009	WY	Sweetwater	56037	Sulfur	Sulfur (lton)	Royalties	390.3
-2009	WY	Sweetwater	56037	Trona Ore	Trona Ore (ton)	Royalties	136118
-2009	WY	Uinta	56041	Gas	Processed (Residue) Gas (mcf)	Royalties	7480914.2
-2009	WY	Uinta	56041	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	9866748.75
-2009	WY	Uinta	56041	NGL	Gas Plant Products (gal)	Royalties	35668494.96
-2009	WY	Uinta	56041	Oil	Condensate (bbl)	Royalties	246667.83
-2009	WY	Uinta	56041	Oil	Drip or Scrubber Condensate (bbl)	Royalties	75915.34
-2009	WY	Uinta	56041	Oil	Inlet Scrubber (bbl)	Royalties	233.06
-2009	WY	Uinta	56041	Oil	Oil (bbl)	Royalties	227232.58
-2009	WY	Uinta	56041	Sulfur	Sulfur (lton)	Royalties	17884
-2009	WY	Washakie	56043	Gas	Processed (Residue) Gas (mcf)	Royalties	393735.37
-2009	WY	Washakie	56043	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	412500.13
-2009	WY	Washakie	56043	NGL	Gas Plant Products (gal)	Royalties	1168997.03
-2009	WY	Washakie	56043	Oil	Condensate (bbl)	Royalties	8520.27
-2009	WY	Washakie	56043	Oil	Oil (bbl)	Royalties	493127.18
-2009	WY	Weston	56045	Gas	Processed (Residue) Gas (mcf)	Royalties	241756.49
-2009	WY	Weston	56045	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	550727.76
-2009	WY	Weston	56045	NGL	Gas Plant Products (gal)	Royalties	2295279.61
-2009	WY	Weston	56045	Oil	Condensate (bbl)	Royalties	244.58
-2009	WY	Weston	56045	Oil	Oil (bbl)	Royalties	477120.55
-2010	WY	Albany	56001	Gas	Fuel Gas (mcf)	Royalties	2654
-2010	WY	Albany	56001	Oil	Oil (bbl)	Royalties	26381.99
-2010	WY	Big Horn	56003	Gas	Processed (Residue) Gas (mcf)	Royalties	475904.47
-2010	WY	Big Horn	56003	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	977275.97
-2010	WY	Big Horn	56003	NGL	Gas Plant Products (gal)	Royalties	994418.07
-2010	WY	Big Horn	56003	Oil	Condensate (bbl)	Royalties	10791.07
-2010	WY	Big Horn	56003	Oil	Oil (bbl)	Royalties	724133.14
-2010	WY	Campbell	56005	Coal	Coal (ton)	Royalties	370952635.53
-2010	WY	Campbell	56005	Gas	Coal Bed Methane (mcf)	Royalties	68839543.09
-2010	WY	Campbell	56005	Gas	Fuel Gas (mcf)	Royalties	5.1
-2010	WY	Campbell	56005	Gas	Processed (Residue) Gas (mcf)	Royalties	542441.74
-2010	WY	Campbell	56005	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	12009573.58
-2010	WY	Campbell	56005	NGL	Gas Plant Products (gal)	Royalties	1782140.25
-2010	WY	Campbell	56005	Oil	Condensate (bbl)	Royalties	46113.72
-2010	WY	Campbell	56005	Oil	Oil (bbl)	Royalties	4261494.74
-2010	WY	Carbon	56007	Coal	Coal (ton)	Royalties	88970
-2010	WY	Carbon	56007	Gas	Coal Bed Methane (mcf)	Royalties	7464694.91
-2010	WY	Carbon	56007	Gas	Fuel Gas (mcf)	Royalties	7310.58
-2010	WY	Carbon	56007	Gas	Processed (Residue) Gas (mcf)	Royalties	32206398.13
-2010	WY	Carbon	56007	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	17115504.16
-2010	WY	Carbon	56007	NGL	Gas Plant Products (gal)	Royalties	114711839.19
-2010	WY	Carbon	56007	Oil	Condensate (bbl)	Royalties	362086.5
-2010	WY	Carbon	56007	Oil	Drip or Scrubber Condensate (bbl)	Royalties	189.68
-2010	WY	Carbon	56007	Oil	Oil (bbl)	Royalties	467228.96
-2010	WY	Converse	56009	Coal	Coal (ton)	Royalties	30049316.47
-2010	WY	Converse	56009	Gas	Coal Bed Methane (mcf)	Royalties	1945759.86
-2010	WY	Converse	56009	Gas	Processed (Residue) Gas (mcf)	Royalties	208178.24
-2010	WY	Converse	56009	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3881000.63
-2010	WY	Converse	56009	NGL	Gas Plant Products (gal)	Royalties	785177.53
-2010	WY	Converse	56009	Oil	Condensate (bbl)	Royalties	44418.65
-2010	WY	Converse	56009	Oil	Inlet Scrubber (bbl)	Royalties	268.16
-2010	WY	Converse	56009	Oil	Oil (bbl)	Royalties	1294080.84
-2010	WY	Crook	56011	Gas	Fuel Gas (mcf)	Royalties	14451
-2010	WY	Crook	56011	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	4843
-2010	WY	Crook	56011	Oil	Condensate (bbl)	Royalties	512.85
-2010	WY	Crook	56011	Oil	Oil (bbl)	Royalties	969523.73
-2010	WY	Fremont	56013	Gas	Coal Bed Methane (mcf)	Royalties	1031450.44
-2010	WY	Fremont	56013	Gas	Processed (Residue) Gas (mcf)	Royalties	48581268.59
-2010	WY	Fremont	56013	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	23908668.79
-2010	WY	Fremont	56013	NGL	Gas Plant Products (gal)	Royalties	21859657.1
-2010	WY	Fremont	56013	Oil	Condensate (bbl)	Royalties	219813.42
-2010	WY	Fremont	56013	Oil	Drip or Scrubber Condensate (bbl)	Royalties	8470.45
-2010	WY	Fremont	56013	Oil	Oil (bbl)	Royalties	638678.88
-2010	WY	Fremont	56013	Sulfur	Sulfur (lton)	Royalties	270944.31
-2010	WY	Hot Springs	56017	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	105412.39
-2010	WY	Hot Springs	56017	NGL	Gas Plant Products (gal)	Royalties	78646.48
-2010	WY	Hot Springs	56017	Oil	Oil (bbl)	Royalties	2015603.21
-2010	WY	Johnson	56019	Gas	Coal Bed Methane (mcf)	Royalties	273497426.73
-2010	WY	Johnson	56019	Gas	Processed (Residue) Gas (mcf)	Royalties	154775.43
-2010	WY	Johnson	56019	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	677053.77
-2010	WY	Johnson	56019	NGL	Gas Plant Products (gal)	Royalties	10080.64
-2010	WY	Johnson	56019	Oil	Oil (bbl)	Royalties	699350.3
-2010	WY	Laramie	56021	Oil	Oil (bbl)	Royalties	15962.85
-2010	WY	Lincoln	56023	Coal	Coal (ton)	Royalties	1481457
-2010	WY	Lincoln	56023	Gas	Processed (Residue) Gas (mcf)	Royalties	25454234.35
-2010	WY	Lincoln	56023	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	17740533.12
-2010	WY	Lincoln	56023	NGL	Gas Plant Products (gal)	Royalties	62442990.46
-2010	WY	Lincoln	56023	Oil	Condensate (bbl)	Royalties	326031.6
-2010	WY	Lincoln	56023	Oil	Inlet Scrubber (bbl)	Royalties	2493.26
-2010	WY	Lincoln	56023	Oil	Oil (bbl)	Royalties	120609.48
-2010	WY	Lincoln	56023	Salt	Salt (ton)	Royalties	172200
-2010	WY	Lincoln	56023	Sulfur	Sulfur (lton)	Royalties	48722.61
-2010	WY	Natrona	56025	Gas	Processed (Residue) Gas (mcf)	Royalties	13335804.66
-2010	WY	Natrona	56025	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	9224285.75
-2010	WY	Natrona	56025	NGL	Gas Plant Products (gal)	Royalties	25711639.55
-2010	WY	Natrona	56025	Oil	Condensate (bbl)	Royalties	125808.82
-2010	WY	Natrona	56025	Oil	Oil (bbl)	Royalties	4883111.45
-2010	WY	Natrona	56025	Sulfur	Sulfur (lton)	Royalties	22262.52
-2010	WY	Niobrara	56027	Gas	Processed (Residue) Gas (mcf)	Royalties	824.32
-2010	WY	Niobrara	56027	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	589434.07
-2010	WY	Niobrara	56027	NGL	Gas Plant Products (gal)	Royalties	12109
-2010	WY	Niobrara	56027	Oil	Oil (bbl)	Royalties	337834.84
-2010	WY	Park	56029	Gas	Processed (Residue) Gas (mcf)	Royalties	2241386.36
-2010	WY	Park	56029	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	841908.05
-2010	WY	Park	56029	NGL	Gas Plant Products (gal)	Royalties	6839784.51
-2010	WY	Park	56029	Oil	Condensate (bbl)	Royalties	5980.14
-2010	WY	Park	56029	Oil	Drip or Scrubber Condensate (bbl)	Royalties	534.05
-2010	WY	Park	56029	Oil	Oil (bbl)	Royalties	4977174.22
-2010	WY	Park	56029	Sulfur	Sulfur (lton)	Royalties	3905.85
-2010	WY	Sheridan	56033	Gas	Coal Bed Methane (mcf)	Royalties	9155018.73
-2010	WY	Sheridan	56033	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	72399.22
-2010	WY	Sheridan	56033	Oil	Oil (bbl)	Royalties	5402.94
-2010	WY	Sublette	56035	Gas	Coal Bed Methane (mcf)	Royalties	64573.55
-2010	WY	Sublette	56035	Gas	Fuel Gas (mcf)	Royalties	10127.71
-2010	WY	Sublette	56035	Gas	Processed (Residue) Gas (mcf)	Royalties	596655009.1
-2010	WY	Sublette	56035	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	251288382.09
-2010	WY	Sublette	56035	NGL	Gas Plant Products (gal)	Royalties	1038473819.56
-2010	WY	Sublette	56035	Oil	Condensate (bbl)	Royalties	4841862.16
-2010	WY	Sublette	56035	Oil	Drip or Scrubber Condensate (bbl)	Royalties	1841.39
-2010	WY	Sublette	56035	Oil	Inlet Scrubber (bbl)	Royalties	3928.72
-2010	WY	Sublette	56035	Oil	Oil (bbl)	Royalties	2224022.23
-2010	WY	Sublette	56035	Oil	Other Liquid Hydrocarbons (bbl)	Royalties	5418.8
-2010	WY	Sublette	56035	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	81634457.5
-2010	WY	Sweetwater	56037	Coal	Coal (ton)	Royalties	2104983
-2010	WY	Sweetwater	56037	Gas	Fuel Gas (mcf)	Royalties	35168.6
-2010	WY	Sweetwater	56037	Gas	Processed (Residue) Gas (mcf)	Royalties	35057897.41
-2010	WY	Sweetwater	56037	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	75622897.36
-2010	WY	Sweetwater	56037	NGL	Gas Plant Products (gal)	Royalties	102350816.31
-2010	WY	Sweetwater	56037	Oil	Condensate (bbl)	Royalties	733663.37
-2010	WY	Sweetwater	56037	Oil	Drip or Scrubber Condensate (bbl)	Royalties	936.26
-2010	WY	Sweetwater	56037	Oil	Inlet Scrubber (bbl)	Royalties	246.29
-2010	WY	Sweetwater	56037	Oil	Oil (bbl)	Royalties	1526186.88
-2010	WY	Sweetwater	56037	Purge Liquor	Purge Liquor (ton)	Royalties	108835
-2010	WY	Sweetwater	56037	Soda Ash	Soda Ash (ton)	Royalties	5171046
-2010	WY	Sweetwater	56037	Sodium Bi-Carbonate	Sodium Bi-Carbonate (ton)	Royalties	51135
-2010	WY	Sweetwater	56037	Sodium Bisulfite	Sodium Bisulfite (ton)	Royalties	705
-2010	WY	Sweetwater	56037	Sodium Sesquicarbonate	Sodium Sesquicarbonate (ton)	Royalties	89071
-2010	WY	Sweetwater	56037	Sulfide	Sulfide (ton)	Royalties	22152
-2010	WY	Sweetwater	56037	Sulfur	Sulfur (lton)	Royalties	9247.87
-2010	WY	Sweetwater	56037	Trona Ore	Trona Ore (ton)	Royalties	117377
-2010	WY	Uinta	56041	Gas	Processed (Residue) Gas (mcf)	Royalties	7620786.89
-2010	WY	Uinta	56041	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	9672248.57
-2010	WY	Uinta	56041	NGL	Gas Plant Products (gal)	Royalties	38626006.7
-2010	WY	Uinta	56041	Oil	Condensate (bbl)	Royalties	250142.21
-2010	WY	Uinta	56041	Oil	Drip or Scrubber Condensate (bbl)	Royalties	62308.63
-2010	WY	Uinta	56041	Oil	Inlet Scrubber (bbl)	Royalties	188.46
-2010	WY	Uinta	56041	Oil	Oil (bbl)	Royalties	224148.07
-2010	WY	Uinta	56041	Sulfur	Sulfur (lton)	Royalties	72051.79
-2010	WY	Washakie	56043	Gas	Processed (Residue) Gas (mcf)	Royalties	355903.57
-2010	WY	Washakie	56043	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	370650.36
-2010	WY	Washakie	56043	NGL	Gas Plant Products (gal)	Royalties	1039182.04
-2010	WY	Washakie	56043	Oil	Condensate (bbl)	Royalties	7452
-2010	WY	Washakie	56043	Oil	Oil (bbl)	Royalties	496891.05
-2010	WY	Weston	56045	Gas	Processed (Residue) Gas (mcf)	Royalties	217993.82
-2010	WY	Weston	56045	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	556178.48
-2010	WY	Weston	56045	NGL	Gas Plant Products (gal)	Royalties	2078771.78
-2010	WY	Weston	56045	Oil	Oil (bbl)	Royalties	401869.03
-2011	WY	Albany	56001	Gas	Fuel Gas (mcf)	Royalties	3633
-2011	WY	Albany	56001	Oil	Oil (bbl)	Royalties	27552.96
-2011	WY	Big Horn	56003	Gas	Processed (Residue) Gas (mcf)	Royalties	421160.8
-2011	WY	Big Horn	56003	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	912131.72
-2011	WY	Big Horn	56003	NGL	Gas Plant Products (gal)	Royalties	971235.27
-2011	WY	Big Horn	56003	Oil	Condensate (bbl)	Royalties	11959.85
-2011	WY	Big Horn	56003	Oil	Oil (bbl)	Royalties	644192.81
-2011	WY	Campbell	56005	Coal	Coal (ton)	Royalties	356816296.03
-2011	WY	Campbell	56005	Gas	Coal Bed Methane (mcf)	Royalties	66823208.4
-2011	WY	Campbell	56005	Gas	Fuel Gas (mcf)	Royalties	664.72
-2011	WY	Campbell	56005	Gas	Processed (Residue) Gas (mcf)	Royalties	870043.2
-2011	WY	Campbell	56005	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	14060509.39
-2011	WY	Campbell	56005	NGL	Gas Plant Products (gal)	Royalties	1986604.65
-2011	WY	Campbell	56005	Oil	Condensate (bbl)	Royalties	159758.84
-2011	WY	Campbell	56005	Oil	Oil (bbl)	Royalties	3936956.95
-2011	WY	Carbon	56007	Coal	Coal (ton)	Royalties	81565
-2011	WY	Carbon	56007	Gas	Coal Bed Methane (mcf)	Royalties	15657847.44
-2011	WY	Carbon	56007	Gas	Fuel Gas (mcf)	Royalties	5377.81
-2011	WY	Carbon	56007	Gas	Processed (Residue) Gas (mcf)	Royalties	27099745.4
-2011	WY	Carbon	56007	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	9216138.38
-2011	WY	Carbon	56007	NGL	Gas Plant Products (gal)	Royalties	107175577.34
-2011	WY	Carbon	56007	Oil	Condensate (bbl)	Royalties	310696.22
-2011	WY	Carbon	56007	Oil	Drip or Scrubber Condensate (bbl)	Royalties	558.26
-2011	WY	Carbon	56007	Oil	Oil (bbl)	Royalties	485295.33
-2011	WY	Converse	56009	Coal	Coal (ton)	Royalties	30166849.97
-2011	WY	Converse	56009	Gas	Coal Bed Methane (mcf)	Royalties	1356380.8
-2011	WY	Converse	56009	Gas	Processed (Residue) Gas (mcf)	Royalties	215122.41
-2011	WY	Converse	56009	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3766024.09
-2011	WY	Converse	56009	NGL	Gas Plant Products (gal)	Royalties	787114.82
-2011	WY	Converse	56009	Oil	Condensate (bbl)	Royalties	39153.52
-2011	WY	Converse	56009	Oil	Inlet Scrubber (bbl)	Royalties	145.38
-2011	WY	Converse	56009	Oil	Oil (bbl)	Royalties	1650315.96
-2011	WY	Crook	56011	Gas	Fuel Gas (mcf)	Royalties	5489
-2011	WY	Crook	56011	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	4792
-2011	WY	Crook	56011	Oil	Condensate (bbl)	Royalties	759.91
-2011	WY	Crook	56011	Oil	Oil (bbl)	Royalties	788025.6
-2011	WY	Fremont	56013	Gas	Coal Bed Methane (mcf)	Royalties	1400596.49
-2011	WY	Fremont	56013	Gas	Processed (Residue) Gas (mcf)	Royalties	51252190.71
-2011	WY	Fremont	56013	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	23109263.05
-2011	WY	Fremont	56013	NGL	Gas Plant Products (gal)	Royalties	24141076.9
-2011	WY	Fremont	56013	Oil	Condensate (bbl)	Royalties	201328.15
-2011	WY	Fremont	56013	Oil	Drip or Scrubber Condensate (bbl)	Royalties	15431.6
-2011	WY	Fremont	56013	Oil	Oil (bbl)	Royalties	720182.69
-2011	WY	Fremont	56013	Sulfur	Sulfur (lton)	Royalties	294756.34
-2011	WY	Hot Springs	56017	Gas	Processed (Residue) Gas (mcf)	Royalties	60660.56
-2011	WY	Hot Springs	56017	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	28621.08
-2011	WY	Hot Springs	56017	NGL	Gas Plant Products (gal)	Royalties	78910.16
-2011	WY	Hot Springs	56017	Oil	Condensate (bbl)	Royalties	78.56
-2011	WY	Hot Springs	56017	Oil	Oil (bbl)	Royalties	1923336.65
-2011	WY	Johnson	56019	Gas	Coal Bed Methane (mcf)	Royalties	245812707.27
-2011	WY	Johnson	56019	Gas	Processed (Residue) Gas (mcf)	Royalties	154267.15
-2011	WY	Johnson	56019	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	887739.41
-2011	WY	Johnson	56019	NGL	Gas Plant Products (gal)	Royalties	15924.4
-2011	WY	Johnson	56019	Oil	Oil (bbl)	Royalties	647693.51
-2011	WY	Laramie	56021	Oil	Oil (bbl)	Royalties	14763.87
-2011	WY	Lincoln	56023	Coal	Coal (ton)	Royalties	1179199
-2011	WY	Lincoln	56023	Gas	Fuel Gas (mcf)	Royalties	0.82
-2011	WY	Lincoln	56023	Gas	Processed (Residue) Gas (mcf)	Royalties	21713634.12
-2011	WY	Lincoln	56023	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	15339978.82
-2011	WY	Lincoln	56023	NGL	Gas Plant Products (gal)	Royalties	56968437.84
-2011	WY	Lincoln	56023	Oil	Condensate (bbl)	Royalties	197359
-2011	WY	Lincoln	56023	Oil	Drip or Scrubber Condensate (bbl)	Royalties	70261.98
-2011	WY	Lincoln	56023	Oil	Inlet Scrubber (bbl)	Royalties	1766.22
-2011	WY	Lincoln	56023	Oil	Oil (bbl)	Royalties	103930.04
-2011	WY	Lincoln	56023	Salt	Salt (ton)	Royalties	291140
-2011	WY	Lincoln	56023	Sulfur	Sulfur (lton)	Royalties	48060.34
-2011	WY	Natrona	56025	Gas	Processed (Residue) Gas (mcf)	Royalties	12313541.64
-2011	WY	Natrona	56025	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	7490776.64
-2011	WY	Natrona	56025	NGL	Gas Plant Products (gal)	Royalties	21166406.39
-2011	WY	Natrona	56025	Oil	Condensate (bbl)	Royalties	118880.18
-2011	WY	Natrona	56025	Oil	Oil (bbl)	Royalties	4856684.6
-2011	WY	Natrona	56025	Sulfur	Sulfur (lton)	Royalties	24212.46
-2011	WY	Niobrara	56027	Gas	Processed (Residue) Gas (mcf)	Royalties	1459.62
-2011	WY	Niobrara	56027	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	492109.86
-2011	WY	Niobrara	56027	NGL	Gas Plant Products (gal)	Royalties	9225
-2011	WY	Niobrara	56027	Oil	Oil (bbl)	Royalties	427148.38
-2011	WY	Park	56029	Gas	Processed (Residue) Gas (mcf)	Royalties	2331372.54
-2011	WY	Park	56029	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	301082.46
-2011	WY	Park	56029	NGL	Gas Plant Products (gal)	Royalties	8429811.17
-2011	WY	Park	56029	Oil	Condensate (bbl)	Royalties	5718.86
-2011	WY	Park	56029	Oil	Drip or Scrubber Condensate (bbl)	Royalties	576.98
-2011	WY	Park	56029	Oil	Oil (bbl)	Royalties	4772263.1
-2011	WY	Park	56029	Sulfur	Sulfur (lton)	Royalties	3294.06
-2011	WY	Sheridan	56033	Gas	Coal Bed Methane (mcf)	Royalties	6991301.42
-2011	WY	Sheridan	56033	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	39430.15
-2011	WY	Sheridan	56033	Oil	Oil (bbl)	Royalties	3661.9
-2011	WY	Sublette	56035	Gas	Coal Bed Methane (mcf)	Royalties	54114.89
-2011	WY	Sublette	56035	Gas	Fuel Gas (mcf)	Royalties	332020.85
-2011	WY	Sublette	56035	Gas	Processed (Residue) Gas (mcf)	Royalties	605002751.95
-2011	WY	Sublette	56035	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	195766693.98
-2011	WY	Sublette	56035	NGL	Gas Plant Products (gal)	Royalties	1073371680.93
-2011	WY	Sublette	56035	Oil	Condensate (bbl)	Royalties	4401817.29
-2011	WY	Sublette	56035	Oil	Drip or Scrubber Condensate (bbl)	Royalties	1807.5
-2011	WY	Sublette	56035	Oil	Inlet Scrubber (bbl)	Royalties	242.15
-2011	WY	Sublette	56035	Oil	Oil (bbl)	Royalties	2405423.48
-2011	WY	Sublette	56035	Oil	Other Liquid Hydrocarbons (bbl)	Royalties	2715.44
-2011	WY	Sublette	56035	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	85435204.88
-2011	WY	Sweetwater	56037	Coal	Coal (ton)	Royalties	2665038
-2011	WY	Sweetwater	56037	Gas	Fuel Gas (mcf)	Royalties	109836.82
-2011	WY	Sweetwater	56037	Gas	Processed (Residue) Gas (mcf)	Royalties	35224990.57
-2011	WY	Sweetwater	56037	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	62065462.44
-2011	WY	Sweetwater	56037	NGL	Gas Plant Products (gal)	Royalties	126559650.6
-2011	WY	Sweetwater	56037	Oil	Condensate (bbl)	Royalties	804726.02
-2011	WY	Sweetwater	56037	Oil	Drip or Scrubber Condensate (bbl)	Royalties	2829.3
-2011	WY	Sweetwater	56037	Oil	Inlet Scrubber (bbl)	Royalties	249.02
-2011	WY	Sweetwater	56037	Oil	Oil (bbl)	Royalties	1631699.56
-2011	WY	Sweetwater	56037	Purge Liquor	Purge Liquor (ton)	Royalties	104745
-2011	WY	Sweetwater	56037	Soda Ash	Soda Ash (ton)	Royalties	6926730
-2011	WY	Sweetwater	56037	Sodium Bi-Carbonate	Sodium Bi-Carbonate (ton)	Royalties	85115
-2011	WY	Sweetwater	56037	Sodium Bisulfite	Sodium Bisulfite (ton)	Royalties	1927
-2011	WY	Sweetwater	56037	Sodium Sesquicarbonate	Sodium Sesquicarbonate (ton)	Royalties	105102
-2011	WY	Sweetwater	56037	Sulfide	Sulfide (ton)	Royalties	51234
-2011	WY	Sweetwater	56037	Sulfur	Sulfur (lton)	Royalties	4006.76
-2011	WY	Sweetwater	56037	Trona Ore	Trona Ore (ton)	Royalties	240887
-2011	WY	Uinta	56041	Gas	Processed (Residue) Gas (mcf)	Royalties	6259385.6
-2011	WY	Uinta	56041	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	9199026.84
-2011	WY	Uinta	56041	NGL	Gas Plant Products (gal)	Royalties	33864373.06
-2011	WY	Uinta	56041	Oil	Condensate (bbl)	Royalties	187170.15
-2011	WY	Uinta	56041	Oil	Drip or Scrubber Condensate (bbl)	Royalties	12671.65
-2011	WY	Uinta	56041	Oil	Inlet Scrubber (bbl)	Royalties	169.74
-2011	WY	Uinta	56041	Oil	Oil (bbl)	Royalties	277670.48
-2011	WY	Uinta	56041	Sulfur	Sulfur (lton)	Royalties	85761.21
-2011	WY	Washakie	56043	Gas	Processed (Residue) Gas (mcf)	Royalties	308053.82
-2011	WY	Washakie	56043	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	346227.83
-2011	WY	Washakie	56043	NGL	Gas Plant Products (gal)	Royalties	953533.67
-2011	WY	Washakie	56043	Oil	Condensate (bbl)	Royalties	7851.98
-2011	WY	Washakie	56043	Oil	Oil (bbl)	Royalties	457732.59
-2011	WY	Weston	56045	Gas	Processed (Residue) Gas (mcf)	Royalties	216877.52
-2011	WY	Weston	56045	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	429475.43
-2011	WY	Weston	56045	NGL	Gas Plant Products (gal)	Royalties	2093180.65
-2011	WY	Weston	56045	Oil	Oil (bbl)	Royalties	362871.15
-2012	WY	Albany	56001	Gas	Fuel Gas (mcf)	Royalties	2841
-2012	WY	Albany	56001	Oil	Oil (bbl)	Royalties	28066.08
-2012	WY	Big Horn	56003	Gas	Processed (Residue) Gas (mcf)	Royalties	364754.54
-2012	WY	Big Horn	56003	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	821847.49
-2012	WY	Big Horn	56003	NGL	Gas Plant Products (gal)	Royalties	873928.91
-2012	WY	Big Horn	56003	Oil	Condensate (bbl)	Royalties	8152.56
-2012	WY	Big Horn	56003	Oil	Oil (bbl)	Royalties	620728.67
-2012	WY	Campbell	56005	Coal	Coal (ton)	Royalties	317301657.35
-2012	WY	Campbell	56005	Gas	Coal Bed Methane (mcf)	Royalties	57352032.27
-2012	WY	Campbell	56005	Gas	Processed (Residue) Gas (mcf)	Royalties	417586.55
-2012	WY	Campbell	56005	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	14420016.52
-2012	WY	Campbell	56005	NGL	Gas Plant Products (gal)	Royalties	2266191.51
-2012	WY	Campbell	56005	Oil	Condensate (bbl)	Royalties	269829.06
-2012	WY	Campbell	56005	Oil	Oil (bbl)	Royalties	3873560.54
-2012	WY	Carbon	56007	Coal	Coal (ton)	Royalties	21343
-2012	WY	Carbon	56007	Gas	Coal Bed Methane (mcf)	Royalties	15864226.95
-2012	WY	Carbon	56007	Gas	Fuel Gas (mcf)	Royalties	4315.89
-2012	WY	Carbon	56007	Gas	Processed (Residue) Gas (mcf)	Royalties	24601592.38
-2012	WY	Carbon	56007	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	9640137.51
-2012	WY	Carbon	56007	NGL	Gas Plant Products (gal)	Royalties	94611177.48
-2012	WY	Carbon	56007	Oil	Condensate (bbl)	Royalties	325166.54
-2012	WY	Carbon	56007	Oil	Drip or Scrubber Condensate (bbl)	Royalties	6836.61
-2012	WY	Carbon	56007	Oil	Oil (bbl)	Royalties	531418.61
-2012	WY	Converse	56009	Coal	Coal (ton)	Royalties	32477320.65
-2012	WY	Converse	56009	Gas	Coal Bed Methane (mcf)	Royalties	885189.51
-2012	WY	Converse	56009	Gas	Processed (Residue) Gas (mcf)	Royalties	583563.32
-2012	WY	Converse	56009	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	4293911.7
-2012	WY	Converse	56009	NGL	Gas Plant Products (gal)	Royalties	2539218.3
-2012	WY	Converse	56009	Oil	Condensate (bbl)	Royalties	111305.51
-2012	WY	Converse	56009	Oil	Inlet Scrubber (bbl)	Royalties	127.69
-2012	WY	Converse	56009	Oil	Oil (bbl)	Royalties	2167372.34
-2012	WY	Crook	56011	Gas	Fuel Gas (mcf)	Royalties	15005
-2012	WY	Crook	56011	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	4230
-2012	WY	Crook	56011	Oil	Condensate (bbl)	Royalties	498.76
-2012	WY	Crook	56011	Oil	Oil (bbl)	Royalties	770011.85
-2012	WY	Fremont	56013	Gas	Coal Bed Methane (mcf)	Royalties	357913.73
-2012	WY	Fremont	56013	Gas	Processed (Residue) Gas (mcf)	Royalties	49925663
-2012	WY	Fremont	56013	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	19643564.24
-2012	WY	Fremont	56013	NGL	Gas Plant Products (gal)	Royalties	29804166.75
-2012	WY	Fremont	56013	Oil	Condensate (bbl)	Royalties	279535.06
-2012	WY	Fremont	56013	Oil	Drip or Scrubber Condensate (bbl)	Royalties	4901.04
-2012	WY	Fremont	56013	Oil	Oil (bbl)	Royalties	1053926.56
-2012	WY	Fremont	56013	Sulfur	Sulfur (lton)	Royalties	268624.34
-2012	WY	Hot Springs	56017	Gas	Processed (Residue) Gas (mcf)	Royalties	61758
-2012	WY	Hot Springs	56017	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	14163.48
-2012	WY	Hot Springs	56017	NGL	Gas Plant Products (gal)	Royalties	81283.68
-2012	WY	Hot Springs	56017	Oil	Oil (bbl)	Royalties	1864228.44
-2012	WY	Johnson	56019	Gas	Coal Bed Methane (mcf)	Royalties	208852800.31
-2012	WY	Johnson	56019	Gas	Processed (Residue) Gas (mcf)	Royalties	27517.88
-2012	WY	Johnson	56019	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	989276.95
-2012	WY	Johnson	56019	NGL	Gas Plant Products (gal)	Royalties	16300.08
-2012	WY	Johnson	56019	Oil	Oil (bbl)	Royalties	748292.52
-2012	WY	Laramie	56021	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	579.34
-2012	WY	Laramie	56021	Oil	Oil (bbl)	Royalties	14838
-2012	WY	Lincoln	56023	Coal	Coal (ton)	Royalties	1429958
-2012	WY	Lincoln	56023	Gas	Fuel Gas (mcf)	Royalties	0.38
-2012	WY	Lincoln	56023	Gas	Processed (Residue) Gas (mcf)	Royalties	20607194.73
-2012	WY	Lincoln	56023	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	13994241.73
-2012	WY	Lincoln	56023	NGL	Gas Plant Products (gal)	Royalties	55941012.02
-2012	WY	Lincoln	56023	Oil	Condensate (bbl)	Royalties	196571.97
-2012	WY	Lincoln	56023	Oil	Drip or Scrubber Condensate (bbl)	Royalties	51278.31
-2012	WY	Lincoln	56023	Oil	Inlet Scrubber (bbl)	Royalties	1396.93
-2012	WY	Lincoln	56023	Oil	Oil (bbl)	Royalties	102540.27
-2012	WY	Lincoln	56023	Salt	Salt (ton)	Royalties	172200
-2012	WY	Lincoln	56023	Sulfur	Sulfur (lton)	Royalties	41291.3
-2012	WY	Natrona	56025	Gas	Processed (Residue) Gas (mcf)	Royalties	12058478.83
-2012	WY	Natrona	56025	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	6462288.94
-2012	WY	Natrona	56025	NGL	Gas Plant Products (gal)	Royalties	23345102.2
-2012	WY	Natrona	56025	Oil	Condensate (bbl)	Royalties	145764.49
-2012	WY	Natrona	56025	Oil	Oil (bbl)	Royalties	4298813.23
-2012	WY	Natrona	56025	Sulfur	Sulfur (lton)	Royalties	22071.86
-2012	WY	Niobrara	56027	Gas	Processed (Residue) Gas (mcf)	Royalties	583.25
-2012	WY	Niobrara	56027	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	330728.17
-2012	WY	Niobrara	56027	NGL	Gas Plant Products (gal)	Royalties	9210.5
-2012	WY	Niobrara	56027	Oil	Condensate (bbl)	Royalties	24222.74
-2012	WY	Niobrara	56027	Oil	Oil (bbl)	Royalties	433072.04
-2012	WY	Park	56029	Gas	Processed (Residue) Gas (mcf)	Royalties	2198726.21
-2012	WY	Park	56029	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	276327.86
-2012	WY	Park	56029	NGL	Gas Plant Products (gal)	Royalties	7798498.22
-2012	WY	Park	56029	Oil	Condensate (bbl)	Royalties	2907.4
-2012	WY	Park	56029	Oil	Drip or Scrubber Condensate (bbl)	Royalties	508.14
-2012	WY	Park	56029	Oil	Oil (bbl)	Royalties	4809018.72
-2012	WY	Park	56029	Sulfur	Sulfur (lton)	Royalties	3042.8
-2012	WY	Sheridan	56033	Gas	Coal Bed Methane (mcf)	Royalties	5626649.41
-2012	WY	Sheridan	56033	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	138816
-2012	WY	Sheridan	56033	Oil	Oil (bbl)	Royalties	2391.17
-2012	WY	Sublette	56035	Gas	Coal Bed Methane (mcf)	Royalties	54783.02
-2012	WY	Sublette	56035	Gas	Flash Gas (mcf)	Royalties	23255
-2012	WY	Sublette	56035	Gas	Fuel Gas (mcf)	Royalties	1452061.39
-2012	WY	Sublette	56035	Gas	Processed (Residue) Gas (mcf)	Royalties	559966522.39
-2012	WY	Sublette	56035	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	190044345.91
-2012	WY	Sublette	56035	NGL	Gas Plant Products (gal)	Royalties	958084225.61
-2012	WY	Sublette	56035	Oil	Condensate (bbl)	Royalties	4084475.29
-2012	WY	Sublette	56035	Oil	Drip or Scrubber Condensate (bbl)	Royalties	1199.69
-2012	WY	Sublette	56035	Oil	Oil (bbl)	Royalties	2291277.6
-2012	WY	Sublette	56035	Oil	Other Liquid Hydrocarbons (bbl)	Royalties	2381.46
-2012	WY	Sublette	56035	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	143377884.93
-2012	WY	Sweetwater	56037	Coal	Coal (ton)	Royalties	3742529
-2012	WY	Sweetwater	56037	Gas	Coal Bed Methane (mcf)	Royalties	78676.88
-2012	WY	Sweetwater	56037	Gas	Fuel Gas (mcf)	Royalties	130521.11
-2012	WY	Sweetwater	56037	Gas	Processed (Residue) Gas (mcf)	Royalties	43204065.51
-2012	WY	Sweetwater	56037	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	66274054.98
-2012	WY	Sweetwater	56037	NGL	Gas Plant Products (gal)	Royalties	134984131.46
-2012	WY	Sweetwater	56037	Oil	Condensate (bbl)	Royalties	1019251.33
-2012	WY	Sweetwater	56037	Oil	Drip or Scrubber Condensate (bbl)	Royalties	6929.31
-2012	WY	Sweetwater	56037	Oil	Inlet Scrubber (bbl)	Royalties	198.78
-2012	WY	Sweetwater	56037	Oil	Oil (bbl)	Royalties	1736995.05
-2012	WY	Sweetwater	56037	Purge Liquor	Purge Liquor (ton)	Royalties	78213
-2012	WY	Sweetwater	56037	Soda Ash	Soda Ash (ton)	Royalties	4715260
-2012	WY	Sweetwater	56037	Sodium Bi-Carbonate	Sodium Bi-Carbonate (ton)	Royalties	68615
-2012	WY	Sweetwater	56037	Sodium Bisulfite	Sodium Bisulfite (ton)	Royalties	69
-2012	WY	Sweetwater	56037	Sodium Sesquicarbonate	Sodium Sesquicarbonate (ton)	Royalties	110156
-2012	WY	Sweetwater	56037	Sulfide	Sulfide (ton)	Royalties	24189
-2012	WY	Sweetwater	56037	Sulfur	Sulfur (lton)	Royalties	3026.98
-2012	WY	Sweetwater	56037	Trona Ore	Trona Ore (ton)	Royalties	101948
-2012	WY	Uinta	56041	Gas	Processed (Residue) Gas (mcf)	Royalties	6598560.68
-2012	WY	Uinta	56041	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	7643797.15
-2012	WY	Uinta	56041	NGL	Gas Plant Products (gal)	Royalties	34239302.71
-2012	WY	Uinta	56041	Oil	Condensate (bbl)	Royalties	260883.46
-2012	WY	Uinta	56041	Oil	Drip or Scrubber Condensate (bbl)	Royalties	7173.08
-2012	WY	Uinta	56041	Oil	Inlet Scrubber (bbl)	Royalties	153.51
-2012	WY	Uinta	56041	Oil	Oil (bbl)	Royalties	274939.64
-2012	WY	Uinta	56041	Sulfur	Sulfur (lton)	Royalties	35507.64
-2012	WY	Washakie	56043	Gas	Processed (Residue) Gas (mcf)	Royalties	421347.33
-2012	WY	Washakie	56043	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	165891.87
-2012	WY	Washakie	56043	NGL	Gas Plant Products (gal)	Royalties	1429596.81
-2012	WY	Washakie	56043	Oil	Condensate (bbl)	Royalties	5454.67
-2012	WY	Washakie	56043	Oil	Oil (bbl)	Royalties	480304.3
-2012	WY	Weston	56045	Gas	Processed (Residue) Gas (mcf)	Royalties	204792.7
-2012	WY	Weston	56045	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	433616.71
-2012	WY	Weston	56045	NGL	Gas Plant Products (gal)	Royalties	2020572.49
-2012	WY	Weston	56045	Oil	Oil (bbl)	Royalties	356820.77
-2013	WY	Albany	56001	Gas	Fuel Gas (mcf)	Royalties	2101
-2013	WY	Albany	56001	Oil	Oil (bbl)	Royalties	24612.48
-2013	WY	Big Horn	56003	Gas	Processed (Residue) Gas (mcf)	Royalties	316180.84
-2013	WY	Big Horn	56003	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	742629.19
-2013	WY	Big Horn	56003	NGL	Gas Plant Products (gal)	Royalties	687175.31
-2013	WY	Big Horn	56003	Oil	Condensate (bbl)	Royalties	8489.87
-2013	WY	Big Horn	56003	Oil	Oil (bbl)	Royalties	569406.78
-2013	WY	Campbell	56005	Coal	Coal (ton)	Royalties	300724553.92
-2013	WY	Campbell	56005	Gas	Coal Bed Methane (mcf)	Royalties	42040528.1
-2013	WY	Campbell	56005	Gas	Fuel Gas (mcf)	Royalties	117620.48
-2013	WY	Campbell	56005	Gas	Processed (Residue) Gas (mcf)	Royalties	497124.81
-2013	WY	Campbell	56005	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	18908616.94
-2013	WY	Campbell	56005	NGL	Gas Plant Products (gal)	Royalties	2740772.51
-2013	WY	Campbell	56005	Oil	Condensate (bbl)	Royalties	312895.77
-2013	WY	Campbell	56005	Oil	Drip or Scrubber Condensate (bbl)	Royalties	268.63
-2013	WY	Campbell	56005	Oil	Oil (bbl)	Royalties	4673470.85
-2013	WY	Carbon	56007	Gas	Coal Bed Methane (mcf)	Royalties	12075979.86
-2013	WY	Carbon	56007	Gas	Fuel Gas (mcf)	Royalties	22389.27
-2013	WY	Carbon	56007	Gas	Processed (Residue) Gas (mcf)	Royalties	23308102.19
-2013	WY	Carbon	56007	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	8678235.61
-2013	WY	Carbon	56007	NGL	Gas Plant Products (gal)	Royalties	73629216.38
-2013	WY	Carbon	56007	Oil	Condensate (bbl)	Royalties	278153.61
-2013	WY	Carbon	56007	Oil	Drip or Scrubber Condensate (bbl)	Royalties	8023.97
-2013	WY	Carbon	56007	Oil	Oil (bbl)	Royalties	480088.06
-2013	WY	Converse	56009	Coal	Coal (ton)	Royalties	27720696.08
-2013	WY	Converse	56009	Gas	Coal Bed Methane (mcf)	Royalties	609265.31
-2013	WY	Converse	56009	Gas	Fuel Gas (mcf)	Royalties	8123.59
-2013	WY	Converse	56009	Gas	Gas Lost - Flared or Vented (mcf)	Royalties	59058.4
-2013	WY	Converse	56009	Gas	Processed (Residue) Gas (mcf)	Royalties	1858729.53
-2013	WY	Converse	56009	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	4651353.11
-2013	WY	Converse	56009	NGL	Gas Plant Products (gal)	Royalties	6387475.41
-2013	WY	Converse	56009	Oil	Condensate (bbl)	Royalties	98672.09
-2013	WY	Converse	56009	Oil	Drip or Scrubber Condensate (bbl)	Royalties	43.48
-2013	WY	Converse	56009	Oil	Inlet Scrubber (bbl)	Royalties	67.79
-2013	WY	Converse	56009	Oil	Oil (bbl)	Royalties	2779669.46
-2013	WY	Crook	56011	Gas	Fuel Gas (mcf)	Royalties	8976
-2013	WY	Crook	56011	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3643
-2013	WY	Crook	56011	Oil	Condensate (bbl)	Royalties	251.63
-2013	WY	Crook	56011	Oil	Oil (bbl)	Royalties	704296.24
-2013	WY	Fremont	56013	Gas	Processed (Residue) Gas (mcf)	Royalties	51749158.24
-2013	WY	Fremont	56013	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	16236683.88
-2013	WY	Fremont	56013	NGL	Gas Plant Products (gal)	Royalties	20729525.19
-2013	WY	Fremont	56013	Oil	Condensate (bbl)	Royalties	215583.82
-2013	WY	Fremont	56013	Oil	Oil (bbl)	Royalties	1013500.93
-2013	WY	Fremont	56013	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	5374691.96
-2013	WY	Fremont	56013	Sulfur	Sulfur (lton)	Royalties	300750.87
-2013	WY	Hot Springs	56017	Gas	Processed (Residue) Gas (mcf)	Royalties	57334.51
-2013	WY	Hot Springs	56017	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	15532.84
-2013	WY	Hot Springs	56017	NGL	Gas Plant Products (gal)	Royalties	83212.64
-2013	WY	Hot Springs	56017	Oil	Condensate (bbl)	Royalties	106.32
-2013	WY	Hot Springs	56017	Oil	Oil (bbl)	Royalties	1803273.02
-2013	WY	Johnson	56019	Gas	Coal Bed Methane (mcf)	Royalties	158395772.94
-2013	WY	Johnson	56019	Gas	Processed (Residue) Gas (mcf)	Royalties	108573.16
-2013	WY	Johnson	56019	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	5604505.43
-2013	WY	Johnson	56019	NGL	Gas Plant Products (gal)	Royalties	300348.7
-2013	WY	Johnson	56019	Oil	Condensate (bbl)	Royalties	66.97
-2013	WY	Johnson	56019	Oil	Inlet Scrubber (bbl)	Royalties	216.56
-2013	WY	Johnson	56019	Oil	Oil (bbl)	Royalties	1134669.21
-2013	WY	Laramie	56021	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1948.98
-2013	WY	Laramie	56021	Oil	Oil (bbl)	Royalties	15628.24
-2013	WY	Lincoln	56023	Coal	Coal (ton)	Royalties	1627287
-2013	WY	Lincoln	56023	Gas	Fuel Gas (mcf)	Royalties	63663.71
-2013	WY	Lincoln	56023	Gas	Processed (Residue) Gas (mcf)	Royalties	18319499.69
-2013	WY	Lincoln	56023	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	12100359.04
-2013	WY	Lincoln	56023	NGL	Gas Plant Products (gal)	Royalties	37906177.37
-2013	WY	Lincoln	56023	Oil	Condensate (bbl)	Royalties	162895.45
-2013	WY	Lincoln	56023	Oil	Drip or Scrubber Condensate (bbl)	Royalties	43128.61
-2013	WY	Lincoln	56023	Oil	Inlet Scrubber (bbl)	Royalties	1722.59
-2013	WY	Lincoln	56023	Oil	Oil (bbl)	Royalties	101861.39
-2013	WY	Lincoln	56023	Salt	Salt (ton)	Royalties	282900
-2013	WY	Lincoln	56023	Sulfur	Sulfur (lton)	Royalties	31666.27
-2013	WY	Natrona	56025	Gas	Processed (Residue) Gas (mcf)	Royalties	8562804.82
-2013	WY	Natrona	56025	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	6078438.14
-2013	WY	Natrona	56025	NGL	Gas Plant Products (gal)	Royalties	15565773.17
-2013	WY	Natrona	56025	Oil	Condensate (bbl)	Royalties	95611.64
-2013	WY	Natrona	56025	Oil	Oil (bbl)	Royalties	4969535.95
-2013	WY	Natrona	56025	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	440242.04
-2013	WY	Natrona	56025	Sulfur	Sulfur (lton)	Royalties	24693.21
-2013	WY	Niobrara	56027	Gas	Processed (Residue) Gas (mcf)	Royalties	451.5
-2013	WY	Niobrara	56027	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	227160.29
-2013	WY	Niobrara	56027	NGL	Gas Plant Products (gal)	Royalties	7500
-2013	WY	Niobrara	56027	Oil	Oil (bbl)	Royalties	483079.12
-2013	WY	Park	56029	Gas	Processed (Residue) Gas (mcf)	Royalties	1941195.94
-2013	WY	Park	56029	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	286153.98
-2013	WY	Park	56029	NGL	Gas Plant Products (gal)	Royalties	7615829.88
-2013	WY	Park	56029	Oil	Condensate (bbl)	Royalties	2541.6
-2013	WY	Park	56029	Oil	Drip or Scrubber Condensate (bbl)	Royalties	224.4
-2013	WY	Park	56029	Oil	Oil (bbl)	Royalties	4656782.31
-2013	WY	Park	56029	Sulfur	Sulfur (lton)	Royalties	2944.95
-2013	WY	Sheridan	56033	Gas	Coal Bed Methane (mcf)	Royalties	4020469.27
-2013	WY	Sheridan	56033	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	118251.12
-2013	WY	Sheridan	56033	Oil	Oil (bbl)	Royalties	1770.36
-2013	WY	Sublette	56035	Gas	Coal Bed Methane (mcf)	Royalties	43767.46
-2013	WY	Sublette	56035	Gas	Flash Gas (mcf)	Royalties	10280.91
-2013	WY	Sublette	56035	Gas	Fuel Gas (mcf)	Royalties	985175.89
-2013	WY	Sublette	56035	Gas	Processed (Residue) Gas (mcf)	Royalties	374943073.47
-2013	WY	Sublette	56035	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	300295042.55
-2013	WY	Sublette	56035	NGL	Gas Plant Products (gal)	Royalties	456367317.69
-2013	WY	Sublette	56035	Oil	Condensate (bbl)	Royalties	3619504.07
-2013	WY	Sublette	56035	Oil	Drip or Scrubber Condensate (bbl)	Royalties	1580.92
-2013	WY	Sublette	56035	Oil	Inlet Scrubber (bbl)	Royalties	3878.52
-2013	WY	Sublette	56035	Oil	Oil (bbl)	Royalties	2166412.01
-2013	WY	Sublette	56035	Oil	Other Liquid Hydrocarbons (bbl)	Royalties	634.24
-2013	WY	Sublette	56035	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	215680359.87
-2013	WY	Sweetwater	56037	Coal	Coal (ton)	Royalties	3121730
-2013	WY	Sweetwater	56037	Gas	Coal Bed Methane (mcf)	Royalties	111288.64
-2013	WY	Sweetwater	56037	Gas	Fuel Gas (mcf)	Royalties	207507.62
-2013	WY	Sweetwater	56037	Gas	Nitrogen (mcf)	Royalties	-1238.96
-2013	WY	Sweetwater	56037	Gas	Processed (Residue) Gas (mcf)	Royalties	52310315.68
-2013	WY	Sweetwater	56037	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	60685273.8
-2013	WY	Sweetwater	56037	NGL	Gas Plant Products (gal)	Royalties	165409182.78
-2013	WY	Sweetwater	56037	Oil	Condensate (bbl)	Royalties	1101147.54
-2013	WY	Sweetwater	56037	Oil	Drip or Scrubber Condensate (bbl)	Royalties	12077.05
-2013	WY	Sweetwater	56037	Oil	Inlet Scrubber (bbl)	Royalties	152.66
-2013	WY	Sweetwater	56037	Oil	Oil (bbl)	Royalties	1657240.87
-2013	WY	Sweetwater	56037	Purge Liquor	Purge Liquor (ton)	Royalties	90861
-2013	WY	Sweetwater	56037	Soda Ash	Soda Ash (ton)	Royalties	5161880
-2013	WY	Sweetwater	56037	Sodium Bi-Carbonate	Sodium Bi-Carbonate (ton)	Royalties	70387
-2013	WY	Sweetwater	56037	Sodium Sesquicarbonate	Sodium Sesquicarbonate (ton)	Royalties	118622
-2013	WY	Sweetwater	56037	Sulfide	Sulfide (ton)	Royalties	27739
-2013	WY	Sweetwater	56037	Sulfur	Sulfur (lton)	Royalties	2419.44
-2013	WY	Sweetwater	56037	Trona Ore	Trona Ore (ton)	Royalties	108413
-2013	WY	Uinta	56041	Gas	Fuel Gas (mcf)	Royalties	2164.52
-2013	WY	Uinta	56041	Gas	Processed (Residue) Gas (mcf)	Royalties	5129586.71
-2013	WY	Uinta	56041	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	7218762.29
-2013	WY	Uinta	56041	NGL	Gas Plant Products (gal)	Royalties	26922192.09
-2013	WY	Uinta	56041	Oil	Condensate (bbl)	Royalties	188924.19
-2013	WY	Uinta	56041	Oil	Drip or Scrubber Condensate (bbl)	Royalties	9665.91
-2013	WY	Uinta	56041	Oil	Inlet Scrubber (bbl)	Royalties	228.56
-2013	WY	Uinta	56041	Oil	Oil (bbl)	Royalties	268632.54
-2013	WY	Uinta	56041	Sulfur	Sulfur (lton)	Royalties	27514.73
-2013	WY	Washakie	56043	Gas	Processed (Residue) Gas (mcf)	Royalties	491380.54
-2013	WY	Washakie	56043	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	86518.79
-2013	WY	Washakie	56043	NGL	Gas Plant Products (gal)	Royalties	1614199.15
-2013	WY	Washakie	56043	Oil	Condensate (bbl)	Royalties	4998.91
-2013	WY	Washakie	56043	Oil	Oil (bbl)	Royalties	494886.06
-2013	WY	Weston	56045	Gas	Processed (Residue) Gas (mcf)	Royalties	189543.4
-2013	WY	Weston	56045	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	458027.94
-2013	WY	Weston	56045	NGL	Gas Plant Products (gal)	Royalties	1931225.07
-2013	WY	Weston	56045	Oil	Oil (bbl)	Royalties	322287.55
+Year	State	County	FIPS	Commodity	Product	Volume
+2007	WY	Natrona County	56025		Oil (bbl)	1
+2007	WY	Park County	56029		Oil (bbl)	17
+2011	WY	Natrona County	56025		Oil (bbl)	69.02
+2009	WY	Park County	56029		Oil (bbl)	97
+2008	WY	Park County	56029		Oil (bbl)	168
+2012	WY	Uinta County	56041		Oil (bbl)	211.67
+2013	WY	Uinta County	56041		Oil (bbl)	237
+2011	WY	Uinta County	56041		Oil (bbl)	276
+2010	WY	Uinta County	56041		Oil (bbl)	341.67
+2014	WY	Crook County	56011		Oil (bbl)	373
+2012	WY	Johnson County	56019		Oil (bbl)	398
+2008	WY	Uinta County	56041		Oil (bbl)	420.33
+2006	WY	Natrona County	56025		Oil (bbl)	476
+2009	WY	Uinta County	56041		Oil (bbl)	481.67
+2006	WY	Sheridan County	56033		Gas (mcf)	517.5
+2009	WY	Johnson County	56019		Oil (bbl)	529
+2011	WY	Johnson County	56019		Oil (bbl)	718
+2011	WY	Sublette County	56035		Oil (bbl)	727
+2008	WY	Natrona County	56025		Oil (bbl)	947.52
+2005	WY	Uinta County	56041		Gas (mcf)	1010
+2010	WY	Johnson County	56019		Oil (bbl)	1094
+2007	WY	Sublette County	56035		Oil (bbl)	1513
+2010	WY	Converse County	56009		Oil (bbl)	1518
+2014	WY	Hot Springs County	56017		Oil (bbl)	1582.35
+2007	WY	Johnson County	56019		Oil (bbl)	1828
+2006	WY	Carbon County	56007		Oil (bbl)	1920.34
+2010	WY	Sheridan County	56033		Gas (mcf)	1986
+2013	WY	Carbon County	56007		Oil (bbl)	2048.5
+2014	WY	Lincoln County	56023		Oil (bbl)	2060
+2013	WY	Natrona County	56025		Oil (bbl)	2078.04
+2008	WY	Johnson County	56019		Oil (bbl)	2146
+2014	WY	Carbon County	56007		Oil (bbl)	2200
+2006	WY	Johnson County	56019		Oil (bbl)	2381
+2005	WY	Carbon County	56007		Oil (bbl)	2439.65
+2012	WY	Niobrara County	56027		Oil (bbl)	2449.17
+2011	WY	Fremont County	56013		Oil (bbl)	2484.98
+2011	WY	Laramie County	56021		Gas (mcf)	2611.46
+2007	WY	Sheridan County	56033		Gas (mcf)	2613
+2010	WY	Laramie County	56021		Gas (mcf)	2752.55
+2008	WY	Laramie County	56021		Gas (mcf)	2886.28
+2005	WY	Natrona County	56025		Oil (bbl)	2935
+2007	WY	Natrona County	56025		Gas (mcf)	2956
+2007	WY	Laramie County	56021		Gas (mcf)	2962.69
+2014	WY	Laramie County	56021		Gas (mcf)	2965.48
+2006	WY	Sheridan County	56033		Oil (bbl)	3044.09
+2006	WY	Laramie County	56021		Gas (mcf)	3046.31
+2009	WY	Laramie County	56021		Gas (mcf)	3075.3
+2012	WY	Carbon County	56007		Oil (bbl)	3086
+2012	WY	Laramie County	56021		Gas (mcf)	3215.27
+2009	WY	Fremont County	56013		Oil (bbl)	3666
+2011	WY	Carbon County	56007		Oil (bbl)	3735
+2010	WY	Fremont County	56013		Oil (bbl)	3737
+2005	WY	Laramie County	56021		Gas (mcf)	3751.45
+2013	WY	Lincoln County	56023		Oil (bbl)	3767
+2013	WY	Park County	56029		Gas (mcf)	3839
+2014	WY	Fremont County	56013		Oil (bbl)	3950.73
+2005	WY	Sublette County	56035		Oil (bbl)	3963
+2007	WY	Carbon County	56007		Oil (bbl)	4134.5
+2013	WY	Sheridan County	56033		Oil (bbl)	4150.25
+2014	WY	Campbell County	56005		Oil (bbl)	4261
+2010	WY	Carbon County	56007		Oil (bbl)	4398.5
+2012	WY	Natrona County	56025		Oil (bbl)	4495.23
+2012	WY	Lincoln County	56023		Oil (bbl)	4669.67
+2013	WY	Laramie County	56021		Gas (mcf)	4714.67
+2007	WY	Albany County	56001		Gas (mcf)	4753
+2012	WY	Sheridan County	56033		Oil (bbl)	4901.71
+2009	WY	Carbon County	56007		Oil (bbl)	5035.5
+2007	WY	Sheridan County	56033		Oil (bbl)	5132.35
+2009	WY	Sheridan County	56033		Gas (mcf)	5152
+2013	WY	Fremont County	56013		Oil (bbl)	5350.96
+2011	WY	Lincoln County	56023		Oil (bbl)	5385
+2014	WY	Park County	56029		Gas (mcf)	5392
+2007	WY	Park County	56029		Gas (mcf)	5480
+2012	WY	Sweetwater County	56037		Oil (bbl)	5594.67
+2011	WY	Sheridan County	56033		Oil (bbl)	5884.67
+2005	WY	Albany County	56001		Gas (mcf)	6272
+2008	WY	Albany County	56001		Gas (mcf)	6333.87
+2009	WY	Fremont County	56013		Gas (mcf)	6399
+2006	WY	Albany County	56001		Gas (mcf)	6695
+2012	WY	Park County	56029		Gas (mcf)	6716
+2008	WY	Carbon County	56007		Oil (bbl)	6946
+2007	WY	Fremont County	56013		Oil (bbl)	7071
+2009	WY	Sheridan County	56033		Oil (bbl)	7238.02
+2008	WY	Converse County	56009		Gas (mcf)	7529
+2010	WY	Sheridan County	56033		Oil (bbl)	7658.15
+2009	WY	Lincoln County	56023		Oil (bbl)	7785.67
+2006	WY	Park County	56029		Gas (mcf)	7872
+2008	WY	Sheridan County	56033		Gas (mcf)	8004
+2006	WY	Fremont County	56013		Oil (bbl)	8062
+2008	WY	Converse County	56009		Oil (bbl)	8136
+2008	WY	Sheridan County	56033		Oil (bbl)	8310.61
+2010	WY	Lincoln County	56023		Oil (bbl)	8317.17
+2009	WY	Sweetwater County	56037		Oil (bbl)	8473.17
+2008	WY	Fremont County	56013		Oil (bbl)	9097.48
+2014	WY	Sheridan County	56033		Oil (bbl)	9257.19
+2010	WY	Converse County	56009		Gas (mcf)	9284
+2011	WY	Sweetwater County	56037		Oil (bbl)	9573
+2008	WY	Sweetwater County	56037		Oil (bbl)	9762.33
+2010	WY	Sweetwater County	56037		Oil (bbl)	9922.17
+2009	WY	Converse County	56009		Oil (bbl)	10376
+2008	WY	Lincoln County	56023		Oil (bbl)	10767.33
+2005	WY	Lincoln County	56023		Oil (bbl)	11434
+2012	WY	Fremont County	56013		Oil (bbl)	11781.77
+2010	WY	Sublette County	56035		Oil (bbl)	11841.5
+2006	WY	Lincoln County	56023		Oil (bbl)	11973.54
+2007	WY	Fremont County	56013		Gas (mcf)	12354
+2014	WY	Laramie County	56021		Oil (bbl)	12916.87
+2007	WY	Lincoln County	56023		Oil (bbl)	13514
+2008	WY	Natrona County	56025		Gas (mcf)	13954.51
+2005	WY	Fremont County	56013		Oil (bbl)	13969
+2014	WY	Johnson County	56019		Oil (bbl)	14530
+2014	WY	Albany County	56001		Oil (bbl)	14542.94
+2011	WY	Laramie County	56021		Oil (bbl)	14592.65
+2014	WY	Natrona County	56025		Oil (bbl)	14835.27
+2009	WY	Albany County	56001		Gas (mcf)	14848.72
+2008	WY	Sublette County	56035		Oil (bbl)	15179
+2012	WY	Laramie County	56021		Oil (bbl)	15249.67
+2013	WY	Laramie County	56021		Oil (bbl)	15472.81
+2010	WY	Laramie County	56021		Oil (bbl)	16071.89
+2009	WY	Laramie County	56021		Oil (bbl)	16815.88
+2013	WY	Albany County	56001		Oil (bbl)	17573.52
+2008	WY	Laramie County	56021		Oil (bbl)	18238.48
+2007	WY	Sweetwater County	56037		Oil (bbl)	18725.5
+2007	WY	Laramie County	56021		Oil (bbl)	19493.86
+2008	WY	Albany County	56001		Oil (bbl)	19807.74
+2010	WY	Albany County	56001		Gas (mcf)	19843.45
+2012	WY	Niobrara County	56027		Gas (mcf)	20819.25
+2006	WY	Laramie County	56021		Oil (bbl)	21103.02
+2005	WY	Laramie County	56021		Oil (bbl)	21674.23
+2013	WY	Albany County	56001		Gas (mcf)	22151.86
+2009	WY	Sublette County	56035		Oil (bbl)	22759
+2014	WY	Albany County	56001		Gas (mcf)	22816.72
+2012	WY	Albany County	56001		Gas (mcf)	23053.68
+2011	WY	Albany County	56001		Gas (mcf)	24375.44
+2011	WY	Park County	56029		Gas (mcf)	24726
+2014	WY	Crook County	56011		Gas (mcf)	25385.93
+2014	WY	Sublette County	56035		Oil (bbl)	25617
+2006	WY	Sublette County	56035		Oil (bbl)	25629.5
+2009	WY	Albany County	56001		Oil (bbl)	25855.12
+2013	WY	Crook County	56011		Gas (mcf)	26724.42
+2006	WY	Sweetwater County	56037		Oil (bbl)	27066.61
+2010	WY	Albany County	56001		Oil (bbl)	27416.41
+2011	WY	Albany County	56001		Oil (bbl)	27647.33
+2009	WY	Converse County	56009		Gas (mcf)	27740
+2012	WY	Albany County	56001		Oil (bbl)	28095.61
+2007	WY	Crook County	56011		Gas (mcf)	28144.28
+2008	WY	Fremont County	56013		Gas (mcf)	30391.49
+2007	WY	Albany County	56001		Oil (bbl)	31544.38
+2009	WY	Crook County	56011		Gas (mcf)	31751.16
+2013	WY	Johnson County	56019		Oil (bbl)	31902
+2012	WY	Crook County	56011		Gas (mcf)	32915.79
+2008	WY	Crook County	56011		Gas (mcf)	33156.66
+2014	WY	Park County	56029		Oil (bbl)	33292.65
+2013	WY	Niobrara County	56027		Oil (bbl)	34113.43
+2011	WY	Sweetwater County	56037		Sodium Bi-Carbonate (tons)	34297
+2011	WY	Crook County	56011		Gas (mcf)	34746.08
+2010	WY	Crook County	56011		Gas (mcf)	35924.84
+2005	WY	Sweetwater County	56037		Oil (bbl)	37419.35
+2006	WY	Albany County	56001		Oil (bbl)	37652.98
+2005	WY	Albany County	56001		Oil (bbl)	37959.78
+2010	WY	Park County	56029		Gas (mcf)	38676
+2013	WY	Uinta County	56041		Gas (mcf)	40153.96
+2012	WY	Sublette County	56035		Oil (bbl)	41500
+2006	WY	Crook County	56011		Gas (mcf)	41521.49
+2010	WY	Sweetwater County	56037		Sodium Bi-Carbonate (tons)	46904
+2013	WY	Sublette County	56035		Oil (bbl)	49108
+2012	WY	Uinta County	56041		Gas (mcf)	50910.62
+2009	WY	Park County	56029		Gas (mcf)	51727
+2005	WY	Crook County	56011		Gas (mcf)	55555.27
+2011	WY	Uinta County	56041		Gas (mcf)	56329.94
+2006	WY	Natrona County	56025		Gas (mcf)	57621.5
+2011	WY	Converse County	56009		Oil (bbl)	57818
+2005	WY	Sweetwater County	56037		Purge Liquor (tons- equivalent)	61925
+2010	WY	Uinta County	56041		Gas (mcf)	63795.27
+2011	WY	Natrona County	56025		Gas (mcf)	64806.73
+2013	WY	Niobrara County	56027		Gas (mcf)	67872.55
+2012	WY	Sweetwater County	56037		Sodium Bi-Carbonate (tons)	69262
+2006	WY	Sweetwater County	56037		Purge Liquor (tons- equivalent)	69814
+2013	WY	Sweetwater County	56037		Sodium Bi-Carbonate (tons)	71539
+2012	WY	Sweetwater County	56037		Purge Liquor (tons- equivalent)	73594
+2008	WY	Uinta County	56041		Gas (mcf)	75780.26
+2005	WY	Campbell County	56005		Gas (mcf)	78184.5
+2005	WY	Carbon County	56007		Gas (mcf)	80043.17
+2009	WY	Uinta County	56041		Gas (mcf)	81510.59
+2011	WY	Sublette County	56035		Gas (mcf)	82549
+2006	WY	Carbon County	56007		Gas (mcf)	85243.37
+2013	WY	Sweetwater County	56037		Purge Liquor (tons- equivalent)	88213
+2011	WY	Sweetwater County	56037		Purge Liquor (tons- equivalent)	88407
+2014	WY	Sweetwater County	56037		Purge Liquor (tons- equivalent)	91878
+2014	WY	Niobrara County	56027		Oil (bbl)	96243.02
+2006	WY	Fremont County	56013		Gas (mcf)	97224.5
+2007	WY	Sweetwater County	56037		Purge Liquor (tons- equivalent)	97711
+2010	WY	Sweetwater County	56037		Purge Liquor (tons- equivalent)	104405
+2014	WY	Sweetwater County	56037		Sodium Bi-Carbonate (tons)	107022
+2008	WY	Park County	56029		Gas (mcf)	110719
+2008	WY	Sweetwater County	56037		Purge Liquor (tons- equivalent)	116333
+2009	WY	Sweetwater County	56037		Purge Liquor (tons- equivalent)	118021
+2011	WY	Converse County	56009		Gas (mcf)	119203
+2013	WY	Sweetwater County	56037		Sodium Sesquicarbonate	121115
+2009	WY	Sweetwater County	56037		Trona Ore (tons)	139699
+2005	WY	Park County	56029		Gas (mcf)	142172
+2007	WY	Sublette County	56035		Gas (mcf)	148659
+2005	WY	Niobrara County	56027		Gas (mcf)	159414.08
+2005	WY	Fremont County	56013		Gas (mcf)	159649
+2014	WY	Niobrara County	56027		Gas (mcf)	178072.4
+2014	WY	Carbon County	56007		Gas (mcf)	195075
+2014	WY	Hot Springs County	56017		Gas (mcf)	209384.99
+2014	WY	Sweetwater County	56037		Oil (bbl)	229319
+2013	WY	Carbon County	56007		Gas (mcf)	229639
+2006	WY	Campbell County	56005		Gas (mcf)	233741
+2013	WY	Hot Springs County	56017		Gas (mcf)	233882.82
+2012	WY	Hot Springs County	56017		Gas (mcf)	237309.73
+2010	WY	Hot Springs County	56017		Gas (mcf)	253819.85
+2013	WY	Sweetwater County	56037		Oil (bbl)	261546.5
+2014	WY	Lincoln County	56023		Oil (bbl)	262460.82
+2012	WY	Carbon County	56007		Gas (mcf)	277268
+2013	WY	Lincoln County	56023		Oil (bbl)	278398.66
+2006	WY	Hot Springs County	56017		Gas (mcf)	282824.51
+2005	WY	Niobrara County	56027		Oil (bbl)	285122.34
+2011	WY	Hot Springs County	56017		Gas (mcf)	287667.29
+2009	WY	Niobrara County	56027		Oil (bbl)	287695.31
+2005	WY	Natrona County	56025		Gas (mcf)	294631
+2007	WY	Niobrara County	56027		Oil (bbl)	296955.75
+2008	WY	Niobrara County	56027		Oil (bbl)	298207.9
+2012	WY	Lincoln County	56023		Oil (bbl)	310844.7
+2006	WY	Niobrara County	56027		Oil (bbl)	316898.24
+2011	WY	Carbon County	56007		Gas (mcf)	320910.5
+2011	WY	Lincoln County	56023		Oil (bbl)	327481.86
+2013	WY	Weston County	56045		Oil (bbl)	327877.16
+2014	WY	Lincoln County	56023		Gas (mcf)	328154
+2010	WY	Niobrara County	56027		Oil (bbl)	335097.22
+2014	WY	Weston County	56045		Oil (bbl)	339891.13
+2012	WY	Weston County	56045		Oil (bbl)	350180.37
+2006	WY	Niobrara County	56027		Gas (mcf)	360137.75
+2011	WY	Weston County	56045		Oil (bbl)	363130.94
+2005	WY	Hot Springs County	56017		Gas (mcf)	372477.48
+2010	WY	Carbon County	56007		Gas (mcf)	381876.5
+2007	WY	Carbon County	56007		Gas (mcf)	382862.85
+2009	WY	Hot Springs County	56017		Gas (mcf)	385396.39
+2013	WY	Natrona County	56025		Gas (mcf)	389703.24
+2010	WY	Lincoln County	56023		Oil (bbl)	392640.72
+2010	WY	Weston County	56045		Oil (bbl)	393593.18
+2014	WY	Niobrara County	56027		Gas (mcf)	399792.81
+2014	WY	Natrona County	56025		Gas (mcf)	412862.59
+2013	WY	Niobrara County	56027		Gas (mcf)	413049.4
+2014	WY	Uinta County	56041		Oil (bbl)	414591.72
+2011	WY	Niobrara County	56027		Oil (bbl)	421034.27
+2009	WY	Weston County	56045		Oil (bbl)	423460.58
+2005	WY	Sublette County	56035		Gas (mcf)	430822
+2007	WY	Hot Springs County	56017		Gas (mcf)	437931.22
+2008	WY	Lincoln County	56023		Oil (bbl)	447583.24
+2009	WY	Lincoln County	56023		Oil (bbl)	451092.71
+2011	WY	Uinta County	56041		Oil (bbl)	455766.95
+2013	WY	Uinta County	56041		Oil (bbl)	457917.78
+2010	WY	Uinta County	56041		Oil (bbl)	458008.36
+2013	WY	Niobrara County	56027		Oil (bbl)	459213.25
+2011	WY	Washakie County	56043		Oil (bbl)	462412.41
+2012	WY	Niobrara County	56027		Oil (bbl)	463771.11
+2005	WY	Lincoln County	56023		Gas (mcf)	463930.35
+2008	WY	Weston County	56045		Oil (bbl)	464548.16
+2006	WY	Lincoln County	56023		Oil (bbl)	467115.29
+2011	WY	Fremont County	56013		Gas (mcf)	473376.27
+2009	WY	Uinta County	56041		Oil (bbl)	474330.15
+2012	WY	Washakie County	56043		Oil (bbl)	483068.02
+2012	WY	Uinta County	56041		Oil (bbl)	484144.91
+2007	WY	Lincoln County	56023		Oil (bbl)	485650.34
+2005	WY	Lincoln County	56023		Oil (bbl)	486330.55
+2009	WY	Washakie County	56043		Oil (bbl)	495573.57
+2013	WY	Washakie County	56043		Oil (bbl)	500757.04
+2010	WY	Washakie County	56043		Oil (bbl)	502098.56
+2007	WY	Weston County	56045		Oil (bbl)	511308.98
+2012	WY	Niobrara County	56027		Gas (mcf)	524183.14
+2007	WY	Campbell County	56005		Gas (mcf)	525038
+2009	WY	Carbon County	56007		Gas (mcf)	535625
+2014	WY	Washakie County	56043		Oil (bbl)	536571.55
+2006	WY	Fremont County	56013		Oil (bbl)	543419.48
+2006	WY	Weston County	56045		Oil (bbl)	545705.37
+2008	WY	Hot Springs County	56017		Gas (mcf)	546985.79
+2007	WY	Fremont County	56013		Oil (bbl)	553736.12
+2005	WY	Fremont County	56013		Oil (bbl)	558776.27
+2008	WY	Washakie County	56043		Oil (bbl)	562648.42
+2008	WY	Uinta County	56041		Oil (bbl)	567260.21
+2005	WY	Weston County	56045		Oil (bbl)	567708.04
+2014	WY	Big Horn County	56003		Oil (bbl)	568255.32
+2014	WY	Fremont County	56013		Oil (bbl)	573164.78
+2014	WY	Niobrara County	56027		Oil (bbl)	576142.14
+2013	WY	Big Horn County	56003		Oil (bbl)	582258.24
+2014	WY	Crook County	56011		Oil (bbl)	587432.52
+2007	WY	Uinta County	56041		Oil (bbl)	592729.45
+2011	WY	Niobrara County	56027		Gas (mcf)	597421.01
+2007	WY	Washakie County	56043		Oil (bbl)	605411.93
+2014	WY	Washakie County	56043		Gas (mcf)	610753.82
+2009	WY	Campbell County	56005		Gas (mcf)	611773
+2012	WY	Big Horn County	56003		Oil (bbl)	613063.33
+2005	WY	Washakie County	56043		Oil (bbl)	614102.09
+2013	WY	Lincoln County	56023		Gas (mcf)	614692.08
+2006	WY	Washakie County	56043		Oil (bbl)	615094.53
+2008	WY	Johnson County	56019		Gas (mcf)	615327.5
+2008	WY	Carbon County	56007		Gas (mcf)	615383.97
+2013	WY	Washakie County	56043		Gas (mcf)	616977.49
+2011	WY	Big Horn County	56003		Oil (bbl)	619936.09
+2008	WY	Fremont County	56013		Oil (bbl)	654884.79
+2010	WY	Big Horn County	56003		Oil (bbl)	657408.52
+2012	WY	Washakie County	56043		Gas (mcf)	658227.88
+2011	WY	Washakie County	56043		Gas (mcf)	669662.97
+2010	WY	Sweetwater County	56037		Gas (mcf)	679314.77
+2013	WY	Crook County	56011		Oil (bbl)	682364.33
+2011	WY	Crook County	56011		Oil (bbl)	685449.64
+2009	WY	Fremont County	56013		Oil (bbl)	689150.18
+2010	WY	Niobrara County	56027		Gas (mcf)	695633.64
+2009	WY	Crook County	56011		Oil (bbl)	696883.26
+2011	WY	Campbell County	56005		Gas (mcf)	699312
+2009	WY	Big Horn County	56003		Oil (bbl)	699357.29
+2012	WY	Natrona County	56025		Gas (mcf)	703257.06
+2009	WY	Niobrara County	56027		Gas (mcf)	704654.52
+2007	WY	Johnson County	56019		Gas (mcf)	709603
+2010	WY	Campbell County	56005		Gas (mcf)	712665
+2010	WY	Crook County	56011		Oil (bbl)	715921.22
+2008	WY	Big Horn County	56003		Oil (bbl)	721055.41
+2006	WY	Uinta County	56041		Oil (bbl)	721474.08
+2012	WY	Lincoln County	56023		Gas (mcf)	721878.77
+2012	WY	Converse County	56009		Oil (bbl)	725717.83
+2011	WY	Johnson County	56019		Oil (bbl)	729990.66
+2014	WY	Carbon County	56007		Oil (bbl)	736197.55
+2008	WY	Crook County	56011		Oil (bbl)	736254.6
+2008	WY	Niobrara County	56027		Gas (mcf)	737725.42
+2013	WY	Carbon County	56007		Oil (bbl)	738385.05
+2010	WY	Washakie County	56043		Gas (mcf)	740440.42
+2012	WY	Crook County	56011		Oil (bbl)	749453.42
+2007	WY	Big Horn County	56003		Oil (bbl)	759656.23
+2007	WY	Niobrara County	56027		Gas (mcf)	762637.41
+2009	WY	Washakie County	56043		Gas (mcf)	781320.67
+2007	WY	Crook County	56011		Oil (bbl)	788576.18
+2010	WY	Johnson County	56019		Oil (bbl)	796012.29
+2012	WY	Johnson County	56019		Oil (bbl)	797941.37
+2010	WY	Carbon County	56007		Oil (bbl)	805271.21
+2006	WY	Big Horn County	56003		Oil (bbl)	812267.13
+2012	WY	Carbon County	56007		Oil (bbl)	815483.76
+2005	WY	Crook County	56011		Oil (bbl)	818143.04
+2005	WY	Big Horn County	56003		Oil (bbl)	821183.81
+2006	WY	Crook County	56011		Oil (bbl)	821387.23
+2014	WY	Weston County	56045		Gas (mcf)	829710.78
+2011	WY	Lincoln County	56023		Gas (mcf)	832946.11
+2011	WY	Carbon County	56007		Oil (bbl)	833372.21
+2010	WY	Fremont County	56013		Oil (bbl)	840807.31
+2009	WY	Johnson County	56019		Oil (bbl)	854553.86
+2008	WY	Washakie County	56043		Gas (mcf)	860847.26
+2005	WY	Uinta County	56041		Oil (bbl)	871917.29
+2011	WY	Fremont County	56013		Oil (bbl)	895421.39
+2008	WY	Johnson County	56019		Oil (bbl)	902797.63
+2007	WY	Johnson County	56019		Oil (bbl)	906452.92
+2011	WY	Weston County	56045		Gas (mcf)	911990.8
+2014	WY	Fremont County	56013		Gas (mcf)	912383.41
+2013	WY	Weston County	56045		Gas (mcf)	917195.66
+2008	WY	Weston County	56045		Gas (mcf)	922686.09
+2013	WY	Fremont County	56013		Oil (bbl)	937980.14
+2012	WY	Weston County	56045		Gas (mcf)	944061.28
+2008	WY	Campbell County	56005		Gas (mcf)	956799.5
+2009	WY	Carbon County	56007		Oil (bbl)	962161
+2005	WY	Johnson County	56019		Oil (bbl)	968326.95
+2006	WY	Johnson County	56019		Oil (bbl)	973495.95
+2007	WY	Washakie County	56043		Gas (mcf)	974733.79
+2008	WY	Carbon County	56007		Oil (bbl)	975945.16
+2008	WY	Converse County	56009		Oil (bbl)	984686.05
+2009	WY	Weston County	56045		Gas (mcf)	985422.47
+2006	WY	Lincoln County	56023		Gas (mcf)	991428.11
+2010	WY	Weston County	56045		Gas (mcf)	999871.82
+2007	WY	Converse County	56009		Oil (bbl)	1007431.69
+2005	WY	Carbon County	56007		Oil (bbl)	1009142.81
+2005	WY	Johnson County	56019		Gas (mcf)	1029462.5
+2012	WY	Sweetwater County	56037		Gas (mcf)	1031239.62
+2009	WY	Lincoln County	56023		Gas (mcf)	1044185.83
+2012	WY	Fremont County	56013		Oil (bbl)	1045296.63
+2009	WY	Converse County	56009		Oil (bbl)	1047784.92
+2005	WY	Converse County	56009		Oil (bbl)	1061692.31
+2010	WY	Lincoln County	56023		Gas (mcf)	1070132.96
+2006	WY	Converse County	56009		Oil (bbl)	1073456.24
+2006	WY	Carbon County	56007		Oil (bbl)	1079314.66
+2011	WY	Sweetwater County	56037		Gas (mcf)	1082701.44
+2014	WY	Sublette County	56035		Gas (mcf)	1084504
+2012	WY	Campbell County	56005		Gas (mcf)	1102526
+2006	WY	Washakie County	56043		Gas (mcf)	1125696.55
+2013	WY	Fremont County	56013		Gas (mcf)	1130750.76
+2007	WY	Weston County	56045		Gas (mcf)	1139035.77
+2006	WY	Weston County	56045		Gas (mcf)	1144514.5
+2005	WY	Weston County	56045		Gas (mcf)	1163970.05
+2007	WY	Carbon County	56007		Oil (bbl)	1178559.16
+2013	WY	Johnson County	56019		Oil (bbl)	1212537.68
+2013	WY	Campbell County	56005		Gas (mcf)	1274701
+2014	WY	Johnson County	56019		Oil (bbl)	1285646.48
+2010	WY	Converse County	56009		Oil (bbl)	1303204.76
+2005	WY	Washakie County	56043		Gas (mcf)	1309037.13
+2008	WY	Lincoln County	56023		Gas (mcf)	1319899.98
+2014	WY	Big Horn County	56003		Gas (mcf)	1411338.08
+2006	WY	Johnson County	56019		Gas (mcf)	1415485.5
+2007	WY	Lincoln County	56023		Gas (mcf)	1425570
+2010	WY	Sublette County	56035		Gas (mcf)	1451481.5
+2013	WY	Big Horn County	56003		Gas (mcf)	1537587.4
+2009	WY	Sweetwater County	56037		Coal (tons)	1583464
+2012	WY	Sublette County	56035		Gas (mcf)	1585504
+2011	WY	Converse County	56009		Oil (bbl)	1679043.24
+2012	WY	Big Horn County	56003		Gas (mcf)	1680122.36
+2014	WY	Campbell County	56005		Gas (mcf)	1707288
+2009	WY	Sweetwater County	56037		Gas (mcf)	1772629.59
+2013	WY	Converse County	56009		Oil (bbl)	1807551.57
+2008	WY	Sweetwater County	56037		Gas (mcf)	1849061.29
+2011	WY	Big Horn County	56003		Gas (mcf)	1864314.99
+2014	WY	Hot Springs County	56017		Oil (bbl)	1891438.61
+2008	WY	Sublette County	56035		Gas (mcf)	1919110.5
+2013	WY	Hot Springs County	56017		Oil (bbl)	1944827.44
+2012	WY	Fremont County	56013		Gas (mcf)	1955874.94
+2010	WY	Big Horn County	56003		Gas (mcf)	2003667.41
+2012	WY	Hot Springs County	56017		Oil (bbl)	2014471.37
+2005	WY	Sweetwater County	56037		Oil (bbl)	2079774.1
+2011	WY	Hot Springs County	56017		Oil (bbl)	2082969.73
+2012	WY	Converse County	56009		Oil (bbl)	2114040.84
+2008	WY	Sweetwater County	56037		Coal (tons)	2186850
+2010	WY	Hot Springs County	56017		Oil (bbl)	2195104.63
+2009	WY	Big Horn County	56003		Gas (mcf)	2216877.52
+2009	WY	Hot Springs County	56017		Oil (bbl)	2263119.76
+2006	WY	Sublette County	56035		Gas (mcf)	2265060.5
+2006	WY	Sweetwater County	56037		Oil (bbl)	2312105.35
+2010	WY	Sweetwater County	56037		Oil (bbl)	2317556.62
+2005	WY	Sweetwater County	56037		Coal (tons)	2332026
+2008	WY	Big Horn County	56003		Gas (mcf)	2344632.2
+2007	WY	Big Horn County	56003		Gas (mcf)	2356638.8
+2012	WY	Converse County	56009		Gas (mcf)	2372037.75
+2009	WY	Sweetwater County	56037		Oil (bbl)	2376059.59
+2013	WY	Converse County	56009		Oil (bbl)	2446311.35
+2007	WY	Hot Springs County	56017		Oil (bbl)	2446664.13
+2010	WY	Sweetwater County	56037		Coal (tons)	2448074
+2008	WY	Hot Springs County	56017		Oil (bbl)	2462560
+2008	WY	Sweetwater County	56037		Oil (bbl)	2479149.51
+2006	WY	Hot Springs County	56017		Oil (bbl)	2493318.2
+2014	WY	Converse County	56009		Oil (bbl)	2493897.41
+2005	WY	Hot Springs County	56017		Oil (bbl)	2502162.64
+2013	WY	Sublette County	56035		Gas (mcf)	2509050
+2014	WY	Sweetwater County	56037		Oil (bbl)	2512392.37
+2014	WY	Sheridan County	56033		Gas (mcf)	2536905.23
+2011	WY	Sweetwater County	56037		Oil (bbl)	2544248.33
+2007	WY	Sweetwater County	56037		Gas (mcf)	2568162.15
+2013	WY	Sweetwater County	56037		Oil (bbl)	2612344.73
+2009	WY	Johnson County	56019		Gas (mcf)	2689458
+2007	WY	Sweetwater County	56037		Oil (bbl)	2725790.92
+2012	WY	Sweetwater County	56037		Oil (bbl)	2726149.81
+2006	WY	Big Horn County	56003		Gas (mcf)	2758062.18
+2011	WY	Sweetwater County	56037		Coal (tons)	2889839
+2009	WY	Sublette County	56035		Gas (mcf)	2891827
+2006	WY	Sweetwater County	56037		Coal (tons)	2972629
+2007	WY	Sweetwater County	56037		Coal (tons)	3029163
+2005	WY	Big Horn County	56003		Gas (mcf)	3043197.32
+2006	WY	Sweetwater County	56037		Gas (mcf)	3076814.02
+2013	WY	Sweetwater County	56037		Coal (tons)	3123934
+2005	WY	Sweetwater County	56037		Gas (mcf)	3180688.48
+2005	WY	Natrona County	56025		Oil (bbl)	3330947.85
+2005	WY	Sweetwater County	56037		Soda Ash (tons)	3416753
+2006	WY	Natrona County	56025		Oil (bbl)	3466176.61
+2014	WY	Sweetwater County	56037		Coal (tons)	3611250
+2009	WY	Campbell County	56005		Oil (bbl)	3621868.05
+2007	WY	Natrona County	56025		Oil (bbl)	3807087.07
+2010	WY	Campbell County	56005		Oil (bbl)	3842018.08
+2005	WY	Sheridan County	56033		Gas (mcf)	3872440.28
+2012	WY	Sweetwater County	56037		Coal (tons)	3886834
+2011	WY	Campbell County	56005		Oil (bbl)	3905535.42
+2008	WY	Campbell County	56005		Oil (bbl)	3970614.39
+2012	WY	Campbell County	56005		Oil (bbl)	3998705.67
+2014	WY	Converse County	56009		Oil (bbl)	4117182.98
+2008	WY	Natrona County	56025		Oil (bbl)	4127923.92
+2014	WY	Park County	56029		Oil (bbl)	4203523.42
+2013	WY	Sheridan County	56033		Gas (mcf)	4254751.23
+2005	WY	Campbell County	56005		Oil (bbl)	4274528.35
+2013	WY	Park County	56029		Oil (bbl)	4295658.46
+2007	WY	Campbell County	56005		Oil (bbl)	4311757.67
+2011	WY	Park County	56029		Oil (bbl)	4395191.35
+2009	WY	Natrona County	56025		Oil (bbl)	4426242.59
+2012	WY	Park County	56029		Oil (bbl)	4439571.11
+2010	WY	Converse County	56009		Gas (mcf)	4548371.86
+2012	WY	Natrona County	56025		Oil (bbl)	4622566.93
+2010	WY	Park County	56029		Oil (bbl)	4622716.93
+2011	WY	Converse County	56009		Gas (mcf)	4654394.47
+2006	WY	Campbell County	56005		Oil (bbl)	4679884.52
+2012	WY	Sweetwater County	56037		Soda Ash (tons)	4740200
+2006	WY	Sweetwater County	56037		Soda Ash (tons)	4755332
+2005	WY	Sublette County	56035		Oil (bbl)	4768968.75
+2009	WY	Park County	56029		Oil (bbl)	4794941.04
+2009	WY	Converse County	56009		Gas (mcf)	4940029.21
+2010	WY	Sweetwater County	56037		Soda Ash (tons)	4990309
+2013	WY	Campbell County	56005		Oil (bbl)	5011776.04
+2011	WY	Natrona County	56025		Oil (bbl)	5117594.65
+2010	WY	Natrona County	56025		Oil (bbl)	5151081.45
+2008	WY	Park County	56029		Oil (bbl)	5168488.41
+2013	WY	Sweetwater County	56037		Soda Ash (tons)	5232597
+2013	WY	Natrona County	56025		Oil (bbl)	5247332.83
+2005	WY	Park County	56029		Oil (bbl)	5355702.5
+2006	WY	Sublette County	56035		Oil (bbl)	5365619.04
+2012	WY	Converse County	56009		Gas (mcf)	5405068.12
+2014	WY	Natrona County	56025		Oil (bbl)	5431345.65
+2007	WY	Park County	56029		Oil (bbl)	5450279.35
+2006	WY	Park County	56029		Oil (bbl)	5455509.63
+2013	WY	Park County	56029		Gas (mcf)	5456043.68
+2009	WY	Sweetwater County	56037		Soda Ash (tons)	5545300
+2012	WY	Park County	56029		Gas (mcf)	5579538.48
+2011	WY	Park County	56029		Gas (mcf)	5642103.26
+2014	WY	Sublette County	56035		Oil (bbl)	5651264.36
+2007	WY	Sweetwater County	56037		Soda Ash (tons)	5662599
+2014	WY	Park County	56029		Gas (mcf)	5704726.32
+2011	WY	Sweetwater County	56037		Soda Ash (tons)	5705147
+2008	WY	Converse County	56009		Gas (mcf)	5705802.88
+2013	WY	Sublette County	56035		Oil (bbl)	5724678.94
+2012	WY	Sheridan County	56033		Gas (mcf)	5950340.42
+2013	WY	Converse County	56009		Gas (mcf)	6037214.13
+2014	WY	Sweetwater County	56037		Soda Ash (tons)	6075994
+2010	WY	Park County	56029		Gas (mcf)	6161158.68
+2012	WY	Sublette County	56035		Oil (bbl)	6291631.95
+2009	WY	Park County	56029		Gas (mcf)	6350334.94
+2007	WY	Converse County	56009		Gas (mcf)	6427724.74
+2014	WY	Converse County	56009		Gas (mcf)	6434097.3
+2007	WY	Sublette County	56035		Oil (bbl)	6527857.76
+2011	WY	Sublette County	56035		Oil (bbl)	6761343.72
+2008	WY	Sublette County	56035		Oil (bbl)	6976425.61
+2011	WY	Sheridan County	56033		Gas (mcf)	6987386.31
+2010	WY	Sublette County	56035		Oil (bbl)	7012637.25
+2008	WY	Sweetwater County	56037		Soda Ash (tons)	7069757
+2009	WY	Sublette County	56035		Oil (bbl)	7261991.29
+2008	WY	Park County	56029		Gas (mcf)	7401805.06
+2006	WY	Converse County	56009		Gas (mcf)	7433813.85
+2007	WY	Park County	56029		Gas (mcf)	7955061.48
+2014	WY	Campbell County	56005		Oil (bbl)	7958533.97
+2006	WY	Sheridan County	56033		Gas (mcf)	8135034.77
+2013	WY	Converse County	56009		Gas (mcf)	8359365.45
+2010	WY	Sheridan County	56033		Gas (mcf)	9100310.43
+2006	WY	Park County	56029		Gas (mcf)	9234694.36
+2005	WY	Park County	56029		Gas (mcf)	9301310.44
+2005	WY	Converse County	56009		Gas (mcf)	9471463.84
+2007	WY	Sheridan County	56033		Gas (mcf)	9575675.22
+2014	WY	Sweetwater County	56037		Gas (mcf)	9688120
+2013	WY	Sweetwater County	56037		Gas (mcf)	10763884.96
+2009	WY	Sheridan County	56033		Gas (mcf)	10814352.42
+2008	WY	Sheridan County	56033		Gas (mcf)	12336425.19
+2010	WY	Johnson County	56019		Gas (mcf)	12348924
+2005	WY	Converse County	56009		Coal (tons)	12850408.47
+2014	WY	Natrona County	56025		Gas (mcf)	14185982.32
+2014	WY	Converse County	56009		Gas (mcf)	15267986.6
+2006	WY	Converse County	56009		Coal (tons)	15510274.63
+2013	WY	Natrona County	56025		Gas (mcf)	15573210.48
+2014	WY	Johnson County	56019		Gas (mcf)	17589827
+2012	WY	Natrona County	56025		Gas (mcf)	20621139.23
+2007	WY	Converse County	56009		Coal (tons)	20820403.38
+2011	WY	Natrona County	56025		Gas (mcf)	22566226.93
+2013	WY	Johnson County	56019		Gas (mcf)	23422268
+2011	WY	Johnson County	56019		Gas (mcf)	23959298
+2007	WY	Natrona County	56025		Gas (mcf)	25218677.59
+2009	WY	Natrona County	56025		Gas (mcf)	25845849.43
+2010	WY	Natrona County	56025		Gas (mcf)	26125160.15
+2008	WY	Natrona County	56025		Gas (mcf)	26914256.48
+2009	WY	Converse County	56009		Coal (tons)	27310525.02
+2008	WY	Converse County	56009		Coal (tons)	27570841.49
+2013	WY	Converse County	56009		Coal (tons)	27707014.37
+2012	WY	Johnson County	56019		Gas (mcf)	28764467
+2014	WY	Converse County	56009		Coal (tons)	29704239.13
+2010	WY	Converse County	56009		Coal (tons)	30063940.9
+2011	WY	Converse County	56009		Coal (tons)	30150938.46
+2012	WY	Converse County	56009		Coal (tons)	32480454.37
+2005	WY	Johnson County	56019		Gas (mcf)	33048491
+2006	WY	Natrona County	56025		Gas (mcf)	33358331.83
+2014	WY	Lincoln County	56023		Gas (mcf)	34978726.7
+2013	WY	Lincoln County	56023		Gas (mcf)	37367396.29
+2005	WY	Natrona County	56025		Gas (mcf)	37675063.86
+2014	WY	Uinta County	56041		Gas (mcf)	40310721.18
+2013	WY	Uinta County	56041		Gas (mcf)	41473252.84
+2012	WY	Lincoln County	56023		Gas (mcf)	42678003.46
+2011	WY	Uinta County	56041		Gas (mcf)	43176065.84
+2012	WY	Uinta County	56041		Gas (mcf)	43781498.62
+2009	WY	Uinta County	56041		Gas (mcf)	44558291.88
+2011	WY	Lincoln County	56023		Gas (mcf)	44871624.4
+2010	WY	Uinta County	56041		Gas (mcf)	47701878.24
+2008	WY	Uinta County	56041		Gas (mcf)	51307129.39
+2007	WY	Uinta County	56041		Gas (mcf)	51402103.97
+2010	WY	Lincoln County	56023		Gas (mcf)	51864144.9
+2006	WY	Uinta County	56041		Gas (mcf)	55004672.88
+2009	WY	Lincoln County	56023		Gas (mcf)	56099339.21
+2005	WY	Uinta County	56041		Gas (mcf)	57204759.72
+2014	WY	Campbell County	56005		Gas (mcf)	58558009.66
+2014	WY	Carbon County	56007		Gas (mcf)	58817957.49
+2008	WY	Lincoln County	56023		Gas (mcf)	60390327.58
+2013	WY	Carbon County	56007		Gas (mcf)	61377148.3
+2005	WY	Carbon County	56007		Gas (mcf)	61773412.37
+2013	WY	Campbell County	56005		Gas (mcf)	62804062.09
+2006	WY	Lincoln County	56023		Gas (mcf)	63625115.91
+2007	WY	Lincoln County	56023		Gas (mcf)	65621650.48
+2005	WY	Lincoln County	56023		Gas (mcf)	65807942.57
+2006	WY	Carbon County	56007		Gas (mcf)	66721266.46
+2012	WY	Carbon County	56007		Gas (mcf)	67424463.22
+2007	WY	Carbon County	56007		Gas (mcf)	69601963.94
+2011	WY	Carbon County	56007		Gas (mcf)	70685892.13
+2012	WY	Campbell County	56005		Gas (mcf)	72861952.78
+2008	WY	Carbon County	56007		Gas (mcf)	74215302.9
+2010	WY	Carbon County	56007		Gas (mcf)	75115398.2
+2009	WY	Carbon County	56007		Gas (mcf)	76539542.4
+2006	WY	Johnson County	56019		Gas (mcf)	76835009.04
+2009	WY	Campbell County	56005		Gas (mcf)	79168049.97
+2010	WY	Campbell County	56005		Gas (mcf)	81740961.49
+2011	WY	Campbell County	56005		Gas (mcf)	82328210.42
+2008	WY	Campbell County	56005		Gas (mcf)	86729459.61
+2007	WY	Campbell County	56005		Gas (mcf)	90149803.76
+2014	WY	Fremont County	56013		Gas (mcf)	90718863.99
+2008	WY	Fremont County	56013		Gas (mcf)	92597830.55
+2006	WY	Campbell County	56005		Gas (mcf)	94801413.22
+2013	WY	Fremont County	56013		Gas (mcf)	97212032.26
+2005	WY	Campbell County	56005		Gas (mcf)	98715466.16
+2012	WY	Fremont County	56013		Gas (mcf)	99963227.72
+2010	WY	Fremont County	56013		Gas (mcf)	101642025.79
+2011	WY	Fremont County	56013		Gas (mcf)	109618796.4
+2009	WY	Fremont County	56013		Gas (mcf)	112949838.6
+2007	WY	Fremont County	56013		Gas (mcf)	113515445.52
+2014	WY	Johnson County	56019		Gas (mcf)	117240770.14
+2005	WY	Sweetwater County	56037		Gas (mcf)	120345871.74
+2006	WY	Sweetwater County	56037		Gas (mcf)	129347310.23
+2009	WY	Sweetwater County	56037		Gas (mcf)	130168961.04
+2011	WY	Sweetwater County	56037		Gas (mcf)	130331280.53
+2014	WY	Sweetwater County	56037		Gas (mcf)	130531685.97
+2007	WY	Sweetwater County	56037		Gas (mcf)	132621564.96
+2006	WY	Fremont County	56013		Gas (mcf)	133220592.32
+2010	WY	Sweetwater County	56037		Gas (mcf)	133742071.1
+2005	WY	Fremont County	56013		Gas (mcf)	137914329.09
+2008	WY	Sweetwater County	56037		Gas (mcf)	138617882.31
+2013	WY	Sweetwater County	56037		Gas (mcf)	141304553.36
+2007	WY	Johnson County	56019		Gas (mcf)	141544310.16
+2013	WY	Johnson County	56019		Gas (mcf)	144512033.61
+2012	WY	Sweetwater County	56037		Gas (mcf)	145322221.39
+2012	WY	Johnson County	56019		Gas (mcf)	185881275.85
+2011	WY	Johnson County	56019		Gas (mcf)	227241553.29
+2008	WY	Johnson County	56019		Gas (mcf)	233080556.66
+2010	WY	Johnson County	56019		Gas (mcf)	266624394.99
+2009	WY	Johnson County	56019		Gas (mcf)	277754951.26
+2013	WY	Campbell County	56005		Coal (tons)	300698719.63
+2014	WY	Campbell County	56005		Coal (tons)	306733810.87
+2012	WY	Campbell County	56005		Coal (tons)	316944575.63
+2005	WY	Campbell County	56005		Coal (tons)	347391069.53
+2006	WY	Campbell County	56005		Coal (tons)	351373163.37
+2011	WY	Campbell County	56005		Coal (tons)	357071832.54
+2009	WY	Campbell County	56005		Coal (tons)	358852746.98
+2007	WY	Campbell County	56005		Coal (tons)	360352213.62
+2010	WY	Campbell County	56005		Coal (tons)	365023675.1
+2008	WY	Campbell County	56005		Coal (tons)	389157819.51
+2005	WY	Sublette County	56035		Gas (mcf)	716348586.31
+2006	WY	Sublette County	56035		Gas (mcf)	799778063.18
+2014	WY	Sublette County	56035		Gas (mcf)	919208099.93
+2013	WY	Sublette County	56035		Gas (mcf)	921495881.75
+2007	WY	Sublette County	56035		Gas (mcf)	938070534.03
+2012	WY	Sublette County	56035		Gas (mcf)	998464511.91
+2008	WY	Sublette County	56035		Gas (mcf)	1051437620.3
+2011	WY	Sublette County	56035		Gas (mcf)	1054103582.35
+2009	WY	Sublette County	56035		Gas (mcf)	1096813348.67
+2010	WY	Sublette County	56035		Gas (mcf)	1111114619.07

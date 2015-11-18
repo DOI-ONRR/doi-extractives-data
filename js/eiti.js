@@ -488,6 +488,12 @@
    */
   eiti.format.shortDollars = eiti.format.transform('$,.2s', eiti.format.transformMetric);
 
+  eiti.format.pluralize = function(num, singular, plural) {
+    return (num === 1)
+      ? singular
+      : plural || singular + 's';
+  };
+
   function getter(key) {
     if (typeof key === 'function') return key;
     return function(d) { return d[key]; };

@@ -34,8 +34,36 @@ This section includes 12 case studies that provide a snapshot into communities t
 ### Choose a community to get started
 
 <ul class="communities_content-select">
-  <li>Gas: <a href="{{ site.baseurl }}/case-studies/tar">Tarrant &amp; Johnson Counties, Texas</a></li>
-  <li>Oil: <a href="{{ site.baseurl }}/case-studies/nor">North Slope Borough, Alaska</a></li>
+  <ul>
+    <p class="para-lg">Coal</p>
+    <li><a href="{{ site.baseurl }}/case-studies/boone-logan-and-mingo">Boone, Logan, and Mingo Counties, West Virginia</a></li>
+    <li><a href="{{ site.baseurl }}/case-studies/campbell/">Campbell County, Wyoming</a></li>
+  </ul>
+  <ul>
+  <p class="para-lg">Copper</p>
+    <li><a href="{{ site.baseurl }}/case-studies/greenlee">Greenlee County, Arizona</a></li>
+    <li><a href="{{ site.baseurl }}/case-studies/pima/">Pima County, Arizona</a></li>
+  </ul>
+  <ul>
+  <p class="para-lg">Gold</p>
+    <li><a href="{{ site.baseurl }}/case-studies/elko-and-eureka">Elko and Eureka Counties, Nevada</a></li>
+    <li><a href="{{ site.baseurl }}/case-studies/humboldt-and-lander/">Humboldt and Lander Counties, Nevada</a></li>
+  </ul>
+  <ul>
+  <p class="para-lg">Iron</p>
+    <li><a href="{{ site.baseurl }}/case-studies/marquette">Marquette County, Michigan</a></li>
+    <li><a href="{{ site.baseurl }}/case-studies/st-louis/">St. Louis County, Minnesota</a></li>
+  </ul>
+  <ul>
+  <p class="para-lg">Gas</p>
+    <li><a href="{{ site.baseurl }}/case-studies/desoto">DeSoto Parish, Louisiana</a></li>
+    <li><a href="{{ site.baseurl }}/case-studies/tarrant-and-johnson/">Tarrant &amp; Johnson Counties, Texas</a></li>
+  </ul>
+  <ul>
+  <p class="para-lg">Oil</p>
+    <li><a href="{{ site.baseurl }}/case-studies/kern">Kern County, California</a></li>
+    <li><a href="{{ site.baseurl }}/case-studies/north-slope">North Slope Borough, Alaska</a></li>
+  </ul>
 </ul>
 
 ### Or, read more about how to interpret these studies:

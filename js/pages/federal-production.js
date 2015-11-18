@@ -47,8 +47,10 @@
     .on('products', function(products) {
       updateProductList(products)
         .property('value', state.get('product') || '');
+      /*
       root.select('#product-filter')
         .style('display', products.length > 1 ? null : 'none');
+      */
     });
 
   // kick off the "app"
@@ -110,8 +112,8 @@
     // console.time('render');
     var product = state.get('product');
     if (product) {
-      var match = product.match(/( \(.+\))\s*$/);
-      var units = match ? match[1] : '';
+      var match = product.match(/( \((.+)\))\s*$/);
+      var units = match ? ' ' + match[2] : '';
       // console.log('product units:', units);
       formatNumber = eiti.format.transform(eiti.format.si, function(str) {
         return str + units;

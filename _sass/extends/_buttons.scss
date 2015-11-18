@@ -4,24 +4,24 @@
   @include transition-timing-function(ease-out);
   @include transition-delay(0s);
   @include appearance(none);
-  display: inline-block;
-  border-radius: $small-border-radius;
+  @include heading('para-md');
+
   border: none;
+  border-radius: $small-border-radius;
   box-sizing: border-box;
-  -moz-box-sizing:border-box;
-  -webkit-box-sizing:border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   cursor: pointer;
+  display: inline-block;
   margin-bottom: 0.6em;
+  padding-bottom: 8px;
+  padding-top: 8px;
   user-select: none;
   vertical-align: middle;
   // typography
   font-family: $base-font-family;
-  @include heading('para-md');
   font-weight: $weight-book;
-  line-height: $base-line-height;
-  text-decoration: none;
-  text-align: center;
-  padding-top: 8px;
-  padding-bottom: 8px;
   line-height: 1;
+  text-align: center;
+  text-decoration: none;
 }

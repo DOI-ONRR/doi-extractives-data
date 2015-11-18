@@ -1,83 +1,75 @@
 .revenues_subpage-steps {
-
   background-position: 0 0;
   background-size: 100%;
   padding-top: $base-padding;
 
-  &.onshore-oil{
-    background: $onshore-oil-primary-color;
-
-    .revenues_subpage-dyk_heading {
-      background-color: $onshore-oil-secondary-color;
-    }
-    .revenues_subpage-steps_heading,
-    .revenues_subpage-steps_heading_more {
-      color: $onshore-oil-secondary-color;
-    }
-
+  &.onshore-oil {
     @include respond-to(medium-up) {
       background: url('../img/revenues/onshore-oil-top.png') top left no-repeat, url('../img/revenues/onshore-oil-bottom.png') bottom left no-repeat;
       background-size: 100%, 100%;
+      height: 100%;
       padding-top: 50px;
       position: relative;
-      height: 100%;
       z-index: 2;
+
       &:before {
-        content: '';
-        z-index: -1;
-        right: 0;
-        left: 0;
-        top: 362px;
-        bottom: 448px;
-        position: absolute;
         background: url('../img/revenues/onshore-oil-middle.png') top left repeat-y;
         background-size: 100%;
+        bottom: 448px;
+        content: '';
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 362px;
+        z-index: -1;
       }
-
     }
 
     @include respond-to(large-up) {
-
       &:before {
-        top: 467px;
         bottom: 577px;
+        top: 467px;
       }
     }
 
     @include respond-to(huge-up) {
       &:before {
-        top: 483px;
         bottom: 597px;
+        top: 483px;
       }
     }
 
     @include respond-to(jumbo-up) {
       &:before {
-        top: 708px;
         bottom: 875px;
+        top: 708px;
       }
     }
+
     @include respond-to(massive-up) {
       background: url('../img/revenues/onshore-oil-wide.png') no-repeat;
       background-position-x: -1000px;
       background-size: 202%;
+
       &:before {
         background: none;
       }
     }
-  }
 
-  &.offshore-oil{
-
-    background: $offshore-oil-primary-color;
+    background: $onshore-oil-primary-color;
 
     .revenues_subpage-dyk_heading {
-      background-color: $offshore-oil-secondary-color;
+      background-color: $onshore-oil-secondary-color;
     }
+
     .revenues_subpage-steps_heading,
     .revenues_subpage-steps_heading_more {
-      color: $offshore-oil-secondary-color;
+      color: $onshore-oil-secondary-color;
     }
+  }
+
+  &.offshore-oil {
+    background: $offshore-oil-primary-color;
 
     @include respond-to(medium-up) {
       background: url('../img/revenues/offshore-oil-top.png') top left no-repeat, url('../img/revenues/offshore-oil-bottom.png') bottom left no-repeat;
@@ -86,80 +78,82 @@
       position: relative;
       height: 100%;
       z-index: 2;
+
       &:before {
-        content: '';
-        z-index: -1;
-        right: 0;
-        left: 0;
-        top: 362px;
-        bottom: 448px;
-        position: absolute;
         background: url('../img/revenues/offshore-oil-middle.png') top left repeat-y;
         background-size: 100%;
+        bottom: 448px;
+        content: '';
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 362px;
+        z-index: -1;
       }
-
     }
 
     @include respond-to(large-up) {
 
       &:before {
-        top: 467px;
         bottom: 577px;
+        top: 467px;
       }
     }
 
     @include respond-to(huge-up) {
       &:before {
-        top: 483px;
         bottom: 597px;
+        top: 483px;
       }
     }
 
     @include respond-to(jumbo-up) {
       &:before {
-        top: 708px;
         bottom: 875px;
+        top: 708px;
       }
     }
 
     @include respond-to(massive-up) {
       background: url('../img/revenues/offshore-oil-wide.png') no-repeat;
       background-position-x: -1000px;
+
       &:before {
         background: none;
       }
     }
 
+    .revenues_subpage-dyk_heading {
+      background-color: $offshore-oil-secondary-color;
+    }
+
+    .revenues_subpage-steps_heading,
+    .revenues_subpage-steps_heading_more {
+      color: $offshore-oil-secondary-color;
+    }
   }
 
   &.onshore-renewables {
-    background: $onshore-renewables-primary-color;
 
-    .revenues_subpage-dyk_heading {
-      background-color: $onshore-renewables-secondary-color;
-    }
-    .revenues_subpage-steps_heading,
-    .revenues_subpage-steps_heading_more {
-      color: $onshore-renewables-secondary-color;
-    }
+    background: $onshore-renewables-primary-color;
 
     @include respond-to(medium-up) {
       &:after {
         background: url('../img/revenues/renew-onshore.svg') bottom left no-repeat;
       }
     }
+
+    .revenues_subpage-dyk_heading {
+      background-color: $onshore-renewables-secondary-color;
+    }
+
+    .revenues_subpage-steps_heading,
+    .revenues_subpage-steps_heading_more {
+      color: $onshore-renewables-secondary-color;
+    }
   }
 
   &.offshore-renewables {
-    background: $offshore-renewables-primary-color;
-    .revenues_subpage-dyk_heading {
-      background-color: $offshore-renewables-secondary-color;
-    }
-    .revenues_subpage-steps_heading,
-    .revenues_subpage-steps_heading_more {
-      color: $offshore-renewables-secondary-color;
-    }
-
     @include respond-to(medium-up) {
       &:after {
         background: url('../img/revenues/renew-offshore.svg') bottom left no-repeat;
@@ -169,6 +163,8 @@
 
   &.offshore-renewables,
   &.onshore-renewables {
+    background: $offshore-renewables-primary-color;
+
     @include respond-to(medium-up) {
       position: relative;
       z-index: 1;
@@ -196,113 +192,117 @@
         z-index: 2;
       }
     }
-  }
-
-  &.coal{
-
-    background: $coal-primary-color;
 
     .revenues_subpage-dyk_heading {
-      background-color: $coal-secondary-color;
+      background-color: $offshore-renewables-secondary-color;
     }
+
     .revenues_subpage-steps_heading,
     .revenues_subpage-steps_heading_more {
-      color: $coal-secondary-color;
+      color: $offshore-renewables-secondary-color;
     }
+  }
+
+  &.coal {
+    background: $coal-primary-color;
 
     @include respond-to(medium-up) {
       background: url('../img/revenues/coal-top.png') top left no-repeat, url('../img/revenues/coal-bottom.png') bottom left no-repeat;
       background-size: 100%, 100%;
-      position: relative;
       height: 100%;
+      position: relative;
       z-index: 2;
+
       &:before {
-        content: '';
-        z-index: -1;
-        right: 0;
-        left: 0;
-        top: 377px;
-        bottom: 603px;
-        position: absolute;
         background: url('../img/revenues/coal-middle.png') top left repeat-y;
         background-size: 100%;
+        bottom: 603px;
+        content: '';
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 377px;
+        z-index: -1;
       }
-
     }
 
     @include respond-to(large-up) {
 
       &:before {
-        top: 486px;
         bottom: 777px;
+        top: 486px;
       }
     }
 
     @include respond-to(huge-up) {
       &:before {
-        top: 503px;
         bottom: 804px;
+        top: 503px;
       }
     }
 
     @include respond-to(jumbo-up) {
       &:before {
-        top: 737px;
         bottom: 1178px;
+        top: 737px;
       }
     }
+
     @include respond-to(massive-up) {
       background: url('../img/revenues/coal-wide.png') no-repeat;
-      background-size: 185%;
       background-position-x: -500px;
+      background-size: 185%;
+
       &:before {
         background: none;
       }
     }
-  }
-
-  &.minerals{
-    background: $minerals-primary-color;
 
     .revenues_subpage-dyk_heading {
-      background-color: $minerals-secondary-color;
+      background-color: $coal-secondary-color;
     }
+
     .revenues_subpage-steps_heading,
     .revenues_subpage-steps_heading_more {
-      color: $minerals-secondary-color;
+      color: $coal-secondary-color;
     }
+  }
+
+  &.minerals {
+    background: $minerals-primary-color;
 
     @include respond-to(medium-up) {
       background: url('../img/revenues/minerals-top.png') top left no-repeat, url('../img/revenues/minerals-bottom.png') bottom left no-repeat;
       background-size: 100%, 100%;
-      position: relative;
       height: 100%;
+      position: relative;
       z-index: 2;
+
       &:before {
-        content: '';
-        z-index: -1;
-        right: 0;
-        left: 0;
-        top: 403px;
-        bottom: 630px;
-        position: absolute;
         background: url('../img/revenues/minerals-middle.png') top left repeat-y;
         background-size: 100%;
+        bottom: 630px;
+        content: '';
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 403px;
+        z-index: -1;
       }
     }
 
     @include respond-to(large-up) {
 
       &:before {
-        top: 519px;
         bottom: 812px;
+        top: 519px;
       }
     }
 
     @include respond-to(huge-up) {
       &:before {
-        top: 537px;
         bottom: 840px;
+        top: 537px;
       }
     }
 
@@ -310,9 +310,19 @@
       background: url('../img/revenues/minerals-wide.png') no-repeat;
       background-position-x: -1000px;
       background-size: 222%;
+
       &:before {
         background: none;
       }
+    }
+
+    .revenues_subpage-dyk_heading {
+      background-color: $minerals-secondary-color;
+    }
+
+    .revenues_subpage-steps_heading,
+    .revenues_subpage-steps_heading_more {
+      color: $minerals-secondary-color;
     }
   }
 }

@@ -1,31 +1,26 @@
 .explore-section_top,
 .explore-section {
-	padding-bottom: $base-padding;
-	padding-top: $base-padding;	
+  padding-bottom: $base-padding;
+  padding-top: $base-padding;
 }
 
 .explore-section {
-	border-bottom: $thin-border-size solid $mid-gray;
+  border-bottom: $thin-border-size solid $mid-gray;
 }
 
 .explore-section_category {
+  border-bottom: $thin-border-size solid $mid-gray;
   margin-top: $base-padding;
   margin-bottom: 0;
   padding-bottom: $base-padding-lite;
-  border-bottom: $thin-border-size solid $mid-gray;
-
 }
 
 .explore-heading,
 .explore-heading a {
-	color: $dark-gray;
-	display: inline;
-}
-
-.explore-description {
-
+  color: $dark-gray;
+  display: inline;
 }
 
 .explore-image {
-	width: 100%;
+  width: 100%;
 }

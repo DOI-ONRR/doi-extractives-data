@@ -1,5 +1,5 @@
 // Container
-// 
+//
 // .container-outer - should be placed on an outer div for appropriate padding
 // .container-left - 7/12 width container that floats left
 // .container-right - 5/12 width container that floats left
@@ -38,11 +38,11 @@
 
     padding-bottom: $base-padding;
   }
-  
+
   @include respond-to(tiny-up) {
 
     @include span-columns(12);
-    
+
     padding-bottom: $base-padding;
   }
 
@@ -114,6 +114,7 @@
 
   }
 }
+
 .container-right-7 {
   @extend %container-side;
 
@@ -142,7 +143,7 @@
     @include span-columns(6);
 
     @include omega(odd);
-    
+
   }
 }
 

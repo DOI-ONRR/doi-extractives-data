@@ -1,5 +1,5 @@
 // Typography
-//  
+//
 // Text sizing and styling
 //
 // Markup:
@@ -45,11 +45,11 @@ h5,
 }
 // default p
 p,
-.para-md{
+.para-md {
   @include heading('para-md');
 }
 
-.para-sm{
+.para-sm {
   @include heading('para-sm');
 }
 

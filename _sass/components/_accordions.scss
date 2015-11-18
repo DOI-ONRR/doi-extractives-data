@@ -1,9 +1,9 @@
 // Accordions
 //
-// Togglable accordion. Button is visible only in 
+// Togglable accordion. Button is visible only in
 // screen sizes smaller than medium
 //
-// Markup: 
+// Markup:
 // <ul accordion>
 //    <li accordion-item accordion-open="true">
 //        <h3>Heading</h3>
@@ -26,13 +26,13 @@
   position: relative;
 
   &[accordion-open=true] {
+
     .accordion-button {
       @include rotate(270deg, 3);
 
       &:after {
         content: '\0046';
       }
-
     }
 
     .accordion-button_more {
@@ -69,7 +69,7 @@
         content: '\0052';
       }
 
-      display: inline-block; 
+      display: inline-block;
     }
 
     .accordion-button_less {
@@ -77,21 +77,17 @@
     }
 
     .accordion-content {
+      display: none;
 
       @include respond-to(medium-up) {
         display: inline-block;
       }
-
-      display: none; 
     }
 
     .accordion-more {
-      display: none; 
+      display: none;
     }
-    
   }
-
-
 }
 
 .accordion-button,
@@ -104,12 +100,11 @@
     font-weight: normal;
     text-decoration: inherit;
   }
-
 }
 
 .accordion-button {
-  background-size: 50%;
   background-color: transparent;
+  background-size: 50%;
   height: 2rem;
   margin: 0;
   position: absolute;

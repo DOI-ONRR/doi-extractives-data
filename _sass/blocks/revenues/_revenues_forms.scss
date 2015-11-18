@@ -1,12 +1,12 @@
 // Revenues Forms
 //
-// 
+//
 //
 // Styleguide blocks.revenues_forms
 
 .revenues_page-forms {
-  padding-top: $base-padding;
   padding-bottom: $base-padding;
+  padding-top: $base-padding;
 
   h1 {
     color: $light-black;
@@ -14,8 +14,8 @@
 
   h2 {
     border-bottom: $regular-border-size solid $dark-gray;
-    padding-bottom: $base-padding-lite;
     margin-bottom: $base-padding-lite;
+    padding-bottom: $base-padding-lite;
   }
 
   @include respond-to(small-up) {
@@ -29,6 +29,7 @@
     h1 {
       @include span-columns(4);
     }
+
     .revenues_page-forms_options {
       @include span-columns(8);
       @include omega();
@@ -53,14 +54,15 @@
     line-height: 1.2;
   }
 }
+
 .revenues_page-forms_numbers_first {
   border-bottom: 2px solid $dark-gray;
-  padding-bottom: $base-padding-lite;
   margin-bottom: $base-padding-lite;
+  padding-bottom: $base-padding-lite;
 }
 
 .revenues_page-forms_numbers_last {
   border-top: 2px solid $dark-gray;
-  padding-top: $base-padding-lite;
   margin-top: $base-padding-lite;
+  padding-top: $base-padding-lite;
 }

@@ -1,22 +1,25 @@
-.sticky_nav{
-  position: absolute;
+.sticky_nav {
   left: percentage(7 / 12);
   padding-left: $base-padding-extra;
-  top: 0;  
-  
+  position: absolute;
+  top: 0;
+
   @include respond-to(medium-down) {
     display: none;
   }
 }
-.sticky_nav-nav{
-    margin-top: $base-padding-extra;
+
+.sticky_nav-nav {
+  margin-top: $base-padding-extra;
 }
 
 .sticky_nav-nav_item {
-  list-style-type: none;
-  padding: $base-padding-lite;
   @include heading('para-lg');
+
+  list-style-type: none;
   margin-bottom: 0;
+  padding: $base-padding-lite;
+
   &.active a {
     color: $dark-gray;
     font-weight: $weight-book;

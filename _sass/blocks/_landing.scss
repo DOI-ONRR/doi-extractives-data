@@ -7,13 +7,13 @@
 
 .landing-section,
 .landing-section_open {
+  border-bottom: $thin-border-size solid $mid-gray;
+
   @include respond-to(medium-up) {
     @include span-columns(5);
 
     border-bottom: none;
   }
-
-  border-bottom: $thin-border-size solid $mid-gray;
 }
 
 .landing-section_top {
@@ -66,9 +66,9 @@
 
     .landing-steps {
       @include span-columns(12);
-      font-size: 0.9em;
 
       border: 1px solid $mid-gray;
+      font-size: 0.9em;
       padding: $base-padding-lite;
       text-align: center;
 

@@ -15,7 +15,7 @@
   var timeline = root.select('#timeline');
 
   var getter = eiti.data.getter;
-  var formatNumber = String;
+  var formatNumber = eiti.format.si;
   var NULL_FILL = '#eee';
 
   // buttons that expand and collapse other elements
@@ -40,7 +40,14 @@
     });
 
   // create our data "model"
-  var model = createModel();
+  var model = createModel()
+    .on('yearly', function(data) {
+      timeline.call(updateTimeline, data, state);
+    })
+    .on('products', function(products) {
+      updateProductList(products)
+        .property('value', state.get('product') || '');
+    });
 
   // kick off the "app"
   initialize();
@@ -80,8 +87,13 @@
     var old = state;
     state = fn(state);
     if (!Immutable.is(old, state)) {
-      if (!state.get('group') || state.get('group') !== old.get('group')) {
+      if (stateChanged(old, state, 'group')) {
+        console.warn('commodity group:', old.get('group'), '->', state.get('group'));
         state = state.delete('commodity');
+      }
+      if (stateChanged(old, state, 'commodity')) {
+        console.warn('commodity:', old.get('commodity'), '->', state.get('commodity'));
+        state = state.delete('product');
       }
       render(state, old);
       location.hash = eiti.url.qs.format(state.toJS());
@@ -98,6 +110,7 @@
     if (product) {
       var match = product.match(/( \(.+\))\s*$/);
       var units = match ? match[1] : '';
+      console.log('product units:', units);
       formatNumber = eiti.format.transform(eiti.format.si, function(str) {
         return str + units;
       });
@@ -150,10 +163,6 @@
     }
 
     updateFilterDescription(state);
-
-    model.on('yearly', function(data) {
-      timeline.call(updateTimeline, data, state);
-    });
 
     selected.call(renderRegion, state);
     // console.timeEnd('render');
@@ -655,7 +664,7 @@
 
   function createModel() {
     var model = {};
-    var dispatch = d3.dispatch('yearly');
+    var dispatch = d3.dispatch('yearly', 'products');
     var req;
     var previous;
 
@@ -700,6 +709,10 @@
           return commodities.has(d.Commodity);
         });
       }
+
+      var products = unique(data, 'Product')
+        .sort(d3.ascending);
+      dispatch.products(products);
 
       var region = state.get('region');
       if (region && region.length === 3) {
@@ -767,14 +780,34 @@
     };
   }
 
-  function toggleExpander(text) {
-    var id = this.getAttribute('aria-controls');
-    var hidden = 'aria-hidden';
-    var target = d3.select('#' + id);
-    var expanded = target.attr(hidden) !== 'false';
-    target.attr(hidden, !expanded);
-    this.textContent = text[expanded];
-    this.setAttribute('aria-expanded', expanded);
+  function updateProductList(products) {
+    var select = root.select('[name=product]');
+
+    select.select('option:first-child')
+      .text(products.length > 1
+            ? 'All ' + products.length + ' products'
+            : products.length + eiti.format.pluralize(products.length, ' product'));
+
+    var options = select.selectAll('option.product')
+      .data(products, identity);
+    options.enter().append('option')
+      .attr('class', 'product')
+      .text(identity);
+    options.exit().remove();
+    return select;
+  }
+
+  function stateChanged(old, state, key) {
+    var prev = old.get(key) || '';
+    var next = state.get(key) || '';
+    return prev !== next;
+  }
+
+  function unique(data, key) {
+    return d3.nest()
+      .key(getter(key))
+      .entries(data)
+      .map(getter('key'));
   }
 
   function identity(d) {

@@ -50,7 +50,7 @@
   }
 
   &.overview {
-    color: $neutral-gray;
+    color: $mid-gray;
 
     .landing-description {
       @include span-columns(8);
@@ -62,22 +62,18 @@
       @include omega();
 
       margin-bottom: $base-padding-lite;
-
-      [class*='icon-'] {
-        float: right;
-      }
     }
 
     .landing-steps {
       @include span-columns(12);
 
-      background: $light-gray;
+      border: 1px solid $mid-gray;
       font-size: 0.9em;
       padding: $base-padding-lite;
       text-align: center;
 
       icon {
-        color: $dark-gray;
+        color: $mid-gray;
       }
     }
   }

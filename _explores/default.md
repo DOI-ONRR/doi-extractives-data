@@ -6,11 +6,7 @@ permalink: /explore/
 ---
 
 <section class="slab-delta">
-<<<<<<< HEAD
-  <div class="container-outer">
-=======
   <div class="container-outer landing-section_top">
->>>>>>> b5fdbb1d0849a43b7251bdb4b01287fc115a7fd2
 	  <div class="container-left-8 hero-left">
 			<h1>{{ page.title }}</h1>
 			<p class="hero-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>

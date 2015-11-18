@@ -1,7 +1,7 @@
 ---
 title: What's New
 layout: default
-permalink: /about/new/
+permalink: /about/whats-new/
 ---
 
 <div class="container-outer container-padded">

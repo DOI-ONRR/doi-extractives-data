@@ -5,7 +5,11 @@
   padding-top: $base-padding;
 }
 
-.landing-section {
+
+.landing-section,
+.landing-section_open {
+  border-bottom: $thin-border-size solid $mid-gray;
+
   @include respond-to(medium-up) {
     @include span-columns(5.5);
 
@@ -36,6 +40,34 @@
 
   &.renewables {
     background: url('../img/revenues/cards/renewables.png') bottom right no-repeat;
+
+  &.overview {
+    color: $mid-gray;
+
+    .landing-description {
+      @include span-columns(8);
+    }
+
+    .landing-icons {
+      @include span-columns(4);
+      @include font-size(3);
+      @include omega();
+
+      margin-bottom: $base-padding-lite;
+    }
+
+    .landing-steps {
+      @include span-columns(12);
+
+      border: 1px solid $mid-gray;
+      font-size: 0.9em;
+      padding: $base-padding-lite;
+      text-align: center;
+
+      icon {
+        color: $mid-gray;
+      }
+    }
   }
 
   &.oil-gas,

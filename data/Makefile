@@ -123,11 +123,14 @@ offshore/revenues.tsv: $(input)onrr/offshore-revenues.tsv
 		$< > $@
 
 # offshore production volumes by region and area
-offshore/production.tsv: $(input)onrr/offshore-production.tsv
+offshore/production.tsv: $(input)onrr/regional-production.tsv
 	mkdir -p $(dir $@)
-	bin/group-offshore-production.js \
-		--keys Year/Region/Area/Commodity/Product \
-		$< > $@
+	$(tito) --read tsv $< \
+		| $(datex) --filter 'Shore === "Offshore"' \
+		| $(tito) --write tsv \
+		| bin/group-offshore-production.js \
+			--keys Year/Region/Area/Commodity/Product \
+			> $@
 
 # regional (state and offshore) revenues
 regional/revenues.tsv: state/revenues.tsv offshore/revenues.tsv

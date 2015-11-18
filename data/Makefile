@@ -25,6 +25,7 @@ REVENUE_FILES = \
 PRODUCTION_FILES = \
 	national/production.tsv \
 	state/production.tsv \
+	county-products-by-state \
 	county-production-by-state \
 	offshore/production.tsv \
 	regional/production.tsv
@@ -196,6 +197,18 @@ county-production-by-state: county/production.tsv
 	$(tito) --read tsv $< \
 		| bin/divvy.js \
 			--path 'county/by-state/{{ State }}/production.tsv' \
+			--of tsv
+
+# divvy up county revenues into separate files by state
+county-products-by-state: county/production.tsv
+	$(tito) --read tsv $< \
+		| bin/sum.js \
+			--if ndjson \
+			--group 'Year,State,County,FIPS' \
+			--count 'Volume' \
+			--of ndjson \
+		| bin/divvy.js \
+			--path 'county/by-state/{{ State }}/products.tsv' \
 			--of tsv
 
 county-resource-revenues-by-state: county/revenues.tsv

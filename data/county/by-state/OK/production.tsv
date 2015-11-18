@@ -1,0 +1,1209 @@
+Year	State	County	FIPS	Commodity	Product	Type	Volume
+2004	OK	Alfalfa	40003	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	44815.88
+2004	OK	Alfalfa	40003	Oil	Condensate (bbl)	Royalties	334.72
+2004	OK	Alfalfa	40003	Oil	Oil (bbl)	Royalties	722.46
+2004	OK	Beaver	40007	Gas	Processed (Residue) Gas (mcf)	Royalties	17390.46
+2004	OK	Beaver	40007	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	219716.27
+2004	OK	Beaver	40007	NGL	Gas Plant Products (gal)	Royalties	74292.05
+2004	OK	Beaver	40007	Oil	Condensate (bbl)	Royalties	410.07
+2004	OK	Beaver	40007	Oil	Oil (bbl)	Royalties	2777.89
+2004	OK	Beckham	40009	Gas	Processed (Residue) Gas (mcf)	Royalties	23674.32
+2004	OK	Beckham	40009	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1994837.46
+2004	OK	Beckham	40009	NGL	Gas Plant Products (gal)	Royalties	30200.16
+2004	OK	Beckham	40009	Oil	Condensate (bbl)	Royalties	689.04
+2004	OK	Beckham	40009	Oil	Oil (bbl)	Royalties	482.11
+2004	OK	Blaine	40011	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	248601.52
+2004	OK	Blaine	40011	NGL	Gas Plant Products (gal)	Royalties	96825.86
+2004	OK	Blaine	40011	Oil	Condensate (bbl)	Royalties	1591.28
+2004	OK	Blaine	40011	Oil	Oil (bbl)	Royalties	1791.16
+2004	OK	Canadian	40017	Gas	Processed (Residue) Gas (mcf)	Royalties	13165.54
+2004	OK	Canadian	40017	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	196217.4
+2004	OK	Canadian	40017	NGL	Gas Plant Products (gal)	Royalties	4638.47
+2004	OK	Canadian	40017	Oil	Condensate (bbl)	Royalties	1364.27
+2004	OK	Canadian	40017	Oil	Oil (bbl)	Royalties	1778.13
+2004	OK	Cimarron	40025	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1230
+2004	OK	Coal	40029	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	124840.77
+2004	OK	Comanche	40031	Oil	Oil (bbl)	Royalties	1365.51
+2004	OK	Creek	40037	Oil	Oil (bbl)	Royalties	44.88
+2004	OK	Custer	40039	Gas	Processed (Residue) Gas (mcf)	Royalties	21643.46
+2004	OK	Custer	40039	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	382918.3
+2004	OK	Custer	40039	NGL	Gas Plant Products (gal)	Royalties	56720.91
+2004	OK	Custer	40039	Oil	Condensate (bbl)	Royalties	1400.15
+2004	OK	Custer	40039	Oil	Oil (bbl)	Royalties	1171.34
+2004	OK	Dewey	40043	Gas	Processed (Residue) Gas (mcf)	Royalties	60916.51
+2004	OK	Dewey	40043	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	941576.99
+2004	OK	Dewey	40043	NGL	Gas Plant Products (gal)	Royalties	404598.22
+2004	OK	Dewey	40043	Oil	Condensate (bbl)	Royalties	14530.56
+2004	OK	Dewey	40043	Oil	Oil (bbl)	Royalties	10469.97
+2004	OK	Ellis	40045	Gas	Processed (Residue) Gas (mcf)	Royalties	12753.26
+2004	OK	Ellis	40045	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	414058.44
+2004	OK	Ellis	40045	NGL	Gas Plant Products (gal)	Royalties	1508.12
+2004	OK	Ellis	40045	Oil	Condensate (bbl)	Royalties	7403.03
+2004	OK	Ellis	40045	Oil	Oil (bbl)	Royalties	12628.38
+2004	OK	Garfield	40047	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	86832.53
+2004	OK	Garfield	40047	Oil	Condensate (bbl)	Royalties	777.32
+2004	OK	Garfield	40047	Oil	Oil (bbl)	Royalties	186.05
+2004	OK	Garvin	40049	Oil	Oil (bbl)	Royalties	701.48
+2004	OK	Garvin	40049	Oil	Other Liquid Hydrocarbons (bbl)	Royalties	177.95
+2004	OK	Grady	40051	Gas	Processed (Residue) Gas (mcf)	Royalties	2767.26
+2004	OK	Grady	40051	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	41268.6
+2004	OK	Grady	40051	NGL	Gas Plant Products (gal)	Royalties	561.89
+2004	OK	Grady	40051	Oil	Condensate (bbl)	Royalties	593.11
+2004	OK	Grady	40051	Oil	Oil (bbl)	Royalties	755.57
+2004	OK	Greer	40055	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3636.11
+2004	OK	Greer	40055	Oil	Oil (bbl)	Royalties	11.93
+2004	OK	Harper	40059	Gas	Processed (Residue) Gas (mcf)	Royalties	6370
+2004	OK	Harper	40059	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	79008.62
+2004	OK	Harper	40059	Oil	Condensate (bbl)	Royalties	78.8
+2004	OK	Harper	40059	Oil	Oil (bbl)	Royalties	33.9
+2004	OK	Haskell	40061	Gas	Processed (Residue) Gas (mcf)	Royalties	9968.32
+2004	OK	Haskell	40061	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	413163.98
+2004	OK	Hughes	40063	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	13202.57
+2004	OK	Kingfisher	40073	Gas	Processed (Residue) Gas (mcf)	Royalties	10.38
+2004	OK	Kingfisher	40073	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	104780.54
+2004	OK	Kingfisher	40073	NGL	Gas Plant Products (gal)	Royalties	64.64
+2004	OK	Kingfisher	40073	Oil	Condensate (bbl)	Royalties	1091.61
+2004	OK	Kingfisher	40073	Oil	Oil (bbl)	Royalties	392.98
+2004	OK	Latimer	40077	Gas	Processed (Residue) Gas (mcf)	Royalties	35.35
+2004	OK	Latimer	40077	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	284893.61
+2004	OK	Le Flore	40079	Coal	Coal (ton)	Royalties	767819
+2004	OK	Le Flore	40079	Gas	Coal Bed Methane (mcf)	Royalties	65104.87
+2004	OK	Le Flore	40079	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	54664.14
+2004	OK	Lincoln	40081	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	146497
+2004	OK	Lincoln	40081	Oil	Condensate (bbl)	Royalties	4847.49
+2004	OK	Lincoln	40081	Oil	Oil (bbl)	Royalties	587.84
+2004	OK	Logan	40083	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	475.47
+2004	OK	Logan	40083	Oil	Oil (bbl)	Royalties	9.81
+2004	OK	Major	40093	Gas	Processed (Residue) Gas (mcf)	Royalties	148523.7
+2004	OK	Major	40093	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	988282.45
+2004	OK	Major	40093	NGL	Gas Plant Products (gal)	Royalties	144964.66
+2004	OK	Major	40093	Oil	Condensate (bbl)	Royalties	4965.39
+2004	OK	Major	40093	Oil	Inlet Scrubber (bbl)	Royalties	2.62
+2004	OK	Major	40093	Oil	Oil (bbl)	Royalties	30906.84
+2004	OK	Mcclain	40087	Oil	Oil (bbl)	Royalties	26.43
+2004	OK	Mcintosh	40091	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	18846.87
+2004	OK	Oklahoma	40109	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	873.28
+2004	OK	Oklahoma	40109	Oil	Oil (bbl)	Royalties	9.84
+2004	OK	Payne	40119	Gas	Processed (Residue) Gas (mcf)	Royalties	53384
+2004	OK	Payne	40119	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3141.5
+2004	OK	Payne	40119	Oil	Oil (bbl)	Royalties	6.64
+2004	OK	Pittsburg	40121	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2554444.18
+2004	OK	Pittsburg	40121	Oil	Oil (bbl)	Royalties	4.11
+2004	OK	Roger Mills	40129	Gas	Processed (Residue) Gas (mcf)	Royalties	257260.19
+2004	OK	Roger Mills	40129	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3916448.24
+2004	OK	Roger Mills	40129	NGL	Gas Plant Products (gal)	Royalties	633771.31
+2004	OK	Roger Mills	40129	Oil	Condensate (bbl)	Royalties	9975.34
+2004	OK	Roger Mills	40129	Oil	Oil (bbl)	Royalties	28829.46
+2004	OK	Sequoyah	40135	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	27295.18
+2004	OK	Texas	40139	Gas	Processed (Residue) Gas (mcf)	Royalties	68822.05
+2004	OK	Texas	40139	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	141652.62
+2004	OK	Texas	40139	NGL	Gas Plant Products (gal)	Royalties	132945.1
+2004	OK	Texas	40139	Oil	Condensate (bbl)	Royalties	256.58
+2004	OK	Texas	40139	Oil	Oil (bbl)	Royalties	408.21
+2004	OK	Tillman	40141	Oil	Oil (bbl)	Royalties	12195.24
+2004	OK	Woods	40151	Gas	Processed (Residue) Gas (mcf)	Royalties	93121.63
+2004	OK	Woods	40151	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1109793.96
+2004	OK	Woods	40151	NGL	Gas Plant Products (gal)	Royalties	36055.42
+2004	OK	Woods	40151	Oil	Condensate (bbl)	Royalties	1671.49
+2004	OK	Woods	40151	Oil	Oil (bbl)	Royalties	11344.14
+2004	OK	Woodward	40153	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	466539.87
+2004	OK	Woodward	40153	Oil	Condensate (bbl)	Royalties	813.19
+2004	OK	Woodward	40153	Oil	Oil (bbl)	Royalties	1380.61
+2005	OK	Alfalfa	40003	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	116563.09
+2005	OK	Alfalfa	40003	Oil	Condensate (bbl)	Royalties	755.6
+2005	OK	Alfalfa	40003	Oil	Oil (bbl)	Royalties	702.74
+2005	OK	Beaver	40007	Gas	Processed (Residue) Gas (mcf)	Royalties	17917.63
+2005	OK	Beaver	40007	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	166164.01
+2005	OK	Beaver	40007	NGL	Gas Plant Products (gal)	Royalties	86068.01
+2005	OK	Beaver	40007	Oil	Condensate (bbl)	Royalties	347.77
+2005	OK	Beaver	40007	Oil	Oil (bbl)	Royalties	3561.92
+2005	OK	Beckham	40009	Gas	Processed (Residue) Gas (mcf)	Royalties	42144.74
+2005	OK	Beckham	40009	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2368937.35
+2005	OK	Beckham	40009	NGL	Gas Plant Products (gal)	Royalties	69670.96
+2005	OK	Beckham	40009	Oil	Condensate (bbl)	Royalties	569.04
+2005	OK	Beckham	40009	Oil	Oil (bbl)	Royalties	384.47
+2005	OK	Blaine	40011	Gas	Processed (Residue) Gas (mcf)	Royalties	2991.67
+2005	OK	Blaine	40011	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	296598.51
+2005	OK	Blaine	40011	NGL	Gas Plant Products (gal)	Royalties	40023.56
+2005	OK	Blaine	40011	Oil	Condensate (bbl)	Royalties	2551.79
+2005	OK	Blaine	40011	Oil	Oil (bbl)	Royalties	408.41
+2005	OK	Canadian	40017	Gas	Processed (Residue) Gas (mcf)	Royalties	9098.04
+2005	OK	Canadian	40017	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	213725.82
+2005	OK	Canadian	40017	NGL	Gas Plant Products (gal)	Royalties	3240.67
+2005	OK	Canadian	40017	Oil	Condensate (bbl)	Royalties	1242.36
+2005	OK	Canadian	40017	Oil	Oil (bbl)	Royalties	1540.5
+2005	OK	Cimarron	40025	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1908.12
+2005	OK	Coal	40029	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	103912.87
+2005	OK	Coal	40029	Oil	Oil (bbl)	Royalties	17.83
+2005	OK	Comanche	40031	Oil	Oil (bbl)	Royalties	1286.76
+2005	OK	Creek	40037	Oil	Oil (bbl)	Royalties	42.4
+2005	OK	Custer	40039	Gas	Processed (Residue) Gas (mcf)	Royalties	20363.25
+2005	OK	Custer	40039	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	343915.74
+2005	OK	Custer	40039	NGL	Gas Plant Products (gal)	Royalties	53913.09
+2005	OK	Custer	40039	Oil	Condensate (bbl)	Royalties	1540.05
+2005	OK	Custer	40039	Oil	Oil (bbl)	Royalties	1191.19
+2005	OK	Dewey	40043	Gas	Processed (Residue) Gas (mcf)	Royalties	64520.88
+2005	OK	Dewey	40043	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	635540.7
+2005	OK	Dewey	40043	NGL	Gas Plant Products (gal)	Royalties	316390.36
+2005	OK	Dewey	40043	Oil	Condensate (bbl)	Royalties	2315.46
+2005	OK	Dewey	40043	Oil	Oil (bbl)	Royalties	14131.77
+2005	OK	Ellis	40045	Gas	Processed (Residue) Gas (mcf)	Royalties	10495.56
+2005	OK	Ellis	40045	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	295765.16
+2005	OK	Ellis	40045	NGL	Gas Plant Products (gal)	Royalties	17040.09
+2005	OK	Ellis	40045	Oil	Condensate (bbl)	Royalties	5491.95
+2005	OK	Ellis	40045	Oil	Drip or Scrubber Condensate (bbl)	Royalties	0.37
+2005	OK	Ellis	40045	Oil	Oil (bbl)	Royalties	4233.96
+2005	OK	Garfield	40047	Gas	Processed (Residue) Gas (mcf)	Royalties	42.63
+2005	OK	Garfield	40047	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	81532.13
+2005	OK	Garfield	40047	NGL	Gas Plant Products (gal)	Royalties	217.69
+2005	OK	Garfield	40047	Oil	Condensate (bbl)	Royalties	407.69
+2005	OK	Garfield	40047	Oil	Oil (bbl)	Royalties	189.92
+2005	OK	Garvin	40049	Oil	Oil (bbl)	Royalties	703.23
+2005	OK	Grady	40051	Gas	Processed (Residue) Gas (mcf)	Royalties	1789.86
+2005	OK	Grady	40051	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	38499.63
+2005	OK	Grady	40051	NGL	Gas Plant Products (gal)	Royalties	173.57
+2005	OK	Grady	40051	Oil	Condensate (bbl)	Royalties	568.52
+2005	OK	Grady	40051	Oil	Oil (bbl)	Royalties	579.45
+2005	OK	Greer	40055	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3075.32
+2005	OK	Harper	40059	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	153488.38
+2005	OK	Harper	40059	Oil	Condensate (bbl)	Royalties	155.57
+2005	OK	Harper	40059	Oil	Oil (bbl)	Royalties	31.94
+2005	OK	Haskell	40061	Gas	Processed (Residue) Gas (mcf)	Royalties	7683.42
+2005	OK	Haskell	40061	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	362843.62
+2005	OK	Hughes	40063	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	8718.96
+2005	OK	Kingfisher	40073	Gas	Processed (Residue) Gas (mcf)	Royalties	8.26
+2005	OK	Kingfisher	40073	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	71205.82
+2005	OK	Kingfisher	40073	NGL	Gas Plant Products (gal)	Royalties	64.42
+2005	OK	Kingfisher	40073	Oil	Condensate (bbl)	Royalties	459.24
+2005	OK	Kingfisher	40073	Oil	Oil (bbl)	Royalties	340.75
+2005	OK	Latimer	40077	Gas	Processed (Residue) Gas (mcf)	Royalties	30.54
+2005	OK	Latimer	40077	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	271886.66
+2005	OK	Le Flore	40079	Coal	Coal (ton)	Royalties	713647
+2005	OK	Le Flore	40079	Gas	Coal Bed Methane (mcf)	Royalties	75524.34
+2005	OK	Le Flore	40079	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	64843.17
+2005	OK	Le Flore	40079	Oil	Condensate (bbl)	Royalties	35.04
+2005	OK	Lincoln	40081	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	101525
+2005	OK	Lincoln	40081	NGL	Gas Plant Products (gal)	Royalties	1286
+2005	OK	Lincoln	40081	Oil	Condensate (bbl)	Royalties	3420.5
+2005	OK	Lincoln	40081	Oil	Oil (bbl)	Royalties	648.32
+2005	OK	Logan	40083	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	458.28
+2005	OK	Logan	40083	Oil	Oil (bbl)	Royalties	9.76
+2005	OK	Major	40093	Gas	Processed (Residue) Gas (mcf)	Royalties	332554.06
+2005	OK	Major	40093	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1008873.45
+2005	OK	Major	40093	NGL	Gas Plant Products (gal)	Royalties	146423.94
+2005	OK	Major	40093	Oil	Condensate (bbl)	Royalties	3405.32
+2005	OK	Major	40093	Oil	Inlet Scrubber (bbl)	Royalties	9.56
+2005	OK	Major	40093	Oil	Oil (bbl)	Royalties	26305.13
+2005	OK	Mcclain	40087	Oil	Oil (bbl)	Royalties	13.1
+2005	OK	Mcintosh	40091	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	19896.09
+2005	OK	Oklahoma	40109	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	874.22
+2005	OK	Oklahoma	40109	Oil	Oil (bbl)	Royalties	8.8
+2005	OK	Payne	40119	Gas	Processed (Residue) Gas (mcf)	Royalties	13672
+2005	OK	Payne	40119	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	164761.25
+2005	OK	Payne	40119	Oil	Oil (bbl)	Royalties	132.28
+2005	OK	Pittsburg	40121	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2194602.15
+2005	OK	Roger Mills	40129	Gas	Coal Bed Methane (mcf)	Royalties	404.24
+2005	OK	Roger Mills	40129	Gas	Processed (Residue) Gas (mcf)	Royalties	564275.69
+2005	OK	Roger Mills	40129	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3767907
+2005	OK	Roger Mills	40129	NGL	Gas Plant Products (gal)	Royalties	1747474.77
+2005	OK	Roger Mills	40129	Oil	Condensate (bbl)	Royalties	10527.37
+2005	OK	Roger Mills	40129	Oil	Oil (bbl)	Royalties	17813.23
+2005	OK	Sequoyah	40135	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	31557.61
+2005	OK	Texas	40139	Gas	Processed (Residue) Gas (mcf)	Royalties	69550.26
+2005	OK	Texas	40139	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	121424.3
+2005	OK	Texas	40139	NGL	Gas Plant Products (gal)	Royalties	128513.45
+2005	OK	Texas	40139	Oil	Condensate (bbl)	Royalties	81.81
+2005	OK	Texas	40139	Oil	Oil (bbl)	Royalties	437.11
+2005	OK	Tillman	40141	Oil	Oil (bbl)	Royalties	17781.27
+2005	OK	Woods	40151	Gas	Processed (Residue) Gas (mcf)	Royalties	57478.78
+2005	OK	Woods	40151	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1118850.31
+2005	OK	Woods	40151	NGL	Gas Plant Products (gal)	Royalties	33174.07
+2005	OK	Woods	40151	Oil	Condensate (bbl)	Royalties	1610.06
+2005	OK	Woods	40151	Oil	Oil (bbl)	Royalties	11373.84
+2005	OK	Woodward	40153	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	496091.83
+2005	OK	Woodward	40153	Oil	Condensate (bbl)	Royalties	666.86
+2005	OK	Woodward	40153	Oil	Oil (bbl)	Royalties	1669.84
+2006	OK	Alfalfa	40003	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	125644.08
+2006	OK	Alfalfa	40003	Oil	Condensate (bbl)	Royalties	850.72
+2006	OK	Alfalfa	40003	Oil	Oil (bbl)	Royalties	904.12
+2006	OK	Beaver	40007	Gas	Processed (Residue) Gas (mcf)	Royalties	12044
+2006	OK	Beaver	40007	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	287107.78
+2006	OK	Beaver	40007	NGL	Gas Plant Products (gal)	Royalties	81332.08
+2006	OK	Beaver	40007	Oil	Condensate (bbl)	Royalties	260.85
+2006	OK	Beaver	40007	Oil	Oil (bbl)	Royalties	3303.27
+2006	OK	Beckham	40009	Gas	Processed (Residue) Gas (mcf)	Royalties	35797.6
+2006	OK	Beckham	40009	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2290606.8
+2006	OK	Beckham	40009	NGL	Gas Plant Products (gal)	Royalties	46330.88
+2006	OK	Beckham	40009	Oil	Condensate (bbl)	Royalties	671.05
+2006	OK	Beckham	40009	Oil	Oil (bbl)	Royalties	511.7
+2006	OK	Blaine	40011	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	344043.04
+2006	OK	Blaine	40011	NGL	Gas Plant Products (gal)	Royalties	45121.05
+2006	OK	Blaine	40011	Oil	Condensate (bbl)	Royalties	1212.86
+2006	OK	Blaine	40011	Oil	Oil (bbl)	Royalties	5082.89
+2006	OK	Canadian	40017	Gas	Processed (Residue) Gas (mcf)	Royalties	4690.95
+2006	OK	Canadian	40017	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	351365.93
+2006	OK	Canadian	40017	NGL	Gas Plant Products (gal)	Royalties	8136.68
+2006	OK	Canadian	40017	Oil	Condensate (bbl)	Royalties	693.1
+2006	OK	Canadian	40017	Oil	Oil (bbl)	Royalties	2046.22
+2006	OK	Coal	40029	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	191437.06
+2006	OK	Coal	40029	Oil	Oil (bbl)	Royalties	8.37
+2006	OK	Comanche	40031	Oil	Oil (bbl)	Royalties	1188.24
+2006	OK	Creek	40037	Oil	Oil (bbl)	Royalties	44.72
+2006	OK	Custer	40039	Gas	Processed (Residue) Gas (mcf)	Royalties	23112.52
+2006	OK	Custer	40039	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	327541.22
+2006	OK	Custer	40039	NGL	Gas Plant Products (gal)	Royalties	58291.8
+2006	OK	Custer	40039	Oil	Condensate (bbl)	Royalties	1781.52
+2006	OK	Custer	40039	Oil	Oil (bbl)	Royalties	1194.19
+2006	OK	Dewey	40043	Gas	Processed (Residue) Gas (mcf)	Royalties	53115.21
+2006	OK	Dewey	40043	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	526671.54
+2006	OK	Dewey	40043	NGL	Gas Plant Products (gal)	Royalties	290595.87
+2006	OK	Dewey	40043	Oil	Condensate (bbl)	Royalties	1718.79
+2006	OK	Dewey	40043	Oil	Oil (bbl)	Royalties	9437.36
+2006	OK	Ellis	40045	Gas	Processed (Residue) Gas (mcf)	Royalties	9262.15
+2006	OK	Ellis	40045	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	273468.39
+2006	OK	Ellis	40045	NGL	Gas Plant Products (gal)	Royalties	28647.42
+2006	OK	Ellis	40045	Oil	Condensate (bbl)	Royalties	4352.02
+2006	OK	Ellis	40045	Oil	Drip or Scrubber Condensate (bbl)	Royalties	1.08
+2006	OK	Ellis	40045	Oil	Oil (bbl)	Royalties	3931.74
+2006	OK	Garfield	40047	Gas	Processed (Residue) Gas (mcf)	Royalties	68.88
+2006	OK	Garfield	40047	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	59524.33
+2006	OK	Garfield	40047	NGL	Gas Plant Products (gal)	Royalties	201.93
+2006	OK	Garfield	40047	Oil	Condensate (bbl)	Royalties	553.66
+2006	OK	Garfield	40047	Oil	Oil (bbl)	Royalties	12.4
+2006	OK	Garvin	40049	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	17872.99
+2006	OK	Garvin	40049	Oil	Oil (bbl)	Royalties	3578.2
+2006	OK	Grady	40051	Gas	Processed (Residue) Gas (mcf)	Royalties	673.9
+2006	OK	Grady	40051	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	27259.69
+2006	OK	Grady	40051	Oil	Condensate (bbl)	Royalties	194.6
+2006	OK	Grady	40051	Oil	Oil (bbl)	Royalties	449.78
+2006	OK	Greer	40055	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	7452.57
+2006	OK	Greer	40055	Oil	Oil (bbl)	Royalties	15.3
+2006	OK	Harper	40059	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	206923.42
+2006	OK	Harper	40059	Oil	Condensate (bbl)	Royalties	82.02
+2006	OK	Harper	40059	Oil	Oil (bbl)	Royalties	37.67
+2006	OK	Haskell	40061	Gas	Processed (Residue) Gas (mcf)	Royalties	7040.02
+2006	OK	Haskell	40061	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	304561.36
+2006	OK	Hughes	40063	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	4913.09
+2006	OK	Kingfisher	40073	Gas	Processed (Residue) Gas (mcf)	Royalties	55.28
+2006	OK	Kingfisher	40073	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	56992.33
+2006	OK	Kingfisher	40073	NGL	Gas Plant Products (gal)	Royalties	186.43
+2006	OK	Kingfisher	40073	Oil	Condensate (bbl)	Royalties	376.32
+2006	OK	Kingfisher	40073	Oil	Oil (bbl)	Royalties	378.97
+2006	OK	Latimer	40077	Gas	Processed (Residue) Gas (mcf)	Royalties	21.21
+2006	OK	Latimer	40077	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	251366.92
+2006	OK	Le Flore	40079	Coal	Coal (ton)	Royalties	710653
+2006	OK	Le Flore	40079	Gas	Coal Bed Methane (mcf)	Royalties	57676.89
+2006	OK	Le Flore	40079	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	93714.24
+2006	OK	Le Flore	40079	Oil	Condensate (bbl)	Royalties	34.8
+2006	OK	Lincoln	40081	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	64097.1
+2006	OK	Lincoln	40081	Oil	Condensate (bbl)	Royalties	2112.17
+2006	OK	Lincoln	40081	Oil	Oil (bbl)	Royalties	933.2
+2006	OK	Logan	40083	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	492.89
+2006	OK	Logan	40083	Oil	Oil (bbl)	Royalties	9.57
+2006	OK	Major	40093	Gas	Processed (Residue) Gas (mcf)	Royalties	333337.2
+2006	OK	Major	40093	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1073612.48
+2006	OK	Major	40093	NGL	Gas Plant Products (gal)	Royalties	150786.32
+2006	OK	Major	40093	Oil	Condensate (bbl)	Royalties	2746.72
+2006	OK	Major	40093	Oil	Inlet Scrubber (bbl)	Royalties	8.94
+2006	OK	Major	40093	Oil	Oil (bbl)	Royalties	30178.73
+2006	OK	Mcclain	40087	Oil	Oil (bbl)	Royalties	10.34
+2006	OK	Mcintosh	40091	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	19221.21
+2006	OK	Oklahoma	40109	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	771.44
+2006	OK	Oklahoma	40109	Oil	Oil (bbl)	Royalties	4.96
+2006	OK	Payne	40119	Gas	Processed (Residue) Gas (mcf)	Royalties	3600
+2006	OK	Payne	40119	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	279935.02
+2006	OK	Payne	40119	Oil	Oil (bbl)	Royalties	185.9
+2006	OK	Pittsburg	40121	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1221681.75
+2006	OK	Pittsburg	40121	Oil	Oil (bbl)	Royalties	0.77
+2006	OK	Roger Mills	40129	Gas	Processed (Residue) Gas (mcf)	Royalties	715092.86
+2006	OK	Roger Mills	40129	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3641491.64
+2006	OK	Roger Mills	40129	NGL	Gas Plant Products (gal)	Royalties	2171082.14
+2006	OK	Roger Mills	40129	Oil	Condensate (bbl)	Royalties	10121.7
+2006	OK	Roger Mills	40129	Oil	Oil (bbl)	Royalties	13859.11
+2006	OK	Sequoyah	40135	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	38139.32
+2006	OK	Texas	40139	Gas	Processed (Residue) Gas (mcf)	Royalties	69050.65
+2006	OK	Texas	40139	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	93739.44
+2006	OK	Texas	40139	NGL	Gas Plant Products (gal)	Royalties	150141.56
+2006	OK	Texas	40139	Oil	Condensate (bbl)	Royalties	84.44
+2006	OK	Texas	40139	Oil	Oil (bbl)	Royalties	387.03
+2006	OK	Tillman	40141	Oil	Oil (bbl)	Royalties	5616.98
+2006	OK	Woods	40151	Gas	Processed (Residue) Gas (mcf)	Royalties	52257.51
+2006	OK	Woods	40151	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1260500.23
+2006	OK	Woods	40151	NGL	Gas Plant Products (gal)	Royalties	27120.78
+2006	OK	Woods	40151	Oil	Condensate (bbl)	Royalties	1242.63
+2006	OK	Woods	40151	Oil	Oil (bbl)	Royalties	16751.77
+2006	OK	Woodward	40153	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	521892.31
+2006	OK	Woodward	40153	Oil	Condensate (bbl)	Royalties	738.74
+2006	OK	Woodward	40153	Oil	Oil (bbl)	Royalties	2340.66
+2007	OK	Alfalfa	40003	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	123380.23
+2007	OK	Alfalfa	40003	Oil	Condensate (bbl)	Royalties	708.24
+2007	OK	Alfalfa	40003	Oil	Oil (bbl)	Royalties	1099.58
+2007	OK	Beaver	40007	Gas	Processed (Residue) Gas (mcf)	Royalties	9352.06
+2007	OK	Beaver	40007	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	241599.21
+2007	OK	Beaver	40007	NGL	Gas Plant Products (gal)	Royalties	108466.53
+2007	OK	Beaver	40007	Oil	Condensate (bbl)	Royalties	254.6
+2007	OK	Beaver	40007	Oil	Oil (bbl)	Royalties	4506.56
+2007	OK	Beckham	40009	Gas	Processed (Residue) Gas (mcf)	Royalties	44521.98
+2007	OK	Beckham	40009	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1415651.98
+2007	OK	Beckham	40009	NGL	Gas Plant Products (gal)	Royalties	72797.09
+2007	OK	Beckham	40009	Oil	Condensate (bbl)	Royalties	208.36
+2007	OK	Beckham	40009	Oil	Oil (bbl)	Royalties	437.22
+2007	OK	Blaine	40011	Gas	Processed (Residue) Gas (mcf)	Royalties	1916.96
+2007	OK	Blaine	40011	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	371497.85
+2007	OK	Blaine	40011	NGL	Gas Plant Products (gal)	Royalties	62454.8
+2007	OK	Blaine	40011	Oil	Condensate (bbl)	Royalties	1386.7
+2007	OK	Blaine	40011	Oil	Oil (bbl)	Royalties	3382.88
+2007	OK	Canadian	40017	Gas	Processed (Residue) Gas (mcf)	Royalties	3310.2
+2007	OK	Canadian	40017	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	474931.55
+2007	OK	Canadian	40017	NGL	Gas Plant Products (gal)	Royalties	10848.72
+2007	OK	Canadian	40017	Oil	Condensate (bbl)	Royalties	881.26
+2007	OK	Canadian	40017	Oil	Oil (bbl)	Royalties	2294.84
+2007	OK	Coal	40029	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	780361.77
+2007	OK	Coal	40029	Oil	Condensate (bbl)	Royalties	3752.79
+2007	OK	Coal	40029	Oil	Oil (bbl)	Royalties	1222.49
+2007	OK	Comanche	40031	Oil	Oil (bbl)	Royalties	1061.44
+2007	OK	Creek	40037	Oil	Oil (bbl)	Royalties	88.16
+2007	OK	Custer	40039	Gas	Fuel Gas (mcf)	Royalties	92
+2007	OK	Custer	40039	Gas	Processed (Residue) Gas (mcf)	Royalties	19090.39
+2007	OK	Custer	40039	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	276004.44
+2007	OK	Custer	40039	NGL	Gas Plant Products (gal)	Royalties	49818.16
+2007	OK	Custer	40039	Oil	Condensate (bbl)	Royalties	1233.71
+2007	OK	Custer	40039	Oil	Oil (bbl)	Royalties	1049.82
+2007	OK	Dewey	40043	Gas	Processed (Residue) Gas (mcf)	Royalties	14137.97
+2007	OK	Dewey	40043	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	466275.84
+2007	OK	Dewey	40043	NGL	Gas Plant Products (gal)	Royalties	70305.49
+2007	OK	Dewey	40043	Oil	Condensate (bbl)	Royalties	1486.08
+2007	OK	Dewey	40043	Oil	Oil (bbl)	Royalties	8370.47
+2007	OK	Ellis	40045	Gas	Processed (Residue) Gas (mcf)	Royalties	9799.15
+2007	OK	Ellis	40045	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	342960.77
+2007	OK	Ellis	40045	NGL	Gas Plant Products (gal)	Royalties	30837.86
+2007	OK	Ellis	40045	Oil	Condensate (bbl)	Royalties	5323.22
+2007	OK	Ellis	40045	Oil	Drip or Scrubber Condensate (bbl)	Royalties	9.74
+2007	OK	Ellis	40045	Oil	Oil (bbl)	Royalties	6333.87
+2007	OK	Garfield	40047	Gas	Processed (Residue) Gas (mcf)	Royalties	49.81
+2007	OK	Garfield	40047	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	58047.09
+2007	OK	Garfield	40047	NGL	Gas Plant Products (gal)	Royalties	189.2
+2007	OK	Garfield	40047	Oil	Condensate (bbl)	Royalties	188.79
+2007	OK	Garfield	40047	Oil	Oil (bbl)	Royalties	10.04
+2007	OK	Garvin	40049	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	27895.52
+2007	OK	Garvin	40049	Oil	Oil (bbl)	Royalties	3491.85
+2007	OK	Grady	40051	Gas	Processed (Residue) Gas (mcf)	Royalties	391.4
+2007	OK	Grady	40051	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	28840.37
+2007	OK	Grady	40051	NGL	Gas Plant Products (gal)	Royalties	274.16
+2007	OK	Grady	40051	Oil	Condensate (bbl)	Royalties	345.72
+2007	OK	Grady	40051	Oil	Oil (bbl)	Royalties	411.88
+2007	OK	Greer	40055	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	9959.75
+2007	OK	Greer	40055	Oil	Oil (bbl)	Royalties	16.14
+2007	OK	Harper	40059	Gas	Processed (Residue) Gas (mcf)	Royalties	1330.23
+2007	OK	Harper	40059	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	95790.25
+2007	OK	Harper	40059	NGL	Gas Plant Products (gal)	Royalties	3639.63
+2007	OK	Harper	40059	Oil	Condensate (bbl)	Royalties	21.98
+2007	OK	Harper	40059	Oil	Oil (bbl)	Royalties	23.4
+2007	OK	Haskell	40061	Gas	Processed (Residue) Gas (mcf)	Royalties	6259
+2007	OK	Haskell	40061	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	294633.87
+2007	OK	Hughes	40063	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3820.07
+2007	OK	Kingfisher	40073	Gas	Processed (Residue) Gas (mcf)	Royalties	5555.38
+2007	OK	Kingfisher	40073	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	44759.11
+2007	OK	Kingfisher	40073	NGL	Gas Plant Products (gal)	Royalties	17662.73
+2007	OK	Kingfisher	40073	Oil	Condensate (bbl)	Royalties	365.6
+2007	OK	Kingfisher	40073	Oil	Oil (bbl)	Royalties	359.43
+2007	OK	Latimer	40077	Gas	Processed (Residue) Gas (mcf)	Royalties	20.77
+2007	OK	Latimer	40077	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	227400.54
+2007	OK	Le Flore	40079	Coal	Coal (ton)	Royalties	877832
+2007	OK	Le Flore	40079	Gas	Coal Bed Methane (mcf)	Royalties	35520.91
+2007	OK	Le Flore	40079	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	87357.35
+2007	OK	Le Flore	40079	Oil	Condensate (bbl)	Royalties	12.32
+2007	OK	Lincoln	40081	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	50107
+2007	OK	Lincoln	40081	Oil	Condensate (bbl)	Royalties	1788.49
+2007	OK	Lincoln	40081	Oil	Oil (bbl)	Royalties	1047.84
+2007	OK	Logan	40083	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	464.84
+2007	OK	Logan	40083	Oil	Oil (bbl)	Royalties	19.03
+2007	OK	Major	40093	Gas	Processed (Residue) Gas (mcf)	Royalties	263771.07
+2007	OK	Major	40093	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1148774.18
+2007	OK	Major	40093	NGL	Gas Plant Products (gal)	Royalties	135790.44
+2007	OK	Major	40093	Oil	Condensate (bbl)	Royalties	2952.28
+2007	OK	Major	40093	Oil	Inlet Scrubber (bbl)	Royalties	49.55
+2007	OK	Major	40093	Oil	Oil (bbl)	Royalties	56207.29
+2007	OK	Mcclain	40087	Oil	Oil (bbl)	Royalties	8.08
+2007	OK	Mcintosh	40091	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	17603.56
+2007	OK	Oklahoma	40109	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	939.39
+2007	OK	Oklahoma	40109	Oil	Oil (bbl)	Royalties	10.16
+2007	OK	Payne	40119	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	292279.66
+2007	OK	Payne	40119	Oil	Oil (bbl)	Royalties	2.46
+2007	OK	Pittsburg	40121	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1291059.33
+2007	OK	Roger Mills	40129	Gas	Processed (Residue) Gas (mcf)	Royalties	747230.26
+2007	OK	Roger Mills	40129	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3103378.35
+2007	OK	Roger Mills	40129	NGL	Gas Plant Products (gal)	Royalties	1950922.8
+2007	OK	Roger Mills	40129	Oil	Condensate (bbl)	Royalties	8982.35
+2007	OK	Roger Mills	40129	Oil	Drip or Scrubber Condensate (bbl)	Royalties	12.56
+2007	OK	Roger Mills	40129	Oil	Oil (bbl)	Royalties	9777.13
+2007	OK	Sequoyah	40135	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	43396
+2007	OK	Texas	40139	Gas	Processed (Residue) Gas (mcf)	Royalties	58108.43
+2007	OK	Texas	40139	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	75734.49
+2007	OK	Texas	40139	NGL	Gas Plant Products (gal)	Royalties	170980.32
+2007	OK	Texas	40139	Oil	Condensate (bbl)	Royalties	34.61
+2007	OK	Texas	40139	Oil	Oil (bbl)	Royalties	5786.46
+2007	OK	Tillman	40141	Oil	Oil (bbl)	Royalties	5148.3
+2007	OK	Woods	40151	Gas	Processed (Residue) Gas (mcf)	Royalties	22882.94
+2007	OK	Woods	40151	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1752688.32
+2007	OK	Woods	40151	NGL	Gas Plant Products (gal)	Royalties	30878.4
+2007	OK	Woods	40151	Oil	Condensate (bbl)	Royalties	1220.35
+2007	OK	Woods	40151	Oil	Oil (bbl)	Royalties	41224.18
+2007	OK	Woodward	40153	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	624874.6
+2007	OK	Woodward	40153	Oil	Condensate (bbl)	Royalties	755.05
+2007	OK	Woodward	40153	Oil	Oil (bbl)	Royalties	1775.33
+2008	OK	Alfalfa	40003	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	156981.18
+2008	OK	Alfalfa	40003	Oil	Condensate (bbl)	Royalties	512.4
+2008	OK	Alfalfa	40003	Oil	Oil (bbl)	Royalties	1097.58
+2008	OK	Atoka	40005	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	23647
+2008	OK	Beaver	40007	Gas	Processed (Residue) Gas (mcf)	Royalties	9735.74
+2008	OK	Beaver	40007	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	176614.58
+2008	OK	Beaver	40007	NGL	Gas Plant Products (gal)	Royalties	75636.73
+2008	OK	Beaver	40007	Oil	Condensate (bbl)	Royalties	116.87
+2008	OK	Beaver	40007	Oil	Oil (bbl)	Royalties	4905.99
+2008	OK	Beckham	40009	Gas	Processed (Residue) Gas (mcf)	Royalties	39960.84
+2008	OK	Beckham	40009	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	739268.46
+2008	OK	Beckham	40009	NGL	Gas Plant Products (gal)	Royalties	89724.96
+2008	OK	Beckham	40009	Oil	Condensate (bbl)	Royalties	409.91
+2008	OK	Beckham	40009	Oil	Oil (bbl)	Royalties	423.32
+2008	OK	Blaine	40011	Gas	Processed (Residue) Gas (mcf)	Royalties	7215.95
+2008	OK	Blaine	40011	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	665019.11
+2008	OK	Blaine	40011	NGL	Gas Plant Products (gal)	Royalties	78023.78
+2008	OK	Blaine	40011	Oil	Condensate (bbl)	Royalties	1329.6
+2008	OK	Blaine	40011	Oil	Oil (bbl)	Royalties	3318.74
+2008	OK	Canadian	40017	Gas	Processed (Residue) Gas (mcf)	Royalties	65401.06
+2008	OK	Canadian	40017	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	593982.89
+2008	OK	Canadian	40017	NGL	Gas Plant Products (gal)	Royalties	63132.01
+2008	OK	Canadian	40017	Oil	Condensate (bbl)	Royalties	109.65
+2008	OK	Canadian	40017	Oil	Oil (bbl)	Royalties	3690.72
+2008	OK	Coal	40029	Gas	Processed (Residue) Gas (mcf)	Royalties	37768.84
+2008	OK	Coal	40029	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1558091.45
+2008	OK	Coal	40029	Oil	Condensate (bbl)	Royalties	4252.56
+2008	OK	Coal	40029	Oil	Oil (bbl)	Royalties	3434.43
+2008	OK	Comanche	40031	Oil	Oil (bbl)	Royalties	1110.98
+2008	OK	Creek	40037	Oil	Oil (bbl)	Royalties	42.88
+2008	OK	Custer	40039	Gas	Processed (Residue) Gas (mcf)	Royalties	21237.5
+2008	OK	Custer	40039	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	298856.73
+2008	OK	Custer	40039	NGL	Gas Plant Products (gal)	Royalties	65869.55
+2008	OK	Custer	40039	Oil	Condensate (bbl)	Royalties	1030.33
+2008	OK	Custer	40039	Oil	Oil (bbl)	Royalties	1046.49
+2008	OK	Dewey	40043	Gas	Processed (Residue) Gas (mcf)	Royalties	-1288.73
+2008	OK	Dewey	40043	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	461780.34
+2008	OK	Dewey	40043	NGL	Gas Plant Products (gal)	Royalties	14624.55
+2008	OK	Dewey	40043	Oil	Condensate (bbl)	Royalties	1029.28
+2008	OK	Dewey	40043	Oil	Oil (bbl)	Royalties	7997.27
+2008	OK	Ellis	40045	Gas	Processed (Residue) Gas (mcf)	Royalties	12550.54
+2008	OK	Ellis	40045	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	276759.3
+2008	OK	Ellis	40045	NGL	Gas Plant Products (gal)	Royalties	19934.71
+2008	OK	Ellis	40045	Oil	Condensate (bbl)	Royalties	2353.22
+2008	OK	Ellis	40045	Oil	Drip or Scrubber Condensate (bbl)	Royalties	17.2
+2008	OK	Ellis	40045	Oil	Oil (bbl)	Royalties	9698.08
+2008	OK	Garfield	40047	Gas	Processed (Residue) Gas (mcf)	Royalties	40.79
+2008	OK	Garfield	40047	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	45668.29
+2008	OK	Garfield	40047	NGL	Gas Plant Products (gal)	Royalties	190.51
+2008	OK	Garfield	40047	Oil	Condensate (bbl)	Royalties	406.79
+2008	OK	Garfield	40047	Oil	Oil (bbl)	Royalties	12.34
+2008	OK	Garvin	40049	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	16583.81
+2008	OK	Garvin	40049	Oil	Oil (bbl)	Royalties	1458.3
+2008	OK	Grady	40051	Gas	Processed (Residue) Gas (mcf)	Royalties	466
+2008	OK	Grady	40051	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	23737.72
+2008	OK	Grady	40051	NGL	Gas Plant Products (gal)	Royalties	705.01
+2008	OK	Grady	40051	Oil	Condensate (bbl)	Royalties	24.81
+2008	OK	Grady	40051	Oil	Oil (bbl)	Royalties	1060
+2008	OK	Greer	40055	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	9353.5
+2008	OK	Harper	40059	Gas	Processed (Residue) Gas (mcf)	Royalties	1171.7
+2008	OK	Harper	40059	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	32053.85
+2008	OK	Harper	40059	NGL	Gas Plant Products (gal)	Royalties	3379.43
+2008	OK	Harper	40059	Oil	Condensate (bbl)	Royalties	34.9
+2008	OK	Harper	40059	Oil	Oil (bbl)	Royalties	28
+2008	OK	Haskell	40061	Gas	Processed (Residue) Gas (mcf)	Royalties	6144.07
+2008	OK	Haskell	40061	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	276311.39
+2008	OK	Hughes	40063	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3170.09
+2008	OK	Kingfisher	40073	Gas	Processed (Residue) Gas (mcf)	Royalties	20681.49
+2008	OK	Kingfisher	40073	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	22038.89
+2008	OK	Kingfisher	40073	NGL	Gas Plant Products (gal)	Royalties	65272.09
+2008	OK	Kingfisher	40073	Oil	Condensate (bbl)	Royalties	387.92
+2008	OK	Kingfisher	40073	Oil	Oil (bbl)	Royalties	364.08
+2008	OK	Latimer	40077	Gas	Processed (Residue) Gas (mcf)	Royalties	30867.78
+2008	OK	Latimer	40077	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	200453.88
+2008	OK	Le Flore	40079	Coal	Coal (ton)	Royalties	678083
+2008	OK	Le Flore	40079	Gas	Coal Bed Methane (mcf)	Royalties	27896.52
+2008	OK	Le Flore	40079	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	59802.9
+2008	OK	Lincoln	40081	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	40643
+2008	OK	Lincoln	40081	Oil	Condensate (bbl)	Royalties	1581.26
+2008	OK	Lincoln	40081	Oil	Oil (bbl)	Royalties	534.88
+2008	OK	Logan	40083	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	451.34
+2008	OK	Logan	40083	Oil	Oil (bbl)	Royalties	9.46
+2008	OK	Major	40093	Gas	Processed (Residue) Gas (mcf)	Royalties	218190.22
+2008	OK	Major	40093	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1433986.57
+2008	OK	Major	40093	NGL	Gas Plant Products (gal)	Royalties	146635
+2008	OK	Major	40093	Oil	Condensate (bbl)	Royalties	1287.81
+2008	OK	Major	40093	Oil	Inlet Scrubber (bbl)	Royalties	177.36
+2008	OK	Major	40093	Oil	Oil (bbl)	Royalties	58167.99
+2008	OK	Mcclain	40087	Oil	Oil (bbl)	Royalties	8.11
+2008	OK	Mcintosh	40091	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	19461.68
+2008	OK	Oklahoma	40109	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	952.57
+2008	OK	Oklahoma	40109	Oil	Oil (bbl)	Royalties	4.96
+2008	OK	Payne	40119	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	109682.74
+2008	OK	Payne	40119	Oil	Oil (bbl)	Royalties	310.28
+2008	OK	Pittsburg	40121	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2002786.37
+2008	OK	Roger Mills	40129	Gas	Processed (Residue) Gas (mcf)	Royalties	776015.81
+2008	OK	Roger Mills	40129	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2860535.02
+2008	OK	Roger Mills	40129	NGL	Gas Plant Products (gal)	Royalties	1735987.49
+2008	OK	Roger Mills	40129	Oil	Condensate (bbl)	Royalties	8240.23
+2008	OK	Roger Mills	40129	Oil	Oil (bbl)	Royalties	19503.2
+2008	OK	Sequoyah	40135	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	43673.44
+2008	OK	Texas	40139	Gas	Processed (Residue) Gas (mcf)	Royalties	77514.12
+2008	OK	Texas	40139	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	65551.06
+2008	OK	Texas	40139	NGL	Gas Plant Products (gal)	Royalties	208197.99
+2008	OK	Texas	40139	Oil	Condensate (bbl)	Royalties	19.89
+2008	OK	Texas	40139	Oil	Oil (bbl)	Royalties	19791.88
+2008	OK	Tillman	40141	Oil	Oil (bbl)	Royalties	12605.94
+2008	OK	Washita	40149	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	36736.96
+2008	OK	Washita	40149	Oil	Oil (bbl)	Royalties	2771.76
+2008	OK	Woods	40151	Gas	Processed (Residue) Gas (mcf)	Royalties	100080.68
+2008	OK	Woods	40151	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1671395.76
+2008	OK	Woods	40151	NGL	Gas Plant Products (gal)	Royalties	27733.08
+2008	OK	Woods	40151	Oil	Condensate (bbl)	Royalties	913.44
+2008	OK	Woods	40151	Oil	Oil (bbl)	Royalties	22090.97
+2008	OK	Woodward	40153	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	776922.92
+2008	OK	Woodward	40153	Oil	Condensate (bbl)	Royalties	279.61
+2008	OK	Woodward	40153	Oil	Oil (bbl)	Royalties	2748.23
+2009	OK	Alfalfa	40003	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	389314.47
+2009	OK	Alfalfa	40003	Oil	Condensate (bbl)	Royalties	915.68
+2009	OK	Alfalfa	40003	Oil	Oil (bbl)	Royalties	33602.47
+2009	OK	Atoka	40005	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	13344
+2009	OK	Atoka	40005	Oil	Oil (bbl)	Royalties	16.25
+2009	OK	Beaver	40007	Gas	Processed (Residue) Gas (mcf)	Royalties	10605.96
+2009	OK	Beaver	40007	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	169595.35
+2009	OK	Beaver	40007	NGL	Gas Plant Products (gal)	Royalties	61913.45
+2009	OK	Beaver	40007	Oil	Condensate (bbl)	Royalties	361.46
+2009	OK	Beaver	40007	Oil	Oil (bbl)	Royalties	4617.84
+2009	OK	Beckham	40009	Gas	Processed (Residue) Gas (mcf)	Royalties	57467.16
+2009	OK	Beckham	40009	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	533495.01
+2009	OK	Beckham	40009	NGL	Gas Plant Products (gal)	Royalties	143684.85
+2009	OK	Beckham	40009	Oil	Condensate (bbl)	Royalties	1463.01
+2009	OK	Beckham	40009	Oil	Drip or Scrubber Condensate (bbl)	Royalties	2.55
+2009	OK	Beckham	40009	Oil	Oil (bbl)	Royalties	252.18
+2009	OK	Blaine	40011	Gas	Processed (Residue) Gas (mcf)	Royalties	15725.86
+2009	OK	Blaine	40011	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	312792.98
+2009	OK	Blaine	40011	NGL	Gas Plant Products (gal)	Royalties	41301.66
+2009	OK	Blaine	40011	Oil	Condensate (bbl)	Royalties	1101.6
+2009	OK	Blaine	40011	Oil	Oil (bbl)	Royalties	2983.51
+2009	OK	Canadian	40017	Gas	Processed (Residue) Gas (mcf)	Royalties	41223.04
+2009	OK	Canadian	40017	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	469706.37
+2009	OK	Canadian	40017	NGL	Gas Plant Products (gal)	Royalties	56825.92
+2009	OK	Canadian	40017	Oil	Condensate (bbl)	Royalties	112.4
+2009	OK	Canadian	40017	Oil	Oil (bbl)	Royalties	3445.38
+2009	OK	Coal	40029	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1469094.02
+2009	OK	Coal	40029	Oil	Condensate (bbl)	Royalties	1092.5
+2009	OK	Coal	40029	Oil	Oil (bbl)	Royalties	2177
+2009	OK	Coal	40029	Oil	Other Liquid Hydrocarbons (bbl)	Royalties	0.23
+2009	OK	Comanche	40031	Oil	Oil (bbl)	Royalties	1012.96
+2009	OK	Creek	40037	Oil	Oil (bbl)	Royalties	26.16
+2009	OK	Custer	40039	Gas	Processed (Residue) Gas (mcf)	Royalties	16003.94
+2009	OK	Custer	40039	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	595530.87
+2009	OK	Custer	40039	NGL	Gas Plant Products (gal)	Royalties	79807.7
+2009	OK	Custer	40039	Oil	Condensate (bbl)	Royalties	920.13
+2009	OK	Custer	40039	Oil	Oil (bbl)	Royalties	601.58
+2009	OK	Dewey	40043	Gas	Processed (Residue) Gas (mcf)	Royalties	1656.54
+2009	OK	Dewey	40043	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	362050.29
+2009	OK	Dewey	40043	NGL	Gas Plant Products (gal)	Royalties	27377.12
+2009	OK	Dewey	40043	Oil	Condensate (bbl)	Royalties	971.42
+2009	OK	Dewey	40043	Oil	Oil (bbl)	Royalties	6867.2
+2009	OK	Ellis	40045	Gas	Processed (Residue) Gas (mcf)	Royalties	17391.11
+2009	OK	Ellis	40045	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	246575.94
+2009	OK	Ellis	40045	NGL	Gas Plant Products (gal)	Royalties	53391.2
+2009	OK	Ellis	40045	Oil	Condensate (bbl)	Royalties	1063.12
+2009	OK	Ellis	40045	Oil	Drip or Scrubber Condensate (bbl)	Royalties	14.32
+2009	OK	Ellis	40045	Oil	Oil (bbl)	Royalties	10103.89
+2009	OK	Garfield	40047	Gas	Processed (Residue) Gas (mcf)	Royalties	39.72
+2009	OK	Garfield	40047	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	41312.88
+2009	OK	Garfield	40047	NGL	Gas Plant Products (gal)	Royalties	184.5
+2009	OK	Garfield	40047	Oil	Condensate (bbl)	Royalties	464.35
+2009	OK	Garfield	40047	Oil	Oil (bbl)	Royalties	116.17
+2009	OK	Garvin	40049	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	12019.06
+2009	OK	Garvin	40049	Oil	Oil (bbl)	Royalties	906.12
+2009	OK	Grady	40051	Gas	Processed (Residue) Gas (mcf)	Royalties	258.18
+2009	OK	Grady	40051	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	20521.51
+2009	OK	Grady	40051	NGL	Gas Plant Products (gal)	Royalties	731.61
+2009	OK	Grady	40051	Oil	Condensate (bbl)	Royalties	0.4
+2009	OK	Grady	40051	Oil	Oil (bbl)	Royalties	977.76
+2009	OK	Greer	40055	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	7522.75
+2009	OK	Greer	40055	Oil	Condensate (bbl)	Royalties	1.44
+2009	OK	Greer	40055	Oil	Oil (bbl)	Royalties	15.66
+2009	OK	Harper	40059	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	30666.71
+2009	OK	Harper	40059	NGL	Gas Plant Products (gal)	Royalties	72.59
+2009	OK	Harper	40059	Oil	Condensate (bbl)	Royalties	21.6
+2009	OK	Harper	40059	Oil	Oil (bbl)	Royalties	46.65
+2009	OK	Haskell	40061	Gas	Processed (Residue) Gas (mcf)	Royalties	6513
+2009	OK	Haskell	40061	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	228231.61
+2009	OK	Hughes	40063	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2479.84
+2009	OK	Kingfisher	40073	Gas	Processed (Residue) Gas (mcf)	Royalties	17612.76
+2009	OK	Kingfisher	40073	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	25422.95
+2009	OK	Kingfisher	40073	NGL	Gas Plant Products (gal)	Royalties	57312.11
+2009	OK	Kingfisher	40073	Oil	Condensate (bbl)	Royalties	242.08
+2009	OK	Kingfisher	40073	Oil	Oil (bbl)	Royalties	236.57
+2009	OK	Latimer	40077	Coal	Coal (ton)	Royalties	25840.82
+2009	OK	Latimer	40077	Gas	Processed (Residue) Gas (mcf)	Royalties	29309.21
+2009	OK	Latimer	40077	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	274190.2
+2009	OK	Le Flore	40079	Coal	Coal (ton)	Royalties	570795.18
+2009	OK	Le Flore	40079	Gas	Coal Bed Methane (mcf)	Royalties	2537.74
+2009	OK	Le Flore	40079	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	52305.49
+2009	OK	Le Flore	40079	Oil	Condensate (bbl)	Royalties	11.28
+2009	OK	Lincoln	40081	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	32792
+2009	OK	Lincoln	40081	Oil	Condensate (bbl)	Royalties	1254.94
+2009	OK	Lincoln	40081	Oil	Oil (bbl)	Royalties	484.16
+2009	OK	Logan	40083	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	363.09
+2009	OK	Major	40093	Gas	Processed (Residue) Gas (mcf)	Royalties	171161.62
+2009	OK	Major	40093	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1371441.89
+2009	OK	Major	40093	NGL	Gas Plant Products (gal)	Royalties	138709.97
+2009	OK	Major	40093	Oil	Condensate (bbl)	Royalties	1228.82
+2009	OK	Major	40093	Oil	Inlet Scrubber (bbl)	Royalties	103.08
+2009	OK	Major	40093	Oil	Oil (bbl)	Royalties	46331.43
+2009	OK	Mcclain	40087	Oil	Oil (bbl)	Royalties	10.04
+2009	OK	Mcintosh	40091	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	788998.19
+2009	OK	Oklahoma	40109	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	868.98
+2009	OK	Oklahoma	40109	Oil	Oil (bbl)	Royalties	4.8
+2009	OK	Payne	40119	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	83870.15
+2009	OK	Payne	40119	Oil	Oil (bbl)	Royalties	339.07
+2009	OK	Pittsburg	40121	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2243898.02
+2009	OK	Roger Mills	40129	Gas	Processed (Residue) Gas (mcf)	Royalties	602852.91
+2009	OK	Roger Mills	40129	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2640063.43
+2009	OK	Roger Mills	40129	NGL	Gas Plant Products (gal)	Royalties	1573747.86
+2009	OK	Roger Mills	40129	Oil	Condensate (bbl)	Royalties	9940.66
+2009	OK	Roger Mills	40129	Oil	Oil (bbl)	Royalties	15126.92
+2009	OK	Sequoyah	40135	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	42076.7
+2009	OK	Texas	40139	Gas	Processed (Residue) Gas (mcf)	Royalties	69504.86
+2009	OK	Texas	40139	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	53469.24
+2009	OK	Texas	40139	NGL	Gas Plant Products (gal)	Royalties	210269.92
+2009	OK	Texas	40139	Oil	Oil (bbl)	Royalties	5982.58
+2009	OK	Tillman	40141	Oil	Oil (bbl)	Royalties	14080.33
+2009	OK	Washita	40149	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	281821.53
+2009	OK	Washita	40149	Oil	Oil (bbl)	Royalties	13214.18
+2009	OK	Woods	40151	Gas	Processed (Residue) Gas (mcf)	Royalties	32455.83
+2009	OK	Woods	40151	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1460345.01
+2009	OK	Woods	40151	NGL	Gas Plant Products (gal)	Royalties	30654.14
+2009	OK	Woods	40151	Oil	Condensate (bbl)	Royalties	725.35
+2009	OK	Woods	40151	Oil	Oil (bbl)	Royalties	23506.33
+2009	OK	Woodward	40153	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	697942.79
+2009	OK	Woodward	40153	Oil	Condensate (bbl)	Royalties	211.85
+2009	OK	Woodward	40153	Oil	Oil (bbl)	Royalties	2532.51
+2010	OK	Alfalfa	40003	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	186118.84
+2010	OK	Alfalfa	40003	Oil	Condensate (bbl)	Royalties	1095.36
+2010	OK	Alfalfa	40003	Oil	Oil (bbl)	Royalties	978.94
+2010	OK	Atoka	40005	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	8467
+2010	OK	Atoka	40005	Oil	Oil (bbl)	Royalties	16.87
+2010	OK	Beaver	40007	Gas	Processed (Residue) Gas (mcf)	Royalties	11961.27
+2010	OK	Beaver	40007	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	158165.68
+2010	OK	Beaver	40007	NGL	Gas Plant Products (gal)	Royalties	56993.79
+2010	OK	Beaver	40007	Oil	Condensate (bbl)	Royalties	142.16
+2010	OK	Beaver	40007	Oil	Oil (bbl)	Royalties	5814.94
+2010	OK	Beckham	40009	Gas	Processed (Residue) Gas (mcf)	Royalties	43788.77
+2010	OK	Beckham	40009	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	461624.42
+2010	OK	Beckham	40009	NGL	Gas Plant Products (gal)	Royalties	99672.64
+2010	OK	Beckham	40009	Oil	Condensate (bbl)	Royalties	159.77
+2010	OK	Beckham	40009	Oil	Oil (bbl)	Royalties	339.2
+2010	OK	Blaine	40011	Gas	Processed (Residue) Gas (mcf)	Royalties	48517.48
+2010	OK	Blaine	40011	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	246102.58
+2010	OK	Blaine	40011	NGL	Gas Plant Products (gal)	Royalties	58746.54
+2010	OK	Blaine	40011	Oil	Condensate (bbl)	Royalties	1276.48
+2010	OK	Blaine	40011	Oil	Oil (bbl)	Royalties	3389
+2010	OK	Caddo	40015	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	52482.78
+2010	OK	Canadian	40017	Gas	Processed (Residue) Gas (mcf)	Royalties	32638.2
+2010	OK	Canadian	40017	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	384245.49
+2010	OK	Canadian	40017	NGL	Gas Plant Products (gal)	Royalties	98971.6
+2010	OK	Canadian	40017	Oil	Condensate (bbl)	Royalties	108.44
+2010	OK	Canadian	40017	Oil	Oil (bbl)	Royalties	2454.34
+2010	OK	Coal	40029	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1545688.99
+2010	OK	Coal	40029	Oil	Condensate (bbl)	Royalties	1333.01
+2010	OK	Coal	40029	Oil	Oil (bbl)	Royalties	2354.85
+2010	OK	Comanche	40031	Oil	Oil (bbl)	Royalties	867.52
+2010	OK	Custer	40039	Gas	Processed (Residue) Gas (mcf)	Royalties	24981.17
+2010	OK	Custer	40039	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	172497.67
+2010	OK	Custer	40039	NGL	Gas Plant Products (gal)	Royalties	89562.51
+2010	OK	Custer	40039	Oil	Condensate (bbl)	Royalties	4046.06
+2010	OK	Custer	40039	Oil	Oil (bbl)	Royalties	467.61
+2010	OK	Dewey	40043	Gas	Processed (Residue) Gas (mcf)	Royalties	10747.39
+2010	OK	Dewey	40043	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	317242.25
+2010	OK	Dewey	40043	NGL	Gas Plant Products (gal)	Royalties	57196.66
+2010	OK	Dewey	40043	Oil	Condensate (bbl)	Royalties	560.38
+2010	OK	Dewey	40043	Oil	Oil (bbl)	Royalties	8848.19
+2010	OK	Ellis	40045	Gas	Processed (Residue) Gas (mcf)	Royalties	31121.16
+2010	OK	Ellis	40045	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	204706.17
+2010	OK	Ellis	40045	NGL	Gas Plant Products (gal)	Royalties	122638.76
+2010	OK	Ellis	40045	Oil	Condensate (bbl)	Royalties	564.62
+2010	OK	Ellis	40045	Oil	Drip or Scrubber Condensate (bbl)	Royalties	4.88
+2010	OK	Ellis	40045	Oil	Oil (bbl)	Royalties	12536.95
+2010	OK	Garfield	40047	Gas	Processed (Residue) Gas (mcf)	Royalties	40.37
+2010	OK	Garfield	40047	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	40241.04
+2010	OK	Garfield	40047	NGL	Gas Plant Products (gal)	Royalties	190.6
+2010	OK	Garfield	40047	Oil	Condensate (bbl)	Royalties	272.68
+2010	OK	Garfield	40047	Oil	Oil (bbl)	Royalties	7.82
+2010	OK	Garvin	40049	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	8783.59
+2010	OK	Garvin	40049	Oil	Oil (bbl)	Royalties	573.4
+2010	OK	Grady	40051	Gas	Processed (Residue) Gas (mcf)	Royalties	2081.69
+2010	OK	Grady	40051	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	14246.78
+2010	OK	Grady	40051	NGL	Gas Plant Products (gal)	Royalties	10767.55
+2010	OK	Grady	40051	Oil	Condensate (bbl)	Royalties	7.29
+2010	OK	Grady	40051	Oil	Oil (bbl)	Royalties	536.81
+2010	OK	Greer	40055	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	6263.5
+2010	OK	Greer	40055	Oil	Condensate (bbl)	Royalties	0.96
+2010	OK	Harper	40059	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	26782.82
+2010	OK	Harper	40059	NGL	Gas Plant Products (gal)	Royalties	28.28
+2010	OK	Harper	40059	Oil	Condensate (bbl)	Royalties	28.5
+2010	OK	Harper	40059	Oil	Oil (bbl)	Royalties	26.4
+2010	OK	Haskell	40061	Gas	Processed (Residue) Gas (mcf)	Royalties	795
+2010	OK	Haskell	40061	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	223321.57
+2010	OK	Hughes	40063	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1925.15
+2010	OK	Kingfisher	40073	Gas	Processed (Residue) Gas (mcf)	Royalties	16996.95
+2010	OK	Kingfisher	40073	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	24529.76
+2010	OK	Kingfisher	40073	NGL	Gas Plant Products (gal)	Royalties	49046.8
+2010	OK	Kingfisher	40073	Oil	Condensate (bbl)	Royalties	384.48
+2010	OK	Kingfisher	40073	Oil	Oil (bbl)	Royalties	273.55
+2010	OK	Latimer	40077	Coal	Coal (ton)	Royalties	101451.59
+2010	OK	Latimer	40077	Gas	Processed (Residue) Gas (mcf)	Royalties	20369.22
+2010	OK	Latimer	40077	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	920461.21
+2010	OK	Le Flore	40079	Coal	Coal (ton)	Royalties	513379.41
+2010	OK	Le Flore	40079	Gas	Coal Bed Methane (mcf)	Royalties	2544.87
+2010	OK	Le Flore	40079	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	47996.33
+2010	OK	Lincoln	40081	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	28325
+2010	OK	Lincoln	40081	Oil	Condensate (bbl)	Royalties	897.19
+2010	OK	Lincoln	40081	Oil	Oil (bbl)	Royalties	289.76
+2010	OK	Logan	40083	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	235.28
+2010	OK	Logan	40083	Oil	Oil (bbl)	Royalties	9.36
+2010	OK	Major	40093	Gas	Processed (Residue) Gas (mcf)	Royalties	208812.22
+2010	OK	Major	40093	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1123593.43
+2010	OK	Major	40093	NGL	Gas Plant Products (gal)	Royalties	181243.63
+2010	OK	Major	40093	Oil	Condensate (bbl)	Royalties	952.09
+2010	OK	Major	40093	Oil	Inlet Scrubber (bbl)	Royalties	99.53
+2010	OK	Major	40093	Oil	Oil (bbl)	Royalties	39938.68
+2010	OK	Mcclain	40087	Oil	Oil (bbl)	Royalties	18.37
+2010	OK	Mcintosh	40091	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	13978.6
+2010	OK	Oklahoma	40109	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	810.45
+2010	OK	Oklahoma	40109	Oil	Oil (bbl)	Royalties	10.32
+2010	OK	Payne	40119	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	82241.11
+2010	OK	Payne	40119	Oil	Oil (bbl)	Royalties	19.6
+2010	OK	Pittsburg	40121	Gas	Fuel Gas (mcf)	Royalties	9607.64
+2010	OK	Pittsburg	40121	Gas	Processed (Residue) Gas (mcf)	Royalties	259.92
+2010	OK	Pittsburg	40121	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2643756.95
+2010	OK	Pittsburg	40121	NGL	Gas Plant Products (gal)	Royalties	0.35
+2010	OK	Roger Mills	40129	Gas	Processed (Residue) Gas (mcf)	Royalties	519085.97
+2010	OK	Roger Mills	40129	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2089674.11
+2010	OK	Roger Mills	40129	NGL	Gas Plant Products (gal)	Royalties	1383425.41
+2010	OK	Roger Mills	40129	Oil	Condensate (bbl)	Royalties	6499.18
+2010	OK	Roger Mills	40129	Oil	Oil (bbl)	Royalties	13048.7
+2010	OK	Sequoyah	40135	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	43933.72
+2010	OK	Texas	40139	Gas	Processed (Residue) Gas (mcf)	Royalties	60257.88
+2010	OK	Texas	40139	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	39886.38
+2010	OK	Texas	40139	NGL	Gas Plant Products (gal)	Royalties	240149.42
+2010	OK	Texas	40139	Oil	Oil (bbl)	Royalties	5708.26
+2010	OK	Tillman	40141	Oil	Oil (bbl)	Royalties	14712.38
+2010	OK	Washita	40149	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	298587.79
+2010	OK	Washita	40149	Oil	Oil (bbl)	Royalties	6747.87
+2010	OK	Woods	40151	Gas	Processed (Residue) Gas (mcf)	Royalties	32760.86
+2010	OK	Woods	40151	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1568753.32
+2010	OK	Woods	40151	NGL	Gas Plant Products (gal)	Royalties	40688.4
+2010	OK	Woods	40151	Oil	Condensate (bbl)	Royalties	547.25
+2010	OK	Woods	40151	Oil	Oil (bbl)	Royalties	24881.94
+2010	OK	Woodward	40153	Gas	Processed (Residue) Gas (mcf)	Royalties	393.61
+2010	OK	Woodward	40153	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	553742.61
+2010	OK	Woodward	40153	NGL	Gas Plant Products (gal)	Royalties	1779.78
+2010	OK	Woodward	40153	Oil	Condensate (bbl)	Royalties	81.07
+2010	OK	Woodward	40153	Oil	Oil (bbl)	Royalties	2102.38
+2011	OK	Alfalfa	40003	Gas	Processed (Residue) Gas (mcf)	Royalties	11064.83
+2011	OK	Alfalfa	40003	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	140866.53
+2011	OK	Alfalfa	40003	NGL	Gas Plant Products (gal)	Royalties	12931.83
+2011	OK	Alfalfa	40003	Oil	Condensate (bbl)	Royalties	906.48
+2011	OK	Alfalfa	40003	Oil	Oil (bbl)	Royalties	882.66
+2011	OK	Atoka	40005	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	6345
+2011	OK	Beaver	40007	Gas	Processed (Residue) Gas (mcf)	Royalties	10342.75
+2011	OK	Beaver	40007	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	115872.93
+2011	OK	Beaver	40007	NGL	Gas Plant Products (gal)	Royalties	35685.4
+2011	OK	Beaver	40007	Oil	Condensate (bbl)	Royalties	114.76
+2011	OK	Beaver	40007	Oil	Oil (bbl)	Royalties	6025.62
+2011	OK	Beckham	40009	Gas	Processed (Residue) Gas (mcf)	Royalties	52129.49
+2011	OK	Beckham	40009	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	408141.2
+2011	OK	Beckham	40009	NGL	Gas Plant Products (gal)	Royalties	78407.65
+2011	OK	Beckham	40009	Oil	Condensate (bbl)	Royalties	142.07
+2011	OK	Beckham	40009	Oil	Oil (bbl)	Royalties	377.55
+2011	OK	Blaine	40011	Gas	Processed (Residue) Gas (mcf)	Royalties	74889.32
+2011	OK	Blaine	40011	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	213540.09
+2011	OK	Blaine	40011	NGL	Gas Plant Products (gal)	Royalties	83793.63
+2011	OK	Blaine	40011	Oil	Condensate (bbl)	Royalties	1130.09
+2011	OK	Blaine	40011	Oil	Oil (bbl)	Royalties	2039.17
+2011	OK	Caddo	40015	Gas	Processed (Residue) Gas (mcf)	Royalties	79448.81
+2011	OK	Caddo	40015	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	36323.67
+2011	OK	Caddo	40015	NGL	Gas Plant Products (gal)	Royalties	47727.12
+2011	OK	Caddo	40015	Oil	Condensate (bbl)	Royalties	5.59
+2011	OK	Canadian	40017	Gas	Processed (Residue) Gas (mcf)	Royalties	105112.73
+2011	OK	Canadian	40017	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	121907.64
+2011	OK	Canadian	40017	NGL	Gas Plant Products (gal)	Royalties	243251.67
+2011	OK	Canadian	40017	Oil	Condensate (bbl)	Royalties	217.33
+2011	OK	Canadian	40017	Oil	Oil (bbl)	Royalties	2642.34
+2011	OK	Cherokee	40021	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	33.98
+2011	OK	Coal	40029	Gas	Processed (Residue) Gas (mcf)	Royalties	167708.72
+2011	OK	Coal	40029	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	956556.73
+2011	OK	Coal	40029	NGL	Gas Plant Products (gal)	Royalties	1446584.81
+2011	OK	Coal	40029	Oil	Condensate (bbl)	Royalties	252.58
+2011	OK	Coal	40029	Oil	Oil (bbl)	Royalties	2365.2
+2011	OK	Comanche	40031	Oil	Oil (bbl)	Royalties	1779.8
+2011	OK	Custer	40039	Gas	Processed (Residue) Gas (mcf)	Royalties	44580.57
+2011	OK	Custer	40039	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	128460.94
+2011	OK	Custer	40039	NGL	Gas Plant Products (gal)	Royalties	97695.06
+2011	OK	Custer	40039	Oil	Condensate (bbl)	Royalties	1884.85
+2011	OK	Custer	40039	Oil	Oil (bbl)	Royalties	434.26
+2011	OK	Dewey	40043	Gas	Processed (Residue) Gas (mcf)	Royalties	57250.97
+2011	OK	Dewey	40043	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	288032.8
+2011	OK	Dewey	40043	NGL	Gas Plant Products (gal)	Royalties	227754.95
+2011	OK	Dewey	40043	Oil	Condensate (bbl)	Royalties	1083.48
+2011	OK	Dewey	40043	Oil	Oil (bbl)	Royalties	18186.95
+2011	OK	Ellis	40045	Gas	Processed (Residue) Gas (mcf)	Royalties	47253.84
+2011	OK	Ellis	40045	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	245994.68
+2011	OK	Ellis	40045	NGL	Gas Plant Products (gal)	Royalties	221988.23
+2011	OK	Ellis	40045	Oil	Condensate (bbl)	Royalties	547.73
+2011	OK	Ellis	40045	Oil	Drip or Scrubber Condensate (bbl)	Royalties	4.64
+2011	OK	Ellis	40045	Oil	Oil (bbl)	Royalties	71107.4
+2011	OK	Garfield	40047	Gas	Processed (Residue) Gas (mcf)	Royalties	41.96
+2011	OK	Garfield	40047	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	31804.05
+2011	OK	Garfield	40047	NGL	Gas Plant Products (gal)	Royalties	150.17
+2011	OK	Garfield	40047	Oil	Oil (bbl)	Royalties	14.69
+2011	OK	Garvin	40049	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	8471.92
+2011	OK	Garvin	40049	Oil	Oil (bbl)	Royalties	847.45
+2011	OK	Grady	40051	Gas	Processed (Residue) Gas (mcf)	Royalties	6279.64
+2011	OK	Grady	40051	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	7259.38
+2011	OK	Grady	40051	NGL	Gas Plant Products (gal)	Royalties	34191.36
+2011	OK	Grady	40051	Oil	Condensate (bbl)	Royalties	7.18
+2011	OK	Grady	40051	Oil	Oil (bbl)	Royalties	649.22
+2011	OK	Greer	40055	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	5718.71
+2011	OK	Greer	40055	Oil	Condensate (bbl)	Royalties	0.6
+2011	OK	Greer	40055	Oil	Oil (bbl)	Royalties	12.66
+2011	OK	Harper	40059	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	25917.07
+2011	OK	Harper	40059	NGL	Gas Plant Products (gal)	Royalties	19.45
+2011	OK	Harper	40059	Oil	Oil (bbl)	Royalties	28.17
+2011	OK	Haskell	40061	Gas	Processed (Residue) Gas (mcf)	Royalties	3278.86
+2011	OK	Haskell	40061	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	190952.18
+2011	OK	Hughes	40063	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1600.34
+2011	OK	Kingfisher	40073	Gas	Processed (Residue) Gas (mcf)	Royalties	17254.75
+2011	OK	Kingfisher	40073	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	19554.16
+2011	OK	Kingfisher	40073	NGL	Gas Plant Products (gal)	Royalties	54413.31
+2011	OK	Kingfisher	40073	Oil	Condensate (bbl)	Royalties	124.88
+2011	OK	Kingfisher	40073	Oil	Oil (bbl)	Royalties	300.67
+2011	OK	Latimer	40077	Coal	Coal (ton)	Royalties	98582.85
+2011	OK	Latimer	40077	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	435521.24
+2011	OK	Le Flore	40079	Coal	Coal (ton)	Royalties	540235.15
+2011	OK	Le Flore	40079	Gas	Coal Bed Methane (mcf)	Royalties	2608.99
+2011	OK	Le Flore	40079	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	44083.11
+2011	OK	Le Flore	40079	Oil	Condensate (bbl)	Royalties	11.28
+2011	OK	Lincoln	40081	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	16485.21
+2011	OK	Lincoln	40081	Oil	Condensate (bbl)	Royalties	183.19
+2011	OK	Lincoln	40081	Oil	Oil (bbl)	Royalties	535.04
+2011	OK	Logan	40083	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	52.82
+2011	OK	Major	40093	Gas	Processed (Residue) Gas (mcf)	Royalties	296588.31
+2011	OK	Major	40093	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	738292.49
+2011	OK	Major	40093	NGL	Gas Plant Products (gal)	Royalties	367620.07
+2011	OK	Major	40093	Oil	Condensate (bbl)	Royalties	1151.01
+2011	OK	Major	40093	Oil	Inlet Scrubber (bbl)	Royalties	32.87
+2011	OK	Major	40093	Oil	Oil (bbl)	Royalties	34112.08
+2011	OK	Mcclain	40087	Oil	Oil (bbl)	Royalties	8.17
+2011	OK	Mcintosh	40091	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	10416.18
+2011	OK	Oklahoma	40109	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	685.17
+2011	OK	Oklahoma	40109	Oil	Oil (bbl)	Royalties	10.24
+2011	OK	Payne	40119	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	53901.69
+2011	OK	Payne	40119	Oil	Oil (bbl)	Royalties	335.8
+2011	OK	Pittsburg	40121	Gas	Fuel Gas (mcf)	Royalties	7488.06
+2011	OK	Pittsburg	40121	Gas	Processed (Residue) Gas (mcf)	Royalties	780.34
+2011	OK	Pittsburg	40121	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2248573.75
+2011	OK	Roger Mills	40129	Gas	Processed (Residue) Gas (mcf)	Royalties	784770.06
+2011	OK	Roger Mills	40129	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2076604.13
+2011	OK	Roger Mills	40129	NGL	Gas Plant Products (gal)	Royalties	1949022.23
+2011	OK	Roger Mills	40129	Oil	Condensate (bbl)	Royalties	6066.63
+2011	OK	Roger Mills	40129	Oil	Oil (bbl)	Royalties	150054.13
+2011	OK	Sequoyah	40135	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	29405.7
+2011	OK	Texas	40139	Gas	Processed (Residue) Gas (mcf)	Royalties	61691.63
+2011	OK	Texas	40139	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	33596.47
+2011	OK	Texas	40139	NGL	Gas Plant Products (gal)	Royalties	234488.3
+2011	OK	Texas	40139	Oil	Condensate (bbl)	Royalties	13
+2011	OK	Texas	40139	Oil	Oil (bbl)	Royalties	3248.89
+2011	OK	Texas	40139	Oil	Other Liquid Hydrocarbons (bbl)	Royalties	3.98
+2011	OK	Tillman	40141	Oil	Oil (bbl)	Royalties	16538.77
+2011	OK	Washita	40149	Gas	Processed (Residue) Gas (mcf)	Royalties	10337.21
+2011	OK	Washita	40149	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	69993.01
+2011	OK	Washita	40149	NGL	Gas Plant Products (gal)	Royalties	41291.82
+2011	OK	Washita	40149	Oil	Oil (bbl)	Royalties	1475.58
+2011	OK	Woods	40151	Gas	Processed (Residue) Gas (mcf)	Royalties	130146.58
+2011	OK	Woods	40151	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	965331.63
+2011	OK	Woods	40151	NGL	Gas Plant Products (gal)	Royalties	193925.77
+2011	OK	Woods	40151	Oil	Condensate (bbl)	Royalties	409.7
+2011	OK	Woods	40151	Oil	Oil (bbl)	Royalties	18798.51
+2011	OK	Woodward	40153	Gas	Processed (Residue) Gas (mcf)	Royalties	43387.87
+2011	OK	Woodward	40153	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	344990.79
+2011	OK	Woodward	40153	NGL	Gas Plant Products (gal)	Royalties	62130.76
+2011	OK	Woodward	40153	Oil	Condensate (bbl)	Royalties	16.98
+2011	OK	Woodward	40153	Oil	Oil (bbl)	Royalties	1673.26
+2012	OK	Alfalfa	40003	Gas	Processed (Residue) Gas (mcf)	Royalties	66075.39
+2012	OK	Alfalfa	40003	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	40655.28
+2012	OK	Alfalfa	40003	NGL	Gas Plant Products (gal)	Royalties	101308.05
+2012	OK	Alfalfa	40003	Oil	Condensate (bbl)	Royalties	314.24
+2012	OK	Alfalfa	40003	Oil	Oil (bbl)	Royalties	620.51
+2012	OK	Atoka	40005	Gas	Processed (Residue) Gas (mcf)	Royalties	2411.92
+2012	OK	Atoka	40005	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2846
+2012	OK	Atoka	40005	NGL	Gas Plant Products (gal)	Royalties	3007.2
+2012	OK	Beaver	40007	Gas	Processed (Residue) Gas (mcf)	Royalties	9917.35
+2012	OK	Beaver	40007	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	65011.12
+2012	OK	Beaver	40007	NGL	Gas Plant Products (gal)	Royalties	41645.14
+2012	OK	Beaver	40007	Oil	Condensate (bbl)	Royalties	41.4
+2012	OK	Beaver	40007	Oil	Oil (bbl)	Royalties	8831.89
+2012	OK	Beckham	40009	Gas	Processed (Residue) Gas (mcf)	Royalties	54060.75
+2012	OK	Beckham	40009	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	359704.73
+2012	OK	Beckham	40009	NGL	Gas Plant Products (gal)	Royalties	87547.43
+2012	OK	Beckham	40009	Oil	Condensate (bbl)	Royalties	89.28
+2012	OK	Beckham	40009	Oil	Oil (bbl)	Royalties	294.08
+2012	OK	Blaine	40011	Gas	Processed (Residue) Gas (mcf)	Royalties	60542.78
+2012	OK	Blaine	40011	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	203841.13
+2012	OK	Blaine	40011	NGL	Gas Plant Products (gal)	Royalties	81604.56
+2012	OK	Blaine	40011	Oil	Condensate (bbl)	Royalties	880.24
+2012	OK	Blaine	40011	Oil	Oil (bbl)	Royalties	1512.66
+2012	OK	Caddo	40015	Gas	Processed (Residue) Gas (mcf)	Royalties	74304.12
+2012	OK	Caddo	40015	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	4649.4
+2012	OK	Caddo	40015	NGL	Gas Plant Products (gal)	Royalties	53845.56
+2012	OK	Caddo	40015	Oil	Condensate (bbl)	Royalties	3.88
+2012	OK	Canadian	40017	Gas	Processed (Residue) Gas (mcf)	Royalties	100060.97
+2012	OK	Canadian	40017	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	68786.16
+2012	OK	Canadian	40017	NGL	Gas Plant Products (gal)	Royalties	228451.89
+2012	OK	Canadian	40017	Oil	Condensate (bbl)	Royalties	166.64
+2012	OK	Canadian	40017	Oil	Oil (bbl)	Royalties	2205.01
+2012	OK	Cherokee	40021	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	59.22
+2012	OK	Coal	40029	Gas	Processed (Residue) Gas (mcf)	Royalties	1531839.5
+2012	OK	Coal	40029	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	572381.21
+2012	OK	Coal	40029	NGL	Gas Plant Products (gal)	Royalties	13223244.74
+2012	OK	Coal	40029	Oil	Oil (bbl)	Royalties	15990.9
+2012	OK	Comanche	40031	Oil	Oil (bbl)	Royalties	4699.24
+2012	OK	Custer	40039	Gas	Processed (Residue) Gas (mcf)	Royalties	48455.98
+2012	OK	Custer	40039	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	104687.19
+2012	OK	Custer	40039	NGL	Gas Plant Products (gal)	Royalties	103781.1
+2012	OK	Custer	40039	Oil	Condensate (bbl)	Royalties	1818.86
+2012	OK	Custer	40039	Oil	Oil (bbl)	Royalties	491.5
+2012	OK	Dewey	40043	Gas	Processed (Residue) Gas (mcf)	Royalties	64062.76
+2012	OK	Dewey	40043	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	528245.54
+2012	OK	Dewey	40043	NGL	Gas Plant Products (gal)	Royalties	256761.87
+2012	OK	Dewey	40043	Oil	Condensate (bbl)	Royalties	740.56
+2012	OK	Dewey	40043	Oil	Oil (bbl)	Royalties	35741.58
+2012	OK	Ellis	40045	Gas	Processed (Residue) Gas (mcf)	Royalties	114272.01
+2012	OK	Ellis	40045	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	291190.85
+2012	OK	Ellis	40045	NGL	Gas Plant Products (gal)	Royalties	720287.9
+2012	OK	Ellis	40045	Oil	Condensate (bbl)	Royalties	24134.57
+2012	OK	Ellis	40045	Oil	Oil (bbl)	Royalties	67880.02
+2012	OK	Garfield	40047	Gas	Processed (Residue) Gas (mcf)	Royalties	41.26
+2012	OK	Garfield	40047	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	30778.22
+2012	OK	Garfield	40047	NGL	Gas Plant Products (gal)	Royalties	151.12
+2012	OK	Garfield	40047	Oil	Condensate (bbl)	Royalties	158.98
+2012	OK	Garfield	40047	Oil	Oil (bbl)	Royalties	9.26
+2012	OK	Garvin	40049	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	7627.44
+2012	OK	Garvin	40049	Oil	Oil (bbl)	Royalties	907.99
+2012	OK	Grady	40051	Gas	Processed (Residue) Gas (mcf)	Royalties	7194.12
+2012	OK	Grady	40051	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	4594.5
+2012	OK	Grady	40051	NGL	Gas Plant Products (gal)	Royalties	29831.98
+2012	OK	Grady	40051	Oil	Condensate (bbl)	Royalties	17.27
+2012	OK	Grady	40051	Oil	Oil (bbl)	Royalties	626.1
+2012	OK	Greer	40055	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	5196.72
+2012	OK	Greer	40055	Oil	Condensate (bbl)	Royalties	1.92
+2012	OK	Greer	40055	Oil	Oil (bbl)	Royalties	14.04
+2012	OK	Harper	40059	Gas	Processed (Residue) Gas (mcf)	Royalties	338.56
+2012	OK	Harper	40059	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	54924.58
+2012	OK	Harper	40059	NGL	Gas Plant Products (gal)	Royalties	934.55
+2012	OK	Harper	40059	Oil	Condensate (bbl)	Royalties	30.88
+2012	OK	Harper	40059	Oil	Oil (bbl)	Royalties	19.65
+2012	OK	Haskell	40061	Gas	Processed (Residue) Gas (mcf)	Royalties	5966.26
+2012	OK	Haskell	40061	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	180265.58
+2012	OK	Hughes	40063	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1100.82
+2012	OK	Kingfisher	40073	Gas	Processed (Residue) Gas (mcf)	Royalties	15813.51
+2012	OK	Kingfisher	40073	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	19262.05
+2012	OK	Kingfisher	40073	NGL	Gas Plant Products (gal)	Royalties	39834.78
+2012	OK	Kingfisher	40073	Oil	Condensate (bbl)	Royalties	398.16
+2012	OK	Kingfisher	40073	Oil	Oil (bbl)	Royalties	353.78
+2012	OK	Latimer	40077	Coal	Coal (ton)	Royalties	88537.33
+2012	OK	Latimer	40077	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	321861.66
+2012	OK	Le Flore	40079	Coal	Coal (ton)	Royalties	263633.67
+2012	OK	Le Flore	40079	Gas	Coal Bed Methane (mcf)	Royalties	2254.33
+2012	OK	Le Flore	40079	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	41467.8
+2012	OK	Le Flore	40079	Oil	Condensate (bbl)	Royalties	10.8
+2012	OK	Lincoln	40081	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	194.82
+2012	OK	Lincoln	40081	Oil	Oil (bbl)	Royalties	10.14
+2012	OK	Logan	40083	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	0.38
+2012	OK	Major	40093	Gas	Processed (Residue) Gas (mcf)	Royalties	330076.53
+2012	OK	Major	40093	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	467908.15
+2012	OK	Major	40093	NGL	Gas Plant Products (gal)	Royalties	561849.6
+2012	OK	Major	40093	Oil	Condensate (bbl)	Royalties	675.06
+2012	OK	Major	40093	Oil	Oil (bbl)	Royalties	31816.27
+2012	OK	Mcclain	40087	Oil	Oil (bbl)	Royalties	7.53
+2012	OK	Mcintosh	40091	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3514.16
+2012	OK	Oklahoma	40109	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	718.81
+2012	OK	Oklahoma	40109	Oil	Oil (bbl)	Royalties	4.96
+2012	OK	Payne	40119	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	5736.13
+2012	OK	Payne	40119	Oil	Oil (bbl)	Royalties	11.68
+2012	OK	Pittsburg	40121	Gas	Fuel Gas (mcf)	Royalties	6944.43
+2012	OK	Pittsburg	40121	Gas	Processed (Residue) Gas (mcf)	Royalties	684.93
+2012	OK	Pittsburg	40121	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1835935.19
+2012	OK	Roger Mills	40129	Gas	Processed (Residue) Gas (mcf)	Royalties	1171569.33
+2012	OK	Roger Mills	40129	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3030946.01
+2012	OK	Roger Mills	40129	NGL	Gas Plant Products (gal)	Royalties	3650253.32
+2012	OK	Roger Mills	40129	Oil	Condensate (bbl)	Royalties	69202.09
+2012	OK	Roger Mills	40129	Oil	Oil (bbl)	Royalties	164272.87
+2012	OK	Sequoyah	40135	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	24437.81
+2012	OK	Texas	40139	Gas	Processed (Residue) Gas (mcf)	Royalties	56122.99
+2012	OK	Texas	40139	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	48438.64
+2012	OK	Texas	40139	NGL	Gas Plant Products (gal)	Royalties	190139.44
+2012	OK	Texas	40139	Oil	Oil (bbl)	Royalties	615.51
+2012	OK	Tillman	40141	Oil	Oil (bbl)	Royalties	15574.22
+2012	OK	Washita	40149	Gas	Processed (Residue) Gas (mcf)	Royalties	33791.33
+2012	OK	Washita	40149	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	-52.61
+2012	OK	Washita	40149	NGL	Gas Plant Products (gal)	Royalties	130382.74
+2012	OK	Washita	40149	Oil	Oil (bbl)	Royalties	812.52
+2012	OK	Woods	40151	Gas	Processed (Residue) Gas (mcf)	Royalties	548702.81
+2012	OK	Woods	40151	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	378041.82
+2012	OK	Woods	40151	NGL	Gas Plant Products (gal)	Royalties	747816.76
+2012	OK	Woods	40151	Oil	Condensate (bbl)	Royalties	453.13
+2012	OK	Woods	40151	Oil	Oil (bbl)	Royalties	29675.42
+2012	OK	Woodward	40153	Gas	Processed (Residue) Gas (mcf)	Royalties	231291.16
+2012	OK	Woodward	40153	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	83409.71
+2012	OK	Woodward	40153	NGL	Gas Plant Products (gal)	Royalties	257617.84
+2012	OK	Woodward	40153	Oil	Condensate (bbl)	Royalties	17.36
+2012	OK	Woodward	40153	Oil	Oil (bbl)	Royalties	1617.7
+2013	OK	Alfalfa	40003	Gas	Processed (Residue) Gas (mcf)	Royalties	69533.16
+2013	OK	Alfalfa	40003	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	50708.87
+2013	OK	Alfalfa	40003	NGL	Gas Plant Products (gal)	Royalties	117883.97
+2013	OK	Alfalfa	40003	Oil	Condensate (bbl)	Royalties	1005.84
+2013	OK	Alfalfa	40003	Oil	Oil (bbl)	Royalties	1568.11
+2013	OK	Atoka	40005	Gas	Processed (Residue) Gas (mcf)	Royalties	4709.84
+2013	OK	Atoka	40005	NGL	Gas Plant Products (gal)	Royalties	5349.12
+2013	OK	Beaver	40007	Gas	Processed (Residue) Gas (mcf)	Royalties	9579.96
+2013	OK	Beaver	40007	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	56358.41
+2013	OK	Beaver	40007	NGL	Gas Plant Products (gal)	Royalties	36109.48
+2013	OK	Beaver	40007	Oil	Condensate (bbl)	Royalties	75.18
+2013	OK	Beaver	40007	Oil	Oil (bbl)	Royalties	7430.58
+2013	OK	Beckham	40009	Gas	Fuel Gas (mcf)	Royalties	54.82
+2013	OK	Beckham	40009	Gas	Processed (Residue) Gas (mcf)	Royalties	57600.98
+2013	OK	Beckham	40009	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	313300.89
+2013	OK	Beckham	40009	NGL	Gas Plant Products (gal)	Royalties	79062.18
+2013	OK	Beckham	40009	Oil	Condensate (bbl)	Royalties	136.69
+2013	OK	Beckham	40009	Oil	Drip or Scrubber Condensate (bbl)	Royalties	1.94
+2013	OK	Beckham	40009	Oil	Oil (bbl)	Royalties	390.4
+2013	OK	Blaine	40011	Gas	Processed (Residue) Gas (mcf)	Royalties	51133.95
+2013	OK	Blaine	40011	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	172741.49
+2013	OK	Blaine	40011	NGL	Gas Plant Products (gal)	Royalties	81620.76
+2013	OK	Blaine	40011	Oil	Condensate (bbl)	Royalties	1008.71
+2013	OK	Blaine	40011	Oil	Oil (bbl)	Royalties	755.83
+2013	OK	Caddo	40015	Gas	Processed (Residue) Gas (mcf)	Royalties	51146.83
+2013	OK	Caddo	40015	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	5416.52
+2013	OK	Caddo	40015	NGL	Gas Plant Products (gal)	Royalties	40927.12
+2013	OK	Caddo	40015	Oil	Condensate (bbl)	Royalties	7.12
+2013	OK	Canadian	40017	Gas	Processed (Residue) Gas (mcf)	Royalties	150509.12
+2013	OK	Canadian	40017	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	65788.71
+2013	OK	Canadian	40017	NGL	Gas Plant Products (gal)	Royalties	311353.64
+2013	OK	Canadian	40017	Oil	Condensate (bbl)	Royalties	161.83
+2013	OK	Canadian	40017	Oil	Oil (bbl)	Royalties	1654.83
+2013	OK	Cherokee	40021	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	67.78
+2013	OK	Coal	40029	Gas	Processed (Residue) Gas (mcf)	Royalties	1215769.13
+2013	OK	Coal	40029	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	515543.88
+2013	OK	Coal	40029	NGL	Gas Plant Products (gal)	Royalties	5056081.6
+2013	OK	Coal	40029	Oil	Oil (bbl)	Royalties	4281.91
+2013	OK	Comanche	40031	Oil	Oil (bbl)	Royalties	3921.63
+2013	OK	Custer	40039	Gas	Fuel Gas (mcf)	Royalties	40.65
+2013	OK	Custer	40039	Gas	Processed (Residue) Gas (mcf)	Royalties	53588.1
+2013	OK	Custer	40039	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	88987.77
+2013	OK	Custer	40039	NGL	Gas Plant Products (gal)	Royalties	116301.76
+2013	OK	Custer	40039	Oil	Condensate (bbl)	Royalties	1735.38
+2013	OK	Custer	40039	Oil	Oil (bbl)	Royalties	563.07
+2013	OK	Dewey	40043	Gas	Processed (Residue) Gas (mcf)	Royalties	87267.75
+2013	OK	Dewey	40043	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	372873.5
+2013	OK	Dewey	40043	NGL	Gas Plant Products (gal)	Royalties	361299.91
+2013	OK	Dewey	40043	Oil	Condensate (bbl)	Royalties	500.1
+2013	OK	Dewey	40043	Oil	Oil (bbl)	Royalties	31198.09
+2013	OK	Ellis	40045	Gas	Processed (Residue) Gas (mcf)	Royalties	117816.51
+2013	OK	Ellis	40045	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	243721.35
+2013	OK	Ellis	40045	NGL	Gas Plant Products (gal)	Royalties	839400.06
+2013	OK	Ellis	40045	Oil	Condensate (bbl)	Royalties	18271.95
+2013	OK	Ellis	40045	Oil	Oil (bbl)	Royalties	44334.65
+2013	OK	Garfield	40047	Gas	Processed (Residue) Gas (mcf)	Royalties	39.88
+2013	OK	Garfield	40047	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	27360.89
+2013	OK	Garfield	40047	NGL	Gas Plant Products (gal)	Royalties	123.43
+2013	OK	Garfield	40047	Oil	Oil (bbl)	Royalties	13.87
+2013	OK	Garvin	40049	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	7741.47
+2013	OK	Garvin	40049	Oil	Oil (bbl)	Royalties	1115.64
+2013	OK	Grady	40051	Gas	Processed (Residue) Gas (mcf)	Royalties	6004.43
+2013	OK	Grady	40051	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	4358.71
+2013	OK	Grady	40051	NGL	Gas Plant Products (gal)	Royalties	27238.7
+2013	OK	Grady	40051	Oil	Condensate (bbl)	Royalties	6.21
+2013	OK	Grady	40051	Oil	Oil (bbl)	Royalties	371.23
+2013	OK	Greer	40055	Gas	Fuel Gas (mcf)	Royalties	8.64
+2013	OK	Greer	40055	Gas	Processed (Residue) Gas (mcf)	Royalties	654.66
+2013	OK	Greer	40055	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3975.78
+2013	OK	Greer	40055	NGL	Gas Plant Products (gal)	Royalties	2071.32
+2013	OK	Greer	40055	Oil	Condensate (bbl)	Royalties	1.2
+2013	OK	Greer	40055	Oil	Drip or Scrubber Condensate (bbl)	Royalties	2.46
+2013	OK	Greer	40055	Oil	Oil (bbl)	Royalties	7.44
+2013	OK	Harper	40059	Gas	Processed (Residue) Gas (mcf)	Royalties	3634.39
+2013	OK	Harper	40059	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	21359.05
+2013	OK	Harper	40059	NGL	Gas Plant Products (gal)	Royalties	12849.42
+2013	OK	Harper	40059	Oil	Oil (bbl)	Royalties	18.99
+2013	OK	Haskell	40061	Gas	Processed (Residue) Gas (mcf)	Royalties	1325.02
+2013	OK	Haskell	40061	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	160210.99
+2013	OK	Hughes	40063	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	911.89
+2013	OK	Kingfisher	40073	Gas	Processed (Residue) Gas (mcf)	Royalties	9743.62
+2013	OK	Kingfisher	40073	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	17405.43
+2013	OK	Kingfisher	40073	NGL	Gas Plant Products (gal)	Royalties	24467.55
+2013	OK	Kingfisher	40073	Oil	Condensate (bbl)	Royalties	1.36
+2013	OK	Kingfisher	40073	Oil	Oil (bbl)	Royalties	257.59
+2013	OK	Latimer	40077	Coal	Coal (ton)	Royalties	103673.44
+2013	OK	Latimer	40077	Gas	Fuel Gas (mcf)	Royalties	163.18
+2013	OK	Latimer	40077	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	295667.42
+2013	OK	Le Flore	40079	Coal	Coal (ton)	Royalties	601573.56
+2013	OK	Le Flore	40079	Gas	Coal Bed Methane (mcf)	Royalties	2047.25
+2013	OK	Le Flore	40079	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	35606.99
+2013	OK	Le Flore	40079	Oil	Condensate (bbl)	Royalties	10.64
+2013	OK	Lincoln	40081	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	259.04
+2013	OK	Lincoln	40081	Oil	Oil (bbl)	Royalties	50.86
+2013	OK	Logan	40083	Oil	Oil (bbl)	Royalties	54.76
+2013	OK	Major	40093	Gas	Processed (Residue) Gas (mcf)	Royalties	275567.29
+2013	OK	Major	40093	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	418912.73
+2013	OK	Major	40093	NGL	Gas Plant Products (gal)	Royalties	511966.69
+2013	OK	Major	40093	Oil	Condensate (bbl)	Royalties	423.73
+2013	OK	Major	40093	Oil	Oil (bbl)	Royalties	24649.61
+2013	OK	Mcclain	40087	Oil	Oil (bbl)	Royalties	4.97
+2013	OK	Mcintosh	40091	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3394.82
+2013	OK	Oklahoma	40109	Oil	Oil (bbl)	Royalties	4.96
+2013	OK	Payne	40119	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	4065.24
+2013	OK	Payne	40119	Oil	Oil (bbl)	Royalties	196.51
+2013	OK	Pittsburg	40121	Gas	Fuel Gas (mcf)	Royalties	6862.23
+2013	OK	Pittsburg	40121	Gas	Processed (Residue) Gas (mcf)	Royalties	610.08
+2013	OK	Pittsburg	40121	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1506501.21
+2013	OK	Roger Mills	40129	Gas	Fuel Gas (mcf)	Royalties	783.9
+2013	OK	Roger Mills	40129	Gas	Processed (Residue) Gas (mcf)	Royalties	1366311.5
+2013	OK	Roger Mills	40129	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3625275.13
+2013	OK	Roger Mills	40129	NGL	Gas Plant Products (gal)	Royalties	4496494.43
+2013	OK	Roger Mills	40129	Oil	Condensate (bbl)	Royalties	69273.93
+2013	OK	Roger Mills	40129	Oil	Oil (bbl)	Royalties	93187.9
+2013	OK	Sequoyah	40135	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	15568.46
+2013	OK	Texas	40139	Gas	Processed (Residue) Gas (mcf)	Royalties	56513.85
+2013	OK	Texas	40139	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	51000.87
+2013	OK	Texas	40139	NGL	Gas Plant Products (gal)	Royalties	184249.17
+2013	OK	Texas	40139	Oil	Condensate (bbl)	Royalties	8.44
+2013	OK	Texas	40139	Oil	Oil (bbl)	Royalties	978.11
+2013	OK	Texas	40139	Helium	Helium (bbl)	Royalties	0.15
+2013	OK	Tillman	40141	Oil	Oil (bbl)	Royalties	15002.96
+2013	OK	Washita	40149	Gas	Processed (Residue) Gas (mcf)	Royalties	27724.86
+2013	OK	Washita	40149	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	-10
+2013	OK	Washita	40149	NGL	Gas Plant Products (gal)	Royalties	118590.6
+2013	OK	Washita	40149	Oil	Oil (bbl)	Royalties	759.62
+2013	OK	Woods	40151	Gas	Fuel Gas (mcf)	Royalties	47.94
+2013	OK	Woods	40151	Gas	Processed (Residue) Gas (mcf)	Royalties	596377.87
+2013	OK	Woods	40151	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	372616.64
+2013	OK	Woods	40151	NGL	Gas Plant Products (gal)	Royalties	901297.74
+2013	OK	Woods	40151	Oil	Condensate (bbl)	Royalties	464.08
+2013	OK	Woods	40151	Oil	Oil (bbl)	Royalties	55210.18
+2013	OK	Woodward	40153	Gas	Processed (Residue) Gas (mcf)	Royalties	193014.46
+2013	OK	Woodward	40153	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	76272.24
+2013	OK	Woodward	40153	NGL	Gas Plant Products (gal)	Royalties	217803.71
+2013	OK	Woodward	40153	Oil	Condensate (bbl)	Royalties	49.36
+2013	OK	Woodward	40153	Oil	Oil (bbl)	Royalties	1679.1

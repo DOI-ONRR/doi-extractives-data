@@ -1,0 +1,313 @@
+Year	State	County	FIPS	Commodity	Product	Type	Volume
+2004	MS	Adams	28001	Oil	Oil (bbl)	Royalties	18663
+2004	MS	Chickasaw	28017	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	31584
+2004	MS	Clarke	28023	Oil	Oil (bbl)	Royalties	105.28
+2004	MS	Covington	28031	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	126
+2004	MS	Covington	28031	Oil	Oil (bbl)	Royalties	237.58
+2004	MS	Forrest	28035	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	259576
+2004	MS	Forrest	28035	Oil	Oil (bbl)	Royalties	558
+2004	MS	Franklin	28037	Oil	Oil (bbl)	Royalties	97821.81
+2004	MS	Hancock	28045	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	8.27
+2004	MS	Hancock	28045	Oil	Condensate (bbl)	Royalties	17.44
+2004	MS	Jasper	28061	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	78468.98
+2004	MS	Jasper	28061	Oil	Condensate (bbl)	Royalties	46
+2004	MS	Jeffer Davis	28065	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2896.53
+2004	MS	Jeffer Davis	28065	Oil	Condensate (bbl)	Royalties	4.62
+2004	MS	Jones	28067	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	33124.66
+2004	MS	Jones	28067	Oil	Condensate (bbl)	Royalties	4662.72
+2004	MS	Jones	28067	Oil	Oil (bbl)	Royalties	204.08
+2004	MS	Lamar	28073	Oil	Oil (bbl)	Royalties	10709.72
+2004	MS	Lawrence	28077	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	99542
+2004	MS	Lawrence	28077	Oil	Condensate (bbl)	Royalties	944.9
+2004	MS	Lowndes	28087	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	132370.42
+2004	MS	Monroe	28095	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1350.64
+2004	MS	Pearl River	28109	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2060
+2004	MS	Pearl River	28109	Oil	Oil (bbl)	Royalties	5316.12
+2004	MS	Perry	28111	Oil	Condensate (bbl)	Royalties	208910.65
+2004	MS	Perry	28111	Oil	Oil (bbl)	Royalties	12865.44
+2004	MS	Scott	28123	Oil	Oil (bbl)	Royalties	6233.29
+2004	MS	Stone	28131	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	104826.1
+2004	MS	Wayne	28153	NGL	Gas Plant Products (gal)	Royalties	162.3
+2004	MS	Wayne	28153	Oil	Oil (bbl)	Royalties	97168.11
+2004	MS	Wilkinson	28157	Gas	Processed (Residue) Gas (mcf)	Royalties	135919
+2004	MS	Wilkinson	28157	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	699
+2004	MS	Wilkinson	28157	Oil	Condensate (bbl)	Royalties	238.91
+2004	MS	Wilkinson	28157	Oil	Oil (bbl)	Royalties	10531.67
+2005	MS	Adams	28001	Oil	Oil (bbl)	Royalties	15538.02
+2005	MS	Chickasaw	28017	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	26432
+2005	MS	Clarke	28023	Oil	Oil (bbl)	Royalties	67.39
+2005	MS	Covington	28031	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	174
+2005	MS	Covington	28031	Oil	Oil (bbl)	Royalties	270.56
+2005	MS	Forrest	28035	Gas	Processed (Residue) Gas (mcf)	Royalties	86253.67
+2005	MS	Forrest	28035	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	204778.19
+2005	MS	Forrest	28035	Oil	Condensate (bbl)	Royalties	6932.81
+2005	MS	Forrest	28035	Oil	Oil (bbl)	Royalties	960.56
+2005	MS	Franklin	28037	Oil	Oil (bbl)	Royalties	95451.39
+2005	MS	Hancock	28045	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	7.96
+2005	MS	Jasper	28061	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	456187.94
+2005	MS	Jasper	28061	Oil	Condensate (bbl)	Royalties	175.38
+2005	MS	Jeffer Davis	28065	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	6260.09
+2005	MS	Jeffer Davis	28065	Oil	Condensate (bbl)	Royalties	4.78
+2005	MS	Jeffer Davis	28065	Oil	Oil (bbl)	Royalties	103.1
+2005	MS	Jones	28067	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	23753.76
+2005	MS	Jones	28067	Oil	Condensate (bbl)	Royalties	3001.46
+2005	MS	Lamar	28073	Oil	Oil (bbl)	Royalties	9336.38
+2005	MS	Lawrence	28077	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	131448
+2005	MS	Lawrence	28077	Oil	Condensate (bbl)	Royalties	2404.61
+2005	MS	Lowndes	28087	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	146825.23
+2005	MS	Lowndes	28087	Oil	Condensate (bbl)	Royalties	813.23
+2005	MS	Monroe	28095	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1043.84
+2005	MS	Pearl River	28109	Oil	Oil (bbl)	Royalties	4702.71
+2005	MS	Perry	28111	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	0.07
+2005	MS	Perry	28111	Oil	Oil (bbl)	Royalties	166481.81
+2005	MS	Scott	28123	Oil	Oil (bbl)	Royalties	12260.68
+2005	MS	Stone	28131	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	101235.94
+2005	MS	Wayne	28153	Oil	Oil (bbl)	Royalties	80871.86
+2005	MS	Wilkinson	28157	Gas	Processed (Residue) Gas (mcf)	Royalties	49644
+2005	MS	Wilkinson	28157	Oil	Oil (bbl)	Royalties	7394.22
+2006	MS	Adams	28001	Oil	Oil (bbl)	Royalties	12882.39
+2006	MS	Chickasaw	28017	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	67332
+2006	MS	Clarke	28023	Oil	Oil (bbl)	Royalties	6.94
+2006	MS	Covington	28031	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	194
+2006	MS	Covington	28031	Oil	Oil (bbl)	Royalties	253.76
+2006	MS	Forrest	28035	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	619771.58
+2006	MS	Forrest	28035	Oil	Condensate (bbl)	Royalties	4672.66
+2006	MS	Forrest	28035	Oil	Oil (bbl)	Royalties	193
+2006	MS	Franklin	28037	Oil	Oil (bbl)	Royalties	83687.6
+2006	MS	Hancock	28045	Oil	Oil (bbl)	Royalties	172.76
+2006	MS	Jasper	28061	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	15088.24
+2006	MS	Jasper	28061	Oil	Condensate (bbl)	Royalties	10.92
+2006	MS	Jeffer Davis	28065	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	13258
+2006	MS	Jeffer Davis	28065	Oil	Oil (bbl)	Royalties	316.13
+2006	MS	Jones	28067	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	5873.02
+2006	MS	Jones	28067	Oil	Condensate (bbl)	Royalties	1145.11
+2006	MS	Jones	28067	Oil	Oil (bbl)	Royalties	-177
+2006	MS	Lamar	28073	Oil	Oil (bbl)	Royalties	7024.58
+2006	MS	Lawrence	28077	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	12476
+2006	MS	Lawrence	28077	Oil	Condensate (bbl)	Royalties	185.26
+2006	MS	Lowndes	28087	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	85853.89
+2006	MS	Lowndes	28087	Oil	Condensate (bbl)	Royalties	540.37
+2006	MS	Monroe	28095	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1027.92
+2006	MS	Pearl River	28109	Oil	Oil (bbl)	Royalties	4629.99
+2006	MS	Perry	28111	Oil	Oil (bbl)	Royalties	114263.16
+2006	MS	Scott	28123	Oil	Oil (bbl)	Royalties	10658.37
+2006	MS	Stone	28131	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	72403.74
+2006	MS	Wayne	28153	Oil	Oil (bbl)	Royalties	61218.71
+2006	MS	Wilkinson	28157	Gas	Processed (Residue) Gas (mcf)	Royalties	15233
+2006	MS	Wilkinson	28157	Oil	Oil (bbl)	Royalties	5231.43
+2007	MS	Adams	28001	Oil	Oil (bbl)	Royalties	10337.37
+2007	MS	Chickasaw	28017	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	62387
+2007	MS	Clarke	28023	Oil	Oil (bbl)	Royalties	16.24
+2007	MS	Covington	28031	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	340
+2007	MS	Covington	28031	Oil	Oil (bbl)	Royalties	395.36
+2007	MS	Forrest	28035	Gas	Processed (Residue) Gas (mcf)	Royalties	23870.37
+2007	MS	Forrest	28035	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	396852.16
+2007	MS	Forrest	28035	Oil	Condensate (bbl)	Royalties	1713.39
+2007	MS	Forrest	28035	Oil	Oil (bbl)	Royalties	4.31
+2007	MS	Franklin	28037	Oil	Oil (bbl)	Royalties	85038.38
+2007	MS	Jasper	28061	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	22048.9
+2007	MS	Jasper	28061	Oil	Condensate (bbl)	Royalties	16.21
+2007	MS	Jeffer Davis	28065	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	12626.26
+2007	MS	Jeffer Davis	28065	Oil	Oil (bbl)	Royalties	92.22
+2007	MS	Jones	28067	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	5025.07
+2007	MS	Jones	28067	Oil	Condensate (bbl)	Royalties	1241.12
+2007	MS	Lamar	28073	Oil	Oil (bbl)	Royalties	4769.46
+2007	MS	Lawrence	28077	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	62552.17
+2007	MS	Lawrence	28077	Oil	Condensate (bbl)	Royalties	364.7
+2007	MS	Lowndes	28087	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	81120.72
+2007	MS	Lowndes	28087	Oil	Condensate (bbl)	Royalties	517.84
+2007	MS	Monroe	28095	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	988.4
+2007	MS	Pearl River	28109	Oil	Oil (bbl)	Royalties	5020.48
+2007	MS	Perry	28111	Oil	Oil (bbl)	Royalties	115820.39
+2007	MS	Scott	28123	Oil	Oil (bbl)	Royalties	9719.82
+2007	MS	Smith	28129	Oil	Oil (bbl)	Royalties	1978.82
+2007	MS	Stone	28131	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	50128.09
+2007	MS	Wayne	28153	Oil	Oil (bbl)	Royalties	55778.48
+2007	MS	Wilkinson	28157	Gas	Processed (Residue) Gas (mcf)	Royalties	15335.92
+2007	MS	Wilkinson	28157	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2659
+2007	MS	Wilkinson	28157	Oil	Oil (bbl)	Royalties	8331.3
+2008	MS	Adams	28001	Oil	Oil (bbl)	Royalties	7599
+2008	MS	Chickasaw	28017	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	46919
+2008	MS	Clarke	28023	Oil	Oil (bbl)	Royalties	166.99
+2008	MS	Covington	28031	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	300
+2008	MS	Covington	28031	Oil	Oil (bbl)	Royalties	329.6
+2008	MS	Forrest	28035	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	291629.87
+2008	MS	Forrest	28035	Oil	Condensate (bbl)	Royalties	2551.09
+2008	MS	Forrest	28035	Oil	Oil (bbl)	Royalties	12.38
+2008	MS	Franklin	28037	Oil	Oil (bbl)	Royalties	80005.47
+2008	MS	Jasper	28061	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	35271.84
+2008	MS	Jasper	28061	Oil	Condensate (bbl)	Royalties	54.18
+2008	MS	Jeffer Davis	28065	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	12311.74
+2008	MS	Jeffer Davis	28065	Oil	Condensate (bbl)	Royalties	2.94
+2008	MS	Jeffer Davis	28065	Oil	Oil (bbl)	Royalties	299.25
+2008	MS	Jones	28067	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1022.64
+2008	MS	Jones	28067	Oil	Condensate (bbl)	Royalties	372.47
+2008	MS	Jones	28067	Oil	Oil (bbl)	Royalties	96.17
+2008	MS	Lamar	28073	Oil	Oil (bbl)	Royalties	2289.05
+2008	MS	Lawrence	28077	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	73372.9
+2008	MS	Lawrence	28077	Oil	Condensate (bbl)	Royalties	287.06
+2008	MS	Lowndes	28087	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	66969.93
+2008	MS	Lowndes	28087	Oil	Condensate (bbl)	Royalties	408.55
+2008	MS	Monroe	28095	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	772.84
+2008	MS	Pearl River	28109	Oil	Oil (bbl)	Royalties	3567.07
+2008	MS	Perry	28111	Oil	Oil (bbl)	Royalties	79913.82
+2008	MS	Scott	28123	Oil	Oil (bbl)	Royalties	7617.53
+2008	MS	Stone	28131	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	57712.05
+2008	MS	Wayne	28153	Oil	Oil (bbl)	Royalties	49205.57
+2008	MS	Wilkinson	28157	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	60724
+2008	MS	Wilkinson	28157	Oil	Oil (bbl)	Royalties	6676.09
+2009	MS	Adams	28001	Oil	Oil (bbl)	Royalties	7838.45
+2009	MS	Chickasaw	28017	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	34156
+2009	MS	Clarke	28023	Oil	Oil (bbl)	Royalties	40.31
+2009	MS	Covington	28031	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	306
+2009	MS	Covington	28031	Oil	Oil (bbl)	Royalties	384.48
+2009	MS	Forrest	28035	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	281415.07
+2009	MS	Forrest	28035	Oil	Condensate (bbl)	Royalties	8876.35
+2009	MS	Forrest	28035	Oil	Oil (bbl)	Royalties	5.44
+2009	MS	Franklin	28037	Oil	Oil (bbl)	Royalties	77015.78
+2009	MS	Jasper	28061	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	15374.38
+2009	MS	Jasper	28061	Oil	Condensate (bbl)	Royalties	23.5
+2009	MS	Jeffer Davis	28065	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	9791.07
+2009	MS	Jeffer Davis	28065	Oil	Condensate (bbl)	Royalties	2.18
+2009	MS	Jeffer Davis	28065	Oil	Oil (bbl)	Royalties	261.76
+2009	MS	Jones	28067	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	8472.28
+2009	MS	Jones	28067	Oil	Condensate (bbl)	Royalties	1745.91
+2009	MS	Lamar	28073	Oil	Oil (bbl)	Royalties	389.15
+2009	MS	Lawrence	28077	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	89059.11
+2009	MS	Lawrence	28077	Oil	Condensate (bbl)	Royalties	344.86
+2009	MS	Lowndes	28087	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	73784.71
+2009	MS	Lowndes	28087	Oil	Condensate (bbl)	Royalties	446.87
+2009	MS	Monroe	28095	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1002
+2009	MS	Pearl River	28109	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	213763
+2009	MS	Pearl River	28109	Oil	Condensate (bbl)	Royalties	8760.95
+2009	MS	Pearl River	28109	Oil	Oil (bbl)	Royalties	4690.68
+2009	MS	Perry	28111	Oil	Oil (bbl)	Royalties	63653.03
+2009	MS	Scott	28123	Oil	Oil (bbl)	Royalties	5572.85
+2009	MS	Smith	28129	Oil	Oil (bbl)	Royalties	193
+2009	MS	Stone	28131	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	54924.12
+2009	MS	Wayne	28153	Oil	Oil (bbl)	Royalties	60814.53
+2009	MS	Wilkinson	28157	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	626
+2009	MS	Wilkinson	28157	Oil	Oil (bbl)	Royalties	4793.02
+2010	MS	Adams	28001	Oil	Oil (bbl)	Royalties	4606.34
+2010	MS	Chickasaw	28017	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	31958
+2010	MS	Clarke	28023	Oil	Oil (bbl)	Royalties	75.22
+2010	MS	Covington	28031	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	206
+2010	MS	Covington	28031	Oil	Oil (bbl)	Royalties	364.48
+2010	MS	Forrest	28035	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	267409.96
+2010	MS	Forrest	28035	Oil	Condensate (bbl)	Royalties	30577.9
+2010	MS	Forrest	28035	Oil	Oil (bbl)	Royalties	50.69
+2010	MS	Franklin	28037	Oil	Oil (bbl)	Royalties	74346.41
+2010	MS	Jasper	28061	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	11144.24
+2010	MS	Jasper	28061	Oil	Condensate (bbl)	Royalties	19.22
+2010	MS	Jeffer Davis	28065	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	9295.53
+2010	MS	Jeffer Davis	28065	Oil	Condensate (bbl)	Royalties	3.06
+2010	MS	Jeffer Davis	28065	Oil	Oil (bbl)	Royalties	234.49
+2010	MS	Jones	28067	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	9088.97
+2010	MS	Jones	28067	Oil	Condensate (bbl)	Royalties	1579.64
+2010	MS	Lawrence	28077	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	63506.53
+2010	MS	Lawrence	28077	Oil	Condensate (bbl)	Royalties	214.52
+2010	MS	Lowndes	28087	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	74249.6
+2010	MS	Lowndes	28087	Oil	Condensate (bbl)	Royalties	391.52
+2010	MS	Monroe	28095	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	53.36
+2010	MS	Pearl River	28109	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	287435.69
+2010	MS	Pearl River	28109	Oil	Condensate (bbl)	Royalties	7320.04
+2010	MS	Pearl River	28109	Oil	Oil (bbl)	Royalties	2525.25
+2010	MS	Perry	28111	Oil	Oil (bbl)	Royalties	76033
+2010	MS	Stone	28131	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	53605.81
+2010	MS	Wayne	28153	Oil	Oil (bbl)	Royalties	63874.69
+2010	MS	Wilkinson	28157	Oil	Oil (bbl)	Royalties	4343.74
+2011	MS	Adams	28001	Oil	Oil (bbl)	Royalties	2389.34
+2011	MS	Chickasaw	28017	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	29224
+2011	MS	Clarke	28023	Oil	Oil (bbl)	Royalties	5.46
+2011	MS	Covington	28031	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	254
+2011	MS	Covington	28031	Oil	Oil (bbl)	Royalties	416.96
+2011	MS	Forrest	28035	Gas	Processed (Residue) Gas (mcf)	Royalties	101234.16
+2011	MS	Forrest	28035	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	137348.07
+2011	MS	Forrest	28035	Oil	Condensate (bbl)	Royalties	5558.89
+2011	MS	Forrest	28035	Oil	Oil (bbl)	Royalties	22604.37
+2011	MS	Franklin	28037	Oil	Oil (bbl)	Royalties	75966.78
+2011	MS	Jasper	28061	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	9038.88
+2011	MS	Jasper	28061	Oil	Condensate (bbl)	Royalties	11.01
+2011	MS	Jeffer Davis	28065	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	7617.77
+2011	MS	Jeffer Davis	28065	Oil	Condensate (bbl)	Royalties	0.89
+2011	MS	Jeffer Davis	28065	Oil	Oil (bbl)	Royalties	195.16
+2011	MS	Jones	28067	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	11789.43
+2011	MS	Jones	28067	Oil	Condensate (bbl)	Royalties	833.24
+2011	MS	Jones	28067	Oil	Oil (bbl)	Royalties	799.19
+2011	MS	Lamar	28073	Oil	Oil (bbl)	Royalties	31060.75
+2011	MS	Lawrence	28077	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	37056.11
+2011	MS	Lawrence	28077	Oil	Condensate (bbl)	Royalties	133.65
+2011	MS	Lowndes	28087	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	56926.29
+2011	MS	Lowndes	28087	Oil	Condensate (bbl)	Royalties	327.28
+2011	MS	Monroe	28095	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	17.24
+2011	MS	Pearl River	28109	Gas	Processed (Residue) Gas (mcf)	Royalties	513149.33
+2011	MS	Pearl River	28109	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	30759.03
+2011	MS	Pearl River	28109	Oil	Condensate (bbl)	Royalties	12661.58
+2011	MS	Pearl River	28109	Oil	Oil (bbl)	Royalties	12980.23
+2011	MS	Perry	28111	Oil	Oil (bbl)	Royalties	83276.81
+2011	MS	Scott	28123	Oil	Oil (bbl)	Royalties	679
+2011	MS	Stone	28131	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	50191.17
+2011	MS	Wayne	28153	Oil	Oil (bbl)	Royalties	47518.81
+2011	MS	Wilkinson	28157	Oil	Oil (bbl)	Royalties	3903.39
+2012	MS	Adams	28001	Oil	Oil (bbl)	Royalties	3059.89
+2012	MS	Chickasaw	28017	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	22789
+2012	MS	Clarke	28023	Oil	Oil (bbl)	Royalties	20.97
+2012	MS	Covington	28031	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	216
+2012	MS	Covington	28031	Oil	Oil (bbl)	Royalties	464.9
+2012	MS	Forrest	28035	Gas	Processed (Residue) Gas (mcf)	Royalties	25379.53
+2012	MS	Forrest	28035	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	40004.52
+2012	MS	Forrest	28035	Oil	Condensate (bbl)	Royalties	926.59
+2012	MS	Forrest	28035	Oil	Oil (bbl)	Royalties	6186.62
+2012	MS	Franklin	28037	Oil	Oil (bbl)	Royalties	73267.02
+2012	MS	Jasper	28061	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	7573.62
+2012	MS	Jasper	28061	Oil	Condensate (bbl)	Royalties	5.62
+2012	MS	Jeffer Davis	28065	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	29995.74
+2012	MS	Jeffer Davis	28065	Oil	Condensate (bbl)	Royalties	22.43
+2012	MS	Jeffer Davis	28065	Oil	Oil (bbl)	Royalties	104.89
+2012	MS	Jones	28067	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	8690.42
+2012	MS	Jones	28067	Oil	Condensate (bbl)	Royalties	1299.46
+2012	MS	Lamar	28073	Oil	Oil (bbl)	Royalties	53513.79
+2012	MS	Lawrence	28077	Gas	Processed (Residue) Gas (mcf)	Royalties	266315
+2012	MS	Lawrence	28077	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	5526.64
+2012	MS	Lawrence	28077	Oil	Condensate (bbl)	Royalties	960.86
+2012	MS	Lowndes	28087	Gas	Processed (Residue) Gas (mcf)	Royalties	51735.42
+2012	MS	Lowndes	28087	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	7950.51
+2012	MS	Lowndes	28087	Oil	Oil (bbl)	Royalties	308.86
+2012	MS	Pearl River	28109	Gas	Processed (Residue) Gas (mcf)	Royalties	253988.99
+2012	MS	Pearl River	28109	Oil	Condensate (bbl)	Royalties	5729.04
+2012	MS	Pearl River	28109	Oil	Oil (bbl)	Royalties	3858.24
+2012	MS	Perry	28111	Oil	Oil (bbl)	Royalties	119892.61
+2012	MS	Stone	28131	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	47414.31
+2012	MS	Wayne	28153	Oil	Oil (bbl)	Royalties	45966.73
+2012	MS	Wilkinson	28157	Oil	Oil (bbl)	Royalties	4731.49
+2013	MS	Adams	28001	Oil	Oil (bbl)	Royalties	2691.68
+2013	MS	Chickasaw	28017	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	18576
+2013	MS	Clarke	28023	Oil	Oil (bbl)	Royalties	70.5
+2013	MS	Covington	28031	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	160
+2013	MS	Covington	28031	Oil	Oil (bbl)	Royalties	422.66
+2013	MS	Forrest	28035	Gas	Processed (Residue) Gas (mcf)	Royalties	9459.3
+2013	MS	Forrest	28035	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	32413
+2013	MS	Forrest	28035	Oil	Condensate (bbl)	Royalties	1613.86
+2013	MS	Forrest	28035	Oil	Oil (bbl)	Royalties	4788.24
+2013	MS	Franklin	28037	Oil	Oil (bbl)	Royalties	85138.89
+2013	MS	Jasper	28061	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	5774.15
+2013	MS	Jasper	28061	Oil	Condensate (bbl)	Royalties	1.15
+2013	MS	Jeffer Davis	28065	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	38071.79
+2013	MS	Jeffer Davis	28065	Oil	Condensate (bbl)	Royalties	26.3
+2013	MS	Jeffer Davis	28065	Oil	Oil (bbl)	Royalties	85.77
+2013	MS	Jones	28067	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	8888.45
+2013	MS	Jones	28067	Oil	Condensate (bbl)	Royalties	1142.2
+2013	MS	Lamar	28073	Oil	Oil (bbl)	Royalties	87811.46
+2013	MS	Lawrence	28077	Gas	Processed (Residue) Gas (mcf)	Royalties	61472
+2013	MS	Lawrence	28077	Oil	Condensate (bbl)	Royalties	358.58
+2013	MS	Lowndes	28087	Gas	Processed (Residue) Gas (mcf)	Royalties	49964.47
+2013	MS	Lowndes	28087	Oil	Oil (bbl)	Royalties	212.77
+2013	MS	Pearl River	28109	Gas	Processed (Residue) Gas (mcf)	Royalties	125927.64
+2013	MS	Pearl River	28109	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	34760.27
+2013	MS	Pearl River	28109	Oil	Condensate (bbl)	Royalties	2864.15
+2013	MS	Pearl River	28109	Oil	Oil (bbl)	Royalties	3158.87
+2013	MS	Perry	28111	Oil	Oil (bbl)	Royalties	183046.3
+2013	MS	Smith	28129	Oil	Condensate (bbl)	Royalties	1286.83
+2013	MS	Stone	28131	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	21621.08
+2013	MS	Wayne	28153	Oil	Oil (bbl)	Royalties	40452.47
+2013	MS	Wilkinson	28157	Oil	Oil (bbl)	Royalties	4221.23

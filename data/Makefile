@@ -25,8 +25,9 @@ REVENUE_FILES = \
 PRODUCTION_FILES = \
 	national/production.tsv \
 	state/production.tsv \
-	county/production.tsv \
-	offshore/production.tsv
+	county-production-by-state \
+	offshore/production.tsv \
+	regional/production.tsv
 
 # Census-derived export figures
 EXPORT_FILES = \
@@ -188,6 +189,13 @@ county-revenues-by-state: county/revenues.tsv
 	$(tito) --read tsv $< \
 		| bin/divvy.js \
 			--path 'county/by-state/{{ State }}/revenues.tsv' \
+			--of tsv
+
+# divvy up county revenues into separate files by state
+county-production-by-state: county/production.tsv
+	$(tito) --read tsv $< \
+		| bin/divvy.js \
+			--path 'county/by-state/{{ State }}/production.tsv' \
 			--of tsv
 
 county-resource-revenues-by-state: county/revenues.tsv

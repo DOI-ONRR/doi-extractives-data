@@ -1,0 +1,812 @@
+Year	State	County	FIPS	Commodity	Product	Type	Volume
+2004	LA	Beauregard	22011	Gas	Processed (Residue) Gas (mcf)	Royalties	203.92
+2004	LA	Beauregard	22011	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	16.94
+2004	LA	Beauregard	22011	NGL	Gas Plant Products (gal)	Royalties	1186.08
+2004	LA	Beauregard	22011	Oil	Oil (bbl)	Royalties	97.36
+2004	LA	Bienville	22013	Gas	Processed (Residue) Gas (mcf)	Royalties	8734.24
+2004	LA	Bienville	22013	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	25508.72
+2004	LA	Bienville	22013	Oil	Condensate (bbl)	Royalties	22
+2004	LA	Bossier	22015	Gas	Processed (Residue) Gas (mcf)	Royalties	10822850.06
+2004	LA	Bossier	22015	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	4109069.94
+2004	LA	Bossier	22015	NGL	Gas Plant Products (gal)	Royalties	3385210.39
+2004	LA	Bossier	22015	Oil	Condensate (bbl)	Royalties	25283.43
+2004	LA	Bossier	22015	Oil	Oil (bbl)	Royalties	38667.73
+2004	LA	Caddo	22017	Gas	Processed (Residue) Gas (mcf)	Royalties	3370.3
+2004	LA	Caddo	22017	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	86151.01
+2004	LA	Caddo	22017	NGL	Gas Plant Products (gal)	Royalties	20.93
+2004	LA	Caddo	22017	Oil	Condensate (bbl)	Royalties	-4.35
+2004	LA	Caddo	22017	Oil	Oil (bbl)	Royalties	14826.21
+2004	LA	Calcasieu	22019	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	163392.2
+2004	LA	Calcasieu	22019	Oil	Condensate (bbl)	Royalties	509.38
+2004	LA	Cameron	22023	Gas	Processed (Residue) Gas (mcf)	Royalties	5740.49
+2004	LA	Cameron	22023	NGL	Gas Plant Products (gal)	Royalties	12788.79
+2004	LA	Cameron	22023	Oil	Oil (bbl)	Royalties	163.94
+2004	LA	Claiborne	22027	Gas	Processed (Residue) Gas (mcf)	Royalties	187722.93
+2004	LA	Claiborne	22027	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	25658.2
+2004	LA	Claiborne	22027	NGL	Gas Plant Products (gal)	Royalties	402759.04
+2004	LA	Claiborne	22027	Oil	Condensate (bbl)	Royalties	17236.59
+2004	LA	Claiborne	22027	Oil	Drip or Scrubber Condensate (bbl)	Royalties	173.79
+2004	LA	Claiborne	22027	Oil	Oil (bbl)	Royalties	12323.36
+2004	LA	De Soto	22031	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	35095.04
+2004	LA	E Btn Rouge	22033	Gas	Processed (Residue) Gas (mcf)	Royalties	86686.17
+2004	LA	E Btn Rouge	22033	Oil	Condensate (bbl)	Royalties	8726.8
+2004	LA	Jackson	22049	Gas	Processed (Residue) Gas (mcf)	Royalties	2493.1
+2004	LA	Jefferson	22051	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	92.48
+2004	LA	Jefferson	22051	Oil	Oil (bbl)	Royalties	10187.57
+2004	LA	La Salle	22059	Oil	Oil (bbl)	Royalties	630
+2004	LA	Lafourche	22057	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	637.15
+2004	LA	Lafourche	22057	Oil	Oil (bbl)	Royalties	1446.91
+2004	LA	Lincoln	22061	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	724.35
+2004	LA	Lincoln	22061	NGL	Gas Plant Products (gal)	Royalties	1643.35
+2004	LA	Lincoln	22061	Oil	Oil (bbl)	Royalties	31.9
+2004	LA	Morehouse	22067	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1479
+2004	LA	Natchitoches	22069	Gas	Processed (Residue) Gas (mcf)	Royalties	7273.36
+2004	LA	Natchitoches	22069	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2775.95
+2004	LA	Natchitoches	22069	NGL	Gas Plant Products (gal)	Royalties	434.8
+2004	LA	Natchitoches	22069	Oil	Condensate (bbl)	Royalties	386.64
+2004	LA	Natchitoches	22069	Oil	Oil (bbl)	Royalties	70.3
+2004	LA	Ouachita	22073	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	767
+2004	LA	Plaquemines	22075	Gas	Processed (Residue) Gas (mcf)	Royalties	411302.84
+2004	LA	Plaquemines	22075	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1177337.58
+2004	LA	Plaquemines	22075	NGL	Gas Plant Products (gal)	Royalties	1033114.71
+2004	LA	Plaquemines	22075	Oil	Condensate (bbl)	Royalties	70223.55
+2004	LA	Plaquemines	22075	Oil	Drip or Scrubber Condensate (bbl)	Royalties	157.76
+2004	LA	Plaquemines	22075	Oil	Oil (bbl)	Royalties	206353.73
+2004	LA	Rapides	22079	Gas	Processed (Residue) Gas (mcf)	Royalties	36829.94
+2004	LA	Rapides	22079	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	10843.03
+2004	LA	Rapides	22079	NGL	Gas Plant Products (gal)	Royalties	86172.58
+2004	LA	Rapides	22079	Oil	Oil (bbl)	Royalties	39647.75
+2004	LA	South Pass	22721	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2863.36
+2004	LA	South Pass	22721	NGL	Gas Plant Products (gal)	Royalties	2789.89
+2004	LA	South Pass	22721	Oil	Condensate (bbl)	Royalties	165.84
+2004	LA	South Pass	22721	Oil	Drip or Scrubber Condensate (bbl)	Royalties	0.16
+2004	LA	St Martin	22099	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	41626.68
+2004	LA	St Martin	22099	Oil	Condensate (bbl)	Royalties	12.97
+2004	LA	St Martin	22099	Oil	Oil (bbl)	Royalties	8945.44
+2004	LA	Terrebonne	22109	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2515.3
+2004	LA	Terrebonne	22109	Oil	Condensate (bbl)	Royalties	5.68
+2004	LA	Union	22111	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	5399
+2004	LA	Vermilion	22113	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	140105
+2004	LA	Vermilion	22113	Oil	Condensate (bbl)	Royalties	2
+2004	LA	Vermilion	22113	Oil	Oil (bbl)	Royalties	7531.07
+2004	LA	Vernon	22115	Gas	Processed (Residue) Gas (mcf)	Royalties	37940.46
+2004	LA	Vernon	22115	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	19069.01
+2004	LA	Vernon	22115	NGL	Gas Plant Products (gal)	Royalties	164709.44
+2004	LA	Vernon	22115	Oil	Condensate (bbl)	Royalties	13.68
+2004	LA	Vernon	22115	Oil	Oil (bbl)	Royalties	28161.46
+2004	LA	Webster	22119	Gas	Processed (Residue) Gas (mcf)	Royalties	43265.28
+2004	LA	Webster	22119	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	20673.96
+2004	LA	Webster	22119	NGL	Gas Plant Products (gal)	Royalties	93621.84
+2004	LA	Webster	22119	Oil	Condensate (bbl)	Royalties	365.96
+2004	LA	Webster	22119	Oil	Oil (bbl)	Royalties	4934.16
+2004	LA	West Delta	22719	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	46.27
+2004	LA	West Delta	22719	NGL	Gas Plant Products (gal)	Royalties	38.27
+2004	LA	West Delta	22719	Oil	Condensate (bbl)	Royalties	1.52
+2004	LA	West Delta	22719	Oil	Drip or Scrubber Condensate (bbl)	Royalties	0.06
+2004	LA	Winn	22127	Gas	Processed (Residue) Gas (mcf)	Royalties	99603
+2004	LA	Winn	22127	Oil	Condensate (bbl)	Royalties	3134.38
+2005	LA	Beauregard	22011	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	53.29
+2005	LA	Beauregard	22011	Oil	Oil (bbl)	Royalties	96.26
+2005	LA	Bienville	22013	Gas	Processed (Residue) Gas (mcf)	Royalties	25502.68
+2005	LA	Bienville	22013	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	19118.48
+2005	LA	Bienville	22013	Oil	Condensate (bbl)	Royalties	41.44
+2005	LA	Bossier	22015	Gas	Processed (Residue) Gas (mcf)	Royalties	23295374.25
+2005	LA	Bossier	22015	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	6493417.12
+2005	LA	Bossier	22015	NGL	Gas Plant Products (gal)	Royalties	13473280.43
+2005	LA	Bossier	22015	Oil	Condensate (bbl)	Royalties	48241.8
+2005	LA	Bossier	22015	Oil	Oil (bbl)	Royalties	53280.6
+2005	LA	Caddo	22017	Gas	Processed (Residue) Gas (mcf)	Royalties	3453.64
+2005	LA	Caddo	22017	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	116675.33
+2005	LA	Caddo	22017	Oil	Condensate (bbl)	Royalties	40.5
+2005	LA	Caddo	22017	Oil	Oil (bbl)	Royalties	17318.58
+2005	LA	Calcasieu	22019	Oil	Condensate (bbl)	Royalties	73.42
+2005	LA	Caldwell	22021	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	83.36
+2005	LA	Cameron	22023	Gas	Processed (Residue) Gas (mcf)	Royalties	4356.41
+2005	LA	Cameron	22023	NGL	Gas Plant Products (gal)	Royalties	5590.42
+2005	LA	Cameron	22023	Oil	Oil (bbl)	Royalties	112.25
+2005	LA	Claiborne	22027	Gas	Processed (Residue) Gas (mcf)	Royalties	129462.66
+2005	LA	Claiborne	22027	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	28319.3
+2005	LA	Claiborne	22027	NGL	Gas Plant Products (gal)	Royalties	394733.21
+2005	LA	Claiborne	22027	Oil	Condensate (bbl)	Royalties	14069.66
+2005	LA	Claiborne	22027	Oil	Drip or Scrubber Condensate (bbl)	Royalties	108.48
+2005	LA	Claiborne	22027	Oil	Oil (bbl)	Royalties	10320.3
+2005	LA	De Soto	22031	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	18121.75
+2005	LA	E Btn Rouge	22033	Gas	Processed (Residue) Gas (mcf)	Royalties	114798.12
+2005	LA	E Btn Rouge	22033	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	0.01
+2005	LA	E Btn Rouge	22033	Oil	Condensate (bbl)	Royalties	12761.12
+2005	LA	Jackson	22049	Gas	Processed (Residue) Gas (mcf)	Royalties	1957.6
+2005	LA	Jefferson	22051	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	396.05
+2005	LA	Jefferson	22051	Oil	Oil (bbl)	Royalties	19176.41
+2005	LA	La Salle	22059	Oil	Oil (bbl)	Royalties	383
+2005	LA	Lafourche	22057	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	406.86
+2005	LA	Lafourche	22057	Oil	Oil (bbl)	Royalties	609.68
+2005	LA	Lincoln	22061	Gas	Processed (Residue) Gas (mcf)	Royalties	151.92
+2005	LA	Lincoln	22061	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	724.21
+2005	LA	Lincoln	22061	NGL	Gas Plant Products (gal)	Royalties	645.28
+2005	LA	Lincoln	22061	Oil	Oil (bbl)	Royalties	11.68
+2005	LA	Morehouse	22067	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2691
+2005	LA	Natchitoches	22069	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	9963.66
+2005	LA	Natchitoches	22069	NGL	Gas Plant Products (gal)	Royalties	4585.29
+2005	LA	Natchitoches	22069	Oil	Oil (bbl)	Royalties	355.29
+2005	LA	Ouachita	22073	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	726
+2005	LA	Plaquemines	22075	Gas	Processed (Residue) Gas (mcf)	Royalties	101068.38
+2005	LA	Plaquemines	22075	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	440250.25
+2005	LA	Plaquemines	22075	NGL	Gas Plant Products (gal)	Royalties	447819.56
+2005	LA	Plaquemines	22075	Oil	Condensate (bbl)	Royalties	43939.6
+2005	LA	Plaquemines	22075	Oil	Drip or Scrubber Condensate (bbl)	Royalties	1927.44
+2005	LA	Plaquemines	22075	Oil	Oil (bbl)	Royalties	130667.84
+2005	LA	Rapides	22079	Gas	Processed (Residue) Gas (mcf)	Royalties	-5167.96
+2005	LA	Rapides	22079	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	69032.86
+2005	LA	Rapides	22079	NGL	Gas Plant Products (gal)	Royalties	-6870.01
+2005	LA	Rapides	22079	Oil	Oil (bbl)	Royalties	27546.75
+2005	LA	South Pass	22721	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1201.88
+2005	LA	South Pass	22721	NGL	Gas Plant Products (gal)	Royalties	1202.49
+2005	LA	South Pass	22721	Oil	Condensate (bbl)	Royalties	104.66
+2005	LA	South Pass	22721	Oil	Drip or Scrubber Condensate (bbl)	Royalties	8.09
+2005	LA	St Martin	22099	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	36038.95
+2005	LA	St Martin	22099	Oil	Condensate (bbl)	Royalties	20.79
+2005	LA	St Martin	22099	Oil	Oil (bbl)	Royalties	8155.77
+2005	LA	Terrebonne	22109	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	229
+2005	LA	Terrebonne	22109	Oil	Condensate (bbl)	Royalties	1.39
+2005	LA	Union	22111	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	6897
+2005	LA	Vermilion	22113	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	145026
+2005	LA	Vermilion	22113	Oil	Condensate (bbl)	Royalties	2.49
+2005	LA	Vermilion	22113	Oil	Oil (bbl)	Royalties	4329.93
+2005	LA	Vernon	22115	Gas	Processed (Residue) Gas (mcf)	Royalties	8949.34
+2005	LA	Vernon	22115	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	35010.46
+2005	LA	Vernon	22115	Oil	Oil (bbl)	Royalties	15594.19
+2005	LA	Webster	22119	Gas	Flash Gas (mcf)	Royalties	0.01
+2005	LA	Webster	22119	Gas	Processed (Residue) Gas (mcf)	Royalties	36678.03
+2005	LA	Webster	22119	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	19373.31
+2005	LA	Webster	22119	NGL	Gas Plant Products (gal)	Royalties	60625.36
+2005	LA	Webster	22119	Oil	Condensate (bbl)	Royalties	312.78
+2005	LA	Webster	22119	Oil	Oil (bbl)	Royalties	4931.98
+2005	LA	West Delta	22719	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	17.78
+2005	LA	West Delta	22719	NGL	Gas Plant Products (gal)	Royalties	20.82
+2005	LA	West Delta	22719	Oil	Condensate (bbl)	Royalties	0.7
+2005	LA	West Delta	22719	Oil	Drip or Scrubber Condensate (bbl)	Royalties	0.03
+2005	LA	Winn	22127	Gas	Processed (Residue) Gas (mcf)	Royalties	80454
+2005	LA	Winn	22127	Oil	Condensate (bbl)	Royalties	2558.12
+2006	LA	Beauregard	22011	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	54.33
+2006	LA	Beauregard	22011	Oil	Oil (bbl)	Royalties	4.24
+2006	LA	Bienville	22013	Gas	Processed (Residue) Gas (mcf)	Royalties	68246.61
+2006	LA	Bienville	22013	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	16937.36
+2006	LA	Bienville	22013	Oil	Condensate (bbl)	Royalties	20.72
+2006	LA	Bienville	22013	Oil	Oil (bbl)	Royalties	95.44
+2006	LA	Bossier	22015	Gas	Processed (Residue) Gas (mcf)	Royalties	21036312.93
+2006	LA	Bossier	22015	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	7874215.12
+2006	LA	Bossier	22015	NGL	Gas Plant Products (gal)	Royalties	14683719.05
+2006	LA	Bossier	22015	Oil	Condensate (bbl)	Royalties	57207.13
+2006	LA	Bossier	22015	Oil	Oil (bbl)	Royalties	70335.9
+2006	LA	Caddo	22017	Gas	Processed (Residue) Gas (mcf)	Royalties	2514.24
+2006	LA	Caddo	22017	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	91243.96
+2006	LA	Caddo	22017	Oil	Condensate (bbl)	Royalties	31.15
+2006	LA	Caddo	22017	Oil	Oil (bbl)	Royalties	16318.22
+2006	LA	Caldwell	22021	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	18073.47
+2006	LA	Cameron	22023	Gas	Processed (Residue) Gas (mcf)	Royalties	3434.11
+2006	LA	Cameron	22023	NGL	Gas Plant Products (gal)	Royalties	4699.22
+2006	LA	Cameron	22023	Oil	Oil (bbl)	Royalties	51.58
+2006	LA	Claiborne	22027	Gas	Processed (Residue) Gas (mcf)	Royalties	119125.97
+2006	LA	Claiborne	22027	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	30132.47
+2006	LA	Claiborne	22027	NGL	Gas Plant Products (gal)	Royalties	343786.73
+2006	LA	Claiborne	22027	Oil	Condensate (bbl)	Royalties	12031.59
+2006	LA	Claiborne	22027	Oil	Drip or Scrubber Condensate (bbl)	Royalties	71.84
+2006	LA	Claiborne	22027	Oil	Oil (bbl)	Royalties	8488.26
+2006	LA	De Soto	22031	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	12527.26
+2006	LA	E Btn Rouge	22033	Gas	Processed (Residue) Gas (mcf)	Royalties	72523.73
+2006	LA	E Btn Rouge	22033	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	0.04
+2006	LA	E Btn Rouge	22033	Oil	Condensate (bbl)	Royalties	4997.92
+2006	LA	Jackson	22049	Gas	Processed (Residue) Gas (mcf)	Royalties	1849
+2006	LA	Jefferson	22051	Oil	Oil (bbl)	Royalties	15489.61
+2006	LA	La Salle	22059	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	15.6
+2006	LA	La Salle	22059	Oil	Oil (bbl)	Royalties	302
+2006	LA	Lafourche	22057	Gas	Processed (Residue) Gas (mcf)	Royalties	2241.04
+2006	LA	Lafourche	22057	Oil	Oil (bbl)	Royalties	1266.21
+2006	LA	Lincoln	22061	Gas	Processed (Residue) Gas (mcf)	Royalties	963.68
+2006	LA	Lincoln	22061	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	340.49
+2006	LA	Lincoln	22061	NGL	Gas Plant Products (gal)	Royalties	3827.04
+2006	LA	Lincoln	22061	Oil	Drip or Scrubber Condensate (bbl)	Royalties	12.89
+2006	LA	Morehouse	22067	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1297
+2006	LA	Natchitoches	22069	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	5368.84
+2006	LA	Natchitoches	22069	NGL	Gas Plant Products (gal)	Royalties	6947.39
+2006	LA	Natchitoches	22069	Oil	Oil (bbl)	Royalties	257.59
+2006	LA	Ouachita	22073	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	700
+2006	LA	Plaquemines	22075	Gas	Processed (Residue) Gas (mcf)	Royalties	103094.42
+2006	LA	Plaquemines	22075	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	218.5
+2006	LA	Plaquemines	22075	NGL	Gas Plant Products (gal)	Royalties	1538.22
+2006	LA	Plaquemines	22075	Oil	Oil (bbl)	Royalties	209951.09
+2006	LA	Rapides	22079	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	45328.82
+2006	LA	Rapides	22079	Oil	Oil (bbl)	Royalties	11610.39
+2006	LA	St Martin	22099	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	34199.06
+2006	LA	St Martin	22099	Oil	Condensate (bbl)	Royalties	6.69
+2006	LA	St Martin	22099	Oil	Oil (bbl)	Royalties	8657.86
+2006	LA	Terrebonne	22109	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	224
+2006	LA	Union	22111	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	4811
+2006	LA	Vermilion	22113	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	136027
+2006	LA	Vermilion	22113	Oil	Condensate (bbl)	Royalties	2.04
+2006	LA	Vermilion	22113	Oil	Oil (bbl)	Royalties	11133.59
+2006	LA	Vernon	22115	Gas	Processed (Residue) Gas (mcf)	Royalties	10194.63
+2006	LA	Vernon	22115	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	40699.13
+2006	LA	Vernon	22115	Oil	Oil (bbl)	Royalties	14093.69
+2006	LA	Webster	22119	Gas	Processed (Residue) Gas (mcf)	Royalties	47591.49
+2006	LA	Webster	22119	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	59692.97
+2006	LA	Webster	22119	NGL	Gas Plant Products (gal)	Royalties	55203.2
+2006	LA	Webster	22119	Oil	Condensate (bbl)	Royalties	1221.34
+2006	LA	Webster	22119	Oil	Oil (bbl)	Royalties	5257.64
+2006	LA	Winn	22127	Gas	Processed (Residue) Gas (mcf)	Royalties	58655
+2006	LA	Winn	22127	Oil	Condensate (bbl)	Royalties	1760.99
+2007	LA	Beauregard	22011	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	36.05
+2007	LA	Beauregard	22011	Oil	Oil (bbl)	Royalties	21.44
+2007	LA	Bienville	22013	Gas	Processed (Residue) Gas (mcf)	Royalties	40336.56
+2007	LA	Bienville	22013	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	14877.96
+2007	LA	Bienville	22013	Oil	Condensate (bbl)	Royalties	19.28
+2007	LA	Bienville	22013	Oil	Oil (bbl)	Royalties	79.58
+2007	LA	Bossier	22015	Gas	Processed (Residue) Gas (mcf)	Royalties	23275593.95
+2007	LA	Bossier	22015	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	5415509.79
+2007	LA	Bossier	22015	NGL	Gas Plant Products (gal)	Royalties	29375507.5
+2007	LA	Bossier	22015	Oil	Condensate (bbl)	Royalties	43296.96
+2007	LA	Bossier	22015	Oil	Oil (bbl)	Royalties	93963.98
+2007	LA	Caddo	22017	Gas	Processed (Residue) Gas (mcf)	Royalties	2490.84
+2007	LA	Caddo	22017	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	45925.75
+2007	LA	Caddo	22017	Oil	Condensate (bbl)	Royalties	0.47
+2007	LA	Caddo	22017	Oil	Drip or Scrubber Condensate (bbl)	Royalties	4.09
+2007	LA	Caddo	22017	Oil	Oil (bbl)	Royalties	14180.24
+2007	LA	Caldwell	22021	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	7742
+2007	LA	Cameron	22023	Gas	Processed (Residue) Gas (mcf)	Royalties	1833.24
+2007	LA	Cameron	22023	NGL	Gas Plant Products (gal)	Royalties	2651.38
+2007	LA	Cameron	22023	Oil	Oil (bbl)	Royalties	38.91
+2007	LA	Claiborne	22027	Gas	Processed (Residue) Gas (mcf)	Royalties	107489.78
+2007	LA	Claiborne	22027	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	29190.3
+2007	LA	Claiborne	22027	NGL	Gas Plant Products (gal)	Royalties	384470.71
+2007	LA	Claiborne	22027	Oil	Condensate (bbl)	Royalties	10884.25
+2007	LA	Claiborne	22027	Oil	Drip or Scrubber Condensate (bbl)	Royalties	93.14
+2007	LA	Claiborne	22027	Oil	Oil (bbl)	Royalties	8016.85
+2007	LA	De Soto	22031	Gas	Processed (Residue) Gas (mcf)	Royalties	279188
+2007	LA	De Soto	22031	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	11092.01
+2007	LA	De Soto	22031	Oil	Condensate (bbl)	Royalties	911.87
+2007	LA	De Soto	22031	Oil	Drip or Scrubber Condensate (bbl)	Royalties	1.77
+2007	LA	E Btn Rouge	22033	Gas	Processed (Residue) Gas (mcf)	Royalties	16784.95
+2007	LA	E Btn Rouge	22033	NGL	Gas Plant Products (gal)	Royalties	28896
+2007	LA	E Btn Rouge	22033	Oil	Condensate (bbl)	Royalties	1956.64
+2007	LA	Jackson	22049	Gas	Processed (Residue) Gas (mcf)	Royalties	1064.9
+2007	LA	Jefferson	22051	Oil	Oil (bbl)	Royalties	15284.4
+2007	LA	La Salle	22059	Oil	Oil (bbl)	Royalties	252.8
+2007	LA	Lafourche	22057	Gas	Processed (Residue) Gas (mcf)	Royalties	144.4
+2007	LA	Lafourche	22057	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	237.82
+2007	LA	Lafourche	22057	Oil	Condensate (bbl)	Royalties	0.72
+2007	LA	Lafourche	22057	Oil	Oil (bbl)	Royalties	372.81
+2007	LA	Lincoln	22061	Gas	Processed (Residue) Gas (mcf)	Royalties	872.88
+2007	LA	Lincoln	22061	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	5.69
+2007	LA	Lincoln	22061	NGL	Gas Plant Products (gal)	Royalties	3487.68
+2007	LA	Lincoln	22061	Oil	Condensate (bbl)	Royalties	10.96
+2007	LA	Lincoln	22061	Oil	Oil (bbl)	Royalties	10.84
+2007	LA	Morehouse	22067	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1792
+2007	LA	Natchitoches	22069	Gas	Processed (Residue) Gas (mcf)	Royalties	2972.36
+2007	LA	Natchitoches	22069	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	743.17
+2007	LA	Natchitoches	22069	NGL	Gas Plant Products (gal)	Royalties	4077.03
+2007	LA	Natchitoches	22069	Oil	Oil (bbl)	Royalties	147.85
+2007	LA	Ouachita	22073	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	652
+2007	LA	Plaquemines	22075	Gas	Fuel Gas (mcf)	Royalties	0.46
+2007	LA	Plaquemines	22075	Gas	Processed (Residue) Gas (mcf)	Royalties	74308.3
+2007	LA	Plaquemines	22075	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	98091.23
+2007	LA	Plaquemines	22075	NGL	Gas Plant Products (gal)	Royalties	96757.49
+2007	LA	Plaquemines	22075	Oil	Oil (bbl)	Royalties	223941.69
+2007	LA	Rapides	22079	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	37599.08
+2007	LA	Rapides	22079	Oil	Oil (bbl)	Royalties	3480.92
+2007	LA	South Pass	22721	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	101.83
+2007	LA	South Pass	22721	NGL	Gas Plant Products (gal)	Royalties	94.26
+2007	LA	South Pass	22721	Oil	Oil (bbl)	Royalties	74.56
+2007	LA	St Martin	22099	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	19412.7
+2007	LA	St Martin	22099	Oil	Condensate (bbl)	Royalties	11.27
+2007	LA	St Martin	22099	Oil	Oil (bbl)	Royalties	6873.16
+2007	LA	Terrebonne	22109	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	34
+2007	LA	Union	22111	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	4046.01
+2007	LA	Vermilion	22113	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	119812
+2007	LA	Vermilion	22113	Oil	Condensate (bbl)	Royalties	1.57
+2007	LA	Vermilion	22113	Oil	Oil (bbl)	Royalties	9093.33
+2007	LA	Vernon	22115	Gas	Processed (Residue) Gas (mcf)	Royalties	5617.52
+2007	LA	Vernon	22115	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	20066.21
+2007	LA	Vernon	22115	NGL	Gas Plant Products (gal)	Royalties	401219.49
+2007	LA	Vernon	22115	Oil	Oil (bbl)	Royalties	10410.82
+2007	LA	Webster	22119	Gas	Processed (Residue) Gas (mcf)	Royalties	77636.59
+2007	LA	Webster	22119	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	52973.14
+2007	LA	Webster	22119	NGL	Gas Plant Products (gal)	Royalties	153457.4
+2007	LA	Webster	22119	Oil	Condensate (bbl)	Royalties	3037.61
+2007	LA	Webster	22119	Oil	Oil (bbl)	Royalties	4801.21
+2007	LA	West Delta	22719	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	40.11
+2007	LA	West Delta	22719	NGL	Gas Plant Products (gal)	Royalties	35.16
+2007	LA	West Delta	22719	Oil	Oil (bbl)	Royalties	0.96
+2007	LA	Winn	22127	Gas	Processed (Residue) Gas (mcf)	Royalties	59663
+2007	LA	Winn	22127	Oil	Condensate (bbl)	Royalties	1510.49
+2008	LA	Beauregard	22011	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	51.29
+2008	LA	Beauregard	22011	Oil	Oil (bbl)	Royalties	29.2
+2008	LA	Bienville	22013	Gas	Processed (Residue) Gas (mcf)	Royalties	47444.17
+2008	LA	Bienville	22013	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	52750.06
+2008	LA	Bienville	22013	Oil	Condensate (bbl)	Royalties	64.4
+2008	LA	Bienville	22013	Oil	Oil (bbl)	Royalties	35.14
+2008	LA	Bossier	22015	Gas	Processed (Residue) Gas (mcf)	Royalties	23939223.79
+2008	LA	Bossier	22015	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3781892.11
+2008	LA	Bossier	22015	NGL	Gas Plant Products (gal)	Royalties	45770753.45
+2008	LA	Bossier	22015	Oil	Condensate (bbl)	Royalties	52318.87
+2008	LA	Bossier	22015	Oil	Oil (bbl)	Royalties	97099.98
+2008	LA	Caddo	22017	Gas	Processed (Residue) Gas (mcf)	Royalties	1679.53
+2008	LA	Caddo	22017	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	79021.88
+2008	LA	Caddo	22017	Oil	Condensate (bbl)	Royalties	458.69
+2008	LA	Caddo	22017	Oil	Drip or Scrubber Condensate (bbl)	Royalties	12.3
+2008	LA	Caddo	22017	Oil	Oil (bbl)	Royalties	12055.14
+2008	LA	Caldwell	22021	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	15369
+2008	LA	Cameron	22023	Oil	Oil (bbl)	Royalties	6.41
+2008	LA	Claiborne	22027	Gas	Processed (Residue) Gas (mcf)	Royalties	97715.45
+2008	LA	Claiborne	22027	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	30508.81
+2008	LA	Claiborne	22027	NGL	Gas Plant Products (gal)	Royalties	512391.28
+2008	LA	Claiborne	22027	Oil	Condensate (bbl)	Royalties	8068.61
+2008	LA	Claiborne	22027	Oil	Drip or Scrubber Condensate (bbl)	Royalties	82.02
+2008	LA	Claiborne	22027	Oil	Oil (bbl)	Royalties	7295.86
+2008	LA	De Soto	22031	Gas	Processed (Residue) Gas (mcf)	Royalties	468983
+2008	LA	De Soto	22031	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	20373.5
+2008	LA	De Soto	22031	Oil	Condensate (bbl)	Royalties	1589.47
+2008	LA	De Soto	22031	Oil	Drip or Scrubber Condensate (bbl)	Royalties	5.33
+2008	LA	E Btn Rouge	22033	Gas	Processed (Residue) Gas (mcf)	Royalties	10942.82
+2008	LA	E Btn Rouge	22033	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	816
+2008	LA	E Btn Rouge	22033	NGL	Gas Plant Products (gal)	Royalties	17800
+2008	LA	E Btn Rouge	22033	Oil	Condensate (bbl)	Royalties	1209.84
+2008	LA	Jackson	22049	Gas	Processed (Residue) Gas (mcf)	Royalties	1080.51
+2008	LA	Jefferson	22051	Oil	Oil (bbl)	Royalties	20120.14
+2008	LA	La Salle	22059	Oil	Oil (bbl)	Royalties	295.49
+2008	LA	Lafourche	22057	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	7.9
+2008	LA	Lafourche	22057	Oil	Oil (bbl)	Royalties	195.45
+2008	LA	Lincoln	22061	Gas	Processed (Residue) Gas (mcf)	Royalties	1432
+2008	LA	Lincoln	22061	NGL	Gas Plant Products (gal)	Royalties	4142.88
+2008	LA	Morehouse	22067	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1087
+2008	LA	Natchitoches	22069	Gas	Processed (Residue) Gas (mcf)	Royalties	2562.51
+2008	LA	Natchitoches	22069	NGL	Gas Plant Products (gal)	Royalties	3199.87
+2008	LA	Natchitoches	22069	Oil	Oil (bbl)	Royalties	229.57
+2008	LA	Ouachita	22073	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	469
+2008	LA	Plaquemines	22075	Gas	Processed (Residue) Gas (mcf)	Royalties	96034.64
+2008	LA	Plaquemines	22075	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	128166.99
+2008	LA	Plaquemines	22075	NGL	Gas Plant Products (gal)	Royalties	108266.7
+2008	LA	Plaquemines	22075	Oil	Condensate (bbl)	Royalties	30.25
+2008	LA	Plaquemines	22075	Oil	Oil (bbl)	Royalties	198644.34
+2008	LA	Rapides	22079	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	25921.71
+2008	LA	Rapides	22079	Oil	Oil (bbl)	Royalties	13695.14
+2008	LA	Red River	22081	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	37233
+2008	LA	South Pass	22721	Gas	Processed (Residue) Gas (mcf)	Royalties	13.22
+2008	LA	South Pass	22721	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	55.21
+2008	LA	South Pass	22721	NGL	Gas Plant Products (gal)	Royalties	58.3
+2008	LA	South Pass	22721	Oil	Oil (bbl)	Royalties	70.03
+2008	LA	St Martin	22099	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	25422.19
+2008	LA	St Martin	22099	Oil	Condensate (bbl)	Royalties	16.51
+2008	LA	St Martin	22099	Oil	Oil (bbl)	Royalties	8239.07
+2008	LA	Terrebonne	22109	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	11
+2008	LA	Union	22111	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2731
+2008	LA	Vermilion	22113	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	10509.24
+2008	LA	Vermilion	22113	Oil	Condensate (bbl)	Royalties	2.15
+2008	LA	Vermilion	22113	Oil	Oil (bbl)	Royalties	942.95
+2008	LA	Vernon	22115	Gas	Processed (Residue) Gas (mcf)	Royalties	3764.57
+2008	LA	Vernon	22115	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	24550.44
+2008	LA	Vernon	22115	NGL	Gas Plant Products (gal)	Royalties	406081.28
+2008	LA	Vernon	22115	Oil	Oil (bbl)	Royalties	6929.09
+2008	LA	Webster	22119	Gas	Processed (Residue) Gas (mcf)	Royalties	99013.96
+2008	LA	Webster	22119	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	43616.08
+2008	LA	Webster	22119	NGL	Gas Plant Products (gal)	Royalties	140519.28
+2008	LA	Webster	22119	Oil	Condensate (bbl)	Royalties	1891.19
+2008	LA	Webster	22119	Oil	Drip or Scrubber Condensate (bbl)	Royalties	0.17
+2008	LA	Webster	22119	Oil	Oil (bbl)	Royalties	4722.98
+2008	LA	West Delta	22719	Gas	Processed (Residue) Gas (mcf)	Royalties	0.04
+2008	LA	West Delta	22719	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	82.54
+2008	LA	West Delta	22719	NGL	Gas Plant Products (gal)	Royalties	56.44
+2008	LA	West Delta	22719	Oil	Oil (bbl)	Royalties	14.98
+2008	LA	Winn	22127	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	71568
+2008	LA	Winn	22127	Oil	Condensate (bbl)	Royalties	1928.72
+2009	LA	Beauregard	22011	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	14.02
+2009	LA	Beauregard	22011	Oil	Oil (bbl)	Royalties	33.6
+2009	LA	Bienville	22013	Gas	Processed (Residue) Gas (mcf)	Royalties	34515.18
+2009	LA	Bienville	22013	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	46463.99
+2009	LA	Bienville	22013	Oil	Condensate (bbl)	Royalties	103.12
+2009	LA	Bienville	22013	Oil	Oil (bbl)	Royalties	39.88
+2009	LA	Bossier	22015	Gas	Processed (Residue) Gas (mcf)	Royalties	17883656.82
+2009	LA	Bossier	22015	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	695439.1
+2009	LA	Bossier	22015	NGL	Gas Plant Products (gal)	Royalties	8325604.68
+2009	LA	Bossier	22015	Oil	Condensate (bbl)	Royalties	48414.11
+2009	LA	Bossier	22015	Oil	Oil (bbl)	Royalties	52459.68
+2009	LA	Caddo	22017	Gas	Processed (Residue) Gas (mcf)	Royalties	-63759.24
+2009	LA	Caddo	22017	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	179497.51
+2009	LA	Caddo	22017	Oil	Condensate (bbl)	Royalties	-336.1
+2009	LA	Caddo	22017	Oil	Drip or Scrubber Condensate (bbl)	Royalties	2.32
+2009	LA	Caddo	22017	Oil	Oil (bbl)	Royalties	11471.63
+2009	LA	Caldwell	22021	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	11070
+2009	LA	Claiborne	22027	Gas	Processed (Residue) Gas (mcf)	Royalties	96558.1
+2009	LA	Claiborne	22027	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	26546.16
+2009	LA	Claiborne	22027	NGL	Gas Plant Products (gal)	Royalties	490960
+2009	LA	Claiborne	22027	Oil	Condensate (bbl)	Royalties	6271.19
+2009	LA	Claiborne	22027	Oil	Drip or Scrubber Condensate (bbl)	Royalties	38.15
+2009	LA	Claiborne	22027	Oil	Oil (bbl)	Royalties	5767.33
+2009	LA	De Soto	22031	Gas	Processed (Residue) Gas (mcf)	Royalties	1435123.74
+2009	LA	De Soto	22031	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	222334.54
+2009	LA	De Soto	22031	Oil	Condensate (bbl)	Royalties	620.66
+2009	LA	De Soto	22031	Oil	Drip or Scrubber Condensate (bbl)	Royalties	1.01
+2009	LA	De Soto	22031	Oil	Oil (bbl)	Royalties	765.64
+2009	LA	E Btn Rouge	22033	Gas	Processed (Residue) Gas (mcf)	Royalties	9261.94
+2009	LA	E Btn Rouge	22033	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1688
+2009	LA	E Btn Rouge	22033	NGL	Gas Plant Products (gal)	Royalties	15288
+2009	LA	E Btn Rouge	22033	Oil	Condensate (bbl)	Royalties	1122.96
+2009	LA	Jackson	22049	Gas	Processed (Residue) Gas (mcf)	Royalties	933.67
+2009	LA	Jefferson	22051	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1159.5
+2009	LA	Jefferson	22051	Oil	Condensate (bbl)	Royalties	4669.45
+2009	LA	Jefferson	22051	Oil	Oil (bbl)	Royalties	13633.92
+2009	LA	La Salle	22059	Oil	Oil (bbl)	Royalties	125.53
+2009	LA	Lafourche	22057	Oil	Oil (bbl)	Royalties	330.46
+2009	LA	Lincoln	22061	Gas	Processed (Residue) Gas (mcf)	Royalties	1076.56
+2009	LA	Lincoln	22061	NGL	Gas Plant Products (gal)	Royalties	3578.24
+2009	LA	Lincoln	22061	Oil	Condensate (bbl)	Royalties	11.36
+2009	LA	Morehouse	22067	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1354
+2009	LA	Natchitoches	22069	Gas	Processed (Residue) Gas (mcf)	Royalties	548.88
+2009	LA	Natchitoches	22069	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	814.49
+2009	LA	Natchitoches	22069	NGL	Gas Plant Products (gal)	Royalties	315.51
+2009	LA	Natchitoches	22069	Oil	Oil (bbl)	Royalties	138.1
+2009	LA	Ouachita	22073	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	522
+2009	LA	Plaquemines	22075	Gas	Processed (Residue) Gas (mcf)	Royalties	201261.3
+2009	LA	Plaquemines	22075	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	13725.02
+2009	LA	Plaquemines	22075	NGL	Gas Plant Products (gal)	Royalties	120283.19
+2009	LA	Plaquemines	22075	Oil	Condensate (bbl)	Royalties	4.68
+2009	LA	Plaquemines	22075	Oil	Oil (bbl)	Royalties	176960.49
+2009	LA	Rapides	22079	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	8762.26
+2009	LA	Rapides	22079	Oil	Oil (bbl)	Royalties	13729.24
+2009	LA	Red River	22081	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	146630
+2009	LA	South Pass	22721	Gas	Processed (Residue) Gas (mcf)	Royalties	102.68
+2009	LA	South Pass	22721	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	0.51
+2009	LA	South Pass	22721	NGL	Gas Plant Products (gal)	Royalties	57.92
+2009	LA	South Pass	22721	Oil	Oil (bbl)	Royalties	76.05
+2009	LA	St Martin	22099	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	31951.75
+2009	LA	St Martin	22099	Oil	Condensate (bbl)	Royalties	4.16
+2009	LA	St Martin	22099	Oil	Oil (bbl)	Royalties	15012.34
+2009	LA	Terrebonne	22109	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	12
+2009	LA	Union	22111	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3875
+2009	LA	Vermilion	22113	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	349
+2009	LA	Vermilion	22113	Oil	Condensate (bbl)	Royalties	1.58
+2009	LA	Vermilion	22113	Oil	Oil (bbl)	Royalties	4056.01
+2009	LA	Vernon	22115	Gas	Processed (Residue) Gas (mcf)	Royalties	1413.91
+2009	LA	Vernon	22115	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	6716.06
+2009	LA	Vernon	22115	NGL	Gas Plant Products (gal)	Royalties	6025031.37
+2009	LA	Vernon	22115	Oil	Oil (bbl)	Royalties	7130.78
+2009	LA	Webster	22119	Gas	Processed (Residue) Gas (mcf)	Royalties	86387.21
+2009	LA	Webster	22119	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	36774.99
+2009	LA	Webster	22119	NGL	Gas Plant Products (gal)	Royalties	155608.81
+2009	LA	Webster	22119	Oil	Condensate (bbl)	Royalties	1909.05
+2009	LA	Webster	22119	Oil	Drip or Scrubber Condensate (bbl)	Royalties	4.66
+2009	LA	Webster	22119	Oil	Oil (bbl)	Royalties	4382.84
+2009	LA	West Delta	22719	Gas	Processed (Residue) Gas (mcf)	Royalties	40.71
+2009	LA	West Delta	22719	NGL	Gas Plant Products (gal)	Royalties	25.99
+2009	LA	West Delta	22719	Oil	Oil (bbl)	Royalties	1.02
+2009	LA	Winn	22127	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	97762
+2009	LA	Winn	22127	Oil	Condensate (bbl)	Royalties	2965.24
+2010	LA	Beauregard	22011	Gas	Processed (Residue) Gas (mcf)	Royalties	39.46
+2010	LA	Beauregard	22011	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	32.02
+2010	LA	Beauregard	22011	Oil	Oil (bbl)	Royalties	37.68
+2010	LA	Bienville	22013	Gas	Processed (Residue) Gas (mcf)	Royalties	25924.73
+2010	LA	Bienville	22013	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	31010.2
+2010	LA	Bienville	22013	Oil	Condensate (bbl)	Royalties	69.84
+2010	LA	Bienville	22013	Oil	Oil (bbl)	Royalties	38.84
+2010	LA	Bossier	22015	Gas	Processed (Residue) Gas (mcf)	Royalties	9957849.46
+2010	LA	Bossier	22015	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3406053.29
+2010	LA	Bossier	22015	NGL	Gas Plant Products (gal)	Royalties	4826209.08
+2010	LA	Bossier	22015	Oil	Condensate (bbl)	Royalties	46395.11
+2010	LA	Bossier	22015	Oil	Oil (bbl)	Royalties	19572.55
+2010	LA	Caddo	22017	Gas	Processed (Residue) Gas (mcf)	Royalties	447.56
+2010	LA	Caddo	22017	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	315561.53
+2010	LA	Caddo	22017	Oil	Condensate (bbl)	Royalties	43.11
+2010	LA	Caddo	22017	Oil	Drip or Scrubber Condensate (bbl)	Royalties	2.4
+2010	LA	Caddo	22017	Oil	Oil (bbl)	Royalties	10823.43
+2010	LA	Caldwell	22021	Gas	Processed (Residue) Gas (mcf)	Royalties	259653.45
+2010	LA	Claiborne	22027	Gas	Processed (Residue) Gas (mcf)	Royalties	92873.15
+2010	LA	Claiborne	22027	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	34590.92
+2010	LA	Claiborne	22027	NGL	Gas Plant Products (gal)	Royalties	466104.39
+2010	LA	Claiborne	22027	Oil	Condensate (bbl)	Royalties	5456.82
+2010	LA	Claiborne	22027	Oil	Drip or Scrubber Condensate (bbl)	Royalties	31.14
+2010	LA	Claiborne	22027	Oil	Oil (bbl)	Royalties	5485.96
+2010	LA	De Soto	22031	Gas	Processed (Residue) Gas (mcf)	Royalties	1035655
+2010	LA	De Soto	22031	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	578509.86
+2010	LA	De Soto	22031	Oil	Condensate (bbl)	Royalties	327.95
+2010	LA	De Soto	22031	Oil	Drip or Scrubber Condensate (bbl)	Royalties	1.04
+2010	LA	De Soto	22031	Oil	Oil (bbl)	Royalties	502.64
+2010	LA	E Btn Rouge	22033	Gas	Processed (Residue) Gas (mcf)	Royalties	8634.73
+2010	LA	E Btn Rouge	22033	NGL	Gas Plant Products (gal)	Royalties	13392
+2010	LA	E Btn Rouge	22033	Oil	Condensate (bbl)	Royalties	778.48
+2010	LA	Jefferson	22051	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	12735.64
+2010	LA	Jefferson	22051	Oil	Condensate (bbl)	Royalties	4852.59
+2010	LA	Jefferson	22051	Oil	Oil (bbl)	Royalties	26765.57
+2010	LA	La Salle	22059	Oil	Oil (bbl)	Royalties	76.03
+2010	LA	Lafourche	22057	Oil	Oil (bbl)	Royalties	348.85
+2010	LA	Lincoln	22061	Gas	Processed (Residue) Gas (mcf)	Royalties	1322.72
+2010	LA	Lincoln	22061	NGL	Gas Plant Products (gal)	Royalties	5435.68
+2010	LA	Lincoln	22061	Oil	Condensate (bbl)	Royalties	21.04
+2010	LA	Morehouse	22067	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1388
+2010	LA	Natchitoches	22069	Oil	Oil (bbl)	Royalties	36.68
+2010	LA	Ouachita	22073	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	749
+2010	LA	Plaquemines	22075	Gas	Processed (Residue) Gas (mcf)	Royalties	148218.53
+2010	LA	Plaquemines	22075	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	68211.66
+2010	LA	Plaquemines	22075	NGL	Gas Plant Products (gal)	Royalties	59706.56
+2010	LA	Plaquemines	22075	Oil	Condensate (bbl)	Royalties	63.61
+2010	LA	Plaquemines	22075	Oil	Drip or Scrubber Condensate (bbl)	Royalties	0.03
+2010	LA	Plaquemines	22075	Oil	Inlet Scrubber (bbl)	Royalties	0.01
+2010	LA	Plaquemines	22075	Oil	Oil (bbl)	Royalties	194266.44
+2010	LA	Rapides	22079	Gas	Processed (Residue) Gas (mcf)	Royalties	24786.22
+2010	LA	Rapides	22079	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	843.12
+2010	LA	Rapides	22079	Oil	Oil (bbl)	Royalties	19306.89
+2010	LA	Red River	22081	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	30408.24
+2010	LA	Sabine	22085	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3454.4
+2010	LA	South Pass	22721	Gas	Processed (Residue) Gas (mcf)	Royalties	53.56
+2010	LA	South Pass	22721	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	0.4
+2010	LA	South Pass	22721	NGL	Gas Plant Products (gal)	Royalties	62.46
+2010	LA	South Pass	22721	Oil	Oil (bbl)	Royalties	82.33
+2010	LA	St Martin	22099	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	17302.16
+2010	LA	St Martin	22099	Oil	Oil (bbl)	Royalties	12483.6
+2010	LA	Terrebonne	22109	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	9.9
+2010	LA	Union	22111	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2007
+2010	LA	Vermilion	22113	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	330.44
+2010	LA	Vermilion	22113	Oil	Condensate (bbl)	Royalties	1.67
+2010	LA	Vermilion	22113	Oil	Oil (bbl)	Royalties	6958.17
+2010	LA	Vernon	22115	Gas	Processed (Residue) Gas (mcf)	Royalties	4067.98
+2010	LA	Vernon	22115	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	482.32
+2010	LA	Vernon	22115	NGL	Gas Plant Products (gal)	Royalties	445866.89
+2010	LA	Vernon	22115	Oil	Drip or Scrubber Condensate (bbl)	Royalties	0.16
+2010	LA	Vernon	22115	Oil	Oil (bbl)	Royalties	3319.7
+2010	LA	Webster	22119	Gas	Processed (Residue) Gas (mcf)	Royalties	75036.15
+2010	LA	Webster	22119	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	30000.43
+2010	LA	Webster	22119	NGL	Gas Plant Products (gal)	Royalties	122010.79
+2010	LA	Webster	22119	Oil	Condensate (bbl)	Royalties	1370.88
+2010	LA	Webster	22119	Oil	Drip or Scrubber Condensate (bbl)	Royalties	3.37
+2010	LA	Webster	22119	Oil	Oil (bbl)	Royalties	4328.9
+2010	LA	West Delta	22719	Gas	Processed (Residue) Gas (mcf)	Royalties	50.86
+2010	LA	West Delta	22719	NGL	Gas Plant Products (gal)	Royalties	35.64
+2010	LA	West Delta	22719	Oil	Oil (bbl)	Royalties	6.9
+2010	LA	Winn	22127	Gas	Processed (Residue) Gas (mcf)	Royalties	6251
+2010	LA	Winn	22127	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	98948
+2010	LA	Winn	22127	Oil	Condensate (bbl)	Royalties	2545.28
+2011	LA	Beauregard	22011	Gas	Processed (Residue) Gas (mcf)	Royalties	36.19
+2011	LA	Beauregard	22011	Oil	Oil (bbl)	Royalties	29.41
+2011	LA	Bienville	22013	Gas	Processed (Residue) Gas (mcf)	Royalties	15913.27
+2011	LA	Bienville	22013	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	270728.43
+2011	LA	Bienville	22013	NGL	Gas Plant Products (gal)	Royalties	5.38
+2011	LA	Bienville	22013	Oil	Condensate (bbl)	Royalties	16.98
+2011	LA	Bienville	22013	Oil	Oil (bbl)	Royalties	4.74
+2011	LA	Bossier	22015	Gas	Fuel Gas (mcf)	Royalties	1931.29
+2011	LA	Bossier	22015	Gas	Processed (Residue) Gas (mcf)	Royalties	8216947.99
+2011	LA	Bossier	22015	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	5509723.06
+2011	LA	Bossier	22015	NGL	Gas Plant Products (gal)	Royalties	3491430.07
+2011	LA	Bossier	22015	Oil	Condensate (bbl)	Royalties	51446.8
+2011	LA	Bossier	22015	Oil	Oil (bbl)	Royalties	9075.85
+2011	LA	Caddo	22017	Gas	Processed (Residue) Gas (mcf)	Royalties	11361.61
+2011	LA	Caddo	22017	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	318587.21
+2011	LA	Caddo	22017	Oil	Condensate (bbl)	Royalties	51.22
+2011	LA	Caddo	22017	Oil	Drip or Scrubber Condensate (bbl)	Royalties	0.14
+2011	LA	Caddo	22017	Oil	Oil (bbl)	Royalties	8700.28
+2011	LA	Caldwell	22021	Gas	Processed (Residue) Gas (mcf)	Royalties	7599.85
+2011	LA	Claiborne	22027	Gas	Processed (Residue) Gas (mcf)	Royalties	99132.2
+2011	LA	Claiborne	22027	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	32846.74
+2011	LA	Claiborne	22027	NGL	Gas Plant Products (gal)	Royalties	460180.08
+2011	LA	Claiborne	22027	Oil	Condensate (bbl)	Royalties	5131.98
+2011	LA	Claiborne	22027	Oil	Drip or Scrubber Condensate (bbl)	Royalties	33.67
+2011	LA	Claiborne	22027	Oil	Oil (bbl)	Royalties	4806.55
+2011	LA	De Soto	22031	Gas	Processed (Residue) Gas (mcf)	Royalties	1140670.14
+2011	LA	De Soto	22031	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	4191467.87
+2011	LA	De Soto	22031	Oil	Condensate (bbl)	Royalties	182.03
+2011	LA	De Soto	22031	Oil	Drip or Scrubber Condensate (bbl)	Royalties	0.06
+2011	LA	De Soto	22031	Oil	Oil (bbl)	Royalties	690.14
+2011	LA	E Btn Rouge	22033	Gas	Processed (Residue) Gas (mcf)	Royalties	8819.46
+2011	LA	E Btn Rouge	22033	NGL	Gas Plant Products (gal)	Royalties	13917.36
+2011	LA	E Btn Rouge	22033	Oil	Condensate (bbl)	Royalties	634.56
+2011	LA	Jackson	22049	NGL	Gas Plant Products (gal)	Royalties	799.22
+2011	LA	Jefferson	22051	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2181.04
+2011	LA	Jefferson	22051	Oil	Condensate (bbl)	Royalties	2303.04
+2011	LA	Jefferson	22051	Oil	Oil (bbl)	Royalties	22434.98
+2011	LA	La Salle	22059	Oil	Oil (bbl)	Royalties	78.02
+2011	LA	Lafourche	22057	Oil	Oil (bbl)	Royalties	59.53
+2011	LA	Lincoln	22061	Gas	Processed (Residue) Gas (mcf)	Royalties	1072.32
+2011	LA	Lincoln	22061	NGL	Gas Plant Products (gal)	Royalties	3712.8
+2011	LA	Lincoln	22061	Oil	Condensate (bbl)	Royalties	4.96
+2011	LA	Morehouse	22067	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1545
+2011	LA	Natchitoches	22069	Oil	Oil (bbl)	Royalties	52.97
+2011	LA	Ouachita	22073	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	493.96
+2011	LA	Plaquemines	22075	Gas	Processed (Residue) Gas (mcf)	Royalties	218402.25
+2011	LA	Plaquemines	22075	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	80032.92
+2011	LA	Plaquemines	22075	NGL	Gas Plant Products (gal)	Royalties	67124.59
+2011	LA	Plaquemines	22075	Oil	Drip or Scrubber Condensate (bbl)	Royalties	0.69
+2011	LA	Plaquemines	22075	Oil	Inlet Scrubber (bbl)	Royalties	0.17
+2011	LA	Plaquemines	22075	Oil	Oil (bbl)	Royalties	201769.04
+2011	LA	Rapides	22079	Gas	Processed (Residue) Gas (mcf)	Royalties	6631.64
+2011	LA	Rapides	22079	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	77310.29
+2011	LA	Rapides	22079	Oil	Oil (bbl)	Royalties	27817.93
+2011	LA	Red River	22081	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	86384.6
+2011	LA	Sabine	22085	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1481.52
+2011	LA	South Pass	22721	Gas	Processed (Residue) Gas (mcf)	Royalties	38.61
+2011	LA	South Pass	22721	NGL	Gas Plant Products (gal)	Royalties	12.18
+2011	LA	South Pass	22721	Oil	Oil (bbl)	Royalties	50.65
+2011	LA	St Martin	22099	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	10638.4
+2011	LA	St Martin	22099	Oil	Oil (bbl)	Royalties	11968.8
+2011	LA	Terrebonne	22109	Gas	Processed (Residue) Gas (mcf)	Royalties	34625.02
+2011	LA	Terrebonne	22109	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	6.2
+2011	LA	Terrebonne	22109	Oil	Oil (bbl)	Royalties	1695.82
+2011	LA	Union	22111	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3345
+2011	LA	Vermilion	22113	Gas	Processed (Residue) Gas (mcf)	Royalties	340.44
+2011	LA	Vermilion	22113	Oil	Condensate (bbl)	Royalties	1.63
+2011	LA	Vermilion	22113	Oil	Oil (bbl)	Royalties	6419.23
+2011	LA	Vernon	22115	Gas	Processed (Residue) Gas (mcf)	Royalties	4101.1
+2011	LA	Vernon	22115	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	172.7
+2011	LA	Vernon	22115	NGL	Gas Plant Products (gal)	Royalties	113612.44
+2011	LA	Vernon	22115	Oil	Oil (bbl)	Royalties	2925.09
+2011	LA	Webster	22119	Gas	Processed (Residue) Gas (mcf)	Royalties	88113.88
+2011	LA	Webster	22119	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	7389.77
+2011	LA	Webster	22119	NGL	Gas Plant Products (gal)	Royalties	131087.43
+2011	LA	Webster	22119	Oil	Condensate (bbl)	Royalties	1312.23
+2011	LA	Webster	22119	Oil	Drip or Scrubber Condensate (bbl)	Royalties	1.13
+2011	LA	Webster	22119	Oil	Oil (bbl)	Royalties	3990.32
+2011	LA	West Delta	22719	Gas	Processed (Residue) Gas (mcf)	Royalties	67.61
+2011	LA	West Delta	22719	NGL	Gas Plant Products (gal)	Royalties	24.08
+2011	LA	West Delta	22719	Oil	Oil (bbl)	Royalties	12.42
+2011	LA	Winn	22127	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	116925
+2011	LA	Winn	22127	Oil	Condensate (bbl)	Royalties	2453.08
+2012	LA	Beauregard	22011	Gas	Processed (Residue) Gas (mcf)	Royalties	20.93
+2012	LA	Beauregard	22011	Oil	Oil (bbl)	Royalties	51.3
+2012	LA	Bienville	22013	Gas	Processed (Residue) Gas (mcf)	Royalties	7596.77
+2012	LA	Bienville	22013	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1161309.19
+2012	LA	Bienville	22013	NGL	Gas Plant Products (gal)	Royalties	366.91
+2012	LA	Bienville	22013	Oil	Condensate (bbl)	Royalties	32.43
+2012	LA	Bossier	22015	Gas	Fuel Gas (mcf)	Royalties	10906.69
+2012	LA	Bossier	22015	Gas	Processed (Residue) Gas (mcf)	Royalties	7011662.33
+2012	LA	Bossier	22015	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	6420733.17
+2012	LA	Bossier	22015	NGL	Gas Plant Products (gal)	Royalties	3702382.68
+2012	LA	Bossier	22015	Oil	Condensate (bbl)	Royalties	35996.06
+2012	LA	Bossier	22015	Oil	Drip or Scrubber Condensate (bbl)	Royalties	7550.14
+2012	LA	Bossier	22015	Oil	Oil (bbl)	Royalties	10964.35
+2012	LA	Caddo	22017	Gas	Processed (Residue) Gas (mcf)	Royalties	12317.37
+2012	LA	Caddo	22017	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	312984.92
+2012	LA	Caddo	22017	Oil	Condensate (bbl)	Royalties	77.72
+2012	LA	Caddo	22017	Oil	Drip or Scrubber Condensate (bbl)	Royalties	2.9
+2012	LA	Caddo	22017	Oil	Oil (bbl)	Royalties	7796.98
+2012	LA	Caldwell	22021	Gas	Processed (Residue) Gas (mcf)	Royalties	6182.55
+2012	LA	Claiborne	22027	Gas	Processed (Residue) Gas (mcf)	Royalties	104508.23
+2012	LA	Claiborne	22027	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	32465.54
+2012	LA	Claiborne	22027	NGL	Gas Plant Products (gal)	Royalties	477599.92
+2012	LA	Claiborne	22027	Oil	Condensate (bbl)	Royalties	5052.04
+2012	LA	Claiborne	22027	Oil	Drip or Scrubber Condensate (bbl)	Royalties	24.61
+2012	LA	Claiborne	22027	Oil	Oil (bbl)	Royalties	4292.82
+2012	LA	Concordia	22029	Oil	Oil (bbl)	Royalties	1763.13
+2012	LA	De Soto	22031	Gas	Processed (Residue) Gas (mcf)	Royalties	98843.78
+2012	LA	De Soto	22031	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3129084.42
+2012	LA	De Soto	22031	Oil	Condensate (bbl)	Royalties	26.69
+2012	LA	De Soto	22031	Oil	Drip or Scrubber Condensate (bbl)	Royalties	1.26
+2012	LA	De Soto	22031	Oil	Oil (bbl)	Royalties	325.08
+2012	LA	E Btn Rouge	22033	Gas	Processed (Residue) Gas (mcf)	Royalties	12228.08
+2012	LA	E Btn Rouge	22033	NGL	Gas Plant Products (gal)	Royalties	27329.28
+2012	LA	E Btn Rouge	22033	Oil	Condensate (bbl)	Royalties	144.4
+2012	LA	Jackson	22049	NGL	Gas Plant Products (gal)	Royalties	664.13
+2012	LA	Jefferson	22051	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1758.83
+2012	LA	Jefferson	22051	Oil	Condensate (bbl)	Royalties	1807.14
+2012	LA	Jefferson	22051	Oil	Oil (bbl)	Royalties	20851.54
+2012	LA	La Salle	22059	Oil	Oil (bbl)	Royalties	40.63
+2012	LA	Lincoln	22061	Gas	Processed (Residue) Gas (mcf)	Royalties	1390.4
+2012	LA	Lincoln	22061	NGL	Gas Plant Products (gal)	Royalties	4438.56
+2012	LA	Morehouse	22067	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1359
+2012	LA	Natchitoches	22069	Oil	Oil (bbl)	Royalties	47.12
+2012	LA	Ouachita	22073	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	482
+2012	LA	Plaquemines	22075	Gas	Processed (Residue) Gas (mcf)	Royalties	70451.79
+2012	LA	Plaquemines	22075	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	20748.65
+2012	LA	Plaquemines	22075	NGL	Gas Plant Products (gal)	Royalties	23075.66
+2012	LA	Plaquemines	22075	Oil	Drip or Scrubber Condensate (bbl)	Royalties	0.45
+2012	LA	Plaquemines	22075	Oil	Inlet Scrubber (bbl)	Royalties	0.13
+2012	LA	Plaquemines	22075	Oil	Oil (bbl)	Royalties	173891.24
+2012	LA	Rapides	22079	Gas	Processed (Residue) Gas (mcf)	Royalties	3131.54
+2012	LA	Rapides	22079	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	151808.47
+2012	LA	Rapides	22079	Oil	Oil (bbl)	Royalties	37836.89
+2012	LA	Red River	22081	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	507976.72
+2012	LA	South Pass	22721	Gas	Processed (Residue) Gas (mcf)	Royalties	7.2
+2012	LA	South Pass	22721	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	4.92
+2012	LA	South Pass	22721	NGL	Gas Plant Products (gal)	Royalties	3.53
+2012	LA	South Pass	22721	Oil	Oil (bbl)	Royalties	40.8
+2012	LA	St Martin	22099	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	12424.96
+2012	LA	St Martin	22099	Oil	Oil (bbl)	Royalties	15366.4
+2012	LA	Terrebonne	22109	Gas	Processed (Residue) Gas (mcf)	Royalties	83293.68
+2012	LA	Terrebonne	22109	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	4.72
+2012	LA	Terrebonne	22109	Oil	Oil (bbl)	Royalties	4315.02
+2012	LA	Union	22111	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3363
+2012	LA	Vermilion	22113	Gas	Processed (Residue) Gas (mcf)	Royalties	317.26
+2012	LA	Vermilion	22113	Oil	Condensate (bbl)	Royalties	1.04
+2012	LA	Vermilion	22113	Oil	Oil (bbl)	Royalties	4948.8
+2012	LA	Vernon	22115	Gas	Processed (Residue) Gas (mcf)	Royalties	7541.07
+2012	LA	Vernon	22115	NGL	Gas Plant Products (gal)	Royalties	11798.24
+2012	LA	Vernon	22115	Oil	Drip or Scrubber Condensate (bbl)	Royalties	0.96
+2012	LA	Vernon	22115	Oil	Oil (bbl)	Royalties	3252.01
+2012	LA	Webster	22119	Gas	Processed (Residue) Gas (mcf)	Royalties	73720.13
+2012	LA	Webster	22119	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	5859.74
+2012	LA	Webster	22119	NGL	Gas Plant Products (gal)	Royalties	153146.45
+2012	LA	Webster	22119	Oil	Condensate (bbl)	Royalties	951.25
+2012	LA	Webster	22119	Oil	Drip or Scrubber Condensate (bbl)	Royalties	3.49
+2012	LA	Webster	22119	Oil	Oil (bbl)	Royalties	16525.68
+2012	LA	West Delta	22719	Gas	Processed (Residue) Gas (mcf)	Royalties	47.63
+2012	LA	West Delta	22719	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	21.91
+2012	LA	West Delta	22719	NGL	Gas Plant Products (gal)	Royalties	19.26
+2012	LA	West Delta	22719	Oil	Oil (bbl)	Royalties	9.86
+2012	LA	Winn	22127	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	86857
+2012	LA	Winn	22127	Oil	Condensate (bbl)	Royalties	1889.39
+2013	LA	Beauregard	22011	Gas	Processed (Residue) Gas (mcf)	Royalties	22.9
+2013	LA	Beauregard	22011	NGL	Gas Plant Products (gal)	Royalties	48.21
+2013	LA	Beauregard	22011	Oil	Oil (bbl)	Royalties	22.98
+2013	LA	Bienville	22013	Gas	Processed (Residue) Gas (mcf)	Royalties	7219.47
+2013	LA	Bienville	22013	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	413538.18
+2013	LA	Bienville	22013	NGL	Gas Plant Products (gal)	Royalties	127.55
+2013	LA	Bienville	22013	Oil	Condensate (bbl)	Royalties	24
+2013	LA	Bossier	22015	Gas	Fuel Gas (mcf)	Royalties	223742.71
+2013	LA	Bossier	22015	Gas	Processed (Residue) Gas (mcf)	Royalties	5779307.39
+2013	LA	Bossier	22015	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	5852222.38
+2013	LA	Bossier	22015	NGL	Gas Plant Products (gal)	Royalties	4040198.09
+2013	LA	Bossier	22015	Oil	Condensate (bbl)	Royalties	39634.32
+2013	LA	Bossier	22015	Oil	Oil (bbl)	Royalties	11368.66
+2013	LA	Caddo	22017	Gas	Processed (Residue) Gas (mcf)	Royalties	10768.89
+2013	LA	Caddo	22017	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	180683.13
+2013	LA	Caddo	22017	Oil	Condensate (bbl)	Royalties	52.38
+2013	LA	Caddo	22017	Oil	Drip or Scrubber Condensate (bbl)	Royalties	1.82
+2013	LA	Caddo	22017	Oil	Oil (bbl)	Royalties	7277.11
+2013	LA	Caddo	22017	Oil	Other Liquid Hydrocarbons (bbl)	Royalties	1
+2013	LA	Caldwell	22021	Gas	Processed (Residue) Gas (mcf)	Royalties	3099.29
+2013	LA	Claiborne	22027	Gas	Processed (Residue) Gas (mcf)	Royalties	96161.37
+2013	LA	Claiborne	22027	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	29609.3
+2013	LA	Claiborne	22027	NGL	Gas Plant Products (gal)	Royalties	453062.48
+2013	LA	Claiborne	22027	Oil	Condensate (bbl)	Royalties	4607.01
+2013	LA	Claiborne	22027	Oil	Drip or Scrubber Condensate (bbl)	Royalties	53.82
+2013	LA	Claiborne	22027	Oil	Oil (bbl)	Royalties	4044.98
+2013	LA	Concordia	22029	Oil	Oil (bbl)	Royalties	3732.7
+2013	LA	De Soto	22031	Gas	Fuel Gas (mcf)	Royalties	1102.52
+2013	LA	De Soto	22031	Gas	Processed (Residue) Gas (mcf)	Royalties	53858.85
+2013	LA	De Soto	22031	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1499879.31
+2013	LA	De Soto	22031	Oil	Drip or Scrubber Condensate (bbl)	Royalties	0.78
+2013	LA	De Soto	22031	Oil	Oil (bbl)	Royalties	81.42
+2013	LA	E Btn Rouge	22033	Gas	Processed (Residue) Gas (mcf)	Royalties	13542.97
+2013	LA	E Btn Rouge	22033	NGL	Gas Plant Products (gal)	Royalties	32441.6
+2013	LA	E Btn Rouge	22033	Oil	Condensate (bbl)	Royalties	297.68
+2013	LA	Jackson	22049	NGL	Gas Plant Products (gal)	Royalties	792.37
+2013	LA	Jefferson	22051	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	66984.97
+2013	LA	Jefferson	22051	Oil	Condensate (bbl)	Royalties	1585.29
+2013	LA	Jefferson	22051	Oil	Oil (bbl)	Royalties	15760.37
+2013	LA	Lincoln	22061	Gas	Processed (Residue) Gas (mcf)	Royalties	1706.24
+2013	LA	Lincoln	22061	NGL	Gas Plant Products (gal)	Royalties	4704
+2013	LA	Morehouse	22067	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1396
+2013	LA	Natchitoches	22069	Oil	Oil (bbl)	Royalties	19.41
+2013	LA	Ouachita	22073	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	437
+2013	LA	Plaquemines	22075	Gas	Processed (Residue) Gas (mcf)	Royalties	145121.42
+2013	LA	Plaquemines	22075	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	15867.91
+2013	LA	Plaquemines	22075	NGL	Gas Plant Products (gal)	Royalties	142420.21
+2013	LA	Plaquemines	22075	Oil	Oil (bbl)	Royalties	176806.97
+2013	LA	Rapides	22079	Gas	Processed (Residue) Gas (mcf)	Royalties	2566.88
+2013	LA	Rapides	22079	NGL	Gas Plant Products (gal)	Royalties	15105.87
+2013	LA	Rapides	22079	Oil	Oil (bbl)	Royalties	6104.51
+2013	LA	Red River	22081	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	148835.64
+2013	LA	Sabine	22085	Gas	Processed (Residue) Gas (mcf)	Royalties	122.72
+2013	LA	Sabine	22085	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	24.88
+2013	LA	South Pass	22721	Gas	Processed (Residue) Gas (mcf)	Royalties	80.63
+2013	LA	South Pass	22721	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	6.06
+2013	LA	South Pass	22721	NGL	Gas Plant Products (gal)	Royalties	53.47
+2013	LA	South Pass	22721	Oil	Oil (bbl)	Royalties	53.24
+2013	LA	St Martin	22099	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	14992.16
+2013	LA	St Martin	22099	Oil	Oil (bbl)	Royalties	17830.56
+2013	LA	Terrebonne	22109	Gas	Processed (Residue) Gas (mcf)	Royalties	12046.84
+2013	LA	Terrebonne	22109	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	15018.73
+2013	LA	Terrebonne	22109	Oil	Oil (bbl)	Royalties	1467.46
+2013	LA	Union	22111	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3473
+2013	LA	Vermilion	22113	Gas	Processed (Residue) Gas (mcf)	Royalties	329.93
+2013	LA	Vermilion	22113	Oil	Condensate (bbl)	Royalties	1.59
+2013	LA	Vermilion	22113	Oil	Oil (bbl)	Royalties	4441.75
+2013	LA	Vernon	22115	Gas	Processed (Residue) Gas (mcf)	Royalties	8514.05
+2013	LA	Vernon	22115	NGL	Gas Plant Products (gal)	Royalties	17416.36
+2013	LA	Vernon	22115	Oil	Oil (bbl)	Royalties	1506.41
+2013	LA	Webster	22119	Gas	Processed (Residue) Gas (mcf)	Royalties	69571.87
+2013	LA	Webster	22119	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	6087.66
+2013	LA	Webster	22119	NGL	Gas Plant Products (gal)	Royalties	87126.15
+2013	LA	Webster	22119	Oil	Condensate (bbl)	Royalties	812.88
+2013	LA	Webster	22119	Oil	Drip or Scrubber Condensate (bbl)	Royalties	0.61
+2013	LA	Webster	22119	Oil	Oil (bbl)	Royalties	9857.76
+2013	LA	West Delta	22719	Gas	Processed (Residue) Gas (mcf)	Royalties	53.47
+2013	LA	West Delta	22719	NGL	Gas Plant Products (gal)	Royalties	54.56
+2013	LA	West Delta	22719	Oil	Oil (bbl)	Royalties	8.97
+2013	LA	Winn	22127	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	55538
+2013	LA	Winn	22127	Oil	Condensate (bbl)	Royalties	1316.17

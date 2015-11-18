@@ -1,0 +1,508 @@
+Year	State	County	FIPS	Commodity	Product	Type	Volume
+2004	CA	Contra Costa	06013	Gas	Processed (Residue) Gas (mcf)	Royalties	4020
+2004	CA	Contra Costa	06013	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	6361.93
+2004	CA	Contra Costa	06013	Oil	Condensate (bbl)	Royalties	7.67
+2004	CA	Fresno	06019	Gas	Processed (Residue) Gas (mcf)	Royalties	84812.64
+2004	CA	Fresno	06019	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	444314.3
+2004	CA	Fresno	06019	NGL	Gas Plant Products (gal)	Royalties	120040.2
+2004	CA	Fresno	06019	Oil	Oil (bbl)	Royalties	40131.01
+2004	CA	Glenn	06021	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	8283.08
+2004	CA	Imperial	06025	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	389985151.7
+2004	CA	Imperial	06025	Geothermal	Geothermal - Electrical Generation, Other (mmbtu)	Royalties	212770.98
+2004	CA	Inyo	06027	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	556536252.6
+2004	CA	Kern	06029	Gas	Gas Lost - Flared or Vented (mcf)	Royalties	20076
+2004	CA	Kern	06029	Gas	Processed (Residue) Gas (mcf)	Royalties	1069003.56
+2004	CA	Kern	06029	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	227626.87
+2004	CA	Kern	06029	NGL	Gas Plant Products (gal)	Royalties	689651.2
+2004	CA	Kern	06029	Oil	Condensate (bbl)	Royalties	5173.6
+2004	CA	Kern	06029	Oil	Fuel Oil (bbl)	Royalties	82.15
+2004	CA	Kern	06029	Oil	Oil (bbl)	Royalties	12753474.34
+2004	CA	Kings	06031	Gas	Processed (Residue) Gas (mcf)	Royalties	113758.18
+2004	CA	Kings	06031	NGL	Gas Plant Products (gal)	Royalties	159983.99
+2004	CA	Kings	06031	Oil	Oil (bbl)	Royalties	32084.87
+2004	CA	Lake	06033	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds (klb)	Royalties	23664571.71
+2004	CA	Lassen	06035	Geothermal	Geothermal - Direct Utilization, Millions of BTUs (mmbtu)	Royalties	165884.74
+2004	CA	Los Angeles	06037	Gas	Gas Lost - Flared or Vented (mcf)	Royalties	7906
+2004	CA	Los Angeles	06037	Gas	Processed (Residue) Gas (mcf)	Royalties	486.03
+2004	CA	Los Angeles	06037	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	44390.52
+2004	CA	Los Angeles	06037	Oil	Condensate (bbl)	Royalties	95910.69
+2004	CA	Los Angeles	06037	Oil	Oil (bbl)	Royalties	518462.41
+2004	CA	Mono	06051	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	96147731
+2004	CA	Monterey	06053	Oil	Oil (bbl)	Royalties	4354.5
+2004	CA	San Benito	06069	Oil	Oil (bbl)	Royalties	2826.53
+2004	CA	San Bernardn	06071	Anhydrous Sodium Sulfate	Anhydrous Sodium Sulfate (ton)	Royalties	170391
+2004	CA	San Bernardn	06071	Borax-Decahydrate	Borax-Decahydrate (ton)	Royalties	11424
+2004	CA	San Bernardn	06071	Borax-Pentahydrate	Borax-Pentahydrate (ton)	Royalties	10528
+2004	CA	San Bernardn	06071	Boric Acid	Boric Acid (ton)	Royalties	17904
+2004	CA	San Bernardn	06071	Salt	Salt (ton)	Royalties	70234
+2004	CA	San Bernardn	06071	Soda Ash	Soda Ash (ton)	Royalties	793855
+2004	CA	San Bernardn	06071	Sodium Bi-Carbonate	Sodium Bi-Carbonate (ton)	Royalties	13114
+2004	CA	San Joaquin	06077	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	4444.56
+2004	CA	San Luis Ob.	06079	Oil	Condensate (bbl)	Royalties	1284.74
+2004	CA	San Luis Ob.	06079	Oil	Oil (bbl)	Royalties	17912.23
+2004	CA	Santa Barbar	06083	Gas	Processed (Residue) Gas (mcf)	Royalties	172415.83
+2004	CA	Santa Barbar	06083	Oil	Oil (bbl)	Royalties	78616.73
+2004	CA	Solano	06095	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	581127.84
+2004	CA	Solano	06095	Oil	Condensate (bbl)	Royalties	323.05
+2004	CA	Sonoma	06097	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds (klb)	Royalties	29277581.32
+2004	CA	Ventura	06111	Gas	Gas Lost - Flared or Vented (mcf)	Royalties	5551.12
+2004	CA	Ventura	06111	Gas	Processed (Residue) Gas (mcf)	Royalties	236717.65
+2004	CA	Ventura	06111	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	484793.88
+2004	CA	Ventura	06111	NGL	Gas Plant Products (gal)	Royalties	184350.14
+2004	CA	Ventura	06111	Oil	Condensate (bbl)	Royalties	615.2
+2004	CA	Ventura	06111	Oil	Oil (bbl)	Royalties	359798.24
+2005	CA	Contra Costa	06013	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	13879.04
+2005	CA	Contra Costa	06013	Oil	Condensate (bbl)	Royalties	29.84
+2005	CA	Fresno	06019	Gas	Processed (Residue) Gas (mcf)	Royalties	103976.1
+2005	CA	Fresno	06019	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	413014.58
+2005	CA	Fresno	06019	NGL	Gas Plant Products (gal)	Royalties	136853.74
+2005	CA	Fresno	06019	Oil	Condensate (bbl)	Royalties	563.72
+2005	CA	Fresno	06019	Oil	Oil (bbl)	Royalties	47294.83
+2005	CA	Glenn	06021	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	8484.1
+2005	CA	Imperial	06025	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	359593960
+2005	CA	Imperial	06025	Geothermal	Geothermal - Electrical Generation, Other (mmbtu)	Royalties	204030.26
+2005	CA	Inyo	06027	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	537748979.68
+2005	CA	Kern	06029	Gas	Gas Lost - Flared or Vented (mcf)	Royalties	18403
+2005	CA	Kern	06029	Gas	Processed (Residue) Gas (mcf)	Royalties	976348.81
+2005	CA	Kern	06029	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1174499.47
+2005	CA	Kern	06029	NGL	Gas Plant Products (gal)	Royalties	982237.79
+2005	CA	Kern	06029	Oil	Condensate (bbl)	Royalties	15360.01
+2005	CA	Kern	06029	Oil	Fuel Oil (bbl)	Royalties	32
+2005	CA	Kern	06029	Oil	Inlet Scrubber (bbl)	Royalties	155.26
+2005	CA	Kern	06029	Oil	Oil (bbl)	Royalties	13411550.17
+2005	CA	Kings	06031	Gas	Processed (Residue) Gas (mcf)	Royalties	143580.94
+2005	CA	Kings	06031	NGL	Gas Plant Products (gal)	Royalties	187486.74
+2005	CA	Kings	06031	Oil	Oil (bbl)	Royalties	42643.46
+2005	CA	Lake	06033	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds (klb)	Royalties	23325053.02
+2005	CA	Lassen	06035	Geothermal	Geothermal - Direct Utilization, Millions of BTUs (mmbtu)	Royalties	260242.35
+2005	CA	Los Angeles	06037	Gas	Gas Lost - Flared or Vented (mcf)	Royalties	4023
+2005	CA	Los Angeles	06037	Gas	Processed (Residue) Gas (mcf)	Royalties	500.85
+2005	CA	Los Angeles	06037	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	37325.53
+2005	CA	Los Angeles	06037	Oil	Condensate (bbl)	Royalties	101038.26
+2005	CA	Los Angeles	06037	Oil	Oil (bbl)	Royalties	516605.7
+2005	CA	Mono	06051	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	90853862
+2005	CA	Monterey	06053	Oil	Oil (bbl)	Royalties	4107.18
+2005	CA	San Benito	06069	Oil	Oil (bbl)	Royalties	2394.27
+2005	CA	San Bernardn	06071	Anhydrous Sodium Sulfate	Anhydrous Sodium Sulfate (ton)	Royalties	165121
+2005	CA	San Bernardn	06071	Borax-Anhydrous	Borax-Anhydrous (ton)	Royalties	905
+2005	CA	San Bernardn	06071	Borax-Decahydrate	Borax-Decahydrate (ton)	Royalties	8170
+2005	CA	San Bernardn	06071	Borax-Pentahydrate	Borax-Pentahydrate (ton)	Royalties	10324
+2005	CA	San Bernardn	06071	Boric Acid	Boric Acid (ton)	Royalties	15829
+2005	CA	San Bernardn	06071	Salt	Salt (ton)	Royalties	85884
+2005	CA	San Bernardn	06071	Soda Ash	Soda Ash (ton)	Royalties	865308
+2005	CA	San Bernardn	06071	Sodium Bi-Carbonate	Sodium Bi-Carbonate (ton)	Royalties	14730
+2005	CA	San Joaquin	06077	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	4421.12
+2005	CA	San Luis Ob.	06079	Oil	Oil (bbl)	Royalties	18205.87
+2005	CA	Santa Barbar	06083	Gas	Processed (Residue) Gas (mcf)	Royalties	8258.73
+2005	CA	Santa Barbar	06083	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	152328
+2005	CA	Santa Barbar	06083	Oil	Oil (bbl)	Royalties	90019.78
+2005	CA	Solano	06095	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	476148.84
+2005	CA	Solano	06095	Oil	Condensate (bbl)	Royalties	471.33
+2005	CA	Sonoma	06097	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds (klb)	Royalties	29871685.67
+2005	CA	Ventura	06111	Gas	Gas Lost - Flared or Vented (mcf)	Royalties	23522.02
+2005	CA	Ventura	06111	Gas	Processed (Residue) Gas (mcf)	Royalties	213385.73
+2005	CA	Ventura	06111	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	439808.27
+2005	CA	Ventura	06111	NGL	Gas Plant Products (gal)	Royalties	165883.04
+2005	CA	Ventura	06111	Oil	Condensate (bbl)	Royalties	400.35
+2005	CA	Ventura	06111	Oil	Oil (bbl)	Royalties	309586.37
+2006	CA	Contra Costa	06013	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	10550.53
+2006	CA	Contra Costa	06013	Oil	Condensate (bbl)	Royalties	10.4
+2006	CA	Fresno	06019	Gas	Processed (Residue) Gas (mcf)	Royalties	107439.28
+2006	CA	Fresno	06019	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	365991.2
+2006	CA	Fresno	06019	NGL	Gas Plant Products (gal)	Royalties	126210.23
+2006	CA	Fresno	06019	Oil	Condensate (bbl)	Royalties	446.16
+2006	CA	Fresno	06019	Oil	Oil (bbl)	Royalties	49090.33
+2006	CA	Glenn	06021	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	6939.32
+2006	CA	Imperial	06025	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	334244017
+2006	CA	Imperial	06025	Geothermal	Geothermal - Electrical Generation, Other (mmbtu)	Royalties	227562
+2006	CA	Inyo	06027	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	504915624.47
+2006	CA	Kern	06029	Gas	Gas Lost - Flared or Vented (mcf)	Royalties	20076
+2006	CA	Kern	06029	Gas	Processed (Residue) Gas (mcf)	Royalties	1949201.37
+2006	CA	Kern	06029	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1178629.35
+2006	CA	Kern	06029	NGL	Gas Plant Products (gal)	Royalties	1934939.69
+2006	CA	Kern	06029	Oil	Condensate (bbl)	Royalties	21896.94
+2006	CA	Kern	06029	Oil	Oil (bbl)	Royalties	15281841.83
+2006	CA	Kings	06031	Gas	Processed (Residue) Gas (mcf)	Royalties	149526.37
+2006	CA	Kings	06031	NGL	Gas Plant Products (gal)	Royalties	174067.08
+2006	CA	Kings	06031	Oil	Oil (bbl)	Royalties	45523.9
+2006	CA	Lake	06033	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds (klb)	Royalties	23235178.96
+2006	CA	Lassen	06035	Geothermal	Geothermal - Direct Utilization, Millions of BTUs (mmbtu)	Royalties	238146.66
+2006	CA	Los Angeles	06037	Gas	Gas Lost - Flared or Vented (mcf)	Royalties	2718
+2006	CA	Los Angeles	06037	Gas	Processed (Residue) Gas (mcf)	Royalties	525.23
+2006	CA	Los Angeles	06037	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	24892.87
+2006	CA	Los Angeles	06037	Oil	Condensate (bbl)	Royalties	95770.43
+2006	CA	Los Angeles	06037	Oil	Oil (bbl)	Royalties	816543.76
+2006	CA	Mono	06051	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	176732044.26
+2006	CA	Monterey	06053	Oil	Oil (bbl)	Royalties	3687.31
+2006	CA	San Benito	06069	Oil	Oil (bbl)	Royalties	477.38
+2006	CA	San Bernardn	06071	Anhydrous Sodium Sulfate	Anhydrous Sodium Sulfate (ton)	Royalties	163278
+2006	CA	San Bernardn	06071	Borax-Decahydrate	Borax-Decahydrate (ton)	Royalties	7875
+2006	CA	San Bernardn	06071	Borax-Pentahydrate	Borax-Pentahydrate (ton)	Royalties	8714
+2006	CA	San Bernardn	06071	Boric Acid	Boric Acid (ton)	Royalties	14549
+2006	CA	San Bernardn	06071	Salt	Salt (ton)	Royalties	93042
+2006	CA	San Bernardn	06071	Soda Ash	Soda Ash (ton)	Royalties	845159
+2006	CA	San Bernardn	06071	Sodium Bi-Carbonate	Sodium Bi-Carbonate (ton)	Royalties	13557
+2006	CA	San Joaquin	06077	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3996.4
+2006	CA	San Luis Ob.	06079	Oil	Oil (bbl)	Royalties	15516.53
+2006	CA	Santa Barbar	06083	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	55724.5
+2006	CA	Santa Barbar	06083	Oil	Oil (bbl)	Royalties	96919.28
+2006	CA	Solano	06095	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	459228.36
+2006	CA	Solano	06095	Oil	Condensate (bbl)	Royalties	421.93
+2006	CA	Sonoma	06097	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds (klb)	Royalties	30108719.57
+2006	CA	Ventura	06111	Gas	Gas Lost - Flared or Vented (mcf)	Royalties	30069.87
+2006	CA	Ventura	06111	Gas	Processed (Residue) Gas (mcf)	Royalties	290362.68
+2006	CA	Ventura	06111	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	412472.22
+2006	CA	Ventura	06111	NGL	Gas Plant Products (gal)	Royalties	101088.15
+2006	CA	Ventura	06111	Oil	Condensate (bbl)	Royalties	281.68
+2006	CA	Ventura	06111	Oil	Drip or Scrubber Condensate (bbl)	Royalties	119.53
+2006	CA	Ventura	06111	Oil	Oil (bbl)	Royalties	310602.14
+2007	CA	Contra Costa	06013	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	12742.34
+2007	CA	Contra Costa	06013	Oil	Condensate (bbl)	Royalties	18.8
+2007	CA	Fresno	06019	Gas	Processed (Residue) Gas (mcf)	Royalties	64444.99
+2007	CA	Fresno	06019	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	806750.01
+2007	CA	Fresno	06019	NGL	Gas Plant Products (gal)	Royalties	52184.83
+2007	CA	Fresno	06019	Oil	Condensate (bbl)	Royalties	137.28
+2007	CA	Fresno	06019	Oil	Oil (bbl)	Royalties	35423.22
+2007	CA	Glenn	06021	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	6329.61
+2007	CA	Imperial	06025	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	440260735
+2007	CA	Imperial	06025	Geothermal	Geothermal - Electrical Generation, Other (mmbtu)	Royalties	207155.08
+2007	CA	Inyo	06027	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	465167155.81
+2007	CA	Kern	06029	Gas	Flash Gas (mcf)	Royalties	131123
+2007	CA	Kern	06029	Gas	Gas Lost - Flared or Vented (mcf)	Royalties	20076
+2007	CA	Kern	06029	Gas	Processed (Residue) Gas (mcf)	Royalties	1686157.82
+2007	CA	Kern	06029	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	857908.13
+2007	CA	Kern	06029	NGL	Gas Plant Products (gal)	Royalties	1118443.53
+2007	CA	Kern	06029	Oil	Condensate (bbl)	Royalties	11130.64
+2007	CA	Kern	06029	Oil	Drip or Scrubber Condensate (bbl)	Royalties	12378.23
+2007	CA	Kern	06029	Oil	Oil (bbl)	Royalties	16784714.96
+2007	CA	Kings	06031	Gas	Processed (Residue) Gas (mcf)	Royalties	88775.73
+2007	CA	Kings	06031	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	600
+2007	CA	Kings	06031	NGL	Gas Plant Products (gal)	Royalties	71742.46
+2007	CA	Kings	06031	Oil	Oil (bbl)	Royalties	40444.84
+2007	CA	Lake	06033	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds (klb)	Royalties	21799180.09
+2007	CA	Lassen	06035	Geothermal	Geothermal - Direct Utilization, Millions of BTUs (mmbtu)	Royalties	217499.73
+2007	CA	Los Angeles	06037	Gas	Gas Lost - Flared or Vented (mcf)	Royalties	1890
+2007	CA	Los Angeles	06037	Gas	Processed (Residue) Gas (mcf)	Royalties	731.34
+2007	CA	Los Angeles	06037	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	11830.8
+2007	CA	Los Angeles	06037	Oil	Condensate (bbl)	Royalties	40601.79
+2007	CA	Los Angeles	06037	Oil	Oil (bbl)	Royalties	693201.65
+2007	CA	Mono	06051	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	187398918
+2007	CA	Monterey	06053	Oil	Oil (bbl)	Royalties	3083.32
+2007	CA	San Benito	06069	Oil	Oil (bbl)	Royalties	97.98
+2007	CA	San Bernardn	06071	Anhydrous Sodium Sulfate	Anhydrous Sodium Sulfate (ton)	Royalties	174483
+2007	CA	San Bernardn	06071	Borax-Decahydrate	Borax-Decahydrate (ton)	Royalties	8114
+2007	CA	San Bernardn	06071	Borax-Pentahydrate	Borax-Pentahydrate (ton)	Royalties	9110
+2007	CA	San Bernardn	06071	Boric Acid	Boric Acid (ton)	Royalties	15305
+2007	CA	San Bernardn	06071	Salt	Salt (ton)	Royalties	102520
+2007	CA	San Bernardn	06071	Soda Ash	Soda Ash (ton)	Royalties	792941
+2007	CA	San Bernardn	06071	Sodium Bi-Carbonate	Sodium Bi-Carbonate (ton)	Royalties	10488
+2007	CA	San Joaquin	06077	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3767.61
+2007	CA	San Luis Ob.	06079	Oil	Oil (bbl)	Royalties	17655.21
+2007	CA	Santa Barbar	06083	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	56141.01
+2007	CA	Santa Barbar	06083	Oil	Oil (bbl)	Royalties	93946.64
+2007	CA	Solano	06095	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	411421.55
+2007	CA	Solano	06095	Oil	Condensate (bbl)	Royalties	551.66
+2007	CA	Sonoma	06097	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds (klb)	Royalties	28576259.53
+2007	CA	Ventura	06111	Gas	Gas Lost - Flared or Vented (mcf)	Royalties	12451.07
+2007	CA	Ventura	06111	Gas	Processed (Residue) Gas (mcf)	Royalties	260533.71
+2007	CA	Ventura	06111	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	412812.03
+2007	CA	Ventura	06111	NGL	Gas Plant Products (gal)	Royalties	158346.75
+2007	CA	Ventura	06111	Oil	Condensate (bbl)	Royalties	332.78
+2007	CA	Ventura	06111	Oil	Drip or Scrubber Condensate (bbl)	Royalties	10.96
+2007	CA	Ventura	06111	Oil	Oil (bbl)	Royalties	307151.2
+2008	CA	Contra Costa	06013	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	15237.66
+2008	CA	Contra Costa	06013	Oil	Condensate (bbl)	Royalties	9.65
+2008	CA	Contra Costa	06013	Oil	Oil (bbl)	Royalties	3.34
+2008	CA	Fresno	06019	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	501673.28
+2008	CA	Fresno	06019	Oil	Condensate (bbl)	Royalties	259.6
+2008	CA	Fresno	06019	Oil	Oil (bbl)	Royalties	18498.14
+2008	CA	Glenn	06021	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	15527.47
+2008	CA	Imperial	06025	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	437685000
+2008	CA	Imperial	06025	Geothermal	Geothermal - Electrical Generation, Other (mmbtu)	Royalties	237415.56
+2008	CA	Inyo	06027	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	449420627.72
+2008	CA	Kern	06029	Gas	Flash Gas (mcf)	Royalties	152891.23
+2008	CA	Kern	06029	Gas	Gas Lost - Flared or Vented (mcf)	Royalties	38875
+2008	CA	Kern	06029	Gas	Processed (Residue) Gas (mcf)	Royalties	1843175.46
+2008	CA	Kern	06029	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1045278.9
+2008	CA	Kern	06029	NGL	Gas Plant Products (gal)	Royalties	2038662.86
+2008	CA	Kern	06029	Oil	Condensate (bbl)	Royalties	7418.52
+2008	CA	Kern	06029	Oil	Drip or Scrubber Condensate (bbl)	Royalties	8159.53
+2008	CA	Kern	06029	Oil	Fuel Oil (bbl)	Royalties	15.04
+2008	CA	Kern	06029	Oil	Oil (bbl)	Royalties	13323384.22
+2008	CA	Kings	06031	Oil	Oil (bbl)	Royalties	30367.29
+2008	CA	Lake	06033	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds (klb)	Royalties	21265241.42
+2008	CA	Lassen	06035	Geothermal	Geothermal - Direct Utilization, Millions of BTUs (mmbtu)	Royalties	219089.01
+2008	CA	Los Angeles	06037	Gas	Processed (Residue) Gas (mcf)	Royalties	704.76
+2008	CA	Los Angeles	06037	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	4144.36
+2008	CA	Los Angeles	06037	Oil	Condensate (bbl)	Royalties	11352.54
+2008	CA	Los Angeles	06037	Oil	Oil (bbl)	Royalties	406260.12
+2008	CA	Mono	06051	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	183365194
+2008	CA	Monterey	06053	Oil	Oil (bbl)	Royalties	4622.8
+2008	CA	San Benito	06069	Oil	Oil (bbl)	Royalties	589.34
+2008	CA	San Bernardn	06071	Anhydrous Sodium Sulfate	Anhydrous Sodium Sulfate (ton)	Royalties	170631
+2008	CA	San Bernardn	06071	Borax-Decahydrate	Borax-Decahydrate (ton)	Royalties	7714
+2008	CA	San Bernardn	06071	Borax-Pentahydrate	Borax-Pentahydrate (ton)	Royalties	9738
+2008	CA	San Bernardn	06071	Boric Acid	Boric Acid (ton)	Royalties	14837
+2008	CA	San Bernardn	06071	Salt	Salt (ton)	Royalties	113612
+2008	CA	San Bernardn	06071	Soda Ash	Soda Ash (ton)	Royalties	750892
+2008	CA	San Bernardn	06071	Sodium Bi-Carbonate	Sodium Bi-Carbonate (ton)	Royalties	10000
+2008	CA	San Joaquin	06077	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3680.3
+2008	CA	San Luis Ob.	06079	Oil	Oil (bbl)	Royalties	12199
+2008	CA	Santa Barbar	06083	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	40625.04
+2008	CA	Santa Barbar	06083	Oil	Oil (bbl)	Royalties	82764.13
+2008	CA	Solano	06095	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	326134.09
+2008	CA	Solano	06095	Oil	Condensate (bbl)	Royalties	507.41
+2008	CA	Sonoma	06097	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds (klb)	Royalties	28601894.92
+2008	CA	Ventura	06111	Gas	Gas Lost - Flared or Vented (mcf)	Royalties	11828.96
+2008	CA	Ventura	06111	Gas	Processed (Residue) Gas (mcf)	Royalties	150916.11
+2008	CA	Ventura	06111	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	501667.1
+2008	CA	Ventura	06111	NGL	Gas Plant Products (gal)	Royalties	175189.78
+2008	CA	Ventura	06111	Oil	Condensate (bbl)	Royalties	134.65
+2008	CA	Ventura	06111	Oil	Drip or Scrubber Condensate (bbl)	Royalties	197.84
+2008	CA	Ventura	06111	Oil	Oil (bbl)	Royalties	310472.69
+2009	CA	Contra Costa	06013	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	6041.46
+2009	CA	Fresno	06019	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	206835.29
+2009	CA	Fresno	06019	Oil	Condensate (bbl)	Royalties	93.6
+2009	CA	Fresno	06019	Oil	Oil (bbl)	Royalties	21528.55
+2009	CA	Glenn	06021	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	24120.56
+2009	CA	Imperial	06025	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	423244000
+2009	CA	Imperial	06025	Geothermal	Geothermal - Electrical Generation, Other (mmbtu)	Royalties	233953.69
+2009	CA	Inyo	06027	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	460346602.88
+2009	CA	Kern	06029	Gas	Flash Gas (mcf)	Royalties	214145.31
+2009	CA	Kern	06029	Gas	Gas Lost - Flared or Vented (mcf)	Royalties	37968.66
+2009	CA	Kern	06029	Gas	Processed (Residue) Gas (mcf)	Royalties	2385890.65
+2009	CA	Kern	06029	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1231574.59
+2009	CA	Kern	06029	NGL	Gas Plant Products (gal)	Royalties	1927398.48
+2009	CA	Kern	06029	Oil	Condensate (bbl)	Royalties	6979.83
+2009	CA	Kern	06029	Oil	Drip or Scrubber Condensate (bbl)	Royalties	28010.97
+2009	CA	Kern	06029	Oil	Oil (bbl)	Royalties	13175463.06
+2009	CA	Kings	06031	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	270.05
+2009	CA	Kings	06031	Oil	Oil (bbl)	Royalties	37999.6
+2009	CA	Lake	06033	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds (klb)	Royalties	20771777.54
+2009	CA	Lassen	06035	Geothermal	Geothermal - Direct Utilization, Millions of BTUs (mmbtu)	Royalties	179170.56
+2009	CA	Los Angeles	06037	Gas	Processed (Residue) Gas (mcf)	Royalties	696.69
+2009	CA	Los Angeles	06037	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	15698.31
+2009	CA	Los Angeles	06037	Oil	Condensate (bbl)	Royalties	14219.1
+2009	CA	Los Angeles	06037	Oil	Oil (bbl)	Royalties	381252.94
+2009	CA	Mono	06051	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	205165950.35
+2009	CA	Monterey	06053	Oil	Oil (bbl)	Royalties	7659.5
+2009	CA	San Benito	06069	Oil	Oil (bbl)	Royalties	1330.83
+2009	CA	San Bernardn	06071	Anhydrous Sodium Sulfate	Anhydrous Sodium Sulfate (ton)	Royalties	141342
+2009	CA	San Bernardn	06071	Borax-Decahydrate	Borax-Decahydrate (ton)	Royalties	5584
+2009	CA	San Bernardn	06071	Borax-Pentahydrate	Borax-Pentahydrate (ton)	Royalties	11110
+2009	CA	San Bernardn	06071	Boric Acid	Boric Acid (ton)	Royalties	14292
+2009	CA	San Bernardn	06071	Salt	Salt (ton)	Royalties	117608
+2009	CA	San Bernardn	06071	Soda Ash	Soda Ash (ton)	Royalties	618525
+2009	CA	San Bernardn	06071	Sodium Bi-Carbonate	Sodium Bi-Carbonate (ton)	Royalties	8831
+2009	CA	San Joaquin	06077	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3254.02
+2009	CA	San Luis Ob.	06079	Oil	Oil (bbl)	Royalties	16876.15
+2009	CA	Santa Barbar	06083	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	32237.24
+2009	CA	Santa Barbar	06083	Oil	Oil (bbl)	Royalties	77050.65
+2009	CA	Solano	06095	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	343515.92
+2009	CA	Solano	06095	Oil	Condensate (bbl)	Royalties	382.13
+2009	CA	Sonoma	06097	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds (klb)	Royalties	27745974.77
+2009	CA	Ventura	06111	Gas	Gas Lost - Flared or Vented (mcf)	Royalties	39745.05
+2009	CA	Ventura	06111	Gas	Processed (Residue) Gas (mcf)	Royalties	53369.01
+2009	CA	Ventura	06111	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	563479.41
+2009	CA	Ventura	06111	NGL	Gas Plant Products (gal)	Royalties	161864.21
+2009	CA	Ventura	06111	Oil	Condensate (bbl)	Royalties	113.9
+2009	CA	Ventura	06111	Oil	Drip or Scrubber Condensate (bbl)	Royalties	200.99
+2009	CA	Ventura	06111	Oil	Oil (bbl)	Royalties	287151.35
+2010	CA	Contra Costa	06013	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	4189.43
+2010	CA	Fresno	06019	Gas	Processed (Residue) Gas (mcf)	Royalties	38140.1
+2010	CA	Fresno	06019	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	164822.97
+2010	CA	Fresno	06019	Oil	Oil (bbl)	Royalties	21472.6
+2010	CA	Glenn	06021	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	17207.37
+2010	CA	Imperial	06025	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	422385180.83
+2010	CA	Imperial	06025	Geothermal	Geothermal - Electrical Generation, Other (mmbtu)	Royalties	223938.12
+2010	CA	Inyo	06027	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	387017462.4
+2010	CA	Inyo	06027	Geothermal	Geothermal - sulfur (lton)	Royalties	4669.79
+2010	CA	Kern	06029	Gas	Flash Gas (mcf)	Royalties	74826.55
+2010	CA	Kern	06029	Gas	Fuel Gas (mcf)	Royalties	2160
+2010	CA	Kern	06029	Gas	Gas Lost - Flared or Vented (mcf)	Royalties	35143.29
+2010	CA	Kern	06029	Gas	Processed (Residue) Gas (mcf)	Royalties	2513615.84
+2010	CA	Kern	06029	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2268923.27
+2010	CA	Kern	06029	NGL	Gas Plant Products (gal)	Royalties	1028718.54
+2010	CA	Kern	06029	Oil	Condensate (bbl)	Royalties	11875.51
+2010	CA	Kern	06029	Oil	Drip or Scrubber Condensate (bbl)	Royalties	12179.76
+2010	CA	Kern	06029	Oil	Fuel Oil (bbl)	Royalties	6.72
+2010	CA	Kern	06029	Oil	Oil (bbl)	Royalties	13099301.79
+2010	CA	Kings	06031	Gas	Processed (Residue) Gas (mcf)	Royalties	51844.33
+2010	CA	Kings	06031	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3385.13
+2010	CA	Kings	06031	Oil	Oil (bbl)	Royalties	37451.87
+2010	CA	Lake	06033	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds (klb)	Royalties	20975267.77
+2010	CA	Lassen	06035	Geothermal	Geothermal - Direct Utilization, Millions of BTUs (mmbtu)	Royalties	224486.3
+2010	CA	Los Angeles	06037	Gas	Processed (Residue) Gas (mcf)	Royalties	682.93
+2010	CA	Los Angeles	06037	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	18263.13
+2010	CA	Los Angeles	06037	Oil	Condensate (bbl)	Royalties	12475.6
+2010	CA	Los Angeles	06037	Oil	Oil (bbl)	Royalties	397322.42
+2010	CA	Mono	06051	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	194009762.17
+2010	CA	Monterey	06053	Oil	Oil (bbl)	Royalties	9451.04
+2010	CA	San Benito	06069	Oil	Oil (bbl)	Royalties	1165.21
+2010	CA	San Bernardn	06071	Anhydrous Sodium Sulfate	Anhydrous Sodium Sulfate (ton)	Royalties	176158
+2010	CA	San Bernardn	06071	Borax-Decahydrate	Borax-Decahydrate (ton)	Royalties	30848
+2010	CA	San Bernardn	06071	Borax-Pentahydrate	Borax-Pentahydrate (ton)	Royalties	56462
+2010	CA	San Bernardn	06071	Boric Acid	Boric Acid (ton)	Royalties	24652
+2010	CA	San Bernardn	06071	Salt	Salt (ton)	Royalties	107348
+2010	CA	San Bernardn	06071	Soda Ash	Soda Ash (ton)	Royalties	725488
+2010	CA	San Bernardn	06071	Sodium Bi-Carbonate	Sodium Bi-Carbonate (ton)	Royalties	12234
+2010	CA	San Joaquin	06077	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3271.04
+2010	CA	San Luis Ob.	06079	Oil	Oil (bbl)	Royalties	23248.96
+2010	CA	Santa Barbar	06083	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	91146.2
+2010	CA	Santa Barbar	06083	Oil	Oil (bbl)	Royalties	65627.67
+2010	CA	Solano	06095	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	324932.14
+2010	CA	Solano	06095	Oil	Condensate (bbl)	Royalties	377.06
+2010	CA	Sonoma	06097	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds (klb)	Royalties	27547968.93
+2010	CA	Ventura	06111	Gas	Gas Lost - Flared or Vented (mcf)	Royalties	17836.98
+2010	CA	Ventura	06111	Gas	Processed (Residue) Gas (mcf)	Royalties	61344.53
+2010	CA	Ventura	06111	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	535857.13
+2010	CA	Ventura	06111	NGL	Gas Plant Products (gal)	Royalties	131925.13
+2010	CA	Ventura	06111	Oil	Drip or Scrubber Condensate (bbl)	Royalties	76.28
+2010	CA	Ventura	06111	Oil	Oil (bbl)	Royalties	266817.79
+2011	CA	Contra Costa	06013	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2407.48
+2011	CA	Fresno	06019	Gas	Processed (Residue) Gas (mcf)	Royalties	119472.43
+2011	CA	Fresno	06019	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	118547.38
+2011	CA	Fresno	06019	Oil	Oil (bbl)	Royalties	21897.65
+2011	CA	Glenn	06021	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	8551.3
+2011	CA	Imperial	06025	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	430545952.73
+2011	CA	Imperial	06025	Geothermal	Geothermal - Electrical Generation, Other (mmbtu)	Royalties	19883.37
+2011	CA	Inyo	06027	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	368106296.6
+2011	CA	Inyo	06027	Geothermal	Geothermal - sulfur (lton)	Royalties	3469.89
+2011	CA	Kern	06029	Gas	Fuel Gas (mcf)	Royalties	90728.44
+2011	CA	Kern	06029	Gas	Gas Lost - Flared or Vented (mcf)	Royalties	20076
+2011	CA	Kern	06029	Gas	Processed (Residue) Gas (mcf)	Royalties	2117451.99
+2011	CA	Kern	06029	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	7606233.45
+2011	CA	Kern	06029	NGL	Gas Plant Products (gal)	Royalties	8660613.27
+2011	CA	Kern	06029	Oil	Condensate (bbl)	Royalties	13735.32
+2011	CA	Kern	06029	Oil	Drip or Scrubber Condensate (bbl)	Royalties	4232.1
+2011	CA	Kern	06029	Oil	Oil (bbl)	Royalties	14049355.78
+2011	CA	Kings	06031	Gas	Processed (Residue) Gas (mcf)	Royalties	166250.73
+2011	CA	Kings	06031	NGL	Gas Plant Products (gal)	Royalties	63707.6
+2011	CA	Kings	06031	Oil	Oil (bbl)	Royalties	36491.69
+2011	CA	Lake	06033	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds (klb)	Royalties	20965734.71
+2011	CA	Lassen	06035	Geothermal	Geothermal - Direct Utilization, Millions of BTUs (mmbtu)	Royalties	228010.63
+2011	CA	Los Angeles	06037	Gas	Processed (Residue) Gas (mcf)	Royalties	550.02
+2011	CA	Los Angeles	06037	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	30243.83
+2011	CA	Los Angeles	06037	Oil	Condensate (bbl)	Royalties	16745.71
+2011	CA	Los Angeles	06037	Oil	Oil (bbl)	Royalties	406607.53
+2011	CA	Mono	06051	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	182306807.61
+2011	CA	Monterey	06053	Oil	Oil (bbl)	Royalties	11300.72
+2011	CA	San Benito	06069	Oil	Oil (bbl)	Royalties	818.12
+2011	CA	San Bernardn	06071	Anhydrous Sodium Sulfate	Anhydrous Sodium Sulfate (ton)	Royalties	163158
+2011	CA	San Bernardn	06071	Borax-Anhydrous	Borax-Anhydrous (ton)	Royalties	2075
+2011	CA	San Bernardn	06071	Borax-Decahydrate	Borax-Decahydrate (ton)	Royalties	52637
+2011	CA	San Bernardn	06071	Borax-Pentahydrate	Borax-Pentahydrate (ton)	Royalties	72986
+2011	CA	San Bernardn	06071	Boric Acid	Boric Acid (ton)	Royalties	31623
+2011	CA	San Bernardn	06071	Salt	Salt (ton)	Royalties	106240
+2011	CA	San Bernardn	06071	Soda Ash	Soda Ash (ton)	Royalties	750974
+2011	CA	San Bernardn	06071	Sodium Bi-Carbonate	Sodium Bi-Carbonate (ton)	Royalties	15366
+2011	CA	San Joaquin	06077	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3282.41
+2011	CA	San Luis Ob.	06079	Oil	Oil (bbl)	Royalties	10432.28
+2011	CA	Santa Barbar	06083	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	29517.14
+2011	CA	Santa Barbar	06083	Oil	Oil (bbl)	Royalties	67136.13
+2011	CA	Solano	06095	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	403434.82
+2011	CA	Solano	06095	Oil	Condensate (bbl)	Royalties	364.88
+2011	CA	Solano	06095	Oil	Oil (bbl)	Royalties	357.12
+2011	CA	Sonoma	06097	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds (klb)	Royalties	27719948.29
+2011	CA	Ventura	06111	Gas	Gas Lost - Flared or Vented (mcf)	Royalties	4322.53
+2011	CA	Ventura	06111	Gas	Processed (Residue) Gas (mcf)	Royalties	71392.53
+2011	CA	Ventura	06111	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	490179.8
+2011	CA	Ventura	06111	NGL	Gas Plant Products (gal)	Royalties	152827.55
+2011	CA	Ventura	06111	Oil	Drip or Scrubber Condensate (bbl)	Royalties	133.41
+2011	CA	Ventura	06111	Oil	Oil (bbl)	Royalties	273035.03
+2012	CA	Contra Costa	06013	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1717.69
+2012	CA	Fresno	06019	Gas	Processed (Residue) Gas (mcf)	Royalties	43739.37
+2012	CA	Fresno	06019	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	22853.33
+2012	CA	Fresno	06019	Oil	Oil (bbl)	Royalties	15274.52
+2012	CA	Glenn	06021	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	10985.31
+2012	CA	Imperial	06025	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	407340165.3
+2012	CA	Inyo	06027	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	345868455
+2012	CA	Inyo	06027	Geothermal	Geothermal - sulfur (lton)	Royalties	2598.09
+2012	CA	Kern	06029	Gas	Fuel Gas (mcf)	Royalties	273684.38
+2012	CA	Kern	06029	Gas	Gas Lost - Flared or Vented (mcf)	Royalties	20076
+2012	CA	Kern	06029	Gas	Processed (Residue) Gas (mcf)	Royalties	2321131.99
+2012	CA	Kern	06029	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	6028739.19
+2012	CA	Kern	06029	NGL	Gas Plant Products (gal)	Royalties	12380099.31
+2012	CA	Kern	06029	Oil	Condensate (bbl)	Royalties	11680.06
+2012	CA	Kern	06029	Oil	Drip or Scrubber Condensate (bbl)	Royalties	4103.88
+2012	CA	Kern	06029	Oil	Oil (bbl)	Royalties	14159919.77
+2012	CA	Kings	06031	Gas	Processed (Residue) Gas (mcf)	Royalties	82488.65
+2012	CA	Kings	06031	NGL	Gas Plant Products (gal)	Royalties	50361.82
+2012	CA	Kings	06031	Oil	Oil (bbl)	Royalties	41088.27
+2012	CA	Lake	06033	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds (klb)	Royalties	20689289.46
+2012	CA	Lassen	06035	Geothermal	Geothermal - Direct Utilization, Millions of BTUs (mmbtu)	Royalties	271469.64
+2012	CA	Los Angeles	06037	Gas	Processed (Residue) Gas (mcf)	Royalties	470.08
+2012	CA	Los Angeles	06037	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	76367.9
+2012	CA	Los Angeles	06037	Oil	Condensate (bbl)	Royalties	30387.1
+2012	CA	Los Angeles	06037	Oil	Oil (bbl)	Royalties	451350.45
+2012	CA	Mono	06051	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	165730647.36
+2012	CA	Monterey	06053	Oil	Oil (bbl)	Royalties	13614.73
+2012	CA	San Benito	06069	Oil	Oil (bbl)	Royalties	175.31
+2012	CA	San Bernardn	06071	Anhydrous Sodium Sulfate	Anhydrous Sodium Sulfate (ton)	Royalties	145333
+2012	CA	San Bernardn	06071	Borax-Decahydrate	Borax-Decahydrate (ton)	Royalties	51898
+2012	CA	San Bernardn	06071	Borax-Pentahydrate	Borax-Pentahydrate (ton)	Royalties	67759
+2012	CA	San Bernardn	06071	Boric Acid	Boric Acid (ton)	Royalties	26459
+2012	CA	San Bernardn	06071	Salt	Salt (ton)	Royalties	117047
+2012	CA	San Bernardn	06071	Soda Ash	Soda Ash (ton)	Royalties	744958
+2012	CA	San Bernardn	06071	Sodium Bi-Carbonate	Sodium Bi-Carbonate (ton)	Royalties	17516
+2012	CA	San Joaquin	06077	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3149.88
+2012	CA	San Luis Ob.	06079	Oil	Oil (bbl)	Royalties	11522.06
+2012	CA	Santa Barbar	06083	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	22090.65
+2012	CA	Santa Barbar	06083	Oil	Oil (bbl)	Royalties	64466.69
+2012	CA	Solano	06095	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	97308.79
+2012	CA	Solano	06095	Oil	Condensate (bbl)	Royalties	141.94
+2012	CA	Sonoma	06097	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds (klb)	Royalties	27518466.44
+2012	CA	Ventura	06111	Gas	Gas Lost - Flared or Vented (mcf)	Royalties	35394.07
+2012	CA	Ventura	06111	Gas	Processed (Residue) Gas (mcf)	Royalties	64373.26
+2012	CA	Ventura	06111	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	415174.4
+2012	CA	Ventura	06111	NGL	Gas Plant Products (gal)	Royalties	242858.25
+2012	CA	Ventura	06111	Oil	Drip or Scrubber Condensate (bbl)	Royalties	257.61
+2012	CA	Ventura	06111	Oil	Oil (bbl)	Royalties	301150.13
+2013	CA	Contra Costa	06013	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	8244.33
+2013	CA	Contra Costa	06013	Oil	Condensate (bbl)	Royalties	7.47
+2013	CA	Contra Costa	06013	Oil	Oil (bbl)	Royalties	0.38
+2013	CA	Fresno	06019	Oil	Oil (bbl)	Royalties	14307.24
+2013	CA	Glenn	06021	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	20472.15
+2013	CA	Imperial	06025	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	400931401.52
+2013	CA	Inyo	06027	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	368059511.98
+2013	CA	Inyo	06027	Geothermal	Geothermal - sulfur (lton)	Royalties	2448.04
+2013	CA	Kern	06029	Gas	Fuel Gas (mcf)	Royalties	107904
+2013	CA	Kern	06029	Gas	Gas Lost - Flared or Vented (mcf)	Royalties	20076
+2013	CA	Kern	06029	Gas	Processed (Residue) Gas (mcf)	Royalties	4827345.18
+2013	CA	Kern	06029	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	820872.01
+2013	CA	Kern	06029	NGL	Gas Plant Products (gal)	Royalties	10520327.99
+2013	CA	Kern	06029	Oil	Condensate (bbl)	Royalties	14348.82
+2013	CA	Kern	06029	Oil	Drip or Scrubber Condensate (bbl)	Royalties	1603.49
+2013	CA	Kern	06029	Oil	Fuel Oil (bbl)	Royalties	5.6
+2013	CA	Kern	06029	Oil	Oil (bbl)	Royalties	14375830.03
+2013	CA	Kings	06031	Gas	Processed (Residue) Gas (mcf)	Royalties	5725.26
+2013	CA	Kings	06031	NGL	Gas Plant Products (gal)	Royalties	30870.13
+2013	CA	Kings	06031	Oil	Oil (bbl)	Royalties	37633.58
+2013	CA	Lake	06033	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds (klb)	Royalties	19664634.96
+2013	CA	Lassen	06035	Geothermal	Geothermal - Direct Utilization, Millions of BTUs (mmbtu)	Royalties	276337.16
+2013	CA	Los Angeles	06037	Gas	Processed (Residue) Gas (mcf)	Royalties	464
+2013	CA	Los Angeles	06037	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	59396.75
+2013	CA	Los Angeles	06037	Oil	Condensate (bbl)	Royalties	31559.27
+2013	CA	Los Angeles	06037	Oil	Oil (bbl)	Royalties	460698.52
+2013	CA	Mono	06051	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	176615747.08
+2013	CA	Monterey	06053	Oil	Oil (bbl)	Royalties	13495.19
+2013	CA	San Bernardn	06071	Anhydrous Sodium Sulfate	Anhydrous Sodium Sulfate (ton)	Royalties	161172
+2013	CA	San Bernardn	06071	Borax-Decahydrate	Borax-Decahydrate (ton)	Royalties	46507
+2013	CA	San Bernardn	06071	Borax-Pentahydrate	Borax-Pentahydrate (ton)	Royalties	77249
+2013	CA	San Bernardn	06071	Boric Acid	Boric Acid (ton)	Royalties	27764
+2013	CA	San Bernardn	06071	Salt	Salt (ton)	Royalties	131665
+2013	CA	San Bernardn	06071	Soda Ash	Soda Ash (ton)	Royalties	726553
+2013	CA	San Bernardn	06071	Sodium Bi-Carbonate	Sodium Bi-Carbonate (ton)	Royalties	16899
+2013	CA	San Joaquin	06077	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3224.5
+2013	CA	San Luis Ob.	06079	Oil	Oil (bbl)	Royalties	14384.87
+2013	CA	Santa Barbar	06083	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	19755.04
+2013	CA	Santa Barbar	06083	Oil	Oil (bbl)	Royalties	61281.79
+2013	CA	Solano	06095	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	39038
+2013	CA	Sonoma	06097	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds (klb)	Royalties	26479986.78
+2013	CA	Ventura	06111	Gas	Gas Lost - Flared or Vented (mcf)	Royalties	48567.14
+2013	CA	Ventura	06111	Gas	Processed (Residue) Gas (mcf)	Royalties	89135.48
+2013	CA	Ventura	06111	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	254284.41
+2013	CA	Ventura	06111	NGL	Gas Plant Products (gal)	Royalties	392624.53
+2013	CA	Ventura	06111	Oil	Condensate (bbl)	Royalties	17.6
+2013	CA	Ventura	06111	Oil	Drip or Scrubber Condensate (bbl)	Royalties	156.46
+2013	CA	Ventura	06111	Oil	Oil (bbl)	Royalties	234826.49

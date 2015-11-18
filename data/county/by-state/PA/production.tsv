@@ -1,0 +1,61 @@
+Year	State	County	FIPS	Commodity	Product	Type	Volume
+2004	PA	Armstrong	42005	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3982.92
+2004	PA	Indiana	42063	Gas	Processed (Residue) Gas (mcf)	Royalties	5898
+2004	PA	Indiana	42063	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	51887.91
+2004	PA	Warren	42123	Oil	Oil (bbl)	Royalties	377.62
+2004	PA	Westmoreland	42129	Gas	Processed (Residue) Gas (mcf)	Royalties	183.91
+2004	PA	Westmoreland	42129	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	12718.49
+2004	PA	Westmoreland	42129	Oil	Oil (bbl)	Royalties	15
+2005	PA	Armstrong	42005	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	12374.08
+2005	PA	Indiana	42063	Gas	Processed (Residue) Gas (mcf)	Royalties	19464
+2005	PA	Indiana	42063	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	40460.52
+2005	PA	Westmoreland	42129	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	13742.88
+2006	PA	Armstrong	42005	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	12058.1
+2006	PA	Indiana	42063	Gas	Processed (Residue) Gas (mcf)	Royalties	11858
+2006	PA	Indiana	42063	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	27425.19
+2006	PA	Westmoreland	42129	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	17673.28
+2006	PA	Westmoreland	42129	Oil	Oil (bbl)	Royalties	14.97
+2007	PA	Armstrong	42005	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	9623.49
+2007	PA	Indiana	42063	Gas	Processed (Residue) Gas (mcf)	Royalties	19797
+2007	PA	Indiana	42063	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	25497.99
+2007	PA	Westmoreland	42129	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	17200.38
+2008	PA	Armstrong	42005	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	8615.27
+2008	PA	Indiana	42063	Gas	Processed (Residue) Gas (mcf)	Royalties	14632
+2008	PA	Indiana	42063	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	19648.7
+2008	PA	Westmoreland	42129	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	14773.92
+2008	PA	Westmoreland	42129	Oil	Oil (bbl)	Royalties	10.9
+2009	PA	Armstrong	42005	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	7399.23
+2009	PA	Forest	42053	Gas	Processed (Residue) Gas (mcf)	Royalties	43720
+2009	PA	Forest	42053	Oil	Oil (bbl)	Royalties	6073.33
+2009	PA	Indiana	42063	Gas	Processed (Residue) Gas (mcf)	Royalties	19850
+2009	PA	Indiana	42063	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	20326.55
+2009	PA	Westmoreland	42129	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	13762.8
+2009	PA	Westmoreland	42129	Oil	Oil (bbl)	Royalties	13.11
+2010	PA	Armstrong	42005	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	6202.46
+2010	PA	Forest	42053	Gas	Processed (Residue) Gas (mcf)	Royalties	52424
+2010	PA	Forest	42053	Oil	Oil (bbl)	Royalties	5953.98
+2010	PA	Indiana	42063	Gas	Processed (Residue) Gas (mcf)	Royalties	4314
+2010	PA	Indiana	42063	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	20117.96
+2010	PA	Westmoreland	42129	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	12953.66
+2011	PA	Armstrong	42005	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	5968.02
+2011	PA	Forest	42053	Gas	Processed (Residue) Gas (mcf)	Royalties	22210
+2011	PA	Forest	42053	Oil	Oil (bbl)	Royalties	2672
+2011	PA	Indiana	42063	Gas	Processed (Residue) Gas (mcf)	Royalties	12261
+2011	PA	Indiana	42063	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	24396.47
+2011	PA	Warren	42123	Oil	Oil (bbl)	Royalties	1078.78
+2011	PA	Westmoreland	42129	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	11387.61
+2011	PA	Westmoreland	42129	Oil	Condensate (bbl)	Royalties	8.4
+2012	PA	Armstrong	42005	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1861.14
+2012	PA	Forest	42053	Gas	Processed (Residue) Gas (mcf)	Royalties	15649
+2012	PA	Forest	42053	NGL	Gas Plant Products (gal)	Royalties	12045.6
+2012	PA	Forest	42053	Oil	Oil (bbl)	Royalties	1702.39
+2012	PA	Indiana	42063	Gas	Processed (Residue) Gas (mcf)	Royalties	12311
+2012	PA	Indiana	42063	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	29032.15
+2012	PA	Warren	42123	Oil	Oil (bbl)	Royalties	841.33
+2012	PA	Westmoreland	42129	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	11711.61
+2013	PA	Forest	42053	Gas	Processed (Residue) Gas (mcf)	Royalties	12847
+2013	PA	Forest	42053	NGL	Gas Plant Products (gal)	Royalties	27518.4
+2013	PA	Forest	42053	Oil	Oil (bbl)	Royalties	1552.84
+2013	PA	Indiana	42063	Gas	Processed (Residue) Gas (mcf)	Royalties	1926
+2013	PA	Indiana	42063	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	361.68
+2013	PA	Westmoreland	42129	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	980.17

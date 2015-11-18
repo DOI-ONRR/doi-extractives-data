@@ -1,0 +1,569 @@
+Year	State	County	FIPS	Commodity	Product	Type	Volume
+2004	UT	Beaver	49001	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds (klb)	Royalties	2523949051.63
+2004	UT	Carbon	49007	Coal	Coal (ton)	Royalties	8078225.72
+2004	UT	Carbon	49007	Gas	Coal Bed Methane (mcf)	Royalties	11978666.68
+2004	UT	Carbon	49007	Gas	Fuel Gas (mcf)	Royalties	7045.12
+2004	UT	Carbon	49007	Gas	Processed (Residue) Gas (mcf)	Royalties	69792.15
+2004	UT	Carbon	49007	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	13014565.37
+2004	UT	Carbon	49007	Oil	Oil (bbl)	Royalties	3245.76
+2004	UT	Daggett	49009	Gas	Processed (Residue) Gas (mcf)	Royalties	10885
+2004	UT	Daggett	49009	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1155280.12
+2004	UT	Daggett	49009	Oil	Condensate (bbl)	Royalties	885.36
+2004	UT	Duchesne	49013	Gas	Processed (Residue) Gas (mcf)	Royalties	861.71
+2004	UT	Duchesne	49013	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2636004.45
+2004	UT	Duchesne	49013	NGL	Gas Plant Products (gal)	Royalties	4149693.07
+2004	UT	Duchesne	49013	Oil	Oil (bbl)	Royalties	1836758.03
+2004	UT	Emery	49015	Coal	Coal (ton)	Royalties	5110339.89
+2004	UT	Emery	49015	Gas	Coal Bed Methane (mcf)	Royalties	313633.4
+2004	UT	Emery	49015	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3848726.79
+2004	UT	Emery	49015	Oil	Oil (bbl)	Royalties	4080.22
+2004	UT	Garfield	49017	Oil	Oil (bbl)	Royalties	200348.46
+2004	UT	Grand	49019	Gas	Processed (Residue) Gas (mcf)	Royalties	454646.81
+2004	UT	Grand	49019	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	4614164.68
+2004	UT	Grand	49019	NGL	Gas Plant Products (gal)	Royalties	69442.66
+2004	UT	Grand	49019	Oil	Condensate (bbl)	Royalties	879.37
+2004	UT	Grand	49019	Oil	Oil (bbl)	Royalties	79164.76
+2004	UT	Juab	49023	Gas	Processed (Residue) Gas (mcf)	Royalties	4235.77
+2004	UT	Juab	49023	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3772.22
+2004	UT	Juab	49023	NGL	Gas Plant Products (gal)	Royalties	678.06
+2004	UT	Piute	49031	Clay	Clay (ton)	Royalties	18407
+2004	UT	San Juan	49037	Gas	Processed (Residue) Gas (mcf)	Royalties	4153647.88
+2004	UT	San Juan	49037	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	486281.41
+2004	UT	San Juan	49037	NGL	Gas Plant Products (gal)	Royalties	41088303.02
+2004	UT	San Juan	49037	Oil	Condensate (bbl)	Royalties	131789.36
+2004	UT	San Juan	49037	Oil	Drip or Scrubber Condensate (bbl)	Royalties	972.65
+2004	UT	San Juan	49037	Oil	Oil (bbl)	Royalties	304571.73
+2004	UT	Sevier	49041	Coal	Coal (ton)	Royalties	7294068.39
+2004	UT	Sevier	49041	Oil	Oil (bbl)	Royalties	29397.12
+2004	UT	Summit	49043	Gas	Processed (Residue) Gas (mcf)	Royalties	48432.24
+2004	UT	Summit	49043	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	171671.45
+2004	UT	Summit	49043	NGL	Gas Plant Products (gal)	Royalties	319442.15
+2004	UT	Summit	49043	Oil	Condensate (bbl)	Royalties	9.47
+2004	UT	Summit	49043	Oil	Oil (bbl)	Royalties	51794.59
+2004	UT	Tooele	49045	Magnesium Chloride Brine	Magnesium Chloride Brine (ton)	Royalties	58204
+2004	UT	Tooele	49045	Manure Salts	Manure Salts (ton)	Royalties	6043
+2004	UT	Tooele	49045	Potash	Potash (ton)	Royalties	19335
+2004	UT	Tooele	49045	Salt	Salt (ton)	Royalties	9137
+2004	UT	Uintah	49047	Gas	Coal Bed Methane (mcf)	Royalties	359.51
+2004	UT	Uintah	49047	Gas	Processed (Residue) Gas (mcf)	Royalties	3802453.51
+2004	UT	Uintah	49047	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	95058822.83
+2004	UT	Uintah	49047	NGL	Gas Plant Products (gal)	Royalties	1722624.08
+2004	UT	Uintah	49047	Oil	Condensate (bbl)	Royalties	434063.81
+2004	UT	Uintah	49047	Oil	Oil (bbl)	Royalties	1898421.45
+2004	UT	Uintah	49047	Gilsonite	Gilsonite (ton)	Royalties	18458
+2005	UT	Beaver	49001	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds (klb)	Royalties	2290182691.15
+2005	UT	Carbon	49007	Coal	Coal (ton)	Royalties	8838443.63
+2005	UT	Carbon	49007	Gas	Coal Bed Methane (mcf)	Royalties	11297271.19
+2005	UT	Carbon	49007	Gas	Fuel Gas (mcf)	Royalties	25214.24
+2005	UT	Carbon	49007	Gas	Processed (Residue) Gas (mcf)	Royalties	50635.17
+2005	UT	Carbon	49007	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	14390534.69
+2005	UT	Carbon	49007	Oil	Oil (bbl)	Royalties	5726.16
+2005	UT	Daggett	49009	Gas	Processed (Residue) Gas (mcf)	Royalties	7585
+2005	UT	Daggett	49009	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1097556.72
+2005	UT	Daggett	49009	Oil	Condensate (bbl)	Royalties	478.76
+2005	UT	Duchesne	49013	Gas	Processed (Residue) Gas (mcf)	Royalties	273.98
+2005	UT	Duchesne	49013	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3649106.41
+2005	UT	Duchesne	49013	NGL	Gas Plant Products (gal)	Royalties	4263440.37
+2005	UT	Duchesne	49013	Oil	Oil (bbl)	Royalties	2103741.89
+2005	UT	Emery	49015	Coal	Coal (ton)	Royalties	3920056.86
+2005	UT	Emery	49015	Gas	Coal Bed Methane (mcf)	Royalties	331008.22
+2005	UT	Emery	49015	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3594874.63
+2005	UT	Emery	49015	Oil	Oil (bbl)	Royalties	3940.39
+2005	UT	Garfield	49017	Oil	Oil (bbl)	Royalties	197599.41
+2005	UT	Grand	49019	Gas	Processed (Residue) Gas (mcf)	Royalties	449912.36
+2005	UT	Grand	49019	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	4801124.61
+2005	UT	Grand	49019	NGL	Gas Plant Products (gal)	Royalties	127168.2
+2005	UT	Grand	49019	Oil	Condensate (bbl)	Royalties	1329.7
+2005	UT	Grand	49019	Oil	Oil (bbl)	Royalties	72987.01
+2005	UT	Juab	49023	Gas	Processed (Residue) Gas (mcf)	Royalties	4783.09
+2005	UT	Juab	49023	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	8737
+2005	UT	Juab	49023	NGL	Gas Plant Products (gal)	Royalties	633.06
+2005	UT	Piute	49031	Clay	Clay (ton)	Royalties	18094
+2005	UT	San Juan	49037	Gas	Processed (Residue) Gas (mcf)	Royalties	3007780.6
+2005	UT	San Juan	49037	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1362495.05
+2005	UT	San Juan	49037	NGL	Gas Plant Products (gal)	Royalties	29565525.39
+2005	UT	San Juan	49037	Oil	Condensate (bbl)	Royalties	46901.23
+2005	UT	San Juan	49037	Oil	Drip or Scrubber Condensate (bbl)	Royalties	529.9
+2005	UT	San Juan	49037	Oil	Oil (bbl)	Royalties	295723.46
+2005	UT	Sevier	49041	Coal	Coal (ton)	Royalties	7033682.52
+2005	UT	Sevier	49041	Oil	Oil (bbl)	Royalties	554998.7
+2005	UT	Summit	49043	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	217949.99
+2005	UT	Summit	49043	NGL	Gas Plant Products (gal)	Royalties	40057.69
+2005	UT	Summit	49043	Oil	Oil (bbl)	Royalties	47530.42
+2005	UT	Tooele	49045	Magnesium Chloride Brine	Magnesium Chloride Brine (ton)	Royalties	35054
+2005	UT	Tooele	49045	Manure Salts	Manure Salts (ton)	Royalties	8213
+2005	UT	Tooele	49045	Potash	Potash (ton)	Royalties	16068
+2005	UT	Tooele	49045	Salt	Salt (ton)	Royalties	8388
+2005	UT	Uintah	49047	Gas	Fuel Gas (mcf)	Royalties	271.28
+2005	UT	Uintah	49047	Gas	Processed (Residue) Gas (mcf)	Royalties	34535261.29
+2005	UT	Uintah	49047	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	99155873.11
+2005	UT	Uintah	49047	NGL	Gas Plant Products (gal)	Royalties	4612389.82
+2005	UT	Uintah	49047	Oil	Condensate (bbl)	Royalties	750373.66
+2005	UT	Uintah	49047	Oil	Oil (bbl)	Royalties	2150782.15
+2005	UT	Uintah	49047	Gilsonite	Gilsonite (ton)	Royalties	18728
+2006	UT	Beaver	49001	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds (klb)	Royalties	2350934232.59
+2006	UT	Carbon	49007	Coal	Coal (ton)	Royalties	8350378.58
+2006	UT	Carbon	49007	Gas	Coal Bed Methane (mcf)	Royalties	13130908.43
+2006	UT	Carbon	49007	Gas	Fuel Gas (mcf)	Royalties	22256.8
+2006	UT	Carbon	49007	Gas	Processed (Residue) Gas (mcf)	Royalties	1086545
+2006	UT	Carbon	49007	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	22366837.66
+2006	UT	Carbon	49007	Oil	Oil (bbl)	Royalties	24196.09
+2006	UT	Daggett	49009	Gas	Processed (Residue) Gas (mcf)	Royalties	3522
+2006	UT	Daggett	49009	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	914796.84
+2006	UT	Daggett	49009	Oil	Condensate (bbl)	Royalties	236.32
+2006	UT	Duchesne	49013	Gas	Processed (Residue) Gas (mcf)	Royalties	2103204.31
+2006	UT	Duchesne	49013	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1091786.52
+2006	UT	Duchesne	49013	NGL	Gas Plant Products (gal)	Royalties	3551734.83
+2006	UT	Duchesne	49013	Oil	Condensate (bbl)	Royalties	4889.1
+2006	UT	Duchesne	49013	Oil	Drip or Scrubber Condensate (bbl)	Royalties	3.79
+2006	UT	Duchesne	49013	Oil	Oil (bbl)	Royalties	2025723.48
+2006	UT	Emery	49015	Coal	Coal (ton)	Royalties	1790329.4
+2006	UT	Emery	49015	Gas	Coal Bed Methane (mcf)	Royalties	638341.62
+2006	UT	Emery	49015	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3417684.1
+2006	UT	Emery	49015	Oil	Oil (bbl)	Royalties	3164.09
+2006	UT	Garfield	49017	Oil	Oil (bbl)	Royalties	189655.05
+2006	UT	Grand	49019	Gas	Processed (Residue) Gas (mcf)	Royalties	556107.8
+2006	UT	Grand	49019	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	4742019.23
+2006	UT	Grand	49019	NGL	Gas Plant Products (gal)	Royalties	201043.39
+2006	UT	Grand	49019	Oil	Condensate (bbl)	Royalties	3699.45
+2006	UT	Grand	49019	Oil	Oil (bbl)	Royalties	67772.7
+2006	UT	Juab	49023	Gas	Processed (Residue) Gas (mcf)	Royalties	4207.63
+2006	UT	Juab	49023	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	7576
+2006	UT	Juab	49023	NGL	Gas Plant Products (gal)	Royalties	668.85
+2006	UT	Piute	49031	Clay	Clay (ton)	Royalties	21339
+2006	UT	San Juan	49037	Gas	Processed (Residue) Gas (mcf)	Royalties	2135854.56
+2006	UT	San Juan	49037	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1617522.32
+2006	UT	San Juan	49037	NGL	Gas Plant Products (gal)	Royalties	21596527.67
+2006	UT	San Juan	49037	Oil	Condensate (bbl)	Royalties	15488.57
+2006	UT	San Juan	49037	Oil	Oil (bbl)	Royalties	273249.11
+2006	UT	Sevier	49041	Coal	Coal (ton)	Royalties	6810715.02
+2006	UT	Sevier	49041	Oil	Oil (bbl)	Royalties	1579768.12
+2006	UT	Summit	49043	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	130539.62
+2006	UT	Summit	49043	NGL	Gas Plant Products (gal)	Royalties	288347.61
+2006	UT	Summit	49043	Oil	Oil (bbl)	Royalties	42935.55
+2006	UT	Tooele	49045	Magnesium Chloride Brine	Magnesium Chloride Brine (ton)	Royalties	41852
+2006	UT	Tooele	49045	Manure Salts	Manure Salts (ton)	Royalties	6078
+2006	UT	Tooele	49045	Potash	Potash (ton)	Royalties	15560
+2006	UT	Tooele	49045	Salt	Salt (ton)	Royalties	8100
+2006	UT	Uintah	49047	Gas	Coal Bed Methane (mcf)	Royalties	23314.08
+2006	UT	Uintah	49047	Gas	Fuel Gas (mcf)	Royalties	3782.24
+2006	UT	Uintah	49047	Gas	Processed (Residue) Gas (mcf)	Royalties	20887386.12
+2006	UT	Uintah	49047	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	128939510.7
+2006	UT	Uintah	49047	NGL	Gas Plant Products (gal)	Royalties	12737100.71
+2006	UT	Uintah	49047	Oil	Condensate (bbl)	Royalties	1135708.78
+2006	UT	Uintah	49047	Oil	Drip or Scrubber Condensate (bbl)	Royalties	929.19
+2006	UT	Uintah	49047	Oil	Oil (bbl)	Royalties	2241720.08
+2006	UT	Uintah	49047	Gilsonite	Gilsonite (ton)	Royalties	22161
+2007	UT	Beaver	49001	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds (klb)	Royalties	2046718554.09
+2007	UT	Carbon	49007	Coal	Coal (ton)	Royalties	5456503.07
+2007	UT	Carbon	49007	Gas	Coal Bed Methane (mcf)	Royalties	12559769.91
+2007	UT	Carbon	49007	Gas	Fuel Gas (mcf)	Royalties	31333.12
+2007	UT	Carbon	49007	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	34621960.69
+2007	UT	Carbon	49007	NGL	Gas Plant Products (gal)	Royalties	313.35
+2007	UT	Carbon	49007	Oil	Oil (bbl)	Royalties	31326.1
+2007	UT	Carbon	49007	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	132468.86
+2007	UT	Daggett	49009	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	414424.32
+2007	UT	Daggett	49009	Oil	Condensate (bbl)	Royalties	189.8
+2007	UT	Duchesne	49013	Gas	Coal Bed Methane (mcf)	Royalties	1661.28
+2007	UT	Duchesne	49013	Gas	Processed (Residue) Gas (mcf)	Royalties	3444603.92
+2007	UT	Duchesne	49013	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	319445.31
+2007	UT	Duchesne	49013	NGL	Gas Plant Products (gal)	Royalties	3555164.69
+2007	UT	Duchesne	49013	Oil	Condensate (bbl)	Royalties	9858.29
+2007	UT	Duchesne	49013	Oil	Drip or Scrubber Condensate (bbl)	Royalties	142.69
+2007	UT	Duchesne	49013	Oil	Oil (bbl)	Royalties	2823541.02
+2007	UT	Emery	49015	Coal	Coal (ton)	Royalties	1544530.83
+2007	UT	Emery	49015	Gas	Coal Bed Methane (mcf)	Royalties	709301.55
+2007	UT	Emery	49015	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	4327169.66
+2007	UT	Emery	49015	Oil	Oil (bbl)	Royalties	1369.79
+2007	UT	Garfield	49017	Oil	Oil (bbl)	Royalties	190713.18
+2007	UT	Grand	49019	Gas	Processed (Residue) Gas (mcf)	Royalties	894040.72
+2007	UT	Grand	49019	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	4055752.87
+2007	UT	Grand	49019	NGL	Gas Plant Products (gal)	Royalties	377184.02
+2007	UT	Grand	49019	Oil	Condensate (bbl)	Royalties	5570.93
+2007	UT	Grand	49019	Oil	Oil (bbl)	Royalties	85955.68
+2007	UT	Juab	49023	Gas	Processed (Residue) Gas (mcf)	Royalties	3197.07
+2007	UT	Juab	49023	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	5696
+2007	UT	Juab	49023	NGL	Gas Plant Products (gal)	Royalties	843.51
+2007	UT	Piute	49031	Clay	Clay (ton)	Royalties	33208
+2007	UT	San Juan	49037	Gas	Processed (Residue) Gas (mcf)	Royalties	1350157.5
+2007	UT	San Juan	49037	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2772413.7
+2007	UT	San Juan	49037	NGL	Gas Plant Products (gal)	Royalties	14534996.88
+2007	UT	San Juan	49037	Oil	Condensate (bbl)	Royalties	20775.18
+2007	UT	San Juan	49037	Oil	Oil (bbl)	Royalties	277473.58
+2007	UT	Sevier	49041	Coal	Coal (ton)	Royalties	6015180.1
+2007	UT	Sevier	49041	Oil	Oil (bbl)	Royalties	1386525.88
+2007	UT	Summit	49043	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	147394.33
+2007	UT	Summit	49043	NGL	Gas Plant Products (gal)	Royalties	230972.58
+2007	UT	Summit	49043	Oil	Oil (bbl)	Royalties	18854.94
+2007	UT	Tooele	49045	Magnesium Chloride Brine	Magnesium Chloride Brine (ton)	Royalties	39313
+2007	UT	Tooele	49045	Manure Salts	Manure Salts (ton)	Royalties	5745
+2007	UT	Tooele	49045	Potash	Potash (ton)	Royalties	27682
+2007	UT	Tooele	49045	Salt	Salt (ton)	Royalties	8048
+2007	UT	Uintah	49047	Gas	Coal Bed Methane (mcf)	Royalties	42844.16
+2007	UT	Uintah	49047	Gas	Fuel Gas (mcf)	Royalties	24905.04
+2007	UT	Uintah	49047	Gas	Processed (Residue) Gas (mcf)	Royalties	39430538.25
+2007	UT	Uintah	49047	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	119779199.58
+2007	UT	Uintah	49047	NGL	Gas Plant Products (gal)	Royalties	16072568.96
+2007	UT	Uintah	49047	Oil	Condensate (bbl)	Royalties	1602394.07
+2007	UT	Uintah	49047	Oil	Drip or Scrubber Condensate (bbl)	Royalties	594.01
+2007	UT	Uintah	49047	Oil	Oil (bbl)	Royalties	2149813.2
+2007	UT	Uintah	49047	Gilsonite	Gilsonite (ton)	Royalties	23342
+2008	UT	Beaver	49001	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds (klb)	Royalties	2468886992.11
+2008	UT	Carbon	49007	Coal	Coal (ton)	Royalties	7698210.48
+2008	UT	Carbon	49007	Gas	Coal Bed Methane (mcf)	Royalties	11419148.55
+2008	UT	Carbon	49007	Gas	Fuel Gas (mcf)	Royalties	25676.88
+2008	UT	Carbon	49007	Gas	Processed (Residue) Gas (mcf)	Royalties	18967678.4
+2008	UT	Carbon	49007	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	17943251.88
+2008	UT	Carbon	49007	NGL	Gas Plant Products (gal)	Royalties	235531.68
+2008	UT	Carbon	49007	Oil	Oil (bbl)	Royalties	41499
+2008	UT	Carbon	49007	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	1337740.91
+2008	UT	Daggett	49009	Gas	Processed (Residue) Gas (mcf)	Royalties	4212
+2008	UT	Daggett	49009	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	839895.96
+2008	UT	Daggett	49009	Oil	Condensate (bbl)	Royalties	1632.96
+2008	UT	Duchesne	49013	Gas	Coal Bed Methane (mcf)	Royalties	1844.96
+2008	UT	Duchesne	49013	Gas	Processed (Residue) Gas (mcf)	Royalties	3414918.22
+2008	UT	Duchesne	49013	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	80519.39
+2008	UT	Duchesne	49013	NGL	Gas Plant Products (gal)	Royalties	3724444.45
+2008	UT	Duchesne	49013	Oil	Condensate (bbl)	Royalties	8791.93
+2008	UT	Duchesne	49013	Oil	Drip or Scrubber Condensate (bbl)	Royalties	252.99
+2008	UT	Duchesne	49013	Oil	Oil (bbl)	Royalties	3372792.25
+2008	UT	Emery	49015	Coal	Coal (ton)	Royalties	1050607.89
+2008	UT	Emery	49015	Gas	Coal Bed Methane (mcf)	Royalties	865467.54
+2008	UT	Emery	49015	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	4651807.26
+2008	UT	Emery	49015	Oil	Oil (bbl)	Royalties	5957.89
+2008	UT	Garfield	49017	Oil	Oil (bbl)	Royalties	176952.78
+2008	UT	Grand	49019	Gas	Processed (Residue) Gas (mcf)	Royalties	1003294.7
+2008	UT	Grand	49019	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3370644.31
+2008	UT	Grand	49019	NGL	Gas Plant Products (gal)	Royalties	371982.11
+2008	UT	Grand	49019	Oil	Condensate (bbl)	Royalties	2658.96
+2008	UT	Grand	49019	Oil	Oil (bbl)	Royalties	196738.34
+2008	UT	Juab	49023	Gas	Processed (Residue) Gas (mcf)	Royalties	3665.24
+2008	UT	Juab	49023	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	6574
+2008	UT	Juab	49023	NGL	Gas Plant Products (gal)	Royalties	903.94
+2008	UT	Piute	49031	Clay	Clay (ton)	Royalties	25139
+2008	UT	San Juan	49037	Gas	Processed (Residue) Gas (mcf)	Royalties	1054666.23
+2008	UT	San Juan	49037	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3657617.62
+2008	UT	San Juan	49037	NGL	Gas Plant Products (gal)	Royalties	11713211.33
+2008	UT	San Juan	49037	Oil	Condensate (bbl)	Royalties	19522.92
+2008	UT	San Juan	49037	Oil	Drip or Scrubber Condensate (bbl)	Royalties	206.61
+2008	UT	San Juan	49037	Oil	Oil (bbl)	Royalties	263546.51
+2008	UT	San Pete	49039	Oil	Oil (bbl)	Royalties	4270.96
+2008	UT	Sevier	49041	Coal	Coal (ton)	Royalties	5701920.63
+2008	UT	Sevier	49041	Oil	Oil (bbl)	Royalties	1645205.7
+2008	UT	Summit	49043	Gas	Processed (Residue) Gas (mcf)	Royalties	29907.37
+2008	UT	Summit	49043	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	113277
+2008	UT	Summit	49043	NGL	Gas Plant Products (gal)	Royalties	220847.74
+2008	UT	Summit	49043	Oil	Oil (bbl)	Royalties	24086.47
+2008	UT	Tooele	49045	Magnesium Chloride Brine	Magnesium Chloride Brine (ton)	Royalties	55234
+2008	UT	Tooele	49045	Manure Salts	Manure Salts (ton)	Royalties	3159
+2008	UT	Tooele	49045	Potash	Potash (ton)	Royalties	24232
+2008	UT	Tooele	49045	Salt	Salt (ton)	Royalties	11589
+2008	UT	Uintah	49047	Gas	Coal Bed Methane (mcf)	Royalties	168884.4
+2008	UT	Uintah	49047	Gas	Fuel Gas (mcf)	Royalties	42026.56
+2008	UT	Uintah	49047	Gas	Processed (Residue) Gas (mcf)	Royalties	159182934
+2008	UT	Uintah	49047	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	45804947.21
+2008	UT	Uintah	49047	NGL	Gas Plant Products (gal)	Royalties	53728906.75
+2008	UT	Uintah	49047	Oil	Condensate (bbl)	Royalties	2354639.93
+2008	UT	Uintah	49047	Oil	Drip or Scrubber Condensate (bbl)	Royalties	2392.26
+2008	UT	Uintah	49047	Oil	Oil (bbl)	Royalties	2200785.12
+2008	UT	Uintah	49047	Gilsonite	Gilsonite (ton)	Royalties	27682
+2009	UT	Beaver	49001	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds (klb)	Royalties	2827213957.69
+2009	UT	Carbon	49007	Coal	Coal (ton)	Royalties	5467342.29
+2009	UT	Carbon	49007	Gas	Coal Bed Methane (mcf)	Royalties	12545765.22
+2009	UT	Carbon	49007	Gas	Fuel Gas (mcf)	Royalties	13368.4
+2009	UT	Carbon	49007	Gas	Processed (Residue) Gas (mcf)	Royalties	34888672.8
+2009	UT	Carbon	49007	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	6585298.4
+2009	UT	Carbon	49007	NGL	Gas Plant Products (gal)	Royalties	4021729.68
+2009	UT	Carbon	49007	Oil	Oil (bbl)	Royalties	59713.2
+2009	UT	Carbon	49007	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	1018462.46
+2009	UT	Daggett	49009	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	471916.2
+2009	UT	Duchesne	49013	Gas	Coal Bed Methane (mcf)	Royalties	286.72
+2009	UT	Duchesne	49013	Gas	Processed (Residue) Gas (mcf)	Royalties	4663517.25
+2009	UT	Duchesne	49013	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	128519.82
+2009	UT	Duchesne	49013	NGL	Gas Plant Products (gal)	Royalties	4415169.63
+2009	UT	Duchesne	49013	Oil	Condensate (bbl)	Royalties	1163.7
+2009	UT	Duchesne	49013	Oil	Drip or Scrubber Condensate (bbl)	Royalties	353.94
+2009	UT	Duchesne	49013	Oil	Oil (bbl)	Royalties	3916130.04
+2009	UT	Emery	49015	Coal	Coal (ton)	Royalties	838216.19
+2009	UT	Emery	49015	Gas	Coal Bed Methane (mcf)	Royalties	2137993.97
+2009	UT	Emery	49015	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3496610.21
+2009	UT	Emery	49015	Oil	Oil (bbl)	Royalties	11274.55
+2009	UT	Garfield	49017	Oil	Oil (bbl)	Royalties	175645.46
+2009	UT	Grand	49019	Gas	Processed (Residue) Gas (mcf)	Royalties	932033.21
+2009	UT	Grand	49019	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2508038.39
+2009	UT	Grand	49019	NGL	Gas Plant Products (gal)	Royalties	343840.73
+2009	UT	Grand	49019	Oil	Condensate (bbl)	Royalties	1047.3
+2009	UT	Grand	49019	Oil	Oil (bbl)	Royalties	117222.56
+2009	UT	Juab	49023	Gas	Processed (Residue) Gas (mcf)	Royalties	1326.08
+2009	UT	Juab	49023	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2422
+2009	UT	Juab	49023	NGL	Gas Plant Products (gal)	Royalties	479.99
+2009	UT	Piute	49031	Clay	Clay (ton)	Royalties	7021
+2009	UT	San Juan	49037	Gas	Processed (Residue) Gas (mcf)	Royalties	748498.76
+2009	UT	San Juan	49037	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2426389.41
+2009	UT	San Juan	49037	NGL	Gas Plant Products (gal)	Royalties	8188048.69
+2009	UT	San Juan	49037	Oil	Condensate (bbl)	Royalties	11883.96
+2009	UT	San Juan	49037	Oil	Drip or Scrubber Condensate (bbl)	Royalties	174.74
+2009	UT	San Juan	49037	Oil	Oil (bbl)	Royalties	272320.05
+2009	UT	San Pete	49039	Oil	Oil (bbl)	Royalties	17098.88
+2009	UT	Sevier	49041	Coal	Coal (ton)	Royalties	3716142.53
+2009	UT	Sevier	49041	Oil	Oil (bbl)	Royalties	2358293.1
+2009	UT	Summit	49043	Gas	Processed (Residue) Gas (mcf)	Royalties	3309.01
+2009	UT	Summit	49043	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	90187.61
+2009	UT	Summit	49043	NGL	Gas Plant Products (gal)	Royalties	26398.12
+2009	UT	Summit	49043	Oil	Oil (bbl)	Royalties	-1001.32
+2009	UT	Tooele	49045	Magnesium Chloride Brine	Magnesium Chloride Brine (ton)	Royalties	55478
+2009	UT	Tooele	49045	Manure Salts	Manure Salts (ton)	Royalties	398
+2009	UT	Tooele	49045	Potash	Potash (ton)	Royalties	13429
+2009	UT	Tooele	49045	Salt	Salt (ton)	Royalties	19733
+2009	UT	Uintah	49047	Gas	Coal Bed Methane (mcf)	Royalties	232089.52
+2009	UT	Uintah	49047	Gas	Fuel Gas (mcf)	Royalties	17358.88
+2009	UT	Uintah	49047	Gas	Processed (Residue) Gas (mcf)	Royalties	192536197.21
+2009	UT	Uintah	49047	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	15385442.65
+2009	UT	Uintah	49047	NGL	Gas Plant Products (gal)	Royalties	149441205.18
+2009	UT	Uintah	49047	Oil	Condensate (bbl)	Royalties	2197103.31
+2009	UT	Uintah	49047	Oil	Drip or Scrubber Condensate (bbl)	Royalties	2569.33
+2009	UT	Uintah	49047	Oil	Oil (bbl)	Royalties	2326695.4
+2009	UT	Uintah	49047	Gilsonite	Gilsonite (ton)	Royalties	16475
+2010	UT	Beaver	49001	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds (klb)	Royalties	2670508902.54
+2010	UT	Carbon	49007	Coal	Coal (ton)	Royalties	6105046.21
+2010	UT	Carbon	49007	Gas	Coal Bed Methane (mcf)	Royalties	12182486.03
+2010	UT	Carbon	49007	Gas	Fuel Gas (mcf)	Royalties	3619.44
+2010	UT	Carbon	49007	Gas	Processed (Residue) Gas (mcf)	Royalties	26989575.92
+2010	UT	Carbon	49007	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	5960289.76
+2010	UT	Carbon	49007	NGL	Gas Plant Products (gal)	Royalties	4283396.16
+2010	UT	Carbon	49007	Oil	Oil (bbl)	Royalties	37305.12
+2010	UT	Carbon	49007	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	1685774.1
+2010	UT	Daggett	49009	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	826031.56
+2010	UT	Duchesne	49013	Gas	Fuel Gas (mcf)	Royalties	11364.22
+2010	UT	Duchesne	49013	Gas	Processed (Residue) Gas (mcf)	Royalties	4161253.6
+2010	UT	Duchesne	49013	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	307710.59
+2010	UT	Duchesne	49013	NGL	Gas Plant Products (gal)	Royalties	6034521.59
+2010	UT	Duchesne	49013	Oil	Condensate (bbl)	Royalties	17.36
+2010	UT	Duchesne	49013	Oil	Drip or Scrubber Condensate (bbl)	Royalties	242.85
+2010	UT	Duchesne	49013	Oil	Oil (bbl)	Royalties	4254305.46
+2010	UT	Emery	49015	Coal	Coal (ton)	Royalties	365533.44
+2010	UT	Emery	49015	Gas	Coal Bed Methane (mcf)	Royalties	1829748.36
+2010	UT	Emery	49015	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3106264.79
+2010	UT	Emery	49015	Oil	Oil (bbl)	Royalties	6154.91
+2010	UT	Garfield	49017	Oil	Oil (bbl)	Royalties	168467.22
+2010	UT	Grand	49019	Gas	Coal Bed Methane (mcf)	Royalties	9941.6
+2010	UT	Grand	49019	Gas	Processed (Residue) Gas (mcf)	Royalties	741123.33
+2010	UT	Grand	49019	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2156066.32
+2010	UT	Grand	49019	NGL	Gas Plant Products (gal)	Royalties	234292.09
+2010	UT	Grand	49019	Oil	Condensate (bbl)	Royalties	10684.24
+2010	UT	Grand	49019	Oil	Oil (bbl)	Royalties	75784.87
+2010	UT	Juab	49023	Gas	Processed (Residue) Gas (mcf)	Royalties	4150.13
+2010	UT	Juab	49023	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	7463
+2010	UT	Juab	49023	NGL	Gas Plant Products (gal)	Royalties	1517.56
+2010	UT	Piute	49031	Clay	Clay (ton)	Royalties	17144
+2010	UT	San Juan	49037	Gas	Processed (Residue) Gas (mcf)	Royalties	1888044.09
+2010	UT	San Juan	49037	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1033571.18
+2010	UT	San Juan	49037	NGL	Gas Plant Products (gal)	Royalties	10605668.91
+2010	UT	San Juan	49037	Oil	Condensate (bbl)	Royalties	13262.53
+2010	UT	San Juan	49037	Oil	Drip or Scrubber Condensate (bbl)	Royalties	1371.33
+2010	UT	San Juan	49037	Oil	Oil (bbl)	Royalties	306598.19
+2010	UT	San Pete	49039	Oil	Oil (bbl)	Royalties	35801.44
+2010	UT	Sevier	49041	Coal	Coal (ton)	Royalties	2209884.35
+2010	UT	Sevier	49041	Oil	Oil (bbl)	Royalties	2041018.22
+2010	UT	Summit	49043	Gas	Processed (Residue) Gas (mcf)	Royalties	4216.32
+2010	UT	Summit	49043	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	101150.72
+2010	UT	Summit	49043	NGL	Gas Plant Products (gal)	Royalties	1992.13
+2010	UT	Summit	49043	Oil	Oil (bbl)	Royalties	13348.25
+2010	UT	Tooele	49045	Magnesium Chloride Brine	Magnesium Chloride Brine (ton)	Royalties	67218
+2010	UT	Tooele	49045	Manure Salts	Manure Salts (ton)	Royalties	589
+2010	UT	Tooele	49045	Potash	Potash (ton)	Royalties	22763
+2010	UT	Tooele	49045	Salt	Salt (ton)	Royalties	13166
+2010	UT	Uintah	49047	Gas	Coal Bed Methane (mcf)	Royalties	440957.96
+2010	UT	Uintah	49047	Gas	Fuel Gas (mcf)	Royalties	149725.59
+2010	UT	Uintah	49047	Gas	Processed (Residue) Gas (mcf)	Royalties	189832314.36
+2010	UT	Uintah	49047	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	12002240.33
+2010	UT	Uintah	49047	NGL	Gas Plant Products (gal)	Royalties	179275878.6
+2010	UT	Uintah	49047	Oil	Condensate (bbl)	Royalties	1899031.97
+2010	UT	Uintah	49047	Oil	Drip or Scrubber Condensate (bbl)	Royalties	855.53
+2010	UT	Uintah	49047	Oil	Oil (bbl)	Royalties	2608243.13
+2010	UT	Uintah	49047	Gilsonite	Gilsonite (ton)	Royalties	26069
+2010	UT	Utah	49049	Gas	Processed (Residue) Gas (mcf)	Royalties	61661.25
+2010	UT	Utah	49049	NGL	Gas Plant Products (gal)	Royalties	332186.71
+2010	UT	Utah	49049	Oil	Condensate (bbl)	Royalties	862.28
+2011	UT	Beaver	49001	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds (klb)	Royalties	2554615747.28
+2011	UT	Carbon	49007	Coal	Coal (ton)	Royalties	5293984
+2011	UT	Carbon	49007	Gas	Coal Bed Methane (mcf)	Royalties	11868207.26
+2011	UT	Carbon	49007	Gas	Processed (Residue) Gas (mcf)	Royalties	36679200.08
+2011	UT	Carbon	49007	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	5297239.46
+2011	UT	Carbon	49007	NGL	Gas Plant Products (gal)	Royalties	8977603.52
+2011	UT	Carbon	49007	Oil	Oil (bbl)	Royalties	61006
+2011	UT	Carbon	49007	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	1734108.57
+2011	UT	Daggett	49009	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	725169.96
+2011	UT	Daggett	49009	Oil	Condensate (bbl)	Royalties	238.32
+2011	UT	Duchesne	49013	Gas	Fuel Gas (mcf)	Royalties	8654.58
+2011	UT	Duchesne	49013	Gas	Processed (Residue) Gas (mcf)	Royalties	3448065.36
+2011	UT	Duchesne	49013	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	231674.33
+2011	UT	Duchesne	49013	NGL	Gas Plant Products (gal)	Royalties	6195556.45
+2011	UT	Duchesne	49013	Oil	Drip or Scrubber Condensate (bbl)	Royalties	505.87
+2011	UT	Duchesne	49013	Oil	Oil (bbl)	Royalties	3776200.86
+2011	UT	Emery	49015	Coal	Coal (ton)	Royalties	2400044.36
+2011	UT	Emery	49015	Gas	Coal Bed Methane (mcf)	Royalties	1487038.97
+2011	UT	Emery	49015	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2572245.33
+2011	UT	Emery	49015	Oil	Condensate (bbl)	Royalties	85.91
+2011	UT	Emery	49015	Oil	Oil (bbl)	Royalties	2800.94
+2011	UT	Garfield	49017	Oil	Oil (bbl)	Royalties	167562.23
+2011	UT	Grand	49019	Gas	Coal Bed Methane (mcf)	Royalties	22662.4
+2011	UT	Grand	49019	Gas	Processed (Residue) Gas (mcf)	Royalties	690262.94
+2011	UT	Grand	49019	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2074782.96
+2011	UT	Grand	49019	NGL	Gas Plant Products (gal)	Royalties	255927.28
+2011	UT	Grand	49019	Oil	Condensate (bbl)	Royalties	9194.95
+2011	UT	Grand	49019	Oil	Oil (bbl)	Royalties	60503.47
+2011	UT	Juab	49023	Gas	Processed (Residue) Gas (mcf)	Royalties	3624.22
+2011	UT	Juab	49023	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	6639.5
+2011	UT	Juab	49023	NGL	Gas Plant Products (gal)	Royalties	1472.83
+2011	UT	Piute	49031	Clay	Clay (ton)	Royalties	20788
+2011	UT	San Juan	49037	Gas	Gas Lost - Flared or Vented (mcf)	Royalties	445
+2011	UT	San Juan	49037	Gas	Processed (Residue) Gas (mcf)	Royalties	1971894.63
+2011	UT	San Juan	49037	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	851489.83
+2011	UT	San Juan	49037	NGL	Gas Plant Products (gal)	Royalties	11784611.16
+2011	UT	San Juan	49037	Oil	Condensate (bbl)	Royalties	127107.3
+2011	UT	San Juan	49037	Oil	Oil (bbl)	Royalties	346543.68
+2011	UT	San Pete	49039	Oil	Oil (bbl)	Royalties	13378.24
+2011	UT	Sevier	49041	Coal	Coal (ton)	Royalties	1672686.64
+2011	UT	Sevier	49041	Oil	Oil (bbl)	Royalties	1970211.02
+2011	UT	Summit	49043	Gas	Processed (Residue) Gas (mcf)	Royalties	87.76
+2011	UT	Summit	49043	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	109790.64
+2011	UT	Summit	49043	Oil	Oil (bbl)	Royalties	13336.38
+2011	UT	Tooele	49045	Magnesium Chloride Brine	Magnesium Chloride Brine (ton)	Royalties	73522
+2011	UT	Tooele	49045	Manure Salts	Manure Salts (ton)	Royalties	684
+2011	UT	Tooele	49045	Potash	Potash (ton)	Royalties	23387
+2011	UT	Tooele	49045	Salt	Salt (ton)	Royalties	17635
+2011	UT	Uintah	49047	Gas	Coal Bed Methane (mcf)	Royalties	483973.11
+2011	UT	Uintah	49047	Gas	Fuel Gas (mcf)	Royalties	155151.81
+2011	UT	Uintah	49047	Gas	Processed (Residue) Gas (mcf)	Royalties	200216163.39
+2011	UT	Uintah	49047	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	5672120.5
+2011	UT	Uintah	49047	NGL	Gas Plant Products (gal)	Royalties	255574991.3
+2011	UT	Uintah	49047	Oil	Condensate (bbl)	Royalties	1850363.87
+2011	UT	Uintah	49047	Oil	Drip or Scrubber Condensate (bbl)	Royalties	2481.99
+2011	UT	Uintah	49047	Oil	Oil (bbl)	Royalties	2354913.89
+2011	UT	Uintah	49047	Gilsonite	Gilsonite (ton)	Royalties	23433
+2011	UT	Utah	49049	Gas	Processed (Residue) Gas (mcf)	Royalties	139870.74
+2011	UT	Utah	49049	NGL	Gas Plant Products (gal)	Royalties	669983.79
+2011	UT	Utah	49049	Oil	Condensate (bbl)	Royalties	6239.63
+2012	UT	Beaver	49001	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds (klb)	Royalties	2453647854.06
+2012	UT	Carbon	49007	Coal	Coal (ton)	Royalties	3620650
+2012	UT	Carbon	49007	Gas	Coal Bed Methane (mcf)	Royalties	10928094.03
+2012	UT	Carbon	49007	Gas	Processed (Residue) Gas (mcf)	Royalties	41486135.92
+2012	UT	Carbon	49007	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	4752620.55
+2012	UT	Carbon	49007	NGL	Gas Plant Products (gal)	Royalties	9621943.04
+2012	UT	Carbon	49007	Oil	Oil (bbl)	Royalties	71756.4
+2012	UT	Carbon	49007	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	906939.56
+2012	UT	Daggett	49009	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	441134.68
+2012	UT	Daggett	49009	Oil	Condensate (bbl)	Royalties	219.08
+2012	UT	Duchesne	49013	Gas	Fuel Gas (mcf)	Royalties	7828.02
+2012	UT	Duchesne	49013	Gas	Gas Lost - Flared or Vented (mcf)	Royalties	4249
+2012	UT	Duchesne	49013	Gas	Processed (Residue) Gas (mcf)	Royalties	3540433.36
+2012	UT	Duchesne	49013	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	186381.27
+2012	UT	Duchesne	49013	NGL	Gas Plant Products (gal)	Royalties	6422726.73
+2012	UT	Duchesne	49013	Oil	Condensate (bbl)	Royalties	1298.56
+2012	UT	Duchesne	49013	Oil	Drip or Scrubber Condensate (bbl)	Royalties	8638.83
+2012	UT	Duchesne	49013	Oil	Oil (bbl)	Royalties	4114148.35
+2012	UT	Emery	49015	Coal	Coal (ton)	Royalties	4445148.01
+2012	UT	Emery	49015	Gas	Coal Bed Methane (mcf)	Royalties	1205131.43
+2012	UT	Emery	49015	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2308509.52
+2012	UT	Emery	49015	Oil	Oil (bbl)	Royalties	2034
+2012	UT	Garfield	49017	Oil	Oil (bbl)	Royalties	155544.82
+2012	UT	Grand	49019	Gas	Coal Bed Methane (mcf)	Royalties	31848.64
+2012	UT	Grand	49019	Gas	Processed (Residue) Gas (mcf)	Royalties	749970.17
+2012	UT	Grand	49019	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2053947.66
+2012	UT	Grand	49019	NGL	Gas Plant Products (gal)	Royalties	276799.28
+2012	UT	Grand	49019	Oil	Condensate (bbl)	Royalties	8477.07
+2012	UT	Grand	49019	Oil	Oil (bbl)	Royalties	286689.46
+2012	UT	Juab	49023	Gas	Processed (Residue) Gas (mcf)	Royalties	3752.19
+2012	UT	Juab	49023	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	6855.5
+2012	UT	Juab	49023	NGL	Gas Plant Products (gal)	Royalties	1590.79
+2012	UT	Piute	49031	Clay	Clay (ton)	Royalties	29990
+2012	UT	San Juan	49037	Gas	Processed (Residue) Gas (mcf)	Royalties	1508425.55
+2012	UT	San Juan	49037	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1003073.95
+2012	UT	San Juan	49037	NGL	Gas Plant Products (gal)	Royalties	9263874.03
+2012	UT	San Juan	49037	Oil	Condensate (bbl)	Royalties	95117.14
+2012	UT	San Juan	49037	Oil	Drip or Scrubber Condensate (bbl)	Royalties	318.1
+2012	UT	San Juan	49037	Oil	Oil (bbl)	Royalties	355022.21
+2012	UT	Sevier	49041	Coal	Coal (ton)	Royalties	5327116.99
+2012	UT	Sevier	49041	Oil	Oil (bbl)	Royalties	1737182.08
+2012	UT	Summit	49043	Gas	Processed (Residue) Gas (mcf)	Royalties	18.77
+2012	UT	Summit	49043	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	89271.94
+2012	UT	Summit	49043	Oil	Oil (bbl)	Royalties	13271.8
+2012	UT	Tooele	49045	Magnesium Chloride Brine	Magnesium Chloride Brine (ton)	Royalties	70061
+2012	UT	Tooele	49045	Manure Salts	Manure Salts (ton)	Royalties	453
+2012	UT	Tooele	49045	Potash	Potash (ton)	Royalties	22811
+2012	UT	Tooele	49045	Salt	Salt (ton)	Royalties	16220
+2012	UT	Uintah	49047	Gas	Coal Bed Methane (mcf)	Royalties	439466.02
+2012	UT	Uintah	49047	Gas	Fuel Gas (mcf)	Royalties	140355.56
+2012	UT	Uintah	49047	Gas	Processed (Residue) Gas (mcf)	Royalties	220363610.59
+2012	UT	Uintah	49047	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	5027321
+2012	UT	Uintah	49047	NGL	Gas Plant Products (gal)	Royalties	278261196.61
+2012	UT	Uintah	49047	Oil	Condensate (bbl)	Royalties	1823884.97
+2012	UT	Uintah	49047	Oil	Drip or Scrubber Condensate (bbl)	Royalties	3698.92
+2012	UT	Uintah	49047	Oil	Oil (bbl)	Royalties	2459919.07
+2012	UT	Uintah	49047	Gilsonite	Gilsonite (ton)	Royalties	32243
+2012	UT	Utah	49049	Gas	Processed (Residue) Gas (mcf)	Royalties	120171.2
+2012	UT	Utah	49049	NGL	Gas Plant Products (gal)	Royalties	498730.02
+2012	UT	Utah	49049	Oil	Condensate (bbl)	Royalties	10534.7
+2013	UT	Beaver	49001	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	9908211.21
+2013	UT	Beaver	49001	Geothermal	Geothermal - Electrical Generation, Thousands of Pounds (klb)	Royalties	2316266257.97
+2013	UT	Carbon	49007	Coal	Coal (ton)	Royalties	4803086
+2013	UT	Carbon	49007	Gas	Coal Bed Methane (mcf)	Royalties	9344670.24
+2013	UT	Carbon	49007	Gas	Processed (Residue) Gas (mcf)	Royalties	17887540.72
+2013	UT	Carbon	49007	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	14720540.87
+2013	UT	Carbon	49007	NGL	Gas Plant Products (gal)	Royalties	4236211.52
+2013	UT	Carbon	49007	Oil	Oil (bbl)	Royalties	35691.6
+2013	UT	Carbon	49007	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	496626.74
+2013	UT	Daggett	49009	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	294728
+2013	UT	Daggett	49009	Oil	Condensate (bbl)	Royalties	232.48
+2013	UT	Duchesne	49013	Gas	Fuel Gas (mcf)	Royalties	194128
+2013	UT	Duchesne	49013	Gas	Gas Lost - Flared or Vented (mcf)	Royalties	15504
+2013	UT	Duchesne	49013	Gas	Processed (Residue) Gas (mcf)	Royalties	3201669.87
+2013	UT	Duchesne	49013	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	160674.42
+2013	UT	Duchesne	49013	NGL	Gas Plant Products (gal)	Royalties	8261059.04
+2013	UT	Duchesne	49013	Oil	Condensate (bbl)	Royalties	6133.28
+2013	UT	Duchesne	49013	Oil	Drip or Scrubber Condensate (bbl)	Royalties	24468.69
+2013	UT	Duchesne	49013	Oil	Oil (bbl)	Royalties	4426746.66
+2013	UT	Duchesne	49013	Oil	Other Liquid Hydrocarbons (bbl)	Royalties	21.97
+2013	UT	Emery	49015	Coal	Coal (ton)	Royalties	3397126.07
+2013	UT	Emery	49015	Gas	Coal Bed Methane (mcf)	Royalties	1196902.76
+2013	UT	Emery	49015	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2174900.49
+2013	UT	Emery	49015	Oil	Oil (bbl)	Royalties	1719.16
+2013	UT	Garfield	49017	Oil	Oil (bbl)	Royalties	152449.65
+2013	UT	Grand	49019	Gas	Coal Bed Methane (mcf)	Royalties	4681.84
+2013	UT	Grand	49019	Gas	Fuel Gas (mcf)	Royalties	6166.31
+2013	UT	Grand	49019	Gas	Processed (Residue) Gas (mcf)	Royalties	1391754.5
+2013	UT	Grand	49019	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1322291.68
+2013	UT	Grand	49019	NGL	Gas Plant Products (gal)	Royalties	443413.54
+2013	UT	Grand	49019	Oil	Condensate (bbl)	Royalties	6712.44
+2013	UT	Grand	49019	Oil	Oil (bbl)	Royalties	853158.28
+2013	UT	Juab	49023	Gas	Processed (Residue) Gas (mcf)	Royalties	3154.61
+2013	UT	Juab	49023	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	5849.5
+2013	UT	Juab	49023	NGL	Gas Plant Products (gal)	Royalties	1324.6
+2013	UT	Millard	49027	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	3078555.18
+2013	UT	Piute	49031	Clay	Clay (ton)	Royalties	28333
+2013	UT	San Juan	49037	Gas	Gas Lost - Flared or Vented (mcf)	Royalties	701.01
+2013	UT	San Juan	49037	Gas	Processed (Residue) Gas (mcf)	Royalties	772857.45
+2013	UT	San Juan	49037	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	698862.43
+2013	UT	San Juan	49037	NGL	Gas Plant Products (gal)	Royalties	3382221.85
+2013	UT	San Juan	49037	Oil	Condensate (bbl)	Royalties	61454.34
+2013	UT	San Juan	49037	Oil	Drip or Scrubber Condensate (bbl)	Royalties	5.37
+2013	UT	San Juan	49037	Oil	Oil (bbl)	Royalties	363605.82
+2013	UT	Sevier	49041	Coal	Coal (ton)	Royalties	6297253.93
+2013	UT	Sevier	49041	Oil	Oil (bbl)	Royalties	1474320.42
+2013	UT	Summit	49043	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	90832.03
+2013	UT	Summit	49043	Oil	Oil (bbl)	Royalties	28644.78
+2013	UT	Tooele	49045	Magnesium Chloride Brine	Magnesium Chloride Brine (ton)	Royalties	61077
+2013	UT	Tooele	49045	Potash	Potash (ton)	Royalties	25781
+2013	UT	Tooele	49045	Salt	Salt (ton)	Royalties	15364
+2013	UT	Uintah	49047	Gas	Coal Bed Methane (mcf)	Royalties	47245.4
+2013	UT	Uintah	49047	Gas	Fuel Gas (mcf)	Royalties	3076.48
+2013	UT	Uintah	49047	Gas	Processed (Residue) Gas (mcf)	Royalties	206108231.65
+2013	UT	Uintah	49047	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	4447518.41
+2013	UT	Uintah	49047	NGL	Gas Plant Products (gal)	Royalties	272043443.97
+2013	UT	Uintah	49047	Oil	Condensate (bbl)	Royalties	1647607.81
+2013	UT	Uintah	49047	Oil	Drip or Scrubber Condensate (bbl)	Royalties	7311.32
+2013	UT	Uintah	49047	Oil	Inlet Scrubber (bbl)	Royalties	122969.09
+2013	UT	Uintah	49047	Oil	Oil (bbl)	Royalties	2991973.04
+2013	UT	Uintah	49047	Oil	Other Liquid Hydrocarbons (bbl)	Royalties	0.02
+2013	UT	Uintah	49047	Gilsonite	Gilsonite (ton)	Royalties	24661

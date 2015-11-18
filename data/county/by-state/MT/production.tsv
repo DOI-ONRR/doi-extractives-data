@@ -1,0 +1,641 @@
+Year	State	County	FIPS	Commodity	Product	Type	Volume
+2004	MT	Big Horn	30003	Coal	Coal (ton)	Royalties	16395909
+2004	MT	Big Horn	30003	Gas	Coal Bed Methane (mcf)	Royalties	2522194
+2004	MT	Blaine	30005	Gas	Fuel Gas (mcf)	Royalties	617.91
+2004	MT	Blaine	30005	Gas	Processed (Residue) Gas (mcf)	Royalties	106243
+2004	MT	Blaine	30005	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3065538.97
+2004	MT	Blaine	30005	NGL	Gas Plant Products (gal)	Royalties	1588.42
+2004	MT	Blaine	30005	Oil	Oil (bbl)	Royalties	43514.89
+2004	MT	Carbon	30009	Gas	Processed (Residue) Gas (mcf)	Royalties	17763
+2004	MT	Carbon	30009	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	134879.7
+2004	MT	Carbon	30009	NGL	Gas Plant Products (gal)	Royalties	1825441.68
+2004	MT	Carbon	30009	Oil	Condensate (bbl)	Royalties	307.04
+2004	MT	Carbon	30009	Oil	Oil (bbl)	Royalties	283592.57
+2004	MT	Carbon	30009	Sulfur	Sulfur (lton)	Royalties	1866.43
+2004	MT	Carter	30011	Oil	Oil (bbl)	Royalties	562
+2004	MT	Chouteau	30015	Gas	Fuel Gas (mcf)	Royalties	341.55
+2004	MT	Chouteau	30015	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	373911.21
+2004	MT	Chouteau	30015	NGL	Gas Plant Products (gal)	Royalties	20302.34
+2004	MT	Custer	30017	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	45134.27
+2004	MT	Dawson	30021	Gas	Processed (Residue) Gas (mcf)	Royalties	37.72
+2004	MT	Dawson	30021	NGL	Gas Plant Products (gal)	Royalties	4227.59
+2004	MT	Dawson	30021	Oil	Oil (bbl)	Royalties	326555.53
+2004	MT	Fallon	30025	Gas	Processed (Residue) Gas (mcf)	Royalties	132586.88
+2004	MT	Fallon	30025	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	5829800.42
+2004	MT	Fallon	30025	NGL	Gas Plant Products (gal)	Royalties	1458467.76
+2004	MT	Fallon	30025	Oil	Drip or Scrubber Condensate (bbl)	Royalties	599.29
+2004	MT	Fallon	30025	Oil	Oil (bbl)	Royalties	2073196.24
+2004	MT	Fergus	30027	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	10294
+2004	MT	Garfield	30033	Oil	Oil (bbl)	Royalties	3678.05
+2004	MT	Glacier	30035	Gas	Processed (Residue) Gas (mcf)	Royalties	11020.5
+2004	MT	Glacier	30035	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	19464.42
+2004	MT	Glacier	30035	NGL	Gas Plant Products (gal)	Royalties	747.43
+2004	MT	Glacier	30035	Oil	Oil (bbl)	Royalties	5603.74
+2004	MT	Hill	30041	Gas	Fuel Gas (mcf)	Royalties	553.66
+2004	MT	Hill	30041	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	641977.49
+2004	MT	Liberty	30051	Gas	Processed (Residue) Gas (mcf)	Royalties	187.9
+2004	MT	Liberty	30051	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	284795.59
+2004	MT	Liberty	30051	Oil	Oil (bbl)	Royalties	5093.14
+2004	MT	Musselshell	30065	Oil	Oil (bbl)	Royalties	3719.35
+2004	MT	Petroleum	30069	Oil	Oil (bbl)	Royalties	14664.3
+2004	MT	Phillips	30071	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	11174489.89
+2004	MT	Pondera	30073	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	13926.54
+2004	MT	Powder River	30075	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	9679.5
+2004	MT	Powder River	30075	Oil	Oil (bbl)	Royalties	56875.62
+2004	MT	Prairie	30079	Gas	Processed (Residue) Gas (mcf)	Royalties	786.84
+2004	MT	Prairie	30079	NGL	Gas Plant Products (gal)	Royalties	64227.6
+2004	MT	Prairie	30079	Oil	Oil (bbl)	Royalties	121004.38
+2004	MT	Richland	30083	Coal	Coal (ton)	Royalties	149778
+2004	MT	Richland	30083	Gas	Processed (Residue) Gas (mcf)	Royalties	12536.22
+2004	MT	Richland	30083	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	114983.09
+2004	MT	Richland	30083	NGL	Gas Plant Products (gal)	Royalties	66.43
+2004	MT	Richland	30083	Oil	Condensate (bbl)	Royalties	32966.97
+2004	MT	Richland	30083	Oil	Drip or Scrubber Condensate (bbl)	Royalties	0.05
+2004	MT	Richland	30083	Oil	Oil (bbl)	Royalties	282607.63
+2004	MT	Roosevelt	30085	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	4118.37
+2004	MT	Roosevelt	30085	Oil	Oil (bbl)	Royalties	11904.14
+2004	MT	Rosebud	30087	Coal	Coal (ton)	Royalties	9534463
+2004	MT	Rosebud	30087	Oil	Condensate (bbl)	Royalties	1266
+2004	MT	Rosebud	30087	Oil	Oil (bbl)	Royalties	50294.71
+2004	MT	Sheridan	30091	Gas	Processed (Residue) Gas (mcf)	Royalties	35.33
+2004	MT	Sheridan	30091	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	11134.34
+2004	MT	Sheridan	30091	NGL	Gas Plant Products (gal)	Royalties	226.34
+2004	MT	Sheridan	30091	Oil	Drip or Scrubber Condensate (bbl)	Royalties	0.49
+2004	MT	Sheridan	30091	Oil	Oil (bbl)	Royalties	38158
+2004	MT	Toole	30101	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	239687.2
+2004	MT	Toole	30101	Oil	Oil (bbl)	Royalties	61471.66
+2004	MT	Valley	30105	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	514782.27
+2004	MT	Wibaux	30109	Gas	Processed (Residue) Gas (mcf)	Royalties	5162.96
+2004	MT	Wibaux	30109	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	199553
+2004	MT	Wibaux	30109	NGL	Gas Plant Products (gal)	Royalties	413783.48
+2004	MT	Wibaux	30109	Oil	Oil (bbl)	Royalties	346708.84
+2004	MT	Yellowstone	30111	Oil	Oil (bbl)	Royalties	130
+2005	MT	Big Horn	30003	Coal	Coal (ton)	Royalties	16799328
+2005	MT	Big Horn	30003	Gas	Coal Bed Methane (mcf)	Royalties	3660467.72
+2005	MT	Blaine	30005	Gas	Fuel Gas (mcf)	Royalties	580.13
+2005	MT	Blaine	30005	Gas	Processed (Residue) Gas (mcf)	Royalties	376445.9
+2005	MT	Blaine	30005	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2737207.49
+2005	MT	Blaine	30005	NGL	Gas Plant Products (gal)	Royalties	29955.98
+2005	MT	Blaine	30005	Oil	Oil (bbl)	Royalties	47532.76
+2005	MT	Carbon	30009	Gas	Processed (Residue) Gas (mcf)	Royalties	19996.48
+2005	MT	Carbon	30009	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	143474.36
+2005	MT	Carbon	30009	NGL	Gas Plant Products (gal)	Royalties	1422807.79
+2005	MT	Carbon	30009	Oil	Oil (bbl)	Royalties	286832.16
+2005	MT	Carbon	30009	Sulfur	Sulfur (lton)	Royalties	1404.9
+2005	MT	Carter	30011	Oil	Oil (bbl)	Royalties	613.18
+2005	MT	Chouteau	30015	Gas	Fuel Gas (mcf)	Royalties	271.01
+2005	MT	Chouteau	30015	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	339058.63
+2005	MT	Chouteau	30015	NGL	Gas Plant Products (gal)	Royalties	21251.51
+2005	MT	Custer	30017	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	35782.27
+2005	MT	Dawson	30021	Gas	Processed (Residue) Gas (mcf)	Royalties	99.01
+2005	MT	Dawson	30021	NGL	Gas Plant Products (gal)	Royalties	3280.07
+2005	MT	Dawson	30021	Oil	Oil (bbl)	Royalties	345298.47
+2005	MT	Fallon	30025	Gas	Processed (Residue) Gas (mcf)	Royalties	144040.53
+2005	MT	Fallon	30025	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	7831493.18
+2005	MT	Fallon	30025	NGL	Gas Plant Products (gal)	Royalties	1298198.11
+2005	MT	Fallon	30025	Oil	Drip or Scrubber Condensate (bbl)	Royalties	366.08
+2005	MT	Fallon	30025	Oil	Oil (bbl)	Royalties	2020916.68
+2005	MT	Fergus	30027	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	83983
+2005	MT	Garfield	30033	Oil	Oil (bbl)	Royalties	4156.65
+2005	MT	Glacier	30035	Gas	Processed (Residue) Gas (mcf)	Royalties	10874.67
+2005	MT	Glacier	30035	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	18735.75
+2005	MT	Glacier	30035	NGL	Gas Plant Products (gal)	Royalties	733.43
+2005	MT	Glacier	30035	Oil	Oil (bbl)	Royalties	6074.34
+2005	MT	Hill	30041	Gas	Fuel Gas (mcf)	Royalties	384.17
+2005	MT	Hill	30041	Gas	Processed (Residue) Gas (mcf)	Royalties	266.32
+2005	MT	Hill	30041	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	659775.51
+2005	MT	Liberty	30051	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	251659.07
+2005	MT	Liberty	30051	Oil	Oil (bbl)	Royalties	4547.4
+2005	MT	Musselshell	30065	Oil	Oil (bbl)	Royalties	4065.45
+2005	MT	Petroleum	30069	Oil	Oil (bbl)	Royalties	13433.28
+2005	MT	Phillips	30071	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	11819431.79
+2005	MT	Pondera	30073	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	6512.26
+2005	MT	Powder River	30075	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	9177.65
+2005	MT	Powder River	30075	Oil	Oil (bbl)	Royalties	56645.14
+2005	MT	Prairie	30079	Gas	Processed (Residue) Gas (mcf)	Royalties	2499.07
+2005	MT	Prairie	30079	NGL	Gas Plant Products (gal)	Royalties	66228.41
+2005	MT	Prairie	30079	Oil	Oil (bbl)	Royalties	109451.6
+2005	MT	Richland	30083	Coal	Coal (ton)	Royalties	226742
+2005	MT	Richland	30083	Gas	Processed (Residue) Gas (mcf)	Royalties	29610.88
+2005	MT	Richland	30083	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	142649.16
+2005	MT	Richland	30083	NGL	Gas Plant Products (gal)	Royalties	1562.45
+2005	MT	Richland	30083	Oil	Condensate (bbl)	Royalties	23644.14
+2005	MT	Richland	30083	Oil	Drip or Scrubber Condensate (bbl)	Royalties	1.02
+2005	MT	Richland	30083	Oil	Oil (bbl)	Royalties	290080.11
+2005	MT	Roosevelt	30085	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	5065.1
+2005	MT	Roosevelt	30085	Oil	Oil (bbl)	Royalties	8989.95
+2005	MT	Rosebud	30087	Coal	Coal (ton)	Royalties	7115906.18
+2005	MT	Rosebud	30087	Oil	Condensate (bbl)	Royalties	1596
+2005	MT	Rosebud	30087	Oil	Oil (bbl)	Royalties	50975.86
+2005	MT	Sheridan	30091	Gas	Processed (Residue) Gas (mcf)	Royalties	19.17
+2005	MT	Sheridan	30091	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	9432.96
+2005	MT	Sheridan	30091	NGL	Gas Plant Products (gal)	Royalties	120.13
+2005	MT	Sheridan	30091	Oil	Drip or Scrubber Condensate (bbl)	Royalties	0.24
+2005	MT	Sheridan	30091	Oil	Oil (bbl)	Royalties	35659.47
+2005	MT	Stillwater	30095	Oil	Oil (bbl)	Royalties	86.93
+2005	MT	Toole	30101	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	435116.48
+2005	MT	Toole	30101	Oil	Oil (bbl)	Royalties	60845.69
+2005	MT	Treasure	30103	Coal	Coal (ton)	Royalties	131616.82
+2005	MT	Valley	30105	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	513619.84
+2005	MT	Wibaux	30109	Gas	Processed (Residue) Gas (mcf)	Royalties	17916.68
+2005	MT	Wibaux	30109	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	165043
+2005	MT	Wibaux	30109	NGL	Gas Plant Products (gal)	Royalties	464694.76
+2005	MT	Wibaux	30109	Oil	Oil (bbl)	Royalties	352566.64
+2006	MT	Big Horn	30003	Coal	Coal (ton)	Royalties	18122027
+2006	MT	Big Horn	30003	Gas	Coal Bed Methane (mcf)	Royalties	4137573.96
+2006	MT	Big Horn	30003	Gas	Processed (Residue) Gas (mcf)	Royalties	-4
+2006	MT	Big Horn	30003	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	259.5
+2006	MT	Blaine	30005	Gas	Fuel Gas (mcf)	Royalties	167.8
+2006	MT	Blaine	30005	Gas	Processed (Residue) Gas (mcf)	Royalties	866101.15
+2006	MT	Blaine	30005	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3139262.36
+2006	MT	Blaine	30005	NGL	Gas Plant Products (gal)	Royalties	48774.31
+2006	MT	Blaine	30005	Oil	Oil (bbl)	Royalties	47151.53
+2006	MT	Carbon	30009	Gas	Processed (Residue) Gas (mcf)	Royalties	8315.91
+2006	MT	Carbon	30009	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	134625.53
+2006	MT	Carbon	30009	NGL	Gas Plant Products (gal)	Royalties	1352994.22
+2006	MT	Carbon	30009	Oil	Oil (bbl)	Royalties	285956.93
+2006	MT	Carbon	30009	Sulfur	Sulfur (lton)	Royalties	1253.89
+2006	MT	Carter	30011	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	16803.04
+2006	MT	Carter	30011	Oil	Oil (bbl)	Royalties	764.9
+2006	MT	Chouteau	30015	Gas	Fuel Gas (mcf)	Royalties	6524.27
+2006	MT	Chouteau	30015	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	289908.71
+2006	MT	Chouteau	30015	NGL	Gas Plant Products (gal)	Royalties	21389.1
+2006	MT	Custer	30017	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	29994.14
+2006	MT	Dawson	30021	Gas	Processed (Residue) Gas (mcf)	Royalties	250.89
+2006	MT	Dawson	30021	NGL	Gas Plant Products (gal)	Royalties	2423.82
+2006	MT	Dawson	30021	Oil	Oil (bbl)	Royalties	323654.1
+2006	MT	Fallon	30025	Gas	Processed (Residue) Gas (mcf)	Royalties	139398
+2006	MT	Fallon	30025	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	9152641.98
+2006	MT	Fallon	30025	NGL	Gas Plant Products (gal)	Royalties	1057991.94
+2006	MT	Fallon	30025	Oil	Drip or Scrubber Condensate (bbl)	Royalties	232.01
+2006	MT	Fallon	30025	Oil	Oil (bbl)	Royalties	2146126.16
+2006	MT	Fergus	30027	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	142731
+2006	MT	Garfield	30033	Oil	Oil (bbl)	Royalties	3920.45
+2006	MT	Glacier	30035	Gas	Processed (Residue) Gas (mcf)	Royalties	10845.54
+2006	MT	Glacier	30035	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	17972.27
+2006	MT	Glacier	30035	NGL	Gas Plant Products (gal)	Royalties	5928.28
+2006	MT	Glacier	30035	Oil	Oil (bbl)	Royalties	4517.8
+2006	MT	Hill	30041	Gas	Fuel Gas (mcf)	Royalties	171.73
+2006	MT	Hill	30041	Gas	Processed (Residue) Gas (mcf)	Royalties	393.52
+2006	MT	Hill	30041	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	612475.72
+2006	MT	Liberty	30051	Gas	Processed (Residue) Gas (mcf)	Royalties	878
+2006	MT	Liberty	30051	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	190984.1
+2006	MT	Liberty	30051	Oil	Oil (bbl)	Royalties	4419.36
+2006	MT	Musselshell	30065	Oil	Oil (bbl)	Royalties	3233.02
+2006	MT	Petroleum	30069	Oil	Oil (bbl)	Royalties	12738.98
+2006	MT	Phillips	30071	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	11602104.44
+2006	MT	Pondera	30073	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	8157.24
+2006	MT	Powder River	30075	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	7022.75
+2006	MT	Powder River	30075	Oil	Oil (bbl)	Royalties	56697.13
+2006	MT	Prairie	30079	Gas	Processed (Residue) Gas (mcf)	Royalties	6319.79
+2006	MT	Prairie	30079	NGL	Gas Plant Products (gal)	Royalties	61616.97
+2006	MT	Prairie	30079	Oil	Oil (bbl)	Royalties	99998.28
+2006	MT	Richland	30083	Coal	Coal (ton)	Royalties	16750
+2006	MT	Richland	30083	Gas	Processed (Residue) Gas (mcf)	Royalties	37810.29
+2006	MT	Richland	30083	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	158335.86
+2006	MT	Richland	30083	NGL	Gas Plant Products (gal)	Royalties	24032.59
+2006	MT	Richland	30083	Oil	Condensate (bbl)	Royalties	21335.24
+2006	MT	Richland	30083	Oil	Drip or Scrubber Condensate (bbl)	Royalties	0.12
+2006	MT	Richland	30083	Oil	Oil (bbl)	Royalties	342420.47
+2006	MT	Roosevelt	30085	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	6492.64
+2006	MT	Roosevelt	30085	Oil	Oil (bbl)	Royalties	15615.97
+2006	MT	Rosebud	30087	Coal	Coal (ton)	Royalties	5779061.31
+2006	MT	Rosebud	30087	Oil	Condensate (bbl)	Royalties	224
+2006	MT	Rosebud	30087	Oil	Oil (bbl)	Royalties	31025.12
+2006	MT	Sheridan	30091	Gas	Processed (Residue) Gas (mcf)	Royalties	1.37
+2006	MT	Sheridan	30091	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	9892.64
+2006	MT	Sheridan	30091	NGL	Gas Plant Products (gal)	Royalties	11.83
+2006	MT	Sheridan	30091	Oil	Drip or Scrubber Condensate (bbl)	Royalties	0.03
+2006	MT	Sheridan	30091	Oil	Oil (bbl)	Royalties	34035.74
+2006	MT	Toole	30101	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	393728.22
+2006	MT	Toole	30101	Oil	Oil (bbl)	Royalties	108543.69
+2006	MT	Treasure	30103	Coal	Coal (ton)	Royalties	263775.69
+2006	MT	Valley	30105	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	477853.78
+2006	MT	Wibaux	30109	Gas	Processed (Residue) Gas (mcf)	Royalties	48809.52
+2006	MT	Wibaux	30109	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	143354
+2006	MT	Wibaux	30109	NGL	Gas Plant Products (gal)	Royalties	474214.8
+2006	MT	Wibaux	30109	Oil	Oil (bbl)	Royalties	374019.33
+2006	MT	Yellowstone	30111	Oil	Condensate (bbl)	Royalties	714
+2007	MT	Big Horn	30003	Coal	Coal (ton)	Royalties	18699987
+2007	MT	Big Horn	30003	Gas	Coal Bed Methane (mcf)	Royalties	3957427.4
+2007	MT	Big Horn	30003	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	6086
+2007	MT	Blaine	30005	Gas	Processed (Residue) Gas (mcf)	Royalties	606490.97
+2007	MT	Blaine	30005	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2845605.59
+2007	MT	Blaine	30005	NGL	Gas Plant Products (gal)	Royalties	40637.92
+2007	MT	Blaine	30005	Oil	Oil (bbl)	Royalties	48652.82
+2007	MT	Carbon	30009	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	149489.88
+2007	MT	Carbon	30009	NGL	Gas Plant Products (gal)	Royalties	1486519.19
+2007	MT	Carbon	30009	Oil	Oil (bbl)	Royalties	273715.94
+2007	MT	Carbon	30009	Sulfur	Sulfur (lton)	Royalties	1468.51
+2007	MT	Carter	30011	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	77477.04
+2007	MT	Carter	30011	Oil	Oil (bbl)	Royalties	15734.66
+2007	MT	Chouteau	30015	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	262466.93
+2007	MT	Chouteau	30015	NGL	Gas Plant Products (gal)	Royalties	16511.98
+2007	MT	Custer	30017	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	33566.78
+2007	MT	Dawson	30021	Gas	Processed (Residue) Gas (mcf)	Royalties	109.2
+2007	MT	Dawson	30021	NGL	Gas Plant Products (gal)	Royalties	1964.03
+2007	MT	Dawson	30021	Oil	Oil (bbl)	Royalties	323654.32
+2007	MT	Fallon	30025	Gas	Processed (Residue) Gas (mcf)	Royalties	102598.88
+2007	MT	Fallon	30025	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	8902817.25
+2007	MT	Fallon	30025	NGL	Gas Plant Products (gal)	Royalties	934654.86
+2007	MT	Fallon	30025	Oil	Drip or Scrubber Condensate (bbl)	Royalties	12.62
+2007	MT	Fallon	30025	Oil	Oil (bbl)	Royalties	2005897.23
+2007	MT	Fergus	30027	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	56989
+2007	MT	Garfield	30033	Oil	Oil (bbl)	Royalties	3201.4
+2007	MT	Glacier	30035	Gas	Processed (Residue) Gas (mcf)	Royalties	9342.38
+2007	MT	Glacier	30035	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	19201.11
+2007	MT	Glacier	30035	NGL	Gas Plant Products (gal)	Royalties	5946.88
+2007	MT	Glacier	30035	Oil	Oil (bbl)	Royalties	4591.41
+2007	MT	Hill	30041	Gas	Processed (Residue) Gas (mcf)	Royalties	175.44
+2007	MT	Hill	30041	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	665885.69
+2007	MT	Liberty	30051	Gas	Processed (Residue) Gas (mcf)	Royalties	9636
+2007	MT	Liberty	30051	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	132281.33
+2007	MT	Liberty	30051	Oil	Oil (bbl)	Royalties	4244.75
+2007	MT	Musselshell	30065	Oil	Oil (bbl)	Royalties	6297.27
+2007	MT	Petroleum	30069	Oil	Oil (bbl)	Royalties	12954.03
+2007	MT	Phillips	30071	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	13023230.21
+2007	MT	Pondera	30073	Gas	Processed (Residue) Gas (mcf)	Royalties	13.38
+2007	MT	Pondera	30073	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	8374.79
+2007	MT	Powder River	30075	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	6887.5
+2007	MT	Powder River	30075	Oil	Oil (bbl)	Royalties	114249.07
+2007	MT	Prairie	30079	Gas	Processed (Residue) Gas (mcf)	Royalties	2767.68
+2007	MT	Prairie	30079	NGL	Gas Plant Products (gal)	Royalties	53850.61
+2007	MT	Prairie	30079	Oil	Oil (bbl)	Royalties	87484.22
+2007	MT	Richland	30083	Gas	Processed (Residue) Gas (mcf)	Royalties	63247.46
+2007	MT	Richland	30083	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	183533.83
+2007	MT	Richland	30083	NGL	Gas Plant Products (gal)	Royalties	97377.9
+2007	MT	Richland	30083	Oil	Condensate (bbl)	Royalties	13931.55
+2007	MT	Richland	30083	Oil	Oil (bbl)	Royalties	429913.84
+2007	MT	Roosevelt	30085	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	4795.02
+2007	MT	Roosevelt	30085	Oil	Oil (bbl)	Royalties	13023
+2007	MT	Rosebud	30087	Coal	Coal (ton)	Royalties	6467564.88
+2007	MT	Rosebud	30087	Oil	Oil (bbl)	Royalties	27098.51
+2007	MT	Sheridan	30091	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	20125.86
+2007	MT	Sheridan	30091	Oil	Oil (bbl)	Royalties	32053.91
+2007	MT	Toole	30101	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	308209.5
+2007	MT	Toole	30101	Oil	Oil (bbl)	Royalties	76378.99
+2007	MT	Treasure	30103	Coal	Coal (ton)	Royalties	194006.12
+2007	MT	Valley	30105	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	499605.22
+2007	MT	Wibaux	30109	Gas	Processed (Residue) Gas (mcf)	Royalties	24190.12
+2007	MT	Wibaux	30109	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	134247
+2007	MT	Wibaux	30109	NGL	Gas Plant Products (gal)	Royalties	472838.52
+2007	MT	Wibaux	30109	Oil	Oil (bbl)	Royalties	338235.8
+2007	MT	Yellowstone	30111	Oil	Condensate (bbl)	Royalties	589
+2008	MT	Big Horn	30003	Coal	Coal (ton)	Royalties	19233306
+2008	MT	Big Horn	30003	Gas	Coal Bed Methane (mcf)	Royalties	4650178
+2008	MT	Big Horn	30003	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2462
+2008	MT	Blaine	30005	Gas	Processed (Residue) Gas (mcf)	Royalties	312232.49
+2008	MT	Blaine	30005	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2509606.05
+2008	MT	Blaine	30005	NGL	Gas Plant Products (gal)	Royalties	34895.51
+2008	MT	Blaine	30005	Oil	Oil (bbl)	Royalties	50218.91
+2008	MT	Carbon	30009	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	138892.73
+2008	MT	Carbon	30009	NGL	Gas Plant Products (gal)	Royalties	1500140.21
+2008	MT	Carbon	30009	Oil	Oil (bbl)	Royalties	270676.63
+2008	MT	Carbon	30009	Sulfur	Sulfur (lton)	Royalties	1103.1
+2008	MT	Carter	30011	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	65742.03
+2008	MT	Carter	30011	Oil	Oil (bbl)	Royalties	72036.3
+2008	MT	Chouteau	30015	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	270211.64
+2008	MT	Chouteau	30015	NGL	Gas Plant Products (gal)	Royalties	17086.1
+2008	MT	Custer	30017	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	33272.79
+2008	MT	Dawson	30021	Gas	Processed (Residue) Gas (mcf)	Royalties	94.05
+2008	MT	Dawson	30021	NGL	Gas Plant Products (gal)	Royalties	3287.19
+2008	MT	Dawson	30021	Oil	Oil (bbl)	Royalties	252475.68
+2008	MT	Fallon	30025	Gas	Processed (Residue) Gas (mcf)	Royalties	71211.52
+2008	MT	Fallon	30025	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	8396562.64
+2008	MT	Fallon	30025	NGL	Gas Plant Products (gal)	Royalties	935821.24
+2008	MT	Fallon	30025	Oil	Oil (bbl)	Royalties	1848789.16
+2008	MT	Fergus	30027	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	24451
+2008	MT	Garfield	30033	Oil	Oil (bbl)	Royalties	2860.64
+2008	MT	Glacier	30035	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	29835.66
+2008	MT	Glacier	30035	Oil	Oil (bbl)	Royalties	4396.78
+2008	MT	Hill	30041	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	656401.8
+2008	MT	Liberty	30051	Gas	Processed (Residue) Gas (mcf)	Royalties	8806
+2008	MT	Liberty	30051	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	88727.93
+2008	MT	Liberty	30051	Oil	Oil (bbl)	Royalties	5081.2
+2008	MT	Musselshell	30065	Oil	Oil (bbl)	Royalties	6283.52
+2008	MT	Petroleum	30069	Oil	Oil (bbl)	Royalties	11138.22
+2008	MT	Phillips	30071	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	12911233.9
+2008	MT	Pondera	30073	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	5721.44
+2008	MT	Powder River	30075	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	6124.25
+2008	MT	Powder River	30075	Oil	Oil (bbl)	Royalties	137403.86
+2008	MT	Prairie	30079	Gas	Processed (Residue) Gas (mcf)	Royalties	1623.95
+2008	MT	Prairie	30079	NGL	Gas Plant Products (gal)	Royalties	47216.25
+2008	MT	Prairie	30079	Oil	Oil (bbl)	Royalties	82602.78
+2008	MT	Richland	30083	Gas	Gas Lost - Flared or Vented (mcf)	Royalties	128.38
+2008	MT	Richland	30083	Gas	Processed (Residue) Gas (mcf)	Royalties	58412.24
+2008	MT	Richland	30083	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	276712.67
+2008	MT	Richland	30083	NGL	Gas Plant Products (gal)	Royalties	123933.77
+2008	MT	Richland	30083	Oil	Condensate (bbl)	Royalties	1750.3
+2008	MT	Richland	30083	Oil	Oil (bbl)	Royalties	514994.31
+2008	MT	Roosevelt	30085	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3438.86
+2008	MT	Roosevelt	30085	Oil	Oil (bbl)	Royalties	11131.6
+2008	MT	Rosebud	30087	Coal	Coal (ton)	Royalties	6234992.83
+2008	MT	Rosebud	30087	Oil	Condensate (bbl)	Royalties	216
+2008	MT	Rosebud	30087	Oil	Oil (bbl)	Royalties	28666.29
+2008	MT	Sheridan	30091	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	25198.94
+2008	MT	Sheridan	30091	Oil	Oil (bbl)	Royalties	32852.23
+2008	MT	Stillwater	30095	Oil	Oil (bbl)	Royalties	288.83
+2008	MT	Toole	30101	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	270115.82
+2008	MT	Toole	30101	Oil	Oil (bbl)	Royalties	51042.68
+2008	MT	Treasure	30103	Coal	Coal (ton)	Royalties	574041.17
+2008	MT	Valley	30105	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	559994.82
+2008	MT	Wibaux	30109	Gas	Processed (Residue) Gas (mcf)	Royalties	14640.56
+2008	MT	Wibaux	30109	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	117315
+2008	MT	Wibaux	30109	NGL	Gas Plant Products (gal)	Royalties	416766.76
+2008	MT	Wibaux	30109	Oil	Oil (bbl)	Royalties	312775.56
+2008	MT	Yellowstone	30111	Oil	Condensate (bbl)	Royalties	56
+2008	MT	Yellowstone	30111	Oil	Oil (bbl)	Royalties	242
+2009	MT	Big Horn	30003	Coal	Coal (ton)	Royalties	17226525
+2009	MT	Big Horn	30003	Gas	Coal Bed Methane (mcf)	Royalties	4927908.85
+2009	MT	Blaine	30005	Gas	Processed (Residue) Gas (mcf)	Royalties	165910.36
+2009	MT	Blaine	30005	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2683743.99
+2009	MT	Blaine	30005	NGL	Gas Plant Products (gal)	Royalties	2626.75
+2009	MT	Blaine	30005	Oil	Oil (bbl)	Royalties	46644.99
+2009	MT	Carbon	30009	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	126462.32
+2009	MT	Carbon	30009	NGL	Gas Plant Products (gal)	Royalties	1407865.02
+2009	MT	Carbon	30009	Oil	Oil (bbl)	Royalties	254922.54
+2009	MT	Carter	30011	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	60903.12
+2009	MT	Carter	30011	Oil	Oil (bbl)	Royalties	44481.73
+2009	MT	Chouteau	30015	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	222374.6
+2009	MT	Custer	30017	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	27669
+2009	MT	Dawson	30021	Gas	Processed (Residue) Gas (mcf)	Royalties	10.34
+2009	MT	Dawson	30021	NGL	Gas Plant Products (gal)	Royalties	366.56
+2009	MT	Dawson	30021	Oil	Oil (bbl)	Royalties	211782.08
+2009	MT	Fallon	30025	Gas	Processed (Residue) Gas (mcf)	Royalties	52302.96
+2009	MT	Fallon	30025	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	7260862.72
+2009	MT	Fallon	30025	NGL	Gas Plant Products (gal)	Royalties	892130.15
+2009	MT	Fallon	30025	Oil	Oil (bbl)	Royalties	1706398.97
+2009	MT	Fergus	30027	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	17725
+2009	MT	Garfield	30033	Oil	Oil (bbl)	Royalties	2404.35
+2009	MT	Glacier	30035	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	27031.98
+2009	MT	Glacier	30035	Oil	Oil (bbl)	Royalties	3917.13
+2009	MT	Hill	30041	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	450807.26
+2009	MT	Liberty	30051	Gas	Processed (Residue) Gas (mcf)	Royalties	73771
+2009	MT	Liberty	30051	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	77612.87
+2009	MT	Liberty	30051	Oil	Oil (bbl)	Royalties	5485.19
+2009	MT	Musselshell	30065	Oil	Oil (bbl)	Royalties	5386.48
+2009	MT	Petroleum	30069	Oil	Oil (bbl)	Royalties	10698.34
+2009	MT	Phillips	30071	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	11017192.09
+2009	MT	Pondera	30073	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3849.07
+2009	MT	Powder River	30075	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	6048.76
+2009	MT	Powder River	30075	Oil	Oil (bbl)	Royalties	141614.46
+2009	MT	Prairie	30079	Gas	Processed (Residue) Gas (mcf)	Royalties	1965.26
+2009	MT	Prairie	30079	NGL	Gas Plant Products (gal)	Royalties	44736.32
+2009	MT	Prairie	30079	Oil	Oil (bbl)	Royalties	76828.8
+2009	MT	Richland	30083	Gas	Gas Lost - Flared or Vented (mcf)	Royalties	206.39
+2009	MT	Richland	30083	Gas	Processed (Residue) Gas (mcf)	Royalties	18957.27
+2009	MT	Richland	30083	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	311663.37
+2009	MT	Richland	30083	NGL	Gas Plant Products (gal)	Royalties	102363.09
+2009	MT	Richland	30083	Oil	Oil (bbl)	Royalties	406019.71
+2009	MT	Roosevelt	30085	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3644.99
+2009	MT	Roosevelt	30085	Oil	Oil (bbl)	Royalties	10042.55
+2009	MT	Rosebud	30087	Coal	Coal (ton)	Royalties	5671065.46
+2009	MT	Rosebud	30087	Oil	Condensate (bbl)	Royalties	2264
+2009	MT	Rosebud	30087	Oil	Oil (bbl)	Royalties	26339.19
+2009	MT	Sheridan	30091	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	13822.73
+2009	MT	Sheridan	30091	Oil	Oil (bbl)	Royalties	29964.52
+2009	MT	Toole	30101	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	232939.35
+2009	MT	Toole	30101	Oil	Oil (bbl)	Royalties	41959.82
+2009	MT	Treasure	30103	Coal	Coal (ton)	Royalties	700640.54
+2009	MT	Valley	30105	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	717095.36
+2009	MT	Wibaux	30109	Gas	Processed (Residue) Gas (mcf)	Royalties	17433.6
+2009	MT	Wibaux	30109	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	103771
+2009	MT	Wibaux	30109	NGL	Gas Plant Products (gal)	Royalties	393580.99
+2009	MT	Wibaux	30109	Oil	Oil (bbl)	Royalties	303113.89
+2009	MT	Yellowstone	30111	Oil	Condensate (bbl)	Royalties	60
+2010	MT	Big Horn	30003	Coal	Coal (ton)	Royalties	17617078
+2010	MT	Big Horn	30003	Gas	Coal Bed Methane (mcf)	Royalties	4042714.91
+2010	MT	Blaine	30005	Gas	Processed (Residue) Gas (mcf)	Royalties	94786.91
+2010	MT	Blaine	30005	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2495609
+2010	MT	Blaine	30005	Oil	Oil (bbl)	Royalties	45156.62
+2010	MT	Carbon	30009	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	133610.94
+2010	MT	Carbon	30009	NGL	Gas Plant Products (gal)	Royalties	1309381.71
+2010	MT	Carbon	30009	Oil	Oil (bbl)	Royalties	246943.99
+2010	MT	Carbon	30009	Sulfur	Sulfur (lton)	Royalties	918.08
+2010	MT	Carter	30011	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	41319.4
+2010	MT	Carter	30011	Oil	Oil (bbl)	Royalties	34293.49
+2010	MT	Chouteau	30015	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	234480.04
+2010	MT	Custer	30017	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	27126.53
+2010	MT	Dawson	30021	Oil	Oil (bbl)	Royalties	188732.05
+2010	MT	Fallon	30025	Gas	Processed (Residue) Gas (mcf)	Royalties	37093.2
+2010	MT	Fallon	30025	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	6088686.47
+2010	MT	Fallon	30025	NGL	Gas Plant Products (gal)	Royalties	839229.26
+2010	MT	Fallon	30025	Oil	Oil (bbl)	Royalties	1517199.47
+2010	MT	Fergus	30027	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	28716.5
+2010	MT	Garfield	30033	Oil	Oil (bbl)	Royalties	2128.91
+2010	MT	Glacier	30035	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	28696.99
+2010	MT	Glacier	30035	Oil	Oil (bbl)	Royalties	3493.69
+2010	MT	Hill	30041	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	342108.2
+2010	MT	Liberty	30051	Gas	Processed (Residue) Gas (mcf)	Royalties	8693
+2010	MT	Liberty	30051	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	80014.01
+2010	MT	Liberty	30051	Oil	Oil (bbl)	Royalties	5950.03
+2010	MT	Musselshell	30065	Oil	Oil (bbl)	Royalties	3106.54
+2010	MT	Petroleum	30069	Oil	Oil (bbl)	Royalties	13416.68
+2010	MT	Phillips	30071	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	9869834.39
+2010	MT	Pondera	30073	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3389.24
+2010	MT	Powder River	30075	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	5950.25
+2010	MT	Powder River	30075	Oil	Oil (bbl)	Royalties	131276.83
+2010	MT	Prairie	30079	Gas	Processed (Residue) Gas (mcf)	Royalties	2127.84
+2010	MT	Prairie	30079	NGL	Gas Plant Products (gal)	Royalties	41063.84
+2010	MT	Prairie	30079	Oil	Oil (bbl)	Royalties	77367.63
+2010	MT	Richland	30083	Gas	Processed (Residue) Gas (mcf)	Royalties	14853.55
+2010	MT	Richland	30083	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	281821.38
+2010	MT	Richland	30083	NGL	Gas Plant Products (gal)	Royalties	77269.84
+2010	MT	Richland	30083	Oil	Oil (bbl)	Royalties	330340.1
+2010	MT	Roosevelt	30085	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3173.32
+2010	MT	Roosevelt	30085	Oil	Oil (bbl)	Royalties	9128.8
+2010	MT	Rosebud	30087	Coal	Coal (ton)	Royalties	6586376.35
+2010	MT	Rosebud	30087	Oil	Condensate (bbl)	Royalties	688
+2010	MT	Rosebud	30087	Oil	Oil (bbl)	Royalties	24976.2
+2010	MT	Sheridan	30091	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	20597.17
+2010	MT	Sheridan	30091	Oil	Oil (bbl)	Royalties	26411.84
+2010	MT	Stillwater	30095	Oil	Oil (bbl)	Royalties	2757.4
+2010	MT	Toole	30101	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	211440.59
+2010	MT	Toole	30101	Oil	Oil (bbl)	Royalties	39939.51
+2010	MT	Treasure	30103	Coal	Coal (ton)	Royalties	1182342.65
+2010	MT	Valley	30105	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	810751.83
+2010	MT	Wibaux	30109	Gas	Processed (Residue) Gas (mcf)	Royalties	18155.25
+2010	MT	Wibaux	30109	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	92721
+2010	MT	Wibaux	30109	NGL	Gas Plant Products (gal)	Royalties	349379.27
+2010	MT	Wibaux	30109	Oil	Oil (bbl)	Royalties	336218.98
+2010	MT	Yellowstone	30111	Oil	Condensate (bbl)	Royalties	56
+2011	MT	Big Horn	30003	Coal	Coal (ton)	Royalties	17247988
+2011	MT	Big Horn	30003	Gas	Coal Bed Methane (mcf)	Royalties	2839406.48
+2011	MT	Blaine	30005	Gas	Fuel Gas (mcf)	Royalties	10.54
+2011	MT	Blaine	30005	Gas	Processed (Residue) Gas (mcf)	Royalties	41763.85
+2011	MT	Blaine	30005	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2301127.59
+2011	MT	Blaine	30005	Oil	Oil (bbl)	Royalties	41436.77
+2011	MT	Carbon	30009	Gas	Processed (Residue) Gas (mcf)	Royalties	10.73
+2011	MT	Carbon	30009	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	116068.42
+2011	MT	Carbon	30009	NGL	Gas Plant Products (gal)	Royalties	2007065.21
+2011	MT	Carbon	30009	Oil	Oil (bbl)	Royalties	248630.6
+2011	MT	Carbon	30009	Sulfur	Sulfur (lton)	Royalties	529.38
+2011	MT	Carter	30011	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	40441.37
+2011	MT	Carter	30011	Oil	Oil (bbl)	Royalties	26695.97
+2011	MT	Chouteau	30015	Gas	Fuel Gas (mcf)	Royalties	7.46
+2011	MT	Chouteau	30015	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	224927.28
+2011	MT	Custer	30017	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	11378.52
+2011	MT	Dawson	30021	Oil	Oil (bbl)	Royalties	171957.45
+2011	MT	Fallon	30025	Gas	Processed (Residue) Gas (mcf)	Royalties	35897.01
+2011	MT	Fallon	30025	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	5302205.39
+2011	MT	Fallon	30025	NGL	Gas Plant Products (gal)	Royalties	853393.94
+2011	MT	Fallon	30025	Oil	Drip or Scrubber Condensate (bbl)	Royalties	462.8
+2011	MT	Fallon	30025	Oil	Oil (bbl)	Royalties	1402468.03
+2011	MT	Fergus	30027	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	26412
+2011	MT	Garfield	30033	Oil	Oil (bbl)	Royalties	2153.74
+2011	MT	Glacier	30035	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	23064.75
+2011	MT	Glacier	30035	Oil	Oil (bbl)	Royalties	3775.69
+2011	MT	Hill	30041	Gas	Fuel Gas (mcf)	Royalties	15.03
+2011	MT	Hill	30041	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	247842.49
+2011	MT	Liberty	30051	Gas	Processed (Residue) Gas (mcf)	Royalties	4468.5
+2011	MT	Liberty	30051	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	76002.71
+2011	MT	Liberty	30051	Oil	Oil (bbl)	Royalties	11189.32
+2011	MT	Musselshell	30065	Oil	Oil (bbl)	Royalties	6018.81
+2011	MT	Petroleum	30069	Oil	Oil (bbl)	Royalties	10887.15
+2011	MT	Phillips	30071	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	8417814.86
+2011	MT	Pondera	30073	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3554.87
+2011	MT	Powder River	30075	Gas	Processed (Residue) Gas (mcf)	Royalties	3107.5
+2011	MT	Powder River	30075	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2293.5
+2011	MT	Powder River	30075	Oil	Oil (bbl)	Royalties	147136.34
+2011	MT	Prairie	30079	Gas	Processed (Residue) Gas (mcf)	Royalties	1361.27
+2011	MT	Prairie	30079	NGL	Gas Plant Products (gal)	Royalties	48434.28
+2011	MT	Prairie	30079	Oil	Drip or Scrubber Condensate (bbl)	Royalties	39.84
+2011	MT	Prairie	30079	Oil	Oil (bbl)	Royalties	70530.07
+2011	MT	Richland	30083	Gas	Processed (Residue) Gas (mcf)	Royalties	9183.38
+2011	MT	Richland	30083	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	172970.16
+2011	MT	Richland	30083	NGL	Gas Plant Products (gal)	Royalties	48545.75
+2011	MT	Richland	30083	Oil	Oil (bbl)	Royalties	232305.08
+2011	MT	Roosevelt	30085	Gas	Processed (Residue) Gas (mcf)	Royalties	276
+2011	MT	Roosevelt	30085	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1650.64
+2011	MT	Roosevelt	30085	Oil	Oil (bbl)	Royalties	16904.47
+2011	MT	Rosebud	30087	Coal	Coal (ton)	Royalties	4663384.31
+2011	MT	Rosebud	30087	Oil	Condensate (bbl)	Royalties	199
+2011	MT	Rosebud	30087	Oil	Oil (bbl)	Royalties	18837.66
+2011	MT	Sheridan	30091	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3800.47
+2011	MT	Sheridan	30091	Oil	Oil (bbl)	Royalties	19160.96
+2011	MT	Stillwater	30095	Oil	Oil (bbl)	Royalties	9951.03
+2011	MT	Toole	30101	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	214765.55
+2011	MT	Toole	30101	Oil	Oil (bbl)	Royalties	38560.45
+2011	MT	Treasure	30103	Coal	Coal (ton)	Royalties	1085504.69
+2011	MT	Valley	30105	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	787874.65
+2011	MT	Wibaux	30109	Gas	Processed (Residue) Gas (mcf)	Royalties	10725.73
+2011	MT	Wibaux	30109	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	97251
+2011	MT	Wibaux	30109	NGL	Gas Plant Products (gal)	Royalties	381642.58
+2011	MT	Wibaux	30109	Oil	Drip or Scrubber Condensate (bbl)	Royalties	312.98
+2011	MT	Wibaux	30109	Oil	Oil (bbl)	Royalties	306163.17
+2011	MT	Yellowstone	30111	Oil	Condensate (bbl)	Royalties	59
+2012	MT	Big Horn	30003	Coal	Coal (ton)	Royalties	16155395
+2012	MT	Big Horn	30003	Gas	Coal Bed Methane (mcf)	Royalties	1621515
+2012	MT	Blaine	30005	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1710798.27
+2012	MT	Blaine	30005	Oil	Oil (bbl)	Royalties	38856.46
+2012	MT	Carbon	30009	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	110202.22
+2012	MT	Carbon	30009	NGL	Gas Plant Products (gal)	Royalties	1420267.3
+2012	MT	Carbon	30009	Oil	Oil (bbl)	Royalties	247845.3
+2012	MT	Carbon	30009	Sulfur	Sulfur (lton)	Royalties	473.6
+2012	MT	Carter	30011	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	20166.5
+2012	MT	Carter	30011	Oil	Oil (bbl)	Royalties	22706.26
+2012	MT	Chouteau	30015	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	167790.69
+2012	MT	Custer	30017	Gas	Fuel Gas (mcf)	Royalties	1354
+2012	MT	Custer	30017	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	12014
+2012	MT	Dawson	30021	Oil	Oil (bbl)	Royalties	172980.73
+2012	MT	Fallon	30025	Gas	Processed (Residue) Gas (mcf)	Royalties	619.01
+2012	MT	Fallon	30025	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3824595.56
+2012	MT	Fallon	30025	NGL	Gas Plant Products (gal)	Royalties	90780.72
+2012	MT	Fallon	30025	Oil	Drip or Scrubber Condensate (bbl)	Royalties	209.11
+2012	MT	Fallon	30025	Oil	Oil (bbl)	Royalties	1306475.12
+2012	MT	Fergus	30027	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	24740
+2012	MT	Garfield	30033	Oil	Oil (bbl)	Royalties	2191.53
+2012	MT	Glacier	30035	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	24401.89
+2012	MT	Glacier	30035	Oil	Oil (bbl)	Royalties	4049.54
+2012	MT	Hill	30041	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	195462.91
+2012	MT	Liberty	30051	Gas	Processed (Residue) Gas (mcf)	Royalties	1907.25
+2012	MT	Liberty	30051	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	70535.91
+2012	MT	Liberty	30051	Oil	Oil (bbl)	Royalties	8769.63
+2012	MT	Musselshell	30065	Oil	Oil (bbl)	Royalties	3054.09
+2012	MT	Petroleum	30069	Oil	Oil (bbl)	Royalties	9959.27
+2012	MT	Phillips	30071	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	6040462.04
+2012	MT	Pondera	30073	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2795.7
+2012	MT	Powder River	30075	Gas	Processed (Residue) Gas (mcf)	Royalties	4373.5
+2012	MT	Powder River	30075	Oil	Oil (bbl)	Royalties	118488.6
+2012	MT	Prairie	30079	Gas	Processed (Residue) Gas (mcf)	Royalties	128.47
+2012	MT	Prairie	30079	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	10575.91
+2012	MT	Prairie	30079	NGL	Gas Plant Products (gal)	Royalties	7328.89
+2012	MT	Prairie	30079	Oil	Drip or Scrubber Condensate (bbl)	Royalties	18.96
+2012	MT	Prairie	30079	Oil	Oil (bbl)	Royalties	66523.39
+2012	MT	Richland	30083	Coal	Coal (ton)	Royalties	14236
+2012	MT	Richland	30083	Gas	Processed (Residue) Gas (mcf)	Royalties	7692.33
+2012	MT	Richland	30083	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	124730.82
+2012	MT	Richland	30083	NGL	Gas Plant Products (gal)	Royalties	46247.09
+2012	MT	Richland	30083	Oil	Oil (bbl)	Royalties	211261.69
+2012	MT	Roosevelt	30085	Gas	Processed (Residue) Gas (mcf)	Royalties	749
+2012	MT	Roosevelt	30085	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	27378.41
+2012	MT	Roosevelt	30085	NGL	Gas Plant Products (gal)	Royalties	2645.6
+2012	MT	Roosevelt	30085	Oil	Oil (bbl)	Royalties	136303.35
+2012	MT	Rosebud	30087	Coal	Coal (ton)	Royalties	4451207.83
+2012	MT	Rosebud	30087	Oil	Oil (bbl)	Royalties	19298.45
+2012	MT	Sheridan	30091	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	7279.27
+2012	MT	Sheridan	30091	Oil	Oil (bbl)	Royalties	30395.49
+2012	MT	Stillwater	30095	Oil	Oil (bbl)	Royalties	9628.6
+2012	MT	Toole	30101	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	193577.76
+2012	MT	Toole	30101	Oil	Oil (bbl)	Royalties	39465.71
+2012	MT	Treasure	30103	Coal	Coal (ton)	Royalties	1190787.17
+2012	MT	Valley	30105	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	723563.99
+2012	MT	Wibaux	30109	Gas	Processed (Residue) Gas (mcf)	Royalties	1012.47
+2012	MT	Wibaux	30109	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	172611.17
+2012	MT	Wibaux	30109	NGL	Gas Plant Products (gal)	Royalties	57748.67
+2012	MT	Wibaux	30109	Oil	Drip or Scrubber Condensate (bbl)	Royalties	148.81
+2012	MT	Wibaux	30109	Oil	Oil (bbl)	Royalties	280693.24
+2012	MT	Yellowstone	30111	Oil	Oil (bbl)	Royalties	58
+2013	MT	Big Horn	30003	Coal	Coal (ton)	Royalties	16418513
+2013	MT	Big Horn	30003	Gas	Coal Bed Methane (mcf)	Royalties	513176.58
+2013	MT	Blaine	30005	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1384067.76
+2013	MT	Blaine	30005	Oil	Oil (bbl)	Royalties	37140.27
+2013	MT	Carbon	30009	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	113195.11
+2013	MT	Carbon	30009	NGL	Gas Plant Products (gal)	Royalties	1398681.26
+2013	MT	Carbon	30009	Oil	Oil (bbl)	Royalties	247503.33
+2013	MT	Carbon	30009	Sulfur	Sulfur (lton)	Royalties	429.49
+2013	MT	Carter	30011	Oil	Oil (bbl)	Royalties	25892.95
+2013	MT	Chouteau	30015	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	143299.3
+2013	MT	Custer	30017	Gas	Fuel Gas (mcf)	Royalties	2807
+2013	MT	Custer	30017	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	22861
+2013	MT	Dawson	30021	Oil	Oil (bbl)	Royalties	148226.58
+2013	MT	Fallon	30025	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3515605.93
+2013	MT	Fallon	30025	Oil	Oil (bbl)	Royalties	1192084.71
+2013	MT	Fergus	30027	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	19537
+2013	MT	Garfield	30033	Oil	Oil (bbl)	Royalties	1902.54
+2013	MT	Glacier	30035	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	20115.94
+2013	MT	Glacier	30035	Oil	Oil (bbl)	Royalties	3333.17
+2013	MT	Hill	30041	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	165695.17
+2013	MT	Liberty	30051	Gas	Processed (Residue) Gas (mcf)	Royalties	1837.74
+2013	MT	Liberty	30051	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	79451.09
+2013	MT	Liberty	30051	Oil	Oil (bbl)	Royalties	6306.07
+2013	MT	Musselshell	30065	Coal	Coal (ton)	Royalties	16073
+2013	MT	Musselshell	30065	Oil	Oil (bbl)	Royalties	2956.33
+2013	MT	Petroleum	30069	Oil	Oil (bbl)	Royalties	7465.25
+2013	MT	Phillips	30071	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	5674008.24
+2013	MT	Pondera	30073	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1898.93
+2013	MT	Powder River	30075	Gas	Processed (Residue) Gas (mcf)	Royalties	3431.25
+2013	MT	Powder River	30075	Oil	Oil (bbl)	Royalties	91531.22
+2013	MT	Prairie	30079	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	9611.34
+2013	MT	Prairie	30079	Oil	Oil (bbl)	Royalties	59966.17
+2013	MT	Richland	30083	Gas	Processed (Residue) Gas (mcf)	Royalties	9131.29
+2013	MT	Richland	30083	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	169008.62
+2013	MT	Richland	30083	NGL	Gas Plant Products (gal)	Royalties	58008.8
+2013	MT	Richland	30083	Oil	Oil (bbl)	Royalties	309108.37
+2013	MT	Roosevelt	30085	Gas	Processed (Residue) Gas (mcf)	Royalties	999.64
+2013	MT	Roosevelt	30085	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	30663.86
+2013	MT	Roosevelt	30085	NGL	Gas Plant Products (gal)	Royalties	1147.39
+2013	MT	Roosevelt	30085	Oil	Oil (bbl)	Royalties	99674.96
+2013	MT	Rosebud	30087	Coal	Coal (ton)	Royalties	4785469.48
+2013	MT	Rosebud	30087	Oil	Oil (bbl)	Royalties	17067.26
+2013	MT	Sheridan	30091	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2586.15
+2013	MT	Sheridan	30091	Oil	Condensate (bbl)	Royalties	2
+2013	MT	Sheridan	30091	Oil	Oil (bbl)	Royalties	32727
+2013	MT	Stillwater	30095	Oil	Oil (bbl)	Royalties	14682.22
+2013	MT	Toole	30101	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	181912.04
+2013	MT	Toole	30101	Oil	Oil (bbl)	Royalties	41455.01
+2013	MT	Treasure	30103	Coal	Coal (ton)	Royalties	643747.52
+2013	MT	Valley	30105	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	636692.1
+2013	MT	Wibaux	30109	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	157432.94
+2013	MT	Wibaux	30109	Oil	Oil (bbl)	Royalties	257925.22
+2013	MT	Yellowstone	30111	Oil	Condensate (bbl)	Royalties	420

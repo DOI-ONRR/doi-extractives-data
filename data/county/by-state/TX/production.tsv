@@ -1,0 +1,913 @@
+Year	State	County	FIPS	Commodity	Product	Type	Volume
+2004	TX	Bowie	48037	Oil	Oil (bbl)	Royalties	9630.97
+2004	TX	Brazos	48041	Gas	Processed (Residue) Gas (mcf)	Royalties	181.75
+2004	TX	Brazos	48041	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	11346.85
+2004	TX	Brazos	48041	Oil	Oil (bbl)	Royalties	2983.84
+2004	TX	Chambers	48071	Oil	Oil (bbl)	Royalties	4222.9
+2004	TX	Denton	48121	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	9073.74
+2004	TX	Freestone	48161	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	125636
+2004	TX	Freestone	48161	Oil	Condensate (bbl)	Royalties	45.6
+2004	TX	Galveston	48167	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	323983.62
+2004	TX	Galveston	48167	Oil	Condensate (bbl)	Royalties	10510.07
+2004	TX	Galveston	48167	Oil	Oil (bbl)	Royalties	123827.07
+2004	TX	Gray	48179	Oil	Oil (bbl)	Royalties	9006.94
+2004	TX	Grayson	48181	Gas	Processed (Residue) Gas (mcf)	Royalties	33819.6
+2004	TX	Grayson	48181	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1426.64
+2004	TX	Grayson	48181	NGL	Gas Plant Products (gal)	Royalties	63012.2
+2004	TX	Grayson	48181	Oil	Condensate (bbl)	Royalties	1.14
+2004	TX	Grayson	48181	Oil	Oil (bbl)	Royalties	9807.19
+2004	TX	Hemphill	48211	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	13719.29
+2004	TX	Hidalgo	48215	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	126240.44
+2004	TX	Hidalgo	48215	Oil	Condensate (bbl)	Royalties	537.59
+2004	TX	Houston	48225	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	68
+2004	TX	Houston	48225	Oil	Oil (bbl)	Royalties	145406.77
+2004	TX	Jackson	48239	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	-28060.59
+2004	TX	Jasper	48241	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	426
+2004	TX	Jasper	48241	Oil	Oil (bbl)	Royalties	2494.6
+2004	TX	Jones	48253	Gas	Processed (Residue) Gas (mcf)	Royalties	575.01
+2004	TX	Jones	48253	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1910
+2004	TX	Jones	48253	Oil	Oil (bbl)	Royalties	995.37
+2004	TX	Lee	48287	Gas	Processed (Residue) Gas (mcf)	Royalties	277.78
+2004	TX	Lee	48287	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	83576.32
+2004	TX	Lee	48287	NGL	Gas Plant Products (gal)	Royalties	2852.64
+2004	TX	Lee	48287	Oil	Oil (bbl)	Royalties	5028.89
+2004	TX	Live Oak	48297	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	175425
+2004	TX	Nacogdoches	48347	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	24995.19
+2004	TX	Nacogdoches	48347	Oil	Condensate (bbl)	Royalties	7.16
+2004	TX	Newton	48351	Gas	Processed (Residue) Gas (mcf)	Royalties	162
+2004	TX	Newton	48351	Oil	Oil (bbl)	Royalties	59
+2004	TX	Ochiltree	48357	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2514.73
+2004	TX	Parker	48367	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	11386
+2004	TX	Parker	48367	Oil	Condensate (bbl)	Royalties	170.62
+2004	TX	Sabine	48403	Gas	Processed (Residue) Gas (mcf)	Royalties	5724.12
+2004	TX	Sabine	48403	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	396.55
+2004	TX	Sabine	48403	NGL	Gas Plant Products (gal)	Royalties	39805.92
+2004	TX	Sabine	48403	Oil	Condensate (bbl)	Royalties	792.32
+2004	TX	Sabine	48403	Oil	Oil (bbl)	Royalties	3878.08
+2004	TX	San Jacinto	48407	Gas	Processed (Residue) Gas (mcf)	Royalties	154771
+2004	TX	San Jacinto	48407	Oil	Condensate (bbl)	Royalties	9430.82
+2004	TX	San Jacinto	48407	Oil	Oil (bbl)	Royalties	15921.82
+2004	TX	Shelby	48419	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	11831952.76
+2004	TX	Shelby	48419	NGL	Gas Plant Products (gal)	Royalties	53293.12
+2004	TX	Shelby	48419	Oil	Condensate (bbl)	Royalties	13205.03
+2004	TX	Shelby	48419	Oil	Drip or Scrubber Condensate (bbl)	Royalties	227.6
+2004	TX	Shelby	48419	Oil	Oil (bbl)	Royalties	20819.43
+2004	TX	Sherman	48421	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	18196.63
+2004	TX	Starr	48427	Gas	Fuel Gas (mcf)	Royalties	1352.4
+2004	TX	Starr	48427	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	10035722.11
+2004	TX	Taylor	48441	Gas	Processed (Residue) Gas (mcf)	Royalties	2014
+2004	TX	Taylor	48441	NGL	Gas Plant Products (gal)	Royalties	44572
+2004	TX	Taylor	48441	Oil	Inlet Scrubber (bbl)	Royalties	-373
+2004	TX	Washington	48477	Gas	Processed (Residue) Gas (mcf)	Royalties	555.55
+2004	TX	Washington	48477	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	61780.75
+2004	TX	Washington	48477	NGL	Gas Plant Products (gal)	Royalties	97718.88
+2004	TX	Washington	48477	Oil	Condensate (bbl)	Royalties	2656
+2004	TX	Washington	48477	Oil	Oil (bbl)	Royalties	4127.43
+2004	TX	Wheeler	48483	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	182620.79
+2004	TX	Wheeler	48483	Oil	Condensate (bbl)	Royalties	950.35
+2004	TX	Wheeler	48483	Oil	Oil (bbl)	Royalties	4206.87
+2004	TX	Wise	48497	Gas	Processed (Residue) Gas (mcf)	Royalties	224992.7
+2004	TX	Wise	48497	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	135676.73
+2004	TX	Wise	48497	NGL	Gas Plant Products (gal)	Royalties	1738769.57
+2004	TX	Wise	48497	Oil	Condensate (bbl)	Royalties	540.24
+2004	TX	Wise	48497	Oil	Oil (bbl)	Royalties	27494.8
+2004	TX	Zapata	48505	Gas	Fuel Gas (mcf)	Royalties	1328
+2004	TX	Zapata	48505	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	224613.52
+2004	TX	Zapata	48505	Oil	Condensate (bbl)	Royalties	73.28
+2004	TX	Zapata	48505	Oil	Drip or Scrubber Condensate (bbl)	Royalties	532.4
+2005	TX	Bowie	48037	Oil	Oil (bbl)	Royalties	11811.15
+2005	TX	Brazos	48041	Gas	Processed (Residue) Gas (mcf)	Royalties	107.98
+2005	TX	Brazos	48041	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2795.5
+2005	TX	Brazos	48041	Oil	Oil (bbl)	Royalties	1441.95
+2005	TX	Chambers	48071	Oil	Oil (bbl)	Royalties	2965.52
+2005	TX	Denton	48121	Gas	Processed (Residue) Gas (mcf)	Royalties	-676.53
+2005	TX	Denton	48121	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	318833.81
+2005	TX	Freestone	48161	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	99303.04
+2005	TX	Freestone	48161	Oil	Condensate (bbl)	Royalties	36.24
+2005	TX	Galveston	48167	Gas	Flash Gas (mcf)	Royalties	1
+2005	TX	Galveston	48167	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	526124.18
+2005	TX	Galveston	48167	Oil	Condensate (bbl)	Royalties	17667.03
+2005	TX	Galveston	48167	Oil	Oil (bbl)	Royalties	106341.76
+2005	TX	Gray	48179	Oil	Oil (bbl)	Royalties	9026.85
+2005	TX	Grayson	48181	Gas	Processed (Residue) Gas (mcf)	Royalties	41567.14
+2005	TX	Grayson	48181	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	4968.6
+2005	TX	Grayson	48181	NGL	Gas Plant Products (gal)	Royalties	78580.16
+2005	TX	Grayson	48181	Oil	Oil (bbl)	Royalties	7732.27
+2005	TX	Hemphill	48211	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	12007.58
+2005	TX	Hidalgo	48215	Gas	Processed (Residue) Gas (mcf)	Royalties	23937.97
+2005	TX	Hidalgo	48215	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	53391.52
+2005	TX	Hidalgo	48215	NGL	Gas Plant Products (gal)	Royalties	19184.56
+2005	TX	Hidalgo	48215	Oil	Condensate (bbl)	Royalties	383.89
+2005	TX	Houston	48225	Oil	Oil (bbl)	Royalties	146918.63
+2005	TX	Jackson	48239	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1369.26
+2005	TX	Jackson	48239	Oil	Condensate (bbl)	Royalties	1.8
+2005	TX	Jasper	48241	Oil	Oil (bbl)	Royalties	1404.56
+2005	TX	Jones	48253	Gas	Processed (Residue) Gas (mcf)	Royalties	6066.07
+2005	TX	Jones	48253	Oil	Oil (bbl)	Royalties	3566.29
+2005	TX	Lee	48287	Gas	Processed (Residue) Gas (mcf)	Royalties	322.96
+2005	TX	Lee	48287	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	66433.1
+2005	TX	Lee	48287	NGL	Gas Plant Products (gal)	Royalties	3286.08
+2005	TX	Lee	48287	Oil	Oil (bbl)	Royalties	3562.85
+2005	TX	Live Oak	48297	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	108114
+2005	TX	Nacogdoches	48347	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	18721.55
+2005	TX	Nacogdoches	48347	Oil	Condensate (bbl)	Royalties	4.74
+2005	TX	Newton	48351	Gas	Processed (Residue) Gas (mcf)	Royalties	50
+2005	TX	Newton	48351	Oil	Oil (bbl)	Royalties	58
+2005	TX	Nueces	48355	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	192617.41
+2005	TX	Nueces	48355	Oil	Condensate (bbl)	Royalties	545.48
+2005	TX	Ochiltree	48357	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3419.13
+2005	TX	Parker	48367	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	16486
+2005	TX	Sabine	48403	Gas	Processed (Residue) Gas (mcf)	Royalties	2575.04
+2005	TX	Sabine	48403	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2668.44
+2005	TX	Sabine	48403	NGL	Gas Plant Products (gal)	Royalties	19659.36
+2005	TX	Sabine	48403	Oil	Condensate (bbl)	Royalties	540.72
+2005	TX	Sabine	48403	Oil	Oil (bbl)	Royalties	2127.2
+2005	TX	San Jacinto	48407	Gas	Processed (Residue) Gas (mcf)	Royalties	84627
+2005	TX	San Jacinto	48407	Oil	Condensate (bbl)	Royalties	5456.72
+2005	TX	San Jacinto	48407	Oil	Oil (bbl)	Royalties	7633.85
+2005	TX	Shelby	48419	Gas	Processed (Residue) Gas (mcf)	Royalties	251889.76
+2005	TX	Shelby	48419	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	10214797.9
+2005	TX	Shelby	48419	NGL	Gas Plant Products (gal)	Royalties	104978.64
+2005	TX	Shelby	48419	Oil	Condensate (bbl)	Royalties	10330.47
+2005	TX	Shelby	48419	Oil	Drip or Scrubber Condensate (bbl)	Royalties	289.09
+2005	TX	Shelby	48419	Oil	Oil (bbl)	Royalties	47001.94
+2005	TX	Sherman	48421	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	18976.38
+2005	TX	Starr	48427	Gas	Fuel Gas (mcf)	Royalties	1790
+2005	TX	Starr	48427	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	9119882.22
+2005	TX	Tarrant	48439	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	505861.92
+2005	TX	Taylor	48441	Gas	Processed (Residue) Gas (mcf)	Royalties	1856
+2005	TX	Taylor	48441	NGL	Gas Plant Products (gal)	Royalties	37039
+2005	TX	Washington	48477	Gas	Processed (Residue) Gas (mcf)	Royalties	9624.08
+2005	TX	Washington	48477	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	54574.48
+2005	TX	Washington	48477	NGL	Gas Plant Products (gal)	Royalties	69373.92
+2005	TX	Washington	48477	Oil	Condensate (bbl)	Royalties	1745.73
+2005	TX	Washington	48477	Oil	Oil (bbl)	Royalties	4538.63
+2005	TX	Wheeler	48483	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	131838.49
+2005	TX	Wheeler	48483	Oil	Condensate (bbl)	Royalties	378.19
+2005	TX	Wheeler	48483	Oil	Oil (bbl)	Royalties	2751.92
+2005	TX	Wise	48497	Gas	Processed (Residue) Gas (mcf)	Royalties	37487.4
+2005	TX	Wise	48497	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	296539.93
+2005	TX	Wise	48497	NGL	Gas Plant Products (gal)	Royalties	35263.83
+2005	TX	Wise	48497	Oil	Condensate (bbl)	Royalties	788.3
+2005	TX	Wise	48497	Oil	Oil (bbl)	Royalties	22482.82
+2005	TX	Zapata	48505	Gas	Fuel Gas (mcf)	Royalties	1495.44
+2005	TX	Zapata	48505	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	178383.2
+2005	TX	Zapata	48505	Oil	Condensate (bbl)	Royalties	43.76
+2005	TX	Zapata	48505	Oil	Drip or Scrubber Condensate (bbl)	Royalties	280.96
+2006	TX	Bowie	48037	Oil	Oil (bbl)	Royalties	6992.84
+2006	TX	Brazos	48041	Gas	Processed (Residue) Gas (mcf)	Royalties	88.99
+2006	TX	Brazos	48041	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2034.18
+2006	TX	Brazos	48041	Oil	Oil (bbl)	Royalties	1268.57
+2006	TX	Chambers	48071	Oil	Oil (bbl)	Royalties	2121.88
+2006	TX	Denton	48121	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	813767.25
+2006	TX	Freestone	48161	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	77592.24
+2006	TX	Freestone	48161	Oil	Condensate (bbl)	Royalties	19.84
+2006	TX	Galveston	48167	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	677158.75
+2006	TX	Galveston	48167	Oil	Condensate (bbl)	Royalties	23080
+2006	TX	Galveston	48167	Oil	Oil (bbl)	Royalties	86114.27
+2006	TX	Gray	48179	Oil	Oil (bbl)	Royalties	2600.61
+2006	TX	Grayson	48181	Gas	Processed (Residue) Gas (mcf)	Royalties	27040.34
+2006	TX	Grayson	48181	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2175.46
+2006	TX	Grayson	48181	NGL	Gas Plant Products (gal)	Royalties	63197.44
+2006	TX	Grayson	48181	Oil	Oil (bbl)	Royalties	6480.94
+2006	TX	Hemphill	48211	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	10858.42
+2006	TX	Hemphill	48211	Oil	Condensate (bbl)	Royalties	126.92
+2006	TX	Hidalgo	48215	Gas	Processed (Residue) Gas (mcf)	Royalties	5118.84
+2006	TX	Hidalgo	48215	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	42473.06
+2006	TX	Hidalgo	48215	NGL	Gas Plant Products (gal)	Royalties	3196.03
+2006	TX	Hidalgo	48215	Oil	Condensate (bbl)	Royalties	219.68
+2006	TX	Houston	48225	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	832661.04
+2006	TX	Houston	48225	Oil	Oil (bbl)	Royalties	142195.4
+2006	TX	Jackson	48239	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	734.59
+2006	TX	Jackson	48239	Oil	Condensate (bbl)	Royalties	1.92
+2006	TX	Johnson	48251	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	6259.88
+2006	TX	Jones	48253	Gas	Processed (Residue) Gas (mcf)	Royalties	6173.63
+2006	TX	Jones	48253	Oil	Oil (bbl)	Royalties	3472.48
+2006	TX	Lee	48287	Gas	Processed (Residue) Gas (mcf)	Royalties	2863.47
+2006	TX	Lee	48287	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	146700.7
+2006	TX	Lee	48287	NGL	Gas Plant Products (gal)	Royalties	19715.52
+2006	TX	Lee	48287	Oil	Oil (bbl)	Royalties	7388.52
+2006	TX	Live Oak	48297	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	86942.01
+2006	TX	Nacogdoches	48347	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	20284.29
+2006	TX	Nacogdoches	48347	Oil	Condensate (bbl)	Royalties	10.89
+2006	TX	Newton	48351	Gas	Processed (Residue) Gas (mcf)	Royalties	85
+2006	TX	Nueces	48355	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	142458.39
+2006	TX	Nueces	48355	Oil	Condensate (bbl)	Royalties	1613.05
+2006	TX	Ochiltree	48357	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3253.37
+2006	TX	Parker	48367	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	16901
+2006	TX	Parker	48367	Oil	Condensate (bbl)	Royalties	39.71
+2006	TX	Sabine	48403	Gas	Processed (Residue) Gas (mcf)	Royalties	2767.64
+2006	TX	Sabine	48403	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	10714.33
+2006	TX	Sabine	48403	NGL	Gas Plant Products (gal)	Royalties	21190.69
+2006	TX	Sabine	48403	Oil	Condensate (bbl)	Royalties	131.68
+2006	TX	Sabine	48403	Oil	Oil (bbl)	Royalties	6000.44
+2006	TX	San Jacinto	48407	Gas	Processed (Residue) Gas (mcf)	Royalties	99378
+2006	TX	San Jacinto	48407	NGL	Gas Plant Products (gal)	Royalties	16517
+2006	TX	San Jacinto	48407	Oil	Condensate (bbl)	Royalties	2787.91
+2006	TX	San Jacinto	48407	Oil	Oil (bbl)	Royalties	5605.97
+2006	TX	Shelby	48419	Gas	Processed (Residue) Gas (mcf)	Royalties	570430.07
+2006	TX	Shelby	48419	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	7635749.85
+2006	TX	Shelby	48419	NGL	Gas Plant Products (gal)	Royalties	127677.7
+2006	TX	Shelby	48419	Oil	Condensate (bbl)	Royalties	5985.59
+2006	TX	Shelby	48419	Oil	Drip or Scrubber Condensate (bbl)	Royalties	324.14
+2006	TX	Shelby	48419	Oil	Oil (bbl)	Royalties	15995.43
+2006	TX	Sherman	48421	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	12961.24
+2006	TX	Starr	48427	Gas	Fuel Gas (mcf)	Royalties	2251.84
+2006	TX	Starr	48427	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	7747924.75
+2006	TX	Tarrant	48439	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2868322.12
+2006	TX	Taylor	48441	Gas	Processed (Residue) Gas (mcf)	Royalties	1504
+2006	TX	Taylor	48441	NGL	Gas Plant Products (gal)	Royalties	41509
+2006	TX	Walker	48471	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	87869
+2006	TX	Washington	48477	Gas	Processed (Residue) Gas (mcf)	Royalties	9477.6
+2006	TX	Washington	48477	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	30307.63
+2006	TX	Washington	48477	NGL	Gas Plant Products (gal)	Royalties	69675.77
+2006	TX	Washington	48477	Oil	Condensate (bbl)	Royalties	754.51
+2006	TX	Washington	48477	Oil	Oil (bbl)	Royalties	3281.99
+2006	TX	Wheeler	48483	Gas	Processed (Residue) Gas (mcf)	Royalties	1543.82
+2006	TX	Wheeler	48483	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	316265.96
+2006	TX	Wheeler	48483	NGL	Gas Plant Products (gal)	Royalties	188.49
+2006	TX	Wheeler	48483	Oil	Condensate (bbl)	Royalties	1229.6
+2006	TX	Wheeler	48483	Oil	Oil (bbl)	Royalties	9612.59
+2006	TX	Wise	48497	Gas	Processed (Residue) Gas (mcf)	Royalties	35359.26
+2006	TX	Wise	48497	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	231008.54
+2006	TX	Wise	48497	NGL	Gas Plant Products (gal)	Royalties	21381.93
+2006	TX	Wise	48497	Oil	Condensate (bbl)	Royalties	1534.11
+2006	TX	Wise	48497	Oil	Oil (bbl)	Royalties	21723.87
+2006	TX	Zapata	48505	Gas	Fuel Gas (mcf)	Royalties	1502.96
+2006	TX	Zapata	48505	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	230862.69
+2006	TX	Zapata	48505	Oil	Drip or Scrubber Condensate (bbl)	Royalties	86.4
+2007	TX	Bowie	48037	Oil	Oil (bbl)	Royalties	2693.05
+2007	TX	Brazos	48041	Gas	Processed (Residue) Gas (mcf)	Royalties	68.38
+2007	TX	Brazos	48041	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1813.48
+2007	TX	Brazos	48041	Oil	Oil (bbl)	Royalties	1129.63
+2007	TX	Chambers	48071	Oil	Oil (bbl)	Royalties	688.27
+2007	TX	Denton	48121	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	413063.5
+2007	TX	Freestone	48161	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	60498.08
+2007	TX	Freestone	48161	Oil	Condensate (bbl)	Royalties	25.28
+2007	TX	Galveston	48167	Gas	Flash Gas (mcf)	Royalties	50
+2007	TX	Galveston	48167	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	627631.1
+2007	TX	Galveston	48167	Oil	Condensate (bbl)	Royalties	17109.04
+2007	TX	Galveston	48167	Oil	Oil (bbl)	Royalties	65911.88
+2007	TX	Gray	48179	Oil	Oil (bbl)	Royalties	2271.31
+2007	TX	Grayson	48181	Gas	Processed (Residue) Gas (mcf)	Royalties	18420.8
+2007	TX	Grayson	48181	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	7175.46
+2007	TX	Grayson	48181	NGL	Gas Plant Products (gal)	Royalties	32968.07
+2007	TX	Grayson	48181	Oil	Oil (bbl)	Royalties	5388.5
+2007	TX	Harrison	48203	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	68246.38
+2007	TX	Harrison	48203	Oil	Condensate (bbl)	Royalties	1107.6
+2007	TX	Hemphill	48211	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	10780.53
+2007	TX	Hidalgo	48215	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	50855.01
+2007	TX	Hidalgo	48215	NGL	Gas Plant Products (gal)	Royalties	14310.03
+2007	TX	Hidalgo	48215	Oil	Condensate (bbl)	Royalties	178.73
+2007	TX	Houston	48225	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1289034.01
+2007	TX	Houston	48225	Oil	Oil (bbl)	Royalties	142869.63
+2007	TX	Jackson	48239	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	822.93
+2007	TX	Jasper	48241	Oil	Oil (bbl)	Royalties	667
+2007	TX	Johnson	48251	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	76692.12
+2007	TX	Jones	48253	Gas	Processed (Residue) Gas (mcf)	Royalties	11040.64
+2007	TX	Jones	48253	Oil	Oil (bbl)	Royalties	1608.12
+2007	TX	Lee	48287	Gas	Processed (Residue) Gas (mcf)	Royalties	2913.98
+2007	TX	Lee	48287	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	76969.66
+2007	TX	Lee	48287	NGL	Gas Plant Products (gal)	Royalties	20553.62
+2007	TX	Lee	48287	Oil	Oil (bbl)	Royalties	4439.48
+2007	TX	Live Oak	48297	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	43814
+2007	TX	Nacogdoches	48347	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	44462.54
+2007	TX	Nacogdoches	48347	Oil	Condensate (bbl)	Royalties	14.44
+2007	TX	Newton	48351	Gas	Processed (Residue) Gas (mcf)	Royalties	5
+2007	TX	Newton	48351	NGL	Gas Plant Products (gal)	Royalties	687.28
+2007	TX	Newton	48351	Oil	Oil (bbl)	Royalties	100.56
+2007	TX	Nueces	48355	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	63694.98
+2007	TX	Nueces	48355	Oil	Condensate (bbl)	Royalties	1060.46
+2007	TX	Ochiltree	48357	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	4018.5
+2007	TX	Parker	48367	Gas	Processed (Residue) Gas (mcf)	Royalties	68163.76
+2007	TX	Parker	48367	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	15804
+2007	TX	Parker	48367	NGL	Gas Plant Products (gal)	Royalties	272584
+2007	TX	Parker	48367	Oil	Condensate (bbl)	Royalties	178.72
+2007	TX	Robertson	48395	Gas	Fuel Gas (mcf)	Royalties	7
+2007	TX	Robertson	48395	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	150983.52
+2007	TX	Sabine	48403	Gas	Processed (Residue) Gas (mcf)	Royalties	1193.41
+2007	TX	Sabine	48403	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	9681.33
+2007	TX	Sabine	48403	NGL	Gas Plant Products (gal)	Royalties	115542.81
+2007	TX	Sabine	48403	Oil	Condensate (bbl)	Royalties	206.01
+2007	TX	Sabine	48403	Oil	Oil (bbl)	Royalties	3120.64
+2007	TX	San Jacinto	48407	Gas	Processed (Residue) Gas (mcf)	Royalties	333109
+2007	TX	San Jacinto	48407	NGL	Gas Plant Products (gal)	Royalties	82971
+2007	TX	San Jacinto	48407	Oil	Condensate (bbl)	Royalties	17774.03
+2007	TX	San Jacinto	48407	Oil	Oil (bbl)	Royalties	4880.76
+2007	TX	Shelby	48419	Gas	Processed (Residue) Gas (mcf)	Royalties	778092.81
+2007	TX	Shelby	48419	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	7014122.56
+2007	TX	Shelby	48419	NGL	Gas Plant Products (gal)	Royalties	129596.51
+2007	TX	Shelby	48419	Oil	Condensate (bbl)	Royalties	6166.76
+2007	TX	Shelby	48419	Oil	Drip or Scrubber Condensate (bbl)	Royalties	196.58
+2007	TX	Shelby	48419	Oil	Oil (bbl)	Royalties	16908.66
+2007	TX	Sherman	48421	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	20480.16
+2007	TX	Starr	48427	Gas	Fuel Gas (mcf)	Royalties	2060.72
+2007	TX	Starr	48427	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	8622671.38
+2007	TX	Tarrant	48439	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	5248695.32
+2007	TX	Taylor	48441	Gas	Processed (Residue) Gas (mcf)	Royalties	1131
+2007	TX	Taylor	48441	NGL	Gas Plant Products (gal)	Royalties	32991
+2007	TX	Walker	48471	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	96757
+2007	TX	Washington	48477	Gas	Processed (Residue) Gas (mcf)	Royalties	7913.57
+2007	TX	Washington	48477	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	19784.32
+2007	TX	Washington	48477	NGL	Gas Plant Products (gal)	Royalties	57375.23
+2007	TX	Washington	48477	Oil	Oil (bbl)	Royalties	2685.93
+2007	TX	Wheeler	48483	Gas	Processed (Residue) Gas (mcf)	Royalties	9992.19
+2007	TX	Wheeler	48483	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	312843.61
+2007	TX	Wheeler	48483	NGL	Gas Plant Products (gal)	Royalties	1304.34
+2007	TX	Wheeler	48483	Oil	Condensate (bbl)	Royalties	1334.64
+2007	TX	Wheeler	48483	Oil	Oil (bbl)	Royalties	6706.77
+2007	TX	Wise	48497	Gas	Processed (Residue) Gas (mcf)	Royalties	11184.14
+2007	TX	Wise	48497	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	371690.87
+2007	TX	Wise	48497	NGL	Gas Plant Products (gal)	Royalties	12199.12
+2007	TX	Wise	48497	Oil	Condensate (bbl)	Royalties	1720.98
+2007	TX	Wise	48497	Oil	Oil (bbl)	Royalties	27218.7
+2007	TX	Zapata	48505	Gas	Fuel Gas (mcf)	Royalties	1654.24
+2007	TX	Zapata	48505	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	316872.8
+2007	TX	Zapata	48505	Oil	Drip or Scrubber Condensate (bbl)	Royalties	97.34
+2007	TX	Zapata	48505	Oil	Oil (bbl)	Royalties	9.7
+2008	TX	Bowie	48037	Oil	Oil (bbl)	Royalties	1710.98
+2008	TX	Brazos	48041	Gas	Processed (Residue) Gas (mcf)	Royalties	64.83
+2008	TX	Brazos	48041	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1849.16
+2008	TX	Brazos	48041	Oil	Oil (bbl)	Royalties	1058.69
+2008	TX	Burleson	48051	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	207038.41
+2008	TX	Burleson	48051	Oil	Oil (bbl)	Royalties	21523.68
+2008	TX	Chambers	48071	Oil	Oil (bbl)	Royalties	2648.91
+2008	TX	Denton	48121	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	367139.8
+2008	TX	Freestone	48161	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	98284.8
+2008	TX	Freestone	48161	Oil	Condensate (bbl)	Royalties	73.92
+2008	TX	Galveston	48167	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	397985.67
+2008	TX	Galveston	48167	Oil	Condensate (bbl)	Royalties	31486.19
+2008	TX	Galveston	48167	Oil	Oil (bbl)	Royalties	49106.32
+2008	TX	Gray	48179	Oil	Oil (bbl)	Royalties	1592.11
+2008	TX	Grayson	48181	Gas	Processed (Residue) Gas (mcf)	Royalties	17542.83
+2008	TX	Grayson	48181	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	6010.74
+2008	TX	Grayson	48181	NGL	Gas Plant Products (gal)	Royalties	34189.86
+2008	TX	Grayson	48181	Oil	Oil (bbl)	Royalties	5767.12
+2008	TX	Harrison	48203	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	46999.35
+2008	TX	Harrison	48203	Oil	Condensate (bbl)	Royalties	918.08
+2008	TX	Hemphill	48211	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	9873.19
+2008	TX	Hidalgo	48215	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	33728.79
+2008	TX	Hidalgo	48215	NGL	Gas Plant Products (gal)	Royalties	32725.77
+2008	TX	Hidalgo	48215	Oil	Condensate (bbl)	Royalties	179.37
+2008	TX	Hill	48217	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	73388
+2008	TX	Houston	48225	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	754317.94
+2008	TX	Houston	48225	Oil	Oil (bbl)	Royalties	127682.64
+2008	TX	Jackson	48239	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	850.51
+2008	TX	Jasper	48241	Oil	Oil (bbl)	Royalties	1666
+2008	TX	Johnson	48251	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	120267.24
+2008	TX	Jones	48253	Gas	Processed (Residue) Gas (mcf)	Royalties	13163
+2008	TX	Jones	48253	NGL	Gas Plant Products (gal)	Royalties	4654
+2008	TX	Jones	48253	Oil	Oil (bbl)	Royalties	1554.35
+2008	TX	Lee	48287	Gas	Processed (Residue) Gas (mcf)	Royalties	1193.36
+2008	TX	Lee	48287	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	70507.69
+2008	TX	Lee	48287	NGL	Gas Plant Products (gal)	Royalties	8050.72
+2008	TX	Lee	48287	Oil	Oil (bbl)	Royalties	4630.83
+2008	TX	Live Oak	48297	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	44631
+2008	TX	Montague	48337	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	4537.35
+2008	TX	Montague	48337	Oil	Oil (bbl)	Royalties	10.27
+2008	TX	Nacogdoches	48347	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	210795.03
+2008	TX	Nacogdoches	48347	Oil	Condensate (bbl)	Royalties	41.19
+2008	TX	Newton	48351	NGL	Gas Plant Products (gal)	Royalties	12700.8
+2008	TX	Nueces	48355	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	70857.49
+2008	TX	Nueces	48355	Oil	Condensate (bbl)	Royalties	1243.03
+2008	TX	Ochiltree	48357	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3659.26
+2008	TX	Parker	48367	Gas	Processed (Residue) Gas (mcf)	Royalties	54040.88
+2008	TX	Parker	48367	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	9059
+2008	TX	Parker	48367	NGL	Gas Plant Products (gal)	Royalties	209104
+2008	TX	Robertson	48395	Gas	Fuel Gas (mcf)	Royalties	1145.44
+2008	TX	Robertson	48395	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	134864
+2008	TX	Sabine	48403	Gas	Processed (Residue) Gas (mcf)	Royalties	2190.54
+2008	TX	Sabine	48403	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	11488.49
+2008	TX	Sabine	48403	NGL	Gas Plant Products (gal)	Royalties	234021.57
+2008	TX	Sabine	48403	Oil	Condensate (bbl)	Royalties	285.25
+2008	TX	Sabine	48403	Oil	Oil (bbl)	Royalties	2758.25
+2008	TX	San Jacinto	48407	Gas	Processed (Residue) Gas (mcf)	Royalties	139598
+2008	TX	San Jacinto	48407	NGL	Gas Plant Products (gal)	Royalties	16165
+2008	TX	San Jacinto	48407	Oil	Condensate (bbl)	Royalties	2683.53
+2008	TX	San Jacinto	48407	Oil	Oil (bbl)	Royalties	6041.95
+2008	TX	Shelby	48419	Gas	Processed (Residue) Gas (mcf)	Royalties	631434.47
+2008	TX	Shelby	48419	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	5614499.67
+2008	TX	Shelby	48419	NGL	Gas Plant Products (gal)	Royalties	120740.21
+2008	TX	Shelby	48419	Oil	Condensate (bbl)	Royalties	5308.57
+2008	TX	Shelby	48419	Oil	Drip or Scrubber Condensate (bbl)	Royalties	143.25
+2008	TX	Shelby	48419	Oil	Oil (bbl)	Royalties	9153.67
+2008	TX	Sherman	48421	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	19111.63
+2008	TX	Starr	48427	Gas	Fuel Gas (mcf)	Royalties	3736.9
+2008	TX	Starr	48427	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	7321245.58
+2008	TX	Tarrant	48439	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	6671329.55
+2008	TX	Tarrant	48439	Oil	Condensate (bbl)	Royalties	2089.86
+2008	TX	Taylor	48441	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3520
+2008	TX	Walker	48471	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	97642
+2008	TX	Washington	48477	Gas	Processed (Residue) Gas (mcf)	Royalties	6758.28
+2008	TX	Washington	48477	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	16831.57
+2008	TX	Washington	48477	NGL	Gas Plant Products (gal)	Royalties	47804
+2008	TX	Washington	48477	Oil	Oil (bbl)	Royalties	3289.69
+2008	TX	Wheeler	48483	Gas	Processed (Residue) Gas (mcf)	Royalties	8922.03
+2008	TX	Wheeler	48483	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	234827.74
+2008	TX	Wheeler	48483	NGL	Gas Plant Products (gal)	Royalties	1166.04
+2008	TX	Wheeler	48483	Oil	Condensate (bbl)	Royalties	743.12
+2008	TX	Wheeler	48483	Oil	Oil (bbl)	Royalties	3742.52
+2008	TX	Wise	48497	Gas	Processed (Residue) Gas (mcf)	Royalties	9448.59
+2008	TX	Wise	48497	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	349312.35
+2008	TX	Wise	48497	NGL	Gas Plant Products (gal)	Royalties	15080.01
+2008	TX	Wise	48497	Oil	Condensate (bbl)	Royalties	1372.73
+2008	TX	Wise	48497	Oil	Oil (bbl)	Royalties	29448.58
+2008	TX	Zapata	48505	Gas	Fuel Gas (mcf)	Royalties	238.56
+2008	TX	Zapata	48505	Gas	Processed (Residue) Gas (mcf)	Royalties	148.11
+2008	TX	Zapata	48505	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	200777.51
+2008	TX	Zapata	48505	Oil	Condensate (bbl)	Royalties	56.06
+2008	TX	Zapata	48505	Oil	Drip or Scrubber Condensate (bbl)	Royalties	52.56
+2009	TX	Bowie	48037	Oil	Oil (bbl)	Royalties	2917.68
+2009	TX	Brazos	48041	Gas	Processed (Residue) Gas (mcf)	Royalties	62.09
+2009	TX	Brazos	48041	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2104.03
+2009	TX	Brazos	48041	Oil	Oil (bbl)	Royalties	1103.21
+2009	TX	Burleson	48051	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	172924.8
+2009	TX	Burleson	48051	Oil	Oil (bbl)	Royalties	8416.89
+2009	TX	Chambers	48071	Oil	Oil (bbl)	Royalties	1713.06
+2009	TX	Denton	48121	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	476019.92
+2009	TX	Freestone	48161	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	123126.56
+2009	TX	Freestone	48161	Oil	Condensate (bbl)	Royalties	48.16
+2009	TX	Galveston	48167	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	238814.54
+2009	TX	Galveston	48167	Oil	Condensate (bbl)	Royalties	33772.29
+2009	TX	Galveston	48167	Oil	Oil (bbl)	Royalties	38350.88
+2009	TX	Gray	48179	Oil	Oil (bbl)	Royalties	1585.57
+2009	TX	Grayson	48181	Gas	Processed (Residue) Gas (mcf)	Royalties	19518.31
+2009	TX	Grayson	48181	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3202.01
+2009	TX	Grayson	48181	NGL	Gas Plant Products (gal)	Royalties	57086.88
+2009	TX	Grayson	48181	Oil	Oil (bbl)	Royalties	6904.57
+2009	TX	Harrison	48203	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	17050.88
+2009	TX	Harrison	48203	Oil	Condensate (bbl)	Royalties	554.16
+2009	TX	Hemphill	48211	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	8448.59
+2009	TX	Hidalgo	48215	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	62714
+2009	TX	Hidalgo	48215	NGL	Gas Plant Products (gal)	Royalties	57063.82
+2009	TX	Hidalgo	48215	Oil	Condensate (bbl)	Royalties	339.48
+2009	TX	Hill	48217	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	117648
+2009	TX	Houston	48225	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	717373.38
+2009	TX	Houston	48225	Oil	Oil (bbl)	Royalties	105523.09
+2009	TX	Jackson	48239	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	210.55
+2009	TX	Jasper	48241	Oil	Oil (bbl)	Royalties	1635
+2009	TX	Johnson	48251	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	132826.51
+2009	TX	Jones	48253	Gas	Processed (Residue) Gas (mcf)	Royalties	98.39
+2009	TX	Jones	48253	Oil	Oil (bbl)	Royalties	113
+2009	TX	Lee	48287	Gas	Processed (Residue) Gas (mcf)	Royalties	953.52
+2009	TX	Lee	48287	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	111611.75
+2009	TX	Lee	48287	NGL	Gas Plant Products (gal)	Royalties	7027.2
+2009	TX	Lee	48287	Oil	Oil (bbl)	Royalties	5755.6
+2009	TX	Live Oak	48297	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	42325
+2009	TX	Montague	48337	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	738.47
+2009	TX	Montague	48337	Oil	Oil (bbl)	Royalties	10.37
+2009	TX	Montgomery	48339	Gas	Processed (Residue) Gas (mcf)	Royalties	121862
+2009	TX	Montgomery	48339	Oil	Condensate (bbl)	Royalties	923.18
+2009	TX	Nacogdoches	48347	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	232189.46
+2009	TX	Nacogdoches	48347	Oil	Condensate (bbl)	Royalties	2.54
+2009	TX	Nacogdoches	48347	Oil	Oil (bbl)	Royalties	207.4
+2009	TX	Newton	48351	Gas	Processed (Residue) Gas (mcf)	Royalties	5.49
+2009	TX	Newton	48351	NGL	Gas Plant Products (gal)	Royalties	9836.51
+2009	TX	Nueces	48355	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	49188.7
+2009	TX	Nueces	48355	Oil	Condensate (bbl)	Royalties	530.82
+2009	TX	Ochiltree	48357	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	4447.5
+2009	TX	Parker	48367	Gas	Processed (Residue) Gas (mcf)	Royalties	23766.24
+2009	TX	Parker	48367	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	13116.12
+2009	TX	Parker	48367	NGL	Gas Plant Products (gal)	Royalties	112128
+2009	TX	Parker	48367	Oil	Condensate (bbl)	Royalties	173.76
+2009	TX	Robertson	48395	Gas	Fuel Gas (mcf)	Royalties	779.04
+2009	TX	Robertson	48395	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	64624
+2009	TX	Sabine	48403	Gas	Processed (Residue) Gas (mcf)	Royalties	16666.13
+2009	TX	Sabine	48403	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	924.36
+2009	TX	Sabine	48403	NGL	Gas Plant Products (gal)	Royalties	349915.16
+2009	TX	Sabine	48403	Oil	Oil (bbl)	Royalties	3750.43
+2009	TX	San Augustin	48405	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	40323.36
+2009	TX	San Augustin	48405	Oil	Oil (bbl)	Royalties	11.12
+2009	TX	San Jacinto	48407	Gas	Processed (Residue) Gas (mcf)	Royalties	217233
+2009	TX	San Jacinto	48407	NGL	Gas Plant Products (gal)	Royalties	51147
+2009	TX	San Jacinto	48407	Oil	Condensate (bbl)	Royalties	2373.13
+2009	TX	San Jacinto	48407	Oil	Oil (bbl)	Royalties	7312.01
+2009	TX	Shelby	48419	Gas	Processed (Residue) Gas (mcf)	Royalties	361555.45
+2009	TX	Shelby	48419	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	5287606.59
+2009	TX	Shelby	48419	NGL	Gas Plant Products (gal)	Royalties	85148.37
+2009	TX	Shelby	48419	Oil	Condensate (bbl)	Royalties	4277.95
+2009	TX	Shelby	48419	Oil	Oil (bbl)	Royalties	66919.79
+2009	TX	Sherman	48421	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	13514.92
+2009	TX	Starr	48427	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	6555302.56
+2009	TX	Tarrant	48439	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	6692252.06
+2009	TX	Tarrant	48439	Oil	Condensate (bbl)	Royalties	4719.85
+2009	TX	Taylor	48441	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2935
+2009	TX	Walker	48471	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	99349
+2009	TX	Washington	48477	Gas	Processed (Residue) Gas (mcf)	Royalties	7845.27
+2009	TX	Washington	48477	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	13068.15
+2009	TX	Washington	48477	NGL	Gas Plant Products (gal)	Royalties	40705.67
+2009	TX	Washington	48477	Oil	Oil (bbl)	Royalties	2470.65
+2009	TX	Wheeler	48483	Gas	Processed (Residue) Gas (mcf)	Royalties	7678.09
+2009	TX	Wheeler	48483	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	358403.31
+2009	TX	Wheeler	48483	NGL	Gas Plant Products (gal)	Royalties	974.22
+2009	TX	Wheeler	48483	Oil	Condensate (bbl)	Royalties	1028.97
+2009	TX	Wheeler	48483	Oil	Oil (bbl)	Royalties	2520.01
+2009	TX	Wise	48497	Gas	Processed (Residue) Gas (mcf)	Royalties	51483.08
+2009	TX	Wise	48497	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	261097.91
+2009	TX	Wise	48497	NGL	Gas Plant Products (gal)	Royalties	31963.74
+2009	TX	Wise	48497	Oil	Condensate (bbl)	Royalties	1237.61
+2009	TX	Wise	48497	Oil	Oil (bbl)	Royalties	24883.57
+2009	TX	Zapata	48505	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	148535.46
+2009	TX	Zapata	48505	Oil	Condensate (bbl)	Royalties	84.58
+2010	TX	Bowie	48037	Oil	Oil (bbl)	Royalties	3915.02
+2010	TX	Brazos	48041	Gas	Processed (Residue) Gas (mcf)	Royalties	35.2
+2010	TX	Brazos	48041	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2685.36
+2010	TX	Brazos	48041	Oil	Oil (bbl)	Royalties	1709.28
+2010	TX	Burleson	48051	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	73534
+2010	TX	Burleson	48051	Oil	Oil (bbl)	Royalties	4297.01
+2010	TX	Chambers	48071	Oil	Oil (bbl)	Royalties	3419.43
+2010	TX	Denton	48121	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	309438.32
+2010	TX	Freestone	48161	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	135523.84
+2010	TX	Freestone	48161	Oil	Condensate (bbl)	Royalties	62.4
+2010	TX	Galveston	48167	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	212381.09
+2010	TX	Galveston	48167	Oil	Condensate (bbl)	Royalties	22347.1
+2010	TX	Galveston	48167	Oil	Oil (bbl)	Royalties	31290.43
+2010	TX	Gray	48179	Oil	Oil (bbl)	Royalties	976.24
+2010	TX	Grayson	48181	Gas	Processed (Residue) Gas (mcf)	Royalties	17374.46
+2010	TX	Grayson	48181	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1198.62
+2010	TX	Grayson	48181	NGL	Gas Plant Products (gal)	Royalties	42350.6
+2010	TX	Grayson	48181	Oil	Oil (bbl)	Royalties	6743.08
+2010	TX	Harrison	48203	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	7309.06
+2010	TX	Harrison	48203	Oil	Condensate (bbl)	Royalties	117.36
+2010	TX	Hemphill	48211	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	69534.55
+2010	TX	Hemphill	48211	Oil	Oil (bbl)	Royalties	956
+2010	TX	Hidalgo	48215	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	56594.75
+2010	TX	Hidalgo	48215	NGL	Gas Plant Products (gal)	Royalties	60955.47
+2010	TX	Hidalgo	48215	Oil	Condensate (bbl)	Royalties	235.48
+2010	TX	Hill	48217	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	32787
+2010	TX	Houston	48225	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	714649.66
+2010	TX	Houston	48225	Oil	Oil (bbl)	Royalties	95977.84
+2010	TX	Jackson	48239	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	160023.27
+2010	TX	Jackson	48239	Oil	Condensate (bbl)	Royalties	4894.96
+2010	TX	Jasper	48241	Oil	Oil (bbl)	Royalties	1201.63
+2010	TX	Johnson	48251	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	162792.83
+2010	TX	Lee	48287	Gas	Processed (Residue) Gas (mcf)	Royalties	383.44
+2010	TX	Lee	48287	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	102840.69
+2010	TX	Lee	48287	NGL	Gas Plant Products (gal)	Royalties	3084.21
+2010	TX	Lee	48287	Oil	Oil (bbl)	Royalties	4888.02
+2010	TX	Live Oak	48297	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	15397
+2010	TX	Live Oak	48297	Oil	Oil (bbl)	Royalties	10
+2010	TX	Montgomery	48339	Gas	Processed (Residue) Gas (mcf)	Royalties	201221
+2010	TX	Montgomery	48339	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	279045.96
+2010	TX	Montgomery	48339	Oil	Condensate (bbl)	Royalties	1451.89
+2010	TX	Nacogdoches	48347	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	154531.59
+2010	TX	Nacogdoches	48347	Oil	Condensate (bbl)	Royalties	24.91
+2010	TX	Nacogdoches	48347	Oil	Oil (bbl)	Royalties	87.6
+2010	TX	Newton	48351	Oil	Oil (bbl)	Royalties	53.2
+2010	TX	Nueces	48355	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	32728
+2010	TX	Nueces	48355	Oil	Condensate (bbl)	Royalties	678.39
+2010	TX	Ochiltree	48357	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3340.48
+2010	TX	Parker	48367	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	13915.67
+2010	TX	Robertson	48395	Gas	Fuel Gas (mcf)	Royalties	572.48
+2010	TX	Robertson	48395	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	86024.48
+2010	TX	Sabine	48403	Gas	Processed (Residue) Gas (mcf)	Royalties	9847.93
+2010	TX	Sabine	48403	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	17361.47
+2010	TX	Sabine	48403	NGL	Gas Plant Products (gal)	Royalties	189296.44
+2010	TX	Sabine	48403	Oil	Oil (bbl)	Royalties	10223.69
+2010	TX	San Augustin	48405	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	25028.66
+2010	TX	San Augustin	48405	Oil	Oil (bbl)	Royalties	7.64
+2010	TX	San Jacinto	48407	Gas	Processed (Residue) Gas (mcf)	Royalties	711387.93
+2010	TX	San Jacinto	48407	NGL	Gas Plant Products (gal)	Royalties	106203.34
+2010	TX	San Jacinto	48407	Oil	Condensate (bbl)	Royalties	19274.11
+2010	TX	San Jacinto	48407	Oil	Oil (bbl)	Royalties	7604.15
+2010	TX	Shelby	48419	Gas	Processed (Residue) Gas (mcf)	Royalties	351551.19
+2010	TX	Shelby	48419	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	5088227.5
+2010	TX	Shelby	48419	NGL	Gas Plant Products (gal)	Royalties	45728.07
+2010	TX	Shelby	48419	Oil	Condensate (bbl)	Royalties	5429.29
+2010	TX	Shelby	48419	Oil	Drip or Scrubber Condensate (bbl)	Royalties	12.32
+2010	TX	Shelby	48419	Oil	Oil (bbl)	Royalties	15901.28
+2010	TX	Sherman	48421	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	5859.04
+2010	TX	Starr	48427	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	5283430.82
+2010	TX	Tarrant	48439	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	5371005.82
+2010	TX	Tarrant	48439	Oil	Condensate (bbl)	Royalties	2495.72
+2010	TX	Taylor	48441	Gas	Processed (Residue) Gas (mcf)	Royalties	605
+2010	TX	Taylor	48441	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	823
+2010	TX	Taylor	48441	NGL	Gas Plant Products (gal)	Royalties	17941
+2010	TX	Walker	48471	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	59179
+2010	TX	Washington	48477	Gas	Processed (Residue) Gas (mcf)	Royalties	6592.54
+2010	TX	Washington	48477	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	4766.13
+2010	TX	Washington	48477	NGL	Gas Plant Products (gal)	Royalties	30536.79
+2010	TX	Washington	48477	Oil	Oil (bbl)	Royalties	1438.1
+2010	TX	Wheeler	48483	Gas	Processed (Residue) Gas (mcf)	Royalties	6958.51
+2010	TX	Wheeler	48483	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	475160.37
+2010	TX	Wheeler	48483	NGL	Gas Plant Products (gal)	Royalties	973.47
+2010	TX	Wheeler	48483	Oil	Condensate (bbl)	Royalties	1541.6
+2010	TX	Wheeler	48483	Oil	Oil (bbl)	Royalties	1816.75
+2010	TX	Wise	48497	Gas	Processed (Residue) Gas (mcf)	Royalties	246698.69
+2010	TX	Wise	48497	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	271845.41
+2010	TX	Wise	48497	NGL	Gas Plant Products (gal)	Royalties	26380.62
+2010	TX	Wise	48497	Oil	Condensate (bbl)	Royalties	4757.37
+2010	TX	Wise	48497	Oil	Oil (bbl)	Royalties	37618.87
+2010	TX	Zapata	48505	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	136112.57
+2010	TX	Zapata	48505	Oil	Condensate (bbl)	Royalties	68.43
+2011	TX	Bowie	48037	Oil	Oil (bbl)	Royalties	2054.13
+2011	TX	Brazos	48041	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1918.99
+2011	TX	Brazos	48041	Oil	Oil (bbl)	Royalties	1530.92
+2011	TX	Burleson	48051	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	21351.96
+2011	TX	Burleson	48051	Oil	Oil (bbl)	Royalties	2236.85
+2011	TX	Chambers	48071	Oil	Oil (bbl)	Royalties	4640.63
+2011	TX	De Witt	48123	Gas	Flash Gas (mcf)	Royalties	390.32
+2011	TX	De Witt	48123	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	49190.88
+2011	TX	De Witt	48123	Oil	Condensate (bbl)	Royalties	29468.16
+2011	TX	De Witt	48123	Oil	Inlet Scrubber (bbl)	Royalties	796.48
+2011	TX	Denton	48121	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	990180.01
+2011	TX	Freestone	48161	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	109229.92
+2011	TX	Freestone	48161	Oil	Condensate (bbl)	Royalties	23.36
+2011	TX	Galveston	48167	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	93830.68
+2011	TX	Galveston	48167	Oil	Condensate (bbl)	Royalties	14895.04
+2011	TX	Galveston	48167	Oil	Oil (bbl)	Royalties	27143.01
+2011	TX	Gray	48179	Oil	Oil (bbl)	Royalties	852.77
+2011	TX	Grayson	48181	Gas	Processed (Residue) Gas (mcf)	Royalties	22300.62
+2011	TX	Grayson	48181	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1168.56
+2011	TX	Grayson	48181	NGL	Gas Plant Products (gal)	Royalties	48657.76
+2011	TX	Grayson	48181	Oil	Oil (bbl)	Royalties	8252.89
+2011	TX	Harrison	48203	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	4337.52
+2011	TX	Hemphill	48211	Gas	Processed (Residue) Gas (mcf)	Royalties	9850.77
+2011	TX	Hemphill	48211	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	161702.98
+2011	TX	Hemphill	48211	NGL	Gas Plant Products (gal)	Royalties	37641.05
+2011	TX	Hemphill	48211	Oil	Oil (bbl)	Royalties	1927.18
+2011	TX	Hidalgo	48215	Gas	Processed (Residue) Gas (mcf)	Royalties	22588.95
+2011	TX	Hidalgo	48215	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	15729.84
+2011	TX	Hidalgo	48215	NGL	Gas Plant Products (gal)	Royalties	42668.48
+2011	TX	Hidalgo	48215	Oil	Condensate (bbl)	Royalties	231.81
+2011	TX	Houston	48225	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	454019.67
+2011	TX	Houston	48225	Oil	Oil (bbl)	Royalties	86405.7
+2011	TX	Jackson	48239	Gas	Fuel Gas (mcf)	Royalties	2834.98
+2011	TX	Jackson	48239	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	82863.9
+2011	TX	Jackson	48239	Oil	Condensate (bbl)	Royalties	36659.2
+2011	TX	Jasper	48241	Oil	Oil (bbl)	Royalties	62.96
+2011	TX	Johnson	48251	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	713813.98
+2011	TX	Karnes	48255	Gas	Processed (Residue) Gas (mcf)	Royalties	355.2
+2011	TX	Karnes	48255	NGL	Gas Plant Products (gal)	Royalties	2685.65
+2011	TX	Karnes	48255	Oil	Oil (bbl)	Royalties	3709.17
+2011	TX	Lee	48287	Gas	Processed (Residue) Gas (mcf)	Royalties	444.64
+2011	TX	Lee	48287	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	102364.41
+2011	TX	Lee	48287	NGL	Gas Plant Products (gal)	Royalties	3542.72
+2011	TX	Lee	48287	Oil	Oil (bbl)	Royalties	5475.28
+2011	TX	Montague	48337	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2054.09
+2011	TX	Montague	48337	Oil	Oil (bbl)	Royalties	154.66
+2011	TX	Montgomery	48339	Gas	Processed (Residue) Gas (mcf)	Royalties	157988
+2011	TX	Montgomery	48339	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	86857.55
+2011	TX	Montgomery	48339	Oil	Condensate (bbl)	Royalties	1731.23
+2011	TX	Nacogdoches	48347	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	112029.48
+2011	TX	Nacogdoches	48347	Oil	Condensate (bbl)	Royalties	2.06
+2011	TX	Nacogdoches	48347	Oil	Oil (bbl)	Royalties	3.09
+2011	TX	Nueces	48355	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	32026
+2011	TX	Nueces	48355	Oil	Condensate (bbl)	Royalties	195.58
+2011	TX	Ochiltree	48357	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3141.67
+2011	TX	Ochiltree	48357	Oil	Condensate (bbl)	Royalties	155.24
+2011	TX	Parker	48367	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	13169.74
+2011	TX	Robertson	48395	Gas	Fuel Gas (mcf)	Royalties	413.28
+2011	TX	Robertson	48395	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	183779.9
+2011	TX	Sabine	48403	Gas	Processed (Residue) Gas (mcf)	Royalties	27428.6
+2011	TX	Sabine	48403	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	195455.67
+2011	TX	Sabine	48403	NGL	Gas Plant Products (gal)	Royalties	188874.38
+2011	TX	Sabine	48403	Oil	Condensate (bbl)	Royalties	130.56
+2011	TX	Sabine	48403	Oil	Oil (bbl)	Royalties	8379.17
+2011	TX	San Augustin	48405	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	9159.16
+2011	TX	San Augustin	48405	Oil	Oil (bbl)	Royalties	7.6
+2011	TX	San Jacinto	48407	Gas	Processed (Residue) Gas (mcf)	Royalties	385422.5
+2011	TX	San Jacinto	48407	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	49675.29
+2011	TX	San Jacinto	48407	NGL	Gas Plant Products (gal)	Royalties	172216.83
+2011	TX	San Jacinto	48407	Oil	Condensate (bbl)	Royalties	26247.55
+2011	TX	San Jacinto	48407	Oil	Oil (bbl)	Royalties	13964.36
+2011	TX	Shelby	48419	Gas	Processed (Residue) Gas (mcf)	Royalties	553698.04
+2011	TX	Shelby	48419	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	8317069.95
+2011	TX	Shelby	48419	NGL	Gas Plant Products (gal)	Royalties	44114.21
+2011	TX	Shelby	48419	Oil	Condensate (bbl)	Royalties	2909.97
+2011	TX	Shelby	48419	Oil	Drip or Scrubber Condensate (bbl)	Royalties	136.98
+2011	TX	Shelby	48419	Oil	Oil (bbl)	Royalties	16420.04
+2011	TX	Starr	48427	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	4545236.45
+2011	TX	Tarrant	48439	Gas	Processed (Residue) Gas (mcf)	Royalties	310499.76
+2011	TX	Tarrant	48439	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	12583543.14
+2011	TX	Tarrant	48439	NGL	Gas Plant Products (gal)	Royalties	837350.35
+2011	TX	Tarrant	48439	Oil	Condensate (bbl)	Royalties	2227.85
+2011	TX	Taylor	48441	Gas	Processed (Residue) Gas (mcf)	Royalties	195
+2011	TX	Taylor	48441	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	814
+2011	TX	Taylor	48441	NGL	Gas Plant Products (gal)	Royalties	6141
+2011	TX	Walker	48471	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	26173
+2011	TX	Washington	48477	Gas	Processed (Residue) Gas (mcf)	Royalties	5628.88
+2011	TX	Washington	48477	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	4019.75
+2011	TX	Washington	48477	NGL	Gas Plant Products (gal)	Royalties	28668.58
+2011	TX	Washington	48477	Oil	Oil (bbl)	Royalties	1033.84
+2011	TX	Wheeler	48483	Gas	Processed (Residue) Gas (mcf)	Royalties	543449.82
+2011	TX	Wheeler	48483	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	380566.63
+2011	TX	Wheeler	48483	NGL	Gas Plant Products (gal)	Royalties	461153
+2011	TX	Wheeler	48483	Oil	Condensate (bbl)	Royalties	39946.72
+2011	TX	Wheeler	48483	Oil	Oil (bbl)	Royalties	1250.07
+2011	TX	Wise	48497	Gas	Processed (Residue) Gas (mcf)	Royalties	7288.03
+2011	TX	Wise	48497	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1484073.23
+2011	TX	Wise	48497	NGL	Gas Plant Products (gal)	Royalties	12725.84
+2011	TX	Wise	48497	Oil	Condensate (bbl)	Royalties	4210.51
+2011	TX	Wise	48497	Oil	Oil (bbl)	Royalties	67640.82
+2011	TX	Zapata	48505	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	102114.38
+2011	TX	Zapata	48505	Oil	Condensate (bbl)	Royalties	49.12
+2012	TX	Bowie	48037	Oil	Oil (bbl)	Royalties	1821.69
+2012	TX	Brazos	48041	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2448.32
+2012	TX	Brazos	48041	Oil	Oil (bbl)	Royalties	2743.88
+2012	TX	Burleson	48051	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2074.08
+2012	TX	Burleson	48051	Oil	Oil (bbl)	Royalties	160.31
+2012	TX	Chambers	48071	Oil	Oil (bbl)	Royalties	3535.88
+2012	TX	De Witt	48123	Gas	Flash Gas (mcf)	Royalties	5200.31
+2012	TX	De Witt	48123	Gas	Processed (Residue) Gas (mcf)	Royalties	5580.33
+2012	TX	De Witt	48123	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	52247.17
+2012	TX	De Witt	48123	NGL	Gas Plant Products (gal)	Royalties	31906.56
+2012	TX	De Witt	48123	Oil	Condensate (bbl)	Royalties	32626.88
+2012	TX	De Witt	48123	Oil	Inlet Scrubber (bbl)	Royalties	2531.2
+2012	TX	Denton	48121	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	757122.4
+2012	TX	Freestone	48161	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	89196.64
+2012	TX	Freestone	48161	Oil	Condensate (bbl)	Royalties	12.48
+2012	TX	Galveston	48167	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	70911.18
+2012	TX	Galveston	48167	Oil	Condensate (bbl)	Royalties	11019.83
+2012	TX	Galveston	48167	Oil	Oil (bbl)	Royalties	23588.3
+2012	TX	Gray	48179	Oil	Oil (bbl)	Royalties	1518.49
+2012	TX	Grayson	48181	Gas	Processed (Residue) Gas (mcf)	Royalties	20978.4
+2012	TX	Grayson	48181	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1079.72
+2012	TX	Grayson	48181	NGL	Gas Plant Products (gal)	Royalties	35088.76
+2012	TX	Grayson	48181	Oil	Oil (bbl)	Royalties	5499.62
+2012	TX	Harrison	48203	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	7098.13
+2012	TX	Hemphill	48211	Gas	Processed (Residue) Gas (mcf)	Royalties	42582.68
+2012	TX	Hemphill	48211	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	8320.72
+2012	TX	Hemphill	48211	NGL	Gas Plant Products (gal)	Royalties	137887.52
+2012	TX	Hemphill	48211	Oil	Condensate (bbl)	Royalties	121.2
+2012	TX	Hemphill	48211	Oil	Oil (bbl)	Royalties	816.54
+2012	TX	Hidalgo	48215	Gas	Processed (Residue) Gas (mcf)	Royalties	22915.31
+2012	TX	Hidalgo	48215	NGL	Gas Plant Products (gal)	Royalties	29963.82
+2012	TX	Hidalgo	48215	Oil	Condensate (bbl)	Royalties	106.93
+2012	TX	Hill	48217	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	18996
+2012	TX	Houston	48225	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	333138.98
+2012	TX	Houston	48225	Oil	Oil (bbl)	Royalties	76781.25
+2012	TX	Jackson	48239	Gas	Fuel Gas (mcf)	Royalties	5009.05
+2012	TX	Jackson	48239	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	33058.7
+2012	TX	Jackson	48239	Oil	Condensate (bbl)	Royalties	23446.72
+2012	TX	Jasper	48241	Oil	Oil (bbl)	Royalties	31.05
+2012	TX	Johnson	48251	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	756631.6
+2012	TX	Karnes	48255	Gas	Processed (Residue) Gas (mcf)	Royalties	2031.26
+2012	TX	Karnes	48255	NGL	Gas Plant Products (gal)	Royalties	17532.14
+2012	TX	Karnes	48255	Oil	Oil (bbl)	Royalties	2844.48
+2012	TX	Lee	48287	Gas	Processed (Residue) Gas (mcf)	Royalties	513.44
+2012	TX	Lee	48287	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	86404.38
+2012	TX	Lee	48287	NGL	Gas Plant Products (gal)	Royalties	4658.96
+2012	TX	Lee	48287	Oil	Oil (bbl)	Royalties	4996.33
+2012	TX	Mcmullen	48311	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3597.92
+2012	TX	Mcmullen	48311	Oil	Condensate (bbl)	Royalties	25.6
+2012	TX	Montague	48337	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	48993.91
+2012	TX	Montague	48337	Oil	Oil (bbl)	Royalties	1307.15
+2012	TX	Montgomery	48339	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	174929
+2012	TX	Montgomery	48339	Oil	Condensate (bbl)	Royalties	1364.49
+2012	TX	Nacogdoches	48347	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	94982.11
+2012	TX	Nacogdoches	48347	Oil	Condensate (bbl)	Royalties	2.26
+2012	TX	Nacogdoches	48347	Oil	Oil (bbl)	Royalties	188.73
+2012	TX	Nueces	48355	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	47948
+2012	TX	Nueces	48355	Oil	Condensate (bbl)	Royalties	94.09
+2012	TX	Ochiltree	48357	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3305.81
+2012	TX	Parker	48367	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	14614.94
+2012	TX	Robertson	48395	Gas	Fuel Gas (mcf)	Royalties	429.28
+2012	TX	Robertson	48395	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	201706.4
+2012	TX	Sabine	48403	Gas	Processed (Residue) Gas (mcf)	Royalties	46727.04
+2012	TX	Sabine	48403	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	4026191.46
+2012	TX	Sabine	48403	NGL	Gas Plant Products (gal)	Royalties	49610.39
+2012	TX	Sabine	48403	Oil	Condensate (bbl)	Royalties	1098.47
+2012	TX	Sabine	48403	Oil	Oil (bbl)	Royalties	8275.62
+2012	TX	San Augustin	48405	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1507152.13
+2012	TX	San Augustin	48405	Oil	Oil (bbl)	Royalties	5.05
+2012	TX	San Jacinto	48407	Gas	Processed (Residue) Gas (mcf)	Royalties	99459.44
+2012	TX	San Jacinto	48407	NGL	Gas Plant Products (gal)	Royalties	54453.9
+2012	TX	San Jacinto	48407	Oil	Condensate (bbl)	Royalties	15411.55
+2012	TX	San Jacinto	48407	Oil	Oil (bbl)	Royalties	19703.68
+2012	TX	Shelby	48419	Gas	Fuel Gas (mcf)	Royalties	3468
+2012	TX	Shelby	48419	Gas	Processed (Residue) Gas (mcf)	Royalties	393947.93
+2012	TX	Shelby	48419	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	10316801.07
+2012	TX	Shelby	48419	NGL	Gas Plant Products (gal)	Royalties	53986.99
+2012	TX	Shelby	48419	Oil	Condensate (bbl)	Royalties	1863.22
+2012	TX	Shelby	48419	Oil	Drip or Scrubber Condensate (bbl)	Royalties	142.88
+2012	TX	Shelby	48419	Oil	Oil (bbl)	Royalties	6541.93
+2012	TX	Starr	48427	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3884894.92
+2012	TX	Tarrant	48439	Gas	Processed (Residue) Gas (mcf)	Royalties	241708.88
+2012	TX	Tarrant	48439	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	28680703.11
+2012	TX	Tarrant	48439	NGL	Gas Plant Products (gal)	Royalties	1139106.37
+2012	TX	Tarrant	48439	Oil	Condensate (bbl)	Royalties	2307.24
+2012	TX	Tarrant	48439	Oil	Oil (bbl)	Royalties	319.44
+2012	TX	Walker	48471	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1977.94
+2012	TX	Washington	48477	Gas	Processed (Residue) Gas (mcf)	Royalties	3733.37
+2012	TX	Washington	48477	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3846.11
+2012	TX	Washington	48477	NGL	Gas Plant Products (gal)	Royalties	17227
+2012	TX	Washington	48477	Oil	Oil (bbl)	Royalties	991.98
+2012	TX	Wheeler	48483	Gas	Processed (Residue) Gas (mcf)	Royalties	1809385.83
+2012	TX	Wheeler	48483	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	449693.53
+2012	TX	Wheeler	48483	NGL	Gas Plant Products (gal)	Royalties	2317468.53
+2012	TX	Wheeler	48483	Oil	Condensate (bbl)	Royalties	95780.35
+2012	TX	Wheeler	48483	Oil	Oil (bbl)	Royalties	11618
+2012	TX	Wise	48497	Gas	Processed (Residue) Gas (mcf)	Royalties	10775.14
+2012	TX	Wise	48497	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2323950.19
+2012	TX	Wise	48497	NGL	Gas Plant Products (gal)	Royalties	13298.06
+2012	TX	Wise	48497	Oil	Condensate (bbl)	Royalties	15078.13
+2012	TX	Wise	48497	Oil	Oil (bbl)	Royalties	81486.94
+2012	TX	Zapata	48505	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	72234.12
+2012	TX	Zapata	48505	Oil	Condensate (bbl)	Royalties	36
+2012	TX	Zapata	48505	Oil	Oil (bbl)	Royalties	5.45
+2013	TX	Bowie	48037	Oil	Oil (bbl)	Royalties	934.62
+2013	TX	Brazos	48041	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1967.36
+2013	TX	Brazos	48041	Oil	Oil (bbl)	Royalties	2145.89
+2013	TX	Burleson	48051	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2420.29
+2013	TX	Burleson	48051	Oil	Oil (bbl)	Royalties	158.78
+2013	TX	Chambers	48071	Oil	Oil (bbl)	Royalties	1766
+2013	TX	De Witt	48123	Gas	Flash Gas (mcf)	Royalties	2199.95
+2013	TX	De Witt	48123	Gas	Processed (Residue) Gas (mcf)	Royalties	29099.74
+2013	TX	De Witt	48123	NGL	Gas Plant Products (gal)	Royalties	134699.04
+2013	TX	De Witt	48123	Oil	Condensate (bbl)	Royalties	6042.4
+2013	TX	De Witt	48123	Oil	Drip or Scrubber Condensate (bbl)	Royalties	0.16
+2013	TX	De Witt	48123	Oil	Inlet Scrubber (bbl)	Royalties	681.6
+2013	TX	De Witt	48123	Oil	Oil (bbl)	Royalties	8701.6
+2013	TX	Denton	48121	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	542177.4
+2013	TX	Freestone	48161	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	71844.16
+2013	TX	Galveston	48167	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	27337.52
+2013	TX	Galveston	48167	Oil	Condensate (bbl)	Royalties	8349
+2013	TX	Galveston	48167	Oil	Oil (bbl)	Royalties	20170.41
+2013	TX	Gray	48179	Oil	Oil (bbl)	Royalties	1729.81
+2013	TX	Grayson	48181	Gas	Processed (Residue) Gas (mcf)	Royalties	10644.7
+2013	TX	Grayson	48181	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1028.29
+2013	TX	Grayson	48181	NGL	Gas Plant Products (gal)	Royalties	19446.82
+2013	TX	Grayson	48181	Oil	Oil (bbl)	Royalties	3489.14
+2013	TX	Harrison	48203	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2618.69
+2013	TX	Hemphill	48211	Gas	Processed (Residue) Gas (mcf)	Royalties	30070.73
+2013	TX	Hemphill	48211	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	632.23
+2013	TX	Hemphill	48211	NGL	Gas Plant Products (gal)	Royalties	101403.55
+2013	TX	Hemphill	48211	Oil	Oil (bbl)	Royalties	400.21
+2013	TX	Hidalgo	48215	Gas	Processed (Residue) Gas (mcf)	Royalties	22199.92
+2013	TX	Hidalgo	48215	NGL	Gas Plant Products (gal)	Royalties	28799.04
+2013	TX	Hidalgo	48215	Oil	Condensate (bbl)	Royalties	117.06
+2013	TX	Hill	48217	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	19964
+2013	TX	Houston	48225	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	286901.1
+2013	TX	Houston	48225	Oil	Condensate (bbl)	Royalties	189.6
+2013	TX	Houston	48225	Oil	Oil (bbl)	Royalties	65541.8
+2013	TX	Jackson	48239	Gas	Fuel Gas (mcf)	Royalties	7039.7
+2013	TX	Jackson	48239	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	135171.22
+2013	TX	Jackson	48239	Oil	Condensate (bbl)	Royalties	39712.4
+2013	TX	Johnson	48251	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	480240.59
+2013	TX	Karnes	48255	Gas	Processed (Residue) Gas (mcf)	Royalties	327.65
+2013	TX	Karnes	48255	NGL	Gas Plant Products (gal)	Royalties	2319.37
+2013	TX	Karnes	48255	Oil	Oil (bbl)	Royalties	1547.28
+2013	TX	Lee	48287	Gas	Fuel Gas (mcf)	Royalties	18.14
+2013	TX	Lee	48287	Gas	Processed (Residue) Gas (mcf)	Royalties	633.4
+2013	TX	Lee	48287	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	83592.71
+2013	TX	Lee	48287	NGL	Gas Plant Products (gal)	Royalties	4344.92
+2013	TX	Lee	48287	Oil	Oil (bbl)	Royalties	5385.86
+2013	TX	Mcmullen	48311	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	60964.24
+2013	TX	Mcmullen	48311	Oil	Condensate (bbl)	Royalties	377.04
+2013	TX	Montague	48337	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	93967.06
+2013	TX	Montague	48337	Oil	Oil (bbl)	Royalties	1587.47
+2013	TX	Montgomery	48339	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	152294
+2013	TX	Montgomery	48339	Oil	Condensate (bbl)	Royalties	1173.47
+2013	TX	Nacogdoches	48347	Gas	Fuel Gas (mcf)	Royalties	70.56
+2013	TX	Nacogdoches	48347	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	76944.68
+2013	TX	Nacogdoches	48347	Oil	Condensate (bbl)	Royalties	44.46
+2013	TX	Nacogdoches	48347	Oil	Drip or Scrubber Condensate (bbl)	Royalties	1.11
+2013	TX	Nacogdoches	48347	Oil	Oil (bbl)	Royalties	0.34
+2013	TX	Nueces	48355	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	16864
+2013	TX	Nueces	48355	Oil	Condensate (bbl)	Royalties	44.88
+2013	TX	Ochiltree	48357	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3137.13
+2013	TX	Parker	48367	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	12774.68
+2013	TX	Robertson	48395	Gas	Fuel Gas (mcf)	Royalties	524.8
+2013	TX	Robertson	48395	Gas	Processed (Residue) Gas (mcf)	Royalties	10324
+2013	TX	Robertson	48395	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	74810.41
+2013	TX	Sabine	48403	Gas	Processed (Residue) Gas (mcf)	Royalties	19278.33
+2013	TX	Sabine	48403	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1492690.71
+2013	TX	Sabine	48403	NGL	Gas Plant Products (gal)	Royalties	30552.53
+2013	TX	Sabine	48403	Oil	Oil (bbl)	Royalties	4687.85
+2013	TX	San Augustin	48405	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1158880.68
+2013	TX	San Augustin	48405	Oil	Oil (bbl)	Royalties	4.96
+2013	TX	San Jacinto	48407	Gas	Processed (Residue) Gas (mcf)	Royalties	43437.76
+2013	TX	San Jacinto	48407	NGL	Gas Plant Products (gal)	Royalties	34606.31
+2013	TX	San Jacinto	48407	Oil	Condensate (bbl)	Royalties	5162.26
+2013	TX	San Jacinto	48407	Oil	Oil (bbl)	Royalties	22315.51
+2013	TX	Shelby	48419	Gas	Fuel Gas (mcf)	Royalties	10754.82
+2013	TX	Shelby	48419	Gas	Processed (Residue) Gas (mcf)	Royalties	275793.24
+2013	TX	Shelby	48419	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	9727972.15
+2013	TX	Shelby	48419	NGL	Gas Plant Products (gal)	Royalties	45440.18
+2013	TX	Shelby	48419	Oil	Condensate (bbl)	Royalties	1712.18
+2013	TX	Shelby	48419	Oil	Drip or Scrubber Condensate (bbl)	Royalties	241.68
+2013	TX	Shelby	48419	Oil	Oil (bbl)	Royalties	4752.6
+2013	TX	Starr	48427	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	3247522.29
+2013	TX	Tarrant	48439	Gas	Processed (Residue) Gas (mcf)	Royalties	214645.73
+2013	TX	Tarrant	48439	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	22939553.7
+2013	TX	Tarrant	48439	NGL	Gas Plant Products (gal)	Royalties	1140658.36
+2013	TX	Tarrant	48439	Oil	Condensate (bbl)	Royalties	740.72
+2013	TX	Tarrant	48439	Oil	Oil (bbl)	Royalties	688.82
+2013	TX	Washington	48477	Gas	Fuel Gas (mcf)	Royalties	36.28
+2013	TX	Washington	48477	Gas	Processed (Residue) Gas (mcf)	Royalties	3897.64
+2013	TX	Washington	48477	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1947.3
+2013	TX	Washington	48477	NGL	Gas Plant Products (gal)	Royalties	9479.72
+2013	TX	Washington	48477	Oil	Oil (bbl)	Royalties	829.73
+2013	TX	Wheeler	48483	Gas	Processed (Residue) Gas (mcf)	Royalties	1232353.22
+2013	TX	Wheeler	48483	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	46304.32
+2013	TX	Wheeler	48483	NGL	Gas Plant Products (gal)	Royalties	5632870.68
+2013	TX	Wheeler	48483	Oil	Condensate (bbl)	Royalties	36541.74
+2013	TX	Wheeler	48483	Oil	Oil (bbl)	Royalties	19828.94
+2013	TX	Wise	48497	Gas	Processed (Residue) Gas (mcf)	Royalties	11771.34
+2013	TX	Wise	48497	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	2747694.47
+2013	TX	Wise	48497	NGL	Gas Plant Products (gal)	Royalties	13329.41
+2013	TX	Wise	48497	Oil	Condensate (bbl)	Royalties	3862.48
+2013	TX	Wise	48497	Oil	Oil (bbl)	Royalties	49705.59
+2013	TX	Zapata	48505	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	58780.26
+2013	TX	Zapata	48505	Oil	Condensate (bbl)	Royalties	24.66

@@ -1,0 +1,648 @@
+Year	State	County	FIPS	Commodity	Product	Type	Volume
+2004	NM	Bernalillo	35001	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	807.83
+2004	NM	Chaves	35005	Gas	Coal Bed Methane (mcf)	Royalties	23313.71
+2004	NM	Chaves	35005	Gas	Processed (Residue) Gas (mcf)	Royalties	113657.4
+2004	NM	Chaves	35005	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	15249462.42
+2004	NM	Chaves	35005	NGL	Gas Plant Products (gal)	Royalties	32547
+2004	NM	Chaves	35005	Oil	Condensate (bbl)	Royalties	1234.85
+2004	NM	Chaves	35005	Oil	Oil (bbl)	Royalties	147798.36
+2004	NM	Eddy	35015	Gas	Coal Bed Methane (mcf)	Royalties	5028.81
+2004	NM	Eddy	35015	Gas	Flash Gas (mcf)	Royalties	9150.02
+2004	NM	Eddy	35015	Gas	Processed (Residue) Gas (mcf)	Royalties	62356836.91
+2004	NM	Eddy	35015	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	112512985.42
+2004	NM	Eddy	35015	NGL	Gas Plant Products (gal)	Royalties	145729304.86
+2004	NM	Eddy	35015	Oil	Condensate (bbl)	Royalties	2541124.05
+2004	NM	Eddy	35015	Oil	Drip or Scrubber Condensate (bbl)	Royalties	25035.77
+2004	NM	Eddy	35015	Oil	Oil (bbl)	Royalties	14967805.63
+2004	NM	Eddy	35015	Brine Barrels	Brine Barrels (bbl)	Royalties	22042
+2004	NM	Eddy	35015	Langbeinite	Langbeinite (ton)	Royalties	854891
+2004	NM	Eddy	35015	Muriate Of Potash-Granular	Muriate Of Potash-Granular (ton)	Royalties	465127
+2004	NM	Eddy	35015	Muriate Of Potash-Standard	Muriate Of Potash-Standard (ton)	Royalties	198675
+2004	NM	Eddy	35015	Potash	Potash (ton)	Royalties	425643
+2004	NM	Eddy	35015	Salt	Salt (ton)	Royalties	284088
+2004	NM	Harding	35021	Gas	Processed (Residue) Gas (mcf)	Royalties	76563.84
+2004	NM	Harding	35021	NGL	Gas Plant Products (gal)	Royalties	8964.88
+2004	NM	Harding	35021	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	5294171.1
+2004	NM	Lea	35025	Gas	Processed (Residue) Gas (mcf)	Royalties	17474752.19
+2004	NM	Lea	35025	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	42860362.44
+2004	NM	Lea	35025	NGL	Gas Plant Products (gal)	Royalties	59984757.2
+2004	NM	Lea	35025	Oil	Condensate (bbl)	Royalties	298642.12
+2004	NM	Lea	35025	Oil	Drip or Scrubber Condensate (bbl)	Royalties	412
+2004	NM	Lea	35025	Oil	Oil (bbl)	Royalties	9164081.39
+2004	NM	Lea	35025	Oil	Other Liquid Hydrocarbons (bbl)	Royalties	3
+2004	NM	Lea	35025	Brine Barrels	Brine Barrels (bbl)	Royalties	35774
+2004	NM	Lea	35025	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	-317.65
+2004	NM	Mckinley	35031	Coal	Coal (ton)	Royalties	291527
+2004	NM	Mckinley	35031	Oil	Oil (bbl)	Royalties	18967.76
+2004	NM	Quay	35037	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	649578.48
+2004	NM	Rio Arriba	35039	Gas	Coal Bed Methane (mcf)	Royalties	93610266.72
+2004	NM	Rio Arriba	35039	Gas	Processed (Residue) Gas (mcf)	Royalties	109730954.92
+2004	NM	Rio Arriba	35039	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	56728643.73
+2004	NM	Rio Arriba	35039	NGL	Gas Plant Products (gal)	Royalties	458654831.71
+2004	NM	Rio Arriba	35039	Oil	Condensate (bbl)	Royalties	433988.18
+2004	NM	Rio Arriba	35039	Oil	Drip or Scrubber Condensate (bbl)	Royalties	2802.78
+2004	NM	Rio Arriba	35039	Oil	Oil (bbl)	Royalties	307321.52
+2004	NM	Roosevelt	35041	Gas	Processed (Residue) Gas (mcf)	Royalties	348228.32
+2004	NM	Roosevelt	35041	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1346149.39
+2004	NM	Roosevelt	35041	NGL	Gas Plant Products (gal)	Royalties	374031
+2004	NM	Roosevelt	35041	Oil	Condensate (bbl)	Royalties	13264.74
+2004	NM	Roosevelt	35041	Oil	Oil (bbl)	Royalties	101445.77
+2004	NM	San Juan	35045	Coal	Coal (ton)	Royalties	6978172
+2004	NM	San Juan	35045	Gas	Coal Bed Methane (mcf)	Royalties	185132018.37
+2004	NM	San Juan	35045	Gas	Processed (Residue) Gas (mcf)	Royalties	136897632.94
+2004	NM	San Juan	35045	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	105293651.01
+2004	NM	San Juan	35045	NGL	Gas Plant Products (gal)	Royalties	595675448.45
+2004	NM	San Juan	35045	Oil	Condensate (bbl)	Royalties	565622.24
+2004	NM	San Juan	35045	Oil	Drip or Scrubber Condensate (bbl)	Royalties	2144.16
+2004	NM	San Juan	35045	Oil	Oil (bbl)	Royalties	237549.28
+2004	NM	Sandoval	35043	Gas	Processed (Residue) Gas (mcf)	Royalties	60119.91
+2004	NM	Sandoval	35043	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	304188.75
+2004	NM	Sandoval	35043	NGL	Gas Plant Products (gal)	Royalties	351205.1
+2004	NM	Sandoval	35043	Oil	Condensate (bbl)	Royalties	558.72
+2004	NM	Sandoval	35043	Oil	Drip or Scrubber Condensate (bbl)	Royalties	78.96
+2004	NM	Sandoval	35043	Oil	Oil (bbl)	Royalties	31818.74
+2004	NM	Union	35059	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	3093163.66
+2005	NM	Chaves	35005	Gas	Processed (Residue) Gas (mcf)	Royalties	93310.12
+2005	NM	Chaves	35005	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	16362885.85
+2005	NM	Chaves	35005	NGL	Gas Plant Products (gal)	Royalties	54633
+2005	NM	Chaves	35005	Oil	Condensate (bbl)	Royalties	515.04
+2005	NM	Chaves	35005	Oil	Oil (bbl)	Royalties	153714.5
+2005	NM	Eddy	35015	Gas	Flash Gas (mcf)	Royalties	340.14
+2005	NM	Eddy	35015	Gas	Processed (Residue) Gas (mcf)	Royalties	44559728.08
+2005	NM	Eddy	35015	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	123702693.11
+2005	NM	Eddy	35015	NGL	Gas Plant Products (gal)	Royalties	108286098.7
+2005	NM	Eddy	35015	Oil	Condensate (bbl)	Royalties	1851394.58
+2005	NM	Eddy	35015	Oil	Drip or Scrubber Condensate (bbl)	Royalties	17243.91
+2005	NM	Eddy	35015	Oil	Oil (bbl)	Royalties	13229852.28
+2005	NM	Eddy	35015	Brine Barrels	Brine Barrels (bbl)	Royalties	18281
+2005	NM	Eddy	35015	Langbeinite	Langbeinite (ton)	Royalties	598689
+2005	NM	Eddy	35015	Muriate Of Potash-Granular	Muriate Of Potash-Granular (ton)	Royalties	407939
+2005	NM	Eddy	35015	Muriate Of Potash-Standard	Muriate Of Potash-Standard (ton)	Royalties	228837
+2005	NM	Eddy	35015	Potash	Potash (ton)	Royalties	417431
+2005	NM	Eddy	35015	Salt	Salt (ton)	Royalties	258846
+2005	NM	Harding	35021	Gas	Processed (Residue) Gas (mcf)	Royalties	112560.32
+2005	NM	Harding	35021	NGL	Gas Plant Products (gal)	Royalties	11621.36
+2005	NM	Harding	35021	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	5243487.45
+2005	NM	Lea	35025	Gas	Processed (Residue) Gas (mcf)	Royalties	14756624.8
+2005	NM	Lea	35025	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	42669661.07
+2005	NM	Lea	35025	NGL	Gas Plant Products (gal)	Royalties	56768968.34
+2005	NM	Lea	35025	Oil	Condensate (bbl)	Royalties	300637.32
+2005	NM	Lea	35025	Oil	Oil (bbl)	Royalties	7950573.09
+2005	NM	Lea	35025	Oil	Other Liquid Hydrocarbons (bbl)	Royalties	8
+2005	NM	Lea	35025	Brine Barrels	Brine Barrels (bbl)	Royalties	28574
+2005	NM	Mckinley	35031	Coal	Coal (ton)	Royalties	300537
+2005	NM	Mckinley	35031	Oil	Oil (bbl)	Royalties	3282.25
+2005	NM	Quay	35037	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	634005.81
+2005	NM	Rio Arriba	35039	Gas	Coal Bed Methane (mcf)	Royalties	87048009.54
+2005	NM	Rio Arriba	35039	Gas	Processed (Residue) Gas (mcf)	Royalties	123962160.53
+2005	NM	Rio Arriba	35039	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	48267270.01
+2005	NM	Rio Arriba	35039	NGL	Gas Plant Products (gal)	Royalties	459972850.01
+2005	NM	Rio Arriba	35039	Oil	Condensate (bbl)	Royalties	425597.13
+2005	NM	Rio Arriba	35039	Oil	Drip or Scrubber Condensate (bbl)	Royalties	534.79
+2005	NM	Rio Arriba	35039	Oil	Inlet Scrubber (bbl)	Royalties	68.04
+2005	NM	Rio Arriba	35039	Oil	Oil (bbl)	Royalties	302500
+2005	NM	Roosevelt	35041	Gas	Processed (Residue) Gas (mcf)	Royalties	335649.3
+2005	NM	Roosevelt	35041	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1225634.9
+2005	NM	Roosevelt	35041	NGL	Gas Plant Products (gal)	Royalties	296026
+2005	NM	Roosevelt	35041	Oil	Condensate (bbl)	Royalties	39669.67
+2005	NM	Roosevelt	35041	Oil	Oil (bbl)	Royalties	100687.26
+2005	NM	San Juan	35045	Coal	Coal (ton)	Royalties	5763703
+2005	NM	San Juan	35045	Gas	Coal Bed Methane (mcf)	Royalties	195184065.08
+2005	NM	San Juan	35045	Gas	Processed (Residue) Gas (mcf)	Royalties	134508306.73
+2005	NM	San Juan	35045	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	95743968.5
+2005	NM	San Juan	35045	NGL	Gas Plant Products (gal)	Royalties	578558429.5
+2005	NM	San Juan	35045	Oil	Condensate (bbl)	Royalties	534333.17
+2005	NM	San Juan	35045	Oil	Drip or Scrubber Condensate (bbl)	Royalties	1095.77
+2005	NM	San Juan	35045	Oil	Inlet Scrubber (bbl)	Royalties	11.75
+2005	NM	San Juan	35045	Oil	Oil (bbl)	Royalties	247105.44
+2005	NM	Sandoval	35043	Gas	Processed (Residue) Gas (mcf)	Royalties	66957.06
+2005	NM	Sandoval	35043	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	278009.9
+2005	NM	Sandoval	35043	NGL	Gas Plant Products (gal)	Royalties	336231.11
+2005	NM	Sandoval	35043	Oil	Drip or Scrubber Condensate (bbl)	Royalties	75.04
+2005	NM	Sandoval	35043	Oil	Oil (bbl)	Royalties	44364.18
+2005	NM	Union	35059	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	3019613.51
+2006	NM	Chaves	35005	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	11291928.32
+2006	NM	Chaves	35005	Oil	Condensate (bbl)	Royalties	693.54
+2006	NM	Chaves	35005	Oil	Oil (bbl)	Royalties	129340.05
+2006	NM	Colfax	35007	Gas	Coal Bed Methane (mcf)	Royalties	38112.91
+2006	NM	Eddy	35015	Gas	Gas Lost - Flared or Vented (mcf)	Royalties	61643.39
+2006	NM	Eddy	35015	Gas	Processed (Residue) Gas (mcf)	Royalties	44351357.31
+2006	NM	Eddy	35015	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	108223817.53
+2006	NM	Eddy	35015	NGL	Gas Plant Products (gal)	Royalties	88320262.22
+2006	NM	Eddy	35015	Oil	Condensate (bbl)	Royalties	1929630.51
+2006	NM	Eddy	35015	Oil	Drip or Scrubber Condensate (bbl)	Royalties	17300.75
+2006	NM	Eddy	35015	Oil	Oil (bbl)	Royalties	12590139.57
+2006	NM	Eddy	35015	Brine Barrels	Brine Barrels (bbl)	Royalties	111641
+2006	NM	Eddy	35015	Langbeinite	Langbeinite (ton)	Royalties	640846
+2006	NM	Eddy	35015	Muriate Of Potash-Granular	Muriate Of Potash-Granular (ton)	Royalties	336208
+2006	NM	Eddy	35015	Muriate Of Potash-Standard	Muriate Of Potash-Standard (ton)	Royalties	209854
+2006	NM	Eddy	35015	Potash	Potash (ton)	Royalties	479212
+2006	NM	Eddy	35015	Salt	Salt (ton)	Royalties	258132
+2006	NM	Eddy	35015	Sylvite-Raw Ore	Sylvite-Raw Ore (ton)	Royalties	245941
+2006	NM	Harding	35021	Gas	Processed (Residue) Gas (mcf)	Royalties	187277.84
+2006	NM	Harding	35021	NGL	Gas Plant Products (gal)	Royalties	10359.12
+2006	NM	Harding	35021	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	4957501.65
+2006	NM	Lea	35025	Gas	Processed (Residue) Gas (mcf)	Royalties	13814247.32
+2006	NM	Lea	35025	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	45455958.68
+2006	NM	Lea	35025	NGL	Gas Plant Products (gal)	Royalties	50798449.95
+2006	NM	Lea	35025	Oil	Condensate (bbl)	Royalties	467634.22
+2006	NM	Lea	35025	Oil	Drip or Scrubber Condensate (bbl)	Royalties	1719.87
+2006	NM	Lea	35025	Oil	Oil (bbl)	Royalties	7719148.39
+2006	NM	Lea	35025	Brine Barrels	Brine Barrels (bbl)	Royalties	66862
+2006	NM	Mckinley	35031	Coal	Coal (ton)	Royalties	357319
+2006	NM	Mckinley	35031	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	7731
+2006	NM	Quay	35037	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	604220.32
+2006	NM	Rio Arriba	35039	Gas	Coal Bed Methane (mcf)	Royalties	90934148.54
+2006	NM	Rio Arriba	35039	Gas	Fuel Gas (mcf)	Royalties	218479.94
+2006	NM	Rio Arriba	35039	Gas	Processed (Residue) Gas (mcf)	Royalties	132286387.44
+2006	NM	Rio Arriba	35039	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	44186249.64
+2006	NM	Rio Arriba	35039	NGL	Gas Plant Products (gal)	Royalties	469414205.01
+2006	NM	Rio Arriba	35039	Oil	Condensate (bbl)	Royalties	458694.6
+2006	NM	Rio Arriba	35039	Oil	Drip or Scrubber Condensate (bbl)	Royalties	915.18
+2006	NM	Rio Arriba	35039	Oil	Inlet Scrubber (bbl)	Royalties	673.2
+2006	NM	Rio Arriba	35039	Oil	Oil (bbl)	Royalties	291805.31
+2006	NM	Roosevelt	35041	Gas	Processed (Residue) Gas (mcf)	Royalties	268683.43
+2006	NM	Roosevelt	35041	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1355922.65
+2006	NM	Roosevelt	35041	NGL	Gas Plant Products (gal)	Royalties	201599.82
+2006	NM	Roosevelt	35041	Oil	Condensate (bbl)	Royalties	23914.76
+2006	NM	Roosevelt	35041	Oil	Oil (bbl)	Royalties	103058.27
+2006	NM	San Juan	35045	Coal	Coal (ton)	Royalties	5615725
+2006	NM	San Juan	35045	Gas	Coal Bed Methane (mcf)	Royalties	184224251.21
+2006	NM	San Juan	35045	Gas	Fuel Gas (mcf)	Royalties	42946.56
+2006	NM	San Juan	35045	Gas	Processed (Residue) Gas (mcf)	Royalties	144147950.08
+2006	NM	San Juan	35045	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	90102873.44
+2006	NM	San Juan	35045	NGL	Gas Plant Products (gal)	Royalties	612856540.74
+2006	NM	San Juan	35045	Oil	Condensate (bbl)	Royalties	518318.01
+2006	NM	San Juan	35045	Oil	Drip or Scrubber Condensate (bbl)	Royalties	1489.54
+2006	NM	San Juan	35045	Oil	Inlet Scrubber (bbl)	Royalties	105.99
+2006	NM	San Juan	35045	Oil	Oil (bbl)	Royalties	244037.66
+2006	NM	Sandoval	35043	Gas	Processed (Residue) Gas (mcf)	Royalties	146090.87
+2006	NM	Sandoval	35043	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	171030.32
+2006	NM	Sandoval	35043	NGL	Gas Plant Products (gal)	Royalties	1195356.43
+2006	NM	Sandoval	35043	Oil	Oil (bbl)	Royalties	34298.07
+2006	NM	Union	35059	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	2878503.07
+2007	NM	Bernalillo	35001	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	35568
+2007	NM	Bernalillo	35001	Oil	Oil (bbl)	Royalties	25718
+2007	NM	Chaves	35005	Gas	Gas Lost - Flared or Vented (mcf)	Royalties	4539.64
+2007	NM	Chaves	35005	Gas	Processed (Residue) Gas (mcf)	Royalties	62443.89
+2007	NM	Chaves	35005	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	10405354.13
+2007	NM	Chaves	35005	Oil	Condensate (bbl)	Royalties	169.63
+2007	NM	Chaves	35005	Oil	Oil (bbl)	Royalties	122854.66
+2007	NM	Colfax	35007	Gas	Coal Bed Methane (mcf)	Royalties	89671.74
+2007	NM	Eddy	35015	Gas	Gas Lost - Flared or Vented (mcf)	Royalties	48574.42
+2007	NM	Eddy	35015	Gas	Processed (Residue) Gas (mcf)	Royalties	32257786.36
+2007	NM	Eddy	35015	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	117176748.21
+2007	NM	Eddy	35015	NGL	Gas Plant Products (gal)	Royalties	71654950.68
+2007	NM	Eddy	35015	Oil	Condensate (bbl)	Royalties	1624323.14
+2007	NM	Eddy	35015	Oil	Drip or Scrubber Condensate (bbl)	Royalties	12619.95
+2007	NM	Eddy	35015	Oil	Oil (bbl)	Royalties	13077569.15
+2007	NM	Eddy	35015	Langbeinite	Langbeinite (ton)	Royalties	970900
+2007	NM	Eddy	35015	Muriate Of Potash-Granular	Muriate Of Potash-Granular (ton)	Royalties	437959
+2007	NM	Eddy	35015	Muriate Of Potash-Standard	Muriate Of Potash-Standard (ton)	Royalties	256792
+2007	NM	Eddy	35015	Potash	Potash (ton)	Royalties	440748
+2007	NM	Eddy	35015	Salt	Salt (ton)	Royalties	294292
+2007	NM	Eddy	35015	Sylvite-Raw Ore	Sylvite-Raw Ore (ton)	Royalties	256853
+2007	NM	Harding	35021	Gas	Processed (Residue) Gas (mcf)	Royalties	509037.68
+2007	NM	Harding	35021	NGL	Gas Plant Products (gal)	Royalties	30144.8
+2007	NM	Harding	35021	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	4803285.63
+2007	NM	Lea	35025	Gas	Processed (Residue) Gas (mcf)	Royalties	11232857.5
+2007	NM	Lea	35025	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	41533698.23
+2007	NM	Lea	35025	NGL	Gas Plant Products (gal)	Royalties	52387403.61
+2007	NM	Lea	35025	Oil	Condensate (bbl)	Royalties	594816.01
+2007	NM	Lea	35025	Oil	Drip or Scrubber Condensate (bbl)	Royalties	1552.67
+2007	NM	Lea	35025	Oil	Oil (bbl)	Royalties	7898896.66
+2007	NM	Lea	35025	Brine Barrels	Brine Barrels (bbl)	Royalties	19278
+2007	NM	Mckinley	35031	Coal	Coal (ton)	Royalties	505380
+2007	NM	Mckinley	35031	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1429
+2007	NM	Mckinley	35031	Oil	Oil (bbl)	Royalties	1206.97
+2007	NM	Quay	35037	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	587350
+2007	NM	Rio Arriba	35039	Gas	Coal Bed Methane (mcf)	Royalties	91500481.55
+2007	NM	Rio Arriba	35039	Gas	Fuel Gas (mcf)	Royalties	260103.59
+2007	NM	Rio Arriba	35039	Gas	Processed (Residue) Gas (mcf)	Royalties	135118864.09
+2007	NM	Rio Arriba	35039	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	32669929.85
+2007	NM	Rio Arriba	35039	NGL	Gas Plant Products (gal)	Royalties	473997666.81
+2007	NM	Rio Arriba	35039	Oil	Condensate (bbl)	Royalties	439300
+2007	NM	Rio Arriba	35039	Oil	Drip or Scrubber Condensate (bbl)	Royalties	1172.23
+2007	NM	Rio Arriba	35039	Oil	Inlet Scrubber (bbl)	Royalties	749.2
+2007	NM	Rio Arriba	35039	Oil	Oil (bbl)	Royalties	298396.04
+2007	NM	Roosevelt	35041	Gas	Processed (Residue) Gas (mcf)	Royalties	218371.64
+2007	NM	Roosevelt	35041	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1346068.4
+2007	NM	Roosevelt	35041	NGL	Gas Plant Products (gal)	Royalties	147503
+2007	NM	Roosevelt	35041	Oil	Condensate (bbl)	Royalties	18969.75
+2007	NM	Roosevelt	35041	Oil	Oil (bbl)	Royalties	126627.41
+2007	NM	San Juan	35045	Coal	Coal (ton)	Royalties	4453891
+2007	NM	San Juan	35045	Gas	Coal Bed Methane (mcf)	Royalties	169785605.84
+2007	NM	San Juan	35045	Gas	Fuel Gas (mcf)	Royalties	123401.99
+2007	NM	San Juan	35045	Gas	Processed (Residue) Gas (mcf)	Royalties	150692043.13
+2007	NM	San Juan	35045	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	66418399.47
+2007	NM	San Juan	35045	NGL	Gas Plant Products (gal)	Royalties	622670500.09
+2007	NM	San Juan	35045	Oil	Condensate (bbl)	Royalties	515004.85
+2007	NM	San Juan	35045	Oil	Drip or Scrubber Condensate (bbl)	Royalties	1213.12
+2007	NM	San Juan	35045	Oil	Inlet Scrubber (bbl)	Royalties	136.22
+2007	NM	San Juan	35045	Oil	Oil (bbl)	Royalties	225232.04
+2007	NM	Sandoval	35043	Gas	Processed (Residue) Gas (mcf)	Royalties	156115.03
+2007	NM	Sandoval	35043	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	152175.5
+2007	NM	Sandoval	35043	NGL	Gas Plant Products (gal)	Royalties	979401.81
+2007	NM	Sandoval	35043	Oil	Condensate (bbl)	Royalties	1682.54
+2007	NM	Sandoval	35043	Oil	Oil (bbl)	Royalties	31516.53
+2007	NM	Union	35059	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	2801268.42
+2008	NM	Bernalillo	35001	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	72287
+2008	NM	Bernalillo	35001	Oil	Oil (bbl)	Royalties	15886
+2008	NM	Chaves	35005	Gas	Processed (Residue) Gas (mcf)	Royalties	115506.46
+2008	NM	Chaves	35005	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	12818616.36
+2008	NM	Chaves	35005	NGL	Gas Plant Products (gal)	Royalties	105256.98
+2008	NM	Chaves	35005	Oil	Condensate (bbl)	Royalties	1905.95
+2008	NM	Chaves	35005	Oil	Oil (bbl)	Royalties	199323.88
+2008	NM	Colfax	35007	Gas	Coal Bed Methane (mcf)	Royalties	88075.66
+2008	NM	Eddy	35015	Gas	Fuel Gas (mcf)	Royalties	868640.31
+2008	NM	Eddy	35015	Gas	Gas Lost - Flared or Vented (mcf)	Royalties	78302.06
+2008	NM	Eddy	35015	Gas	Processed (Residue) Gas (mcf)	Royalties	31270280.78
+2008	NM	Eddy	35015	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	110566937.36
+2008	NM	Eddy	35015	NGL	Gas Plant Products (gal)	Royalties	58755254.43
+2008	NM	Eddy	35015	Oil	Condensate (bbl)	Royalties	1528337.22
+2008	NM	Eddy	35015	Oil	Drip or Scrubber Condensate (bbl)	Royalties	9156.3
+2008	NM	Eddy	35015	Oil	Oil (bbl)	Royalties	13808894.94
+2008	NM	Eddy	35015	Langbeinite	Langbeinite (ton)	Royalties	988815
+2008	NM	Eddy	35015	Muriate Of Potash-Granular	Muriate Of Potash-Granular (ton)	Royalties	336757
+2008	NM	Eddy	35015	Muriate Of Potash-Standard	Muriate Of Potash-Standard (ton)	Royalties	153956
+2008	NM	Eddy	35015	Potash	Potash (ton)	Royalties	268500
+2008	NM	Eddy	35015	Salt	Salt (ton)	Royalties	314483
+2008	NM	Eddy	35015	Sulfur	Sulfur (lton)	Royalties	1874.51
+2008	NM	Eddy	35015	Sylvite-Raw Ore	Sylvite-Raw Ore (ton)	Royalties	536036
+2008	NM	Harding	35021	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	4763540.96
+2008	NM	Lea	35025	Gas	Gas Lost - Flared or Vented (mcf)	Royalties	22363.52
+2008	NM	Lea	35025	Gas	Processed (Residue) Gas (mcf)	Royalties	9529099.41
+2008	NM	Lea	35025	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	42085329.63
+2008	NM	Lea	35025	NGL	Gas Plant Products (gal)	Royalties	46021506.41
+2008	NM	Lea	35025	Oil	Condensate (bbl)	Royalties	537812.49
+2008	NM	Lea	35025	Oil	Drip or Scrubber Condensate (bbl)	Royalties	324.59
+2008	NM	Lea	35025	Oil	Oil (bbl)	Royalties	7920178.74
+2008	NM	Lea	35025	Brine Barrels	Brine Barrels (bbl)	Royalties	59146
+2008	NM	Mckinley	35031	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	9158
+2008	NM	Mckinley	35031	Oil	Oil (bbl)	Royalties	2385.75
+2008	NM	Quay	35037	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	576620.25
+2008	NM	Rio Arriba	35039	Gas	Coal Bed Methane (mcf)	Royalties	82266827.09
+2008	NM	Rio Arriba	35039	Gas	Fuel Gas (mcf)	Royalties	307651.02
+2008	NM	Rio Arriba	35039	Gas	Processed (Residue) Gas (mcf)	Royalties	144049747.48
+2008	NM	Rio Arriba	35039	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	26313587.16
+2008	NM	Rio Arriba	35039	NGL	Gas Plant Products (gal)	Royalties	467587479.5
+2008	NM	Rio Arriba	35039	Oil	Condensate (bbl)	Royalties	423249.49
+2008	NM	Rio Arriba	35039	Oil	Drip or Scrubber Condensate (bbl)	Royalties	7.21
+2008	NM	Rio Arriba	35039	Oil	Inlet Scrubber (bbl)	Royalties	1778.58
+2008	NM	Rio Arriba	35039	Oil	Oil (bbl)	Royalties	319922.99
+2008	NM	Roosevelt	35041	Gas	Processed (Residue) Gas (mcf)	Royalties	37475.9
+2008	NM	Roosevelt	35041	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1589209.04
+2008	NM	Roosevelt	35041	NGL	Gas Plant Products (gal)	Royalties	113063.56
+2008	NM	Roosevelt	35041	Oil	Condensate (bbl)	Royalties	14139.85
+2008	NM	Roosevelt	35041	Oil	Oil (bbl)	Royalties	128742.26
+2008	NM	San Juan	35045	Coal	Coal (ton)	Royalties	3831909
+2008	NM	San Juan	35045	Gas	Coal Bed Methane (mcf)	Royalties	149396613.37
+2008	NM	San Juan	35045	Gas	Fuel Gas (mcf)	Royalties	232040.25
+2008	NM	San Juan	35045	Gas	Processed (Residue) Gas (mcf)	Royalties	149393977.24
+2008	NM	San Juan	35045	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	61262260.71
+2008	NM	San Juan	35045	NGL	Gas Plant Products (gal)	Royalties	604848673.4
+2008	NM	San Juan	35045	Oil	Condensate (bbl)	Royalties	457807.28
+2008	NM	San Juan	35045	Oil	Drip or Scrubber Condensate (bbl)	Royalties	45.16
+2008	NM	San Juan	35045	Oil	Inlet Scrubber (bbl)	Royalties	1090.41
+2008	NM	San Juan	35045	Oil	Oil (bbl)	Royalties	248892.1
+2008	NM	Sandoval	35043	Gas	Processed (Residue) Gas (mcf)	Royalties	152831.29
+2008	NM	Sandoval	35043	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	176873.3
+2008	NM	Sandoval	35043	NGL	Gas Plant Products (gal)	Royalties	954258.41
+2008	NM	Sandoval	35043	Oil	Condensate (bbl)	Royalties	2443.09
+2008	NM	Sandoval	35043	Oil	Oil (bbl)	Royalties	29983.55
+2008	NM	Union	35059	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	2746806.65
+2009	NM	Bernalillo	35001	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	38769
+2009	NM	Bernalillo	35001	Oil	Oil (bbl)	Royalties	11147
+2009	NM	Chaves	35005	Gas	Processed (Residue) Gas (mcf)	Royalties	105347.84
+2009	NM	Chaves	35005	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	11342187.55
+2009	NM	Chaves	35005	NGL	Gas Plant Products (gal)	Royalties	261180.93
+2009	NM	Chaves	35005	Oil	Condensate (bbl)	Royalties	778.56
+2009	NM	Chaves	35005	Oil	Oil (bbl)	Royalties	476932.36
+2009	NM	Colfax	35007	Gas	Coal Bed Methane (mcf)	Royalties	81948.4
+2009	NM	Eddy	35015	Gas	Fuel Gas (mcf)	Royalties	402065.98
+2009	NM	Eddy	35015	Gas	Gas Lost - Flared or Vented (mcf)	Royalties	50421.03
+2009	NM	Eddy	35015	Gas	Processed (Residue) Gas (mcf)	Royalties	26252465.01
+2009	NM	Eddy	35015	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	103533819.19
+2009	NM	Eddy	35015	NGL	Gas Plant Products (gal)	Royalties	59416909.03
+2009	NM	Eddy	35015	Oil	Condensate (bbl)	Royalties	1374459.53
+2009	NM	Eddy	35015	Oil	Drip or Scrubber Condensate (bbl)	Royalties	9651.6
+2009	NM	Eddy	35015	Oil	Oil (bbl)	Royalties	15921268.67
+2009	NM	Eddy	35015	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	1043
+2009	NM	Eddy	35015	Langbeinite	Langbeinite (ton)	Royalties	564245
+2009	NM	Eddy	35015	Muriate Of Potash-Granular	Muriate Of Potash-Granular (ton)	Royalties	219903
+2009	NM	Eddy	35015	Muriate Of Potash-Standard	Muriate Of Potash-Standard (ton)	Royalties	95146
+2009	NM	Eddy	35015	Potash	Potash (ton)	Royalties	278645
+2009	NM	Eddy	35015	Salt	Salt (ton)	Royalties	372956
+2009	NM	Eddy	35015	Sylvite-Raw Ore	Sylvite-Raw Ore (ton)	Royalties	352609
+2009	NM	Harding	35021	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	6607697.51
+2009	NM	Lea	35025	Gas	Fuel Gas (mcf)	Royalties	1407.01
+2009	NM	Lea	35025	Gas	Gas Lost - Flared or Vented (mcf)	Royalties	67132.33
+2009	NM	Lea	35025	Gas	Processed (Residue) Gas (mcf)	Royalties	9584221
+2009	NM	Lea	35025	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	39396062.51
+2009	NM	Lea	35025	NGL	Gas Plant Products (gal)	Royalties	53137872.85
+2009	NM	Lea	35025	Oil	Condensate (bbl)	Royalties	512489.05
+2009	NM	Lea	35025	Oil	Drip or Scrubber Condensate (bbl)	Royalties	357.21
+2009	NM	Lea	35025	Oil	Oil (bbl)	Royalties	8544289.47
+2009	NM	Mckinley	35031	Gas	Coal Bed Methane (mcf)	Royalties	20751
+2009	NM	Mckinley	35031	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	5475
+2009	NM	Mckinley	35031	Oil	Oil (bbl)	Royalties	17008.88
+2009	NM	Quay	35037	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	585506.03
+2009	NM	Rio Arriba	35039	Gas	Coal Bed Methane (mcf)	Royalties	76510706.25
+2009	NM	Rio Arriba	35039	Gas	Fuel Gas (mcf)	Royalties	280144.59
+2009	NM	Rio Arriba	35039	Gas	Processed (Residue) Gas (mcf)	Royalties	147826097.76
+2009	NM	Rio Arriba	35039	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	23800640.07
+2009	NM	Rio Arriba	35039	NGL	Gas Plant Products (gal)	Royalties	479321174.83
+2009	NM	Rio Arriba	35039	Oil	Condensate (bbl)	Royalties	471127.17
+2009	NM	Rio Arriba	35039	Oil	Drip or Scrubber Condensate (bbl)	Royalties	58.37
+2009	NM	Rio Arriba	35039	Oil	Inlet Scrubber (bbl)	Royalties	1272.25
+2009	NM	Rio Arriba	35039	Oil	Oil (bbl)	Royalties	323594.23
+2009	NM	Roosevelt	35041	Gas	Processed (Residue) Gas (mcf)	Royalties	162913.66
+2009	NM	Roosevelt	35041	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1188375.36
+2009	NM	Roosevelt	35041	NGL	Gas Plant Products (gal)	Royalties	151794
+2009	NM	Roosevelt	35041	Oil	Condensate (bbl)	Royalties	58.37
+2009	NM	Roosevelt	35041	Oil	Oil (bbl)	Royalties	110904.47
+2009	NM	San Juan	35045	Coal	Coal (ton)	Royalties	3368181
+2009	NM	San Juan	35045	Gas	Coal Bed Methane (mcf)	Royalties	147105568.53
+2009	NM	San Juan	35045	Gas	Fuel Gas (mcf)	Royalties	196785.07
+2009	NM	San Juan	35045	Gas	Processed (Residue) Gas (mcf)	Royalties	148396279.6
+2009	NM	San Juan	35045	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	51359467.85
+2009	NM	San Juan	35045	NGL	Gas Plant Products (gal)	Royalties	609692784.68
+2009	NM	San Juan	35045	Oil	Condensate (bbl)	Royalties	439388.56
+2009	NM	San Juan	35045	Oil	Drip or Scrubber Condensate (bbl)	Royalties	179.78
+2009	NM	San Juan	35045	Oil	Inlet Scrubber (bbl)	Royalties	1232.27
+2009	NM	San Juan	35045	Oil	Oil (bbl)	Royalties	260140.49
+2009	NM	Sandoval	35043	Gas	Coal Bed Methane (mcf)	Royalties	167313
+2009	NM	Sandoval	35043	Gas	Processed (Residue) Gas (mcf)	Royalties	146987.93
+2009	NM	Sandoval	35043	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	140892.06
+2009	NM	Sandoval	35043	NGL	Gas Plant Products (gal)	Royalties	984392.75
+2009	NM	Sandoval	35043	Oil	Condensate (bbl)	Royalties	1702.39
+2009	NM	Sandoval	35043	Oil	Oil (bbl)	Royalties	37987.95
+2009	NM	Union	35059	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	2791212.43
+2010	NM	Bernalillo	35001	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	31828
+2010	NM	Bernalillo	35001	Oil	Oil (bbl)	Royalties	10331
+2010	NM	Chaves	35005	Gas	Processed (Residue) Gas (mcf)	Royalties	192981.49
+2010	NM	Chaves	35005	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	10732113.45
+2010	NM	Chaves	35005	NGL	Gas Plant Products (gal)	Royalties	901728.68
+2010	NM	Chaves	35005	Oil	Condensate (bbl)	Royalties	390.32
+2010	NM	Chaves	35005	Oil	Oil (bbl)	Royalties	813210.3
+2010	NM	Colfax	35007	Gas	Coal Bed Methane (mcf)	Royalties	77852.3
+2010	NM	Eddy	35015	Gas	Fuel Gas (mcf)	Royalties	309675.25
+2010	NM	Eddy	35015	Gas	Gas Lost - Flared or Vented (mcf)	Royalties	58372.53
+2010	NM	Eddy	35015	Gas	Processed (Residue) Gas (mcf)	Royalties	26220216.78
+2010	NM	Eddy	35015	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	102318741.53
+2010	NM	Eddy	35015	NGL	Gas Plant Products (gal)	Royalties	82171729.1
+2010	NM	Eddy	35015	Oil	Condensate (bbl)	Royalties	1378083.61
+2010	NM	Eddy	35015	Oil	Drip or Scrubber Condensate (bbl)	Royalties	14064.91
+2010	NM	Eddy	35015	Oil	Oil (bbl)	Royalties	18064466.48
+2010	NM	Eddy	35015	Langbeinite	Langbeinite (ton)	Royalties	877864
+2010	NM	Eddy	35015	Muriate Of Potash-Granular	Muriate Of Potash-Granular (ton)	Royalties	444951
+2010	NM	Eddy	35015	Muriate Of Potash-Standard	Muriate Of Potash-Standard (ton)	Royalties	121472
+2010	NM	Eddy	35015	Potash	Potash (ton)	Royalties	315075
+2010	NM	Eddy	35015	Salt	Salt (ton)	Royalties	434018
+2010	NM	Eddy	35015	Sylvite-Raw Ore	Sylvite-Raw Ore (ton)	Royalties	434538
+2010	NM	Harding	35021	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	7334072.06
+2010	NM	Lea	35025	Gas	Fuel Gas (mcf)	Royalties	3020.09
+2010	NM	Lea	35025	Gas	Gas Lost - Flared or Vented (mcf)	Royalties	16808.06
+2010	NM	Lea	35025	Gas	Processed (Residue) Gas (mcf)	Royalties	9883482.13
+2010	NM	Lea	35025	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	34781378.23
+2010	NM	Lea	35025	NGL	Gas Plant Products (gal)	Royalties	68371642.67
+2010	NM	Lea	35025	Oil	Condensate (bbl)	Royalties	475832.69
+2010	NM	Lea	35025	Oil	Oil (bbl)	Royalties	9329960.35
+2010	NM	Lea	35025	Brine Barrels	Brine Barrels (bbl)	Royalties	1370
+2010	NM	Mckinley	35031	Gas	Coal Bed Methane (mcf)	Royalties	101663
+2010	NM	Mckinley	35031	Oil	Oil (bbl)	Royalties	20393.09
+2010	NM	Quay	35037	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	638832.05
+2010	NM	Rio Arriba	35039	Gas	Coal Bed Methane (mcf)	Royalties	66329569.64
+2010	NM	Rio Arriba	35039	Gas	Fuel Gas (mcf)	Royalties	246057.01
+2010	NM	Rio Arriba	35039	Gas	Processed (Residue) Gas (mcf)	Royalties	149320383.11
+2010	NM	Rio Arriba	35039	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	19441024.09
+2010	NM	Rio Arriba	35039	NGL	Gas Plant Products (gal)	Royalties	490472721.17
+2010	NM	Rio Arriba	35039	Oil	Condensate (bbl)	Royalties	444917.3
+2010	NM	Rio Arriba	35039	Oil	Drip or Scrubber Condensate (bbl)	Royalties	3263.86
+2010	NM	Rio Arriba	35039	Oil	Inlet Scrubber (bbl)	Royalties	95.15
+2010	NM	Rio Arriba	35039	Oil	Oil (bbl)	Royalties	287530.17
+2010	NM	Roosevelt	35041	Gas	Processed (Residue) Gas (mcf)	Royalties	25481.24
+2010	NM	Roosevelt	35041	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1327907.22
+2010	NM	Roosevelt	35041	NGL	Gas Plant Products (gal)	Royalties	173536.82
+2010	NM	Roosevelt	35041	Oil	Oil (bbl)	Royalties	105880.17
+2010	NM	San Juan	35045	Coal	Coal (ton)	Royalties	2438646
+2010	NM	San Juan	35045	Gas	Coal Bed Methane (mcf)	Royalties	131832719.89
+2010	NM	San Juan	35045	Gas	Fuel Gas (mcf)	Royalties	199417.88
+2010	NM	San Juan	35045	Gas	Processed (Residue) Gas (mcf)	Royalties	140362820.8
+2010	NM	San Juan	35045	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	40902657.91
+2010	NM	San Juan	35045	NGL	Gas Plant Products (gal)	Royalties	570790684.29
+2010	NM	San Juan	35045	Oil	Condensate (bbl)	Royalties	412495.22
+2010	NM	San Juan	35045	Oil	Drip or Scrubber Condensate (bbl)	Royalties	5934.44
+2010	NM	San Juan	35045	Oil	Inlet Scrubber (bbl)	Royalties	2513.16
+2010	NM	San Juan	35045	Oil	Oil (bbl)	Royalties	237258.63
+2010	NM	Sandoval	35043	Gas	Coal Bed Methane (mcf)	Royalties	563361
+2010	NM	Sandoval	35043	Gas	Processed (Residue) Gas (mcf)	Royalties	133750.66
+2010	NM	Sandoval	35043	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	100803.99
+2010	NM	Sandoval	35043	NGL	Gas Plant Products (gal)	Royalties	861317.85
+2010	NM	Sandoval	35043	Oil	Condensate (bbl)	Royalties	1742
+2010	NM	Sandoval	35043	Oil	Oil (bbl)	Royalties	37658.98
+2010	NM	Union	35059	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	3044277.47
+2011	NM	Bernalillo	35001	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	17746
+2011	NM	Bernalillo	35001	Oil	Oil (bbl)	Royalties	7248
+2011	NM	Chaves	35005	Gas	Processed (Residue) Gas (mcf)	Royalties	219885.29
+2011	NM	Chaves	35005	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	8523341.18
+2011	NM	Chaves	35005	NGL	Gas Plant Products (gal)	Royalties	1510663.27
+2011	NM	Chaves	35005	Oil	Condensate (bbl)	Royalties	188.8
+2011	NM	Chaves	35005	Oil	Oil (bbl)	Royalties	635137.26
+2011	NM	Colfax	35007	Gas	Coal Bed Methane (mcf)	Royalties	73524.94
+2011	NM	Eddy	35015	Gas	Coal Bed Methane (mcf)	Royalties	11274.16
+2011	NM	Eddy	35015	Gas	Fuel Gas (mcf)	Royalties	520830.86
+2011	NM	Eddy	35015	Gas	Gas Lost - Flared or Vented (mcf)	Royalties	364612.69
+2011	NM	Eddy	35015	Gas	Processed (Residue) Gas (mcf)	Royalties	25927141.18
+2011	NM	Eddy	35015	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	98639454.37
+2011	NM	Eddy	35015	NGL	Gas Plant Products (gal)	Royalties	94149240.65
+2011	NM	Eddy	35015	Oil	Condensate (bbl)	Royalties	1798308.89
+2011	NM	Eddy	35015	Oil	Drip or Scrubber Condensate (bbl)	Royalties	12362.61
+2011	NM	Eddy	35015	Oil	Oil (bbl)	Royalties	20413424.73
+2011	NM	Eddy	35015	Langbeinite	Langbeinite (ton)	Royalties	769590
+2011	NM	Eddy	35015	Muriate Of Potash-Granular	Muriate Of Potash-Granular (ton)	Royalties	405867
+2011	NM	Eddy	35015	Muriate Of Potash-Standard	Muriate Of Potash-Standard (ton)	Royalties	118255
+2011	NM	Eddy	35015	Potash	Potash (ton)	Royalties	302095
+2011	NM	Eddy	35015	Salt	Salt (ton)	Royalties	439367
+2011	NM	Eddy	35015	Sylvite-Raw Ore	Sylvite-Raw Ore (ton)	Royalties	525897
+2011	NM	Harding	35021	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	6836171.36
+2011	NM	Lea	35025	Gas	Fuel Gas (mcf)	Royalties	1257.51
+2011	NM	Lea	35025	Gas	Gas Lost - Flared or Vented (mcf)	Royalties	27.98
+2011	NM	Lea	35025	Gas	Processed (Residue) Gas (mcf)	Royalties	10519591.89
+2011	NM	Lea	35025	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	35292681.52
+2011	NM	Lea	35025	NGL	Gas Plant Products (gal)	Royalties	66828622.14
+2011	NM	Lea	35025	Oil	Condensate (bbl)	Royalties	462584.12
+2011	NM	Lea	35025	Oil	Oil (bbl)	Royalties	10486931.85
+2011	NM	Mckinley	35031	Gas	Coal Bed Methane (mcf)	Royalties	200316
+2011	NM	Mckinley	35031	Oil	Oil (bbl)	Royalties	11938.49
+2011	NM	Quay	35037	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	597538.74
+2011	NM	Rio Arriba	35039	Gas	Coal Bed Methane (mcf)	Royalties	70346301.98
+2011	NM	Rio Arriba	35039	Gas	Fuel Gas (mcf)	Royalties	218298.89
+2011	NM	Rio Arriba	35039	Gas	Processed (Residue) Gas (mcf)	Royalties	136362327.79
+2011	NM	Rio Arriba	35039	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	23404729.59
+2011	NM	Rio Arriba	35039	NGL	Gas Plant Products (gal)	Royalties	497102955.46
+2011	NM	Rio Arriba	35039	Oil	Condensate (bbl)	Royalties	409687.13
+2011	NM	Rio Arriba	35039	Oil	Drip or Scrubber Condensate (bbl)	Royalties	555.74
+2011	NM	Rio Arriba	35039	Oil	Inlet Scrubber (bbl)	Royalties	132.4
+2011	NM	Rio Arriba	35039	Oil	Oil (bbl)	Royalties	315532.94
+2011	NM	Roosevelt	35041	Gas	Processed (Residue) Gas (mcf)	Royalties	28318.02
+2011	NM	Roosevelt	35041	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	1051903.57
+2011	NM	Roosevelt	35041	NGL	Gas Plant Products (gal)	Royalties	173806.97
+2011	NM	Roosevelt	35041	Oil	Oil (bbl)	Royalties	84934.29
+2011	NM	San Juan	35045	Coal	Coal (ton)	Royalties	4311854
+2011	NM	San Juan	35045	Gas	Coal Bed Methane (mcf)	Royalties	120970564.44
+2011	NM	San Juan	35045	Gas	Fuel Gas (mcf)	Royalties	108268.24
+2011	NM	San Juan	35045	Gas	Processed (Residue) Gas (mcf)	Royalties	137419022.03
+2011	NM	San Juan	35045	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	36041725.87
+2011	NM	San Juan	35045	NGL	Gas Plant Products (gal)	Royalties	577412283.02
+2011	NM	San Juan	35045	Oil	Condensate (bbl)	Royalties	394570.49
+2011	NM	San Juan	35045	Oil	Drip or Scrubber Condensate (bbl)	Royalties	334.7
+2011	NM	San Juan	35045	Oil	Fuel Oil (bbl)	Royalties	1.56
+2011	NM	San Juan	35045	Oil	Inlet Scrubber (bbl)	Royalties	2239.57
+2011	NM	San Juan	35045	Oil	Oil (bbl)	Royalties	266848.74
+2011	NM	Sandoval	35043	Gas	Coal Bed Methane (mcf)	Royalties	963700
+2011	NM	Sandoval	35043	Gas	Processed (Residue) Gas (mcf)	Royalties	129770.08
+2011	NM	Sandoval	35043	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	102309.63
+2011	NM	Sandoval	35043	NGL	Gas Plant Products (gal)	Royalties	869375.59
+2011	NM	Sandoval	35043	Oil	Condensate (bbl)	Royalties	1681
+2011	NM	Sandoval	35043	Oil	Oil (bbl)	Royalties	35862.13
+2011	NM	Union	35059	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	2849408.46
+2012	NM	Bernalillo	35001	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	14109
+2012	NM	Bernalillo	35001	Oil	Oil (bbl)	Royalties	7292
+2012	NM	Chaves	35005	Gas	Gas Lost - Flared or Vented (mcf)	Royalties	47054.72
+2012	NM	Chaves	35005	Gas	Processed (Residue) Gas (mcf)	Royalties	256376.95
+2012	NM	Chaves	35005	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	6819886.65
+2012	NM	Chaves	35005	NGL	Gas Plant Products (gal)	Royalties	2525647
+2012	NM	Chaves	35005	Oil	Condensate (bbl)	Royalties	184.4
+2012	NM	Chaves	35005	Oil	Oil (bbl)	Royalties	704546.58
+2012	NM	Colfax	35007	Gas	Coal Bed Methane (mcf)	Royalties	71919.07
+2012	NM	Eddy	35015	Gas	Coal Bed Methane (mcf)	Royalties	473602.27
+2012	NM	Eddy	35015	Gas	Fuel Gas (mcf)	Royalties	951220.37
+2012	NM	Eddy	35015	Gas	Gas Lost - Flared or Vented (mcf)	Royalties	2612693.19
+2012	NM	Eddy	35015	Gas	Processed (Residue) Gas (mcf)	Royalties	28575559.03
+2012	NM	Eddy	35015	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	98483779.8
+2012	NM	Eddy	35015	NGL	Gas Plant Products (gal)	Royalties	114861201.32
+2012	NM	Eddy	35015	Oil	Condensate (bbl)	Royalties	1207334.97
+2012	NM	Eddy	35015	Oil	Drip or Scrubber Condensate (bbl)	Royalties	14213.65
+2012	NM	Eddy	35015	Oil	Oil (bbl)	Royalties	27177276.71
+2012	NM	Eddy	35015	Langbeinite	Langbeinite (ton)	Royalties	806217
+2012	NM	Eddy	35015	Muriate Of Potash-Granular	Muriate Of Potash-Granular (ton)	Royalties	492782
+2012	NM	Eddy	35015	Muriate Of Potash-Standard	Muriate Of Potash-Standard (ton)	Royalties	127301
+2012	NM	Eddy	35015	Potash	Potash (ton)	Royalties	234709
+2012	NM	Eddy	35015	Salt	Salt (ton)	Royalties	409345
+2012	NM	Eddy	35015	Sylvite-Raw Ore	Sylvite-Raw Ore (ton)	Royalties	158500
+2012	NM	Harding	35021	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	6995821.18
+2012	NM	Lea	35025	Gas	Fuel Gas (mcf)	Royalties	379.99
+2012	NM	Lea	35025	Gas	Gas Lost - Flared or Vented (mcf)	Royalties	683420.38
+2012	NM	Lea	35025	Gas	Processed (Residue) Gas (mcf)	Royalties	13964138.58
+2012	NM	Lea	35025	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	32600888.93
+2012	NM	Lea	35025	NGL	Gas Plant Products (gal)	Royalties	90073413.61
+2012	NM	Lea	35025	Oil	Condensate (bbl)	Royalties	501769.33
+2012	NM	Lea	35025	Oil	Drip or Scrubber Condensate (bbl)	Royalties	325.25
+2012	NM	Lea	35025	Oil	Oil (bbl)	Royalties	12734504.69
+2012	NM	Mckinley	35031	Gas	Coal Bed Methane (mcf)	Royalties	194702
+2012	NM	Mckinley	35031	Oil	Oil (bbl)	Royalties	23099.57
+2012	NM	Quay	35037	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	595410.8
+2012	NM	Rio Arriba	35039	Gas	Coal Bed Methane (mcf)	Royalties	77897814.16
+2012	NM	Rio Arriba	35039	Gas	Fuel Gas (mcf)	Royalties	188286.42
+2012	NM	Rio Arriba	35039	Gas	Processed (Residue) Gas (mcf)	Royalties	119708709.74
+2012	NM	Rio Arriba	35039	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	24957784.02
+2012	NM	Rio Arriba	35039	NGL	Gas Plant Products (gal)	Royalties	486774028.14
+2012	NM	Rio Arriba	35039	Oil	Condensate (bbl)	Royalties	402578.42
+2012	NM	Rio Arriba	35039	Oil	Drip or Scrubber Condensate (bbl)	Royalties	175.52
+2012	NM	Rio Arriba	35039	Oil	Inlet Scrubber (bbl)	Royalties	0.21
+2012	NM	Rio Arriba	35039	Oil	Oil (bbl)	Royalties	305603.6
+2012	NM	Roosevelt	35041	Gas	Processed (Residue) Gas (mcf)	Royalties	44521.23
+2012	NM	Roosevelt	35041	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	750281.17
+2012	NM	Roosevelt	35041	NGL	Gas Plant Products (gal)	Royalties	213437.72
+2012	NM	Roosevelt	35041	Oil	Condensate (bbl)	Royalties	280.19
+2012	NM	Roosevelt	35041	Oil	Oil (bbl)	Royalties	81704.22
+2012	NM	San Juan	35045	Coal	Coal (ton)	Royalties	4957756
+2012	NM	San Juan	35045	Gas	Coal Bed Methane (mcf)	Royalties	111655980.54
+2012	NM	San Juan	35045	Gas	Fuel Gas (mcf)	Royalties	102384.68
+2012	NM	San Juan	35045	Gas	Processed (Residue) Gas (mcf)	Royalties	129612313.91
+2012	NM	San Juan	35045	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	32987986.01
+2012	NM	San Juan	35045	NGL	Gas Plant Products (gal)	Royalties	569159984.07
+2012	NM	San Juan	35045	Oil	Condensate (bbl)	Royalties	348209.8
+2012	NM	San Juan	35045	Oil	Drip or Scrubber Condensate (bbl)	Royalties	96.79
+2012	NM	San Juan	35045	Oil	Inlet Scrubber (bbl)	Royalties	2051.85
+2012	NM	San Juan	35045	Oil	Oil (bbl)	Royalties	292960.66
+2012	NM	Sandoval	35043	Gas	Coal Bed Methane (mcf)	Royalties	1215415
+2012	NM	Sandoval	35043	Gas	Processed (Residue) Gas (mcf)	Royalties	126938.59
+2012	NM	Sandoval	35043	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	93284.98
+2012	NM	Sandoval	35043	NGL	Gas Plant Products (gal)	Royalties	883292.81
+2012	NM	Sandoval	35043	Oil	Condensate (bbl)	Royalties	1513.45
+2012	NM	Sandoval	35043	Oil	Oil (bbl)	Royalties	59557.96
+2012	NM	Union	35059	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	2838715.79
+2013	NM	Bernalillo	35001	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	14705
+2013	NM	Bernalillo	35001	Oil	Oil (bbl)	Royalties	5289
+2013	NM	Chaves	35005	Gas	Fuel Gas (mcf)	Royalties	2129.15
+2013	NM	Chaves	35005	Gas	Gas Lost - Flared or Vented (mcf)	Royalties	9243.52
+2013	NM	Chaves	35005	Gas	Processed (Residue) Gas (mcf)	Royalties	279610.96
+2013	NM	Chaves	35005	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	6127663.41
+2013	NM	Chaves	35005	NGL	Gas Plant Products (gal)	Royalties	2384366.17
+2013	NM	Chaves	35005	Oil	Drip or Scrubber Condensate (bbl)	Royalties	48.59
+2013	NM	Chaves	35005	Oil	Oil (bbl)	Royalties	578663.21
+2013	NM	Colfax	35007	Gas	Coal Bed Methane (mcf)	Royalties	63355.06
+2013	NM	Eddy	35015	Gas	Coal Bed Methane (mcf)	Royalties	439896.26
+2013	NM	Eddy	35015	Gas	Fuel Gas (mcf)	Royalties	761178.11
+2013	NM	Eddy	35015	Gas	Gas Lost - Flared or Vented (mcf)	Royalties	3431717.03
+2013	NM	Eddy	35015	Gas	Processed (Residue) Gas (mcf)	Royalties	34652968.7
+2013	NM	Eddy	35015	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	98493344.47
+2013	NM	Eddy	35015	NGL	Gas Plant Products (gal)	Royalties	128054672.39
+2013	NM	Eddy	35015	Oil	Condensate (bbl)	Royalties	870658.89
+2013	NM	Eddy	35015	Oil	Drip or Scrubber Condensate (bbl)	Royalties	25115.43
+2013	NM	Eddy	35015	Oil	Inlet Scrubber (bbl)	Royalties	50.4
+2013	NM	Eddy	35015	Oil	Oil (bbl)	Royalties	31459553.08
+2013	NM	Eddy	35015	Oil	Oil Lost (bbl)	Royalties	37.56
+2013	NM	Eddy	35015	Oil	Other Liquid Hydrocarbons (bbl)	Royalties	859.03
+2013	NM	Eddy	35015	Langbeinite	Langbeinite (ton)	Royalties	605489
+2013	NM	Eddy	35015	Muriate Of Potash-Granular	Muriate Of Potash-Granular (ton)	Royalties	316771
+2013	NM	Eddy	35015	Muriate Of Potash-Standard	Muriate Of Potash-Standard (ton)	Royalties	110360
+2013	NM	Eddy	35015	Potash	Potash (ton)	Royalties	275075
+2013	NM	Eddy	35015	Salt	Salt (ton)	Royalties	425125
+2013	NM	Eddy	35015	Sylvite-Raw Ore	Sylvite-Raw Ore (ton)	Royalties	171599
+2013	NM	Harding	35021	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	6771498.81
+2013	NM	Hidalgo	35023	Geothermal	Geothermal - Electrical Generation, Kilowatt Hours (kwh)	Royalties	69407
+2013	NM	Lea	35025	Gas	Fuel Gas (mcf)	Royalties	1302.07
+2013	NM	Lea	35025	Gas	Gas Lost - Flared or Vented (mcf)	Royalties	1044490.35
+2013	NM	Lea	35025	Gas	Processed (Residue) Gas (mcf)	Royalties	15474208.07
+2013	NM	Lea	35025	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	32119472.47
+2013	NM	Lea	35025	NGL	Gas Plant Products (gal)	Royalties	107008872.79
+2013	NM	Lea	35025	Oil	Condensate (bbl)	Royalties	476452.18
+2013	NM	Lea	35025	Oil	Oil (bbl)	Royalties	16058380.11
+2013	NM	Mckinley	35031	Gas	Coal Bed Methane (mcf)	Royalties	162850
+2013	NM	Mckinley	35031	Gas	Fuel Gas (mcf)	Royalties	574
+2013	NM	Mckinley	35031	Oil	Oil (bbl)	Royalties	47470.28
+2013	NM	Quay	35037	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	575264.02
+2013	NM	Rio Arriba	35039	Gas	Coal Bed Methane (mcf)	Royalties	67067714.34
+2013	NM	Rio Arriba	35039	Gas	Fuel Gas (mcf)	Royalties	382697.53
+2013	NM	Rio Arriba	35039	Gas	Processed (Residue) Gas (mcf)	Royalties	109134634.28
+2013	NM	Rio Arriba	35039	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	24835268.2
+2013	NM	Rio Arriba	35039	NGL	Gas Plant Products (gal)	Royalties	409885793.48
+2013	NM	Rio Arriba	35039	Oil	Condensate (bbl)	Royalties	371899.45
+2013	NM	Rio Arriba	35039	Oil	Oil (bbl)	Royalties	379947.36
+2013	NM	Roosevelt	35041	Gas	Processed (Residue) Gas (mcf)	Royalties	38413.25
+2013	NM	Roosevelt	35041	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	620005.34
+2013	NM	Roosevelt	35041	NGL	Gas Plant Products (gal)	Royalties	143581.96
+2013	NM	Roosevelt	35041	Oil	Condensate (bbl)	Royalties	95.52
+2013	NM	Roosevelt	35041	Oil	Oil (bbl)	Royalties	75960.56
+2013	NM	San Juan	35045	Coal	Coal (ton)	Royalties	6130126
+2013	NM	San Juan	35045	Gas	Coal Bed Methane (mcf)	Royalties	100670257.91
+2013	NM	San Juan	35045	Gas	Fuel Gas (mcf)	Royalties	769795.63
+2013	NM	San Juan	35045	Gas	Gas Lost - Flared or Vented (mcf)	Royalties	423.2
+2013	NM	San Juan	35045	Gas	Processed (Residue) Gas (mcf)	Royalties	123121509.82
+2013	NM	San Juan	35045	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	30026824.71
+2013	NM	San Juan	35045	NGL	Gas Plant Products (gal)	Royalties	548342063.4
+2013	NM	San Juan	35045	Oil	Condensate (bbl)	Royalties	347140.55
+2013	NM	San Juan	35045	Oil	Drip or Scrubber Condensate (bbl)	Royalties	11.44
+2013	NM	San Juan	35045	Oil	Inlet Scrubber (bbl)	Royalties	4194.6
+2013	NM	San Juan	35045	Oil	Oil (bbl)	Royalties	535696.44
+2013	NM	Sandoval	35043	Gas	Coal Bed Methane (mcf)	Royalties	1090639
+2013	NM	Sandoval	35043	Gas	Fuel Gas (mcf)	Royalties	5893.77
+2013	NM	Sandoval	35043	Gas	Processed (Residue) Gas (mcf)	Royalties	302524.68
+2013	NM	Sandoval	35043	Gas	Unprocessed (Wet) Gas (mcf)	Royalties	162662.2
+2013	NM	Sandoval	35043	NGL	Gas Plant Products (gal)	Royalties	1547286.76
+2013	NM	Sandoval	35043	Oil	Condensate (bbl)	Royalties	1341.82
+2013	NM	Sandoval	35043	Oil	Oil (bbl)	Royalties	335525.04
+2013	NM	Union	35059	Carbon Dioxide Gas	Carbon Dioxide Gas (CO2) (mcf)	Royalties	2743290.59

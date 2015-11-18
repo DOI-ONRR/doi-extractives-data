@@ -679,6 +679,38 @@
     var req;
     var previous;
 
+    var fixCommodity = (function() {
+      var groups = d3.values(eiti.commodities.groups);
+      var lookup = {};
+      groups.forEach(function(group) {
+        group.commodities.forEach(function(commodity) {
+          lookup[commodity.toLowerCase()] = commodity;
+        });
+      });
+
+      // console.log('lookup:', lookup);
+
+      return function(d) {
+        if (d.Commodity) {
+          // console.log('commodity:', d.Commodity);
+          return;
+        }
+
+        var product = d.Product;
+        if (!product) {
+          console.warn('no product:', d);
+          return;
+        }
+        var withoutUnits = product.match(/^[\w ]+/)[0].trim().toLowerCase();
+        var firstWord = withoutUnits.split(' ')[0];
+        d.Commodity = lookup[withoutUnits] || lookup[firstWord];
+        if (!d.Commodity) {
+          d.Commodity = 'Other';
+          console.log('other:', product, [withoutUnits, firstWord]);
+        }
+      };
+    })();
+
     model.load = function(state, done) {
       if (req) {
         req.abort();
@@ -707,6 +739,11 @@
 
     function applyFilters(data, state, done) {
       // console.log('applying filters:', state.toJS());
+
+      // XXX fix Commodity values
+      if (data.length && !data[0].Commodity) {
+        data.forEach(fixCommodity);
+      }
 
       var commodity = state.get('commodity');
       var group = state.get('group');

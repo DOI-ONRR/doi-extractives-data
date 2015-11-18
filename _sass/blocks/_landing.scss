@@ -1,4 +1,3 @@
-.landing-section_top,
 .landing-section_open,
 .landing-section {
   padding-bottom: $base-padding;
@@ -11,35 +10,44 @@
   border-bottom: $thin-border-size solid $mid-gray;
 
   @include respond-to(medium-up) {
-    @include span-columns(5.5);
+    @include span-columns(5);
 
     border-bottom: none;
+  }
+}
 
+.landing-section_top {
+  margin-bottom: $base-padding-extra;
+}
+
+.landing-section {
+  @include respond-to(medium-up) {
     &:nth-child(even) {
-      @include shift(1);
+      @include shift(2);
+    }
+
+    &:nth-child(odd) {
+      @include omega();
     }
   }
-
-  border-bottom: $thin-border-size solid $mid-gray;
 }
 
 .landing-section_open {
-  @extend .landing-section;
-
   &.oil-gas {
     background: url('../img/revenues/cards/oil-gas.png') bottom right no-repeat;
-  }
-
-  &.minerals {
-    background: url('../img/revenues/cards/minerals.png') bottom right no-repeat;
   }
 
   &.coal {
     background: url('../img/revenues/cards/coal.png') bottom right no-repeat;
   }
 
+  &.minerals {
+    background: url('../img/revenues/cards/minerals.png') bottom right no-repeat;
+  }
+
   &.renewables {
     background: url('../img/revenues/cards/renewables.png') bottom right no-repeat;
+  }
 
   &.overview {
     color: $mid-gray;
@@ -82,14 +90,37 @@
     }
   }
 
+  @include respond-to(medium-up) {
+    &.oil-gas {
+      @include shift(2);
+    }
+
+    &.coal {
+      @include omega();
+    }
+
+    &.minerals {
+      @include shift(2);
+    }
+
+    &.renewables {
+      @include omega();
+    }
+
+    &.overview {
+      @include span-columns(5);
+      @include shift(2);
+    }
+  }
+
   .landing-heading {
     display: block;
   }
-
 }
 
+
 .landing-section_category {
-  border-bottom: $thin-border-size solid $mid-gray;
+  border-bottom: 2px solid $mid-gray;
   margin-bottom: 0;
   margin-top: $base-padding;
   padding-bottom: $base-padding-lite;
@@ -97,7 +128,6 @@
 
 .landing-heading,
 .landing-heading a {
-  color: $dark-gray;
   display: inline;
 }
 
@@ -107,10 +137,4 @@
 
 .landing-image {
   width: 100%;
-}
-
-.landing-steps {
-  icon {
-    color: $mid-gray;
-  }
 }

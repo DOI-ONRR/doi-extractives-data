@@ -6,15 +6,7 @@ permalink: /explore/
 ---
 
 <section class="slab-delta">
-<<<<<<< bdc2bc0daccf0b7acc35514083a7e4e4741b6a65
-<<<<<<< aac41ad91de6eac96bdc4142cbbae7bfc623b217
   <div class="container-outer landing-section_top">
-=======
-  <div class="container-outer">
->>>>>>> reshufle
-=======
-  <div class="container-outer landing-section_top">
->>>>>>> rebase remnant
 	  <div class="container-left-8 hero-left">
 			<h1>{{ page.title }}</h1>
 			<p class="hero-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
@@ -123,11 +115,8 @@ permalink: /explore/
 	</section>
 </section>
 <section class="slab-alpha container-outer container-padded u-centered">
-
     <h1>Not sure where to go? Start here &#8230;</h1>
-
     <h2><a href="resource_revenues">Learn how natural resources result in federal revenues</a></h2>
-
 </section>
 
 <!-- Accordion -->

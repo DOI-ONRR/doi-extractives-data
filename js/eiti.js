@@ -419,7 +419,7 @@
   };
 
   /**
-   * This is a format transform that turns metric SI suffixes into more
+   * This is a format transform that turns metric/SI suffixes into more
    * US-friendly ones: M -> m, G -> b, etc.
    *
    * @param {String} str the formatted string
@@ -436,21 +436,21 @@
   })();
 
   /**
-   * Produces international system ("IS")/metric form.
+   * Produces international system ("SI")/metric form.
    *
    * @example
    * assert.equal(eiti.format.is(4.2e6), '4.2m');
    *
-   * @name eiti.format.metric
+   * @name eiti.format.si
    * @function
    *
    * @param {Number} num
    * @return {String}
    */
-  eiti.format.is = eiti.format.transform('.2s', eiti.format.transformMetric);
+  eiti.format.si = eiti.format.transform('.2s', eiti.format.transformMetric);
 
   /**
-   * Produces whole dollar strings in IS/metric form, prefixed
+   * Produces whole dollar strings in SI/metric form, prefixed
    * with a '$', and negative numbers in parentheses.
    *
    * @name eiti.format.dollars
@@ -459,7 +459,7 @@
    * @param {Number} num
    * @return {String}
    */
-  eiti.format.dollars = eiti.format.transform(eiti.format.is, function(str) {
+  eiti.format.dollars = eiti.format.transform(eiti.format.si, function(str) {
     if (str.charAt(0) === '-') {
       str = '(' + str.substr(1) + ')';
     }

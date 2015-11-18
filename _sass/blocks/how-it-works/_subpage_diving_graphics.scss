@@ -5,7 +5,7 @@
 
   &.onshore-oil {
     @include respond-to(medium-up) {
-      background: url('../img/revenues/onshore-oil-top.png') top left no-repeat, url('../img/revenues/onshore-oil-bottom.png') bottom left no-repeat;
+      background: url('../img/how-it-works/onshore-oil-top.png') top left no-repeat, url('../img/how-it-works/onshore-oil-bottom.png') bottom left no-repeat;
       background-size: 100%, 100%;
       height: 100%;
       padding-top: 50px;
@@ -13,7 +13,7 @@
       z-index: 2;
 
       &:before {
-        background: url('../img/revenues/onshore-oil-middle.png') top left repeat-y;
+        background: url('../img/how-it-works/onshore-oil-middle.png') top left repeat-y;
         background-size: 100%;
         bottom: 448px;
         content: '';
@@ -47,7 +47,7 @@
     }
 
     @include respond-to(massive-up) {
-      background: url('../img/revenues/onshore-oil-wide.png') no-repeat;
+      background: url('../img/how-it-works/onshore-oil-wide.png') no-repeat;
       background-position-x: -1000px;
       background-size: 202%;
 
@@ -72,7 +72,7 @@
     background: $offshore-oil-primary-color;
 
     @include respond-to(medium-up) {
-      background: url('../img/revenues/offshore-oil-top.png') top left no-repeat, url('../img/revenues/offshore-oil-bottom.png') bottom left no-repeat;
+      background: url('../img/how-it-works/offshore-oil-top.png') top left no-repeat, url('../img/how-it-works/offshore-oil-bottom.png') bottom left no-repeat;
       background-size: 100%, 100%;
       padding-top: 50px;
       position: relative;
@@ -80,7 +80,7 @@
       z-index: 2;
 
       &:before {
-        background: url('../img/revenues/offshore-oil-middle.png') top left repeat-y;
+        background: url('../img/how-it-works/offshore-oil-middle.png') top left repeat-y;
         background-size: 100%;
         bottom: 448px;
         content: '';
@@ -115,7 +115,7 @@
     }
 
     @include respond-to(massive-up) {
-      background: url('../img/revenues/offshore-oil-wide.png') no-repeat;
+      background: url('../img/how-it-works/offshore-oil-wide.png') no-repeat;
       background-position-x: -1000px;
 
       &:before {
@@ -139,7 +139,7 @@
 
     @include respond-to(medium-up) {
       &:after {
-        background: url('../img/revenues/renew-onshore.svg') bottom left no-repeat;
+        background: url('../img/how-it-works/renew-onshore.svg') bottom left no-repeat;
       }
     }
 
@@ -156,7 +156,7 @@
   &.offshore-renewables {
     @include respond-to(medium-up) {
       &:after {
-        background: url('../img/revenues/renew-offshore.svg') bottom left no-repeat;
+        background: url('../img/how-it-works/renew-offshore.svg') bottom left no-repeat;
       }
     }
   }
@@ -170,7 +170,7 @@
       z-index: 1;
 
       &:before {
-        background: url('../img/revenues/renewables-bg-gradient.png') top left repeat-x;
+        background: url('../img/how-it-works/renewables-bg-gradient.png') top left repeat-x;
         background-size: contain;
         bottom: 0;
         content: '';
@@ -207,14 +207,14 @@
     background: $coal-primary-color;
 
     @include respond-to(medium-up) {
-      background: url('../img/revenues/coal-top.png') top left no-repeat, url('../img/revenues/coal-bottom.png') bottom left no-repeat;
+      background: url('../img/how-it-works/coal-top.png') top left no-repeat, url('../img/how-it-works/coal-bottom.png') bottom left no-repeat;
       background-size: 100%, 100%;
       height: 100%;
       position: relative;
       z-index: 2;
 
       &:before {
-        background: url('../img/revenues/coal-middle.png') top left repeat-y;
+        background: url('../img/how-it-works/coal-middle.png') top left repeat-y;
         background-size: 100%;
         bottom: 603px;
         content: '';
@@ -249,7 +249,7 @@
     }
 
     @include respond-to(massive-up) {
-      background: url('../img/revenues/coal-wide.png') no-repeat;
+      background: url('../img/how-it-works/coal-wide.png') no-repeat;
       background-position-x: -500px;
       background-size: 185%;
 
@@ -272,14 +272,14 @@
     background: $minerals-primary-color;
 
     @include respond-to(medium-up) {
-      background: url('../img/revenues/minerals-top.png') top left no-repeat, url('../img/revenues/minerals-bottom.png') bottom left no-repeat;
+      background: url('../img/how-it-works/minerals-top.png') top left no-repeat, url('../img/how-it-works/minerals-bottom.png') bottom left no-repeat;
       background-size: 100%, 100%;
       height: 100%;
       position: relative;
       z-index: 2;
 
       &:before {
-        background: url('../img/revenues/minerals-middle.png') top left repeat-y;
+        background: url('../img/how-it-works/minerals-middle.png') top left repeat-y;
         background-size: 100%;
         bottom: 630px;
         content: '';
@@ -307,7 +307,7 @@
     }
 
     @include respond-to(jumbo-up) {
-      background: url('../img/revenues/minerals-wide.png') no-repeat;
+      background: url('../img/how-it-works/minerals-wide.png') no-repeat;
       background-position-x: -1000px;
       background-size: 222%;
 

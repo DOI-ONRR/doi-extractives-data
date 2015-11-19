@@ -22,6 +22,8 @@
 
 .landing-section {
   @include respond-to(medium-up) {
+    margin-top: $base-padding;
+
     &:nth-child(even) {
       @include shift(2);
     }
@@ -33,6 +35,8 @@
 }
 
 .landing-section_open {
+  margin-top: $base-padding;
+
   &.oil-gas {
     background: url('../img/how-it-works/cards/oil-gas.png') bottom right no-repeat;
   }
@@ -64,6 +68,7 @@
       margin-bottom: $base-padding-lite;
 
       [class*='icon-'] {
+        color: $neutral-gray;
         float: right;
       }
     }
@@ -73,11 +78,12 @@
 
       background: $light-gray;
       font-size: 0.9em;
-      padding: $base-padding-lite;
+      padding: $base-padding;
       text-align: center;
 
       icon {
         color: $dark-gray;
+        font-size: 1.2em;
       }
     }
   }

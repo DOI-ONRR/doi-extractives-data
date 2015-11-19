@@ -8,7 +8,7 @@ permalink: /how-it-works/
   <div class="container-outer landing-section_top">
     <div class="container-left-8 hero-left">
       <h1>{{ page.title }}</h1>
-      <p class="hero-description">Large text The federal government issues leases granting rights to explore for natural resources which may exist on federal lands. In return, part of the sales value for many of these commodities is paid back to the government as “royalties” (along with other types of revenues), for the benefit of the American people.</p>
+      <p class="hero-description">Large text Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
     </div>
     <div class="container-right-4 hero-right">
       <div class="hero-right_square">
@@ -95,7 +95,17 @@ permalink: /how-it-works/
 	<section class="container">
 		<h3 class="landing-section_category">Laws and Regulations</h3>
 		<div class="container landing-section" accordion-item accordion-open="true">
-			<h5 class="landing-heading"><a href="{{site.baseurl}}/how-it-works/federal-laws-and-reforms/">Federal</a></h5>
+			<h5 class="landing-heading"><a href="{{site.baseurl}}/how-it-works/federal-laws-and-reforms/">Federal laws and reforms</a></h5>
+			<button class="accordion-button" accordion-button></button>
+			<div class="accordion-content">
+				<p class="landing-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+				<a href="{{site.baseurl}}/how-it-works/federal-laws-and-reforms/">
+					<img class="landing-image" src="{{site.baseurl}}/img/landing-placeholders/placeholder.png">
+				</a>
+			</div>
+		</div>
+    <div class="container landing-section" accordion-item accordion-open="true">
+			<h5 class="landing-heading"><a href="{{site.baseurl}}/how-it-works/federal-agencies/">Federal agencies</a></h5>
 			<button class="accordion-button" accordion-button></button>
 			<div class="accordion-content">
 				<p class="landing-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
@@ -105,7 +115,7 @@ permalink: /how-it-works/
 			</div>
 		</div>
 		<div class="container landing-section" accordion-item accordion-open="true">
-			<h5 class="landing-heading"><a href="{{site.baseurl}}/how-it-works/state-laws-and-regulations/">State</a></h5>
+			<h5 class="landing-heading"><a href="{{site.baseurl}}/how-it-works/state-laws-and-regulations/">State laws and regulations</a></h5>
 			<button class="accordion-button" accordion-button></button>
 			<div class="accordion-content">
 				<p class="landing-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
@@ -115,7 +125,7 @@ permalink: /how-it-works/
 			</div>
 		</div>
 		<div class="container landing-section" accordion-item accordion-open="true">
-			<h5 class="landing-heading"><a href="{{site.baseurl}}/how-it-works/tribal-laws-and-regulations/">Tribal</a></h5>
+			<h5 class="landing-heading"><a href="{{site.baseurl}}/how-it-works/tribal-laws-and-regulations/">Tribal laws and regulations</a></h5>
 			<button class="accordion-button" accordion-button></button>
 			<div class="accordion-content">
 				<p class="landing-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>

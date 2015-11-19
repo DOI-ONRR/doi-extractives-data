@@ -1,0 +1,14 @@
+eiti-bar {
+  display: inline-block;
+  height: 1em;
+  position: relative;
+  width: 200px;
+
+  .eiti-bar-bar {
+    background: $dark-gray;
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+  }
+}

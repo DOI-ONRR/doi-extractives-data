@@ -17,6 +17,7 @@
 }
 
 .case_studies_intro-para {
+  @extend .para-xl;
 	margin-bottom: $base-padding-large;
 }
 

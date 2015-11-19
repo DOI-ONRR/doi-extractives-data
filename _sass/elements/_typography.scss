@@ -40,6 +40,10 @@ h5,
   @include heading(h5);
 }
 
+.para-xl {
+  @include heading('para-xl');
+}
+
 .para-lg {
   @include heading('para-lg');
 }
@@ -52,4 +56,3 @@ p,
 .para-sm {
   @include heading('para-sm');
 }
-

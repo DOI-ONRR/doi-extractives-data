@@ -61,8 +61,10 @@ ul,
   @include heading('para-sm');
 }
 
+p + h2,
 p + h3,
 p + h4,
-table + h3 {
+table + h3,
+ul + h3 {
   margin-top: $base-padding-large;
 }

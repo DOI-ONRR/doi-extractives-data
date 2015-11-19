@@ -35,6 +35,8 @@
 
 .hero-title_text {
   @include font-size(2);
+  font-weight: $weight-light;
+  line-height: 2.5rem;
 }
 
 .hero-button {

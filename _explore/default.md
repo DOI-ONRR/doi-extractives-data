@@ -14,7 +14,7 @@ permalink: /explore/
       <div class="hero-right_square">
         <figure>
           <img class="hero-right_image" src="{{ site.baseurl }}/img/landing-placeholders/federal-rev.png"/>
-          <figcaption class="hero-right_caption"><a href="">Link to how something works</a></figcaption>
+          <figcaption class="hero-right_caption">Link to some <a href="#">interesting content</a></figcaption>
         </figure>
       </div>
     </div>

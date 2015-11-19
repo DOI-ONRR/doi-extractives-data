@@ -1,8 +1,20 @@
 @import 'header';
 @import 'footer';
 @import 'banner';
-@import 'communities_intro';
-@import 'communities_content';
+
+// Case Studies
+//
+// Styles for the page at /case-studies/
+//
+// Styleguide blocks.case-studies
+@import 'case-studies/_intro';
+@import 'case-studies/_content';
+
+// How it Works
+//
+// Styles for the page at /how-it-works/
+//
+// Styleguide blocks.how-it-works
 @import 'how-it-works/steps';
 @import 'how-it-works/forms';
 @import 'how-it-works/intro';

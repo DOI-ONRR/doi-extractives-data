@@ -20,43 +20,43 @@ nav_items:
     title: Data availablity
 ---
 
-<h3><a name="intro" class="communities_content-heading js-comm_section">{{ page.title }}</a></h3>
+<h3><a name="intro" class="case_studies_content-heading js-cs_section">{{ page.title }}</a></h3>
 
 The United States possesses the largest estimated recoverable coal reserves in the world. This resource abundance allowed coal to serve as the single largest source of domestic electricity generation for more than six decades.[^1] However, coal production has declined since 2007 due to increased competition from natural gas, as well as the effects of recent federal regulations.
 
 One of the most productive coal deposits in the country is the Central Appalachian Coal Basin, supplying the numerous surface and underground mines of West Virginia. The counties in the southern half of the state maintain estimated recoverable coal reserves of 1.2 billion tons.[^2] In particular, the contiguous Boone, Logan, and Mingo counties have long been a center of coal exploration and extraction.
 
-<h3><a name="geolo" class="communities_content-heading js-comm_section">Geology and history</a></h3>
+<h3><a name="geolo" class="case_studies_content-heading js-cs_section">Geology and history</a></h3>
 
 Coal has driven economic development across Boone, Logan, and Mingo counties for many decades. Bituminous coal was first discovered by explorer John Peter Salley in 1742, in what would later become Boone County. Although forest extraction was the first major industry in the region, large-scale coal mining began in Boone County in the 1880s. The arrival of the Norfolk & Western Railroad in the 1890s and the Chesapeake & Ohio Railroad soon thereafter launched a coal extraction boom in all three counties. The early decades of the twentieth century ushered in a frenzied pace of development in these counties. While coal continued to drive the counties’ economies in the decades that followed, population numbers declined as mechanization and a shift to greater surface mining reduced the need for labor.[^3]
 
-<h3><a name="produ" class="communities_content-heading js-comm_section">Production</a></h3>
+<h3><a name="produ" class="case_studies_content-heading js-cs_section">Production</a></h3>
 
 In 2013, 37 underground mines and 31 surface mines were operating across the three counties.[^4] In all three counties, the top ten landowners own at least 50% of private land.[^5] Notable operations include Boone County’s Twilight Mountaintop Removal Surface Mine (2.5 million tons in 2013) and Hobet 21 Surface Mine (2.3 million tons in 2013).[^6] [^7]
 
 Cumulatively, mines in Boone, Logan, and Mingo counties produced 32.7 million tons of coal, constituting 29% of West Virginia’s annual output.[^8] Coal production in these counties reached a high of 62.3 million tons in 2008, but dropped 27.9 million tons (a 45% decrease) to their 2013 output level of 32.7 million tons.[^9] Logan is the only one of the three counties whose production total in 2013 was greater than it had been ten years prior.
 
-<img src="{{ site.baseurl }}/img/counties/wv-production.png" alt="Coal Production: Boone, Logan, and Mingo Counties from 2004-2013" class="communities_content-graph">
+<img src="{{ site.baseurl }}/img/counties/wv-production.png" alt="Coal Production: Boone, Logan, and Mingo Counties from 2004-2013" class="case_studies_content-graph">
 
-<h3><a name="emplo" class="communities_content-heading js-comm_section">Employment</a></h3>
+<h3><a name="emplo" class="case_studies_content-heading js-cs_section">Employment</a></h3>
 
 Coal extraction has provided employment in these communities for the past century, but employment is declining in tandem with the region’s dropping production levels and the industry’s increased mechanization. In 2013, the combined population of the three counties stood at 88,211.[^10] During that same year, 3,427 people were employed at underground mines, and 1,601 people were employed at surface mines across the three counties.[^11] This translates to 19% of the total employed population, or 6% of the total population. These numbers constitute a 20% drop in the sector’s employment since 2007.[^12] The following graph illustrates changes in mining employment broadly across these three counties from 2004 through 2013, compared with employment in all other industries.[^13] [^14]
 
-<img src="{{ site.baseurl }}/img/counties/wv-wage.png" alt="Boone, Logan, and Mingo Counties Mining Industry vs. All Other Industries Wage and Salary Employment from 2004–2013" class="communities_content-graph">
+<img src="{{ site.baseurl }}/img/counties/wv-wage.png" alt="Boone, Logan, and Mingo Counties Mining Industry vs. All Other Industries Wage and Salary Employment from 2004–2013" class="case_studies_content-graph">
 
-<h3><a name="reven" class="communities_content-heading js-comm_section">Revenue</a></h3>
+<h3><a name="reven" class="case_studies_content-heading js-cs_section">Revenue</a></h3>
 
 West Virginia levies three primary state tax mechanisms to collect and distribute coal revenue down to the county level. The most significant of these mechanisms is the Coal Severance Tax, which amounts to 5% of the sale price of mined coal. Seventy five percent of net proceeds from this tax are distributed to coal-producing counties, while the remaining 25% is divided amongst all counties and municipalities in the state.[^15] In 2013, Boone, Logan, and Mingo counties received $7.7 million out of a total $32.5 million collected by the state from this tax.[^16]
 
 Boone, Logan, and Mingo also benefit from the Coal County Reallocation Severance Tax (an additional coal severance tax specifically for the counties in which the coal was located at the time it was extracted), as well as the Waste Coal Tax (a severance tax on coal produced from refuse, gob piles, and slurry ponds). Boone, Logan, and Mingo counties derived more than $1.2 million out of a total $4.5 million disbursed across all counties in 2013 from the Coal County Reallocation Severance Tax.[^17] Logan and Mingo counties received additional revenue in the tens of thousands of dollars from the Waste Coal Tax.[^18]
 
-<h3><a name="costs" class="communities_content-heading js-comm_section">Costs</a></h3>
+<h3><a name="costs" class="case_studies_content-heading js-cs_section">Costs</a></h3>
 
 The West Virginia Department of Transportation (DOT) consists of three operating sections, including the Coal Resource Transportation System (CRTS). The CRTS manages, among other items, the permit system for coal haulers that would like to use designated CRTS roads. As of 2003, coal haulers must purchase a permit that allows for a gross vehicle weight of up to 120,000 pounds depending on their truck configuration.[^19] Fees collected through that permitting process are used by the Commission of Highways to match funds provided by coal companies and other parties for repairs and improvements to CRTS roads and bridges. Exact information on how much money the state collects and/or spends on industry-related transportation maintenance and repairs was not found in publicly available government sources.
 
 The West Virginia Office of Miners’ Health, Safety, and Training (WVOMHST) is the lead state agency for incidents involving coal mine emergencies. In 2013, the state agency’s expenditures totaled $15,346,893.[^20] Of that total, $12.8 million came from a general revenue fund, $2.2 million from industry fees, and the remainder from consolidated federal funds.[^21] The West Virginia Emergency Operations Plan sheds light on various WVOMHST tasks, which range from coordinating all rescue-related activities, to maintaining the Mine and Industrial Accident Emergency Operations Center, to keeping the coal mine emergency contact list current.[^22] Publicly available government documents do not clarify how much Boone, Logan, and Mingo counties spend on coal mine-related emergency services.
 
-<h3><a name="data" class="communities_content-heading js-comm_section">Data availability</a></h3>
+<h3><a name="data" class="case_studies_content-heading js-cs_section">Data availability</a></h3>
 
 <table>
   <thead>
@@ -90,7 +90,7 @@ The West Virginia Office of Miners’ Health, Safety, and Training (WVOMHST) is 
   </tbody>
 </table>
 
-<h3 class="communities_content-heading">Notes</h3>
+<h3 class="case_studies_content-heading">Notes</h3>
 
 [^1]: U.S. Energy Information Administration, [What is the Role of Coal in the United States?](http://www.eia.gov/energy_in_brief/article/role_coal_us.cfm), 2014
 [^2]: U.S. Energy Information Administration, [Recoverable Coal Reserves and Average Recoverable Percentage at Producing Mines by State](http://www.eia.gov/coal/annual/pdf/table14.pdf), 2013 and 2012

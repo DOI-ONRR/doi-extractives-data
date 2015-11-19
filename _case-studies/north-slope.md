@@ -20,28 +20,28 @@ nav_items:
     title: Data availablity
 ---
 
-<h3><a name="intro" class="communities_content-heading js-comm_section">{{ page.title }}</a></h3>
+<h3><a name="intro" class="case_studies_content-heading js-cs_section">{{ page.title }}</a></h3>
 
 The United States has experienced rapid change in domestic oil production since 2008, when crude oil production reached a low of 3.98 million bbl/day.[^1] Fast forward five years, and the United States had nearly doubled its daily production output, with Texas and North Dakota driving much of the growth.[^2] [^3] Alaska—which was the fourth largest state producer of crude oil in 2013—did not experience the same production boom, with crude oil output in steady decline throughout the past decade.[^4] In spite of that downward trend, the nation’s largest oil-producing county is Alaska’s North Slope Borough.[^5]
 
 
-<h3><a name="geolo" class="communities_content-heading js-comm_section">Geology and history</a></h3>
+<h3><a name="geolo" class="case_studies_content-heading js-cs_section">Geology and history</a></h3>
 
 The North Slope Borough is the country’s largest organized local jurisdiction, spanning more than 94,000 miles north of the Arctic Circle. Its 9,686 residents, most of whom are Inupiat Alaskan Natives, are spread across eight separate communities.[^6] The northern coast of Alaska was documented as a potential oil-producing region as early as 1900. However, the borough’s government was not formally incorporated until 1972, soon after the discovery of oil at Prudhoe Bay, the largest single oil field in North America.[^7]
 
 Oil production increased dramatically in 1977 with the opening of the Alaska Pipeline, which provided the first economically viable way to transport large amounts of crude oil from the North Slope to market. In 1994, ARCO identified another significant deposit at the Alpine Field, located on state land east of the Colville River and extending into the federally administered National Petroleum Reserve of Alaska. The North Slope’s Prudhoe Bay, Alpine Field, and Kuparuk River constitute the majority of the state of Alaska’s oil production. Today, the borough’s oil reserve base is extensive, with approximately six billion barrels of proved oil.[^8]
 
-<h3><a name="produ" class="communities_content-heading js-comm_section">Production</a></h3>
+<h3><a name="produ" class="case_studies_content-heading js-cs_section">Production</a></h3>
 
 In 2013, the North Slope Borough produced 182.5 million bbl of oil, on both state-owned and federal land.[^9] Since production at Prudhoe Bay commenced, all of the North Slope’s extraction has taken place in the northern portion of the Colville-Canning province, administered by either the Alaska Department of Natural Resources or the Bureau of Land Management. While three major companies account for most production, North Slope exploration and extraction has diversified, with 63 current lease holders from seven countries.[^10] Annual oil production in the borough peaked in 1988 (at 722 million bbl) and has steadily declined since that time.[^11]
 
-<img src="{{ site.baseurl }}/img/counties/ak-production.png" alt="Oil Production in North Slope" class="communities_content-graph">
+<img src="{{ site.baseurl }}/img/counties/ak-production.png" alt="Oil Production in North Slope" class="case_studies_content-graph">
 
-<h3><a name="emplo" class="communities_content-heading js-comm_section">Employment</a></h3>
+<h3><a name="emplo" class="case_studies_content-heading js-cs_section">Employment</a></h3>
 
 The oil industry is a key driver of jobs throughout the borough. In 2013, oil and gas extraction provided 1,768 jobs on the North Slope, accounting for 12.5% of total employment (14,199).[^12] [^13] The North Slope Borough’s population is less than 10,000, so many of the private jobs are filled by nonresidents. In 2013, nonresidents accounted for 33.6% of oil industry workers in Alaska, up from 31.6% in 2012.[^14] The North Slope Borough government itself remains the largest employer of local residents, along with the Arctic Slope Regional Corporation, the school district, and local Native corporations.[^15]
 
-<h3><a name="reven" class="communities_content-heading js-comm_section">Revenues</a></h3>
+<h3><a name="reven" class="case_studies_content-heading js-cs_section">Revenues</a></h3>
 
 Given the North Slope’s relative geographic isolation, oil revenue is critical for supporting local schools, health centers, fire stations, water and sanitation facilities, and infrastructure. In 2013, the North Slope government received $470 million in revenue. Of that revenue, the borough received $332 million from local property taxes, 98% of which was levied on oil- and gas-related properties.[^16]
 
@@ -54,7 +54,7 @@ At the state level, the Alaska government collects oil-related revenue for the b
 
 Alaskan residents also receive annual dividend payments from the state’s Permanent Fund, based on a five-year average of the fund’s performance. The state established the Permanent Fund in 1976 as construction of the Alaska Pipeline concluded. Twenty-five percent of revenue from mineral leases on state-owned lands and from federal mineral revenue-sharing payments go into the Permanent Fund for investment. In 2013, Alaskan residents each received $900 as a result of this payout.[^19]
 
-<h3><a name="costs" class="communities_content-heading js-comm_section">Costs</a></h3>
+<h3><a name="costs" class="case_studies_content-heading js-cs_section">Costs</a></h3>
 
 Oil extraction also incurs certain fiscal costs. Oil exploration and development on the North Slope requires infrastructure, including airports, docks, pads and roads, ports, production-related facilities, pipelines, and gravel islands, for example.[^20] The North Slope Borough is responsible for maintaining approximately 100 miles of roads, as well as boat ramps, boat landings, port facilities, nine public airports, and thousands of miles of winter trails and roads.[^21]
 
@@ -66,7 +66,7 @@ The State also spends public dollars on reclamation services, including managing
 
 The North Slope Borough often responds to, and pays for, emergency services on the oilfield roads, such as the Kuparuk Oilfield roads.[^27] The Alaska state government also invests a significant amount of tax dollars to prevent and respond to oil and hazardous substance emergencies in the state. For example, the Office of Management and Budget appropriated $750,000 toward oil and hazardous substance first-responder equipment and preparedness in 2013.[^28]
 
-<h3><a name="data" class="communities_content-heading js-comm_section">Data availability</a></h3>
+<h3><a name="data" class="case_studies_content-heading js-cs_section">Data availability</a></h3>
 
 The table below highlights the data sources used to compile this county case study, as well as any gaps that exist in publically available data.
 
@@ -102,7 +102,7 @@ The table below highlights the data sources used to compile this county case stu
   </tbody>
 </table>
 
-<h3 class="communities_content-heading">Notes</h3>
+<h3 class="case_studies_content-heading">Notes</h3>
 [^1]: Barrels are noted as “bbl” when used as a unit of measure.
 [^2]: Department of Energy, [U.S. Domestic Oil Production Exceeds Imports for First Time in 18 Years](http://energy.gov/articles/us-domestic-oil-production-exceeds-imports-first-time-18-years), 2013
 [^3]: U.S. Energy Information Administration, [Crude Oil Production](http://www.eia.gov/dnav/pet/pet_crd_crpdn_adc_mbbl_a.htm), 2015

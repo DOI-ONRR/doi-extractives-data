@@ -2,7 +2,7 @@
 //
 // Diving Graphics and associated steps
 //
-// Styleguide blocks.revenues_subpage_steps
+// Styleguide blocks.how-it-works.subpage_steps
 
 $onshore-oil-primary-color: #534136;
 $onshore-oil-secondary-color: #c5403c;
@@ -17,7 +17,7 @@ $offshore-renewables-secondary-color: #0b92ce;
 $onshore-renewables-primary-color: #579469;
 $onshore-renewables-secondary-color: $blue;
 
-@import 'revenues_subpage_diving_graphics';
+@import 'subpage_diving_graphics';
 
 .revenues_subpage-dyk {
   border-radius: $base-border-radius;

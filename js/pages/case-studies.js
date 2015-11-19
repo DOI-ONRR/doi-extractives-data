@@ -14,14 +14,14 @@
           || document.body.parentNode
           || document.body).scrollTop;
     };
-    var communitiesContent = document.querySelector('.communities_content');
+    var caseStudiesContent = document.querySelector('.case_studies_content');
 
 
 
     var removeActive = function(){
-      var communitiesNavItems = document.querySelectorAll('.js-comm_nav_item');
-      for (var i = 0; i < communitiesNavItems.length; i++) {
-        communitiesNavItems[i].classList.remove('active');
+      var caseStudiesNavItems = document.querySelectorAll('.js-cs_nav_item');
+      for (var i = 0; i < caseStudiesNavItems.length; i++) {
+        caseStudiesNavItems[i].classList.remove('active');
       }
     };
     var addActive = function(name){
@@ -32,9 +32,9 @@
       }
     };
 
-    var communitiesNavItems = document.querySelectorAll('.js-comm_nav_item');
-    for (var i = 0; i < communitiesNavItems.length; i++) {
-      var item = communitiesNavItems[i];
+    var caseStudiesNavItems = document.querySelectorAll('.js-cs_nav_item');
+    for (var i = 0; i < caseStudiesNavItems.length; i++) {
+      var item = caseStudiesNavItems[i];
       item.addEventListener('click', function () {
         removeActive();
         this.classList.add('active');
@@ -43,11 +43,11 @@
 
 
     var setPageSections = function(){
-      var communitiesSections = document.querySelector('.js-comm_section'),
+      var caseStudiesSections = document.querySelector('.js-cs_section'),
         sections = [];
-      for (var i = 0; i < communitiesSections.length; i++) {
-        var section = communitiesSections[i];
-        var top = section.offsetTop - section.offsetHeight + communitiesContent.offsetTop;
+      for (var i = 0; i < caseStudiesSections.length; i++) {
+        var section = caseStudiesSections[i];
+        var top = section.offsetTop - section.offsetHeight + caseStudiesContent.offsetTop;
         sections.push({
           name : section.getAttribute('name'),
           top : top
@@ -68,14 +68,14 @@
 
     var setStickyPos = function () {
       var stickyNav = document.querySelector('.sticky_nav'),
-          ccOffsetTop = communitiesContent.offsetTop;
+          cscOffsetTop = caseStudiesContent.offsetTop;
 
       // scrollDifference is the difference in height between
       // the location of the top of the window and
-      // the top of the 'communities_content' div
-      var scrollDifference = scrollTop - ccOffsetTop;
+      // the top of the 'case_studies_content' div
+      var scrollDifference = scrollTop - cscOffsetTop;
 
-      var combinedOffset = ccOffsetTop + communitiesContent.offsetHeight;
+      var combinedOffset = cscOffsetTop + caseStudiesContent.offsetHeight;
       var stickyNavHeight = stickyNav.clientHeight;
 
       // scrollTopFooterOffset is the combined height of the content
@@ -90,7 +90,7 @@
         stickyNav.style.top = 0;
         if (scrollTop > scrollTopFooterOffset){
           stickyNav.style.position = 'absolute';
-          stickyNav.style.top = scrollTopFooterOffset - ccOffsetTop + 'px';
+          stickyNav.style.top = scrollTopFooterOffset - cscOffsetTop + 'px';
         } else {
           stickyNav.style.position = 'fixed';
           stickyNav.style.top = 0;

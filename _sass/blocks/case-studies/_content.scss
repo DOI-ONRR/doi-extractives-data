@@ -1,10 +1,10 @@
-// Communities Content
+// Case Studies Content
 //
-// The communities page main content
+// The Case Studies page main content
 //
-// Styleguide blocks.communities_content
+// Styleguide blocks.case-studies.content
 
-.communities_content {
+.case_studies_content {
   position: relative;
   ul {
     @include heading('para-sm');
@@ -16,15 +16,15 @@
   }
 }
 
-.communities_content-icon i {
+.case_studies_content-icon i {
   padding-right: $base-padding-lite / 2;
 }
 
-.communities_content-select {
+.case_studies_content-select {
   padding-bottom: $base-padding;
 }
 
-.communities_content-graph {
+.case_studies_content-graph {
   border: $thin-border-size solid $base-border-color;
   margin-bottom: $base-padding;
   width: 100%;
@@ -35,6 +35,6 @@
 
 }
 
-.communities_content-heading {
+.case_studies_content-heading {
   color: $dark-gray;
 }

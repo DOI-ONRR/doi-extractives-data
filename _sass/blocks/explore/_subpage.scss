@@ -145,33 +145,24 @@
     }
   }
 
-  .subregion-chart {
-    display: inline-block;
-    float: right;
-    min-width: 200px;
-    position: relative;
-    top: 0.4em;
-    width: 33%;
+  table.subregions {
+    border-collapse: collapse;
+    width: 100%;
 
-    .bars {
-      display: block;
-      vertical-align: baseline;
+    &,
+    td,
+    th,
+    tr {
+      border: 0;
     }
 
-    .label {
-      font-weight: $weight-light;
+    tr > *:first-child {
+      min-width: 60%;
+      padding-left: 0;
     }
 
-    .negative .label {
-      font-size: 0.8em;
-    }
-
-    .negative .bar {
-      fill: $negative-fill;
-    }
-
-    .positive .bar {
-      fill: $dark-gray;
+    tr > *:last-child {
+      padding-right: 0;
     }
   }
 

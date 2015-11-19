@@ -113,8 +113,10 @@ permalink: /explore/federal-production/
         <div class="map-legend"></div>
 
         <h3>Production by state or offshore area</h3>
-        <ol class="subregions">
-        </ol>
+        <table class="subregions">
+          <thead class="region-header"></thead>
+          <tbody></tbody>
+        </table>
 
       </section>
 
@@ -144,8 +146,10 @@ permalink: /explore/federal-production/
         <div class="map-legend"></div>
 
         <h3>Production by county</h3>
-        <ol class="subregions">
-        </ol>
+        <table class="subregions">
+          <thead class="region-header"></thead>
+          <tbody></tbody>
+        </table>
 
       </section>
       {% endfor %}
@@ -176,6 +180,7 @@ permalink: /explore/federal-production/
   </div>
 </section>
 <script src="{{ site.baseurl }}/js/vendor/immutable.min.js"></script>
+<script src="{{ site.baseurl }}/js/components/eiti-bar.js"></script>
 <script>
   eiti.data.REGION_ID_NAME = {
     {% for state in site.data.states %}

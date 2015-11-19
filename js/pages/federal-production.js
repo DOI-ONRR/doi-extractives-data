@@ -304,9 +304,16 @@
       .attr('class', 'subregion-chart')
       .call(createBarChart);
 
-    items.sort(function(a, b) {
+    var cmpName = function(a, b) {
+      return d3.ascending(a.properties.name, b.properties.name);
+    };
+    var cmpValue = function(a, b) {
       return d3.descending(a.value, b.value);
-    });
+    };
+    var sort = state.get('product')
+      ? function(a, b) { return cmpValue(a, b) || cmpName(a, b); }
+      : cmpName;
+    items.sort(sort);
 
     items.select('.color-swatch')
       .style('background-color', function(d) {
@@ -813,9 +820,9 @@
     var commodity = state.get('commodity') ||
       (state.get('group')
        ? eiti.commodities.groups[state.get('group')].name
-       : 'all commodities');
+       : 'All');
     var data = {
-      commodity: commodity.toLowerCase(),
+      commodity: commodity,
       region: REGION_ID_NAME[state.get('region') || 'US'],
       year: state.get('year')
     };

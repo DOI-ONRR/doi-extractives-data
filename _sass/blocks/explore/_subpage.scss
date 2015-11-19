@@ -21,26 +21,26 @@
     margin: 0 auto;
     padding: 0;
     position: relative;
-    text-align: left;
+    text-align: right;
     width: 100%;
 
-    &:after {
-      content: $fa-var-chevron-down;
-      font-family: FontAwesome;
-      font-size: 1.2em;
-      line-height: 1;
-      margin-top: -0.5em;
-      position: absolute;
-      right: 0.5em;
-      top: 50%;
+    &:before {
+      content: $icon-plus-sm;
+      font-family: eiti;
+      font-style: normal;
+      font-weight: normal;
+      line-height: $base-line-height;
+      padding-right: $base-padding-lite;
+      text-decoration: inherit;
+      vertical-align: bottom;
     }
 
     &[aria-expanded=true] {
       margin-top: 1em;
     }
 
-    &[aria-expanded=true]:after {
-      content: $fa-var-chevron-up;
+    &[aria-expanded=true]:before {
+      content: $icon-dash-sm;
     }
   }
 

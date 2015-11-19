@@ -5,10 +5,10 @@ permalink: /explore/federal-production/
 ---
 <section id="federal-production" class="explore-subpage">
   <section class="slab-delta">
-    <div class="container-outer explore-section_top">
+    <div class="container-outer landing-section_top">
       <h5> <a href="{{ site.baseurl }}/explore/">Explore Data</a> / {{ page.subpage_title }}</h5>
-      <h1 class="explore-heading">{{ page.subpage_title }}</h1>
-      <p class="explore-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      <h1 class="landing-heading">{{ page.subpage_title }}</h1>
+      <p class="landing-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
     </div>
   </section>
 
@@ -83,7 +83,7 @@ permalink: /explore/federal-production/
       </h1>
     </div>
 
-    <div class="regions container-outer">
+    <div class="regions container">
 
       <section id="US" class="region active">
 
@@ -120,30 +120,31 @@ permalink: /explore/federal-production/
 
       {% for region in site.data.states %}
       <section id="{{ region.id }}" class="region onshore">
+        <div class="map-wrapper">
+          <div class="subregion region-header">
+            <h2 class="subregion-name">{{ region.name }}</h2>
+            <span class="subregion-chart"></span>
+          </div>
 
-        <div class="subregion region-header">
-          <h2 class="subregion-name">{{ region.name }}</h2>
-          <span class="subregion-chart"></span>
+          <svg is="eiti-map" id="{{ region.id }}-map" class="region-map" simplify="1e-2"
+            preserveAspectRatio="xMidYMid meet"
+            projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/" zoom-to="{{ region.id }}">
+            <g class="onshore states" data-url="us-topology.json"
+              data-object="states"
+              data-filter="id === '{{ region.id }}'">
+            </g>
+            <g class="onshore counties" data-url="us-topology.json"
+              data-object="counties"
+              data-filter="properties.state === '{{ region.id }}'"
+              data-title="properties.name"
+              data-mesh="true">
+            </g>
+          </svg>
+
+          <div class="map-legend"></div>
+
+          <h3>Production by county</h3>
         </div>
-
-        <svg is="eiti-map" id="{{ region.id }}-map" class="region-map" simplify="1e-2"
-          preserveAspectRatio="xMidYMid meet"
-          projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/" zoom-to="{{ region.id }}">
-          <g class="onshore states" data-url="us-topology.json"
-            data-object="states"
-            data-filter="id === '{{ region.id }}'">
-          </g>
-          <g class="onshore counties" data-url="us-topology.json"
-            data-object="counties"
-            data-filter="properties.state === '{{ region.id }}'"
-            data-title="properties.name"
-            data-mesh="true">
-          </g>
-        </svg>
-
-        <div class="map-legend"></div>
-
-        <h3>Production by county</h3>
         <ol class="subregions">
         </ol>
 

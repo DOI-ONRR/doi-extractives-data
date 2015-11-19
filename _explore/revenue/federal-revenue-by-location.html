@@ -92,36 +92,37 @@ permalink: /explore/federal-revenue-by-location/
       </h1>
     </div>
 
-    <div class="regions container-outer">
+    <div class="regions container">
 
       <section id="US" class="region active">
+        <div class="map-wrapper">
+          <div class="subregion region-header">
+            <h2 class="subregion-name">Entire U.S.</h2>
+            <span class="subregion-chart"></span>
+          </div>
 
-        <div class="subregion region-header">
-          <h2 class="subregion-name">Entire U.S.</h2>
-          <span class="subregion-chart"></span>
+          <svg is="eiti-map" id="US-map" class="region-map" simplify="1e-2"
+            preserveAspectRatio="xMidYMid meet"
+            projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/">
+            <g class="offshore areas" data-url="offshore-simple.json"
+              data-id="'US-' + id"
+              data-href="'#?region=' + id"
+              data-title="properties.name"
+              data-mesh="true">
+            </g>
+            <g class="onshore states" data-url="us-topology.json"
+              data-object="states"
+              data-id="'US-' + id"
+              data-href="'#?region=' + id"
+              data-title="properties.name"
+              data-mesh="true">
+            </g>
+          </svg>
+
+          <div class="map-legend"></div>
+
+          <h3>Revenue by state or offshore area</h3>
         </div>
-
-        <svg is="eiti-map" id="US-map" class="region-map" simplify="1e-2"
-          preserveAspectRatio="xMidYMid meet"
-          projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/">
-          <g class="offshore areas" data-url="offshore-simple.json"
-            data-id="'US-' + id"
-            data-href="'#?region=' + id"
-            data-title="properties.name"
-            data-mesh="true">
-          </g>
-          <g class="onshore states" data-url="us-topology.json"
-            data-object="states"
-            data-id="'US-' + id"
-            data-href="'#?region=' + id"
-            data-title="properties.name"
-            data-mesh="true">
-          </g>
-        </svg>
-
-        <div class="map-legend"></div>
-
-        <h3>Revenue by state or offshore area</h3>
         <ol class="subregions">
         </ol>
 

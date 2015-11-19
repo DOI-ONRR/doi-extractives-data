@@ -26,7 +26,7 @@
 header,
 .header {
   @include outer-container($max-width);
-  margin-bottom: $base-padding;
+  margin-bottom: $base-padding-large;
   margin-top: $base-padding;
 
   div:first-of-type {
@@ -52,7 +52,6 @@ header,
   display: inline-block;
   float: right;
   margin: 0;
-  padding-right: $base-padding;
 }
 
 .header-nav_item,
@@ -72,10 +71,9 @@ header,
 }
 
 .header-nav_item_link {
-
   @include font-size(0.875);
   color: $dark-gray;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.1px;
   text-decoration: none;
   text-transform: uppercase;
   &:hover,
@@ -100,6 +98,8 @@ header,
   }
 
   .header-nav_search {
+    @include font-size(0.75);
+
     border-bottom-right-radius: 0;
     border-right: none;
     border-top-right-radius: 0;
@@ -108,7 +108,8 @@ header,
     float: left;
     font-family: $base-font-family;
     margin: 0;
-    padding: 0.3rem;
+    margin-left: $base-padding;
+    padding: 0.42rem;
     width: 150px;
   }
 
@@ -129,9 +130,10 @@ header,
 
 .header-nav_item_link_top {
   @extend .header-nav_item_link;
-  @include font-size(0.75px);
+  @include font-size(0.75);
 
   font-weight: $weight-light;
+  letter-spacing: 0.5px;
   text-transform: capitalize;
 
   &.active {

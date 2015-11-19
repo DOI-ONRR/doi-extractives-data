@@ -57,6 +57,11 @@
     margin-top: 1em;
   }
 
+  .map-wrapper {
+    padding-left: $base-padding;
+    padding-right: $base-padding;
+  }
+
   .region-map {
     display: block;
     height: 250px;
@@ -121,14 +126,18 @@
     }
   }
 
+
   .subregion {
-    // @include row();
     border-top: 1px solid $mid-gray;
     clear: both;
-    padding: 0 0.2em;
+    padding: 0 $base-padding;
     position: relative;
-
   }
+
+  .region-header {
+    padding: 0 0;
+  }
+
 
   .subregion-name {
     @extend .h4;

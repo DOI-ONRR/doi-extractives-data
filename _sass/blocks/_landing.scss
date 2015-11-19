@@ -22,6 +22,8 @@
 
 .landing-section {
   @include respond-to(medium-up) {
+    margin-top: $base-padding;
+
     &:nth-child(even) {
       @include shift(2);
     }
@@ -33,6 +35,8 @@
 }
 
 .landing-section_open {
+  margin-top: $base-padding;
+
   &.oil-gas {
     background: url('../img/how-it-works/cards/oil-gas.png') bottom right no-repeat;
   }
@@ -62,18 +66,23 @@
       @include omega();
 
       margin-bottom: $base-padding-lite;
+
+      icon {
+        color: $neutral-gray;
+      }
     }
 
     .landing-steps {
       @include span-columns(12);
 
-      border: 1px solid $mid-gray;
+      background-color: $mid-gray;
       font-size: 0.9em;
-      padding: $base-padding-lite;
+      padding: $base-padding;
       text-align: center;
 
       icon {
-        color: $mid-gray;
+        color: $neutral-gray;
+        font-size: 1.2em;
       }
     }
   }

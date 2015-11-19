@@ -59,7 +59,7 @@ permalink: /how-it-works/
 		<h3 class="landing-section_category">Extraction Processes</h3>
 		<div class="container landing-section_open overview">
 			<h5 class="landing-heading"><a href="{{site.baseurl}}/how-it-works/process-overview/">Overview</a></h5>
-			<p class="landing-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+			<p class="landing-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p>
 			<div class="landing-icons">
 				<icon class="icon-oil"></icon>
 				<icon class="icon-minerals"></icon>

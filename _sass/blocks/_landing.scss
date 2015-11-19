@@ -76,7 +76,7 @@
     .landing-steps {
       @include span-columns(12);
 
-      background: $light-gray;
+      background-color: $light-gray;
       font-size: 0.9em;
       padding: $base-padding;
       text-align: center;

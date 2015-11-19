@@ -1,5 +1,7 @@
 <select onchange="window.location = '{{ site.baseurl }}/case-studies/' + this.value + '/'">
-  <option value=""></option>
+  <option
+  {% if page.permalink == '/case-studies/' %}selected{% endif %}
+  value="#">Select a community</option>
   <optgroup label="Coal">
     <option
       {% if page.permalink == '/case-studies/boone-logan-and-mingo/' %}selected{% endif %}
@@ -49,13 +51,3 @@
       value="north-slope">North Slope Borough, Alaska</option>
   </optgroup>
 </select>
-
-
-
-
-
-
-
-
-
-

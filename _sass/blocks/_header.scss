@@ -49,6 +49,7 @@ header,
 
 .header-nav_top,
 .header-nav_bottom {
+  @include heading('para-md');
   display: inline-block;
   float: right;
   margin: 0;

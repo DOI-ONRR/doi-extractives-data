@@ -8,10 +8,11 @@
 // <h3>Heading 3 (h3)</h3>
 // <h4>Heading 4 (h4)</h4>
 // <h5>Heading 5 (h5)</h5>
+// <p class="para-xl">Paragraph – Extra-Large</p>
 // <p class="para-lg">Paragraph – Large</p>
 // <p class="para-md">Paragraph – Medium</p>
 // <p class="para-sm">Paragraph – Small</p>
-// <p>Paragraph – Default (Medium)</p>
+// <p>Paragraph – Default (Large)</p>
 //
 // Styleguide elements.typography
 
@@ -40,11 +41,18 @@ h5,
   @include heading(h5);
 }
 
+.para-xl {
+  @include heading('para-xl');
+}
+
+// default p
+p,
+ol,
+ul,
 .para-lg {
   @include heading('para-lg');
 }
-// default p
-p,
+
 .para-md {
   @include heading('para-md');
 }
@@ -53,3 +61,10 @@ p,
   @include heading('para-sm');
 }
 
+p + h2,
+p + h3,
+p + h4,
+table + h3,
+ul + h3 {
+  margin-top: $base-padding-large;
+}

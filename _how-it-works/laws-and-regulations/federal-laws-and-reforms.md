@@ -7,7 +7,7 @@ permalink: /how-it-works/federal-laws-and-reforms/
 <div class="container-outer container-padded">
 
   <h5><a href="{{site.baseurl}}{{site.permalink}}">How It Works</a> /</h5>
-  <h1>Federal laws</h1>
+  <h1>Federal laws and regulations</h1>
     
   <p>The legislative branch of the federal government has passed many laws that govern natural resource extraction on federal lands.</p>
   
@@ -187,7 +187,7 @@ permalink: /how-it-works/federal-laws-and-reforms/
     </tr>
   </table>
   
-  <h3>Learn more</h3>
+  <h3>Other laws</h3>
   
   <p>There are many other laws with which extractive industries companies must comply. DOI, EPA, the National Oceanic and Atmospheric Administration (NOAA), and other federal agencies’ websites contain more comprehensive lists of related laws that they enforce:</p>
   
@@ -199,8 +199,10 @@ permalink: /how-it-works/federal-laws-and-reforms/
 	<li><a href="http://www.osmre.gov/lrg.shtm">OSMRE</a></li>
 	<li><a href="http://www.nmfs.noaa.gov/ole/about/what_we_do/laws.html">NOAA</a></li>
   </ul>
+  
+  <h3>Regulations</h3>
     
-  <p>Federal agencies, such as DOI and relevant bureaus, implement these laws by developing and enforcing regulations and rules. The following section lists key regulations related to natural resource extraction, particularly on federal and Indian lands:</p>
+  <p>Federal agencies, such as DOI and relevant bureaus, implement these laws by developing and enforcing regulations and rules. These key regulations relate to natural resource extraction, particularly on federal and Indian lands:</p>
   
   <ul class="list-bullet">
 	  <li><a href="http://www.gpo.gov/fdsys/search/pagedetails.action?collectionCode=CFR&searchPath=Title+25%2FChapter+I%2FSubchapter+I&granuleId=&packageId=CFR-2008-title25-vol1&oldPath=Title+25%2FChapter+I%2FSubchapter+A&fromPageDetails=true&collapse=true&ycord=435">Title 25</a> in the Code of Federal Regulations relates to sovereign Indian nations. Subchapter I deals with energy and minerals (Parts 200–227).</li>

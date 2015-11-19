@@ -10,5 +10,10 @@ eiti-bar {
     height: 100%;
     left: 0;
     position: absolute;
+
+    &.eiti-bar-bar_negative {
+      left: auto;
+      right: 0;
+    }
   }
 }

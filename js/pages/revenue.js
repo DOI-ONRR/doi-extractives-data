@@ -282,12 +282,19 @@
       .attr('class', 'color-swatch');
     title.append('span')
       .attr('class', 'text');
+
     selection.append('td')
-      .append('span')
-        .attr('class', 'value');
+      .attr('class', 'value value_negative');
     selection.append('td')
-      .attr('class', 'region-chart')
+      .attr('class', 'bar bar_negative')
+      .append('eiti-bar')
+        .attr('negative', true);
+
+    selection.append('td')
+      .attr('class', 'bar bar_positive')
       .append('eiti-bar');
+    selection.append('td')
+      .attr('class', 'value value_positive');
   }
 
   function updateRegionRow(selection) {
@@ -304,13 +311,24 @@
 
     var max = d3.max(values.map(Math.abs));
 
-    var bar = selection.select('eiti-bar');
-    bar.attr('max', max);
-    bar.attr('value', value);
-
-    selection.select('.value')
+    selection.select('.value_negative')
       .text(function(d) {
-        return formatNumber(d.value);
+        return d.value < 0 ? formatNumber(d.value) : '';
+      });
+    selection.select('.bar_negative eiti-bar')
+      .attr('max', -max)
+      .attr('value', function(d) {
+        return d.value < 0 ? d.value : 0;
+      });
+
+    selection.select('.value_positive')
+      .text(function(d) {
+        return d.value > 0 ? formatNumber(d.value) : '';
+      });
+    selection.select('.bar_positive eiti-bar')
+      .attr('max', max)
+      .attr('value', function(d) {
+        return d.value > 0 ? d.value : 0;
       });
   }
 

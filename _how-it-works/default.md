@@ -8,7 +8,7 @@ permalink: /how-it-works/
   <div class="container-outer landing-section_top">
     <div class="container-left-8 hero-left">
       <h1>{{ page.title }}</h1>
-      <p class="hero-description">The U.S. is home to many different natural resources, including fossil fuel, renewable energy, and nonenergy mineral resources. Since the nineteenth century, natural resource extraction has been a major industry for us.</p>
+      <p class="hero-description">The United States is home to many different natural resources, including fossil fuel, renewable energy, and nonenergy mineral resources. Since the 19th century, natural resource extraction has been a major industry in the U.S. with fluctuations over time.</p>
     </div>
     <div class="container-right-4 hero-right">
       <div class="hero-right_square">
@@ -23,7 +23,7 @@ permalink: /how-it-works/
 
 <section accordion class="container-outer">
 	<section class="container">
-		<h3 class="landing-section_category">How it works</h3>
+		<h3 class="landing-section_category">Extraction and exploration</h3>
 		<div class="container landing-section" accordion-item accordion-open="true">
 			<h5 class="landing-heading"><a href="{{site.baseurl}}/how-it-works/ownership/">Ownership</a></h5>
 			<button class="accordion-button" accordion-button></button>

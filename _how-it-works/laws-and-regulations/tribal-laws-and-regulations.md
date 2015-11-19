@@ -1,8 +1,8 @@
 ---
-title: Tribal Laws and Regulations | How it Works
+title: Tribal Laws and Regulations | How It Works
 subpage:
 layout: default
-permalink: /how-it-works/federal-laws-and-regulations/
+permalink: /how-it-works/tribal-laws-and-regulations/
 ---
 
 <div class="container-outer container-padded">

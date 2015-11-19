@@ -3,6 +3,7 @@
 
   // local alias for region id => name lookups
   var REGION_ID_NAME = eiti.data.REGION_ID_NAME;
+  var colorscheme = colorbrewer.Purples;
 
   // our state is immutable!
   var state = new Immutable.Map();
@@ -167,9 +168,8 @@
       // console.time('render regions');
 
       var header = selection.select('.region-header');
-      if (header.select('.subregion-chart svg').empty()) {
-        header.select('.subregion-chart')
-          .call(createBarChart);
+      if (header.select('*').empty()) {
+        header.call(createRegionRow);
       }
 
       var total = d3.sum(data, getter(fields.value));
@@ -181,7 +181,7 @@
             name: REGION_ID_NAME[regionId] || '???'
           }
         })
-        .call(updateBarChart);
+        .call(updateRegionRow);
 
       var map = selection.select('[is="eiti-map"]');
       onMapLoaded(map, function() {
@@ -243,34 +243,23 @@
 
   function updateSubregions(selection, features, scale) {
 
-    var list = selection.select('.subregions');
+    var list = selection.select('.subregions tbody');
     if (list.empty()) {
       // console.warn('no subregions list:', selection.node());
       return;
     }
 
-    var items = list.selectAll('li')
-      .data(features.filter(function(d) {
-        return !!d.value;
-      }), function(d) { return d.id; });
+    features = features.filter(function(d) {
+      return !!d.value;
+    });
+
+    var items = list.selectAll('tr.subregion')
+      .data(features, getter('id'));
 
     items.exit().remove();
     var enter = items.enter()
-      .append('li')
-        .attr('class', 'subregion');
-    var title = enter.append('span')
-      .attr('class', 'subregion-name');
-    title.append('span')
-      .attr('class', 'color-swatch');
-    title.append('span')
-      .attr('class', 'text')
-      .text(function(f) {
-        // XXX all features need a name!
-        return f.properties.name || f.id;
-      });
-    enter.append('span')
-      .attr('class', 'subregion-chart')
-      .call(createBarChart);
+      .append('tr')
+        .call(createRegionRow);
 
     items.sort(function(a, b) {
       return d3.descending(a.value, b.value);
@@ -280,78 +269,49 @@
       .style('background-color', function(d) {
         return scale(d.value);
       });
-    items.select('.subregion-chart')
-      .call(updateBarChart);
+
+    items.call(updateRegionRow);
   }
 
-  function createBarChart(selection) {
-    var w = 250;
-    var h = 18;
-    var svg = selection.append('svg')
-      .attr('class', 'bars')
-      .attr('viewBox', [0, 0, w, h].join(' '));
-    svg.append('g').attr('class', 'negative');
-    svg.append('g').attr('class', 'positive');
-    var g = svg.selectAll('g');
-    g.append('rect')
-      .attr('class', 'bar')
-      .attr('y', '20%')
-      .attr('height', '60%');
-    g.append('text')
-      .attr('class', 'label')
-      .attr('dy', '80%');
-    svg.select('.positive .label')
-      .attr('text-anchor', 'end')
-      .attr('x', w - 2);
+  function createRegionRow(selection) {
+    selection
+      .attr('class', 'subregion');
+    var title = selection.append('td')
+      .attr('class', 'subregion-name');
+    title.append('span')
+      .attr('class', 'color-swatch');
+    title.append('span')
+      .attr('class', 'text');
+    selection.append('td')
+      .append('span')
+        .attr('class', 'value');
+    selection.append('td')
+      .attr('class', 'region-chart')
+      .append('eiti-bar');
   }
 
-  function updateBarChart(selection) {
-    if (selection.empty()) {
-      return;
-    }
+  function updateRegionRow(selection) {
+    selection.select('.subregion-name .text')
+      .text(function(f) {
+        // XXX all features need a name!
+        return f.properties.name || '(' + f.id + ')';
+      });
 
-    var svg = selection.select('svg');
-    var viewBox = svg.attr('viewBox')
-      .split(' ')
-      .map(Number);
-
-    var w = viewBox[2];
-    var h = viewBox[3];
-    var center = w / 2;
-    var labelSize = w / 4;
-
+    var value = getter('value');
     var values = selection.data()
-      .map(function(d) {
-        return d.value;
-      })
+      .map(value)
       .sort(d3.ascending);
 
     var max = d3.max(values.map(Math.abs));
-    var scale = d3.scale.linear()
-      .domain([0, max])
-      .range([0, center - labelSize]);
 
-    svg.each(function(d) {
-      var value = d.value;
-      var chart = d3.select(this);
-      chart.select('.positive')
-        .call(updateBar, value >= 0 ? value : 0, true);
-      chart.select('.negative')
-        .call(updateBar, value < 0 ? value : 0);
-    });
+    var bar = selection.select('eiti-bar');
+    bar.attr('max', max);
+    bar.attr('value', value);
 
-    function updateBar(selection, value, force) {
-      selection.select('.label')
-        .text((value || force) ? formatNumber(value) : '');
-      var width = scale(Math.abs(value));
-      // round up to 1px
-      if (width > 0) {
-        width = Math.ceil(width);
-      }
-      selection.select('.bar')
-        .attr('x', value < 0 ? (center - width) : center)
-        .attr('width', width);
-    }
+    selection.select('.value')
+      .text(function(d) {
+        return formatNumber(d.value);
+      });
   }
 
   function createScale(values) {
@@ -359,9 +319,7 @@
     var min = extent[0];
     var max = Math.max(extent[1], 0);
 
-    var colors = (min < 0)
-      ? colorbrewer.Blues
-      : colorbrewer.Blues;
+    var colors = colorscheme;
     if (max >= 2e9) {
       colors = colors[7];
     } else if (max >= 1e6) {

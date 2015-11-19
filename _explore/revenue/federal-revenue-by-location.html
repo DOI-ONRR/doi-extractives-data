@@ -83,23 +83,17 @@ permalink: /explore/federal-revenue-by-location/
   <div class="slab-alpha">
     <div class="container-outer">
       <h1 id="filter-description" class="filter-description">
-        Combined revenue from
+        Revenue from
         <span class="filter-part" data-key="commodity">all commodities</span>
-        in
+        on federal lands in
         <span class="filter-part" data-key="region">the entire U.S.</span>
-        for
-        <span class="filter-part" data-key="year">2013</span>
+        (<span class="filter-part" data-key="year">2013</span>)
       </h1>
     </div>
 
     <div class="regions container-outer">
 
       <section id="US" class="region active">
-
-        <div class="subregion region-header">
-          <h2 class="subregion-name">Entire U.S.</h2>
-          <span class="subregion-chart"></span>
-        </div>
 
         <svg is="eiti-map" id="US-map" class="region-map" simplify="1e-2"
           preserveAspectRatio="xMidYMid meet"
@@ -122,18 +116,15 @@ permalink: /explore/federal-revenue-by-location/
         <div class="map-legend"></div>
 
         <h3>Revenue by state or offshore area</h3>
-        <ol class="subregions">
-        </ol>
+        <table class="subregions">
+          <thead class="region-header"></thead>
+          <tbody></tbody>
+        </table>
 
       </section>
 
       {% for region in site.data.states %}
       <section id="{{ region.id }}" class="region onshore">
-
-        <div class="subregion region-header">
-          <h2 class="subregion-name">{{ region.name }}</h2>
-          <span class="subregion-chart"></span>
-        </div>
 
         <svg is="eiti-map" id="{{ region.id }}-map" class="region-map" simplify="1e-2"
           preserveAspectRatio="xMidYMid meet"
@@ -153,19 +144,16 @@ permalink: /explore/federal-revenue-by-location/
         <div class="map-legend"></div>
 
         <h3>Revenue by county</h3>
-        <ol class="subregions">
-        </ol>
+        <table class="subregions">
+          <thead class="region-header"></thead>
+          <tbody></tbody>
+        </table>
 
       </section>
       {% endfor %}
 
       {% for region in site.data.offshore_areas %}
       <section id="{{ region.id }}" class="region offshore">
-
-        <div class="subregion region-header">
-          <h2 class="subregion-name">{{ region.name }}</h2>
-          <span class="subregion-chart"></span>
-        </div>
 
         <svg is="eiti-map" id="{{ region.id }}-map" class="region-map" simplify="1e-2"
           preserveAspectRatio="xMidYMid meet"
@@ -177,6 +165,10 @@ permalink: /explore/federal-revenue-by-location/
           </g>
         </svg>
 
+        <table class="subregions">
+          <thead class="region-header"></thead>
+        </table>
+
       </section>
       {% endfor %}
 
@@ -185,6 +177,7 @@ permalink: /explore/federal-revenue-by-location/
   </div>
 </section>
 <script src="{{ site.baseurl }}/js/vendor/immutable.min.js"></script>
+<script src="{{ site.baseurl }}/js/components/eiti-bar.js"></script>
 <script>
   eiti.data.REGION_ID_NAME = {
     {% for state in site.data.states %}

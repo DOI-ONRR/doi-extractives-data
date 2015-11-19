@@ -226,7 +226,7 @@
               return d3.sum(d, getter(fields.value));
             }
           : function(d) {
-              return d[0][fields.value];
+              return unique(d, 'Product').length;
             };
         var dataByFeatureId = d3.nest()
           .key(getter(fields.region))
@@ -387,6 +387,13 @@
   }
 
   function createScale(values) {
+    if (!state.get('product')) {
+      return d3.scale.linear()
+        .domain([0, 1])
+        .range([colorbrewer.Blues[3][0], colorbrewer.Blues[3][2]])
+        .clamp(true);
+    }
+
     var extent = d3.extent(values);
     var min = extent[0];
     var max = Math.max(extent[1], 0);
@@ -425,18 +432,25 @@
 
     legend.classed('legend-invalid', false);
 
-    var data = scale.range().map(function(y) {
-        return {
-          color: y,
-          range: scale.invertExtent(y)
-        };
+    var data;
+    if (state.get('product')) {
+      data = scale.range().map(function(y) {
+          return {
+            color: y,
+            value: scale.invertExtent(y)
+          };
+        });
+      data.unshift({
+        color: NULL_FILL,
+        value: 'no data',
+        none: true
       });
-
-    data.unshift({
-      color: NULL_FILL,
-      range: ['no data'],
-      none: true
-    });
+    } else {
+      data = [
+        {color: NULL_FILL, value: 'no production'},
+        {color: colorbrewer.Blues[3][2], value: '1 or more products'},
+      ];
+    }
 
     var last = data.length - 1;
 
@@ -451,18 +465,13 @@
 
     steps
       .style('border-color', getter('color'))
-      .attr('title', function(d) {
-        return d.range
-          .map(Math.round)
-          .join(' to ');
-      })
       .select('.label')
         .text(function(d, i) {
-          return d.none
-            ? d.range[0]
-            : i === last
-              ? formatNumber(d.range[0]) + '+'
-              : formatNumber(d.range[0]);
+          return (typeof d.value === 'string')
+            ? d.value
+            : (i === last)
+              ? formatNumber(d.value[0]) + '+'
+              : formatNumber(d.value[0]);
         });
   }
 
@@ -778,10 +787,6 @@
         data = data.filter(function(d) {
           return d.Product === product;
         });
-      } else {
-        // console.info('before:', data);
-        data = aggregateProducts(data, state);
-        // console.info('after:', data);
       }
 
       dispatch.yearly(data);
@@ -860,33 +865,6 @@
       .key(getter(key))
       .entries(data)
       .map(getter('key'));
-  }
-
-  function aggregateProducts(data, state) {
-    var lookup = {};
-    var fields = getFields(state.get('region'));
-    var keys = [fields.region, 'Year'].map(getter);
-    data.forEach(function(d) {
-      var key = keys
-        .map(function(k) { return k(d); })
-        .join('/');
-      if (key in lookup) {
-        lookup[key].products = lookup[key].products.add(d.Product);
-      } else {
-        lookup[key] = {
-          sample: d,
-          products: new Immutable.Set(d.Product)
-        };
-      }
-    });
-    return d3.values(lookup)
-      .map(function(d) {
-        return eiti.util.extend({}, d.sample, {
-          Type: null,
-          Product: null,
-          Volume: d.products.size
-        });
-      });
   }
 
   function identity(d) {

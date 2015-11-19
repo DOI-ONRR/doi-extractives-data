@@ -17,9 +17,9 @@ collections:
   case-studies:
     output: true
     permalink: /case-studies/:case-study/
-  explores:
+  explore:
     output: true
-    permalink: /explores/:explore/
+    permalink: /explore/:explore/
   how-it-works:
     output: true
     permalink: /how-it-works/:subpage/

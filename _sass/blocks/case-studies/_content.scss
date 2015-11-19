@@ -6,7 +6,7 @@
 
 .case_studies_content {
   position: relative;
-  
+
   ul {
     font-weight: $weight-light;
     list-style-type: square;
@@ -29,7 +29,6 @@
 }
 
 .case_studies_content-graph {
-  border: $thin-border-size solid $base-border-color;
   margin-bottom: $base-padding;
   width: 100%;
 

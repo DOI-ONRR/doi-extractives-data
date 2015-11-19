@@ -72,7 +72,7 @@ This section includes 12 case studies that provide a snapshot into communities t
 
 Local governments and communities must consider the many ways natural resource management and extraction can affect their fiscal health. One of the most significant considerations is the sustainability of the revenues local governments receive due to natural resource extraction. Multiple EITI guiding principles reference revenue sustainability as a critical factor in making natural resource wealth &ldquo;an engine for sustainable economic growth.&rdquo;[^2] However, when it comes to managing this critical factor, there are two challenges localities need to address:
 
-<ol class="decimal list-para">
+<ol class="list-decimal">
   <li>The sustainability of revenue over time, given that revenue fluctuates with commodity prices, and fossil fuels and hardrock mineral deposits are finite or may not be economically extractable based on current technology.</li>
   <li>The net sustainability of revenue given the fiscal benefits of increased revenue from extractive activities and the fiscal costs of increased government expenditures necessary to support extractive activities.
   </li>

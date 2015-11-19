@@ -6,9 +6,8 @@
 
 .case_studies_content {
   position: relative;
+  
   ul {
-    @include heading('para-sm');
-
     font-weight: $weight-light;
     list-style-type: square;
     padding-bottom: $base-padding;

@@ -31,7 +31,7 @@ While extractive industries make up 2.6% of 2013 US GDP, they play a much larger
 
 This section includes 12 case studies that provide a snapshot into communities that, over the last decade, have led U.S. counties in producing oil, gas, coal, gold, iron, or copper. These counties, or in some cases clusters of counties given geological formations, were selected based on their high levels of production. We hope these case studies will help you understand the economic and fiscal effects of oil, gas, and mineral extraction on local communities, including revenue sustainability.
 
-### Choose a community to get started
+<!-- #### Choose a community to get started
 
 <ul class="case_studies_content-select">
   <ul>
@@ -66,7 +66,7 @@ This section includes 12 case studies that provide a snapshot into communities t
   </ul>
 </ul>
 
-### Or, read more about how to interpret these studies:
+#### Or, read more about how to interpret these studies: -->
 
 <h3><a name="reven" class="case_studies_content-heading js-cs_section">Revenue sustainability</a></h3>
 

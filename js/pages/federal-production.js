@@ -3,6 +3,7 @@
 
   // local alias for region id => name lookups
   var REGION_ID_NAME = eiti.data.REGION_ID_NAME;
+  var colorscheme = colorbrewer.Purples;
 
   // our state is immutable!
   var state = new Immutable.Map();
@@ -359,7 +360,7 @@
     if (!state.get('product')) {
       return d3.scale.linear()
         .domain([0, 1])
-        .range([colorbrewer.Blues[3][0], colorbrewer.Blues[3][2]])
+        .range([colorscheme[3][0], colorscheme[3][2]])
         .clamp(true);
     }
 
@@ -367,9 +368,7 @@
     var min = extent[0];
     var max = Math.max(extent[1], 0);
 
-    var colors = (min < 0)
-      ? colorbrewer.Blues
-      : colorbrewer.Blues;
+    var colors = colorscheme;
     if (max >= 2e9) {
       colors = colors[7];
     } else if (max >= 1e6) {

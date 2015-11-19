@@ -189,7 +189,7 @@ permalink: /how-it-works/federal-laws-and-reforms/
   
   <h3>Other laws</h3>
   
-  <p>There are many other laws with which extractive industries companies must comply. DOI, EPA, the National Oceanic and Atmospheric Administration (NOAA), and other federal agencies’ websites contain more comprehensive lists of related laws that they enforce:</p>
+  <p>There are many other laws with which extractive industries companies must comply. DOI, EPA, the National Oceanic and Atmospheric Administration (NOAA), and other federal agencies’ websites contain more comprehensive lists of laws they enforce:</p>
   
   <ul class="list-bullet">
   	<li><a href="http://www.boem.gov/Regulations/BOEM-Governing-Statutes.aspx">DOI BOEM</a></li>

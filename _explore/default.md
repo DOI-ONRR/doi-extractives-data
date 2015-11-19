@@ -25,7 +25,7 @@ permalink: /explore/
 	<section class="container">
 		<h3 class="landing-section_category">Production</h3>
 		<div class="container-half landing-section" accordion-item accordion-open="true">
-			<h5 class="landing-heading"><a href="{{site.baseurl}}/explore/all-lands-production/">All Lands & Waters</a></h5>
+			<h5 class="landing-heading"><a href="{{site.baseurl}}/explore/all-lands-production/">All lands & waters</a></h5>
 			<button class="accordion-button" accordion-button></button>
 			<div class="accordion-content">
 				<p class="landing-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
@@ -35,7 +35,7 @@ permalink: /explore/
 			</div>
 		</div>
 		<div class="container-half landing-section" accordion-item accordion-open="true">
-			<h5 class="landing-heading"><a href="{{site.baseurl}}/explore/federal-production/">Federal Lands & Waters</a></h5>
+			<h5 class="landing-heading"><a href="{{site.baseurl}}/explore/federal-production/">Federal lands & waters</a></h5>
 			<button class="accordion-button" accordion-button></button>
 			<div class="accordion-content">
 				<p class="landing-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
@@ -48,22 +48,42 @@ permalink: /explore/
 	<section class="container">
 		<h3 class="landing-section_category">Revenue</h3>
 		<div class="container-half landing-section" accordion-item accordion-open="true">
-			<h5 class="landing-heading"><a href="{{site.baseurl}}/explore/revenue/">Federal Revenue</a></h5>
+			<h5 class="landing-heading"><a href="{{site.baseurl}}/explore/federal-revenue-by-location/">Federal revenue by location</a></h5>
 			<button class="accordion-button" accordion-button></button>
 			<div class="accordion-content">
 				<p class="landing-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-				<a href="{{site.baseurl}}/explore/revenue/">Visit this page</a>
-				<a href="{{site.baseurl}}/explore/revenue/">
+				<a href="{{site.baseurl}}/explore/federal-revenue-by-location/">Visit this page</a>
+				<a href="{{site.baseurl}}/explore/federal-revenue-by-location/">
 					<img class="landing-image" src="{{site.baseurl}}/img/landing-placeholders/federal-rev.png">
 				</a>
 			</div>
 		</div>
 		<div class="container-half landing-section" accordion-item accordion-open="true">
-			<h5 class="landing-heading"><a href="{{site.baseurl}}/explore/companies/">Federal Revenue By Company</a></h5>
+			<h5 class="landing-heading"><a href="{{site.baseurl}}/explore/federal-revenue-by-company/">Federal revenue by company</a></h5>
 			<button class="accordion-button" accordion-button></button>
 			<div class="accordion-content">
 				<p class="landing-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-				<a href="{{site.baseurl}}/explore/companies/">
+				<a href="{{site.baseurl}}/explore/federal-revenue-by-company/">
+					<img class="landing-image" src="{{site.baseurl}}/img/landing-placeholders/placeholder.png">
+				</a>
+			</div>
+		</div>
+    <div class="container-half landing-section" accordion-item accordion-open="true">
+			<h5 class="landing-heading"><a href="{{site.baseurl}}/explore/company-reported-federal-revenue/">Company-reported federal revenue</a></h5>
+			<button class="accordion-button" accordion-button></button>
+			<div class="accordion-content">
+				<p class="landing-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+				<a href="{{site.baseurl}}/explore/company-reported-federal-revenue/">
+					<img class="landing-image" src="{{site.baseurl}}/img/landing-placeholders/placeholder.png">
+				</a>
+			</div>
+		</div>
+    <div class="container-half landing-section" accordion-item accordion-open="true">
+			<h5 class="landing-heading"><a href="{{site.baseurl}}/explore/corporate-income-tax/">Corporate income tax</a></h5>
+			<button class="accordion-button" accordion-button></button>
+			<div class="accordion-content">
+				<p class="landing-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+				<a href="{{site.baseurl}}/explore/corporate-income-tax/">
 					<img class="landing-image" src="{{site.baseurl}}/img/landing-placeholders/placeholder.png">
 				</a>
 			</div>

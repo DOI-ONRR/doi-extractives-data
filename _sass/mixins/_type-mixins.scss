@@ -18,10 +18,10 @@
   }
 
   @if $level == h2 {
-    // bold 22/32
-    font-size: 1.375rem; // 22px
-    font-weight: $weight-bold;
-    line-height: 2rem; // 32px
+    // light 32/40
+    font-size: 2rem; // 32px
+    font-weight: $weight-light;
+    line-height: 2.5rem; // 40px
   }
 
   @if $level == h3 {

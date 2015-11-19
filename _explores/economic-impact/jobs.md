@@ -1,13 +1,12 @@
 ---
-title: Explore Data
-subpage_title: Exports
+title: Jobs | Explore Data
 layout: default
-permalink: /explore/exports/
+permalink: /explore/jobs/
 ---
 
 <div class="container-outer container-padded">
 
-  <h3> <a href="{{ site.baseurl }}/explore/">Explore Data</a> / {{ page.subpage_title }}</h3>
+  <h3> <a href="{{ site.baseurl }}/explore/">Explore Data</a> / Jobs</h3>
 
   <h4>From <a href="https://github.com/18F/doi-extractives-data/wiki/Information-Architecture">Information Architecture</a>:</h4>
 

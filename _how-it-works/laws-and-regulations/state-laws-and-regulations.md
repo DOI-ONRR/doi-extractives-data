@@ -1,6 +1,5 @@
 ---
-title: How it Works
-subpage: State Laws and Regulations
+title: State Laws and Regulations | How it Works
 layout: default
 permalink: /how-it-works/state-laws-and-regulations/
 nav_items:
@@ -44,7 +43,7 @@ nav_items:
 
 <div class="container-outer container-padded">
 
-  <h1>{{page.subpage}}</h1>
+  <h1>State Laws and Regulations</h1>
 
   <h3><a name="ak">Alaska</a></h3>
 

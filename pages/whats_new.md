@@ -1,7 +1,7 @@
 ---
 title: What's New
 layout: default
-permalink: /about/new/
+permalink: /about/whats-new/
 ---
 
 <div class="container-outer container-padded">
@@ -11,7 +11,7 @@ permalink: /about/new/
   <h4>
     What’s Changing in 2015–2016
   </h4>
-  <ul class="bullet">
+  <ul class="list-bullet">
   	<li>MSG recommendations</li>
 		<li>Data sets being added</li>
 		<li>Plans for the website, etc.</li>

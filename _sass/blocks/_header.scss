@@ -26,7 +26,7 @@
 header,
 .header {
   @include outer-container($max-width);
-  margin-bottom: $base-padding;
+  margin-bottom: $base-padding-large;
   margin-top: $base-padding;
 
   div:first-of-type {
@@ -51,8 +51,7 @@ header,
 .header-nav_bottom {
   display: inline-block;
   float: right;
-  margin: 0px;
-  padding-right: $base-padding;
+  margin: 0;
 }
 
 .header-nav_item,
@@ -72,10 +71,9 @@ header,
 }
 
 .header-nav_item_link {
-
   @include font-size(0.875);
   color: $dark-gray;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.1px;
   text-decoration: none;
   text-transform: uppercase;
   &:hover,
@@ -85,60 +83,63 @@ header,
 }
 
 .header-nav_item_top {
-  padding-right: $base-padding-lite;
   margin-bottom: 0.55rem;
+  padding-right: $base-padding-lite;
+
   &:nth-child(2),
   &:nth-child(3) {
     padding-left: $base-padding-lite;
 
   }
+
   &:last-child {
     vertical-align: top;
     padding-top: 0.95rem;
   }
 
-  .header-nav_search{
-    font-family: $base-font-family;
-    color: $dark-gray;
-    float: left;
-    display: inline-block;
-    width: 150px;
+  .header-nav_search {
+    @include font-size(0.75);
+
+    border-bottom-right-radius: 0;
     border-right: none;
-    border-bottom-right-radius: 0px;
-    border-top-right-radius: 0px;
-    margin: 0px;
-    padding: 0.3rem;
+    border-top-right-radius: 0;
+    color: $dark-gray;
+    display: inline-block;
+    float: left;
+    font-family: $base-font-family;
+    margin: 0;
+    margin-left: $base-padding;
+    padding: 0.42rem;
+    width: 150px;
   }
 
   .header-nav_search_icon {
-    float: right;
-    width: 37px;
-    height: 100%;
     background-color: $blue;
-    color: white;
+    border: 1px solid $dark-gray;
     border-bottom-right-radius: $base-border-radius;
     border-top-right-radius: $base-border-radius;
-    border: 1px solid $dark-gray;
+    color: $white;
     cursor: pointer;
+    float: right;
+    height: 100%;
     padding: 0.22rem;
     padding-left: 0.64rem;
+    width: 37px;
   }
 }
 
 .header-nav_item_link_top {
   @extend .header-nav_item_link;
+  @include font-size(0.75);
 
-  @include font-size(0.75px);
   font-weight: $weight-light;
+  letter-spacing: 0.5px;
   text-transform: capitalize;
 
   &.active {
     font-weight: $weight-book;
   }
-
 }
-
-
 
 .header-nav_item_link_spacer {
   color: $dark-gray;

@@ -1,5 +1,6 @@
 @import 'lib/font-awesome/font-awesome/variables';
 
+
 // Typography
 $weight-light: 200; // use
 $weight-book: 400; // use
@@ -17,27 +18,43 @@ $z-mid: 500;
 $z-negative: -1;
 
 // Colors
+//
+// Markup:
+// <p class="icon-map" style="color: #ffffff;">$white</p>
+// <p class="icon-map" style="color: #040404;">$black</p>
+// <p class="icon-map" style="color: #157bac;">$blue</p>
+// <p class="icon-map" style="color: #e6f9ff;">$light-blue</p>
+// <p class="icon-map" style="color: #f2fcff;">$pale-blue</p>
+// <p class="icon-map" style="color: #c6e9ff;">$mid-blue</p>
+// <p class="icon-map" style="color: #f7f7f7;">$light-gray</p>
+// <p class="icon-map" style="color: #ebebeb;">$mid-gray</p>
+// <p class="icon-map" style="color: #4a4a4a;">$dark-gray</p>
+// <p class="icon-map" style="color: #303030;">$light-black</p>
+// <p class="icon-map" style="color: #acb626;">$shock-green</p>
+//
+// Styleguide colors
 
 // v3
 $white: #ffffff;
-$black: #040404; //-
-$blue: #157bac;//
+$black: #040404;
+$blue: #157bac;
 $light-blue: #e6f9ff;
 $pale-blue: #f2fcff;
 $mid-blue: #c6e9ff;
 $light-gray: #f7f7f7;
 $mid-gray: #ebebeb;
+$neutral-gray: #ccc;
 $dark-gray: #4a4a4a;
-$light-black: #303030; //-
+$light-black: #303030;
 
 // v2 - deprecate
-$putty: #f4f4f4; //-
-$dark-putty: #838383; //-
-$green: #9fa63b; //
+$putty: #f4f4f4;
+$dark-putty: #838383;
+$green: #9fa63b;
 $shock-green: #acb626;
-$purple: #965bcd;//
-$red: #c5403c;//
-$cobalt: #1075a5; //-
+$purple: #965bcd;
+$red: #c5403c;
+$cobalt: #1075a5;
 
 
 // Font Colors
@@ -49,6 +66,7 @@ $base-padding: 1.25em; //20px
 $base-padding-lite: $base-padding / 3;
 $base-padding-large: 1.875em; //30px
 $base-padding-extra: 3.125em; //50px
+$base-padding-jumbo: 3.8em;
 
 // Link Colors
 $base-link-color: $dark-gray;
@@ -81,4 +99,3 @@ $form-border-color: $base-border-color;
 $form-border-color-hover: darken($base-border-color, 10);
 $form-border-radius: $base-border-radius;
 $form-box-shadow-focus: 0 0 0 2px $form-border-color-hover;
-

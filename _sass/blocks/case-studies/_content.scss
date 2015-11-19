@@ -1,0 +1,40 @@
+// Case Studies Content
+//
+// The Case Studies page main content
+//
+// Styleguide blocks.case-studies.content
+
+.case_studies_content {
+  position: relative;
+  ul {
+    @include heading('para-sm');
+
+    font-weight: $weight-light;
+    list-style-type: square;
+    padding-bottom: $base-padding;
+    padding-left: $base-padding;
+  }
+}
+
+.case_studies_content-icon i {
+  padding-right: $base-padding-lite / 2;
+}
+
+.case_studies_content-select {
+  padding-bottom: $base-padding;
+}
+
+.case_studies_content-graph {
+  border: $thin-border-size solid $base-border-color;
+  margin-bottom: $base-padding;
+  width: 100%;
+
+  @include respond-to(small-up) {
+    width: 75%;
+  }
+
+}
+
+.case_studies_content-heading {
+  color: $dark-gray;
+}

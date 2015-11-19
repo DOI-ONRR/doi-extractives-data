@@ -32,40 +32,44 @@
 // Styleguide components.glossary.drawer
 
 .glossary {
-  @include transition(right, .3s);
+  @include transition(right, 0.3s);
+
+  background-color: $light-black;
   bottom: 0;
+  color: $white;
   max-width: 30rem;
   overflow-y: scroll;
   padding: 2rem;
   position: fixed;
   top: 0;
+  width: 300px;
   z-index: 5000;
 
-  width:300px;
-  background-color: $light-black;
-  color: $white;
-
-  h2, p, label, i {
+  h2,
+  p,
+  label,
+  i {
     color: $white;
   }
+
   &[aria-hidden=true] {
-    display: block !important;
+    display: block;
     right: -100%;
   }
 
   &[aria-hidden=false] {
-    @include transition(right, .3s);
+    @include transition(right, 0.3s);
     right: 0;
   }
 
   .button--close {
+    background-color: transparent;
+    color: $white;
+    height: 50px;
     position: absolute;
     right: 0;
     top: 0;
     width: 50px;
-    height: 50px;
-    background-color: transparent;
-    color: $white;
   }
 
 }
@@ -74,36 +78,41 @@
   padding-right: $base-padding-lite;
 }
 
-#glossary-header{
+#glossary-header {
   i:before {
     padding-left: 0;
     padding-right: $base-padding-lite;
   }
 }
 
-#glossary-search{
+#glossary-search {
   &::-webkit-input-placeholder {
-     font-style: italic;
+    font-style: italic;
   }
-  &:-moz-placeholder { /* Firefox 18- */
-     font-style: italic;
+
+  &:-moz-placeholder { // Firefox 18-
+    font-style: italic;
   }
-  &::-moz-placeholder {  /* Firefox 19+ */
-     font-style: italic;
+
+  &::-moz-placeholder {  // Firefox 19+
+    font-style: italic;
   }
+
   &:-ms-input-placeholder {
-     font-style: italic;
+    font-style: italic;
   }
 }
 
 .glossary__item {
   border-bottom: 1px solid $mid-gray;
-  &:first-child{
+
+  &:first-child {
     border-top: 1px solid $mid-gray;
   }
+
   .glossary-term {
-    margin: 0;
     color: $white;
+    margin: 0;
   }
 
   .glossary-definition {
@@ -117,29 +126,24 @@
   }
 
   .accordion__button {
-    background-size: 50%;
     background-color: transparent;
-    margin-top: -1rem;
+    background-size: 50%;
     height: 2rem;
-    width: 2rem;
+    margin-top: -1rem;
     position: absolute;
     right: 1rem;
     top: 50%;
-  }
-
-  .accordion__header {
-    padding: 1rem 4rem 1rem 0;
-    position: relative;
+    width: 2rem;
   }
 
   .accordion__button {
     background-size: 50%;
-    margin-top: -1rem;
     height: 2rem;
-    width: 2rem;
+    margin-top: -1rem;
     position: absolute;
     right: 1rem;
     top: 50%;
+    width: 2rem;
   }
 }
 
@@ -163,26 +167,31 @@
 // Styleguide components.glossary.term
 
 .term {
-  @include transition(background-color, .2s, box-shadow, .2s, color, .2s);
-  box-shadow: 0 0 0 4px transparent;
+  @include transition(background-color, 0.2s, box-shadow, 0.2s, color, 0.2s);
+
   border-bottom: 1px dotted $base-font-color;
+  box-shadow: 0 0 0 4px transparent;
   cursor: pointer;
   text-decoration: none;
+
   &:focus,
   &:hover {
     border-bottom: 1px solid $base-font-color;
     text-decoration: none;
   }
+
   i {
     font-size: 0.75em;
+
     &:before {
       padding-left: $base-padding-lite * 0.75;
     }
+
   }
 }
 
 .term-p {
   @extend .term;
-  margin-right: 0.25rem;
   box-shadow: none;
+  margin-right: 0.25rem;
 }

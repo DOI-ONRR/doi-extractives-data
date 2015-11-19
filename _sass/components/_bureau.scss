@@ -24,7 +24,7 @@
   padding-top: $base-padding;
 
   h4 {
-    @extend .para-lg;
+    @include heading('para-lg');
     font-weight: $weight-book;
   }
 }

@@ -27,6 +27,8 @@ permalink: /about/
       </div>
 
       <div class="container-right-5">
+      <p>LINK/CALLOUT to <a href="{{ site.baseurl }}/about/whats-new/">what's new for 2015 page.</a></p>
+      <p>LINK/CALLOUT to <a href="">2015 exec summary page.</a></p>
 		  <img src="{{ site.baseurl }}/img/nat-gas-well.jpg" alt="Natural gas well in Colorado" class="u-img">
       </div>
 

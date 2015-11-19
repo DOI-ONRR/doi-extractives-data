@@ -16,10 +16,10 @@
 }
 
 .case_studies_content-icon {
-  @extend .para-md;
+  @include heading('para-md');
 
   i {
-    @extend .para-xl;
+    @include heading('para-xl');
     padding-right: $base-padding-lite / 2;
   }
 }

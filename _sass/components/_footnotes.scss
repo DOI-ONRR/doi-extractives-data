@@ -52,7 +52,7 @@ body {
 }
 
 .footnote {
+  @include heading('para-sm');
   @extend .link-charlie;
-  @extend .para-sm;
   vertical-align: super; // 2
 }

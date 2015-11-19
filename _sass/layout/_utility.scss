@@ -10,12 +10,3 @@
   top: auto;
   width: 1px;
 }
-
-a.para-link {
-  text-decoration: underline;
-
-  &:hover,
-  &:focus {
-    text-decoration: none;
-  }
-}

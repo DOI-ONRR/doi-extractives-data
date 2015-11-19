@@ -12,7 +12,7 @@
 // <p class="para-lg">Paragraph – Large</p>
 // <p class="para-md">Paragraph – Medium</p>
 // <p class="para-sm">Paragraph – Small</p>
-// <p>Paragraph – Default (Medium)</p>
+// <p>Paragraph – Default (Large)</p>
 //
 // Styleguide elements.typography
 
@@ -45,15 +45,21 @@ h5,
   @include heading('para-xl');
 }
 
+// default p
+p,
 .para-lg {
   @include heading('para-lg');
 }
-// default p
-p,
+
 .para-md {
   @include heading('para-md');
 }
 
 .para-sm {
   @include heading('para-sm');
+}
+
+p + h3,
+table + h3 {
+  margin-top: $base-padding-large;
 }

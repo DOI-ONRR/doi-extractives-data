@@ -53,6 +53,6 @@ body {
 
 .footnote {
   @extend .link-charlie;
-  font-size: smaller;
+  @extend .para-sm;
   vertical-align: super; // 2
 }

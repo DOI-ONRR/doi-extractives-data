@@ -14,12 +14,12 @@ exclude:
   - 'Gemfile*'
 
 collections:
-  communities:
+  case-studies:
     output: true
-    permalink: /communities/:community/
-  explores:
+    permalink: /case-studies/:case-study/
+  explore:
     output: true
-    permalink: /explores/:explore/
-  how_it_works:
+    permalink: /explore/:explore/
+  how-it-works:
     output: true
     permalink: /how-it-works/:subpage/

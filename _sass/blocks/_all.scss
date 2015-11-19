@@ -1,15 +1,27 @@
 @import 'header';
 @import 'footer';
 @import 'banner';
-@import 'communities_intro';
-@import 'communities_content';
-@import 'revenues/revenues_steps';
-@import 'revenues/revenues_forms';
-@import 'revenues/revenues_intro';
-@import 'revenues/revenues_footer';
-@import 'revenues/revenues_subpage_intro';
-@import 'revenues/revenues_subpage_steps';
-@import 'revenues/revenues_subpage_nav';
-@import 'revenues/revenues_subpage_involved';
+
+// Case Studies
+//
+// Styles for the page at /case-studies/
+//
+// Styleguide blocks.case-studies
+@import 'case-studies/_intro';
+@import 'case-studies/_content';
+
+// How it Works
+//
+// Styles for the page at /how-it-works/
+//
+// Styleguide blocks.how-it-works
+@import 'how-it-works/steps';
+@import 'how-it-works/forms';
+@import 'how-it-works/intro';
+@import 'how-it-works/footer';
+@import 'how-it-works/subpage_intro';
+@import 'how-it-works/subpage_steps';
+@import 'how-it-works/subpage_nav';
+@import 'how-it-works/subpage_involved';
 @import 'landing';
 @import 'revenue';

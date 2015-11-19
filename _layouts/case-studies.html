@@ -1,0 +1,54 @@
+---
+layout: default
+---
+
+
+{% include case-studies/_intro.html %}
+
+<section class="container-outer case_studies_content">
+
+	<article class="container-left-7">
+
+			{% if page.resource == 'oil' %}
+			  <h3 class="case_studies_content-icon"><i class="icon-oil"></i>Oil</h3>
+			{% elsif page.resource == 'gas' %}
+				<h3 class="case_studies_content-icon"><i class="icon-gas"></i>Natural Gas</h3>
+			{% elsif page.resource == 'coal' %}
+				<h3 class="case_studies_content-icon"><i class="icon-coal"></i>Coal</h3>
+			{% elsif page.resource == 'gold' %}
+				<h3 class="case_studies_content-icon"><i class="icon-gold"></i>Gold</h3>
+			{% elsif page.resource == 'copper' %}
+				<h3 class="case_studies_content-icon"><i class="icon-copper"></i>Copper</h3>
+			{% elsif page.resource == 'iron' %}
+				<h3 class="case_studies_content-icon"><i class="icon-iron"></i>Iron</h3>
+			{% endif %}
+
+
+		  {{content | markdownify}}
+
+	</article>
+
+	<div class="container-right-5 sticky_nav">
+
+	  <nav class="sticky_nav-nav">
+
+	    <ul>
+	      {% if page.nav_items %}
+	      	{% for item in page.nav_items %}
+		        {% if item.name == page.nav_items[0].name %}
+		          <li class="sticky_nav-nav_item js-cs_nav_item active {{item.name}}"><a href="#{{item.name}}">{{item.title}}</a></li>
+		        {% else %}
+		          <li class="sticky_nav-nav_item js-cs_nav_item {{item.name}}"><a href="#{{item.name}}">{{item.title}}</a></li>
+		        {% endif %}
+		      {% endfor %}
+	      {% endif %}
+	    </ul>
+
+	  </nav>
+
+	</div>
+
+</section>
+
+
+<script src="{{ site.baseurl }}/js/pages/case-studies.js"></script>

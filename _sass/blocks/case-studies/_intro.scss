@@ -18,7 +18,7 @@
 
 .case_studies_intro-para {
   @extend .para-xl;
-	margin-bottom: $base-padding-large;
+	margin-bottom: $base-padding;
 }
 
 .case_studies_intro-image {
@@ -27,6 +27,12 @@
 }
 
 .case_studies_intro-select {
+  height: 40px;
   max-width: 400px;
+  padding-top: $base-padding-lite;
   width: 100%;
+
+  select {
+    height: 40px;
+  }
 }

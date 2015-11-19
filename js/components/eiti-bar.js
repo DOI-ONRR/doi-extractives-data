@@ -66,7 +66,10 @@
     var max = this.max;
     var value = this.value;
     var negative = this.negative;
+
     var bar = getBar(this);
+    bar.classList.toggle('eiti-bar-bar_negative', negative);
+
     var width = scale(value, min, max) * 100;
     if (width > 0) {
       bar.style.setProperty('width', (width < EPSILON

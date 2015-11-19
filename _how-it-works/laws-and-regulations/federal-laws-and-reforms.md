@@ -11,7 +11,7 @@ permalink: /how-it-works/federal-laws-and-reforms/
     
   <p>The legislative branch of the federal government has passed many laws that govern natural resource extraction on federal lands.</p>
   
-  <h2>Fiscal regime</h2>
+  <h3>Fiscal regime</h3>
   
   <p>The following table lists the laws that provide the backbone of the fiscal regime for the extractive industries, as well as the relevant lands and natural resources to which they apply.</p>
   
@@ -132,7 +132,7 @@ permalink: /how-it-works/federal-laws-and-reforms/
     </tr>
   </table>
     
-  <h2>Fees and fines for extractive industries companies</h2>
+  <h3>Fees and fines for extractive industries companies</h3>
   
   <p>There are other laws governing natural resources and extractive companies’ operations. Some of these laws require companies to pay fees. Violating some of these laws can also result in companies paying fines.</p>
   
@@ -186,6 +186,8 @@ permalink: /how-it-works/federal-laws-and-reforms/
 	  <td>All natural resources, except when oil and gas are exempted</td>
     </tr>
   </table>
+  
+  <h3>Learn more</h3>
   
   <p>There are many other laws with which extractive industries companies must comply. DOI, EPA, the National Oceanic and Atmospheric Administration (NOAA), and other federal agencies’ websites contain more comprehensive lists of related laws that they enforce:</p>
   

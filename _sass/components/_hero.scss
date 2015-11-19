@@ -37,8 +37,9 @@
 }
 
 .hero-left {
-  padding-bottom: $base-padding;
-  padding-top: $base-padding;
+  padding-bottom: $base-padding-large;
+  padding-right: $base-padding-large;
+  padding-top: $base-padding-large;
 }
 
 .hero-right {
@@ -46,7 +47,7 @@
 }
 
 .hero-right_square {
-  background-color: $pale-blue;
+  background-color: $mid-blue;
   border-left: 4px solid $white;
   border-right: 4px solid $white;
   padding-top: 4px;
@@ -62,8 +63,9 @@
 
   background-color: $mid-blue;
   color: $dark-gray;
+  font-weight: $weight-book;
   margin-bottom: 0;
-  padding: $base-padding-lite;
+  padding: $base-padding;
   text-align: left;
 
   a {

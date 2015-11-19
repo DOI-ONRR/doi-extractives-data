@@ -66,6 +66,7 @@ $base-padding: 1.25em; //20px
 $base-padding-lite: $base-padding / 3;
 $base-padding-large: 1.875em; //30px
 $base-padding-extra: 3.125em; //50px
+$base-padding-jumbo: 3.8em;
 
 // Link Colors
 $base-link-color: $dark-gray;
@@ -98,4 +99,3 @@ $form-border-color: $base-border-color;
 $form-border-color-hover: darken($base-border-color, 10);
 $form-border-radius: $base-border-radius;
 $form-box-shadow-focus: 0 0 0 2px $form-border-color-hover;
-

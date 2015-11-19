@@ -133,10 +133,10 @@ permalink: /explore/
 		</div>
 	</section>
 </section>
-<section class="slab-alpha container-outer container-padded u-centered">
+<!-- <section class="slab-alpha container-outer container-padded u-centered">
     <h3>Not sure where to go? Start here &#8230;</h3>
     <h2><a href="{{ site.baseurl }}/how-it-works/">Learn how natural resources result in federal revenues</a></h2>
-</section>
+</section> -->
 
 <!-- Accordion -->
 <script src="{{ site.baseurl }}/js/components/accordion.js"></script>

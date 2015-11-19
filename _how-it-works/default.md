@@ -8,7 +8,7 @@ permalink: /how-it-works/
   <div class="container-outer landing-section_top">
     <div class="container-left-8 hero-left">
       <h1>{{ page.title }}</h1>
-      <p class="hero-description">Large text The federal government issues leases granting rights to explore for natural resources which may exist on federal lands. In return, part of the sales value for many of these commodities is paid back to the government as “royalties” (along with other types of revenues), for the benefit of the American people.</p>
+      <p class="hero-description">Large text Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
     </div>
     <div class="container-right-4 hero-right">
       <div class="hero-right_square">

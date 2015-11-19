@@ -154,10 +154,20 @@
     th,
     tr {
       border: 0;
+      text-align: left;
+    }
+
+    thead {
+      background: none;
+      border: 0;
+    }
+
+    thead eiti-bar {
+      visibility: hidden;
     }
 
     tr > *:first-child {
-      min-width: 60%;
+      width: 80%;
       padding-left: 0;
     }
 

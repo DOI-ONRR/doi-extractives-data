@@ -7,6 +7,7 @@
 
   // our state is immutable!
   var state = new Immutable.Map();
+  var rendered = false;
   // this flag indicates whether we're in the middle of a state mutation
   var mutating = false;
 
@@ -81,7 +82,7 @@
     var old = state;
     state = fn(state);
     if (!Immutable.is(old, state)) {
-      if (!state.get('group') || state.get('group') !== old.get('group')) {
+      if (rendered && stateChanged(old, state, 'group')) {
         state = state.delete('commodity');
       }
       render(state, old);
@@ -148,7 +149,7 @@
 
     selected.call(renderRegion, state);
     // console.timeEnd('render');
-    return true;
+    rendered = true;
   }
 
   function renderRegion(selection, state) {
@@ -724,14 +725,10 @@
     };
   }
 
-  function toggleExpander(text) {
-    var id = this.getAttribute('aria-controls');
-    var attr = 'aria-expanded';
-    var controls = d3.select('#' + id);
-    var expanded = controls.attr(attr) !== 'true';
-    controls.attr(attr, expanded);
-    this.textContent = text[expanded];
-    this.setAttribute('aria-expanded', expanded);
+  function stateChanged(old, state, key) {
+    var prev = old.get(key) || '';
+    var next = state.get(key) || '';
+    return prev !== next;
   }
 
   function identity(d) {

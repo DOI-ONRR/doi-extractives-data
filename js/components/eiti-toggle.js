@@ -1,8 +1,13 @@
 (function(exports) {
 
-  var textCollapsed = '__collapsedText';
-  var textExpanded = '__expandedText';
+  var symbols = {
+    collapsed: '__collapsedText',
+    expanded: '__expandedText'
+  };
+
   var EXPANDED = 'aria-expanded';
+  var CONTROLS = 'aria-controls';
+  var HIDDEN = 'aria-hidden';
 
   exports.EITIToggle = document.registerElement('eiti-toggle', {
     'extends': 'button',
@@ -36,23 +41,24 @@
 
       collapsedText: {
         get: function() {
-          return this[textCollapsed]
+          return this[symbols.collapsed]
             || this.getAttribute('data-collapsed-text')
             || this.textContent;
         },
         set: function(text) {
-          this[textCollapsed] = text;
+          this[symbols.collapsed] = text;
           update.call(this);
         }
       },
 
       expandedText: {
         get: function() {
-          return this[textExpanded]
-            || this.getAttribute('data-expanded-text');
+          return this[symbols.expanded]
+            || this.getAttribute('data-expanded-text')
+            || this.textContent;
         },
         set: function(text) {
-          this[textExpanded] = text;
+          this[symbols.expanded] = text;
           update.call(this);
         }
       },
@@ -62,15 +68,15 @@
           return this.getAttribute(EXPANDED) === 'true';
         },
         set: function(expanded) {
-          switch (expanded) {
-            case 'true':
-              expanded = true;
-              break;
-            case 'false':
-              expanded = false;
-              break;
+          // coerce strings to booleans
+          if (expanded === 'true') {
+            expanded = true;
+          } else if (expanded === 'false') {
+            expanded = false;
+          } else {
+            expanded = !!expanded;
           }
-          this.setAttribute(EXPANDED, !!expanded);
+          this.setAttribute(EXPANDED, expanded);
         }
       }
     })

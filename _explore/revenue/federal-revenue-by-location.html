@@ -172,11 +172,6 @@ permalink: /explore/federal-revenue-by-location/
         {% for region in site.data.offshore_areas %}
         <section id="{{ region.id }}" class="region offshore">
 
-          <div class="subregion region-header">
-            <h2 class="subregion-name">{{ region.name }}</h2>
-            <span class="subregion-chart"></span>
-          </div>
-
           <svg is="eiti-map" id="{{ region.id }}-map" class="region-map" simplify="1e-2"
             preserveAspectRatio="xMidYMid meet"
             projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/" zoom-to="{{ region.id }}">
@@ -186,7 +181,12 @@ permalink: /explore/federal-revenue-by-location/
               data-mesh="true">
             </g>
           </svg>
-
+          <ol class="subregions">
+            <div class="subregion region-header region-header-category">
+              <span class="subregion-name">{{ region.name }}</span>
+              <span class="subregion-chart"></span>
+            </div>
+          </ol>
         </section>
         {% endfor %}
 

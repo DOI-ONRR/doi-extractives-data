@@ -95,6 +95,8 @@ $onshore-renewables-secondary-color: $blue;
   }
 
   ul {
+    @include heading('para-md');
+    
     @include respond-to(medium-up) {
       padding-left: 76px;
     }

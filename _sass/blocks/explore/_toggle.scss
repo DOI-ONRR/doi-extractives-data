@@ -1,0 +1,50 @@
+
+.toggle,
+.toggle-desktop {
+	background: transparent;
+  color: $dark-blue;
+
+  &:before {
+    content: $icon-plus-sm;
+    font-family: eiti;
+    font-style: normal;
+    font-weight: normal;
+    line-height: $base-line-height;
+    padding-right: $base-padding-lite;
+    text-decoration: inherit;
+    vertical-align: bottom;
+  }
+
+  &[aria-expanded=true]:before {
+    content: $icon-dash-sm;
+  }
+}
+
+.toggle {
+  display: block;
+  font: inherit;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  text-align: right;
+  width: 100%;
+
+  &[aria-expanded=true] {
+    margin-top: 1em;
+  }
+
+  @include respond-to(medium-up){
+  	display: none;
+  }
+}
+
+.toggle-desktop {
+	display: none;
+	float: right;
+
+	@include respond-to(medium-up){
+  	display: inline-block;
+  }
+}
+
+

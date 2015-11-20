@@ -1,194 +1,160 @@
-// Explore
-//
-// General layout for Explore Data sections
-//
-// Styleguide blocks.explore
-.explore-subpage {
-  $dark-blue: #4b9bbf;
-  $positive-fill: $pale-blue;
-  $negative-fill: #bbb;
-
-  .filters {
-    color: $dark-blue;
+.subpage-info-wrapper {
+  @include respond-to(medium-up) {
+    margin-right: $base-padding;
   }
+}
 
-  .toggle {
-    background: transparent;
-    // border: 1px solid;
-    color: $dark-blue;
-    display: block;
-    font: inherit;
-    margin: 0 auto;
+.info-heading {
+  padding: 0 $base-padding;
+
+  @include respond-to(medium-up) {
     padding: 0;
-    position: relative;
-    text-align: right;
-    width: 100%;
-
-    &:before {
-      content: $icon-plus-sm;
-      font-family: eiti;
-      font-style: normal;
-      font-weight: normal;
-      line-height: $base-line-height;
-      padding-right: $base-padding-lite;
-      text-decoration: inherit;
-      vertical-align: bottom;
-    }
-
-    &[aria-expanded=true] {
-      margin-top: 1em;
-    }
-
-    &[aria-expanded=true]:before {
-      content: $icon-dash-sm;
-    }
   }
+}
 
-  [aria-hidden=true] {
-    display: none;
-  }
+[class^=slab] {
+  padding-bottom: $base-padding;
+  padding-top: $base-padding;
+}
 
-  [class^=slab] {
-    padding-bottom: $base-padding;
-    padding-top: $base-padding;
-  }
+eiti-slider {
+  margin-top: 1em;
+}
 
-  eiti-slider {
-    margin-top: 1em;
-  }
+.region-map {
+  display: block;
+  height: 250px;
+  margin-bottom: 1em;
+  max-height: 30vh; // 30% of the viewport height
+  width: 100%;
+}
 
-  .map-wrapper {
-    padding-left: $base-padding;
-    padding-right: $base-padding;
-  }
+.regions .region {
+  display: none;
 
-  .region-map {
+  &.active {
     display: block;
-    height: 250px;
-    margin-bottom: 1em;
-    max-height: 30vh; // 30% of the viewport height
-    width: 100%;
   }
+}
 
-  .regions .region {
-    display: none;
+.map-legend {
+  display: flex;
+  margin-bottom: 1em;
 
-    &.active {
-      display: block;
-    }
-  }
-
-  .map-legend {
-    display: flex;
-    margin-bottom: 1em;
-
-    .step {
-      border-bottom-style: solid;
-      border-bottom-width: 0.5em;
-      display: block;
-      flex: 1;
-      padding-left: 0.1em;
-    }
-
-    &.legend-invalid {
-      .step .label {
-        visibility: hidden;
-      }
+  .step {
+    border-bottom-style: solid;
+    border-bottom-width: 0.5em;
+    display: block;
+    flex: 1;
+    padding-left: 0.1em;
+    margin-right: 0.2em;
+    &:last-of-type {
+      margin-right: 0;
     }
   }
 
-  .timeline {
-    shape-rendering: crispEdges;
-
-    line {
-      fill: none;
-      stroke: $dark-blue;
-      stroke-linecap: square;
-      stroke-width: 1;
-      vector-effect: non-scaling-stroke;
-    }
-
-    .area {
-      fill: $positive-fill;
-
-      &.negative {
-        fill: $negative-fill;
-      }
-    }
-
-    .mask {
-      fill: $mid-blue;
-      opacity: 0.5;
-
-      line {
-        stroke-width: 2;
-      }
+  &.legend-invalid {
+    .step .label {
+      visibility: hidden;
     }
   }
+}
 
+.timeline {
+  shape-rendering: crispEdges;
 
-  .subregion {
-    border-top: 1px solid $mid-gray;
-    clear: both;
-    padding: 0 $base-padding;
-    position: relative;
+  line {
+    fill: none;
+    stroke: $dark-blue;
+    stroke-linecap: square;
+    stroke-width: 1;
+    vector-effect: non-scaling-stroke;
   }
 
-  .region-header {
-    padding: 0 0;
-  }
+  .area {
+    fill: $positive-fill;
 
-
-  .subregion-name {
-    @extend .h4;
-
-    margin: 0;
-    width: 66%;
-    // border: 1px solid red;
-
-    .color-swatch {
-      display: inline-block;
-      height: 0.7em;
-      margin-right: 0.2em;
-      width: 0.7em;
-    }
-  }
-
-  .subregion-chart {
-    display: inline-block;
-    float: right;
-    min-width: 200px;
-    position: relative;
-    top: 0.4em;
-    width: 33%;
-
-    .bars {
-      display: block;
-      vertical-align: baseline;
-    }
-
-    .label {
-      font-weight: $weight-light;
-    }
-
-    .negative .label {
-      font-size: 0.8em;
-    }
-
-    .negative .bar {
+    &.negative {
       fill: $negative-fill;
     }
-
-    .positive .bar {
-      fill: $dark-gray;
-    }
   }
 
-  // smaller screen rules go here
-  @media screen and (max-width: $medium) {
-    .map-legend {
-      font-size: 0.8em;
+  .mask {
+    fill: $mid-blue;
+    opacity: 0.5;
+
+    line {
+      stroke-width: 2;
     }
   }
+}
+
+
+.subregion {
+  border-top: 1px solid $mid-gray;
+  clear: both;
+  padding: 0 $base-padding;
+  position: relative;
 
 }
+
+.region-header {
+  padding: 0 0;
+  border: none;
+}
+
+
+.subregion-name {
+  @include heading('para-lg');
+  margin: 0;
+  width: 66%;
+
+  @include respond-to(medium-up) {
+    @include heading('h4');
+  }
+
+  .color-swatch {
+    display: inline-block;
+    height: 0.7em;
+    margin-right: 0.2em;
+    width: 0.7em;
+  }
+}
+
+.subregion-chart {
+  display: inline-block;
+  float: right;
+  min-width: 200px;
+  position: relative;
+  top: 0.4em;
+  width: 33%;
+
+  .bars {
+    display: block;
+    vertical-align: baseline;
+  }
+
+  .label {
+    font-weight: $weight-light;
+  }
+
+  .negative .label {
+    font-size: 0.8em;
+  }
+
+  .negative .bar {
+    fill: $negative-fill;
+  }
+
+  .positive .bar {
+    fill: $dark-gray;
+  }
+}
+
+// smaller screen rules go here
+@media screen and (max-width: $medium) {
+  .map-legend {
+    font-size: 0.8em;
+  }
+}
+

@@ -1,0 +1,15 @@
+// Explore
+//
+// General layout for Explore Data sections
+// all styles namespaced within .explore-subpage class
+//
+// Styleguide blocks.explore
+.explore-subpage {
+	$positive-fill: $pale-blue;
+  $negative-fill: #bbb;
+
+	@import 'subpage';
+	@import 'filters';
+	@import 'map';
+	@import 'toggle';
+}

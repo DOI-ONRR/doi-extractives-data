@@ -123,12 +123,12 @@ permalink: /explore/federal-revenue-by-location/
 
           </div>
           <ol class="subregions">
-            <div class="subregion region-header">
-              <h3 class="subregion-name">Entire U.S.</h3>
+            <div class="subregion region-header region-header-category">
+              <span class="subregion-name">Entire U.S.</span>
               <span class="subregion-chart"></span>
             </div>
             <div class="subregion region-header">
-            <h3>Revenue by state or offshore area</h3>
+              <span class="subregion-name">Revenue by state or offshore area</span>
             </div>
           </ol>
 
@@ -137,10 +137,6 @@ permalink: /explore/federal-revenue-by-location/
         {% for region in site.data.states %}
         <section id="{{ region.id }}" class="region onshore">
           <div class="map-wrapper">
-            <div class="subregion region-header">
-              <h2 class="subregion-name">{{ region.name }}</h2>
-              <span class="subregion-chart"></span>
-            </div>
 
             <svg is="eiti-map" id="{{ region.id }}-map" class="region-map" simplify="1e-2"
               preserveAspectRatio="xMidYMid meet"
@@ -159,9 +155,15 @@ permalink: /explore/federal-revenue-by-location/
 
             <div class="map-legend"></div>
 
-            <h3>Revenue by county</h3>
           </div>
           <ol class="subregions">
+            <div class="subregion region-header region-header-category">
+              <span class="subregion-name">{{ region.name }}</span>
+              <span class="subregion-chart"></span>
+            </div>
+            <div class="subregion region-header">
+              <span class="subregion-name">Revenue by county</span>
+            </div>
           </ol>
 
         </section>

@@ -15,10 +15,15 @@
   font-weight: $weight-bold;
 
   .subregion-name {
+  	@include heading(h3);
   	margin: 0;
+
   }
 }
 
+.region-header-category {
+	margin-bottom: $base-padding;
+}
 
 .subregion-name {
   @include heading('para-lg');

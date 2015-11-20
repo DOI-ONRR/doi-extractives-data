@@ -1,7 +1,7 @@
 
 .filters-wrapper {
-  padding: $base-padding;
   margin-bottom: $base-padding;
+  padding: $base-padding;
 
   @include respond-to(medium-up) {
     border-radius: $base-border-radius;
@@ -10,8 +10,8 @@
 }
 
 .filters-heading {
-  margin-bottom: $base-padding;
   display: none;
+  margin-bottom: $base-padding;
 
   @include respond-to(medium-up) {
     display: inline-block;

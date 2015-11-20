@@ -1,25 +1,25 @@
 
 .filters-wrapper {
-	padding: $base-padding;
-	margin-bottom: $base-padding;
+  padding: $base-padding;
+  margin-bottom: $base-padding;
 
-	@include respond-to(medium-up) {
-		border-radius: $base-border-radius;
-		margin-right: $base-padding;
-	}
+  @include respond-to(medium-up) {
+    border-radius: $base-border-radius;
+    margin-right: $base-padding;
+  }
 }
 
 .filters-heading {
-	margin-bottom: $base-padding;
-	display: none;
+  margin-bottom: $base-padding;
+  display: none;
 
-	@include respond-to(medium-up) {
-		display: inline-block;
-	}
+  @include respond-to(medium-up) {
+    display: inline-block;
+  }
 
-	h3 {
-		margin-bottom: 0;
-	}
+  h3 {
+    margin-bottom: 0;
+  }
 }
 
 .filters {
@@ -30,18 +30,9 @@
 #commodity-group-selector,
 #commodity-selector,
 #region-selector {
-	border: none;
+  border: none;
 }
 
 [aria-hidden=true] {
   display: none;
 }
-
-// #commodity-group-filter,
-// #commodity-filter {
-// 	@include span-columns(6);
-// }
-
-// #commodity-filter {
-// 	@include omega();
-// }

@@ -15,29 +15,44 @@ footer,
 footer,
 .footer {
   background-color: $light-black;
-  padding-bottom: $base-padding;
+  padding-top: $base-padding-extra;
+  padding-bottom: $base-padding-extra;
 }
 
-.footer-col {
-  @include span-columns(2);
-  margin-top: $base-padding;
+.footer-col-left {
+  padding-right: $base-padding;
+}
+
+.footer-col,
+.footer-col-right {
+  @include span-columns(3);
 
   &:first-of-type {
-    @include span-columns(2);
+    @include span-columns(3);
   }
 }
 
 .footer-col-right {
-  @include span-columns(4);
-  @include omega();
+  .footer-list_item_heading {
+    border-bottom: 1px solid $neutral-gray;
+    margin-bottom: $base-padding-large;
+    padding-bottom: $base-padding-extra;
+  }
 }
 
 .footer-heading {
   padding-bottom: $base-padding-lite;
 }
 
-.footer-list_item {
+.footer-list_item,
+.footer-list_item_heading {
+  @include heading('para-md');
   line-height: 1.3;
-  padding-bottom: $base-padding;
-  padding-right: $base-padding;
+  padding-bottom: $base-padding-lite;
+}
+
+.footer-list_item_heading {
+  // @include heading('para-lg');
+  font-weight: $weight-book;
+  text-transform: uppercase;
 }

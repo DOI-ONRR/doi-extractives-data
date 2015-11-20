@@ -19,9 +19,9 @@ permalink: /explore/federal-revenue-by-location/
   </div>
   <section class="container-right-8">
     <div class="filters-wrapper slab-foxtrot container">
-      <button class="toggle-desktop" aria-controls="filters" data-expanded-text="Hide Filters">Show Filters</button>
+      <button class="toggle-filters toggle-desktop" is="eiti-toggle" aria-controls="filters" data-expanded-text="Hide Filters">Show Filters</button>
 
-      <form id="filters" aria-hidden="false" class="filters">
+      <form id="filters" aria-hidden="true" class="filters">
         <div class="filters-heading">
           <h3>Filter revenue</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -184,8 +184,10 @@ permalink: /explore/federal-revenue-by-location/
     </div>
   </section>
 </section>
+
 <script src="{{ site.baseurl }}/js/vendor/immutable.min.js"></script>
 <script src="{{ site.baseurl }}/js/components/eiti-bar.js"></script>
+<script src="{{ site.baseurl }}/js/components/eiti-toggle.js"></script>
 <script>
   eiti.data.REGION_ID_NAME = {
     {% for state in site.data.states %}

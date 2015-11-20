@@ -24,6 +24,11 @@
   var expanders = root.selectAll('button[aria-controls]')
     .call(eiti.ui.expando);
 
+  var focusers = root.selectAll('a[data-key]')
+    .on('click', function() {
+      d3.event.preventDefault();
+    });
+
   // get the filters and add change event handlers
   var filters = root.selectAll('.filters [name]')
     // intialize the state props
@@ -179,7 +184,7 @@
         .datum({
           value: total,
           properties: {
-            name: REGION_ID_NAME[regionId] || '???'
+            name: 'Total'
           }
         })
         .call(updateRegionRow);
@@ -698,10 +703,12 @@
 
   function updateFilterDescription(state) {
     var desc = root.select('#filter-description');
+
     var commodity = state.get('commodity') ||
       (state.get('group')
        ? eiti.commodities.groups[state.get('group')].name
        : 'all commodities');
+
     var data = {
       commodity: commodity.toLowerCase(),
       region: REGION_ID_NAME[state.get('region') || 'US'],

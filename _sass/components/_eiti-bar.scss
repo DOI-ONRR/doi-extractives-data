@@ -1,8 +1,20 @@
 eiti-bar {
-  display: inline-block;
+  display: none;
   height: 1em;
   position: relative;
-  width: 200px;
+  width: 50px;
+
+  @include respond-to(small-up) {
+    display: inline-block;
+  }
+
+  @include respond-to(medium-up) {
+    width: 100px;
+  }
+
+  @include respond-to(large-up) {
+    width: 200px;
+  }
 
   .eiti-bar-bar {
     background: $dark-gray;
@@ -16,4 +28,10 @@ eiti-bar {
       right: 0;
     }
   }
+}
+
+eiti-bar {
+
+
+
 }

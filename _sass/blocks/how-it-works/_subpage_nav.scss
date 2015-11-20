@@ -39,9 +39,9 @@
 
   &.active {
     background-color: $light-gray;
-    border-left: 1px solid $mid-gray;
-    border-right: 1px solid $mid-gray;
-    border-top: 1px solid $mid-gray;
+    border-left: 1px solid $dark-gray;
+    border-right: 1px solid $dark-gray;
+    border-top: 1px solid $dark-gray;
     font-weight: $weight-book;
   }
 }

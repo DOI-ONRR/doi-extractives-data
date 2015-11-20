@@ -4,16 +4,37 @@
 //
 // Styleguide blocks.how-it-works.intro
 
+.revenues_subpage-intro_wrapper {
+  border-top: 1px solid $dark-gray;
+}
+
 .revenues_subpage-intro {
-  padding-top: $base-padding;
+  padding-bottom: $base-padding-extra;
+  padding-top: $base-padding-extra;
 
   h1 {
     @include heading(h1);
-    padding-bottom: ($base-padding / 2);
   }
+}
 
-  p {
-    padding-bottom: $base-padding;
+.revenues_subpage-breadcrumb {
+  color: $dark-gray;
+  font-weight: $weight-light;
+}
+
+.revenues_subpage-intro_text {
+  padding-bottom: $base-padding-lite;
+}
+
+.revenues_subpage-download {
+  @include heading('para-sm');
+  color: $blue;
+  font-weight: $weight-book;
+
+  i {
+    @include heading('para-lg');
+    color: $blue;
+    margin-right: 4px;
   }
 }
 
@@ -29,6 +50,38 @@
   &:last-child {
     border-bottom-left-radius: $base-border-radius;
     border-bottom-right-radius: $base-border-radius;
+  }
+
+  &:last-of-type {
+    padding-bottom: $base-padding-lite;
+  }
+}
+
+.revenues_subpage-intro_layout {
+  @extend %container-side;
+
+  @include span-columns(12);
+
+  @include respond-to(medium-up) {
+
+    @include span-columns(8);
+  }
+}
+
+.revenues_subpage-office_container_layout {
+  @extend %container-side;
+
+  @include span-columns(12);
+
+  @include respond-to(medium-up) {
+
+    @include span-columns(4);
+  }
+
+  @include respond-to(large-up) {
+
+    @include span-columns(3);
+    @include shift(1);
   }
 }
 
@@ -51,10 +104,22 @@
   padding-left: $base-padding;
   padding-right: $base-padding-lite;
 
+  p {
+    font-size: 12px;
+    line-height: 1.4;
+
+    // a {
+    //   text-decoration: none;
+    //
+    //   &:hover,
+    //   &:focus {
+    //     text-decoration: underline;
+    //   }
+    // }
+  }
 }
 
 .revenues_subpage-office_logos {
-
   @include span-columns(2);
 
   @include respond-to(medium-up) {
@@ -67,7 +132,6 @@
 
 .revenues_subpage-office_logo {
   float: right;
-  margin-bottom: $base-padding-lite;
+  margin-bottom: ($base-padding / 2);
   width: 40px;
 }
-

@@ -89,68 +89,6 @@ eiti-slider {
   }
 }
 
-
-.subregion {
-  border-top: 1px solid $mid-gray;
-  clear: both;
-  padding: 0 $base-padding;
-  position: relative;
-
-}
-
-.region-header {
-  padding: 0 0;
-  border: none;
-}
-
-
-.subregion-name {
-  @include heading('para-lg');
-  margin: 0;
-  width: 66%;
-
-  @include respond-to(medium-up) {
-    @include heading('h4');
-  }
-
-  .color-swatch {
-    display: inline-block;
-    height: 0.7em;
-    margin-right: 0.2em;
-    width: 0.7em;
-  }
-}
-
-.subregion-chart {
-  display: inline-block;
-  float: right;
-  min-width: 200px;
-  position: relative;
-  top: 0.4em;
-  width: 33%;
-
-  .bars {
-    display: block;
-    vertical-align: baseline;
-  }
-
-  .label {
-    font-weight: $weight-light;
-  }
-
-  .negative .label {
-    font-size: 0.8em;
-  }
-
-  .negative .bar {
-    fill: $negative-fill;
-  }
-
-  .positive .bar {
-    fill: $dark-gray;
-  }
-}
-
 // smaller screen rules go here
 @media screen and (max-width: $medium) {
   .map-legend {

@@ -24,12 +24,6 @@
 
 .filters {
   color: $dark-blue;
-
-  @include respond-to(medium-up) {
-  	&[aria-hidden=true] {
-		  display: block;
-		}
-  }
 }
 
 

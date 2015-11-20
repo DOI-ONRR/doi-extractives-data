@@ -41,10 +41,16 @@
 .toggle-desktop {
 	display: none;
 	float: right;
+	margin-bottom: 0;
+	padding: 0;
 
 	@include respond-to(medium-up){
   	display: inline-block;
   }
+
+	&:before {
+		vertical-align: text-top;
+	}
 }
 
 

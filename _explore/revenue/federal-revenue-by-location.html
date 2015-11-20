@@ -19,14 +19,14 @@ permalink: /explore/federal-revenue-by-location/
   </div>
   <section class="container-right-8">
     <div class="filters-wrapper slab-foxtrot container">
+      <button class="toggle-desktop" aria-controls="filters" data-expanded-text="Hide Filters">Show Filters</button>
 
-      <form id="filters" aria-hidden="true" class="filters">
+      <form id="filters" aria-hidden="false" class="filters">
         <div class="filters-heading">
           <h3>Filter revenue</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing
       elit.</p>
         </div>
-        <button class="toggle-desktop" aria-controls="filters" data-expanded-text="Hide Filters">Show Filters</button>
         <div class="container-left-6">
           <div id="commodity-group-filter" class="filter">
             <label for="commodity-group-selector">Commodity Category</label>
@@ -100,10 +100,6 @@ permalink: /explore/federal-revenue-by-location/
 
         <section id="US" class="region active">
           <div class="map-wrapper">
-            <div class="subregion region-header">
-              <h2 class="subregion-name">Entire U.S.</h2>
-              <span class="subregion-chart"></span>
-            </div>
 
             <svg is="eiti-map" id="US-map" class="region-map" simplify="1e-2"
               preserveAspectRatio="xMidYMid meet"
@@ -125,9 +121,15 @@ permalink: /explore/federal-revenue-by-location/
 
             <div class="map-legend"></div>
 
-            <h3>Revenue by state or offshore area</h3>
           </div>
           <ol class="subregions">
+            <div class="subregion region-header">
+              <h3 class="subregion-name">Entire U.S.</h3>
+              <span class="subregion-chart"></span>
+            </div>
+            <div class="subregion region-header">
+            <h3>Revenue by state or offshore area</h3>
+            </div>
           </ol>
 
         </section>

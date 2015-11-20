@@ -32,25 +32,14 @@
 
 %container-side {
 
-  @include respond-to(tiny-down) {
+  @include span-columns(12);
 
-    @include span-columns(12);
-
-    padding-bottom: $base-padding;
-  }
-
-  @include respond-to(tiny-up) {
-
-    @include span-columns(12);
-
-    padding-bottom: $base-padding;
-  }
+  padding-bottom: $base-padding;
 
   @include respond-to(huge-up) {
     padding-left: 0;
     padding-right: 0;
   }
-
 }
 
 .container-left,
@@ -66,6 +55,8 @@
 
 .container-left-8 {
   @extend %container-side;
+
+  @include span-columns(12);
 
   @include respond-to(medium-up) {
 
@@ -118,10 +109,11 @@
 .container-right-3 {
   @extend %container-side;
 
+  @include span-columns(12);
+
   @include respond-to(medium-up) {
 
     @include span-columns(3);
-
   }
 }
 

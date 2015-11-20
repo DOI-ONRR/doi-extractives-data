@@ -57,9 +57,35 @@
   }
 }
 
+.revenues_subpage-intro_layout {
+  @extend %container-side;
+
+  @include span-columns(12);
+
+  @include respond-to(medium-up) {
+
+    @include span-columns(8);
+  }
+}
+
+.revenues_subpage-office_container_layout {
+  @extend %container-side;
+
+  @include span-columns(12);
+
+  @include respond-to(medium-up) {
+
+    @include span-columns(4);
+  }
+
+  @include respond-to(large-up) {
+
+    @include span-columns(3);
+    @include shift(1);
+  }
+}
+
 .revenues_subpage-office_container {
-  @include shift(1);
-  @include omega();
   position: relative;
 
   a {

@@ -1,7 +1,7 @@
 .revenues_subpage-steps {
   background-position: 0 0;
   background-size: 100%;
-  padding-top: $base-padding;
+  //padding-top: $base-padding;
 
   &.onshore-oil {
     @include respond-to(medium-up) {
@@ -74,7 +74,6 @@
     @include respond-to(medium-up) {
       background: url('../img/how-it-works/offshore-oil-top.png') top left no-repeat, url('../img/how-it-works/offshore-oil-bottom.png') bottom left no-repeat;
       background-size: 100%, 100%;
-      padding-top: 50px;
       position: relative;
       height: 100%;
       z-index: 2;

@@ -189,6 +189,14 @@
     }
   }
 
+  .filter-description {
+    .filter-part {
+      border-bottom: 2px dotted $mid-gray;
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+
   // smaller screen rules go here
   @media screen and (max-width: $large) {
     .region-name,

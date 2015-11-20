@@ -46,8 +46,9 @@ eiti-slider {
     border-bottom-width: 0.5em;
     display: block;
     flex: 1;
-    padding-left: 0.1em;
     margin-right: 0.2em;
+    padding-left: 0.1em;
+
     &:last-of-type {
       margin-right: 0;
     }

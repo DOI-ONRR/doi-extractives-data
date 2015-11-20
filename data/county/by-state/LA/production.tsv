@@ -1,0 +1,413 @@
+Year	State	County	FIPS	Commodity	Product	Volume
+2005	LA	De Soto Parish	22031		Oil (bbl)	0.02
+2006	LA	De Soto Parish	22031		Oil (bbl)	0.04
+2014	LA	Lafourche Parish	22057		Oil (bbl)	1.28
+2013	LA	Lafourche Parish	22057		Oil (bbl)	2.97
+2011	LA	Lincoln Parish	22061		Oil (bbl)	3.57
+2012	LA	Lincoln Parish	22061		Oil (bbl)	4
+2014	LA	Lincoln Parish	22061		Oil (bbl)	4
+2012	LA	Lafourche Parish	22057		Oil (bbl)	4.57
+2008	LA	Red River Parish	22081		Oil (bbl)	5.25
+2009	LA	Beauregard Parish	22011		Gas (mcf)	9.23
+2014	LA	Natchitoches Parish	22069		Oil (bbl)	10.88
+2013	LA	Bienville Parish	22013		Oil (bbl)	11.44
+2007	LA	Bienville Parish	22013		Oil (bbl)	13.5
+2009	LA	Lincoln Parish	22061		Oil (bbl)	13.95
+2008	LA	Lincoln Parish	22061		Oil (bbl)	14
+2008	LA	Lafourche Parish	22057		Gas (mcf)	16.31
+2010	LA	Lincoln Parish	22061		Oil (bbl)	17.64
+2014	LA	Bienville Parish	22013		Oil (bbl)	19.12
+2013	LA	Natchitoches Parish	22069		Oil (bbl)	19.88
+2006	LA	Bienville Parish	22013		Oil (bbl)	20.25
+2011	LA	Bienville Parish	22013		Oil (bbl)	22.4
+2014	LA	Beauregard Parish	22011		Oil (bbl)	22.98
+2013	LA	Beauregard Parish	22011		Oil (bbl)	25.11
+2013	LA	Beauregard Parish	22011		Gas (mcf)	26.24
+2012	LA	Beauregard Parish	22011		Gas (mcf)	27.55
+2008	LA	Beauregard Parish	22011		Oil (bbl)	29.1
+2007	LA	Beauregard Parish	22011		Oil (bbl)	29.42
+2011	LA	Beauregard Parish	22011		Oil (bbl)	31.98
+2009	LA	Beauregard Parish	22011		Oil (bbl)	33.04
+2010	LA	Natchitoches Parish	22069		Oil (bbl)	34.3
+2010	LA	Bienville Parish	22013		Oil (bbl)	35.11
+2005	LA	Bienville Parish	22013		Oil (bbl)	35.31
+2012	LA	Bienville Parish	22013		Oil (bbl)	35.63
+2012	LA	La Salle Parish	22059		Oil (bbl)	37.1
+2010	LA	Beauregard Parish	22011		Oil (bbl)	38.47
+2008	LA	St. Mary Parish	22101		Oil (bbl)	38.84
+2008	LA	Beauregard Parish	22011		Gas (mcf)	40.75
+2006	LA	Lincoln Parish	22061		Oil (bbl)	41.19
+2007	LA	Cameron Parish	22023		Oil (bbl)	44.18
+2011	LA	Lafourche Parish	22057		Oil (bbl)	46.66
+2011	LA	Beauregard Parish	22011		Gas (mcf)	49.34
+2012	LA	Natchitoches Parish	22069		Oil (bbl)	49.57
+2012	LA	Beauregard Parish	22011		Oil (bbl)	51.51
+2005	LA	Lincoln Parish	22061		Oil (bbl)	51.63
+2006	LA	Beauregard Parish	22011		Oil (bbl)	51.81
+2005	LA	Beauregard Parish	22011		Oil (bbl)	53.35
+2011	LA	Natchitoches Parish	22069		Oil (bbl)	53.97
+2014	LA	Beauregard Parish	22011		Gas (mcf)	57.16
+2007	LA	Beauregard Parish	22011		Gas (mcf)	59.31
+2006	LA	St. Mary Parish	22101		Oil (bbl)	59.75
+2010	LA	Beauregard Parish	22011		Gas (mcf)	60.57
+2006	LA	Cameron Parish	22023		Oil (bbl)	62.78
+2010	LA	La Salle Parish	22059		Oil (bbl)	77.12
+2011	LA	La Salle Parish	22059		Oil (bbl)	78.21
+2006	LA	Beauregard Parish	22011		Gas (mcf)	81.46
+2005	LA	Beauregard Parish	22011		Gas (mcf)	87.8
+2007	LA	De Soto Parish	22031		Oil (bbl)	91.59
+2008	LA	Bienville Parish	22013		Oil (bbl)	95.61
+2009	LA	Bienville Parish	22013		Oil (bbl)	99.49
+2005	LA	Cameron Parish	22023		Oil (bbl)	110.46
+2009	LA	La Salle Parish	22059		Oil (bbl)	116.95
+2009	LA	Natchitoches Parish	22069		Oil (bbl)	139.39
+2007	LA	Natchitoches Parish	22069		Oil (bbl)	148.13
+2008	LA	De Soto Parish	22031		Oil (bbl)	164.01
+2008	LA	St. Mary Parish	22101		Gas (mcf)	166.29
+2013	LA	De Soto Parish	22031		Oil (bbl)	171.35
+2007	LA	Lincoln Parish	22061		Oil (bbl)	190.44
+2007	LA	St. Mary Parish	22101		Oil (bbl)	192.38
+2008	LA	Natchitoches Parish	22069		Oil (bbl)	225.94
+2014	LA	Vermilion Parish	22113		Gas (mcf)	230.95
+2012	LA	La Salle Parish	22059		Gas (mcf)	238.27
+2014	LA	De Soto Parish	22031		Oil (bbl)	243.7
+2008	LA	Lafourche Parish	22057		Oil (bbl)	251.64
+2006	LA	Natchitoches Parish	22069		Oil (bbl)	256.07
+2007	LA	La Salle Parish	22059		Gas (mcf)	258.46
+2008	LA	La Salle Parish	22059		Oil (bbl)	296.29
+2013	LA	Vermilion Parish	22113		Gas (mcf)	304.49
+2012	LA	Vermilion Parish	22113		Gas (mcf)	310.28
+2010	LA	Vermilion Parish	22113		Gas (mcf)	314.51
+2008	LA	La Salle Parish	22059		Gas (mcf)	326.67
+2009	LA	Vermilion Parish	22113		Gas (mcf)	329.38
+2011	LA	Vermilion Parish	22113		Gas (mcf)	330.08
+2007	LA	Vermilion Parish	22113		Gas (mcf)	332.64
+2010	LA	Lafourche Parish	22057		Oil (bbl)	332.85
+2009	LA	Lafourche Parish	22057		Oil (bbl)	335.18
+2012	LA	De Soto Parish	22031		Oil (bbl)	339.1
+2007	LA	Lafourche Parish	22057		Oil (bbl)	350.88
+2005	LA	La Salle Parish	22059		Gas (mcf)	359.41
+2009	LA	De Soto Parish	22031		Oil (bbl)	360.11
+2007	LA	La Salle Parish	22059		Oil (bbl)	364.87
+2006	LA	Vermilion Parish	22113		Gas (mcf)	376.17
+2014	LA	Ouachita Parish	22073		Gas (mcf)	393
+2009	LA	La Salle Parish	22059		Gas (mcf)	397.97
+2006	LA	St. Mary Parish	22101		Gas (mcf)	402.31
+2005	LA	Vermilion Parish	22113		Gas (mcf)	402.65
+2006	LA	La Salle Parish	22059		Oil (bbl)	406.88
+2005	LA	Natchitoches Parish	22069		Oil (bbl)	412.5
+2008	LA	Vermilion Parish	22113		Gas (mcf)	414.72
+2013	LA	Ouachita Parish	22073		Gas (mcf)	437
+2006	LA	La Salle Parish	22059		Gas (mcf)	455.26
+2010	LA	La Salle Parish	22059		Gas (mcf)	468.72
+2007	LA	St. Martin Parish	22099		Oil (bbl)	474.59
+2008	LA	Ouachita Parish	22073		Gas (mcf)	477
+2011	LA	La Salle Parish	22059		Gas (mcf)	477.82
+2007	LA	Lafourche Parish	22057		Gas (mcf)	480.96
+2012	LA	Ouachita Parish	22073		Gas (mcf)	482
+2011	LA	Ouachita Parish	22073		Gas (mcf)	494
+2005	LA	La Salle Parish	22059		Oil (bbl)	496.19
+2009	LA	Ouachita Parish	22073		Gas (mcf)	522
+2012	LA	East Baton Rouge Parish	22033		Oil (bbl)	534.11
+2010	LA	De Soto Parish	22031		Oil (bbl)	539.25
+2005	LA	Lafourche Parish	22057		Gas (mcf)	566.94
+2007	LA	Ouachita Parish	22073		Gas (mcf)	600
+2005	LA	Lafourche Parish	22057		Oil (bbl)	604.78
+2006	LA	Caldwell Parish	22021		Gas (mcf)	618.3
+2011	LA	De Soto Parish	22031		Oil (bbl)	629.49
+2008	LA	St. Martin Parish	22099		Oil (bbl)	654.6
+2006	LA	Ouachita Parish	22073		Gas (mcf)	700
+2006	LA	St. Martin Parish	22099		Oil (bbl)	706.56
+2005	LA	Ouachita Parish	22073		Gas (mcf)	726
+2010	LA	Ouachita Parish	22073		Gas (mcf)	749
+2011	LA	St. Martin Parish	22099		Oil (bbl)	756.58
+2010	LA	St. Martin Parish	22099		Oil (bbl)	766.45
+2007	LA	St. Mary Parish	22101		Gas (mcf)	767.38
+2014	LA	St. Martin Parish	22099		Oil (bbl)	773.17
+2011	LA	East Baton Rouge Parish	22033		Oil (bbl)	777.21
+2013	LA	East Baton Rouge Parish	22033		Oil (bbl)	788.13
+2014	LA	East Baton Rouge Parish	22033		Oil (bbl)	798.57
+2005	LA	St. Martin Parish	22099		Oil (bbl)	829.72
+2010	LA	East Baton Rouge Parish	22033		Oil (bbl)	839.14
+2008	LA	Vermilion Parish	22113		Oil (bbl)	871.86
+2007	LA	St. Martin Parish	22099		Gas (mcf)	916.58
+2012	LA	St. Martin Parish	22099		Oil (bbl)	933.42
+2009	LA	East Baton Rouge Parish	22033		Oil (bbl)	949.6
+2008	LA	Morehouse Parish	22067		Gas (mcf)	1016
+2013	LA	St. Martin Parish	22099		Oil (bbl)	1018.88
+2008	LA	St. Martin Parish	22099		Gas (mcf)	1035.37
+2014	LA	Winn Parish	22127		Oil (bbl)	1066.54
+2005	LA	St. Martin Parish	22099		Gas (mcf)	1091.13
+2011	LA	St. Martin Parish	22099		Gas (mcf)	1120.04
+2012	LA	St. Martin Parish	22099		Gas (mcf)	1180.81
+2008	LA	East Baton Rouge Parish	22033		Oil (bbl)	1211.12
+2006	LA	Lafourche Parish	22057		Oil (bbl)	1259.79
+2006	LA	Morehouse Parish	22067		Gas (mcf)	1270
+2014	LA	Lincoln Parish	22061		Gas (mcf)	1280.98
+2013	LA	Winn Parish	22127		Oil (bbl)	1284.2
+2006	LA	St. Martin Parish	22099		Gas (mcf)	1341.37
+2014	LA	Vernon Parish	22115		Oil (bbl)	1343.04
+2014	LA	Caldwell Parish	22021		Gas (mcf)	1350.58
+2009	LA	Morehouse Parish	22067		Gas (mcf)	1354
+2012	LA	Morehouse Parish	22067		Gas (mcf)	1359
+2010	LA	St. Martin Parish	22099		Gas (mcf)	1373.73
+2014	LA	Morehouse Parish	22067		Gas (mcf)	1378
+2013	LA	Morehouse Parish	22067		Gas (mcf)	1396
+2010	LA	Morehouse Parish	22067		Gas (mcf)	1399
+2011	LA	Lincoln Parish	22061		Gas (mcf)	1411.55
+2005	LA	Morehouse Parish	22067		Gas (mcf)	1415
+2013	LA	St. Martin Parish	22099		Gas (mcf)	1428.42
+2009	LA	St. Martin Parish	22099		Oil (bbl)	1454.4
+2007	LA	Morehouse Parish	22067		Gas (mcf)	1524
+2011	LA	Morehouse Parish	22067		Gas (mcf)	1545
+2007	LA	Winn Parish	22127		Oil (bbl)	1561.72
+2010	LA	Lincoln Parish	22061		Gas (mcf)	1692.52
+2012	LA	Lincoln Parish	22061		Gas (mcf)	1763.9
+2012	LA	Winn Parish	22127		Oil (bbl)	1772.95
+2006	LA	Winn Parish	22127		Oil (bbl)	1780.86
+2013	LA	Lincoln Parish	22061		Gas (mcf)	1970.92
+2008	LA	Winn Parish	22127		Oil (bbl)	1993.58
+2014	LA	St. Martin Parish	22099		Gas (mcf)	2008.57
+2009	LA	St. Martin Parish	22099		Gas (mcf)	2040.94
+2010	LA	Union Parish	22111		Gas (mcf)	2043
+2007	LA	Cameron Parish	22023		Gas (mcf)	2213.81
+2011	LA	Winn Parish	22127		Oil (bbl)	2482.82
+2010	LA	Winn Parish	22127		Oil (bbl)	2505.08
+2007	LA	East Baton Rouge Parish	22033		Oil (bbl)	2516.75
+2005	LA	Winn Parish	22127		Oil (bbl)	2527.84
+2008	LA	Union Parish	22111		Gas (mcf)	2627
+2006	LA	Lafourche Parish	22057		Gas (mcf)	2629.04
+2009	LA	Natchitoches Parish	22069		Gas (mcf)	2695.52
+2014	LA	Vernon Parish	22115		Gas (mcf)	2699.13
+2014	LA	Terrebonne Parish	22109		Oil (bbl)	2827
+2013	LA	Vernon Parish	22115		Oil (bbl)	2839.55
+2009	LA	Winn Parish	22127		Oil (bbl)	3005.21
+2014	LA	Union Parish	22111		Gas (mcf)	3216
+2012	LA	Union Parish	22111		Gas (mcf)	3333
+2011	LA	Union Parish	22111		Gas (mcf)	3355
+2011	LA	Red River Parish	22081		Gas (mcf)	3359.42
+2014	LA	Grant Parish	22043		Oil (bbl)	3404
+2013	LA	Union Parish	22111		Gas (mcf)	3417
+2009	LA	Lincoln Parish	22061		Gas (mcf)	3641.84
+2012	LA	East Baton Rouge Parish	22033		Gas (mcf)	3668.07
+2007	LA	Union Parish	22111		Gas (mcf)	3816
+2006	LA	Cameron Parish	22023		Gas (mcf)	3820.24
+2009	LA	Union Parish	22111		Gas (mcf)	3875
+2008	LA	Natchitoches Parish	22069		Gas (mcf)	3907.09
+2011	LA	Webster Parish	22119		Oil (bbl)	4189.2
+2009	LA	Vermilion Parish	22113		Oil (bbl)	4218.92
+2011	LA	Vernon Parish	22115		Oil (bbl)	4294.89
+2012	LA	Vernon Parish	22115		Oil (bbl)	4301.88
+2005	LA	Vermilion Parish	22113		Oil (bbl)	4316.24
+2007	LA	Natchitoches Parish	22069		Gas (mcf)	4410.59
+2013	LA	Vermilion Parish	22113		Oil (bbl)	4487.11
+2010	LA	Vernon Parish	22115		Oil (bbl)	4568.15
+2006	LA	Union Parish	22111		Gas (mcf)	4616
+2010	LA	Webster Parish	22119		Oil (bbl)	4657.86
+2014	LA	Webster Parish	22119		Oil (bbl)	4797.23
+2013	LA	Caldwell Parish	22021		Gas (mcf)	4918.36
+2012	LA	Vermilion Parish	22113		Oil (bbl)	4929.99
+2005	LA	Cameron Parish	22023		Gas (mcf)	4946.36
+2005	LA	Union Parish	22111		Gas (mcf)	4958
+2009	LA	Webster Parish	22119		Oil (bbl)	5200.61
+2005	LA	Webster Parish	22119		Oil (bbl)	5239.88
+2014	LA	Vermilion Parish	22113		Oil (bbl)	5293.18
+2006	LA	East Baton Rouge Parish	22033		Oil (bbl)	5547.99
+2008	LA	Webster Parish	22119		Oil (bbl)	5790.33
+2013	LA	Rapides Parish	22079		Oil (bbl)	6044.11
+2006	LA	Webster Parish	22119		Oil (bbl)	6225.73
+2014	LA	Rapides Parish	22079		Oil (bbl)	6240.89
+2011	LA	Vermilion Parish	22113		Oil (bbl)	6410.24
+2006	LA	Natchitoches Parish	22069		Gas (mcf)	6421.88
+2008	LA	Red River Parish	22081		Gas (mcf)	6491.75
+2013	LA	Rapides Parish	22079		Gas (mcf)	6507.23
+2013	LA	East Baton Rouge Parish	22033		Gas (mcf)	6664.17
+2013	LA	Caddo Parish	22017		Oil (bbl)	6792.82
+2014	LA	East Baton Rouge Parish	22033		Gas (mcf)	6906.25
+2010	LA	Vermilion Parish	22113		Oil (bbl)	6920.02
+2014	LA	Caddo Parish	22017		Oil (bbl)	7291.12
+2007	LA	Webster Parish	22119		Oil (bbl)	7314.53
+2014	LA	Rapides Parish	22079		Gas (mcf)	7316.66
+2011	LA	Caddo Parish	22017		Oil (bbl)	7356.53
+2012	LA	Caddo Parish	22017		Oil (bbl)	7543.2
+2011	LA	East Baton Rouge Parish	22033		Gas (mcf)	7635.27
+2008	LA	Rapides Parish	22079		Gas (mcf)	7741.91
+2005	LA	Lincoln Parish	22061		Gas (mcf)	7865.82
+2013	LA	Vernon Parish	22115		Gas (mcf)	8067.56
+2010	LA	Caddo Parish	22017		Oil (bbl)	8162.79
+2008	LA	Caddo Parish	22017		Oil (bbl)	8339.36
+2009	LA	Caddo Parish	22017		Oil (bbl)	8383.95
+2014	LA	Claiborne Parish	22027		Oil (bbl)	8478.87
+2009	LA	Rapides Parish	22079		Gas (mcf)	8614.71
+2005	LA	Natchitoches Parish	22069		Gas (mcf)	8738.66
+2007	LA	Rapides Parish	22079		Gas (mcf)	8913.44
+2010	LA	East Baton Rouge Parish	22033		Gas (mcf)	8960.74
+2007	LA	Vermilion Parish	22113		Oil (bbl)	9201.81
+2013	LA	Claiborne Parish	22027		Oil (bbl)	9245.27
+2007	LA	Caddo Parish	22017		Oil (bbl)	9444.5
+2009	LA	East Baton Rouge Parish	22033		Gas (mcf)	9822.06
+2012	LA	Caldwell Parish	22021		Gas (mcf)	9842.26
+2013	LA	Webster Parish	22119		Oil (bbl)	10025.87
+2008	LA	Vernon Parish	22115		Oil (bbl)	10032.1
+2012	LA	Claiborne Parish	22027		Oil (bbl)	10052.66
+2011	LA	Claiborne Parish	22027		Oil (bbl)	10896.14
+2009	LA	Vernon Parish	22115		Oil (bbl)	10920.23
+2006	LA	Caddo Parish	22017		Oil (bbl)	11010.32
+2006	LA	Vermilion Parish	22113		Oil (bbl)	11015.37
+2012	LA	Webster Parish	22119		Oil (bbl)	11074.88
+2007	LA	Caldwell Parish	22021		Gas (mcf)	11205.58
+2009	LA	Red River Parish	22081		Gas (mcf)	11435.88
+2005	LA	Caddo Parish	22017		Oil (bbl)	11791.78
+2006	LA	Rapides Parish	22079		Gas (mcf)	11822.12
+2008	LA	East Baton Rouge Parish	22033		Gas (mcf)	12079.52
+2010	LA	Vernon Parish	22115		Gas (mcf)	12526.2
+2010	LA	Claiborne Parish	22027		Oil (bbl)	12693.62
+2006	LA	De Soto Parish	22031		Gas (mcf)	12997.81
+2011	LA	Caldwell Parish	22021		Gas (mcf)	13009.73
+2010	LA	Caldwell Parish	22021		Gas (mcf)	13356.98
+2005	LA	East Baton Rouge Parish	22033		Oil (bbl)	13365.37
+2008	LA	Rapides Parish	22079		Oil (bbl)	13618.07
+2007	LA	Vernon Parish	22115		Oil (bbl)	13701.98
+2009	LA	Rapides Parish	22079		Oil (bbl)	13743.27
+2012	LA	Vernon Parish	22115		Gas (mcf)	13806.03
+2007	LA	Rapides Parish	22079		Oil (bbl)	15147.63
+2008	LA	Claiborne Parish	22027		Oil (bbl)	15994.15
+2010	LA	Red River Parish	22081		Gas (mcf)	17156.74
+2009	LA	Claiborne Parish	22027		Oil (bbl)	17189.15
+2006	LA	Vernon Parish	22115		Oil (bbl)	17226.87
+2005	LA	Vernon Parish	22115		Oil (bbl)	17388.85
+2006	LA	Rapides Parish	22079		Oil (bbl)	17452.35
+2009	LA	Caldwell Parish	22021		Gas (mcf)	17925.22
+2011	LA	Vernon Parish	22115		Gas (mcf)	18038.92
+2005	LA	De Soto Parish	22031		Gas (mcf)	18644.09
+2010	LA	Rapides Parish	22079		Oil (bbl)	18980.57
+2013	LA	Terrebonne Parish	22109		Oil (bbl)	18994
+2007	LA	Claiborne Parish	22027		Oil (bbl)	19468.32
+2007	LA	Lincoln Parish	22061		Gas (mcf)	19580.69
+2005	LA	Rapides Parish	22079		Gas (mcf)	20386.06
+2007	LA	East Baton Rouge Parish	22033		Gas (mcf)	21635.74
+2006	LA	Claiborne Parish	22027		Oil (bbl)	21718.25
+2006	LA	Lincoln Parish	22061		Gas (mcf)	22110.54
+2005	LA	Rapides Parish	22079		Oil (bbl)	22160.64
+2011	LA	Terrebonne Parish	22109		Oil (bbl)	22889
+2009	LA	Vernon Parish	22115		Gas (mcf)	22918.02
+2014	LA	Red River Parish	22081		Gas (mcf)	24364.17
+2008	LA	Caldwell Parish	22021		Gas (mcf)	24448.99
+2007	LA	Bienville Parish	22013		Gas (mcf)	25893.56
+2005	LA	Claiborne Parish	22027		Oil (bbl)	26113.49
+2014	LA	Webster Parish	22119		Gas (mcf)	26828.55
+2010	LA	Webster Parish	22119		Gas (mcf)	28148.22
+2008	LA	Lincoln Parish	22061		Gas (mcf)	28159
+2011	LA	Rapides Parish	22079		Oil (bbl)	28467.92
+2013	LA	Webster Parish	22119		Gas (mcf)	28900.09
+2010	LA	Rapides Parish	22079		Gas (mcf)	29803.07
+2005	LA	Bienville Parish	22013		Gas (mcf)	30478.2
+2011	LA	Webster Parish	22119		Gas (mcf)	30503.62
+2006	LA	Bienville Parish	22013		Gas (mcf)	31464.21
+2008	LA	Vernon Parish	22115		Gas (mcf)	32070.78
+2005	LA	Webster Parish	22119		Gas (mcf)	36250.72
+2009	LA	Webster Parish	22119		Gas (mcf)	36849.18
+2012	LA	Rapides Parish	22079		Oil (bbl)	37723.47
+2012	LA	Webster Parish	22119		Gas (mcf)	39707.66
+2006	LA	Webster Parish	22119		Gas (mcf)	39839.4
+2007	LA	De Soto Parish	22031		Gas (mcf)	41701.95
+2006	LA	Vernon Parish	22115		Gas (mcf)	44790.18
+2010	LA	Bienville Parish	22013		Gas (mcf)	46802
+2014	LA	Bossier Parish	22015		Oil (bbl)	47374.08
+2008	LA	Webster Parish	22119		Gas (mcf)	47997.5
+2007	LA	Vernon Parish	22115		Gas (mcf)	49098.87
+2007	LA	Caddo Parish	22017		Gas (mcf)	50100.41
+2013	LA	Bossier Parish	22015		Oil (bbl)	51006.22
+2012	LA	Bossier Parish	22015		Oil (bbl)	54157.26
+2012	LA	Terrebonne Parish	22109		Oil (bbl)	57089
+2006	LA	East Baton Rouge Parish	22033		Gas (mcf)	58014.21
+2011	LA	Bossier Parish	22015		Oil (bbl)	60064.97
+2014	LA	Terrebonne Parish	22109		Gas (mcf)	60321
+2014	LA	Winn Parish	22127		Gas (mcf)	61230.35
+2013	LA	Red River Parish	22081		Gas (mcf)	61512.4
+2008	LA	De Soto Parish	22031		Gas (mcf)	61736.08
+2006	LA	Caddo Parish	22017		Gas (mcf)	64548.17
+2010	LA	Bossier Parish	22015		Oil (bbl)	65132.57
+2013	LA	Winn Parish	22127		Gas (mcf)	67447.01
+2007	LA	Webster Parish	22119		Gas (mcf)	67889.29
+2009	LA	Bienville Parish	22013		Gas (mcf)	68035.55
+2005	LA	Vernon Parish	22115		Gas (mcf)	68822.67
+2005	LA	Caddo Parish	22017		Gas (mcf)	68961.53
+2006	LA	Winn Parish	22127		Gas (mcf)	76212.42
+2008	LA	Bienville Parish	22013		Gas (mcf)	77196.98
+2008	LA	Winn Parish	22127		Gas (mcf)	83474.44
+2008	LA	Caddo Parish	22017		Gas (mcf)	84370.36
+2009	LA	Caddo Parish	22017		Gas (mcf)	84380.01
+2011	LA	Rapides Parish	22079		Gas (mcf)	85019.24
+2007	LA	Winn Parish	22127		Gas (mcf)	85857.15
+2005	LA	Winn Parish	22127		Gas (mcf)	92845.44
+2012	LA	Winn Parish	22127		Gas (mcf)	98765.69
+2009	LA	Bossier Parish	22015		Oil (bbl)	100244.68
+2005	LA	Bossier Parish	22015		Oil (bbl)	103197.8
+2009	LA	Winn Parish	22127		Gas (mcf)	109665.86
+2012	LA	Red River Parish	22081		Gas (mcf)	112213.05
+2010	LA	Winn Parish	22127		Gas (mcf)	117101.01
+2011	LA	Winn Parish	22127		Gas (mcf)	127834.67
+2006	LA	Bossier Parish	22015		Oil (bbl)	127968.2
+2005	LA	East Baton Rouge Parish	22033		Gas (mcf)	129288.54
+2007	LA	Bossier Parish	22015		Oil (bbl)	136213.44
+2014	LA	Claiborne Parish	22027		Gas (mcf)	139445.98
+2008	LA	Plaquemines Parish	22075		Oil (bbl)	148209.6
+2008	LA	Bossier Parish	22015		Oil (bbl)	149416.77
+2009	LA	Plaquemines Parish	22075		Oil (bbl)	157603.24
+2012	LA	Rapides Parish	22079		Gas (mcf)	158156.88
+2013	LA	Claiborne Parish	22027		Gas (mcf)	161351.94
+2012	LA	Plaquemines Parish	22075		Oil (bbl)	163242.2
+2011	LA	Claiborne Parish	22027		Gas (mcf)	169877.2
+2012	LA	Claiborne Parish	22027		Gas (mcf)	170409.35
+2014	LA	Bienville Parish	22013		Gas (mcf)	173020.22
+2010	LA	Plaquemines Parish	22075		Oil (bbl)	174729.26
+2007	LA	Claiborne Parish	22027		Gas (mcf)	179771.2
+2008	LA	Claiborne Parish	22027		Gas (mcf)	180967.69
+2009	LA	Claiborne Parish	22027		Gas (mcf)	181691.83
+2011	LA	Plaquemines Parish	22075		Oil (bbl)	182814.01
+2005	LA	Plaquemines Parish	22075		Oil (bbl)	182965.82
+2010	LA	Claiborne Parish	22027		Gas (mcf)	184078.32
+2006	LA	Claiborne Parish	22027		Gas (mcf)	187559.03
+2007	LA	Plaquemines Parish	22075		Oil (bbl)	191475.9
+2013	LA	Plaquemines Parish	22075		Oil (bbl)	192657.39
+2014	LA	Plaquemines Parish	22075		Oil (bbl)	196050.23
+2005	LA	Claiborne Parish	22027		Gas (mcf)	201974.12
+2013	LA	Caddo Parish	22017		Gas (mcf)	225950.08
+2014	LA	Caddo Parish	22017		Gas (mcf)	237508.15
+2006	LA	Plaquemines Parish	22075		Oil (bbl)	259226.64
+2011	LA	Bienville Parish	22013		Gas (mcf)	264898.92
+2009	LA	De Soto Parish	22031		Gas (mcf)	274437.95
+2010	LA	Caddo Parish	22017		Gas (mcf)	304075.11
+2013	LA	Bienville Parish	22013		Gas (mcf)	340318.56
+2011	LA	Caddo Parish	22017		Gas (mcf)	360897.38
+2013	LA	Terrebonne Parish	22109		Gas (mcf)	367157
+2012	LA	Caddo Parish	22017		Gas (mcf)	394752.42
+2011	LA	Terrebonne Parish	22109		Gas (mcf)	449030
+2011	LA	Plaquemines Parish	22075		Gas (mcf)	478210.39
+2010	LA	Plaquemines Parish	22075		Gas (mcf)	488863.72
+2008	LA	Plaquemines Parish	22075		Gas (mcf)	588230.1
+2009	LA	Plaquemines Parish	22075		Gas (mcf)	769432.12
+2014	LA	De Soto Parish	22031		Gas (mcf)	816387.6
+2007	LA	Plaquemines Parish	22075		Gas (mcf)	840253.83
+2012	LA	Plaquemines Parish	22075		Gas (mcf)	895592.77
+2012	LA	Bienville Parish	22013		Gas (mcf)	945148.25
+2010	LA	De Soto Parish	22031		Gas (mcf)	1038806.61
+2012	LA	Terrebonne Parish	22109		Gas (mcf)	1121643
+2013	LA	De Soto Parish	22031		Gas (mcf)	1382608.48
+2005	LA	Plaquemines Parish	22075		Gas (mcf)	1686137.31
+2006	LA	Plaquemines Parish	22075		Gas (mcf)	1942812.95
+2013	LA	Plaquemines Parish	22075		Gas (mcf)	2178532.38
+2014	LA	Plaquemines Parish	22075		Gas (mcf)	2253315.51
+2012	LA	De Soto Parish	22031		Gas (mcf)	2959758.25
+2011	LA	De Soto Parish	22031		Gas (mcf)	4199598.96
+2014	LA	Bossier Parish	22015		Gas (mcf)	9046613.72
+2013	LA	Bossier Parish	22015		Gas (mcf)	12274927.4
+2012	LA	Bossier Parish	22015		Gas (mcf)	13729204.05
+2010	LA	Bossier Parish	22015		Gas (mcf)	14292522.15
+2011	LA	Bossier Parish	22015		Gas (mcf)	14516859.86
+2009	LA	Bossier Parish	22015		Gas (mcf)	18909474.02
+2008	LA	Bossier Parish	22015		Gas (mcf)	28216762.78
+2006	LA	Bossier Parish	22015		Gas (mcf)	28983273.41
+2007	LA	Bossier Parish	22015		Gas (mcf)	29165322.22
+2005	LA	Bossier Parish	22015		Gas (mcf)	29977099.84

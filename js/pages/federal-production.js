@@ -10,12 +10,12 @@
   var mutating = false;
 
   // create references for often-used elements
-  var root = d3.select('#revenue');
+  var root = d3.select('#federal-production');
   var regionSections = root.selectAll('.regions > .region');
   var timeline = root.select('#timeline');
 
   var getter = eiti.data.getter;
-  var formatNumber = eiti.format.dollars;
+  var formatNumber = eiti.format.si;
   var NULL_FILL = '#eee';
 
   // buttons that expand and collapse other elements
@@ -40,7 +40,18 @@
     });
 
   // create our data "model"
-  var model = createModel();
+  var model = createModel()
+    .on('yearly', function(data) {
+      timeline.call(updateTimeline, data, state);
+    })
+    .on('products', function(products) {
+      updateProductList(products)
+        .property('value', state.get('product') || '');
+      /*
+      root.select('#product-filter')
+        .style('display', products.length > 1 ? null : 'none');
+      */
+    });
 
   // kick off the "app"
   initialize();
@@ -80,8 +91,13 @@
     var old = state;
     state = fn(state);
     if (!Immutable.is(old, state)) {
-      if (!state.get('group') || state.get('group') !== old.get('group')) {
+      if (stateChanged(old, state, 'group')) {
+        console.warn('commodity group:', old.get('group'), '->', state.get('group'));
         state = state.delete('commodity');
+      }
+      if (stateChanged(old, state, 'commodity')) {
+        console.warn('commodity:', old.get('commodity'), '->', state.get('commodity'));
+        state = state.delete('product');
       }
       render(state, old);
       location.hash = eiti.url.qs.format(state.toJS());
@@ -94,6 +110,19 @@
 
   function render(state, previous) {
     // console.time('render');
+    var product = state.get('product');
+    if (product) {
+      var match = product.match(/( \((.+)\))\s*$/);
+      var units = match ? ' ' + match[2] : '';
+      // console.log('product units:', units);
+      formatNumber = eiti.format.transform(eiti.format.si, function(str) {
+        return str + units;
+      });
+    } else {
+      formatNumber = function(n) {
+        return n + eiti.format.pluralize(n, ' product');
+      };
+    }
 
     // update the filters
     filters.each(function() {
@@ -141,10 +170,6 @@
 
     updateFilterDescription(state);
 
-    model.on('yearly', function(data) {
-      timeline.call(updateTimeline, data, state);
-    });
-
     selected.call(renderRegion, state);
     // console.timeEnd('render');
     return true;
@@ -152,6 +177,7 @@
 
   function renderRegion(selection, state) {
     var regionId = state.get('region') || 'US';
+    var product = state.get('product');
     var fields = getFields(regionId);
 
     // console.log('loading', regionId);
@@ -172,11 +198,12 @@
           .call(createBarChart);
       }
 
-      var total = d3.sum(data, getter(fields.value));
-      total = Math.floor(total);
+      var total = product
+        ? d3.sum(data, getter(fields.value))
+        : unique(data, 'Product').length;
       header
         .datum({
-          value: total,
+          value: Math.floor(total),
           properties: {
             name: REGION_ID_NAME[regionId] || '???'
           }
@@ -194,11 +221,16 @@
         }
 
         var features = subregions.data();
+        var rollup = product
+          ? function(d) {
+              return d3.sum(d, getter(fields.value));
+            }
+          : function(d) {
+              return unique(d, 'Product').length;
+            };
         var dataByFeatureId = d3.nest()
           .key(getter(fields.region))
-          .rollup(function(d) {
-            return d3.sum(d, getter(fields.value));
-          })
+          .rollup(rollup)
           .map(data);
 
         // console.log('data by feature id:', dataByFeatureId);
@@ -272,9 +304,16 @@
       .attr('class', 'subregion-chart')
       .call(createBarChart);
 
-    items.sort(function(a, b) {
+    var cmpName = function(a, b) {
+      return d3.ascending(a.properties.name, b.properties.name);
+    };
+    var cmpValue = function(a, b) {
       return d3.descending(a.value, b.value);
-    });
+    };
+    var sort = state.get('product')
+      ? function(a, b) { return cmpValue(a, b) || cmpName(a, b); }
+      : cmpName;
+    items.sort(sort);
 
     items.select('.color-swatch')
       .style('background-color', function(d) {
@@ -355,6 +394,13 @@
   }
 
   function createScale(values) {
+    if (!state.get('product')) {
+      return d3.scale.linear()
+        .domain([0, 1])
+        .range([colorbrewer.Blues[3][0], colorbrewer.Blues[3][2]])
+        .clamp(true);
+    }
+
     var extent = d3.extent(values);
     var min = extent[0];
     var max = Math.max(extent[1], 0);
@@ -393,18 +439,25 @@
 
     legend.classed('legend-invalid', false);
 
-    var data = scale.range().map(function(y) {
-        return {
-          color: y,
-          range: scale.invertExtent(y)
-        };
+    var data;
+    if (state.get('product')) {
+      data = scale.range().map(function(y) {
+          return {
+            color: y,
+            value: scale.invertExtent(y)
+          };
+        });
+      data.unshift({
+        color: NULL_FILL,
+        value: 'no data',
+        none: true
       });
-
-    data.unshift({
-      color: NULL_FILL,
-      range: ['no data'],
-      none: true
-    });
+    } else {
+      data = [
+        {color: NULL_FILL, value: 'no production'},
+        {color: colorbrewer.Blues[3][2], value: '1 or more products'},
+      ];
+    }
 
     var last = data.length - 1;
 
@@ -419,18 +472,13 @@
 
     steps
       .style('border-color', getter('color'))
-      .attr('title', function(d) {
-        return d.range
-          .map(Math.round)
-          .join(' to ');
-      })
       .select('.label')
         .text(function(d, i) {
-          return d.none
-            ? d.range[0]
-            : i === last
-              ? formatNumber(d.range[0]) + '+'
-              : formatNumber(d.range[0]);
+          return (typeof d.value === 'string')
+            ? d.value
+            : (i === last)
+              ? formatNumber(d.value[0]) + '+'
+              : formatNumber(d.value[0]);
         });
   }
 
@@ -442,7 +490,7 @@
   function getFields(regionId) {
     var fields = {
       region: 'Region',
-      value: 'Revenue',
+      value: 'Volume',
       featureId: 'id'
     };
     if (!regionId) {
@@ -645,9 +693,41 @@
 
   function createModel() {
     var model = {};
-    var dispatch = d3.dispatch('yearly');
+    var dispatch = d3.dispatch('yearly', 'products');
     var req;
     var previous;
+
+    var fixCommodity = (function() {
+      var groups = d3.values(eiti.commodities.groups);
+      var lookup = {};
+      groups.forEach(function(group) {
+        group.commodities.forEach(function(commodity) {
+          lookup[commodity.toLowerCase()] = commodity;
+        });
+      });
+
+      // console.log('lookup:', lookup);
+
+      return function(d) {
+        if (d.Commodity) {
+          // console.log('commodity:', d.Commodity);
+          return;
+        }
+
+        var product = d.Product;
+        if (!product) {
+          console.warn('no product:', d);
+          return;
+        }
+        var withoutUnits = product.match(/^[\w ]+/)[0].trim().toLowerCase();
+        var firstWord = withoutUnits.split(' ')[0];
+        d.Commodity = lookup[withoutUnits] || lookup[firstWord];
+        if (!d.Commodity) {
+          d.Commodity = 'Other';
+          console.log('other:', product, [withoutUnits, firstWord]);
+        }
+      };
+    })();
 
     model.load = function(state, done) {
       if (req) {
@@ -672,11 +752,16 @@
         : region.length === 2
           ? 'county/by-state/' + region + '/'
           : 'offshore/';
-      return path + 'revenues.tsv';
+      return path + 'production.tsv';
     }
 
     function applyFilters(data, state, done) {
       // console.log('applying filters:', state.toJS());
+
+      // XXX fix Commodity values
+      if (data.length && !data[0].Commodity) {
+        data.forEach(fixCommodity);
+      }
 
       var commodity = state.get('commodity');
       var group = state.get('group');
@@ -691,12 +776,23 @@
         });
       }
 
+      var products = unique(data, 'Product')
+        .sort(d3.ascending);
+      dispatch.products(products);
+
       var region = state.get('region');
       if (region && region.length === 3) {
         var fields = getFields(region);
         var regionName = REGION_ID_NAME[region];
         data = data.filter(function(d) {
           return d[fields.region] === regionName;
+        });
+      }
+
+      var product = state.get('product');
+      if (product) {
+        data = data.filter(function(d) {
+          return d.Product === product;
         });
       }
 
@@ -724,9 +820,9 @@
     var commodity = state.get('commodity') ||
       (state.get('group')
        ? eiti.commodities.groups[state.get('group')].name
-       : 'all commodities');
+       : 'All');
     var data = {
-      commodity: commodity.toLowerCase(),
+      commodity: commodity,
       region: REGION_ID_NAME[state.get('region') || 'US'],
       year: state.get('year')
     };
@@ -748,14 +844,34 @@
     };
   }
 
-  function toggleExpander(text) {
-    var id = this.getAttribute('aria-controls');
-    var attr = 'aria-expanded';
-    var controls = d3.select('#' + id);
-    var expanded = controls.attr(attr) !== 'true';
-    controls.attr(attr, expanded);
-    this.textContent = text[expanded];
-    this.setAttribute('aria-expanded', expanded);
+  function updateProductList(products) {
+    var select = root.select('[name=product]');
+
+    select.select('option:first-child')
+      .text(products.length > 1
+            ? 'All ' + products.length + ' products'
+            : products.length + eiti.format.pluralize(products.length, ' product'));
+
+    var options = select.selectAll('option.product')
+      .data(products, identity);
+    options.enter().append('option')
+      .attr('class', 'product')
+      .text(identity);
+    options.exit().remove();
+    return select;
+  }
+
+  function stateChanged(old, state, key) {
+    var prev = old.get(key) || '';
+    var next = state.get(key) || '';
+    return prev !== next;
+  }
+
+  function unique(data, key) {
+    return d3.nest()
+      .key(getter(key))
+      .entries(data)
+      .map(getter('key'));
   }
 
   function identity(d) {

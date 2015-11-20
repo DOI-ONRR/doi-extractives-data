@@ -75,34 +75,57 @@
   padding-right: $base-padding-lite;
 }
 
-.icon-gold:before { content: '\0041'; }
-.icon-close-x:before { content: '\0042'; }
-.icon-renewables:before { content: '\0043'; }
-.icon-book:before { content: '\0044'; }
-.icon-geo:before { content: '\0045'; }
+$icon-gold: '\0041';
+$icon-close-x: '\0042';
+$icon-renewables: '\0043';
+$icon-book: '\0044';
+$icon-geo: '\0045';
+$icon-chevron-sm: '\0046';
+$icon-copper: '\0047';
+$icon-map: '\0048';
+$icon-dash-lg: '\0049';
+$icon-dash-sm: '\004A';
+$icon-cloud: '\004B';
+$icon-plus-lg: '\004C';
+$icon-minerals: '\004D';
+$icon-oil: '\004E';
+$icon-wind: '\004F';
+$icon-coal: '\0050';
+$icon-hardrock: '\0051';
+$icon-plus-sm: '\0052';
+$icon-gas: '\0053';
+$icon-chevron-lg: '\0054';
+$icon-search: '\0055';
+$icon-iron: '\0057';
+
+.icon-gold:before { content: $icon-gold; }
+.icon-close-x:before { content: $icon-close-x; }
+.icon-renewables:before { content: $icon-renewables; }
+.icon-book:before { content: $icon-book; }
+.icon-geo:before { content: $icon-geo; }
 [class*='icon-chevron-sm-']:before,
 .icon-chevron-sm:before {
-  content: '\0046';
+  content: $icon-chevron-sm;
 }
-.icon-copper:before { content: '\0047'; }
-.icon-map:before { content: '\0048'; }
-.icon-dash-lg:before { content: '\0049'; }
-.icon-dash-sm:before { content: '\004A'; }
-.icon-cloud:before { content: '\004B'; }
-.icon-plus-lg:before { content: '\004C'; }
-.icon-minerals:before { content: '\004D'; }
-.icon-oil:before { content: '\004E'; }
-.icon-wind:before { content: '\004F'; }
-.icon-coal:before { content: '\0050'; }
-.icon-hardrock:before { content: '\0051'; }
-.icon-plus-sm:before { content: '\0052'; }
-.icon-gas:before { content: '\0053'; }
+.icon-copper:before { content: $icon-copper; }
+.icon-map:before { content: $icon-map; }
+.icon-dash-lg:before { content: $icon-dash-lg; }
+.icon-dash-sm:before { content: $icon-dash-sm; }
+.icon-cloud:before { content: $icon-cloud; }
+.icon-plus-lg:before { content: $icon-plus-lg; }
+.icon-minerals:before { content: $icon-minerals; }
+.icon-oil:before { content: $icon-oil; }
+.icon-wind:before { content: $icon-wind; }
+.icon-coal:before { content: $icon-coal; }
+.icon-hardrock:before { content: $icon-hardrock; }
+.icon-plus-sm:before { content: $icon-plus-sm; }
+.icon-gas:before { content: $icon-gas; }
 [class*='icon-chevron-lg-']:before,
 .icon-chevron-lg:before {
-  content: '\0054';
+  content: $icon-chevron-lg;
 }
-.icon-search:before { content: '\0055'; }
-.icon-iron:before { content: '\0057'; }
+.icon-search:before { content: $icon-search; }
+.icon-iron:before { content: $icon-iron; }
 .icon-chevron-sm-left:before,
 .icon-chevron-lg-left:before {
   @include rotate(180deg, 2);

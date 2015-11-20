@@ -25,8 +25,10 @@ REVENUE_FILES = \
 PRODUCTION_FILES = \
 	national/production.tsv \
 	state/production.tsv \
-	county/production.tsv \
-	offshore/production.tsv
+	county-products-by-state \
+	county-production-by-state \
+	offshore/production.tsv \
+	regional/production.tsv
 
 # Census-derived export figures
 EXPORT_FILES = \
@@ -121,11 +123,14 @@ offshore/revenues.tsv: $(input)onrr/offshore-revenues.tsv
 		$< > $@
 
 # offshore production volumes by region and area
-offshore/production.tsv: $(input)onrr/offshore-production.tsv
+offshore/production.tsv: $(input)onrr/regional-production.tsv
 	mkdir -p $(dir $@)
-	bin/group-offshore-production.js \
-		--keys Year/Region/Area/Commodity/Product \
-		$< > $@
+	$(tito) --read tsv $< \
+		| $(datex) --filter 'Shore === "Offshore"' \
+		| $(tito) --write tsv \
+		| bin/group-offshore-production.js \
+			--keys Year/Region/Area/Commodity/Product \
+			> $@
 
 # regional (state and offshore) revenues
 regional/revenues.tsv: state/revenues.tsv offshore/revenues.tsv
@@ -138,6 +143,19 @@ regional/revenues.tsv: state/revenues.tsv offshore/revenues.tsv
 		| bin/sum.js \
 			--group 'Year,Region,Commodity,Type' \
 			--sum 'Revenue' \
+			-o $@
+
+# regional (state and offshore) revenues
+regional/production.tsv: state/production.tsv offshore/production.tsv
+	mkdir -p $(dir $@)
+	bin/union-regions.js \
+		--onshore state/production.tsv \
+		--states $(input)geo/states.csv \
+		--offshore offshore/production.tsv \
+		--areas $(input)geo/offshore/areas.tsv \
+		| bin/sum.js \
+			--group 'Year,Region,Commodity,Product' \
+			--sum 'Volume' \
 			-o $@
 
 # regional (state and offshore) revenues by resource group
@@ -177,6 +195,25 @@ county-revenues-by-state: county/revenues.tsv
 			--path 'county/by-state/{{ State }}/revenues.tsv' \
 			--of tsv
 
+# divvy up county revenues into separate files by state
+county-production-by-state: county/production.tsv
+	$(tito) --read tsv $< \
+		| bin/divvy.js \
+			--path 'county/by-state/{{ State }}/production.tsv' \
+			--of tsv
+
+# divvy up county revenues into separate files by state
+county-products-by-state: county/production.tsv
+	$(tito) --read tsv $< \
+		| bin/sum.js \
+			--if ndjson \
+			--group 'Year,State,County,FIPS' \
+			--count 'Volume' \
+			--of ndjson \
+		| bin/divvy.js \
+			--path 'county/by-state/{{ State }}/products.tsv' \
+			--of tsv
+
 county-resource-revenues-by-state: county/revenues.tsv
 	$(tito) --read tsv $< \
 		| bin/add-resource-group.js \
@@ -193,9 +230,10 @@ county-resource-revenues-by-state: county/revenues.tsv
 			--of tsv
 
 # county production volumes
-county/production.tsv: $(input)onrr/county-production.tsv
+county/production.tsv: $(input)onrr/regional-production.tsv
 	mkdir -p $(dir $@)
 	$(tito) --read tsv $< \
+		| $(datex) --filter 'Region.length === 2' \
 		| bin/normalize-county-production.js \
 			--in-states $(input)geo/states.csv \
 		| $(tito) --write tsv > $@

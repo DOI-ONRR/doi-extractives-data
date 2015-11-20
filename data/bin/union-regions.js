@@ -80,13 +80,11 @@ async.parallel({
     .concat(data.offshore.map(function(d) {
       var area = d.Area || d.Region;
       var region = areaIdByName[area];
-      if (!region) {
-        throw new Error('No area id for: "' + area + '" in: ' + Object.keys(areaIdByName).join(', '));
-      }
       d.Region = region;
-      d.Offshore = 1;
       delete d.Area;
       return d;
+    }).filter(function(d) {
+      return d.Region;
     }));
 
   streamify(results)

@@ -84,6 +84,16 @@
   }
 }
 
+.container-left-6 {
+  @extend %container-side;
+
+  @include respond-to(medium-up) {
+
+    @include span-columns(6);
+
+  }
+}
+
 .container-left-4 {
   @extend %container-side;
 
@@ -111,6 +121,17 @@
   @include respond-to(medium-up) {
 
     @include span-columns(4);
+
+  }
+}
+
+.container-right-6 {
+  @extend %container-side;
+
+  @include respond-to(medium-up) {
+
+    @include span-columns(6);
+    @include omega();
 
   }
 }

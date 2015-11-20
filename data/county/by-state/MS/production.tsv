@@ -1,0 +1,314 @@
+Year	State	County	FIPS	Commodity	Product	Volume
+2006	MS	Clarke County	28023		Oil (bbl)	0.03
+2007	MS	Clarke County	28023		Oil (bbl)	0.03
+2013	MS	Lawrence County	28077		Oil (bbl)	0.05
+2012	MS	Lawrence County	28077		Oil (bbl)	0.22
+2005	MS	Clarke County	28023		Oil (bbl)	0.28
+2011	MS	Lawrence County	28077		Oil (bbl)	0.37
+2007	MS	Lawrence County	28077		Oil (bbl)	0.55
+2013	MS	Jasper County	28061		Oil (bbl)	0.61
+2010	MS	Lawrence County	28077		Oil (bbl)	0.67
+2008	MS	Lawrence County	28077		Oil (bbl)	0.86
+2009	MS	Lawrence County	28077		Oil (bbl)	1.01
+2012	MS	Jasper County	28061		Oil (bbl)	2.88
+2013	MS	Wilkinson County	28157		Gas (mcf)	4
+2014	MS	Jasper County	28061		Oil (bbl)	5.04
+2006	MS	Jasper County	28061		Oil (bbl)	5.91
+2011	MS	Jasper County	28061		Oil (bbl)	6.36
+2005	MS	Jasper County	28061		Oil (bbl)	7.32
+2010	MS	Jasper County	28061		Oil (bbl)	8.33
+2005	MS	Hancock County	28045		Oil (bbl)	8.37
+2007	MS	Jasper County	28061		Oil (bbl)	9.77
+2013	MS	Lawrence County	28077		Gas (mcf)	11.6
+2010	MS	Wilkinson County	28157		Gas (mcf)	14
+2011	MS	Wilkinson County	28157		Gas (mcf)	16
+2012	MS	Wilkinson County	28157		Gas (mcf)	16
+2009	MS	Jasper County	28061		Oil (bbl)	17.08
+2005	MS	Hancock County	28045		Gas (mcf)	18.26
+2014	MS	Monroe County	28095		Oil (bbl)	20.75
+2008	MS	Jasper County	28061		Oil (bbl)	30.73
+2013	MS	Monroe County	28095		Oil (bbl)	31.4
+2010	MS	Scott County	28123		Oil (bbl)	53
+2012	MS	Monroe County	28095		Oil (bbl)	55.4
+2011	MS	Monroe County	28095		Oil (bbl)	60.46
+2012	MS	Lawrence County	28077		Gas (mcf)	66
+2009	MS	Monroe County	28095		Oil (bbl)	81.57
+2006	MS	Monroe County	28095		Oil (bbl)	86.08
+2005	MS	Monroe County	28095		Oil (bbl)	86.81
+2010	MS	Monroe County	28095		Oil (bbl)	86.81
+2008	MS	Monroe County	28095		Oil (bbl)	89.87
+2014	MS	Lowndes County	28087		Oil (bbl)	95.42
+2011	MS	Lawrence County	28077		Gas (mcf)	112.54
+2007	MS	Monroe County	28095		Oil (bbl)	112.97
+2007	MS	Lawrence County	28077		Gas (mcf)	128.19
+2013	MS	Lowndes County	28087		Oil (bbl)	138.72
+2005	MS	Jefferson Davis County	28065		Oil (bbl)	154.35
+2014	MS	Jefferson Davis County	28065		Oil (bbl)	165.72
+2010	MS	Lamar County	28073		Oil (bbl)	168.77
+2010	MS	Lawrence County	28077		Gas (mcf)	189.13
+2008	MS	Lawrence County	28077		Gas (mcf)	217.12
+2013	MS	Jefferson Davis County	28065		Oil (bbl)	224.16
+2009	MS	Lamar County	28073		Oil (bbl)	236.68
+2011	MS	Lowndes County	28087		Oil (bbl)	237.71
+2012	MS	Lowndes County	28087		Oil (bbl)	247.14
+2009	MS	Lawrence County	28077		Gas (mcf)	264.11
+2008	MS	Lowndes County	28087		Oil (bbl)	321.81
+2006	MS	Jefferson Davis County	28065		Oil (bbl)	324.7
+2012	MS	Jefferson Davis County	28065		Oil (bbl)	343.55
+2009	MS	Lowndes County	28087		Oil (bbl)	356.24
+2010	MS	Lowndes County	28087		Oil (bbl)	378.86
+2008	MS	Lamar County	28073		Gas (mcf)	411.62
+2007	MS	Lowndes County	28087		Oil (bbl)	423.96
+2011	MS	Jefferson Davis County	28065		Oil (bbl)	431.58
+2006	MS	Covington County	28031		Oil (bbl)	471.59
+2006	MS	Lowndes County	28087		Oil (bbl)	488.64
+2005	MS	Lowndes County	28087		Oil (bbl)	502.86
+2005	MS	Covington County	28031		Oil (bbl)	511.19
+2007	MS	Jefferson Davis County	28065		Oil (bbl)	523.72
+2014	MS	Jones County	28067		Oil (bbl)	599.04
+2007	MS	Smith County	28129		Gas (mcf)	613
+2008	MS	Jones County	28067		Oil (bbl)	616.23
+2008	MS	Covington County	28031		Oil (bbl)	617.9
+2010	MS	Jefferson Davis County	28065		Oil (bbl)	670.23
+2010	MS	Covington County	28031		Oil (bbl)	677.52
+2009	MS	Wilkinson County	28157		Gas (mcf)	725
+2005	MS	Covington County	28031		Gas (mcf)	729.59
+2009	MS	Covington County	28031		Oil (bbl)	736.72
+2008	MS	Forrest County	28035		Oil (bbl)	740.19
+2014	MS	Covington County	28031		Oil (bbl)	747.1
+2007	MS	Covington County	28031		Oil (bbl)	748.11
+2011	MS	Covington County	28031		Oil (bbl)	787.3
+2013	MS	Covington County	28031		Oil (bbl)	798.59
+2006	MS	Covington County	28031		Gas (mcf)	799.81
+2008	MS	Jefferson Davis County	28065		Oil (bbl)	814.02
+2012	MS	Covington County	28031		Gas (mcf)	841.86
+2013	MS	Covington County	28031		Gas (mcf)	851.92
+2012	MS	Covington County	28031		Oil (bbl)	874.15
+2005	MS	Lamar County	28073		Gas (mcf)	879.85
+2007	MS	Pearl River County	28109		Gas (mcf)	900.14
+2010	MS	Covington County	28031		Gas (mcf)	911.5
+2009	MS	Jefferson Davis County	28065		Oil (bbl)	912.01
+2007	MS	Lamar County	28073		Gas (mcf)	921.01
+2006	MS	Lamar County	28073		Gas (mcf)	921.01
+2011	MS	Covington County	28031		Gas (mcf)	943.23
+2013	MS	Jones County	28067		Oil (bbl)	946.61
+2014	MS	Covington County	28031		Gas (mcf)	962.36
+2006	MS	Jones County	28067		Oil (bbl)	966.41
+2009	MS	Covington County	28031		Gas (mcf)	973.84
+2008	MS	Covington County	28031		Gas (mcf)	978.35
+2007	MS	Covington County	28031		Gas (mcf)	1070.78
+2007	MS	Forrest County	28035		Oil (bbl)	1073.08
+2007	MS	Jones County	28067		Oil (bbl)	1126.27
+2012	MS	Jones County	28067		Oil (bbl)	1131.38
+2010	MS	Jones County	28067		Oil (bbl)	1243.83
+2013	MS	Smith County	28129		Oil (bbl)	1286.87
+2011	MS	Jones County	28067		Oil (bbl)	1289.36
+2008	MS	Lamar County	28073		Oil (bbl)	1296.62
+2008	MS	Pearl River County	28109		Gas (mcf)	1380.29
+2009	MS	Jones County	28067		Oil (bbl)	1483.08
+2014	MS	Adams County	28001		Oil (bbl)	1974
+2007	MS	Smith County	28129		Oil (bbl)	2163
+2011	MS	Franklin County	28037		Gas (mcf)	2200
+2007	MS	Lamar County	28073		Oil (bbl)	2532
+2011	MS	Adams County	28001		Oil (bbl)	2563
+2014	MS	Franklin County	28037		Gas (mcf)	2591
+2012	MS	Franklin County	28037		Gas (mcf)	2675
+2009	MS	Franklin County	28037		Gas (mcf)	2692
+2010	MS	Franklin County	28037		Gas (mcf)	2777
+2006	MS	Pearl River County	28109		Gas (mcf)	2800.47
+2013	MS	Adams County	28001		Oil (bbl)	2817
+2005	MS	Jones County	28067		Oil (bbl)	2888.82
+2012	MS	Adams County	28001		Oil (bbl)	2895
+2008	MS	Pearl River County	28109		Oil (bbl)	2927.58
+2013	MS	Franklin County	28037		Gas (mcf)	3118
+2008	MS	Franklin County	28037		Gas (mcf)	3268
+2014	MS	Jasper County	28061		Gas (mcf)	3269.97
+2006	MS	Lamar County	28073		Oil (bbl)	3566.72
+2013	MS	Jasper County	28061		Gas (mcf)	3617.89
+2010	MS	Wilkinson County	28157		Oil (bbl)	3724
+2009	MS	Wilkinson County	28157		Oil (bbl)	3784
+2009	MS	Perry County	28111		Gas (mcf)	3855.76
+2014	MS	Wilkinson County	28157		Oil (bbl)	3875.08
+2011	MS	Wilkinson County	28157		Oil (bbl)	4030.4
+2008	MS	Perry County	28111		Gas (mcf)	4074.47
+2010	MS	Adams County	28001		Oil (bbl)	4088
+2006	MS	Forrest County	28035		Oil (bbl)	4095.44
+2013	MS	Wilkinson County	28157		Oil (bbl)	4256.53
+2008	MS	Wilkinson County	28157		Oil (bbl)	4315.23
+2007	MS	Franklin County	28037		Gas (mcf)	4371
+2005	MS	Jasper County	28061		Gas (mcf)	4401.97
+2012	MS	Jasper County	28061		Gas (mcf)	4669.01
+2012	MS	Wilkinson County	28157		Oil (bbl)	4720.68
+2014	MS	Forrest County	28035		Oil (bbl)	4769.03
+2005	MS	Lamar County	28073		Oil (bbl)	4846.36
+2014	MS	Pearl River County	28109		Oil (bbl)	4953.8
+2006	MS	Wilkinson County	28157		Oil (bbl)	5039.69
+2006	MS	Pearl River County	28109		Oil (bbl)	5050.54
+2007	MS	Pearl River County	28109		Oil (bbl)	5064.51
+2013	MS	Forrest County	28035		Oil (bbl)	5083.03
+2005	MS	Franklin County	28037		Gas (mcf)	5166
+2005	MS	Pearl River County	28109		Oil (bbl)	5173.39
+2013	MS	Smith County	28129		Gas (mcf)	5215.72
+2009	MS	Scott County	28123		Oil (bbl)	5499
+2011	MS	Jasper County	28061		Gas (mcf)	5527.15
+2006	MS	Franklin County	28037		Gas (mcf)	5607
+2007	MS	Perry County	28111		Gas (mcf)	5878.31
+2013	MS	Pearl River County	28109		Oil (bbl)	6312.08
+2005	MS	Pearl River County	28109		Gas (mcf)	6365.91
+2005	MS	Wilkinson County	28157		Oil (bbl)	6631.22
+2010	MS	Perry County	28111		Gas (mcf)	6763.39
+2010	MS	Jasper County	28061		Gas (mcf)	6819.39
+2014	MS	Jones County	28067		Gas (mcf)	6832.47
+2007	MS	Wilkinson County	28157		Oil (bbl)	7111.52
+2012	MS	Forrest County	28035		Oil (bbl)	7130.01
+2009	MS	Adams County	28001		Oil (bbl)	7494
+2008	MS	Scott County	28123		Oil (bbl)	7533
+2008	MS	Adams County	28001		Oil (bbl)	7704
+2011	MS	Perry County	28111		Gas (mcf)	7785.24
+2005	MS	Forrest County	28035		Oil (bbl)	7908.56
+2010	MS	Forrest County	28035		Oil (bbl)	8177.97
+2006	MS	Jasper County	28061		Gas (mcf)	8179.81
+2009	MS	Pearl River County	28109		Oil (bbl)	8609.92
+2011	MS	Forrest County	28035		Oil (bbl)	8797.93
+2009	MS	Forrest County	28035		Oil (bbl)	9028.67
+2014	MS	Jefferson Davis County	28065		Gas (mcf)	9311.62
+2013	MS	Jones County	28067		Gas (mcf)	9315.89
+2009	MS	Jasper County	28061		Gas (mcf)	9505.09
+2009	MS	Jones County	28067		Gas (mcf)	9505.09
+2006	MS	Perry County	28111		Gas (mcf)	9709.93
+2010	MS	Pearl River County	28109		Oil (bbl)	9830.22
+2007	MS	Scott County	28123		Oil (bbl)	10068
+2012	MS	Jones County	28067		Gas (mcf)	10173.01
+2012	MS	Pearl River County	28109		Oil (bbl)	10185.74
+2007	MS	Adams County	28001		Oil (bbl)	10196
+2006	MS	Scott County	28123		Oil (bbl)	11280
+2005	MS	Scott County	28123		Oil (bbl)	12047
+2012	MS	Perry County	28111		Gas (mcf)	12068.25
+2011	MS	Pearl River County	28109		Oil (bbl)	12166.17
+2013	MS	Perry County	28111		Gas (mcf)	12166.96
+2006	MS	Wilkinson County	28157		Gas (mcf)	12650.79
+2007	MS	Jasper County	28061		Gas (mcf)	12821.46
+2006	MS	Adams County	28001		Oil (bbl)	13009
+2011	MS	Wayne County	28153		Gas (mcf)	13305.51
+2010	MS	Wayne County	28153		Gas (mcf)	13992.72
+2009	MS	Wayne County	28153		Gas (mcf)	14410.38
+2010	MS	Jones County	28067		Gas (mcf)	14875.39
+2008	MS	Wayne County	28153		Gas (mcf)	14997.41
+2007	MS	Wilkinson County	28157		Gas (mcf)	15030.16
+2006	MS	Jones County	28067		Gas (mcf)	15123.81
+2013	MS	Wayne County	28153		Gas (mcf)	15164.79
+2007	MS	Wayne County	28153		Gas (mcf)	15237.08
+2012	MS	Wayne County	28153		Gas (mcf)	15286.95
+2014	MS	Wayne County	28153		Gas (mcf)	15503.28
+2005	MS	Adams County	28001		Oil (bbl)	15590
+2005	MS	Perry County	28111		Gas (mcf)	15656
+2006	MS	Wayne County	28153		Gas (mcf)	15684.71
+2011	MS	Jones County	28067		Gas (mcf)	16056.65
+2014	MS	Chickasaw County	28017		Gas (mcf)	16697
+2005	MS	Wayne County	28153		Gas (mcf)	16831.67
+2013	MS	Jefferson Davis County	28065		Gas (mcf)	17688.15
+2007	MS	Jones County	28067		Gas (mcf)	17786.46
+2008	MS	Jasper County	28061		Gas (mcf)	18470.61
+2013	MS	Chickasaw County	28017		Gas (mcf)	18576
+2008	MS	Jones County	28067		Gas (mcf)	18855.61
+2013	MS	Stone County	28131		Gas (mcf)	19871.63
+2005	MS	Jefferson Davis County	28065		Gas (mcf)	19906.23
+2014	MS	Smith County	28129		Oil (bbl)	20561.42
+2014	MS	Monroe County	28095		Gas (mcf)	22023.86
+2012	MS	Chickasaw County	28017		Gas (mcf)	22789
+2006	MS	Jefferson Davis County	28065		Gas (mcf)	24362.06
+2014	MS	Perry County	28111		Gas (mcf)	26683.85
+2011	MS	Monroe County	28095		Gas (mcf)	28409.34
+2012	MS	Monroe County	28095		Gas (mcf)	28554.14
+2005	MS	Jones County	28067		Gas (mcf)	29616.47
+2013	MS	Monroe County	28095		Gas (mcf)	29760.1
+2011	MS	Chickasaw County	28017		Gas (mcf)	30116.5
+2011	MS	Lamar County	28073		Oil (bbl)	30836.3
+2010	MS	Monroe County	28095		Gas (mcf)	31024.6
+2014	MS	Lamar County	28073		Oil (bbl)	33161.46
+2014	MS	Lowndes County	28087		Gas (mcf)	33240.2
+2010	MS	Chickasaw County	28017		Gas (mcf)	36066
+2005	MS	Chickasaw County	28017		Gas (mcf)	37591
+2005	MS	Wilkinson County	28157		Gas (mcf)	40080.56
+2013	MS	Wayne County	28153		Oil (bbl)	40822.14
+2014	MS	Wayne County	28153		Oil (bbl)	41132.62
+2012	MS	Stone County	28131		Gas (mcf)	45345
+2012	MS	Wayne County	28153		Oil (bbl)	45579.81
+2009	MS	Chickasaw County	28017		Gas (mcf)	46864.5
+2007	MS	Stone County	28131		Gas (mcf)	47304
+2008	MS	Wayne County	28153		Oil (bbl)	47614.82
+2011	MS	Wayne County	28153		Oil (bbl)	47650.98
+2007	MS	Wayne County	28153		Oil (bbl)	50802.47
+2013	MS	Lowndes County	28087		Gas (mcf)	51198.99
+2011	MS	Stone County	28131		Gas (mcf)	52091.63
+2012	MS	Lamar County	28073		Oil (bbl)	53929.95
+2012	MS	Jefferson Davis County	28065		Gas (mcf)	53947.83
+2006	MS	Wayne County	28153		Oil (bbl)	55743.29
+2009	MS	Wayne County	28153		Oil (bbl)	56402.16
+2011	MS	Lowndes County	28087		Gas (mcf)	57611.4
+2010	MS	Stone County	28131		Gas (mcf)	58223.63
+2009	MS	Stone County	28131		Gas (mcf)	59655
+2008	MS	Chickasaw County	28017		Gas (mcf)	59812
+2010	MS	Wayne County	28153		Oil (bbl)	60184.28
+2012	MS	Lowndes County	28087		Gas (mcf)	60599.42
+2008	MS	Wilkinson County	28157		Gas (mcf)	61489
+2008	MS	Stone County	28131		Gas (mcf)	62679.75
+2009	MS	Perry County	28111		Oil (bbl)	63638.35
+2008	MS	Lowndes County	28087		Gas (mcf)	63796.45
+2005	MS	Wayne County	28153		Oil (bbl)	70620.95
+2009	MS	Lowndes County	28087		Gas (mcf)	72446.69
+2006	MS	Chickasaw County	28017		Gas (mcf)	73691.5
+2012	MS	Franklin County	28037		Oil (bbl)	73990.33
+2010	MS	Franklin County	28037		Oil (bbl)	74254.16
+2007	MS	Chickasaw County	28017		Gas (mcf)	74423.5
+2011	MS	Franklin County	28037		Oil (bbl)	75920.83
+2010	MS	Perry County	28111		Oil (bbl)	75999.63
+2010	MS	Lowndes County	28087		Gas (mcf)	76188.68
+2014	MS	Forrest County	28035		Gas (mcf)	77073.48
+2009	MS	Franklin County	28037		Oil (bbl)	77415.68
+2006	MS	Stone County	28131		Gas (mcf)	78642.38
+2007	MS	Lowndes County	28087		Gas (mcf)	78860.69
+2014	MS	Smith County	28129		Gas (mcf)	79675.68
+2008	MS	Perry County	28111		Oil (bbl)	81068.21
+2011	MS	Perry County	28111		Oil (bbl)	82898.84
+2008	MS	Monroe County	28095		Gas (mcf)	83052.52
+2006	MS	Franklin County	28037		Oil (bbl)	83355.07
+2008	MS	Franklin County	28037		Oil (bbl)	83628.85
+2011	MS	Jefferson Davis County	28065		Gas (mcf)	83958.64
+2006	MS	Lowndes County	28087		Gas (mcf)	84536.19
+2014	MS	Pearl River County	28109		Gas (mcf)	85373.86
+2013	MS	Franklin County	28037		Oil (bbl)	85510
+2007	MS	Franklin County	28037		Oil (bbl)	85928.64
+2013	MS	Lamar County	28073		Oil (bbl)	87928.03
+2013	MS	Forrest County	28035		Gas (mcf)	92768.39
+2005	MS	Lowndes County	28087		Gas (mcf)	94064.76
+2009	MS	Monroe County	28095		Gas (mcf)	95665.07
+2006	MS	Monroe County	28095		Gas (mcf)	96135.55
+2005	MS	Franklin County	28037		Oil (bbl)	96539.22
+2007	MS	Monroe County	28095		Gas (mcf)	99399.06
+2005	MS	Monroe County	28095		Gas (mcf)	100230.97
+2005	MS	Stone County	28131		Gas (mcf)	100970.63
+2007	MS	Jefferson Davis County	28065		Gas (mcf)	104077.08
+2007	MS	Perry County	28111		Oil (bbl)	114941.13
+2006	MS	Perry County	28111		Oil (bbl)	116437.13
+2012	MS	Forrest County	28035		Gas (mcf)	117994.62
+2012	MS	Perry County	28111		Oil (bbl)	121410.86
+2011	MS	Forrest County	28035		Gas (mcf)	126231.65
+2009	MS	Forrest County	28035		Gas (mcf)	129722.3
+2014	MS	Franklin County	28037		Oil (bbl)	133270.66
+2010	MS	Jefferson Davis County	28065		Gas (mcf)	135316.18
+2008	MS	Forrest County	28035		Gas (mcf)	138361.12
+2009	MS	Pearl River County	28109		Gas (mcf)	141024.1
+2014	MS	Perry County	28111		Oil (bbl)	153375.33
+2013	MS	Pearl River County	28109		Gas (mcf)	154604.7
+2005	MS	Perry County	28111		Oil (bbl)	157527.82
+2008	MS	Jefferson Davis County	28065		Gas (mcf)	158858.98
+2007	MS	Forrest County	28035		Gas (mcf)	172183.1
+2010	MS	Forrest County	28035		Gas (mcf)	172678.01
+2009	MS	Jefferson Davis County	28065		Gas (mcf)	184058.51
+2013	MS	Perry County	28111		Oil (bbl)	188171.29
+2005	MS	Forrest County	28035		Gas (mcf)	227584.87
+2006	MS	Forrest County	28035		Gas (mcf)	267442.06
+2012	MS	Pearl River County	28109		Gas (mcf)	272615.63
+2010	MS	Pearl River County	28109		Gas (mcf)	294606.84
+2011	MS	Pearl River County	28109		Gas (mcf)	350448.55

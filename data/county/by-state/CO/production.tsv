@@ -1,0 +1,724 @@
+Year	State	County	FIPS	Commodity	Product	Volume
+2008	CO	Broomfield County	08014		Oil (bbl)	0.21
+2007	CO	Broomfield County	08014		Oil (bbl)	0.23
+2005	CO	Broomfield County	08014		Oil (bbl)	0.33
+2009	CO	Broomfield County	08014		Oil (bbl)	0.34
+2006	CO	Broomfield County	08014		Oil (bbl)	0.39
+2010	CO	Gunnison County	08051		Oil (bbl)	2.5
+2014	CO	Kit Carson County	08063		Gas (mcf)	3.46
+2007	CO	Gunnison County	08051		Oil (bbl)	3.74
+2008	CO	Broomfield County	08014		Gas (mcf)	4.6
+2007	CO	Broomfield County	08014		Gas (mcf)	4.69
+2009	CO	Broomfield County	08014		Gas (mcf)	4.79
+2011	CO	Arapahoe County	08005		Gas (mcf)	5.08
+2013	CO	Kit Carson County	08063		Gas (mcf)	5.51
+2006	CO	Bent County	08011		Oil (bbl)	5.62
+2005	CO	Broomfield County	08014		Gas (mcf)	6.58
+2006	CO	Fremont County	08043		Oil (bbl)	6.62
+2010	CO	Broomfield County	08014		Oil (bbl)	7.09
+2014	CO	Arapahoe County	08005		Oil (bbl)	8.01
+2006	CO	Broomfield County	08014		Gas (mcf)	8.68
+2013	CO	Delta County	08029		Oil (bbl)	8.93
+2012	CO	Kit Carson County	08063		Oil (bbl)	9
+2013	CO	Kit Carson County	08063		Oil (bbl)	10.52
+2011	CO	Kit Carson County	08063		Oil (bbl)	10.59
+2014	CO	Kit Carson County	08063		Oil (bbl)	11
+2005	CO	Bent County	08011		Oil (bbl)	11.16
+2009	CO	Arapahoe County	08005		Gas (mcf)	11.66
+2009	CO	Bent County	08011		Oil (bbl)	12.25
+2007	CO	Bent County	08011		Oil (bbl)	12.64
+2012	CO	Arapahoe County	08005		Gas (mcf)	13.1
+2008	CO	Arapahoe County	08005		Gas (mcf)	13.59
+2006	CO	Kit Carson County	08063		Oil (bbl)	13.89
+2009	CO	Kit Carson County	08063		Oil (bbl)	14.5
+2013	CO	Arapahoe County	08005		Oil (bbl)	14.81
+2010	CO	Kit Carson County	08063		Oil (bbl)	15.15
+2008	CO	Bent County	08011		Oil (bbl)	15.84
+2008	CO	Kit Carson County	08063		Oil (bbl)	15.96
+2010	CO	Arapahoe County	08005		Gas (mcf)	16.14
+2012	CO	Kit Carson County	08063		Gas (mcf)	17.03
+2006	CO	Kit Carson County	08063		Gas (mcf)	17.25
+2011	CO	Kit Carson County	08063		Gas (mcf)	18.07
+2007	CO	Kit Carson County	08063		Oil (bbl)	18.29
+2011	CO	Arapahoe County	08005		Oil (bbl)	18.36
+2005	CO	Kit Carson County	08063		Oil (bbl)	19.96
+2009	CO	Delta County	08029		Oil (bbl)	20.83
+2006	CO	Gunnison County	08051		Oil (bbl)	21.46
+2009	CO	Kit Carson County	08063		Gas (mcf)	22.39
+2012	CO	Delta County	08029		Oil (bbl)	22.87
+2005	CO	Kit Carson County	08063		Gas (mcf)	23.68
+2007	CO	Kit Carson County	08063		Gas (mcf)	24.88
+2010	CO	Kit Carson County	08063		Gas (mcf)	28.41
+2005	CO	Mesa County	08077		Oil (bbl)	28.5
+2010	CO	Delta County	08029		Oil (bbl)	28.83
+2008	CO	Kit Carson County	08063		Gas (mcf)	29.85
+2009	CO	San Miguel County	08113		Oil (bbl)	32
+2009	CO	La Plata County	08067		Oil (bbl)	33.17
+2007	CO	Fremont County	08043		Gas (mcf)	34.22
+2010	CO	Delta County	08029		Oil (bbl)	35
+2010	CO	Broomfield County	08014		Gas (mcf)	37.07
+2013	CO	La Plata County	08067		Oil (bbl)	38
+2011	CO	Gunnison County	08051		Oil (bbl)	39.95
+2010	CO	La Plata County	08067		Oil (bbl)	40.16
+2012	CO	Bent County	08011		Oil (bbl)	40.39
+2014	CO	La Plata County	08067		Oil (bbl)	40.55
+2014	CO	Delta County	08029		Oil (bbl)	41.55
+2012	CO	Arapahoe County	08005		Oil (bbl)	41.71
+2008	CO	Arapahoe County	08005		Oil (bbl)	42.47
+2007	CO	Arapahoe County	08005		Gas (mcf)	44.18
+2014	CO	Broomfield County	08014		Oil (bbl)	44.64
+2012	CO	Fremont County	08043		Oil (bbl)	45.98
+2006	CO	La Plata County	08067		Oil (bbl)	47.63
+2011	CO	La Plata County	08067		Oil (bbl)	47.87
+2010	CO	Arapahoe County	08005		Oil (bbl)	48.84
+2007	CO	Arapahoe County	08005		Oil (bbl)	48.95
+2014	CO	San Miguel County	08113		Oil (bbl)	49
+2007	CO	La Plata County	08067		Oil (bbl)	49.23
+2009	CO	Arapahoe County	08005		Oil (bbl)	50.13
+2011	CO	Delta County	08029		Oil (bbl)	51.61
+2008	CO	Delta County	08029		Oil (bbl)	52.92
+2006	CO	Arapahoe County	08005		Gas (mcf)	53.32
+2006	CO	Arapahoe County	08005		Oil (bbl)	53.32
+2012	CO	Gunnison County	08051		Oil (bbl)	53.5
+2014	CO	Fremont County	08043		Oil (bbl)	53.68
+2009	CO	Mesa County	08077		Oil (bbl)	54.67
+2011	CO	Fremont County	08043		Oil (bbl)	57.63
+2006	CO	Gunnison County	08051		Oil (bbl)	64
+2010	CO	Fremont County	08043		Oil (bbl)	65.43
+2012	CO	La Plata County	08067		Oil (bbl)	65.74
+2005	CO	La Plata County	08067		Oil (bbl)	66.18
+2013	CO	Fremont County	08043		Oil (bbl)	66.67
+2013	CO	Broomfield County	08014		Oil (bbl)	68
+2005	CO	Arapahoe County	08005		Gas (mcf)	68.58
+2005	CO	Arapahoe County	08005		Oil (bbl)	68.58
+2006	CO	Delta County	08029		Oil (bbl)	72.9
+2009	CO	Fremont County	08043		Oil (bbl)	73.04
+2007	CO	Fremont County	08043		Oil (bbl)	73.23
+2008	CO	Gunnison County	08051		Oil (bbl)	74
+2005	CO	Fremont County	08043		Oil (bbl)	74.86
+2008	CO	Fremont County	08043		Oil (bbl)	83.01
+2008	CO	La Plata County	08067		Oil (bbl)	84.41
+2005	CO	Delta County	08029		Oil (bbl)	85.93
+2007	CO	Delta County	08029		Oil (bbl)	87.19
+2011	CO	San Miguel County	08113		Oil (bbl)	96
+2008	CO	Fremont County	08043		Gas (mcf)	102.32
+2008	CO	San Miguel County	08113		Oil (bbl)	103
+2012	CO	Fremont County	08043		Gas (mcf)	104.05
+2011	CO	Fremont County	08043		Gas (mcf)	105.43
+2014	CO	Fremont County	08043		Gas (mcf)	107.51
+2011	CO	Bent County	08011		Oil (bbl)	110.42
+2010	CO	Moffat County	08081		Gas (mcf)	112
+2013	CO	Gunnison County	08051		Oil (bbl)	115.37
+2012	CO	Broomfield County	08014		Oil (bbl)	117.2
+2013	CO	Fremont County	08043		Gas (mcf)	118.91
+2010	CO	Fremont County	08043		Gas (mcf)	124.1
+2009	CO	Fremont County	08043		Gas (mcf)	125.48
+2013	CO	Bent County	08011		Oil (bbl)	127.03
+2010	CO	San Miguel County	08113		Oil (bbl)	132
+2014	CO	Bent County	08011		Oil (bbl)	132.07
+2005	CO	Gunnison County	08051		Oil (bbl)	138
+2010	CO	Mesa County	08077		Oil (bbl)	151.67
+2011	CO	Gunnison County	08051		Oil (bbl)	154
+2011	CO	Larimer County	08069		Gas (mcf)	171.55
+2012	CO	Larimer County	08069		Gas (mcf)	171.55
+2013	CO	Larimer County	08069		Gas (mcf)	171.55
+2014	CO	Larimer County	08069		Gas (mcf)	171.55
+2010	CO	Gunnison County	08051		Oil (bbl)	173
+2013	CO	San Miguel County	08113		Oil (bbl)	183
+2010	CO	Larimer County	08069		Gas (mcf)	185.85
+2012	CO	Delta County	08029		Oil (bbl)	186.26
+2013	CO	Jackson County	08057		Oil (bbl)	187
+2007	CO	Gunnison County	08051		Oil (bbl)	195
+2010	CO	Bent County	08011		Oil (bbl)	195.45
+2006	CO	Moffat County	08081		Oil (bbl)	214
+2011	CO	Broomfield County	08014		Oil (bbl)	214.77
+2011	CO	Prowers County	08099		Gas (mcf)	219.87
+2012	CO	San Miguel County	08113		Oil (bbl)	229
+2011	CO	Moffat County	08081		Gas (mcf)	269
+2007	CO	San Miguel County	08113		Oil (bbl)	279
+2006	CO	Mesa County	08077		Oil (bbl)	279.5
+2009	CO	Gunnison County	08051		Oil (bbl)	288
+2013	CO	Morgan County	08087		Gas (mcf)	290.25
+2008	CO	Mesa County	08077		Oil (bbl)	296.33
+2005	CO	Larimer County	08069		Gas (mcf)	343.1
+2006	CO	Larimer County	08069		Gas (mcf)	343.1
+2007	CO	Larimer County	08069		Gas (mcf)	343.1
+2008	CO	Larimer County	08069		Gas (mcf)	343.1
+2009	CO	Larimer County	08069		Gas (mcf)	343.1
+2005	CO	Morgan County	08087		Gas (mcf)	390
+2007	CO	Mesa County	08077		Oil (bbl)	440.67
+2012	CO	Gunnison County	08051		Oil (bbl)	475.48
+2008	CO	Gunnison County	08051		Oil (bbl)	490
+2012	CO	Jackson County	08057		Oil (bbl)	511
+2005	CO	Moffat County	08081		Oil (bbl)	577
+2011	CO	Morgan County	08087		Gas (mcf)	623
+2014	CO	Prowers County	08099		Gas (mcf)	743.81
+2014	CO	Morgan County	08087		Oil (bbl)	778
+2013	CO	Morgan County	08087		Oil (bbl)	791.25
+2006	CO	San Miguel County	08113		Oil (bbl)	856
+2014	CO	Gunnison County	08051		Oil (bbl)	863.3
+2014	CO	Broomfield County	08014		Gas (mcf)	965.63
+2011	CO	Delta County	08029		Oil (bbl)	1020.24
+2005	CO	Morgan County	08087		Oil (bbl)	1065
+2013	CO	Logan County	08075		Oil (bbl)	1135
+2014	CO	Delta County	08029		Oil (bbl)	1160.05
+2012	CO	Larimer County	08069		Oil (bbl)	1165.98
+2011	CO	Larimer County	08069		Oil (bbl)	1173.56
+2010	CO	Morgan County	08087		Oil (bbl)	1175.5
+2011	CO	Morgan County	08087		Oil (bbl)	1183.25
+2006	CO	Morgan County	08087		Oil (bbl)	1197
+2013	CO	Broomfield County	08014		Gas (mcf)	1223.46
+2013	CO	Larimer County	08069		Oil (bbl)	1228.88
+2012	CO	Logan County	08075		Oil (bbl)	1257
+2009	CO	Morgan County	08087		Oil (bbl)	1260
+2007	CO	Morgan County	08087		Oil (bbl)	1276
+2014	CO	Larimer County	08069		Oil (bbl)	1281.92
+2005	CO	Larimer County	08069		Oil (bbl)	1284.28
+2012	CO	Morgan County	08087		Oil (bbl)	1309.5
+2010	CO	Larimer County	08069		Oil (bbl)	1353.12
+2008	CO	Morgan County	08087		Oil (bbl)	1364
+2006	CO	Larimer County	08069		Oil (bbl)	1393.43
+2014	CO	Logan County	08075		Oil (bbl)	1427
+2005	CO	Logan County	08075		Gas (mcf)	1440
+2006	CO	Logan County	08075		Gas (mcf)	1440
+2007	CO	Logan County	08075		Gas (mcf)	1440
+2008	CO	Logan County	08075		Gas (mcf)	1440
+2009	CO	Logan County	08075		Gas (mcf)	1440
+2010	CO	Logan County	08075		Gas (mcf)	1440
+2011	CO	Logan County	08075		Gas (mcf)	1440
+2012	CO	Logan County	08075		Gas (mcf)	1440
+2013	CO	Logan County	08075		Gas (mcf)	1440
+2014	CO	Logan County	08075		Gas (mcf)	1440
+2011	CO	Logan County	08075		Oil (bbl)	1450
+2013	CO	Prowers County	08099		Gas (mcf)	1451.7
+2007	CO	Larimer County	08069		Oil (bbl)	1455.19
+2009	CO	Larimer County	08069		Oil (bbl)	1471.77
+2008	CO	Larimer County	08069		Oil (bbl)	1566.77
+2012	CO	Kiowa County	08061		Oil (bbl)	1674.88
+2009	CO	Logan County	08075		Oil (bbl)	1688
+2005	CO	Garfield County	08045		Oil (bbl)	1770
+2010	CO	Kiowa County	08061		Oil (bbl)	1822.75
+2011	CO	Broomfield County	08014		Gas (mcf)	1829.81
+2010	CO	Logan County	08075		Oil (bbl)	1839
+2012	CO	Broomfield County	08014		Gas (mcf)	1844.3
+2012	CO	Prowers County	08099		Gas (mcf)	2019.97
+2014	CO	San Miguel County	08113		Oil (bbl)	2121.6
+2005	CO	Logan County	08075		Oil (bbl)	2153
+2006	CO	Garfield County	08045		Oil (bbl)	2163
+2012	CO	Morgan County	08087		Gas (mcf)	2176.5
+2014	CO	Adams County	08001		Oil (bbl)	2249.47
+2013	CO	Routt County	08107		Oil (bbl)	2281
+2006	CO	Logan County	08075		Oil (bbl)	2361
+2013	CO	La Plata County	08067		Gas (mcf)	2367.33
+2009	CO	Moffat County	08081		Oil (bbl)	2436
+2005	CO	San Miguel County	08113		Oil (bbl)	2524
+2005	CO	Prowers County	08099		Gas (mcf)	2529.25
+2011	CO	Kiowa County	08061		Oil (bbl)	2662.88
+2008	CO	Logan County	08075		Oil (bbl)	2725
+2008	CO	Kiowa County	08061		Oil (bbl)	2857
+2007	CO	Logan County	08075		Oil (bbl)	2911
+2013	CO	Delta County	08029		Oil (bbl)	3022.41
+2011	CO	Mesa County	08077		Oil (bbl)	3072.76
+2009	CO	San Miguel County	08113		Oil (bbl)	3215.36
+2014	CO	Adams County	08001		Gas (mcf)	3216.11
+2009	CO	Kiowa County	08061		Oil (bbl)	3290
+2014	CO	Kiowa County	08061		Oil (bbl)	3323.87
+2013	CO	Kiowa County	08061		Oil (bbl)	3409.21
+2009	CO	Prowers County	08099		Gas (mcf)	3438.22
+2007	CO	Kiowa County	08061		Oil (bbl)	3512
+2008	CO	Moffat County	08081		Oil (bbl)	3558
+2007	CO	Garfield County	08045		Oil (bbl)	3705.83
+2006	CO	Kiowa County	08061		Oil (bbl)	3774
+2005	CO	Kiowa County	08061		Oil (bbl)	3777.86
+2007	CO	Prowers County	08099		Gas (mcf)	3845.11
+2014	CO	Routt County	08107		Oil (bbl)	3903
+2010	CO	Moffat County	08081		Oil (bbl)	4137
+2007	CO	San Miguel County	08113		Oil (bbl)	4141.54
+2013	CO	Routt County	08107		Gas (mcf)	4444
+2008	CO	Garfield County	08045		Oil (bbl)	4457.67
+2013	CO	Washington County	08121		Oil (bbl)	4480
+2011	CO	Moffat County	08081		Oil (bbl)	4664
+2014	CO	Washington County	08121		Oil (bbl)	5034
+2008	CO	Prowers County	08099		Gas (mcf)	5635.79
+2013	CO	San Miguel County	08113		Oil (bbl)	5638.96
+2011	CO	Garfield County	08045		Oil (bbl)	5647
+2012	CO	Washington County	08121		Oil (bbl)	5804
+2010	CO	Kiowa County	08061		Gas (mcf)	6014.4
+2005	CO	Rio Blanco County	08103		Oil (bbl)	6120.5
+2014	CO	Kiowa County	08061		Gas (mcf)	6166.22
+2010	CO	Garfield County	08045		Oil (bbl)	6211.83
+2008	CO	San Miguel County	08113		Oil (bbl)	6283.88
+2005	CO	Mesa County	08077		Oil (bbl)	6352.43
+2011	CO	Kiowa County	08061		Gas (mcf)	6644.12
+2010	CO	Prowers County	08099		Gas (mcf)	6759.44
+2010	CO	San Miguel County	08113		Oil (bbl)	6876.97
+2011	CO	Washington County	08121		Oil (bbl)	6978
+2013	CO	Kiowa County	08061		Gas (mcf)	7148.29
+2006	CO	San Miguel County	08113		Oil (bbl)	7177.29
+2012	CO	Kiowa County	08061		Gas (mcf)	7274.05
+2007	CO	Moffat County	08081		Oil (bbl)	7304
+2010	CO	Washington County	08121		Oil (bbl)	7522
+2012	CO	Mesa County	08077		Oil (bbl)	7946.24
+2009	CO	Kiowa County	08061		Gas (mcf)	8049.16
+2009	CO	Washington County	08121		Oil (bbl)	8333
+2008	CO	Kiowa County	08061		Gas (mcf)	8486.91
+2007	CO	Kiowa County	08061		Gas (mcf)	8709.02
+2011	CO	Delta County	08029		Gas (mcf)	9042.43
+2006	CO	Kiowa County	08061		Gas (mcf)	9509.38
+2006	CO	Washington County	08121		Oil (bbl)	9536
+2006	CO	Prowers County	08099		Gas (mcf)	10000.77
+2008	CO	Washington County	08121		Oil (bbl)	10139
+2014	CO	Bent County	08011		Gas (mcf)	10171.78
+2007	CO	Washington County	08121		Oil (bbl)	10407
+2005	CO	San Miguel County	08113		Oil (bbl)	10661.54
+2005	CO	Kiowa County	08061		Gas (mcf)	10746.4
+2014	CO	La Plata County	08067		Gas (mcf)	10873.22
+2006	CO	Mesa County	08077		Oil (bbl)	11103.48
+2005	CO	Washington County	08121		Oil (bbl)	11173
+2012	CO	Routt County	08107		Oil (bbl)	11573.46
+2006	CO	Routt County	08107		Oil (bbl)	12621.98
+2007	CO	Routt County	08107		Oil (bbl)	12849.78
+2006	CO	Routt County	08107		Gas (mcf)	12891
+2012	CO	Garfield County	08045		Oil (bbl)	12909.5
+2005	CO	Routt County	08107		Oil (bbl)	12995.74
+2008	CO	Routt County	08107		Oil (bbl)	13016.52
+2008	CO	Routt County	08107		Gas (mcf)	13096.35
+2009	CO	Garfield County	08045		Oil (bbl)	13156.83
+2007	CO	Las Animas County	08071		Gas (mcf)	13226
+2013	CO	Mesa County	08077		Oil (bbl)	13259.44
+2014	CO	Routt County	08107		Oil (bbl)	13302.41
+2013	CO	Delta County	08029		Gas (mcf)	13302.91
+2012	CO	San Miguel County	08113		Oil (bbl)	13349.33
+2009	CO	Routt County	08107		Gas (mcf)	13481.28
+2013	CO	Routt County	08107		Oil (bbl)	14158.4
+2012	CO	Mesa County	08077		Oil (bbl)	14385.11
+2011	CO	Routt County	08107		Oil (bbl)	14400.89
+2012	CO	Routt County	08107		Gas (mcf)	14544.12
+2009	CO	Routt County	08107		Oil (bbl)	14617.85
+2010	CO	Routt County	08107		Oil (bbl)	14792.37
+2010	CO	Routt County	08107		Gas (mcf)	15190.19
+2005	CO	Routt County	08107		Gas (mcf)	15196.15
+2007	CO	Routt County	08107		Gas (mcf)	15298.15
+2013	CO	Bent County	08011		Gas (mcf)	15451.92
+2011	CO	Routt County	08107		Gas (mcf)	15688.82
+2006	CO	Rio Blanco County	08103		Oil (bbl)	15771.5
+2013	CO	Baca County	08009		Oil (bbl)	16116
+2005	CO	Gunnison County	08051		Gas (mcf)	16324.13
+2011	CO	Mesa County	08077		Oil (bbl)	16369.23
+2014	CO	Baca County	08009		Oil (bbl)	16424.79
+2005	CO	Mesa County	08077		Gas (mcf)	17111.5
+2011	CO	San Miguel County	08113		Oil (bbl)	17844.34
+2014	CO	Cheyenne County	08017		Oil (bbl)	18042.99
+2014	CO	Jackson County	08057		Gas (mcf)	18600
+2013	CO	Cheyenne County	08017		Oil (bbl)	18861.47
+2010	CO	Mesa County	08077		Oil (bbl)	19169.59
+2008	CO	Moffat County	08081		Gas (mcf)	19213
+2012	CO	Cheyenne County	08017		Oil (bbl)	19559.2
+2012	CO	Baca County	08009		Oil (bbl)	20599.16
+2011	CO	Cheyenne County	08017		Oil (bbl)	20762.83
+2013	CO	Routt County	08107		Gas (mcf)	21044.52
+2010	CO	Baca County	08009		Oil (bbl)	21491.23
+2014	CO	Mesa County	08077		Oil (bbl)	22235.12
+2011	CO	Baca County	08009		Oil (bbl)	22266.36
+2010	CO	Cheyenne County	08017		Oil (bbl)	22266.37
+2007	CO	Moffat County	08081		Gas (mcf)	22279
+2011	CO	Bent County	08011		Gas (mcf)	22575.02
+2012	CO	Bent County	08011		Gas (mcf)	22587.47
+2010	CO	Dolores County	08033		Oil (bbl)	23935.42
+2009	CO	Cheyenne County	08017		Oil (bbl)	24006.82
+2011	CO	Dolores County	08033		Oil (bbl)	24155.36
+2014	CO	Mesa County	08077		Oil (bbl)	24244.62
+2013	CO	Mesa County	08077		Oil (bbl)	24308.59
+2008	CO	Cheyenne County	08017		Oil (bbl)	24439.85
+2012	CO	Delta County	08029		Gas (mcf)	24589.07
+2008	CO	Baca County	08009		Oil (bbl)	24801.69
+2007	CO	Baca County	08009		Oil (bbl)	24805.9
+2012	CO	Delta County	08029		Gas (mcf)	24898.28
+2009	CO	Dolores County	08033		Oil (bbl)	25743.32
+2007	CO	Cheyenne County	08017		Oil (bbl)	25793.28
+2012	CO	Dolores County	08033		Oil (bbl)	25821.27
+2009	CO	Baca County	08009		Oil (bbl)	25903.01
+2013	CO	Dolores County	08033		Oil (bbl)	26015.75
+2007	CO	Mesa County	08077		Oil (bbl)	26175.73
+2007	CO	Rio Blanco County	08103		Oil (bbl)	26376.5
+2014	CO	Delta County	08029		Gas (mcf)	26680.78
+2008	CO	Dolores County	08033		Oil (bbl)	28433.9
+2013	CO	Garfield County	08045		Oil (bbl)	28589
+2010	CO	Delta County	08029		Gas (mcf)	29874.03
+2006	CO	Baca County	08009		Oil (bbl)	30033.39
+2014	CO	Routt County	08107		Gas (mcf)	31519
+2006	CO	Cheyenne County	08017		Oil (bbl)	31585.46
+2010	CO	Bent County	08011		Gas (mcf)	31600.61
+2014	CO	Jackson County	08057		Oil (bbl)	32139
+2007	CO	Dolores County	08033		Oil (bbl)	32722.76
+2006	CO	Dolores County	08033		Oil (bbl)	32879.21
+2009	CO	Bent County	08011		Gas (mcf)	33235.99
+2009	CO	Delta County	08029		Gas (mcf)	33319.84
+2005	CO	Cheyenne County	08017		Oil (bbl)	33785.81
+2014	CO	Garfield County	08045		Oil (bbl)	34114.83
+2005	CO	Baca County	08009		Oil (bbl)	34247.82
+2014	CO	Routt County	08107		Gas (mcf)	34354.1
+2009	CO	Mesa County	08077		Oil (bbl)	34472.53
+2014	CO	Delta County	08029		Gas (mcf)	35427.32
+2007	CO	Bent County	08011		Gas (mcf)	36682.16
+2005	CO	Dolores County	08033		Oil (bbl)	37292.34
+2011	CO	Delta County	08029		Gas (mcf)	37533.32
+2008	CO	Bent County	08011		Gas (mcf)	38199.73
+2014	CO	Dolores County	08033		Oil (bbl)	38741.21
+2006	CO	Gunnison County	08051		Gas (mcf)	39926
+2008	CO	Mesa County	08077		Oil (bbl)	41208.01
+2005	CO	Bent County	08011		Gas (mcf)	43948.45
+2013	CO	Archuleta County	08007		Gas (mcf)	44145.67
+2006	CO	Bent County	08011		Gas (mcf)	44906.61
+2008	CO	Rio Blanco County	08103		Oil (bbl)	45804
+2005	CO	Delta County	08029		Gas (mcf)	47818.72
+2013	CO	Baca County	08009		Gas (mcf)	48364.71
+2014	CO	Baca County	08009		Gas (mcf)	48583.55
+2014	CO	Phillips County	08095		Gas (mcf)	49049
+2011	CO	Baca County	08009		Gas (mcf)	49827.3
+2008	CO	Delta County	08029		Gas (mcf)	53191.02
+2007	CO	Delta County	08029		Gas (mcf)	54251.79
+2012	CO	Baca County	08009		Gas (mcf)	57680.33
+2013	CO	Phillips County	08095		Gas (mcf)	58461
+2006	CO	Gunnison County	08051		Gas (mcf)	58512
+2009	CO	Moffat County	08081		Gas (mcf)	58658
+2009	CO	Mesa County	08077		Gas (mcf)	59158.76
+2012	CO	Jackson County	08057		Oil (bbl)	62195.08
+2010	CO	Baca County	08009		Gas (mcf)	62547.73
+2005	CO	Baca County	08009		Gas (mcf)	63424.56
+2009	CO	Rio Blanco County	08103		Oil (bbl)	64119.5
+2012	CO	Phillips County	08095		Gas (mcf)	64217
+2006	CO	Baca County	08009		Gas (mcf)	64341.51
+2006	CO	Delta County	08029		Gas (mcf)	65223.03
+2014	CO	Moffat County	08081		Oil (bbl)	67796
+2006	CO	Mesa County	08077		Gas (mcf)	68375
+2009	CO	Baca County	08009		Gas (mcf)	72546.38
+2011	CO	Jackson County	08057		Oil (bbl)	73115
+2010	CO	Jackson County	08057		Oil (bbl)	75415.21
+2013	CO	Gunnison County	08051		Gas (mcf)	76696.5
+2013	CO	Delta County	08029		Gas (mcf)	76929.45
+2010	CO	Rio Blanco County	08103		Oil (bbl)	76991.5
+2012	CO	Gunnison County	08051		Gas (mcf)	77251.5
+2014	CO	Washington County	08121		Gas (mcf)	80132.03
+2009	CO	Jackson County	08057		Oil (bbl)	80474.28
+2014	CO	Jackson County	08057		Gas (mcf)	80614.95
+2008	CO	Jackson County	08057		Oil (bbl)	80871.64
+2010	CO	Mesa County	08077		Gas (mcf)	82358.04
+2008	CO	Baca County	08009		Gas (mcf)	83032.49
+2007	CO	Jackson County	08057		Oil (bbl)	84034.67
+2007	CO	Baca County	08009		Gas (mcf)	85314.76
+2013	CO	Washington County	08121		Gas (mcf)	86830.09
+2006	CO	Moffat County	08081		Gas (mcf)	87936
+2005	CO	Washington County	08121		Gas (mcf)	88820.19
+2013	CO	Montezuma County	08083		Oil (bbl)	88845.16
+2012	CO	Washington County	08121		Gas (mcf)	90276.13
+2006	CO	Weld County	08123		Oil (bbl)	90811.42
+2007	CO	Weld County	08123		Oil (bbl)	92228.57
+2012	CO	Moffat County	08081		Oil (bbl)	94540
+2006	CO	Jackson County	08057		Oil (bbl)	95786.35
+2008	CO	Washington County	08121		Gas (mcf)	98407.71
+2011	CO	Washington County	08121		Gas (mcf)	98972
+2005	CO	Jackson County	08057		Oil (bbl)	99632.33
+2006	CO	Las Animas County	08071		Gas (mcf)	100279
+2012	CO	Montezuma County	08083		Oil (bbl)	101025.28
+2008	CO	Rio Blanco County	08103		Sodium Bi-Carbonate (tons)	102512
+2005	CO	Weld County	08123		Oil (bbl)	102632.89
+2006	CO	Washington County	08121		Gas (mcf)	104565.48
+2013	CO	Jackson County	08057		Oil (bbl)	108482.03
+2014	CO	Moffat County	08081		Gas (mcf)	108976
+2011	CO	Rio Blanco County	08103		Oil (bbl)	110789
+2013	CO	Moffat County	08081		Oil (bbl)	111454
+2010	CO	Washington County	08121		Gas (mcf)	111829.77
+2014	CO	Cheyenne County	08017		Gas (mcf)	113798.38
+2009	CO	Washington County	08121		Gas (mcf)	114121.73
+2011	CO	Montezuma County	08083		Oil (bbl)	114522.54
+2010	CO	Montezuma County	08083		Oil (bbl)	115936.41
+2007	CO	Washington County	08121		Gas (mcf)	120001.58
+2013	CO	Cheyenne County	08017		Gas (mcf)	123289.23
+2014	CO	Montezuma County	08083		Oil (bbl)	123737.95
+2014	CO	Jackson County	08057		Oil (bbl)	125039.25
+2012	CO	Moffat County	08081		Gas (mcf)	129901
+2012	CO	Cheyenne County	08017		Gas (mcf)	130600.14
+2009	CO	Montezuma County	08083		Oil (bbl)	133505.52
+2010	CO	Cheyenne County	08017		Gas (mcf)	133774.71
+2009	CO	Cheyenne County	08017		Gas (mcf)	135645.71
+2013	CO	Rio Blanco County	08103		Oil (bbl)	136777
+2014	CO	Rio Blanco County	08103		Oil (bbl)	137606
+2011	CO	Cheyenne County	08017		Gas (mcf)	141258.08
+2009	CO	Weld County	08123		Oil (bbl)	148851.02
+2008	CO	Montezuma County	08083		Oil (bbl)	153053.46
+2008	CO	Cheyenne County	08017		Gas (mcf)	153061.57
+2007	CO	Cheyenne County	08017		Gas (mcf)	155106.79
+2007	CO	Montezuma County	08083		Oil (bbl)	167489.15
+2008	CO	Weld County	08123		Oil (bbl)	179318.39
+2008	CO	Mesa County	08077		Gas (mcf)	179368.98
+2011	CO	San Miguel County	08113		Gas (mcf)	186523
+2006	CO	Cheyenne County	08017		Gas (mcf)	192555.48
+2012	CO	Rio Blanco County	08103		Oil (bbl)	193991.5
+2007	CO	Moffat County	08081		Oil (bbl)	197354.58
+2014	CO	Moffat County	08081		Oil (bbl)	200702.97
+2005	CO	Montezuma County	08083		Oil (bbl)	201016.03
+2014	CO	Archuleta County	08007		Gas (mcf)	202762.78
+2005	CO	Moffat County	08081		Oil (bbl)	202994.1
+2006	CO	Montezuma County	08083		Oil (bbl)	205965.99
+2006	CO	Moffat County	08081		Oil (bbl)	206752.12
+2007	CO	Gunnison County	08051		Gas (mcf)	207447.88
+2007	CO	Mesa County	08077		Gas (mcf)	208146.16
+2011	CO	Weld County	08123		Oil (bbl)	210415.57
+2008	CO	Moffat County	08081		Oil (bbl)	210955.66
+2005	CO	Cheyenne County	08017		Gas (mcf)	212516.1
+2008	CO	La Plata County	08067		Coal (tons)	212605
+2005	CO	Las Animas County	08071		Gas (mcf)	215957
+2007	CO	Gunnison County	08051		Gas (mcf)	226749
+2010	CO	Weld County	08123		Oil (bbl)	227087.08
+2009	CO	Moffat County	08081		Oil (bbl)	231464.48
+2010	CO	Moffat County	08081		Oil (bbl)	232549.77
+2012	CO	San Miguel County	08113		Gas (mcf)	234207
+2013	CO	Moffat County	08081		Gas (mcf)	245634
+2011	CO	Moffat County	08081		Oil (bbl)	249925.7
+2013	CO	Moffat County	08081		Oil (bbl)	252585.89
+2006	CO	Garfield County	08045		Coal (tons)	262976
+2012	CO	Moffat County	08081		Oil (bbl)	266232.07
+2013	CO	Jackson County	08057		Gas (mcf)	277576.62
+2009	CO	Jackson County	08057		Gas (mcf)	281032.7
+2005	CO	Garfield County	08045		Oil (bbl)	300192.33
+2010	CO	San Miguel County	08113		Gas (mcf)	310540
+2014	CO	Gunnison County	08051		Gas (mcf)	316740
+2005	CO	Moffat County	08081		Gas (mcf)	322416
+2006	CO	Garfield County	08045		Oil (bbl)	349452.42
+2007	CO	Garfield County	08045		Oil (bbl)	360683.02
+2009	CO	Gunnison County	08051		Gas (mcf)	381287
+2012	CO	Weld County	08123		Oil (bbl)	385595.46
+2008	CO	Gunnison County	08051		Gas (mcf)	390307.94
+2011	CO	Jackson County	08057		Gas (mcf)	407863.12
+2008	CO	Gunnison County	08051		Gas (mcf)	431682
+2008	CO	Garfield County	08045		Oil (bbl)	445429.68
+2011	CO	Gunnison County	08051		Gas (mcf)	462253
+2010	CO	Garfield County	08045		Oil (bbl)	466859.88
+2014	CO	San Miguel County	08113		Gas (mcf)	480821
+2009	CO	Garfield County	08045		Oil (bbl)	481000.16
+2013	CO	Garfield County	08045		Oil (bbl)	481264.88
+2014	CO	Garfield County	08045		Oil (bbl)	511471.52
+2009	CO	San Miguel County	08113		Gas (mcf)	512120
+2009	CO	Gunnison County	08051		Gas (mcf)	513915.17
+2010	CO	Gunnison County	08051		Gas (mcf)	553045
+2012	CO	Jackson County	08057		Gas (mcf)	596606.02
+2012	CO	Garfield County	08045		Oil (bbl)	625867.45
+2013	CO	Weld County	08123		Oil (bbl)	626074.72
+2011	CO	Mesa County	08077		Gas (mcf)	626784.54
+2011	CO	Garfield County	08045		Oil (bbl)	643848.8
+2010	CO	Jackson County	08057		Gas (mcf)	670074.29
+2013	CO	San Miguel County	08113		Gas (mcf)	674414
+2006	CO	Jackson County	08057		Gas (mcf)	676149.67
+2007	CO	Garfield County	08045		Gas (mcf)	695910.84
+2006	CO	Garfield County	08045		Gas (mcf)	697270
+2005	CO	Garfield County	08045		Gas (mcf)	751219
+2011	CO	Gunnison County	08051		Gas (mcf)	791059.24
+2005	CO	Yuma County	08125		Gas (mcf)	801309.37
+2007	CO	Jackson County	08057		Gas (mcf)	806182.64
+2005	CO	Jackson County	08057		Gas (mcf)	820479.66
+2008	CO	Jackson County	08057		Gas (mcf)	821960.77
+2008	CO	San Miguel County	08113		Gas (mcf)	843487
+2010	CO	Gunnison County	08051		Gas (mcf)	869256.77
+2006	CO	Yuma County	08125		Gas (mcf)	937507.02
+2014	CO	Yuma County	08125		Gas (mcf)	971973
+2013	CO	Yuma County	08125		Gas (mcf)	1058515.43
+2012	CO	Yuma County	08125		Gas (mcf)	1231429.43
+2013	CO	Gunnison County	08051		Gas (mcf)	1289891.57
+2012	CO	Gunnison County	08051		Gas (mcf)	1306737
+2007	CO	San Miguel County	08113		Gas (mcf)	1327303
+2011	CO	Yuma County	08125		Gas (mcf)	1369732.6
+2014	CO	Weld County	08123		Oil (bbl)	1375280.37
+2007	CO	Yuma County	08125		Gas (mcf)	1416011.17
+2007	CO	Rio Blanco County	08103		Coal (tons)	1460127
+2010	CO	Yuma County	08125		Gas (mcf)	1479056.83
+2009	CO	Yuma County	08125		Gas (mcf)	1537712.77
+2014	CO	Archuleta County	08007		Gas (mcf)	1607571.26
+2012	CO	Mesa County	08077		Gas (mcf)	1658591.43
+2006	CO	San Miguel County	08113		Gas (mcf)	1709593
+2007	CO	Weld County	08123		Gas (mcf)	1716639.46
+2008	CO	Garfield County	08045		Gas (mcf)	1793489.52
+2013	CO	Archuleta County	08007		Gas (mcf)	1794097.64
+2008	CO	Yuma County	08125		Gas (mcf)	1813489.9
+2005	CO	Rio Blanco County	08103		Gas (mcf)	1861988.5
+2012	CO	Archuleta County	08007		Gas (mcf)	1870823.27
+2012	CO	Weld County	08123		Gas (mcf)	1969727.72
+2009	CO	Weld County	08123		Gas (mcf)	2014337.45
+2006	CO	Weld County	08123		Gas (mcf)	2015951.07
+2011	CO	Weld County	08123		Gas (mcf)	2071560.43
+2008	CO	Weld County	08123		Gas (mcf)	2140198.07
+2010	CO	Weld County	08123		Gas (mcf)	2164777.71
+2011	CO	Archuleta County	08007		Gas (mcf)	2204138.95
+2013	CO	Weld County	08123		Gas (mcf)	2268221.35
+2005	CO	Weld County	08123		Gas (mcf)	2326339.75
+2014	CO	Moffat County	08081		Coal (tons)	2399673.95
+2011	CO	Garfield County	08045		Gas (mcf)	2401230.53
+2013	CO	Rio Blanco County	08103		Oil (bbl)	2414439.64
+2014	CO	Gunnison County	08051		Gas (mcf)	2431958.67
+2014	CO	Rio Blanco County	08103		Oil (bbl)	2504563.41
+2010	CO	Rio Blanco County	08103		Oil (bbl)	2536813.35
+2012	CO	Rio Blanco County	08103		Oil (bbl)	2560864.37
+2011	CO	Rio Blanco County	08103		Oil (bbl)	2606227.38
+2010	CO	Archuleta County	08007		Gas (mcf)	2617033.1
+2009	CO	Rio Blanco County	08103		Oil (bbl)	2659873.71
+2008	CO	Archuleta County	08007		Gas (mcf)	2681825.85
+2012	CO	Rio Blanco County	08103		Coal (tons)	2743564
+2007	CO	Archuleta County	08007		Gas (mcf)	2792273.71
+2006	CO	Archuleta County	08007		Gas (mcf)	2843776
+2005	CO	San Miguel County	08113		Gas (mcf)	2872395
+2009	CO	Archuleta County	08007		Gas (mcf)	2887849.72
+2008	CO	Rio Blanco County	08103		Oil (bbl)	2890334.19
+2006	CO	Rio Blanco County	08103		Oil (bbl)	2970648.34
+2005	CO	Rio Blanco County	08103		Oil (bbl)	2974167.24
+2009	CO	Rio Blanco County	08103		Coal (tons)	2993675
+2013	CO	Moffat County	08081		Coal (tons)	3004099.08
+2007	CO	Rio Blanco County	08103		Oil (bbl)	3035579.13
+2014	CO	Las Animas County	08071		Gas (mcf)	3066334.01
+2010	CO	Rio Blanco County	08103		Coal (tons)	3074981
+2005	CO	Las Animas County	08071		Gas (mcf)	3081193.9
+2013	CO	Rio Blanco County	08103		Coal (tons)	3093859.92
+2010	CO	Delta County	08029		Coal (tons)	3116270.67
+2010	CO	Moffat County	08081		Coal (tons)	3174890
+2009	CO	Garfield County	08045		Gas (mcf)	3181171.74
+2014	CO	San Miguel County	08113		Gas (mcf)	3217123.24
+2008	CO	Rio Blanco County	08103		Coal (tons)	3242108
+2005	CO	Archuleta County	08007		Gas (mcf)	3261806.51
+2011	CO	Moffat County	08081		Coal (tons)	3328554
+2013	CO	Delta County	08029		Coal (tons)	3335957.54
+2013	CO	Las Animas County	08071		Gas (mcf)	3356607.45
+2012	CO	Moffat County	08081		Coal (tons)	3360036
+2009	CO	Delta County	08029		Coal (tons)	3374982.11
+2010	CO	Garfield County	08045		Gas (mcf)	3436940.46
+2013	CO	San Miguel County	08113		Gas (mcf)	3465118.56
+2014	CO	Rio Blanco County	08103		Coal (tons)	3481849.05
+2006	CO	Las Animas County	08071		Gas (mcf)	3572400.5
+2012	CO	Las Animas County	08071		Gas (mcf)	3663905.07
+2011	CO	Las Animas County	08071		Gas (mcf)	3706621.5
+2011	CO	Delta County	08029		Coal (tons)	3713026.54
+2011	CO	Rio Blanco County	08103		Coal (tons)	3729713
+2010	CO	Las Animas County	08071		Gas (mcf)	3865966.64
+2014	CO	Huerfano County	08055		Gas (mcf)	4037516.31
+2007	CO	Las Animas County	08071		Gas (mcf)	4075809.04
+2009	CO	Moffat County	08081		Coal (tons)	4158935
+2009	CO	Las Animas County	08071		Gas (mcf)	4221540.56
+2013	CO	Huerfano County	08055		Gas (mcf)	4342331.14
+2012	CO	Huerfano County	08055		Gas (mcf)	4386155.7
+2008	CO	Las Animas County	08071		Gas (mcf)	4492586.18
+2012	CO	San Miguel County	08113		Gas (mcf)	4563276.42
+2014	CO	Weld County	08123		Gas (mcf)	4612454.84
+2006	CO	Delta County	08029		Coal (tons)	4893433.88
+2012	CO	Delta County	08029		Coal (tons)	4964647.88
+2011	CO	Huerfano County	08055		Gas (mcf)	4984314.93
+2007	CO	Delta County	08029		Coal (tons)	5116763.46
+2008	CO	Delta County	08029		Coal (tons)	5171524.27
+2005	CO	Delta County	08029		Coal (tons)	5265388.14
+2014	CO	Mesa County	08077		Gas (mcf)	5301092.9
+2008	CO	Moffat County	08081		Coal (tons)	5371601
+2010	CO	San Miguel County	08113		Gas (mcf)	5700832.87
+2005	CO	Mesa County	08077		Gas (mcf)	5800416.31
+2011	CO	San Miguel County	08113		Gas (mcf)	5861915.54
+2013	CO	Gunnison County	08051		Coal (tons)	6045511.46
+2010	CO	Huerfano County	08055		Gas (mcf)	6378267.72
+2009	CO	Gunnison County	08051		Coal (tons)	6419159.89
+2013	CO	Mesa County	08077		Gas (mcf)	6421955.67
+2010	CO	Gunnison County	08051		Coal (tons)	6770923.33
+2007	CO	Moffat County	08081		Coal (tons)	7110106
+2008	CO	Gunnison County	08051		Coal (tons)	7140447.73
+2007	CO	Rio Blanco County	08103		Gas (mcf)	7164744
+2011	CO	Gunnison County	08051		Coal (tons)	7245772.46
+2006	CO	Mesa County	08077		Gas (mcf)	7257169.94
+2005	CO	Moffat County	08081		Coal (tons)	7274125
+2008	CO	Huerfano County	08055		Gas (mcf)	7361042.5
+2006	CO	Rio Blanco County	08103		Gas (mcf)	7467935
+2009	CO	Huerfano County	08055		Gas (mcf)	7564971.71
+2007	CO	Huerfano County	08055		Gas (mcf)	7585442.23
+2006	CO	Moffat County	08081		Coal (tons)	7799334
+2006	CO	Gunnison County	08051		Coal (tons)	7856183.12
+2005	CO	Gunnison County	08051		Coal (tons)	8063367.86
+2007	CO	Gunnison County	08051		Coal (tons)	8089480.54
+2012	CO	Gunnison County	08051		Coal (tons)	8123963.12
+2009	CO	San Miguel County	08113		Gas (mcf)	8234371.26
+2008	CO	Rio Blanco County	08103		Gas (mcf)	8627539.5
+2006	CO	Huerfano County	08055		Gas (mcf)	8647717.04
+2005	CO	Huerfano County	08055		Gas (mcf)	10119998.75
+2009	CO	Rio Blanco County	08103		Gas (mcf)	10584653.5
+2012	CO	Garfield County	08045		Gas (mcf)	10796966
+2014	CO	La Plata County	08067		Gas (mcf)	11043975.8
+2007	CO	San Miguel County	08113		Gas (mcf)	11152290.86
+2013	CO	La Plata County	08067		Gas (mcf)	11216123.2
+2012	CO	La Plata County	08067		Gas (mcf)	11399123.7
+2011	CO	La Plata County	08067		Gas (mcf)	12418650.75
+2014	CO	Moffat County	08081		Gas (mcf)	12673368.5
+2008	CO	San Miguel County	08113		Gas (mcf)	12702972.08
+2010	CO	Rio Blanco County	08103		Gas (mcf)	13212923.5
+2008	CO	La Plata County	08067		Gas (mcf)	13237454.03
+2007	CO	La Plata County	08067		Gas (mcf)	13340316.97
+2007	CO	Moffat County	08081		Gas (mcf)	13895043.81
+2010	CO	Mesa County	08077		Gas (mcf)	14027268.22
+2005	CO	La Plata County	08067		Gas (mcf)	14090021.92
+2013	CO	Mesa County	08077		Gas (mcf)	14218784.06
+2006	CO	La Plata County	08067		Gas (mcf)	14228103.61
+2010	CO	La Plata County	08067		Gas (mcf)	14232342.79
+2013	CO	Moffat County	08081		Gas (mcf)	14288206.7
+2007	CO	Mesa County	08077		Gas (mcf)	14410569.94
+2014	CO	Mesa County	08077		Gas (mcf)	14502136.55
+2009	CO	La Plata County	08067		Gas (mcf)	14529242.93
+2011	CO	Mesa County	08077		Gas (mcf)	14613454.22
+2012	CO	Moffat County	08081		Gas (mcf)	14963004.46
+2006	CO	San Miguel County	08113		Gas (mcf)	15134186.32
+2009	CO	Moffat County	08081		Gas (mcf)	15351856.69
+2005	CO	San Miguel County	08113		Gas (mcf)	15715072.29
+2009	CO	Mesa County	08077		Gas (mcf)	15876580.57
+2011	CO	Moffat County	08081		Gas (mcf)	16469261.63
+2005	CO	Moffat County	08081		Gas (mcf)	17074207.02
+2014	CO	Garfield County	08045		Gas (mcf)	17260230.28
+2006	CO	Moffat County	08081		Gas (mcf)	17285534.97
+2010	CO	Moffat County	08081		Gas (mcf)	17331426.52
+2008	CO	Moffat County	08081		Gas (mcf)	17518500.36
+2012	CO	Mesa County	08077		Gas (mcf)	18047493.59
+2008	CO	Mesa County	08077		Gas (mcf)	18456446.03
+2011	CO	Rio Blanco County	08103		Gas (mcf)	19075638.5
+2013	CO	Garfield County	08045		Gas (mcf)	24327566.38
+2014	CO	Rio Blanco County	08103		Gas (mcf)	32387747.5
+2012	CO	Rio Blanco County	08103		Gas (mcf)	37859002
+2013	CO	Rio Blanco County	08103		Gas (mcf)	43338018
+2005	CO	Rio Blanco County	08103		Gas (mcf)	51999161.74
+2006	CO	Rio Blanco County	08103		Gas (mcf)	61245920.48
+2007	CO	Rio Blanco County	08103		Gas (mcf)	63971235.99
+2008	CO	Rio Blanco County	08103		Gas (mcf)	65665065.42
+2013	CO	Rio Blanco County	08103		Gas (mcf)	73308195.07
+2009	CO	Rio Blanco County	08103		Gas (mcf)	82120723.74
+2014	CO	Rio Blanco County	08103		Gas (mcf)	83319632.48
+2012	CO	Rio Blanco County	08103		Gas (mcf)	92330487.84
+2005	CO	Garfield County	08045		Gas (mcf)	96769735.01
+2010	CO	Rio Blanco County	08103		Gas (mcf)	104530327.16
+2011	CO	Rio Blanco County	08103		Gas (mcf)	105916565.85
+2006	CO	Garfield County	08045		Gas (mcf)	110931358.62
+2007	CO	Garfield County	08045		Gas (mcf)	122102389.62
+2005	CO	Dolores County	08033		Gas (mcf)	131572648.1
+2005	CO	Montezuma County	08083		Gas (mcf)	133311952.77
+2007	CO	Dolores County	08033		Gas (mcf)	135489449.2
+2006	CO	Dolores County	08033		Gas (mcf)	135936815.61
+2007	CO	Montezuma County	08083		Gas (mcf)	136690431.93
+2006	CO	Montezuma County	08083		Gas (mcf)	136944763.01
+2008	CO	Montezuma County	08083		Gas (mcf)	143546783.52
+2008	CO	Garfield County	08045		Gas (mcf)	151517705.22
+2013	CO	Montezuma County	08083		Gas (mcf)	151579521.05
+2014	CO	Montezuma County	08083		Gas (mcf)	151861228.3
+2009	CO	Garfield County	08045		Gas (mcf)	153673513.79
+2010	CO	Garfield County	08045		Gas (mcf)	154923001.22
+2012	CO	Montezuma County	08083		Gas (mcf)	155144319.28
+2009	CO	Montezuma County	08083		Gas (mcf)	158953158.47
+2010	CO	Montezuma County	08083		Gas (mcf)	159622206.68
+2011	CO	Montezuma County	08083		Gas (mcf)	160743409.09
+2008	CO	Dolores County	08033		Gas (mcf)	169880124.49
+2013	CO	Garfield County	08045		Gas (mcf)	181955272.28
+2011	CO	Garfield County	08045		Gas (mcf)	185330964.18
+2012	CO	Dolores County	08033		Gas (mcf)	185646234.62
+2014	CO	Garfield County	08045		Gas (mcf)	185756177.1
+2011	CO	Dolores County	08033		Gas (mcf)	190240575.01
+2009	CO	Dolores County	08033		Gas (mcf)	190630020.05
+2013	CO	Dolores County	08033		Gas (mcf)	191109179.59
+2010	CO	Dolores County	08033		Gas (mcf)	191415675.4
+2012	CO	Garfield County	08045		Gas (mcf)	192979531.71
+2014	CO	Dolores County	08033		Gas (mcf)	207615758.04

@@ -1,0 +1,357 @@
+Year	State	County	FIPS	Commodity	Product	Volume
+2009	CA	Contra Costa County	06013		Oil (bbl)	0.82
+2014	CA	San Benito County	06069		Gas (mcf)	1
+2013	CA	Tehama County	06103		Gas (mcf)	1.12
+2014	CA	Contra Costa County	06013		Oil (bbl)	1.7
+2012	CA	Contra Costa County	06013		Oil (bbl)	1.73
+2013	CA	Contra Costa County	06013		Oil (bbl)	2.66
+2006	CA	San Benito County	06069		Gas (mcf)	7
+2013	CA	San Benito County	06069		Gas (mcf)	7
+2012	CA	San Benito County	06069		Gas (mcf)	12
+2008	CA	Contra Costa County	06013		Oil (bbl)	12.34
+2006	CA	Contra Costa County	06013		Oil (bbl)	12.74
+2007	CA	Contra Costa County	06013		Oil (bbl)	14.25
+2007	CA	San Benito County	06069		Oil (bbl)	16
+2005	CA	Contra Costa County	06013		Oil (bbl)	26.92
+2005	CA	San Benito County	06069		Gas (mcf)	41
+2013	CA	San Benito County	06069		Oil (bbl)	43
+2009	CA	San Luis Obispo County	06079		Gas (mcf)	52.47
+2008	CA	San Benito County	06069		Gas (mcf)	116
+2014	CA	San Benito County	06069		Oil (bbl)	127
+2010	CA	San Benito County	06069		Gas (mcf)	139
+2011	CA	San Benito County	06069		Gas (mcf)	148
+2010	CA	Kern County	06029		Gas (mcf)	148.9
+2012	CA	San Benito County	06069		Oil (bbl)	190
+2010	CA	San Luis Obispo County	06079		Gas (mcf)	206.1
+2009	CA	San Benito County	06069		Gas (mcf)	225
+2010	CA	San Luis Obispo County	06079		Gas (mcf)	243.65
+2010	CA	Kern County	06029		Oil (bbl)	259.63
+2010	CA	San Luis Obispo County	06079		Oil (bbl)	359.37
+2006	CA	San Benito County	06069		Oil (bbl)	405
+2014	CA	Sacramento County	06067		Oil (bbl)	670.41
+2008	CA	San Benito County	06069		Oil (bbl)	745
+2011	CA	San Benito County	06069		Oil (bbl)	806
+2012	CA	Sacramento County	06067		Oil (bbl)	815.44
+2013	CA	Sacramento County	06067		Oil (bbl)	846.45
+2011	CA	Kern County	06029		Oil (bbl)	921.93
+2010	CA	San Benito County	06069		Oil (bbl)	1063
+2011	CA	Sacramento County	06067		Oil (bbl)	1144.03
+2014	CA	Contra Costa County	06013		Gas (mcf)	1194.94
+2006	CA	Monterey County	06053		Gas (mcf)	1219.24
+2005	CA	Monterey County	06053		Gas (mcf)	1220.13
+2011	CA	San Luis Obispo County	06079		Oil (bbl)	1276.07
+2010	CA	Sacramento County	06067		Oil (bbl)	1366.13
+2007	CA	Monterey County	06053		Gas (mcf)	1403.05
+2008	CA	San Luis Obispo County	06079		Gas (mcf)	1446.82
+2009	CA	San Benito County	06069		Oil (bbl)	1459
+2012	CA	Tehama County	06103		Gas (mcf)	1590.41
+2013	CA	Contra Costa County	06013		Gas (mcf)	1641.25
+2009	CA	Sacramento County	06067		Oil (bbl)	1715.71
+2007	CA	San Luis Obispo County	06079		Gas (mcf)	1772.99
+2014	CA	Monterey County	06053		Gas (mcf)	1829.07
+2012	CA	Contra Costa County	06013		Gas (mcf)	1909.75
+2005	CA	San Benito County	06069		Oil (bbl)	1923
+2014	CA	Inyo County	06027		Geothermal - sulfur	2089.89
+2010	CA	Tehama County	06103		Gas (mcf)	2107.96
+2006	CA	Sacramento County	06067		Oil (bbl)	2364.91
+2013	CA	Inyo County	06027		Geothermal - sulfur	2448.04
+2008	CA	Monterey County	06053		Gas (mcf)	2582.89
+2012	CA	Inyo County	06027		Geothermal - sulfur	2598.09
+2011	CA	Contra Costa County	06013		Gas (mcf)	2619.3
+2013	CA	Monterey County	06053		Gas (mcf)	2657.08
+2005	CA	Sacramento County	06067		Oil (bbl)	2768.98
+2012	CA	Monterey County	06053		Gas (mcf)	2967.52
+2010	CA	Contra Costa County	06013		Gas (mcf)	2968.32
+2013	CA	Fresno County	06019		Gas (mcf)	2985.35
+2007	CA	Monterey County	06053		Oil (bbl)	3068.18
+2014	CA	Solano County	06095		Oil (bbl)	3088.59
+2008	CA	Sacramento County	06067		Oil (bbl)	3103.27
+2011	CA	Tehama County	06103		Gas (mcf)	3157.14
+2011	CA	Monterey County	06053		Gas (mcf)	3269.6
+2012	CA	San Joaquin County	06077		Gas (mcf)	3366.7
+2007	CA	Sacramento County	06067		Oil (bbl)	3374.86
+2011	CA	Kern County	06029		Gas (mcf)	3465.42
+2013	CA	San Joaquin County	06077		Gas (mcf)	3466.3
+2014	CA	San Joaquin County	06077		Gas (mcf)	3468.45
+2011	CA	Inyo County	06027		Geothermal - sulfur	3469.89
+2009	CA	San Joaquin County	06077		Gas (mcf)	3478.34
+2010	CA	San Joaquin County	06077		Gas (mcf)	3479.69
+2011	CA	San Joaquin County	06077		Gas (mcf)	3532.48
+2013	CA	Solano County	06095		Oil (bbl)	3657.55
+2006	CA	Monterey County	06053		Oil (bbl)	3683.31
+2009	CA	Monterey County	06053		Gas (mcf)	3845.06
+2008	CA	San Joaquin County	06077		Gas (mcf)	3887.56
+2007	CA	San Joaquin County	06077		Gas (mcf)	3948.96
+2005	CA	Monterey County	06053		Oil (bbl)	4105.47
+2006	CA	San Joaquin County	06077		Gas (mcf)	4164.26
+2012	CA	Solano County	06095		Oil (bbl)	4189.56
+2010	CA	Monterey County	06053		Gas (mcf)	4199.16
+2009	CA	Contra Costa County	06013		Gas (mcf)	4534.33
+2008	CA	Monterey County	06053		Oil (bbl)	4588.5
+2005	CA	San Joaquin County	06077		Gas (mcf)	4659.21
+2010	CA	Inyo County	06027		Geothermal - sulfur	4669.79
+2011	CA	San Luis Obispo County	06079		Gas (mcf)	4796.58
+2011	CA	Solano County	06095		Oil (bbl)	5297.97
+2014	CA	San Luis Obispo County	06079		Oil (bbl)	5672.64
+2010	CA	Solano County	06095		Oil (bbl)	5984.87
+2005	CA	San Luis Obispo County	06079		Gas (mcf)	6489.21
+2014	CA	Glenn County	06021		Gas (mcf)	6874.08
+2011	CA	San Luis Obispo County	06079		Oil (bbl)	7329.93
+2009	CA	Solano County	06095		Oil (bbl)	7382.29
+2013	CA	Glenn County	06021		Gas (mcf)	7582.21
+2009	CA	Monterey County	06053		Oil (bbl)	7600.03
+2012	CA	Glenn County	06021		Gas (mcf)	7981.36
+2011	CA	Glenn County	06021		Gas (mcf)	8006.75
+2009	CA	Tehama County	06103		Gas (mcf)	8045.36
+2007	CA	Glenn County	06021		Gas (mcf)	8103.8
+2006	CA	Glenn County	06021		Gas (mcf)	8928.86
+2012	CA	San Luis Obispo County	06079		Oil (bbl)	9245.31
+2010	CA	Monterey County	06053		Oil (bbl)	9312.32
+2006	CA	Solano County	06095		Oil (bbl)	9520.09
+2014	CA	San Luis Obispo County	06079		Oil (bbl)	9625.61
+2010	CA	Glenn County	06021		Gas (mcf)	9654.51
+2010	CA	San Luis Obispo County	06079		Oil (bbl)	9840.98
+2011	CA	San Luis Obispo County	06079		Gas (mcf)	10303.77
+2008	CA	Contra Costa County	06013		Gas (mcf)	10349.92
+2006	CA	San Luis Obispo County	06079		Gas (mcf)	10488.14
+2005	CA	Glenn County	06021		Gas (mcf)	10722.31
+2008	CA	Fresno County	06019		Oil (bbl)	10854.67
+2014	CA	Fresno County	06019		Gas (mcf)	10933.83
+2012	CA	San Luis Obispo County	06079		Gas (mcf)	10988.9
+2007	CA	San Luis Obispo County	06079		Oil (bbl)	11086.08
+2005	CA	Solano County	06095		Oil (bbl)	11101.02
+2013	CA	San Luis Obispo County	06079		Oil (bbl)	11157.18
+2007	CA	Contra Costa County	06013		Gas (mcf)	11182.23
+2006	CA	Contra Costa County	06013		Gas (mcf)	11197.6
+2011	CA	Monterey County	06053		Oil (bbl)	11302.96
+2008	CA	San Luis Obispo County	06079		Oil (bbl)	11870.01
+2013	CA	San Luis Obispo County	06079		Oil (bbl)	11919.14
+2008	CA	Solano County	06095		Oil (bbl)	12098.73
+2009	CA	Glenn County	06021		Gas (mcf)	13071.29
+2012	CA	Fresno County	06019		Oil (bbl)	13101.83
+2007	CA	Solano County	06095		Oil (bbl)	13173.14
+2013	CA	San Luis Obispo County	06079		Gas (mcf)	13250.82
+2005	CA	Contra Costa County	06013		Gas (mcf)	13337.92
+2013	CA	Monterey County	06053		Oil (bbl)	13490.58
+2012	CA	Monterey County	06053		Oil (bbl)	13611.5
+2009	CA	San Luis Obispo County	06079		Oil (bbl)	13674.65
+2013	CA	Fresno County	06019		Oil (bbl)	13772.54
+2014	CA	Monterey County	06053		Oil (bbl)	14464.4
+2008	CA	Glenn County	06021		Gas (mcf)	14832.19
+2014	CA	San Luis Obispo County	06079		Gas (mcf)	15395.76
+2006	CA	San Luis Obispo County	06079		Oil (bbl)	16392.81
+2005	CA	San Luis Obispo County	06079		Oil (bbl)	17091.21
+2011	CA	Fresno County	06019		Oil (bbl)	18122.86
+2009	CA	Fresno County	06019		Oil (bbl)	19078.52
+2011	CA	Imperial County	06025		Geothermal - Electrical Generation, Other	19883.37
+2010	CA	Fresno County	06019		Oil (bbl)	19951.15
+2014	CA	Kern County	06029		Oil (bbl)	20023.36
+2007	CA	Fresno County	06019		Oil (bbl)	21831.76
+2014	CA	Fresno County	06019		Oil (bbl)	23438.62
+2012	CA	San Luis Obispo County	06079		Oil (bbl)	23710.03
+2014	CA	Kern County	06029		Gas (mcf)	25648.18
+2008	CA	Tehama County	06103		Gas (mcf)	27720.8
+2014	CA	San Luis Obispo County	06079		Gas (mcf)	29037.82
+2008	CA	Kings County	06031		Oil (bbl)	32285.49
+2013	CA	Kern County	06029		Oil (bbl)	33133.82
+2008	CA	Kings County	06031		Gas (mcf)	33586.03
+2011	CA	Kings County	06031		Oil (bbl)	35706.84
+2009	CA	Kings County	06031		Gas (mcf)	36907.6
+2010	CA	Kings County	06031		Oil (bbl)	37065.69
+2013	CA	Kings County	06031		Oil (bbl)	37194.35
+2005	CA	Kings County	06031		Oil (bbl)	37331.1
+2009	CA	Kings County	06031		Oil (bbl)	38033.57
+2007	CA	Kings County	06031		Oil (bbl)	38055.11
+2012	CA	Kings County	06031		Oil (bbl)	38720.18
+2006	CA	Kings County	06031		Oil (bbl)	41025.32
+2005	CA	Fresno County	06019		Oil (bbl)	44959.8
+2006	CA	Fresno County	06019		Oil (bbl)	45344.65
+2013	CA	Kings County	06031		Gas (mcf)	45456.2
+2009	CA	Santa Barbara	06083		Gas (mcf)	46301.25
+2014	CA	Santa Barbara	06083		Oil (bbl)	50381.96
+2013	CA	Kern County	06029		Gas (mcf)	51395.11
+2012	CA	Kern County	06029		Gas (mcf)	55175.86
+2014	CA	Kings County	06031		Oil (bbl)	56084.24
+2012	CA	Kern County	06029		Oil (bbl)	57311.97
+2014	CA	Santa Barbara	06083		Gas (mcf)	59322.98
+2012	CA	San Luis Obispo County	06079		Gas (mcf)	60133.14
+2013	CA	San Luis Obispo County	06079		Gas (mcf)	64894.89
+2013	CA	Santa Barbara	06083		Oil (bbl)	65636.66
+2014	CA	Kings County	06031		Gas (mcf)	66302.66
+2012	CA	Santa Barbara	06083		Gas (mcf)	66457.94
+2013	CA	Santa Barbara	06083		Gas (mcf)	67023.98
+2012	CA	Santa Barbara	06083		Oil (bbl)	69414.77
+2011	CA	Santa Barbara	06083		Oil (bbl)	70812.07
+2010	CA	Santa Barbara	06083		Oil (bbl)	70837.18
+2012	CA	Fresno County	06019		Gas (mcf)	74545
+2009	CA	Santa Barbara	06083		Oil (bbl)	76425.43
+2011	CA	Santa Barbara	06083		Gas (mcf)	81280.59
+2008	CA	Santa Barbara	06083		Oil (bbl)	81839.96
+2010	CA	Kings County	06031		Gas (mcf)	84545.41
+2006	CA	Santa Barbara	06083		Gas (mcf)	91142.82
+2005	CA	Santa Barbara	06083		Oil (bbl)	91482.25
+2007	CA	Santa Barbara	06083		Gas (mcf)	94839.37
+2007	CA	Santa Barbara	06083		Oil (bbl)	94861.92
+2008	CA	Santa Barbara	06083		Gas (mcf)	97294.65
+2006	CA	Santa Barbara	06083		Oil (bbl)	99237.15
+2007	CA	Kings County	06031		Gas (mcf)	103233.22
+2012	CA	Kings County	06031		Gas (mcf)	105383.28
+2007	CA	Fresno County	06019		Gas (mcf)	113705.1
+2008	CA	Fresno County	06019		Gas (mcf)	122984.21
+2010	CA	Santa Barbara	06083		Gas (mcf)	125374.8
+2009	CA	Los Angeles County	06037		Gas (mcf)	129765.88
+2011	CA	Los Angeles County	06037		Gas (mcf)	129810.12
+2010	CA	Los Angeles County	06037		Gas (mcf)	134192.98
+2014	CA	Los Angeles County	06037		Gas (mcf)	135498.7
+2007	CA	Los Angeles County	06037		Gas (mcf)	137894.66
+2008	CA	Los Angeles County	06037		Gas (mcf)	148186.59
+2013	CA	Los Angeles County	06037		Gas (mcf)	150289.84
+2006	CA	Los Angeles County	06037		Gas (mcf)	151370.01
+2005	CA	Kings County	06031		Gas (mcf)	158499.06
+2005	CA	Los Angeles County	06037		Gas (mcf)	159479.23
+2006	CA	Kings County	06031		Gas (mcf)	161244.67
+2012	CA	Los Angeles County	06037		Gas (mcf)	172749.62
+2011	CA	Kings County	06031		Gas (mcf)	176321.26
+2009	CA	Lassen County	06035		Geothermal - Direct Utilization, Millions of BTUs	179170.56
+2009	CA	Fresno County	06019		Gas (mcf)	182757.94
+2010	CA	Fresno County	06019		Gas (mcf)	193427.09
+2005	CA	Santa Barbara	06083		Gas (mcf)	198176.94
+2005	CA	Imperial County	06025		Geothermal - Electrical Generation, Other	204030.26
+2007	CA	Imperial County	06025		Geothermal - Electrical Generation, Other	207155.08
+2007	CA	Lassen County	06035		Geothermal - Direct Utilization, Millions of BTUs	217499.73
+2008	CA	Lassen County	06035		Geothermal - Direct Utilization, Millions of BTUs	219089.01
+2010	CA	Imperial County	06025		Geothermal - Electrical Generation, Other	223938.12
+2010	CA	Lassen County	06035		Geothermal - Direct Utilization, Millions of BTUs	224486.3
+2006	CA	Imperial County	06025		Geothermal - Electrical Generation, Other	227562
+2011	CA	Lassen County	06035		Geothermal - Direct Utilization, Millions of BTUs	228010.63
+2009	CA	Imperial County	06025		Geothermal - Electrical Generation, Other	233953.69
+2013	CA	Ventura County	06111		Oil (bbl)	235105.5
+2008	CA	Imperial County	06025		Geothermal - Electrical Generation, Other	237415.56
+2006	CA	Lassen County	06035		Geothermal - Direct Utilization, Millions of BTUs	238146.66
+2014	CA	Lassen County	06035		Geothermal - Direct Utilization, Millions of BTUs	243504.1
+2011	CA	Fresno County	06019		Gas (mcf)	249999.35
+2005	CA	Lassen County	06035		Geothermal - Direct Utilization, Millions of BTUs	260242.35
+2011	CA	Ventura County	06111		Oil (bbl)	261422.5
+2010	CA	Ventura County	06111		Oil (bbl)	261560.5
+2012	CA	Lassen County	06035		Geothermal - Direct Utilization, Millions of BTUs	271469.64
+2013	CA	Lassen County	06035		Geothermal - Direct Utilization, Millions of BTUs	276337.16
+2012	CA	Ventura County	06111		Oil (bbl)	277771
+2009	CA	Ventura County	06111		Oil (bbl)	280851.5
+2008	CA	Ventura County	06111		Oil (bbl)	304518.5
+2007	CA	Ventura County	06111		Oil (bbl)	305723.5
+2005	CA	Ventura County	06111		Oil (bbl)	313661
+2006	CA	Ventura County	06111		Oil (bbl)	314239.5
+2014	CA	Sacramento County	06067		Gas (mcf)	356104.84
+2014	CA	Ventura County	06111		Oil (bbl)	369612
+2013	CA	Sacramento County	06067		Gas (mcf)	383728.97
+2009	CA	Los Angeles County	06037		Oil (bbl)	386843
+2008	CA	Los Angeles County	06037		Oil (bbl)	398817.68
+2010	CA	Los Angeles County	06037		Oil (bbl)	403222.52
+2011	CA	Los Angeles County	06037		Oil (bbl)	422438.33
+2007	CA	Los Angeles County	06037		Oil (bbl)	424917.24
+2012	CA	Sacramento County	06067		Gas (mcf)	428566.25
+2006	CA	Fresno County	06019		Gas (mcf)	432590.98
+2014	CA	Los Angeles County	06037		Oil (bbl)	443801.55
+2013	CA	Los Angeles County	06037		Oil (bbl)	477574.13
+2012	CA	Los Angeles County	06037		Oil (bbl)	483130
+2006	CA	Los Angeles County	06037		Oil (bbl)	494001.22
+2005	CA	Los Angeles County	06037		Oil (bbl)	507335.67
+2011	CA	Sacramento County	06067		Gas (mcf)	509691.01
+2013	CA	Ventura County	06111		Gas (mcf)	515491
+2010	CA	Sacramento County	06067		Gas (mcf)	577251.58
+2005	CA	Fresno County	06019		Gas (mcf)	594249.59
+2011	CA	Ventura County	06111		Gas (mcf)	620016.5
+2012	CA	Ventura County	06111		Gas (mcf)	636216.5
+2010	CA	Ventura County	06111		Gas (mcf)	651820.5
+2014	CA	Lassen County	06035		Geothermal - Electrical Generation, Other	691756
+2014	CA	Ventura County	06111		Gas (mcf)	713113
+2009	CA	Ventura County	06111		Gas (mcf)	718331
+2005	CA	Ventura County	06111		Gas (mcf)	743679
+2008	CA	Ventura County	06111		Gas (mcf)	744351
+2006	CA	Ventura County	06111		Gas (mcf)	776500.5
+2007	CA	Ventura County	06111		Gas (mcf)	781835.5
+2009	CA	Sacramento County	06067		Gas (mcf)	820533.07
+2008	CA	Sacramento County	06067		Gas (mcf)	1665286.45
+2014	CA	Solano County	06095		Gas (mcf)	2035149.16
+2005	CA	Kern County	06029		Gas (mcf)	2105263.42
+2007	CA	Sacramento County	06067		Gas (mcf)	2126758.49
+2013	CA	Solano County	06095		Gas (mcf)	2205533.03
+2006	CA	Sacramento County	06067		Gas (mcf)	2317561.6
+2012	CA	Solano County	06095		Gas (mcf)	2567717.75
+2005	CA	Sacramento County	06067		Gas (mcf)	2703796.18
+2011	CA	Solano County	06095		Gas (mcf)	2934411.99
+2006	CA	Kern County	06029		Gas (mcf)	3140316.95
+2007	CA	Kern County	06029		Gas (mcf)	3196592.81
+2010	CA	Solano County	06095		Gas (mcf)	3346088.42
+2008	CA	Kern County	06029		Gas (mcf)	3684486.46
+2009	CA	Solano County	06095		Gas (mcf)	4090837.93
+2009	CA	Kern County	06029		Gas (mcf)	4864026.65
+2010	CA	Kern County	06029		Gas (mcf)	6067591.36
+2008	CA	Solano County	06095		Gas (mcf)	7139814.55
+2013	CA	Kern County	06029		Gas (mcf)	8844710.29
+2007	CA	Solano County	06095		Gas (mcf)	8966182.51
+2014	CA	Kern County	06029		Gas (mcf)	9307503.17
+2006	CA	Solano County	06095		Gas (mcf)	10040401.4
+2012	CA	Kern County	06029		Gas (mcf)	10462815.42
+2011	CA	Kern County	06029		Gas (mcf)	10979547.74
+2005	CA	Solano County	06095		Gas (mcf)	11344928.82
+2007	CA	Kern County	06029		Oil (bbl)	12513256.31
+2008	CA	Kern County	06029		Oil (bbl)	12609418.61
+2010	CA	Kern County	06029		Oil (bbl)	13124002.21
+2009	CA	Kern County	06029		Oil (bbl)	13200352.68
+2006	CA	Kern County	06029		Oil (bbl)	13437622.25
+2005	CA	Kern County	06029		Oil (bbl)	13521746.21
+2014	CA	Kern County	06029		Oil (bbl)	13607587.67
+2011	CA	Kern County	06029		Oil (bbl)	14082015.11
+2012	CA	Kern County	06029		Oil (bbl)	14212294.06
+2013	CA	Kern County	06029		Oil (bbl)	14398205.69
+2014	CA	Lake County	06033		Geothermal - Electrical Generation, Thousands of Pounds	19550547.09
+2013	CA	Lake County	06033		Geothermal - Electrical Generation, Thousands of Pounds	19664634.99
+2012	CA	Lake County	06033		Geothermal - Electrical Generation, Thousands of Pounds	20689289.49
+2009	CA	Lake County	06033		Geothermal - Electrical Generation, Thousands of Pounds	20771777.54
+2011	CA	Lake County	06033		Geothermal - Electrical Generation, Thousands of Pounds	20965734.74
+2010	CA	Lake County	06033		Geothermal - Electrical Generation, Thousands of Pounds	20975267.77
+2008	CA	Lake County	06033		Geothermal - Electrical Generation, Thousands of Pounds	21265241.42
+2007	CA	Lake County	06033		Geothermal - Electrical Generation, Thousands of Pounds	21799180.09
+2006	CA	Lake County	06033		Geothermal - Electrical Generation, Thousands of Pounds	23235178.96
+2005	CA	Lake County	06033		Geothermal - Electrical Generation, Thousands of Pounds	23325053.02
+2014	CA	Sonoma County	06097		Geothermal - Electrical Generation, Thousands of Pounds	26013613.45
+2013	CA	Sonoma County	06097		Geothermal - Electrical Generation, Thousands of Pounds	26479986.8
+2012	CA	Sonoma County	06097		Geothermal - Electrical Generation, Thousands of Pounds	27518466.46
+2010	CA	Sonoma County	06097		Geothermal - Electrical Generation, Thousands of Pounds	27547968.93
+2011	CA	Sonoma County	06097		Geothermal - Electrical Generation, Thousands of Pounds	27719948.32
+2009	CA	Sonoma County	06097		Geothermal - Electrical Generation, Thousands of Pounds	27745974.77
+2007	CA	Sonoma County	06097		Geothermal - Electrical Generation, Thousands of Pounds	28576259.53
+2008	CA	Sonoma County	06097		Geothermal - Electrical Generation, Thousands of Pounds	28601894.92
+2005	CA	Sonoma County	06097		Geothermal - Electrical Generation, Thousands of Pounds	29871685.67
+2006	CA	Sonoma County	06097		Geothermal - Electrical Generation, Thousands of Pounds	30108719.57
+2005	CA	Mono County	06051		Geothermal - Electrical Generation, Kilowatt Hours	90853862
+2013	CA	Mono County	06051		Geothermal - Electrical Generation, Kilowatt Hours	164238890.75
+2012	CA	Mono County	06051		Geothermal - Electrical Generation, Kilowatt Hours	165730647.36
+2006	CA	Mono County	06051		Geothermal - Electrical Generation, Kilowatt Hours	176732044.26
+2011	CA	Mono County	06051		Geothermal - Electrical Generation, Kilowatt Hours	182306807.61
+2008	CA	Mono County	06051		Geothermal - Electrical Generation, Kilowatt Hours	183365194
+2007	CA	Mono County	06051		Geothermal - Electrical Generation, Kilowatt Hours	187398918
+2010	CA	Mono County	06051		Geothermal - Electrical Generation, Kilowatt Hours	194009762.17
+2014	CA	Mono County	06051		Geothermal - Electrical Generation, Kilowatt Hours	195815991.42
+2009	CA	Mono County	06051		Geothermal - Electrical Generation, Kilowatt Hours	205165950.35
+2006	CA	Imperial County	06025		Geothermal - Electrical Generation, Kilowatt Hours	334244017
+2014	CA	Inyo County	06027		Geothermal - Electrical Generation, Kilowatt Hours	337393974.01
+2012	CA	Inyo County	06027		Geothermal - Electrical Generation, Kilowatt Hours	345868455
+2005	CA	Imperial County	06025		Geothermal - Electrical Generation, Kilowatt Hours	359593960
+2014	CA	Imperial County	06025		Geothermal - Electrical Generation, Kilowatt Hours	363631895.24
+2013	CA	Inyo County	06027		Geothermal - Electrical Generation, Kilowatt Hours	368059511.98
+2011	CA	Inyo County	06027		Geothermal - Electrical Generation, Kilowatt Hours	368106296.6
+2013	CA	Imperial County	06025		Geothermal - Electrical Generation, Kilowatt Hours	385979604.52
+2010	CA	Inyo County	06027		Geothermal - Electrical Generation, Kilowatt Hours	387017462.4
+2012	CA	Imperial County	06025		Geothermal - Electrical Generation, Kilowatt Hours	407340165.3
+2010	CA	Imperial County	06025		Geothermal - Electrical Generation, Kilowatt Hours	422385180.83
+2009	CA	Imperial County	06025		Geothermal - Electrical Generation, Kilowatt Hours	423244000
+2011	CA	Imperial County	06025		Geothermal - Electrical Generation, Kilowatt Hours	430545952.73
+2008	CA	Imperial County	06025		Geothermal - Electrical Generation, Kilowatt Hours	437685000
+2007	CA	Imperial County	06025		Geothermal - Electrical Generation, Kilowatt Hours	440260735
+2008	CA	Inyo County	06027		Geothermal - Electrical Generation, Kilowatt Hours	449420627.71
+2009	CA	Inyo County	06027		Geothermal - Electrical Generation, Kilowatt Hours	460346602.88
+2007	CA	Inyo County	06027		Geothermal - Electrical Generation, Kilowatt Hours	465167155.81
+2006	CA	Inyo County	06027		Geothermal - Electrical Generation, Kilowatt Hours	504915624.47
+2005	CA	Inyo County	06027		Geothermal - Electrical Generation, Kilowatt Hours	537748979.68

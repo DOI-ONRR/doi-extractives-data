@@ -1,0 +1,186 @@
+Year	State	County	FIPS	Commodity	Product	Volume
+2010	MI	Grand Traverse County	26055		Oil (bbl)	4.63
+2011	MI	Grand Traverse County	26055		Oil (bbl)	5.1
+2009	MI	Grand Traverse County	26055		Oil (bbl)	9.73
+2014	MI	Grand Traverse County	26055		Oil (bbl)	15.29
+2012	MI	Grand Traverse County	26055		Oil (bbl)	19.93
+2013	MI	Grand Traverse County	26055		Oil (bbl)	28.27
+2010	MI	Lake County	26085		Oil (bbl)	39.33
+2009	MI	Lake County	26085		Oil (bbl)	56
+2014	MI	Allegan County	26005		Oil (bbl)	115.6
+2013	MI	Allegan County	26005		Oil (bbl)	119.6
+2008	MI	Lake County	26085		Oil (bbl)	120.67
+2010	MI	Allegan County	26005		Oil (bbl)	122.8
+2008	MI	Allegan County	26005		Oil (bbl)	131
+2012	MI	Allegan County	26005		Oil (bbl)	135.8
+2009	MI	Allegan County	26005		Oil (bbl)	150.6
+2006	MI	Allegan County	26005		Oil (bbl)	151.6
+2011	MI	Allegan County	26005		Oil (bbl)	157
+2007	MI	Lake County	26085		Oil (bbl)	163.11
+2007	MI	Allegan County	26005		Oil (bbl)	167
+2005	MI	Allegan County	26005		Oil (bbl)	181.4
+2007	MI	Calhoun County	26025		Oil (bbl)	193.6
+2014	MI	Newaygo County	26123		Oil (bbl)	308
+2006	MI	Lake County	26085		Oil (bbl)	316.44
+2005	MI	Lake County	26085		Oil (bbl)	600.22
+2010	MI	Lake County	26085		Gas (mcf)	763.55
+2008	MI	Grand Traverse County	26055		Oil (bbl)	1433.52
+2010	MI	Clare County	26035		Oil (bbl)	1473.99
+2014	MI	Clare County	26035		Oil (bbl)	1486
+2013	MI	Clare County	26035		Oil (bbl)	1512.77
+2011	MI	Clare County	26035		Oil (bbl)	1537.32
+2009	MI	Clare County	26035		Oil (bbl)	1553.83
+2012	MI	Clare County	26035		Oil (bbl)	1568.59
+2006	MI	Clare County	26035		Oil (bbl)	1619.62
+2005	MI	Clare County	26035		Oil (bbl)	1660.64
+2008	MI	Clare County	26035		Oil (bbl)	1697.03
+2007	MI	Clare County	26035		Oil (bbl)	1702.42
+2009	MI	Kalkaska County	26079		Oil (bbl)	2375
+2007	MI	Kalkaska County	26079		Oil (bbl)	2628.75
+2013	MI	Calhoun County	26025		Oil (bbl)	2680
+2014	MI	Kalkaska County	26079		Oil (bbl)	2858.75
+2014	MI	Roscommon County	26143		Oil (bbl)	2911.97
+2014	MI	Alcona County	26001		Gas (mcf)	2999.13
+2014	MI	Calhoun County	26025		Oil (bbl)	3065.6
+2010	MI	Alcona County	26001		Gas (mcf)	3079.56
+2013	MI	Alcona County	26001		Gas (mcf)	3232.78
+2013	MI	Roscommon County	26143		Oil (bbl)	3246.83
+2013	MI	Kalkaska County	26079		Oil (bbl)	3340.25
+2009	MI	Calhoun County	26025		Oil (bbl)	3422
+2011	MI	Alcona County	26001		Gas (mcf)	3464.98
+2010	MI	Calhoun County	26025		Oil (bbl)	3531.6
+2012	MI	Alcona County	26001		Gas (mcf)	3545.45
+2014	MI	Grand Traverse County	26055		Gas (mcf)	3548.34
+2008	MI	Kalkaska County	26079		Oil (bbl)	3558.5
+2012	MI	Roscommon County	26143		Oil (bbl)	3604.88
+2011	MI	Kalkaska County	26079		Oil (bbl)	3725.97
+2012	MI	Kalkaska County	26079		Oil (bbl)	3766
+2013	MI	Grand Traverse County	26055		Gas (mcf)	3840.33
+2011	MI	Roscommon County	26143		Oil (bbl)	3918.32
+2012	MI	Calhoun County	26025		Oil (bbl)	3954.4
+2010	MI	Jackson County	26075		Gas (mcf)	3981.25
+2014	MI	Clare County	26035		Gas (mcf)	4088.73
+2010	MI	Roscommon County	26143		Oil (bbl)	4250.47
+2009	MI	Alcona County	26001		Gas (mcf)	4353.98
+2011	MI	Calhoun County	26025		Oil (bbl)	4360
+2012	MI	Grand Traverse County	26055		Gas (mcf)	4562.88
+2005	MI	Kalkaska County	26079		Oil (bbl)	4602.3
+2009	MI	Roscommon County	26143		Oil (bbl)	4623.68
+2008	MI	Alcona County	26001		Gas (mcf)	4774.84
+2010	MI	Kalkaska County	26079		Oil (bbl)	4816.5
+2008	MI	Calhoun County	26025		Oil (bbl)	4841.6
+2008	MI	Roscommon County	26143		Oil (bbl)	5086.39
+2007	MI	Roscommon County	26143		Oil (bbl)	5156.67
+2006	MI	Roscommon County	26143		Oil (bbl)	5182.15
+2011	MI	Grand Traverse County	26055		Gas (mcf)	5188.57
+2010	MI	Grand Traverse County	26055		Gas (mcf)	5372.57
+2007	MI	Alcona County	26001		Gas (mcf)	5617.24
+2005	MI	Roscommon County	26143		Oil (bbl)	5854.87
+2005	MI	Alcona County	26001		Gas (mcf)	6344.03
+2006	MI	Alcona County	26001		Gas (mcf)	6348.55
+2011	MI	Jackson County	26075		Gas (mcf)	6464.5
+2014	MI	Oscoda County	26135		Oil (bbl)	6481.81
+2008	MI	Calhoun County	26025		Gas (mcf)	6670.4
+2009	MI	Grand Traverse County	26055		Gas (mcf)	6889.51
+2006	MI	Kalkaska County	26079		Oil (bbl)	7045.74
+2013	MI	Oscoda County	26135		Oil (bbl)	7711.18
+2014	MI	Otsego County	26137		Gas (mcf)	8009.82
+2012	MI	Oscoda County	26135		Oil (bbl)	8081.24
+2008	MI	Grand Traverse County	26055		Gas (mcf)	8124.66
+2010	MI	Jackson County	26075		Oil (bbl)	8229.5
+2013	MI	Otsego County	26137		Gas (mcf)	8855.81
+2007	MI	Grand Traverse County	26055		Gas (mcf)	9353.79
+2012	MI	Otsego County	26137		Gas (mcf)	9421.98
+2005	MI	Oscoda County	26135		Oil (bbl)	9529.91
+2009	MI	Lake County	26085		Gas (mcf)	9654.43
+2011	MI	Oscoda County	26135		Oil (bbl)	9771.16
+2011	MI	Otsego County	26137		Gas (mcf)	9852.18
+2010	MI	Otsego County	26137		Gas (mcf)	10703.59
+2010	MI	Oscoda County	26135		Oil (bbl)	10766.66
+2006	MI	Grand Traverse County	26055		Gas (mcf)	11522.38
+2007	MI	Roscommon County	26143		Gas (mcf)	11526.06
+2008	MI	Lake County	26085		Gas (mcf)	11658.43
+2009	MI	Otsego County	26137		Gas (mcf)	11669.03
+2012	MI	Jackson County	26075		Gas (mcf)	12156.25
+2005	MI	Grand Traverse County	26055		Gas (mcf)	12826.12
+2013	MI	Clare County	26035		Gas (mcf)	13143.96
+2008	MI	Otsego County	26137		Gas (mcf)	13488.42
+2009	MI	Calhoun County	26025		Gas (mcf)	14972.8
+2014	MI	Jackson County	26075		Oil (bbl)	15657.25
+2009	MI	Oscoda County	26135		Oil (bbl)	15901.71
+2011	MI	Jackson County	26075		Oil (bbl)	15920
+2012	MI	Calhoun County	26025		Gas (mcf)	16419.2
+2013	MI	Jackson County	26075		Gas (mcf)	16610.75
+2014	MI	Roscommon County	26143		Gas (mcf)	16853.8
+2013	MI	Roscommon County	26143		Gas (mcf)	16945
+2014	MI	Jackson County	26075		Gas (mcf)	17168.25
+2013	MI	Calhoun County	26025		Gas (mcf)	17590
+2007	MI	Otsego County	26137		Gas (mcf)	17757.9
+2005	MI	Otsego County	26137		Gas (mcf)	17893.99
+2012	MI	Roscommon County	26143		Gas (mcf)	18429.19
+2010	MI	Calhoun County	26025		Gas (mcf)	18637.6
+2011	MI	Roscommon County	26143		Gas (mcf)	18682.2
+2006	MI	Otsego County	26137		Gas (mcf)	18747.95
+2010	MI	Roscommon County	26143		Gas (mcf)	18918.76
+2005	MI	Roscommon County	26143		Gas (mcf)	19184.57
+2008	MI	Roscommon County	26143		Gas (mcf)	20043.04
+2011	MI	Calhoun County	26025		Gas (mcf)	20276.8
+2014	MI	Calhoun County	26025		Gas (mcf)	22319.2
+2012	MI	Clare County	26035		Gas (mcf)	22721.83
+2012	MI	Jackson County	26075		Oil (bbl)	23743.25
+2009	MI	Roscommon County	26143		Gas (mcf)	24192.28
+2013	MI	Jackson County	26075		Oil (bbl)	24372
+2014	MI	Kalkaska County	26079		Gas (mcf)	25422.71
+2006	MI	Oscoda County	26135		Oil (bbl)	25536.49
+2006	MI	Roscommon County	26143		Gas (mcf)	25651.17
+2007	MI	Oscoda County	26135		Oil (bbl)	30468.45
+2013	MI	Kalkaska County	26079		Gas (mcf)	33052.52
+2008	MI	Oscoda County	26135		Oil (bbl)	33299.08
+2007	MI	Lake County	26085		Gas (mcf)	35863.47
+2007	MI	Kalkaska County	26079		Gas (mcf)	41029.5
+2014	MI	Crawford County	26039		Gas (mcf)	45849.83
+2011	MI	Clare County	26035		Gas (mcf)	47398.95
+2013	MI	Crawford County	26039		Gas (mcf)	48422.54
+2012	MI	Crawford County	26039		Gas (mcf)	51620.68
+2010	MI	Clare County	26035		Gas (mcf)	52783.96
+2007	MI	Crawford County	26039		Gas (mcf)	53982.44
+2009	MI	Kalkaska County	26079		Gas (mcf)	54152.64
+2012	MI	Kalkaska County	26079		Gas (mcf)	55842.07
+2011	MI	Crawford County	26039		Gas (mcf)	55918.49
+2011	MI	Kalkaska County	26079		Gas (mcf)	56870.42
+2009	MI	Clare County	26035		Gas (mcf)	57343.02
+2008	MI	Clare County	26035		Gas (mcf)	58075.47
+2007	MI	Clare County	26035		Gas (mcf)	59246.24
+2008	MI	Kalkaska County	26079		Gas (mcf)	61855.94
+2010	MI	Crawford County	26039		Gas (mcf)	62408
+2010	MI	Kalkaska County	26079		Gas (mcf)	67115.75
+2006	MI	Kalkaska County	26079		Gas (mcf)	67833.44
+2005	MI	Kalkaska County	26079		Gas (mcf)	68980.87
+2006	MI	Clare County	26035		Gas (mcf)	75270.26
+2008	MI	Crawford County	26039		Gas (mcf)	81289.07
+2005	MI	Clare County	26035		Gas (mcf)	94588.25
+2009	MI	Crawford County	26039		Gas (mcf)	104895.78
+2006	MI	Crawford County	26039		Gas (mcf)	107943.46
+2005	MI	Crawford County	26039		Gas (mcf)	141890.7
+2006	MI	Lake County	26085		Gas (mcf)	150112.58
+2005	MI	Lake County	26085		Gas (mcf)	189360.26
+2014	MI	Montmorency County	26119		Gas (mcf)	425439.1
+2013	MI	Montmorency County	26119		Gas (mcf)	471187.97
+2012	MI	Montmorency County	26119		Gas (mcf)	531178.93
+2011	MI	Montmorency County	26119		Gas (mcf)	553482.2
+2010	MI	Montmorency County	26119		Gas (mcf)	583257.74
+2009	MI	Montmorency County	26119		Gas (mcf)	705719.67
+2008	MI	Montmorency County	26119		Gas (mcf)	731214.73
+2007	MI	Montmorency County	26119		Gas (mcf)	769013.94
+2006	MI	Montmorency County	26119		Gas (mcf)	808842.8
+2014	MI	Oscoda County	26135		Gas (mcf)	857421.14
+2005	MI	Montmorency County	26119		Gas (mcf)	917083.87
+2013	MI	Oscoda County	26135		Gas (mcf)	999943.2
+2005	MI	Oscoda County	26135		Gas (mcf)	1153297.3
+2012	MI	Oscoda County	26135		Gas (mcf)	1188694.13
+2011	MI	Oscoda County	26135		Gas (mcf)	1222370.65
+2010	MI	Oscoda County	26135		Gas (mcf)	1372753.75
+2009	MI	Oscoda County	26135		Gas (mcf)	1584817.8
+2006	MI	Oscoda County	26135		Gas (mcf)	1697046.61
+2008	MI	Oscoda County	26135		Gas (mcf)	1783671.73
+2007	MI	Oscoda County	26135		Gas (mcf)	1990039.97

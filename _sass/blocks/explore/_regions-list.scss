@@ -1,0 +1,74 @@
+.subregion {
+  border-top: 1px solid $mid-gray;
+  clear: both;
+  padding: 0 $base-padding;
+  position: relative;
+
+}
+
+.region-header {
+  border-bottom: 1px solid $mid-gray;
+  border-top: none;
+  font-weight: $weight-bold;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  padding-top: 0;
+
+  .subregion-name {
+    @include heading(h3);
+    margin: 0;
+
+  }
+}
+
+.region-header-category {
+  margin-bottom: $base-padding;
+}
+
+.subregion-name {
+  @include heading('para-lg');
+  @include font-size(1);
+  margin: 0;
+  width: 66%;
+
+  @include respond-to(tiny-up) {
+    @include heading('h4');
+  }
+
+  .color-swatch {
+    display: inline-block;
+    height: 0.7em;
+    margin-right: 0.2em;
+    width: 0.7em;
+  }
+}
+
+.subregion-chart {
+  display: inline-block;
+  float: right;
+  min-width: 176px;
+  position: relative;
+  top: 0.4em;
+  width: 33%;
+
+  .bars {
+    display: block;
+    vertical-align: baseline;
+  }
+
+  .label {
+    font-weight: $weight-light;
+  }
+
+  .negative .label {
+    font-size: 0.8em;
+  }
+
+  .negative .bar {
+    fill: $negative-fill;
+  }
+
+  .positive .bar {
+    fill: $dark-gray;
+  }
+}

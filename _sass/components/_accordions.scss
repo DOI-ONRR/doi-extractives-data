@@ -31,7 +31,7 @@
       @include rotate(270deg, 3);
 
       &:after {
-        content: '\0046';
+        content: $icon-chevron-sm;
       }
     }
 
@@ -43,7 +43,7 @@
       display: inline-block;
 
       &::after {
-        content: '\004A';
+        content: $icon-dash-sm;
       }
 
     }
@@ -60,13 +60,13 @@
       @include rotate(90deg, 1);
 
       &:after {
-        content: '\0046';
+        content: $icon-chevron-sm;
       }
     }
 
     .accordion-button_more {
       &::after {
-        content: '\0052';
+        content: $icon-plus-sm;
       }
 
       display: inline-block;

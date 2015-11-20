@@ -1,0 +1,656 @@
+Year	State	County	FIPS	Commodity	Product	Volume
+2007	WY	Natrona County	56025		Oil (bbl)	1
+2007	WY	Park County	56029		Oil (bbl)	17
+2011	WY	Natrona County	56025		Oil (bbl)	69.02
+2009	WY	Park County	56029		Oil (bbl)	97
+2008	WY	Park County	56029		Oil (bbl)	168
+2012	WY	Uinta County	56041		Oil (bbl)	211.67
+2013	WY	Uinta County	56041		Oil (bbl)	237
+2011	WY	Uinta County	56041		Oil (bbl)	276
+2010	WY	Uinta County	56041		Oil (bbl)	341.67
+2014	WY	Crook County	56011		Oil (bbl)	373
+2012	WY	Johnson County	56019		Oil (bbl)	398
+2008	WY	Uinta County	56041		Oil (bbl)	420.33
+2006	WY	Natrona County	56025		Oil (bbl)	476
+2009	WY	Uinta County	56041		Oil (bbl)	481.67
+2006	WY	Sheridan County	56033		Gas (mcf)	517.5
+2009	WY	Johnson County	56019		Oil (bbl)	529
+2011	WY	Johnson County	56019		Oil (bbl)	718
+2011	WY	Sublette County	56035		Oil (bbl)	727
+2008	WY	Natrona County	56025		Oil (bbl)	947.52
+2005	WY	Uinta County	56041		Gas (mcf)	1010
+2010	WY	Johnson County	56019		Oil (bbl)	1094
+2007	WY	Sublette County	56035		Oil (bbl)	1513
+2010	WY	Converse County	56009		Oil (bbl)	1518
+2014	WY	Hot Springs County	56017		Oil (bbl)	1582.35
+2007	WY	Johnson County	56019		Oil (bbl)	1828
+2006	WY	Carbon County	56007		Oil (bbl)	1920.34
+2010	WY	Sheridan County	56033		Gas (mcf)	1986
+2013	WY	Carbon County	56007		Oil (bbl)	2048.5
+2014	WY	Lincoln County	56023		Oil (bbl)	2060
+2013	WY	Natrona County	56025		Oil (bbl)	2078.04
+2008	WY	Johnson County	56019		Oil (bbl)	2146
+2014	WY	Carbon County	56007		Oil (bbl)	2200
+2006	WY	Johnson County	56019		Oil (bbl)	2381
+2005	WY	Carbon County	56007		Oil (bbl)	2439.65
+2012	WY	Niobrara County	56027		Oil (bbl)	2449.17
+2011	WY	Fremont County	56013		Oil (bbl)	2484.98
+2011	WY	Laramie County	56021		Gas (mcf)	2611.46
+2007	WY	Sheridan County	56033		Gas (mcf)	2613
+2010	WY	Laramie County	56021		Gas (mcf)	2752.55
+2008	WY	Laramie County	56021		Gas (mcf)	2886.28
+2005	WY	Natrona County	56025		Oil (bbl)	2935
+2007	WY	Natrona County	56025		Gas (mcf)	2956
+2007	WY	Laramie County	56021		Gas (mcf)	2962.69
+2014	WY	Laramie County	56021		Gas (mcf)	2965.48
+2006	WY	Sheridan County	56033		Oil (bbl)	3044.09
+2006	WY	Laramie County	56021		Gas (mcf)	3046.31
+2009	WY	Laramie County	56021		Gas (mcf)	3075.3
+2012	WY	Carbon County	56007		Oil (bbl)	3086
+2012	WY	Laramie County	56021		Gas (mcf)	3215.27
+2009	WY	Fremont County	56013		Oil (bbl)	3666
+2011	WY	Carbon County	56007		Oil (bbl)	3735
+2010	WY	Fremont County	56013		Oil (bbl)	3737
+2005	WY	Laramie County	56021		Gas (mcf)	3751.45
+2013	WY	Lincoln County	56023		Oil (bbl)	3767
+2013	WY	Park County	56029		Gas (mcf)	3839
+2014	WY	Fremont County	56013		Oil (bbl)	3950.73
+2005	WY	Sublette County	56035		Oil (bbl)	3963
+2007	WY	Carbon County	56007		Oil (bbl)	4134.5
+2013	WY	Sheridan County	56033		Oil (bbl)	4150.25
+2014	WY	Campbell County	56005		Oil (bbl)	4261
+2010	WY	Carbon County	56007		Oil (bbl)	4398.5
+2012	WY	Natrona County	56025		Oil (bbl)	4495.23
+2012	WY	Lincoln County	56023		Oil (bbl)	4669.67
+2013	WY	Laramie County	56021		Gas (mcf)	4714.67
+2007	WY	Albany County	56001		Gas (mcf)	4753
+2012	WY	Sheridan County	56033		Oil (bbl)	4901.71
+2009	WY	Carbon County	56007		Oil (bbl)	5035.5
+2007	WY	Sheridan County	56033		Oil (bbl)	5132.35
+2009	WY	Sheridan County	56033		Gas (mcf)	5152
+2013	WY	Fremont County	56013		Oil (bbl)	5350.96
+2011	WY	Lincoln County	56023		Oil (bbl)	5385
+2014	WY	Park County	56029		Gas (mcf)	5392
+2007	WY	Park County	56029		Gas (mcf)	5480
+2012	WY	Sweetwater County	56037		Oil (bbl)	5594.67
+2011	WY	Sheridan County	56033		Oil (bbl)	5884.67
+2005	WY	Albany County	56001		Gas (mcf)	6272
+2008	WY	Albany County	56001		Gas (mcf)	6333.87
+2009	WY	Fremont County	56013		Gas (mcf)	6399
+2006	WY	Albany County	56001		Gas (mcf)	6695
+2012	WY	Park County	56029		Gas (mcf)	6716
+2008	WY	Carbon County	56007		Oil (bbl)	6946
+2007	WY	Fremont County	56013		Oil (bbl)	7071
+2009	WY	Sheridan County	56033		Oil (bbl)	7238.02
+2008	WY	Converse County	56009		Gas (mcf)	7529
+2010	WY	Sheridan County	56033		Oil (bbl)	7658.15
+2009	WY	Lincoln County	56023		Oil (bbl)	7785.67
+2006	WY	Park County	56029		Gas (mcf)	7872
+2008	WY	Sheridan County	56033		Gas (mcf)	8004
+2006	WY	Fremont County	56013		Oil (bbl)	8062
+2008	WY	Converse County	56009		Oil (bbl)	8136
+2008	WY	Sheridan County	56033		Oil (bbl)	8310.61
+2010	WY	Lincoln County	56023		Oil (bbl)	8317.17
+2009	WY	Sweetwater County	56037		Oil (bbl)	8473.17
+2008	WY	Fremont County	56013		Oil (bbl)	9097.48
+2014	WY	Sheridan County	56033		Oil (bbl)	9257.19
+2010	WY	Converse County	56009		Gas (mcf)	9284
+2011	WY	Sweetwater County	56037		Oil (bbl)	9573
+2008	WY	Sweetwater County	56037		Oil (bbl)	9762.33
+2010	WY	Sweetwater County	56037		Oil (bbl)	9922.17
+2009	WY	Converse County	56009		Oil (bbl)	10376
+2008	WY	Lincoln County	56023		Oil (bbl)	10767.33
+2005	WY	Lincoln County	56023		Oil (bbl)	11434
+2012	WY	Fremont County	56013		Oil (bbl)	11781.77
+2010	WY	Sublette County	56035		Oil (bbl)	11841.5
+2006	WY	Lincoln County	56023		Oil (bbl)	11973.54
+2007	WY	Fremont County	56013		Gas (mcf)	12354
+2014	WY	Laramie County	56021		Oil (bbl)	12916.87
+2007	WY	Lincoln County	56023		Oil (bbl)	13514
+2008	WY	Natrona County	56025		Gas (mcf)	13954.51
+2005	WY	Fremont County	56013		Oil (bbl)	13969
+2014	WY	Johnson County	56019		Oil (bbl)	14530
+2014	WY	Albany County	56001		Oil (bbl)	14542.94
+2011	WY	Laramie County	56021		Oil (bbl)	14592.65
+2014	WY	Natrona County	56025		Oil (bbl)	14835.27
+2009	WY	Albany County	56001		Gas (mcf)	14848.72
+2008	WY	Sublette County	56035		Oil (bbl)	15179
+2012	WY	Laramie County	56021		Oil (bbl)	15249.67
+2013	WY	Laramie County	56021		Oil (bbl)	15472.81
+2010	WY	Laramie County	56021		Oil (bbl)	16071.89
+2009	WY	Laramie County	56021		Oil (bbl)	16815.88
+2013	WY	Albany County	56001		Oil (bbl)	17573.52
+2008	WY	Laramie County	56021		Oil (bbl)	18238.48
+2007	WY	Sweetwater County	56037		Oil (bbl)	18725.5
+2007	WY	Laramie County	56021		Oil (bbl)	19493.86
+2008	WY	Albany County	56001		Oil (bbl)	19807.74
+2010	WY	Albany County	56001		Gas (mcf)	19843.45
+2012	WY	Niobrara County	56027		Gas (mcf)	20819.25
+2006	WY	Laramie County	56021		Oil (bbl)	21103.02
+2005	WY	Laramie County	56021		Oil (bbl)	21674.23
+2013	WY	Albany County	56001		Gas (mcf)	22151.86
+2009	WY	Sublette County	56035		Oil (bbl)	22759
+2014	WY	Albany County	56001		Gas (mcf)	22816.72
+2012	WY	Albany County	56001		Gas (mcf)	23053.68
+2011	WY	Albany County	56001		Gas (mcf)	24375.44
+2011	WY	Park County	56029		Gas (mcf)	24726
+2014	WY	Crook County	56011		Gas (mcf)	25385.93
+2014	WY	Sublette County	56035		Oil (bbl)	25617
+2006	WY	Sublette County	56035		Oil (bbl)	25629.5
+2009	WY	Albany County	56001		Oil (bbl)	25855.12
+2013	WY	Crook County	56011		Gas (mcf)	26724.42
+2006	WY	Sweetwater County	56037		Oil (bbl)	27066.61
+2010	WY	Albany County	56001		Oil (bbl)	27416.41
+2011	WY	Albany County	56001		Oil (bbl)	27647.33
+2009	WY	Converse County	56009		Gas (mcf)	27740
+2012	WY	Albany County	56001		Oil (bbl)	28095.61
+2007	WY	Crook County	56011		Gas (mcf)	28144.28
+2008	WY	Fremont County	56013		Gas (mcf)	30391.49
+2007	WY	Albany County	56001		Oil (bbl)	31544.38
+2009	WY	Crook County	56011		Gas (mcf)	31751.16
+2013	WY	Johnson County	56019		Oil (bbl)	31902
+2012	WY	Crook County	56011		Gas (mcf)	32915.79
+2008	WY	Crook County	56011		Gas (mcf)	33156.66
+2014	WY	Park County	56029		Oil (bbl)	33292.65
+2013	WY	Niobrara County	56027		Oil (bbl)	34113.43
+2011	WY	Sweetwater County	56037		Sodium Bi-Carbonate (tons)	34297
+2011	WY	Crook County	56011		Gas (mcf)	34746.08
+2010	WY	Crook County	56011		Gas (mcf)	35924.84
+2005	WY	Sweetwater County	56037		Oil (bbl)	37419.35
+2006	WY	Albany County	56001		Oil (bbl)	37652.98
+2005	WY	Albany County	56001		Oil (bbl)	37959.78
+2010	WY	Park County	56029		Gas (mcf)	38676
+2013	WY	Uinta County	56041		Gas (mcf)	40153.96
+2012	WY	Sublette County	56035		Oil (bbl)	41500
+2006	WY	Crook County	56011		Gas (mcf)	41521.49
+2010	WY	Sweetwater County	56037		Sodium Bi-Carbonate (tons)	46904
+2013	WY	Sublette County	56035		Oil (bbl)	49108
+2012	WY	Uinta County	56041		Gas (mcf)	50910.62
+2009	WY	Park County	56029		Gas (mcf)	51727
+2005	WY	Crook County	56011		Gas (mcf)	55555.27
+2011	WY	Uinta County	56041		Gas (mcf)	56329.94
+2006	WY	Natrona County	56025		Gas (mcf)	57621.5
+2011	WY	Converse County	56009		Oil (bbl)	57818
+2005	WY	Sweetwater County	56037		Purge Liquor (tons- equivalent)	61925
+2010	WY	Uinta County	56041		Gas (mcf)	63795.27
+2011	WY	Natrona County	56025		Gas (mcf)	64806.73
+2013	WY	Niobrara County	56027		Gas (mcf)	67872.55
+2012	WY	Sweetwater County	56037		Sodium Bi-Carbonate (tons)	69262
+2006	WY	Sweetwater County	56037		Purge Liquor (tons- equivalent)	69814
+2013	WY	Sweetwater County	56037		Sodium Bi-Carbonate (tons)	71539
+2012	WY	Sweetwater County	56037		Purge Liquor (tons- equivalent)	73594
+2008	WY	Uinta County	56041		Gas (mcf)	75780.26
+2005	WY	Campbell County	56005		Gas (mcf)	78184.5
+2005	WY	Carbon County	56007		Gas (mcf)	80043.17
+2009	WY	Uinta County	56041		Gas (mcf)	81510.59
+2011	WY	Sublette County	56035		Gas (mcf)	82549
+2006	WY	Carbon County	56007		Gas (mcf)	85243.37
+2013	WY	Sweetwater County	56037		Purge Liquor (tons- equivalent)	88213
+2011	WY	Sweetwater County	56037		Purge Liquor (tons- equivalent)	88407
+2014	WY	Sweetwater County	56037		Purge Liquor (tons- equivalent)	91878
+2014	WY	Niobrara County	56027		Oil (bbl)	96243.02
+2006	WY	Fremont County	56013		Gas (mcf)	97224.5
+2007	WY	Sweetwater County	56037		Purge Liquor (tons- equivalent)	97711
+2010	WY	Sweetwater County	56037		Purge Liquor (tons- equivalent)	104405
+2014	WY	Sweetwater County	56037		Sodium Bi-Carbonate (tons)	107022
+2008	WY	Park County	56029		Gas (mcf)	110719
+2008	WY	Sweetwater County	56037		Purge Liquor (tons- equivalent)	116333
+2009	WY	Sweetwater County	56037		Purge Liquor (tons- equivalent)	118021
+2011	WY	Converse County	56009		Gas (mcf)	119203
+2013	WY	Sweetwater County	56037		Sodium Sesquicarbonate	121115
+2009	WY	Sweetwater County	56037		Trona Ore (tons)	139699
+2005	WY	Park County	56029		Gas (mcf)	142172
+2007	WY	Sublette County	56035		Gas (mcf)	148659
+2005	WY	Niobrara County	56027		Gas (mcf)	159414.08
+2005	WY	Fremont County	56013		Gas (mcf)	159649
+2014	WY	Niobrara County	56027		Gas (mcf)	178072.4
+2014	WY	Carbon County	56007		Gas (mcf)	195075
+2014	WY	Hot Springs County	56017		Gas (mcf)	209384.99
+2014	WY	Sweetwater County	56037		Oil (bbl)	229319
+2013	WY	Carbon County	56007		Gas (mcf)	229639
+2006	WY	Campbell County	56005		Gas (mcf)	233741
+2013	WY	Hot Springs County	56017		Gas (mcf)	233882.82
+2012	WY	Hot Springs County	56017		Gas (mcf)	237309.73
+2010	WY	Hot Springs County	56017		Gas (mcf)	253819.85
+2013	WY	Sweetwater County	56037		Oil (bbl)	261546.5
+2014	WY	Lincoln County	56023		Oil (bbl)	262460.82
+2012	WY	Carbon County	56007		Gas (mcf)	277268
+2013	WY	Lincoln County	56023		Oil (bbl)	278398.66
+2006	WY	Hot Springs County	56017		Gas (mcf)	282824.51
+2005	WY	Niobrara County	56027		Oil (bbl)	285122.34
+2011	WY	Hot Springs County	56017		Gas (mcf)	287667.29
+2009	WY	Niobrara County	56027		Oil (bbl)	287695.31
+2005	WY	Natrona County	56025		Gas (mcf)	294631
+2007	WY	Niobrara County	56027		Oil (bbl)	296955.75
+2008	WY	Niobrara County	56027		Oil (bbl)	298207.9
+2012	WY	Lincoln County	56023		Oil (bbl)	310844.7
+2006	WY	Niobrara County	56027		Oil (bbl)	316898.24
+2011	WY	Carbon County	56007		Gas (mcf)	320910.5
+2011	WY	Lincoln County	56023		Oil (bbl)	327481.86
+2013	WY	Weston County	56045		Oil (bbl)	327877.16
+2014	WY	Lincoln County	56023		Gas (mcf)	328154
+2010	WY	Niobrara County	56027		Oil (bbl)	335097.22
+2014	WY	Weston County	56045		Oil (bbl)	339891.13
+2012	WY	Weston County	56045		Oil (bbl)	350180.37
+2006	WY	Niobrara County	56027		Gas (mcf)	360137.75
+2011	WY	Weston County	56045		Oil (bbl)	363130.94
+2005	WY	Hot Springs County	56017		Gas (mcf)	372477.48
+2010	WY	Carbon County	56007		Gas (mcf)	381876.5
+2007	WY	Carbon County	56007		Gas (mcf)	382862.85
+2009	WY	Hot Springs County	56017		Gas (mcf)	385396.39
+2013	WY	Natrona County	56025		Gas (mcf)	389703.24
+2010	WY	Lincoln County	56023		Oil (bbl)	392640.72
+2010	WY	Weston County	56045		Oil (bbl)	393593.18
+2014	WY	Niobrara County	56027		Gas (mcf)	399792.81
+2014	WY	Natrona County	56025		Gas (mcf)	412862.59
+2013	WY	Niobrara County	56027		Gas (mcf)	413049.4
+2014	WY	Uinta County	56041		Oil (bbl)	414591.72
+2011	WY	Niobrara County	56027		Oil (bbl)	421034.27
+2009	WY	Weston County	56045		Oil (bbl)	423460.58
+2005	WY	Sublette County	56035		Gas (mcf)	430822
+2007	WY	Hot Springs County	56017		Gas (mcf)	437931.22
+2008	WY	Lincoln County	56023		Oil (bbl)	447583.24
+2009	WY	Lincoln County	56023		Oil (bbl)	451092.71
+2011	WY	Uinta County	56041		Oil (bbl)	455766.95
+2013	WY	Uinta County	56041		Oil (bbl)	457917.78
+2010	WY	Uinta County	56041		Oil (bbl)	458008.36
+2013	WY	Niobrara County	56027		Oil (bbl)	459213.25
+2011	WY	Washakie County	56043		Oil (bbl)	462412.41
+2012	WY	Niobrara County	56027		Oil (bbl)	463771.11
+2005	WY	Lincoln County	56023		Gas (mcf)	463930.35
+2008	WY	Weston County	56045		Oil (bbl)	464548.16
+2006	WY	Lincoln County	56023		Oil (bbl)	467115.29
+2011	WY	Fremont County	56013		Gas (mcf)	473376.27
+2009	WY	Uinta County	56041		Oil (bbl)	474330.15
+2012	WY	Washakie County	56043		Oil (bbl)	483068.02
+2012	WY	Uinta County	56041		Oil (bbl)	484144.91
+2007	WY	Lincoln County	56023		Oil (bbl)	485650.34
+2005	WY	Lincoln County	56023		Oil (bbl)	486330.55
+2009	WY	Washakie County	56043		Oil (bbl)	495573.57
+2013	WY	Washakie County	56043		Oil (bbl)	500757.04
+2010	WY	Washakie County	56043		Oil (bbl)	502098.56
+2007	WY	Weston County	56045		Oil (bbl)	511308.98
+2012	WY	Niobrara County	56027		Gas (mcf)	524183.14
+2007	WY	Campbell County	56005		Gas (mcf)	525038
+2009	WY	Carbon County	56007		Gas (mcf)	535625
+2014	WY	Washakie County	56043		Oil (bbl)	536571.55
+2006	WY	Fremont County	56013		Oil (bbl)	543419.48
+2006	WY	Weston County	56045		Oil (bbl)	545705.37
+2008	WY	Hot Springs County	56017		Gas (mcf)	546985.79
+2007	WY	Fremont County	56013		Oil (bbl)	553736.12
+2005	WY	Fremont County	56013		Oil (bbl)	558776.27
+2008	WY	Washakie County	56043		Oil (bbl)	562648.42
+2008	WY	Uinta County	56041		Oil (bbl)	567260.21
+2005	WY	Weston County	56045		Oil (bbl)	567708.04
+2014	WY	Big Horn County	56003		Oil (bbl)	568255.32
+2014	WY	Fremont County	56013		Oil (bbl)	573164.78
+2014	WY	Niobrara County	56027		Oil (bbl)	576142.14
+2013	WY	Big Horn County	56003		Oil (bbl)	582258.24
+2014	WY	Crook County	56011		Oil (bbl)	587432.52
+2007	WY	Uinta County	56041		Oil (bbl)	592729.45
+2011	WY	Niobrara County	56027		Gas (mcf)	597421.01
+2007	WY	Washakie County	56043		Oil (bbl)	605411.93
+2014	WY	Washakie County	56043		Gas (mcf)	610753.82
+2009	WY	Campbell County	56005		Gas (mcf)	611773
+2012	WY	Big Horn County	56003		Oil (bbl)	613063.33
+2005	WY	Washakie County	56043		Oil (bbl)	614102.09
+2013	WY	Lincoln County	56023		Gas (mcf)	614692.08
+2006	WY	Washakie County	56043		Oil (bbl)	615094.53
+2008	WY	Johnson County	56019		Gas (mcf)	615327.5
+2008	WY	Carbon County	56007		Gas (mcf)	615383.97
+2013	WY	Washakie County	56043		Gas (mcf)	616977.49
+2011	WY	Big Horn County	56003		Oil (bbl)	619936.09
+2008	WY	Fremont County	56013		Oil (bbl)	654884.79
+2010	WY	Big Horn County	56003		Oil (bbl)	657408.52
+2012	WY	Washakie County	56043		Gas (mcf)	658227.88
+2011	WY	Washakie County	56043		Gas (mcf)	669662.97
+2010	WY	Sweetwater County	56037		Gas (mcf)	679314.77
+2013	WY	Crook County	56011		Oil (bbl)	682364.33
+2011	WY	Crook County	56011		Oil (bbl)	685449.64
+2009	WY	Fremont County	56013		Oil (bbl)	689150.18
+2010	WY	Niobrara County	56027		Gas (mcf)	695633.64
+2009	WY	Crook County	56011		Oil (bbl)	696883.26
+2011	WY	Campbell County	56005		Gas (mcf)	699312
+2009	WY	Big Horn County	56003		Oil (bbl)	699357.29
+2012	WY	Natrona County	56025		Gas (mcf)	703257.06
+2009	WY	Niobrara County	56027		Gas (mcf)	704654.52
+2007	WY	Johnson County	56019		Gas (mcf)	709603
+2010	WY	Campbell County	56005		Gas (mcf)	712665
+2010	WY	Crook County	56011		Oil (bbl)	715921.22
+2008	WY	Big Horn County	56003		Oil (bbl)	721055.41
+2006	WY	Uinta County	56041		Oil (bbl)	721474.08
+2012	WY	Lincoln County	56023		Gas (mcf)	721878.77
+2012	WY	Converse County	56009		Oil (bbl)	725717.83
+2011	WY	Johnson County	56019		Oil (bbl)	729990.66
+2014	WY	Carbon County	56007		Oil (bbl)	736197.55
+2008	WY	Crook County	56011		Oil (bbl)	736254.6
+2008	WY	Niobrara County	56027		Gas (mcf)	737725.42
+2013	WY	Carbon County	56007		Oil (bbl)	738385.05
+2010	WY	Washakie County	56043		Gas (mcf)	740440.42
+2012	WY	Crook County	56011		Oil (bbl)	749453.42
+2007	WY	Big Horn County	56003		Oil (bbl)	759656.23
+2007	WY	Niobrara County	56027		Gas (mcf)	762637.41
+2009	WY	Washakie County	56043		Gas (mcf)	781320.67
+2007	WY	Crook County	56011		Oil (bbl)	788576.18
+2010	WY	Johnson County	56019		Oil (bbl)	796012.29
+2012	WY	Johnson County	56019		Oil (bbl)	797941.37
+2010	WY	Carbon County	56007		Oil (bbl)	805271.21
+2006	WY	Big Horn County	56003		Oil (bbl)	812267.13
+2012	WY	Carbon County	56007		Oil (bbl)	815483.76
+2005	WY	Crook County	56011		Oil (bbl)	818143.04
+2005	WY	Big Horn County	56003		Oil (bbl)	821183.81
+2006	WY	Crook County	56011		Oil (bbl)	821387.23
+2014	WY	Weston County	56045		Gas (mcf)	829710.78
+2011	WY	Lincoln County	56023		Gas (mcf)	832946.11
+2011	WY	Carbon County	56007		Oil (bbl)	833372.21
+2010	WY	Fremont County	56013		Oil (bbl)	840807.31
+2009	WY	Johnson County	56019		Oil (bbl)	854553.86
+2008	WY	Washakie County	56043		Gas (mcf)	860847.26
+2005	WY	Uinta County	56041		Oil (bbl)	871917.29
+2011	WY	Fremont County	56013		Oil (bbl)	895421.39
+2008	WY	Johnson County	56019		Oil (bbl)	902797.63
+2007	WY	Johnson County	56019		Oil (bbl)	906452.92
+2011	WY	Weston County	56045		Gas (mcf)	911990.8
+2014	WY	Fremont County	56013		Gas (mcf)	912383.41
+2013	WY	Weston County	56045		Gas (mcf)	917195.66
+2008	WY	Weston County	56045		Gas (mcf)	922686.09
+2013	WY	Fremont County	56013		Oil (bbl)	937980.14
+2012	WY	Weston County	56045		Gas (mcf)	944061.28
+2008	WY	Campbell County	56005		Gas (mcf)	956799.5
+2009	WY	Carbon County	56007		Oil (bbl)	962161
+2005	WY	Johnson County	56019		Oil (bbl)	968326.95
+2006	WY	Johnson County	56019		Oil (bbl)	973495.95
+2007	WY	Washakie County	56043		Gas (mcf)	974733.79
+2008	WY	Carbon County	56007		Oil (bbl)	975945.16
+2008	WY	Converse County	56009		Oil (bbl)	984686.05
+2009	WY	Weston County	56045		Gas (mcf)	985422.47
+2006	WY	Lincoln County	56023		Gas (mcf)	991428.11
+2010	WY	Weston County	56045		Gas (mcf)	999871.82
+2007	WY	Converse County	56009		Oil (bbl)	1007431.69
+2005	WY	Carbon County	56007		Oil (bbl)	1009142.81
+2005	WY	Johnson County	56019		Gas (mcf)	1029462.5
+2012	WY	Sweetwater County	56037		Gas (mcf)	1031239.62
+2009	WY	Lincoln County	56023		Gas (mcf)	1044185.83
+2012	WY	Fremont County	56013		Oil (bbl)	1045296.63
+2009	WY	Converse County	56009		Oil (bbl)	1047784.92
+2005	WY	Converse County	56009		Oil (bbl)	1061692.31
+2010	WY	Lincoln County	56023		Gas (mcf)	1070132.96
+2006	WY	Converse County	56009		Oil (bbl)	1073456.24
+2006	WY	Carbon County	56007		Oil (bbl)	1079314.66
+2011	WY	Sweetwater County	56037		Gas (mcf)	1082701.44
+2014	WY	Sublette County	56035		Gas (mcf)	1084504
+2012	WY	Campbell County	56005		Gas (mcf)	1102526
+2006	WY	Washakie County	56043		Gas (mcf)	1125696.55
+2013	WY	Fremont County	56013		Gas (mcf)	1130750.76
+2007	WY	Weston County	56045		Gas (mcf)	1139035.77
+2006	WY	Weston County	56045		Gas (mcf)	1144514.5
+2005	WY	Weston County	56045		Gas (mcf)	1163970.05
+2007	WY	Carbon County	56007		Oil (bbl)	1178559.16
+2013	WY	Johnson County	56019		Oil (bbl)	1212537.68
+2013	WY	Campbell County	56005		Gas (mcf)	1274701
+2014	WY	Johnson County	56019		Oil (bbl)	1285646.48
+2010	WY	Converse County	56009		Oil (bbl)	1303204.76
+2005	WY	Washakie County	56043		Gas (mcf)	1309037.13
+2008	WY	Lincoln County	56023		Gas (mcf)	1319899.98
+2014	WY	Big Horn County	56003		Gas (mcf)	1411338.08
+2006	WY	Johnson County	56019		Gas (mcf)	1415485.5
+2007	WY	Lincoln County	56023		Gas (mcf)	1425570
+2010	WY	Sublette County	56035		Gas (mcf)	1451481.5
+2013	WY	Big Horn County	56003		Gas (mcf)	1537587.4
+2009	WY	Sweetwater County	56037		Coal (tons)	1583464
+2012	WY	Sublette County	56035		Gas (mcf)	1585504
+2011	WY	Converse County	56009		Oil (bbl)	1679043.24
+2012	WY	Big Horn County	56003		Gas (mcf)	1680122.36
+2014	WY	Campbell County	56005		Gas (mcf)	1707288
+2009	WY	Sweetwater County	56037		Gas (mcf)	1772629.59
+2013	WY	Converse County	56009		Oil (bbl)	1807551.57
+2008	WY	Sweetwater County	56037		Gas (mcf)	1849061.29
+2011	WY	Big Horn County	56003		Gas (mcf)	1864314.99
+2014	WY	Hot Springs County	56017		Oil (bbl)	1891438.61
+2008	WY	Sublette County	56035		Gas (mcf)	1919110.5
+2013	WY	Hot Springs County	56017		Oil (bbl)	1944827.44
+2012	WY	Fremont County	56013		Gas (mcf)	1955874.94
+2010	WY	Big Horn County	56003		Gas (mcf)	2003667.41
+2012	WY	Hot Springs County	56017		Oil (bbl)	2014471.37
+2005	WY	Sweetwater County	56037		Oil (bbl)	2079774.1
+2011	WY	Hot Springs County	56017		Oil (bbl)	2082969.73
+2012	WY	Converse County	56009		Oil (bbl)	2114040.84
+2008	WY	Sweetwater County	56037		Coal (tons)	2186850
+2010	WY	Hot Springs County	56017		Oil (bbl)	2195104.63
+2009	WY	Big Horn County	56003		Gas (mcf)	2216877.52
+2009	WY	Hot Springs County	56017		Oil (bbl)	2263119.76
+2006	WY	Sublette County	56035		Gas (mcf)	2265060.5
+2006	WY	Sweetwater County	56037		Oil (bbl)	2312105.35
+2010	WY	Sweetwater County	56037		Oil (bbl)	2317556.62
+2005	WY	Sweetwater County	56037		Coal (tons)	2332026
+2008	WY	Big Horn County	56003		Gas (mcf)	2344632.2
+2007	WY	Big Horn County	56003		Gas (mcf)	2356638.8
+2012	WY	Converse County	56009		Gas (mcf)	2372037.75
+2009	WY	Sweetwater County	56037		Oil (bbl)	2376059.59
+2013	WY	Converse County	56009		Oil (bbl)	2446311.35
+2007	WY	Hot Springs County	56017		Oil (bbl)	2446664.13
+2010	WY	Sweetwater County	56037		Coal (tons)	2448074
+2008	WY	Hot Springs County	56017		Oil (bbl)	2462560
+2008	WY	Sweetwater County	56037		Oil (bbl)	2479149.51
+2006	WY	Hot Springs County	56017		Oil (bbl)	2493318.2
+2014	WY	Converse County	56009		Oil (bbl)	2493897.41
+2005	WY	Hot Springs County	56017		Oil (bbl)	2502162.64
+2013	WY	Sublette County	56035		Gas (mcf)	2509050
+2014	WY	Sweetwater County	56037		Oil (bbl)	2512392.37
+2014	WY	Sheridan County	56033		Gas (mcf)	2536905.23
+2011	WY	Sweetwater County	56037		Oil (bbl)	2544248.33
+2007	WY	Sweetwater County	56037		Gas (mcf)	2568162.15
+2013	WY	Sweetwater County	56037		Oil (bbl)	2612344.73
+2009	WY	Johnson County	56019		Gas (mcf)	2689458
+2007	WY	Sweetwater County	56037		Oil (bbl)	2725790.92
+2012	WY	Sweetwater County	56037		Oil (bbl)	2726149.81
+2006	WY	Big Horn County	56003		Gas (mcf)	2758062.18
+2011	WY	Sweetwater County	56037		Coal (tons)	2889839
+2009	WY	Sublette County	56035		Gas (mcf)	2891827
+2006	WY	Sweetwater County	56037		Coal (tons)	2972629
+2007	WY	Sweetwater County	56037		Coal (tons)	3029163
+2005	WY	Big Horn County	56003		Gas (mcf)	3043197.32
+2006	WY	Sweetwater County	56037		Gas (mcf)	3076814.02
+2013	WY	Sweetwater County	56037		Coal (tons)	3123934
+2005	WY	Sweetwater County	56037		Gas (mcf)	3180688.48
+2005	WY	Natrona County	56025		Oil (bbl)	3330947.85
+2005	WY	Sweetwater County	56037		Soda Ash (tons)	3416753
+2006	WY	Natrona County	56025		Oil (bbl)	3466176.61
+2014	WY	Sweetwater County	56037		Coal (tons)	3611250
+2009	WY	Campbell County	56005		Oil (bbl)	3621868.05
+2007	WY	Natrona County	56025		Oil (bbl)	3807087.07
+2010	WY	Campbell County	56005		Oil (bbl)	3842018.08
+2005	WY	Sheridan County	56033		Gas (mcf)	3872440.28
+2012	WY	Sweetwater County	56037		Coal (tons)	3886834
+2011	WY	Campbell County	56005		Oil (bbl)	3905535.42
+2008	WY	Campbell County	56005		Oil (bbl)	3970614.39
+2012	WY	Campbell County	56005		Oil (bbl)	3998705.67
+2014	WY	Converse County	56009		Oil (bbl)	4117182.98
+2008	WY	Natrona County	56025		Oil (bbl)	4127923.92
+2014	WY	Park County	56029		Oil (bbl)	4203523.42
+2013	WY	Sheridan County	56033		Gas (mcf)	4254751.23
+2005	WY	Campbell County	56005		Oil (bbl)	4274528.35
+2013	WY	Park County	56029		Oil (bbl)	4295658.46
+2007	WY	Campbell County	56005		Oil (bbl)	4311757.67
+2011	WY	Park County	56029		Oil (bbl)	4395191.35
+2009	WY	Natrona County	56025		Oil (bbl)	4426242.59
+2012	WY	Park County	56029		Oil (bbl)	4439571.11
+2010	WY	Converse County	56009		Gas (mcf)	4548371.86
+2012	WY	Natrona County	56025		Oil (bbl)	4622566.93
+2010	WY	Park County	56029		Oil (bbl)	4622716.93
+2011	WY	Converse County	56009		Gas (mcf)	4654394.47
+2006	WY	Campbell County	56005		Oil (bbl)	4679884.52
+2012	WY	Sweetwater County	56037		Soda Ash (tons)	4740200
+2006	WY	Sweetwater County	56037		Soda Ash (tons)	4755332
+2005	WY	Sublette County	56035		Oil (bbl)	4768968.75
+2009	WY	Park County	56029		Oil (bbl)	4794941.04
+2009	WY	Converse County	56009		Gas (mcf)	4940029.21
+2010	WY	Sweetwater County	56037		Soda Ash (tons)	4990309
+2013	WY	Campbell County	56005		Oil (bbl)	5011776.04
+2011	WY	Natrona County	56025		Oil (bbl)	5117594.65
+2010	WY	Natrona County	56025		Oil (bbl)	5151081.45
+2008	WY	Park County	56029		Oil (bbl)	5168488.41
+2013	WY	Sweetwater County	56037		Soda Ash (tons)	5232597
+2013	WY	Natrona County	56025		Oil (bbl)	5247332.83
+2005	WY	Park County	56029		Oil (bbl)	5355702.5
+2006	WY	Sublette County	56035		Oil (bbl)	5365619.04
+2012	WY	Converse County	56009		Gas (mcf)	5405068.12
+2014	WY	Natrona County	56025		Oil (bbl)	5431345.65
+2007	WY	Park County	56029		Oil (bbl)	5450279.35
+2006	WY	Park County	56029		Oil (bbl)	5455509.63
+2013	WY	Park County	56029		Gas (mcf)	5456043.68
+2009	WY	Sweetwater County	56037		Soda Ash (tons)	5545300
+2012	WY	Park County	56029		Gas (mcf)	5579538.48
+2011	WY	Park County	56029		Gas (mcf)	5642103.26
+2014	WY	Sublette County	56035		Oil (bbl)	5651264.36
+2007	WY	Sweetwater County	56037		Soda Ash (tons)	5662599
+2014	WY	Park County	56029		Gas (mcf)	5704726.32
+2011	WY	Sweetwater County	56037		Soda Ash (tons)	5705147
+2008	WY	Converse County	56009		Gas (mcf)	5705802.88
+2013	WY	Sublette County	56035		Oil (bbl)	5724678.94
+2012	WY	Sheridan County	56033		Gas (mcf)	5950340.42
+2013	WY	Converse County	56009		Gas (mcf)	6037214.13
+2014	WY	Sweetwater County	56037		Soda Ash (tons)	6075994
+2010	WY	Park County	56029		Gas (mcf)	6161158.68
+2012	WY	Sublette County	56035		Oil (bbl)	6291631.95
+2009	WY	Park County	56029		Gas (mcf)	6350334.94
+2007	WY	Converse County	56009		Gas (mcf)	6427724.74
+2014	WY	Converse County	56009		Gas (mcf)	6434097.3
+2007	WY	Sublette County	56035		Oil (bbl)	6527857.76
+2011	WY	Sublette County	56035		Oil (bbl)	6761343.72
+2008	WY	Sublette County	56035		Oil (bbl)	6976425.61
+2011	WY	Sheridan County	56033		Gas (mcf)	6987386.31
+2010	WY	Sublette County	56035		Oil (bbl)	7012637.25
+2008	WY	Sweetwater County	56037		Soda Ash (tons)	7069757
+2009	WY	Sublette County	56035		Oil (bbl)	7261991.29
+2008	WY	Park County	56029		Gas (mcf)	7401805.06
+2006	WY	Converse County	56009		Gas (mcf)	7433813.85
+2007	WY	Park County	56029		Gas (mcf)	7955061.48
+2014	WY	Campbell County	56005		Oil (bbl)	7958533.97
+2006	WY	Sheridan County	56033		Gas (mcf)	8135034.77
+2013	WY	Converse County	56009		Gas (mcf)	8359365.45
+2010	WY	Sheridan County	56033		Gas (mcf)	9100310.43
+2006	WY	Park County	56029		Gas (mcf)	9234694.36
+2005	WY	Park County	56029		Gas (mcf)	9301310.44
+2005	WY	Converse County	56009		Gas (mcf)	9471463.84
+2007	WY	Sheridan County	56033		Gas (mcf)	9575675.22
+2014	WY	Sweetwater County	56037		Gas (mcf)	9688120
+2013	WY	Sweetwater County	56037		Gas (mcf)	10763884.96
+2009	WY	Sheridan County	56033		Gas (mcf)	10814352.42
+2008	WY	Sheridan County	56033		Gas (mcf)	12336425.19
+2010	WY	Johnson County	56019		Gas (mcf)	12348924
+2005	WY	Converse County	56009		Coal (tons)	12850408.47
+2014	WY	Natrona County	56025		Gas (mcf)	14185982.32
+2014	WY	Converse County	56009		Gas (mcf)	15267986.6
+2006	WY	Converse County	56009		Coal (tons)	15510274.63
+2013	WY	Natrona County	56025		Gas (mcf)	15573210.48
+2014	WY	Johnson County	56019		Gas (mcf)	17589827
+2012	WY	Natrona County	56025		Gas (mcf)	20621139.23
+2007	WY	Converse County	56009		Coal (tons)	20820403.38
+2011	WY	Natrona County	56025		Gas (mcf)	22566226.93
+2013	WY	Johnson County	56019		Gas (mcf)	23422268
+2011	WY	Johnson County	56019		Gas (mcf)	23959298
+2007	WY	Natrona County	56025		Gas (mcf)	25218677.59
+2009	WY	Natrona County	56025		Gas (mcf)	25845849.43
+2010	WY	Natrona County	56025		Gas (mcf)	26125160.15
+2008	WY	Natrona County	56025		Gas (mcf)	26914256.48
+2009	WY	Converse County	56009		Coal (tons)	27310525.02
+2008	WY	Converse County	56009		Coal (tons)	27570841.49
+2013	WY	Converse County	56009		Coal (tons)	27707014.37
+2012	WY	Johnson County	56019		Gas (mcf)	28764467
+2014	WY	Converse County	56009		Coal (tons)	29704239.13
+2010	WY	Converse County	56009		Coal (tons)	30063940.9
+2011	WY	Converse County	56009		Coal (tons)	30150938.46
+2012	WY	Converse County	56009		Coal (tons)	32480454.37
+2005	WY	Johnson County	56019		Gas (mcf)	33048491
+2006	WY	Natrona County	56025		Gas (mcf)	33358331.83
+2014	WY	Lincoln County	56023		Gas (mcf)	34978726.7
+2013	WY	Lincoln County	56023		Gas (mcf)	37367396.29
+2005	WY	Natrona County	56025		Gas (mcf)	37675063.86
+2014	WY	Uinta County	56041		Gas (mcf)	40310721.18
+2013	WY	Uinta County	56041		Gas (mcf)	41473252.84
+2012	WY	Lincoln County	56023		Gas (mcf)	42678003.46
+2011	WY	Uinta County	56041		Gas (mcf)	43176065.84
+2012	WY	Uinta County	56041		Gas (mcf)	43781498.62
+2009	WY	Uinta County	56041		Gas (mcf)	44558291.88
+2011	WY	Lincoln County	56023		Gas (mcf)	44871624.4
+2010	WY	Uinta County	56041		Gas (mcf)	47701878.24
+2008	WY	Uinta County	56041		Gas (mcf)	51307129.39
+2007	WY	Uinta County	56041		Gas (mcf)	51402103.97
+2010	WY	Lincoln County	56023		Gas (mcf)	51864144.9
+2006	WY	Uinta County	56041		Gas (mcf)	55004672.88
+2009	WY	Lincoln County	56023		Gas (mcf)	56099339.21
+2005	WY	Uinta County	56041		Gas (mcf)	57204759.72
+2014	WY	Campbell County	56005		Gas (mcf)	58558009.66
+2014	WY	Carbon County	56007		Gas (mcf)	58817957.49
+2008	WY	Lincoln County	56023		Gas (mcf)	60390327.58
+2013	WY	Carbon County	56007		Gas (mcf)	61377148.3
+2005	WY	Carbon County	56007		Gas (mcf)	61773412.37
+2013	WY	Campbell County	56005		Gas (mcf)	62804062.09
+2006	WY	Lincoln County	56023		Gas (mcf)	63625115.91
+2007	WY	Lincoln County	56023		Gas (mcf)	65621650.48
+2005	WY	Lincoln County	56023		Gas (mcf)	65807942.57
+2006	WY	Carbon County	56007		Gas (mcf)	66721266.46
+2012	WY	Carbon County	56007		Gas (mcf)	67424463.22
+2007	WY	Carbon County	56007		Gas (mcf)	69601963.94
+2011	WY	Carbon County	56007		Gas (mcf)	70685892.13
+2012	WY	Campbell County	56005		Gas (mcf)	72861952.78
+2008	WY	Carbon County	56007		Gas (mcf)	74215302.9
+2010	WY	Carbon County	56007		Gas (mcf)	75115398.2
+2009	WY	Carbon County	56007		Gas (mcf)	76539542.4
+2006	WY	Johnson County	56019		Gas (mcf)	76835009.04
+2009	WY	Campbell County	56005		Gas (mcf)	79168049.97
+2010	WY	Campbell County	56005		Gas (mcf)	81740961.49
+2011	WY	Campbell County	56005		Gas (mcf)	82328210.42
+2008	WY	Campbell County	56005		Gas (mcf)	86729459.61
+2007	WY	Campbell County	56005		Gas (mcf)	90149803.76
+2014	WY	Fremont County	56013		Gas (mcf)	90718863.99
+2008	WY	Fremont County	56013		Gas (mcf)	92597830.55
+2006	WY	Campbell County	56005		Gas (mcf)	94801413.22
+2013	WY	Fremont County	56013		Gas (mcf)	97212032.26
+2005	WY	Campbell County	56005		Gas (mcf)	98715466.16
+2012	WY	Fremont County	56013		Gas (mcf)	99963227.72
+2010	WY	Fremont County	56013		Gas (mcf)	101642025.79
+2011	WY	Fremont County	56013		Gas (mcf)	109618796.4
+2009	WY	Fremont County	56013		Gas (mcf)	112949838.6
+2007	WY	Fremont County	56013		Gas (mcf)	113515445.52
+2014	WY	Johnson County	56019		Gas (mcf)	117240770.14
+2005	WY	Sweetwater County	56037		Gas (mcf)	120345871.74
+2006	WY	Sweetwater County	56037		Gas (mcf)	129347310.23
+2009	WY	Sweetwater County	56037		Gas (mcf)	130168961.04
+2011	WY	Sweetwater County	56037		Gas (mcf)	130331280.53
+2014	WY	Sweetwater County	56037		Gas (mcf)	130531685.97
+2007	WY	Sweetwater County	56037		Gas (mcf)	132621564.96
+2006	WY	Fremont County	56013		Gas (mcf)	133220592.32
+2010	WY	Sweetwater County	56037		Gas (mcf)	133742071.1
+2005	WY	Fremont County	56013		Gas (mcf)	137914329.09
+2008	WY	Sweetwater County	56037		Gas (mcf)	138617882.31
+2013	WY	Sweetwater County	56037		Gas (mcf)	141304553.36
+2007	WY	Johnson County	56019		Gas (mcf)	141544310.16
+2013	WY	Johnson County	56019		Gas (mcf)	144512033.61
+2012	WY	Sweetwater County	56037		Gas (mcf)	145322221.39
+2012	WY	Johnson County	56019		Gas (mcf)	185881275.85
+2011	WY	Johnson County	56019		Gas (mcf)	227241553.29
+2008	WY	Johnson County	56019		Gas (mcf)	233080556.66
+2010	WY	Johnson County	56019		Gas (mcf)	266624394.99
+2009	WY	Johnson County	56019		Gas (mcf)	277754951.26
+2013	WY	Campbell County	56005		Coal (tons)	300698719.63
+2014	WY	Campbell County	56005		Coal (tons)	306733810.87
+2012	WY	Campbell County	56005		Coal (tons)	316944575.63
+2005	WY	Campbell County	56005		Coal (tons)	347391069.53
+2006	WY	Campbell County	56005		Coal (tons)	351373163.37
+2011	WY	Campbell County	56005		Coal (tons)	357071832.54
+2009	WY	Campbell County	56005		Coal (tons)	358852746.98
+2007	WY	Campbell County	56005		Coal (tons)	360352213.62
+2010	WY	Campbell County	56005		Coal (tons)	365023675.1
+2008	WY	Campbell County	56005		Coal (tons)	389157819.51
+2005	WY	Sublette County	56035		Gas (mcf)	716348586.31
+2006	WY	Sublette County	56035		Gas (mcf)	799778063.18
+2014	WY	Sublette County	56035		Gas (mcf)	919208099.93
+2013	WY	Sublette County	56035		Gas (mcf)	921495881.75
+2007	WY	Sublette County	56035		Gas (mcf)	938070534.03
+2012	WY	Sublette County	56035		Gas (mcf)	998464511.91
+2008	WY	Sublette County	56035		Gas (mcf)	1051437620.3
+2011	WY	Sublette County	56035		Gas (mcf)	1054103582.35
+2009	WY	Sublette County	56035		Gas (mcf)	1096813348.67
+2010	WY	Sublette County	56035		Gas (mcf)	1111114619.07

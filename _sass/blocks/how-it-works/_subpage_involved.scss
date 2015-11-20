@@ -8,7 +8,7 @@
 .revenues_subpage-involved {
   background-color: $white;
   padding-bottom: $base-padding-large;
-  padding-top: $base-padding-large;
+  padding-top: $base-padding-extra;
 
   h2 {
     color: $light-black;
@@ -16,8 +16,15 @@
   }
 
   h3 {
-    margin-bottom: 8px;
-    padding-bottom: 5px;
+    color: $blue;
+    font-weight: $weight-light;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  p {
+    @include heading(para-md);
+    margin-bottom: $base-padding-large;
   }
 
   .fa-stack {
@@ -35,13 +42,27 @@
     @include omega-reset(2n);
     @include span-columns(3 of 12);
     @include omega(4n);
+  }
+}
 
-    margin-top: $base-padding-large;
+.revenues_subpage-involved_participate {
+
+  .container-half-space {
+    padding-right: $base-padding;
+  }
+
+  @include respond-to(medium-up) {
+    .container-half-space_top {
+      padding-top: $base-padding-extra;
+    }
   }
 }
 
 .revenues_subpage-involved_video {
-  text-align: center;
+
+  iframe {
+    padding-bottom: $base-padding;
+  }
 
   @include respond-to(medium-up) {
     iframe {

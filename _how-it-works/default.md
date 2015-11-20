@@ -93,12 +93,12 @@ permalink: /how-it-works/
 		</div>
 	</section>
 	<section class="container">
-		<h3 class="landing-section_category">Laws and regulations</h3>
+		<h3 class="landing-section_category">Laws and governance</h3>
 		<div class="container landing-section" accordion-item accordion-open="true">
-			<h5 class="landing-heading"><a href="{{site.baseurl}}/how-it-works/federal-laws/">Federal laws</a></h5>
+			<h5 class="landing-heading"><a href="{{site.baseurl}}/how-it-works/federal-laws/">Federal laws and regulations</a></h5>
 			<button class="accordion-button" accordion-button></button>
 			<div class="accordion-content">
-				<p class="landing-description">Federal, state, and local governments pass laws and write rules and regulations to govern natural resource management and extraction.</p>
+				<p class="landing-description">The legislative branch has passed many laws that govern natural resource extraction on federal lands.</p>
 				<a href="{{site.baseurl}}/how-it-works/federal-laws/">
 					<img class="landing-image" src="{{site.baseurl}}/img/landing-placeholders/placeholder.png">
 				</a>
@@ -108,7 +108,7 @@ permalink: /how-it-works/
 			<h5 class="landing-heading"><a href="{{site.baseurl}}/how-it-works/federal-reforms/">Federal reforms</a></h5>
 			<button class="accordion-button" accordion-button></button>
 			<div class="accordion-content">
-				<p class="landing-description">Federal, state, and local governments pass laws and write rules and regulations to govern natural resource management and extraction.</p>
+				<p class="landing-description">The government reforms laws and regulations by enacting new legislation and proposing new rules to implement the legislation.</p>
 				<a href="{{site.baseurl}}/how-it-works/federal-reforms/">
 					<img class="landing-image" src="{{site.baseurl}}/img/landing-placeholders/placeholder.png">
 				</a>
@@ -118,7 +118,7 @@ permalink: /how-it-works/
 			<h5 class="landing-heading"><a href="{{site.baseurl}}/how-it-works/federal-agencies/">Federal agencies</a></h5>
 			<button class="accordion-button" accordion-button></button>
 			<div class="accordion-content">
-				<p class="landing-description">The legislative branch has passed many laws that govern natural resource extraction on federal lands. Federal agencies, such as DOI and relevant bureaus, implement these laws by developing and enforcing regulations and rules.</p>
+				<p class="landing-description">Federal agencies, such as DOI and relevant bureaus, implement laws by developing and enforcing regulations and rules.</p>
 				<a href="{{site.baseurl}}/how-it-works/federal-laws-and-reforms/">
 					<img class="landing-image" src="{{site.baseurl}}/img/landing-placeholders/placeholder.png">
 				</a>

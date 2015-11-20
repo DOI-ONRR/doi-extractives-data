@@ -7,6 +7,7 @@
 
   // our state is immutable!
   var state = new Immutable.Map();
+  var rendered = false;
   // this flag indicates whether we're in the middle of a state mutation
   var mutating = false;
 
@@ -92,11 +93,11 @@
     var old = state;
     state = fn(state);
     if (!Immutable.is(old, state)) {
-      if (stateChanged(old, state, 'group')) {
+      if (rendered && stateChanged(old, state, 'group')) {
         console.warn('commodity group:', old.get('group'), '->', state.get('group'));
         state = state.delete('commodity');
       }
-      if (stateChanged(old, state, 'commodity')) {
+      if (rendered && stateChanged(old, state, 'commodity')) {
         console.warn('commodity:', old.get('commodity'), '->', state.get('commodity'));
         state = state.delete('product');
       }
@@ -177,7 +178,7 @@
 
     selected.call(renderRegion, state);
     // console.timeEnd('render');
-    return true;
+    rendered = true;
   }
 
   function renderRegion(selection, state) {

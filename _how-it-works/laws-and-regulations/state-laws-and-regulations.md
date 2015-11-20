@@ -1,5 +1,5 @@
 ---
-title: State Laws and Regulations | How it Works
+title: State Legal and Fiscal Information | How It Works
 layout: default
 permalink: /how-it-works/state-laws-and-regulations/
 nav_items:
@@ -43,7 +43,7 @@ nav_items:
 
 <div class="container-outer container-padded">
 
-  <h1>State Laws and Regulations</h1>
+  <h1>State Legal and Fiscal Information</h1>
 
   <h3><a name="ak">Alaska</a></h3>
 

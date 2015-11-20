@@ -24,6 +24,11 @@
   var expanders = root.selectAll('button[aria-controls]')
     .call(eiti.ui.expando);
 
+  var focusers = root.selectAll('a[data-key]')
+    .on('click', function() {
+      d3.event.preventDefault();
+    });
+
   // get the filters and add change event handlers
   var filters = root.selectAll('.filters [name]')
     // intialize the state props
@@ -117,18 +122,20 @@
       .classed('non-product', !product)
       .classed('has-product', !!product);
 
+    var units;
     if (product) {
-      var match = product.match(/( \((.+)\))\s*$/);
-      var units = match ? ' ' + match[2] : '';
+      var match = product.match(/ (\(.+\))\s*$/);
+      units = match ? ' ' + match[1] : '';
       // console.log('product units:', units);
-      formatNumber = eiti.format.transform(eiti.format.si, function(str) {
-        return str + units;
-      });
+      formatNumber = eiti.format.si;
     } else {
       formatNumber = function(n) {
         return n + eiti.format.pluralize(n, ' product');
       };
     }
+
+    root.selectAll('.units')
+      .text(units);
 
     // update the filters
     filters.each(function() {
@@ -210,7 +217,7 @@
         .datum({
           value: Math.floor(total),
           properties: {
-            name: REGION_ID_NAME[regionId] || '???'
+            name: 'Total'
           }
         })
         .call(updateRegionRow);
@@ -348,6 +355,7 @@
     var max = d3.max(values.map(Math.abs));
 
     var bar = selection.select('eiti-bar');
+    bar.style('display', state.get('product') ? null : 'none');
     bar.attr('max', max);
     bar.attr('value', getter('value'));
 
@@ -417,7 +425,7 @@
     } else {
       data = [
         {color: NULL_FILL, value: 'no production'},
-        {color: colorbrewer.Blues[3][2], value: '1 or more products'},
+        {color: colorscheme[3][2], value: '1 or more products'},
       ];
     }
 
@@ -779,10 +787,17 @@
 
   function updateFilterDescription(state) {
     var desc = root.select('#filter-description');
-    var commodity = state.get('commodity') ||
-      (state.get('group')
-       ? eiti.commodities.groups[state.get('group')].name
-       : 'All');
+
+    var commodity = state.get('product');
+    if (commodity) {
+      commodity = commodity.replace(/\s+\(.+\)\s*$/, '');
+    } else {
+      commodity = state.get('commodity')
+        || (state.get('group')
+         ? eiti.commodities.groups[state.get('group')].name
+         : 'All');
+    }
+
     var data = {
       commodity: commodity,
       region: REGION_ID_NAME[state.get('region') || 'US'],

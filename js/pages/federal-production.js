@@ -21,8 +21,7 @@
   var NULL_FILL = '#eee';
 
   // buttons that expand and collapse other elements
-  var expanders = root.selectAll('button[aria-controls]')
-    .call(eiti.ui.expando);
+  var filterToggle = root.select('button.toggle-filters');
 
   var focusers = root.selectAll('a[data-key]')
     .on('click', function() {
@@ -78,7 +77,7 @@
   function initialize() {
     var props = parseHash();
     if (Object.keys(props).length) {
-      expanders.each(eiti.ui.expando.toggle);
+      filterToggle.attr('aria-expanded', true);
     }
     return mutateState(function(state) {
       return state.merge(props);

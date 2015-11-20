@@ -1,7 +1,7 @@
 
 .toggle,
 .toggle-desktop {
-	background: transparent;
+  background: transparent;
   color: $dark-blue;
 
   &:before {
@@ -34,23 +34,23 @@
   }
 
   @include respond-to(medium-up) {
-  	display: none;
+    display: none;
   }
 }
 
 .toggle-desktop {
-	display: none;
-	float: right;
-	margin-bottom: 0;
-	padding: 0;
+  display: none;
+  float: right;
+  margin-bottom: 0;
+  padding: 0;
 
-	@include respond-to(medium-up){
-  	display: inline-block;
+  @include respond-to(medium-up){
+    display: inline-block;
   }
 
-	&:before {
-		vertical-align: text-top;
-	}
+  &:before {
+    vertical-align: text-top;
+  }
 }
 
 

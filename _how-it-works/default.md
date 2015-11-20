@@ -95,11 +95,21 @@ permalink: /how-it-works/
 	<section class="container">
 		<h3 class="landing-section_category">Laws and regulations</h3>
 		<div class="container landing-section" accordion-item accordion-open="true">
-			<h5 class="landing-heading"><a href="{{site.baseurl}}/how-it-works/federal-laws-and-reforms/">Federal laws and reforms</a></h5>
+			<h5 class="landing-heading"><a href="{{site.baseurl}}/how-it-works/federal-laws/">Federal laws</a></h5>
 			<button class="accordion-button" accordion-button></button>
 			<div class="accordion-content">
 				<p class="landing-description">Federal, state, and local governments pass laws and write rules and regulations to govern natural resource management and extraction.</p>
-				<a href="{{site.baseurl}}/how-it-works/federal-laws-and-reforms/">
+				<a href="{{site.baseurl}}/how-it-works/federal-laws/">
+					<img class="landing-image" src="{{site.baseurl}}/img/landing-placeholders/placeholder.png">
+				</a>
+			</div>
+		</div>
+		<div class="container landing-section" accordion-item accordion-open="true">
+			<h5 class="landing-heading"><a href="{{site.baseurl}}/how-it-works/federal-reforms/">Federal reforms</a></h5>
+			<button class="accordion-button" accordion-button></button>
+			<div class="accordion-content">
+				<p class="landing-description">Federal, state, and local governments pass laws and write rules and regulations to govern natural resource management and extraction.</p>
+				<a href="{{site.baseurl}}/how-it-works/federal-reforms/">
 					<img class="landing-image" src="{{site.baseurl}}/img/landing-placeholders/placeholder.png">
 				</a>
 			</div>
@@ -120,6 +130,16 @@ permalink: /how-it-works/
 			<div class="accordion-content">
 				<p class="landing-description">State government agencies create regulations and rules related to natural resource extraction based on applicable state laws and statutes (federal laws and regulations apply to all states and localities). Local government agencies also play a role in natural resource extraction in their jurisdictions.</p>
 				<a href="{{site.baseurl}}/how-it-works/state-laws-and-regulations/">
+					<img class="landing-image" src="{{site.baseurl}}/img/placeholders/map.png">
+				</a>
+			</div>
+		</div>
+		<div class="container landing-section" accordion-item accordion-open="true">
+			<h5 class="landing-heading"><a href="{{site.baseurl}}/how-it-works/state-legal-fiscal-info/">State legal and fiscal information</a></h5>
+			<button class="accordion-button" accordion-button></button>
+			<div class="accordion-content">
+				<p class="landing-description">State government agencies create regulations and rules related to natural resource extraction based on applicable state laws and statutes (federal laws and regulations apply to all states and localities). Local government agencies also play a role in natural resource extraction in their jurisdictions.</p>
+				<a href="{{site.baseurl}}/how-it-works/state-legal-fiscal-info/">
 					<img class="landing-image" src="{{site.baseurl}}/img/placeholders/map.png">
 				</a>
 			</div>

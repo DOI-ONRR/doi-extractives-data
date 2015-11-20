@@ -95,6 +95,16 @@
   }
 }
 
+.container-left-3 {
+  @extend %container-side;
+
+  @include respond-to(medium-up) {
+
+    @include span-columns(3);
+
+  }
+}
+
 .container-right,
 .container-right-5 {
   @extend %container-side;
@@ -153,6 +163,16 @@
   @include respond-to(medium-up) {
 
     @include span-columns(8);
+
+  }
+}
+
+.container-right-9 {
+  @extend %container-side;
+
+  @include respond-to(medium-up) {
+
+    @include span-columns(9);
 
   }
 }

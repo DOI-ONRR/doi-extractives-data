@@ -1,11 +1,11 @@
 .map-wrapper {
-	margin: 0 $base-padding;
+  margin: 0 $base-padding;
 
-	@include respond-to(medium-up) {
-		margin: 0;
-	}
+  @include respond-to(medium-up) {
+    margin: 0;
+  }
 }
 
 .filter-part {
-	border-bottom: 2px dotted;
+  border-bottom: 2px dotted;
 }

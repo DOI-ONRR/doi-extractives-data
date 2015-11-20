@@ -5,12 +5,12 @@
 //
 // Styleguide blocks.explore
 .explore-subpage {
-	$positive-fill: $pale-blue;
+  $positive-fill: $pale-blue;
   $negative-fill: #bbb;
 
-	@import 'subpage';
-	@import 'filters';
-	@import 'map';
-	@import 'toggle';
-	@import 'regions-list';
+  @import 'subpage';
+  @import 'filters';
+  @import 'map';
+  @import 'toggle';
+  @import 'regions-list';
 }

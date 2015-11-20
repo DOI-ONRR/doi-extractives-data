@@ -98,31 +98,32 @@ permalink: /explore/federal-revenue-by-location/
       </h1>
     </div>
 
-    <div class="regions container-outer">
+    <div class="regions container">
 
       <section id="US" class="region active">
+        <div class="map-wrapper">
+          <svg is="eiti-map" id="US-map" class="region-map" simplify="1e-2"
+            preserveAspectRatio="xMidYMid meet"
+            projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/">
+            <g class="offshore areas" data-url="offshore-simple.json"
+              data-id="'US-' + id"
+              data-href="'#?region=' + id"
+              data-title="properties.name"
+              data-mesh="true">
+            </g>
+            <g class="onshore states" data-url="us-topology.json"
+              data-object="states"
+              data-id="'US-' + id"
+              data-href="'#?region=' + id"
+              data-title="properties.name"
+              data-mesh="true">
+            </g>
+          </svg>
 
-        <svg is="eiti-map" id="US-map" class="region-map" simplify="1e-2"
-          preserveAspectRatio="xMidYMid meet"
-          projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/">
-          <g class="offshore areas" data-url="offshore-simple.json"
-            data-id="'US-' + id"
-            data-href="'#?region=' + id"
-            data-title="properties.name"
-            data-mesh="true">
-          </g>
-          <g class="onshore states" data-url="us-topology.json"
-            data-object="states"
-            data-id="'US-' + id"
-            data-href="'#?region=' + id"
-            data-title="properties.name"
-            data-mesh="true">
-          </g>
-        </svg>
+          <div class="map-legend"></div>
+        </div>
 
-        <div class="map-legend"></div>
-
-        <h3>Revenue by state or offshore area</h3>
+        <h3 class="region-header-category">Revenue by state or offshore area</h3>
         <table class="subregions">
           <thead class="region-header"></thead>
           <tbody></tbody>
@@ -132,25 +133,26 @@ permalink: /explore/federal-revenue-by-location/
 
       {% for region in site.data.states %}
       <section id="{{ region.id }}" class="region onshore">
+        <div class="map-wrapper">
+          <svg is="eiti-map" id="{{ region.id }}-map" class="region-map" simplify="1e-2"
+            preserveAspectRatio="xMidYMid meet"
+            projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/" zoom-to="{{ region.id }}">
+            <g class="onshore states" data-url="us-topology.json"
+              data-object="states"
+              data-filter="id === '{{ region.id }}'">
+            </g>
+            <g class="onshore counties" data-url="us-topology.json"
+              data-object="counties"
+              data-filter="properties.state === '{{ region.id }}'"
+              data-title="properties.name"
+              data-mesh="true">
+            </g>
+          </svg>
 
-        <svg is="eiti-map" id="{{ region.id }}-map" class="region-map" simplify="1e-2"
-          preserveAspectRatio="xMidYMid meet"
-          projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/" zoom-to="{{ region.id }}">
-          <g class="onshore states" data-url="us-topology.json"
-            data-object="states"
-            data-filter="id === '{{ region.id }}'">
-          </g>
-          <g class="onshore counties" data-url="us-topology.json"
-            data-object="counties"
-            data-filter="properties.state === '{{ region.id }}'"
-            data-title="properties.name"
-            data-mesh="true">
-          </g>
-        </svg>
+          <div class="map-legend"></div>
+        </div>
 
-        <div class="map-legend"></div>
-
-        <h3>Revenue by county</h3>
+        <h3 class="region-header-category">Revenue by county</h3>
         <table class="subregions">
           <thead class="region-header"></thead>
           <tbody></tbody>

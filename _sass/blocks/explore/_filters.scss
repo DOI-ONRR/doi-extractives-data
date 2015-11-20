@@ -7,6 +7,10 @@
     border-radius: $base-border-radius;
     margin-right: $base-padding;
   }
+
+  @include respond-to(huge-plus-up) {
+    margin-right: 0;
+  }
 }
 
 .filters-heading {

@@ -7,22 +7,22 @@
 }
 
 .region-header {
-  margin-bottom: 0;
-  padding-bottom: 0;
-  padding-top: 0;
   border-bottom: 1px solid $mid-gray;
   border-top: none;
   font-weight: $weight-bold;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  padding-top: 0;
 
   .subregion-name {
-  	@include heading(h3);
-  	margin: 0;
+    @include heading(h3);
+    margin: 0;
 
   }
 }
 
 .region-header-category {
-	margin-bottom: $base-padding;
+  margin-bottom: $base-padding;
 }
 
 .subregion-name {

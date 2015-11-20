@@ -1,11 +1,3 @@
-.subregion {
-  border-top: 1px solid $mid-gray;
-  clear: both;
-  padding: 0 $base-padding;
-  position: relative;
-
-}
-
 .region-header {
   border-bottom: 1px solid $mid-gray;
   border-top: none;
@@ -23,12 +15,14 @@
 
 .region-header-category {
   margin-bottom: $base-padding;
+  padding-left: $base-padding * 0.9;
 }
 
 .subregion-name {
   @include heading('para-lg');
   @include font-size(1);
   margin: 0;
+  padding: 0 $base-padding;
   width: 66%;
 
   @include respond-to(tiny-up) {
@@ -43,32 +37,68 @@
   }
 }
 
-.subregion-chart {
-  display: inline-block;
-  float: right;
-  min-width: 176px;
+.subregions {
+  border-collapse: collapse;
+  width: 100%;
+
+  &,
+  td,
+  th,
+  tr {
+    border: 0;
+    border-bottom: 1px solid $mid-gray;
+    text-align: left;
+  }
+
+  thead {
+    background: none;
+    border: 0;
+
+    eiti-bar,
+    .color-swatch {
+      display: none;
+    }
+
+    .subregion-name {
+      @include heading(h3);
+      padding: 0;
+      padding-left: $base-padding * 0.9;
+    }
+  }
+
+  tr > *:first-child {
+    padding-left: $base-padding;
+    width: 80%;
+  }
+
+  tr > *:last-child {
+    padding-right: $base-padding;
+  }
+
+  .bar_negative {
+    padding-right: 0;
+
+    eiti-bar .eiti-bar-bar {
+      background: $mid-gray;
+    }
+  }
+
+  .bar_positive {
+    padding-left: 0;
+  }
+
+}
+
+.subregion {
+  clear: both;
+  padding: 0 $base-padding;
   position: relative;
-  top: 0.4em;
-  width: 33%;
+}
 
-  .bars {
-    display: block;
-    vertical-align: baseline;
-  }
-
-  .label {
-    font-weight: $weight-light;
-  }
-
-  .negative .label {
-    font-size: 0.8em;
-  }
-
-  .negative .bar {
-    fill: $negative-fill;
-  }
-
-  .positive .bar {
-    fill: $dark-gray;
+.region-name,
+.map-legend {
+  @include respond-to(large-down) {
+    width: 100px;
   }
 }
+

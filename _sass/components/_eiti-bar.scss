@@ -1,0 +1,31 @@
+eiti-bar {
+  display: none;
+  height: 1em;
+  position: relative;
+  width: 50px;
+
+  @include respond-to(small-up) {
+    display: inline-block;
+  }
+
+  @include respond-to(medium-up) {
+    width: 100px;
+  }
+
+  @include respond-to(large-up) {
+    width: 200px;
+  }
+
+  .eiti-bar-bar {
+    background: $dark-gray;
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+
+    &.eiti-bar-bar_negative {
+      left: auto;
+      right: 0;
+    }
+  }
+}

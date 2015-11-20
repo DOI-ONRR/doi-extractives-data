@@ -52,7 +52,11 @@ header,
   @include heading('para-md');
   display: inline-block;
   float: right;
-  margin: 0;
+  padding-right: $base-padding;
+
+  @include respond-to(huge-plus-up) {
+    padding-right: 0;
+  }
 }
 
 .header-nav_item,

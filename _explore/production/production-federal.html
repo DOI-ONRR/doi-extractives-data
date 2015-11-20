@@ -1,16 +1,29 @@
 ---
-title: Federal Production | Explore Data
+title: Federal Production
 layout: default
 permalink: /explore/federal-production/
 ---
 <section id="federal-production" class="explore-subpage">
-  <section class="slab-delta">
+  <div class="slab-delta">
     <div class="container-outer explore-section_top">
-      <h5> <a href="{{ site.baseurl }}/explore/">Explore Data</a> / {{ page.subpage_title }}</h5>
-      <h1 class="explore-heading">{{ page.subpage_title }}</h1>
-      <p class="explore-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      <h1>{{ page.title }}</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+        elit. Praesent eget justo sodales neque fermentum
+        consequat eu sit amet libero. Aliquam eu eleifend leo.
+        Donec sem dolor, volutpat quis tortor pretium,
+        tincidunt pretium massa. Curabitur sed euismod velit.
+        Aenean eu venenatis turpis, mattis tempus orci.
+        Maecenas laoreet, ex ac vulputate vestibulum, elit mi
+        auctor odio, quis imperdiet diam ligula eu quam. Fusce
+        vitae lorem elit. Donec urna orci, pulvinar at sem
+        vulputate, tincidunt bibendum lacus. Maecenas
+        imperdiet ex ut porttitor mattis. Nunc id purus
+        sodales, rhoncus magna sit amet, eleifend enim.
+        Pellentesque sit amet dictum lacus. Curabitur in
+        tincidunt mauris, vitae volutpat orci. Nunc eleifend
+        arcu ut malesuada aliquet.</p>
     </div>
-  </section>
+  </div>
 
   <div class="slab-foxtrot">
 
@@ -56,7 +69,7 @@ permalink: /explore/federal-production/
         </select>
       </div>
 
-      <label for="year-selector">Production by Year</label>
+      <label for="year-selector">Production by year <span class="units"></span></label>
       <svg id="timeline" class="timeline" viewBox="0 0 1024 60"></svg>
 
       <div class="filter">
@@ -76,21 +89,16 @@ permalink: /explore/federal-production/
   <div class="slab-alpha">
     <div class="container-outer">
       <h1 id="filter-description" class="filter-description">
-        <span class="filter-part" data-key="commodity">All</span>
+        <a href="#commodity-group-selector" class="filter-part" data-key="commodity">All</a>
         production on federal lands in
-        <span class="filter-part" data-key="region">the entire U.S.</span>
-        (<span class="filter-part" data-key="year">2013</span>)
+        <a href="#region-selector" class="filter-part" data-key="region">the entire U.S.</a>
+        (<a href="#year-selector" class="filter-part" data-key="year">2013</a>)
       </h1>
     </div>
 
     <div class="regions container-outer">
 
       <section id="US" class="region active">
-
-        <div class="subregion region-header">
-          <h2 class="subregion-name">Entire U.S.</h2>
-          <span class="subregion-chart"></span>
-        </div>
 
         <svg is="eiti-map" id="US-map" class="region-map" simplify="1e-2"
           preserveAspectRatio="xMidYMid meet"
@@ -112,7 +120,7 @@ permalink: /explore/federal-production/
 
         <div class="map-legend"></div>
 
-        <h3>Production by state or offshore area</h3>
+        <h3>Production by state or offshore area <span class="units"></span></h3>
         <table class="subregions">
           <thead class="region-header"></thead>
           <tbody></tbody>
@@ -122,11 +130,6 @@ permalink: /explore/federal-production/
 
       {% for region in site.data.states %}
       <section id="{{ region.id }}" class="region onshore">
-
-        <div class="subregion region-header">
-          <h2 class="subregion-name">{{ region.name }}</h2>
-          <span class="subregion-chart"></span>
-        </div>
 
         <svg is="eiti-map" id="{{ region.id }}-map" class="region-map" simplify="1e-2"
           preserveAspectRatio="xMidYMid meet"
@@ -145,7 +148,7 @@ permalink: /explore/federal-production/
 
         <div class="map-legend"></div>
 
-        <h3>Production by county</h3>
+        <h3>Production by county <span class="units"></span></h3>
         <table class="subregions">
           <thead class="region-header"></thead>
           <tbody></tbody>
@@ -156,11 +159,6 @@ permalink: /explore/federal-production/
 
       {% for region in site.data.offshore_areas %}
       <section id="{{ region.id }}" class="region offshore">
-
-        <div class="subregion region-header">
-          <h2 class="subregion-name">{{ region.name }}</h2>
-          <span class="subregion-chart"></span>
-        </div>
 
         <svg is="eiti-map" id="{{ region.id }}-map" class="region-map" simplify="1e-2"
           preserveAspectRatio="xMidYMid meet"

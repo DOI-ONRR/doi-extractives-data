@@ -1,13 +1,12 @@
 ---
-title: Federal Revenue by Location | Explore Data
+title: Federal Revenue by Location
 layout: default
 permalink: /explore/federal-revenue-by-location/
 ---
 <section id="revenue" class="explore-subpage">
   <div class="slab-delta">
     <div class="container-outer">
-      <h1>Federal Revenue by Location</h1>
-
+      <h1>{{ page.title }}</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing
         elit. Praesent eget justo sodales neque fermentum
         consequat eu sit amet libero. Aliquam eu eleifend leo.
@@ -63,7 +62,7 @@ permalink: /explore/federal-revenue-by-location/
         </select>
       </div>
 
-      <label for="year-selector">Revenue by Year</label>
+      <label for="year-selector">Revenue by year ($)</label>
       <svg id="timeline" class="timeline" viewBox="0 0 1024 60"></svg>
 
       <div class="filter">
@@ -84,10 +83,10 @@ permalink: /explore/federal-revenue-by-location/
     <div class="container-outer">
       <h1 id="filter-description" class="filter-description">
         Revenue from
-        <span class="filter-part" data-key="commodity">all commodities</span>
+        <a href="#commodity-group-selector" class="filter-part" data-key="commodity">all commodities</a>
         on federal lands in
-        <span class="filter-part" data-key="region">the entire U.S.</span>
-        (<span class="filter-part" data-key="year">2013</span>)
+        <a href="#region-selector" class="filter-part" data-key="region">the entire U.S.</a>
+        (<a href="#year-selector" class="filter-part" data-key="year">2013</a>)
       </h1>
     </div>
 

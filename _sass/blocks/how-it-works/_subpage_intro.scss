@@ -4,6 +4,10 @@
 //
 // Styleguide blocks.how-it-works.intro
 
+.revenues_subpage-intro_wrapper {
+  border-top: 1px solid $dark-gray;
+}
+
 .revenues_subpage-intro {
   padding-top: $base-padding;
 
@@ -70,4 +74,3 @@
   margin-bottom: $base-padding-lite;
   width: 40px;
 }
-

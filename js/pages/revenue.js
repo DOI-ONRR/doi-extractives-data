@@ -23,7 +23,8 @@
   // buttons that expand and collapse other elements
   var filterToggle = root.select('button.toggle-filters');
 
-  var focusers = root.selectAll('a[data-key]')
+  // FIXME: componentize these too
+  root.selectAll('a[data-key]')
     .on('click', function() {
       d3.event.preventDefault();
     });

@@ -10,7 +10,7 @@ permalink: /explore/federal-production/
       <h1 class="landing-heading">{{ page.subpage_title }}</h1>
       <p class="landing-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
     </div>
-  </section>
+  </div>
 
   <div class="slab-foxtrot">
 
@@ -56,7 +56,7 @@ permalink: /explore/federal-production/
         </select>
       </div>
 
-      <label for="year-selector">Production by Year</label>
+      <label for="year-selector">Production by year <span class="units"></span></label>
       <svg id="timeline" class="timeline" viewBox="0 0 1024 60"></svg>
 
       <div class="filter">
@@ -76,21 +76,16 @@ permalink: /explore/federal-production/
   <div class="slab-alpha">
     <div class="container-outer">
       <h1 id="filter-description" class="filter-description">
-        <span class="filter-part" data-key="commodity">All</span>
+        <a href="#commodity-group-selector" class="filter-part" data-key="commodity">All</a>
         production on federal lands in
-        <span class="filter-part" data-key="region">the entire U.S.</span>
-        (<span class="filter-part" data-key="year">2013</span>)
+        <a href="#region-selector" class="filter-part" data-key="region">the entire U.S.</a>
+        (<a href="#year-selector" class="filter-part" data-key="year">2013</a>)
       </h1>
     </div>
 
     <div class="regions container">
 
       <section id="US" class="region active">
-
-        <div class="subregion region-header">
-          <h2 class="subregion-name">Entire U.S.</h2>
-          <span class="subregion-chart"></span>
-        </div>
 
         <svg is="eiti-map" id="US-map" class="region-map" simplify="1e-2"
           preserveAspectRatio="xMidYMid meet"
@@ -112,52 +107,45 @@ permalink: /explore/federal-production/
 
         <div class="map-legend"></div>
 
-        <h3>Production by state or offshore area</h3>
-        <ol class="subregions">
-        </ol>
+        <h3>Production by state or offshore area <span class="units"></span></h3>
+        <table class="subregions">
+          <thead class="region-header"></thead>
+          <tbody></tbody>
+        </table>
 
       </section>
 
       {% for region in site.data.states %}
       <section id="{{ region.id }}" class="region onshore">
-        <div class="map-wrapper">
-          <div class="subregion region-header">
-            <h2 class="subregion-name">{{ region.name }}</h2>
-            <span class="subregion-chart"></span>
-          </div>
 
-          <svg is="eiti-map" id="{{ region.id }}-map" class="region-map" simplify="1e-2"
-            preserveAspectRatio="xMidYMid meet"
-            projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/" zoom-to="{{ region.id }}">
-            <g class="onshore states" data-url="us-topology.json"
-              data-object="states"
-              data-filter="id === '{{ region.id }}'">
-            </g>
-            <g class="onshore counties" data-url="us-topology.json"
-              data-object="counties"
-              data-filter="properties.state === '{{ region.id }}'"
-              data-title="properties.name"
-              data-mesh="true">
-            </g>
-          </svg>
+        <svg is="eiti-map" id="{{ region.id }}-map" class="region-map" simplify="1e-2"
+          preserveAspectRatio="xMidYMid meet"
+          projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/" zoom-to="{{ region.id }}">
+          <g class="onshore states" data-url="us-topology.json"
+            data-object="states"
+            data-filter="id === '{{ region.id }}'">
+          </g>
+          <g class="onshore counties" data-url="us-topology.json"
+            data-object="counties"
+            data-filter="properties.state === '{{ region.id }}'"
+            data-title="properties.name"
+            data-mesh="true">
+          </g>
+        </svg>
 
-          <div class="map-legend"></div>
+        <div class="map-legend"></div>
 
-          <h3>Production by county</h3>
-        </div>
-        <ol class="subregions">
-        </ol>
+        <h3>Production by county <span class="units"></span></h3>
+        <table class="subregions">
+          <thead class="region-header"></thead>
+          <tbody></tbody>
+        </table>
 
       </section>
       {% endfor %}
 
       {% for region in site.data.offshore_areas %}
       <section id="{{ region.id }}" class="region offshore">
-
-        <div class="subregion region-header">
-          <h2 class="subregion-name">{{ region.name }}</h2>
-          <span class="subregion-chart"></span>
-        </div>
 
         <svg is="eiti-map" id="{{ region.id }}-map" class="region-map" simplify="1e-2"
           preserveAspectRatio="xMidYMid meet"
@@ -177,6 +165,7 @@ permalink: /explore/federal-production/
   </div>
 </section>
 <script src="{{ site.baseurl }}/js/vendor/immutable.min.js"></script>
+<script src="{{ site.baseurl }}/js/components/eiti-bar.js"></script>
 <script>
   eiti.data.REGION_ID_NAME = {
     {% for state in site.data.states %}

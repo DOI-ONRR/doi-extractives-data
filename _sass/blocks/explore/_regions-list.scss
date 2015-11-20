@@ -1,5 +1,5 @@
 .subregion {
-  border-top: 1px solid $mid-gray;
+  border-bottom: 1px solid $mid-gray;
   clear: both;
   padding: 0 $base-padding;
   position: relative;
@@ -43,32 +43,70 @@
   }
 }
 
-.subregion-chart {
-  display: inline-block;
-  float: right;
-  min-width: 176px;
-  position: relative;
-  top: 0.4em;
-  width: 33%;
+.subregions {
+  border-collapse: collapse;
+  width: 100%;
 
-  .bars {
-    display: block;
-    vertical-align: baseline;
+  &,
+  td,
+  th,
+  tr {
+    border: 0;
+    text-align: left;
   }
 
-  .label {
-    font-weight: $weight-light;
+  thead {
+    background: none;
+    border: 0;
+
+    eiti-bar,
+    .color-swatch {
+      display: none;
+    }
   }
 
-  .negative .label {
-    font-size: 0.8em;
+  tr > *:first-child {
+    padding-left: 0;
+    width: 80%;
   }
 
-  .negative .bar {
-    fill: $negative-fill;
+  tr > *:last-child {
+    padding-right: 0;
   }
 
-  .positive .bar {
-    fill: $dark-gray;
+  .bar_negative {
+    padding-right: 0;
+
+    eiti-bar .eiti-bar-bar {
+      background: $mid-gray;
+    }
+  }
+
+  .bar_positive {
+    padding-left: 0;
   }
 }
+
+eiti-bar {
+
+  @include respond-to(large-down) {
+    width: 100px;
+  }
+
+  @include respond-to(medium-down) {
+    width: 50px;
+  }
+
+  @include respond-to(small-down) {
+    display: none;
+  }
+
+}
+
+.region-name,
+.map-legend {
+  @include respond-to(large-down) {
+    width: 100px;
+  }
+}
+

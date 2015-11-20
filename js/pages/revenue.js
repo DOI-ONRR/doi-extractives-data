@@ -3,9 +3,11 @@
 
   // local alias for region id => name lookups
   var REGION_ID_NAME = eiti.data.REGION_ID_NAME;
+  var colorscheme = colorbrewer.Purples;
 
   // our state is immutable!
   var state = new Immutable.Map();
+  var rendered = false;
   // this flag indicates whether we're in the middle of a state mutation
   var mutating = false;
 
@@ -21,6 +23,11 @@
   // buttons that expand and collapse other elements
   var expanders = root.selectAll('button[aria-controls]')
     .call(eiti.ui.expando);
+
+  var focusers = root.selectAll('a[data-key]')
+    .on('click', function() {
+      d3.event.preventDefault();
+    });
 
   // get the filters and add change event handlers
   var filters = root.selectAll('.filters [name]')
@@ -80,7 +87,7 @@
     var old = state;
     state = fn(state);
     if (!Immutable.is(old, state)) {
-      if (!state.get('group') || state.get('group') !== old.get('group')) {
+      if (rendered && stateChanged(old, state, 'group')) {
         state = state.delete('commodity');
       }
       render(state, old);
@@ -147,7 +154,7 @@
 
     selected.call(renderRegion, state);
     // console.timeEnd('render');
-    return true;
+    rendered = true;
   }
 
   function renderRegion(selection, state) {
@@ -167,9 +174,8 @@
       // console.time('render regions');
 
       var header = selection.select('.region-header');
-      if (header.select('.subregion-chart svg').empty()) {
-        header.select('.subregion-chart')
-          .call(createBarChart);
+      if (header.select('*').empty()) {
+        header.call(createRegionRow);
       }
 
       var total = d3.sum(data, getter(fields.value));
@@ -178,10 +184,10 @@
         .datum({
           value: total,
           properties: {
-            name: REGION_ID_NAME[regionId] || '???'
+            name: 'Total'
           }
         })
-        .call(updateBarChart);
+        .call(updateRegionRow);
 
       var map = selection.select('[is="eiti-map"]');
       onMapLoaded(map, function() {
@@ -243,34 +249,23 @@
 
   function updateSubregions(selection, features, scale) {
 
-    var list = selection.select('.subregions');
+    var list = selection.select('.subregions tbody');
     if (list.empty()) {
       // console.warn('no subregions list:', selection.node());
       return;
     }
 
-    var items = list.selectAll('li')
-      .data(features.filter(function(d) {
-        return !!d.value;
-      }), function(d) { return d.id; });
+    features = features.filter(function(d) {
+      return !!d.value;
+    });
+
+    var items = list.selectAll('tr.subregion')
+      .data(features, getter('id'));
 
     items.exit().remove();
     var enter = items.enter()
-      .append('li')
-        .attr('class', 'subregion');
-    var title = enter.append('span')
-      .attr('class', 'subregion-name');
-    title.append('span')
-      .attr('class', 'color-swatch');
-    title.append('span')
-      .attr('class', 'text')
-      .text(function(f) {
-        // XXX all features need a name!
-        return f.properties.name || f.id;
-      });
-    enter.append('span')
-      .attr('class', 'subregion-chart')
-      .call(createBarChart);
+      .append('tr')
+        .call(createRegionRow);
 
     items.sort(function(a, b) {
       return d3.descending(a.value, b.value);
@@ -280,78 +275,67 @@
       .style('background-color', function(d) {
         return scale(d.value);
       });
-    items.select('.subregion-chart')
-      .call(updateBarChart);
+
+    items.call(updateRegionRow);
   }
 
-  function createBarChart(selection) {
-    var w = 250;
-    var h = 18;
-    var svg = selection.append('svg')
-      .attr('class', 'bars')
-      .attr('viewBox', [0, 0, w, h].join(' '));
-    svg.append('g').attr('class', 'negative');
-    svg.append('g').attr('class', 'positive');
-    var g = svg.selectAll('g');
-    g.append('rect')
-      .attr('class', 'bar')
-      .attr('y', '20%')
-      .attr('height', '60%');
-    g.append('text')
-      .attr('class', 'label')
-      .attr('dy', '80%');
-    svg.select('.positive .label')
-      .attr('text-anchor', 'end')
-      .attr('x', w - 2);
+  function createRegionRow(selection) {
+    selection
+      .attr('class', 'subregion');
+    var title = selection.append('td')
+      .attr('class', 'subregion-name');
+    title.append('span')
+      .attr('class', 'color-swatch');
+    title.append('span')
+      .attr('class', 'text');
+
+    selection.append('td')
+      .attr('class', 'value value_negative');
+    selection.append('td')
+      .attr('class', 'bar bar_negative')
+      .append('eiti-bar')
+        .attr('negative', true);
+
+    selection.append('td')
+      .attr('class', 'bar bar_positive')
+      .append('eiti-bar');
+    selection.append('td')
+      .attr('class', 'value value_positive');
   }
 
-  function updateBarChart(selection) {
-    if (selection.empty()) {
-      return;
-    }
+  function updateRegionRow(selection) {
+    selection.select('.subregion-name .text')
+      .text(function(f) {
+        // XXX all features need a name!
+        return f.properties.name || '(' + f.id + ')';
+      });
 
-    var svg = selection.select('svg');
-    var viewBox = svg.attr('viewBox')
-      .split(' ')
-      .map(Number);
-
-    var w = viewBox[2];
-    var h = viewBox[3];
-    var center = w / 2;
-    var labelSize = w / 4;
-
+    var value = getter('value');
     var values = selection.data()
-      .map(function(d) {
-        return d.value;
-      })
+      .map(value)
       .sort(d3.ascending);
 
     var max = d3.max(values.map(Math.abs));
-    var scale = d3.scale.linear()
-      .domain([0, max])
-      .range([0, center - labelSize]);
 
-    svg.each(function(d) {
-      var value = d.value;
-      var chart = d3.select(this);
-      chart.select('.positive')
-        .call(updateBar, value >= 0 ? value : 0, true);
-      chart.select('.negative')
-        .call(updateBar, value < 0 ? value : 0);
-    });
+    selection.select('.value_negative')
+      .text(function(d) {
+        return d.value < 0 ? formatNumber(d.value) : '';
+      });
+    selection.select('.bar_negative eiti-bar')
+      .attr('max', -max)
+      .attr('value', function(d) {
+        return d.value < 0 ? d.value : 0;
+      });
 
-    function updateBar(selection, value, force) {
-      selection.select('.label')
-        .text((value || force) ? formatNumber(value) : '');
-      var width = scale(Math.abs(value));
-      // round up to 1px
-      if (width > 0) {
-        width = Math.ceil(width);
-      }
-      selection.select('.bar')
-        .attr('x', value < 0 ? (center - width) : center)
-        .attr('width', width);
-    }
+    selection.select('.value_positive')
+      .text(function(d) {
+        return d.value > 0 ? formatNumber(d.value) : '';
+      });
+    selection.select('.bar_positive eiti-bar')
+      .attr('max', max)
+      .attr('value', function(d) {
+        return d.value > 0 ? d.value : 0;
+      });
   }
 
   function createScale(values) {
@@ -359,9 +343,7 @@
     var min = extent[0];
     var max = Math.max(extent[1], 0);
 
-    var colors = (min < 0)
-      ? colorbrewer.Blues
-      : colorbrewer.Blues;
+    var colors = colorscheme;
     if (max >= 2e9) {
       colors = colors[7];
     } else if (max >= 1e6) {
@@ -721,10 +703,12 @@
 
   function updateFilterDescription(state) {
     var desc = root.select('#filter-description');
+
     var commodity = state.get('commodity') ||
       (state.get('group')
        ? eiti.commodities.groups[state.get('group')].name
        : 'all commodities');
+
     var data = {
       commodity: commodity.toLowerCase(),
       region: REGION_ID_NAME[state.get('region') || 'US'],
@@ -748,14 +732,10 @@
     };
   }
 
-  function toggleExpander(text) {
-    var id = this.getAttribute('aria-controls');
-    var attr = 'aria-expanded';
-    var controls = d3.select('#' + id);
-    var expanded = controls.attr(attr) !== 'true';
-    controls.attr(attr, expanded);
-    this.textContent = text[expanded];
-    this.setAttribute('aria-expanded', expanded);
+  function stateChanged(old, state, key) {
+    var prev = old.get(key) || '';
+    var next = state.get(key) || '';
+    return prev !== next;
   }
 
   function identity(d) {

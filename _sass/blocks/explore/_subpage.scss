@@ -145,7 +145,7 @@
     }
   }
 
-  table.subregions {
+  .subregions {
     border-collapse: collapse;
     width: 100%;
 
@@ -160,10 +160,11 @@
     thead {
       background: none;
       border: 0;
-    }
 
-    thead eiti-bar {
-      visibility: hidden;
+      eiti-bar,
+      .color-swatch {
+        display: none;
+      }
     }
 
     tr > *:first-child {
@@ -189,9 +190,26 @@
   }
 
   // smaller screen rules go here
-  @media screen and (max-width: $medium) {
+  @media screen and (max-width: $large) {
+    .region-name,
     .map-legend {
       font-size: 0.8em;
+    }
+
+    eiti-bar {
+      width: 100px;
+    }
+  }
+
+  @media screen and (max-width: $medium) {
+    eiti-bar {
+      width: 50px;
+    }
+  }
+
+  @media screen and (max-width: $small) {
+    eiti-bar {
+      display: none;
     }
   }
 

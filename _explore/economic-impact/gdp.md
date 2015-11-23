@@ -8,7 +8,7 @@ permalink: /explore/gdp/
 
   <h3> <a href="{{ site.baseurl }}/explore/">Explore Data</a> / Gross Domestic Product</h3>
     
-  <p>In 2013, the U.S. GDP was $16.8 trillion, making the US economy the largest in the world. Overall the extractive industries account for 2.6% of the US economy, outpacing utilities, agriculture, and education services in contribution to national GDP. Extractive industries totaled <a href="http://www.bea.gov/iTable/iTable.cfm?ReqID=51&step=1#reqid=51&step=51&isuri=1&5114=a&5102=1">$439 billion in real value added</a>.</p>
+  <p>In 2013, our GDP was $16.8 trillion, making the U.S. economy the largest in the world. Overall the extractive industries account for 2.6% of the economy, outpacing utilities, agriculture, and education services in contribution to national GDP. Extractive industries totaled <a href="http://www.bea.gov/iTable/iTable.cfm?ReqID=51&step=1#reqid=51&step=51&isuri=1&5114=a&5102=1">$439 billion in real value added</a>.</p>
   
   <h3>2013 extractive industries value-added GDP</h3>
   
@@ -45,7 +45,6 @@ permalink: /explore/gdp/
     </tr>
   </table>
   
-  <p>Extractive industries affect the economy in a number of ways, including the quantity and value of the natural resources produced, the revenue collected for public purposes, the jobs held by people working in extractive industries, and the extractive exports that draw in money from abroad. While it can be difficult to quantify an industry’s impact on a country, these measures—production, revenue, employment, and exports—start to highlight the extractive industries’ role in the economy.</p>
-
+  <p>Extractive industries affect the economy in a number of ways, including the quantity and value of the natural resources produced, the revenue collected for public purposes, the jobs held by people working in extractive industries, and the exports that draw in money from abroad. While it can be difficult to quantify an industry’s impact on a country, these measures—production, revenue, employment, and exports—start to highlight the extractive industries’ role in the economy.</p>
 
 </div>

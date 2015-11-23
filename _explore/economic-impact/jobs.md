@@ -10,7 +10,7 @@ permalink: /explore/jobs/
   
   <h2>Wage and salary employment</h2>
   
-  <p>According to the <a href="http://www.bea.gov/iTable/iTable.cfm?ReqID=9&step=1#reqid=9&step=3&isuri=1&903=193">BEA</a>, 808,000 people drew their <a href="http://www.bls.gov/cew/apps/data_views/data_views.htm#tab=Tables">wages or salaries</a> from work in the extractive industries in the U.S. in 2013. Total full-time and part-time employment was 141,411,000, meaning that roughly 0.6% of all U.S. workers were employed in the extractive industries. Support activities for mining provided the largest number of wage and salary jobs.</p>
+  <p>According to the <a href="http://www.bea.gov/iTable/iTable.cfm?ReqID=9&step=1#reqid=9&step=3&isuri=1&903=193">BEA</a>, 808,000 people drew <a href="http://www.bls.gov/cew/apps/data_views/data_views.htm#tab=Tables">wages and salaries</a> from work in the extractive industries in 2013. Total full-time and part-time employment was 141,411,000, meaning that roughly 0.6% of all U.S. workers were employed in the extractive industries. Support activities for mining provided the largest number of wage and salary jobs.</p>
   
   <h3>Wage and salary employees by industry in 2013</h3>
   
@@ -93,7 +93,7 @@ permalink: /explore/jobs/
     </tr>
   </table>
   
-  <p>Furthermore, the BEA regional directorate calculates an additional measure of the number of self-employed people working in extractive industries. The BEA regional directorate’s numbers capture sole proprietors, unincorporated partnerships, and incorporated small businesses and partnerships—a broader measure than the BEA national directorate’s count. The BEA’s regional directorate also uses a different methodology and different underlying data sources than the national directorate, which result in some double counting. Using the regional BEA data, the number of sole proprietors and partners receiving income from and working in the extractive industries was roughly <a href="http://www.bea.gov/itable/iTable.cfm?ReqID=70&step=1#reqid=70&step=1&isuri=1&7022=4&7023=0&7024=naics&7033=-1&7025=0&7026=00000&7027=2013&7001=44&7028=-1&7031=0&7040=-1&7083=levels&7029=30&7090=70">799,000 people in 2013</a>.</p>
+  <p>The BEA regional directorate calculates an additional measure of the number of self-employed people working in extractive industries–sole proprietors, unincorporated partnerships, and incorporated small businesses and partnerships. The BEA’s regional directorate also uses a different methodology and different underlying data sources than the national directorate, which result in some double counting. Using the regional BEA data, the number of sole proprietors and partners receiving income from and working in the extractive industries was roughly <a href="http://www.bea.gov/itable/iTable.cfm?ReqID=70&step=1#reqid=70&step=1&isuri=1&7022=4&7023=0&7024=naics&7033=-1&7025=0&7026=00000&7027=2013&7001=44&7028=-1&7031=0&7040=-1&7083=levels&7029=30&7090=70">799,000 people in 2013</a>.</p>
   
   <h3>Sole proprietors and partners by industry in 2013</h3>
   
@@ -124,7 +124,7 @@ permalink: /explore/jobs/
     </tr>
   </table>
   
-  <p>People working in the extractive industries work a range of occupations, many of which are similar to other industries, such as bus drivers, executives, and computer and information analysts. However, some people that work in the extractive industries have occupations unique to the industry, and they are called extraction workers. In May 2013, the estimated number one extraction worker occupation involved assembling or repairing oil field equipment using hand and power tools. The table below lists the top five extraction worker occupations, and the BLS Standard Occupational Classification description for each.</p>
+  <p>People working in the extractive industries have a range of occupations, many of which are similar to other industries, such as bus drivers, executives, and computer and information analysts. However, some people that work in the extractive industries have occupations unique to the industry, and they are called extraction workers. In May 2013, the estimated number one extraction worker occupation involved assembling or repairing oil field equipment using hand and power tools. The table below lists the top five extraction worker occupations, and the BLS Standard Occupational Classification description for each.</p>
   
   <h3>Top extraction worker occupations in May 2015</h3>
   

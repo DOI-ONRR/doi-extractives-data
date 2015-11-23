@@ -8,7 +8,7 @@ permalink: /explore/exports/
 
   <h3> <a href="{{ site.baseurl }}/explore/">Explore Data</a> / Exports</h3>
   
-  <p>In 2013, the U.S. exported $137,558 million in petroleum end-use goods, 8.6% of all US exports totaling $1,592,784 million. The U.S. is now a net exporter of petroleum products and coal, although still a net importer of natural gas and crude oil. Natural resource commodity exports, meaning commodities that underwent minimal processing, made up approximately $22,000 million in goods produced and sold abroad.</p>
+  <p>In 2013, the U.S. exported $137,558 million in petroleum end-use goods, 8.6% of all exports totaling $1,592,784 million. The U.S. is now a net exporter of petroleum products and coal, although still a net importer of natural gas and crude oil. Natural resource commodity exports, meaning commodities that underwent minimal processing, made up approximately $22,000 million in goods produced and sold abroad.</p>
   
   <h3>2013 exports by commodity</h3>
   

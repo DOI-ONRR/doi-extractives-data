@@ -7,9 +7,7 @@ permalink: /explore/disbursements/
 <div class="container-outer container-padded">
 
   <h3> <a href="{{ site.baseurl }}/explore/">Explore Data</a> / Disbursements</h3>
-  
-  <h2>Where does federal revenue go?</h2>
-  
+    
   <p>Once collected, the federal government distributes revenue from natural resource extraction for public use in a variety of ways. Federal corporate income taxes go to the General Fund of the Treasury, and Congress determines how to allocate these resources each year through the appropriations process.</p>
   
   <p>In comparison, DOI revenue from extraction on federal lands goes to many different funds and entities. In FY 2013, ONRR disbursed $14.187 billion in DOI revenue. The recipient of these funds depends on whether the revenue is derived from onshore or offshore natural resource extraction.</p>

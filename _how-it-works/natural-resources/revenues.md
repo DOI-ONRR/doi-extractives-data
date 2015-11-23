@@ -8,9 +8,7 @@ permalink: /how-it-works/revenues/
 
   <h5><a href="{{site.baseurl}}{{site.permalink}}">How It Works</a> /</h5>
   <h1>Revenues</h1>
-  
-  <h2>What companies pay</h2>
-  
+    
   <h3>DOI revenue</h3>
   
   <p>When companies extract natural resources on federal onshore lands and the Outer Continental Shelf, they pay revenue to the Department of the Interior (DOI). In general, companies pay bonuses, rents, royalties, or fees and penalties (if incurred) to ONRR, and in some cases bonuses and rents to BLM. Royalties, a percentage of the sales value of extracted resources, make up most of the revenue paid to DOI. Lease holders also pay different fees to BLM, BSEE, and BOEM, often to reimburse the federal government for costs associated with awarding, administering, and enforcing leases. For extracting locatable hardrock minerals on federal lands, companies pay fees, but not royalties under the Mining Law of 1872.</p>

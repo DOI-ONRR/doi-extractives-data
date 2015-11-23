@@ -23,7 +23,7 @@ permalink: /explore/
 
 <section accordion class="container-outer">
 	<section class="container">
-		<h3 class="landing-section_category">Production</h3>
+		<a id="production" class="link-no_under"><h3 class="landing-section_category">Production</h3></a>
 		<div class="container-half landing-section" accordion-item accordion-open="true">
 			<h5 class="landing-heading"><a href="{{site.baseurl}}/explore/all-lands-production/">All lands & waters</a></h5>
 			<button class="accordion-button" accordion-button></button>
@@ -46,7 +46,7 @@ permalink: /explore/
 		</div>
 	</section>
 	<section class="container">
-		<h3 class="landing-section_category">Revenue</h3>
+		<a id="revenue" class="link-no_under"><h3 class="landing-section_category">Revenue</h3></a>
 		<div class="container-half landing-section" accordion-item accordion-open="true">
 			<h5 class="landing-heading"><a href="{{site.baseurl}}/explore/federal-revenue-by-location/">Federal revenue by location</a></h5>
 			<button class="accordion-button" accordion-button></button>
@@ -100,7 +100,7 @@ permalink: /explore/
 		</div>
 	</section>
 	<section class="container">
-		<h3 class="landing-section_category">Economic Impact</h3>
+		<a name="economic-impact" class="link-no_under"><h3 class="landing-section_category">Economic Impact</h3></a>
 		<div class="container-half landing-section" accordion-item accordion-open="true">
 			<h5 class="landing-heading"><a href="{{site.baseurl}}/explore/gdp/">Gross Domestic Product</a></h5>
 			<button class="accordion-button" accordion-button></button>

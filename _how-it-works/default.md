@@ -56,9 +56,9 @@ permalink: /how-it-works/
 		</div>
 	</section>
 	<section class="container">
-		<h3 class="landing-section_category">Natural resources</h3>
+		<a id="natural-resources"><h3 class="landing-section_category">Natural resources</h3></a>
 		<div class="container landing-section_open overview">
-			<h5 class="landing-heading"><a href="{{site.baseurl}}/how-it-works/process-overview/">Overview</a></h5>
+			<h5 class="landing-heading"><a id="process-overview" href="{{site.baseurl}}/how-it-works/process-overview/">Overview</a></h5>
 			<p class="landing-description">The U.S. is a world leader in producing natural resources, including oil, gas, coal, renewable energy, and nonenergy minerals.</p>
 			<div class="landing-icons">
 				<icon class="icon-oil"></icon>
@@ -125,7 +125,7 @@ permalink: /how-it-works/
 			</div>
 		</div>
 		<div class="container landing-section" accordion-item accordion-open="true">
-			<h5 class="landing-heading"><a href="{{site.baseurl}}/how-it-works/state-laws-and-regulations/">State laws and regulations</a></h5>
+			<h5 class="landing-heading"><a href="{{site.baseurl}}/how-it-works/state-laws-and-regulations/" id="state-laws-and-regulations">State laws and regulations</a></h5>
 			<button class="accordion-button" accordion-button></button>
 			<div class="accordion-content">
 				<p class="landing-description">State government agencies create regulations and rules related to natural resource extraction based on applicable state laws and statutes (federal laws and regulations apply to all states and localities). Local government agencies also play a role in natural resource extraction in their jurisdictions.</p>

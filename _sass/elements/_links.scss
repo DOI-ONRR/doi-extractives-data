@@ -75,6 +75,7 @@ a,
 a.link-no_under {
   @extend %link;
   border: none;
+  text-decoration: none;
 
   &:active,
   &:hover {

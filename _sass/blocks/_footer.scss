@@ -33,6 +33,12 @@ footer,
   margin-bottom: $base-padding;
 }
 
+.footer-para_last {
+  @include respond-to(medium-up) {
+    margin-bottom: 0;
+  }
+}
+
 .footer-para_callout {
   font-weight: $weight-book;
   margin-bottom: 0;

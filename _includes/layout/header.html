@@ -13,7 +13,7 @@
       </li>
       <span class="header-nav_item_link_spacer"> | </span>
       <li class="header-nav_item_top">
-        <a class="header-nav_item_link_top {% if page.permalink == '/downloads/' %}active{% endif %}" href="{{ site.baseurl }}/downloads/">Downloads</a>
+        <a class="header-nav_item_link_top {% if page.permalink contains '/downloads/' %}active{% endif %}" href="{{ site.baseurl }}/downloads/">Downloads</a>
       </li>
 
       <li class="header-nav_item_top">
@@ -26,16 +26,16 @@
       <li class="header-nav_item {% if page.title == 'Home' %}active{% endif %}">
         <a class="header-nav_item_link" href="{{ site.baseurl }}/">Home</a>
       </li>
-      <li class="header-nav_item {% if page.permalink == '/about/' %}active{% endif %}">
+      <li class="header-nav_item {% if page.permalink contains '/about/' %}active{% endif %}">
         <a class="header-nav_item_link" href="{{ site.baseurl }}/about/">About USEITI</a>
       </li>
-      <li class="header-nav_item {% if page.permalink == '/how-it-works/' %}active{% endif %}">
+      <li class="header-nav_item {% if page.permalink contains '/how-it-works/' %}active{% endif %}">
         <a class="header-nav_item_link" href="{{ site.baseurl }}/how-it-works/">How It Works</a>
       </li>
-      <li class="header-nav_item {% if page.permalink == '/explore/' %}active{% endif %}">
+      <li class="header-nav_item {% if page.permalink contains '/explore/' %}active{% endif %}">
         <a class="header-nav_item_link" href="{{ site.baseurl }}/explore/">Explore Data</a>
       </li>
-      <li class="header-nav_item {% if page.permalink == '/case-studies/' %}active{% endif %}">
+      <li class="header-nav_item {% if page.permalink contains '/case-studies/' %}active{% endif %}">
         <a class="header-nav_item_link" href="{{ site.baseurl }}/case-studies/">Case Studies</a>
       </li>
 

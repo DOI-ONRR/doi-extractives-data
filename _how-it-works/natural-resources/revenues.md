@@ -9,17 +9,17 @@ permalink: /how-it-works/revenues/
   <h5><a href="{{site.baseurl}}{{site.permalink}}">How It Works</a> /</h5>
   <h1>Revenues</h1>
   
-  <h2>Revenue companies pay for natural resources</h2>
+  <h2>What companies pay</h2>
   
-  <h3>DOI revenue from extraction on federal lands</h3>
+  <h3>DOI revenue</h3>
   
   <p>When companies extract natural resources on federal onshore lands and the Outer Continental Shelf, they pay revenue to DOI. In general, for extracting fossil fuels and renewable resources, companies pay bonuses, rents, royalties, or fees and penalties (if incurred) to ONRR, and in some cases bonuses and rents to BLM. Royalties, a percentage of the sales value of extracted resources, make up most of the revenue paid to DOI. Lease holders also pay different fees to BLM, BSEE, and BOEM, often to reimburse the federal government for costs associated with awarding, administering, and enforcing leases. For extracting locatable hardrock minerals on federal lands, companies pay fees, but not royalties under the Mining Law of 1872.</p>
   
   <p><img src="p.47" /></p>
   
-  <h3>Federal corporate income taxes</h3>
+  <h3>Corporate income taxes</h3>
   
-  <p>Corporations operating in the extractive industries also pay taxes to the IRS on their income. These companies pay federal corporate income taxes regardless of whether they extract natural resources from federal, state, or privately held lands, inside or outside of the United States, so long as they have a liability. These companies also pay taxes on income stemming from extracting natural resources and processing them into other products and commodities. There are different types of companies operating in these industries, with different ownership structures, and as a result, they are treated as different taxpayers. Specifically, there are:</p>
+  <p>Corporations operating in the extractive industries also pay taxes to the IRS on their income. These companies pay federal corporate income taxes regardless of whether they extract natural resources from federal, state, or privately held lands, so long as they have a liability. These companies also pay taxes on income stemming from extracting natural resources and processing them into other products and commodities. There are different types of companies operating in these industries, with different ownership structures, and as a result, they are treated as different taxpayers. Specifically, there are:</p>
   
   <ul class="list-bullet">
 	  <li>C-corporations with many shareholders who own the company; these companies pays corporate income taxes to the IRS</li>
@@ -67,11 +67,11 @@ permalink: /how-it-works/revenues/
   
   <p>In comparison, DOI revenue from extraction on federal lands goes to many different funds and entities. In FY 2013, ONRR disbursed $14.187 billion in DOI revenue. The recipient of these funds depends on whether the revenue is derived from onshore or offshore natural resource extraction.</p>
   
-  <h3>DOI onshore revenue distribution</h3>
+  <h3>Onshore revenue</h3>
   
-  <p>In FY 2013, ONRR disbursed <a href="http://statistics.onrr.gov/ReportTool.aspx">$5.141 billion</a> in revenue from natural resource extraction on federal and Indian lands. ONRR disbursed this revenue across recipient entities as follows:</p>
+  <p>In FY 2013, ONRR disbursed <a href="http://statistics.onrr.gov/ReportTool.aspx">$5.141 billion</a> in revenue from natural resource extraction on federal and Indian lands as follows:</p>
   
-  <h4>FY 2013 ONRR disbursements from onshore extraction</h4>
+  <h4>FY 2013 disbursements</h4>
   
   <table>
     <tr>
@@ -108,9 +108,11 @@ permalink: /how-it-works/revenues/
   
   <img src="bar chart, p. 52">
   
-  <h3>DOI offshore revenue distribution</h3>
+  <h3>Offshore revenue</h3>
   
-  <p>In FY 2013, ONRR disbursed $9.046 billion in revenue from natural resource extraction on the Outer Continental Shelf. ONRR disbursed this revenue across recipient entities as follows:</p>
+  <p>In FY 2013, ONRR disbursed $9.046 billion in revenue from natural resource extraction on the Outer Continental Shelf as follows:</p>
+  
+  <h4>FY 2013 disbursements</h4>
   
   <table>
     <tr>

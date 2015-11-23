@@ -44,7 +44,8 @@ header,
 
 .header-image {
   margin-top: $base-padding / 2;
-  width: 280px;
+  max-width: 280px;
+  width: 100%;
 }
 
 .header-nav_top,

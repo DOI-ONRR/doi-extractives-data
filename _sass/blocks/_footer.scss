@@ -62,12 +62,18 @@ footer,
   width: auto;
 }
 
-.footer-col-left {
+.footer-col_left {
   border-bottom: 1px solid $white;
   margin-bottom: $base-padding-extra;
 
   @include respond-to(medium-up) {
     border-bottom: none;
+  }
+}
+
+.footer-col_right {
+  @include respond-to(medium-up) {
+    @include shift(1)
   }
 }
 

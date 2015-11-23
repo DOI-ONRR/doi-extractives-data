@@ -47,11 +47,11 @@ permalink: /explore/disbursements/
   
   <p>In addition to the funds ONRR disbursed, OSMRE disbursed over $322 million from the Abandoned Mine Reclamation Fund in FY 2013 to 24 states and three tribes. States and tribes use these funds to reclaim mine lands abandoned from mining operations prior to 1977.</p>
   
-  <img src="pie chart, p. 52">
+  <p><img src="pie chart, p. 52"></p>
     
   <p>In addition to these states, the Crow Tribe received $1.7 million, the Hopi tribe $1.3 million, and the Navajo tribe $6.8 million.</p>
   
-  <img src="bar chart, p. 52">
+  <p><img src="bar chart, p. 52"></p>
   
   <h3>Offshore revenue</h3>
   
@@ -86,6 +86,6 @@ permalink: /explore/disbursements/
     </tr>
   </table>
   
-  <img src="pie chart p. 54" />
+  <p><img src="pie chart p. 54" /></p>
 
 </div>

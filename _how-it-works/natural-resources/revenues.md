@@ -64,5 +64,11 @@ permalink: /how-it-works/revenues/
   <p>Once revenue is collected by the federal government, it passes through a series of budgetary gateways before ultimately funding public services and community development. These gateways are described below:</p>
   
   <img src="p. 55" />
+  
+  <section class="slab-beta">
+  	<div class="container-outer container-padded u-centered">
+  	  <h4><a href="{{ site.baseurl }}/explore/disbursements/">Learn more about disbursements <icon class="icon-chevron-lg"></icon></a></h4>
+    </div>
+  </section>
 
 </div>

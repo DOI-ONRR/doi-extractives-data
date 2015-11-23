@@ -3,9 +3,11 @@
 
   // local alias for region id => name lookups
   var REGION_ID_NAME = eiti.data.REGION_ID_NAME;
+  var colorscheme = colorbrewer.Purples;
 
   // our state is immutable!
   var state = new Immutable.Map();
+  var rendered = false;
   // this flag indicates whether we're in the middle of a state mutation
   var mutating = false;
 
@@ -19,8 +21,13 @@
   var NULL_FILL = '#eee';
 
   // buttons that expand and collapse other elements
-  var expanders = root.selectAll('button[aria-controls]')
-    .call(eiti.ui.expando);
+  var filterToggle = root.select('button.toggle-filters');
+
+  // FIXME: componentize the focus links too
+  root.selectAll('a[data-key]')
+    .on('click', function() {
+      d3.event.preventDefault();
+    });
 
   // get the filters and add change event handlers
   var filters = root.selectAll('.filters [name]')
@@ -71,7 +78,7 @@
   function initialize() {
     var props = parseHash();
     if (Object.keys(props).length) {
-      expanders.each(eiti.ui.expando.toggle);
+      filterToggle.attr('aria-expanded', true);
     }
     return mutateState(function(state) {
       return state.merge(props);
@@ -91,11 +98,11 @@
     var old = state;
     state = fn(state);
     if (!Immutable.is(old, state)) {
-      if (stateChanged(old, state, 'group')) {
+      if (rendered && stateChanged(old, state, 'group')) {
         console.warn('commodity group:', old.get('group'), '->', state.get('group'));
         state = state.delete('commodity');
       }
-      if (stateChanged(old, state, 'commodity')) {
+      if (rendered && stateChanged(old, state, 'commodity')) {
         console.warn('commodity:', old.get('commodity'), '->', state.get('commodity'));
         state = state.delete('product');
       }
@@ -111,18 +118,24 @@
   function render(state, previous) {
     // console.time('render');
     var product = state.get('product');
+    root
+      .classed('non-product', !product)
+      .classed('has-product', !!product);
+
+    var units;
     if (product) {
-      var match = product.match(/( \((.+)\))\s*$/);
-      var units = match ? ' ' + match[2] : '';
+      var match = product.match(/ (\(.+\))\s*$/);
+      units = match ? ' ' + match[1] : '';
       // console.log('product units:', units);
-      formatNumber = eiti.format.transform(eiti.format.si, function(str) {
-        return str + units;
-      });
+      formatNumber = eiti.format.si;
     } else {
       formatNumber = function(n) {
         return n + eiti.format.pluralize(n, ' product');
       };
     }
+
+    root.selectAll('.units')
+      .text(units);
 
     // update the filters
     filters.each(function() {
@@ -172,7 +185,7 @@
 
     selected.call(renderRegion, state);
     // console.timeEnd('render');
-    return true;
+    rendered = true;
   }
 
   function renderRegion(selection, state) {
@@ -193,9 +206,8 @@
       // console.time('render regions');
 
       var header = selection.select('.region-header');
-      if (header.select('.subregion-chart svg').empty()) {
-        header.select('.subregion-chart')
-          .call(createBarChart);
+      if (header.select('*').empty()) {
+        header.call(createRegionRow);
       }
 
       var total = product
@@ -205,10 +217,10 @@
         .datum({
           value: Math.floor(total),
           properties: {
-            name: REGION_ID_NAME[regionId] || '???'
+            name: 'Total'
           }
         })
-        .call(updateBarChart);
+        .call(updateRegionRow);
 
       var map = selection.select('[is="eiti-map"]');
       onMapLoaded(map, function() {
@@ -275,34 +287,23 @@
 
   function updateSubregions(selection, features, scale) {
 
-    var list = selection.select('.subregions');
+    var list = selection.select('.subregions tbody');
     if (list.empty()) {
       // console.warn('no subregions list:', selection.node());
       return;
     }
 
-    var items = list.selectAll('li')
-      .data(features.filter(function(d) {
-        return !!d.value;
-      }), function(d) { return d.id; });
+    features = features.filter(function(d) {
+      return !!d.value;
+    });
+
+    var items = list.selectAll('tr.subregion')
+      .data(features, getter('id'));
 
     items.exit().remove();
     var enter = items.enter()
-      .append('li')
-        .attr('class', 'subregion');
-    var title = enter.append('span')
-      .attr('class', 'subregion-name');
-    title.append('span')
-      .attr('class', 'color-swatch');
-    title.append('span')
-      .attr('class', 'text')
-      .text(function(f) {
-        // XXX all features need a name!
-        return f.properties.name || f.id;
-      });
-    enter.append('span')
-      .attr('class', 'subregion-chart')
-      .call(createBarChart);
+      .append('tr')
+        .call(createRegionRow);
 
     var cmpName = function(a, b) {
       return d3.ascending(a.properties.name, b.properties.name);
@@ -319,85 +320,56 @@
       .style('background-color', function(d) {
         return scale(d.value);
       });
-    items.select('.subregion-chart')
-      .call(updateBarChart);
+
+    items.call(updateRegionRow);
   }
 
-  function createBarChart(selection) {
-    var w = 250;
-    var h = 18;
-    var svg = selection.append('svg')
-      .attr('class', 'bars')
-      .attr('viewBox', [0, 0, w, h].join(' '));
-    svg.append('g').attr('class', 'negative');
-    svg.append('g').attr('class', 'positive');
-    var g = svg.selectAll('g');
-    g.append('rect')
-      .attr('class', 'bar')
-      .attr('y', '20%')
-      .attr('height', '60%');
-    g.append('text')
-      .attr('class', 'label')
-      .attr('dy', '80%');
-    svg.select('.positive .label')
-      .attr('text-anchor', 'end')
-      .attr('x', w - 2);
+  function createRegionRow(selection) {
+    selection
+      .attr('class', 'subregion');
+    var title = selection.append('td')
+      .attr('class', 'subregion-name');
+    title.append('span')
+      .attr('class', 'color-swatch');
+    title.append('span')
+      .attr('class', 'text');
+    selection.append('td')
+      .append('span')
+        .attr('class', 'value');
+    selection.append('td')
+      .attr('class', 'region-chart')
+      .append('eiti-bar');
   }
 
-  function updateBarChart(selection) {
-    if (selection.empty()) {
-      return;
-    }
-
-    var svg = selection.select('svg');
-    var viewBox = svg.attr('viewBox')
-      .split(' ')
-      .map(Number);
-
-    var w = viewBox[2];
-    var h = viewBox[3];
-    var center = w / 2;
-    var labelSize = w / 4;
+  function updateRegionRow(selection) {
+    selection.select('.subregion-name .text')
+      .text(function(f) {
+        // XXX all features need a name!
+        return f.properties.name || '(' + f.id + ')';
+      });
 
     var values = selection.data()
-      .map(function(d) {
-        return d.value;
-      })
+      .map(function(d) { return d.value; })
       .sort(d3.ascending);
 
     var max = d3.max(values.map(Math.abs));
-    var scale = d3.scale.linear()
-      .domain([0, max])
-      .range([0, center - labelSize]);
 
-    svg.each(function(d) {
-      var value = d.value;
-      var chart = d3.select(this);
-      chart.select('.positive')
-        .call(updateBar, value >= 0 ? value : 0, true);
-      chart.select('.negative')
-        .call(updateBar, value < 0 ? value : 0);
-    });
+    var bar = selection.select('eiti-bar');
+    bar.style('display', state.get('product') ? null : 'none');
+    bar.attr('max', max);
+    bar.attr('value', getter('value'));
 
-    function updateBar(selection, value, force) {
-      selection.select('.label')
-        .text((value || force) ? formatNumber(value) : '');
-      var width = scale(Math.abs(value));
-      // round up to 1px
-      if (width > 0) {
-        width = Math.ceil(width);
-      }
-      selection.select('.bar')
-        .attr('x', value < 0 ? (center - width) : center)
-        .attr('width', width);
-    }
+    selection.select('.value')
+      .text(function(d) {
+        return formatNumber(d.value);
+      });
   }
 
   function createScale(values) {
     if (!state.get('product')) {
       return d3.scale.linear()
         .domain([0, 1])
-        .range([colorbrewer.Blues[3][0], colorbrewer.Blues[3][2]])
+        .range([colorscheme[3][0], colorscheme[3][2]])
         .clamp(true);
     }
 
@@ -405,9 +377,7 @@
     var min = extent[0];
     var max = Math.max(extent[1], 0);
 
-    var colors = (min < 0)
-      ? colorbrewer.Blues
-      : colorbrewer.Blues;
+    var colors = colorscheme;
     if (max >= 2e9) {
       colors = colors[7];
     } else if (max >= 1e6) {
@@ -455,7 +425,7 @@
     } else {
       data = [
         {color: NULL_FILL, value: 'no production'},
-        {color: colorbrewer.Blues[3][2], value: '1 or more products'},
+        {color: colorscheme[3][2], value: '1 or more products'},
       ];
     }
 
@@ -817,10 +787,17 @@
 
   function updateFilterDescription(state) {
     var desc = root.select('#filter-description');
-    var commodity = state.get('commodity') ||
-      (state.get('group')
-       ? eiti.commodities.groups[state.get('group')].name
-       : 'All');
+
+    var commodity = state.get('product');
+    if (commodity) {
+      commodity = commodity.replace(/\s+\(.+\)\s*$/, '');
+    } else {
+      commodity = state.get('commodity')
+        || (state.get('group')
+         ? eiti.commodities.groups[state.get('group')].name
+         : 'All');
+    }
+
     var data = {
       commodity: commodity,
       region: REGION_ID_NAME[state.get('region') || 'US'],

@@ -17,16 +17,10 @@
   padding-top: $base-padding;
 }
 
-eiti-slider {
-  margin-top: 1em;
-}
-
-.region-map {
-  display: block;
-  height: 250px;
-  margin-bottom: 1em;
-  max-height: 30vh; // 30% of the viewport height
-  width: 100%;
+.regions {
+  @include respond-to(medium-up) {
+    margin-right: $base-padding;
+  }
 }
 
 .regions .region {
@@ -37,63 +31,6 @@ eiti-slider {
   }
 }
 
-.map-legend {
-  display: flex;
-  margin-bottom: 1em;
 
-  .step {
-    border-bottom-style: solid;
-    border-bottom-width: 0.5em;
-    display: block;
-    flex: 1;
-    margin-right: 0.2em;
-    padding-left: 0.1em;
 
-    &:last-of-type {
-      margin-right: 0;
-    }
-  }
-
-  &.legend-invalid {
-    .step .label {
-      visibility: hidden;
-    }
-  }
-}
-
-.timeline {
-  shape-rendering: crispEdges;
-
-  line {
-    fill: none;
-    stroke: $dark-blue;
-    stroke-linecap: square;
-    stroke-width: 1;
-    vector-effect: non-scaling-stroke;
-  }
-
-  .area {
-    fill: $positive-fill;
-
-    &.negative {
-      fill: $negative-fill;
-    }
-  }
-
-  .mask {
-    fill: $mid-blue;
-    opacity: 0.5;
-
-    line {
-      stroke-width: 2;
-    }
-  }
-}
-
-// smaller screen rules go here
-@media screen and (max-width: $medium) {
-  .map-legend {
-    font-size: 0.8em;
-  }
-}
 

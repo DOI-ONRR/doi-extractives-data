@@ -7,6 +7,10 @@
     border-radius: $base-border-radius;
     margin-right: $base-padding;
   }
+
+  @include respond-to(huge-plus-up) {
+    margin-right: 0;
+  }
 }
 
 .filters-heading {
@@ -29,7 +33,8 @@
 
 #commodity-group-selector,
 #commodity-selector,
-#region-selector {
+#region-selector,
+#product-selector {
   border: none;
 }
 

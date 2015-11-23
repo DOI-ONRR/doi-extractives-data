@@ -8,8 +8,8 @@
 footer,
 .footer {
   background-color: $light-black;
-  padding-top: $base-padding-extra;
   padding-bottom: $base-padding-extra;
+  padding-top: $base-padding-extra;
 
   .fa-circle {
     color: $neutral-gray;
@@ -108,8 +108,8 @@ footer,
 .footer-list_item_heading,
 .footer-list_item_empty {
   @include heading('para-md');
-  border: 0;
   background-color: transparent;
+  border: 0;
   display: table-cell;
   line-height: 1.3;
   padding-bottom: $base-padding-lite * 2;

@@ -87,12 +87,5 @@ permalink: /explore/disbursements/
   </table>
   
   <img src="pie chart p. 54" />
-  
-  <h3>Federal budget process</h3>
-  
-  <p>Once revenue is collected by the federal government, it passes through a series of budgetary gateways before ultimately funding public services and community development. These gateways are described below:</p>
-  
-  <img src="p. 55" />
-
 
 </div>

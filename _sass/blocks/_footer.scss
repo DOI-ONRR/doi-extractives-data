@@ -45,9 +45,14 @@ footer,
 }
 
 .footer-image {
-  width: 100%;
   margin-bottom: $base-padding-large;
+  max-width: 300px;
   padding-right: $base-padding;
+  width: 100%;
+
+  @include respond-to(medium-up) {
+    max-width: none;
+  }
 }
 
 .footer-button {

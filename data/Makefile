@@ -82,7 +82,13 @@ gdp/US.tsv:
 
 gdp/regional.tsv:
 	mkdir -p $(dir $@)
-	bin/get-bea-regional.js > $@
+	bin/get-bea-regional.js | \
+		bin/abbr-state.js \
+			--if tsv \
+			--of tsv \
+			--states $(input)geo/states.csv \
+			--field Region \
+			> $@
 
 # state listing
 state/states.tsv: $(input)geo/states.csv

@@ -80,6 +80,10 @@ gdp/US.tsv:
 	mkdir -p $(dir $@)
 	bin/get-bea-data.js --geo us -o $@
 
+gdp/regional.tsv:
+	mkdir -p $(dir $@)
+	bin/get-bea-regional.js > $@
+
 # state listing
 state/states.tsv: $(input)geo/states.csv
 	$(tito) --read csv $< | \

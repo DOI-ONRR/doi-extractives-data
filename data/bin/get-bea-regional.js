@@ -92,7 +92,7 @@ async.mapSeries(industryIds, function(id, next) {
     return list.concat(set);
   }, []);
 
-  var keys = ['Region', 'FIPS', 'Year'];
+  var keys = ['Region', 'Year'];
   var result = util.group(rows, keys, function(group) {
     var total = 0;
     var value = 0;
@@ -130,7 +130,7 @@ function mapRow(row) {
   }
   return {
     Region: row.GeoName,
-    FIPS: row.GeoFips,
+    // FIPS: row.GeoFips,
     Year: row.TimePeriod,
     Value: row.DataValue * ONE_MILLION
   };

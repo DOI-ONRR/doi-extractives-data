@@ -78,7 +78,7 @@ national/production.tsv: state/production.tsv offshore/production.tsv
 # national GDP figures
 gdp/US.tsv:
 	mkdir -p $(dir $@)
-	bin/get-bea-data.js --in-topo $(input)geo/us-counties.json --geo us -o $@
+	bin/get-bea-data.js --geo us -o $@
 
 # state listing
 state/states.tsv: $(input)geo/states.csv
@@ -105,7 +105,7 @@ state/production.tsv: county/production.tsv
 # state GDP figures
 gdp/states.tsv:
 	mkdir -p $(dir $@)
-	bin/get-bea-data.js --in-topo $(input)geo/us-counties.json --geo state -o $@
+	bin/get-bea-data.js --geo state -o $@
 
 # state export figures
 state/exports-by-industry.tsv: $(input)census/top-state-exports.tsv

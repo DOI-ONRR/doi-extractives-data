@@ -28,7 +28,7 @@ permalink: /explore/gdp/
       elit.</p>
         </div>
 
-        <div class="container-right-6 filter">
+        <div class="container-left-6 filter">
           <label for="region-selector">Region</label>
           <select id="region-selector" name="region">
             <option value="">All U.S.</option>
@@ -37,6 +37,16 @@ permalink: /explore/gdp/
             {% endfor %}
           </select>
         </div>
+        <div class="container-right-6 filter">
+          <label for="unit-selector">Units</label>
+          <div id="unit-selector" class="container">
+            <form>
+              <label class="unit-selector"><input type="radio" name="units" value="dollars">$</label>
+              <label class="unit-selector"><input type="radio" name="units" value="percent">%</label>
+            </form>
+          </div>
+        </div>
+
 
         <div class="container-left">
           <label for="year-selector">GDP by Year</label>
@@ -113,7 +123,7 @@ permalink: /explore/gdp/
           <div class="map-legend"></div>
         </div>
 
-        <h3 class="region-header-category">Revenue by county</h3>
+        <h3 class="region-header-category">GDP in {{ region.name }}</h3>
         <table class="subregions">
           <thead class="region-header"></thead>
           <tbody></tbody>

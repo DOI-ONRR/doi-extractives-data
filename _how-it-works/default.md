@@ -56,7 +56,7 @@ permalink: /how-it-works/
 		</div>
 	</section>
 	<section class="container">
-		<a id="natural-resources"><h3 class="landing-section_category">Natural resources</h3></a>
+		<h3 id="natural-resources" class="landing-section_category">Natural resources</h3>
 		<div class="container landing-section_open overview">
 			<h5 class="landing-heading"><a id="process-overview" href="{{site.baseurl}}/how-it-works/process-overview/">Overview</a></h5>
 			<p class="landing-description">The U.S. is a world leader in producing natural resources, including oil, gas, coal, renewable energy, and nonenergy minerals.</p>

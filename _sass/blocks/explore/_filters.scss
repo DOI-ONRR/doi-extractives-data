@@ -41,3 +41,65 @@
 [aria-hidden=true] {
   display: none;
 }
+
+#unit-selector {
+  background: white;
+  border-radius: $base-border-radius;
+  overflow: hidden;
+  height: 34px;
+}
+
+.unit-selector {
+  @include user-select(none);
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+  float: left;
+  height: 34px;
+  line-height: $base-line-height;
+  margin-bottom: 0;
+  margin-left: 0;
+  padding: 5px 12px;
+  position: relative;
+  text-align: center;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 50%;
+
+  &:hover,
+  &.active {
+    background: $dark-blue;
+    color: $white;
+  }
+
+  &:focus {
+    border: 1px solid $white;
+    box-shadow: $form-box-shadow-focus;
+    outline: none;
+  }
+
+  &:first-of-type {
+    border-bottom-right-radius: 0;
+    border-right: 1px solid $mid-gray;
+    border-top-right-radius: 0;
+  }
+
+  &:last-of-type {
+    @include omega();
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+  }
+
+  input {
+    clip: rect(0, 0, 0, 0);
+    line-height: normal;
+    margin: 4px 0 0;
+    padding: 0;
+    pointer-events: none;
+    position: absolute;
+  }
+}

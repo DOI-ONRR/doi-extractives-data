@@ -125,7 +125,7 @@ permalink: /explore/
 			<h5 class="landing-heading"><a href="{{site.baseurl}}/explore/jobs/">Jobs</a></h5>
 			<button class="accordion-button" accordion-button></button>
 			<div class="accordion-content">
-				<p class="landing-description">According to the BEA, 808,000 people drew wages or salaries from work in the extractive industries in 2013.</p>
+				<p class="landing-description">808,000 people drew wages or salaries from work in the extractive industries in 2013.</p>
 				<a href="{{site.baseurl}}/explore/jobs/">
 					<img class="landing-image" src="{{site.baseurl}}/img/landing-placeholders/placeholder.png">
 				</a>

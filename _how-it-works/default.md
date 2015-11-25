@@ -92,8 +92,9 @@ permalink: /how-it-works/
 			<p class="landing-description">Renewable energy resources—including geothermal, solar, wind, biomass, and hydrokinetic energ—comprised about 10% of total U.S. energy consumption in 2013.</p>
 		</div>
 	</section>
+
 	<section class="container">
-		<h3 class="landing-section_category">Laws and governance</h3>
+		<h3 id="laws-governance" class="landing-section_category">Laws and governance</h3>
 		<div class="container landing-section" accordion-item accordion-open="true">
 			<h5 class="landing-heading"><a href="{{site.baseurl}}/how-it-works/federal-laws/">Federal laws and regulations</a></h5>
 			<button class="accordion-button" accordion-button></button>

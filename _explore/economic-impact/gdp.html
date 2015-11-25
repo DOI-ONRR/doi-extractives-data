@@ -38,11 +38,18 @@ permalink: /explore/gdp/
           </select>
         </div>
         <div id="unit-filter" class="container-right-6 filter">
+          <!--
           <label for="unit-selector">Units</label>
           <div id="unit-selector" class="container">
             <label class="unit-selector"><input type="radio" name="units" value="dollars">$</label>
             <label class="unit-selector"><input type="radio" name="units" value="percent">%</label>
           </div>
+          -->
+          <label for="unit-selector">Units</label>
+          <select id="unit-selector" name="units">
+            <option value="dollars" selected>$</option>
+            <option value="percent">%</option>
+          </select>
         </div>
 
 

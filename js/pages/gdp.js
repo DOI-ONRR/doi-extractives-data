@@ -17,7 +17,9 @@
   var timeline = root.select('#timeline');
 
   var getter = eiti.data.getter; // getter("foo")({foo: 1}) === 1
-  var formatNumber = eiti.format.dollars;
+  var formatDollars = eiti.format.dollars;
+  var formatPercent = d3.format('%.2');
+  var formatNumber = formatDollars;
   var NULL_FILL = '#eee';
 
   // buttons that expand and collapse other elements
@@ -37,6 +39,7 @@
     })
     .on('change', function() {
       if (mutating) {
+        // console.warn('change while mutating');
         return;
       }
       var prop = this.name;
@@ -104,6 +107,10 @@
       this.value = state.get(this.name) || '';
     });
 
+    formatNumber = state.get('units') === 'percent'
+      ? formatPercent
+      : formatDollars;
+
     var region = state.get('region') || 'US';
     var selected = regionSections
       .classed('active', function() {
@@ -124,7 +131,7 @@
 
   function renderRegion(selection, state) {
     var regionId = state.get('region') || 'US';
-    var fields = getFields(regionId);
+    var fields = getFields(state);
 
     // console.log('loading', regionId);
     // console.time('load');
@@ -138,20 +145,23 @@
       // console.time('render regions');
 
       var header = selection.select('.region-header');
-      if (header.select('*').empty()) {
-        header.call(createRegionRow);
+      if (header.select('tr').empty()) {
+        header.append('tr')
+          .call(createRegionRow);
       }
 
-      var total = d3.sum(data, getter(fields.value));
-      total = Math.floor(total);
+      var first = data[0];
+      var value = getter(fields.value);
       header
         .datum({
-          value: total,
+          data: first,
+          value: first.Value,
+          share: first.Share, // XXX
           properties: {
-            name: 'Total'
+            name: regionId === 'US' ? 'Nationwide' : 'Total'
           }
         })
-        .call(updateRegionRow);
+        .call(updateRegionRow, true);
 
       var map = selection.select('[is="eiti-map"]');
       onMapLoaded(map, function() {
@@ -167,7 +177,7 @@
         var dataByFeatureId = d3.nest()
           .key(getter(fields.region))
           .rollup(function(d) {
-            return +d[0][fields.value];
+            return d[0];
           })
           .map(data);
 
@@ -176,13 +186,17 @@
         var featureId = getter(fields.featureId);
         features.forEach(function(f) {
           var id = featureId(f);
-          f.value = dataByFeatureId[id];
+          var d = dataByFeatureId[id];
+          f.data = d;
+          f.value = d ? d.Value : undefined;
+          f.share = d ? d.Share : undefined; // XXX
         });
 
-        var value = getter('value');
+        var percent = state.get('units') === 'percent';
+        var value = getter(percent ? 'share' : 'value');
         var values = features.map(value);
 
-        var scale = createScale(values);
+        var scale = createScale(values, state);
 
         subregions.style('fill', function(d) {
           var v = value(d);
@@ -231,8 +245,11 @@
       .append('tr')
         .call(createRegionRow);
 
+    var key = state.get('units') === 'percent'
+      ? 'share'
+      : 'value';
     items.sort(function(a, b) {
-      return d3.descending(a.value, b.value);
+      return d3.descending(a[key], b[key]);
     });
 
     items.select('.color-swatch')
@@ -260,13 +277,14 @@
       .append('eiti-bar');
 
     selection.append('td')
-      .attr('class', 'value value_percent');
+      .attr('class', 'value value_share');
     selection.append('td')
-      .attr('class', 'bar bar_percent')
-      .append('eiti-bar');
+      .attr('class', 'bar bar_share')
+      .append('eiti-bar')
+        .attr('max', 1);
   }
 
-  function updateRegionRow(selection) {
+  function updateRegionRow(selection, isHeader) {
     selection.select('.subregion-name .text')
       .text(function(f) {
         // XXX all features need a name!
@@ -282,14 +300,27 @@
 
     selection.select('.value_dollars')
       .text(function(d) {
-        return d.value > 0 ? formatNumber(d.value) : '';
+        return formatDollars(d.value);
       });
     selection.select('.bar_dollars eiti-bar')
       .attr('max', max)
       .attr('value', value);
+
+    selection.select('.value_share')
+      .text(function(d) {
+        return formatPercent(d.share);
+      });
+    selection.select('.bar_share eiti-bar')
+      .attr('value', getter('share'));
   }
 
-  function createScale(values) {
+  function createScale(values, state) {
+    if (state.get('units') === 'percent') {
+      return d3.scale.quantize()
+        .domain([0, 1])
+        .range(colorscheme[5]);
+    }
+
     var extent = d3.extent(values);
     var min = extent[0];
     var max = Math.max(extent[1], 0);
@@ -364,17 +395,17 @@
 
   function getFields(state) {
     var fields = {
-      region: function(d) {
-        return eiti.data.STATE_ID_FIPS[d.FIPS];
-      },
-      value: 'GDP',
+      region: 'Region',
+      value: state.get('units') === 'percent'
+        ? 'Share'
+        : 'Value',
       featureId: 'id'
     };
     return fields;
   }
 
   function updateTimeline(selection, data, state) {
-    var fields = getFields(state.get('region'));
+    var fields = getFields(state);
 
     var value = getter(fields.value);
     var dataByYearPolarity = d3.nest()
@@ -570,15 +601,21 @@
     };
 
     function getDataURL(state) {
-      var path = eiti.data.path;
-      return path + 'gdp/states.tsv';
+      return eiti.data.path + 'gdp/regional.tsv';
     }
 
     function applyFilters(data, state, done) {
+
+      // coerce strings to numbers
+      data.forEach(function(d) {
+        d.Value = +d.Value;
+        d.Share = +d.Share;
+      });
+
       // console.log('applying filters:', state.toJS());
       var region = state.get('region');
       if (region) {
-        var fields = getFields(region);
+        var fields = getFields(state);
         var getRegion = getter(fields.region);
         data = data.filter(function(d) {
           return getRegion(d) === region;

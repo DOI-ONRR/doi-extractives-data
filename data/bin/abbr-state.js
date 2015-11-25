@@ -28,6 +28,11 @@ if (!statesFilename) {
   return console.error('You must provide --states or a filename as a positional argument');
 }
 
+var otherAbbrs = {
+  'United States': 'US',
+  'District of Columbia': 'DC'
+};
+
 fs.createReadStream(statesFilename)
   .pipe(tito.createReadStream('csv'))
   .pipe(thru(function(d, enc, next) {
@@ -46,6 +51,9 @@ function read() {
       var state = statesByName[name];
       if (state) {
         d[field] = state.abbr;
+        next(null, d);
+      } else if (name in otherAbbrs) {
+        d[field] = otherAbbrs[name];
         next(null, d);
       } else {
         console.warn('no such state:', name);

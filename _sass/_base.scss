@@ -48,3 +48,9 @@
 //
 // Styleguide blocks
 @import 'blocks/all';
+
+// Scratch TODO remove
+
+.home-explore-placeholder {
+  @include span-columns(12);
+}

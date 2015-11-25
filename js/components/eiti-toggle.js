@@ -18,14 +18,6 @@
     'extends': 'button',
     prototype: Object.create(HTMLButtonElement.prototype, {
 
-      createdCallback: {
-        value: function() {
-          var elem = document.querySelector('#demo');
-          console.log(elem)
-          var clone = document.importNode(elem.content, true);
-          this.createShadowRoot().appendChild(clone);
-        }
-      },
       attachedCallback: {value: function() {
         this.addEventListener('click', toggle);
         update.call(this);
@@ -112,9 +104,7 @@
 
     var id = this.getAttribute(CONTROLS);
 
-    // console.log(id, 'update', this.innerMarkup)
     var target = document.getElementById(id);
-    // console.log(target)
     if (target) {
       target.setAttribute(HIDDEN, !this.expanded);
     }

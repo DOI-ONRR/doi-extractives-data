@@ -66,3 +66,9 @@ ul {
     @extend .list-square;
   }
 }
+
+.list-sections {
+  li {
+    padding-bottom: $base-padding;
+  }
+}

@@ -142,7 +142,9 @@
 }
 
 .landing-description {
-  @include heading('para-sm');
+  @include heading('para-md');
+  color: $light-black;
+  padding-bottom: $base-padding;
 }
 
 .landing-image {

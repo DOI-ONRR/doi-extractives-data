@@ -14,9 +14,9 @@ permalink: /about/
 
         <h1>About USEITI</h1>
 
-		<p>In 2011, the U.S. joined seven other countries in launching the <a href="http://www.opengovpartnership.org/">Open Government Partnership</a>, a global platform of participating countries dedicated to making governments more open, accountable, and responsive to citizens. As part of the <a href="https://www.whitehouse.gov/sites/default/files/us_national_action_plan_final_2.pdf">2011 National Action Plan</a>, the U.S. sought to improve the transparency of extractive industries for U.S. citizens, and manage public resources—specifically natural resources on federal lands—more effectively by joining the Extractive Industries Transparency Initiative (EITI). We restated this commitment in the <a href="https://www.whitehouse.gov/sites/default/files/docs/us_national_action_plan_6p.pdf">2013 National Action Plan</a>.</p>
+		<p class="case_studies_intro-para">In 2011, the U.S. joined seven other countries in launching the <a href="http://www.opengovpartnership.org/">Open Government Partnership</a>, a global platform of participating countries dedicated to making governments more open, accountable, and responsive to citizens. As part of the <a href="https://www.whitehouse.gov/sites/default/files/us_national_action_plan_final_2.pdf">2011 National Action Plan</a>, the U.S. sought to improve the transparency of extractive industries for U.S. citizens, and manage public resources—specifically natural resources on federal lands—more effectively by joining the Extractive Industries Transparency Initiative (EITI). We restated this commitment in the <a href="https://www.whitehouse.gov/sites/default/files/docs/us_national_action_plan_6p.pdf">2013 National Action Plan</a>.</p>
 
-		<h2 class="h3">The initiative</h2>
+		<h2 id="initiative" class="h3">The initiative</h2>
 
 		<p><a href="https://eiti.org/">EITI</a> is a global standard that promotes open and accountable management of natural resources.</p>
 
@@ -29,7 +29,7 @@ permalink: /about/
       <div class="container-right-5">
       <p>LINK/CALLOUT to <a href="{{ site.baseurl }}/about/whats-new/">what's new for 2015 page.</a></p>
       <p>LINK/CALLOUT to <a href="{{ site.baseurl }}/about/report/">2015 exec summary page.</a></p>
-		  <img src="{{ site.baseurl }}/img/nat-gas-well.jpg" alt="Natural gas well in Colorado" class="u-img">
+		  <img src="{{ site.baseurl }}/img/nat-gas-well.jpg" alt="Natural gas well in Colorado" style="width:100%;">
       </div>
 
     </section>

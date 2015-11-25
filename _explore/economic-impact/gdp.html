@@ -154,10 +154,5 @@ permalink: /explore/gdp/
     {% endfor %}
     'US': 'the entire U.S.'
   };
-  eiti.data.STATE_ID_FIPS = {
-    {% for state in site.data.states %}
-    '{{ state.FIPS }}': '{{ state.id }}',
-    {% endfor %}
-  };
 </script>
 <script src="{{ site.baseurl }}/js/pages/gdp.js"></script>

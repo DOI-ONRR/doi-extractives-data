@@ -8,12 +8,12 @@ permalink: /explore/
   <div class="container-outer landing-section_top">
 	  <div class="container-left-8 hero-left">
 			<h1>{{ page.title }}</h1>
-			<p class="hero-description">The data on this site covers FY 2013 natural resource revenues. This new dataset is a product of the U.S. Extractive Industries Transparency Initiative. It represents cooperation between government, industry, and civil society to create and confirm this information, and provide it in a way that adds to the national dialogue on natural resource extraction.</p>
+			<p class="hero-description">Interact with data on U.S. natural resources here. We have information on <a href="#production">production</a>, <a href="#revenue">revenue</a>, and <a href="#economic-impact">economic impact</a>. All data is from government sources, and some is new in 2015, such as our <a href="{{ site.baseurl }}/explore/federal-production">federal production</a> and <a href="{{ site.baseurl }}/explore/federal-revenue-by-company">federal revenue by company</a> information. We've also got all the data that powers these interactions available for <a href="{{ site.baseurl }}/download/">download</a>.</p>
 		</div>
 		<div class="container-right-4 hero-right">
       <div class="hero-right_square">
         <figure>
-          <img class="hero-right_image" src="{{ site.baseurl }}/img/landing-placeholders/federal-rev.png"/>
+          <img class="hero-right_image" src="{{ site.baseurl }}/img/landing-placeholders/placeholder.png"/>
           <figcaption class="hero-right_caption">Link to some <a href="#" class="link-alpha">interesting content</a></figcaption>
         </figure>
       </div>
@@ -45,6 +45,7 @@ permalink: /explore/
 			</div>
 		</div>
 	</section>
+
 	<section class="container">
 		<a id="revenue" class="link-no_under"><h3 class="landing-section_category">Revenue</h3></a>
 		<div class="container-half landing-section" accordion-item accordion-open="true">
@@ -99,8 +100,9 @@ permalink: /explore/
 			</div>
 		</div>
 	</section>
+
 	<section class="container">
-		<a name="economic-impact" class="link-no_under"><h3 class="landing-section_category">Economic impact</h3></a>
+		<a id="economic-impact" name="economic-impact" class="link-no_under"><h3 class="landing-section_category">Economic impact</h3></a>
 		<div class="container-half landing-section" accordion-item accordion-open="true">
 			<h5 class="landing-heading"><a href="{{site.baseurl}}/explore/gdp/">Gross Domestic Product</a></h5>
 			<button class="accordion-button" accordion-button></button>

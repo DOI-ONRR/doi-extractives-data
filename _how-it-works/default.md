@@ -8,7 +8,7 @@ permalink: /how-it-works/
   <div class="container-outer landing-section_top">
     <div class="container-left-8 hero-left">
       <h1>{{ page.title }}</h1>
-      <p class="hero-description">The United States is home to many different natural resources, including fossil fuel, renewable energy, and nonenergy mineral resources. Since the 19th century, natural resource extraction has been a major industry in the U.S. with fluctuations over time.</p>
+      <p class="hero-description">Private individuals and corporations, as well as federal, state, local, and tribal governments, can own land and the oil, gas, coal, and other minerals found below the surface. In fact, widespread private ownership of these resources makes the U.S. different from nearly every other country, where these resources simply belong to the government. Learn about <a href="#natural-resources">U.S. natural resources</a>, what the <a href="#process">extraction process</a> looks like in the U.S., and related <a href="#laws-governance">laws and governance</a> here.</p>
     </div>
     <div class="container-right-4 hero-right">
       <div class="hero-right_square">

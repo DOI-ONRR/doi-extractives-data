@@ -60,7 +60,7 @@ permalink: /how-it-works/federal-reforms/
 
     <p>For more details, search the <a href="https://www.federalregister.gov/articles/search?conditions%5Bpublication_date%5D%5Bis%5D=11%2F04%2F2015&conditions%5Bterm%5D=Department+of+the+Interior&conditions%5Btype%5D%5B%5D=PRORULE">Federal Registrar for DOI proposed rules</a>.</p>
 
-    <h3>The 2010 Dodd-Frank Act</h3>
+    <h3 id="dodd-frank">The 2010 Dodd-Frank Act</h3>
 
     <p>In 2010, the U.S. enacted the <a href="http://www.gpo.gov/fdsys/pkg/PLAW-111publ203/pdf/PLAW-111publ203.pdf">Dodd-Frank Wall Street Reform and Consumer Protection Act</a> (124 Stat. 1376) to improve transparency and accountability across the financial system. Section 1504 of the act requires extractive industries companies registered with the Securities and Exchange Commission (SEC) to separately disclose information about payments to governments around the world in an interactive data format.</p>
 

@@ -8,7 +8,7 @@ permalink: /explore/
   <div class="container-outer landing-section_top">
 	  <div class="container-left-8 hero-left">
 			<h1>{{ page.title }}</h1>
-			<p class="hero-description">Interact with data on U.S. natural resources here. We have information on <a href="#production">production</a>, <a href="#revenue">revenue</a>, and <a href="#economic-impact">economic impact</a>. All data is from government sources, and some is new in 2015, such as our <a href="{{ site.baseurl }}/explore/federal-production">federal production</a> and <a href="{{ site.baseurl }}/explore/federal-revenue-by-company">federal revenue by company</a> information. We've also got all the data that powers these interactions available for <a href="{{ site.baseurl }}/download/">download</a>.</p>
+			<p class="hero-description">Interact with data on U.S. natural resources here. We have information on <a href="#production">production</a>, <a href="#revenue">revenue</a>, and <a href="#economic-impact">economic impact</a>. All data is from government sources, and some is new in 2015, such as our <a href="{{ site.baseurl }}/explore/federal-production">federal production</a> and <a href="{{ site.baseurl }}/explore/federal-revenue-by-company">federal revenue by company</a> information. We've also got all the data that powers these interactions available for <a href="{{ site.baseurl }}/downloads/">download</a>.</p>
 		</div>
 		<div class="container-right-4 hero-right">
       <div class="hero-right_square">

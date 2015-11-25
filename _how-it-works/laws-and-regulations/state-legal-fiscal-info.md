@@ -44,7 +44,7 @@ nav_items:
 <div class="container-outer container-padded">
 
   <article class="container-left-7">
-  
+
     <h5><a href="{{site.baseurl}}/how-it-works">How It Works</a> /</h5>
     <h1>State Legal and Fiscal Information</h1>
 

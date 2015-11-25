@@ -115,7 +115,7 @@ permalink: /how-it-works/
 				</a>
 			</div>
 		</div>
-    <div class="container landing-section" accordion-item accordion-open="true">
+    <!-- <div class="container landing-section" accordion-item accordion-open="true">
 			<h5 class="landing-heading"><a href="{{site.baseurl}}/how-it-works/federal-agencies/">Federal agencies</a></h5>
 			<button class="accordion-button" accordion-button></button>
 			<div class="accordion-content">
@@ -124,7 +124,7 @@ permalink: /how-it-works/
 					<img class="landing-image" src="{{site.baseurl}}/img/landing-placeholders/placeholder.png">
 				</a>
 			</div>
-		</div>
+		</div> -->
 		<div class="container landing-section" accordion-item accordion-open="true">
 			<h5 class="landing-heading"><a href="{{site.baseurl}}/how-it-works/state-laws-and-regulations/" id="state-laws-and-regulations">State laws and regulations</a></h5>
 			<button class="accordion-button" accordion-button></button>

@@ -54,6 +54,6 @@ permalink: /how-it-works/ownership/
 
     <p>When it comes to the natural resources found off the coast, the federal government and state governments split ownership. In general, states have primary authority and natural resource ownership in the three-mile area extending outward from their coasts. The federal government owns oil, gas, and minerals located in the submerged lands on the Outer Continental Shelf, which extend from the states’ offshore boundaries out to at least 200 nautical miles from the shore.</p>
 
-  </div>
+  </article>
 
 </div>

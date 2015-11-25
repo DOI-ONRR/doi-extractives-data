@@ -5,6 +5,11 @@
     expanded: '__expandedText'
   };
 
+  var innerMarkup = {
+    bars: '<span class="u-visually-hidden"><icon class="fa fa-bars"></icon></span>',
+    x: '<span class="u-visually-hidden"><icon class="icon-close-x"></icon></span>'
+  }
+
   var EXPANDED = 'aria-expanded';
   var CONTROLS = 'aria-controls';
   var HIDDEN = 'aria-hidden';
@@ -13,6 +18,14 @@
     'extends': 'button',
     prototype: Object.create(HTMLButtonElement.prototype, {
 
+      createdCallback: {
+        value: function() {
+          var elem = document.querySelector('#demo');
+          console.log(elem)
+          var clone = document.importNode(elem.content, true);
+          this.createShadowRoot().appendChild(clone);
+        }
+      },
       attachedCallback: {value: function() {
         this.addEventListener('click', toggle);
         update.call(this);
@@ -53,6 +66,7 @@
 
       expandedText: {
         get: function() {
+          console.log('expandedText')
           return this[symbols.expanded]
             || this.getAttribute('data-expanded-text')
             || this.textContent;
@@ -76,6 +90,8 @@
           } else {
             expanded = !!expanded;
           }
+
+          console.log(this)
           this.setAttribute(EXPANDED, expanded);
         }
       }
@@ -91,8 +107,14 @@
       ? this.expandedText
       : this.collapsedText;
 
+    var attrInnerMarkup = this.getAttribute('data-inner-markup');
+    this.innerHTML = innerMarkup[attrInnerMarkup];
+
     var id = this.getAttribute(CONTROLS);
+
+    // console.log(id, 'update', this.innerMarkup)
     var target = document.getElementById(id);
+    // console.log(target)
     if (target) {
       target.setAttribute(HIDDEN, !this.expanded);
     }

@@ -1,12 +1,12 @@
 <header class="header">
 
-  <div>
+  <div class="header-left">
     <a class="header-image_link" href="{{ site.baseurl }}/">
       <img class="header-image" src="{{ site.baseurl }}/img/logo-USEITI-color.svg" alt="USEITI logo">
     </a>
   </div>
 
-  <nav class="header-nav">
+  <nav class="header-nav header-right">
     <ul class="header-nav_top">
       <li class="header-nav_item_top">
         <a class="header-nav_item_link_top js-glossary-toggle" alt="this is the glossary drawer">Glossary</a>
@@ -41,5 +41,6 @@
 
     </ul>
   </nav>
+  <button is="eiti-toggle" aria-controls="nav-drawer" aria-hidden="false" aria-expanded="false" class="header-right header-bars" data-inner-markup="bars" id="demo"><div>WHAT IS UP</div></button>
 
 </header>

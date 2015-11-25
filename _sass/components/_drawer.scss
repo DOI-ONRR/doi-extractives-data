@@ -1,0 +1,199 @@
+// Glossary
+//
+// The site drawer
+//
+// Styleguide components.drawer
+
+// Glossary drawer
+// Markup:
+// <div class="drawer" style="right:0px;">
+//   <button title="Close drawer"
+//       class="button button--close toggle"><span class="u-visually-hidden"><i class="icon-close-x"></i></span>
+//   </button>
+//   <h2 id="drawer-header"><i class="fa fa-book"></i> Glossary</h2>
+//   <label for="drawer-search" class="label">Search drawer terms</label>
+//   <input id="drawer-search" type="search" placeholder="e.g. Revenues">
+//   <div>
+//     <ul>
+//       <li class="glossary__item">
+//         <div class="accordion__header">
+//           <h4 class="drawer-term">Glossary term</h4>
+//           <button class="button accordion__button">
+//           <i class="fa fa-chevron-down"></i>
+//             <span class="u-visually-hidden" data-show="Show definition" data-hide="Hide definition"></span>
+//           </button>
+//         </div>
+//         <p class="drawer-definition hidden">Glossary term definition</p>
+//       </li>
+//     </ul>
+//   </div>
+// </div>
+//
+// Styleguide components.drawer.drawer
+
+.drawer {
+  @include transition(right, 0.3s);
+
+  background-color: $light-black;
+  bottom: 0;
+  color: $white;
+  max-width: 30rem;
+  overflow-y: scroll;
+  padding: 2rem;
+  position: fixed;
+  top: 0;
+  width: 300px;
+  z-index: 5000;
+
+  h2,
+  p,
+  label,
+  i {
+    color: $white;
+  }
+
+  &[aria-hidden=true],
+  &[aria-expanded=false] {
+    display: block;
+    right: -100%;
+  }
+
+  &[aria-hidden=false],
+  &[aria-expanded=true] {
+    @include transition(right, 0.3s);
+    right: 0;
+  }
+
+  .button--close {
+    background-color: transparent;
+    color: $white;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+  }
+
+}
+
+.drawer-icon {
+  padding-right: $base-padding-lite;
+}
+
+#drawer-header {
+  i:before {
+    padding-left: 0;
+    padding-right: $base-padding-lite;
+  }
+}
+
+#drawer-search {
+  &::-webkit-input-placeholder {
+    font-style: italic;
+  }
+
+  &:-moz-placeholder { // Firefox 18-
+    font-style: italic;
+  }
+
+  &::-moz-placeholder {  // Firefox 19+
+    font-style: italic;
+  }
+
+  &:-ms-input-placeholder {
+    font-style: italic;
+  }
+}
+
+.drawer__item {
+  border-bottom: 1px solid $mid-gray;
+
+  &:first-child {
+    border-top: 1px solid $mid-gray;
+  }
+
+  .glossary-term {
+    color: $white;
+    margin: 0;
+  }
+
+  .glossary-definition {
+    font-family: $base-font-family;
+    padding-bottom: 1rem;
+  }
+
+  .accordion__header {
+    padding: 1rem 4rem 1rem 0;
+    position: relative;
+  }
+
+  .accordion__button {
+    background-color: transparent;
+    background-size: 50%;
+    height: 2rem;
+    margin-top: -1rem;
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    width: 2rem;
+  }
+
+  .accordion__button {
+    background-size: 50%;
+    height: 2rem;
+    margin-top: -1rem;
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    width: 2rem;
+  }
+}
+
+.glossary-term {
+  color: $white;
+}
+
+// Term classes
+//
+// Wrap glossary terms with these classes
+//
+// .term          - Standard class -- adds the book icon
+// .term-p        - Used in conjuction with .term when the term is in a body paragaraph of text, reduces padding and adds margin
+//
+// Markup:
+// <p>What are <span class="term {{modifier_class}}" data-term="extractive industry" title="Click to define" tabindex="0">
+//     extractive industries
+//     <i class="term-icon"></i>
+// </span>, Brian asked inquisitively</p>
+//
+// Styleguide components.drawer.term
+
+.term {
+  @include transition(background-color, 0.2s, box-shadow, 0.2s, color, 0.2s);
+
+  border-bottom: 1px dotted $base-font-color;
+  box-shadow: 0 0 0 4px transparent;
+  cursor: pointer;
+  text-decoration: none;
+
+  &:focus,
+  &:hover {
+    border-bottom: 1px solid $base-font-color;
+    text-decoration: none;
+  }
+
+  i {
+    font-size: 0.75em;
+
+    &:before {
+      padding-left: $base-padding-lite * 0.75;
+    }
+
+  }
+}
+
+.term-p {
+  @extend .term;
+  box-shadow: none;
+  margin-right: 0.25rem;
+}

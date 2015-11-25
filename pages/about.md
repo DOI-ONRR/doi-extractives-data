@@ -16,7 +16,7 @@ permalink: /about/
 
 		<p>In 2011, the U.S. joined seven other countries in launching the <a href="http://www.opengovpartnership.org/">Open Government Partnership</a>, a global platform of participating countries dedicated to making governments more open, accountable, and responsive to citizens. As part of the <a href="https://www.whitehouse.gov/sites/default/files/us_national_action_plan_final_2.pdf">2011 National Action Plan</a>, the U.S. sought to improve the transparency of extractive industries for U.S. citizens, and manage public resources—specifically natural resources on federal lands—more effectively by joining the Extractive Industries Transparency Initiative (EITI). We restated this commitment in the <a href="https://www.whitehouse.gov/sites/default/files/docs/us_national_action_plan_6p.pdf">2013 National Action Plan</a>.</p>
 
-		<h2 class="h3">The initiative</h2>
+		<h2 id="initiative" class="h3">The initiative</h2>
 
 		<p><a href="https://eiti.org/">EITI</a> is a global standard that promotes open and accountable management of natural resources.</p>
 

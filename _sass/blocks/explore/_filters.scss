@@ -30,7 +30,6 @@
   color: $dark-blue;
 }
 
-
 #commodity-group-selector,
 #commodity-selector,
 #region-selector,
@@ -44,10 +43,10 @@
 }
 
 #unit-selector {
-  background: white;
+  background: $white;
   border-radius: $base-border-radius;
-  overflow: hidden;
   height: 34px;
+  overflow: hidden;
 }
 
 .unit-selector {

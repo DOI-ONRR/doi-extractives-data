@@ -89,7 +89,7 @@ permalink: /explore/federal-production/
       </form>
 
       <div class="container-outer">
-        <button class="toggle" aria-controls="filters" data-expanded-text="Hide Filters">Show Filters</button>
+        <button class="toggle-filters toggle" is="eiti-toggle" aria-controls="filters" data-expanded-text="Hide Filters">Show Filters</button>
       </div>
 
     </div>
@@ -190,6 +190,7 @@ permalink: /explore/federal-production/
 </section>
 <script src="{{ site.baseurl }}/js/vendor/immutable.min.js"></script>
 <script src="{{ site.baseurl }}/js/components/eiti-bar.js"></script>
+<script src="{{ site.baseurl }}/js/components/eiti-toggle.js"></script>
 <script>
   eiti.data.REGION_ID_NAME = {
     {% for state in site.data.states %}

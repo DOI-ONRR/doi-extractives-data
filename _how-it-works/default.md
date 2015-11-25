@@ -13,8 +13,8 @@ permalink: /how-it-works/
     <div class="container-right-4 hero-right">
       <div class="hero-right_square">
         <figure>
-          <img class="hero-right_image" src="{{ site.baseurl }}/img/landing-placeholders/federal-rev.png"/>
-          <figcaption class="hero-right_caption"><a href="">Learn more about the process</a></figcaption>
+          <img class="hero-right_image" src="{{ site.baseurl }}/img/landing-placeholders/placeholder.png"/>
+          <figcaption class="hero-right_caption">This is where a caption about a summary graphic will be perhaps with a <a href="#" class="link-alpha">number and figure</a>.</figcaption>
         </figure>
       </div>
     </div>
@@ -23,14 +23,14 @@ permalink: /how-it-works/
 
 <section accordion class="container-outer">
 	<section class="container">
-		<h3 class="landing-section_category">Extraction and exploration</h3>
+		<h3 id="natural-resources" class="landing-section_category">Natural resources</h3>
 		<div class="container landing-section" accordion-item accordion-open="true">
 			<h5 class="landing-heading"><a href="{{site.baseurl}}/how-it-works/ownership/">Ownership</a></h5>
 			<button class="accordion-button" accordion-button></button>
 			<div class="accordion-content">
 				<p class="landing-description">Private individuals and corporations, as well as federal, state, local, and tribal governments, can own land and the oil, gas, coal, and other minerals found below the surface. In fact, widespread private ownership of these resources makes the U.S. different from nearly every other country, where these resources simply belong to the government.</p>
 				<a href="{{site.baseurl}}/how-it-works/ownership/">
-					<img class="landing-image" src="{{site.baseurl}}/img/landing-placeholders/placeholder.png">
+					<img class="landing-image" src="{{site.baseurl}}/img/landing-placeholders/precent-production-fed.png">
 				</a>
 			</div>
 		</div>
@@ -38,9 +38,9 @@ permalink: /how-it-works/
 			<h5 class="landing-heading"><a href="{{site.baseurl}}/how-it-works/production/">Production</a></h5>
 			<button class="accordion-button" accordion-button></button>
 			<div class="accordion-content">
-				<p class="landing-description">The process of how the federal government awards rights to extract natural resources from federal lands, and how those resources eventually result in revenue, differs depending on the resource and whether extraction is taking place onshore or offshore.</p>
+				<p class="landing-description">The U.S. is a world leader in producing natural resources, including oil, gas, coal, renewable energy, and nonenergy minerals.</p>
 				<a href="{{site.baseurl}}/how-it-works/production/">
-					<img class="landing-image" src="{{site.baseurl}}/img/landing-placeholders/placeholder.png">
+					<img class="landing-image" src="{{site.baseurl}}/img/landing-placeholders/global-rank-production.png">
 				</a>
 			</div>
 		</div>
@@ -50,16 +50,16 @@ permalink: /how-it-works/
 			<div class="accordion-content">
 				<p class="landing-description">When companies extract natural resources on federal onshore and offshore lands, they pay revenue to the federal government. The government distributes these funds for public use in a variety of ways.</p>
 				<a href="{{site.baseurl}}/how-it-works/revenues/">
-					<img class="landing-image" src="{{site.baseurl}}/img/landing-placeholders/placeholder.png">
+					<img class="landing-image" src="{{site.baseurl}}/img/landing-placeholders/revenues-pie-chart.png">
 				</a>
 			</div>
 		</div>
 	</section>
 	<section class="container">
-		<h3 id="natural-resources" class="landing-section_category">Natural resources</h3>
+		<h3 id="process" class="landing-section_category">The process</h3>
 		<div class="container landing-section_open overview">
 			<h5 class="landing-heading"><a id="process-overview" href="{{site.baseurl}}/how-it-works/process-overview/">Overview</a></h5>
-			<p class="landing-description">The U.S. is a world leader in producing natural resources, including oil, gas, coal, renewable energy, and nonenergy minerals.</p>
+			<p class="landing-description">The process of how the federal government awards rights to extract natural resources from federal lands, and how those resources eventually result in revenue, differs depending on the resource and whether extraction is taking place onshore or offshore.</p>
 			<div class="landing-icons">
 				<icon class="icon-oil"></icon>
 				<icon class="icon-minerals"></icon>
@@ -150,7 +150,7 @@ permalink: /how-it-works/
 			<div class="accordion-content">
 				<p class="landing-description">Extracting natural resources on Indian land and distributing the associated revenue involves a unique set of processes and stakeholders.</p>
 				<a href="{{site.baseurl}}/how-it-works/tribal-laws-and-regulations/">
-					<img class="landing-image" src="{{site.baseurl}}/img/placeholders/map.png">
+					<img class="landing-image" src="{{site.baseurl}}/img/landing-placeholders/placeholder.png">
 				</a>
 			</div>
 		</div>

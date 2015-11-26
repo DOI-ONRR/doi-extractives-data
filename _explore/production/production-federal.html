@@ -9,12 +9,10 @@ permalink: /explore/federal-production/
       <h5 class="subpage-breadcrumb"><a href="{{ site.baseurl }}/explore/">Explore</a> /</h5>
       <h1>Federal Production</h1>
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing
-        elit. Praesent eget justo sodales neque fermentum
-        consequat eu sit amet libero. Aliquam eu eleifend leo.
-        Donec sem dolor, volutpat quis tortor pretium,
-        tincidunt pretium massa. Curabitur sed euismod velit.
-        Aenean eu venenatis turpis, mattis tempus orci.</p>
+      <p>Revenue from extractive industries on federal lands totaled approximately $13.4 billion, or 0.4% of total $3,396.9 billion in revenue collected across the federal government.</p>
+
+      <p><em>Explore production on federal lands and waters from 2005 to 2014 by state and county for 28 individual products.</em></p>
+
     </div>
   </div>
   <section class="container-right-8">
@@ -27,12 +25,17 @@ permalink: /explore/federal-production/
 
         <div class="filters-heading">
           <h3>Filter revenue</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing
-      elit.</p>
+          <p>Select a product to see its production levels by its specific unit of measure.</p>
         </div>
 
         <div class="container-left-6">
-          <div class="filter">
+          <div id="product-filter" class="filter">
+            <label for="product-selector">Product</label>
+            <select id="product-selector" name="product">
+              <option value="">All products</option>
+            </select>
+          </div>
+          <!-- <div class="filter">
             <label for="commodity-group-selector">Commodity Category</label>
             <select id="commodity-group-selector" name="group">
               <option value="">All commodity categories</option>
@@ -47,16 +50,9 @@ permalink: /explore/federal-production/
             <select id="commodity-selector" name="commodity">
               <option value="">All commodities</option>
             </select>
-          </div>
+          </div> -->
         </div>
         <div class="container-right-6">
-          <div id="product-filter" class="filter">
-            <label for="product-selector">Product</label>
-            <select id="product-selector" name="product">
-              <option value="">All products</option>
-            </select>
-          </div>
-
           <div class="filter">
             <label for="region-selector">Region</label>
             <select id="region-selector" name="region">

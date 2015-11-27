@@ -112,7 +112,7 @@ Glossary.prototype.findTerm = function(term) {
   });
 };
 
-Glossary.prototype.toggle = function(drawer) {
+Glossary.prototype.toggle = function() {
   var method = this.isOpen ? this.hide : this.show;
   method.apply(this);
 

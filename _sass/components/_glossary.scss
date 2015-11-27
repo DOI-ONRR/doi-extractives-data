@@ -5,11 +5,11 @@
 // // Styleguide components.glossary
 
 #glossary {
-	width: 100%;
+  width: 100%;
 
-	@include respond-to(tiny-up) {
-		width: 300px;
-	}
+  @include respond-to(tiny-up) {
+    width: 300px;
+  }
 }
 
 .drawer__item {

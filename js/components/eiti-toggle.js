@@ -87,17 +87,21 @@
           }
           console.log('expanded.set',expanded, this)
           // this.setAttribute(EXPANDED, expanded);
-          var togglers = document.querySelectorAll("[data-toggler='nav-drawer']");
+          var toggleId = this.getAttribute(CONTROLS);
+
+          var togglers = document.querySelectorAll("[data-toggler=" + toggleId + "]");
           // console.log(typeof(togglers), togglers)
           // togglers is a NodeList, not an Array
-          Array.prototype.forEach.call(togglers, function(d) {
-            console.log('expanded',expanded,d)
-            console.log('d.getAttribute(EXPANDED)',d.getAttribute(EXPANDED));
-            console.log('=======================')
-            d.setAttribute(EXPANDED, expanded)
+          if (togglers) {
+            Array.prototype.forEach.call(togglers, function(toggle) {
+              // console.log('expanded',expanded,toggle)
+              // console.log('toggle.getAttribute(EXPANDED)',toggle.getAttribute(EXPANDED));
+              // console.log('=======================')
+              toggle.setAttribute(EXPANDED, expanded)
 
-            // d.setAttribute(EXPANDED)
-          });
+              // d.setAttribute(EXPANDED)
+            });
+          }
         }
       }
     })

@@ -25,7 +25,8 @@ var defaultSelectors = {
   body: '#glossary',
   toggle: '.js-glossary-toggle',
   term: '.term',
-  accordionButton: '.accordion__button'
+  accordionButton: '.accordion__button',
+  navToggle: '[data-toggler="nav-drawer"]'
 };
 
 /**
@@ -44,6 +45,8 @@ function Glossary(selectors) {
   self.$toggle = $(self.selectors.toggle);
   self.$search = this.$body.find('.glossary__search');
   self.$accordionButton = $(self.selectors.accordionButton);
+  self.$navToggle =  document.querySelector(self.selectors.navToggle);
+
   // Initialize state
   self.isOpen = false;
 
@@ -112,6 +115,7 @@ Glossary.prototype.findTerm = function(term) {
 Glossary.prototype.toggle = function(drawer) {
   var method = this.isOpen ? this.hide : this.show;
   method.apply(this);
+
 };
 
 Glossary.prototype.show = function() {
@@ -127,6 +131,8 @@ Glossary.prototype.hide = function() {
   this.$toggle.removeClass('active');
   this.isOpen = false;
   accessibility.removeTabindex(this.$body);
+
+  this.$navToggle.click();
 };
 
 /** Remove existing filters on input */

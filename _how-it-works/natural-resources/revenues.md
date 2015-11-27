@@ -11,15 +11,17 @@ permalink: /how-it-works/revenues/
     <h5><a href="{{site.baseurl}}/how-it-works">How It Works</a> /</h5>
     <h1>Revenues</h1>
 
-    <h3>DOI revenue</h3>
+    <h2>DOI revenue</h2>
 
-    <p class="case_studies_intro-para">When companies extract natural resources on federal onshore lands and the Outer Continental Shelf, they pay revenue to the Department of the Interior (DOI). In general, companies pay bonuses, rents, royalties, or fees and penalties (if incurred) to ONRR, and in some cases bonuses and rents to BLM. Royalties, a percentage of the sales value of extracted resources, make up most of the revenue paid to DOI.</p>
+    <p class="case_studies_intro-para">When companies extract natural resources on federal onshore lands and the Outer Continental Shelf, they pay revenue to the Department of the Interior (DOI).</p>
+	
+	<p>In general, companies pay bonuses, rents, royalties, or fees and penalties (if incurred) to ONRR, and in some cases bonuses and rents to BLM. Royalties, a percentage of the sales value of extracted resources, make up most of the revenue paid to DOI.</p>
 
     <p>Lease holders also pay different fees to BLM, BSEE, and BOEM, often to reimburse the federal government for costs associated with awarding, administering, and enforcing leases. For extracting locatable hardrock minerals on federal lands, companies pay fees, but not royalties under the Mining Law of 1872.</p>
 
     <img src="{{site.baseurl}}/img/landing-placeholders/revenue-type-summary-table.png">
 
-    <h3>Corporate income taxes</h3>
+    <h2>Corporate income taxes</h2>
 
     <p>Corporations operating in the extractive industries also pay taxes to the IRS on their income. These companies pay federal corporate income taxes regardless of whether they extract natural resources from federal, state, or privately held lands, so long as they have a liability. These companies also pay taxes on income from extracting natural resources and processing them into other products and commodities. There are different types of companies operating in these industries, with different ownership structures, and as a result, they are treated as different taxpayers:</p>
 
@@ -32,11 +34,11 @@ permalink: /how-it-works/revenues/
 
     <p>Only income taxes from C-corporations are included in the 2015 USEITI Report.</p>
 
-    <h3>Revenue policy provisions</h3>
+    <h2>Revenue policy provisions</h2>
 
     <p>While royalty rates can reach as high as 18.75%, and the federal corporate income tax rate can reach as high as 35% depending on company income, companies may pay less. Revenue policy provisions, including royalty relief and tax expenditures, can result in smaller revenue and tax payments to the federal government to promote other policy goals.</p>
 
-    <h4>Royalty relief</h4>
+    <h3>Royalty relief</h3>
 
     <p>To incentivize companies to produce additional oil and gas on certain leases on the Outer Continental Shelf where extraction is anticipated to be unprofitable, the federal government may grant some lease holders royalty relief. Royalty relief means that these lease holders do not have to pay royalties on some amount of production, or they pay a smaller percentage of royalties, for the oil and gas they extract. There are four situations in which a lease holder may gain royalty relief:</p>
 
@@ -49,7 +51,7 @@ permalink: /how-it-works/revenues/
 
     <p>In some situations, if oil and gas prices rise above certain thresholds, lease holders that previously gained royalty relief must start paying royalties at the regular rate again.</p>
 
-    <h3>Tax expenditures</h3>
+    <h2>Tax expenditures</h2>
 
     <p>Tax expenditures are <a href="https://www.treasury.gov/resource-center/tax-policy/Documents/Tax-Expenditures-FY2017-Revised.pdf">defined in the law</a> as “revenue losses attributable to provisions of the federal tax laws which allow a special exclusion, exemption, or deduction from gross income or which provide a special credit, a preferential rate of tax, or a deferral of tax liability.” These exceptions may be viewed as alternatives to other policy instruments, such as spending or regulatory programs.</p>
 
@@ -63,11 +65,21 @@ permalink: /how-it-works/revenues/
 
     <p>The federal budget also includes annual estimates of the net revenue effects of eliminating a wider range of fossil fuel related tax expenditures outlined in <a href="https://www.treasury.gov/open/Documents/USA%20FFSR%20progress%20report%20to%20G20%202014%20Final.pdf">United States – Progress Report on Fossil Fuel Subsidies</a>. When added together, eliminating fossil fuel tax expenditures would decrease the U.S. deficit by $4.4 billion a year on average over a 10-year window, per estimates in the White House report, <a href="https://www.whitehouse.gov/sites/default/files/omb/budget/fy2016/assets/16msr.pdf">Fiscal Year 2016 Mid-Session Review: Budget of the U.S. Government</a>. The report did not include estimates of the effects of eliminating renewable and nonenergy mineral tax expenditures.</p>
 
-    <h3>Federal budget process</h3>
+    <h2>Federal budget process</h2>
 
     <p>Once revenue is collected by the federal government, it passes through a series of budgetary gateways before ultimately funding public services and community development. These gateways are described below:</p>
 
     <img src="{{site.baseurl}}/img/landing-placeholders/disbursements.png">
+	
+	<h2>Learn more</h2>
+	
+	<p>For more details about U.S. and international revenue standards, visit:</p>
+		
+	<ul class="list-bullet">
+		<li>IRS, <a href="http://www.irs.gov/irm/part4/irm_04-001-005.html">Revenue Classification and Case Building System</a></li>
+		<li>International Monetary Fund, <a href="http://www.imf.org/external/np/sta/gfsm/">Government Finance Statistics Manual 2014</a></li>
+		<li>International Monetary Fund, <a href="https://www.imf.org/external/np/fad/trans/code.htm">Code of Good Practices on Fiscal Transparency</a></li>
+	</ul>
 
   </article>
 

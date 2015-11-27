@@ -8,12 +8,11 @@
   var innerMarkup = {
     bars: '<span class="u-visually-hidden"><icon class="fa fa-bars"></icon></span>',
     x: '<span class="u-visually-hidden"><icon class="icon-close-x"></icon></span>'
-  }
+  };
 
   var EXPANDED = 'aria-expanded';
   var CONTROLS = 'aria-controls';
   var HIDDEN = 'aria-hidden';
-  var TOGGLER = 'data-toggler';
 
   exports.EITIToggle = document.registerElement('eiti-toggle', {
     'extends': 'button',
@@ -85,7 +84,7 @@
           }
 
           var toggleId = this.getAttribute(CONTROLS);
-          var togglers = document.querySelectorAll("[data-toggler=" + toggleId + "]");
+          var togglers = document.querySelectorAll('[data-toggler=' + toggleId + ']');
 
           if (togglers.length) {
 

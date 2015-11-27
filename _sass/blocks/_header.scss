@@ -57,18 +57,6 @@ header,
 .header-right {
   float: right;
 
-  &.header-bars {
-    display: inline-block;
-
-    icon {
-      @include font-size(1.5);
-    }
-  }
-
-  &.header-nav {
-    display: none;
-  }
-
   @include respond-to(medium-up) {
 
     &.header-bars {
@@ -80,6 +68,18 @@ header,
       @include omega();
       display: inline-block;
     }
+  }
+
+  &.header-bars {
+    display: inline-block;
+
+    icon {
+      @include font-size(1.5);
+    }
+  }
+
+  &.header-nav {
+    display: none;
   }
 }
 
@@ -121,13 +121,14 @@ header,
   letter-spacing: 1.1px;
   text-decoration: none;
   text-transform: uppercase;
-  &:hover,
-  &:active {
-    text-decoration: underline;
-  }
 
   @include respond-to(large-up) {
     @include font-size(0.875);
+  }
+
+  &:hover,
+  &:active {
+    text-decoration: underline;
   }
 }
 
@@ -205,6 +206,7 @@ header,
 
 [eiti-drawer-toggle] {
   display: inline-block;
+
   @include respond-to(medium-up) {
     display: none;
   }

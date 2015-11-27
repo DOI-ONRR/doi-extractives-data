@@ -8,6 +8,10 @@ $nav-drawer-height: 621px;
   width: 300px;
   z-index: 4999;
 
+  @include respond-to(medium-up) {
+    display: none;
+  }
+
   &[aria-expanded="true"] {
     right: 0;
   }
@@ -15,17 +19,14 @@ $nav-drawer-height: 621px;
   &[aria-expanded="false"] {
     @include transition(right, 0.3s);
     display: inline-block;
-    right: -400px;
-    right: 0;
+    right: -300px;
   }
 
   @media only screen and (min-height: $nav-drawer-height) {
     bottom: initial;
   }
 
-  @include respond-to(medium-up) {
-    display: none;
-  }
+
 }
 
 .nav_drawer-nav {
@@ -35,9 +36,9 @@ $nav-drawer-height: 621px;
 }
 
 .nav_drawer-nav_item {
-  padding-bottom: $base-padding-large;
   font-weight: $weight-bold;
   letter-spacing: 2px;
+  padding-bottom: $base-padding-large;
   text-transform: uppercase;
 
   &:last-of-type {

@@ -13,6 +13,7 @@
   var EXPANDED = 'aria-expanded';
   var CONTROLS = 'aria-controls';
   var HIDDEN = 'aria-hidden';
+  var TOGGLER = 'data-toggler';
 
   exports.EITIToggle = document.registerElement('eiti-toggle', {
     'extends': 'button',
@@ -28,6 +29,7 @@
       }},
 
       attributeChangedCallback: {value: function(attr, prev, value) {
+        console.log(attr,prev,value)
         switch (attr) {
           case EXPANDED:
             update.call(this);
@@ -58,7 +60,7 @@
 
       expandedText: {
         get: function() {
-          console.log('expandedText')
+          // console.log('expandedText')
           return this[symbols.expanded]
             || this.getAttribute('data-expanded-text')
             || this.textContent;
@@ -74,6 +76,7 @@
           return this.getAttribute(EXPANDED) === 'true';
         },
         set: function(expanded) {
+
           // coerce strings to booleans
           if (expanded === 'true') {
             expanded = true;
@@ -82,9 +85,19 @@
           } else {
             expanded = !!expanded;
           }
+          console.log('expanded.set',expanded, this)
+          // this.setAttribute(EXPANDED, expanded);
+          var togglers = document.querySelectorAll("[data-toggler='nav-drawer']");
+          // console.log(typeof(togglers), togglers)
+          // togglers is a NodeList, not an Array
+          Array.prototype.forEach.call(togglers, function(d) {
+            console.log('expanded',expanded,d)
+            console.log('d.getAttribute(EXPANDED)',d.getAttribute(EXPANDED));
+            console.log('=======================')
+            d.setAttribute(EXPANDED, expanded)
 
-          console.log(this)
-          this.setAttribute(EXPANDED, expanded);
+            // d.setAttribute(EXPANDED)
+          });
         }
       }
     })
@@ -104,10 +117,16 @@
 
     var id = this.getAttribute(CONTROLS);
 
+
     var target = document.getElementById(id);
+    var expanded = this.expanded;
+    // console.log(expanded)
     if (target) {
+      expanded = !target.getAttribute(HIDDEN);
       target.setAttribute(HIDDEN, !this.expanded);
     }
+
+
   }
 
 })(this);

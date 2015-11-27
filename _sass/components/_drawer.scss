@@ -6,27 +6,12 @@
 
 // Glossary drawer
 // Markup:
-// <div class="drawer" style="right:0px;">
-//   <button title="Close drawer"
-//       class="button button--close toggle"><span class="u-visually-hidden"><i class="icon-close-x"></i></span>
+// <div class="drawer" id="glossary" aria-hidden="false">
+//   <button title="Close glossary"
+//       class="button button--close toggle"><span class="u-visually-hidden"><icon class="icon-close-x"></icon></span>
 //   </button>
-//   <h2 id="drawer-header"><i class="fa fa-book"></i> Glossary</h2>
-//   <label for="drawer-search" class="label">Search drawer terms</label>
-//   <input id="drawer-search" type="search" placeholder="e.g. Revenues">
-//   <div>
-//     <ul>
-//       <li class="glossary__item">
-//         <div class="accordion__header">
-//           <h4 class="drawer-term">Glossary term</h4>
-//           <button class="button accordion__button">
-//           <i class="fa fa-chevron-down"></i>
-//             <span class="u-visually-hidden" data-show="Show definition" data-hide="Hide definition"></span>
-//           </button>
-//         </div>
-//         <p class="drawer-definition hidden">Glossary term definition</p>
-//       </li>
-//     </ul>
-//   </div>
+//   <label for="drawer-search" class="label">Filter glossary terms</label>
+//   <input id="drawer-search" type="search" placeholder="e.g. placeholder text">
 // </div>
 //
 // Styleguide components.drawer.drawer
@@ -116,16 +101,6 @@
     border-top: 1px solid $mid-gray;
   }
 
-  // .glossary-term {
-  //   color: $white;
-  //   margin: 0;
-  // }
-
-  // .glossary-definition {
-  //   font-family: $base-font-family;
-  //   padding-bottom: 1rem;
-  // }
-
   .accordion__header {
     padding: 1rem 4rem 1rem 0;
     position: relative;
@@ -153,6 +128,3 @@
   }
 }
 
-// .glossary-term {
-//   color: $white;
-// }

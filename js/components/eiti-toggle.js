@@ -86,7 +86,6 @@
 
           var toggleId = this.getAttribute(CONTROLS);
           var togglers = document.querySelectorAll("[data-toggler=" + toggleId + "]");
-          console.log(togglers)
 
           if (togglers.length) {
 

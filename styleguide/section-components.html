@@ -586,54 +586,24 @@ screen sizes smaller than medium</p>
         </div>
         <div class="kss-modifier__example">
           Glossary drawer
-<div class="drawer" style="right:0px;">
-  <button title="Close drawer"
-      class="button button--close toggle"><span class="u-visually-hidden"><i class="icon-close-x"></i></span>
+<div class="drawer" id="glossary" aria-hidden="false">
+  <button title="Close glossary"
+      class="button button--close toggle"><span class="u-visually-hidden"><icon class="icon-close-x"></icon></span>
   </button>
-  <h2 id="drawer-header"><i class="fa fa-book"></i> Glossary</h2>
-  <label for="drawer-search" class="label">Search drawer terms</label>
-  <input id="drawer-search" type="search" placeholder="e.g. Revenues">
-  <div>
-    <ul>
-      <li class="glossary__item">
-        <div class="accordion__header">
-          <h4 class="drawer-term">Glossary term</h4>
-          <button class="button accordion__button">
-          <i class="fa fa-chevron-down"></i>
-            <span class="u-visually-hidden" data-show="Show definition" data-hide="Hide definition"></span>
-          </button>
-        </div>
-        <p class="drawer-definition hidden">Glossary term definition</p>
-      </li>
-    </ul>
-  </div>
+  <label for="drawer-search" class="label">Filter glossary terms</label>
+  <input id="drawer-search" type="search" placeholder="e.g. placeholder text">
 </div>
         </div>
       </div>
 
       <div class="kss-markup kss-style">
         <pre class="prettyprint linenums lang-html"><code data-language="html">Glossary drawer
-&lt;div class=&quot;drawer&quot; style=&quot;right:0px;&quot;&gt;
-  &lt;button title=&quot;Close drawer&quot;
-      class=&quot;button button--close toggle&quot;&gt;&lt;span class=&quot;u-visually-hidden&quot;&gt;&lt;i class=&quot;icon-close-x&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+&lt;div class=&quot;drawer&quot; id=&quot;glossary&quot; aria-hidden=&quot;false&quot;&gt;
+  &lt;button title=&quot;Close glossary&quot;
+      class=&quot;button button--close toggle&quot;&gt;&lt;span class=&quot;u-visually-hidden&quot;&gt;&lt;icon class=&quot;icon-close-x&quot;&gt;&lt;/icon&gt;&lt;/span&gt;
   &lt;/button&gt;
-  &lt;h2 id=&quot;drawer-header&quot;&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt; Glossary&lt;/h2&gt;
-  &lt;label for=&quot;drawer-search&quot; class=&quot;label&quot;&gt;Search drawer terms&lt;/label&gt;
-  &lt;input id=&quot;drawer-search&quot; type=&quot;search&quot; placeholder=&quot;e.g. Revenues&quot;&gt;
-  &lt;div&gt;
-    &lt;ul&gt;
-      &lt;li class=&quot;glossary__item&quot;&gt;
-        &lt;div class=&quot;accordion__header&quot;&gt;
-          &lt;h4 class=&quot;drawer-term&quot;&gt;Glossary term&lt;/h4&gt;
-          &lt;button class=&quot;button accordion__button&quot;&gt;
-          &lt;i class=&quot;fa fa-chevron-down&quot;&gt;&lt;/i&gt;
-            &lt;span class=&quot;u-visually-hidden&quot; data-show=&quot;Show definition&quot; data-hide=&quot;Hide definition&quot;&gt;&lt;/span&gt;
-          &lt;/button&gt;
-        &lt;/div&gt;
-        &lt;p class=&quot;drawer-definition hidden&quot;&gt;Glossary term definition&lt;/p&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/div&gt;
+  &lt;label for=&quot;drawer-search&quot; class=&quot;label&quot;&gt;Filter glossary terms&lt;/label&gt;
+  &lt;input id=&quot;drawer-search&quot; type=&quot;search&quot; placeholder=&quot;e.g. placeholder text&quot;&gt;
 &lt;/div&gt;</code></pre>
       </div>
 
@@ -670,7 +640,7 @@ screen sizes smaller than medium</p>
         <div class="kss-modifier__example">
           <p>What are <span class="term [modifier class]" data-term="extractive industry" title="Click to define" tabindex="0">
     extractive industries
-    <i class="term-icon"></i>
+    <i class="icon-book"></i>
 </span>, Brian asked inquisitively</p>
         </div>
         <div class="kss-modifier__name kss-style">
@@ -682,7 +652,7 @@ screen sizes smaller than medium</p>
         <div class="kss-modifier__example">
           <p>What are <span class="term term" data-term="extractive industry" title="Click to define" tabindex="0">
     extractive industries
-    <i class="term-icon"></i>
+    <i class="icon-book"></i>
 </span>, Brian asked inquisitively</p>
         </div>
         <div class="kss-modifier__name kss-style">
@@ -694,7 +664,7 @@ screen sizes smaller than medium</p>
         <div class="kss-modifier__example">
           <p>What are <span class="term term-p" data-term="extractive industry" title="Click to define" tabindex="0">
     extractive industries
-    <i class="term-icon"></i>
+    <i class="icon-book"></i>
 </span>, Brian asked inquisitively</p>
         </div>
       </div>
@@ -702,7 +672,7 @@ screen sizes smaller than medium</p>
       <div class="kss-markup kss-style">
         <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;p&gt;What are &lt;span class=&quot;term [modifier class]&quot; data-term=&quot;extractive industry&quot; title=&quot;Click to define&quot; tabindex=&quot;0&quot;&gt;
     extractive industries
-    &lt;i class=&quot;term-icon&quot;&gt;&lt;/i&gt;
+    &lt;i class=&quot;icon-book&quot;&gt;&lt;/i&gt;
 &lt;/span&gt;, Brian asked inquisitively&lt;/p&gt;</code></pre>
       </div>
 

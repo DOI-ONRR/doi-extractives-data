@@ -57,6 +57,18 @@ header,
 .header-right {
   float: right;
 
+  &.header-bars {
+    display: inline-block;
+
+    icon {
+      @include font-size(1.5);
+    }
+  }
+
+  &.header-nav {
+    display: none;
+  }
+
   @include respond-to(medium-up) {
 
     &.header-bars {
@@ -68,18 +80,6 @@ header,
       @include omega();
       display: inline-block;
     }
-  }
-
-  &.header-bars {
-    display: inline-block;
-
-    icon {
-      @include font-size(1.5);
-    }
-  }
-
-  &.header-nav {
-    display: none;
   }
 }
 

@@ -55,6 +55,9 @@ team:
 - id: nicole.fenton
   github: nicoleslaw
   role: Content Designer
+- id: corey.mahoney
+  github: coreycaitlin
+  role: Content Designer  
 
 # Partners for whom the project is developed
 partners:
@@ -103,7 +106,9 @@ licenses:
 #   text: Anchor text for the link
 links:
 - url: https://useiti.doi.gov
-  text: The U.S. EITI homepage
+  text: U.S. EITI
+- url: https://eiti.org
+  text: Extractive Industries Transparency Initiative (Global site)
 
 # Email addresses of points-of-contact
 contact:

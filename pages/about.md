@@ -159,7 +159,7 @@ permalink: /about/
 
       <article class="bureau">
         <div class="bureau-left">
-          <img class="bureau-image" src="{{ site.baseurl }}/img/logos/USDT-mark.png" alt="U.S. Department of the Treasury Seal">
+          <img class="bureau-image" src="{{ site.baseurl }}/img/logos/DoT-mark.png" alt="U.S. Department of the Treasury Seal">
         </div>
         <div class="bureau-right">
           <h4>Department of the Treasury</h4>
@@ -169,7 +169,7 @@ permalink: /about/
 
       <article class="bureau">
         <div class="bureau-left">
-          <img class="bureau-image" src="{{ site.baseurl }}/img/logos/IRD-mark.png" alt="Internal Revenue Service Seal">
+          <img class="bureau-image" src="{{ site.baseurl }}/img/logos/IRS-mark.svg" alt="Internal Revenue Service Seal">
         </div>
         <div class="bureau-right">
           <h4>Internal Revenue Service (IRS)</h4>

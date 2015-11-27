@@ -22,43 +22,47 @@
   background-color: $pale-blue;
   border-left: 4px solid $white;
   border-right: 4px solid $white;
+  padding-top: $base-padding-extra;
   text-align: center;
 }
 
-.carousel-header_text {
-  @include font-size(1);
-  line-height: 1.3;
-  padding-bottom: 0;
-  padding-left: $base-padding-extra;
-  padding-right: $base-padding-extra;
-  padding-top: $base-padding-jumbo;
-}
+// .carousel-header_text {
+//   @include font-size(1);
+//   line-height: 1.3;
+//   padding-bottom: 0;
+//   padding-left: $base-padding-extra;
+//   padding-right: $base-padding-extra;
+//   padding-top: $base-padding-jumbo;
+// }
 
 .carousel-button {
-  margin-bottom: 1em;
+  margin-bottom: $base-padding-large;
+  padding: 1em;
 }
 
 .carousel-image {
+  //position: absolute;
+  //bottom: 0;
   width: 100%;
 }
 
-.carousel-pagination {
-  background-color: $mid-blue;
-  width: 100%;
-}
+// .carousel-pagination {
+//   background-color: $mid-blue;
+//   width: 100%;
+// }
 
-.carousel-pagination_item {
-  background-color: $white;
-  border: 2px solid $white;
-  border-radius: 50%;
-  cursor: pointer;
-  display: inline-block;
-  height: 1em;
-  margin: 0.5em;
-  width: 1em;
-
-  &.active {
-    background-color: $mid-blue;
-    border: 2px solid $white;
-  }
-}
+// .carousel-pagination_item {
+//   background-color: $white;
+//   border: 2px solid $white;
+//   border-radius: 50%;
+//   cursor: pointer;
+//   display: inline-block;
+//   height: 1em;
+//   margin: 0.5em;
+//   width: 1em;
+//
+//   &.active {
+//     background-color: $mid-blue;
+//     border: 2px solid $white;
+//   }
+// }

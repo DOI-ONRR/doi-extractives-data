@@ -18,7 +18,11 @@ var options = require('../../lib/args')({
     desc: 'industries to list',
     // BEA industry codes; see input/bea/industries.json
     default: '21',
-    alias: 'I'
+    alias: 'i'
+  },
+  table: {
+    desc: 'the BEA API table ID',
+    default: 5
   },
   of: {
     desc: 'output format (tito-compatible)',
@@ -89,6 +93,9 @@ var parse = tito.createReadStream('json', {path: '.BEAAPI.Results.Data.*'});
 var out = options.o ? fs.createWriteStream(options.o) : process.stdout;
 
 request(url)
+  .on('error', function(error) {
+    console.warn('error:', error);
+  })
   .pipe(parse)
   .pipe(thru(options.geo === 'us' ? mapRow : mapGeo))
   .pipe(tito.createWriteStream(options.of))
@@ -105,10 +112,15 @@ function mapRow(row, enc, next) {
 }
 
 function mapGeo(row, enc, next) {
+  var fips = row.GeoFips.substr(0, 2);
+  if (fips >= 90) {
+    console.warn('skipping:', row.GeoFips, row.GeoName);
+    return next();
+  }
   return next(null, {
     Year:     row.TimePeriod,
     Region:   row.GeoName,
-    FIPS:     row.GeoFips.substr(0, 2),
+    FIPS:     fips,
     GDP:      row.DataValue
   });
 }

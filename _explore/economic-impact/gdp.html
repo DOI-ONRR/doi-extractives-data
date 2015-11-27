@@ -1,20 +1,54 @@
 ---
-title: Federal Revenue by Location
+title: Explore | Gross Domestic Product
 layout: default
-permalink: /explore/federal-revenue-by-location/
+permalink: /explore/gdp/
 ---
-<section id="revenue" class="explore-subpage container">
+<section id="gdp" class="explore-subpage container">
   <div class="container-left-4">
     <div class="container-outer">
       <h5 class="subpage-breadcrumb"><a href="{{ site.baseurl }}/explore/">Explore</a> /</h5>
-      <h1>Federal Revenue by Location</h1>
+      <h1>Gross Domestic Product</h1>
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing
-        elit. Praesent eget justo sodales neque fermentum
-        consequat eu sit amet libero. Aliquam eu eleifend leo.
-        Donec sem dolor, volutpat quis tortor pretium,
-        tincidunt pretium massa. Curabitur sed euismod velit.
-        Aenean eu venenatis turpis, mattis tempus orci.</p>
+      <p>In 2013, our GDP was $16.8 trillion, making the U.S. economy the largest in the world. Overall the extractive industries account for 2.6% of the economy, outpacing utilities, agriculture, and education services in contribution to national GDP. Extractive industries totaled <a href="http://www.bea.gov/iTable/iTable.cfm?ReqID=51&step=1#reqid=51&step=51&isuri=1&5114=a&5102=1">$439 billion in real value added</a>.</p>
+
+      <p><em>Explore GDP from 2004 to 2013 by state as a dollar value, or as a percentage of total GDP.</em></p>
+
+      <!-- <h3>2013 extractive industries value-added GDP</h3>
+
+      <table>
+        <tr>
+          <th>Industry</th>
+          <th>Real value added</th>
+          <th>Value added as a percentage of total GDP</th>
+        </tr>
+        <tr>
+          <td>All industries</td>
+          <td>$16,768.1 billion</td>
+          <td>100%</td>
+        </tr>
+        <tr>
+          <td>Extractive industries</td>
+          <td>$439.4 billion</td>
+          <td>2.6%</td>
+        </tr>
+        <tr>
+          <td>Oil and gas</td>
+          <td>$291.9 billion</td>
+          <td>1.7%</td>
+        </tr>
+        <tr>
+          <td>Mining except oil and gas</td>
+          <td>$78.8 billion</td>
+          <td>0.5%</td>
+        </tr>
+        <tr>
+          <td>Support activities for mining</td>
+          <td>$68.7 billion</td>
+          <td>0.4%</td>
+        </tr>
+      </table>
+
+      <p>Extractive industries affect the economy in a number of ways, including the quantity and value of the natural resources produced, the revenue collected for public purposes, the jobs held by people working in extractive industries, and the exports that draw in money from abroad. While it can be difficult to quantify an industry’s impact on a country, these measures—production, revenue, employment, and exports—start to highlight the extractive industries’ role in the economy.</p> -->
     </div>
   </div>
   <section class="container-right-8">
@@ -23,48 +57,38 @@ permalink: /explore/federal-revenue-by-location/
 
       <form id="filters" aria-hidden="true" class="filters">
         <div class="filters-heading">
-          <h3>Filter revenue</h3>
+          <h3>Filter</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing
       elit.</p>
         </div>
-        <div class="container-left-6">
-          <div id="commodity-group-filter" class="filter">
-            <label for="commodity-group-selector">Commodity Category</label>
-            <select id="commodity-group-selector" name="group">
-              <option value="">All commodity categories</option>
-              {% for group in site.data.commodities.groups %}
-              <option value="{{ group[0] }}">{{ group[1].name }}</option>
-              {% endfor %}
-            </select>
-          </div>
 
-          <div id="commodity-filter" class="filter">
-            <label for="commodity-selector">Commodity</label>
-            <select id="commodity-selector" name="commodity">
-              <option value="">All commodities</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="container-right-6 filter">
+        <div class="container-left-6 filter">
           <label for="region-selector">Region</label>
           <select id="region-selector" name="region">
             <option value="">All U.S.</option>
-            <optgroup label="States">
-              {% for state in site.data.states %}
-              <option value="{{ state.id }}">{{ state.name }}</option>
-              {% endfor %}
-            </optgroup>
-            <optgroup label="Offshore Areas">
-              {% for area in site.data.offshore_areas %}
-              <option value="{{ area.id }}">{{ area.name }}</option>
-              {% endfor %}
-            </optgroup>
+            {% for state in site.data.states %}
+            <option value="{{ state.id }}">{{ state.name }}</option>
+            {% endfor %}
+          </select>
+        </div>
+        <div id="unit-filter" class="container-right-6 filter">
+          <!--
+          <label for="unit-selector">Units</label>
+          <div id="unit-selector" class="container">
+            <label class="unit-selector"><input type="radio" name="units" value="dollars">$</label>
+            <label class="unit-selector"><input type="radio" name="units" value="percent">%</label>
+          </div>
+          -->
+          <label for="unit-selector">Units</label>
+          <select id="unit-selector" name="units">
+            <option value="dollars" selected>$</option>
+            <option value="percent">%</option>
           </select>
         </div>
 
+
         <div class="container-left">
-          <label for="year-selector">Revenue by Year</label>
+          <label for="year-selector">GDP by Year</label>
         </div>
         <div class="filter container">
           <svg id="timeline" class="timeline" viewBox="0 0 1024 60"></svg>
@@ -90,9 +114,7 @@ permalink: /explore/federal-revenue-by-location/
   <div class="slab-alpha">
     <div class="container-outer">
       <h1 id="filter-description" class="filter-description">
-        Revenue from
-        <a href="#commodity-group-selector" class="filter-part" data-key="commodity">all commodities</a>
-        on federal lands in
+        GDP from extractives in
         <a href="#region-selector" class="filter-part" data-key="region">the entire U.S.</a>
         (<a href="#year-selector" class="filter-part" data-key="year">2013</a>)
       </h1>
@@ -105,12 +127,6 @@ permalink: /explore/federal-revenue-by-location/
           <svg is="eiti-map" id="US-map" class="region-map" simplify="1e-2"
             preserveAspectRatio="xMidYMid meet"
             projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/">
-            <g class="offshore areas" data-url="offshore-simple.json"
-              data-id="'US-' + id"
-              data-href="'#?region=' + id"
-              data-title="properties.name"
-              data-mesh="true">
-            </g>
             <g class="onshore states" data-url="us-topology.json"
               data-object="states"
               data-id="'US-' + id"
@@ -123,7 +139,7 @@ permalink: /explore/federal-revenue-by-location/
           <div class="map-legend"></div>
         </div>
 
-        <h3 class="region-header-category">Revenue by state or offshore area</h3>
+        <h3 class="region-header-category">GDP by state</h3>
         <table class="subregions">
           <thead class="region-header"></thead>
           <tbody></tbody>
@@ -141,41 +157,15 @@ permalink: /explore/federal-revenue-by-location/
               data-object="states"
               data-filter="id === '{{ region.id }}'">
             </g>
-            <g class="onshore counties" data-url="us-topology.json"
-              data-object="counties"
-              data-filter="properties.state === '{{ region.id }}'"
-              data-title="properties.name"
-              data-mesh="true">
-            </g>
           </svg>
 
           <div class="map-legend"></div>
         </div>
 
-        <h3 class="region-header-category">Revenue by county</h3>
+        <h3 class="region-header-category">GDP in {{ region.name }}</h3>
         <table class="subregions">
           <thead class="region-header"></thead>
           <tbody></tbody>
-        </table>
-
-      </section>
-      {% endfor %}
-
-      {% for region in site.data.offshore_areas %}
-      <section id="{{ region.id }}" class="region offshore">
-
-        <svg is="eiti-map" id="{{ region.id }}-map" class="region-map" simplify="1e-2"
-          preserveAspectRatio="xMidYMid meet"
-          projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/" zoom-to="{{ region.id }}">
-          <g class="offshore areas" data-url="offshore-simple.json"
-            data-title="properties.name"
-            data-filter="id === '{{ region.id }}'"
-            data-mesh="true">
-          </g>
-        </svg>
-
-        <table class="subregions">
-          <thead class="region-header"></thead>
         </table>
 
       </section>
@@ -199,4 +189,4 @@ permalink: /explore/federal-revenue-by-location/
     'US': 'the entire U.S.'
   };
 </script>
-<script src="{{ site.baseurl }}/js/pages/revenue.js"></script>
+<script src="{{ site.baseurl }}/js/pages/gdp.js"></script>

@@ -14,9 +14,9 @@ permalink: /about/report/
   <p>This Executive Summary is just a fraction of the 2015 USEITI Report. Explore this site to:</p>
 
   <ul>
-	  <li><a href="{ site.baseurl }/explore/">See maps and charts of extractive industries</a>, as well economic and revenue data</li>
-	  <li><a href="{ site.baseurl }/case-studies/">Read 12 county case studies</a> on the history, geology, production, employment, revenue, and fiscal costs of specific industries</li>
-	  <li><a href="{ site.baseurl }/downloads/">Download data sets</a></li>
+	  <li><a href="{{ site.baseurl }}/explore/">See maps and charts of extractive industries</a>, as well economic and revenue data</li>
+	  <li><a href="{{ site.baseurl }}/case-studies/">Read 12 county case studies</a> on the history, geology, production, employment, revenue, and fiscal costs of specific industries</li>
+	  <li><a href="{{ site.baseurl }}/downloads/">Download data sets</a></li>
 	  <li>Discuss and participate in USEITI</li>
   </ul>
 

@@ -26,6 +26,12 @@
   width: 100%;
 }
 
+.case_studies_intro-image_key {
+  border-top: 4px solid $mid-gray;
+  margin-top: $base-padding-large;
+  padding-top: $base-padding;
+}
+
 .case_studies_intro-select {
   max-width: 400px;
   padding-top: $base-padding-lite;

@@ -112,7 +112,7 @@ permalink: /how-it-works/process-overview/
 	            <ul class="list-bullet">
 	              <li>BOEM, <a href="https://www.data.boem.gov/homepg/data_center/leasing/leasing.asp">Leasing Information</a></li>
 				  <li>BOEM, <a href="http://www.boem.gov/Lease-and-Grant-Information/">Lease and Grant Information</a></li>
-	              <li>BSEE, <a href="https://www.data.bsee.gov/homepg/data_center/other/WebStore/pimaster.asp?appid=11">Activate and Inactive Leases Database</a></li>
+	              <li>BSEE, <a href="https://www.data.bsee.gov/homepg/data_center/other/WebStore/pimaster.asp?appid=11">Active and Inactive Leases Database</a></li>
 	              <li>BLM, <a href="http://www.blm.gov/lr2000/">Land &amp; Mineral Legacy Rehost System</a></li>
 	            </ul>
 	          </div>
@@ -131,4 +131,3 @@ permalink: /how-it-works/process-overview/
 
 <!-- Accordion -->
 <script src="{{ site.baseurl }}/js/components/accordion.js"></script>
-

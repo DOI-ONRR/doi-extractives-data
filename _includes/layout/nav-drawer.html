@@ -17,15 +17,14 @@
       <li class="nav_drawer-nav_item {% if page.permalink contains '/explore/' %}active{% endif %}">
         <a class="nav_drawer-nav_item_link" href="{{ site.baseurl }}/explore/">Explore Data</a>
       </li>
-      <li class="nav_drawer-nav_item {% if page.permalink contains '/case-studies/' %}active{% endif %}">
+      <li class="nav_drawer-nav_item nav_drawer-break {% if page.permalink contains '/case-studies/' %}active{% endif %}">
         <a class="nav_drawer-nav_item_link" href="{{ site.baseurl }}/case-studies/">Case Studies</a>
       </li>
-      <li class="nav_drawer-nav_item_empty"></li>
       <li class="nav_drawer-nav_item {% if page.permalink contains '/downloads/' %}active{% endif %}">
-        <a class="nav_drawer-nav_item_link" href="{{ site.baseurl }}/downloads/">Downloads</a>
+        <a class="nav_drawer-nav_item_link_bottom" href="{{ site.baseurl }}/downloads/">Downloads</a>
       </li>
       <li class="nav_drawer-nav_item" title="Open glossary">
-        <a class="nav_drawer-nav_item_link js-glossary-toggle" alt="this is the glossary drawer">Glossary</a>
+        <a class="nav_drawer-nav_item_link_bottom js-glossary-toggle" alt="this is the glossary drawer">Glossary</a>
       </li>
 
     </ul>

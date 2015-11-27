@@ -22,6 +22,10 @@ $nav-drawer-height: 621px;
   @media only screen and (min-height: $nav-drawer-height) {
     bottom: initial;
   }
+
+  @include respond-to(medium-up) {
+    display: none;
+  }
 }
 
 .nav_drawer-nav {
@@ -32,10 +36,23 @@ $nav-drawer-height: 621px;
 
 .nav_drawer-nav_item {
   padding-bottom: $base-padding-large;
+  font-weight: $weight-bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 
   &:last-of-type {
     padding-bottom: $base-padding;
   }
+
+  &.active {
+    text-decoration: underline;
+  }
+}
+
+.nav_drawer-nav_item_bottom {
+  text-transform: capitalize;
+  letter-spacing: initial;
+  font-weight: $weight-light;
 }
 
 .nav_drawer-break {
@@ -43,14 +60,8 @@ $nav-drawer-height: 621px;
   margin-bottom: $base-padding-large;
 }
 
+
+
 .nav_drawer-nav_item_link {
   color: $white;
-  font-weight: $weight-bold;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-
-.nav_drawer-nav_item_link_bottom {
-  color: $white;
-
 }

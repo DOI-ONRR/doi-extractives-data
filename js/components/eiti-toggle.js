@@ -29,7 +29,6 @@
       }},
 
       attributeChangedCallback: {value: function(attr, prev, value) {
-        console.log(attr,prev,value)
         switch (attr) {
           case EXPANDED:
             update.call(this);
@@ -60,7 +59,6 @@
 
       expandedText: {
         get: function() {
-          // console.log('expandedText')
           return this[symbols.expanded]
             || this.getAttribute('data-expanded-text')
             || this.textContent;
@@ -85,21 +83,15 @@
           } else {
             expanded = !!expanded;
           }
-          console.log('expanded.set',expanded, this)
-          // this.setAttribute(EXPANDED, expanded);
+
           var toggleId = this.getAttribute(CONTROLS);
 
           var togglers = document.querySelectorAll("[data-toggler=" + toggleId + "]");
-          // console.log(typeof(togglers), togglers)
+
           // togglers is a NodeList, not an Array
           if (togglers) {
             Array.prototype.forEach.call(togglers, function(toggle) {
-              // console.log('expanded',expanded,toggle)
-              // console.log('toggle.getAttribute(EXPANDED)',toggle.getAttribute(EXPANDED));
-              // console.log('=======================')
-              toggle.setAttribute(EXPANDED, expanded)
-
-              // d.setAttribute(EXPANDED)
+              toggle.setAttribute(EXPANDED, expanded);
             });
           }
         }
@@ -124,7 +116,7 @@
 
     var target = document.getElementById(id);
     var expanded = this.expanded;
-    // console.log(expanded)
+
     if (target) {
       expanded = !target.getAttribute(HIDDEN);
       target.setAttribute(HIDDEN, !this.expanded);

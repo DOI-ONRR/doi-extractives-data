@@ -179,9 +179,14 @@ header,
     cursor: pointer;
     float: right;
     height: 100%;
-    padding: 0.22rem;
+    padding: 0.13rem;
     padding-left: 0.64rem;
     width: 37px;
+
+    @include respond-to(large-up) {
+      padding: 0.22rem;
+      padding-left: 0.64rem;
+    }
   }
 }
 

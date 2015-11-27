@@ -90,6 +90,8 @@
 }
 
 #drawer-search {
+  border: none;
+
   &::-webkit-input-placeholder {
     font-style: italic;
   }

@@ -85,15 +85,21 @@
           }
 
           var toggleId = this.getAttribute(CONTROLS);
-
           var togglers = document.querySelectorAll("[data-toggler=" + toggleId + "]");
+          console.log(togglers)
 
-          // togglers is a NodeList, not an Array
-          if (togglers) {
-            Array.prototype.forEach.call(togglers, function(toggle) {
-              toggle.setAttribute(EXPANDED, expanded);
-            });
+          if (togglers.length) {
+
+            // togglers is a NodeList, not an Array
+            if (togglers) {
+              Array.prototype.forEach.call(togglers, function(toggle) {
+                toggle.setAttribute(EXPANDED, expanded);
+              });
+            }
+          } else {
+            this.setAttribute(EXPANDED, expanded);
           }
+
         }
       }
     })
@@ -109,7 +115,9 @@
       : this.collapsedText;
 
     var attrInnerMarkup = this.getAttribute('data-inner-markup');
-    this.innerHTML = innerMarkup[attrInnerMarkup];
+    if (attrInnerMarkup) {
+      this.innerHTML = innerMarkup[attrInnerMarkup];
+    }
 
     var id = this.getAttribute(CONTROLS);
 

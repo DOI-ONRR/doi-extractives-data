@@ -1,7 +1,8 @@
 .sticky_nav {
   left: percentage(7 / 12);
+  padding-top: $base-padding-extra;
   padding-left: $base-padding-extra;
-  position: absolute;
+  // position: absolute;
   top: 0;
 
   @include respond-to(medium-down) {
@@ -10,7 +11,7 @@
 }
 
 .sticky_nav-nav {
-  margin-top: $base-padding-extra;
+  // margin-top: $base-padding-extra;
 }
 
 .sticky_nav-nav_item {

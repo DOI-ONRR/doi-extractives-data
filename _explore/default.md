@@ -72,7 +72,7 @@ permalink: /explore/
 			<h5 class="landing-heading"><a href="{{site.baseurl}}/explore/reconciliation/">Reconciliation</a></h5>
 			<button class="accordion-button" accordion-button></button>
 			<div class="accordion-content">
-				<p class="landing-description">As a part of USEITI, companies report payments to the government (e.g., rents, taxes, royalties) and the government reports what it received. These figures are compiled and reconciled by an independent administrator and published. In the future, this dataset will be interactive. For now, you can <a href="{{site.baseurl}}/explore/reconciliation/">learn about the reconciliation process</a> or <a href="{{site.baseurl}}/explore/reconciliation/">download the dataset &#8594;</a></p>
+				<p class="landing-description">As a part of USEITI, companies report payments to the government (e.g., rents, taxes, royalties) and the government reports what it received. These figures are compiled and reconciled by an independent administrator and published. In the future, this dataset will be interactive. For now, you can <a href="{{site.baseurl}}/explore/reconciliation/">learn about the reconciliation process</a> or <a href="{{site.baseurl}}/downloads/">download the dataset &#8594;</a></p>
 				<a href="{{site.baseurl}}/explore/reconciliation/">
 					<img class="landing-image" src="{{site.baseurl}}/img/landing-placeholders/placeholder.png">
 				</a>

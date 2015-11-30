@@ -22,7 +22,7 @@ nav_items:
 
 <h3><a name="intro" class="case_studies_content-heading js-cs_section">{{ page.title }}</a></h3>
 
-The United States possesses the largest estimated recoverable coal reserves in the world. This resource abundance allowed coal to serve as the single largest source of domestic electricity generation for more than six decades.[^1] However, coal production has declined since 2007 due to increased competition from natural gas, as well as the effects of recent federal regulations.
+The U.S. possesses the largest estimated recoverable coal reserves in the world. This resource abundance allowed coal to serve as the single largest source of domestic electricity generation for more than six decades.[^1] However, coal production has declined since 2007 due to increased competition from natural gas, as well as the effects of recent federal regulations.
 
 One of the most productive coal deposits in the country is the Central Appalachian Coal Basin, which supplies the numerous surface and underground mines of West Virginia. The counties in the southern half of the state maintain estimated recoverable coal reserves of 1.2 billion tons.[^2] In particular, the contiguous Boone, Logan, and Mingo counties have long been a center of coal exploration and extraction.
 
@@ -58,6 +58,8 @@ The West Virginia Office of Miners’ Health, Safety, and Training (WVOMHST) is 
 
 <h3><a name="data" class="case_studies_content-heading js-cs_section">Data availability</a></h3>
 
+The table below highlights the data sources used to compile this narrative, as well as any gaps in publicly available data.
+
 <table>
   <thead>
     <tr>
@@ -74,8 +76,8 @@ The West Virginia Office of Miners’ Health, Safety, and Training (WVOMHST) is 
     </tr>
     <tr>
       <td>Employment</td>
-      <td>The Bureau of Labor Statistics (BLS) publishes Boone, Logan, and Mingo County mining industry employment data for 2004 through 2013.</td>
-      <td>The BLS data did not isolate employment information on the coal mining industry in particular and employment in mining support services. The U.S. Census Bureau did not have ten-year employment-trend data for the mining industry for these counties.</td>
+      <td>The Bureau of Labor Statistics (BLS) publishes Boone, Logan, and Mingo County mining industry employment data for 2004–2013.</td>
+      <td>BLS data did not isolate employment information on the coal mining industry in particular and employment in mining support services. The U.S. Census Bureau did not have ten-year employment-trend data for the mining industry for these counties.</td>
     </tr>
     <tr>
       <td>Revenue</td>
@@ -85,7 +87,7 @@ The West Virginia Office of Miners’ Health, Safety, and Training (WVOMHST) is 
     <tr>
       <td>Costs</td>
       <td>The West Virginia DOT and WVOMHST publish documents with cost information.</td>
-      <td>Data on the connection between county reclamation and water-infrastructure investments and extractive industries was not found.</td>
+      <td>Data on connections between county reclamation and water-infrastructure investments and extractive industries was not found.</td>
     </tr>
   </tbody>
 </table>

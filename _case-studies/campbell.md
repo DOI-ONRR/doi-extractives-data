@@ -62,6 +62,8 @@ No publicly available government data discussing the emergency services, reclama
 
 <h3><a name="data" class="case_studies_content-heading js-cs_section">Data availability</a></h3>
 
+The table below highlights the data sources used to compile this narrative, as well as any gaps in publicly available data.
+
 <table>
   <thead>
     <tr>
@@ -73,23 +75,23 @@ No publicly available government data discussing the emergency services, reclama
   <tbody>
     <tr>
       <td>Production</td>
-      <td>The U.S. Energy Information Administration published county-level 2013 coal production data, while the Wyoming State Geological Survey produced the historical production-trend data from 2004 through 2013.</td>
+      <td>The U.S. Energy Information Administration published county-level 2013 coal production data, while the Wyoming State Geological Survey produced the historical production-trend data from 2004–2013.</td>
       <td></td>
     </tr>
     <tr>
       <td>Employment</td>
       <td>The Bureau of Labor Statistics (BLS) published Campbell County mining industry employment data for 2004 through 2013.</td>
-      <td>Neither the BLS nor the U.S. Census Bureau has ten-year employment-trend data for the coal-mining industry specifically at the Campbell County level.</td>
+      <td>Neither BLS nor the U.S. Census Bureau has ten-year employment-trend data for the coal-mining industry specifically at the Campbell County level.</td>
     </tr>
     <tr>
       <td>Revenue</td>
-      <td>Revenue information was gathered from a range of Wyoming state government sources for 2010 through 2013, including the State of Wyoming Department of Revenue, the Wyoming Legislative Service Office, the Wyoming Department of Administration and Information, and the Campbell County 2013 Financial Report.</td>
+      <td>Revenue information was gathered from a range of Wyoming state government sources for 2010–2013, including the Wyoming Department of Revenue, Wyoming Legislative Service Office, Wyoming Department of Administration and Information, and Campbell County 2013 Financial Report.</td>
       <td>Data on how sales and use taxes relate to extractive activities in the county was not found.</td>
     </tr>
     <tr>
       <td>Costs</td>
       <td></td>
-      <td>Data on the connection between county transportation, emergency services, reclamation, and water-infrastructure investments and extractive industries was not found.</td>
+      <td>Data on connections between county transportation, emergency services, reclamation, and water-infrastructure investments and extractive industries was not found.</td>
     </tr>
   </tbody>
 </table>

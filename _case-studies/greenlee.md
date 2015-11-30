@@ -22,7 +22,7 @@ nav_items:
 
 <h3><a name="intro" class="case_studies_content-heading js-cs_section">{{ page.title }}</a></h3>
 
-Copper is a major industrial metal used in construction, electronics, transportation, industrial machinery, and consumer products. In 2012, the United States was the world’s fourth-largest copper producer, mining 1.15 million tons of copper worth a total value of approximately $9 billion.[^1] Of the five major copper-producing states (Arizona, Utah, New Mexico, Nevada, and Montana), Arizona was the most productive in 2011, with copper output totalling 751,000 metric tons, or 68% of the national total.[^2] Greenlee and Pima counties generated the majority of that production.
+Copper is a major industrial metal used in construction, electronics, transportation, industrial machinery, and consumer products. In 2012, the U.S. was the world’s fourth-largest copper producer, mining 1.15 million tons of copper worth a total value of approximately $9 billion.[^1] Of the five major copper-producing states (Arizona, Utah, New Mexico, Nevada, and Montana), Arizona was the most productive in 2011, with copper output totalling 751,000 metric tons, or 68% of the national total.[^2] Greenlee and Pima counties generated the majority of that production.
 
 <h3><a name="geolo" class="case_studies_content-heading js-cs_section">Geology and history</a></h3>
 
@@ -50,9 +50,9 @@ In 2012, Greenlee County received $4,376,829 in transaction privilege and severa
 
 Copper mining activity is a key consideration in Greenlee County road planning.[^16] No additional publicly available government sources delineating specific fiscal costs of copper mining in Greenlee County were found.
 
-<h3><a name="data" class="case_studies_content-heading js-cs_section">Data Availability</a></h3>
+<h3><a name="data" class="case_studies_content-heading js-cs_section">Data availability</a></h3>
 
-The table below highlights the data sources used to compile this county case study, as well as any gaps that exist in publicly available data.
+The table below highlights data sources used to compile this narrative, as well as any gaps in publicly available data.
 
 <table>
   <thead>
@@ -71,17 +71,17 @@ The table below highlights the data sources used to compile this county case stu
     <tr>
       <td>Employment</td>
       <td>The Bureau of Labor Statistics (BLS) provided Greenlee County copper-mining employment data for 2011. The Arizona State University William Siedman Research Institute provided supplemental information on mining employment trends.</td>
-      <td>Neither the BLS nor the U.S. Census Bureau has ten-year employment-trend data for the copper mining industry at the Greenlee County level for 2004 through 2013. There are several years and subindustries without data.</td>
+      <td>Neither BLS nor the U.S. Census Bureau has ten-year employment-trend data for the copper mining industry at the Greenlee County level for 2004–2013. There are several years and subindustries without data.</td>
     </tr>
     <tr>
       <td>Revenue</td>
-      <td>Revenue information was gathered from a range of Arizona state and county government sources for 2012 through 2013, including the State of Arizona 2013 Tax Handbook, the Arizona Department of Revenue, and the Greenlee County Annual Financial Report 2012.</td>
+      <td>Revenue information was gathered from a range of Arizona state and county government sources for 2012–2013, including the State of Arizona 2013 Tax Handbook, Arizona Department of Revenue, and Greenlee County Annual Financial Report 2012.</td>
       <td>Data on how sales and use taxes relate to extractive activities in the county was not found.</td>
     </tr>
     <tr>
       <td>Costs</td>
       <td></td>
-      <td>Data on the connection between county transportation, emergency services, reclamation, and water-infrastructure investments and extractive industries was not found.</td>
+      <td>Data on connections between county transportation, emergency services, reclamation, and water-infrastructure investments and extractive industries was not found.</td>
     </tr>
   </tbody>
 </table>

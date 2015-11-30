@@ -11,7 +11,7 @@ permalink: /downloads/
 
     <h1>Download Data & Documentation</h1>
 
-    <p class="case_studies_intro-para">This is an intro paragraph describing what's on this page. Info about how some of these are our datasets, and some are from other government sources and we link out to those. To see visualizations using this data, explore here. If you're planning on using this data to make something, here are <a href="https://github.com/18F/doi-extractives-data/wiki/Data-Catalog#federal-revenue">our web team's data notes</a> for building the visualizations on this site. Also, we'd love to see what you make -- send us a note!</p>
+    <p class="case_studies_intro-para">We use many government datasets on this site to power our <a href="{{ site.baseurl }}/explore/">interactive visualizations</a>. Some of these were created through the USEITI process, and are available here for download. Others come from other government sources. For those, we provide links direct to the source here so you can find fresh data whenever you need it. You can also read the USEITI web team's <a href="https://github.com/18F/doi-extractives-data/wiki/Data-Catalog#federal-revenue">data notes</a>. We can't wait to see what you do with the data!</p>
 
     <h3>Production</h3>
     <ul class="list-sections">

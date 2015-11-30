@@ -1,8 +1,7 @@
 (function(exports) {
 
   var scrollLeft,
-    scrollTop,
-    sections;
+    scrollTop;
 
   var findScrollPositions = function(){
     scrollLeft = (window.pageXOffset !== undefined)
@@ -17,7 +16,7 @@
         || document.body).scrollTop;
   };
 
-  StickyNav = function() {
+  var StickyNav = function() {
     this.elems = {
       sticky : document.querySelector('.sticky_nav'),
       main: document.querySelector('main')

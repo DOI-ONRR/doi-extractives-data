@@ -44,11 +44,14 @@ permalink: /downloads/
         <a href="{{site.baseurl}}/downloads/federal_revenue_offshore_acct-year_CY04-13_2015-11-20.xlsx" class="button-tertiary">
           <icon class="icon-cloud icon-padded"></icon>Download offshore dataset, CY (xlsx, 321 KB)
         </a>
+        <a href="{{site.baseurl}}/downloads/federal_revenue_onshore_acct-year_CY04-13_2015-11-20.xlsx" class="button-tertiary">
+          <icon class="icon-cloud icon-padded"></icon>Download onshore dataset, CY (xlsx, 1.1 MB)
+        </a>
         <a href="{{site.baseurl}}/downloads/federal_revenue_offshore_acct-year_FY04-14_2015-11-20.xlsx" class="button-tertiary">
           <icon class="icon-cloud icon-padded"></icon>Download offshore dataset, FY (xlsx, 348 KB)
         </a>
-        <a href="{{site.baseurl}}/downloads/federal_revenue_onshore_acct-year_CY04-13_2015-11-20.xlsx" class="button-tertiary">
-          <icon class="icon-cloud icon-padded"></icon>Download onshore dataset, CY (xlsx, 1.1 MB)
+        <a href="{{site.baseurl}}/downloads/federal_revenue_onshore_acct-year_FY04-14_2015-11-20.xlsx" class="button-tertiary">
+          <icon class="icon-cloud icon-padded"></icon>Download onshore dataset, FY (xlsx, 1.1 MB)
         </a>
         <a href="#" class="button-tertiary">
           <i class="fa fa-file-text-o u-padding-right"></i>Documentation coming soon

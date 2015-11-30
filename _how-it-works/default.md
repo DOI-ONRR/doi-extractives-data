@@ -167,11 +167,11 @@ permalink: /how-it-works/
 		</div>
 	</section>
 </section>
-<section class="slab-beta">
+<!-- <section class="slab-beta">
 	<div class="container-outer container-padded u-centered">
 	  <h4><a href="{{ site.baseurl }}/how-it-works/process-overview/">Learn more about the process <icon class="icon-chevron-lg"></icon></a></h4>
   </div>
-</section>
+</section> -->
 
 <!-- Accordion -->
 <script src="{{ site.baseurl }}/js/components/accordion.js"></script>

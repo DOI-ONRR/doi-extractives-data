@@ -1,0 +1,12 @@
+// Styleguide blocks.about
+
+.about_intro-callout {
+  padding: $base-padding;
+  padding-bottom: $base-padding-lite;
+  padding-top: $base-padding-large;
+
+  .h3 {
+    font-weight: $weight-book;
+    line-height: 1.2;
+  }
+}

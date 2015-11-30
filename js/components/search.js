@@ -15,7 +15,7 @@ $( document ).ready(function() {
       }
     }
   }
-  
+
   var query = GetURLParameter('q') || '';
   $(".search-string").append(query.replace(/%20/g,' '));
   $("#site-search-text").attr('value',query.replace(/%20/g,' '));
@@ -24,7 +24,7 @@ $( document ).ready(function() {
     $("input#q").val(query);
     $("#search-result-list").append('<div class="loading"><span class="glyphicon glyphicon-refresh"></span> Loading</div>');
     $.ajax({
-      url: "//api.data.gov/beckley/v0/resources/eiti/?q=" + query + "&size=200&from=0&api_key=LXJh2PKSC6zxY0YNuBRYgIj2JxSPcDwSPCZuHBG1",
+      url: "https://api.data.gov/beckley-federalist/v0/resources/eiti/?q=" + query + "&size=200&from=0&api_key=LXJh2PKSC6zxY0YNuBRYgIj2JxSPcDwSPCZuHBG1",
       cache: false,
       dataType: "json"
     })
@@ -58,16 +58,16 @@ $( document ).ready(function() {
           else {
             content_type = '<span class="glyphicon glyphicon-file"></span> ' + hit._source.content_type + '';
           }
-          $("#search-results-container").append('<article class="search-result-list"><h1><a href="' 
-            + hit._source.url 
-            + '" target="_blank">' 
-            + hit._source.title 
+          $("#search-results-container").append('<article class="search-result-list"><h1><a href="'
+            + hit._source.url
+            + '" target="_blank">'
+            + hit._source.title
             + '</a></h1>'
-            +'<p>' 
-            + result_description 
+            +'<p>'
+            + result_description
             + '</p>'
-            +'<p>Tagged&nbsp;/' 
-            + tags 
+            +'<p>Tagged&nbsp;/'
+            + tags
             +'</p>'
             +'</article>');
         });

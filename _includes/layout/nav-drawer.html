@@ -1,0 +1,32 @@
+<div id="nav-drawer" class="drawer" aria-hidden="true">
+  <button data-toggler="nav-drawer" class="button--close" is="eiti-toggle" aria-expanded="false" aria-controls="nav-drawer" class="header-right" data-inner-markup="x"></button>
+
+  <label for="drawer-search" class="label">Search site</label>
+  <input id="drawer-search" class="glossary__search" type="search" placeholder="Search">
+
+  <ul class="nav_drawer-nav">
+      <li class="nav_drawer-nav_item {% if page.title == 'Home' %}active{% endif %}">
+        <a class="nav_drawer-nav_item_link" href="{{ site.baseurl }}/">Home</a>
+      </li>
+      <li class="nav_drawer-nav_item {% if page.permalink contains '/about/' %}active{% endif %}">
+        <a class="nav_drawer-nav_item_link" href="{{ site.baseurl }}/about/">About USEITI</a>
+      </li>
+      <li class="nav_drawer-nav_item {% if page.permalink contains '/how-it-works/' %}active{% endif %}">
+        <a class="nav_drawer-nav_item_link" href="{{ site.baseurl }}/how-it-works/">How It Works</a>
+      </li>
+      <li class="nav_drawer-nav_item {% if page.permalink contains '/explore/' %}active{% endif %}">
+        <a class="nav_drawer-nav_item_link" href="{{ site.baseurl }}/explore/">Explore Data</a>
+      </li>
+      <li class="nav_drawer-nav_item nav_drawer-break {% if page.permalink contains '/case-studies/' %}active{% endif %}">
+        <a class="nav_drawer-nav_item_link" href="{{ site.baseurl }}/case-studies/">Case Studies</a>
+      </li>
+      <li class="nav_drawer-nav_item nav_drawer-nav_item_bottom {% if page.permalink contains '/downloads/' %}active{% endif %}">
+        <a class="nav_drawer-nav_item_link" href="{{ site.baseurl }}/downloads/">Downloads</a>
+      </li>
+      <li class="nav_drawer-nav_item nav_drawer-nav_item_bottom" title="Open glossary">
+        <a class="nav_drawer-nav_item_link js-glossary-toggle" alt="this is the glossary drawer">Glossary</a>
+      </li>
+
+    </ul>
+
+</div>

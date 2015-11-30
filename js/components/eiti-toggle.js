@@ -5,6 +5,11 @@
     expanded: '__expandedText'
   };
 
+  var innerMarkup = {
+    bars: '<span class="u-visually-hidden"><icon class="fa fa-bars"></icon></span>',
+    x: '<span class="u-visually-hidden"><icon class="icon-close-x"></icon></span>'
+  };
+
   var EXPANDED = 'aria-expanded';
   var CONTROLS = 'aria-controls';
   var HIDDEN = 'aria-hidden';
@@ -68,6 +73,7 @@
           return this.getAttribute(EXPANDED) === 'true';
         },
         set: function(expanded) {
+
           // coerce strings to booleans
           if (expanded === 'true') {
             expanded = true;
@@ -76,7 +82,22 @@
           } else {
             expanded = !!expanded;
           }
-          this.setAttribute(EXPANDED, expanded);
+
+          var toggleId = this.getAttribute(CONTROLS);
+          var togglers = document.querySelectorAll('[data-toggler=' + toggleId + ']');
+
+          if (togglers.length) {
+
+            // togglers is a NodeList, not an Array
+            if (togglers) {
+              Array.prototype.forEach.call(togglers, function(toggle) {
+                toggle.setAttribute(EXPANDED, expanded);
+              });
+            }
+          } else {
+            this.setAttribute(EXPANDED, expanded);
+          }
+
         }
       }
     })
@@ -91,11 +112,23 @@
       ? this.expandedText
       : this.collapsedText;
 
+    var attrInnerMarkup = this.getAttribute('data-inner-markup');
+    if (attrInnerMarkup) {
+      this.innerHTML = innerMarkup[attrInnerMarkup];
+    }
+
     var id = this.getAttribute(CONTROLS);
+
+
     var target = document.getElementById(id);
+    var expanded = this.expanded;
+
     if (target) {
+      expanded = !target.getAttribute(HIDDEN);
       target.setAttribute(HIDDEN, !this.expanded);
     }
+
+
   }
 
 })(this);

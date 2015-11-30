@@ -1,0 +1,120 @@
+// Glossary
+//
+// The site drawer
+//
+// Styleguide components.drawer
+
+// Glossary drawer
+// Markup:
+// <div class="drawer" id="glossary" aria-hidden="false">
+//   <button title="Close glossary"
+//       class="button button--close toggle"><span class="u-visually-hidden"><icon class="icon-close-x"></icon></span>
+//   </button>
+//   <label for="drawer-search" class="label">Filter glossary terms</label>
+//   <input id="drawer-search" type="search" placeholder="e.g. placeholder text">
+// </div>
+//
+// Styleguide components.drawer.drawer
+
+
+
+.drawer {
+  @include transition(right, 0.3s);
+
+  background-color: $light-black;
+  bottom: 0;
+  color: $white;
+  max-width: 30rem;
+  overflow-y: scroll;
+  padding: 2rem;
+  position: fixed;
+  top: 0;
+  width: 300px;
+  z-index: 5000;
+
+  h2,
+  p,
+  label,
+  i {
+    color: $white;
+  }
+
+  &[aria-hidden=true],
+  &[aria-expanded=false] {
+    display: block;
+    right: -100%;
+  }
+
+  &[aria-hidden=false],
+  &[aria-expanded=true] {
+    @include transition(right, 0.3s);
+    right: 0;
+  }
+
+  .button--close {
+    background-color: transparent;
+    color: $white;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+  }
+
+}
+
+.drawer-icon {
+  padding-right: $base-padding-lite;
+}
+
+#drawer-header {
+  i:before {
+    padding-left: 0;
+    padding-right: $base-padding-lite;
+  }
+}
+
+#drawer-search {
+  border: none;
+
+  &::-webkit-input-placeholder {
+    font-style: italic;
+  }
+
+  &:-moz-placeholder { // Firefox 18-
+    font-style: italic;
+  }
+
+  &::-moz-placeholder {  // Firefox 19+
+    font-style: italic;
+  }
+
+  &:-ms-input-placeholder {
+    font-style: italic;
+  }
+}
+
+.drawer__item {
+  border-bottom: 1px solid $mid-gray;
+
+  &:first-child {
+    border-top: 1px solid $mid-gray;
+  }
+
+  .accordion__header {
+    padding: 1rem 4rem 1rem 0;
+    position: relative;
+  }
+
+  .accordion__button {
+    background-color: transparent;
+    background-size: 50%;
+    height: 2rem;
+    margin-top: -1rem;
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    width: 2rem;
+  }
+}
+

@@ -1,15 +1,16 @@
-<div id="glossary" class="glossary"
+<div id="glossary" class="drawer"
       aria-describedby="glossary-result" aria-hidden="true">
   <button title="Close glossary"
       class="button button--close toggle"><span class="u-visually-hidden"><icon class="icon-close-x"></icon></span>
   </button>
-  <h2 id="glossary-header"><i class="icon-book"></i> Glossary </h2>
-  <label for="glossary-search" class="label">Filter glossary terms</label>
-  <input id="glossary-search" class="glossary__search" type="search" placeholder="e.g. bonus">
-  <div class="glossary__content" id="glossary-result">
+
+  <h2 id="drawer-header"><i class="icon-book"></i> Glossary </h2>
+  <label for="drawer-search" class="label">Filter glossary terms</label>
+  <input id="drawer-search" class="glossary__search" type="search" placeholder="e.g. Revenues">
+  <div class="drawer__content" id="glossary-result">
     <ul class="glossary__list js-accordion">
       {% for term in site.data.terms %}
-      <li id="glossary-list-item" class="glossary__item">
+      <li id="drawer-list-item" class="drawer__item">
         <div class="js-accordion_header accordion__header">
           <h5 class="glossary-term">{{term[0]}}</h5>
           <button class="button button--secondary accordion__button js-accordion_button">

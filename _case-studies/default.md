@@ -25,6 +25,10 @@ nav_items:
   <a name="intro" class="case_studies_content-heading js-cs_section">Six commodities</a>
 </h3> -->
 
+<h1 class="case_studies_intro-heading">How do extractive industries impact communities like mine?</h1>
+
+<p class="case_studies_intro-para">In some communities, extractive industries play a much larger role than in others. These narratives provide  snapshots into twelve communities that, over the last decade, have led in production of one of six resources: iron, copper, gold, coal, oil, and natural gas.</p>
+
 <h3><a name="intro" class="case_studies_content-heading js-cs_section">Overview</a></h3>
 
 While extractive industries made up 2.6% of the U.S. GDP in 2013, they play a much larger role in some local communities. For example, extractive industries make up more than a third of Wyoming’s GDP.[^1] At the county level, certain communities and local economies may be even more dependent on extractive industries.

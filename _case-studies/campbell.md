@@ -5,7 +5,7 @@ permalink: /case-studies/campbell/
 resource: coal
 nav_items:
   - name: intro
-    title: Introduction
+    title: Top
   - name: geolo
     title: Geology and history
   - name: produ
@@ -126,4 +126,3 @@ The table below highlights the data sources used to compile this narrative, as w
 [^27]: [Campbell County Coal Belt Transportation Study](http://www.ccgov.net/DocumentCenter/Home/View/1910), 2010
 [^28]: Ibid.
 [^29]: [Campbell County and Wyoming DOT, [Campbell County Coal Belt Transportation Study](http://www.ccgov.net/DocumentCenter/Home/View/1910), 2010, p. 5
-

@@ -5,7 +5,7 @@ permalink: /case-studies/elko-and-eureka/
 resource: gold
 nav_items:
   - name: intro
-    title: Introduction
+    title: Top
   - name: geolo
     title: Geology and history
   - name: produ
@@ -105,4 +105,3 @@ The table below highlights the data sources used to compile this narrative, as w
 [^10]: Ibid.
 [^11]: Nevada Department of Taxation, [Understanding Nevada’s Fiscal System: Taxes on Patented Mines and Proceeds of Minerals (PDF)](http://www.unce.unr.edu/publications/files/cd/2013/fs1334.pdf), table 2
 [^12]: Ibid.; [County of Eureka: Comprehensive Annual Financial Report (PDF)](http://www.co.eureka.nv.us/audit/Eureka%20FS%202012.pdf), 2012; [Elko County (PDF)](http://www.elkocountynv.net/departments/fiscal_affairs/docs/Elko_County_2012_Audit1.pdf), 2012
-

@@ -1,7 +1,7 @@
 <select onchange="window.location = '{{ site.baseurl }}/case-studies/' + this.value + '/'">
   <option
   {% if page.permalink == '/case-studies/' %}selected{% endif %}
-  value="#">Select a community</option>
+  value="#">Overview</option>
   <optgroup label="Coal">
     <option
       {% if page.permalink == '/case-studies/boone-logan-and-mingo/' %}selected{% endif %}

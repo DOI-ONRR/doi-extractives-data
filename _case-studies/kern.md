@@ -5,7 +5,7 @@ permalink: /case-studies/kern/
 resource: oil
 nav_items:
   - name: intro
-    title: Introduction
+    title: Top
   - name: geolo
     title: Geology and history
   - name: produ

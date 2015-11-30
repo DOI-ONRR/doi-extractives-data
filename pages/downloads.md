@@ -72,11 +72,8 @@ permalink: /downloads/
       <li>
         <h4>Company-reported reconciliation</h4>
         <p>Countries implementing the EITI Standard publish reports that disclose the revenues and other information from extraction of the country's natural resources. Companies report payments to government (taxes, royalties, etc) and the government reports what it has received. These two sets of figures are compiled and reconciled by an independent administrator and published. The 2015 USEITI reconciliation is below.</p>
-        <a href="#" class="button-tertiary">
-          <icon class="icon-cloud icon-padded"></icon>Coming soon
-        </a>
-        <a href="#" class="button-tertiary">
-          <i class="fa fa-file-text-o u-padding-right"></i>Coming soon
+        <a href="{{site.baseurl}}/downloads/reconciliation_2015-11-20.xlsx" class="button-tertiary">
+          <icon class="icon-cloud icon-padded"></icon>Download full dataset, docs included (xlsx, 39 KB)
         </a>
       </li>
 

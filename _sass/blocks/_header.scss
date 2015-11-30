@@ -26,10 +26,15 @@
 header,
 .header {
   @include outer-container($max-width);
+
   margin-bottom: $base-padding-large;
   margin-top: $base-padding;
   margin-left: $base-padding;
   margin-right: $base-padding;
+
+  @include respond-to(huge-plus-up) {
+    @include outer-container($max-width);
+  }
 }
 
 .header-image_link {
@@ -92,7 +97,6 @@ header,
   @include heading('para-md');
   display: inline-block;
   float: right;
-  padding-right: $base-padding;
 
   @include respond-to(huge-plus-up) {
     padding-right: 0;
@@ -107,7 +111,8 @@ header,
   font-weight: $weight-light;
 }
 
-.header-nav_item:last-child {
+.header-nav_item:last-child,
+.header-nav_item_top:last-child {
   padding-right: 0;
 }
 

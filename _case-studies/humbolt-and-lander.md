@@ -5,7 +5,7 @@ permalink: /case-studies/humboldt-and-lander/
 resource: gold
 nav_items:
   - name: intro
-    title: Introduction
+    title: Top
   - name: geolo
     title: Geology and history
   - name: produ

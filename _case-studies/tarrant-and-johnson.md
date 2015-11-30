@@ -5,7 +5,7 @@ permalink: /case-studies/tarrant-and-johnson/
 resource: gas
 nav_items:
   - name: intro
-    title: Introduction
+    title: Top
   - name: geolo
     title: Geology and history
   - name: produ
@@ -124,4 +124,3 @@ The table below highlights the data sources used to compile this county narrativ
 [^25]: Texas’s fiscal year spans from September 1 of the previous year through August 31 of the current year.
 [^26]: Railroad Commission of Texas, [Oil and Gas Regulation and Cleanup Program, Annual Report – Fiscal Year 2013](http://www.rrc.texas.gov/media/18795/ofcu2013.pdf)
 [^27]: Specific fiscal costs to municipalities not specified. Ibid.
-

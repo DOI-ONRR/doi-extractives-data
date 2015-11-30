@@ -5,7 +5,7 @@ permalink: /case-studies/desoto/
 resource: gas
 nav_items:
   - name: intro
-    title: Introduction
+    title: Top
   - name: geolo
     title: Geology and history
   - name: produ
@@ -124,4 +124,3 @@ The DeSoto Parish Emergency Medical Services (EMS) Department formed in 2001, fu
 [^23]: [Louisiana Statewide Transportation Plan, Chapter 7: Transportation Plan Development](http://wwwsp.dotd.la.gov/Inside_LaDOTD/Divisions/Multimodal/Transportation_Plan/2003%20Statewide%20Transportation%20Plan/10%20Chapter%207%20-%20Transportation%20Plan%20Development.pdf), 2003, p. 7-50
 [^24]: Louisiana Department of Natural Resources, [Louisiana Hydraulic Fracturing State Review](http://dnr.louisiana.gov/assets/OC/haynesville_shale/071311_stronger_review.pdf), 2011, p. 16
 [^25]: DeSoto Parish EMS, [Our History](http://www.desotoparishems.com/#!our-history/c17ox)
-

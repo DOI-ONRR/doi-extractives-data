@@ -1,7 +1,7 @@
 (function() {
     var scrollLeft,
       scrollTop,
-      sections;
+
     var findScrollPositions = function(){
       scrollLeft = (window.pageXOffset !== undefined)
         ? window.pageXOffset

@@ -50,7 +50,7 @@
     }
   }
 
-  stickyNav = new StickyNav();
+  var stickyNav = new StickyNav();
 
   findScrollPositions();
   stickyNav.setPositions();

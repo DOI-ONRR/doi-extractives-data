@@ -19,7 +19,6 @@ $( document ).ready(function() {
   var query = GetURLParameter('q') || '';
   $(".search-string").append(query.replace(/%20/g,' '));
   $("#site-search-text").attr('value',query.replace(/%20/g,' '));
-
   if(query) {
     $("input#q").val(query);
     $("#search-result-list").append('<div class="loading"><span class="glyphicon glyphicon-refresh"></span> Loading</div>');
@@ -34,9 +33,10 @@ $( document ).ready(function() {
         if (json.hits.total == 0){
           $("#search-no-results").show();
         }
-        else
+        else{
           $("#search-no-results").remove();
-
+        }
+          
         $.each(json.hits.hits, function(i, hit){
 
         var result_description = hit._source.description;

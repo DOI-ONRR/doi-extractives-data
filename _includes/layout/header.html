@@ -17,8 +17,13 @@
       </li>
 
       <li class="header-nav_item_top">
-        <input type="search" class="header-nav_search" placeholder="Search"/>
-        <span class="header-nav_search_icon"><i class="icon-search"></i></span>
+        <form action='./search_results/'>
+          <label for='q' class='sr-only'>Search</label>
+          <input type="search" class="header-nav_search" placeholder="Search" name="q" id="q"/>
+          <span class="header-nav_search_icon"><i class="icon-search"></i></span>
+          <span class="sr-only"><button type="submit" class="icon-search"></button></span>
+          
+        </form>
       </li>
 
     </ul>

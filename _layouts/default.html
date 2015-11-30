@@ -10,6 +10,7 @@
     <script src="{{ site.baseurl }}/js/vendor/topojson.v1.min.js"></script>
     <script src="{{ site.baseurl }}/js/vendor/datalib.min.js"></script>
     <script src="{{ site.baseurl }}/js/vendor/colorbrewer.js"></script>
+    <script src="{{ site.baseurl }}/js/vendor/jquery.min.js"></script>
 
     <!-- custom map projection -->
     <script src="{{ site.baseurl }}/js/albers-custom.js"></script>
@@ -29,7 +30,7 @@
     <script src="{{ site.baseurl }}/js/components/search.js"></script>
 
     <!-- Glossary -->
-    <script src="{{ site.baseurl }}/js/vendor/jquery.min.js"></script>
+    
     <script src="{{ site.baseurl }}/js/vendor/lodash.min.js"></script>
     <script src="{{ site.baseurl }}/js/vendor/list.min.js"></script>
 
@@ -44,7 +45,7 @@
     <main>
       {% include glossary.html %}
       {% include layout/nav-drawer.html %}
-
+      <div id="search-results-container"></div>
       {{ content }}
     </main>
 

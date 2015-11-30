@@ -29,7 +29,7 @@ permalink: /how-it-works/
 			<button class="accordion-button" accordion-button></button>
 			<div class="accordion-content">
 				<p class="landing-description">Private individuals and corporations, as well as federal, state, local, and tribal governments, can own land and the oil, gas, coal, and other minerals found below the surface. In fact, widespread private ownership of these resources makes the U.S. different from nearly every other country, where these resources simply belong to the government.<br>
-        <a href="{{site.baseurl}}/how-it-works/ownership/">Lean about ownership &#8594;</a></p>
+        <a href="{{site.baseurl}}/how-it-works/ownership/">Learn about ownership &#8594;</a></p>
 				<a href="{{site.baseurl}}/how-it-works/ownership/">
 					<img class="landing-image" src="{{site.baseurl}}/img/landing-placeholders/precent-production-fed.png">
 				</a>
@@ -40,7 +40,7 @@ permalink: /how-it-works/
 			<button class="accordion-button" accordion-button></button>
 			<div class="accordion-content">
 				<p class="landing-description">The U.S. is a world leader in producing natural resources, including oil, gas, coal, renewable energy, and nonenergy minerals.<br>
-        <a href="{{site.baseurl}}/how-it-works/production/">Lean about production &#8594;</a></p>
+        <a href="{{site.baseurl}}/how-it-works/production/">Learn about production &#8594;</a></p>
 				<a href="{{site.baseurl}}/how-it-works/production/">
 					<img class="landing-image" src="{{site.baseurl}}/img/landing-placeholders/global-rank-production.png">
 				</a>
@@ -51,7 +51,7 @@ permalink: /how-it-works/
 			<button class="accordion-button" accordion-button></button>
 			<div class="accordion-content">
 				<p class="landing-description">When companies extract natural resources on federal onshore and offshore lands, they pay revenue to the federal government. The government distributes these funds for public use in a variety of ways.<br>
-        <a href="{{site.baseurl}}/how-it-works/revenues/">Lean about revenues &#8594;</a></p>
+        <a href="{{site.baseurl}}/how-it-works/revenues/">Learn about revenues &#8594;</a></p>
 				<a href="{{site.baseurl}}/how-it-works/revenues/">
 					<img class="landing-image" src="{{site.baseurl}}/img/landing-placeholders/revenues-pie-chart.png">
 				</a>
@@ -104,20 +104,22 @@ permalink: /how-it-works/
 			<h5 class="landing-heading"><a href="{{site.baseurl}}/how-it-works/federal-laws/">Federal laws and regulations</a></h5>
 			<button class="accordion-button" accordion-button></button>
 			<div class="accordion-content">
-				<p class="landing-description">The legislative branch has passed many laws that govern natural resource extraction on federal lands.</p>
-				<a href="{{site.baseurl}}/how-it-works/federal-laws/">
+				<p class="landing-description">The legislative branch has passed many laws that govern natural resource extraction on federal lands.<br>
+        <a href="{{site.baseurl}}/how-it-works/federal-laws/">Learn about federal laws &#8594;</a></p>
+				<!-- <a href="{{site.baseurl}}/how-it-works/federal-laws/">
 					<img class="landing-image" src="{{site.baseurl}}/img/landing-placeholders/placeholder.png">
-				</a>
+				</a> -->
 			</div>
 		</div>
 		<div class="container landing-section" accordion-item accordion-open="true">
 			<h5 class="landing-heading"><a href="{{site.baseurl}}/how-it-works/federal-reforms/">Federal reforms</a></h5>
 			<button class="accordion-button" accordion-button></button>
 			<div class="accordion-content">
-				<p class="landing-description">The government reforms laws and regulations by enacting new legislation and proposing new rules to implement the legislation.</p>
-				<a href="{{site.baseurl}}/how-it-works/federal-reforms/">
+				<p class="landing-description">The government reforms laws and regulations by enacting new legislation and proposing new rules to implement the legislation.<br>
+        <a href="{{site.baseurl}}/how-it-works/federal-reforms/">Learn about federal regulations &#8594;</a></p>
+				<!-- <a href="{{site.baseurl}}/how-it-works/federal-reforms/">
 					<img class="landing-image" src="{{site.baseurl}}/img/landing-placeholders/placeholder.png">
-				</a>
+				</a> -->
 			</div>
 		</div>
     <!-- <div class="container landing-section" accordion-item accordion-open="true">
@@ -134,17 +136,19 @@ permalink: /how-it-works/
 			<h5 class="landing-heading"><a href="{{site.baseurl}}/how-it-works/state-laws-and-regulations/" id="state-laws-and-regulations">State laws and regulations</a></h5>
 			<button class="accordion-button" accordion-button></button>
 			<div class="accordion-content">
-				<p class="landing-description">State government agencies create regulations and rules related to natural resource extraction based on applicable state laws and statutes (federal laws and regulations apply to all states and localities). Local government agencies also play a role in natural resource extraction in their jurisdictions.</p>
+				<p class="landing-description">State government agencies create regulations and rules related to natural resource extraction based on applicable state laws and statutes (federal laws and regulations apply to all states and localities). Local government agencies also play a role in natural resource extraction in their jurisdictions.<br>
+        <a href="{{site.baseurl}}/how-it-works/state-laws-and-regulations/">Learn about state laws &#8594;</a></p>
 				<a href="{{site.baseurl}}/how-it-works/state-laws-and-regulations/">
 					<img class="landing-image" src="{{site.baseurl}}/img/placeholders/map.png">
 				</a>
 			</div>
 		</div>
 		<div class="container landing-section" accordion-item accordion-open="true">
-			<h5 class="landing-heading"><a href="{{site.baseurl}}/how-it-works/state-legal-fiscal-info/">State legal and fiscal information</a></h5>
+			<h5 class="landing-heading"><a href="{{site.baseurl}}/how-it-works/state-legal-fiscal-info/">Regulations in 18 states</a></h5>
 			<button class="accordion-button" accordion-button></button>
 			<div class="accordion-content">
-				<p class="landing-description">State government agencies create regulations and rules related to natural resource extraction based on applicable state laws and statutes (federal laws and regulations apply to all states and localities). Local government agencies also play a role in natural resource extraction in their jurisdictions.</p>
+				<p class="landing-description">Learn more about natural resource regulation, production, and revenue in the 18 states that, in 2013, led the country in oil, gas, coal, and nonenergy mineral production; had the most DOI revenue and / or state production taxes; or had the most significant tribal natural resource interest.<br>
+        <a href="{{site.baseurl}}/how-it-works/state-legal-fiscal-info/">Learn about 18 states &#8594;</a></p>
 				<a href="{{site.baseurl}}/how-it-works/state-legal-fiscal-info/">
 					<img class="landing-image" src="{{site.baseurl}}/img/placeholders/map.png">
 				</a>
@@ -154,7 +158,8 @@ permalink: /how-it-works/
 			<h5 class="landing-heading"><a href="{{site.baseurl}}/how-it-works/tribal-laws-and-regulations/">Tribal laws and regulations</a></h5>
 			<button class="accordion-button" accordion-button></button>
 			<div class="accordion-content">
-				<p class="landing-description">Extracting natural resources on Indian land and distributing the associated revenue involves a unique set of processes and stakeholders.</p>
+				<p class="landing-description">Extracting natural resources on Indian land and distributing the associated revenue involves a unique set of processes and stakeholders.<br>
+        <a href="{{site.baseurl}}/how-it-works/tribal-laws-and-regulations/">Learn about tribal laws &#8594;</a></p>
 				<a href="{{site.baseurl}}/how-it-works/tribal-laws-and-regulations/">
 					<img class="landing-image" src="{{site.baseurl}}/img/landing-placeholders/placeholder.png">
 				</a>

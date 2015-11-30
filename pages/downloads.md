@@ -11,7 +11,7 @@ permalink: /downloads/
 
     <h1>Download Data & Documentation</h1>
 
-    <p class="case_studies_intro-para">This is an intro paragraph describing what's on this page. Info about how some of these are our datasets, and some are from other government sources and we link out to those. To see visualizations using this data, explore here.</p>
+    <p class="case_studies_intro-para">This is an intro paragraph describing what's on this page. Info about how some of these are our datasets, and some are from other government sources and we link out to those. To see visualizations using this data, explore here. If you're planning on using this data to make something, here are <a href="https://github.com/18F/doi-extractives-data/wiki/Data-Catalog#federal-revenue">our web team's data notes</a> for building the visualizations on this site. Also, we'd love to see what you make -- send us a note!</p>
 
     <h3>Production</h3>
     <ul class="list-sections">
@@ -37,12 +37,71 @@ permalink: /downloads/
     </ul>
 
     <h3>Revenue</h3>
-    <ul class="list-bullet">
-    	<li>Federal revenue by location</li>
-    	<li>Federal revenue by company</li>
-  		<li>Company-reported reconciliation</li>
-  		<li>Corporate income tax</li>
-  		<li>Disbursements</li>
+    <ul class="list-sections">
+    	<li>
+        <h4>Federal revenue by location</h4>
+        <p>Federal revenue from natural resources extracted from federal land and waters by location. This dataset is from the <a href="http://www.onrr.gov/">Office of Natural Resources Revenue</a>, which is part of the Department of the Interior. It is separated into onshore and offshore data, and is available by calendar year (CY) and fiscal year (FY).</p>
+        <a href="{{site.baseurl}}/downloads/federal_revenue_offshore_acct-year_CY04-13_2015-11-20.xlsx" class="button-tertiary">
+          <icon class="icon-cloud icon-padded"></icon>Download offshore dataset, CY (xlsx, 321 KB)
+        </a>
+        <a href="{{site.baseurl}}/downloads/federal_revenue_offshore_acct-year_FY04-14_2015-11-20.xlsx" class="button-tertiary">
+          <icon class="icon-cloud icon-padded"></icon>Download offshore dataset, FY (xlsx, 348 KB)
+        </a>
+        <a href="{{site.baseurl}}/downloads/federal_revenue_onshore_acct-year_CY04-13_2015-11-20.xlsx" class="button-tertiary">
+          <icon class="icon-cloud icon-padded"></icon>Download onshore dataset, CY (xlsx, 1.1 MB)
+        </a>
+        <a href="#" class="button-tertiary">
+          <i class="fa fa-file-text-o u-padding-right"></i>Documentation coming soon
+        </a>
+      </li>
+
+      <li>
+        <h4>Federal revenue by company</h4>
+        <p>Federal revenue from natural resources extracted from federal land and waters by company. This dataset is from the <a href="http://www.onrr.gov/">Office of Natural Resources Revenue</a>, which is part of the Department of the Interior.</p>
+        <a href="#" class="button-tertiary">
+          <icon class="icon-cloud icon-padded"></icon>Coming soon
+        </a>
+        <a href="{{site.baseurl}}/downloads/federal_revenue_by_company_documentation_2015-11-20.docx" class="button-tertiary">
+          <i class="fa fa-file-text-o u-padding-right"></i>Download documentation (docx, 22 KB)
+        </a>
+      </li>
+
+      <li>
+        <h4>Company-reported reconciliation</h4>
+        <p>Countries implementing the EITI Standard publish reports that disclose the revenues and other information from extraction of the country's natural resources. Companies report payments to government (taxes, royalties, etc) and the government reports what it has received. These two sets of figures are compiled and reconciled by an independent administrator and published. The 2015 USEITI reconciliation is below.</p>
+        <a href="#" class="button-tertiary">
+          <icon class="icon-cloud icon-padded"></icon>Coming soon
+        </a>
+        <a href="#" class="button-tertiary">
+          <i class="fa fa-file-text-o u-padding-right"></i>Coming soon
+        </a>
+      </li>
+
+      <li>
+        <h4>Corporate income tax</h4>
+        <p>The IRS Statistics of Income (SOI) program publishes data on the <a href="https://www.irs.gov/uac/Tax-Stats-2">IRS Tax Statistics</a> website. Information on corporate income tax liability is located under <a href="https://www.irs.gov/uac/SOI-Tax-Stats-Corporation-Tax-Statistics">Corporation Tax Statistics</a>, and SOI aggregates the tax data separately for <a href="https://www.irs.gov/uac/SOI-Tax-Stats-S-Corporation-Statistics">S-corporations</a>.</p>
+        <a href="https://www.irs.gov/uac/Tax-Stats-2" class="button-tertiary">
+          Go to IRS &#8594;
+        </a>
+      </li>
+
+      <li>
+        <h4>Disbursements</h4>
+        <p>The amount of money earned from extraction of natural resources on federal lands that is disbursed to various legislated funds. This dataset is from the <a href="http://www.onrr.gov/">Office of Natural Resources Revenue</a>, which is part of the Department of the Interior. In addition, we have more detailed datasets on two of the funds: <a href="https://www.doi.gov/lwcf">Land and Water Conservation Fund</a> (LWCF) and <a href="http://www.nps.gov/subjects/historicpreservation/NHPA-50.htm">National Historic Preservation Act</a> (NHPA).</p>
+        <a href="{{site.baseurl}}/downloads/disbursements_2012-2013_2015-11-20.xlsx" class="button-tertiary">
+          <icon class="icon-cloud icon-padded"></icon>Download disbursement dataset (xlsx, 14 KB)
+        </a>
+        <a href="{{site.baseurl}}/downloads/disbursements_documentation_2015-11-20.docx" class="button-tertiary">
+          <i class="fa fa-file-text-o u-padding-right"></i>Download documentation (docx, 21 KB)
+        </a>
+        <a href="{{site.baseurl}}/downloads/land_water_conservation_fund_incl-documentation_2015-07.xlsx" class="button-tertiary">
+          <icon class="icon-cloud icon-padded"></icon>Download LWCF dataset, includes docs (xlsx, 581 KB)
+        </a>
+        <a href="{{site.baseurl}}/downloads/historic_preservation_fund_2011-2014_2015-10-30.xlsx" class="button-tertiary">
+          <icon class="icon-cloud icon-padded"></icon>Download NHPA, dataset (xlsx, 19 KB)
+        </a>
+      </li>
+
     </ul>
 
     <h3>Economic Impact</h3>

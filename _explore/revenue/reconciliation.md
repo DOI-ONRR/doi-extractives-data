@@ -1,7 +1,7 @@
 ---
-title: Company Reported Federal Revenue | Explore Data
+title: Reconciliation | Explore Data
 layout: default
-permalink: /explore/company-reported-federal-revenue/
+permalink: /explore/reconciliation/
 ---
 
 <div class="container-outer container-padded">

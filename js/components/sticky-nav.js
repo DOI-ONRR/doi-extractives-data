@@ -17,9 +17,6 @@
         || document.body).scrollTop;
   };
 
-  console.log('in', window)
-
-
   StickyNav = function() {
     this.elems = {
       sticky : document.querySelector('.sticky_nav'),

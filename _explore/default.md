@@ -45,7 +45,6 @@ permalink: /explore/
 			</div>
 		</div>
 	</section>
-
 	<section class="container">
 		<a id="revenue" class="link-no_under"><h3 class="landing-section_category">Revenue</h3></a>
 		<div class="container-half landing-section" accordion-item accordion-open="true">
@@ -70,11 +69,11 @@ permalink: /explore/
 			</div>
 		</div>
     <div class="container-half landing-section" accordion-item accordion-open="true">
-			<h5 class="landing-heading"><a href="{{site.baseurl}}/explore/company-reported-federal-revenue/">Company-reported reconciliation</a></h5>
+			<h5 class="landing-heading"><a href="{{site.baseurl}}/explore/reconciliation/">Reconciliation</a></h5>
 			<button class="accordion-button" accordion-button></button>
 			<div class="accordion-content">
 				<p class="landing-description">As a part of USEITI, companies report payments to government (taxes, royalties, etc) and the government reports what it has received. These two sets of figures are compiled and reconciled by an independent administrator and published. In the future, this dataset will be interactive. For now, <a href="{{site.baseurl}}/explore/company-reported-federal-revenue/">learn about the 2015 USEITI reconciliation process and download the dataset &#8594;</a></p>
-				<a href="{{site.baseurl}}/explore/company-reported-federal-revenue/">
+				<a href="{{site.baseurl}}/explore/reconciliation/">
 					<img class="landing-image" src="{{site.baseurl}}/img/landing-placeholders/placeholder.png">
 				</a>
 			</div>

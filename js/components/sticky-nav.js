@@ -20,7 +20,7 @@
     this.elems = {
       sticky : document.querySelector('.sticky_nav'),
       main: document.querySelector('main')
-    }
+    };
     this.height = this.elems.sticky.clientHeight;
     this.offset = this.elems.sticky.offsetTop;
   };
@@ -47,7 +47,7 @@
         this.elems.sticky.style.position = 'static';
       }
     }
-  }
+  };
 
   var stickyNav = new StickyNav();
 

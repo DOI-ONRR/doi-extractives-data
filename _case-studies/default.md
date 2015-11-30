@@ -4,7 +4,7 @@ layout: case-studies
 permalink: /case-studies/
 nav_items:
   - name: intro
-    title: Introduction
+    title: Top
   - name: reven
     title: Revenue sustainability
   - name: county-rev
@@ -15,7 +15,7 @@ nav_items:
     title: Data
 ---
 
-<h3 class="case_studies_content-icon">
+<!-- <h3 class="case_studies_content-icon">
   <i class="icon-oil"></i>
   <i class="icon-gas"></i>
   <i class="icon-coal"></i>
@@ -23,9 +23,9 @@ nav_items:
   <i class="icon-copper"></i>
   <i class="icon-iron"></i>
   <a name="intro" class="case_studies_content-heading js-cs_section">Six commodities</a>
-</h3>
+</h3> -->
 
-<h3><a name="intro" class="case_studies_content-heading js-cs_section">Introduction</a></h3>
+<h3><a name="intro" class="case_studies_content-heading js-cs_section">Overview</a></h3>
 
 While extractive industries made up 2.6% of the U.S. GDP in 2013, they play a much larger role in some local communities. For example, extractive industries make up more than a third of Wyoming’s GDP.[^1] At the county level, certain communities and local economies may be even more dependent on extractive industries.
 

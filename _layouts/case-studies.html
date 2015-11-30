@@ -2,12 +2,15 @@
 layout: default
 ---
 
-
-{% include case-studies/_intro.html %}
+<!-- {% include case-studies/_intro.html %} -->
 
 <section class="container-outer case_studies_content">
 
 	<article class="container-left-7">
+
+		<h1 class="case_studies_intro-heading">How do extractive industries impact communities like mine?</h1>
+
+		<p class="case_studies_intro-para">In some communities, extractive industries play a much larger role than in others. These narratives provide  snapshots into twelve communities that, over the last decade, have led in production of one of six resources: iron, copper, gold, coal, oil, and natural gas.</p>
 
 			{% if page.resource == 'oil' %}
 			  <h3 class="case_studies_content-icon"><i class="icon-oil"></i>Oil</h3>
@@ -28,23 +31,40 @@ layout: default
 
 	</article>
 
-	<div class="container-right-5 sticky_nav">
+	<div class="container-right-5">
 
-	  <nav class="sticky_nav-nav">
+		<label>Choose a community page
+			<div class="case_studies_intro-select">
+				{% include case-studies/_selector.html %}
+			</div>
+		</label>
 
-	    <ul>
-	      {% if page.nav_items %}
-	      	{% for item in page.nav_items %}
-		        {% if item.name == page.nav_items[0].name %}
-		          <li class="sticky_nav-nav_item js-cs_nav_item active {{item.name}}"><a href="#{{item.name}}">{{item.title}}</a></li>
-		        {% else %}
-		          <li class="sticky_nav-nav_item js-cs_nav_item {{item.name}}"><a href="#{{item.name}}">{{item.title}}</a></li>
-		        {% endif %}
-		      {% endfor %}
-	      {% endif %}
-	    </ul>
+		<div class="u-centered">
 
-	  </nav>
+      <img src="{{ site.baseurl }}/img/counties/12-map.png" alt="Map with locations of the twelve communities given in-depth coverage in this section of the site." class="case_studies_intro-image">
+      <img src="{{ site.baseurl }}/img/counties/12-map-icons.png" alt="Key for map with the icons for the six commodities given in-depth coverage in this section of the site." class="case_studies_intro-image case_studies_intro-image_key">
+
+    </div>
+
+		<div class="sticky_nav">
+
+		  <nav class="sticky_nav-nav">
+
+		    <ul>
+		      {% if page.nav_items %}
+		      	{% for item in page.nav_items %}
+			        {% if item.name == page.nav_items[0].name %}
+			          <li class="sticky_nav-nav_item js-cs_nav_item active {{item.name}}"><a href="#{{item.name}}">{{item.title}}</a></li>
+			        {% else %}
+			          <li class="sticky_nav-nav_item js-cs_nav_item {{item.name}}"><a href="#{{item.name}}">{{item.title}}</a></li>
+			        {% endif %}
+			      {% endfor %}
+		      {% endif %}
+		    </ul>
+
+		  </nav>
+
+		</div>
 
 	</div>
 

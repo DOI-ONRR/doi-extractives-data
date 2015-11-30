@@ -202,6 +202,8 @@ permalink: /how-it-works/federal-laws/
   	<li><a href="http://www.osmre.gov/lrg.shtm">OSMRE</a></li>
   	<li><a href="http://www.nmfs.noaa.gov/ole/about/what_we_do/laws.html">NOAA</a></li>
     </ul>
+	
+	<p>Along with federal laws, extractive industries companies must comply with <a href="{{site.baseurl}}/how-it-works/state-laws-and-regulations/">state and local laws</a>.</p>
 
     <h3>Regulations</h3>
 

@@ -12,6 +12,8 @@ permalink: /explore/jobs/
   
   <p>According to the <a href="http://www.bea.gov/iTable/iTable.cfm?ReqID=9&step=1#reqid=9&step=3&isuri=1&903=193">BEA</a>, 808,000 people drew <a href="http://www.bls.gov/cew/apps/data_views/data_views.htm#tab=Tables">wages and salaries</a> from work in the extractive industries in 2013. Total full-time and part-time employment was 141,411,000, meaning that roughly 0.6% of all U.S. workers were employed in the extractive industries. Support activities for mining provided the largest number of wage and salary jobs.</p>
   
+  <p>There was an annual average of 1,231 jobs in solar electric power generation, 3,176 in wind electric power generation, and 1,094 in geothermal power generation.</p>
+    
   <h3>Wage and salary employees by industry in 2013</h3>
   
   <table>
@@ -124,7 +126,9 @@ permalink: /explore/jobs/
     </tr>
   </table>
   
-  <p>People working in the extractive industries have a range of occupations, many of which are similar to other industries, such as bus drivers, executives, and computer and information analysts. However, some people that work in the extractive industries have occupations unique to the industry, and they are called extraction workers. In May 2013, the estimated number one extraction worker occupation involved assembling or repairing oil field equipment using hand and power tools. The table below lists the top five extraction worker occupations, and the BLS Standard Occupational Classification description for each.</p>
+  <p>People working in the extractive industries have a range of occupations, many of which are similar to other industries, such as bus drivers, executives, and computer and information analysts. However, some people that work in the extractive industries have occupations unique to the industry, and they are called extraction workers.</p>
+  
+  <p>In May 2013, the estimated number one extraction worker occupation involved assembling or repairing oil field equipment using hand and power tools. The table below lists the top five extraction worker occupations, and the BLS Standard Occupational Classification (SOC) description for each. (SOC is used by the federal government to classify workers by their occupations. There are 840 detailed occupations, 13 specific to extraction workers.)</p>
   
   <h3>Top extraction worker occupations in May 2015</h3>
   

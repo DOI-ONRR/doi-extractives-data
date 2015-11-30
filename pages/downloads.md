@@ -58,8 +58,8 @@ permalink: /downloads/
       <li>
         <h4>Federal revenue by company</h4>
         <p>Federal revenue from natural resources extracted from federal land and waters by company. This dataset is from the <a href="http://www.onrr.gov/">Office of Natural Resources Revenue</a>, which is part of the Department of the Interior.</p>
-        <a href="#" class="button-tertiary">
-          <icon class="icon-cloud icon-padded"></icon>Coming soon
+        <a href="{{site.baseurl}}/downloads/federal_revenue_by_company_CY2013_2015-11-10.xlsx" class="button-tertiary">
+          <icon class="icon-cloud icon-padded"></icon>Download full dataset (xlsx, 132 KB)
         </a>
         <a href="{{site.baseurl}}/downloads/federal_revenue_by_company_documentation_2015-11-20.docx" class="button-tertiary">
           <i class="fa fa-file-text-o u-padding-right"></i>Download documentation (docx, 22 KB)

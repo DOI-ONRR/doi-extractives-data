@@ -26,11 +26,14 @@
 header,
 .header {
   @include outer-container($max-width);
+
   margin-bottom: $base-padding-large;
   margin-top: $base-padding;
+  margin-left: $base-padding;
+  margin-right: $base-padding;
 
-  div:first-of-type {
-    @include span-columns(4);
+  @include respond-to(huge-plus-up) {
+    @include outer-container($max-width);
   }
 }
 
@@ -48,12 +51,52 @@ header,
   width: 100%;
 }
 
+.header-left {
+  @include span-columns(6);
+
+  @include respond-to(medium-up) {
+    @include span-columns(3);
+  }
+}
+
+.header-right {
+  float: right;
+
+  &.header-bars {
+    display: inline-block;
+
+    icon {
+      @include font-size(1.5);
+    }
+  }
+
+  &.header-nav {
+    display: none;
+  }
+
+  @include respond-to(medium-up) {
+
+    &.header-bars {
+      display: none;
+    }
+
+    &.header-nav {
+      @include span-columns(9);
+      @include omega();
+      display: inline-block;
+    }
+  }
+}
+
+.header-bars {
+  background-color: transparent;
+}
+
 .header-nav_top,
 .header-nav_bottom {
   @include heading('para-md');
   display: inline-block;
   float: right;
-  padding-right: $base-padding;
 
   @include respond-to(huge-plus-up) {
     padding-right: 0;
@@ -68,7 +111,8 @@ header,
   font-weight: $weight-light;
 }
 
-.header-nav_item:last-child {
+.header-nav_item:last-child,
+.header-nav_item_top:last-child {
   padding-right: 0;
 }
 
@@ -77,11 +121,16 @@ header,
 }
 
 .header-nav_item_link {
-  @include font-size(0.875);
+  @include font-size(0.75);
   color: $dark-gray;
   letter-spacing: 1.1px;
   text-decoration: none;
   text-transform: uppercase;
+
+  @include respond-to(large-up) {
+    @include font-size(0.875);
+  }
+
   &:hover,
   &:active {
     text-decoration: underline;
@@ -104,7 +153,7 @@ header,
   }
 
   .header-nav_search {
-    @include font-size(0.75);
+    @include font-size(0.65);
 
     border-bottom-right-radius: 0;
     border-right: none;
@@ -117,6 +166,10 @@ header,
     margin-left: $base-padding;
     padding: 0.42rem;
     width: 150px;
+
+    @include respond-to(large-up) {
+      @include font-size(0.75);
+    }
   }
 
   .header-nav_search_icon {
@@ -128,9 +181,14 @@ header,
     cursor: pointer;
     float: right;
     height: 100%;
-    padding: 0.22rem;
+    padding: 0.13rem;
     padding-left: 0.64rem;
     width: 37px;
+
+    @include respond-to(large-up) {
+      padding: 0.22rem;
+      padding-left: 0.64rem;
+    }
   }
 }
 
@@ -149,4 +207,20 @@ header,
 
 .header-nav_item_link_spacer {
   color: $dark-gray;
+}
+
+[eiti-drawer-toggle] {
+  display: inline-block;
+
+  @include respond-to(medium-up) {
+    display: none;
+  }
+}
+
+.header-nav {
+  display: none;
+
+  @include respond-to(medium-up) {
+    display: block;
+  }
 }

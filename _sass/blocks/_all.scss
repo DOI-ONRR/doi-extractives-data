@@ -1,6 +1,7 @@
 @import 'header';
 @import 'footer';
 @import 'banner';
+@import 'nav-drawer';
 
 // Case Studies
 //
@@ -25,3 +26,10 @@
 @import 'how-it-works/subpage_involved';
 @import 'landing';
 @import 'explore/all';
+
+// About
+//
+// Styles for the page at /about/
+//
+// Styleguide blocks.about
+@import 'about';

@@ -1,8 +1,26 @@
 ---
-title: About
+title: About USEITI
 layout: default
 permalink: /about/
 ---
+
+<section class="slab-delta">
+  <div class="container-outer landing-section_top">
+	  <div class="container-left-8 hero-left">
+			<h1>{{ page.title }}</h1>
+			<p class="hero-description">In 2011, the U.S. joined seven other countries to launch the <a href="http://www.opengovpartnership.org/">Open Government Partnership</a>, a global platform dedicated to making governments more open, accountable, and responsive to citizens. The U.S. committed to join the international <a href="https://eiti.org/">Extractive Industries Transparency Initiative</a> (EITI) as part of its Open Government Partnership <a href="https://www.whitehouse.gov/sites/default/files/us_national_action_plan_final_2.pdf">2011</a> and <a href="https://www.whitehouse.gov/sites/default/files/docs/us_national_action_plan_6p.pdf">2013</a> National Action Plans to ensure that taxpayers are receiving every dollar due for extraction of U.S. natural resources. </p>
+		</div>
+		<div class="container-right-4 hero-right">
+      <div class="hero-right_square about_intro-callout">
+        <h2 class="h3">Read highlights from this year's USEITI.</h2>
+        <a href="{{ site.baseurl }}/about/whats-new/" class="carousel-button button-primary">New for 2015</a>
+        <h2 class="h3">Want the 2015 USEITI Executive Summary as a downloadable pdf?</h2>
+        <a href="{{ site.baseurl }}/about/report/" class="carousel-button button-primary">Executive Summary</a>
+      </div>
+    </div>
+	</div>
+</section>
+
 
 <div class="communities">
 
@@ -11,10 +29,6 @@ permalink: /about/
     <section class="container">
 
       <div class="container-left-7">
-
-        <h1>About USEITI</h1>
-
-		<p class="case_studies_intro-para">In 2011, the U.S. joined seven other countries in launching the <a href="http://www.opengovpartnership.org/">Open Government Partnership</a>, a global platform of participating countries dedicated to making governments more open, accountable, and responsive to citizens. As part of the <a href="https://www.whitehouse.gov/sites/default/files/us_national_action_plan_final_2.pdf">2011 National Action Plan</a>, the U.S. sought to improve the transparency of extractive industries for U.S. citizens, and manage public resources—specifically natural resources on federal lands—more effectively by joining the Extractive Industries Transparency Initiative (EITI). We restated this commitment in the <a href="https://www.whitehouse.gov/sites/default/files/docs/us_national_action_plan_6p.pdf">2013 National Action Plan</a>.</p>
 
 		<h2 id="initiative" class="h3">The initiative</h2>
 
@@ -26,11 +40,9 @@ permalink: /about/
 
       </div>
 
-      <div class="container-right-5">
-      <p>LINK/CALLOUT to <a href="{{ site.baseurl }}/about/whats-new/">what's new for 2015 page.</a></p>
-      <p>LINK/CALLOUT to <a href="{{ site.baseurl }}/about/report/">2015 exec summary page.</a></p>
+      <!-- <div class="container-right-5">
 		  <img src="{{ site.baseurl }}/img/nat-gas-well.jpg" alt="Natural gas well in Colorado" style="width:100%;">
-      </div>
+      </div> -->
 
     </section>
 

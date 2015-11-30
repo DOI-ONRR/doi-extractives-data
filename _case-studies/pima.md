@@ -5,7 +5,7 @@ permalink: /case-studies/pima/
 resource: copper
 nav_items:
   - name: intro
-    title: Introduction
+    title: Top
   - name: geolo
     title: Geology and history
   - name: produ
@@ -102,4 +102,3 @@ The table below highlights data sources used to compile this narrative, as well 
 [^13]: Arizona Department of Revenue, [2014 Annual Report (PDF)](https://www.azdor.gov/Portals/0/AnnualReports/FY14%20Annual%20Report%20W.pdf), p. 39, table 7
 [^14]: State of Arizona, [2013 Tax Handbook (PDF)](http://www.azleg.gov/jlbc/13taxbook/13taxbk.pdf), p. 8, table 4
 [^15]: Pima County, Arizona, [Comprehensive Annual Financial Report (PDF)](http://webcms.pima.gov/UserFiles/Servers/Server_6/File/Government/Finance%20and%20Risk%20Management/Reports/audited%20financial%20reports/CAFR/CAFR%202013.pdf), 2013, p. 131
-

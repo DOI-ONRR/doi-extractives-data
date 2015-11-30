@@ -4,9 +4,9 @@ layout: case-studies
 permalink: /case-studies/
 nav_items:
   - name: intro
-    title: Introduction
+    title: Top
   - name: reven
-    title: Revenue sustainability
+    title: Revenue Sustainability
   - name: county-rev
     title: Revenue
   - name: county-cos
@@ -15,7 +15,7 @@ nav_items:
     title: Data
 ---
 
-<h3 class="case_studies_content-icon">
+<!-- <h3 class="case_studies_content-icon">
   <i class="icon-oil"></i>
   <i class="icon-gas"></i>
   <i class="icon-coal"></i>
@@ -23,50 +23,17 @@ nav_items:
   <i class="icon-copper"></i>
   <i class="icon-iron"></i>
   <a name="intro" class="case_studies_content-heading js-cs_section">Six commodities</a>
-</h3>
+</h3> -->
 
-<h3><a name="intro" class="case_studies_content-heading js-cs_section">Introduction</a></h3>
+<h1 class="case_studies_intro-heading">How do extractive industries impact communities like mine?</h1>
+
+<p class="case_studies_intro-para">In some communities, extractive industries play a much larger role than in others. These narratives provide  snapshots into twelve communities that, over the last decade, have led in production of one of six resources: iron, copper, gold, coal, oil, and natural gas.</p>
+
+<h3><a name="intro" class="case_studies_content-heading js-cs_section">Overview</a></h3>
 
 While extractive industries made up 2.6% of the U.S. GDP in 2013, they play a much larger role in some local communities. For example, extractive industries make up more than a third of Wyoming’s GDP.[^1] At the county level, certain communities and local economies may be even more dependent on extractive industries.
 
 This section includes 12 case studies that provide a snapshot of communities that have led the U.S. in producing oil, gas, coal, gold, iron, or copper over the last decade. These case studies shed light on the economic and fiscal effects of oil, gas, and mineral extraction on local communities, including revenue sustainability.
-
-<!-- #### Choose a community to get started
-
-<ul class="case_studies_content-select">
-  <ul>
-    <p class="para-lg">Coal</p>
-    <li><a href="{{ site.baseurl }}/case-studies/boone-logan-and-mingo">Boone, Logan, and Mingo Counties, West Virginia</a></li>
-    <li><a href="{{ site.baseurl }}/case-studies/campbell/">Campbell County, Wyoming</a></li>
-  </ul>
-  <ul>
-  <p class="para-lg">Copper</p>
-    <li><a href="{{ site.baseurl }}/case-studies/greenlee">Greenlee County, Arizona</a></li>
-    <li><a href="{{ site.baseurl }}/case-studies/pima/">Pima County, Arizona</a></li>
-  </ul>
-  <ul>
-  <p class="para-lg">Gold</p>
-    <li><a href="{{ site.baseurl }}/case-studies/elko-and-eureka">Elko and Eureka Counties, Nevada</a></li>
-    <li><a href="{{ site.baseurl }}/case-studies/humboldt-and-lander/">Humboldt and Lander Counties, Nevada</a></li>
-  </ul>
-  <ul>
-  <p class="para-lg">Iron</p>
-    <li><a href="{{ site.baseurl }}/case-studies/marquette">Marquette County, Michigan</a></li>
-    <li><a href="{{ site.baseurl }}/case-studies/st-louis/">St. Louis County, Minnesota</a></li>
-  </ul>
-  <ul>
-  <p class="para-lg">Gas</p>
-    <li><a href="{{ site.baseurl }}/case-studies/desoto">DeSoto Parish, Louisiana</a></li>
-    <li><a href="{{ site.baseurl }}/case-studies/tarrant-and-johnson/">Tarrant &amp; Johnson Counties, Texas</a></li>
-  </ul>
-  <ul>
-  <p class="para-lg">Oil</p>
-    <li><a href="{{ site.baseurl }}/case-studies/kern">Kern County, California</a></li>
-    <li><a href="{{ site.baseurl }}/case-studies/north-slope">North Slope Borough, Alaska</a></li>
-  </ul>
-</ul>
-
-#### Or, read more about how to interpret these studies: -->
 
 <h3><a name="reven" class="case_studies_content-heading js-cs_section">Revenue sustainability</a></h3>
 

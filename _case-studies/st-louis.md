@@ -5,7 +5,7 @@ permalink: /case-studies/st-louis/
 resource: iron
 nav_items:
   - name: intro
-    title: Introduction
+    title: Top
   - name: geolo
     title: Geology and history
   - name: produ
@@ -111,4 +111,3 @@ The table below highlights data sources used to compile this narrative, as well 
 [^16]: Minnesota Department of Natural Resources, [Mineland Reclamation](http://www.dnr.state.mn.us/lands_minerals/mineland_reclamation/index.html)
 [^17]: Ibid.
 [^18]: Minnesota Department of Natural Resources, [Where Funds are Spent (PDF)](http://files.dnr.state.mn.us/aboutdnr/budget/fy12-13/budget_spent.pdf), 2012–2013, p. 3
-

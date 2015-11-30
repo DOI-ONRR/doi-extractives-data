@@ -5,7 +5,7 @@ permalink: /case-studies/marquette/
 resource: iron
 nav_items:
   - name: intro
-    title: Introduction
+    title: Top
   - name: geolo
     title: Geology and history
   - name: produ
@@ -99,4 +99,3 @@ The table below highlights the data sources used to compile this narrative, as w
 [^10]: [Marquette County Administrator’s 2013 Budget Summary (PDF)](http://www.co.marquette.mi.us/departments/administrator/docs/Budget2013/ADM_SUMMARY.pdf), p. 2
 [^11]: Ibid.
 [^12]: Ibid.
-

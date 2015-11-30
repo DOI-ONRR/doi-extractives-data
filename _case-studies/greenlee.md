@@ -5,7 +5,7 @@ permalink: /case-studies/greenlee/
 resource: copper
 nav_items:
   - name: intro
-    title: Introduction
+    title: Top
   - name: geolo
     title: Geology and history
   - name: produ
@@ -103,4 +103,3 @@ The table below highlights data sources used to compile this narrative, as well 
 [^14]: Arizona Department of Revenue, [June 2012 Tax Facts (PDF)](http://www.azdor.gov/Portals/0/TaxFacts/0612Taxfact.pdf), p. 7
 [^15]: Greenlee County, Arizona, [Annual Financial Report](http://azmemory.azlibrary.gov/cdm/ref/collection/statepubs/id/15685), FY 2013, p. 10
 [^16]: [Southern Greenlee County Small Area Transportation Study, Addendum to Transportation Plan (PDF)](http://www.co.greenlee.az.us/engineering/roads/Greenlee%20Addendum%20Final%20Report%200809.pdf), p. 5
-

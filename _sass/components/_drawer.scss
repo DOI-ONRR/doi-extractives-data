@@ -39,6 +39,10 @@
     color: $white;
   }
 
+  label {
+    @include font-size(0.875);
+  }
+
   &[aria-hidden=true],
   &[aria-expanded=false] {
     display: block;

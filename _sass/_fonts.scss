@@ -96,6 +96,7 @@ $icon-plus-sm: '\0052';
 $icon-gas: '\0053';
 $icon-chevron-lg: '\0054';
 $icon-search: '\0055';
+$icon-bars: '\0056';
 $icon-iron: '\0057';
 
 .icon-gold:before { content: $icon-gold; }
@@ -125,6 +126,7 @@ $icon-iron: '\0057';
   content: $icon-chevron-lg;
 }
 .icon-search:before { content: $icon-search; }
+.icon-bars:before { content: $icon-bars; }
 .icon-iron:before { content: $icon-iron; }
 .icon-chevron-sm-left:before,
 .icon-chevron-lg-left:before {
@@ -139,31 +141,3 @@ $icon-iron: '\0057';
   @include rotate(270deg, 3);
 }
 
-
-.icon-bars {
-  background-color: $black;
-  border-radius: $base-border-radius;
-  float: right;
-  height: 5px;
-  position: relative;
-  width: 30px;
-
-  &:after,
-  &:before {
-    background-color: $black;
-    border-radius: $base-border-radius;
-    content: '';
-    float: right;
-    height: 5px;
-    position: relative;
-    width: 100%;
-  }
-
-  &:after {
-    top: 15px;
-  }
-
-  &:before {
-    top: 10px;
-  }
-}

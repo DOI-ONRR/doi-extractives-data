@@ -3129,7 +3129,6 @@ Year	Region	Commodity	Type	Revenue
 2004	CGM	NGL	Royalties	142680603.77
 2004	CGM	Oil	Royalties	1031425873.05
 2004	CGM	Other	Royalties	20883.00
-2004	GUL	Sulfur	Other Revenue	22221.06
 2004	EGM	Oil & Gas	Rents	6527035.22
 2004	EGM	Oil & Gas	Bonus	8376765.00
 2004	EGM	Oil & Gas	Other Revenue	399000.00
@@ -3142,8 +3141,6 @@ Year	Region	Commodity	Type	Revenue
 2004	WGM	Gas	Royalties	952608852.07
 2004	WGM	NGL	Royalties	15122835.33
 2004	WGM	Oil	Royalties	132700089.70
-2004	GUL	Oil & Gas	Other Revenue	0.01
-2004	GUL	Gas	Royalties	-28132646.40
 2004	SOC	Oil & Gas	Other Revenue	8574677.67
 2004	SOC	Oil & Gas	Rents	-49972.00
 2004	SOC	Gas	Royalties	27046120.62
@@ -3159,7 +3156,6 @@ Year	Region	Commodity	Type	Revenue
 2005	CGM	Gas	Royalties	2349752471.83
 2005	CGM	NGL	Royalties	117160195.42
 2005	CGM	Oil	Royalties	1726905554.58
-2005	GUL	Sulfur	Other Revenue	10547.43
 2005	CGM	Other	Royalties	22007.88
 2005	EGM	Oil & Gas	Rents	6407477.71
 2005	EGM	Oil & Gas	Bonus	6501059.00
@@ -3172,7 +3168,6 @@ Year	Region	Commodity	Type	Revenue
 2005	WGM	Gas	Royalties	892181641.36
 2005	WGM	NGL	Royalties	24813971.54
 2005	WGM	Oil	Royalties	332624860.04
-2005	GUL	Gas	Royalties	-19340329.42
 2005	SOC	Oil & Gas	Other Revenue	-1013240.52
 2005	SOC	Gas	Royalties	31437272.94
 2005	SOC	NGL	Royalties	1654526.93
@@ -3186,7 +3181,6 @@ Year	Region	Commodity	Type	Revenue
 2006	CGM	Gas	Royalties	2227236503.07
 2006	CGM	NGL	Royalties	129074678.20
 2006	CGM	Oil	Royalties	2809107965.89
-2006	GUL	Sulfur	Other Revenue	10838.00
 2006	CGM	Other	Royalties	13180.56
 2006	CGM	Oil & Gas	Royalties	-3.76
 2006	EGM	Oil & Gas	Rents	5239051.91
@@ -3200,7 +3194,6 @@ Year	Region	Commodity	Type	Revenue
 2006	WGM	Gas	Royalties	785438099.95
 2006	WGM	NGL	Royalties	23139031.65
 2006	WGM	Oil	Royalties	565244312.35
-2006	GUL	Gas	Royalties	-10622983.51
 2006	SOC	Oil & Gas	Other Revenue	24333.65
 2006	SOC	Gas	Royalties	31785770.08
 2006	SOC	NGL	Royalties	841056.77
@@ -3215,7 +3208,6 @@ Year	Region	Commodity	Type	Revenue
 2007	CGM	Oil	Royalties	2991844269.93
 2007	CGM	Gas	Royalties	1955064948.55
 2007	CGM	NGL	Royalties	194386333.52
-2007	GUL	Sulfur	Other Revenue	11624.84
 2007	CGM	Other	Royalties	3708.41
 2007	EGM	Oil & Gas	Rents	6081576.99
 2007	EGM	Gas	Royalties	19787073.23
@@ -3228,7 +3220,6 @@ Year	Region	Commodity	Type	Revenue
 2007	WGM	Gas	Royalties	575651539.48
 2007	WGM	NGL	Royalties	27011533.01
 2007	WGM	Oil	Royalties	435322717.24
-2007	GUL	Gas	Royalties	-15241002.97
 2007	SOC	Oil & Gas	Other Revenue	-96759.41
 2007	SOC	Gas	Royalties	30262307.00
 2007	SOC	NGL	Royalties	968529.43
@@ -3244,7 +3235,6 @@ Year	Region	Commodity	Type	Revenue
 2008	CGM	Gas	Royalties	2071523503.48
 2008	CGM	NGL	Royalties	225923706.37
 2008	CGM	Oil	Royalties	3729878006.16
-2008	GUL	Sulfur	Other Revenue	12709.04
 2008	CGM	Other	Royalties	65625.39
 2008	EGM	Oil & Gas	Rents	7247395.31
 2008	EGM	Oil & Gas	Other Revenue	3239483.00
@@ -3258,7 +3248,6 @@ Year	Region	Commodity	Type	Revenue
 2008	WGM	Gas	Royalties	602756261.13
 2008	WGM	NGL	Royalties	36810352.58
 2008	WGM	Oil	Royalties	498656389.00
-2008	GUL	Gas	Royalties	-15053958.12
 2008	SOC	Oil & Gas	Other Revenue	-2463169.11
 2008	SOC	Oil & Gas	Rents	18432.00
 2008	SOC	Gas	Royalties	32727187.98
@@ -3275,7 +3264,6 @@ Year	Region	Commodity	Type	Revenue
 2009	CGM	Gas	Royalties	683643896.18
 2009	CGM	NGL	Royalties	87295799.93
 2009	CGM	Oil	Royalties	1884591856.51
-2009	GUL	Sulfur	Other Revenue	12631.84
 2009	CGM	Other	Royalties	12425.40
 2009	EGM	Gas	Royalties	91932610.76
 2009	EGM	Oil	Royalties	414863.03
@@ -3287,7 +3275,6 @@ Year	Region	Commodity	Type	Revenue
 2009	WGM	Gas	Royalties	-10412797.45
 2009	WGM	NGL	Royalties	14957792.72
 2009	WGM	Oil	Royalties	262243271.59
-2009	GUL	Gas	Royalties	-6292220.39
 2009	SOC	Oil & Gas	Other Revenue	678504.46
 2009	SOC	Oil & Gas	Rents	-18432.00
 2009	SOC	Gas	Royalties	15412992.64
@@ -3304,7 +3291,6 @@ Year	Region	Commodity	Type	Revenue
 2010	CGM	Gas	Royalties	812352986.58
 2010	CGM	NGL	Royalties	180175984.28
 2010	CGM	Oil	Royalties	3544051465.58
-2010	GUL	Sulfur	Other Revenue	12551.32
 2010	CGM	Other	Royalties	-14280.90
 2010	EGM	Oil & Gas	Rents	6081889.60
 2010	EGM	Gas	Royalties	-21132146.59
@@ -3317,8 +3303,6 @@ Year	Region	Commodity	Type	Revenue
 2010	WGM	NGL	Royalties	41242431.62
 2010	WGM	Oil	Royalties	395065542.54
 2010	WGM	Oil & Gas	Bonus	1350430.00
-2010	GUL	Oil & Gas	Other Revenue	8666.07
-2010	GUL	Gas	Royalties	-10023572.21
 2010	SOC	Oil & Gas	Other Revenue	-130414.05
 2010	SOC	Gas	Royalties	15525394.25
 2010	SOC	NGL	Royalties	119516.72
@@ -3334,7 +3318,6 @@ Year	Region	Commodity	Type	Revenue
 2011	CGM	NGL	Royalties	224613349.59
 2011	CGM	Oil	Royalties	4367522329.43
 2011	CGM	Oil & Gas	Bonus	36751111.00
-2011	GUL	Sulfur	Other Revenue	12670.72
 2011	CGM	Other	Royalties	3777.12
 2011	EGM	Oil & Gas	Rents	5585508.97
 2011	EGM	Oil & Gas	Other Revenue	-1473519.12
@@ -3361,7 +3344,6 @@ Year	Region	Commodity	Type	Revenue
 2012	CGM	NGL	Royalties	182180940.51
 2012	CGM	Oil	Royalties	4345810041.50
 2012	CGM	Oil & Gas	Royalties	-2.00
-2012	GUL	Sulfur	Other Revenue	12429.60
 2012	CGM	Other	Royalties	4267.84
 2012	EGM	Oil & Gas	Rents	5945421.54
 2012	EGM	Oil & Gas	Other Revenue	30625.59
@@ -3373,7 +3355,6 @@ Year	Region	Commodity	Type	Revenue
 2012	WGM	Gas	Royalties	83237470.94
 2012	WGM	NGL	Royalties	41317949.20
 2012	WGM	Oil	Royalties	642341184.51
-2012	GUL	Gas	Royalties	-56804.14
 2012	SOC	Oil & Gas	Other Revenue	131633.98
 2012	SOC	Gas	Royalties	5795627.79
 2012	SOC	NGL	Royalties	811638.16
@@ -3392,7 +3373,6 @@ Year	Region	Commodity	Type	Revenue
 2013	CGM	Gas	Royalties	391344715.30
 2013	CGM	NGL	Royalties	134619869.04
 2013	CGM	Oil	Royalties	4650164398.76
-2013	GUL	Sulfur	Other Revenue	11186.00
 2013	CGM	Other	Royalties	4122.09
 2013	EGM	Oil & Gas	Rents	3385930.62
 2013	EGM	Oil	Royalties	106605.03

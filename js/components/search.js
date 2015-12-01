@@ -36,7 +36,7 @@ $( document ).ready(function() {
         else{
           $("#search-no-results").remove();
         }
-          
+
         $.each(json.hits.hits, function(i, hit){
 
         var result_description = hit._source.description;
@@ -44,7 +44,7 @@ $( document ).ready(function() {
           var tags = '';
           if(hit._source.tag) {
             $.each(hit._source.tag, function(i, tag) {
-              tags+='&nbsp;<a href="../search/?q=' + tag + '" title="Search for '+tag+'">' + tag + '</a>&nbsp;/'
+              tags+='&nbsp;<a href="../search-results/?q=' + tag + '" title="Search for '+tag+'">' + tag + '</a>&nbsp;/'
             });
           }
 

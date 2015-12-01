@@ -2,11 +2,7 @@
 <select onchange="window.location = '{{site.baseurl}}{{ page.permalink }}#' + this.value">
   {% if page.nav_items %}
   	{% for item in page.nav_items %}
-      {% if item.name == page.nav_items[0].name %}
-        <option selected value="{{item.name}}">{{item.title}}</option>
-      {% else %}
         <option value="{{item.name}}">{{item.title}}</option>
-      {% endif %}
     {% endfor %}
   {% endif %}
 </select>

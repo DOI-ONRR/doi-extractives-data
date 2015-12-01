@@ -60,7 +60,6 @@
   findScrollPositions();
   stickyNav.setPositions();
   stickyNav.update();
-  console.log(stickyNav)
 
   window.addEventListener('scroll', function() {
     findScrollPositions();

@@ -23,7 +23,6 @@
     };
 
     var attrStickyOffset = this.elems.sticky.getAttribute('data-sticky-offset');
-    console.log(attrStickyOffset)
     this.offset = attrStickyOffset
       ? parseInt(attrStickyOffset)
       : this.elems.sticky.offsetTop;

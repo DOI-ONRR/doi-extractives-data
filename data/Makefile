@@ -39,6 +39,10 @@ GDP_FILES = \
 	gdp/US.tsv \
 	gdp/states.tsv
 
+JOBS_FILES = \
+	jobs/wage-salary.tsv \
+	jobs/self-employment.tsv
+
 # a list of all of the individual files to build.
 # unless otherwise noted, all of these files are broken
 # down by year and commodity
@@ -46,8 +50,9 @@ FILES = \
 	$(REVENUE_FILES) \
 	$(PRODUCTION_FILES) \
 	$(EXPORT_FILES) \
-	geo svg \
-	$(GDP_FILES)
+	$(GDP_FILES) \
+	$(JOBS_FILES) \
+	geo svg
 
 all: $(FILES)
 
@@ -58,6 +63,11 @@ production: $(PRODUCTION_FILES)
 exports: $(EXPORT_FILES)
 
 gdp: $(GDP_FILES)
+
+jobs: $(JOBS_FILES)
+
+jobs/wage-salary.tsv:
+	bin/parse-bls.js _input/bls/*.csv > $@
 
 # national revenues by commodity and revenue type
 national/revenues.tsv: state/revenues.tsv offshore/revenues.tsv
@@ -83,6 +93,16 @@ gdp/US.tsv:
 gdp/regional.tsv:
 	mkdir -p $(dir $@)
 	bin/get-bea-regional.js | \
+		bin/abbr-state.js \
+			--if tsv \
+			--of tsv \
+			--states $(input)geo/states.csv \
+			--field Region \
+			> $@
+
+jobs/self-employment.tsv:
+	mkdir -p $(dir $@)
+	bin/get-bea-jobs.js | \
 		bin/abbr-state.js \
 			--if tsv \
 			--of tsv \

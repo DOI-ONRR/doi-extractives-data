@@ -1,4 +1,4 @@
-$nav-drawer-height: 621px;
+$nav-drawer-height: 593px;
 
 #nav-drawer {
   @include transition(right, 0.3s);
@@ -26,7 +26,9 @@ $nav-drawer-height: 621px;
     bottom: initial;
   }
 
-
+  #drawer-search {
+    @include font-size(0.875);
+  }
 }
 
 .nav_drawer-nav {
@@ -36,6 +38,8 @@ $nav-drawer-height: 621px;
 }
 
 .nav_drawer-nav_item {
+  @include heading('para-md');
+
   font-weight: $weight-bold;
   letter-spacing: 2px;
   padding-bottom: $base-padding-large;
@@ -44,21 +48,19 @@ $nav-drawer-height: 621px;
   &:last-of-type {
     padding-bottom: $base-padding;
   }
-
-  &.active {
-    text-decoration: underline;
-  }
 }
 
 .nav_drawer-nav_item_bottom {
   font-weight: $weight-light;
   letter-spacing: initial;
+  padding-bottom: $base-padding;
   text-transform: capitalize;
 }
 
 .nav_drawer-break {
   border-bottom: 1px solid $white;
-  margin-bottom: $base-padding-large;
+  padding-bottom: $base-padding-large + ($base-padding / 2);
+  margin-bottom: $base-padding-large + ($base-padding / 2);
 }
 
 

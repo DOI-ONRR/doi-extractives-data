@@ -156,7 +156,7 @@
         .datum({
           data: first,
           value: first.Value,
-          share: first.Share / 100, // XXX
+          share: first.Share, // XXX
           properties: {
             name: regionId === 'US' ? 'Nationwide' : 'Total'
           }
@@ -189,7 +189,7 @@
           var d = dataByFeatureId[id];
           f.data = d;
           f.value = d ? d.Value : undefined;
-          f.share = d ? d.Share / 100 : undefined; // XXX
+          f.share = d ? d.Share : undefined; // XXX
         });
 
         var percent = state.get('units') === 'percent';

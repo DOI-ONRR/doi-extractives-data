@@ -156,6 +156,7 @@ header,
     @include font-size(0.65);
 
     border-bottom-right-radius: 0;
+    border-color: $neutral-gray;
     border-right: none;
     border-top-right-radius: 0;
     color: $dark-gray;
@@ -174,21 +175,12 @@ header,
 
   .header-nav_search_icon {
     background-color: $blue;
-    border: 1px solid $dark-gray;
-    border-bottom-right-radius: $base-border-radius;
-    border-top-right-radius: $base-border-radius;
+    border-radius: 0 $base-border-radius $base-border-radius 0;
     color: $white;
     cursor: pointer;
     float: right;
-    height: 100%;
-    padding: 0.13rem;
-    padding-left: 0.64rem;
+    padding: 0.42rem;
     width: 37px;
-
-    @include respond-to(large-up) {
-      padding: 0.22rem;
-      padding-left: 0.64rem;
-    }
   }
 }
 

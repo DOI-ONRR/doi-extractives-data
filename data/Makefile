@@ -40,7 +40,8 @@ GDP_FILES = \
 	gdp/states.tsv
 
 JOBS_FILES = \
-	jobs/wage-salary.tsv
+	jobs/wage-salary.tsv \
+	jobs/self-employment.tsv
 
 # a list of all of the individual files to build.
 # unless otherwise noted, all of these files are broken
@@ -92,6 +93,16 @@ gdp/US.tsv:
 gdp/regional.tsv:
 	mkdir -p $(dir $@)
 	bin/get-bea-regional.js | \
+		bin/abbr-state.js \
+			--if tsv \
+			--of tsv \
+			--states $(input)geo/states.csv \
+			--field Region \
+			> $@
+
+jobs/self-employment.tsv:
+	mkdir -p $(dir $@)
+	bin/get-bea-jobs.js | \
 		bin/abbr-state.js \
 			--if tsv \
 			--of tsv \

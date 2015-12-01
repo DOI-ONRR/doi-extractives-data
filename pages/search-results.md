@@ -35,10 +35,10 @@ permalink: /search-results/
           </form>
         </div>
 
-        <p>Or, try one of these popular searches 
-          / <a href="../search/?q=energy" title="Search for energy">energy</a> /
-          <a href="../search/?q=oil" title="Search for oil">oil</a> /
-          <a href="../search/?q=conservation" title="Search for conservation">conservation</a> /
+        <p>Or, try one of these popular searches
+          / <a href="../search-results/?q=energy" title="Search for energy">energy</a> /
+          <a href="../search-results/?q=oil" title="Search for oil">oil</a> /
+          <a href="../search-results/?q=conservation" title="Search for conservation">conservation</a> /
         </p>
       </div>
 

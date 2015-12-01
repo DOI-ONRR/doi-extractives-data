@@ -53,7 +53,6 @@ A number of state-level resources, which are listed below, shed light on Humbold
 <ul>
 	<li><a href="http://www.nevadadot.com/Documents/Reports_and_Publications.aspx">Nevada Department of Transportation: Reports and Publications</a></li>
 	<li><a href="http://ndep.nv.gov/bmrr/cost.htm">Nevada Bureau of Mining Regulation & Reclamation Cost Estimator</a></li>
-	<li>Nevada Department of Health and Human Services EMS Assessment</a></li>
 </ul>
 
 <h3><a name="data" class="case_studies_content-heading js-cs_section">Data availability</a></h3>

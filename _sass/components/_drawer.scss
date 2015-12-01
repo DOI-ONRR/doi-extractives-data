@@ -78,6 +78,7 @@
   border: none;
 
   @include placeholder() {
+    color: $neutral-gray;
     font-style: italic;
   }
 }

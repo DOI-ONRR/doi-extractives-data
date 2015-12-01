@@ -1,0 +1,7 @@
+.hash_selector {
+	display: inline-block;
+
+	@include respond-to(medium-up) {
+		display: none;
+	}
+}

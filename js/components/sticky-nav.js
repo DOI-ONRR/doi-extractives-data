@@ -21,8 +21,14 @@
       sticky : document.querySelector('.sticky_nav'),
       main: document.querySelector('main')
     };
+
+    var attrStickyOffset = this.elems.sticky.getAttribute('data-sticky-offset');
+    console.log(attrStickyOffset)
+    this.offset = attrStickyOffset
+      ? parseInt(attrStickyOffset)
+      : this.elems.sticky.offsetTop;
     this.height = this.elems.sticky.clientHeight;
-    this.offset = this.elems.sticky.offsetTop;
+
   };
 
   StickyNav.prototype = {
@@ -31,6 +37,7 @@
       this.mainHeight = this.elems.main.clientHeight;
       this.diffTop = scrollTop - this.mainOffset - this.offset;
       this.diffBottom = scrollTop + this.height - this.mainHeight - this.mainOffset;
+
     },
     update: function(){
       if (this.diffTop >= 0){
@@ -54,6 +61,7 @@
   findScrollPositions();
   stickyNav.setPositions();
   stickyNav.update();
+  console.log(stickyNav)
 
   window.addEventListener('scroll', function() {
     findScrollPositions();

@@ -5,32 +5,20 @@ layout: default
 <section class="container-outer container-padded">
 
 	<article class="container-left-7">
-
 		  {{content | markdownify}}
 
 	</article>
 
-	<div class="container-right-5 sticky_nav">
+	<div class="container-right-5">
 
+	<div class="sticky_nav" data-sticky-offset="50">
 	  <nav class="sticky_nav-nav">
-
-	    <ul>
-	      {% if page.nav_items %}
-	      	{% for item in page.nav_items %}
-		        {% if item.name == page.nav_items[0].name %}
-		          <li class="sticky_nav-nav_item js-cs_nav_item active {{item.name}}"><a href="#{{item.name}}">{{item.title}}</a></li>
-		        {% else %}
-		          <li class="sticky_nav-nav_item js-cs_nav_item {{item.name}}"><a href="#{{item.name}}">{{item.title}}</a></li>
-		        {% endif %}
-		      {% endfor %}
-	      {% endif %}
-	    </ul>
-
+		  {% include hash_selector.html %}
 	  </nav>
+  </div>
 
 	</div>
 
 </section>
 
-
-<script src="{{ site.baseurl }}/js/pages/case-studies.js"></script>
+<script src="{{ site.baseurl }}/js/components/sticky-nav.js"></script>

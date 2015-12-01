@@ -80,6 +80,7 @@
 
 #drawer-search {
   border: none;
+  margin-top: 0;
 
   @include placeholder() {
     color: $neutral-gray;
@@ -103,6 +104,7 @@ input.drawer-search_field {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
   float: right;
+  height: 34px;
   position: relative;
   width: 14%;
 }

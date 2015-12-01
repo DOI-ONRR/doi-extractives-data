@@ -4,7 +4,7 @@ layout: default
 permalink: /search-results/
 ---
 
-<div class="container-outer container-padded">
+<div class="container-outer">
 
   <div class="container-left-7">
 
@@ -14,12 +14,12 @@ permalink: /search-results/
 
     <div id="search-results-container">
 
-      <div class="container search-header">
+      <div class="search-header">
         <p>Search results for <strong class='search-string'></strong></p>
         <p id="search-results-count"></p>
       </div>
 
-      <div class="container" id="search-results-container">
+      <div id="search-results-container">
         <h1 class="loading">Loading...</h1>
       </div>
 
@@ -42,7 +42,7 @@ permalink: /search-results/
         </p>
       </div>
 
-      <div class="container">
+      <div class="search-credit">
         <p class="credit">Search powered by <a href="https://github.com/18F/beckley">Beckley Beta</a></p>
       </div>
 

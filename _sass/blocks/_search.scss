@@ -1,5 +1,10 @@
 // Search
 
+.search-intro {
+  line-height: 1.3;
+  padding-bottom: $base-padding;
+}
+
 .search-container {
   display: inline-block;
 
@@ -31,4 +36,33 @@
     padding: 0.42rem;
     width: 37px;
   }
+}
+
+.search-header {
+
+  p {
+    &:first-of-type,
+    &:last-of-type {
+      @include span-columns(6 of 12);
+    }
+
+    &:last-of-type {
+      text-align: right;
+    }
+  }
+}
+
+.search-results-container {
+  @include span-columns(7 of 7);
+}
+
+.search-result-list {
+
+    @include span-columns(7 of 7);
+  margin-bottom: $base-padding-extra;
+}
+
+.search-credit {
+
+    @include span-columns(7 of 7);
 }

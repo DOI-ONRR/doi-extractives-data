@@ -2,11 +2,27 @@
 
 .search-intro {
   line-height: 1.3;
-  padding-bottom: $base-padding;
+  padding-bottom: $base-padding-lite;
+}
+
+.search-header {
+  padding-bottom: $base-padding-extra;
+
+  p {
+    &:first-of-type,
+    &:last-of-type {
+      @include span-columns(6 of 12);
+    }
+
+    &:last-of-type {
+      text-align: right;
+    }
+  }
 }
 
 .search-container {
   display: inline-block;
+  padding-bottom: 20px;
 
   input[type="search"] {
     @include font-size(0.65);
@@ -38,31 +54,24 @@
   }
 }
 
-.search-header {
-
-  p {
-    &:first-of-type,
-    &:last-of-type {
-      @include span-columns(6 of 12);
-    }
-
-    &:last-of-type {
-      text-align: right;
-    }
-  }
-}
-
 .search-results-container {
-  @include span-columns(7 of 7);
+  @include span-columns(8 of 8);
 }
 
 .search-result-list {
-
-    @include span-columns(7 of 7);
+  @include span-columns(8 of 8);
   margin-bottom: $base-padding-extra;
 }
 
 .search-credit {
+    @include span-columns(8 of 8);
+}
 
-    @include span-columns(7 of 7);
+.search-no-results {
+  padding-bottom: $base-padding-extra;
+
+  h2 {
+    font-weight: $weight-book;
+    margin-bottom: 0;
+  }
 }

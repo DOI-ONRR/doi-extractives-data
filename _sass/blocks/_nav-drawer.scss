@@ -24,6 +24,7 @@ $nav-drawer-height: 593px;
 
   @media only screen and (min-height: $nav-drawer-height) {
     bottom: initial;
+    overflow: hidden;
   }
 
   #drawer-search {

@@ -39,6 +39,9 @@ GDP_FILES = \
 	gdp/US.tsv \
 	gdp/states.tsv
 
+JOBS_FILES = \
+	jobs/wage-salary.tsv
+
 # a list of all of the individual files to build.
 # unless otherwise noted, all of these files are broken
 # down by year and commodity
@@ -46,8 +49,9 @@ FILES = \
 	$(REVENUE_FILES) \
 	$(PRODUCTION_FILES) \
 	$(EXPORT_FILES) \
-	geo svg \
-	$(GDP_FILES)
+	$(GDP_FILES) \
+	$(JOBS_FILES) \
+	geo svg
 
 all: $(FILES)
 
@@ -58,6 +62,11 @@ production: $(PRODUCTION_FILES)
 exports: $(EXPORT_FILES)
 
 gdp: $(GDP_FILES)
+
+jobs: $(JOBS_FILES)
+
+jobs/wage-salary.tsv:
+	bin/parse-bls.js _input/bls/*.csv > $@
 
 # national revenues by commodity and revenue type
 national/revenues.tsv: state/revenues.tsv offshore/revenues.tsv

@@ -156,7 +156,7 @@
         .datum({
           data: first,
           value: first.Value,
-          share: first.Share, // XXX
+          share: first.Share / 100, // XXX
           properties: {
             name: regionId === 'US' ? 'Nationwide' : 'Total'
           }
@@ -189,7 +189,7 @@
           var d = dataByFeatureId[id];
           f.data = d;
           f.value = d ? d.Value : undefined;
-          f.share = d ? d.Share : undefined; // XXX
+          f.share = d ? d.Share / 100 : undefined; // XXX
         });
 
         var percent = state.get('units') === 'percent';
@@ -395,7 +395,7 @@
 
   function getFields(state) {
     var fields = {
-      region: 'Region',
+      region: 'State',
       value: state.get('units') === 'percent'
         ? 'Share'
         : 'Value',
@@ -605,7 +605,6 @@
     }
 
     function applyFilters(data, state, done) {
-
       // coerce strings to numbers
       data.forEach(function(d) {
         d.Value = +d.Value;

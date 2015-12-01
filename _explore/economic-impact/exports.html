@@ -135,7 +135,7 @@ permalink: /explore/exports/
           </select>
         </div>
         <div class="container-left">
-          <label for="year-selector">GDP by Year</label>
+          <label for="year-selector">Exports by Year</label>
         </div>
         <div class="filter container">
           <svg id="timeline" class="timeline" viewBox="0 0 1024 60"></svg>
@@ -143,7 +143,7 @@ permalink: /explore/exports/
 
         <div class="filter container">
           <eiti-slider id="year-selector" name="year"
-            min="2004" max="2013" snap="1" value="2013">
+            min="2011" max="2014" snap="1" value="2013">
           </eiti-slider>
         </div>
 
@@ -161,7 +161,7 @@ permalink: /explore/exports/
   <div class="slab-alpha">
     <div class="container-outer">
       <h1 id="filter-description" class="filter-description">
-        GDP from extractives in
+        Exports from extractives in
         <a href="#region-selector" class="filter-part" data-key="region">the entire U.S.</a>
         (<a href="#year-selector" class="filter-part" data-key="year">2013</a>)
       </h1>
@@ -186,7 +186,7 @@ permalink: /explore/exports/
           <div class="map-legend"></div>
         </div>
 
-        <h3 class="region-header-category">GDP by state</h3>
+        <h3 class="region-header-category">Exports by state</h3>
         <table class="subregions">
           <thead class="region-header"></thead>
           <tbody></tbody>
@@ -209,7 +209,7 @@ permalink: /explore/exports/
           <div class="map-legend"></div>
         </div>
 
-        <h3 class="region-header-category">GDP in {{ region.name }}</h3>
+        <h3 class="region-header-category">Exports in {{ region.name }}</h3>
         <table class="subregions">
           <thead class="region-header"></thead>
           <tbody></tbody>

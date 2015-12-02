@@ -26,7 +26,7 @@ permalink: /explore/
 		<a id="production" class="link-no_under"><h3 class="landing-section_category">Production</h3></a>
 		<div class="container-half landing-section" accordion-item accordion-open="true">
 			<h5 class="landing-heading"><a href="{{site.baseurl}}/explore/all-lands-production/">All lands and waters</a></h5>
-			<button class="accordion-button" accordion-button></button>
+			<button class="accordion-button" accordion-button title="Toggle for all lands production"></button>
 			<div class="accordion-content">
 				<p class="landing-description">In 2013, total U.S. energy production from oil, gas, mining, and renewables reached 73.67 quadrillion British thermal units (Btus). Wind power produced the largest amount of renewable energy compared with solar and geothermal sources. <a href="{{site.baseurl}}/explore/all-lands-production/">Explore production on all U.S. lands and waters from 2004 to 2013 by state and county for oil, gas, coal, and renewables &#8594;</a></p>
 				<a href="{{site.baseurl}}/explore/all-lands-production/">
@@ -36,7 +36,7 @@ permalink: /explore/
 		</div>
 		<div class="container-half landing-section" accordion-item accordion-open="true">
 			<h5 class="landing-heading"><a href="{{site.baseurl}}/explore/federal-production/">Federal lands and waters</a></h5>
-			<button class="accordion-button" accordion-button></button>
+			<button class="accordion-button" accordion-button title="Toggle for federal production"></button>
 			<div class="accordion-content">
 				<p class="landing-description">Revenue from extractive industries on federal lands totaled approximately $13.4 billion, or 0.4% of total $3,396.9 billion in revenue collected across the federal government. <a href="{{site.baseurl}}/explore/federal-production/">Explore production on federal lands and waters from 2005 to 2014 by state and county for 28 individual products &#8594;</a></p>
 				<a href="{{site.baseurl}}/explore/federal-production/">
@@ -49,7 +49,7 @@ permalink: /explore/
 		<a id="revenue" class="link-no_under"><h3 class="landing-section_category">Revenue</h3></a>
 		<div class="container-half landing-section" accordion-item accordion-open="true">
 			<h5 class="landing-heading"><a href="{{site.baseurl}}/explore/federal-revenue-by-location/">Federal revenue by location</a></h5>
-			<button class="accordion-button" accordion-button></button>
+			<button class="accordion-button" accordion-button title="Toggle for federal revenue by location"></button>
 			<div class="accordion-content">
 				<p class="landing-description">Text will be here that reflects a summary fact from the data. Perhaps lists top states and county by revenue. <a href="{{site.baseurl}}/explore/federal-revenue-by-location/">Explore revenues on federal lands and waters from 2004 to 2013 by state, county and offshore areas &#8594;</a></p>
 				<!-- <a href="{{site.baseurl}}/explore/federal-revenue-by-location/">Visit this page</a> -->
@@ -60,7 +60,7 @@ permalink: /explore/
 		</div>
 		<div class="container-half landing-section" accordion-item accordion-open="true">
 			<h5 class="landing-heading"><a href="{{site.baseurl}}/explore/federal-revenue-by-company/">Federal revenue by company</a></h5>
-			<button class="accordion-button" accordion-button></button>
+			<button class="accordion-button" accordion-button title="Toggle for federal revenue by company"></button>
 			<div class="accordion-content">
 				<p class="landing-description">Text will be here that reflects a summary fact from the data. Perhaps lists top companies by revenue for a few commodities. <a href="{{site.baseurl}}/explore/federal-revenue-by-company/">Explore revenues on federal lands and waters in 2013 by company and revenue type &#8594;</a></p>
 				<a href="{{site.baseurl}}/explore/federal-revenue-by-company/">
@@ -70,7 +70,7 @@ permalink: /explore/
 		</div>
     <div class="container-half landing-section" accordion-item accordion-open="true">
 			<h5 class="landing-heading"><a href="{{site.baseurl}}/explore/reconciliation/">Reconciliation</a></h5>
-			<button class="accordion-button" accordion-button></button>
+			<button class="accordion-button" accordion-button title="Toggle for reconciliation"></button>
 			<div class="accordion-content">
 				<p class="landing-description">As a part of USEITI, companies report payments to the government (e.g., rents, taxes, royalties) and the government reports what it received. These figures are compiled and reconciled by an independent administrator and published. In the future, this dataset will be interactive. For now, you can <a href="{{site.baseurl}}/explore/reconciliation/">learn about the reconciliation process</a> or <a href="{{site.baseurl}}/downloads/">download the dataset &#8594;</a></p>
 				<a href="{{site.baseurl}}/explore/reconciliation/">
@@ -80,7 +80,7 @@ permalink: /explore/
 		</div>
     <div class="container-half landing-section" accordion-item accordion-open="true">
 			<h5 class="landing-heading"><a href="{{site.baseurl}}/explore/corporate-income-tax/">Corporate income tax</a></h5>
-			<button class="accordion-button" accordion-button></button>
+			<button class="accordion-button" accordion-button title="Toggle for corporate income tax"></button>
 			<div class="accordion-content">
 				<p class="landing-description">Publicly listed companies are required to report tax information in their annual financial statement filings, including cash flows, income statements, and balance sheets. <a href="{{site.baseurl}}/explore/corporate-income-tax/">See information on federal corporate income taxes and data from 2009-2013 &#8594;</a></p>
 				<a href="{{site.baseurl}}/explore/corporate-income-tax/">
@@ -90,7 +90,7 @@ permalink: /explore/
 		</div>
 		<div class="container-half landing-section" accordion-item accordion-open="true">
 			<h5 class="landing-heading"><a href="{{site.baseurl}}/explore/disbursements/">Disbursements</a></h5>
-			<button class="accordion-button" accordion-button></button>
+			<button class="accordion-button" accordion-button title="Toggle for disbursements"></button>
 			<div class="accordion-content">
 				<p class="landing-description">In FY 2013, ONRR disbursed $14.187 billion in revenue earned from extracting natural resources on federal land. <a href="{{site.baseurl}}/explore/disbursements/">Explore how money was disbursed to local governments, conservation and preservation in 2012 and 2013 &#8594;</a></p>
 				<a href="{{site.baseurl}}/explore/disbursements/">
@@ -104,7 +104,7 @@ permalink: /explore/
 		<a id="economic-impact" name="economic-impact" class="link-no_under"><h3 class="landing-section_category">Economic impact</h3></a>
 		<div class="container-half landing-section" accordion-item accordion-open="true">
 			<h5 class="landing-heading"><a href="{{site.baseurl}}/explore/gdp/">Gross Domestic Product</a></h5>
-			<button class="accordion-button" accordion-button></button>
+			<button class="accordion-button" accordion-button title="Toggle for GDP"></button>
 			<div class="accordion-content">
 				<p class="landing-description">The extractive industries account for 2.6% of the economy, outpacing utilities, agriculture, and education services in contribution to national GDP. Another sentence here about top state(s) by dollar amount and percent. <a href="{{site.baseurl}}/explore/gdp/">Explore GDP from 2004 to 2013 by state for extractive industries &#8594;</a></p>
 				<a href="{{site.baseurl}}/explore/gdp/">
@@ -114,7 +114,7 @@ permalink: /explore/
 		</div>
 		<div class="container-half landing-section" accordion-item accordion-open="true">
 			<h5 class="landing-heading"><a href="{{site.baseurl}}/explore/exports/">Exports</a></h5>
-			<button class="accordion-button" accordion-button></button>
+			<button class="accordion-button" accordion-button title="Toggle for exports"></button>
 			<div class="accordion-content">
 				<p class="landing-description">The U.S. exported $137,558 million in petroleum end-use goods, 8.6% of all exports totaling $1,592,784 million. Another sentence here about top state(s) by dollar amount and percent. <a href="{{site.baseurl}}/explore/exports/">Explore extractive industries exports by state from 2011 to 2013 &#8594;</a></p>
 				<a href="{{site.baseurl}}/explore/exports/">
@@ -124,7 +124,7 @@ permalink: /explore/
 		</div>
 		<div class="container-half landing-section" accordion-item accordion-open="true">
 			<h5 class="landing-heading"><a href="{{site.baseurl}}/explore/jobs/">Jobs</a></h5>
-			<button class="accordion-button" accordion-button></button>
+			<button class="accordion-button" accordion-button title="Toggle for jobs"></button>
 			<div class="accordion-content">
 				<p class="landing-description">808,000 people drew wages or salaries from work in the extractive industries in 2013. In addition, there are thousands of self-employed people working across the extractive industries. Another sentence here featuring some of the top states with extractive industries jobs. <a href="{{site.baseurl}}/explore/jobs/">Explore jobs from 2004 to 2013 by state for extractive industries &#8594;</a></p>
 				<a href="{{site.baseurl}}/explore/jobs/">

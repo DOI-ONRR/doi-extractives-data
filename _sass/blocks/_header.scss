@@ -68,8 +68,8 @@ header,
 
   &.header-bars {
     display: inline-block;
-    padding-top: 0;
     padding-bottom: 0;
+    padding-top: 0;
 
     icon {
       @include font-size(1.87);

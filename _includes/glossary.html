@@ -6,9 +6,9 @@
     </button>
   </div>
 
-  <h2 id="drawer-header"><i class="icon-book"></i> Glossary </h2>
+  <h2 class="drawer-header"><i class="icon-book"></i> Glossary </h2>
   <label for="drawer-search" class="label">Filter glossary terms</label>
-  <input id="drawer-search" class="glossary__search" type="search" placeholder="e.g. Revenues">
+  <input class="glossary__search drawer-search" type="search" placeholder="e.g. Revenues">
   <div class="drawer__content" id="glossary-result">
     <ul class="glossary__list js-accordion">
       {% for term in site.data.terms %}

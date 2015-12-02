@@ -12,7 +12,7 @@
   <div class="drawer__content" id="glossary-result">
     <ul class="glossary__list js-accordion">
       {% for term in site.data.terms %}
-      <li id="drawer-list-item" class="drawer__item">
+      <li class="drawer__item">
         <div class="js-accordion_header accordion__header">
           <h5 class="glossary-term">{{term[0]}}</h5>
           <button class="button button--secondary accordion__button js-accordion_button" title="Toggle for {{term[0]}}">

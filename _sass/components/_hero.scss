@@ -27,6 +27,10 @@
   padding-right: $base-padding-large;
   padding-top: $base-padding-jumbo;
 
+  a {
+    color: darken($blue, 3%);
+  }
+
   h3 {
     @include font-size(1.375);
     font-weight: $weight-light;

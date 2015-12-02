@@ -278,6 +278,7 @@ production/all-production.tsv:
 	mkdir -p $(dir $@)
 	bin/group-all-production.js \
 		--sample $(input)eia/commodity/sample.tsv \
+		--dummy $(input)eia/commodity/dummy.tsv \
 		> $@
 
 geo: \

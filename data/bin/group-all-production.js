@@ -4,6 +4,7 @@ var yargs = require('yargs')
   // .describe('natgas', 'The path of the onshore (state) data')
   .describe('naturalgas', 'The path of the offshore area data')
   .describe('sample', 'The path of the offshore area data')
+  .describe('dummy', 'The path of the offshore area data')
   .describe('if', 'input format')
   .default('if', 'tsv')
   .describe('of', 'output format')
@@ -39,22 +40,29 @@ async.parallel({
       tito.createReadStream(options['if']),
       done
     );
+  },
+  dummy: function readDummy(done) {
+    return read(
+      options.dummy,
+      tito.createReadStream(options['if']),
+      done
+    );
   }
 }, function(error, data) {
   if (error) return console.error(error);
 
   var results = [];
   var keys = [];
+  var productionUnits;
   Object.keys(data).forEach(function(commodity) {
     data[commodity].forEach(function(d, index) {
       var newResults = {};
       if (index === 0) {
 
         keys = _.keys(d, function(key,val){
-
           return key;
-
-        })
+        });
+        productionUnits = d['US'];
       }
 
       // console.warn(d, '---', keys)
@@ -64,16 +72,16 @@ async.parallel({
         console.warn(index,val,'->', d[val], '=====')
         // console.warn(d[val], i)
         var newResults = {};
-        if (index > 0) {
-          if (val == 'Region' || !val){ return; }
+        // if (index)
+        // newResults.Production = d[val];
+        if (val == 'Region' || !val || index === 0){ return; }
           newResults.Year = d['Region'];
           newResults.Region = val;
           newResults.Commodity = commodity;
           newResults.Volume = d[val];
-          results.push(newResults);
-        } else {
-          newResults.Production;
-        }
+          newResults.Production = productionUnits;
+        results.push(newResults);
+
 
 
       });

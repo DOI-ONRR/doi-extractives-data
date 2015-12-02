@@ -67,14 +67,14 @@
   padding-right: $base-padding-lite;
 }
 
-#drawer-header {
+.drawer-header {
   i:before {
     padding-left: 0;
     padding-right: $base-padding-lite;
   }
 }
 
-#drawer-search {
+.drawer-search {
   border: none;
 
   &::-webkit-input-placeholder {
@@ -117,4 +117,3 @@
     width: 2rem;
   }
 }
-

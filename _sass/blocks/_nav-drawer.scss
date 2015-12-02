@@ -27,7 +27,7 @@ $nav-drawer-height: 593px;
     overflow: hidden;
   }
 
-  #drawer-search {
+  .drawer-search_field {
     @include font-size(0.875);
   }
 }

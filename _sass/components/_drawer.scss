@@ -71,14 +71,14 @@
   padding-right: $base-padding-lite;
 }
 
-#drawer-header {
+.drawer-header {
   i:before {
     padding-left: 0;
     padding-right: $base-padding-lite;
   }
 }
 
-#drawer-search {
+.drawer-search {
   border: none;
   margin-top: 0;
 
@@ -93,10 +93,12 @@
 }
 
 input.drawer-search_field {
+  border: 0;
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
   display: inline;
   height: 34px;
+  margin-top: 0;
   width: 86%;
 }
 
@@ -133,4 +135,3 @@ input.drawer-search_field {
     width: 2rem;
   }
 }
-

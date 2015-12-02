@@ -6,16 +6,16 @@
     </button>
   </div>
 
-  <h2 id="drawer-header"><i class="icon-book"></i> Glossary </h2>
+  <h2 class="drawer-header"><i class="icon-book"></i> Glossary </h2>
   <label for="drawer-search" class="label">Filter glossary terms</label>
-  <input id="drawer-search" class="glossary__search" type="search" placeholder="e.g. Revenues">
+  <input class="glossary__search drawer-search" type="search" placeholder="e.g. Revenues">
   <div class="drawer__content" id="glossary-result">
     <ul class="glossary__list js-accordion">
       {% for term in site.data.terms %}
-      <li id="drawer-list-item" class="drawer__item">
+      <li class="drawer__item">
         <div class="js-accordion_header accordion__header">
           <h5 class="glossary-term">{{term[0]}}</h5>
-          <button class="button button--secondary accordion__button js-accordion_button">
+          <button class="button button--secondary accordion__button js-accordion_button" title="Toggle for {{term[0]}}">
           <i class="fa fa-chevron-down"></i>
             <span class="js-accordion_text u-visually-hidden" data-show="Show definition" data-hide="Hide definition"></span>
           </button>

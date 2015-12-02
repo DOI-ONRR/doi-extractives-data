@@ -207,7 +207,8 @@
 
       var header = selection.select('.region-header');
       if (header.select('*').empty()) {
-        header.call(createRegionRow);
+        header.append('tr')
+          .call(createRegionRow);
       }
 
       var total = product

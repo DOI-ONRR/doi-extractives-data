@@ -1,0 +1,152 @@
+---
+title: Jobs | Explore Data
+layout: default
+permalink: /explore/jobs/
+---
+<section id="jobs" class="explore-subpage container">
+  <div class="container-left-4">
+    <div class="container-outer">
+      <h5 class="subpage-breadcrumb"><a href="{{ site.baseurl }}/explore/">Explore</a> /</h5>
+      <h1>Jobs</h1>
+
+      <p>TKTKTK.</p>
+
+    </div>
+  </div>
+  <section class="container-right-8">
+    <div class="filters-wrapper slab-foxtrot container">
+      <button class="toggle-filters toggle-desktop" is="eiti-toggle" aria-controls="filters" data-expanded-text="Hide Filters" data-toggler="filters">Show Filters</button>
+
+      <form id="filters" aria-hidden="true" class="filters">
+        <div class="filters-heading">
+          <h3>Filter</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+
+        <div class="container-left-6 filter">
+          <label for="region-selector">Region</label>
+          <select id="region-selector" name="region">
+            <option value="">All U.S.</option>
+            {% for state in site.data.states %}
+            <option value="{{ state.id }}">{{ state.name }}</option>
+            {% endfor %}
+          </select>
+        </div>
+        <div id="figure-filter" class="container-right-6 filter">
+          <!--
+          <label for="figure-selector">Units</label>
+          <div id="figure-selector" class="container">
+            <label class="figure-selector"><input type="radio" name="units" value="dollars">$</label>
+            <label class="figure-selector"><input type="radio" name="units" value="percent">%</label>
+          </div>
+          -->
+          <label for="figure-selector">Job type</label>
+          <select id="figure-selector" name="figure">
+            <option value="wage" selected>wage and salary</option>
+            <option value="self">self-employment</option>
+          </select>
+        </div>
+
+
+        <div class="container-left">
+          <label for="year-selector">Jobs by Year</label>
+        </div>
+        <div class="filter container">
+          <svg id="timeline" class="timeline" viewBox="0 0 1024 60"></svg>
+        </div>
+
+        <div class="filter container">
+          <eiti-slider id="year-selector" name="year"
+            min="2004" max="2013" snap="1" value="2013">
+          </eiti-slider>
+        </div>
+
+      </form>
+
+      <div class="container-outer">
+        <button class="toggle-filters toggle" is="eiti-toggle" aria-controls="filters" data-expanded-text="Hide Filters" data-toggler="filters">Show Filters</button>
+      </div>
+
+    </div>
+
+
+  </div>
+
+  <div class="slab-alpha">
+    <div class="container-outer">
+      <h1 id="filter-description" class="filter-description">
+        Extractives jobs in
+        <a href="#region-selector" class="filter-part" data-key="region">the entire U.S.</a>
+        (<a href="#year-selector" class="filter-part" data-key="year">2013</a>)
+      </h1>
+    </div>
+
+    <div class="regions container">
+
+      <section id="US" class="region active">
+        <div class="map-wrapper">
+          <svg is="eiti-map" id="US-map" class="region-map" simplify="1e-2"
+            preserveAspectRatio="xMidYMid meet"
+            projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/">
+            <g class="onshore states" data-url="us-topology.json"
+              data-object="states"
+              data-id="'US-' + id"
+              data-href="'#?region=' + id"
+              data-title="properties.name"
+              data-mesh="true">
+            </g>
+          </svg>
+
+          <div class="map-legend"></div>
+        </div>
+
+        <h3 class="region-header-category">Jobs by state</h3>
+        <table class="subregions">
+          <thead class="region-header"></thead>
+          <tbody></tbody>
+        </table>
+
+      </section>
+
+      {% for region in site.data.states %}
+      <section id="{{ region.id }}" class="region onshore">
+        <div class="map-wrapper">
+          <svg is="eiti-map" id="{{ region.id }}-map" class="region-map" simplify="1e-2"
+            preserveAspectRatio="xMidYMid meet"
+            projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/" zoom-to="{{ region.id }}">
+            <g class="onshore states" data-url="us-topology.json"
+              data-object="states"
+              data-filter="id === '{{ region.id }}'">
+            </g>
+          </svg>
+
+          <div class="map-legend"></div>
+        </div>
+
+        <h3 class="region-header-category">Jobs in {{ region.name }}</h3>
+        <table class="subregions">
+          <thead class="region-header"></thead>
+          <tbody></tbody>
+        </table>
+
+      </section>
+      {% endfor %}
+
+    </div>
+  </section>
+</section>
+
+<script src="{{ site.baseurl }}/js/vendor/immutable.min.js"></script>
+<script src="{{ site.baseurl }}/js/components/eiti-bar.js"></script>
+<script>
+  eiti.data.REGION_ID_NAME = {
+    {% for state in site.data.states %}
+    '{{ state.id }}': '{{ state.name }}',
+    {% endfor %}
+    {% for area in site.data.offshore_areas %}
+    '{{ area.id }}': '{{ area.name }}',
+    {% endfor %}
+    'US': 'the entire U.S.'
+  };
+</script>
+<script src="{{ site.baseurl }}/js/pages/jobs.js"></script>

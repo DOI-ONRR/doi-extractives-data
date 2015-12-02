@@ -12,12 +12,12 @@
   var mutating = false;
 
   // create references for often-used elements
-  var root = d3.select('#revenue');
+  var root = d3.select('#jobs');
   var regionSections = root.selectAll('.regions > .region');
   var timeline = root.select('#timeline');
 
   var getter = eiti.data.getter;
-  var formatNumber = eiti.format.dollars;
+  var formatNumber = eiti.format.si;
   var NULL_FILL = '#eee';
 
   // buttons that expand and collapse other elements
@@ -159,7 +159,7 @@
 
   function renderRegion(selection, state) {
     var regionId = state.get('region') || 'US';
-    var fields = getFields(regionId);
+    var fields = getFields(state);
 
     // console.log('loading', regionId);
     // console.time('load');
@@ -422,36 +422,23 @@
     return new Immutable.Set(commodities);
   }
 
-  function getFields(regionId) {
+  function getFields(state) {
     var fields = {
       region: 'Region',
-      value: 'Revenue',
+      value: 'Value',
       featureId: 'id'
     };
-    if (!regionId) {
-      return fields;
-    }
-    switch (regionId.length) {
-      case 2:
-        if (regionId !== 'US') {
-          fields.region = 'FIPS';
-          fields.featureId = function(f) {
-            return f.properties.FIPS;
-          };
-        }
-        break;
-      case 3:
-        fields.region = 'Area';
-        fields.featureId = function(f) {
-          return f.properties.name;
-        };
+    switch (state.get('figure')) {
+      case 'wage':
+        fields.region = 'State';
+        fields.value = 'Jobs';
         break;
     }
     return fields;
   }
 
   function updateTimeline(selection, data, state) {
-    var fields = getFields(state.get('region'));
+    var fields = getFields(state);
 
     var value = getter(fields.value);
     var dataByYearPolarity = d3.nest()
@@ -648,14 +635,15 @@
     };
 
     function getDataURL(state) {
-      var region = state.get('region');
-      var path = eiti.data.path;
-      path += (!region || region === 'US')
-        ? 'regional/'
-        : region.length === 2
-          ? 'county/by-state/' + region + '/'
-          : 'offshore/';
-      return path + 'revenues.tsv';
+      var path = eiti.data.path + 'jobs/';
+      var figure = state.get('figure');
+      switch (figure) {
+        case 'self':
+          return path + 'self-employment.tsv';
+        case 'wage':
+          return path + 'wage-salary.tsv';
+      }
+      throw new Error('invalid figure: "' + figure + '"');
     }
 
     function applyFilters(data, state, done) {
@@ -676,7 +664,7 @@
 
       var region = state.get('region');
       if (region && region.length === 3) {
-        var fields = getFields(region);
+        var fields = getFields(state);
         var regionName = REGION_ID_NAME[region];
         data = data.filter(function(d) {
           return d[fields.region] === regionName;

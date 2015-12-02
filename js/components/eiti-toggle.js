@@ -6,7 +6,7 @@
   };
 
   var innerMarkup = {
-    bars: '<span class="u-visually-hidden"><icon class="fa fa-bars"></icon></span>',
+    bars: '<span class="u-visually-hidden"><icon class="icon-bars"></icon></span>',
     x: '<span class="u-visually-hidden"><icon class="icon-close-x"></icon></span>'
   };
 

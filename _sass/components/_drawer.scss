@@ -39,6 +39,10 @@
     color: $white;
   }
 
+  label {
+    @include font-size(0.875);
+  }
+
   &[aria-hidden=true],
   &[aria-expanded=false] {
     display: block;
@@ -52,13 +56,13 @@
   }
 
   .button--close {
+    @include font-size(1.3);
     background-color: transparent;
     color: $white;
-    height: 50px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 50px;
+    display: inline-block;
+    float: right;
+    margin-bottom: 0;
+    padding: 0;
   }
 
 }
@@ -76,22 +80,34 @@
 
 #drawer-search {
   border: none;
+  margin-top: 0;
 
-  &::-webkit-input-placeholder {
+  @include placeholder() {
+    color: $neutral-gray;
     font-style: italic;
   }
+}
 
-  &:-moz-placeholder { // Firefox 18-
-    font-style: italic;
-  }
+.drawer-search_form {
+  width: 100%;
+}
 
-  &::-moz-placeholder {  // Firefox 19+
-    font-style: italic;
-  }
+input.drawer-search_field {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  display: inline;
+  height: 34px;
+  width: 86%;
+}
 
-  &:-ms-input-placeholder {
-    font-style: italic;
-  }
+.drawer-search_button {
+  background-color: $white;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  float: right;
+  height: 34px;
+  position: relative;
+  width: 14%;
 }
 
 .drawer__item {

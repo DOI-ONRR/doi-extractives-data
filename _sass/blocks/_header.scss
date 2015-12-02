@@ -48,7 +48,11 @@ header,
 .header-image {
   margin-top: $base-padding / 2;
   max-width: 280px;
-  width: 100%;
+  width: $eiti-logo-width;
+
+  @include respond-to(huge-plus-up) {
+    width: 100%;
+  }
 }
 
 .header-left {
@@ -64,9 +68,11 @@ header,
 
   &.header-bars {
     display: inline-block;
+    padding-bottom: 0;
+    padding-top: 0;
 
     icon {
-      @include font-size(1.5);
+      @include font-size(1.87);
     }
   }
 
@@ -103,12 +109,24 @@ header,
   }
 }
 
+.header-nav_top {
+  margin-bottom: 0;
+
+  @include respond-to(huge-plus-up) {
+    margin-bottom: 1em;
+  }
+}
+
 .header-nav_item,
 .header-nav_item_top {
   display: inline-block;
   padding-right: $base-padding;
-  padding-top: $base-padding;
+  padding-top: 0;
   font-weight: $weight-light;
+}
+
+.header-nav_item_top {
+  padding-top: $base-padding;
 }
 
 .header-nav_item:last-child,
@@ -127,7 +145,7 @@ header,
   text-decoration: none;
   text-transform: uppercase;
 
-  @include respond-to(large-up) {
+  @include respond-to(huge-plus-up) {
     @include font-size(0.875);
   }
 
@@ -163,12 +181,13 @@ header,
     display: inline-block;
     float: left;
     font-family: $base-font-family;
+    height: 30px;
     margin: 0;
     margin-left: $base-padding;
     padding: 0.42rem;
     width: 150px;
 
-    @include respond-to(large-up) {
+    @include respond-to(huge-plus-up) {
       @include font-size(0.75);
     }
   }

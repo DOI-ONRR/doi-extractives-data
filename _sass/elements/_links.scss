@@ -61,6 +61,11 @@ a,
   }
 }
 
+.hero a,
+.hero-left a {
+  color: darken($blue, 3%);
+}
+
 .link-active,
 .link-active-alpha {
   @extend .link-alpha;

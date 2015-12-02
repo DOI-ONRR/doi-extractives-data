@@ -93,10 +93,12 @@
 }
 
 input.drawer-search_field {
+  border: 0;
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
   display: inline;
   height: 34px;
+  margin-top: 0;
   width: 86%;
 }
 

@@ -7,7 +7,7 @@
 // <ul accordion>
 //    <li accordion-item accordion-open="true">
 //        <h3>Heading</h3>
-//        <button class="accordion-button" accordion-button></button>
+//        <button class="accordion-button" accordion-button title="Title content"></button>
 //        <div class="accordion-content">Accordion Content</div
 //    </li>
 // </ul>
@@ -115,5 +115,3 @@
     display: none;
   }
 }
-
-

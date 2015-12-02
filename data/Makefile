@@ -43,6 +43,9 @@ JOBS_FILES = \
 	jobs/wage-salary.tsv \
 	jobs/self-employment.tsv
 
+ALL_LANDS_PRODUCTION_FILES = \
+	production/natural-gas.tsv
+
 # a list of all of the individual files to build.
 # unless otherwise noted, all of these files are broken
 # down by year and commodity
@@ -52,6 +55,7 @@ FILES = \
 	$(EXPORT_FILES) \
 	$(GDP_FILES) \
 	$(JOBS_FILES) \
+	$(ALL_LANDS_PRODUCTION_FILES) \
 	geo svg
 
 all: $(FILES)
@@ -65,6 +69,8 @@ exports: $(EXPORT_FILES)
 gdp: $(GDP_FILES)
 
 jobs: $(JOBS_FILES)
+
+all_production: $(ALL_LANDS_PRODUCTION_FILES)
 
 jobs/wage-salary.tsv:
 	bin/parse-bls.js _input/bls/*.csv > $@
@@ -267,6 +273,12 @@ county/production.tsv: $(input)onrr/regional-production.tsv
 		| bin/normalize-county-production.js \
 			--in-states $(input)geo/states.csv \
 		| $(tito) --write tsv > $@
+
+production/all-production.tsv:
+	mkdir -p $(dir $@)
+	bin/group-all-production.js \
+		--sample $(input)eia/commodity/sample.tsv \
+		> $@
 
 geo: \
 	geo/us-topology.json \

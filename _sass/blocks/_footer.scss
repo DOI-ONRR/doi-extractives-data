@@ -57,6 +57,10 @@ footer,
   margin-bottom: $base-padding-extra;
   max-width: 260px;
   width: $eiti-logo-width;
+
+  @include respond-to(huge-plus-up) {
+    width: 100%;
+  }
 }
 
 .footer-button {

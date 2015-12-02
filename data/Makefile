@@ -19,7 +19,8 @@ REVENUE_FILES = \
 	regional/resource-revenues.tsv \
 	regional/revenues.tsv \
 	county-revenues-by-state \
-	county-resource-revenues-by-state
+	county-resource-revenues-by-state \
+	company/revenue.tsv
 
 # production volume files
 PRODUCTION_FILES = \
@@ -76,6 +77,13 @@ national/revenues.tsv: state/revenues.tsv offshore/revenues.tsv
 		--group 'Year,Commodity,Type' \
 		--sum 'Revenue' \
 		-o $@ $^
+
+company/revenue.tsv: $(input)onrr/company-revenues.tsv
+	mkdir -p $(dir $@)
+	bin/parse-company-revenue.js \
+		--if tsv \
+		--of tsv \
+		$< > $@
 
 # national production volumes by commodity and product
 national/production.tsv: state/production.tsv offshore/production.tsv

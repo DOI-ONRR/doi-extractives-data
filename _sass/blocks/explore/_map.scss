@@ -21,6 +21,9 @@ eiti-slider {
   @include heading(para-xl);
   font-weight: $weight-bold;
   letter-spacing: -0.5px;
+  margin-top: -115px; //TODO: magic number, remove
+  padding-left: $base-padding;
+  width: 65%;
 
   .filter-part {
     border-bottom: 2px dotted $neutral-gray;

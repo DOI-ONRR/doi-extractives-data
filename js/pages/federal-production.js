@@ -425,7 +425,7 @@
       });
     } else {
       data = [
-        {color: NULL_FILL, value: 'no production'},
+        {color: NULL_FILL, value: 'no production on federal land'},
         {color: colorscheme[3][2], value: '1 or more products'},
       ];
     }

@@ -280,6 +280,7 @@ production/all-production.tsv:
 		--naturalgas2 $(input)eia/commodity/naturalgas2.tsv \
 		--naturalgas $(input)eia/commodity/naturalgas.tsv \
 		--oil $(input)eia/commodity/oil.tsv \
+		--coal $(input)eia/commodity/coal.tsv \
 		> $@
 
 geo: \

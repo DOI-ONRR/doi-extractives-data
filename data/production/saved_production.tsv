@@ -1,651 +1,1307 @@
-Year	Region	Commodity	Volume	Production
-2004	US	natural gas	23969678	MMcf
-2004	AK	natural gas	3309960	MMcf
-2004	AR	natural gas	187310	MMcf
-2004	CA	natural gas	287205	MMcf
-2004	CO	natural gas	1089622	MMcf
-2004	LA	natural gas	1248050	MMcf
-2004	MT	natural gas	97838	MMcf
-2004	NM	natural gas	1644738	MMcf
-2004	ND	natural gas	57333	MMcf
-2004	OH	natural gas	90476	MMcf
-2004	OK	natural gas	1655769	MMcf
-2004	PA	natural gas	197217	MMcf
-2004	TX	natural gas	5688972	MMcf
-2004	UT	natural gas	290586	MMcf
-2004	WV	natural gas	197217	MMcf
-2004	WY	natural gas	1929040	MMcf
-2005	US	natural gas	23456822	MMcf
-2005	AK	natural gas	3262379	MMcf
-2005	AR	natural gas	190774	MMcf
-2005	CA	natural gas	291271	MMcf
-2005	CO	natural gas	1143985	MMcf
-2005	LA	natural gas	1202328	MMcf
-2005	MT	natural gas	108555	MMcf
-2005	NM	natural gas	1656850	MMcf
-2005	ND	natural gas	55904	MMcf
-2005	OH	natural gas	83523	MMcf
-2005	OK	natural gas	1639310	MMcf
-2005	PA	natural gas	168501	MMcf
-2005	TX	natural gas	5969905	MMcf
-2005	UT	natural gas	311994	MMcf
-2005	WV	natural gas	221108	MMcf
-2005	WY	natural gas	2003826	MMcf
-2006	US	natural gas	23535018	MMcf
-2006	AK	natural gas	2850934	MMcf
-2006	AR	natural gas	270744	MMcf
-2006	CA	natural gas	301921	MMcf
-2006	CO	natural gas	1214396	MMcf
-2006	LA	natural gas	1280758	MMcf
-2006	MT	natural gas	114037	MMcf
-2006	NM	natural gas	1619528	MMcf
-2006	ND	natural gas	62786	MMcf
-2006	OH	natural gas	86315	MMcf
-2006	OK	natural gas	1688985	MMcf
-2006	PA	natural gas	175950	MMcf
-2006	TX	natural gas	6301649	MMcf
-2006	UT	natural gas	356321	MMcf
-2006	WV	natural gas	225530	MMcf
-2006	WY	natural gas	2111766	MMcf
-2007	US	natural gas	24663656	MMcf
-2007	AK	natural gas	3105086	MMcf
-2007	AR	natural gas	270414	MMcf
-2007	CA	natural gas	286584	MMcf
-2007	CO	natural gas	1254529	MMcf
-2007	LA	natural gas	1309960	MMcf
-2007	MT	natural gas	120575	MMcf
-2007	NM	natural gas	1555450	MMcf
-2007	ND	natural gas	70797	MMcf
-2007	OH	natural gas	88095	MMcf
-2007	OK	natural gas	1783682	MMcf
-2007	PA	natural gas	182277	MMcf
-2007	TX	natural gas	6931629	MMcf
-2007	UT	natural gas	385361	MMcf
-2007	WV	natural gas	231184	MMcf
-2007	WY	natural gas	2257884	MMcf
-2008	US	natural gas	25636257	MMcf
-2008	AK	natural gas	3027696	MMcf
-2008	AR	natural gas	447082	MMcf
-2008	CA	natural gas	281088	MMcf
-2008	CO	natural gas	1402845	MMcf
-2008	LA	natural gas	1301523	MMcf
-2008	MT	natural gas	119399	MMcf
-2008	NM	natural gas	1487123	MMcf
-2008	ND	natural gas	87188	MMcf
-2008	OH	natural gas	84858	MMcf
-2008	OK	natural gas	1886710	MMcf
-2008	PA	natural gas	198295	MMcf
-2008	TX	natural gas	7753869	MMcf
-2008	UT	natural gas	441598	MMcf
-2008	WV	natural gas	244880	MMcf
-2008	WY	natural gas	2488267	MMcf
-2009	US	natural gas	26056893	MMcf
-2009	AK	natural gas	2954896	MMcf
-2009	AR	natural gas	680613	MMcf
-2009	CA	natural gas	258983	MMcf
-2009	CO	natural gas	1511654	MMcf
-2009	LA	natural gas	1482252	MMcf
-2009	MT	natural gas	105251	MMcf
-2009	NM	natural gas	1425222	MMcf
-2009	ND	natural gas	92489	MMcf
-2009	OH	natural gas	88824	MMcf
-2009	OK	natural gas	1901556	MMcf
-2009	PA	natural gas	273869	MMcf
-2009	TX	natural gas	7615836	MMcf
-2009	UT	natural gas	449511	MMcf
-2009	WV	natural gas	264436	MMcf
-2009	WY	natural gas	2536336	MMcf
-2010	US	natural gas	26816085	MMcf
-2010	AK	natural gas	2826952	MMcf
-2010	AR	natural gas	927479	MMcf
-2010	CA	natural gas	273136	MMcf
-2010	CO	natural gas	1589664	MMcf
-2010	LA	natural gas	2148447	MMcf
-2010	MT	natural gas	93266	MMcf
-2010	NM	natural gas	1341475	MMcf
-2010	ND	natural gas	113867	MMcf
-2010	OH	natural gas	78122	MMcf
-2010	OK	natural gas	1827328	MMcf
-2010	PA	natural gas	572902	MMcf
-2010	TX	natural gas	7565123	MMcf
-2010	UT	natural gas	436885	MMcf
-2010	WV	natural gas	265174	MMcf
-2010	WY	natural gas	2514657	MMcf
-2011	US	natural gas	28479026	MMcf
-2011	AK	natural gas	2798220	MMcf
-2011	AR	natural gas	1076757	MMcf
-2011	CA	natural gas	237388	MMcf
-2011	CO	natural gas	1649306	MMcf
-2011	LA	natural gas	2969297	MMcf
-2011	MT	natural gas	79506	MMcf
-2011	NM	natural gas	1287682	MMcf
-2011	ND	natural gas	157025	MMcf
-2011	OH	natural gas	78858	MMcf
-2011	OK	natural gas	1888870	MMcf
-2011	PA	natural gas	1310592	MMcf
-2011	TX	natural gas	7910898	MMcf
-2011	UT	natural gas	461507	MMcf
-2011	WV	natural gas	394125	MMcf
-2011	WY	natural gas	2375301	MMcf
-2012	US	natural gas	29542313	MMcf
-2012	AK	natural gas	2857485	MMcf
-2012	AR	natural gas	1146168	MMcf
-2012	CA	natural gas	214509	MMcf
-2012	CO	natural gas	1709376	MMcf
-2012	LA	natural gas	2882193	MMcf
-2012	MT	natural gas	66954	MMcf
-2012	NM	natural gas	1276296	MMcf
-2012	ND	natural gas	258568	MMcf
-2012	OH	natural gas	84482	MMcf
-2012	OK	natural gas	2023461	MMcf
-2012	PA	natural gas	2256696	MMcf
-2012	TX	natural gas	8127004	MMcf
-2012	UT	natural gas	490393	MMcf
-2012	WV	natural gas	539860	MMcf
-2012	WY	natural gas	2225622	MMcf
-2013	US	natural gas	29522551	MMcf
-2013	AK	natural gas	2882956	MMcf
-2013	AR	natural gas	1139654	MMcf
-2013	CA	natural gas	219386	MMcf
-2013	CO	natural gas	1604860	MMcf
-2013	LA	natural gas	2289193	MMcf
-2013	MT	natural gas	63242	MMcf
-2013	NM	natural gas	1247394	MMcf
-2013	ND	natural gas	345787	MMcf
-2013	OH	natural gas	166017	MMcf
-2013	OK	natural gas	1993754	MMcf
-2013	PA	natural gas	3259042	MMcf
-2013	TX	natural gas	8285436	MMcf
-2013	UT	natural gas	470863	MMcf
-2013	WV	natural gas	741853	MMcf
-2013	WY	natural gas	2047757	MMcf
-2004	US	natural gas	23969678	MMcf
-2004	AK	natural gas	3309960	MMcf
-2004	AR	natural gas	187310	MMcf
-2004	CA	natural gas	287205	MMcf
-2004	CO	natural gas	1089622	MMcf
-2004	KS	natural gas	398197	MMcf
-2004	LA	natural gas	1248050	MMcf
-2004	MT	natural gas	97838	MMcf
-2004	NM	natural gas	1644738	MMcf
-2004	ND	natural gas	57333	MMcf
-2004	OH	natural gas	90476	MMcf
-2004	OK	natural gas	1655769	MMcf
-2004	PA	natural gas	197217	MMcf
-2004	TX	natural gas	5688972	MMcf
-2004	UT	natural gas	290586	MMcf
-2004	WV	natural gas	197217	MMcf
-2004	WY	natural gas	1929040	MMcf
-2005	US	natural gas	23456822	MMcf
-2005	AK	natural gas	3262379	MMcf
-2005	AR	natural gas	190774	MMcf
-2005	CA	natural gas	291271	MMcf
-2005	CO	natural gas	1143985	MMcf
-2005	KS	natural gas	378250	MMcf
-2005	LA	natural gas	1202328	MMcf
-2005	MT	natural gas	108555	MMcf
-2005	NM	natural gas	1656850	MMcf
-2005	ND	natural gas	55904	MMcf
-2005	OH	natural gas	83523	MMcf
-2005	OK	natural gas	1639310	MMcf
-2005	PA	natural gas	168501	MMcf
-2005	TX	natural gas	5969905	MMcf
-2005	UT	natural gas	311994	MMcf
-2005	WV	natural gas	221108	MMcf
-2005	WY	natural gas	2003826	MMcf
-2006	US	natural gas	23535018	MMcf
-2006	AK	natural gas	2850934	MMcf
-2006	AR	natural gas	270744	MMcf
-2006	CA	natural gas	301921	MMcf
-2006	CO	natural gas	1214396	MMcf
-2006	KS	natural gas	372029	MMcf
-2006	LA	natural gas	1280758	MMcf
-2006	MT	natural gas	114037	MMcf
-2006	NM	natural gas	1619528	MMcf
-2006	ND	natural gas	62786	MMcf
-2006	OH	natural gas	86315	MMcf
-2006	OK	natural gas	1688985	MMcf
-2006	PA	natural gas	175950	MMcf
-2006	TX	natural gas	6301649	MMcf
-2006	UT	natural gas	356321	MMcf
-2006	WV	natural gas	225530	MMcf
-2006	WY	natural gas	2111766	MMcf
-2007	US	natural gas	24663656	MMcf
-2007	AK	natural gas	3105086	MMcf
-2007	AR	natural gas	270414	MMcf
-2007	CA	natural gas	286584	MMcf
-2007	CO	natural gas	1254529	MMcf
-2007	KS	natural gas	366859	MMcf
-2007	LA	natural gas	1309960	MMcf
-2007	MT	natural gas	120575	MMcf
-2007	NM	natural gas	1555450	MMcf
-2007	ND	natural gas	70797	MMcf
-2007	OH	natural gas	88095	MMcf
-2007	OK	natural gas	1783682	MMcf
-2007	PA	natural gas	182277	MMcf
-2007	TX	natural gas	6931629	MMcf
-2007	UT	natural gas	385361	MMcf
-2007	WV	natural gas	231184	MMcf
-2007	WY	natural gas	2257884	MMcf
-2008	US	natural gas	25636257	MMcf
-2008	AK	natural gas	3027696	MMcf
-2008	AR	natural gas	447082	MMcf
-2008	CA	natural gas	281088	MMcf
-2008	CO	natural gas	1402845	MMcf
-2008	KS	natural gas	375314	MMcf
-2008	LA	natural gas	1301523	MMcf
-2008	MT	natural gas	119399	MMcf
-2008	NM	natural gas	1487123	MMcf
-2008	ND	natural gas	87188	MMcf
-2008	OH	natural gas	84858	MMcf
-2008	OK	natural gas	1886710	MMcf
-2008	PA	natural gas	198295	MMcf
-2008	TX	natural gas	7753869	MMcf
-2008	UT	natural gas	441598	MMcf
-2008	WV	natural gas	244880	MMcf
-2008	WY	natural gas	2488267	MMcf
-2009	US	natural gas	26056893	MMcf
-2009	AK	natural gas	2954896	MMcf
-2009	AR	natural gas	680613	MMcf
-2009	CA	natural gas	258983	MMcf
-2009	CO	natural gas	1511654	MMcf
-2009	KS	natural gas	355394	MMcf
-2009	LA	natural gas	1482252	MMcf
-2009	MT	natural gas	105251	MMcf
-2009	NM	natural gas	1425222	MMcf
-2009	ND	natural gas	92489	MMcf
-2009	OH	natural gas	88824	MMcf
-2009	OK	natural gas	1901556	MMcf
-2009	PA	natural gas	273869	MMcf
-2009	TX	natural gas	7615836	MMcf
-2009	UT	natural gas	449511	MMcf
-2009	WV	natural gas	264436	MMcf
-2009	WY	natural gas	2536336	MMcf
-2010	US	natural gas	26816085	MMcf
-2010	AK	natural gas	2826952	MMcf
-2010	AR	natural gas	927479	MMcf
-2010	CA	natural gas	273136	MMcf
-2010	CO	natural gas	1589664	MMcf
-2010	KS	natural gas	325591	MMcf
-2010	LA	natural gas	2148447	MMcf
-2010	MT	natural gas	93266	MMcf
-2010	NM	natural gas	1341475	MMcf
-2010	ND	natural gas	113867	MMcf
-2010	OH	natural gas	78122	MMcf
-2010	OK	natural gas	1827328	MMcf
-2010	PA	natural gas	572902	MMcf
-2010	TX	natural gas	7565123	MMcf
-2010	UT	natural gas	436885	MMcf
-2010	WV	natural gas	265174	MMcf
-2010	WY	natural gas	2514657	MMcf
-2011	US	natural gas	28479026	MMcf
-2011	AK	natural gas	2798220	MMcf
-2011	AR	natural gas	1076757	MMcf
-2011	CA	natural gas	237388	MMcf
-2011	CO	natural gas	1649306	MMcf
-2011	KS	natural gas	309952	MMcf
-2011	LA	natural gas	2969297	MMcf
-2011	MT	natural gas	79506	MMcf
-2011	NM	natural gas	1287682	MMcf
-2011	ND	natural gas	157025	MMcf
-2011	OH	natural gas	78858	MMcf
-2011	OK	natural gas	1888870	MMcf
-2011	PA	natural gas	1310592	MMcf
-2011	TX	natural gas	7910898	MMcf
-2011	UT	natural gas	461507	MMcf
-2011	WV	natural gas	394125	MMcf
-2011	WY	natural gas	2375301	MMcf
-2012	US	natural gas	29542313	MMcf
-2012	AK	natural gas	2857485	MMcf
-2012	AR	natural gas	1146168	MMcf
-2012	CA	natural gas	214509	MMcf
-2012	CO	natural gas	1709376	MMcf
-2012	KS	natural gas	296299	MMcf
-2012	LA	natural gas	2882193	MMcf
-2012	MT	natural gas	66954	MMcf
-2012	NM	natural gas	1276296	MMcf
-2012	ND	natural gas	258568	MMcf
-2012	OH	natural gas	84482	MMcf
-2012	OK	natural gas	2023461	MMcf
-2012	PA	natural gas	2256696	MMcf
-2012	TX	natural gas	8127004	MMcf
-2012	UT	natural gas	490393	MMcf
-2012	WV	natural gas	539860	MMcf
-2012	WY	natural gas	2225622	MMcf
-2013	US	natural gas	29522551	MMcf
-2013	AK	natural gas	2882956	MMcf
-2013	AR	natural gas	1139654	MMcf
-2013	CA	natural gas	219386	MMcf
-2013	CO	natural gas	1604860	MMcf
-2013	KS	natural gas	292467	MMcf
-2013	LA	natural gas	2289193	MMcf
-2013	MT	natural gas	63242	MMcf
-2013	NM	natural gas	1247394	MMcf
-2013	ND	natural gas	345787	MMcf
-2013	OH	natural gas	166017	MMcf
-2013	OK	natural gas	1993754	MMcf
-2013	PA	natural gas	3259042	MMcf
-2013	TX	natural gas	8285436	MMcf
-2013	UT	natural gas	470863	MMcf
-2013	WV	natural gas	741853	MMcf
-2013	WY	natural gas	2047757	MMcf
-2004	US	crude oil	1991394	Thousand Barrels
-2004	FL	crude oil	2904	Thousand Barrels
-2004	NY	crude oil	170	Thousand Barrels
-2004	PA	crude oil	2396	Thousand Barrels
-2004	VA	crude oil	19	Thousand Barrels
-2004	WV	crude oil	1735	Thousand Barrels
-2004	IL	crude oil	10984	Thousand Barrels
-2004	IN	crude oil	1755	Thousand Barrels
-2004	KS	crude oil	33879	Thousand Barrels
-2004	KY	crude oil	2548	Thousand Barrels
-2004	MI	crude oil	5951	Thousand Barrels
-2004	MO	crude oil	88	Thousand Barrels
-2004	NE	crude oil	2506	Thousand Barrels
-2004	ND	crude oil	31152	Thousand Barrels
-2004	OH	crude oil	5783	Thousand Barrels
-2004	OK	crude oil	63977	Thousand Barrels
-2004	SD	crude oil	1357	Thousand Barrels
-2004	TN	crude oil	361	Thousand Barrels
-2004	AL	crude oil	7443	Thousand Barrels
-2004	AR	crude oil	6747	Thousand Barrels
-2004	LA	crude oil	83272	Thousand Barrels
-2004	MS	crude oil	19242	Thousand Barrels
-2004	NM	crude oil	64517	Thousand Barrels
-2004	TX	crude oil	392714	Thousand Barrels
-2004	CO	crude oil	22532	Thousand Barrels
-2004	MT	crude oil	24718	Thousand Barrels
-2004	UT	crude oil	14744	Thousand Barrels
-2004	WY	crude oil	51940	Thousand Barrels
-2004	AK	crude oil	332441	Thousand Barrels
-2004	AZ	crude oil	54	Thousand Barrels
-2004	CA	crude oil	240138	Thousand Barrels
-2004	NV	crude oil	463	Thousand Barrels
-2005	US	crude oil	1892095	Thousand Barrels
-2005	FL	crude oil	2585	Thousand Barrels
-2005	NY	crude oil	202	Thousand Barrels
-2005	PA	crude oil	2460	Thousand Barrels
-2005	VA	crude oil	26	Thousand Barrels
-2005	WV	crude oil	1696	Thousand Barrels
-2005	IL	crude oil	10207	Thousand Barrels
-2005	IN	crude oil	1727	Thousand Barrels
-2005	KS	crude oil	33620	Thousand Barrels
-2005	KY	crude oil	2535	Thousand Barrels
-2005	MI	crude oil	5734	Thousand Barrels
-2005	MO	crude oil	86	Thousand Barrels
-2005	NE	crude oil	2408	Thousand Barrels
-2005	ND	crude oil	35675	Thousand Barrels
-2005	OH	crude oil	5658	Thousand Barrels
-2005	OK	crude oil	61262	Thousand Barrels
-2005	SD	crude oil	1394	Thousand Barrels
-2005	TN	crude oil	324	Thousand Barrels
-2005	AL	crude oil	7861	Thousand Barrels
-2005	AR	crude oil	6175	Thousand Barrels
-2005	LA	crude oil	75199	Thousand Barrels
-2005	MS	crude oil	17695	Thousand Barrels
-2005	NM	crude oil	60963	Thousand Barrels
-2005	TX	crude oil	392601	Thousand Barrels
-2005	CO	crude oil	23227	Thousand Barrels
-2005	MT	crude oil	32787	Thousand Barrels
-2005	UT	crude oil	16673	Thousand Barrels
-2005	WY	crude oil	51770	Thousand Barrels
-2005	AK	crude oil	315387	Thousand Barrels
-2005	AZ	crude oil	50	Thousand Barrels
-2005	CA	crude oil	230230	Thousand Barrels
-2005	NV	crude oil	447	Thousand Barrels
-2006	US	crude oil	1856606	Thousand Barrels
-2006	FL	crude oil	2360	Thousand Barrels
-2006	NY	crude oil	312	Thousand Barrels
-2006	PA	crude oil	2589	Thousand Barrels
-2006	VA	crude oil	17	Thousand Barrels
-2006	WV	crude oil	1726	Thousand Barrels
-2006	IL	crude oil	10325	Thousand Barrels
-2006	IN	crude oil	1773	Thousand Barrels
-2006	KS	crude oil	35668	Thousand Barrels
-2006	KY	crude oil	2340	Thousand Barrels
-2006	MI	crude oil	5828	Thousand Barrels
-2006	MO	crude oil	87	Thousand Barrels
-2006	NE	crude oil	2313	Thousand Barrels
-2006	ND	crude oil	39943	Thousand Barrels
-2006	OH	crude oil	5439	Thousand Barrels
-2006	OK	crude oil	64236	Thousand Barrels
-2006	SD	crude oil	1389	Thousand Barrels
-2006	TN	crude oil	192	Thousand Barrels
-2006	AL	crude oil	7539	Thousand Barrels
-2006	AR	crude oil	5948	Thousand Barrels
-2006	LA	crude oil	73621	Thousand Barrels
-2006	MS	crude oil	17356	Thousand Barrels
-2006	NM	crude oil	59452	Thousand Barrels
-2006	TX	crude oil	392481	Thousand Barrels
-2006	CO	crude oil	24494	Thousand Barrels
-2006	MT	crude oil	36294	Thousand Barrels
-2006	UT	crude oil	17927	Thousand Barrels
-2006	WY	crude oil	52974	Thousand Barrels
-2006	AK	crude oil	270481	Thousand Barrels
-2006	AZ	crude oil	55	Thousand Barrels
-2006	CA	crude oil	223015	Thousand Barrels
-2006	NV	crude oil	426	Thousand Barrels
-2007	US	crude oil	1853243	Thousand Barrels
-2007	FL	crude oil	2078	Thousand Barrels
-2007	NY	crude oil	379	Thousand Barrels
-2007	PA	crude oil	2788	Thousand Barrels
-2007	VA	crude oil	19	Thousand Barrels
-2007	WV	crude oil	1992	Thousand Barrels
-2007	IL	crude oil	9608	Thousand Barrels
-2007	IN	crude oil	1727	Thousand Barrels
-2007	KS	crude oil	36590	Thousand Barrels
-2007	KY	crude oil	2666	Thousand Barrels
-2007	MI	crude oil	5646	Thousand Barrels
-2007	MO	crude oil	80	Thousand Barrels
-2007	NE	crude oil	2335	Thousand Barrels
-2007	ND	crude oil	45122	Thousand Barrels
-2007	OH	crude oil	5155	Thousand Barrels
-2007	OK	crude oil	63951	Thousand Barrels
-2007	SD	crude oil	1632	Thousand Barrels
-2007	TN	crude oil	284	Thousand Barrels
-2007	AL	crude oil	7171	Thousand Barrels
-2007	AR	crude oil	6031	Thousand Barrels
-2007	LA	crude oil	76979	Thousand Barrels
-2007	MS	crude oil	20672	Thousand Barrels
-2007	NM	crude oil	59179	Thousand Barrels
-2007	TX	crude oil	391270	Thousand Barrels
-2007	CO	crude oil	26172	Thousand Barrels
-2007	MT	crude oil	34907	Thousand Barrels
-2007	UT	crude oil	19535	Thousand Barrels
-2007	WY	crude oil	54116	Thousand Barrels
-2007	AK	crude oil	263595	Thousand Barrels
-2007	AZ	crude oil	43	Thousand Barrels
-2007	CA	crude oil	218518	Thousand Barrels
-2007	NV	crude oil	408	Thousand Barrels
-2008	US	crude oil	1830416	Thousand Barrels
-2008	FL	crude oil	1953	Thousand Barrels
-2008	NY	crude oil	387	Thousand Barrels
-2008	PA	crude oil	2999	Thousand Barrels
-2008	VA	crude oil	16	Thousand Barrels
-2008	WV	crude oil	2126	Thousand Barrels
-2008	IL	crude oil	9448	Thousand Barrels
-2008	IN	crude oil	1859	Thousand Barrels
-2008	KS	crude oil	39663	Thousand Barrels
-2008	KY	crude oil	2645	Thousand Barrels
-2008	MI	crude oil	6271	Thousand Barrels
-2008	MO	crude oil	99	Thousand Barrels
-2008	NE	crude oil	2394	Thousand Barrels
-2008	ND	crude oil	62780	Thousand Barrels
-2008	OH	crude oil	5113	Thousand Barrels
-2008	OK	crude oil	67357	Thousand Barrels
-2008	SD	crude oil	1713	Thousand Barrels
-2008	TN	crude oil	338	Thousand Barrels
-2008	AL	crude oil	7696	Thousand Barrels
-2008	AR	crude oil	6079	Thousand Barrels
-2008	LA	crude oil	72353	Thousand Barrels
-2008	MS	crude oil	22104	Thousand Barrels
-2008	NM	crude oil	60156	Thousand Barrels
-2008	TX	crude oil	406007	Thousand Barrels
-2008	CO	crude oil	29928	Thousand Barrels
-2008	MT	crude oil	31596	Thousand Barrels
-2008	UT	crude oil	22041	Thousand Barrels
-2008	WY	crude oil	53045	Thousand Barrels
-2008	AK	crude oil	249874	Thousand Barrels
-2008	AZ	crude oil	52	Thousand Barrels
-2008	CA	crude oil	214533	Thousand Barrels
-2008	NV	crude oil	436	Thousand Barrels
-2009	US	crude oil	1954241	Thousand Barrels
-2009	FL	crude oil	696	Thousand Barrels
-2009	NY	crude oil	333	Thousand Barrels
-2009	PA	crude oil	2967	Thousand Barrels
-2009	VA	crude oil	11	Thousand Barrels
-2009	WV	crude oil	1501	Thousand Barrels
-2009	IL	crude oil	9097	Thousand Barrels
-2009	IN	crude oil	1803	Thousand Barrels
-2009	KS	crude oil	39466	Thousand Barrels
-2009	KY	crude oil	2609	Thousand Barrels
-2009	MI	crude oil	6223	Thousand Barrels
-2009	MO	crude oil	106	Thousand Barrels
-2009	NE	crude oil	2239	Thousand Barrels
-2009	ND	crude oil	79728	Thousand Barrels
-2009	OH	crude oil	4877	Thousand Barrels
-2009	OK	crude oil	66637	Thousand Barrels
-2009	SD	crude oil	1676	Thousand Barrels
-2009	TN	crude oil	268	Thousand Barrels
-2009	AL	crude oil	7189	Thousand Barrels
-2009	AR	crude oil	5755	Thousand Barrels
-2009	LA	crude oil	68824	Thousand Barrels
-2009	MS	crude oil	23232	Thousand Barrels
-2009	NM	crude oil	61156	Thousand Barrels
-2009	TX	crude oil	399344	Thousand Barrels
-2009	CO	crude oil	30350	Thousand Barrels
-2009	MT	crude oil	27835	Thousand Barrels
-2009	UT	crude oil	22943	Thousand Barrels
-2009	WY	crude oil	51533	Thousand Barrels
-2009	AK	crude oil	235491	Thousand Barrels
-2009	AZ	crude oil	46	Thousand Barrels
-2009	CA	crude oil	207262	Thousand Barrels
-2009	NV	crude oil	438	Thousand Barrels
-2010	US	crude oil	1998583	Thousand Barrels
-2010	FL	crude oil	1777	Thousand Barrels
-2010	NY	crude oil	381	Thousand Barrels
-2010	PA	crude oil	3236	Thousand Barrels
-2010	VA	crude oil	12	Thousand Barrels
-2010	WV	crude oil	1842	Thousand Barrels
-2010	IL	crude oil	9067	Thousand Barrels
-2010	IN	crude oil	1835	Thousand Barrels
-2010	KS	crude oil	40468	Thousand Barrels
-2010	KY	crude oil	2519	Thousand Barrels
-2010	MI	crude oil	6943	Thousand Barrels
-2010	MO	crude oil	146	Thousand Barrels
-2010	NE	crude oil	2331	Thousand Barrels
-2010	ND	crude oil	113064	Thousand Barrels
-2010	OH	crude oil	4769	Thousand Barrels
-2010	OK	crude oil	67418	Thousand Barrels
-2010	SD	crude oil	1604	Thousand Barrels
-2010	TN	crude oil	257	Thousand Barrels
-2010	AL	crude oil	7155	Thousand Barrels
-2010	AR	crude oil	5733	Thousand Barrels
-2010	LA	crude oil	67280	Thousand Barrels
-2010	MS	crude oil	24080	Thousand Barrels
-2010	NM	crude oil	65373	Thousand Barrels
-2010	TX	crude oil	426666	Thousand Barrels
-2010	CO	crude oil	32976	Thousand Barrels
-2010	MT	crude oil	25332	Thousand Barrels
-2010	UT	crude oil	24674	Thousand Barrels
-2010	WY	crude oil	53891	Thousand Barrels
-2010	AK	crude oil	218904	Thousand Barrels
-2010	AZ	crude oil	40	Thousand Barrels
-2010	CA	crude oil	200050	Thousand Barrels
-2010	NV	crude oil	426	Thousand Barrels
-2011	US	crude oil	2057608	Thousand Barrels
-2011	FL	crude oil	2023	Thousand Barrels
-2011	NY	crude oil	375	Thousand Barrels
-2011	PA	crude oil	3463	Thousand Barrels
-2011	VA	crude oil	11	Thousand Barrels
-2011	WV	crude oil	2146	Thousand Barrels
-2011	IL	crude oil	9158	Thousand Barrels
-2011	IN	crude oil	1987	Thousand Barrels
-2011	KS	crude oil	41507	Thousand Barrels
-2011	KY	crude oil	2326	Thousand Barrels
-2011	MI	crude oil	7012	Thousand Barrels
-2011	MO	crude oil	118	Thousand Barrels
-2011	NE	crude oil	2544	Thousand Barrels
-2011	ND	crude oil	153015	Thousand Barrels
-2011	OH	crude oil	4654	Thousand Barrels
-2011	OK	crude oil	73423	Thousand Barrels
-2011	SD	crude oil	1625	Thousand Barrels
-2011	TN	crude oil	296	Thousand Barrels
-2011	AL	crude oil	8373	Thousand Barrels
-2011	AR	crude oil	5877	Thousand Barrels
-2011	LA	crude oil	68965	Thousand Barrels
-2011	MS	crude oil	24246	Thousand Barrels
-2011	NM	crude oil	71249	Thousand Barrels
-2011	TX	crude oil	528844	Thousand Barrels
-2011	CO	crude oil	39430	Thousand Barrels
-2011	MT	crude oil	24155	Thousand Barrels
-2011	UT	crude oil	26331	Thousand Barrels
-2011	WY	crude oil	54670	Thousand Barrels
-2011	AK	crude oil	204829	Thousand Barrels
-2011	AZ	crude oil	37	Thousand Barrels
-2011	CA	crude oil	193996	Thousand Barrels
-2011	NV	crude oil	408	Thousand Barrels
-2012	US	crude oil	2370114	Thousand Barrels
-2012	FL	crude oil	2135	Thousand Barrels
-2012	NY	crude oil	362	Thousand Barrels
-2012	PA	crude oil	4304	Thousand Barrels
-2012	VA	crude oil	9	Thousand Barrels
-2012	WV	crude oil	2573	Thousand Barrels
-2012	IL	crude oil	8908	Thousand Barrels
-2012	IN	crude oil	2350	Thousand Barrels
-2012	KS	crude oil	43743	Thousand Barrels
-2012	KY	crude oil	3198	Thousand Barrels
-2012	MI	crude oil	7426	Thousand Barrels
-2012	MO	crude oil	175	Thousand Barrels
-2012	NE	crude oil	3025	Thousand Barrels
-2012	ND	crude oil	243236	Thousand Barrels
-2012	OH	crude oil	5109	Thousand Barrels
-2012	OK	crude oil	87538	Thousand Barrels
-2012	SD	crude oil	1756	Thousand Barrels
-2012	TN	crude oil	371	Thousand Barrels
-2012	AL	crude oil	9525	Thousand Barrels
-2012	AR	crude oil	6536	Thousand Barrels
-2012	LA	crude oil	70643	Thousand Barrels
-2012	MS	crude oil	24593	Thousand Barrels
-2012	NM	crude oil	85334	Thousand Barrels
-2012	TX	crude oil	722130	Thousand Barrels
-2012	CO	crude oil	49435	Thousand Barrels
-2012	MT	crude oil	26495	Thousand Barrels
-2012	UT	crude oil	30268	Thousand Barrels
-2012	WY	crude oil	57830	Thousand Barrels
-2012	AK	crude oil	192368	Thousand Barrels
-2012	AZ	crude oil	52	Thousand Barrels
-2012	CA	crude oil	197211	Thousand Barrels
-2012	NV	crude oil	368	Thousand Barrels
-2013	US	crude oil	2720782	Thousand Barrels
-2013	FL	crude oil	2174	Thousand Barrels
-2013	NY	crude oil	313	Thousand Barrels
-2013	PA	crude oil	5246	Thousand Barrels
-2013	VA	crude oil	9	Thousand Barrels
-2013	WV	crude oil	7564	Thousand Barrels
-2013	IL	crude oil	9539	Thousand Barrels
-2013	IN	crude oil	2399	Thousand Barrels
-2013	KS	crude oil	46845	Thousand Barrels
-2013	KY	crude oil	2893	Thousand Barrels
-2013	MI	crude oil	7706	Thousand Barrels
-2013	MO	crude oil	199	Thousand Barrels
-2013	NE	crude oil	2808	Thousand Barrels
-2013	ND	crude oil	313823	Thousand Barrels
-2013	OH	crude oil	7962	Thousand Barrels
-2013	OK	crude oil	114486	Thousand Barrels
-2013	SD	crude oil	1829	Thousand Barrels
-2013	TN	crude oil	334	Thousand Barrels
-2013	AL	crude oil	10391	Thousand Barrels
-2013	AR	crude oil	6640	Thousand Barrels
-2013	LA	crude oil	71815	Thousand Barrels
-2013	MS	crude oil	24345	Thousand Barrels
-2013	NM	crude oil	101451	Thousand Barrels
-2013	TX	crude oil	923561	Thousand Barrels
-2013	CO	crude oil	65257	Thousand Barrels
-2013	MT	crude oil	29288	Thousand Barrels
-2013	UT	crude oil	34912	Thousand Barrels
-2013	WY	crude oil	63285	Thousand Barrels
-2013	AK	crude oil	187954	Thousand Barrels
-2013	AZ	crude oil	60	Thousand Barrels
-2013	CA	crude oil	198928	Thousand Barrels
-2013	NV	crude oil	334	Thousand Barrels
+Year	Region	Commodity	Volume	Product
+2004	US	Natural Gas	23969678	MMcf
+2004	AK	Natural Gas	3309960	MMcf
+2004	AR	Natural Gas	187310	MMcf
+2004	CA	Natural Gas	287205	MMcf
+2004	CO	Natural Gas	1089622	MMcf
+2004	KS	Natural Gas	398197	MMcf
+2004	LA	Natural Gas	1248050	MMcf
+2004	MT	Natural Gas	97838	MMcf
+2004	NM	Natural Gas	1644738	MMcf
+2004	ND	Natural Gas	57333	MMcf
+2004	OH	Natural Gas	90476	MMcf
+2004	OK	Natural Gas	1655769	MMcf
+2004	PA	Natural Gas	197217	MMcf
+2004	TX	Natural Gas	5688972	MMcf
+2004	UT	Natural Gas	290586	MMcf
+2004	WV	Natural Gas	197217	MMcf
+2004	WY	Natural Gas	1929040	MMcf
+2005	US	Natural Gas	23456822	MMcf
+2005	AK	Natural Gas	3262379	MMcf
+2005	AR	Natural Gas	190774	MMcf
+2005	CA	Natural Gas	291271	MMcf
+2005	CO	Natural Gas	1143985	MMcf
+2005	KS	Natural Gas	378250	MMcf
+2005	LA	Natural Gas	1202328	MMcf
+2005	MT	Natural Gas	108555	MMcf
+2005	NM	Natural Gas	1656850	MMcf
+2005	ND	Natural Gas	55904	MMcf
+2005	OH	Natural Gas	83523	MMcf
+2005	OK	Natural Gas	1639310	MMcf
+2005	PA	Natural Gas	168501	MMcf
+2005	TX	Natural Gas	5969905	MMcf
+2005	UT	Natural Gas	311994	MMcf
+2005	WV	Natural Gas	221108	MMcf
+2005	WY	Natural Gas	2003826	MMcf
+2006	US	Natural Gas	23535018	MMcf
+2006	AK	Natural Gas	2850934	MMcf
+2006	AR	Natural Gas	270744	MMcf
+2006	CA	Natural Gas	301921	MMcf
+2006	CO	Natural Gas	1214396	MMcf
+2006	KS	Natural Gas	372029	MMcf
+2006	LA	Natural Gas	1280758	MMcf
+2006	MT	Natural Gas	114037	MMcf
+2006	NM	Natural Gas	1619528	MMcf
+2006	ND	Natural Gas	62786	MMcf
+2006	OH	Natural Gas	86315	MMcf
+2006	OK	Natural Gas	1688985	MMcf
+2006	PA	Natural Gas	175950	MMcf
+2006	TX	Natural Gas	6301649	MMcf
+2006	UT	Natural Gas	356321	MMcf
+2006	WV	Natural Gas	225530	MMcf
+2006	WY	Natural Gas	2111766	MMcf
+2007	US	Natural Gas	24663656	MMcf
+2007	AK	Natural Gas	3105086	MMcf
+2007	AR	Natural Gas	270414	MMcf
+2007	CA	Natural Gas	286584	MMcf
+2007	CO	Natural Gas	1254529	MMcf
+2007	KS	Natural Gas	366859	MMcf
+2007	LA	Natural Gas	1309960	MMcf
+2007	MT	Natural Gas	120575	MMcf
+2007	NM	Natural Gas	1555450	MMcf
+2007	ND	Natural Gas	70797	MMcf
+2007	OH	Natural Gas	88095	MMcf
+2007	OK	Natural Gas	1783682	MMcf
+2007	PA	Natural Gas	182277	MMcf
+2007	TX	Natural Gas	6931629	MMcf
+2007	UT	Natural Gas	385361	MMcf
+2007	WV	Natural Gas	231184	MMcf
+2007	WY	Natural Gas	2257884	MMcf
+2008	US	Natural Gas	25636257	MMcf
+2008	AK	Natural Gas	3027696	MMcf
+2008	AR	Natural Gas	447082	MMcf
+2008	CA	Natural Gas	281088	MMcf
+2008	CO	Natural Gas	1402845	MMcf
+2008	KS	Natural Gas	375314	MMcf
+2008	LA	Natural Gas	1301523	MMcf
+2008	MT	Natural Gas	119399	MMcf
+2008	NM	Natural Gas	1487123	MMcf
+2008	ND	Natural Gas	87188	MMcf
+2008	OH	Natural Gas	84858	MMcf
+2008	OK	Natural Gas	1886710	MMcf
+2008	PA	Natural Gas	198295	MMcf
+2008	TX	Natural Gas	7753869	MMcf
+2008	UT	Natural Gas	441598	MMcf
+2008	WV	Natural Gas	244880	MMcf
+2008	WY	Natural Gas	2488267	MMcf
+2009	US	Natural Gas	26056893	MMcf
+2009	AK	Natural Gas	2954896	MMcf
+2009	AR	Natural Gas	680613	MMcf
+2009	CA	Natural Gas	258983	MMcf
+2009	CO	Natural Gas	1511654	MMcf
+2009	KS	Natural Gas	355394	MMcf
+2009	LA	Natural Gas	1482252	MMcf
+2009	MT	Natural Gas	105251	MMcf
+2009	NM	Natural Gas	1425222	MMcf
+2009	ND	Natural Gas	92489	MMcf
+2009	OH	Natural Gas	88824	MMcf
+2009	OK	Natural Gas	1901556	MMcf
+2009	PA	Natural Gas	273869	MMcf
+2009	TX	Natural Gas	7615836	MMcf
+2009	UT	Natural Gas	449511	MMcf
+2009	WV	Natural Gas	264436	MMcf
+2009	WY	Natural Gas	2536336	MMcf
+2010	US	Natural Gas	26816085	MMcf
+2010	AK	Natural Gas	2826952	MMcf
+2010	AR	Natural Gas	927479	MMcf
+2010	CA	Natural Gas	273136	MMcf
+2010	CO	Natural Gas	1589664	MMcf
+2010	KS	Natural Gas	325591	MMcf
+2010	LA	Natural Gas	2148447	MMcf
+2010	MT	Natural Gas	93266	MMcf
+2010	NM	Natural Gas	1341475	MMcf
+2010	ND	Natural Gas	113867	MMcf
+2010	OH	Natural Gas	78122	MMcf
+2010	OK	Natural Gas	1827328	MMcf
+2010	PA	Natural Gas	572902	MMcf
+2010	TX	Natural Gas	7565123	MMcf
+2010	UT	Natural Gas	436885	MMcf
+2010	WV	Natural Gas	265174	MMcf
+2010	WY	Natural Gas	2514657	MMcf
+2011	US	Natural Gas	28479026	MMcf
+2011	AK	Natural Gas	2798220	MMcf
+2011	AR	Natural Gas	1076757	MMcf
+2011	CA	Natural Gas	237388	MMcf
+2011	CO	Natural Gas	1649306	MMcf
+2011	KS	Natural Gas	309952	MMcf
+2011	LA	Natural Gas	2969297	MMcf
+2011	MT	Natural Gas	79506	MMcf
+2011	NM	Natural Gas	1287682	MMcf
+2011	ND	Natural Gas	157025	MMcf
+2011	OH	Natural Gas	78858	MMcf
+2011	OK	Natural Gas	1888870	MMcf
+2011	PA	Natural Gas	1310592	MMcf
+2011	TX	Natural Gas	7910898	MMcf
+2011	UT	Natural Gas	461507	MMcf
+2011	WV	Natural Gas	394125	MMcf
+2011	WY	Natural Gas	2375301	MMcf
+2012	US	Natural Gas	29542313	MMcf
+2012	AK	Natural Gas	2857485	MMcf
+2012	AR	Natural Gas	1146168	MMcf
+2012	CA	Natural Gas	214509	MMcf
+2012	CO	Natural Gas	1709376	MMcf
+2012	KS	Natural Gas	296299	MMcf
+2012	LA	Natural Gas	2882193	MMcf
+2012	MT	Natural Gas	66954	MMcf
+2012	NM	Natural Gas	1276296	MMcf
+2012	ND	Natural Gas	258568	MMcf
+2012	OH	Natural Gas	84482	MMcf
+2012	OK	Natural Gas	2023461	MMcf
+2012	PA	Natural Gas	2256696	MMcf
+2012	TX	Natural Gas	8127004	MMcf
+2012	UT	Natural Gas	490393	MMcf
+2012	WV	Natural Gas	539860	MMcf
+2012	WY	Natural Gas	2225622	MMcf
+2013	US	Natural Gas	29522551	MMcf
+2013	AK	Natural Gas	2882956	MMcf
+2013	AR	Natural Gas	1139654	MMcf
+2013	CA	Natural Gas	219386	MMcf
+2013	CO	Natural Gas	1604860	MMcf
+2013	KS	Natural Gas	292467	MMcf
+2013	LA	Natural Gas	2289193	MMcf
+2013	MT	Natural Gas	63242	MMcf
+2013	NM	Natural Gas	1247394	MMcf
+2013	ND	Natural Gas	345787	MMcf
+2013	OH	Natural Gas	166017	MMcf
+2013	OK	Natural Gas	1993754	MMcf
+2013	PA	Natural Gas	3259042	MMcf
+2013	TX	Natural Gas	8285436	MMcf
+2013	UT	Natural Gas	470863	MMcf
+2013	WV	Natural Gas	741853	MMcf
+2013	WY	Natural Gas	2047757	MMcf
+1967	AL	Natural Gas	0	MMcf
+1967	AZ	Natural Gas	0	MMcf
+1967	FL	Natural Gas	0	MMcf
+1967	IL	Natural Gas	5270	MMcf
+1967	IN	Natural Gas	198	MMcf
+1967	KY	Natural Gas	89174	MMcf
+1967	MD	Natural Gas	621	MMcf
+1967	MI	Natural Gas	43092	MMcf
+1967	MS	Natural Gas	181309	MMcf
+1967	MO	Natural Gas	0	MMcf
+1967	NE	Natural Gas	10082	MMcf
+1967	NV	Natural Gas	0	MMcf
+1967	NY	Natural Gas	3837	MMcf
+1967	OR	Natural Gas	0	MMcf
+1967	SD	Natural Gas	0	MMcf
+1967	TN	Natural Gas	0	MMcf
+1967	VA	Natural Gas	3818	MMcf
+1968	AL	Natural Gas	0	MMcf
+1968	AZ	Natural Gas	0	MMcf
+1968	FL	Natural Gas	0	MMcf
+1968	IL	Natural Gas	4482	MMcf
+1968	IN	Natural Gas	234	MMcf
+1968	KY	Natural Gas	89039	MMcf
+1968	MD	Natural Gas	864	MMcf
+1968	MI	Natural Gas	43930	MMcf
+1968	MS	Natural Gas	171617	MMcf
+1968	MO	Natural Gas	0	MMcf
+1968	NE	Natural Gas	9329	MMcf
+1968	NV	Natural Gas	0	MMcf
+1968	NY	Natural Gas	4632	MMcf
+1968	OR	Natural Gas	0	MMcf
+1968	SD	Natural Gas	0	MMcf
+1968	TN	Natural Gas	0	MMcf
+1968	VA	Natural Gas	3389	MMcf
+1969	AL	Natural Gas	0	MMcf
+1969	AZ	Natural Gas	0	MMcf
+1969	FL	Natural Gas	0	MMcf
+1969	IL	Natural Gas	3893	MMcf
+1969	IN	Natural Gas	171	MMcf
+1969	KY	Natural Gas	81304	MMcf
+1969	MD	Natural Gas	978	MMcf
+1969	MI	Natural Gas	38690	MMcf
+1969	MS	Natural Gas	168714	MMcf
+1969	MO	Natural Gas	0	MMcf
+1969	NE	Natural Gas	7416	MMcf
+1969	NV	Natural Gas	0	MMcf
+1969	NY	Natural Gas	4861	MMcf
+1969	OR	Natural Gas	0	MMcf
+1969	SD	Natural Gas	0	MMcf
+1969	TN	Natural Gas	0	MMcf
+1969	VA	Natural Gas	2846	MMcf
+1970	AL	Natural Gas	0	MMcf
+1970	AZ	Natural Gas	0	MMcf
+1970	FL	Natural Gas	0	MMcf
+1970	IL	Natural Gas	4972	MMcf
+1970	IN	Natural Gas	153	MMcf
+1970	KY	Natural Gas	77892	MMcf
+1970	MD	Natural Gas	813	MMcf
+1970	MI	Natural Gas	40038	MMcf
+1970	MS	Natural Gas	157020	MMcf
+1970	MO	Natural Gas	0	MMcf
+1970	NE	Natural Gas	6309	MMcf
+1970	NV	Natural Gas	0	MMcf
+1970	NY	Natural Gas	3358	MMcf
+1970	OR	Natural Gas	0	MMcf
+1970	SD	Natural Gas	0	MMcf
+1970	TN	Natural Gas	0	MMcf
+1970	VA	Natural Gas	2805	MMcf
+1971	AL	Natural Gas	0	MMcf
+1971	AZ	Natural Gas	1215	MMcf
+1971	FL	Natural Gas	1258	MMcf
+1971	IL	Natural Gas	4495	MMcf
+1971	IN	Natural Gas	537	MMcf
+1971	KY	Natural Gas	72723	MMcf
+1971	MD	Natural Gas	214	MMcf
+1971	MI	Natural Gas	26450	MMcf
+1971	MS	Natural Gas	136536	MMcf
+1971	MO	Natural Gas	22	MMcf
+1971	NE	Natural Gas	5054	MMcf
+1971	NV	Natural Gas	0	MMcf
+1971	NY	Natural Gas	2202	MMcf
+1971	OR	Natural Gas	0	MMcf
+1971	SD	Natural Gas	9	MMcf
+1971	TN	Natural Gas	497	MMcf
+1971	VA	Natural Gas	2619	MMcf
+1972	AL	Natural Gas	0	MMcf
+1972	AZ	Natural Gas	809	MMcf
+1972	FL	Natural Gas	15805	MMcf
+1972	IL	Natural Gas	3000	MMcf
+1972	IN	Natural Gas	355	MMcf
+1972	KY	Natural Gas	63648	MMcf
+1972	MD	Natural Gas	244	MMcf
+1972	MI	Natural Gas	35253	MMcf
+1972	MS	Natural Gas	119697	MMcf
+1972	MO	Natural Gas	9	MMcf
+1972	NE	Natural Gas	4741	MMcf
+1972	NV	Natural Gas	0	MMcf
+1972	NY	Natural Gas	3679	MMcf
+1972	OR	Natural Gas	0	MMcf
+1972	SD	Natural Gas	8	MMcf
+1972	TN	Natural Gas	205	MMcf
+1972	VA	Natural Gas	2787	MMcf
+1973	AL	Natural Gas	0	MMcf
+1973	AZ	Natural Gas	402	MMcf
+1973	FL	Natural Gas	33857	MMcf
+1973	IL	Natural Gas	1638	MMcf
+1973	IN	Natural Gas	276	MMcf
+1973	KY	Natural Gas	62396	MMcf
+1973	MD	Natural Gas	298	MMcf
+1973	MI	Natural Gas	45696	MMcf
+1973	MS	Natural Gas	117761	MMcf
+1973	MO	Natural Gas	33	MMcf
+1973	NE	Natural Gas	4670	MMcf
+1973	NV	Natural Gas	0	MMcf
+1973	NY	Natural Gas	4539	MMcf
+1973	OR	Natural Gas	0	MMcf
+1973	SD	Natural Gas	10	MMcf
+1973	TN	Natural Gas	185	MMcf
+1973	VA	Natural Gas	5101	MMcf
+1974	AL	Natural Gas	0	MMcf
+1974	AZ	Natural Gas	250	MMcf
+1974	FL	Natural Gas	38137	MMcf
+1974	IL	Natural Gas	1436	MMcf
+1974	IN	Natural Gas	176	MMcf
+1974	KY	Natural Gas	71876	MMcf
+1974	MD	Natural Gas	133	MMcf
+1974	MI	Natural Gas	70464	MMcf
+1974	MS	Natural Gas	98995	MMcf
+1974	MO	Natural Gas	33	MMcf
+1974	NE	Natural Gas	4675	MMcf
+1974	NV	Natural Gas	0	MMcf
+1974	NY	Natural Gas	4990	MMcf
+1974	OR	Natural Gas	0	MMcf
+1974	SD	Natural Gas	48	MMcf
+1974	TN	Natural Gas	393	MMcf
+1974	VA	Natural Gas	7096	MMcf
+1975	AL	Natural Gas	0	MMcf
+1975	AZ	Natural Gas	255	MMcf
+1975	FL	Natural Gas	44383	MMcf
+1975	IL	Natural Gas	1440	MMcf
+1975	IN	Natural Gas	346	MMcf
+1975	KY	Natural Gas	60511	MMcf
+1975	MD	Natural Gas	93	MMcf
+1975	MI	Natural Gas	103901	MMcf
+1975	MS	Natural Gas	92500	MMcf
+1975	MO	Natural Gas	30	MMcf
+1975	NE	Natural Gas	3963	MMcf
+1975	NV	Natural Gas	0	MMcf
+1975	NY	Natural Gas	7628	MMcf
+1975	OR	Natural Gas	0	MMcf
+1975	SD	Natural Gas	39	MMcf
+1975	TN	Natural Gas	612	MMcf
+1975	VA	Natural Gas	6723	MMcf
+1976	AL	Natural Gas	0	MMcf
+1976	AZ	Natural Gas	294	MMcf
+1976	FL	Natural Gas	46513	MMcf
+1976	IL	Natural Gas	1556	MMcf
+1976	IN	Natural Gas	192	MMcf
+1976	KY	Natural Gas	66137	MMcf
+1976	MD	Natural Gas	75	MMcf
+1976	MI	Natural Gas	121631	MMcf
+1976	MS	Natural Gas	89914	MMcf
+1976	MO	Natural Gas	29	MMcf
+1976	NE	Natural Gas	3308	MMcf
+1976	NV	Natural Gas	0	MMcf
+1976	NY	Natural Gas	9235	MMcf
+1976	OR	Natural Gas	0	MMcf
+1976	SD	Natural Gas	52	MMcf
+1976	TN	Natural Gas	532	MMcf
+1976	VA	Natural Gas	6937	MMcf
+1977	AL	Natural Gas	0	MMcf
+1977	AZ	Natural Gas	343	MMcf
+1977	FL	Natural Gas	48778	MMcf
+1977	IL	Natural Gas	1003	MMcf
+1977	IN	Natural Gas	183	MMcf
+1977	KY	Natural Gas	60902	MMcf
+1977	MD	Natural Gas	82	MMcf
+1977	MI	Natural Gas	133226	MMcf
+1977	MS	Natural Gas	102155	MMcf
+1977	MO	Natural Gas	20	MMcf
+1977	NE	Natural Gas	2849	MMcf
+1977	NV	Natural Gas	0	MMcf
+1977	NY	Natural Gas	10682	MMcf
+1977	OR	Natural Gas	0	MMcf
+1977	SD	Natural Gas	69	MMcf
+1977	TN	Natural Gas	855	MMcf
+1977	VA	Natural Gas	8220	MMcf
+1978	AL	Natural Gas	0	MMcf
+1978	AZ	Natural Gas	286	MMcf
+1978	FL	Natural Gas	51595	MMcf
+1978	IL	Natural Gas	1159	MMcf
+1978	IN	Natural Gas	163	MMcf
+1978	KY	Natural Gas	70044	MMcf
+1978	MD	Natural Gas	88	MMcf
+1978	MI	Natural Gas	152184	MMcf
+1978	MS	Natural Gas	148482	MMcf
+1978	MO	Natural Gas	0	MMcf
+1978	NE	Natural Gas	2882	MMcf
+1978	NV	Natural Gas	0	MMcf
+1978	NY	Natural Gas	13900	MMcf
+1978	OR	Natural Gas	0	MMcf
+1978	SD	Natural Gas	0	MMcf
+1978	TN	Natural Gas	1482	MMcf
+1978	VA	Natural Gas	8492	MMcf
+1979	AL	Natural Gas	0	MMcf
+1979	AZ	Natural Gas	348	MMcf
+1979	FL	Natural Gas	50190	MMcf
+1979	IL	Natural Gas	1585	MMcf
+1979	IN	Natural Gas	350	MMcf
+1979	KY	Natural Gas	59520	MMcf
+1979	MD	Natural Gas	28	MMcf
+1979	MI	Natural Gas	164860	MMcf
+1979	MS	Natural Gas	192376	MMcf
+1979	MO	Natural Gas	0	MMcf
+1979	NE	Natural Gas	3208	MMcf
+1979	NV	Natural Gas	0	MMcf
+1979	NY	Natural Gas	15500	MMcf
+1979	OR	Natural Gas	2	MMcf
+1979	SD	Natural Gas	919	MMcf
+1979	TN	Natural Gas	1605	MMcf
+1979	VA	Natural Gas	8544	MMcf
+1980	AL	Natural Gas	0	MMcf
+1980	AZ	Natural Gas	357	MMcf
+1980	FL	Natural Gas	46421	MMcf
+1980	IL	Natural Gas	1574	MMcf
+1980	IN	Natural Gas	463	MMcf
+1980	KY	Natural Gas	57180	MMcf
+1980	MD	Natural Gas	68	MMcf
+1980	MI	Natural Gas	164110	MMcf
+1980	MS	Natural Gas	215105	MMcf
+1980	MO	Natural Gas	0	MMcf
+1980	NE	Natural Gas	2550	MMcf
+1980	NV	Natural Gas	0	MMcf
+1980	NY	Natural Gas	15650	MMcf
+1980	OR	Natural Gas	5	MMcf
+1980	SD	Natural Gas	1198	MMcf
+1980	TN	Natural Gas	1241	MMcf
+1980	VA	Natural Gas	7812	MMcf
+1981	AL	Natural Gas	0	MMcf
+1981	AZ	Natural Gas	293	MMcf
+1981	FL	Natural Gas	38539	MMcf
+1981	IL	Natural Gas	1295	MMcf
+1981	IN	Natural Gas	330	MMcf
+1981	KY	Natural Gas	61312	MMcf
+1981	MD	Natural Gas	56	MMcf
+1981	MI	Natural Gas	158293	MMcf
+1981	MS	Natural Gas	232870	MMcf
+1981	MO	Natural Gas	0	MMcf
+1981	NE	Natural Gas	2713	MMcf
+1981	NV	Natural Gas	0	MMcf
+1981	NY	Natural Gas	19000	MMcf
+1981	OR	Natural Gas	5	MMcf
+1981	SD	Natural Gas	1207	MMcf
+1981	TN	Natural Gas	1719	MMcf
+1981	VA	Natural Gas	8903	MMcf
+1982	AL	Natural Gas	0	MMcf
+1982	AZ	Natural Gas	261	MMcf
+1982	FL	Natural Gas	26397	MMcf
+1982	IL	Natural Gas	1162	MMcf
+1982	IN	Natural Gas	233	MMcf
+1982	KY	Natural Gas	51924	MMcf
+1982	MD	Natural Gas	36	MMcf
+1982	MI	Natural Gas	158771	MMcf
+1982	MS	Natural Gas	221696	MMcf
+1982	MO	Natural Gas	0	MMcf
+1982	NE	Natural Gas	2280	MMcf
+1982	NV	Natural Gas	0	MMcf
+1982	NY	Natural Gas	18760	MMcf
+1982	OR	Natural Gas	3	MMcf
+1982	SD	Natural Gas	2385	MMcf
+1982	TN	Natural Gas	2976	MMcf
+1982	VA	Natural Gas	6880	MMcf
+1983	AL	Natural Gas	0	MMcf
+1983	AZ	Natural Gas	240	MMcf
+1983	FL	Natural Gas	23356	MMcf
+1983	IL	Natural Gas	1030	MMcf
+1983	IN	Natural Gas	135	MMcf
+1983	KY	Natural Gas	46720	MMcf
+1983	MD	Natural Gas	31	MMcf
+1983	MI	Natural Gas	144574	MMcf
+1983	MS	Natural Gas	201984	MMcf
+1983	MO	Natural Gas	0	MMcf
+1983	NE	Natural Gas	2091	MMcf
+1983	NV	Natural Gas	0	MMcf
+1983	NY	Natural Gas	21580	MMcf
+1983	OR	Natural Gas	3	MMcf
+1983	SD	Natural Gas	2130	MMcf
+1983	TN	Natural Gas	3950	MMcf
+1983	VA	Natural Gas	4346	MMcf
+1984	AL	Natural Gas	0	MMcf
+1984	AZ	Natural Gas	227	MMcf
+1984	FL	Natural Gas	13867	MMcf
+1984	IL	Natural Gas	1530	MMcf
+1984	IN	Natural Gas	394	MMcf
+1984	KY	Natural Gas	61518	MMcf
+1984	MD	Natural Gas	60	MMcf
+1984	MI	Natural Gas	150201	MMcf
+1984	MS	Natural Gas	209268	MMcf
+1984	MO	Natural Gas	4	MMcf
+1984	NE	Natural Gas	2300	MMcf
+1984	NV	Natural Gas	0	MMcf
+1984	NY	Natural Gas	27600	MMcf
+1984	OR	Natural Gas	2790	MMcf
+1984	SD	Natural Gas	2483	MMcf
+1984	TN	Natural Gas	5022	MMcf
+1984	VA	Natural Gas	8928	MMcf
+1985	AL	Natural Gas	0	MMcf
+1985	AZ	Natural Gas	209	MMcf
+1985	FL	Natural Gas	11604	MMcf
+1985	IL	Natural Gas	1324	MMcf
+1985	IN	Natural Gas	367	MMcf
+1985	KY	Natural Gas	73126	MMcf
+1985	MD	Natural Gas	39	MMcf
+1985	MI	Natural Gas	137519	MMcf
+1985	MS	Natural Gas	191898	MMcf
+1985	MO	Natural Gas	4	MMcf
+1985	NE	Natural Gas	1944	MMcf
+1985	NV	Natural Gas	0	MMcf
+1985	NY	Natural Gas	35334	MMcf
+1985	OR	Natural Gas	4080	MMcf
+1985	SD	Natural Gas	3146	MMcf
+1985	TN	Natural Gas	4686	MMcf
+1985	VA	Natural Gas	15041	MMcf
+1986	AL	Natural Gas	0	MMcf
+1986	AZ	Natural Gas	185	MMcf
+1986	FL	Natural Gas	9766	MMcf
+1986	IL	Natural Gas	1887	MMcf
+1986	IN	Natural Gas	365	MMcf
+1986	KY	Natural Gas	80195	MMcf
+1986	MD	Natural Gas	20	MMcf
+1986	MI	Natural Gas	132951	MMcf
+1986	MS	Natural Gas	210086	MMcf
+1986	MO	Natural Gas	4	MMcf
+1986	NE	Natural Gas	1403	MMcf
+1986	NV	Natural Gas	0	MMcf
+1986	NY	Natural Gas	33684	MMcf
+1986	OR	Natural Gas	4600	MMcf
+1986	SD	Natural Gas	2463	MMcf
+1986	TN	Natural Gas	3464	MMcf
+1986	VA	Natural Gas	15427	MMcf
+1987	AL	Natural Gas	0	MMcf
+1987	AZ	Natural Gas	185	MMcf
+1987	FL	Natural Gas	9132	MMcf
+1987	IL	Natural Gas	1371	MMcf
+1987	IN	Natural Gas	217	MMcf
+1987	KY	Natural Gas	70125	MMcf
+1987	MD	Natural Gas	44	MMcf
+1987	MI	Natural Gas	153307	MMcf
+1987	MS	Natural Gas	224983	MMcf
+1987	MO	Natural Gas	4	MMcf
+1987	NE	Natural Gas	1261	MMcf
+1987	NV	Natural Gas	0	MMcf
+1987	NY	Natural Gas	28478	MMcf
+1987	OR	Natural Gas	3800	MMcf
+1987	SD	Natural Gas	3662	MMcf
+1987	TN	Natural Gas	2707	MMcf
+1987	VA	Natural Gas	19520	MMcf
+1988	AL	Natural Gas	0	MMcf
+1988	AZ	Natural Gas	179	MMcf
+1988	FL	Natural Gas	8407	MMcf
+1988	IL	Natural Gas	1338	MMcf
+1988	IN	Natural Gas	412	MMcf
+1988	KY	Natural Gas	73629	MMcf
+1988	MD	Natural Gas	29	MMcf
+1988	MI	Natural Gas	151809	MMcf
+1988	MS	Natural Gas	237180	MMcf
+1988	MO	Natural Gas	4	MMcf
+1988	NE	Natural Gas	910	MMcf
+1988	NV	Natural Gas	0	MMcf
+1988	NY	Natural Gas	27467	MMcf
+1988	OR	Natural Gas	4000	MMcf
+1988	SD	Natural Gas	4283	MMcf
+1988	TN	Natural Gas	2100	MMcf
+1988	VA	Natural Gas	18682	MMcf
+1989	AL	Natural Gas	0	MMcf
+1989	AZ	Natural Gas	1455	MMcf
+1989	FL	Natural Gas	8773	MMcf
+1989	IL	Natural Gas	1477	MMcf
+1989	IN	Natural Gas	416	MMcf
+1989	KY	Natural Gas	72417	MMcf
+1989	MD	Natural Gas	34	MMcf
+1989	MI	Natural Gas	162826	MMcf
+1989	MS	Natural Gas	199856	MMcf
+1989	MO	Natural Gas	4	MMcf
+1989	NE	Natural Gas	878	MMcf
+1989	NV	Natural Gas	0	MMcf
+1989	NY	Natural Gas	25469	MMcf
+1989	OR	Natural Gas	2500	MMcf
+1989	SD	Natural Gas	4704	MMcf
+1989	TN	Natural Gas	1900	MMcf
+1989	VA	Natural Gas	17935	MMcf
+1990	AL	Natural Gas	0	MMcf
+1990	AZ	Natural Gas	2147	MMcf
+1990	FL	Natural Gas	7566	MMcf
+1990	IL	Natural Gas	677	MMcf
+1990	IN	Natural Gas	399	MMcf
+1990	KY	Natural Gas	75333	MMcf
+1990	MD	Natural Gas	22	MMcf
+1990	MI	Natural Gas	177815	MMcf
+1990	MS	Natural Gas	200592	MMcf
+1990	MO	Natural Gas	7	MMcf
+1990	NE	Natural Gas	793	MMcf
+1990	NV	Natural Gas	0	MMcf
+1990	NY	Natural Gas	25398	MMcf
+1990	OR	Natural Gas	2815	MMcf
+1990	SD	Natural Gas	4782	MMcf
+1990	TN	Natural Gas	2067	MMcf
+1990	VA	Natural Gas	14774	MMcf
+1991	AL	Natural Gas	0	MMcf
+1991	AZ	Natural Gas	1280	MMcf
+1991	FL	Natural Gas	5898	MMcf
+1991	IL	Natural Gas	466	MMcf
+1991	IN	Natural Gas	232	MMcf
+1991	KY	Natural Gas	78904	MMcf
+1991	MD	Natural Gas	29	MMcf
+1991	MI	Natural Gas	201413	MMcf
+1991	MS	Natural Gas	180772	MMcf
+1991	MO	Natural Gas	15	MMcf
+1991	NE	Natural Gas	784	MMcf
+1991	NV	Natural Gas	53	MMcf
+1991	NY	Natural Gas	22778	MMcf
+1991	OR	Natural Gas	2741	MMcf
+1991	SD	Natural Gas	5804	MMcf
+1991	TN	Natural Gas	1856	MMcf
+1991	VA	Natural Gas	14906	MMcf
+1992	AL	Natural Gas	222009	MMcf
+1992	AZ	Natural Gas	794	MMcf
+1992	FL	Natural Gas	7584	MMcf
+1992	IL	Natural Gas	347	MMcf
+1992	IN	Natural Gas	174	MMcf
+1992	KY	Natural Gas	79690	MMcf
+1992	MD	Natural Gas	33	MMcf
+1992	MI	Natural Gas	200479	MMcf
+1992	MS	Natural Gas	165538	MMcf
+1992	MO	Natural Gas	27	MMcf
+1992	NE	Natural Gas	1177	MMcf
+1992	NV	Natural Gas	30	MMcf
+1992	NY	Natural Gas	23521	MMcf
+1992	OR	Natural Gas	2580	MMcf
+1992	SD	Natural Gas	6963	MMcf
+1992	TN	Natural Gas	1770	MMcf
+1992	VA	Natural Gas	24733	MMcf
+1993	AL	Natural Gas	228298	MMcf
+1993	AZ	Natural Gas	618	MMcf
+1993	FL	Natural Gas	8011	MMcf
+1993	IL	Natural Gas	340	MMcf
+1993	IN	Natural Gas	192	MMcf
+1993	KY	Natural Gas	86966	MMcf
+1993	MD	Natural Gas	28	MMcf
+1993	MI	Natural Gas	210299	MMcf
+1993	MS	Natural Gas	145026	MMcf
+1993	MO	Natural Gas	14	MMcf
+1993	NE	Natural Gas	2114	MMcf
+1993	NV	Natural Gas	21	MMcf
+1993	NY	Natural Gas	21197	MMcf
+1993	OR	Natural Gas	4003	MMcf
+1993	SD	Natural Gas	7057	MMcf
+1993	TN	Natural Gas	1660	MMcf
+1993	VA	Natural Gas	37840	MMcf
+1994	AL	Natural Gas	229483	MMcf
+1994	AZ	Natural Gas	759	MMcf
+1994	FL	Natural Gas	8468	MMcf
+1994	IL	Natural Gas	333	MMcf
+1994	IN	Natural Gas	107	MMcf
+1994	KY	Natural Gas	73081	MMcf
+1994	MD	Natural Gas	26	MMcf
+1994	MI	Natural Gas	228321	MMcf
+1994	MS	Natural Gas	121802	MMcf
+1994	MO	Natural Gas	8	MMcf
+1994	NE	Natural Gas	2898	MMcf
+1994	NV	Natural Gas	16	MMcf
+1994	NY	Natural Gas	20476	MMcf
+1994	OR	Natural Gas	4200	MMcf
+1994	SD	Natural Gas	7264	MMcf
+1994	TN	Natural Gas	1990	MMcf
+1994	VA	Natural Gas	50259	MMcf
+1995	AL	Natural Gas	223527	MMcf
+1995	AZ	Natural Gas	558	MMcf
+1995	FL	Natural Gas	7133	MMcf
+1995	IL	Natural Gas	335	MMcf
+1995	IN	Natural Gas	249	MMcf
+1995	KY	Natural Gas	74754	MMcf
+1995	MD	Natural Gas	22	MMcf
+1995	MI	Natural Gas	243867	MMcf
+1995	MS	Natural Gas	119452	MMcf
+1995	MO	Natural Gas	16	MMcf
+1995	NE	Natural Gas	2240	MMcf
+1995	NV	Natural Gas	13	MMcf
+1995	NY	Natural Gas	18400	MMcf
+1995	OR	Natural Gas	2520	MMcf
+1995	SD	Natural Gas	8374	MMcf
+1995	TN	Natural Gas	1820	MMcf
+1995	VA	Natural Gas	49818	MMcf
+1996	AL	Natural Gas	221233	MMcf
+1996	AZ	Natural Gas	464	MMcf
+1996	FL	Natural Gas	6706	MMcf
+1996	IL	Natural Gas	298	MMcf
+1996	IN	Natural Gas	360	MMcf
+1996	KY	Natural Gas	81435	MMcf
+1996	MD	Natural Gas	135	MMcf
+1996	MI	Natural Gas	251404	MMcf
+1996	MS	Natural Gas	123622	MMcf
+1996	MO	Natural Gas	25	MMcf
+1996	NE	Natural Gas	1876	MMcf
+1996	NV	Natural Gas	11	MMcf
+1996	NY	Natural Gas	18134	MMcf
+1996	OR	Natural Gas	1743	MMcf
+1996	SD	Natural Gas	8965	MMcf
+1996	TN	Natural Gas	1690	MMcf
+1996	VA	Natural Gas	54290	MMcf
+1997	AL	Natural Gas	220674	MMcf
+1997	AZ	Natural Gas	453	MMcf
+1997	FL	Natural Gas	6907	MMcf
+1997	IL	Natural Gas	231	MMcf
+1997	IN	Natural Gas	526	MMcf
+1997	KY	Natural Gas	79547	MMcf
+1997	MD	Natural Gas	118	MMcf
+1997	MI	Natural Gas	311614	MMcf
+1997	MS	Natural Gas	126623	MMcf
+1997	MO	Natural Gas	5	MMcf
+1997	NE	Natural Gas	1670	MMcf
+1997	NV	Natural Gas	9	MMcf
+1997	NY	Natural Gas	16193	MMcf
+1997	OR	Natural Gas	1382	MMcf
+1997	SD	Natural Gas	9795	MMcf
+1997	TN	Natural Gas	1510	MMcf
+1997	VA	Natural Gas	58249	MMcf
+1998	AL	Natural Gas	212470	MMcf
+1998	AZ	Natural Gas	457	MMcf
+1998	FL	Natural Gas	6547	MMcf
+1998	IL	Natural Gas	209	MMcf
+1998	IN	Natural Gas	615	MMcf
+1998	KY	Natural Gas	81869	MMcf
+1998	MD	Natural Gas	63	MMcf
+1998	MI	Natural Gas	283740	MMcf
+1998	MS	Natural Gas	129216	MMcf
+1998	MO	Natural Gas	0	MMcf
+1998	NE	Natural Gas	1695	MMcf
+1998	NV	Natural Gas	9	MMcf
+1998	NY	Natural Gas	16704	MMcf
+1998	OR	Natural Gas	1263	MMcf
+1998	SD	Natural Gas	9252	MMcf
+1998	TN	Natural Gas	1420	MMcf
+1998	VA	Natural Gas	57263	MMcf
+1999	AL	Natural Gas	207863	MMcf
+1999	AZ	Natural Gas	474	MMcf
+1999	FL	Natural Gas	6702	MMcf
+1999	IL	Natural Gas	195	MMcf
+1999	IN	Natural Gas	855	MMcf
+1999	KY	Natural Gas	76770	MMcf
+1999	MD	Natural Gas	18	MMcf
+1999	MI	Natural Gas	283028	MMcf
+1999	MS	Natural Gas	126755	MMcf
+1999	MO	Natural Gas	0	MMcf
+1999	NE	Natural Gas	1395	MMcf
+1999	NV	Natural Gas	8	MMcf
+1999	NY	Natural Gas	16127	MMcf
+1999	OR	Natural Gas	1555	MMcf
+1999	SD	Natural Gas	9340	MMcf
+1999	TN	Natural Gas	1230	MMcf
+1999	VA	Natural Gas	72189	MMcf
+2000	AL	Natural Gas	200255	MMcf
+2000	AZ	Natural Gas	368	MMcf
+2000	FL	Natural Gas	7279	MMcf
+2000	IL	Natural Gas	189	MMcf
+2000	IN	Natural Gas	899	MMcf
+2000	KY	Natural Gas	81545	MMcf
+2000	MD	Natural Gas	34	MMcf
+2000	MI	Natural Gas	302220	MMcf
+2000	MS	Natural Gas	114380	MMcf
+2000	MO	Natural Gas	0	MMcf
+2000	NE	Natural Gas	1218	MMcf
+2000	NV	Natural Gas	7	MMcf
+2000	NY	Natural Gas	17757	MMcf
+2000	OR	Natural Gas	1412	MMcf
+2000	SD	Natural Gas	10680	MMcf
+2000	TN	Natural Gas	1150	MMcf
+2000	VA	Natural Gas	71545	MMcf
+2001	AL	Natural Gas	191119	MMcf
+2001	AZ	Natural Gas	307	MMcf
+2001	FL	Natural Gas	6446	MMcf
+2001	IL	Natural Gas	185	MMcf
+2001	IN	Natural Gas	1064	MMcf
+2001	KY	Natural Gas	81723	MMcf
+2001	MD	Natural Gas	32	MMcf
+2001	MI	Natural Gas	280700	MMcf
+2001	MS	Natural Gas	136740	MMcf
+2001	MO	Natural Gas	0	MMcf
+2001	NE	Natural Gas	1208	MMcf
+2001	NV	Natural Gas	7	MMcf
+2001	NY	Natural Gas	27787	MMcf
+2001	OR	Natural Gas	1112	MMcf
+2001	SD	Natural Gas	11313	MMcf
+2001	TN	Natural Gas	2000	MMcf
+2001	VA	Natural Gas	71543	MMcf
+2002	AL	Natural Gas	184500	MMcf
+2002	AZ	Natural Gas	301	MMcf
+2002	FL	Natural Gas	3785	MMcf
+2002	IL	Natural Gas	180	MMcf
+2002	IN	Natural Gas	1309	MMcf
+2002	KY	Natural Gas	88259	MMcf
+2002	MD	Natural Gas	22	MMcf
+2002	MI	Natural Gas	280140	MMcf
+2002	MS	Natural Gas	147415	MMcf
+2002	MO	Natural Gas	0	MMcf
+2002	NE	Natural Gas	1193	MMcf
+2002	NV	Natural Gas	6	MMcf
+2002	NY	Natural Gas	36816	MMcf
+2002	OR	Natural Gas	837	MMcf
+2002	SD	Natural Gas	10424	MMcf
+2002	TN	Natural Gas	2050	MMcf
+2002	VA	Natural Gas	76915	MMcf
+2003	AL	Natural Gas	176571	MMcf
+2003	AZ	Natural Gas	443	MMcf
+2003	FL	Natural Gas	3474	MMcf
+2003	IL	Natural Gas	174	MMcf
+2003	IN	Natural Gas	1464	MMcf
+2003	KY	Natural Gas	87608	MMcf
+2003	MD	Natural Gas	48	MMcf
+2003	MI	Natural Gas	242651	MMcf
+2003	MS	Natural Gas	161676	MMcf
+2003	MO	Natural Gas	0	MMcf
+2003	NE	Natural Gas	1466	MMcf
+2003	NV	Natural Gas	6	MMcf
+2003	NY	Natural Gas	36137	MMcf
+2003	OR	Natural Gas	731	MMcf
+2003	SD	Natural Gas	11605	MMcf
+2003	TN	Natural Gas	1803	MMcf
+2003	VA	Natural Gas	143644	MMcf
+2004	AL	Natural Gas	173106	MMcf
+2004	AZ	Natural Gas	331	MMcf
+2004	FL	Natural Gas	3525	MMcf
+2004	IL	Natural Gas	170	MMcf
+2004	IN	Natural Gas	3401	MMcf
+2004	KY	Natural Gas	94259	MMcf
+2004	MD	Natural Gas	34	MMcf
+2004	MI	Natural Gas	265345	MMcf
+2004	MS	Natural Gas	176329	MMcf
+2004	MO	Natural Gas	0	MMcf
+2004	NE	Natural Gas	1499	MMcf
+2004	NV	Natural Gas	5	MMcf
+2004	NY	Natural Gas	46050	MMcf
+2004	OR	Natural Gas	467	MMcf
+2004	SD	Natural Gas	11768	MMcf
+2004	TN	Natural Gas	2100	MMcf
+2004	VA	Natural Gas	85508	MMcf
+2005	AL	Natural Gas	164304	MMcf
+2005	AZ	Natural Gas	233	MMcf
+2005	FL	Natural Gas	2954	MMcf
+2005	IL	Natural Gas	166	MMcf
+2005	IN	Natural Gas	3135	MMcf
+2005	KY	Natural Gas	92795	MMcf
+2005	MD	Natural Gas	46	MMcf
+2005	MI	Natural Gas	266776	MMcf
+2005	MS	Natural Gas	189371	MMcf
+2005	MO	Natural Gas	0	MMcf
+2005	NE	Natural Gas	1201	MMcf
+2005	NV	Natural Gas	5	MMcf
+2005	NY	Natural Gas	55180	MMcf
+2005	OR	Natural Gas	454	MMcf
+2005	SD	Natural Gas	11349	MMcf
+2005	TN	Natural Gas	2200	MMcf
+2005	VA	Natural Gas	88610	MMcf
+2006	AL	Natural Gas	160381	MMcf
+2006	AZ	Natural Gas	611	MMcf
+2006	FL	Natural Gas	2845	MMcf
+2006	IL	Natural Gas	170	MMcf
+2006	IN	Natural Gas	2921	MMcf
+2006	KY	Natural Gas	95320	MMcf
+2006	MD	Natural Gas	48	MMcf
+2006	MI	Natural Gas	268673	MMcf
+2006	MS	Natural Gas	212081	MMcf
+2006	MO	Natural Gas	0	MMcf
+2006	NE	Natural Gas	1217	MMcf
+2006	NV	Natural Gas	5	MMcf
+2006	NY	Natural Gas	55980	MMcf
+2006	OR	Natural Gas	621	MMcf
+2006	SD	Natural Gas	10616	MMcf
+2006	TN	Natural Gas	2663	MMcf
+2006	VA	Natural Gas	103027	MMcf
+2007	AL	Natural Gas	155167	MMcf
+2007	AZ	Natural Gas	655	MMcf
+2007	FL	Natural Gas	2000	MMcf
+2007	IL	Natural Gas	1394	MMcf
+2007	IN	Natural Gas	3606	MMcf
+2007	KY	Natural Gas	95437	MMcf
+2007	MD	Natural Gas	35	MMcf
+2007	MI	Natural Gas	270571	MMcf
+2007	MS	Natural Gas	272878	MMcf
+2007	MO	Natural Gas	0	MMcf
+2007	NE	Natural Gas	1560	MMcf
+2007	NV	Natural Gas	5	MMcf
+2007	NY	Natural Gas	54942	MMcf
+2007	OR	Natural Gas	409	MMcf
+2007	SD	Natural Gas	11880	MMcf
+2007	TN	Natural Gas	3942	MMcf
+2007	VA	Natural Gas	112057	MMcf
+2008	AL	Natural Gas	152051	MMcf
+2008	AZ	Natural Gas	523	MMcf
+2008	FL	Natural Gas	2742	MMcf
+2008	IL	Natural Gas	1193	MMcf
+2008	IN	Natural Gas	4701	MMcf
+2008	KY	Natural Gas	114116	MMcf
+2008	MD	Natural Gas	28	MMcf
+2008	MI	Natural Gas	158794	MMcf
+2008	MS	Natural Gas	346465	MMcf
+2008	MO	Natural Gas	0	MMcf
+2008	NE	Natural Gas	3083	MMcf
+2008	NV	Natural Gas	4	MMcf
+2008	NY	Natural Gas	50320	MMcf
+2008	OR	Natural Gas	778	MMcf
+2008	SD	Natural Gas	12007	MMcf
+2008	TN	Natural Gas	4700	MMcf
+2008	VA	Natural Gas	128454	MMcf
+2009	AL	Natural Gas	146751	MMcf
+2009	AZ	Natural Gas	712	MMcf
+2009	FL	Natural Gas	290	MMcf
+2009	IL	Natural Gas	1443	MMcf
+2009	IN	Natural Gas	4927	MMcf
+2009	KY	Natural Gas	113300	MMcf
+2009	MD	Natural Gas	43	MMcf
+2009	MI	Natural Gas	159400	MMcf
+2009	MS	Natural Gas	352888	MMcf
+2009	MO	Natural Gas	0	MMcf
+2009	NE	Natural Gas	2916	MMcf
+2009	NV	Natural Gas	4	MMcf
+2009	NY	Natural Gas	44849	MMcf
+2009	OR	Natural Gas	821	MMcf
+2009	SD	Natural Gas	12927	MMcf
+2009	TN	Natural Gas	5478	MMcf
+2009	VA	Natural Gas	140738	MMcf
+2010	AL	Natural Gas	139215	MMcf
+2010	AZ	Natural Gas	183	MMcf
+2010	FL	Natural Gas	13938	MMcf
+2010	IL	Natural Gas	1702	MMcf
+2010	IN	Natural Gas	6802	MMcf
+2010	KY	Natural Gas	135330	MMcf
+2010	MD	Natural Gas	43	MMcf
+2010	MI	Natural Gas	136782	MMcf
+2010	MS	Natural Gas	401660	MMcf
+2010	MO	Natural Gas	0	MMcf
+2010	NE	Natural Gas	2255	MMcf
+2010	NV	Natural Gas	4	MMcf
+2010	NY	Natural Gas	35813	MMcf
+2010	OR	Natural Gas	1407	MMcf
+2010	SD	Natural Gas	12540	MMcf
+2010	TN	Natural Gas	5144	MMcf
+2010	VA	Natural Gas	147255	MMcf
+2011	AL	Natural Gas	134305	MMcf
+2011	AZ	Natural Gas	168	MMcf
+2011	FL	Natural Gas	17129	MMcf
+2011	IL	Natural Gas	2121	MMcf
+2011	IN	Natural Gas	9075	MMcf
+2011	KY	Natural Gas	124243	MMcf
+2011	MD	Natural Gas	34	MMcf
+2011	MI	Natural Gas	143826	MMcf
+2011	MS	Natural Gas	443351	MMcf
+2011	MO	Natural Gas	0	MMcf
+2011	NE	Natural Gas	1980	MMcf
+2011	NV	Natural Gas	3	MMcf
+2011	NY	Natural Gas	31124	MMcf
+2011	OR	Natural Gas	1344	MMcf
+2011	SD	Natural Gas	12449	MMcf
+2011	TN	Natural Gas	4851	MMcf
+2011	VA	Natural Gas	151094	MMcf
+2012	AL	Natural Gas	128312	MMcf
+2012	AZ	Natural Gas	117	MMcf
+2012	FL	Natural Gas	18681	MMcf
+2012	IL	Natural Gas	2125	MMcf
+2012	IN	Natural Gas	8814	MMcf
+2012	KY	Natural Gas	106122	MMcf
+2012	MD	Natural Gas	44	MMcf
+2012	MI	Natural Gas	129333	MMcf
+2012	MS	Natural Gas	452915	MMcf
+2012	MO	Natural Gas	0	MMcf
+2012	NE	Natural Gas	1328	MMcf
+2012	NV	Natural Gas	4	MMcf
+2012	NY	Natural Gas	26424	MMcf
+2012	OR	Natural Gas	770	MMcf
+2012	SD	Natural Gas	15085	MMcf
+2012	TN	Natural Gas	5825	MMcf
+2012	VA	Natural Gas	146405	MMcf
+2013	AL	Natural Gas	120666	MMcf
+2013	AZ	Natural Gas	72	MMcf
+2013	FL	Natural Gas	18011	MMcf
+2013	IL	Natural Gas	2887	MMcf
+2013	IN	Natural Gas	7938	MMcf
+2013	KY	Natural Gas	94665	MMcf
+2013	MD	Natural Gas	32	MMcf
+2013	MI	Natural Gas	123622	MMcf
+2013	MS	Natural Gas	59272	MMcf
+2013	MO	Natural Gas	9	MMcf
+2013	NE	Natural Gas	1032	MMcf
+2013	NV	Natural Gas	3	MMcf
+2013	NY	Natural Gas	23458	MMcf
+2013	OR	Natural Gas	770	MMcf
+2013	SD	Natural Gas	16205	MMcf
+2013	TN	Natural Gas	5400	MMcf
+2013	VA	Natural Gas	139382	MMcf
+2014	AL	Natural Gas	110226	MMcf
+2014	AZ	Natural Gas	106	MMcf
+2014	FL	Natural Gas	21259	MMcf
+2014	IL	Natural Gas	2626	MMcf
+2014	IN	Natural Gas	6616	MMcf
+2014	KY	Natural Gas	78737	MMcf
+2014	MD	Natural Gas	20	MMcf
+2014	MI	Natural Gas	114946	MMcf
+2014	MS	Natural Gas	54440	MMcf
+2014	MO	Natural Gas	9	MMcf
+2014	NE	Natural Gas	402	MMcf
+2014	NV	Natural Gas	3	MMcf
+2014	NY	Natural Gas	20201	MMcf
+2014	OR	Natural Gas	950	MMcf
+2014	SD	Natural Gas	15307	MMcf
+2014	TN	Natural Gas	5294	MMcf
+2014	VA	Natural Gas	131885	MMcf
+2004	US	Crude Oil	1991394	Thousand Barrels
+2004	FL	Crude Oil	2904	Thousand Barrels
+2004	NY	Crude Oil	170	Thousand Barrels
+2004	PA	Crude Oil	2396	Thousand Barrels
+2004	VA	Crude Oil	19	Thousand Barrels
+2004	WV	Crude Oil	1735	Thousand Barrels
+2004	IL	Crude Oil	10984	Thousand Barrels
+2004	IN	Crude Oil	1755	Thousand Barrels
+2004	KS	Crude Oil	33879	Thousand Barrels
+2004	KY	Crude Oil	2548	Thousand Barrels
+2004	MI	Crude Oil	5951	Thousand Barrels
+2004	MO	Crude Oil	88	Thousand Barrels
+2004	NE	Crude Oil	2506	Thousand Barrels
+2004	ND	Crude Oil	31152	Thousand Barrels
+2004	OH	Crude Oil	5783	Thousand Barrels
+2004	OK	Crude Oil	63977	Thousand Barrels
+2004	SD	Crude Oil	1357	Thousand Barrels
+2004	TN	Crude Oil	361	Thousand Barrels
+2004	AL	Crude Oil	7443	Thousand Barrels
+2004	AR	Crude Oil	6747	Thousand Barrels
+2004	LA	Crude Oil	83272	Thousand Barrels
+2004	MS	Crude Oil	19242	Thousand Barrels
+2004	NM	Crude Oil	64517	Thousand Barrels
+2004	TX	Crude Oil	392714	Thousand Barrels
+2004	CO	Crude Oil	22532	Thousand Barrels
+2004	MT	Crude Oil	24718	Thousand Barrels
+2004	UT	Crude Oil	14744	Thousand Barrels
+2004	WY	Crude Oil	51940	Thousand Barrels
+2004	AK	Crude Oil	332441	Thousand Barrels
+2004	AZ	Crude Oil	54	Thousand Barrels
+2004	CA	Crude Oil	240138	Thousand Barrels
+2004	NV	Crude Oil	463	Thousand Barrels
+2005	US	Crude Oil	1892095	Thousand Barrels
+2005	FL	Crude Oil	2585	Thousand Barrels
+2005	NY	Crude Oil	202	Thousand Barrels
+2005	PA	Crude Oil	2460	Thousand Barrels
+2005	VA	Crude Oil	26	Thousand Barrels
+2005	WV	Crude Oil	1696	Thousand Barrels
+2005	IL	Crude Oil	10207	Thousand Barrels
+2005	IN	Crude Oil	1727	Thousand Barrels
+2005	KS	Crude Oil	33620	Thousand Barrels
+2005	KY	Crude Oil	2535	Thousand Barrels
+2005	MI	Crude Oil	5734	Thousand Barrels
+2005	MO	Crude Oil	86	Thousand Barrels
+2005	NE	Crude Oil	2408	Thousand Barrels
+2005	ND	Crude Oil	35675	Thousand Barrels
+2005	OH	Crude Oil	5658	Thousand Barrels
+2005	OK	Crude Oil	61262	Thousand Barrels
+2005	SD	Crude Oil	1394	Thousand Barrels
+2005	TN	Crude Oil	324	Thousand Barrels
+2005	AL	Crude Oil	7861	Thousand Barrels
+2005	AR	Crude Oil	6175	Thousand Barrels
+2005	LA	Crude Oil	75199	Thousand Barrels
+2005	MS	Crude Oil	17695	Thousand Barrels
+2005	NM	Crude Oil	60963	Thousand Barrels
+2005	TX	Crude Oil	392601	Thousand Barrels
+2005	CO	Crude Oil	23227	Thousand Barrels
+2005	MT	Crude Oil	32787	Thousand Barrels
+2005	UT	Crude Oil	16673	Thousand Barrels
+2005	WY	Crude Oil	51770	Thousand Barrels
+2005	AK	Crude Oil	315387	Thousand Barrels
+2005	AZ	Crude Oil	50	Thousand Barrels
+2005	CA	Crude Oil	230230	Thousand Barrels
+2005	NV	Crude Oil	447	Thousand Barrels
+2006	US	Crude Oil	1856606	Thousand Barrels
+2006	FL	Crude Oil	2360	Thousand Barrels
+2006	NY	Crude Oil	312	Thousand Barrels
+2006	PA	Crude Oil	2589	Thousand Barrels
+2006	VA	Crude Oil	17	Thousand Barrels
+2006	WV	Crude Oil	1726	Thousand Barrels
+2006	IL	Crude Oil	10325	Thousand Barrels
+2006	IN	Crude Oil	1773	Thousand Barrels
+2006	KS	Crude Oil	35668	Thousand Barrels
+2006	KY	Crude Oil	2340	Thousand Barrels
+2006	MI	Crude Oil	5828	Thousand Barrels
+2006	MO	Crude Oil	87	Thousand Barrels
+2006	NE	Crude Oil	2313	Thousand Barrels
+2006	ND	Crude Oil	39943	Thousand Barrels
+2006	OH	Crude Oil	5439	Thousand Barrels
+2006	OK	Crude Oil	64236	Thousand Barrels
+2006	SD	Crude Oil	1389	Thousand Barrels
+2006	TN	Crude Oil	192	Thousand Barrels
+2006	AL	Crude Oil	7539	Thousand Barrels
+2006	AR	Crude Oil	5948	Thousand Barrels
+2006	LA	Crude Oil	73621	Thousand Barrels
+2006	MS	Crude Oil	17356	Thousand Barrels
+2006	NM	Crude Oil	59452	Thousand Barrels
+2006	TX	Crude Oil	392481	Thousand Barrels
+2006	CO	Crude Oil	24494	Thousand Barrels
+2006	MT	Crude Oil	36294	Thousand Barrels
+2006	UT	Crude Oil	17927	Thousand Barrels
+2006	WY	Crude Oil	52974	Thousand Barrels
+2006	AK	Crude Oil	270481	Thousand Barrels
+2006	AZ	Crude Oil	55	Thousand Barrels
+2006	CA	Crude Oil	223015	Thousand Barrels
+2006	NV	Crude Oil	426	Thousand Barrels
+2007	US	Crude Oil	1853243	Thousand Barrels
+2007	FL	Crude Oil	2078	Thousand Barrels
+2007	NY	Crude Oil	379	Thousand Barrels
+2007	PA	Crude Oil	2788	Thousand Barrels
+2007	VA	Crude Oil	19	Thousand Barrels
+2007	WV	Crude Oil	1992	Thousand Barrels
+2007	IL	Crude Oil	9608	Thousand Barrels
+2007	IN	Crude Oil	1727	Thousand Barrels
+2007	KS	Crude Oil	36590	Thousand Barrels
+2007	KY	Crude Oil	2666	Thousand Barrels
+2007	MI	Crude Oil	5646	Thousand Barrels
+2007	MO	Crude Oil	80	Thousand Barrels
+2007	NE	Crude Oil	2335	Thousand Barrels
+2007	ND	Crude Oil	45122	Thousand Barrels
+2007	OH	Crude Oil	5155	Thousand Barrels
+2007	OK	Crude Oil	63951	Thousand Barrels
+2007	SD	Crude Oil	1632	Thousand Barrels
+2007	TN	Crude Oil	284	Thousand Barrels
+2007	AL	Crude Oil	7171	Thousand Barrels
+2007	AR	Crude Oil	6031	Thousand Barrels
+2007	LA	Crude Oil	76979	Thousand Barrels
+2007	MS	Crude Oil	20672	Thousand Barrels
+2007	NM	Crude Oil	59179	Thousand Barrels
+2007	TX	Crude Oil	391270	Thousand Barrels
+2007	CO	Crude Oil	26172	Thousand Barrels
+2007	MT	Crude Oil	34907	Thousand Barrels
+2007	UT	Crude Oil	19535	Thousand Barrels
+2007	WY	Crude Oil	54116	Thousand Barrels
+2007	AK	Crude Oil	263595	Thousand Barrels
+2007	AZ	Crude Oil	43	Thousand Barrels
+2007	CA	Crude Oil	218518	Thousand Barrels
+2007	NV	Crude Oil	408	Thousand Barrels
+2008	US	Crude Oil	1830416	Thousand Barrels
+2008	FL	Crude Oil	1953	Thousand Barrels
+2008	NY	Crude Oil	387	Thousand Barrels
+2008	PA	Crude Oil	2999	Thousand Barrels
+2008	VA	Crude Oil	16	Thousand Barrels
+2008	WV	Crude Oil	2126	Thousand Barrels
+2008	IL	Crude Oil	9448	Thousand Barrels
+2008	IN	Crude Oil	1859	Thousand Barrels
+2008	KS	Crude Oil	39663	Thousand Barrels
+2008	KY	Crude Oil	2645	Thousand Barrels
+2008	MI	Crude Oil	6271	Thousand Barrels
+2008	MO	Crude Oil	99	Thousand Barrels
+2008	NE	Crude Oil	2394	Thousand Barrels
+2008	ND	Crude Oil	62780	Thousand Barrels
+2008	OH	Crude Oil	5113	Thousand Barrels
+2008	OK	Crude Oil	67357	Thousand Barrels
+2008	SD	Crude Oil	1713	Thousand Barrels
+2008	TN	Crude Oil	338	Thousand Barrels
+2008	AL	Crude Oil	7696	Thousand Barrels
+2008	AR	Crude Oil	6079	Thousand Barrels
+2008	LA	Crude Oil	72353	Thousand Barrels
+2008	MS	Crude Oil	22104	Thousand Barrels
+2008	NM	Crude Oil	60156	Thousand Barrels
+2008	TX	Crude Oil	406007	Thousand Barrels
+2008	CO	Crude Oil	29928	Thousand Barrels
+2008	MT	Crude Oil	31596	Thousand Barrels
+2008	UT	Crude Oil	22041	Thousand Barrels
+2008	WY	Crude Oil	53045	Thousand Barrels
+2008	AK	Crude Oil	249874	Thousand Barrels
+2008	AZ	Crude Oil	52	Thousand Barrels
+2008	CA	Crude Oil	214533	Thousand Barrels
+2008	NV	Crude Oil	436	Thousand Barrels
+2009	US	Crude Oil	1954241	Thousand Barrels
+2009	FL	Crude Oil	696	Thousand Barrels
+2009	NY	Crude Oil	333	Thousand Barrels
+2009	PA	Crude Oil	2967	Thousand Barrels
+2009	VA	Crude Oil	11	Thousand Barrels
+2009	WV	Crude Oil	1501	Thousand Barrels
+2009	IL	Crude Oil	9097	Thousand Barrels
+2009	IN	Crude Oil	1803	Thousand Barrels
+2009	KS	Crude Oil	39466	Thousand Barrels
+2009	KY	Crude Oil	2609	Thousand Barrels
+2009	MI	Crude Oil	6223	Thousand Barrels
+2009	MO	Crude Oil	106	Thousand Barrels
+2009	NE	Crude Oil	2239	Thousand Barrels
+2009	ND	Crude Oil	79728	Thousand Barrels
+2009	OH	Crude Oil	4877	Thousand Barrels
+2009	OK	Crude Oil	66637	Thousand Barrels
+2009	SD	Crude Oil	1676	Thousand Barrels
+2009	TN	Crude Oil	268	Thousand Barrels
+2009	AL	Crude Oil	7189	Thousand Barrels
+2009	AR	Crude Oil	5755	Thousand Barrels
+2009	LA	Crude Oil	68824	Thousand Barrels
+2009	MS	Crude Oil	23232	Thousand Barrels
+2009	NM	Crude Oil	61156	Thousand Barrels
+2009	TX	Crude Oil	399344	Thousand Barrels
+2009	CO	Crude Oil	30350	Thousand Barrels
+2009	MT	Crude Oil	27835	Thousand Barrels
+2009	UT	Crude Oil	22943	Thousand Barrels
+2009	WY	Crude Oil	51533	Thousand Barrels
+2009	AK	Crude Oil	235491	Thousand Barrels
+2009	AZ	Crude Oil	46	Thousand Barrels
+2009	CA	Crude Oil	207262	Thousand Barrels
+2009	NV	Crude Oil	438	Thousand Barrels
+2010	US	Crude Oil	1998583	Thousand Barrels
+2010	FL	Crude Oil	1777	Thousand Barrels
+2010	NY	Crude Oil	381	Thousand Barrels
+2010	PA	Crude Oil	3236	Thousand Barrels
+2010	VA	Crude Oil	12	Thousand Barrels
+2010	WV	Crude Oil	1842	Thousand Barrels
+2010	IL	Crude Oil	9067	Thousand Barrels
+2010	IN	Crude Oil	1835	Thousand Barrels
+2010	KS	Crude Oil	40468	Thousand Barrels
+2010	KY	Crude Oil	2519	Thousand Barrels
+2010	MI	Crude Oil	6943	Thousand Barrels
+2010	MO	Crude Oil	146	Thousand Barrels
+2010	NE	Crude Oil	2331	Thousand Barrels
+2010	ND	Crude Oil	113064	Thousand Barrels
+2010	OH	Crude Oil	4769	Thousand Barrels
+2010	OK	Crude Oil	67418	Thousand Barrels
+2010	SD	Crude Oil	1604	Thousand Barrels
+2010	TN	Crude Oil	257	Thousand Barrels
+2010	AL	Crude Oil	7155	Thousand Barrels
+2010	AR	Crude Oil	5733	Thousand Barrels
+2010	LA	Crude Oil	67280	Thousand Barrels
+2010	MS	Crude Oil	24080	Thousand Barrels
+2010	NM	Crude Oil	65373	Thousand Barrels
+2010	TX	Crude Oil	426666	Thousand Barrels
+2010	CO	Crude Oil	32976	Thousand Barrels
+2010	MT	Crude Oil	25332	Thousand Barrels
+2010	UT	Crude Oil	24674	Thousand Barrels
+2010	WY	Crude Oil	53891	Thousand Barrels
+2010	AK	Crude Oil	218904	Thousand Barrels
+2010	AZ	Crude Oil	40	Thousand Barrels
+2010	CA	Crude Oil	200050	Thousand Barrels
+2010	NV	Crude Oil	426	Thousand Barrels
+2011	US	Crude Oil	2057608	Thousand Barrels
+2011	FL	Crude Oil	2023	Thousand Barrels
+2011	NY	Crude Oil	375	Thousand Barrels
+2011	PA	Crude Oil	3463	Thousand Barrels
+2011	VA	Crude Oil	11	Thousand Barrels
+2011	WV	Crude Oil	2146	Thousand Barrels
+2011	IL	Crude Oil	9158	Thousand Barrels
+2011	IN	Crude Oil	1987	Thousand Barrels
+2011	KS	Crude Oil	41507	Thousand Barrels
+2011	KY	Crude Oil	2326	Thousand Barrels
+2011	MI	Crude Oil	7012	Thousand Barrels
+2011	MO	Crude Oil	118	Thousand Barrels
+2011	NE	Crude Oil	2544	Thousand Barrels
+2011	ND	Crude Oil	153015	Thousand Barrels
+2011	OH	Crude Oil	4654	Thousand Barrels
+2011	OK	Crude Oil	73423	Thousand Barrels
+2011	SD	Crude Oil	1625	Thousand Barrels
+2011	TN	Crude Oil	296	Thousand Barrels
+2011	AL	Crude Oil	8373	Thousand Barrels
+2011	AR	Crude Oil	5877	Thousand Barrels
+2011	LA	Crude Oil	68965	Thousand Barrels
+2011	MS	Crude Oil	24246	Thousand Barrels
+2011	NM	Crude Oil	71249	Thousand Barrels
+2011	TX	Crude Oil	528844	Thousand Barrels
+2011	CO	Crude Oil	39430	Thousand Barrels
+2011	MT	Crude Oil	24155	Thousand Barrels
+2011	UT	Crude Oil	26331	Thousand Barrels
+2011	WY	Crude Oil	54670	Thousand Barrels
+2011	AK	Crude Oil	204829	Thousand Barrels
+2011	AZ	Crude Oil	37	Thousand Barrels
+2011	CA	Crude Oil	193996	Thousand Barrels
+2011	NV	Crude Oil	408	Thousand Barrels
+2012	US	Crude Oil	2370114	Thousand Barrels
+2012	FL	Crude Oil	2135	Thousand Barrels
+2012	NY	Crude Oil	362	Thousand Barrels
+2012	PA	Crude Oil	4304	Thousand Barrels
+2012	VA	Crude Oil	9	Thousand Barrels
+2012	WV	Crude Oil	2573	Thousand Barrels
+2012	IL	Crude Oil	8908	Thousand Barrels
+2012	IN	Crude Oil	2350	Thousand Barrels
+2012	KS	Crude Oil	43743	Thousand Barrels
+2012	KY	Crude Oil	3198	Thousand Barrels
+2012	MI	Crude Oil	7426	Thousand Barrels
+2012	MO	Crude Oil	175	Thousand Barrels
+2012	NE	Crude Oil	3025	Thousand Barrels
+2012	ND	Crude Oil	243236	Thousand Barrels
+2012	OH	Crude Oil	5109	Thousand Barrels
+2012	OK	Crude Oil	87538	Thousand Barrels
+2012	SD	Crude Oil	1756	Thousand Barrels
+2012	TN	Crude Oil	371	Thousand Barrels
+2012	AL	Crude Oil	9525	Thousand Barrels
+2012	AR	Crude Oil	6536	Thousand Barrels
+2012	LA	Crude Oil	70643	Thousand Barrels
+2012	MS	Crude Oil	24593	Thousand Barrels
+2012	NM	Crude Oil	85334	Thousand Barrels
+2012	TX	Crude Oil	722130	Thousand Barrels
+2012	CO	Crude Oil	49435	Thousand Barrels
+2012	MT	Crude Oil	26495	Thousand Barrels
+2012	UT	Crude Oil	30268	Thousand Barrels
+2012	WY	Crude Oil	57830	Thousand Barrels
+2012	AK	Crude Oil	192368	Thousand Barrels
+2012	AZ	Crude Oil	52	Thousand Barrels
+2012	CA	Crude Oil	197211	Thousand Barrels
+2012	NV	Crude Oil	368	Thousand Barrels
+2013	US	Crude Oil	2720782	Thousand Barrels
+2013	FL	Crude Oil	2174	Thousand Barrels
+2013	NY	Crude Oil	313	Thousand Barrels
+2013	PA	Crude Oil	5246	Thousand Barrels
+2013	VA	Crude Oil	9	Thousand Barrels
+2013	WV	Crude Oil	7564	Thousand Barrels
+2013	IL	Crude Oil	9539	Thousand Barrels
+2013	IN	Crude Oil	2399	Thousand Barrels
+2013	KS	Crude Oil	46845	Thousand Barrels
+2013	KY	Crude Oil	2893	Thousand Barrels
+2013	MI	Crude Oil	7706	Thousand Barrels
+2013	MO	Crude Oil	199	Thousand Barrels
+2013	NE	Crude Oil	2808	Thousand Barrels
+2013	ND	Crude Oil	313823	Thousand Barrels
+2013	OH	Crude Oil	7962	Thousand Barrels
+2013	OK	Crude Oil	114486	Thousand Barrels
+2013	SD	Crude Oil	1829	Thousand Barrels
+2013	TN	Crude Oil	334	Thousand Barrels
+2013	AL	Crude Oil	10391	Thousand Barrels
+2013	AR	Crude Oil	6640	Thousand Barrels
+2013	LA	Crude Oil	71815	Thousand Barrels
+2013	MS	Crude Oil	24345	Thousand Barrels
+2013	NM	Crude Oil	101451	Thousand Barrels
+2013	TX	Crude Oil	923561	Thousand Barrels
+2013	CO	Crude Oil	65257	Thousand Barrels
+2013	MT	Crude Oil	29288	Thousand Barrels
+2013	UT	Crude Oil	34912	Thousand Barrels
+2013	WY	Crude Oil	63285	Thousand Barrels
+2013	AK	Crude Oil	187954	Thousand Barrels
+2013	AZ	Crude Oil	60	Thousand Barrels
+2013	CA	Crude Oil	198928	Thousand Barrels
+2013	NV	Crude Oil	334	Thousand Barrels

@@ -15,13 +15,13 @@ permalink: /about/
         <h2 class="about_intro-header">The 2015 USEITI Report is now available, and includes:</h2>
         <ul class="list-bullet about_intro-list">
           <li>Never-before-released federal production data</li>
-          <li>Another important point here</li>
+          <li>Another important point here that is probably on two lines</li>
           <li>Even a third thing</li>
         </ul>
-        <a href="{{ site.baseurl }}/about/whats-new/" class="carousel-button button-primary">New for 2015</a>
+        <a href="{{ site.baseurl }}/about/whats-new/" class="carousel-button button-primary">See what's new</a>
       </div>
       <div class="about_intro-highlight">
-        <a href="{{ site.baseurl }}/about/report/">2015 Executive Summary &#8594;</a>
+        <a href="{{ site.baseurl }}/about/report/">Executive Summary &#8594;</a>
       </div>
     </div>
 	</div>

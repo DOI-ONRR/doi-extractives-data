@@ -3,7 +3,7 @@
 .about_intro-callout {
   background-color: $pale-blue;
   padding: $base-padding-large;
-  padding-bottom: $base-padding;
+  padding-bottom: $base-padding-lite;
   padding-top: ($base-padding-large * 1.5);
 }
 
@@ -13,6 +13,12 @@
   border-right: 4px $white solid;
   padding: $base-padding;
   text-align: center;
+
+  a {
+    @include heading(para-sm);
+    color: $blue;
+    font-weight: $weight-bold;
+  }
 }
 
 .about_intro-header {
@@ -27,10 +33,10 @@
 .about_intro-list {
   @include heading(para-md);
   padding-bottom: $base-padding-lite;
-  padding-left: $base-padding-large;
   text-align: left;
 
   li {
-    padding-bottom: 0;
+    line-height: 1.1;
+    padding-bottom: $base-padding-lite;
   }
 }

@@ -67,12 +67,12 @@
   display: none;
 }
 
-#unit-selector {
-  background: $white;
-  border-radius: $base-border-radius;
-  height: 34px;
-  overflow: hidden;
-}
+// #unit-selector {
+//   background: $white;
+//   border-radius: $base-border-radius;
+//   height: 34px;
+//   overflow: hidden;
+// }
 
 .unit-selector {
   @include user-select(none);

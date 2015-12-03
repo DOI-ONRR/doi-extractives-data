@@ -66,9 +66,11 @@
     }
 
     .subregion-name {
-      @include heading(h3);
+      @include heading(para-lg);
+      font-weight: $weight-bold;
+      min-width: 200px;
       padding: 0;
-      padding-left: $base-padding * 0.9;
+      padding-left: ($base-padding * 0.9);
     }
   }
 

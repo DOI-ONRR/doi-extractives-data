@@ -34,7 +34,7 @@ eiti-slider {
 
 .map-legend {
   display: flex;
-  margin-bottom: 1em;
+  margin-bottom: $base-padding-large;
 
   .step {
     border-bottom-style: solid;
@@ -83,4 +83,10 @@ eiti-slider {
       stroke-width: 2;
     }
   }
+}
+
+.map-intro_text {
+  @include heading(para-md);
+  padding-top: $base-padding;
+  padding-bottom: $base-padding;
 }

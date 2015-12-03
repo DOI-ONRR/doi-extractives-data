@@ -111,22 +111,24 @@ async.parallel({
     }
   }
 
+  var years = [
+    '2004',
+    '2005',
+    '2006',
+    '2007',
+    '2008',
+    '2009',
+    '2010',
+    '2011',
+    '2012',
+    '2013'
+  ];
+
   Object.keys(data).forEach(function(commodity) {
 
-    var parseRenewables = function(commodity, data){
+    var parseRenewables = function(commodity, data, years){
 
-      var years = [
-        '2004',
-        '2005',
-        '2006',
-        '2007',
-        '2008',
-        '2009',
-        '2010',
-        '2011',
-        '2012',
-        '2013'
-      ];
+
 
       data[commodity].forEach(function(d, index) {
 
@@ -143,7 +145,7 @@ async.parallel({
 
     }
 
-    var parseCoal = function(commodity, data){
+    var parseCoal = function(commodity, data, years){
 
       // console.warn(data[commodity])
       var getStates = function(data, commodity, column) {
@@ -167,29 +169,33 @@ async.parallel({
       });
 
       _.forEach(states, function(state) {
+        years.forEach(function(year){
+          // Get Production Numbers (only have data for 2013)
 
-        // Get Production Numbers (only have data for 2013)
-        var productionByState = _.pluck(_.where(data[commodity], {'Year': '2013', 'Mine State': state}), 'Production (short tons)');
+          console.warn(state)
 
-        productionByState = _.map(productionByState, trimCommas);
+          var productionByState = _.pluck(_.where(data[commodity], {'Year': year, 'Mine State': state}), 'Production (short tons)');
 
-        productionByState = _.reduce(productionByState, function(total, n) {
-          return total + n;
+          productionByState = _.map(productionByState, trimCommas);
+
+          productionByState = _.reduce(productionByState, function(total, n) {
+            return total + n;
+          });
+
+          // console.warn(state, '->',productionByState)
+
+          // if there is production that year
+          if (productionByState) {
+            var newResults = {};
+            newResults.Region = state;
+            newResults.Year = year;
+            newResults.Volume = productionByState;
+            newResults.Commodity = 'Coal';
+            newResults.Product = 'short tons';
+
+            results.push(newResults)
+          }
         });
-        // console.warn(state, productionByState)
-
-        // console.warn(state, '->',productionByState)
-
-        var newResults = {};
-        newResults.Region = state;
-        newResults.Year = '2013';
-        newResults.Volume = productionByState;
-        newResults.Commodity = 'Coal';
-        newResults.Product = 'short tons';
-
-        // console.warn(newResults)
-        results.push(newResults)
-
       });
     }
 
@@ -231,14 +237,12 @@ async.parallel({
         });
       });
     }
-
     switch(commodity) {
-
       case 'coal':
-        parseCoal(commodity, data);
+        parseCoal(commodity, data, years);
         break;
       case 'renewables':
-        parseRenewables(commodity, data);
+        parseRenewables(commodity, data, years);
         break;
       default:
         parseOther(commodity, data);

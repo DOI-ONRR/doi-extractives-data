@@ -18,7 +18,9 @@
 }
 
 .filters-last {
-  margin-bottom: 80px;
+  @include respond-to(medium-up) {
+    margin-bottom: 80px;
+  }
 }
 
 .filters-heading {

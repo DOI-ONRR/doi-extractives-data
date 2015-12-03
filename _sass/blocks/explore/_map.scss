@@ -21,14 +21,17 @@ eiti-slider {
   @include heading(para-xl);
   font-weight: $weight-bold;
   letter-spacing: -0.5px;
-  margin-top: -115px; //TODO: magic number, remove
-  padding-left: $base-padding;
-  width: 65%;
 
   .filter-part {
     border-bottom: 2px dotted $neutral-gray;
     color: inherit;
     text-decoration: none;
+  }
+
+  @include respond-to(medium-up) {
+    margin-top: -115px; //TODO: magic number, remove
+    padding-left: $base-padding;
+    width: 65%;
   }
 }
 
@@ -87,6 +90,9 @@ eiti-slider {
 
 .map-intro_text {
   @include heading(para-md);
-  padding-top: $base-padding;
-  padding-bottom: $base-padding;
+  padding: $base-padding;
+
+  @include respond-to(medium-up) {
+    padding-left: 0;
+  }
 }

@@ -184,17 +184,14 @@ async.parallel({
 
           // console.warn(state, '->',productionByState)
 
-          // if there is production that year
-          if (productionByState) {
-            var newResults = {};
-            newResults.Region = state;
-            newResults.Year = year;
-            newResults.Volume = productionByState;
-            newResults.Commodity = 'Coal';
-            newResults.Product = 'short tons';
+          var newResults = {};
+          newResults.Region = state;
+          newResults.Year = year;
+          newResults.Volume = productionByState;
+          newResults.Commodity = 'Coal';
+          newResults.Product = 'short tons';
 
-            results.push(newResults)
-          }
+          results.push(newResults)
         });
       });
     }

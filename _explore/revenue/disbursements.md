@@ -6,7 +6,11 @@ permalink: /explore/disbursements/
 
 <div class="container-outer container-padded">
 
-  <h3> <a href="{{ site.baseurl }}/explore/">Explore Data</a> / Disbursements</h3>
+  <div>
+    <a class="breadcrumb" href="{{ site.baseurl }}/explore/">Explore</a>
+    /
+  </div>
+  <h1>Disbursements</h1>
 
   <!-- <p>Once collected, the federal government distributes revenue from natural resource extraction for public use in a variety of ways. Federal corporate income taxes go to the General Fund of the Treasury, and Congress determines how to allocate these resources each year through the appropriations process.</p>
 

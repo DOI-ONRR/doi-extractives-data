@@ -8,7 +8,10 @@ permalink: /how-it-works/state-laws-and-regulations/
 
   <article class="container-left-7">
 
-    <h5><a href="{{site.baseurl}}/how-it-works">How It Works</a> /</h5>
+    <div>
+      <a class="revenues_subpage-breadcrumb" href="{{ site.baseurl }}/how-it-works/">How it works</a>
+      /
+    </div>
     <h1>State Laws and Regulations</h1>
 
     <p class="case_studies_intro-para">States maintain ownership of some lands and natural resources; develop their own taxation and royalty systems applicable to oil, gas, nonenergy minerals, and renewable energy; and collect extractive revenue directly. Each state has a unique revenue system.</p>

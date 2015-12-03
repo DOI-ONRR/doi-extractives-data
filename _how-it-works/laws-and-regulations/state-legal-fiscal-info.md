@@ -43,7 +43,10 @@ nav_items:
 ---
 
 
-<h5><a href="{{site.baseurl}}/how-it-works">How It Works</a> /</h5>
+<div>
+  <a class="revenues_subpage-breadcrumb" href="{{ site.baseurl }}/how-it-works/">How it works</a>
+  /
+</div>
 <h1>State Legal and Fiscal Information</h1>
 
 <nav class="hash_selector">

@@ -6,6 +6,11 @@ permalink: /about/whats-new/
 
 <div class="container-outer container-padded">
 
+  <div>
+    <a class="breadcrumb" href="{{ site.baseurl }}/about/">About</a>
+    /
+  </div>
+
   <h1>{{page.title}}</h1>
   <h4>From <a href="https://github.com/18F/doi-extractives-data/wiki/Information-Architecture">Information Architecture</a>:</h4>
   <h4>
@@ -17,5 +22,3 @@ permalink: /about/whats-new/
 		<li>Plans for the website, etc.</li>
   </ul>
 </div>
-
-

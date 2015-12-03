@@ -95,29 +95,23 @@ async.parallel({
   var productionUnits;
 
   var trimCommas = function(str){
-    // console.warn('----', str, typeof(str))
     if (typeof(str) == 'number') {
       return str;
     } else {
-      str = str.replace(/\,/g,'');
-      var num = parseInt(str,10);
+      str = str.replace(/\,/g, '');
+      var num = parseInt(str, 10);
       return num;
     }
   }
 
   Object.keys(data).forEach(function(commodity) {
 
-
-
       var parseCoal = function(commodity, data){
-        // console.warn(stateKey[d['Mine State']], '--------')
-        // console.warn(data[commodity], '------')
 
         // console.warn(data[commodity])
         var getUniqueColumn = function(data, commodity, column) {
 
           var allColumn = _.map(data[commodity], function(data, n) {
-            // console.warn(data.Year)
             return data[column]
           })
           return _.unique(allColumn);
@@ -125,13 +119,11 @@ async.parallel({
 
         // Abbreviate States
         data[commodity] = _.forEach(data[commodity], function(d){
-          // console.warn(d)
           d['Mine State'] = stateKey[d['Mine State']];
         });
 
-        // console.warn(getUniqueColumn(data, commodity, 'Mine State'))
         var states = getUniqueColumn(data, commodity, 'Mine State');
-        var years = getUniqueColumn(data, commodity, 'Year');
+        // var years = getUniqueColumn(data, commodity, 'Year');
 
         // Reject states that non-complient statest
         states = _.filter(states, function(n){
@@ -140,13 +132,12 @@ async.parallel({
 
         _.forEach(states, function(state) {
 
-          // Get Production Numbers
+          // Get Production Numbers (only have data for 2013)
           var productionByState = _.pluck(_.where(data[commodity], {'Year': '2013', 'Mine State': state}), 'Production (short tons)');
 
           productionByState = _.map(productionByState, trimCommas);
 
           productionByState = _.reduce(productionByState, function(total, n) {
-            // console.warn(state, total, n)
             return total + n;
           });
           console.warn(state, productionByState)
@@ -163,9 +154,7 @@ async.parallel({
           // console.warn(newResults)
           results.push(newResults)
 
-        })
-        // var WY = _.where(data[commodity], {'Year': '2013', 'Mine State': 'Wyoming'})
-        // console.warn(WY)
+        });
       }
 
       var parseOther = function(commodity, data){
@@ -178,8 +167,6 @@ async.parallel({
             });
             productionUnits = d[keys[1]];
           }
-
-          // console.warn(d, '---', keys)
 
           // console.warn('------------')
           _.forEach(keys, function(val, i){
@@ -218,10 +205,6 @@ async.parallel({
           parseOther(commodity, data);
           break;
       }
-
-
-
-
   });
 
   streamify(results)

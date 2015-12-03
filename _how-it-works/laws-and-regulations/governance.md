@@ -6,7 +6,10 @@ permalink: /how-it-works/governance/
 
 <div class="container-outer container-padded">
 
-  <h5><a href="{{site.baseurl}}{{site.permalink}}">How It Works</a> /</h5>
+  <div>
+    <a class="revenues_subpage-breadcrumb" href="{{ site.baseurl }}/how-it-works/">How it works</a>
+    /
+  </div>
   <h1>Governance</h1>
 
   <h4>From <a href="https://github.com/18F/doi-extractives-data/wiki/Information-Architecture">Information Architecture</a>:</h4>
@@ -29,5 +32,3 @@ permalink: /how-it-works/governance/
     <li><a href="{{ site.baseurl }}/how-it-works/governance/taxes/">Tax Expenditures</a></li>
   </ul>
 </div>
-
-

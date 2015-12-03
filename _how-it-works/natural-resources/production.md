@@ -8,7 +8,10 @@ permalink: /how-it-works/production/
 
   <article class="container-left-7">
 
-    <h5><a href="{{site.baseurl}}/how-it-works">How It Works</a> /</h5>
+    <div>
+      <a class="revenues_subpage-breadcrumb" href="{{ site.baseurl }}/how-it-works/">How it works</a>
+      /
+    </div>
     <h1>Production</h1>
 
     <p class="case_studies_intro-para">The United States is home to many different natural resources, including fossil fuel (i.e., oil, gas, and coal), renewable energy (i.e., geothermal, solar, and wind), and nonenergy mineral resources (i.e., gold, copper, and iron). Since the 19th century, natural resource extraction has been a major industry in the U.S., with fluctuations throughout time.</p>

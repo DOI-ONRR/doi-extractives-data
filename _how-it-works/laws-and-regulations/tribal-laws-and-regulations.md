@@ -9,7 +9,10 @@ permalink: /how-it-works/tribal-laws-and-regulations/
 
   <article class="container-left-7">
 
-    <h5><a href="{{site.baseurl}}/how-it-works">How It Works</a> /</h5>
+    <div>
+      <a class="revenues_subpage-breadcrumb" href="{{ site.baseurl }}/how-it-works/">How it works</a>
+      /
+    </div>
     <h1>Tribal laws and regulations</h1>
 
     <p class="case_studies_intro-para">According to the 2011 American Community Survey conducted by the U.S. Census, there were 5.1 million American Indians and Alaska Natives living in the United States, accounting for approximately <a href="https://www.census.gov/newsroom/releases/archives/facts_for_features_special_editions/cb12-ff22.html">1.6% of the population</a>.</p>

@@ -1,12 +1,42 @@
 // Styleguide blocks.about
 
 .about_intro-callout {
-  padding: $base-padding;
+  background-color: $pale-blue;
+  padding: $base-padding-large;
   padding-bottom: $base-padding-lite;
-  padding-top: $base-padding-large;
+  padding-top: ($base-padding-large * 1.5);
+}
 
-  .h3 {
-    font-weight: $weight-book;
-    line-height: 1.2;
+.about_intro-highlight {
+  background-color: $mid-blue;
+  border-left: 4px $white solid;
+  border-right: 4px $white solid;
+  padding: $base-padding;
+  text-align: center;
+
+  a {
+    @include heading(para-sm);
+    color: $blue;
+    font-weight: $weight-bold;
+  }
+}
+
+.about_intro-header {
+  @include heading(para-lg);
+  font-weight: $weight-bold;
+  line-height: 1.3;
+  margin-bottom: 0;
+  padding-bottom: $base-padding-lite;
+  text-align: left;
+}
+
+.about_intro-list {
+  @include heading(para-md);
+  padding-bottom: $base-padding-lite;
+  text-align: left;
+
+  li {
+    line-height: 1.1;
+    padding-bottom: $base-padding-lite;
   }
 }

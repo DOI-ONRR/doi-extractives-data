@@ -9,7 +9,10 @@ permalink: /how-it-works/federal-laws/
 
   <article class="container-left-7">
 
-    <h5><a href="{{site.baseurl}}/how-it-works">How It Works</a> /</h5>
+    <div>
+      <a class="revenues_subpage-breadcrumb" href="{{ site.baseurl }}/how-it-works/">How it works</a>
+      /
+    </div>
     <h1>Federal laws and regulations</h1>
 
     <p class="case_studies_intro-para">The legislative branch of the federal government has passed many laws that govern natural resource extraction on federal lands.</p>

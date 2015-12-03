@@ -6,7 +6,10 @@ permalink: /how-it-works/governance/taxes/
 
 <div class="container-outer container-padded">
 
-	<h5><a href="{{site.baseurl}}{{site.permalink}}">How It Works</a> /</h5>
+	<div>
+		<a class="revenues_subpage-breadcrumb" href="{{ site.baseurl }}/how-it-works/">How it works</a>
+		/
+	</div>
   <h1>Tax Expenditures</h1>
 
   <p>Tax expenditures are defined in the law as revenue losses attributable to provisions of the federal tax laws which allow a special exclusion, exemption, or deduction from gross income or which provide a special credit, a preferential rate of tax, or a deferral of tax liability. These exceptions may be viewed as alternatives to other policy instruments, such as spending or regulatory programs.</p>
@@ -113,4 +116,3 @@ permalink: /how-it-works/governance/taxes/
   </table>
 
 </div>
-

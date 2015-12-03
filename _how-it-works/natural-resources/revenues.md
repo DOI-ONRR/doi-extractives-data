@@ -8,7 +8,10 @@ permalink: /how-it-works/revenues/
 
   <article class="container-left-7">
 
-    <h5><a href="{{site.baseurl}}/how-it-works">How It Works</a> /</h5>
+    <<div>
+      <a class="revenues_subpage-breadcrumb" href="{{ site.baseurl }}/how-it-works/">How it works</a>
+      /
+    </div>
     <h1>Revenues</h1>
 
     <h3>DOI revenue</h3>

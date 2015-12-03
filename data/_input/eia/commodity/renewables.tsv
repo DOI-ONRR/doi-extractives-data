@@ -1,0 +1,478 @@
+State	ELEC.GEN.ALL-US-99.A	ELEC.GEN.ALL	Source	2004	2005	2006	2007	2008	2009	2010	2011	2012	2013
+United States	ELEC.GEN.HYC-US-99.A	ELEC.GEN.HYC	Conventional Hydroelectric	268417	270321	289246	247510	254831	273445	260203	319355	276240	268565
+United States	ELEC.GEN.AOR-US-99.A	ELEC.GEN.AOR	All Other Renewables	83067	87329	96525	105238	126101	144279	167173	193981	218333	253508
+United States	ELEC.GEN.WND-US-99.A	ELEC.GEN.WND	Wind	14144	17811	26589	34450	55363	73886	94652	120177	140822	167840
+United States	ELEC.GEN.SUN-US-99.A	ELEC.GEN.SUN	Solar	575	550	508	612	864	891	1212	1818	4327	9036
+United States	ELEC.GEN.GEO-US-99.A	ELEC.GEN.GEO	Geothermal	14811	14692	14568	14637	14840	15009	15219	15316	15562	15775
+United States	ELEC.GEN.BIO-US-99.A	ELEC.GEN.BIO	Biomass (total)	53537	54277	54861	55539	55034	54493	56089	56671	57622	60858
+United States	ELEC.GEN.WWW-US-99.A	ELEC.GEN.WWW	Wood and wood-derived fuels	38117	38856	38762	39014	37300	36050	37172	37449	37799	40028
+United States	ELEC.GEN.WAS-US-99.A	ELEC.GEN.WAS	Other biomass	15421	15420	16099	16525	17734	18443	18917	19222	19823	20830
+New England	ELEC.GEN.ALL-NEW-99.A	ELEC.GEN.ALL	General
+Connecticut	ELEC.GEN.ALL-CT-99.A	ELEC.GEN.ALL	General
+Connecticut	ELEC.GEN.HYC-CT-99.A	ELEC.GEN.HYC	Conventional Hydroelectric	463	478	544	363	556	510	391	567	312	402
+Connecticut	ELEC.GEN.AOR-CT-99.A	ELEC.GEN.AOR	All Other Renewables	758	753	763	730	734	759	740	660	667	652
+Connecticut	ELEC.GEN.WND-CT-99.A	ELEC.GEN.WND	Wind	--	--	--	--	--	--	--	--	--	--
+Connecticut	ELEC.GEN.SUN-CT-99.A	ELEC.GEN.SUN	Solar	--	--	--	--	--	--	--	--	--	0
+Connecticut	ELEC.GEN.GEO-CT-99.A	ELEC.GEN.GEO	Geothermal	--	--	--	--	--	--	--	--	--	--
+Connecticut	ELEC.GEN.BIO-CT-99.A	ELEC.GEN.BIO	Biomass (total)	758	753	763	730	734	759	740	660	667	652
+Connecticut	ELEC.GEN.WWW-CT-99.A	ELEC.GEN.WWW	Wood and wood-derived fuels	5	7	9	2	2	1	0	1	1	4
+Connecticut	ELEC.GEN.WAS-CT-99.A	ELEC.GEN.WAS	Other biomass	752	746	755	728	732	758	739	659	666	648
+Maine	ELEC.GEN.ALL-ME-99.A	ELEC.GEN.ALL	General
+Maine	ELEC.GEN.HYC-ME-99.A	ELEC.GEN.HYC	Conventional Hydroelectric	3430	4091	4278	3738	4457	4212	3810	3979	3733	3560
+Maine	ELEC.GEN.AOR-ME-99.A	ELEC.GEN.AOR	All Other Renewables	3598	4068	3968	4207	4058	3938	4152	4495	4099	4893
+Maine	ELEC.GEN.WND-ME-99.A	ELEC.GEN.WND	Wind	--	--	--	99	132	299	499	707	887	1048
+Maine	ELEC.GEN.SUN-ME-99.A	ELEC.GEN.SUN	Solar	--	--	--	--	--	--	--	--	--	--
+Maine	ELEC.GEN.GEO-ME-99.A	ELEC.GEN.GEO	Geothermal	--	--	--	--	--	--	--	--	--	--
+Maine	ELEC.GEN.BIO-ME-99.A	ELEC.GEN.BIO	Biomass (total)	3598	4068	3968	4108	3926	3640	3653	3788	3212	3846
+Maine	ELEC.GEN.WWW-ME-99.A	ELEC.GEN.WWW	Wood and wood-derived fuels	3187	3778	3685	3848	3669	3367	3390	3511	2945	3625
+Maine	ELEC.GEN.WAS-ME-99.A	ELEC.GEN.WAS	Other biomass	411	290	283	260	258	273	264	277	267	220
+Massachusetts	ELEC.GEN.ALL-MA-99.A	ELEC.GEN.ALL	General
+Massachusetts	ELEC.GEN.HYC-MA-99.A	ELEC.GEN.HYC	Conventional Hydroelectric	998	1042	1513	797	1156	1201	996	1149	912	992
+Massachusetts	ELEC.GEN.AOR-MA-99.A	ELEC.GEN.AOR	All Other Renewables	1230	1258	1279	1240	1255	1229	1274	1207	1843	1448
+Massachusetts	ELEC.GEN.WND-MA-99.A	ELEC.GEN.WND	Wind	--	--	--	--	4	6	22	61	90	205
+Massachusetts	ELEC.GEN.SUN-MA-99.A	ELEC.GEN.SUN	Solar	--	--	--	--	0	0	1	5	30	106
+Massachusetts	ELEC.GEN.GEO-MA-99.A	ELEC.GEN.GEO	Geothermal	--	--	--	--	--	--	--	--	--	--
+Massachusetts	ELEC.GEN.BIO-MA-99.A	ELEC.GEN.BIO	Biomass (total)	1230	1258	1279	1240	1252	1223	1251	1140	1724	1137
+Massachusetts	ELEC.GEN.WWW-MA-99.A	ELEC.GEN.WWW	Wood and wood-derived fuels	114	120	125	119	123	115	125	101	659	77
+Massachusetts	ELEC.GEN.WAS-MA-99.A	ELEC.GEN.WAS	Other biomass	1116	1138	1154	1121	1129	1108	1125	1039	1065	1061
+New Hampshire	ELEC.GEN.ALL-NH-99.A	ELEC.GEN.ALL	General
+New Hampshire	ELEC.GEN.HYC-NH-99.A	ELEC.GEN.HYC	Conventional Hydroelectric	1316	1799	1529	1265	1633	1680	1478	1605	1289	1427
+New Hampshire	ELEC.GEN.AOR-NH-99.A	ELEC.GEN.AOR	All Other Renewables	883	942	746	1123	1175	1198	1232	1091	1381	1695
+New Hampshire	ELEC.GEN.WND-NH-99.A	ELEC.GEN.WND	Wind	--	--	--	--	10	62	76	66	209	389
+New Hampshire	ELEC.GEN.SUN-NH-99.A	ELEC.GEN.SUN	Solar	--	--	--	--	--	--	--	--	--	--
+New Hampshire	ELEC.GEN.GEO-NH-99.A	ELEC.GEN.GEO	Geothermal	--	--	--	--	--	--	--	--	--	--
+New Hampshire	ELEC.GEN.BIO-NH-99.A	ELEC.GEN.BIO	Biomass (total)	883	942	746	1123	1165	1135	1157	1025	1173	1306
+New Hampshire	ELEC.GEN.WWW-NH-99.A	ELEC.GEN.WWW	Wood and wood-derived fuels	728	786	590	970	1010	984	1030	917	1035	1169
+New Hampshire	ELEC.GEN.WAS-NH-99.A	ELEC.GEN.WAS	Other biomass	155	156	156	153	155	151	127	108	137	137
+Rhode Island	ELEC.GEN.ALL-RI-99.A	ELEC.GEN.ALL	General
+Rhode Island	ELEC.GEN.HYC-RI-99.A	ELEC.GEN.HYC	Conventional Hydroelectric	5	7	6	4	5	5	4	7	4	4
+Rhode Island	ELEC.GEN.AOR-RI-99.A	ELEC.GEN.AOR	All Other Renewables	102	0	149	155	158	145	140	130	102	53
+Rhode Island	ELEC.GEN.WND-RI-99.A	ELEC.GEN.WND	Wind	--	--	--	--	--	--	3	3	1	3
+Rhode Island	ELEC.GEN.SUN-RI-99.A	ELEC.GEN.SUN	Solar	--	--	--	--	--	--	--	--	--	2
+Rhode Island	ELEC.GEN.GEO-RI-99.A	ELEC.GEN.GEO	Geothermal	--	--	--	--	--	--	--	--	--	--
+Rhode Island	ELEC.GEN.BIO-RI-99.A	ELEC.GEN.BIO	Biomass (total)	102	0	149	155	158	145	137	127	101	48
+Rhode Island	ELEC.GEN.WWW-RI-99.A	ELEC.GEN.WWW	Wood and wood-derived fuels	--	--	--	--	--	--	--	--	--	--
+Rhode Island	ELEC.GEN.WAS-RI-99.A	ELEC.GEN.WAS	Other biomass	102	0	149	155	158	145	137	127	101	48
+Vermont	ELEC.GEN.ALL-VT-99.A	ELEC.GEN.ALL	General
+Vermont	ELEC.GEN.HYC-VT-99.A	ELEC.GEN.HYC	Conventional Hydroelectric	1187	1211	1519	647	1493	1486	1347	1425	1109	1286
+Vermont	ELEC.GEN.AOR-VT-99.A	ELEC.GEN.AOR	All Other Renewables	404	422	450	464	425	429	482	433	465	745
+Vermont	ELEC.GEN.WND-VT-99.A	ELEC.GEN.WND	Wind	11	11	11	11	10	12	14	33	107	236
+Vermont	ELEC.GEN.SUN-VT-99.A	ELEC.GEN.SUN	Solar	--	--	--	--	--	--	--	2	5	17
+Vermont	ELEC.GEN.GEO-VT-99.A	ELEC.GEN.GEO	Geothermal	--	--	--	--	--	--	--	--	--	--
+Vermont	ELEC.GEN.BIO-VT-99.A	ELEC.GEN.BIO	Biomass (total)	393	410	439	453	415	417	468	398	353	491
+Vermont	ELEC.GEN.WWW-VT-99.A	ELEC.GEN.WWW	Wood and wood-derived fuels	393	410	439	453	415	393	443	372	328	466
+Vermont	ELEC.GEN.WAS-VT-99.A	ELEC.GEN.WAS	Other biomass	--	--	--	--	0	24	25	25	26	26
+Middle Atlantic	ELEC.GEN.ALL-MAT-99.A	ELEC.GEN.ALL	General
+New Jersey	ELEC.GEN.ALL-NJ-99.A	ELEC.GEN.ALL	General
+New Jersey	ELEC.GEN.HYC-NJ-99.A	ELEC.GEN.HYC	Conventional Hydroelectric	38	31	35	21	26	32	18	24	11	18
+New Jersey	ELEC.GEN.AOR-NJ-99.A	ELEC.GEN.AOR	All Other Renewables	806	875	917	844	905	960	850	956	1281	1447
+New Jersey	ELEC.GEN.WND-NJ-99.A	ELEC.GEN.WND	Wind	--	--	16	20	21	21	13	11	12	11
+New Jersey	ELEC.GEN.SUN-NJ-99.A	ELEC.GEN.SUN	Solar	--	--	--	--	3	11	21	69	304	437
+New Jersey	ELEC.GEN.GEO-NJ-99.A	ELEC.GEN.GEO	Geothermal	--	--	--	--	--	--	--	--	--	--
+New Jersey	ELEC.GEN.BIO-NJ-99.A	ELEC.GEN.BIO	Biomass (total)	806	875	901	823	882	928	816	876	965	999
+New Jersey	ELEC.GEN.WWW-NJ-99.A	ELEC.GEN.WWW	Wood and wood-derived fuels	--	--	--	--	--	--	--	--	--	--
+New Jersey	ELEC.GEN.WAS-NJ-99.A	ELEC.GEN.WAS	Other biomass	806	875	901	823	882	928	816	876	965	999
+New York	ELEC.GEN.ALL-NY-99.A	ELEC.GEN.ALL	General
+New York	ELEC.GEN.HYC-NY-99.A	ELEC.GEN.HYC	Conventional Hydroelectric	23990	25783	27345	25253	26723	27615	25472	27997	24652	24973
+New York	ELEC.GEN.AOR-NY-99.A	ELEC.GEN.AOR	All Other Renewables	1912	1988	2597	2775	3319	4467	4815	4896	5192	5888
+New York	ELEC.GEN.WND-NY-99.A	ELEC.GEN.WND	Wind	116	103	655	833	1251	2266	2596	2828	2992	3539
+New York	ELEC.GEN.SUN-NY-99.A	ELEC.GEN.SUN	Solar	--	--	--	--	--	--	--	6	53	67
+New York	ELEC.GEN.GEO-NY-99.A	ELEC.GEN.GEO	Geothermal	--	--	--	--	--	--	--	--	--	--
+New York	ELEC.GEN.BIO-NY-99.A	ELEC.GEN.BIO	Biomass (total)	1795	1885	1941	1942	2068	2201	2218	2061	2148	2282
+New York	ELEC.GEN.WWW-NY-99.A	ELEC.GEN.WWW	Wood and wood-derived fuels	497	528	522	492	555	536	547	442	488	608
+New York	ELEC.GEN.WAS-NY-99.A	ELEC.GEN.WAS	Other biomass	1298	1358	1419	1449	1513	1665	1671	1619	1660	1674
+Pennsylvania	ELEC.GEN.ALL-PA-99.A	ELEC.GEN.ALL	General
+Pennsylvania	ELEC.GEN.HYC-PA-99.A	ELEC.GEN.HYC	Conventional Hydroelectric	3155	2232	2844	2236	2549	2683	2332	3217	2242	2525
+Pennsylvania	ELEC.GEN.AOR-PA-99.A	ELEC.GEN.AOR	All Other Renewables	2276	2329	2473	2546	2804	3352	4245	4099	4459	5754
+Pennsylvania	ELEC.GEN.WND-PA-99.A	ELEC.GEN.WND	Wind	306	284	361	470	729	1075	1854	1794	2129	3352
+Pennsylvania	ELEC.GEN.SUN-PA-99.A	ELEC.GEN.SUN	Solar	--	--	--	--	0	4	8	23	32	63
+Pennsylvania	ELEC.GEN.GEO-PA-99.A	ELEC.GEN.GEO	Geothermal	--	--	--	--	--	--	--	--	--	--
+Pennsylvania	ELEC.GEN.BIO-PA-99.A	ELEC.GEN.BIO	Biomass (total)	1969	2045	2112	2076	2074	2274	2383	2281	2298	2339
+Pennsylvania	ELEC.GEN.WWW-PA-99.A	ELEC.GEN.WWW	Wood and wood-derived fuels	680	687	683	620	658	694	675	628	534	492
+Pennsylvania	ELEC.GEN.WAS-PA-99.A	ELEC.GEN.WAS	Other biomass	1289	1358	1429	1457	1416	1579	1708	1653	1765	1847
+East North Central	ELEC.GEN.ALL-ENC-99.A	ELEC.GEN.ALL	General
+Illinois	ELEC.GEN.ALL-IL-99.A	ELEC.GEN.ALL	General
+Illinois	ELEC.GEN.HYC-IL-99.A	ELEC.GEN.HYC	Conventional Hydroelectric	154	129	173	154	139	136	119	140	111	120
+Illinois	ELEC.GEN.AOR-IL-99.A	ELEC.GEN.AOR	All Other Renewables	822	783	849	1285	3035	3530	5138	6865	8373	10285
+Illinois	ELEC.GEN.WND-IL-99.A	ELEC.GEN.WND	Wind	78	141	255	664	2337	2820	4454	6213	7727	9625
+Illinois	ELEC.GEN.SUN-IL-99.A	ELEC.GEN.SUN	Solar	--	--	--	--	--	0	14	14	31	52
+Illinois	ELEC.GEN.GEO-IL-99.A	ELEC.GEN.GEO	Geothermal	--	--	--	--	--	--	--	--	--	--
+Illinois	ELEC.GEN.BIO-IL-99.A	ELEC.GEN.BIO	Biomass (total)	744	642	594	620	698	710	670	638	615	608
+Illinois	ELEC.GEN.WWW-IL-99.A	ELEC.GEN.WWW	Wood and wood-derived fuels	--	--	--	--	1	0	0	1	0	0
+Illinois	ELEC.GEN.WAS-IL-99.A	ELEC.GEN.WAS	Other biomass	744	642	594	620	697	710	670	638	615	608
+Indiana	ELEC.GEN.ALL-IN-99.A	ELEC.GEN.ALL	General
+Indiana	ELEC.GEN.HYC-IN-99.A	ELEC.GEN.HYC	Conventional Hydroelectric	444	438	490	450	437	503	454	409	434	387
+Indiana	ELEC.GEN.AOR-IN-99.A	ELEC.GEN.AOR	All Other Renewables	137	68	220	231	511	1706	3246	3621	3546	3888
+Indiana	ELEC.GEN.WND-IN-99.A	ELEC.GEN.WND	Wind	--	--	--	--	238	1403	2934	3285	3210	3481
+Indiana	ELEC.GEN.SUN-IN-99.A	ELEC.GEN.SUN	Solar	--	--	--	--	--	--	--	--	NM	31
+Indiana	ELEC.GEN.GEO-IN-99.A	ELEC.GEN.GEO	Geothermal	--	--	--	--	--	--	--	--	--	--
+Indiana	ELEC.GEN.BIO-IN-99.A	ELEC.GEN.BIO	Biomass (total)	137	68	220	231	273	303	312	336	336	376
+Indiana	ELEC.GEN.WWW-IN-99.A	ELEC.GEN.WWW	Wood and wood-derived fuels	--	--	--	--	--	--	--	--	--	0
+Indiana	ELEC.GEN.WAS-IN-99.A	ELEC.GEN.WAS	Other biomass	137	68	220	231	273	303	312	336	336	376
+Michigan	ELEC.GEN.ALL-MI-99.A	ELEC.GEN.ALL	General
+Michigan	ELEC.GEN.HYC-MI-99.A	ELEC.GEN.HYC	Conventional Hydroelectric	1540	1462	1520	1270	1364	1372	1251	1357	1215	1419
+Michigan	ELEC.GEN.AOR-MI-99.A	ELEC.GEN.AOR	All Other Renewables	2558	2494	2443	2417	2591	2623	2832	2962	3785	5514
+Michigan	ELEC.GEN.WND-MI-99.A	ELEC.GEN.WND	Wind	2	2	2	3	141	300	360	456	1132	2800
+Michigan	ELEC.GEN.SUN-MI-99.A	ELEC.GEN.SUN	Solar	--	--	--	--	--	--	--	--	--	--
+Michigan	ELEC.GEN.GEO-MI-99.A	ELEC.GEN.GEO	Geothermal	--	--	--	--	--	--	--	--	--	--
+Michigan	ELEC.GEN.BIO-MI-99.A	ELEC.GEN.BIO	Biomass (total)	2557	2492	2440	2414	2450	2323	2472	2506	2654	2715
+Michigan	ELEC.GEN.WWW-MI-99.A	ELEC.GEN.WWW	Wood and wood-derived fuels	1867	1776	1704	1692	1710	1489	1670	1679	1698	1727
+Michigan	ELEC.GEN.WAS-MI-99.A	ELEC.GEN.WAS	Other biomass	690	717	737	722	740	834	802	827	956	988
+Ohio	ELEC.GEN.ALL-OH-99.A	ELEC.GEN.ALL	General
+Ohio	ELEC.GEN.HYC-OH-99.A	ELEC.GEN.HYC	Conventional Hydroelectric	730	516	632	410	386	528	429	384	414	549
+Ohio	ELEC.GEN.AOR-OH-99.A	ELEC.GEN.AOR	All Other Renewables	428	446	459	435	623	633	700	936	1739	2009
+Ohio	ELEC.GEN.WND-OH-99.A	ELEC.GEN.WND	Wind	--	13	14	15	15	14	13	198	985	1146
+Ohio	ELEC.GEN.SUN-OH-99.A	ELEC.GEN.SUN	Solar	--	--	--	--	--	--	13	15	37	46
+Ohio	ELEC.GEN.GEO-OH-99.A	ELEC.GEN.GEO	Geothermal	--	--	--	--	--	--	--	--	--	--
+Ohio	ELEC.GEN.BIO-OH-99.A	ELEC.GEN.BIO	Biomass (total)	428	432	444	420	608	619	675	722	717	817
+Ohio	ELEC.GEN.WWW-OH-99.A	ELEC.GEN.WWW	Wood and wood-derived fuels	398	406	410	399	418	410	399	390	351	343
+Ohio	ELEC.GEN.WAS-OH-99.A	ELEC.GEN.WAS	Other biomass	30	27	34	21	190	210	276	332	366	474
+Wisconsin	ELEC.GEN.ALL-WI-99.A	ELEC.GEN.ALL	General
+Wisconsin	ELEC.GEN.HYC-WI-99.A	ELEC.GEN.HYC	Conventional Hydroelectric	1981	1740	1679	1516	1616	1394	2112	2147	1522	1979
+Wisconsin	ELEC.GEN.AOR-WI-99.A	ELEC.GEN.AOR	All Other Renewables	1114	1182	1266	1330	1754	2340	2474	2765	3223	3192
+Wisconsin	ELEC.GEN.WND-WI-99.A	ELEC.GEN.WND	Wind	104	93	101	109	487	1052	1088	1188	1558	1558
+Wisconsin	ELEC.GEN.SUN-WI-99.A	ELEC.GEN.SUN	Solar	--	--	--	--	--	--	--	--	--	--
+Wisconsin	ELEC.GEN.GEO-WI-99.A	ELEC.GEN.GEO	Geothermal	--	--	--	--	--	--	--	--	--	--
+Wisconsin	ELEC.GEN.BIO-WI-99.A	ELEC.GEN.BIO	Biomass (total)	1010	1089	1164	1220	1267	1288	1385	1577	1666	1634
+Wisconsin	ELEC.GEN.WWW-WI-99.A	ELEC.GEN.WWW	Wood and wood-derived fuels	605	740	774	785	775	769	878	1032	1149	1150
+Wisconsin	ELEC.GEN.WAS-WI-99.A	ELEC.GEN.WAS	Other biomass	405	349	390	435	492	519	508	545	517	484
+West North Central	ELEC.GEN.ALL-WNC-99.A	ELEC.GEN.ALL	General
+Iowa	ELEC.GEN.ALL-IA-99.A	ELEC.GEN.ALL	General
+Iowa	ELEC.GEN.HYC-IA-99.A	ELEC.GEN.HYC	Conventional Hydroelectric	946	960	909	962	819	971	948	925	766	749
+Iowa	ELEC.GEN.AOR-IA-99.A	ELEC.GEN.AOR	All Other Renewables	1156	1764	2455	2908	4251	7589	9360	10870	14183	15727
+Iowa	ELEC.GEN.WND-IA-99.A	ELEC.GEN.WND	Wind	1050	1647	2318	2757	4084	7421	9170	10709	14032	15568
+Iowa	ELEC.GEN.SUN-IA-99.A	ELEC.GEN.SUN	Solar	--	--	--	--	--	--	--	--	--	--
+Iowa	ELEC.GEN.GEO-IA-99.A	ELEC.GEN.GEO	Geothermal	--	--	--	--	--	--	--	--	--	--
+Iowa	ELEC.GEN.BIO-IA-99.A	ELEC.GEN.BIO	Biomass (total)	106	117	137	151	167	168	190	161	151	159
+Iowa	ELEC.GEN.WWW-IA-99.A	ELEC.GEN.WWW	Wood and wood-derived fuels	--	--	--	0	0	0	--	--	--	0
+Iowa	ELEC.GEN.WAS-IA-99.A	ELEC.GEN.WAS	Other biomass	106	117	137	151	167	168	190	161	151	159
+Kansas	ELEC.GEN.ALL-KS-99.A	ELEC.GEN.ALL	General
+Kansas	ELEC.GEN.HYC-KS-99.A	ELEC.GEN.HYC	Conventional Hydroelectric	13	11	10	11	11	13	13	15	10	15
+Kansas	ELEC.GEN.AOR-KS-99.A	ELEC.GEN.AOR	All Other Renewables	359	426	992	1153	1759	2863	3459	3779	5253	9491
+Kansas	ELEC.GEN.WND-KS-99.A	ELEC.GEN.WND	Wind	359	426	992	1153	1759	2863	3405	3720	5195	9433
+Kansas	ELEC.GEN.SUN-KS-99.A	ELEC.GEN.SUN	Solar	--	--	--	--	--	--	--	--	--	--
+Kansas	ELEC.GEN.GEO-KS-99.A	ELEC.GEN.GEO	Geothermal	--	--	--	--	--	--	--	--	--	--
+Kansas	ELEC.GEN.BIO-KS-99.A	ELEC.GEN.BIO	Biomass (total)	--	--	--	--	--	0	54	59	57	58
+Kansas	ELEC.GEN.WWW-KS-99.A	ELEC.GEN.WWW	Wood and wood-derived fuels	--	--	--	--	--	--	--	--	--	--
+Kansas	ELEC.GEN.WAS-KS-99.A	ELEC.GEN.WAS	Other biomass	--	--	--	--	--	0	54	59	57	58
+Minnesota	ELEC.GEN.ALL-MN-99.A	ELEC.GEN.ALL	General
+Minnesota	ELEC.GEN.HYC-MN-99.A	ELEC.GEN.HYC	Conventional Hydroelectric	738	775	572	654	727	809	840	746	561	511
+Minnesota	ELEC.GEN.AOR-MN-99.A	ELEC.GEN.AOR	All Other Renewables	1797	2652	3059	3933	5851	6737	6640	8406	9454	9871
+Minnesota	ELEC.GEN.WND-MN-99.A	ELEC.GEN.WND	Wind	812	1582	2055	2639	4355	5053	4792	6726	7615	8259
+Minnesota	ELEC.GEN.SUN-MN-99.A	ELEC.GEN.SUN	Solar	--	--	--	--	--	--	--	--	0	3
+Minnesota	ELEC.GEN.GEO-MN-99.A	ELEC.GEN.GEO	Geothermal	--	--	--	--	--	--	--	--	--	--
+Minnesota	ELEC.GEN.BIO-MN-99.A	ELEC.GEN.BIO	Biomass (total)	985	1070	1004	1294	1496	1684	1848	1680	1838	1610
+Minnesota	ELEC.GEN.WWW-MN-99.A	ELEC.GEN.WWW	Wood and wood-derived fuels	652	656	590	727	725	796	933	748	839	1036
+Minnesota	ELEC.GEN.WAS-MN-99.A	ELEC.GEN.WAS	Other biomass	332	413	414	566	771	887	915	932	999	574
+Missouri	ELEC.GEN.ALL-MO-99.A	ELEC.GEN.ALL	General
+Missouri	ELEC.GEN.HYC-MO-99.A	ELEC.GEN.HYC	Conventional Hydroelectric	1480	1159	199	1204	2047	1817	1539	1185	714	1136
+Missouri	ELEC.GEN.AOR-MO-99.A	ELEC.GEN.AOR	All Other Renewables	10	9	24	29	246	575	988	1240	1299	1241
+Missouri	ELEC.GEN.WND-MO-99.A	ELEC.GEN.WND	Wind	--	--	--	--	203	499	925	1178	1245	1167
+Missouri	ELEC.GEN.SUN-MO-99.A	ELEC.GEN.SUN	Solar	--	--	--	--	--	--	--	--	--	--
+Missouri	ELEC.GEN.GEO-MO-99.A	ELEC.GEN.GEO	Geothermal	--	--	--	--	--	--	--	--	--	--
+Missouri	ELEC.GEN.BIO-MO-99.A	ELEC.GEN.BIO	Biomass (total)	10	9	24	29	43	75	62	62	54	74
+Missouri	ELEC.GEN.WWW-MO-99.A	ELEC.GEN.WWW	Wood and wood-derived fuels	0	0	0	0	2	2	0	0	0	8
+Missouri	ELEC.GEN.WAS-MO-99.A	ELEC.GEN.WAS	Other biomass	9	9	24	29	41	73	62	62	54	66
+Nebraska	ELEC.GEN.ALL-NE-99.A	ELEC.GEN.ALL	General
+Nebraska	ELEC.GEN.HYC-NE-99.A	ELEC.GEN.HYC	Conventional Hydroelectric	913	871	893	347	346	434	1314	1617	1257	1124
+Nebraska	ELEC.GEN.AOR-NE-99.A	ELEC.GEN.AOR	All Other Renewables	78	139	313	278	275	449	493	1116	1347	1869
+Nebraska	ELEC.GEN.WND-NE-99.A	ELEC.GEN.WND	Wind	38	97	261	217	214	383	422	1051	1284	1802
+Nebraska	ELEC.GEN.SUN-NE-99.A	ELEC.GEN.SUN	Solar	--	--	--	--	--	--	--	--	--	--
+Nebraska	ELEC.GEN.GEO-NE-99.A	ELEC.GEN.GEO	Geothermal	--	--	--	--	--	--	--	--	--	--
+Nebraska	ELEC.GEN.BIO-NE-99.A	ELEC.GEN.BIO	Biomass (total)	40	43	52	61	61	66	72	65	63	67
+Nebraska	ELEC.GEN.WWW-NE-99.A	ELEC.GEN.WWW	Wood and wood-derived fuels	--	--	--	--	--	--	--	--	--	0
+Nebraska	ELEC.GEN.WAS-NE-99.A	ELEC.GEN.WAS	Other biomass	40	43	52	61	61	66	72	65	63	67
+North Dakota	ELEC.GEN.ALL-ND-99.A	ELEC.GEN.ALL	General
+North Dakota	ELEC.GEN.HYC-ND-99.A	ELEC.GEN.HYC	Conventional Hydroelectric	1546	1342	1521	1305	1253	1475	2042	2580	2477	1852
+North Dakota	ELEC.GEN.AOR-ND-99.A	ELEC.GEN.AOR	All Other Renewables	220	230	373	634	1706	3009	4108	5245	5280	5524
+North Dakota	ELEC.GEN.WND-ND-99.A	ELEC.GEN.WND	Wind	215	220	369	621	1693	2998	4096	5236	5275	5519
+North Dakota	ELEC.GEN.SUN-ND-99.A	ELEC.GEN.SUN	Solar	--	--	--	--	--	--	--	--	--	--
+North Dakota	ELEC.GEN.GEO-ND-99.A	ELEC.GEN.GEO	Geothermal	--	--	--	--	--	--	--	--	--	--
+North Dakota	ELEC.GEN.BIO-ND-99.A	ELEC.GEN.BIO	Biomass (total)	6	10	4	14	13	12	12	10	6	5
+North Dakota	ELEC.GEN.WWW-ND-99.A	ELEC.GEN.WWW	Wood and wood-derived fuels	--	--	--	--	--	--	--	--	--	--
+North Dakota	ELEC.GEN.WAS-ND-99.A	ELEC.GEN.WAS	Other biomass	6	10	4	14	13	12	12	10	6	5
+South Dakota	ELEC.GEN.ALL-SD-99.A	ELEC.GEN.ALL	General
+South Dakota	ELEC.GEN.HYC-SD-99.A	ELEC.GEN.HYC	Conventional Hydroelectric	3598	3075	3397	2917	2993	4432	5239	6608	5981	4063
+South Dakota	ELEC.GEN.AOR-SD-99.A	ELEC.GEN.AOR	All Other Renewables	158	158	149	150	147	427	1372	2668	2915	2688
+South Dakota	ELEC.GEN.WND-SD-99.A	ELEC.GEN.WND	Wind	158	158	149	150	145	421	1372	2668	2915	2688
+South Dakota	ELEC.GEN.SUN-SD-99.A	ELEC.GEN.SUN	Solar	--	--	--	--	--	--	--	--	--	--
+South Dakota	ELEC.GEN.GEO-SD-99.A	ELEC.GEN.GEO	Geothermal	--	--	--	--	--	--	--	--	--	--
+South Dakota	ELEC.GEN.BIO-SD-99.A	ELEC.GEN.BIO	Biomass (total)	--	--	--	--	2	6	0	0	0	0
+South Dakota	ELEC.GEN.WWW-SD-99.A	ELEC.GEN.WWW	Wood and wood-derived fuels	--	--	--	--	--	--	--	--	--	--
+South Dakota	ELEC.GEN.WAS-SD-99.A	ELEC.GEN.WAS	Other biomass	--	--	--	--	2	6	0	0	0	0
+South Atlantic	ELEC.GEN.ALL-SAT-99.A	ELEC.GEN.ALL	General
+Delaware	ELEC.GEN.ALL-DE-99.A	ELEC.GEN.ALL	General
+Delaware	ELEC.GEN.HYC-DE-99.A	ELEC.GEN.HYC	Conventional Hydroelectric	--	--	--	--	--	--	--	--	--	--
+Delaware	ELEC.GEN.AOR-DE-99.A	ELEC.GEN.AOR	All Other Renewables	--	--	0	48	163	126	138	158	131	107
+Delaware	ELEC.GEN.WND-DE-99.A	ELEC.GEN.WND	Wind	--	--	--	--	--	--	3	5	4	4
+Delaware	ELEC.GEN.SUN-DE-99.A	ELEC.GEN.SUN	Solar	--	--	--	--	--	--	--	8	23	45
+Delaware	ELEC.GEN.GEO-DE-99.A	ELEC.GEN.GEO	Geothermal	--	--	--	--	--	--	--	--	--	--
+Delaware	ELEC.GEN.BIO-DE-99.A	ELEC.GEN.BIO	Biomass (total)	--	--	0	48	163	126	136	145	105	57
+Delaware	ELEC.GEN.WWW-DE-99.A	ELEC.GEN.WWW	Wood and wood-derived fuels	--	--	--	--	--	--	--	--	--	--
+Delaware	ELEC.GEN.WAS-DE-99.A	ELEC.GEN.WAS	Other biomass	--	--	0	48	163	126	136	145	105	57
+District Of Columbia	ELEC.GEN.ALL-DC-99.A	ELEC.GEN.ALL	General
+District Of Columbia	ELEC.GEN.HYC-DC-99.A	ELEC.GEN.HYC	Conventional Hydroelectric	--	--	--	--	--	--	--	--	--	--
+District Of Columbia	ELEC.GEN.AOR-DC-99.A	ELEC.GEN.AOR	All Other Renewables	--	--	--	--	--	--	--	--	--	--
+District Of Columbia	ELEC.GEN.WND-DC-99.A	ELEC.GEN.WND	Wind	--	--	--	--	--	--	--	--	--	--
+District Of Columbia	ELEC.GEN.SUN-DC-99.A	ELEC.GEN.SUN	Solar	--	--	--	--	--	--	--	--	--	--
+District Of Columbia	ELEC.GEN.GEO-DC-99.A	ELEC.GEN.GEO	Geothermal	--	--	--	--	--	--	--	--	--	--
+District Of Columbia	ELEC.GEN.BIO-DC-99.A	ELEC.GEN.BIO	Biomass (total)	--	--	--	--	--	--	--	--	--	--
+District Of Columbia	ELEC.GEN.WWW-DC-99.A	ELEC.GEN.WWW	Wood and wood-derived fuels	--	--	--	--	--	--	--	--	--	--
+District Of Columbia	ELEC.GEN.WAS-DC-99.A	ELEC.GEN.WAS	Other biomass	--	--	--	--	--	--	--	--	--	--
+Florida	ELEC.GEN.ALL-FL-99.A	ELEC.GEN.ALL	General
+Florida	ELEC.GEN.HYC-FL-99.A	ELEC.GEN.HYC	Conventional Hydroelectric	265	266	203	154	206	208	177	182	151	254
+Florida	ELEC.GEN.AOR-FL-99.A	ELEC.GEN.AOR	All Other Renewables	4502	4327	4331	4303	4303	4340	4487	4670	4524	4659
+Florida	ELEC.GEN.WND-FL-99.A	ELEC.GEN.WND	Wind	--	--	--	--	--	--	--	--	--	--
+Florida	ELEC.GEN.SUN-FL-99.A	ELEC.GEN.SUN	Solar	--	--	--	--	--	9	80	126	194	210
+Florida	ELEC.GEN.GEO-FL-99.A	ELEC.GEN.GEO	Geothermal	--	--	--	--	--	--	--	--	--	--
+Florida	ELEC.GEN.BIO-FL-99.A	ELEC.GEN.BIO	Biomass (total)	4502	4327	4331	4303	4303	4331	4406	4544	4330	4449
+Florida	ELEC.GEN.WWW-FL-99.A	ELEC.GEN.WWW	Wood and wood-derived fuels	2216	2022	1979	1930	1969	1954	2019	2209	2058	2139
+Florida	ELEC.GEN.WAS-FL-99.A	ELEC.GEN.WAS	Other biomass	2285	2305	2352	2373	2334	2377	2387	2335	2273	2309
+Georgia	ELEC.GEN.ALL-GA-99.A	ELEC.GEN.ALL	General
+Georgia	ELEC.GEN.HYC-GA-99.A	ELEC.GEN.HYC	Conventional Hydroelectric	3692	4032	2569	2236	2145	3260	3322	2705	2236	3714
+Georgia	ELEC.GEN.AOR-GA-99.A	ELEC.GEN.AOR	All Other Renewables	3192	3272	3419	3415	2782	2825	3181	3190	3279	3839
+Georgia	ELEC.GEN.WND-GA-99.A	ELEC.GEN.WND	Wind	--	--	--	--	--	--	--	--	--	--
+Georgia	ELEC.GEN.SUN-GA-99.A	ELEC.GEN.SUN	Solar	--	--	--	--	--	--	--	--	3	14
+Georgia	ELEC.GEN.GEO-GA-99.A	ELEC.GEN.GEO	Geothermal	--	--	--	--	--	--	--	--	--	--
+Georgia	ELEC.GEN.BIO-GA-99.A	ELEC.GEN.BIO	Biomass (total)	3192	3272	3419	3415	2782	2825	3181	3190	3276	3825
+Georgia	ELEC.GEN.WWW-GA-99.A	ELEC.GEN.WWW	Wood and wood-derived fuels	3108	3195	3362	3362	2660	2746	3054	3070	3107	3409
+Georgia	ELEC.GEN.WAS-GA-99.A	ELEC.GEN.WAS	Other biomass	83	77	57	53	122	80	127	119	168	415
+Maryland	ELEC.GEN.ALL-MD-99.A	ELEC.GEN.ALL	General
+Maryland	ELEC.GEN.HYC-MD-99.A	ELEC.GEN.HYC	Conventional Hydroelectric	2508	1704	2104	1652	1974	1889	1667	2547	1657	1727
+Maryland	ELEC.GEN.AOR-MD-99.A	ELEC.GEN.AOR	All Other Renewables	589	623	626	603	612	551	574	822	898	941
+Maryland	ELEC.GEN.WND-MD-99.A	ELEC.GEN.WND	Wind	--	--	--	--	--	--	1	271	322	322
+Maryland	ELEC.GEN.SUN-MD-99.A	ELEC.GEN.SUN	Solar	--	--	--	--	--	--	0	3	22	63
+Maryland	ELEC.GEN.GEO-MD-99.A	ELEC.GEN.GEO	Geothermal	--	--	--	--	--	--	--	--	--	--
+Maryland	ELEC.GEN.BIO-MD-99.A	ELEC.GEN.BIO	Biomass (total)	589	623	626	603	612	551	572	548	554	556
+Maryland	ELEC.GEN.WWW-MD-99.A	ELEC.GEN.WWW	Wood and wood-derived fuels	192	206	218	203	198	175	165	168	159	143
+Maryland	ELEC.GEN.WAS-MD-99.A	ELEC.GEN.WAS	Other biomass	397	417	408	400	415	376	407	380	395	413
+North Carolina	ELEC.GEN.ALL-NC-99.A	ELEC.GEN.ALL	General
+North Carolina	ELEC.GEN.HYC-NC-99.A	ELEC.GEN.HYC	Conventional Hydroelectric	5435	5397	3839	2984	3034	5171	4757	3893	3728	6901
+North Carolina	ELEC.GEN.AOR-NC-99.A	ELEC.GEN.AOR	All Other Renewables	1733	1807	1828	1672	1922	1893	2083	2345	2704	2955
+North Carolina	ELEC.GEN.WND-NC-99.A	ELEC.GEN.WND	Wind	--	--	--	--	--	--	--	--	--	--
+North Carolina	ELEC.GEN.SUN-NC-99.A	ELEC.GEN.SUN	Solar	--	--	--	--	2	5	11	17	139	345
+North Carolina	ELEC.GEN.GEO-NC-99.A	ELEC.GEN.GEO	Geothermal	--	--	--	--	--	--	--	--	--	--
+North Carolina	ELEC.GEN.BIO-NC-99.A	ELEC.GEN.BIO	Biomass (total)	1733	1807	1828	1672	1920	1889	2072	2328	2564	2610
+North Carolina	ELEC.GEN.WWW-NC-99.A	ELEC.GEN.WWW	Wood and wood-derived fuels	1621	1709	1737	1585	1800	1757	1876	1953	2262	2200
+North Carolina	ELEC.GEN.WAS-NC-99.A	ELEC.GEN.WAS	Other biomass	112	98	92	87	120	131	195	375	302	410
+South Carolina	ELEC.GEN.ALL-SC-99.A	ELEC.GEN.ALL	General
+South Carolina	ELEC.GEN.HYC-SC-99.A	ELEC.GEN.HYC	Conventional Hydroelectric	2447	2938	1807	1556	1123	2332	2376	1554	1420	3160
+South Carolina	ELEC.GEN.AOR-SC-99.A	ELEC.GEN.AOR	All Other Renewables	1763	1814	1910	1996	1816	1748	1873	2129	2143	2226
+South Carolina	ELEC.GEN.WND-SC-99.A	ELEC.GEN.WND	Wind	--	--	--	--	--	--	--	--	--	--
+South Carolina	ELEC.GEN.SUN-SC-99.A	ELEC.GEN.SUN	Solar	--	--	--	--	--	--	--	--	--	0
+South Carolina	ELEC.GEN.GEO-SC-99.A	ELEC.GEN.GEO	Geothermal	--	--	--	--	--	--	--	--	--	--
+South Carolina	ELEC.GEN.BIO-SC-99.A	ELEC.GEN.BIO	Biomass (total)	1763	1814	1910	1996	1816	1748	1873	2129	2143	2226
+South Carolina	ELEC.GEN.WWW-SC-99.A	ELEC.GEN.WWW	Wood and wood-derived fuels	1694	1726	1804	1895	1696	1611	1742	1988	1941	2013
+South Carolina	ELEC.GEN.WAS-SC-99.A	ELEC.GEN.WAS	Other biomass	69	88	106	101	120	137	131	141	203	213
+Virginia	ELEC.GEN.ALL-VA-99.A	ELEC.GEN.ALL	General
+Virginia	ELEC.GEN.HYC-VA-99.A	ELEC.GEN.HYC	Conventional Hydroelectric	1583	1484	1351	1248	1011	1479	1500	1210	1044	1254
+Virginia	ELEC.GEN.AOR-VA-99.A	ELEC.GEN.AOR	All Other Renewables	2432	2498	2458	2566	2698	2418	2220	2196	2358	2906
+Virginia	ELEC.GEN.WND-VA-99.A	ELEC.GEN.WND	Wind	--	--	--	--	--	--	--	--	--	--
+Virginia	ELEC.GEN.SUN-VA-99.A	ELEC.GEN.SUN	Solar	--	--	--	--	--	--	--	--	--	--
+Virginia	ELEC.GEN.GEO-VA-99.A	ELEC.GEN.GEO	Geothermal	--	--	--	--	--	--	--	--	--	--
+Virginia	ELEC.GEN.BIO-VA-99.A	ELEC.GEN.BIO	Biomass (total)	2432	2498	2458	2566	2698	2418	2220	2196	2358	2906
+Virginia	ELEC.GEN.WWW-VA-99.A	ELEC.GEN.WWW	Wood and wood-derived fuels	1733	1803	1780	1792	1916	1708	1404	1406	1436	1946
+Virginia	ELEC.GEN.WAS-VA-99.A	ELEC.GEN.WAS	Other biomass	699	695	678	773	782	709	815	790	923	960
+West Virginia	ELEC.GEN.ALL-WV-99.A	ELEC.GEN.ALL	General
+West Virginia	ELEC.GEN.HYC-WV-99.A	ELEC.GEN.HYC	Conventional Hydroelectric	1318	1448	1572	1254	1248	1646	1367	1453	1431	1739
+West Virginia	ELEC.GEN.AOR-WV-99.A	ELEC.GEN.AOR	All Other Renewables	163	155	174	168	392	742	939	1112	1297	1391
+West Virginia	ELEC.GEN.WND-WV-99.A	ELEC.GEN.WND	Wind	161	154	174	168	392	742	939	1103	1286	1387
+West Virginia	ELEC.GEN.SUN-WV-99.A	ELEC.GEN.SUN	Solar	--	--	--	--	--	--	--	--	--	--
+West Virginia	ELEC.GEN.GEO-WV-99.A	ELEC.GEN.GEO	Geothermal	--	--	--	--	--	--	--	--	--	--
+West Virginia	ELEC.GEN.BIO-WV-99.A	ELEC.GEN.BIO	Biomass (total)	2	1	0	0	0	-1	0	9	11	4
+West Virginia	ELEC.GEN.WWW-WV-99.A	ELEC.GEN.WWW	Wood and wood-derived fuels	1	0	0	0	0	-1	0	0	0	--
+West Virginia	ELEC.GEN.WAS-WV-99.A	ELEC.GEN.WAS	Other biomass	2	0	0	0	0	0	0	9	11	4
+East South Central	ELEC.GEN.ALL-ESC-99.A	ELEC.GEN.ALL	General
+Alabama	ELEC.GEN.ALL-AL-99.A	ELEC.GEN.ALL	General
+Alabama	ELEC.GEN.HYC-AL-99.A	ELEC.GEN.HYC	Conventional Hydroelectric	10626	10145	7252	4136	6136	12535	8704	8884	7435	12899
+Alabama	ELEC.GEN.AOR-AL-99.A	ELEC.GEN.AOR	All Other Renewables	3779	3647	3884	3801	3357	3050	2377	2817	2777	2876
+Alabama	ELEC.GEN.WND-AL-99.A	ELEC.GEN.WND	Wind	--	--	--	--	--	--	--	--	--	--
+Alabama	ELEC.GEN.SUN-AL-99.A	ELEC.GEN.SUN	Solar	--	--	--	--	--	--	--	--	--	--
+Alabama	ELEC.GEN.GEO-AL-99.A	ELEC.GEN.GEO	Geothermal	--	--	--	--	--	--	--	--	--	--
+Alabama	ELEC.GEN.BIO-AL-99.A	ELEC.GEN.BIO	Biomass (total)	3779	3647	3884	3801	3357	3050	2377	2817	2777	2876
+Alabama	ELEC.GEN.WWW-AL-99.A	ELEC.GEN.WWW	Wood and wood-derived fuels	3756	3630	3865	3784	3324	3035	2365	2807	2769	2854
+Alabama	ELEC.GEN.WAS-AL-99.A	ELEC.GEN.WAS	Other biomass	23	16	19	17	34	14	12	10	8	21
+Kentucky	ELEC.GEN.ALL-KY-99.A	ELEC.GEN.ALL	General
+Kentucky	ELEC.GEN.HYC-KY-99.A	ELEC.GEN.HYC	Conventional Hydroelectric	3780	2961	2592	1669	1917	3318	2580	2969	2362	3275
+Kentucky	ELEC.GEN.AOR-KY-99.A	ELEC.GEN.AOR	All Other Renewables	411	421	459	466	460	364	440	436	333	327
+Kentucky	ELEC.GEN.WND-KY-99.A	ELEC.GEN.WND	Wind	--	--	--	--	--	--	--	--	--	--
+Kentucky	ELEC.GEN.SUN-KY-99.A	ELEC.GEN.SUN	Solar	--	--	--	--	--	--	--	--	--	--
+Kentucky	ELEC.GEN.GEO-KY-99.A	ELEC.GEN.GEO	Geothermal	--	--	--	--	--	--	--	--	--	--
+Kentucky	ELEC.GEN.BIO-KY-99.A	ELEC.GEN.BIO	Biomass (total)	411	421	459	466	460	364	440	436	333	327
+Kentucky	ELEC.GEN.WWW-KY-99.A	ELEC.GEN.WWW	Wood and wood-derived fuels	349	358	369	370	351	263	349	341	237	228
+Kentucky	ELEC.GEN.WAS-KY-99.A	ELEC.GEN.WAS	Other biomass	62	63	89	95	109	101	91	95	96	98
+Mississippi	ELEC.GEN.ALL-MS-99.A	ELEC.GEN.ALL	General
+Mississippi	ELEC.GEN.HYC-MS-99.A	ELEC.GEN.HYC	Conventional Hydroelectric	--	--	--	--	--	--	--	--	--	--
+Mississippi	ELEC.GEN.AOR-MS-99.A	ELEC.GEN.AOR	All Other Renewables	1514	1522	1541	1493	1391	1424	1504	1506	1509	1448
+Mississippi	ELEC.GEN.WND-MS-99.A	ELEC.GEN.WND	Wind	--	--	--	--	--	--	--	--	--	--
+Mississippi	ELEC.GEN.SUN-MS-99.A	ELEC.GEN.SUN	Solar	--	--	--	--	--	--	--	--	--	--
+Mississippi	ELEC.GEN.GEO-MS-99.A	ELEC.GEN.GEO	Geothermal	--	--	--	--	--	--	--	--	--	--
+Mississippi	ELEC.GEN.BIO-MS-99.A	ELEC.GEN.BIO	Biomass (total)	1514	1522	1541	1493	1391	1424	1504	1506	1509	1448
+Mississippi	ELEC.GEN.WWW-MS-99.A	ELEC.GEN.WWW	Wood and wood-derived fuels	1511	1516	1535	1488	1386	1417	1503	1503	1493	1433
+Mississippi	ELEC.GEN.WAS-MS-99.A	ELEC.GEN.WAS	Other biomass	3	5	6	5	5	7	1	3	16	15
+Tennessee	ELEC.GEN.ALL-TN-99.A	ELEC.GEN.ALL	General
+Tennessee	ELEC.GEN.HYC-TN-99.A	ELEC.GEN.HYC	Conventional Hydroelectric	10408	9310	7749	4940	5646	10212	8138	9576	8296	12443
+Tennessee	ELEC.GEN.AOR-TN-99.A	ELEC.GEN.AOR	All Other Renewables	830	766	811	971	965	950	988	1020	836	1110
+Tennessee	ELEC.GEN.WND-TN-99.A	ELEC.GEN.WND	Wind	4	3	55	50	50	52	41	53	47	47
+Tennessee	ELEC.GEN.SUN-TN-99.A	ELEC.GEN.SUN	Solar	--	--	--	--	--	--	--	--	12	20
+Tennessee	ELEC.GEN.GEO-TN-99.A	ELEC.GEN.GEO	Geothermal	--	--	--	--	--	--	--	--	--	--
+Tennessee	ELEC.GEN.BIO-TN-99.A	ELEC.GEN.BIO	Biomass (total)	826	763	756	921	915	899	947	967	777	1043
+Tennessee	ELEC.GEN.WWW-TN-99.A	ELEC.GEN.WWW	Wood and wood-derived fuels	784	695	698	868	879	862	914	930	715	958
+Tennessee	ELEC.GEN.WAS-TN-99.A	ELEC.GEN.WAS	Other biomass	42	68	58	52	36	36	33	36	62	85
+West South Central	ELEC.GEN.ALL-WSC-99.A	ELEC.GEN.ALL	General
+Arkansas	ELEC.GEN.ALL-AR-99.A	ELEC.GEN.ALL	General
+Arkansas	ELEC.GEN.HYC-AR-99.A	ELEC.GEN.HYC	Conventional Hydroelectric	3643	3083	1551	3237	4660	4193	3659	2958	2198	2655
+Arkansas	ELEC.GEN.AOR-AR-99.A	ELEC.GEN.AOR	All Other Renewables	1810	1736	1723	1624	1513	1586	1624	1668	1660	1601
+Arkansas	ELEC.GEN.WND-AR-99.A	ELEC.GEN.WND	Wind	--	--	--	--	--	--	--	--	--	--
+Arkansas	ELEC.GEN.SUN-AR-99.A	ELEC.GEN.SUN	Solar	--	--	--	--	--	--	--	--	--	--
+Arkansas	ELEC.GEN.GEO-AR-99.A	ELEC.GEN.GEO	Geothermal	--	--	--	--	--	--	--	--	--	--
+Arkansas	ELEC.GEN.BIO-AR-99.A	ELEC.GEN.BIO	Biomass (total)	1810	1736	1723	1624	1513	1586	1624	1668	1660	1601
+Arkansas	ELEC.GEN.WWW-AR-99.A	ELEC.GEN.WWW	Wood and wood-derived fuels	1778	1708	1689	1581	1466	1529	1567	1587	1590	1496
+Arkansas	ELEC.GEN.WAS-AR-99.A	ELEC.GEN.WAS	Other biomass	33	28	33	43	47	57	57	81	70	105
+Louisiana	ELEC.GEN.ALL-LA-99.A	ELEC.GEN.ALL	General
+Louisiana	ELEC.GEN.HYC-LA-99.A	ELEC.GEN.HYC	Conventional Hydroelectric	1099	811	713	827	1064	1236	1109	1044	680	1045
+Louisiana	ELEC.GEN.AOR-LA-99.A	ELEC.GEN.AOR	All Other Renewables	2966	2887	2962	2980	2710	2364	2468	2443	2430	2787
+Louisiana	ELEC.GEN.WND-LA-99.A	ELEC.GEN.WND	Wind	--	--	--	--	--	--	--	--	--	--
+Louisiana	ELEC.GEN.SUN-LA-99.A	ELEC.GEN.SUN	Solar	--	--	--	--	--	--	--	--	--	--
+Louisiana	ELEC.GEN.GEO-LA-99.A	ELEC.GEN.GEO	Geothermal	--	--	--	--	--	--	--	--	--	--
+Louisiana	ELEC.GEN.BIO-LA-99.A	ELEC.GEN.BIO	Biomass (total)	2966	2887	2962	2980	2710	2364	2468	2443	2430	2787
+Louisiana	ELEC.GEN.WWW-LA-99.A	ELEC.GEN.WWW	Wood and wood-derived fuels	2890	2806	2881	2898	2639	2297	2393	2371	2366	2704
+Louisiana	ELEC.GEN.WAS-LA-99.A	ELEC.GEN.WAS	Other biomass	77	80	81	82	71	67	74	71	64	82
+Oklahoma	ELEC.GEN.ALL-OK-99.A	ELEC.GEN.ALL	General
+Oklahoma	ELEC.GEN.HYC-OK-99.A	ELEC.GEN.HYC	Conventional Hydroelectric	2977	2630	624	3066	3811	3553	2809	1507	1146	2178
+Oklahoma	ELEC.GEN.AOR-OK-99.A	ELEC.GEN.AOR	All Other Renewables	823	1137	2010	2129	2551	2929	4160	5919	8521	11506
+Oklahoma	ELEC.GEN.WND-OK-99.A	ELEC.GEN.WND	Wind	573	848	1712	1849	2358	2698	3808	5605	8158	11162
+Oklahoma	ELEC.GEN.SUN-OK-99.A	ELEC.GEN.SUN	Solar	--	--	--	--	--	--	--	--	--	--
+Oklahoma	ELEC.GEN.GEO-OK-99.A	ELEC.GEN.GEO	Geothermal	--	--	--	--	--	--	--	--	--	--
+Oklahoma	ELEC.GEN.BIO-OK-99.A	ELEC.GEN.BIO	Biomass (total)	250	289	297	280	193	231	352	314	363	344
+Oklahoma	ELEC.GEN.WWW-OK-99.A	ELEC.GEN.WWW	Wood and wood-derived fuels	250	289	297	276	23	68	255	227	269	218
+Oklahoma	ELEC.GEN.WAS-OK-99.A	ELEC.GEN.WAS	Other biomass	0	0	0	4	170	163	97	87	94	126
+Texas	ELEC.GEN.ALL-TX-99.A	ELEC.GEN.ALL	General
+Texas	ELEC.GEN.HYC-TX-99.A	ELEC.GEN.HYC	Conventional Hydroelectric	1301	1333	662	1644	1039	1029	1262	563	584	480
+Texas	ELEC.GEN.AOR-TX-99.A	ELEC.GEN.AOR	All Other Renewables	4247	5336	7818	10288	17639	21104	27705	32183	34017	37760
+Texas	ELEC.GEN.WND-TX-99.A	ELEC.GEN.WND	Wind	3138	4237	6671	9006	16225	20026	26251	30548	32214	35874
+Texas	ELEC.GEN.SUN-TX-99.A	ELEC.GEN.SUN	Solar	--	--	--	--	--	--	8	29	118	163
+Texas	ELEC.GEN.GEO-TX-99.A	ELEC.GEN.GEO	Geothermal	--	--	--	--	--	--	--	--	--	--
+Texas	ELEC.GEN.BIO-TX-99.A	ELEC.GEN.BIO	Biomass (total)	1109	1098	1148	1281	1414	1078	1445	1606	1684	1723
+Texas	ELEC.GEN.WWW-TX-99.A	ELEC.GEN.WWW	Wood and wood-derived fuels	857	852	892	914	976	649	900	928	984	993
+Texas	ELEC.GEN.WAS-TX-99.A	ELEC.GEN.WAS	Other biomass	252	247	256	367	438	429	545	678	700	730
+Mountain	ELEC.GEN.ALL-MTN-99.A	ELEC.GEN.ALL	General
+Arizona	ELEC.GEN.ALL-AZ-99.A	ELEC.GEN.ALL	General
+Arizona	ELEC.GEN.HYC-AZ-99.A	ELEC.GEN.HYC	Conventional Hydroelectric	6973	6410	6793	6598	7286	6427	6622	9174	6717	5915
+Arizona	ELEC.GEN.AOR-AZ-99.A	ELEC.GEN.AOR	All Other Renewables	48	74	54	42	114	202	319	529	1698	2733
+Arizona	ELEC.GEN.WND-AZ-99.A	ELEC.GEN.WND	Wind	--	--	--	--	--	30	135	256	532	450
+Arizona	ELEC.GEN.SUN-AZ-99.A	ELEC.GEN.SUN	Solar	4	14	13	9	15	14	16	83	955	2111
+Arizona	ELEC.GEN.GEO-AZ-99.A	ELEC.GEN.GEO	Geothermal	--	--	--	--	--	--	--	--	--	--
+Arizona	ELEC.GEN.BIO-AZ-99.A	ELEC.GEN.BIO	Biomass (total)	44	60	40	33	99	159	168	190	211	171
+Arizona	ELEC.GEN.WWW-AZ-99.A	ELEC.GEN.WWW	Wood and wood-derived fuels	--	12	8	--	76	137	140	144	157	102
+Arizona	ELEC.GEN.WAS-AZ-99.A	ELEC.GEN.WAS	Other biomass	44	48	32	33	23	22	28	47	54	69
+Colorado	ELEC.GEN.ALL-CO-99.A	ELEC.GEN.ALL	General
+Colorado	ELEC.GEN.HYC-CO-99.A	ELEC.GEN.HYC	Conventional Hydroelectric	1195	1415	1791	1730	2039	1886	1578	2083	1497	1213
+Colorado	ELEC.GEN.AOR-CO-99.A	ELEC.GEN.AOR	All Other Renewables	255	811	896	1325	3284	3246	3555	5367	6192	7536
+Colorado	ELEC.GEN.WND-CO-99.A	ELEC.GEN.WND	Wind	220	776	866	1292	3221	3164	3452	5200	5969	7204
+Colorado	ELEC.GEN.SUN-CO-99.A	ELEC.GEN.SUN	Solar	--	--	--	2	18	26	42	105	165	248
+Colorado	ELEC.GEN.GEO-CO-99.A	ELEC.GEN.GEO	Geothermal	--	--	--	--	--	--	--	--	--	--
+Colorado	ELEC.GEN.BIO-CO-99.A	ELEC.GEN.BIO	Biomass (total)	35	34	31	31	45	57	60	62	58	84
+Colorado	ELEC.GEN.WWW-CO-99.A	ELEC.GEN.WWW	Wood and wood-derived fuels	0	0	0	0	0	0	2	0	0	3
+Colorado	ELEC.GEN.WAS-CO-99.A	ELEC.GEN.WAS	Other biomass	35	34	31	31	45	56	58	62	58	81
+Idaho	ELEC.GEN.ALL-ID-99.A	ELEC.GEN.ALL	General
+Idaho	ELEC.GEN.HYC-ID-99.A	ELEC.GEN.HYC	Conventional Hydroelectric	8462	8542	11242	9022	9363	10434	9154	13405	10940	8473
+Idaho	ELEC.GEN.AOR-ID-99.A	ELEC.GEN.AOR	All Other Renewables	560	560	690	653	748	867	1014	1892	2515	3152
+Idaho	ELEC.GEN.WND-ID-99.A	ELEC.GEN.WND	Wind	--	--	170	172	207	313	441	1307	1891	2460
+Idaho	ELEC.GEN.SUN-ID-99.A	ELEC.GEN.SUN	Solar	--	--	--	--	--	--	--	--	--	--
+Idaho	ELEC.GEN.GEO-ID-99.A	ELEC.GEN.GEO	Geothermal	--	--	--	--	86	76	72	63	75	40
+Idaho	ELEC.GEN.BIO-ID-99.A	ELEC.GEN.BIO	Biomass (total)	560	560	520	481	455	478	501	522	549	652
+Idaho	ELEC.GEN.WWW-ID-99.A	ELEC.GEN.WWW	Wood and wood-derived fuels	560	560	520	481	455	478	478	474	460	454
+Idaho	ELEC.GEN.WAS-ID-99.A	ELEC.GEN.WAS	Other biomass	--	--	--	--	--	0	24	48	90	198
+Montana	ELEC.GEN.ALL-MT-99.A	ELEC.GEN.ALL	General
+Montana	ELEC.GEN.HYC-MT-99.A	ELEC.GEN.HYC	Conventional Hydroelectric	8856	9587	10130	9364	10000	9506	9415	12596	11283	9638
+Montana	ELEC.GEN.AOR-MT-99.A	ELEC.GEN.AOR	All Other Renewables	62	72	530	607	704	916	1027	1265	1262	1760
+Montana	ELEC.GEN.WND-MT-99.A	ELEC.GEN.WND	Wind	--	--	436	496	593	821	930	1265	1262	1755
+Montana	ELEC.GEN.SUN-MT-99.A	ELEC.GEN.SUN	Solar	--	--	--	--	--	--	--	--	--	--
+Montana	ELEC.GEN.GEO-MT-99.A	ELEC.GEN.GEO	Geothermal	--	--	--	--	--	--	--	--	--	--
+Montana	ELEC.GEN.BIO-MT-99.A	ELEC.GEN.BIO	Biomass (total)	62	72	94	111	111	95	97	--	--	5
+Montana	ELEC.GEN.WWW-MT-99.A	ELEC.GEN.WWW	Wood and wood-derived fuels	62	72	94	111	111	95	97	--	--	5
+Montana	ELEC.GEN.WAS-MT-99.A	ELEC.GEN.WAS	Other biomass	--	--	--	--	--	--	--	--	--	--
+Nevada	ELEC.GEN.ALL-NV-99.A	ELEC.GEN.ALL	General
+Nevada	ELEC.GEN.HYC-NV-99.A	ELEC.GEN.HYC	Conventional Hydroelectric	1615	1702	2058	2003	1751	2461	2157	2191	2440	2682
+Nevada	ELEC.GEN.AOR-NV-99.A	ELEC.GEN.AOR	All Other Renewables	1298	1263	1344	1297	1539	1808	2287	2437	2969	3690
+Nevada	ELEC.GEN.WND-NV-99.A	ELEC.GEN.WND	Wind	--	--	--	--	--	--	--	--	129	251
+Nevada	ELEC.GEN.SUN-NV-99.A	ELEC.GEN.SUN	Solar	--	--	--	44	156	174	217	291	473	745
+Nevada	ELEC.GEN.GEO-NV-99.A	ELEC.GEN.GEO	Geothermal	1298	1263	1344	1253	1383	1633	2070	2146	2347	2670
+Nevada	ELEC.GEN.BIO-NV-99.A	ELEC.GEN.BIO	Biomass (total)	--	--	--	--	--	1	0	0	19	24
+Nevada	ELEC.GEN.WWW-NV-99.A	ELEC.GEN.WWW	Wood and wood-derived fuels	--	--	--	--	--	1	0	0	0	0
+Nevada	ELEC.GEN.WAS-NV-99.A	ELEC.GEN.WAS	Other biomass	--	--	--	--	--	--	--	--	19	24
+New Mexico	ELEC.GEN.ALL-NM-99.A	ELEC.GEN.ALL	General
+New Mexico	ELEC.GEN.HYC-NM-99.A	ELEC.GEN.HYC	Conventional Hydroelectric	139	165	198	268	312	271	217	195	223	92
+New Mexico	ELEC.GEN.AOR-NM-99.A	ELEC.GEN.AOR	All Other Renewables	513	799	1277	1409	1662	1580	1855	2242	2574	2600
+New Mexico	ELEC.GEN.WND-NM-99.A	ELEC.GEN.WND	Wind	513	795	1255	1393	1643	1547	1832	2104	2226	2193
+New Mexico	ELEC.GEN.SUN-NM-99.A	ELEC.GEN.SUN	Solar	--	--	--	--	--	--	9	128	334	388
+New Mexico	ELEC.GEN.GEO-NM-99.A	ELEC.GEN.GEO	Geothermal	--	--	--	--	--	--	--	--	--	0
+New Mexico	ELEC.GEN.BIO-NM-99.A	ELEC.GEN.BIO	Biomass (total)	0	5	22	16	19	34	14	9	14	19
+New Mexico	ELEC.GEN.WWW-NM-99.A	ELEC.GEN.WWW	Wood and wood-derived fuels	--	--	--	--	--	--	--	--	--	--
+New Mexico	ELEC.GEN.WAS-NM-99.A	ELEC.GEN.WAS	Other biomass	0	5	22	16	19	34	14	9	14	19
+Utah	ELEC.GEN.ALL-UT-99.A	ELEC.GEN.ALL	General
+Utah	ELEC.GEN.HYC-UT-99.A	ELEC.GEN.HYC	Conventional Hydroelectric	450	784	747	539	668	835	696	1230	748	505
+Utah	ELEC.GEN.AOR-UT-99.A	ELEC.GEN.AOR	All Other Renewables	199	189	205	195	302	487	781	961	1100	932
+Utah	ELEC.GEN.WND-UT-99.A	ELEC.GEN.WND	Wind	--	--	--	--	24	160	448	573	704	540
+Utah	ELEC.GEN.SUN-UT-99.A	ELEC.GEN.SUN	Solar	--	--	--	--	--	--	--	--	2	2
+Utah	ELEC.GEN.GEO-UT-99.A	ELEC.GEN.GEO	Geothermal	195	185	191	164	254	279	277	330	335	319
+Utah	ELEC.GEN.BIO-UT-99.A	ELEC.GEN.BIO	Biomass (total)	4	4	15	31	24	48	56	58	60	71
+Utah	ELEC.GEN.WWW-UT-99.A	ELEC.GEN.WWW	Wood and wood-derived fuels	--	--	--	--	--	--	--	--	--	--
+Utah	ELEC.GEN.WAS-UT-99.A	ELEC.GEN.WAS	Other biomass	4	4	15	31	24	48	56	58	60	71
+Wyoming	ELEC.GEN.ALL-WY-99.A	ELEC.GEN.ALL	General
+Wyoming	ELEC.GEN.HYC-WY-99.A	ELEC.GEN.HYC	Conventional Hydroelectric	593	808	843	729	835	967	1024	1224	893	711
+Wyoming	ELEC.GEN.AOR-WY-99.A	ELEC.GEN.AOR	All Other Renewables	617	717	759	755	963	2226	3247	4612	4369	4433
+Wyoming	ELEC.GEN.WND-WY-99.A	ELEC.GEN.WND	Wind	617	717	759	755	963	2226	3247	4612	4369	4433
+Wyoming	ELEC.GEN.SUN-WY-99.A	ELEC.GEN.SUN	Solar	--	--	--	--	--	--	--	--	--	--
+Wyoming	ELEC.GEN.GEO-WY-99.A	ELEC.GEN.GEO	Geothermal	--	--	--	--	--	--	--	--	--	--
+Wyoming	ELEC.GEN.BIO-WY-99.A	ELEC.GEN.BIO	Biomass (total)	--	--	--	--	--	--	--	--	--	--
+Wyoming	ELEC.GEN.WWW-WY-99.A	ELEC.GEN.WWW	Wood and wood-derived fuels	--	--	--	--	--	--	--	--	--	--
+Wyoming	ELEC.GEN.WAS-WY-99.A	ELEC.GEN.WAS	Other biomass	--	--	--	--	--	--	--	--	--	--
+Pacific Contiguous	ELEC.GEN.ALL-PCC-99.A	ELEC.GEN.ALL	General
+California	ELEC.GEN.ALL-CA-99.A	ELEC.GEN.ALL	General
+California	ELEC.GEN.HYC-CA-99.A	ELEC.GEN.HYC	Conventional Hydroelectric	34141	39632	48047	27328	24128	27888	33431	42557	26837	23755
+California	ELEC.GEN.AOR-CA-99.A	ELEC.GEN.AOR	All Other Renewables	23971	23654	23915	24845	24784	25540	25450	27222	29967	35578
+California	ELEC.GEN.WND-CA-99.A	ELEC.GEN.WND	Wind	4306	4262	4883	5585	5385	5840	6079	7752	9754	12822
+California	ELEC.GEN.SUN-CA-99.A	ELEC.GEN.SUN	Solar	571	537	495	557	670	647	769	889	1382	3814
+California	ELEC.GEN.GEO-CA-99.A	ELEC.GEN.GEO	Geothermal	13105	13023	12821	12991	12883	12853	12600	12552	12519	12307
+California	ELEC.GEN.BIO-CA-99.A	ELEC.GEN.BIO	Biomass (total)	5989	5833	5717	5713	5846	6200	6002	6029	6311	6635
+California	ELEC.GEN.WWW-CA-99.A	ELEC.GEN.WWW	Wood and wood-derived fuels	3827	3609	3422	3407	3484	3732	3551	3445	3798	3792
+California	ELEC.GEN.WAS-CA-99.A	ELEC.GEN.WAS	Other biomass	2162	2224	2294	2305	2362	2468	2451	2585	2514	2843
+Oregon	ELEC.GEN.ALL-OR-99.A	ELEC.GEN.ALL	General
+Oregon	ELEC.GEN.HYC-OR-99.A	ELEC.GEN.HYC	Conventional Hydroelectric	33081	30948	37850	33587	33805	33034	30542	42315	39410	33098
+Oregon	ELEC.GEN.AOR-OR-99.A	ELEC.GEN.AOR	All Other Renewables	1115	1601	1829	2228	3423	4272	4757	5490	7207	8635
+Oregon	ELEC.GEN.WND-OR-99.A	ELEC.GEN.WND	Wind	619	734	931	1247	2575	3470	3920	4775	6343	7456
+Oregon	ELEC.GEN.SUN-OR-99.A	ELEC.GEN.SUN	Solar	--	--	--	--	--	--	--	0	6	20
+Oregon	ELEC.GEN.GEO-OR-99.A	ELEC.GEN.GEO	Geothermal	--	--	--	--	--	--	--	--	26	165
+Oregon	ELEC.GEN.BIO-OR-99.A	ELEC.GEN.BIO	Biomass (total)	496	866	898	981	848	803	837	714	832	994
+Oregon	ELEC.GEN.WWW-OR-99.A	ELEC.GEN.WWW	Wood and wood-derived fuels	410	768	799	843	717	674	632	492	600	700
+Oregon	ELEC.GEN.WAS-OR-99.A	ELEC.GEN.WAS	Other biomass	86	98	99	139	131	128	205	222	232	294
+Washington	ELEC.GEN.ALL-WA-99.A	ELEC.GEN.ALL	General
+Washington	ELEC.GEN.HYC-WA-99.A	ELEC.GEN.HYC	Conventional Hydroelectric	71576	72075	82008	78829	77637	72933	68288	91818	89464	78155
+Washington	ELEC.GEN.AOR-WA-99.A	ELEC.GEN.AOR	All Other Renewables	2311	2114	2503	3731	4938	5045	6617	8014	8214	8822
+Washington	ELEC.GEN.WND-WA-99.A	ELEC.GEN.WND	Wind	737	498	1038	2438	3657	3572	4745	6262	6600	7004
+Washington	ELEC.GEN.SUN-WA-99.A	ELEC.GEN.SUN	Solar	--	--	--	--	0	0	0	1	1	1
+Washington	ELEC.GEN.GEO-WA-99.A	ELEC.GEN.GEO	Geothermal	--	--	--	--	--	--	--	--	--	--
+Washington	ELEC.GEN.BIO-WA-99.A	ELEC.GEN.BIO	Biomass (total)	1575	1615	1465	1293	1281	1472	1872	1751	1614	1817
+Washington	ELEC.GEN.WWW-WA-99.A	ELEC.GEN.WWW	Wood and wood-derived fuels	1389	1425	1281	1116	1113	1305	1676	1582	1375	1533
+Washington	ELEC.GEN.WAS-WA-99.A	ELEC.GEN.WAS	Other biomass	185	190	184	176	168	167	196	169	239	284
+Pacific Noncontiguous	ELEC.GEN.ALL-PCN-99.A	ELEC.GEN.ALL	General
+Alaska	ELEC.GEN.ALL-AK-99.A	ELEC.GEN.ALL	General
+Alaska	ELEC.GEN.HYC-AK-99.A	ELEC.GEN.HYC	Conventional Hydroelectric	1498	1464	1224	1291	1172	1324	1433	1345	1575	1435
+Alaska	ELEC.GEN.AOR-AK-99.A	ELEC.GEN.AOR	All Other Renewables	9	6	7	11	5	14	19	16	40	197
+Alaska	ELEC.GEN.WND-AK-99.A	ELEC.GEN.WND	Wind	--	1	1	1	0	7	13	12	37	145
+Alaska	ELEC.GEN.SUN-AK-99.A	ELEC.GEN.SUN	Solar	--	--	--	--	--	--	--	--	--	--
+Alaska	ELEC.GEN.GEO-AK-99.A	ELEC.GEN.GEO	Geothermal	--	--	--	--	--	--	--	--	--	--
+Alaska	ELEC.GEN.BIO-AK-99.A	ELEC.GEN.BIO	Biomass (total)	9	5	7	10	5	7	6	3	3	52
+Alaska	ELEC.GEN.WWW-AK-99.A	ELEC.GEN.WWW	Wood and wood-derived fuels	0	0	1	0	0	--	--	--	--	0
+Alaska	ELEC.GEN.WAS-AK-99.A	ELEC.GEN.WAS	Other biomass	9	5	6	10	5	7	6	3	3	52
+Hawaii	ELEC.GEN.ALL-HI-99.A	ELEC.GEN.ALL	General
+Hawaii	ELEC.GEN.HYC-HI-99.A	ELEC.GEN.HYC	Conventional Hydroelectric	94	96	120	92	84	113	70	93	115	78
+Hawaii	ELEC.GEN.AOR-HI-99.A	ELEC.GEN.AOR	All Other Renewables	550	538	618	753	777	705	747	881	925	1127
+Hawaii	ELEC.GEN.WND-HI-99.A	ELEC.GEN.WND	Wind	7	7	80	238	240	251	261	341	378	503
+Hawaii	ELEC.GEN.SUN-HI-99.A	ELEC.GEN.SUN	Solar	--	--	--	--	0	1	2	4	5	19
+Hawaii	ELEC.GEN.GEO-HI-99.A	ELEC.GEN.GEO	Geothermal	213	222	212	230	234	168	201	224	261	275
+Hawaii	ELEC.GEN.BIO-HI-99.A	ELEC.GEN.BIO	Biomass (total)	329	310	326	285	302	284	283	313	281	329
+Hawaii	ELEC.GEN.WWW-HI-99.A	ELEC.GEN.WWW	Wood and wood-derived fuels	--	--	--	--	--	--	0	0	0	0
+Hawaii	ELEC.GEN.WAS-HI-99.A	ELEC.GEN.WAS	Other biomass	329	310	326	285	302	284	283	313	281	329

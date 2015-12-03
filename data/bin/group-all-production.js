@@ -3,6 +3,7 @@ var yargs = require('yargs')
   .usage('$0 [options]')
   // .describe('natgas', 'The path of the onshore (state) data')
   .describe('naturalgas', 'The path of the offshore area data')
+  .describe('naturalgasother', 'The path of the offshore area data')
   .describe('sample', 'The path of the offshore area data')
   .describe('dummy', 'The path of the offshore area data')
   .describe('if', 'input format')
@@ -27,23 +28,23 @@ var read = util.readData;
 var streamify = require('stream-array');
 
 async.parallel({
-  // naturalgas: function readNaturalGas(done) {
-  //   return read(
-  //     options.naturalgas,
-  //     tito.createReadStream(options['if']),
-  //     done
-  //   );
-  // },
-  sample: function readSample(done) {
+  naturalgas: function readNaturalGas(done) {
     return read(
-      options.sample,
+      options.naturalgas,
       tito.createReadStream(options['if']),
       done
     );
   },
-  dummy: function readDummy(done) {
+  naturalgas2: function readNaturalGas2(done) {
     return read(
-      options.dummy,
+      options.naturalgas2,
+      tito.createReadStream(options['if']),
+      done
+    );
+  },
+  oil: function readOil(done) {
+    return read(
+      options.oil,
       tito.createReadStream(options['if']),
       done
     );
@@ -74,10 +75,23 @@ async.parallel({
         var newResults = {};
         // if (index)
         // newResults.Production = d[val];
-        if (val == 'Region' || !val || index === 0){ return; }
-          newResults.Year = d['Region'];
+        if (val == 'Year' || !val || index === 0){ return; }
+          newResults.Year = d['Year'];
           newResults.Region = val;
           newResults.Commodity = commodity;
+          switch(commodity) {
+              case 'naturalgas':
+                  newResults.Commodity = 'natural gas';
+                  break;
+              case 'naturalgas2':
+                  newResults.Commodity = 'natural gas';
+                  break;
+              case 'oil':
+                  newResults.Commodity = 'crude oil';
+                  break;
+              default:
+                  newResults.Commodity = commodity;
+          }
           newResults.Volume = d[val];
           newResults.Production = productionUnits;
         results.push(newResults);

@@ -277,8 +277,9 @@ county/production.tsv: $(input)onrr/regional-production.tsv
 production/all-production.tsv:
 	mkdir -p $(dir $@)
 	bin/group-all-production.js \
-		--sample $(input)eia/commodity/sample.tsv \
-		--dummy $(input)eia/commodity/dummy.tsv \
+		--naturalgas2 $(input)eia/commodity/naturalgas2.tsv \
+		--naturalgas $(input)eia/commodity/naturalgas.tsv \
+		--oil $(input)eia/commodity/oil.tsv \
 		> $@
 
 geo: \

@@ -76,7 +76,17 @@
 // }
 
 .unit-selector {
+  display: inline-block;
+  background-color: $white;
+  @include appearance(none);
+  width: 30px;
+  height: 30px;
+  background: $white;
+}
+
+.unit-selector_label {
   @include user-select(none);
+  background-color: $white;
   background-image: none;
   border: 1px solid transparent;
   border-radius: 4px;
@@ -97,7 +107,8 @@
   width: 50%;
 
   &:hover,
-  &.active {
+  &.active,
+  &[value='$'] {
     background: $dark-blue;
     color: $white;
   }
@@ -127,6 +138,8 @@
     padding: 0;
     pointer-events: none;
     position: absolute;
+
+
   }
 }
 

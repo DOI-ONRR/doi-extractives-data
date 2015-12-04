@@ -160,8 +160,6 @@ async.parallel({
 
       _.forEach(data[commodity], function(d, index) {
 
-
-        // console.warn(d, '-----')
         if (stateKey[d.State]){
           years.forEach(function(year){
             var volume = d[year];
@@ -184,12 +182,10 @@ async.parallel({
 
       _.forEach(regionsUsed, function(region){
         _.forEach(yearsUsed, function(year){
-          // console.warn(region,'--', year)
           var intersection = _.where(renewablesTotals, { Region: region, Year: year });
 
           var volume = _.map(intersection, function(val) {
-            // console.warn(val)
-            return +val.Volume
+            return +val.Volume;
           })
 
           volume = _.reduce(volume, function(total, n) {
@@ -202,20 +198,15 @@ async.parallel({
           newResults.Volume = volume;
           newResults.Commodity = '';
           newResults.Product = 'Renewables Total (Kwh)';
-          // console.warn(newResults, '=======')
+
           results.push(newResults);
 
-        })
-      })
+        });
+      });
 
-      // console.warn()
       _.forEach(data[commodity],function(d, index) {
 
-        // var renewableTotal = {
-        //   Region: stateKey[d.State]
-        // };
 
-        // console.warn(d, '-----')
         if (stateKey[d.State]){
           years.forEach(function(year){
             var matches = _.where(renewablesTotals, { Region: stateKey[d.State], Year: year});
@@ -227,8 +218,6 @@ async.parallel({
             stateYearMatch.Commodity = '';
             stateYearMatch.Product = d.Source + ' (Kwh)';
 
-            // console.warn('>>>>>>>',matches);
-      // console.warn('====',renewablesTotals)
           });
         }
       });
@@ -236,7 +225,6 @@ async.parallel({
 
     var parseCoal = function(commodity, data, years){
 
-      // console.warn(data[commodity])
       var getStates = function(data, commodity, column) {
 
         var allColumn = _.map(data[commodity], function(data, n) {
@@ -260,9 +248,6 @@ async.parallel({
       _.forEach(states, function(state) {
         years.forEach(function(year){
           // Get Production Numbers (only have data for 2013)
-
-          // console.warn(state)
-
           var productionByState = _.pluck(_.where(data[commodity], {'Year': year, 'Mine State': state}), 'Production (short tons)');
 
           productionByState = _.map(productionByState, trimCommas);
@@ -297,18 +282,14 @@ async.parallel({
           });
         }
 
-        console.warn(d.Year,'------------')
         _.forEach(keys, function(val, i){
-          console.warn(d.Year,'---in----')
-          // console.warn(val, i)
           var inYearRange = years.indexOf(d['Year']) >= 0;
 
           // console.warn(index,val,'->', d['Year'], '=====', inYearRange)
 
           var newResults = {};
-          // console.warn(val)
+
           if (val == 'Year' || !val || i === 0 || !inYearRange){ return; }
-          // console.warn(d)
           newResults.Year = d['Year'];
           newResults.Region = val;
           newResults.Commodity = commodity;
@@ -331,24 +312,21 @@ async.parallel({
             default:
                 newResults.Commodity = commodity;
           }
-
-
-
           results.push(newResults);
         });
       });
     }
     switch(commodity) {
       case 'coal':
-        console.warn(commodity, '--> done!')
+        // console.warn(commodity, '--> done!')
         parseCoal(commodity, data, years);
         break;
       case 'renewables':
-        console.warn(commodity, '--> done!')
+        // console.warn(commodity, '--> done!')
         parseRenewables(commodity, data, years);
         break;
       default:
-        console.warn(commodity, '--> done!')
+        // console.warn(commodity, '--> done!')
         parseOther(commodity, data, years);
         break;
     }

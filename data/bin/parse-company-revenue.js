@@ -1,4 +1,6 @@
 #!/usr/bin/env node
+'use strict';
+
 var yargs = require('yargs')
   .option('if', {
     desc: 'input format (tito-compatible)',
@@ -15,7 +17,6 @@ var args = options._;
 var fs = require('fs');
 var tito = require('tito').formats;
 var thru = require('through2').obj;
-var util = require('../../lib/util');
 var parse = require('../../lib/parse');
 
 var input = args.length
@@ -31,5 +32,5 @@ input
     d.Revenue = parse.dollars(d.Revenue);
     next(null, d);
   }))
-  .pipe(tito.createWriteStream(options['of']))
+  .pipe(tito.createWriteStream(options['of'])) // jshint ignore:line
   .pipe(process.stdout);

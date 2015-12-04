@@ -25,15 +25,7 @@ permalink: /how-it-works/
   <section class="container">
     <h3 id="process" class="landing-section_category">The process</h3>
     <div class="container landing-section_open overview">
-      <!-- <h5 class="landing-heading"><a id="process-overview" href="{{site.baseurl}}/how-it-works/process-overview/">Overview</a></h5> -->
-      <!-- <p class="landing-description">The process of how the federal government awards rights to extract natural resources from federal lands, and how those resources eventually result in revenue, differs depending on the resource and whether extraction is taking place onshore or offshore.</p> -->
       <p>How the federal government awards rights to extract natural resources from federal lands, and how those resources eventually result in revenue, differs depending on the resource and whether extraction is taking place onshore or offshore, though it follows five general steps:</p>
-      <!-- <div class="landing-icons">
-        <icon class="icon-oil"></icon>
-        <icon class="icon-minerals"></icon>
-        <icon class="icon-coal"></icon>
-        <icon class="icon-renewables"></icon>
-      </div> -->
       <p class="para-lg landing-steps">
         <span>Plan <icon class="icon-chevron-lg"></icon></span>
         <span>Lease <icon class="icon-chevron-lg"></icon></span>
@@ -43,22 +35,31 @@ permalink: /how-it-works/
       </p>
       <p>Choose a resource to learn more:</p>
     </div>
-    <div class="container landing-section_open oil-gas">
+
+    <div class="container landing-section_open landing-oil_gas-wrapper">
       <h5 class="landing-heading"><a href="{{site.baseurl}}/how-it-works/offshore-oil-gas/">Oil and gas</a></h5>
-      <p class="landing-description">Oil and gas (or natural gas) are fossil fuels that form underground on land and under the ocean. While they are abundant, they are not renewable.</p>
+      <div class="landing-oil_gas">
+        <p class="landing-description">Oil and gas (or natural gas) are fossil fuels that form underground on land and under the ocean. While they are abundant, they are not renewable.</p>
+      </div>
     </div>
     </div>
-    <div class="container landing-section_open coal">
+    <div class="container landing-section_open landing-coal-wrapper">
       <h5 class="landing-heading"><a href="{{site.baseurl}}/how-it-works/coal/">Coal</a></h5>
-      <p class="landing-description">Miners extract coal through surface and subsurface mining. In 2013, the U.S. was the world’s second largest coal producer after China.</p>
+      <div class="landing-coal">
+        <p class="landing-description">Miners extract coal through surface and subsurface mining. In 2013, the U.S. was the world’s second largest coal producer after China.</p>
+      </div>
     </div>
-    <div class="container landing-section_open minerals">
+    <div class="container landing-section_open landing-minerals-wrapper">
       <h5 class="landing-heading"><a href="{{site.baseurl}}/how-it-works/minerals/">Nonenergy minerals</a></h5>
+      <div class="landing-minerals">
         <p class="landing-description">Gold, copper, and iron are the chief sources of nonenergy mineral revenues. In 2013, U.S. metal production totaled $32 billion in value.</p>
+      </div>
     </div>
-    <div class="container landing-section_open renewables">
+    <div class="container landing-section_open landing-renewables-wrapper">
       <h5 class="landing-heading"><a href="{{site.baseurl}}/how-it-works/onshore-renewables/">Renewable energy</a></h5>
-      <p class="landing-description">Renewable energy resources—including geothermal, solar, wind, biomass, and hydrokinetic energy—comprised about 10% of total U.S. energy consumption in 2013.</p>
+      <div class="landing-renewables">
+        <p class="landing-description">Renewable energy resources—including geothermal, solar, wind, biomass, and hydrokinetic energy—comprised about 10% of total U.S. energy consumption in 2013.</p>
+      </div>
     </div>
   </section>
 

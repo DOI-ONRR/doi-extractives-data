@@ -64,6 +64,10 @@
   margin-bottom: $base-padding-extra;
 }
 
+.search-result-list-tag {
+  display: inline-block;
+}
+
 .search-credit {
   @include span-columns(8 of 8);
 }

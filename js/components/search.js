@@ -45,7 +45,10 @@ $( document ).ready(function() {
           if(hit._source.tag) {
 
             $.each(hit._source.tag, function(i, tag) {
-              tags+='<span class="search-result-list-tag">&nbsp;<a href="../search-results/?q=' + tag + '" title="Search for '+tag+'">' + tag + '</a>&nbsp;/</span>'
+              tags += '<span class="search-result-list-tag">&nbsp;<a href="../search-results/?q='
+              + tag + '" title="Search for '
+              + tag +'">'
+              + tag + '</a>&nbsp;/</span>';
             });
           }
 

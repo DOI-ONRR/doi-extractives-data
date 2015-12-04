@@ -11,6 +11,16 @@
   @include respond-to(huge-plus-up) {
     margin-right: 0;
   }
+
+  select {
+    height: 50px;
+  }
+}
+
+.filters-last {
+  @include respond-to(medium-up) {
+    margin-bottom: 80px;
+  }
 }
 
 .filters-heading {
@@ -19,15 +29,30 @@
 
   @include respond-to(medium-up) {
     display: inline-block;
+    width: 65%;
   }
 
   h3 {
     margin-bottom: 0;
   }
+
+  p {
+    @include heading(para-md);
+    color: $blue-alt;
+  }
 }
 
 .filters {
   color: $dark-blue;
+
+  label {
+    @include heading(para-sm);
+    color: $blue-alt;
+    font-weight: $weight-light;
+    letter-spacing: 0.7px;
+    margin-bottom: 3px;
+    text-transform: uppercase;
+  }
 }
 
 #commodity-group-selector,
@@ -42,12 +67,12 @@
   display: none;
 }
 
-#unit-selector {
-  background: $white;
-  border-radius: $base-border-radius;
-  height: 34px;
-  overflow: hidden;
-}
+// #unit-selector {
+//   background: $white;
+//   border-radius: $base-border-radius;
+//   height: 34px;
+//   overflow: hidden;
+// }
 
 .unit-selector {
   @include user-select(none);

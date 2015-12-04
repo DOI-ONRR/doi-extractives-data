@@ -16,6 +16,14 @@ permalink: /explore/federal-production/
 
       <p><em>Explore production on federal lands and waters from 2005 to 2014 by state and county for 28 individual products.</em></p>
 
+      <a href="{{site.baseurl}}/downloads/#production-fed">
+        <icon class="icon-cloud icon-padded"></icon>Download full dataset
+      </a><br>
+
+      <a href="#">
+        <i class="fa fa-file-text-o u-padding-right"></i>Documentation
+      </a>
+
     </div>
   </div>
   <section class="container-right-8">
@@ -75,11 +83,11 @@ permalink: /explore/federal-production/
         </div>
 
         <div class="container-left">
-          <label for="year-selector">Production by year <span class="units"></span></label>
+          <label for="year-selector">Years <span class="units"></span></label>
         </div>
         <svg id="timeline" class="timeline" viewBox="0 0 1024 60"></svg>
 
-        <div class="filter">
+        <div class="filter container filters-last">
           <eiti-slider id="year-selector" name="year"
             min="2005" max="2014" snap="1" value="2013">
           </eiti-slider>
@@ -104,6 +112,8 @@ permalink: /explore/federal-production/
       </div>
 
       <div class="regions container">
+
+        <p class="map-intro_text">This map shows whether there is production on federal lands or not. Once you select a specific product in the filters above, it will show production amount for your selected year. Why? We can't sum different products that are measured in different units.</p>
 
         <section id="US" class="region active">
           <div class="map-wrapper">

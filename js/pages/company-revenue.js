@@ -228,6 +228,7 @@
 
     types.exit().remove();
     types.enter().append('div')
+      .attr('class', 'revenue-type')
       .call(setupCompanyRevenueItem);
 
     types

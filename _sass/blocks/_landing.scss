@@ -1,7 +1,7 @@
 .landing-section_open,
 .landing-section {
-  padding-bottom: $base-padding;
   padding-top: $base-padding;
+  padding-bottom: 0;
 }
 
 
@@ -144,9 +144,13 @@
 .landing-description {
   @include heading('para-md');
   color: $light-black;
-  padding-bottom: $base-padding;
+  margin-bottom: 0;
 }
 
 .landing-image {
   width: 100%;
+}
+
+.landing-wrapper {
+  margin-bottom: ($base-padding-extra * 1.4);
 }

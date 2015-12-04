@@ -93,6 +93,7 @@
     // console.log('rendering %d rows', data.length, data[0]);
     updateRevenueTypes(data);
     updateCompanyList(data);
+    updateNameSearch();
   }
 
   function updateCommoditySelector(data) {
@@ -203,14 +204,35 @@
 
   function updateNameSearch() {
     var query = search.property('value').toLowerCase();
-    companyList.selectAll('.company')
-      .style('display', query
-        ? function(d) {
-            return d.name.toLowerCase().indexOf(query) > -1
-              ? null
-              : 'none';
-          }
-        : null);
+    var items = companyList.selectAll('.company');
+    if (query) {
+      items
+        .style('display', function(d) {
+          d.index = d.name.toLowerCase().indexOf(query)
+          return d.index > -1 ? null : 'none';
+        })
+        .filter(function(d) {
+          return d.index > -1;
+        })
+        .select('.subregion-name')
+          .html(function(d) {
+            var name = d.name;
+            var start = d.index;
+            var end = d.index + query.length;
+            return [
+              name.substr(0, start),
+              '<strong>',
+              name.substr(start, query.length),
+              '</strong>',
+              name.substr(end)
+            ].join('');
+          });
+    } else {
+      items
+        .style('display', null)
+        .select('.subregion-name')
+          .text(getter('name'));
+    }
   }
 
   function setupRevenueItem(selection) {

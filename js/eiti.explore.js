@@ -149,7 +149,7 @@
       writing = false;
     };
 
-    function change(e) {
+    function change(e) { // jshint ignore:line
       if (writing) {
         return;
       }

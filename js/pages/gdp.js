@@ -33,7 +33,7 @@
 
     var radio = {
       state: true,
-      value: '$'
+      value: '%'
     }
 
   // get the filters and add change event handlers

@@ -19,11 +19,16 @@
 // Styleguide components.carousel
 
 .carousel {
+  // @include span-columns(4 of 12);
+
   background-color: $pale-blue;
   border-left: 4px solid $white;
   border-right: 4px solid $white;
+  padding-bottom: 0;
   padding-top: $base-padding-extra;
   text-align: center;
+
+
 }
 
 // .carousel-header_text {

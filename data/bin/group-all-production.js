@@ -31,29 +31,58 @@ var stateKey = {
   'Alaska': 'AK',
   'Arizona': 'AZ',
   'Arkansas': 'AR',
+  'California': 'CA',
   'Colorado': 'CO',
+  'Connecticut': 'CT',
+  'Delaware': 'DE',
+  'District of Columbia': 'DC',
+  'Florida': 'FL',
+  'Georgia': 'GA',
+  'Hawaii': 'HI',
+  'Idaho': 'ID',
   'Illinois': 'IL',
   'Indiana': 'IN',
+  'Iowa': 'IA',
   'Kansas': 'KS',
   'Kentucky (East)': 'KY',
   'Kentucky (West)': 'KY',
+  'Kentucky': 'KY',
   'Louisiana': 'LA',
+  'Maine': 'ME',
   'Maryland': 'MD',
+  'Massachusetts': 'MA',
+  'Michigan': 'MI',
+  'Minnesota': 'MN',
   'Mississippi': 'MS',
   'Missouri': 'MO',
   'Montana': 'MT',
+  'Nebraska': 'NE',
+  'Nevada': 'NV',
+  'New Hampshire': 'NH',
+  'New Jersey': 'NJ',
   'New Mexico': 'NM',
+  'New York': 'NY',
+  'North Carolina': 'NC',
   'North Dakota': 'ND',
   'Ohio': 'OH',
   'Oklahoma': 'OK',
+  'Oregon': 'OR',
   'Pennsylvania (Bituminous)': 'PA',
   'Pennsylvania (Anthracite)': 'PA',
+  'Pennsylvania': 'PA',
+  'Rhode Island': 'RD',
+  'South Carolina': 'SC',
+  'South Dakota': 'SD',
   'Tennessee': 'TN',
   'Texas': 'TX',
   'Utah': 'UT',
+  'Vermont': 'VT',
   'Virginia': 'VA',
+  'Washington': 'WA',
   'West Virginia (Northern)': 'WV',
   'West Virginia (Southern)': 'WV',
+  'West Virginia': 'WV',
+  'Wisconsin': 'WI',
   'Wyoming': 'WY',
   'Refuse Recovery': false
 }
@@ -128,21 +157,83 @@ async.parallel({
 
     var parseRenewables = function(commodity, data, years){
 
+      var renewablesTotals = [];
+
+      _.forEach(data[commodity], function(d, index) {
 
 
-      data[commodity].forEach(function(d, index) {
-
-        years.forEach(function(year){
-          newResults = {};
-          newResults.Region = d.State;
-          newResults.Year = year;
-          newResults.Volume = d[year];
-          newResults.Commodity = d.Source;
-          newResults.Product = 'Thousand Megawatt Hours';
-          results.push(newResults);
-        })
+        // console.warn(d, '-----')
+        if (stateKey[d.State]){
+          years.forEach(function(year){
+            var volume = d[year];
+            if (volume == '' || volume == '--'){ return; }
+            newResults = {};
+            newResults.Region = stateKey[d.State];
+            newResults.Year = year;
+            newResults.Volume = volume;
+            newResults.Commodity = '';
+            newResults.Product = d.Source + ' (Kwh)';
+            // console.warn(newResults, '=======')
+            renewablesTotals.push(newResults);
+            results.push(newResults);
+          });
+        }
       });
 
+      var regionsUsed = _.unique(_.map(renewablesTotals, 'Region'));
+      var yearsUsed = _.unique(_.map(renewablesTotals, 'Year'));
+
+      _.forEach(regionsUsed, function(region){
+        _.forEach(yearsUsed, function(year){
+          // console.warn(region,'--', year)
+          var intersection = _.where(renewablesTotals, { Region: region, Year: year });
+
+          var volume = _.map(intersection, function(val) {
+            // console.warn(val)
+            return +val.Volume
+          })
+
+          volume = _.reduce(volume, function(total, n) {
+            return total + n;
+          });
+          console.warn('----------,',volume)
+
+          newResults = {};
+          newResults.Region = region;
+          newResults.Year = year;
+          newResults.Volume = volume;
+          newResults.Commodity = '';
+          newResults.Product = 'Renewables Total (Kwh)';
+          // console.warn(newResults, '=======')
+          results.push(newResults);
+
+        })
+      })
+
+      // console.warn()
+      _.forEach(data[commodity],function(d, index) {
+
+        // var renewableTotal = {
+        //   Region: stateKey[d.State]
+        // };
+
+        // console.warn(d, '-----')
+        if (stateKey[d.State]){
+          years.forEach(function(year){
+            var matches = _.where(renewablesTotals, { Region: stateKey[d.State], Year: year});
+
+            stateYearMatch = {};
+            stateYearMatch.Region = stateKey[d.State];
+            stateYearMatch.Year = year;
+            stateYearMatch.Volume = d[year];
+            stateYearMatch.Commodity = '';
+            stateYearMatch.Product = d.Source + ' (Kwh)';
+
+            // console.warn('>>>>>>>',matches);
+      // console.warn('====',renewablesTotals)
+          });
+        }
+      });
     }
 
     var parseCoal = function(commodity, data, years){
@@ -172,7 +263,7 @@ async.parallel({
         years.forEach(function(year){
           // Get Production Numbers (only have data for 2013)
 
-          console.warn(state)
+          // console.warn(state)
 
           var productionByState = _.pluck(_.where(data[commodity], {'Year': year, 'Mine State': state}), 'Production (short tons)');
 
@@ -188,15 +279,15 @@ async.parallel({
           newResults.Region = state;
           newResults.Year = year;
           newResults.Volume = productionByState;
-          newResults.Commodity = 'Coal';
-          newResults.Product = 'short tons';
+          newResults.Commodity = '';
+          newResults.Product = 'Coal (short tons)';
 
           results.push(newResults)
         });
       });
     }
 
-    var parseOther = function(commodity, data){
+    var parseOther = function(commodity, data, years){
       data[commodity].forEach(function(d, index) {
         var newResults = {};
         if (index === 0) {
@@ -209,40 +300,55 @@ async.parallel({
 
         // console.warn('------------')
         _.forEach(keys, function(val, i){
-          // console.warn(index,val,'->', d[val], '=====')
+
+          var inYearRange = years.indexOf(d['Year']) > 0;
+
+          // console.warn(index,val,'->', d['Year'], '=====', inYearRange)
+
           var newResults = {};
-          if (val == 'Year' || !val || index === 0){ return; }
+          if (val == 'Year' || !val || index === 0 || !inYearRange){ return; }
           newResults.Year = d['Year'];
           newResults.Region = val;
           newResults.Commodity = commodity;
+          newResults.Volume = d[val] ? d[val] : 0;
+
           switch(commodity) {
             case 'naturalgas':
-                newResults.Commodity = 'Natural Gas';
+                newResults.Product = 'Natural Gas (' + productionUnits + ')';
+                newResults.Commodity = '';
                 break;
             case 'naturalgas2':
-                newResults.Commodity = 'Natural Gas';
+                newResults.Product = 'Natural Gas (' + productionUnits + ')';
+                newResults.Commodity = '';
                 break;
             case 'oil':
-                newResults.Commodity = 'Crude Oil';
+                newResults.Product = 'Crude Oil (bbl)';
+                newResults.Commodity = '';
+                newResults.Volume = newResults.Volume * 1000;
                 break;
             default:
+                newResults.Product = productionUnits;
                 newResults.Commodity = commodity;
           }
-          newResults.Volume = d[val] ? d[val] : 0;
-          newResults.Product = productionUnits;
+
+
+
           results.push(newResults);
         });
       });
     }
     switch(commodity) {
       case 'coal':
+        console.warn(commodity, '--> done!')
         parseCoal(commodity, data, years);
         break;
       case 'renewables':
+        console.warn(commodity, '--> done!')
         parseRenewables(commodity, data, years);
         break;
       default:
-        parseOther(commodity, data);
+        console.warn(commodity, '--> done!')
+        parseOther(commodity, data, years);
         break;
     }
   });

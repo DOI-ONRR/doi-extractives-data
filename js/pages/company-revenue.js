@@ -7,17 +7,9 @@
   var companyList = root.select('#companies');
 
   var getter = eiti.data.getter;
+  var grouper;
   var formatNumber = eiti.format.dollars;
   var REVENUE_TYPE_PREFIX = /^[A-Z]+(\/[A-Z]+)?\s+-\s+/;
-
-  var groupByRevenueType = d3.nest()
-    .key(getter('revenueType'))
-    .rollup(function(d) {
-      return d3.sum(d, getter('Revenue'));
-    })
-    .sortValues(function(a, b) {
-      return d3.descending(+a.Revenue, +b.Revenue);
-    });
 
   var state = eiti.explore.stateManager()
     .on('change', update);
@@ -64,6 +56,22 @@
     hash.write(query);
 
     updateFilterDescription(state);
+
+    grouper = d3.nest()
+      .rollup(function(d) {
+        return d3.sum(d, getter('Revenue'));
+      })
+      .sortValues(function(a, b) {
+        return d3.descending(+a.Revenue, +b.Revenue);
+      });
+
+    var hasCommodity = !!query.commodity;
+    var hasType = !!query.type;
+    if (hasType && !hasCommodity) {
+      grouper.key(getter('Commodity'));
+    } else {
+      grouper.key(getter('revenueType'));
+    }
 
     model.load(state, function(error, data) {
       if (error) {
@@ -118,28 +126,16 @@
   }
 
   function updateRevenueTypes(data) {
-    var types = groupByRevenueType.entries(data)
+    var types = grouper.entries(data)
       .map(function(d) {
         return {
-          label: d.key,
+          name: d.key,
           value: d.values
         };
       });
 
-    var items = revenueTypeList.selectAll('.revenue-type')
-      .data(types, getter('label'));
-
-    items.exit().remove();
-    items.enter().append('tr')
-      .attr('class', 'revenue-type')
-      .call(setupRevenueItem);
-
     var max = d3.max(types, getter('value'));
-    items
-      .call(updateRevenueItem, max)
-      .sort(function(a, b) {
-        return d3.descending(a.value, b.value);
-      });
+    revenueTypeList.call(renderSubtypes, types, max);
   }
 
   function updateCompanyList(data) {
@@ -147,37 +143,62 @@
       .key(getter('Company'))
       .entries(data)
       .map(function(d) {
+        var total = d3.sum(d.values, getter('Revenue'));
         return {
           name: d.key,
-          total: d3.sum(d.values, getter('Revenue')),
-          types: groupByRevenueType.entries(d.values)
+          total: total,
+          types: grouper.entries(d.values)
             .map(function(d) {
               return {
-                label: d.key,
+                name: d.key,
                 value: d.values
               };
             })
+            /*
+            .concat([{
+              name: 'Total',
+              value: total
+            }])
+            */
         };
       });
 
-    var rows = companyList.selectAll('tr.company')
+    var items = companyList.selectAll('tbody.company')
       .data(companies, getter('name'));
 
-    rows.exit().remove();
-    var enter = rows.enter().append('tr')
-      .attr('class', 'company')
-      .call(setupCompanyRow);
+    items.exit().remove();
 
-    enter.select('.name').text(getter('name'));
+    var enter = items.enter().append('tbody')
+      .attr('class', 'company subgroup');
+    enter.append('tr')
+      .attr('class', 'name')
+      .append('th')
+        .attr('colspan', 3)
+        .attr('class', 'subregion-name')
+        .text(getter('name'));
+
+    items.sort(function(a, b) {
+      return d3.descending(a.total, b.total);
+    });
 
     var max = d3.max(companies, getter('total'));
-    rows
-      .call(updateCompanyRow, max)
-      .sort(function(a, b) {
-        return d3.descending(a.total, b.total);
-      });
+    items.call(renderSubtypes, getter('types'), max);
+  }
 
-    updateNameSearch();
+  function renderSubtypes(selection, types, max) {
+    var items = selection.selectAll('.subtype')
+      .data(types, getter('name'));
+
+    items.exit().remove();
+    items.enter().append('tr')
+      .attr('class', 'subtype')
+      .call(setupRevenueItem);
+
+    items
+      .call(updateRevenueItem, max)
+      .sort(function(a, b) {
+        return d3.descending(a.value, b.value);
+      });
   }
 
   function updateNameSearch() {
@@ -192,79 +213,9 @@
         : null);
   }
 
-  function setupCompanyRow(selection) {
-    selection.append('td')
-      .attr('class', 'name');
-    var valueCell = selection.append('td')
-      .attr('class', 'revenue');
-
-    /*
-    var total = valueCell.append('div')
-      .attr('class', 'revenue-total')
-      .call(setupCompanyRevenueItem);
-    total.select('.label')
-      .text(' total');
-    */
-
-    valueCell.append('div')
-      .attr('class', 'revenue-types');
-  }
-
-  function updateCompanyRow(selection, max) {
-    /*
-    var total = selection.select('.revenue-total');
-    total.select('eiti-bar')
-      .attr('max', max)
-      .attr('value', getter('total'));
-    total.select('span.value')
-      .text(function(d) {
-        return formatNumber(d.total);
-      });
-    */
-
-    var types = selection.select('.revenue-types')
-      .selectAll('.revenue-type')
-      .data(getter('types'), getter('label'));
-
-    types.exit().remove();
-    types.enter().append('div')
-      .attr('class', 'revenue-type')
-      .call(setupCompanyRevenueItem);
-
-    types
-      .call(updateCompanyRevenueItem, max)
-      .sort(function(a, b) {
-        return d3.descending(a.value, b.value);
-      });
-  }
-
-  function setupCompanyRevenueItem(selection) {
-    selection.append('eiti-bar');
-    selection.append('span')
-      .attr('class', 'value');
-    selection.append('span')
-      .attr('class', 'label');
-  }
-
-  function updateCompanyRevenueItem(selection, max) {
-    selection.select('eiti-bar')
-      .attr('max', max)
-      .attr('value', getter('value'));
-
-    selection.select('span.value')
-      .text(function(d) {
-        return formatNumber(d.value);
-      });
-
-    /*
-    selection.select('.label')
-      .text(getter('label'));
-    */
-  }
-
   function setupRevenueItem(selection) {
     selection.append('td')
-      .attr('class', 'label');
+      .attr('class', 'name');
     selection.append('td')
       .attr('class', 'value');
     selection.append('td')
@@ -273,8 +224,8 @@
   }
 
   function updateRevenueItem(selection, max) {
-    selection.select('.label')
-      .text(getter('label'));
+    selection.select('.name')
+      .text(getter('name'));
 
     selection.select('.value')
       .text(function(d) {

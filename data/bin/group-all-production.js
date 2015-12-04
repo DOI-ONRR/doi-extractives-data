@@ -128,7 +128,6 @@ async.parallel({
 
   var results = [];
   var keys = [];
-  var productionUnits;
 
   var trimCommas = function(str){
     if (typeof(str) == 'number') {
@@ -196,7 +195,6 @@ async.parallel({
           volume = _.reduce(volume, function(total, n) {
             return total + n;
           });
-          console.warn('----------,',volume)
 
           newResults = {};
           newResults.Region = region;
@@ -289,24 +287,28 @@ async.parallel({
 
     var parseOther = function(commodity, data, years){
       data[commodity].forEach(function(d, index) {
+
+
         var newResults = {};
         if (index === 0) {
 
           keys = _.keys(d, function(key,val){
             return key;
           });
-          productionUnits = d[keys[1]];
         }
 
-        // console.warn('------------')
+        console.warn(d.Year,'------------')
         _.forEach(keys, function(val, i){
-
-          var inYearRange = years.indexOf(d['Year']) > 0;
+          console.warn(d.Year,'---in----')
+          // console.warn(val, i)
+          var inYearRange = years.indexOf(d['Year']) >= 0;
 
           // console.warn(index,val,'->', d['Year'], '=====', inYearRange)
 
           var newResults = {};
-          if (val == 'Year' || !val || index === 0 || !inYearRange){ return; }
+          // console.warn(val)
+          if (val == 'Year' || !val || i === 0 || !inYearRange){ return; }
+          // console.warn(d)
           newResults.Year = d['Year'];
           newResults.Region = val;
           newResults.Commodity = commodity;
@@ -314,11 +316,11 @@ async.parallel({
 
           switch(commodity) {
             case 'naturalgas':
-                newResults.Product = 'Natural Gas (' + productionUnits + ')';
+                newResults.Product = 'Natural Gas (MMcf)';
                 newResults.Commodity = '';
                 break;
             case 'naturalgas2':
-                newResults.Product = 'Natural Gas (' + productionUnits + ')';
+                newResults.Product = 'Natural Gas (MMcf)';
                 newResults.Commodity = '';
                 break;
             case 'oil':
@@ -327,7 +329,6 @@ async.parallel({
                 newResults.Volume = newResults.Volume * 1000;
                 break;
             default:
-                newResults.Product = productionUnits;
                 newResults.Commodity = commodity;
           }
 

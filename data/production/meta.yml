@@ -1,9 +1,9 @@
-name: Production on Federal Lands
+name: Production on all lands
 description: |
-  Federal revenue from natural resource extraction on federal land and waters.
+  Federal revenue from natural resource extraction on all land and waters.
 
 source: |
-  Obtained from the <a href="http://onrr.doi.gov/">Office of Natural Resource Revenue</a>.
+  Obtained from the <a href="http://www.eia.gov/">U.S. Energy Information Administration</a>.
 
 resources:
   commodities: true

@@ -214,7 +214,6 @@
         ? d3.sum(data, getter(fields.value))
         : unique(data, 'Product').length;
 
-        console.log(total)
       header
         .datum({
           value: Math.floor(total),
@@ -696,7 +695,7 @@
         d.Commodity = lookup[withoutUnits] || lookup[firstWord];
         if (!d.Commodity) {
           d.Commodity = 'Other';
-          console.log('other:', product, [withoutUnits, firstWord]);
+          // console.log('other:', product, [withoutUnits, firstWord]);
         }
       };
     })();

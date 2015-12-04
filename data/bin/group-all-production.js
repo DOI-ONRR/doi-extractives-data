@@ -164,7 +164,7 @@ async.parallel({
           years.forEach(function(year){
             var volume = d[year];
             if (volume == '' || volume == '--'){ return; }
-            newResults = {};
+            var newResults = {};
             newResults.Region = stateKey[d.State];
             newResults.Year = year;
             newResults.Volume = volume;
@@ -192,7 +192,7 @@ async.parallel({
             return total + n;
           });
 
-          newResults = {};
+          var newResults = {};
           newResults.Region = region;
           newResults.Year = year;
           newResults.Volume = volume;
@@ -283,11 +283,9 @@ async.parallel({
     var parseOther = function(commodity, data, years){
       data[commodity].forEach(function(d, index) {
 
-
-        var newResults = {};
         if (index === 0) {
 
-          keys = _.keys(d, function(key,val){
+          keys = _.keys(d, function(key){
             return key;
           });
         }

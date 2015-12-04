@@ -81,7 +81,7 @@
     });
   }
 
-  function render(data, state) {
+  function render(data /*, state */) {
     // console.log('rendering %d rows', data.length, data[0]);
     updateRevenueTypes(data);
     updateCompanyList(data);

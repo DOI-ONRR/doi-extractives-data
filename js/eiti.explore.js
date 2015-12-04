@@ -1,4 +1,5 @@
 (function(eiti) {
+  'use strict';
 
   eiti.explore = {};
 
@@ -87,7 +88,7 @@
     manager.init = function(initial) {
       var previous = state;
       if (initial) {
-        mergeState(initial) || update(state, previous);
+        mergeState(initial) || update(state, previous); // jshint ignore:line
       } else {
         update(state, null);
       }
@@ -121,7 +122,7 @@
     }
 
     // the default state validator is a noop
-    function validateState(state, previous, updated) {
+    function validateState(state /*, previous, updated */) {
       return state;
     }
 

@@ -20,7 +20,7 @@
 
 .filters-last {
   @include respond-to(medium-up) {
-    margin-bottom: 80px;
+    margin-bottom: $base-padding-large;
   }
 }
 
@@ -127,5 +127,31 @@
     padding: 0;
     pointer-events: none;
     position: absolute;
+  }
+}
+
+.filter-description {
+  @include heading(para-xl);
+  font-weight: $weight-bold;
+  letter-spacing: -0.5px;
+  margin-bottom: $base-padding;
+
+  @include respond-to(medium-up) {
+    float: left;
+    width: 65%;
+  }
+
+  &.filter-description_closed {
+    margin-bottom: 0;
+
+    &[aria-expanded=true] {
+      display: none;
+    }
+  }
+
+  .filter-part {
+    border-bottom: 2px dotted $light-black;
+    color: inherit;
+    text-decoration: none;
   }
 }

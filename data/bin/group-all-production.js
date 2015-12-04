@@ -197,7 +197,7 @@ async.parallel({
           newResults.Year = year;
           newResults.Volume = volume;
           newResults.Commodity = '';
-          newResults.Product = 'Renewables Total (Kwh)';
+          newResults.Product = 'All Renewables (Kwh)';
 
           results.push(newResults);
 

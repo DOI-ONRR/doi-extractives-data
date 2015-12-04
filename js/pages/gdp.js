@@ -31,19 +31,35 @@
       d3.event.preventDefault();
     });
 
+    var radio = {
+      state: true,
+      value: '$'
+    }
+
   // get the filters and add change event handlers
   var filters = root.selectAll('.filters [name]')
     // intialize the state props
     .each(function() {
+      // console.log(state, 'checked', this.checked, 'value', this.value)
+      // debugger
       state = state.set(this.name, this.value);
     })
     .on('change', function() {
+      console.log(this.name,state, 'checked', this.checked, 'value', this.value)
       if (mutating) {
         // console.warn('change while mutating');
         return;
       }
+
+      if (this.checked){
+        radio.value = radio.state ? 'percent' : 'dollars';
+        radio.state = !radio.state;
+      }
+
+      console.log(this.name, this.value, this)
+
       var prop = this.name;
-      var value = this.value;
+      var value = this.checked ? radio.value : this.value;
       mutateState(function(state) {
         return state.set(prop, value);
       });

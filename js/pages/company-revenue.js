@@ -221,9 +221,9 @@
             var end = d.index + query.length;
             return [
               name.substr(0, start),
-              '<strong>',
+              '<span class="hilite">',
               name.substr(start, query.length),
-              '</strong>',
+              '</span>',
               name.substr(end)
             ].join('');
           });

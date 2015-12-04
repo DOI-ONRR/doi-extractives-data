@@ -9,9 +9,12 @@ permalink: /explore/all-lands-production/
       <h5 class="subpage-breadcrumb"><a href="{{ site.baseurl }}/explore/">Explore</a> /</h5>
       <h1>All Lands Production</h1>
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et nisi quis dolor suscipit ultricies et vitae lorem. Suspendisse rhoncus faucibus neque, nec egestas lacus congue viverra. Nam vel tempor mauris. Donec rhoncus ex at magna fermentum mollis.</p>
+      <p>In 2013, total U.S. energy production from oil, gas, mining, and renewables reached 73.67 quadrillion British thermal units (Btus). Wind power produced the largest amount of renewable energy compared with solar and geothermal sources.</p>
 
       <p><em>Explore production on all lands and waters from 2004 to 2013 by state for natural gas, crude oil, and coal.</em></p>
+
+      <a href="{{site.baseurl}}/downloads/#production-all">Data and documentation &#8594;
+      </a>
 
     </div>
   </div>
@@ -19,7 +22,7 @@ permalink: /explore/all-lands-production/
     <div class="filters-wrapper slab-foxtrot">
       <button class="toggle-filters toggle-desktop" is="eiti-toggle"
         aria-controls="filters" aria-expanded="false"
-        data-expanded-text="Hide Filters" data-toggler="filters">Show Filters</button>
+        data-expanded-text="Hide filters" data-toggler="filters">Show filters</button>
 
       <form id="filters" aria-hidden="true" class="filters container-outer">
 
@@ -71,7 +74,7 @@ permalink: /explore/all-lands-production/
         </div>
         <svg id="timeline" class="timeline" viewBox="0 0 1024 60"></svg>
 
-        <div class="filter">
+        <div class="filter container filters-last">
           <eiti-slider id="year-selector" name="year"
             min="2004" max="2013" snap="1" value="2013">
           </eiti-slider>
@@ -80,7 +83,7 @@ permalink: /explore/all-lands-production/
       </form>
 
       <div class="container-outer">
-        <button class="toggle-filters toggle" is="eiti-toggle" aria-controls="filters" data-expanded-text="Hide Filters" data-toggler="filters">Show Filters</button>
+        <button class="toggle-filters toggle" is="eiti-toggle" aria-controls="filters" data-expanded-text="Hide filters" data-toggler="filters">Show filters</button>
       </div>
 
     </div>
@@ -96,6 +99,8 @@ permalink: /explore/all-lands-production/
       </div>
 
       <div class="regions container">
+
+        <p class="map-intro_text">This map shows whether there is production or not. Once you select a specific product in the filters above, it will show production amount for your selected year. Why? We can't sum different products that are measured in different units, so you have to select one before we can show you totals.</p>
 
         <section id="US" class="region active">
           <div class="map-wrapper">

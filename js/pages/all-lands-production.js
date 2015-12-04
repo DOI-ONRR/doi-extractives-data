@@ -213,6 +213,8 @@
       var total = product
         ? d3.sum(data, getter(fields.value))
         : unique(data, 'Product').length;
+
+        console.log(total)
       header
         .datum({
           value: Math.floor(total),

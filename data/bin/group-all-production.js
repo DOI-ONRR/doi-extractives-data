@@ -247,8 +247,15 @@ async.parallel({
 
       _.forEach(states, function(state) {
         years.forEach(function(year){
+
           // Get Production Numbers (only have data for 2013)
-          var productionByState = _.pluck(_.where(data[commodity], {'Year': year, 'Mine State': state}), 'Production (short tons)');
+          var getProductionByState = function(product) {
+            return _.pluck(_.where(data[commodity], {'Year': year, 'Mine State': state}), product);
+          }
+          // terrible hack because of inconsistencies in the data
+          var productionByState = (year == '2012')
+            ? getProductionByState('Coal Supply Region')
+            : getProductionByState('Production (short tons)');
 
           productionByState = _.map(productionByState, trimCommas);
 
@@ -256,16 +263,19 @@ async.parallel({
             return total + n;
           });
 
-          // console.warn(state, '->',productionByState)
+          // console.warn(state, '->',productionByState, year)
 
-          var newResults = {};
-          newResults.Region = state;
-          newResults.Year = year;
-          newResults.Volume = productionByState;
-          newResults.Commodity = '';
-          newResults.Product = 'Coal (short tons)';
+          if (productionByState){
 
-          results.push(newResults)
+            var newResults = {};
+            newResults.Region = state;
+            newResults.Year = year;
+            newResults.Volume = productionByState;
+            newResults.Commodity = '';
+            newResults.Product = 'Coal (short tons)';
+
+            results.push(newResults)
+          }
         });
       });
     }

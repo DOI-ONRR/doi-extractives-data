@@ -87,6 +87,13 @@
     padding-left: 0;
   }
 
+  .subgroup .subregion-name {
+    // FIXME not sure if these numbers are right
+    padding-bottom: 0.25em;
+    padding-left: 0.75em;
+    padding-top: 1em;
+  }
+
 }
 
 .subregion {
@@ -100,11 +107,4 @@
   @include respond-to(large-down) {
     width: 100px;
   }
-}
-
-tbody.subgroup .subregion-name {
-  // FIXME not sure if these numbers are right
-  padding-bottom: 0.25em;
-  padding-left: 0.75em;
-  padding-top: 1em;
 }

@@ -114,7 +114,7 @@ permalink: /explore/all-lands-production/
             <div class="map-legend"></div>
           </div>
 
-          <h3 class="region-header-category">Production by state or offshore area <span class="units"></span></h3>
+          <h3 class="region-header-category">Production by state <span class="units"></span></h3>
           <table class="subregions">
             <thead class="region-header"></thead>
             <tbody></tbody>
@@ -146,23 +146,6 @@ permalink: /explore/all-lands-production/
         </section>
         {% endfor %}
 
-        {% for region in site.data.offshore_areas %}
-        <section id="{{ region.id }}" class="region offshore">
-          <div class="map-wrapper">
-            <svg is="eiti-map" id="{{ region.id }}-map" class="region-map" simplify="1e-2"
-              preserveAspectRatio="xMidYMid meet"
-              projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/" zoom-to="{{ region.id }}">
-              <g class="offshore areas" data-url="offshore-simple.json"
-                data-title="properties.name"
-                data-filter="id === '{{ region.id }}'"
-                data-mesh="true">
-              </g>
-            </svg>
-          </div>
-
-        </section>
-        {% endfor %}
-
       </div>
     </div>
   </section>
@@ -173,9 +156,6 @@ permalink: /explore/all-lands-production/
   eiti.data.REGION_ID_NAME = {
     {% for state in site.data.states %}
     '{{ state.id }}': '{{ state.name }}',
-    {% endfor %}
-    {% for area in site.data.offshore_areas %}
-    '{{ area.id }}': '{{ area.name }}',
     {% endfor %}
     'US': 'the entire U.S.'
   };

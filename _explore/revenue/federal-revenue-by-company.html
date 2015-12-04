@@ -3,10 +3,85 @@ title: Federal Revenue By Company | Explore Data
 layout: default
 permalink: /explore/federal-revenue-by-company/
 ---
+<section id="companies" class="explore-subpage container">
+  <div class="container-left-4">
+    <div class="container-outer">
+      <h5 class="subpage-breadcrumb"><a href="{{ site.baseurl }}/explore/">Explore</a> /</h5>
+      <h1>Federal Revenue by Company</h1>
 
-<div class="container-outer container-padded">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+        elit. Praesent eget justo sodales neque fermentum
+        consequat eu sit amet libero. Aliquam eu eleifend leo.
+        Donec sem dolor, volutpat quis tortor pretium,
+        tincidunt pretium massa. Curabitur sed euismod velit.
+        Aenean eu venenatis turpis, mattis tempus orci.</p>
+    </div>
+  </div>
+  <section class="container-right-8">
+    <div class="filters-wrapper slab-foxtrot container">
+      <button class="toggle-filters toggle-desktop" is="eiti-toggle" aria-controls="filters" data-expanded-text="Hide Filters" data-toggler="filters">Show Filters</button>
 
-  <h3> <a href="{{ site.baseurl }}/explore/">Explore Data</a> / Federal Revenue By Company</h3>
+      <form id="filters" aria-hidden="true" class="filters">
+        <div class="filters-heading">
+          <h3>Filter Revenue</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="container-left-6">
 
+          <div id="commodity-filter" class="filter">
+            <label for="commodity-selector">Commodity</label>
+            <select id="commodity-selector" name="commodity">
+              <option value="">All commodities</option>
+            </select>
+          </div>
 
-</div>
+          <div id="type-filter" class="filter">
+            <label for="type-selector">Revenue Type</label>
+            <select id="type-selector" name="type">
+              <option value="">All</option>
+            </select>
+          </div>
+
+        </div>
+
+      </form>
+
+      <div class="container-outer">
+        <button class="toggle-filters toggle" is="eiti-toggle" aria-controls="filters" data-expanded-text="Hide Filters" data-toggler="filters">Show Filters</button>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="slab-alpha">
+    <div class="container-outer">
+      <table id="revenue-types" class="revenue-type-list">
+      </table>
+    </div>
+  </div>
+
+  <div class="slab-alpha">
+    <div class="container-outer">
+      <h1 id="filter-description" class="filter-description">
+        <a href="#revenue-type-selector" class="filter-part" data-key="type">All revenue</a>
+        from
+        <a href="#commodity-selector" class="filter-part" data-key="commodity">all commodities</a>
+        extraction on federal lands (2013)
+      </h1>
+    </div>
+  </div>
+
+  <div class="slab-alpha">
+    <div class="container-outer">
+      <table id="companies" class="company-list">
+      </table>
+    </div>
+  </div>
+
+</section>
+
+<script src="{{ site.baseurl }}/js/vendor/immutable.min.js"></script>
+<script src="{{ site.baseurl }}/js/components/eiti-bar.js"></script>
+<script src="{{ site.baseurl }}/js/eiti.explore.js"></script>
+<script src="{{ site.baseurl }}/js/pages/company-revenue.js"></script>

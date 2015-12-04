@@ -1,28 +1,17 @@
 ---
-title: Federal Production | Explore Data
+title: All Lands Production | Explore Data
 layout: default
-permalink: /explore/federal-production/
+permalink: /explore/all-lands-production/
 ---
-<section id="federal-production" class="explore-subpage container">
+<section id="all-lands-production" class="explore-subpage container">
   <div class="container-left-4">
     <div class="container-outer">
-      <div>
-        <a class="breadcrumb" href="{{ site.baseurl }}/explore/">Explore</a>
-        /
-      </div>
-      <h1>Federal Production</h1>
+      <h5 class="subpage-breadcrumb"><a href="{{ site.baseurl }}/explore/">Explore</a> /</h5>
+      <h1>All Lands Production</h1>
 
-      <p>Revenue from extractive industries on federal lands totaled approximately $13.4 billion, or 0.4% of total $3,396.9 billion in revenue collected across the federal government.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et nisi quis dolor suscipit ultricies et vitae lorem. Suspendisse rhoncus faucibus neque, nec egestas lacus congue viverra. Nam vel tempor mauris. Donec rhoncus ex at magna fermentum mollis.</p>
 
-      <p><em>Explore production on federal lands and waters from 2005 to 2014 by state and county for 28 individual products.</em></p>
-
-      <a href="{{site.baseurl}}/downloads/#production-fed">
-        <icon class="icon-cloud icon-padded"></icon>Download full dataset
-      </a><br>
-
-      <a href="#">
-        <i class="fa fa-file-text-o u-padding-right"></i>Documentation
-      </a>
+      <p><em>Explore production on all lands and waters from 2004 to 2013 by state for natural gas, crude oil, and coal.</em></p>
 
     </div>
   </div>
@@ -35,7 +24,7 @@ permalink: /explore/federal-production/
       <form id="filters" aria-hidden="true" class="filters container-outer">
 
         <div class="filters-heading">
-          <h3>Filter federal production</h3>
+          <h3>Filter all lands production</h3>
           <p>Select a product to see its production levels by its specific unit of measure.</p>
         </div>
 
@@ -73,23 +62,18 @@ permalink: /explore/federal-production/
                 <option value="{{ state.id }}">{{ state.name }}</option>
                 {% endfor %}
               </optgroup>
-              <optgroup label="Offshore Areas">
-                {% for area in site.data.offshore_areas %}
-                <option value="{{ area.id }}">{{ area.name }}</option>
-                {% endfor %}
-              </optgroup>
             </select>
           </div>
         </div>
 
         <div class="container-left">
-          <label for="year-selector">Years <span class="units"></span></label>
+          <label for="year-selector">Production by year <span class="units"></span></label>
         </div>
         <svg id="timeline" class="timeline" viewBox="0 0 1024 60"></svg>
 
-        <div class="filter container filters-last">
+        <div class="filter">
           <eiti-slider id="year-selector" name="year"
-            min="2005" max="2014" snap="1" value="2013">
+            min="2004" max="2013" snap="1" value="2013">
           </eiti-slider>
         </div>
 
@@ -105,7 +89,7 @@ permalink: /explore/federal-production/
       <div class="container-outer">
         <h1 id="filter-description" class="filter-description">
           <a href="#commodity-group-selector" class="filter-part" data-key="commodity">All</a>
-          production on federal lands in
+          production on all lands in
           <a href="#region-selector" class="filter-part" data-key="region">the entire U.S.</a>
           (<a href="#year-selector" class="filter-part" data-key="year">2013</a>)
         </h1>
@@ -113,19 +97,11 @@ permalink: /explore/federal-production/
 
       <div class="regions container">
 
-        <p class="map-intro_text">This map shows whether there is production on federal lands or not. Once you select a specific product in the filters above, it will show production amount for your selected year. Why? We can't sum different products that are measured in different units.</p>
-
         <section id="US" class="region active">
           <div class="map-wrapper">
             <svg is="eiti-map" id="US-map" class="region-map" simplify="1e-2"
               preserveAspectRatio="xMidYMid meet"
               projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/">
-              <g class="offshore areas" data-url="offshore-simple.json"
-                data-id="'US-' + id"
-                data-href="'#?region=' + id"
-                data-title="properties.name"
-                data-mesh="true">
-              </g>
               <g class="onshore states" data-url="us-topology.json"
                 data-object="states"
                 data-id="'US-' + id"
@@ -138,7 +114,7 @@ permalink: /explore/federal-production/
             <div class="map-legend"></div>
           </div>
 
-          <h3 class="region-header-category">Production by state or offshore area <span class="units"></span></h3>
+          <h3 class="region-header-category">Production by state <span class="units"></span></h3>
           <table class="subregions">
             <thead class="region-header"></thead>
             <tbody></tbody>
@@ -156,39 +132,16 @@ permalink: /explore/federal-production/
                 data-object="states"
                 data-filter="id === '{{ region.id }}'">
               </g>
-              <g class="onshore counties" data-url="us-topology.json"
-                data-object="counties"
-                data-filter="properties.state === '{{ region.id }}'"
-                data-title="properties.name"
-                data-mesh="true">
-              </g>
             </svg>
 
             <div class="map-legend"></div>
           </div>
 
-          <h3 class="region-header-category">Production by county <span class="units"></span></h3>
+          <h3 class="region-header-category">Production in {{ region.name }}<span class="units"></span></h3>
           <table class="subregions">
             <thead class="region-header"></thead>
             <tbody></tbody>
           </table>
-
-        </section>
-        {% endfor %}
-
-        {% for region in site.data.offshore_areas %}
-        <section id="{{ region.id }}" class="region offshore">
-          <div class="map-wrapper">
-            <svg is="eiti-map" id="{{ region.id }}-map" class="region-map" simplify="1e-2"
-              preserveAspectRatio="xMidYMid meet"
-              projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/" zoom-to="{{ region.id }}">
-              <g class="offshore areas" data-url="offshore-simple.json"
-                data-title="properties.name"
-                data-filter="id === '{{ region.id }}'"
-                data-mesh="true">
-              </g>
-            </svg>
-          </div>
 
         </section>
         {% endfor %}
@@ -204,10 +157,7 @@ permalink: /explore/federal-production/
     {% for state in site.data.states %}
     '{{ state.id }}': '{{ state.name }}',
     {% endfor %}
-    {% for area in site.data.offshore_areas %}
-    '{{ area.id }}': '{{ area.name }}',
-    {% endfor %}
     'US': 'the entire U.S.'
   };
 </script>
-<script src="{{ site.baseurl }}/js/pages/federal-production.js"></script>
+<script src="{{ site.baseurl }}/js/pages/all-lands-production.js"></script>

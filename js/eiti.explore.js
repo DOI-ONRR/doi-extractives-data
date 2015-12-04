@@ -135,7 +135,9 @@
     var writing = false;
 
     hash.read = function() {
-      if (!location.hash) return {};
+      if (!location.hash) {
+        return {};
+      }
       var str = location.hash.substr(1);
       return eiti.url.qs.parse(str);
     };
@@ -147,14 +149,10 @@
     };
 
     function change(e) {
-      var y = window.scrollY;
       if (writing) {
         return;
       }
       dispatch.change(hash.read());
-      // prevent scrolling
-      e.preventDefault();
-      window.scrollY = y;
     }
 
     window.addEventListener('hashchange', change);

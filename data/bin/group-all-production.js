@@ -158,7 +158,7 @@ async.parallel({
 
       var renewablesTotals = [];
 
-      _.forEach(data[commodity], function(d, index) {
+      _.forEach(data[commodity], function(d) {
 
         if (stateKey[d.State]){
           years.forEach(function(year){
@@ -204,14 +204,14 @@ async.parallel({
         });
       });
 
-      _.forEach(data[commodity],function(d, index) {
+      _.forEach(data[commodity],function(d) {
 
 
         if (stateKey[d.State]){
           years.forEach(function(year){
             var matches = _.where(renewablesTotals, { Region: stateKey[d.State], Year: year});
 
-            stateYearMatch = {};
+            var stateYearMatch = {};
             stateYearMatch.Region = stateKey[d.State];
             stateYearMatch.Year = year;
             stateYearMatch.Volume = d[year];

@@ -50,9 +50,12 @@
     });
 
   var filters = root.selectAll('.filters [name]')
-    .on('change.state', function() {
-      state.set(this.name, this.value);
-    });
+    .on('change', filterChange);
+
+  var search = root.select('#company-name-filter')
+    .on('keyup', updateNameSearch)
+    .on('clear', filterChange)
+    .on('change', filterChange);
 
   var initialState = hash.read();
   if (Object.keys(initialState).length) {
@@ -63,7 +66,6 @@
 
   function update(state) {
     var query = state.toJS();
-    console.log('update:', query);
     hash.write(query);
 
     updateFilterDescription(state);
@@ -78,12 +80,14 @@
         this.value = state.get(this.name) || '';
       });
 
+      search.property('value', state.get('search') || '');
+
       render(data, state);
     });
   }
 
   function render(data, state) {
-    console.log('rendering %d rows', data.length, data[0]);
+    // console.log('rendering %d rows', data.length, data[0]);
     updateRevenueTypes(data);
     updateCompanyList(data);
   }
@@ -159,7 +163,6 @@
   }
 
   function updateCompanyList(data) {
-
     var companies = d3.nest()
       .key(getter('Company'))
       .entries(data)
@@ -188,12 +191,25 @@
     enter.select('.name').text(getter('name'));
 
     var max = d3.max(companies, getter('total'));
-    console.log('company max $:', max);
     rows
       .call(updateCompanyRow, max)
       .sort(function(a, b) {
         return d3.descending(a.total, b.total);
       });
+
+    updateNameSearch();
+  }
+
+  function updateNameSearch() {
+    var query = search.property('value').toLowerCase();
+    companyList.selectAll('.company')
+      .style('display', query
+        ? function(d) {
+            return d.name.toLowerCase().indexOf(query) > -1
+              ? null
+              : 'none';
+          }
+        : null);
   }
 
   function setupCompanyRow(selection) {
@@ -315,6 +331,10 @@
     if (!row.revenueType) {
       row.revenueType = row['Revenue Type'].replace(REVENUE_TYPE_PREFIX, '');
     }
+  }
+
+  function filterChange() {
+    state.set(this.name, this.value);
   }
 
   function identity(d) {

@@ -10,6 +10,7 @@ permalink: /explore/federal-revenue-by-company/
         <a class="breadcrumb" href="{{ site.baseurl }}/explore/">Explore</a>
         /
       </div>
+
       <h1>Federal Revenue by Company</h1>
 
       <p>Text will be here that reflects a summary fact from the data. Perhaps lists top companies by revenue for a few commodities</p>
@@ -23,7 +24,6 @@ permalink: /explore/federal-revenue-by-company/
       <a href="#">
         <i class="fa fa-file-text-o u-padding-right"></i>Documentation
       </a>
-
     </div>
   </div>
 
@@ -32,26 +32,28 @@ permalink: /explore/federal-revenue-by-company/
       <button class="toggle-filters toggle-desktop" is="eiti-toggle" aria-controls="filters" data-expanded-text="Hide filters" data-toggler="filters">Show filters</button>
 
       <form id="filters" aria-hidden="true" class="filters">
+
         <div class="filters-heading">
           <h3>Filter Revenue</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
-        <div class="container-left-6">
 
+        <div class="container-left-6">
           <div id="commodity-filter" class="filter">
             <label for="commodity-selector">Commodity</label>
             <select id="commodity-selector" name="commodity">
               <option value="">All commodities</option>
             </select>
           </div>
+        </div>
 
+        <div class="container-left-6">
           <div id="type-filter" class="filter filters-last">
             <label for="type-selector">Revenue Type</label>
             <select id="type-selector" name="type">
               <option value="">All</option>
             </select>
           </div>
-
         </div>
 
       </form>
@@ -63,6 +65,7 @@ permalink: /explore/federal-revenue-by-company/
     </div>
 
     <div class="slab-alpha">
+
       <div class="container-outer">
         <h1 id="filter-description" class="filter-description">
           <a href="#revenue-type-selector" class="filter-part" data-key="type">All revenue</a>
@@ -71,22 +74,16 @@ permalink: /explore/federal-revenue-by-company/
           extraction on federal lands (2013)
         </h1>
       </div>
-    </div>
 
+      <div class="container">
+        <p class="map-intro_text">Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
-
-    <div class="slab-alpha">
-      <div class="container-outer">
         <!-- <h2>Revenue Types</h2> -->
         <table id="revenue-types" class="revenue-type-list subregions">
         </table>
       </div>
-    </div>
 
-
-
-    <div class="slab-alpha">
-      <div class="container-outer">
+      <div class="container">
         <h2>Companies</h2>
         <div>
           <label for="company-name-filter">Filter by name:</label>
@@ -95,7 +92,6 @@ permalink: /explore/federal-revenue-by-company/
         <table id="companies" class="company-list subregions">
         </table>
       </div>
-    </div>
 
     </section>
 

@@ -25,12 +25,8 @@
   var hash = eiti.explore.hash()
     .on('change', state.merge);
 
-  var model = eiti.explore.model(function(state) {
-      return eiti.data.path + 'company/revenue.tsv';
-    })
-    .transform(function(d) {
-      removeRevenueTypePrefix(d);
-    })
+  var model = eiti.explore.model(eiti.data.path + 'company/revenue.tsv')
+    .transform(removeRevenueTypePrefix)
     .filter('commodity', function(data, commodity) {
       return data.filter(function(d) {
         return d.Commodity === commodity;
@@ -45,7 +41,6 @@
       if (key === 'commodity') {
         updateCommoditySelector(data);
         updateRevenueTypeSelector(data);
-      } else if (key === 'type') {
       }
     });
 
@@ -114,21 +109,6 @@
       .map(getter('key'))
       .sort(d3.ascending);
     var input = root.select('#type-selector');
-    var options = input.selectAll('option.value')
-      .data(commodities, identity);
-    options.enter().append('option')
-      .attr('class', 'value')
-      .attr('value', identity)
-      .text(identity);
-  }
-
-  function updateCommodities(data) {
-    var commodities = d3.nest()
-      .key(getter('Commodity'))
-      .entries(data)
-      .map(getter('key'))
-      .sort(d3.ascending);
-    var input = root.select('#commodity-selector');
     var options = input.selectAll('option.value')
       .data(commodities, identity);
     options.enter().append('option')
@@ -265,7 +245,7 @@
       .attr('class', 'label');
   }
 
-  function updateCompanyRevenueItem(selection) {
+  function updateCompanyRevenueItem(selection, max) {
     selection.select('eiti-bar')
       .attr('max', max)
       .attr('value', getter('value'));

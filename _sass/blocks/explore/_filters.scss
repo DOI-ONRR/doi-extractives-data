@@ -103,11 +103,13 @@
     &:before {
       content: '$';
     }
+
     &[value='dollars'] {
       background: $blue;
       color: $white;
     }
   }
+
   &:last-of-type {
     @include omega();
     border-bottom-left-radius: 0;
@@ -116,11 +118,13 @@
     &:before {
       content: '%';
     }
+
     &[value='percent'] {
       background: $blue;
       color: $white;
     }
   }
+
   &:hover,
   &:focus {
     background: $light-blue;

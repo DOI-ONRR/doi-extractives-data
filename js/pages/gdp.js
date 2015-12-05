@@ -33,7 +33,7 @@
 
   var radio = {
     state: true,
-    value: '%'
+    value: '$'
   };
 
   // get the filters and add change event handlers
@@ -43,7 +43,6 @@
       state = state.set(this.name, this.value);
     })
     .on('change', function() {
-      console.log(this.name,state, 'checked', this.checked, 'value', this.value)
       if (mutating) {
         return;
       }

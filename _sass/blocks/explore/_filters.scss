@@ -104,8 +104,8 @@
       content: '$';
     }
     &[value='dollars'] {
-      background: $dark-blue;
-    color: $white;
+      background: $blue;
+      color: $white;
     }
   }
   &:last-of-type {
@@ -117,8 +117,8 @@
       content: '%';
     }
     &[value='percent'] {
-      background: $dark-blue;
-    color: $white;
+      background: $blue;
+      color: $white;
     }
   }
   &:hover,

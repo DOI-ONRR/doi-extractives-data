@@ -1,11 +1,11 @@
 (function(exports) {
     function getScrollTop() {
-      return scrollTop = (window.pageYOffset !== undefined)
+      return (window.pageYOffset !== undefined)
         ? window.pageYOffset
         : (document.documentElement
           || document.body.parentNode
           || document.body).scrollTop;
-    };
+    }
 
     function isElementInViewport(el) {
       var rect = el.getBoundingClientRect();
@@ -25,8 +25,8 @@
         current: getScrollTop(),
         prev: getScrollTop(),
         direction: 'down'
-      }
-    }
+      };
+    };
 
     OpenListNav.prototype.updateScrollTop = function() {
       this.scrollTop.prev = this.scrollTop.current;
@@ -34,7 +34,7 @@
       this.scrollTop.direction = (this.scrollTop.current >= this.scrollTop.prev)
         ? 'down'
         : 'up';
-    }
+    };
 
     OpenListNav.prototype.removeActive = function(){
       this.active = null;
@@ -57,7 +57,7 @@
     OpenListNav.prototype.update = function(el, name){
       this.removeActive();
       this.addActive(el, name);
-    }
+    };
 
 
 
@@ -70,7 +70,6 @@
         });
       }
 
-      var self = this;
       window.addEventListener('scroll', function() {
         self.updateScrollTop();
         self.detectNavChange();
@@ -80,15 +79,15 @@
         self.detectNavChange();
       });
 
-    }
+    };
 
     OpenListNav.prototype.detectNavChange = function(){
 
       function reverseH(navHeaders) {
         var newHeaders = [];
         for (var i = navHeaders.length - 1; i >= 0; i--) {
-          newHeaders.push(navHeaders[i])
-        };
+          newHeaders.push(navHeaders[i]);
+        }
         return newHeaders;
       }
 

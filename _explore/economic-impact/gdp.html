@@ -12,46 +12,13 @@ permalink: /explore/gdp/
       </div>
       <h1>Gross Domestic Product</h1>
 
-      <p>In 2013, our GDP was $16.8 trillion, making the U.S. economy the largest in the world. Overall the extractive industries account for 2.6% of the economy, outpacing utilities, agriculture, and education services in contribution to national GDP. Extractive industries totaled <a href="http://www.bea.gov/iTable/iTable.cfm?ReqID=51&step=1#reqid=51&step=51&isuri=1&5114=a&5102=1">$439 billion in real value added</a>.</p>
+      <p>In 2013, our GDP was $16.8 trillion, making the U.S. economy the largest in the world. Overall the extractive industries account for 2.6% of the economy, outpacing utilities, agriculture, and education services in contribution to national GDP.</p>
 
       <p><em>Explore GDP from 2004 to 2013 by state as a dollar value, or as a percentage of total GDP.</em></p>
 
-      <!-- <h3>2013 extractive industries value-added GDP</h3>
+      <a href="{{site.baseurl}}/downloads/#gdp">Data and documentation &#8594;
+      </a>
 
-      <table>
-        <tr>
-          <th>Industry</th>
-          <th>Real value added</th>
-          <th>Value added as a percentage of total GDP</th>
-        </tr>
-        <tr>
-          <td>All industries</td>
-          <td>$16,768.1 billion</td>
-          <td>100%</td>
-        </tr>
-        <tr>
-          <td>Extractive industries</td>
-          <td>$439.4 billion</td>
-          <td>2.6%</td>
-        </tr>
-        <tr>
-          <td>Oil and gas</td>
-          <td>$291.9 billion</td>
-          <td>1.7%</td>
-        </tr>
-        <tr>
-          <td>Mining except oil and gas</td>
-          <td>$78.8 billion</td>
-          <td>0.5%</td>
-        </tr>
-        <tr>
-          <td>Support activities for mining</td>
-          <td>$68.7 billion</td>
-          <td>0.4%</td>
-        </tr>
-      </table>
-
-      <p>Extractive industries affect the economy in a number of ways, including the quantity and value of the natural resources produced, the revenue collected for public purposes, the jobs held by people working in extractive industries, and the exports that draw in money from abroad. While it can be difficult to quantify an industry’s impact on a country, these measures—production, revenue, employment, and exports—start to highlight the extractive industries’ role in the economy.</p> -->
     </div>
   </div>
   <section class="container-right-8">
@@ -84,20 +51,20 @@ permalink: /explore/gdp/
           -->
           <label for="unit-selector">Units</label>
           <select id="unit-selector" name="units">
-            <option value="dollars" selected>$</option>
-            <option value="percent">%</option>
+            <option value="dollars" selected>Dollars</option>
+            <option value="percent">Percentage</option>
           </select>
         </div>
 
 
         <div class="container-left">
-          <label for="year-selector">GDP by Year</label>
+          <label for="year-selector">Years</label>
         </div>
         <div class="filter container">
           <svg id="timeline" class="timeline" viewBox="0 0 1024 60"></svg>
         </div>
 
-        <div class="filter container">
+        <div class="filter container filters-last">
           <eiti-slider id="year-selector" name="year"
             min="2004" max="2013" snap="1" value="2013">
           </eiti-slider>
@@ -124,6 +91,8 @@ permalink: /explore/gdp/
     </div>
 
     <div class="regions container">
+
+      <p class="map-intro_text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
 
       <section id="US" class="region active">
         <div class="map-wrapper">

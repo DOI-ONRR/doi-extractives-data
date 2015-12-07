@@ -127,7 +127,7 @@
       var match = product.match(/ (\(.+\))\s*$/);
       units = match ? ' ' + match[1] : '';
       // console.log('product units:', units);
-      formatNumber = eiti.format.si;
+      formatNumber = eiti.format(',.2f');
     } else {
       formatNumber = function(n) {
         return n + eiti.format.pluralize(n, ' product');
@@ -335,8 +335,7 @@
     title.append('span')
       .attr('class', 'text');
     selection.append('td')
-      .append('span')
-        .attr('class', 'value');
+      .attr('class', 'value');
     selection.append('td')
       .attr('class', 'region-chart')
       .append('eiti-bar');
@@ -441,6 +440,7 @@
       .append('span')
         .attr('class', 'label');
 
+    var format = eiti.format.si;
     steps
       .style('border-color', getter('color'))
       .select('.label')
@@ -448,8 +448,8 @@
           return (typeof d.value === 'string')
             ? d.value
             : (i === last)
-              ? formatNumber(d.value[0]) + '+'
-              : formatNumber(d.value[0]);
+              ? format(d.value[0]) + '+'
+              : format(d.value[0]);
         });
   }
 

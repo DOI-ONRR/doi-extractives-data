@@ -25,7 +25,7 @@ permalink: /downloads/
 
       <li>
         <a id="production-fed" class="link-no_under"><h4>Federal lands and waters</h4></a>
-        <p>Commodity volumes of natural resources extracted from federal land and waters. This dataset is from the <a href="http://www.onrr.gov/">Office of Natural Resources Revenue</a>, which is part of the Department of the Interior. This is the first year ONRR has produced this dataset.</p>
+        <p>Commodity volumes of natural resources extracted from federal land and waters. This dataset is from the <a href="http://www.onrr.gov/">Office of Natural Resources Revenue</a> (ONRR), which is part of the Department of the Interior. This is the first year ONRR has produced this dataset.</p>
         <a href="{{site.baseurl}}/downloads/production_federal_lands_waters_CY2013_oil_gas_solids-2015-11-25.xlsx" class="button-tertiary">
           <icon class="icon-cloud icon-padded"></icon>Download full dataset (xlsx, 517 KB)
         </a>
@@ -74,6 +74,9 @@ permalink: /downloads/
         <p>Countries implementing the EITI Standard publish reports that disclose the revenues and other information from extraction of the country’s natural resources. Companies report payments to the government (e.g., rents, taxes, royalties) and the government reports what it received. These figures are compiled and reconciled by an independent administrator and published. The 2015 USEITI reconciliation is below.</p>
         <a href="{{site.baseurl}}/downloads/reconciliation_2015-11-20.xlsx" class="button-tertiary">
           <icon class="icon-cloud icon-padded"></icon>Download full dataset, docs included (xlsx, 39 KB)
+        </a>
+        <a href="{{site.baseurl}}/downloads/reconciliation/" class="button-tertiary">
+          <icon class="icon-cloud icon-padded"></icon>Documentation
         </a>
       </li>
 

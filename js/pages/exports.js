@@ -32,22 +32,74 @@
     });
 
   // get the filters and add change event handlers
-  var filters = root.selectAll('.filters [name]')
-    // intialize the state props
-    .each(function() {
-      state = state.set(this.name, this.value);
-    })
-    .on('change', function() {
-      if (mutating) {
-        // console.warn('change while mutating');
-        return;
+  var filters = root.selectAll('.filters [name]');
+
+  var initFilters = function(filters, units) {
+
+    filters.each(function() {
+
+      if (this.type == 'radio'){
+
+        if (units == this.value) {
+          this.checked = false;
+          this.setAttribute('checked', false);
+          state = state.set(this.name, this.value);
+        } else {
+          this.checked = true;
+          this.setAttribute('checked', true);
+        }
+      } else {
+        state = state.set(this.name, this.value);
       }
-      var prop = this.name;
-      var value = this.value;
+    });
+  };
+
+  var parsedHash = parseHash();
+  if (parsedHash.units) {
+    initFilters(filters, parsedHash.units);
+  } else {
+    initFilters(filters, 'dollars');
+  }
+
+  filters.on('change', function() {
+
+    if (mutating) {
+      return;
+    }
+
+    var prop = this.name;
+    var value = this.value;
+
+    if (this.type == 'radio') {
+
+      var self = this;
+      filters.each(function() {
+        if (this.type === 'radio'){
+          if (this.value == self.value) {
+            this.checked = true;
+            this.setAttribute('checked', true);
+          } else {
+            this.checked = false;
+            this.setAttribute('checked', false);
+          }
+        }
+      });
+
+      var props = parseHash();
+
+      props.units = this.value;
+
+      mutateState(function(state) {
+        return state.merge(props);
+      });
+    } else {
       mutateState(function(state) {
         return state.set(prop, value);
       });
-    });
+    }
+
+
+  });
 
   // create our data "model"
   var model = createModel();
@@ -62,6 +114,9 @@
         return;
       }
       var props = parseHash();
+
+      initFilters(filters, parseHash.units);
+
       mutateState(function() {
         return new Immutable.Map(props);
       });
@@ -99,13 +154,29 @@
     return false;
   }
 
+  function updateFilters(state){
+    filters.each(function() {
+      if (this.type == 'radio') {
+        if (this.value === state.get(this.name)) {
+          this.checked = true;
+          this.setAttribute('checked', true);
+
+        } else {
+          this.checked = false;
+          this.setAttribute('checked', false);
+        }
+      } else {
+        this.value = state.get(this.name) || '';
+      }
+
+    });
+  }
+
   function render(state, previous) {
     // console.time('render');
 
     // update the filters
-    filters.each(function() {
-      this.value = state.get(this.name) || '';
-    });
+    updateFilters(state);
 
     formatNumber = state.get('units') === 'percent'
       ? formatPercent

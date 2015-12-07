@@ -1,5 +1,5 @@
 (function(exports) {
-    var getScrollTop = function(){
+    function getScrollTop() {
       return scrollTop = (window.pageYOffset !== undefined)
         ? window.pageYOffset
         : (document.documentElement
@@ -8,13 +8,12 @@
     };
 
     function isElementInViewport(el) {
-      console.log(el)
       var rect = el.getBoundingClientRect();
 
       return rect.bottom > 0 &&
           rect.right > 0 &&
-          rect.left < (window.innerWidth || document. documentElement.clientWidth) /*or $(window).width() */ &&
-          rect.top < (window.innerHeight || document. documentElement.clientHeight) /*or $(window).height() */;
+          rect.left < (window.innerWidth || document. documentElement.clientWidth) &&
+          rect.top < (window.innerHeight || document. documentElement.clientHeight);
     }
 
     var ActiveNav = function() {
@@ -22,28 +21,22 @@
       this.active = window.location.hash || '#intro';
       this.navItems = document.querySelectorAll('[data-nav-item]');
       this.navHeaders = document.querySelectorAll('[data-nav-header]');
-      // this.scrollTop = {
-      //   current: getScrollTop(),
-      //   prev: getScrollTop()
-      // }
-
-      // this.scrollDirection = function(current, prev) {
-      //   return (current > prev)
-      //     ? 'down'
-      //     : 'up';
-      // }
+      this.scrollTop = {
+        current: getScrollTop(),
+        prev: getScrollTop(),
+        direction: 'down'
+      }
     }
 
-    // ActiveNav.prototype.updateScrollTop = function() {
-    //   this.scrollTop.prev = this.scrollTop.current;
-    //   this.scrollTop.current = getScrollTop();
-    //   this.scrollDirection(current, prev);
-    // }
-
-
+    ActiveNav.prototype.updateScrollTop = function() {
+      this.scrollTop.prev = this.scrollTop.current;
+      this.scrollTop.current = getScrollTop();
+      this.scrollTop.direction = (this.scrollTop.current >= this.scrollTop.prev)
+        ? 'down'
+        : 'up';
+    }
 
     ActiveNav.prototype.removeActive = function(){
-      // console.log('navItems', navItems)
       this.active = null;
       for (var i = 0; i < this.navItems.length; i++) {
         this.navItems[i].setAttribute('data-active', false);
@@ -76,30 +69,37 @@
       });
     }
 
-    ActiveNav.prototype.chooseNavByScroll = function(){
-      // console.log(typeof(this.navHeaders))
+    ActiveNav.prototype.detectNavChange = function(){
 
-      Array.prototype.forEach.call(this.navHeaders, function(header){
+      function reverseH(navHeaders) {
+        var newHeaders = [];
+        for (var i = navHeaders.length - 1; i >= 0; i--) {
+          newHeaders.push(navHeaders[i])
+        };
+        return newHeaders;
+      }
+
+      var navHeaders = (this.scrollTop.direction === 'up')
+        ? reverseH(this.navHeaders)
+        : this.navHeaders;
+
+      Array.prototype.forEach.call(navHeaders, function(header){
 
         var inViewPort = isElementInViewport(header);
         if (inViewPort) {
           activeNav.update(null, header.name);
         }
-
       });
     };
 
     window.addEventListener('scroll', function() {
-      // console.log('scroll')
-      activeNav.chooseNavByScroll();
+      activeNav.updateScrollTop();
+      activeNav.detectNavChange();
     });
 
     window.addEventListener('resize', function(){
-      // console.log('resize')
-      // sections = setPageSections();
-      activeNav.chooseNavByScroll();
+      activeNav.detectNavChange();
     });
-
 
     exports.activeNav = activeNav;
   })(this);

@@ -48,6 +48,7 @@
   padding: ($base-padding-lite * 1.5);
   padding-left: $base-padding;
   padding-right: $base-padding;
+  -webkit-font-smoothing: antialiased;
 
   @include respond-to(medium-up){
     display: inline-block;

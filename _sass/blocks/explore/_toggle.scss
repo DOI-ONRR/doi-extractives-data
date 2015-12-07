@@ -2,7 +2,7 @@
 .toggle,
 .toggle-desktop {
   background: transparent;
-  color: $dark-blue;
+  color: $blue;
 
   &:before {
     content: $icon-plus-sm;
@@ -40,9 +40,15 @@
 
 .toggle-desktop {
   display: none;
+  background-color: $blue;
+  color: $white;
   float: right;
+  font-weight: $weight-bold;
   margin-bottom: 0;
-  padding: 0;
+  padding: ($base-padding-lite * 1.5);
+  padding-left: $base-padding;
+  padding-right: $base-padding;
+  -webkit-font-smoothing: antialiased;
 
   @include respond-to(medium-up){
     display: inline-block;
@@ -52,5 +58,3 @@
     vertical-align: text-top;
   }
 }
-
-

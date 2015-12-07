@@ -7,27 +7,32 @@
   padding-top: 0;
 
   .subregion-name {
-    @include heading(h3);
     margin: 0;
-
   }
 }
 
 .region-header-category {
+  @include heading(para-md);
   margin-bottom: $base-padding;
-  padding-left: $base-padding * 0.9;
+  padding-left: ($base-padding * 0.9);
+}
+
+.subregion {
+  td {
+    padding-bottom: ($base-padding * 0.7);
+    padding-top: ($base-padding * 0.7);
+  }
 }
 
 .subregion-name {
-  @include heading('para-lg');
-  @include font-size(1);
+  @include heading(para-md);
+  font-weight: $weight-book;
   margin: 0;
-  padding: 0 $base-padding;
-  width: 66%;
+  width: 86%;
 
-  @include respond-to(tiny-up) {
-    @include heading('h4');
-  }
+  // @include respond-to(tiny-up) {
+  //   @include heading(para-md);
+  // }
 
   .color-swatch {
     display: inline-block;
@@ -46,7 +51,7 @@
   th,
   tr {
     border: 0;
-    border-bottom: 1px solid $mid-gray;
+    border-bottom: 1px solid $neutral-gray;
     text-align: left;
   }
 
@@ -60,9 +65,11 @@
     }
 
     .subregion-name {
-      @include heading(h3);
+      @include heading(para-lg);
+      font-weight: $weight-bold;
+      min-width: 200px;
       padding: 0;
-      padding-left: $base-padding * 0.9;
+      padding-left: ($base-padding * 0.9);
     }
   }
 
@@ -87,6 +94,17 @@
     padding-left: 0;
   }
 
+  .subgroup .subregion-name {
+    // FIXME not sure if these numbers are right
+    padding-bottom: 0.25em;
+    padding-left: 0.75em;
+    padding-top: 1em;
+
+    .hilite {
+      background: $light-blue;
+    }
+  }
+
 }
 
 .subregion {
@@ -101,4 +119,3 @@
     width: 100px;
   }
 }
-

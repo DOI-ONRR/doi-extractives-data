@@ -16,8 +16,8 @@
           rect.top < (window.innerHeight || document. documentElement.clientHeight);
     }
 
-    var ActiveNav = function() {
-      // init ActiveNav Properties
+    var OpenListNav = function() {
+      // init OpenListNav Properties
       this.active = window.location.hash || '#intro';
       this.navItems = document.querySelectorAll('[data-nav-item]');
       this.navHeaders = document.querySelectorAll('[data-nav-header]');
@@ -28,7 +28,7 @@
       }
     }
 
-    ActiveNav.prototype.updateScrollTop = function() {
+    OpenListNav.prototype.updateScrollTop = function() {
       this.scrollTop.prev = this.scrollTop.current;
       this.scrollTop.current = getScrollTop();
       this.scrollTop.direction = (this.scrollTop.current >= this.scrollTop.prev)
@@ -36,14 +36,14 @@
         : 'up';
     }
 
-    ActiveNav.prototype.removeActive = function(){
+    OpenListNav.prototype.removeActive = function(){
       this.active = null;
       for (var i = 0; i < this.navItems.length; i++) {
         this.navItems[i].setAttribute('data-active', false);
       }
     };
 
-    ActiveNav.prototype.addActive = function(el, name){
+    OpenListNav.prototype.addActive = function(el, name){
       if (!el){
         el = document.querySelector('[data-nav-item="' + name + '"]');
         this.active = name;
@@ -54,22 +54,35 @@
       }
     };
 
-    ActiveNav.prototype.update = function(el, name){
+    OpenListNav.prototype.update = function(el, name){
       this.removeActive();
       this.addActive(el, name);
     }
 
-    var activeNav = new ActiveNav();
 
-    // init click handlers
-    for (var i = 0; i < activeNav.navItems.length; i++) {
-      var item = activeNav.navItems[i];
-      item.addEventListener('click', function () {
-        activeNav.update(this);
+
+    OpenListNav.prototype.registerEventHandlers = function(){
+      var self = this;
+      for (var i = 0; i < this.navItems.length; i++) {
+        var item = this.navItems[i];
+        item.addEventListener('click', function () {
+          self.update(this);
+        });
+      }
+
+      var self = this;
+      window.addEventListener('scroll', function() {
+        self.updateScrollTop();
+        self.detectNavChange();
       });
+
+      window.addEventListener('resize', function(){
+        self.detectNavChange();
+      });
+
     }
 
-    ActiveNav.prototype.detectNavChange = function(){
+    OpenListNav.prototype.detectNavChange = function(){
 
       function reverseH(navHeaders) {
         var newHeaders = [];
@@ -83,23 +96,19 @@
         ? reverseH(this.navHeaders)
         : this.navHeaders;
 
+      var self = this;
       Array.prototype.forEach.call(navHeaders, function(header){
 
         var inViewPort = isElementInViewport(header);
         if (inViewPort) {
-          activeNav.update(null, header.name);
+          self.update(null, header.name);
         }
       });
     };
 
-    window.addEventListener('scroll', function() {
-      activeNav.updateScrollTop();
-      activeNav.detectNavChange();
-    });
+    var openListNav = new OpenListNav();
 
-    window.addEventListener('resize', function(){
-      activeNav.detectNavChange();
-    });
+    openListNav.registerEventHandlers();
 
-    exports.activeNav = activeNav;
+    exports.openListNav = openListNav;
   })(this);

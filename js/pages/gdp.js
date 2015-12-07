@@ -44,12 +44,10 @@
           this.checked = false;
           this.setAttribute('checked', false);
           state = state.set(this.name, this.value);
-
         } else {
           this.checked = true;
           this.setAttribute('checked', true);
         }
-
       } else {
         state = state.set(this.name, this.value);
       }
@@ -76,7 +74,6 @@
 
         var self = this;
         filters.each(function() {
-
           if (this.type === 'radio'){
             if (this.value == self.value) {
               this.checked = true;
@@ -85,7 +82,6 @@
               this.checked = false;
               this.setAttribute('checked', false);
             }
-
           }
         });
 
@@ -162,16 +158,13 @@
   function updateFilters(state){
     filters.each(function() {
       if (this.type == 'radio') {
-
         if (this.value === state.get(this.name)) {
-
           this.checked = true;
           this.setAttribute('checked', true);
 
         } else {
           this.checked = false;
-          this.setAttribute('checked', false)
-
+          this.setAttribute('checked', false);
         }
       } else {
         this.value = state.get(this.name) || '';

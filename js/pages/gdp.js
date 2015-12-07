@@ -63,43 +63,43 @@
 
   filters.on('change', function() {
 
-      if (mutating) {
-        return;
-      }
+    if (mutating) {
+      return;
+    }
 
-      var prop = this.name;
-      var value = this.value;
+    var prop = this.name;
+    var value = this.value;
 
-      if (this.type == 'radio') {
+    if (this.type == 'radio') {
 
-        var self = this;
-        filters.each(function() {
-          if (this.type === 'radio'){
-            if (this.value == self.value) {
-              this.checked = true;
-              this.setAttribute('checked', true);
-            } else {
-              this.checked = false;
-              this.setAttribute('checked', false);
-            }
+      var self = this;
+      filters.each(function() {
+        if (this.type === 'radio'){
+          if (this.value == self.value) {
+            this.checked = true;
+            this.setAttribute('checked', true);
+          } else {
+            this.checked = false;
+            this.setAttribute('checked', false);
           }
-        });
+        }
+      });
 
-        var props = parseHash();
+      var props = parseHash();
 
-        props.units = this.value;
+      props.units = this.value;
 
-        mutateState(function(state) {
-          return state.merge(props);
-        });
-      } else {
-        mutateState(function(state) {
-          return state.set(prop, value);
-        });
-      }
+      mutateState(function(state) {
+        return state.merge(props);
+      });
+    } else {
+      mutateState(function(state) {
+        return state.set(prop, value);
+      });
+    }
 
 
-    });
+  });
 
   // create our data "model"
   var model = createModel();
@@ -174,7 +174,9 @@
   }
 
   function render(state, previous) {
+    // console.time('render')
 
+    // update the filters
     updateFilters(state);
 
     formatNumber = state.get('units') === 'percent'

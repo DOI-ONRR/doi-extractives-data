@@ -66,7 +66,7 @@
     if (width > 0) {
       bar.style.setProperty('width', (width < EPSILON
                             ? EPSILON
-                            : Math.round(width)) + '%');
+                            : width) + '%');
     } else {
       bar.style.setProperty('width', '0%');
     }

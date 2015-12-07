@@ -42,12 +42,12 @@
 
         if (units == this.value) {
           this.checked = false;
-          this.setAttribute('checked', false)
+          this.setAttribute('checked', false);
           state = state.set(this.name, this.value);
 
         } else {
           this.checked = true;
-          this.setAttribute('checked', true)
+          this.setAttribute('checked', true);
         }
 
       } else {
@@ -166,7 +166,7 @@
         if (this.value === state.get(this.name)) {
 
           this.checked = true;
-          this.setAttribute('checked', true)
+          this.setAttribute('checked', true);
 
         } else {
           this.checked = false;

@@ -68,13 +68,6 @@
   display: none;
 }
 
-// #unit-selector {
-//   background: $white;
-//   border-radius: $base-border-radius;
-//   height: 34px;
-//   overflow: hidden;
-// }
-
 .unit-selector {
   @include appearance(none);
   background: $white;
@@ -97,17 +90,13 @@
 
   &:first-of-type {
     border-bottom-right-radius: 0;
-    border-right: 1px solid $mid-gray;
+    border-right: 1px solid $blue;
     border-top-right-radius: 0;
 
     &:before {
       content: '$';
     }
 
-    // &[value='dollars'] {
-    //   background: $blue;
-    //   color: $white;
-    // }
     &[checked='true'] {
       background: $blue;
       color: $white;
@@ -123,10 +112,6 @@
       content: '%';
     }
 
-    // &[value='percent'] {
-    //   background: $blue;
-    //   color: $white;
-    // }
     &[checked='true'] {
       background: $blue;
       color: $white;

@@ -29,8 +29,8 @@ permalink: /downloads/
         <a href="{{site.baseurl}}/downloads/production_federal_lands_waters_CY2013_oil_gas_solids-2015-11-25.xlsx" class="button-tertiary">
           <icon class="icon-cloud icon-padded"></icon>Download full dataset (xlsx, 517 KB)
         </a>
-        <a href="{{site.baseurl}}/downloads/federal_production_documentation-2015-11-25.docx" class="button-tertiary">
-          <i class="fa fa-file-text-o u-padding-right"></i>Download documentation (docx, 21 KB)
+        <a href="{{site.baseurl}}/downloads/federal-production/" class="button-tertiary">
+          <i class="fa fa-file-text-o u-padding-right"></i>Documentation
         </a>
       </li>
 
@@ -64,8 +64,8 @@ permalink: /downloads/
         <a href="{{site.baseurl}}/downloads/federal_revenue_by_company_CY2013_2015-11-10.xlsx" class="button-tertiary">
           <icon class="icon-cloud icon-padded"></icon>Download full dataset (xlsx, 132 KB)
         </a>
-        <a href="{{site.baseurl}}/downloads/federal_revenue_by_company_documentation_2015-11-20.docx" class="button-tertiary">
-          <i class="fa fa-file-text-o u-padding-right"></i>Download documentation (docx, 22 KB)
+        <a href="{{site.baseurl}}/downloads/federal-revenue-by-company/" class="button-tertiary">
+          <i class="fa fa-file-text-o u-padding-right"></i>Documentation
         </a>
       </li>
 
@@ -94,8 +94,8 @@ permalink: /downloads/
         <a href="{{site.baseurl}}/downloads/disbursements_2012-2013_2015-11-20.xlsx" class="button-tertiary">
           <icon class="icon-cloud icon-padded"></icon>Download disbursement dataset (xlsx, 14 KB)
         </a>
-        <a href="{{site.baseurl}}/downloads/disbursements_documentation_2015-11-20.docx" class="button-tertiary">
-          <i class="fa fa-file-text-o u-padding-right"></i>Download documentation (docx, 21 KB)
+        <a href="{{site.baseurl}}/downloads/disbursements/" class="button-tertiary">
+          <i class="fa fa-file-text-o u-padding-right"></i>Documentation
         </a>
         <a href="{{site.baseurl}}/downloads/land_water_conservation_fund_incl-documentation_2015-07.xlsx" class="button-tertiary">
           <icon class="icon-cloud icon-padded"></icon>Download LWCF dataset, includes docs (xlsx, 581 KB)

@@ -12,9 +12,7 @@ permalink: /downloads/federal-revenue-by-location/
       <a class="breadcrumb" href="{{ site.baseurl }}/downloads/">Downloads</a>
       /
     </div>
-    <h1>{{ page.title }}</h1>
-
-    
+    <h1>Federal Revenue by Location</h1>
 
   </article>
 

@@ -31,29 +31,71 @@
       d3.event.preventDefault();
     });
 
-  var radio = {
-    state: true,
-    value: '$'
+  // get the filters and add change event handlers
+  var filters = root.selectAll('.filters [name]');
+
+  var initFilters = function(filters, units) {
+    // console.log(filters, units)
+    filters.each(function() {
+      // console.log(this.checked, this.name, parseHash(), this.value)
+      if (this.type == 'radio'){
+        // if (!parseHash().units)
+        if (units == this.value) {
+          // this.checked = true;
+          state = state.set(this.name, this.value);
+          // console.log('true')
+        } else {
+          // this.checked = false;
+          // console.log('false')
+        }
+
+      } else {
+        state = state.set(this.name, this.value);
+      }
+    });
   };
 
-  // get the filters and add change event handlers
-  var filters = root.selectAll('.filters [name]')
-    // intialize the state props
-    .each(function() {
-      state = state.set(this.name, this.value);
-    })
-    .on('change', function() {
+  var parsedHash = parseHash();
+  if (parsedHash.units) {
+    // console.log('parseHash().units', parseHash())
+    initFilters(filters, parsedHash.units);
+  } else {
+    initFilters(filters, 'dollars');
+  }
+
+  // var radio = {
+  //   state: true,
+  //   value: 'percent'
+  // };
+
+  filters.on('change', function() {
+      // console.log(this.checked, this)
       if (mutating) {
         return;
       }
 
-      if (this.checked){
-        radio.value = radio.state ? 'percent' : 'dollars';
-        radio.state = !radio.state;
-      }
+      // if (this.checked){
+      //   radio.value = radio.state ? 'percent' : 'dollars';
+      //   radio.state = !radio.state;
+      // }
+
+
+      var isRadio = (this.type == 'radio');
+
+      // if (this.type == 'radio')
+      console.log(this.type, this.value, isRadio, typeof(isRadio))
 
       var prop = this.name;
-      var value = this.checked ? radio.value : this.value;
+      var value = this.value;
+
+      if (isRadio) {
+        // console.log('isRadio')
+        value = (this.value == 'dollars')
+          ? 'percent'
+          : 'dollars';
+        // console.log(value)
+      }
+      // var value = this.checked ? radio.value : this.value;
       mutateState(function(state) {
         return state.set(prop, value);
       });
@@ -72,6 +114,7 @@
         return;
       }
       var props = parseHash();
+      console.log(props)
       mutateState(function() {
         return new Immutable.Map(props);
       });
@@ -111,9 +154,26 @@
 
   function render(state, previous) {
     // console.time('render');
+    // console.log(state)
 
     // update the filters
     filters.each(function() {
+      // if (this.type == 'radio'){
+      //   // if (!parseHash().units)
+      //   if (units == this.value) {
+      //     // this.checked = true;
+      //     state = state.set(this.name, this.value);
+      //     // console.log('true')
+      //   } else {
+      //     // this.checked = false;
+      //     // console.log('false')
+      //   }
+
+      // } else {
+      //   state = state.set(this.name, this.value);
+      // }
+
+      console.log('---',state.get(this.name))
       this.value = state.get(this.name) || '';
     });
 

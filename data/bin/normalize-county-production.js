@@ -37,6 +37,8 @@ async.series([
   if (error) return console.error('error:', error);
 });
 
+var keys;
+
 function main(done) {
   process.stdin
     .pipe(tito.createReadStream(options['if']))
@@ -46,9 +48,15 @@ function main(done) {
         return next();
       }
       d = normalize(d);
-      if (statesByAbbr) fixFIPS(d);
+      if (statesByAbbr) {
+        fixFIPS(d);
+      }
       if (!d.Volume) {
-        console.warn('No volumes for:', d);
+        if (!keys) {
+          keys = Object.keys(d);
+          console.warn(keys.join('\t'));
+        }
+        console.warn('xxx', keys.map(function(k) { return d[k]; }).join('\t'));
         return next();
       }
       next(null, d);
@@ -63,7 +71,7 @@ function normalize(d) {
   var commodity = (d.Commodity || '').trim();
   if (commodity === 'Other Products') {
     commodity = util.normalizeCommodity(d.Product);
-    console.warn('Other Products ->', commodity);
+    // console.warn('Other Products ->', commodity);
   } else {
     commodity = util.normalizeCommodity(commodity);
   }
@@ -83,7 +91,8 @@ function fixFIPS(d) {
   var abbr = d.State;
   var state = statesByAbbr[abbr];
   if (!state) {
-    throw 'Unknown state abbreviation: "' + abbr + '"';
+    console.error('Unknown state abbreviation: "' + abbr + '"');
+    return false;
   }
   var fips = d.FIPS.substr(0, 2);
   if (state.FIPS !== fips) {
@@ -106,9 +115,7 @@ function loadStates(done) {
 }
 
 function isWithheld(d) {
-  return Object.keys(d).some(function(key) {
-    return d[key] === WITHHELD;
-  });
+  return d[volumeField] === WITHHELD;
 }
 
 function noop(done) {

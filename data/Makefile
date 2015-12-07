@@ -277,7 +277,7 @@ county-resource-revenues-by-state: county/revenues.tsv
 county/production.tsv: $(input)onrr/regional-production.tsv
 	mkdir -p $(dir $@)
 	$(tito) --read tsv $< \
-		| $(datex) --filter 'Region.length === 2' \
+		| $(datex) --filter 'Region.length !== 3' \
 		| bin/normalize-county-production.js \
 			--in-states $(input)geo/states.csv \
 		| $(tito) --write tsv > $@

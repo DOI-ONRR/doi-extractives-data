@@ -185,7 +185,9 @@
             d = topojson.presimplify(d);
             features = getTopologyFeatures(this, d, filter);
             layer.classed('topology', true);
-            d.bbox = getBBox(features.map(path.bounds));
+            if (!d.bbox) {
+              d.bbox = getBBox(features.map(path.bounds));
+            }
             break;
 
           case 'FeatureCollection':

@@ -8,7 +8,7 @@
 
   var getter = eiti.data.getter;
   var grouper;
-  var formatNumber = eiti.format.dollars;
+  var formatNumber = eiti.format.dollarsAndCents;
   var REVENUE_TYPE_PREFIX = /^[A-Z]+(\/[A-Z]+)?\s+-\s+/;
 
   var state = eiti.explore.stateManager()
@@ -170,17 +170,30 @@
     items.exit().remove();
 
     var enter = items.enter().append('tbody')
-      .attr('class', 'company subgroup');
-    enter.append('tr')
-      .attr('class', 'name')
-      .append('th')
-        .attr('colspan', 3)
-        .attr('class', 'subregion-name')
-        .text(getter('name'));
+      .attr('class', 'company subgroup')
+      .append('tr')
+        .attr('class', 'name')
+    enter.append('th')
+      .attr('class', 'subregion-name')
+      .text(getter('name'));
+    enter.append('th')
+      .attr('class', 'subtotal value');
+    enter.append('th')
+      .attr('class', 'subtotal-label');
 
     items.sort(function(a, b) {
       return d3.descending(a.total, b.total);
     });
+
+    items.select('.subtotal-label')
+      .text(function(d) {
+        return d.types.length > 1 ? 'total' : '';
+      });
+
+    items.select('.subtotal')
+      .text(function(d) {
+        return d.types.length > 1 ? formatNumber(d.total) : '';
+      });
 
     var extent = d3.extent(companies, getter('total'));
     items.call(renderSubtypes, getter('types'), extent);

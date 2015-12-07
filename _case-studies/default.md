@@ -29,13 +29,13 @@ nav_items:
 
 <p class="case_studies_intro-para">In some communities, extractive industries play a much larger role than in others. These narratives provide  snapshots into twelve communities that, over the last decade, have led in production of one of six resources: iron, copper, gold, coal, oil, and natural gas.</p>
 
-<h3><a name="intro" class="case_studies_content-heading js-cs_section">Overview</a></h3>
+<h3><a name="intro" class="case_studies_content-heading" data-nav-header="intro">Overview</a></h3>
 
 While extractive industries made up 2.6% of the U.S. GDP in 2013, they play a much larger role in some local communities. For example, extractive industries make up more than a third of Wyoming’s GDP.[^1] At the county level, certain communities and local economies may be even more dependent on extractive industries.
 
 This section includes 12 case studies that provide a snapshot of communities that have led the U.S. in producing oil, gas, coal, gold, iron, or copper over the last decade. These case studies shed light on the economic and fiscal effects of oil, gas, and mineral extraction on local communities, including revenue sustainability.
 
-<h3><a name="reven" class="case_studies_content-heading js-cs_section">Revenue sustainability</a></h3>
+<h3><a name="reven" class="case_studies_content-heading" data-nav-header="reven">Revenue sustainability</a></h3>
 
 Local governments and communities must consider the many ways natural resource management and extraction can affect their fiscal health. One of the most significant considerations is the sustainability of the revenues local governments receive due to natural resource extraction. Multiple EITI guiding principles reference revenue sustainability as a critical factor in making natural resource wealth &ldquo;an engine for sustainable economic growth.&rdquo;[^2] However, when it comes to managing this critical factor, there are two challenges localities need to address:
 

@@ -49,9 +49,9 @@ layout: default
 		      {% if page.nav_items %}
 		      	{% for item in page.nav_items %}
 			        {% if item.name == page.nav_items[0].name %}
-			          <li class="sticky_nav-nav_item js-cs_nav_item active {{item.name}}"><a href="#{{item.name}}">{{item.title}}</a></li>
+			          <a href="#{{item.name}}" class="sticky_nav-nav_item" data-nav-item="{{item.name}}" data-active="true">{{item.title}}</a>
 			        {% else %}
-			          <li class="sticky_nav-nav_item js-cs_nav_item {{item.name}}"><a href="#{{item.name}}">{{item.title}}</a></li>
+			          <a href="#{{item.name}}" class="sticky_nav-nav_item" data-nav-item="{{item.name}}">{{item.title}}</a>
 			        {% endif %}
 			      {% endfor %}
 		      {% endif %}
@@ -66,4 +66,4 @@ layout: default
 </section>
 
 <script src="{{ site.baseurl }}/js/components/sticky-nav.js"></script>
-<script src="{{ site.baseurl }}/js/pages/case-studies.js"></script>
+<script src="{{ site.baseurl }}/js/components/active-nav.js"></script>

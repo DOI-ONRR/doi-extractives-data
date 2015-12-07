@@ -19,7 +19,8 @@ REVENUE_FILES = \
 	regional/resource-revenues.tsv \
 	regional/revenues.tsv \
 	county-revenues-by-state \
-	county-resource-revenues-by-state
+	county-resource-revenues-by-state \
+	company/revenue.tsv
 
 # production volume files
 PRODUCTION_FILES = \
@@ -43,6 +44,9 @@ JOBS_FILES = \
 	jobs/wage-salary.tsv \
 	jobs/self-employment.tsv
 
+ALL_LANDS_PRODUCTION_FILES = \
+	production/natural-gas.tsv
+
 # a list of all of the individual files to build.
 # unless otherwise noted, all of these files are broken
 # down by year and commodity
@@ -52,6 +56,7 @@ FILES = \
 	$(EXPORT_FILES) \
 	$(GDP_FILES) \
 	$(JOBS_FILES) \
+	$(ALL_LANDS_PRODUCTION_FILES) \
 	geo svg
 
 all: $(FILES)
@@ -66,6 +71,8 @@ gdp: $(GDP_FILES)
 
 jobs: $(JOBS_FILES)
 
+all_production: $(ALL_LANDS_PRODUCTION_FILES)
+
 jobs/wage-salary.tsv:
 	bin/parse-bls.js _input/bls/*.csv > $@
 
@@ -76,6 +83,13 @@ national/revenues.tsv: state/revenues.tsv offshore/revenues.tsv
 		--group 'Year,Commodity,Type' \
 		--sum 'Revenue' \
 		-o $@ $^
+
+company/revenue.tsv: $(input)onrr/company-revenues.tsv
+	mkdir -p $(dir $@)
+	bin/parse-company-revenue.js \
+		--if tsv \
+		--of tsv \
+		$< > $@
 
 # national production volumes by commodity and product
 national/production.tsv: state/production.tsv offshore/production.tsv
@@ -267,6 +281,16 @@ county/production.tsv: $(input)onrr/regional-production.tsv
 		| bin/normalize-county-production.js \
 			--in-states $(input)geo/states.csv \
 		| $(tito) --write tsv > $@
+
+production/all-production.tsv:
+	mkdir -p $(dir $@)
+	bin/group-all-production.js \
+		--naturalgas2 $(input)eia/commodity/naturalgas2.tsv \
+		--naturalgas $(input)eia/commodity/naturalgas.tsv \
+		--oil $(input)eia/commodity/oil.tsv \
+		--coal $(input)eia/commodity/coal.tsv \
+		--renewables $(input)eia/commodity/renewables.tsv \
+		> $@
 
 geo: \
 	geo/us-topology.json \

@@ -25,6 +25,7 @@ input[type='submit'] {
   color: $white;
   padding-left: 0.7em;
   padding-right: 0.7em;
+  -webkit-font-smoothing: antialiased;
 
   &:hover,
   &:focus {

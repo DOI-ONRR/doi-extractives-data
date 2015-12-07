@@ -12,7 +12,7 @@
   var mutating = false;
 
   // create references for often-used elements
-  var root = d3.select('#federal-production');
+  var root = d3.select('#all-lands-production');
   var regionSections = root.selectAll('.regions > .region');
   var timeline = root.select('#timeline');
 
@@ -214,6 +214,7 @@
       var total = product
         ? d3.sum(data, getter(fields.value))
         : unique(data, 'Product').length;
+
       header
         .datum({
           value: Math.floor(total),
@@ -425,7 +426,7 @@
       });
     } else {
       data = [
-        {color: NULL_FILL, value: 'no production on federal land'},
+        {color: NULL_FILL, value: 'no production'},
         {color: colorscheme[3][2], value: '1 or more products'},
       ];
     }
@@ -695,7 +696,7 @@
         d.Commodity = lookup[withoutUnits] || lookup[firstWord];
         if (!d.Commodity) {
           d.Commodity = 'Other';
-          console.log('other:', product, [withoutUnits, firstWord]);
+          // console.log('other:', product, [withoutUnits, firstWord]);
         }
       };
     })();
@@ -718,12 +719,8 @@
     function getDataURL(state) {
       var region = state.get('region');
       var path = eiti.data.path;
-      path += (!region || region === 'US')
-        ? 'regional/'
-        : region.length === 2
-          ? 'county/by-state/' + region + '/'
-          : 'offshore/';
-      return path + 'production.tsv';
+      path += 'production/all-production.tsv';
+      return path;
     }
 
     function applyFilters(data, state, done) {

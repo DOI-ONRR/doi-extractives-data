@@ -12,13 +12,22 @@ eiti-slider {
 
 .region-map {
   display: block;
-  height: 250px;
   margin-bottom: 1em;
-  max-height: 30vh; // 30% of the viewport height
+  max-height: 50vh; // 50% of the viewport height
   width: 100%;
 }
 
 .filter-description {
+  @include heading(para-xl);
+  font-weight: $weight-bold;
+  letter-spacing: -0.5px;
+
+  @include respond-to(medium-up) {
+    margin-top: -115px; //TODO: magic number, remove
+    padding-left: $base-padding;
+    width: 65%;
+  }
+
   .filter-part {
     border-bottom: 2px dotted $neutral-gray;
     color: inherit;
@@ -28,7 +37,7 @@ eiti-slider {
 
 .map-legend {
   display: flex;
-  margin-bottom: 1em;
+  margin-bottom: $base-padding-large;
 
   .step {
     border-bottom-style: solid;
@@ -79,3 +88,11 @@ eiti-slider {
   }
 }
 
+.map-intro_text {
+  @include heading(para-md);
+  padding: $base-padding;
+
+  @include respond-to(medium-up) {
+    padding-left: 0;
+  }
+}

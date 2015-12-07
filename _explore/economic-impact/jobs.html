@@ -12,13 +12,18 @@ permalink: /explore/jobs/
       </div>
       <h1>Jobs</h1>
 
-      <p>TKTKTK.</p>
+      <p>808,000 people drew wages or salaries from work in the extractive industries in 2013. In addition, there are thousands of self-employed people working across the extractive industries.</p>
+
+      <p><em>Explore extractive industries jobs from 2004 to 2013 by state for both salaried employees and self-employed.</em></p>
+
+      <a href="{{site.baseurl}}/downloads/#jobs">Data and documentation &#8594;
+      </a>
 
     </div>
   </div>
   <section class="container-right-8">
     <div class="filters-wrapper slab-foxtrot container">
-      <button class="toggle-filters toggle-desktop" is="eiti-toggle" aria-controls="filters" data-expanded-text="Hide Filters" data-toggler="filters">Show Filters</button>
+      <button class="toggle-filters toggle-desktop" is="eiti-toggle" aria-controls="filters" data-expanded-text="Hide filters" data-toggler="filters">Show filters</button>
 
       <form id="filters" aria-hidden="true" class="filters">
         <div class="filters-heading">
@@ -45,20 +50,20 @@ permalink: /explore/jobs/
           -->
           <label for="figure-selector">Job type</label>
           <select id="figure-selector" name="figure">
-            <option value="wage" selected>wage and salary</option>
-            <option value="self">self-employment</option>
+            <option value="wage" selected>Wage and salary</option>
+            <option value="self">Self-employed</option>
           </select>
         </div>
 
 
         <div class="container-left">
-          <label for="year-selector">Jobs by Year</label>
+          <label for="year-selector">Years</label>
         </div>
         <div class="filter container">
           <svg id="timeline" class="timeline" viewBox="0 0 1024 60"></svg>
         </div>
 
-        <div class="filter container">
+        <div class="filter container filters-last">
           <eiti-slider id="year-selector" name="year"
             min="2004" max="2013" snap="1" value="2013">
           </eiti-slider>
@@ -67,7 +72,7 @@ permalink: /explore/jobs/
       </form>
 
       <div class="container-outer">
-        <button class="toggle-filters toggle" is="eiti-toggle" aria-controls="filters" data-expanded-text="Hide Filters" data-toggler="filters">Show Filters</button>
+        <button class="toggle-filters toggle" is="eiti-toggle" aria-controls="filters" data-expanded-text="Hide filters" data-toggler="filters">Show filters</button>
       </div>
 
     </div>
@@ -78,13 +83,15 @@ permalink: /explore/jobs/
   <div class="slab-alpha">
     <div class="container-outer">
       <h1 id="filter-description" class="filter-description">
-        Extractives jobs in
+        Extractive industries jobs in
         <a href="#region-selector" class="filter-part" data-key="region">the entire U.S.</a>
         (<a href="#year-selector" class="filter-part" data-key="year">2013</a>)
       </h1>
     </div>
 
     <div class="regions container">
+
+      <p class="map-intro_text">There are two types of jobs data here. One is <em>Wage and Salary</em> data, which describes the number of people employed in natural resource extraction that receive wages or salaries from companies. The other type is <em>Self-Employed</em>, which describes people work in natural resource extraction, but don’t receive wages or salaries because they own their company. You can select which type of data you'd like to see in the filters above.</p>
 
       <section id="US" class="region active">
         <div class="map-wrapper">

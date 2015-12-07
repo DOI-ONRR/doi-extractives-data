@@ -29,9 +29,7 @@
 
         attributeChangedCallback: {value: attributeChanged},
 
-        min: numericProperty('min', 0, null, function(value) {
-          console.log('min:', value);
-        }),
+        min: numericProperty('min', 0),
         max: numericProperty('max', 1),
         value: numericProperty('value', 0)
       }

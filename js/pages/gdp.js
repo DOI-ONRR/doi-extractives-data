@@ -39,7 +39,6 @@
     filters.each(function() {
 
       if (this.type == 'radio'){
-        // console.log(this.value, this.checked)
 
         if (units == this.value) {
           this.checked = false;
@@ -65,26 +64,21 @@
   }
 
   filters.on('change', function() {
-      // console.log('change --- ', this.checked)
+
       if (mutating) {
         return;
       }
 
-      var isRadio = (this.type == 'radio');
-
       var prop = this.name;
       var value = this.value;
 
-      if (isRadio) {
-        // console.log('isRadio')
-        // console.log('=-=-=', this.value, this.checked)
-        // console.log('+++', state.get(this.name))
+      if (this.type == 'radio') {
+
         var self = this;
         filters.each(function() {
 
           if (this.type === 'radio'){
             if (this.value == self.value) {
-              // console.log('MATCH')
               this.checked = true;
               this.setAttribute('checked', true);
             } else {
@@ -94,25 +88,14 @@
 
           }
         });
-        // this.checked = true;
-        // this.setAttribute('checked', true)
-
-        value = (this.value == 'dollars')
-          ? 'percent'
-          : 'dollars';
-
 
         var props = parseHash();
-        console.log(props, this.value)
+
         props.units = this.value;
-        // console.log(props)
 
         mutateState(function(state) {
           return state.merge(props);
         });
-        // mutateState(function(state) {
-        //   return state.set(prop, value);
-        // });
       } else {
         mutateState(function(state) {
           return state.set(prop, value);
@@ -138,7 +121,7 @@
       var props = parseHash();
 
       initFilters(filters, parseHash.units);
-      // console.log(props)
+
       mutateState(function() {
         return new Immutable.Map(props);
       });
@@ -179,17 +162,16 @@
   function updateFilters(state){
     filters.each(function() {
       if (this.type == 'radio') {
-        // console.log('===', state.get(this.name))
-        // console.log(this.value)
+
         if (this.value === state.get(this.name)) {
-          console.log('match')
+
           this.checked = true;
           this.setAttribute('checked', true)
-          console.log(filters)
+
         } else {
           this.checked = false;
           this.setAttribute('checked', false)
-          console.log(filters)
+
         }
       } else {
         this.value = state.get(this.name) || '';
@@ -199,17 +181,7 @@
   }
 
   function render(state, previous) {
-    // console.time('render');
 
-    // update the filters
-    // filters.each(function() {
-    //   if (this.type == 'radio') {
-    //     console.log('===', state.get(this.name))
-    //   } else {
-    //     this.value = state.get(this.name) || '';
-    //   }
-
-    // });
     updateFilters(state);
 
     formatNumber = state.get('units') === 'percent'

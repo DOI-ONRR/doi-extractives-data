@@ -8,7 +8,6 @@
       case 'value':
       case 'min':
       case 'max':
-      case 'negative':
         this[attr] = value;
         break;
     }
@@ -30,14 +29,9 @@
 
         attributeChangedCallback: {value: attributeChanged},
 
-        negative: genericProperty(
-          'negative',
-          false,
-          parseBoolean,
-          render
-        ),
-
-        min: numericProperty('min', 0),
+        min: numericProperty('min', 0, null, function(value) {
+          console.log('min:', value);
+        }),
         max: numericProperty('max', 1),
         value: numericProperty('value', 0)
       }
@@ -55,22 +49,22 @@
   }
 
   function render() {
-    if (this[renderId]) {
-      cancelAnimationFrame(this[renderId]);
+    if (!this[renderId]) {
+      this[renderId] = requestAnimationFrame(_render.bind(this));
     }
-    this[renderId] = requestAnimationFrame(_render.bind(this));
   }
 
   function _render() {
     var min = this.min;
     var max = this.max;
     var value = this.value;
-    var negative = this.negative;
 
     var bar = getBar(this);
-    bar.classList.toggle('eiti-bar-bar_negative', negative);
+    bar.classList.toggle('eiti-bar-bar_negative', value < 0);
 
-    var width = scale(value, min, max) * 100;
+    var x = scale(value, min, max) * 100;
+    var zero = min < 0 ? scale(0, min, max) * 100 : 0;
+    var width = Math.abs(x - zero);
     if (width > 0) {
       bar.style.setProperty('width', (width < EPSILON
                             ? EPSILON
@@ -78,11 +72,22 @@
     } else {
       bar.style.setProperty('width', '0%');
     }
+
+    if (min < 0) {
+      if (value < 0) {
+        bar.style.setProperty('left', (zero - width) + '%');
+      } else {
+        bar.style.setProperty('left', zero + '%');
+      }
+    } else {
+      bar.style.removeProperty('left');
+    }
+
     delete this[renderId];
   }
 
   function scale(value, min, max) {
-    return Math.min(1, Math.max((value - min) / (max - min), 0));
+    return (value - min) / (max - min);
   }
 
   function genericProperty(name, value, parse, change) {
@@ -109,7 +114,16 @@
   }
 
   function numericProperty(name, value, parse, change) {
-    return genericProperty(name, value, parseNumber, render);
+    if (change) {
+      var _change = change;
+      change = function() {
+        _change.apply(this, arguments);
+        render.apply(this, arguments);
+      };
+    } else {
+      change = render;
+    }
+    return genericProperty(name, value, parseNumber, change);
   }
 
   function parseNumber(n) {

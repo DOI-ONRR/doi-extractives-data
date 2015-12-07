@@ -108,7 +108,7 @@
     //   background: $blue;
     //   color: $white;
     // }
-    &[checked] {
+    &[checked='true'] {
       background: $blue;
       color: $white;
     }
@@ -127,7 +127,7 @@
     //   background: $blue;
     //   color: $white;
     // }
-    &[checked] {
+    &[checked='true'] {
       background: $blue;
       color: $white;
     }

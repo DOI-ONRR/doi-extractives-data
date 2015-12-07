@@ -35,18 +35,20 @@
   var filters = root.selectAll('.filters [name]');
 
   var initFilters = function(filters, units) {
-    // console.log(filters, units)
+
     filters.each(function() {
-      // console.log(this.checked, this.name, parseHash(), this.value)
+
       if (this.type == 'radio'){
-        // if (!parseHash().units)
+        // console.log(this.value, this.checked)
+
         if (units == this.value) {
-          // this.checked = true;
+          this.checked = false;
+          this.setAttribute('checked', false)
           state = state.set(this.name, this.value);
-          // console.log('true')
+
         } else {
-          // this.checked = false;
-          // console.log('false')
+          this.checked = true;
+          this.setAttribute('checked', true)
         }
 
       } else {
@@ -57,48 +59,67 @@
 
   var parsedHash = parseHash();
   if (parsedHash.units) {
-    // console.log('parseHash().units', parseHash())
     initFilters(filters, parsedHash.units);
   } else {
     initFilters(filters, 'dollars');
   }
 
-  // var radio = {
-  //   state: true,
-  //   value: 'percent'
-  // };
-
   filters.on('change', function() {
-      // console.log(this.checked, this)
+      // console.log('change --- ', this.checked)
       if (mutating) {
         return;
       }
 
-      // if (this.checked){
-      //   radio.value = radio.state ? 'percent' : 'dollars';
-      //   radio.state = !radio.state;
-      // }
-
-
       var isRadio = (this.type == 'radio');
-
-      // if (this.type == 'radio')
-      console.log(this.type, this.value, isRadio, typeof(isRadio))
 
       var prop = this.name;
       var value = this.value;
 
       if (isRadio) {
         // console.log('isRadio')
+        // console.log('=-=-=', this.value, this.checked)
+        // console.log('+++', state.get(this.name))
+        var self = this;
+        filters.each(function() {
+
+          if (this.type === 'radio'){
+            if (this.value == self.value) {
+              // console.log('MATCH')
+              this.checked = true;
+              this.setAttribute('checked', true);
+            } else {
+              this.checked = false;
+              this.setAttribute('checked', false);
+            }
+
+          }
+        });
+        // this.checked = true;
+        // this.setAttribute('checked', true)
+
         value = (this.value == 'dollars')
           ? 'percent'
           : 'dollars';
-        // console.log(value)
+
+
+        var props = parseHash();
+        console.log(props, this.value)
+        props.units = this.value;
+        // console.log(props)
+
+        mutateState(function(state) {
+          return state.merge(props);
+        });
+        // mutateState(function(state) {
+        //   return state.set(prop, value);
+        // });
+      } else {
+        mutateState(function(state) {
+          return state.set(prop, value);
+        });
       }
-      // var value = this.checked ? radio.value : this.value;
-      mutateState(function(state) {
-        return state.set(prop, value);
-      });
+
+
     });
 
   // create our data "model"
@@ -113,8 +134,11 @@
       if (mutating) {
         return;
       }
+
       var props = parseHash();
-      console.log(props)
+
+      initFilters(filters, parseHash.units);
+      // console.log(props)
       mutateState(function() {
         return new Immutable.Map(props);
       });
@@ -152,30 +176,41 @@
     return false;
   }
 
+  function updateFilters(state){
+    filters.each(function() {
+      if (this.type == 'radio') {
+        // console.log('===', state.get(this.name))
+        // console.log(this.value)
+        if (this.value === state.get(this.name)) {
+          console.log('match')
+          this.checked = true;
+          this.setAttribute('checked', true)
+          console.log(filters)
+        } else {
+          this.checked = false;
+          this.setAttribute('checked', false)
+          console.log(filters)
+        }
+      } else {
+        this.value = state.get(this.name) || '';
+      }
+
+    });
+  }
+
   function render(state, previous) {
     // console.time('render');
-    // console.log(state)
 
     // update the filters
-    filters.each(function() {
-      // if (this.type == 'radio'){
-      //   // if (!parseHash().units)
-      //   if (units == this.value) {
-      //     // this.checked = true;
-      //     state = state.set(this.name, this.value);
-      //     // console.log('true')
-      //   } else {
-      //     // this.checked = false;
-      //     // console.log('false')
-      //   }
+    // filters.each(function() {
+    //   if (this.type == 'radio') {
+    //     console.log('===', state.get(this.name))
+    //   } else {
+    //     this.value = state.get(this.name) || '';
+    //   }
 
-      // } else {
-      //   state = state.set(this.name, this.value);
-      // }
-
-      console.log('---',state.get(this.name))
-      this.value = state.get(this.name) || '';
-    });
+    // });
+    updateFilters(state);
 
     formatNumber = state.get('units') === 'percent'
       ? formatPercent

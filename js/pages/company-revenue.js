@@ -135,8 +135,8 @@
         };
       });
 
-    var max = d3.max(types, getter('value'));
-    revenueTypeList.call(renderSubtypes, types, max);
+    var extent = d3.extent(types, getter('value'));
+    revenueTypeList.call(renderSubtypes, types, extent);
   }
 
   function updateCompanyList(data) {
@@ -182,11 +182,11 @@
       return d3.descending(a.total, b.total);
     });
 
-    var max = d3.max(companies, getter('total'));
-    items.call(renderSubtypes, getter('types'), max);
+    var extent = d3.extent(companies, getter('total'));
+    items.call(renderSubtypes, getter('types'), extent);
   }
 
-  function renderSubtypes(selection, types, max) {
+  function renderSubtypes(selection, types, extent) {
     var items = selection.selectAll('.subtype')
       .data(types, getter('name'));
 
@@ -196,7 +196,7 @@
       .call(setupRevenueItem);
 
     items
-      .call(updateRevenueItem, max)
+      .call(updateRevenueItem, extent)
       .sort(function(a, b) {
         return d3.descending(a.value, b.value);
       });
@@ -245,7 +245,7 @@
       .append('eiti-bar');
   }
 
-  function updateRevenueItem(selection, max) {
+  function updateRevenueItem(selection, extent) {
     selection.select('.name')
       .text(getter('name'));
 
@@ -256,8 +256,11 @@
 
     var bar = selection.select('eiti-bar')
       .attr('value', getter('value'));
-    if (max) {
-      bar.attr('max', max);
+
+    if (extent) {
+      bar
+        .attr('min', Math.min(0, extent[0]))
+        .attr('max', extent[1]);
     }
   }
 

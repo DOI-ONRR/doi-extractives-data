@@ -104,7 +104,11 @@
       content: '$';
     }
 
-    &[value='dollars'] {
+    // &[value='dollars'] {
+    //   background: $blue;
+    //   color: $white;
+    // }
+    &[checked] {
       background: $blue;
       color: $white;
     }
@@ -119,7 +123,11 @@
       content: '%';
     }
 
-    &[value='percent'] {
+    // &[value='percent'] {
+    //   background: $blue;
+    //   color: $white;
+    // }
+    &[checked] {
       background: $blue;
       color: $white;
     }

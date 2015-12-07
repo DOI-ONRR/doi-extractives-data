@@ -17,7 +17,7 @@
   var timeline = root.select('#timeline');
 
   var getter = eiti.data.getter;
-  var formatNumber = eiti.format.dollars;
+  var formatNumber = eiti.format.dollarsAndCents;
   var NULL_FILL = '#eee';
 
   // buttons that expand and collapse other elements
@@ -401,6 +401,7 @@
       .append('span')
         .attr('class', 'label');
 
+    var format = eiti.format.shortDollars;
     steps
       .style('border-color', getter('color'))
       .attr('title', function(d) {
@@ -413,8 +414,8 @@
           return d.none
             ? d.range[0]
             : i === last
-              ? formatNumber(d.range[0]) + '+'
-              : formatNumber(d.range[0]);
+              ? format(d.range[0]) + '+'
+              : format(d.range[0]);
         });
   }
 

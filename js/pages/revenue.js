@@ -323,7 +323,8 @@
         return d.value < 0 ? formatNumber(d.value) : '';
       });
     selection.select('.bar_negative eiti-bar')
-      .attr('max', -max)
+      .attr('min', -max)
+      .attr('max', 0)
       .attr('value', function(d) {
         return d.value < 0 ? d.value : 0;
       });

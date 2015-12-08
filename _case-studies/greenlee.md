@@ -6,13 +6,13 @@ resource: copper
 nav_items:
   - name: intro
     title: Top
-  - name: geolo
+  - name: geology
     title: Geology and history
-  - name: produ
+  - name: production
     title: Production
-  - name: emplo
+  - name: employment
     title: Employment
-  - name: reven
+  - name: revenue
     title: Revenue
   - name: costs
     title: Costs
@@ -20,25 +20,25 @@ nav_items:
     title: Data availablity
 ---
 
-<h3><a name="intro" class="case_studies_content-heading js-cs_section">{{ page.title }}</a></h3>
+<h3><a name="intro" class="case_studies_content-heading" data-nav-header="intro">{{ page.title }}</a></h3>
 
 Copper is a major industrial metal used in construction, electronics, transportation, industrial machinery, and consumer products. In 2012, the U.S. was the world’s fourth-largest copper producer, mining 1.15 million tons of copper worth a total value of approximately $9 billion.[^1] Of the five major copper-producing states (Arizona, Utah, New Mexico, Nevada, and Montana), Arizona was the most productive in 2011, with copper output totalling 751,000 metric tons, or 68% of the national total.[^2] Greenlee and Pima counties generated the majority of that production.
 
-<h3><a name="geolo" class="case_studies_content-heading js-cs_section">Geology and history</a></h3>
+<h3><a name="geology" class="case_studies_content-heading" data-nav-header="geology">Geology and history</a></h3>
 
 Greenlee County has a long history of copper mining dating back to the mineral’s discovery in the area during the 1870s. Initial recovery operations drew prospectors to the towns of Clifton, Morenci, and Metcalf, where underground mining methods targeted high-grade copper ores. In the 1920s, the Phelps Dodge Corporation (now Freeport-McMoRan Inc.) became the single owner of mining operations in the jurisdiction and discovered huge reserves of low-grade ores in the area. However, when the price of copper collapsed during the Great Depression, mining in the region temporarily halted between 1932 and 1937, until Phelps Dodge Corporation converted its underground mining operations to open-pit methods that could profitably harvest lower-grade ores.[^3] The modern Morenci Mine was thus established and has been a significant economic driver in the county ever since.
 
-<h3><a name="produ" class="case_studies_content-heading js-cs_section">Production</a></h3>
+<h3><a name="production" class="case_studies_content-heading" data-nav-header="production">Production</a></h3>
 
 The largest-producing copper mine in North America is the privately owned Morenci Mine, located in Greenlee County. In 2012, the Morenci Mine produced 537 million pounds of recoverable copper.[^4] This amount reflects a 22% decrease in production from its output five years prior as a result of the 2008 global recession and associated price drop.[^5] [^6] However, production increased 19% between 2010 and 2011, reflecting a healthy rebound in production in conjunction with rising copper prices. Moreover, in 2012 the Morenci Mine maintained a total output capacity of 420,000 metric tons of copper-molybdenum ore — an amount greater than the combined output capacity of the next three largest copper mines in the state.[^7]
 
 <img src="{{ site.baseurl }}/img/counties/az-production.png" alt="Morencini Copper Production vs. Average Price from 2007-2012" class="case_studies_content-graph">
 
-<h3><a name="emplo" class="case_studies_content-heading js-cs_section">Employment</a></h3>
+<h3><a name="employment" class="case_studies_content-heading" data-nav-header="employment">Employment</a></h3>
 
 Copper production employed 10,637 workers in Arizona in 2011, comprising less than 1% of statewide private-sector employment (out of 1,992,727 total workers).[^8] [^9] In Greenlee County, the ebbs and flows of employment mirror trends in the copper industry. County unemployment reached 18% in 2009 at the height of the recession before falling to around 7% in 2013, as global demand and prices stabilized.[^10] Freeport-McMoRan Inc. owns and operates Greenlee County’s Morenci Mine, after merging with Phelps Dodge Corporation in 2007, and serves as the key copper-mining employer. In 2011, mining activities in the county employed approximately 2,296 workers out of a population of 8,594.[^11]
 
-<h3><a name="reven" class="case_studies_content-heading js-cs_section">Revenue</a></h3>
+<h3><a name="revenue" class="case_studies_content-heading" data-nav-header="revenue">Revenue</a></h3>
 
 State revenue from copper extraction is directed back to Greenlee County primarily through the state’s severance tax. Arizona levies this tax on metal minerals (including copper) set at 2.5% on 50% of the difference between the gross value of production and the production costs. While 47.6% of this revenue goes to the state’s General Fund, the other 52.4% is distributed to cities and counties.[^12]
 
@@ -46,11 +46,11 @@ Arizona also collects a Transaction Privilege Tax for the right to do business i
 
 In 2012, Greenlee County received $4,376,829 in transaction privilege and severance tax disbursements.[^14] In publicly available documents, the Arizona Department of Revenue reports this revenue as one sum, and does not specify what percentage of the tax stems from copper mining. Greenlee County also collected $2,763,245 in local property taxes levied for general purposes, public health services, and flood control (out of a total $17.1 million in county revenue) in 2012.[^15] While some portion of property taxes stems from copper mining, the percentage is not specified in publicly available data.
 
-<h3><a name="costs" class="case_studies_content-heading js-cs_section">Costs</a></h3>
+<h3><a name="costs" class="case_studies_content-heading" data-nav-header="costs">Costs</a></h3>
 
 Copper mining activity is a key consideration in Greenlee County road planning.[^16] No additional publicly available government sources delineating specific fiscal costs of copper mining in Greenlee County were found.
 
-<h3><a name="data" class="case_studies_content-heading js-cs_section">Data availability</a></h3>
+<h3><a name="data" class="case_studies_content-heading" data-nav-header="data">Data availability</a></h3>
 
 The table below highlights data sources used to compile this narrative, as well as any gaps in publicly available data.
 

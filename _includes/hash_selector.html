@@ -2,7 +2,7 @@
 <select data-nav-options onchange="openListNav.changeHandler(this)">
   {% if page.nav_items %}
     {% for item in page.nav_items %}
-        <option value="{{item.name}}" data-nav-option="{{item.name}}">{{item.title}}</option>
+        <option value="{{item.name}}">{{item.title}}</option>
     {% endfor %}
   {% endif %}
 </select>

@@ -10,7 +10,6 @@
   ul {
     font-weight: $weight-light;
     list-style-type: square;
-    padding-bottom: $base-padding;
     padding-left: $base-padding;
   }
 }
@@ -40,4 +39,8 @@
 
 .case_studies_content-heading {
   color: $dark-gray;
+
+  &:hover {
+    text-decoration: none;
+  }
 }

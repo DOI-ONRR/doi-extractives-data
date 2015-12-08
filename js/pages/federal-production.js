@@ -241,6 +241,7 @@
           : function(d) {
               return unique(d, 'Product').length;
             };
+
         var dataByFeatureId = d3.nest()
           .key(getter(fields.region))
           .rollup(rollup)
@@ -253,6 +254,21 @@
           var id = featureId(f);
           f.value = dataByFeatureId[id];
         });
+
+        var withheld = data.filter(function(d) {
+          return d[fields.region] === 'Withheld';
+        });
+
+        if (withheld.length) {
+          console.log('got %d withheld rows:', withheld);
+          features.push({
+            id: 'W',
+            value: rollup(withheld),
+            properties: {
+              name: '(Withheld)'
+            }
+          });
+        }
 
         var value = getter('value');
         var values = features.map(value);

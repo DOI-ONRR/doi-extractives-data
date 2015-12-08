@@ -23,3 +23,6 @@ collections:
   how-it-works:
     output: true
     permalink: /how-it-works/:subpage/
+  downloads:
+    output: true
+    permalink: /downloads/:subpage/

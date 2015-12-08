@@ -37,8 +37,6 @@ async.series([
   if (error) return console.error('error:', error);
 });
 
-var keys;
-
 function main(done) {
   process.stdin
     .pipe(tito.createReadStream(options['if']))

@@ -172,7 +172,7 @@
     var enter = items.enter().append('tbody')
       .attr('class', 'company subgroup')
       .append('tr')
-        .attr('class', 'name')
+        .attr('class', 'name');
     enter.append('th')
       .attr('class', 'subregion-name')
       .text(getter('name'));

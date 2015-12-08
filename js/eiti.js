@@ -466,7 +466,10 @@
    * @param {Number} num
    * @return {String}
    */
-  eiti.format.dollars = eiti.format.transform(eiti.format.si, eiti.format.transformDollars);
+  eiti.format.dollars = eiti.format.transform(
+    eiti.format.si,
+    eiti.format.transformDollars
+  );
 
   /**
    * Produces dollar strings with thousands separators and 2-decimal
@@ -478,7 +481,10 @@
    * @param {Number} num
    * @return {String}
    */
-  eiti.format.dollarsAndCents = eiti.format.transform(',.2f', eiti.format.transformDollars);
+  eiti.format.dollarsAndCents = eiti.format.transform(
+    ',.2f',
+    eiti.format.transformDollars
+  );
 
   /**
    * Produces short dollar strings in SI format with 1 decimal,
@@ -488,7 +494,9 @@
    * @param {Number} num
    * @return {String}
    */
-  eiti.format.shortDollars = eiti.format.transform('$,.2s', eiti.format.transformMetric);
+  eiti.format.shortDollars = eiti.format.transform(
+    '$,.2s', eiti.format.transformMetric
+  );
 
   eiti.format.pluralize = function(num, singular, plural) {
     return (num === 1)

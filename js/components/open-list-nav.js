@@ -95,26 +95,17 @@
 
     OpenListNav.prototype.detectNavChange = function(){
 
-      function reverseH(navHeaders) {
-        var newHeaders = [];
-        for (var i = navHeaders.length - 1; i >= 0; i--) {
-          newHeaders.push(navHeaders[i]);
-        }
-        return newHeaders;
-      }
-
-      var navHeaders = (this.scrollTop.direction === 'up')
-        ? reverseH(this.navHeaders)
-        : this.navHeaders;
-
       var self = this;
-      Array.prototype.forEach.call(navHeaders, function(header){
+      var updated = false
+      Array.prototype.forEach.call(this.navHeaders, function(header){
 
         var inViewPort = isElementInViewport(header);
-        if (inViewPort && !self.navIsSelect) {
+        if (inViewPort && !self.navIsSelect && !updated) {
           self.update(null, header.name);
-        } else if(inViewPort && self.navIsSelect) {
+          updated = true;
+        } else if(inViewPort && self.navIsSelect && !updated) {
           self.updateSelectField(header.name);
+          updated = true;
         }
       });
     };

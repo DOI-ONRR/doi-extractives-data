@@ -52,11 +52,13 @@ function main(done) {
         fixFIPS(d);
       }
       if (!d.Volume) {
+        /*
         if (!keys) {
           keys = Object.keys(d);
           console.warn(keys.join('\t'));
         }
         console.warn('xxx', keys.map(function(k) { return d[k]; }).join('\t'));
+        */
         return next();
       }
       next(null, d);
@@ -91,7 +93,7 @@ function fixFIPS(d) {
   var abbr = d.State;
   var state = statesByAbbr[abbr];
   if (!state) {
-    console.error('Unknown state abbreviation: "' + abbr + '"');
+    // console.warn('Unknown state abbreviation: "' + abbr + '"');
     return false;
   }
   var fips = d.FIPS.substr(0, 2);

@@ -173,16 +173,20 @@ permalink: /explore/federal-revenue-by-location/
       {% for region in site.data.offshore_regions %}
       <section id="{{ region.id }}" class="region offshore">
 
-        <svg is="eiti-map" id="{{ region.id }}-map" class="region-map" simplify="1e-2"
-          preserveAspectRatio="xMidYMid meet"
-          projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/"
-          {% if region.viewbox %}viewBox="{{ region.viewbox }}"{% endif %}>
-          <g class="offshore areas" data-url="offshore-regions.json"
-            data-object="{{ region.id }}"
-            data-title="properties.name"
-            data-mesh="true">
-          </g>
-        </svg>
+        <div class="map-wrapper">
+          <svg is="eiti-map" id="{{ region.id }}-map" class="region-map" simplify="1e-2"
+            preserveAspectRatio="xMidYMid meet"
+            projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/"
+            {% if region.viewbox %}viewBox="{{ region.viewbox }}"{% endif %}>
+            <g class="offshore areas" data-url="offshore-regions.json"
+              data-object="{{ region.id }}"
+              data-title="properties.name"
+              data-mesh="true">
+            </g>
+          </svg>
+
+          <div class="map-legend"></div>
+        </div>
 
         <table class="subregions">
           <thead class="region-header"></thead>

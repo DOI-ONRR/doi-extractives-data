@@ -127,7 +127,7 @@
       var match = product.match(/ (\(.+\))\s*$/);
       units = match ? ' ' + match[1] : '';
       // console.log('product units:', units);
-      formatNumber = eiti.format(',.2f');
+      formatNumber = eiti.format(',.0f');
     } else {
       formatNumber = function(n) {
         return n + eiti.format.pluralize(n, ' product');

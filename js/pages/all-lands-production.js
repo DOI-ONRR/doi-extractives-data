@@ -127,7 +127,7 @@
       var match = product.match(/ (\(.+\))\s*$/);
       units = match ? ' ' + match[1] : '';
       // console.log('product units:', units);
-      formatNumber = eiti.format.si;
+      formatNumber = eiti.format(',.0f');
     } else {
       formatNumber = function(n) {
         return n + eiti.format.pluralize(n, ' product');
@@ -336,8 +336,7 @@
     title.append('span')
       .attr('class', 'text');
     selection.append('td')
-      .append('span')
-        .attr('class', 'value');
+      .attr('class', 'value');
     selection.append('td')
       .attr('class', 'region-chart')
       .append('eiti-bar');

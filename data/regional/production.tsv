@@ -753,7 +753,6 @@ Year	Region	Commodity	Product	Volume
 2009	NM		Langbeinite (tons)	648073.00
 2008	OK		Coal (tons)	664925.00
 2014	CA		Geothermal - Electrical Generation, Other	691756.00
-2012	Offshore Alaska		Oil (bbl)	695586.86
 2007	Withheld		Salt (tons)	705887.00
 2013	NM		Langbeinite (tons)	707765.00
 2010	Withheld		Soda Ash (tons)	712983.00
@@ -761,10 +760,8 @@ Year	Region	Commodity	Product	Volume
 2006	OK		Coal (tons)	725099.00
 2006	NM		Langbeinite (tons)	734349.00
 2012	Withheld		Soda Ash (tons)	738199.00
-2014	Offshore Alaska		Oil (bbl)	740073.44
 2012	Withheld		Phosphate Raw Ore (tons)	741563.00
 2011	NM		Langbeinite (tons)	745606.00
-2013	Offshore Alaska		Oil (bbl)	752689.95
 2008	Withheld		Soda Ash (tons)	756762.00
 2007	Withheld		Soda Ash (tons)	758283.00
 2011	Withheld		Soda Ash (tons)	773071.00
@@ -780,8 +777,6 @@ Year	Region	Commodity	Product	Volume
 2007	NM		Langbeinite (tons)	966101.00
 2008	NM		Langbeinite (tons)	974982.00
 2011	ND		Coal (tons)	2923257.00
-2011	Offshore Alaska		Oil (bbl)	1154070.32
-2010	Offshore Alaska		Oil (bbl)	1383388.49
 2007	UT		Coal (tons)	6659941.25
 2013	ND		Coal (tons)	4489551.00
 2007	CO		Coal (tons)	21776477.00
@@ -789,7 +784,6 @@ Year	Region	Commodity	Product	Volume
 2009	WY		Coal (tons)	387746736.00
 2014	ND		Coal (tons)	5051711.00
 2012	AL		Coal (tons)	1760930.00
-2009	Offshore Alaska		Oil (bbl)	1872793.49
 2006	UT		Coal (tons)	10097980.47
 2005	ND		Coal (tons)	2169980.45
 2008	WY		Coal (tons)	418915511.00
@@ -801,7 +795,6 @@ Year	Region	Commodity	Product	Volume
 2008	ID		Phosphate Raw Ore (tons)	2424258.00
 2005	NV		Geothermal - Electrical Generation, Kilowatt Hours	681851144.92
 2010	WY		Coal (tons)	397535690.00
-2007	Offshore Alaska		Oil (bbl)	2475709.25
 2014	SD		Gas (mcf)	2500311.27
 2012	NV		Geothermal - Electrical Generation, Kilowatt Hours	1213241911.35
 2005	ID		Phosphate Raw Ore (tons)	2621832.00
@@ -809,7 +802,6 @@ Year	Region	Commodity	Product	Volume
 2007	NV		Geothermal - Electrical Generation, Kilowatt Hours	586069014.51
 2011	WY		Coal (tons)	390112610.00
 2006	WY		Coal (tons)	369856067.00
-2008	Offshore Alaska		Oil (bbl)	2985742.13
 2009	CO		Coal (tons)	16946752.00
 2013	CO		Coal (tons)	15479428.00
 2010	NV		Geothermal - Electrical Generation, Kilowatt Hours	1011705802.12
@@ -824,7 +816,6 @@ Year	Region	Commodity	Product	Volume
 2006	ND		Coal (tons)	3196317.49
 2011	NV		Geothermal - Electrical Generation, Kilowatt Hours	1023492237.35
 2011	CO		Coal (tons)	18017066.00
-2006	Offshore Alaska		Oil (bbl)	3367688.91
 2005	WY		Soda Ash (tons)	3416753.00
 2009	ID		Phosphate Raw Ore (tons)	3423741.00
 2013	UT		Coal (tons)	8108509.00
@@ -833,7 +824,6 @@ Year	Region	Commodity	Product	Volume
 2014	WY		Coal (tons)	340049300.00
 2005	UT		Coal (tons)	12469840.55
 2012	WY		Coal (tons)	353311864.00
-2005	Offshore Alaska		Oil (bbl)	4000050.90
 2012	UT		Coal (tons)	8792809.00
 2012	ID		Phosphate Raw Ore (tons)	4467766.00
 2011	ID		Phosphate Raw Ore (tons)	4690032.00
@@ -861,12 +851,9 @@ Year	Region	Commodity	Product	Volume
 2005	MT		Coal (tons)	16886195.00
 2011	MT		Coal (tons)	17214337.00
 2009	MT		Coal (tons)	17319320.00
-2012	Offshore Pacific		Oil (bbl)	17685001.00
 2010	MT		Coal (tons)	17741873.00
 2006	MT		Coal (tons)	18072165.00
 2010	Withheld		Coal (tons)	18396804.24
-2014	Offshore Pacific		Oil (bbl)	18506540.00
-2013	Offshore Pacific		Oil (bbl)	18571781.00
 2007	MT		Coal (tons)	18777497.00
 2007	Withheld		Coal (tons)	18961860.04
 2009	Withheld		Coal (tons)	19167321.61
@@ -874,7 +861,6 @@ Year	Region	Commodity	Product	Volume
 2012	Withheld		Coal (tons)	19320740.91
 2014	CA		Geothermal - Electrical Generation, Thousands of Pounds	45564160.54
 2013	CA		Geothermal - Electrical Generation, Thousands of Pounds	46144621.79
-2011	Offshore Pacific		Oil (bbl)	19820268.00
 2008	Withheld		Coal (tons)	20465633.00
 2012	CA		Geothermal - Electrical Generation, Thousands of Pounds	48207755.95
 2009	CA		Geothermal - Electrical Generation, Thousands of Pounds	48517752.31
@@ -882,54 +868,18 @@ Year	Region	Commodity	Product	Volume
 2010	CA		Geothermal - Electrical Generation, Thousands of Pounds	48523236.70
 2008	CA		Geothermal - Electrical Generation, Thousands of Pounds	49867136.34
 2013	Withheld		Coal (tons)	21318188.32
-2010	Offshore Pacific		Oil (bbl)	21710971.00
 2007	CA		Geothermal - Electrical Generation, Thousands of Pounds	50375439.62
-2009	Offshore Pacific		Oil (bbl)	22306733.00
 2006	Withheld		Coal (tons)	22435709.04
 2010	AK		Gas (mcf)	22767535.95
 2006	CA		Geothermal - Electrical Generation, Thousands of Pounds	53343898.53
 2005	CA		Geothermal - Electrical Generation, Thousands of Pounds	53196738.69
-2012	Offshore Alaska		Gas (mcf)	23913986.35
-2008	Offshore Pacific		Oil (bbl)	24031967.00
-2007	Offshore Pacific		Oil (bbl)	24624090.00
 2005	Withheld		Coal (tons)	24919890.01
-2005	Offshore Alaska		Gas (mcf)	25218516.42
-2006	Offshore Alaska		Gas (mcf)	25229357.44
-2008	Offshore Gulf		Oil (bbl)	423340090.80
-2006	Offshore Pacific		Oil (bbl)	25992104.00
-2005	Offshore Pacific		Oil (bbl)	26542513.00
-2007	Offshore Alaska		Gas (mcf)	26817788.22
-2012	Offshore Pacific		Gas (mcf)	27267648.00
-2013	Offshore Pacific		Gas (mcf)	27494558.00
-2014	Offshore Pacific		Gas (mcf)	28313384.00
-2009	Offshore Gulf		Oil (bbl)	570211541.19
-2010	Offshore Gulf		Oil (bbl)	566580952.26
-2009	Offshore Alaska		Gas (mcf)	30708137.44
-2010	Offshore Alaska		Gas (mcf)	30919154.08
 2014	UT		Geothermal - Electrical Generation, Kilowatt Hours	132080000.00
-2013	Offshore Alaska		Gas (mcf)	31750054.55
-2008	Offshore Alaska		Gas (mcf)	32926351.37
-2007	Offshore Gulf		Oil (bbl)	467914463.11
 2014	Withheld		Coal (tons)	34078422.39
-2011	Offshore Alaska		Gas (mcf)	34305968.49
-2014	Offshore Alaska		Gas (mcf)	34766100.56
-2006	Offshore Gulf		Oil (bbl)	471814983.20
-2011	Offshore Pacific		Gas (mcf)	36596806.00
 2007	AK		Gas (mcf)	36868361.20
-2011	Offshore Gulf		Oil (bbl)	481675326.34
 2006	AK		Gas (mcf)	39875346.01
-2009	Offshore Pacific		Gas (mcf)	41233098.00
-2010	Offshore Pacific		Gas (mcf)	41257256.00
-2005	Offshore Gulf		Oil (bbl)	466800584.29
 2005	AK		Gas (mcf)	42741892.79
-2007	Offshore Pacific		Gas (mcf)	45563230.00
 2014	NV		Geothermal - Direct Utilization, Hundreds of Gallons	46536534.78
-2008	Offshore Pacific		Gas (mcf)	46906273.00
-2006	Offshore Pacific		Gas (mcf)	47153866.00
-2012	Offshore Gulf		Oil (bbl)	464522816.28
-2013	Offshore Gulf		Oil (bbl)	458890599.90
-2014	Offshore Gulf		Oil (bbl)	510277926.74
-2005	Offshore Pacific		Gas (mcf)	54185608.00
 2013	NV		Geothermal - Direct Utilization, Hundreds of Gallons	57238368.00
 2014	NM		Geothermal - Direct Use, Millions of Gallons	63624483.00
 2013	NM		Geothermal - Direct Use, Millions of Gallons	69920724.50
@@ -942,27 +892,17 @@ Year	Region	Commodity	Product	Volume
 2012	NV		Geothermal - Direct Utilization, Hundreds of Gallons	123103803.00
 2008	NV		Geothermal - Direct Utilization, Hundreds of Gallons	123838519.00
 2011	NV		Geothermal - Direct Utilization, Hundreds of Gallons	131014604.00
-2014	Offshore Gulf		Gas (mcf)	1276235648.85
-2013	Offshore Gulf		Gas (mcf)	1327284618.07
 2010	NV		Geothermal - Direct Utilization, Hundreds of Gallons	163346106.00
 2013	CA		Geothermal - Electrical Generation, Kilowatt Hours	918278007.25
 2012	CA		Geothermal - Electrical Generation, Kilowatt Hours	918939267.66
-2012	Offshore Gulf		Gas (mcf)	1534777801.17
 2006	CA		Geothermal - Electrical Generation, Kilowatt Hours	1015891685.73
 2011	CA		Geothermal - Electrical Generation, Kilowatt Hours	980959056.94
 2008	CA		Geothermal - Electrical Generation, Kilowatt Hours	1070470821.71
 2007	CA		Geothermal - Electrical Generation, Kilowatt Hours	1092826808.81
 2010	CA		Geothermal - Electrical Generation, Kilowatt Hours	1003412405.40
-2011	Offshore Gulf		Gas (mcf)	1826116734.52
 2014	CA		Geothermal - Electrical Generation, Kilowatt Hours	896841860.67
 2009	NV		Geothermal - Direct Utilization, Hundreds of Gallons	198988743.00
 2009	CA		Geothermal - Electrical Generation, Kilowatt Hours	1088756553.23
-2010	Offshore Gulf		Gas (mcf)	2250045080.70
-2008	Offshore Gulf		Gas (mcf)	2330333630.82
-2009	Offshore Gulf		Gas (mcf)	2450685346.85
-2007	Offshore Gulf		Gas (mcf)	2813193096.40
-2006	Offshore Gulf		Gas (mcf)	2921271142.91
-2005	Offshore Gulf		Gas (mcf)	3153662713.13
 2007	UT		Geothermal - Electrical Generation, Thousands of Pounds	2046718554.09
 2005	UT		Geothermal - Electrical Generation, Thousands of Pounds	2290182691.15
 2013	UT		Geothermal - Electrical Generation, Thousands of Pounds	2316266257.97
@@ -973,83 +913,63 @@ Year	Region	Commodity	Product	Volume
 2011	UT		Geothermal - Electrical Generation, Thousands of Pounds	2554615747.28
 2010	UT		Geothermal - Electrical Generation, Thousands of Pounds	2670508902.54
 2009	UT		Geothermal - Electrical Generation, Thousands of Pounds	2827213957.69
-2012	BFT		Oil (bbl)	695586.86
-2014	BFT		Oil (bbl)	740073.44
-2013	BFT		Oil (bbl)	752689.95
-2011	BFT		Oil (bbl)	1154070.32
-2010	BFT		Oil (bbl)	1383388.49
-2009	BFT		Oil (bbl)	1872793.49
-2007	BFT		Oil (bbl)	2475709.25
-2008	BFT		Oil (bbl)	2985742.13
-2006	BFT		Oil (bbl)	3367688.91
-2005	BFT		Oil (bbl)	4000050.90
-2012	SOC		Oil (bbl)	17685001.00
-2014	SOC		Oil (bbl)	18506540.00
-2013	SOC		Oil (bbl)	18571781.00
-2011	SOC		Oil (bbl)	19820268.00
-2010	SOC		Oil (bbl)	21710971.00
-2009	SOC		Oil (bbl)	22306733.00
-2012	BFT		Gas (mcf)	23913986.35
-2008	SOC		Oil (bbl)	24031967.00
-2007	SOC		Oil (bbl)	24624090.00
-2005	BFT		Gas (mcf)	25218516.42
-2006	BFT		Gas (mcf)	25229357.44
-2008	WGM		Oil (bbl)	25732984.00
-2006	SOC		Oil (bbl)	25992104.00
-2005	SOC		Oil (bbl)	26542513.00
-2007	BFT		Gas (mcf)	26817788.22
-2012	SOC		Gas (mcf)	27267648.00
-2013	SOC		Gas (mcf)	27494558.00
-2014	SOC		Gas (mcf)	28313384.00
-2009	WGM		Oil (bbl)	29415979.00
-2010	WGM		Oil (bbl)	29939476.00
-2009	BFT		Gas (mcf)	30708137.44
-2010	BFT		Gas (mcf)	30919154.08
-2013	BFT		Gas (mcf)	31750054.55
-2008	BFT		Gas (mcf)	32926351.37
-2007	WGM		Oil (bbl)	33421155.00
-2011	BFT		Gas (mcf)	34305968.49
-2014	BFT		Gas (mcf)	34766100.56
-2006	WGM		Oil (bbl)	35198190.00
-2011	SOC		Gas (mcf)	36596806.00
-2011	WGM		Oil (bbl)	38146320.00
-2009	SOC		Gas (mcf)	41233098.00
-2010	SOC		Gas (mcf)	41257256.00
-2005	WGM		Oil (bbl)	42195314.00
-2007	SOC		Gas (mcf)	45563230.00
-2008	SOC		Gas (mcf)	46906273.00
-2006	SOC		Gas (mcf)	47153866.00
-2012	WGM		Oil (bbl)	51532543.00
-2013	WGM		Oil (bbl)	52285111.00
-2014	WGM		Oil (bbl)	53171356.89
-2005	SOC		Gas (mcf)	54185608.00
-2014	WGM		Gas (mcf)	144917234.91
-2013	WGM		Gas (mcf)	145202610.00
-2012	WGM		Gas (mcf)	173417391.00
-2011	WGM		Gas (mcf)	194426169.00
-2010	WGM		Gas (mcf)	223412501.00
-2008	WGM		Gas (mcf)	236592361.00
-2009	WGM		Gas (mcf)	241812701.00
-2007	WGM		Gas (mcf)	325366229.00
-2008	CGM		Oil (bbl)	397607106.80
-2013	CGM		Oil (bbl)	406605488.90
-2012	CGM		Oil (bbl)	412990273.28
-2006	WGM		Gas (mcf)	414581474.00
-2005	CGM		Oil (bbl)	424605270.29
-2007	CGM		Oil (bbl)	434493308.11
-2006	CGM		Oil (bbl)	436616793.20
-2011	CGM		Oil (bbl)	443529006.34
-2014	CGM		Oil (bbl)	457106569.85
-2005	WGM		Gas (mcf)	481187574.00
-2010	CGM		Oil (bbl)	536641476.26
-2009	CGM		Oil (bbl)	540795562.19
-2014	CGM		Gas (mcf)	1131318413.94
-2013	CGM		Gas (mcf)	1182082008.07
-2012	CGM		Gas (mcf)	1361360410.17
-2011	CGM		Gas (mcf)	1631690565.52
-2010	CGM		Gas (mcf)	2026632579.70
-2008	CGM		Gas (mcf)	2093741269.82
-2009	CGM		Gas (mcf)	2208872645.85
-2007	CGM		Gas (mcf)	2487826867.40
-2006	CGM		Gas (mcf)	2506689668.91
-2005	CGM		Gas (mcf)	2672475139.13
+2012	alaska		Oil (bbl)	695586.86
+2014	alaska		Oil (bbl)	740073.44
+2013	alaska		Oil (bbl)	752689.95
+2011	alaska		Oil (bbl)	1154070.32
+2010	alaska		Oil (bbl)	1383388.49
+2009	alaska		Oil (bbl)	1872793.49
+2007	alaska		Oil (bbl)	2475709.25
+2008	alaska		Oil (bbl)	2985742.13
+2006	alaska		Oil (bbl)	3367688.91
+2005	alaska		Oil (bbl)	4000050.90
+2012	pacific		Oil (bbl)	17685001.00
+2014	pacific		Oil (bbl)	18506540.00
+2013	pacific		Oil (bbl)	18571781.00
+2011	pacific		Oil (bbl)	19820268.00
+2010	pacific		Oil (bbl)	21710971.00
+2009	pacific		Oil (bbl)	22306733.00
+2012	alaska		Gas (mcf)	23913986.35
+2008	pacific		Oil (bbl)	24031967.00
+2007	pacific		Oil (bbl)	24624090.00
+2005	alaska		Gas (mcf)	25218516.42
+2006	alaska		Gas (mcf)	25229357.44
+2008	gulf		Oil (bbl)	423340090.80
+2006	pacific		Oil (bbl)	25992104.00
+2005	pacific		Oil (bbl)	26542513.00
+2007	alaska		Gas (mcf)	26817788.22
+2012	pacific		Gas (mcf)	27267648.00
+2013	pacific		Gas (mcf)	27494558.00
+2014	pacific		Gas (mcf)	28313384.00
+2009	gulf		Oil (bbl)	570211541.19
+2010	gulf		Oil (bbl)	566580952.26
+2009	alaska		Gas (mcf)	30708137.44
+2010	alaska		Gas (mcf)	30919154.08
+2013	alaska		Gas (mcf)	31750054.55
+2008	alaska		Gas (mcf)	32926351.37
+2007	gulf		Oil (bbl)	467914463.11
+2011	alaska		Gas (mcf)	34305968.49
+2014	alaska		Gas (mcf)	34766100.56
+2006	gulf		Oil (bbl)	471814983.20
+2011	pacific		Gas (mcf)	36596806.00
+2011	gulf		Oil (bbl)	481675326.34
+2009	pacific		Gas (mcf)	41233098.00
+2010	pacific		Gas (mcf)	41257256.00
+2005	gulf		Oil (bbl)	466800584.29
+2007	pacific		Gas (mcf)	45563230.00
+2008	pacific		Gas (mcf)	46906273.00
+2006	pacific		Gas (mcf)	47153866.00
+2012	gulf		Oil (bbl)	464522816.28
+2013	gulf		Oil (bbl)	458890599.90
+2014	gulf		Oil (bbl)	510277926.74
+2005	pacific		Gas (mcf)	54185608.00
+2014	gulf		Gas (mcf)	1276235648.85
+2013	gulf		Gas (mcf)	1327284618.07
+2012	gulf		Gas (mcf)	1534777801.17
+2011	gulf		Gas (mcf)	1826116734.52
+2010	gulf		Gas (mcf)	2250045080.70
+2008	gulf		Gas (mcf)	2330333630.82
+2009	gulf		Gas (mcf)	2450685346.85
+2007	gulf		Gas (mcf)	2813193096.40
+2006	gulf		Gas (mcf)	2921271142.91
+2005	gulf		Gas (mcf)	3153662713.13

@@ -16,11 +16,6 @@
   margin-bottom: 0;
   padding: $base-padding-lite;
 
-  // &.active a {
-  //   color: $dark-gray;
-  //   font-weight: $weight-book;
-  // }
-
   &[data-active=true] {
     color: $dark-gray;
     font-weight: $weight-book;

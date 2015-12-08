@@ -104,8 +104,7 @@ input.drawer-search_field {
 
 .drawer-search_button {
   background-color: $white;
-  border-bottom-left-radius: 0;
-  border-top-left-radius: 0;
+  border-radius: 0 $base-border-radius $base-border-radius 0;
   float: right;
   height: 34px;
   position: relative;

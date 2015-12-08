@@ -63,7 +63,7 @@
 
     OpenListNav.prototype.updateSelectField = function(newValue) {
       if (newValue){
-        return this.navSelect.val(newValue);
+        this.navSelect.val(newValue);
       }
     };
 
@@ -103,16 +103,16 @@
       // initialize nav status as not updated
       var updated = false;
 
-      Array.prototype.forEach.call(this.navHeaders, function(header){
-
-        var inViewPort = isElementInViewport(header);
-        if (inViewPort && !self.navIsSelect && !updated) {
-          self.update(null, header.name);
-          updated = true;
-        } else if(inViewPort && self.navIsSelect && !updated) {
-          self.updateSelectField(header.name);
-          updated = true;
-        }
+       Array.prototype.forEach.call(this.navHeaders, function(header){
+         var inViewPort = isElementInViewport(header);
+         if (inViewPort && !self.navIsSelect && !updated) {
+           self.update(null, header.name);
+           updated = true;
+         } else if(inViewPort && self.navIsSelect && !updated) {
+           var newName = header.name || header.id;
+          self.updateSelectField(newName);
+           updated = true;
+         }
       });
     };
 

@@ -80,10 +80,12 @@
 
       window.addEventListener('scroll', function() {
         self.updateScrollTop();
+        // TODO: throttle
         self.detectNavChange();
       });
 
       window.addEventListener('resize', function(){
+        // TODO: throttle
         self.detectNavChange();
       });
 
@@ -93,10 +95,14 @@
       window.location.hash = selector.value;
     };
 
+
     OpenListNav.prototype.detectNavChange = function(){
 
       var self = this;
-      var updated = false
+
+      // initialize nav status as not updated
+      var updated = false;
+
       Array.prototype.forEach.call(this.navHeaders, function(header){
 
         var inViewPort = isElementInViewport(header);

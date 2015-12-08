@@ -4,7 +4,7 @@ layout: narrative
 permalink: /how-it-works/federal-laws/
 nav_description: Jump to a section
 nav_items:
-  - name: federal-laws-and-regulations
+  - name: introduction
     title: Top
   - name: fiscal-regime
     title: Fiscal regime
@@ -20,7 +20,7 @@ nav_items:
   <a class="revenues_subpage-breadcrumb" href="{{ site.baseurl }}/how-it-works/">How it works</a>
   /
 </div>
-<h1 id="federal-laws-and-regulations" data-nav-header="federal-laws-and-regulations">Federal laws and regulations</h1>
+<h1 id="introduction" data-nav-header="introduction">Federal laws and regulations</h1>
 
 <p class="case_studies_intro-para">The legislative branch of the federal government has passed many laws that govern natural resource extraction on federal lands.</p>
 

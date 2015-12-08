@@ -4,7 +4,7 @@ layout: narrative
 permalink: /how-it-works/state-legal-fiscal-info/
 nav_description: Jump to a state
 nav_items:
-	- name: state-legal-fiscal-information
+	- name: introduction
 		title: Top
   - name: ak
     title: Alaska
@@ -49,7 +49,7 @@ nav_items:
   <a class="revenues_subpage-breadcrumb" href="{{ site.baseurl }}/how-it-works/">How it works</a>
   /
 </div>
-<h1 id="state-legal-fiscal-information" data-nav-header="state-legal-fiscal-information">State Legal and Fiscal Information</h1>
+<h1 id="introduction" data-nav-header="introduction">State Legal and Fiscal Information</h1>
 
 <nav class="hash_selector">
   {% include hash_selector.html %}

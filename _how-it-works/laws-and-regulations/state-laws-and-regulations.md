@@ -4,7 +4,7 @@ layout: narrative
 permalink: /how-it-works/state-laws-and-regulations/
 nav_description: Jump to a section
 nav_items:
-  - name: state-laws-and-regulations
+  - name: introduction
     title: Top
   - name: role-of-state-government-agencies
     title: Role of state government
@@ -22,7 +22,7 @@ nav_items:
   <a class="revenues_subpage-breadcrumb" href="{{ site.baseurl }}/how-it-works/">How it works</a>
   /
 </div>
-<h1 id="state-laws-and-regulations" data-nav-header="state-laws-and-regulations">State Laws and Regulations</h1>
+<h1 id="introduction" data-nav-header="introduction">State Laws and Regulations</h1>
 
 <p class="case_studies_intro-para">States maintain ownership of some lands and natural resources; develop their own taxation and royalty systems applicable to oil, gas, nonenergy minerals, and renewable energy; and collect extractive revenue directly. Each state has a unique revenue system.</p>
 

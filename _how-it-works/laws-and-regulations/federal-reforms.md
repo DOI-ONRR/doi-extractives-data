@@ -4,7 +4,7 @@ layout: narrative
 permalink: /how-it-works/federal-reforms/
 nav_description: Jump to a section
 nav_items:
-  - name: federal-reforms
+  - name: introduction
     title: Top
   - name: deepwater-horizon-oil-spill
     title: Deepwater Horizon oil spill
@@ -22,7 +22,7 @@ nav_items:
   <a class="revenues_subpage-breadcrumb" href="{{ site.baseurl }}/how-it-works/">How it works</a>
   /
 </div>
-<h1 id="federal-reforms" data-nav-header="federal-reforms">Federal reforms</h1>
+<h1 id="introduction" data-nav-header="introduction">Federal reforms</h1>
 
 <p class="case_studies_intro-para">The federal government reforms laws and regulations by enacting new legislation and proposing new rules to implement the legislation. Reforms can stem from government oversight organizations’ recommendations, including from both DOI’s Office of Inspector General and the Government Accountability Office. Below are reforms following the Deep Water Horizon oil spill, recent findings from government oversight organizations, and proposed rules.</p>
 

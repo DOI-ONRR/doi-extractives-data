@@ -63,7 +63,7 @@ permalink: /explore/federal-revenue-by-location/
               {% endfor %}
             </optgroup>
             <optgroup label="Offshore Areas">
-              {% for area in site.data.offshore_areas %}
+              {% for area in site.data.offshore_regions %}
               <option value="{{ area.id }}">{{ area.name }}</option>
               {% endfor %}
             </optgroup>
@@ -111,7 +111,8 @@ permalink: /explore/federal-revenue-by-location/
           <svg is="eiti-map" id="US-map" class="region-map" simplify="1e-2"
             preserveAspectRatio="xMidYMid meet"
             projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/">
-            <g class="offshore areas" data-url="offshore-simple.json"
+            <g class="offshore areas" data-url="offshore-regions.json"
+              data-object="regions"
               data-id="'US-' + id"
               data-href="'#?region=' + id"
               data-title="properties.name"
@@ -167,25 +168,27 @@ permalink: /explore/federal-revenue-by-location/
       </section>
       {% endfor %}
 
-      {% for region in site.data.offshore_areas %}
+      {% for region in site.data.offshore_regions %}
       <section id="{{ region.id }}" class="region offshore">
 
         <svg is="eiti-map" id="{{ region.id }}-map" class="region-map" simplify="1e-2"
           preserveAspectRatio="xMidYMid meet"
-          projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/" zoom-to="{{ region.id }}">
-          <g class="offshore areas" data-url="offshore-simple.json"
+          projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/">
+          <g class="offshore areas" data-url="offshore-regions.json"
+            data-object="{{ region.id }}"
             data-title="properties.name"
-            data-filter="id === '{{ region.id }}'"
             data-mesh="true">
           </g>
         </svg>
 
         <table class="subregions">
           <thead class="region-header"></thead>
+          <tbody></tbody>
         </table>
 
       </section>
       {% endfor %}
+
 
     </div>
   </section>
@@ -197,6 +200,9 @@ permalink: /explore/federal-revenue-by-location/
   eiti.data.REGION_ID_NAME = {
     {% for state in site.data.states %}
     '{{ state.id }}': '{{ state.name }}',
+    {% endfor %}
+    {% for area in site.data.offshore_regions %}
+    '{{ area.id }}': '{{ area.name }}',
     {% endfor %}
     {% for area in site.data.offshore_areas %}
     '{{ area.id }}': '{{ area.name }}',

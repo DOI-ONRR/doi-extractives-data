@@ -20,6 +20,8 @@
       // init OpenListNav Properties
       this.active = window.location.hash || '#intro';
       this.navItems = document.querySelectorAll('[data-nav-item]');
+      this.navSelect = $('[data-nav-options]');
+      this.navIsSelect = !!this.navSelect.length;
       this.navHeaders = document.querySelectorAll('[data-nav-header]');
       this.scrollTop = {
         current: getScrollTop(),
@@ -59,48 +61,57 @@
       this.addActive(el, name);
     };
 
-
+    OpenListNav.prototype.updateSelectField = function(newValue) {
+      if (newValue){
+        return this.navSelect.val(newValue);
+      }
+    };
 
     OpenListNav.prototype.registerEventHandlers = function(){
       var self = this;
-      for (var i = 0; i < this.navItems.length; i++) {
-        var item = this.navItems[i];
-        item.addEventListener('click', function () {
-          self.update(this);
-        });
+      if (!this.navIsSelect) {
+        for (var i = 0; i < this.navItems.length; i++) {
+          var item = this.navItems[i];
+          item.addEventListener('click', function () {
+            self.update(this);
+          });
+        }
       }
 
       window.addEventListener('scroll', function() {
         self.updateScrollTop();
+        // TODO: throttle
         self.detectNavChange();
       });
 
       window.addEventListener('resize', function(){
+        // TODO: throttle
         self.detectNavChange();
       });
 
     };
 
+    OpenListNav.prototype.changeHandler = function(selector) {
+      window.location.hash = selector.value;
+    };
+
+
     OpenListNav.prototype.detectNavChange = function(){
 
-      function reverseH(navHeaders) {
-        var newHeaders = [];
-        for (var i = navHeaders.length - 1; i >= 0; i--) {
-          newHeaders.push(navHeaders[i]);
-        }
-        return newHeaders;
-      }
-
-      var navHeaders = (this.scrollTop.direction === 'up')
-        ? reverseH(this.navHeaders)
-        : this.navHeaders;
-
       var self = this;
-      Array.prototype.forEach.call(navHeaders, function(header){
+
+      // initialize nav status as not updated
+      var updated = false;
+
+      Array.prototype.forEach.call(this.navHeaders, function(header){
 
         var inViewPort = isElementInViewport(header);
-        if (inViewPort) {
+        if (inViewPort && !self.navIsSelect && !updated) {
           self.update(null, header.name);
+          updated = true;
+        } else if(inViewPort && self.navIsSelect && !updated) {
+          self.updateSelectField(header.name);
+          updated = true;
         }
       });
     };

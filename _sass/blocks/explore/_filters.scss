@@ -136,10 +136,11 @@
   }
 
   &.filter-description_closed {
+    display: none;
     margin-bottom: 0;
 
-    &[aria-expanded=true] {
-      display: none;
+    &[aria-expanded=false] {
+      display: block;
     }
   }
 

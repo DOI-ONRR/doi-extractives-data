@@ -116,8 +116,6 @@
 
       var props = parseHash();
 
-      initFilters(filters, parseHash.units);
-
       mutateState(function() {
         return new Immutable.Map(props);
       });
@@ -711,7 +709,7 @@
   }
 
   function updateFilterDescription(state) {
-    var desc = root.select('#filter-description');
+    var desc = root.selectAll('[data-filter-description]');
 
     var data = {
       region: REGION_ID_NAME[state.get('region') || 'US'],
@@ -719,9 +717,10 @@
     };
 
     desc.selectAll('[data-key]')
-      .text(function() {
-        return data[this.getAttribute('data-key')];
-      });
+    .text(function() {
+      return data[this.getAttribute('data-key')];
+    });
+
   }
 
   function eventMutator(destProp, sourceKey) {

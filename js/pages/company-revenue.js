@@ -262,7 +262,7 @@
   }
 
   function updateFilterDescription(state) {
-    var desc = root.select('#filter-description');
+    var desc = root.selectAll('[data-filter-description]');
 
     var data = {
       type: state.get('type') || 'All revenue',

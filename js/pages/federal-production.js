@@ -715,7 +715,7 @@
         d.Commodity = lookup[withoutUnits] || lookup[firstWord];
         if (!d.Commodity) {
           d.Commodity = 'Other';
-          console.log('other:', product, [withoutUnits, firstWord]);
+          // console.log('other:', product, [withoutUnits, firstWord]);
         }
       };
     })();

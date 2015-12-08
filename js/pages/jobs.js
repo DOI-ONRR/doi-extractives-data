@@ -180,7 +180,6 @@
       }
 
       var total = d3.sum(data, getter(fields.value));
-      total = Math.floor(total);
       header
         .datum({
           value: total,

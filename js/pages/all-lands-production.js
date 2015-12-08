@@ -217,7 +217,7 @@
 
       header
         .datum({
-          value: Math.floor(total),
+          value: total,
           properties: {
             name: 'Total'
           }

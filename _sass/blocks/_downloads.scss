@@ -13,3 +13,30 @@
   margin-top: $base-padding-jumbo;
   padding-bottom: $base-padding-lite;
 }
+
+.downloads-download_links-intro {
+  margin-bottom: 0;
+}
+
+.downloads-download_links {
+  a {
+    font-size: 1rem;
+    font-weight: $weight-book;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+
+  li {
+    margin-left: $base-padding-lite;
+  }
+}
+
+.downloads-docs {
+  span {
+    font-weight: $weight-book;
+  }
+}

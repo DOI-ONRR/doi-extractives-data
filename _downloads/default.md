@@ -30,9 +30,9 @@ permalink: /downloads/
         </a>
         <a href="{{site.baseurl}}/downloads/federal_revenue_onshore_acct-year_FY04-14_2015-11-20.xlsx" class="button-tertiary">
           <icon class="icon-cloud icon-padded"></icon>Download onshore dataset, FY (xlsx, 1.1 MB)
-        </a>
-        <a href="#" class="button-tertiary">
-          <i class="fa fa-file-text-o u-padding-right"></i>Documentation coming soon
+        </a><br>
+        <a href="/downloads/federal-revenue-by-location/" class="button-tertiary">
+          <i class="fa fa-file-text-o u-padding-right"></i>Documentation
         </a>
       </li>
 
@@ -54,7 +54,7 @@ permalink: /downloads/
           <icon class="icon-cloud icon-padded"></icon>Download full dataset, docs included (xlsx, 39 KB)
         </a>
         <a href="{{site.baseurl}}/downloads/reconciliation/" class="button-tertiary">
-          <icon class="icon-cloud icon-padded"></icon>Documentation
+          <icon class="fa fa-file-text-o u-padding-right"></icon>Documentation
         </a>
       </li>
 

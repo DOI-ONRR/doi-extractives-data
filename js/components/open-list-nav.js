@@ -114,7 +114,7 @@
         if (inViewPort && !self.navIsSelect) {
           self.update(null, header.name);
         } else if(inViewPort && self.navIsSelect) {
-          self.updateSelectField(header.name)
+          self.updateSelectField(header.name);
         }
       });
     };

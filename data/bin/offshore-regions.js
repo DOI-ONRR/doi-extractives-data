@@ -6,14 +6,15 @@ if (options.help) {
 }
 
 var fs = require('fs');
-var topojson = require('topojson');
+var topojson = require('topojson'); // jshint ignore:line
 var topojsonOptions = require('../../lib/topojson-options')();
 
 var args = options._;
 
 fs.readFile(args[0] || '/dev/stdin', function(error, buffer) {
   if (error) {
-    return console.error('error:', error);
+    console.error('error:', error);
+    process.exit(1);
   }
 
   var topology = JSON.parse(buffer.toString());
@@ -38,7 +39,10 @@ fs.readFile(args[0] || '/dev/stdin', function(error, buffer) {
 
   var out = topojson.topology(objects, topojsonOptions);
   fs.writeFile(args[1] || '/dev/stdout', JSON.stringify(out), function(error) {
-    if (error) console.error(error);
+    if (error) {
+      console.error(error);
+      process.exit(1);
+    }
   });
 
 });

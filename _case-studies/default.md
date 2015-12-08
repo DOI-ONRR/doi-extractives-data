@@ -15,16 +15,6 @@ nav_items:
     title: Data
 ---
 
-<!-- <h3 class="case_studies_content-icon">
-  <i class="icon-oil"></i>
-  <i class="icon-gas"></i>
-  <i class="icon-coal"></i>
-  <i class="icon-gold"></i>
-  <i class="icon-copper"></i>
-  <i class="icon-iron"></i>
-  <a name="intro" class="case_studies_content-heading js-cs_section">Six commodities</a>
-</h3> -->
-
 <h1 class="case_studies_intro-heading">How do extractive industries impact communities like mine?</h1>
 
 <p class="case_studies_intro-para">In some communities, extractive industries play a much larger role than in others. These narratives provide  snapshots into twelve communities that, over the last decade, have led in production of one of six resources: iron, copper, gold, coal, oil, and natural gas.</p>

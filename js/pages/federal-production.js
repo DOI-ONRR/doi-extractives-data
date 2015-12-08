@@ -255,19 +255,21 @@
           f.value = dataByFeatureId[id];
         });
 
-        var withheld = data.filter(function(d) {
-          return d[fields.region] === 'Withheld';
-        });
-
-        if (withheld.length) {
-          console.log('got %d withheld rows:', withheld);
-          features.push({
-            id: 'W',
-            value: rollup(withheld),
-            properties: {
-              name: '(Withheld)'
-            }
+        if (state.get('product')) {
+          var withheld = data.filter(function(d) {
+            return d[fields.region] === 'Withheld';
           });
+
+          if (withheld.length) {
+            console.log('got %d withheld rows:', withheld);
+            features.push({
+              id: 'W',
+              value: rollup(withheld),
+              properties: {
+                name: '(Withheld)'
+              }
+            });
+          }
         }
 
         var value = getter('value');

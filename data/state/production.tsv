@@ -22,6 +22,7 @@ Year	State	Commodity	Product	Volume
 2009	TX		Gas (mcf)	23532176.31
 2006	KS		Oil (bbl)	444652.33
 2013	KS		Oil (bbl)	199639.80
+2013	Withheld		Zinc Concentrate (tons)	0.61
 2010	MS		Oil (bbl)	239546.28
 2009	CA		Oil (bbl)	14033417.20
 2008	TX		Oil (bbl)	308418.95
@@ -31,6 +32,7 @@ Year	State	Commodity	Product	Volume
 2014	CA		Gas (mcf)	12767377.64
 2011	TX		Oil (bbl)	292551.01
 2007	WY		Oil (bbl)	33058880.24
+2013	Withheld		Gold and Silver Products (oz)	1.00
 2009	MS		Oil (bbl)	235696.17
 2014	AR		Oil (bbl)	1.02
 2013	CA		Gas (mcf)	12360114.44
@@ -90,6 +92,8 @@ Year	State	Commodity	Product	Volume
 2008	MO		Zinc Concentrate (tons)	45452.00
 2006	AL		Oil (bbl)	74847.98
 2006	CA		Gas (mcf)	17147134.03
+2008	Withheld		Gold and Silver Products (oz)	7.00
+2009	Withheld		Gold Products (ounces)	7.00
 2009	OK		Oil (bbl)	211489.98
 2008	OK		Oil (bbl)	184513.08
 2009	AL		Oil (bbl)	32909.06
@@ -105,6 +109,7 @@ Year	State	Commodity	Product	Volume
 2008	AL		Oil (bbl)	44460.02
 2009	MI		Oil (bbl)	28092.55
 2009	AK		Gas (mcf)	28155123.55
+2011	Withheld		Gold Products (ounces)	10.00
 2011	CO		Oil (bbl)	4153295.89
 2006	TX		Gas (mcf)	25387514.52
 2010	KY		Gas (mcf)	191033.87
@@ -144,6 +149,7 @@ Year	State	Commodity	Product	Volume
 2008	NE		Gas (mcf)	5351.80
 2007	MT		Gas (mcf)	38644628.83
 2009	OK		Gas (mcf)	15757784.10
+2011	Withheld		Gold and Silver Products (oz)	23.00
 2006	AR		Oil (bbl)	23.47
 2010	AL		Oil (bbl)	35789.10
 2007	NE		Gas (mcf)	5970.75
@@ -164,12 +170,15 @@ Year	State	Commodity	Product	Volume
 2009	MT		Oil (bbl)	3892916.27
 2006	OK		Gas (mcf)	14191890.48
 2005	OK		Gas (mcf)	14609535.17
+2007	Withheld		Gold and Silver Products (oz)	40.00
 2005	CA		Gas (mcf)	18044542.02
 2012	KY		Gas (mcf)	145702.53
 2012	UT		Oil (bbl)	11192959.82
 2010	MT		Oil (bbl)	3618482.47
+2005	Withheld		Gold and Silver Products (oz)	43.00
 2014	KY		Gas (mcf)	126830.01
 2007	UT		Oil (bbl)	8345662.59
+2006	Withheld		Zinc Concentrate (tons)	47.00
 2009	UT		Oil (bbl)	10973361.42
 2013	KY		Gas (mcf)	131149.21
 2007	KY		Gas (mcf)	207549.45
@@ -186,8 +195,12 @@ Year	State	Commodity	Product	Volume
 2011	MO		Zinc Concentrate (tons)	43763.00
 2010	MO		Copper Concentrate (tons)	8973.99
 2012	MO		Zinc Concentrate (tons)	32595.01
+2009	Withheld		Zinc Concentrate (tons)	68.00
 2011	WY		Oil (bbl)	32408833.51
+2008	Withheld		Zinc Concentrate (tons)	72.00
+2006	Withheld		Gold and Silver Products (oz)	74.00
 2011	UT		Oil (bbl)	10661297.62
+2011	Withheld		Zinc Concentrate (tons)	75.00
 2006	FL		Oil (bbl)	77.00
 2006	LA		Gas (mcf)	31498176.48
 2005	LA		Gas (mcf)	32362046.29
@@ -200,11 +213,15 @@ Year	State	Commodity	Product	Volume
 2013	MO		Copper Concentrate (tons)	15448.00
 2014	OH		Gas (mcf)	362881.04
 2014	UT		Oil (bbl)	12256150.74
+2014	Withheld		Zinc Concentrate (tons)	115.30
 2008	CA		Gas (mcf)	13696926.12
 2008	MI		Oil (bbl)	50167.79
+2010	Withheld		Gold and Silver Products (oz)	122.00
 2014	MT		Oil (bbl)	3895056.31
 2011	ND		Oil (bbl)	12534765.65
+2007	Withheld		Zinc Concentrate (tons)	128.00
 2007	MS		Gas (mcf)	651005.02
+2013	Withheld		Copper Concentrate (tons)	129.00
 2007	KY		Oil (bbl)	13104.21
 2006	MO		Lead Concentrate (tons)	223123.00
 2010	CA		Gas (mcf)	11203439.43
@@ -226,7 +243,9 @@ Year	State	Commodity	Product	Volume
 2012	WY		Oil (bbl)	33168536.30
 2013	OH		Oil (bbl)	15038.06
 2010	OH		Oil (bbl)	17730.30
+2009	Withheld		Gold and Silver Products (oz)	217.00
 2008	MS		Gas (mcf)	690703.30
+2008	Withheld		Copper Concentrate (tons)	222.00
 2009	OH		Oil (bbl)	18826.17
 2011	NY		Gas (mcf)	13067.10
 2010	OK		Gas (mcf)	15230391.63
@@ -239,6 +258,7 @@ Year	State	Commodity	Product	Volume
 2011	MO		Copper Concentrate (tons)	8386.01
 2008	OH		Oil (bbl)	21026.07
 2006	OH		Oil (bbl)	20346.29
+2014	Withheld		Copper Concentrate (tons)	278.00
 2010	NY		Gas (mcf)	12542.22
 2011	OH		Oil (bbl)	16926.75
 2005	OH		Oil (bbl)	21075.21
@@ -268,7 +288,9 @@ Year	State	Commodity	Product	Volume
 2005	KY		Oil (bbl)	12975.51
 2006	WY		Gas (mcf)	1491448824.34
 2013	NM		Oil (bbl)	52650332.97
+2010	Withheld		Lead Concentrate (tons)	518.00
 2011	MT		Gas (mcf)	25088380.62
+2006	Withheld		Copper Concentrate (tons)	519.00
 2011	MO		Lead Concentrate (tons)	176582.00
 2008	NM		Oil (bbl)	25756010.39
 2010	MO		Lead Concentrate (tons)	184361.00
@@ -295,13 +317,16 @@ Year	State	Commodity	Product	Volume
 2006	IL		Gas (mcf)	8211.00
 2007	IL		Gas (mcf)	8079.00
 2012	OH		Gas (mcf)	392755.09
+2011	Withheld		Copper Concentrate (tons)	729.00
 2010	MT		Gas (mcf)	31081702.95
+2005	Withheld		Copper Concentrate (tons)	749.00
 2010	MI		Gas (mcf)	2199776.08
 2009	MO		Copper Concentrate (tons)	8726.01
 2006	MS		Gas (mcf)	696287.08
 2011	CA		Oil (bbl)	14918596.60
 2014	WV		Gas (mcf)	172623.39
 2007	UT		Gas (mcf)	240998482.46
+2013	Withheld		Lead Concentrate (tons)	828.53
 2008	ND		Gas (mcf)	10856785.36
 2011	OH		Gas (mcf)	442443.19
 2014	KY		Oil (bbl)	10786.28
@@ -312,11 +337,16 @@ Year	State	Commodity	Product	Volume
 2013	OH		Gas (mcf)	394151.80
 2011	ND		Gas (mcf)	13996029.15
 2005	ND		Gas (mcf)	7292825.18
+2014	Withheld		Quartz Crystal (tickets/pounds)	960.00
 2014	MS		Gas (mcf)	379238.63
 2012	KY		Oil (bbl)	11835.46
 2008	MT		Gas (mcf)	39425890.54
 2008	AL		Gas (mcf)	22960756.31
+2009	Withheld		Copper Concentrate (tons)	977.00
 2013	WV		Gas (mcf)	197982.08
+2014	Withheld		Lead Concentrate (tons)	987.30
+2008	Withheld		Lead Concentrate (tons)	988.00
+2010	Withheld		Quartz Crystal (tickets/pounds)	1000.00
 2005	NY		Gas (mcf)	18178.28
 2005	WY		Gas (mcf)	1363453405.16
 2011	KY		Oil (bbl)	12407.67
@@ -327,6 +357,8 @@ Year	State	Commodity	Product	Volume
 2013	KY		Oil (bbl)	11748.53
 2014	PA		Oil (bbl)	1158.00
 2011	WV		Gas (mcf)	432472.16
+2010	Withheld		Copper Concentrate (tons)	1176.00
+2006	Withheld		Lead Concentrate (tons)	1233.00
 2012	AR		Gas (mcf)	17037008.16
 2005	NM		Oil (bbl)	25723177.71
 2010	WV		Gas (mcf)	379407.67
@@ -337,16 +369,21 @@ Year	State	Commodity	Product	Volume
 2007	MO		Copper Concentrate (tons)	10960.00
 2009	WV		Gas (mcf)	467668.53
 2013	PA		Oil (bbl)	1498.00
+2012	Withheld		Copper Concentrate (tons)	1509.67
 2008	WV		Gas (mcf)	596922.31
 2005	OH		Gas (mcf)	544842.08
+2011	Withheld		Lead Concentrate (tons)	1562.00
 2009	OH		Gas (mcf)	455499.14
 2013	AK		Oil (bbl)	902649.00
+2009	Withheld		Quartz Crystal (tickets/pounds)	1595.00
+2007	Withheld		Lead Concentrate (tons)	1620.00
 2012	UT		Gas (mcf)	327420788.95
 2013	SD		Gas (mcf)	2707941.41
 2007	AL		Gas (mcf)	22393740.75
 2008	OH		Gas (mcf)	505371.23
 2006	AR		Gas (mcf)	9921922.56
 2013	NV		Geothermal - Electrical Generation, Kilowatt Hours	1440832541.92
+2007	Withheld		Copper Concentrate (tons)	1702.00
 2007	WV		Gas (mcf)	519848.41
 2012	PA		Oil (bbl)	1769.00
 2006	WV		Gas (mcf)	574300.94
@@ -356,9 +393,11 @@ Year	State	Commodity	Product	Volume
 2006	OH		Gas (mcf)	548407.77
 2010	WY		Gas (mcf)	1936990584.88
 2011	AR		Gas (mcf)	18507184.00
+2009	Withheld		Lead Concentrate (tons)	2053.00
 2014	CA		Geothermal - sulfur	2089.89
 2009	ND		Gas (mcf)	9982672.53
 2009	AK		Oil (bbl)	203120.00
+2008	Withheld		Other Coal Products (tons)	2232.00
 2010	ND		Gas (mcf)	11158131.64
 2014	NV		Oil (bbl)	311307.00
 2006	UT		Gas (mcf)	209502233.18
@@ -367,6 +406,7 @@ Year	State	Commodity	Product	Volume
 2007	AR		Quartz Crystal (tickets/pounds)	2400.00
 2005	WY		Oil (bbl)	30506323.70
 2013	CA		Geothermal - sulfur	2448.04
+2012	Withheld		Lead Concentrate (tons)	2470.00
 2014	ND		Gas (mcf)	28604214.21
 2005	AL		Gas (mcf)	28415350.89
 2011	PA		Oil (bbl)	2551.00
@@ -436,6 +476,7 @@ Year	State	Commodity	Product	Volume
 2006	SD		Gas (mcf)	1529465.52
 2006	PA		Gas (mcf)	15449.27
 2010	PA		Oil (bbl)	5986.00
+2009	Withheld		Other Coal Products (tons)	6060.00
 2005	AR		Gas (mcf)	8785746.16
 2008	SD		Gas (mcf)	1718266.43
 2009	PA		Oil (bbl)	6310.00
@@ -446,15 +487,21 @@ Year	State	Commodity	Product	Volume
 2009	KS		Gas (mcf)	7369921.66
 2007	PA		Gas (mcf)	19912.28
 2011	NM		Oil (bbl)	35643027.27
+2009	Withheld		Clay (tons)	7021.00
+2006	Withheld		Other Coal Products (tons)	7056.00
 2008	KS		Gas (mcf)	7908716.02
 2007	KS		Gas (mcf)	8054335.65
+2012	Withheld		Other Coal Products (tons)	7316.00
 2006	KS		Gas (mcf)	8796164.40
 2014	AK		Oil (bbl)	894026.00
 2014	IL		Oil (bbl)	19078.99
 2005	UT		Gilsonite (tons)	8041.00
 2005	AR		Quartz Crystal (tickets/pounds)	8065.00
+2010	Withheld		Other Coal Products (tons)	8100.00
+2005	Withheld		Other Potassium Products (tons)	8213.00
 2005	KS		Gas (mcf)	9484098.46
 2012	SD		Gas (mcf)	2527277.70
+2011	Withheld		Other Coal Products (tons)	8496.00
 2011	SD		Gas (mcf)	1879133.59
 2013	IL		Oil (bbl)	26276.28
 2006	UT		Gilsonite (tons)	8776.00
@@ -463,8 +510,10 @@ Year	State	Commodity	Product	Volume
 2011	IL		Oil (bbl)	27142.34
 2007	NM		Gas (mcf)	975632728.21
 2014	MO		Lead Concentrate (tons)	143271.71
+2013	Withheld		Other Coal Products (tons)	10666.00
 2007	UT		Gilsonite (tons)	10879.00
 2014	NV		Geothermal - Electrical Generation, Kilowatt Hours	1541014028.29
+2008	Withheld		Quartz Crystal (tickets/pounds)	11300.00
 2010	IL		Oil (bbl)	31995.34
 2009	IL		Gas (mcf)	12212.72
 2005	IL		Oil (bbl)	34905.89
@@ -479,9 +528,11 @@ Year	State	Commodity	Product	Volume
 2013	IL		Gas (mcf)	14384.77
 2012	IL		Gas (mcf)	14460.96
 2013	NM		Gas (mcf)	779441300.88
+2006	Withheld		Potash (tons)	14913.00
 2008	IL		Oil (bbl)	34385.51
 2009	SD		Gas (mcf)	1882514.90
 2013	SD		Oil (bbl)	202589.16
+2010	Withheld		Clay (tons)	15627.00
 2006	IL		Oil (bbl)	37056.04
 2008	UT		Gilsonite (tons)	16957.00
 2010	VA		Gas (mcf)	189294.27
@@ -505,17 +556,31 @@ Year	State	Commodity	Product	Volume
 2012	VA		Gas (mcf)	173948.77
 2006	SD		Oil (bbl)	178907.43
 2011	VA		Gas (mcf)	181631.77
+2011	Withheld		Clay (tons)	21891.00
+2011	Withheld		Gilsonite (tons)	22568.00
+2014	Withheld		Hardrock Products (tons)	22598.00
 2013	ND		Oil (bbl)	19185120.47
 2008	NM		Gas (mcf)	926364691.39
+2013	Withheld		Gilsonite (tons)	24919.00
+2008	Withheld		Clay (tons)	25139.00
 2005	SD		Oil (bbl)	173641.22
 2014	IL		Gas (mcf)	26222.65
 2012	ND		Oil (bbl)	16281618.36
 2010	UT		Gilsonite (tons)	28082.00
+2013	Withheld		Clay (tons)	28333.00
 2007	MO		Lead Concentrate (tons)	221198.00
+2014	Withheld		Gilsonite (tons)	28936.00
+2012	Withheld		Clay (tons)	29990.00
+2009	Withheld		Borate Products (ton)	31284.00
 2010	NM		Gas (mcf)	840725100.20
+2007	Withheld		Borate Products (ton)	32736.00
+2006	Withheld		Borate Products (ton)	33106.00
+2008	Withheld		Borate Products (ton)	33520.00
 2014	UT		Clay (tons)	33520.00
+2005	Withheld		Borate Products (ton)	33706.00
 2011	WY		Sodium Bi-Carbonate (tons)	34297.00
 2012	UT		Gilsonite (tons)	35927.00
+2005	Withheld		Hardrock Products (tons)	36756.00
 2012	NV		Oil (bbl)	356297.00
 2007	NV		Oil (bbl)	405154.00
 2013	NV		Oil (bbl)	330809.00
@@ -523,16 +588,33 @@ Year	State	Commodity	Product	Volume
 2011	NV		Oil (bbl)	405174.00
 2008	NV		Oil (bbl)	435454.00
 2005	NV		Oil (bbl)	444146.00
+2007	Withheld		Brine Products (tons)	46600.09
 2010	WY		Sodium Bi-Carbonate (tons)	46904.00
+2008	Withheld		Sodium Bi-Carbonate (tons)	51007.00
+2014	Withheld		Brine Products (tons)	51291.00
+2005	Withheld		Brine Products (tons)	52765.21
+2009	Withheld		Brine Products (tons)	55478.00
 2010	NV		Oil (bbl)	427527.00
+2010	Withheld		Phosphate Raw Ore (tons)	59628.00
+2013	Withheld		Brine Products (tons)	61077.00
 2005	WY		Purge Liquor (tons- equivalent)	61925.00
+2005	Withheld		Clay (tons)	62138.00
 2006	NM		Brine Barrels (barrels)	66862.00
+2007	Withheld		Clay (tons)	67014.00
+2010	Withheld		Brine Products (tons)	68327.81
+2006	Withheld		Hardrock Products (tons)	68941.00
 2012	WY		Sodium Bi-Carbonate (tons)	69262.00
 2013	NM		Geothermal - Electrical Generation, Kilowatt Hours	69407.00
 2006	WY		Purge Liquor (tons- equivalent)	69814.00
+2012	Withheld		Brine Products (tons)	70061.00
 2013	WY		Sodium Bi-Carbonate (tons)	71539.00
+2013	Withheld		Hardrock Products (tons)	71696.00
+2011	Withheld		Brine Products (tons)	73522.00
 2012	WY		Purge Liquor (tons- equivalent)	73594.00
+2008	Withheld		Brine Products (tons)	77591.21
 2009	NV		Oil (bbl)	454522.00
+2006	Withheld		Brine Products (tons)	84052.34
+2006	Withheld		Clay (tons)	84876.00
 2013	WY		Purge Liquor (tons- equivalent)	88213.00
 2011	WY		Purge Liquor (tons- equivalent)	88407.00
 2014	WY		Purge Liquor (tons- equivalent)	91878.00
@@ -541,80 +623,153 @@ Year	State	Commodity	Product	Volume
 2010	WY		Purge Liquor (tons- equivalent)	104405.00
 2014	WY		Sodium Bi-Carbonate (tons)	107022.00
 2009	NM		Muriate Of Potash-Standard (tons)	112839.00
+2013	Withheld		Phosphate Raw Ore (tons)	113187.00
+2005	Withheld		Sodium Bi-Carbonate (tons)	114001.00
 2008	WY		Purge Liquor (tons- equivalent)	116333.00
 2009	WY		Purge Liquor (tons- equivalent)	118021.00
 2013	WY		Sodium Sesquicarbonate	121115.00
 2014	NM		Muriate Of Potash-Standard (tons)	127433.00
+2006	Withheld		Sodium Bi-Carbonate (tons)	130788.00
+2010	Withheld		Borate Products (ton)	130833.00
 2013	NM		Muriate Of Potash-Standard (tons)	132492.00
+2010	Withheld		Sodium Bi-Carbonate (tons)	133833.00
+2009	Withheld		Sodium Bi-Carbonate (tons)	134148.00
+2012	Withheld		Hardrock Products (tons)	137956.00
 2009	WY		Trona Ore (tons)	139699.00
+2014	Withheld		Other Coal Products (tons)	142273.00
+2007	Withheld		Hardrock Products (tons)	142378.00
 2012	NM		Muriate Of Potash-Standard (tons)	146453.00
+2012	Withheld		Borate Products (ton)	146943.00
+2012	Withheld		Sodium Bi-Carbonate (tons)	147177.00
+2011	Withheld		Sodium Bi-Carbonate (tons)	148493.00
+2013	Withheld		Sodium Bi-Carbonate (tons)	154740.00
 2010	NM		Muriate Of Potash-Standard (tons)	155054.00
+2013	Withheld		Borate Products (ton)	156530.00
+2011	Withheld		Borate Products (ton)	157392.00
+2010	Withheld		Hardrock Products (tons)	158266.00
+2012	Withheld		Other Potassium Products (tons)	158953.00
+2007	Withheld		Sodium Bi-Carbonate (tons)	161456.00
+2014	Withheld		Borate Products (ton)	162731.00
 2011	NM		Muriate Of Potash-Standard (tons)	170449.00
+2013	Withheld		Other Potassium Products (tons)	171599.00
+2011	Withheld		Hardrock Products (tons)	174574.00
 2008	NM		Muriate Of Potash-Standard (tons)	177001.00
 2009	CA		Geothermal - Direct Utilization, Millions of BTUs	179170.56
+2009	Withheld		Hardrock Products (tons)	182432.00
+2008	Withheld		Hardrock Products (tons)	187627.00
+2014	Withheld		Sodium Bi-Carbonate (tons)	201462.00
 2005	CA		Geothermal - Electrical Generation, Other	204030.26
 2007	CA		Geothermal - Electrical Generation, Other	207155.08
+2014	Withheld		Potash (tons)	208401.00
 2008	CO		Coal (tons)	21138286.00
 2007	CA		Geothermal - Direct Utilization, Millions of BTUs	217499.73
 2008	CA		Geothermal - Direct Utilization, Millions of BTUs	219089.01
+2011	Withheld		Phosphate Raw Ore (tons)	221187.00
 2010	CA		Geothermal - Electrical Generation, Other	223938.12
 2010	CA		Geothermal - Direct Utilization, Millions of BTUs	224486.30
 2006	CA		Geothermal - Electrical Generation, Other	227562.00
 2011	CA		Geothermal - Direct Utilization, Millions of BTUs	228010.63
+2005	Withheld		Other Sodium Products (tons)	231283.00
+2007	Withheld		Other Potassium Products (tons)	231617.00
 2009	NM		Muriate Of Potash-Granular (tons)	233928.00
 2009	CA		Geothermal - Electrical Generation, Other	233953.69
 2010	AK		Oil (bbl)	237163.00
 2008	CA		Geothermal - Electrical Generation, Other	237415.56
+2006	Withheld		Other Potassium Products (tons)	237500.00
 2006	CA		Geothermal - Direct Utilization, Millions of BTUs	238146.66
+2009	Withheld		Other Sodium Products (tons)	239828.00
 2011	AK		Oil (bbl)	241755.00
 2014	CA		Geothermal - Direct Utilization, Millions of BTUs	243504.10
 2007	NM		Muriate Of Potash-Standard (tons)	251708.00
+2012	Withheld		Potash (tons)	254825.00
 2005	CA		Geothermal - Direct Utilization, Millions of BTUs	260242.35
 2006	CO		Coal (tons)	20811927.00
 2012	OK		Coal (tons)	266370.09
+2009	Withheld		Salt (tons)	268721.00
 2012	CA		Geothermal - Direct Utilization, Millions of BTUs	271469.64
 2007	AK		Oil (bbl)	272400.00
 2013	CA		Geothermal - Direct Utilization, Millions of BTUs	276337.16
+2009	Withheld		Potash (tons)	278149.00
+2013	Withheld		Potash (tons)	296669.00
+2013	Withheld		Other Sodium Products (tons)	298010.00
 2008	NM		Salt (tons)	314483.00
 2012	AK		Oil (bbl)	317736.00
+2008	Withheld		Salt (tons)	319856.00
+2008	Withheld		Potash (tons)	326418.00
 2006	NM		Muriate Of Potash-Granular (tons)	327424.00
 2010	ND		Coal (tons)	338404.89
+2012	Withheld		Salt (tons)	340764.00
 2013	NM		Muriate Of Potash-Granular (tons)	342439.00
 2006	AK		Oil (bbl)	343676.00
+2010	Withheld		Potash (tons)	345161.00
+2009	Withheld		Other Potassium Products (tons)	353007.00
+2006	Withheld		Other Sodium Products (tons)	362307.00
 2014	NM		Langbeinite (tons)	363289.00
+2010	Withheld		Salt (tons)	364023.00
 2010	NM		Muriate Of Potash-Granular (tons)	364751.00
+2007	Withheld		Other Sodium Products (tons)	369872.00
+2012	Withheld		Other Sodium Products (tons)	371833.00
 2009	NM		Salt (tons)	372956.00
 2005	AK		Oil (bbl)	390683.00
+2010	Withheld		Other Sodium Products (tons)	393009.00
+2011	Withheld		Potash (tons)	398067.00
 2008	NM		Muriate Of Potash-Granular (tons)	398253.00
+2010	Withheld		Other Potassium Products (tons)	400303.00
 2012	NM		Salt (tons)	409345.00
+2005	Withheld		Salt (tons)	413803.00
 2012	NM		Muriate Of Potash-Granular (tons)	424920.00
 2005	NM		Muriate Of Potash-Granular (tons)	424981.00
 2013	NM		Salt (tons)	425125.00
+2011	Withheld		Salt (tons)	425152.00
+2008	Withheld		Other Sodium Products (tons)	428533.00
 2007	NM		Muriate Of Potash-Granular (tons)	429446.00
 2010	NM		Salt (tons)	434018.00
 2011	NM		Salt (tons)	439367.00
+2014	Withheld		Salt (tons)	440428.00
+2005	Withheld		Potash (tons)	440674.00
+2007	Withheld		Potash (tons)	448032.00
+2014	Withheld		Other Potassium Products (tons)	449740.00
 2011	NM		Muriate Of Potash-Granular (tons)	454506.00
 2014	NM		Salt (tons)	457529.00
 2014	NM		Muriate Of Potash-Granular (tons)	467320.00
+2013	Withheld		Salt (tons)	468941.00
 2006	NM		Muriate Of Potash-Standard (tons)	469892.00
+2011	Withheld		Other Sodium Products (tons)	471675.00
 2010	UT		Coal (tons)	6219884.00
 2005	NM		Muriate Of Potash-Standard (tons)	476837.00
+2014	Withheld		Other Sodium Products (tons)	488493.00
 2006	NM		Potash (tons)	492294.00
 2014	OK		Coal (tons)	495798.61
+2006	Withheld		Salt (tons)	512832.00
 2010	OK		Coal (tons)	516449.88
+2011	Withheld		Other Potassium Products (tons)	526581.00
+2008	Withheld		Other Potassium Products (tons)	539195.00
 2011	OK		Coal (tons)	544641.29
+2005	Withheld		Phosphate Raw Ore (tons)	550626.00
 2005	NM		Langbeinite (tons)	551675.00
 2009	OK		Coal (tons)	566793.39
 2013	OK		Coal (tons)	598960.68
+2009	Withheld		Soda Ash (tons)	627055.00
 2009	NM		Langbeinite (tons)	648073.00
 2008	OK		Coal (tons)	664925.00
 2014	CA		Geothermal - Electrical Generation, Other	691756.00
+2007	Withheld		Salt (tons)	705887.00
 2013	NM		Langbeinite (tons)	707765.00
+2010	Withheld		Soda Ash (tons)	712983.00
 2005	OK		Coal (tons)	714616.00
 2006	OK		Coal (tons)	725099.00
 2006	NM		Langbeinite (tons)	734349.00
+2012	Withheld		Soda Ash (tons)	738199.00
+2012	Withheld		Phosphate Raw Ore (tons)	741563.00
 2011	NM		Langbeinite (tons)	745606.00
+2008	Withheld		Soda Ash (tons)	756762.00
+2007	Withheld		Soda Ash (tons)	758283.00
+2011	Withheld		Soda Ash (tons)	773071.00
+2013	Withheld		Soda Ash (tons)	795044.00
+2014	Withheld		Soda Ash (tons)	808402.00
+2006	Withheld		Soda Ash (tons)	817601.00
 2010	NM		Langbeinite (tons)	830346.00
+2005	Withheld		Soda Ash (tons)	831497.00
 2009	UT		Coal (tons)	6683745.00
 2012	NM		Langbeinite (tons)	859349.00
 2007	OK		Coal (tons)	890762.00
@@ -690,6 +845,7 @@ Year	State	Commodity	Product	Volume
 2012	AK		Gas (mcf)	14393798.02
 2014	AK		Gas (mcf)	15358615.49
 2014	MT		Coal (tons)	15703781.00
+2011	Withheld		Coal (tons)	15843973.71
 2012	MT		Coal (tons)	16004122.00
 2013	MT		Coal (tons)	16480119.00
 2005	MT		Coal (tons)	16886195.00
@@ -697,20 +853,29 @@ Year	State	Commodity	Product	Volume
 2009	MT		Coal (tons)	17319320.00
 2010	MT		Coal (tons)	17741873.00
 2006	MT		Coal (tons)	18072165.00
+2010	Withheld		Coal (tons)	18396804.24
 2007	MT		Coal (tons)	18777497.00
+2007	Withheld		Coal (tons)	18961860.04
+2009	Withheld		Coal (tons)	19167321.61
 2008	MT		Coal (tons)	19316074.00
+2012	Withheld		Coal (tons)	19320740.91
 2014	CA		Geothermal - Electrical Generation, Thousands of Pounds	45564160.54
 2013	CA		Geothermal - Electrical Generation, Thousands of Pounds	46144621.79
+2008	Withheld		Coal (tons)	20465633.00
 2012	CA		Geothermal - Electrical Generation, Thousands of Pounds	48207755.95
 2009	CA		Geothermal - Electrical Generation, Thousands of Pounds	48517752.31
 2011	CA		Geothermal - Electrical Generation, Thousands of Pounds	48685683.06
 2010	CA		Geothermal - Electrical Generation, Thousands of Pounds	48523236.70
 2008	CA		Geothermal - Electrical Generation, Thousands of Pounds	49867136.34
+2013	Withheld		Coal (tons)	21318188.32
 2007	CA		Geothermal - Electrical Generation, Thousands of Pounds	50375439.62
+2006	Withheld		Coal (tons)	22435709.04
 2010	AK		Gas (mcf)	22767535.95
 2006	CA		Geothermal - Electrical Generation, Thousands of Pounds	53343898.53
 2005	CA		Geothermal - Electrical Generation, Thousands of Pounds	53196738.69
+2005	Withheld		Coal (tons)	24919890.01
 2014	UT		Geothermal - Electrical Generation, Kilowatt Hours	132080000.00
+2014	Withheld		Coal (tons)	34078422.39
 2007	AK		Gas (mcf)	36868361.20
 2006	AK		Gas (mcf)	39875346.01
 2005	AK		Gas (mcf)	42741892.79

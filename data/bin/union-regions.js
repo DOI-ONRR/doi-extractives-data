@@ -83,9 +83,13 @@ async.parallel({
       d.Region = region;
       delete d.Area;
       return d;
-    }).filter(function(d) {
-      return d.Region;
     }));
+
+  if (false) {
+    results = results.filter(function(d) {
+      return d.Region;
+    });
+  }
 
   streamify(results)
     .pipe(tito.createWriteStream(options['of']))

@@ -441,6 +441,7 @@
       .append('span')
         .attr('class', 'label');
 
+    var format = eiti.format.si;
     steps
       .style('border-color', getter('color'))
       .select('.label')
@@ -448,8 +449,8 @@
           return (typeof d.value === 'string')
             ? d.value
             : (i === last)
-              ? formatNumber(d.value[0]) + '+'
-              : formatNumber(d.value[0]);
+              ? format(d.value[0]) + '+'
+              : format(d.value[0]);
         });
   }
 

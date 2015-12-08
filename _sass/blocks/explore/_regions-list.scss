@@ -52,7 +52,14 @@
   tr {
     border: 0;
     border-bottom: 1px solid $neutral-gray;
+    padding-left: $base-padding-lite;
+    padding-right: $base-padding-lite;
     text-align: left;
+  }
+
+  td.value,
+  th.value {
+    text-align: right;
   }
 
   thead {

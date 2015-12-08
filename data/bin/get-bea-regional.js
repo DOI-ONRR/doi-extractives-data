@@ -49,9 +49,10 @@ var fetch = function(params) {
 };
 
 var ALL_INDUSTRY = 1;
+var MINING_INDUSTRY = 6;
 // see <https://gist.github.com/shawnbot/df545e15a400b66bc7b4>
 // for a table of possible industry IDs
-var industryIds = [ALL_INDUSTRY, 6, 7, 8, 9, 10];
+var industryIds = [ALL_INDUSTRY, MINING_INDUSTRY];
 
 var parser = function() {
   return tito.createReadStream('json', {
@@ -110,6 +111,9 @@ async.mapSeries(industryIds, function(id, next) {
   })
   .map(function(entry) {
     return extend(entry.key, entry.value);
+  })
+  .filter(function(d) {
+    return d.Value > 0;
   });
 
   console.warn('got %d rows', result.length);

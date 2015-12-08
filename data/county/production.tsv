@@ -23,6 +23,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2006	KS	Comanche County	20033		Oil (bbl)	0.44
 2013	KS	Comanche County	20033		Oil (bbl)	0.44
 2007	MS	Lawrence County	28077		Oil (bbl)	0.55
+2013	Withheld	Withheld	Withheld		Zinc Concentrate (tons)	0.61
 2013	MS	Jasper County	28061		Oil (bbl)	0.61
 2009	TX	Newton County	48351		Oil (bbl)	0.66
 2010	MS	Lawrence County	28077		Oil (bbl)	0.67
@@ -34,6 +35,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2014	CA	San Benito County	06069		Gas (mcf)	1
 2011	TX	Parker County	48367		Oil (bbl)	1
 2007	WY	Natrona County	56025		Oil (bbl)	1
+2013	Withheld	Withheld	Withheld		Gold and Silver Products (oz)	1
 2009	MS	Lawrence County	28077		Oil (bbl)	1.01
 2014	AR	Columbia County	05027		Oil (bbl)	1.02
 2010	TX	Starr County	48427		Oil (bbl)	1.06
@@ -125,6 +127,8 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2011	OK	Oklahoma County	40109		Oil (bbl)	6.92
 2006	CA	San Benito County	06069		Gas (mcf)	7
 2013	CA	San Benito County	06069		Gas (mcf)	7
+2008	Withheld	Withheld	Withheld		Gold and Silver Products (oz)	7
+2009	Withheld	Withheld	Withheld		Gold Products (ounces)	7
 2009	OK	Oklahoma County	40109		Oil (bbl)	7.04
 2010	CO	Broomfield County	08014		Oil (bbl)	7.09
 2014	TX	Freestone County	48161		Oil (bbl)	7.14
@@ -160,6 +164,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2009	MI	Grand Traverse County	26055		Oil (bbl)	9.73
 2007	MS	Jasper County	28061		Oil (bbl)	9.77
 2009	AK	North Slope Borough	02185		Gas (mcf)	10
+2011	Withheld	Withheld	Withheld		Gold Products (ounces)	10
 2008	MO	Washington County	29221		Zinc Concentrate (tons)	10.33
 2007	OK	Caddo County	40015		Oil (bbl)	10.45
 2013	CO	Kit Carson County	08063		Oil (bbl)	10.52
@@ -267,6 +272,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2012	CO	Delta County	08029		Oil (bbl)	22.87
 2014	LA	Beauregard Parish	22011		Oil (bbl)	22.98
 2009	OK	Creek County	40037		Gas (mcf)	23
+2011	Withheld	Withheld	Withheld		Gold and Silver Products (oz)	23
 2006	TX	Starr County	48427		Oil (bbl)	23.23
 2006	AR	Columbia County	05027		Oil (bbl)	23.47
 2010	AL	Baldwin County	01003		Oil (bbl)	23.62
@@ -346,6 +352,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2011	CO	Gunnison County	08051		Oil (bbl)	39.95
 2005	OK	Creek County	40037		Gas (mcf)	40
 2006	TX	Parker County	48367		Oil (bbl)	40
+2007	Withheld	Withheld	Withheld		Gold and Silver Products (oz)	40
 2010	CO	La Plata County	08067		Oil (bbl)	40.16
 2012	CO	Bent County	08011		Oil (bbl)	40.39
 2014	CO	La Plata County	08067		Oil (bbl)	40.55
@@ -360,6 +367,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2010	MT	Yellowstone County	30111		Oil (bbl)	42.09
 2008	CO	Arapahoe County	08005		Oil (bbl)	42.47
 2013	CA	San Benito County	06069		Oil (bbl)	43
+2005	Withheld	Withheld	Withheld		Gold and Silver Products (oz)	43
 2010	OK	Caddo County	40015		Oil (bbl)	43.42
 2007	CO	Arapahoe County	08005		Gas (mcf)	44.18
 2007	LA	Cameron Parish	22023		Oil (bbl)	44.18
@@ -370,6 +378,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2012	CO	Fremont County	08043		Oil (bbl)	45.98
 2011	LA	Lafourche Parish	22057		Oil (bbl)	46.66
 2006	TX	Wheeler County	48483		Oil (bbl)	46.89
+2006	Withheld	Withheld	Withheld		Zinc Concentrate (tons)	47
 2011	TX	Jasper County	48241		Oil (bbl)	47.41
 2009	UT	Daggett County	49009		Oil (bbl)	47.62
 2006	CO	La Plata County	08067		Oil (bbl)	47.63
@@ -432,6 +441,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2010	MO	Crawford County	29055		Copper Concentrate (tons)	67.13
 2012	MO	Crawford County	29055		Zinc Concentrate (tons)	67.91
 2013	CO	Broomfield County	08014		Oil (bbl)	68
+2009	Withheld	Withheld	Withheld		Zinc Concentrate (tons)	68
 2005	CO	Arapahoe County	08005		Gas (mcf)	68.58
 2005	CO	Arapahoe County	08005		Oil (bbl)	68.58
 2005	TX	Wheeler County	48483		Oil (bbl)	68.58
@@ -439,13 +449,16 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2013	TX	Nueces County	48355		Oil (bbl)	70.03
 2014	TX	Parker County	48367		Oil (bbl)	71
 2011	TX	Freestone County	48161		Oil (bbl)	71.05
+2008	Withheld	Withheld	Withheld		Zinc Concentrate (tons)	72
 2006	CO	Delta County	08029		Oil (bbl)	72.9
 2009	CO	Fremont County	08043		Oil (bbl)	73.04
 2007	CO	Fremont County	08043		Oil (bbl)	73.23
 2008	CO	Gunnison County	08051		Oil (bbl)	74
+2006	Withheld	Withheld	Withheld		Gold and Silver Products (oz)	74
 2011	UT	Daggett County	49009		Oil (bbl)	74.15
 2005	CO	Fremont County	08043		Oil (bbl)	74.86
 2008	OK	McClain County	40087		Oil (bbl)	74.95
+2011	Withheld	Withheld	Withheld		Zinc Concentrate (tons)	75
 2005	AL	Choctaw County	01023		Oil (bbl)	75.11
 2006	FL	Santa Rosa County	12113		Oil (bbl)	77
 2010	LA	La Salle Parish	22059		Oil (bbl)	77.12
@@ -509,6 +522,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2011	MS	Lawrence County	28077		Gas (mcf)	112.54
 2007	MS	Monroe County	28095		Oil (bbl)	112.97
 2014	UT	Daggett County	49009		Oil (bbl)	113.7
+2014	Withheld	Withheld	Withheld		Zinc Concentrate (tons)	115.3
 2013	CO	Gunnison County	08051		Oil (bbl)	115.37
 2014	MI	Allegan County	26005		Oil (bbl)	115.6
 2008	CA	San Benito County	06069		Gas (mcf)	116
@@ -519,6 +533,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2005	OK	McClain County	40087		Oil (bbl)	119.47
 2013	MI	Allegan County	26005		Oil (bbl)	119.6
 2008	MI	Lake County	26085		Oil (bbl)	120.67
+2010	Withheld	Withheld	Withheld		Gold and Silver Products (oz)	122
 2010	MI	Allegan County	26005		Oil (bbl)	122.8
 2014	MT	Yellowstone County	30111		Oil (bbl)	123.07
 2007	TX	Zapata County	48505		Oil (bbl)	123.17
@@ -529,8 +544,10 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2011	ND	Bowman County	38011		Oil (bbl)	126.5
 2014	CA	San Benito County	06069		Oil (bbl)	127
 2013	CO	Bent County	08011		Oil (bbl)	127.03
+2007	Withheld	Withheld	Withheld		Zinc Concentrate (tons)	128
 2007	MS	Lawrence County	28077		Gas (mcf)	128.19
 2009	TX	Jones County	48253		Gas (mcf)	129
+2013	Withheld	Withheld	Withheld		Copper Concentrate (tons)	129
 2011	OK	Garfield County	40047		Oil (bbl)	129.75
 2011	OK	Major County	40093		Oil (bbl)	130
 2008	MI	Allegan County	26005		Oil (bbl)	131
@@ -630,11 +647,13 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2009	UT	Duchesne County	49013		Oil (bbl)	216
 2010	OH	Perry County	39127		Oil (bbl)	217
 2008	OK	Major County	40093		Oil (bbl)	217
+2009	Withheld	Withheld	Withheld		Gold and Silver Products (oz)	217
 2008	MS	Lawrence County	28077		Gas (mcf)	217.12
 2011	TX	Montague County	48337		Oil (bbl)	218.36
 2011	CO	Prowers County	08099		Gas (mcf)	219.87
 2014	TX	Montague County	48337		Oil (bbl)	220.34
 2008	TX	Nacogdoches County	48347		Oil (bbl)	221.76
+2008	Withheld	Withheld	Withheld		Copper Concentrate (tons)	222
 2013	TX	San Augustine County	48405		Oil (bbl)	222.18
 2012	TX	Nacogdoches County	48347		Oil (bbl)	222.35
 2013	MS	Jefferson Davis County	28065		Oil (bbl)	224.16
@@ -684,6 +703,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2006	OH	Perry County	39127		Oil (bbl)	274
 2011	WY	Uinta County	56041		Oil (bbl)	276
 2008	MT	Yellowstone County	30111		Oil (bbl)	277.03
+2014	Withheld	Withheld	Withheld		Copper Concentrate (tons)	278
 2007	CO	San Miguel County	08113		Oil (bbl)	279
 2006	CO	Mesa County	08077		Oil (bbl)	279.5
 2010	NY	Steuben County	36101		Gas (mcf)	279.52
@@ -871,7 +891,9 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2011	KS	Seward County	20175		Oil (bbl)	516.95
 2006	WY	Sheridan County	56033		Gas (mcf)	517.5
 2013	NM	San Juan County	35045		Oil (bbl)	518
+2010	Withheld	Withheld	Withheld		Lead Concentrate (tons)	518
 2011	MT	Rosebud County	30087		Gas (mcf)	518.13
+2006	Withheld	Withheld	Withheld		Copper Concentrate (tons)	519
 2009	LA	Ouachita Parish	22073		Gas (mcf)	522
 2007	KS	Seward County	20175		Oil (bbl)	523.1
 2007	MS	Jefferson Davis County	28065		Oil (bbl)	523.72
@@ -977,6 +999,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2005	LA	Ouachita Parish	22073		Gas (mcf)	726
 2011	WY	Sublette County	56035		Oil (bbl)	727
 2007	TX	Bowie County	48037		Gas (mcf)	728.72
+2011	Withheld	Withheld	Withheld		Copper Concentrate (tons)	729
 2005	MS	Covington County	28031		Gas (mcf)	729.59
 2006	TX	Live Oak County	48297		Oil (bbl)	730.54
 2006	TX	Jackson County	48239		Gas (mcf)	734.59
@@ -990,6 +1013,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2008	CA	San Benito County	06069		Oil (bbl)	745
 2014	MS	Covington County	28031		Oil (bbl)	747.1
 2007	MS	Covington County	28031		Oil (bbl)	748.11
+2005	Withheld	Withheld	Withheld		Copper Concentrate (tons)	749
 2010	LA	Ouachita Parish	22073		Gas (mcf)	749
 2011	LA	St. Martin Parish	22099		Oil (bbl)	756.58
 2010	MI	Lake County	26085		Gas (mcf)	763.55
@@ -1029,6 +1053,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2007	TX	Jackson County	48239		Gas (mcf)	822.91
 2013	TX	Bowie County	48037		Oil (bbl)	826.57
 2014	KY	Letcher County	21133		Gas (mcf)	826.73
+2013	Withheld	Withheld	Withheld		Lead Concentrate (tons)	828.53
 2005	LA	St. Martin Parish	22099		Oil (bbl)	829.72
 2008	ND	Divide County	38023		Gas (mcf)	833.75
 2011	AL	Lamar County	01075		Oil (bbl)	837.59
@@ -1096,6 +1121,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2006	OK	Grady County	40051		Oil (bbl)	950.31
 2007	TX	Nueces County	48355		Oil (bbl)	951.57
 2013	OK	Grady County	40051		Oil (bbl)	955.42
+2014	Withheld	Withheld	Withheld		Quartz Crystal (tickets/pounds)	960
 2014	MS	Covington County	28031		Gas (mcf)	962.36
 2012	KY	Clay County	21051		Oil (bbl)	965.24
 2014	CO	Broomfield County	08014		Gas (mcf)	965.63
@@ -1103,16 +1129,20 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2006	MS	Jones County	28067		Oil (bbl)	966.41
 2009	MS	Covington County	28031		Gas (mcf)	973.84
 2008	AL	Lamar County	01075		Gas (mcf)	975.73
+2009	Withheld	Withheld	Withheld		Copper Concentrate (tons)	977
 2008	MS	Covington County	28031		Gas (mcf)	978.35
 2014	NE	Cheyenne County	31033		Gas (mcf)	981
 2013	TX	Washington County	48477		Oil (bbl)	982.47
 2013	WV	Wyoming County	54109		Gas (mcf)	983.32
 2010	OH	Monroe County	39111		Oil (bbl)	987
+2014	Withheld	Withheld	Withheld		Lead Concentrate (tons)	987.3
+2008	Withheld	Withheld	Withheld		Lead Concentrate (tons)	988
 2007	KY	McCreary County	21147		Gas (mcf)	989.66
 2014	UT	Emery County	49015		Oil (bbl)	992.43
 2013	OH	Monroe County	39111		Oil (bbl)	994.51
 2012	KY	Letcher County	21133		Gas (mcf)	995.58
 2006	OK	Garfield County	40047		Oil (bbl)	998.56
+2010	Withheld	Withheld	Withheld		Quartz Crystal (tickets/pounds)	1000
 2005	NY	Steuben County	36101		Gas (mcf)	1000.2
 2006	OK	Beckham County	40009		Oil (bbl)	1008.58
 2014	TX	Montgomery County	48339		Oil (bbl)	1009
@@ -1180,6 +1210,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2011	WV	Wyoming County	54109		Gas (mcf)	1168.03
 2011	CO	Larimer County	08069		Oil (bbl)	1173.56
 2010	CO	Morgan County	08087		Oil (bbl)	1175.5
+2010	Withheld	Withheld	Withheld		Copper Concentrate (tons)	1176
 2012	TX	Washington County	48477		Oil (bbl)	1176.04
 2013	KS	Gove County	20063		Oil (bbl)	1176.87
 2011	OK	Hughes County	40063		Gas (mcf)	1177.81
@@ -1201,6 +1232,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2013	CO	Broomfield County	08014		Gas (mcf)	1223.46
 2012	OH	Monroe County	39111		Oil (bbl)	1224.38
 2013	CO	Larimer County	08069		Oil (bbl)	1228.88
+2006	Withheld	Withheld	Withheld		Lead Concentrate (tons)	1233
 2012	AR	Sebastian County	05131		Gas (mcf)	1233.26
 2010	MS	Jones County	28067		Oil (bbl)	1243.83
 2013	TX	Montgomery County	48339		Oil (bbl)	1243.9
@@ -1311,6 +1343,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2013	PA	Forest County	42053		Oil (bbl)	1498
 2007	OH	Hocking County	39073		Oil (bbl)	1506
 2009	KS	Gove County	20063		Oil (bbl)	1507.91
+2012	Withheld	Withheld	Withheld		Copper Concentrate (tons)	1509.67
 2005	OH	Washington County	39167		Oil (bbl)	1510
 2008	TX	Jones County	48253		Oil (bbl)	1510
 2007	OK	Oklahoma County	40109		Gas (mcf)	1510.26
@@ -1333,6 +1366,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2007	OH	Washington County	39167		Oil (bbl)	1556.41
 2006	OH	Hocking County	39073		Oil (bbl)	1560
 2007	LA	Winn Parish	22127		Oil (bbl)	1561.72
+2011	Withheld	Withheld	Withheld		Lead Concentrate (tons)	1562
 2012	ND	Bowman County	38011		Gas (mcf)	1566
 2008	CO	Larimer County	08069		Oil (bbl)	1566.77
 2012	MI	Clare County	26035		Oil (bbl)	1568.59
@@ -1345,11 +1379,13 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2013	AK	North Slope Borough	02185		Oil (bbl)	1584
 2009	OH	Washington County	39167		Oil (bbl)	1585.72
 2012	CA	Tehama County	06103		Gas (mcf)	1590.41
+2009	Withheld	Withheld	Withheld		Quartz Crystal (tickets/pounds)	1595
 2005	OK	Alfalfa County	40003		Oil (bbl)	1599.67
 2009	TX	Jasper County	48241		Oil (bbl)	1611.33
 2011	OK	Alfalfa County	40003		Oil (bbl)	1613.16
 2007	TX	Harrison County	48203		Oil (bbl)	1614
 2006	MI	Clare County	26035		Oil (bbl)	1619.62
+2007	Withheld	Withheld	Withheld		Lead Concentrate (tons)	1620
 2007	KS	Gove County	20063		Oil (bbl)	1623.81
 2012	TX	Jasper County	48241		Gas (mcf)	1624.38
 2014	TX	Sabine County	48403		Oil (bbl)	1630.91
@@ -1380,6 +1416,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2007	TX	Jones County	48253		Oil (bbl)	1694
 2008	MI	Clare County	26035		Oil (bbl)	1697.03
 2013	NV	Lyon County	32019		Geothermal - Electrical Generation, Kilowatt Hours	1698.3
+2007	Withheld	Withheld	Withheld		Copper Concentrate (tons)	1702
 2007	MI	Clare County	26035		Oil (bbl)	1702.42
 2006	OH	Washington County	39167		Oil (bbl)	1715
 2009	CA	Sacramento County	06067		Oil (bbl)	1715.71
@@ -1479,6 +1516,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2010	LA	Union Parish	22111		Gas (mcf)	2043
 2013	WY	Carbon County	56007		Oil (bbl)	2048.5
 2012	KS	Trego County	20195		Oil (bbl)	2051.95
+2009	Withheld	Withheld	Withheld		Lead Concentrate (tons)	2053
 2008	TX	Jones County	48253		Gas (mcf)	2054
 2014	WY	Lincoln County	56023		Oil (bbl)	2060
 2006	OK	Texas County	40139		Oil (bbl)	2063.38
@@ -1531,6 +1569,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2007	LA	Cameron Parish	22023		Gas (mcf)	2213.81
 2011	MT	Garfield County	30033		Oil (bbl)	2220.02
 2010	TX	Tarrant County	48439		Oil (bbl)	2223.93
+2008	Withheld	Withheld	Withheld		Other Coal Products (tons)	2232
 2010	ND	Bottineau County	38009		Gas (mcf)	2232.51
 2014	NV	Elko County	32007		Oil (bbl)	2247
 2014	CO	Adams County	08001		Oil (bbl)	2249.47
@@ -1582,6 +1621,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2013	OK	Custer County	40039		Oil (bbl)	2451.5
 2006	AL	Lamar County	01075		Gas (mcf)	2458.36
 2010	ND	Divide County	38023		Gas (mcf)	2464.73
+2012	Withheld	Withheld	Withheld		Lead Concentrate (tons)	2470
 2009	NE	Kimball County	31105		Oil (bbl)	2472.69
 2011	KS	Stevens County	20189		Oil (bbl)	2474.5
 2007	OK	Custer County	40039		Oil (bbl)	2475.72
@@ -2235,6 +2275,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2010	CO	Kiowa County	08061		Gas (mcf)	6014.4
 2010	MT	Liberty County	30051		Oil (bbl)	6020.95
 2013	LA	Rapides Parish	22079		Oil (bbl)	6044.11
+2009	Withheld	Withheld	Withheld		Other Coal Products (tons)	6060
 2014	MT	Musselshell County	30065		Oil (bbl)	6096.59
 2010	UT	Emery County	49015		Oil (bbl)	6100
 2013	KS	Meade County	20119		Gas (mcf)	6105.6
@@ -2331,9 +2372,11 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2013	MT	Dawson County	30021		Gas (mcf)	6951
 2011	CO	Washington County	08121		Oil (bbl)	6978
 2005	ND	Burke County	38013		Oil (bbl)	6990.6
+2009	Withheld	Withheld	Withheld		Clay (tons)	7021
 2014	MT	Liberty County	30051		Oil (bbl)	7028
 2006	MI	Kalkaska County	26079		Oil (bbl)	7045.74
 2007	MT	Roosevelt County	30085		Oil (bbl)	7048.02
+2006	Withheld	Withheld	Withheld		Other Coal Products (tons)	7056
 2008	KS	Comanche County	20033		Gas (mcf)	7057.19
 2007	WY	Fremont County	56013		Oil (bbl)	7071
 2011	ND	Renville County	38075		Gas (mcf)	7078.1
@@ -2359,6 +2402,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2007	CO	Moffat County	08081		Oil (bbl)	7304
 2013	TX	Shelby County	48419		Oil (bbl)	7314.09
 2007	LA	Webster Parish	22119		Oil (bbl)	7314.53
+2012	Withheld	Withheld	Withheld		Other Coal Products (tons)	7316
 2014	LA	Rapides Parish	22079		Gas (mcf)	7316.66
 2011	CA	San Luis Obispo County	06079		Oil (bbl)	7329.93
 2008	ND	Bowman County	38011		Gas (mcf)	7334.5
@@ -2430,6 +2474,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2005	AR	Montgomery County	05097		Quartz Crystal (tickets/pounds)	8065
 2013	LA	Vernon Parish	22115		Gas (mcf)	8067.56
 2012	MI	Oscoda County	26135		Oil (bbl)	8081.24
+2010	Withheld	Withheld	Withheld		Other Coal Products (tons)	8100
 2007	CA	Glenn County	06021		Gas (mcf)	8103.8
 2008	MI	Grand Traverse County	26055		Gas (mcf)	8124.66
 2009	NY	Chautauqua County	36013		Gas (mcf)	8130.48
@@ -2438,6 +2483,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2010	LA	Caddo Parish	22017		Oil (bbl)	8162.79
 2010	MS	Forrest County	28035		Oil (bbl)	8177.97
 2006	MS	Jasper County	28061		Gas (mcf)	8179.81
+2005	Withheld	Withheld	Withheld		Other Potassium Products (tons)	8213
 2013	MT	Petroleum County	30069		Oil (bbl)	8222.18
 2010	MI	Jackson County	26075		Oil (bbl)	8229.5
 2011	MT	Roosevelt County	30085		Gas (mcf)	8245.72
@@ -2465,6 +2511,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2014	LA	Claiborne Parish	22027		Oil (bbl)	8478.87
 2008	CO	Kiowa County	08061		Gas (mcf)	8486.91
 2007	OH	Muskingum County	39119		Gas (mcf)	8491
+2011	Withheld	Withheld	Withheld		Other Coal Products (tons)	8496
 2010	TX	Sabine County	48403		Oil (bbl)	8528.82
 2010	TX	Hemphill County	48211		Gas (mcf)	8539.74
 2010	TX	Lee County	48287		Gas (mcf)	8546.69
@@ -2631,6 +2678,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2009	KY	Henderson County	21101		Oil (bbl)	10615
 2014	MT	Stillwater County	30095		Oil (bbl)	10656.08
 2005	CO	San Miguel County	08113		Oil (bbl)	10661.54
+2013	Withheld	Withheld	Withheld		Other Coal Products (tons)	10666
 2007	TX	Hemphill County	48211		Gas (mcf)	10682.23
 2010	MI	Otsego County	26137		Gas (mcf)	10703.59
 2006	KY	Henderson County	21101		Oil (bbl)	10720
@@ -2690,6 +2738,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2009	KY	Floyd County	21071		Gas (mcf)	11284
 2008	TX	Walker County	48471		Gas (mcf)	11286.48
 2013	AL	Covington County	01039		Oil (bbl)	11296.05
+2008	Withheld	Withheld	Withheld		Quartz Crystal (tickets/pounds)	11300
 2009	NM	Bernalillo County	35001		Oil (bbl)	11301
 2011	CA	Monterey County	06053		Oil (bbl)	11302.96
 2008	ND	Renville County	38075		Gas (mcf)	11303.85
@@ -2883,6 +2932,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2010	OK	Tillman County	40141		Oil (bbl)	14854
 2005	OK	Caddo County	40015		Gas (mcf)	14863.29
 2010	MS	Jones County	28067		Gas (mcf)	14875.39
+2006	Withheld	Withheld	Withheld		Potash (tons)	14913
 2008	KY	Floyd County	21071		Gas (mcf)	14932
 2005	KY	Floyd County	21071		Gas (mcf)	14939
 2008	IL	Franklin County	17055		Oil (bbl)	14941.51
@@ -2918,6 +2968,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2014	MS	Wayne County	28153		Gas (mcf)	15503.28
 2014	MO	Reynolds County	29179		Copper Concentrate (tons)	15584.81
 2005	MS	Adams County	28001		Oil (bbl)	15590
+2010	Withheld	Withheld	Withheld		Clay (tons)	15627
 2012	PA	Forest County	42053		Gas (mcf)	15649
 2005	MS	Perry County	28111		Gas (mcf)	15656
 2014	MI	Jackson County	26075		Oil (bbl)	15657.25
@@ -3155,6 +3206,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2008	TX	Burleson County	48051		Oil (bbl)	21841
 2013	UT	San Juan County	49037		Oil (bbl)	21855
 2011	VA	Wise County	51195		Gas (mcf)	21855.73
+2011	Withheld	Withheld	Withheld		Clay (tons)	21891
 2014	KS	Hamilton County	20075		Gas (mcf)	21929.64
 2014	MS	Monroe County	28095		Gas (mcf)	22023.86
 2009	OH	Stark County	39151		Gas (mcf)	22030.84
@@ -3181,10 +3233,12 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2005	AR	Pope County	05115		Gas (mcf)	22473.04
 2007	TX	Wise County	48497		Oil (bbl)	22547.28
 2008	OK	Roger Mills County	40129		Oil (bbl)	22562.98
+2011	Withheld	Withheld	Withheld		Gilsonite (tons)	22568
 2012	NM	McKinley County	35031		Oil (bbl)	22569
 2011	CO	Bent County	08011		Gas (mcf)	22575.02
 2006	KS	Finney County	20055		Oil (bbl)	22583.08
 2012	CO	Bent County	08011		Gas (mcf)	22587.47
+2014	Withheld	Withheld	Withheld		Hardrock Products (tons)	22598
 2005	UT	Utah County	49049		Gas (mcf)	22617.14
 2012	OH	Stark County	39151		Gas (mcf)	22708.24
 2012	MI	Clare County	26035		Gas (mcf)	22721.83
@@ -3261,9 +3315,11 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2008	NM	McKinley County	35031		Gas (mcf)	24857
 2010	TX	Grayson County	48181		Gas (mcf)	24882.38
 2012	CO	Delta County	08029		Gas (mcf)	24898.28
+2013	Withheld	Withheld	Withheld		Gilsonite (tons)	24919
 2009	MT	Custer County	30017		Gas (mcf)	24993.5
 2012	UT	San Juan County	49037		Oil (bbl)	25017
 2014	WV	Pendleton County	54071		Gas (mcf)	25108.83
+2008	Withheld	Withheld	Withheld		Clay (tons)	25139
 2009	ND	Stark County	38089		Oil (bbl)	25142.06
 2008	OK	Grady County	40051		Gas (mcf)	25206.47
 2011	MT	Sheridan County	30091		Oil (bbl)	25225.37
@@ -3359,6 +3415,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2013	UT	Summit County	49043		Oil (bbl)	28291.32
 2010	TX	San Jacinto County	48407		Oil (bbl)	28300
 2009	OK	Woods County	40151		Oil (bbl)	28305.92
+2013	Withheld	Withheld	Withheld		Clay (tons)	28333
 2010	TX	Sabine County	48403		Gas (mcf)	28344.29
 2011	MS	Monroe County	28095		Gas (mcf)	28409.34
 2008	CO	Dolores County	08033		Oil (bbl)	28433.9
@@ -3373,6 +3430,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2013	KS	Stanton County	20187		Gas (mcf)	28736.93
 2012	WV	Preston County	54077		Gas (mcf)	28865.1
 2013	LA	Webster Parish	22119		Gas (mcf)	28900.09
+2014	Withheld	Withheld	Withheld		Gilsonite (tons)	28936
 2009	AR	Sharp County	05135		Gas (mcf)	29010.18
 2014	CA	San Luis Obispo County	06079		Gas (mcf)	29037.82
 2014	MT	Prairie County	30079		Gas (mcf)	29044.5
@@ -3399,6 +3457,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2011	MO	Reynolds County	29179		Zinc Concentrate (tons)	29907.68
 2011	ND	Renville County	38075		Oil (bbl)	29964.38
 2005	OK	Sequoyah County	40135		Gas (mcf)	29978.76
+2012	Withheld	Withheld	Withheld		Clay (tons)	29990
 2006	MT	Custer County	30017		Gas (mcf)	29994.13
 2006	CO	Baca County	08009		Oil (bbl)	30033.39
 2008	ND	Stark County	38089		Oil (bbl)	30070.12
@@ -3429,6 +3488,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2007	OK	Sequoyah County	40135		Gas (mcf)	31107.64
 2014	MO	Reynolds County	29179		Zinc Concentrate (tons)	31197.95
 2005	OH	Stark County	39151		Gas (mcf)	31278.42
+2009	Withheld	Withheld	Withheld		Borate Products (ton)	31284
 2012	AR	Sharp County	05135		Gas (mcf)	31334.28
 2011	ND	Burke County	38013		Gas (mcf)	31371.44
 2009	OK	Sequoyah County	40135		Gas (mcf)	31432.3
@@ -3464,6 +3524,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2011	ND	Bottineau County	38009		Oil (bbl)	32600.82
 2013	UT	Carbon County	49007		Oil (bbl)	32601.53
 2007	CO	Dolores County	08033		Oil (bbl)	32722.76
+2007	Withheld	Withheld	Withheld		Borate Products (ton)	32736
 2009	OH	Washington County	39167		Gas (mcf)	32741.44
 2014	UT	Summit County	49043		Oil (bbl)	32743.22
 2009	OK	Lincoln County	40081		Gas (mcf)	32802
@@ -3471,6 +3532,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2012	WY	Crook County	56011		Gas (mcf)	32915.79
 2011	OH	Washington County	39167		Gas (mcf)	32924.95
 2013	MI	Kalkaska County	26079		Gas (mcf)	33052.52
+2006	Withheld	Withheld	Withheld		Borate Products (ton)	33106
 2013	CA	Kern County	06029		Oil (bbl)	33133.82
 2006	TX	Grayson County	48181		Gas (mcf)	33145.5
 2013	OH	Washington County	39167		Gas (mcf)	33145.84
@@ -3489,10 +3551,12 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2008	OK	Sequoyah County	40135		Gas (mcf)	33468.46
 2007	MT	Custer County	30017		Gas (mcf)	33499.38
 2009	MT	Sheridan County	30091		Gas (mcf)	33512.14
+2008	Withheld	Withheld	Withheld		Borate Products (ton)	33520
 2014	UT	Piute County	49031		Clay (tons)	33520
 2008	AL	Covington County	01039		Oil (bbl)	33575.84
 2008	CA	Kings County	06031		Gas (mcf)	33586.03
 2014	OK	Kingfisher County	40073		Gas (mcf)	33611.52
+2005	Withheld	Withheld	Withheld		Borate Products (ton)	33706
 2005	CO	Cheyenne County	08017		Oil (bbl)	33785.81
 2012	OH	Washington County	39167		Gas (mcf)	33815.38
 2012	KY	Leslie County	21131		Gas (mcf)	33862.36
@@ -3557,6 +3621,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2007	CO	Bent County	08011		Gas (mcf)	36682.16
 2008	MT	Sheridan County	30091		Oil (bbl)	36696.31
 2013	OK	Lincoln County	40081		Gas (mcf)	36742
+2005	Withheld	Withheld	Withheld		Hardrock Products (tons)	36756
 2014	KY	Pike County	21195		Gas (mcf)	36806
 2010	OH	Washington County	39167		Gas (mcf)	36818.33
 2009	LA	Webster Parish	22119		Gas (mcf)	36849.18
@@ -3755,6 +3820,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2012	TX	Nueces County	48355		Gas (mcf)	46510.53
 2009	TX	Live Oak County	48297		Gas (mcf)	46519
 2010	OK	Kingfisher County	40073		Gas (mcf)	46597.43
+2007	Withheld	Withheld	Withheld		Brine Products (tons)	46600.09
 2006	UT	Summit County	49043		Oil (bbl)	46644.23
 2008	NE	Cheyenne County	31033		Oil (bbl)	46703
 2010	LA	Bienville Parish	22013		Gas (mcf)	46802
@@ -3810,9 +3876,11 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2005	ND	Bottineau County	38009		Oil (bbl)	50870.02
 2012	WY	Uinta County	56041		Gas (mcf)	50910.62
 2013	LA	Bossier Parish	22015		Oil (bbl)	51006.22
+2008	Withheld	Withheld	Withheld		Sodium Bi-Carbonate (tons)	51007
 2005	ND	Williams County	38105		Oil (bbl)	51182.74
 2013	MS	Lowndes County	28087		Gas (mcf)	51198.99
 2013	AL	Baldwin County	01003		Gas (mcf)	51250.96
+2014	Withheld	Withheld	Withheld		Brine Products (tons)	51291
 2013	MT	Powder River County	30075		Oil (bbl)	51300.75
 2013	CA	Kern County	06029		Gas (mcf)	51395.11
 2014	UT	Carbon County	49007		Oil (bbl)	51419.71
@@ -3832,6 +3900,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2009	AR	White County	05145		Gas (mcf)	52594.25
 2006	MT	Prairie County	30079		Gas (mcf)	52610.97
 2007	MO	Iron County	29093		Lead Concentrate (tons)	52718.97
+2005	Withheld	Withheld	Withheld		Brine Products (tons)	52765.21
 2010	MI	Clare County	26035		Gas (mcf)	52783.96
 2008	MT	Toole County	30101		Oil (bbl)	52784.82
 2014	TX	San Augustine County	48405		Gas (mcf)	52895.15
@@ -3857,6 +3926,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2008	WV	Pocahontas County	54075		Gas (mcf)	55075.5
 2012	CA	Kern County	06029		Gas (mcf)	55175.86
 2014	WV	Mingo County	54059		Gas (mcf)	55205.66
+2009	Withheld	Withheld	Withheld		Brine Products (tons)	55478
 2005	ND	Stark County	38089		Oil (bbl)	55497.31
 2005	WY	Crook County	56011		Gas (mcf)	55555.27
 2014	TX	San Jacinto County	48407		Gas (mcf)	55713
@@ -3907,6 +3977,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2014	CA	Santa Barbara	06083		Gas (mcf)	59322.98
 2008	OK	Le Flore County	40079		Gas (mcf)	59401.89
 2007	KY	Clay County	21051		Gas (mcf)	59496.94
+2010	Withheld	Withheld	Withheld		Phosphate Raw Ore (tons)	59628
 2009	MS	Stone County	28131		Gas (mcf)	59655
 2008	MS	Chickasaw County	28017		Gas (mcf)	59812
 2008	KS	Hamilton County	20075		Gas (mcf)	59847.28
@@ -3926,6 +3997,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2009	MT	Carter County	30011		Gas (mcf)	60903.32
 2011	OH	Mahoning County	39099		Gas (mcf)	60911.62
 2012	MT	Powder River County	30075		Oil (bbl)	60975.03
+2013	Withheld	Withheld	Withheld		Brine Products (tons)	61077
 2012	OH	Mahoning County	39099		Gas (mcf)	61094.06
 2014	LA	Winn Parish	22127		Gas (mcf)	61230.35
 2008	AL	Baldwin County	01003		Gas (mcf)	61346.93
@@ -3936,6 +4008,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2008	MI	Kalkaska County	26079		Gas (mcf)	61855.94
 2007	MT	Toole County	30101		Oil (bbl)	61866.94
 2005	WY	Sweetwater County	56037		Purge Liquor (tons- equivalent)	61925
+2005	Withheld	Withheld	Withheld		Clay (tons)	62138
 2012	CO	Jackson County	08057		Oil (bbl)	62195.08
 2009	UT	Carbon County	49007		Oil (bbl)	62300.88
 2007	ND	Williams County	38105		Oil (bbl)	62391.53
@@ -3987,6 +4060,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2007	UT	Uintah County	49047		Oil (bbl)	66904
 2005	WV	Preston County	54077		Gas (mcf)	66904.94
 2013	TX	Houston County	48225		Oil (bbl)	66979
+2007	Withheld	Withheld	Withheld		Clay (tons)	67014
 2013	CA	Santa Barbara	06083		Gas (mcf)	67023.98
 2010	MI	Kalkaska County	26079		Gas (mcf)	67115.75
 2010	OH	Mahoning County	39099		Gas (mcf)	67126.82
@@ -4001,11 +4075,13 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2009	LA	Bienville Parish	22013		Gas (mcf)	68035.55
 2007	AR	Van Buren County	05141		Gas (mcf)	68074.03
 2008	KY	Leslie County	21131		Gas (mcf)	68127.98
+2010	Withheld	Withheld	Withheld		Brine Products (tons)	68327.81
 2006	CO	Mesa County	08077		Gas (mcf)	68375
 2009	MT	Powder River County	30075		Oil (bbl)	68597.13
 2008	NM	Bernalillo County	35001		Gas (mcf)	68657
 2010	OK	Garfield County	40047		Gas (mcf)	68725.14
 2005	LA	Vernon Parish	22115		Gas (mcf)	68822.67
+2006	Withheld	Withheld	Withheld		Hardrock Products (tons)	68941
 2008	MT	Powder River County	30075		Oil (bbl)	68955.77
 2005	LA	Caddo Parish	22017		Gas (mcf)	68961.53
 2005	MI	Kalkaska County	26079		Gas (mcf)	68980.87
@@ -4022,6 +4098,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2006	WY	Sweetwater County	56037		Purge Liquor (tons- equivalent)	69814
 2007	TX	Nueces County	48355		Gas (mcf)	69842.84
 2006	OK	Le Flore County	40079		Gas (mcf)	70021.11
+2012	Withheld	Withheld	Withheld		Brine Products (tons)	70061
 2013	MT	Carter County	30011		Oil (bbl)	70101.32
 2005	MS	Wayne County	28153		Oil (bbl)	70620.95
 2005	OH	Mahoning County	39099		Gas (mcf)	70745.71
@@ -4034,6 +4111,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2009	TX	Shelby County	48419		Oil (bbl)	71480.69
 2013	WY	Sweetwater County	56037		Sodium Bi-Carbonate (tons)	71539
 2008	NM	Rio Arriba County	35039		Gas (mcf)	71683.5
+2013	Withheld	Withheld	Withheld		Hardrock Products (tons)	71696
 2006	KY	Leslie County	21131		Gas (mcf)	71802.23
 2012	NM	Rio Arriba County	35039		Gas (mcf)	72054
 2007	NM	San Juan County	35045		Gas (mcf)	72148
@@ -4046,6 +4124,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2011	CO	Jackson County	08057		Oil (bbl)	73115
 2006	NM	Colfax County	35007		Gas (mcf)	73118
 2008	TX	Hill County	48217		Gas (mcf)	73389
+2011	Withheld	Withheld	Withheld		Brine Products (tons)	73522
 2012	WY	Sweetwater County	56037		Purge Liquor (tons- equivalent)	73594
 2007	OK	Le Flore County	40079		Gas (mcf)	73678.44
 2006	MS	Chickasaw County	28017		Gas (mcf)	73691.5
@@ -4084,6 +4163,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2008	LA	Bienville Parish	22013		Gas (mcf)	77196.98
 2012	CO	Gunnison County	08051		Gas (mcf)	77251.5
 2009	MS	Franklin County	28037		Oil (bbl)	77415.68
+2008	Withheld	Withheld	Withheld		Brine Products (tons)	77591.21
 2013	NM	Roosevelt County	35041		Oil (bbl)	77598.96
 2010	WV	Mingo County	54059		Gas (mcf)	77622.69
 2009	NV	Eureka County	32011		Oil (bbl)	77730
@@ -4136,12 +4216,14 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2005	MT	Fergus County	30027		Gas (mcf)	83981.5
 2005	NM	Eddy County	35015		Oil (bbl)	83985.91
 2007	CO	Jackson County	08057		Oil (bbl)	84034.67
+2006	Withheld	Withheld	Withheld		Brine Products (tons)	84052.34
 2012	NM	Roosevelt County	35041		Oil (bbl)	84283.25
 2008	LA	Caddo Parish	22017		Gas (mcf)	84370.36
 2009	LA	Caddo Parish	22017		Gas (mcf)	84380.01
 2006	MS	Lowndes County	28087		Gas (mcf)	84536.19
 2010	CA	Kings County	06031		Gas (mcf)	84545.41
 2009	MT	Dawson County	30021		Gas (mcf)	84727.85
+2006	Withheld	Withheld	Withheld		Clay (tons)	84876
 2009	WV	Mingo County	54059		Gas (mcf)	84927.84
 2011	LA	Rapides Parish	22079		Gas (mcf)	85019.24
 2006	WY	Carbon County	56007		Gas (mcf)	85243.37
@@ -4294,10 +4376,12 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2009	NM	Eddy County	35015		Muriate Of Potash-Standard (tons)	112839
 2009	TX	Burleson County	48051		Gas (mcf)	112844.42
 2014	ND	Burke County	38013		Oil (bbl)	113179.92
+2013	Withheld	Withheld	Withheld		Phosphate Raw Ore (tons)	113187
 2007	CA	Fresno County	06019		Gas (mcf)	113705.1
 2013	MT	Prairie County	30079		Oil (bbl)	113781.85
 2014	CO	Cheyenne County	08017		Gas (mcf)	113798.38
 2008	NM	Chaves County	35005		Gas (mcf)	113801
+2005	Withheld	Withheld	Withheld		Sodium Bi-Carbonate (tons)	114001
 2009	CO	Washington County	08121		Gas (mcf)	114121.73
 2011	OK	Beaver County	40007		Gas (mcf)	114284.92
 2014	OK	Ellis County	40045		Oil (bbl)	114336.17
@@ -4389,6 +4473,8 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2010	SD	Harding County	46063		Oil (bbl)	130395.14
 2011	KS	Morton County	20129		Oil (bbl)	130559.66
 2012	CO	Cheyenne County	08017		Gas (mcf)	130600.14
+2006	Withheld	Withheld	Withheld		Sodium Bi-Carbonate (tons)	130788
+2010	Withheld	Withheld	Withheld		Borate Products (ton)	130833
 2006	NM	Chaves County	35005		Oil (bbl)	131234.48
 2008	UT	Daggett County	49009		Gas (mcf)	131472.02
 2014	VA	Dickenson County	51051		Gas (mcf)	131549
@@ -4405,7 +4491,9 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2007	MT	Wibaux County	30109		Oil (bbl)	133397.63
 2009	CO	Montezuma County	08083		Oil (bbl)	133505.52
 2010	CO	Cheyenne County	08017		Gas (mcf)	133774.71
+2010	Withheld	Withheld	Withheld		Sodium Bi-Carbonate (tons)	133833
 2010	MT	Wibaux County	30109		Oil (bbl)	133956.27
+2009	Withheld	Withheld	Withheld		Sodium Bi-Carbonate (tons)	134148
 2010	CA	Los Angeles County	06037		Gas (mcf)	134192.98
 2012	UT	Summit County	49043		Gas (mcf)	134383.09
 2009	OH	Trumbull County	39155		Gas (mcf)	135071.88
@@ -4421,6 +4509,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2005	OH	Trumbull County	39155		Gas (mcf)	136930.89
 2014	CO	Rio Blanco County	08103		Oil (bbl)	137606
 2007	CA	Los Angeles County	06037		Gas (mcf)	137894.66
+2012	Withheld	Withheld	Withheld		Hardrock Products (tons)	137956
 2012	OK	Texas County	40139		Gas (mcf)	138060.78
 2010	KS	Seward County	20175		Gas (mcf)	138070.59
 2011	OH	Trumbull County	39155		Gas (mcf)	138296.03
@@ -4446,8 +4535,10 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2010	TX	Freestone County	48161		Gas (mcf)	141871.65
 2005	MI	Crawford County	26039		Gas (mcf)	141890.7
 2005	WY	Park County	56029		Gas (mcf)	142172
+2014	Withheld	Withheld	Withheld		Other Coal Products (tons)	142273
 2005	TX	Houston County	48225		Oil (bbl)	142275
 2010	OH	Trumbull County	39155		Gas (mcf)	142282
+2007	Withheld	Withheld	Withheld		Hardrock Products (tons)	142378
 2006	MT	Fergus County	30027		Gas (mcf)	142729
 2007	TX	Houston County	48225		Oil (bbl)	142809.5
 2013	VA	Dickenson County	51051		Gas (mcf)	143227.38
@@ -4469,12 +4560,15 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2007	AR	Conway County	05029		Gas (mcf)	146172.41
 2012	NM	Eddy County	35015		Muriate Of Potash-Standard (tons)	146453
 2014	TX	Nacogdoches County	48347		Gas (mcf)	146861.45
+2012	Withheld	Withheld	Withheld		Borate Products (ton)	146943
 2005	NM	Roosevelt County	35041		Oil (bbl)	146990.32
 2008	TX	San Jacinto County	48407		Gas (mcf)	147027
+2012	Withheld	Withheld	Withheld		Sodium Bi-Carbonate (tons)	147177
 2005	SD	Harding County	46063		Oil (bbl)	147848.22
 2009	SD	Harding County	46063		Oil (bbl)	148082.91
 2008	CA	Los Angeles County	06037		Gas (mcf)	148186.59
 2008	LA	Plaquemines Parish	22075		Oil (bbl)	148209.6
+2011	Withheld	Withheld	Withheld		Sodium Bi-Carbonate (tons)	148493
 2007	WY	Sublette County	56035		Gas (mcf)	148659
 2009	CO	Weld County	08123		Oil (bbl)	148851.02
 2011	OK	Texas County	40139		Gas (mcf)	149086.22
@@ -4502,6 +4596,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2012	UT	Garfield County	49017		Oil (bbl)	154566
 2013	MS	Pearl River County	28109		Gas (mcf)	154604.7
 2014	OK	Custer County	40039		Gas (mcf)	154739.19
+2013	Withheld	Withheld	Withheld		Sodium Bi-Carbonate (tons)	154740
 2013	AR	Pope County	05115		Gas (mcf)	154871.11
 2010	NM	Eddy County	35015		Muriate Of Potash-Standard (tons)	155054
 2007	CO	Cheyenne County	08017		Gas (mcf)	155106.79
@@ -4509,14 +4604,18 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2007	MT	Prairie County	30079		Oil (bbl)	155387.53
 2006	TX	Washington County	48477		Gas (mcf)	155426.1
 2008	OH	Trumbull County	39155		Gas (mcf)	156499.89
+2013	Withheld	Withheld	Withheld		Borate Products (ton)	156530
+2011	Withheld	Withheld	Withheld		Borate Products (ton)	157392
 2005	MS	Perry County	28111		Oil (bbl)	157527.82
 2009	LA	Plaquemines Parish	22075		Oil (bbl)	157603.24
 2011	UT	Summit County	49043		Gas (mcf)	157841.9
 2012	LA	Rapides Parish	22079		Gas (mcf)	158156.88
+2010	Withheld	Withheld	Withheld		Hardrock Products (tons)	158266
 2013	AR	Franklin County	05047		Gas (mcf)	158381.38
 2006	SD	Harding County	46063		Oil (bbl)	158383.43
 2005	CA	Kings County	06031		Gas (mcf)	158499.06
 2008	MS	Jefferson Davis County	28065		Gas (mcf)	158858.98
+2012	Withheld	Withheld	Withheld		Other Potassium Products (tons)	158953
 2009	KS	Seward County	20175		Gas (mcf)	158987.16
 2005	WY	Niobrara County	56027		Gas (mcf)	159414.08
 2005	CA	Los Angeles County	06037		Gas (mcf)	159479.23
@@ -4527,9 +4626,11 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2006	CA	Kings County	06031		Gas (mcf)	161244.67
 2013	LA	Claiborne Parish	22027		Gas (mcf)	161351.94
 2008	SD	Harding County	46063		Oil (bbl)	161400.96
+2007	Withheld	Withheld	Withheld		Sodium Bi-Carbonate (tons)	161456
 2006	TX	Freestone County	48161		Gas (mcf)	161720.04
 2013	MT	Dawson County	30021		Oil (bbl)	162123.97
 2013	OH	Portage County	39133		Gas (mcf)	162236.04
+2014	Withheld	Withheld	Withheld		Borate Products (ton)	162731
 2012	LA	Plaquemines Parish	22075		Oil (bbl)	163242.2
 2006	NM	Lea County	35025		Gas (mcf)	163383.58
 2011	TX	Galveston County	48167		Gas (mcf)	163612.17
@@ -4553,6 +4654,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2012	LA	Claiborne Parish	22027		Gas (mcf)	170409.35
 2011	NM	Eddy County	35015		Muriate Of Potash-Standard (tons)	170449
 2007	SD	Harding County	46063		Oil (bbl)	170552.74
+2013	Withheld	Withheld	Withheld		Other Potassium Products (tons)	171599
 2005	KS	Grant County	20067		Gas (mcf)	171781.07
 2010	VA	Dickenson County	51051		Gas (mcf)	172099.83
 2007	MS	Forrest County	28035		Gas (mcf)	172183.1
@@ -4563,6 +4665,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2014	LA	Bienville Parish	22013		Gas (mcf)	173020.22
 2014	MT	Toole County	30101		Gas (mcf)	173273.72
 2009	OH	Portage County	39133		Gas (mcf)	173774.44
+2011	Withheld	Withheld	Withheld		Hardrock Products (tons)	174574
 2014	UT	Daggett County	49009		Gas (mcf)	174630.17
 2010	LA	Plaquemines Parish	22075		Oil (bbl)	174729.26
 2012	OH	Portage County	39133		Gas (mcf)	174996.53
@@ -4590,6 +4693,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2014	NM	McKinley County	35031		Gas (mcf)	181980
 2007	MT	Wibaux County	30109		Gas (mcf)	182205.7
 2010	OH	Portage County	39133		Gas (mcf)	182249.64
+2009	Withheld	Withheld	Withheld		Hardrock Products (tons)	182432
 2009	OK	Texas County	40139		Gas (mcf)	182486.92
 2010	MT	Chouteau County	30015		Gas (mcf)	182561.56
 2006	OK	Latimer County	40077		Gas (mcf)	182621.79
@@ -4603,6 +4707,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2011	CO	San Miguel County	08113		Gas (mcf)	186523
 2013	SD	Harding County	46063		Oil (bbl)	187186.16
 2006	LA	Claiborne Parish	22027		Gas (mcf)	187559.03
+2008	Withheld	Withheld	Withheld		Hardrock Products (tons)	187627
 2010	AR	Franklin County	05047		Gas (mcf)	187918.53
 2013	MS	Perry County	28111		Oil (bbl)	188171.29
 2009	MT	Chouteau County	30015		Gas (mcf)	188189.12
@@ -4656,6 +4761,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2005	TX	Nueces County	48355		Gas (mcf)	200973.13
 2005	CO	Montezuma County	08083		Oil (bbl)	201016.03
 2008	VA	Dickenson County	51051		Gas (mcf)	201199.79
+2014	Withheld	Withheld	Withheld		Sodium Bi-Carbonate (tons)	201462
 2014	KS	Stevens County	20189		Gas (mcf)	201657.18
 2005	LA	Claiborne Parish	22027		Gas (mcf)	201974.12
 2010	AR	Cleburne County	05023		Gas (mcf)	201978.85
@@ -4679,6 +4785,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2012	MT	Toole County	30101		Gas (mcf)	207895.22
 2007	CO	Mesa County	08077		Gas (mcf)	208146.16
 2008	TX	Burleson County	48051		Gas (mcf)	208169
+2014	Withheld	Withheld	Withheld		Potash (tons)	208401
 2012	TX	Zapata County	48505		Gas (mcf)	208473.46
 2011	AR	Franklin County	05047		Gas (mcf)	209174.83
 2014	WY	Hot Springs County	56017		Gas (mcf)	209384.99
@@ -4711,6 +4818,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2009	NM	Eddy County	35015		Oil (bbl)	219206.26
 2006	ND	Williams County	38105		Gas (mcf)	220017.86
 2011	TX	San Augustine County	48405		Gas (mcf)	220714.05
+2011	Withheld	Withheld	Withheld		Phosphate Raw Ore (tons)	221187
 2007	AR	Franklin County	05047		Gas (mcf)	222406.74
 2006	AR	Franklin County	05047		Gas (mcf)	222908.09
 2006	UT	Summit County	49043		Gas (mcf)	223155.73
@@ -4735,7 +4843,9 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2013	MT	Hill County	30041		Gas (mcf)	229676.44
 2009	MT	Dawson County	30021		Oil (bbl)	230059.79
 2014	NM	Colfax County	35007		Gas (mcf)	231177
+2005	Withheld	Withheld	Withheld		Other Sodium Products (tons)	231283
 2009	CO	Moffat County	08081		Oil (bbl)	231464.48
+2007	Withheld	Withheld	Withheld		Other Potassium Products (tons)	231617
 2005	MT	Toole County	30101		Gas (mcf)	231868.36
 2010	CO	Moffat County	08081		Oil (bbl)	232549.77
 2008	OK	Canadian County	40017		Gas (mcf)	232859.57
@@ -4755,10 +4865,12 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2010	AK	Kenai Peninsula Borough	02122		Oil (bbl)	237163
 2012	WY	Hot Springs County	56017		Gas (mcf)	237309.73
 2008	CA	Imperial County	06025		Geothermal - Electrical Generation, Other	237415.56
+2006	Withheld	Withheld	Withheld		Other Potassium Products (tons)	237500
 2014	LA	Caddo Parish	22017		Gas (mcf)	237508.15
 2012	OK	Canadian County	40017		Gas (mcf)	237852.25
 2006	CA	Lassen County	06035		Geothermal - Direct Utilization, Millions of BTUs	238146.66
 2010	OK	Custer County	40039		Gas (mcf)	238612.19
+2009	Withheld	Withheld	Withheld		Other Sodium Products (tons)	239828
 2007	UT	Summit County	49043		Gas (mcf)	239905.87
 2011	ND	Williams County	38105		Oil (bbl)	239953.4
 2011	AR	Cleburne County	05023		Gas (mcf)	240179.82
@@ -4787,6 +4899,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2005	UT	Summit County	49043		Gas (mcf)	252377.23
 2013	CO	Moffat County	08081		Oil (bbl)	252585.89
 2010	WY	Hot Springs County	56017		Gas (mcf)	253819.85
+2012	Withheld	Withheld	Withheld		Potash (tons)	254825
 2005	VA	Dickenson County	51051		Gas (mcf)	255301.9
 2014	UT	Uintah County	49047		Gas (mcf)	256147.47
 2010	OK	Canadian County	40017		Gas (mcf)	256589.32
@@ -4816,6 +4929,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2005	NM	San Juan County	35045		Gas (mcf)	267344
 2011	TX	Zapata County	48505		Gas (mcf)	267358.48
 2006	MS	Forrest County	28035		Gas (mcf)	267442.06
+2009	Withheld	Withheld	Withheld		Salt (tons)	268721
 2010	OK	Haskell County	40061		Gas (mcf)	270537.78
 2007	OK	Canadian County	40017		Gas (mcf)	270645.24
 2012	CA	Lassen County	06035		Geothermal - Direct Utilization, Millions of BTUs	271469.64
@@ -4837,6 +4951,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2010	NM	Colfax County	35007		Gas (mcf)	277607
 2012	CA	Ventura County	06111		Oil (bbl)	277771
 2014	NM	Sandoval County	35043		Gas (mcf)	277911
+2009	Withheld	Withheld	Withheld		Potash (tons)	278149
 2013	WY	Lincoln County	56023		Oil (bbl)	278398.66
 2008	ND	Dunn County	38025		Oil (bbl)	278544.21
 2008	NM	Colfax County	35007		Gas (mcf)	280223
@@ -4874,8 +4989,10 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2005	MT	Chouteau County	30015		Gas (mcf)	294783.06
 2009	ND	Golden Valley County	38033		Oil (bbl)	294806.05
 2009	ND	Mountrail County	38061		Gas (mcf)	295364.41
+2013	Withheld	Withheld	Withheld		Potash (tons)	296669
 2007	WY	Niobrara County	56027		Oil (bbl)	296955.75
 2012	UT	Grand County	49019		Oil (bbl)	296958.07
+2013	Withheld	Withheld	Withheld		Other Sodium Products (tons)	298010
 2014	OK	Roger Mills County	40129		Oil (bbl)	298032.49
 2008	WY	Niobrara County	56027		Oil (bbl)	298207.9
 2014	OK	Woodward County	40153		Gas (mcf)	298769.95
@@ -4914,6 +5031,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2012	AK	Kenai Peninsula Borough	02122		Oil (bbl)	317736
 2012	NV	Nye County	32023		Oil (bbl)	318293
 2007	TX	Johnson County	48251		Gas (mcf)	319419.48
+2008	Withheld	Withheld	Withheld		Salt (tons)	319856
 2011	WY	Carbon County	56007		Gas (mcf)	320910.5
 2005	UT	San Juan County	49037		Oil (bbl)	320956.52
 2011	OK	Washita County	40149		Gas (mcf)	321291.15
@@ -4924,6 +5042,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2007	OK	Custer County	40039		Gas (mcf)	323955.28
 2008	OK	Haskell County	40061		Gas (mcf)	325324.75
 2009	MT	Richland County	30083		Gas (mcf)	326282.19
+2008	Withheld	Withheld	Withheld		Potash (tons)	326418
 2006	NM	Eddy County	35015		Muriate Of Potash-Granular (tons)	327424
 2005	OK	Texas County	40139		Gas (mcf)	327450.92
 2011	WY	Lincoln County	56023		Oil (bbl)	327481.86
@@ -4945,12 +5064,14 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2014	WY	Weston County	56045		Oil (bbl)	339891.13
 2013	LA	Bienville Parish	22013		Gas (mcf)	340318.56
 2009	OK	Ellis County	40045		Gas (mcf)	340749.91
+2012	Withheld	Withheld	Withheld		Salt (tons)	340764
 2013	NM	Sandoval County	35043		Oil (bbl)	341012.22
 2007	ND	Golden Valley County	38033		Oil (bbl)	342357.12
 2013	NM	Eddy County	35015		Muriate Of Potash-Granular (tons)	342439
 2014	OK	Beckham County	40009		Gas (mcf)	343160.08
 2006	AK	Kenai Peninsula Borough	02122		Oil (bbl)	343676
 2008	ND	Golden Valley County	38033		Oil (bbl)	344308.82
+2010	Withheld	Withheld	Withheld		Potash (tons)	345161
 2007	OK	Haskell County	40061		Gas (mcf)	345523.83
 2014	UT	San Juan County	49037		Gas (mcf)	346543
 2011	MT	Hill County	30041		Gas (mcf)	347472.54
@@ -4963,6 +5084,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2006	MT	Dawson County	30021		Oil (bbl)	351461.46
 2006	ND	Golden Valley County	38033		Oil (bbl)	352017.44
 2009	KS	Haskell County	20081		Gas (mcf)	352431.41
+2009	Withheld	Withheld	Withheld		Other Potassium Products (tons)	353007
 2006	OK	Haskell County	40061		Gas (mcf)	356067.01
 2014	CA	Sacramento County	06067		Gas (mcf)	356104.84
 2008	ND	Golden Valley County	38033		Gas (mcf)	357480.75
@@ -4976,10 +5098,12 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2013	AR	Johnson County	05071		Gas (mcf)	361008.46
 2010	TX	Denton County	48121		Gas (mcf)	361503.37
 2011	NV	Nye County	32023		Oil (bbl)	361976
+2006	Withheld	Withheld	Withheld		Other Sodium Products (tons)	362307
 2010	TX	Shelby County	48419		Gas (mcf)	362705
 2011	WY	Weston County	56045		Oil (bbl)	363130.94
 2008	TX	Wise County	48497		Gas (mcf)	363186
 2014	NM	Eddy County	35015		Langbeinite (tons)	363289
+2010	Withheld	Withheld	Withheld		Salt (tons)	364023
 2012	AR	Johnson County	05071		Gas (mcf)	364227.25
 2010	NM	Eddy County	35015		Muriate Of Potash-Granular (tons)	364751
 2007	NV	Nye County	32023		Oil (bbl)	365676
@@ -4991,8 +5115,10 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2011	OK	Dewey County	40043		Gas (mcf)	369366.7
 2006	TX	Wise County	48497		Gas (mcf)	369463.42
 2014	CA	Ventura County	06111		Oil (bbl)	369612
+2007	Withheld	Withheld	Withheld		Other Sodium Products (tons)	369872
 2010	NV	Nye County	32023		Oil (bbl)	370267
 2005	OK	Haskell County	40061		Gas (mcf)	371011.08
+2012	Withheld	Withheld	Withheld		Other Sodium Products (tons)	371833
 2005	WY	Hot Springs County	56017		Gas (mcf)	372477.48
 2009	TX	Zapata County	48505		Gas (mcf)	372576.48
 2009	NM	Eddy County	35015		Salt (tons)	372956
@@ -5025,16 +5151,19 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2007	ND	Slope County	38087		Oil (bbl)	392520.9
 2010	WY	Lincoln County	56023		Oil (bbl)	392640.72
 2008	KS	Haskell County	20081		Gas (mcf)	392872.69
+2010	Withheld	Withheld	Withheld		Other Sodium Products (tons)	393009
 2010	WY	Weston County	56045		Oil (bbl)	393593.18
 2005	OK	Custer County	40039		Gas (mcf)	393619.75
 2011	OK	Ellis County	40045		Gas (mcf)	393813.92
 2012	LA	Caddo Parish	22017		Gas (mcf)	394752.42
+2011	Withheld	Withheld	Withheld		Potash (tons)	398067
 2008	NM	Eddy County	35015		Muriate Of Potash-Granular (tons)	398253
 2011	NM	Lea County	35025		Gas (mcf)	398680.41
 2005	NV	Nye County	32023		Oil (bbl)	398777
 2008	CA	Los Angeles County	06037		Oil (bbl)	398817.68
 2014	TX	Sabine County	48403		Gas (mcf)	399598.8
 2014	WY	Niobrara County	56027		Gas (mcf)	399792.81
+2010	Withheld	Withheld	Withheld		Other Potassium Products (tons)	400303
 2014	AL	Tuscaloosa County	01125		Gas (mcf)	400458.8
 2011	ND	Slope County	38087		Gas (mcf)	401696.35
 2011	AR	Johnson County	05071		Gas (mcf)	401920.11
@@ -5052,6 +5181,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2011	ND	Golden Valley County	38033		Oil (bbl)	411222.32
 2014	WY	Natrona County	56025		Gas (mcf)	412862.59
 2013	WY	Niobrara County	56027		Gas (mcf)	413049.4
+2005	Withheld	Withheld	Withheld		Salt (tons)	413803
 2014	WY	Uinta County	56041		Oil (bbl)	414591.72
 2013	UT	San Juan County	49037		Oil (bbl)	415355.43
 2009	ND	Slope County	38087		Oil (bbl)	415923.38
@@ -5068,7 +5198,9 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2012	NM	Eddy County	35015		Muriate Of Potash-Granular (tons)	424920
 2005	NM	Eddy County	35015		Muriate Of Potash-Granular (tons)	424981
 2013	NM	Eddy County	35015		Salt (tons)	425125
+2011	Withheld	Withheld	Withheld		Salt (tons)	425152
 2014	MI	Montmorency County	26119		Gas (mcf)	425439.1
+2008	Withheld	Withheld	Withheld		Other Sodium Products (tons)	428533
 2012	CA	Sacramento County	06067		Gas (mcf)	428566.25
 2007	NM	Sandoval County	35043		Gas (mcf)	428864.79
 2012	UT	San Juan County	49037		Oil (bbl)	428927.4
@@ -5092,6 +5224,8 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2012	OK	Beckham County	40009		Gas (mcf)	438027.34
 2008	TX	Nacogdoches County	48347		Gas (mcf)	438686.13
 2011	NM	Eddy County	35015		Salt (tons)	439367
+2014	Withheld	Withheld	Withheld		Salt (tons)	440428
+2005	Withheld	Withheld	Withheld		Potash (tons)	440674
 2012	MT	Carbon County	30009		Oil (bbl)	442517.37
 2014	OK	Dewey County	40043		Gas (mcf)	442565.22
 2009	MT	Richland County	30083		Oil (bbl)	443262.26
@@ -5099,9 +5233,11 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2005	NM	Sandoval County	35043		Gas (mcf)	445245.14
 2008	CO	Garfield County	08045		Oil (bbl)	445429.68
 2008	WY	Lincoln County	56023		Oil (bbl)	447583.24
+2007	Withheld	Withheld	Withheld		Potash (tons)	448032
 2011	MT	Carbon County	30009		Oil (bbl)	448126.79
 2010	AR	Pope County	05115		Gas (mcf)	448133.8
 2011	LA	Terrebonne Parish	22109		Gas (mcf)	449030
+2014	Withheld	Withheld	Withheld		Other Potassium Products (tons)	449740
 2010	MT	Carbon County	30009		Oil (bbl)	450430.02
 2009	WY	Lincoln County	56023		Oil (bbl)	451092.71
 2011	NM	Eddy County	35015		Muriate Of Potash-Granular (tons)	454506
@@ -5129,11 +5265,13 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2010	CO	Garfield County	08045		Oil (bbl)	466859.88
 2006	WY	Lincoln County	56023		Oil (bbl)	467115.29
 2014	NM	Eddy County	35015		Muriate Of Potash-Granular (tons)	467320
+2013	Withheld	Withheld	Withheld		Salt (tons)	468941
 2006	NM	Sandoval County	35043		Gas (mcf)	469145.35
 2009	MT	Carbon County	30009		Oil (bbl)	469428.19
 2006	NM	Eddy County	35015		Muriate Of Potash-Standard (tons)	469892
 2013	MI	Montmorency County	26119		Gas (mcf)	471187.97
 2007	MT	Richland County	30083		Gas (mcf)	471241.32
+2011	Withheld	Withheld	Withheld		Other Sodium Products (tons)	471675
 2006	KS	Haskell County	20081		Gas (mcf)	472353.88
 2008	TX	Zapata County	48505		Gas (mcf)	472374.79
 2010	UT	Emery County	49015		Coal (tons)	472904
@@ -5157,6 +5295,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2005	WY	Lincoln County	56023		Oil (bbl)	486330.55
 2010	MT	Hill County	30041		Gas (mcf)	486629.94
 2005	NM	Eddy County	35015		Gas (mcf)	486869.6
+2014	Withheld	Withheld	Withheld		Other Sodium Products (tons)	488493
 2010	LA	Plaquemines Parish	22075		Gas (mcf)	488863.72
 2005	AR	Logan County	05083		Gas (mcf)	491400.63
 2007	MT	Hill County	30041		Gas (mcf)	491434.34
@@ -5185,6 +5324,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2014	CO	Garfield County	08045		Oil (bbl)	511471.52
 2009	CO	San Miguel County	08113		Gas (mcf)	512120
 2009	NM	Lea County	35025		Gas (mcf)	512488.75
+2006	Withheld	Withheld	Withheld		Salt (tons)	512832
 2009	CO	Gunnison County	08051		Gas (mcf)	513915.17
 2005	KS	Haskell County	20081		Gas (mcf)	515173.53
 2013	CA	Ventura County	06111		Gas (mcf)	515491
@@ -5196,17 +5336,20 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2012	WY	Niobrara County	56027		Gas (mcf)	524183.14
 2007	WY	Campbell County	56005		Gas (mcf)	525038
 2011	AL	Tuscaloosa County	01125		Gas (mcf)	525323.45
+2011	Withheld	Withheld	Withheld		Other Potassium Products (tons)	526581
 2012	MI	Montmorency County	26119		Gas (mcf)	531178.93
 2009	AR	Johnson County	05071		Gas (mcf)	531362.94
 2009	TX	Nacogdoches County	48347		Gas (mcf)	532392.04
 2008	TX	Johnson County	48251		Gas (mcf)	534493.98
 2009	WY	Carbon County	56007		Gas (mcf)	535625
 2014	WY	Washakie County	56043		Oil (bbl)	536571.55
+2008	Withheld	Withheld	Withheld		Other Potassium Products (tons)	539195
 2006	WY	Fremont County	56013		Oil (bbl)	543419.48
 2011	OK	Le Flore County	40079		Coal (tons)	544641.29
 2006	WY	Weston County	56045		Oil (bbl)	545705.37
 2013	UT	Grand County	49019		Oil (bbl)	546620.94
 2008	WY	Hot Springs County	56017		Gas (mcf)	546985.79
+2005	Withheld	Withheld	Withheld		Phosphate Raw Ore (tons)	550626
 2013	MT	Big Horn County	30003		Gas (mcf)	551004.01
 2005	NM	Eddy County	35015		Langbeinite (tons)	551675
 2005	OK	Woodward County	40153		Gas (mcf)	552005.26
@@ -5283,6 +5426,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2011	AR	Yell County	05149		Gas (mcf)	626120.71
 2011	CO	Mesa County	08077		Gas (mcf)	626784.54
 2011	NM	Chaves County	35005		Oil (bbl)	626947.77
+2009	Withheld	Withheld	Withheld		Soda Ash (tons)	627055
 2012	CA	Ventura County	06111		Gas (mcf)	636216.5
 2011	CO	Garfield County	08045		Oil (bbl)	643848.8
 2005	AL	Tuscaloosa County	01125		Gas (mcf)	644830.59
@@ -5327,10 +5471,12 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2010	TX	San Jacinto County	48407		Gas (mcf)	703693
 2009	WY	Niobrara County	56027		Gas (mcf)	704654.52
 2009	MI	Montmorency County	26119		Gas (mcf)	705719.67
+2007	Withheld	Withheld	Withheld		Salt (tons)	705887
 2013	NM	Eddy County	35015		Langbeinite (tons)	707765
 2010	NM	Rio Arriba County	35039		Oil (bbl)	708601.86
 2007	WY	Johnson County	56019		Gas (mcf)	709603
 2010	WY	Campbell County	56005		Gas (mcf)	712665
+2010	Withheld	Withheld	Withheld		Soda Ash (tons)	712983
 2014	CA	Ventura County	06111		Gas (mcf)	713113
 2005	OK	Le Flore County	40079		Coal (tons)	714616
 2011	NM	San Juan County	35045		Oil (bbl)	715278.58
@@ -5356,9 +5502,11 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2012	NM	Chaves County	35005		Oil (bbl)	737307.16
 2008	WY	Niobrara County	56027		Gas (mcf)	737725.42
 2011	NM	Rio Arriba County	35039		Oil (bbl)	738048.83
+2012	Withheld	Withheld	Withheld		Soda Ash (tons)	738199
 2013	WY	Carbon County	56007		Oil (bbl)	738385.05
 2012	NM	Rio Arriba County	35039		Oil (bbl)	739848.33
 2010	WY	Washakie County	56043		Gas (mcf)	740440.42
+2012	Withheld	Withheld	Withheld		Phosphate Raw Ore (tons)	741563
 2005	CA	Ventura County	06111		Gas (mcf)	743679
 2008	CA	Ventura County	06111		Gas (mcf)	744351
 2011	NM	Eddy County	35015		Langbeinite (tons)	745606
@@ -5366,6 +5514,8 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2012	WY	Crook County	56011		Oil (bbl)	749453.42
 2005	CO	Garfield County	08045		Gas (mcf)	751219
 2014	OK	Major County	40093		Gas (mcf)	754094.01
+2008	Withheld	Withheld	Withheld		Soda Ash (tons)	756762
+2007	Withheld	Withheld	Withheld		Soda Ash (tons)	758283
 2007	WY	Big Horn County	56003		Oil (bbl)	759656.23
 2007	WY	Niobrara County	56027		Gas (mcf)	762637.41
 2012	NM	San Juan County	35045		Oil (bbl)	762710.62
@@ -5375,6 +5525,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2009	LA	Plaquemines Parish	22075		Gas (mcf)	769432.12
 2007	NM	Rio Arriba County	35039		Oil (bbl)	771429.18
 2008	TX	Houston County	48225		Gas (mcf)	772694.71
+2011	Withheld	Withheld	Withheld		Soda Ash (tons)	773071
 2009	NM	San Juan County	35045		Oil (bbl)	773443.57
 2008	NM	Rio Arriba County	35039		Oil (bbl)	774850.17
 2010	NM	Chaves County	35005		Oil (bbl)	775244.56
@@ -5391,6 +5542,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2005	AR	Johnson County	05071		Gas (mcf)	788733.21
 2011	CO	Gunnison County	08051		Gas (mcf)	791059.24
 2008	OK	Beckham County	40009		Gas (mcf)	792307.02
+2013	Withheld	Withheld	Withheld		Soda Ash (tons)	795044
 2010	WY	Johnson County	56019		Oil (bbl)	796012.29
 2012	WY	Johnson County	56019		Oil (bbl)	797941.37
 2005	CO	Yuma County	08125		Gas (mcf)	801309.37
@@ -5400,12 +5552,14 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2010	WY	Carbon County	56007		Oil (bbl)	805271.21
 2007	CO	Jackson County	08057		Gas (mcf)	806182.64
 2006	NM	Rio Arriba County	35039		Oil (bbl)	808032.62
+2014	Withheld	Withheld	Withheld		Soda Ash (tons)	808402
 2013	KS	Finney County	20055		Gas (mcf)	808482.05
 2006	MI	Montmorency County	26119		Gas (mcf)	808842.8
 2006	WY	Big Horn County	56003		Oil (bbl)	812267.13
 2012	NM	Roosevelt County	35041		Gas (mcf)	813993.56
 2012	WY	Carbon County	56007		Oil (bbl)	815483.76
 2014	LA	De Soto Parish	22031		Gas (mcf)	816387.6
+2006	Withheld	Withheld	Withheld		Soda Ash (tons)	817601
 2005	WY	Crook County	56011		Oil (bbl)	818143.04
 2013	NM	Rio Arriba County	35039		Oil (bbl)	818278.46
 2006	TX	Denton County	48121		Gas (mcf)	819079.1
@@ -5416,6 +5570,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2008	CO	Jackson County	08057		Gas (mcf)	821960.77
 2014	WY	Weston County	56045		Gas (mcf)	829710.78
 2010	NM	Eddy County	35015		Langbeinite (tons)	830346
+2005	Withheld	Withheld	Withheld		Soda Ash (tons)	831497
 2011	WY	Lincoln County	56023		Gas (mcf)	832946.11
 2011	WY	Carbon County	56007		Oil (bbl)	833372.21
 2010	ND	Mountrail County	38061		Gas (mcf)	835957.39
@@ -6389,6 +6544,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2013	WY	Natrona County	56025		Gas (mcf)	15573210.48
 2014	MT	Big Horn County	30003		Coal (tons)	15703781
 2005	CO	San Miguel County	08113		Gas (mcf)	15715072.29
+2011	Withheld	Withheld	Withheld		Coal (tons)	15843973.71
 2009	CO	Mesa County	08077		Gas (mcf)	15876580.57
 2012	MT	Big Horn County	30003		Coal (tons)	16004122
 2011	AL	Mobile County	01097		Gas (mcf)	16216344.1
@@ -6411,18 +6567,23 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2012	CO	Mesa County	08077		Gas (mcf)	18047493.59
 2006	MT	Big Horn County	30003		Coal (tons)	18072165
 2010	AL	Mobile County	01097		Gas (mcf)	18167854.67
+2010	Withheld	Withheld	Withheld		Coal (tons)	18396804.24
 2008	CO	Mesa County	08077		Gas (mcf)	18456446.03
 2007	MT	Big Horn County	30003		Coal (tons)	18777497
 2009	LA	Bossier Parish	22015		Gas (mcf)	18909474.02
+2007	Withheld	Withheld	Withheld		Coal (tons)	18961860.04
 2011	CO	Rio Blanco County	08103		Gas (mcf)	19075638.5
 2010	NM	Eddy County	35015		Oil (bbl)	19145802.27
+2009	Withheld	Withheld	Withheld		Coal (tons)	19167321.61
 2014	TX	Tarrant County	48439		Gas (mcf)	19301196.37
 2008	MT	Big Horn County	30003		Coal (tons)	19316074
+2012	Withheld	Withheld	Withheld		Coal (tons)	19320740.91
 2014	CA	Lake County	06033		Geothermal - Electrical Generation, Thousands of Pounds	19550547.09
 2013	NV	Mineral County	32021		Geothermal - Electrical Generation, Kilowatt Hours	19609001
 2013	CA	Lake County	06033		Geothermal - Electrical Generation, Thousands of Pounds	19664634.99
 2009	AL	Mobile County	01097		Gas (mcf)	19941925.9
 2014	NM	Lea County	35025		Oil (bbl)	19951737.44
+2008	Withheld	Withheld	Withheld		Coal (tons)	20465633
 2012	WY	Natrona County	56025		Gas (mcf)	20621139.23
 2012	CA	Lake County	06033		Geothermal - Electrical Generation, Thousands of Pounds	20689289.49
 2009	CA	Lake County	06033		Geothermal - Electrical Generation, Thousands of Pounds	20771777.54
@@ -6430,11 +6591,13 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2011	CA	Lake County	06033		Geothermal - Electrical Generation, Thousands of Pounds	20965734.74
 2010	CA	Lake County	06033		Geothermal - Electrical Generation, Thousands of Pounds	20975267.77
 2008	CA	Lake County	06033		Geothermal - Electrical Generation, Thousands of Pounds	21265241.42
+2013	Withheld	Withheld	Withheld		Coal (tons)	21318188.32
 2005	UT	Carbon County	49007		Gas (mcf)	21362506.52
 2011	NM	Eddy County	35015		Oil (bbl)	21509573.19
 2007	AL	Mobile County	01097		Gas (mcf)	21627470.47
 2007	CA	Lake County	06033		Geothermal - Electrical Generation, Thousands of Pounds	21799180.09
 2008	AL	Mobile County	01097		Gas (mcf)	22277407.93
+2006	Withheld	Withheld	Withheld		Coal (tons)	22435709.04
 2011	WY	Natrona County	56025		Gas (mcf)	22566226.93
 2010	AK	Kenai Peninsula Borough	02122		Gas (mcf)	22767535.95
 2013	TX	Tarrant County	48439		Gas (mcf)	23191822.42
@@ -6444,6 +6607,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2011	WY	Johnson County	56019		Gas (mcf)	23959298
 2013	CO	Garfield County	08045		Gas (mcf)	24327566.38
 2013	NM	Eddy County	35015		Gas (mcf)	24861479.75
+2005	Withheld	Withheld	Withheld		Coal (tons)	24919890.01
 2009	NV	Humboldt County	32013		Geothermal - Electrical Generation, Kilowatt Hours	25011927.21
 2007	WY	Natrona County	56025		Gas (mcf)	25218677.59
 2012	NM	Eddy County	35015		Oil (bbl)	25826787.66
@@ -6485,6 +6649,7 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2012	WY	Converse County	56009		Coal (tons)	32480454.37
 2005	WY	Johnson County	56019		Gas (mcf)	33048491
 2006	WY	Natrona County	56025		Gas (mcf)	33358331.83
+2014	Withheld	Withheld	Withheld		Coal (tons)	34078422.39
 2008	AK	Kenai Peninsula Borough	02122		Gas (mcf)	34097022.72
 2014	WY	Lincoln County	56023		Gas (mcf)	34978726.7
 2007	AK	Kenai Peninsula Borough	02122		Gas (mcf)	36868361.2

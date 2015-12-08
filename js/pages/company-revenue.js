@@ -8,7 +8,7 @@
 
   var getter = eiti.data.getter;
   var grouper;
-  var formatNumber = eiti.format.dollars;
+  var formatNumber = eiti.format.dollarsAndCents;
   var REVENUE_TYPE_PREFIX = /^[A-Z]+(\/[A-Z]+)?\s+-\s+/;
 
   var state = eiti.explore.stateManager()
@@ -135,8 +135,8 @@
         };
       });
 
-    var max = d3.max(types, getter('value'));
-    revenueTypeList.call(renderSubtypes, types, max);
+    var extent = d3.extent(types, getter('value'));
+    revenueTypeList.call(renderSubtypes, types, extent);
   }
 
   function updateCompanyList(data) {
@@ -170,23 +170,36 @@
     items.exit().remove();
 
     var enter = items.enter().append('tbody')
-      .attr('class', 'company subgroup');
-    enter.append('tr')
-      .attr('class', 'name')
-      .append('th')
-        .attr('colspan', 3)
-        .attr('class', 'subregion-name')
-        .text(getter('name'));
+      .attr('class', 'company subgroup')
+      .append('tr')
+        .attr('class', 'name');
+    enter.append('th')
+      .attr('class', 'subregion-name')
+      .text(getter('name'));
+    enter.append('th')
+      .attr('class', 'subtotal value');
+    enter.append('th')
+      .attr('class', 'subtotal-label');
 
     items.sort(function(a, b) {
       return d3.descending(a.total, b.total);
     });
 
-    var max = d3.max(companies, getter('total'));
-    items.call(renderSubtypes, getter('types'), max);
+    items.select('.subtotal-label')
+      .text(function(d) {
+        return d.types.length > 1 ? 'total' : '';
+      });
+
+    items.select('.subtotal')
+      .text(function(d) {
+        return d.types.length > 1 ? formatNumber(d.total) : '';
+      });
+
+    var extent = d3.extent(companies, getter('total'));
+    items.call(renderSubtypes, getter('types'), extent);
   }
 
-  function renderSubtypes(selection, types, max) {
+  function renderSubtypes(selection, types, extent) {
     var items = selection.selectAll('.subtype')
       .data(types, getter('name'));
 
@@ -196,7 +209,7 @@
       .call(setupRevenueItem);
 
     items
-      .call(updateRevenueItem, max)
+      .call(updateRevenueItem, extent)
       .sort(function(a, b) {
         return d3.descending(a.value, b.value);
       });
@@ -245,7 +258,7 @@
       .append('eiti-bar');
   }
 
-  function updateRevenueItem(selection, max) {
+  function updateRevenueItem(selection, extent) {
     selection.select('.name')
       .text(getter('name'));
 
@@ -256,13 +269,16 @@
 
     var bar = selection.select('eiti-bar')
       .attr('value', getter('value'));
-    if (max) {
-      bar.attr('max', max);
+
+    if (extent) {
+      bar
+        .attr('min', Math.min(0, extent[0]))
+        .attr('max', extent[1]);
     }
   }
 
   function updateFilterDescription(state) {
-    var desc = root.select('#filter-description');
+    var desc = root.selectAll('[data-filter-description]');
 
     var data = {
       type: state.get('type') || 'All revenue',

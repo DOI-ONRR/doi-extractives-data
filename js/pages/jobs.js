@@ -180,7 +180,6 @@
       }
 
       var total = d3.sum(data, getter(fields.value));
-      total = Math.floor(total);
       header
         .datum({
           value: total,
@@ -691,7 +690,7 @@
   }
 
   function updateFilterDescription(state) {
-    var desc = root.select('#filter-description');
+    var desc = root.selectAll('[data-filter-description]');
 
     var commodity = state.get('commodity') ||
       (state.get('group')

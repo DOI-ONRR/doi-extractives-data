@@ -17,7 +17,7 @@
   var timeline = root.select('#timeline');
 
   var getter = eiti.data.getter;
-  var formatNumber = eiti.format.dollars;
+  var formatNumber = eiti.format.dollarsAndCents;
   var NULL_FILL = '#eee';
 
   // buttons that expand and collapse other elements
@@ -180,7 +180,6 @@
       }
 
       var total = d3.sum(data, getter(fields.value));
-      total = Math.floor(total);
       header
         .datum({
           value: total,
@@ -323,7 +322,8 @@
         return d.value < 0 ? formatNumber(d.value) : '';
       });
     selection.select('.bar_negative eiti-bar')
-      .attr('max', -max)
+      .attr('min', -max)
+      .attr('max', 0)
       .attr('value', function(d) {
         return d.value < 0 ? d.value : 0;
       });
@@ -400,6 +400,7 @@
       .append('span')
         .attr('class', 'label');
 
+    var format = eiti.format.shortDollars;
     steps
       .style('border-color', getter('color'))
       .attr('title', function(d) {
@@ -412,8 +413,8 @@
           return d.none
             ? d.range[0]
             : i === last
-              ? formatNumber(d.range[0]) + '+'
-              : formatNumber(d.range[0]);
+              ? format(d.range[0]) + '+'
+              : format(d.range[0]);
         });
   }
 
@@ -703,7 +704,7 @@
   }
 
   function updateFilterDescription(state) {
-    var desc = root.select('#filter-description');
+    var desc = root.selectAll('[data-filter-description]');
 
     var commodity = state.get('commodity') ||
       (state.get('group')

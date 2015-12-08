@@ -187,7 +187,6 @@
             layer.classed('topology', true);
             if (!d.bbox) {
               d.bbox = getBBox(features.map(path.bounds));
-              // console.warn('generated bbox for Topology:', features, '->', d.bbox);
             }
             break;
 

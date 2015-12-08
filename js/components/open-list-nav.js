@@ -91,7 +91,7 @@
 
     OpenListNav.prototype.changeHandler = function(selector) {
       window.location.hash = selector.value;
-    }
+    };
 
     OpenListNav.prototype.detectNavChange = function(){
 

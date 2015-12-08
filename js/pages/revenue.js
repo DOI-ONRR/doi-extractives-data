@@ -200,8 +200,9 @@
         }
 
         var features = subregions.data();
+
         var dataByFeatureId = d3.nest()
-          .key(getter(fields.region))
+          .key(getter(fields.subregion))
           .rollup(function(d) {
             return d3.sum(d, getter(fields.value));
           })
@@ -441,10 +442,12 @@
           };
         }
         break;
-      case 3:
-        fields.region = 'Area';
-        fields.featureId = function(f) {
-          return f.properties.name;
+
+      // offshore regions
+      default:
+        fields.subregion = 'Area';
+        fields.featureId = function(d) {
+          return d.properties.name;
         };
         break;
     }
@@ -676,7 +679,7 @@
       }
 
       var region = state.get('region');
-      if (region && region.length === 3) {
+      if (region && region.length !== 2) {
         var fields = getFields(region);
         var regionName = REGION_ID_NAME[region];
         data = data.filter(function(d) {

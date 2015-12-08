@@ -1,5 +1,5 @@
-name,id
-Alaska,alaska
-Atlantic,atlantic
-Gulf,gulf
-Pacific,pacific
+name,id,viewbox
+Alaska,alaska,75 415 202 173
+Atlantic,atlantic,730 125 230 440
+Gulf,gulf,488 450 275 115
+Pacific,pacific,20 60 161 341

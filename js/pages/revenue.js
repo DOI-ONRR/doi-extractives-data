@@ -202,7 +202,7 @@
         var features = subregions.data();
 
         var dataByFeatureId = d3.nest()
-          .key(getter(fields.subregion))
+          .key(getter(fields.subregion || fields.region))
           .rollup(function(d) {
             return d3.sum(d, getter(fields.value));
           })

@@ -297,7 +297,12 @@ async.parallel({
 
           var newResults = {};
 
-          if (val == 'Year' || !val || i === 0 || !inYearRange){ return; }
+          var invalidRow = (val === 'Year'),
+            emptyRow = !val,
+            firstRow = (i === 0),
+            regionIsUS = (val === 'US');
+
+          if (invalidRow || emptyRow || firstRow || !inYearRange || regionIsUS){ return; }
           newResults.Year = d['Year'];
           newResults.Region = val;
           newResults.Commodity = commodity;

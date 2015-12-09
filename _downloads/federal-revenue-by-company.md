@@ -19,10 +19,9 @@ permalink: /downloads/federal-revenue-by-company/
     <p class="downloads-download_links-intro">Download calendar year data:
       <ul class="downloads-download_links">
         <li><a href="{{site.baseurl}}/downloads/federal_revenue_by_company_CY2013_2015-11-10.xlsx"><icon class="icon-cloud icon-padded"></icon>
-        Full dataset (xlsx, 132 KB)
-       </a></li>
-     </ul>
-   </p>
+        Full dataset (xlsx, 132 KB)</a></li>
+       </ul>
+     </p>
 
     <h2 class="h3">Scope</h2>
 

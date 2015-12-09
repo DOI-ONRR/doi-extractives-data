@@ -49,7 +49,9 @@ nav_items:
   <a class="revenues_subpage-breadcrumb" href="{{ site.baseurl }}/how-it-works/">How it works</a>
   /
 </div>
-<h1 id="introduction" data-nav-header="introduction">State Legal and Fiscal Information</h1>
+<h1 id="introduction" data-nav-header="introduction">Regulations in 18 states</h1>
+
+<p class="case_studies_intro-para">Learn more about natural resource regulation, production, and revenue in the 18 states that, in 2013, led the country in oil, gas, coal, and nonenergy mineral production; had the most DOI revenue and / or state production taxes; or had the most significant tribal natural resource interest.</p>
 
 <nav class="hash_selector">
   {% include hash_selector.html %}

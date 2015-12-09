@@ -67,7 +67,7 @@ permalink: /about/
 
       <div class="container-right-5">
 
-          <img src="{{ site.baseurl }}/img/eiti-msg.jpg" alt="Multi-stakeholder group process" class="u-img" style="width:70%;">
+          <img src="{{ site.baseurl }}/img/msg.svg" alt="The EITI multi-stakeholder group consists of civil society, companies and governments." class="article_img-60 u-margin-top">
 
       </div>
 
@@ -83,7 +83,7 @@ permalink: /about/
 
       <div class="container-right-5">
 
-        <img src="{{ site.baseurl }}/img/eiti-report.jpg" alt="The EITI report process" class="u-img" style="padding-top:50px;">
+        <img src="{{ site.baseurl }}/img/eiti-report-process.svg" alt="The EITI report process involves companies disclosing payments, and government disclosing receipts, which are then reconciled by an independent administrator." class="article_img-60">
 
       </div>
 

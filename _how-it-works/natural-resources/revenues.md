@@ -86,8 +86,6 @@ nav_items:
 
 <h3 id="federal-budget-process" data-nav-header="federal-budget-process">Federal budget process</h3>
 
-<p>Once revenue is collected by the federal government, it passes through a series of budgetary gateways before ultimately funding public services and community development. These gateways are described below:</p>
+<p>Once revenue is collected by the federal government, it passes through a series of budgetary gateways before ultimately funding public services and community development. These gateways are described below, and you can explore disbursement data on our site <a href="{{ site.baseurl }}/explore/disbursements/">here</a>.</p>
 
-<img src="{{site.baseurl}}/img/landing-placeholders/disbursements.png">
-
-<p>You can explore disbursement data on our site <a href="{{ site.baseurl }}/explore/disbursements/">here</a>.</p>
+<img src="{{site.baseurl}}/img/federal-budget-process.png" alt="Federal budget process. First, statute (federal statutes determine the maximum amount of funds that can be appropriated). Second, appropriation (Congress determines the amount that a given entity or agency will receive). Third, grant (recipient entities determine how much the funding will be allocated for use in their budgets). Finally, disbursement (recipient entities disburse funds over the course of the fiscal year for budgeted purposes)." class="article_img-80 u-margin-top">

@@ -12,32 +12,34 @@ permalink: /downloads/reconciliation/
       <a class="breadcrumb" href="{{ site.baseurl }}/downloads/">Downloads</a>
       /
     </div>
-    <h1>Reconciliation Data</h1>
+    <h1>Reconciliation</h1>
 
-    <a href="{{site.baseurl}}/downloads/reconciliation_2015-11-20.xlsx" class="button-tertiary">
-      <icon class="icon-cloud icon-padded"></icon>Download full dataset, docs included (xlsx, 39 KB)
-    </a>
-
-    <h2>Documentation</h2>
-    <p>To implement the EITI Standard, government, industry, and civil society collaborate in a disclosure process called reconciliation. The three sectors in a participating country develop a framework for reconciliation. Government and industry share with the Independent Administrator (IA) the total amount of revenue the government received and industry paid in the year under review. The IA reconciles reported revenue and investigates any discrepancies. The public can see the results for their respective country in an annual EITI report.</p>
+    <p class="case_studies_intro-para">To implement the EITI Standard, government, industry, and civil society collaborate in a disclosure process called reconciliation. The three sectors in a participating country develop a framework for reconciliation. Government and industry share with the Independent Administrator (IA) the total amount of revenue the government received and industry paid in the year under review. The IA reconciles reported revenue and investigates any discrepancies. The public can see the results for their respective country in an annual EITI report.</p>
 
     <p>Through a unilateral disclosure, the Department of the Interior (DOI) published online all in-scope revenue from extraction on federal lands by revenue stream and company for CY 2013. DOI reported a total of $12.64 billion in revenue, disclosing to the public 100% of in-scope DOI revenue from extraction on federal lands during CY 2013. In addition to DOI’s unilateral disclosure, the Multi-stakeholder Group (MSG) asked companies to report to the IA that same nontax information, revenue payments to DOI, as well as federal corporate income tax payments and refunds from the Internal Revenue Service (IRS).</p>
 
-    <h3>What is the scope of the revenue payment data reconciliation?</h3>
+    <p class="downloads-download_links-intro">Download calendar year data:
+      <ul class="downloads-download_links">
+        <li><a href="{{site.baseurl}}/downloads/reconciliation_2015-11-20.xlsx"><icon class="icon-cloud icon-padded"></icon>
+        Full dataset (xlsx, 39 KB)</a></li>
+       </ul>
+     </p>
+
+    <h2>Scope</h2>
 
     <p>Requirement 4 of the EITI Standard outlines the responsibility of the MSG to determine the scope of EITI reporting in the United States. In carrying out this responsibility, the MSG considered information from a variety of sources before coming to a consensus on the scope for the 2015 USEITI Report.</p>
 
     <p>The MSG publishes meeting minutes and materials for all subcommittee and full MSG meetings on the <a href="https://www.doi.gov/eiti/FACA/meetings">MSG website</a>. These minutes and materials document the MSG’s historical considerations and decisions around scoping. Please refer to <em>Appendix A: Revenue Reporting Considerations</em> within the <a href="{{site.baseurl}}/downloads/USEITI_extractive-revenue-appendix_2015-12-02.pdf">Extractive Revenue Appendix (PDF)</a> for additional background on the scoping process for USEITI.</p>
 
-    <h4>In-scope government entities and revenue streams</h4>
+    <h3>In-scope government entities and revenue streams</h3>
 
     <p></p>
 
-    <h4>In-scope reporting entities</h4>
+    <h3>In-scope reporting entities</h3>
 
     <p>The MSG identified that ONRR collects a majority of DOI’s extractive industries-related revenue. The MSG decided to use ONRR’s reported revenue as a proxy for DOI revenue to establish the materiality threshold for reporting. The MSG decided on a materiality threshold for the 2015 USEITI Report of $50 million total annual revenue reported to ONRR by a parent company, including its subsidiaries, which was presented and approved as part of the <a href="http://www.cbuilding.org/sites/default/files/USEITI_Candidacy_Application_Approved_0.pdf">USEITI candidacy application (PDF)</a>. The MSG agreed on this threshold because it would allow at least 80% of ONRR’s revenue to be in-scope for the reconciliation. A more detailed analysis of ONRR revenue data revealed that the $50 million threshold resulted in 84% of ONRR revenue being in-scope for the reconciliation. DOI’s unilateral disclosure covers 100% of revenue from all companies operating within the U.S.</p>
 
-    <h5>In-scope companies</h5>
+    <h3>In-scope companies</h3>
 
     <ul class="list-bullet">
         <li>Alpha Natural Resources, Inc.</li>
@@ -90,15 +92,15 @@ permalink: /downloads/reconciliation/
         <li>WPX Energy, Inc.</li>
     </ul>
 
-    <h4>Basis and period of reporting</h4>
+    <h2>Basis and period of reporting</h2>
 
     <p>The period of the reconciliation was CY 2013 (January 1, 2013 through December 31, 2013). Reporting companies and government entities reported data for payments made or reported in CY 2013. The reporting currency for the 2015 USEITI Report was US dollars (USD). Companies reported data at the consolidated entity level, including data for all identified subsidiary entities.</p>
 
-    <h3>How did the Independent Administrator perform the reconciliation?</h3>
+    <h2>How did the Independent Administrator perform the reconciliation?</h2>
 
     <p>Based upon Requirement 5.1 of the EITI Standard, the IA performed the reconciliation of company payments and government revenue as follows:</p>
 
-    <h4>Data collection</h4>
+    <h3>Data collection</h3>
 
     <p>The IA distributed the 2015 USEITI reporting and reconciliation package to reporting companies on March 4, 2015. The package included a cover letter summarizing the USEITI process, a <a href="https://www.doi.gov/sites/doi.gov/files/migrated/eiti/upload/USEITI-Reporting-Template-03042015-1.pdf">Data Reporting Template (PDF)</a>, a <a href="https://www.doi.gov/sites/doi.gov/files/migrated/eiti/upload/USEITI-Reporting-Template-Guidelines-030415-1.pdf">reporting template guidelines document (PDF)</a> with detailed reporting instructions, and <a href="https://www.doi.gov/sites/doi.gov/files/migrated/eiti/upload/Form-8821-IRS-USEITI.pdf">IRS Form 8821 (PDF)</a>, which is required to authorize the IRS to disclose tax data to the IA for the reporting companies participating in reconciliation of taxes.</p>
 
@@ -110,11 +112,11 @@ permalink: /downloads/reconciliation/
         <li>For reporting companies that made the decision to allow for tax reconciliation, the IRS provided the data directly to the IA for reconciliation. Due to federal tax confidentiality laws, these reporting companies have to authorize the IRS to release corporate tax payment data to the IA through the use of IRS Form 8821.</li>
     </ul>
 
-    <h4>Data reconciliation</h4>
+    <h3>Data reconciliation</h3>
 
     <p>The IA reconciled the data by comparing the reported amounts from reporting companies to the reported amounts from government entities and identifying any variance amounts. The IA then compared any variance amounts to an investigation threshold known as the Margin of Variance.</p>
 
-    <h4>Margin of variance</h4>
+    <h3>Margin of variance</h3>
 
     <p>The MSG considered and approved a Margin of Variance for the IA to apply during the reconciliation. The purpose of the Margin of Variance was to establish a threshold above which variances in reported payments required further evaluation. The MSG determined that variances below the Margin of Variance did not require further evaluation. Variances that were below the respective threshold were presented as-is, with no further consideration. Variances that exceeded the respective threshold were subject to further evaluation and explanation.</p>
 

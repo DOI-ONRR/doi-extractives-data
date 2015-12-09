@@ -17,32 +17,32 @@ nav_items:
   - name: costs
     title: Costs
   - name: data
-    title: Data availablity
+    title: Data
 ---
 
-<h3><a name="intro" class="case_studies_content-heading" data-nav-header="intro">{{ page.title }}</a></h3>
+<h2 class="h3"><a name="intro" class="case_studies_content-heading" data-nav-header="intro">{{ page.title }}</a></h3>
 
 Texas leads the country in natural gas production, generating more gas annually than the next three highest-producing states combined (Louisiana, Oklahoma, and Wyoming).[^1] Tarrant and Johnson counties contribute significantly to Texas’s natural gas production due to their geographic positioning atop the rich reserves of the Barnett Shale field in the Bend Arch-Fort Worth Basin.
 
-<h3><a name="geology" class="case_studies_content-heading" data-nav-header="geology">Geology and history</a></h3>
+<h2 class="h3"><a name="geology" class="case_studies_content-heading" data-nav-header="geology">Geology and history</a></h3>
 
 The Barnett Shale reserve spans approximately 5,000 square miles of sedimentary clay and quartz rock, with much of the productive portion of the rock located beneath Tarrant and Johnson counties. With an estimated 43 trillion cubic feet of proved reserves of natural gas, the Barnett Shale is one of the largest onshore natural gas formations in the country.[^2]
 
 For many years, the Barnett Shale acted as an important sealing cap rock for conventional oil and gas development, but was not regarded as a legitimate source for economically viable drilling. However, technological advances in the 1980s allowed Mitchell Energy to drill its first well, and drilling activity increased with rising gas prices in the 1990s. Specifically, horizontal drilling and hydraulic fracturing techniques allowed producers to access more natural gas from relatively thin shale deposits. The number of horizontal wells in the Barnett Shale grew from approximately 400 in 2004 to 10,860 in 2011.[^3] [^4]
 
-<h3><a name="production" class="case_studies_content-heading" data-nav-header="production">Production</a></h3>
+<h2 class="h3"><a name="production" class="case_studies_content-heading" data-nav-header="production">Production</a></h2>
 
 In 2013, Tarrant and Johnson counties produced a combined 1.16 trillion cubic feet of natural gas from state-owned lands, constituting a significant portion of Texas’s total 7.73 trillion cubic feet output.[^5] [^6] [^7] Almost all other drilling in the state occurs on private lands, as only 1.8% of the acreage in Texas is federal land.[^8] The 2013 output was particularly remarkable given that only ten years prior, the two counties were producing just 7% of this amount.[^9] [^10] However, production began to drop in 2013 with falling natural gas prices and strong global supplies.
 
 <img src="{{ site.baseurl }}/img/counties/tx-production.png" alt="Tarrant and Johnson Counties Natural Gas Production on State-Owned Lands 2004 – 2013" class="case_studies_content-graph">
 
-<h3><a name="employment" class="case_studies_content-heading" data-nav-header="employment">Employment</a></h3>
+<h2 class="h3"><a name="employment" class="case_studies_content-heading" data-nav-header="employment">Employment</a></h2>
 
 The boom in natural gas production in the Barnett Shale over the past decade increased employment in this sector. Based on data from the U.S. Census Bureau, the number of residents employed in the oil and gas industries has more than quadrupled in the past decade.[^11] In 2013, the oil and gas industry (including extraction, drilling, and support services) employed an estimated 7,371 residents, or less than 1% of the two counties’ total employment of 849,624 and less than 0.01% of the two counties’ total population of 2.07 million.[^12]
 
 <img src="{{ site.baseurl }}/img/counties/tx-employment.png" alt="Tarrant and Johnson Counties Oil and Gas Industry Employment Trend 2004 - 2013" class="case_studies_content-graph">
 
-<h3><a name="revenue" class="case_studies_content-heading" data-nav-header="revenue">Revenue</a></h3>
+<h2 class="h3"><a name="revenue" class="case_studies_content-heading" data-nav-header="revenue">Revenue</a></h2>
 
 The State of Texas levies a Natural Gas Production Tax at 7.5% of the market value of the gas, but with the various allowable exemptions and reductions, the effective tax rate hovers below 2%.[^13] In 2013, the state government collected $1.5 billion from this tax, earmarking 25% for investment in the Permanent School Fund (PSF), and directing the rest to the state’s Economic Stabilization Fund.[^14] The interest earned on the PSF investments is distributed by the State Board of Education to every school district on a per-pupil basis.[^15]
 
@@ -50,7 +50,7 @@ The state also collects royalties from the natural gas produced on state-owned l
 
 Tarrant and Johnson counties derive additional revenue from extractive industries through local property and mineral taxes. In Tarrant County, thousands of homeowners own very small interests in gas units located under large residential developments.[^17] The value of all real property in a given county is assessed by the County Appraisal District, and property taxes are levied based on applicable mill rates for the locality. Property tax revenue for Tarrant and Johnson counties from all sources, not just natural gas property, totaled $367 million in 2013, which constituted a 48% increase from 2004. In its 2012 annual report, the Tarrant County Auditor’s Office cited the development of Barnett Shale gas resources as a factor in providing significant employment and business opportunities, which helped to offset the reduction in other property values and provided additional taxable value.[^18] [^19]
 
-<h3><a name="costs" class="case_studies_content-heading" data-nav-header="costs">Costs</a></h3>
+<h2 class="h3"><a name="costs" class="case_studies_content-heading" data-nav-header="costs">Costs</a></h2>
 
 Texas leaves the siting and permitting for natural gas development to its municipalities, and while benefits accrue to these communities, extraction does come with costs. During well construction and drilling, heavy truck traffic causes wear on roads and bridges that can significantly reduce their service life. This problem is particularly pronounced on roadways that were not originally designed to support industrial traffic. According to the Texas Department of Transportation (DOT), the volume of truck traffic required to bring one gas well into production is equivalent to the impact of approximately eight million cars; truck traffic required to maintain that well is equivalent to another two million cars. Constructing such a well reduces highway service life by as much as 53%.[^20]
 
@@ -58,7 +58,7 @@ In its 2012 State Water Report, the Texas Water Development Board recommended $4
 
 The Texas Railroad Commission requires operators to remove water from extraction pits and refill them with sediment within set time frames, as well as completing the appropriate paperwork for any dry or inactive wells that will remain offline for more than a year.[^23] However, in cases where operators do not comply, Texas relies on its Oil and Gas Regulation Cleanup Fund to reclaim oil and gas wells.[^24] In FY 2013, the fund paid $54,263,532 for well plugging, site reclamation, monitoring and inspections, oil and gas permitting, and administration, and set aside an additional $22,277,506 in encumbrances for these activities.[^25] [^26] A combination of industry permitting fees, production taxes, enforcement penalties, reimbursements, proceeds from the sale of salvaged equipment and hydrocarbons, and federal money from the Coastal Impact Assistance Program finance the fund.[^27]
 
-<h3><a name="data" class="case_studies_content-heading" data-nav-header="data">Data availability</a></h3>
+<h2 class="h3"><a name="data" class="case_studies_content-heading" data-nav-header="data">Data availability</a></h2>
 
 The table below highlights data sources used to compile this narrative, as well as any gaps in publicly available data.
 

@@ -6,6 +6,15 @@
   @include respond-to(medium-down) {
     display: none;
   }
+
+  ul a {
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
 }
 
 .sticky_nav-nav_item {

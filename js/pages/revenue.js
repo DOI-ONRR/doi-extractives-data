@@ -291,17 +291,10 @@
       .attr('class', 'text');
 
     selection.append('td')
-      .attr('class', 'value value_negative');
+      .attr('class', 'value');
     selection.append('td')
-      .attr('class', 'bar bar_negative')
-      .append('eiti-bar')
-        .attr('negative', true);
-
-    selection.append('td')
-      .attr('class', 'bar bar_positive')
+      .attr('class', 'bar')
       .append('eiti-bar');
-    selection.append('td')
-      .attr('class', 'value value_positive');
   }
 
   function updateRegionRow(selection) {
@@ -316,28 +309,19 @@
       .map(value)
       .sort(d3.ascending);
 
-    var max = d3.max(values.map(Math.abs));
+    var extent = d3.extent(values);
+    var min = Math.min(0, extent[0]);
+    var max = extent[1];
 
-    selection.select('.value_negative')
+    selection.select('.value')
       .text(function(d) {
-        return d.value < 0 ? formatNumber(d.value) : '';
-      });
-    selection.select('.bar_negative eiti-bar')
-      .attr('min', -max)
-      .attr('max', 0)
-      .attr('value', function(d) {
-        return d.value < 0 ? d.value : 0;
+        return formatNumber(d.value);
       });
 
-    selection.select('.value_positive')
-      .text(function(d) {
-        return d.value > 0 ? formatNumber(d.value) : '';
-      });
-    selection.select('.bar_positive eiti-bar')
+    selection.select('eiti-bar')
+      .attr('min', min)
       .attr('max', max)
-      .attr('value', function(d) {
-        return d.value > 0 ? d.value : 0;
-      });
+      .attr('value', getter('value'));
   }
 
   function createScale(values) {

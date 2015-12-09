@@ -74,6 +74,11 @@ permalink: /explore/all-lands-production/
                 <option value="{{ state.id }}">{{ state.name }}</option>
                 {% endfor %}
               </optgroup>
+              <optgroup label="Offshore Areas">
+                {% for area in site.data.offshore_regions %}
+                <option value="{{ area.id }}">{{ area.name }}</option>
+                {% endfor %}
+              </optgroup>
             </select>
           </div>
         </div>
@@ -158,6 +163,35 @@ permalink: /explore/all-lands-production/
         </section>
         {% endfor %}
 
+        {% for region in site.data.offshore_regions %}
+        <section id="{{ region.id }}" class="region offshore">
+          <div class="map-wrapper">
+            <svg is="eiti-map" id="{{ region.id }}-map" class="region-map" simplify="1e-2"
+              preserveAspectRatio="xMidYMid meet"
+              projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/"
+              {% if region.viewbox %}viewBox="{{ region.viewbox }}"{% endif %}>
+              <g class="onshore states reference" data-url="us-topology.json"
+                data-object="states" data-mesh="true">
+              </g>
+              <g class="offshore areas" data-url="offshore-regions.json"
+                data-object="{{ region.id }}"
+                data-title="properties.name"
+                data-mesh="true">
+              </g>
+            </svg>
+
+            <div class="map-legend"></div>
+          </div>
+
+          <h3 class="region-header-category">Production by offshore area <span class="units"></span></h3>
+          <table class="subregions">
+            <thead class="region-header"></thead>
+            <tbody></tbody>
+          </table>
+
+        </section>
+        {% endfor %}
+
       </div>
     </div>
   </section>
@@ -168,6 +202,9 @@ permalink: /explore/all-lands-production/
   eiti.data.REGION_ID_NAME = {
     {% for state in site.data.states %}
     '{{ state.id }}': '{{ state.name }}',
+    {% endfor %}
+    {% for area in site.data.offshore_regions %}
+    '{{ area.id }}': '{{ area.name }}',
     {% endfor %}
     'US': 'the entire U.S.'
   };

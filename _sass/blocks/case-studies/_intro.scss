@@ -41,3 +41,19 @@
     height: 40px;
   }
 }
+
+.case_studies-maps {
+  path.mesh { //county outlines
+    color: $neutral-gray;
+  }
+  path.feature { //highlighted county features
+    color: $green;
+  }
+}
+
+.case_studies-selected_counties {
+  path { //highlighted county features
+    fill: $green;
+    stroke: red;
+  }
+}

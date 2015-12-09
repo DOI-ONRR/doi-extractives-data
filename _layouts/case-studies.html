@@ -34,12 +34,22 @@ layout: default
 			</div>
 		</label>
 
-		<div class="u-centered">
+		<div class="u-centered case_studies-maps">
 
 			{% if page.permalink == '/case-studies/' %}
       	<img src="{{ site.baseurl }}/img/counties/12-map.png" alt="Map with locations of the twelve communities given in-depth coverage in this section of the site." class="case_studies_intro-image">
 			{% elsif page.permalink == '/case-studies/boone-logan-and-mingo/' %}
-			  <img src="{{ site.baseurl }}/img/counties/jk.png" alt="Map with locations of the twelve communities given in-depth coverage in this section of the site." class="case_studies_intro-image">
+				<svg is="eiti-map" data-path="{{ site.baseurl }}/data/geo/" simplify="1e-2"
+				projection="albersCustom" preserveAspectRatio="xMidYMid meet" zoom-to="WV">
+					<g data-url="us-topology.json"
+						data-object="counties"
+						data-filter="properties.state === 'WV' &amp;&amp; properties.name.match(/Boone|Logan|Mingo/)"
+						class="case_studies-selected_counties"></g>
+					<g data-url="us-topology.json"
+						data-object="counties"
+						data-filter="properties.state === 'WV'"
+						data-mesh="true"></g>
+				</svg>
 			{% elsif page.resource == 'gas' %}
 			  <h3 class="case_studies_content-icon"><i class="icon-gas"></i>Natural Gas</h3>
 			{% elsif page.resource == 'coal' %}
@@ -79,5 +89,6 @@ layout: default
 
 </section>
 
+<script src="{{ site.baseurl }}/js/components/eiti-map.js"></script>
 <script src="{{ site.baseurl }}/js/components/sticky-nav.js"></script>
 <script src="{{ site.baseurl }}/js/components/open-list-nav.js"></script>

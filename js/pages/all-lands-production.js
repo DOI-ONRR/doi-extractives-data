@@ -214,7 +214,6 @@
       var total = product
         ? d3.sum(data, getter(fields.value))
         : unique(data, 'Product').length;
-
       header
         .datum({
           value: total,
@@ -242,8 +241,9 @@
           : function(d) {
               return unique(d, 'Product').length;
             };
+
         var dataByFeatureId = d3.nest()
-          .key(getter(fields.region))
+          .key(getter(fields.subregion || fields.region))
           .rollup(rollup)
           .map(data);
 
@@ -254,6 +254,23 @@
           var id = featureId(f);
           f.value = dataByFeatureId[id];
         });
+
+        if (state.get('product')) {
+          var withheld = data.filter(function(d) {
+            return d[fields.region] === 'Withheld';
+          });
+
+          if (withheld.length) {
+            console.log('got %d withheld rows:', withheld);
+            features.push({
+              id: 'W',
+              value: rollup(withheld),
+              properties: {
+                name: '(Withheld)'
+              }
+            });
+          }
+        }
 
         var value = getter('value');
         var values = features.map(value);
@@ -425,7 +442,7 @@
       });
     } else {
       data = [
-        {color: NULL_FILL, value: 'no production'},
+        {color: NULL_FILL, value: 'no production on federal land'},
         {color: colorscheme[3][2], value: '1 or more products'},
       ];
     }
@@ -477,8 +494,10 @@
           };
         }
         break;
-      case 3:
-        fields.region = 'Area';
+
+      // offshore
+      default:
+        fields.subregion = 'Area';
         fields.featureId = function(f) {
           return f.properties.name;
         };
@@ -749,7 +768,7 @@
       dispatch.products(products);
 
       var region = state.get('region');
-      if (region && region.length === 3) {
+      if (region && region.length !== 2) {
         var fields = getFields(region);
         var regionName = REGION_ID_NAME[region];
         data = data.filter(function(d) {

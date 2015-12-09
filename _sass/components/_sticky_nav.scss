@@ -6,17 +6,26 @@
   @include respond-to(medium-down) {
     display: none;
   }
+
+  ul a {
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
 }
 
 .sticky_nav-nav_item {
   @include heading('para-md');
-
+  display: block;
   line-height: 1.2;
   list-style-type: none;
   margin-bottom: 0;
   padding: $base-padding-lite;
 
-  &.active a {
+  &[data-active=true] {
     color: $dark-gray;
     font-weight: $weight-book;
   }

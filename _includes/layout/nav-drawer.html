@@ -6,9 +6,10 @@
 
   <label for="drawer-search" class="label">Search</label>
 
-  <form class="drawer-search_form">
-    <input class="glossary__search drawer-search_field" type="search">
-    <button type="submit" class="drawer-search_button icon-search"></button>
+  <form action='{{ site.baseurl }}/search-results/' class="drawer-search_form">
+    <label for='q' class='sr-only'>Search</label>
+    <input class="glossary__search drawer-search_field" type="search" name="q" id="q">
+    <button type="submit" class="drawer-search_button icon-search" title="search"></button>
   </form>
 
   <ul class="nav_drawer-nav">

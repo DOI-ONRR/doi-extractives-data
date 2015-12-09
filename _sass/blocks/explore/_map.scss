@@ -17,24 +17,6 @@ eiti-slider {
   width: 100%;
 }
 
-.filter-description {
-  @include heading(para-xl);
-  font-weight: $weight-bold;
-  letter-spacing: -0.5px;
-
-  @include respond-to(medium-up) {
-    margin-top: -115px; //TODO: magic number, remove
-    padding-left: $base-padding;
-    width: 65%;
-  }
-
-  .filter-part {
-    border-bottom: 2px dotted $neutral-gray;
-    color: inherit;
-    text-decoration: none;
-  }
-}
-
 .map-legend {
   display: flex;
   margin-bottom: $base-padding-large;
@@ -61,6 +43,7 @@ eiti-slider {
 
 .timeline {
   shape-rendering: crispEdges;
+  width:100%;
 
   line {
     fill: none;
@@ -91,6 +74,7 @@ eiti-slider {
 .map-intro_text {
   @include heading(para-md);
   padding: $base-padding;
+  padding-top: 0;
 
   @include respond-to(medium-up) {
     padding-left: 0;

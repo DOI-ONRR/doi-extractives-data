@@ -28,8 +28,14 @@ permalink: /explore/federal-production/
   </div>
   <section class="container-right-8">
     <div class="filters-wrapper slab-foxtrot">
+      <h1 data-toggler="filters" data-filter-description="" class="filter-description filter-description_closed">
+        <a href="#commodity-group-selector" class="filter-part" data-key="commodity">All</a>
+        production on federal lands in
+        <a href="#region-selector" class="filter-part" data-key="region">the entire U.S.</a>
+        (<a href="#year-selector" class="filter-part" data-key="year">2013</a>)
+      </h1>
       <button class="toggle-filters toggle-desktop" is="eiti-toggle"
-        aria-controls="filters" aria-expanded="false"
+        aria-controls="filters" data-collapsed-text="Show filters" aria-expanded="false"
         data-expanded-text="Hide filters" data-toggler="filters">Show filters</button>
 
       <form id="filters" aria-hidden="true" class="filters container-outer">
@@ -74,7 +80,7 @@ permalink: /explore/federal-production/
                 {% endfor %}
               </optgroup>
               <optgroup label="Offshore Areas">
-                {% for area in site.data.offshore_areas %}
+                {% for area in site.data.offshore_regions %}
                 <option value="{{ area.id }}">{{ area.name }}</option>
                 {% endfor %}
               </optgroup>
@@ -93,23 +99,22 @@ permalink: /explore/federal-production/
           </eiti-slider>
         </div>
 
-      </form>
-
-      <div class="container-outer">
-        <button class="toggle-filters toggle" is="eiti-toggle" aria-controls="filters" data-expanded-text="Hide filters" data-toggler="filters">Show filters</button>
-      </div>
-
-    </div>
-
-    <div class="slab-alpha">
-      <div class="container-outer">
-        <h1 id="filter-description" class="filter-description">
+        <h1 data-toggler="filters" data-filter-description="" class="filter-description">
           <a href="#commodity-group-selector" class="filter-part" data-key="commodity">All</a>
           production on federal lands in
           <a href="#region-selector" class="filter-part" data-key="region">the entire U.S.</a>
           (<a href="#year-selector" class="filter-part" data-key="year">2013</a>)
         </h1>
+
+      </form>
+
+      <div class="container-outer">
+        <button class="toggle-filters toggle" is="eiti-toggle" aria-controls="filters" data-expanded-text="Hide filters" data-collapsed-text="Show filters" data-toggler="filters">Show filters</button>
       </div>
+
+    </div>
+
+    <div class="slab-alpha">
 
       <div class="regions container">
 
@@ -119,8 +124,10 @@ permalink: /explore/federal-production/
           <div class="map-wrapper">
             <svg is="eiti-map" id="US-map" class="region-map" simplify="1e-2"
               preserveAspectRatio="xMidYMid meet"
-              projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/">
-              <g class="offshore areas" data-url="offshore-simple.json"
+              projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/"
+              viewBox="20 55 945 535">
+              <g class="offshore areas" data-url="offshore-regions.json"
+                data-object="regions"
                 data-id="'US-' + id"
                 data-href="'#?region=' + id"
                 data-title="properties.name"
@@ -176,19 +183,31 @@ permalink: /explore/federal-production/
         </section>
         {% endfor %}
 
-        {% for region in site.data.offshore_areas %}
+        {% for region in site.data.offshore_regions %}
         <section id="{{ region.id }}" class="region offshore">
           <div class="map-wrapper">
             <svg is="eiti-map" id="{{ region.id }}-map" class="region-map" simplify="1e-2"
               preserveAspectRatio="xMidYMid meet"
-              projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/" zoom-to="{{ region.id }}">
-              <g class="offshore areas" data-url="offshore-simple.json"
+              projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/"
+              {% if region.viewbox %}viewBox="{{ region.viewbox }}"{% endif %}>
+              <g class="onshore states reference" data-url="us-topology.json"
+                data-object="states" data-mesh="true">
+              </g>
+              <g class="offshore areas" data-url="offshore-regions.json"
+                data-object="{{ region.id }}"
                 data-title="properties.name"
-                data-filter="id === '{{ region.id }}'"
                 data-mesh="true">
               </g>
             </svg>
+
+            <div class="map-legend"></div>
           </div>
+
+          <h3 class="region-header-category">Production by offshore area <span class="units"></span></h3>
+          <table class="subregions">
+            <thead class="region-header"></thead>
+            <tbody></tbody>
+          </table>
 
         </section>
         {% endfor %}
@@ -203,6 +222,9 @@ permalink: /explore/federal-production/
   eiti.data.REGION_ID_NAME = {
     {% for state in site.data.states %}
     '{{ state.id }}': '{{ state.name }}',
+    {% endfor %}
+    {% for area in site.data.offshore_regions %}
+    '{{ area.id }}': '{{ area.name }}',
     {% endfor %}
     {% for area in site.data.offshore_areas %}
     '{{ area.id }}': '{{ area.name }}',

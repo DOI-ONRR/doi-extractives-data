@@ -3,7 +3,7 @@
 
   // local alias for region id => name lookups
   var REGION_ID_NAME = eiti.data.REGION_ID_NAME;
-  var colorscheme = colorbrewer.Purples;
+  var colorscheme = colorbrewer.GnBu;
 
   // our state is immutable!
   var state = new Immutable.Map();
@@ -18,7 +18,7 @@
 
   var getter = eiti.data.getter;
   var formatNumber = eiti.format.si;
-  var NULL_FILL = '#eee';
+  var NULL_FILL = '#f7f7f7';
 
   // buttons that expand and collapse other elements
   var filterToggle = root.select('button.toggle-filters');
@@ -127,7 +127,7 @@
       var match = product.match(/ (\(.+\))\s*$/);
       units = match ? ' ' + match[1] : '';
       // console.log('product units:', units);
-      formatNumber = eiti.format.si;
+      formatNumber = eiti.format(',.0f');
     } else {
       formatNumber = function(n) {
         return n + eiti.format.pluralize(n, ' product');
@@ -216,7 +216,7 @@
         : unique(data, 'Product').length;
       header
         .datum({
-          value: Math.floor(total),
+          value: total,
           properties: {
             name: 'Total'
           }
@@ -241,8 +241,9 @@
           : function(d) {
               return unique(d, 'Product').length;
             };
+
         var dataByFeatureId = d3.nest()
-          .key(getter(fields.region))
+          .key(getter(fields.subregion || fields.region))
           .rollup(rollup)
           .map(data);
 
@@ -253,6 +254,23 @@
           var id = featureId(f);
           f.value = dataByFeatureId[id];
         });
+
+        if (state.get('product')) {
+          var withheld = data.filter(function(d) {
+            return d[fields.region] === 'Withheld';
+          });
+
+          if (withheld.length) {
+            console.log('got %d withheld rows:', withheld);
+            features.push({
+              id: 'W',
+              value: rollup(withheld),
+              properties: {
+                name: '(Withheld)'
+              }
+            });
+          }
+        }
 
         var value = getter('value');
         var values = features.map(value);
@@ -335,8 +353,7 @@
     title.append('span')
       .attr('class', 'text');
     selection.append('td')
-      .append('span')
-        .attr('class', 'value');
+      .attr('class', 'value');
     selection.append('td')
       .attr('class', 'region-chart')
       .append('eiti-bar');
@@ -441,6 +458,7 @@
       .append('span')
         .attr('class', 'label');
 
+    var format = eiti.format.si;
     steps
       .style('border-color', getter('color'))
       .select('.label')
@@ -448,8 +466,8 @@
           return (typeof d.value === 'string')
             ? d.value
             : (i === last)
-              ? formatNumber(d.value[0]) + '+'
-              : formatNumber(d.value[0]);
+              ? format(d.value[0]) + '+'
+              : format(d.value[0]);
         });
   }
 
@@ -476,8 +494,10 @@
           };
         }
         break;
-      case 3:
-        fields.region = 'Area';
+
+      // offshore
+      default:
+        fields.subregion = 'Area';
         fields.featureId = function(f) {
           return f.properties.name;
         };
@@ -695,7 +715,7 @@
         d.Commodity = lookup[withoutUnits] || lookup[firstWord];
         if (!d.Commodity) {
           d.Commodity = 'Other';
-          console.log('other:', product, [withoutUnits, firstWord]);
+          // console.log('other:', product, [withoutUnits, firstWord]);
         }
       };
     })();
@@ -752,7 +772,7 @@
       dispatch.products(products);
 
       var region = state.get('region');
-      if (region && region.length === 3) {
+      if (region && region.length !== 2) {
         var fields = getFields(region);
         var regionName = REGION_ID_NAME[region];
         data = data.filter(function(d) {
@@ -787,7 +807,7 @@
   }
 
   function updateFilterDescription(state) {
-    var desc = root.select('#filter-description');
+    var desc = root.selectAll('[data-filter-description]');
 
     var commodity = state.get('product');
     if (commodity) {

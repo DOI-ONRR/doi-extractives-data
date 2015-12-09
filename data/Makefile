@@ -277,10 +277,10 @@ county-resource-revenues-by-state: county/revenues.tsv
 county/production.tsv: $(input)onrr/regional-production.tsv
 	mkdir -p $(dir $@)
 	$(tito) --read tsv $< \
-		| $(datex) --filter 'Region.length === 2' \
+		| $(datex) --filter 'Shore === "Onshore"' \
 		| bin/normalize-county-production.js \
 			--in-states $(input)geo/states.csv \
-		| $(tito) --write tsv > $@
+		| tito --write tsv > $@
 
 production/all-production.tsv:
 	mkdir -p $(dir $@)
@@ -335,6 +335,9 @@ geo/us-states.json: geo/us-topology.json
 
 geo/offshore.json: $(input)geo/offshore/*.json
 	$(BIN)/topojson $(topo_options) --properties -o $@ -- $^
+
+geo/offshore-regions.json: geo/offshore-simple.json
+	bin/offshore-regions.json $< $@
 
 geo/%-simple.json: geo/%.json
 	$(BIN)/topojson $(topo_options) --properties --simplify 1e-8 -o $@ $<

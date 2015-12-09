@@ -449,6 +449,13 @@
    */
   eiti.format.si = eiti.format.transform('.2s', eiti.format.transformMetric);
 
+  eiti.format.transformDollars = function(str) {
+    if (str.charAt(0) === '-') {
+      str = '(' + str.substr(1) + ')';
+    }
+    return '$' + str;
+  };
+
   /**
    * Produces whole dollar strings in SI/metric form, prefixed
    * with a '$', and negative numbers in parentheses.
@@ -459,12 +466,10 @@
    * @param {Number} num
    * @return {String}
    */
-  eiti.format.dollars = eiti.format.transform(eiti.format.si, function(str) {
-    if (str.charAt(0) === '-') {
-      str = '(' + str.substr(1) + ')';
-    }
-    return '$' + str;
-  });
+  eiti.format.dollars = eiti.format.transform(
+    eiti.format.si,
+    eiti.format.transformDollars
+  );
 
   /**
    * Produces dollar strings with thousands separators and 2-decimal
@@ -476,7 +481,10 @@
    * @param {Number} num
    * @return {String}
    */
-  eiti.format.dollarsAndCents = d3.format('$,.2f');
+  eiti.format.dollarsAndCents = eiti.format.transform(
+    ',.2f',
+    eiti.format.transformDollars
+  );
 
   /**
    * Produces short dollar strings in SI format with 1 decimal,
@@ -486,7 +494,9 @@
    * @param {Number} num
    * @return {String}
    */
-  eiti.format.shortDollars = eiti.format.transform('$,.2s', eiti.format.transformMetric);
+  eiti.format.shortDollars = eiti.format.transform(
+    '$,.2s', eiti.format.transformMetric
+  );
 
   eiti.format.pluralize = function(num, singular, plural) {
     return (num === 1)

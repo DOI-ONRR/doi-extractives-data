@@ -3,7 +3,7 @@
 
   // local alias for region id => name lookups
   var REGION_ID_NAME = eiti.data.REGION_ID_NAME;
-  var colorscheme = colorbrewer.Purples;
+  var colorscheme = colorbrewer.GnBu;
 
   // our state is immutable!
   var state = new Immutable.Map();
@@ -18,7 +18,7 @@
 
   var getter = eiti.data.getter;
   var formatNumber = eiti.format.si;
-  var NULL_FILL = '#eee';
+  var NULL_FILL = '#f7f7f7';
 
   // buttons that expand and collapse other elements
   var filterToggle = root.select('button.toggle-filters');
@@ -127,7 +127,7 @@
       var match = product.match(/ (\(.+\))\s*$/);
       units = match ? ' ' + match[1] : '';
       // console.log('product units:', units);
-      formatNumber = eiti.format.si;
+      formatNumber = eiti.format(',.0f');
     } else {
       formatNumber = function(n) {
         return n + eiti.format.pluralize(n, ' product');
@@ -217,7 +217,7 @@
 
       header
         .datum({
-          value: Math.floor(total),
+          value: total,
           properties: {
             name: 'Total'
           }
@@ -336,8 +336,7 @@
     title.append('span')
       .attr('class', 'text');
     selection.append('td')
-      .append('span')
-        .attr('class', 'value');
+      .attr('class', 'value');
     selection.append('td')
       .attr('class', 'region-chart')
       .append('eiti-bar');
@@ -442,6 +441,7 @@
       .append('span')
         .attr('class', 'label');
 
+    var format = eiti.format.si;
     steps
       .style('border-color', getter('color'))
       .select('.label')
@@ -449,8 +449,8 @@
           return (typeof d.value === 'string')
             ? d.value
             : (i === last)
-              ? formatNumber(d.value[0]) + '+'
-              : formatNumber(d.value[0]);
+              ? format(d.value[0]) + '+'
+              : format(d.value[0]);
         });
   }
 
@@ -784,7 +784,7 @@
   }
 
   function updateFilterDescription(state) {
-    var desc = root.select('#filter-description');
+    var desc = root.selectAll('[data-filter-description]');
 
     var commodity = state.get('product');
     if (commodity) {

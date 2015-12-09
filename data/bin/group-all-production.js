@@ -5,6 +5,7 @@ var yargs = require('yargs')
   .describe('naturalgas2', 'The path of the second dataset for naturalgas')
   .describe('oil', 'The path of the dataset for oil')
   .describe('coal', 'The path of the dataset for coal')
+  .describe('countycoal', 'The path of the dataset for coal to be broken down by county')
   .describe('if', 'input format')
   .default('if', 'tsv')
   .describe('of', 'output format')
@@ -116,6 +117,13 @@ async.parallel({
       done
     );
   },
+  countycoal: function readCountyCoal(done) {
+    return read(
+      options.countycoal,
+      tito.createReadStream(options['if']),
+      done
+    );
+  },
   renewables: function readRenewables(done) {
     return read(
       options.renewables,
@@ -152,198 +160,281 @@ async.parallel({
     '2013'
   ];
 
-  Object.keys(data).forEach(function(commodity) {
+  data['countycoal'] = null;
+  if (data['countycoal']){
+    var commodity = 'countycoal';
 
-    var parseRenewables = function(commodity, data, years){
+    var getStates = function(data, commodity, column) {
 
-      var renewablesTotals = [];
+      var allColumn = _.map(data[commodity], function(data, n) {
+        return data[column]
+      })
+      return _.unique(allColumn);
+    }
 
-      _.forEach(data[commodity], function(d) {
+    // Abbreviate States
+    data[commodity] = _.forEach(data[commodity], function(d){
+      d['Mine State'] = stateKey[d['Mine State']];
+    });
 
-        if (stateKey[d.State]){
-          years.forEach(function(year){
-            var volume = d[year];
-            if (volume == '' || volume == '--'){ return; }
+    // console.warn(data[commodity])
+
+    var states = getStates(data, commodity, 'Mine State');
+
+    // Reject states that non-complient statest
+    states = _.filter(states, function(n){
+      return n;
+    });
+
+    _.forEach(states, function(state) {
+      years.forEach(function(year){
+
+        // Get Production Numbers (only have data for 2013)
+        var getMatches = function(product) {
+          var volumes = _.pluck(_.where(data[commodity], {'Year': year, 'Mine State': state}), product);
+          volumes = _.map(volumes, trimCommas);
+
+          var matches = {
+            'county': _.pluck(_.where(data[commodity], {'Year': year, 'Mine State': state}), 'Mine County'),
+            'volume': volumes
+          }
+          return _.zipObject(matches.county, matches.volume)
+        }
+
+
+        // terrible hack because of inconsistencies in the data
+        var productionByState = (year == '2012')
+          ? getMatches('Coal Supply Region')
+          : getMatches('Production (short tons)');
+
+
+
+        // console.warn(state, '->',productionByState, year)
+
+        // if (productionByState){
+          Object.keys(productionByState).forEach(function(county) {
+
+            var volume = productionByState[county]
+            console.warn(state, year, '==>', county, volume)
+            if (volume) {
+              var newResults = {};
+              newResults.State = state;
+              newResults.County = county
+              newResults.Year = year;
+              newResults.Volume = volume;
+              newResults.Commodity = '';
+              newResults.Product = 'Coal (short tons)';
+              // console.warn(newResults)
+              console.warn('===================')
+              results.push(newResults)
+            }
+          });
+
+        // }
+      });
+    });
+
+  } else {
+
+    Object.keys(data).forEach(function(commodity) {
+
+      var parseRenewables = function(commodity, data, years){
+
+        var renewablesTotals = [];
+
+        _.forEach(data[commodity], function(d) {
+
+          if (stateKey[d.State]){
+            years.forEach(function(year){
+              var volume = d[year];
+              if (volume == '' || volume == '--'){ return; }
+              var newResults = {};
+              newResults.Region = stateKey[d.State];
+              newResults.Year = year;
+              newResults.Volume = volume;
+              newResults.Commodity = '';
+              newResults.Product = d.Source + ' (Kwh)';
+              // console.warn(newResults, '=======')
+              renewablesTotals.push(newResults);
+              results.push(newResults);
+            });
+          }
+        });
+
+        var regionsUsed = _.unique(_.map(renewablesTotals, 'Region'));
+        var yearsUsed = _.unique(_.map(renewablesTotals, 'Year'));
+
+        _.forEach(regionsUsed, function(region){
+          _.forEach(yearsUsed, function(year){
+            var intersection = _.where(renewablesTotals, { Region: region, Year: year });
+
+            var volume = _.map(intersection, function(val) {
+              return +val.Volume;
+            })
+
+            volume = _.reduce(volume, function(total, n) {
+              return total + n;
+            });
+
             var newResults = {};
-            newResults.Region = stateKey[d.State];
+            newResults.Region = region;
             newResults.Year = year;
             newResults.Volume = volume;
             newResults.Commodity = '';
-            newResults.Product = d.Source + ' (Kwh)';
-            // console.warn(newResults, '=======')
-            renewablesTotals.push(newResults);
+            newResults.Product = 'All Renewables (Kwh)';
+
             results.push(newResults);
+
           });
-        }
-      });
-
-      var regionsUsed = _.unique(_.map(renewablesTotals, 'Region'));
-      var yearsUsed = _.unique(_.map(renewablesTotals, 'Year'));
-
-      _.forEach(regionsUsed, function(region){
-        _.forEach(yearsUsed, function(year){
-          var intersection = _.where(renewablesTotals, { Region: region, Year: year });
-
-          var volume = _.map(intersection, function(val) {
-            return +val.Volume;
-          })
-
-          volume = _.reduce(volume, function(total, n) {
-            return total + n;
-          });
-
-          var newResults = {};
-          newResults.Region = region;
-          newResults.Year = year;
-          newResults.Volume = volume;
-          newResults.Commodity = '';
-          newResults.Product = 'All Renewables (Kwh)';
-
-          results.push(newResults);
-
         });
-      });
 
-      _.forEach(data[commodity],function(d) {
+        _.forEach(data[commodity],function(d) {
 
 
-        if (stateKey[d.State]){
-          years.forEach(function(year){
-            var matches = _.where(renewablesTotals, { Region: stateKey[d.State], Year: year});
+          if (stateKey[d.State]){
+            years.forEach(function(year){
+              var matches = _.where(renewablesTotals, { Region: stateKey[d.State], Year: year});
 
-            var stateYearMatch = {};
-            stateYearMatch.Region = stateKey[d.State];
-            stateYearMatch.Year = year;
-            stateYearMatch.Volume = d[year];
-            stateYearMatch.Commodity = '';
-            stateYearMatch.Product = d.Source + ' (Kwh)';
+              var stateYearMatch = {};
+              stateYearMatch.Region = stateKey[d.State];
+              stateYearMatch.Year = year;
+              stateYearMatch.Volume = d[year];
+              stateYearMatch.Commodity = '';
+              stateYearMatch.Product = d.Source + ' (Kwh)';
 
-          });
-        }
-      });
-    }
-
-    var parseCoal = function(commodity, data, years){
-
-      var getStates = function(data, commodity, column) {
-
-        var allColumn = _.map(data[commodity], function(data, n) {
-          return data[column]
-        })
-        return _.unique(allColumn);
+            });
+          }
+        });
       }
 
-      // Abbreviate States
-      data[commodity] = _.forEach(data[commodity], function(d){
-        d['Mine State'] = stateKey[d['Mine State']];
-      });
+      var parseCoal = function(commodity, data, years){
 
-      var states = getStates(data, commodity, 'Mine State');
+        var getStates = function(data, commodity, column) {
 
-      // Reject states that non-complient statest
-      states = _.filter(states, function(n){
-        return n;
-      });
-
-      _.forEach(states, function(state) {
-        years.forEach(function(year){
-
-          // Get Production Numbers (only have data for 2013)
-          var getProductionByState = function(product) {
-            return _.pluck(_.where(data[commodity], {'Year': year, 'Mine State': state}), product);
-          }
-          // terrible hack because of inconsistencies in the data
-          var productionByState = (year == '2012')
-            ? getProductionByState('Coal Supply Region')
-            : getProductionByState('Production (short tons)');
-
-          productionByState = _.map(productionByState, trimCommas);
-
-          productionByState = _.reduce(productionByState, function(total, n) {
-            return total + n;
-          });
-
-          // console.warn(state, '->',productionByState, year)
-
-          if (productionByState){
-
-            var newResults = {};
-            newResults.Region = state;
-            newResults.Year = year;
-            newResults.Volume = productionByState;
-            newResults.Commodity = '';
-            newResults.Product = 'Coal (short tons)';
-
-            results.push(newResults)
-          }
-        });
-      });
-    }
-
-    var parseOther = function(commodity, data, years){
-      data[commodity].forEach(function(d, index) {
-
-        if (index === 0) {
-
-          keys = _.keys(d, function(key){
-            return key;
-          });
+          var allColumn = _.map(data[commodity], function(data, n) {
+            return data[column]
+          })
+          return _.unique(allColumn);
         }
 
-        _.forEach(keys, function(val, i){
-          var inYearRange = years.indexOf(d['Year']) >= 0;
-
-          // console.warn(index,val,'->', d['Year'], '=====', inYearRange)
-
-          var newResults = {};
-
-          var invalidRow = (val === 'Year'),
-            emptyRow = !val,
-            firstRow = (i === 0),
-            regionIsUS = (val === 'US');
-
-          if (invalidRow || emptyRow || firstRow || !inYearRange || regionIsUS){ return; }
-          newResults.Year = d['Year'];
-          newResults.Region = val;
-          newResults.Commodity = commodity;
-          newResults.Volume = d[val] ? d[val] : 0;
-
-          switch(commodity) {
-            case 'naturalgas':
-                newResults.Product = 'Natural Gas (MMcf)';
-                newResults.Commodity = '';
-                break;
-            case 'naturalgas2':
-                newResults.Product = 'Natural Gas (MMcf)';
-                newResults.Commodity = '';
-                break;
-            case 'oil':
-                newResults.Product = 'Crude Oil (bbl)';
-                newResults.Commodity = '';
-                newResults.Volume = newResults.Volume * 1000;
-                break;
-            default:
-                newResults.Commodity = commodity;
-          }
-          results.push(newResults);
+        // Abbreviate States
+        data[commodity] = _.forEach(data[commodity], function(d){
+          d['Mine State'] = stateKey[d['Mine State']];
         });
-      });
-    }
-    switch(commodity) {
-      case 'coal':
-        // console.warn(commodity, '--> done!')
-        parseCoal(commodity, data, years);
-        break;
-      case 'renewables':
-        // console.warn(commodity, '--> done!')
-        parseRenewables(commodity, data, years);
-        break;
-      default:
-        // console.warn(commodity, '--> done!')
-        parseOther(commodity, data, years);
-        break;
-    }
-  });
+
+        console.warn(data[commodity])
+
+        var states = getStates(data, commodity, 'Mine State');
+
+        // Reject states that non-complient statest
+        states = _.filter(states, function(n){
+          return n;
+        });
+
+        _.forEach(states, function(state) {
+          years.forEach(function(year){
+
+            // Get Production Numbers (only have data for 2013)
+            var getProductionByState = function(product) {
+              return _.pluck(_.where(data[commodity], {'Year': year, 'Mine State': state}), product);
+            }
+            // terrible hack because of inconsistencies in the data
+            var productionByState = (year == '2012')
+              ? getProductionByState('Coal Supply Region')
+              : getProductionByState('Production (short tons)');
+
+            productionByState = _.map(productionByState, trimCommas);
+
+            productionByState = _.reduce(productionByState, function(total, n) {
+              return total + n;
+            });
+
+            // console.warn(state, '->',productionByState, year)
+
+            if (productionByState){
+
+              var newResults = {};
+              newResults.Region = state;
+              newResults.Year = year;
+              newResults.Volume = productionByState;
+              newResults.Commodity = '';
+              newResults.Product = 'Coal (short tons)';
+
+              results.push(newResults)
+            }
+          });
+        });
+      }
+
+      var parseOther = function(commodity, data, years){
+        data[commodity].forEach(function(d, index) {
+
+          if (index === 0) {
+
+            keys = _.keys(d, function(key){
+              return key;
+            });
+          }
+
+          _.forEach(keys, function(val, i){
+            var inYearRange = years.indexOf(d['Year']) >= 0;
+
+            // console.warn(index,val,'->', d['Year'], '=====', inYearRange)
+
+            var newResults = {};
+
+            var invalidRow = (val === 'Year'),
+              emptyRow = !val,
+              firstRow = (i === 0),
+              regionIsUS = (val === 'US');
+
+            if (invalidRow || emptyRow || firstRow || !inYearRange || regionIsUS){ return; }
+            newResults.Year = d['Year'];
+            newResults.Region = val;
+            newResults.Commodity = commodity;
+            newResults.Volume = d[val] ? d[val] : 0;
+
+            switch(commodity) {
+              case 'naturalgas':
+                  newResults.Product = 'Natural Gas (MMcf)';
+                  newResults.Commodity = '';
+                  break;
+              case 'naturalgas2':
+                  newResults.Product = 'Natural Gas (MMcf)';
+                  newResults.Commodity = '';
+                  break;
+              case 'oil':
+                  newResults.Product = 'Crude Oil (bbl)';
+                  newResults.Commodity = '';
+                  newResults.Volume = newResults.Volume * 1000;
+                  break;
+              default:
+                  newResults.Commodity = commodity;
+            }
+            results.push(newResults);
+          });
+        });
+      }
+
+      switch(commodity) {
+        case 'coal':
+          // console.warn(commodity, '--> done!')
+          parseCoal(commodity, data, years);
+          break;
+        case 'countycoal':
+          parseCoal(commodity, data, years, true);
+          break;
+        case 'renewables':
+          // console.warn(commodity, '--> done!')
+          parseRenewables(commodity, data, years);
+          break;
+        default:
+          // console.warn(commodity, '--> done!')
+          parseOther(commodity, data, years);
+          break;
+      }
+    });
+  }
 
   streamify(results)
     .pipe(tito.createWriteStream(options['of']))

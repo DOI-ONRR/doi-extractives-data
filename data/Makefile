@@ -45,7 +45,9 @@ JOBS_FILES = \
 	jobs/self-employment.tsv
 
 ALL_LANDS_PRODUCTION_FILES = \
-	production/natural-gas.tsv
+	production/natural-gas.tsv \
+	production/coal-county-all-production.tsv \
+	county-all-lands-production-by-state.tsv
 
 # a list of all of the individual files to build.
 # unless otherwise noted, all of these files are broken
@@ -289,8 +291,15 @@ production/all-production.tsv:
 		--naturalgas $(input)eia/commodity/naturalgas.tsv \
 		--oil $(input)eia/commodity/oil.tsv \
 		--coal $(input)eia/commodity/coal.tsv \
+		--countycoal $(input)eia/commodity/coal.tsv \
 		--renewables $(input)eia/commodity/renewables.tsv \
 		> $@
+
+county-all-lands-production-by-state.tsv: production/coal-county-all-production.tsv
+	$(tito) --read tsv $< \
+		| bin/divvy.js \
+			--path 'county/by-state/{{ State }}/all-production.tsv' \
+			--of tsv
 
 geo: \
 	geo/us-topology.json \

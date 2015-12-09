@@ -738,8 +738,11 @@
     function getDataURL(state) {
       var region = state.get('region');
       var path = eiti.data.path;
-      path += 'production/all-production.tsv';
-      return path;
+      path += (!region || region === 'US')
+        ? 'production/'
+        : 'county/by-state/' + region + '/'
+      // path += 'all-production.tsv';
+      return path + 'all-production.tsv';
     }
 
     function applyFilters(data, state, done) {

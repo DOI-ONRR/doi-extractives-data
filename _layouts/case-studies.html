@@ -36,7 +36,21 @@ layout: default
 
 		<div class="u-centered">
 
-      <img src="{{ site.baseurl }}/img/counties/12-map.png" alt="Map with locations of the twelve communities given in-depth coverage in this section of the site." class="case_studies_intro-image">
+			{% if page.permalink == '/case-studies/' %}
+      	<img src="{{ site.baseurl }}/img/counties/12-map.png" alt="Map with locations of the twelve communities given in-depth coverage in this section of the site." class="case_studies_intro-image">
+			{% elsif page.permalink == '/case-studies/boone-logan-and-mingo/' %}
+			  <img src="{{ site.baseurl }}/img/counties/jk.png" alt="Map with locations of the twelve communities given in-depth coverage in this section of the site." class="case_studies_intro-image">
+			{% elsif page.resource == 'gas' %}
+			  <h3 class="case_studies_content-icon"><i class="icon-gas"></i>Natural Gas</h3>
+			{% elsif page.resource == 'coal' %}
+			  <h3 class="case_studies_content-icon"><i class="icon-coal"></i>Coal</h3>
+			{% elsif page.resource == 'gold' %}
+			  <h3 class="case_studies_content-icon"><i class="icon-gold"></i>Gold</h3>
+			{% elsif page.resource == 'copper' %}
+			  <h3 class="case_studies_content-icon"><i class="icon-copper"></i>Copper</h3>
+			{% elsif page.resource == 'iron' %}
+			  <h3 class="case_studies_content-icon"><i class="icon-iron"></i>Iron</h3>
+			{% endif %}
       <img src="{{ site.baseurl }}/img/counties/12-map-icons.png" alt="Key for map with the icons for the six commodities given in-depth coverage in this section of the site." class="case_studies_intro-image case_studies_intro-image_key">
 
     </div>

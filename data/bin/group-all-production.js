@@ -71,7 +71,7 @@ var stateKey = {
   'Pennsylvania (Bituminous)': 'PA',
   'Pennsylvania (Anthracite)': 'PA',
   'Pennsylvania': 'PA',
-  'Rhode Island': 'RD',
+  'Rhode Island': 'RI',
   'South Carolina': 'SC',
   'South Dakota': 'SD',
   'Tennessee': 'TN',

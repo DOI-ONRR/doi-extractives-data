@@ -32,7 +32,7 @@ nav_items:
 
 <p>See <a href="{{site.baseurl}}/how-it-works/state-legal-fiscal-info/">State Legal and Fiscal Information</a> for more details about the individual states’ laws and statutes.</p>
 
-<h3 id="role-of-state-government-agencies" data-nav-header="role-of-state-government-agencies">Role of state government agencies</h3>
+<h2 class="h3" id="role-of-state-government-agencies" data-nav-header="role-of-state-government-agencies">Role of state government agencies</h2>
 
 <p>State government agencies create regulations and rules related to natural resource extraction based on applicable state laws and statutes (federal laws and regulations apply to all states and localities). Specifically, state government agencies manage state-owned land and natural resources, including leasing natural resources for extraction; enforce regulations and rules related to natural resource extraction; and collect, manage, and disburse revenue from natural resource extraction.</p>
 
@@ -46,11 +46,11 @@ nav_items:
 
 <p>Local government agencies also play a role in natural resource extraction. In particular, county departments of revenue collect, manage, and disburse local revenue from extractive industries activities.</p>
 
-<h3 id="state-leasing-programs" data-nav-header="state-leasing-programs">State leasing programs</h3>
+<h2 class="h3" id="state-leasing-programs" data-nav-header="state-leasing-programs">State leasing programs</h2>
 
 <p>State ownership of land constitutes <a href="http://www.nrcm.org/documents/publiclandownership.pdf">almost 9% of total land area</a> in the U.S. Each state has its own process for leasing natural resources on state-owned lands, and different oversight procedures for when companies explore for, develop, and produce natural resources and when companies decommission projects and reclaim sites. For example, in the State of Alaska, the director of the Division of Oil and Gas at the Department of Natural Resources must establish in writing that the state’s interests will be optimized before any leasing action can occur. Known as a “best-interest finding,” the director weighs the costs and benefits of the leasing action, including potential effects on natural, historical, and cultural resources, as well as on local communities and fish and wildlife populations. The director also considers public comments.</p>
 
-<h3 id="state-extractive-industries-revenue" data-nav-header="state-extractive-industries-revenue">State extractive industries revenue</h3>
+<h2 class="h3" id="state-extractive-industries-revenue" data-nav-header="state-extractive-industries-revenue">State extractive industries revenue</h2>
 
 <p>The revenue a state receives from extractive activities varies by the local legal and fiscal framework, and by the types of resources and land owners involved. At a high level, many states receive the following revenue:</p>
 
@@ -60,9 +60,9 @@ nav_items:
   <li><a href="http://www.onrr.gov/about/pdfdocs/20131119.pdf">Transfer payments</a> from the federal government for natural resource production on federal lands within a state’s borders or off its coast</li>
 </ul>
 
-<h4><a href="http://revenue.wyo.gov/mineral-tax-division/severance-tax-filing-information">Wyoming severance tax rates</a></h4>
+<h3 class="h5">Wyoming severance tax rates</h3>
 
-<p>As an example, Wyoming applies the following severance taxes on the value of extracted resources before processing and transportation:</p>
+<p>As an example, <a href="http://revenue.wyo.gov/mineral-tax-division/severance-tax-filing-information">Wyoming applies the following severance taxes</a> on the value of extracted resources before processing and transportation:</p>
 
 <table>
   <tr>
@@ -97,7 +97,7 @@ nav_items:
 
 <p>State royalty rates vary. <a href="http://app1.lla.state.la.us/PublicReports.nsf/DB918AD8E33411F286257B490074B82A/$FILE/00031C97.pdf">Louisiana royalty rates</a> average 21.9%, and can reach as high as 61.6%. California has a <a href="http://www.leginfo.ca.gov/cgi-bin/displaycode?section=prc&group=06001-07000&file=6826-6836">minimum royalty rate</a> of 16 and 2/3% that can rise up to a maximum percentage outlined in the invitation to bid for a lease, and paid on the average production of oil per well, per day under the lease.</p>
 
-<h3 id="revenue-disbursements" data-nav-header="revenue-disbursements">State revenue disbursements</h3>
+<h2 class="h3" id="revenue-disbursements" data-nav-header="revenue-disbursements">State revenue disbursements</h2>
 
 <p>Each individual state determines how to disburse revenue from extractive industries’ activities. To illustrate, North Dakota, one of the leading oil and gas producing states in the country, levies an Oil and Gas Production Tax at close to 1 cent per Mcf of gas, and at 5% of the gross production value of oil. 20% of the money collected from this tax is distributed to various state funds, while 80% flows to counties, cities, schools, and townships.</p>
 
@@ -112,11 +112,11 @@ nav_items:
 
 <p>In comparison, Alaska, another leading oil and gas producer, levies its own Oil and Gas Production Tax at 35% of the net value. Most of the revenue derived from the Oil and Gas Production Tax is deposited in the state’s General Fund for government operations and basic services. Payments resulting from an assessment or litigation are deposited into the <a href="http://www.tax.alaska.gov/programs/documentviewer/viewer.aspx?1139r">Constitutional Budget Reserve Fund</a>, which covers the state’s short-term deficits.</p>
 
-<h3 id="natural-resource-trust-funds" data-nav-header="natural-resource-trust-funds">Natural resource trust funds</h3>
+<h2 class="h3" id="natural-resource-trust-funds" data-nav-header="natural-resource-trust-funds">Natural resource trust funds</h2>
 
 <p>Many states choose to establish permanent mineral trust funds through legislation. These funds allow states to invest and hold revenue from natural resource extraction over time. Permanent mineral trust funds can help governments dependent on revenue from natural resources smooth revenue and investments across boom and bust cycles.</p>
 
-<h4>Select states with permanent natural resource trust funds</h4>
+<h4 class="h5">Select states with permanent natural resource trust funds</h4>
 
 <table>
   <tr>
@@ -176,4 +176,3 @@ nav_items:
   <td>General Fund</td>
   </tr>
 </table>
-

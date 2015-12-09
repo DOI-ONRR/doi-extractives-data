@@ -49,13 +49,15 @@ nav_items:
   <a class="revenues_subpage-breadcrumb" href="{{ site.baseurl }}/how-it-works/">How it works</a>
   /
 </div>
-<h1 id="introduction" data-nav-header="introduction">State Legal and Fiscal Information</h1>
+<h1 id="introduction" data-nav-header="introduction">Regulations in 18 states</h1>
+
+<p class="case_studies_intro-para">Learn more about natural resource regulation, production, and revenue in the 18 states that, in 2013, led the country in oil, gas, coal, and nonenergy mineral production; had the most DOI revenue and / or state production taxes; or had the most significant tribal natural resource interest.</p>
 
 <nav class="hash_selector">
   {% include hash_selector.html %}
 </nav>
 
-<h3 id="ak" data-nav-header="ak">Alaska</h3>
+<h2 class="h3" id="ak" data-nav-header="ak">Alaska</h2>
 
 <p>The Division of Oil and Gas within the Alaska Department of Natural Resources is responsible for leasing state lands for oil, gas, and geothermal extraction. Its major functions include evaluating oil and gas resources, fielding and issuing exploration permits, conducting royalty audits, and negotiating contracts. The website for the Alaska Department of Natural Resources has significant information regarding statutes and regulations, leasing on state lands, and historical revenue collection and distribution information, as well as production data, for oil and gas. Additional information about statutes and regulations and leasing on state lands is available for mining from the Division of Land and Water. The Alaska Department of Revenue’s Tax Division collects state taxes, including the Oil and Gas Production Tax and Oil and Gas Property Tax, and administers tax laws. The website contains information about taxes collected and revenue sources and forecasts.</p>
 
@@ -80,7 +82,7 @@ nav_items:
   </ul>
 </ul>
 
-<h3 id="az" data-nav-header="az">Arizona</h3>
+<h2 class="h3" id="az" data-nav-header="az">Arizona</h2>
 
 <p>The Minerals Section within the Arizona State Land Department oversees mining activities on state-trust lands by issuing permits and leases. The Minerals Section’s website contains information about the energy, mineral, and other management programs. The Arizona Department of Mines and Mineral Resources’ information is now available on the Geological Survey Mineral Resources’ webpage, where information on mineral rights, production levels, and laws and regulations can be found. The Office of the Arizona State Treasurer’s website allows visitors to create customized reports on revenue distribution.</p>
 
@@ -95,7 +97,7 @@ nav_items:
   <li><a href="http://www.aztreasury.gov/local-govt/revenue-distributions/">Arizona State Treasurer revenue distribution reports</a></li>
 </ul>
 
-<h3 id="ca" data-nav-header="ca">California</h3>
+<h2 class="h3" id="ca" data-nav-header="ca">California</h2>
 
 <p>The California Department of Conservation includes both the State Mining and Geology Board and the Division of Oil, Gas, and Geothermal Resources. The board oversees mineral resource extraction, reclaiming mine lands, and preparing geologic hazard information. The division regulates the drilling, operation, maintenance, plugging, and abandonment of oil, natural gas, and geothermal wells. Department of Conservation websites provide information on regulation, production, and programs for oil, gas, geothermal, and mining. The California Natural Resources Agency’s website has information regarding California’s renewable energy programs and goals.</p>
 
@@ -114,7 +116,7 @@ nav_items:
   <li><a href="http://resources.ca.gov/developing_renewable_energy_sources/">California Natural Resources Agency, information on renewable energy programs</a></li>
 </ul>
 
-<h3 id="co" data-nav-header="co">Colorado</h3>
+<h2 class="h3" id="co" data-nav-header="co">Colorado</h2>
 
 <p>The Oil and Gas Conservation Commission of the state’s Department of Natural Resources oversees the development of Colorado’s oil and gas natural resources. Its website provides relevant regulatory information, monthly resource production data, quarterly levy data, and information on drilling permits. The Colorado State Land Board manages assets held in public trust for Colorado public schools and institutions, including state lands used for natural resource extraction. The Division of Reclamation Mining and Safety protects miners, the public, and the environment from current and past mining operations. The Colorado Department of Revenue collects and disburses revenue for the state; annual reports provide details on these activities.</p>
 
@@ -140,7 +142,7 @@ nav_items:
   <li><a href="https://www.colorado.gov/pacific/dola/energymineral-impact-assistance-fund-eiaf">Energy / Mineral Impact Assistance Fund supported by state severance taxes</a></li>
 </ul>
 
-<h3 id="il" data-nav-header="il">Illinois</h3>
+<h2 class="h3" id="il" data-nav-header="il">Illinois</h2>
 
 <p>The Department of Natural Resources Office of Mines and Minerals regulates natural resource exploration and development throughout the state. The Office is comprised of four divisions: Land Reclamation; Abandoned Mine Lands; Blasting, Explosives, and Aggregates; and Mine Safety and Training. The Office of Oil and Gas Resource Management is the regulatory authority responsible for permitting, drilling, operating, and plugging oil and gas production wells.</p>
 
@@ -159,7 +161,7 @@ nav_items:
   <li><a href="http://www.ioc.state.il.us/index.cfm/resources/reports/cafr/">State of Illinois Comprehensive Annual Financial Report Archive</a></li>
 </ul>
 
-<h3 id="ky" data-nav-header="ky">Kentucky</h3>
+<h2 class="h3" id="ky" data-nav-header="ky">Kentucky</h2>
 
 <p>The Department for Natural Resources Division of Oil and Gas regulates the oil and gas industry in the state to protect mineral owners’ rights and the sustainability of the environment. The department’s divisions of Mine Permits, Mine Reclamation and Enforcement, and Mine Safety each execute different statutory responsibilities for mineral extraction oversight. Kentucky’s Energy and Environment Cabinet established the Department for Energy Development and Independence to develop and employ sustainable energy strategies for the state.</p>
 
@@ -187,7 +189,7 @@ nav_items:
   <li><a href="http://finance.ky.gov/services/statewideacct/Pages/ReportsandPublications.aspx">Kentucky Finance and Administration Cabinet Comprehensive Annual Financial Report Archive</a></li>
 </ul>
 
-<h3 id="la" data-nav-header="la">Louisiana</h3>
+<h2 class="h3" id="la" data-nav-header="la">Louisiana</h2>
 
 <p>The Office of Mineral Resources within the Department of Natural Resources manages natural resource extraction throughout the state and receives revenue from royalties, bonuses, rents, interest, and fees for leases for state-owned lands. The Office of Conservation and Office of Coastal Management within the department also oversee Louisiana’s oil and gas resources. The State Energy Office helps maximize Louisiana's energy potential by exploring all energy sources.</p>
 
@@ -204,7 +206,7 @@ nav_items:
   <li><a href="http://www.doa.la.gov/Pages/osr/lac/LAC-43.aspx">Office of State Register Administrative Code for natural resources</a></li>
 </ul>
 
-<h3 id="mn" data-nav-header="mn">Minnesota</h3>
+<h2 class="h3" id="mn" data-nav-header="mn">Minnesota</h2>
 
 <p>The Division of Lands and Minerals within Minnesota’s Department of Natural Resources manages the state's mineral resources and mine development on state-owned lands to generate revenue for the state's School and University Trust Funds, local communities, and General Fund. The division ensures full reclamation of extractive sites and maintains comprehensive mineral land records.</p>
 
@@ -219,7 +221,7 @@ nav_items:
   <li><a href="http://mn.gov/mmb/accounting/reports/comprehensive-annual.jsp">Minnesota Comprehensive Annual Financial Report Archive</a></li>
 </ul>
 
-<h3 id="mt" data-nav-header="mt">Montana</h3>
+<h2 class="h3" id="mt" data-nav-header="mt">Montana</h2>
 
 <p>Within Montana’s Department of Resources and Natural Conservation, the Trust Lands Management Division oversees 5.2 million acres of state land and manages all energy resource leasing. The Minerals Management Bureau manages and issues leases and permits for oil, gas, coal, and other natural resources on state lands. The Montana Board of Oil and Gas protects citizens and the environment from the negative effects of oil and gas extraction by issuing permits, inspecting wells, and conducting environmental remediation programs.</p>
 
@@ -236,7 +238,7 @@ nav_items:
   <li><a href="https://revenue.mt.gov/home/publications">Montana Department of Revenue Tax Related Reports</a></li>
 </ul>
 
-<h3 id="nv" data-nav-header="nv">Nevada</h3>
+<h2 class="h3" id="nv" data-nav-header="nv">Nevada</h2>
 
 <p>The Bureau of Mining Regulation and Reclamation within the Department of Conservation and Natural Resources oversees all mining activities in the state of Nevada. The division focuses on regulation (ensuring statutory compliance), closure (confirming stabilization of all applicable mine components), and reclamation (issuing reclamation permits to all large-scale operators).</p>
 
@@ -255,7 +257,7 @@ nav_items:
   <li><a href="http://controller.nv.gov/FinancialReports/CAFR_Download_Page.html">Nevada State Controller Comprehensive Annual Financial Report Archive</a></li>
 </ul>
 
-<h3 id="nm" data-nav-header="nm">New Mexico</h3>
+<h2 class="h3" id="nm" data-nav-header="nm">New Mexico</h2>
 
 <p>The New Mexico Mining and Minerals Division enforces laws and regulations related to mine safety and reclamation of abandoned mines. The division collects production and employment data on active mining operations through its Mine Registration and Reporting Program. It also uses a Geographic Information System (GIS) to locate and track mining activities in the state, available for public use on the division’s website. The Oil Conservation Division regulates oil, gas, and geothermal activity in New Mexico. It gathers well production data, issues permits for new wells, enforces statutes and rules, and ensures abandoned wells are properly plugged and the land is restored.</p>
 
@@ -275,7 +277,7 @@ nav_items:
   <li><a href="http://nmdfa.state.nm.us/New_Mexico_CAFR.aspx">New Mexico Department of Finance and Administration Comprehensive Annual Financial Report Archive</a></li>
 </ul>
 
-<h3 id="nd" data-nav-header="nd">North Dakota</h3>
+<h2 class="h3" id="nd" data-nav-header="nd">North Dakota</h2>
 
 <p>North Dakota’s Department of Mineral Resources Oil and Gas Division regulates the drilling and production of oil and gas in the state. In addition to its regulatory oversight function, the Oil and Gas Division manages permitting and maintains production and well data. Data pertaining to mineral extraction is housed by the state’s Geological Survey.</p>
 
@@ -295,7 +297,7 @@ nav_items:
   </ul>
 </ul>
 
-<h3 id="ok" data-nav-header="ok">Oklahoma</h3>
+<h2 class="h3" id="ok" data-nav-header="ok">Oklahoma</h2>
 
 <p>The Oklahoma Commissioners of the Land Office manages state lands, including oil and gas leasing to generate revenue that supports the state’s common schools and higher education institutions. The Oklahoma Department of Mines regulates the coal and nonfuel mineral production, enforcing a variety of federal and state programs for safety, health, and land reclamation. The department also issues permits for all mining operations.</p>
 
@@ -315,7 +317,7 @@ nav_items:
   <li><a href="http://www.ok.gov/OSF/documents/cafr14.pdf">Oklahoma Office of Management and Enterprise Services Comprehensive Annual Financial Report</a></li>
 </ul>
 
-<h3 id="pa" data-nav-header="pa">Pennsylvania</h3>
+<h2 class="h3" id="pa" data-nav-header="pa">Pennsylvania</h2>
 
 <p>The Department of Environmental Protection, including the Bureau of Mining Programs and the Office of Oil and Gas Management, manages programs that ensure the safe and responsible exploration, development, and recovery of extractive resources. These programs include permitting and inspection, regulatory oversight, and training.</p>
 
@@ -339,7 +341,7 @@ nav_items:
   </ul>
 </ul>
 
-<h3 id="tx" data-nav-header="tx">Texas</h3>
+<h2 class="h3" id="tx" data-nav-header="tx">Texas</h2>
 
 <p>The Railroad Commission of Texas is statutorily responsible for regulating the exploration and production of the state’s natural resources: oil, natural gas, minerals (particularly lignite and coal), and alternative fuels. The commission oversees natural resource extraction along with land reclamation and environmental protection. The commission also oversees safety and compliance related to the state’s extensive oil and gas pipeline infrastructure.</p>
 
@@ -354,7 +356,7 @@ nav_items:
   <li><a href="http://www.texastransparency.org/State_Finance/Budget_Finance/Reports/Revenue_by_Source/revenue_hist.php">Historical state net tax revenue by source</a></li>
 </ul>
 
-<h3 id="ut" data-nav-header="ut">Utah</h3>
+<h2 class="h3" id="ut" data-nav-header="ut">Utah</h2>
 
 <p>The Division of Oil, Gas, and Mining within Utah’s Department of Natural Resources is responsible for developing natural resources for the economic benefit of the public while preserving the state’s natural environment. The division maintains four core programs, each with specific oversight functions: the Coal Program, the Mineral Mining Program, the Oil and Gas Program, and the Abandoned Mine Reclamation Program.</p>
 
@@ -375,7 +377,7 @@ nav_items:
   <li><a href="http://finance.utah.gov/cafr.html">Utah Department of Administrative Services Division of Finance Comprehensive Annual Financial Report Archive</a></li>
 </ul>
 
-<h3 id="wv" data-nav-header="wv">West Virginia</h3>
+<h2 class="h3" id="wv" data-nav-header="wv">West Virginia</h2>
 
 <p>The West Virginia Department of Environmental Protection oversees natural resource extraction in West Virginia. The department’s Office of Oil and Gas is responsible for monitoring and regulating all actions related to the exploration, drilling, storage, and production of oil and natural gas. The Division of Mining and Reclamation manages compliance, reclamation, permitting, and communications between the public and industry.</p>
 
@@ -396,7 +398,7 @@ nav_items:
   <li><a href="http://www.finance.wv.gov/FARS/CAFR/Pages/default.aspx">West Virginia Department of Administration, Division of Finance Comprehensive Annual Financial Report Archive</a></li>
 </ul>
 
-<h3 id="wy" data-nav-header="wy">Wyoming</h3>
+<h2 class="h3" id="wy" data-nav-header="wy">Wyoming</h2>
 
 <p>The Wyoming Office of State Lands and Investments manages resource extraction on state land held in public trust. The revenue from energy and mineral resource leasing helps fund public education and essential institutions in the state.</p>
 

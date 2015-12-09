@@ -274,14 +274,17 @@
   }
 
   function updateBBox(map) {
-    var viewBox = getViewBox(map);
-    d3.select(map)
-      .attr('viewBox', viewBox);
+    if (!map.hasAttribute('viewBox')) {
+      var viewBox = getViewBox(map);
+      d3.select(map)
+        .attr('viewBox', viewBox);
+    }
   }
 
   function getViewBox(map) {
     var bbox = map.getAttribute('bounds');
     var path = getSVGPath(map);
+    var proj = getProjection(map);
 
     var bounds = function(d) {
       if (d.type === 'Topology') {
@@ -294,9 +297,10 @@
     if (bbox) {
       // "xmin ymin xmax ymax"
       var parts = bbox.split(' ').map(Number);
-      var p0 = path.projection()([parts[0], parts[1]]);
-      var p1 = path.projection()([parts[2], parts[3]]);
-      bbox = [p0, p1];
+      bbox = [
+        proj([parts[0], parts[1]]),
+        proj([parts[2], parts[3]])
+      ];
     } else {
       var layers = getDataLayers(map);
 

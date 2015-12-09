@@ -24,7 +24,7 @@ nav_items:
 
 <p class="case_studies_intro-para">The legislative branch of the federal government has passed many laws that govern natural resource extraction on federal lands.</p>
 
-<h3 id="fiscal-regime" data-nav-header="fiscal-regime">Fiscal regime</h3>
+<h2 class="h3" id="fiscal-regime" data-nav-header="fiscal-regime">Fiscal regime</h2>
 
 <p>The following table lists the laws that provide the backbone of the fiscal regime for the extractive industries, as well as the relevant lands and natural resources to which they apply.</p>
 
@@ -145,7 +145,7 @@ nav_items:
   </tr>
 </table>
 
-<h3 id="fees-and-fines" data-nav-header="fees-and-fines">Fees and fines for extractive industries companies</h3>
+<h2 class="h3" id="fees-and-fines" data-nav-header="fees-and-fines">Fees and fines for extractive industries companies</h2>
 
 <p>There are other laws governing natural resources and extractive companies’ operations. Some of these laws require companies to pay fees. Violating some of these laws can also result in companies paying fines.</p>
 
@@ -200,7 +200,7 @@ nav_items:
   </tr>
 </table>
 
-<h3 id="other-laws" data-nav-header="other-laws">Other laws</h3>
+<h2 class="h3" id="other-laws" data-nav-header="other-laws">Other laws</h2>
 
 <p>There are many other laws with which extractive industries companies must comply. DOI, EPA, the National Oceanic and Atmospheric Administration (NOAA), and other federal agencies’ websites contain more comprehensive lists of laws they enforce:</p>
 
@@ -213,7 +213,7 @@ nav_items:
 <li><a href="http://www.nmfs.noaa.gov/ole/about/what_we_do/laws.html">NOAA</a></li>
 </ul>
 
-<h3 id="regulations" data-nav-header="regulations">Regulations</h3>
+<h2 class="h3" id="regulations" data-nav-header="regulations">Regulations</h2>
 
 <p>Federal agencies, such as DOI and relevant bureaus, implement these laws by developing and enforcing regulations and rules. These key regulations relate to natural resource extraction, particularly on federal and Indian lands:</p>
 
@@ -225,4 +225,3 @@ nav_items:
 
 <p>Implementing laws includes complying with the <a href="http://www.gpo.gov/fdsys/pkg/USCODE-2010-title42/pdf/USCODE-2010-title42-chap55-sec4321.pdf">National Environmental Policy Act (NEPA) of 1969</a> (42 USC § 4321 et seq.). NEPA is intended to ensure that decision makers and the public have information about the potential impacts to the environment of proposed federal actions and alternatives to those actions. When taking any major action, such as leasing natural resources on federal lands for extraction, federal agencies must prepare Environmental Assessments (EAs) and/or EISs to document environmental impacts of agency actions and alternatives to those actions. The public has legally mandated opportunities to comment on these impact statements.
 </p>
-

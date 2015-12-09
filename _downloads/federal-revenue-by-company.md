@@ -14,35 +14,38 @@ permalink: /downloads/federal-revenue-by-company/
     </div>
     <h1>Federal Revenue by Company</h1>
 
-    <a href="{{site.baseurl}}/downloads/federal_revenue_by_company_CY2013_2015-11-10.xlsx" class="button-tertiary">
-      <icon class="icon-cloud icon-padded"></icon>Download full dataset (xlsx, 132 KB)
-    </a>
+    <p class="case_studies_intro-para">This dataset provides calendar year 2013 natural resource revenues data by company. This new dataset is a product of USEITI and represents cooperation between government, industry, and civil society to create and confirm this information, and provide it in a way that adds to the national dialogue on natural resource extraction. This data set will be updated in the first quarter of the calendar year.</p>
 
-    <h2>Documentation</h2>
+    <p class="downloads-download_links-intro">Download calendar year data:
+      <ul class="downloads-download_links">
+        <li><a href="{{site.baseurl}}/downloads/federal_revenue_by_company_CY2013_2015-11-10.xlsx"><icon class="icon-cloud icon-padded"></icon>
+        Full dataset (xlsx, 132 KB)</a></li>
+       </ul>
+     </p>
 
-    <p>The &ldquo;total revenues by company&rdquo; dataset on this site provides calendar year 2013 natural resource revenues data by company. This new dataset is a product of USEITI and represents cooperation between government, industry, and civil society to create and confirm this information, and provide it in a way that adds to the national dialogue on natural resource extraction. This data set will be updated in the first quarter of the calendar year.</p>
+    <h2 class="h3">Scope</h2>
 
-    <h3>Scope</h3>
+    <p>This dataset includes revenues for U.S. federal lands and offshore areas. It does not include Indian lands, privately-owned lands, or U.S. state lands. The datasets currently include data tracked and managed by the Department of the Interior’s (DOI) Office of Natural Resources Revenue (ONRR), Bureau of Land Management (BLM), and Office of Surface Mining, Reclamation, and Enforcement.</p>
 
-    <p>These datasets include revenues for U.S. federal lands and offshore areas. It does not include Indian lands, privately-owned lands, or U.S. state lands. The datasets currently include data tracked and managed by the Department of the Interior’s (DOI) Office of Natural Resources Revenue (ONRR), Bureau of Land Management (BLM), and Office of Surface Mining, Reclamation, and Enforcement.</p>
-
-    <h3>Companies below threshold</h3>
+    <h2 class="h3">Why is there a line in the data called 'companies below threshold'?</h2>
 
     <p>The USEITI Multi-Stakeholder Group agreed to an annual reporting threshold of $100,000 because these aggregated payments make up less than one quarter of one percent of total payments. Many of the companies that fall below this threshold are small companies, individuals, and family trusts. Payments made by entities that reported less than $100,000 are aggregated (rolled-up) into this category.</p>
 
-    <h3>One mine one product</h3>
+    <h2 class="h3">Why is there a line in the data called 'one mine one product'?</h2>
 
-    <p>Disclosing payments of solid mineral companies who only produce and sell only one product from one mine can reveal proprietary sales price and contracting information and cause competitive harm to these small companies. The DOI is legally obligated through the Trades Secrets Act to safeguard this data, so payments from these companies are aggregated (rolled-up) in this category. These aggregated payments make up less than three thousandths of one percent of all payments.</p>
+    <p>Disclosing payments of solid mineral companies who only produce and sell only one product from one mine can reveal proprietary sales price and contracting information and cause competitive harm to these small companies. The Department of the Interior is legally obligated through the Trades Secrets Act to safeguard this data, so payments from these companies are aggregated (rolled-up) in this category. These aggregated payments make up less than three thousandths of one percent of all payments.</p>
 
-    <h3>Why are some values negative?</h3>
+    <h2 class="h3">Why are some values negative?</h2>
 
     <p>Companies can adjust and correct their payments for up to seven years after a transaction takes place. If a company overpays their royalty, rent, or bonus, they are entitled to recoup their overpayment. If the overpayment and recoupment happen in different years, the recoupment will appear as a negative amount in ONRR’s revenue summaries.</p>
 
-    <h3>Why is there a Gas value, an Oil value and an Oil & Gas value?</p></h3>
+    <h2 class="h3">Why is there a Gas value, an Oil value and an Oil & Gas value?</p></h2>
 
     <p>“Oil & Gas” is the commodity category used for offshore oil and gas rents and bonuses. At the time of lease sale, it isn’t known whether a lease will produce oil, gas, or both oil and gas. After a lease starts producing a commodity (or commodities), the lease owner starts paying royalties, and these royalties can then be associated with either oil or gas. Hence, rent and bonus lines of data will be associated with an “Oil & Gas” commodity type, while royalty lines of data will be associated with either “Oil” or “Gas” commodity types.</p>
 
-    <h3>Data dictionary: fields and definitions</h3>
+    <h2>Data dictionary</h2>
+
+    <h3>Fields and definitions</h3>
 
     <p><strong>Company Name.</strong> Name of company.</p>
 

@@ -14,7 +14,7 @@ permalink: /about/whats-new/
     </div>
 
     <h1>{{page.title}}</h1>
-    
+
     <p>The ititial USEITI beta site launched in early 2015, offering visualizations that showed how such resources generate revenue across the country, and where the money earned goes.</p>
 
     <p>This site expands and improves on that site in response to user feedback and new data. Here's some of the ways we've made the site more useful:</p>
@@ -36,12 +36,14 @@ permalink: /about/whats-new/
 
     <p><strong>How it works:</strong> Beyond the numbers, we've included new narratives explaining how the whole system of leasing federal land and collecting royalties on extracted materials works in the U.S. <a href="">Learn how it works.</a></p>
 
+    <h2>What's next</h2>
+
     <p>This site is still in progress. Over the coming months, here's what we're looking forward to:</p>
 
     <ul class="list-bullet">
       <li>USEITI has invited states to opt in to this process, with the goal of making state-level data more navigable for members of the public. In 2016, participating states will begin contributing data.</li>
       <li>In early 2016, we'll be making reconciliation data more interactive and easier to explore.</li>
-      <li>We'll be collecting community feedback to help us make the site clearer and more useful. <a href="">Help us improve the site.</a></li>
+      <li>We'll be collecting community feedback to help us make the site clearer and more useful. <a href="https://ethn.io/38933">Help us improve the site.</a></li>
     </ul>
 
   </div>

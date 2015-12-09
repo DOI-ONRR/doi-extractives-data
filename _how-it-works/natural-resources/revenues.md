@@ -12,19 +12,23 @@ permalink: /how-it-works/revenues/
       <a class="revenues_subpage-breadcrumb" href="{{ site.baseurl }}/how-it-works/">How it works</a>
       /
     </div>
-    <h1>Revenues</h1>
+    <h1>Revenue</h1>
 
-    <h3>DOI revenue</h3>
+    <p class="case_studies_intro-para">Companies pay a wide range of fees, rates and taxes to extract natural resources in the U.S. The amounts differ depending on what the <a href="{{ site.baseurl }}/how-it-works/ownership/">ownership</a> of the natural resource looks like. We'll cover some of the major types of payments companies make here. They are usually called 'revenue' because they represent revenue to the American public.</p>
 
-    <p class="case_studies_intro-para">When companies extract natural resources on federal onshore lands and the Outer Continental Shelf, they pay revenue to the Department of the Interior (DOI). In general, companies pay bonuses, rents, royalties, or fees and penalties (if incurred) to ONRR, and in some cases bonuses and rents to BLM. Royalties, a percentage of the sales value of extracted resources, make up most of the revenue paid to DOI.</p>
+    <h2>Payments to extract natural resources from federal land and waters</h2>
+
+    <p>When companies extract natural resources on federal onshore lands and the Outer Continental Shelf, they pay revenue to the Department of the Interior (DOI). In general, companies pay bonuses, rents, royalties, or fees and penalties (if incurred) to ONRR, and in some cases bonuses and rents to BLM. Royalties, a percentage of the sales value of extracted resources, make up most of the revenue paid to DOI.</p>
 
     <p>Lease holders also pay different fees to BLM, BSEE, and BOEM, often to reimburse the federal government for costs associated with awarding, administering, and enforcing leases. For extracting locatable hardrock minerals on federal lands, companies pay fees, but not royalties under the Mining Law of 1872.</p>
 
     <img src="{{site.baseurl}}/img/landing-placeholders/revenue-type-summary-table.png">
 
+    <h2>Payments to extract natural resources from any land or water in the U.S.</h2>
+
     <h3>Corporate income taxes</h3>
 
-    <p>Corporations operating in the extractive industries also pay taxes to the IRS on their income. These companies pay federal corporate income taxes regardless of whether they extract natural resources from federal, state, or privately held lands, so long as they have a liability. These companies also pay taxes on income from extracting natural resources and processing them into other products and commodities. There are different types of companies operating in these industries, with different ownership structures, and as a result, they are treated as different taxpayers:</p>
+    <p>Corporations operating in the extractive industries pay taxes to the IRS on their income. These companies pay federal corporate income taxes regardless of whether they extract natural resources from federal, state, or privately held lands, so long as they have a liability. These companies also pay taxes on income from extracting natural resources and processing them into other products and commodities. There are different types of companies operating in these industries, with different ownership structures, and as a result, they are treated as different taxpayers:</p>
 
     <ul class="list-bullet">
   	  <li>C-corporations with many shareholders who own the company; these companies pays corporate income taxes to the IRS</li>
@@ -66,11 +70,15 @@ permalink: /how-it-works/revenues/
 
     <p>The federal budget also includes annual estimates of the net revenue effects of eliminating a wider range of fossil fuel related tax expenditures outlined in <a href="https://www.treasury.gov/open/Documents/USA%20FFSR%20progress%20report%20to%20G20%202014%20Final.pdf">United States – Progress Report on Fossil Fuel Subsidies</a>. When added together, eliminating fossil fuel tax expenditures would decrease the U.S. deficit by $4.4 billion a year on average over a 10-year window, per estimates in the White House report, <a href="https://www.whitehouse.gov/sites/default/files/omb/budget/fy2016/assets/16msr.pdf">Fiscal Year 2016 Mid-Session Review: Budget of the U.S. Government</a>. The report did not include estimates of the effects of eliminating renewable and nonenergy mineral tax expenditures.</p>
 
+    <h2>After a payment, what happens to the revenue?</h2>
+
     <h3>Federal budget process</h3>
 
     <p>Once revenue is collected by the federal government, it passes through a series of budgetary gateways before ultimately funding public services and community development. These gateways are described below:</p>
 
     <img src="{{site.baseurl}}/img/landing-placeholders/disbursements.png">
+
+    <p>You can explore disbursement data on our site <a href="{{ site.baseurl }}/explore/disbursements/">here</a>.</p>
 
   </article>
 

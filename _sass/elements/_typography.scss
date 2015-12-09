@@ -62,9 +62,16 @@ ul,
 }
 
 p + h2,
+p + .h2,
 p + h3,
+p + .h3,
 p + h4,
+p + .h4,
 table + h3,
-ul + h3 {
+table + .h3,
+ul + h2,
+ul + .h2,
+ul + h3,
+ul + .h3 {
   margin-top: $base-padding-large;
 }

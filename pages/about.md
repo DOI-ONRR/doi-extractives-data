@@ -15,8 +15,7 @@ permalink: /about/
         <h2 class="about_intro-header">The 2015 USEITI Report is now available, and includes:</h2>
         <ul class="list-bullet about_intro-list">
           <li>Never-before-released federal production data</li>
-          <li>Another important point here that is probably on two lines</li>
-          <li>Even a third thing</li>
+          <li>New narratives explaining how the whole system of leasing federal land works in the U.S.</li>
         </ul>
         <a href="{{ site.baseurl }}/about/whats-new/" class="carousel-button button-primary">See what's new</a>
       </div>

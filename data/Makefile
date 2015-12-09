@@ -336,6 +336,9 @@ geo/us-states.json: geo/us-topology.json
 geo/offshore.json: $(input)geo/offshore/*.json
 	$(BIN)/topojson $(topo_options) --properties -o $@ -- $^
 
+geo/offshore-regions.json: geo/offshore-simple.json
+	bin/offshore-regions.json $< $@
+
 geo/%-simple.json: geo/%.json
 	$(BIN)/topojson $(topo_options) --properties --simplify 1e-8 -o $@ $<
 

@@ -2,11 +2,11 @@
 <select data-nav-options onchange="openListNav.changeHandler(this)">
   {% if page.nav_items %}
     {% for item in page.nav_items %}
-    	{% if item.nav_group %}
+      {% if item.nav_group %}
         <optgroup label="{{item.nav_group}}">
-    	{% else %}
-    		<option value="{{item.name}}">{{item.title}}</option>
-  		{% endif %}
+      {% else %}
+        <option value="{{item.name}}">{{item.title}}</option>
+      {% endif %}
     {% endfor %}
   {% endif %}
 </select>

@@ -24,7 +24,7 @@ nav_items:
 
 Iron ore is the primary mineral substance for the world's iron and steel industries. The U.S. is estimated to possess iron ore reserves of 110 billion tons, which can produce approximately 27 billion tons of metallic iron. In 2013, the U.S. was the world’s eighth-largest producer of iron ore, generating an output of 53 million metric tons. More than three-fourths of that output came from iron mines located in a single area of Minnesota: St. Louis County.[^1]
 
-<h2 class="h3"><a name="geology" class="case_studies_content-heading" data-nav-header="geology">Geology and history</a></h3>
+<h2 class="h3"><a name="geology" class="case_studies_content-heading" data-nav-header="geology">Geology and history</a></h2>
 
 All iron mining in St. Louis County takes place along the Mesabi Iron Range. The Mesabi Range is a narrow, 120-mile-long iron deposit stretching from Babbitt to Grand Rapids that has shaped the economic development of the region throughout the past century. Iron ore was first discovered in the Mesabi Range in 1866; extractive operations began in the 1890s, and focused on exploiting the rich reserves of high-grade natural ore that could be easily processed into steel. After extracting approximately 2.5 billion tons of this natural ore, the industry had largely exhausted the supply by the 1950s, and companies began mining a lower-grade iron ore alternative: taconite. Taconite mining targets chert-magnetite ores that are processed and upgraded into higher-grade iron pellets to feed steel mill blast furnaces. To date, the industry has produced approximately 1.6 billion tons of these iron pellets from Mesabi Range ore.[^2]
 

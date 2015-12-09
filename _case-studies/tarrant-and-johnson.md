@@ -20,7 +20,7 @@ nav_items:
     title: Data
 ---
 
-<h2 class="h3"><a name="intro" class="case_studies_content-heading" data-nav-header="intro">{{ page.title }}</a></h3>
+<h2 class="h3"><a name="intro" class="case_studies_content-heading" data-nav-header="intro">{{ page.title }}</a></h2>
 
 Texas leads the country in natural gas production, generating more gas annually than the next three highest-producing states combined (Louisiana, Oklahoma, and Wyoming).[^1] Tarrant and Johnson counties contribute significantly to Texas’s natural gas production due to their geographic positioning atop the rich reserves of the Barnett Shale field in the Bend Arch-Fort Worth Basin.
 

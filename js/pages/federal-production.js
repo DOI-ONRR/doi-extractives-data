@@ -243,7 +243,7 @@
             };
 
         var dataByFeatureId = d3.nest()
-          .key(getter(fields.region))
+          .key(getter(fields.subregion || fields.region))
           .rollup(rollup)
           .map(data);
 
@@ -255,19 +255,21 @@
           f.value = dataByFeatureId[id];
         });
 
-        var withheld = data.filter(function(d) {
-          return d[fields.region] === 'Withheld';
-        });
-
-        if (withheld.length) {
-          console.log('got %d withheld rows:', withheld);
-          features.push({
-            id: 'W',
-            value: rollup(withheld),
-            properties: {
-              name: '(Withheld)'
-            }
+        if (state.get('product')) {
+          var withheld = data.filter(function(d) {
+            return d[fields.region] === 'Withheld';
           });
+
+          if (withheld.length) {
+            console.log('got %d withheld rows:', withheld);
+            features.push({
+              id: 'W',
+              value: rollup(withheld),
+              properties: {
+                name: '(Withheld)'
+              }
+            });
+          }
         }
 
         var value = getter('value');
@@ -492,8 +494,10 @@
           };
         }
         break;
-      case 3:
-        fields.region = 'Area';
+
+      // offshore
+      default:
+        fields.subregion = 'Area';
         fields.featureId = function(f) {
           return f.properties.name;
         };
@@ -711,7 +715,7 @@
         d.Commodity = lookup[withoutUnits] || lookup[firstWord];
         if (!d.Commodity) {
           d.Commodity = 'Other';
-          console.log('other:', product, [withoutUnits, firstWord]);
+          // console.log('other:', product, [withoutUnits, firstWord]);
         }
       };
     })();
@@ -768,7 +772,7 @@
       dispatch.products(products);
 
       var region = state.get('region');
-      if (region && region.length === 3) {
+      if (region && region.length !== 2) {
         var fields = getFields(region);
         var regionName = REGION_ID_NAME[region];
         data = data.filter(function(d) {

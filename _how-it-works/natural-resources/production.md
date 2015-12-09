@@ -37,7 +37,7 @@ nav_items:
 
 <p class="case_studies_intro-para">The United States is home to many different natural resources, including fossil fuel (i.e., oil, gas, and coal), renewable energy (i.e., geothermal, solar, and wind), and nonenergy mineral resources (i.e., gold, copper, and iron). Since the 19th century, natural resource extraction has been a major industry in the U.S., with fluctuations throughout time.</p>
 
-<img src="{{site.baseurl}}/img/global-rank-production.png" alt="U.S. global rank for select natural resources in 2013. First in natural gas (30,005,254 million cubic feet) and oil (2,720,782 thousand barrels). Second in coal (nearly 1 billion short tons) and renewable energy (9.33 quadrillion btu). Third in gold (230 metric tons). Fourth in copper (1,250 thousand metric tons). Eighth in iron (53 million metric tons)." class="article_img">
+<img src="{{site.baseurl}}/img/global-rank-production.png" alt="U.S. global rank for select natural resources in 2013. First in natural gas (30,005,254 million cubic feet) and oil (2,720,782 thousand barrels). Second in coal (nearly 1 billion short tons) and renewable energy (9.33 quadrillion btu). Third in gold (230 metric tons). Fourth in copper (1,250 thousand metric tons). Eighth in iron (53 million metric tons)." class="article_img-80">
 
 <h2>Fossil fuels</h2>
 

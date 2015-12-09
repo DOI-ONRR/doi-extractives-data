@@ -34,7 +34,7 @@ nav_items:
 
 <p>Lease holders also pay different fees to BLM, BSEE, and BOEM, often to reimburse the federal government for costs associated with awarding, administering, and enforcing leases. For extracting locatable hardrock minerals on federal lands, companies pay fees, but not royalties under the Mining Law of 1872.</p>
 
-<img src="{{site.baseurl}}/img/landing-placeholders/revenue-type-summary-table.png">
+<img src="{{site.baseurl}}/img/revenue-streams-chart.png" alt="Select federal revenue streams and statutory and regulatory rates" class="article_img-100">
 
 <h2 id="all-lands-and-waters" data-nav-header="all-lands-and-waters">Payments to extract natural resources from any land or water in the U.S.</h2>
 

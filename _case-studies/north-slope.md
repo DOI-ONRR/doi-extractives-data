@@ -41,7 +41,7 @@ In 2013, the North Slope Borough produced 182.5 million bbl of oil on both state
 
 The oil industry is a key driver of jobs throughout the borough. In 2013, oil and gas extraction provided 1,768 jobs on the North Slope, accounting for 12.5% of total employment (14,199).[^12] [^13] The North Slope Borough’s population is less than 10,000, so many private jobs are filled by nonresidents. In 2013, nonresidents accounted for 33.6% of oil industry workers in Alaska, up from 31.6% in 2012.[^14] The North Slope Borough government itself remains the largest employer of local residents, along with the Arctic Slope Regional Corporation, school district, and local Native corporations.[^15]
 
-<h2 class="h3"><a name="revenue" class="case_studies_content-heading" data-nav-header="revenue">Revenues</a></h3>
+<h2 class="h3"><a name="revenue" class="case_studies_content-heading" data-nav-header="revenue">Revenues</a></h2>
 
 Given the North Slope’s relative geographic isolation, oil revenue is critical for supporting local schools, health centers, fire stations, water and sanitation facilities, and infrastructure. In 2013, the North Slope government received $470 million in revenue. Of that revenue, the borough received $332 million from local property taxes, 98% of which was levied on oil- and gas-related properties.[^16]
 

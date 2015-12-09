@@ -1,6 +1,5 @@
 
 .filters-wrapper {
-  margin-bottom: $base-padding;
   padding: $base-padding;
 
   @include respond-to(medium-up) {

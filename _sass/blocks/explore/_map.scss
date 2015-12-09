@@ -74,6 +74,7 @@ eiti-slider {
 .map-intro_text {
   @include heading(para-md);
   padding: $base-padding;
+  padding-top: 0;
 
   @include respond-to(medium-up) {
     padding-left: 0;

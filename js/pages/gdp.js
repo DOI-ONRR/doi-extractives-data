@@ -3,7 +3,7 @@
 
   // local alias for region id => name lookups
   var REGION_ID_NAME = eiti.data.REGION_ID_NAME;
-  var colorscheme = colorbrewer.Purples;
+  var colorscheme = colorbrewer.GnBu;
 
   // our state is immutable!
   var state = new Immutable.Map();
@@ -20,7 +20,7 @@
   var formatDollars = eiti.format.dollars;
   var formatPercent = d3.format('%.2');
   var formatNumber = formatDollars;
-  var NULL_FILL = '#eee';
+  var NULL_FILL = '#f7f7f7';
 
   // buttons that expand and collapse other elements
   var filterToggle = root.select('button.toggle-filters');

@@ -36,6 +36,8 @@ permalink: /about/whats-new/
 
     <p><strong>How it works:</strong> Beyond the numbers, we've included new narratives explaining how the whole system of leasing federal land and collecting royalties on extracted materials works in the U.S. <a href="">Learn how it works.</a></p>
 
+    <h2>What's next</h2>
+
     <p>This site is still in progress. Over the coming months, here's what we're looking forward to:</p>
 
     <ul class="list-bullet">

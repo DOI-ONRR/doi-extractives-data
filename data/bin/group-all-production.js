@@ -182,8 +182,6 @@ async.parallel({
         d['Mine State'] = stateKey[d['Mine State']];
       });
 
-      // console.warn(data[commodity])
-
       var states = getStates(data, commodity, 'Mine State');
 
       // Reject states that non-complient statest

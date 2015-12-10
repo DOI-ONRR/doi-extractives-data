@@ -244,7 +244,7 @@
           .rollup(rollup)
           .map(data);
 
-
+        // de/bugger
         var featureId = getter(fields.featureId);
         features.forEach(function(f) {
           var id = featureId(f);
@@ -261,7 +261,7 @@
         subregions.style('fill', function(d) {
 
           var v = value(d);
-          // console.log('---value---', v)
+          // console.log('---region value---', v)
           return v === undefined
             ? NULL_FILL
             : scale(v);
@@ -358,6 +358,7 @@
     var bar = selection.select('eiti-bar');
     bar.style('display', state.get('product') ? null : 'none');
     bar.attr('max', max);
+
     bar.attr('value', getter('value'));
 
     selection.select('.value')
@@ -476,14 +477,12 @@
             if (regionId !== 'US') {
               fields.region = 'County';
               fields.featureId = function(f) {
-                // console.log('============',f)
                 return f.properties.name;
               };
             }
           } else {
             fields.region = 'Region';
             fields.featureId = function(f) {
-              // console.log('============',f)
               return f.properties.abbr;
             };
           }
@@ -494,14 +493,9 @@
       default:
         if (regionId.length > 3){
           fields.region = 'Region';
-          // fields.featureId = function(f) {
-          //   // console.log('==========', f)
-          //   return f.properties.name;
-          // };
         } else {
           fields.subregion = 'Area';
           fields.featureId = function(f) {
-            // console.log('==========', f)
             return f.properties.name;
           };
         }
@@ -521,24 +515,7 @@
       })
       .key(getter('Year'))
       .rollup(function(d) {
-        // console.log('------val---', d3.sum(d, value))
-        // console.log(d, state.get('region'))
-        // if (state.get('product') !== 'Coal (short tons)' && state.get('region') !== 'US' && state.get('region')){
-        //   var filtered = d.filter(function(region){
-        //     console.log(region.Region == state.get('region'))
-        //     return !region.Region == state.get('region');
-        //   })
-        //   console.log(filtered)
-        //   if (filtered.length) {
-        //     return filtered[0].Volume;
-        //   } else {
-        //     return d3.sum(d, value);
-        //   }
-
-        // } else {
-          return d3.sum(d, value);
-        // }
-
+        return d3.sum(d, value);
       })
       .map(data);
 
@@ -777,6 +754,7 @@
     }
 
     function applyFilters(data, state, done) {
+
       // XXX fix Commodity values
       if (data.length && !data[0].Commodity) {
         data.forEach(fixCommodity);

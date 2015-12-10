@@ -191,13 +191,8 @@
   function renderRegion(selection, state) {
     var regionId = state.get('region') || 'US';
     var product = state.get('product');
-    console.log('+--------+', product)
     var fields = getFields(regionId);
 
-    console.log('fields ===', fields)
-
-    // console.log('loading', regionId);
-    // console.time('load');
     model.load(state, function(error, data) {
       // console.timeEnd('load');
 
@@ -205,8 +200,6 @@
         console.warn('error:', error.status, error.statusText);
         data = [];
       }
-
-      // console.time('render regions');
 
       var header = selection.select('.region-header');
       if (header.select('*').empty()) {
@@ -218,14 +211,11 @@
         ? d3.sum(data, getter(fields.value))
         : unique(data, 'Product').length;
 
-      var totalText = state.get('product') === 'Coal (short tons)'
-        ? 'Total'
-        : 'All US';
       header
         .datum({
           value: total,
           properties: {
-            name: totalText
+            name: 'Total'
           }
         })
         .call(updateRegionRow);
@@ -250,36 +240,18 @@
             };
 
         var dataByFeatureId = d3.nest()
-          .key(getter(fields.subregion || fields.region))
+          .key(getter(fields.region))
           .rollup(rollup)
           .map(data);
 
-        // console.log('data by feature id:', dataByFeatureId);
 
         var featureId = getter(fields.featureId);
         features.forEach(function(f) {
           var id = featureId(f);
-          // console.log('---',dataByFeatureId, id)
+
           f.value = dataByFeatureId[id];
-          // console.log('~~~~~~~~~', f.value)
         });
 
-        if (state.get('product')) {
-          var withheld = data.filter(function(d) {
-            return d[fields.region] === 'Withheld';
-          });
-
-          if (withheld.length) {
-            console.log('got %d withheld rows:', withheld);
-            features.push({
-              id: 'W',
-              value: rollup(withheld),
-              properties: {
-                name: '(Withheld)'
-              }
-            });
-          }
-        }
 
         var value = getter('value');
         var values = features.map(value);
@@ -289,7 +261,7 @@
         subregions.style('fill', function(d) {
 
           var v = value(d);
-          // console.log('------', v)
+          // console.log('---value---', v)
           return v === undefined
             ? NULL_FILL
             : scale(v);
@@ -487,17 +459,7 @@
     return new Immutable.Set(commodities);
   }
 
-  // function getFields(state) {
-  //   var fields = {
-  //     region: 'State',
-  //     value: 'Volume',
-  //     featureId: 'id'
-  //   };
-  //   return fields;
-  // }
-
   function getFields(regionId) {
-    console.log(regionId)
     var fields = {
       region: 'Region',
       value: 'Volume',
@@ -514,44 +476,69 @@
             if (regionId !== 'US') {
               fields.region = 'County';
               fields.featureId = function(f) {
-                console.log('============',f)
+                // console.log('============',f)
                 return f.properties.name;
               };
             }
           } else {
             fields.region = 'Region';
             fields.featureId = function(f) {
-              console.log('============',f)
+              // console.log('============',f)
               return f.properties.abbr;
             };
-            }
+          }
         }
         break;
 
       // offshore
       default:
-        fields.subregion = 'Area';
-        fields.featureId = function(f) {
-          return f.properties.name;
-        };
+        if (regionId.length > 3){
+          fields.region = 'Region';
+          // fields.featureId = function(f) {
+          //   // console.log('==========', f)
+          //   return f.properties.name;
+          // };
+        } else {
+          fields.subregion = 'Area';
+          fields.featureId = function(f) {
+            // console.log('==========', f)
+            return f.properties.name;
+          };
+        }
+
         break;
     }
     return fields;
   }
 
   function updateTimeline(selection, data, state) {
-    console.log(data)
     var fields = getFields(state.get('region'));
-    console.log('***',fields, state.get('region'))
     var value = getter(fields.value);
-    console.log(value)
+
     var dataByYearPolarity = d3.nest()
       .key(function(d) {
         return value(d) < 0 ? 'negative' : 'positive';
       })
       .key(getter('Year'))
       .rollup(function(d) {
-        return d3.sum(d, value);
+        // console.log('------val---', d3.sum(d, value))
+        // console.log(d, state.get('region'))
+        // if (state.get('product') !== 'Coal (short tons)' && state.get('region') !== 'US' && state.get('region')){
+        //   var filtered = d.filter(function(region){
+        //     console.log(region.Region == state.get('region'))
+        //     return !region.Region == state.get('region');
+        //   })
+        //   console.log(filtered)
+        //   if (filtered.length) {
+        //     return filtered[0].Volume;
+        //   } else {
+        //     return d3.sum(d, value);
+        //   }
+
+        // } else {
+          return d3.sum(d, value);
+        // }
+
       })
       .map(data);
 
@@ -760,35 +747,36 @@
         req.abort();
       }
       var url = getDataURL(state);
-      // console.log('model.load():', url);
       req = eiti.load(url, function(error, data) {
         if (error) {
           data = [];
         }
-        console.log(data)
         applyFilters(data, state, done);
       });
       return req;
     };
 
+    function isCountyLevelCoal(state) {
+      var region = state.get('region'),
+        product = state.get('product');
+      return region && product === 'Coal (short tons)' && region !== 'US' && region.length === 2;
+    }
+
     function getDataURL(state) {
-      console.log(state)
+
       var region = state.get('region');
       var product = state.get('product');
       var path = eiti.data.path;
-      var isCountyLevelCoal = region && product === 'Coal (short tons)' && region !== 'US' && region.length === 2;
+
       path += (!region || region === 'US')
         ? 'production/'
-        : isCountyLevelCoal
+        : isCountyLevelCoal(state)
           ? 'county/by-state/' + region + '/'
           : 'production/';
-      // path += 'production/';
       return path + 'all-production.tsv';
     }
 
     function applyFilters(data, state, done) {
-      // console.log('applying filters:', state.toJS());
-
       // XXX fix Commodity values
       if (data.length && !data[0].Commodity) {
         data.forEach(fixCommodity);
@@ -812,11 +800,12 @@
       dispatch.products(products);
 
       var region = state.get('region');
-      if (region && region.length !== 2) {
+
+      // always filter data unless it is at county level
+      if (region && !isCountyLevelCoal(state)) {
         var fields = getFields(region);
-        var regionName = REGION_ID_NAME[region];
         data = data.filter(function(d) {
-          return d[fields.region] === regionName;
+          return d[fields.region] === region;
         });
       }
 

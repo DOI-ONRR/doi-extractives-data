@@ -7,109 +7,34 @@ permalink: /explore/exports/
 <section id="gdp" class="explore-subpage container">
   <div class="container-left-4">
     <div class="container-outer">
-      <h5 class="subpage-breadcrumb"><a href="{{ site.baseurl }}/explore/">Explore</a> /</h5>
+      <div>
+        <a class="breadcrumb" href="{{ site.baseurl }}/explore/">Explore</a>
+        /
+      </div>
       <h1>Exports</h1>
-      <p>In 2013, the U.S. exported $137,558 million in petroleum end-use goods, 8.6% of all exports totaling $1,592,784 million. The U.S. is now a net exporter of petroleum products and coal, although still a net importer of natural gas and crude oil. Natural resource commodity exports, meaning commodities that underwent minimal processing, made up approximately $22,000 million in goods produced and sold abroad.</p>
-<!--
-  <h3>2013 exports by commodity</h3>
+      <!-- <p>In 2013, the U.S. exported $137,558 million in petroleum end-use goods, 8.6% of all exports. The U.S. is now a net exporter of petroleum products and coal, although still a net importer of natural gas and crude oil.</p> -->
+      <p>Explore extractive industries exports by state from 2011 to 2013 as dollar totals, and as percent of all exports.</p>
 
-  <table>
-    <tr>
-      <th>Natural resource commodity</th>
-      <th>Exports</th>
-    </tr>
-    <tr>
-      <td>Bituminous coal, not agglomerated</td>
-      <td>$8,949 million</td>
-    </tr>
-    <tr>
-      <td>Natural gas, gaseous</td>
-      <td>$5,560 million</td>
-    </tr>
-    <tr>
-      <td>Crude oil from petroleum and bituminous miner	</td>
-      <td>$4,108 million</td>
-    </tr>
-    <tr>
-      <td>Copper ores and concentrates</td>
-      <td>$2,302 million</td>
-    </tr>
-    <tr>
-      <td>Agglomerated iron ores</td>
-      <td>$922 million</td>
-    </tr>
-    <tr>
-      <td>Coal NESOI, not agglomerated</td>
-      <td>$172 million</td>
-    </tr>
-    <tr>
-      <td>Precious metal ores and concentrates (including gold)</td>
-      <td>$140 million</td>
-    </tr>
-    <tr>
-      <td>Total</td>
-      <td>$22,153 million</td>
-    </tr>
-  </table>
+      <p>This data comes from the US Census and lists the top 25 exports for each state. Because the data only lists the top 25 commodities, there is some data for many natural resources in most states, but some states might show as 'no data' on our map.</p>
 
-  <h3>2013 exports by commodity volume</h3>
+      <a href="{{site.baseurl}}/downloads/#exports">See data and documentation &#8594;
+      </a>
 
-  <table>
-    <tr>
-      <th>Natural resource commodity</th>
-      <th>Production units</th>
-    </tr>
-    <tr>
-      <td>Crude oil</td>
-      <td>48,968 thousand barrels</td>
-    </tr>
-    <tr>
-      <td>Natural gas plant liquids and liquefied refinery gases</td>
-      <td>170,941 thousand barrels</td>
-    </tr>
-    <tr>
-      <td>Compressed natural gas and liquefied natural gas</td>
-      <td>1,572,413 million cubic feet</td>
-    </tr>
-    <tr>
-      <td>Other liquids (hydrogen / oxygenates / renewables / other hydrocarbons, unfinished oils, motor and aviation gas)</td>
-      <td>130,881 thousand barrels</td>
-    </tr>
-    <tr>
-      <td>Iron ore</td>
-      <td>11 million metric tons</td>
-    </tr>
-    <tr>
-      <td>Copper ores and concentrates</td>
-      <td>348 thousand metric tons</td>
-    </tr>
-    <tr>
-      <td>Refined copper</td>
-      <td>113 thousand metric tons</td>
-    </tr>
-    <tr>
-      <td>Gold (refined bullion, doré, ores, concentrates, precipitates)</td>
-      <td>691 metric tons</td>
-    </tr>
-    <tr>
-      <td>Metallurgical coal</td>
-      <td>65,678,865 short tons</td>
-    </tr>
-    <tr>
-      <td>Steam coal</td>
-      <td>51,980,403 short tons</td>
-    </tr>
-  </table> -->
     </div>
   </div>
   <section class="container-right-8">
     <div class="filters-wrapper slab-foxtrot container">
-      <button class="toggle-filters toggle-desktop" is="eiti-toggle" aria-controls="filters" data-expanded-text="Hide Filters" data-toggler="filters">Show Filters</button>
+      <h1 data-toggler="filters" data-filter-description="" class="filter-description filter-description_closed">
+        Exports from extractives in
+        <a href="#region-selector" class="filter-part" data-key="region">the entire U.S.</a>
+        (<a href="#year-selector" class="filter-part" data-key="year">2013</a>)
+      </h1>
+
+      <button class="toggle-filters toggle-desktop" is="eiti-toggle" aria-controls="filters" data-expanded-text="Hide filters" data-collapsed-text="Show filters" data-toggler="filters">Show filters</button>
+
       <form id="filters" aria-hidden="true" class="filters">
         <div class="filters-heading">
-          <h3>Filter</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing
-      elit.</p>
+          <h3>Filter exports</h3>
         </div>
         <div class="container-left-6 filter">
           <label for="region-selector">Region</label>
@@ -121,36 +46,37 @@ permalink: /explore/exports/
           </select>
         </div>
         <div id="unit-filter" class="container-right-6 filter">
-          <!--
-          <label for="unit-selector">Units</label>
+
+          <label for="unit-selector">Show Results as</label>
           <div id="unit-selector" class="container">
-            <label class="unit-selector"><input type="radio" name="units" value="dollars">$</label>
-            <label class="unit-selector"><input type="radio" name="units" value="percent">%</label>
+            <input class="unit-selector" type="radio" name="units" value="dollars"/>
+            <input class="unit-selector" type="radio" name="units" value="percent"/>
           </div>
-          -->
-          <label for="unit-selector">Units</label>
-          <select id="unit-selector" name="units">
-            <option value="dollars" selected>$</option>
-            <option value="percent">%</option>
-          </select>
+
         </div>
         <div class="container-left">
-          <label for="year-selector">Exports by Year</label>
+          <label for="year-selector">Years</label>
         </div>
         <div class="filter container">
           <svg id="timeline" class="timeline" viewBox="0 0 1024 60"></svg>
         </div>
 
-        <div class="filter container">
+        <div class="filter container filters-last">
           <eiti-slider id="year-selector" name="year"
             min="2011" max="2014" snap="1" value="2014">
           </eiti-slider>
         </div>
 
+        <h1 data-toggler="filters" data-filter-description="" class="filter-description">
+          Exports from extractives in
+          <a href="#region-selector" class="filter-part" data-key="region">the entire U.S.</a>
+          (<a href="#year-selector" class="filter-part" data-key="year">2013</a>)
+        </h1>
+
       </form>
 
       <div class="container-outer">
-        <button class="toggle-filters toggle" is="eiti-toggle" aria-controls="filters" data-expanded-text="Hide Filters" data-toggler="filters">Show Filters</button>
+        <button class="toggle-filters toggle" is="eiti-toggle" aria-controls="filters" data-expanded-text="Hide filters" data-collapsed-text="Show filters" data-toggler="filters">Show filters</button>
       </div>
 
     </div>
@@ -159,13 +85,6 @@ permalink: /explore/exports/
   </div>
 
   <div class="slab-alpha">
-    <div class="container-outer">
-      <h1 id="filter-description" class="filter-description">
-        Exports from extractives in
-        <a href="#region-selector" class="filter-part" data-key="region">the entire U.S.</a>
-        (<a href="#year-selector" class="filter-part" data-key="year">2013</a>)
-      </h1>
-    </div>
 
     <div class="regions container">
 

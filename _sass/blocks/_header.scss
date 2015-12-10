@@ -184,8 +184,12 @@ header,
     height: 30px;
     margin: 0;
     margin-left: $base-padding;
-    padding: 0.42rem;
+    padding: 0.52rem;
     width: 150px;
+
+    @include respond-to(huge-up) {
+      padding: 0.42rem;
+    }
 
     @include respond-to(huge-plus-up) {
       @include font-size(0.75);

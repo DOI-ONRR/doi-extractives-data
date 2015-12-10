@@ -15,8 +15,7 @@ permalink: /about/
         <h2 class="about_intro-header">The 2015 USEITI Report is now available, and includes:</h2>
         <ul class="list-bullet about_intro-list">
           <li>Never-before-released federal production data</li>
-          <li>Another important point here that is probably on two lines</li>
-          <li>Even a third thing</li>
+          <li>New narratives explaining how the whole system of leasing federal land works in the U.S.</li>
         </ul>
         <a href="{{ site.baseurl }}/about/whats-new/" class="carousel-button button-primary">See what's new</a>
       </div>
@@ -68,7 +67,7 @@ permalink: /about/
 
       <div class="container-right-5">
 
-          <img src="{{ site.baseurl }}/img/eiti-msg.jpg" alt="Multi-stakeholder group process" class="u-img" style="width:70%;">
+          <img src="{{ site.baseurl }}/img/msg.svg" alt="The EITI multi-stakeholder group consists of civil society, companies and governments." class="article_img-60 u-margin-top">
 
       </div>
 
@@ -84,7 +83,7 @@ permalink: /about/
 
       <div class="container-right-5">
 
-        <img src="{{ site.baseurl }}/img/eiti-report.jpg" alt="The EITI report process" class="u-img" style="padding-top:50px;">
+        <img src="{{ site.baseurl }}/img/eiti-report-process.svg" alt="The EITI report process involves companies disclosing payments, and government disclosing receipts, which are then reconciled by an independent administrator." class="article_img-60">
 
       </div>
 

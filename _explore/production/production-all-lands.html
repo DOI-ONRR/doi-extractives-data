@@ -1,0 +1,163 @@
+---
+title: All Lands Production | Explore Data
+layout: default
+permalink: /explore/all-lands-production/
+---
+<section id="all-lands-production" class="explore-subpage container">
+  <div class="container-left-4">
+    <div class="container-outer">
+      <div>
+        <a class="breadcrumb" href="{{ site.baseurl }}/explore/">Explore</a>
+        /
+      </div>
+      <h1>All Lands Production</h1>
+
+      <!-- <p>In 2013, the U.S. ranked as one of the ten top global producers of gas, oil, coal, and renewable energy.</p> -->
+
+      <p>Explore production of natural gas, crude oil, coal, and renewable energy on all lands from 2004 to 2013.</p>
+
+      <p>At first, this map shows which states have production data for at least one product. Select a product in the filters to show production amounts in their respective units.</p>
+
+      <p>This data comes from the Energy Information Administration.</p>
+
+      <a href="{{site.baseurl}}/downloads/#production-all">See data and documentation &#8594;
+      </a>
+
+    </div>
+  </div>
+  <section class="container-right-8">
+    <div class="filters-wrapper slab-foxtrot">
+      <h1 data-toggler="filters" data-filter-description="" class="filter-description filter-description_closed">
+        <a href="#commodity-group-selector" class="filter-part" data-key="commodity">All</a>
+        production on all lands in
+        <a href="#region-selector" class="filter-part" data-key="region">the entire U.S.</a>
+        (<a href="#year-selector" class="filter-part" data-key="year">2013</a>)
+      </h1>
+      <button class="toggle-filters toggle-desktop" is="eiti-toggle"
+        aria-controls="filters" aria-expanded="false"
+        data-expanded-text="Hide filters" data-collapsed-text="Show filters" data-toggler="filters">Show filters</button>
+
+      <form id="filters" aria-hidden="true" class="filters container-outer">
+
+        <div class="filters-heading">
+          <h3>Filter federal production</h3>
+          <p>Select a product to see production levels in the appropriate unit of measure.</p>
+        </div>
+
+        <div class="container-left-6">
+          <div id="product-filter" class="filter">
+            <label for="product-selector">Product</label>
+            <select id="product-selector" name="product">
+              <option value="">All products</option>
+            </select>
+          </div>
+        </div>
+        <div class="container-right-6">
+          <div class="filter">
+            <label for="region-selector">Region</label>
+            <select id="region-selector" name="region">
+              <option value="">All U.S.</option>
+              <optgroup label="States">
+                {% for state in site.data.states %}
+                <option value="{{ state.id }}">{{ state.name }}</option>
+                {% endfor %}
+              </optgroup>
+            </select>
+          </div>
+        </div>
+
+        <div class="container-left">
+          <label for="year-selector">Production by year <span class="units"></span></label>
+        </div>
+        <svg id="timeline" class="timeline" viewBox="0 0 1024 60"></svg>
+
+        <div class="filter container filters-last">
+          <eiti-slider id="year-selector" name="year"
+            min="2004" max="2013" snap="1" value="2013">
+          </eiti-slider>
+        </div>
+        <h1 data-toggler="filters" data-filter-description="" class="filter-description">
+          <a href="#commodity-group-selector" class="filter-part" data-key="commodity">All</a>
+          production on all lands in
+          <a href="#region-selector" class="filter-part" data-key="region">the entire U.S.</a>
+          (<a href="#year-selector" class="filter-part" data-key="year">2013</a>)
+        </h1>
+
+      </form>
+
+      <div class="container-outer">
+        <button class="toggle-filters toggle" is="eiti-toggle" aria-controls="filters" data-expanded-text="Hide filters" data-collapsed-text="Show filters" data-toggler="filters">Show filters</button>
+      </div>
+
+    </div>
+
+    <div class="slab-alpha">
+
+      <div class="regions container">
+
+        <!-- <p class="map-intro_text">This map shows which states have production data for at least one product. Select a product in the filter above to show production amounts for your selected year. (We can't sum multiple products, because they're measured in different units.)</p> -->
+
+        <section id="US" class="region active">
+          <div class="map-wrapper">
+            <svg is="eiti-map" id="US-map" class="region-map" simplify="1e-2"
+              preserveAspectRatio="xMidYMid meet"
+              projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/">
+              <g class="onshore states" data-url="us-topology.json"
+                data-object="states"
+                data-id="'US-' + id"
+                data-href="'#?region=' + id"
+                data-title="properties.name"
+                data-mesh="true">
+              </g>
+            </svg>
+
+            <div class="map-legend"></div>
+          </div>
+
+          <h3 class="region-header-category">Production by state <span class="units"></span></h3>
+          <table class="subregions">
+            <thead class="region-header"></thead>
+            <tbody></tbody>
+          </table>
+
+        </section>
+
+        {% for region in site.data.states %}
+        <section id="{{ region.id }}" class="region onshore">
+          <div class="map-wrapper">
+            <svg is="eiti-map" id="{{ region.id }}-map" class="region-map" simplify="1e-2"
+              preserveAspectRatio="xMidYMid meet"
+              projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/" zoom-to="{{ region.id }}">
+              <g class="onshore states" data-url="us-topology.json"
+                data-object="states"
+                data-filter="id === '{{ region.id }}'">
+              </g>
+            </svg>
+
+            <div class="map-legend"></div>
+          </div>
+
+          <h3 class="region-header-category">Production in {{ region.name }}<span class="units"></span></h3>
+          <table class="subregions">
+            <thead class="region-header"></thead>
+            <tbody></tbody>
+          </table>
+
+        </section>
+        {% endfor %}
+
+      </div>
+    </div>
+  </section>
+</section>
+<script src="{{ site.baseurl }}/js/vendor/immutable.min.js"></script>
+<script src="{{ site.baseurl }}/js/components/eiti-bar.js"></script>
+<script>
+  eiti.data.REGION_ID_NAME = {
+    {% for state in site.data.states %}
+    '{{ state.id }}': '{{ state.name }}',
+    {% endfor %}
+    'US': 'the entire U.S.'
+  };
+</script>
+<script src="{{ site.baseurl }}/js/pages/all-lands-production.js"></script>

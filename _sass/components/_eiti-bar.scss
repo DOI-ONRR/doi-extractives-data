@@ -24,8 +24,7 @@ eiti-bar {
     position: absolute;
 
     &.eiti-bar-bar_negative {
-      left: auto;
-      right: 0;
+      background: $mid-gray;
     }
   }
 }

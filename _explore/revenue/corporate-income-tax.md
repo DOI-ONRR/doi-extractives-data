@@ -8,8 +8,10 @@ permalink: /explore/corporate-income-tax/
 
   <article class="container-left-7">
 
-    <h3> <a href="{{ site.baseurl }}/explore/">Explore Data</a> / </h3>
-
+    <div>
+      <a class="breadcrumb" href="{{ site.baseurl }}/explore/">Explore</a>
+      /
+    </div>
     <h1>Corporate Income Tax</h1>
 
     <p class="case_studies_intro-para">Due to U.S. law, information about companies’ individual income tax payments is confidential. However, there are two key sources of publicly available information about federal income taxes for the extractive industries: the government and the filings of companies that are publicly listed.</p>

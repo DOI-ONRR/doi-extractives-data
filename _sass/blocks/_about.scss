@@ -36,7 +36,19 @@
   text-align: left;
 
   li {
-    line-height: 1.1;
+    line-height: 1.2;
     padding-bottom: $base-padding-lite;
   }
+}
+
+.article_img-60 {
+  width: 60%;
+}
+
+.article_img-80 {
+  width: 80%;
+}
+
+.article_img-100 {
+  width: 100%;
 }

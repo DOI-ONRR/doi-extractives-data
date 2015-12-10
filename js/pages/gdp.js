@@ -3,7 +3,7 @@
 
   // local alias for region id => name lookups
   var REGION_ID_NAME = eiti.data.REGION_ID_NAME;
-  var colorscheme = colorbrewer.Purples;
+  var colorscheme = colorbrewer.GnBu;
 
   // our state is immutable!
   var state = new Immutable.Map();
@@ -20,7 +20,7 @@
   var formatDollars = eiti.format.dollars;
   var formatPercent = d3.format('%.2');
   var formatNumber = formatDollars;
-  var NULL_FILL = '#eee';
+  var NULL_FILL = '#f7f7f7';
 
   // buttons that expand and collapse other elements
   var filterToggle = root.select('button.toggle-filters');
@@ -32,22 +32,74 @@
     });
 
   // get the filters and add change event handlers
-  var filters = root.selectAll('.filters [name]')
-    // intialize the state props
-    .each(function() {
-      state = state.set(this.name, this.value);
-    })
-    .on('change', function() {
-      if (mutating) {
-        // console.warn('change while mutating');
-        return;
+  var filters = root.selectAll('.filters [name]');
+
+  var initFilters = function(filters, units) {
+
+    filters.each(function() {
+
+      if (this.type == 'radio'){
+
+        if (units == this.value) {
+          this.checked = false;
+          this.setAttribute('checked', false);
+          state = state.set(this.name, this.value);
+        } else {
+          this.checked = true;
+          this.setAttribute('checked', true);
+        }
+      } else {
+        state = state.set(this.name, this.value);
       }
-      var prop = this.name;
-      var value = this.value;
+    });
+  };
+
+  var parsedHash = parseHash();
+  if (parsedHash.units) {
+    initFilters(filters, parsedHash.units);
+  } else {
+    initFilters(filters, 'dollars');
+  }
+
+  filters.on('change', function() {
+
+    if (mutating) {
+      return;
+    }
+
+    var prop = this.name;
+    var value = this.value;
+
+    if (this.type == 'radio') {
+
+      var self = this;
+      filters.each(function() {
+        if (this.type === 'radio'){
+          if (this.value == self.value) {
+            this.checked = true;
+            this.setAttribute('checked', true);
+          } else {
+            this.checked = false;
+            this.setAttribute('checked', false);
+          }
+        }
+      });
+
+      var props = parseHash();
+
+      props.units = this.value;
+
+      mutateState(function(state) {
+        return state.merge(props);
+      });
+    } else {
       mutateState(function(state) {
         return state.set(prop, value);
       });
-    });
+    }
+
+
+  });
 
   // create our data "model"
   var model = createModel();
@@ -61,7 +113,9 @@
       if (mutating) {
         return;
       }
+
       var props = parseHash();
+
       mutateState(function() {
         return new Immutable.Map(props);
       });
@@ -99,13 +153,29 @@
     return false;
   }
 
+  function updateFilters(state){
+    filters.each(function() {
+      if (this.type == 'radio') {
+        if (this.value === state.get(this.name)) {
+          this.checked = true;
+          this.setAttribute('checked', true);
+
+        } else {
+          this.checked = false;
+          this.setAttribute('checked', false);
+        }
+      } else {
+        this.value = state.get(this.name) || '';
+      }
+
+    });
+  }
+
   function render(state, previous) {
-    // console.time('render');
+    // console.time('render')
 
     // update the filters
-    filters.each(function() {
-      this.value = state.get(this.name) || '';
-    });
+    updateFilters(state);
 
     formatNumber = state.get('units') === 'percent'
       ? formatPercent
@@ -639,7 +709,7 @@
   }
 
   function updateFilterDescription(state) {
-    var desc = root.select('#filter-description');
+    var desc = root.selectAll('[data-filter-description]');
 
     var data = {
       region: REGION_ID_NAME[state.get('region') || 'US'],
@@ -647,9 +717,10 @@
     };
 
     desc.selectAll('[data-key]')
-      .text(function() {
-        return data[this.getAttribute('data-key')];
-      });
+    .text(function() {
+      return data[this.getAttribute('data-key')];
+    });
+
   }
 
   function eventMutator(destProp, sourceKey) {

@@ -6,32 +6,49 @@ permalink: /explore/federal-revenue-by-location/
 <section id="revenue" class="explore-subpage container">
   <div class="container-left-4">
     <div class="container-outer">
-      <h5 class="subpage-breadcrumb"><a href="{{ site.baseurl }}/explore/">Explore</a> /</h5>
+      <div>
+        <a class="breadcrumb" href="{{ site.baseurl }}/explore/">Explore</a>
+        /
+      </div>
       <h1>Federal Revenue by Location</h1>
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing
-        elit. Praesent eget justo sodales neque fermentum
-        consequat eu sit amet libero. Aliquam eu eleifend leo.
-        Donec sem dolor, volutpat quis tortor pretium,
-        tincidunt pretium massa. Curabitur sed euismod velit.
-        Aenean eu venenatis turpis, mattis tempus orci.</p>
+      <!-- <p>Revenue from extractive industries on federal lands and waters totaled approximately $13.4 billion, or 0.4% of total $3.4 trillion in revenue collected across the federal government.</p> -->
+
+      <p>Explore revenue on federal lands and waters from 2004 to 2013 by state, county, and offshore area.</p>
+
+      <p>Choose a state to view county-level data. For some states, only statewide revenues are available.</p>
+
+      <p>This data comes from the Department of the Interior's Office of Natural Resources Revenue. Visit our documentation page for data scope, definitions and clarifications.</p>
+
+      <a href="{{site.baseurl}}/downloads/#revenue-fed-location">
+        <icon class="icon-cloud icon-padded"></icon>Download full datasets
+      </a><br>
+
+      <a href="{{site.baseurl}}/downloads/federal-revenue-by-location/">
+        <i class="fa fa-file-text-o u-padding-right"></i>Documentation
+      </a>
     </div>
   </div>
   <section class="container-right-8">
     <div class="filters-wrapper slab-foxtrot container">
-      <button class="toggle-filters toggle-desktop" is="eiti-toggle" aria-controls="filters" data-expanded-text="Hide Filters" data-toggler="filters">Show Filters</button>
+      <h1 data-toggler="filters" data-filter-description="" class="filter-description filter-description_closed">
+        Revenue from
+        <a href="#commodity-group-selector" class="filter-part" data-key="commodity">all commodities</a>
+        on federal lands and waters in
+        <a href="#region-selector" class="filter-part" data-key="region">the entire U.S.</a>
+        (<a href="#year-selector" class="filter-part" data-key="year">2013</a>)
+      </h1>
+      <button class="toggle-filters toggle-desktop button-primary" is="eiti-toggle" aria-controls="filters" data-expanded-text="Hide filters" data-collapsed-text="Show filters" data-toggler="filters">Show filters</button>
 
       <form id="filters" aria-hidden="true" class="filters">
         <div class="filters-heading">
-          <h3>Filter revenue</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing
-      elit.</p>
+          <h3>Filter federal revenue</h3>
         </div>
         <div class="container-left-6">
           <div id="commodity-group-filter" class="filter">
             <label for="commodity-group-selector">Commodity Category</label>
             <select id="commodity-group-selector" name="group">
-              <option value="">All commodity categories</option>
+              <option value="">All categories</option>
               {% for group in site.data.commodities.groups %}
               <option value="{{ group[0] }}">{{ group[1].name }}</option>
               {% endfor %}
@@ -56,7 +73,7 @@ permalink: /explore/federal-revenue-by-location/
               {% endfor %}
             </optgroup>
             <optgroup label="Offshore Areas">
-              {% for area in site.data.offshore_areas %}
+              {% for area in site.data.offshore_regions %}
               <option value="{{ area.id }}">{{ area.name }}</option>
               {% endfor %}
             </optgroup>
@@ -64,48 +81,48 @@ permalink: /explore/federal-revenue-by-location/
         </div>
 
         <div class="container-left">
-          <label for="year-selector">Revenue by Year</label>
+          <label for="year-selector">Years</label>
         </div>
         <div class="filter container">
           <svg id="timeline" class="timeline" viewBox="0 0 1024 60"></svg>
         </div>
 
-        <div class="filter container">
+        <div class="filter container filters-last">
           <eiti-slider id="year-selector" name="year"
             min="2004" max="2013" snap="1" value="2013">
           </eiti-slider>
         </div>
 
+        <h1 data-toggler="filters" data-filter-description="" class="filter-description">
+        Revenue from
+          <a href="#commodity-group-selector" class="filter-part" data-key="commodity">all commodities</a>
+          on federal lands in
+          <a href="#region-selector" class="filter-part" data-key="region">the entire U.S.</a>
+          (<a href="#year-selector" class="filter-part" data-key="year">2013</a>)
+        </h1>
+
       </form>
 
       <div class="container-outer">
-        <button class="toggle-filters toggle" is="eiti-toggle" aria-controls="filters" data-expanded-text="Hide Filters" data-toggler="filters">Show Filters</button>
+        <button class="toggle-filters toggle" is="eiti-toggle" aria-controls="filters" data-expanded-text="Hide filters" data-collapsed-text="Show filters" data-toggler="filters">Show filters</button>
       </div>
-
     </div>
-
-
   </div>
 
   <div class="slab-alpha">
-    <div class="container-outer">
-      <h1 id="filter-description" class="filter-description">
-        Revenue from
-        <a href="#commodity-group-selector" class="filter-part" data-key="commodity">all commodities</a>
-        on federal lands in
-        <a href="#region-selector" class="filter-part" data-key="region">the entire U.S.</a>
-        (<a href="#year-selector" class="filter-part" data-key="year">2013</a>)
-      </h1>
-    </div>
 
     <div class="regions container">
+
+      <!-- <p class="map-intro_text">Choose a state to view county-level data. For some states, only statewide revenues are available.</p> -->
 
       <section id="US" class="region active">
         <div class="map-wrapper">
           <svg is="eiti-map" id="US-map" class="region-map" simplify="1e-2"
             preserveAspectRatio="xMidYMid meet"
-            projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/">
-            <g class="offshore areas" data-url="offshore-simple.json"
+            projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/"
+            viewBox="20 55 945 535">
+            <g class="offshore areas" data-url="offshore-regions.json"
+              data-object="regions"
               data-id="'US-' + id"
               data-href="'#?region=' + id"
               data-title="properties.name"
@@ -139,7 +156,8 @@ permalink: /explore/federal-revenue-by-location/
             projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/" zoom-to="{{ region.id }}">
             <g class="onshore states" data-url="us-topology.json"
               data-object="states"
-              data-filter="id === '{{ region.id }}'">
+              data-filter="id === '{{ region.id }}'"
+              bbox="true">
             </g>
             <g class="onshore counties" data-url="us-topology.json"
               data-object="counties"
@@ -161,25 +179,35 @@ permalink: /explore/federal-revenue-by-location/
       </section>
       {% endfor %}
 
-      {% for region in site.data.offshore_areas %}
+      {% for region in site.data.offshore_regions %}
       <section id="{{ region.id }}" class="region offshore">
 
-        <svg is="eiti-map" id="{{ region.id }}-map" class="region-map" simplify="1e-2"
-          preserveAspectRatio="xMidYMid meet"
-          projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/" zoom-to="{{ region.id }}">
-          <g class="offshore areas" data-url="offshore-simple.json"
-            data-title="properties.name"
-            data-filter="id === '{{ region.id }}'"
-            data-mesh="true">
-          </g>
-        </svg>
+        <div class="map-wrapper">
+          <svg is="eiti-map" id="{{ region.id }}-map" class="region-map" simplify="1e-2"
+            preserveAspectRatio="xMidYMid meet"
+            projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/"
+            {% if region.viewbox %}viewBox="{{ region.viewbox }}"{% endif %}>
+            <g class="onshore states reference" data-url="us-topology.json"
+              data-object="states" data-mesh="true">
+            </g>
+            <g class="offshore areas" data-url="offshore-regions.json"
+              data-object="{{ region.id }}"
+              data-title="properties.name"
+              data-mesh="true">
+            </g>
+          </svg>
+
+          <div class="map-legend"></div>
+        </div>
 
         <table class="subregions">
           <thead class="region-header"></thead>
+          <tbody></tbody>
         </table>
 
       </section>
       {% endfor %}
+
 
     </div>
   </section>
@@ -191,6 +219,9 @@ permalink: /explore/federal-revenue-by-location/
   eiti.data.REGION_ID_NAME = {
     {% for state in site.data.states %}
     '{{ state.id }}': '{{ state.name }}',
+    {% endfor %}
+    {% for area in site.data.offshore_regions %}
+    '{{ area.id }}': '{{ area.name }}',
     {% endfor %}
     {% for area in site.data.offshore_areas %}
     '{{ area.id }}': '{{ area.name }}',

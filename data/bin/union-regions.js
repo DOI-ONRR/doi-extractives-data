@@ -78,14 +78,21 @@ async.parallel({
       return d;
     })
     .concat(data.offshore.map(function(d) {
-      var area = d.Area || d.Region;
+      d.Region = d.Region.toLowerCase();
+      /*
+      var area = d.Region;
       var region = areaIdByName[area];
       d.Region = region;
       delete d.Area;
+      */
       return d;
-    }).filter(function(d) {
-      return d.Region;
     }));
+
+  if (false) {
+    results = results.filter(function(d) {
+      return d.Region;
+    });
+  }
 
   streamify(results)
     .pipe(tito.createWriteStream(options['of']))

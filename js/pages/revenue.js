@@ -3,7 +3,7 @@
 
   // local alias for region id => name lookups
   var REGION_ID_NAME = eiti.data.REGION_ID_NAME;
-  var colorscheme = colorbrewer.Purples;
+  var colorscheme = colorbrewer.GnBu;
 
   // our state is immutable!
   var state = new Immutable.Map();
@@ -17,8 +17,8 @@
   var timeline = root.select('#timeline');
 
   var getter = eiti.data.getter;
-  var formatNumber = eiti.format.dollars;
-  var NULL_FILL = '#eee';
+  var formatNumber = eiti.format.dollarsAndCents;
+  var NULL_FILL = '#f7f7f7';
 
   // buttons that expand and collapse other elements
   var filterToggle = root.select('button.toggle-filters');
@@ -180,7 +180,6 @@
       }
 
       var total = d3.sum(data, getter(fields.value));
-      total = Math.floor(total);
       header
         .datum({
           value: total,
@@ -201,8 +200,9 @@
         }
 
         var features = subregions.data();
+
         var dataByFeatureId = d3.nest()
-          .key(getter(fields.region))
+          .key(getter(fields.subregion || fields.region))
           .rollup(function(d) {
             return d3.sum(d, getter(fields.value));
           })
@@ -291,17 +291,10 @@
       .attr('class', 'text');
 
     selection.append('td')
-      .attr('class', 'value value_negative');
+      .attr('class', 'value');
     selection.append('td')
-      .attr('class', 'bar bar_negative')
-      .append('eiti-bar')
-        .attr('negative', true);
-
-    selection.append('td')
-      .attr('class', 'bar bar_positive')
+      .attr('class', 'bar')
       .append('eiti-bar');
-    selection.append('td')
-      .attr('class', 'value value_positive');
   }
 
   function updateRegionRow(selection) {
@@ -316,27 +309,19 @@
       .map(value)
       .sort(d3.ascending);
 
-    var max = d3.max(values.map(Math.abs));
+    var extent = d3.extent(values);
+    var min = Math.min(0, extent[0]);
+    var max = extent[1];
 
-    selection.select('.value_negative')
+    selection.select('.value')
       .text(function(d) {
-        return d.value < 0 ? formatNumber(d.value) : '';
-      });
-    selection.select('.bar_negative eiti-bar')
-      .attr('max', -max)
-      .attr('value', function(d) {
-        return d.value < 0 ? d.value : 0;
+        return formatNumber(d.value);
       });
 
-    selection.select('.value_positive')
-      .text(function(d) {
-        return d.value > 0 ? formatNumber(d.value) : '';
-      });
-    selection.select('.bar_positive eiti-bar')
+    selection.select('eiti-bar')
+      .attr('min', min)
       .attr('max', max)
-      .attr('value', function(d) {
-        return d.value > 0 ? d.value : 0;
-      });
+      .attr('value', getter('value'));
   }
 
   function createScale(values) {
@@ -400,6 +385,7 @@
       .append('span')
         .attr('class', 'label');
 
+    var format = eiti.format.shortDollars;
     steps
       .style('border-color', getter('color'))
       .attr('title', function(d) {
@@ -412,8 +398,8 @@
           return d.none
             ? d.range[0]
             : i === last
-              ? formatNumber(d.range[0]) + '+'
-              : formatNumber(d.range[0]);
+              ? format(d.range[0]) + '+'
+              : format(d.range[0]);
         });
   }
 
@@ -440,10 +426,12 @@
           };
         }
         break;
-      case 3:
-        fields.region = 'Area';
-        fields.featureId = function(f) {
-          return f.properties.name;
+
+      // offshore regions
+      default:
+        fields.subregion = 'Area';
+        fields.featureId = function(d) {
+          return d.properties.name;
         };
         break;
     }
@@ -675,7 +663,7 @@
       }
 
       var region = state.get('region');
-      if (region && region.length === 3) {
+      if (region && region.length !== 2) {
         var fields = getFields(region);
         var regionName = REGION_ID_NAME[region];
         data = data.filter(function(d) {
@@ -703,7 +691,7 @@
   }
 
   function updateFilterDescription(state) {
-    var desc = root.select('#filter-description');
+    var desc = root.selectAll('[data-filter-description]');
 
     var commodity = state.get('commodity') ||
       (state.get('group')

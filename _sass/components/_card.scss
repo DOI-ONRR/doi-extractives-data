@@ -44,14 +44,23 @@
 // Styleguide components.card.secondary
 
 .card {
-  @include span-columns(4);
-  @include omega(3n);
+  @include span-columns(12);
 
   background-color: $white;
   border-radius: 10px;
   height: 550px;
   margin-top: $base-padding;
   position: relative;
+
+  @include respond-to(small-to-large) {
+    @include span-columns(6);
+    @include omega(2n);
+  }
+
+  @include respond-to(large-up) {
+    @include span-columns(4);
+    @include omega(3n);
+  }
 }
 
 .card-secondary {

@@ -7,32 +7,40 @@
   padding-top: 0;
 
   .subregion-name {
-    @include heading(h3);
     margin: 0;
-
   }
 }
 
 .region-header-category {
-  margin-bottom: $base-padding;
-  padding-left: $base-padding * 0.9;
+  @include heading(para-md);
+  border-bottom: 1px solid $neutral-gray;
+  font-weight: $weight-book;
+  margin-bottom: $base-padding-lite;
+  margin-top: $base-padding-extra;
+  padding-left: $base-padding;
+}
+
+.subregion {
+  td {
+    padding-bottom: ($base-padding * 0.7);
+    padding-top: ($base-padding * 0.7);
+  }
 }
 
 .subregion-name {
-  @include heading('para-lg');
-  @include font-size(1);
+  @include heading(para-md);
+  font-weight: $weight-book;
   margin: 0;
-  padding: 0 $base-padding;
-  width: 66%;
+  width: 86%;
 
-  @include respond-to(tiny-up) {
-    @include heading('h4');
-  }
+  // @include respond-to(tiny-up) {
+  //   @include heading(para-md);
+  // }
 
   .color-swatch {
     display: inline-block;
     height: 0.7em;
-    margin-right: 0.2em;
+    margin-right: $base-padding-lite;
     width: 0.7em;
   }
 }
@@ -46,8 +54,15 @@
   th,
   tr {
     border: 0;
-    border-bottom: 1px solid $mid-gray;
+    border-bottom: 1px solid $neutral-gray;
+    padding-left: $base-padding-lite;
+    padding-right: $base-padding-lite;
     text-align: left;
+  }
+
+  td.value,
+  th.value {
+    text-align: right;
   }
 
   thead {
@@ -60,9 +75,11 @@
     }
 
     .subregion-name {
-      @include heading(h3);
+      @include heading(para-lg);
+      font-weight: $weight-bold;
+      min-width: 200px;
       padding: 0;
-      padding-left: $base-padding * 0.9;
+      padding-left: ($base-padding * 0.9);
     }
   }
 
@@ -87,6 +104,17 @@
     padding-left: 0;
   }
 
+  .subgroup .subregion-name {
+    // FIXME not sure if these numbers are right
+    padding-bottom: 0.25em;
+    padding-left: 0.75em;
+    padding-top: 1em;
+
+    .hilite {
+      background: $light-blue;
+    }
+  }
+
 }
 
 .subregion {
@@ -102,3 +130,14 @@
   }
 }
 
+.region-title {
+  padding-top: $base-padding-large;
+}
+
+.region-notes {
+  @include heading(para-md);
+
+  &:last-of-type {
+    padding-bottom: $base-padding-lite;
+  }
+}

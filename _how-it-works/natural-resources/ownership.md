@@ -15,9 +15,11 @@ nav_items:
     title: State and Local Lands
   - name: indian-lands
     title: Indian Lands
+  - nav_group_close: true
   - nav_group: Natural resource ownership
   - name: split-ownership
     title: Split Ownership
+  - nav_group_close: true
 ---
 
 <div>

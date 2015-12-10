@@ -13,6 +13,7 @@ nav_items:
     title: Gas
   - name: coal
     title: Coal
+  - nav_group_close: true
   - nav_group: Renewable energy
   - name: geothermal-energy
     title: Geothermal energy
@@ -20,6 +21,7 @@ nav_items:
     title: Solar energy
   - name: wind-power
     title: Wind power
+  - nav_group_close: true
   - nav_group: Nonenergy minerals
   - name: gold
     title: Gold
@@ -27,6 +29,7 @@ nav_items:
     title: Copper
   - name: iron
     title: Iron
+  - nav_group_close: true
 ---
 
 <div>

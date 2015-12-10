@@ -313,7 +313,7 @@
     }
 
     features = features.filter(function(d) {
-      return !!d.value;
+      return !isNaN(d.value);
     });
 
     var items = list.selectAll('tr.subregion')
@@ -379,7 +379,7 @@
 
     selection.select('.value')
       .text(function(d) {
-        return formatNumber(d.value);
+        return d.value ? formatNumber(d.value) : '(withheld)';
       });
   }
 

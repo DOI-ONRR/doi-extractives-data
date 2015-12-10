@@ -29,21 +29,14 @@ permalink: /explore/
       <h5 class="landing-heading"><a href="{{site.baseurl}}/explore/federal-revenue-by-location/">Federal revenue by location</a></h5>
       <button class="accordion-button" accordion-button title="Toggle for federal revenue by location"></button>
       <div class="accordion-content">
-        <p class="landing-description">Text will be here that reflects a summary fact from the data. Perhaps lists top states and county by revenue. <a href="{{site.baseurl}}/explore/federal-revenue-by-location/">Explore revenues on federal lands and waters</a> from 2004 to 2013 by state, county and offshore areas.</p>
-        <!-- <a href="{{site.baseurl}}/explore/federal-revenue-by-location/">Visit this page</a> -->
-        <!-- <a href="{{site.baseurl}}/explore/federal-revenue-by-location/">
-          <img class="landing-image" src="{{site.baseurl}}/img/landing-placeholders/federal-rev.png">
-        </a> -->
+        <p class="landing-description">Revenue from extractive industries on federal lands and waters totaled approximately $13.4 billion, or 0.4% of total $3.4 trillion in revenue collected across the federal government. <a href="{{site.baseurl}}/explore/federal-revenue-by-location/">Explore revenues on federal lands and waters</a> from 2004 to 2013 by state, county and offshore areas.</p>
       </div>
     </div>
     <div class="container-half landing-section" accordion-item accordion-open="true">
       <h5 class="landing-heading"><a href="{{site.baseurl}}/explore/federal-revenue-by-company/">Federal revenue by company</a></h5>
       <button class="accordion-button" accordion-button title="Toggle for federal revenue by company"></button>
       <div class="accordion-content">
-        <p class="landing-description">Text will be here that reflects a summary fact from the data. Perhaps lists top companies by revenue for a few commodities. <a href="{{site.baseurl}}/explore/federal-revenue-by-company/">Explore revenues on federal lands and waters in 2013 by company</a> and revenue type.</p>
-        <!-- <a href="{{site.baseurl}}/explore/federal-revenue-by-company/">
-          <img class="landing-image" src="{{site.baseurl}}/img/landing-placeholders/placeholder.png">
-        </a> -->
+        <p class="landing-description">In 2013, the federal government collected over $9.8 billion in royalties and over 2 billion in bonuses from resources extracted on federal lands. Some of the companies that paid the most in royalties, bonuses, and other fees include Chevron Corporation, Shell, BP America Inc., and Exxon Mobile Corporation. <a href="{{site.baseurl}}/explore/federal-revenue-by-company/">Explore revenues on federal lands and waters in 2013 by company</a> and revenue type.</p>
       </div>
     </div>
     <div class="container-half landing-section" accordion-item accordion-open="true">

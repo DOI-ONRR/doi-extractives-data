@@ -218,7 +218,7 @@ async.parallel({
             Object.keys(productionByState).forEach(function(county) {
 
               var volume = productionByState[county]
-              console.warn(state, year, '==>', county, volume)
+              // console.warn(state, year, '==>', county, volume)
               if (volume) {
                 var newResults = {};
                 newResults.State = state;
@@ -228,7 +228,6 @@ async.parallel({
                 newResults.Commodity = '';
                 newResults.Product = 'Coal (short tons)';
                 // console.warn(newResults)
-                console.warn('===================')
                 results.push(newResults)
               }
             });
@@ -258,7 +257,6 @@ async.parallel({
               newResults.County = '';
               newResults.State = stateKey[d.State];
             }
-            // console.warn(newResults, '=======')
             renewablesTotals.push(newResults);
             results.push(newResults);
           });

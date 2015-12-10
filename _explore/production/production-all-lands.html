@@ -12,11 +12,15 @@ permalink: /explore/all-lands-production/
       </div>
       <h1>All Lands Production</h1>
 
-      <p>In 2013, the U.S. ranked as one of the ten top global producers of gas, oil, coal, and renewable energy.</p>
+      <!-- <p>In 2013, the U.S. ranked as one of the ten top global producers of gas, oil, coal, and renewable energy.</p> -->
 
-      <p><em>Explore production of natural gas, crude oil, coal, and renewable energy on all lands from 2004 to 2013.</em></p>
+      <p>Explore production of natural gas, crude oil, coal, and renewable energy on all lands from 2004 to 2013.</p>
 
-      <a href="{{site.baseurl}}/downloads/#production-all">Data and documentation &#8594;
+      <p>At first, this map shows which states have production data for at least one product. Select a product in the filters to show production amounts in their respective units.</p>
+
+      <p>This data comes from the Energy Information Administration.</p>
+
+      <a href="{{site.baseurl}}/downloads/#production-all">See data and documentation &#8594;
       </a>
 
     </div>
@@ -36,7 +40,7 @@ permalink: /explore/all-lands-production/
       <form id="filters" aria-hidden="true" class="filters container-outer">
 
         <div class="filters-heading">
-          <h3>Filter production data</h3>
+          <h3>Filter federal production</h3>
           <p>Select a product to see production levels in the appropriate unit of measure.</p>
         </div>
 
@@ -47,22 +51,6 @@ permalink: /explore/all-lands-production/
               <option value="">All products</option>
             </select>
           </div>
-          <!-- <div class="filter">
-            <label for="commodity-group-selector">Commodity Category</label>
-            <select id="commodity-group-selector" name="group">
-              <option value="">All commodity categories</option>
-              {% for group in site.data.commodities.groups %}
-              <option value="{{ group[0] }}">{{ group[1].name }}</option>
-              {% endfor %}
-            </select>
-          </div>
-
-          <div id="commodity-filter" class="filter">
-            <label for="commodity-selector">Commodity</label>
-            <select id="commodity-selector" name="commodity">
-              <option value="">All commodities</option>
-            </select>
-          </div> -->
         </div>
         <div class="container-right-6">
           <div class="filter">
@@ -107,7 +95,7 @@ permalink: /explore/all-lands-production/
 
       <div class="regions container">
 
-        <p class="map-intro_text">This map shows which states have production data for at least one product. Select a product in the filter above to show production amounts for your selected year. (We can't sum multiple products, because they're measured in different units.)</p>
+        <!-- <p class="map-intro_text">This map shows which states have production data for at least one product. Select a product in the filter above to show production amounts for your selected year. (We can't sum multiple products, because they're measured in different units.)</p> -->
 
         <section id="US" class="region active">
           <div class="map-wrapper">

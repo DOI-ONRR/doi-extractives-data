@@ -40,7 +40,7 @@ permalink: /downloads/federal-production/
         <li>All "W" volumes are accounted for in separate line totals where state and county have been "Withheld" (columns C, D and E)</li>
     </ul>
 
-    <h2>Offshore data dictionary</h2>
+    <h2>Data dictionary</h2>
 
     <p>The offshore dataset is organized by offshore planning areas. There are more offshore planning areas than are represented in our data. Those not represented had no production during the time period. For more information on offshore planning areas, including spatial boundaries, see the Bureau of Ocean Energy Management's (BOEM) <a href="http://www.boem.gov/Maps-and-GIS-Data/">maps and GIS data</a>.</p>
 

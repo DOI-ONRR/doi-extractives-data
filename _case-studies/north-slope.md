@@ -68,7 +68,7 @@ The North Slope Borough often responds to, and pays for, emergency services on o
 
 <h2 class="h3"><a name="data" class="case_studies_content-heading" data-nav-header="data">Data availability</a></h2>
 
-The table below highlights the data sources used to compile this narrative, as well as any gaps in publically available data.
+The table below highlights the data sources used to compile this narrative, as well as any gaps in publicly available data.
 
 <table>
   <thead>

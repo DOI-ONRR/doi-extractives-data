@@ -33,7 +33,52 @@ permalink: /downloads/reconciliation/
 
     <h3>In-scope government entities and revenue streams</h3>
 
-    <p></p>
+   <table>
+      <tr>
+        <th>Government entity</th>
+        <th>In-scope revenue streams</th>
+      </tr>
+      <tr>
+          <td>DOI — ONRR</td>
+          <td>
+              <ul>
+                  <li>Bonuses</li>
+                  <li>Rents</li>
+                  <li>Royalties</li>
+                  <li>Other revenue</li>
+                  <li>Offshore inspection fees</li>
+                  <li>Civil penalties</li>
+              </ul>
+          </td>
+      </tr>
+      <tr>
+          <td>DOI — BLM</td>
+          <td>
+              <ul>
+                  <li>Bonus and first year rentals</li>
+                  <li>Permit fees</li>
+                  <li>Renewable energy collections</li>
+              </ul>
+          </td>
+      </tr>
+      <tr>
+          <td>DOI — OSMRE</td>
+          <td>
+              <ul>
+                  <li>Abandoned Mine Lands (AML) fees including audits and late charges</li>
+                  <li>Civil penalties including late charges</li>
+              </ul>
+          </td>
+      </tr>
+      <tr>
+          <td>IRS</td>
+          <td>
+              <ul>
+                  <li>Federal corporate income tax payments</li>
+              </ul>
+          </td>
+      </tr>
+    </table>
 
     <h3>In-scope reporting entities</h3>
 
@@ -122,6 +167,14 @@ permalink: /downloads/reconciliation/
 
     <p>The MSG and the IA scoped out the potential causes of differences between amounts reported by in-scope reporting companies and government entities for each revenue stream included in the USEITI reconciliation process.</p>
 
+    <p>Three anticipates reasons for variance were:</p>
+
+    <ul>
+        <li>Attributing payment information to different revenue streams</li>
+        <li>Recording a payment and a receipt of payment in different reporting periods</li>
+        <li>Reporting based on different sets of company payor entities</li>
+    </ul>
+
     <p>Based upon the type, magnitude, and likelihood of variances for in-scope revenue streams, a variance percentage threshold and a variance floor threshold were assigned to each revenue stream.</p>
 
     <ul class="list-bullet">
@@ -130,6 +183,76 @@ permalink: /downloads/reconciliation/
     </ul>
 
     <p>The table below outlines the Margin of Variance thresholds applied by the IA, which were approved by MSG.</p>
+
+    <h4>Margin of variance thresholds</h4>
+
+    <table>
+        <tr>
+            <th>Revenue stream</th>
+            <th>Variance percentage</th>
+            <th>Variance floor</th>
+        </tr>
+        <tr>
+            <td>ONRR royalties</td>
+            <td>1%</td>
+            <td>$100,000</td>
+        </tr>
+        <tr>
+            <td>ONRR rents</td>
+            <td>2%</td>
+            <td>$50,000</td>
+        </tr>
+        <tr>
+            <td>ONRR bonuses</td>
+            <td>2%</td>
+            <td>$100,000</td>
+        </tr>
+        <tr>
+            <td>ONRR other revenue</td>
+            <td>3%</td>
+            <td>$50,000</td>
+        </tr>
+        <tr>
+            <td>Offshore inspection fees</td>
+            <td>2%</td>
+            <td>$20,000</td>
+        </tr>
+        <tr>
+            <td>Civil penalties</td>
+            <td>1%</td>
+            <td>$1,000</td>
+        </tr>
+        <tr>
+            <td>BLM bonus and first year rentals</td>
+            <td>2%</td>
+            <td>$10,000</td>
+        </tr>
+        <tr>
+            <td>BLM permit fees</td>
+            <td>3%</td>
+            <td>$10,000</td>
+        </tr>
+        <tr>
+            <td>BLM renewables</td>
+            <td>N/A</td>
+            <td>N/A</td>
+        </tr>
+        <tr>
+            <td>OSMRE AML fees including audits and late charges</td>
+            <td>2%</td>
+            <td>$100,000</td>
+        </tr>
+        <tr>
+            <td>OSMRE civil penalties including late charges</td>
+            <td>3%</td>
+            <td>$0</td>
+        </tr>
+        <tr>
+            <td>Taxes</td>
+            <td>1%</td>
+            <td>$100,000</td>
+        </tr>
+    </table>
 
     <p>Where variances were greater than the Margin of Variance thresholds, the IA requested additional transaction-level details from the government entity and reporting company and attempted to identify potential sources of the variance.</p>
     <p>After reviewing the data provided by both the government entity and the reporting company, if the IA was able to identify the potential source of the variance, the IA provided an explanation. If the IA was not able to identify the potential source of the variance, the IA provided an explanation that the source of the variance could not be resolved.</p>

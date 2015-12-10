@@ -94,7 +94,7 @@ permalink: /explore/
 			<h5 class="landing-heading"><a href="{{site.baseurl}}/explore/federal-production/">Federal lands and waters</a></h5>
 			<button class="accordion-button" accordion-button title="Toggle for federal production"></button>
 			<div class="accordion-content">
-				<p class="landing-description">Revenue from extractive industries on federal lands totaled approximately $13.4 billion, or 0.4% of total $3,396.9 billion in revenue collected across the federal government. <a href="{{site.baseurl}}/explore/federal-production/">Explore production on federal lands and waters</a> from 2005 to 2014 by state and county for 28 individual products.</p>
+				<p class="landing-description">In 2013, 40.3% of coal, 23.1% of crude oil and lease condensate, 15.9% of natural gas, and 11.7% of natural gas liquids extraction in the U.S. took place on federal lands. <a href="{{site.baseurl}}/explore/federal-production/">Explore production on federal lands and waters</a> from 2005 to 2014 by state and county for 28 individual products.</p>
 				<!-- <a href="{{site.baseurl}}/explore/federal-production/">
 					<img class="landing-image" src="{{site.baseurl}}/img/landing-placeholders/precent-production-fed.png">
 				</a> -->

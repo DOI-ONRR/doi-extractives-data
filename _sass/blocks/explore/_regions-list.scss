@@ -129,3 +129,15 @@
     width: 100px;
   }
 }
+
+.region-title {
+  padding-top: $base-padding-large;
+}
+
+.region-notes {
+  @include heading(para-md);
+
+  &:last-of-type {
+    padding-bottom: $base-padding-lite;
+  }
+}

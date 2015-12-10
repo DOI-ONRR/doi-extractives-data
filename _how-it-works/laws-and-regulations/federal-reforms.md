@@ -26,6 +26,10 @@ nav_items:
 
 <p class="case_studies_intro-para">The federal government reforms laws and regulations by enacting new legislation and proposing new rules to implement the legislation. Reforms can stem from government oversight organizations’ recommendations, including from both DOI’s Office of Inspector General and the Government Accountability Office. Below are reforms following the Deep Water Horizon oil spill, recent findings from government oversight organizations, and proposed rules.</p>
 
+<nav class="hash_selector">
+  {% include hash_selector.html %}
+</nav>
+
 <h2 class="h3" id="deepwater-horizon-oil-spill" data-nav-header="deepwater-horizon-oil-spill">Reforms following the Deepwater Horizon oil spill</h2>
 
 <p>In the aftermath of the <a href="http://www.gpo.gov/fdsys/pkg/GPO-OILCOMMISSION/pdf/GPO-OILCOMMISSION.pdf">Deep Water Horizon oil spill</a> in the Gulf of Mexico in 2010, the federal government overhauled the oversight of DOI’s leasing, regulation, and collection of revenue for oil and gas extraction on the Outer Continental Shelf. DOI’s post Deepwater Horizon reorganization separated and established <a href="http://www.boem.gov/Reforms-since-the-Deepwater-Horizon-Tragedy/">independent oversight for offshore leasing</a> (i.e., BOEM), offshore safety and environmental enforcement (i.e., BSEE), and the collection and accountability of the revenue generated from natural resource development on federal and Indian lands through the creation of the Office of Natural Resources Revenue (i.e., ONRR).</p>

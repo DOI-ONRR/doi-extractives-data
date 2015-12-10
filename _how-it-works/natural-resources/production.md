@@ -39,6 +39,10 @@ nav_items:
 
 <img src="{{site.baseurl}}/img/global-rank-production.png" alt="U.S. global rank for select natural resources in 2013. First in natural gas (30,005,254 million cubic feet) and oil (2,720,782 thousand barrels). Second in coal (nearly 1 billion short tons) and renewable energy (9.33 quadrillion btu). Third in gold (230 metric tons). Fourth in copper (1,250 thousand metric tons). Eighth in iron (53 million metric tons)." class="article_img-80">
 
+<nav class="hash_selector">
+  {% include hash_selector.html %}
+</nav>
+
 <h2>Fossil fuels</h2>
 
 <p>Fossil fuels are our main source of electricity, and the primary fuel for powering motor vehicles and heating homes. Fossil fuel resources comprised approximately <a href="http://www.eia.gov/totalenergy/data/monthly/archive/00351405.pdf">82% of total U.S. energy consumption in 2013</a> (nuclear energy comprised 8%, and renewable energy 10%).</p>

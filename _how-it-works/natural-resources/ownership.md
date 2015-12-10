@@ -28,6 +28,10 @@ nav_items:
 
 <p class="case_studies_intro-para">Natural resource ownership in the United States is closely tied to land ownership. We'll talk about both these types of ownership here.</p>
 
+<nav class="hash_selector">
+  {% include hash_selector.html %}
+</nav>
+
 <h2>Land ownership</h2>
 
 <p>There are four main types of land owners: citizens and corporations; the federal government; state and local governments; and Indian tribes and individuals. There are two types of owners for submerged lands under the ocean: states and the federal government.</p>

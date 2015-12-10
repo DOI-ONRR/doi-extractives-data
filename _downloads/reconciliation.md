@@ -20,7 +20,7 @@ permalink: /downloads/reconciliation/
 
     <p class="downloads-download_links-intro">Download calendar year data:
       <ul class="downloads-download_links">
-        <li><a href="{{site.baseurl}}/downloads/reconciliation_2015-11-20.xlsx"><icon class="icon-cloud icon-padded"></icon>
+        <li><a href="{{site.baseurl}}/downloads/reconciliation_2015-12-10.xlsx"><icon class="icon-cloud icon-padded"></icon>
         Full dataset (xlsx, 39 KB)</a></li>
        </ul>
      </p>
@@ -29,7 +29,7 @@ permalink: /downloads/reconciliation/
 
     <p>Requirement 4 of the EITI Standard outlines the responsibility of the MSG to determine the scope of EITI reporting in the United States. In carrying out this responsibility, the MSG considered information from a variety of sources before coming to a consensus on the scope for the 2015 USEITI Report.</p>
 
-    <p>The MSG publishes meeting minutes and materials for all subcommittee and full MSG meetings on the <a href="https://www.doi.gov/eiti/FACA/meetings">MSG website</a>. These minutes and materials document the MSG’s historical considerations and decisions around scoping. Please refer to <em>Appendix A: Revenue Reporting Considerations</em> within the <a href="{{site.baseurl}}/downloads/USEITI_extractive-revenue-appendix_2015-12-02.pdf">Extractive Revenue Appendix (PDF)</a> for additional background on the scoping process for USEITI.</p>
+    <p>The MSG publishes meeting minutes and materials for all subcommittee and full MSG meetings on the <a href="https://www.doi.gov/eiti/FACA/meetings">MSG website</a>. These minutes and materials document the MSG’s historical considerations and decisions around scoping. Please refer to <em>Appendix A: Revenue Reporting Considerations</em> within the <a href="{{site.baseurl}}/downloads/USEITI_extractive-revenue-appendix_2015-12-10.pdf">Extractive Revenue Appendix (PDF)</a> for additional background on the scoping process for USEITI.</p>
 
     <h3>In-scope government entities and revenue streams</h3>
 

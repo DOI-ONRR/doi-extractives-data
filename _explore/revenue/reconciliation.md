@@ -20,7 +20,7 @@ permalink: /explore/reconciliation/
 
     <p>When the independent administrator compared company payments to government revenue, 17 discrepancies exceeded the margin of variance. The independent administrator worked with the companies and government entities to investigate these discrepancies, and was able to find explanations for all of them. Explanations included differences in when payments were recorded and how they were classified.</p>
 
-    <p>Of the 45 companies that were asked to participate, 31 reported DOI revenue and 11 reported federal corporate income taxes.</p>
+    <p>Of the 45 companies that were asked to participate, 31 reported DOI revenue and 12 reported federal corporate income taxes.</p>
 
     <img src="reporting p. 8" />
 

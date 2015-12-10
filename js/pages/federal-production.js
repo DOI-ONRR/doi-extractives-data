@@ -725,14 +725,12 @@
         if (error) {
           data = [];
         }
-        console.log(data)
         applyFilters(data, state, done);
       });
       return req;
     };
 
     function getDataURL(state) {
-      console.log(state)
       var region = state.get('region');
       var path = eiti.data.path;
       path += (!region || region === 'US')

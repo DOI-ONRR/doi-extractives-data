@@ -39,8 +39,11 @@ layout: default
 			{% if page.permalink == '/case-studies/' %}
       	<img src="{{ site.baseurl }}/img/counties/12-map.png" alt="Map with locations of the twelve communities given in-depth coverage in this section of the site." class="case_studies_intro-image">
 			{% elsif page.permalink == '/case-studies/boone-logan-and-mingo/' %}
-				<svg is="eiti-map" data-path="{{ site.baseurl }}/data/geo/" simplify="1e-2"
-				projection="albersCustom" preserveAspectRatio="xMidYMid meet" zoom-to="WV">
+				<svg is="eiti-map" data-path="{{ site.baseurl }}/data/geo/"
+				  simplify="1e-2"
+					projection="albersCustom"
+					preserveAspectRatio="xMidYMid meet"
+					zoom-to="WV">
 					<g data-url="us-topology.json"
 						data-object="counties"
 						data-filter="properties.state === 'WV' &amp;&amp; properties.name.match(/Boone|Logan|Mingo/)"

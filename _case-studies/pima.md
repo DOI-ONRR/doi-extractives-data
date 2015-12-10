@@ -48,7 +48,7 @@ ASARCO LLC also pays royalties to both the State of Arizona and the Tohono O’o
 
 <h2 class="h3"><a name="costs" class="case_studies_content-heading" data-nav-header="costs">Costs</a></h2>
 
-Publically available government sources specifying the fiscal costs of copper mining in Pima County were not found.
+publicly available government sources specifying the fiscal costs of copper mining in Pima County were not found.
 
 <h2 class="h3"><a name="data" class="case_studies_content-heading" data-nav-header="data">Data availability</a></h2>
 

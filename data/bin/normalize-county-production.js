@@ -37,14 +37,16 @@ async.series([
   if (error) return console.error('error:', error);
 });
 
+var keys;
+
 function main(done) {
+  var onError = function(error) {
+    // console.warn('error:', error);
+  };
   process.stdin
     .pipe(tito.createReadStream(options['if']))
+    .on('error', onError)
     .pipe(thru(function(d, enc, next) {
-      if (isWithheld(d)) {
-        console.warn('withheld:', d);
-        return next();
-      }
       d = normalize(d);
       if (statesByAbbr) {
         fixFIPS(d);
@@ -57,17 +59,23 @@ function main(done) {
         }
         console.warn('xxx', keys.map(function(k) { return d[k]; }).join('\t'));
         */
-        return next();
+        // return next();
       }
       next(null, d);
     }))
+    .on('error', onError)
     .pipe(tito.createWriteStream(options['of']))
-    .pipe(process.stdout);
+    .on('error', onError)
+    .pipe(process.stdout)
+    .on('error', onError)
+    .on('end', done);
 }
 
 function normalize(d) {
   util.trimKeys(d);
-  var volume = parse.number(d[volumeField]);
+  var volume = isWithheld(d)
+    ? 'W'
+    : parse.number(d[volumeField]);
   var commodity = (d.Commodity || '').trim();
   if (commodity === 'Other Products') {
     commodity = util.normalizeCommodity(d.Product);
@@ -115,7 +123,7 @@ function loadStates(done) {
 }
 
 function isWithheld(d) {
-  return d[volumeField] === WITHHELD;
+  return d[volumeField].trim() === 'W';
 }
 
 function noop(done) {

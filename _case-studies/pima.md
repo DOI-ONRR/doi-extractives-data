@@ -20,11 +20,11 @@ nav_items:
     title: Data
 ---
 
-<h2 class="h3"><a name="intro" class="case_studies_content-heading" data-nav-header="intro">{{ page.title }}</a></h3>
+<h1 class="h3"><a name="intro" class="case_studies_content-heading" data-nav-header="intro">{{ page.title }}</a></h1>
 
 Copper is a major industrial metal used in construction, electronics, transportation, industrial machinery, and consumer products. In 2012, the U.S. was the world’s fourth-largest copper producer, mining 1.15 million tons of copper worth approximately $9 billion.[^1] Of the five major copper-producing states (Arizona, Utah, New Mexico, Nevada, and Montana), Arizona was the most productive in 2011; its copper output totaled 751,000 metric tons, representing 68% of the national total.[^2] Greenlee and Pima counties generated the majority of that production.
 
-<h2 class="h3"><a name="geology" class="case_studies_content-heading" data-nav-header="geology">Geology and history</a></h3>
+<h2 class="h3"><a name="geology" class="case_studies_content-heading" data-nav-header="geology">Geology and history</a></h2>
 
 In Pima County, much like nearby Greenlee County, copper mining began in the 1870s. Mining activity in Pima County flourished in the late nineteeth century, particularly as the arrival of the Southern Pacific Railroad brought increased commerce and traffic to the region. The copper-mining industry followed a series of boom-and-bust cycles throughout the following decades, with particular spikes during the two world wars, when demand soared. Today, copper output in Pima County is driven by operations at three open-pit mines: Sierrita, Mission Complex, and Silver Bell.
 
@@ -48,7 +48,7 @@ ASARCO LLC also pays royalties to both the State of Arizona and the Tohono O’o
 
 <h2 class="h3"><a name="costs" class="case_studies_content-heading" data-nav-header="costs">Costs</a></h2>
 
-Publically available government sources specifying the fiscal costs of copper mining in Pima County were not found.
+publicly available government sources specifying the fiscal costs of copper mining in Pima County were not found.
 
 <h2 class="h3"><a name="data" class="case_studies_content-heading" data-nav-header="data">Data availability</a></h2>
 

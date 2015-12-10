@@ -13,8 +13,11 @@
 
 .region-header-category {
   @include heading(para-md);
-  margin-bottom: $base-padding;
-  padding-left: ($base-padding * 0.9);
+  border-bottom: 1px solid $neutral-gray;
+  font-weight: $weight-book;
+  margin-bottom: $base-padding-lite;
+  margin-top: $base-padding-extra;
+  padding-left: $base-padding;
 }
 
 .subregion {
@@ -37,7 +40,7 @@
   .color-swatch {
     display: inline-block;
     height: 0.7em;
-    margin-right: 0.2em;
+    margin-right: $base-padding-lite;
     width: 0.7em;
   }
 }
@@ -124,5 +127,17 @@
 .map-legend {
   @include respond-to(large-down) {
     width: 100px;
+  }
+}
+
+.region-title {
+  padding-top: $base-padding-large;
+}
+
+.region-notes {
+  @include heading(para-md);
+
+  &:last-of-type {
+    padding-bottom: $base-padding-lite;
   }
 }

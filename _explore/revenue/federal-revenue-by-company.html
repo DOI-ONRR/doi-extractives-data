@@ -13,15 +13,15 @@ permalink: /explore/federal-revenue-by-company/
 
       <h1>Federal Revenue by Company</h1>
 
-      <p>Text will be here that reflects a summary fact from the data. Perhaps lists top companies by revenue for a few commodities</p>
+      <p>Explore revenues on federal lands and waters in 2013 by commodity, revenue type, and company.</p>
 
-      <p><em>Explore revenues on federal lands and waters in 2013 by company and revenue type.</em></p>
+      <p class="region-notes">This data comes from the Department of the Interior's Office of Natural Resources Revenue. For explanations of all revenue types and other data points, see our documentation.</p>
 
       <a href="{{site.baseurl}}/downloads/#revenue-fed-company">
         <icon class="icon-cloud icon-padded"></icon>Download full dataset
       </a><br>
 
-      <a href="#">
+      <a href="{{site.baseurl}}/downloads/federal-revenue-by-company/">
         <i class="fa fa-file-text-o u-padding-right"></i>Documentation
       </a>
     </div>
@@ -40,9 +40,9 @@ permalink: /explore/federal-revenue-by-company/
       <form id="filters" aria-hidden="true" class="filters">
 
         <div class="filters-heading">
-          <h3>Filter Revenue</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h3>Filter revenue</h3>
         </div>
+
 
         <div class="container-left-6">
           <div id="commodity-filter" class="filter">
@@ -53,7 +53,7 @@ permalink: /explore/federal-revenue-by-company/
           </div>
         </div>
 
-        <div class="container-left-6">
+        <div class="container-left-6" style="margin-right: 0;">
           <div id="type-filter" class="filter filters-last">
             <label for="type-selector">Revenue Type</label>
             <select id="type-selector" name="type">
@@ -80,17 +80,15 @@ permalink: /explore/federal-revenue-by-company/
     <div class="slab-alpha">
 
       <div class="container">
-        <p class="map-intro_text">Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-
-        <!-- <h2>Revenue Types</h2> -->
+        <h2 class="h3 region-title">Total revenues by type</h2>
         <table id="revenue-types" class="revenue-type-list subregions">
         </table>
       </div>
 
       <div class="container">
-        <h2>Companies</h2>
+        <h2 class="h3 region-title">Companies</h2>
         <div>
-          <label for="company-name-filter">Filter by name:</label>
+          <label for="company-name-filter">Filter by company name:</label>
           <input type="text" name="search" id="company-name-filter">
         </div>
         <table id="companies" class="company-list subregions">

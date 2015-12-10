@@ -20,11 +20,11 @@ nav_items:
     title: Data
 ---
 
-<h2 class="h3"><a name="intro" class="case_studies_content-heading" data-nav-header="intro">{{ page.title }}</a></h3>
+<h1 class="h3"><a name="intro" class="case_studies_content-heading" data-nav-header="intro">{{ page.title }}</a></h1>
 
 For years, natural gas production in the Haynesville Shale in the southern U.S. was too difficult and costly. However, in the mid- to late-2000s, advances in hydraulic fracturing and horizontal drilling techniques, as well as rising natural gas prices, made extracting natural gas in the region both technically feasible and profitable for the extractive industries.
 
-<h2 class="h3"><a name="geology" class="case_studies_content-heading" data-nav-header="geology">Geology and history</a></h3>
+<h2 class="h3"><a name="geology" class="case_studies_content-heading" data-nav-header="geology">Geology and history</a></h2>
 
 The Haynesville sedimentary rock formation rests 10,000 feet to 13,000 feet below the surface of northwestern Louisiana, eastern Texas, and southwestern Arkansas. DeSoto Parish, home to 27,112 residents, sits at the center of the Haynesville Shale. In the early 2000s, DeSoto Parish’s economy consisted primarily of cattle and dairy farming, and forest extraction. However, DeSoto’s economy transformed when the Chesapeake Energy Corporation drilled the first exploratory well in the Haynesville Shale in 2007, setting off a natural gas boom in the parish in 2008.[^1]
 

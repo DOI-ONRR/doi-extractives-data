@@ -20,11 +20,11 @@ nav_items:
     title: Data
 ---
 
-<h2 class="h3"><a name="intro" class="case_studies_content-heading" data-nav-header="intro">{{ page.title }}</a></h3>
+<h1 class="h3"><a name="intro" class="case_studies_content-heading" data-nav-header="intro">{{ page.title }}</a></h1>
 
 Copper is a major industrial metal used in construction, electronics, transportation, industrial machinery, and consumer products. In 2012, the U.S. was the world’s fourth-largest copper producer, mining 1.15 million tons of copper worth a total value of approximately $9 billion.[^1] Of the five major copper-producing states (Arizona, Utah, New Mexico, Nevada, and Montana), Arizona was the most productive in 2011, with copper output totalling 751,000 metric tons, or 68% of the national total.[^2] Greenlee and Pima counties generated the majority of that production.
 
-<h2 class="h3"><a name="geology" class="case_studies_content-heading" data-nav-header="geology">Geology and history</a></h3>
+<h2 class="h3"><a name="geology" class="case_studies_content-heading" data-nav-header="geology">Geology and history</a></h2>
 
 Greenlee County has a long history of copper mining dating back to the mineral’s discovery in the area during the 1870s. Initial recovery operations drew prospectors to the towns of Clifton, Morenci, and Metcalf, where underground mining methods targeted high-grade copper ores. In the 1920s, the Phelps Dodge Corporation (now Freeport-McMoRan Inc.) became the single owner of mining operations in the jurisdiction and discovered huge reserves of low-grade ores in the area. However, when the price of copper collapsed during the Great Depression, mining in the region temporarily halted between 1932 and 1937, until Phelps Dodge Corporation converted its underground mining operations to open-pit methods that could profitably harvest lower-grade ores.[^3] The modern Morenci Mine was thus established and has been a significant economic driver in the county ever since.
 

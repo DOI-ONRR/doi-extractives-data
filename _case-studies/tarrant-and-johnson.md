@@ -20,11 +20,11 @@ nav_items:
     title: Data
 ---
 
-<h2 class="h3"><a name="intro" class="case_studies_content-heading" data-nav-header="intro">{{ page.title }}</a></h3>
+<h1 class="h3"><a name="intro" class="case_studies_content-heading" data-nav-header="intro">{{ page.title }}</a></h1>
 
 Texas leads the country in natural gas production, generating more gas annually than the next three highest-producing states combined (Louisiana, Oklahoma, and Wyoming).[^1] Tarrant and Johnson counties contribute significantly to Texas’s natural gas production due to their geographic positioning atop the rich reserves of the Barnett Shale field in the Bend Arch-Fort Worth Basin.
 
-<h2 class="h3"><a name="geology" class="case_studies_content-heading" data-nav-header="geology">Geology and history</a></h3>
+<h2 class="h3"><a name="geology" class="case_studies_content-heading" data-nav-header="geology">Geology and history</a></h2>
 
 The Barnett Shale reserve spans approximately 5,000 square miles of sedimentary clay and quartz rock, with much of the productive portion of the rock located beneath Tarrant and Johnson counties. With an estimated 43 trillion cubic feet of proved reserves of natural gas, the Barnett Shale is one of the largest onshore natural gas formations in the country.[^2]
 

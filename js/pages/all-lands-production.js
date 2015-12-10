@@ -191,6 +191,7 @@
   function renderRegion(selection, state) {
     var regionId = state.get('region') || 'US';
     var product = state.get('product');
+    console.log('+--------+', product)
     var fields = getFields(regionId);
 
     console.log('fields ===', fields)
@@ -254,9 +255,9 @@
         var featureId = getter(fields.featureId);
         features.forEach(function(f) {
           var id = featureId(f);
-          console.log('---',dataByFeatureId, id)
+          // console.log('---',dataByFeatureId, id)
           f.value = dataByFeatureId[id];
-          console.log('~~~~~~~~~', f.value)
+          // console.log('~~~~~~~~~', f.value)
         });
 
         if (state.get('product')) {
@@ -284,7 +285,7 @@
         subregions.style('fill', function(d) {
 
           var v = value(d);
-          console.log('------', v)
+          // console.log('------', v)
           return v === undefined
             ? NULL_FILL
             : scale(v);
@@ -504,12 +505,22 @@
     switch (regionId.length) {
       case 2:
         if (regionId !== 'US') {
-          fields.region = 'County';
-          // fields.subregion = 'County';
-          fields.featureId = function(f) {
-            console.log('============',f)
-            return f.properties.name;
-          };
+          if (state.get('product') === 'Coal (short tons)'){
+            // for coal county data
+            if (regionId !== 'US') {
+              fields.region = 'County';
+              fields.featureId = function(f) {
+                console.log('============',f)
+                return f.properties.name;
+              };
+            }
+          } else {
+            fields.region = 'Region';
+            fields.featureId = function(f) {
+              console.log('============',f)
+              return f.properties.abbr;
+            };
+            }
         }
         break;
 
@@ -759,11 +770,15 @@
     function getDataURL(state) {
       console.log(state)
       var region = state.get('region');
+      var product = state.get('product');
       var path = eiti.data.path;
+      var isCountyLevelCoal = region && product === 'Coal (short tons)' && region !== 'US' && region.length === 2;
       path += (!region || region === 'US')
         ? 'production/'
-        : 'county/by-state/' + region + '/'
-      // path += 'all-production.tsv';
+        : isCountyLevelCoal
+          ? 'county/by-state/' + region + '/'
+          : 'production/';
+      // path += 'production/';
       return path + 'all-production.tsv';
     }
 
@@ -850,6 +865,13 @@
       .text(function() {
         return data[this.getAttribute('data-key')];
       });
+
+    if (state.get('product') === 'Coal (short tons)'){
+      $('[data-coal]').show();
+    } else {
+      $('[data-coal]').hide()
+    }
+
   }
 
   function eventMutator(destProp, sourceKey) {

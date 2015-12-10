@@ -17,26 +17,18 @@ permalink: /about/whats-new/
 
     <p>The ititial USEITI beta site launched in early 2015, offering visualizations that showed how such resources generate revenue across the country, and where the money earned goes.</p>
 
-    <p>This site expands and improves on that site in response to user feedback and new data. Here's some of the ways we've made the site more useful:</p>
+    <p>With this site, we've responded to user feedback to make the data easier to use and offer better structure, a clearer explanation of USEITI, and more context about the government's role in extractive industries.</p>
+
+    <p>We've also added new information and datasets to explore, including:</p>
 
     <ul class="list-bullet">
-      <li>A clearer explanation of USEITI and what the site is for</li>
-      <li>More location-based information</li>
-      <li>More explanation of the government’s role in extractive industries</li>
-      <li>Added structure to the data so casual users can get useful information and dive deeper as interested</li>
+      <li><strong>Production data:</strong> Sales volumes and revenue have long been used to estimate how much of a resource was produced. Here, for the first time, you can find more precise data on what resources were produced on federal lands. <a href="{{ site.baseurl }}/explore/federal-production/">Explore federal production data.</a></li>
+      <li><strong>Federal revenue by company:</strong> See what revenue the government received from production on federal lands, sorted by company. <a href="{{ site.baseurl }}/explore/federal-revenue-by-company/">Explore federal revenue by company.</a></li>
+      <li><strong>Reconciliation data:</strong> A number of companies were asked to submit data for reconciliation with Department of Interior revenue data. Of the 45 companies invited, 35 participated. <a href="{{ site.baseurl }}/explore/reconciliation/">Download reconciliation data.</a></li>
+      <li><strong>How it works:</strong> Beyond the numbers, we've included new narratives explaining how the whole system of leasing federal land and collecting royalties on extracted materials works in the U.S. <a href="">Learn how it works.</a></li>
     </ul>
 
-    <p>And here's some of the new information you can explore:</p>
-
-    <p><strong>Production data:</strong> Sales volumes and revenue have long been used to estimate how much of a resource was produced. Here, for the first time, you can find more precise data on what resources were produced on federal lands. <a href="{{ site.baseurl }}/explore/federal-production/">Explore federal production data.</a></p>
-
-    <p><strong>Federal revenue by company:</strong> See what revenue the government received from production on federal lands, sorted by company. <a href="{{ site.baseurl }}/explore/federal-revenue-by-company/">Explore federal revenue by company.</a></p>
-
-    <p><strong>Reconciliation data:</strong> A number of companies were asked to submit data for reconciliation with Department of Interior revenue data. Of the 45 companies invited, 35 participated. <a href="{{ site.baseurl }}/explore/reconciliation/">Download reconciliation data.</a></p>
-
-    <p><strong>How it works:</strong> Beyond the numbers, we've included new narratives explaining how the whole system of leasing federal land and collecting royalties on extracted materials works in the U.S. <a href="">Learn how it works.</a></p>
-
-    <h2>What's next</h2>
+    <h2>What's next?</h2>
 
     <p>This site is still in progress. Over the coming months, here's what we're looking forward to:</p>
 

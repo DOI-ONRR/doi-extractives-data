@@ -52,7 +52,8 @@ async.series(args.map(function(filename) {
   var value = util.getter(options.sum);
   var groups = util.group(rows, keys, function(subset) {
     return subset.values.reduce(function(sum, d) {
-      return sum + Number(value(d));
+      var num = Number(value(d)) || 0;
+      return sum + num;
     }, 0).toFixed(options.precision);
   })
   .map(function(entry) {

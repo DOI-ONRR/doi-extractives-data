@@ -193,6 +193,8 @@
     var product = state.get('product');
     var fields = getFields(regionId);
 
+    console.log('fields ===', fields)
+
     // console.log('loading', regionId);
     // console.time('load');
     model.load(state, function(error, data) {
@@ -252,7 +254,9 @@
         var featureId = getter(fields.featureId);
         features.forEach(function(f) {
           var id = featureId(f);
+          console.log('---',dataByFeatureId, id)
           f.value = dataByFeatureId[id];
+          console.log('~~~~~~~~~', f.value)
         });
 
         if (state.get('product')) {
@@ -278,7 +282,9 @@
         var scale = createScale(values);
 
         subregions.style('fill', function(d) {
+
           var v = value(d);
+          console.log('------', v)
           return v === undefined
             ? NULL_FILL
             : scale(v);
@@ -476,7 +482,17 @@
     return new Immutable.Set(commodities);
   }
 
+  // function getFields(state) {
+  //   var fields = {
+  //     region: 'State',
+  //     value: 'Volume',
+  //     featureId: 'id'
+  //   };
+  //   return fields;
+  // }
+
   function getFields(regionId) {
+    console.log(regionId)
     var fields = {
       region: 'Region',
       value: 'Volume',
@@ -488,9 +504,11 @@
     switch (regionId.length) {
       case 2:
         if (regionId !== 'US') {
-          fields.region = 'FIPS';
+          fields.region = 'County';
+          // fields.subregion = 'County';
           fields.featureId = function(f) {
-            return f.properties.FIPS;
+            console.log('============',f)
+            return f.properties.name;
           };
         }
         break;
@@ -507,9 +525,11 @@
   }
 
   function updateTimeline(selection, data, state) {
+    console.log(data)
     var fields = getFields(state.get('region'));
-
+    console.log('***',fields, state.get('region'))
     var value = getter(fields.value);
+    console.log(value)
     var dataByYearPolarity = d3.nest()
       .key(function(d) {
         return value(d) < 0 ? 'negative' : 'positive';
@@ -730,12 +750,14 @@
         if (error) {
           data = [];
         }
+        console.log(data)
         applyFilters(data, state, done);
       });
       return req;
     };
 
     function getDataURL(state) {
+      console.log(state)
       var region = state.get('region');
       var path = eiti.data.path;
       path += (!region || region === 'US')

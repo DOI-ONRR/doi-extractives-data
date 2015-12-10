@@ -252,6 +252,7 @@
         var featureId = getter(fields.featureId);
         features.forEach(function(f) {
           var id = featureId(f);
+          console.log('---',dataByFeatureId, id)
           f.value = dataByFeatureId[id];
         });
 
@@ -273,12 +274,14 @@
         }
 
         var value = getter('value');
+        // console.log('value:',value)
         var values = features.map(value);
 
         var scale = createScale(values);
 
         subregions.style('fill', function(d) {
           var v = value(d);
+          // console.log(v)
           return v === undefined
             ? NULL_FILL
             : scale(v);
@@ -490,6 +493,7 @@
         if (regionId !== 'US') {
           fields.region = 'FIPS';
           fields.featureId = function(f) {
+            // console.log('============',f.value)
             return f.properties.FIPS;
           };
         }
@@ -499,6 +503,7 @@
       default:
         fields.subregion = 'Area';
         fields.featureId = function(f) {
+
           return f.properties.name;
         };
         break;
@@ -510,6 +515,7 @@
     var fields = getFields(state.get('region'));
 
     var value = getter(fields.value);
+    console.log(value)
     var dataByYearPolarity = d3.nest()
       .key(function(d) {
         return value(d) < 0 ? 'negative' : 'positive';
@@ -525,7 +531,7 @@
     var positiveExtent = d3.extent(d3.values(positiveYears));
     var negativeYears = dataByYearPolarity.negative || {};
     var negativeExtent = d3.extent(d3.values(negativeYears));
-
+    console.log(positiveYears)
     // get the slider to determine the year range
     var slider = root.select('#year-selector').node();
 
@@ -730,12 +736,14 @@
         if (error) {
           data = [];
         }
+        console.log(data)
         applyFilters(data, state, done);
       });
       return req;
     };
 
     function getDataURL(state) {
+      console.log(state)
       var region = state.get('region');
       var path = eiti.data.path;
       path += (!region || region === 'US')

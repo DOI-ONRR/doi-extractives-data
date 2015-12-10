@@ -119,13 +119,6 @@ permalink: /explore/all-lands-production/
             <svg is="eiti-map" id="US-map" class="region-map" simplify="1e-2"
               preserveAspectRatio="xMidYMid meet"
               projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/">
-              <g class="onshore states" data-url="us-topology.json"
-                data-object="states"
-                data-id="'US-' + id"
-                data-href="'#?region=' + id"
-                data-title="properties.name"
-                data-mesh="true">
-              </g>
               <g class="offshore areas" data-url="offshore-regions.json"
                 data-object="regions"
                 data-id="'US-' + id"
@@ -133,12 +126,20 @@ permalink: /explore/all-lands-production/
                 data-title="properties.name"
                 data-mesh="true">
               </g>
+              <g class="onshore states" data-url="us-topology.json"
+                data-object="states"
+                data-id="'US-' + id"
+                data-href="'#?region=' + id"
+                data-title="properties.name"
+                data-mesh="true">
+              </g>
+
             </svg>
 
             <div class="map-legend"></div>
           </div>
 
-          <h3 class="region-header-category">Production by state <span class="units"></span></h3>
+          <h3 class="region-header-category">Production by state or offshore area <span class="units"></span></h3>
           <table class="subregions">
             <thead class="region-header"></thead>
             <tbody></tbody>

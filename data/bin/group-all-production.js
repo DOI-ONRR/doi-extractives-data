@@ -219,7 +219,7 @@ async.parallel({
             if (volume) {
               var newResults = {};
               newResults.State = state;
-              newResults.County = county
+              newResults.County = county + ' County';
               newResults.Year = year;
               newResults.Volume = volume;
               newResults.Commodity = '';

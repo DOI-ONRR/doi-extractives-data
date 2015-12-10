@@ -161,7 +161,7 @@ async.parallel({
   ];
 
   // toggle to parse data for county coal
-  shouldParseCountyCoal = false;
+  var shouldParseCountyCoal = false;
 
 
   Object.keys(data).forEach(function(commodity) {
@@ -171,7 +171,7 @@ async.parallel({
 
       var getStates = function(data, commodity, column) {
 
-        var allColumn = _.map(data[commodity], function(data, n) {
+        var allColumn = _.map(data[commodity], function(data) {
           return data[column]
         })
         return _.unique(allColumn);

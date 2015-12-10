@@ -193,7 +193,6 @@
     var product = state.get('product');
     var fields = getFields(regionId);
 
-    // console.log('loading', regionId);
     // console.time('load');
     model.load(state, function(error, data) {
       // console.timeEnd('load');
@@ -247,12 +246,10 @@
           .rollup(rollup)
           .map(data);
 
-        // console.log('data by feature id:', dataByFeatureId);
 
         var featureId = getter(fields.featureId);
         features.forEach(function(f) {
           var id = featureId(f);
-          console.log('---',dataByFeatureId, id)
           f.value = dataByFeatureId[id];
         });
 
@@ -274,14 +271,12 @@
         }
 
         var value = getter('value');
-        // console.log('value:',value)
         var values = features.map(value);
 
         var scale = createScale(values);
 
         subregions.style('fill', function(d) {
           var v = value(d);
-          // console.log(v)
           return v === undefined
             ? NULL_FILL
             : scale(v);
@@ -493,7 +488,6 @@
         if (regionId !== 'US') {
           fields.region = 'FIPS';
           fields.featureId = function(f) {
-            // console.log('============',f.value)
             return f.properties.FIPS;
           };
         }
@@ -515,7 +509,6 @@
     var fields = getFields(state.get('region'));
 
     var value = getter(fields.value);
-    console.log(value)
     var dataByYearPolarity = d3.nest()
       .key(function(d) {
         return value(d) < 0 ? 'negative' : 'positive';
@@ -531,7 +524,6 @@
     var positiveExtent = d3.extent(d3.values(positiveYears));
     var negativeYears = dataByYearPolarity.negative || {};
     var negativeExtent = d3.extent(d3.values(negativeYears));
-    console.log(positiveYears)
     // get the slider to determine the year range
     var slider = root.select('#year-selector').node();
 
@@ -703,11 +695,9 @@
         });
       });
 
-      // console.log('lookup:', lookup);
 
       return function(d) {
         if (d.Commodity) {
-          // console.log('commodity:', d.Commodity);
           return;
         }
 
@@ -721,7 +711,6 @@
         d.Commodity = lookup[withoutUnits] || lookup[firstWord];
         if (!d.Commodity) {
           d.Commodity = 'Other';
-          // console.log('other:', product, [withoutUnits, firstWord]);
         }
       };
     })();

@@ -193,7 +193,6 @@
     var product = state.get('product');
     var fields = getFields(regionId);
 
-    // console.log('loading', regionId);
     // console.time('load');
     model.load(state, function(error, data) {
       // console.timeEnd('load');
@@ -247,7 +246,6 @@
           .rollup(rollup)
           .map(data);
 
-        // console.log('data by feature id:', dataByFeatureId);
 
         var featureId = getter(fields.featureId);
         features.forEach(function(f) {
@@ -499,6 +497,7 @@
       default:
         fields.subregion = 'Area';
         fields.featureId = function(f) {
+
           return f.properties.name;
         };
         break;
@@ -525,7 +524,6 @@
     var positiveExtent = d3.extent(d3.values(positiveYears));
     var negativeYears = dataByYearPolarity.negative || {};
     var negativeExtent = d3.extent(d3.values(negativeYears));
-
     // get the slider to determine the year range
     var slider = root.select('#year-selector').node();
 
@@ -697,11 +695,9 @@
         });
       });
 
-      // console.log('lookup:', lookup);
 
       return function(d) {
         if (d.Commodity) {
-          // console.log('commodity:', d.Commodity);
           return;
         }
 
@@ -715,7 +711,6 @@
         d.Commodity = lookup[withoutUnits] || lookup[firstWord];
         if (!d.Commodity) {
           d.Commodity = 'Other';
-          // console.log('other:', product, [withoutUnits, firstWord]);
         }
       };
     })();

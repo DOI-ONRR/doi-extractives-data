@@ -217,11 +217,15 @@
       var total = product
         ? d3.sum(data, getter(fields.value))
         : unique(data, 'Product').length;
+
+      var totalText = state.get('product') === 'Coal (short tons)'
+        ? 'Total'
+        : 'All US';
       header
         .datum({
           value: total,
           properties: {
-            name: 'Total'
+            name: totalText
           }
         })
         .call(updateRegionRow);
@@ -866,10 +870,18 @@
         return data[this.getAttribute('data-key')];
       });
 
+    var coalElements = document.querySelectorAll('[data-coal]');
+
+    function hideCoalElements(status) {
+      Array.prototype.forEach.call(coalElements, function(el){
+        el.style.display = status ? 'none' : 'block';
+      });
+    }
+
     if (state.get('product') === 'Coal (short tons)'){
-      $('[data-coal]').show();
+      hideCoalElements(false);
     } else {
-      $('[data-coal]').hide()
+      hideCoalElements(true);
     }
 
   }

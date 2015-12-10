@@ -1,3 +1,2 @@
-Year	State	County	FIPS	Commodity	Product	Type	Volume
-2004	WA	Lewis	53041	Coal	Coal (ton)	Royalties	10683
-2005	WA	Lewis	53041	Coal	Coal (ton)	Royalties	5325
+Year	State	County	FIPS	Commodity	Product	Volume
+2005	WA	Lewis County	53041		Coal (tons)	W

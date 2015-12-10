@@ -201,7 +201,7 @@ async.parallel({
               'county': _.pluck(_.where(data[commodity], {'Year': year, 'Mine State': state}), 'Mine County'),
               'volume': volumes
             }
-            return _.zipObject(matches.county, matches.volume)
+            return _.zipObject(matches.county, matches.volume);
           }
 
 
@@ -214,10 +214,11 @@ async.parallel({
 
           // console.warn(state, '->',productionByState, year)
 
-          // if (productionByState){
+          // this conditional might need to be revisited
+          if (productionByState){
             Object.keys(productionByState).forEach(function(county) {
 
-              var volume = productionByState[county]
+              var volume = productionByState[county];
               // console.warn(state, year, '==>', county, volume)
               if (volume) {
                 var newResults = {};
@@ -231,11 +232,10 @@ async.parallel({
                 results.push(newResults)
               }
             });
-
-          // }
+          }
         });
       });
-    }
+    };
 
     var parseRenewables = function(commodity, data, years){
 
@@ -328,7 +328,7 @@ async.parallel({
         d['Mine State'] = stateKey[d['Mine State']];
       });
 
-      console.warn(data[commodity])
+      // console.warn(data[commodity])
 
       var states = getStates(data, commodity, 'Mine State');
 
@@ -371,7 +371,7 @@ async.parallel({
             newResults.Commodity = '';
             newResults.Product = 'Coal (short tons)';
 
-            results.push(newResults)
+            results.push(newResults);
           }
         });
       });

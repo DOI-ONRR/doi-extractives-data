@@ -70,6 +70,7 @@
     border-top: 1px solid $light-green;
     line-height: 1.4;
     padding: $base-padding-lite;
+    padding-bottom: ($base-padding-lite * 0.8);
   }
 
   span {

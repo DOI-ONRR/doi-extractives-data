@@ -211,35 +211,15 @@ async.parallel({
             var zippedObj = _.zip(matches.county, matches.volume);
 
             zippedObj = _.reduce(zippedObj, function(total, n, i) {
-              if (state == 'ND') {
-                // console.warn(total, '---total--->', typeof(total[n[0]]), n[1], i)
-                // console.warn('~~~~~~~~~~~~~~~~~~~~~~')
-
-              }
-
-              if (!total) {
-                var total = {};
-              }
-
+              var total = total || {};
               if (typeof(total[n[0]]) === undefined || typeof(total[n[0]]) === 'undefined') {
                   total[n[0]] = n[1];
               } else {
                 total[n[0]] += n[1];
               }
-
-              if (state == 'ND') {
-                // console.warn(total, '---total--->', n)
-                // console.warn('=====================')
-              }
-
               return total;
             }, {});
-            // zipObject = _.zipObject(zippedObj);
-            if (state == 'ND') {
-              // console.warn(state, year, '==>', matches)
-              // console.warn('------------------------------')
-              console.warn(state, year, '==>', zippedObj)
-            }
+
             return zippedObj;
           }
 

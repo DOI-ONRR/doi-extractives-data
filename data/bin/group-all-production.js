@@ -221,6 +221,12 @@ async.parallel({
             }
           }
 
+          function formatCounty(county) {
+            return (county === 'Mclean')
+              ? 'McLean'
+              : county;
+          }
+
           // this conditional might need to be revisited
           if (productionByState){
             Object.keys(productionByState).forEach(function(county) {
@@ -230,7 +236,7 @@ async.parallel({
               if (volume) {
                 var newResults = {};
                 newResults.State = state;
-                newResults.County = county;
+                newResults.County = formatCounty(county);
                 // console.warn(state)
                 newResults.County += !countyKey[state]
                   ? ' County'

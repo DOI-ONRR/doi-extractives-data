@@ -33,33 +33,40 @@ permalink: /how-it-works/
         <span>Develop <icon class="icon-chevron-lg"></icon></span>
         <span>Decommission</span>
       </p>
-      <p>Choose a resource to learn more:</p>
     </div>
 
     <div class="container landing-section_open landing-oil_gas-wrapper">
       <h5 class="landing-heading"><a href="{{site.baseurl}}/how-it-works/offshore-oil-gas/">Oil and gas</a></h5>
-      <div class="landing-oil_gas">
-        <p class="landing-description">Oil and gas (or natural gas) are fossil fuels that form underground on land and under the ocean. While they are abundant, they are not renewable.</p>
-      </div>
+      <a href="{{site.baseurl}}/how-it-works/offshore-oil-gas/">
+        <div class="landing-oil_gas">
+          <p class="landing-description">Oil and gas (or natural gas) are fossil fuels that form underground on land and under the ocean. While they are abundant, they are not renewable.</p>
+        </div>
+      </a>
     </div>
     </div>
     <div class="container landing-section_open landing-coal-wrapper">
       <h5 class="landing-heading"><a href="{{site.baseurl}}/how-it-works/coal/">Coal</a></h5>
-      <div class="landing-coal">
-        <p class="landing-description">Miners extract coal through surface and subsurface mining. In 2013, the U.S. was the world’s second largest coal producer after China.</p>
-      </div>
+      <a href="{{site.baseurl}}/how-it-works/coal/">
+        <div class="landing-coal">
+          <p class="landing-description">Miners extract coal through surface and subsurface mining. In 2013, the U.S. was the world’s second largest coal producer after China.</p>
+        </div>
+      </a>
     </div>
     <div class="container landing-section_open landing-minerals-wrapper">
       <h5 class="landing-heading"><a href="{{site.baseurl}}/how-it-works/minerals/">Nonenergy minerals</a></h5>
-      <div class="landing-minerals">
-        <p class="landing-description">Gold, copper, and iron are the chief sources of nonenergy mineral revenues. In 2013, U.S. metal production totaled $32 billion in value.</p>
-      </div>
+      <a href="{{site.baseurl}}/how-it-works/minerals/">
+        <div class="landing-minerals">
+          <p class="landing-description">Gold, copper, and iron are the chief sources of nonenergy mineral revenues. In 2013, U.S. metal production totaled $32 billion in value.</p>
+        </div>
+      </a>
     </div>
     <div class="container landing-section_open landing-renewables-wrapper">
       <h5 class="landing-heading"><a href="{{site.baseurl}}/how-it-works/onshore-renewables/">Renewable energy</a></h5>
-      <div class="landing-renewables">
-        <p class="landing-description">Renewable energy resources—including geothermal, solar, wind, biomass, and hydrokinetic energy—comprised about 10% of total U.S. energy consumption in 2013.</p>
-      </div>
+      <a href="{{site.baseurl}}/how-it-works/onshore-renewables/">
+        <div class="landing-renewables">
+          <p class="landing-description">Renewable energy resources—including geothermal, solar, wind, biomass, and hydrokinetic energy—comprised about 10% of total U.S. energy consumption in 2013.</p>
+        </div>
+      </a>
     </div>
   </section>
 

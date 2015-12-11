@@ -680,8 +680,16 @@
        ? eiti.commodities.groups[state.get('group')].name
        : 'all commodities');
 
+    var figureSelector = [
+      '[name="figure"] ',
+      '[value="', state.get('figure'), '"]'
+    ].join('');
+
+    var figure = root.select(figureSelector).text();
+
     var data = {
       commodity: commodity.toLowerCase(),
+      figure: figure.toLowerCase(),
       region: REGION_ID_NAME[state.get('region') || 'US'],
       year: state.get('year')
     };

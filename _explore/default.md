@@ -13,8 +13,10 @@ permalink: /explore/
 		<div class="container-right-4 hero-right">
       <div class="hero-right_square">
         <figure>
-          <img class="hero-right_image" src="{{ site.baseurl }}/img/landing-placeholders/placeholder.png"/>
-          <figcaption class="hero-right_caption">Link to some <a href="#" class="link-alpha">interesting content</a></figcaption>
+          <a href="{{site.baseurl}}/explore/federal-revenue-by-location/">
+            <img class="hero-right_image" src="{{ site.baseurl }}/img/explore-landing-intro.png" alt="Map of the US with the Gulf of Mexico highlighted. Total U.S. revenue: 12,261,828,343. Gulf of Mexico revenue: 7,572,080,117. Calendar year 2013.">
+          </a>
+          <figcaption class="hero-right_caption">The Gulf of Mexico accounted for over 60% of U.S. federal extractive revenue in 2013. <a href="{{site.baseurl}}/explore/federal-revenue-by-location/" class="link-alpha">View the data.</a></figcaption>
         </figure>
       </div>
     </div>
@@ -29,7 +31,7 @@ permalink: /explore/
       <h5 class="landing-heading"><a href="{{site.baseurl}}/explore/federal-revenue-by-location/">Federal revenue by location</a></h5>
       <button class="accordion-button" accordion-button title="Toggle for federal revenue by location"></button>
       <div class="accordion-content">
-        <p class="landing-description">Revenue from extractive industries on federal lands and waters in fiscal year 2013 totaled about $13.4 billion, or 0.4% of total $3.4 trillion in revenue collected across the federal government. <a href="{{site.baseurl}}/explore/federal-revenue-by-location/">Explore revenues on federal lands and waters</a> from 2004 to 2013 by state, county and offshore areas.</p>
+        <p class="landing-description">Revenue from extractive industries on federal lands and waters in fiscal year 2013 totaled about $13.4 billion, or 0.4% of total $3.4 trillion in revenue collected across the federal government. <a href="{{site.baseurl}}/explore/federal-revenue-by-location/">Explore revenue on federal lands and waters</a> from 2004 to 2013 by state, county and offshore areas.</p>
       </div>
     </div>
     <div class="container-half landing-section" accordion-item accordion-open="true">

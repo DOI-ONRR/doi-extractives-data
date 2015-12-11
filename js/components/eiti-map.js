@@ -1,26 +1,18 @@
 (function(exports) {
+  'use strict';
 
   // XXX requires d3, topojson
 
   exports.EITIMap = document.registerElement('eiti-map', {
-    'extends': 'svg',
+    // 'extends': 'svg',
     prototype: Object.create(
-      SVGSVGElement.prototype,
+      HTMLElement.prototype,
       {
 
         createdCallback: {value: function() {
         }},
 
         attachedCallback: {value: function() {
-          switch (typeof this.onload) {
-            case 'string':
-              this.onload = new Function('event', this.onload);
-              break;
-            case 'function':
-              this.addEventListener('load', this.onload);
-              break;
-          }
-
           this.load();
         }},
 
@@ -28,7 +20,7 @@
           switch (attr) {
             case 'width':
             case 'height':
-              updateSize(this);
+              updateSize(this.querySelector('svg'));
               break;
 
             case 'zoom-to':
@@ -43,7 +35,7 @@
         load: {value: function() {
           this.loaded = false;
 
-          var map = this;
+          var map = this.querySelector('svg');
           var layers = getDataLayers(this);
 
           var q = queue();
@@ -61,24 +53,28 @@
           });
 
           if (len) {
-            var selection = d3.select(map)
+            var selection = d3.select(this)
               .classed('js-loading', true);
+
+            var self = this;
             q.await(function(error) {
               selection.classed('js-loading', false);
               if (error) {
                 selection.classed('js-error', true);
-                return map.dispatchEvent(new CustomEvent('error', error));
+                return self.dispatchEvent(new CustomEvent('error', error));
               }
               render(map);
-              updateBBox(map);
 
-              if (map.hasAttribute('zoom-to')) {
-                map.zoomTo(map.getAttribute('zoom-to'));
+              if (self.hasAttribute('zoom-to')) {
+                self.zoomTo(self.getAttribute('zoom-to'));
+              } else {
+                updateBBox(map);
               }
 
               selection.classed('js-loaded', true);
-              map.dispatchEvent(new CustomEvent('load'));
-              map.loaded = true;
+
+              self.dispatchEvent(new CustomEvent('load'));
+              self.loaded = true;
             });
 
           } else {
@@ -87,8 +83,11 @@
         }},
 
         zoomTo: {value: function(featureId, duration) {
+          var map = this.querySelector('svg');
+          var selection = d3.select(map);
+
           var feature;
-          d3.select(this)
+          selection
             .selectAll('path')
             .classed('zoomed', function(d) {
               if (!feature && d.id && d.id == featureId) {
@@ -100,14 +99,14 @@
 
           var viewBox;
           if (feature) {
-            var path = getSVGPath(this);
+            var path = getSVGPath(map);
             var bbox = path.bounds(feature);
             viewBox = bboxToViewBox(bbox);
           } else {
-            viewBox = getViewBox(this);
+            console.warn('zoom to:', featureId, 'no such feature');
+            viewBox = getViewBox(map);
           }
 
-          var selection = d3.select(this);
           if (!isNaN(duration) && duration > 0) {
             selection = selection.transition()
               .duration(duration);
@@ -217,7 +216,9 @@
         if (this.hasAttribute('data-href')) {
 
           var link = layer.selectAll('a')
-            .data(features, function(d, i) { return d.id || i; });
+            .data(features, function(d, i) {
+              return d.id || i;
+            });
 
           link.exit().remove();
           link.enter().append('a')

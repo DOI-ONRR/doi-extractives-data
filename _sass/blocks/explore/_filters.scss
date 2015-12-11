@@ -1,6 +1,16 @@
 
+.filters-wrapper_outer {
+  position: relative;
+}
+
 .filters-wrapper {
+  background-color: transparent;
+  max-width: 654.609px;
+  margin-left: 0;
   padding: $base-padding;
+  position: absolute;
+  width: 100%;
+  z-index: 3000;
 
   @include respond-to(medium-up) {
     border-radius: $base-border-radius;
@@ -15,6 +25,12 @@
     border: 0;
     height: 50px;
   }
+
+  &[aria-expanded=true] {
+    // background-color: $mid-blue;
+    background-color: rgba(198,233,255, 0.85) !important;
+  }
+
 }
 
 .filters-last {

@@ -62,7 +62,8 @@ eiti-slider {
   }
 
   .mask {
-    fill: $mid-blue;
+    // fill: $mid-blue;
+    fill: rgba(198,233,255, 0.85);
     opacity: 0.5;
 
     line {

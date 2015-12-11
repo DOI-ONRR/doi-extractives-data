@@ -14,6 +14,7 @@
       : (document.documentElement
         || document.body.parentNode
         || document.body).scrollTop;
+
   };
 
   var StickyNav = function() {
@@ -23,13 +24,24 @@
     };
 
     var attrStickyOffset = this.elems.sticky.getAttribute('data-sticky-offset'),
-      attrAbsolute = this.elems.sticky.getAttribute('data-absolute');
+      attrAbsolute = this.elems.sticky.getAttribute('data-absolute'),
+      attrParent = this.elems.sticky.getAttribute('data-offset-parent');
+
     this.offset = attrStickyOffset
       ? parseInt(attrStickyOffset)
-      : this.elems.sticky.offsetTop;
-    this.absolute = (attrAbsolute === 'true')
-      ? true
-      : false
+      : attrParent
+        ? this.elems.sticky.offsetParent.offsetTop - this.elems.sticky.offsetHeight - 50
+        : this.elems.sticky.offsetTop;
+
+    this.isAbsolute = function() {
+      var windowWidth = window.innerWidth || document.body.clientWidth;
+      this.isMobile = windowWidth < 768;
+
+      var isAbsolute = (attrAbsolute === 'true' && !this.isMobile)
+        ? true
+        : false;
+      return isAbsolute;
+    }
     this.status;
     this.lastStatus;
   };
@@ -77,7 +89,7 @@
         this.elems.sticky.classList.remove('js-color');
         this.elems.sticky.classList.add('js-transparent');
 
-        if (this.absolute) {
+        if (this.isAbsolute()) {
           this.elems.sticky.style.position = 'absolute';
         } else {
           this.elems.sticky.style.position = 'static';
@@ -102,7 +114,7 @@
     if (stickyNav.needsUpdate()) {
       stickyNav.update();
     }
-  }
+  };
 
   var scrollTimer, lastScrollFireTime = 0;
 

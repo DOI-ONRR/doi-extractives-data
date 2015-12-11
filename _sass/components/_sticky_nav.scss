@@ -5,6 +5,10 @@
 
   @include respond-to(medium-down) {
     display: none;
+
+    &.sticky_nav-show_mobile {
+      display: block;
+    }
   }
 
   ul a {

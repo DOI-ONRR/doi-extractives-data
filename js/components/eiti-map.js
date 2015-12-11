@@ -128,7 +128,8 @@
     if (map.__projection) {
       return map.__projection;
     }
-    var proj = map.getAttribute('projection') || 'albersUsa';
+    var proj = map.getAttribute('projection') ||
+      map.parentNode.getAttribute('projection') || 'albersUsa';
     if (!d3.geo[proj]) {
       throw new Error('invalid projection: "' + proj + '"');
     }

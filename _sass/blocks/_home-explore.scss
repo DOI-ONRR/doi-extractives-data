@@ -1,0 +1,47 @@
+// Explore data callout on homepage
+//
+// Styleguide blocks.explore-home
+
+.explore_home-heading {
+  margin-bottom: 0;
+}
+
+.explore_home-subhead {
+  @include heading(para-md);
+  font-weight: $weight-bold;
+  margin-bottom: 0;
+}
+
+.explore_home-tabs {
+  @include heading(para-sm);
+  margin-bottom: 2px;
+  text-align: right;
+
+  a {
+    color: $black;
+    margin-right: $base-padding-lite;
+    padding: $base-padding-lite $base-padding $base-padding-lite $base-padding;
+
+    &[aria-selected="true"] {
+      background-color: $white;
+      border: 1px solid $neutral-gray;
+      border-bottom: 1px solid $white;
+      font-weight: $weight-bold;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $mid-gray;
+    }
+  }
+
+  li {
+    display: inline-block;
+  }
+}
+
+.explore_home-revenue,
+.explore_home-production,
+.explore_home-impact {
+  border-top: 1px solid $neutral-gray;
+}

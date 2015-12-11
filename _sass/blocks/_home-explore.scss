@@ -22,7 +22,7 @@
     border-bottom: 1px solid $neutral-gray;
     color: $black;
     margin-right: $base-padding-lite;
-    padding: $base-padding-lite $base-padding $base-padding-lite $base-padding;
+    padding: $base-padding-lite $base-padding;
 
     &[aria-selected="true"] {
       background-color: $white;

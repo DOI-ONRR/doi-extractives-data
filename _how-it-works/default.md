@@ -40,7 +40,7 @@ permalink: /how-it-works/
       <h5 class="landing-heading"><a href="{{site.baseurl}}/how-it-works/offshore-oil-gas/">Oil and gas</a></h5>
       <a href="{{site.baseurl}}/how-it-works/offshore-oil-gas/">
         <div class="landing-oil_gas">
-          <p class="landing-description">Oil and gas (or natural gas) are fossil fuels that form underground on land and under the ocean. They are abundant, but not not renewable.</p>
+          <p class="landing-description">Oil and gas (or natural gas) are fossil fuels that form underground on land and under the ocean. They are abundant, but not renewable.</p>
         </div>
       </a>
     </div>
@@ -57,7 +57,7 @@ permalink: /how-it-works/
       <h5 class="landing-heading"><a href="{{site.baseurl}}/how-it-works/minerals/">Nonenergy minerals</a></h5>
       <a href="{{site.baseurl}}/how-it-works/minerals/">
         <div class="landing-minerals">
-          <p class="landing-description">Gold, copper, and iron are the chief sources of nonenergy mineral revenues. In 2013, U.S. metal production totaled $32 billion in value.</p>
+          <p class="landing-description">Gold, copper, and iron are the main sources of nonenergy mineral revenues. In 2013, U.S. metal production totaled $32 billion.</p>
         </div>
       </a>
     </div>

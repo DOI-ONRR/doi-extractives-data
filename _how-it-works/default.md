@@ -14,8 +14,10 @@ permalink: /how-it-works/
     <div class="container-right-4 hero-right">
       <div class="hero-right_square">
         <figure>
-          <img class="hero-right_image" src="{{ site.baseurl }}/img/landing-placeholders/placeholder.png"/>
-          <figcaption class="hero-right_caption">This is where a caption about a summary graphic will be perhaps with a <a href="#" class="link-alpha">number and figure</a>.</figcaption>
+          <a href="{{site.baseurl}}/how-it-works/production/">
+            <img class="hero-right_image" src="{{ site.baseurl }}/img/howitworks-landing-intro.png" alt="The U.S. ranks at or near the top worldwide in production of many natural resources. We are first in natural gas and oil, and second in coal and renewables.">
+          </a>
+          <figcaption class="hero-right_caption">Read more about <a href="{{site.baseurl}}/how-it-works/production/" class="link-alpha">natural resources in the U.S.</a></figcaption>
         </figure>
       </div>
     </div>

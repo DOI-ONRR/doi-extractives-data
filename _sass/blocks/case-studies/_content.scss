@@ -29,10 +29,11 @@
 
 .case_studies_content-graph {
   margin-bottom: $base-padding;
+  margin-top: $base-padding;
   width: 100%;
 
   @include respond-to(small-up) {
-    width: 75%;
+    width: 80%;
   }
 
 }

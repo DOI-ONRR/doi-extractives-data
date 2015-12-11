@@ -53,16 +53,27 @@
   width: 100%;
 }
 
-.disbursment-figure {
-  padding-top: $base-padding-extra;
-  padding-bottom: $base-padding-extra;
+.article_table {
+  border: none;
 
-  figcaption {
-    @include heading(h5);
-    font-weight: $weight-bold;
+  th {
+    border-bottom: 4px solid $light-green;
+    font-weight: $weight-book;
+    line-height: 1.2;
+    padding: $base-padding-lite;
+    text-align: left;
+    vertical-align: bottom;
+  }
 
-    span {
-      font-weight: $weight-light;
-    }
+  td {
+    border: none;
+    border-top: 1px solid $light-green;
+    line-height: 1.4;
+    padding: $base-padding-lite;
+  }
+
+  span {
+    font-weight: $weight-book;
+      line-height: 2;
   }
 }

@@ -8,7 +8,8 @@ permalink: /how-it-works/
   <div class="container-outer landing-section_top">
     <div class="container-left-8 hero-left">
       <h1>{{ page.title }}</h1>
-      <p class="hero-description">Private individuals and corporations, as well as federal, state, local, and tribal governments, can own land and the oil, gas, coal, and other minerals found below the surface. In fact, widespread private ownership of these resources makes the U.S. different from nearly every other country, where these resources simply belong to the government. Learn what the <a href="#process">extraction process</a> looks like in the U.S., about <a href="#natural-resources">U.S. natural resources</a>, and related <a href="#laws-governance">laws and governance</a> here.</p>
+      <p class="hero-description">In the U.S., land and the resources beneath it can be owned by private individuals and corporations or by federal, state, local, and tribal governments. This makes the U.S. different from nearly every other country: in many places oil, gas, coal, and other minerals simply belong to the government, but in the U.S. there is widespread private ownership of these resources.</p>
+      <p class="hero-description">Learn what the <a href="#process">extraction process</a> looks like, how <a href="#natural-resources">natural resources</a> are managed, and what <a href="#laws-governance">laws and governance</a> relate to the industry.</p>
     </div>
     <div class="container-right-4 hero-right">
       <div class="hero-right_square">
@@ -33,33 +34,40 @@ permalink: /how-it-works/
         <span>Develop <icon class="icon-chevron-lg"></icon></span>
         <span>Decommission</span>
       </p>
-      <p>Choose a resource to learn more:</p>
     </div>
 
     <div class="container landing-section_open landing-oil_gas-wrapper">
       <h5 class="landing-heading"><a href="{{site.baseurl}}/how-it-works/offshore-oil-gas/">Oil and gas</a></h5>
-      <div class="landing-oil_gas">
-        <p class="landing-description">Oil and gas (or natural gas) are fossil fuels that form underground on land and under the ocean. While they are abundant, they are not renewable.</p>
-      </div>
+      <a href="{{site.baseurl}}/how-it-works/offshore-oil-gas/">
+        <div class="landing-oil_gas">
+          <p class="landing-description">Oil and gas (or natural gas) are fossil fuels that form underground on land and under the ocean. They are abundant, but not renewable.</p>
+        </div>
+      </a>
     </div>
     </div>
     <div class="container landing-section_open landing-coal-wrapper">
       <h5 class="landing-heading"><a href="{{site.baseurl}}/how-it-works/coal/">Coal</a></h5>
-      <div class="landing-coal">
-        <p class="landing-description">Miners extract coal through surface and subsurface mining. In 2013, the U.S. was the world’s second largest coal producer after China.</p>
-      </div>
+      <a href="{{site.baseurl}}/how-it-works/coal/">
+        <div class="landing-coal">
+          <p class="landing-description">Miners extract coal through surface and subsurface mining. In 2013, the U.S. was the world’s second largest coal producer after China.</p>
+        </div>
+      </a>
     </div>
     <div class="container landing-section_open landing-minerals-wrapper">
       <h5 class="landing-heading"><a href="{{site.baseurl}}/how-it-works/minerals/">Nonenergy minerals</a></h5>
-      <div class="landing-minerals">
-        <p class="landing-description">Gold, copper, and iron are the chief sources of nonenergy mineral revenues. In 2013, U.S. metal production totaled $32 billion in value.</p>
-      </div>
+      <a href="{{site.baseurl}}/how-it-works/minerals/">
+        <div class="landing-minerals">
+          <p class="landing-description">Gold, copper, and iron are the main sources of nonenergy mineral revenues. In 2013, U.S. metal production totaled $32 billion.</p>
+        </div>
+      </a>
     </div>
     <div class="container landing-section_open landing-renewables-wrapper">
       <h5 class="landing-heading"><a href="{{site.baseurl}}/how-it-works/onshore-renewables/">Renewable energy</a></h5>
-      <div class="landing-renewables">
-        <p class="landing-description">Renewable energy resources—including geothermal, solar, wind, biomass, and hydrokinetic energy—comprised about 10% of total U.S. energy consumption in 2013.</p>
-      </div>
+      <a href="{{site.baseurl}}/how-it-works/onshore-renewables/">
+        <div class="landing-renewables">
+          <p class="landing-description">Renewable energy resources — including geothermal, solar, wind, biomass, and hydrokinetic energy — comprised about 10% of U.S. energy consumption in 2013.</p>
+        </div>
+      </a>
     </div>
   </section>
 
@@ -69,11 +77,8 @@ permalink: /how-it-works/
 			<h5 class="landing-heading"><a href="{{site.baseurl}}/how-it-works/ownership/">Ownership</a></h5>
 			<button class="accordion-button" accordion-button title="Toggle for ownership"></button>
 			<div class="accordion-content">
-				<p class="landing-description">Private individuals and corporations, as well as federal, state, local, and tribal governments, can own land and the oil, gas, coal, and other minerals found below the surface. In fact, widespread private ownership of these resources makes the U.S. different from nearly every other country, where these resources simply belong to the government.
-        <a href="{{site.baseurl}}/how-it-works/ownership/">Learn about ownership &#8594;</a></p>
-				<!-- <a href="{{site.baseurl}}/how-it-works/ownership/">
-					<img class="landing-image" src="{{site.baseurl}}/img/landing-placeholders/precent-production-fed.png">
-				</a> -->
+				<p class="landing-description">Private individuals and corporations, as well as federal, state, local, and tribal governments, can own land and the oil, gas, coal, and other minerals found below the surface.
+        <a href="{{site.baseurl}}/how-it-works/ownership/">Learn about land and resource ownership &#8594;</a></p>
 			</div>
 		</div>
 		<div class="container landing-section" accordion-item accordion-open="true">
@@ -82,9 +87,6 @@ permalink: /how-it-works/
 			<div class="accordion-content">
 				<p class="landing-description">The U.S. is a world leader in producing natural resources, including oil, gas, coal, renewable energy, and nonenergy minerals.
         <a href="{{site.baseurl}}/how-it-works/production/">Learn about production &#8594;</a></p>
-				<!-- <a href="{{site.baseurl}}/how-it-works/production/">
-					<img class="landing-image" src="{{site.baseurl}}/img/landing-placeholders/global-rank-production.png">
-				</a> -->
 			</div>
 		</div>
 		<div class="container landing-section" accordion-item accordion-open="true">
@@ -92,10 +94,7 @@ permalink: /how-it-works/
 			<button class="accordion-button" accordion-button title="Toggle for revenues"></button>
 			<div class="accordion-content">
 				<p class="landing-description">When companies extract natural resources on federal onshore and offshore lands, they pay revenue to the federal government. The government distributes these funds for public use in a variety of ways.
-        <a href="{{site.baseurl}}/how-it-works/revenues/">Learn about revenues &#8594;</a></p>
-				<!-- <a href="{{site.baseurl}}/how-it-works/revenues/">
-					<img class="landing-image" src="{{site.baseurl}}/img/landing-placeholders/revenues-pie-chart.png">
-				</a> -->
+        <a href="{{site.baseurl}}/how-it-works/revenues/">Learn how revenues work &#8594;</a></p>
 			</div>
 		</div>
 	</section>
@@ -106,54 +105,32 @@ permalink: /how-it-works/
 			<h5 class="landing-heading"><a href="{{site.baseurl}}/how-it-works/federal-laws/">Federal laws and regulations</a></h5>
 			<button class="accordion-button" accordion-button title="Toggle for federal laws"></button>
 			<div class="accordion-content">
-				<p class="landing-description">The legislative branch has passed many laws that govern natural resource extraction on federal lands.
+				<p class="landing-description">The legislative branch has passed many laws governing natural resource extraction on federal lands.
         <a href="{{site.baseurl}}/how-it-works/federal-laws/">Learn about federal laws &#8594;</a></p>
-				<!-- <a href="{{site.baseurl}}/how-it-works/federal-laws/">
-					<img class="landing-image" src="{{site.baseurl}}/img/landing-placeholders/placeholder.png">
-				</a> -->
 			</div>
 		</div>
 		<div class="container landing-section" accordion-item accordion-open="true">
 			<h5 class="landing-heading"><a href="{{site.baseurl}}/how-it-works/federal-reforms/">Federal reforms</a></h5>
 			<button class="accordion-button" accordion-button title="Toggle for federal reforms"></button>
 			<div class="accordion-content">
-				<p class="landing-description">The government reforms laws and regulations by enacting new legislation and proposing new rules to implement the legislation.
-        <a href="{{site.baseurl}}/how-it-works/federal-reforms/">Learn about federal regulations &#8594;</a></p>
-				<!-- <a href="{{site.baseurl}}/how-it-works/federal-reforms/">
-					<img class="landing-image" src="{{site.baseurl}}/img/landing-placeholders/placeholder.png">
-				</a> -->
+				<p class="landing-description">The government reforms laws and regulations by enacting new legislation and proposing new rules for implementation.
+        <a href="{{site.baseurl}}/how-it-works/federal-reforms/">Learn about reforms &#8594;</a></p>
 			</div>
 		</div>
-    <!-- <div class="container landing-section" accordion-item accordion-open="true">
-			<h5 class="landing-heading"><a href="{{site.baseurl}}/how-it-works/federal-agencies/">Federal agencies</a></h5>
-			<button class="accordion-button" accordion-button></button>
-			<div class="accordion-content">
-				<p class="landing-description">Federal agencies, such as DOI and relevant bureaus, implement laws by developing and enforcing regulations and rules.</p>
-				<a href="{{site.baseurl}}/how-it-works/federal-laws-and-reforms/">
-					<img class="landing-image" src="{{site.baseurl}}/img/landing-placeholders/placeholder.png">
-				</a>
-			</div>
-		</div> -->
 		<div class="container landing-section" accordion-item accordion-open="true">
 			<h5 class="landing-heading"><a href="{{site.baseurl}}/how-it-works/state-laws-and-regulations/" id="state-laws-and-regulations">State laws and regulations</a></h5>
 			<button class="accordion-button" accordion-button title="Toggle for state laws and regulations"></button>
 			<div class="accordion-content">
-				<p class="landing-description">State government agencies create regulations and rules related to natural resource extraction based on applicable state laws and statutes (federal laws and regulations apply to all states and localities). Local government agencies also play a role in natural resource extraction in their jurisdictions.
+				<p class="landing-description">State agencies create regulations and rules about natural resource extraction based on applicable state laws and statutes. Local government agencies also play a role. (Federal laws and regulations apply to all states and localities.)
         <a href="{{site.baseurl}}/how-it-works/state-laws-and-regulations/">Learn about state laws &#8594;</a></p>
-				<!-- <a href="{{site.baseurl}}/how-it-works/state-laws-and-regulations/">
-					<img class="landing-image" src="{{site.baseurl}}/img/placeholders/map.png">
-				</a> -->
 			</div>
 		</div>
 		<div class="container landing-section" accordion-item accordion-open="true">
 			<h5 class="landing-heading"><a href="{{site.baseurl}}/how-it-works/state-legal-fiscal-info/">Regulations in 18 states</a></h5>
 			<button class="accordion-button" accordion-button title="Toggle for regulations in 18 states"></button>
 			<div class="accordion-content">
-				<p class="landing-description">Learn more about natural resource regulation, production, and revenue in the 18 states that, in 2013, led the country in oil, gas, coal, and nonenergy mineral production; had the most DOI revenue and / or state production taxes; or had the most significant tribal natural resource interest.
+				<p class="landing-description">Learn about natural resource regulation, production, and revenue in 18 states that led the country in oil, gas, coal, and nonenergy mineral production, had the most DOI revenue or state production taxes, or had significant tribal natural resource interest in 2013.
         <a href="{{site.baseurl}}/how-it-works/state-legal-fiscal-info/">Learn about 18 states &#8594;</a></p>
-				<!-- <a href="{{site.baseurl}}/how-it-works/state-legal-fiscal-info/">
-					<img class="landing-image" src="{{site.baseurl}}/img/placeholders/map.png">
-				</a> -->
 			</div>
 		</div>
 		<div class="container landing-section" accordion-item accordion-open="true">
@@ -162,9 +139,6 @@ permalink: /how-it-works/
 			<div class="accordion-content">
 				<p class="landing-description">Extracting natural resources on Indian land and distributing the associated revenue involves a unique set of processes and stakeholders.
         <a href="{{site.baseurl}}/how-it-works/tribal-laws-and-regulations/">Learn about tribal laws &#8594;</a></p>
-				<!-- <a href="{{site.baseurl}}/how-it-works/tribal-laws-and-regulations/">
-					<img class="landing-image" src="{{site.baseurl}}/img/landing-placeholders/placeholder.png">
-				</a> -->
 			</div>
 		</div>
 	</section>

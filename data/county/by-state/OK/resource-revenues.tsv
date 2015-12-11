@@ -27,7 +27,9 @@ Year	State	County	FIPS	Resource	Revenue
 2004	OK	Kingfisher	40073	oilgas	19520.91
 2004	OK	Kiowa	40075	oilgas	1102.00
 2004	OK	Latimer	40077	oilgas	142855.81
+2004	OK	Latimer	40077	coal	8885.39
 2004	OK	Le Flore	40079	oilgas	172323.87
+2004	OK	Le Flore	40079	coal	689618.67
 2004	OK	Lincoln	40081	oilgas	3889.37
 2004	OK	Logan	40083	oilgas	369.86
 2004	OK	Major	40093	oilgas	822327.15
@@ -50,14 +52,13 @@ Year	State	County	FIPS	Resource	Revenue
 2004	OK	Washita	40149	oilgas	1030.00
 2004	OK	Woods	40151	oilgas	894163.46
 2004	OK	Woodward	40153	oilgas	302449.30
-2004	OK		40	coal	698504.06
 2005	OK	Alfalfa	40003	oilgas	110431.61
 2005	OK	Beaver	40007	oilgas	156712.84
 2005	OK	Beckham	40009	oilgas	834496.45
 2005	OK	Blaine	40011	oilgas	277654.45
 2005	OK	Bryan	40013	oilgas	3326.00
 2005	OK	Caddo	40015	oilgas	438.00
-2005	OK	Canadian	40017	oilgas	172133.85
+2005	OK	Canadian	40017	oilgas	172133.86
 2005	OK	Cimarron	40025	oilgas	4165.08
 2005	OK	Coal	40029	oilgas	39382.13
 2005	OK	Comanche	40031	oilgas	13813.99
@@ -68,7 +69,7 @@ Year	State	County	FIPS	Resource	Revenue
 2005	OK	Ellis	40045	oilgas	316669.09
 2005	OK	Garfield	40047	oilgas	67426.37
 2005	OK	Garvin	40049	oilgas	5927.26
-2005	OK	Grady	40051	oilgas	-829.46
+2005	OK	Grady	40051	oilgas	-829.47
 2005	OK	Greer	40055	oilgas	3677.52
 2005	OK	Harmon	40057	oilgas	420.00
 2005	OK	Harper	40059	oilgas	115356.99
@@ -79,7 +80,9 @@ Year	State	County	FIPS	Resource	Revenue
 2005	OK	Kingfisher	40073	oilgas	111779.35
 2005	OK	Kiowa	40075	oilgas	1102.00
 2005	OK	Latimer	40077	oilgas	657632.23
+2005	OK	Latimer	40077	coal	9432.00
 2005	OK	Le Flore	40079	oilgas	130544.65
+2005	OK	Le Flore	40079	coal	296644.35
 2005	OK	Lincoln	40081	oilgas	5336.42
 2005	OK	Logan	40083	oilgas	425.66
 2005	OK	Major	40093	oilgas	1025338.89
@@ -102,7 +105,6 @@ Year	State	County	FIPS	Resource	Revenue
 2005	OK	Washita	40149	oilgas	1030.00
 2005	OK	Woods	40151	oilgas	985985.82
 2005	OK	Woodward	40153	oilgas	430454.05
-2005	OK		40	coal	306076.35
 2006	OK	Alfalfa	40003	oilgas	140022.49
 2006	OK	Atoka	40005	oilgas	152203.50
 2006	OK	Beaver	40007	oilgas	165792.61
@@ -125,12 +127,15 @@ Year	State	County	FIPS	Resource	Revenue
 2006	OK	Greer	40055	oilgas	10558.96
 2006	OK	Harmon	40057	oilgas	180.00
 2006	OK	Harper	40059	oilgas	74059.53
+2006	OK	Haskell	40061	coal	85024.80
 2006	OK	Haskell	40061	oilgas	287123.08
 2006	OK	Hughes	40063	oilgas	637.80
 2006	OK	Jackson	40065	oilgas	45702.50
 2006	OK	Kay	40071	oilgas	1152.00
 2006	OK	Kingfisher	40073	oilgas	74772.14
+2006	OK	Latimer	40077	coal	47919.04
 2006	OK	Latimer	40077	oilgas	225711.04
+2006	OK	Le Flore	40079	coal	528088.46
 2006	OK	Le Flore	40079	oilgas	1096781.85
 2006	OK	Lincoln	40081	oilgas	8132.24
 2006	OK	Logan	40083	oilgas	628.97
@@ -143,6 +148,7 @@ Year	State	County	FIPS	Resource	Revenue
 2006	OK	Oklahoma	40109	oilgas	1031.81
 2006	OK	Payne	40119	oilgas	28347.75
 2006	OK	Pittsburg	40121	oilgas	893847.45
+2006	OK	Pushmataha	40127	minerals	959.00
 2006	OK	Pushmataha	40127	oilgas	1000.00
 2006	OK	Roger Mills	40129	oilgas	4179696.01
 2006	OK	Sequoyah	40135	oilgas	16397.55
@@ -150,8 +156,6 @@ Year	State	County	FIPS	Resource	Revenue
 2006	OK	Tillman	40141	oilgas	36526.11
 2006	OK	Woods	40151	oilgas	1350550.65
 2006	OK	Woodward	40153	oilgas	469622.33
-2006	OK		40	coal	661032.30
-2006	OK		40	minerals	959.00
 2007	OK	Alfalfa	40003	oilgas	124965.72
 2007	OK	Atoka	40005	oilgas	447.00
 2007	OK	Beaver	40007	oilgas	147729.20
@@ -176,12 +180,15 @@ Year	State	County	FIPS	Resource	Revenue
 2007	OK	Greer	40055	oilgas	13626.26
 2007	OK	Harmon	40057	oilgas	180.00
 2007	OK	Harper	40059	oilgas	94519.53
+2007	OK	Haskell	40061	coal	85024.80
 2007	OK	Haskell	40061	oilgas	175054.42
 2007	OK	Hughes	40063	oilgas	26205.60
 2007	OK	Jackson	40065	oilgas	523.50
 2007	OK	Kay	40071	oilgas	1632.00
 2007	OK	Kingfisher	40073	oilgas	49868.03
+2007	OK	Latimer	40077	coal	-21566.18
 2007	OK	Latimer	40077	oilgas	270287.54
+2007	OK	Le Flore	40079	coal	650811.14
 2007	OK	Le Flore	40079	oilgas	4247612.43
 2007	OK	Lincoln	40081	oilgas	9890.72
 2007	OK	Logan	40083	oilgas	558.85
@@ -203,8 +210,7 @@ Year	State	County	FIPS	Resource	Revenue
 2007	OK	Tillman	40141	oilgas	50176.52
 2007	OK	Washita	40149	oilgas	240502.50
 2007	OK	Woods	40151	oilgas	2861343.83
-2007	OK	Woodward	40153	oilgas	1057838.27
-2007	OK		40	coal	714269.76
+2007	OK	Woodward	40153	oilgas	1057838.28
 2008	OK	Alfalfa	40003	oilgas	167832.10
 2008	OK	Atoka	40005	oilgas	26978.17
 2008	OK	Beaver	40007	oilgas	192166.57
@@ -222,7 +228,7 @@ Year	State	County	FIPS	Resource	Revenue
 2008	OK	Custer	40039	oilgas	348154.31
 2008	OK	Delaware	40041	oilgas	2862.00
 2008	OK	Dewey	40043	oilgas	853401.00
-2008	OK	Ellis	40045	oilgas	532213.46
+2008	OK	Ellis	40045	oilgas	532213.45
 2008	OK	Garfield	40047	oilgas	61007.38
 2008	OK	Garvin	40049	oilgas	45758.06
 2008	OK	Grady	40051	oilgas	35809.82
@@ -230,12 +236,15 @@ Year	State	County	FIPS	Resource	Revenue
 2008	OK	Greer	40055	oilgas	11570.64
 2008	OK	Harmon	40057	oilgas	180.00
 2008	OK	Harper	40059	oilgas	93875.83
+2008	OK	Haskell	40061	coal	85024.80
 2008	OK	Haskell	40061	oilgas	231320.67
 2008	OK	Hughes	40063	oilgas	3178.70
 2008	OK	Jackson	40065	oilgas	523.50
 2008	OK	Kay	40071	oilgas	1152.00
 2008	OK	Kingfisher	40073	oilgas	64154.42
+2008	OK	Latimer	40077	coal	44289.04
 2008	OK	Latimer	40077	oilgas	370543.51
+2008	OK	Le Flore	40079	coal	774451.15
 2008	OK	Le Flore	40079	oilgas	1711498.87
 2008	OK	Lincoln	40081	oilgas	4627.79
 2008	OK	Logan	40083	oilgas	838.03
@@ -252,7 +261,8 @@ Year	State	County	FIPS	Resource	Revenue
 2008	OK	Pittsburg	40121	oilgas	1931712.95
 2008	OK	Pottawatomie	40125	oilgas	120.00
 2008	OK	Pushmataha	40127	oilgas	102720.00
-2008	OK	Roger Mills	40129	oilgas	9681013.09
+2008	OK	Pushmataha	40127	minerals	959.00
+2008	OK	Roger Mills	40129	oilgas	9681013.10
 2008	OK	Sequoyah	40135	oilgas	27820.57
 2008	OK	Texas	40139	oilgas	-2722.90
 2008	OK	Tillman	40141	oilgas	50938.36
@@ -260,8 +270,6 @@ Year	State	County	FIPS	Resource	Revenue
 2008	OK	Washita	40149	oilgas	109581.52
 2008	OK	Woods	40151	oilgas	2610637.58
 2008	OK	Woodward	40153	oilgas	788185.19
-2008	OK		40	coal	903764.99
-2008	OK		40	minerals	959.00
 2009	OK	Alfalfa	40003	oilgas	223018.85
 2009	OK	Atoka	40005	oilgas	5485.85
 2009	OK	Beaver	40007	oilgas	86637.47
@@ -286,12 +294,15 @@ Year	State	County	FIPS	Resource	Revenue
 2009	OK	Greer	40055	oilgas	5495.01
 2009	OK	Harmon	40057	oilgas	180.00
 2009	OK	Harper	40059	oilgas	15998.59
+2009	OK	Haskell	40061	coal	85024.80
 2009	OK	Haskell	40061	oilgas	92498.38
 2009	OK	Hughes	40063	oilgas	1032.96
 2009	OK	Jackson	40065	oilgas	507.00
 2009	OK	Kay	40071	oilgas	1792.00
 2009	OK	Kingfisher	40073	oilgas	34418.32
+2009	OK	Latimer	40077	coal	213716.90
 2009	OK	Latimer	40077	oilgas	42737.70
+2009	OK	Le Flore	40079	coal	673733.99
 2009	OK	Le Flore	40079	oilgas	364741.61
 2009	OK	Logan	40083	oilgas	207.81
 2009	OK	Major	40093	oilgas	1166995.57
@@ -305,6 +316,7 @@ Year	State	County	FIPS	Resource	Revenue
 2009	OK	Payne	40119	oilgas	38796.69
 2009	OK	Pittsburg	40121	oilgas	622568.50
 2009	OK	Pottawatomie	40125	oilgas	120.00
+2009	OK	Pushmataha	40127	minerals	959.00
 2009	OK	Pushmataha	40127	oilgas	6705.00
 2009	OK	Roger Mills	40129	oilgas	10712789.72
 2009	OK	Sequoyah	40135	oilgas	10378.31
@@ -314,8 +326,6 @@ Year	State	County	FIPS	Resource	Revenue
 2009	OK	Washita	40149	oilgas	171230.90
 2009	OK	Woods	40151	oilgas	704121.00
 2009	OK	Woodward	40153	oilgas	294613.83
-2009	OK		40	coal	972475.69
-2009	OK		40	minerals	959.00
 2010	OK	Alfalfa	40003	oilgas	132665.29
 2010	OK	Atoka	40005	oilgas	4677.27
 2010	OK	Beaver	40007	oilgas	108533.99
@@ -340,12 +350,15 @@ Year	State	County	FIPS	Resource	Revenue
 2010	OK	Greer	40055	oilgas	4656.62
 2010	OK	Harmon	40057	oilgas	180.00
 2010	OK	Harper	40059	oilgas	26850.88
+2010	OK	Haskell	40061	coal	85024.80
 2010	OK	Haskell	40061	oilgas	76044.11
 2010	OK	Hughes	40063	oilgas	1055.69
 2010	OK	Jackson	40065	oilgas	676.00
 2010	OK	Kay	40071	oilgas	2816.00
 2010	OK	Kingfisher	40073	oilgas	29562.55
+2010	OK	Latimer	40077	coal	234193.94
 2010	OK	Latimer	40077	oilgas	488565.84
+2010	OK	Le Flore	40079	coal	513745.92
 2010	OK	Le Flore	40079	oilgas	260004.63
 2010	OK	Lincoln	40081	oilgas	18062.55
 2010	OK	Logan	40083	oilgas	321.59
@@ -359,6 +372,7 @@ Year	State	County	FIPS	Resource	Revenue
 2010	OK	Payne	40119	oilgas	7280.30
 2010	OK	Pittsburg	40121	oilgas	1465711.38
 2010	OK	Pottawatomie	40125	oilgas	120.00
+2010	OK	Pushmataha	40127	minerals	-2397.50
 2010	OK	Pushmataha	40127	oilgas	2935.00
 2010	OK	Roger Mills	40129	oilgas	2032665.67
 2010	OK	Sequoyah	40135	oilgas	19446.74
@@ -368,8 +382,6 @@ Year	State	County	FIPS	Resource	Revenue
 2010	OK	Washita	40149	oilgas	428378.61
 2010	OK	Woods	40151	oilgas	900082.55
 2010	OK	Woodward	40153	oilgas	331466.16
-2010	OK		40	coal	832964.66
-2010	OK		40	minerals	-2397.50
 2011	OK	Alfalfa	40003	oilgas	128392.00
 2011	OK	Atoka	40005	oilgas	3643.31
 2011	OK	Beaver	40007	oilgas	134011.86
@@ -394,12 +406,15 @@ Year	State	County	FIPS	Resource	Revenue
 2011	OK	Harmon	40057	oilgas	360.00
 2011	OK	Harper	40059	oilgas	24539.67
 2011	OK	Haskell	40061	oilgas	90747.37
+2011	OK	Haskell	40061	coal	8820.00
 2011	OK	Hughes	40063	oilgas	859.70
 2011	OK	Jackson	40065	oilgas	676.00
 2011	OK	Kay	40071	oilgas	3703.00
 2011	OK	Kingfisher	40073	oilgas	45159.84
 2011	OK	Latimer	40077	oilgas	221122.56
+2011	OK	Latimer	40077	coal	444428.35
 2011	OK	Le Flore	40079	oilgas	235267.58
+2011	OK	Le Flore	40079	coal	692077.83
 2011	OK	Lincoln	40081	oilgas	4168.64
 2011	OK	Logan	40083	oilgas	52.01
 2011	OK	Major	40093	oilgas	1018282.07
@@ -421,7 +436,6 @@ Year	State	County	FIPS	Resource	Revenue
 2011	OK	Washita	40149	oilgas	70869.49
 2011	OK	Woods	40151	oilgas	813986.12
 2011	OK	Woodward	40153	oilgas	236083.74
-2011	OK		40	coal	1145326.18
 2012	OK	Alfalfa	40003	oilgas	149019.52
 2012	OK	Atoka	40005	oilgas	1812.07
 2012	OK	Beaver	40007	oilgas	158012.31
@@ -445,12 +459,15 @@ Year	State	County	FIPS	Resource	Revenue
 2012	OK	Harmon	40057	oilgas	240.00
 2012	OK	Harper	40059	oilgas	20405.55
 2012	OK	Haskell	40061	oilgas	57595.58
+2012	OK	Haskell	40061	coal	8820.00
 2012	OK	Hughes	40063	oilgas	420.76
 2012	OK	Jackson	40065	oilgas	21626.50
 2012	OK	Kay	40071	oilgas	41325.00
 2012	OK	Kingfisher	40073	oilgas	27111.97
 2012	OK	Latimer	40077	oilgas	106242.05
+2012	OK	Latimer	40077	coal	266686.60
 2012	OK	Le Flore	40079	oilgas	237721.35
+2012	OK	Le Flore	40079	coal	450440.64
 2012	OK	Lincoln	40081	oilgas	454.78
 2012	OK	Logan	40083	oilgas	7.36
 2012	OK	Major	40093	oilgas	747491.43
@@ -473,7 +490,6 @@ Year	State	County	FIPS	Resource	Revenue
 2012	OK	Washita	40149	oilgas	36544.58
 2012	OK	Woods	40151	oilgas	660606.96
 2012	OK	Woodward	40153	oilgas	156209.10
-2012	OK		40	coal	725947.24
 2013	OK	Alfalfa	40003	oilgas	338115.87
 2013	OK	Atoka	40005	oilgas	-3027.83
 2013	OK	Beaver	40007	oilgas	157925.46
@@ -498,12 +514,15 @@ Year	State	County	FIPS	Resource	Revenue
 2013	OK	Harmon	40057	oilgas	240.00
 2013	OK	Harper	40059	oilgas	20680.69
 2013	OK	Haskell	40061	oilgas	54095.42
+2013	OK	Haskell	40061	coal	8820.00
 2013	OK	Hughes	40063	oilgas	519.98
 2013	OK	Jackson	40065	oilgas	776.50
 2013	OK	Kay	40071	oilgas	18956.50
 2013	OK	Kingfisher	40073	oilgas	23854.64
 2013	OK	Latimer	40077	oilgas	184029.55
+2013	OK	Latimer	40077	coal	343458.47
 2013	OK	Le Flore	40079	oilgas	238707.67
+2013	OK	Le Flore	40079	coal	644014.86
 2013	OK	Lincoln	40081	oilgas	1193.03
 2013	OK	Logan	40083	oilgas	77.18
 2013	OK	Major	40093	oilgas	696854.59
@@ -521,10 +540,9 @@ Year	State	County	FIPS	Resource	Revenue
 2013	OK	Roger Mills	40129	oilgas	4172599.73
 2013	OK	Sequoyah	40135	oilgas	7002.83
 2013	OK	Texas	40139	oilgas	78738.30
+2013	OK	Texas	40139	other	1.20
 2013	OK	Tillman	40141	oilgas	150600.00
 2013	OK	Wagoner	40145	oilgas	463.48
 2013	OK	Washita	40149	oilgas	39118.20
 2013	OK	Woods	40151	oilgas	1111499.65
 2013	OK	Woodward	40153	oilgas	182200.49
-2013	OK		40	coal	996293.33
-2013	OK		40	other	1.20

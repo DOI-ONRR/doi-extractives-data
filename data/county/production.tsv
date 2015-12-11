@@ -6936,3 +6936,455 @@ Year	State	County	FIPS	Commodity	Product	Volume
 2011	UT	Beaver County	49001		Geothermal - Electrical Generation, Thousands of Pounds	2554615747.28
 2010	UT	Beaver County	49001		Geothermal - Electrical Generation, Thousands of Pounds	2670508902.54
 2009	UT	Beaver County	49001		Geothermal - Electrical Generation, Thousands of Pounds	2827213957.69
+2005	CA	San Bernardino County	06071		Anhydrous Sodium Sulfate (ton)	W
+2005	CA	San Bernardino County	06071		Borax-Anhydrous (ton)	W
+2005	CA	San Bernardino County	06071		Borax-Decahydrate (ton)	W
+2005	CA	San Bernardino County	06071		Borax-Pentahydrate (ton)	W
+2005	CA	San Bernardino County	06071		Boric Acid (ton)	W
+2005	NM	Eddy County	35015		Brine Barrels (barrels)	W
+2005	NM	Lea County	35025		Brine Barrels (barrels)	W
+2005	AL	Bibb County	01007		Clay (tons)	W
+2005	UT	Piute County	49031		Clay (tons)	W
+2005	CO	Garfield County	08045		Coal (tons)	W
+2005	CO	La Plata County	08067		Coal (tons)	W
+2005	CO	Rio Blanco County	08103		Coal (tons)	W
+2005	CO	Routt County	08107		Coal (tons)	W
+2005	KY	Leslie County	21131		Coal (tons)	W
+2005	MT	Richland County	30083		Coal (tons)	W
+2005	MT	Rosebud County	30087		Coal (tons)	W
+2005	MT	Treasure County	30103		Coal (tons)	W
+2005	ND	McLean County	38055		Coal (tons)	W
+2005	ND	Oliver County	38065		Coal (tons)	W
+2005	NM	McKinley County	35031		Coal (tons)	W
+2005	NM	San Juan County	35045		Coal (tons)	W
+2005	UT	Sevier County	49041		Coal (tons)	W
+2005	WA	Lewis County	53041		Coal (tons)	W
+2005	WY	Lincoln County	56023		Coal (tons)	W
+2005	MO	Crawford County	29055		Copper Concentrate (tons)	W
+2005	MO	Dent County	29065		Copper Concentrate (tons)	W
+2005	MO	Washington County	29221		Copper Concentrate (tons)	W
+2005	ID	Clearwater County	16035		Gold (ounces)	W
+2005	VA	Giles County	51071		Limestone (tons)	W
+2005	UT	Tooele County	49045		Magnesium Chloride Brine (tons)	W
+2005	UT	Tooele County	49045		Manure Salts (tons)	W
+2005	FL	Manatee County	12081		Phosphate Raw Ore (tons)	W
+2005	NM	Eddy County	35015		Potash (tons)	W
+2005	UT	Tooele County	49045		Potash (tons)	W
+2005	AZ	Maricopa County	04013		Salt (tons)	W
+2005	CA	San Bernardino County	06071		Salt (tons)	W
+2005	NM	Eddy County	35015		Salt (tons)	W
+2005	UT	Tooele County	49045		Salt (tons)	W
+2005	CA	San Bernardino County	06071		Soda Ash (tons)	W
+2005	CA	San Bernardino County	06071		Sodium Bi-Carbonate (tons)	W
+2005	CO	Rio Blanco County	08103		Sodium Bi-Carbonate (tons)	W
+2005	WY	Sweetwater County	56037		Sodium Bi-Carbonate (tons)	W
+2005	WY	Sweetwater County	56037		Sodium Bisulfite (tons)	W
+2005	WY	Sweetwater County	56037		Sodium Decahydrate (tons)	W
+2005	WY	Sweetwater County	56037		Sodium Sesquicarbonate	W
+2005	WY	Sweetwater County	56037		Sulfide (tons)	W
+2005	WY	Sweetwater County	56037		Trona Ore (tons)	W
+2006	CA	San Bernardino County	06071		Anhydrous Sodium Sulfate (ton)	W
+2006	CA	San Bernardino County	06071		Borax-Decahydrate (ton)	W
+2006	CA	San Bernardino County	06071		Borax-Pentahydrate (ton)	W
+2006	CA	San Bernardino County	06071		Boric Acid (ton)	W
+2006	NM	Eddy County	35015		Brine Barrels (barrels)	W
+2006	AL	Bibb County	01007		Clay (tons)	W
+2006	UT	Piute County	49031		Clay (tons)	W
+2006	AL	Fayette County	01057		Coal (tons)	W
+2006	CO	La Plata County	08067		Coal (tons)	W
+2006	CO	Rio Blanco County	08103		Coal (tons)	W
+2006	CO	Routt County	08107		Coal (tons)	W
+2006	KY	Leslie County	21131		Coal (tons)	W
+2006	MT	Richland County	30083		Coal (tons)	W
+2006	MT	Rosebud County	30087		Coal (tons)	W
+2006	MT	Treasure County	30103		Coal (tons)	W
+2006	ND	Oliver County	38065		Coal (tons)	W
+2006	NM	McKinley County	35031		Coal (tons)	W
+2006	NM	San Juan County	35045		Coal (tons)	W
+2006	UT	Sevier County	49041		Coal (tons)	W
+2006	WY	Lincoln County	56023		Coal (tons)	W
+2006	MO	Dent County	29065		Copper Concentrate (tons)	W
+2006	ID	Clearwater County	16035		Gold (ounces)	W
+2006	MO	Shannon County	29203		Lead Concentrate (tons)	W
+2006	ND	Williams County	38105		Leonardite (tons)	W
+2006	VA	Giles County	51071		Limestone (tons)	W
+2006	UT	Tooele County	49045		Magnesium Chloride Brine (tons)	W
+2006	UT	Tooele County	49045		Manure Salts (tons)	W
+2006	UT	Tooele County	49045		Potash (tons)	W
+2006	AZ	Maricopa County	04013		Salt (tons)	W
+2006	CA	San Bernardino County	06071		Salt (tons)	W
+2006	NM	Eddy County	35015		Salt (tons)	W
+2006	UT	Tooele County	49045		Salt (tons)	W
+2006	WY	Lincoln County	56023		Salt (tons)	W
+2006	CA	San Bernardino County	06071		Soda Ash (tons)	W
+2006	CA	San Bernardino County	06071		Sodium Bi-Carbonate (tons)	W
+2006	CO	Rio Blanco County	08103		Sodium Bi-Carbonate (tons)	W
+2006	WY	Sweetwater County	56037		Sodium Bi-Carbonate (tons)	W
+2006	WY	Sweetwater County	56037		Sodium Bisulfite (tons)	W
+2006	WY	Sweetwater County	56037		Sodium Decahydrate (tons)	W
+2006	WY	Sweetwater County	56037		Sodium Sesquicarbonate	W
+2006	WY	Sweetwater County	56037		Sulfide (tons)	W
+2006	NM	Eddy County	35015		Sylvite-Raw Ore (tons)	W
+2006	WY	Sweetwater County	56037		Trona Ore (tons)	W
+2006	MO	Shannon County	29203		Zinc Concentrate (tons)	W
+2007	CA	San Bernardino County	06071		Anhydrous Sodium Sulfate (ton)	W
+2007	CA	San Bernardino County	06071		Borax-Decahydrate (ton)	W
+2007	CA	San Bernardino County	06071		Borax-Pentahydrate (ton)	W
+2007	CA	San Bernardino County	06071		Boric Acid (ton)	W
+2007	NM	Lea County	35025		Brine Barrels (barrels)	W
+2007	AL	Bibb County	01007		Clay (tons)	W
+2007	UT	Piute County	49031		Clay (tons)	W
+2007	AL	Fayette County	01057		Coal (tons)	W
+2007	AL	Jefferson County	01073		Coal (tons)	W
+2007	CO	Garfield County	08045		Coal (tons)	W
+2007	CO	La Plata County	08067		Coal (tons)	W
+2007	KY	Leslie County	21131		Coal (tons)	W
+2007	MT	Rosebud County	30087		Coal (tons)	W
+2007	MT	Treasure County	30103		Coal (tons)	W
+2007	ND	Oliver County	38065		Coal (tons)	W
+2007	NM	McKinley County	35031		Coal (tons)	W
+2007	NM	San Juan County	35045		Coal (tons)	W
+2007	UT	Sevier County	49041		Coal (tons)	W
+2007	WY	Carbon County	56007		Coal (tons)	W
+2007	WY	Lincoln County	56023		Coal (tons)	W
+2007	MO	Crawford County	29055		Copper Concentrate (tons)	W
+2007	MO	Shannon County	29203		Copper Concentrate (tons)	W
+2007	MO	Washington County	29221		Copper Concentrate (tons)	W
+2007	ID	Clearwater County	16035		Gold (ounces)	W
+2007	MO	Crawford County	29055		Lead Concentrate (tons)	W
+2007	MO	Shannon County	29203		Lead Concentrate (tons)	W
+2007	MO	Washington County	29221		Lead Concentrate (tons)	W
+2007	VA	Giles County	51071		Limestone (tons)	W
+2007	UT	Tooele County	49045		Magnesium Chloride Brine (tons)	W
+2007	UT	Tooele County	49045		Manure Salts (tons)	W
+2007	NM	Eddy County	35015		Potash (tons)	W
+2007	UT	Tooele County	49045		Potash (tons)	W
+2007	AZ	Maricopa County	04013		Salt (tons)	W
+2007	CA	San Bernardino County	06071		Salt (tons)	W
+2007	NM	Eddy County	35015		Salt (tons)	W
+2007	UT	Tooele County	49045		Salt (tons)	W
+2007	WY	Lincoln County	56023		Salt (tons)	W
+2007	CA	San Bernardino County	06071		Soda Ash (tons)	W
+2007	CA	San Bernardino County	06071		Sodium Bi-Carbonate (tons)	W
+2007	CO	Rio Blanco County	08103		Sodium Bi-Carbonate (tons)	W
+2007	WY	Sweetwater County	56037		Sodium Bi-Carbonate (tons)	W
+2007	WY	Sweetwater County	56037		Sodium Bisulfite (tons)	W
+2007	WY	Sweetwater County	56037		Sodium Sesquicarbonate	W
+2007	WY	Sweetwater County	56037		Sulfide (tons)	W
+2007	NM	Eddy County	35015		Sylvite-Raw Ore (tons)	W
+2007	WY	Sweetwater County	56037		Trona Ore (tons)	W
+2007	AR	Garland County	05051		Wavellite (tons)	W
+2007	AR	Montgomery County	05097		Wavellite (tons)	W
+2007	MO	Crawford County	29055		Zinc Concentrate (tons)	W
+2007	MO	Shannon County	29203		Zinc Concentrate (tons)	W
+2007	MO	Washington County	29221		Zinc Concentrate (tons)	W
+2008	CA	San Bernardino County	06071		Anhydrous Sodium Sulfate (ton)	W
+2008	CA	San Bernardino County	06071		Borax-Decahydrate (ton)	W
+2008	CA	San Bernardino County	06071		Borax-Pentahydrate (ton)	W
+2008	CA	San Bernardino County	06071		Boric Acid (ton)	W
+2008	NM	Lea County	35025		Brine Barrels (barrels)	W
+2008	UT	Piute County	49031		Clay (tons)	W
+2008	AL	Fayette County	01057		Coal (tons)	W
+2008	AL	Jefferson County	01073		Coal (tons)	W
+2008	CO	Garfield County	08045		Coal (tons)	W
+2008	CO	Routt County	08107		Coal (tons)	W
+2008	KY	Leslie County	21131		Coal (tons)	W
+2008	MT	Rosebud County	30087		Coal (tons)	W
+2008	MT	Treasure County	30103		Coal (tons)	W
+2008	ND	Mercer County	38057		Coal (tons)	W
+2008	NM	San Juan County	35045		Coal (tons)	W
+2008	UT	Sevier County	49041		Coal (tons)	W
+2008	WY	Carbon County	56007		Coal (tons)	W
+2008	WY	Lincoln County	56023		Coal (tons)	W
+2008	MO	Shannon County	29203		Copper Concentrate (tons)	W
+2008	ID	Clearwater County	16035		Gold (ounces)	W
+2008	MO	Shannon County	29203		Lead Concentrate (tons)	W
+2008	ND	Williams County	38105		Leonardite (tons)	W
+2008	VA	Giles County	51071		Limestone (tons)	W
+2008	UT	Tooele County	49045		Magnesium Chloride Brine (tons)	W
+2008	UT	Tooele County	49045		Manure Salts (tons)	W
+2008	NM	Eddy County	35015		Potash (tons)	W
+2008	UT	Tooele County	49045		Potash (tons)	W
+2008	AR	Montgomery County	05097		Quartz Crystal (tickets/pounds)	W
+2008	AZ	Maricopa County	04013		Salt (tons)	W
+2008	CA	San Bernardino County	06071		Salt (tons)	W
+2008	UT	Tooele County	49045		Salt (tons)	W
+2008	WY	Lincoln County	56023		Salt (tons)	W
+2008	CA	San Bernardino County	06071		Soda Ash (tons)	W
+2008	CA	San Bernardino County	06071		Sodium Bi-Carbonate (tons)	W
+2008	WY	Sweetwater County	56037		Sodium Bi-Carbonate (tons)	W
+2008	WY	Sweetwater County	56037		Sodium Bisulfite (tons)	W
+2008	WY	Sweetwater County	56037		Sodium Sesquicarbonate	W
+2008	WY	Sweetwater County	56037		Sulfide (tons)	W
+2008	NM	Eddy County	35015		Sylvite-Raw Ore (tons)	W
+2008	WY	Sweetwater County	56037		Trona Ore (tons)	W
+2008	AR	Garland County	05051		Wavellite (tons)	W
+2008	MO	Shannon County	29203		Zinc Concentrate (tons)	W
+2009	CA	San Bernardino County	06071		Anhydrous Sodium Sulfate (ton)	W
+2009	CA	San Bernardino County	06071		Borax-Decahydrate (ton)	W
+2009	CA	San Bernardino County	06071		Borax-Pentahydrate (ton)	W
+2009	CA	San Bernardino County	06071		Boric Acid (ton)	W
+2009	UT	Piute County	49031		Clay (tons)	W
+2009	AL	Fayette County	01057		Coal (tons)	W
+2009	AL	Jefferson County	01073		Coal (tons)	W
+2009	CO	Garfield County	08045		Coal (tons)	W
+2009	CO	La Plata County	08067		Coal (tons)	W
+2009	CO	Routt County	08107		Coal (tons)	W
+2009	KY	Leslie County	21131		Coal (tons)	W
+2009	MT	Rosebud County	30087		Coal (tons)	W
+2009	MT	Treasure County	30103		Coal (tons)	W
+2009	ND	Mercer County	38057		Coal (tons)	W
+2009	ND	Oliver County	38065		Coal (tons)	W
+2009	NM	San Juan County	35045		Coal (tons)	W
+2009	OH	Athens County	39009		Coal (tons)	W
+2009	OK	Latimer County	40077		Coal (tons)	W
+2009	UT	Sevier County	49041		Coal (tons)	W
+2009	WY	Carbon County	56007		Coal (tons)	W
+2009	WY	Lincoln County	56023		Coal (tons)	W
+2009	MO	Crawford County	29055		Copper Concentrate (tons)	W
+2009	MO	Shannon County	29203		Copper Concentrate (tons)	W
+2009	MO	Washington County	29221		Copper Concentrate (tons)	W
+2009	ID	Clearwater County	16035		Gold (ounces)	W
+2009	SC	Abbeville County	45001		Gold Ore (tons)	W
+2009	SC	Abbeville County	45001		Gold Placer	W
+2009	MO	Crawford County	29055		Lead Concentrate (tons)	W
+2009	MO	Shannon County	29203		Lead Concentrate (tons)	W
+2009	MO	Washington County	29221		Lead Concentrate (tons)	W
+2009	ND	Williams County	38105		Leonardite (tons)	W
+2009	VA	Giles County	51071		Limestone (tons)	W
+2009	UT	Tooele County	49045		Magnesium Chloride Brine (tons)	W
+2009	UT	Tooele County	49045		Manure Salts (tons)	W
+2009	NM	Eddy County	35015		Potash (tons)	W
+2009	UT	Tooele County	49045		Potash (tons)	W
+2009	AR	Montgomery County	05097		Quartz Crystal (tickets/pounds)	W
+2009	AZ	Maricopa County	04013		Salt (tons)	W
+2009	CA	San Bernardino County	06071		Salt (tons)	W
+2009	UT	Tooele County	49045		Salt (tons)	W
+2009	WY	Lincoln County	56023		Salt (tons)	W
+2009	CA	San Bernardino County	06071		Soda Ash (tons)	W
+2009	CA	San Bernardino County	06071		Sodium Bi-Carbonate (tons)	W
+2009	CO	Rio Blanco County	08103		Sodium Bi-Carbonate (tons)	W
+2009	WY	Sweetwater County	56037		Sodium Bi-Carbonate (tons)	W
+2009	WY	Sweetwater County	56037		Sodium Bisulfite (tons)	W
+2009	WY	Sweetwater County	56037		Sodium Sesquicarbonate	W
+2009	WY	Sweetwater County	56037		Sulfide (tons)	W
+2009	NM	Eddy County	35015		Sylvite-Raw Ore (tons)	W
+2009	MO	Crawford County	29055		Zinc Concentrate (tons)	W
+2009	MO	Shannon County	29203		Zinc Concentrate (tons)	W
+2009	MO	Washington County	29221		Zinc Concentrate (tons)	W
+2010	CA	San Bernardino County	06071		Anhydrous Sodium Sulfate (ton)	W
+2010	CA	San Bernardino County	06071		Borax-Decahydrate (ton)	W
+2010	CA	San Bernardino County	06071		Borax-Pentahydrate (ton)	W
+2010	CA	San Bernardino County	06071		Boric Acid (ton)	W
+2010	NM	Lea County	35025		Brine Barrels (barrels)	W
+2010	UT	Piute County	49031		Clay (tons)	W
+2010	AL	Fayette County	01057		Coal (tons)	W
+2010	AL	Jefferson County	01073		Coal (tons)	W
+2010	CO	Garfield County	08045		Coal (tons)	W
+2010	CO	La Plata County	08067		Coal (tons)	W
+2010	CO	Routt County	08107		Coal (tons)	W
+2010	KY	Leslie County	21131		Coal (tons)	W
+2010	MT	Rosebud County	30087		Coal (tons)	W
+2010	MT	Treasure County	30103		Coal (tons)	W
+2010	ND	Mercer County	38057		Coal (tons)	W
+2010	NM	San Juan County	35045		Coal (tons)	W
+2010	OK	Latimer County	40077		Coal (tons)	W
+2010	UT	Sevier County	49041		Coal (tons)	W
+2010	WY	Carbon County	56007		Coal (tons)	W
+2010	WY	Lincoln County	56023		Coal (tons)	W
+2010	MO	Shannon County	29203		Copper Concentrate (tons)	W
+2010	SC	Abbeville County	45001		Gold Placer	W
+2010	MO	Shannon County	29203		Lead Concentrate (tons)	W
+2010	ND	Williams County	38105		Leonardite (tons)	W
+2010	VA	Giles County	51071		Limestone (tons)	W
+2010	UT	Tooele County	49045		Magnesium Chloride Brine (tons)	W
+2010	UT	Tooele County	49045		Manure Salts (tons)	W
+2010	FL	Polk County	12105		Phosphate Raw Ore (tons)	W
+2010	NM	Eddy County	35015		Potash (tons)	W
+2010	UT	Tooele County	49045		Potash (tons)	W
+2010	AR	Montgomery County	05097		Quartz Crystal (tickets/pounds)	W
+2010	AZ	Maricopa County	04013		Salt (tons)	W
+2010	CA	San Bernardino County	06071		Salt (tons)	W
+2010	UT	Tooele County	49045		Salt (tons)	W
+2010	WY	Lincoln County	56023		Salt (tons)	W
+2010	CA	San Bernardino County	06071		Soda Ash (tons)	W
+2010	CA	San Bernardino County	06071		Sodium Bi-Carbonate (tons)	W
+2010	CO	Rio Blanco County	08103		Sodium Bi-Carbonate (tons)	W
+2010	WY	Sweetwater County	56037		Sodium Bisulfite (tons)	W
+2010	WY	Sweetwater County	56037		Sodium Sesquicarbonate	W
+2010	WY	Sweetwater County	56037		Sulfide (tons)	W
+2010	NM	Eddy County	35015		Sylvite-Raw Ore (tons)	W
+2010	WY	Sweetwater County	56037		Trona Ore (tons)	W
+2011	CA	San Bernardino County	06071		Anhydrous Sodium Sulfate (ton)	W
+2011	CA	San Bernardino County	06071		Borax-Anhydrous (ton)	W
+2011	CA	San Bernardino County	06071		Borax-Decahydrate (ton)	W
+2011	CA	San Bernardino County	06071		Borax-Pentahydrate (ton)	W
+2011	CA	San Bernardino County	06071		Boric Acid (ton)	W
+2011	UT	Piute County	49031		Clay (tons)	W
+2011	AL	Fayette County	01057		Coal (tons)	W
+2011	AL	Jefferson County	01073		Coal (tons)	W
+2011	CO	La Plata County	08067		Coal (tons)	W
+2011	CO	Routt County	08107		Coal (tons)	W
+2011	KY	Leslie County	21131		Coal (tons)	W
+2011	MT	Rosebud County	30087		Coal (tons)	W
+2011	MT	Treasure County	30103		Coal (tons)	W
+2011	NM	San Juan County	35045		Coal (tons)	W
+2011	OK	Latimer County	40077		Coal (tons)	W
+2011	UT	Sevier County	49041		Coal (tons)	W
+2011	WY	Lincoln County	56023		Coal (tons)	W
+2011	MO	Shannon County	29203		Copper Concentrate (tons)	W
+2011	UT	Uintah County	49047		Gilsonite (tons)	W
+2011	ID	Clearwater County	16035		Gold (ounces)	W
+2011	SC	Abbeville County	45001		Gold Ore (tons)	W
+2011	SC	Abbeville County	45001		Gold Placer	W
+2011	MO	Shannon County	29203		Lead Concentrate (tons)	W
+2011	ND	Williams County	38105		Leonardite (tons)	W
+2011	VA	Giles County	51071		Limestone (tons)	W
+2011	UT	Tooele County	49045		Magnesium Chloride Brine (tons)	W
+2011	UT	Tooele County	49045		Manure Salts (tons)	W
+2011	FL	Polk County	12105		Phosphate Raw Ore (tons)	W
+2011	NM	Eddy County	35015		Potash (tons)	W
+2011	UT	Tooele County	49045		Potash (tons)	W
+2011	AZ	Maricopa County	04013		Salt (tons)	W
+2011	CA	San Bernardino County	06071		Salt (tons)	W
+2011	UT	Tooele County	49045		Salt (tons)	W
+2011	WY	Lincoln County	56023		Salt (tons)	W
+2011	CA	San Bernardino County	06071		Soda Ash (tons)	W
+2011	CA	San Bernardino County	06071		Sodium Bi-Carbonate (tons)	W
+2011	CO	Rio Blanco County	08103		Sodium Bi-Carbonate (tons)	W
+2011	WY	Sweetwater County	56037		Sodium Bisulfite (tons)	W
+2011	WY	Sweetwater County	56037		Sodium Sesquicarbonate	W
+2011	WY	Sweetwater County	56037		Sulfide (tons)	W
+2011	NM	Eddy County	35015		Sylvite-Raw Ore (tons)	W
+2011	WY	Sweetwater County	56037		Trona Ore (tons)	W
+2011	MO	Shannon County	29203		Zinc Concentrate (tons)	W
+2012	CA	San Bernardino County	06071		Anhydrous Sodium Sulfate (ton)	W
+2012	CA	San Bernardino County	06071		Borax-Decahydrate (ton)	W
+2012	CA	San Bernardino County	06071		Borax-Pentahydrate (ton)	W
+2012	CA	San Bernardino County	06071		Boric Acid (ton)	W
+2012	UT	Piute County	49031		Clay (tons)	W
+2012	AL	Jefferson County	01073		Coal (tons)	W
+2012	CO	La Plata County	08067		Coal (tons)	W
+2012	CO	Routt County	08107		Coal (tons)	W
+2012	KY	Leslie County	21131		Coal (tons)	W
+2012	MT	Richland County	30083		Coal (tons)	W
+2012	MT	Rosebud County	30087		Coal (tons)	W
+2012	MT	Treasure County	30103		Coal (tons)	W
+2012	NM	San Juan County	35045		Coal (tons)	W
+2012	OK	Latimer County	40077		Coal (tons)	W
+2012	UT	Sevier County	49041		Coal (tons)	W
+2012	WY	Carbon County	56007		Coal (tons)	W
+2012	WY	Lincoln County	56023		Coal (tons)	W
+2012	MO	Dent County	29065		Copper Concentrate (tons)	W
+2012	MO	Shannon County	29203		Copper Concentrate (tons)	W
+2012	MO	Shannon County	29203		Lead Concentrate (tons)	W
+2012	ND	Williams County	38105		Leonardite (tons)	W
+2012	VA	Giles County	51071		Limestone (tons)	W
+2012	UT	Tooele County	49045		Magnesium Chloride Brine (tons)	W
+2012	UT	Tooele County	49045		Manure Salts (tons)	W
+2012	FL	Hardee County	12049		Phosphate Raw Ore (tons)	W
+2012	FL	Polk County	12105		Phosphate Raw Ore (tons)	W
+2012	NM	Eddy County	35015		Potash (tons)	W
+2012	UT	Tooele County	49045		Potash (tons)	W
+2012	AZ	Maricopa County	04013		Salt (tons)	W
+2012	CA	San Bernardino County	06071		Salt (tons)	W
+2012	UT	Tooele County	49045		Salt (tons)	W
+2012	WY	Lincoln County	56023		Salt (tons)	W
+2012	CA	San Bernardino County	06071		Soda Ash (tons)	W
+2012	CA	San Bernardino County	06071		Sodium Bi-Carbonate (tons)	W
+2012	CO	Rio Blanco County	08103		Sodium Bi-Carbonate (tons)	W
+2012	WY	Sweetwater County	56037		Sodium Bisulfite (tons)	W
+2012	WY	Sweetwater County	56037		Sodium Sesquicarbonate	W
+2012	WY	Sweetwater County	56037		Sulfide (tons)	W
+2012	NM	Eddy County	35015		Sylvite-Raw Ore (tons)	W
+2012	WY	Sweetwater County	56037		Trona Ore (tons)	W
+2013	CA	San Bernardino County	06071		Anhydrous Sodium Sulfate (ton)	W
+2013	CA	San Bernardino County	06071		Borax-Decahydrate (ton)	W
+2013	CA	San Bernardino County	06071		Borax-Pentahydrate (ton)	W
+2013	CA	San Bernardino County	06071		Boric Acid (ton)	W
+2013	UT	Piute County	49031		Clay (tons)	W
+2013	AL	Fayette County	01057		Coal (tons)	W
+2013	AL	Jefferson County	01073		Coal (tons)	W
+2013	CO	La Plata County	08067		Coal (tons)	W
+2013	CO	Routt County	08107		Coal (tons)	W
+2013	KY	Harlan County	21095		Coal (tons)	W
+2013	KY	Leslie County	21131		Coal (tons)	W
+2013	MT	Musselshell County	30065		Coal (tons)	W
+2013	MT	Rosebud County	30087		Coal (tons)	W
+2013	MT	Treasure County	30103		Coal (tons)	W
+2013	NM	San Juan County	35045		Coal (tons)	W
+2013	OK	Latimer County	40077		Coal (tons)	W
+2013	UT	Sevier County	49041		Coal (tons)	W
+2013	WY	Lincoln County	56023		Coal (tons)	W
+2013	MO	Shannon County	29203		Copper Concentrate (tons)	W
+2013	UT	Uintah County	49047		Gilsonite (tons)	W
+2013	MO	Crawford County	29055		Lead Concentrate (tons)	W
+2013	MO	Shannon County	29203		Lead Concentrate (tons)	W
+2013	MO	Washington County	29221		Lead Concentrate (tons)	W
+2013	ND	Williams County	38105		Leonardite (tons)	W
+2013	VA	Giles County	51071		Limestone (tons)	W
+2013	UT	Tooele County	49045		Magnesium Chloride Brine (tons)	W
+2013	FL	Hardee County	12049		Phosphate Raw Ore (tons)	W
+2013	NM	Eddy County	35015		Potash (tons)	W
+2013	NV	Esmeralda County	32009		Potash (tons)	W
+2013	UT	Tooele County	49045		Potash (tons)	W
+2013	AZ	Maricopa County	04013		Salt (tons)	W
+2013	CA	San Bernardino County	06071		Salt (tons)	W
+2013	UT	Tooele County	49045		Salt (tons)	W
+2013	WY	Lincoln County	56023		Salt (tons)	W
+2013	ID	Clearwater County	16035		Silver (ounces)	W
+2013	CA	San Bernardino County	06071		Soda Ash (tons)	W
+2013	CA	San Bernardino County	06071		Sodium Bi-Carbonate (tons)	W
+2013	CO	Rio Blanco County	08103		Sodium Bi-Carbonate (tons)	W
+2013	WY	Sweetwater County	56037		Sulfide (tons)	W
+2013	NM	Eddy County	35015		Sylvite-Raw Ore (tons)	W
+2013	WY	Sweetwater County	56037		Trona Ore (tons)	W
+2013	MO	Washington County	29221		Zinc Concentrate (tons)	W
+2014	CA	San Bernardino County	06071		Anhydrous Sodium Sulfate (ton)	W
+2014	CA	San Bernardino County	06071		Borax-Decahydrate (ton)	W
+2014	CA	San Bernardino County	06071		Borax-Pentahydrate (ton)	W
+2014	CA	San Bernardino County	06071		Boric Acid (ton)	W
+2014	AL	Jefferson County	01073		Coal (tons)	W
+2014	CO	Delta County	08029		Coal (tons)	W
+2014	CO	Gunnison County	08051		Coal (tons)	W
+2014	CO	La Plata County	08067		Coal (tons)	W
+2014	CO	Routt County	08107		Coal (tons)	W
+2014	KY	Harlan County	21095		Coal (tons)	W
+2014	KY	Leslie County	21131		Coal (tons)	W
+2014	MT	Musselshell County	30065		Coal (tons)	W
+2014	MT	Richland County	30083		Coal (tons)	W
+2014	MT	Rosebud County	30087		Coal (tons)	W
+2014	MT	Treasure County	30103		Coal (tons)	W
+2014	NM	McKinley County	35031		Coal (tons)	W
+2014	NM	San Juan County	35045		Coal (tons)	W
+2014	OK	Latimer County	40077		Coal (tons)	W
+2014	UT	Sevier County	49041		Coal (tons)	W
+2014	WY	Lincoln County	56023		Coal (tons)	W
+2014	UT	Carbon County	49007		Coal Waste (Sub-Econ) (tons)	W
+2014	MO	Crawford County	29055		Copper Concentrate (tons)	W
+2014	MO	Shannon County	29203		Copper Concentrate (tons)	W
+2014	MO	Washington County	29221		Copper Concentrate (tons)	W
+2014	UT	Uintah County	49047		Gilsonite (tons)	W
+2014	MO	Crawford County	29055		Lead Concentrate (tons)	W
+2014	MO	Shannon County	29203		Lead Concentrate (tons)	W
+2014	MO	Washington County	29221		Lead Concentrate (tons)	W
+2014	ND	Williams County	38105		Leonardite (tons)	W
+2014	VA	Giles County	51071		Limestone (tons)	W
+2014	UT	Tooele County	49045		Magnesium Chloride Brine (tons)	W
+2014	NM	Eddy County	35015		Potash (tons)	W
+2014	UT	Tooele County	49045		Potash (tons)	W
+2014	AR	Montgomery County	05097		Quartz Crystal (tickets/pounds)	W
+2014	AZ	Maricopa County	04013		Salt (tons)	W
+2014	CA	San Bernardino County	06071		Salt (tons)	W
+2014	UT	Tooele County	49045		Salt (tons)	W
+2014	WY	Lincoln County	56023		Salt (tons)	W
+2014	CA	San Bernardino County	06071		Soda Ash (tons)	W
+2014	CA	San Bernardino County	06071		Sodium Bi-Carbonate (tons)	W
+2014	CO	Rio Blanco County	08103		Sodium Bi-Carbonate (tons)	W
+2014	WY	Sweetwater County	56037		Sodium Sesquicarbonate	W
+2014	WY	Sweetwater County	56037		Sulfide (tons)	W
+2014	NM	Eddy County	35015		Sylvite-Raw Ore (tons)	W
+2014	WY	Sweetwater County	56037		Trona Ore (tons)	W
+2014	MO	Crawford County	29055		Zinc Concentrate (tons)	W
+2014	MO	Shannon County	29203		Zinc Concentrate (tons)	W
+2014	MO	Washington County	29221		Zinc Concentrate (tons)	W

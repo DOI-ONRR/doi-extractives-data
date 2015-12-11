@@ -29,9 +29,9 @@ permalink: /explore/federal-revenue-by-location/
       </a>
     </div>
   </div>
-  <section class="container-right-8">
-    <div class="filters-wrapper slab-foxtrot container">
-      <h1 data-toggler="filters" data-filter-description="" class="filter-description filter-description_closed">
+  <section class="container-right-8 filters-wrapper_outer">
+    <div data-absolute="true" data-offset-parent="true" class="sticky_nav sticky_nav-show_mobile filters-wrapper container" data-toggler="filters">
+        <h1 data-toggler="filters" data-filter-description="" class="filter-description filter-description_closed">
         Revenue from
         <a href="#commodity-group-selector" class="filter-part" data-key="commodity">all commodities</a>
         on federal lands and waters in
@@ -109,7 +109,7 @@ permalink: /explore/federal-revenue-by-location/
     </div>
   </div>
 
-  <div class="slab-alpha">
+  <div class="explore-exploration slab-alpha">
 
     <div class="regions container">
 
@@ -117,25 +117,25 @@ permalink: /explore/federal-revenue-by-location/
 
       <section id="US" class="region active">
         <div class="map-wrapper">
-          <svg is="eiti-map" id="US-map" class="region-map" simplify="1e-2"
-            preserveAspectRatio="xMidYMid meet"
-            projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/"
-            viewBox="20 55 945 535">
-            <g class="offshore areas" data-url="offshore-regions.json"
-              data-object="regions"
-              data-id="'US-' + id"
-              data-href="'#?region=' + id"
-              data-title="properties.name"
-              data-mesh="true">
-            </g>
-            <g class="onshore states" data-url="us-topology.json"
-              data-object="states"
-              data-id="'US-' + id"
-              data-href="'#?region=' + id"
-              data-title="properties.name"
-              data-mesh="true">
-            </g>
-          </svg>
+          <eiti-map id="US-map" class="region-map" simplify="1e-2"
+            projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/">
+            <svg class="region-map" viewBox="20 55 945 535">
+              <g class="offshore areas" data-url="offshore-regions.json"
+                data-object="regions"
+                data-id="'US-' + id"
+                data-href="'#?region=' + id"
+                data-title="properties.name"
+                data-mesh="true">
+              </g>
+              <g class="onshore states" data-url="us-topology.json"
+                data-object="states"
+                data-id="'US-' + id"
+                data-href="'#?region=' + id"
+                data-title="properties.name"
+                data-mesh="true">
+              </g>
+            </svg>
+          </eiti-map>
 
           <div class="map-legend"></div>
         </div>
@@ -151,21 +151,22 @@ permalink: /explore/federal-revenue-by-location/
       {% for region in site.data.states %}
       <section id="{{ region.id }}" class="region onshore">
         <div class="map-wrapper">
-          <svg is="eiti-map" id="{{ region.id }}-map" class="region-map" simplify="1e-2"
-            preserveAspectRatio="xMidYMid meet"
+          <eiti-map id="{{ region.id }}-map" class="region-map" simplify="1e-2"
             projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/" zoom-to="{{ region.id }}">
-            <g class="onshore states" data-url="us-topology.json"
-              data-object="states"
-              data-filter="id === '{{ region.id }}'"
-              bbox="true">
-            </g>
-            <g class="onshore counties" data-url="us-topology.json"
-              data-object="counties"
-              data-filter="properties.state === '{{ region.id }}'"
-              data-title="properties.name"
-              data-mesh="true">
-            </g>
-          </svg>
+            <svg class="region-map">
+              <g class="onshore states" data-url="us-topology.json"
+                data-object="states"
+                data-filter="id === '{{ region.id }}'"
+                bbox="true">
+              </g>
+              <g class="onshore counties" data-url="us-topology.json"
+                data-object="counties"
+                data-filter="properties.state === '{{ region.id }}'"
+                data-title="properties.name"
+                data-mesh="true">
+              </g>
+            </svg>
+          </eiti-map>
 
           <div class="map-legend"></div>
         </div>
@@ -183,19 +184,22 @@ permalink: /explore/federal-revenue-by-location/
       <section id="{{ region.id }}" class="region offshore">
 
         <div class="map-wrapper">
-          <svg is="eiti-map" id="{{ region.id }}-map" class="region-map" simplify="1e-2"
-            preserveAspectRatio="xMidYMid meet"
+          <eiti-map id="{{ region.id }}-map" class="region-map" simplify="1e-2"
             projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/"
-            {% if region.viewbox %}viewBox="{{ region.viewbox }}"{% endif %}>
-            <g class="onshore states reference" data-url="us-topology.json"
-              data-object="states" data-mesh="true">
-            </g>
-            <g class="offshore areas" data-url="offshore-regions.json"
-              data-object="{{ region.id }}"
-              data-title="properties.name"
-              data-mesh="true">
-            </g>
-          </svg>
+            zoom-to="{{ region.id }}">
+            <svg class="region-map">
+              <g class="onshore states reference" data-url="us-topology.json"
+                data-object="states" data-mesh="true">
+              </g>
+              <g class="offshore regions" data-url="offshore-regions.json"
+                data-mesh="true"></g>
+              <g class="offshore areas" data-url="offshore-regions.json"
+                data-object="{{ region.id }}"
+                data-title="properties.name"
+                data-mesh="true">
+              </g>
+            </svg>
+          </eiti-map>
 
           <div class="map-legend"></div>
         </div>
@@ -230,3 +234,4 @@ permalink: /explore/federal-revenue-by-location/
   };
 </script>
 <script src="{{ site.baseurl }}/js/pages/revenue.js"></script>
+<script src="{{ site.baseurl }}/js/components/sticky-nav.js"></script>

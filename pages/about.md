@@ -8,14 +8,15 @@ permalink: /about/
   <div class="container-outer landing-section_top">
 	  <div class="container-left-8 hero-left">
 			<h1>{{ page.title }}</h1>
-			<p class="hero-description">In 2011, the U.S. joined seven other countries to launch the <a href="http://www.opengovpartnership.org/">Open Government Partnership</a>, a global platform dedicated to making governments more open, accountable, and responsive to citizens. The U.S. committed to join the international <a href="https://eiti.org/">Extractive Industries Transparency Initiative</a> (EITI) as part of its Open Government Partnership <a href="https://www.whitehouse.gov/sites/default/files/us_national_action_plan_final_2.pdf">2011</a> and <a href="https://www.whitehouse.gov/sites/default/files/docs/us_national_action_plan_6p.pdf">2013</a> National Action Plans to ensure that taxpayers are receiving every dollar due for extraction of U.S. natural resources. </p>
+			<p class="hero-description">The <a href="https://eiti.org/">Extractive Industries Transparency Initiative</a> (EITI) is a global standard that promotes open and accountable management of natural resources.</p>
+      <p class="hero-description">The U.S. committed to join EITI as part of the <a href="https://www.whitehouse.gov/sites/default/files/us_national_action_plan_final_2.pdf">2011</a> and <a href="https://www.whitehouse.gov/sites/default/files/docs/us_national_action_plan_6p.pdf">2013</a> Open Government Partnership National Action Plans, with the goal of ensuring that taxpayers are receiving every dollar due for extraction of natural resources. The <a href="http://www.opengovpartnership.org/">Open Government Partnership</a> is an international effort dedicated to making governments more open, accountable, and responsive to citizens. It launched in 2011.</p>
 		</div>
 		<div class="container-right-4 hero-right">
       <div class="hero-right_square about_intro-callout">
-        <h2 class="about_intro-header">The 2015 USEITI Report is now available, and includes:</h2>
+        <h2 class="about_intro-header">The 2015 USEITI report is now available, and includes:</h2>
         <ul class="list-bullet about_intro-list">
           <li>Never-before-released federal production data</li>
-          <li>New narratives explaining how the whole system of leasing federal land works in the U.S.</li>
+          <li>Narratives explaining how the system of leasing federal land works in the U.S.</li>
         </ul>
         <a href="{{ site.baseurl }}/about/whats-new/" class="carousel-button button-primary">See what's new</a>
       </div>
@@ -37,7 +38,7 @@ permalink: /about/
 
 		<h2 id="initiative" class="h3">The initiative</h2>
 
-		<p><a href="https://eiti.org/">EITI</a> is a global standard that promotes open and accountable management of natural resources.</p>
+		<p></p>
 
 		<p>The EITI International Board and implementing member countries believe that a nation’s natural resource wealth belongs to its citizens. Through increased transparency and accountability, the EITI can increase public trust and dialogue, improve governance, attract investment, and manage and enhance growth so that citizens receive financial and societal benefits from a country’s natural resources.</p>
 
@@ -166,7 +167,7 @@ permalink: /about/
 
       <article class="bureau">
         <div class="bureau-left">
-          <img class="bureau-image" src="{{ site.baseurl }}/img/logos/DOI-mark.png" alt="U.S. Department of the Interior March 3, 1849 Seal">
+          <img class="bureau-image" src="{{ site.baseurl }}/img/logos/ONRR-mark.svg" alt="Office of Natural Resources Revenue">
         </div>
         <div class="bureau-right">
           <h4>Office of Natural Resources Revenue (ONRR)</h4>

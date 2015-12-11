@@ -30,11 +30,11 @@ permalink: /about/report/
 
     <h2>USEITI 2015 Executive Summary</h2>
 
-    <a href="{{site.baseurl}}/downloads/USEITI_executive-summary_2015-12-02.pdf" class="button-tertiary">
+    <a href="{{site.baseurl}}/downloads/USEITI_executive-summary_2015-12-10.pdf" class="button-tertiary">
       <icon class="icon-cloud icon-padded"></icon>Download Executive Summary (pdf, 4 MB)
     </a>
 
-    <a href="{{site.baseurl}}/downloads/USEITI_extractive-revenue-appendix_2015-12-02.pdf" class="button-tertiary">
+    <a href="{{site.baseurl}}/downloads/USEITI_extractive-revenue-appendix_2015-12-10.pdf" class="button-tertiary">
       <icon class="icon-cloud icon-padded"></icon>Download Appendix (pdf, 1.6 MB)
     </a>
 

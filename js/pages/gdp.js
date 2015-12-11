@@ -233,7 +233,7 @@
         })
         .call(updateRegionRow, true);
 
-      var map = selection.select('[is="eiti-map"]');
+      var map = selection.select('eiti-map');
       onMapLoaded(map, function() {
         var subregions = map.selectAll('path.feature');
 

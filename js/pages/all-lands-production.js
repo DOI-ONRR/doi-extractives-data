@@ -193,8 +193,6 @@
     var product = state.get('product');
     var fields = getFields(regionId);
 
-    // console.log('loading', regionId);
-    // console.time('load');
     model.load(state, function(error, data) {
       // console.timeEnd('load');
 
@@ -202,8 +200,6 @@
         console.warn('error:', error.status, error.statusText);
         data = [];
       }
-
-      // console.time('render regions');
 
       var header = selection.select('.region-header');
       if (header.select('*').empty()) {
@@ -224,7 +220,7 @@
         })
         .call(updateRegionRow);
 
-      var map = selection.select('[is="eiti-map"]');
+      var map = selection.select('eiti-map');
       onMapLoaded(map, function() {
         var subregions = map.selectAll('path.feature');
 
@@ -242,18 +238,20 @@
           : function(d) {
               return unique(d, 'Product').length;
             };
+
         var dataByFeatureId = d3.nest()
           .key(getter(fields.region))
           .rollup(rollup)
           .map(data);
 
-        // console.log('data by feature id:', dataByFeatureId);
-
+        // de/bugger
         var featureId = getter(fields.featureId);
         features.forEach(function(f) {
           var id = featureId(f);
+
           f.value = dataByFeatureId[id];
         });
+
 
         var value = getter('value');
         var values = features.map(value);
@@ -261,7 +259,9 @@
         var scale = createScale(values);
 
         subregions.style('fill', function(d) {
+
           var v = value(d);
+          // console.log('---region value---', v)
           return v === undefined
             ? NULL_FILL
             : scale(v);
@@ -358,6 +358,7 @@
     var bar = selection.select('eiti-bar');
     bar.style('display', state.get('product') ? null : 'none');
     bar.attr('max', max);
+
     bar.attr('value', getter('value'));
 
     selection.select('.value')
@@ -425,7 +426,7 @@
       });
     } else {
       data = [
-        {color: NULL_FILL, value: 'no production'},
+        {color: NULL_FILL, value: 'no production on federal land'},
         {color: colorscheme[3][2], value: '1 or more products'},
       ];
     }
@@ -471,17 +472,34 @@
     switch (regionId.length) {
       case 2:
         if (regionId !== 'US') {
-          fields.region = 'FIPS';
-          fields.featureId = function(f) {
-            return f.properties.FIPS;
-          };
+          if (state.get('product') === 'Coal (short tons)'){
+            // for coal county data
+            if (regionId !== 'US') {
+              fields.region = 'County';
+              fields.featureId = function(f) {
+                return f.properties.name;
+              };
+            }
+          } else {
+            fields.region = 'Region';
+            fields.featureId = function(f) {
+              return f.properties.abbr;
+            };
+          }
         }
         break;
-      case 3:
-        fields.region = 'Area';
-        fields.featureId = function(f) {
-          return f.properties.name;
-        };
+
+      // offshore
+      default:
+        if (regionId.length > 3){
+          fields.region = 'Region';
+        } else {
+          fields.subregion = 'Area';
+          fields.featureId = function(f) {
+            return f.properties.name;
+          };
+        }
+
         break;
     }
     return fields;
@@ -489,8 +507,8 @@
 
   function updateTimeline(selection, data, state) {
     var fields = getFields(state.get('region'));
-
     var value = getter(fields.value);
+
     var dataByYearPolarity = d3.nest()
       .key(function(d) {
         return value(d) < 0 ? 'negative' : 'positive';
@@ -706,7 +724,6 @@
         req.abort();
       }
       var url = getDataURL(state);
-      // console.log('model.load():', url);
       req = eiti.load(url, function(error, data) {
         if (error) {
           data = [];
@@ -716,15 +733,27 @@
       return req;
     };
 
+    function isCountyLevelCoal(state) {
+      var region = state.get('region'),
+        product = state.get('product');
+      return region && product === 'Coal (short tons)' && region !== 'US' && region.length === 2;
+    }
+
     function getDataURL(state) {
+
       var region = state.get('region');
+      var product = state.get('product');
       var path = eiti.data.path;
-      path += 'production/all-production.tsv';
-      return path;
+
+      path += (!region || region === 'US')
+        ? 'production/'
+        : isCountyLevelCoal(state)
+          ? 'county/by-state/' + region + '/'
+          : 'production/';
+      return path + 'all-production.tsv';
     }
 
     function applyFilters(data, state, done) {
-      // console.log('applying filters:', state.toJS());
 
       // XXX fix Commodity values
       if (data.length && !data[0].Commodity) {
@@ -749,11 +778,12 @@
       dispatch.products(products);
 
       var region = state.get('region');
-      if (region && region.length === 3) {
+
+      // always filter data unless it is at county level
+      if (region && !isCountyLevelCoal(state)) {
         var fields = getFields(region);
-        var regionName = REGION_ID_NAME[region];
         data = data.filter(function(d) {
-          return d[fields.region] === regionName;
+          return d[fields.region] === region;
         });
       }
 
@@ -806,6 +836,21 @@
       .text(function() {
         return data[this.getAttribute('data-key')];
       });
+
+    var coalElements = document.querySelectorAll('[data-coal]');
+
+    function hideCoalElements(status) {
+      Array.prototype.forEach.call(coalElements, function(el){
+        el.style.display = status ? 'none' : 'block';
+      });
+    }
+
+    if (state.get('product') === 'Coal (short tons)'){
+      hideCoalElements(false);
+    } else {
+      hideCoalElements(true);
+    }
+
   }
 
   function eventMutator(destProp, sourceKey) {

@@ -12,8 +12,6 @@ permalink: /explore/all-lands-production/
       </div>
       <h1>All Lands Production</h1>
 
-      <!-- <p>In 2013, the U.S. ranked as one of the ten top global producers of gas, oil, coal, and renewable energy.</p> -->
-
       <p>Explore production of natural gas, crude oil, coal, and renewable energy on all lands from 2004 to 2013.</p>
 
       <p>At first, this map shows which states have production data for at least one product. Select a product in the filters to show production amounts in their respective units.</p>
@@ -25,8 +23,8 @@ permalink: /explore/all-lands-production/
 
     </div>
   </div>
-  <section class="container-right-8">
-    <div class="filters-wrapper slab-foxtrot">
+  <section class="container-right-8 filters-wrapper_outer">
+    <div data-absolute="true" data-offset-parent="true" class="sticky_nav sticky_nav-show_mobile filters-wrapper container" data-toggler="filters">
       <h1 data-toggler="filters" data-filter-description="" class="filter-description filter-description_closed">
         <a href="#commodity-group-selector" class="filter-part" data-key="commodity">All</a>
         production on all lands in
@@ -40,7 +38,8 @@ permalink: /explore/all-lands-production/
       <form id="filters" aria-hidden="true" class="filters container-outer">
 
         <div class="filters-heading">
-          <h3>Filter federal production</h3>
+          <h3>Filter all lands production</h3>
+
           <p>Select a product to see production levels in the appropriate unit of measure.</p>
         </div>
 
@@ -60,6 +59,11 @@ permalink: /explore/all-lands-production/
               <optgroup label="States">
                 {% for state in site.data.states %}
                 <option value="{{ state.id }}">{{ state.name }}</option>
+                {% endfor %}
+              </optgroup>
+              <optgroup label="Offshore Areas">
+                {% for area in site.data.offshore_regions %}
+                <option value="{{ area.id }}">{{ area.name }}</option>
                 {% endfor %}
               </optgroup>
             </select>
@@ -91,7 +95,7 @@ permalink: /explore/all-lands-production/
 
     </div>
 
-    <div class="slab-alpha">
+    <div class="explore-exploration slab-alpha">
 
       <div class="regions container">
 
@@ -99,22 +103,30 @@ permalink: /explore/all-lands-production/
 
         <section id="US" class="region active">
           <div class="map-wrapper">
-            <svg is="eiti-map" id="US-map" class="region-map" simplify="1e-2"
-              preserveAspectRatio="xMidYMid meet"
+            <eiti-map id="US-map" class="region-map" simplify="1e-2"
               projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/">
-              <g class="onshore states" data-url="us-topology.json"
-                data-object="states"
-                data-id="'US-' + id"
-                data-href="'#?region=' + id"
-                data-title="properties.name"
-                data-mesh="true">
-              </g>
-            </svg>
+              <svg class="region-map" viewBox="20 55 945 535">
+                <g class="offshore areas" data-url="offshore-regions.json"
+                  data-object="regions"
+                  data-id="'US-' + id"
+                  data-href="'#?region=' + id"
+                  data-title="properties.name"
+                  data-mesh="true">
+                </g>
+                <g class="onshore states" data-url="us-topology.json"
+                  data-object="states"
+                  data-id="'US-' + id"
+                  data-href="'#?region=' + id"
+                  data-title="properties.name"
+                  data-mesh="true">
+                </g>
+              </svg>
+            </eiti-map>
 
             <div class="map-legend"></div>
           </div>
 
-          <h3 class="region-header-category">Production by state <span class="units"></span></h3>
+          <h3 class="region-header-category">Production by state or offshore area <span class="units"></span></h3>
           <table class="subregions">
             <thead class="region-header"></thead>
             <tbody></tbody>
@@ -125,19 +137,56 @@ permalink: /explore/all-lands-production/
         {% for region in site.data.states %}
         <section id="{{ region.id }}" class="region onshore">
           <div class="map-wrapper">
-            <svg is="eiti-map" id="{{ region.id }}-map" class="region-map" simplify="1e-2"
-              preserveAspectRatio="xMidYMid meet"
+            <eiti-map id="{{ region.id }}-map" class="region-map" simplify="1e-2"
               projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/" zoom-to="{{ region.id }}">
-              <g class="onshore states" data-url="us-topology.json"
-                data-object="states"
-                data-filter="id === '{{ region.id }}'">
-              </g>
-            </svg>
+              <svg class="region-map">
+                <g class="onshore states" data-url="us-topology.json"
+                  data-object="states"
+                  data-filter="id === '{{ region.id }}'">
+                </g>
+                <g data-coal class="onshore counties" data-url="us-topology.json"
+                  data-object="counties"
+                  data-filter="properties.state === '{{ region.id }}'"
+                  data-title="properties.name"
+                  data-mesh="true">
+                </g>
+              </svg>
+            </eiti-map>
 
             <div class="map-legend"></div>
           </div>
 
           <h3 class="region-header-category">Production in {{ region.name }}<span class="units"></span></h3>
+          <table class="subregions">
+            <thead class="region-header"></thead>
+            <tbody></tbody>
+          </table>
+
+        </section>
+        {% endfor %}
+
+        {% for region in site.data.offshore_regions %}
+        <section id="{{ region.id }}" class="region offshore">
+          <div class="map-wrapper">
+            <eiti-map id="{{ region.id }}-map" class="region-map" simplify="1e-2"
+              projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/">
+              <svg class="region-map"
+                {% if region.viewbox %}viewBox="{{ region.viewbox }}"{% endif %}>
+                <g class="onshore states reference" data-url="us-topology.json"
+                  data-object="states" data-mesh="true">
+                </g>
+                <g class="offshore areas" data-url="offshore-regions.json"
+                  data-object="regions"
+                  data-title="properties.id"
+                  data-mesh="true">
+                </g>
+              </svg>
+            </eiti-map>
+
+            <div class="map-legend"></div>
+          </div>
+
+          <h3 class="region-header-category">Production by offshore area <span class="units"></span></h3>
           <table class="subregions">
             <thead class="region-header"></thead>
             <tbody></tbody>
@@ -157,7 +206,11 @@ permalink: /explore/all-lands-production/
     {% for state in site.data.states %}
     '{{ state.id }}': '{{ state.name }}',
     {% endfor %}
+    {% for area in site.data.offshore_regions %}
+    '{{ area.id }}': '{{ area.name }}',
+    {% endfor %}
     'US': 'the entire U.S.'
   };
 </script>
 <script src="{{ site.baseurl }}/js/pages/all-lands-production.js"></script>
+<script src="{{ site.baseurl }}/js/components/sticky-nav.js"></script>

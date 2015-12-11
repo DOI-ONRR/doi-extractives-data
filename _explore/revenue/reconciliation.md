@@ -20,7 +20,7 @@ permalink: /explore/reconciliation/
 
     <p>When the independent administrator compared company payments to government revenue, 17 discrepancies exceeded the margin of variance. The independent administrator worked with the companies and government entities to investigate these discrepancies, and was able to find explanations for all of them. Explanations included differences in when payments were recorded and how they were classified.</p>
 
-    <p>Of the 45 companies that were asked to participate, 31 reported DOI revenue and 11 reported federal corporate income taxes.</p>
+    <p>Of the 45 companies that were asked to participate, 31 reported DOI revenue and 12 reported federal corporate income taxes.<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup></p>
 
     <img src="reporting p. 8" />
 
@@ -29,6 +29,12 @@ permalink: /explore/reconciliation/
     <p>Five companies also allowed for corporate income tax reconciliation: BP America; Cimarex Energy Co.; Could Peak Energy Resources, LLC; Shell E&P Company; and W&T Offshore, Inc.</p>
 
     <p>After the independent administrator compared and reconciled the government revenue streams with company payments, 17 material variances remained, all of which were explained through the reconciliation process, leaving zero unexplained variances.</p>
+
+    <div class="footnotes">
+      <ol>
+        <li id="fn:1"><p>Out of the 45 companies invited to participate, a maximum of 41 are C-corporations. Only C-corporations are eligible to report taxes. <a href="#fnref:1" class="reversefootnote">↩</a></p></li>
+      </ol>
+    </div>
 
   </div>
 

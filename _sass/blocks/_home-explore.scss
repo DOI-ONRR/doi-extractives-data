@@ -1,0 +1,84 @@
+// Explore data callout on homepage
+//
+// Styleguide blocks.explore-home
+
+.explore_home-heading {
+  margin-bottom: 0;
+}
+
+.explore_home-subhead {
+  @include heading(para-md);
+  font-weight: $weight-bold;
+  margin-bottom: 0;
+}
+
+.explore_home-tabs {
+  @include heading(para-sm);
+  margin-bottom: 3px;
+  text-align: right;
+
+  a {
+    border: 1px solid $white;
+    border-bottom: 1px solid $neutral-gray;
+    color: $black;
+    margin-right: $base-padding-lite;
+    padding: $base-padding-lite $base-padding;
+
+    &[aria-selected="true"] {
+      background-color: $white;
+      border: 1px solid $neutral-gray;
+      border-bottom: 1px solid $white;
+      font-weight: $weight-bold;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $mid-gray;
+    }
+  }
+
+  li {
+    display: inline-block;
+  }
+}
+
+.explore_home-main {
+  border-top: 1px solid $neutral-gray;
+  padding-top: $base-padding-large;
+}
+
+.explore_home-button {
+  margin-top: $base-padding-lite;
+  padding: ($base-padding * 0.7) $base-padding;
+}
+
+.explore_home-fact {
+  @include heading(para-md);
+  line-height: 1.6;
+}
+
+.explore_home-img {
+  h4 {
+    @include heading(para-lg);
+    color: $blue;
+    font-weight: $weight-bold;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.explore_home-links {
+  a {
+    @include heading(para-sm);
+    color: $blue;
+    font-weight: $weight-bold;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+}

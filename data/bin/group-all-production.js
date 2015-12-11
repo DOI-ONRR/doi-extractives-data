@@ -5,6 +5,7 @@ var yargs = require('yargs')
   .describe('naturalgas2', 'The path of the second dataset for naturalgas')
   .describe('oil', 'The path of the dataset for oil')
   .describe('coal', 'The path of the dataset for coal')
+  .describe('countycoal', 'The path of the dataset for coal to be broken down by county')
   .describe('if', 'input format')
   .default('if', 'tsv')
   .describe('of', 'output format')
@@ -70,7 +71,7 @@ var stateKey = {
   'Pennsylvania (Bituminous)': 'PA',
   'Pennsylvania (Anthracite)': 'PA',
   'Pennsylvania': 'PA',
-  'Rhode Island': 'RD',
+  'Rhode Island': 'RI',
   'South Carolina': 'SC',
   'South Dakota': 'SD',
   'Tennessee': 'TN',
@@ -116,6 +117,13 @@ async.parallel({
       done
     );
   },
+  countycoal: function readCountyCoal(done) {
+    return read(
+      options.countycoal,
+      tito.createReadStream(options['if']),
+      done
+    );
+  },
   renewables: function readRenewables(done) {
     return read(
       options.renewables,
@@ -152,13 +160,138 @@ async.parallel({
     '2013'
   ];
 
+  // toggle to parse data for county coal
+  var shouldParseCountyCoal = false;
+
+
   Object.keys(data).forEach(function(commodity) {
+
+    var parseCountyCoal = function(commodity, data, years) {
+      var commodity = 'countycoal';
+
+      var getStates = function(data, commodity, column) {
+
+        var allColumn = _.map(data[commodity], function(data) {
+          return data[column]
+        })
+        return _.unique(allColumn);
+      }
+
+      // Abbreviate States
+      data[commodity] = _.forEach(data[commodity], function(d){
+        d['Mine State'] = stateKey[d['Mine State']];
+      });
+
+      var states = getStates(data, commodity, 'Mine State');
+
+      // Reject states that non-complient statest
+      states = _.filter(states, function(n){
+        return n;
+      });
+
+      _.forEach(states, function(state) {
+        years.forEach(function(year){
+
+          // Get Production Numbers (only have data for 2013)
+          var getMatches = function(product) {
+            var volumes = _.pluck(_.where(data[commodity], {'Year': year, 'Mine State': state}), product);
+            volumes = _.map(volumes, trimCommas);
+
+            // volumes = _.reduce(volumes, function(total, n) {
+            //   return total + n;
+            // });
+
+            var matches = {
+              'county': _.pluck(_.where(data[commodity], {'Year': year, 'Mine State': state}), 'Mine County'),
+              'volume': volumes
+            }
+
+
+
+            var zippedObj = _.zip(matches.county, matches.volume);
+
+            zippedObj = _.reduce(zippedObj, function(total, n, i) {
+              var total = total || {};
+              if (typeof(total[n[0]]) === undefined || typeof(total[n[0]]) === 'undefined') {
+                  total[n[0]] = n[1];
+              } else {
+                total[n[0]] += n[1];
+              }
+              return total;
+            }, {});
+
+            return zippedObj;
+          }
+
+
+          // terrible hack because of inconsistencies in the data
+          var productionByState = (year == '2012')
+            ? getMatches('Coal Supply Region')
+            : getMatches('Production (short tons)');
+
+
+
+          // console.warn(state, '->',productionByState, year)
+          var countyKey = {
+            'LA': 'Parish',
+            'AK': {
+              'Yukon-Koyukuk': 'Census Area',
+              'Fairbanks North Star': 'Borough'
+            }
+          }
+
+          function formatCounty(county) {
+            return (county === 'Mclean')
+              ? 'McLean'
+              : county;
+          }
+          // console.warn(state, year, '==>', productionByState)
+          // this conditional might need to be revisited
+          if (productionByState){
+            Object.keys(productionByState).forEach(function(county) {
+
+              var volume = productionByState[county];
+              // console.warn(state, year, '==>', county, volume)
+              if (volume) {
+                var newResults = {};
+                newResults.State = state;
+                newResults.County = formatCounty(county);
+                // console.warn(state)
+                newResults.County += !countyKey[state]
+                  ? ' County'
+                  : countyKey[state][county]
+                    ? ' ' + countyKey[state][county]
+                    : ' ' + countyKey[state]
+                // console.warn(newResults.County)
+                newResults.Year = year;
+                newResults.Volume = volume;
+                newResults.Commodity = '';
+                newResults.Product = 'Coal (short tons)';
+                // console.warn(newResults)
+                results.push(newResults)
+              }
+            });
+          }
+        });
+      });
+    };
 
     var parseRenewables = function(commodity, data, years){
 
       var renewablesTotals = [];
 
       _.forEach(data[commodity], function(d) {
+
+        var productKey = {
+          'Conventional Hydroelectric': 'Conventional Hydroelectric',
+          'All Other Renewables': 'Other Renewables',
+          'Wind': 'Wind',
+          'Other biomass': 'Other Biomass',
+          'Biomass (total)': 'Total Biomass',
+          'Wood and wood-derived fuels': 'Wood and wood-derived fuels',
+          'Solar': 'Solar',
+          'Geothermal': 'Geothermal'
+        }
 
         if (stateKey[d.State]){
           years.forEach(function(year){
@@ -167,10 +300,14 @@ async.parallel({
             var newResults = {};
             newResults.Region = stateKey[d.State];
             newResults.Year = year;
-            newResults.Volume = volume;
+            newResults.Volume = volume * 1000;
             newResults.Commodity = '';
-            newResults.Product = d.Source + ' (Kwh)';
-            // console.warn(newResults, '=======')
+            newResults.Product = productKey[d.Source]
+            newResults.Product += ' (Mwh)';
+            if (shouldParseCountyCoal) {
+              newResults.County = '';
+              newResults.State = stateKey[d.State];
+            }
             renewablesTotals.push(newResults);
             results.push(newResults);
           });
@@ -197,7 +334,11 @@ async.parallel({
           newResults.Year = year;
           newResults.Volume = volume;
           newResults.Commodity = '';
-          newResults.Product = 'All Renewables (Kwh)';
+          newResults.Product = 'All Renewables (Mwh)';
+          if (shouldParseCountyCoal) {
+            newResults.County = '';
+            newResults.State = region;
+          }
 
           results.push(newResults);
 
@@ -238,6 +379,8 @@ async.parallel({
         d['Mine State'] = stateKey[d['Mine State']];
       });
 
+      // console.warn(data[commodity])
+
       var states = getStates(data, commodity, 'Mine State');
 
       // Reject states that non-complient statest
@@ -268,13 +411,18 @@ async.parallel({
           if (productionByState){
 
             var newResults = {};
-            newResults.Region = state;
+            if (shouldParseCountyCoal) {
+              newResults.County = '';
+              newResults.State = state;
+            } else {
+              newResults.Region = state;
+            }
             newResults.Year = year;
             newResults.Volume = productionByState;
             newResults.Commodity = '';
             newResults.Product = 'Coal (short tons)';
 
-            results.push(newResults)
+            results.push(newResults);
           }
         });
       });
@@ -297,11 +445,22 @@ async.parallel({
 
           var newResults = {};
 
-          if (val == 'Year' || !val || i === 0 || !inYearRange){ return; }
+          var invalidRow = (val === 'Year'),
+            emptyRow = !val,
+            firstRow = (i === 0),
+            regionIsUS = (val === 'US');
+
+          if (invalidRow || emptyRow || firstRow || !inYearRange || regionIsUS){ return; }
           newResults.Year = d['Year'];
-          newResults.Region = val;
           newResults.Commodity = commodity;
           newResults.Volume = d[val] ? d[val] : 0;
+          if (shouldParseCountyCoal) {
+            newResults.County = '';
+            newResults.State = val;
+          } else {
+            newResults.Region = val;
+          }
+
 
           switch(commodity) {
             case 'naturalgas':
@@ -324,10 +483,18 @@ async.parallel({
         });
       });
     }
+
     switch(commodity) {
       case 'coal':
         // console.warn(commodity, '--> done!')
-        parseCoal(commodity, data, years);
+        if (!shouldParseCountyCoal) {
+          parseCoal(commodity, data, years);
+        }
+        break;
+      case 'countycoal':
+        if (shouldParseCountyCoal) {
+          parseCountyCoal(commodity, data, years);
+        }
         break;
       case 'renewables':
         // console.warn(commodity, '--> done!')
@@ -339,6 +506,7 @@ async.parallel({
         break;
     }
   });
+
 
   streamify(results)
     .pipe(tito.createWriteStream(options['of']))

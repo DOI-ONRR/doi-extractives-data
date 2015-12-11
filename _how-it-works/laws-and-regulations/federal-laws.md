@@ -24,6 +24,10 @@ nav_items:
 
 <p class="case_studies_intro-para">The legislative branch of the federal government has passed many laws that govern natural resource extraction on federal lands.</p>
 
+<nav class="hash_selector">
+  {% include hash_selector.html %}
+</nav>
+
 <h2 class="h3" id="fiscal-regime" data-nav-header="fiscal-regime">Fiscal regime</h2>
 
 <p>The following table lists the laws that provide the backbone of the fiscal regime for the extractive industries, as well as the relevant lands and natural resources to which they apply.</p>

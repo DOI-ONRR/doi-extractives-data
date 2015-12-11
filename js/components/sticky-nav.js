@@ -60,23 +60,27 @@
       if (this.diffTop >= 0){
         this.elems.sticky.style.position = 'fixed';
         this.elems.sticky.style.top = 0;
-        this.elems.sticky.style.background = 'rgba(198,233,255, 0.85)';
+        this.elems.sticky.classList.remove('transparent');
+        this.elems.sticky.classList.add('color');
         if (this.diffBottom >= 0){
           this.elems.sticky.style.position = 'absolute';
           this.elems.sticky.style.top = this.mainHeight - this.height - 50 + 'px';
-          this.elems.sticky.style.background = 'rgba(198,233,255, 0.85)';
+          this.elems.sticky.classList.remove('transparent');
+          this.elems.sticky.classList.add('color');
         } else {
           this.elems.sticky.style.position = 'fixed';
           this.elems.sticky.style.top = 0;
-          this.elems.sticky.style.background = 'rgba(198,233,255, 0.85)';
+          this.elems.sticky.classList.remove('transparent');
+          this.elems.sticky.classList.add('color');
         }
       } else {
+        this.elems.sticky.classList.remove('color');
+        this.elems.sticky.classList.add('transparent');
+
         if (this.absolute) {
           this.elems.sticky.style.position = 'absolute';
-          this.elems.sticky.style.background = 'transparent';
         } else {
           this.elems.sticky.style.position = 'static';
-          this.elems.sticky.style.background = 'transparent';
         }
 
       }

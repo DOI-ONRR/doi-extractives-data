@@ -67,7 +67,34 @@
   display: none;
 }
 
+// Crazy checkbox magic
+// http://cssdeck.com/labs/css-checkbox-styles
+// for guide on firefox compatibility
+
+.unit-filter {
+  position: relative;
+
+  input {
+    visibility: hidden;
+  }
+}
+
 .unit-selector {
+  position: absolute;
+
+  &:first-of-type {
+    top: 0;
+    left: 0;
+  }
+
+   &:last-of-type {
+    top: 0;
+    right: 0;
+  }
+}
+
+.unit-selector,
+.unit-selector-label {
   @include appearance(none);
   background: $white;
   background-color: $white;
@@ -96,7 +123,7 @@
       content: '$';
     }
 
-    &[checked='true'] {
+    &[checked='true'] + label {
       background: $blue;
       color: $white;
     }
@@ -111,7 +138,7 @@
       content: '%';
     }
 
-    &[checked='true'] {
+    &[checked='true'] + label {
       background: $blue;
       color: $white;
     }

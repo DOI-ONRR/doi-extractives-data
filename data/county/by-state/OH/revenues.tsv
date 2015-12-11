@@ -9,8 +9,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2004	OH	Hocking	39073	Gas	Unprocessed (Wet) Gas	Royalties	4255.29
 2004	OH	Hocking	39073	Oil	Oil	Royalties	40187.15
 2004	OH	Lawrence	39087	Oil & Gas		Bonus	3116
-2004	OH	Lawrence	39087	Oil & Gas		Other Revenues	121.34
-2004	OH	Lawrence	39087	Oil & Gas		Other Royalties	800
+2004	OH	Lawrence	39087	Oil & Gas		Other Revenues	921.34
 2004	OH	Lawrence	39087	Oil & Gas		Rents	4674
 2004	OH	Lawrence	39087	Gas	Processed (Residue) Gas	Royalties	11657.03
 2004	OH	Lawrence	39087	Gas	Unprocessed (Wet) Gas	Royalties	8785.71
@@ -68,8 +67,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2005	OH	Trumbull	39155	Oil	Oil	Royalties	4483.97
 2005	OH	Tuscarawas	39157	Oil & Gas		Rents	2
 2005	OH	Vinton	39163	Oil & Gas		Rents	1680
-2005	OH	Washington	39167	Oil & Gas		Other Revenues	4.03
-2005	OH	Washington	39167	Oil & Gas		Other Royalties	775
+2005	OH	Washington	39167	Oil & Gas		Other Revenues	779.03
 2005	OH	Washington	39167	Oil & Gas		Rents	1491
 2005	OH	Washington	39167	Gas	Unprocessed (Wet) Gas	Royalties	61297.45
 2005	OH	Washington	39167	Oil	Oil	Royalties	34656.24
@@ -82,7 +80,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2006	OH	Lawrence	39087	Oil & Gas		Rents	2337
 2006	OH	Lawrence	39087	Gas	Processed (Residue) Gas	Royalties	6177.74
 2006	OH	Lawrence	39087	Gas	Unprocessed (Wet) Gas	Royalties	10653.94
-2006	OH	Mahoning	39099	Oil & Gas		Other Royalties	4082.49
+2006	OH	Mahoning	39099	Oil & Gas		Other Revenues	4082.49
 2006	OH	Mahoning	39099	Gas	Unprocessed (Wet) Gas	Royalties	79412.05
 2006	OH	Mahoning	39099	Oil	Oil	Royalties	28596.31
 2006	OH	Monroe	39111	Oil & Gas		Rents	805.59
@@ -92,11 +90,11 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2006	OH	Muskingum	39119	Oil	Oil	Royalties	277.56
 2006	OH	Perry	39127	Gas	Unprocessed (Wet) Gas	Royalties	4233.47
 2006	OH	Perry	39127	Oil	Oil	Royalties	20247.86
-2006	OH	Portage	39133	Oil & Gas		Other Royalties	16244.42
+2006	OH	Portage	39133	Oil & Gas		Other Revenues	16244.42
 2006	OH	Portage	39133	Gas	Unprocessed (Wet) Gas	Royalties	208691.15
 2006	OH	Portage	39133	Oil	Oil	Royalties	57115.44
 2006	OH	Ross	39141	Oil & Gas		Rents	-2148.72
-2006	OH	Stark	39151	Oil & Gas		Other Royalties	2673.09
+2006	OH	Stark	39151	Oil & Gas		Other Revenues	2673.09
 2006	OH	Stark	39151	Gas	Unprocessed (Wet) Gas	Royalties	29373.17
 2006	OH	Stark	39151	Oil	Oil	Royalties	2306.98
 2006	OH	Trumbull	39155	Oil & Gas		Rents	900
@@ -104,8 +102,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2006	OH	Trumbull	39155	Oil	Oil	Royalties	2921.1
 2006	OH	Tuscarawas	39157	Oil & Gas		Rents	2
 2006	OH	Vinton	39163	Oil & Gas		Rents	-445.28
-2006	OH	Washington	39167	Oil & Gas		Other Revenues	50.62
-2006	OH	Washington	39167	Oil & Gas		Other Royalties	1750
+2006	OH	Washington	39167	Oil & Gas		Other Revenues	1800.62
 2006	OH	Washington	39167	Oil & Gas		Rents	1237.5
 2006	OH	Washington	39167	Gas	Unprocessed (Wet) Gas	Royalties	75468.39
 2006	OH	Washington	39167	Oil	Oil	Royalties	26792.23
@@ -135,8 +132,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2007	OH	Trumbull	39155	Gas	Unprocessed (Wet) Gas	Royalties	183081.19
 2007	OH	Trumbull	39155	Oil	Oil	Royalties	5163.62
 2007	OH	Tuscarawas	39157	Oil & Gas		Rents	2
-2007	OH	Washington	39167	Oil & Gas		Other Revenues	648.03
-2007	OH	Washington	39167	Oil & Gas		Other Royalties	-420
+2007	OH	Washington	39167	Oil & Gas		Other Revenues	228.03
 2007	OH	Washington	39167	Oil & Gas		Rents	1237.5
 2007	OH	Washington	39167	Gas	Unprocessed (Wet) Gas	Royalties	55999.5
 2007	OH	Washington	39167	Oil	Oil	Royalties	34051.97
@@ -146,7 +142,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2008	OH	Hocking	39073	Oil & Gas		Rents	434
 2008	OH	Hocking	39073	Gas	Unprocessed (Wet) Gas	Royalties	4204.36
 2008	OH	Hocking	39073	Oil	Oil	Royalties	60717.65
-2008	OH	Lawrence	39087	Oil & Gas		Other Royalties	-1350
+2008	OH	Lawrence	39087	Oil & Gas		Other Revenues	-1350
 2008	OH	Lawrence	39087	Oil & Gas		Rents	3116
 2008	OH	Lawrence	39087	Gas	Processed (Residue) Gas	Royalties	1121.87
 2008	OH	Lawrence	39087	Gas	Unprocessed (Wet) Gas	Royalties	4155.52
@@ -166,8 +162,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2008	OH	Trumbull	39155	Oil & Gas		Rents	900
 2008	OH	Trumbull	39155	Gas	Unprocessed (Wet) Gas	Royalties	185281.78
 2008	OH	Trumbull	39155	Oil	Oil	Royalties	6250.88
-2008	OH	Washington	39167	Oil & Gas		Other Revenues	436.15
-2008	OH	Washington	39167	Oil & Gas		Other Royalties	2490
+2008	OH	Washington	39167	Oil & Gas		Other Revenues	2926.15
 2008	OH	Washington	39167	Oil & Gas		Rents	1650
 2008	OH	Washington	39167	Gas	Unprocessed (Wet) Gas	Royalties	72204.53
 2008	OH	Washington	39167	Oil	Oil	Royalties	53518.29
@@ -186,7 +181,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2009	OH	Monroe	39111	Oil	Oil	Royalties	17515.34
 2009	OH	Muskingum	39119	Gas	Unprocessed (Wet) Gas	Royalties	3129.61
 2009	OH	Muskingum	39119	Oil	Oil	Royalties	1780.1
-2009	OH	Perry	39127	Oil & Gas		Other Royalties	-295
+2009	OH	Perry	39127	Oil & Gas		Other Revenues	-295
 2009	OH	Perry	39127	Gas	Unprocessed (Wet) Gas	Royalties	1780.13
 2009	OH	Perry	39127	Oil	Oil	Royalties	16504.07
 2009	OH	Portage	39133	Gas	Unprocessed (Wet) Gas	Royalties	131153.14
@@ -196,11 +191,11 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2009	OH	Trumbull	39155	Oil & Gas		Rents	900
 2009	OH	Trumbull	39155	Gas	Unprocessed (Wet) Gas	Royalties	101014.68
 2009	OH	Trumbull	39155	Oil	Oil	Royalties	2742.5
-2009	OH	Washington	39167	Oil & Gas		Other Revenues	293.79
-2009	OH	Washington	39167	Oil & Gas		Other Royalties	-325
+2009	OH	Washington	39167	Oil & Gas		Other Revenues	-31.21
 2009	OH	Washington	39167	Oil & Gas		Rents	1650
 2009	OH	Washington	39167	Gas	Unprocessed (Wet) Gas	Royalties	30540.99
 2009	OH	Washington	39167	Oil	Oil	Royalties	23593.91
+2010	OH	Athens	39009	Coal	Coal	Royalties	3372.86
 2010	OH	Athens	39009	Gas	Unprocessed (Wet) Gas	Royalties	6248.06
 2010	OH	Athens	39009	Oil	Oil	Royalties	4694.41
 2010	OH	Gallia	39053	Oil & Gas		Bonus	6442.5
@@ -211,7 +206,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2010	OH	Lawrence	39087	Oil & Gas		Bonus	10883
 2010	OH	Lawrence	39087	Oil & Gas		Rents	11249
 2010	OH	Lawrence	39087	Gas	Unprocessed (Wet) Gas	Royalties	1408.47
-2010	OH	Mahoning	39099	Oil & Gas		Other Royalties	-0.32
+2010	OH	Mahoning	39099	Oil & Gas		Other Revenues	-0.32
 2010	OH	Mahoning	39099	Gas	Unprocessed (Wet) Gas	Royalties	49541.95
 2010	OH	Mahoning	39099	Oil	Oil	Royalties	28845.16
 2010	OH	Monroe	39111	Oil & Gas		Bonus	92194.56
@@ -223,7 +218,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2010	OH	Muskingum	39119	Oil	Oil	Royalties	2872.63
 2010	OH	Perry	39127	Gas	Unprocessed (Wet) Gas	Royalties	1558.97
 2010	OH	Perry	39127	Oil	Oil	Royalties	16912.05
-2010	OH	Portage	39133	Oil & Gas		Other Royalties	-382.41
+2010	OH	Portage	39133	Oil & Gas		Other Revenues	-382.41
 2010	OH	Portage	39133	Gas	Unprocessed (Wet) Gas	Royalties	128286.15
 2010	OH	Portage	39133	Oil	Oil	Royalties	74280.42
 2010	OH	Stark	39151	Gas	Unprocessed (Wet) Gas	Royalties	17341.67
@@ -231,12 +226,10 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2010	OH	Trumbull	39155	Gas	Unprocessed (Wet) Gas	Royalties	80516.2
 2010	OH	Trumbull	39155	Oil	Oil	Royalties	5597.78
 2010	OH	Washington	39167	Oil & Gas		Bonus	53245.44
-2010	OH	Washington	39167	Oil & Gas		Other Revenues	1550
-2010	OH	Washington	39167	Oil & Gas		Other Royalties	-10
+2010	OH	Washington	39167	Oil & Gas		Other Revenues	1540
 2010	OH	Washington	39167	Oil & Gas		Rents	1886.41
 2010	OH	Washington	39167	Gas	Unprocessed (Wet) Gas	Royalties	35094.3
 2010	OH	Washington	39167	Oil	Oil	Royalties	32806.35
-2010	OH		39	Coal	Coal	Royalties	3372.86
 2011	OH	Athens	39009	Gas	Unprocessed (Wet) Gas	Royalties	6117.46
 2011	OH	Athens	39009	Oil	Oil	Royalties	2597.35
 2011	OH	Gallia	39053	Oil & Gas		Rents	5072.5
@@ -307,15 +300,14 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2013	OH	Hocking	39073	Oil & Gas		Rents	985
 2013	OH	Hocking	39073	Gas	Unprocessed (Wet) Gas	Royalties	323.12
 2013	OH	Hocking	39073	Oil	Oil	Royalties	40559.28
-2013	OH	Lawrence	39087	Oil & Gas		Other Royalties	115
+2013	OH	Lawrence	39087	Oil & Gas		Other Revenues	115
 2013	OH	Lawrence	39087	Oil & Gas		Rents	8181.75
 2013	OH	Lawrence	39087	Gas	Unprocessed (Wet) Gas	Royalties	366.27
 2013	OH	Lawrence	39087	Oil	Oil	Royalties	513.81
 2013	OH	Licking	39089	Oil	Oil	Royalties	26135.4
 2013	OH	Mahoning	39099	Gas	Unprocessed (Wet) Gas	Royalties	33983.69
 2013	OH	Mahoning	39099	Oil	Oil	Royalties	33053.35
-2013	OH	Monroe	39111	Oil & Gas		Other Revenues	3277.33
-2013	OH	Monroe	39111	Oil & Gas		Other Royalties	3397.28
+2013	OH	Monroe	39111	Oil & Gas		Other Revenues	6674.61
 2013	OH	Monroe	39111	Oil & Gas		Rents	562.5
 2013	OH	Monroe	39111	Gas	Processed (Residue) Gas	Royalties	401.95
 2013	OH	Monroe	39111	Gas	Unprocessed (Wet) Gas	Royalties	8751.61
@@ -332,8 +324,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2013	OH	Trumbull	39155	Gas	Unprocessed (Wet) Gas	Royalties	44255.91
 2013	OH	Trumbull	39155	Oil	Oil	Royalties	2384.83
 2013	OH	Vinton	39163	Oil & Gas		Rents	1680
-2013	OH	Washington	39167	Oil & Gas		Other Revenues	10853.34
-2013	OH	Washington	39167	Oil & Gas		Other Royalties	1163.72
+2013	OH	Washington	39167	Oil & Gas		Other Revenues	12017.06
 2013	OH	Washington	39167	Oil & Gas		Rents	882.02
 2013	OH	Washington	39167	Gas	Unprocessed (Wet) Gas	Royalties	14319.28
 2013	OH	Washington	39167	Oil	Oil	Royalties	24398.49

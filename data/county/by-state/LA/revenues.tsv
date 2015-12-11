@@ -4,13 +4,13 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2004	LA	Beauregard	22011	NGL	Gas Plant Products	Royalties	123.32
 2004	LA	Beauregard	22011	Oil	Oil	Royalties	518.76
 2004	LA	Bienville	22013	Oil & Gas		Bonus	12784.23
-2004	LA	Bienville	22013	Oil & Gas		Other Royalties	2165.97
+2004	LA	Bienville	22013	Oil & Gas		Other Revenues	2165.97
 2004	LA	Bienville	22013	Oil & Gas		Rents	428.66
 2004	LA	Bienville	22013	Gas	Processed (Residue) Gas	Royalties	5755.5
 2004	LA	Bienville	22013	Gas	Unprocessed (Wet) Gas	Royalties	18753.76
 2004	LA	Bienville	22013	Oil	Condensate	Royalties	92.44
 2004	LA	Bossier	22015	Oil & Gas		Bonus	4870.77
-2004	LA	Bossier	22015	Oil & Gas		Other Royalties	23583.18
+2004	LA	Bossier	22015	Oil & Gas		Other Revenues	23583.18
 2004	LA	Bossier	22015	Oil & Gas		Rents	2704.84
 2004	LA	Bossier	22015	Gas	Fuel Gas	Royalties	-1564.19
 2004	LA	Bossier	22015	Gas	Processed (Residue) Gas	Royalties	-1549883.18
@@ -18,21 +18,20 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2004	LA	Bossier	22015	NGL	Gas Plant Products	Royalties	224149.2
 2004	LA	Bossier	22015	Oil	Condensate	Royalties	127562.27
 2004	LA	Bossier	22015	Oil	Oil	Royalties	150777.52
-2004	LA	Caddo	22017	Oil & Gas		Other Revenues	13.27
-2004	LA	Caddo	22017	Oil & Gas		Other Royalties	170
+2004	LA	Caddo	22017	Oil & Gas		Other Revenues	183.27
 2004	LA	Caddo	22017	Oil & Gas		Rents	286.76
 2004	LA	Caddo	22017	Gas	Processed (Residue) Gas	Royalties	230.69
 2004	LA	Caddo	22017	Gas	Unprocessed (Wet) Gas	Royalties	34190.83
 2004	LA	Caddo	22017	NGL	Gas Plant Products	Royalties	90.95
 2004	LA	Caddo	22017	Oil	Condensate	Royalties	942.3
 2004	LA	Caddo	22017	Oil	Oil	Royalties	30031.05
-2004	LA	Calcasieu	22019	Oil & Gas		Other Royalties	-6200
+2004	LA	Calcasieu	22019	Oil & Gas		Other Revenues	-6200
 2004	LA	Calcasieu	22019	Oil & Gas		Rents	164
 2004	LA	Calcasieu	22019	Gas	Unprocessed (Wet) Gas	Royalties	15361.91
 2004	LA	Calcasieu	22019	Oil	Condensate	Royalties	661.96
 2004	LA	Caldwell	22021	Oil & Gas		Rents	1383
 2004	LA	Claiborne	22027	Oil & Gas		Bonus	82.57
-2004	LA	Claiborne	22027	Oil & Gas		Other Royalties	-3400
+2004	LA	Claiborne	22027	Oil & Gas		Other Revenues	-3400
 2004	LA	Claiborne	22027	Oil & Gas		Rents	123.85
 2004	LA	Claiborne	22027	Gas	Processed (Residue) Gas	Royalties	106958.87
 2004	LA	Claiborne	22027	Gas	Unprocessed (Wet) Gas	Royalties	19022.82
@@ -42,7 +41,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2004	LA	Claiborne	22027	Oil	Oil	Royalties	57085.5
 2004	LA	De Soto	22031	Oil & Gas		Rents	307.24
 2004	LA	De Soto	22031	Gas	Unprocessed (Wet) Gas	Royalties	20122.97
-2004	LA	E Btn Rouge	22033	Oil & Gas		Other Royalties	1693.55
+2004	LA	E Btn Rouge	22033	Oil & Gas		Other Revenues	1693.55
 2004	LA	E Btn Rouge	22033	Gas	Processed (Residue) Gas	Royalties	68951.81
 2004	LA	E Btn Rouge	22033	Gas	Unprocessed (Wet) Gas	Royalties	8467.45
 2004	LA	E Btn Rouge	22033	Oil	Condensate	Royalties	45825.31
@@ -52,7 +51,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2004	LA	Jefferson	22051	Gas	Unprocessed (Wet) Gas	Royalties	105.49
 2004	LA	Jefferson	22051	Oil	Oil	Royalties	38414.28
 2004	LA	La Salle	22059	Oil	Oil	Royalties	8442.05
-2004	LA	Lafourche	22057	Oil & Gas		Other Royalties	100
+2004	LA	Lafourche	22057	Oil & Gas		Other Revenues	100
 2004	LA	Lafourche	22057	Oil & Gas		Rents	302
 2004	LA	Lafourche	22057	Gas	Unprocessed (Wet) Gas	Royalties	259.78
 2004	LA	Lafourche	22057	Oil	Condensate	Royalties	1082.45
@@ -69,8 +68,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2004	LA	Natchitoches	22069	NGL	Gas Plant Products	Royalties	2037.54
 2004	LA	Natchitoches	22069	Oil	Condensate	Royalties	2218.09
 2004	LA	Ouachita	22073	Gas	Unprocessed (Wet) Gas	Royalties	472.62
-2004	LA	Plaquemines	22075	Oil & Gas		Other Revenues	2779.32
-2004	LA	Plaquemines	22075	Oil & Gas		Other Royalties	-163700
+2004	LA	Plaquemines	22075	Oil & Gas		Other Revenues	-160920.68
 2004	LA	Plaquemines	22075	Oil & Gas		Rents	871.33
 2004	LA	Plaquemines	22075	Gas	Flash Gas	Royalties	-28188.28
 2004	LA	Plaquemines	22075	Gas	Fuel Gas	Royalties	0.01
@@ -111,8 +109,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2004	LA	Vernon	22115	NGL	Gas Plant Products	Royalties	10644.02
 2004	LA	Vernon	22115	Oil	Oil	Royalties	116717.22
 2004	LA	Webster	22119	Oil & Gas		Bonus	2545.43
-2004	LA	Webster	22119	Oil & Gas		Other Revenues	121.5
-2004	LA	Webster	22119	Oil & Gas		Other Royalties	665
+2004	LA	Webster	22119	Oil & Gas		Other Revenues	786.5
 2004	LA	Webster	22119	Oil & Gas		Rents	16655.65
 2004	LA	Webster	22119	Gas	Processed (Residue) Gas	Royalties	28800.78
 2004	LA	Webster	22119	Gas	Unprocessed (Wet) Gas	Royalties	31904.98
@@ -126,17 +123,17 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2004	LA	Winn	22127	Oil & Gas		Rents	27075
 2004	LA	Winn	22127	Gas	Processed (Residue) Gas	Royalties	81544.69
 2004	LA	Winn	22127	Oil	Condensate	Royalties	15771.77
-2005	LA	Beauregard	22011	Oil & Gas		Other Royalties	30
+2005	LA	Beauregard	22011	Oil & Gas		Other Revenues	30
 2005	LA	Beauregard	22011	Oil & Gas		Rents	60
 2005	LA	Beauregard	22011	Gas	Processed (Residue) Gas	Royalties	36.62
 2005	LA	Beauregard	22011	NGL	Gas Plant Products	Royalties	14.41
 2005	LA	Beauregard	22011	Oil	Oil	Royalties	708.96
-2005	LA	Bienville	22013	Oil & Gas		Other Royalties	100
+2005	LA	Bienville	22013	Oil & Gas		Other Revenues	100
 2005	LA	Bienville	22013	Oil & Gas		Rents	348.66
 2005	LA	Bienville	22013	Gas	Processed (Residue) Gas	Royalties	8188.27
 2005	LA	Bienville	22013	Gas	Unprocessed (Wet) Gas	Royalties	22492.94
 2005	LA	Bienville	22013	Oil	Condensate	Royalties	229.63
-2005	LA	Bossier	22015	Oil & Gas		Other Royalties	1777413.95
+2005	LA	Bossier	22015	Oil & Gas		Other Revenues	1777413.95
 2005	LA	Bossier	22015	Oil & Gas		Rents	2624.84
 2005	LA	Bossier	22015	Gas	Processed (Residue) Gas	Royalties	3691526.74
 2005	LA	Bossier	22015	Gas	Unprocessed (Wet) Gas	Royalties	32640073.58
@@ -149,18 +146,18 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2005	LA	Caddo	22017	Gas	Unprocessed (Wet) Gas	Royalties	60036.75
 2005	LA	Caddo	22017	Oil	Condensate	Royalties	328.86
 2005	LA	Caddo	22017	Oil	Oil	Royalties	45432.59
-2005	LA	Calcasieu	22019	Oil & Gas		Other Royalties	-100
+2005	LA	Calcasieu	22019	Oil & Gas		Other Revenues	-100
 2005	LA	Calcasieu	22019	Oil & Gas		Rents	84
 2005	LA	Calcasieu	22019	Gas	Unprocessed (Wet) Gas	Royalties	3724.83
 2005	LA	Calcasieu	22019	Oil	Condensate	Royalties	103.31
 2005	LA	Caldwell	22021	Oil & Gas		Bonus	50330
 2005	LA	Caldwell	22021	Oil & Gas		Rents	2235
-2005	LA	Cameron	22023	Oil & Gas		Other Royalties	800
+2005	LA	Cameron	22023	Oil & Gas		Other Revenues	800
 2005	LA	Cameron	22023	Gas	Processed (Residue) Gas	Royalties	8751.19
 2005	LA	Cameron	22023	Gas	Unprocessed (Wet) Gas	Royalties	424.91
 2005	LA	Cameron	22023	NGL	Gas Plant Products	Royalties	1066.07
 2005	LA	Cameron	22023	Oil	Oil	Royalties	1704.33
-2005	LA	Claiborne	22027	Oil & Gas		Other Royalties	8000
+2005	LA	Claiborne	22027	Oil & Gas		Other Revenues	8000
 2005	LA	Claiborne	22027	Oil & Gas		Rents	28
 2005	LA	Claiborne	22027	Gas	Processed (Residue) Gas	Royalties	106246.99
 2005	LA	Claiborne	22027	Gas	Unprocessed (Wet) Gas	Royalties	34775.11
@@ -170,10 +167,10 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2005	LA	Claiborne	22027	Oil	Oil	Royalties	76283.73
 2005	LA	Concordia	22029	Oil & Gas		Bonus	3045
 2005	LA	Concordia	22029	Oil & Gas		Rents	381
-2005	LA	De Soto	22031	Oil & Gas		Other Royalties	1300
+2005	LA	De Soto	22031	Oil & Gas		Other Revenues	1300
 2005	LA	De Soto	22031	Oil & Gas		Rents	305.74
 2005	LA	De Soto	22031	Gas	Unprocessed (Wet) Gas	Royalties	17726.65
-2005	LA	E Btn Rouge	22033	Oil & Gas		Other Royalties	14483.42
+2005	LA	E Btn Rouge	22033	Oil & Gas		Other Revenues	14483.42
 2005	LA	E Btn Rouge	22033	Gas	Processed (Residue) Gas	Royalties	123790.78
 2005	LA	E Btn Rouge	22033	Gas	Unprocessed (Wet) Gas	Royalties	0.01
 2005	LA	E Btn Rouge	22033	Oil	Condensate	Royalties	86200.49
@@ -196,8 +193,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2005	LA	Natchitoches	22069	Oil & Gas		Bonus	2897.01
 2005	LA	Natchitoches	22069	Oil & Gas		Rents	6599.76
 2005	LA	Ouachita	22073	Gas	Unprocessed (Wet) Gas	Royalties	636.86
-2005	LA	Plaquemines	22075	Oil & Gas		Other Revenues	3235.86
-2005	LA	Plaquemines	22075	Oil & Gas		Other Royalties	-3934
+2005	LA	Plaquemines	22075	Oil & Gas		Other Revenues	-698.14
 2005	LA	Plaquemines	22075	Oil & Gas		Rents	744.83
 2005	LA	Plaquemines	22075	Gas	Processed (Residue) Gas	Royalties	80261.41
 2005	LA	Plaquemines	22075	Gas	Unprocessed (Wet) Gas	Royalties	588051.3
@@ -205,8 +201,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2005	LA	Plaquemines	22075	Oil	Condensate	Royalties	396849.09
 2005	LA	Plaquemines	22075	Oil	Drip or Scrubber Condensate	Royalties	13094.48
 2005	LA	Plaquemines	22075	Oil	Oil	Royalties	753042.6
-2005	LA	Rapides	22079	Oil & Gas		Other Revenues	486
-2005	LA	Rapides	22079	Oil & Gas		Other Royalties	-87249.6
+2005	LA	Rapides	22079	Oil & Gas		Other Revenues	-86763.6
 2005	LA	Rapides	22079	Oil & Gas		Rents	6497
 2005	LA	Rapides	22079	Gas	Processed (Residue) Gas	Royalties	9516.53
 2005	LA	Rapides	22079	Gas	Unprocessed (Wet) Gas	Royalties	47577.41
@@ -219,7 +214,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2005	LA	South Pass	22721	Oil	Condensate	Royalties	978.87
 2005	LA	South Pass	22721	Oil	Drip or Scrubber Condensate	Royalties	56.96
 2005	LA	St Bernard	22087	Oil & Gas		Rents	160
-2005	LA	St Martin	22099	Oil & Gas		Other Royalties	700
+2005	LA	St Martin	22099	Oil & Gas		Other Revenues	700
 2005	LA	St Martin	22099	Oil & Gas		Rents	82.5
 2005	LA	St Martin	22099	Gas	Unprocessed (Wet) Gas	Royalties	40158.46
 2005	LA	St Martin	22099	Oil	Condensate	Royalties	142.5
@@ -231,8 +226,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2005	LA	Vermilion	22113	Gas	Unprocessed (Wet) Gas	Royalties	368.59
 2005	LA	Vermilion	22113	Oil	Condensate	Royalties	14.48
 2005	LA	Vermilion	22113	Oil	Oil	Royalties	29911.75
-2005	LA	Vernon	22115	Oil & Gas		Other Revenues	612
-2005	LA	Vernon	22115	Oil & Gas		Other Royalties	17851.74
+2005	LA	Vernon	22115	Oil & Gas		Other Revenues	18463.74
 2005	LA	Vernon	22115	Oil & Gas		Rents	-47703
 2005	LA	Vernon	22115	Gas	Processed (Residue) Gas	Royalties	34511.08
 2005	LA	Vernon	22115	Gas	Unprocessed (Wet) Gas	Royalties	18236.72
@@ -240,7 +234,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2005	LA	Vernon	22115	Oil	Condensate	Royalties	75.71
 2005	LA	Vernon	22115	Oil	Oil	Royalties	146322.27
 2005	LA	Webster	22119	Oil & Gas		Bonus	12525
-2005	LA	Webster	22119	Oil & Gas		Other Royalties	500
+2005	LA	Webster	22119	Oil & Gas		Other Revenues	500
 2005	LA	Webster	22119	Oil & Gas		Rents	13098.5
 2005	LA	Webster	22119	Gas	Processed (Residue) Gas	Royalties	28805.63
 2005	LA	Webster	22119	Gas	Unprocessed (Wet) Gas	Royalties	16190.48
@@ -260,13 +254,13 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2006	LA	Beauregard	22011	Gas	Unprocessed (Wet) Gas	Royalties	101.24
 2006	LA	Beauregard	22011	NGL	Gas Plant Products	Royalties	-11.1
 2006	LA	Beauregard	22011	Oil	Oil	Royalties	65.09
-2006	LA	Bienville	22013	Oil & Gas		Other Royalties	518.78
+2006	LA	Bienville	22013	Oil & Gas		Other Revenues	518.78
 2006	LA	Bienville	22013	Oil & Gas		Rents	348.66
 2006	LA	Bienville	22013	Gas	Processed (Residue) Gas	Royalties	7870.27
 2006	LA	Bienville	22013	Gas	Unprocessed (Wet) Gas	Royalties	18113.56
 2006	LA	Bienville	22013	Oil	Condensate	Royalties	25.46
 2006	LA	Bossier	22015	Oil & Gas		Bonus	433235
-2006	LA	Bossier	22015	Oil & Gas		Other Royalties	-700000
+2006	LA	Bossier	22015	Oil & Gas		Other Revenues	-700000
 2006	LA	Bossier	22015	Oil & Gas		Rents	3969.34
 2006	LA	Bossier	22015	Gas	Processed (Residue) Gas	Royalties	10654853.53
 2006	LA	Bossier	22015	Gas	Unprocessed (Wet) Gas	Royalties	22793772.3
@@ -282,11 +276,11 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2006	LA	Calcasieu	22019	Oil & Gas		Rents	84
 2006	LA	Caldwell	22021	Oil & Gas		Rents	1015.5
 2006	LA	Caldwell	22021	Gas	Unprocessed (Wet) Gas	Royalties	696.98
-2006	LA	Cameron	22023	Oil & Gas		Other Royalties	-800
+2006	LA	Cameron	22023	Oil & Gas		Other Revenues	-800
 2006	LA	Cameron	22023	Gas	Processed (Residue) Gas	Royalties	2342.97
 2006	LA	Cameron	22023	NGL	Gas Plant Products	Royalties	407.98
 2006	LA	Cameron	22023	Oil	Oil	Royalties	444.33
-2006	LA	Claiborne	22027	Oil & Gas		Other Royalties	3300
+2006	LA	Claiborne	22027	Oil & Gas		Other Revenues	3300
 2006	LA	Claiborne	22027	Gas	Processed (Residue) Gas	Royalties	136060.58
 2006	LA	Claiborne	22027	Gas	Unprocessed (Wet) Gas	Royalties	34222.82
 2006	LA	Claiborne	22027	NGL	Gas Plant Products	Royalties	56855.91
@@ -296,7 +290,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2006	LA	Concordia	22029	Oil & Gas		Rents	253.5
 2006	LA	De Soto	22031	Oil & Gas		Rents	305.74
 2006	LA	De Soto	22031	Gas	Unprocessed (Wet) Gas	Royalties	13267.6
-2006	LA	E Btn Rouge	22033	Oil & Gas		Other Royalties	-14258.5
+2006	LA	E Btn Rouge	22033	Oil & Gas		Other Revenues	-14258.5
 2006	LA	E Btn Rouge	22033	Gas	Processed (Residue) Gas	Royalties	71639.81
 2006	LA	E Btn Rouge	22033	Gas	Unprocessed (Wet) Gas	Royalties	0.03
 2006	LA	E Btn Rouge	22033	Oil	Condensate	Royalties	44660.73
@@ -319,8 +313,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2006	LA	Natchitoches	22069	Oil & Gas		Rents	6514.76
 2006	LA	Orleans	22071	Oil & Gas		Rents	76
 2006	LA	Ouachita	22073	Gas	Unprocessed (Wet) Gas	Royalties	542.58
-2006	LA	Plaquemines	22075	Oil & Gas		Other Revenues	84.1
-2006	LA	Plaquemines	22075	Oil & Gas		Other Royalties	-855
+2006	LA	Plaquemines	22075	Oil & Gas		Other Revenues	-770.9
 2006	LA	Plaquemines	22075	Oil & Gas		Rents	119.83
 2006	LA	Plaquemines	22075	Gas	Processed (Residue) Gas	Royalties	64251.37
 2006	LA	Plaquemines	22075	Gas	Unprocessed (Wet) Gas	Royalties	813.46
@@ -349,14 +342,13 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2006	LA	Vermilion	22113	Gas	Unprocessed (Wet) Gas	Royalties	397.39
 2006	LA	Vermilion	22113	Oil	Condensate	Royalties	10.77
 2006	LA	Vermilion	22113	Oil	Oil	Royalties	79119.58
-2006	LA	Vernon	22115	Oil & Gas		Other Revenues	1961.18
-2006	LA	Vernon	22115	Oil & Gas		Other Royalties	-330
+2006	LA	Vernon	22115	Oil & Gas		Other Revenues	1631.18
 2006	LA	Vernon	22115	Oil & Gas		Rents	-18949
 2006	LA	Vernon	22115	Gas	Processed (Residue) Gas	Royalties	-2781.62
 2006	LA	Vernon	22115	Gas	Unprocessed (Wet) Gas	Royalties	52609.68
 2006	LA	Vernon	22115	NGL	Gas Plant Products	Royalties	-4248.59
 2006	LA	Vernon	22115	Oil	Oil	Royalties	112077.42
-2006	LA	Webster	22119	Oil & Gas		Other Royalties	-1100
+2006	LA	Webster	22119	Oil & Gas		Other Revenues	-1100
 2006	LA	Webster	22119	Oil & Gas		Rents	13408
 2006	LA	Webster	22119	Gas	Processed (Residue) Gas	Royalties	36700.69
 2006	LA	Webster	22119	Gas	Unprocessed (Wet) Gas	Royalties	13673.26
@@ -366,22 +358,21 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2006	LA	Winn	22127	Oil & Gas		Rents	2492.74
 2006	LA	Winn	22127	Gas	Processed (Residue) Gas	Royalties	54454.27
 2006	LA	Winn	22127	Oil	Condensate	Royalties	13722.49
-2007	LA	Beauregard	22011	Oil & Gas		Other Revenues	58.67
-2007	LA	Beauregard	22011	Oil & Gas		Other Royalties	50
+2007	LA	Beauregard	22011	Oil & Gas		Other Revenues	108.67
 2007	LA	Beauregard	22011	Oil & Gas		Rents	80
 2007	LA	Beauregard	22011	Gas	Unprocessed (Wet) Gas	Royalties	35.54
 2007	LA	Beauregard	22011	Oil	Oil	Royalties	165.3
 2007	LA	Bienville	22013	Gas	Processed (Residue) Gas	Royalties	5855.79
 2007	LA	Bienville	22013	Gas	Unprocessed (Wet) Gas	Royalties	13139.24
 2007	LA	Bienville	22013	Oil	Condensate	Royalties	151.35
-2007	LA	Bossier	22015	Oil & Gas		Other Royalties	1220037.01
+2007	LA	Bossier	22015	Oil & Gas		Other Revenues	1220037.01
 2007	LA	Bossier	22015	Oil & Gas		Rents	320
 2007	LA	Bossier	22015	Gas	Processed (Residue) Gas	Royalties	16114052.7
 2007	LA	Bossier	22015	Gas	Unprocessed (Wet) Gas	Royalties	16299602.3
 2007	LA	Bossier	22015	NGL	Gas Plant Products	Royalties	1275042.08
 2007	LA	Bossier	22015	Oil	Condensate	Royalties	442549.78
 2007	LA	Bossier	22015	Oil	Oil	Royalties	968010.91
-2007	LA	Caddo	22017	Oil & Gas		Other Royalties	-75
+2007	LA	Caddo	22017	Oil & Gas		Other Revenues	-75
 2007	LA	Caddo	22017	Oil & Gas		Rents	545.84
 2007	LA	Caddo	22017	Gas	Processed (Residue) Gas	Royalties	858.11
 2007	LA	Caddo	22017	Gas	Unprocessed (Wet) Gas	Royalties	47749.13
@@ -395,7 +386,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2007	LA	Cameron	22023	NGL	Gas Plant Products	Royalties	419.84
 2007	LA	Cameron	22023	Oil	Oil	Royalties	304.73
 2007	LA	Claiborne	22027	Oil & Gas		Bonus	170800
-2007	LA	Claiborne	22027	Oil & Gas		Other Royalties	-1000
+2007	LA	Claiborne	22027	Oil & Gas		Other Revenues	-1000
 2007	LA	Claiborne	22027	Oil & Gas		Rents	3684
 2007	LA	Claiborne	22027	Gas	Processed (Residue) Gas	Royalties	91762.46
 2007	LA	Claiborne	22027	Gas	Unprocessed (Wet) Gas	Royalties	29304.48
@@ -407,7 +398,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2007	LA	De Soto	22031	Oil & Gas		Other Revenues	46
 2007	LA	De Soto	22031	Oil & Gas		Rents	227.16
 2007	LA	De Soto	22031	Gas	Unprocessed (Wet) Gas	Royalties	7987.9
-2007	LA	E Btn Rouge	22033	Oil & Gas		Other Royalties	-905.04
+2007	LA	E Btn Rouge	22033	Oil & Gas		Other Revenues	-905.04
 2007	LA	E Btn Rouge	22033	Gas	Processed (Residue) Gas	Royalties	20500.83
 2007	LA	E Btn Rouge	22033	Gas	Unprocessed (Wet) Gas	Royalties	0.01
 2007	LA	E Btn Rouge	22033	NGL	Gas Plant Products	Royalties	3401.07
@@ -416,8 +407,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2007	LA	Jackson	22049	Gas	Processed (Residue) Gas	Royalties	251.65
 2007	LA	Jefferson	22051	Oil	Oil	Royalties	108459.19
 2007	LA	La Salle	22059	Oil	Oil	Royalties	3049.99
-2007	LA	Lafourche	22057	Oil & Gas		Other Revenues	320
-2007	LA	Lafourche	22057	Oil & Gas		Other Royalties	200
+2007	LA	Lafourche	22057	Oil & Gas		Other Revenues	520
 2007	LA	Lafourche	22057	Oil & Gas		Rents	152
 2007	LA	Lafourche	22057	Gas	Processed (Residue) Gas	Royalties	2068.55
 2007	LA	Lafourche	22057	Gas	Unprocessed (Wet) Gas	Royalties	224.97
@@ -438,15 +428,13 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2007	LA	Natchitoches	22069	Oil	Oil	Royalties	5805.46
 2007	LA	Orleans	22071	Oil & Gas		Rents	-152
 2007	LA	Ouachita	22073	Gas	Unprocessed (Wet) Gas	Royalties	391.88
-2007	LA	Plaquemines	22075	Oil & Gas		Other Revenues	2578.07
-2007	LA	Plaquemines	22075	Oil & Gas		Other Royalties	1790
+2007	LA	Plaquemines	22075	Oil & Gas		Other Revenues	4368.07
 2007	LA	Plaquemines	22075	Oil & Gas		Rents	276.33
 2007	LA	Plaquemines	22075	Gas	Processed (Residue) Gas	Royalties	61373.66
 2007	LA	Plaquemines	22075	Gas	Unprocessed (Wet) Gas	Royalties	79889.52
 2007	LA	Plaquemines	22075	NGL	Gas Plant Products	Royalties	6654.54
 2007	LA	Plaquemines	22075	Oil	Oil	Royalties	1684765.7
-2007	LA	Rapides	22079	Oil & Gas		Other Revenues	105635.06
-2007	LA	Rapides	22079	Oil & Gas		Other Royalties	1583.72
+2007	LA	Rapides	22079	Oil & Gas		Other Revenues	107218.78
 2007	LA	Rapides	22079	Oil & Gas		Rents	6333
 2007	LA	Rapides	22079	Gas	Unprocessed (Wet) Gas	Royalties	37411.31
 2007	LA	Rapides	22079	Oil	Oil	Royalties	28986.12
@@ -465,14 +453,13 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2007	LA	Vermilion	22113	Gas	Unprocessed (Wet) Gas	Royalties	289.45
 2007	LA	Vermilion	22113	Oil	Condensate	Royalties	15.36
 2007	LA	Vermilion	22113	Oil	Oil	Royalties	79976.98
-2007	LA	Vernon	22115	Oil & Gas		Other Revenues	995.4
-2007	LA	Vernon	22115	Oil & Gas		Other Royalties	3969.24
+2007	LA	Vernon	22115	Oil & Gas		Other Revenues	4964.64
 2007	LA	Vernon	22115	Oil & Gas		Rents	5743
 2007	LA	Vernon	22115	Gas	Processed (Residue) Gas	Royalties	5404.41
 2007	LA	Vernon	22115	Gas	Unprocessed (Wet) Gas	Royalties	22164.19
 2007	LA	Vernon	22115	NGL	Gas Plant Products	Royalties	1499.17
 2007	LA	Vernon	22115	Oil	Oil	Royalties	84147.07
-2007	LA	Webster	22119	Oil & Gas		Other Royalties	6462.06
+2007	LA	Webster	22119	Oil & Gas		Other Revenues	6462.06
 2007	LA	Webster	22119	Oil & Gas		Rents	1195.73
 2007	LA	Webster	22119	Gas	Processed (Residue) Gas	Royalties	74042.22
 2007	LA	Webster	22119	Gas	Unprocessed (Wet) Gas	Royalties	9826.82
@@ -485,17 +472,17 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2007	LA	Winn	22127	Oil & Gas		Rents	2370.74
 2007	LA	Winn	22127	Gas	Processed (Residue) Gas	Royalties	53781.73
 2007	LA	Winn	22127	Oil	Condensate	Royalties	13857.94
-2008	LA	Beauregard	22011	Oil & Gas		Other Royalties	60
+2008	LA	Beauregard	22011	Oil & Gas		Other Revenues	60
 2008	LA	Beauregard	22011	Oil & Gas		Rents	80
 2008	LA	Beauregard	22011	Gas	Unprocessed (Wet) Gas	Royalties	41.47
 2008	LA	Beauregard	22011	Oil	Oil	Royalties	398.28
 2008	LA	Bienville	22013	Oil & Gas		Bonus	80
-2008	LA	Bienville	22013	Oil & Gas		Other Royalties	5205.86
+2008	LA	Bienville	22013	Oil & Gas		Other Revenues	5205.86
 2008	LA	Bienville	22013	Oil & Gas		Rents	120
 2008	LA	Bienville	22013	Gas	Processed (Residue) Gas	Royalties	30470.35
 2008	LA	Bienville	22013	Gas	Unprocessed (Wet) Gas	Royalties	46665.2
 2008	LA	Bienville	22013	Oil	Condensate	Royalties	820.96
-2008	LA	Bossier	22015	Oil & Gas		Other Royalties	303163.78
+2008	LA	Bossier	22015	Oil & Gas		Other Revenues	303163.78
 2008	LA	Bossier	22015	Oil & Gas		Rents	603
 2008	LA	Bossier	22015	Gas	Processed (Residue) Gas	Royalties	52362380.59
 2008	LA	Bossier	22015	Gas	Unprocessed (Wet) Gas	Royalties	-12699555.24
@@ -503,7 +490,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2008	LA	Bossier	22015	Oil	Condensate	Royalties	823267.62
 2008	LA	Bossier	22015	Oil	Oil	Royalties	1528096.48
 2008	LA	Caddo	22017	Oil & Gas		Bonus	122600
-2008	LA	Caddo	22017	Oil & Gas		Other Royalties	100
+2008	LA	Caddo	22017	Oil & Gas		Other Revenues	100
 2008	LA	Caddo	22017	Oil & Gas		Rents	1716.18
 2008	LA	Caddo	22017	Gas	Processed (Residue) Gas	Royalties	1157.12
 2008	LA	Caddo	22017	Gas	Unprocessed (Wet) Gas	Royalties	40914.55
@@ -517,8 +504,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2008	LA	Cameron	22023	Oil & Gas		Rents	650
 2008	LA	Cameron	22023	Oil	Oil	Royalties	75.72
 2008	LA	Claiborne	22027	Oil & Gas		Bonus	349510
-2008	LA	Claiborne	22027	Oil & Gas		Other Revenues	416
-2008	LA	Claiborne	22027	Oil & Gas		Other Royalties	-10072
+2008	LA	Claiborne	22027	Oil & Gas		Other Revenues	-9656
 2008	LA	Claiborne	22027	Oil & Gas		Rents	6978.5
 2008	LA	Claiborne	22027	Gas	Processed (Residue) Gas	Royalties	108694.22
 2008	LA	Claiborne	22027	Gas	Unprocessed (Wet) Gas	Royalties	37996.2
@@ -533,7 +519,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2008	LA	De Soto	22031	Gas	Processed (Residue) Gas	Royalties	57283.19
 2008	LA	De Soto	22031	Gas	Unprocessed (Wet) Gas	Royalties	8202.46
 2008	LA	De Soto	22031	Oil	Condensate	Royalties	5657.9
-2008	LA	E Btn Rouge	22033	Oil & Gas		Other Royalties	362.61
+2008	LA	E Btn Rouge	22033	Oil & Gas		Other Revenues	362.61
 2008	LA	E Btn Rouge	22033	Gas	Processed (Residue) Gas	Royalties	11676.25
 2008	LA	E Btn Rouge	22033	NGL	Gas Plant Products	Royalties	4106.16
 2008	LA	E Btn Rouge	22033	Oil	Condensate	Royalties	16707.83
@@ -544,7 +530,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2008	LA	Jackson	22049	Oil & Gas		Rents	240
 2008	LA	Jackson	22049	Gas	Processed (Residue) Gas	Royalties	372.44
 2008	LA	Jefferson	22051	Oil	Oil	Royalties	199956.56
-2008	LA	La Salle	22059	Oil & Gas		Other Royalties	-132
+2008	LA	La Salle	22059	Oil & Gas		Other Revenues	-132
 2008	LA	La Salle	22059	Oil	Oil	Royalties	3641.62
 2008	LA	Lafourche	22057	Oil & Gas		Other Revenues	160
 2008	LA	Lafourche	22057	Oil & Gas		Rents	152
@@ -556,7 +542,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2008	LA	Lincoln	22061	Gas	Unprocessed (Wet) Gas	Royalties	4.93
 2008	LA	Lincoln	22061	NGL	Gas Plant Products	Royalties	791.72
 2008	LA	Morehouse	22067	Gas	Unprocessed (Wet) Gas	Royalties	2141.27
-2008	LA	Natchitoches	22069	Oil & Gas		Other Royalties	-1053.6
+2008	LA	Natchitoches	22069	Oil & Gas		Other Revenues	-1053.6
 2008	LA	Natchitoches	22069	Oil & Gas		Rents	2464.76
 2008	LA	Natchitoches	22069	Gas	Unprocessed (Wet) Gas	Royalties	2528.44
 2008	LA	Natchitoches	22069	NGL	Gas Plant Products	Royalties	858.13
@@ -564,16 +550,14 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2008	LA	Ouachita	22073	Oil & Gas		Bonus	7210
 2008	LA	Ouachita	22073	Oil & Gas		Rents	486
 2008	LA	Ouachita	22073	Gas	Unprocessed (Wet) Gas	Royalties	440.34
-2008	LA	Plaquemines	22075	Oil & Gas		Other Revenues	7371.01
-2008	LA	Plaquemines	22075	Oil & Gas		Other Royalties	18213
+2008	LA	Plaquemines	22075	Oil & Gas		Other Revenues	25584.01
 2008	LA	Plaquemines	22075	Oil & Gas		Rents	781.47
 2008	LA	Plaquemines	22075	Gas	Processed (Residue) Gas	Royalties	69582.13
 2008	LA	Plaquemines	22075	Gas	Unprocessed (Wet) Gas	Royalties	112933.57
 2008	LA	Plaquemines	22075	NGL	Gas Plant Products	Royalties	11699.11
 2008	LA	Plaquemines	22075	Oil	Oil	Royalties	2023935.8
 2008	LA	Rapides	22079	Oil & Gas		Bonus	150459
-2008	LA	Rapides	22079	Oil & Gas		Other Revenues	128523.85
-2008	LA	Rapides	22079	Oil & Gas		Other Royalties	-4334.12
+2008	LA	Rapides	22079	Oil & Gas		Other Revenues	124189.73
 2008	LA	Rapides	22079	Oil & Gas		Rents	41012.5
 2008	LA	Rapides	22079	Gas	Unprocessed (Wet) Gas	Royalties	14456.83
 2008	LA	Rapides	22079	NGL	Gas Plant Products	Royalties	5.41
@@ -598,15 +582,14 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2008	LA	Vermilion	22113	Gas	Unprocessed (Wet) Gas	Royalties	483.28
 2008	LA	Vermilion	22113	Oil	Condensate	Royalties	18.49
 2008	LA	Vermilion	22113	Oil	Oil	Royalties	29843.26
-2008	LA	Vernon	22115	Oil & Gas		Other Revenues	1862
-2008	LA	Vernon	22115	Oil & Gas		Other Royalties	7753.59
+2008	LA	Vernon	22115	Oil & Gas		Other Revenues	9615.59
 2008	LA	Vernon	22115	Oil & Gas		Rents	4678
 2008	LA	Vernon	22115	Gas	Processed (Residue) Gas	Royalties	2328.62
 2008	LA	Vernon	22115	Gas	Unprocessed (Wet) Gas	Royalties	-2380.24
 2008	LA	Vernon	22115	NGL	Gas Plant Products	Royalties	2421.32
 2008	LA	Vernon	22115	Oil	Oil	Royalties	115156.97
 2008	LA	Webster	22119	Oil & Gas		Bonus	48000
-2008	LA	Webster	22119	Oil & Gas		Other Royalties	3098.35
+2008	LA	Webster	22119	Oil & Gas		Other Revenues	3098.35
 2008	LA	Webster	22119	Oil & Gas		Rents	640
 2008	LA	Webster	22119	Gas	Processed (Residue) Gas	Royalties	91029.52
 2008	LA	Webster	22119	Gas	Unprocessed (Wet) Gas	Royalties	30952.88
@@ -624,12 +607,12 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2009	LA	Beauregard	22011	Oil & Gas		Rents	80
 2009	LA	Beauregard	22011	Gas	Unprocessed (Wet) Gas	Royalties	6.86
 2009	LA	Beauregard	22011	Oil	Oil	Royalties	252.11
-2009	LA	Bienville	22013	Oil & Gas		Other Royalties	-4540.32
+2009	LA	Bienville	22013	Oil & Gas		Other Revenues	-4540.32
 2009	LA	Bienville	22013	Oil & Gas		Rents	60
 2009	LA	Bienville	22013	Gas	Processed (Residue) Gas	Royalties	10447.39
 2009	LA	Bienville	22013	Gas	Unprocessed (Wet) Gas	Royalties	30016.05
 2009	LA	Bienville	22013	Oil	Condensate	Royalties	684.39
-2009	LA	Bossier	22015	Oil & Gas		Other Royalties	-1879492.31
+2009	LA	Bossier	22015	Oil & Gas		Other Revenues	-1879492.31
 2009	LA	Bossier	22015	Gas	Processed (Residue) Gas	Royalties	1802970.53
 2009	LA	Bossier	22015	Gas	Unprocessed (Wet) Gas	Royalties	10380410.35
 2009	LA	Bossier	22015	NGL	Gas Plant Products	Royalties	1794102.85
@@ -643,11 +626,10 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2009	LA	Calcasieu	22019	Oil & Gas		Rents	210
 2009	LA	Caldwell	22021	Oil & Gas		Rents	28511
 2009	LA	Caldwell	22021	Gas	Unprocessed (Wet) Gas	Royalties	6548.79
-2009	LA	Cameron	22023	Oil & Gas		Other Royalties	-800
+2009	LA	Cameron	22023	Oil & Gas		Other Revenues	-800
 2009	LA	Cameron	22023	Oil & Gas		Rents	-780
 2009	LA	Claiborne	22027	Oil & Gas		Bonus	176461
-2009	LA	Claiborne	22027	Oil & Gas		Other Revenues	416
-2009	LA	Claiborne	22027	Oil & Gas		Other Royalties	-14375
+2009	LA	Claiborne	22027	Oil & Gas		Other Revenues	-13959
 2009	LA	Claiborne	22027	Oil & Gas		Rents	9723
 2009	LA	Claiborne	22027	Gas	Processed (Residue) Gas	Royalties	47991.6
 2009	LA	Claiborne	22027	Gas	Unprocessed (Wet) Gas	Royalties	14991.21
@@ -661,7 +643,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2009	LA	De Soto	22031	Gas	Unprocessed (Wet) Gas	Royalties	79676.21
 2009	LA	De Soto	22031	Oil	Condensate	Royalties	958.26
 2009	LA	De Soto	22031	Oil	Oil	Royalties	3751.67
-2009	LA	E Btn Rouge	22033	Oil & Gas		Other Royalties	-1376.04
+2009	LA	E Btn Rouge	22033	Oil & Gas		Other Revenues	-1376.04
 2009	LA	E Btn Rouge	22033	Gas	Processed (Residue) Gas	Royalties	2272.94
 2009	LA	E Btn Rouge	22033	Gas	Unprocessed (Wet) Gas	Royalties	1384.75
 2009	LA	E Btn Rouge	22033	NGL	Gas Plant Products	Royalties	291.42
@@ -672,7 +654,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2009	LA	Jackson	22049	Oil & Gas		Bonus	2000
 2009	LA	Jackson	22049	Oil & Gas		Rents	300
 2009	LA	Jackson	22049	Gas	Processed (Residue) Gas	Royalties	167.09
-2009	LA	Jefferson	22051	Oil & Gas		Other Royalties	-6000
+2009	LA	Jefferson	22051	Oil & Gas		Other Revenues	-6000
 2009	LA	Jefferson	22051	Gas	Unprocessed (Wet) Gas	Royalties	316.58
 2009	LA	Jefferson	22051	Oil	Condensate	Royalties	26742.04
 2009	LA	Jefferson	22051	Oil	Oil	Royalties	70156.99
@@ -684,23 +666,21 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2009	LA	Lincoln	22061	NGL	Gas Plant Products	Royalties	208.29
 2009	LA	Lincoln	22061	Oil	Condensate	Royalties	60.72
 2009	LA	Morehouse	22067	Gas	Unprocessed (Wet) Gas	Royalties	643.55
-2009	LA	Natchitoches	22069	Oil & Gas		Other Royalties	-165.39
+2009	LA	Natchitoches	22069	Oil & Gas		Other Revenues	-165.39
 2009	LA	Natchitoches	22069	Oil & Gas		Rents	2477.92
 2009	LA	Natchitoches	22069	Gas	Unprocessed (Wet) Gas	Royalties	748.68
 2009	LA	Natchitoches	22069	NGL	Gas Plant Products	Royalties	64.67
 2009	LA	Natchitoches	22069	Oil	Oil	Royalties	878.8
 2009	LA	Ouachita	22073	Oil & Gas		Rents	243
 2009	LA	Ouachita	22073	Gas	Unprocessed (Wet) Gas	Royalties	259.05
-2009	LA	Plaquemines	22075	Oil & Gas		Other Revenues	1052.96
-2009	LA	Plaquemines	22075	Oil & Gas		Other Royalties	-3292
+2009	LA	Plaquemines	22075	Oil & Gas		Other Revenues	-2239.04
 2009	LA	Plaquemines	22075	Oil & Gas		Rents	131.33
 2009	LA	Plaquemines	22075	Gas	Processed (Residue) Gas	Royalties	93074.17
 2009	LA	Plaquemines	22075	Gas	Unprocessed (Wet) Gas	Royalties	158.89
 2009	LA	Plaquemines	22075	NGL	Gas Plant Products	Royalties	7003.82
 2009	LA	Plaquemines	22075	Oil	Condensate	Royalties	0.19
 2009	LA	Plaquemines	22075	Oil	Oil	Royalties	973411.59
-2009	LA	Rapides	22079	Oil & Gas		Other Revenues	68734.54
-2009	LA	Rapides	22079	Oil & Gas		Other Royalties	-4100
+2009	LA	Rapides	22079	Oil & Gas		Other Revenues	64634.54
 2009	LA	Rapides	22079	Oil & Gas		Rents	40391.5
 2009	LA	Rapides	22079	Gas	Processed (Residue) Gas	Royalties	89.35
 2009	LA	Rapides	22079	Gas	Unprocessed (Wet) Gas	Royalties	4535.62
@@ -722,15 +702,14 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2009	LA	Vermilion	22113	Gas	Unprocessed (Wet) Gas	Royalties	185.03
 2009	LA	Vermilion	22113	Oil	Condensate	Royalties	12.49
 2009	LA	Vermilion	22113	Oil	Oil	Royalties	28736.37
-2009	LA	Vernon	22115	Oil & Gas		Other Revenues	2186
-2009	LA	Vernon	22115	Oil & Gas		Other Royalties	-9300
+2009	LA	Vernon	22115	Oil & Gas		Other Revenues	-7114
 2009	LA	Vernon	22115	Oil & Gas		Rents	652.5
 2009	LA	Vernon	22115	Gas	Processed (Residue) Gas	Royalties	1272.92
 2009	LA	Vernon	22115	Gas	Unprocessed (Wet) Gas	Royalties	5816.09
 2009	LA	Vernon	22115	NGL	Gas Plant Products	Royalties	1018.02
 2009	LA	Vernon	22115	Oil	Oil	Royalties	45434.5
 2009	LA	Webster	22119	Oil & Gas		Bonus	103869
-2009	LA	Webster	22119	Oil & Gas		Other Royalties	-4498.04
+2009	LA	Webster	22119	Oil & Gas		Other Revenues	-4498.04
 2009	LA	Webster	22119	Oil & Gas		Rents	28151.5
 2009	LA	Webster	22119	Gas	Processed (Residue) Gas	Royalties	48892.07
 2009	LA	Webster	22119	Gas	Unprocessed (Wet) Gas	Royalties	7495.68
@@ -745,7 +724,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2009	LA	Winn	22127	Oil & Gas		Rents	2034.58
 2009	LA	Winn	22127	Gas	Processed (Residue) Gas	Royalties	41669.67
 2009	LA	Winn	22127	Oil	Condensate	Royalties	18828.83
-2010	LA	Beauregard	22011	Oil & Gas		Other Royalties	-140
+2010	LA	Beauregard	22011	Oil & Gas		Other Revenues	-140
 2010	LA	Beauregard	22011	Oil & Gas		Rents	80
 2010	LA	Beauregard	22011	Gas	Unprocessed (Wet) Gas	Royalties	16.66
 2010	LA	Beauregard	22011	Oil	Oil	Royalties	79.47
@@ -754,28 +733,27 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2010	LA	Bienville	22013	Gas	Processed (Residue) Gas	Royalties	6449.75
 2010	LA	Bienville	22013	Gas	Unprocessed (Wet) Gas	Royalties	18414.17
 2010	LA	Bienville	22013	Oil	Condensate	Royalties	747.08
-2010	LA	Bossier	22015	Oil & Gas		Other Royalties	-181281.01
+2010	LA	Bossier	22015	Oil & Gas		Other Revenues	-181281.01
 2010	LA	Bossier	22015	Gas	Processed (Residue) Gas	Royalties	22792438.94
 2010	LA	Bossier	22015	Gas	Unprocessed (Wet) Gas	Royalties	-14108646.02
 2010	LA	Bossier	22015	NGL	Gas Plant Products	Royalties	6745552.52
 2010	LA	Bossier	22015	Oil	Condensate	Royalties	545536.14
 2010	LA	Bossier	22015	Oil	Oil	Royalties	336172.82
 2010	LA	Caddo	22017	Oil & Gas		Bonus	104000
-2010	LA	Caddo	22017	Oil & Gas		Other Royalties	3975.65
+2010	LA	Caddo	22017	Oil & Gas		Other Revenues	3975.65
 2010	LA	Caddo	22017	Oil & Gas		Rents	301.5
 2010	LA	Caddo	22017	Gas	Processed (Residue) Gas	Royalties	101.61
 2010	LA	Caddo	22017	Gas	Unprocessed (Wet) Gas	Royalties	147697.41
 2010	LA	Caddo	22017	Oil	Condensate	Royalties	440.07
 2010	LA	Caddo	22017	Oil	Oil	Royalties	92334.92
-2010	LA	Calcasieu	22019	Oil & Gas		Other Royalties	-600
+2010	LA	Calcasieu	22019	Oil & Gas		Other Revenues	-600
 2010	LA	Calcasieu	22019	Oil & Gas		Rents	210
 2010	LA	Caldwell	22021	Oil & Gas		Rents	-3878.5
 2010	LA	Caldwell	22021	Gas	Processed (Residue) Gas	Royalties	3796.77
 2010	LA	Caldwell	22021	Gas	Unprocessed (Wet) Gas	Royalties	653.71
-2010	LA	Cameron	22023	Oil & Gas		Other Royalties	-1000
+2010	LA	Cameron	22023	Oil & Gas		Other Revenues	-1000
 2010	LA	Claiborne	22027	Oil & Gas		Bonus	158
-2010	LA	Claiborne	22027	Oil & Gas		Other Revenues	416
-2010	LA	Claiborne	22027	Oil & Gas		Other Royalties	3362.34
+2010	LA	Claiborne	22027	Oil & Gas		Other Revenues	3778.34
 2010	LA	Claiborne	22027	Oil & Gas		Rents	9780
 2010	LA	Claiborne	22027	Gas	Processed (Residue) Gas	Royalties	47576.76
 2010	LA	Claiborne	22027	Gas	Unprocessed (Wet) Gas	Royalties	21604.23
@@ -785,7 +763,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2010	LA	Claiborne	22027	Oil	Oil	Royalties	54574.46
 2010	LA	Concordia	22029	Oil & Gas		Rents	396
 2010	LA	De Soto	22031	Oil & Gas		Bonus	34589000
-2010	LA	De Soto	22031	Oil & Gas		Other Royalties	-1300
+2010	LA	De Soto	22031	Oil & Gas		Other Revenues	-1300
 2010	LA	De Soto	22031	Oil & Gas		Rents	2248
 2010	LA	De Soto	22031	Gas	Processed (Residue) Gas	Royalties	57245.91
 2010	LA	De Soto	22031	Gas	Unprocessed (Wet) Gas	Royalties	48154.36
@@ -798,29 +776,27 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2010	LA	Grant	22043	Oil & Gas		Rents	4401
 2010	LA	Iberville	22047	Oil & Gas		Rents	646.5
 2010	LA	Jackson	22049	Oil & Gas		Rents	180
-2010	LA	Jefferson	22051	Oil & Gas		Other Royalties	254.72
+2010	LA	Jefferson	22051	Oil & Gas		Other Revenues	254.72
 2010	LA	Jefferson	22051	Gas	Unprocessed (Wet) Gas	Royalties	6152.45
 2010	LA	Jefferson	22051	Oil	Condensate	Royalties	38460.64
 2010	LA	Jefferson	22051	Oil	Oil	Royalties	191736.9
 2010	LA	La Salle	22059	Oil	Oil	Royalties	700.61
-2010	LA	Lafourche	22057	Oil & Gas		Other Revenues	160
-2010	LA	Lafourche	22057	Oil & Gas		Other Royalties	-198.37
+2010	LA	Lafourche	22057	Oil & Gas		Other Revenues	-38.37
 2010	LA	Lafourche	22057	Oil & Gas		Rents	360
 2010	LA	Lafourche	22057	Oil	Oil	Royalties	3319.17
-2010	LA	Lincoln	22061	Oil & Gas		Other Royalties	1.59
+2010	LA	Lincoln	22061	Oil & Gas		Other Revenues	1.59
 2010	LA	Lincoln	22061	Oil & Gas		Rents	219.5
 2010	LA	Lincoln	22061	Gas	Processed (Residue) Gas	Royalties	761.09
 2010	LA	Lincoln	22061	NGL	Gas Plant Products	Royalties	705.53
 2010	LA	Lincoln	22061	Oil	Condensate	Royalties	190.08
 2010	LA	Morehouse	22067	Gas	Unprocessed (Wet) Gas	Royalties	548.72
-2010	LA	Natchitoches	22069	Oil & Gas		Other Royalties	-181.01
+2010	LA	Natchitoches	22069	Oil & Gas		Other Revenues	-181.01
 2010	LA	Natchitoches	22069	Oil & Gas		Rents	3192.52
 2010	LA	Natchitoches	22069	Gas	Unprocessed (Wet) Gas	Royalties	111.09
 2010	LA	Natchitoches	22069	Oil	Oil	Royalties	520.23
 2010	LA	Ouachita	22073	Oil & Gas		Rents	243
 2010	LA	Ouachita	22073	Gas	Unprocessed (Wet) Gas	Royalties	287.33
-2010	LA	Plaquemines	22075	Oil & Gas		Other Revenues	2480
-2010	LA	Plaquemines	22075	Oil & Gas		Other Royalties	58259.82
+2010	LA	Plaquemines	22075	Oil & Gas		Other Revenues	60739.82
 2010	LA	Plaquemines	22075	Oil & Gas		Rents	558.33
 2010	LA	Plaquemines	22075	Gas	Processed (Residue) Gas	Royalties	94022.18
 2010	LA	Plaquemines	22075	Gas	Unprocessed (Wet) Gas	Royalties	336.25
@@ -828,8 +804,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2010	LA	Plaquemines	22075	Oil	Condensate	Royalties	0.08
 2010	LA	Plaquemines	22075	Oil	Oil	Royalties	1333602.47
 2010	LA	Rapides	22079	Oil & Gas		Bonus	1290
-2010	LA	Rapides	22079	Oil & Gas		Other Revenues	87877.6
-2010	LA	Rapides	22079	Oil & Gas		Other Royalties	-5900
+2010	LA	Rapides	22079	Oil & Gas		Other Revenues	81977.6
 2010	LA	Rapides	22079	Oil & Gas		Rents	42947.5
 2010	LA	Rapides	22079	Gas	Unprocessed (Wet) Gas	Royalties	1034.5
 2010	LA	Rapides	22079	Oil	Oil	Royalties	10337.45
@@ -837,33 +812,33 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2010	LA	Red River	22081	Oil & Gas		Other Revenues	239.39
 2010	LA	Red River	22081	Oil & Gas		Rents	124.5
 2010	LA	Red River	22081	Gas	Unprocessed (Wet) Gas	Royalties	6622.77
-2010	LA	South Pass	22721	Oil & Gas		Other Royalties	0.35
+2010	LA	South Pass	22721	Oil & Gas		Other Revenues	0.35
 2010	LA	South Pass	22721	Oil & Gas		Rents	0.17
 2010	LA	South Pass	22721	Gas	Processed (Residue) Gas	Royalties	20.96
 2010	LA	South Pass	22721	Gas	Unprocessed (Wet) Gas	Royalties	0.34
 2010	LA	South Pass	22721	NGL	Gas Plant Products	Royalties	2.9
 2010	LA	South Pass	22721	Oil	Oil	Royalties	742.48
 2010	LA	St Charles	22089	Oil & Gas		Rents	10617
-2010	LA	St Martin	22099	Oil & Gas		Other Royalties	-8896
+2010	LA	St Martin	22099	Oil & Gas		Other Revenues	-8896
 2010	LA	St Martin	22099	Oil & Gas		Rents	110
 2010	LA	St Martin	22099	Gas	Unprocessed (Wet) Gas	Royalties	15514.57
 2010	LA	St Martin	22099	Oil	Condensate	Royalties	-2842.42
 2010	LA	St Martin	22099	Oil	Oil	Royalties	139957.98
-2010	LA	Terrebonne	22109	Oil & Gas		Other Royalties	5.71
+2010	LA	Terrebonne	22109	Oil & Gas		Other Revenues	5.71
 2010	LA	Terrebonne	22109	Gas	Unprocessed (Wet) Gas	Royalties	10.2
 2010	LA	Union	22111	Gas	Unprocessed (Wet) Gas	Royalties	474.91
-2010	LA	Vermilion	22113	Oil & Gas		Other Royalties	2.26
+2010	LA	Vermilion	22113	Oil & Gas		Other Revenues	2.26
 2010	LA	Vermilion	22113	Oil & Gas		Rents	662
 2010	LA	Vermilion	22113	Gas	Unprocessed (Wet) Gas	Royalties	167.88
 2010	LA	Vermilion	22113	Oil	Condensate	Royalties	14.03
 2010	LA	Vermilion	22113	Oil	Oil	Royalties	68354.42
-2010	LA	Vernon	22115	Oil & Gas		Other Royalties	-9200
+2010	LA	Vernon	22115	Oil & Gas		Other Revenues	-9200
 2010	LA	Vernon	22115	Oil & Gas		Rents	4438
 2010	LA	Vernon	22115	Gas	Processed (Residue) Gas	Royalties	486.07
 2010	LA	Vernon	22115	Gas	Unprocessed (Wet) Gas	Royalties	705.06
 2010	LA	Vernon	22115	NGL	Gas Plant Products	Royalties	606.19
 2010	LA	Vernon	22115	Oil	Oil	Royalties	10725.43
-2010	LA	Webster	22119	Oil & Gas		Other Royalties	-518.83
+2010	LA	Webster	22119	Oil & Gas		Other Revenues	-518.83
 2010	LA	Webster	22119	Oil & Gas		Rents	14136.5
 2010	LA	Webster	22119	Gas	Flash Gas	Royalties	753.48
 2010	LA	Webster	22119	Gas	Processed (Residue) Gas	Royalties	37291.94
@@ -872,27 +847,27 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2010	LA	Webster	22119	Oil	Condensate	Royalties	12914.37
 2010	LA	Webster	22119	Oil	Drip or Scrubber Condensate	Royalties	29
 2010	LA	Webster	22119	Oil	Oil	Royalties	39065.96
-2010	LA	West Delta	22719	Oil & Gas		Other Royalties	0.58
+2010	LA	West Delta	22719	Oil & Gas		Other Revenues	0.58
 2010	LA	West Delta	22719	Gas	Processed (Residue) Gas	Royalties	25.5
 2010	LA	West Delta	22719	NGL	Gas Plant Products	Royalties	2.21
 2010	LA	West Delta	22719	Oil	Oil	Royalties	47.8
 2010	LA	Winn	22127	Oil & Gas		Bonus	28248
-2010	LA	Winn	22127	Oil & Gas		Other Royalties	144.27
+2010	LA	Winn	22127	Oil & Gas		Other Revenues	144.27
 2010	LA	Winn	22127	Oil & Gas		Rents	5148.48
 2010	LA	Winn	22127	Gas	Processed (Residue) Gas	Royalties	48692.21
 2010	LA	Winn	22127	Oil	Condensate	Royalties	24922.68
-2011	LA	Beauregard	22011	Oil & Gas		Other Royalties	45.36
+2011	LA	Beauregard	22011	Oil & Gas		Other Revenues	45.36
 2011	LA	Beauregard	22011	Gas	Processed (Residue) Gas	Royalties	39.4
 2011	LA	Beauregard	22011	Oil	Oil	Royalties	665.56
 2011	LA	Bienville	22013	Oil & Gas		Bonus	398393.65
-2011	LA	Bienville	22013	Oil & Gas		Other Royalties	5529.68
+2011	LA	Bienville	22013	Oil & Gas		Other Revenues	5529.68
 2011	LA	Bienville	22013	Oil & Gas		Rents	92.06
 2011	LA	Bienville	22013	Gas	Processed (Residue) Gas	Royalties	6368.64
 2011	LA	Bienville	22013	Gas	Unprocessed (Wet) Gas	Royalties	47590.61
 2011	LA	Bienville	22013	Oil	Condensate	Royalties	265.78
 2011	LA	Bienville	22013	Oil	Oil	Royalties	9.22
 2011	LA	Bossier	22015	Oil & Gas		Bonus	3857686.35
-2011	LA	Bossier	22015	Oil & Gas		Other Royalties	-1648.15
+2011	LA	Bossier	22015	Oil & Gas		Other Revenues	-1648.15
 2011	LA	Bossier	22015	Oil & Gas		Rents	491.44
 2011	LA	Bossier	22015	Gas	Processed (Residue) Gas	Royalties	5145363.01
 2011	LA	Bossier	22015	Gas	Unprocessed (Wet) Gas	Royalties	3039623.98
@@ -900,20 +875,19 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2011	LA	Bossier	22015	Oil	Condensate	Royalties	756561
 2011	LA	Bossier	22015	Oil	Oil	Royalties	131521.22
 2011	LA	Caddo	22017	Oil & Gas		Bonus	259089
-2011	LA	Caddo	22017	Oil & Gas		Other Royalties	1435.91
+2011	LA	Caddo	22017	Oil & Gas		Other Revenues	1435.91
 2011	LA	Caddo	22017	Oil & Gas		Rents	3760
 2011	LA	Caddo	22017	Gas	Processed (Residue) Gas	Royalties	-13130.47
 2011	LA	Caddo	22017	Gas	Unprocessed (Wet) Gas	Royalties	80478.04
 2011	LA	Caddo	22017	Oil	Condensate	Royalties	-963.41
 2011	LA	Caddo	22017	Oil	Oil	Royalties	107141.96
-2011	LA	Calcasieu	22019	Oil & Gas		Other Royalties	378.16
+2011	LA	Calcasieu	22019	Oil & Gas		Other Revenues	378.16
 2011	LA	Calcasieu	22019	Oil & Gas		Rents	210
 2011	LA	Caldwell	22021	Oil & Gas		Bonus	2084
 2011	LA	Caldwell	22021	Oil & Gas		Rents	1785
 2011	LA	Caldwell	22021	Gas	Processed (Residue) Gas	Royalties	3897.81
 2011	LA	Claiborne	22027	Oil & Gas		Bonus	2702371
-2011	LA	Claiborne	22027	Oil & Gas		Other Revenues	416
-2011	LA	Claiborne	22027	Oil & Gas		Other Royalties	1110.79
+2011	LA	Claiborne	22027	Oil & Gas		Other Revenues	1526.79
 2011	LA	Claiborne	22027	Oil & Gas		Rents	15865.5
 2011	LA	Claiborne	22027	Gas	Processed (Residue) Gas	Royalties	43877.25
 2011	LA	Claiborne	22027	Gas	Unprocessed (Wet) Gas	Royalties	19708.19
@@ -923,13 +897,13 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2011	LA	Claiborne	22027	Oil	Oil	Royalties	54556.78
 2011	LA	Concordia	22029	Oil & Gas		Rents	396
 2011	LA	De Soto	22031	Oil & Gas		Bonus	478200
-2011	LA	De Soto	22031	Oil & Gas		Other Royalties	276711.38
+2011	LA	De Soto	22031	Oil & Gas		Other Revenues	276711.38
 2011	LA	De Soto	22031	Oil & Gas		Rents	445
 2011	LA	De Soto	22031	Gas	Processed (Residue) Gas	Royalties	29899.38
 2011	LA	De Soto	22031	Gas	Unprocessed (Wet) Gas	Royalties	1905920.9
 2011	LA	De Soto	22031	Oil	Condensate	Royalties	-445.82
 2011	LA	De Soto	22031	Oil	Oil	Royalties	7650.48
-2011	LA	E Btn Rouge	22033	Oil & Gas		Other Royalties	3821.88
+2011	LA	E Btn Rouge	22033	Oil & Gas		Other Revenues	3821.88
 2011	LA	E Btn Rouge	22033	Gas	Processed (Residue) Gas	Royalties	2593.67
 2011	LA	E Btn Rouge	22033	NGL	Gas Plant Products	Royalties	2427.4
 2011	LA	E Btn Rouge	22033	Oil	Condensate	Royalties	6261.53
@@ -952,15 +926,13 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2011	LA	Morehouse	22067	Oil & Gas		Rents	119.58
 2011	LA	Morehouse	22067	Gas	Unprocessed (Wet) Gas	Royalties	535.3
 2011	LA	Natchitoches	22069	Oil & Gas		Bonus	73508.52
-2011	LA	Natchitoches	22069	Oil & Gas		Other Royalties	63.6
+2011	LA	Natchitoches	22069	Oil & Gas		Other Revenues	63.6
 2011	LA	Natchitoches	22069	Oil & Gas		Rents	18100.52
 2011	LA	Natchitoches	22069	Oil	Oil	Royalties	535.58
-2011	LA	Ouachita	22073	Oil & Gas		Other Royalties	0.2
+2011	LA	Ouachita	22073	Oil & Gas		Other Revenues	0.2
 2011	LA	Ouachita	22073	Oil & Gas		Rents	243
 2011	LA	Ouachita	22073	Gas	Unprocessed (Wet) Gas	Royalties	189.18
-2011	LA	Plaquemines	22075	Oil & Gas		Other Revenues	7155.74
-2011	LA	Plaquemines	22075	Oil & Gas		Other Royalties	1882.58
-2011	LA	Plaquemines	22075	Oil	Oil	Other Royalties	8.13
+2011	LA	Plaquemines	22075	Oil & Gas		Other Revenues	9038.32
 2011	LA	Plaquemines	22075	Oil & Gas		Rents	558.33
 2011	LA	Plaquemines	22075	Gas	Processed (Residue) Gas	Royalties	155933.92
 2011	LA	Plaquemines	22075	Gas	Unprocessed (Wet) Gas	Royalties	0.16
@@ -968,12 +940,11 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2011	LA	Plaquemines	22075	Oil	Condensate	Royalties	0.12
 2011	LA	Plaquemines	22075	Oil	Drip or Scrubber Condensate	Royalties	1.59
 2011	LA	Plaquemines	22075	Oil	Inlet Scrubber	Royalties	1.1
-2011	LA	Plaquemines	22075	Oil	Oil	Royalties	2193991.32
+2011	LA	Plaquemines	22075	Oil	Oil	Royalties	2193999.45
 2011	LA	Pt. Coupee	22077	Oil & Gas		Bonus	4
 2011	LA	Pt. Coupee	22077	Oil & Gas		Rents	6
 2011	LA	Rapides	22079	Oil & Gas		Bonus	1803100
-2011	LA	Rapides	22079	Oil & Gas		Other Revenues	-275774.02
-2011	LA	Rapides	22079	Oil & Gas		Other Royalties	2997.41
+2011	LA	Rapides	22079	Oil & Gas		Other Revenues	-272776.61
 2011	LA	Rapides	22079	Oil & Gas		Rents	45295
 2011	LA	Rapides	22079	Gas	Processed (Residue) Gas	Royalties	12841.64
 2011	LA	Rapides	22079	Gas	Unprocessed (Wet) Gas	Royalties	620.68
@@ -991,7 +962,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2011	LA	St Martin	22099	Gas	Unprocessed (Wet) Gas	Royalties	5801.63
 2011	LA	St Martin	22099	Oil	Oil	Royalties	148499.38
 2011	LA	Terrebonne	22109	Gas	Unprocessed (Wet) Gas	Royalties	4.14
-2011	LA	Union	22111	Oil & Gas		Other Royalties	-313.57
+2011	LA	Union	22111	Oil & Gas		Other Revenues	-313.57
 2011	LA	Union	22111	Gas	Unprocessed (Wet) Gas	Royalties	1114.48
 2011	LA	Vermilion	22113	Oil & Gas		Rents	444
 2011	LA	Vermilion	22113	Gas	Processed (Residue) Gas	Royalties	139.5
@@ -999,16 +970,14 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2011	LA	Vermilion	22113	Oil	Condensate	Royalties	11.49
 2011	LA	Vermilion	22113	Oil	Oil	Royalties	85902.27
 2011	LA	Vernon	22115	Oil & Gas		Bonus	316433
-2011	LA	Vernon	22115	Oil & Gas		Other Revenues	274
-2011	LA	Vernon	22115	Oil & Gas		Other Royalties	3409.45
+2011	LA	Vernon	22115	Oil & Gas		Other Revenues	3683.45
 2011	LA	Vernon	22115	Oil & Gas		Rents	11384
 2011	LA	Vernon	22115	Gas	Processed (Residue) Gas	Royalties	3220.42
 2011	LA	Vernon	22115	Gas	Unprocessed (Wet) Gas	Royalties	154.89
 2011	LA	Vernon	22115	NGL	Gas Plant Products	Royalties	477.78
 2011	LA	Vernon	22115	Oil	Oil	Royalties	58505.48
 2011	LA	Webster	22119	Oil & Gas		Bonus	540
-2011	LA	Webster	22119	Oil & Gas		Other Revenues	334
-2011	LA	Webster	22119	Oil & Gas		Other Royalties	1197.23
+2011	LA	Webster	22119	Oil & Gas		Other Revenues	1531.23
 2011	LA	Webster	22119	Oil & Gas		Rents	15021.5
 2011	LA	Webster	22119	Gas	Processed (Residue) Gas	Royalties	39554.37
 2011	LA	Webster	22119	Gas	Unprocessed (Wet) Gas	Royalties	3454.64
@@ -1027,8 +996,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2012	LA	Beauregard	22011	Gas	Processed (Residue) Gas	Royalties	22.3
 2012	LA	Beauregard	22011	Oil	Oil	Royalties	691.63
 2012	LA	Bienville	22013	Oil & Gas		Bonus	67172
-2012	LA	Bienville	22013	Oil & Gas		Other Revenues	464.88
-2012	LA	Bienville	22013	Oil & Gas		Other Royalties	3286.05
+2012	LA	Bienville	22013	Oil & Gas		Other Revenues	3750.93
 2012	LA	Bienville	22013	Oil & Gas		Rents	162.04
 2012	LA	Bienville	22013	Gas	Processed (Residue) Gas	Royalties	1651.33
 2012	LA	Bienville	22013	Gas	Unprocessed (Wet) Gas	Royalties	138555.97
@@ -1036,8 +1004,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2012	LA	Bienville	22013	Oil	Condensate	Royalties	245.22
 2012	LA	Bienville	22013	Oil	Oil	Royalties	0.14
 2012	LA	Bossier	22015	Oil & Gas		Bonus	1586850
-2012	LA	Bossier	22015	Oil & Gas		Other Revenues	177.12
-2012	LA	Bossier	22015	Oil & Gas		Other Royalties	111512.11
+2012	LA	Bossier	22015	Oil & Gas		Other Revenues	111689.23
 2012	LA	Bossier	22015	Oil & Gas		Rents	276.46
 2012	LA	Bossier	22015	Gas	Processed (Residue) Gas	Royalties	25845652.48
 2012	LA	Bossier	22015	Gas	Unprocessed (Wet) Gas	Royalties	-19869423.36
@@ -1046,7 +1013,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2012	LA	Bossier	22015	Oil	Drip or Scrubber Condensate	Royalties	79056.59
 2012	LA	Bossier	22015	Oil	Oil	Royalties	147037.13
 2012	LA	Caddo	22017	Oil & Gas		Bonus	196
-2012	LA	Caddo	22017	Oil & Gas		Other Royalties	-2563.2
+2012	LA	Caddo	22017	Oil & Gas		Other Revenues	-2563.2
 2012	LA	Caddo	22017	Oil & Gas		Rents	1527.53
 2012	LA	Caddo	22017	Gas	Processed (Residue) Gas	Royalties	22593.13
 2012	LA	Caddo	22017	Gas	Unprocessed (Wet) Gas	Royalties	68876.28
@@ -1056,10 +1023,9 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2012	LA	Caldwell	22021	Oil & Gas		Bonus	1640
 2012	LA	Caldwell	22021	Oil & Gas		Rents	2855
 2012	LA	Caldwell	22021	Gas	Processed (Residue) Gas	Royalties	2171.64
-2012	LA	Cameron	22023	Oil & Gas		Other Royalties	0.08
+2012	LA	Cameron	22023	Oil & Gas		Other Revenues	0.08
 2012	LA	Claiborne	22027	Oil & Gas		Bonus	-1440
-2012	LA	Claiborne	22027	Oil & Gas		Other Revenues	18
-2012	LA	Claiborne	22027	Oil & Gas		Other Royalties	-2705.92
+2012	LA	Claiborne	22027	Oil & Gas		Other Revenues	-2687.92
 2012	LA	Claiborne	22027	Oil & Gas		Rents	16376.5
 2012	LA	Claiborne	22027	Gas	Processed (Residue) Gas	Royalties	30322.56
 2012	LA	Claiborne	22027	Gas	Unprocessed (Wet) Gas	Royalties	11023.06
@@ -1069,8 +1035,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2012	LA	Claiborne	22027	Oil	Oil	Royalties	41757.81
 2012	LA	Concordia	22029	Oil & Gas		Rents	396
 2012	LA	De Soto	22031	Oil & Gas		Bonus	44
-2012	LA	De Soto	22031	Oil & Gas		Other Revenues	80
-2012	LA	De Soto	22031	Oil & Gas		Other Royalties	-45283.57
+2012	LA	De Soto	22031	Oil & Gas		Other Revenues	-45203.57
 2012	LA	De Soto	22031	Oil & Gas		Rents	-42.5
 2012	LA	De Soto	22031	Gas	Processed (Residue) Gas	Royalties	57807.86
 2012	LA	De Soto	22031	Gas	Unprocessed (Wet) Gas	Royalties	1040521.01
@@ -1096,14 +1061,12 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2012	LA	Morehouse	22067	Oil & Gas		Rents	119.58
 2012	LA	Morehouse	22067	Gas	Unprocessed (Wet) Gas	Royalties	295.86
 2012	LA	Natchitoches	22069	Oil & Gas		Bonus	879547
-2012	LA	Natchitoches	22069	Oil & Gas		Other Royalties	-28.12
+2012	LA	Natchitoches	22069	Oil & Gas		Other Revenues	-28.12
 2012	LA	Natchitoches	22069	Oil & Gas		Rents	99272.16
 2012	LA	Natchitoches	22069	Oil	Oil	Royalties	608.11
 2012	LA	Ouachita	22073	Oil & Gas		Rents	324
 2012	LA	Ouachita	22073	Gas	Unprocessed (Wet) Gas	Royalties	102.31
-2012	LA	Plaquemines	22075	Oil & Gas		Other Revenues	3321
-2012	LA	Plaquemines	22075	Oil & Gas		Other Royalties	1.71
-2012	LA	Plaquemines	22075	Oil	Oil	Other Royalties	16.65
+2012	LA	Plaquemines	22075	Oil & Gas		Other Revenues	3322.71
 2012	LA	Plaquemines	22075	Oil & Gas		Rents	4880.18
 2012	LA	Plaquemines	22075	Gas	Fuel Gas	Royalties	0.39
 2012	LA	Plaquemines	22075	Gas	Processed (Residue) Gas	Royalties	52375.16
@@ -1112,7 +1075,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2012	LA	Plaquemines	22075	Oil	Condensate	Royalties	0.22
 2012	LA	Plaquemines	22075	Oil	Drip or Scrubber Condensate	Royalties	1.2
 2012	LA	Plaquemines	22075	Oil	Inlet Scrubber	Royalties	0.65
-2012	LA	Plaquemines	22075	Oil	Oil	Royalties	2165254.63
+2012	LA	Plaquemines	22075	Oil	Oil	Royalties	2165271.28
 2012	LA	Rapides	22079	Oil & Gas		Bonus	1564068
 2012	LA	Rapides	22079	Oil & Gas		Rents	95013
 2012	LA	Rapides	22079	Gas	Processed (Residue) Gas	Royalties	129950.76
@@ -1127,7 +1090,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2012	LA	South Pass	22721	NGL	Gas Plant Products	Royalties	0.58
 2012	LA	South Pass	22721	Oil	Oil	Royalties	642
 2012	LA	St Charles	22089	Oil & Gas		Rents	14156
-2012	LA	St Martin	22099	Oil & Gas		Other Royalties	0.55
+2012	LA	St Martin	22099	Oil & Gas		Other Revenues	0.55
 2012	LA	St Martin	22099	Oil & Gas		Rents	110
 2012	LA	St Martin	22099	Gas	Unprocessed (Wet) Gas	Royalties	5198.53
 2012	LA	St Martin	22099	Oil	Oil	Royalties	223142.83
@@ -1139,14 +1102,13 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2012	LA	Vermilion	22113	Oil	Condensate	Royalties	19.19
 2012	LA	Vermilion	22113	Oil	Oil	Royalties	68846.03
 2012	LA	Vernon	22115	Oil & Gas		Bonus	21200
-2012	LA	Vernon	22115	Oil & Gas		Other Revenues	566
-2012	LA	Vernon	22115	Oil & Gas		Other Royalties	-500
+2012	LA	Vernon	22115	Oil & Gas		Other Revenues	66
 2012	LA	Vernon	22115	Oil & Gas		Rents	23197
 2012	LA	Vernon	22115	Gas	Processed (Residue) Gas	Royalties	4153.33
 2012	LA	Vernon	22115	NGL	Gas Plant Products	Royalties	419.73
 2012	LA	Vernon	22115	Oil	Drip or Scrubber Condensate	Royalties	15.09
 2012	LA	Vernon	22115	Oil	Oil	Royalties	46282.44
-2012	LA	Webster	22119	Oil & Gas		Other Royalties	-2580.84
+2012	LA	Webster	22119	Oil & Gas		Other Revenues	-2580.84
 2012	LA	Webster	22119	Oil & Gas		Rents	14557.5
 2012	LA	Webster	22119	Gas	Processed (Residue) Gas	Royalties	36133.34
 2012	LA	Webster	22119	Gas	Unprocessed (Wet) Gas	Royalties	2421.8
@@ -1158,20 +1120,20 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2012	LA	West Delta	22719	NGL	Gas Plant Products	Royalties	2.48
 2012	LA	West Delta	22719	Oil	Oil	Royalties	164.53
 2012	LA	Winn	22127	Oil & Gas		Bonus	2376
-2012	LA	Winn	22127	Oil & Gas		Other Royalties	306710.93
+2012	LA	Winn	22127	Oil & Gas		Other Revenues	306710.93
 2012	LA	Winn	22127	Oil & Gas		Rents	33856.26
 2012	LA	Winn	22127	Gas	Unprocessed (Wet) Gas	Royalties	28175.41
 2012	LA	Winn	22127	Oil	Condensate	Royalties	29044.92
 2013	LA	Beauregard	22011	Gas	Processed (Residue) Gas	Royalties	8.76
 2013	LA	Beauregard	22011	Oil	Oil	Royalties	167.6
-2013	LA	Bienville	22013	Oil & Gas		Other Royalties	934.09
+2013	LA	Bienville	22013	Oil & Gas		Other Revenues	934.09
 2013	LA	Bienville	22013	Oil & Gas		Rents	150.5
 2013	LA	Bienville	22013	Gas	Processed (Residue) Gas	Royalties	3257.94
 2013	LA	Bienville	22013	Gas	Unprocessed (Wet) Gas	Royalties	69245.72
 2013	LA	Bienville	22013	NGL	Gas Plant Products	Royalties	34.53
 2013	LA	Bienville	22013	Oil	Condensate	Royalties	343.19
 2013	LA	Bossier	22015	Oil & Gas		Bonus	15830
-2013	LA	Bossier	22015	Oil & Gas		Other Royalties	145839.61
+2013	LA	Bossier	22015	Oil & Gas		Other Revenues	145839.61
 2013	LA	Bossier	22015	Oil & Gas		Rents	2071
 2013	LA	Bossier	22015	Gas	Fuel Gas	Royalties	8656.6
 2013	LA	Bossier	22015	Gas	Processed (Residue) Gas	Royalties	7699021.48
@@ -1181,7 +1143,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2013	LA	Bossier	22015	Oil	Drip or Scrubber Condensate	Royalties	38379.08
 2013	LA	Bossier	22015	Oil	Oil	Royalties	206868.63
 2013	LA	Caddo	22017	Oil & Gas		Bonus	342
-2013	LA	Caddo	22017	Oil & Gas		Other Royalties	4040.05
+2013	LA	Caddo	22017	Oil & Gas		Other Revenues	4040.05
 2013	LA	Caddo	22017	Oil & Gas		Rents	1583
 2013	LA	Caddo	22017	Gas	Processed (Residue) Gas	Royalties	5389.17
 2013	LA	Caddo	22017	Gas	Unprocessed (Wet) Gas	Royalties	225998.98
@@ -1192,8 +1154,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2013	LA	Calcasieu	22019	Oil & Gas		Rents	280
 2013	LA	Caldwell	22021	Oil & Gas		Rents	3095
 2013	LA	Caldwell	22021	Gas	Processed (Residue) Gas	Royalties	1517.92
-2013	LA	Claiborne	22027	Oil & Gas		Other Revenues	18
-2013	LA	Claiborne	22027	Oil & Gas		Other Royalties	-3600
+2013	LA	Claiborne	22027	Oil & Gas		Other Revenues	-3582
 2013	LA	Claiborne	22027	Oil & Gas		Rents	17896
 2013	LA	Claiborne	22027	Gas	Processed (Residue) Gas	Royalties	41278.03
 2013	LA	Claiborne	22027	Gas	Unprocessed (Wet) Gas	Royalties	14021.87
@@ -1203,7 +1164,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2013	LA	Claiborne	22027	Oil	Oil	Royalties	37163.81
 2013	LA	Concordia	22029	Oil	Oil	Royalties	68029.39
 2013	LA	De Soto	22031	Oil & Gas		Bonus	110
-2013	LA	De Soto	22031	Oil & Gas		Other Royalties	-158034.33
+2013	LA	De Soto	22031	Oil & Gas		Other Revenues	-158034.33
 2013	LA	De Soto	22031	Oil & Gas		Rents	82.5
 2013	LA	De Soto	22031	Gas	Processed (Residue) Gas	Royalties	93820.51
 2013	LA	De Soto	22031	Gas	Unprocessed (Wet) Gas	Royalties	720446.28
@@ -1229,7 +1190,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2013	LA	Morehouse	22067	Oil & Gas		Rents	119.58
 2013	LA	Morehouse	22067	Gas	Unprocessed (Wet) Gas	Royalties	486.75
 2013	LA	Natchitoches	22069	Oil & Gas		Bonus	2275.86
-2013	LA	Natchitoches	22069	Oil & Gas		Other Royalties	-20.47
+2013	LA	Natchitoches	22069	Oil & Gas		Other Revenues	-20.47
 2013	LA	Natchitoches	22069	Oil & Gas		Rents	99755.7
 2013	LA	Natchitoches	22069	Gas	Processed (Residue) Gas	Royalties	4369.57
 2013	LA	Natchitoches	22069	Gas	Unprocessed (Wet) Gas	Royalties	-4369.02

@@ -29,8 +29,8 @@ permalink: /explore/federal-revenue-by-location/
       </a>
     </div>
   </div>
-  <section class="container-right-8">
-    <div class="filters-wrapper slab-foxtrot container">
+  <section class="container-right-8 filters-wrapper_outer">
+    <div data-sticky-offset="0" data-absolute="true" class="sticky_nav filters-wrapper container" data-toggler="filters">
       <h1 data-toggler="filters" data-filter-description="" class="filter-description filter-description_closed">
         Revenue from
         <a href="#commodity-group-selector" class="filter-part" data-key="commodity">all commodities</a>
@@ -109,7 +109,7 @@ permalink: /explore/federal-revenue-by-location/
     </div>
   </div>
 
-  <div class="slab-alpha">
+  <div class="explore-exploration slab-alpha">
 
     <div class="regions container">
 
@@ -234,3 +234,4 @@ permalink: /explore/federal-revenue-by-location/
   };
 </script>
 <script src="{{ site.baseurl }}/js/pages/revenue.js"></script>
+<script src="{{ site.baseurl }}/js/components/sticky-nav.js"></script>

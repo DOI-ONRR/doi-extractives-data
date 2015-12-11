@@ -16,53 +16,77 @@ title: Home
   </div>
 </section>
 <section class="slab-alpha container-padded">
-  <div class="container-outer">
+  <div class="container-outer tab-interface">
 
-    <div class="home-explore-placeholder">
-      <img src="{{ site.baseurl }}/img/explore-data-homepage-fpo.png" alt="Explore data homepage teaser placeholder">
-    </div>
+    <h3 class="h5 explore_home-subhead">Explore Data</h3>
+    <h2 class="h3 explore_home-heading">Narrative-style title encapsulating the explore data section</h2>
 
-    <!-- <p>Explore Data</p>
-    <p>
-      <icon class="icon-oil"></icon>
-      <icon class="icon-gas"></icon>
-      <icon class="icon-copper"></icon>
-      <icon class="icon-iron"></icon>
-      <icon class="icon-gold"></icon>
-      <icon class="icon-coal"></icon>
-      <icon class="icon-renewables"></icon>
-    </p>
-    <h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</h2>
-    <div class="container-half">
-      <p>Placeholder text – new bay bridge tiny mysterious door in a tree, google buses haight golden gate park the buffalos the aquarium. Dog or human lombard as candy land, bring your own big wheel hearing outside lands from the balcony skating embarcadero.</p>
-      <button class="button-big button-primary">Explore data</button>
-    </div> -->
+    <ul class="explore_home-tabs" role="tablist">
+     <a href="#revenue" tabindex="0" role="tab" aria-controls="revenue" aria-selected="true"><li role="presentation">Revenue</li></a>
+     <a href="#production" tabindex="-1" role="tab" aria-controls="production"><li role="presentation">Production</li></a>
+     <a href="#impact" tabindex="-1" role="tab" aria-controls="impact"><li role="presentation">Economic Impact</li></a>
+    </ul>
 
-    <!--
-    <div class="container-half">
-      <eiti-map id="region-map" simplify="1e-2"
-        projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/">
-        <svg>
-          <g class="offshore areas" data-url="offshore-simple.json"
-            data-layer-type="offshore"
-            data-title="properties.name"
-            data-mesh="true">
-          </g>
-          <g class="onshore states" data-url="us-topology.json"
-            data-object="states"
-            data-title="properties.name || properties.abbr"
-            data-mesh="true">
-          </g>
-          <g class="onshore counties" data-url="us-topology.json"
-            data-object="counties"
-            data-filter-template="properties.state === '{region}'"
-            data-title="properties.county"
-            data-mesh="true">
-          </g>
-        </svg>
-      </eiti-map>
-    </div>
-    -->
+    <section class="explore_home-main" id="revenue" role="tabpanel">
+      <div class="container-left-3">
+        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</p>
+        <a href="{{ site.baseurl }}/explore/" class="button-primary explore_home-button">Explore data</a>
+      </div>
+      <div  class="container-left-6">
+        <a href="{{ site.baseurl }}/explore/federal-revenue-by-location/" class="explore_home-img">
+          <h4>Revenue from all commodities on U.S. federal lands</h4>
+          <img src="{{ site.baseurl }}/img/explore-home-revenue.png" alt="Map showing revenues from extractive resources on federal lands">
+        </a>
+      </div>
+      <div class="container-left-3">
+        <p class="explore_home-fact">In 2013, the federal government collected a total of <strong>$12 billion</strong> in revenue from those extracting resources on federal lands.</p>
+        <ul class="explore_home-links">
+          <li><a href="{{ site.baseurl }}/explore/#revenue">Revenue topics</a></li>
+          <li><a href="{{ site.baseurl }}/explore/">All data topics</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="explore_home-main" id="production" role="tabpanel" aria-hidden="true">
+      <div class="container-left-3">
+        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</p>
+        <a href="{{ site.baseurl }}/explore/" class="button-primary explore_home-button">Explore data</a>
+      </div>
+      <div  class="container-left-6">
+        <a href="{{ site.baseurl }}/explore/federal-production/" class="explore_home-img">
+          <h4>Production from federal vs. non-federal lands and waters</h4>
+          <img src="{{ site.baseurl }}/img/explore-home-production.png" alt="Chart showing percentage of production occuring on federal versus non-federal lands and waters">
+        </a>
+      </div>
+      <div class="container-left-3">
+        <p class="explore_home-fact">Only about <strong>25%</strong> of all U.S. xxxxxxxxxx production occurs on federal lands and waters. However, <strong>40%</strong> of U.S. coal production takes place on federal lands.</p>
+        <ul class="explore_home-links">
+          <li><a href="{{ site.baseurl }}/explore/#production">Production topics</a></li>
+          <li><a href="{{ site.baseurl }}/explore/">All data topics</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="explore_home-main" id="impact" role="tabpanel" aria-hidden="true">
+      <div class="container-left-3">
+        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</p>
+        <a href="{{ site.baseurl }}/explore/" class="button-primary explore_home-button">Explore data</a>
+      </div>
+      <div  class="container-left-6">
+        <a href="{{ site.baseurl }}/explore/jobs/" class="explore_home-img">
+          <h4>Employment in extractive industries vs. all other industries</h4>
+          <img src="{{ site.baseurl }}/img/explore-home-impact.png" alt="Chart showing employment in extractive industries vs. all other industries">
+        </a>
+      </div>
+      <div class="container-left-3">
+        <p class="explore_home-fact">Nemo enim ipsam voluptatem quia voluptas sit aspernatur <strong>number</strong> aut odit aut fugit, sed quia consequuntur magni and perhaps  <strong>another</strong>.</p>
+        <ul class="explore_home-links">
+          <li><a href="{{ site.baseurl }}/explore/#impact">Economic impact topics</a></li>
+          <li><a href="{{ site.baseurl }}/explore/">All data topics</a></li>
+        </ul>
+      </div>
+    </section>
+
   </div>
 </section>
 
@@ -96,8 +120,6 @@ title: Home
 
         <p>The U.S. is one of the top producers of oil, gas, and coal as well as nonenergy minerals like gold, iron, and copper.</p>
 
-        <!-- <p>[This will be the U.S. natural resources sectors overview from the written report with high-level info on all land types. It will also have interactive charts based on Federal data, such as the pie chart on the current beta site.]</p> -->
-
         <a href="{{ site.baseurl }}/how-it-works/production/" class="card-link">Learn about U.S. natural resources <i class="icon-chevron-sm"></i></a>
 
       </div>
@@ -120,22 +142,6 @@ title: Home
 
     </article>
 
-<!--     <article class="card">
-
-      <a class="card-image_link" href="{{ site.baseurl }}/explore/federal-revenue-by-company/"><img class="card-image" src="{{ site.baseurl }}/img/placeholders/placeholder-rectangle.png" alt="companies"></a>
-
-      <div class="card-content">
-
-        <a class="card-image_link" href="{{ site.baseurl }}/explore/federal-revenue-by-company/"><h3 class="card-title">What companies work in these industries?</h3></a>
-
-        <p>Thousands of companies, large and small, contributed to the $12.64 billion in revenue collected by the Department of the Interior in 2013.</p>
-
-        <a href="{{ site.baseurl }}/explore/federal-revenue-by-company/" class="card-link">Explore data about these companies <i class="icon-chevron-sm"></i></a>
-
-      </div>
-
-    </article> -->
-
     <article class="card">
 
       <a class="card-image_link" href="{{ site.baseurl }}/how-it-works/revenues/"><img class="card-image" src="{{ site.baseurl }}/img/placeholders/placeholder-rectangle.png" alt="revenues"/></a>
@@ -145,8 +151,6 @@ title: Home
         <a href="{{ site.baseurl }}/how-it-works/revenues/"><h3 class="card-title">How do natural resources result in federal revenues?</h3></a>
 
         <p>Companies pay for the right to explore on federal lands. If they find and extract resources, they may pay royalties, fees, taxes, and other revenues, depending on the resource.</p>
-
-        <!-- <p>The federal government issues leases granting rights to explore for natural resources which may exist on federal lands. In return, part of the sales value for many of these commodities is paid back to the government as “royalties” (along with other types of revenues), for the benefit of the American people.</p> -->
 
         <a href="{{ site.baseurl }}/how-it-works/revenues/" class="card-link">See how it works <i class="icon-chevron-sm"></i></a>
 
@@ -180,8 +184,6 @@ title: Home
 
         <p>Revenue from natural resources goes to federal, state, and county governments, as well as to a range of funds that work at the local and national levels.</p>
 
-        <!-- <p>[This is where information on revenue disbursement will go. The idea will be similar to the current 'bubble graphic' on the beta site, but that interaction tested poorly (people didn't get it) and so we'll be re-working that design in the fall, and adding more data to it, such as disbursements by state and info on the Land and Water Conservation Fund.]</p> -->
-
         <a href="{{ site.baseurl }}/explore/disbursements/" class="card-link">See where the money goes <i class="icon-chevron-sm"></i></a>
 
       </div>
@@ -200,3 +202,5 @@ title: Home
     <h2><a href="{{ site.baseurl }}/how-it-works/">Learn how natural resources result in federal revenue</a></h2>
 
 </section>
+
+<script src="{{ site.baseurl }}/js/components/aria-tabs.js"></script>

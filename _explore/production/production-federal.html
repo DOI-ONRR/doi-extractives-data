@@ -112,7 +112,7 @@ permalink: /explore/federal-production/
           <div class="map-wrapper">
             <eiti-map id="US-map" class="region-map" simplify="1e-2"
               projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/">
-              <svg>
+              <svg class="region-map" viewBox="20 55 945 535">
                 <g class="offshore areas" data-url="offshore-regions.json"
                   data-object="regions"
                   data-id="'US-' + id"
@@ -182,6 +182,8 @@ permalink: /explore/federal-production/
                 <g class="onshore states reference" data-url="us-topology.json"
                   data-object="states" data-mesh="true">
                 </g>
+                <g class="offshore regions" data-url="offshore-regions.json"
+                  data-mesh="true"></g>
                 <g class="offshore areas" data-url="offshore-regions.json"
                   data-object="{{ region.id }}"
                   data-title="properties.name"

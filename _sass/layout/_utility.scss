@@ -2,6 +2,14 @@
   text-align: center;
 }
 
+.u-padding-right {
+  padding-right: 0.5em;
+}
+
+.u-margin-top {
+  margin-top: $base-padding;
+}
+
 .sr-only {
   height: px;
   left: -10000px;
@@ -9,4 +17,8 @@
   position: absolute;
   top: auto;
   width: 1px;
+}
+
+.subpage-breadcrumb {
+  margin-bottom: 0;
 }

@@ -181,12 +181,12 @@
       }
     },
 
-    focus: function(e) {
+    focus: function() {
       window.addEventListener('keyup', getListener('keypress', this));
       this.addEventListener('blur', events.blur);
     },
 
-    blur: function(e) {
+    blur: function() {
       window.removeEventListener('keyup', getListener('keypress', this));
       this.removeEventListener('blur', events.blur);
     }

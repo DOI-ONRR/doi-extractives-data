@@ -1,0 +1,45 @@
+// US Bar Disclaimer Banner
+//
+// This is the banner that lives at the top of every page.
+// It links people to our github issues so that we can get
+// input from the American people.
+//
+// Markup:
+// <section class="banner slab-beta">
+//   <span class="banner-left">An official website of the US Government <img class="banner-image" src="{{ site.baseurl }}/img/us_flag_small.png" alt="US flag signifying that this is a United States Federal Government website"></span>
+//   <span class="banner-right">This site is in development. <a class="link-alpha" title="Learn about this site's development" tabindex="0" href="https://github.com/18F/doi-extractives-data/issues/">See what's new</a>.</span>
+// </section>
+//
+// Styleguide blocks.banner
+
+.banner {
+  @include clearfix();
+  @include heading('para-sm');
+  @include font-size(0.75);
+
+  border-bottom: 1px solid $mid-gray;
+  padding: ($base-padding / 2) $base-padding-large;
+  text-align: center;
+}
+
+.banner-left {
+  display: none;
+  float: left;
+
+  @include respond-to(tiny-up) {
+    display: block;
+  }
+}
+
+.banner-right {
+  text-align: center;
+
+  @include respond-to(tiny-up) {
+    float: right;
+  }
+}
+
+.banner-image {
+  padding-left: $base-padding-lite / 2;
+  margin-bottom: -1px;
+}

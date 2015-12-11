@@ -1,4 +1,4 @@
- "Abandoned mind land fee": "A fee for current day coal production that funds reclamation of mines abandoned before 1977."
+ "Abandoned mine land fee": "A fee for current day coal production that funds reclamation of mines abandoned before 1977."
  "Acquisition fee": "A fee for securing an uncompetitive lease in place of a bonus." 
  "Annual fee": "A yearly maintenance fee for maintaining a claim." 
  "Bonus": "The amount the highest bidder paid for a natural resource lease."
@@ -15,6 +15,7 @@
  "Hydraulic fracturing": "A well development process that involves injecting water under high pressure into a bedrock formation through the well, to increase the size and extent of existing bedrock fractures."
  "Indian lands": "Lands owned by Native American, including tribal lands held in trust by the federal government for a tribe’s use, Indian allotments held in trust by the federal government for individual use, and lands held by Alaska Native corporations."
  "Lease": "A contract that allows a company to be the exclusive entity that can apply to explore for and extract natural resources within a specific tract of federal lands or waters."
+ "Lease condensate": "Light liquid hydrocarbons recovered from oil and natural gas wells during production."
  "Megawatt Capacity (MC) fee": "A revenue payment for the calculated value of electricity generated on federal lands." 
  "Multi-Stakeholder Group (MSG)": "A cross-sector body comprised of members and alternates from government, industry, and civil society organizations commissioned by the Secretary of the Interior to guide and monitor EITI implementation."
  "North American Industry Classification System (NAICS)": "The standard used by federal agencies in classifying business establishments for the purpose of collecting, analyzing, and publishing statistical data related to the U.S. economy."
@@ -22,6 +23,7 @@
  "Outer Continental Shelf": "The part of the continental shelf under federal jurisdiction, seaward of the line that marks state ownership, often three miles off a state’s coastline."
  "Paying quantities": "Quantities of oil or gas that are sufficient to yield a profit to the lease holder over operating expenses, even though the drilling costs or equipping costs are never recovered, and even if the undertaking as a whole may result in a loss to the lease holder."
  "Petroleum products": "Products come from processing crude oil (including lease condensate), natural gas, and other hydrocarbon compounds. These include unfinished oils, liquefied petroleum gases, pentanes plus, aviation gasoline, motor gasoline, naphtha-type jet fuel, kerosene-type jet fuel, kerosene, distillate fuel oil, residual fuel oil, petrochemical feedstocks, special naphthas, lubricants, waxes, petroleum coke, asphalt, road oil, still gas, and miscellaneous products."
+ "Play": "A group of oil and gas fields in the same region formed by the same geological processes."
  "Private lands": "Lands owned by citizens or corporations."
  "Proved reserves": "Quantities of natural resources that, by analysis of geological and engineering data, can be estimated with reasonable certainty to be commercially recoverable from known reservoirs and under current economic conditions, operating methods, and government regulations."
  "Reclamation": "The process of restoring the surface environment to acceptable pre-existing conditions, including surface contouring, equipment removal, well plugging, and revegetation."
@@ -35,5 +37,6 @@
  "Subsurface rights": "A lease holder’s right to use as much of the land beneath the surface as necessary to operate under the lease."
  "Subsurface mining": "Underground mining, which has different and more labor intensive techniques than surface mining."
  "Surface rights": "A leaseholder’s right to use as much of the surface of the land as necessary to operate under the lease."
+ "Tax expenditures": "Revenue lossess attributed to provisions of federal tax laws that allow a special exclusion, exemption, or deduction from gross income, or which provide a special credit, a preferential rate of tax, or a deferral of tax liability."
  "Wet gas": "Natural gas that hasn’t been treated to remove liquid hydrocarbons or other nonhydrocarbons that make the gas unmarketable."
 

@@ -1,0 +1,160 @@
+---
+title: Exports | Explore Data
+layout: default
+permalink: /explore/exports/
+---
+
+<section id="gdp" class="explore-subpage container">
+  <div class="container-left-4">
+    <div class="container-outer">
+      <div>
+        <a class="breadcrumb" href="{{ site.baseurl }}/explore/">Explore</a>
+        /
+      </div>
+      <h1>Exports</h1>
+      <!-- <p>In 2013, the U.S. exported $137,558 million in petroleum end-use goods, 8.6% of all exports. The U.S. is now a net exporter of petroleum products and coal, although still a net importer of natural gas and crude oil.</p> -->
+      <p>Explore extractive industries exports by state from 2011 to 2013 as dollar totals, and as percent of all exports.</p>
+
+      <p>This data comes from the US Census and lists the top 25 exports for each state. Because the data only lists the top 25 commodities, there is some data for many natural resources in most states, but some states might show as 'no data' on our map.</p>
+
+      <a href="{{site.baseurl}}/downloads/#exports">See data and documentation &#8594;
+      </a>
+
+    </div>
+  </div>
+  <section class="container-right-8">
+    <div class="filters-wrapper slab-foxtrot container">
+      <h1 data-toggler="filters" data-filter-description="" class="filter-description filter-description_closed">
+        Exports from extractives in
+        <a href="#region-selector" class="filter-part" data-key="region">the entire U.S.</a>
+        (<a href="#year-selector" class="filter-part" data-key="year">2013</a>)
+      </h1>
+
+      <button class="toggle-filters toggle-desktop" is="eiti-toggle" aria-controls="filters" data-expanded-text="Hide filters" data-collapsed-text="Show filters" data-toggler="filters">Show filters</button>
+
+      <form id="filters" aria-hidden="true" class="filters">
+        <div class="filters-heading">
+          <h3>Filter exports</h3>
+        </div>
+        <div class="container-left-6 filter">
+          <label for="region-selector">Region</label>
+          <select id="region-selector" name="region">
+            <option value="">All U.S.</option>
+            {% for state in site.data.states %}
+            <option value="{{ state.id }}">{{ state.name }}</option>
+            {% endfor %}
+          </select>
+        </div>
+        <div id="unit-filter" class="container-right-6 filter">
+          <label for="unit-selector">Show Results as</label>
+          <div id="unit-selector" class="container unit-filter">
+            <input id="units-dollars" class="unit-selector" type="radio" name="units" value="dollars"/>
+            <label class="unit-selector-label" for="units-dollars"></label>
+            <input id="units-percent" class="unit-selector" type="radio" name="units" value="percent"/>
+            <label class="unit-selector-label" for="units-percent"></label>
+          </div>
+        </div>
+
+        <div class="container-left">
+          <label for="year-selector">Years</label>
+        </div>
+        <div class="filter container">
+          <svg id="timeline" class="timeline" viewBox="0 0 1024 60"></svg>
+        </div>
+
+        <div class="filter container filters-last">
+          <eiti-slider id="year-selector" name="year"
+            min="2011" max="2014" snap="1" value="2014">
+          </eiti-slider>
+        </div>
+
+        <h1 data-toggler="filters" data-filter-description="" class="filter-description">
+          Exports from extractives in
+          <a href="#region-selector" class="filter-part" data-key="region">the entire U.S.</a>
+          (<a href="#year-selector" class="filter-part" data-key="year">2013</a>)
+        </h1>
+
+      </form>
+
+      <div class="container-outer">
+        <button class="toggle-filters toggle" is="eiti-toggle" aria-controls="filters" data-expanded-text="Hide filters" data-collapsed-text="Show filters" data-toggler="filters">Show filters</button>
+      </div>
+
+    </div>
+
+
+  </div>
+
+  <div class="slab-alpha">
+
+    <div class="regions container">
+
+      <section id="US" class="region active">
+        <div class="map-wrapper">
+          <eiti-map id="US-map" simplify="1e-2"
+            projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/">
+            <svg class="region-map">
+              <g class="onshore states" data-url="us-topology.json"
+                data-object="states"
+                data-id="'US-' + id"
+                data-href="'#?region=' + id"
+                data-title="properties.name"
+                data-mesh="true">
+              </g>
+            </svg>
+          </eiti-map>
+
+          <div class="map-legend"></div>
+        </div>
+
+        <h3 class="region-header-category">Exports by state</h3>
+        <table class="subregions">
+          <thead class="region-header"></thead>
+          <tbody></tbody>
+        </table>
+
+      </section>
+
+      {% for region in site.data.states %}
+      <section id="{{ region.id }}" class="region onshore">
+        <div class="map-wrapper">
+          <eiti-map id="{{ region.id }}-map" simplify="1e-2"
+            projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/" zoom-to="{{ region.id }}">
+            <svg class="region-map">
+              <g class="onshore states" data-url="us-topology.json"
+                data-object="states"
+                data-filter="id === '{{ region.id }}'">
+              </g>
+            </svg>
+          </eiti-map>
+
+          <div class="map-legend"></div>
+        </div>
+
+        <h3 class="region-header-category">Exports in {{ region.name }}</h3>
+        <table class="subregions">
+          <thead class="region-header"></thead>
+          <tbody></tbody>
+        </table>
+
+      </section>
+      {% endfor %}
+
+    </div>
+  </section>
+</section>
+
+<script src="{{ site.baseurl }}/js/vendor/immutable.min.js"></script>
+<script src="{{ site.baseurl }}/js/components/eiti-bar.js"></script>
+<script>
+  eiti.data.REGION_ID_NAME = {
+    {% for state in site.data.states %}
+    '{{ state.id }}': '{{ state.name }}',
+    {% endfor %}
+    {% for area in site.data.offshore_areas %}
+    '{{ area.id }}': '{{ area.name }}',
+    {% endfor %}
+    'US': 'the entire U.S.'
+  };
+</script>
+<script src="{{ site.baseurl }}/js/pages/exports.js"></script>

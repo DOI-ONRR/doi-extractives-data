@@ -6,7 +6,7 @@
 
   Accordion.prototype = {
     /**
-     * Used to traverse up the DOM tree to find a parent with 
+     * Used to traverse up the DOM tree to find a parent with
      * the a specific attribute
      *
      * @param String parentAttr
@@ -19,15 +19,16 @@
       while(obj.getAttribute(parentAttr)) {
           obj = obj.parentNode;
       }
-      return obj; 
+      return obj;
     },
     /**
-     * Triggered by a click handler 
+     * Triggered by a click handler
      * finds a parent node and toggles the 'accordion-open' attribute
      *
      * @return void
      */
-    toggleAccordion: function () {
+    toggleAccordion: function (e) {
+
       var e = e || window.event;
       var target = e.target || e.srcElement;
 
@@ -39,7 +40,7 @@
       accordionItem.setAttribute('accordion-open', accordionStatus);
     },
     /**
-     * Event handler that binds 
+     * Event handler that binds
      * to the toggleAccordion function
      *
      * @return void
@@ -47,7 +48,8 @@
     registerEventListeners: function () {
       var nextStep = false;
       for (var i = 0; i < this.accordionButtons.length; i++) {
-        this.accordionButtons[i].addEventListener("click", this.toggleAccordion.bind(this));
+        this.accordionButtons[i].addEventListener('click',
+          this.toggleAccordion.bind(this));
 
         if (this.accordionButtons[i].classList.contains('accordion-button')) {
           if (nextStep) {
@@ -56,13 +58,12 @@
             nextStep = true;
           }
         }
-        
-      };
+      }
     }
-  }
+  };
 
   var accordion = new Accordion();
 
   accordion.registerEventListeners();
-  
+
 })(this);

@@ -1,5 +1,12 @@
-eiti-map,
-svg[is="eiti-map"] {
+eiti-map {
+  display: block;
+  position: relative;
+  // border: 1px solid #ccc;
+
+  svg {
+    display: block;
+    margin: 0;
+  }
 
   path {
     vector-effect: non-scaling-stroke;
@@ -19,18 +26,19 @@ svg[is="eiti-map"] {
   }
 
   a:hover path.feature {
-    // fill: #ccc;
+    stroke: $neutral-gray;
+    stroke-width: 2;
   }
 
   path.mesh {
     fill: none;
     pointer-events: none;
-    stroke: #aaa;
+    stroke: lighten($neutral-gray, 10%); // #aaa
     stroke-width: 1;
   }
 
   path.feature.zoomed {
-    stroke: #aaa;
+    stroke: lighten($neutral-gray, 10%);
     stroke-width: 3;
   }
 

@@ -14,7 +14,7 @@
 //   <div class="card-content">
 //     <h1 class="card-title">What are natural resources?</h1>
 //     <p>[This is where we say what natural resources are]</p>
-//     <a href="#" class="card-link">Find out more <span class="shrink-fa"><i class="fa fa-chevron-right"></i></span></a>
+//     <a href="#" class="card-link">Find out more <i class="icon-chevron-sm"></i></a>
 //   </div>
 // </article>
 // </div>
@@ -29,7 +29,7 @@
 // <div class="container">
 // <article class="card card-secondary">
 //   <a href="/resource_revenues/coal"><div class="card-splash">
-//     <h3 class="card-splash_title">Coal <span class="revenues-fa"><i class="fa fa-chevron-right"></i></span></h3>
+//     <h3 class="card-splash_title">Coal <i class="icon-chevron-sm"></i></h3>
 //     <div class="card-splash_image">
 //       <img class="" src="https://eiti-dev.18f.gov/img/icons/coal.svg" alt="coal">
 //     </div>
@@ -44,28 +44,37 @@
 // Styleguide components.card.secondary
 
 .card {
-	@include span-columns(4);
-  @include omega(3n);
+  @include span-columns(12);
+
   background-color: $white;
   border-radius: 10px;
-  position: relative;
-  margin-top: $base-padding;
   height: 550px;
+  margin-top: $base-padding;
+  position: relative;
+
+  @include respond-to(small-to-large) {
+    @include span-columns(6);
+    @include omega(2n);
+  }
+
+  @include respond-to(large-up) {
+    @include span-columns(4);
+    @include omega(3n);
+  }
 }
 
 .card-secondary {
   height: 450px;
   @include span-columns(3);
-  // Todo, add responsive breakpoints, omega-override
 }
 
-.card-splash{
+.card-splash {
   background-color: $light-black;
-  color: $white;
   border-radius: 10px 10px 0 0;
-  position: relative;
+  color: $white;
   height: 170px;
   padding: $base-padding;
+  position: relative;
 }
 
 .card-splash_title {
@@ -73,23 +82,25 @@
 }
 
 .card-splash_image {
+  bottom: $base-padding;
   position: absolute;
   right: $base-padding;
-  bottom: $base-padding;
 }
 
 img.card-image {
-  border-bottom: 6px solid $dark-gray;
+  border-bottom: 4px solid $light-gray;
   border-radius: 10px 10px 0 0;
   width: 100%;
+
   &:hover,
   &:focus {
-    border-bottom: 6px solid $dark-gray;
+    border-bottom: 4px solid $blue;
   }
 }
 
 .card-image_link {
   border: none;
+
   &:hover,
   &:focus {
     border: none;
@@ -101,14 +112,15 @@ img.card-image {
 }
 
 .card-title {
-  padding-right: $base-padding;
   margin-bottom: $base-padding-lite;
+  padding-right: $base-padding;
+
   a {
     color: $dark-gray;
   }
 }
 
 .card-link {
-  position: absolute;
   bottom: $base-padding;
+  position: absolute;
 }

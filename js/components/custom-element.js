@@ -12,8 +12,8 @@
       this.removeEventListener('click', getListener('click', this));
     },
 
-    attributeChangedCallback: function(attr, prev, value) {
-    },
+    // attributeChangedCallback: function(attr, prev, value) {
+    // },
 
     value: accessor('value', null, null, function(value) {
       this.dispatchEvent(new CustomEvent('change', {value: value}));
@@ -34,10 +34,10 @@
   }
 
   function registerElement(name, proto, parent) {
-    if (!parent) parent = HTMLElement;
+    parent = parent || HTMLElement;
     for (var key in proto) {
       if (typeof proto[key] === 'function') {
-        proto[key] = {value: proto[key]};
+        proto[key] = { value: proto[key] };
         if (key.indexOf('__') === 0) {
           proto[key].enumerable = false;
         }
@@ -62,10 +62,14 @@
           : val;
       },
       set: function(value) {
-        if (parse) value = parse.call(this, value, name);
+        if (parse) {
+          value = parse.call(this, value, name);
+        }
         if (value !== this[key]) {
           this[key] = value;
-          if (change) change.call(this, value, key);
+          if (change) {
+            change.call(this, value, key);
+          }
         }
       }
     };

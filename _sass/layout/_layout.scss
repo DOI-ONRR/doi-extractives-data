@@ -1,5 +1,5 @@
 // Container
-// 
+//
 // .container-outer - should be placed on an outer div for appropriate padding
 // .container-left - 7/12 width container that floats left
 // .container-right - 5/12 width container that floats left
@@ -32,25 +32,14 @@
 
 %container-side {
 
-  @include respond-to(tiny-down) {
+  @include span-columns(12);
 
-    @include span-columns(12);
-
-    padding-bottom: $base-padding;
-  }
-  
-  @include respond-to(tiny-up) {
-
-    @include span-columns(12);
-    
-    padding-bottom: $base-padding;
-  }
+  padding-bottom: $base-padding;
 
   @include respond-to(huge-up) {
     padding-left: 0;
     padding-right: 0;
   }
-
 }
 
 .container-left,
@@ -66,6 +55,8 @@
 
 .container-left-8 {
   @extend %container-side;
+
+  @include span-columns(12);
 
   @include respond-to(medium-up) {
 
@@ -84,12 +75,32 @@
   }
 }
 
+.container-left-6 {
+  @extend %container-side;
+
+  @include respond-to(medium-up) {
+
+    @include span-columns(6);
+
+  }
+}
+
 .container-left-4 {
   @extend %container-side;
 
   @include respond-to(medium-up) {
 
     @include span-columns(4);
+
+  }
+}
+
+.container-left-3 {
+  @extend %container-side;
+
+  @include respond-to(medium-up) {
+
+    @include span-columns(3);
 
   }
 }
@@ -114,6 +125,28 @@
 
   }
 }
+
+.container-right-6 {
+  @extend %container-side;
+
+  @include respond-to(medium-up) {
+
+    @include span-columns(6);
+    @include omega();
+  }
+}
+
+.container-right-3 {
+  @extend %container-side;
+
+  @include span-columns(12);
+
+  @include respond-to(medium-up) {
+
+    @include span-columns(3);
+  }
+}
+
 .container-right-7 {
   @extend %container-side;
 
@@ -134,6 +167,16 @@
   }
 }
 
+.container-right-9 {
+  @extend %container-side;
+
+  @include respond-to(medium-up) {
+
+    @include span-columns(9);
+
+  }
+}
+
 .container-half {
   @extend %container-side;
 
@@ -142,7 +185,7 @@
     @include span-columns(6);
 
     @include omega(odd);
-    
+
   }
 }
 

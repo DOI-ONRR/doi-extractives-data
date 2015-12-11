@@ -1,7 +1,7 @@
 title: US EITI
 
 sass:
-  style: compressed
+  style: nested
   sass_dir: _sass
 
 exclude:
@@ -10,12 +10,19 @@ exclude:
   - package.json
   - show
   - test
+  - styleguide-template
   - 'Gemfile*'
 
 collections:
-  communities:
+  case-studies:
     output: true
-    permalink: /communities/:community/
-  explores:
+    permalink: /case-studies/:case-study/
+  explore:
     output: true
-    permalink: /explores/:explore/
+    permalink: /explore/:explore/
+  how-it-works:
+    output: true
+    permalink: /how-it-works/:subpage/
+  downloads:
+    output: true
+    permalink: /downloads/:subpage/

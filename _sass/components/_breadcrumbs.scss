@@ -1,0 +1,16 @@
+// Breadcrumbs
+//
+// Breadcrumbs throughout site
+//
+// Markup:
+// <div>
+//   <a class="breadcrumb" href="{{ site.baseurl }}/how-it-works/">How it works</a>
+//   /
+// </div>
+//
+// Styleguide components.breadcrumbs
+
+.breadcrumb {
+  color: $dark-gray;
+  font-weight: $weight-light;
+}

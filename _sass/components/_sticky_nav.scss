@@ -1,23 +1,31 @@
-.sticky_nav{
-  position: absolute;
-  left: percentage(7 / 12);
+.sticky_nav {
   padding-left: $base-padding-extra;
-  top: 0;  
-  
+  padding-top: $base-padding-extra;
+  top: 0;
+
   @include respond-to(medium-down) {
     display: none;
   }
-}
-.sticky_nav-nav{
-    margin-top: $base-padding-extra;
+
+  ul a {
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
 }
 
 .sticky_nav-nav_item {
+  @include heading('para-md');
+  display: block;
+  line-height: 1.2;
   list-style-type: none;
-  padding: $base-padding-lite;
-  @include heading('para-lg');
   margin-bottom: 0;
-  &.active a {
+  padding: $base-padding-lite;
+
+  &[data-active=true] {
     color: $dark-gray;
     font-weight: $weight-book;
   }

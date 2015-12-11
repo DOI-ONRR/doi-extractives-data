@@ -19,14 +19,17 @@ REVENUE_FILES = \
 	regional/resource-revenues.tsv \
 	regional/revenues.tsv \
 	county-revenues-by-state \
-	county-resource-revenues-by-state
+	county-resource-revenues-by-state \
+	company/revenue.tsv
 
 # production volume files
 PRODUCTION_FILES = \
 	national/production.tsv \
 	state/production.tsv \
-	county/production.tsv \
-	offshore/production.tsv
+	county-products-by-state \
+	county-production-by-state \
+	offshore/production.tsv \
+	regional/production.tsv
 
 # Census-derived export figures
 EXPORT_FILES = \
@@ -37,6 +40,15 @@ GDP_FILES = \
 	gdp/US.tsv \
 	gdp/states.tsv
 
+JOBS_FILES = \
+	jobs/wage-salary.tsv \
+	jobs/self-employment.tsv
+
+ALL_LANDS_PRODUCTION_FILES = \
+	production/natural-gas.tsv \
+	production/coal-county-all-production.tsv \
+	county-all-lands-production-by-state.tsv
+
 # a list of all of the individual files to build.
 # unless otherwise noted, all of these files are broken
 # down by year and commodity
@@ -44,8 +56,10 @@ FILES = \
 	$(REVENUE_FILES) \
 	$(PRODUCTION_FILES) \
 	$(EXPORT_FILES) \
-	geo svg \
-	$(GDP_FILES)
+	$(GDP_FILES) \
+	$(JOBS_FILES) \
+	$(ALL_LANDS_PRODUCTION_FILES) \
+	geo svg
 
 all: $(FILES)
 
@@ -57,6 +71,13 @@ exports: $(EXPORT_FILES)
 
 gdp: $(GDP_FILES)
 
+jobs: $(JOBS_FILES)
+
+all_production: $(ALL_LANDS_PRODUCTION_FILES)
+
+jobs/wage-salary.tsv:
+	bin/parse-bls.js _input/bls/*.csv > $@
+
 # national revenues by commodity and revenue type
 national/revenues.tsv: state/revenues.tsv offshore/revenues.tsv
 	mkdir -p $(dir $@)
@@ -64,6 +85,13 @@ national/revenues.tsv: state/revenues.tsv offshore/revenues.tsv
 		--group 'Year,Commodity,Type' \
 		--sum 'Revenue' \
 		-o $@ $^
+
+company/revenue.tsv: $(input)onrr/company-revenues.tsv
+	mkdir -p $(dir $@)
+	bin/parse-company-revenue.js \
+		--if tsv \
+		--of tsv \
+		$< > $@
 
 # national production volumes by commodity and product
 national/production.tsv: state/production.tsv offshore/production.tsv
@@ -76,7 +104,27 @@ national/production.tsv: state/production.tsv offshore/production.tsv
 # national GDP figures
 gdp/US.tsv:
 	mkdir -p $(dir $@)
-	bin/get-bea-data.js --in-topo $(input)geo/us-counties.json --geo us -o $@
+	bin/get-bea-data.js --geo us -o $@
+
+gdp/regional.tsv:
+	mkdir -p $(dir $@)
+	bin/get-bea-regional.js | \
+		bin/abbr-state.js \
+			--if tsv \
+			--of tsv \
+			--states $(input)geo/states.csv \
+			--field Region \
+			> $@
+
+jobs/self-employment.tsv:
+	mkdir -p $(dir $@)
+	bin/get-bea-jobs.js | \
+		bin/abbr-state.js \
+			--if tsv \
+			--of tsv \
+			--states $(input)geo/states.csv \
+			--field Region \
+			> $@
 
 # state listing
 state/states.tsv: $(input)geo/states.csv
@@ -103,7 +151,7 @@ state/production.tsv: county/production.tsv
 # state GDP figures
 gdp/states.tsv:
 	mkdir -p $(dir $@)
-	bin/get-bea-data.js --in-topo $(input)geo/us-counties.json --geo state -o $@
+	bin/get-bea-data.js --geo state -o $@
 
 # state export figures
 state/exports-by-industry.tsv: $(input)census/top-state-exports.tsv
@@ -121,11 +169,14 @@ offshore/revenues.tsv: $(input)onrr/offshore-revenues.tsv
 		$< > $@
 
 # offshore production volumes by region and area
-offshore/production.tsv: $(input)onrr/offshore-production.tsv
+offshore/production.tsv: $(input)onrr/regional-production.tsv
 	mkdir -p $(dir $@)
-	bin/group-offshore-production.js \
-		--keys Year/Region/Area/Commodity/Product \
-		$< > $@
+	$(tito) --read tsv $< \
+		| $(datex) --filter 'Shore === "Offshore"' \
+		| $(tito) --write tsv \
+		| bin/group-offshore-production.js \
+			--keys Year/Region/Area/Commodity/Product \
+			> $@
 
 # regional (state and offshore) revenues
 regional/revenues.tsv: state/revenues.tsv offshore/revenues.tsv
@@ -138,6 +189,19 @@ regional/revenues.tsv: state/revenues.tsv offshore/revenues.tsv
 		| bin/sum.js \
 			--group 'Year,Region,Commodity,Type' \
 			--sum 'Revenue' \
+			-o $@
+
+# regional (state and offshore) revenues
+regional/production.tsv: state/production.tsv offshore/production.tsv
+	mkdir -p $(dir $@)
+	bin/union-regions.js \
+		--onshore state/production.tsv \
+		--states $(input)geo/states.csv \
+		--offshore offshore/production.tsv \
+		--areas $(input)geo/offshore/areas.tsv \
+		| bin/sum.js \
+			--group 'Year,Region,Commodity,Product' \
+			--sum 'Volume' \
 			-o $@
 
 # regional (state and offshore) revenues by resource group
@@ -177,6 +241,25 @@ county-revenues-by-state: county/revenues.tsv
 			--path 'county/by-state/{{ State }}/revenues.tsv' \
 			--of tsv
 
+# divvy up county revenues into separate files by state
+county-production-by-state: county/production.tsv
+	$(tito) --read tsv $< \
+		| bin/divvy.js \
+			--path 'county/by-state/{{ State }}/production.tsv' \
+			--of tsv
+
+# divvy up county revenues into separate files by state
+county-products-by-state: county/production.tsv
+	$(tito) --read tsv $< \
+		| bin/sum.js \
+			--if ndjson \
+			--group 'Year,State,County,FIPS' \
+			--count 'Volume' \
+			--of ndjson \
+		| bin/divvy.js \
+			--path 'county/by-state/{{ State }}/products.tsv' \
+			--of tsv
+
 county-resource-revenues-by-state: county/revenues.tsv
 	$(tito) --read tsv $< \
 		| bin/add-resource-group.js \
@@ -193,12 +276,30 @@ county-resource-revenues-by-state: county/revenues.tsv
 			--of tsv
 
 # county production volumes
-county/production.tsv: $(input)onrr/county-production.tsv
+county/production.tsv: $(input)onrr/regional-production.tsv
 	mkdir -p $(dir $@)
 	$(tito) --read tsv $< \
+		| $(datex) --filter 'Shore === "Onshore"' \
 		| bin/normalize-county-production.js \
 			--in-states $(input)geo/states.csv \
-		| $(tito) --write tsv > $@
+		| tito --write tsv > $@
+
+production/all-production.tsv:
+	mkdir -p $(dir $@)
+	bin/group-all-production.js \
+		--naturalgas2 $(input)eia/commodity/naturalgas2.tsv \
+		--naturalgas $(input)eia/commodity/naturalgas.tsv \
+		--oil $(input)eia/commodity/oil.tsv \
+		--coal $(input)eia/commodity/coal.tsv \
+		--countycoal $(input)eia/commodity/coal.tsv \
+		--renewables $(input)eia/commodity/renewables.tsv \
+		> $@
+
+county-all-lands-production-by-state.tsv: production/coal-county-all-production.tsv
+	$(tito) --read tsv $< \
+		| bin/divvy.js \
+			--path 'county/by-state/{{ State }}/all-production.tsv' \
+			--of tsv
 
 geo: \
 	geo/us-topology.json \
@@ -243,6 +344,9 @@ geo/us-states.json: geo/us-topology.json
 
 geo/offshore.json: $(input)geo/offshore/*.json
 	$(BIN)/topojson $(topo_options) --properties -o $@ -- $^
+
+geo/offshore-regions.json: geo/offshore-simple.json
+	bin/offshore-regions.json $< $@
 
 geo/%-simple.json: geo/%.json
 	$(BIN)/topojson $(topo_options) --properties --simplify 1e-8 -o $@ $<

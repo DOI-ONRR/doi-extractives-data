@@ -1,0 +1,69 @@
+---
+layout: default
+---
+
+<!-- {% include case-studies/_intro.html %} -->
+
+<section class="container-outer case_studies_content">
+
+	<article class="container-left-7">
+
+		{% if page.resource == 'oil' %}
+		  <h3 class="case_studies_content-icon"><i class="icon-oil"></i>Oil</h3>
+		{% elsif page.resource == 'gas' %}
+		  <h3 class="case_studies_content-icon"><i class="icon-gas"></i>Natural Gas</h3>
+		{% elsif page.resource == 'coal' %}
+		  <h3 class="case_studies_content-icon"><i class="icon-coal"></i>Coal</h3>
+		{% elsif page.resource == 'gold' %}
+		  <h3 class="case_studies_content-icon"><i class="icon-gold"></i>Gold</h3>
+		{% elsif page.resource == 'copper' %}
+		  <h3 class="case_studies_content-icon"><i class="icon-copper"></i>Copper</h3>
+		{% elsif page.resource == 'iron' %}
+		  <h3 class="case_studies_content-icon"><i class="icon-iron"></i>Iron</h3>
+		{% endif %}
+
+	  {{content | markdownify}}
+
+	</article>
+
+	<div class="container-right-5">
+
+		<label>Choose a community page
+			<div class="case_studies_intro-select">
+				{% include case-studies/_selector.html %}
+			</div>
+		</label>
+
+		<div class="u-centered">
+
+      <img src="{{ site.baseurl }}/img/counties/12-map.png" alt="Map with locations of the twelve communities given in-depth coverage in this section of the site." class="case_studies_intro-image">
+      <img src="{{ site.baseurl }}/img/counties/12-map-icons.png" alt="Key for map with the icons for the six commodities given in-depth coverage in this section of the site." class="case_studies_intro-image case_studies_intro-image_key">
+
+    </div>
+
+		<div class="sticky_nav">
+
+		  <nav class="sticky_nav-nav">
+
+		    <ul>
+		      {% if page.nav_items %}
+		      	{% for item in page.nav_items %}
+			        {% if item.name == page.nav_items[0].name %}
+			          <a href="#{{item.name}}" class="sticky_nav-nav_item" data-nav-item="{{item.name}}" data-active="true">{{item.title}}</a>
+			        {% else %}
+			          <a href="#{{item.name}}" class="sticky_nav-nav_item" data-nav-item="{{item.name}}">{{item.title}}</a>
+			        {% endif %}
+			      {% endfor %}
+		      {% endif %}
+		    </ul>
+
+		  </nav>
+
+		</div>
+
+	</div>
+
+</section>
+
+<script src="{{ site.baseurl }}/js/components/sticky-nav.js"></script>
+<script src="{{ site.baseurl }}/js/components/open-list-nav.js"></script>

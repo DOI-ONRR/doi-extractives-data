@@ -33,6 +33,8 @@ This site is deployed on [Federalist](https://federalist.18f.gov), and will one 
 ```sh
 npm install --dev
 npm run init-styleguide
+cd styleguide-template && npm install
+cd ..
 npm run watch
 ```
 

@@ -1,0 +1,384 @@
+Year	State	County	FIPS	Commodity	Product	Volume
+2010	NM	Rio Arriba County	35039		Oil (bbl)	262
+2009	NM	Chaves County	35005		Oil (bbl)	263
+2009	NM	Rio Arriba County	35039		Oil (bbl)	389
+2006	NM	Bernalillo County	35001		Oil (bbl)	417
+2013	NM	San Juan County	35045		Oil (bbl)	518
+2008	NM	Rio Arriba County	35039		Oil (bbl)	540
+2005	NM	McKinley County	35031		Gas (mcf)	600
+2007	NM	Rio Arriba County	35039		Oil (bbl)	611
+2006	NM	Rio Arriba County	35039		Oil (bbl)	782
+2007	NM	McKinley County	35031		Oil (bbl)	1016
+2012	NM	San Juan County	35045		Oil (bbl)	1124
+2005	NM	Rio Arriba County	35039		Oil (bbl)	1255
+2007	NM	Chaves County	35005		Oil (bbl)	1349
+2008	NM	Chaves County	35005		Oil (bbl)	1582
+2005	NM	Chaves County	35005		Oil (bbl)	1872
+2008	NM	McKinley County	35031		Oil (bbl)	1987
+2006	NM	Chaves County	35005		Oil (bbl)	2007
+2005	NM	McKinley County	35031		Oil (bbl)	2897.83
+2014	NM	Bernalillo County	35001		Oil (bbl)	4477
+2013	NM	Bernalillo County	35001		Oil (bbl)	5337
+2011	NM	Bernalillo County	35001		Oil (bbl)	6804
+2012	NM	Bernalillo County	35001		Oil (bbl)	6933
+2007	NM	McKinley County	35031		Gas (mcf)	10307
+2010	NM	Bernalillo County	35001		Oil (bbl)	10416
+2009	NM	Bernalillo County	35001		Oil (bbl)	11301
+2006	NM	Lea County	35025		Oil (bbl)	11783.93
+2007	NM	Lea County	35025		Oil (bbl)	12047.95
+2011	NM	McKinley County	35031		Oil (bbl)	12312
+2005	NM	Lea County	35025		Oil (bbl)	13846.09
+2012	NM	Bernalillo County	35001		Gas (mcf)	14113
+2009	NM	McKinley County	35031		Oil (bbl)	14218
+2014	NM	Bernalillo County	35001		Gas (mcf)	14355
+2014	NM	Otero County	35035		Gas (mcf)	14638
+2013	NM	Bernalillo County	35001		Gas (mcf)	14676
+2008	NM	Bernalillo County	35001		Oil (bbl)	16115
+2009	NM	Chaves County	35005		Gas (mcf)	17692
+2011	NM	Bernalillo County	35001		Gas (mcf)	17742
+2006	NM	McKinley County	35031		Gas (mcf)	18329
+2010	NM	McKinley County	35031		Oil (bbl)	20686
+2012	NM	McKinley County	35031		Oil (bbl)	22569
+2008	NM	McKinley County	35031		Gas (mcf)	24857
+2007	NM	Bernalillo County	35001		Oil (bbl)	25855
+2007	NM	Rio Arriba County	35039		Gas (mcf)	26563
+2008	NM	Lea County	35025		Oil (bbl)	29858.45
+2010	NM	Bernalillo County	35001		Gas (mcf)	31832
+2010	NM	Lea County	35025		Oil (bbl)	34415.96
+2007	NM	Sandoval County	35043		Oil (bbl)	35432.41
+2007	NM	Bernalillo County	35001		Gas (mcf)	35568
+2008	NM	Sandoval County	35043		Oil (bbl)	36394.96
+2013	NM	McKinley County	35031		Oil (bbl)	37846
+2011	NM	Sandoval County	35043		Oil (bbl)	38306.24
+2006	NM	Sandoval County	35043		Oil (bbl)	38931.28
+2009	NM	Sandoval County	35043		Oil (bbl)	41683.74
+2010	NM	Sandoval County	35043		Oil (bbl)	42180.64
+2009	NM	Bernalillo County	35001		Gas (mcf)	42401
+2005	NM	Sandoval County	35043		Oil (bbl)	44516.32
+2009	NM	Lea County	35025		Oil (bbl)	51653.74
+2009	NM	McKinley County	35031		Gas (mcf)	53511
+2014	NM	McKinley County	35031		Oil (bbl)	53860
+2014	NM	Rio Arriba County	35039		Gas (mcf)	54967
+2014	NM	San Juan County	35045		Oil (bbl)	56327
+2012	NM	Sandoval County	35043		Oil (bbl)	58890.37
+2013	NM	Rio Arriba County	35039		Gas (mcf)	60057
+2006	NM	Lea County	35025		Brine Barrels (barrels)	66862
+2008	NM	Bernalillo County	35001		Gas (mcf)	68657
+2013	NM	Hidalgo County	35023		Geothermal - Electrical Generation, Kilowatt Hours	69407
+2008	NM	Rio Arriba County	35039		Gas (mcf)	71683.5
+2012	NM	Rio Arriba County	35039		Gas (mcf)	72054
+2007	NM	San Juan County	35045		Gas (mcf)	72148
+2006	NM	Colfax County	35007		Gas (mcf)	73118
+2006	NM	San Juan County	35045		Gas (mcf)	73957
+2013	NM	Roosevelt County	35041		Oil (bbl)	77598.96
+2014	NM	Roosevelt County	35041		Oil (bbl)	81858.58
+2011	NM	Rio Arriba County	35039		Gas (mcf)	83365
+2006	NM	Eddy County	35015		Oil (bbl)	83524.07
+2005	NM	Eddy County	35015		Oil (bbl)	83985.91
+2012	NM	Roosevelt County	35041		Oil (bbl)	84283.25
+2011	NM	Roosevelt County	35041		Oil (bbl)	87373.94
+2007	NM	Eddy County	35015		Oil (bbl)	89309.05
+2008	NM	Eddy County	35015		Oil (bbl)	94608.55
+2009	NM	Rio Arriba County	35039		Gas (mcf)	100550.5
+2010	NM	Rio Arriba County	35039		Gas (mcf)	102867
+2010	NM	Roosevelt County	35041		Oil (bbl)	105774.82
+2014	NM	Sandoval County	35043		Oil (bbl)	107890
+2009	NM	Roosevelt County	35041		Oil (bbl)	109979.23
+2010	NM	McKinley County	35031		Gas (mcf)	111991
+2009	NM	Eddy County	35015		Muriate Of Potash-Standard (tons)	112839
+2008	NM	Chaves County	35005		Gas (mcf)	113801
+2013	NM	San Juan County	35045		Gas (mcf)	117350
+2008	NM	San Juan County	35045		Gas (mcf)	118326.5
+2007	NM	Chaves County	35005		Oil (bbl)	123526.74
+2006	NM	Roosevelt County	35041		Oil (bbl)	124812.1
+2014	NM	Eddy County	35015		Muriate Of Potash-Standard (tons)	127433
+2007	NM	Chaves County	35005		Gas (mcf)	129050
+2006	NM	Chaves County	35005		Oil (bbl)	131234.48
+2011	NM	Lea County	35025		Oil (bbl)	131600.04
+2013	NM	Eddy County	35015		Muriate Of Potash-Standard (tons)	132492
+2011	NM	San Juan County	35045		Gas (mcf)	132721
+2005	NM	Lea County	35025		Gas (mcf)	133103.4
+2008	NM	Roosevelt County	35041		Oil (bbl)	140348.88
+2012	NM	San Juan County	35045		Gas (mcf)	143726
+2014	NM	San Juan County	35045		Gas (mcf)	143956
+2007	NM	Roosevelt County	35041		Oil (bbl)	145724.97
+2005	NM	Chaves County	35005		Gas (mcf)	146010
+2006	NM	Chaves County	35005		Gas (mcf)	146163
+2012	NM	Eddy County	35015		Muriate Of Potash-Standard (tons)	146453
+2005	NM	Roosevelt County	35041		Oil (bbl)	146990.32
+2009	NM	San Juan County	35045		Gas (mcf)	150146.5
+2005	NM	Chaves County	35005		Oil (bbl)	150941.76
+2010	NM	San Juan County	35045		Gas (mcf)	151711
+2010	NM	Eddy County	35015		Muriate Of Potash-Standard (tons)	155054
+2006	NM	Lea County	35025		Gas (mcf)	163383.58
+2011	NM	Eddy County	35015		Muriate Of Potash-Standard (tons)	170449
+2008	NM	Eddy County	35015		Muriate Of Potash-Standard (tons)	177001
+2013	NM	McKinley County	35031		Gas (mcf)	178147
+2014	NM	McKinley County	35031		Gas (mcf)	181980
+2008	NM	Chaves County	35005		Oil (bbl)	202617.48
+2012	NM	McKinley County	35031		Gas (mcf)	210074
+2011	NM	McKinley County	35031		Gas (mcf)	218200
+2009	NM	Eddy County	35015		Oil (bbl)	219206.26
+2014	NM	Colfax County	35007		Gas (mcf)	231177
+2009	NM	Eddy County	35015		Muriate Of Potash-Granular (tons)	233928
+2013	NM	Colfax County	35007		Gas (mcf)	246318
+2007	NM	Eddy County	35015		Muriate Of Potash-Standard (tons)	251708
+2012	NM	Colfax County	35007		Gas (mcf)	264034
+2011	NM	Colfax County	35007		Gas (mcf)	266600
+2005	NM	San Juan County	35045		Gas (mcf)	267344
+2010	NM	Colfax County	35007		Gas (mcf)	277607
+2014	NM	Sandoval County	35043		Gas (mcf)	277911
+2008	NM	Colfax County	35007		Gas (mcf)	280223
+2009	NM	Colfax County	35007		Gas (mcf)	280900
+2007	NM	Lea County	35025		Gas (mcf)	288409.8
+2007	NM	Colfax County	35007		Gas (mcf)	288471
+2006	NM	Rio Arriba County	35039		Gas (mcf)	304417
+2010	NM	Eddy County	35015		Oil (bbl)	309819.04
+2008	NM	Eddy County	35015		Salt (tons)	314483
+2006	NM	Eddy County	35015		Muriate Of Potash-Granular (tons)	327424
+2013	NM	Sandoval County	35043		Oil (bbl)	341012.22
+2013	NM	Eddy County	35015		Muriate Of Potash-Granular (tons)	342439
+2012	NM	Lea County	35025		Oil (bbl)	358900.22
+2014	NM	Eddy County	35015		Langbeinite (tons)	363289
+2010	NM	Eddy County	35015		Muriate Of Potash-Granular (tons)	364751
+2009	NM	Eddy County	35015		Salt (tons)	372956
+2008	NM	Lea County	35025		Gas (mcf)	378696.24
+2008	NM	Eddy County	35015		Muriate Of Potash-Granular (tons)	398253
+2011	NM	Lea County	35025		Gas (mcf)	398680.41
+2012	NM	Eddy County	35015		Salt (tons)	409345
+2010	NM	Lea County	35025		Gas (mcf)	416242.21
+2005	NM	Rio Arriba County	35039		Gas (mcf)	419554
+2012	NM	Eddy County	35015		Muriate Of Potash-Granular (tons)	424920
+2005	NM	Eddy County	35015		Muriate Of Potash-Granular (tons)	424981
+2013	NM	Eddy County	35015		Salt (tons)	425125
+2007	NM	Sandoval County	35043		Gas (mcf)	428864.79
+2007	NM	Eddy County	35015		Muriate Of Potash-Granular (tons)	429446
+2010	NM	Eddy County	35015		Salt (tons)	434018
+2011	NM	Eddy County	35015		Salt (tons)	439367
+2005	NM	Sandoval County	35043		Gas (mcf)	445245.14
+2011	NM	Eddy County	35015		Muriate Of Potash-Granular (tons)	454506
+2014	NM	Eddy County	35015		Salt (tons)	457529
+2008	NM	Sandoval County	35043		Gas (mcf)	464100.65
+2014	NM	Eddy County	35015		Muriate Of Potash-Granular (tons)	467320
+2006	NM	Sandoval County	35043		Gas (mcf)	469145.35
+2006	NM	Eddy County	35015		Muriate Of Potash-Standard (tons)	469892
+2005	NM	Eddy County	35015		Muriate Of Potash-Standard (tons)	476837
+2009	NM	Chaves County	35005		Oil (bbl)	477903.22
+2005	NM	Eddy County	35015		Gas (mcf)	486869.6
+2006	NM	Eddy County	35015		Potash (tons)	492294
+2009	NM	Lea County	35025		Gas (mcf)	512488.75
+2005	NM	Eddy County	35015		Langbeinite (tons)	551675
+2013	NM	Chaves County	35005		Oil (bbl)	562871.47
+2012	NM	Lea County	35025		Gas (mcf)	588697.43
+2009	NM	Sandoval County	35043		Gas (mcf)	591816.83
+2014	NM	Chaves County	35005		Oil (bbl)	605900
+2011	NM	Chaves County	35005		Oil (bbl)	626947.77
+2009	NM	Eddy County	35015		Langbeinite (tons)	648073
+2013	NM	Roosevelt County	35041		Gas (mcf)	672371.92
+2010	NM	San Juan County	35045		Oil (bbl)	697143.02
+2013	NM	Eddy County	35015		Langbeinite (tons)	707765
+2010	NM	Rio Arriba County	35039		Oil (bbl)	708601.86
+2011	NM	San Juan County	35045		Oil (bbl)	715278.58
+2006	NM	Eddy County	35015		Langbeinite (tons)	734349
+2012	NM	Chaves County	35005		Oil (bbl)	737307.16
+2011	NM	Rio Arriba County	35039		Oil (bbl)	738048.83
+2012	NM	Rio Arriba County	35039		Oil (bbl)	739848.33
+2011	NM	Eddy County	35015		Langbeinite (tons)	745606
+2012	NM	San Juan County	35045		Oil (bbl)	762710.62
+2005	NM	Rio Arriba County	35039		Oil (bbl)	765700.47
+2007	NM	Rio Arriba County	35039		Oil (bbl)	771429.18
+2009	NM	San Juan County	35045		Oil (bbl)	773443.57
+2008	NM	Rio Arriba County	35039		Oil (bbl)	774850.17
+2010	NM	Chaves County	35005		Oil (bbl)	775244.56
+2009	NM	Rio Arriba County	35039		Oil (bbl)	782997.41
+2008	NM	San Juan County	35045		Oil (bbl)	787705.26
+2007	NM	San Juan County	35045		Oil (bbl)	803119.76
+2006	NM	Rio Arriba County	35039		Oil (bbl)	808032.62
+2012	NM	Roosevelt County	35041		Gas (mcf)	813993.56
+2013	NM	Rio Arriba County	35039		Oil (bbl)	818278.46
+2010	NM	Eddy County	35015		Langbeinite (tons)	830346
+2006	NM	San Juan County	35045		Oil (bbl)	853714.53
+2014	NM	Roosevelt County	35041		Gas (mcf)	856312.68
+2012	NM	Eddy County	35015		Langbeinite (tons)	859349
+2011	NM	Eddy County	35015		Oil (bbl)	886221.96
+2005	NM	San Juan County	35045		Oil (bbl)	890646.05
+2014	NM	Sandoval County	35043		Oil (bbl)	927811.04
+2010	NM	Sandoval County	35043		Gas (mcf)	947489.53
+2013	NM	San Juan County	35045		Oil (bbl)	960322.67
+2007	NM	Eddy County	35015		Langbeinite (tons)	966101
+2008	NM	Eddy County	35015		Langbeinite (tons)	974982
+2013	NM	Lea County	35025		Oil (bbl)	1004434.74
+2011	NM	Roosevelt County	35041		Gas (mcf)	1104336.49
+2010	NM	Roosevelt County	35041		Gas (mcf)	1337727.2
+2014	NM	Rio Arriba County	35039		Oil (bbl)	1355697.15
+2009	NM	Roosevelt County	35041		Gas (mcf)	1358747.45
+2011	NM	Sandoval County	35043		Gas (mcf)	1380108.65
+2006	NM	Roosevelt County	35041		Gas (mcf)	1474115.26
+2007	NM	Roosevelt County	35041		Gas (mcf)	1495170.36
+2005	NM	Roosevelt County	35041		Gas (mcf)	1501192.12
+2006	NM	Eddy County	35015		Gas (mcf)	1563092.42
+2008	NM	Roosevelt County	35041		Gas (mcf)	1602298.39
+2013	NM	Lea County	35025		Gas (mcf)	1619363.25
+2012	NM	Sandoval County	35043		Gas (mcf)	1654263.24
+2014	NM	San Juan County	35045		Oil (bbl)	1927743.83
+2013	NM	Sandoval County	35043		Gas (mcf)	2085090.23
+2014	NM	Lea County	35025		Oil (bbl)	2151223.06
+2014	NM	Quay County	35037		Gas (mcf)	2476466.7
+2014	NM	Union County	35059		Gas (mcf)	2476474.13
+2013	NM	Quay County	35037		Gas (mcf)	2671068.34
+2013	NM	Union County	35059		Gas (mcf)	2671076.35
+2008	NM	Harding County	35021		Gas (mcf)	2712299.7
+2008	NM	Quay County	35037		Gas (mcf)	2712299.7
+2008	NM	Union County	35059		Gas (mcf)	2712307.84
+2007	NM	Harding County	35021		Gas (mcf)	2731819.24
+2007	NM	Quay County	35037		Gas (mcf)	2731819.24
+2007	NM	Union County	35059		Gas (mcf)	2731827.44
+2009	NM	Quay County	35037		Gas (mcf)	2739038.62
+2009	NM	Union County	35059		Gas (mcf)	2739046.84
+2010	NM	Quay County	35037		Gas (mcf)	2748174.61
+2010	NM	Union County	35059		Gas (mcf)	2748182.85
+2012	NM	Quay County	35037		Gas (mcf)	2771070.64
+2012	NM	Union County	35059		Gas (mcf)	2771078.95
+2011	NM	Quay County	35037		Gas (mcf)	2774978.21
+2011	NM	Union County	35059		Gas (mcf)	2774986.54
+2006	NM	Harding County	35021		Gas (mcf)	2847247
+2006	NM	Quay County	35037		Gas (mcf)	2847247
+2006	NM	Union County	35059		Gas (mcf)	2847255.54
+2009	NM	Harding County	35021		Gas (mcf)	2864353.65
+2007	NM	Eddy County	35015		Gas (mcf)	2935719.2
+2005	NM	Harding County	35021		Gas (mcf)	2988534.3
+2005	NM	Quay County	35037		Gas (mcf)	2988534.3
+2005	NM	Union County	35059		Gas (mcf)	2988543.27
+2010	NM	Harding County	35021		Gas (mcf)	3016752.54
+2012	NM	Eddy County	35015		Oil (bbl)	3087823.78
+2008	NM	Eddy County	35015		Gas (mcf)	3777307.76
+2014	NM	Sandoval County	35043		Gas (mcf)	4341265.08
+2014	NM	Lea County	35025		Gas (mcf)	4481555.02
+2014	NM	Harding County	35021		Gas (mcf)	4535776.66
+2011	NM	Harding County	35021		Gas (mcf)	4721763.29
+2013	NM	Harding County	35021		Gas (mcf)	4743881.45
+2012	NM	Harding County	35021		Gas (mcf)	4894973.6
+2009	NM	Eddy County	35015		Gas (mcf)	5142237.25
+2013	NM	Eddy County	35015		Oil (bbl)	5792321.26
+2014	NM	Chaves County	35005		Gas (mcf)	6131355.9
+2011	NM	Eddy County	35015		Gas (mcf)	6168014.59
+2013	NM	Chaves County	35005		Gas (mcf)	6733614.7
+2010	NM	Eddy County	35015		Gas (mcf)	7213692.79
+2014	NM	Eddy County	35015		Oil (bbl)	7394560.94
+2012	NM	Chaves County	35005		Gas (mcf)	7487835.32
+2006	NM	Lea County	35025		Oil (bbl)	8222174.38
+2005	NM	Lea County	35025		Oil (bbl)	8340782.04
+2008	NM	Lea County	35025		Oil (bbl)	8416017.12
+2007	NM	Lea County	35025		Oil (bbl)	8559495.74
+2014	NM	Hidalgo County	35023		Geothermal - Electrical Generation, Kilowatt Hours	8736455
+2011	NM	Chaves County	35005		Gas (mcf)	8816239.17
+2009	NM	Lea County	35025		Oil (bbl)	8953821.39
+2010	NM	Lea County	35025		Oil (bbl)	9724928.12
+2007	NM	Chaves County	35005		Gas (mcf)	10393444.75
+2010	NM	Chaves County	35005		Gas (mcf)	10749191.07
+2011	NM	Lea County	35025		Oil (bbl)	10890560.72
+2009	NM	Chaves County	35005		Gas (mcf)	11101139.53
+2006	NM	Chaves County	35005		Gas (mcf)	11312188.45
+2008	NM	Chaves County	35005		Gas (mcf)	12161575.04
+2005	NM	Chaves County	35005		Gas (mcf)	12426168.31
+2012	NM	Lea County	35025		Oil (bbl)	12841605.68
+2012	NM	Eddy County	35015		Gas (mcf)	12851898.57
+2006	NM	Eddy County	35015		Oil (bbl)	14269872.26
+2007	NM	Eddy County	35015		Oil (bbl)	14739833.46
+2008	NM	Eddy County	35015		Oil (bbl)	15253385.52
+2005	NM	Eddy County	35015		Oil (bbl)	15279743.92
+2013	NM	Lea County	35025		Oil (bbl)	16327919.4
+2009	NM	Eddy County	35015		Oil (bbl)	17109112.22
+2010	NM	Eddy County	35015		Oil (bbl)	19145802.27
+2014	NM	Lea County	35025		Oil (bbl)	19951737.44
+2011	NM	Eddy County	35015		Oil (bbl)	21509573.19
+2013	NM	Eddy County	35015		Gas (mcf)	24861479.75
+2012	NM	Eddy County	35015		Oil (bbl)	25826787.66
+2013	NM	Eddy County	35015		Oil (bbl)	26721872.79
+2014	NM	Eddy County	35015		Gas (mcf)	27501172.98
+2014	NM	Eddy County	35015		Oil (bbl)	30374239.64
+2011	NM	Lea County	35025		Gas (mcf)	50453381.09
+2010	NM	Lea County	35025		Gas (mcf)	51428137.46
+2012	NM	Lea County	35025		Gas (mcf)	54430163.78
+2009	NM	Lea County	35025		Gas (mcf)	54556037.18
+2008	NM	Lea County	35025		Gas (mcf)	55840246.27
+2007	NM	Lea County	35025		Gas (mcf)	59884089.34
+2013	NM	Lea County	35025		Gas (mcf)	60565109.56
+2005	NM	Lea County	35025		Gas (mcf)	61024354.71
+2006	NM	Lea County	35025		Gas (mcf)	63559096.91
+2014	NM	Dona Ana County	35013		Geothermal - Direct Use, Millions of Gallons	63624483
+2014	NM	Lea County	35025		Gas (mcf)	64731559.4
+2013	NM	Dona Ana County	35013		Geothermal - Direct Use, Millions of Gallons	69920724.5
+2011	NM	Dona Ana County	35013		Geothermal - Direct Use, Millions of Gallons	71606330
+2012	NM	Dona Ana County	35013		Geothermal - Direct Use, Millions of Gallons	113448300
+2011	NM	Eddy County	35015		Gas (mcf)	126458492.8
+2010	NM	Eddy County	35015		Gas (mcf)	127572754.71
+2012	NM	Eddy County	35015		Gas (mcf)	130009915.27
+2013	NM	Eddy County	35015		Gas (mcf)	131820291.05
+2009	NM	Eddy County	35015		Gas (mcf)	132023383.69
+2014	NM	Eddy County	35015		Gas (mcf)	141434025.4
+2008	NM	Eddy County	35015		Gas (mcf)	143690285.17
+2007	NM	Eddy County	35015		Gas (mcf)	155752300.4
+2006	NM	Eddy County	35015		Gas (mcf)	162921104.74
+2005	NM	Eddy County	35015		Gas (mcf)	178197846.47
+2014	NM	Rio Arriba County	35039		Gas (mcf)	215290543.17
+2013	NM	Rio Arriba County	35039		Gas (mcf)	229862889.81
+2012	NM	Rio Arriba County	35039		Gas (mcf)	253321458.25
+2011	NM	Rio Arriba County	35039		Gas (mcf)	262118930.81
+2010	NM	Rio Arriba County	35039		Gas (mcf)	264678710.29
+2009	NM	Rio Arriba County	35039		Gas (mcf)	278667517.28
+2008	NM	Rio Arriba County	35039		Gas (mcf)	284621417.35
+2007	NM	Rio Arriba County	35039		Gas (mcf)	292594776.13
+2005	NM	Rio Arriba County	35039		Gas (mcf)	297056314.39
+2014	NM	San Juan County	35045		Gas (mcf)	300893040.85
+2006	NM	Rio Arriba County	35039		Gas (mcf)	301213090.04
+2013	NM	San Juan County	35045		Gas (mcf)	310518516.47
+2012	NM	San Juan County	35045		Gas (mcf)	331329514.12
+2011	NM	San Juan County	35045		Gas (mcf)	351570087.28
+2010	NM	San Juan County	35045		Gas (mcf)	367192036.94
+2009	NM	San Juan County	35045		Gas (mcf)	401880775.85
+2008	NM	San Juan County	35045		Gas (mcf)	415014309.28
+2007	NM	San Juan County	35045		Gas (mcf)	443102380.52
+2005	NM	San Juan County	35045		Gas (mcf)	467272922.51
+2006	NM	San Juan County	35045		Gas (mcf)	470220940.82
+2005	NM	Eddy County	35015		Brine Barrels (barrels)	W
+2005	NM	Lea County	35025		Brine Barrels (barrels)	W
+2005	NM	McKinley County	35031		Coal (tons)	W
+2005	NM	San Juan County	35045		Coal (tons)	W
+2005	NM	Eddy County	35015		Potash (tons)	W
+2005	NM	Eddy County	35015		Salt (tons)	W
+2006	NM	Eddy County	35015		Brine Barrels (barrels)	W
+2006	NM	McKinley County	35031		Coal (tons)	W
+2006	NM	San Juan County	35045		Coal (tons)	W
+2006	NM	Eddy County	35015		Salt (tons)	W
+2006	NM	Eddy County	35015		Sylvite-Raw Ore (tons)	W
+2007	NM	Lea County	35025		Brine Barrels (barrels)	W
+2007	NM	McKinley County	35031		Coal (tons)	W
+2007	NM	San Juan County	35045		Coal (tons)	W
+2007	NM	Eddy County	35015		Potash (tons)	W
+2007	NM	Eddy County	35015		Salt (tons)	W
+2007	NM	Eddy County	35015		Sylvite-Raw Ore (tons)	W
+2008	NM	Lea County	35025		Brine Barrels (barrels)	W
+2008	NM	San Juan County	35045		Coal (tons)	W
+2008	NM	Eddy County	35015		Potash (tons)	W
+2008	NM	Eddy County	35015		Sylvite-Raw Ore (tons)	W
+2009	NM	San Juan County	35045		Coal (tons)	W
+2009	NM	Eddy County	35015		Potash (tons)	W
+2009	NM	Eddy County	35015		Sylvite-Raw Ore (tons)	W
+2010	NM	Lea County	35025		Brine Barrels (barrels)	W
+2010	NM	San Juan County	35045		Coal (tons)	W
+2010	NM	Eddy County	35015		Potash (tons)	W
+2010	NM	Eddy County	35015		Sylvite-Raw Ore (tons)	W
+2011	NM	San Juan County	35045		Coal (tons)	W
+2011	NM	Eddy County	35015		Potash (tons)	W
+2011	NM	Eddy County	35015		Sylvite-Raw Ore (tons)	W
+2012	NM	San Juan County	35045		Coal (tons)	W
+2012	NM	Eddy County	35015		Potash (tons)	W
+2012	NM	Eddy County	35015		Sylvite-Raw Ore (tons)	W
+2013	NM	San Juan County	35045		Coal (tons)	W
+2013	NM	Eddy County	35015		Potash (tons)	W
+2013	NM	Eddy County	35015		Sylvite-Raw Ore (tons)	W
+2014	NM	McKinley County	35031		Coal (tons)	W
+2014	NM	San Juan County	35045		Coal (tons)	W
+2014	NM	Eddy County	35015		Potash (tons)	W
+2014	NM	Eddy County	35015		Sylvite-Raw Ore (tons)	W

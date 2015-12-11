@@ -1,24 +1,27 @@
 <header class="header">
 
-  <div>
+  <div class="header-left">
     <a class="header-image_link" href="{{ site.baseurl }}/">
-      <img class="header-image" src="{{ site.baseurl }}/img/USEITI_Logotype.png" alt="USEITI logo">
+      <img class="header-image" src="{{ site.baseurl }}/img/logo-USEITI-color.svg" alt="USEITI logo">
     </a>
   </div>
 
-  <nav class="header-nav">
+  <nav class="header-nav header-right">
     <ul class="header-nav_top">
       <li class="header-nav_item_top">
         <a class="header-nav_item_link_top js-glossary-toggle" alt="this is the glossary drawer">Glossary</a>
       </li>
       <span class="header-nav_item_link_spacer"> | </span>
       <li class="header-nav_item_top">
-        <a class="header-nav_item_link_top {% if page.permalink == '/downloads/' %}active{% endif %}" href="{{ site.baseurl }}/downloads/">Downloads</a>
+        <a class="header-nav_item_link_top {% if page.permalink contains '/downloads/' %}active{% endif %}" href="{{ site.baseurl }}/downloads/">Downloads</a>
       </li>
 
       <li class="header-nav_item_top">
-        <input type="search" class="header-nav_search" placeholder="Search"/>
-        <span class="header-nav_search_icon"><i class="fa fa-search"></i></span>
+        <form action='{{ site.baseurl }}/search-results/'>
+          <label for='q' class='sr-only'>Search</label>
+          <input type="search" class="header-nav_search" placeholder="Search" name="q" id="q"/>
+          <button type="submit" class="header-nav_search_icon icon-search" title="search"></button>
+        </form>
       </li>
 
     </ul>
@@ -26,20 +29,21 @@
       <li class="header-nav_item {% if page.title == 'Home' %}active{% endif %}">
         <a class="header-nav_item_link" href="{{ site.baseurl }}/">Home</a>
       </li>
-      <li class="header-nav_item {% if page.permalink == '/about/' %}active{% endif %}">
+      <li class="header-nav_item {% if page.permalink contains '/about/' %}active{% endif %}">
         <a class="header-nav_item_link" href="{{ site.baseurl }}/about/">About USEITI</a>
       </li>
-      <li class="header-nav_item {% if page.permalink == '/resource_revenues/' %}active{% endif %}">
-        <a class="header-nav_item_link" href="{{ site.baseurl }}/resource_revenues/">How it works</a>
+      <li class="header-nav_item {% if page.permalink contains '/how-it-works/' %}active{% endif %}">
+        <a class="header-nav_item_link" href="{{ site.baseurl }}/how-it-works/">How It Works</a>
       </li>
-      <li class="header-nav_item {% if page.permalink == '/explore/' %}active{% endif %}">
+      <li class="header-nav_item {% if page.permalink contains '/explore/' %}active{% endif %}">
         <a class="header-nav_item_link" href="{{ site.baseurl }}/explore/">Explore Data</a>
       </li>
-      <li class="header-nav_item {% if page.permalink == '/communities/' %}active{% endif %}">
-        <a class="header-nav_item_link" href="{{ site.baseurl }}/communities/">Local Impact</a>
+      <li class="header-nav_item {% if page.permalink contains '/case-studies/' %}active{% endif %}">
+        <a class="header-nav_item_link" href="{{ site.baseurl }}/case-studies/">Case Studies</a>
       </li>
 
     </ul>
   </nav>
+  <button data-toggler="nav-drawer" is="eiti-toggle" aria-controls="nav-drawer" aria-hidden="false" aria-expanded="false" class="header-right header-bars" data-inner-markup="bars" title="Global navigation toggle"></button>
 
 </header>

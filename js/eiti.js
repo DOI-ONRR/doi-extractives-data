@@ -264,225 +264,27 @@
     return d3.rebind(tip, dispatch, 'on');
   };
 
-  /**
-   * Create a slider from a d3 selection that dispatches 'change'
-   * events whenever the element is clicked, tapped or dragged.
-   * @name eiti.ui.slider
-   *
-   * @example
-   *
-   *  var slider = eiti.ui.slider()
-   *    .range([0, 100])
-   *    .on('change', function(e) {
-   *      console.log('slider value:', e.value);
-   *    });
-   *  d3.select('#slider')
-   *    .call(slider);
-   */
-  eiti.ui.slider = function() {
-
-    var slider = function(selection) {
-      root = selection;
-      // XXX don't capture right-clicks (for inspecting)
-      selection.on('mousedown', function() {
-        var e = d3.event;
-        if (e.button === 2) {
-          e.preventDefault();
-          e.stopPropagation();
-          return false;
-        }
-      });
-      selection.call(drag);
-      if (typeof value !== 'undefined') {
-        slider.update(root);
-      }
-    };
-
-    var root, value;
-    var dragging = false;
-
-    var nub = '.nub';
-    var scale = d3.scale.linear()
-      .clamp(true);
-
-    var snap = false;
-    var dispatch = d3.dispatch('change');
-    var format = String;
-
-    function drag(selection) {
-      selection.on('mousedown.slider', function() {
-        // console.log('[drag] down');
-        dragging = true;
-        var body = d3.select('body').on('mouseup.slider', function() {
-          // console.log('[drag] up');
-          dragging = false;
-          body.on('mouseup.slider', null);
-        });
-        move(d3.event);
-      })
-      .on('mousemove.slider', function() {
-        if (dragging) {
-          // console.log('[drag] move');
-          move(d3.event);
-          return false;
-        }
-      });
-    }
-
-    function move(e) {
-      var p = getPosition(e),
-          w = getWidth(root.node()),
-          x = Math.max(0, Math.min(p.x, w)),
-          u = x / w,
-          v = scale(u);
-
-      // console.log('[slider] drag:', [p.x, p.y].join(','), [w, x, u, v].join(' '));
-
-      if (value != v) {
-        value = v;
-        dispatch.change({
-          x: x,
-          u: u,
-          value: value,
-          sourceEvent: e.sourceEvent
-        });
-      }
-
-      root.each(update);
-    }
-
-    function getPosition(e) {
-      var p = e.type === 'touchstart'
-        ? d3.touches(root.node())[0]
-        : d3.mouse(root.node());
-      return {x: p[0], y: p[1]};
-    }
-
-    slider.nub = function(selector) {
-      if (!arguments.length) return nub;
-      nub = selector;
-      return slider;
-    };
-
-    slider.range = function(range) {
-      if (!arguments.length) return scale.range();
-      scale.range(range);
-      return slider;
-    };
-
-    slider.snap = function(x) {
-      if (!arguments.length) return snap;
-      snap = x;
-      var range = scale.range();
-      if (snap) {
-        scale.rangeRound(range);
-      } else {
-        scale.range(range);
-      }
-      return slider;
-    };
-
-    slider.value = function(x) {
-      if (!arguments.length) return value;
-      value = +x;
-      if (root && !dragging) {
-        slider.update(root);
-      }
-      return slider;
-    };
-
-    slider.update = function(selection) {
-      selection.each(update);
-    };
-
-    function update() {
-      var left = scale.invert(value) * 100;
-      d3.select(this).select(nub)
-        .style('left', left + '%')
-        .select('.value')
-          .text(format(value));
-    }
-
-    function dragstart() {
-      var e = d3.event,
-          o = e.sourceEvent,
-          p = o.type === 'touchstart'
-            ? d3.touches(root.node())[0]
-            : d3.mouse(root.node());
-      e.x = p[0];
-      e.y = p[1];
-      dragging = true;
-      dragmove();
-    }
-
-    function dragmove() {
-      var e = d3.event,
-          w = getWidth(root.node()),
-          x = Math.max(0, Math.min(e.x, w)),
-          u = x / w,
-          v = scale(u);
-
-      if (value != v) {
-        value = v;
-        dispatch.change({
-          x: x,
-          u: u,
-          value: value,
-          sourceEvent: e.sourceEvent
-        });
-      }
-
-      root.each(update);
-    }
-
-    function dragend() {
-      var e = d3.event;
-      // console.log('[drag] end');
-      dragging = false;
-    }
-
-    function getWidth(node) {
-      return node.getBoundingClientRect().width;
-    }
-
-    d3.rebind(slider, dispatch, 'on');
-    return slider;
+  eiti.ui.expando = function(selection) {
+    selection.datum(function(d) {
+      var text = this.textContent;
+      return d || {
+        'true': this.getAttribute('data-expanded-text') || text,
+        'false': this.getAttribute('data-collapsed-text') || text
+      };
+    })
+    .on('click.expando', eiti.ui.expando.toggle);
   };
 
-  /**
-   * Create a margin object {top, right, left, bottom} from any
-   * of the following types:
-   *
-   * - string: coerce to a number
-   * - number: a margin object with equal top, right, left and
-   *   bottom values
-   * - array: read the values as [top, right, bottom, left] if there
-   *   are 4 or more elements; otherwise read as [vertical,
-   *   horizontal]
-   * - object: set top, right, bottom and left keys to 0 if not set,
-   *   then return the object
-   * @name eiti.ui.margin
-   *
-   * @param {*} input
-   */
-  eiti.ui.margin = function(d) {
-    switch (typeof d) {
-      case 'string':
-        d = +d || 0;
-      case 'number':
-        return {left: d, top: d, right: d, bottom: d};
-      case 'undefined':
-        return {left: 0, top: 0, right: 0, bottom: 0};
+  eiti.ui.expando.toggle = function toggle(d) {
+    var id = this.getAttribute('aria-controls');
+    var hidden = 'aria-hidden';
+    var target = d3.select('#' + id);
+    var expanded = target.attr(hidden) !== 'false';
+    target.attr(hidden, !expanded);
+    if (d) {
+      this.textContent = d[expanded];
     }
-    if (Array.isArray(d)) {
-      return d.length >= 4
-        ? {top: d[0], right: d[1], bottom: d[2], left: d[3]}
-        : {top: d[0], right: d[1], bottom: d[0], left: d[1]};
-    }
-    ['top', 'right', 'bottom', 'left'].forEach(function(k) {
-      if (!d.hasOwnProperty(k)) d[k] = 0;
-    });
-    return d;
+    this.setAttribute('aria-expanded', expanded);
   };
 
   eiti.util = {};
@@ -617,7 +419,7 @@
   };
 
   /**
-   * This is a format transform that turns metric SI suffixes into more
+   * This is a format transform that turns metric/SI suffixes into more
    * US-friendly ones: M -> m, G -> b, etc.
    *
    * @param {String} str the formatted string
@@ -634,21 +436,28 @@
   })();
 
   /**
-   * Produces international system ("IS")/metric form.
+   * Produces international system ("SI")/metric form.
    *
    * @example
    * assert.equal(eiti.format.is(4.2e6), '4.2m');
    *
-   * @name eiti.format.metric
+   * @name eiti.format.si
    * @function
    *
    * @param {Number} num
    * @return {String}
    */
-  eiti.format.is = eiti.format.transform('.2s', eiti.format.transformMetric);
+  eiti.format.si = eiti.format.transform('.2s', eiti.format.transformMetric);
+
+  eiti.format.transformDollars = function(str) {
+    if (str.charAt(0) === '-') {
+      str = '(' + str.substr(1) + ')';
+    }
+    return '$' + str;
+  };
 
   /**
-   * Produces whole dollar strings in IS/metric form, prefixed
+   * Produces whole dollar strings in SI/metric form, prefixed
    * with a '$', and negative numbers in parentheses.
    *
    * @name eiti.format.dollars
@@ -657,12 +466,10 @@
    * @param {Number} num
    * @return {String}
    */
-  eiti.format.dollars = eiti.format.transform(eiti.format.is, function(str) {
-    if (str.charAt(0) === '-') {
-      str = '(' + str.substr(1) + ')';
-    }
-    return '$' + str;
-  });
+  eiti.format.dollars = eiti.format.transform(
+    eiti.format.si,
+    eiti.format.transformDollars
+  );
 
   /**
    * Produces dollar strings with thousands separators and 2-decimal
@@ -674,7 +481,10 @@
    * @param {Number} num
    * @return {String}
    */
-  eiti.format.dollarsAndCents = d3.format('$,.2f');
+  eiti.format.dollarsAndCents = eiti.format.transform(
+    ',.2f',
+    eiti.format.transformDollars
+  );
 
   /**
    * Produces short dollar strings in SI format with 1 decimal,
@@ -684,7 +494,15 @@
    * @param {Number} num
    * @return {String}
    */
-  eiti.format.shortDollars = eiti.format.transform('$,.2s', eiti.format.transformMetric);
+  eiti.format.shortDollars = eiti.format.transform(
+    '$,.2s', eiti.format.transformMetric
+  );
+
+  eiti.format.pluralize = function(num, singular, plural) {
+    return (num === 1)
+      ? singular
+      : plural || singular + 's';
+  };
 
   function getter(key) {
     if (typeof key === 'function') return key;

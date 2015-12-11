@@ -6,7 +6,7 @@
 <!--[if (gte IE 9)|(gt IEMobile 7)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>KSS Style Guide</title>
+  <title>USEITI Styleguide</title>
 
   <meta name="description" content="">
   <meta name="generator" content="kss-node">
@@ -15,17 +15,18 @@
   <link rel="stylesheet" href="public/kss.css">
   <link rel="stylesheet" href="../css/main.css">
 
+
 </head>
 <body id="kss-node">
 
 <div class="kss-sidebar kss-style">
   <header class="kss-header">
-    <h1 class="kss-doc-title">KSS Style Guide</h1>
+    <h1 class="kss-doc-title">USEITI Styleguide</h1>
   </header>
   <nav class="kss-nav">
     <ul class="kss-nav__menu">
       <li class="kss-nav__menu-item">
-        <a href="./">
+        <a href="./index.html">
           <span class="kss-nav__ref">0</span
           ><span class="kss-nav__name">Overview</span>
         </a>
@@ -37,36 +38,48 @@
         </a>
       </li>
       <li class="kss-nav__menu-item">
-        <a href="section-components.html">
+        <a href="section-colors.html">
           <span class="kss-nav__ref">2</span
+          ><span class="kss-nav__name">Colors</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-components.html">
+          <span class="kss-nav__ref">3</span
           ><span class="kss-nav__name">Components</span>
         </a>
       </li>
       <li class="kss-nav__menu-item">
         <a href="section-elements.html">
-          <span class="kss-nav__ref">3</span
+          <span class="kss-nav__ref">4</span
           ><span class="kss-nav__name">Elements</span>
         </a>
       </li>
       <li class="kss-nav__menu-item">
         <a href="section-layout.html">
-          <span class="kss-nav__ref">4</span
+          <span class="kss-nav__ref">5</span
           ><span class="kss-nav__name">Layout</span>
         </a>
         <ul class="kss-nav__menu-child">
             <li class="kss-nav__menu-item">
               <a href="section-layout.html#kssref-layout-container">
-                <span class="kss-nav__ref">4.1</span
+                <span class="kss-nav__ref">5.1</span
                 ><span class="kss-nav__name">Container</span>
               </a>
             </li>
             <li class="kss-nav__menu-item">
               <a href="section-layout.html#kssref-layout-slabs">
-                <span class="kss-nav__ref">4.2</span
+                <span class="kss-nav__ref">5.2</span
                 ><span class="kss-nav__name">Slabs</span>
               </a>
             </li>
         </ul>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-webfont.html">
+          <span class="kss-nav__ref">7</span
+          ><span class="kss-nav__name">EITI Webfont Icons</span>
+        </a>
       </li>
     </ul>
   </nav>
@@ -79,7 +92,7 @@
       <h1 class="kss-title kss-title--level-1">
         <a class="kss-title__permalink" href="#kssref-layout">
           <span class="kss-title__ref">
-              4
+              5
             <span class="kss-title__permalink-hash">
                 #layout
             </span>
@@ -103,7 +116,7 @@
       <h2 class="kss-title kss-title--level-2">
         <a class="kss-title__permalink" href="#kssref-layout-container">
           <span class="kss-title__ref">
-              4.1
+              5.1
             <span class="kss-title__permalink-hash">
                 #layout.container
             </span>
@@ -153,7 +166,7 @@
       <h2 class="kss-title kss-title--level-2">
         <a class="kss-title__permalink" href="#kssref-layout-slabs">
           <span class="kss-title__ref">
-              4.2
+              5.2
             <span class="kss-title__permalink-hash">
                 #layout.slabs
             </span>
@@ -164,8 +177,10 @@
 
 
       <div class="kss-description">
-        <p>Slabs are full-width blocks of color. Slabs should contain containers to center content.
-Slabs can can have background color styles applied. By default is a neutral background.</p>
+        <p>Slabs are full-width blocks of color.
+Slabs should contain containers to center content.
+Slabs can can have background color styles applied.
+By default is a neutral background.</p>
 
       </div>
     </div>
@@ -183,7 +198,7 @@ Slabs can can have background color styles applied. By default is a neutral back
 </section>
         </div>
         <div class="kss-modifier__name kss-style">
-          .slab-alpha
+          <pre>.slab-alpha</pre>
         </div>
         <div class="kss-modifier__description kss-style">
           full width slab of $white
@@ -194,7 +209,7 @@ Slabs can can have background color styles applied. By default is a neutral back
 </section>
         </div>
         <div class="kss-modifier__name kss-style">
-          .slab-beta
+          <pre>.slab-beta</pre>
         </div>
         <div class="kss-modifier__description kss-style">
           full width slab of $light-gray
@@ -205,7 +220,7 @@ Slabs can can have background color styles applied. By default is a neutral back
 </section>
         </div>
         <div class="kss-modifier__name kss-style">
-          .slab-charlie
+          <pre>.slab-charlie</pre>
         </div>
         <div class="kss-modifier__description kss-style">
           full width slab of $mid-gray
@@ -216,7 +231,7 @@ Slabs can can have background color styles applied. By default is a neutral back
 </section>
         </div>
         <div class="kss-modifier__name kss-style">
-          .slab-delta
+          <pre>.slab-delta</pre>
         </div>
         <div class="kss-modifier__description kss-style">
           full width slab of $light-blue
@@ -227,7 +242,7 @@ Slabs can can have background color styles applied. By default is a neutral back
 </section>
         </div>
         <div class="kss-modifier__name kss-style">
-          .slab-echo
+          <pre>.slab-echo</pre>
         </div>
         <div class="kss-modifier__description kss-style">
           full width slab of $pale-blue
@@ -238,7 +253,7 @@ Slabs can can have background color styles applied. By default is a neutral back
 </section>
         </div>
         <div class="kss-modifier__name kss-style">
-          .slab-foxtrot
+          <pre>.slab-foxtrot</pre>
         </div>
         <div class="kss-modifier__description kss-style">
           full width slab of $mid-blue
@@ -262,6 +277,7 @@ Slabs can can have background color styles applied. By default is a neutral back
 <!-- SCRIPTS -->
 <script src="public/kss.js"></script>
 <script src="public/prettify.js"></script>
+<script src="public/main.js"></script>
 <script>
   prettyPrint();
 </script>

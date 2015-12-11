@@ -10,6 +10,7 @@
     <script src="{{ site.baseurl }}/js/vendor/topojson.v1.min.js"></script>
     <script src="{{ site.baseurl }}/js/vendor/datalib.min.js"></script>
     <script src="{{ site.baseurl }}/js/vendor/colorbrewer.js"></script>
+    <script src="{{ site.baseurl }}/js/vendor/jquery.min.js"></script>
 
     <!-- custom map projection -->
     <script src="{{ site.baseurl }}/js/albers-custom.js"></script>
@@ -25,21 +26,39 @@
     <script src="{{ site.baseurl }}/js/vendor/document-register-element.js"></script>
     <script src="{{ site.baseurl }}/js/components/eiti-map.js"></script>
     <script src="{{ site.baseurl }}/js/components/eiti-slider.js"></script>
+    <script src="{{ site.baseurl }}/js/components/eiti-toggle.js"></script>
+    <script src="{{ site.baseurl }}/js/components/search.js"></script>
 
     <!-- Glossary -->
-    <script src="{{ site.baseurl }}/js/vendor/jquery.min.js"></script>
     <script src="{{ site.baseurl }}/js/vendor/lodash.min.js"></script>
     <script src="{{ site.baseurl }}/js/vendor/list.min.js"></script>
 
+    <!-- Styles -->
     <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
+
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-48605964-8', 'auto');
+      ga('set', 'anonymizeIp', true);
+      ga('set', 'forceSSL', true);
+      ga('send', 'pageview');
+    </script>
+    
   </head>
 
   <body class="{{ page.body_class }}">
+    {% include layout/banner.html %}
 
     {% include layout/header.html %}
 
     <main>
       {% include glossary.html %}
+      {% include layout/nav-drawer.html %}
 
       {{ content }}
     </main>
@@ -48,6 +67,10 @@
 
     <script src="{{ site.baseurl }}/js/components/glossary.js"></script>
     {{ page.script }}
+
+    <!-- Digital Analytics Program roll-up, see the data at https://analytics.usa.gov -->
+    <script src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js" id="_fed_an_ua_tag"></script>
+
   </body>
 
 </html>

@@ -11,18 +11,21 @@
 
 body {
   color: $base-font-color;
-  font-size: $base-font-size;
   font-family: $base-font-family;
-  line-height: $base-line-height;
+  font-size: $base-font-size;
   font-weight: $base-font-weight;
-  -webkit-font-smoothing: antialiased;
+  line-height: $base-line-height;
 }
 
 button {
   cursor: pointer;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   a {
     text-decoration: none;
   }
@@ -45,23 +48,24 @@ a img {
   display: none;
 }
 
-table{
+table {
+  @include font-size(0.9);
+
   border: 1px solid $mid-gray;
   border-spacing: 2px;
-  @include font-size(0.9);
   color: $dark-gray;
   font-weight: $weight-light;
   margin-bottom: $base-padding;
 }
 
-thead{
+thead {
+  background-color: $mid-gray;
   border-bottom: 2px solid $mid-gray;
   font-weight: $weight-book;
   text-align: center;
-  background-color: $mid-gray;
 }
 
-td{
+td {
   border: 1px solid $mid-gray;
   padding: 5px;
 }

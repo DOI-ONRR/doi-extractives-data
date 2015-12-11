@@ -1,13 +1,21 @@
 // Accordions
 //
-// Togglable accordion. Button is visible only in 
+// Togglable accordion. Button is visible only in
 // screen sizes smaller than medium
 //
-// Markup: 
+// Markup:
 // <ul accordion>
 //    <li accordion-item accordion-open="true">
 //        <h3>Heading</h3>
-//        <button class="accordion-button" accordion-button></button>
+//        <button class="accordion-button" accordion-button title="Title content"></button>
+//        <div class="accordion-content">Accordion Content</div
+//    </li>
+// </ul>
+// <ul accordion>
+//    <li accordion-item accordion-open="true">
+//        <h3>Heading</h3>
+//        <button class="accordion-button_more" accordion-button>more</button>
+//        <button class="accordion-button_more" accordion-button>less</button>
 //        <div class="accordion-content">Accordion Content</div
 //    </li>
 // </ul>
@@ -18,8 +26,13 @@
   position: relative;
 
   &[accordion-open=true] {
-    .accordion-button:after {
-      content: "\f077";
+
+    .accordion-button {
+      @include rotate(270deg, 3);
+
+      &:after {
+        content: $icon-chevron-sm;
+      }
     }
 
     .accordion-button_more {
@@ -30,8 +43,9 @@
       display: inline-block;
 
       &::after {
-        content: '–';
+        content: $icon-dash-sm;
       }
+
     }
 
     .accordion-content,
@@ -42,16 +56,20 @@
   }
 
   &[accordion-open=false] {
-    .accordion-button:after {
-      content: "\f078";
+    .accordion-button {
+      @include rotate(90deg, 1);
+
+      &:after {
+        content: $icon-chevron-sm;
+      }
     }
 
     .accordion-button_more {
       &::after {
-        content: '+';
+        content: $icon-plus-sm;
       }
 
-      display: inline-block; 
+      display: inline-block;
     }
 
     .accordion-button_less {
@@ -59,42 +77,41 @@
     }
 
     .accordion-content {
+      display: none;
 
       @include respond-to(medium-up) {
         display: inline-block;
       }
-
-      display: none; 
     }
 
     .accordion-more {
-      display: none; 
+      display: none;
     }
-    
   }
+}
 
+.accordion-button,
+.accordion-button_more,
+.accordion-button_less {
 
+  &:after {
+    font-family: 'eiti';
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+  }
 }
 
 .accordion-button {
-  background-size: 50%;
   background-color: transparent;
+  background-size: 50%;
   height: 2rem;
   margin: 0;
   position: absolute;
   right: $base-padding;
   width: 2rem;
-  
-  &:after {
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
-    text-decoration: inherit;
-  } 
 
   @include respond-to(medium-up) {
     display: none;
   }
 }
-
-

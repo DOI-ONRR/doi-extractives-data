@@ -1,10 +1,20 @@
 
+.filters-wrapper_outer {
+  position: relative;
+}
+
 .filters-wrapper {
+  background-color: transparent;
+  margin-left: 0;
   padding: $base-padding;
+  position: absolute;
+  width: 100%;
+  z-index: 3000;
 
   @include respond-to(medium-up) {
     border-radius: $base-border-radius;
     margin-right: $base-padding;
+    max-width: 674.309px;
   }
 
   @include respond-to(huge-plus-up) {
@@ -14,6 +24,18 @@
   select {
     border: 0;
     height: 50px;
+  }
+
+  &[aria-expanded=true] {
+    background-color: $mid-blue-opaque !important;
+  }
+
+  &.js-color {
+    background: $mid-blue-opaque;
+  }
+
+  &.js-transparent {
+    background: transparent;
   }
 }
 
@@ -67,7 +89,34 @@
   display: none;
 }
 
+// Crazy checkbox magic
+// http://cssdeck.com/labs/css-checkbox-styles
+// for guide on firefox compatibility
+
+.unit-filter {
+  position: relative;
+
+  input {
+    visibility: hidden;
+  }
+}
+
 .unit-selector {
+  position: absolute;
+
+  &:first-of-type {
+    left: 0;
+    top: 0;
+  }
+
+  &:last-of-type {
+    right: 0;
+    top: 0;
+  }
+}
+
+.unit-selector,
+.unit-selector-label {
   @include appearance(none);
   background: $white;
   background-color: $white;
@@ -79,8 +128,7 @@
   height: 50px;
   margin: 0;
   padding: $base-padding-lite;
-  padding-top: 16px;
-  padding-top: 1em;
+  padding-top: ($base-padding * 0.7);
   text-align: center;
   -ms-touch-action: manipulation;
   touch-action: manipulation;
@@ -88,30 +136,34 @@
   width: 50%;
 
   &:first-of-type {
+    @include heading(para-md);
     border-bottom-right-radius: 0;
     border-right: 1px solid $blue;
     border-top-right-radius: 0;
+    font-weight: $weight-bold;
 
     &:before {
       content: '$';
     }
 
-    &[checked='true'] {
+    &[checked='true'] + label {
       background: $blue;
       color: $white;
     }
   }
 
   &:last-of-type {
+    @include heading(para-md);
     @include omega();
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
+    font-weight: $weight-bold;
 
     &:before {
       content: '%';
     }
 
-    &[checked='true'] {
+    &[checked='true'] + label {
       background: $blue;
       color: $white;
     }
@@ -126,12 +178,13 @@
 .filter-description {
   @include heading(para-xl);
   font-weight: $weight-bold;
+  float: left;
   letter-spacing: -0.5px;
   margin-bottom: $base-padding;
+  width: 65%;
 
   @include respond-to(medium-up) {
     float: left;
-    width: 65%;
   }
 
   &.filter-description_closed {

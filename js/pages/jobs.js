@@ -189,7 +189,7 @@
         })
         .call(updateRegionRow);
 
-      var map = selection.select('[is="eiti-map"]');
+      var map = selection.select('eiti-map');
       onMapLoaded(map, function() {
         var subregions = map.selectAll('path.feature');
 
@@ -290,17 +290,11 @@
       .attr('class', 'text');
 
     selection.append('td')
-      .attr('class', 'value value_negative');
-    selection.append('td')
-      .attr('class', 'bar bar_negative')
-      .append('eiti-bar')
-        .attr('negative', true);
+      .attr('class', 'value');
 
     selection.append('td')
-      .attr('class', 'bar bar_positive')
+      .attr('class', 'bar')
       .append('eiti-bar');
-    selection.append('td')
-      .attr('class', 'value value_positive');
   }
 
   function updateRegionRow(selection) {
@@ -315,27 +309,16 @@
       .map(value)
       .sort(d3.ascending);
 
+    selection.select('.value')
+      .text(function(d) {
+        return formatNumber(d.value);
+      });
+
     var max = d3.max(values.map(Math.abs));
 
-    selection.select('.value_negative')
-      .text(function(d) {
-        return d.value < 0 ? formatNumber(d.value) : '';
-      });
-    selection.select('.bar_negative eiti-bar')
-      .attr('max', -max)
-      .attr('value', function(d) {
-        return d.value < 0 ? d.value : 0;
-      });
-
-    selection.select('.value_positive')
-      .text(function(d) {
-        return d.value > 0 ? formatNumber(d.value) : '';
-      });
-    selection.select('.bar_positive eiti-bar')
+    selection.select('eiti-bar')
       .attr('max', max)
-      .attr('value', function(d) {
-        return d.value > 0 ? d.value : 0;
-      });
+      .attr('value', value);
   }
 
   function createScale(values) {
@@ -697,8 +680,16 @@
        ? eiti.commodities.groups[state.get('group')].name
        : 'all commodities');
 
+    var figureSelector = [
+      '[name="figure"] ',
+      '[value="', state.get('figure'), '"]'
+    ].join('');
+
+    var figure = root.select(figureSelector).text();
+
     var data = {
       commodity: commodity.toLowerCase(),
+      figure: figure.toLowerCase(),
       region: REGION_ID_NAME[state.get('region') || 'US'],
       year: state.get('year')
     };

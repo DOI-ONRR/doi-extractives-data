@@ -26,6 +26,10 @@ nav_items:
 
 <p class="case_studies_intro-para">States maintain ownership of some lands and natural resources; develop their own taxation and royalty systems applicable to oil, gas, nonenergy minerals, and renewable energy; and collect extractive revenue directly. Each state has a unique revenue system.</p>
 
+<nav class="hash_selector">
+  {% include hash_selector.html %}
+</nav>
+
 <p>While all 50 states have some natural resource extraction activity, the 2015 USEITI Report focuses on 18 states that led the country in oil, gas, coal, and nonenergy mineral production in 2013; had the most DOI revenue or state production taxes; or had the most significant tribal natural resource interests. These 18 states are highlighted on the map below:</p>
 
 <img src="{{site.baseurl}}/img/placeholders/map.png">

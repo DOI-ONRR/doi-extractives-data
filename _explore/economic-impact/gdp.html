@@ -23,8 +23,8 @@ permalink: /explore/gdp/
 
     </div>
   </div>
-  <section class="container-right-8">
-    <div class="filters-wrapper slab-foxtrot container">
+  <section class="container-right-8 filters-wrapper_outer">
+    <div data-absolute="true" data-offset-parent="true" class="sticky_nav sticky_nav-show_mobile filters-wrapper container" data-toggler="filters">
       <h1 data-toggler="filters" data-filter-description="" class="filter-description filter-description_closed">
         GDP from extractives in
         <a href="#region-selector" class="filter-part" data-key="region">the entire U.S.</a>
@@ -48,11 +48,12 @@ permalink: /explore/gdp/
           </select>
         </div>
         <div id="unit-filter" class="container-right-6 filter">
-
-          <label for="unit-selector">Show results as</label>
-          <div id="unit-selector" class="container">
-            <input class="unit-selector" type="radio" name="units" value="dollars"/>
-            <input class="unit-selector" type="radio" name="units" value="percent"/>
+          <label for="unit-selector">Show Results as</label>
+          <div id="unit-selector" class="container unit-filter">
+            <input id="units-dollars" class="unit-selector" type="radio" name="units" value="dollars"/>
+            <label class="unit-selector-label" for="units-dollars"></label>
+            <input id="units-percent" class="unit-selector" type="radio" name="units" value="percent"/>
+            <label class="unit-selector-label" for="units-percent"></label>
           </div>
         </div>
 
@@ -87,23 +88,24 @@ permalink: /explore/gdp/
 
   </div>
 
-  <div class="slab-alpha">
+  <div class="explore-exploration slab-alpha">
 
     <div class="regions container">
 
       <section id="US" class="region active">
         <div class="map-wrapper">
-          <svg is="eiti-map" id="US-map" class="region-map" simplify="1e-2"
-            preserveAspectRatio="xMidYMid meet"
+          <eiti-map id="US-map" class="region-map" simplify="1e-2"
             projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/">
-            <g class="onshore states" data-url="us-topology.json"
-              data-object="states"
-              data-id="'US-' + id"
-              data-href="'#?region=' + id"
-              data-title="properties.name"
-              data-mesh="true">
-            </g>
-          </svg>
+            <svg class="region-map">
+              <g class="onshore states" data-url="us-topology.json"
+                data-object="states"
+                data-id="'US-' + id"
+                data-href="'#?region=' + id"
+                data-title="properties.name"
+                data-mesh="true">
+              </g>
+            </svg>
+          </eiti-map>
 
           <div class="map-legend"></div>
         </div>
@@ -119,21 +121,21 @@ permalink: /explore/gdp/
       {% for region in site.data.states %}
       <section id="{{ region.id }}" class="region onshore">
         <div class="map-wrapper">
-          <svg is="eiti-map" id="{{ region.id }}-map" class="region-map" simplify="1e-2"
-            preserveAspectRatio="xMidYMid meet"
+          <eiti-map id="{{ region.id }}-map" class="region-map" simplify="1e-2"
             projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/" zoom-to="{{ region.id }}">
-            <g class="onshore states" data-url="us-topology.json"
-              data-object="states"
-              data-filter="id === '{{ region.id }}'">
-            </g>
-          </svg>
+            <svg class="region-map">
+              <g class="onshore states" data-url="us-topology.json"
+                data-object="states"
+                data-filter="id === '{{ region.id }}'">
+              </g>
+            </svg>
+          </eiti-map>
 
           <div class="map-legend"></div>
         </div>
 
         <h3 class="region-header-category">GDP in {{ region.name }}</h3>
         <table class="subregions">
-          <thead class="region-header"></thead>
           <tbody></tbody>
         </table>
 

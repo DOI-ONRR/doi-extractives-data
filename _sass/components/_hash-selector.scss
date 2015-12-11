@@ -1,5 +1,6 @@
 .hash_selector {
   display: inline-block;
+  margin-bottom: $base-padding;
 
   @include respond-to(medium-up) {
     display: none;

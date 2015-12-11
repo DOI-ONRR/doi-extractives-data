@@ -197,11 +197,50 @@ async.parallel({
             var volumes = _.pluck(_.where(data[commodity], {'Year': year, 'Mine State': state}), product);
             volumes = _.map(volumes, trimCommas);
 
+            // volumes = _.reduce(volumes, function(total, n) {
+            //   return total + n;
+            // });
+
             var matches = {
               'county': _.pluck(_.where(data[commodity], {'Year': year, 'Mine State': state}), 'Mine County'),
               'volume': volumes
             }
-            return _.zipObject(matches.county, matches.volume);
+
+
+
+            var zippedObj = _.zip(matches.county, matches.volume);
+
+            zippedObj = _.reduce(zippedObj, function(total, n, i) {
+              if (state == 'ND') {
+                // console.warn(total, '---total--->', typeof(total[n[0]]), n[1], i)
+                // console.warn('~~~~~~~~~~~~~~~~~~~~~~')
+
+              }
+
+              if (!total) {
+                var total = {};
+              }
+
+              if (typeof(total[n[0]]) === undefined || typeof(total[n[0]]) === 'undefined') {
+                  total[n[0]] = n[1];
+              } else {
+                total[n[0]] += n[1];
+              }
+
+              if (state == 'ND') {
+                // console.warn(total, '---total--->', n)
+                // console.warn('=====================')
+              }
+
+              return total;
+            }, {});
+            // zipObject = _.zipObject(zippedObj);
+            if (state == 'ND') {
+              // console.warn(state, year, '==>', matches)
+              // console.warn('------------------------------')
+              console.warn(state, year, '==>', zippedObj)
+            }
+            return zippedObj;
           }
 
 
@@ -226,7 +265,7 @@ async.parallel({
               ? 'McLean'
               : county;
           }
-
+          // console.warn(state, year, '==>', productionByState)
           // this conditional might need to be revisited
           if (productionByState){
             Object.keys(productionByState).forEach(function(county) {

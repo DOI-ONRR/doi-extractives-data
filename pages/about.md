@@ -166,7 +166,7 @@ permalink: /about/
 
       <article class="bureau">
         <div class="bureau-left">
-          <img class="bureau-image" src="{{ site.baseurl }}/img/logos/DOI-mark.png" alt="U.S. Department of the Interior March 3, 1849 Seal">
+          <img class="bureau-image" src="{{ site.baseurl }}/img/logos/ONRR-mark.svg" alt="Office of Natural Resources Revenue">
         </div>
         <div class="bureau-right">
           <h4>Office of Natural Resources Revenue (ONRR)</h4>

@@ -1,8 +1,8 @@
 // Styleguide blocks.disbursements
 
 .disbursment-figure {
-  padding-top: $base-padding-extra;
   padding-bottom: $base-padding-extra;
+  padding-top: $base-padding-extra;
 
   figcaption {
     @include heading(h5);

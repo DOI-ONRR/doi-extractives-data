@@ -5,7 +5,6 @@
 
 .filters-wrapper {
   background-color: transparent;
-  max-width: 654.609px;
   margin-left: 0;
   padding: $base-padding;
   position: absolute;
@@ -15,6 +14,7 @@
   @include respond-to(medium-up) {
     border-radius: $base-border-radius;
     margin-right: $base-padding;
+    max-width: 674.309px;
   }
 
   @include respond-to(huge-plus-up) {
@@ -27,12 +27,11 @@
   }
 
   &[aria-expanded=true] {
-    // background-color: $mid-blue;
-    background-color: rgba(198,233,255, 0.85) !important;
+    background-color: $mid-blue-opaque !important;
   }
 
   &.js-color {
-    background: rgba(198,233,255, 0.85);
+    background: $mid-blue-opaque;
   }
 
   &.js-transparent {
@@ -149,12 +148,13 @@
 .filter-description {
   @include heading(para-xl);
   font-weight: $weight-bold;
+  float: left;
   letter-spacing: -0.5px;
   margin-bottom: $base-padding;
+  width: 65%;
 
   @include respond-to(medium-up) {
     float: left;
-    width: 65%;
   }
 
   &.filter-description_closed {

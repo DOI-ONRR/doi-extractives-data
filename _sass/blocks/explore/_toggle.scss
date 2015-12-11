@@ -22,12 +22,21 @@
 
 .toggle {
   display: block;
-  font: inherit;
-  margin: 0 auto;
-  padding: 0;
-  position: relative;
-  text-align: right;
-  width: 100%;
+  // font: inherit;
+  // margin: 0 auto;
+  // padding: 0;
+  // position: relative;
+  // text-align: right;
+  // width: 100%;
+  background-color: $blue;
+  color: $white;
+  float: right;
+  font-weight: $weight-bold;
+  margin-bottom: 0;
+  padding: ($base-padding-lite * 1.5);
+  padding-left: $base-padding;
+  padding-right: $base-padding;
+  -webkit-font-smoothing: antialiased;
 
   &[aria-expanded=true] {
     margin-top: 1em;

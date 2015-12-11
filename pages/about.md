@@ -13,7 +13,7 @@ permalink: /about/
 		</div>
 		<div class="container-right-4 hero-right">
       <div class="hero-right_square about_intro-callout">
-        <h2 class="about_intro-header">The 2015 USEITI Executive Summary is now available, and includes:</h2>
+        <h2 class="about_intro-header">The 2015 USEITI report is now available, and includes:</h2>
         <ul class="list-bullet about_intro-list">
           <li>Never-before-released federal production data</li>
           <li>Narratives explaining how the system of leasing federal land works in the U.S.</li>

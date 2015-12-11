@@ -24,6 +24,10 @@ nav_items:
 
 <p class="case_studies_intro-para">According to the 2011 American Community Survey conducted by the U.S. Census, there were 5.1 million American Indians and Alaska Natives living in the United States, accounting for approximately <a href="https://www.census.gov/newsroom/releases/archives/facts_for_features_special_editions/cb12-ff22.html">1.6% of the population</a>.</p>
 
+<nav class="hash_selector">
+  {% include hash_selector.html %}
+</nav>
+
 <p>The federal government formally recognizes 566 Indian tribes and 325 Indian reservations that cover <a href="http://www.blm.gov/public_land_statistics/pls13/pls2013.pdf">56 million acres of land</a>. This land is held in trust by DOI and has <a href="http://www.resourcegovernance.org/sites/default/files/RWI_Native_American_Lands_2011.pdf">significant natural resource extraction potential</a>, containing up to 30% of U.S. coal reserves west of the Mississippi, 50% of potential uranium reserves, and 20% of known oil and gas reserves. Extracting natural resources on Indian land and distributing the associated revenue involves a unique set of processes and stakeholders.</p>
 
 <h2 class="h3" id="federal-obligations" data-nav-header="federal-obligations">Federal obligations</h2>

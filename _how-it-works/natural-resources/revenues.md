@@ -28,6 +28,10 @@ nav_items:
 
 <p class="case_studies_intro-para">Companies pay a wide range of fees, rates and taxes to extract natural resources in the U.S. The amounts differ depending on what the <a href="{{ site.baseurl }}/how-it-works/ownership/">ownership</a> of the natural resource looks like. We'll cover some of the major types of payments companies make here. They are usually called 'revenue' because they represent revenue to the American public.</p>
 
+<nav class="hash_selector">
+  {% include hash_selector.html %}
+</nav>
+
 <h2 id="federal-lands-and-waters" data-nav-header="federal-lands-and-waters">Payments to extract natural resources from federal land and waters</h2>
 
 <p>When companies extract natural resources on federal onshore lands and the Outer Continental Shelf, they pay revenue to the Department of the Interior (DOI). In general, companies pay bonuses, rents, royalties, or fees and penalties (if incurred) to ONRR, and in some cases bonuses and rents to BLM. Royalties, a percentage of the sales value of extracted resources, make up most of the revenue paid to DOI.</p>

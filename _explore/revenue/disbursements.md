@@ -64,46 +64,44 @@ permalink: /explore/disbursements/
 
     <p>In addition to the funds ONRR disbursed, OSMRE disbursed over $322 million from the Abandoned Mine Reclamation Fund in FY 2013 to 24 states and three tribes. States and tribes use these funds to reclaim mine lands abandoned from mining operations prior to 1977.</p>
 
-    <p><img src="pie chart, p. 52"></p>
-
     <p>In addition to these states, the Crow Tribe received $1.7 million, the Hopi tribe $1.3 million, and the Navajo tribe $6.8 million.</p>
-
-    <p><img src="bar chart, p. 52"></p>
 
     <h3>Offshore revenue</h3>
 
-    <p>In FY 2013, ONRR disbursed $9.046 billion in revenue from natural resource extraction on the Outer Continental Shelf as follows:</p>
+    <p>In FY 2013, ONRR disbursed $9.046 billion in revenue from natural resource extraction on the Outer Continental Shelf.</p>
 
-    <h4>FY 2013 disbursements</h4>
-
-    <table>
+    <table class="article_table">
       <tr>
         <th>Recipient</th>
         <th>Amount</th>
+        <th>Percent of offshore disbursements</th>
       </tr>
       <tr>
-        <td>Treasury: Funds disbursed to the Treasury go to the General Fund, which pays for roughly two-thirds of all federal expenditures, including the military, national parks, and schools.</td>
-        <td>$7.781 billion (86% of offshore disbursements)</td>
+        <td><span>Treasury</span><br> Funds disbursed to the Treasury go to the General Fund, which pays for roughly two-thirds of all federal expenditures, including the military, national parks, and schools.</td>
+        <td>$7.781 billion</td>
+        <td>86%</td>
       </tr>
       <tr>
-        <td>Land and Water Conservation Fund: This fund provides matching grants to states and local governments to buy and develop public outdoor recreation areas across the 50 states.</td>
-        <td>$896 million (10% of offshore disbursements)</td>
+        <td><span>Land and Water Conservation Fund</span><br> This fund provides matching grants to states and local governments to buy and develop public outdoor recreation areas across the 50 states.</td>
+        <td>$896 million</td>
+        <td>10%</td>
       </tr>
       <tr>
-        <td>States: States receive federal Outer Continental Shelf revenue in two ways: 27% of revenue from leases in the 8(g) Zone (the first three nautical miles of the Outer Continental Shelf) are shared with states; and 37.5% of revenue from certain leases in the Gulf of Mexico are shared with Alabama, Louisiana, Mississippi, and Texas.</td>
-        <td>$41 million (<1% of offshore disbursements)</td>
+        <td><span>States</span><br> States receive federal Outer Continental Shelf revenue in two ways: 27% of revenue from leases in the 8(g) Zone (the first three nautical miles of the Outer Continental Shelf) are shared with states; and 37.5% of revenue from certain leases in the Gulf of Mexico are shared with Alabama, Louisiana, Mississippi, and Texas.</td>
+        <td>$41 million</td>
+        <td><1%</td>
       </tr>
       <tr>
-        <td>Historic Preservation Fund: This fund helps preserve historical and archaeological sites and cultural heritage through grants to state and tribal historic preservation offices.</td>
-        <td>$150 million (2% of offshore disbursements)</td>
+        <td><span>Historic Preservation Fund</span><br> This fund helps preserve historical and archaeological sites and cultural heritage through grants to state and tribal historic preservation offices.</td>
+        <td>$150 million</td>
+        <td>2%</td>
       </tr>
       <tr>
-        <td>Other: Certain offshore funds are directed back to the federal agencies that administer these lands (e.g., BOEM and BSEE) to help cover operational costs.</td>
-        <td>$215 million (2% of offshore disbursements)</td>
+        <td><span>Other</span><br> Certain offshore funds are directed back to the federal agencies that administer these lands (e.g., BOEM and BSEE) to help cover operational costs.</td>
+        <td>$215 million</td>
+        <td>2%</td>
       </tr>
     </table>
-
-    <p><img src="pie chart p. 54" /></p>
 
   </div>
 

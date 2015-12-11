@@ -55,6 +55,8 @@
 
 .article_table {
   border: none;
+  border-bottom: 1px solid $light-green;
+  margin-bottom: $base-padding-extra;
 
   th {
     border-bottom: 4px solid $light-green;
@@ -70,7 +72,7 @@
     border-top: 1px solid $light-green;
     line-height: 1.4;
     padding: $base-padding-lite;
-    padding-bottom: ($base-padding-lite * 0.8);
+    padding-bottom: ($base-padding-lite * 1.7);
   }
 
   span {

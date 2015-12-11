@@ -60,22 +60,22 @@
       if (this.diffTop >= 0){
         this.elems.sticky.style.position = 'fixed';
         this.elems.sticky.style.top = 0;
-        this.elems.sticky.classList.remove('transparent');
-        this.elems.sticky.classList.add('color');
+        this.elems.sticky.classList.remove('js-transparent');
+        this.elems.sticky.classList.add('js-color');
         if (this.diffBottom >= 0){
           this.elems.sticky.style.position = 'absolute';
           this.elems.sticky.style.top = this.mainHeight - this.height - 50 + 'px';
-          this.elems.sticky.classList.remove('transparent');
-          this.elems.sticky.classList.add('color');
+          this.elems.sticky.classList.remove('js-transparent');
+          this.elems.sticky.classList.add('js-color');
         } else {
           this.elems.sticky.style.position = 'fixed';
           this.elems.sticky.style.top = 0;
-          this.elems.sticky.classList.remove('transparent');
-          this.elems.sticky.classList.add('color');
+          this.elems.sticky.classList.remove('js-transparent');
+          this.elems.sticky.classList.add('js-color');
         }
       } else {
-        this.elems.sticky.classList.remove('color');
-        this.elems.sticky.classList.add('transparent');
+        this.elems.sticky.classList.remove('js-color');
+        this.elems.sticky.classList.add('js-transparent');
 
         if (this.absolute) {
           this.elems.sticky.style.position = 'absolute';

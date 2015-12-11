@@ -36,22 +36,43 @@ permalink: /explore/exports/
         <div class="filters-heading">
           <h3>Filter exports</h3>
         </div>
-        <div class="container-left-6 filter">
-          <label for="region-selector">Region</label>
-          <select id="region-selector" name="region">
-            <option value="">All U.S.</option>
-            {% for state in site.data.states %}
-            <option value="{{ state.id }}">{{ state.name }}</option>
-            {% endfor %}
-          </select>
+        <div class="container-left-6">
+          <div class="filter">
+            <label for="region-selector">Region</label>
+            <select id="region-selector" name="region">
+              <option value="">All U.S.</option>
+              {% for state in site.data.states %}
+              <option value="{{ state.id }}">{{ state.name }}</option>
+              {% endfor %}
+            </select>
+          </div>
+          <div id="unit-filter" class="filter">
+            <label for="unit-selector">Show Results as</label>
+            <div id="unit-selector" class="container unit-filter">
+              <input id="units-dollars" class="unit-selector" type="radio" name="units" value="dollars"/>
+              <label class="unit-selector-label" for="units-dollars"></label>
+              <input id="units-percent" class="unit-selector" type="radio" name="units" value="percent"/>
+              <label class="unit-selector-label" for="units-percent"></label>
+            </div>
+          </div>
         </div>
-        <div id="unit-filter" class="container-right-6 filter">
-          <label for="unit-selector">Show Results as</label>
-          <div id="unit-selector" class="container unit-filter">
-            <input id="units-dollars" class="unit-selector" type="radio" name="units" value="dollars"/>
-            <label class="unit-selector-label" for="units-dollars"></label>
-            <input id="units-percent" class="unit-selector" type="radio" name="units" value="percent"/>
-            <label class="unit-selector-label" for="units-percent"></label>
+
+        <div class="container-left-6">
+          <div id="commodity-group-filter" class="filter">
+            <label for="commodity-group-selector">Commodity Category</label>
+            <select id="commodity-group-selector" name="group">
+              <option value="">All categories</option>
+              {% for group in site.data.resource.groups %}
+              <option value="{{ group[0] }}">{{ group[1].name }}</option>
+              {% endfor %}
+            </select>
+          </div>
+
+          <div id="commodity-filter" class="filter">
+            <label for="commodity-selector">Commodity</label>
+            <select id="commodity-selector" name="commodity">
+              <option value="">All commodities</option>
+            </select>
           </div>
         </div>
 

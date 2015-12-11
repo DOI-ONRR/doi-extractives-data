@@ -21,54 +21,40 @@ title: Home
     <h3 class="h5 explore_home-subhead">Explore Data</h3>
     <h2 class="h3 explore_home-heading">Narrative-style title encapsulating the explore data section</h2>
 
-      <ul class="explore_home-tabs" role="tablist">
-       <a href="#revenue" tabindex="0" role="tab" aria-controls="revenue" aria-selected="true"><li role="presentation">Revenue</li></a>
-       <a href="#production" tabindex="-1" role="tab" aria-controls="production"><li role="presentation">Production</li></a>
-       <a href="#impact" tabindex="-1" role="tab" aria-controls="impact"><li role="presentation">Economic Impact</li></a>
-      </ul>
+    <ul class="explore_home-tabs" role="tablist">
+     <a href="#revenue" tabindex="0" role="tab" aria-controls="revenue" aria-selected="true"><li role="presentation">Revenue</li></a>
+     <a href="#production" tabindex="-1" role="tab" aria-controls="production"><li role="presentation">Production</li></a>
+     <a href="#impact" tabindex="-1" role="tab" aria-controls="impact"><li role="presentation">Economic Impact</li></a>
+    </ul>
 
-      <section class="explore_home-revenue" id="revenue" role="tabpanel">
-        ...
-      </section>
+    <section class="explore_home-main" id="revenue" role="tabpanel">
+      <div class="container-left-3">
+        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</p>
+        <a href="{{ site.baseurl }}/explore/" class="button-primary explore_home-button">Explore data</a>
+      </div>
+      <div  class="container-left-6">
+        <a href="{{ site.baseurl }}/explore/federal-revenue-by-location/" class="explore_home-img">
+          <h4>Revenue from all commodities on U.S. federal lands</h4>
+          <img src="{{ site.baseurl }}/img/explore-home-revenue.png" alt="Map showing revenues from extractive resources on federal lands">
+        </a>
+      </div>
+      <div class="container-left-3">
+        <p class="explore_home-fact">In 2013, the federal government collected a total of <strong>$12 billion</strong> in revenue from those extracting resources on federal lands.</p>
+        <ul class="explore_home-links">
+          <li><a href="{{ site.baseurl }}/explore/#revenue">Revenue topics</a></li>
+          <li><a href="{{ site.baseurl }}/explore/">All data topics</a></li>
+        </ul>
+      </div>
+    </section>
 
-      <section class="explore_home-production" id="production" role="tabpanel" aria-hidden="true">
-        ...
-      </section>
+    <section class="explore_home-main" id="production" role="tabpanel" aria-hidden="true">
+      ...
+    </section>
 
-      <section class="explore_home-impact" id="impact" role="tabpanel" aria-hidden="true">
-        ...
-      </section>
+    <section class="explore_home-main" id="impact" role="tabpanel" aria-hidden="true">
+      ...
+    </section>
 
-
-    <div>
-      stuff here
-    </div>
-
-    <!--
-    <div class="container-half">
-      <eiti-map id="region-map" simplify="1e-2"
-        projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/">
-        <svg>
-          <g class="offshore areas" data-url="offshore-simple.json"
-            data-layer-type="offshore"
-            data-title="properties.name"
-            data-mesh="true">
-          </g>
-          <g class="onshore states" data-url="us-topology.json"
-            data-object="states"
-            data-title="properties.name || properties.abbr"
-            data-mesh="true">
-          </g>
-          <g class="onshore counties" data-url="us-topology.json"
-            data-object="counties"
-            data-filter-template="properties.state === '{region}'"
-            data-title="properties.county"
-            data-mesh="true">
-          </g>
-        </svg>
-      </eiti-map>
-    </div>
-    -->
   </div>
 </section>
 

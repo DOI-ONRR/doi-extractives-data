@@ -40,8 +40,43 @@
   }
 }
 
-.explore_home-revenue,
-.explore_home-production,
-.explore_home-impact {
+.explore_home-main {
   border-top: 1px solid $neutral-gray;
+  padding-top: $base-padding-large;
+}
+
+.explore_home-button {
+  margin-top: $base-padding-lite;
+  padding: ($base-padding * 0.7) $base-padding;
+}
+
+.explore_home-fact {
+  @include heading(para-md);
+  line-height: 1.6;
+}
+
+.explore_home-img {
+  h4 {
+    @include heading(para-lg);
+    color: $blue;
+    font-weight: $weight-bold;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.explore_home-links {
+  a {
+    @include heading(para-sm);
+    color: $blue;
+    font-weight: $weight-bold;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
 }

@@ -52,3 +52,17 @@
 .article_img-100 {
   width: 100%;
 }
+
+.disbursment-figure {
+  padding-top: $base-padding-extra;
+  padding-bottom: $base-padding-extra;
+
+  figcaption {
+    @include heading(h5);
+    font-weight: $weight-bold;
+
+    span {
+      font-weight: $weight-light;
+    }
+  }
+}

@@ -18,6 +18,11 @@ permalink: /explore/disbursements/
 
     <p>In comparison, DOI revenue from extraction on federal lands goes to many different funds and entities. In FY 2013, ONRR disbursed $14.187 billion in DOI revenue. The recipient of these funds depends on whether the revenue is derived from onshore or offshore natural resource extraction.</p>
 
+    <figure class="disbursment-figure">
+      <figcaption>Federal Revenue Disbursements by Fund <span>(2013)</span></figcaption>
+      <img src="{{ site.baseurl }}/img/fund-disbursement-chart.png" alt="Chart of disbursement funds sorted by size of disbursement and type (offshore or onshore)" class="article_img-100">
+    </figure>
+
     <h3>Onshore revenue</h3>
 
     <p>In FY 2013, ONRR disbursed <a href="http://statistics.onrr.gov/ReportTool.aspx">$5.141 billion</a> in revenue from natural resource extraction as follows:</p>

@@ -52,7 +52,7 @@
 
   @include respond-to(medium-up) {
     &.overview {
-      @include span-columns(6);
+      @include span-columns(10);
       @include shift(2);
     }
   }

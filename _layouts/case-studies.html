@@ -34,10 +34,240 @@ layout: default
 			</div>
 		</label>
 
-		<div class="u-centered">
+		<div class="u-centered case_studies-maps">
 
-      <img src="{{ site.baseurl }}/img/counties/12-map.png" alt="Map with locations of the twelve communities given in-depth coverage in this section of the site." class="case_studies_intro-image">
-      <img src="{{ site.baseurl }}/img/counties/12-map-icons.png" alt="Key for map with the icons for the six commodities given in-depth coverage in this section of the site." class="case_studies_intro-image case_studies_intro-image_key">
+			{% if page.permalink == '/case-studies/' %}
+      	<img src="{{ site.baseurl }}/img/counties/12-map.png" alt="Map with locations of the twelve communities given in-depth coverage in this section of the site." class="case_studies_intro-image">
+				<img src="{{ site.baseurl }}/img/counties/12-map-icons.png" alt="Key for map with the icons for the six commodities given in-depth coverage in this section of the site." class="case_studies_intro-image case_studies_intro-image_key">
+			{% elsif page.permalink == '/case-studies/boone-logan-and-mingo/' %}
+				<svg is="eiti-map" data-path="{{ site.baseurl }}/data/geo/"
+				  simplify="1e-2"
+					projection="albersCustom"
+					preserveAspectRatio="xMidYMid meet"
+					zoom-to="WV">
+					<g data-url="us-topology.json"
+						data-object="states"
+						data-mesh="true"
+						data-filter="id === 'WV'"></g>
+					<g data-url="us-topology.json"
+						data-object="counties"
+						data-filter="properties.state === 'WV'"
+						data-mesh="true"></g>
+					<g data-url="us-topology.json"
+						data-object="counties"
+						data-filter="properties.state === 'WV' &amp;&amp; properties.name.match(/Boone|Logan|Mingo/)"
+						class="case_studies-selected_counties"></g>
+				</svg>
+			{% elsif page.permalink == '/case-studies/campbell/' %}
+				<svg is="eiti-map" data-path="{{ site.baseurl }}/data/geo/"
+					simplify="1e-2"
+					projection="albersCustom"
+					preserveAspectRatio="xMidYMid meet"
+					zoom-to="WY">
+					<g data-url="us-topology.json"
+						data-object="states"
+						data-mesh="true"
+						data-filter="id === 'WY'"></g>
+					<g data-url="us-topology.json"
+						data-object="counties"
+						data-filter="properties.state === 'WY'"
+						data-mesh="true"></g>
+					<g data-url="us-topology.json"
+						data-object="counties"
+						data-filter="properties.state === 'WY' &amp;&amp; properties.name.match(/Campbell/)"
+						class="case_studies-selected_counties"></g>
+				</svg>
+			{% elsif page.permalink == '/case-studies/greenlee/' %}
+				<svg is="eiti-map" data-path="{{ site.baseurl }}/data/geo/"
+					simplify="1e-2"
+					projection="albersCustom"
+					preserveAspectRatio="xMidYMid meet"
+					zoom-to="AZ">
+					<g data-url="us-topology.json"
+						data-object="states"
+						data-mesh="true"
+						data-filter="id === 'AZ'"></g>
+					<g data-url="us-topology.json"
+						data-object="counties"
+						data-filter="properties.state === 'AZ'"
+						data-mesh="true"></g>
+					<g data-url="us-topology.json"
+						data-object="counties"
+						data-filter="properties.state === 'AZ' &amp;&amp; properties.name.match(/Greenlee/)"
+						class="case_studies-selected_counties"></g>
+				</svg>
+			{% elsif page.permalink == '/case-studies/pima/' %}
+				<svg is="eiti-map" data-path="{{ site.baseurl }}/data/geo/"
+					simplify="1e-2"
+					projection="albersCustom"
+					preserveAspectRatio="xMidYMid meet"
+					zoom-to="AZ">
+					<g data-url="us-topology.json"
+						data-object="states"
+						data-mesh="true"
+						data-filter="id === 'AZ'"></g>
+					<g data-url="us-topology.json"
+						data-object="counties"
+						data-filter="properties.state === 'AZ'"
+						data-mesh="true"></g>
+					<g data-url="us-topology.json"
+						data-object="counties"
+						data-filter="properties.state === 'AZ' &amp;&amp; properties.name.match(/Pima/)"
+						class="case_studies-selected_counties"></g>
+				</svg>
+			{% elsif page.permalink == '/case-studies/elko-and-eureka/' %}
+				<svg is="eiti-map" data-path="{{ site.baseurl }}/data/geo/"
+					simplify="1e-2"
+					projection="albersCustom"
+					preserveAspectRatio="xMidYMid meet"
+					zoom-to="NV">
+					<g data-url="us-topology.json"
+						data-object="states"
+						data-mesh="true"
+						data-filter="id === 'NV'"></g>
+					<g data-url="us-topology.json"
+						data-object="counties"
+						data-filter="properties.state === 'NV'"
+						data-mesh="true"></g>
+					<g data-url="us-topology.json"
+						data-object="counties"
+						data-filter="properties.state === 'NV' &amp;&amp; properties.name.match(/Elko|Eureka/)"
+						class="case_studies-selected_counties"></g>
+				</svg>
+			{% elsif page.permalink == '/case-studies/humboldt-and-lander/' %}
+				<svg is="eiti-map" data-path="{{ site.baseurl }}/data/geo/"
+					simplify="1e-2"
+					projection="albersCustom"
+					preserveAspectRatio="xMidYMid meet"
+					zoom-to="NV">
+					<g data-url="us-topology.json"
+						data-object="states"
+						data-mesh="true"
+						data-filter="id === 'NV'"></g>
+					<g data-url="us-topology.json"
+						data-object="counties"
+						data-filter="properties.state === 'NV'"
+						data-mesh="true"></g>
+					<g data-url="us-topology.json"
+						data-object="counties"
+						data-filter="properties.state === 'NV' &amp;&amp; properties.name.match(/Humboldt|Lander/)"
+						class="case_studies-selected_counties"></g>
+				</svg>
+			{% elsif page.permalink == '/case-studies/marquette/' %}
+				<svg is="eiti-map" data-path="{{ site.baseurl }}/data/geo/"
+					simplify="1e-2"
+					projection="albersCustom"
+					preserveAspectRatio="xMidYMid meet"
+					zoom-to="MI">
+					<g data-url="us-topology.json"
+						data-object="states"
+						data-mesh="true"
+						data-filter="id === 'MI'"></g>
+					<g data-url="us-topology.json"
+						data-object="counties"
+						data-filter="properties.state === 'MI'"
+						data-mesh="true"></g>
+					<g data-url="us-topology.json"
+						data-object="counties"
+						data-filter="properties.state === 'MI' &amp;&amp; properties.name.match(/Marquette/)"
+						class="case_studies-selected_counties"></g>
+				</svg>
+			{% elsif page.permalink == '/case-studies/st-louis/' %}
+				<svg is="eiti-map" data-path="{{ site.baseurl }}/data/geo/"
+					simplify="1e-2"
+					projection="albersCustom"
+					preserveAspectRatio="xMidYMid meet"
+					zoom-to="MN">
+					<g data-url="us-topology.json"
+						data-object="states"
+						data-mesh="true"
+						data-filter="id === 'MN'"></g>
+					<g data-url="us-topology.json"
+						data-object="counties"
+						data-filter="properties.state === 'MN'"
+						data-mesh="true"></g>
+					<g data-url="us-topology.json"
+						data-object="counties"
+						data-filter="properties.state === 'MN' &amp;&amp; properties.name.match(/Saint Louis/)"
+						class="case_studies-selected_counties"></g>
+				</svg>
+			{% elsif page.permalink == '/case-studies/desoto/' %}
+				<svg is="eiti-map" data-path="{{ site.baseurl }}/data/geo/"
+					simplify="1e-2"
+					projection="albersCustom"
+					preserveAspectRatio="xMidYMid meet"
+					zoom-to="LA">
+					<g data-url="us-topology.json"
+						data-object="states"
+						data-mesh="true"
+						data-filter="id === 'LA'"></g>
+					<g data-url="us-topology.json"
+						data-object="counties"
+						data-filter="properties.state === 'LA'"
+						data-mesh="true"></g>
+					<g data-url="us-topology.json"
+						data-object="counties"
+						data-filter="properties.state === 'LA' &amp;&amp; properties.name.match(/De Soto/)"
+						class="case_studies-selected_counties"></g>
+				</svg>
+			{% elsif page.permalink == '/case-studies/tarrant-and-johnson/' %}
+				<svg is="eiti-map" data-path="{{ site.baseurl }}/data/geo/"
+					simplify="1e-2"
+					projection="albersCustom"
+					preserveAspectRatio="xMidYMid meet"
+					zoom-to="TX">
+					<g data-url="us-topology.json"
+						data-object="states"
+						data-mesh="true"
+						data-filter="id === 'TX'"></g>
+					<g data-url="us-topology.json"
+						data-object="counties"
+						data-filter="properties.state === 'TX'"
+						data-mesh="true"></g>
+					<g data-url="us-topology.json"
+						data-object="counties"
+						data-filter="properties.state === 'TX' &amp;&amp; properties.name.match(/Tarrant|Johnson/)"
+						class="case_studies-selected_counties"></g>
+				</svg>
+			{% elsif page.permalink == '/case-studies/kern/' %}
+				<svg is="eiti-map" data-path="{{ site.baseurl }}/data/geo/"
+					simplify="1e-2"
+					projection="albersCustom"
+					preserveAspectRatio="xMidYMid meet"
+					zoom-to="CA">
+					<g data-url="us-topology.json"
+						data-object="states"
+						data-mesh="true"
+						data-filter="id === 'CA'"></g>
+					<g data-url="us-topology.json"
+						data-object="counties"
+						data-filter="properties.state === 'CA'"
+						data-mesh="true"></g>
+					<g data-url="us-topology.json"
+						data-object="counties"
+						data-filter="properties.state === 'CA' &amp;&amp; properties.name.match(/Kern/)"
+						class="case_studies-selected_counties"></g>
+				</svg>
+			{% elsif page.permalink == '/case-studies/north-slope/' %}
+				<svg is="eiti-map" data-path="{{ site.baseurl }}/data/geo/"
+					simplify="1e-2"
+					projection="albersCustom"
+					preserveAspectRatio="xMidYMid meet"
+					zoom-to="AK">
+					<g data-url="us-topology.json"
+						data-object="states"
+						data-mesh="true"
+						data-filter="id === 'AK'"></g>
+					<g data-url="us-topology.json"
+						data-object="counties"
+						data-filter="properties.state === 'AK'"
+						data-mesh="true"></g>
+					<g data-url="us-topology.json"
+						data-object="counties"
+						data-filter="properties.state === 'AK' &amp;&amp; properties.name.match(/North Slope/)"
+						class="case_studies-selected_counties"></g>
+				</svg>
+			{% endif %}
 
     </div>
 
@@ -65,5 +295,6 @@ layout: default
 
 </section>
 
+<script src="{{ site.baseurl }}/js/components/eiti-map.js"></script>
 <script src="{{ site.baseurl }}/js/components/sticky-nav.js"></script>
 <script src="{{ site.baseurl }}/js/components/open-list-nav.js"></script>

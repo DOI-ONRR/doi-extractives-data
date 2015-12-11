@@ -1,9 +1,11 @@
 eiti-map {
   display: block;
   position: relative;
+  // border: 1px solid #ccc;
 
   svg {
     display: block;
+    margin: 0;
   }
 
   path {

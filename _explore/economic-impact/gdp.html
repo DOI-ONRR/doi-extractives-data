@@ -93,17 +93,18 @@ permalink: /explore/gdp/
 
       <section id="US" class="region active">
         <div class="map-wrapper">
-          <svg is="eiti-map" id="US-map" class="region-map" simplify="1e-2"
-            preserveAspectRatio="xMidYMid meet"
+          <eiti-map id="US-map" class="region-map" simplify="1e-2"
             projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/">
-            <g class="onshore states" data-url="us-topology.json"
-              data-object="states"
-              data-id="'US-' + id"
-              data-href="'#?region=' + id"
-              data-title="properties.name"
-              data-mesh="true">
-            </g>
-          </svg>
+            <svg class="region-map">
+              <g class="onshore states" data-url="us-topology.json"
+                data-object="states"
+                data-id="'US-' + id"
+                data-href="'#?region=' + id"
+                data-title="properties.name"
+                data-mesh="true">
+              </g>
+            </svg>
+          </eiti-map>
 
           <div class="map-legend"></div>
         </div>
@@ -119,21 +120,21 @@ permalink: /explore/gdp/
       {% for region in site.data.states %}
       <section id="{{ region.id }}" class="region onshore">
         <div class="map-wrapper">
-          <svg is="eiti-map" id="{{ region.id }}-map" class="region-map" simplify="1e-2"
-            preserveAspectRatio="xMidYMid meet"
+          <eiti-map id="{{ region.id }}-map" class="region-map" simplify="1e-2"
             projection="albersCustom" data-path="{{ site.baseurl }}/data/geo/" zoom-to="{{ region.id }}">
-            <g class="onshore states" data-url="us-topology.json"
-              data-object="states"
-              data-filter="id === '{{ region.id }}'">
-            </g>
-          </svg>
+            <svg class="region-map">
+              <g class="onshore states" data-url="us-topology.json"
+                data-object="states"
+                data-filter="id === '{{ region.id }}'">
+              </g>
+            </svg>
+          </eiti-map>
 
           <div class="map-legend"></div>
         </div>
 
         <h3 class="region-header-category">GDP in {{ region.name }}</h3>
         <table class="subregions">
-          <thead class="region-header"></thead>
           <tbody></tbody>
         </table>
 

@@ -1,5 +1,12 @@
-eiti-map,
-svg[is="eiti-map"] {
+eiti-map {
+  display: block;
+  position: relative;
+  // border: 1px solid #ccc;
+
+  svg {
+    display: block;
+    margin: 0;
+  }
 
   path {
     vector-effect: non-scaling-stroke;

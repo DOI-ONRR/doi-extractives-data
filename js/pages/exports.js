@@ -213,26 +213,9 @@
 
       // console.time('render regions');
 
-      var header = selection.select('.region-header');
-      if (header.select('tr').empty()) {
-        header.append('tr')
-          .call(createRegionRow);
-      }
-
-      var first = data[0];
       var value = getter(fields.value);
-      header
-        .datum({
-          data: first,
-          value: first.Value,
-          share: first.Share, // XXX
-          properties: {
-            name: regionId === 'US' ? 'Nationwide' : 'Total'
-          }
-        })
-        .call(updateRegionRow, true);
 
-      var map = selection.select('[is="eiti-map"]');
+      var map = selection.select('eiti-map');
       onMapLoaded(map, function() {
         var subregions = map.selectAll('path.feature');
 

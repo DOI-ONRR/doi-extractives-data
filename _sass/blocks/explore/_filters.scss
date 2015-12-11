@@ -67,7 +67,34 @@
   display: none;
 }
 
+// Crazy checkbox magic
+// http://cssdeck.com/labs/css-checkbox-styles
+// for guide on firefox compatibility
+
+.unit-filter {
+  position: relative;
+
+  input {
+    visibility: hidden;
+  }
+}
+
 .unit-selector {
+  position: absolute;
+
+  &:first-of-type {
+    left: 0;
+    top: 0;
+  }
+
+  &:last-of-type {
+    right: 0;
+    top: 0;
+  }
+}
+
+.unit-selector,
+.unit-selector-label {
   @include appearance(none);
   background: $white;
   background-color: $white;
@@ -79,8 +106,7 @@
   height: 50px;
   margin: 0;
   padding: $base-padding-lite;
-  padding-top: 16px;
-  padding-top: 1em;
+  padding-top: ($base-padding * 0.7);
   text-align: center;
   -ms-touch-action: manipulation;
   touch-action: manipulation;
@@ -88,30 +114,34 @@
   width: 50%;
 
   &:first-of-type {
+    @include heading(para-md);
     border-bottom-right-radius: 0;
     border-right: 1px solid $blue;
     border-top-right-radius: 0;
+    font-weight: $weight-bold;
 
     &:before {
       content: '$';
     }
 
-    &[checked='true'] {
+    &[checked='true'] + label {
       background: $blue;
       color: $white;
     }
   }
 
   &:last-of-type {
+    @include heading(para-md);
     @include omega();
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
+    font-weight: $weight-bold;
 
     &:before {
       content: '%';
     }
 
-    &[checked='true'] {
+    &[checked='true'] + label {
       background: $blue;
       color: $white;
     }

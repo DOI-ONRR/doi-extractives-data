@@ -15,10 +15,10 @@ Year	State	County	FIPS	Resource	Revenue
 2004	KS	Meade	20119	oilgas	9856.30
 2004	KS	Morton	20129	oilgas	4011017.33
 2004	KS	Seward	20175	oilgas	67818.09
+2004	KS	Seward	20175	other	57.39
 2004	KS	Stanton	20187	oilgas	20775.52
 2004	KS	Stevens	20189	oilgas	240244.90
 2004	KS	Trego	20195	oilgas	7760.06
-2004	KS		20	other	57.39
 2005	KS	Cheyenne	20023	oilgas	2287.50
 2005	KS	Clark	20025	oilgas	73.55
 2005	KS	Comanche	20033	oilgas	5878.40
@@ -53,10 +53,10 @@ Year	State	County	FIPS	Resource	Revenue
 2006	KS	Morton	20129	oilgas	5165929.39
 2006	KS	Russell	20167	oilgas	560.00
 2006	KS	Seward	20175	oilgas	117744.81
+2006	KS	Seward	20175	other	-57.39
 2006	KS	Stanton	20187	oilgas	11627.82
 2006	KS	Stevens	20189	oilgas	288355.03
 2006	KS	Trego	20195	oilgas	17219.88
-2006	KS		20	other	-57.39
 2007	KS	Barber	20007	oilgas	340.00
 2007	KS	Cheyenne	20023	oilgas	3290.00
 2007	KS	Clark	20025	oilgas	36.78
@@ -121,13 +121,13 @@ Year	State	County	FIPS	Resource	Revenue
 2009	KS	Morton	20129	oilgas	2422079.74
 2009	KS	Russell	20167	oilgas	240.00
 2009	KS	Seward	20175	oilgas	45034.96
+2009	KS	Seward	20175	other	20.06
 2009	KS	Sherman	20181	oilgas	1120.00
 2009	KS	Stanton	20187	oilgas	11881.35
 2009	KS	Stevens	20189	oilgas	125726.02
 2009	KS	Trego	20195	oilgas	13548.45
 2009	KS	Wilson	20205	oilgas	45.97
 2009	KS	Woodson	20207	oilgas	1035.53
-2009	KS		20	other	20.06
 2010	KS	Cheyenne	20023	oilgas	16812.00
 2010	KS	Comanche	20033	oilgas	3674.18
 2010	KS	Edwards	20047	oilgas	18.00
@@ -170,15 +170,16 @@ Year	State	County	FIPS	Resource	Revenue
 2011	KS	Marion	20115	oilgas	2420.00
 2011	KS	Meade	20119	oilgas	3343.07
 2011	KS	Morton	20129	oilgas	4181727.46
+2011	KS	Morton	20129	other	27.06
 2011	KS	Russell	20167	oilgas	320.00
 2011	KS	Seward	20175	oilgas	43142.37
+2011	KS	Seward	20175	other	5.59
 2011	KS	Sherman	20181	oilgas	480.00
 2011	KS	Stanton	20187	oilgas	14811.56
 2011	KS	Stevens	20189	oilgas	197530.08
 2011	KS	Trego	20195	oilgas	20239.21
 2011	KS	Wilson	20205	oilgas	45.97
 2011	KS	Woodson	20207	oilgas	1035.53
-2011	KS		20	other	32.65
 2012	KS	Cheyenne	20023	oilgas	5862.00
 2012	KS	Comanche	20033	oilgas	2117.38
 2012	KS	Edwards	20047	oilgas	18.00
@@ -195,15 +196,16 @@ Year	State	County	FIPS	Resource	Revenue
 2012	KS	Marion	20115	oilgas	82.50
 2012	KS	Meade	20119	oilgas	2287.72
 2012	KS	Morton	20129	oilgas	3263224.41
+2012	KS	Morton	20129	other	4.62
 2012	KS	Russell	20167	oilgas	320.00
 2012	KS	Seward	20175	oilgas	38737.78
+2012	KS	Seward	20175	other	-0.89
 2012	KS	Sherman	20181	oilgas	480.00
 2012	KS	Stanton	20187	oilgas	9873.18
 2012	KS	Stevens	20189	oilgas	157801.84
 2012	KS	Trego	20195	oilgas	25371.54
 2012	KS	Wilson	20205	oilgas	61.29
 2012	KS	Woodson	20207	oilgas	1380.71
-2012	KS		20	other	3.73
 2013	KS	Barber	20007	oilgas	80.00
 2013	KS	Cheyenne	20023	oilgas	30162.00
 2013	KS	Comanche	20033	oilgas	2499.31
@@ -221,12 +223,13 @@ Year	State	County	FIPS	Resource	Revenue
 2013	KS	Marion	20115	oilgas	82.50
 2013	KS	Meade	20119	oilgas	3777.18
 2013	KS	Morton	20129	oilgas	3027085.99
+2013	KS	Morton	20129	other	-0.13
 2013	KS	Russell	20167	oilgas	320.00
 2013	KS	Seward	20175	oilgas	33242.92
+2013	KS	Seward	20175	other	-0.09
 2013	KS	Sherman	20181	oilgas	480.00
 2013	KS	Stanton	20187	oilgas	16095.83
 2013	KS	Stevens	20189	oilgas	143632.04
 2013	KS	Trego	20195	oilgas	22187.24
 2013	KS	Wilson	20205	oilgas	61.29
 2013	KS	Woodson	20207	oilgas	1380.71
-2013	KS		20	other	-0.22

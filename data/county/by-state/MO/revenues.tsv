@@ -1,57 +1,268 @@
 Year	State	County	FIPS	Commodity	Product	Type	Revenue
-2004	MO		29	Hardrock		Other Revenues	167074.98
-2004	MO		29	Hardrock		Rents	10677.7
-2004	MO		29	Copper Concentrate	Copper Concentrate	Royalties	33259.1
-2004	MO		29	Lead Concentrate	Lead Concentrate	Royalties	715383.01
-2004	MO		29	Zinc Concentrate	Zinc Concentrate	Royalties	62744.17
-2005	MO		29	Hardrock		Other Revenues	21375
-2005	MO		29	Hardrock		Rents	155
-2005	MO		29	Copper Concentrate	Copper Concentrate	Royalties	495341.78
-2005	MO		29	Lead Concentrate	Lead Concentrate	Royalties	3604181.92
-2005	MO		29	Zinc Concentrate	Zinc Concentrate	Royalties	1005243.5
-2006	MO		29	Hardrock		Other Revenues	21297
-2006	MO		29	Hardrock		Rents	9741
-2006	MO		29	Copper	Copper	Royalties	-10648.35
-2006	MO		29	Copper Concentrate	Copper Concentrate	Royalties	1370471.55
-2006	MO		29	Lead Concentrate	Lead Concentrate	Royalties	5887501.15
-2006	MO		29	Zinc Concentrate	Zinc Concentrate	Royalties	3100687.25
-2007	MO		29	Hardrock		Other Revenues	12303
-2007	MO		29	Hardrock		Other Revenues	4473
-2007	MO		29	Hardrock		Rents	3415.5
-2007	MO		29	Copper Concentrate	Copper Concentrate	Royalties	1084225.75
-2007	MO		29	Lead Concentrate	Lead Concentrate	Royalties	12989839.07
-2007	MO		29	Zinc Concentrate	Zinc Concentrate	Royalties	3687687.9
-2008	MO		29	Hardrock		Other Revenues	16157
-2008	MO		29	Hardrock		Other Revenues	-5812
-2008	MO		29	Hardrock		Rents	-27641.6
-2008	MO		29	Copper Concentrate	Copper Concentrate	Royalties	1055500.8
-2008	MO		29	Lead Concentrate	Lead Concentrate	Royalties	11420842.35
-2008	MO		29	Lead Concentrate	Lead Concentrate	Royalties	31949
-2008	MO		29	Zinc Concentrate	Zinc Concentrate	Royalties	1652714.4
-2009	MO		29	Hardrock		Other Revenues	12303
-2009	MO		29	Hardrock		Rents	700
-2009	MO		29	Copper Concentrate	Copper Concentrate	Royalties	448324.5
-2009	MO		29	Lead Concentrate	Lead Concentrate	Royalties	7641660.5
-2009	MO		29	Zinc Concentrate	Zinc Concentrate	Royalties	1216949.7
+2004	MO	Crawford	29055	Hardrock		Other Revenues	16221.28
+2004	MO	Crawford	29055	Hardrock		Rents	3496.18
+2004	MO	Crawford	29055	Copper Concentrate	Copper Concentrate	Royalties	2220.68
+2004	MO	Crawford	29055	Lead Concentrate	Lead Concentrate	Royalties	979.58
+2004	MO	Crawford	29055	Zinc Concentrate	Zinc Concentrate	Royalties	151.08
+2004	MO	Dent	29065	Copper Concentrate	Copper Concentrate	Royalties	-2028.3
+2004	MO	Dent	29065	Lead Concentrate	Lead Concentrate	Royalties	166165.55
+2004	MO	Dent	29065	Zinc Concentrate	Zinc Concentrate	Royalties	25506.72
+2004	MO	Iron	29093	Hardrock		Other Revenues	53887.69
+2004	MO	Iron	29093	Hardrock		Rents	12900.7
+2004	MO	Iron	29093	Copper Concentrate	Copper Concentrate	Royalties	18794.93
+2004	MO	Iron	29093	Lead Concentrate	Lead Concentrate	Royalties	217004.99
+2004	MO	Iron	29093	Zinc Concentrate	Zinc Concentrate	Royalties	34803.41
+2004	MO	Madison	29123	Hardrock		Other Revenues	3420
+2004	MO	Madison	29123	Hardrock		Rents	-2170
+2004	MO	Reynolds	29179	Hardrock		Other Revenues	84130
+2004	MO	Reynolds	29179	Hardrock		Rents	-7303
+2004	MO	Reynolds	29179	Copper Concentrate	Copper Concentrate	Royalties	10835.69
+2004	MO	Reynolds	29179	Lead Concentrate	Lead Concentrate	Royalties	329717.18
+2004	MO	Reynolds	29179	Zinc Concentrate	Zinc Concentrate	Royalties	2049.2
+2004	MO	Shannon	29203	Hardrock		Other Revenues	2880
+2004	MO	Shannon	29203	Hardrock		Rents	1120
+2004	MO	Washington	29221	Hardrock		Other Revenues	6536
+2004	MO	Washington	29221	Hardrock		Rents	2633.82
+2004	MO	Washington	29221	Copper Concentrate	Copper Concentrate	Royalties	3436.1
+2004	MO	Washington	29221	Lead Concentrate	Lead Concentrate	Royalties	1515.72
+2004	MO	Washington	29221	Zinc Concentrate	Zinc Concentrate	Royalties	233.76
+2005	MO	Crawford	29055	Hardrock		Other Revenues	4694.53
+2005	MO	Crawford	29055	Hardrock		Rents	195.89
+2005	MO	Crawford	29055	Copper Concentrate	Copper Concentrate	Royalties	8398.43
+2005	MO	Crawford	29055	Lead Concentrate	Lead Concentrate	Royalties	823.51
+2005	MO	Crawford	29055	Zinc Concentrate	Zinc Concentrate	Royalties	279.16
+2005	MO	Dent	29065	Copper Concentrate	Copper Concentrate	Royalties	21975.48
+2005	MO	Dent	29065	Lead Concentrate	Lead Concentrate	Royalties	444021.72
+2005	MO	Dent	29065	Zinc Concentrate	Zinc Concentrate	Royalties	118811.19
+2005	MO	Iron	29093	Hardrock		Other Revenues	5898.6
+2005	MO	Iron	29093	Copper Concentrate	Copper Concentrate	Royalties	339379.02
+2005	MO	Iron	29093	Lead Concentrate	Lead Concentrate	Royalties	774620.02
+2005	MO	Iron	29093	Zinc Concentrate	Zinc Concentrate	Royalties	179906.2
+2005	MO	Reynolds	29179	Hardrock		Other Revenues	9114
+2005	MO	Reynolds	29179	Hardrock		Rents	-504
+2005	MO	Reynolds	29179	Copper Concentrate	Copper Concentrate	Royalties	112593.83
+2005	MO	Reynolds	29179	Lead Concentrate	Lead Concentrate	Royalties	2383442.43
+2005	MO	Reynolds	29179	Zinc Concentrate	Zinc Concentrate	Royalties	705815.01
+2005	MO	Shannon	29203	Hardrock		Rents	160
+2005	MO	Washington	29221	Hardrock		Other Revenues	1667.87
+2005	MO	Washington	29221	Hardrock		Rents	303.11
+2005	MO	Washington	29221	Copper Concentrate	Copper Concentrate	Royalties	12995.02
+2005	MO	Washington	29221	Lead Concentrate	Lead Concentrate	Royalties	1274.24
+2005	MO	Washington	29221	Zinc Concentrate	Zinc Concentrate	Royalties	431.94
+2006	MO	Crawford	29055	Hardrock		Other Revenues	3956.11
+2006	MO	Crawford	29055	Hardrock		Rents	461.58
+2006	MO	Crawford	29055	Copper	Copper	Royalties	-83.19
+2006	MO	Crawford	29055	Copper Concentrate	Copper Concentrate	Royalties	23152.38
+2006	MO	Crawford	29055	Lead Concentrate	Lead Concentrate	Royalties	2719.33
+2006	MO	Dent	29065	Hardrock		Rents	990.49
+2006	MO	Dent	29065	Copper	Copper	Royalties	2720.96
+2006	MO	Dent	29065	Copper Concentrate	Copper Concentrate	Royalties	37016.81
+2006	MO	Dent	29065	Lead Concentrate	Lead Concentrate	Royalties	717200.32
+2006	MO	Dent	29065	Zinc Concentrate	Zinc Concentrate	Royalties	281031.25
+2006	MO	Iron	29093	Hardrock		Other Revenues	5991.6
+2006	MO	Iron	29093	Hardrock		Rents	5970.92
+2006	MO	Iron	29093	Copper	Copper	Royalties	-15878.37
+2006	MO	Iron	29093	Copper Concentrate	Copper Concentrate	Royalties	867728.21
+2006	MO	Iron	29093	Lead Concentrate	Lead Concentrate	Royalties	1506741.67
+2006	MO	Iron	29093	Zinc Concentrate	Zinc Concentrate	Royalties	491836.65
+2006	MO	Madison	29123	Hardrock		Other Revenues	1710
+2006	MO	Madison	29123	Hardrock		Rents	570
+2006	MO	Reynolds	29179	Hardrock		Other Revenues	9114
+2006	MO	Reynolds	29179	Hardrock		Rents	1588
+2006	MO	Reynolds	29179	Copper	Copper	Royalties	2720.97
+2006	MO	Reynolds	29179	Copper Concentrate	Copper Concentrate	Royalties	406750.07
+2006	MO	Reynolds	29179	Lead Concentrate	Lead Concentrate	Royalties	3633344.42
+2006	MO	Reynolds	29179	Zinc Concentrate	Zinc Concentrate	Royalties	2325431.1
+2006	MO	Shannon	29203	Hardrock		Rents	160
+2006	MO	Shannon	29203	Lead Concentrate	Lead Concentrate	Royalties	23287.75
+2006	MO	Shannon	29203	Zinc Concentrate	Zinc Concentrate	Royalties	2388.25
+2006	MO	Washington	29221	Hardrock		Other Revenues	525.29
+2006	MO	Washington	29221	Copper	Copper	Royalties	-128.71
+2006	MO	Washington	29221	Copper Concentrate	Copper Concentrate	Royalties	35824.07
+2006	MO	Washington	29221	Lead Concentrate	Lead Concentrate	Royalties	4207.67
+2007	MO	Crawford	29055	Hardrock		Other Revenues	3956.11
+2007	MO	Crawford	29055	Hardrock		Rents	230.79
+2007	MO	Crawford	29055	Copper Concentrate	Copper Concentrate	Royalties	48595
+2007	MO	Crawford	29055	Lead Concentrate	Lead Concentrate	Royalties	5393.54
+2007	MO	Crawford	29055	Zinc Concentrate	Zinc Concentrate	Royalties	786.16
+2007	MO	Dent	29065	Hardrock		Rents	495.25
+2007	MO	Dent	29065	Copper Concentrate	Copper Concentrate	Royalties	101306.37
+2007	MO	Dent	29065	Lead Concentrate	Lead Concentrate	Royalties	1655243.07
+2007	MO	Dent	29065	Zinc Concentrate	Zinc Concentrate	Royalties	362312.12
+2007	MO	Iron	29093	Hardrock		Other Revenues	6084.6
+2007	MO	Iron	29093	Hardrock		Rents	-4.54
+2007	MO	Iron	29093	Copper Concentrate	Copper Concentrate	Royalties	503909.07
+2007	MO	Iron	29093	Lead Concentrate	Lead Concentrate	Royalties	3021867.47
+2007	MO	Iron	29093	Zinc Concentrate	Zinc Concentrate	Royalties	731692.77
+2007	MO	Madison	29123	Hardrock		Other Revenues	5130
+2007	MO	Madison	29123	Hardrock		Rents	570
+2007	MO	Reynolds	29179	Hardrock		Other Revenues	120
+2007	MO	Reynolds	29179	Hardrock		Rents	1004
+2007	MO	Reynolds	29179	Copper Concentrate	Copper Concentrate	Royalties	355064.87
+2007	MO	Reynolds	29179	Lead Concentrate	Lead Concentrate	Royalties	8213845.02
+2007	MO	Reynolds	29179	Zinc Concentrate	Zinc Concentrate	Royalties	2586221.11
+2007	MO	Shannon	29203	Hardrock		Other Revenues	960
+2007	MO	Shannon	29203	Hardrock		Rents	1120
+2007	MO	Shannon	29203	Copper Concentrate	Copper Concentrate	Royalties	158.6
+2007	MO	Shannon	29203	Lead Concentrate	Lead Concentrate	Royalties	85144.45
+2007	MO	Shannon	29203	Zinc Concentrate	Zinc Concentrate	Royalties	5459.3
+2007	MO	Washington	29221	Hardrock		Other Revenues	525.29
+2007	MO	Washington	29221	Copper Concentrate	Copper Concentrate	Royalties	75191.85
+2007	MO	Washington	29221	Lead Concentrate	Lead Concentrate	Royalties	8345.52
+2007	MO	Washington	29221	Zinc Concentrate	Zinc Concentrate	Royalties	1216.44
+2008	MO	Crawford	29055	Hardrock		Other Revenues	1399.26
+2008	MO	Crawford	29055	Hardrock		Rents	-6968.69
+2008	MO	Crawford	29055	Copper Concentrate	Copper Concentrate	Royalties	53715.1
+2008	MO	Crawford	29055	Lead Concentrate	Lead Concentrate	Royalties	8631.42
+2008	MO	Crawford	29055	Zinc Concentrate	Zinc Concentrate	Royalties	298.63
+2008	MO	Dent	29065	Hardrock		Rents	495.25
+2008	MO	Dent	29065	Copper Concentrate	Copper Concentrate	Royalties	94691.26
+2008	MO	Dent	29065	Lead Concentrate	Lead Concentrate	Royalties	1403032.25
+2008	MO	Dent	29065	Zinc Concentrate	Zinc Concentrate	Royalties	192211.92
+2008	MO	Iron	29093	Hardrock		Other Revenues	581.6
+2008	MO	Iron	29093	Hardrock		Rents	-9624.24
+2008	MO	Iron	29093	Copper Concentrate	Copper Concentrate	Royalties	470627.91
+2008	MO	Iron	29093	Lead Concentrate	Lead Concentrate	Royalties	2620567.44
+2008	MO	Iron	29093	Zinc Concentrate	Zinc Concentrate	Royalties	359431.07
+2008	MO	Madison	29123	Hardrock		Other Revenues	1710
+2008	MO	Madison	29123	Hardrock		Rents	-740
+2008	MO	Reynolds	29179	Hardrock		Other Revenues	8414
+2008	MO	Reynolds	29179	Hardrock		Rents	-7561.2
+2008	MO	Reynolds	29179	Copper Concentrate	Copper Concentrate	Royalties	346638.29
+2008	MO	Reynolds	29179	Lead Concentrate	Lead Concentrate	Royalties	7366048.15
+2008	MO	Reynolds	29179	Zinc Concentrate	Zinc Concentrate	Royalties	1098572.65
+2008	MO	Shannon	29203	Hardrock		Rents	-640
+2008	MO	Shannon	29203	Copper Concentrate	Copper Concentrate	Royalties	6714
+2008	MO	Shannon	29203	Lead Concentrate	Lead Concentrate	Royalties	41156.55
+2008	MO	Shannon	29203	Zinc Concentrate	Zinc Concentrate	Royalties	1738.05
+2008	MO	Washington	29221	Hardrock		Other Revenues	-1759.86
+2008	MO	Washington	29221	Hardrock		Rents	-2602.72
+2008	MO	Washington	29221	Copper Concentrate	Copper Concentrate	Royalties	83114.25
+2008	MO	Washington	29221	Lead Concentrate	Lead Concentrate	Royalties	13355.53
+2008	MO	Washington	29221	Zinc Concentrate	Zinc Concentrate	Royalties	462.07
+2009	MO	Crawford	29055	Hardrock		Other Revenues	3956.11
+2009	MO	Crawford	29055	Copper Concentrate	Copper Concentrate	Royalties	-508.67
+2009	MO	Crawford	29055	Lead Concentrate	Lead Concentrate	Royalties	6757.58
+2009	MO	Crawford	29055	Zinc Concentrate	Zinc Concentrate	Royalties	191.71
+2009	MO	Dent	29065	Copper Concentrate	Copper Concentrate	Royalties	35254.61
+2009	MO	Dent	29065	Lead Concentrate	Lead Concentrate	Royalties	805843.38
+2009	MO	Dent	29065	Zinc Concentrate	Zinc Concentrate	Royalties	138635.79
+2009	MO	Iron	29093	Hardrock		Other Revenues	5991.6
+2009	MO	Iron	29093	Copper Concentrate	Copper Concentrate	Royalties	231883.31
+2009	MO	Iron	29093	Lead Concentrate	Lead Concentrate	Royalties	1621320.28
+2009	MO	Iron	29093	Zinc Concentrate	Zinc Concentrate	Royalties	204583.99
+2009	MO	Madison	29123	Hardrock		Other Revenues	1710
+2009	MO	Reynolds	29179	Hardrock		Other Revenues	120
+2009	MO	Reynolds	29179	Hardrock		Rents	380
+2009	MO	Reynolds	29179	Copper Concentrate	Copper Concentrate	Royalties	126895.17
+2009	MO	Reynolds	29179	Lead Concentrate	Lead Concentrate	Royalties	5136486.35
+2009	MO	Reynolds	29179	Zinc Concentrate	Zinc Concentrate	Royalties	872380.91
+2009	MO	Shannon	29203	Hardrock		Rents	320
+2009	MO	Shannon	29203	Copper Concentrate	Copper Concentrate	Royalties	55587.15
+2009	MO	Shannon	29203	Lead Concentrate	Lead Concentrate	Royalties	60796.8
+2009	MO	Shannon	29203	Zinc Concentrate	Zinc Concentrate	Royalties	860.65
+2009	MO	Washington	29221	Hardrock		Other Revenues	525.29
+2009	MO	Washington	29221	Copper Concentrate	Copper Concentrate	Royalties	-787.08
+2009	MO	Washington	29221	Lead Concentrate	Lead Concentrate	Royalties	10456.12
+2009	MO	Washington	29221	Zinc Concentrate	Zinc Concentrate	Royalties	296.64
+2010	MO	Crawford	29055	Hardrock		Other Revenues	3956.11
+2010	MO	Crawford	29055	Copper Concentrate	Copper Concentrate	Royalties	3044.62
+2010	MO	Crawford	29055	Lead Concentrate	Lead Concentrate	Royalties	32596.93
+2010	MO	Crawford	29055	Zinc Concentrate	Zinc Concentrate	Royalties	1676.57
+2010	MO	Dent	29065	Copper Concentrate	Copper Concentrate	Royalties	23209.31
+2010	MO	Dent	29065	Lead Concentrate	Lead Concentrate	Royalties	1131727.45
+2010	MO	Dent	29065	Zinc Concentrate	Zinc Concentrate	Royalties	220955.1
+2010	MO	Iron	29093	Hardrock		Other Revenues	5991.6
+2010	MO	Iron	29093	Copper Concentrate	Copper Concentrate	Royalties	229592.91
+2010	MO	Iron	29093	Lead Concentrate	Lead Concentrate	Royalties	2272884.35
+2010	MO	Iron	29093	Zinc Concentrate	Zinc Concentrate	Royalties	347050.45
+2010	MO	Madison	29123	Hardrock		Other Revenues	1710
+2010	MO	Reynolds	29179	Hardrock		Other Revenues	120
+2010	MO	Reynolds	29179	Hardrock		Rents	380
+2010	MO	Reynolds	29179	Copper Concentrate	Copper Concentrate	Royalties	236799.28
+2010	MO	Reynolds	29179	Lead Concentrate	Lead Concentrate	Royalties	7244749.85
+2010	MO	Reynolds	29179	Zinc Concentrate	Zinc Concentrate	Royalties	1392253.56
+2010	MO	Shannon	29203	Hardrock		Rents	320
+2010	MO	Shannon	29203	Copper Concentrate	Copper Concentrate	Royalties	21469.7
+2010	MO	Shannon	29203	Lead Concentrate	Lead Concentrate	Royalties	41134.3
+2010	MO	Shannon	29203	Zinc Concentrate	Zinc Concentrate	Royalties	108.4
 2010	MO	St Charles	29183	Oil & Gas		Other Revenues	7037.2
-2010	MO		29	Hardrock		Other Revenues	12303
-2010	MO		29	Hardrock		Rents	700
-2010	MO		29	Copper Concentrate	Copper Concentrate	Royalties	518826.8
-2010	MO		29	Lead Concentrate	Lead Concentrate	Royalties	10773530.65
-2010	MO		29	Zinc Concentrate	Zinc Concentrate	Royalties	1964638.25
-2011	MO		29	Hardrock		Other Revenues	12303
-2011	MO		29	Hardrock		Rents	740
-2011	MO		29	Copper Concentrate	Copper Concentrate	Royalties	1283873.5
-2011	MO		29	Lead Concentrate	Lead Concentrate	Royalties	11376686.35
-2011	MO		29	Zinc Concentrate	Zinc Concentrate	Royalties	2174729.25
-2012	MO		29	Hardrock		Other Revenues	16197
-2012	MO		29	Hardrock		Rents	700
-2012	MO		29	Copper Concentrate	Copper Concentrate	Royalties	1588286.15
-2012	MO		29	Lead Concentrate	Lead Concentrate	Royalties	8484118.4
-2012	MO		29	Zinc Concentrate	Zinc Concentrate	Royalties	1447210
-2013	MO		29	Hardrock		Other Revenues	16197
-2013	MO		29	Hardrock		Rents	700
-2013	MO		29	Copper Concentrate	Copper Concentrate	Royalties	1316533.35
-2013	MO		29	Lead Concentrate	Lead Concentrate	Royalties	7230573.82
-2013	MO		29	Lead Concentrate	Lead Concentrate	Royalties	100063
-2013	MO		29	Zinc Concentrate	Zinc Concentrate	Royalties	699078.75
+2010	MO	Washington	29221	Hardrock		Other Revenues	525.29
+2010	MO	Washington	29221	Copper Concentrate	Copper Concentrate	Royalties	4710.98
+2010	MO	Washington	29221	Lead Concentrate	Lead Concentrate	Royalties	50437.77
+2010	MO	Washington	29221	Zinc Concentrate	Zinc Concentrate	Royalties	2594.18
+2011	MO	Crawford	29055	Hardrock		Other Revenues	3956.11
+2011	MO	Crawford	29055	Copper Concentrate	Copper Concentrate	Royalties	26178.14
+2011	MO	Crawford	29055	Lead Concentrate	Lead Concentrate	Royalties	35986.77
+2011	MO	Crawford	29055	Zinc Concentrate	Zinc Concentrate	Royalties	3176.15
+2011	MO	Dent	29065	Copper Concentrate	Copper Concentrate	Royalties	91002.33
+2011	MO	Dent	29065	Lead Concentrate	Lead Concentrate	Royalties	1410116.86
+2011	MO	Dent	29065	Zinc Concentrate	Zinc Concentrate	Royalties	276019.99
+2011	MO	Iron	29093	Hardrock		Other Revenues	5991.6
+2011	MO	Iron	29093	Copper Concentrate	Copper Concentrate	Royalties	463250.13
+2011	MO	Iron	29093	Lead Concentrate	Lead Concentrate	Royalties	2528095.26
+2011	MO	Iron	29093	Zinc Concentrate	Zinc Concentrate	Royalties	440311.14
+2011	MO	Madison	29123	Hardrock		Other Revenues	1710
+2011	MO	Reynolds	29179	Hardrock		Other Revenues	120
+2011	MO	Reynolds	29179	Hardrock		Rents	420
+2011	MO	Reynolds	29179	Copper Concentrate	Copper Concentrate	Royalties	519773.6
+2011	MO	Reynolds	29179	Lead Concentrate	Lead Concentrate	Royalties	7271767.64
+2011	MO	Reynolds	29179	Zinc Concentrate	Zinc Concentrate	Royalties	1447285.67
+2011	MO	Shannon	29203	Hardrock		Rents	320
+2011	MO	Shannon	29203	Copper Concentrate	Copper Concentrate	Royalties	143163.45
+2011	MO	Shannon	29203	Lead Concentrate	Lead Concentrate	Royalties	75036.9
+2011	MO	Shannon	29203	Zinc Concentrate	Zinc Concentrate	Royalties	3021.8
+2011	MO	Washington	29221	Hardrock		Other Revenues	525.29
+2011	MO	Washington	29221	Copper Concentrate	Copper Concentrate	Royalties	40505.86
+2011	MO	Washington	29221	Lead Concentrate	Lead Concentrate	Royalties	55682.93
+2011	MO	Washington	29221	Zinc Concentrate	Zinc Concentrate	Royalties	4914.5
+2012	MO	Crawford	29055	Hardrock		Other Revenues	3956.11
+2012	MO	Crawford	29055	Copper Concentrate	Copper Concentrate	Royalties	29574.83
+2012	MO	Crawford	29055	Lead Concentrate	Lead Concentrate	Royalties	26099.86
+2012	MO	Crawford	29055	Zinc Concentrate	Zinc Concentrate	Royalties	2976.27
+2012	MO	Dent	29065	Copper Concentrate	Copper Concentrate	Royalties	80584.47
+2012	MO	Dent	29065	Lead Concentrate	Lead Concentrate	Royalties	1054041.05
+2012	MO	Dent	29065	Zinc Concentrate	Zinc Concentrate	Royalties	173591.34
+2012	MO	Iron	29093	Hardrock		Other Revenues	5991.6
+2012	MO	Iron	29093	Copper Concentrate	Copper Concentrate	Royalties	338231.02
+2012	MO	Iron	29093	Lead Concentrate	Lead Concentrate	Royalties	2267590.75
+2012	MO	Iron	29093	Zinc Concentrate	Zinc Concentrate	Royalties	361052.04
+2012	MO	Madison	29123	Hardrock		Other Revenues	1710
+2012	MO	Reynolds	29179	Hardrock		Other Revenues	4014
+2012	MO	Reynolds	29179	Hardrock		Rents	380
+2012	MO	Reynolds	29179	Copper Concentrate	Copper Concentrate	Royalties	1039947.81
+2012	MO	Reynolds	29179	Lead Concentrate	Lead Concentrate	Royalties	4953148.21
+2012	MO	Reynolds	29179	Zinc Concentrate	Zinc Concentrate	Royalties	904982.66
+2012	MO	Shannon	29203	Hardrock		Rents	320
+2012	MO	Shannon	29203	Copper Concentrate	Copper Concentrate	Royalties	54186.4
+2012	MO	Shannon	29203	Lead Concentrate	Lead Concentrate	Royalties	142853.8
+2012	MO	Shannon	29203	Zinc Concentrate	Zinc Concentrate	Royalties	2.45
+2012	MO	Washington	29221	Hardrock		Other Revenues	525.29
+2012	MO	Washington	29221	Copper Concentrate	Copper Concentrate	Royalties	45761.62
+2012	MO	Washington	29221	Lead Concentrate	Lead Concentrate	Royalties	40384.74
+2012	MO	Washington	29221	Zinc Concentrate	Zinc Concentrate	Royalties	4605.23
+2013	MO	Crawford	29055	Hardrock		Other Revenues	3956.11
+2013	MO	Crawford	29055	Copper Concentrate	Copper Concentrate	Royalties	8850.49
+2013	MO	Crawford	29055	Lead Concentrate	Lead Concentrate	Royalties	-3275.43
+2013	MO	Crawford	29055	Zinc Concentrate	Zinc Concentrate	Royalties	-692.93
+2013	MO	Dent	29065	Copper Concentrate	Copper Concentrate	Royalties	21626.93
+2013	MO	Dent	29065	Lead Concentrate	Lead Concentrate	Royalties	571724.52
+2013	MO	Dent	29065	Zinc Concentrate	Zinc Concentrate	Royalties	114554.89
+2013	MO	Iron	29093	Hardrock		Other Revenues	5991.6
+2013	MO	Iron	29093	Copper Concentrate	Copper Concentrate	Royalties	410570.78
+2013	MO	Iron	29093	Lead Concentrate	Lead Concentrate	Royalties	1801754.05
+2013	MO	Iron	29093	Zinc Concentrate	Zinc Concentrate	Royalties	264216.05
+2013	MO	Madison	29123	Hardrock		Other Revenues	1710
+2013	MO	Reynolds	29179	Hardrock		Other Revenues	4014
+2013	MO	Reynolds	29179	Hardrock		Rents	380
+2013	MO	Reynolds	29179	Copper Concentrate	Copper Concentrate	Royalties	846725.74
+2013	MO	Reynolds	29179	Lead Concentrate	Lead Concentrate	Royalties	4939874.81
+2013	MO	Reynolds	29179	Zinc Concentrate	Zinc Concentrate	Royalties	322434.53
+2013	MO	Shannon	29203	Hardrock		Rents	320
+2013	MO	Shannon	29203	Copper Concentrate	Copper Concentrate	Royalties	15064.9
+2013	MO	Shannon	29203	Lead Concentrate	Lead Concentrate	Royalties	25459.05
+2013	MO	Shannon	29203	Zinc Concentrate	Zinc Concentrate	Royalties	-378.25
+2013	MO	Washington	29221	Hardrock		Other Revenues	525.29
+2013	MO	Washington	29221	Copper Concentrate	Copper Concentrate	Royalties	13694.51
+2013	MO	Washington	29221	Lead Concentrate	Lead Concentrate	Royalties	-4900.18
+2013	MO	Washington	29221	Zinc Concentrate	Zinc Concentrate	Royalties	-1055.54

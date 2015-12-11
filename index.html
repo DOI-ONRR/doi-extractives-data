@@ -22,9 +22,9 @@ title: Home
     <h2 class="h3 explore_home-heading">Narrative-style title encapsulating the explore data section</h2>
 
     <ul class="explore_home-tabs" role="tablist">
-     <a href="#revenue" tabindex="0" role="tab" aria-controls="revenue" aria-selected="true"><li role="presentation">Revenue</li></a>
-     <a href="#production" tabindex="-1" role="tab" aria-controls="production"><li role="presentation">Production</li></a>
-     <a href="#impact" tabindex="-1" role="tab" aria-controls="impact"><li role="presentation">Economic Impact</li></a>
+      <li role="presentation"><a href="#revenue" tabindex="0" role="tab" aria-controls="revenue" aria-selected="true" class="link-charlie">Revenue</a></li>
+      <li role="presentation"><a href="#production" tabindex="-1" role="tab" aria-controls="production" class="link-charlie">Production</a></li>
+      <li role="presentation"><a href="#impact" tabindex="-1" role="tab" aria-controls="impact" class="link-charlie">Economic Impact</a></li>
     </ul>
 
     <section class="explore_home-main" id="revenue" role="tabpanel">
@@ -40,11 +40,11 @@ title: Home
       </div>
       <div class="container-left-3">
         <p class="explore_home-fact">In 2013, the federal government collected a total of <strong>$12 billion</strong> in revenue from those extracting resources on federal lands.</p>
-        <ul class="explore_home-links">
-          <li><a href="{{ site.baseurl }}/explore/#revenue">Revenue topics</a></li>
-          <li><a href="{{ site.baseurl }}/explore/">All data topics</a></li>
-        </ul>
-      </div>
+        <aside class="explore_home-links">
+          <div><a href="{{ site.baseurl }}/explore/#revenue">Revenue topics</a></div>
+          <div><a href="{{ site.baseurl }}/explore/">All data topics</a></div>
+        </div>
+      </aside>
     </section>
 
     <section class="explore_home-main" id="production" role="tabpanel" aria-hidden="true">
@@ -60,10 +60,10 @@ title: Home
       </div>
       <div class="container-left-3">
         <p class="explore_home-fact">Only about <strong>25%</strong> of all U.S. xxxxxxxxxx production occurs on federal lands and waters. However, <strong>40%</strong> of U.S. coal production takes place on federal lands.</p>
-        <ul class="explore_home-links">
-          <li><a href="{{ site.baseurl }}/explore/#production">Production topics</a></li>
-          <li><a href="{{ site.baseurl }}/explore/">All data topics</a></li>
-        </ul>
+        <aside class="explore_home-links">
+          <div><a href="{{ site.baseurl }}/explore/#production">Production topics</a></div>
+          <div><a href="{{ site.baseurl }}/explore/">All data topics</a></div>
+        </aside>
       </div>
     </section>
 
@@ -80,10 +80,10 @@ title: Home
       </div>
       <div class="container-left-3">
         <p class="explore_home-fact">Nemo enim ipsam voluptatem quia voluptas sit aspernatur <strong>number</strong> aut odit aut fugit, sed quia consequuntur magni and perhaps  <strong>another</strong>.</p>
-        <ul class="explore_home-links">
-          <li><a href="{{ site.baseurl }}/explore/#impact">Economic impact topics</a></li>
-          <li><a href="{{ site.baseurl }}/explore/">All data topics</a></li>
-        </ul>
+        <aside class="explore_home-links">
+          <div><a href="{{ site.baseurl }}/explore/#impact">Economic impact topics</a></div>
+          <div><a href="{{ site.baseurl }}/explore/">All data topics</a></div>
+        </aside>
       </div>
     </section>
 

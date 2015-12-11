@@ -25,7 +25,8 @@ permalink: /explore/exports/
   <section class="container-right-8 filters-wrapper_outer">
     <div data-absolute="true" data-offset-parent="true" class="sticky_nav sticky_nav-show_mobile filters-wrapper container" data-toggler="filters">
       <h1 data-toggler="filters" data-filter-description="" class="filter-description filter-description_closed">
-        Exports from extractives in
+        Exports from <a href="#commodity-group-selector" class="filter-part" data-key="commodity">all commodities</a>
+        in
         <a href="#region-selector" class="filter-part" data-key="region">the entire U.S.</a>
         (<a href="#year-selector" class="filter-part" data-key="year">2013</a>)
       </h1>
@@ -36,22 +37,43 @@ permalink: /explore/exports/
         <div class="filters-heading">
           <h3>Filter exports</h3>
         </div>
-        <div class="container-left-6 filter">
-          <label for="region-selector">Region</label>
-          <select id="region-selector" name="region">
-            <option value="">All U.S.</option>
-            {% for state in site.data.states %}
-            <option value="{{ state.id }}">{{ state.name }}</option>
-            {% endfor %}
-          </select>
+        <div class="container-left-6">
+          <div class="filter">
+            <label for="region-selector">Region</label>
+            <select id="region-selector" name="region">
+              <option value="">All U.S.</option>
+              {% for state in site.data.states %}
+              <option value="{{ state.id }}">{{ state.name }}</option>
+              {% endfor %}
+            </select>
+          </div>
+          <div id="unit-filter" class="filter">
+            <label for="unit-selector">Show Results as</label>
+            <div id="unit-selector" class="container unit-filter">
+              <input id="units-dollars" class="unit-selector" type="radio" name="units" value="dollars"/>
+              <label class="unit-selector-label" for="units-dollars"></label>
+              <input id="units-percent" class="unit-selector" type="radio" name="units" value="percent"/>
+              <label class="unit-selector-label" for="units-percent"></label>
+            </div>
+          </div>
         </div>
-        <div id="unit-filter" class="container-right-6 filter">
-          <label for="unit-selector">Show Results as</label>
-          <div id="unit-selector" class="container unit-filter">
-            <input id="units-dollars" class="unit-selector" type="radio" name="units" value="dollars"/>
-            <label class="unit-selector-label" for="units-dollars"></label>
-            <input id="units-percent" class="unit-selector" type="radio" name="units" value="percent"/>
-            <label class="unit-selector-label" for="units-percent"></label>
+
+        <div class="container-right-6">
+          <div id="commodity-group-filter" class="filter">
+            <label for="commodity-group-selector">Commodity Category</label>
+            <select id="commodity-group-selector" name="group">
+              <option value="">All categories</option>
+              {% for group in site.data.resource.groups %}
+              <option value="{{ group[0] }}">{{ group[1].name }}</option>
+              {% endfor %}
+            </select>
+          </div>
+
+          <div id="commodity-filter" class="filter">
+            <label for="commodity-selector">Commodity</label>
+            <select id="commodity-selector" name="commodity">
+              <option value="">All commodities</option>
+            </select>
           </div>
         </div>
 
@@ -158,3 +180,4 @@ permalink: /explore/exports/
   };
 </script>
 <script src="{{ site.baseurl }}/js/pages/exports.js"></script>
+<script src="{{ site.baseurl }}/js/components/sticky-nav.js"></script>

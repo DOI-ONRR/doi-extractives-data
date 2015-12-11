@@ -213,6 +213,13 @@ async.parallel({
 
 
           // console.warn(state, '->',productionByState, year)
+          var countyKey = {
+            'LA': 'Parish',
+            'AK': {
+              'Yukon-Koyukuk': 'Census Area',
+              'Fairbanks North Star': 'Borough'
+            }
+          }
 
           // this conditional might need to be revisited
           if (productionByState){
@@ -223,7 +230,14 @@ async.parallel({
               if (volume) {
                 var newResults = {};
                 newResults.State = state;
-                newResults.County = county + ' County';
+                newResults.County = county;
+                // console.warn(state)
+                newResults.County += !countyKey[state]
+                  ? ' County'
+                  : countyKey[state][county]
+                    ? ' ' + countyKey[state][county]
+                    : ' ' + countyKey[state]
+                // console.warn(newResults.County)
                 newResults.Year = year;
                 newResults.Volume = volume;
                 newResults.Commodity = '';
@@ -243,6 +257,17 @@ async.parallel({
 
       _.forEach(data[commodity], function(d) {
 
+        var productKey = {
+          'Conventional Hydroelectric': 'Conventional Hydroelectric',
+          'All Other Renewables': 'Other Renewables',
+          'Wind': 'Wind',
+          'Other biomass': 'Other Biomass',
+          'Biomass (total)': 'Total Biomass',
+          'Wood and wood-derived fuels': 'Wood and wood-derived fuels',
+          'Solar': 'Solar',
+          'Geothermal': 'Geothermal'
+        }
+
         if (stateKey[d.State]){
           years.forEach(function(year){
             var volume = d[year];
@@ -250,9 +275,10 @@ async.parallel({
             var newResults = {};
             newResults.Region = stateKey[d.State];
             newResults.Year = year;
-            newResults.Volume = volume;
+            newResults.Volume = volume * 1000;
             newResults.Commodity = '';
-            newResults.Product = d.Source + ' (Kwh)';
+            newResults.Product = productKey[d.Source]
+            newResults.Product += ' (Mwh)';
             if (shouldParseCountyCoal) {
               newResults.County = '';
               newResults.State = stateKey[d.State];
@@ -283,7 +309,7 @@ async.parallel({
           newResults.Year = year;
           newResults.Volume = volume;
           newResults.Commodity = '';
-          newResults.Product = 'All Renewables (Kwh)';
+          newResults.Product = 'All Renewables (Mwh)';
           if (shouldParseCountyCoal) {
             newResults.County = '';
             newResults.State = region;

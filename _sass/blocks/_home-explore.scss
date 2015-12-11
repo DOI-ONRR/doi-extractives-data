@@ -14,10 +14,12 @@
 
 .explore_home-tabs {
   @include heading(para-sm);
-  margin-bottom: 2px;
+  margin-bottom: 3px;
   text-align: right;
 
   a {
+    border: 1px solid $white;
+    border-bottom: 1px solid $neutral-gray;
     color: $black;
     margin-right: $base-padding-lite;
     padding: $base-padding-lite $base-padding $base-padding-lite $base-padding;

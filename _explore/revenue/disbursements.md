@@ -25,7 +25,7 @@ permalink: /explore/disbursements/
       <img src="{{ site.baseurl }}/img/fund-disbursement-chart.png" alt="Chart of disbursement funds sorted by size of disbursement and type (offshore or onshore)" class="article_img-100">
     </figure>
 
-    <h3>Onshore revenue</h3>
+    <h2 class="h3">Onshore revenue</h2>
 
     <p>In FY 2013, ONRR disbursed <a href="http://statistics.onrr.gov/ReportTool.aspx">$5.141 billion</a> in revenue from natural resource extraction.</p>
 
@@ -66,7 +66,7 @@ permalink: /explore/disbursements/
 
     <p>In addition to these states, the Crow Tribe received $1.7 million, the Hopi tribe $1.3 million, and the Navajo tribe $6.8 million.</p>
 
-    <h3>Offshore revenue</h3>
+    <h2 class="h3">Offshore revenue</h2>
 
     <p>In FY 2013, ONRR disbursed $9.046 billion in revenue from natural resource extraction on the Outer Continental Shelf.</p>
 
@@ -102,6 +102,15 @@ permalink: /explore/disbursements/
         <td>2%</td>
       </tr>
     </table>
+
+    <h2 class="h3">Data</h2>
+
+    <p class="downloads-download_links-intro">Download fiscal year data:
+      <ul class="downloads-download_links">
+        <li><a href="{{site.baseurl}}/downloads/disbursements_2012-2013_2015-11-20.xlsx"><icon class="icon-cloud icon-padded"></icon>
+        Full dataset (xlsx, 14 KB)</a></li>
+       </ul>
+     </p>
 
   </div>
 

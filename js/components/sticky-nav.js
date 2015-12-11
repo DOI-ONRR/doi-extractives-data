@@ -34,7 +34,7 @@
         : this.elems.sticky.offsetTop;
 
     this.isAbsolute = function() {
-      var windowWidth = window.innerWidth || document.body.clientWidth
+      var windowWidth = window.innerWidth || document.body.clientWidth;
       this.isMobile = windowWidth < 768;
 
       var isAbsolute = (attrAbsolute === 'true' && !this.isMobile)

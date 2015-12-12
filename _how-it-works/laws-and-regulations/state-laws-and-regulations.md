@@ -68,7 +68,7 @@ nav_items:
 
 <p>As an example, <a href="http://revenue.wyo.gov/mineral-tax-division/severance-tax-filing-information">Wyoming applies the following severance taxes</a> on the value of extracted resources before processing and transportation:</p>
 
-<table>
+<table class="article_table">
   <tr>
     <th>Natural resource</th>
     <th>Severance tax rate</th>
@@ -122,7 +122,7 @@ nav_items:
 
 <h4 class="h5">Select states with permanent natural resource trust funds</h4>
 
-<table>
+<table class="article_table">
   <tr>
     <th>State</th>
     <th>Natural resources</th>

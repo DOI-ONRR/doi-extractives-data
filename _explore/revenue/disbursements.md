@@ -9,25 +9,25 @@ permalink: /explore/disbursements/
   <div class="container-left-7">
 
     <div>
-      <a class="breadcrumb" href="{{ site.baseurl }}/explore/">Explore</a>
+      <a class="breadcrumb" href="{{ site.baseurl }}/explore/">Explore data</a>
       /
     </div>
     <h1>Disbursements</h1>
 
-    <p class="case_studies_intro-para">Once collected, the federal government distributes revenue (such as corporate income taxes, royalties, bonuses and fees) from natural resource extraction for public use in a variety of ways.</p>
+    <p class="case_studies_intro-para">Once collected, the federal government distributes revenue from natural resource extraction for public use in a variety of ways.</p>
 
     <p>Federal corporate income taxes go to the General Fund of the Treasury, and Congress determines how to allocate these resources each year through the appropriations process.</p>
 
-    <p>Other revenue from extraction on federal lands goes to many different funds and entities. In FY 2013, ONRR disbursed $14.187 billion in DOI revenue. The recipient of these funds depends on whether the revenue is from onshore or offshore natural resource extraction.</p>
+    <p>Other revenue from extraction on federal lands goes to many different funds and entities. In FY 2013, ONRR disbursed $14.187 billion in DOI revenue. The recipient of these funds depends on whether the revenue is from onshore or offshore extraction.</p>
 
     <figure class="disbursment-figure">
-      <figcaption>Federal Revenue Disbursements by Fund <span>(2013)</span></figcaption>
+      <figcaption>Federal revenue disbursements by fund <span>(2013)</span></figcaption>
       <img src="{{ site.baseurl }}/img/fund-disbursement-chart.png" alt="Chart of disbursement funds sorted by size of disbursement and type (offshore or onshore)" class="article_img-100">
     </figure>
 
     <h2 class="h3">Onshore revenue</h2>
 
-    <p>In FY 2013, ONRR disbursed <a href="http://statistics.onrr.gov/ReportTool.aspx">$5.141 billion</a> in revenue from natural resource extraction.</p>
+    <p>In FY 2013, ONRR disbursed $5.141 billion in revenue from natural resource extraction.<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup></p>
 
     <table class="article_table">
       <tr>
@@ -62,9 +62,7 @@ permalink: /explore/disbursements/
       </tr>
     </table>
 
-    <p>In addition to the funds ONRR disbursed, OSMRE disbursed over $322 million from the Abandoned Mine Reclamation Fund in FY 2013 to 24 states and three tribes. States and tribes use these funds to reclaim mine lands abandoned from mining operations prior to 1977.</p>
-
-    <p>In addition to these states, the Crow Tribe received $1.7 million, the Hopi tribe $1.3 million, and the Navajo tribe $6.8 million.</p>
+    <p>In addition to the funds ONRR disbursed, OSMRE disbursed over $322 million from the Abandoned Mine Reclamation Fund in FY 2013 to 24 states and three tribes. The Crow Tribe received $1.7 million, the Hopi tribe $1.3 million, and the Navajo tribe $6.8 million. States and tribes use these funds to reclaim mine lands abandoned from mining operations prior to 1977.</p>
 
     <h2 class="h3">Offshore revenue</h2>
 
@@ -110,8 +108,15 @@ permalink: /explore/disbursements/
         <li><a href="{{site.baseurl}}/downloads/disbursements_2012-2013_2015-11-20.xlsx"><icon class="icon-cloud icon-padded"></icon>
         Full dataset (xlsx, 14 KB)</a></li>
        </ul>
-     </p>
+    </p>
 
+    <h3 class="">Notes</h3>
+    
+    <div class="footnotes">
+        <ol>
+          <li id="fn:1"><p><a href="http://statistics.onrr.gov/ReportTool.aspx">ONRR Statistical Information Report Tool</a> <a href="#fnref:1" class="reversefootnote">↩</a></p></li>
+        </ol>
+      </div>
   </div>
 
 </div>

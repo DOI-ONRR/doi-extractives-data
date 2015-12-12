@@ -9,7 +9,7 @@ permalink: /explore/corporate-income-tax/
   <article class="container-left-7">
 
     <div>
-      <a class="breadcrumb" href="{{ site.baseurl }}/explore/">Explore</a>
+      <a class="breadcrumb" href="{{ site.baseurl }}/explore/">Explore data</a>
       /
     </div>
     <h1>Corporate Income Tax</h1>
@@ -22,7 +22,7 @@ permalink: /explore/corporate-income-tax/
 
     <p>SOI publishes data on <a href="https://www.irs.gov/uac/Tax-Stats-2">tax statistics</a> and <a href="https://www.irs.gov/uac/SOI-Tax-Stats-Corporation-Tax-Statistics">corporation tax statistics</a>.  SOI aggregates tax data separately for <a href="https://www.irs.gov/uac/SOI-Tax-Stats-S-Corporation-Statistics">S-corporations</a>.</p>
 
-    <p>SOI presents the data in various ways for corporations, including by size, type of return, and sector or industry. The data by sector or industry is aggregated by the NAICS industrial sectors, and then further by major and minor industry classifications. The total federal income tax liability reported by industry should be interpreted with care because industry classification of companies with multiple lines of business are classified into an industry category based on the taxpayer’s determination of the business activity from which it derives the highest percentage of its total receipts.</p>
+    <p>SOI presents the data in various ways for corporations, including by size, type of return, and sector or industry. The data by sector or industry is aggregated by NAICS industrial sectors, and then further by major and minor industry classifications. The total federal income tax liability reported by industry should be interpreted with care because industry classification of companies with multiple lines of business are classified into an industry category based on the taxpayer’s determination of the business activity from which it derives the highest percentage of its total receipts.</p>
 
     <h4>Corporate income tax receipts (in millions USD)</h4>
 

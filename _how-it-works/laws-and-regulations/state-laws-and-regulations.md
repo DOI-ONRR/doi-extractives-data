@@ -32,6 +32,25 @@ nav_items:
 
 <p>While all 50 states have some natural resource extraction activity, the 2015 USEITI Report focuses on 18 states that led the country in oil, gas, coal, and nonenergy mineral production in 2013; had the most DOI revenue or state production taxes; or had the most significant tribal natural resource interests. These 18 states are highlighted on the map below:</p>
 
+<svg is="eiti-map" data-path="{{ site.baseurl }}/data/geo/"
+  simplify="1e-2"
+  projection="albersCustom"
+  preserveAspectRatio="xMidYMid meet"
+  zoom-to="WV">
+  <g data-url="us-topology.json"
+    data-object="states"
+    data-mesh="true"
+    data-filter="id === 'WV'"></g>
+  <g data-url="us-topology.json"
+    data-object="counties"
+    data-filter="properties.state === 'WV'"
+    data-mesh="true"></g>
+  <g data-url="us-topology.json"
+    data-object="counties"
+    data-filter="properties.state === 'WV' &amp;&amp; properties.name.match(/Boone|Logan|Mingo/)"
+    class="case_studies-selected_counties"></g>
+</svg>
+
 <img src="{{site.baseurl}}/img/placeholders/map.png">
 
 <p>See <a href="{{site.baseurl}}/how-it-works/state-legal-fiscal-info/">State Legal and Fiscal Information</a> for more details about the individual states’ laws and statutes.</p>

@@ -63,6 +63,17 @@ County and state budget documents and state agency websites were the primary dat
 
 This year’s data collection process was the first step in bringing information about extractive industries’ impacts on local communities and governments to the public in a clear, digestible way. We reached out to each county we profiled to communicate the purpose and status of USEITI, verify content, and lay the foundation for future collaboration.
 
+To learn more about the interactions between governments and extractive industries in your community, consider researching:
+
+* Nongovernmental websites and publications
+* Industry reports and public tax filings
+* Energy think tank memos
+* Industry association reports
+* University publications
+* Environment impact statements
+
+You can also request government data that isn’t online or otherwise available through a <a href="http://www.foia.gov/how-to.html">Freedom of Information Act</a> request.
+
 <h3 class="case_studies_content-heading">Notes</h3>
 [^1]: U.S. Bureau of Economic Analysis, [Wyoming Department of Administration &amp; Information Economic Analysis Division](http://eadiv.state.wy.us/i&e/WyoGDP97_13.htm), 2013
 [^2]: EITI International Secretariat, [The EITI Standard (PDF)](https://eiti.org/files/English_EITI_STANDARD.pdf), 2015, p. 9

@@ -28,7 +28,7 @@ permalink: /explore/corporate-income-tax/
 
     <p>SOI’s calculations of federal corporate income tax receipts from all returns in the mining and petroleum refining sectors for <a href="https://www.irs.gov/uac/SOI-Tax-Stats-Returns-of-Active-Corporations-Table-1">tax years 2009 to 2013</a> are presented below.<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup></p>
 
-    <table>
+    <table class="article_table">
       <tr>
   		<th rowspan="2">Industry</th>
       <th colspan="5">Total receipts (in millions USD)<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup></th>

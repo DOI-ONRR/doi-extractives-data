@@ -132,7 +132,7 @@ function filterStream(year, all) {
         FIPS: fips,
         Jobs: jobs,
         Total: total,
-        Percent: total ? (jobs / total * 100).toFixed(1) : 0
+        Share: total ? (jobs / total).toFixed(4) : 0
       };
       if (area.indexOf('--') > -1) {
         area = area.split(' -- ');

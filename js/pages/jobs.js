@@ -107,6 +107,10 @@
       this.value = state.get(this.name) || '';
     });
 
+    formatNumber = state.get('units') === 'percent'
+      ? eiti.format('%.2')
+      : eiti.format.si;
+
     var region = state.get('region') || 'US';
     var selected = regionSections
       .classed('active', function() {
@@ -179,7 +183,16 @@
           .call(createRegionRow);
       }
 
-      var total = d3.sum(data, getter(fields.value));
+      var value = getter(fields.value);
+      var aggregate = state.get('units') === 'percent'
+        ? function(d) {
+            return value(d[0]);
+          }
+        : function(data) {
+            return d3.sum(data, value);
+          };
+
+      var total = aggregate(data);
       header
         .datum({
           value: total,
@@ -202,12 +215,10 @@
         var features = subregions.data();
         var dataByFeatureId = d3.nest()
           .key(getter(fields.region))
-          .rollup(function(d) {
-            return d3.sum(d, getter(fields.value));
-          })
+          .rollup(aggregate)
           .map(data);
 
-        // console.log('data by feature id:', dataByFeatureId);
+        console.log('data by feature id:', dataByFeatureId);
 
         var featureId = getter(fields.featureId);
         features.forEach(function(f) {
@@ -382,6 +393,7 @@
       .append('span')
         .attr('class', 'label');
 
+    var format = formatNumber;
     steps
       .style('border-color', getter('color'))
       .attr('title', function(d) {
@@ -394,8 +406,8 @@
           return d.none
             ? d.range[0]
             : i === last
-              ? formatNumber(d.range[0]) + '+'
-              : formatNumber(d.range[0]);
+              ? format(d.range[0]) + '+'
+              : format(d.range[0]);
         });
   }
 
@@ -412,8 +424,12 @@
     };
     switch (state.get('figure')) {
       case 'wage':
-        fields.region = 'State';
-        fields.value = 'Jobs';
+        fields.region = state.get('region')
+          ? 'FIPS'
+          : 'State';
+        fields.value = state.get('units') === 'percent'
+         ? 'Share'
+         : 'Jobs';
         break;
     }
     return fields;

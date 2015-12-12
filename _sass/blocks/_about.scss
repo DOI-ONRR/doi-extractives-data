@@ -2,6 +2,7 @@
 
 .about_intro-callout {
   background-color: $pale-blue;
+  border-bottom: 4px solid $white;
   padding: $base-padding-large;
   padding-bottom: $base-padding-lite;
   padding-top: ($base-padding-large * 1.5);
@@ -51,4 +52,32 @@
 
 .article_img-100 {
   width: 100%;
+}
+
+.article_table {
+  border: none;
+  border-bottom: 1px solid $light-green;
+  margin-bottom: $base-padding-extra;
+
+  th {
+    border-bottom: 4px solid $light-green;
+    font-weight: $weight-book;
+    line-height: 1.2;
+    padding: $base-padding-lite;
+    text-align: left;
+    vertical-align: bottom;
+  }
+
+  td {
+    border: none;
+    border-top: 1px solid $light-green;
+    line-height: 1.4;
+    padding: $base-padding-lite;
+    padding-bottom: ($base-padding-lite * 1.7);
+  }
+
+  span {
+    font-weight: $weight-book;
+    line-height: 2;
+  }
 }

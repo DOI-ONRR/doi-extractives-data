@@ -76,6 +76,10 @@
     padding-bottom: ($base-padding-lite * 1.7);
   }
 
+  td p {
+    @include heading(para-md);
+  }
+
   span {
     font-weight: $weight-book;
     line-height: 2;

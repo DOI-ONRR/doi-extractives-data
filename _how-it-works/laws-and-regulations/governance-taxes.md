@@ -17,7 +17,7 @@ permalink: /how-it-works/governance/taxes/
   <p>The Treasury provides estimates for tax expenditures related to extracting fossil fuels, developing renewable energy, and extracting nonenergy minerals. The table below provides details and estimates for each of the relevant tax expenditures, using 2013 data.</p>
 
   <h3>Fossil fuels</h3>
-  <table>
+  <table class="article_table">
   	<tr>
   		<th>Tax expenditure</th>
 		<th>Description</th>
@@ -60,7 +60,7 @@ permalink: /how-it-works/governance/taxes/
   </table>
 
   <h3>Renewables</h3>
-  <table>
+  <table class="article_table">
   	<tr>
   		<th>Tax expenditure</th>
 		<th>Description</th>
@@ -94,7 +94,7 @@ permalink: /how-it-works/governance/taxes/
   </table>
 
   <h3>Nonenergy minerals</h3>
-  <table>
+  <table class="article_table">
   	<tr>
   		<th>Tax expenditure</th>
 		<th>Description</th>

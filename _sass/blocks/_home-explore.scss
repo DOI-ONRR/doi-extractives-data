@@ -9,7 +9,12 @@
 .explore_home-subhead {
   @include heading(para-md);
   font-weight: $weight-bold;
-  margin-bottom: 0;
+  padding-bottom: 0;
+
+ + .explore_home-heading {
+   margin-top:  0;
+   padding-top: 0;
+ }
 }
 
 .explore_home-tabs {

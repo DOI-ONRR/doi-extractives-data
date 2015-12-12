@@ -48,8 +48,8 @@
 
   background-color: $white;
   border-radius: 10px;
-  height: 550px;
-  margin-top: $base-padding;
+  height: 339px;
+  margin-bottom: $base-padding;
   position: relative;
 
   @include respond-to(small-to-large) {
@@ -109,15 +109,28 @@ img.card-image {
 
 .card-content {
   padding: $base-padding;
+
+  p {
+    @include heading(para-sm);
+    color: darken($neutral-gray, 20%);
+    line-height: 1.6;
+  }
+
+  .card-content-subhead {
+    color: $dark-gray;
+    font-weight: $weight-bold;
+    margin-bottom: $base-padding-lite;
+  }
 }
 
-.card-title {
-  margin-bottom: $base-padding-lite;
-  padding-right: $base-padding;
 
-  a {
-    color: $dark-gray;
-  }
+
+.card-title {
+  @include heading(para-md);
+  color: $blue;
+  font-weight: $weight-bold;
+  line-height: 1.3;
+  margin-bottom: $base-padding-lite;
 }
 
 .card-link {

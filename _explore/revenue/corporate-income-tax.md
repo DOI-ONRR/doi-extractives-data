@@ -26,11 +26,14 @@ permalink: /explore/corporate-income-tax/
 
     <h4>Corporate income tax receipts (in millions USD)</h4>
 
-    <p>SOI’s calculations of federal corporate income tax receipts from all returns in the mining and petroleum refining sectors for <a href="https://www.irs.gov/uac/SOI-Tax-Stats-Returns-of-Active-Corporations-Table-1">tax years 2009 to 2013</a> are presented below.</p>
+    <p>SOI’s calculations of federal corporate income tax receipts from all returns in the mining and petroleum refining sectors for <a href="https://www.irs.gov/uac/SOI-Tax-Stats-Returns-of-Active-Corporations-Table-1">tax years 2009 to 2013</a> are presented below.<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup></p>
 
     <table>
       <tr>
-  		<th>Industry</th>
+  		<th rowspan="2">Industry</th>
+      <th colspan="5">Total receipts (in millions USD)<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup></th>
+      </tr>
+      <tr>
   		<th>2009</th>
   		<th>2010</th>
   		<th>2011</th>
@@ -111,6 +114,13 @@ permalink: /explore/corporate-income-tax/
 
     <p>In 2010, the United States enacted the <a href="{{site.baseurl}}/how-it-works/federal-reforms/#dodd-frank">Dodd-Frank Act</a>, which requires listed extractive companies to separately disclose information about payments to governments around the world, including their federal corporate income tax payments. The Securities and Exchange Commission is rewriting the rule and has stated that it will be proposed in the spring of 2016. Once finalized, publicly traded companies will report according to the law and the rule.</p>
 
+    <h3>Notes</h3>
+    <div class="footnotes">
+      <ol>
+        <li id="fn:1"><p>Statistics on corporate income taxes relative to companies performing extractive activities are generally classified under the NAICS Mining major industry. In addition, integrated companies that operate in both the downstream extractive and refining spaces are classified under the NAICS Petroleum and Coal Products Manufacturing major industry. <a href="#fnref:1" class="reversefootnote">↩</a></p></li>
+        <li id="fn:2"><p>All figures are estimates based on samples. <a href="#fnref:2" class="reversefootnote">↩</a></p></li>
+      </ol>
+    </div>
   </article>
 
 </div>

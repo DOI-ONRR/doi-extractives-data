@@ -38,8 +38,6 @@ permalink: /about/
 
 		<h2 id="initiative" class="h3">The initiative</h2>
 
-		<p></p>
-
 		<p>The EITI International Board and implementing member countries believe that a nation’s natural resource wealth belongs to its citizens. Through increased transparency and accountability, EITI can increase public trust and dialogue, improve governance, attract investment, and manage and enhance growth so that citizens receive financial and societal benefits from a country’s natural resources.</p>
 
 		<p>Since 2003, international representatives from government, industry, and civil society have developed and adapted the <a href="https://eiti.org/eiti/principles">EITI Principles</a>. These principles are the cornerstone of the initiative and endorsed by every stakeholder.</p>
@@ -100,12 +98,12 @@ permalink: /about/
 
 		<p>The Secretary of the U.S. Department of the Interior (DOI) leads USEITI.</p>
 
-		<ul class="list-bullet">
+		<p><ul class="list-bullet">
 			<li>December 2012: The Secretary of the Interior formed the MSG with 22 members and 21 alternates from government, industry, and civil society organizations.</li>
 			<li>December 19, 2013: The U.S. submitted an application to participate to the EITI International Board. The MSG developed this application after engaging with stakeholders across the country.</li>
 			<li>March 19, 2014: The EITI International Board accepted the U.S. as a candidate country.</li>
 			<li>Summer of 2014: DOI selected an IA for the USEITI, Deloitte & Touche LLP.</li>
-		</ul>
+		</ul></p>
 
 		<h3 class="h4">3 | Federal agencies</h3>
 
@@ -194,6 +192,17 @@ permalink: /about/
           <p><a href="https://www.irs.gov/">The IRS</a> assists U.S. taxpayers with understanding and meeting their tax obligations, and enforces the law when taxpayers do not meet these obligations. The IRS collects corporate income taxes from corporations in the extractive industries, as well as income taxes from all other companies operating in these industries. In the 2013 tax year, the IRS calculated <a href="https://www.irs.gov/uac/SOI-Tax-Stats-Table-7-Corporation-Returns-With-Net-Income">$11.8 billion in corporate income tax receipts</a> from mining and petroleum and coal products manufacturing industries.</p>
         </div>
       </article>
+
+      <h3 class="h4">Public comments</h3>
+
+      <p>Read public comments submitted during the USEITI process:</p>
+        <ul class="list-bullet">
+          <li><a href="https://www.doi.gov/eiti/
+FACA/outreach">Public comments from the USEITI application development process</a></li>
+          <li><a href="https://www.doi.gov/eiti/FACA/msg-meeting-minutes">Public comments from minute notes of MSG meetings</a></li>
+          <li><a href="https://www.doi.gov/sites/doi.gov/files/
+migrated/eiti/FACA/upload/2015-WORKPLAN-NARRATIVE-11_25_14-final.pdf">USEITI 2015 Workplan (PDF)</a></li>
+        </ul>
 
     </article>
 

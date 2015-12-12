@@ -15,9 +15,9 @@ permalink: /about/whats-new/
 
     <h1>{{page.title}}</h1>
 
-    <p>The ititial USEITI beta site launched in early 2015, offering visualizations that showed how such resources generate revenue across the country, and where the money earned goes.</p>
+    <p>The ititial USEITI beta site launched in early 2015, offering visualizations that showed how such resources generate revenue across the country, and where the money goes.</p>
 
-    <p>With this site, we've responded to user feedback to make the data easier to use and offer better structure, a clearer explanation of USEITI, and more context about the government's role in extractive industries.</p>
+    <p>With this site, we've responded to user feedback to make the data easier to use, offer better structure, explain USEITI more clearly, and provide context about the government's role in extractive industries.</p>
 
     <p>We've also added new information and datasets to explore, including:</p>
 
@@ -30,12 +30,12 @@ permalink: /about/whats-new/
 
     <h2>What's next?</h2>
 
-    <p>This site is still in progress. Over the coming months, here's what we're looking forward to:</p>
+    <p>The site is still in progress. Over the coming months, here's what we're looking forward to:</p>
 
     <ul class="list-bullet">
       <li>USEITI has invited states to opt in to this process, with the goal of making state-level data more navigable for members of the public. In 2016, participating states will begin contributing data.</li>
       <li>In early 2016, we'll be making reconciliation data more interactive and easier to explore.</li>
-      <li>We'll be collecting community feedback to help us make the site clearer and more useful. <a href="https://ethn.io/38933">Help us improve the site.</a></li>
+      <li>We'll be collecting community feedback to help us make the site clearer and more useful. If you have thoughts, please <a href="https://ethn.io/38933">help us improve the site.</a></li>
     </ul>
 
   </div>

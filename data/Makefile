@@ -76,7 +76,13 @@ jobs: $(JOBS_FILES)
 all_production: $(ALL_LANDS_PRODUCTION_FILES)
 
 jobs/wage-salary.tsv:
-	bin/parse-bls.js _input/bls/*.csv > $@
+	bin/parse-bls.js _input/bls/????/joined.tsv \
+		| bin/abbr-state.js \
+			--if tsv \
+			--of tsv \
+			--states $(input)geo/states.csv \
+			--field State \
+			> $@
 
 # national revenues by commodity and revenue type
 national/revenues.tsv: state/revenues.tsv offshore/revenues.tsv

@@ -9,12 +9,12 @@ permalink: /explore/reconciliation/
   <div class="container-left-7">
 
     <div>
-      <a class="breadcrumb" href="{{ site.baseurl }}/explore/">Explore</a>
+      <a class="breadcrumb" href="{{ site.baseurl }}/explore/">Explore data</a>
       /
     </div>
     <h1>Reconciliation</h1>
 
-    <p>As a part of USEITI, companies report payments to the government (e.g., rents, taxes, royalties) and the government reports what it received. These figures are compiled and reconciled by an independent administrator and published. In the future, this dataset will be interactive. For now, you can learn about the reconciliation process or <a href="{{site.baseurl}}/downloads/#reconciliation">download the dataset</a>.</p>
+    <p>As a part of USEITI, companies report payments to the government (e.g., rents, taxes, royalties) and the government reports what it received. These figures are compiled and reconciled by an independent administrator and published. In the future, this dataset will be interactive. For now, you can learn about the reconciliation process and <a href="{{site.baseurl}}/downloads/reconciliation/">download the dataset</a>.</p>
 
     <h3>Reconciliation results</h3>
 

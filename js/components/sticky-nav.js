@@ -120,31 +120,6 @@
 
       }
     },
-    // throttle = function(fn, frequency) {
-    //   console.log('scroll')
-    //   var scrollTimer, lastScrollFireTime = 0;
-
-    //   var minScrollTime = 100;
-    //   var now = new Date().getTime();
-
-    //   function processScroll() {
-    //     // console.log(new Date().getTime().toString());
-    //     // runStickyPositions();
-    //     fn()
-    //   }
-
-    //   if (!scrollTimer) {
-    //       if (now - lastScrollFireTime > (3 * minScrollTime)) {
-    //           processScroll();   // fire immediately on first scroll
-    //           lastScrollFireTime = now;
-    //       }
-    //       scrollTimer = setTimeout(function() {
-    //           scrollTimer = null;
-    //           lastScrollFireTime = new Date().getTime();
-    //           processScroll();
-    //       }, minScrollTime);
-    //   }
-    // },
     throttle : function (fn, threshhold, scope) {
       console.log('throttle')
       threshhold || (threshhold = 250);
@@ -167,83 +142,25 @@
           fn.apply(context, args);
         }
       };
+    },
+    run: function() {
+      findScrollPositions();
+      this.setPositions();
+      if (this.needsUpdate()) {
+        this.update();
+      }
     }
   };
 
   var stickyNav = new StickyNav();
 
-  findScrollPositions();
-  stickyNav.setPositions();
-  if (stickyNav.needsUpdate()) {
-    stickyNav.update();
-  }
-
-  var runStickyPositions = function () {
-
-    findScrollPositions();
-    console.log('run sticky', stickyNav.needsUpdate())
-    stickyNav.setPositions();
-    if (stickyNav.needsUpdate()) {
-      stickyNav.update();
-    }
-  };
-
-  var scrollTimer, lastScrollFireTime = 0;
-
-  window.addEventListener('scroll', runStickyPositions, 100)
-
-  window.addEventListener('resize', runStickyPositions, 100)
+  stickyNav.run();
 
 
-  // window.addEventListener('scroll', function() {
-  //   // console.log('scroll')
+  window.addEventListener('scroll', stickyNav.throttle(stickyNav.run, 150, stickyNav));
 
-  //   // var minScrollTime = 100;
-  //   // var now = new Date().getTime();
+  window.addEventListener('resize', stickyNav.throttle(stickyNav.run, 150, stickyNav));
 
-  //   // function processScroll() {
-  //   //   // console.log(new Date().getTime().toString());
-  //   //   runStickyPositions();
-  //   // }
-
-  //   // if (!scrollTimer) {
-  //   //     if (now - lastScrollFireTime > (3 * minScrollTime)) {
-  //   //         processScroll();   // fire immediately on first scroll
-  //   //         lastScrollFireTime = now;
-  //   //     }
-  //   //     scrollTimer = setTimeout(function() {
-  //   //         scrollTimer = null;
-  //   //         lastScrollFireTime = new Date().getTime();
-  //   //         processScroll();
-  //   //     }, minScrollTime);
-  //   // }
-  //   stickyNav.throttle(runStickyPositions, 100);
-  // });
-
-  // window.addEventListener('resize', function() {
-    // console.log('resize')
-    // var minScrollTime = 100;
-    // var now = new Date().getTime();
-
-    // function processScroll() {
-    //   console.log('process resize')
-    //   // console.log(new Date().getTime().toString());
-    //   runStickyPositions();
-    // }
-
-    // if (!scrollTimer) {
-    //     if (now - lastScrollFireTime > (3 * minScrollTime)) {
-    //         processScroll();   // fire immediately on first scroll
-    //         lastScrollFireTime = now;
-    //     }
-    //     scrollTimer = setTimeout(function() {
-    //         scrollTimer = null;
-    //         lastScrollFireTime = new Date().getTime();
-    //         processScroll();
-    //     }, minScrollTime);
-    // }
-  //   stickyNav.throttle(runStickyPositions, 100);
-  // });
 
   exports.stickyNav = stickyNav;
 

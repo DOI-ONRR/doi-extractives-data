@@ -119,6 +119,54 @@
         }
 
       }
+    },
+    // throttle = function(fn, frequency) {
+    //   console.log('scroll')
+    //   var scrollTimer, lastScrollFireTime = 0;
+
+    //   var minScrollTime = 100;
+    //   var now = new Date().getTime();
+
+    //   function processScroll() {
+    //     // console.log(new Date().getTime().toString());
+    //     // runStickyPositions();
+    //     fn()
+    //   }
+
+    //   if (!scrollTimer) {
+    //       if (now - lastScrollFireTime > (3 * minScrollTime)) {
+    //           processScroll();   // fire immediately on first scroll
+    //           lastScrollFireTime = now;
+    //       }
+    //       scrollTimer = setTimeout(function() {
+    //           scrollTimer = null;
+    //           lastScrollFireTime = new Date().getTime();
+    //           processScroll();
+    //       }, minScrollTime);
+    //   }
+    // },
+    throttle : function (fn, threshhold, scope) {
+      console.log('throttle')
+      threshhold || (threshhold = 250);
+      var last,
+          deferTimer;
+      return function () {
+        var context = scope || this;
+
+        var now = +new Date,
+            args = arguments;
+        if (last && now < last + threshhold) {
+          // hold on to it
+          clearTimeout(deferTimer);
+          deferTimer = setTimeout(function () {
+            last = now;
+            fn.apply(context, args);
+          }, threshhold);
+        } else {
+          last = now;
+          fn.apply(context, args);
+        }
+      };
     }
   };
 
@@ -131,8 +179,9 @@
   }
 
   var runStickyPositions = function () {
-    findScrollPositions();
 
+    findScrollPositions();
+    console.log('run sticky', stickyNav.needsUpdate())
     stickyNav.setPositions();
     if (stickyNav.needsUpdate()) {
       stickyNav.update();
@@ -141,54 +190,60 @@
 
   var scrollTimer, lastScrollFireTime = 0;
 
-  window.addEventListener('scroll', function() {
-    console.log('scroll')
+  window.addEventListener('scroll', runStickyPositions, 100)
 
-    var minScrollTime = 100;
-    var now = new Date().getTime();
+  window.addEventListener('resize', runStickyPositions, 100)
 
-    function processScroll() {
-      // console.log(new Date().getTime().toString());
-      runStickyPositions();
-    }
 
-    if (!scrollTimer) {
-        if (now - lastScrollFireTime > (3 * minScrollTime)) {
-            processScroll();   // fire immediately on first scroll
-            lastScrollFireTime = now;
-        }
-        scrollTimer = setTimeout(function() {
-            scrollTimer = null;
-            lastScrollFireTime = new Date().getTime();
-            processScroll();
-        }, minScrollTime);
-    }
-  });
+  // window.addEventListener('scroll', function() {
+  //   // console.log('scroll')
 
-  window.addEventListener('resize', function() {
-    console.log('resize')
-    var minScrollTime = 100;
-    var now = new Date().getTime();
+  //   // var minScrollTime = 100;
+  //   // var now = new Date().getTime();
 
-    function processScroll() {
-      console.log('process resize')
-      // console.log(new Date().getTime().toString());
-      runStickyPositions();
-    }
+  //   // function processScroll() {
+  //   //   // console.log(new Date().getTime().toString());
+  //   //   runStickyPositions();
+  //   // }
 
-    if (!scrollTimer) {
-        if (now - lastScrollFireTime > (3 * minScrollTime)) {
-            processScroll();   // fire immediately on first scroll
-            lastScrollFireTime = now;
-        }
-        scrollTimer = setTimeout(function() {
-            scrollTimer = null;
-            lastScrollFireTime = new Date().getTime();
-            processScroll();
-        }, minScrollTime);
-    }
-  });
+  //   // if (!scrollTimer) {
+  //   //     if (now - lastScrollFireTime > (3 * minScrollTime)) {
+  //   //         processScroll();   // fire immediately on first scroll
+  //   //         lastScrollFireTime = now;
+  //   //     }
+  //   //     scrollTimer = setTimeout(function() {
+  //   //         scrollTimer = null;
+  //   //         lastScrollFireTime = new Date().getTime();
+  //   //         processScroll();
+  //   //     }, minScrollTime);
+  //   // }
+  //   stickyNav.throttle(runStickyPositions, 100);
+  // });
 
+  // window.addEventListener('resize', function() {
+    // console.log('resize')
+    // var minScrollTime = 100;
+    // var now = new Date().getTime();
+
+    // function processScroll() {
+    //   console.log('process resize')
+    //   // console.log(new Date().getTime().toString());
+    //   runStickyPositions();
+    // }
+
+    // if (!scrollTimer) {
+    //     if (now - lastScrollFireTime > (3 * minScrollTime)) {
+    //         processScroll();   // fire immediately on first scroll
+    //         lastScrollFireTime = now;
+    //     }
+    //     scrollTimer = setTimeout(function() {
+    //         scrollTimer = null;
+    //         lastScrollFireTime = new Date().getTime();
+    //         processScroll();
+    //     }, minScrollTime);
+    // }
+  //   stickyNav.throttle(runStickyPositions, 100);
+  // });
 
   exports.stickyNav = stickyNav;
 

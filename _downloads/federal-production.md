@@ -31,7 +31,7 @@ permalink: /downloads/federal-production/
 
     <p>This dataset is updated six months after the end of the year. Fiscal year 2015 data will be published in March 2016 and calendar year 2015 data will be published in June 2016. </p>
 
-    <h2 class="h3">Why was some solids data withheld?</strong></h2>
+    <h2 class="h3">Why was some solids data withheld?</h2>
 
     <p>ONRR withheld some solids production information out of an abundance of caution to ensure that there were no violations of the Trade Secrets Act. </p>
 
@@ -39,6 +39,10 @@ permalink: /downloads/federal-production/
         <li>"W" is displayed in the Production Volume column for those products that reveal proprietary data at the county level </li>
         <li>All "W" volumes are accounted for in separate line totals where state and county have been "Withheld" (columns C, D and E)</li>
     </ul>
+
+    <h2 class="h3">A note about 'Mixed Exploratory' versus 'Federal' categories of production.</h2>
+
+    <p>For the purposes of the visualizations on our site, we've aggregated two types of production: 'mixed exploratory' and 'federal.' Federal production is federal production; this is straightforward. However, 'mixed exploratory' ... [need explanation, the note I have is: One item I noticed from the Data Downloads page is that the "Download documentation" file, for the Production from Federal lands and waters "Download full dataset" file, should be revised to include an explanation of the difference between "Federal" and "Mixed Exploratory" in the Category column as some of the Mixed Exploratory volumes are very large, especially for gas.  Also when the Data Portal says “Gas production on federal lands in the entire U.S.” and then shows state & county production volumes that include “Mixed Exploratory” volumes, that statement is technically incorrect as “Mixed Exploratory” production may not be taking place on Federal lands though down the road we will get a unitization or communitization agreement allocation.  Bottom-line is that the Feds rarely get 100% of the “Mixed Exploratory” volumes once the exploratory becomes a regular agreement as adjudicated by BLM.]</p>
 
     <h2>Data dictionary</h2>
 

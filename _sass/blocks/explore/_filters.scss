@@ -14,11 +14,12 @@
   @include respond-to(medium-up) {
     border-radius: $base-border-radius;
     margin-right: $base-padding;
-    max-width: 674.309px;
+    width: initial;
+    // max-width: 674.309px;
   }
 
   @include respond-to(huge-plus-up) {
-    margin-right: 0;
+    // margin-right: 0;
   }
 
   select {

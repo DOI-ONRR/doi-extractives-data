@@ -178,11 +178,18 @@
       return d3.sum(data, value);
     };
 
+    /*
+     * cases in which we aggregate by the value of the first row:
+     * 1. if we're looking at % units
+     * 2. if we're looking at self-employment figures
+     * 3. if we're looking at wage & salary figures by state
+     */
     if (state.get('units') === 'percent' ||
         state.get('figure') === 'self' ||
         (state.get('figure') === 'wage' && state.get('region'))) {
       aggregate = first;
     } else {
+      console.info('aggregating by sum');
       aggregate = sum;
     }
 

@@ -20,8 +20,12 @@ permalink: /downloads/federal-revenue-by-company/
       <ul class="downloads-download_links">
         <li><a href="{{site.baseurl}}/downloads/federal_revenue_by_company_CY2013_2015-11-10.xlsx"><icon class="icon-cloud icon-padded"></icon>
         Full dataset (xlsx, 132 KB)</a></li>
-       </ul>
-     </p>
+        <li><a href="#"><icon class="icon-cloud icon-padded"></icon>
+        Full dataset (tsv)</a></li>
+      </ul>
+    </p>
+
+    <p class="u-margin-top">We also have <a href="https://github.com/18F/doi-extractives-data/wiki/Data-Catalog#company-revenue">notes on this data</a> from the web development team as they built the interactions on this site.</p>
 
     <h2 class="h3">Scope</h2>
 
@@ -61,7 +65,7 @@ permalink: /downloads/federal-revenue-by-company/
         <li><strong>Rents.</strong> A natural resource lease might not produce a commodity in paying quantities for some time after it is sold. Until it does, periodic payments are made for the right to continue exploration and development of the land for future natural resource production. These payments are called rent. The first year rental is collected by BLM and the remaining rental payments are collected by ONRR.</li>
         <li><strong>Other revenues.</strong> This category includes revenues that are not included in the royalty, rent, or bonus categories, such as; minimum royalties, estimated royalties, settlement agreements, and interest.</li>
         <li><strong>Inspection fees.</strong> This category includes fees for annual inspections performed by the Bureau of Safety and Environmental Enforcement (BSEE) on each offshore permanent structure and drilling rig that conducts drilling, completion, or workover operations. ONRR collects these fees on behalf of BSEE.</li>
-        <li><strong>Civil penalties.</strong> Civil penalties are assessed for violations of laws applicable to extractive activities. These penalties are issued by ONRR, BOEM, and/or BSEE, and are collected by ONRR.</li>
+        <li><strong>Civil penalties.</strong> Civil penalties are assessed for violations of laws applicable to extractive activities. These penalties are issued by ONRR, BOEM, and/or BSEE, and are collected by ONRR. There are two lines for this data. "Civil penalties" are penalties collected by ONRR, and "Civil penalties including late charges" are penalties collected by BLM.</li>
         <li><strong>Permit Fees.</strong> Include mining claim fees  paid when mining hardrock minerals, applicants pay a set fee to stake a claim rather than bid on a lease. Also included in this category are Applications to Drill. </li>
         <li><strong>Abandoned mine lands (AML) fees.</strong> A fee paid by coal companies, $0.28 per ton of surface coal produced, and $0.12 per ton of subsurface coal produced. These fees are placed in the AML fund to address reclamation of abandoned mines from operations prior to 1977.</li>
     </ul>

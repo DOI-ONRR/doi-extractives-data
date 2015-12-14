@@ -64,17 +64,17 @@
   };
 
   StickyNav.prototype = {
-    setOffset: function() {
-      console.log('~~offset before~~~~', this.offset)
-      this.offset = this.attrStickyOffset
-        ? parseInt(this.attrStickyOffset)
-        : !this.elems.parent
-          ? this.elems.sticky.offsetTop
-          : this.attrParent === 'mobile' && this.isMobile
-            ? this.elems.parent.offsetTop - this.elems.sticky.offsetHeight
-            : this.elems.sticky.offsetTop
-      console.log('~~offset after~~~~', this.offset)
-    },
+    // setOffset: function() {
+    //   console.log('~~offset before~~~~', this.offset)
+    //   this.offset = this.attrStickyOffset
+    //     ? parseInt(this.attrStickyOffset)
+    //     : !this.elems.parent
+    //       ? this.elems.sticky.offsetTop
+    //       : this.attrParent === 'mobile' && this.isMobile
+    //         ? this.elems.parent.offsetTop - this.elems.sticky.offsetHeight
+    //         : this.elems.sticky.offsetTop
+    //   console.log('~~offset after~~~~', this.offset)
+    // },
     setPositions: function (mutate) {
 
       this.height = this.elems.sticky.clientHeight;
@@ -91,7 +91,8 @@
       // Todo diff bottom and diff top aren't working, and aren't
       // maintainable
       this.diffTop = scrollTop - this.mainOffset - this.offset;
-
+      console.log(scrollTop, this.offset)
+      // this.diffTop = scrollTop - this.offset;
       // this.diffBottom = distance from top of screen to bottom of stickyNav (scrollTop + this.height)
       // minus height of height of main and it
       this.diffBottom = scrollTop + this.height - this.mainHeight - this.mainOffset;
@@ -140,7 +141,8 @@
       // this.diffBottom = scrollTop + this.height - this.mainHeight - this.mainOffset;
           console.log(this.mainHeight - this.height - this.offset - this.mainOffset + 'px')
           // this.elems.sticky.style.top = this.mainHeight - this.mainOffset - this.height + 'px';
-          this.elems.sticky.style.top = this.mainHeight - this.height - this.mainOffset - this.offset - 50 + 'px';
+          // this.elems.sticky.style.top = this.mainHeight - this.mainOffset - this.height + 'px';
+          this.elems.sticky.style.top = this.mainHeight - this.height - this.offset + 'px';
 
           this.elems.sticky.classList.remove('js-transparent');
           this.elems.sticky.classList.add('js-color');
@@ -189,22 +191,22 @@
       };
     },
     run: function(mutate) {
-      if (mutate === 'mutate') {
-        console.log('------mutate event------')
-        this.setPositions();
-        this.setOffset();
-        if (this.needsUpdate()) {
-          this.update();
-        }
-      } else {
+      // if (mutate === 'mutate') {
+      //   console.log('------mutate event------')
+      //   this.setPositions();
+      //   this.setOffset();
+      //   if (this.needsUpdate()) {
+      //     this.update();
+      //   }
+      // } else {
         findScrollPositions();
-        this.determineScreen();
-        this.screenUpdate();
+        // this.determineScreen();
+        // this.screenUpdate();
         this.setPositions();
         if (this.needsUpdate()) {
           this.update();
         }
-      }
+      // }
 
     }
   };
@@ -218,16 +220,16 @@
   window.addEventListener('resize', stickyNav.throttle(stickyNav.run, 150, stickyNav));
 
   // documentation: https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver
-  var observer = new MutationObserver(function (mutations) {
-    stickyNav.run('mutate');
-  });
+  // var observer = new MutationObserver(function (mutations) {
+  //   stickyNav.run('mutate');
+  // });
 
   // set up your configuration
   // this will watch to see if you insert or remove any children
-  var config = { subtree: true, childList: true };
+  // var config = { subtree: true, childList: true };
 
   //start observing
-  observer.observe(stickyNav.elems.sticky, config);
+  // observer.observe(stickyNav.elems.sticky, config);
 
   // other potential elem listener
   // http://www.backalleycoder.com/2013/03/18/cross-browser-event-based-element-resize-detection/

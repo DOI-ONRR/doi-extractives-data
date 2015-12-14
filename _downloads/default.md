@@ -42,9 +42,9 @@ permalink: /downloads/
       </li>
 
       <li class="downloads-download_links">
-        <a id="tax" class="link-no_under"><h3>Corporate income tax</h3></a>
+        <a href="https://www.irs.gov/uac/Tax-Stats-2" id="tax" class="link-no_under"><h3>Corporate income tax</h3></a>
         <p>The IRS Statistics of Income program publishes data on the <a href="https://www.irs.gov/uac/Tax-Stats-2">Tax Statistics</a> website. Information on corporate income tax liability is located under <a href="https://www.irs.gov/uac/SOI-Tax-Stats-Corporation-Tax-Statistics">Corporation Tax Statistics</a>. Tax data for <a href="https://www.irs.gov/uac/SOI-Tax-Stats-S-Corporation-Statistics">S-corporations</a> is aggregated separately.</p>
-        <a href="https://www.irs.gov/uac/Tax-Stats-2" class="button-tertiary">
+        <a href="https://www.irs.gov/uac/Tax-Stats-2">
           Go to IRS &#8594;
         </a>
       </li>

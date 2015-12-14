@@ -21,6 +21,9 @@ permalink: /downloads/federal-production/
         <li><a href="{{site.baseurl}}/downloads/production_federal_lands_waters_CY2013_oil_gas_solids-2015-11-25.xlsx"><icon class="icon-cloud icon-padded"></icon>
         Full dataset (xlsx, 517 KB)
        </a></li>
+       <li><a href="#"><icon class="icon-cloud icon-padded"></icon>
+       Full dataset (tsv)
+      </a></li>
      </ul>
    </p>
 

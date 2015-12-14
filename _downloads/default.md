@@ -41,7 +41,7 @@ permalink: /downloads/
         </a>
       </li>
 
-      <li>
+      <li class="downloads-download_links">
         <a id="tax" class="link-no_under"><h3>Corporate income tax</h3></a>
         <p>The IRS Statistics of Income program publishes data on the <a href="https://www.irs.gov/uac/Tax-Stats-2">Tax Statistics</a> website. Information on corporate income tax liability is located under <a href="https://www.irs.gov/uac/SOI-Tax-Stats-Corporation-Tax-Statistics">Corporation Tax Statistics</a>. Tax data for <a href="https://www.irs.gov/uac/SOI-Tax-Stats-S-Corporation-Statistics">S-corporations</a> is aggregated separately.</p>
         <a href="https://www.irs.gov/uac/Tax-Stats-2" class="button-tertiary">
@@ -49,8 +49,8 @@ permalink: /downloads/
         </a>
       </li>
 
-      <li>
-        <a id="disbursements" class="link-no_under"><h3>Disbursements</h3></a>
+      <li class="downloads-download_links">
+        <a href="{{site.baseurl}}/downloads/disbursements/" id="disbursements" class="link-no_under"><h3>Disbursements</h3></a>
         <p>The amount of money earned from extraction of natural resources on federal lands that is disbursed to various legislated funds. Our fund overview dataset is from the <a href="http://www.onrr.gov/">Office of Natural Resources Revenue</a>, which is part of the Department of the Interior. In addition, we have more detailed datasets on two of the funds: <a href="https://www.doi.gov/lwcf">Land and Water Conservation Fund</a> (LWCF) and <a href="http://www.nps.gov/subjects/historicpreservation/NHPA-50.htm">National Historic Preservation Act</a> (NHPA).</p>
         <a href="{{site.baseurl}}/downloads/disbursements/">
           <i class="fa fa-file-text-o u-padding-right"></i>Data and documentation
@@ -61,7 +61,7 @@ permalink: /downloads/
 
     <h2 class="h3 downloads-section_heading">Production</h2>
     <ul class="list-sections">
-    	<li>
+    	<li class="downloads-download_links">
         <a id="production-all" class="link-no_under"><h3>All lands and waters</h3></a>
         <p>This data is from the <a href="http://www.eia.gov/">Energy Information Agency</a>. The specific data we used for the interactions is a subset of the huge amount of data available on their website. <em>Tip: to find data on the EIA site, click 'Sources & Uses' in the navigation near the top of the site.</em></p>
         <a href="http://www.eia.gov/" class="button-tertiary">
@@ -69,14 +69,11 @@ permalink: /downloads/
         </a>
       </li>
 
-      <li>
-        <a id="production-fed" class="link-no_under"><h3>Federal lands and waters</h3></a>
-        <p>Commodity volumes of natural resources extracted from federal land and waters. This dataset is from the <a href="http://www.onrr.gov/">Office of Natural Resources Revenue</a> (ONRR), which is part of the Department of the Interior. This is the first year ONRR has produced this dataset.</p>
-        <a href="{{site.baseurl}}/downloads/production_federal_lands_waters_CY2013_oil_gas_solids-2015-11-25.xlsx" class="button-tertiary">
-          <icon class="icon-cloud icon-padded"></icon>Download full dataset (xlsx, 517 KB)
-        </a>
-        <a href="{{site.baseurl}}/downloads/federal-production/" class="button-tertiary">
-          <i class="fa fa-file-text-o u-padding-right"></i>Documentation
+      <li class="downloads-download_links">
+        <a href="{{site.baseurl}}/downloads/federal-production/" id="production-fed" class="link-no_under"><h3>Federal lands and waters</h3></a>
+        <p>Commodity volumes of natural resources extracted from federal land and waters. This dataset is from the <a href="http://www.onrr.gov/">Office of Natural Resources Revenue</a> (ONRR), which is part of the Department of the Interior. It has data from 2005 to 2014 by state and county for 55 individual products.</p>
+        <a href="{{site.baseurl}}/downloads/federal-production/">
+          <i class="fa fa-file-text-o u-padding-right"></i>Data and documentation
         </a>
       </li>
 
@@ -84,7 +81,7 @@ permalink: /downloads/
 
     <h2 class="h3 downloads-section_heading">Economic impact</h2>
     <ul class="list-sections">
-    	<li>
+    	<li class="downloads-download_links">
         <a id="gdp" class="link-no_under"><h3>Gross Domestic Product</h3></a>
         <p>This data is from the <a href="http://www.bea.gov/">Bureau of Economic Analysis</a>. The data we used for the interactions is a subset of the data on their website. We access this data live via an Application Programming Interface (API).</p>
         <a href="http://www.bea.gov/" class="button-tertiary">
@@ -95,7 +92,7 @@ permalink: /downloads/
         </a>
       </li>
 
-      <li>
+      <li class="downloads-download_links">
         <a id="exports" class="link-no_under"><h3>Exports</h3></a>
         <p>This data is from the <a href="https://www.census.gov/foreign-trade/statistics/state/data/index.html">U.S. Census Bureau</a>. It arrives in Excel format, and lists the top 25 exports for each state from 2011-2014 by <a href="http://unstats.un.org/unsd/tradekb/Knowledgebase/Harmonized-Commodity-Description-and-Coding-Systems-HS">HS6 code</a>.</p>
         <a href="https://www.census.gov/foreign-trade/statistics/state/data/index.html" class="button-tertiary">
@@ -103,7 +100,7 @@ permalink: /downloads/
         </a>
       </li>
 
-      <li>
+      <li class="downloads-download_links">
         <a id="jobs" class="link-no_under"><h3>Jobs</h3></a>
         <p>We use two types of jobs data on this site. One is <em>Wage and Salary</em> data, which describes the number of people (full-time and part-time) employed in natural resource extraction that receive wages or salaries from companies. This data is from the <a href="http://www.bls.gov/">Bureau of Labor Statistics</a>, specifically the Quarterly Census of Employment and Wages. The best way to get this data is from <a href="http://www.bls.gov/cew/datatoc.htm">this page</a> and to download CSVs single files annual averages (you will need to load titles).</p>
         <a href="http://www.bls.gov/cew/datatoc.htm" class="button-tertiary">

@@ -11,7 +11,7 @@ permalink: /downloads/
 
     <h1>Download Data & Documentation</h1>
 
-    <p class="case_studies_intro-para">We use many government datasets on this site to power our <a href="{{ site.baseurl }}/explore/">interactive visualizations</a>. Some of these were created through the USEITI process, and are available here for download. Others come from other government sources. For those, we provide links direct to the source here so you can find fresh data whenever you need it. You can also read the USEITI web team’s <a href="https://github.com/18F/doi-extractives-data/wiki/Data-Catalog#federal-revenue">data notes</a>.</p>
+    <p class="case_studies_intro-para">We use many government datasets on this site to power our <a href="{{ site.baseurl }}/explore/">interactive visualizations</a>. Some of these were created through the USEITI process, and are available here for download. Others come from other government sources. For those, we provide links direct to the source here so you can find fresh data whenever you need it.</p>
 
     <h2 class="h3 downloads-section_heading">Revenue</h2>
 
@@ -27,20 +27,17 @@ permalink: /downloads/
 
       <li class="downloads-download_links">
         <a href="{{site.baseurl}}/downloads/federal-revenue-by-company/" id="revenue-fed-company" class="link-no_under"><h3>Federal revenue by company</h3></a>
-        <p>Federal revenue from natural resources extracted from federal land and waters by company. This dataset is from the <a href="http://www.onrr.gov/">Office of Natural Resources Revenue</a>, which is part of the Department of the Interior.</p>
+        <p>Federal revenue from natural resources extracted from federal land and waters by company. This dataset is from the <a href="http://www.onrr.gov/">Office of Natural Resources Revenue</a>, which is part of the Department of the Interior. It is available for calendar year 2013.</p>
         <a href="{{site.baseurl}}/downloads/federal-revenue-by-company/">
           <i class="fa fa-file-text-o u-padding-right"></i>Data and documentation
         </a>
       </li>
 
-      <li>
-        <a id="reconciliation" class="link-no_under"><h3> Reconciliation</h3></a>
-        <p>Countries implementing the EITI Standard publish reports that disclose the revenues and other information from extraction of the country’s natural resources. Companies report payments to the government (e.g., rents, taxes, royalties) and the government reports what it received. These figures are compiled and reconciled by an independent administrator and published. The 2015 USEITI reconciliation is below.</p>
-        <a href="{{site.baseurl}}/downloads/reconciliation_2015-11-20.xlsx" class="button-tertiary">
-          <icon class="icon-cloud icon-padded"></icon>Download full dataset, docs included (xlsx, 39 KB)
-        </a>
-        <a href="{{site.baseurl}}/downloads/reconciliation/" class="button-tertiary">
-          <icon class="fa fa-file-text-o u-padding-right"></icon>Documentation
+      <li class="downloads-download_links">
+        <a href="{{site.baseurl}}/downloads/reconciliation/" id="reconciliation" class="link-no_under"><h3> Reconciliation</h3></a>
+        <p>Countries implementing the EITI Standard publish reports that disclose the revenues and other information from extraction of the country’s natural resources. Companies report payments to the government (e.g., rents, taxes, royalties) and the government reports what it received. These figures are compiled and reconciled by an independent administrator and published. The 2015 USEITI reconciliation is at the link below.</p>
+        <a href="{{site.baseurl}}/downloads/reconciliation/">
+          <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
         </a>
       </li>
 

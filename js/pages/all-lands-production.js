@@ -473,6 +473,7 @@
       value: 'Volume',
       featureId: 'id'
     };
+
     if (!regionId) {
       if (state.has('product') && state.get('product').match(/Oil/)) {
         fields.featureId = function(d) {
@@ -487,7 +488,7 @@
     switch (regionId.length) {
       case 2:
         if (regionId !== 'US') {
-          if (state.get('product') === 'Coal (short tons)'){
+          if (state.get('product').match(/Coal/)){
             // for coal county data
             if (regionId !== 'US') {
               fields.region = 'County';

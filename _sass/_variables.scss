@@ -40,11 +40,14 @@ $z-negative: -1;
 // v3
 $white: #ffffff;
 $black: #040404;
+$green: #96bc7f;
 $blue: #157bac;
+$light-green: #d2e2cb;
 $blue-alt: darken($blue, 5%); //for constrast, darker
 $light-blue: #e6f9ff;
 $pale-blue: #f2fcff;
 $mid-blue: #c6e9ff;
+$mid-blue-opaque: rgba(198,233,255, 0.85);
 $dark-blue: #4b9bbf;
 $light-gray: #f7f7f7;
 $light-gray-alt: #fafafa; //for constrast, lighter

@@ -197,11 +197,30 @@ async.parallel({
             var volumes = _.pluck(_.where(data[commodity], {'Year': year, 'Mine State': state}), product);
             volumes = _.map(volumes, trimCommas);
 
+            // volumes = _.reduce(volumes, function(total, n) {
+            //   return total + n;
+            // });
+
             var matches = {
               'county': _.pluck(_.where(data[commodity], {'Year': year, 'Mine State': state}), 'Mine County'),
               'volume': volumes
             }
-            return _.zipObject(matches.county, matches.volume);
+
+
+
+            var zippedObj = _.zip(matches.county, matches.volume);
+
+            zippedObj = _.reduce(zippedObj, function(total, n, i) {
+              var total = total || {};
+              if (typeof(total[n[0]]) === undefined || typeof(total[n[0]]) === 'undefined') {
+                  total[n[0]] = n[1];
+              } else {
+                total[n[0]] += n[1];
+              }
+              return total;
+            }, {});
+
+            return zippedObj;
           }
 
 
@@ -221,6 +240,12 @@ async.parallel({
             }
           }
 
+          function formatCounty(county) {
+            return (county === 'Mclean')
+              ? 'McLean'
+              : county;
+          }
+          // console.warn(state, year, '==>', productionByState)
           // this conditional might need to be revisited
           if (productionByState){
             Object.keys(productionByState).forEach(function(county) {
@@ -230,7 +255,7 @@ async.parallel({
               if (volume) {
                 var newResults = {};
                 newResults.State = state;
-                newResults.County = county;
+                newResults.County = formatCounty(county);
                 // console.warn(state)
                 newResults.County += !countyKey[state]
                   ? ' County'

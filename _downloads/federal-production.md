@@ -18,11 +18,12 @@ permalink: /downloads/federal-production/
 
     <p class="downloads-download_links-intro">Download calendar year data:
       <ul class="downloads-download_links">
-        <li><a href="{{site.baseurl}}/downloads/production_federal_lands_waters_CY2013_oil_gas_solids-2015-11-25.xlsx"><icon class="icon-cloud icon-padded"></icon>
-        Full dataset (xlsx, 517 KB)
-       </a></li>
-     </ul>
-   </p>
+        <li><a href="{{site.baseurl}}/downloads/production_federal_lands_waters_CY2013_oil_gas_solids-2015-11-25.xlsx"><icon class="icon-cloud icon-padded"></icon>Full dataset (xlsx, 517 KB)</a></li>
+        <li><a href="#"><icon class="icon-cloud icon-padded"></icon>Full dataset (tsv)</a></li>
+      </ul>
+    </p>
+
+    <p class="u-margin-top">We also have <a href="https://github.com/18F/doi-extractives-data/wiki/Data-Catalog#federal-production">notes on this data</a> from the web development team as they built the interactions on this site.</p>
 
     <h2 class="h3">Scope</h2>
     <p>This dataset includes natural resource production for U.S. federal lands and offshore areas. It does not include Indian lands, privately-owned lands, or U.S. state lands. The dataset currently include data tracked and managed by the Department of the Interior’s Office of Natural Resources Revenue (ONRR). The production data for Oil and Gas is collected on Form ONRR-4054 (Oil and Gas Operations Report). Coal and hardrock production is collected on Form ONRR-4430 (Solid Minerals Production and Royalty Report).</p>
@@ -31,7 +32,7 @@ permalink: /downloads/federal-production/
 
     <p>This dataset is updated six months after the end of the year. Fiscal year 2015 data will be published in March 2016 and calendar year 2015 data will be published in June 2016. </p>
 
-    <h2 class="h3">Why was some solids data withheld?</strong></h2>
+    <h2 class="h3">Why was some solids data withheld?</h2>
 
     <p>ONRR withheld some solids production information out of an abundance of caution to ensure that there were no violations of the Trade Secrets Act. </p>
 
@@ -39,6 +40,12 @@ permalink: /downloads/federal-production/
         <li>"W" is displayed in the Production Volume column for those products that reveal proprietary data at the county level </li>
         <li>All "W" volumes are accounted for in separate line totals where state and county have been "Withheld" (columns C, D and E)</li>
     </ul>
+
+    <h2 class="h3">A note about 'Mixed Exploratory' versus 'Federal' categories of production.</h2>
+
+    <p>Coming soon!</p>
+
+    <!-- <p>For the purposes of the visualizations on our site, we've aggregated production on two types of jurisdictions: 'mixed exploratory' and 'federal.' Federal production is federal production; this is straightforward. However, 'mixed exploratory' ... [need explanation, the note I have is: One item I noticed from the Data Downloads page is that the "Download documentation" file, for the Production from Federal lands and waters "Download full dataset" file, should be revised to include an explanation of the difference between "Federal" and "Mixed Exploratory" in the Category column as some of the Mixed Exploratory volumes are very large, especially for gas.  Also when the Data Portal says “Gas production on federal lands in the entire U.S.” and then shows state & county production volumes that include “Mixed Exploratory” volumes, that statement is technically incorrect as “Mixed Exploratory” production may not be taking place on Federal lands though down the road we will get a unitization or communitization agreement allocation.  Bottom-line is that the Feds rarely get 100% of the “Mixed Exploratory” volumes once the exploratory becomes a regular agreement as adjudicated by BLM.]</p> -->
 
     <h2>Data dictionary</h2>
 

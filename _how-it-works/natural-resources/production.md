@@ -81,7 +81,7 @@ nav_items:
 
 <p>Coal forms in the ground in coal seams or beds. Miners extract coal through surface and subsurface mining. In surface mining, the coal is close to the surface. Miners remove the “overburden,” or the soil and rock covering the coal, before mining it. In subsurface mining, the coal is farther down in the earth. Through passages that go into the earth, miners remove the coal from <a href="http://teeic.indianaffairs.gov/er/coal/restech/tech/index.htm">underground rooms or long coal seams</a>. In 2013, the U.S. was the world’s second largest coal producer after China.</p>
 
-<p>Coal is concentrated in three regions: the Appalachian Region, the Interior Region, and the Western Region. In recent years, the Western Region—most of which is the Powder River Basin—produced <a href="http://www.eia.gov/Energyexplained/index.cfm?page=coal_where">more than half of U.S. coal</a>. From 2012 to 2013, proved coal reserves <a href="http://www.eia.gov/coal/annual/pdf/table14.pdf">increased by 5.8%</a>.</p>
+<p>Coal is concentrated in three regions: the Appalachian Region, the Interior Region, and the Western Region. In recent years, the Western Region — most of which is the Powder River Basin — produced <a href="http://www.eia.gov/Energyexplained/index.cfm?page=coal_where">more than half of U.S. coal</a>. From 2012 to 2013, proved coal reserves <a href="http://www.eia.gov/coal/annual/pdf/table14.pdf">increased by 5.8%</a>.</p>
 
 <p>See <a href="http://www.eia.gov/Energyexplained/index.cfm?page=coal_where">where the U.S. gets its coal</a>, or learn about <a href="http://www.eia.gov/coal/reserves/">coal reserves and their locations</a>.</p>
 

@@ -94,28 +94,23 @@
 }
 
 .revenues_subpage-office_text {
-
   @include span-columns(10);
-
-  @include respond-to(medium-up) {
-    @include span-columns(9);
-  }
 
   padding-left: $base-padding;
   padding-right: $base-padding-lite;
 
   p {
-    font-size: 12px;
+    font-size: 16px;
     line-height: 1.4;
+  }
 
-    // a {
-    //   text-decoration: none;
-    //
-    //   &:hover,
-    //   &:focus {
-    //     text-decoration: underline;
-    //   }
-    // }
+  @include respond-to(medium-up) {
+    @include span-columns(9);
+
+    p {
+      font-size: 12px;
+      line-height: 1.4;
+    }
   }
 }
 

@@ -33,6 +33,18 @@
   li {
     margin-left: $base-padding-lite;
   }
+
+  p a {
+    @include heading(para-lg);
+    color: $blue;
+    font-weight: $weight-light;
+    text-decoration: underline;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
 }
 
 .downloads-docs {

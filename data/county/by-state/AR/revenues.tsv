@@ -4,126 +4,118 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2004	AR	Conway	05029	Oil & Gas		Bonus	2751
 2004	AR	Conway	05029	Oil & Gas		Rents	9933
 2004	AR	Crawford	05033	Oil & Gas		Bonus	12544
-2004	AR	Crawford	05033	Oil & Gas		Other Revenues	285.25
-2004	AR	Crawford	05033	Oil & Gas		Other Royalties	-4661.33
+2004	AR	Crawford	05033	Oil & Gas		Other Revenues	-4376.08
 2004	AR	Crawford	05033	Oil & Gas		Rents	5531.5
 2004	AR	Crawford	05033	Gas	Unprocessed (Wet) Gas	Royalties	104551.96
 2004	AR	Faulkner	05045	Oil & Gas		Rents	240
 2004	AR	Franklin	05047	Oil & Gas		Bonus	14457
-2004	AR	Franklin	05047	Oil & Gas		Other Revenues	4134.28
-2004	AR	Franklin	05047	Oil & Gas		Other Royalties	-3790.83
+2004	AR	Franklin	05047	Oil & Gas		Other Revenues	343.45
 2004	AR	Franklin	05047	Oil & Gas		Rents	14621.55
 2004	AR	Franklin	05047	Gas	Unprocessed (Wet) Gas	Royalties	178220.9
+2004	AR	Garland	05051	Hardrock		Other Revenues	480
+2004	AR	Garland	05051	Hardrock		Rents	-240
 2004	AR	Johnson	05071	Oil & Gas		Bonus	138487.21
-2004	AR	Johnson	05071	Oil & Gas		Other Revenues	92.53
-2004	AR	Johnson	05071	Oil & Gas		Other Royalties	1525
+2004	AR	Johnson	05071	Oil & Gas		Other Revenues	1617.53
 2004	AR	Johnson	05071	Oil & Gas		Rents	159663.77
 2004	AR	Johnson	05071	Gas	Processed (Residue) Gas	Royalties	292.98
 2004	AR	Johnson	05071	Gas	Unprocessed (Wet) Gas	Royalties	618869.04
 2004	AR	Logan	05083	Oil & Gas		Bonus	46800
-2004	AR	Logan	05083	Oil & Gas		Other Royalties	39473.04
+2004	AR	Logan	05083	Oil & Gas		Other Revenues	39473.04
 2004	AR	Logan	05083	Oil & Gas		Rents	107673.94
 2004	AR	Logan	05083	Gas	Unprocessed (Wet) Gas	Royalties	237944.76
 2004	AR	Montgomery	05097	Oil & Gas		Bonus	54851.28
+2004	AR	Montgomery	05097	Hardrock		Other Revenues	1641.5
+2004	AR	Montgomery	05097	Hardrock		Rents	-174.33
 2004	AR	Montgomery	05097	Oil & Gas		Rents	122409.14
+2004	AR	Montgomery	05097	Quartz		Rents	20
+2004	AR	Montgomery	05097	Quartz Crystal	Quartz Crystal	Royalties	235.5
 2004	AR	Ouachita	05103	Oil & Gas		Rents	10.5
 2004	AR	Polk	05113	Oil & Gas		Rents	2633.97
 2004	AR	Pope	05115	Oil & Gas		Bonus	65701.79
-2004	AR	Pope	05115	Oil & Gas		Other Royalties	400
+2004	AR	Pope	05115	Oil & Gas		Other Revenues	400
 2004	AR	Pope	05115	Oil & Gas		Rents	206597.73
 2004	AR	Pope	05115	Gas	Unprocessed (Wet) Gas	Royalties	9514.1
 2004	AR	Prairie	05117	Oil & Gas		Rents	280
 2004	AR	Scott	05127	Oil & Gas		Bonus	50023.72
 2004	AR	Scott	05127	Oil & Gas		Rents	430820.12
 2004	AR	Sebastian	05131	Oil & Gas		Bonus	21296
-2004	AR	Sebastian	05131	Oil & Gas		Other Revenues	465.27
-2004	AR	Sebastian	05131	Oil & Gas		Other Royalties	-27331.55
+2004	AR	Sebastian	05131	Oil & Gas		Other Revenues	-26866.28
 2004	AR	Sebastian	05131	Oil & Gas		Rents	38983.77
 2004	AR	Sebastian	05131	Gas	Coal Bed Methane	Royalties	4097.62
 2004	AR	Sebastian	05131	Gas	Unprocessed (Wet) Gas	Royalties	1989207.39
 2004	AR	Van Buren	05141	Oil & Gas		Rents	43089.45
 2004	AR	Washington	05143	Oil & Gas		Other Revenues	160
 2004	AR	Yell	05149	Oil & Gas		Bonus	211268
-2004	AR	Yell	05149	Oil & Gas		Other Royalties	88590.12
+2004	AR	Yell	05149	Oil & Gas		Other Revenues	88590.12
 2004	AR	Yell	05149	Oil & Gas		Rents	99199.06
 2004	AR	Yell	05149	Gas	Unprocessed (Wet) Gas	Royalties	737072.99
-2004	AR		05	Hardrock		Other Revenues	1440
-2004	AR		05	Hardrock		Other Revenues	681.5
-2004	AR		05	Hardrock		Rents	-414.33
-2004	AR		05	Quartz		Rents	20
-2004	AR		05	Quartz Crystal	Quartz Crystal	Royalties	235.5
 2005	AR	Columbia	05027	Gas	Processed (Residue) Gas	Royalties	5801.98
 2005	AR	Columbia	05027	Oil	Oil	Royalties	251.75
 2005	AR	Conway	05029	Oil & Gas		Rents	9933
 2005	AR	Conway	05029	Gas	Unprocessed (Wet) Gas	Royalties	28699.33
 2005	AR	Crawford	05033	Oil & Gas		Bonus	405902.18
-2005	AR	Crawford	05033	Oil & Gas		Other Revenues	501.06
-2005	AR	Crawford	05033	Oil & Gas		Other Royalties	500
+2005	AR	Crawford	05033	Oil & Gas		Other Revenues	1001.06
 2005	AR	Crawford	05033	Oil & Gas		Rents	24138.26
 2005	AR	Crawford	05033	Gas	Unprocessed (Wet) Gas	Royalties	134695.24
 2005	AR	Cross	05037	Oil & Gas		Bonus	59175
 2005	AR	Cross	05037	Oil & Gas		Rents	1183.5
 2005	AR	Faulkner	05045	Oil & Gas		Rents	240
 2005	AR	Franklin	05047	Oil & Gas		Bonus	3690213.82
-2005	AR	Franklin	05047	Oil & Gas		Other Revenues	7434.3
-2005	AR	Franklin	05047	Oil & Gas		Other Royalties	950
+2005	AR	Franklin	05047	Oil & Gas		Other Revenues	8384.3
 2005	AR	Franklin	05047	Oil & Gas		Rents	53264.68
 2005	AR	Franklin	05047	Gas	Unprocessed (Wet) Gas	Royalties	190344.37
+2005	AR	Garland	05051	Hardrock		Rents	240
 2005	AR	Johnson	05071	Oil & Gas		Bonus	6059565
 2005	AR	Johnson	05071	Oil & Gas		Rents	156435.72
 2005	AR	Johnson	05071	Gas	Processed (Residue) Gas	Royalties	368.37
 2005	AR	Johnson	05071	Gas	Unprocessed (Wet) Gas	Royalties	746763.87
 2005	AR	Logan	05083	Oil & Gas		Bonus	17334
-2005	AR	Logan	05083	Oil & Gas		Other Revenues	80
-2005	AR	Logan	05083	Oil & Gas		Other Royalties	45143.48
+2005	AR	Logan	05083	Oil & Gas		Other Revenues	45223.48
 2005	AR	Logan	05083	Oil & Gas		Rents	96084.69
 2005	AR	Logan	05083	Gas	Unprocessed (Wet) Gas	Royalties	889549.41
 2005	AR	Madison	05087	Oil & Gas		Bonus	800
 2005	AR	Madison	05087	Oil & Gas		Rents	600
 2005	AR	Montgomery	05097	Oil & Gas		Bonus	6075
+2005	AR	Montgomery	05097	Hardrock		Other Revenues	866.4
+2005	AR	Montgomery	05097	Hardrock		Rents	-0.25
 2005	AR	Montgomery	05097	Oil & Gas		Rents	124459.64
+2005	AR	Montgomery	05097	Quartz Crystal	Quartz Crystal	Royalties	345.85
 2005	AR	Ouachita	05103	Oil & Gas		Rents	10.5
 2005	AR	Polk	05113	Oil & Gas		Bonus	400
 2005	AR	Polk	05113	Oil & Gas		Rents	66746.97
 2005	AR	Pope	05115	Oil & Gas		Bonus	284400
-2005	AR	Pope	05115	Oil & Gas		Other Royalties	29
+2005	AR	Pope	05115	Oil & Gas		Other Revenues	29
 2005	AR	Pope	05115	Oil & Gas		Rents	158269.39
 2005	AR	Pope	05115	Gas	Unprocessed (Wet) Gas	Royalties	11828.45
 2005	AR	Prairie	05117	Oil & Gas		Rents	280
 2005	AR	Scott	05127	Oil & Gas		Bonus	1668172
 2005	AR	Scott	05127	Oil & Gas		Rents	266125.12
-2005	AR	Sebastian	05131	Oil & Gas		Other Revenues	-113.47
-2005	AR	Sebastian	05131	Oil & Gas		Other Royalties	8630.5
+2005	AR	Sebastian	05131	Oil & Gas		Other Revenues	8517.03
 2005	AR	Sebastian	05131	Oil & Gas		Rents	37260.77
 2005	AR	Sebastian	05131	Gas	Coal Bed Methane	Royalties	4594.4
 2005	AR	Sebastian	05131	Gas	Unprocessed (Wet) Gas	Royalties	3627838.98
 2005	AR	Van Buren	05141	Oil & Gas		Rents	43089.45
 2005	AR	Washington	05143	Oil & Gas		Other Revenues	160
 2005	AR	Yell	05149	Oil & Gas		Bonus	23424
-2005	AR	Yell	05149	Oil & Gas		Other Revenues	-137.3
-2005	AR	Yell	05149	Oil & Gas		Other Royalties	51226.3
+2005	AR	Yell	05149	Oil & Gas		Other Revenues	51089
 2005	AR	Yell	05149	Oil & Gas		Rents	129301.31
 2005	AR	Yell	05149	Gas	Unprocessed (Wet) Gas	Royalties	1956420.95
-2005	AR		05	Hardrock		Other Revenues	480
-2005	AR		05	Hardrock		Other Revenues	386.4
-2005	AR		05	Hardrock		Rents	239.75
-2005	AR		05	Quartz Crystal	Quartz Crystal	Royalties	345.85
 2006	AR	Columbia	05027	Gas	Processed (Residue) Gas	Royalties	4569.36
 2006	AR	Columbia	05027	Oil	Oil	Royalties	243.75
 2006	AR	Conway	05029	Oil & Gas		Rents	7027.5
 2006	AR	Conway	05029	Gas	Unprocessed (Wet) Gas	Royalties	17249.24
 2006	AR	Crawford	05033	Oil & Gas		Bonus	14212
-2006	AR	Crawford	05033	Oil & Gas		Other Revenues	1637.37
-2006	AR	Crawford	05033	Oil & Gas		Other Royalties	2300
+2006	AR	Crawford	05033	Oil & Gas		Other Revenues	3937.37
 2006	AR	Crawford	05033	Oil & Gas		Rents	64761.76
 2006	AR	Crawford	05033	Gas	Unprocessed (Wet) Gas	Royalties	124562.72
 2006	AR	Cross	05037	Oil & Gas		Rents	1183.5
 2006	AR	Faulkner	05045	Oil & Gas		Rents	1200
 2006	AR	Franklin	05047	Oil & Gas		Bonus	163186
-2006	AR	Franklin	05047	Oil & Gas		Other Revenues	6439.65
-2006	AR	Franklin	05047	Oil & Gas		Other Royalties	2000
+2006	AR	Franklin	05047	Oil & Gas		Other Revenues	8439.65
 2006	AR	Franklin	05047	Oil & Gas		Rents	147287.68
 2006	AR	Franklin	05047	Gas	Unprocessed (Wet) Gas	Royalties	162113.81
+2006	AR	Garland	05051	Hardrock		Other Revenues	480
+2006	AR	Garland	05051	Hardrock		Rents	-80
 2006	AR	Johnson	05071	Oil & Gas		Bonus	145412.06
 2006	AR	Johnson	05071	Oil & Gas		Rents	153470.86
 2006	AR	Johnson	05071	Gas	Unprocessed (Wet) Gas	Royalties	599942.85
@@ -132,14 +124,17 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2006	AR	Lincoln	05079	Oil & Gas		Bonus	19425
 2006	AR	Lincoln	05079	Oil & Gas		Rents	1165.5
 2006	AR	Logan	05083	Oil & Gas		Bonus	571518
-2006	AR	Logan	05083	Oil & Gas		Other Revenues	5270.67
-2006	AR	Logan	05083	Oil & Gas		Other Royalties	-65742.23
+2006	AR	Logan	05083	Oil & Gas		Other Revenues	-60471.56
 2006	AR	Logan	05083	Oil & Gas		Rents	108440.19
 2006	AR	Logan	05083	Gas	Unprocessed (Wet) Gas	Royalties	927094.14
 2006	AR	Madison	05087	Oil & Gas		Bonus	68216.94
 2006	AR	Madison	05087	Oil & Gas		Rents	9497.86
 2006	AR	Montgomery	05097	Oil & Gas		Bonus	1040
+2006	AR	Montgomery	05097	Hardrock		Other Revenues	811
+2006	AR	Montgomery	05097	Hardrock		Rents	49
 2006	AR	Montgomery	05097	Oil & Gas		Rents	132529.64
+2006	AR	Montgomery	05097	Quartz		Rents	40
+2006	AR	Montgomery	05097	Quartz Crystal	Quartz Crystal	Royalties	267
 2006	AR	Ouachita	05103	Oil & Gas		Rents	10.5
 2006	AR	Perry	05105	Oil & Gas		Bonus	9140
 2006	AR	Perry	05105	Oil & Gas		Rents	47254.43
@@ -152,75 +147,68 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2006	AR	Prairie	05117	Oil & Gas		Rents	280
 2006	AR	Scott	05127	Oil & Gas		Bonus	3611390
 2006	AR	Scott	05127	Oil & Gas		Rents	353625.13
-2006	AR	Sebastian	05131	Oil & Gas		Other Revenues	606.45
-2006	AR	Sebastian	05131	Oil & Gas		Other Royalties	57832.45
+2006	AR	Sebastian	05131	Oil & Gas		Other Revenues	58438.9
 2006	AR	Sebastian	05131	Oil & Gas		Rents	35980.77
 2006	AR	Sebastian	05131	Gas	Coal Bed Methane	Royalties	1600.15
 2006	AR	Sebastian	05131	Gas	Unprocessed (Wet) Gas	Royalties	4162351.97
 2006	AR	Van Buren	05141	Oil & Gas		Rents	42981.45
 2006	AR	Washington	05143	Oil & Gas		Other Revenues	160
 2006	AR	Yell	05149	Oil & Gas		Bonus	642125.99
-2006	AR	Yell	05149	Oil & Gas		Other Royalties	-38565.39
+2006	AR	Yell	05149	Oil & Gas		Other Revenues	-38565.39
 2006	AR	Yell	05149	Oil & Gas		Rents	143447.88
 2006	AR	Yell	05149	Gas	Unprocessed (Wet) Gas	Royalties	2262976.32
-2006	AR		05	Hardrock		Other Revenues	811
-2006	AR		05	Hardrock		Other Revenues	480
-2006	AR		05	Hardrock		Rents	-31
-2006	AR		05	Quartz		Rents	40
-2006	AR		05	Quartz Crystal	Quartz Crystal	Royalties	267
 2007	AR	Cleburne	05023	Oil & Gas		Bonus	240
 2007	AR	Cleburne	05023	Oil & Gas		Rents	180
-2007	AR	Columbia	05027	Oil & Gas		Other Royalties	316
+2007	AR	Columbia	05027	Oil & Gas		Other Revenues	316
 2007	AR	Columbia	05027	Gas	Processed (Residue) Gas	Royalties	3324.4
 2007	AR	Columbia	05027	Oil	Oil	Royalties	193.36
 2007	AR	Conway	05029	Oil & Gas		Bonus	338
-2007	AR	Conway	05029	Oil & Gas		Other Royalties	690.65
+2007	AR	Conway	05029	Oil & Gas		Other Revenues	690.65
 2007	AR	Conway	05029	Oil & Gas		Rents	7281
 2007	AR	Conway	05029	Gas	Unprocessed (Wet) Gas	Royalties	10972.59
 2007	AR	Crawford	05033	Oil & Gas		Bonus	1615279
-2007	AR	Crawford	05033	Oil & Gas		Other Revenues	2380.36
-2007	AR	Crawford	05033	Oil & Gas		Other Royalties	-3019.1
+2007	AR	Crawford	05033	Oil & Gas		Other Revenues	-638.73
 2007	AR	Crawford	05033	Oil & Gas		Rents	83324.26
 2007	AR	Crawford	05033	Gas	Unprocessed (Wet) Gas	Royalties	83675.49
 2007	AR	Cross	05037	Oil & Gas		Rents	1183.5
 2007	AR	Faulkner	05045	Oil & Gas		Bonus	240
 2007	AR	Faulkner	05045	Oil & Gas		Rents	-60
 2007	AR	Franklin	05047	Oil & Gas		Bonus	600530
-2007	AR	Franklin	05047	Oil & Gas		Other Revenues	8997.01
-2007	AR	Franklin	05047	Oil & Gas		Other Royalties	-3358.05
+2007	AR	Franklin	05047	Oil & Gas		Other Revenues	5638.96
 2007	AR	Franklin	05047	Oil & Gas		Rents	94652.74
 2007	AR	Franklin	05047	Gas	Unprocessed (Wet) Gas	Royalties	154143.39
 2007	AR	Fulton	05049	Oil & Gas		Bonus	640
 2007	AR	Fulton	05049	Oil & Gas		Rents	120
+2007	AR	Garland	05051	Hardrock		Rents	-80
 2007	AR	Johnson	05071	Oil & Gas		Bonus	97385
-2007	AR	Johnson	05071	Oil & Gas		Other Revenues	58.95
-2007	AR	Johnson	05071	Oil & Gas		Other Royalties	-1157.21
+2007	AR	Johnson	05071	Oil & Gas		Other Revenues	-1098.26
 2007	AR	Johnson	05071	Oil & Gas		Rents	153343.23
 2007	AR	Johnson	05071	Gas	Unprocessed (Wet) Gas	Royalties	503538.09
 2007	AR	Lee	05077	Oil & Gas		Rents	16942
 2007	AR	Lincoln	05079	Oil & Gas		Rents	1165.5
 2007	AR	Logan	05083	Oil & Gas		Bonus	7725794
-2007	AR	Logan	05083	Oil & Gas		Other Revenues	6326.92
-2007	AR	Logan	05083	Oil & Gas		Other Royalties	505.94
+2007	AR	Logan	05083	Oil & Gas		Other Revenues	6832.86
 2007	AR	Logan	05083	Oil & Gas		Rents	313917.79
 2007	AR	Logan	05083	Gas	Unprocessed (Wet) Gas	Royalties	612416.08
 2007	AR	Madison	05087	Oil & Gas		Rents	5048.93
 2007	AR	Montgomery	05097	Oil & Gas		Bonus	560
+2007	AR	Montgomery	05097	Hardrock		Other Revenues	2087.4
+2007	AR	Montgomery	05097	Hardrock		Rents	-495
 2007	AR	Montgomery	05097	Oil & Gas		Rents	187711.14
+2007	AR	Montgomery	05097	Quartz Crystal	Quartz Crystal	Royalties	323.8
 2007	AR	Ouachita	05103	Oil & Gas		Rents	14
 2007	AR	Perry	05105	Oil & Gas		Bonus	2860
 2007	AR	Perry	05105	Oil & Gas		Rents	37833
 2007	AR	Phillips	05107	Oil & Gas		Rents	12866.5
 2007	AR	Polk	05113	Oil & Gas		Rents	41499.46
 2007	AR	Pope	05115	Oil & Gas		Bonus	12830
-2007	AR	Pope	05115	Oil & Gas		Other Royalties	-655.57
+2007	AR	Pope	05115	Oil & Gas		Other Revenues	-655.57
 2007	AR	Pope	05115	Oil & Gas		Rents	160116.89
 2007	AR	Pope	05115	Gas	Unprocessed (Wet) Gas	Royalties	3133.48
 2007	AR	Prairie	05117	Oil & Gas		Rents	560
 2007	AR	Scott	05127	Oil & Gas		Bonus	380481
 2007	AR	Scott	05127	Oil & Gas		Rents	1148618.13
-2007	AR	Sebastian	05131	Oil & Gas		Other Revenues	-4.19
-2007	AR	Sebastian	05131	Oil & Gas		Other Royalties	-8338.2
+2007	AR	Sebastian	05131	Oil & Gas		Other Revenues	-8342.39
 2007	AR	Sebastian	05131	Oil & Gas		Rents	37301.27
 2007	AR	Sebastian	05131	Gas	Coal Bed Methane	Royalties	825.78
 2007	AR	Sebastian	05131	Gas	Unprocessed (Wet) Gas	Royalties	3635162.86
@@ -229,19 +217,15 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2007	AR	White	05145	Oil & Gas		Bonus	160
 2007	AR	White	05145	Oil & Gas		Rents	120
 2007	AR	Yell	05149	Oil & Gas		Bonus	7464584
-2007	AR	Yell	05149	Oil & Gas		Other Royalties	-29399.96
+2007	AR	Yell	05149	Oil & Gas		Other Revenues	-29399.96
 2007	AR	Yell	05149	Oil & Gas		Rents	192187.31
 2007	AR	Yell	05149	Gas	Unprocessed (Wet) Gas	Royalties	1663611.83
-2007	AR		05	Hardrock		Other Revenues	1689
-2007	AR		05	Hardrock		Other Revenues	398.4
-2007	AR		05	Hardrock		Rents	-575
-2007	AR		05	Quartz Crystal	Quartz Crystal	Royalties	323.8
 2008	AR	Cleburne	05023	Oil & Gas		Bonus	711760
 2008	AR	Cleburne	05023	Oil & Gas		Rents	240
 2008	AR	Columbia	05027	Gas	Processed (Residue) Gas	Royalties	4838.19
 2008	AR	Columbia	05027	Oil	Oil	Royalties	151.05
 2008	AR	Conway	05029	Oil & Gas		Bonus	6672642
-2008	AR	Conway	05029	Oil & Gas		Other Royalties	-306.68
+2008	AR	Conway	05029	Oil & Gas		Other Revenues	-306.68
 2008	AR	Conway	05029	Oil & Gas		Rents	12241.5
 2008	AR	Conway	05029	Gas	Unprocessed (Wet) Gas	Royalties	11765.59
 2008	AR	Crawford	05033	Oil & Gas		Bonus	58530
@@ -252,25 +236,28 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2008	AR	Faulkner	05045	Oil & Gas		Bonus	575760
 2008	AR	Faulkner	05045	Oil & Gas		Rents	900
 2008	AR	Franklin	05047	Oil & Gas		Bonus	1264
-2008	AR	Franklin	05047	Oil & Gas		Other Revenues	7595.88
-2008	AR	Franklin	05047	Oil & Gas		Other Royalties	6225.31
+2008	AR	Franklin	05047	Oil & Gas		Other Revenues	13821.19
 2008	AR	Franklin	05047	Oil & Gas		Rents	101286.74
 2008	AR	Franklin	05047	Gas	Unprocessed (Wet) Gas	Royalties	177466.95
 2008	AR	Fulton	05049	Oil & Gas		Rents	120
+2008	AR	Garland	05051	Hardrock		Other Revenues	153.2
+2008	AR	Garland	05051	Wavellite	Wavellite	Royalties	166.8
 2008	AR	Johnson	05071	Oil & Gas		Bonus	97732
-2008	AR	Johnson	05071	Oil & Gas		Other Revenues	1264.62
-2008	AR	Johnson	05071	Oil & Gas		Other Royalties	200
+2008	AR	Johnson	05071	Oil & Gas		Other Revenues	1464.62
 2008	AR	Johnson	05071	Oil & Gas		Rents	129340.36
 2008	AR	Johnson	05071	Gas	Unprocessed (Wet) Gas	Royalties	600840.5
 2008	AR	Lee	05077	Oil & Gas		Rents	16942.5
 2008	AR	Lincoln	05079	Oil & Gas		Rents	1248
 2008	AR	Logan	05083	Oil & Gas		Bonus	346254
-2008	AR	Logan	05083	Oil & Gas		Other Revenues	8295.94
-2008	AR	Logan	05083	Oil & Gas		Other Royalties	120735.38
+2008	AR	Logan	05083	Oil & Gas		Other Revenues	129031.32
 2008	AR	Logan	05083	Oil & Gas		Rents	139634.6
 2008	AR	Logan	05083	Gas	Unprocessed (Wet) Gas	Royalties	2640449.5
 2008	AR	Madison	05087	Oil & Gas		Rents	5048.93
+2008	AR	Montgomery	05097	Hardrock		Other Revenues	847.26
+2008	AR	Montgomery	05097	Hardrock		Rents	-42.45
 2008	AR	Montgomery	05097	Oil & Gas		Rents	205419.64
+2008	AR	Montgomery	05097	Quartz Crystal	Quartz Crystal	Royalties	2467.07
+2008	AR	Montgomery	05097	Wavellite	Wavellite	Royalties	300
 2008	AR	Ouachita	05103	Oil & Gas		Bonus	22743.5
 2008	AR	Ouachita	05103	Oil & Gas		Rents	74
 2008	AR	Perry	05105	Oil & Gas		Rents	34563
@@ -278,37 +265,30 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2008	AR	Polk	05113	Oil & Gas		Bonus	158090
 2008	AR	Polk	05113	Oil & Gas		Rents	24726.46
 2008	AR	Pope	05115	Oil & Gas		Bonus	991270
-2008	AR	Pope	05115	Oil & Gas		Other Royalties	10
+2008	AR	Pope	05115	Oil & Gas		Other Revenues	10
 2008	AR	Pope	05115	Oil & Gas		Rents	213705.89
 2008	AR	Pope	05115	Gas	Unprocessed (Wet) Gas	Royalties	8571.08
 2008	AR	Prairie	05117	Oil & Gas		Rents	560
 2008	AR	Scott	05127	Oil & Gas		Bonus	431300
 2008	AR	Scott	05127	Oil & Gas		Rents	528272.63
-2008	AR	Sebastian	05131	Oil & Gas		Other Revenues	155.64
-2008	AR	Sebastian	05131	Oil & Gas		Other Royalties	1563.04
+2008	AR	Sebastian	05131	Oil & Gas		Other Revenues	1718.68
 2008	AR	Sebastian	05131	Oil & Gas		Rents	37342.27
 2008	AR	Sebastian	05131	Gas	Unprocessed (Wet) Gas	Royalties	4066233.27
 2008	AR	Van Buren	05141	Oil & Gas		Bonus	8775080
 2008	AR	Van Buren	05141	Oil & Gas		Rents	62881.1
 2008	AR	White	05145	Oil & Gas		Bonus	1626665
-2008	AR	White	05145	Oil & Gas		Other Royalties	596.57
+2008	AR	White	05145	Oil & Gas		Other Revenues	596.57
 2008	AR	White	05145	Oil & Gas		Rents	334.5
 2008	AR	White	05145	Gas	Unprocessed (Wet) Gas	Royalties	19644.89
 2008	AR	Yell	05149	Oil & Gas		Bonus	421662
-2008	AR	Yell	05149	Oil & Gas		Other Royalties	-39748.5
+2008	AR	Yell	05149	Oil & Gas		Other Revenues	-39748.5
 2008	AR	Yell	05149	Oil & Gas		Rents	151879
 2008	AR	Yell	05149	Gas	Unprocessed (Wet) Gas	Royalties	1249662.95
-2008	AR		05	Hardrock		Other Revenues	945.24
-2008	AR		05	Hardrock		Other Revenues	55.22
-2008	AR		05	Hardrock		Rents	-42.45
-2008	AR		05	Quartz Crystal	Quartz Crystal	Royalties	1428.3
-2008	AR		05	Quartz Crystal	Quartz Crystal	Royalties	1038.77
-2008	AR		05	Wavellite	Wavellite	Royalties	466.8
 2009	AR	Cleburne	05023	Oil & Gas		Rents	240
-2009	AR	Columbia	05027	Oil & Gas		Other Royalties	-400
+2009	AR	Columbia	05027	Oil & Gas		Other Revenues	-400
 2009	AR	Columbia	05027	Gas	Processed (Residue) Gas	Royalties	1782.13
 2009	AR	Columbia	05027	Oil	Oil	Royalties	40.39
-2009	AR	Conway	05029	Oil & Gas		Other Royalties	-84.67
+2009	AR	Conway	05029	Oil & Gas		Other Revenues	-84.67
 2009	AR	Conway	05029	Oil & Gas		Rents	9961
 2009	AR	Conway	05029	Gas	Unprocessed (Wet) Gas	Royalties	4602.28
 2009	AR	Crawford	05033	Oil & Gas		Bonus	20040
@@ -318,27 +298,30 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2009	AR	Cross	05037	Oil & Gas		Rents	1183.5
 2009	AR	Faulkner	05045	Oil & Gas		Rents	180
 2009	AR	Franklin	05047	Oil & Gas		Bonus	198860
-2009	AR	Franklin	05047	Oil & Gas		Other Revenues	7864.81
-2009	AR	Franklin	05047	Oil & Gas		Other Royalties	-1725.48
+2009	AR	Franklin	05047	Oil & Gas		Other Revenues	6139.33
 2009	AR	Franklin	05047	Oil & Gas		Rents	103677.65
 2009	AR	Franklin	05047	Gas	Unprocessed (Wet) Gas	Royalties	88955.79
 2009	AR	Franklin	05047	Oil	Condensate	Royalties	33.99
 2009	AR	Franklin	05047	Oil	Drip or Scrubber Condensate	Royalties	20.55
 2009	AR	Franklin	05047	Oil	Oil	Royalties	7.26
+2009	AR	Garland	05051	Hardrock		Other Revenues	-20.6
+2009	AR	Garland	05051	Hardrock		Rents	55.52
+2009	AR	Garland	05051	Wavellite	Wavellite	Royalties	777.36
 2009	AR	Johnson	05071	Oil & Gas		Bonus	-646.14
-2009	AR	Johnson	05071	Oil & Gas		Other Revenues	670
-2009	AR	Johnson	05071	Oil & Gas		Other Royalties	16826.74
+2009	AR	Johnson	05071	Oil & Gas		Other Revenues	17496.74
 2009	AR	Johnson	05071	Oil & Gas		Rents	196005.88
 2009	AR	Johnson	05071	Gas	Unprocessed (Wet) Gas	Royalties	226589.81
 2009	AR	Lafayette	05073	Oil & Gas		Rents	39
 2009	AR	Lincoln	05079	Oil & Gas		Rents	1083
 2009	AR	Logan	05083	Oil & Gas		Bonus	275105
-2009	AR	Logan	05083	Oil & Gas		Other Revenues	4478.44
-2009	AR	Logan	05083	Oil & Gas		Other Royalties	287971.67
+2009	AR	Logan	05083	Oil & Gas		Other Revenues	292450.11
 2009	AR	Logan	05083	Oil & Gas		Rents	84005.8
 2009	AR	Logan	05083	Gas	Unprocessed (Wet) Gas	Royalties	2433286.29
 2009	AR	Madison	05087	Oil & Gas		Rents	6448.93
+2009	AR	Montgomery	05097	Hardrock		Other Revenues	621.2
+2009	AR	Montgomery	05097	Hardrock		Rents	260
 2009	AR	Montgomery	05097	Oil & Gas		Rents	65860.52
+2009	AR	Montgomery	05097	Quartz Crystal	Quartz Crystal	Royalties	191.55
 2009	AR	Ouachita	05103	Oil & Gas		Rents	14
 2009	AR	Perry	05105	Oil & Gas		Rents	34584
 2009	AR	Phillips	05107	Oil & Gas		Rents	5589.5
@@ -349,8 +332,7 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2009	AR	Scott	05127	Oil & Gas		Bonus	544772
 2009	AR	Scott	05127	Oil & Gas		Rents	205572.03
 2009	AR	Scott	05127	Gas	Coal Bed Methane	Royalties	1870.53
-2009	AR	Sebastian	05131	Oil & Gas		Other Revenues	2533.87
-2009	AR	Sebastian	05131	Oil & Gas		Other Royalties	-16676.03
+2009	AR	Sebastian	05131	Oil & Gas		Other Revenues	-14142.16
 2009	AR	Sebastian	05131	Oil & Gas		Rents	14618
 2009	AR	Sebastian	05131	Gas	Coal Bed Methane	Royalties	97738.21
 2009	AR	Sebastian	05131	Gas	Unprocessed (Wet) Gas	Royalties	2121375.45
@@ -358,293 +340,261 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2009	AR	Van Buren	05141	Oil & Gas		Rents	61871.6
 2009	AR	Van Buren	05141	Gas	Unprocessed (Wet) Gas	Royalties	112406.81
 2009	AR	Washington	05143	Oil & Gas		Other Revenues	160
-2009	AR	White	05145	Oil & Gas		Other Royalties	-412.51
+2009	AR	White	05145	Oil & Gas		Other Revenues	-412.51
 2009	AR	White	05145	Oil & Gas		Rents	274.5
 2009	AR	White	05145	Gas	Unprocessed (Wet) Gas	Royalties	26285.56
 2009	AR	Yell	05149	Oil & Gas		Bonus	164
-2009	AR	Yell	05149	Oil & Gas		Other Revenues	4106
-2009	AR	Yell	05149	Oil & Gas		Other Royalties	-3829.04
+2009	AR	Yell	05149	Oil & Gas		Other Revenues	276.96
 2009	AR	Yell	05149	Oil & Gas		Rents	170334.5
 2009	AR	Yell	05149	Gas	Unprocessed (Wet) Gas	Royalties	368639.88
-2009	AR		05	Hardrock		Other Revenues	897.5
-2009	AR		05	Hardrock		Other Revenues	-296.9
-2009	AR		05	Hardrock		Rents	315.52
-2009	AR		05	Quartz Crystal	Quartz Crystal	Royalties	191.55
-2009	AR		05	Wavellite	Wavellite	Royalties	777.36
 2010	AR	Cleburne	05023	Oil & Gas		Bonus	120000
-2010	AR	Cleburne	05023	Oil & Gas		Other Royalties	64379.55
+2010	AR	Cleburne	05023	Oil & Gas		Other Revenues	64379.55
 2010	AR	Cleburne	05023	Oil & Gas		Rents	120
 2010	AR	Cleburne	05023	Gas	Unprocessed (Wet) Gas	Royalties	361466.7
 2010	AR	Columbia	05027	Gas	Processed (Residue) Gas	Royalties	1710.59
 2010	AR	Columbia	05027	Oil	Oil	Royalties	15.04
 2010	AR	Conway	05029	Oil & Gas		Bonus	48240
-2010	AR	Conway	05029	Oil & Gas		Other Revenues	607.33
-2010	AR	Conway	05029	Oil & Gas		Other Royalties	17446.37
+2010	AR	Conway	05029	Oil & Gas		Other Revenues	18053.7
 2010	AR	Conway	05029	Oil & Gas		Rents	9797.5
 2010	AR	Conway	05029	Gas	Unprocessed (Wet) Gas	Royalties	1841703.68
-2010	AR	Crawford	05033	Oil & Gas		Other Revenues	2400.9
-2010	AR	Crawford	05033	Oil & Gas		Other Royalties	-3899.82
+2010	AR	Crawford	05033	Oil & Gas		Other Revenues	-1498.93
 2010	AR	Crawford	05033	Oil & Gas		Rents	97130.76
 2010	AR	Crawford	05033	Gas	Unprocessed (Wet) Gas	Royalties	70284.68
 2010	AR	Cross	05037	Oil & Gas		Rents	1578
-2010	AR	Faulkner	05045	Oil & Gas		Other Royalties	2338.14
+2010	AR	Faulkner	05045	Oil & Gas		Other Revenues	2338.14
 2010	AR	Faulkner	05045	Oil & Gas		Rents	180
 2010	AR	Faulkner	05045	Gas	Unprocessed (Wet) Gas	Royalties	125534.35
 2010	AR	Franklin	05047	Oil & Gas		Bonus	-10400
-2010	AR	Franklin	05047	Oil & Gas		Other Revenues	11454.59
-2010	AR	Franklin	05047	Oil & Gas		Other Royalties	-1326.18
+2010	AR	Franklin	05047	Oil & Gas		Other Revenues	10128.41
 2010	AR	Franklin	05047	Oil & Gas		Rents	115848.24
 2010	AR	Franklin	05047	Gas	Unprocessed (Wet) Gas	Royalties	81449.15
 2010	AR	Franklin	05047	Oil	Condensate	Royalties	25.01
 2010	AR	Franklin	05047	Oil	Oil	Royalties	32.4
-2010	AR	Fulton	05049	Oil & Gas		Other Royalties	50
+2010	AR	Fulton	05049	Oil & Gas		Other Revenues	50
 2010	AR	Fulton	05049	Gas	Unprocessed (Wet) Gas	Royalties	900.84
+2010	AR	Garland	05051	Hardrock		Other Revenues	146.42
+2010	AR	Garland	05051	Hardrock		Rents	-55.52
+2010	AR	Garland	05051	Wavellite	Wavellite	Royalties	69.1
 2010	AR	Johnson	05071	Oil & Gas		Bonus	1506
-2010	AR	Johnson	05071	Oil & Gas		Other Revenues	1003.4
-2010	AR	Johnson	05071	Oil & Gas		Other Royalties	-3382.75
+2010	AR	Johnson	05071	Oil & Gas		Other Revenues	-2379.35
 2010	AR	Johnson	05071	Oil & Gas		Rents	189495.66
 2010	AR	Johnson	05071	Gas	Unprocessed (Wet) Gas	Royalties	254984.82
 2010	AR	Lafayette	05073	Oil & Gas		Rents	39
 2010	AR	Lincoln	05079	Oil & Gas		Rents	1165.5
 2010	AR	Logan	05083	Oil & Gas		Bonus	160
-2010	AR	Logan	05083	Oil & Gas		Other Revenues	14327.62
-2010	AR	Logan	05083	Oil & Gas		Other Royalties	-160625.93
+2010	AR	Logan	05083	Oil & Gas		Other Revenues	-146298.31
 2010	AR	Logan	05083	Oil & Gas		Rents	79594.5
 2010	AR	Logan	05083	Gas	Unprocessed (Wet) Gas	Royalties	4352805.15
 2010	AR	Madison	05087	Oil & Gas		Rents	5931.91
+2010	AR	Montgomery	05097	Hardrock		Other Revenues	1100.35
+2010	AR	Montgomery	05097	Hardrock		Rents	-237.55
 2010	AR	Montgomery	05097	Oil & Gas		Rents	62539.02
+2010	AR	Montgomery	05097	Quartz Crystal	Quartz Crystal	Royalties	50.25
 2010	AR	Ouachita	05103	Oil & Gas		Rents	14
 2010	AR	Perry	05105	Oil & Gas		Rents	44565
 2010	AR	Phillips	05107	Oil & Gas		Rents	-0.5
 2010	AR	Polk	05113	Oil & Gas		Bonus	35.92
 2010	AR	Polk	05113	Oil & Gas		Rents	61481.18
-2010	AR	Pope	05115	Oil & Gas		Other Royalties	-106.72
+2010	AR	Pope	05115	Oil & Gas		Other Revenues	-106.72
 2010	AR	Pope	05115	Oil & Gas		Rents	269452.83
 2010	AR	Pope	05115	Gas	Unprocessed (Wet) Gas	Royalties	4297.95
 2010	AR	Scott	05127	Oil & Gas		Bonus	78992.73
 2010	AR	Scott	05127	Oil & Gas		Rents	150040.8
 2010	AR	Scott	05127	Gas	Coal Bed Methane	Royalties	11454.79
-2010	AR	Sebastian	05131	Oil & Gas		Other Revenues	308.34
-2010	AR	Sebastian	05131	Oil & Gas		Other Royalties	-69614.76
+2010	AR	Sebastian	05131	Oil & Gas		Other Revenues	-69306.42
 2010	AR	Sebastian	05131	Oil & Gas		Rents	42136
 2010	AR	Sebastian	05131	Gas	Coal Bed Methane	Royalties	28398.03
 2010	AR	Sebastian	05131	Gas	Unprocessed (Wet) Gas	Royalties	1948971.54
 2010	AR	Van Buren	05141	Oil & Gas		Bonus	1173900
-2010	AR	Van Buren	05141	Oil & Gas		Other Revenues	240
-2010	AR	Van Buren	05141	Oil & Gas		Other Royalties	18898.51
+2010	AR	Van Buren	05141	Oil & Gas		Other Revenues	19138.51
 2010	AR	Van Buren	05141	Oil & Gas		Rents	61858.1
 2010	AR	Van Buren	05141	Gas	Unprocessed (Wet) Gas	Royalties	673384.49
 2010	AR	Washington	05143	Oil & Gas		Other Revenues	160
 2010	AR	White	05145	Oil & Gas		Bonus	120
-2010	AR	White	05145	Oil & Gas		Other Royalties	-83.8
+2010	AR	White	05145	Oil & Gas		Other Revenues	-83.8
 2010	AR	White	05145	Oil & Gas		Rents	364.5
 2010	AR	White	05145	Gas	Unprocessed (Wet) Gas	Royalties	13457.78
 2010	AR	Yell	05149	Oil & Gas		Bonus	410
-2010	AR	Yell	05149	Oil & Gas		Other Revenues	352.11
-2010	AR	Yell	05149	Oil & Gas		Other Royalties	-7652.56
+2010	AR	Yell	05149	Oil & Gas		Other Revenues	-7300.45
 2010	AR	Yell	05149	Oil & Gas		Rents	158884
 2010	AR	Yell	05149	Gas	Unprocessed (Wet) Gas	Royalties	386902.24
-2010	AR		05	Hardrock		Other Revenues	846.77
-2010	AR		05	Hardrock		Other Revenues	400
-2010	AR		05	Hardrock		Rents	-293.07
-2010	AR		05	Quartz Crystal	Quartz Crystal	Royalties	50.25
-2010	AR		05	Wavellite	Wavellite	Royalties	69.1
-2011	AR	Cleburne	05023	Oil & Gas		Other Royalties	-60096.54
+2011	AR	Cleburne	05023	Oil & Gas		Other Revenues	-60096.54
 2011	AR	Cleburne	05023	Oil & Gas		Rents	120
 2011	AR	Cleburne	05023	Gas	Unprocessed (Wet) Gas	Royalties	-41604.5
-2011	AR	Columbia	05027	Oil & Gas		Other Royalties	-16
+2011	AR	Columbia	05027	Oil & Gas		Other Revenues	-16
 2011	AR	Columbia	05027	Gas	Processed (Residue) Gas	Royalties	2148.73
 2011	AR	Columbia	05027	Oil	Oil	Royalties	59.43
 2011	AR	Conway	05029	Oil & Gas		Bonus	1796066
-2011	AR	Conway	05029	Oil & Gas		Other Revenues	1229.75
-2011	AR	Conway	05029	Oil & Gas		Other Royalties	7745.01
+2011	AR	Conway	05029	Oil & Gas		Other Revenues	8974.76
 2011	AR	Conway	05029	Oil & Gas		Rents	10370.5
 2011	AR	Conway	05029	Gas	Unprocessed (Wet) Gas	Royalties	589345.33
-2011	AR	Crawford	05033	Oil & Gas		Other Revenues	2400.9
-2011	AR	Crawford	05033	Oil & Gas		Other Royalties	-83.07
+2011	AR	Crawford	05033	Oil & Gas		Other Revenues	2317.83
 2011	AR	Crawford	05033	Oil & Gas		Rents	108903.47
 2011	AR	Crawford	05033	Gas	Unprocessed (Wet) Gas	Royalties	86638.25
 2011	AR	Faulkner	05045	Oil & Gas		Bonus	216
-2011	AR	Faulkner	05045	Oil & Gas		Other Royalties	672.56
+2011	AR	Faulkner	05045	Oil & Gas		Other Revenues	672.56
 2011	AR	Faulkner	05045	Gas	Unprocessed (Wet) Gas	Royalties	46.88
 2011	AR	Franklin	05047	Oil & Gas		Bonus	3280
-2011	AR	Franklin	05047	Oil & Gas		Other Revenues	8686.3
-2011	AR	Franklin	05047	Oil & Gas		Other Royalties	-759.53
+2011	AR	Franklin	05047	Oil & Gas		Other Revenues	7926.77
 2011	AR	Franklin	05047	Oil & Gas		Rents	115311.03
 2011	AR	Franklin	05047	Gas	Unprocessed (Wet) Gas	Royalties	82230.36
 2011	AR	Franklin	05047	Oil	Oil	Royalties	23.29
 2011	AR	Fulton	05049	Gas	Unprocessed (Wet) Gas	Royalties	212.93
+2011	AR	Garland	05051	Hardrock		Rents	80
 2011	AR	Johnson	05071	Oil & Gas		Bonus	300
-2011	AR	Johnson	05071	Oil & Gas		Other Revenues	3056.54
-2011	AR	Johnson	05071	Oil & Gas		Other Royalties	-11432.59
+2011	AR	Johnson	05071	Oil & Gas		Other Revenues	-8376.05
 2011	AR	Johnson	05071	Oil & Gas		Rents	179874.16
 2011	AR	Johnson	05071	Gas	Unprocessed (Wet) Gas	Royalties	198587.66
 2011	AR	Lafayette	05073	Oil & Gas		Rents	39
 2011	AR	Lincoln	05079	Oil & Gas		Rents	1554
 2011	AR	Logan	05083	Oil & Gas		Bonus	-3366
-2011	AR	Logan	05083	Oil & Gas		Other Revenues	457.27
-2011	AR	Logan	05083	Oil & Gas		Other Royalties	9081.32
+2011	AR	Logan	05083	Oil & Gas		Other Revenues	9538.59
 2011	AR	Logan	05083	Oil & Gas		Rents	54163.5
 2011	AR	Logan	05083	Gas	Unprocessed (Wet) Gas	Royalties	3225320.95
 2011	AR	Madison	05087	Oil & Gas		Rents	6131.91
+2011	AR	Montgomery	05097	Hardrock		Other Revenues	1126.65
+2011	AR	Montgomery	05097	Hardrock		Rents	-40
 2011	AR	Montgomery	05097	Oil & Gas		Rents	61197.02
+2011	AR	Montgomery	05097	Quartz Crystal	Quartz Crystal	Royalties	7.35
 2011	AR	Ouachita	05103	Oil & Gas		Rents	14
 2011	AR	Perry	05105	Oil & Gas		Rents	36285
 2011	AR	Polk	05113	Oil & Gas		Rents	22973.5
 2011	AR	Pope	05115	Oil & Gas		Bonus	4946
-2011	AR	Pope	05115	Oil & Gas		Other Royalties	-1613.94
+2011	AR	Pope	05115	Oil & Gas		Other Revenues	-1613.94
 2011	AR	Pope	05115	Oil & Gas		Rents	238386.05
 2011	AR	Pope	05115	Gas	Unprocessed (Wet) Gas	Royalties	3558.8
 2011	AR	Scott	05127	Oil & Gas		Bonus	36456
 2011	AR	Scott	05127	Oil & Gas		Other Revenues	2118.23
 2011	AR	Scott	05127	Oil & Gas		Rents	85713.98
 2011	AR	Scott	05127	Gas	Coal Bed Methane	Royalties	4569.34
-2011	AR	Sebastian	05131	Oil & Gas		Other Revenues	1211.19
-2011	AR	Sebastian	05131	Oil & Gas		Other Royalties	-2037.49
+2011	AR	Sebastian	05131	Oil & Gas		Other Revenues	-826.3
 2011	AR	Sebastian	05131	Oil & Gas		Rents	34982
 2011	AR	Sebastian	05131	Gas	Coal Bed Methane	Royalties	20567.24
 2011	AR	Sebastian	05131	Gas	Unprocessed (Wet) Gas	Royalties	1692308.41
 2011	AR	Van Buren	05141	Oil & Gas		Bonus	1245
-2011	AR	Van Buren	05141	Oil & Gas		Other Royalties	-5859.44
+2011	AR	Van Buren	05141	Oil & Gas		Other Revenues	-5859.44
 2011	AR	Van Buren	05141	Oil & Gas		Rents	59396.38
 2011	AR	Van Buren	05141	Gas	Unprocessed (Wet) Gas	Royalties	312140.52
-2011	AR	White	05145	Oil & Gas		Other Royalties	3886.52
+2011	AR	White	05145	Oil & Gas		Other Revenues	3886.52
 2011	AR	White	05145	Oil & Gas		Rents	369
 2011	AR	White	05145	Gas	Unprocessed (Wet) Gas	Royalties	65629.21
-2011	AR	Yell	05149	Oil & Gas		Other Revenues	918.79
-2011	AR	Yell	05149	Oil & Gas		Other Royalties	3728.12
+2011	AR	Yell	05149	Oil & Gas		Other Revenues	4646.91
 2011	AR	Yell	05149	Oil & Gas		Rents	84571
 2011	AR	Yell	05149	Gas	Unprocessed (Wet) Gas	Royalties	414765.95
 2011	AR	Yell	05149	Oil & Gas		Royalties	-2.84
-2011	AR		05	Hardrock		Other Revenues	1006.65
-2011	AR		05	Hardrock		Other Revenues	120
-2011	AR		05	Hardrock		Rents	40
-2011	AR		05	Quartz Crystal	Quartz Crystal	Royalties	7.35
-2012	AR	Cleburne	05023	Oil & Gas		Other Royalties	1550
+2012	AR	Cleburne	05023	Oil & Gas		Other Revenues	1550
 2012	AR	Cleburne	05023	Oil & Gas		Rents	120
 2012	AR	Cleburne	05023	Gas	Unprocessed (Wet) Gas	Royalties	-103995.19
-2012	AR	Columbia	05027	Oil & Gas		Other Royalties	-50
+2012	AR	Columbia	05027	Oil & Gas		Other Revenues	-50
 2012	AR	Columbia	05027	Gas	Processed (Residue) Gas	Royalties	1420.08
 2012	AR	Columbia	05027	Oil	Condensate	Royalties	24.07
 2012	AR	Conway	05029	Oil & Gas		Bonus	116
-2012	AR	Conway	05029	Oil & Gas		Other Revenues	2478.11
-2012	AR	Conway	05029	Oil & Gas		Other Royalties	30801.93
+2012	AR	Conway	05029	Oil & Gas		Other Revenues	33280.04
 2012	AR	Conway	05029	Oil & Gas		Rents	9667
 2012	AR	Conway	05029	Gas	Unprocessed (Wet) Gas	Royalties	436074.82
 2012	AR	Crawford	05033	Oil & Gas		Bonus	-600
-2012	AR	Crawford	05033	Oil & Gas		Other Royalties	-968.08
+2012	AR	Crawford	05033	Oil & Gas		Other Revenues	-968.08
 2012	AR	Crawford	05033	Oil & Gas		Rents	100324.97
 2012	AR	Crawford	05033	Gas	Unprocessed (Wet) Gas	Royalties	-13116.3
 2012	AR	Faulkner	05045	Oil & Gas		Rents	-180
 2012	AR	Faulkner	05045	Gas	Unprocessed (Wet) Gas	Royalties	8793.67
 2012	AR	Franklin	05047	Oil & Gas		Bonus	-42100
-2012	AR	Franklin	05047	Oil & Gas		Other Revenues	6456.97
-2012	AR	Franklin	05047	Oil & Gas		Other Royalties	-5948.07
+2012	AR	Franklin	05047	Oil & Gas		Other Revenues	508.9
 2012	AR	Franklin	05047	Oil & Gas		Rents	35822.03
 2012	AR	Franklin	05047	Gas	Unprocessed (Wet) Gas	Royalties	75207.66
 2012	AR	Franklin	05047	Oil	Condensate	Royalties	-59
 2012	AR	Franklin	05047	Oil	Drip or Scrubber Condensate	Royalties	-20.55
 2012	AR	Franklin	05047	Oil	Oil	Royalties	-62.95
 2012	AR	Fulton	05049	Gas	Unprocessed (Wet) Gas	Royalties	106.83
+2012	AR	Garland	05051	Hardrock		Rents	-80
 2012	AR	Johnson	05071	Oil & Gas		Bonus	-3600
-2012	AR	Johnson	05071	Oil & Gas		Other Revenues	1379.92
-2012	AR	Johnson	05071	Oil & Gas		Other Royalties	-356.4
+2012	AR	Johnson	05071	Oil & Gas		Other Revenues	1023.52
 2012	AR	Johnson	05071	Oil & Gas		Rents	124078.57
 2012	AR	Johnson	05071	Gas	Unprocessed (Wet) Gas	Royalties	132608.99
 2012	AR	Lafayette	05073	Oil & Gas		Rents	39
 2012	AR	Lincoln	05079	Oil & Gas		Bonus	-7000
 2012	AR	Lincoln	05079	Oil & Gas		Rents	-2660
-2012	AR	Logan	05083	Oil & Gas		Other Revenues	4058.67
-2012	AR	Logan	05083	Oil & Gas		Other Royalties	225.17
+2012	AR	Logan	05083	Oil & Gas		Other Revenues	4283.84
 2012	AR	Logan	05083	Oil & Gas		Rents	24385.5
 2012	AR	Logan	05083	Gas	Unprocessed (Wet) Gas	Royalties	1878278.39
+2012	AR	Montgomery	05097	Hardrock		Other Revenues	1002.7
+2012	AR	Montgomery	05097	Hardrock		Rents	-40
+2012	AR	Montgomery	05097	Quartz Crystal	Quartz Crystal	Royalties	11.3
 2012	AR	Perry	05105	Oil & Gas		Rents	20525.5
 2012	AR	Polk	05113	Oil & Gas		Rents	3390
 2012	AR	Pope	05115	Oil & Gas		Bonus	2912
-2012	AR	Pope	05115	Oil & Gas		Other Royalties	-149.09
+2012	AR	Pope	05115	Oil & Gas		Other Revenues	-149.09
 2012	AR	Pope	05115	Oil & Gas		Rents	282465.81
 2012	AR	Pope	05115	Gas	Unprocessed (Wet) Gas	Royalties	1819.94
 2012	AR	Scott	05127	Oil & Gas		Bonus	-2800
 2012	AR	Scott	05127	Oil & Gas		Other Revenues	3918.53
 2012	AR	Scott	05127	Oil & Gas		Rents	57076
 2012	AR	Scott	05127	Gas	Coal Bed Methane	Royalties	2529.37
-2012	AR	Sebastian	05131	Oil & Gas		Other Revenues	760.44
-2012	AR	Sebastian	05131	Oil & Gas		Other Royalties	-128030.79
+2012	AR	Sebastian	05131	Oil & Gas		Other Revenues	-127270.34
 2012	AR	Sebastian	05131	Oil & Gas		Rents	31546
 2012	AR	Sebastian	05131	Gas	Coal Bed Methane	Royalties	11809.72
 2012	AR	Sebastian	05131	Gas	Unprocessed (Wet) Gas	Royalties	973309.14
 2012	AR	Van Buren	05141	Oil & Gas		Bonus	160
-2012	AR	Van Buren	05141	Oil & Gas		Other Royalties	1610.34
+2012	AR	Van Buren	05141	Oil & Gas		Other Revenues	1610.34
 2012	AR	Van Buren	05141	Oil & Gas		Rents	62641.12
 2012	AR	Van Buren	05141	Gas	Unprocessed (Wet) Gas	Royalties	264077.46
-2012	AR	White	05145	Oil & Gas		Other Royalties	-2188.38
+2012	AR	White	05145	Oil & Gas		Other Revenues	-2188.38
 2012	AR	White	05145	Oil & Gas		Rents	274.5
 2012	AR	White	05145	Gas	Unprocessed (Wet) Gas	Royalties	54211.06
 2012	AR	Yell	05149	Oil & Gas		Other Revenues	343.76
 2012	AR	Yell	05149	Oil & Gas		Rents	40984.5
 2012	AR	Yell	05149	Gas	Unprocessed (Wet) Gas	Royalties	176589.8
-2012	AR		05	Hardrock		Other Revenues	762.7
-2012	AR		05	Hardrock		Other Revenues	240
-2012	AR		05	Hardrock		Rents	-120
-2012	AR		05	Quartz Crystal	Quartz Crystal	Royalties	11.3
-2013	AR	Cleburne	05023	Oil & Gas		Other Revenues	120
-2013	AR	Cleburne	05023	Oil & Gas		Other Royalties	1550
+2013	AR	Cleburne	05023	Oil & Gas		Other Revenues	1670
 2013	AR	Cleburne	05023	Gas	Unprocessed (Wet) Gas	Royalties	180981.71
 2013	AR	Columbia	05027	Gas	Processed (Residue) Gas	Royalties	-307.04
 2013	AR	Columbia	05027	Gas	Unprocessed (Wet) Gas	Royalties	1491.98
 2013	AR	Columbia	05027	Oil	Condensate	Royalties	7.87
-2013	AR	Conway	05029	Oil & Gas		Other Royalties	-14590
+2013	AR	Conway	05029	Oil & Gas		Other Revenues	-14590
 2013	AR	Conway	05029	Oil & Gas		Rents	11797
 2013	AR	Conway	05029	Gas	Unprocessed (Wet) Gas	Royalties	615414.79
-2013	AR	Crawford	05033	Oil & Gas		Other Royalties	1009.64
+2013	AR	Crawford	05033	Oil & Gas		Other Revenues	1009.64
 2013	AR	Crawford	05033	Oil & Gas		Rents	46059.97
 2013	AR	Crawford	05033	Gas	Unprocessed (Wet) Gas	Royalties	45996.9
 2013	AR	Faulkner	05045	Gas	Unprocessed (Wet) Gas	Royalties	78834.88
-2013	AR	Franklin	05047	Oil & Gas		Other Revenues	6504.02
-2013	AR	Franklin	05047	Oil & Gas		Other Royalties	-3611.53
+2013	AR	Franklin	05047	Oil & Gas		Other Revenues	2892.49
 2013	AR	Franklin	05047	Oil & Gas		Rents	40968.03
 2013	AR	Franklin	05047	Gas	Unprocessed (Wet) Gas	Royalties	54093.59
-2013	AR	Fulton	05049	Oil & Gas		Other Royalties	-50
+2013	AR	Fulton	05049	Oil & Gas		Other Revenues	-50
 2013	AR	Fulton	05049	Gas	Unprocessed (Wet) Gas	Royalties	135.54
-2013	AR	Johnson	05071	Oil & Gas		Other Revenues	927.06
-2013	AR	Johnson	05071	Oil & Gas		Other Royalties	1012
+2013	AR	Garland	05051	Hardrock		Other Revenues	240
+2013	AR	Johnson	05071	Oil & Gas		Other Revenues	1939.06
 2013	AR	Johnson	05071	Oil & Gas		Rents	23862.5
 2013	AR	Johnson	05071	Gas	Unprocessed (Wet) Gas	Royalties	158651.39
 2013	AR	Lafayette	05073	Oil & Gas		Rents	39
 2013	AR	Logan	05083	Oil & Gas		Bonus	25000
-2013	AR	Logan	05083	Oil & Gas		Other Revenues	6170.32
-2013	AR	Logan	05083	Oil & Gas		Other Royalties	-505
+2013	AR	Logan	05083	Oil & Gas		Other Revenues	5665.32
 2013	AR	Logan	05083	Oil & Gas		Rents	18624
 2013	AR	Logan	05083	Gas	Fuel Gas	Royalties	1472.8
 2013	AR	Logan	05083	Gas	Unprocessed (Wet) Gas	Royalties	2214838.85
+2013	AR	Montgomery	05097	Hardrock		Other Revenues	1129.55
+2013	AR	Montgomery	05097	Hardrock		Rents	-100
+2013	AR	Montgomery	05097	Quartz Crystal	Quartz Crystal	Royalties	4.45
 2013	AR	Perry	05105	Oil & Gas		Rents	52686
 2013	AR	Polk	05113	Oil & Gas		Rents	3390
-2013	AR	Pope	05115	Oil & Gas		Other Revenues	298.5
-2013	AR	Pope	05115	Oil & Gas		Other Royalties	-90
+2013	AR	Pope	05115	Oil & Gas		Other Revenues	208.5
 2013	AR	Pope	05115	Oil & Gas		Rents	112336.88
 2013	AR	Pope	05115	Gas	Unprocessed (Wet) Gas	Royalties	1345.77
 2013	AR	Scott	05127	Oil & Gas		Other Revenues	3533.19
 2013	AR	Scott	05127	Oil & Gas		Rents	41575
 2013	AR	Scott	05127	Gas	Coal Bed Methane	Royalties	2197.44
 2013	AR	Scott	05127	Gas	Fuel Gas	Royalties	119.37
-2013	AR	Sebastian	05131	Oil & Gas		Other Revenues	1352.47
-2013	AR	Sebastian	05131	Oil & Gas		Other Royalties	-28357.27
+2013	AR	Sebastian	05131	Oil & Gas		Other Revenues	-27004.8
 2013	AR	Sebastian	05131	Oil & Gas		Rents	31382
 2013	AR	Sebastian	05131	Gas	Coal Bed Methane	Royalties	12418.64
 2013	AR	Sebastian	05131	Gas	Fuel Gas	Royalties	321.62
 2013	AR	Sebastian	05131	Gas	Unprocessed (Wet) Gas	Royalties	1214975.23
-2013	AR	Van Buren	05141	Oil & Gas		Other Revenues	320
-2013	AR	Van Buren	05141	Oil & Gas		Other Royalties	300
+2013	AR	Van Buren	05141	Oil & Gas		Other Revenues	620
 2013	AR	Van Buren	05141	Oil & Gas		Rents	62726.12
 2013	AR	Van Buren	05141	Gas	Unprocessed (Wet) Gas	Royalties	263160.6
-2013	AR	White	05145	Oil & Gas		Other Royalties	-200
+2013	AR	White	05145	Oil & Gas		Other Revenues	-200
 2013	AR	White	05145	Oil & Gas		Rents	176
 2013	AR	White	05145	Gas	Unprocessed (Wet) Gas	Royalties	56903.97
 2013	AR	Yell	05149	Oil & Gas		Other Revenues	841.3
 2013	AR	Yell	05149	Oil & Gas		Rents	35635.5
 2013	AR	Yell	05149	Gas	Fuel Gas	Royalties	1407.79
 2013	AR	Yell	05149	Gas	Unprocessed (Wet) Gas	Royalties	179433.76
-2013	AR		05	Hardrock		Other Revenues	1009.55
-2013	AR		05	Hardrock		Other Revenues	360
-2013	AR		05	Hardrock		Rents	-100
-2013	AR		05	Quartz Crystal	Quartz Crystal	Royalties	4.45

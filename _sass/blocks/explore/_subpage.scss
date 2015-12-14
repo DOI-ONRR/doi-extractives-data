@@ -31,3 +31,8 @@
   }
 }
 
+.explore-exploration {
+  @include respond-to(medium-up) {
+    margin-top: 128px;
+  }
+}

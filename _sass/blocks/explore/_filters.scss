@@ -1,10 +1,20 @@
 
+.filters-wrapper_outer {
+  position: relative;
+}
+
 .filters-wrapper {
+  background-color: transparent;
+  margin-left: 0;
   padding: $base-padding;
+  position: absolute;
+  width: 100%;
+  z-index: 3000;
 
   @include respond-to(medium-up) {
     border-radius: $base-border-radius;
     margin-right: $base-padding;
+    max-width: 674.309px;
   }
 
   @include respond-to(huge-plus-up) {
@@ -14,6 +24,18 @@
   select {
     border: 0;
     height: 50px;
+  }
+
+  &[aria-expanded=true] {
+    background-color: $mid-blue-opaque !important;
+  }
+
+  &.js-color {
+    background: $mid-blue-opaque;
+  }
+
+  &.js-transparent {
+    background: transparent;
   }
 }
 
@@ -156,12 +178,13 @@
 .filter-description {
   @include heading(para-xl);
   font-weight: $weight-bold;
+  float: left;
   letter-spacing: -0.5px;
   margin-bottom: $base-padding;
+  width: 65%;
 
   @include respond-to(medium-up) {
     float: left;
-    width: 65%;
   }
 
   &.filter-description_closed {

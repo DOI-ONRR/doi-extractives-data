@@ -41,3 +41,10 @@
     height: 40px;
   }
 }
+
+.case_studies-selected_counties {
+  path.feature { //highlighted county features
+    fill: $green;
+    stroke: $white;
+  }
+}

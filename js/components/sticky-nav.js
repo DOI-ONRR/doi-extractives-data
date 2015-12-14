@@ -75,7 +75,7 @@
         windowBump = windowWidth > 1044 || this.isMobile ? 0 : -20;
       this.width = this.elems.parent
         ? this.elems.parent.clientWidth + windowBump + 'px'
-        : this.maxWidth
+        : this.maxWidth;
 
       this.mainOffset = this.elems.main.offsetTop;
       this.mainHeight = this.elems.main.clientHeight;

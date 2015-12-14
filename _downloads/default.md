@@ -62,9 +62,9 @@ permalink: /downloads/
     <h2 class="h3 downloads-section_heading">Production</h2>
     <ul class="list-sections">
     	<li class="downloads-download_links">
-        <a id="production-all" class="link-no_under"><h3>All lands and waters</h3></a>
-        <p>This data is from the <a href="http://www.eia.gov/">Energy Information Agency</a>. The specific data we used for the interactions is a subset of the huge amount of data available on their website. <em>Tip: to find data on the EIA site, click 'Sources & Uses' in the navigation near the top of the site.</em></p>
-        <a href="http://www.eia.gov/" class="button-tertiary">
+        <a href="http://www.eia.gov/" id="production-all" class="link-no_under"><h3>All lands and waters</h3></a>
+        <p>This data is from the <a href="http://www.eia.gov/">Energy Information Agency</a>. The specific data we used for the interactions is a subset of the huge amount of data available on their website. We also have <a href="https://github.com/18F/doi-extractives-data/wiki/Data-Catalog#all-production">notes on using this data</a> from our web development team with links to the specific tables we used on this site. <em>Tip: to find data on the EIA site, click 'Sources & Uses' in the navigation near the top of the site.</em></p>
+        <a href="http://www.eia.gov/">
           Go to EIA &#8594;
         </a>
       </li>

@@ -14,18 +14,22 @@ permalink: /downloads/disbursements/
     </div>
     <h1>Disbursements</h1>
 
-    <p class="case_studies_intro-para">This dataset contains disbursement information for fiscal years 2012-2013. Disbursements of revenue due to extractive activities on U.S. Federal lands occur monthly; this data set is a sum of those disbursements by fiscal year.</p>
+    <p class="case_studies_intro-para">The amount of money earned from extraction of natural resources on federal lands that is disbursed to various legislated funds. Our fund overview dataset is from the <a href="http://www.onrr.gov/">Office of Natural Resources Revenue</a>, which is part of the Department of the Interior. In addition, we have more detailed datasets on two of the funds: <a href="https://www.doi.gov/lwcf">Land and Water Conservation Fund</a> (LWCF) and <a href="http://www.nps.gov/subjects/historicpreservation/NHPA-50.htm">National Historic Preservation Act</a> (NHPA).</p>
 
-    <p class="downloads-download_links-intro">Download fiscal year data:
-      <ul class="downloads-download_links">
-        <li><a href="{{site.baseurl}}/downloads/disbursements_2012-2013_2015-11-20.xlsx"><icon class="icon-cloud icon-padded"></icon>
-        Full dataset (xlsx, 14 KB)</a></li>
-       </ul>
-     </p>
+    <p class="downloads-download_links-intro">Download fiscal year data:</p>
+    <ul class="downloads-download_links">
+      <li><a href="{{site.baseurl}}/downloads/disbursements_2012-2013_2015-11-20.xlsx"><icon class="icon-cloud icon-padded"></icon>Funds overview dataset (xlsx, 14 KB)</a></li>
+      <li><a href="{{site.baseurl}}/downloads/land_water_conservation_fund_incl-documentation_2015-07.xlsx"><icon class="icon-cloud icon-padded"></icon>LWCF dataset, includes docs (xlsx, 581 KB)
+      </a></li>
+      <li><a href="{{site.baseurl}}/downloads/historic_preservation_fund_2011-2014_2015-10-30.xlsx"><icon class="icon-cloud icon-padded"></icon>NHPA dataset (xlsx, 19 KB)
+      </a></li>
+    </ul>
+
+    <p class="u-margin-top">The documentation that follows is for the funds overview dataset. LWCF documentation is included in its download file, and we're working on collecting documentation for the NHPA dataset.</p>
 
     <h2 class="h3">Scope</h2>
 
-    <p>This dataset includes natural resource disbursements for U.S. federal lands and offshore areas, and Indian Lands. It does not include privately-owned lands, or U.S. state lands. The dataset is tracked and managed by the Department of the Interior’s Office of Natural Resources Revenue. </p>
+    <p>This dataset includes natural resource disbursements for U.S. federal lands and offshore areas, and Indian Lands. It does not include privately-owned lands, or U.S. state lands. The dataset is tracked and managed by the Department of the Interior’s Office of Natural Resources Revenue. It contains disbursement information to funds for fiscal years 2012-2013. Disbursements of revenue due to extractive activities on U.S. Federal lands occur monthly; this dataset is a sum of those disbursements by fiscal year.  </p>
 
     <h2 class="h3">Data Publication</h2>
 

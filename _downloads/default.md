@@ -51,18 +51,9 @@ permalink: /downloads/
 
       <li>
         <a id="disbursements" class="link-no_under"><h3>Disbursements</h3></a>
-        <p>The amount of money earned from extraction of natural resources on federal lands that is disbursed to various legislated funds. This dataset is from the <a href="http://www.onrr.gov/">Office of Natural Resources Revenue</a>, which is part of the Department of the Interior. In addition, we have more detailed datasets on two of the funds: <a href="https://www.doi.gov/lwcf">Land and Water Conservation Fund</a> (LWCF) and <a href="http://www.nps.gov/subjects/historicpreservation/NHPA-50.htm">National Historic Preservation Act</a> (NHPA).</p>
-        <a href="{{site.baseurl}}/downloads/disbursements_2012-2013_2015-11-20.xlsx" class="button-tertiary">
-          <icon class="icon-cloud icon-padded"></icon>Download disbursement dataset (xlsx, 14 KB)
-        </a>
-        <a href="{{site.baseurl}}/downloads/disbursements/" class="button-tertiary">
-          <i class="fa fa-file-text-o u-padding-right"></i>Documentation
-        </a>
-        <a href="{{site.baseurl}}/downloads/land_water_conservation_fund_incl-documentation_2015-07.xlsx" class="button-tertiary">
-          <icon class="icon-cloud icon-padded"></icon>Download LWCF dataset, includes docs (xlsx, 581 KB)
-        </a>
-        <a href="{{site.baseurl}}/downloads/historic_preservation_fund_2011-2014_2015-10-30.xlsx" class="button-tertiary">
-          <icon class="icon-cloud icon-padded"></icon>Download NHPA, dataset (xlsx, 19 KB)
+        <p>The amount of money earned from extraction of natural resources on federal lands that is disbursed to various legislated funds. Our fund overview dataset is from the <a href="http://www.onrr.gov/">Office of Natural Resources Revenue</a>, which is part of the Department of the Interior. In addition, we have more detailed datasets on two of the funds: <a href="https://www.doi.gov/lwcf">Land and Water Conservation Fund</a> (LWCF) and <a href="http://www.nps.gov/subjects/historicpreservation/NHPA-50.htm">National Historic Preservation Act</a> (NHPA).</p>
+        <a href="{{site.baseurl}}/downloads/disbursements/">
+          <i class="fa fa-file-text-o u-padding-right"></i>Data and documentation
         </a>
       </li>
 

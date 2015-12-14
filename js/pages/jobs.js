@@ -109,7 +109,7 @@
 
     formatNumber = state.get('units') === 'percent'
       ? eiti.format('%.2')
-      : eiti.format.si;
+      : eiti.format(',');
 
     var region = state.get('region') || 'US';
     var selected = regionSections
@@ -183,6 +183,14 @@
           .call(createRegionRow);
       }
 
+      if (regionId === 'US') {
+        console.log('before filter:', data.length);
+        data = data.filter(function(d) {
+          return !d.County;
+        });
+        console.log('after filter:', data.length);
+      }
+
       var value = getter(fields.value);
       var aggregate = state.get('units') === 'percent'
         ? function(d) {
@@ -219,10 +227,12 @@
           .map(data);
 
         console.log('data by feature id:', dataByFeatureId);
+        console.log('features:', features);
 
         var featureId = getter(fields.featureId);
         features.forEach(function(f) {
           var id = featureId(f);
+          console.log(f.id, '->', id, id in dataByFeatureId);
           f.value = dataByFeatureId[id];
         });
 
@@ -393,7 +403,9 @@
       .append('span')
         .attr('class', 'label');
 
-    var format = formatNumber;
+    var format = state.get('units') === 'percent'
+      ? formatNumber
+      : eiti.format.si;
     steps
       .style('border-color', getter('color'))
       .attr('title', function(d) {
@@ -420,7 +432,10 @@
     var fields = {
       region: 'Region',
       value: 'Value',
-      featureId: 'id'
+      featureId: function(d) {
+        var id = d.id;
+        return String(id).length === 4 ? '0' + id : id;
+      }
     };
     switch (state.get('figure')) {
       case 'wage':
@@ -661,11 +676,9 @@
       }
 
       var region = state.get('region');
-      if (region && region.length === 3) {
-        var fields = getFields(state);
-        var regionName = REGION_ID_NAME[region];
+      if (region) {
         data = data.filter(function(d) {
-          return d[fields.region] === regionName;
+          return d.State === region;
         });
       }
 

@@ -6,6 +6,17 @@
 
 .revenues_subpage-intro_wrapper {
   border-top: 1px solid $neutral-gray;
+
+  &.renewables,
+  &.renewables {
+
+    background: $putty;
+
+    @include respond-to(medium-up) {
+      background: url('../img/how-it-works/renewables-bg-gradient.png') top left repeat-x;
+      background-size: cover;
+    }
+  }
 }
 
 .revenues_subpage-intro {

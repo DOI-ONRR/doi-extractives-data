@@ -1,6 +1,7 @@
 .revenues_subpage-steps {
   background-position: 0 0;
   background-size: 100%;
+  padding-top: $base-padding;
 
   &.onshore-oil {
     @include respond-to(medium-up) {

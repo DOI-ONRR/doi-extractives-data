@@ -1,6 +1,9 @@
 
 .filters-wrapper_outer {
   position: relative;
+  // @include respond-to(medium-to-huge-plus) {
+  //   margin-right: $base-padding;
+  // }
 }
 
 .filters-wrapper {
@@ -12,13 +15,15 @@
   z-index: 3000;
 
   @include respond-to(medium-up) {
-    border-radius: $base-border-radius;
+    border-bottom-left-radius: $base-border-radius;
+    border-bottom-right-radius: $base-border-radius;
     margin-right: $base-padding;
-    max-width: 674.309px;
+    width: initial;
+    // max-width: 674.309px;
   }
 
   @include respond-to(huge-plus-up) {
-    margin-right: 0;
+    // margin-right: 0;
   }
 
   select {
@@ -28,6 +33,13 @@
 
   &[aria-expanded=true] {
     background-color: $mid-blue-opaque !important;
+    // height: 100%;
+    overflow-y: scroll;
+
+    // @include respond-to(medium-up) {
+    //   overflow-y: none;
+    //   height: initial;
+    // }
   }
 
   &.js-color {

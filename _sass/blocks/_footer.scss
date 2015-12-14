@@ -90,10 +90,19 @@ footer,
 
 .footer-nav {
   @include span-columns(12);
+  padding-bottom: $base-padding;
 
   @include respond-to(medium-up) {
     @include span-columns(2 of 8);
     @include omega(4n);
+    padding-bottom: 0;
+  }
+
+  a {
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
   }
 }
 

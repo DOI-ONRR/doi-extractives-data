@@ -34,8 +34,7 @@ $nav-drawer-height: 593px;
 
 .nav_drawer-nav {
   margin-bottom: 0;
-  padding: $base-padding;
-  padding-bottom: 0;
+  padding: $base-padding $base-padding 0 0;
 }
 
 .nav_drawer-nav_item {
@@ -64,8 +63,12 @@ $nav-drawer-height: 593px;
   padding-bottom: $base-padding-large + ($base-padding / 2);
 }
 
-
-
 .nav_drawer-nav_item_link {
   color: $white;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
 }

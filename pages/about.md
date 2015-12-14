@@ -28,7 +28,7 @@ permalink: /about/
 </section>
 
 
-<div class="communities">
+<div class="communities u-padding-small_screen">
 
   <div class="communities-intro">
 

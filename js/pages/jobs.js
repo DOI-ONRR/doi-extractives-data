@@ -178,8 +178,13 @@
       return d3.sum(data, value);
     };
 
-    aggregate = (state.get('units') === 'percent' ||
-      state.get('figure') === 'self') ? first : sum;
+    if (state.get('units') === 'percent' ||
+        state.get('figure') === 'self' ||
+        (state.get('figure') === 'wage' && state.get('region'))) {
+      aggregate = first;
+    } else {
+      aggregate = sum;
+    }
 
     updateTimeline
       .value(value)

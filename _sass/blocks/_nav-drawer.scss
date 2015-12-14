@@ -34,7 +34,8 @@ $nav-drawer-height: 593px;
 
 .nav_drawer-nav {
   margin-bottom: 0;
-  padding: $base-padding $base-padding 0 0;
+  padding: $base-padding;
+  padding-bottom: 0;
 }
 
 .nav_drawer-nav_item {

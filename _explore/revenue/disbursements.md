@@ -18,7 +18,7 @@ permalink: /explore/disbursements/
 
     <p>Federal corporate income taxes go to the General Fund of the Treasury, and Congress determines how to allocate these resources each year through the appropriations process.</p>
 
-    <p>Other revenue from extraction on federal lands goes to many different funds and entities. In FY 2013, ONRR disbursed $14.187 billion in DOI revenue. The recipient of these funds depends on whether the revenue is from onshore or offshore extraction.</p>
+    <p>Other revenue from extraction on federal lands goes to many different funds and entities. In fiscal year (FY) 2013, ONRR disbursed $14.187 billion in DOI revenue. The recipient of these funds depends on whether the revenue is from onshore or offshore extraction.</p>
 
     <figure class="disbursment-figure">
       <figcaption>Federal revenue disbursements by fund <span>(2013)</span></figcaption>
@@ -105,13 +105,14 @@ permalink: /explore/disbursements/
 
     <p class="downloads-download_links-intro">Download fiscal year data:
       <ul class="downloads-download_links">
-        <li><a href="{{site.baseurl}}/downloads/disbursements_2012-2013_2015-11-20.xlsx"><icon class="icon-cloud icon-padded"></icon>
-        Full dataset (xlsx, 14 KB)</a></li>
+        <li><a href="{{site.baseurl}}/downloads/disbursements/">
+          <i class="fa fa-file-text-o u-padding-right"></i>Data and documentation
+        </a></li>
        </ul>
     </p>
 
-    <h3 class="">Notes</h3>
-    
+    <h3>Notes</h3>
+
     <div class="footnotes">
         <ol>
           <li id="fn:1"><p><a href="http://statistics.onrr.gov/ReportTool.aspx">ONRR Statistical Information Report Tool</a> <a href="#fnref:1" class="reversefootnote">↩</a></p></li>

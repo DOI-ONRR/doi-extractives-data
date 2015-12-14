@@ -14,11 +14,17 @@ permalink: /explore/reconciliation/
     </div>
     <h1>Reconciliation</h1>
 
-    <p>As a part of USEITI, companies report payments to the government (e.g., rents, taxes, royalties) and the government reports what it received. These figures are compiled and reconciled by an independent administrator and published. In the future, this dataset will be interactive. For now, you can learn about the reconciliation process and <a href="{{site.baseurl}}/downloads/reconciliation/">download the dataset</a>.</p>
+    <p>As a part of USEITI, companies report payments to the government (e.g., rents, taxes, royalties) and the government reports what it received. These figures are compiled and reconciled by an independent administrator and published. In the future, this dataset will be interactive. For now, you can learn about reconciliation results here, and <a href="{{site.baseurl}}/downloads/reconciliation/">download the dataset</a>.</p>
 
-    <h3>Reconciliation results</h3>
+    <h2 class="h3">Background</h2>
 
-    <p>When the independent administrator compared company payments to government revenue, 17 discrepancies exceeded the margin of variance. The independent administrator worked with the companies and government entities to investigate these discrepancies, and was able to find explanations for all of them. Explanations included differences in when payments were recorded and how they were classified.</p>
+    <p>To implement the EITI Standard, government, industry, and civil society collaborate in a disclosure process called reconciliation. The three sectors in a participating country develop a framework for reconciliation. Government and industry share the total amount of revenue the government received and industry paid in the year under review with the Independent Administrator (IA). The IA reconciles reported revenue and investigates any discrepancies. The public can see the results for their respective country in an annual EITI report.</p>
+
+    <p>Through a unilateral disclosure, the Department of the Interior (DOI) published online all in-scope revenue from extraction on federal lands by revenue stream and company for calendar year (CY) 2013. DOI reported a total of $12.64 billion in revenue, disclosing to the public 100% of in-scope DOI revenue from extraction on federal lands during CY 2013. In addition to DOI’s unilateral disclosure, the Multi-stakeholder Group (MSG) asked companies to report to the IA that same nontax information, revenue payments to DOI, as well as federal corporate income tax payments and refunds from the Internal Revenue Service (IRS).</p>
+
+    <h2 class="h3">Reconciliation results</h2>
+
+    <p>When the independent administrator compared company payments to government revenue, 17 discrepancies exceeded the margin of variance. The independent administrator worked with the companies and government entities to investigate these discrepancies, and was able to find explanations for all of them. Explanations included differences in when payments were recorded and how they were classified. For more details on the reporting and reconciliation process, see <a href="{{site.baseurl}}/downloads/reconciliation/">our documentation</a>.</p>
 
     <p>Of the 45 companies that were asked to participate, 31 reported DOI revenue and 12 reported federal corporate income taxes.<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup></p>
 

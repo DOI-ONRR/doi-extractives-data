@@ -28,11 +28,13 @@ permalink: /explore/reconciliation/
 
     <p>Of the 45 companies that were asked to participate, 31 reported DOI revenue and 12 reported federal corporate income taxes.<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup></p>
 
-    <img src="reporting p. 8" />
+    <img src="{{ site.baseurl }}/img/reconciliation-revenue-report.png" alt="Chart the scope of reconciliation reporting participation" class="article_img-60 u-margin-top">
 
-    <img src="reporting p. 8" />
+    <img src="{{ site.baseurl }}/img/reconciliation-revenue-rec.png" alt="Chart the scope of reconciliation reporting participation" class="article_img-60 u-margin-top">
 
-    <p>Five companies also allowed for corporate income tax reconciliation: BP America; Cimarex Energy Co.; Could Peak Energy Resources, LLC; Shell E&P Company; and W&T Offshore, Inc.</p>
+    <img src="{{ site.baseurl }}/img/reconciliation-taxes.png" alt="Chart the scope of reconciliation reporting participation" class="article_img-60 u-margin-top">
+
+    <p class="u-margin-top">Five companies also allowed for corporate income tax reconciliation: BP America; Cimarex Energy Co.; Could Peak Energy Resources, LLC; Shell E&P Company; and W&T Offshore, Inc.</p>
 
     <p>After the independent administrator compared and reconciled the government revenue streams with company payments, 17 material variances remained, all of which were explained through the reconciliation process, leaving zero unexplained variances.</p>
 

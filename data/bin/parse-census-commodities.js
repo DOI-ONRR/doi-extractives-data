@@ -95,7 +95,8 @@ async.waterfall([
     rows.forEach(function(d, i) {
       if (i === 0) console.warn(d, years);
       years.forEach(function(year) {
-        var value = +d['val' + year];
+        var value = +d['val' + year] * 1e6;
+        var share = +d['share' + year.substr(-2)] / 100
         if (!value) return;
         result.push({
           State:  d.State,
@@ -103,7 +104,7 @@ async.waterfall([
           HS6:    d.HS6,
           Year:   year,
           Value:  value,
-          Share:  +d['share' + year.substr(-2)]
+          Share:  share
         });
       });
     });

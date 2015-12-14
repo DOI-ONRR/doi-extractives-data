@@ -1,0 +1,43 @@
+---
+title: What's New
+layout: default
+permalink: /about/whats-new/
+---
+
+<div class="container-outer container-padded">
+
+  <div class="container-left-7">
+
+    <div>
+      <a class="breadcrumb" href="{{ site.baseurl }}/about/">About</a>
+      /
+    </div>
+
+    <h1>{{page.title}}</h1>
+
+    <p>The ititial USEITI beta site launched in early 2015, offering visualizations that showed how such resources generate revenue across the country, and where the money goes.</p>
+
+    <p>With this site, we've responded to user feedback to make the data easier to use, offer better structure, explain USEITI more clearly, and provide context about the government's role in extractive industries.</p>
+
+    <p>We've also added new information and datasets to explore, including:</p>
+
+    <ul class="list-bullet">
+      <li><strong>Production data:</strong> Sales volumes and revenue have long been used to estimate how much of a resource was produced. Here, for the first time, you can find more precise data on what resources were produced on federal lands. <a href="{{ site.baseurl }}/explore/federal-production/">Explore federal production data.</a></li>
+      <li><strong>Federal revenue by company:</strong> See what revenue the government received from production on federal lands, sorted by company. <a href="{{ site.baseurl }}/explore/federal-revenue-by-company/">Explore federal revenue by company.</a></li>
+      <li><strong>Reconciliation data:</strong> A number of companies were asked to submit data for reconciliation with Department of Interior revenue data. Of the 45 companies invited, 35 participated. <a href="{{ site.baseurl }}/explore/reconciliation/">Download reconciliation data.</a></li>
+      <li><strong>How it works:</strong> Beyond the numbers, we've included new narratives explaining how the whole system of leasing federal land and collecting royalties on extracted materials works in the U.S. <a href="">Learn how it works.</a></li>
+    </ul>
+
+    <h2>What's next?</h2>
+
+    <p>The site is still in progress. Over the coming months, here's what we're looking forward to:</p>
+
+    <ul class="list-bullet">
+      <li>USEITI has invited states to opt in to this process, with the goal of making state-level data more navigable for members of the public. In 2016, participating states will begin contributing data.</li>
+      <li>In early 2016, we'll be making reconciliation data more interactive and easier to explore.</li>
+      <li>We'll be collecting community feedback to help us make the site clearer and more useful. If you have thoughts, please <a href="https://ethn.io/38933">help us improve the site.</a></li>
+    </ul>
+
+  </div>
+
+</div>

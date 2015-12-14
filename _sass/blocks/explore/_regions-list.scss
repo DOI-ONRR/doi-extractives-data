@@ -1,0 +1,143 @@
+.region-header {
+  border-bottom: 1px solid $mid-gray;
+  border-top: none;
+  font-weight: $weight-bold;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  padding-top: 0;
+
+  .subregion-name {
+    margin: 0;
+  }
+}
+
+.region-header-category {
+  @include heading(para-md);
+  border-bottom: 1px solid $neutral-gray;
+  font-weight: $weight-book;
+  margin-bottom: $base-padding-lite;
+  margin-top: $base-padding-extra;
+  padding-left: $base-padding;
+}
+
+.subregion {
+  td {
+    padding-bottom: ($base-padding * 0.7);
+    padding-top: ($base-padding * 0.7);
+  }
+}
+
+.subregion-name {
+  @include heading(para-md);
+  font-weight: $weight-book;
+  margin: 0;
+  width: 86%;
+
+  // @include respond-to(tiny-up) {
+  //   @include heading(para-md);
+  // }
+
+  .color-swatch {
+    display: inline-block;
+    height: 0.7em;
+    margin-right: $base-padding-lite;
+    width: 0.7em;
+  }
+}
+
+.subregions {
+  border-collapse: collapse;
+  width: 100%;
+
+  &,
+  td,
+  th,
+  tr {
+    border: 0;
+    border-bottom: 1px solid $neutral-gray;
+    padding-left: $base-padding-lite;
+    padding-right: $base-padding-lite;
+    text-align: left;
+  }
+
+  td.value,
+  th.value {
+    text-align: right;
+  }
+
+  thead {
+    background: none;
+    border: 0;
+
+    eiti-bar,
+    .color-swatch {
+      display: none;
+    }
+
+    .subregion-name {
+      @include heading(para-lg);
+      font-weight: $weight-bold;
+      min-width: 200px;
+      padding: 0;
+      padding-left: ($base-padding * 0.9);
+    }
+  }
+
+  tr > *:first-child {
+    padding-left: $base-padding;
+    width: 80%;
+  }
+
+  tr > *:last-child {
+    padding-right: $base-padding;
+  }
+
+  .bar_negative {
+    padding-right: 0;
+
+    eiti-bar .eiti-bar-bar {
+      background: $mid-gray;
+    }
+  }
+
+  .bar_positive {
+    padding-left: 0;
+  }
+
+  .subgroup .subregion-name {
+    // FIXME not sure if these numbers are right
+    padding-bottom: 0.25em;
+    padding-left: 0.75em;
+    padding-top: 1em;
+
+    .hilite {
+      background: $light-blue;
+    }
+  }
+
+}
+
+.subregion {
+  clear: both;
+  padding: 0 $base-padding;
+  position: relative;
+}
+
+.region-name,
+.map-legend {
+  @include respond-to(large-down) {
+    width: 100px;
+  }
+}
+
+.region-title {
+  padding-top: $base-padding-large;
+}
+
+.region-notes {
+  @include heading(para-md);
+
+  &:last-of-type {
+    padding-bottom: $base-padding-lite;
+  }
+}

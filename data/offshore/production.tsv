@@ -1,362 +1,81 @@
 Year	Region	Area	Commodity	Product	Volume
-2004	Alaska	Beaufort Sea	Oil	Oil (bbl)	4474000.27
-2004	Gulf	Central Gulf of Mexico	Gas	Fuel Gas (mcf)	12846440.85
-2004	Gulf	Central Gulf of Mexico	Gas	Processed (Residue) Gas (mcf)	1411169145.70
-2004	Gulf	Central Gulf of Mexico	Gas	Unprocessed (Wet) Gas (mcf)	1374646284.63
-2004	Gulf	Central Gulf of Mexico	NGL	Gas Plant Products (gal)	2106344748.91
-2004	Gulf	Central Gulf of Mexico	Oil	Condensate (bbl)	40775947.97
-2004	Gulf	Central Gulf of Mexico	Oil	Drip or Scrubber Condensate (bbl)	1097246.58
-2004	Gulf	Central Gulf of Mexico	Oil	Inlet Scrubber (bbl)	32135.13
-2004	Gulf	Central Gulf of Mexico	Oil	Oil (bbl)	413668296.09
-2004	Gulf	Central Gulf of Mexico	Gas	Flash Gas (mcf)	2718444.89
-2004	Gulf	Central Gulf of Mexico	Gas	Gas Lost - Flared or Vented (mcf)	238150.40
-2004	Gulf	Central Gulf of Mexico	Other	Salt (ton)	33299.00
-2004	Gulf	Central Gulf of Mexico	Oil	Other Liquid Hydrocarbons (bbl)	16766.46
-2004	Gulf	Central Gulf of Mexico	Other	Sulfur (lton)	8761.13
-2004	Gulf	Central Gulf of Mexico	Geothermal	Geothermal - Commercially Demineralized H2O (cgal)	16451.00
-2004	Gulf	Central Gulf of Mexico	Geothermal	Geothermal - Direct Utilization, Other (cgal)	16451.00
-2004	Gulf	Eastern Gulf of Mexico	Gas	Flash Gas (mcf)	7962.00
-2004	Gulf	Eastern Gulf of Mexico	Gas	Processed (Residue) Gas (mcf)	11826963.66
-2004	Gulf	Eastern Gulf of Mexico	Gas	Unprocessed (Wet) Gas (mcf)	1001502.62
-2004	Gulf	Eastern Gulf of Mexico	NGL	Gas Plant Products (gal)	1115574.17
-2004	Gulf	Eastern Gulf of Mexico	Oil	Condensate (bbl)	19949.17
-2004	Gulf	Eastern Gulf of Mexico	Oil	Drip or Scrubber Condensate (bbl)	356.93
-2004	Gulf	Western Gulf of Mexico	Gas	Processed (Residue) Gas (mcf)	426509042.96
-2004	Gulf	Western Gulf of Mexico	Gas	Unprocessed (Wet) Gas (mcf)	686244607.78
-2004	Gulf	Western Gulf of Mexico	NGL	Gas Plant Products (gal)	501730825.10
-2004	Gulf	Western Gulf of Mexico	Oil	Oil (bbl)	75976283.05
-2004	Gulf	Western Gulf of Mexico	Gas	Flash Gas (mcf)	934815.65
-2004	Gulf	Western Gulf of Mexico	Oil	Condensate (bbl)	9063080.46
-2004	Gulf	Western Gulf of Mexico	Oil	Drip or Scrubber Condensate (bbl)	148195.50
-2004	Gulf	Western Gulf of Mexico	Oil	Inlet Scrubber (bbl)	83.66
-2004	Gulf	Western Gulf of Mexico	Gas	Fuel Gas (mcf)	17712.00
-2004	Gulf		Gas	Unprocessed (Wet) Gas (mcf)	-0.01
-2004	Pacific	Southern California	Gas	Fuel Gas (mcf)	9831.00
-2004	Pacific	Southern California	Gas	Processed (Residue) Gas (mcf)	26524346.64
-2004	Pacific	Southern California	Gas	Unprocessed (Wet) Gas (mcf)	2998044.83
-2004	Pacific	Southern California	NGL	Gas Plant Products (gal)	17622248.89
-2004	Pacific	Southern California	Oil	Condensate (bbl)	14588.82
-2004	Pacific	Southern California	Oil	Drip or Scrubber Condensate (bbl)	72249.12
-2004	Pacific	Southern California	Oil	Oil (bbl)	27341534.92
-2004	Pacific	Southern California	Other	Sulfur (lton)	4877.45
-2005	Alaska	Beaufort Sea	Oil	Oil (bbl)	3999992.71
-2005	Gulf	Central Gulf of Mexico	Gas	Fuel Gas (mcf)	11196479.14
-2005	Gulf	Central Gulf of Mexico	Gas	Gas Lost - Flared or Vented (mcf)	272720.92
-2005	Gulf	Central Gulf of Mexico	Gas	Processed (Residue) Gas (mcf)	1209658846.04
-2005	Gulf	Central Gulf of Mexico	Gas	Unprocessed (Wet) Gas (mcf)	1061833483.67
-2005	Gulf	Central Gulf of Mexico	NGL	Gas Plant Products (gal)	1545307157.93
-2005	Gulf	Central Gulf of Mexico	Oil	Condensate (bbl)	26661490.46
-2005	Gulf	Central Gulf of Mexico	Oil	Drip or Scrubber Condensate (bbl)	907604.71
-2005	Gulf	Central Gulf of Mexico	Oil	Oil (bbl)	371878874.77
-2005	Gulf	Central Gulf of Mexico	Gas	Flash Gas (mcf)	1528169.13
-2005	Gulf	Central Gulf of Mexico	Oil	Inlet Scrubber (bbl)	15002.95
-2005	Gulf	Central Gulf of Mexico	Other	Salt (ton)	28603.00
-2005	Gulf	Central Gulf of Mexico	Oil	Other Liquid Hydrocarbons (bbl)	9748.20
-2005	Gulf	Central Gulf of Mexico	Other	Sulfur (lton)	5791.42
-2005	Gulf	Eastern Gulf of Mexico	Gas	Flash Gas (mcf)	1142.00
-2005	Gulf	Eastern Gulf of Mexico	Gas	Processed (Residue) Gas (mcf)	1230824.96
-2005	Gulf	Eastern Gulf of Mexico	NGL	Gas Plant Products (gal)	118901.90
-2005	Gulf	Eastern Gulf of Mexico	Oil	Condensate (bbl)	1846.88
-2005	Gulf	Eastern Gulf of Mexico	Oil	Drip or Scrubber Condensate (bbl)	59.73
-2005	Gulf	Eastern Gulf of Mexico	Oil	Inlet Scrubber (bbl)	0.52
-2005	Gulf	Eastern Gulf of Mexico	Gas	Unprocessed (Wet) Gas (mcf)	214401.48
-2005	Gulf	Western Gulf of Mexico	Gas	Processed (Residue) Gas (mcf)	426143410.37
-2005	Gulf	Western Gulf of Mexico	Gas	Unprocessed (Wet) Gas (mcf)	539733316.02
-2005	Gulf	Western Gulf of Mexico	NGL	Gas Plant Products (gal)	556084649.15
-2005	Gulf	Western Gulf of Mexico	Oil	Oil (bbl)	65074857.84
-2005	Gulf	Western Gulf of Mexico	Gas	Flash Gas (mcf)	753527.03
-2005	Gulf	Western Gulf of Mexico	Oil	Condensate (bbl)	18968887.23
-2005	Gulf	Western Gulf of Mexico	Oil	Drip or Scrubber Condensate (bbl)	267986.24
-2005	Gulf	Western Gulf of Mexico	Oil	Inlet Scrubber (bbl)	127.28
-2005	Gulf	Western Gulf of Mexico	Gas	Fuel Gas (mcf)	20598.00
-2005	Pacific	Southern California	Gas	Fuel Gas (mcf)	60276.20
-2005	Pacific	Southern California	Gas	Processed (Residue) Gas (mcf)	23455147.72
-2005	Pacific	Southern California	Gas	Unprocessed (Wet) Gas (mcf)	3618245.93
-2005	Pacific	Southern California	NGL	Gas Plant Products (gal)	13597272.33
-2005	Pacific	Southern California	Oil	Condensate (bbl)	15477.30
-2005	Pacific	Southern California	Oil	Drip or Scrubber Condensate (bbl)	79114.28
-2005	Pacific	Southern California	Oil	Oil (bbl)	26934880.69
-2005	Pacific	Southern California	Other	Sulfur (lton)	4026.93
-2006	Alaska	Beaufort Sea	Oil	Oil (bbl)	3367673.19
-2006	Gulf	Central Gulf of Mexico	Gas	Fuel Gas (mcf)	9806059.84
-2006	Gulf	Central Gulf of Mexico	Gas	Gas Lost - Flared or Vented (mcf)	47632.83
-2006	Gulf	Central Gulf of Mexico	Gas	Processed (Residue) Gas (mcf)	1508296392.74
-2006	Gulf	Central Gulf of Mexico	Gas	Unprocessed (Wet) Gas (mcf)	637945250.08
-2006	Gulf	Central Gulf of Mexico	NGL	Gas Plant Products (gal)	1751061704.82
-2006	Gulf	Central Gulf of Mexico	Oil	Condensate (bbl)	29298398.40
-2006	Gulf	Central Gulf of Mexico	Oil	Drip or Scrubber Condensate (bbl)	749067.83
-2006	Gulf	Central Gulf of Mexico	Oil	Oil (bbl)	389185884.48
-2006	Gulf	Central Gulf of Mexico	Gas	Flash Gas (mcf)	1635520.80
-2006	Gulf	Central Gulf of Mexico	Oil	Inlet Scrubber (bbl)	8737.80
-2006	Gulf	Central Gulf of Mexico	Oil	Other Liquid Hydrocarbons (bbl)	114982.30
-2006	Gulf	Central Gulf of Mexico	Other	Salt (ton)	29258.00
-2006	Gulf	Central Gulf of Mexico	Other	Sulfur (lton)	3618.85
-2006	Gulf	Eastern Gulf of Mexico	Gas	Processed (Residue) Gas (mcf)	26827.07
-2006	Gulf	Eastern Gulf of Mexico	Gas	Unprocessed (Wet) Gas (mcf)	227874.96
-2006	Gulf	Western Gulf of Mexico	Gas	Processed (Residue) Gas (mcf)	496375895.51
-2006	Gulf	Western Gulf of Mexico	Gas	Unprocessed (Wet) Gas (mcf)	291886971.80
-2006	Gulf	Western Gulf of Mexico	NGL	Gas Plant Products (gal)	493021412.94
-2006	Gulf	Western Gulf of Mexico	Oil	Oil (bbl)	65766334.52
-2006	Gulf	Western Gulf of Mexico	Gas	Flash Gas (mcf)	541107.74
-2006	Gulf	Western Gulf of Mexico	Oil	Condensate (bbl)	11297009.11
-2006	Gulf	Western Gulf of Mexico	Oil	Drip or Scrubber Condensate (bbl)	200151.47
-2006	Gulf	Western Gulf of Mexico	Gas	Gas Lost - Flared or Vented (mcf)	7922.00
-2006	Gulf	Western Gulf of Mexico	Oil	Inlet Scrubber (bbl)	4468.68
-2006	Gulf		Gas	Unprocessed (Wet) Gas (mcf)	-0.06
-2006	Pacific	Southern California	Gas	Fuel Gas (mcf)	49283.00
-2006	Pacific	Southern California	Gas	Processed (Residue) Gas (mcf)	23096629.50
-2006	Pacific	Southern California	Gas	Unprocessed (Wet) Gas (mcf)	4047049.66
-2006	Pacific	Southern California	NGL	Gas Plant Products (gal)	9399398.14
-2006	Pacific	Southern California	Oil	Condensate (bbl)	29551.08
-2006	Pacific	Southern California	Oil	Drip or Scrubber Condensate (bbl)	52934.84
-2006	Pacific	Southern California	Oil	Oil (bbl)	26247777.08
-2006	Pacific	Southern California	Other	Sulfur (lton)	4616.92
-2007	Alaska	Beaufort Sea	Oil	Oil (bbl)	2475705.54
-2007	Gulf	Central Gulf of Mexico	Gas	Unprocessed (Wet) Gas (mcf)	486222220.25
-2007	Gulf	Central Gulf of Mexico	Oil	Condensate (bbl)	31135128.69
-2007	Gulf	Central Gulf of Mexico	Oil	Oil (bbl)	402030489.19
-2007	Gulf	Central Gulf of Mexico	Gas	Fuel Gas (mcf)	12565461.06
-2007	Gulf	Central Gulf of Mexico	Gas	Gas Lost - Flared or Vented (mcf)	78956.66
-2007	Gulf	Central Gulf of Mexico	Gas	Processed (Residue) Gas (mcf)	1604055217.17
-2007	Gulf	Central Gulf of Mexico	NGL	Gas Plant Products (gal)	2149560141.01
-2007	Gulf	Central Gulf of Mexico	Oil	Drip or Scrubber Condensate (bbl)	1209322.03
-2007	Gulf	Central Gulf of Mexico	Gas	Flash Gas (mcf)	1840376.78
-2007	Gulf	Central Gulf of Mexico	Oil	Inlet Scrubber (bbl)	37480.23
-2007	Gulf	Central Gulf of Mexico	Oil	Other Liquid Hydrocarbons (bbl)	12140.48
-2007	Gulf	Central Gulf of Mexico	Other	Salt (ton)	24254.00
-2007	Gulf	Central Gulf of Mexico	Other	Sulfur (lton)	2364.31
-2007	Gulf	Eastern Gulf of Mexico	Gas	Unprocessed (Wet) Gas (mcf)	45004139.70
-2007	Gulf	Eastern Gulf of Mexico	Oil	Condensate (bbl)	13174.71
-2007	Gulf	Eastern Gulf of Mexico	Oil	Oil (bbl)	1809.78
-2007	Gulf	Eastern Gulf of Mexico	Gas	Processed (Residue) Gas (mcf)	263989.10
-2007	Gulf	Western Gulf of Mexico	Gas	Processed (Residue) Gas (mcf)	396542004.42
-2007	Gulf	Western Gulf of Mexico	Gas	Unprocessed (Wet) Gas (mcf)	234870932.52
-2007	Gulf	Western Gulf of Mexico	NGL	Gas Plant Products (gal)	449903767.54
-2007	Gulf	Western Gulf of Mexico	Oil	Oil (bbl)	52281596.53
-2007	Gulf	Western Gulf of Mexico	Gas	Flash Gas (mcf)	718174.68
-2007	Gulf	Western Gulf of Mexico	Oil	Condensate (bbl)	7068921.64
-2007	Gulf	Western Gulf of Mexico	Oil	Drip or Scrubber Condensate (bbl)	94092.46
-2007	Gulf	Western Gulf of Mexico	Oil	Inlet Scrubber (bbl)	-535.99
-2007	Gulf		Gas	Unprocessed (Wet) Gas (mcf)	-0.12
-2007	Pacific	Southern California	Gas	Fuel Gas (mcf)	11401.00
-2007	Pacific	Southern California	Gas	Processed (Residue) Gas (mcf)	21080252.19
-2007	Pacific	Southern California	Gas	Unprocessed (Wet) Gas (mcf)	5157752.54
-2007	Pacific	Southern California	NGL	Gas Plant Products (gal)	8443535.69
-2007	Pacific	Southern California	Oil	Condensate (bbl)	25659.30
-2007	Pacific	Southern California	Oil	Drip or Scrubber Condensate (bbl)	38209.96
-2007	Pacific	Southern California	Oil	Oil (bbl)	24646653.15
-2007	Pacific	Southern California	Other	Sulfur (lton)	4429.02
-2008	Alaska	Beaufort Sea	Oil	Oil (bbl)	2923155.90
-2008	Gulf	Central Gulf of Mexico	Gas	Processed (Residue) Gas (mcf)	1185058464.27
-2008	Gulf	Central Gulf of Mexico	Gas	Unprocessed (Wet) Gas (mcf)	497393644.32
-2008	Gulf	Central Gulf of Mexico	NGL	Gas Plant Products (gal)	1638944903.55
-2008	Gulf	Central Gulf of Mexico	Oil	Condensate (bbl)	19882359.61
-2008	Gulf	Central Gulf of Mexico	Oil	Drip or Scrubber Condensate (bbl)	570309.39
-2008	Gulf	Central Gulf of Mexico	Oil	Oil (bbl)	365515995.65
-2008	Gulf	Central Gulf of Mexico	Gas	Fuel Gas (mcf)	11630171.19
-2008	Gulf	Central Gulf of Mexico	Gas	Gas Lost - Flared or Vented (mcf)	42893.21
-2008	Gulf	Central Gulf of Mexico	Gas	Flash Gas (mcf)	1314682.28
-2008	Gulf	Central Gulf of Mexico	Oil	Inlet Scrubber (bbl)	65929.99
-2008	Gulf	Central Gulf of Mexico	Other	Salt (ton)	27030.00
-2008	Gulf	Central Gulf of Mexico	Oil	Other Liquid Hydrocarbons (bbl)	6962.95
-2008	Gulf	Central Gulf of Mexico	Other	Sulfur (lton)	1490.39
-2008	Gulf	Eastern Gulf of Mexico	Gas	Unprocessed (Wet) Gas (mcf)	136924686.63
-2008	Gulf	Eastern Gulf of Mexico	Oil	Condensate (bbl)	36457.93
-2008	Gulf	Eastern Gulf of Mexico	Oil	Drip or Scrubber Condensate (bbl)	179.47
-2008	Gulf	Eastern Gulf of Mexico	Oil	Oil (bbl)	1890.75
-2008	Gulf	Eastern Gulf of Mexico	Gas	Processed (Residue) Gas (mcf)	389758.74
-2008	Gulf	Western Gulf of Mexico	Gas	Processed (Residue) Gas (mcf)	298766620.55
-2008	Gulf	Western Gulf of Mexico	Gas	Unprocessed (Wet) Gas (mcf)	176369120.08
-2008	Gulf	Western Gulf of Mexico	NGL	Gas Plant Products (gal)	292379700.13
-2008	Gulf	Western Gulf of Mexico	Oil	Oil (bbl)	40856389.18
-2008	Gulf	Western Gulf of Mexico	Gas	Flash Gas (mcf)	415555.36
-2008	Gulf	Western Gulf of Mexico	Oil	Condensate (bbl)	4254347.05
-2008	Gulf	Western Gulf of Mexico	Oil	Drip or Scrubber Condensate (bbl)	92720.14
-2008	Gulf	Western Gulf of Mexico	Oil	Inlet Scrubber (bbl)	129.27
-2008	Gulf		Gas	Unprocessed (Wet) Gas (mcf)	-0.12
-2008	Pacific	Southern California	Gas	Fuel Gas (mcf)	11815.00
-2008	Pacific	Southern California	Gas	Gas Lost - Flared or Vented (mcf)	11475.00
-2008	Pacific	Southern California	Gas	Processed (Residue) Gas (mcf)	17598489.59
-2008	Pacific	Southern California	Gas	Unprocessed (Wet) Gas (mcf)	4622950.84
-2008	Pacific	Southern California	NGL	Gas Plant Products (gal)	7243345.70
-2008	Pacific	Southern California	Oil	Condensate (bbl)	23812.27
-2008	Pacific	Southern California	Oil	Drip or Scrubber Condensate (bbl)	14881.58
-2008	Pacific	Southern California	Oil	Inlet Scrubber (bbl)	5544.77
-2008	Pacific	Southern California	Oil	Oil (bbl)	24738668.18
-2008	Pacific	Southern California	Other	Sulfur (lton)	3618.16
-2009	Alaska	Beaufort Sea	Oil	Oil (bbl)	1817256.78
-2009	Gulf	Central Gulf of Mexico	Gas	Processed (Residue) Gas (mcf)	1275861543.04
-2009	Gulf	Central Gulf of Mexico	Gas	Unprocessed (Wet) Gas (mcf)	482418333.74
-2009	Gulf	Central Gulf of Mexico	NGL	Gas Plant Products (gal)	2048637886.25
-2009	Gulf	Central Gulf of Mexico	Oil	Condensate (bbl)	22274893.12
-2009	Gulf	Central Gulf of Mexico	Oil	Drip or Scrubber Condensate (bbl)	1272100.39
-2009	Gulf	Central Gulf of Mexico	Oil	Oil (bbl)	528374858.24
-2009	Gulf	Central Gulf of Mexico	Gas	Fuel Gas (mcf)	13504836.73
-2009	Gulf	Central Gulf of Mexico	Gas	Gas Lost - Flared or Vented (mcf)	58968.52
-2009	Gulf	Central Gulf of Mexico	Gas	Flash Gas (mcf)	1951756.57
-2009	Gulf	Central Gulf of Mexico	Oil	Inlet Scrubber (bbl)	61849.13
-2009	Gulf	Central Gulf of Mexico	Other	Salt (ton)	28039.00
-2009	Gulf	Central Gulf of Mexico	Oil	Other Liquid Hydrocarbons (bbl)	5469.13
-2009	Gulf	Central Gulf of Mexico	Other	Sulfur (lton)	233.40
-2009	Gulf	Eastern Gulf of Mexico	Gas	Unprocessed (Wet) Gas (mcf)	184389010.77
-2009	Gulf	Eastern Gulf of Mexico	Oil	Condensate (bbl)	64281.87
-2009	Gulf	Eastern Gulf of Mexico	Gas	Processed (Residue) Gas (mcf)	349111.24
-2009	Gulf	Western Gulf of Mexico	Gas	Processed (Residue) Gas (mcf)	304815018.02
-2009	Gulf	Western Gulf of Mexico	Gas	Unprocessed (Wet) Gas (mcf)	155568528.34
-2009	Gulf	Western Gulf of Mexico	NGL	Gas Plant Products (gal)	289990352.06
-2009	Gulf	Western Gulf of Mexico	Oil	Condensate (bbl)	14169420.40
-2009	Gulf	Western Gulf of Mexico	Oil	Oil (bbl)	37428766.52
-2009	Gulf	Western Gulf of Mexico	Gas	Flash Gas (mcf)	265186.62
-2009	Gulf	Western Gulf of Mexico	Oil	Drip or Scrubber Condensate (bbl)	304133.26
-2009	Gulf	Western Gulf of Mexico	Gas	Fuel Gas (mcf)	9802.67
-2009	Gulf	Western Gulf of Mexico	Oil	Inlet Scrubber (bbl)	5302.18
-2009	Gulf		Gas	Unprocessed (Wet) Gas (mcf)	-0.13
-2009	Pacific	Southern California	Gas	Fuel Gas (mcf)	5698.00
-2009	Pacific	Southern California	Gas	Gas Lost - Flared or Vented (mcf)	10169.00
-2009	Pacific	Southern California	Gas	Processed (Residue) Gas (mcf)	17777750.94
-2009	Pacific	Southern California	Gas	Unprocessed (Wet) Gas (mcf)	4605423.05
-2009	Pacific	Southern California	NGL	Gas Plant Products (gal)	6961490.97
-2009	Pacific	Southern California	Oil	Condensate (bbl)	20134.20
-2009	Pacific	Southern California	Oil	Inlet Scrubber (bbl)	37052.82
-2009	Pacific	Southern California	Oil	Oil (bbl)	22525578.23
-2009	Pacific	Southern California	Other	Sulfur (lton)	3618.56
-2010	Alaska	Beaufort Sea	Oil	Oil (bbl)	1331549.26
-2010	Gulf	Central Gulf of Mexico	Gas	Flash Gas (mcf)	3765127.69
-2010	Gulf	Central Gulf of Mexico	Gas	Processed (Residue) Gas (mcf)	1122033653.67
-2010	Gulf	Central Gulf of Mexico	Gas	Unprocessed (Wet) Gas (mcf)	421383187.86
-2010	Gulf	Central Gulf of Mexico	NGL	Gas Plant Products (gal)	2171431551.59
-2010	Gulf	Central Gulf of Mexico	Oil	Condensate (bbl)	36477530.87
-2010	Gulf	Central Gulf of Mexico	Oil	Drip or Scrubber Condensate (bbl)	1082580.54
-2010	Gulf	Central Gulf of Mexico	Oil	Oil (bbl)	500715291.68
-2010	Gulf	Central Gulf of Mexico	Gas	Fuel Gas (mcf)	14238728.88
-2010	Gulf	Central Gulf of Mexico	Gas	Gas Lost - Flared or Vented (mcf)	115879.24
-2010	Gulf	Central Gulf of Mexico	Oil	Inlet Scrubber (bbl)	149859.33
-2010	Gulf	Central Gulf of Mexico	Oil	Fuel Oil (bbl)	5.27
-2010	Gulf	Central Gulf of Mexico	Oil	Other Liquid Hydrocarbons (bbl)	6298.34
-2010	Gulf	Central Gulf of Mexico	Other	Salt (ton)	26761.00
-2010	Gulf	Central Gulf of Mexico	Other	Sulfur (lton)	646.16
-2010	Gulf	Eastern Gulf of Mexico	Gas	Unprocessed (Wet) Gas (mcf)	129605200.61
-2010	Gulf	Eastern Gulf of Mexico	Oil	Condensate (bbl)	36953.42
-2010	Gulf	Eastern Gulf of Mexico	Oil	Oil (bbl)	364.57
-2010	Gulf	Western Gulf of Mexico	Gas	Processed (Residue) Gas (mcf)	272245797.86
-2010	Gulf	Western Gulf of Mexico	Gas	Unprocessed (Wet) Gas (mcf)	125179823.04
-2010	Gulf	Western Gulf of Mexico	NGL	Gas Plant Products (gal)	371661893.39
-2010	Gulf	Western Gulf of Mexico	Oil	Condensate (bbl)	17664530.97
-2010	Gulf	Western Gulf of Mexico	Oil	Drip or Scrubber Condensate (bbl)	158452.36
-2010	Gulf	Western Gulf of Mexico	Oil	Oil (bbl)	34835895.93
-2010	Gulf	Western Gulf of Mexico	Gas	Flash Gas (mcf)	337549.43
-2010	Gulf	Western Gulf of Mexico	Gas	Fuel Gas (mcf)	187.32
-2010	Gulf	Western Gulf of Mexico	Oil	Inlet Scrubber (bbl)	5265.35
-2010	Gulf		Gas	Unprocessed (Wet) Gas (mcf)	-0.07
-2010	Pacific	Southern California	Gas	Fuel Gas (mcf)	18112.00
-2010	Pacific	Southern California	Gas	Gas Lost - Flared or Vented (mcf)	20480.00
-2010	Pacific	Southern California	Gas	Processed (Residue) Gas (mcf)	16641844.92
-2010	Pacific	Southern California	Gas	Unprocessed (Wet) Gas (mcf)	3768883.61
-2010	Pacific	Southern California	NGL	Gas Plant Products (gal)	7372394.07
-2010	Pacific	Southern California	Oil	Condensate (bbl)	16665.54
-2010	Pacific	Southern California	Oil	Inlet Scrubber (bbl)	48855.71
-2010	Pacific	Southern California	Oil	Oil (bbl)	21661488.06
-2010	Pacific	Southern California	Other	Sulfur (lton)	3772.13
-2011	Alaska	Beaufort Sea	Oil	Oil (bbl)	1039202.76
-2011	Gulf	Central Gulf of Mexico	Gas	Flash Gas (mcf)	2296430.16
-2011	Gulf	Central Gulf of Mexico	Gas	Processed (Residue) Gas (mcf)	946654152.64
-2011	Gulf	Central Gulf of Mexico	Gas	Unprocessed (Wet) Gas (mcf)	302193556.49
-2011	Gulf	Central Gulf of Mexico	NGL	Gas Plant Products (gal)	1791443937.76
-2011	Gulf	Central Gulf of Mexico	Oil	Condensate (bbl)	34513821.13
-2011	Gulf	Central Gulf of Mexico	Oil	Drip or Scrubber Condensate (bbl)	636157.70
-2011	Gulf	Central Gulf of Mexico	Oil	Oil (bbl)	411273868.61
-2011	Gulf	Central Gulf of Mexico	Gas	Fuel Gas (mcf)	13444712.76
-2011	Gulf	Central Gulf of Mexico	Gas	Gas Lost - Flared or Vented (mcf)	668871.26
-2011	Gulf	Central Gulf of Mexico	Oil	Inlet Scrubber (bbl)	141723.62
-2011	Gulf	Central Gulf of Mexico	Other	Salt (ton)	19601.00
-2011	Gulf	Central Gulf of Mexico	Oil	Other Liquid Hydrocarbons (bbl)	6703.11
-2011	Gulf	Central Gulf of Mexico	Other	Sulfur (lton)	101.48
-2011	Gulf	Eastern Gulf of Mexico	Gas	Unprocessed (Wet) Gas (mcf)	106921755.18
-2011	Gulf	Eastern Gulf of Mexico	Oil	Condensate (bbl)	27061.07
-2011	Gulf	Eastern Gulf of Mexico	Oil	Drip or Scrubber Condensate (bbl)	268.00
-2011	Gulf	Western Gulf of Mexico	Gas	Processed (Residue) Gas (mcf)	223649277.10
-2011	Gulf	Western Gulf of Mexico	Gas	Unprocessed (Wet) Gas (mcf)	93034590.45
-2011	Gulf	Western Gulf of Mexico	NGL	Gas Plant Products (gal)	393516222.59
-2011	Gulf	Western Gulf of Mexico	Oil	Condensate (bbl)	21009906.01
-2011	Gulf	Western Gulf of Mexico	Oil	Drip or Scrubber Condensate (bbl)	239975.18
-2011	Gulf	Western Gulf of Mexico	Oil	Oil (bbl)	36796222.20
-2011	Gulf	Western Gulf of Mexico	Gas	Flash Gas (mcf)	424460.39
-2011	Gulf	Western Gulf of Mexico	Gas	Fuel Gas (mcf)	33663.90
-2011	Gulf	Western Gulf of Mexico	Oil	Inlet Scrubber (bbl)	4279.15
-2011	Pacific	Southern California	Gas	Fuel Gas (mcf)	4497.00
-2011	Pacific	Southern California	Gas	Gas Lost - Flared or Vented (mcf)	11385.00
-2011	Pacific	Southern California	Gas	Processed (Residue) Gas (mcf)	12203755.23
-2011	Pacific	Southern California	Gas	Unprocessed (Wet) Gas (mcf)	3318885.48
-2011	Pacific	Southern California	NGL	Gas Plant Products (gal)	6456385.68
-2011	Pacific	Southern California	Oil	Condensate (bbl)	13528.38
-2011	Pacific	Southern California	Oil	Inlet Scrubber (bbl)	37174.42
-2011	Pacific	Southern California	Oil	Oil (bbl)	19781761.78
-2011	Pacific	Southern California	Other	Sulfur (lton)	3334.25
-2012	Alaska	Beaufort Sea	Oil	Oil (bbl)	613535.68
-2012	Gulf	Central Gulf of Mexico	Gas	Flash Gas (mcf)	1606114.20
-2012	Gulf	Central Gulf of Mexico	Gas	Processed (Residue) Gas (mcf)	752527908.84
-2012	Gulf	Central Gulf of Mexico	Gas	Unprocessed (Wet) Gas (mcf)	275311203.72
-2012	Gulf	Central Gulf of Mexico	NGL	Gas Plant Products (gal)	1556317227.52
-2012	Gulf	Central Gulf of Mexico	Oil	Condensate (bbl)	30902494.67
-2012	Gulf	Central Gulf of Mexico	Oil	Drip or Scrubber Condensate (bbl)	462698.43
-2012	Gulf	Central Gulf of Mexico	Oil	Oil (bbl)	377613903.65
-2012	Gulf	Central Gulf of Mexico	Gas	Fuel Gas (mcf)	12911859.72
-2012	Gulf	Central Gulf of Mexico	Gas	Gas Lost - Flared or Vented (mcf)	501224.38
-2012	Gulf	Central Gulf of Mexico	Oil	Inlet Scrubber (bbl)	154150.78
-2012	Gulf	Central Gulf of Mexico	Other	Salt (ton)	20410.00
-2012	Gulf	Central Gulf of Mexico	Oil	Other Liquid Hydrocarbons (bbl)	7622.17
-2012	Gulf	Central Gulf of Mexico	Other	Sulfur (lton)	81.30
-2012	Gulf	Eastern Gulf of Mexico	Oil	Condensate (bbl)	4889.11
-2012	Gulf	Eastern Gulf of Mexico	Gas	Unprocessed (Wet) Gas (mcf)	73230641.22
-2012	Gulf	Eastern Gulf of Mexico	Gas	Processed (Residue) Gas (mcf)	14242.86
-2012	Gulf	Western Gulf of Mexico	Gas	Processed (Residue) Gas (mcf)	194813559.99
-2012	Gulf	Western Gulf of Mexico	Gas	Unprocessed (Wet) Gas (mcf)	81550225.00
-2012	Gulf	Western Gulf of Mexico	NGL	Gas Plant Products (gal)	424286746.61
-2012	Gulf	Western Gulf of Mexico	Oil	Condensate (bbl)	22656731.90
-2012	Gulf	Western Gulf of Mexico	Oil	Drip or Scrubber Condensate (bbl)	244991.52
-2012	Gulf	Western Gulf of Mexico	Oil	Oil (bbl)	45626580.26
-2012	Gulf	Western Gulf of Mexico	Gas	Flash Gas (mcf)	334857.38
-2012	Gulf	Western Gulf of Mexico	Gas	Fuel Gas (mcf)	24604.60
-2012	Gulf	Western Gulf of Mexico	Oil	Inlet Scrubber (bbl)	2480.10
-2012	Pacific	Southern California	Gas	Fuel Gas (mcf)	13945.00
-2012	Pacific	Southern California	Gas	Processed (Residue) Gas (mcf)	9943325.40
-2012	Pacific	Southern California	Gas	Unprocessed (Wet) Gas (mcf)	2640365.43
-2012	Pacific	Southern California	NGL	Gas Plant Products (gal)	4264164.42
-2012	Pacific	Southern California	Oil	Condensate (bbl)	15315.66
-2012	Pacific	Southern California	Oil	Inlet Scrubber (bbl)	27166.36
-2012	Pacific	Southern California	Oil	Oil (bbl)	17589177.19
-2012	Pacific	Southern California	Other	Sulfur (lton)	2582.94
-2013	Alaska	Beaufort Sea	Oil	Oil (bbl)	652367.69
-2013	Gulf	Central Gulf of Mexico	Gas	Processed (Residue) Gas (mcf)	683868065.97
-2013	Gulf	Central Gulf of Mexico	Gas	Unprocessed (Wet) Gas (mcf)	229869010.69
-2013	Gulf	Central Gulf of Mexico	NGL	Gas Plant Products (gal)	1538035828.87
-2013	Gulf	Central Gulf of Mexico	Oil	Condensate (bbl)	25951706.51
-2013	Gulf	Central Gulf of Mexico	Oil	Drip or Scrubber Condensate (bbl)	374643.49
-2013	Gulf	Central Gulf of Mexico	Oil	Oil (bbl)	372802281.38
-2013	Gulf	Central Gulf of Mexico	Gas	Flash Gas (mcf)	1149081.72
-2013	Gulf	Central Gulf of Mexico	Gas	Fuel Gas (mcf)	13516976.22
-2013	Gulf	Central Gulf of Mexico	Gas	Gas Lost - Flared or Vented (mcf)	635439.72
-2013	Gulf	Central Gulf of Mexico	Oil	Inlet Scrubber (bbl)	225010.67
-2013	Gulf	Central Gulf of Mexico	Other	Salt (ton)	26546.00
-2013	Gulf	Central Gulf of Mexico	Oil	Other Liquid Hydrocarbons (bbl)	6481.36
-2013	Gulf	Central Gulf of Mexico	Other	Sulfur (lton)	69.22
-2013	Gulf	Eastern Gulf of Mexico	Oil	Condensate (bbl)	5719.85
-2013	Gulf	Eastern Gulf of Mexico	Gas	Unprocessed (Wet) Gas (mcf)	35533846.84
-2013	Gulf	Western Gulf of Mexico	Gas	Processed (Residue) Gas (mcf)	155062766.63
-2013	Gulf	Western Gulf of Mexico	Gas	Unprocessed (Wet) Gas (mcf)	66433705.57
-2013	Gulf	Western Gulf of Mexico	NGL	Gas Plant Products (gal)	399728852.95
-2013	Gulf	Western Gulf of Mexico	Oil	Condensate (bbl)	17404774.58
-2013	Gulf	Western Gulf of Mexico	Oil	Drip or Scrubber Condensate (bbl)	174435.14
-2013	Gulf	Western Gulf of Mexico	Oil	Oil (bbl)	45215446.82
-2013	Gulf	Western Gulf of Mexico	Gas	Flash Gas (mcf)	214770.83
-2013	Gulf	Western Gulf of Mexico	Gas	Fuel Gas (mcf)	44585.00
-2013	Gulf	Western Gulf of Mexico	Gas	Gas Lost - Flared or Vented (mcf)	8091.00
-2013	Gulf	Western Gulf of Mexico	Oil	Inlet Scrubber (bbl)	687.16
-2013	Pacific	Southern California	Gas	Fuel Gas (mcf)	2565.00
-2013	Pacific	Southern California	Gas	Processed (Residue) Gas (mcf)	10921851.14
-2013	Pacific	Southern California	Gas	Unprocessed (Wet) Gas (mcf)	1925816.68
-2013	Pacific	Southern California	NGL	Gas Plant Products (gal)	5131381.27
-2013	Pacific	Southern California	Oil	Condensate (bbl)	14306.76
-2013	Pacific	Southern California	Oil	Inlet Scrubber (bbl)	30890.96
-2013	Pacific	Southern California	Oil	Oil (bbl)	18623737.42
-2013	Pacific	Southern California	Other	Sulfur (lton)	2900.14
+2012	Alaska	Beaufort Sea		Oil (bbl)	695586.86
+2014	Alaska	Beaufort Sea		Oil (bbl)	740073.44
+2013	Alaska	Beaufort Sea		Oil (bbl)	752689.95
+2011	Alaska	Beaufort Sea		Oil (bbl)	1154070.32
+2010	Alaska	Beaufort Sea		Oil (bbl)	1383388.49
+2009	Alaska	Beaufort Sea		Oil (bbl)	1872793.49
+2007	Alaska	Beaufort Sea		Oil (bbl)	2475709.25
+2008	Alaska	Beaufort Sea		Oil (bbl)	2985742.13
+2006	Alaska	Beaufort Sea		Oil (bbl)	3367688.91
+2005	Alaska	Beaufort Sea		Oil (bbl)	4000050.90
+2012	Pacific	Southern California		Oil (bbl)	17685001.00
+2014	Pacific	Southern California		Oil (bbl)	18506540.00
+2013	Pacific	Southern California		Oil (bbl)	18571781.00
+2011	Pacific	Southern California		Oil (bbl)	19820268.00
+2010	Pacific	Southern California		Oil (bbl)	21710971.00
+2009	Pacific	Southern California		Oil (bbl)	22306733.00
+2012	Alaska	Beaufort Sea		Gas (mcf)	23913986.35
+2008	Pacific	Southern California		Oil (bbl)	24031967.00
+2007	Pacific	Southern California		Oil (bbl)	24624090.00
+2005	Alaska	Beaufort Sea		Gas (mcf)	25218516.42
+2006	Alaska	Beaufort Sea		Gas (mcf)	25229357.44
+2008	Gulf	Western Gulf of Mexico		Oil (bbl)	25732984.00
+2006	Pacific	Southern California		Oil (bbl)	25992104.00
+2005	Pacific	Southern California		Oil (bbl)	26542513.00
+2007	Alaska	Beaufort Sea		Gas (mcf)	26817788.22
+2012	Pacific	Southern California		Gas (mcf)	27267648.00
+2013	Pacific	Southern California		Gas (mcf)	27494558.00
+2014	Pacific	Southern California		Gas (mcf)	28313384.00
+2009	Gulf	Western Gulf of Mexico		Oil (bbl)	29415979.00
+2010	Gulf	Western Gulf of Mexico		Oil (bbl)	29939476.00
+2009	Alaska	Beaufort Sea		Gas (mcf)	30708137.44
+2010	Alaska	Beaufort Sea		Gas (mcf)	30919154.08
+2013	Alaska	Beaufort Sea		Gas (mcf)	31750054.55
+2008	Alaska	Beaufort Sea		Gas (mcf)	32926351.37
+2007	Gulf	Western Gulf of Mexico		Oil (bbl)	33421155.00
+2011	Alaska	Beaufort Sea		Gas (mcf)	34305968.49
+2014	Alaska	Beaufort Sea		Gas (mcf)	34766100.56
+2006	Gulf	Western Gulf of Mexico		Oil (bbl)	35198190.00
+2011	Pacific	Southern California		Gas (mcf)	36596806.00
+2011	Gulf	Western Gulf of Mexico		Oil (bbl)	38146320.00
+2009	Pacific	Southern California		Gas (mcf)	41233098.00
+2010	Pacific	Southern California		Gas (mcf)	41257256.00
+2005	Gulf	Western Gulf of Mexico		Oil (bbl)	42195314.00
+2007	Pacific	Southern California		Gas (mcf)	45563230.00
+2008	Pacific	Southern California		Gas (mcf)	46906273.00
+2006	Pacific	Southern California		Gas (mcf)	47153866.00
+2012	Gulf	Western Gulf of Mexico		Oil (bbl)	51532543.00
+2013	Gulf	Western Gulf of Mexico		Oil (bbl)	52285111.00
+2014	Gulf	Western Gulf of Mexico		Oil (bbl)	53171356.89
+2005	Pacific	Southern California		Gas (mcf)	54185608.00
+2014	Gulf	Western Gulf of Mexico		Gas (mcf)	144917234.91
+2013	Gulf	Western Gulf of Mexico		Gas (mcf)	145202610.00
+2012	Gulf	Western Gulf of Mexico		Gas (mcf)	173417391.00
+2011	Gulf	Western Gulf of Mexico		Gas (mcf)	194426169.00
+2010	Gulf	Western Gulf of Mexico		Gas (mcf)	223412501.00
+2008	Gulf	Western Gulf of Mexico		Gas (mcf)	236592361.00
+2009	Gulf	Western Gulf of Mexico		Gas (mcf)	241812701.00
+2007	Gulf	Western Gulf of Mexico		Gas (mcf)	325366229.00
+2008	Gulf	Central Gulf of Mexico		Oil (bbl)	397607106.80
+2013	Gulf	Central Gulf of Mexico		Oil (bbl)	406605488.90
+2012	Gulf	Central Gulf of Mexico		Oil (bbl)	412990273.28
+2006	Gulf	Western Gulf of Mexico		Gas (mcf)	414581474.00
+2005	Gulf	Central Gulf of Mexico		Oil (bbl)	424605270.29
+2007	Gulf	Central Gulf of Mexico		Oil (bbl)	434493308.11
+2006	Gulf	Central Gulf of Mexico		Oil (bbl)	436616793.20
+2011	Gulf	Central Gulf of Mexico		Oil (bbl)	443529006.34
+2014	Gulf	Central Gulf of Mexico		Oil (bbl)	457106569.85
+2005	Gulf	Western Gulf of Mexico		Gas (mcf)	481187574.00
+2010	Gulf	Central Gulf of Mexico		Oil (bbl)	536641476.26
+2009	Gulf	Central Gulf of Mexico		Oil (bbl)	540795562.19
+2014	Gulf	Central Gulf of Mexico		Gas (mcf)	1131318413.94
+2013	Gulf	Central Gulf of Mexico		Gas (mcf)	1182082008.07
+2012	Gulf	Central Gulf of Mexico		Gas (mcf)	1361360410.17
+2011	Gulf	Central Gulf of Mexico		Gas (mcf)	1631690565.52
+2010	Gulf	Central Gulf of Mexico		Gas (mcf)	2026632579.70
+2008	Gulf	Central Gulf of Mexico		Gas (mcf)	2093741269.82
+2009	Gulf	Central Gulf of Mexico		Gas (mcf)	2208872645.85
+2007	Gulf	Central Gulf of Mexico		Gas (mcf)	2487826867.40
+2006	Gulf	Central Gulf of Mexico		Gas (mcf)	2506689668.91
+2005	Gulf	Central Gulf of Mexico		Gas (mcf)	2672475139.13

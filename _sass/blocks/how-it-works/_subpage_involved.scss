@@ -1,0 +1,72 @@
+// Revenues Subpage Involved Section
+//
+// This block is where we post videos and social
+// media links on how to become involved
+//
+// Styleguide blocks.how-it-works.subpage_involved
+
+.revenues_subpage-involved {
+  background-color: $white;
+  padding-bottom: $base-padding-large;
+  padding-top: $base-padding-extra;
+
+  h2 {
+    color: $light-black;
+    font-weight: $weight-light;
+  }
+
+  h3 {
+    color: $blue;
+    font-weight: $weight-light;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  p {
+    @include heading(para-md);
+    margin-bottom: $base-padding-large;
+  }
+
+  .fa-stack {
+    line-height: 2.1em;
+  }
+}
+
+.revenues_subpage-involved_option {
+  @include respond-to(small-up) {
+    @include span-columns(4 of 8);
+    @include omega(2n);
+  }
+
+  @include respond-to(medium-up) {
+    @include omega-reset(2n);
+    @include span-columns(3 of 12);
+    @include omega(4n);
+  }
+}
+
+.revenues_subpage-involved_participate {
+
+  .container-half-space {
+    padding-right: $base-padding;
+  }
+
+  @include respond-to(medium-up) {
+    .container-half-space_top {
+      padding-top: $base-padding-extra;
+    }
+  }
+}
+
+.revenues_subpage-involved_video {
+
+  iframe {
+    padding-bottom: $base-padding;
+  }
+
+  @include respond-to(medium-up) {
+    iframe {
+      width: 100%;
+    }
+  }
+}

@@ -1,8 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Basic Page Needs
+    ================================================== -->
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="OxyG3U-Vtui-uK6wHUeOw83OgdfcfxvsWWZcb5x7aZ0" />
     <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Twitter and OpenGraph data
+    ================================================== -->
+    <!-- type -->
+    <meta property="og:type" content="website">
+
+    <!-- title -->
+    {% if page.title %}
+      <title>{{ page.title }}</title>
+      <meta property="og:title" content="{{ page.title | xml_escape }}" />
+      <meta name="twitter:title" content="{{ page.title | xml_escape }}">
+    {% else %}
+      <title>{{ site.title }}</title>
+      <meta property="og:title" content="{{ site.title | xml_escape }}" />
+      <meta name="twitter:title" content="{{ site.title | xml_escape }}">
+    {% endif %}
+
+    <!-- url -->
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+    <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+
+    <!-- img -->
+    <meta property="og:img" content="{{ site.url }}/img/explore-home-revenue.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="{{ site.url }}/explore-home-revenue.png">
+
+    <!-- description -->
+    <meta property="og:description" content="{{ site.description }}">
+    <meta name="twitter:description" content="{{ site.description }}">
+
+    <!-- Favicons
+    ================================================== -->
+    <link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/img/favicon.ico">
+    <link rel="icon" type="image/png" href="{{ site.baseurl }}/img/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="{{ site.baseurl }}/img/favicon-32x32.png" sizes="32x32">
+
+    <!-- Styles
+    ================================================== -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
+
+    <!-- Scripts
+    ================================================== -->
 
     <!-- 3rd party dependencies -->
     <script src="{{ site.baseurl }}/js/vendor/d3.v3.min.js"></script>
@@ -10,106 +62,65 @@
     <script src="{{ site.baseurl }}/js/vendor/topojson.v1.min.js"></script>
     <script src="{{ site.baseurl }}/js/vendor/datalib.min.js"></script>
     <script src="{{ site.baseurl }}/js/vendor/colorbrewer.js"></script>
+    <script src="{{ site.baseurl }}/js/vendor/jquery.min.js"></script>
 
     <!-- custom map projection -->
     <script src="{{ site.baseurl }}/js/albers-custom.js"></script>
 
     <!-- EITI libs -->
     <script src="{{ site.baseurl }}/js/eiti.js"></script>
+    <script>
+      eiti.data.path = '{{ site.baseurl }}/data/';
+      eiti.commodities = ({{ site.data.commodities|jsonify }});
+      eiti.resource = ({{ site.data.resource|jsonify }});
+    </script>
 
     <!-- custom elements -->
     <script src="{{ site.baseurl }}/js/vendor/document-register-element.js"></script>
     <script src="{{ site.baseurl }}/js/components/eiti-map.js"></script>
     <script src="{{ site.baseurl }}/js/components/eiti-slider.js"></script>
+    <script src="{{ site.baseurl }}/js/components/eiti-toggle.js"></script>
+    <script src="{{ site.baseurl }}/js/components/search.js"></script>
 
-    <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
+    <!-- Glossary -->
+    <script src="{{ site.baseurl }}/js/vendor/lodash.min.js"></script>
+    <script src="{{ site.baseurl }}/js/vendor/list.min.js"></script>
+
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-48605964-8', 'auto');
+      ga('set', 'anonymizeIp', true);
+      ga('set', 'forceSSL', true);
+      ga('send', 'pageview');
+    </script>
+
   </head>
 
   <body class="{{ page.body_class }}">
+    {% include layout/banner.html %}
 
-    <header class="container">
-
-      <div>
-        <h1><a href="/"><img src="{{ site.baseurl }}/img/USEITI_Logotype.png" alt="USEITI logo"></a></h1>
-      </div>
-
-      <nav>
-        <ul>
-          <li><a href="{{ site.baseurl }}/">Home</a></li>
-          <li><a href="{{ site.baseurl }}/about">About</a></li>
-          <li><a href="{{ site.baseurl }}/data">Data</a></li>
-          <li><a href="{{ site.baseurl }}/reports">Executive Summary</a></li>
-          <li class="search">
-            <label>Search <input type="search" name="query"></label>
-          </li>
-        </ul>
-      </nav>
-
-    </header>
+    {% include layout/header.html %}
 
     <main>
+      {% include glossary.html %}
+      {% include layout/nav-drawer.html %}
+
       {{ content }}
     </main>
 
-    <footer>
+    {% include layout/footer.html %}
 
-      <div class="container footer-col_containter">
-
-        <div class="footer-col">
-
-          <ul>
-            <li><a href="{{ site.baseurl }}/">Home</a></li>
-            <li><a href="{{ site.baseurl }}/about">About USEITI</a></li>
-            <li><a href="{{ site.baseurl }}#">Data</a></li>
-            <li><a href="{{ site.baseurl }}/reports">Executive Summary</a></li>
-            <li><a href="{{ site.baseurl }}/reports">Reconciliation</a></li>
-            <li><a href="{{ site.baseurl }}#">Search</a></li>
-            <li><a href="{{ site.baseurl }}#">Glossary</a></li>
-          </ul>
-
-        </div>
-
-        <div class="footer-col">
-
-          <ul>
-            <li><a href="{{ site.baseurl }}#">What resources do we have in the U.S.?</a></li>
-            <li><a href="{{ site.baseurl }}/resources/#all/revenue/US">Where is extraction taking place?</a></li>
-            <li><a href="{{ site.baseurl }}#">How much do these resources contribute to our economy?</a></li>
-            <li><a href="{{ site.baseurl }}#">What do revenues help fund?</a></li>
-            <li><a href="{{ site.baseurl }}#">What companies work in these industries? What revenues do they pay?</a></li>
-            <li><a href="{{ site.baseurl }}/communities">How do extractive industries impact communities like mine?</a></li>
-          </ul>
-
-        </div>
-
-        <div class="footer-col">
-
-          <ul>
-            <li><a href="{{ site.baseurl }}/resource_revenues">How do natural resources result in federal revenues?</a></li>
-            <li><a href="{{ site.baseurl }}#">How are natural resources governed on federal lands?</a></li>
-            <li><a href="{{ site.baseurl }}#">How are natural resources governed on tribal lands?</a></li>
-            <li><a href="{{ site.baseurl }}#">How are natural resources governed on state lands?</a></li>
-          </ul>
-
-        </div>
-
-        <div class="footer-col-right">
-
-          <h3>Questions?</h3>
-
-          <p>Contact the Department of the Interior's Office of Natural Resources Revenue about natural resource revenues at <a href="mailto:useiti@ios.doi.gov">useiti@ios.doi.gov</a>.</p>
-
-          <h3>See our work</h3>
-
-          <p>This site is powered by <a href="{{ site.baseurl }}#">USEITI Data</a>. Site code is open source, too: see our work on <a href="https://github.com/18F/doi-extractives-data/">GitHub</a>. We welcome issues and pull requests!</p>
-
-        </div>
-
-      </div>
-
-    </footer>
-    
+    <script src="{{ site.baseurl }}/js/components/glossary.js"></script>
     {{ page.script }}
+
+    <!-- Digital Analytics Program roll-up, see the data at https://analytics.usa.gov -->
+    <script src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js" id="_fed_an_ua_tag"></script>
+
   </body>
 
 </html>

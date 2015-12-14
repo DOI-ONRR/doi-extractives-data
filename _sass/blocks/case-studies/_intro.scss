@@ -1,0 +1,50 @@
+// Case Studies Intro
+//
+// The intro is the introduction to the /case-studies/ page
+//
+// Styleguide blocks.case-studies.intro
+
+.case_studies_intro {
+  background-color: $white;
+  padding-top: $base-padding;
+  padding-bottom: $base-padding;
+}
+
+.case_studies_intro-heading {
+  padding-right: $base-padding;
+  margin-bottom: $base-padding-lite;
+  padding-bottom: $base-padding-lite;
+}
+
+.case_studies_intro-para {
+  @include heading('para-xl');
+	margin-bottom: $base-padding;
+}
+
+.case_studies_intro-image {
+  max-width: 420px;
+  width: 100%;
+}
+
+.case_studies_intro-image_key {
+  border-top: 2px solid $mid-gray;
+  margin-top: $base-padding;
+  padding-top: $base-padding-lite;
+}
+
+.case_studies_intro-select {
+  max-width: 400px;
+  padding-top: $base-padding-lite;
+  width: 100%;
+
+  select {
+    height: 40px;
+  }
+}
+
+.case_studies-selected_counties {
+  path.feature { //highlighted county features
+    fill: $green;
+    stroke: $white;
+  }
+}

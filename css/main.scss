@@ -1,3 +1,19 @@
 ---
+# Jekyll only builds Sass files with front matter
 ---
-@import 'main';
+
+// include reset
+@import 'reset';
+
+// include Bourbon & Neat
+@import 'lib/bourbon/bourbon';
+@import 'lib/neat/neat';
+
+// include site specific base styles
+@import 'base';
+
+// include fonts (and @import font-face declarations from /css/fonts)
+@import 'fonts';
+
+// include FontAwesome Sass variables, etc.
+@import 'lib/font-awesome/font-awesome';

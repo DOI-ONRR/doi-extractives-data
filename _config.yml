@@ -1,21 +1,33 @@
-title: US EITI
+title: USEITI
+
+description: USEITI is part of an international effort to promote open and accountable management of natural resources. This site provides data about how the U.S. manages extractive industries.
+
+# permanent url, for use in meta references
+url: https://useiti.doi.gov
 
 sass:
-  style: compressed
+  style: nested
+  sass_dir: _sass
 
 exclude:
-- bin
-- lib
-- node_modules
-- package.json
-- routes.yml
-- server.js
-- show
-- styles
-- test
-- views
+  - lib
+  - node_modules
+  - package.json
+  - show
+  - test
+  - styleguide-template
+  - 'Gemfile*'
 
 collections:
-  communities:
+  case-studies:
     output: true
-    permalink: /communities/:community/
+    permalink: /case-studies/:case-study/
+  explore:
+    output: true
+    permalink: /explore/:explore/
+  how-it-works:
+    output: true
+    permalink: /how-it-works/:subpage/
+  downloads:
+    output: true
+    permalink: /downloads/:subpage/

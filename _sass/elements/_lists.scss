@@ -1,0 +1,74 @@
+// Lists
+//
+// Default list markup
+//
+// Markup:
+// <ul class="list-bullet">
+// 	<li>Bulleted list</li>
+// </ul>
+// <ol class="list-decimal">
+// 	<li>Decimal list</li>
+// </ol>
+// <ul class="list-nested">
+//  <li>List</li>
+//  <ul>
+//    <li>Nested List</li>
+//  </ul>
+// </ul>
+//
+// Styleguide elements.lists
+
+%list-indented {
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: $base-padding;
+}
+
+.list-square {
+  @extend %list-indented;
+
+  list-style-type: square;
+
+  li {
+    padding-bottom: $base-padding-lite;
+  }
+}
+
+.list-bullet {
+  @extend %list-indented;
+
+  list-style-type: disc;
+
+  li {
+    padding-bottom: $base-padding-lite;
+  }
+}
+
+.list-decimal {
+  @extend %list-indented;
+
+  list-style-type: decimal;
+
+  li {
+    padding-bottom: $base-padding-lite;
+  }
+}
+
+ul {
+  font-weight: $weight-light;
+}
+
+.list-nested {
+  @extend .list-bullet;
+
+  ul {
+    @extend .list-square;
+  }
+}
+
+.list-sections {
+  li {
+    padding-bottom: $base-padding;
+  }
+}

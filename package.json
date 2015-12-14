@@ -30,12 +30,19 @@
     "yargs": "^3.7.1"
   },
   "devDependencies": {
-    "mocha": "^2.3.3"
+    "jshint": "^2.8.0",
+    "kss": "^2.1.0",
+    "mocha": "^2.3.3",
+    "npm-exec": "^0.1.3"
   },
   "scripts": {
     "test": "mocha",
-    "start": "node server.js",
-    "watch": "watchy -w '**/*.js,lib,routes.yml' -- node server.js"
+    "watch": "watchy -w '_sass' -- npm run build-styleguide",
+    "build-styleguide": "rm -rf styleguide && kss-node --config kss-config.json && cd styleguide-template/ && npm run less",
+    "init-styleguide": "npm-exec kss-node --config kss-config.json",
+    "lint": "(npm run lint-js; npm run lint-scss) || echo '(there were linting errors)'",
+    "lint-js": "jshint -c .jshintrc --exclude-path .jshintignore js || echo '(there were JavaScript linting errors)'",
+    "lint-scss": "bundle exec scss-lint -c .scss-lint.yml || echo '(there were SCSS linting errors)'"
   },
   "repository": {
     "type": "git",

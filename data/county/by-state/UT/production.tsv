@@ -1,0 +1,408 @@
+Year	State	County	FIPS	Commodity	Product	Volume
+2012	UT	Daggett County	49009		Oil (bbl)	41.58
+2007	UT	Daggett County	49009		Oil (bbl)	45.96
+2009	UT	Daggett County	49009		Oil (bbl)	47.62
+2013	UT	Daggett County	49009		Oil (bbl)	52.47
+2010	UT	Daggett County	49009		Oil (bbl)	57.33
+2005	UT	Carbon County	49007		Oil (bbl)	62
+2011	UT	Daggett County	49009		Oil (bbl)	74.15
+2005	UT	San Juan County	49037		Oil (bbl)	91
+2006	UT	Daggett County	49009		Oil (bbl)	91.33
+2008	UT	Daggett County	49009		Oil (bbl)	93.58
+2014	UT	Daggett County	49009		Oil (bbl)	113.7
+2005	UT	Daggett County	49009		Oil (bbl)	156.83
+2009	UT	Duchesne County	49013		Oil (bbl)	216
+2012	UT	Carbon County	49007		Oil (bbl)	537
+2007	UT	Duchesne County	49013		Gas (mcf)	816
+2006	UT	Duchesne County	49013		Oil (bbl)	839
+2012	UT	Duchesne County	49013		Oil (bbl)	873.5
+2014	UT	Emery County	49015		Oil (bbl)	992.43
+2008	UT	Duchesne County	49013		Oil (bbl)	1271
+2006	UT	Carbon County	49007		Oil (bbl)	1321
+2011	UT	Carbon County	49007		Oil (bbl)	1538
+2013	UT	Emery County	49015		Oil (bbl)	1545.13
+2012	UT	Grand County	49019		Gas (mcf)	1632.5
+2007	UT	Duchesne County	49013		Oil (bbl)	1797
+2007	UT	Emery County	49015		Oil (bbl)	2002.46
+2012	UT	Emery County	49015		Oil (bbl)	2101.06
+2014	UT	Salt Lake County	49035		Oil (bbl)	2193.99
+2006	UT	Duchesne County	49013		Gas (mcf)	2297
+2012	UT	Grand County	49019		Oil (bbl)	2356
+2006	UT	Uintah County	49047		Oil (bbl)	2364
+2014	UT	Salt Lake County	49035		Gas (mcf)	2561.74
+2006	UT	San Juan County	49037		Oil (bbl)	2597
+2011	UT	Emery County	49015		Oil (bbl)	2905.56
+2005	UT	Emery County	49015		Oil (bbl)	3164.63
+2010	UT	San Juan County	49037		Oil (bbl)	3278
+2012	UT	Salt Lake County	49035		Gas (mcf)	3448.38
+2009	UT	Washington County	49053		Gas (mcf)	3630
+2013	UT	Duchesne County	49013		Gas (mcf)	3657.85
+2006	UT	Emery County	49015		Oil (bbl)	3703.11
+2013	UT	Salt Lake County	49035		Oil (bbl)	3872.04
+2014	UT	Washington County	49053		Gas (mcf)	3899
+2011	UT	Washington County	49053		Gas (mcf)	3998
+2012	UT	Washington County	49053		Gas (mcf)	4035
+2010	UT	Washington County	49053		Gas (mcf)	4047
+2013	UT	Washington County	49053		Gas (mcf)	4129
+2012	UT	Salt Lake County	49035		Oil (bbl)	4351.38
+2007	UT	Washington County	49053		Gas (mcf)	4365
+2008	UT	Washington County	49053		Gas (mcf)	4648
+2006	UT	Washington County	49053		Gas (mcf)	4712
+2013	UT	Salt Lake County	49035		Gas (mcf)	4800
+2008	UT	Sanpete County	49039		Oil (bbl)	4824
+2005	UT	Washington County	49053		Gas (mcf)	5445
+2008	UT	Carbon County	49007		Oil (bbl)	5634
+2010	UT	Duchesne County	49013		Oil (bbl)	5659
+2011	UT	Duchesne County	49013		Oil (bbl)	5904
+2010	UT	Emery County	49015		Oil (bbl)	6100
+2008	UT	Emery County	49015		Oil (bbl)	6584
+2007	UT	Carbon County	49007		Oil (bbl)	7357
+2013	UT	Garfield County	49017		Gas (mcf)	7625
+2005	UT	Carbon County	49007		Oil (bbl)	7847
+2009	UT	San Juan County	49037		Oil (bbl)	7867
+2005	UT	Uintah County	49047		Gilsonite (tons)	8041
+2014	UT	Garfield County	49017		Gas (mcf)	8350
+2014	UT	Duchesne County	49013		Oil (bbl)	8610.57
+2006	UT	Uintah County	49047		Gilsonite (tons)	8776
+2005	UT	Garfield County	49017		Gas (mcf)	9125
+2006	UT	Garfield County	49017		Gas (mcf)	9125
+2009	UT	Garfield County	49017		Gas (mcf)	9125
+2010	UT	Garfield County	49017		Gas (mcf)	9125
+2011	UT	Garfield County	49017		Gas (mcf)	9125
+2007	UT	Garfield County	49017		Gas (mcf)	9131
+2008	UT	Garfield County	49017		Gas (mcf)	9150
+2012	UT	Garfield County	49017		Gas (mcf)	9150
+2008	UT	San Juan County	49037		Oil (bbl)	9167
+2007	UT	San Juan County	49037		Oil (bbl)	10066
+2005	UT	Uintah County	49047		Oil (bbl)	10765
+2013	UT	Duchesne County	49013		Oil (bbl)	10780.2
+2007	UT	Uintah County	49047		Gilsonite (tons)	10879
+2009	UT	Grand County	49019		Gas (mcf)	10998.5
+2009	UT	Emery County	49015		Oil (bbl)	11009
+2005	UT	San Juan County	49037		Gas (mcf)	12517
+2014	UT	Duchesne County	49013		Gas (mcf)	12680.53
+2009	UT	Uintah County	49047		Gilsonite (tons)	13016
+2011	UT	Summit County	49043		Oil (bbl)	13369.02
+2014	UT	San Juan County	49037		Oil (bbl)	14510
+2011	UT	Duchesne County	49013		Gas (mcf)	14787
+2012	UT	Summit County	49043		Oil (bbl)	15089.02
+2012	UT	Uintah County	49047		Oil (bbl)	15268.5
+2011	UT	San Juan County	49037		Oil (bbl)	15752
+2010	UT	Summit County	49043		Oil (bbl)	15929.72
+2009	UT	Sanpete County	49039		Oil (bbl)	16549
+2008	UT	Uintah County	49047		Gilsonite (tons)	16957
+2008	UT	Sanpete County	49039		Gas (mcf)	19116
+2009	UT	Summit County	49043		Oil (bbl)	19333.63
+2014	UT	Utah County	49049		Gas (mcf)	20440.75
+2013	UT	San Juan County	49037		Oil (bbl)	21855
+2013	UT	Utah County	49049		Gas (mcf)	22467.99
+2005	UT	Utah County	49049		Gas (mcf)	22617.14
+2012	UT	Utah County	49049		Gas (mcf)	23547.86
+2013	UT	Grand County	49019		Gas (mcf)	24425
+2012	UT	San Juan County	49037		Oil (bbl)	25017
+2013	UT	Uintah County	49047		Oil (bbl)	25525.8
+2006	UT	Carbon County	49007		Oil (bbl)	25930.62
+2011	UT	Utah County	49049		Gas (mcf)	27732.33
+2010	UT	Uintah County	49047		Gilsonite (tons)	28082
+2007	UT	Grand County	49019		Oil (bbl)	28263
+2013	UT	Summit County	49043		Oil (bbl)	28291.32
+2010	UT	Utah County	49049		Gas (mcf)	30605.3
+2014	UT	Uintah County	49047		Oil (bbl)	31640.43
+2006	UT	Grand County	49019		Gas (mcf)	32256
+2013	UT	Carbon County	49007		Oil (bbl)	32601.53
+2014	UT	Summit County	49043		Oil (bbl)	32743.22
+2014	UT	Piute County	49031		Clay (tons)	33520
+2009	UT	Utah County	49049		Gas (mcf)	34867.26
+2012	UT	Uintah County	49047		Gilsonite (tons)	35927
+2007	UT	Grand County	49019		Gas (mcf)	37312
+2007	UT	Carbon County	49007		Oil (bbl)	37376.39
+2008	UT	Summit County	49043		Oil (bbl)	38118.49
+2008	UT	Utah County	49049		Gas (mcf)	39595.83
+2007	UT	Summit County	49043		Oil (bbl)	40314.96
+2010	UT	Carbon County	49007		Oil (bbl)	40983.51
+2007	UT	Utah County	49049		Gas (mcf)	41115.64
+2013	UT	Daggett County	49009		Gas (mcf)	42808.98
+2006	UT	Utah County	49049		Gas (mcf)	42858.75
+2008	UT	Carbon County	49007		Oil (bbl)	44430.78
+2011	UT	Uintah County	49047		Gas (mcf)	45072
+2014	UT	Grand County	49019		Oil (bbl)	45321.93
+2006	UT	Summit County	49043		Oil (bbl)	46644.23
+2006	UT	Grand County	49019		Oil (bbl)	48570
+2008	UT	Grand County	49019		Oil (bbl)	48698
+2005	UT	Summit County	49043		Oil (bbl)	49997.5
+2011	UT	Uintah County	49047		Oil (bbl)	50857
+2014	UT	Carbon County	49007		Oil (bbl)	51419.71
+2014	UT	Grand County	49019		Gas (mcf)	57473
+2008	UT	Duchesne County	49013		Gas (mcf)	57936
+2011	UT	Carbon County	49007		Oil (bbl)	60404.62
+2009	UT	Carbon County	49007		Oil (bbl)	62300.88
+2012	UT	Carbon County	49007		Oil (bbl)	64365.62
+2007	UT	Daggett County	49009		Gas (mcf)	64832.08
+2012	UT	Daggett County	49009		Gas (mcf)	64959.49
+2008	UT	Uintah County	49047		Oil (bbl)	65240
+2013	UT	Grand County	49019		Oil (bbl)	65744
+2009	UT	Sanpete County	49039		Gas (mcf)	66297
+2007	UT	Uintah County	49047		Oil (bbl)	66904
+2011	UT	Grand County	49019		Oil (bbl)	69171.57
+2009	UT	Uintah County	49047		Oil (bbl)	69485
+2009	UT	Daggett County	49009		Gas (mcf)	69727.58
+2006	UT	Grand County	49019		Oil (bbl)	72886.44
+2008	UT	Grand County	49019		Gas (mcf)	74651.5
+2005	UT	Grand County	49019		Oil (bbl)	78080.79
+2005	UT	Grand County	49019		Gas (mcf)	78866
+2010	UT	Uintah County	49047		Oil (bbl)	86434
+2007	UT	Grand County	49019		Oil (bbl)	92409.05
+2010	UT	Grand County	49019		Oil (bbl)	92607.45
+2010	UT	Duchesne County	49013		Gas (mcf)	95613
+2005	UT	Carbon County	49007		Gas (mcf)	112091
+2011	UT	Daggett County	49009		Gas (mcf)	114416.12
+2006	UT	San Juan County	49037		Gas (mcf)	115685
+2005	UT	Grand County	49019		Oil (bbl)	116779
+2009	UT	Grand County	49019		Oil (bbl)	120231.54
+2010	UT	Uintah County	49047		Gas (mcf)	121249
+2010	UT	Daggett County	49009		Gas (mcf)	121554.76
+2014	UT	Summit County	49043		Gas (mcf)	123284.84
+2014	UT	Grand County	49019		Oil (bbl)	123569
+2010	UT	Summit County	49043		Gas (mcf)	126854.89
+2013	UT	Summit County	49043		Gas (mcf)	126874.12
+2008	UT	Daggett County	49009		Gas (mcf)	131472.02
+2012	UT	Summit County	49043		Gas (mcf)	134383.09
+2006	UT	Daggett County	49009		Gas (mcf)	141716.78
+2009	UT	Summit County	49043		Gas (mcf)	144673.92
+2013	UT	Garfield County	49017		Oil (bbl)	152558
+2014	UT	Garfield County	49017		Oil (bbl)	153002
+2012	UT	Garfield County	49017		Oil (bbl)	154566
+2011	UT	Summit County	49043		Gas (mcf)	157841.9
+2011	UT	Garfield County	49017		Oil (bbl)	166534
+2005	UT	Daggett County	49009		Gas (mcf)	169676.85
+2010	UT	Garfield County	49017		Oil (bbl)	169698
+2014	UT	Daggett County	49009		Gas (mcf)	174630.17
+2009	UT	Garfield County	49017		Oil (bbl)	175154
+2008	UT	Garfield County	49017		Oil (bbl)	177709
+2007	UT	Garfield County	49017		Oil (bbl)	188678
+2006	UT	Garfield County	49017		Oil (bbl)	190862
+2005	UT	Garfield County	49017		Oil (bbl)	197778
+2008	UT	Grand County	49019		Oil (bbl)	209586.88
+2006	UT	Summit County	49043		Gas (mcf)	223155.73
+2008	UT	Summit County	49043		Gas (mcf)	235940.84
+2007	UT	Summit County	49043		Gas (mcf)	239905.87
+2005	UT	Summit County	49043		Gas (mcf)	252377.23
+2014	UT	Uintah County	49047		Gas (mcf)	256147.47
+2006	UT	Uintah County	49047		Gas (mcf)	267051
+2009	UT	San Juan County	49037		Oil (bbl)	281932.32
+2006	UT	San Juan County	49037		Oil (bbl)	289894.29
+2007	UT	San Juan County	49037		Oil (bbl)	290524.64
+2008	UT	San Juan County	49037		Oil (bbl)	292851.53
+2012	UT	Uintah County	49047		Gas (mcf)	294640.5
+2012	UT	Grand County	49019		Oil (bbl)	296958.07
+2010	UT	San Juan County	49037		Oil (bbl)	316513.72
+2005	UT	San Juan County	49037		Oil (bbl)	320956.52
+2013	UT	Uintah County	49047		Gas (mcf)	334268.15
+2014	UT	San Juan County	49037		Gas (mcf)	346543
+2013	UT	San Juan County	49037		Oil (bbl)	415355.43
+2014	UT	San Juan County	49037		Oil (bbl)	422453.31
+2012	UT	San Juan County	49037		Oil (bbl)	428927.4
+2011	UT	San Juan County	49037		Oil (bbl)	429126.22
+2011	UT	San Juan County	49037		Gas (mcf)	465875
+2010	UT	Emery County	49015		Coal (tons)	472904
+2013	UT	San Juan County	49037		Gas (mcf)	523654
+2013	UT	Grand County	49019		Oil (bbl)	546620.94
+2005	UT	Sevier County	49041		Oil (bbl)	563098.48
+2009	UT	Uintah County	49047		Gas (mcf)	566430.5
+2007	UT	Uintah County	49047		Gas (mcf)	583888
+2012	UT	Carbon County	49007		Gas (mcf)	600944
+2009	UT	Duchesne County	49013		Gas (mcf)	620026
+2005	UT	Uintah County	49047		Gas (mcf)	655740
+2008	UT	Uintah County	49047		Gas (mcf)	698290.5
+2009	UT	Emery County	49015		Coal (tons)	843830.73
+2012	UT	San Juan County	49037		Gas (mcf)	902030
+2008	UT	Emery County	49015		Coal (tons)	948569.14
+2006	UT	Carbon County	49007		Gas (mcf)	1007790
+2010	UT	San Juan County	49037		Gas (mcf)	1134777
+2011	UT	Carbon County	49007		Gas (mcf)	1171918
+2014	UT	Sevier County	49041		Oil (bbl)	1251918.12
+2007	UT	Emery County	49015		Coal (tons)	1408410.58
+2007	UT	Sevier County	49041		Oil (bbl)	1418250.02
+2013	UT	Sevier County	49041		Oil (bbl)	1466894.28
+2007	UT	San Juan County	49037		Gas (mcf)	1647880
+2006	UT	Sevier County	49041		Oil (bbl)	1661270.87
+2008	UT	Sevier County	49041		Oil (bbl)	1665708.7
+2012	UT	Sevier County	49041		Oil (bbl)	1726199.58
+2006	UT	Duchesne County	49013		Oil (bbl)	1855374.68
+2005	UT	Duchesne County	49013		Oil (bbl)	1875729.3
+2006	UT	Emery County	49015		Coal (tons)	1902777.93
+2011	UT	Sevier County	49041		Oil (bbl)	1961412.96
+2010	UT	Sevier County	49041		Oil (bbl)	2039666.01
+2009	UT	Sevier County	49041		Oil (bbl)	2365384.33
+2011	UT	Emery County	49015		Coal (tons)	2399827
+2010	UT	Duchesne County	49013		Oil (bbl)	2478103.25
+2011	UT	Duchesne County	49013		Oil (bbl)	2533855.56
+2005	UT	Uintah County	49047		Oil (bbl)	2680918.69
+2007	UT	Duchesne County	49013		Oil (bbl)	2762987.92
+2012	UT	Duchesne County	49013		Oil (bbl)	2848767.33
+2006	UT	Uintah County	49047		Oil (bbl)	2948057.17
+2009	UT	San Juan County	49037		Gas (mcf)	2950011
+2014	UT	Grand County	49019		Gas (mcf)	2984411.57
+2011	UT	Grand County	49019		Gas (mcf)	3039206.85
+2013	UT	Duchesne County	49013		Oil (bbl)	3063167.13
+2013	UT	Millard County	49027		Geothermal - Electrical Generation, Kilowatt Hours	3078555.18
+2014	UT	Emery County	49015		Coal (tons)	3127674
+2012	UT	Grand County	49019		Gas (mcf)	3196173.21
+2010	UT	Grand County	49019		Gas (mcf)	3231011.24
+2013	UT	Grand County	49019		Gas (mcf)	3263015.97
+2014	UT	Duchesne County	49013		Oil (bbl)	3295156.66
+2008	UT	San Juan County	49037		Gas (mcf)	3307404
+2008	UT	Duchesne County	49013		Oil (bbl)	3312242.05
+2007	UT	Uintah County	49047		Oil (bbl)	3398686.19
+2009	UT	Duchesne County	49013		Oil (bbl)	3412832.79
+2013	UT	Emery County	49015		Coal (tons)	3482244
+2008	UT	Carbon County	49007		Gas (mcf)	3598195
+2007	UT	Carbon County	49007		Gas (mcf)	3634136
+2005	UT	Emery County	49015		Coal (tons)	3873419.77
+2009	UT	Grand County	49019		Gas (mcf)	3930030.37
+2009	UT	San Juan County	49037		Gas (mcf)	4150609.18
+2008	UT	Uintah County	49047		Oil (bbl)	4275059.65
+2005	UT	Duchesne County	49013		Gas (mcf)	4277316.4
+2006	UT	Duchesne County	49013		Gas (mcf)	4337088.07
+2012	UT	Carbon County	49007		Coal (tons)	4364640
+2012	UT	Emery County	49015		Coal (tons)	4428169
+2009	UT	Uintah County	49047		Oil (bbl)	4431018.31
+2010	UT	San Juan County	49037		Gas (mcf)	4588264.81
+2013	UT	Carbon County	49007		Coal (tons)	4626265
+2011	UT	Carbon County	49007		Coal (tons)	4813795
+2011	UT	San Juan County	49037		Gas (mcf)	4894865.11
+2012	UT	San Juan County	49037		Gas (mcf)	4943168
+2008	UT	Grand County	49019		Gas (mcf)	4955461.19
+2014	UT	Carbon County	49007		Coal (tons)	4956871
+2014	UT	Emery County	49015		Gas (mcf)	5191820.07
+2007	UT	Duchesne County	49013		Gas (mcf)	5237242.86
+2007	UT	Carbon County	49007		Coal (tons)	5251530.67
+2007	UT	Grand County	49019		Gas (mcf)	5254301.17
+2013	UT	San Juan County	49037		Gas (mcf)	5328672.98
+2011	UT	Uintah County	49047		Oil (bbl)	5350392.96
+2006	UT	Grand County	49019		Gas (mcf)	5555014.15
+2010	UT	Uintah County	49047		Oil (bbl)	5580285.58
+2008	UT	Duchesne County	49013		Gas (mcf)	5596249.03
+2012	UT	Uintah County	49047		Oil (bbl)	5607540.78
+2005	UT	Grand County	49019		Gas (mcf)	5649648.06
+2010	UT	Duchesne County	49013		Gas (mcf)	5681767.57
+2008	UT	San Juan County	49037		Gas (mcf)	5746789.52
+2010	UT	Carbon County	49007		Coal (tons)	5746980
+2013	UT	Emery County	49015		Gas (mcf)	5748782.87
+2011	UT	Duchesne County	49013		Gas (mcf)	5830572.03
+2009	UT	Carbon County	49007		Coal (tons)	5839914.27
+2013	UT	Uintah County	49047		Oil (bbl)	5973024.34
+2014	UT	San Juan County	49037		Gas (mcf)	5989613.66
+2012	UT	Emery County	49015		Gas (mcf)	6044293.99
+2012	UT	Duchesne County	49013		Gas (mcf)	6323248
+2007	UT	San Juan County	49037		Gas (mcf)	6424762.52
+2013	UT	Duchesne County	49013		Gas (mcf)	6580054.05
+2014	UT	Uintah County	49047		Oil (bbl)	6822505.67
+2009	UT	Duchesne County	49013		Gas (mcf)	6870722.13
+2011	UT	Emery County	49015		Gas (mcf)	6919856.56
+2014	UT	Duchesne County	49013		Gas (mcf)	7543064.49
+2008	UT	Carbon County	49007		Coal (tons)	7631777.86
+2006	UT	San Juan County	49037		Gas (mcf)	7858916.44
+2010	UT	Emery County	49015		Gas (mcf)	8121569.65
+2006	UT	Carbon County	49007		Coal (tons)	8195202.54
+2005	UT	Carbon County	49007		Coal (tons)	8596420.78
+2006	UT	Emery County	49015		Gas (mcf)	8861821.88
+2005	UT	Emery County	49015		Gas (mcf)	9106170.31
+2009	UT	Emery County	49015		Gas (mcf)	9197993.21
+2008	UT	Emery County	49015		Gas (mcf)	9283068.64
+2005	UT	San Juan County	49037		Gas (mcf)	9452076.6
+2013	UT	Beaver County	49001		Geothermal - Electrical Generation, Kilowatt Hours	9908211.22
+2007	UT	Emery County	49015		Gas (mcf)	9941823.3
+2005	UT	Carbon County	49007		Gas (mcf)	21362506.52
+2014	UT	Millard County	49027		Geothermal - Electrical Generation, Kilowatt Hours	31309993.26
+2006	UT	Carbon County	49007		Gas (mcf)	32141493.82
+2014	UT	Carbon County	49007		Gas (mcf)	32355882.93
+2013	UT	Carbon County	49007		Gas (mcf)	40809919.94
+2010	UT	Carbon County	49007		Gas (mcf)	45153118.1
+2007	UT	Carbon County	49007		Gas (mcf)	45753465.73
+2008	UT	Carbon County	49007		Gas (mcf)	48513027.37
+2011	UT	Carbon County	49007		Gas (mcf)	50317005.29
+2009	UT	Carbon County	49007		Gas (mcf)	53819510.44
+2012	UT	Carbon County	49007		Gas (mcf)	56798489.34
+2014	UT	Beaver County	49001		Geothermal - Electrical Generation, Kilowatt Hours	100770006.74
+2005	UT	Uintah County	49047		Gas (mcf)	116534501.95
+2006	UT	Uintah County	49047		Gas (mcf)	148901251.56
+2007	UT	Uintah County	49047		Gas (mcf)	162123505.29
+2008	UT	Uintah County	49047		Gas (mcf)	214261894.77
+2010	UT	Uintah County	49047		Gas (mcf)	220165491.38
+2009	UT	Uintah County	49047		Gas (mcf)	222463367.22
+2014	UT	Uintah County	49047		Gas (mcf)	223226580.92
+2011	UT	Uintah County	49047		Gas (mcf)	227685985.48
+2013	UT	Uintah County	49047		Gas (mcf)	234341783.48
+2012	UT	Uintah County	49047		Gas (mcf)	248076645.59
+2007	UT	Beaver County	49001		Geothermal - Electrical Generation, Thousands of Pounds	2046718554.09
+2005	UT	Beaver County	49001		Geothermal - Electrical Generation, Thousands of Pounds	2290182691.15
+2013	UT	Beaver County	49001		Geothermal - Electrical Generation, Thousands of Pounds	2316266257.97
+2006	UT	Beaver County	49001		Geothermal - Electrical Generation, Thousands of Pounds	2350934232.59
+2012	UT	Beaver County	49001		Geothermal - Electrical Generation, Thousands of Pounds	2453647854.06
+2014	UT	Beaver County	49001		Geothermal - Electrical Generation, Thousands of Pounds	2463584336.7
+2008	UT	Beaver County	49001		Geothermal - Electrical Generation, Thousands of Pounds	2468886992.11
+2011	UT	Beaver County	49001		Geothermal - Electrical Generation, Thousands of Pounds	2554615747.28
+2010	UT	Beaver County	49001		Geothermal - Electrical Generation, Thousands of Pounds	2670508902.54
+2009	UT	Beaver County	49001		Geothermal - Electrical Generation, Thousands of Pounds	2827213957.69
+2005	UT	Piute County	49031		Clay (tons)	W
+2005	UT	Sevier County	49041		Coal (tons)	W
+2005	UT	Tooele County	49045		Magnesium Chloride Brine (tons)	W
+2005	UT	Tooele County	49045		Manure Salts (tons)	W
+2005	UT	Tooele County	49045		Potash (tons)	W
+2005	UT	Tooele County	49045		Salt (tons)	W
+2006	UT	Piute County	49031		Clay (tons)	W
+2006	UT	Sevier County	49041		Coal (tons)	W
+2006	UT	Tooele County	49045		Magnesium Chloride Brine (tons)	W
+2006	UT	Tooele County	49045		Manure Salts (tons)	W
+2006	UT	Tooele County	49045		Potash (tons)	W
+2006	UT	Tooele County	49045		Salt (tons)	W
+2007	UT	Piute County	49031		Clay (tons)	W
+2007	UT	Sevier County	49041		Coal (tons)	W
+2007	UT	Tooele County	49045		Magnesium Chloride Brine (tons)	W
+2007	UT	Tooele County	49045		Manure Salts (tons)	W
+2007	UT	Tooele County	49045		Potash (tons)	W
+2007	UT	Tooele County	49045		Salt (tons)	W
+2008	UT	Piute County	49031		Clay (tons)	W
+2008	UT	Sevier County	49041		Coal (tons)	W
+2008	UT	Tooele County	49045		Magnesium Chloride Brine (tons)	W
+2008	UT	Tooele County	49045		Manure Salts (tons)	W
+2008	UT	Tooele County	49045		Potash (tons)	W
+2008	UT	Tooele County	49045		Salt (tons)	W
+2009	UT	Piute County	49031		Clay (tons)	W
+2009	UT	Sevier County	49041		Coal (tons)	W
+2009	UT	Tooele County	49045		Magnesium Chloride Brine (tons)	W
+2009	UT	Tooele County	49045		Manure Salts (tons)	W
+2009	UT	Tooele County	49045		Potash (tons)	W
+2009	UT	Tooele County	49045		Salt (tons)	W
+2010	UT	Piute County	49031		Clay (tons)	W
+2010	UT	Sevier County	49041		Coal (tons)	W
+2010	UT	Tooele County	49045		Magnesium Chloride Brine (tons)	W
+2010	UT	Tooele County	49045		Manure Salts (tons)	W
+2010	UT	Tooele County	49045		Potash (tons)	W
+2010	UT	Tooele County	49045		Salt (tons)	W
+2011	UT	Piute County	49031		Clay (tons)	W
+2011	UT	Sevier County	49041		Coal (tons)	W
+2011	UT	Uintah County	49047		Gilsonite (tons)	W
+2011	UT	Tooele County	49045		Magnesium Chloride Brine (tons)	W
+2011	UT	Tooele County	49045		Manure Salts (tons)	W
+2011	UT	Tooele County	49045		Potash (tons)	W
+2011	UT	Tooele County	49045		Salt (tons)	W
+2012	UT	Piute County	49031		Clay (tons)	W
+2012	UT	Sevier County	49041		Coal (tons)	W
+2012	UT	Tooele County	49045		Magnesium Chloride Brine (tons)	W
+2012	UT	Tooele County	49045		Manure Salts (tons)	W
+2012	UT	Tooele County	49045		Potash (tons)	W
+2012	UT	Tooele County	49045		Salt (tons)	W
+2013	UT	Piute County	49031		Clay (tons)	W
+2013	UT	Sevier County	49041		Coal (tons)	W
+2013	UT	Uintah County	49047		Gilsonite (tons)	W
+2013	UT	Tooele County	49045		Magnesium Chloride Brine (tons)	W
+2013	UT	Tooele County	49045		Potash (tons)	W
+2013	UT	Tooele County	49045		Salt (tons)	W
+2014	UT	Sevier County	49041		Coal (tons)	W
+2014	UT	Carbon County	49007		Coal Waste (Sub-Econ) (tons)	W
+2014	UT	Uintah County	49047		Gilsonite (tons)	W
+2014	UT	Tooele County	49045		Magnesium Chloride Brine (tons)	W
+2014	UT	Tooele County	49045		Potash (tons)	W
+2014	UT	Tooele County	49045		Salt (tons)	W

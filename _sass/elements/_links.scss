@@ -1,0 +1,90 @@
+// Links
+//
+// Use them like this
+//
+// Markup:
+// <a href="...">Link</a>
+//
+// Styleguide elements.links
+
+%link {
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.1s linear;
+}
+
+
+p a,
+ul a,
+.link-alpha {
+  @extend %link;
+  color: $blue;
+  text-decoration: underline;
+
+  &:active,
+  &:hover {
+    text-decoration: none;
+
+    img,
+    span {
+      text-decoration: none;
+    }
+  }
+
+  &.button,
+  &.button-primary,
+  &.button-secondary {
+    text-decoration: none;
+  }
+
+  img,
+  span {
+    border: none;
+  }
+
+}
+
+.link-beta {
+  @extend %link;
+  color: $white;
+}
+
+a,
+.link-charlie {
+  @extend %link;
+  color: $blue;
+  text-decoration: none;
+
+  &:active,
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.hero a,
+.hero-left a {
+  color: darken($blue, 3%);
+}
+
+.link-active,
+.link-active-alpha {
+  @extend .link-alpha;
+  text-decoration: underline;
+}
+
+.link-active-beta {
+  @extend .link-beta;
+  text-decoration: underline;
+}
+
+a.link-no_under {
+  @extend %link;
+  border: none;
+  text-decoration: none;
+
+  &:active,
+  &:hover {
+    border: none;
+  }
+}

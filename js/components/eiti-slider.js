@@ -106,6 +106,15 @@
     min: property('min', Number),
     max: property('max', Number),
 
+    name: {
+      get: function() {
+        return this.getAttribute('name');
+      },
+      set: function(name) {
+        this.setAttribute('name', name);
+      }
+    },
+
     // parse snap as a boolean
     snap: property('snap', Boolean)
   });
@@ -172,12 +181,12 @@
       }
     },
 
-    focus: function(e) {
+    focus: function() {
       window.addEventListener('keyup', getListener('keypress', this));
       this.addEventListener('blur', events.blur);
     },
 
-    blur: function(e) {
+    blur: function() {
       window.removeEventListener('keyup', getListener('keypress', this));
       this.removeEventListener('blur', events.blur);
     }

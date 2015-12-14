@@ -9,11 +9,11 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2004	WA	Grant	53025	Oil & Gas		Rents	307057.5
 2004	WA	Kittitas	53037	Oil & Gas		Bonus	7666
 2004	WA	Kittitas	53037	Oil & Gas		Rents	44380.5
+2004	WA	Lewis	53041	Coal		Rents	1566
+2004	WA	Lewis	53041	Coal	Coal	Royalties	23951.65
 2004	WA	Walla Walla	53071	Oil & Gas		Rents	780
 2004	WA	Yakima	53077	Oil & Gas		Bonus	279812
 2004	WA	Yakima	53077	Oil & Gas		Rents	84730.5
-2004	WA		53	Coal		Rents	1566
-2004	WA		53	Coal	Coal	Royalties	23951.65
 2005	WA	Adams	53001	Oil & Gas		Rents	47509.5
 2005	WA	Benton	53005	Oil & Gas		Bonus	53476
 2005	WA	Benton	53005	Oil & Gas		Rents	45781.03
@@ -24,10 +24,10 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2005	WA	Kittitas	53037	Oil & Gas		Rents	35478
 2005	WA	Klickitat	53039	Oil & Gas		Bonus	4808
 2005	WA	Klickitat	53039	Oil & Gas		Rents	7372
+2005	WA	Lewis	53041	Coal		Rents	2292
+2005	WA	Lewis	53041	Coal	Coal	Royalties	2926.7
 2005	WA	Walla Walla	53071	Oil & Gas		Rents	780
 2005	WA	Yakima	53077	Oil & Gas		Rents	67405.5
-2005	WA		53	Coal		Rents	2292
-2005	WA		53	Coal	Coal	Royalties	2926.7
 2006	WA	Adams	53001	Oil & Gas		Bonus	506
 2006	WA	Adams	53001	Oil & Gas		Rents	47130
 2006	WA	Benton	53005	Oil & Gas		Bonus	341395
@@ -43,11 +43,11 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2006	WA	Kittitas	53037	Oil & Gas		Rents	39416
 2006	WA	Klickitat	53039	Oil & Gas		Bonus	864002
 2006	WA	Klickitat	53039	Oil & Gas		Rents	26976
+2006	WA	Lewis	53041	Coal		Rents	840
+2006	WA	Lewis	53041	Coal	Coal	Royalties	11394.65
 2006	WA	Walla Walla	53071	Oil & Gas		Rents	780
 2006	WA	Yakima	53077	Oil & Gas		Bonus	38400
 2006	WA	Yakima	53077	Oil & Gas		Rents	100338.5
-2006	WA		53	Coal		Rents	840
-2006	WA		53	Coal	Coal	Royalties	11394.65
 2007	WA	Adams	53001	Oil & Gas		Rents	47509.5
 2007	WA	Benton	53005	Oil & Gas		Bonus	8280
 2007	WA	Benton	53005	Oil & Gas		Rents	44829.03
@@ -59,49 +59,49 @@ Year	State	County	FIPS	Commodity	Product	Type	Revenue
 2007	WA	Kittitas	53037	Oil & Gas		Rents	42820
 2007	WA	Klickitat	53039	Oil & Gas		Bonus	322
 2007	WA	Klickitat	53039	Oil & Gas		Rents	26897.5
+2007	WA	Lewis	53041	Coal		Rents	726
+2007	WA	Lewis	53041	Coal	Coal	Royalties	-46664.18
 2007	WA	Walla Walla	53071	Oil & Gas		Rents	1040
 2007	WA	Yakima	53077	Oil & Gas		Bonus	164
 2007	WA	Yakima	53077	Oil & Gas		Rents	121082.5
-2007	WA		53	Coal		Rents	726
-2007	WA		53	Coal	Coal	Royalties	-46664.18
 2008	WA	Adams	53001	Oil & Gas		Rents	53268
 2008	WA	Benton	53005	Oil & Gas		Rents	45112.53
 2008	WA	Franklin	53021	Oil & Gas		Rents	281821.47
 2008	WA	Grant	53025	Oil & Gas		Rents	430399
 2008	WA	Kittitas	53037	Oil & Gas		Rents	42820
 2008	WA	Klickitat	53039	Oil & Gas		Rents	27217.5
+2008	WA	Lewis	53041	Coal		Rents	1566
+2008	WA	Lewis	53041	Coal	Coal	Royalties	1425.6
+2008	WA	Lewis	53041	Coal	Coal-Subbituminous-Processed	Royalties	204873.3
 2008	WA	Walla Walla	53071	Oil & Gas		Rents	1040
 2008	WA	Yakima	53077	Oil & Gas		Rents	106350.5
-2008	WA		53	Coal		Rents	1566
-2008	WA		53	Coal	Coal	Royalties	1425.6
-2008	WA		53	Coal	Coal-Subbituminous-Processed	Royalties	204873.3
 2009	WA	Adams	53001	Oil & Gas		Rents	62316
 2009	WA	Benton	53005	Oil & Gas		Rents	67270.05
 2009	WA	Franklin	53021	Oil & Gas		Rents	434321.95
 2009	WA	Grant	53025	Oil & Gas		Rents	372256
 2009	WA	Kittitas	53037	Oil & Gas		Rents	46656.5
 2009	WA	Klickitat	53039	Oil & Gas		Rents	25933.5
+2009	WA	Lewis	53041	Coal		Rents	2406
 2009	WA	Walla Walla	53071	Oil & Gas		Rents	1040
 2009	WA	Yakima	53077	Oil & Gas		Rents	39769
-2009	WA		53	Coal		Rents	2406
 2010	WA	Adams	53001	Oil & Gas		Rents	12169
 2010	WA	Benton	53005	Oil & Gas		Rents	43664
 2010	WA	Franklin	53021	Oil & Gas		Rents	335643
 2010	WA	Grant	53025	Oil & Gas		Rents	97806
 2010	WA	Kittitas	53037	Oil & Gas		Rents	20326.5
 2010	WA	Klickitat	53039	Oil & Gas		Rents	17983.5
+2010	WA	Lewis	53041	Coal		Rents	726
 2010	WA	Walla Walla	53071	Oil & Gas		Rents	1040
 2010	WA	Yakima	53077	Oil & Gas		Rents	11399
-2010	WA		53	Coal		Rents	726
 2011	WA	Benton	53005	Oil & Gas		Rents	5707.5
 2011	WA	Franklin	53021	Oil & Gas		Rents	305533
 2011	WA	Grant	53025	Oil & Gas		Rents	52652
 2011	WA	Kittitas	53037	Oil & Gas		Rents	1440
 2011	WA	Klickitat	53039	Oil & Gas		Rents	14306
-2011	WA		53	Coal		Rents	1566
-2011	WA		53	Geothermal		Rents	16874
+2011	WA	Lewis	53041	Coal		Rents	1566
+2011	WA	Whatcom	53073	Geothermal		Rents	16874
 2012	WA	Benton	53005	Oil & Gas		Rents	5707.5
 2012	WA	Klickitat	53039	Oil & Gas		Rents	3848
-2012	WA		53	Coal		Rents	1566
-2013	WA		53	Coal		Rents	2406
-2013	WA		53	Geothermal		Rents	8437
+2012	WA	Lewis	53041	Coal		Rents	1566
+2013	WA	Lewis	53041	Coal		Rents	2406
+2013	WA	Whatcom	53073	Geothermal		Rents	8437

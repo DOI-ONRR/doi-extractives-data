@@ -1,0 +1,75 @@
+// All element specific rules.
+//
+// This file should have basic site settings,
+// such as background color.
+//
+// Global reset is provided separately by _reset.scss
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: $base-font-color;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  font-weight: $base-font-weight;
+  line-height: $base-line-height;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  a {
+    text-decoration: none;
+  }
+}
+
+strong {
+  font-weight: $weight-bold;
+}
+
+em {
+  font-style: italic;
+}
+
+a img {
+  border: 0;
+  outline: 0;
+}
+
+[aria-hidden="true"] {
+  display: none;
+}
+
+table {
+  @include font-size(0.9);
+
+  border: 1px solid $mid-gray;
+  border-spacing: 2px;
+  color: $dark-gray;
+  font-weight: $weight-light;
+  margin-bottom: $base-padding;
+}
+
+thead {
+  background-color: $mid-gray;
+  border-bottom: 2px solid $mid-gray;
+  font-weight: $weight-book;
+  text-align: center;
+}
+
+td {
+  border: 1px solid $mid-gray;
+  padding: 5px;
+}
+
+.hidden {
+  display: none;
+}

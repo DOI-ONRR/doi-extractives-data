@@ -1,5 +1,0 @@
----
-applications:
-- name: eiti
-memory: 1G
-instances: 1

@@ -1,0 +1,38 @@
+.subpage-info-wrapper {
+  @include respond-to(medium-up) {
+    margin-right: $base-padding;
+  }
+}
+
+.info-heading {
+  padding: 0 $base-padding;
+
+  @include respond-to(medium-up) {
+    padding: 0;
+  }
+}
+
+[class^=slab] {
+  padding-bottom: $base-padding;
+  padding-top: $base-padding;
+}
+
+.regions {
+  @include respond-to(medium-up) {
+    margin-right: $base-padding;
+  }
+}
+
+.regions .region {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
+
+.explore-exploration {
+  @include respond-to(medium-up) {
+    margin-top: 128px;
+  }
+}

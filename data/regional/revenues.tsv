@@ -1,31 +1,27 @@
 Year	Region	Commodity	Type	Revenue
 2004	AK	Oil & Gas	Bonus	53904491.00
 2004	AK	Oil & Gas	Rents	8894470.54
-2004	AK	Oil & Gas	Other Revenues	10052.54
-2004	AK	Gas	Other Royalties	224935.20
-2004	AK	Oil & Gas	Other Royalties	265932.36
-2004	AK	Gas	Royalties	10403406.96
+2004	AK	Oil & Gas	Other Revenues	275984.90
+2004	AK	Gas	Royalties	10628342.16
 2004	AK	NGL	Royalties	371339.82
 2004	AK	Oil	Royalties	944070.81
 2004	AK	Coal	Rents	2560.00
-2004	AL	Oil & Gas	Other Revenues	-49.16
-2004	AL	Oil & Gas	Other Royalties	19401.00
+2004	AL	Oil & Gas	Other Revenues	19351.84
 2004	AL	Gas	Royalties	524443.03
 2004	AL	NGL	Royalties	0.32
 2004	AL	Oil	Royalties	823485.59
+2004	AL	Sulfur	Royalties	704.13
+2004	AL	Hardrock	Other Revenues	123.00
+2004	AL	Clay	Royalties	11440.80
 2004	AL	Oil & Gas	Bonus	164678.00
 2004	AL	Oil & Gas	Rents	32873.50
-2004	AL	Hardrock	Other Revenues	123.00
 2004	AL	Coal	Rents	4826.52
 2004	AL	Coal	Royalties	3338.77
-2004	AL	Clay	Royalties	11440.80
-2004	AL	Sulfur	Royalties	704.13
 2004	AR	Gas	Royalties	3884705.48
 2004	AR	Oil	Royalties	243.10
 2004	AR	Oil & Gas	Bonus	618180.00
 2004	AR	Oil & Gas	Rents	1241687.50
-2004	AR	Oil & Gas	Other Revenues	5137.33
-2004	AR	Oil & Gas	Other Royalties	94204.45
+2004	AR	Oil & Gas	Other Revenues	99341.78
 2004	AR	Hardrock	Other Revenues	2121.50
 2004	AR	Hardrock	Rents	-414.33
 2004	AR	Quartz	Rents	20.00
@@ -34,19 +30,17 @@ Year	Region	Commodity	Type	Revenue
 2004	AZ	Sodium	Other Revenues	36.00
 2004	AZ	Sodium	Rents	4.00
 2004	AZ	Salt	Royalties	118.85
-2004	CA	Oil & Gas	Other Royalties	10677.60
+2004	CA	Oil & Gas	Other Revenues	42195.34
 2004	CA	Oil & Gas	Rents	428225.51
 2004	CA	Gas	Royalties	4212311.85
-2004	CA	Oil & Gas	Other Revenues	31517.74
 2004	CA	NGL	Royalties	95701.32
 2004	CA	Oil	Royalties	23214441.58
-2004	CA	Oil & Gas	Bonus	67720.50
-2004	CA	Geothermal	Other Revenues	8320.00
-2004	CA	Potassium	Other Revenues	3996.00
-2004	CA	Sodium	Other Revenues	72.39
-2004	CA	Geothermal	Other Royalties	7484696.97
+2004	CA	Geothermal	Other Revenues	7493016.97
 2004	CA	Geothermal	Rents	227815.00
 2004	CA	Geothermal	Royalties	9861963.53
+2004	CA	Oil & Gas	Bonus	67720.50
+2004	CA	Potassium	Other Revenues	3996.00
+2004	CA	Sodium	Other Revenues	72.39
 2004	CA	Anhydrous Sodium Sulfate	Royalties	191938.20
 2004	CA	Borax-Anhydrous	Royalties	30980.53
 2004	CA	Borax-Decahydrate	Royalties	109756.82
@@ -59,175 +53,160 @@ Year	Region	Commodity	Type	Revenue
 2004	CA	Soda Ash-Granular	Royalties	260287.46
 2004	CA	Sodium Bi-Carbonate	Royalties	37810.73
 2004	CO	Oil & Gas	Rents	5798644.45
-2004	CO	Oil & Gas	Other Revenues	293253.52
+2004	CO	Oil & Gas	Other Revenues	4133558.00
 2004	CO	Oil	Royalties	17792465.36
-2004	CO	Oil & Gas	Other Royalties	3840304.49
 2004	CO	Gas	Royalties	82988954.55
 2004	CO	Oil & Gas	Bonus	10799417.00
 2004	CO	NGL	Royalties	2204205.96
 2004	CO	Coal	Bonus	6107928.58
-2004	CO	Sodium	Other Revenues	93390.28
 2004	CO	Coal	Rents	240192.41
-2004	CO	Sodium	Rents	1349.73
 2004	CO	Coal	Royalties	36126311.09
-2004	CO	Carbon Dioxide	Royalties	241.00
 2004	CO	Carbon Dioxide Gas	Royalties	13124605.98
+2004	CO	Sodium	Other Revenues	93390.28
+2004	CO	Sodium	Rents	1349.73
+2004	CO	Carbon Dioxide	Royalties	241.00
 2004	CO	Soda Ash	Royalties	559202.05
 2004	CO	Soda Ash-Granular	Royalties	-127123.91
 2004	CO	Sodium Bi-Carbonate	Royalties	704432.51
 2004	CO	Sodium Bicarbonate Animal Feed	Royalties	-28843.19
-2004	FL	Oil & Gas	Rents	8080.50
-2004	FL	Oil	Royalties	1935.55
 2004	FL	Phosphate	Other Revenues	2248.00
 2004	FL	Phosphate	Rents	-884.00
 2004	FL	Phosphate Raw Ore	Royalties	-0.02
-2004	ID	Oil & Gas	Rents	7605.50
-2004	ID	Phosphate	Bonus	563300.00
+2004	FL	Oil & Gas	Rents	8080.50
+2004	FL	Oil	Royalties	1935.55
 2004	ID	Phosphate	Other Revenues	127954.00
-2004	ID	Gemstones	Rents	80.00
+2004	ID	Oil & Gas	Rents	7605.50
 2004	ID	Geothermal	Rents	2467.00
-2004	ID	Gold	Rents	39.00
-2004	ID	Hardrock	Rents	42.00
 2004	ID	Phosphate	Rents	-11165.50
+2004	ID	Gold	Rents	39.00
+2004	ID	Phosphate	Bonus	563300.00
 2004	ID	Phosphate Raw Ore	Royalties	3451909.95
+2004	ID	Hardrock	Rents	42.00
+2004	ID	Gemstones	Rents	80.00
 2004	IL	Oil	Royalties	174744.57
 2004	IL	Oil & Gas	Other Revenues	44.00
 2004	IL	Hardrock	Other Revenues	-549.00
 2004	IL	Hardrock	Rents	183.00
 2004	KS	Oil & Gas	Rents	40949.50
 2004	KS	Oil & Gas	Bonus	7640.00
-2004	KS	Gas	Royalties	6924749.18
-2004	KS	Oil & Gas	Other Revenues	-3265.06
-2004	KS	Gas	Other Royalties	754.83
-2004	KS	Oil & Gas	Other Royalties	23561.78
+2004	KS	Gas	Royalties	6925504.01
+2004	KS	Oil & Gas	Other Revenues	20296.72
 2004	KS	NGL	Royalties	278925.84
 2004	KS	Oil	Royalties	468286.81
 2004	KS	Helium	Royalties	57.39
 2004	KY	Oil & Gas	Rents	10638.00
 2004	KY	Gas	Royalties	81428.39
 2004	KY	Oil & Gas	Bonus	11356.00
+2004	KY	Coal	Other Revenues	12000.00
 2004	KY	Oil	Royalties	6302.16
 2004	KY	Oil & Gas	Other Revenues	26862.31
-2004	KY	Coal	Other Revenues	12000.00
 2004	KY	Coal	Rents	-2004.00
 2004	LA	Oil & Gas	Rents	76692.86
 2004	LA	Gas	Royalties	10698126.47
 2004	LA	NGL	Royalties	326755.20
 2004	LA	Oil	Royalties	1817085.44
 2004	LA	Oil & Gas	Bonus	23622.00
-2004	LA	Oil & Gas	Other Royalties	-144922.30
-2004	LA	Oil & Gas	Other Revenues	2914.09
-2004	MD	Oil & Gas	Other Revenues	10279.77
-2004	MD	Oil & Gas	Other Royalties	-730.50
+2004	LA	Oil & Gas	Other Revenues	-142008.21
+2004	MD	Oil & Gas	Other Revenues	9549.27
 2004	MD	Oil & Gas	Rents	992.00
 2004	MI	Oil & Gas	Rents	44825.00
 2004	MI	Gas	Royalties	1533836.84
 2004	MI	Oil	Royalties	95883.30
 2004	MI	Oil & Gas	Bonus	5600.00
-2004	MI	Oil & Gas	Other Revenues	814.46
-2004	MI	Oil & Gas	Other Royalties	67.00
-2004	MI	NGL	Royalties	24138.45
 2004	MI	Hardrock	Rents	-293.50
+2004	MI	Oil & Gas	Other Revenues	881.46
+2004	MI	NGL	Royalties	24138.45
 2004	MN	Copper	Other Revenues	13055.00
 2004	MN	Hardrock	Other Revenues	11275.00
 2004	MN	Copper	Rents	667.50
 2004	MN	Hardrock	Rents	12932.50
-2004	MO	Hardrock	Other Revenues	167074.98
+2004	MO	Hardrock	Other Revenues	167074.97
 2004	MO	Hardrock	Rents	10677.70
 2004	MO	Copper Concentrate	Royalties	33259.10
-2004	MO	Lead Concentrate	Royalties	715383.01
+2004	MO	Lead Concentrate	Royalties	715383.02
 2004	MO	Zinc Concentrate	Royalties	62744.17
 2004	MS	Oil & Gas	Rents	467733.71
 2004	MS	Oil	Royalties	1618373.24
 2004	MS	Oil & Gas	Bonus	318659.00
 2004	MS	Gas	Royalties	336778.53
-2004	MS	Oil & Gas	Other Royalties	3400.00
-2004	MS	Oil & Gas	Other Revenues	483.00
+2004	MS	Oil & Gas	Other Revenues	3883.00
 2004	MS	NGL	Royalties	331.37
+2004	MT	Phosphate	Other Revenues	4227.00
 2004	MT	Oil & Gas	Rents	4096925.41
-2004	MT	Oil & Gas	Other Revenues	270212.94
+2004	MT	Coal	Bonus	359342.51
+2004	MT	Coal	Other Revenues	75000.00
+2004	MT	Oil & Gas	Other Revenues	347916.85
+2004	MT	Coal	Rents	106680.33
+2004	MT	Coal	Royalties	33178124.47
 2004	MT	Gas	Royalties	12338549.53
 2004	MT	Oil & Gas	Bonus	768127.75
-2004	MT	Oil & Gas	Other Royalties	77703.91
 2004	MT	Oil	Royalties	14214882.37
 2004	MT	NGL	Royalties	236811.54
-2004	MT	Coal	Bonus	359342.51
-2004	MT	Phosphate	Other Revenues	4227.00
-2004	MT	Coal	Other Royalties	75000.00
-2004	MT	Coal	Rents	106680.33
+2004	MT	Sulfur	Royalties	986.36
 2004	MT	Gemstones	Rents	240.00
 2004	MT	Hardrock	Rents	118.50
-2004	MT	Coal	Royalties	33178124.47
-2004	MT	Sulfur	Royalties	986.36
 2004	NC	Hardrock	Other Revenues	474.00
 2004	ND	Oil & Gas	Bonus	2908119.25
-2004	ND	Oil & Gas	Other Revenues	13529.49
-2004	ND	Oil & Gas	Other Royalties	568219.27
+2004	ND	Oil & Gas	Other Revenues	581748.76
 2004	ND	Oil & Gas	Rents	745047.50
 2004	ND	Gas	Royalties	3521338.78
 2004	ND	NGL	Royalties	312712.80
 2004	ND	Oil	Royalties	22801616.54
+2004	ND	Sulfur	Royalties	298.70
 2004	ND	Coal	Bonus	10856.00
 2004	ND	Coal	Rents	17571.00
 2004	ND	Coal	Royalties	475544.13
-2004	ND	Sulfur	Royalties	298.70
 2004	NE	Oil & Gas	Rents	14794.00
 2004	NE	Oil & Gas	Other Revenues	15234.24
 2004	NE	Oil	Royalties	147230.67
 2004	NM	Oil & Gas	Rents	3214612.95
-2004	NM	Gas	Royalties	514157856.52
+2004	NM	Gas	Royalties	514160686.20
 2004	NM	Oil & Gas	Bonus	45099624.00
-2004	NM	Oil & Gas	Other Revenues	549506.95
-2004	NM	Oil & Gas	Other Royalties	7603640.02
+2004	NM	Oil & Gas	Other Revenues	8153146.98
 2004	NM	NGL	Royalties	76809845.60
-2004	NM	Oil	Royalties	108949240.03
-2004	NM	Gas	Other Royalties	2829.68
-2004	NM	Oil	Other Royalties	32.19
-2004	NM	Coal	Bonus	2600000.00
+2004	NM	Oil	Royalties	108949272.22
 2004	NM	Potassium	Other Revenues	153809.00
-2004	NM	Geothermal	Other Royalties	56000.00
-2004	NM	Coal	Other Royalties	2444117.90
-2004	NM	Coal	Rents	89361.00
 2004	NM	Potassium	Rents	33543.00
-2004	NM	Coal	Royalties	9423139.18
-2004	NM	Brine Barrels	Royalties	1732.99
-2004	NM	Carbon Dioxide Gas	Royalties	500513.22
 2004	NM	Langbeinite	Royalties	1914818.07
 2004	NM	Muriate Of Potash-Granular	Royalties	947720.34
 2004	NM	Muriate Of Potash-Standard	Royalties	387036.62
 2004	NM	Potash	Royalties	763333.29
 2004	NM	Potassium Sulphate-Standard	Royalties	31802.33
 2004	NM	Salt	Royalties	155506.13
-2004	NV	Oil & Gas	Rents	2461472.05
-2004	NV	Oil & Gas	Bonus	453287.00
-2004	NV	Oil	Royalties	1665410.91
-2004	NV	Oil & Gas	Other Revenues	3312.40
-2004	NV	Oil & Gas	Other Royalties	-36.87
+2004	NM	Carbon Dioxide Gas	Royalties	500513.21
+2004	NM	Geothermal	Other Revenues	56000.00
+2004	NM	Brine Barrels	Royalties	1732.99
+2004	NM	Coal	Rents	89361.00
+2004	NM	Coal	Royalties	9423139.18
+2004	NM	Coal	Bonus	2600000.00
+2004	NM	Coal	Other Revenues	2444117.90
 2004	NV	Geothermal	Bonus	60895.94
 2004	NV	Geothermal	Other Revenues	6165.86
 2004	NV	Geothermal	Rents	557839.00
-2004	NV	Potassium	Rents	1160.00
-2004	NV	Sand & Gravel	Rents	-320.00
 2004	NV	Geothermal	Royalties	478339.00
-2004	NV	Potash	Royalties	1735.64
+2004	NV	Oil & Gas	Rents	2461472.05
+2004	NV	Sand & Gravel	Rents	-320.00
 2004	NV	Sand/Gravel	Royalties	465124.80
+2004	NV	Oil & Gas	Bonus	453287.00
+2004	NV	Potassium	Rents	1160.00
+2004	NV	Potash	Royalties	1735.64
+2004	NV	Oil	Royalties	1665410.91
+2004	NV	Oil & Gas	Other Revenues	3275.53
 2004	NY	Gas	Royalties	8639.84
 2004	OH	Oil & Gas	Rents	27314.50
 2004	OH	Gas	Royalties	419791.40
 2004	OH	Oil	Royalties	95931.21
 2004	OH	Oil & Gas	Bonus	29145.00
-2004	OH	Oil & Gas	Other Revenues	3190.52
-2004	OH	Oil & Gas	Other Royalties	800.00
-2004	OK	Oil & Gas	Other Revenues	6217.75
-2004	OK	Oil & Gas	Other Royalties	147520.98
+2004	OH	Oil & Gas	Other Revenues	3990.52
+2004	OK	Oil & Gas	Other Revenues	153738.73
 2004	OK	Oil & Gas	Rents	277111.76
 2004	OK	Gas	Royalties	9100585.95
 2004	OK	Oil	Royalties	541875.23
 2004	OK	Oil & Gas	Bonus	1029472.00
 2004	OK	NGL	Royalties	102685.64
-2004	OK	Coal	Other Revenues	-40797.91
 2004	OK	Coal	Rents	47871.00
 2004	OK	Coal	Royalties	691430.97
+2004	OK	Coal	Other Revenues	-40797.91
 2004	OR	Oil & Gas	Rents	71549.00
 2004	PA	Oil & Gas	Other Revenues	19675.49
 2004	PA	Gas	Royalties	38905.79
@@ -238,43 +217,41 @@ Year	Region	Commodity	Type	Revenue
 2004	SD	Oil	Royalties	659639.70
 2004	SD	Oil & Gas	Other Revenues	40.00
 2004	SD	Gas	Royalties	122127.44
-2004	TX	Oil & Gas	Other Revenues	11133.69
+2004	TX	Oil & Gas	Other Revenues	-206003.14
 2004	TX	Oil & Gas	Rents	548477.00
 2004	TX	Oil & Gas	Bonus	72086.00
 2004	TX	Oil	Royalties	1925374.62
 2004	TX	Gas	Royalties	15369447.13
-2004	TX	Oil & Gas	Other Royalties	-217136.83
 2004	TX	NGL	Royalties	142021.93
+2004	UT	Geothermal	Bonus	9407.24
+2004	UT	Geothermal	Rents	-84420.51
+2004	UT	Geothermal	Royalties	212597.65
+2004	UT	Hardrock	Other Revenues	2160.00
+2004	UT	Hardrock	Rents	408.00
+2004	UT	Coal	Bonus	3719719.41
 2004	UT	Oil & Gas	Bonus	2121277.75
-2004	UT	Oil & Gas	Other Revenues	675610.36
-2004	UT	Oil & Gas	Other Royalties	1785755.14
+2004	UT	Oil & Gas	Other Revenues	2461365.50
+2004	UT	Coal	Rents	255569.99
 2004	UT	Oil & Gas	Rents	3831169.85
+2004	UT	Coal	Royalties	25985364.85
 2004	UT	Gas	Royalties	79723829.46
 2004	UT	Oil	Royalties	16335400.72
-2004	UT	NGL	Royalties	1261699.53
-2004	UT	Coal	Bonus	3719719.41
-2004	UT	Geothermal	Bonus	9407.24
-2004	UT	Clay	Other Revenues	545.30
-2004	UT	Gilsonite	Other Revenues	21825.00
-2004	UT	Hardrock	Other Revenues	2160.00
 2004	UT	Phosphate	Other Revenues	32999.00
-2004	UT	Potassium	Other Revenues	1475.34
-2004	UT	Coal	Other Royalties	2535688.52
-2004	UT	Coal	Rents	255570.00
-2004	UT	Geothermal	Rents	-84420.51
-2004	UT	Gilsonite	Rents	5299.00
-2004	UT	Hardrock	Rents	408.00
-2004	UT	Phosphate	Rents	7474.00
-2004	UT	Potassium	Rents	1920.00
 2004	UT	Tar Sands	Rents	12190.00
-2004	UT	Coal	Royalties	25985364.85
-2004	UT	Geothermal	Royalties	212597.65
+2004	UT	NGL	Royalties	1261699.53
+2004	UT	Coal	Other Revenues	2535688.52
+2004	UT	Potassium	Other Revenues	1475.34
+2004	UT	Clay	Other Revenues	545.30
 2004	UT	Clay	Royalties	1683.29
-2004	UT	Gilsonite	Royalties	334416.96
+2004	UT	Potash	Royalties	67308.91
+2004	UT	Potassium	Rents	1920.00
 2004	UT	Magnesium Chloride Brine	Royalties	39046.77
 2004	UT	Manure Salts	Royalties	6944.70
-2004	UT	Potash	Royalties	67308.91
 2004	UT	Salt	Royalties	1091.40
+2004	UT	Gilsonite	Other Revenues	21825.00
+2004	UT	Gilsonite	Rents	5299.00
+2004	UT	Phosphate	Rents	7474.00
+2004	UT	Gilsonite	Royalties	334416.96
 2004	VA	Oil & Gas	Other Revenues	8829.92
 2004	VA	Oil & Gas	Rents	9691.00
 2004	VA	Gas	Royalties	31358.00
@@ -285,83 +262,74 @@ Year	Region	Commodity	Type	Revenue
 2004	WA	Coal	Royalties	23951.65
 2004	WV	Gas	Royalties	664615.22
 2004	WV	Oil & Gas	Rents	30589.76
-2004	WV	Oil & Gas	Other Revenues	208427.20
+2004	WV	Oil & Gas	Other Revenues	209042.20
 2004	WV	Oil	Royalties	922.41
 2004	WV	Oil & Gas	Bonus	35845.00
-2004	WV	Oil & Gas	Other Royalties	615.00
-2004	WY	Oil & Gas	Other Revenues	516940.44
+2004	WY	Oil & Gas	Other Revenues	13683737.43
 2004	WY	Oil & Gas	Rents	17779967.12
-2004	WY	Gas	Royalties	572017015.71
+2004	WY	Gas	Royalties	572491620.25
 2004	WY	Oil	Royalties	103687635.21
 2004	WY	Oil & Gas	Bonus	26994393.99
-2004	WY	Oil & Gas	Other Royalties	13166796.97
 2004	WY	NGL	Royalties	15889085.10
-2004	WY	Gas	Other Royalties	474604.54
 2004	WY	Coal	Bonus	149052991.54
 2004	WY	Coal	Other Revenues	-1436124.15
-2004	WY	Hardrock	Other Revenues	480.00
-2004	WY	Sodium	Other Revenues	273076.00
 2004	WY	Coal	Rents	561361.67
-2004	WY	Hardrock	Rents	-160.00
-2004	WY	Sodium	Rents	-6642.00
 2004	WY	Coal	Royalties	330301792.84
+2004	WY	Sulfur	Royalties	57320.39
+2004	WY	Sodium	Other Revenues	273076.00
 2004	WY	Carbon Dioxide Gas	Royalties	95123.93
 2004	WY	Helium	Royalties	-21423.06
+2004	WY	Sodium	Rents	-6642.00
 2004	WY	Purge Liquor	Royalties	37024.87
 2004	WY	Soda Ash	Royalties	6091944.32
 2004	WY	Soda Ash-Granular	Royalties	-583138.03
 2004	WY	Sodium Bi-Carbonate	Royalties	51664.70
 2004	WY	Sodium Sesquicarbonate	Royalties	207108.66
-2004	WY	Sulfur	Royalties	57320.39
 2004	WY	Trona Ore	Royalties	18046.05
+2004	WY	Hardrock	Other Revenues	480.00
+2004	WY	Hardrock	Rents	-160.00
 2005	AK	Oil & Gas	Rents	8974164.12
-2005	AK	Oil & Gas	Other Revenues	14469.52
-2005	AK	Gas	Other Royalties	267377.24
-2005	AK	Oil & Gas	Other Royalties	103709.95
-2005	AK	Gas	Royalties	11546781.23
+2005	AK	Oil & Gas	Other Revenues	118179.47
+2005	AK	Gas	Royalties	11814158.47
 2005	AK	NGL	Royalties	337028.07
 2005	AK	Oil	Royalties	1440869.20
 2005	AK	Coal	Rents	7680.00
-2005	AL	Oil & Gas	Other Revenues	70.69
-2005	AL	Oil & Gas	Other Royalties	16397.84
+2005	AL	Oil & Gas	Other Revenues	16468.53
 2005	AL	Gas	Royalties	798652.99
 2005	AL	Oil	Royalties	877364.64
-2005	AL	Oil & Gas	Rents	31853.80
-2005	AL	NGL	Royalties	4.69
-2005	AL	Coal	Bonus	64113.60
-2005	AL	Coal	Other Revenues	736543.11
+2005	AL	Sulfur	Royalties	533.46
 2005	AL	Hardrock	Other Revenues	123.00
-2005	AL	Coal	Rents	21918.00
 2005	AL	Hardrock	Rents	-82.00
 2005	AL	Clay	Royalties	12279.90
-2005	AL	Sulfur	Royalties	533.46
+2005	AL	Oil & Gas	Rents	31853.80
+2005	AL	Coal	Bonus	64113.60
+2005	AL	Coal	Rents	21918.00
+2005	AL	Coal	Other Revenues	736543.11
+2005	AL	NGL	Royalties	4.69
 2005	AR	Gas	Royalties	7596905.35
 2005	AR	Oil	Royalties	251.75
 2005	AR	Oil & Gas	Rents	1167423.00
 2005	AR	Oil & Gas	Bonus	12215461.00
-2005	AR	Oil & Gas	Other Revenues	7924.59
-2005	AR	Oil & Gas	Other Royalties	106479.28
-2005	AR	Hardrock	Other Revenues	866.40
+2005	AR	Oil & Gas	Other Revenues	114403.87
 2005	AR	Hardrock	Rents	239.75
+2005	AR	Hardrock	Other Revenues	866.40
 2005	AR	Quartz Crystal	Royalties	345.85
 2005	AZ	Oil & Gas	Bonus	60725.00
 2005	AZ	Oil & Gas	Rents	109356.00
 2005	AZ	Sodium	Other Revenues	24.00
 2005	AZ	Sodium	Rents	8.00
 2005	AZ	Salt	Royalties	225.65
-2005	CA	Oil & Gas	Other Royalties	24555.00
+2005	CA	Oil & Gas	Other Revenues	42317.19
 2005	CA	Gas	Royalties	4448752.07
 2005	CA	Oil	Royalties	31919975.76
-2005	CA	Oil & Gas	Other Revenues	17762.19
 2005	CA	Oil & Gas	Rents	400552.57
 2005	CA	NGL	Royalties	76935.00
+2005	CA	Geothermal	Rents	103077.24
+2005	CA	Geothermal	Royalties	7392348.58
 2005	CA	Oil & Gas	Bonus	9526.25
+2005	CA	Sodium	Rents	-8086.39
 2005	CA	Geothermal	Other Revenues	1600.00
 2005	CA	Sodium	Other Revenues	34456.54
-2005	CA	Geothermal	Rents	103077.24
-2005	CA	Hardrock	Rents	20.00
-2005	CA	Sodium	Rents	-8086.39
-2005	CA	Geothermal	Royalties	7392348.58
 2005	CA	Anhydrous Sodium Sulfate	Royalties	301048.67
 2005	CA	Borax-Anhydrous	Royalties	1541.81
 2005	CA	Borax-Decahydrate	Royalties	103261.53
@@ -372,67 +340,62 @@ Year	Region	Commodity	Type	Revenue
 2005	CA	Soda Ash	Royalties	3228230.52
 2005	CA	Soda Ash-Granular	Royalties	-726947.18
 2005	CA	Sodium Bi-Carbonate	Royalties	47544.95
+2005	CA	Hardrock	Rents	20.00
 2005	CO	Oil & Gas	Rents	5467067.33
 2005	CO	Oil	Royalties	24746559.81
-2005	CO	Oil & Gas	Other Revenues	233963.40
-2005	CO	Oil & Gas	Other Royalties	6579923.50
+2005	CO	Oil & Gas	Other Revenues	6813886.90
 2005	CO	Gas	Royalties	138511416.34
 2005	CO	Oil & Gas	Bonus	18406150.99
 2005	CO	NGL	Royalties	3221590.46
-2005	CO	Oil Shale	Other Revenues	30000.00
 2005	CO	Coal	Bonus	2289875.05
-2005	CO	Coal	Other Revenues	172318.15
-2005	CO	Sodium	Other Revenues	6641.00
 2005	CO	Coal	Rents	252661.00
-2005	CO	Sodium	Rents	-8747.52
 2005	CO	Coal	Royalties	37140214.77
 2005	CO	Carbon Dioxide Gas	Royalties	19203622.31
+2005	CO	Coal	Other Revenues	172318.15
+2005	CO	Oil Shale	Other Revenues	30000.00
+2005	CO	Sodium	Other Revenues	6641.00
+2005	CO	Sodium	Rents	-8747.52
 2005	CO	Sodium Bi-Carbonate	Royalties	409652.18
-2005	FL	Oil & Gas	Rents	5053.50
 2005	FL	Phosphate	Rents	122.00
 2005	FL	Phosphate Raw Ore	Royalties	837228.40
-2005	ID	Oil & Gas	Rents	1730.50
+2005	FL	Oil & Gas	Rents	5053.50
 2005	ID	Phosphate	Other Revenues	108069.00
-2005	ID	Gemstones	Rents	80.00
+2005	ID	Oil & Gas	Rents	1730.50
 2005	ID	Geothermal	Rents	2467.00
-2005	ID	Hardrock	Rents	159.00
 2005	ID	Phosphate	Rents	-19691.00
-2005	ID	Gold	Royalties	924.81
 2005	ID	Phosphate Raw Ore	Royalties	2986698.10
+2005	ID	Gold	Royalties	924.81
+2005	ID	Gemstones	Rents	80.00
+2005	ID	Hardrock	Rents	159.00
 2005	IL	Oil	Royalties	188607.69
 2005	IL	Oil & Gas	Other Revenues	175.00
 2005	IL	Hardrock	Rents	-1147.00
 2005	KS	Oil & Gas	Rents	25350.50
-2005	KS	Oil & Gas	Other Royalties	-98285.53
-2005	KS	Gas	Royalties	6712741.94
+2005	KS	Oil & Gas	Other Revenues	-64925.19
+2005	KS	Gas	Royalties	6712635.03
 2005	KS	Oil & Gas	Bonus	11520.00
-2005	KS	Oil & Gas	Other Revenues	33360.34
-2005	KS	Gas	Other Royalties	-106.91
 2005	KS	NGL	Royalties	374696.62
 2005	KS	Oil	Royalties	1170808.30
 2005	KY	Oil & Gas	Rents	8516.10
 2005	KY	Gas	Royalties	208655.05
-2005	KY	Oil	Royalties	5921.14
-2005	KY	Oil & Gas	Other Revenues	7869.01
-2005	KY	Oil	Other Royalties	286.06
 2005	KY	Coal	Other Revenues	16000.00
+2005	KY	Oil	Royalties	6207.20
+2005	KY	Oil & Gas	Other Revenues	7869.01
 2005	KY	Coal	Rents	489.00
-2005	LA	Oil & Gas	Other Royalties	1729895.51
+2005	LA	Oil & Gas	Other Revenues	1734273.39
 2005	LA	Oil & Gas	Rents	16868.00
 2005	LA	Gas	Royalties	37684857.64
 2005	LA	NGL	Royalties	653959.48
 2005	LA	Oil	Royalties	2856614.84
-2005	LA	Oil & Gas	Other Revenues	4377.88
 2005	LA	Oil & Gas	Bonus	30286.00
 2005	MD	Oil & Gas	Other Revenues	10055.21
 2005	MD	Oil & Gas	Rents	496.00
 2005	MI	Oil & Gas	Rents	38540.46
 2005	MI	Gas	Royalties	2230514.08
 2005	MI	Oil	Royalties	137264.24
-2005	MI	Oil & Gas	Other Revenues	1653.46
-2005	MI	NGL	Royalties	64064.84
-2005	MI	Oil & Gas	Other Royalties	4050.00
 2005	MI	Hardrock	Rents	965.50
+2005	MI	Oil & Gas	Other Revenues	5703.46
+2005	MI	NGL	Royalties	64064.84
 2005	MN	Copper	Other Revenues	39165.00
 2005	MN	Hardrock	Other Revenues	33825.00
 2005	MN	Copper	Rents	-20220.50
@@ -445,57 +408,44 @@ Year	Region	Commodity	Type	Revenue
 2005	MS	Oil & Gas	Bonus	203986.00
 2005	MS	Oil & Gas	Rents	535355.72
 2005	MS	Oil	Royalties	1985758.02
-2005	MS	Oil & Gas	Other Revenues	-1145.25
+2005	MS	Oil & Gas	Other Revenues	-4145.25
 2005	MS	Gas	Royalties	548881.50
-2005	MS	Oil & Gas	Other Royalties	-3000.00
+2005	MT	Phosphate	Rents	1409.00
+2005	MT	Coal	Bonus	348040.01
 2005	MT	Oil & Gas	Bonus	661251.50
-2005	MT	Oil & Gas	Other Revenues	386033.34
+2005	MT	Coal	Other Revenues	2510100.51
+2005	MT	Oil & Gas	Other Revenues	536495.94
+2005	MT	Coal	Rents	132264.00
 2005	MT	Oil & Gas	Rents	3365383.62
+2005	MT	Coal	Royalties	30344606.52
 2005	MT	Gas	Royalties	20179252.78
-2005	MT	Oil & Gas	Other Royalties	150462.60
 2005	MT	Oil	Royalties	19980966.94
 2005	MT	NGL	Royalties	316364.23
-2005	MT	Coal	Bonus	348040.01
-2005	MT	Coal	Other Revenues	635100.51
-2005	MT	Coal	Other Royalties	1875000.00
-2005	MT	Coal	Rents	132264.00
-2005	MT	Phosphate	Rents	1409.00
-2005	MT	Coal	Royalties	30344606.52
 2005	MT	Sulfur	Royalties	1617.45
 2005	ND	Oil & Gas	Bonus	35196873.00
-2005	ND	Oil & Gas	Other Revenues	8021.44
-2005	ND	Oil & Gas	Other Royalties	296556.68
+2005	ND	Oil & Gas	Other Revenues	304578.12
 2005	ND	Oil & Gas	Rents	1080491.04
 2005	ND	Gas	Royalties	5187918.93
 2005	ND	NGL	Royalties	479619.16
 2005	ND	Oil	Royalties	35718801.32
+2005	ND	Sulfur	Royalties	35.03
 2005	ND	Coal	Bonus	10856.00
 2005	ND	Coal	Rents	9624.00
 2005	ND	Coal	Royalties	547475.07
-2005	ND	Sulfur	Royalties	35.03
 2005	NE	Oil & Gas	Rents	14777.70
 2005	NE	Oil & Gas	Other Revenues	21000.71
 2005	NE	Oil	Royalties	209690.99
 2005	NM	Oil & Gas	Bonus	56491100.00
 2005	NM	Oil & Gas	Rents	3190282.06
-2005	NM	Gas	Royalties	670238684.15
-2005	NM	Oil & Gas	Other Revenues	821372.86
-2005	NM	Oil & Gas	Other Royalties	41157461.80
+2005	NM	Gas	Royalties	670241697.61
+2005	NM	Coal	Rents	-51645.01
+2005	NM	Oil & Gas	Other Revenues	41978834.66
 2005	NM	NGL	Royalties	93442934.50
 2005	NM	Oil	Royalties	133603209.09
-2005	NM	Gas	Other Royalties	3013.46
-2005	NM	Coal	Bonus	2600000.00
-2005	NM	Potassium	Other Revenues	225631.00
-2005	NM	Sodium	Other Revenues	120.00
-2005	NM	Coal	Other Royalties	1126515.25
-2005	NM	Potassium	Other Royalties	299039.46
-2005	NM	Coal	Rents	-51645.01
 2005	NM	Geothermal	Rents	6560.00
+2005	NM	Potassium	Other Revenues	524670.46
 2005	NM	Potassium	Rents	8771.50
 2005	NM	Sodium	Rents	1280.00
-2005	NM	Coal	Royalties	14275241.59
-2005	NM	Brine Barrels	Royalties	166.67
-2005	NM	Carbon Dioxide Gas	Royalties	529547.82
 2005	NM	Granulated Langeinite	Royalties	1151.36
 2005	NM	Langbeinite	Royalties	1562537.35
 2005	NM	Langbeinite-Coarse	Royalties	30464.73
@@ -509,35 +459,37 @@ Year	Region	Commodity	Type	Revenue
 2005	NM	Potassium Sulphate-Granular	Royalties	1069.72
 2005	NM	Potassium Sulphate-Standard	Royalties	2552.08
 2005	NM	Salt	Royalties	160260.23
-2005	NV	Oil & Gas	Bonus	3931478.25
-2005	NV	Oil & Gas	Rents	4824446.69
-2005	NV	Oil	Royalties	2158747.47
-2005	NV	Oil & Gas	Other Revenues	3715.22
-2005	NV	Oil & Gas	Other Royalties	2811.28
-2005	NV	Geothermal	Other Revenues	6904.74
-2005	NV	Geothermal	Other Royalties	-22709.00
+2005	NM	Carbon Dioxide Gas	Royalties	529547.82
+2005	NM	Sodium	Other Revenues	120.00
+2005	NM	Brine Barrels	Royalties	166.67
+2005	NM	Coal	Royalties	14275241.59
+2005	NM	Coal	Bonus	2600000.00
+2005	NM	Coal	Other Revenues	1126515.25
+2005	NV	Geothermal	Other Revenues	-15804.26
 2005	NV	Geothermal	Rents	651661.00
-2005	NV	Potassium	Rents	1160.00
-2005	NV	Sand & Gravel	Rents	-1280.00
 2005	NV	Sodium	Rents	-19836.00
 2005	NV	Geothermal	Royalties	4026916.71
-2005	NV	Potash	Royalties	238.50
+2005	NV	Oil & Gas	Bonus	3931478.25
+2005	NV	Oil & Gas	Rents	4824446.69
+2005	NV	Sand & Gravel	Rents	-1280.00
 2005	NV	Sand/Gravel	Royalties	-93570.02
+2005	NV	Potassium	Rents	1160.00
+2005	NV	Potash	Royalties	238.50
+2005	NV	Oil	Royalties	2158747.47
+2005	NV	Oil & Gas	Other Revenues	6526.50
 2005	NY	Gas	Royalties	20149.72
 2005	OH	Gas	Royalties	542090.49
 2005	OH	Oil	Royalties	124542.98
 2005	OH	Oil & Gas	Rents	12989.24
-2005	OH	Oil & Gas	Other Revenues	4.03
-2005	OH	Oil & Gas	Other Royalties	775.00
-2005	OK	Oil & Gas	Other Revenues	5287.61
-2005	OK	Oil & Gas	Other Royalties	161799.94
+2005	OH	Oil & Gas	Other Revenues	779.03
+2005	OK	Oil & Gas	Other Revenues	167087.55
 2005	OK	Oil & Gas	Rents	188757.51
 2005	OK	Gas	Royalties	9376499.88
 2005	OK	Oil	Royalties	741031.98
 2005	OK	Oil & Gas	Bonus	1845964.00
 2005	OK	NGL	Royalties	181266.40
-2005	OK	Coal	Other Revenues	-21293.25
 2005	OK	Coal	Rents	41994.00
+2005	OK	Coal	Other Revenues	-21293.25
 2005	OK	Coal	Royalties	285375.60
 2005	OR	Oil & Gas	Rents	52178.50
 2005	PA	Oil & Gas	Other Revenues	19834.71
@@ -545,46 +497,44 @@ Year	Region	Commodity	Type	Revenue
 2005	SC	Hardrock	Rents	1110.00
 2005	SD	Oil & Gas	Bonus	62485.00
 2005	SD	Oil & Gas	Rents	152240.50
-2005	SD	Oil & Gas	Other Royalties	-14422.24
+2005	SD	Oil & Gas	Other Revenues	-14422.24
 2005	SD	Oil	Royalties	1135530.03
 2005	SD	Gas	Royalties	144649.92
-2005	TX	Oil & Gas	Other Revenues	23718.34
+2005	TX	Oil & Gas	Other Revenues	737673.57
 2005	TX	Oil & Gas	Rents	497491.46
 2005	TX	Oil	Royalties	2714384.77
 2005	TX	Gas	Royalties	20488349.89
 2005	TX	Oil & Gas	Bonus	12577020.00
-2005	TX	Oil & Gas	Other Royalties	713955.23
 2005	TX	NGL	Royalties	182088.73
+2005	UT	Geothermal	Other Revenues	3100.33
+2005	UT	Geothermal	Royalties	255075.74
+2005	UT	Hardrock	Other Revenues	1920.00
+2005	UT	Hardrock	Rents	1847.00
+2005	UT	Coal	Bonus	3701620.00
 2005	UT	Oil & Gas	Bonus	8403186.25
-2005	UT	Oil & Gas	Other Revenues	612355.63
-2005	UT	Oil & Gas	Other Royalties	3405088.86
+2005	UT	Oil & Gas	Other Revenues	4017444.49
+2005	UT	Coal	Rents	-58941.81
 2005	UT	Oil & Gas	Rents	4248362.51
+2005	UT	Coal	Royalties	27352945.43
 2005	UT	Gas	Royalties	127944939.15
 2005	UT	Oil	Royalties	32117107.44
-2005	UT	NGL	Royalties	1698273.92
-2005	UT	Coal	Bonus	3701620.00
-2005	UT	Clay	Other Revenues	782.43
-2005	UT	Geothermal	Other Revenues	3100.33
-2005	UT	Gilsonite	Other Revenues	11151.00
-2005	UT	Hardrock	Other Revenues	1920.00
-2005	UT	Phosphate	Other Revenues	22422.00
-2005	UT	Potassium	Other Revenues	34259.37
-2005	UT	Clay	Rents	468.00
-2005	UT	Coal	Rents	-58941.80
-2005	UT	Geothermal	Rents	229.00
-2005	UT	Gilsonite	Rents	1922.00
-2005	UT	Hardrock	Rents	1847.00
-2005	UT	Phosphate	Rents	-6634.00
-2005	UT	Potassium	Rents	27445.00
 2005	UT	Tar Sands	Rents	12190.00
-2005	UT	Coal	Royalties	27352945.43
-2005	UT	Geothermal	Royalties	255075.74
+2005	UT	NGL	Royalties	1698273.92
+2005	UT	Potassium	Other Revenues	34259.37
+2005	UT	Potassium	Rents	27445.00
+2005	UT	Geothermal	Rents	229.00
+2005	UT	Clay	Other Revenues	782.43
+2005	UT	Clay	Rents	468.00
 2005	UT	Clay	Royalties	1948.02
-2005	UT	Gilsonite	Royalties	347903.04
 2005	UT	Magnesium Chloride Brine	Royalties	14362.42
 2005	UT	Manure Salts	Royalties	11421.28
 2005	UT	Potash	Royalties	78335.40
 2005	UT	Salt	Royalties	1183.65
+2005	UT	Gilsonite	Other Revenues	11151.00
+2005	UT	Phosphate	Other Revenues	22422.00
+2005	UT	Gilsonite	Rents	1922.00
+2005	UT	Phosphate	Rents	-6634.00
+2005	UT	Gilsonite	Royalties	347903.04
 2005	VA	Oil & Gas	Other Revenues	5365.22
 2005	VA	Oil & Gas	Rents	12494.00
 2005	VA	Gas	Royalties	572724.96
@@ -593,28 +543,25 @@ Year	Region	Commodity	Type	Revenue
 2005	WA	Oil & Gas	Bonus	71800.00
 2005	WA	Coal	Rents	2292.00
 2005	WA	Coal	Royalties	2926.70
-2005	WV	Oil & Gas	Other Revenues	214274.99
+2005	WV	Oil & Gas	Other Revenues	214374.99
 2005	WV	Gas	Royalties	920338.81
 2005	WV	Oil & Gas	Rents	-11386.98
 2005	WV	Oil	Royalties	263.20
-2005	WV	Oil & Gas	Other Royalties	100.00
-2005	WY	Oil & Gas	Other Revenues	417766.19
-2005	WY	Oil & Gas	Other Royalties	34452000.56
+2005	WY	Oil & Gas	Other Revenues	34869766.74
 2005	WY	Oil & Gas	Rents	17960492.47
-2005	WY	Gas	Royalties	855590939.97
-2005	WY	Oil	Royalties	139160355.27
+2005	WY	Gas	Royalties	855743449.97
+2005	WY	Oil	Royalties	139160373.62
 2005	WY	Oil & Gas	Bonus	45349122.01
 2005	WY	NGL	Royalties	21019962.70
-2005	WY	Gas	Other Royalties	152510.00
-2005	WY	Oil	Other Royalties	18.35
 2005	WY	Coal	Bonus	424069468.26
 2005	WY	Coal	Other Revenues	-1060744.97
-2005	WY	Sodium	Other Revenues	176518.62
 2005	WY	Coal	Rents	528459.60
-2005	WY	Sodium	Rents	-13037.00
 2005	WY	Coal	Royalties	343368386.22
+2005	WY	Sulfur	Royalties	29519.33
+2005	WY	Sodium	Other Revenues	176518.62
 2005	WY	Carbon Dioxide Gas	Royalties	88213.37
 2005	WY	Helium	Royalties	9562.66
+2005	WY	Sodium	Rents	-13037.00
 2005	WY	Purge Liquor	Royalties	69151.97
 2005	WY	Soda Ash	Royalties	14862717.97
 2005	WY	Soda Ash-Granular	Royalties	7880.00
@@ -623,60 +570,52 @@ Year	Region	Commodity	Type	Revenue
 2005	WY	Sodium Decahydrate	Royalties	273.44
 2005	WY	Sodium Sesquicarbonate	Royalties	280365.88
 2005	WY	Sulfide	Royalties	45802.50
-2005	WY	Sulfur	Royalties	29519.33
 2005	WY	Trona Ore	Royalties	75834.23
 2006	AK	Oil & Gas	Rents	8966799.41
-2006	AK	Oil & Gas	Other Revenues	80025.82
+2006	AK	Oil & Gas	Other Revenues	52129.95
 2006	AK	Oil	Other Revenues	-11.60
-2006	AK	Gas	Other Royalties	180625.92
-2006	AK	Oil & Gas	Other Royalties	-27895.87
-2006	AK	Gas	Royalties	13993320.68
+2006	AK	Gas	Royalties	14173946.60
 2006	AK	NGL	Royalties	139228.34
 2006	AK	Oil	Royalties	1810092.43
 2006	AK	Coal	Rents	5120.00
-2006	AL	Oil & Gas	Other Revenues	4575.06
-2006	AL	Oil & Gas	Other Royalties	8298.76
+2006	AL	Oil & Gas	Other Revenues	12873.82
 2006	AL	Gas	Royalties	780638.16
 2006	AL	NGL	Royalties	9.45
 2006	AL	Oil	Royalties	648227.90
-2006	AL	Oil & Gas	Rents	44812.00
-2006	AL	Oil & Gas	Bonus	175620.00
-2006	AL	Coal	Bonus	64113.60
-2006	AL	Hardrock	Other Revenues	123.00
-2006	AL	Coal	Rents	4830.00
-2006	AL	Hardrock	Rents	-41.00
-2006	AL	Coal	Royalties	1780.73
-2006	AL	Clay	Royalties	20117.10
 2006	AL	Sulfur	Royalties	1193.10
+2006	AL	Hardrock	Other Revenues	123.00
+2006	AL	Hardrock	Rents	-41.00
+2006	AL	Clay	Royalties	20117.10
+2006	AL	Oil & Gas	Rents	44812.00
+2006	AL	Coal	Bonus	64113.60
+2006	AL	Coal	Royalties	1780.73
+2006	AL	Coal	Rents	4830.00
+2006	AL	Oil & Gas	Bonus	175620.00
 2006	AR	Gas	Royalties	8274401.21
 2006	AR	Oil	Royalties	243.75
 2006	AR	Oil & Gas	Rents	1486209.00
 2006	AR	Oil & Gas	Bonus	7120378.99
-2006	AR	Oil & Gas	Other Revenues	14114.14
-2006	AR	Oil & Gas	Other Royalties	-42175.17
+2006	AR	Oil & Gas	Other Revenues	-28061.03
 2006	AR	Hardrock	Other Revenues	1291.00
 2006	AR	Hardrock	Rents	-31.00
 2006	AR	Quartz	Rents	40.00
 2006	AR	Quartz Crystal	Royalties	267.00
 2006	AZ	Oil & Gas	Rents	61945.50
-2006	AZ	Sodium	Other Revenues	12.00
 2006	AZ	Geothermal	Rents	4168.00
+2006	AZ	Sodium	Other Revenues	12.00
 2006	AZ	Sodium	Rents	4.00
 2006	AZ	Salt	Royalties	72.47
 2006	CA	Gas	Royalties	5228800.99
 2006	CA	Oil	Royalties	93078519.83
 2006	CA	Oil & Gas	Bonus	2237089.75
-2006	CA	Oil & Gas	Other Revenues	50191.48
+2006	CA	Oil & Gas	Other Revenues	230155.53
 2006	CA	Oil & Gas	Rents	557104.98
 2006	CA	NGL	Royalties	294589.25
-2006	CA	Oil & Gas	Other Royalties	179964.05
-2006	CA	Oil & Gas	Royalties	-0.01
-2006	CA	Geothermal	Other Revenues	1600.00
-2006	CA	Sodium	Other Revenues	-240.00
-2006	CA	Geothermal	Other Royalties	-125000.00
 2006	CA	Geothermal	Rents	106139.00
-2006	CA	Sodium	Rents	9261.00
 2006	CA	Geothermal	Royalties	11387545.97
+2006	CA	Geothermal	Other Revenues	-123400.00
+2006	CA	Oil & Gas	Royalties	-0.01
+2006	CA	Sodium	Rents	9261.00
 2006	CA	Anhydrous Sodium Sulfate	Royalties	206974.13
 2006	CA	Borax-Anhydrous	Royalties	-1956.91
 2006	CA	Borax-Decahydrate	Royalties	32320.20
@@ -686,68 +625,64 @@ Year	Region	Commodity	Type	Revenue
 2006	CA	Soda Ash	Royalties	4510259.97
 2006	CA	Soda Ash-Granular	Royalties	-165563.39
 2006	CA	Sodium Bi-Carbonate	Royalties	51139.24
+2006	CA	Sodium	Other Revenues	-240.00
 2006	CO	Oil & Gas	Rents	6400396.29
 2006	CO	Oil	Royalties	33952941.98
-2006	CO	Oil & Gas	Other Revenues	267187.48
-2006	CO	Oil & Gas	Other Royalties	-103916.28
+2006	CO	Oil & Gas	Other Revenues	163271.20
 2006	CO	Gas	Royalties	162935102.32
 2006	CO	Oil & Gas	Bonus	27271302.50
 2006	CO	NGL	Royalties	4601849.20
+2006	CO	Coal	Bonus	555142.87
+2006	CO	Coal	Rents	188146.40
+2006	CO	Coal	Royalties	48424625.79
+2006	CO	Carbon Dioxide Gas	Royalties	24279648.79
 2006	CO	Oil	Other Revenues	-185.38
 2006	CO	Oil & Gas	Royalties	-199.26
 2006	CO	Oil Shale	Other Revenues	20000.00
-2006	CO	Oil Shale	Rents	15264.00
-2006	CO	Coal	Bonus	555142.87
 2006	CO	Sodium	Other Revenues	-18031.00
-2006	CO	Coal	Rents	188146.40
+2006	CO	Oil Shale	Rents	15264.00
 2006	CO	Sodium	Rents	-8224.00
-2006	CO	Coal	Royalties	48424625.79
-2006	CO	Carbon Dioxide Gas	Royalties	24279648.79
 2006	CO	Sodium Bi-Carbonate	Royalties	361867.12
-2006	FL	Oil & Gas	Rents	12116.50
 2006	FL	Phosphate Raw Ore	Royalties	1398.10
-2006	ID	Oil & Gas	Rents	2712.50
-2006	ID	Hardrock	Other Revenues	900.00
+2006	FL	Oil & Gas	Rents	12116.50
 2006	ID	Phosphate	Other Revenues	100083.00
-2006	ID	Gemstones	Rents	80.00
-2006	ID	Hardrock	Rents	-180.00
+2006	ID	Oil & Gas	Rents	2712.50
 2006	ID	Phosphate	Rents	19469.00
-2006	ID	Gold	Royalties	3464.85
 2006	ID	Phosphate Raw Ore	Royalties	2064495.78
+2006	ID	Hardrock	Rents	-180.00
+2006	ID	Gold	Royalties	3464.85
+2006	ID	Hardrock	Other Revenues	900.00
+2006	ID	Gemstones	Rents	80.00
 2006	IL	Oil	Royalties	271844.90
 2006	IL	Oil & Gas	Other Revenues	175.00
 2006	KS	Oil & Gas	Rents	33887.40
-2006	KS	Gas	Royalties	4935394.68
-2006	KS	Oil & Gas	Other Revenues	14663.41
-2006	KS	Gas	Other Royalties	216.83
-2006	KS	Oil & Gas	Other Royalties	-812.06
+2006	KS	Gas	Royalties	4935611.51
+2006	KS	Oil & Gas	Other Revenues	13851.35
 2006	KS	NGL	Royalties	456079.31
 2006	KS	Oil	Royalties	3940260.63
 2006	KS	Oil & Gas	Bonus	56720.00
 2006	KS	Helium	Royalties	-57.39
+2006	KY	Coal	Rents	31080.00
+2006	KY	Coal	Bonus	510452.81
 2006	KY	Oil & Gas	Bonus	39629.00
 2006	KY	Oil & Gas	Rents	19535.30
 2006	KY	Gas	Royalties	181435.89
+2006	KY	Coal	Other Revenues	20000.00
 2006	KY	Oil	Royalties	6002.08
 2006	KY	Oil & Gas	Other Revenues	20701.99
-2006	KY	Coal	Bonus	510452.81
-2006	KY	Coal	Other Revenues	20000.00
-2006	KY	Coal	Rents	31080.00
 2006	KY	Coal	Royalties	1420959.21
 2006	LA	Oil & Gas	Rents	20330.50
 2006	LA	Gas	Royalties	34130980.06
 2006	LA	NGL	Royalties	1229701.38
 2006	LA	Oil	Royalties	3319581.35
-2006	LA	Oil & Gas	Other Royalties	-713524.72
+2006	LA	Oil & Gas	Other Revenues	-695859.86
 2006	LA	Oil & Gas	Bonus	595815.00
-2006	LA	Oil & Gas	Other Revenues	17664.86
 2006	MD	Oil & Gas	Other Revenues	7159.59
 2006	MD	Oil & Gas	Rents	496.00
 2006	MI	Oil & Gas	Rents	36434.50
 2006	MI	Gas	Royalties	2124034.76
 2006	MI	Oil	Royalties	214631.89
-2006	MI	Oil & Gas	Other Revenues	1653.46
-2006	MI	Oil & Gas	Other Royalties	-1760.00
+2006	MI	Oil & Gas	Other Revenues	-106.54
 2006	MI	NGL	Royalties	102903.75
 2006	MI	Oil & Gas	Bonus	8160.00
 2006	MN	Copper	Other Revenues	26110.00
@@ -755,75 +690,61 @@ Year	Region	Commodity	Type	Revenue
 2006	MN	Copper	Rents	2611.00
 2006	MN	Hardrock	Rents	4520.00
 2006	MO	Hardrock	Other Revenues	21297.00
-2006	MO	Hardrock	Rents	9741.00
-2006	MO	Copper	Royalties	-10648.35
-2006	MO	Copper Concentrate	Royalties	1370471.55
-2006	MO	Lead Concentrate	Royalties	5887501.15
+2006	MO	Hardrock	Rents	9740.99
+2006	MO	Copper	Royalties	-10648.34
+2006	MO	Copper Concentrate	Royalties	1370471.54
+2006	MO	Lead Concentrate	Royalties	5887501.16
 2006	MO	Zinc Concentrate	Royalties	3100687.25
 2006	MS	Oil & Gas	Rents	605491.50
 2006	MS	Oil	Royalties	2009165.81
 2006	MS	Oil & Gas	Bonus	875076.50
-2006	MS	Oil & Gas	Other Revenues	1491.00
+2006	MS	Oil & Gas	Other Revenues	-7643.79
 2006	MS	Gas	Royalties	425134.22
 2006	MS	Oil & Gas	Royalties	-143.81
-2006	MS	Oil & Gas	Other Royalties	-9134.79
 2006	MT	Oil & Gas	Bonus	926627.50
+2006	MT	Phosphate	Other Revenues	12681.00
 2006	MT	Oil & Gas	Rents	3235240.25
-2006	MT	Oil & Gas	Other Revenues	341455.58
+2006	MT	Coal	Bonus	456320.00
+2006	MT	Oil & Gas	Other Revenues	655490.42
+2006	MT	Coal	Rents	132630.30
+2006	MT	Coal	Royalties	29069968.33
 2006	MT	Gas	Royalties	18469949.95
-2006	MT	Oil & Gas	Other Royalties	314034.84
 2006	MT	Oil	Royalties	22521373.98
 2006	MT	NGL	Royalties	422625.68
-2006	MT	Oil & Gas	Royalties	-241.35
-2006	MT	Oil	Other Revenues	-2.50
-2006	MT	Coal	Bonus	456320.00
-2006	MT	Coal	Other Revenues	742861.13
-2006	MT	Phosphate	Other Revenues	12681.00
-2006	MT	Coal	Rents	132630.30
-2006	MT	Hardrock	Rents	2210.50
-2006	MT	Coal	Royalties	29069968.33
 2006	MT	Sulfur	Royalties	2321.49
+2006	MT	Oil & Gas	Royalties	-241.35
+2006	MT	Hardrock	Rents	2210.50
+2006	MT	Oil	Other Revenues	-2.50
+2006	MT	Coal	Other Revenues	742861.13
 2006	ND	Oil & Gas	Bonus	14602862.50
-2006	ND	Oil & Gas	Other Revenues	7544.01
-2006	ND	Oil & Gas	Other Royalties	765143.82
+2006	ND	Oil & Gas	Other Revenues	772687.83
 2006	ND	Oil & Gas	Rents	1033940.18
 2006	ND	Gas	Royalties	5457309.31
 2006	ND	NGL	Royalties	478298.09
 2006	ND	Oil	Royalties	43951093.81
+2006	ND	Sulfur	Royalties	91.57
 2006	ND	Coal	Bonus	117536.00
 2006	ND	Coal	Rents	33558.00
 2006	ND	Coal	Royalties	753486.35
 2006	ND	Leonardite	Royalties	13538.71
-2006	ND	Sulfur	Royalties	91.57
 2006	NE	Oil & Gas	Rents	17602.00
 2006	NE	Oil & Gas	Other Revenues	22397.40
 2006	NE	Oil	Royalties	280939.69
 2006	NE	Oil	Other Revenues	-6.00
 2006	NM	Oil & Gas	Rents	3389445.39
 2006	NM	Oil & Gas	Bonus	78379647.00
-2006	NM	Oil & Gas	Other Revenues	552033.62
-2006	NM	Oil & Gas	Other Royalties	4616492.84
-2006	NM	Gas	Royalties	680609202.10
-2006	NM	NGL	Royalties	108848909.86
+2006	NM	Oil & Gas	Other Revenues	5168526.46
+2006	NM	Gas	Royalties	680611624.27
+2006	NM	NGL	Royalties	109336368.80
 2006	NM	Oil & Gas	Royalties	-18152.79
-2006	NM	Oil	Royalties	174695926.93
-2006	NM	Oil	Other Revenues	-520.01
-2006	NM	Gas	Other Royalties	2422.17
-2006	NM	NGL	Other Royalties	487458.94
-2006	NM	Oil	Other Royalties	-7.34
-2006	NM	Coal	Bonus	16060.00
+2006	NM	Oil	Royalties	174695919.59
+2006	NM	Geothermal	Rents	3280.00
 2006	NM	Potassium	Bonus	9638.54
+2006	NM	Oil	Other Revenues	-520.01
 2006	NM	Potassium	Other Revenues	509500.38
 2006	NM	Sodium	Other Revenues	5400.00
-2006	NM	Coal	Other Royalties	1213214.45
-2006	NM	Coal	Rents	87396.00
-2006	NM	Geothermal	Rents	3280.00
 2006	NM	Potassium	Rents	-18763.00
 2006	NM	Sodium	Rents	1760.00
-2006	NM	Coal	Royalties	8808653.93
-2006	NM	Geothermal	Royalties	-7956.86
-2006	NM	Brine Barrels	Royalties	2061.30
-2006	NM	Carbon Dioxide Gas	Royalties	661304.77
 2006	NM	Granulated Langeinite	Royalties	277.14
 2006	NM	Langbeinite	Royalties	1845334.99
 2006	NM	Langbeinite-Special Std	Royalties	1001.67
@@ -833,42 +754,45 @@ Year	Region	Commodity	Type	Revenue
 2006	NM	Potassium Sulphate Special Std	Royalties	114.87
 2006	NM	Salt	Royalties	236317.11
 2006	NM	Sylvite-Raw Ore	Royalties	167.60
+2006	NM	Carbon Dioxide Gas	Royalties	661304.77
+2006	NM	Geothermal	Royalties	-7956.86
+2006	NM	Brine Barrels	Royalties	2061.30
+2006	NM	Coal	Rents	87396.00
+2006	NM	Coal	Royalties	8808653.93
+2006	NM	Coal	Bonus	16060.00
+2006	NM	Coal	Other Revenues	1213214.45
 2006	NV	Oil & Gas	Bonus	3855798.25
-2006	NV	Oil & Gas	Rents	6997497.00
-2006	NV	Oil	Royalties	2732321.10
-2006	NV	Oil & Gas	Other Revenues	7201.49
-2006	NV	Oil & Gas	Other Royalties	-3284.20
 2006	NV	Geothermal	Other Revenues	11848.57
-2006	NV	Potassium	Other Revenues	6960.00
 2006	NV	Geothermal	Rents	496860.00
-2006	NV	Potassium	Rents	2320.00
+2006	NV	Oil & Gas	Rents	6997497.00
 2006	NV	Geothermal	Royalties	1295189.54
-2006	NV	Potash	Royalties	2339.42
 2006	NV	Sand/Gravel	Royalties	2.40
+2006	NV	Potassium	Other Revenues	6960.00
+2006	NV	Potassium	Rents	2320.00
+2006	NV	Potash	Royalties	2339.42
+2006	NV	Oil	Royalties	2732321.10
+2006	NV	Oil & Gas	Other Revenues	3917.29
 2006	NY	Gas	Royalties	13365.04
 2006	OH	Gas	Royalties	596130.95
 2006	OH	Oil	Royalties	191104.48
 2006	OH	Oil & Gas	Rents	3192.09
-2006	OH	Oil & Gas	Other Royalties	24750.00
-2006	OH	Oil & Gas	Other Revenues	50.62
+2006	OH	Oil & Gas	Other Revenues	24800.62
 2006	OK	Oil & Gas	Bonus	2775870.00
-2006	OK	Oil & Gas	Other Royalties	11304.84
+2006	OK	Oil & Gas	Other Revenues	30324.35
 2006	OK	Oil & Gas	Rents	270123.53
 2006	OK	Gas	Royalties	10897536.97
-2006	OK	Oil	Royalties	982741.48
-2006	OK	Oil & Gas	Other Revenues	19019.51
+2006	OK	Oil	Royalties	982741.47
 2006	OK	NGL	Royalties	359716.41
 2006	OK	Oil	Other Revenues	-127.50
 2006	OK	Oil & Gas	Royalties	-6.20
-2006	OK	Oil	Other Royalties	-0.01
 2006	OK	Coal	Bonus	158197.75
-2006	OK	Coal	Other Revenues	28545.38
-2006	OK	Asphalt	Rents	959.00
 2006	OK	Coal	Rents	48051.00
+2006	OK	Coal	Other Revenues	28545.38
 2006	OK	Coal	Royalties	426238.17
+2006	OK	Asphalt	Rents	959.00
+2006	OR	Geothermal	Rents	3111.00
 2006	OR	Oil & Gas	Rents	421302.00
 2006	OR	Oil & Gas	Bonus	893603.00
-2006	OR	Geothermal	Rents	3111.00
 2006	PA	Oil & Gas	Other Revenues	14778.80
 2006	PA	Gas	Royalties	67242.09
 2006	PA	Oil & Gas	Bonus	114805.00
@@ -877,45 +801,43 @@ Year	Region	Commodity	Type	Revenue
 2006	SD	Oil & Gas	Rents	172880.00
 2006	SD	Oil	Royalties	1308521.66
 2006	SD	Oil & Gas	Bonus	45968.00
-2006	SD	Oil & Gas	Other Royalties	-900.00
+2006	SD	Oil & Gas	Other Revenues	-900.00
 2006	SD	Gas	Royalties	130031.12
-2006	TX	Oil & Gas	Other Revenues	15991.51
+2006	TX	Oil & Gas	Other Revenues	80426.48
 2006	TX	Oil & Gas	Rents	600733.60
 2006	TX	Oil & Gas	Bonus	2301402.00
 2006	TX	Oil	Royalties	2591405.08
 2006	TX	Gas	Royalties	19219211.07
-2006	TX	Oil & Gas	Other Royalties	64434.97
 2006	TX	NGL	Royalties	143345.04
 2006	TX	Oil & Gas	Royalties	-10.33
 2006	UT	Oil & Gas	Bonus	94065589.50
+2006	UT	Geothermal	Rents	23457.00
 2006	UT	Oil & Gas	Rents	7751895.83
-2006	UT	Oil & Gas	Other Revenues	543366.50
-2006	UT	Oil & Gas	Other Royalties	316172.66
+2006	UT	Geothermal	Royalties	203218.28
+2006	UT	Coal	Bonus	4264820.00
+2006	UT	Oil & Gas	Other Revenues	859539.16
+2006	UT	Coal	Rents	237027.00
+2006	UT	Coal	Royalties	27167183.60
 2006	UT	Gas	Royalties	153622021.19
 2006	UT	Oil & Gas	Royalties	-72.01
 2006	UT	Oil	Royalties	52604754.37
-2006	UT	NGL	Royalties	2076104.61
-2006	UT	Oil	Other Revenues	-0.01
-2006	UT	Coal	Bonus	4264820.00
-2006	UT	Clay	Other Revenues	163.94
-2006	UT	Gilsonite	Other Revenues	10677.00
-2006	UT	Phosphate	Other Revenues	22422.00
-2006	UT	Potassium	Other Revenues	-7488.37
-2006	UT	Clay	Rents	314.00
-2006	UT	Coal	Rents	237027.00
-2006	UT	Geothermal	Rents	23457.00
-2006	UT	Gilsonite	Rents	1489.50
-2006	UT	Hardrock	Rents	1489.00
 2006	UT	Phosphate	Rents	-11104.00
+2006	UT	NGL	Royalties	2076104.61
+2006	UT	Potassium	Other Revenues	-7488.37
 2006	UT	Potassium	Rents	24903.00
-2006	UT	Coal	Royalties	27167183.60
-2006	UT	Geothermal	Royalties	203218.28
+2006	UT	Hardrock	Rents	1489.00
+2006	UT	Clay	Other Revenues	163.94
+2006	UT	Clay	Rents	314.00
 2006	UT	Clay	Royalties	3219.45
-2006	UT	Gilsonite	Royalties	499699.59
+2006	UT	Oil	Other Revenues	-0.01
 2006	UT	Magnesium Chloride Brine	Royalties	20113.91
 2006	UT	Manure Salts	Royalties	11526.75
 2006	UT	Potash	Royalties	92538.38
 2006	UT	Salt	Royalties	1343.85
+2006	UT	Gilsonite	Other Revenues	10677.00
+2006	UT	Phosphate	Other Revenues	22422.00
+2006	UT	Gilsonite	Rents	1489.50
+2006	UT	Gilsonite	Royalties	499699.59
 2006	VA	Oil & Gas	Other Revenues	4925.61
 2006	VA	Oil & Gas	Rents	14329.00
 2006	VA	Gas	Royalties	342675.11
@@ -928,92 +850,83 @@ Year	Region	Commodity	Type	Revenue
 2006	WA	Coal	Royalties	11394.65
 2006	WV	Gas	Royalties	702255.57
 2006	WV	Oil & Gas	Rents	50109.50
-2006	WV	Oil & Gas	Other Revenues	125796.86
+2006	WV	Oil & Gas	Other Revenues	126796.86
 2006	WV	Oil	Royalties	995.82
 2006	WV	Oil & Gas	Bonus	166394.00
-2006	WV	Oil & Gas	Other Royalties	1000.00
 2006	WY	Oil & Gas	Bonus	52694267.00
-2006	WY	Oil & Gas	Other Revenues	440358.17
+2006	WY	Oil & Gas	Other Revenues	-22439967.86
 2006	WY	Oil & Gas	Rents	19030405.67
-2006	WY	Gas	Royalties	934236036.24
-2006	WY	Oil	Royalties	197131143.04
-2006	WY	Oil & Gas	Other Royalties	-22880326.02
+2006	WY	Gas	Royalties	934471457.92
+2006	WY	Oil	Royalties	197131152.51
 2006	WY	NGL	Royalties	27267737.06
-2006	WY	Oil	Other Revenues	-277.17
-2006	WY	Gas	Other Royalties	235421.68
-2006	WY	Oil & Gas	Royalties	-123.01
-2006	WY	Oil	Other Royalties	9.47
 2006	WY	Coal	Bonus	415863088.26
 2006	WY	Coal	Other Revenues	-4768138.63
-2006	WY	Sodium	Other Revenues	95010.00
+2006	WY	Oil	Other Revenues	-277.17
 2006	WY	Coal	Rents	505344.50
-2006	WY	Sodium	Rents	-21033.91
 2006	WY	Coal	Royalties	413011620.55
-2006	WY	Asbestos	Royalties	715.53
-2006	WY	Borrow Sand & Gravel	Royalties	19284.43
+2006	WY	Oil & Gas	Royalties	-123.01
+2006	WY	Sulfur	Royalties	15499.79
+2006	WY	Sodium	Other Revenues	95010.00
+2006	WY	Sodium	Rents	-21033.91
+2006	WY	Salt	Royalties	682.83
 2006	WY	Carbon Dioxide Gas	Royalties	60733.70
 2006	WY	Helium	Royalties	-234.17
+2006	WY	Asbestos	Royalties	715.53
+2006	WY	Borrow Sand & Gravel	Royalties	19284.43
 2006	WY	Purge Liquor	Royalties	99589.28
-2006	WY	Salt	Royalties	682.83
 2006	WY	Soda Ash	Royalties	22887841.13
 2006	WY	Sodium Bi-Carbonate	Royalties	883257.92
 2006	WY	Sodium Bisulfite	Royalties	16996.93
 2006	WY	Sodium Decahydrate	Royalties	1842.91
 2006	WY	Sodium Sesquicarbonate	Royalties	299799.37
 2006	WY	Sulfide	Royalties	271208.22
-2006	WY	Sulfur	Royalties	15499.79
 2006	WY	Trona Ore	Royalties	371513.16
 2007	AK	Oil & Gas	Rents	11267466.04
-2007	AK	Oil & Gas	Other Revenues	50387.43
-2007	AK	Gas	Other Royalties	107431.34
-2007	AK	Oil & Gas	Other Royalties	36383.43
-2007	AK	Gas	Royalties	15393058.48
+2007	AK	Oil & Gas	Other Revenues	86770.86
+2007	AK	Gas	Royalties	15500489.82
 2007	AK	NGL	Royalties	34629.51
 2007	AK	Oil	Royalties	1587414.50
 2007	AK	Oil & Gas	Bonus	13763715.00
 2007	AK	Coal	Rents	5120.00
-2007	AL	Oil & Gas	Other Revenues	116.33
-2007	AL	Oil & Gas	Other Royalties	-4892.24
+2007	AL	Oil & Gas	Other Revenues	-4775.91
 2007	AL	Gas	Royalties	623369.25
 2007	AL	Oil	Royalties	552449.27
+2007	AL	Sulfur	Royalties	369.54
 2007	AL	Oil & Gas	Bonus	999834.00
-2007	AL	Oil & Gas	Rents	168771.50
-2007	AL	NGL	Royalties	418.11
-2007	AL	Coal	Bonus	64113.60
 2007	AL	Hardrock	Other Revenues	123.00
+2007	AL	Oil & Gas	Rents	168771.50
+2007	AL	Clay	Royalties	12892.80
+2007	AL	Coal	Bonus	64113.60
 2007	AL	Coal	Rents	13494.00
 2007	AL	Coal	Royalties	6613.15
-2007	AL	Clay	Royalties	12892.80
-2007	AL	Sulfur	Royalties	369.54
+2007	AL	NGL	Royalties	418.11
 2007	AR	Oil & Gas	Bonus	18577847.00
 2007	AR	Oil & Gas	Rents	2540682.60
-2007	AR	Oil & Gas	Other Royalties	-44415.50
+2007	AR	Oil & Gas	Other Revenues	-26656.44
 2007	AR	Gas	Royalties	6670803.99
 2007	AR	Oil	Royalties	193.36
-2007	AR	Oil & Gas	Other Revenues	17759.05
-2007	AR	Hardrock	Other Revenues	2087.40
 2007	AR	Hardrock	Rents	-575.00
+2007	AR	Hardrock	Other Revenues	2087.40
 2007	AR	Quartz Crystal	Royalties	323.80
 2007	AZ	Oil & Gas	Rents	527954.00
-2007	AZ	Oil & Gas	Bonus	1280.00
-2007	AZ	Sodium	Other Revenues	12.00
 2007	AZ	Geothermal	Rents	2084.00
+2007	AZ	Sodium	Other Revenues	12.00
 2007	AZ	Sodium	Rents	4.00
 2007	AZ	Salt	Royalties	823.88
+2007	AZ	Oil & Gas	Bonus	1280.00
 2007	CA	Oil & Gas	Bonus	29458.00
 2007	CA	Oil & Gas	Rents	545235.79
 2007	CA	Gas	Royalties	4359548.21
 2007	CA	Oil	Royalties	106117353.10
-2007	CA	Oil & Gas	Other Revenues	120194.00
-2007	CA	Oil & Gas	Other Royalties	80026.34
+2007	CA	Oil & Gas	Other Revenues	200220.34
 2007	CA	NGL	Royalties	181130.89
-2007	CA	Geothermal	Bonus	8006800.00
-2007	CA	Sodium	Bonus	120.00
-2007	CA	Geothermal	Other Revenues	-1000.00
-2007	CA	Sodium	Other Revenues	360.00
 2007	CA	Geothermal	Rents	185828.36
-2007	CA	Sodium	Rents	240.00
 2007	CA	Geothermal	Royalties	9001457.39
+2007	CA	Geothermal	Bonus	8006800.00
+2007	CA	Geothermal	Other Revenues	-1000.00
+2007	CA	Sodium	Bonus	120.00
+2007	CA	Sodium	Other Revenues	360.00
+2007	CA	Sodium	Rents	240.00
 2007	CA	Anhydrous Sodium Sulfate	Royalties	436978.36
 2007	CA	Borax-Decahydrate	Royalties	64234.90
 2007	CA	Borax-Pentahydrate	Royalties	85558.19
@@ -1024,47 +937,43 @@ Year	Region	Commodity	Type	Revenue
 2007	CO	Oil & Gas	Rents	7169952.93
 2007	CO	Oil & Gas	Bonus	21754754.51
 2007	CO	Oil	Royalties	35455854.96
-2007	CO	Oil & Gas	Other Revenues	257826.30
-2007	CO	Oil & Gas	Other Royalties	2587182.71
+2007	CO	Oil & Gas	Other Revenues	2845009.01
 2007	CO	Gas	Royalties	130941181.55
 2007	CO	NGL	Royalties	5665173.12
 2007	CO	Coal	Bonus	4289424.87
-2007	CO	Coal	Other Revenues	101522.32
-2007	CO	Sodium	Other Revenues	6561.00
 2007	CO	Coal	Rents	203319.78
 2007	CO	Coal	Royalties	45601100.10
 2007	CO	Carbon Dioxide Gas	Royalties	22749872.26
+2007	CO	Coal	Other Revenues	101522.32
+2007	CO	Sodium	Other Revenues	6561.00
 2007	CO	Sodium Bi-Carbonate	Royalties	245418.56
-2007	FL	Oil & Gas	Rents	9089.50
 2007	FL	Phosphate	Rents	884.00
+2007	FL	Oil & Gas	Rents	9089.50
+2007	ID	Phosphate	Other Revenues	165729.00
 2007	ID	Oil & Gas	Bonus	86061.00
 2007	ID	Oil & Gas	Rents	29177.00
-2007	ID	Geothermal	Bonus	5707750.00
-2007	ID	Phosphate	Other Revenues	165729.00
-2007	ID	Gemstones	Rents	80.00
 2007	ID	Geothermal	Rents	19262.00
-2007	ID	Hardrock	Rents	338.00
 2007	ID	Phosphate	Rents	-8874.00
-2007	ID	Gold	Royalties	1445.40
+2007	ID	Hardrock	Rents	338.00
 2007	ID	Phosphate Raw Ore	Royalties	2152071.29
+2007	ID	Geothermal	Bonus	5707750.00
+2007	ID	Gold	Royalties	1445.40
+2007	ID	Gemstones	Rents	80.00
 2007	IL	Oil	Royalties	259427.81
 2007	KS	Oil & Gas	Bonus	6826.00
 2007	KS	Oil & Gas	Rents	43303.10
-2007	KS	Oil & Gas	Other Royalties	94686.34
-2007	KS	Gas	Royalties	5117804.20
+2007	KS	Oil & Gas	Other Revenues	84737.75
+2007	KS	Gas	Royalties	5117833.73
 2007	KS	Oil	Royalties	2515227.62
-2007	KS	Oil & Gas	Other Revenues	-9948.59
-2007	KS	Gas	Other Royalties	29.53
 2007	KS	NGL	Royalties	495736.01
 2007	KY	Oil & Gas	Rents	4998.92
 2007	KY	Gas	Royalties	166057.99
 2007	KY	Oil	Royalties	153985.27
-2007	KY	Oil & Gas	Other Revenues	12891.81
 2007	KY	Coal	Other Revenues	66000.00
 2007	KY	Coal	Rents	4122.00
 2007	KY	Coal	Royalties	2560888.92
-2007	LA	Oil & Gas	Other Revenues	109862.70
-2007	LA	Oil & Gas	Other Royalties	1232111.99
+2007	KY	Oil & Gas	Other Revenues	12891.81
+2007	LA	Oil & Gas	Other Revenues	1341974.69
 2007	LA	Oil & Gas	Rents	28407.73
 2007	LA	Gas	Royalties	33025527.22
 2007	LA	Oil	Royalties	3862214.74
@@ -1075,8 +984,7 @@ Year	Region	Commodity	Type	Revenue
 2007	MI	Oil & Gas	Rents	26672.00
 2007	MI	Gas	Royalties	2416860.27
 2007	MI	Oil	Royalties	207460.07
-2007	MI	Oil & Gas	Other Revenues	654.46
-2007	MI	Oil & Gas	Other Royalties	25806.00
+2007	MI	Oil & Gas	Other Revenues	26460.46
 2007	MI	NGL	Royalties	134440.25
 2007	MI	Oil & Gas	Bonus	51130.00
 2007	MN	Copper	Other Revenues	26110.00
@@ -1084,64 +992,52 @@ Year	Region	Commodity	Type	Revenue
 2007	MN	Hardrock	Rents	-1157.00
 2007	MO	Hardrock	Other Revenues	16776.00
 2007	MO	Hardrock	Rents	3415.50
-2007	MO	Copper Concentrate	Royalties	1084225.75
+2007	MO	Copper Concentrate	Royalties	1084225.76
 2007	MO	Lead Concentrate	Royalties	12989839.07
 2007	MO	Zinc Concentrate	Royalties	3687687.90
 2007	MS	Oil & Gas	Rents	628986.00
 2007	MS	Oil	Royalties	2218347.92
-2007	MS	Oil & Gas	Other Revenues	2347.48
+2007	MS	Oil & Gas	Other Revenues	7685.48
 2007	MS	Gas	Royalties	258584.91
 2007	MS	Oil & Gas	Bonus	3053449.00
-2007	MS	Oil & Gas	Other Royalties	5338.00
 2007	MT	Oil & Gas	Bonus	1405618.00
 2007	MT	Oil & Gas	Rents	3440039.21
-2007	MT	Oil & Gas	Other Revenues	270557.15
+2007	MT	Coal	Bonus	3980440.00
+2007	MT	Oil & Gas	Other Revenues	259598.24
+2007	MT	Coal	Rents	129711.00
+2007	MT	Coal	Royalties	35491283.56
 2007	MT	Gas	Royalties	20150033.55
-2007	MT	Oil & Gas	Other Royalties	-10958.91
 2007	MT	NGL	Royalties	349342.47
 2007	MT	Oil	Royalties	24457287.32
-2007	MT	Coal	Bonus	3980440.00
-2007	MT	Coal	Other Revenues	833655.27
-2007	MT	Coal	Rents	129711.00
-2007	MT	Hardrock	Rents	15.00
-2007	MT	Coal	Royalties	35491283.56
 2007	MT	Sulfur	Royalties	1881.74
+2007	MT	Hardrock	Rents	15.00
+2007	MT	Coal	Other Revenues	833655.27
 2007	ND	Oil & Gas	Bonus	7925422.00
-2007	ND	Oil & Gas	Other Revenues	8755.83
-2007	ND	Oil & Gas	Other Royalties	246393.41
+2007	ND	Oil & Gas	Other Revenues	255149.24
 2007	ND	Oil & Gas	Rents	854740.26
 2007	ND	Gas	Royalties	6229778.68
 2007	ND	NGL	Royalties	426090.47
 2007	ND	Oil	Royalties	53193591.04
+2007	ND	Sulfur	Royalties	0.82
 2007	ND	Coal	Bonus	113880.00
 2007	ND	Coal	Rents	30549.00
 2007	ND	Coal	Royalties	924824.02
-2007	ND	Sulfur	Royalties	0.82
 2007	NE	Oil & Gas	Rents	12602.00
 2007	NE	Oil & Gas	Other Revenues	25814.10
 2007	NE	Oil	Royalties	507966.66
 2007	NE	Gas	Royalties	123992.24
 2007	NM	Oil & Gas	Rents	2971780.54
-2007	NM	Gas	Royalties	642726707.93
-2007	NM	Oil	Royalties	199224359.00
+2007	NM	Gas	Royalties	642727417.43
+2007	NM	Oil	Royalties	199231130.08
 2007	NM	Oil & Gas	Bonus	33140143.00
-2007	NM	Oil & Gas	Other Revenues	423844.96
-2007	NM	Oil & Gas	Other Royalties	106725211.73
-2007	NM	Gas	Other Royalties	709.50
-2007	NM	Oil	Other Royalties	6771.08
-2007	NM	NGL	Royalties	112025760.26
+2007	NM	Oil & Gas	Other Revenues	107149056.69
+2007	NM	Geothermal	Rents	3280.00
 2007	NM	Potassium	Bonus	5559.75
-2007	NM	Geothermal	Other Revenues	15006.00
 2007	NM	Potassium	Other Revenues	175080.00
 2007	NM	Sodium	Other Revenues	23280.00
-2007	NM	Coal	Other Royalties	1134366.30
-2007	NM	Coal	Rents	76311.00
-2007	NM	Geothermal	Rents	3280.00
 2007	NM	Potassium	Rents	-26942.25
 2007	NM	Sodium	Rents	-3160.00
-2007	NM	Coal	Royalties	10959149.17
-2007	NM	Brine Barrels	Royalties	625.37
-2007	NM	Carbon Dioxide Gas	Royalties	824195.01
+2007	NM	NGL	Royalties	112025760.26
 2007	NM	Granulated Langeinite	Royalties	-277.14
 2007	NM	Langbeinite	Royalties	3073318.30
 2007	NM	Langbeinite-Special Std	Royalties	-592.38
@@ -1151,38 +1047,40 @@ Year	Region	Commodity	Type	Revenue
 2007	NM	Potash	Royalties	2224499.95
 2007	NM	Salt	Royalties	199135.49
 2007	NM	Sylvite-Raw Ore	Royalties	1898.45
-2007	NV	Oil & Gas	Rents	7222595.00
-2007	NV	Oil & Gas	Bonus	1103516.99
-2007	NV	Oil	Royalties	2886796.44
-2007	NV	Oil & Gas	Other Revenues	3613.83
-2007	NV	Oil & Gas	Other Royalties	334.28
+2007	NM	Carbon Dioxide Gas	Royalties	824195.02
+2007	NM	Geothermal	Other Revenues	15006.00
+2007	NM	Brine Barrels	Royalties	625.37
+2007	NM	Coal	Rents	76311.00
+2007	NM	Coal	Royalties	10959149.17
+2007	NM	Coal	Other Revenues	1134366.30
 2007	NV	Geothermal	Bonus	11418509.00
 2007	NV	Geothermal	Other Revenues	11822.50
 2007	NV	Geothermal	Rents	964681.24
-2007	NV	Potassium	Rents	1740.00
+2007	NV	Oil & Gas	Rents	7222595.00
 2007	NV	Geothermal	Royalties	2352838.69
+2007	NV	Oil & Gas	Bonus	1103516.99
+2007	NV	Potassium	Rents	1740.00
 2007	NV	Potash	Royalties	159.00
+2007	NV	Oil	Royalties	2886796.44
+2007	NV	Oil & Gas	Other Revenues	3948.11
 2007	NY	Gas	Royalties	10451.48
 2007	OH	Gas	Royalties	613382.07
 2007	OH	Oil	Royalties	233140.13
 2007	OH	Oil & Gas	Rents	4980.50
-2007	OH	Oil & Gas	Other Revenues	1048.03
-2007	OH	Oil & Gas	Other Royalties	-420.00
+2007	OH	Oil & Gas	Other Revenues	628.03
 2007	OK	Oil & Gas	Bonus	6748765.00
-2007	OK	Oil & Gas	Other Royalties	183230.42
+2007	OK	Oil & Gas	Other Revenues	171596.49
 2007	OK	Oil & Gas	Rents	276308.93
-2007	OK	Gas	Royalties	10329685.84
+2007	OK	Gas	Royalties	10329877.21
 2007	OK	Oil	Royalties	1750663.62
 2007	OK	NGL	Royalties	305578.31
-2007	OK	Oil & Gas	Other Revenues	-11633.94
-2007	OK	Gas	Other Royalties	191.37
 2007	OK	Coal	Bonus	175197.75
-2007	OK	Coal	Other Revenues	-66104.60
 2007	OK	Coal	Rents	23194.50
+2007	OK	Coal	Other Revenues	-66104.60
 2007	OK	Coal	Royalties	581982.11
+2007	OR	Geothermal	Rents	200769.09
 2007	OR	Oil & Gas	Bonus	476255.00
 2007	OR	Oil & Gas	Rents	477239.00
-2007	OR	Geothermal	Rents	200769.09
 2007	PA	Oil & Gas	Other Revenues	3465.31
 2007	PA	Gas	Royalties	68185.65
 2007	PA	Oil & Gas	Rents	153.00
@@ -1190,140 +1088,127 @@ Year	Region	Commodity	Type	Revenue
 2007	SD	Oil & Gas	Bonus	485969.50
 2007	SD	Oil & Gas	Rents	181435.00
 2007	SD	Oil	Royalties	1374578.21
-2007	SD	Oil & Gas	Other Revenues	48.30
-2007	SD	Oil & Gas	Other Royalties	-1582.00
+2007	SD	Oil & Gas	Other Revenues	-1533.70
 2007	SD	Gas	Royalties	84898.43
-2007	TX	Oil & Gas	Other Revenues	26641.26
+2007	TX	Oil & Gas	Other Revenues	178915.17
 2007	TX	Oil & Gas	Rents	603060.56
 2007	TX	Oil	Royalties	3239395.04
 2007	TX	Gas	Royalties	20617999.97
-2007	TX	Oil & Gas	Other Royalties	152273.91
 2007	TX	Oil & Gas	Bonus	3832771.00
 2007	TX	NGL	Royalties	151745.84
 2007	UT	Oil & Gas	Bonus	34788390.00
+2007	UT	Geothermal	Rents	3854.00
 2007	UT	Oil & Gas	Rents	6335420.68
-2007	UT	Oil & Gas	Other Revenues	614486.36
-2007	UT	Oil & Gas	Other Royalties	4300023.04
+2007	UT	Geothermal	Royalties	255496.78
+2007	UT	Hardrock	Rents	1168.00
+2007	UT	Coal	Bonus	2012040.00
+2007	UT	Coal	Other Revenues	157203.81
+2007	UT	Oil & Gas	Other Revenues	4914509.40
+2007	UT	Coal	Rents	103173.00
+2007	UT	Coal	Royalties	22826036.50
 2007	UT	Gas	Royalties	120192052.90
 2007	UT	NGL	Royalties	2879772.72
 2007	UT	Oil	Royalties	64165921.33
-2007	UT	Coal	Bonus	2012040.00
-2007	UT	Clay	Other Revenues	462.00
-2007	UT	Coal	Other Revenues	157203.81
-2007	UT	Gilsonite	Other Revenues	7911.00
-2007	UT	Phosphate	Other Revenues	22422.00
+2007	UT	Tar Sands	Rents	24380.00
 2007	UT	Potassium	Other Revenues	1837.82
-2007	UT	Clay	Rents	314.00
-2007	UT	Coal	Rents	103173.00
-2007	UT	Geothermal	Rents	3854.00
-2007	UT	Gilsonite	Rents	2128.00
-2007	UT	Hardrock	Rents	1168.00
-2007	UT	Phosphate	Rents	840.00
 2007	UT	Potassium	Rents	24504.00
 2007	UT	Sodium	Rents	-7683.00
-2007	UT	Tar Sands	Rents	24380.00
-2007	UT	Coal	Royalties	22826036.50
-2007	UT	Geothermal	Royalties	255496.78
+2007	UT	Clay	Other Revenues	462.00
+2007	UT	Clay	Rents	314.00
 2007	UT	Clay	Royalties	5306.17
-2007	UT	Gilsonite	Royalties	608423.50
 2007	UT	Magnesium Chloride Brine	Royalties	18755.50
 2007	UT	Manure Salts	Royalties	10140.98
 2007	UT	Muriate Of Potash-Coarse	Royalties	-1873.15
 2007	UT	Muriate Of Potash-Standard	Royalties	-1002.27
 2007	UT	Potash	Royalties	151922.94
 2007	UT	Salt	Royalties	839.73
+2007	UT	Gilsonite	Other Revenues	7911.00
+2007	UT	Phosphate	Other Revenues	22422.00
+2007	UT	Gilsonite	Rents	2128.00
+2007	UT	Gilsonite	Royalties	608423.50
+2007	UT	Phosphate	Rents	840.00
 2007	VA	Oil & Gas	Rents	14052.50
 2007	VA	Gas	Royalties	361354.93
-2007	VA	Oil & Gas	Other Royalties	57.00
-2007	VA	Oil & Gas	Other Revenues	4881.43
 2007	VA	Hardrock	Other Revenues	532.50
 2007	VA	Hardrock	Rents	177.50
 2007	VA	Limestone	Royalties	75816.59
+2007	VA	Oil & Gas	Other Revenues	4938.43
 2007	WA	Oil & Gas	Rents	1027062.00
 2007	WA	Oil & Gas	Bonus	9406.00
 2007	WA	Coal	Rents	726.00
 2007	WA	Coal	Royalties	-46664.18
-2007	WV	Oil & Gas	Other Revenues	17433.36
+2007	WV	Oil & Gas	Other Revenues	24632.45
 2007	WV	Gas	Royalties	848054.85
 2007	WV	Oil & Gas	Rents	64853.24
 2007	WV	Oil	Royalties	606.05
-2007	WV	Oil & Gas	Other Royalties	7199.09
 2007	WY	Oil & Gas	Rents	17514356.73
 2007	WY	Gas	Royalties	703132330.43
 2007	WY	Oil	Royalties	226192878.19
 2007	WY	Oil & Gas	Bonus	38502265.50
-2007	WY	Oil & Gas	Other Revenues	-79573.09
-2007	WY	Oil & Gas	Other Royalties	-22114055.34
+2007	WY	Oil & Gas	Other Revenues	-22193628.43
 2007	WY	NGL	Royalties	58637672.70
 2007	WY	Coal	Bonus	340091981.86
 2007	WY	Coal	Other Revenues	-3956604.35
-2007	WY	Sodium	Other Revenues	73457.88
 2007	WY	Coal	Rents	497128.75
-2007	WY	Sodium	Rents	-17317.00
 2007	WY	Coal	Royalties	471275959.39
+2007	WY	Sulfur	Royalties	65834.88
+2007	WY	Sodium	Other Revenues	73457.88
+2007	WY	Sodium	Rents	-17317.00
+2007	WY	Salt	Royalties	354.91
 2007	WY	Carbon Dioxide Gas	Royalties	85873.69
 2007	WY	Purge Liquor	Royalties	43998.91
-2007	WY	Salt	Royalties	354.91
 2007	WY	Soda Ash	Royalties	10977807.70
 2007	WY	Soda Ash-Granular	Royalties	7508.38
 2007	WY	Sodium Bi-Carbonate	Royalties	134178.92
 2007	WY	Sodium Bisulfite	Royalties	3378.06
 2007	WY	Sodium Sesquicarbonate	Royalties	248473.50
 2007	WY	Sulfide	Royalties	65909.39
-2007	WY	Sulfur	Royalties	65834.88
 2007	WY	Trona Ore	Royalties	93528.53
 2008	AK	Oil & Gas	Rents	11919229.55
-2008	AK	Oil & Gas	Other Revenues	59545.04
-2008	AK	Gas	Other Royalties	35338.98
-2008	AK	Oil & Gas	Other Royalties	-10677.22
-2008	AK	Gas	Royalties	14702605.24
+2008	AK	Oil & Gas	Other Revenues	48867.82
+2008	AK	Gas	Royalties	14737944.22
 2008	AK	NGL	Royalties	40379.74
 2008	AK	Oil	Royalties	2061165.51
 2008	AK	Coal	Rents	5120.00
-2008	AL	Oil & Gas	Other Revenues	-1066.72
-2008	AL	Oil & Gas	Other Royalties	750.59
+2008	AL	Oil & Gas	Other Revenues	-316.13
 2008	AL	Gas	Royalties	785303.49
 2008	AL	NGL	Royalties	905.51
 2008	AL	Oil	Royalties	705017.89
+2008	AL	Sulfur	Royalties	12259.80
+2008	AL	Hardrock	Other Revenues	123.00
 2008	AL	Oil & Gas	Rents	201749.50
 2008	AL	Oil & Gas	Bonus	125982.00
 2008	AL	Coal	Bonus	64113.60
-2008	AL	Coal	Other Revenues	-126878.91
-2008	AL	Hardrock	Other Revenues	123.00
 2008	AL	Coal	Rents	15174.00
 2008	AL	Coal	Royalties	1549517.93
-2008	AL	Sulfur	Royalties	12259.80
+2008	AL	Coal	Other Revenues	-126878.91
 2008	AR	Oil & Gas	Bonus	20890752.50
 2008	AR	Oil & Gas	Rents	1774171.88
 2008	AR	Gas	Royalties	8920579.24
 2008	AR	Oil	Royalties	151.05
-2008	AR	Oil & Gas	Other Royalties	89275.12
-2008	AR	Oil & Gas	Other Revenues	20829.54
+2008	AR	Oil & Gas	Other Revenues	110104.66
 2008	AR	Hardrock	Other Revenues	1000.46
+2008	AR	Wavellite	Royalties	466.80
 2008	AR	Hardrock	Rents	-42.45
 2008	AR	Quartz Crystal	Royalties	2467.07
-2008	AR	Wavellite	Royalties	466.80
 2008	AZ	Oil & Gas	Rents	511932.00
-2008	AZ	Oil & Gas	Bonus	15560.00
-2008	AZ	Sodium	Other Revenues	12.00
 2008	AZ	Geothermal	Rents	2084.00
+2008	AZ	Sodium	Other Revenues	12.00
 2008	AZ	Sodium	Rents	4.00
 2008	AZ	Salt	Royalties	311.67
+2008	AZ	Oil & Gas	Bonus	15560.00
 2008	CA	Oil & Gas	Rents	615629.41
 2008	CA	Gas	Royalties	5496320.78
 2008	CA	Oil	Royalties	162991005.13
 2008	CA	Oil & Gas	Bonus	1812610.75
-2008	CA	Oil & Gas	Other Revenues	61610.02
-2008	CA	Oil & Gas	Other Royalties	206818.60
+2008	CA	Oil & Gas	Other Revenues	268428.62
 2008	CA	NGL	Royalties	286771.49
-2008	CA	Sodium	Bonus	120.00
-2008	CA	Geothermal	Other Revenues	-600.00
-2008	CA	Geothermal	Other Royalties	814607.37
 2008	CA	Geothermal	Rents	144439.76
-2008	CA	Hardrock	Rents	21.00
-2008	CA	Hot Springs	Rents	33.00
-2008	CA	Sodium	Rents	1089.00
 2008	CA	Geothermal	Royalties	12257704.04
+2008	CA	Geothermal	Other Revenues	814007.37
+2008	CA	Sodium	Bonus	120.00
+2008	CA	Hardrock	Rents	21.00
+2008	CA	Sodium	Rents	1089.00
 2008	CA	Anhydrous Sodium Sulfate	Royalties	226717.42
 2008	CA	Borax-Decahydrate	Royalties	39894.95
 2008	CA	Borax-Pentahydrate	Royalties	53841.33
@@ -1331,113 +1216,105 @@ Year	Region	Commodity	Type	Revenue
 2008	CA	Salt	Royalties	33895.97
 2008	CA	Soda Ash	Royalties	1744766.42
 2008	CA	Sodium Bi-Carbonate	Royalties	18824.59
+2008	CA	Hot Springs	Rents	33.00
 2008	CO	Oil & Gas	Rents	6896367.24
-2008	CO	Oil & Gas	Other Revenues	1434485.20
+2008	CO	Oil & Gas	Other Revenues	4330382.54
 2008	CO	Oil	Royalties	49899773.05
-2008	CO	Oil & Gas	Other Royalties	2895897.34
 2008	CO	Gas	Royalties	219803614.07
 2008	CO	Oil & Gas	Bonus	140485203.00
 2008	CO	NGL	Royalties	11164525.96
 2008	CO	Coal	Bonus	4367898.87
-2008	CO	Sodium	Other Revenues	342062.72
 2008	CO	Coal	Rents	232756.69
-2008	CO	Sodium	Rents	-28581.73
 2008	CO	Coal	Royalties	56553148.67
 2008	CO	Carbon Dioxide Gas	Royalties	57278855.03
+2008	CO	Sodium	Other Revenues	342062.72
+2008	CO	Sodium	Rents	-28581.73
 2008	CO	Sodium Bi-Carbonate	Royalties	282035.96
-2008	FL	Oil & Gas	Rents	10774.00
-2008	FL	Phosphate	Other Revenues	-197.00
 2008	FL	Phosphate	Rents	115.00
+2008	FL	Phosphate	Other Revenues	-197.00
+2008	FL	Oil & Gas	Rents	10774.00
 2008	FL	Phosphate Concentrate	Royalties	1570.27
-2008	ID	Oil & Gas	Rents	40899.50
-2008	ID	Oil & Gas	Bonus	39869.75
-2008	ID	Hardrock	Other Revenues	126.00
 2008	ID	Phosphate	Other Revenues	123218.00
+2008	ID	Oil & Gas	Rents	40899.50
+2008	ID	Phosphate	Rents	5032.00
+2008	ID	Geothermal	Rents	30874.70
+2008	ID	Phosphate Raw Ore	Royalties	2485359.85
+2008	ID	Hardrock	Other Revenues	126.00
+2008	ID	Hardrock	Rents	436.00
+2008	ID	Gold	Royalties	731.30
+2008	ID	Oil & Gas	Bonus	39869.75
 2008	ID	Garnet	Rents	120.00
 2008	ID	Gemstones	Rents	80.00
-2008	ID	Geothermal	Rents	30874.70
-2008	ID	Hardrock	Rents	436.00
-2008	ID	Phosphate	Rents	5032.00
-2008	ID	Gold	Royalties	731.30
-2008	ID	Phosphate Raw Ore	Royalties	2485359.85
 2008	IL	Oil	Royalties	415406.28
 2008	IL	Hardrock	Bonus	1147.00
 2008	IL	Hardrock	Rents	120.00
 2008	KS	Oil & Gas	Rents	50523.50
-2008	KS	Oil & Gas	Other Royalties	307341.59
-2008	KS	Gas	Royalties	6435099.03
-2008	KS	Oil & Gas	Other Revenues	13481.00
-2008	KS	Gas	Other Royalties	-25.87
+2008	KS	Oil & Gas	Other Revenues	320822.59
+2008	KS	Gas	Royalties	6435073.16
 2008	KS	NGL	Royalties	772345.23
 2008	KS	Oil	Royalties	4467247.62
 2008	KS	Oil & Gas	Bonus	20196.00
+2008	KY	Coal	Rents	34713.00
+2008	KY	Coal	Bonus	18900.00
 2008	KY	Oil & Gas	Other Revenues	20444.42
 2008	KY	Oil & Gas	Rents	5708.58
 2008	KY	Gas	Royalties	213081.53
 2008	KY	Oil	Royalties	158808.40
 2008	KY	Oil & Gas	Bonus	946.00
-2008	KY	Coal	Bonus	18900.00
 2008	KY	Coal	Other Revenues	12000.00
-2008	KY	Coal	Rents	34713.00
 2008	KY	Coal	Royalties	909763.86
-2008	LA	Oil & Gas	Other Royalties	322365.47
+2008	LA	Oil & Gas	Other Revenues	460746.04
 2008	LA	Oil & Gas	Rents	100460.00
 2008	LA	Gas	Royalties	40437371.67
 2008	LA	Oil	Royalties	5313224.17
 2008	LA	Oil & Gas	Bonus	4255024.00
 2008	LA	NGL	Royalties	1337105.75
-2008	LA	Oil & Gas	Other Revenues	138380.57
 2008	MD	Oil & Gas	Other Revenues	10386.29
 2008	MD	Oil & Gas	Rents	496.00
 2008	MI	Oil & Gas	Rents	80201.50
 2008	MI	Gas	Royalties	2907403.95
 2008	MI	Oil	Royalties	398412.12
-2008	MI	Oil & Gas	Other Revenues	1088.99
-2008	MI	Oil & Gas	Other Royalties	106490.00
+2008	MI	Oil & Gas	Other Revenues	107578.99
 2008	MI	NGL	Royalties	207501.47
 2008	MI	Oil & Gas	Bonus	304430.00
+2008	MN	Hardrock	Rents	1749.50
 2008	MN	Copper	Other Revenues	26110.00
 2008	MN	Hardrock	Other Revenues	22550.00
-2008	MN	Hardrock	Rents	1749.50
 2008	MO	Hardrock	Other Revenues	10345.00
 2008	MO	Hardrock	Rents	-27641.60
-2008	MO	Copper Concentrate	Royalties	1055500.80
-2008	MO	Lead Concentrate	Royalties	11452791.35
-2008	MO	Zinc Concentrate	Royalties	1652714.40
+2008	MO	Copper Concentrate	Royalties	1055500.81
+2008	MO	Lead Concentrate	Royalties	11452791.34
+2008	MO	Zinc Concentrate	Royalties	1652714.39
 2008	MS	Oil & Gas	Rents	529579.50
 2008	MS	Oil	Royalties	2764255.97
 2008	MS	Gas	Royalties	411983.73
 2008	MS	Oil & Gas	Bonus	194573.00
-2008	MS	Oil & Gas	Other Royalties	51924.00
-2008	MS	Oil & Gas	Other Revenues	483.00
+2008	MS	Oil & Gas	Other Revenues	52407.00
 2008	MT	Oil & Gas	Bonus	1521193.50
+2008	MT	Phosphate	Other Revenues	4227.00
 2008	MT	Oil & Gas	Rents	3139394.96
-2008	MT	Oil & Gas	Other Revenues	286030.67
-2008	MT	Oil & Gas	Other Royalties	-129921.01
+2008	MT	Phosphate	Rents	1409.00
+2008	MT	Coal	Bonus	3980440.00
+2008	MT	Oil & Gas	Other Revenues	156109.66
+2008	MT	Coal	Rents	142131.00
+2008	MT	Coal	Royalties	37411561.07
 2008	MT	Gas	Royalties	23468649.78
 2008	MT	NGL	Royalties	659548.42
 2008	MT	Oil	Royalties	37324702.49
-2008	MT	Coal	Bonus	3980440.00
-2008	MT	Coal	Other Revenues	902438.70
-2008	MT	Phosphate	Other Revenues	4227.00
-2008	MT	Coal	Other Royalties	30474.00
-2008	MT	Coal	Rents	142131.00
-2008	MT	Gemstones	Rents	240.00
-2008	MT	Hardrock	Rents	3649.50
-2008	MT	Phosphate	Rents	1409.00
-2008	MT	Coal	Royalties	37411561.07
 2008	MT	Sulfur	Royalties	27255.51
+2008	MT	Hardrock	Rents	3649.50
+2008	MT	Gemstones	Rents	240.00
+2008	MT	Coal	Other Revenues	932912.70
 2008	ND	Oil & Gas	Bonus	27406683.50
-2008	ND	Oil & Gas	Other Revenues	13747.40
-2008	ND	Oil & Gas	Other Royalties	951894.90
+2008	ND	Oil & Gas	Other Revenues	965642.30
 2008	ND	Oil & Gas	Rents	873655.94
 2008	ND	Gas	Royalties	7884857.77
 2008	ND	NGL	Royalties	1089791.49
 2008	ND	Oil	Royalties	82206235.71
-2008	ND	Coal	Bonus	113080.00
-2008	ND	Coal	Other Revenues	10745.00
 2008	ND	Coal	Rents	32115.00
+2008	ND	Coal	Bonus	113080.00
 2008	ND	Coal	Royalties	983321.35
+2008	ND	Coal	Other Revenues	10745.00
 2008	NE	Oil & Gas	Rents	5109.72
 2008	NE	Oil & Gas	Bonus	-640.00
 2008	NE	Oil & Gas	Other Revenues	40686.93
@@ -1445,65 +1322,56 @@ Year	Region	Commodity	Type	Revenue
 2008	NE	Gas	Royalties	8118.31
 2008	NE	NGL	Royalties	11101.25
 2008	NM	Oil & Gas	Rents	3275147.10
-2008	NM	Gas	Royalties	749579674.21
-2008	NM	Oil	Royalties	316287951.86
+2008	NM	Gas	Royalties	749580717.60
+2008	NM	Oil	Royalties	316312387.76
 2008	NM	Oil & Gas	Bonus	65034307.00
-2008	NM	Oil & Gas	Other Revenues	705903.20
-2008	NM	Oil & Gas	Other Royalties	-4637434.94
+2008	NM	Oil & Gas	Other Revenues	-3931531.75
 2008	NM	NGL	Royalties	164599129.22
-2008	NM	Gas	Other Royalties	1043.39
-2008	NM	Oil	Other Royalties	24435.90
+2008	NM	Geothermal	Rents	3280.00
 2008	NM	Potassium	Bonus	787103.75
 2008	NM	Potassium	Other Revenues	546708.00
 2008	NM	Sodium	Other Revenues	577.93
-2008	NM	Coal	Other Royalties	1276211.69
-2008	NM	Coal	Rents	76775.51
-2008	NM	Geothermal	Rents	3280.00
 2008	NM	Potassium	Rents	70667.25
 2008	NM	Sodium	Rents	-40.93
-2008	NM	Coal	Royalties	14191843.15
 2008	NM	Brine Barrels	Royalties	19444.60
-2008	NM	Carbon Dioxide Gas	Royalties	1167084.72
 2008	NM	Langbeinite	Royalties	1701323.24
 2008	NM	Muriate Of Potash-Granular	Royalties	6861890.40
 2008	NM	Muriate Of Potash-Standard	Royalties	1916491.69
 2008	NM	Potash	Royalties	202411.59
 2008	NM	Salt	Royalties	125407.04
 2008	NM	Sylvite-Raw Ore	Royalties	5365.56
-2008	NV	Oil & Gas	Rents	7389780.01
-2008	NV	Oil & Gas	Bonus	2359300.01
-2008	NV	Oil	Royalties	4318250.62
-2008	NV	Oil & Gas	Other Revenues	3140.07
-2008	NV	Oil & Gas	Other Royalties	4794.79
+2008	NM	Carbon Dioxide Gas	Royalties	1167084.72
+2008	NM	Coal	Rents	76775.51
+2008	NM	Coal	Royalties	14191843.15
+2008	NM	Coal	Other Revenues	1276211.69
 2008	NV	Geothermal	Bonus	27992464.00
-2008	NV	Geothermal	Other Revenues	13186.83
-2008	NV	Potassium	Other Revenues	13786.00
-2008	NV	Geothermal	Other Royalties	71020.00
+2008	NV	Geothermal	Other Revenues	84206.83
 2008	NV	Geothermal	Rents	1000610.76
-2008	NV	Potassium	Rents	-1160.00
+2008	NV	Oil & Gas	Rents	7389780.01
 2008	NV	Sodium	Rents	-15357.00
 2008	NV	Geothermal	Royalties	2288160.44
-2008	NV	Potash	Royalties	0.00
+2008	NV	Oil & Gas	Bonus	2359300.01
+2008	NV	Potassium	Other Revenues	13786.00
+2008	NV	Potassium	Rents	-1160.00
+2008	NV	Oil	Royalties	4318250.62
+2008	NV	Oil & Gas	Other Revenues	7934.86
 2008	NY	Gas	Royalties	11517.23
 2008	OH	Gas	Royalties	677345.37
 2008	OH	Oil	Royalties	362989.06
 2008	OH	Oil & Gas	Rents	6338.00
-2008	OH	Oil & Gas	Other Royalties	1140.00
-2008	OH	Oil & Gas	Other Revenues	1245.49
-2008	OK	Oil & Gas	Other Royalties	-10580.65
+2008	OH	Oil & Gas	Other Revenues	2385.49
+2008	OK	Oil & Gas	Other Revenues	-6456.61
 2008	OK	Oil & Gas	Rents	460785.61
-2008	OK	Gas	Royalties	12281179.43
+2008	OK	Gas	Royalties	12281265.13
 2008	OK	Oil	Royalties	1470212.33
 2008	OK	Oil & Gas	Bonus	10302430.00
-2008	OK	Oil & Gas	Other Revenues	4124.04
 2008	OK	NGL	Royalties	500879.99
-2008	OK	Gas	Other Royalties	85.70
 2008	OK	Coal	Bonus	160197.75
-2008	OK	Asphalt	Rents	959.00
 2008	OK	Coal	Rents	32633.00
 2008	OK	Coal	Royalties	710934.24
-2008	OR	Oil & Gas	Rents	409115.50
+2008	OK	Asphalt	Rents	959.00
 2008	OR	Geothermal	Rents	31594.99
+2008	OR	Oil & Gas	Rents	409115.50
 2008	PA	Oil & Gas	Other Revenues	1896.65
 2008	PA	Gas	Royalties	93487.28
 2008	PA	Oil & Gas	Rents	153.00
@@ -1511,136 +1379,124 @@ Year	Region	Commodity	Type	Revenue
 2008	SC	Hardrock	Rents	2220.00
 2008	SD	Oil & Gas	Rents	168923.50
 2008	SD	Oil	Royalties	2309915.27
-2008	SD	Oil & Gas	Other Revenues	597.41
-2008	SD	Oil & Gas	Other Royalties	214.00
+2008	SD	Oil & Gas	Other Revenues	811.41
 2008	SD	Gas	Royalties	117883.15
 2008	TX	Oil & Gas	Rents	679098.15
 2008	TX	Oil & Gas	Bonus	10351925.00
 2008	TX	Oil	Royalties	3833355.26
 2008	TX	Gas	Royalties	25366108.66
-2008	TX	Oil & Gas	Other Royalties	65847.80
-2008	TX	Oil & Gas	Other Revenues	22252.08
+2008	TX	Oil & Gas	Other Revenues	88099.88
 2008	TX	NGL	Royalties	258099.03
+2008	UT	Geothermal	Rents	19933.00
 2008	UT	Oil & Gas	Rents	6443588.79
+2008	UT	Geothermal	Royalties	272452.62
+2008	UT	Coal	Bonus	661980.59
 2008	UT	Oil & Gas	Bonus	10306150.50
-2008	UT	Oil & Gas	Other Revenues	552181.02
-2008	UT	Oil & Gas	Other Royalties	9551206.32
+2008	UT	Coal	Other Revenues	705.40
+2008	UT	Oil & Gas	Other Revenues	10103387.34
+2008	UT	Coal	Rents	164844.00
+2008	UT	Coal	Royalties	25060607.58
 2008	UT	Gas	Royalties	215187409.39
 2008	UT	NGL	Royalties	10848454.71
 2008	UT	Oil	Royalties	117024532.91
-2008	UT	Coal	Bonus	661980.59
-2008	UT	Clay	Other Revenues	942.00
-2008	UT	Coal	Other Revenues	705.40
-2008	UT	Gilsonite	Other Revenues	3687.00
-2008	UT	Phosphate	Other Revenues	29896.00
-2008	UT	Potassium	Other Revenues	1452.21
-2008	UT	Clay	Rents	314.00
-2008	UT	Coal	Rents	164844.00
-2008	UT	Geothermal	Rents	19933.00
-2008	UT	Gilsonite	Rents	6523.50
-2008	UT	Hardrock	Rents	928.00
-2008	UT	Phosphate	Rents	4951.00
-2008	UT	Potassium	Rents	22364.00
-2008	UT	Tar Sands	Rents	7679.67
-2008	UT	Coal	Royalties	25060607.58
-2008	UT	Geothermal	Royalties	272452.62
 2008	UT	Carbon Dioxide Gas	Royalties	65886.12
+2008	UT	Phosphate	Rents	4951.00
+2008	UT	Tar Sands	Rents	7679.67
+2008	UT	Potassium	Other Revenues	1452.21
+2008	UT	Potassium	Rents	22364.00
+2008	UT	Hardrock	Rents	928.00
+2008	UT	Clay	Other Revenues	942.00
+2008	UT	Clay	Rents	314.00
 2008	UT	Clay	Royalties	3746.92
-2008	UT	Gilsonite	Royalties	1168798.99
 2008	UT	Magnesium Chloride Brine	Royalties	26788.93
 2008	UT	Manure Salts	Royalties	11779.82
 2008	UT	Potash	Royalties	394106.34
 2008	UT	Salt	Royalties	1258.67
+2008	UT	Gilsonite	Other Revenues	3687.00
+2008	UT	Phosphate	Other Revenues	29896.00
+2008	UT	Gilsonite	Rents	6523.50
+2008	UT	Gilsonite	Royalties	1168798.99
 2008	VA	Oil & Gas	Rents	30208.00
 2008	VA	Gas	Royalties	426356.27
-2008	VA	Oil & Gas	Bonus	136015.00
-2008	VA	Oil & Gas	Other Royalties	-43.00
-2008	VA	Oil & Gas	Other Revenues	4665.33
 2008	VA	Hardrock	Other Revenues	1065.00
 2008	VA	Hardrock	Rents	-177.50
 2008	VA	Limestone	Royalties	106657.16
+2008	VA	Oil & Gas	Bonus	136015.00
+2008	VA	Oil & Gas	Other Revenues	4622.33
 2008	WA	Oil & Gas	Rents	988029.00
 2008	WA	Coal	Rents	1566.00
 2008	WA	Coal	Royalties	206298.90
-2008	WV	Oil & Gas	Other Revenues	291838.66
+2008	WV	Oil & Gas	Other Revenues	299457.66
 2008	WV	Gas	Royalties	1053997.88
 2008	WV	Oil & Gas	Rents	78692.26
 2008	WV	Oil & Gas	Bonus	793231.00
-2008	WV	Oil & Gas	Other Royalties	7619.00
 2008	WY	Oil & Gas	Bonus	60345201.26
 2008	WY	Oil & Gas	Rents	16654613.45
-2008	WY	Gas	Royalties	1214143366.82
+2008	WY	Gas	Royalties	1214158292.03
 2008	WY	Oil	Royalties	354318589.75
-2008	WY	Oil & Gas	Other Revenues	703826.47
-2008	WY	Oil & Gas	Other Royalties	13606301.81
+2008	WY	Oil & Gas	Other Revenues	14310128.32
 2008	WY	NGL	Royalties	91717765.47
-2008	WY	Gas	Other Royalties	14925.21
 2008	WY	Coal	Bonus	426744981.86
-2008	WY	Sodium	Other Revenues	114919.25
 2008	WY	Coal	Rents	545524.39
-2008	WY	Sodium	Rents	-1906.85
 2008	WY	Coal	Royalties	563931403.30
-2008	WY	Carbon Dioxide Gas	Royalties	560395.03
-2008	WY	Purge Liquor	Royalties	57995.71
+2008	WY	Sulfur	Royalties	1119707.84
+2008	WY	Sodium	Other Revenues	114919.25
 2008	WY	Salt	Royalties	457.94
+2008	WY	Carbon Dioxide Gas	Royalties	560395.03
+2008	WY	Sodium	Rents	-1906.85
+2008	WY	Purge Liquor	Royalties	57995.71
 2008	WY	Soda Ash	Royalties	16934238.58
 2008	WY	Sodium Bi-Carbonate	Royalties	102376.34
 2008	WY	Sodium Bisulfite	Royalties	6094.65
 2008	WY	Sodium Sesquicarbonate	Royalties	186506.81
 2008	WY	Sulfide	Royalties	111794.17
-2008	WY	Sulfur	Royalties	1119707.84
 2008	WY	Trona Ore	Royalties	211259.45
-2009	AK	Oil & Gas	Other Revenues	235065.10
-2009	AK	Gas	Other Royalties	669201.79
-2009	AK	Oil & Gas	Other Royalties	-282003.13
+2009	AK	Oil & Gas	Other Revenues	-46938.03
 2009	AK	Oil & Gas	Rents	10508216.16
-2009	AK	Gas	Royalties	18184643.12
+2009	AK	Gas	Royalties	18853844.91
 2009	AK	NGL	Royalties	3850.75
 2009	AK	Oil	Royalties	961364.34
 2009	AK	Oil & Gas	Bonus	21411357.00
-2009	AL	Oil & Gas	Other Revenues	975.66
-2009	AL	Oil & Gas	Other Royalties	-14095.00
+2009	AL	Oil & Gas	Other Revenues	-13119.34
 2009	AL	Gas	Royalties	345960.64
 2009	AL	Oil	Royalties	249992.54
+2009	AL	Sulfur	Royalties	2877.54
 2009	AL	Oil & Gas	Bonus	29848.00
-2009	AL	Oil & Gas	Rents	202246.50
-2009	AL	NGL	Royalties	726.52
-2009	AL	Coal	Bonus	64113.60
-2009	AL	Coal	Other Revenues	-275172.65
 2009	AL	Hardrock	Other Revenues	123.00
+2009	AL	Oil & Gas	Rents	202246.50
+2009	AL	Coal	Bonus	64113.60
 2009	AL	Coal	Rents	13734.00
 2009	AL	Coal	Royalties	4548639.75
-2009	AL	Sulfur	Royalties	2877.54
+2009	AL	Coal	Other Revenues	-275172.65
+2009	AL	NGL	Royalties	726.52
 2009	AR	Oil & Gas	Rents	1449823.03
-2009	AR	Oil & Gas	Other Royalties	281670.68
+2009	AR	Oil & Gas	Other Revenues	303884.70
 2009	AR	Gas	Royalties	5552145.77
 2009	AR	Oil	Royalties	102.19
 2009	AR	Oil & Gas	Bonus	1789036.00
-2009	AR	Oil & Gas	Other Revenues	22214.02
 2009	AR	Hardrock	Other Revenues	600.60
 2009	AR	Hardrock	Rents	315.52
-2009	AR	Quartz Crystal	Royalties	191.55
 2009	AR	Wavellite	Royalties	777.36
+2009	AR	Quartz Crystal	Royalties	191.55
 2009	AZ	Oil & Gas	Rents	85552.50
-2009	AZ	Sodium	Other Revenues	12.00
 2009	AZ	Geothermal	Rents	2084.00
-2009	AZ	Potassium	Rents	1634.00
+2009	AZ	Sodium	Other Revenues	12.00
 2009	AZ	Sodium	Rents	4.00
 2009	AZ	Salt	Royalties	264.66
-2009	CA	Oil & Gas	Other Royalties	-145229.09
+2009	AZ	Potassium	Rents	1634.00
+2009	CA	Oil & Gas	Other Revenues	-134423.15
 2009	CA	Gas	Royalties	2552202.55
-2009	CA	Oil & Gas	Other Revenues	10805.94
 2009	CA	Oil & Gas	Rents	337740.59
 2009	CA	Oil	Royalties	85178526.20
+2009	CA	Geothermal	Bonus	86820.00
+2009	CA	Geothermal	Rents	228906.57
+2009	CA	Geothermal	Royalties	7765202.92
 2009	CA	Oil & Gas	Bonus	176965.00
 2009	CA	NGL	Royalties	177797.91
-2009	CA	Geothermal	Bonus	86820.00
 2009	CA	Sodium	Bonus	1416.00
 2009	CA	Sodium	Other Revenues	16947.00
-2009	CA	Geothermal	Rents	228906.57
 2009	CA	Hardrock	Rents	21.00
 2009	CA	Sodium	Rents	29842.68
-2009	CA	Geothermal	Royalties	7765202.92
 2009	CA	Anhydrous Sodium Sulfate	Royalties	161151.56
 2009	CA	Borax-Decahydrate	Royalties	31562.63
 2009	CA	Borax-Pentahydrate	Royalties	60315.42
@@ -1649,108 +1505,98 @@ Year	Region	Commodity	Type	Revenue
 2009	CA	Soda Ash	Royalties	1837063.95
 2009	CA	Sodium Bi-Carbonate	Royalties	22025.78
 2009	CO	Oil & Gas	Rents	6325803.34
-2009	CO	Oil & Gas	Other Revenues	458996.56
+2009	CO	Oil & Gas	Other Revenues	1237155.81
 2009	CO	Oil	Royalties	22533013.54
 2009	CO	Oil & Gas	Bonus	6262354.00
-2009	CO	Oil & Gas	Other Royalties	778159.26
 2009	CO	Gas	Royalties	86565098.51
 2009	CO	NGL	Royalties	3051157.85
 2009	CO	Coal	Bonus	3743381.00
-2009	CO	Coal	Other Revenues	721584.52
-2009	CO	Sodium	Other Revenues	-141162.00
 2009	CO	Coal	Rents	196040.31
-2009	CO	Sodium	Rents	-867.00
 2009	CO	Coal	Royalties	41577742.66
 2009	CO	Carbon Dioxide Gas	Royalties	38714984.72
+2009	CO	Coal	Other Revenues	721584.52
+2009	CO	Sodium	Other Revenues	-141162.00
+2009	CO	Sodium	Rents	-867.00
 2009	CO	Sodium Bi-Carbonate	Royalties	295578.50
-2009	FL	Oil & Gas	Rents	-8397.00
 2009	FL	Phosphate	Other Revenues	11010.00
 2009	FL	Phosphate	Rents	-1647.00
-2009	ID	Oil & Gas	Rents	38609.00
-2009	ID	Geothermal	Bonus	42054.00
+2009	FL	Oil & Gas	Rents	-8397.00
 2009	ID	Phosphate	Other Revenues	119802.00
+2009	ID	Oil & Gas	Rents	38609.00
+2009	ID	Phosphate	Rents	-1487.00
 2009	ID	Geothermal	Rents	66217.00
 2009	ID	Hardrock	Rents	236.00
-2009	ID	Phosphate	Rents	-1487.00
-2009	ID	Gold	Royalties	292.88
 2009	ID	Phosphate Raw Ore	Royalties	3566737.10
+2009	ID	Geothermal	Bonus	42054.00
+2009	ID	Gold	Royalties	292.88
 2009	IL	Oil	Royalties	207440.79
 2009	IN	Oil & Gas	Bonus	83198.00
 2009	IN	Oil & Gas	Rents	33540.00
 2009	IN	Oil	Royalties	40118.71
 2009	KS	Oil & Gas	Rents	65068.50
 2009	KS	Oil & Gas	Bonus	9914.00
-2009	KS	Oil & Gas	Other Royalties	-437222.75
-2009	KS	Gas	Royalties	2795931.19
-2009	KS	Oil & Gas	Other Revenues	11059.44
-2009	KS	Gas	Other Royalties	-37.27
+2009	KS	Oil & Gas	Other Revenues	-426163.31
+2009	KS	Gas	Royalties	2795893.92
 2009	KS	NGL	Royalties	465442.24
 2009	KS	Oil	Royalties	1694815.24
 2009	KS	Helium	Royalties	20.06
+2009	KY	Coal	Rents	6912.00
 2009	KY	Oil & Gas	Rents	6689.00
 2009	KY	Gas	Royalties	102788.00
 2009	KY	NGL	Royalties	3078.20
 2009	KY	Oil	Royalties	86949.45
-2009	KY	Oil & Gas	Other Revenues	13578.61
-2009	KY	Oil & Gas	Other Royalties	-1000.00
-2009	KY	Coal	Rents	6912.00
+2009	KY	Oil & Gas	Other Revenues	12578.61
 2009	KY	Coal	Royalties	1343660.04
 2009	LA	Oil & Gas	Rents	131515.50
 2009	LA	Gas	Royalties	12651878.53
 2009	LA	Oil	Royalties	2418464.82
-2009	LA	Oil & Gas	Other Royalties	-1927939.10
+2009	LA	Oil & Gas	Other Revenues	-1855549.60
 2009	LA	NGL	Royalties	1857114.79
 2009	LA	Oil & Gas	Bonus	285968.00
-2009	LA	Oil & Gas	Other Revenues	72389.50
 2009	MD	Oil & Gas	Other Revenues	8922.15
 2009	MD	Oil & Gas	Rents	496.00
 2009	MI	Oil & Gas	Bonus	735688.00
 2009	MI	Oil & Gas	Rents	175514.50
 2009	MI	Gas	Royalties	1357434.06
 2009	MI	Oil	Royalties	169656.28
-2009	MI	Oil & Gas	Other Revenues	654.46
-2009	MI	Oil & Gas	Other Royalties	-98637.01
+2009	MI	Oil & Gas	Other Revenues	-97982.55
 2009	MI	NGL	Royalties	90273.77
 2009	MN	Copper	Other Revenues	26110.00
 2009	MN	Hardrock	Other Revenues	22550.00
 2009	MN	Hardrock	Rents	522.50
 2009	MO	Hardrock	Other Revenues	12303.00
+2009	MO	Copper Concentrate	Royalties	448324.49
+2009	MO	Lead Concentrate	Royalties	7641660.51
+2009	MO	Zinc Concentrate	Royalties	1216949.69
 2009	MO	Hardrock	Rents	700.00
-2009	MO	Copper Concentrate	Royalties	448324.50
-2009	MO	Lead Concentrate	Royalties	7641660.50
-2009	MO	Zinc Concentrate	Royalties	1216949.70
 2009	MS	Oil & Gas	Rents	455363.24
 2009	MS	Oil	Royalties	1512498.47
 2009	MS	Gas	Royalties	361720.29
-2009	MS	Oil & Gas	Other Royalties	-649.76
-2009	MS	Oil & Gas	Other Revenues	3113.00
+2009	MS	Oil & Gas	Other Revenues	2463.24
 2009	MT	Oil & Gas	Bonus	1927198.50
+2009	MT	Phosphate	Other Revenues	4227.00
 2009	MT	Oil & Gas	Rents	2986771.13
-2009	MT	Oil & Gas	Other Revenues	302236.40
-2009	MT	Oil & Gas	Other Royalties	-136785.05
+2009	MT	Coal	Bonus	3980440.00
+2009	MT	Oil & Gas	Other Revenues	165451.35
+2009	MT	Coal	Rents	135921.00
+2009	MT	Coal	Royalties	35816360.40
 2009	MT	Gas	Royalties	10546036.53
 2009	MT	NGL	Royalties	283045.53
 2009	MT	Oil	Royalties	18206062.98
-2009	MT	Coal	Bonus	3980440.00
-2009	MT	Coal	Other Revenues	998735.52
-2009	MT	Phosphate	Other Revenues	4227.00
-2009	MT	Coal	Other Royalties	12209064.22
-2009	MT	Coal	Rents	135921.00
-2009	MT	Hardrock	Rents	146.50
-2009	MT	Coal	Royalties	35816360.40
 2009	MT	Sulfur	Royalties	-9594.46
+2009	MT	Hardrock	Rents	146.50
+2009	MT	Coal	Other Revenues	13207799.74
 2009	ND	Oil & Gas	Bonus	94133005.00
-2009	ND	Oil & Gas	Other Revenues	12195.31
-2009	ND	Oil & Gas	Other Royalties	-857428.73
+2009	ND	Oil & Gas	Other Revenues	-845233.42
+2009	ND	Hardrock	Rents	16815.00
 2009	ND	Oil & Gas	Rents	1117306.86
 2009	ND	Gas	Royalties	3074077.74
 2009	ND	NGL	Royalties	702268.32
 2009	ND	Oil	Royalties	42545251.51
-2009	ND	Coal	Bonus	113080.00
-2009	ND	Coal	Other Revenues	-4064.23
 2009	ND	Coal	Rents	37992.00
-2009	ND	Hardrock	Rents	16815.00
+2009	ND	Coal	Bonus	113080.00
 2009	ND	Coal	Royalties	200479.60
+2009	ND	Coal	Other Revenues	-4064.23
 2009	ND	Leonardite	Royalties	15526.55
 2009	ND	Sulfur	Royalties	0.01
 2009	NE	Oil & Gas	Rents	1384.00
@@ -1758,23 +1604,16 @@ Year	Region	Commodity	Type	Revenue
 2009	NE	Oil	Royalties	237831.38
 2009	NE	Gas	Royalties	8173.16
 2009	NM	Oil & Gas	Rents	3116133.61
-2009	NM	Gas	Royalties	289303504.28
+2009	NM	Gas	Royalties	289303611.19
 2009	NM	Oil	Royalties	181738797.30
 2009	NM	Oil & Gas	Bonus	20948904.00
-2009	NM	Oil & Gas	Other Revenues	523070.23
-2009	NM	Oil & Gas	Other Royalties	-18400487.95
+2009	NM	Oil & Gas	Other Revenues	-17877417.73
 2009	NM	NGL	Royalties	76820999.77
-2009	NM	Gas	Other Royalties	106.91
 2009	NM	Potassium	Bonus	23760.00
-2009	NM	Geothermal	Other Revenues	-45482.00
 2009	NM	Potassium	Other Revenues	352073.25
 2009	NM	Sodium	Other Revenues	1320.00
-2009	NM	Coal	Other Royalties	163101.70
-2009	NM	Coal	Rents	76311.00
-2009	NM	Geothermal	Rents	640.00
 2009	NM	Potassium	Rents	77079.50
 2009	NM	Sodium	Rents	440.00
-2009	NM	Coal	Royalties	1188144.14
 2009	NM	Brine Barrels	Royalties	-31.30
 2009	NM	Carbon Dioxide Gas	Royalties	805270.17
 2009	NM	Langbeinite	Royalties	13392891.32
@@ -1783,175 +1622,164 @@ Year	Region	Commodity	Type	Revenue
 2009	NM	Potash	Royalties	6549784.67
 2009	NM	Salt	Royalties	151889.03
 2009	NM	Sylvite-Raw Ore	Royalties	4316.50
-2009	NV	Oil & Gas	Rents	5770487.50
-2009	NV	Oil & Gas	Bonus	1019336.00
-2009	NV	Oil	Royalties	2514107.50
-2009	NV	Oil & Gas	Other Revenues	2556.01
-2009	NV	Oil & Gas	Other Royalties	-3248.67
+2009	NM	Geothermal	Other Revenues	-45482.00
+2009	NM	Geothermal	Rents	640.00
+2009	NM	Coal	Rents	76311.00
+2009	NM	Coal	Other Revenues	163101.70
+2009	NM	Coal	Royalties	1188144.14
 2009	NV	Geothermal	Bonus	8402869.00
 2009	NV	Geothermal	Other Revenues	18452.24
-2009	NV	Potassium	Other Revenues	-46.50
-2009	NV	Geothermal	Rents	1684222.00
+2009	NV	Geothermal	Rents	1684222.02
+2009	NV	Oil & Gas	Rents	5770487.50
 2009	NV	Geothermal	Royalties	2308921.99
-2009	NV	Potash	Royalties	0.00
+2009	NV	Oil & Gas	Bonus	1019336.00
+2009	NV	Potassium	Other Revenues	-46.50
+2009	NV	Oil	Royalties	2514107.50
+2009	NV	Oil & Gas	Other Revenues	-692.66
 2009	NY	Gas	Royalties	6748.55
 2009	OH	Gas	Royalties	363180.74
 2009	OH	Oil	Royalties	226732.60
 2009	OH	Oil & Gas	Rents	6338.00
-2009	OH	Oil & Gas	Other Revenues	1093.79
-2009	OH	Oil & Gas	Other Royalties	-620.00
-2009	OK	Oil & Gas	Other Royalties	-187793.50
+2009	OH	Oil & Gas	Other Revenues	473.79
+2009	OK	Oil & Gas	Other Revenues	-185993.56
 2009	OK	Oil & Gas	Rents	375449.46
 2009	OK	Gas	Royalties	5827405.75
 2009	OK	Oil	Royalties	1207932.03
-2009	OK	Oil & Gas	Other Revenues	1799.94
 2009	OK	NGL	Royalties	168705.49
 2009	OK	Oil & Gas	Bonus	9403116.00
 2009	OK	Coal	Bonus	158197.75
-2009	OK	Asphalt	Rents	959.00
 2009	OK	Coal	Rents	41733.00
 2009	OK	Coal	Royalties	772544.94
+2009	OK	Asphalt	Rents	959.00
+2009	OR	Geothermal	Rents	272569.41
 2009	OR	Oil & Gas	Rents	407515.50
 2009	OR	Geothermal	Bonus	702815.00
-2009	OR	Geothermal	Rents	272569.41
-2009	PA	Oil & Gas	Other Revenues	2838.09
+2009	PA	Oil & Gas	Other Revenues	2872.29
 2009	PA	Gas	Royalties	64848.07
 2009	PA	Oil & Gas	Rents	153.00
 2009	PA	Oil	Royalties	36882.35
-2009	PA	Oil & Gas	Other Royalties	34.20
 2009	SC	Hardrock	Other Revenues	3330.00
 2009	SC	Hardrock	Rents	2220.00
 2009	SC	Gold Placer	Royalties	101.16
 2009	SD	Oil & Gas	Bonus	163035.00
 2009	SD	Oil & Gas	Rents	210441.50
 2009	SD	Oil	Royalties	1071239.81
-2009	SD	Oil & Gas	Other Revenues	80.00
-2009	SD	Oil & Gas	Other Royalties	-775.34
+2009	SD	Oil & Gas	Other Revenues	-695.34
 2009	SD	Gas	Royalties	234095.34
-2009	TX	Oil & Gas	Other Revenues	33920.62
+2009	TX	Oil & Gas	Other Revenues	-637124.09
 2009	TX	Oil & Gas	Rents	642995.50
 2009	TX	Oil	Royalties	2206421.12
 2009	TX	Gas	Royalties	9955494.42
 2009	TX	Oil & Gas	Bonus	12983247.00
-2009	TX	Oil & Gas	Other Royalties	-671044.71
 2009	TX	NGL	Royalties	563468.89
+2009	UT	Geothermal	Bonus	8750765.00
+2009	UT	Geothermal	Rents	235839.00
 2009	UT	Oil & Gas	Rents	5482716.88
+2009	UT	Geothermal	Royalties	288021.11
+2009	UT	Coal	Bonus	582800.00
 2009	UT	Oil & Gas	Bonus	7157980.00
-2009	UT	Oil & Gas	Other Revenues	536562.44
-2009	UT	Oil & Gas	Other Royalties	-4108413.66
+2009	UT	Coal	Other Revenues	15421.40
+2009	UT	Oil & Gas	Other Revenues	-3571851.22
+2009	UT	Coal	Rents	248943.00
+2009	UT	Coal	Royalties	21367992.07
 2009	UT	Gas	Royalties	101872063.66
 2009	UT	NGL	Royalties	10106510.27
 2009	UT	Oil	Royalties	68955887.12
-2009	UT	Coal	Bonus	582800.00
-2009	UT	Geothermal	Bonus	8750765.00
-2009	UT	Clay	Other Revenues	942.00
-2009	UT	Coal	Other Revenues	15421.40
-2009	UT	Gilsonite	Other Revenues	-2409.69
-2009	UT	Hardrock	Other Revenues	240.00
+2009	UT	Carbon Dioxide Gas	Royalties	45598.00
+2009	UT	Phosphate	Rents	1693.00
+2009	UT	Tar Sands	Rents	7732.00
 2009	UT	Potassium	Other Revenues	-1088.00
-2009	UT	Clay	Rents	314.00
-2009	UT	Coal	Rents	248943.00
-2009	UT	Geothermal	Rents	235839.00
-2009	UT	Gilsonite	Rents	-3957.50
+2009	UT	Potassium	Rents	24904.00
+2009	UT	Hardrock	Other Revenues	240.00
 2009	UT	Hardrock	Rents	848.00
 2009	UT	Limestone	Rents	240.00
-2009	UT	Phosphate	Rents	1693.00
-2009	UT	Potassium	Rents	24904.00
-2009	UT	Tar Sands	Rents	7732.00
-2009	UT	Coal	Royalties	21367992.07
-2009	UT	Geothermal	Royalties	288021.11
-2009	UT	Carbon Dioxide Gas	Royalties	45598.00
+2009	UT	Clay	Other Revenues	942.00
+2009	UT	Clay	Rents	314.00
 2009	UT	Clay	Royalties	1015.94
-2009	UT	Gilsonite	Royalties	1430142.30
 2009	UT	Magnesium Chloride Brine	Royalties	35922.41
 2009	UT	Manure Salts	Royalties	2690.58
 2009	UT	Potash	Royalties	280080.89
 2009	UT	Salt	Royalties	2600.66
+2009	UT	Gilsonite	Other Revenues	-2409.69
+2009	UT	Gilsonite	Rents	-3957.50
+2009	UT	Gilsonite	Royalties	1430142.30
 2009	VA	Oil & Gas	Rents	43073.50
 2009	VA	Gas	Royalties	27921.71
-2009	VA	Oil & Gas	Other Revenues	432.20
 2009	VA	Hardrock	Other Revenues	-2662.50
 2009	VA	Hardrock	Rents	-355.00
 2009	VA	Limestone	Royalties	113515.27
+2009	VA	Oil & Gas	Other Revenues	432.20
 2009	WA	Oil & Gas	Rents	1049563.00
 2009	WA	Coal	Rents	2406.00
-2009	WV	Oil & Gas	Other Revenues	80110.77
+2009	WV	Oil & Gas	Other Revenues	76056.77
 2009	WV	Gas	Royalties	507838.52
 2009	WV	Oil & Gas	Rents	92267.52
-2009	WV	Oil & Gas	Other Royalties	-4054.00
 2009	WY	Oil & Gas	Bonus	28063368.99
 2009	WY	Oil & Gas	Rents	14514150.89
 2009	WY	Gas	Royalties	552004672.41
 2009	WY	Oil	Royalties	183699381.28
-2009	WY	Oil & Gas	Other Revenues	530613.74
-2009	WY	Oil & Gas	Other Royalties	7924681.61
+2009	WY	Oil & Gas	Other Revenues	8455295.36
 2009	WY	NGL	Royalties	36223633.71
 2009	WY	Coal	Bonus	372979249.91
 2009	WY	Coal	Other Revenues	-2208667.37
-2009	WY	Sodium	Other Revenues	174956.99
 2009	WY	Coal	Rents	516632.24
-2009	WY	Sodium	Rents	-18379.44
 2009	WY	Coal	Royalties	585104653.21
+2009	WY	Sulfur	Royalties	7096365.82
+2009	WY	Sodium	Other Revenues	174956.99
+2009	WY	Sodium	Rents	-18379.44
+2009	WY	Salt	Royalties	431.60
 2009	WY	Carbon Dioxide Gas	Royalties	70188.83
 2009	WY	Purge Liquor	Royalties	72155.56
-2009	WY	Salt	Royalties	431.60
 2009	WY	Soda Ash	Royalties	13768536.90
 2009	WY	Sodium Bi-Carbonate	Royalties	101382.97
 2009	WY	Sodium Bisulfite	Royalties	2683.85
 2009	WY	Sodium Sesquicarbonate	Royalties	199927.52
 2009	WY	Sulfide	Royalties	128436.71
-2009	WY	Sulfur	Royalties	7096365.82
 2009	WY	Trona Ore	Royalties	206833.44
-2010	AK	Oil & Gas	Other Revenues	144345.26
-2010	AK	Gas	Other Royalties	-12252.35
-2010	AK	Oil & Gas	Other Royalties	1433692.06
+2010	AK	Oil & Gas	Other Revenues	1578037.32
 2010	AK	Oil & Gas	Rents	6915106.44
-2010	AK	Gas	Royalties	12684633.21
+2010	AK	Gas	Royalties	12672380.86
 2010	AK	NGL	Royalties	529.03
 2010	AK	Oil	Royalties	1767763.83
 2010	AK	Oil & Gas	Bonus	23381.92
-2010	AL	Oil & Gas	Other Revenues	1054.07
-2010	AL	Oil & Gas	Other Royalties	10090.91
+2010	AL	Oil & Gas	Other Revenues	11144.98
 2010	AL	Gas	Royalties	362567.82
 2010	AL	Oil	Royalties	315095.46
+2010	AL	Sulfur	Royalties	1448.44
+2010	AL	Hardrock	Other Revenues	123.00
 2010	AL	Oil & Gas	Rents	140101.00
 2010	AL	Oil & Gas	Bonus	79712.00
-2010	AL	NGL	Royalties	356.91
-2010	AL	Coal	Other Revenues	-808130.04
-2010	AL	Hardrock	Other Revenues	123.00
 2010	AL	Coal	Rents	12054.00
 2010	AL	Coal	Royalties	11199539.31
-2010	AL	Sulfur	Royalties	1448.44
+2010	AL	Coal	Other Revenues	-808130.04
+2010	AL	NGL	Royalties	356.91
 2010	AR	Oil & Gas	Bonus	1412964.65
-2010	AR	Oil & Gas	Other Royalties	-143579.95
+2010	AR	Oil & Gas	Other Revenues	-112725.67
 2010	AR	Oil & Gas	Rents	1352216.00
 2010	AR	Gas	Royalties	10157706.78
 2010	AR	Oil	Royalties	72.45
-2010	AR	Oil & Gas	Other Revenues	30854.29
 2010	AR	Hardrock	Other Revenues	1246.77
 2010	AR	Hardrock	Rents	-293.07
-2010	AR	Quartz Crystal	Royalties	50.25
 2010	AR	Wavellite	Royalties	69.10
+2010	AR	Quartz Crystal	Royalties	50.25
 2010	AZ	Oil & Gas	Rents	36056.00
-2010	AZ	Sodium	Other Revenues	12.00
 2010	AZ	Geothermal	Rents	2084.00
-2010	AZ	Potassium	Rents	3268.00
+2010	AZ	Sodium	Other Revenues	12.00
 2010	AZ	Sodium	Rents	4.00
 2010	AZ	Salt	Royalties	1565.53
-2010	CA	Oil & Gas	Other Royalties	200390.13
+2010	AZ	Potassium	Rents	3268.00
+2010	CA	Oil & Gas	Other Revenues	213186.77
 2010	CA	Gas	Royalties	3290800.40
-2010	CA	Oil & Gas	Other Revenues	12796.64
 2010	CA	Oil & Gas	Rents	322729.50
 2010	CA	Oil	Royalties	118066622.83
+2010	CA	Geothermal	Rents	109859.70
+2010	CA	Geothermal	Royalties	8870403.45
+2010	CA	Geothermal	Other Revenues	83464.30
 2010	CA	Oil & Gas	Bonus	4248728.00
 2010	CA	NGL	Royalties	228021.93
-2010	CA	Geothermal	Bonus	19348.00
 2010	CA	Sodium	Bonus	120.00
-2010	CA	Geothermal	Other Revenues	83464.30
 2010	CA	Sodium	Other Revenues	12.46
-2010	CA	Geothermal	Rents	109859.70
 2010	CA	Sodium	Rents	-10909.81
-2010	CA	Geothermal	Royalties	8870403.45
 2010	CA	Anhydrous Sodium Sulfate	Royalties	179316.58
 2010	CA	Borax-Decahydrate	Royalties	166462.79
 2010	CA	Borax-Pentahydrate	Royalties	303415.38
@@ -1959,34 +1787,33 @@ Year	Region	Commodity	Type	Revenue
 2010	CA	Salt	Royalties	35225.79
 2010	CA	Soda Ash	Royalties	1755369.43
 2010	CA	Sodium Bi-Carbonate	Royalties	28921.12
-2010	CO	Oil & Gas	Other Revenues	260787.25
+2010	CA	Geothermal	Bonus	19348.00
+2010	CO	Oil & Gas	Other Revenues	5242437.68
 2010	CO	Oil	Royalties	34349638.69
-2010	CO	Oil & Gas	Other Royalties	4981650.44
 2010	CO	Oil & Gas	Rents	5526454.75
 2010	CO	Gas	Royalties	138848892.73
 2010	CO	Oil & Gas	Bonus	783486.00
 2010	CO	NGL	Royalties	11703217.12
-2010	CO	Coal	Bonus	3656320.00
-2010	CO	Coal	Other Revenues	500526.63
-2010	CO	Sodium	Other Revenues	21399.00
-2010	CO	Coal	Other Royalties	0.00
 2010	CO	Coal	Rents	224973.00
-2010	CO	Sodium	Rents	-1320.00
 2010	CO	Coal	Royalties	57800184.96
 2010	CO	Carbon Dioxide Gas	Royalties	42234863.74
+2010	CO	Coal	Other Revenues	500526.63
+2010	CO	Coal	Bonus	3656320.00
+2010	CO	Sodium	Other Revenues	21399.00
+2010	CO	Sodium	Rents	-1320.00
 2010	CO	Sodium Bi-Carbonate	Royalties	369823.60
-2010	FL	Oil & Gas	Rents	3200.00
 2010	FL	Phosphate	Other Revenues	1768.00
+2010	FL	Oil & Gas	Rents	3200.00
 2010	FL	Phosphate Raw Ore	Royalties	90567.06
-2010	ID	Oil & Gas	Rents	10414.50
-2010	ID	Geothermal	Bonus	21188.00
-2010	ID	Phosphate	Bonus	6892.00
 2010	ID	Phosphate	Other Revenues	128724.00
-2010	ID	Garnet	Rents	80.00
+2010	ID	Oil & Gas	Rents	10414.50
+2010	ID	Phosphate	Rents	-35.00
 2010	ID	Geothermal	Rents	63612.00
 2010	ID	Hardrock	Rents	59.00
-2010	ID	Phosphate	Rents	-35.00
+2010	ID	Phosphate	Bonus	6892.00
 2010	ID	Phosphate Raw Ore	Royalties	9053379.95
+2010	ID	Garnet	Rents	80.00
+2010	ID	Geothermal	Bonus	21188.00
 2010	IL	Oil	Royalties	347506.70
 2010	IL	Oil & Gas	Other Revenues	175.00
 2010	IL	Hardrock	Rents	-60.00
@@ -1994,271 +1821,247 @@ Year	Region	Commodity	Type	Revenue
 2010	IN	Oil	Royalties	34814.78
 2010	KS	Oil & Gas	Bonus	1840.00
 2010	KS	Oil & Gas	Rents	71529.50
-2010	KS	Oil & Gas	Other Royalties	224040.20
+2010	KS	Oil & Gas	Other Revenues	232444.64
 2010	KS	Gas	Royalties	3464587.74
-2010	KS	Oil & Gas	Other Revenues	8404.44
 2010	KS	NGL	Royalties	680608.48
 2010	KS	Oil	Royalties	2215850.59
+2010	KY	Coal	Rents	17526.00
 2010	KY	Oil & Gas	Rents	839.00
 2010	KY	Gas	Royalties	96567.14
 2010	KY	NGL	Royalties	6974.54
 2010	KY	Oil	Royalties	219858.58
-2010	KY	Oil & Gas	Other Revenues	16082.73
-2010	KY	Oil & Gas	Other Royalties	-79.39
 2010	KY	Coal	Other Revenues	4000.00
-2010	KY	Coal	Rents	17526.00
+2010	KY	Oil & Gas	Other Revenues	16003.34
 2010	KY	Coal	Royalties	127255.28
-2010	LA	Oil & Gas	Other Royalties	-143207.93
+2010	LA	Oil & Gas	Other Revenues	-52034.94
 2010	LA	Oil & Gas	Rents	97242.00
 2010	LA	Gas	Royalties	9261833.20
 2010	LA	Oil	Royalties	2971999.98
 2010	LA	Oil & Gas	Bonus	37175276.00
 2010	LA	NGL	Royalties	6831778.16
-2010	LA	Oil & Gas	Other Revenues	91172.99
 2010	MD	Oil & Gas	Other Revenues	7864.01
 2010	MD	Oil & Gas	Rents	496.00
 2010	MI	Oil & Gas	Rents	83211.31
 2010	MI	Gas	Royalties	1158217.08
 2010	MI	Oil	Royalties	277626.97
-2010	MI	Oil & Gas	Other Revenues	654.46
-2010	MI	Oil & Gas	Other Royalties	-5055.00
+2010	MI	Oil & Gas	Other Revenues	-4400.54
 2010	MI	NGL	Royalties	181567.15
 2010	MN	Copper	Other Revenues	26110.00
 2010	MN	Hardrock	Other Revenues	22550.00
 2010	MN	Hardrock	Rents	1116.50
-2010	MO	Oil & Gas	Other Revenues	7037.20
 2010	MO	Hardrock	Other Revenues	12303.00
-2010	MO	Hardrock	Rents	700.00
 2010	MO	Copper Concentrate	Royalties	518826.80
 2010	MO	Lead Concentrate	Royalties	10773530.65
-2010	MO	Zinc Concentrate	Royalties	1964638.25
+2010	MO	Zinc Concentrate	Royalties	1964638.26
+2010	MO	Hardrock	Rents	700.00
+2010	MO	Oil & Gas	Other Revenues	7037.20
 2010	MS	Oil & Gas	Rents	350318.00
 2010	MS	Oil	Royalties	2013962.34
 2010	MS	Oil & Gas	Bonus	30210.00
 2010	MS	Gas	Royalties	358725.17
-2010	MS	Oil & Gas	Other Royalties	5737.33
-2010	MS	Oil & Gas	Other Revenues	1754.22
+2010	MS	Oil & Gas	Other Revenues	7491.55
 2010	MT	Oil & Gas	Bonus	3090375.75
+2010	MT	Phosphate	Other Revenues	4227.00
 2010	MT	Oil & Gas	Rents	2629943.02
-2010	MT	Oil & Gas	Other Revenues	302786.43
-2010	MT	Oil & Gas	Other Royalties	-106432.96
+2010	MT	Phosphate	Rents	-1409.00
+2010	MT	Coal	Bonus	7870440.00
+2010	MT	Oil & Gas	Other Revenues	196353.47
+2010	MT	Coal	Rents	137805.00
+2010	MT	Coal	Royalties	44802675.49
 2010	MT	Gas	Royalties	10099743.48
 2010	MT	Oil	Royalties	23912973.34
 2010	MT	NGL	Royalties	367384.28
-2010	MT	Coal	Bonus	7870440.00
-2010	MT	Coal	Other Revenues	1366497.63
-2010	MT	Phosphate	Other Revenues	4227.00
-2010	MT	Coal	Rents	137805.00
-2010	MT	Hardrock	Rents	219.50
-2010	MT	Phosphate	Rents	-1409.00
-2010	MT	Coal	Royalties	44802675.49
 2010	MT	Sulfur	Royalties	3906.01
+2010	MT	Hardrock	Rents	219.50
+2010	MT	Coal	Other Revenues	1366497.63
 2010	ND	Oil & Gas	Bonus	27128865.00
-2010	ND	Oil & Gas	Other Revenues	11942.86
-2010	ND	Oil & Gas	Other Royalties	871584.16
+2010	ND	Oil & Gas	Other Revenues	883527.02
 2010	ND	Oil & Gas	Rents	1021864.50
 2010	ND	Gas	Royalties	4230395.86
 2010	ND	NGL	Royalties	1023318.73
 2010	ND	Oil	Royalties	65531431.40
-2010	ND	Coal	Bonus	153080.00
-2010	ND	Coal	Other Revenues	-6680.77
 2010	ND	Coal	Rents	35532.00
+2010	ND	Coal	Bonus	153080.00
 2010	ND	Coal	Royalties	82938.92
+2010	ND	Coal	Other Revenues	-6680.77
 2010	ND	Leonardite	Royalties	15925.63
 2010	NE	Oil & Gas	Rents	578.00
 2010	NE	Oil & Gas	Other Revenues	38029.90
 2010	NE	Oil	Royalties	302763.08
 2010	NE	Gas	Royalties	232556.60
 2010	NM	Oil & Gas	Rents	2853319.72
-2010	NM	Gas	Royalties	378888395.34
+2010	NM	Gas	Royalties	378888656.61
 2010	NM	Oil	Royalties	277772156.38
 2010	NM	Oil & Gas	Bonus	18566108.00
-2010	NM	Oil & Gas	Other Revenues	590290.71
-2010	NM	Oil & Gas	Other Royalties	3895010.11
+2010	NM	Oil & Gas	Other Revenues	4485300.82
 2010	NM	NGL	Royalties	109577592.95
-2010	NM	Gas	Other Royalties	261.27
-2010	NM	Oil & Gas	Royalties	-0.03
 2010	NM	Potassium	Other Revenues	194992.97
 2010	NM	Sodium	Other Revenues	3840.00
-2010	NM	Coal	Other Royalties	82870.55
-2010	NM	Coal	Rents	76311.00
-2010	NM	Geothermal	Rents	15646.00
 2010	NM	Potassium	Rents	-109903.00
 2010	NM	Sodium	Rents	-1040.00
-2010	NM	Coal	Royalties	6364128.36
-2010	NM	Carbon Dioxide Gas	Royalties	1703269.41
 2010	NM	Langbeinite	Royalties	8173603.14
 2010	NM	Muriate Of Potash-Granular	Royalties	6189818.30
 2010	NM	Muriate Of Potash-Standard	Royalties	1572956.32
 2010	NM	Potash	Royalties	4200890.52
 2010	NM	Salt	Royalties	216177.08
 2010	NM	Sylvite-Raw Ore	Royalties	5774.34
-2010	NV	Oil & Gas	Rents	6517864.49
-2010	NV	Oil & Gas	Bonus	461720.25
-2010	NV	Oil	Royalties	3397208.34
-2010	NV	Oil & Gas	Other Revenues	3847.17
-2010	NV	Oil & Gas	Other Royalties	963.39
+2010	NM	Carbon Dioxide Gas	Royalties	1703269.41
+2010	NM	Geothermal	Rents	15646.00
+2010	NM	Oil & Gas	Royalties	-0.03
+2010	NM	Coal	Rents	76311.00
+2010	NM	Coal	Other Revenues	82870.55
+2010	NM	Coal	Royalties	6364128.36
 2010	NV	Geothermal	Bonus	2318233.00
 2010	NV	Geothermal	Other Revenues	18158.12
-2010	NV	Potassium	Other Revenues	7503.00
-2010	NV	Geothermal	Rents	2322717.00
-2010	NV	Potassium	Rents	3039.00
+2010	NV	Geothermal	Rents	2322717.01
+2010	NV	Oil & Gas	Rents	6517864.49
 2010	NV	Geothermal	Royalties	2981543.05
+2010	NV	Oil & Gas	Bonus	461720.25
+2010	NV	Potassium	Other Revenues	7503.00
+2010	NV	Potassium	Rents	3039.00
+2010	NV	Oil	Royalties	3397208.34
+2010	NV	Oil & Gas	Other Revenues	4810.56
 2010	NY	Gas	Royalties	6474.30
+2010	OH	Coal	Royalties	3372.86
 2010	OH	Gas	Royalties	339336.67
 2010	OH	Oil	Royalties	224093.04
 2010	OH	Oil & Gas	Bonus	162765.50
 2010	OH	Oil & Gas	Rents	19419.50
-2010	OH	Oil & Gas	Other Royalties	-392.73
-2010	OH	Oil & Gas	Other Revenues	2563.42
-2010	OH	Coal	Royalties	3372.86
-2010	OK	Oil & Gas	Other Royalties	-31406.52
+2010	OH	Oil & Gas	Other Revenues	2170.69
+2010	OK	Oil & Gas	Other Revenues	-25643.53
 2010	OK	Oil & Gas	Rents	335812.22
 2010	OK	Gas	Royalties	7353758.01
 2010	OK	Oil	Royalties	1328319.08
 2010	OK	NGL	Royalties	242206.11
 2010	OK	Oil & Gas	Bonus	278901.00
-2010	OK	Oil & Gas	Other Revenues	5762.99
 2010	OK	Coal	Bonus	158197.75
-2010	OK	Coal	Other Revenues	68017.54
-2010	OK	Asphalt	Rents	-2397.50
 2010	OK	Coal	Rents	47340.00
 2010	OK	Coal	Royalties	559409.37
-2010	OR	Oil & Gas	Rents	391906.00
+2010	OK	Coal	Other Revenues	68017.54
+2010	OK	Asphalt	Rents	-2397.50
 2010	OR	Geothermal	Rents	283071.00
-2010	PA	Oil & Gas	Other Revenues	38751.29
+2010	OR	Oil & Gas	Rents	391906.00
+2010	PA	Oil & Gas	Other Revenues	38768.39
 2010	PA	Gas	Royalties	114620.38
 2010	PA	Oil	Royalties	64677.99
-2010	PA	Oil & Gas	Other Royalties	17.10
 2010	SC	Hardrock	Other Revenues	3330.00
 2010	SC	Gold Placer	Royalties	22.60
 2010	SD	Oil & Gas	Rents	123480.00
 2010	SD	Oil	Royalties	1275226.68
-2010	SD	Oil & Gas	Other Revenues	653.21
-2010	SD	Oil & Gas	Other Royalties	-412.00
+2010	SD	Oil & Gas	Other Revenues	241.21
 2010	SD	Gas	Royalties	140071.69
-2010	TX	Oil & Gas	Other Revenues	10952.07
+2010	TX	Oil & Gas	Other Revenues	-342866.32
 2010	TX	Oil	Royalties	3229252.17
-2010	TX	Oil & Gas	Other Royalties	-353818.39
 2010	TX	Gas	Royalties	10752025.39
 2010	TX	Oil & Gas	Rents	540539.33
 2010	TX	Oil & Gas	Bonus	43747928.00
 2010	TX	NGL	Royalties	541798.86
+2010	UT	Geothermal	Bonus	413534.00
+2010	UT	Geothermal	Rents	380507.00
 2010	UT	Oil & Gas	Rents	5172750.98
+2010	UT	Geothermal	Royalties	282479.75
 2010	UT	Oil & Gas	Bonus	3467491.00
-2010	UT	Oil & Gas	Other Revenues	897652.93
-2010	UT	Oil & Gas	Other Royalties	3323808.99
+2010	UT	Coal	Bonus	663440.00
+2010	UT	Oil & Gas	Other Revenues	4221461.92
+2010	UT	Coal	Rents	256074.69
+2010	UT	Coal	Royalties	23761390.10
 2010	UT	Gas	Royalties	140906694.46
 2010	UT	NGL	Royalties	20620897.63
 2010	UT	Oil	Royalties	96376085.82
-2010	UT	Coal	Bonus	663440.00
-2010	UT	Geothermal	Bonus	413534.00
-2010	UT	Gilsonite	Bonus	1500.00
-2010	UT	Clay	Other Revenues	462.00
-2010	UT	Coal	Other Revenues	549000.00
-2010	UT	Gilsonite	Other Revenues	327.00
-2010	UT	Phosphate	Other Revenues	24942.00
-2010	UT	Potassium	Other Revenues	-1098.00
-2010	UT	Clay	Rents	154.00
-2010	UT	Coal	Rents	256074.69
-2010	UT	Geothermal	Rents	380507.00
-2010	UT	Gilsonite	Rents	1120.50
-2010	UT	Limestone	Rents	-200.00
-2010	UT	Phosphate	Rents	-2206.00
-2010	UT	Potassium	Rents	24904.00
-2010	UT	Tar Sands	Rents	7732.00
-2010	UT	Coal	Royalties	23761390.10
-2010	UT	Geothermal	Royalties	282479.75
 2010	UT	Carbon Dioxide Gas	Royalties	78833.31
+2010	UT	Phosphate	Rents	-2206.00
+2010	UT	Tar Sands	Rents	7732.00
+2010	UT	Coal	Other Revenues	549000.00
+2010	UT	Potassium	Other Revenues	-1098.00
+2010	UT	Potassium	Rents	24904.00
+2010	UT	Limestone	Rents	-200.00
+2010	UT	Clay	Other Revenues	462.00
+2010	UT	Clay	Rents	154.00
 2010	UT	Clay	Royalties	2457.02
-2010	UT	Gilsonite	Royalties	1879371.19
 2010	UT	Magnesium Chloride Brine	Royalties	42871.87
 2010	UT	Manure Salts	Royalties	2174.01
 2010	UT	Potash	Royalties	224043.85
 2010	UT	Salt	Royalties	1985.17
+2010	UT	Gilsonite	Bonus	1500.00
+2010	UT	Gilsonite	Other Revenues	327.00
+2010	UT	Phosphate	Other Revenues	24942.00
+2010	UT	Gilsonite	Rents	1120.50
+2010	UT	Gilsonite	Royalties	1879371.19
 2010	VA	Oil & Gas	Rents	27389.50
 2010	VA	Gas	Royalties	111609.05
-2010	VA	Oil & Gas	Other Royalties	-14.00
-2010	VA	Oil & Gas	Other Revenues	1140.10
 2010	VA	Hardrock	Rents	-355.00
 2010	VA	Limestone	Royalties	117397.69
+2010	VA	Oil & Gas	Other Revenues	1126.10
 2010	WA	Oil & Gas	Rents	540031.00
 2010	WA	Coal	Rents	726.00
 2010	WV	Gas	Royalties	382764.07
-2010	WV	Oil & Gas	Other Revenues	160448.21
-2010	WV	Oil & Gas	Other Royalties	-18024.60
+2010	WV	Oil & Gas	Other Revenues	142423.61
 2010	WV	Oil & Gas	Rents	90509.46
 2010	WV	Oil	Royalties	174.44
 2010	WY	Oil & Gas	Bonus	29548696.00
-2010	WY	Oil & Gas	Other Royalties	7709716.59
+2010	WY	Oil & Gas	Other Revenues	8771576.67
 2010	WY	Oil & Gas	Rents	12522555.59
 2010	WY	Gas	Royalties	755991818.74
 2010	WY	Oil	Royalties	256931525.83
-2010	WY	Oil & Gas	Other Revenues	1061860.09
 2010	WY	NGL	Royalties	54659745.49
-2010	WY	Oil & Gas	Royalties	-11.00
 2010	WY	Coal	Bonus	96758008.80
-2010	WY	Coal	Other Revenues	2135607.69
-2010	WY	Sodium	Other Revenues	129157.99
 2010	WY	Coal	Rents	541521.66
-2010	WY	Sodium	Rents	125.15
 2010	WY	Coal	Royalties	617599771.37
-2010	WY	Carbon Dioxide Gas	Royalties	-86581.28
-2010	WY	Purge Liquor	Royalties	71710.16
+2010	WY	Oil & Gas	Royalties	-11.00
+2010	WY	Coal	Other Revenues	2135607.69
+2010	WY	Sulfur	Royalties	371502.86
+2010	WY	Sodium	Other Revenues	129157.99
 2010	WY	Salt	Royalties	448.85
+2010	WY	Carbon Dioxide Gas	Royalties	-86581.28
+2010	WY	Sodium	Rents	125.15
+2010	WY	Purge Liquor	Royalties	71710.16
 2010	WY	Soda Ash	Royalties	12545243.06
 2010	WY	Sodium Bi-Carbonate	Royalties	193637.00
 2010	WY	Sodium Bisulfite	Royalties	2659.48
 2010	WY	Sodium Sesquicarbonate	Royalties	319044.16
 2010	WY	Sulfide	Royalties	105133.20
-2010	WY	Sulfur	Royalties	371502.86
 2010	WY	Trona Ore	Royalties	248907.92
-2011	AK	Oil & Gas	Other Revenues	217752.64
-2011	AK	Gas	Other Royalties	-39283.85
-2011	AK	Oil & Gas	Other Royalties	-1451808.71
+2011	AK	Oil & Gas	Other Revenues	-1234056.07
 2011	AK	Oil & Gas	Rents	5113336.60
-2011	AK	Gas	Royalties	10163381.86
+2011	AK	Gas	Royalties	10124098.01
 2011	AK	Oil	Royalties	2022988.68
 2011	AK	Oil & Gas	Bonus	639996.00
-2011	AL	Oil & Gas	Other Revenues	2975.37
-2011	AL	Oil & Gas	Other Royalties	-27661.92
+2011	AL	Oil & Gas	Other Revenues	-24686.55
 2011	AL	Gas	Royalties	264684.95
 2011	AL	NGL	Royalties	8644.81
 2011	AL	Oil	Royalties	392011.62
+2011	AL	Sulfur	Royalties	4447.73
 2011	AL	Oil & Gas	Bonus	577250.75
+2011	AL	Hardrock	Rents	41.00
 2011	AL	Oil & Gas	Rents	65360.00
 2011	AL	Coal	Rents	13494.00
-2011	AL	Hardrock	Rents	41.00
 2011	AL	Coal	Royalties	9722181.57
-2011	AL	Sulfur	Royalties	4447.73
-2011	AR	Oil & Gas	Other Royalties	-56785.07
+2011	AR	Oil & Gas	Other Revenues	-36706.10
 2011	AR	Oil & Gas	Rents	1100355.50
 2011	AR	Gas	Royalties	6656466.06
 2011	AR	Oil	Royalties	82.72
 2011	AR	Oil & Gas	Bonus	1839143.00
-2011	AR	Oil & Gas	Other Revenues	20078.97
-2011	AR	Oil & Gas	Royalties	-2.84
-2011	AR	Hardrock	Other Revenues	1126.65
 2011	AR	Hardrock	Rents	40.00
+2011	AR	Hardrock	Other Revenues	1126.65
 2011	AR	Quartz Crystal	Royalties	7.35
+2011	AR	Oil & Gas	Royalties	-2.84
 2011	AZ	Oil & Gas	Rents	20804.00
-2011	AZ	Sodium	Other Revenues	12.00
 2011	AZ	Geothermal	Rents	2084.00
-2011	AZ	Potassium	Rents	-1634.00
+2011	AZ	Sodium	Other Revenues	12.00
 2011	AZ	Sodium	Rents	4.00
 2011	AZ	Salt	Royalties	8959.28
-2011	CA	Oil & Gas	Other Royalties	34001.96
+2011	AZ	Potassium	Rents	-1634.00
+2011	CA	Oil & Gas	Other Revenues	57445.94
 2011	CA	Gas	Royalties	4326620.76
-2011	CA	Oil & Gas	Other Revenues	23443.98
 2011	CA	Oil & Gas	Rents	342839.30
 2011	CA	Oil	Royalties	173536665.82
+2011	CA	Geothermal	Rents	204122.00
+2011	CA	Geothermal	Royalties	7553372.92
+2011	CA	Geothermal	Other Revenues	2066.71
 2011	CA	Oil & Gas	Bonus	5619228.00
 2011	CA	NGL	Royalties	785384.52
 2011	CA	Sodium	Bonus	120.00
-2011	CA	Geothermal	Other Revenues	2066.71
-2011	CA	Geothermal	Rents	204122.00
 2011	CA	Sodium	Rents	-14509.90
-2011	CA	Geothermal	Royalties	7553372.92
 2011	CA	Anhydrous Sodium Sulfate	Royalties	220610.49
 2011	CA	Borax-Anhydrous	Royalties	23155.59
 2011	CA	Borax-Decahydrate	Royalties	436534.22
@@ -2267,141 +2070,122 @@ Year	Region	Commodity	Type	Revenue
 2011	CA	Salt	Royalties	64432.60
 2011	CA	Soda Ash	Royalties	2358499.91
 2011	CA	Sodium Bi-Carbonate	Royalties	50355.02
-2011	CO	Oil & Gas	Other Royalties	2408307.92
+2011	CO	Oil & Gas	Other Revenues	2874541.29
 2011	CO	Oil	Royalties	40323912.49
-2011	CO	Oil & Gas	Other Revenues	466233.36
 2011	CO	Oil & Gas	Rents	5312225.95
 2011	CO	Gas	Royalties	136163642.24
-2011	CO	NGL	Royalties	23988178.86
-2011	CO	Oil & Gas	Bonus	867492.00
-2011	CO	NGL	Other Royalties	156525.92
-2011	CO	Oil Shale	Rents	1252.00
-2011	CO	Coal	Bonus	3591320.00
+2011	CO	NGL	Royalties	24144704.78
 2011	CO	Geothermal	Bonus	29600.00
-2011	CO	Coal	Other Revenues	472806.87
-2011	CO	Sodium	Other Revenues	21399.00
-2011	CO	Coal	Rents	183518.00
 2011	CO	Geothermal	Rents	3200.00
-2011	CO	Sodium	Rents	13051.00
+2011	CO	Helium	Royalties	58.22
+2011	CO	Coal	Bonus	3591320.00
+2011	CO	Coal	Rents	183518.00
 2011	CO	Coal	Royalties	58407772.84
 2011	CO	Carbon Dioxide Gas	Royalties	49744663.24
-2011	CO	Helium	Royalties	58.22
+2011	CO	Coal	Other Revenues	472806.87
+2011	CO	Oil & Gas	Bonus	867492.00
+2011	CO	Sodium	Other Revenues	21399.00
+2011	CO	Oil Shale	Rents	1252.00
+2011	CO	Sodium	Rents	13051.00
 2011	CO	Sodium Bi-Carbonate	Royalties	513414.20
-2011	FL	Oil & Gas	Rents	3200.00
 2011	FL	Phosphate	Other Revenues	1768.00
+2011	FL	Oil & Gas	Rents	3200.00
 2011	FL	Phosphate Raw Ore	Royalties	521357.53
-2011	ID	Oil & Gas	Rents	18228.00
-2011	ID	Geothermal	Bonus	53464.00
-2011	ID	Phosphate	Bonus	755824.00
-2011	ID	Hardrock	Other Revenues	126.00
 2011	ID	Phosphate	Other Revenues	111675.00
+2011	ID	Oil & Gas	Rents	18228.00
+2011	ID	Phosphate	Rents	2697.50
 2011	ID	Geothermal	Rents	152813.00
 2011	ID	Hardrock	Rents	-25.00
-2011	ID	Phosphate	Rents	2697.50
-2011	ID	Gold	Royalties	620.00
+2011	ID	Geothermal	Bonus	53464.00
+2011	ID	Phosphate	Bonus	755824.00
 2011	ID	Phosphate Raw Ore	Royalties	8534799.04
+2011	ID	Hardrock	Other Revenues	126.00
+2011	ID	Gold	Royalties	620.00
 2011	IL	Oil	Royalties	293429.06
 2011	IL	Hardrock	Rents	-60.00
 2011	IN	Oil	Royalties	20846.36
 2011	IN	Oil & Gas	Rents	5802.00
 2011	KS	Oil & Gas	Rents	44317.50
 2011	KS	Oil & Gas	Bonus	2495.00
-2011	KS	Oil & Gas	Other Royalties	153479.96
+2011	KS	Oil & Gas	Other Revenues	154447.89
 2011	KS	Gas	Royalties	2575929.00
-2011	KS	Oil & Gas	Other Revenues	967.93
 2011	KS	NGL	Royalties	1084902.45
 2011	KS	Oil	Royalties	3794385.12
 2011	KS	Helium	Royalties	32.65
+2011	KY	Coal	Rents	13716.00
 2011	KY	Oil & Gas	Rents	5232.50
 2011	KY	Gas	Royalties	96803.68
 2011	KY	NGL	Royalties	6174.57
 2011	KY	Oil	Royalties	138008.84
-2011	KY	Oil & Gas	Bonus	7672.00
-2011	KY	Oil & Gas	Other Revenues	10474.66
-2011	KY	Oil & Gas	Other Royalties	6.02
-2011	KY	Coal	Rents	13716.00
 2011	KY	Coal	Royalties	1689965.21
-2011	LA	Oil & Gas	Other Royalties	296621.91
+2011	KY	Oil & Gas	Bonus	7672.00
+2011	KY	Oil & Gas	Other Revenues	10480.68
+2011	LA	Oil & Gas	Other Revenues	30740.93
 2011	LA	Gas	Royalties	10595116.61
-2011	LA	Oil	Royalties	4442082.17
+2011	LA	Oil	Royalties	4442090.30
 2011	LA	Oil & Gas	Bonus	10283052.00
 2011	LA	Oil & Gas	Rents	203037.50
 2011	LA	NGL	Royalties	2266245.09
-2011	LA	Oil & Gas	Other Revenues	-265880.98
-2011	LA	Oil	Other Royalties	8.13
 2011	MD	Oil & Gas	Other Revenues	9549.32
 2011	MD	Oil & Gas	Rents	496.00
 2011	MI	Oil & Gas	Rents	78728.83
 2011	MI	Gas	Royalties	824571.54
 2011	MI	Oil	Royalties	306503.17
-2011	MI	Oil & Gas	Other Revenues	2408.46
-2011	MI	Oil & Gas	Other Royalties	24851.70
+2011	MI	Hardrock	Rents	923.00
+2011	MI	Oil & Gas	Other Revenues	27260.16
 2011	MI	NGL	Royalties	76774.54
 2011	MI	Oil & Gas	Bonus	103080.00
-2011	MI	Hardrock	Rents	923.00
 2011	MN	Copper	Other Revenues	26110.00
 2011	MN	Hardrock	Other Revenues	22550.00
 2011	MN	Hardrock	Rents	-3835.00
 2011	MO	Hardrock	Other Revenues	12303.00
-2011	MO	Hardrock	Rents	740.00
-2011	MO	Copper Concentrate	Royalties	1283873.50
-2011	MO	Lead Concentrate	Royalties	11376686.35
+2011	MO	Copper Concentrate	Royalties	1283873.51
+2011	MO	Lead Concentrate	Royalties	11376686.36
 2011	MO	Zinc Concentrate	Royalties	2174729.25
+2011	MO	Hardrock	Rents	740.00
 2011	MS	Oil & Gas	Bonus	1691270.50
 2011	MS	Oil & Gas	Rents	570821.50
 2011	MS	Oil	Royalties	3668206.70
 2011	MS	Gas	Royalties	378508.65
-2011	MS	Oil & Gas	Other Royalties	-1297.23
-2011	MS	Oil & Gas	Other Revenues	483.00
+2011	MS	Oil & Gas	Other Revenues	-814.23
 2011	MT	Oil & Gas	Rents	2532076.09
-2011	MT	Oil & Gas	Other Revenues	234347.19
-2011	MT	Oil & Gas	Other Royalties	315958.98
+2011	MT	Phosphate	Rents	1409.00
+2011	MT	Coal	Bonus	3980440.00
+2011	MT	Oil & Gas	Other Revenues	550306.17
+2011	MT	Coal	Rents	127402.00
+2011	MT	Coal	Royalties	43776576.85
 2011	MT	Gas	Royalties	7323979.08
 2011	MT	Oil	Royalties	27440491.35
 2011	MT	NGL	Royalties	460264.82
 2011	MT	Oil & Gas	Bonus	5199068.50
-2011	MT	Coal	Bonus	3980440.00
-2011	MT	Coal	Other Revenues	1425192.83
-2011	MT	Coal	Rents	127402.00
-2011	MT	Hardrock	Rents	121.50
-2011	MT	Phosphate	Rents	1409.00
-2011	MT	Coal	Royalties	43776576.85
 2011	MT	Sulfur	Royalties	9789.04
+2011	MT	Hardrock	Rents	121.50
+2011	MT	Coal	Other Revenues	1425192.83
 2011	NC	Hardrock	Rents	158.00
 2011	ND	Oil & Gas	Bonus	99832571.00
-2011	ND	Oil & Gas	Other Revenues	17315.17
-2011	ND	Oil & Gas	Other Royalties	2459253.64
+2011	ND	Oil & Gas	Other Revenues	2476568.81
 2011	ND	Oil & Gas	Rents	1060746.98
 2011	ND	Gas	Royalties	4327661.89
 2011	ND	NGL	Royalties	1639729.75
 2011	ND	Oil	Royalties	104578084.00
-2011	ND	Coal	Bonus	6400.00
 2011	ND	Coal	Rents	34392.00
 2011	ND	Coal	Royalties	1056480.54
+2011	ND	Coal	Bonus	6400.00
 2011	ND	Leonardite	Royalties	897.98
 2011	NE	Oil & Gas	Rents	578.00
 2011	NE	Oil & Gas	Other Revenues	36879.22
 2011	NE	Oil	Royalties	349883.44
 2011	NM	Oil & Gas	Rents	2660243.04
-2011	NM	Gas	Royalties	360976778.84
+2011	NM	Gas	Royalties	360976902.22
 2011	NM	Oil	Royalties	365797822.51
 2011	NM	Oil & Gas	Bonus	28958967.00
-2011	NM	Oil & Gas	Other Revenues	590367.73
-2011	NM	Oil & Gas	Other Royalties	14575630.99
+2011	NM	Oil & Gas	Other Revenues	15165998.72
 2011	NM	NGL	Royalties	160960169.82
 2011	NM	Oil & Gas	Royalties	-0.01
-2011	NM	Gas	Other Royalties	123.38
-2011	NM	Geothermal	Other Revenues	-5002.00
+2011	NM	Geothermal	Rents	29109.00
 2011	NM	Potassium	Other Revenues	305154.40
 2011	NM	Sodium	Other Revenues	-9017.81
-2011	NM	Coal	Other Royalties	78440.29
-2011	NM	Coal	Rents	87999.00
-2011	NM	Geothermal	Rents	29109.00
 2011	NM	Potassium	Rents	720.50
-2011	NM	Sodium	Rents	125.60
-2011	NM	Coal	Royalties	8989647.39
-2011	NM	Brine Barrels	Royalties	17.81
-2011	NM	Carbon Dioxide Gas	Royalties	1254302.48
 2011	NM	Langbeinite	Royalties	7046699.45
 2011	NM	Muriate Of Potash-Granular	Royalties	8237791.78
 2011	NM	Muriate Of Potash-Standard	Royalties	1571299.58
@@ -2409,33 +2193,37 @@ Year	Region	Commodity	Type	Revenue
 2011	NM	Salt	Royalties	227867.40
 2011	NM	Sulfur	Royalties	65189.60
 2011	NM	Sylvite-Raw Ore	Royalties	5666.76
+2011	NM	Carbon Dioxide Gas	Royalties	1254302.49
+2011	NM	Geothermal	Other Revenues	-5002.00
+2011	NM	Sodium	Rents	125.60
+2011	NM	Brine Barrels	Royalties	17.81
+2011	NM	Coal	Rents	87999.00
+2011	NM	Coal	Other Revenues	78440.29
+2011	NM	Coal	Royalties	8989647.39
+2011	NV	Geothermal	Bonus	349527.00
+2011	NV	Geothermal	Other Revenues	42904.89
+2011	NV	Geothermal	Rents	2234921.02
 2011	NV	Oil & Gas	Rents	6049750.54
+2011	NV	Geothermal	Royalties	3805122.92
 2011	NV	Oil & Gas	Bonus	785542.00
 2011	NV	Oil	Royalties	4396705.28
-2011	NV	Oil & Gas	Other Revenues	2655.55
-2011	NV	Oil & Gas	Other Royalties	3922.00
-2011	NV	Geothermal	Bonus	349527.00
-2011	NV	Geothermal	Other Revenues	12834.89
-2011	NV	Geothermal	Other Royalties	30070.00
-2011	NV	Geothermal	Rents	2234921.00
-2011	NV	Geothermal	Royalties	3805122.92
+2011	NV	Oil & Gas	Other Revenues	6577.55
 2011	NY	Gas	Royalties	21546.22
 2011	OH	Gas	Royalties	313489.71
 2011	OH	Oil	Royalties	250633.96
 2011	OH	Oil & Gas	Rents	79625.00
 2011	OH	Oil & Gas	Other Revenues	2550.00
 2011	OH	Oil & Gas	Bonus	78.00
-2011	OK	Oil & Gas	Other Royalties	32598.60
+2011	OK	Oil & Gas	Other Revenues	40436.88
 2011	OK	Oil & Gas	Rents	314333.50
 2011	OK	Gas	Royalties	7253757.80
 2011	OK	NGL	Royalties	472945.12
 2011	OK	Oil	Royalties	1788030.32
 2011	OK	Oil & Gas	Bonus	3898210.00
-2011	OK	Oil & Gas	Other Revenues	7838.28
 2011	OK	Coal	Rents	33633.00
 2011	OK	Coal	Royalties	1111693.18
-2011	OR	Oil & Gas	Rents	492137.00
 2011	OR	Geothermal	Rents	265839.00
+2011	OR	Oil & Gas	Rents	492137.00
 2011	PA	Oil & Gas	Other Revenues	9387.98
 2011	PA	Gas	Royalties	65116.00
 2011	PA	Oil	Royalties	29967.70
@@ -2444,129 +2232,117 @@ Year	Region	Commodity	Type	Revenue
 2011	SD	Oil & Gas	Rents	127748.00
 2011	SD	Oil	Royalties	1916529.14
 2011	SD	Oil & Gas	Bonus	364146.00
-2011	SD	Oil & Gas	Other Revenues	80.00
-2011	SD	Oil & Gas	Other Royalties	133.00
+2011	SD	Oil & Gas	Other Revenues	213.00
 2011	SD	Gas	Royalties	91269.70
-2011	TX	Oil & Gas	Other Revenues	25023.42
+2011	TX	Oil & Gas	Other Revenues	791652.18
 2011	TX	Oil	Royalties	3601452.66
 2011	TX	Oil & Gas	Bonus	16226208.00
 2011	TX	Oil & Gas	Rents	468808.97
 2011	TX	Gas	Royalties	18232886.41
-2011	TX	Oil & Gas	Other Royalties	766628.76
 2011	TX	NGL	Royalties	-1283627.16
 2011	UT	Oil & Gas	Bonus	-745451.50
+2011	UT	Geothermal	Rents	432158.00
 2011	UT	Oil & Gas	Rents	4543368.33
-2011	UT	Oil & Gas	Other Revenues	920408.84
-2011	UT	Oil & Gas	Other Royalties	2661193.97
+2011	UT	Geothermal	Royalties	283747.21
+2011	UT	Coal	Other Revenues	-357383.89
+2011	UT	Oil & Gas	Other Revenues	3581602.81
+2011	UT	Coal	Rents	246417.87
+2011	UT	Coal	Royalties	23928635.04
 2011	UT	Gas	Royalties	112367150.72
 2011	UT	Oil	Royalties	107699871.22
+2011	UT	Carbon Dioxide Gas	Royalties	92067.76
 2011	UT	NGL	Royalties	31603987.71
 2011	UT	Coal	Bonus	1475320.00
+2011	UT	Potassium	Other Revenues	-1088.00
+2011	UT	Potassium	Rents	113122.75
 2011	UT	Potassium	Bonus	20962776.73
 2011	UT	Clay	Other Revenues	462.00
-2011	UT	Coal	Other Revenues	-357383.89
-2011	UT	Gilsonite	Other Revenues	14058.00
-2011	UT	Phosphate	Other Revenues	47364.00
-2011	UT	Potassium	Other Revenues	-1088.00
 2011	UT	Clay	Rents	314.00
-2011	UT	Coal	Rents	246417.86
-2011	UT	Geothermal	Rents	432158.00
-2011	UT	Gilsonite	Rents	-1329.50
-2011	UT	Phosphate	Rents	-7474.00
-2011	UT	Potassium	Rents	113122.75
-2011	UT	Coal	Royalties	23928635.03
-2011	UT	Geothermal	Royalties	283747.21
-2011	UT	Carbon Dioxide Gas	Royalties	92067.76
 2011	UT	Clay	Royalties	3761.28
-2011	UT	Gilsonite	Royalties	2351729.00
 2011	UT	Magnesium Chloride Brine	Royalties	40897.75
 2011	UT	Manure Salts	Royalties	2462.34
 2011	UT	Potash	Royalties	322565.05
 2011	UT	Salt	Royalties	2716.42
+2011	UT	Gilsonite	Other Revenues	14058.00
+2011	UT	Phosphate	Other Revenues	47364.00
+2011	UT	Gilsonite	Rents	-1329.50
+2011	UT	Phosphate	Rents	-7474.00
+2011	UT	Gilsonite	Royalties	2351729.00
 2011	VA	Oil & Gas	Other Revenues	10160.00
 2011	VA	Gas	Royalties	-52930.65
-2011	VA	Oil & Gas	Rents	2078.00
 2011	VA	Hardrock	Other Revenues	1065.00
 2011	VA	Hardrock	Rents	355.00
 2011	VA	Limestone	Royalties	112434.96
+2011	VA	Oil & Gas	Rents	2078.00
 2011	WA	Oil & Gas	Rents	379638.50
 2011	WA	Coal	Rents	1566.00
 2011	WA	Geothermal	Rents	16874.00
-2011	WV	Oil & Gas	Other Revenues	349656.72
+2011	WV	Oil & Gas	Other Revenues	351561.97
 2011	WV	Gas	Royalties	501787.79
 2011	WV	Oil & Gas	Rents	97930.01
-2011	WV	Oil & Gas	Other Royalties	1905.25
 2011	WY	Oil & Gas	Bonus	114435095.99
-2011	WY	Oil & Gas	Other Royalties	3154117.71
+2011	WY	Oil & Gas	Other Revenues	3786265.22
 2011	WY	Oil & Gas	Rents	14096649.95
-2011	WY	Gas	Royalties	686915960.39
-2011	WY	Oil	Royalties	320106660.25
-2011	WY	Oil & Gas	Other Revenues	632147.50
+2011	WY	Gas	Royalties	686936702.68
+2011	WY	Oil	Royalties	320106663.19
 2011	WY	NGL	Royalties	68574645.94
-2011	WY	Gas	Other Royalties	20742.29
-2011	WY	Oil	Other Royalties	2.94
 2011	WY	Coal	Bonus	237360047.16
-2011	WY	Coal	Other Revenues	3262998.22
-2011	WY	Sodium	Other Revenues	171939.15
 2011	WY	Coal	Rents	575181.40
-2011	WY	Sodium	Rents	-4514.00
 2011	WY	Coal	Royalties	637753285.73
-2011	WY	Carbon Dioxide Gas	Royalties	287737.81
-2011	WY	Purge Liquor	Royalties	115060.79
+2011	WY	Coal	Other Revenues	3262998.22
+2011	WY	Sulfur	Royalties	1810389.17
+2011	WY	Sodium	Other Revenues	171939.15
 2011	WY	Salt	Royalties	1690.91
+2011	WY	Carbon Dioxide Gas	Royalties	287737.81
+2011	WY	Sodium	Rents	-4514.00
+2011	WY	Purge Liquor	Royalties	115060.79
 2011	WY	Soda Ash	Royalties	23777162.73
 2011	WY	Sodium Bi-Carbonate	Royalties	293474.26
 2011	WY	Sodium Bisulfite	Royalties	6161.12
 2011	WY	Sodium Sesquicarbonate	Royalties	386564.96
 2011	WY	Sulfide	Royalties	282746.32
-2011	WY	Sulfur	Royalties	1810389.17
 2011	WY	Trona Ore	Royalties	564757.97
-2012	AK	Oil & Gas	Other Revenues	233065.86
-2012	AK	Gas	Other Royalties	-26964.40
-2012	AK	Oil & Gas	Other Royalties	231851.41
+2012	AK	Oil & Gas	Other Revenues	464917.27
 2012	AK	Oil & Gas	Rents	4871693.47
-2012	AK	Gas	Royalties	9033758.09
+2012	AK	Gas	Royalties	9006793.69
 2012	AK	Oil	Royalties	2309160.05
 2012	AK	Oil & Gas	Bonus	4811477.00
-2012	AL	Oil & Gas	Other Revenues	3073.45
-2012	AL	Oil & Gas	Other Royalties	2959.84
+2012	AL	Oil & Gas	Other Revenues	6033.29
 2012	AL	Gas	Royalties	152464.09
 2012	AL	NGL	Royalties	6770.98
 2012	AL	Oil	Royalties	335549.76
+2012	AL	Sulfur	Royalties	4038.52
 2012	AL	Oil & Gas	Bonus	892908.00
+2012	AL	Hardrock	Rents	-41.00
 2012	AL	Oil & Gas	Rents	122304.00
 2012	AL	Coal	Rents	13248.00
-2012	AL	Hardrock	Rents	-41.00
 2012	AL	Coal	Royalties	6554517.50
-2012	AL	Sulfur	Royalties	4038.52
-2012	AR	Oil & Gas	Other Royalties	-103503.37
+2012	AR	Oil & Gas	Other Revenues	-84106.96
 2012	AR	Oil & Gas	Rents	790500.50
 2012	AR	Gas	Royalties	3899725.44
 2012	AR	Oil	Royalties	-118.43
 2012	AR	Oil & Gas	Bonus	-52912.00
-2012	AR	Oil & Gas	Other Revenues	19396.40
-2012	AR	Hardrock	Other Revenues	1002.70
 2012	AR	Hardrock	Rents	-120.00
+2012	AR	Hardrock	Other Revenues	1002.70
 2012	AR	Quartz Crystal	Royalties	11.30
 2012	AZ	Oil & Gas	Rents	16520.00
-2012	AZ	Sodium	Other Revenues	-109.00
 2012	AZ	Geothermal	Rents	2084.00
-2012	AZ	Potassium	Rents	-3268.00
+2012	AZ	Sodium	Other Revenues	-109.00
 2012	AZ	Sodium	Rents	-39.00
 2012	AZ	Salt	Royalties	1377.69
-2012	CA	Oil & Gas	Other Royalties	646222.61
+2012	AZ	Potassium	Rents	-3268.00
+2012	CA	Oil & Gas	Other Revenues	670460.74
 2012	CA	Gas	Royalties	4934528.37
-2012	CA	Oil & Gas	Other Revenues	24238.13
 2012	CA	Oil & Gas	Rents	330442.00
 2012	CA	Oil	Royalties	184759238.51
+2012	CA	Geothermal	Rents	76790.00
+2012	CA	Geothermal	Royalties	9031774.60
+2012	CA	Geothermal	Other Revenues	-678.71
 2012	CA	Oil & Gas	Bonus	3211260.00
 2012	CA	NGL	Royalties	2863883.72
 2012	CA	Sodium	Bonus	-480.00
-2012	CA	Geothermal	Other Revenues	-678.71
 2012	CA	Sodium	Other Revenues	7500.00
-2012	CA	Geothermal	Rents	76790.00
 2012	CA	Sodium	Rents	3543.49
-2012	CA	Geothermal	Royalties	9031774.60
 2012	CA	Anhydrous Sodium Sulfate	Royalties	450260.24
 2012	CA	Borax-Decahydrate	Royalties	965736.02
 2012	CA	Borax-Pentahydrate	Royalties	1210501.48
@@ -2575,112 +2351,101 @@ Year	Region	Commodity	Type	Revenue
 2012	CA	Soda Ash	Royalties	5441948.19
 2012	CA	Sodium Bi-Carbonate	Royalties	156727.85
 2012	CO	Oil & Gas	Rents	4742780.22
-2012	CO	Oil & Gas	Other Revenues	327989.25
+2012	CO	Oil & Gas	Other Revenues	643129.46
 2012	CO	Oil	Royalties	46539157.42
-2012	CO	Oil & Gas	Other Royalties	315140.22
 2012	CO	Gas	Royalties	95270499.94
 2012	CO	Oil & Gas	Bonus	9822960.00
 2012	CO	NGL	Royalties	30306621.58
-2012	CO	Oil Shale	Rents	1860.00
+2012	CO	Helium	Royalties	55.43
 2012	CO	Coal	Bonus	1605164.00
-2012	CO	Geothermal	Bonus	16708.00
-2012	CO	Coal	Other Revenues	251193.52
-2012	CO	Sodium	Other Revenues	21399.00
-2012	CO	Coal	Other Royalties	615666.13
 2012	CO	Coal	Rents	207891.75
-2012	CO	Geothermal	Rents	16708.00
-2012	CO	Sodium	Rents	5694.00
 2012	CO	Coal	Royalties	53360266.90
 2012	CO	Carbon Dioxide Gas	Royalties	60658090.31
-2012	CO	Helium	Royalties	55.43
+2012	CO	Geothermal	Bonus	16708.00
+2012	CO	Geothermal	Rents	16708.00
+2012	CO	Coal	Other Revenues	866859.65
+2012	CO	Sodium	Other Revenues	21399.00
+2012	CO	Oil Shale	Rents	1860.00
+2012	CO	Sodium	Rents	5694.00
 2012	CO	Sodium Bi-Carbonate	Royalties	1108450.12
-2012	FL	Oil & Gas	Rents	3200.00
 2012	FL	Phosphate	Other Revenues	1366.00
 2012	FL	Phosphate Raw Ore	Royalties	2169985.21
-2012	ID	Oil & Gas	Rents	14718.00
-2012	ID	Phosphate	Bonus	799997.74
-2012	ID	Hardrock	Other Revenues	126.00
+2012	FL	Oil & Gas	Rents	3200.00
 2012	ID	Phosphate	Other Revenues	111744.00
+2012	ID	Oil & Gas	Rents	14718.00
+2012	ID	Phosphate	Rents	512.50
 2012	ID	Geothermal	Rents	168288.00
 2012	ID	Hardrock	Rents	-3.00
-2012	ID	Phosphate	Rents	512.50
-2012	ID	Gold	Royalties	796.80
+2012	ID	Phosphate	Bonus	799997.74
 2012	ID	Phosphate Raw Ore	Royalties	9431323.92
+2012	ID	Hardrock	Other Revenues	126.00
+2012	ID	Gold	Royalties	796.80
 2012	IL	Oil	Royalties	312501.12
 2012	IN	Oil & Gas	Rents	17667.00
 2012	IN	Oil	Royalties	30714.95
 2012	KS	Oil & Gas	Rents	44799.00
-2012	KS	Oil & Gas	Other Royalties	-63958.61
-2012	KS	Gas	Royalties	1791856.17
-2012	KS	Oil & Gas	Other Revenues	37130.16
-2012	KS	Gas	Other Royalties	-1.01
+2012	KS	Oil & Gas	Other Revenues	-26828.45
+2012	KS	Gas	Royalties	1791855.16
 2012	KS	NGL	Royalties	816168.57
 2012	KS	Oil	Royalties	3007032.52
 2012	KS	Helium	Royalties	3.73
+2012	KY	Coal	Rents	21789.00
 2012	KY	Oil & Gas	Rents	5942.00
 2012	KY	Gas	Royalties	75283.31
 2012	KY	Oil	Royalties	171818.71
 2012	KY	Oil & Gas	Other Revenues	7826.33
-2012	KY	NGL	Royalties	538.08
-2012	KY	Coal	Rents	21789.00
 2012	KY	Coal	Royalties	1329238.93
+2012	KY	NGL	Royalties	538.08
 2012	LA	Gas	Royalties	7851114.81
-2012	LA	Oil	Royalties	4495004.95
+2012	LA	Oil	Royalties	4495021.60
 2012	LA	Oil & Gas	Bonus	4129284.72
-2012	LA	Oil & Gas	Other Revenues	8330.36
-2012	LA	Oil & Gas	Other Royalties	367849.78
+2012	LA	Oil & Gas	Other Revenues	376180.14
 2012	LA	Oil & Gas	Rents	351766.53
 2012	LA	NGL	Royalties	1230425.66
-2012	LA	Oil	Other Royalties	16.65
 2012	MD	Oil & Gas	Other Revenues	5697.43
 2012	MD	Oil & Gas	Rents	496.00
 2012	MI	Oil & Gas	Rents	95258.50
 2012	MI	Gas	Royalties	986601.68
 2012	MI	Oil	Royalties	412453.72
-2012	MI	Oil & Gas	Other Revenues	281.89
-2012	MI	Oil & Gas	Other Royalties	-1001.33
-2012	MI	NGL	Royalties	-111127.45
-2012	MI	NGL	Other Royalties	1985.30
 2012	MI	Hardrock	Rents	923.00
-2012	MN	Hardrock	Bonus	30.00
+2012	MI	Oil & Gas	Other Revenues	-719.44
+2012	MI	NGL	Royalties	-109142.15
 2012	MN	Copper	Other Revenues	26110.00
 2012	MN	Hardrock	Other Revenues	22550.00
 2012	MN	Hardrock	Rents	9901.00
+2012	MN	Hardrock	Bonus	30.00
 2012	MO	Hardrock	Other Revenues	16197.00
-2012	MO	Hardrock	Rents	700.00
 2012	MO	Copper Concentrate	Royalties	1588286.15
-2012	MO	Lead Concentrate	Royalties	8484118.40
-2012	MO	Zinc Concentrate	Royalties	1447210.00
+2012	MO	Lead Concentrate	Royalties	8484118.41
+2012	MO	Zinc Concentrate	Royalties	1447209.99
+2012	MO	Hardrock	Rents	700.00
 2012	MS	Oil & Gas	Rents	829154.84
 2012	MS	Oil	Royalties	3799127.98
 2012	MS	Gas	Royalties	190967.48
 2012	MS	Oil & Gas	Bonus	4690267.00
-2012	MS	Oil & Gas	Other Royalties	-2399.99
-2012	MS	Oil & Gas	Other Revenues	483.00
+2012	MS	Oil & Gas	Other Revenues	-1916.99
 2012	MT	Oil & Gas	Rents	2251290.91
-2012	MT	Oil & Gas	Other Revenues	286108.81
-2012	MT	Oil & Gas	Other Royalties	81335.25
+2012	MT	Phosphate	Rents	1409.00
+2012	MT	Oil & Gas	Other Revenues	367444.06
+2012	MT	Coal	Rents	142821.00
+2012	MT	Coal	Royalties	44121466.05
 2012	MT	Gas	Royalties	4372522.80
 2012	MT	Oil	Royalties	26589350.21
 2012	MT	Oil & Gas	Bonus	7020543.75
 2012	MT	NGL	Royalties	209936.84
+2012	MT	Sulfur	Royalties	4657.08
+2012	MT	Hardrock	Rents	-3259.00
 2012	MT	Coal	Bonus	10650000.00
 2012	MT	Coal	Other Revenues	1523323.87
-2012	MT	Coal	Rents	142821.00
-2012	MT	Hardrock	Rents	-3259.00
-2012	MT	Phosphate	Rents	1409.00
-2012	MT	Coal	Royalties	44121466.05
-2012	MT	Sulfur	Royalties	4657.08
 2012	NC	Hardrock	Rents	158.00
 2012	ND	Oil & Gas	Bonus	44285659.00
-2012	ND	Oil & Gas	Other Revenues	30753.42
-2012	ND	Oil & Gas	Other Royalties	2450862.16
+2012	ND	Oil & Gas	Other Revenues	2481615.58
+2012	ND	Hardrock	Rents	2726.00
 2012	ND	Oil & Gas	Rents	1004060.12
 2012	ND	Gas	Royalties	5429489.15
 2012	ND	NGL	Royalties	1517103.16
 2012	ND	Oil	Royalties	138452652.79
 2012	ND	Coal	Rents	29364.00
-2012	ND	Hardrock	Rents	2726.00
 2012	ND	Coal	Royalties	1412093.36
 2012	ND	Leonardite	Royalties	20100.83
 2012	NE	Oil & Gas	Other Revenues	35903.88
@@ -2693,21 +2458,13 @@ Year	Region	Commodity	Type	Revenue
 2012	NM	Oil & Gas	Rents	2218652.83
 2012	NM	Oil & Gas	Bonus	77118488.00
 2012	NM	Gas	Other Revenues	-0.01
-2012	NM	Oil & Gas	Other Revenues	512428.41
-2012	NM	Oil & Gas	Other Royalties	-1897576.77
-2012	NM	NGL	Royalties	121934216.09
-2012	NM	NGL	Other Royalties	-86.75
-2012	NM	Potassium	Bonus	2334568.00
+2012	NM	Oil & Gas	Other Revenues	-1385148.36
+2012	NM	NGL	Royalties	121934129.34
 2012	NM	Geothermal	Other Revenues	2892.23
+2012	NM	Potassium	Bonus	2334568.00
 2012	NM	Potassium	Other Revenues	328757.62
-2012	NM	Sodium	Other Revenues	120.00
-2012	NM	Coal	Other Royalties	71304.03
-2012	NM	Coal	Rents	76341.00
-2012	NM	Geothermal	Rents	13145.00
 2012	NM	Potassium	Rents	79645.25
 2012	NM	Sodium	Rents	1120.00
-2012	NM	Coal	Royalties	15455162.21
-2012	NM	Carbon Dioxide Gas	Royalties	1486259.15
 2012	NM	Langbeinite	Royalties	10943964.43
 2012	NM	Muriate Of Potash-Granular	Royalties	8426159.34
 2012	NM	Muriate Of Potash-Standard	Royalties	2349048.53
@@ -2715,33 +2472,37 @@ Year	Region	Commodity	Type	Revenue
 2012	NM	Salt	Royalties	299029.62
 2012	NM	Sulfur	Royalties	-0.16
 2012	NM	Sylvite-Raw Ore	Royalties	1614.95
-2012	NV	Oil & Gas	Rents	6703483.00
-2012	NV	Oil & Gas	Bonus	4909442.50
-2012	NV	Oil	Royalties	3980598.73
-2012	NV	Oil & Gas	Other Revenues	1253.16
-2012	NV	Oil & Gas	Other Royalties	-2905.00
+2012	NM	Carbon Dioxide Gas	Royalties	1486259.14
+2012	NM	Geothermal	Rents	13145.00
+2012	NM	Sodium	Other Revenues	120.00
+2012	NM	Coal	Rents	76341.00
+2012	NM	Coal	Other Revenues	71304.03
+2012	NM	Coal	Royalties	15455162.21
 2012	NV	Geothermal	Bonus	55430.00
 2012	NV	Geothermal	Other Revenues	10407.84
 2012	NV	Geothermal	Rents	1942456.00
-2012	NV	Potassium	Rents	2501.00
+2012	NV	Oil & Gas	Rents	6703483.00
 2012	NV	Geothermal	Royalties	2527924.42
+2012	NV	Oil & Gas	Bonus	4909442.50
+2012	NV	Potassium	Rents	2501.00
+2012	NV	Oil	Royalties	3980598.73
+2012	NV	Oil & Gas	Other Revenues	-1651.84
 2012	NY	Gas	Royalties	4468.71
 2012	OH	Gas	Royalties	194258.63
 2012	OH	Oil	Royalties	285827.14
 2012	OH	Oil & Gas	Rents	37058.00
 2012	OH	Oil & Gas	Other Revenues	4046.26
 2012	OK	Oil & Gas	Bonus	5608080.00
-2012	OK	Oil & Gas	Other Royalties	300458.77
+2012	OK	Oil & Gas	Other Revenues	305619.71
 2012	OK	Oil & Gas	Rents	358238.75
 2012	OK	Gas	Royalties	4880673.41
 2012	OK	NGL	Royalties	1710869.51
 2012	OK	Oil	Royalties	3456171.05
-2012	OK	Oil & Gas	Other Revenues	5160.94
 2012	OK	Oil & Gas	Royalties	0.54
 2012	OK	Coal	Rents	34113.00
 2012	OK	Coal	Royalties	691834.24
-2012	OR	Oil & Gas	Rents	427987.00
 2012	OR	Geothermal	Rents	253422.00
+2012	OR	Oil & Gas	Rents	427987.00
 2012	PA	Oil & Gas	Other Revenues	23572.48
 2012	PA	Gas	Royalties	71102.98
 2012	PA	NGL	Royalties	322.67
@@ -2751,105 +2512,96 @@ Year	Region	Commodity	Type	Revenue
 2012	SD	Oil & Gas	Rents	167034.50
 2012	SD	Oil	Royalties	2047914.23
 2012	SD	Oil & Gas	Bonus	1325016.00
-2012	SD	Oil & Gas	Other Revenues	3275.81
-2012	SD	Oil & Gas	Other Royalties	-327.00
+2012	SD	Oil & Gas	Other Revenues	2948.81
 2012	SD	Gas	Royalties	44862.95
 2012	TX	Oil	Royalties	4735203.87
 2012	TX	Oil & Gas	Bonus	2944495.00
 2012	TX	Oil & Gas	Rents	421108.48
 2012	TX	Gas	Royalties	20373295.77
-2012	TX	Oil & Gas	Other Royalties	174380.32
-2012	TX	Oil & Gas	Other Revenues	22727.15
+2012	TX	Oil & Gas	Other Revenues	197107.47
 2012	TX	NGL	Royalties	455171.76
+2012	UT	Geothermal	Rents	391513.00
 2012	UT	Oil & Gas	Rents	4119130.62
+2012	UT	Geothermal	Royalties	293927.22
 2012	UT	Oil & Gas	Bonus	50119492.00
-2012	UT	Oil & Gas	Other Revenues	739485.04
-2012	UT	Oil & Gas	Other Royalties	-3156140.43
+2012	UT	Coal	Other Revenues	174485.88
+2012	UT	Oil & Gas	Other Revenues	-2416655.39
+2012	UT	Coal	Rents	257105.60
+2012	UT	Coal	Royalties	37186454.34
 2012	UT	Gas	Royalties	92482070.08
 2012	UT	Oil	Royalties	121098760.89
-2012	UT	NGL	Royalties	33235428.97
-2012	UT	Oil Shale	Rents	320.00
-2012	UT	Coal	Bonus	40320.00
-2012	UT	Clay	Other Revenues	462.00
-2012	UT	Coal	Other Revenues	174485.88
-2012	UT	Gilsonite	Other Revenues	-1533.00
-2012	UT	Phosphate	Other Revenues	24942.00
-2012	UT	Potassium	Other Revenues	-688.00
-2012	UT	Clay	Rents	-6.00
-2012	UT	Coal	Rents	257105.60
-2012	UT	Geothermal	Rents	391513.00
-2012	UT	Gilsonite	Rents	-3201.50
-2012	UT	Potassium	Rents	82623.50
-2012	UT	Coal	Royalties	37186454.34
-2012	UT	Geothermal	Royalties	293927.22
 2012	UT	Carbon Dioxide Gas	Royalties	50036.18
+2012	UT	NGL	Royalties	33235428.97
+2012	UT	Coal	Bonus	40320.00
+2012	UT	Potassium	Other Revenues	-688.00
+2012	UT	Potassium	Rents	82623.50
+2012	UT	Clay	Other Revenues	462.00
+2012	UT	Clay	Rents	-6.00
 2012	UT	Clay	Royalties	4185.31
-2012	UT	Gilsonite	Royalties	3405726.50
 2012	UT	Magnesium Chloride Brine	Royalties	37623.64
 2012	UT	Manure Salts	Royalties	1907.52
 2012	UT	Potash	Royalties	320732.57
 2012	UT	Salt	Royalties	3576.93
+2012	UT	Gilsonite	Other Revenues	-1533.00
+2012	UT	Phosphate	Other Revenues	24942.00
+2012	UT	Gilsonite	Rents	-3201.50
+2012	UT	Oil Shale	Rents	320.00
+2012	UT	Gilsonite	Royalties	3405726.50
 2012	VA	Oil & Gas	Bonus	11572.00
 2012	VA	Oil & Gas	Rents	18807.50
 2012	VA	Gas	Royalties	39176.17
-2012	VA	Oil & Gas	Other Revenues	4919.50
 2012	VA	Hardrock	Rents	355.00
 2012	VA	Limestone	Royalties	128426.76
+2012	VA	Oil & Gas	Other Revenues	4919.50
 2012	WA	Oil & Gas	Rents	9555.50
 2012	WA	Coal	Rents	1566.00
-2012	WV	Oil & Gas	Other Revenues	227506.65
+2012	WV	Oil & Gas	Other Revenues	228256.65
 2012	WV	Oil & Gas	Rents	94104.00
 2012	WV	Gas	Royalties	149433.71
-2012	WV	Oil & Gas	Other Royalties	750.00
 2012	WV	Oil	Royalties	0.62
 2012	WY	Oil & Gas	Bonus	45532883.01
-2012	WY	Oil & Gas	Other Revenues	889828.98
-2012	WY	Oil & Gas	Other Royalties	-4566139.15
+2012	WY	Oil & Gas	Other Revenues	-3676310.18
 2012	WY	Oil & Gas	Rents	13079775.12
 2012	WY	Gas	Royalties	360466762.12
 2012	WY	Oil	Royalties	329958603.28
 2012	WY	NGL	Royalties	132172213.43
 2012	WY	Coal	Bonus	544361060.43
-2012	WY	Coal	Other Revenues	3240665.03
-2012	WY	Sodium	Other Revenues	92376.00
 2012	WY	Coal	Rents	595983.93
-2012	WY	Sodium	Rents	15777.00
 2012	WY	Coal	Royalties	623812763.53
-2012	WY	Carbon Dioxide Gas	Royalties	656148.07
-2012	WY	Purge Liquor	Royalties	182763.31
+2012	WY	Coal	Other Revenues	3240665.03
+2012	WY	Sulfur	Royalties	2025396.59
 2012	WY	Salt	Royalties	2374.47
+2012	WY	Carbon Dioxide Gas	Royalties	656148.07
+2012	WY	Sodium	Other Revenues	92376.00
+2012	WY	Sodium	Rents	15777.00
+2012	WY	Purge Liquor	Royalties	182763.31
 2012	WY	Soda Ash	Royalties	38532552.45
 2012	WY	Sodium Bi-Carbonate	Royalties	680297.59
 2012	WY	Sodium Bisulfite	Royalties	281.17
 2012	WY	Sodium Sesquicarbonate	Royalties	1162130.74
 2012	WY	Sulfide	Royalties	271163.13
-2012	WY	Sulfur	Royalties	2025396.59
 2012	WY	Trona Ore	Royalties	501657.01
-2013	AK	Oil & Gas	Other Revenues	182402.71
-2013	AK	Gas	Other Royalties	-4658.55
-2013	AK	Oil & Gas	Other Royalties	-251482.74
+2013	AK	Oil & Gas	Other Revenues	-69080.03
+2013	AK	Geothermal	Rents	7680.00
 2013	AK	Oil & Gas	Rents	5322862.49
-2013	AK	Gas	Royalties	6988259.54
+2013	AK	Gas	Royalties	6983600.99
 2013	AK	Oil	Royalties	6598210.68
 2013	AK	Oil & Gas	Bonus	1058899.00
-2013	AK	Geothermal	Rents	7680.00
-2013	AL	Oil & Gas	Other Revenues	14.43
-2013	AL	Oil & Gas	Other Royalties	-4861.58
+2013	AL	Oil & Gas	Other Revenues	-4847.15
 2013	AL	Gas	Royalties	196400.53
 2013	AL	NGL	Royalties	4106.86
 2013	AL	Oil	Royalties	318163.13
-2013	AL	Oil & Gas	Rents	132265.00
+2013	AL	Sulfur	Royalties	2679.68
 2013	AL	Hardrock	Other Revenues	-615.00
+2013	AL	Oil & Gas	Rents	132265.00
 2013	AL	Coal	Rents	13254.00
 2013	AL	Coal	Royalties	3677302.59
-2013	AL	Sulfur	Royalties	2679.68
-2013	AR	Oil & Gas	Other Revenues	20066.86
-2013	AR	Oil & Gas	Other Royalties	-43532.16
+2013	AR	Oil & Gas	Other Revenues	-23465.30
 2013	AR	Gas	Royalties	5083889.58
 2013	AR	Oil	Royalties	7.87
 2013	AR	Oil & Gas	Rents	481258.00
-2013	AR	Oil & Gas	Bonus	25000.00
 2013	AR	Hardrock	Other Revenues	1369.55
+2013	AR	Oil & Gas	Bonus	25000.00
 2013	AR	Hardrock	Rents	-100.00
 2013	AR	Quartz Crystal	Royalties	4.45
 2013	AZ	Oil & Gas	Rents	35167.00
@@ -2858,14 +2610,13 @@ Year	Region	Commodity	Type	Revenue
 2013	CA	Gas	Royalties	2872588.57
 2013	CA	Oil	Royalties	183762630.38
 2013	CA	Oil & Gas	Bonus	190982.00
-2013	CA	Oil & Gas	Other Revenues	14122.45
-2013	CA	Oil & Gas	Other Royalties	-203500.00
+2013	CA	Oil & Gas	Other Revenues	-189377.55
 2013	CA	Oil & Gas	Rents	278357.50
-2013	CA	NGL	Royalties	1711449.96
 2013	CA	Geothermal	Rents	165028.00
+2013	CA	Geothermal	Royalties	9306460.38
+2013	CA	NGL	Royalties	1711449.96
 2013	CA	Hardrock	Rents	105.00
 2013	CA	Sodium	Rents	2532.50
-2013	CA	Geothermal	Royalties	9306460.38
 2013	CA	Anhydrous Sodium Sulfate	Royalties	446414.04
 2013	CA	Borax-Decahydrate	Royalties	840118.62
 2013	CA	Borax-Pentahydrate	Royalties	1303076.65
@@ -2874,104 +2625,95 @@ Year	Region	Commodity	Type	Revenue
 2013	CA	Soda Ash	Royalties	4837510.47
 2013	CA	Sodium Bi-Carbonate	Royalties	163407.55
 2013	CO	Oil & Gas	Rents	4221688.66
-2013	CO	Oil & Gas	Other Revenues	313498.84
+2013	CO	Oil & Gas	Other Revenues	495831.46
 2013	CO	Oil	Royalties	47276400.22
-2013	CO	Oil & Gas	Other Royalties	182332.62
 2013	CO	Gas	Royalties	104880815.01
 2013	CO	Oil & Gas	Bonus	3131195.50
 2013	CO	NGL	Royalties	48063554.99
-2013	CO	Oil Shale	Rents	1556.00
-2013	CO	Coal	Bonus	2069201.35
-2013	CO	Coal	Other Revenues	332429.10
-2013	CO	Sodium	Other Revenues	29319.00
-2013	CO	Coal	Other Royalties	-13744.20
-2013	CO	Coal	Rents	64323.78
 2013	CO	Geothermal	Rents	28262.00
-2013	CO	Potassium	Rents	8720.00
-2013	CO	Sodium	Rents	-11841.00
+2013	CO	Helium	Royalties	66.23
+2013	CO	Coal	Bonus	2069201.35
+2013	CO	Coal	Rents	64323.78
 2013	CO	Coal	Royalties	26242242.20
 2013	CO	Carbon Dioxide Gas	Royalties	61659766.89
-2013	CO	Helium	Royalties	66.23
+2013	CO	Coal	Other Revenues	318684.90
+2013	CO	Sodium	Other Revenues	29319.00
+2013	CO	Oil Shale	Rents	1556.00
+2013	CO	Sodium	Rents	-11841.00
 2013	CO	Sodium Bi-Carbonate	Royalties	1088703.02
+2013	CO	Potassium	Rents	8720.00
 2013	FL	Phosphate	Other Revenues	989.00
 2013	FL	Phosphate Raw Ore	Royalties	285731.37
-2013	ID	Oil & Gas	Rents	8274.00
 2013	ID	Phosphate	Other Revenues	113544.00
-2013	ID	Geothermal	Rents	160841.00
-2013	ID	Hardrock	Rents	40.00
 2013	ID	Phosphate	Rents	18.00
+2013	ID	Geothermal	Rents	160841.00
+2013	ID	Oil & Gas	Rents	8274.00
+2013	ID	Phosphate Raw Ore	Royalties	9817743.38
 2013	ID	Hardrock	Royalties	3.28
 2013	ID	Gold	Royalties	363.09
-2013	ID	Phosphate Raw Ore	Royalties	9817743.38
 2013	ID	Silver	Royalties	2.35
+2013	ID	Hardrock	Rents	40.00
 2013	IL	Oil	Royalties	302424.64
 2013	IN	Oil & Gas	Rents	12833.00
 2013	IN	Oil & Gas	Other Revenues	13037.54
 2013	IN	Oil	Royalties	17820.38
 2013	KS	Oil & Gas	Rents	43178.00
 2013	KS	Oil & Gas	Bonus	24000.00
-2013	KS	Oil & Gas	Other Royalties	-47245.50
+2013	KS	Oil & Gas	Other Revenues	-34647.24
 2013	KS	Gas	Royalties	2385710.79
 2013	KS	Oil	Royalties	2628624.21
-2013	KS	Oil & Gas	Other Revenues	12598.26
 2013	KS	NGL	Royalties	704648.42
 2013	KS	Helium	Royalties	-0.22
-2013	KY	Oil & Gas	Other Revenues	40567.24
-2013	KY	Oil & Gas	Other Royalties	4905.00
+2013	KY	Coal	Rents	8659.50
+2013	KY	Oil & Gas	Other Revenues	45472.24
 2013	KY	Gas	Royalties	46424.20
 2013	KY	Oil	Royalties	160773.22
 2013	KY	NGL	Royalties	-0.04
-2013	KY	Oil & Gas	Rents	5754.00
-2013	KY	Coal	Rents	8659.50
 2013	KY	Coal	Royalties	1499102.72
+2013	KY	Oil & Gas	Rents	5754.00
 2013	LA	Gas	Royalties	8480335.47
 2013	LA	Oil	Royalties	4128046.98
-2013	LA	Oil & Gas	Other Royalties	-10841.05
+2013	LA	Oil & Gas	Other Revenues	-10168.69
 2013	LA	Oil & Gas	Rents	374637.99
 2013	LA	NGL	Royalties	912124.92
 2013	LA	Oil & Gas	Bonus	-21202.00
-2013	LA	Oil & Gas	Other Revenues	672.36
 2013	MD	Oil & Gas	Other Revenues	7035.88
 2013	MD	Oil & Gas	Rents	496.00
 2013	MI	Oil & Gas	Rents	138963.33
 2013	MI	Gas	Royalties	649576.53
 2013	MI	Oil & Gas	Bonus	277614.00
 2013	MI	Oil	Royalties	372243.04
-2013	MI	Oil & Gas	Other Revenues	1404.40
+2013	MI	Oil & Gas	Other Revenues	3359.40
 2013	MI	NGL	Royalties	57279.45
-2013	MI	Oil & Gas	Other Royalties	1955.00
 2013	MN	Copper	Other Revenues	26110.00
 2013	MN	Hardrock	Other Revenues	22550.00
 2013	MN	Copper	Rents	-2611.00
 2013	MN	Hardrock	Rents	19571.00
 2013	MO	Hardrock	Other Revenues	16197.00
-2013	MO	Hardrock	Rents	700.00
 2013	MO	Copper Concentrate	Royalties	1316533.35
 2013	MO	Lead Concentrate	Royalties	7330636.82
 2013	MO	Zinc Concentrate	Royalties	699078.75
+2013	MO	Hardrock	Rents	700.00
 2013	MS	Oil & Gas	Bonus	333880.00
 2013	MS	Oil & Gas	Rents	732154.00
 2013	MS	Oil	Royalties	4759241.28
 2013	MS	Gas	Royalties	274220.31
-2013	MS	Oil & Gas	Other Revenues	483.00
-2013	MS	Oil & Gas	Other Royalties	-4200.00
+2013	MS	Oil & Gas	Other Revenues	-3717.00
+2013	MT	Phosphate	Other Revenues	2818.00
 2013	MT	Oil & Gas	Rents	1878653.77
-2013	MT	Oil & Gas	Other Revenues	345236.04
-2013	MT	Oil & Gas	Other Royalties	-153686.87
+2013	MT	Phosphate	Rents	-4227.00
+2013	MT	Oil & Gas	Other Revenues	191549.17
+2013	MT	Coal	Rents	111696.00
+2013	MT	Coal	Royalties	44889477.56
 2013	MT	Gas	Royalties	4573178.49
 2013	MT	Oil	Royalties	25245245.64
 2013	MT	NGL	Royalties	47535.98
-2013	MT	Oil & Gas	Bonus	552566.75
-2013	MT	Phosphate	Other Revenues	2818.00
-2013	MT	Coal	Rents	111696.00
-2013	MT	Hardrock	Rents	20.00
-2013	MT	Phosphate	Rents	-4227.00
-2013	MT	Coal	Royalties	44889477.56
 2013	MT	Sulfur	Royalties	5314.96
+2013	MT	Oil & Gas	Bonus	552566.75
+2013	MT	Hardrock	Rents	20.00
 2013	NC	Hardrock	Other Revenues	474.00
 2013	NC	Hardrock	Rents	-316.00
-2013	ND	Oil & Gas	Other Revenues	74224.93
-2013	ND	Oil & Gas	Other Royalties	148783.08
+2013	ND	Oil & Gas	Other Revenues	223008.01
 2013	ND	Oil & Gas	Rents	911698.14
 2013	ND	Gas	Royalties	7716684.54
 2013	ND	NGL	Royalties	2172657.75
@@ -2989,55 +2731,51 @@ Year	Region	Commodity	Type	Revenue
 2013	NM	Oil	Royalties	568253428.80
 2013	NM	Oil & Gas	Rents	2052419.13
 2013	NM	Oil & Gas	Bonus	55792554.00
-2013	NM	Oil & Gas	Other Revenues	741191.49
-2013	NM	Oil & Gas	Other Royalties	6975547.10
+2013	NM	Oil & Gas	Other Revenues	7716738.58
 2013	NM	NGL	Royalties	90428259.67
 2013	NM	Geothermal	Bonus	82500.00
-2013	NM	Potassium	Bonus	504944.00
 2013	NM	Geothermal	Other Revenues	5607.81
+2013	NM	Geothermal	Rents	55235.00
+2013	NM	Potassium	Bonus	504944.00
 2013	NM	Potassium	Other Revenues	343095.00
 2013	NM	Sodium	Other Revenues	-9240.00
-2013	NM	Coal	Other Royalties	25449.02
-2013	NM	Coal	Rents	76314.00
-2013	NM	Geothermal	Rents	55235.00
 2013	NM	Potassium	Rents	-25543.50
 2013	NM	Sodium	Rents	-2920.00
-2013	NM	Coal	Royalties	14827533.41
-2013	NM	Carbon Dioxide Gas	Royalties	1535253.91
 2013	NM	Langbeinite	Royalties	10026132.55
 2013	NM	Muriate Of Potash-Granular	Royalties	4507770.64
 2013	NM	Muriate Of Potash-Standard	Royalties	1672238.86
 2013	NM	Potash	Royalties	4218246.05
 2013	NM	Salt	Royalties	479907.97
 2013	NM	Sylvite-Raw Ore	Royalties	1513.19
-2013	NV	Oil & Gas	Rents	5806356.51
-2013	NV	Oil & Gas	Bonus	1989254.00
-2013	NV	Oil	Royalties	3613728.95
-2013	NV	Oil & Gas	Other Revenues	2262.13
-2013	NV	Oil & Gas	Other Royalties	-928.31
+2013	NM	Carbon Dioxide Gas	Royalties	1535253.91
+2013	NM	Coal	Rents	76314.00
+2013	NM	Coal	Other Revenues	25449.02
+2013	NM	Coal	Royalties	14827533.41
 2013	NV	Geothermal	Bonus	13844.00
 2013	NV	Geothermal	Other Revenues	7572.52
-2013	NV	Geothermal	Rents	1555646.00
-2013	NV	Potassium	Rents	2501.00
+2013	NV	Geothermal	Rents	1555646.01
+2013	NV	Oil & Gas	Rents	5806356.51
 2013	NV	Geothermal	Royalties	2730744.40
+2013	NV	Oil & Gas	Bonus	1989254.00
+2013	NV	Potassium	Rents	2501.00
+2013	NV	Oil	Royalties	3613728.95
+2013	NV	Oil & Gas	Other Revenues	1333.82
 2013	NY	Gas	Royalties	5222.81
 2013	OH	Gas	Royalties	211525.83
 2013	OH	Oil	Royalties	235422.98
 2013	OH	Oil & Gas	Rents	17323.77
-2013	OH	Oil & Gas	Other Royalties	4676.00
-2013	OH	Oil & Gas	Other Revenues	14242.68
+2013	OH	Oil & Gas	Other Revenues	18918.68
 2013	OK	Oil & Gas	Bonus	1316388.00
-2013	OK	Oil & Gas	Other Royalties	-122021.58
+2013	OK	Oil & Gas	Other Revenues	-118301.22
 2013	OK	Oil & Gas	Rents	351924.85
 2013	OK	Gas	Royalties	5189665.61
 2013	OK	NGL	Royalties	564485.76
 2013	OK	Oil	Royalties	4998979.90
-2013	OK	Oil & Gas	Other Revenues	3720.36
 2013	OK	Coal	Rents	34113.00
 2013	OK	Coal	Royalties	962180.33
 2013	OK	Helium	Royalties	1.20
-2013	OR	Oil & Gas	Rents	377474.00
 2013	OR	Geothermal	Rents	238862.00
+2013	OR	Oil & Gas	Rents	377474.00
 2013	PA	Oil & Gas	Other Revenues	53529.94
 2013	PA	Gas	Royalties	10156.88
 2013	PA	NGL	Royalties	2093.58
@@ -3049,363 +2787,233 @@ Year	Region	Commodity	Type	Revenue
 2013	SD	Oil & Gas	Other Revenues	3767.30
 2013	SD	Gas	Royalties	47288.28
 2013	TX	Oil	Royalties	3167054.00
-2013	TX	Oil & Gas	Other Revenues	41371.90
+2013	TX	Oil & Gas	Other Revenues	111205.76
 2013	TX	Gas	Royalties	20999759.72
 2013	TX	Oil & Gas	Rents	444939.38
-2013	TX	Oil & Gas	Other Royalties	69833.86
 2013	TX	NGL	Royalties	258039.15
 2013	TX	Oil & Gas	Bonus	6162995.00
+2013	UT	Geothermal	Rents	367606.00
 2013	UT	Oil & Gas	Rents	3104058.08
+2013	UT	Geothermal	Royalties	303753.38
 2013	UT	Oil & Gas	Bonus	6144252.00
-2013	UT	Oil & Gas	Other Revenues	735747.03
-2013	UT	Oil & Gas	Other Royalties	1472344.85
+2013	UT	Coal	Other Revenues	2495.50
+2013	UT	Oil & Gas	Other Revenues	2208091.88
+2013	UT	Coal	Rents	211455.21
+2013	UT	Coal	Royalties	39455178.73
 2013	UT	Gas	Royalties	104952255.46
 2013	UT	NGL	Royalties	27466174.21
 2013	UT	Oil	Royalties	130370575.67
-2013	UT	Oil Shale	Rents	320.00
-2013	UT	Coal	Bonus	40320.00
-2013	UT	Clay	Other Revenues	942.00
-2013	UT	Coal	Other Revenues	2495.50
-2013	UT	Gilsonite	Other Revenues	4191.00
-2013	UT	Phosphate	Other Revenues	31920.00
-2013	UT	Potassium	Other Revenues	22528.00
-2013	UT	Clay	Rents	314.00
-2013	UT	Coal	Rents	211455.20
-2013	UT	Geothermal	Rents	367606.00
-2013	UT	Gilsonite	Rents	1826.50
-2013	UT	Phosphate	Rents	-7560.00
-2013	UT	Potassium	Rents	91694.50
-2013	UT	Coal	Royalties	39455178.73
-2013	UT	Geothermal	Royalties	303753.38
 2013	UT	Carbon Dioxide Gas	Royalties	24861.78
+2013	UT	Coal	Bonus	40320.00
+2013	UT	Potassium	Other Revenues	22528.00
+2013	UT	Potassium	Rents	91694.50
+2013	UT	Clay	Other Revenues	942.00
+2013	UT	Clay	Rents	314.00
 2013	UT	Clay	Royalties	4144.61
-2013	UT	Gilsonite	Royalties	2895810.09
 2013	UT	Magnesium Chloride Brine	Royalties	53547.59
 2013	UT	Potash	Royalties	329712.15
 2013	UT	Salt	Royalties	3105.48
+2013	UT	Gilsonite	Other Revenues	4191.00
+2013	UT	Phosphate	Other Revenues	31920.00
+2013	UT	Gilsonite	Rents	1826.50
+2013	UT	Oil Shale	Rents	320.00
+2013	UT	Gilsonite	Royalties	2895810.09
+2013	UT	Phosphate	Rents	-7560.00
 2013	VA	Oil & Gas	Other Revenues	10376.10
 2013	VA	Oil & Gas	Rents	20991.00
 2013	VA	Gas	Royalties	55416.50
-2013	VA	Oil	Royalties	91.93
 2013	VA	Hardrock	Other Revenues	-2130.00
 2013	VA	Hardrock	Rents	-710.00
 2013	VA	Limestone	Royalties	60702.52
+2013	VA	Oil	Royalties	91.93
 2013	WA	Coal	Rents	2406.00
 2013	WA	Geothermal	Rents	8437.00
-2013	WV	Oil & Gas	Other Revenues	410896.27
+2013	WV	Oil & Gas	Other Revenues	394396.27
 2013	WV	Gas	Royalties	71158.95
 2013	WV	Oil & Gas	Rents	82744.00
-2013	WV	Oil & Gas	Other Royalties	-16500.00
-2013	WY	Oil & Gas	Other Royalties	2213780.09
+2013	WY	Oil & Gas	Other Revenues	3637039.05
 2013	WY	Oil & Gas	Rents	12156742.96
 2013	WY	Gas	Royalties	500511207.09
 2013	WY	Oil	Royalties	341686585.41
 2013	WY	Oil & Gas	Bonus	42415725.00
-2013	WY	Oil & Gas	Other Revenues	1423258.95
-2013	WY	NGL	Royalties	59983560.24
-2013	WY	NGL	Other Royalties	6723.77
+2013	WY	NGL	Royalties	59990284.01
 2013	WY	Coal	Bonus	457930360.44
 2013	WY	Coal	Other Revenues	3587620.43
-2013	WY	Sodium	Other Revenues	25024.98
 2013	WY	Coal	Rents	603037.53
-2013	WY	Sodium	Rents	39715.00
 2013	WY	Coal	Royalties	534226397.09
 2013	WY	Carbon Dioxide Gas	Royalties	306677.66
-2013	WY	Purge Liquor	Royalties	195962.63
+2013	WY	Sulfur	Royalties	476174.84
 2013	WY	Salt	Royalties	2644.29
+2013	WY	Sodium	Other Revenues	25024.98
+2013	WY	Sodium	Rents	39715.00
+2013	WY	Purge Liquor	Royalties	195962.63
 2013	WY	Soda Ash	Royalties	39052238.53
 2013	WY	Sodium Bi-Carbonate	Royalties	696294.58
 2013	WY	Sodium Sesquicarbonate	Royalties	1083657.47
 2013	WY	Sulfide	Royalties	462235.38
-2013	WY	Sulfur	Royalties	476174.84
 2013	WY	Trona Ore	Royalties	719916.39
-2004	BFT	Oil & Gas	Bonus	8034909.00
-2004	BFT	Oil & Gas	Rents	1092381.00
-2004	BFT	Oil	Royalties	29343329.28
-2004	CGM	Oil & Gas	Bonus	364024583.00
-2004	CGM	Oil & Gas	Rents	117765267.07
-2004	CGM	Oil & Gas	Other Revenue	-5166697.22
-2004	CGM	Gas	Royalties	2358144879.38
-2004	CGM	NGL	Royalties	142680603.77
-2004	CGM	Oil	Royalties	1031425873.05
-2004	CGM	Other	Royalties	20883.00
-2004	GUL	Sulfur	Other Revenue	22221.06
-2004	EGM	Oil & Gas	Rents	6527035.22
-2004	EGM	Oil & Gas	Bonus	8376765.00
-2004	EGM	Oil & Gas	Other Revenue	399000.00
-2004	EGM	Gas	Royalties	24450785.46
-2004	EGM	NGL	Royalties	113124.27
-2004	EGM	Oil	Royalties	5227.72
-2004	WGM	Oil & Gas	Bonus	169928999.00
-2004	WGM	Oil & Gas	Other Revenue	-1559665.11
-2004	WGM	Oil & Gas	Rents	91562264.50
-2004	WGM	Gas	Royalties	952608852.07
-2004	WGM	NGL	Royalties	15122835.33
-2004	WGM	Oil	Royalties	132700089.70
-2004	GUL	Oil & Gas	Other Revenue	0.01
-2004	GUL	Gas	Royalties	-28132646.40
-2004	SOC	Oil & Gas	Other Revenue	8574677.67
-2004	SOC	Oil & Gas	Rents	-49972.00
-2004	SOC	Gas	Royalties	27046120.62
-2004	SOC	NGL	Royalties	1474229.94
-2004	SOC	Oil	Royalties	126862012.82
-2004	SOC	Other	Royalties	14209.63
-2005	BFT	Oil & Gas	Bonus	46509729.00
-2005	BFT	Oil & Gas	Rents	1878656.75
-2005	BFT	Oil	Royalties	34471667.71
-2005	CGM	Oil & Gas	Bonus	341996593.00
-2005	CGM	Oil & Gas	Rents	123828478.32
-2005	CGM	Oil & Gas	Other Revenue	-2615613.08
-2005	CGM	Gas	Royalties	2349752471.83
-2005	CGM	NGL	Royalties	117160195.42
-2005	CGM	Oil	Royalties	1726905554.58
-2005	GUL	Sulfur	Other Revenue	10547.43
-2005	CGM	Other	Royalties	22007.88
-2005	EGM	Oil & Gas	Rents	6407477.71
-2005	EGM	Oil & Gas	Bonus	6501059.00
-2005	EGM	Oil & Gas	Other Revenue	-345720.00
-2005	EGM	Gas	Royalties	1360695.88
-2005	EGM	NGL	Royalties	7886.65
-2005	EGM	Oil	Royalties	95933.45
-2005	WGM	Oil & Gas	Other Revenue	4065232.35
-2005	WGM	Oil & Gas	Rents	80054499.50
-2005	WGM	Gas	Royalties	892181641.36
-2005	WGM	NGL	Royalties	24813971.54
-2005	WGM	Oil	Royalties	332624860.04
-2005	GUL	Gas	Royalties	-19340329.42
-2005	SOC	Oil & Gas	Other Revenue	-1013240.52
-2005	SOC	Gas	Royalties	31437272.94
-2005	SOC	NGL	Royalties	1654526.93
-2005	SOC	Oil	Royalties	177943152.14
-2005	SOC	Other	Royalties	14340.49
-2006	BFT	Oil & Gas	Rents	1877683.25
-2006	BFT	Oil	Royalties	40580284.16
-2006	CGM	Oil & Gas	Rents	119395849.74
-2006	CGM	Oil & Gas	Bonus	581820861.00
-2006	CGM	Oil & Gas	Other Revenue	-37480768.12
-2006	CGM	Gas	Royalties	2227236503.07
-2006	CGM	NGL	Royalties	129074678.20
-2006	CGM	Oil	Royalties	2809107965.89
-2006	GUL	Sulfur	Other Revenue	10838.00
-2006	CGM	Other	Royalties	13180.56
-2006	CGM	Oil & Gas	Royalties	-3.76
-2006	EGM	Oil & Gas	Rents	5239051.91
-2006	EGM	Oil & Gas	Other Revenue	-47000.00
-2006	EGM	Gas	Royalties	-385946.97
-2006	EGM	NGL	Royalties	-2712.45
-2006	EGM	Oil	Royalties	1737.22
-2006	WGM	Oil & Gas	Bonus	615392739.00
-2006	WGM	Oil & Gas	Other Revenue	-5227727.75
-2006	WGM	Oil & Gas	Rents	110387832.71
-2006	WGM	Gas	Royalties	785438099.95
-2006	WGM	NGL	Royalties	23139031.65
-2006	WGM	Oil	Royalties	565244312.35
-2006	GUL	Gas	Royalties	-10622983.51
-2006	SOC	Oil & Gas	Other Revenue	24333.65
-2006	SOC	Gas	Royalties	31785770.08
-2006	SOC	NGL	Royalties	841056.77
-2006	SOC	Oil	Royalties	217411888.40
-2006	SOC	Other	Royalties	6303.03
-2007	BFT	Oil & Gas	Bonus	41980133.00
-2007	BFT	Oil & Gas	Rents	2743548.00
-2007	BFT	Oil	Royalties	25711421.67
-2007	CGM	Oil & Gas	Rents	97399305.82
-2007	CGM	Oil & Gas	Bonus	291553076.00
-2007	CGM	Oil & Gas	Other Revenue	5412965.04
-2007	CGM	Oil	Royalties	2991844269.93
-2007	CGM	Gas	Royalties	1955064948.55
-2007	CGM	NGL	Royalties	194386333.52
-2007	GUL	Sulfur	Other Revenue	11624.84
-2007	CGM	Other	Royalties	3708.41
-2007	EGM	Oil & Gas	Rents	6081576.99
-2007	EGM	Gas	Royalties	19787073.23
-2007	EGM	Oil & Gas	Other Revenue	5321457.00
-2007	EGM	NGL	Royalties	-1383.33
-2007	EGM	Oil	Royalties	-932.55
-2007	WGM	Oil & Gas	Bonus	264527896.00
-2007	WGM	Oil & Gas	Other Revenue	8686256.19
-2007	WGM	Oil & Gas	Rents	93171924.13
-2007	WGM	Gas	Royalties	575651539.48
-2007	WGM	NGL	Royalties	27011533.01
-2007	WGM	Oil	Royalties	435322717.24
-2007	GUL	Gas	Royalties	-15241002.97
-2007	SOC	Oil & Gas	Other Revenue	-96759.41
-2007	SOC	Gas	Royalties	30262307.00
-2007	SOC	NGL	Royalties	968529.43
-2007	SOC	Oil	Royalties	230622767.47
-2007	SOC	Other	Royalties	32787.47
-2008	BFT	Oil & Gas	Rents	2685036.50
-2008	BFT	Oil	Royalties	79810964.75
-2008	CHU	Oil & Gas	Bonus	2662059483.00
-2008	CHU	Oil & Gas	Rents	2790705.00
-2008	CGM	Oil & Gas	Bonus	6174199603.00
-2008	CGM	Oil & Gas	Rents	135069003.80
-2008	CGM	Oil & Gas	Other Revenue	-17225839.42
-2008	CGM	Gas	Royalties	2071523503.48
-2008	CGM	NGL	Royalties	225923706.37
-2008	CGM	Oil	Royalties	3729878006.16
-2008	GUL	Sulfur	Other Revenue	12709.04
-2008	CGM	Other	Royalties	65625.39
-2008	EGM	Oil & Gas	Rents	7247395.31
-2008	EGM	Oil & Gas	Other Revenue	3239483.00
-2008	EGM	Gas	Royalties	142789916.11
-2008	EGM	Oil	Royalties	634391.56
-2008	EGM	Oil & Gas	Bonus	64713213.00
-2008	EGM	NGL	Royalties	-1278.34
-2008	WGM	Oil & Gas	Bonus	257788571.80
-2008	WGM	Oil & Gas	Other Revenue	-1635068.34
-2008	WGM	Oil & Gas	Rents	92307173.12
-2008	WGM	Gas	Royalties	602756261.13
-2008	WGM	NGL	Royalties	36810352.58
-2008	WGM	Oil	Royalties	498656389.00
-2008	GUL	Gas	Royalties	-15053958.12
-2008	SOC	Oil & Gas	Other Revenue	-2463169.11
-2008	SOC	Oil & Gas	Rents	18432.00
-2008	SOC	Gas	Royalties	32727187.98
-2008	SOC	NGL	Royalties	1750016.85
-2008	SOC	Oil	Royalties	373348210.06
-2008	SOC	Other	Royalties	209945.99
-2009	BFT	Oil & Gas	Rents	2709581.50
-2009	BFT	Oil	Royalties	17513389.03
-2009	CHU	Oil & Gas	Rents	4186057.50
-2009	NOA	Wind	Rents	68319.68
-2009	CGM	Oil & Gas	Rents	131202450.55
-2009	CGM	Oil & Gas	Bonus	690110358.00
-2009	CGM	Oil & Gas	Other Revenue	24911283.37
-2009	CGM	Gas	Royalties	683643896.18
-2009	CGM	NGL	Royalties	87295799.93
-2009	CGM	Oil	Royalties	1884591856.51
-2009	GUL	Sulfur	Other Revenue	12631.84
-2009	CGM	Other	Royalties	12425.40
-2009	EGM	Gas	Royalties	91932610.76
-2009	EGM	Oil	Royalties	414863.03
-2009	EGM	Oil & Gas	Other Revenue	-2860100.00
-2009	EGM	Oil & Gas	Rents	4133862.51
-2009	WGM	Oil & Gas	Bonus	358758653.20
-2009	WGM	Oil & Gas	Other Revenue	-4972376.60
-2009	WGM	Oil & Gas	Rents	88097391.50
-2009	WGM	Gas	Royalties	-10412797.45
-2009	WGM	NGL	Royalties	14957792.72
-2009	WGM	Oil	Royalties	262243271.59
-2009	GUL	Gas	Royalties	-6292220.39
-2009	SOC	Oil & Gas	Other Revenue	678504.46
-2009	SOC	Oil & Gas	Rents	-18432.00
-2009	SOC	Gas	Royalties	15412992.64
-2009	SOC	NGL	Royalties	1564916.22
-2009	SOC	Oil	Royalties	181701411.42
-2009	SOC	Other	Royalties	9717.06
-2010	BFT	Oil & Gas	Rents	3534045.50
-2010	BFT	Oil	Royalties	20095517.61
-2010	CHU	Oil & Gas	Rents	5569890.00
-2010	NOA	Wind	Rents	139517.76
-2010	CGM	Oil & Gas	Bonus	878845493.00
-2010	CGM	Oil & Gas	Rents	143693780.75
-2010	CGM	Oil & Gas	Other Revenue	57601730.71
-2010	CGM	Gas	Royalties	812352986.58
-2010	CGM	NGL	Royalties	180175984.28
-2010	CGM	Oil	Royalties	3544051465.58
-2010	GUL	Sulfur	Other Revenue	12551.32
-2010	CGM	Other	Royalties	-14280.90
-2010	EGM	Oil & Gas	Rents	6081889.60
-2010	EGM	Gas	Royalties	-21132146.59
-2010	EGM	Oil	Royalties	367915.08
-2010	EGM	Oil & Gas	Bonus	-3335504.99
-2010	EGM	Oil & Gas	Other Revenue	-1591945.50
-2010	WGM	Oil & Gas	Other Revenue	12965388.52
-2010	WGM	Oil & Gas	Rents	76022581.43
-2010	WGM	Gas	Royalties	176338001.23
-2010	WGM	NGL	Royalties	41242431.62
-2010	WGM	Oil	Royalties	395065542.54
-2010	WGM	Oil & Gas	Bonus	1350430.00
-2010	GUL	Oil & Gas	Other Revenue	8666.07
-2010	GUL	Gas	Royalties	-10023572.21
-2010	SOC	Oil & Gas	Other Revenue	-130414.05
-2010	SOC	Gas	Royalties	15525394.25
-2010	SOC	NGL	Royalties	119516.72
-2010	SOC	Oil	Royalties	250959587.65
-2010	SOC	Other	Royalties	17522.74
-2011	BFT	Oil & Gas	Rents	4214602.50
-2011	BFT	Oil	Royalties	15349834.99
-2011	CHU	Oil & Gas	Rents	57600.00
-2011	NOA	Wind	Rents	135247.84
-2011	CGM	Oil & Gas	Rents	133768569.16
-2011	CGM	Oil & Gas	Other Revenue	25837051.79
-2011	CGM	Gas	Royalties	588149333.06
-2011	CGM	NGL	Royalties	224613349.59
-2011	CGM	Oil	Royalties	4367522329.43
-2011	CGM	Oil & Gas	Bonus	36751111.00
-2011	GUL	Sulfur	Other Revenue	12670.72
-2011	CGM	Other	Royalties	3777.12
-2011	EGM	Oil & Gas	Rents	5585508.97
-2011	EGM	Oil & Gas	Other Revenue	-1473519.12
-2011	EGM	Gas	Royalties	51926029.97
-2011	EGM	Oil	Royalties	537038.40
-2011	WGM	Oil & Gas	Other Revenue	11520961.99
-2011	WGM	Oil & Gas	Rents	68624505.29
-2011	WGM	Gas	Royalties	171498300.68
-2011	WGM	NGL	Royalties	53227325.94
-2011	WGM	Oil	Royalties	565434794.13
-2011	SOC	Oil & Gas	Other Revenue	-10525.58
-2011	SOC	Gas	Royalties	7623860.27
-2011	SOC	NGL	Royalties	1173840.01
-2011	SOC	Oil	Royalties	309265336.53
-2011	SOC	Other	Royalties	63584.56
-2012	BFT	Oil & Gas	Rents	5308888.00
-2012	BFT	Oil	Royalties	11414004.94
-2012	CHU	Oil & Gas	Rents	5056476.05
-2012	NOA	Wind	Rents	128842.84
-2012	CGM	Oil & Gas	Rents	148685899.00
-2012	CGM	Oil & Gas	Bonus	1681578390.00
-2012	CGM	Oil & Gas	Other Revenue	19754937.96
-2012	CGM	Gas	Royalties	340463255.97
-2012	CGM	NGL	Royalties	182180940.51
-2012	CGM	Oil	Royalties	4345810041.50
-2012	CGM	Oil & Gas	Royalties	-2.00
-2012	GUL	Sulfur	Other Revenue	12429.60
-2012	CGM	Other	Royalties	4267.84
-2012	EGM	Oil & Gas	Rents	5945421.54
-2012	EGM	Oil & Gas	Other Revenue	30625.59
-2012	EGM	Gas	Royalties	12893891.33
-2012	EGM	Oil	Royalties	83832.71
-2012	WGM	Oil & Gas	Bonus	324971001.00
-2012	WGM	Oil & Gas	Other Revenue	10144967.79
-2012	WGM	Oil & Gas	Rents	78549380.79
-2012	WGM	Gas	Royalties	83237470.94
-2012	WGM	NGL	Royalties	41317949.20
-2012	WGM	Oil	Royalties	642341184.51
-2012	GUL	Gas	Royalties	-56804.14
-2012	SOC	Oil & Gas	Other Revenue	131633.98
-2012	SOC	Gas	Royalties	5795627.79
-2012	SOC	NGL	Royalties	811638.16
-2012	SOC	Oil	Royalties	292976720.56
-2012	SOC	Other	Royalties	49553.05
-2013	BFT	Oil & Gas	Rents	5136075.00
-2013	BFT	Oil	Royalties	10558359.74
-2013	CHU	Oil & Gas	Rents	7551790.59
-2013	MDA	Wind	Bonus	1600000.00
-2013	MDA	Wind	Rents	169198.00
-2013	NOA	Wind	Bonus	3113568.50
-2013	NOA	Wind	Rents	937467.92
-2013	CGM	Oil & Gas	Rents	148814257.51
-2013	CGM	Oil & Gas	Bonus	1199052037.00
-2013	CGM	Oil & Gas	Other Revenue	17969583.23
-2013	CGM	Gas	Royalties	391344715.30
-2013	CGM	NGL	Royalties	134619869.04
-2013	CGM	Oil	Royalties	4650164398.76
-2013	GUL	Sulfur	Other Revenue	11186.00
-2013	CGM	Other	Royalties	4122.09
-2013	EGM	Oil & Gas	Rents	3385930.62
-2013	EGM	Oil	Royalties	106605.03
-2013	EGM	Oil & Gas	Other Revenue	-214366.92
-2013	EGM	Gas	Royalties	9061317.16
-2013	WGM	Oil & Gas	Bonus	233906420.00
-2013	WGM	Oil & Gas	Other Revenue	3615253.34
-2013	WGM	Oil & Gas	Rents	79537910.46
-2013	WGM	Gas	Royalties	92568172.07
-2013	WGM	NGL	Royalties	30474174.79
-2013	WGM	Oil	Royalties	577658532.09
-2013	SOC	Oil & Gas	Other Revenue	-200640.96
-2013	SOC	Gas	Royalties	7428904.13
-2013	SOC	NGL	Royalties	746044.97
-2013	SOC	Oil	Royalties	287819066.73
-2013	SOC	Other	Royalties	20444.25
+2004	alaska	Oil & Gas	Bonus	8034909.00
+2004	alaska	Oil & Gas	Rents	1092381.00
+2004	alaska	Oil	Royalties	29343329.28
+2004	gulf	Oil & Gas	Bonus	542330347.00
+2004	gulf	Oil & Gas	Rents	215854566.79
+2004	gulf	Oil & Gas	Other Revenue	-6327362.32
+2004	gulf	Gas	Royalties	3307071870.51
+2004	gulf	NGL	Royalties	157916563.37
+2004	gulf	Oil	Royalties	1164131190.47
+2004	gulf	Other	Royalties	20883.00
+2004	gulf	Sulfur	Other Revenue	22221.06
+2004	pacific	Oil & Gas	Other Revenue	8574677.67
+2004	pacific	Oil & Gas	Rents	-49972.00
+2004	pacific	Gas	Royalties	27046120.62
+2004	pacific	NGL	Royalties	1474229.94
+2004	pacific	Oil	Royalties	126862012.82
+2004	pacific	Other	Royalties	14209.63
+2005	alaska	Oil & Gas	Bonus	46509729.00
+2005	alaska	Oil & Gas	Rents	1878656.75
+2005	alaska	Oil	Royalties	34471667.71
+2005	gulf	Oil & Gas	Bonus	348497652.00
+2005	gulf	Oil & Gas	Rents	210290455.53
+2005	gulf	Oil & Gas	Other Revenue	1103899.27
+2005	gulf	Gas	Royalties	3223954479.65
+2005	gulf	NGL	Royalties	141982053.61
+2005	gulf	Oil	Royalties	2059626348.07
+2005	gulf	Sulfur	Other Revenue	10547.43
+2005	gulf	Other	Royalties	22007.88
+2005	pacific	Oil & Gas	Other Revenue	-1013240.52
+2005	pacific	Gas	Royalties	31437272.94
+2005	pacific	NGL	Royalties	1654526.93
+2005	pacific	Oil	Royalties	177943152.14
+2005	pacific	Other	Royalties	14340.49
+2006	alaska	Oil & Gas	Rents	1877683.25
+2006	alaska	Oil	Royalties	40580284.16
+2006	gulf	Oil & Gas	Rents	235022734.36
+2006	gulf	Oil & Gas	Bonus	1197213600.00
+2006	gulf	Oil & Gas	Other Revenue	-42755495.87
+2006	gulf	Gas	Royalties	3001665672.54
+2006	gulf	NGL	Royalties	152210997.40
+2006	gulf	Oil	Royalties	3374354015.46
+2006	gulf	Sulfur	Other Revenue	10838.00
+2006	gulf	Other	Royalties	13180.56
+2006	gulf	Oil & Gas	Royalties	-3.76
+2006	pacific	Oil & Gas	Other Revenue	24333.65
+2006	pacific	Gas	Royalties	31785770.08
+2006	pacific	NGL	Royalties	841056.77
+2006	pacific	Oil	Royalties	217411888.40
+2006	pacific	Other	Royalties	6303.03
+2007	alaska	Oil & Gas	Bonus	41980133.00
+2007	alaska	Oil & Gas	Rents	2743548.00
+2007	alaska	Oil	Royalties	25711421.67
+2007	gulf	Oil & Gas	Rents	196652806.94
+2007	gulf	Oil & Gas	Bonus	556080972.00
+2007	gulf	Oil & Gas	Other Revenue	19420678.23
+2007	gulf	Oil	Royalties	3427166054.62
+2007	gulf	Gas	Royalties	2535262558.29
+2007	gulf	NGL	Royalties	221396483.20
+2007	gulf	Sulfur	Other Revenue	11624.84
+2007	gulf	Other	Royalties	3708.41
+2007	pacific	Oil & Gas	Other Revenue	-96759.41
+2007	pacific	Gas	Royalties	30262307.00
+2007	pacific	NGL	Royalties	968529.43
+2007	pacific	Oil	Royalties	230622767.47
+2007	pacific	Other	Royalties	32787.47
+2008	alaska	Oil & Gas	Rents	5475741.50
+2008	alaska	Oil	Royalties	79810964.75
+2008	alaska	Oil & Gas	Bonus	2662059483.00
+2008	gulf	Oil & Gas	Bonus	6496701387.80
+2008	gulf	Oil & Gas	Rents	234623572.23
+2008	gulf	Oil & Gas	Other Revenue	-15621424.76
+2008	gulf	Gas	Royalties	2802015722.60
+2008	gulf	NGL	Royalties	262732780.61
+2008	gulf	Oil	Royalties	4229168786.72
+2008	gulf	Sulfur	Other Revenue	12709.04
+2008	gulf	Other	Royalties	65625.39
+2008	pacific	Oil & Gas	Other Revenue	-2463169.11
+2008	pacific	Oil & Gas	Rents	18432.00
+2008	pacific	Gas	Royalties	32727187.98
+2008	pacific	NGL	Royalties	1750016.85
+2008	pacific	Oil	Royalties	373348210.06
+2008	pacific	Other	Royalties	209945.99
+2009	alaska	Oil & Gas	Rents	6895639.00
+2009	alaska	Oil	Royalties	17513389.03
+2009	atlantic	Wind	Rents	68319.68
+2009	gulf	Oil & Gas	Rents	223433704.56
+2009	gulf	Oil & Gas	Bonus	1048869011.20
+2009	gulf	Oil & Gas	Other Revenue	17078806.77
+2009	gulf	Gas	Royalties	758871489.10
+2009	gulf	NGL	Royalties	102253592.65
+2009	gulf	Oil	Royalties	2147249991.13
+2009	gulf	Sulfur	Other Revenue	12631.84
+2009	gulf	Other	Royalties	12425.40
+2009	pacific	Oil & Gas	Other Revenue	678504.46
+2009	pacific	Oil & Gas	Rents	-18432.00
+2009	pacific	Gas	Royalties	15412992.64
+2009	pacific	NGL	Royalties	1564916.22
+2009	pacific	Oil	Royalties	181701411.42
+2009	pacific	Other	Royalties	9717.06
+2010	alaska	Oil & Gas	Rents	9103935.50
+2010	alaska	Oil	Royalties	20095517.61
+2010	atlantic	Wind	Rents	139517.76
+2010	gulf	Oil & Gas	Bonus	876860418.01
+2010	gulf	Oil & Gas	Rents	225798251.78
+2010	gulf	Oil & Gas	Other Revenue	68983839.80
+2010	gulf	Gas	Royalties	957535269.01
+2010	gulf	NGL	Royalties	221418415.90
+2010	gulf	Oil	Royalties	3939484923.20
+2010	gulf	Sulfur	Other Revenue	12551.32
+2010	gulf	Other	Royalties	-14280.90
+2010	pacific	Oil & Gas	Other Revenue	-130414.05
+2010	pacific	Gas	Royalties	15525394.25
+2010	pacific	NGL	Royalties	119516.72
+2010	pacific	Oil	Royalties	250959587.65
+2010	pacific	Other	Royalties	17522.74
+2011	alaska	Oil & Gas	Rents	4272202.50
+2011	alaska	Oil	Royalties	15349834.99
+2011	atlantic	Wind	Rents	135247.84
+2011	gulf	Oil & Gas	Rents	207978583.42
+2011	gulf	Oil & Gas	Other Revenue	35884494.66
+2011	gulf	Gas	Royalties	811573663.71
+2011	gulf	NGL	Royalties	277840675.53
+2011	gulf	Oil	Royalties	4933494161.96
+2011	gulf	Oil & Gas	Bonus	36751111.00
+2011	gulf	Sulfur	Other Revenue	12670.72
+2011	gulf	Other	Royalties	3777.12
+2011	pacific	Oil & Gas	Other Revenue	-10525.58
+2011	pacific	Gas	Royalties	7623860.27
+2011	pacific	NGL	Royalties	1173840.01
+2011	pacific	Oil	Royalties	309265336.53
+2011	pacific	Other	Royalties	63584.56
+2012	alaska	Oil & Gas	Rents	10365364.05
+2012	alaska	Oil	Royalties	11414004.94
+2012	atlantic	Wind	Rents	128842.84
+2012	gulf	Oil & Gas	Rents	233180701.33
+2012	gulf	Oil & Gas	Bonus	2006549391.00
+2012	gulf	Oil & Gas	Other Revenue	29930531.34
+2012	gulf	Gas	Royalties	436537814.10
+2012	gulf	NGL	Royalties	223498889.71
+2012	gulf	Oil	Royalties	4988235058.72
+2012	gulf	Oil & Gas	Royalties	-2.00
+2012	gulf	Sulfur	Other Revenue	12429.60
+2012	gulf	Other	Royalties	4267.84
+2012	pacific	Oil & Gas	Other Revenue	131633.98
+2012	pacific	Gas	Royalties	5795627.79
+2012	pacific	NGL	Royalties	811638.16
+2012	pacific	Oil	Royalties	292976720.56
+2012	pacific	Other	Royalties	49553.05
+2013	alaska	Oil & Gas	Rents	12687865.59
+2013	alaska	Oil	Royalties	10558359.74
+2013	atlantic	Wind	Bonus	4713568.50
+2013	atlantic	Wind	Rents	1106665.92
+2013	gulf	Oil & Gas	Rents	231738098.59
+2013	gulf	Oil & Gas	Bonus	1432958457.00
+2013	gulf	Oil & Gas	Other Revenue	21370469.65
+2013	gulf	Gas	Royalties	492974204.53
+2013	gulf	NGL	Royalties	165094043.83
+2013	gulf	Oil	Royalties	5227929535.88
+2013	gulf	Sulfur	Other Revenue	11186.00
+2013	gulf	Other	Royalties	4122.09
+2013	pacific	Oil & Gas	Other Revenue	-200640.96
+2013	pacific	Gas	Royalties	7428904.13
+2013	pacific	NGL	Royalties	746044.97
+2013	pacific	Oil	Royalties	287819066.73
+2013	pacific	Other	Royalties	20444.25

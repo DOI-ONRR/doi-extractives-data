@@ -1,0 +1,207 @@
+
+.filters-wrapper_outer {
+  position: relative;
+}
+
+.filters-wrapper {
+  background-color: transparent;
+  margin-left: 0;
+  padding: $base-padding;
+  position: absolute;
+  width: 100%;
+  z-index: 3000;
+
+  @include respond-to(medium-up) {
+    border-radius: $base-border-radius;
+    margin-right: $base-padding;
+    max-width: 674.309px;
+  }
+
+  @include respond-to(huge-plus-up) {
+    margin-right: 0;
+  }
+
+  select {
+    border: 0;
+    height: 50px;
+  }
+
+  &[aria-expanded=true] {
+    background-color: $mid-blue-opaque !important;
+  }
+
+  &.js-color {
+    background: $mid-blue-opaque;
+  }
+
+  &.js-transparent {
+    background: transparent;
+  }
+}
+
+.filters-last {
+  @include respond-to(medium-up) {
+    margin-bottom: $base-padding-large;
+  }
+}
+
+.filters-heading {
+  display: none;
+  margin-bottom: $base-padding;
+
+  @include respond-to(medium-up) {
+    display: inline-block;
+    width: 65%;
+  }
+
+  h3 {
+    margin-bottom: 0;
+  }
+
+  p {
+    @include heading(para-md);
+    color: $blue-alt;
+  }
+}
+
+.filters {
+  color: $dark-blue;
+
+  label {
+    @include heading(para-sm);
+    color: $blue-alt;
+    font-weight: $weight-light;
+    letter-spacing: 0.7px;
+    margin-bottom: 3px;
+    text-transform: uppercase;
+  }
+}
+
+#commodity-group-selector,
+#commodity-selector,
+#region-selector,
+#product-selector,
+#unit-selector {
+  border: none;
+}
+
+[aria-hidden=true] {
+  display: none;
+}
+
+// Crazy checkbox magic
+// http://cssdeck.com/labs/css-checkbox-styles
+// for guide on firefox compatibility
+
+.unit-filter {
+  position: relative;
+
+  input {
+    visibility: hidden;
+  }
+}
+
+.unit-selector {
+  position: absolute;
+
+  &:first-of-type {
+    left: 0;
+    top: 0;
+  }
+
+  &:last-of-type {
+    right: 0;
+    top: 0;
+  }
+}
+
+.unit-selector,
+.unit-selector-label {
+  @include appearance(none);
+  background: $white;
+  background-color: $white;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+  float: left;
+  height: 50px;
+  margin: 0;
+  padding: $base-padding-lite;
+  padding-top: ($base-padding * 0.7);
+  text-align: center;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  vertical-align: middle;
+  width: 50%;
+
+  &:first-of-type {
+    @include heading(para-md);
+    border-bottom-right-radius: 0;
+    border-right: 1px solid $blue;
+    border-top-right-radius: 0;
+    font-weight: $weight-bold;
+
+    &:before {
+      content: '$';
+    }
+
+    &[checked='true'] + label {
+      background: $blue;
+      color: $white;
+    }
+  }
+
+  &:last-of-type {
+    @include heading(para-md);
+    @include omega();
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    font-weight: $weight-bold;
+
+    &:before {
+      content: '%';
+    }
+
+    &[checked='true'] + label {
+      background: $blue;
+      color: $white;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    background: $light-blue;
+  }
+}
+
+.filter-description {
+  @include heading(para-xl);
+  font-weight: $weight-bold;
+  float: left;
+  letter-spacing: -0.5px;
+  margin-bottom: $base-padding;
+  width: 65%;
+
+  @include respond-to(medium-up) {
+    float: left;
+  }
+
+  &.filter-description_closed {
+    margin-bottom: 0;
+
+    &[aria-expanded=true] {
+      display: none;
+    }
+
+    &[aria-expanded=false] {
+      display: block;
+    }
+  }
+
+  .filter-part {
+    border-bottom: 2px dotted $light-black;
+    color: inherit;
+    text-decoration: none;
+  }
+}

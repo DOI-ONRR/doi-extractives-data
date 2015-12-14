@@ -1,0 +1,29 @@
+.u-centered {
+  text-align: center;
+}
+
+.u-padding-right {
+  padding-right: 0.5em;
+}
+
+.u-margin-top {
+  margin-top: $base-padding;
+}
+
+.sr-only {
+  height: px;
+  left: -10000px;
+  overflow: hidden;
+  position: absolute;
+  top: auto;
+  width: 1px;
+}
+
+.subpage-breadcrumb {
+  margin-bottom: 0;
+}
+
+.u-padding-small_screen {
+  padding-left: $base-padding;
+  padding-right: $base-padding;
+}

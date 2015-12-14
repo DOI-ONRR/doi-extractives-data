@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<section class="container-outer container-padded">
+
+	<article class="container-left-7">
+		  {{content | markdownify}}
+
+	</article>
+
+	<div class="container-right-5">
+
+	<div class="sticky_nav" data-sticky-offset="50">
+	  <nav class="sticky_nav-nav">
+		  {% include hash_selector.html %}
+	  </nav>
+  </div>
+
+	</div>
+
+</section>
+
+<script src="{{ site.baseurl }}/js/components/sticky-nav.js"></script>
+<script src="{{ site.baseurl }}/js/components/open-list-nav.js"></script>

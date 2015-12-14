@@ -1,0 +1,104 @@
+---
+title: Federal Revenue By Company | Explore Data
+layout: default
+permalink: /explore/federal-revenue-by-company/
+---
+<section id="companies" class="explore-subpage container">
+  <div class="container-left-4">
+    <div class="container-outer">
+      <div>
+        <a class="breadcrumb" href="{{ site.baseurl }}/explore/">Explore data</a>
+        /
+      </div>
+
+      <h1>Federal Revenue by Company</h1>
+
+      <p>Explore revenues on federal lands and waters in 2013 by commodity, revenue type, and company.</p>
+
+      <p>This data comes from the Department of the Interior's Office of Natural Resources Revenue and is calendar year data.</p>
+
+      <p>Choose a commodity or revenue type to filter the list of revenues. To search for a specific company, start typing the name of the company.</p>
+
+      <a href="{{site.baseurl}}/downloads/federal-revenue-by-company/">
+        <i class="fa fa-file-text-o u-padding-right"></i>Data and documentation
+      </a>
+    </div>
+  </div>
+
+  <section class="container-right-8 filters-wrapper_outer">
+    <div data-absolute="true" data-offset-parent="true" class="sticky_nav sticky_nav-show_mobile filters-wrapper container" data-toggler="filters">
+      <h1 data-toggler="filters" data-filter-description="" class="filter-description filter-description_closed">
+        <a href="#revenue-type-selector" class="filter-part" data-key="type">All revenue</a>
+        from
+        <a href="#commodity-selector" class="filter-part" data-key="commodity">all commodities</a>
+        extraction on federal lands (2013)
+      </h1>
+      <button class="toggle-filters toggle-desktop" is="eiti-toggle" aria-controls="filters" data-expanded-text="Hide filters" data-collapsed-text="Show filters" data-toggler="filters">Show filters</button>
+
+      <form id="filters" aria-hidden="true" class="filters">
+
+        <div class="filters-heading">
+          <h3>Filter revenue</h3>
+        </div>
+
+
+        <div class="container-left-6">
+          <div id="commodity-filter" class="filter">
+            <label for="commodity-selector">Commodity</label>
+            <select id="commodity-selector" name="commodity">
+              <option value="">All commodities</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="container-left-6" style="margin-right: 0;">
+          <div id="type-filter" class="filter filters-last">
+            <label for="type-selector">Revenue Type</label>
+            <select id="type-selector" name="type">
+              <option value="">All</option>
+            </select>
+          </div>
+        </div>
+
+        <h1 data-toggler="filters" data-filter-description="" class="filter-description filter-description_closed">
+          <a href="#revenue-type-selector" class="filter-part" data-key="type">All revenue</a>
+          from
+          <a href="#commodity-selector" class="filter-part" data-key="commodity">all commodities</a>
+          extraction on federal lands (2013)
+        </h1>
+
+      </form>
+
+      <div class="container-outer">
+        <button class="toggle-filters toggle" is="eiti-toggle" aria-controls="filters" data-expanded-text="Hide filters" data-toggler="filters" data-collapsed-text="Show filters">Show filters</button>
+      </div>
+
+    </div>
+
+    <div class="explore-exploration slab-alpha">
+
+      <div class="container">
+        <h2 class="h3 region-title">Total revenues by type</h2>
+        <table id="revenue-types" class="revenue-type-list subregions">
+        </table>
+      </div>
+
+      <div class="container">
+        <h2 class="h3 region-title">Companies</h2>
+        <div>
+          <label for="company-name-filter">Filter by company name:</label>
+          <input type="text" name="search" id="company-name-filter">
+        </div>
+        <table id="companies" class="company-list subregions">
+        </table>
+      </div>
+
+    </section>
+
+</section>
+
+<script src="{{ site.baseurl }}/js/vendor/immutable.min.js"></script>
+<script src="{{ site.baseurl }}/js/components/eiti-bar.js"></script>
+<script src="{{ site.baseurl }}/js/eiti.explore.js"></script>
+<script src="{{ site.baseurl }}/js/pages/company-revenue.js"></script>
+<script src="{{ site.baseurl }}/js/components/sticky-nav.js"></script>

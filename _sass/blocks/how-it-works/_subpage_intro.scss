@@ -1,0 +1,132 @@
+// Revenues Subpage Intro Section
+//
+// This is the first block on a revenues subpage
+//
+// Styleguide blocks.how-it-works.intro
+
+.revenues_subpage-intro_wrapper {
+  border-top: 1px solid $neutral-gray;
+}
+
+.revenues_subpage-intro {
+  padding-bottom: $base-padding-extra;
+  padding-top: $base-padding-extra;
+
+  h1 {
+    @include heading(h1);
+  }
+}
+
+.revenues_subpage-breadcrumb {
+  color: $dark-gray;
+  font-weight: $weight-light;
+}
+
+.revenues_subpage-intro_text {
+  padding-bottom: $base-padding-lite;
+}
+
+.revenues_subpage-download {
+  @include heading('para-sm');
+  color: $blue;
+  font-weight: $weight-book;
+
+  i {
+    @include heading('para-lg');
+    color: $blue;
+    margin-right: 4px;
+  }
+}
+
+.revenues_subpage-office {
+  background-color: $white;
+
+  &:first-child {
+    border-top-left-radius: $base-border-radius;
+    border-top-right-radius: $base-border-radius;
+    padding-top: $base-padding;
+  }
+
+  &:last-child {
+    border-bottom-left-radius: $base-border-radius;
+    border-bottom-right-radius: $base-border-radius;
+  }
+
+  &:last-of-type {
+    padding-bottom: $base-padding-lite;
+  }
+}
+
+.revenues_subpage-intro_layout {
+  @extend %container-side;
+
+  @include span-columns(12);
+
+  @include respond-to(medium-up) {
+
+    @include span-columns(8);
+  }
+}
+
+.revenues_subpage-office_container_layout {
+  @extend %container-side;
+
+  @include span-columns(12);
+
+  @include respond-to(medium-up) {
+
+    @include span-columns(4);
+  }
+
+  @include respond-to(large-up) {
+
+    @include span-columns(3);
+    @include shift(1);
+  }
+}
+
+.revenues_subpage-office_container {
+  position: relative;
+
+  a {
+    color: $dark-gray;
+  }
+}
+
+.revenues_subpage-office_text {
+  @include span-columns(10);
+
+  padding-left: $base-padding;
+  padding-right: $base-padding-lite;
+
+  p {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  @include respond-to(medium-up) {
+    @include span-columns(9);
+
+    p {
+      font-size: 12px;
+      line-height: 1.4;
+    }
+  }
+}
+
+.revenues_subpage-office_logos {
+  @include span-columns(2);
+
+  @include respond-to(medium-up) {
+    @include span-columns(3);
+  }
+
+  padding-bottom: $base-padding;
+  padding-right: $base-padding;
+}
+
+.revenues_subpage-office_logo {
+  float: right;
+  margin-bottom: ($base-padding / 2);
+  width: 40px;
+}

@@ -1,0 +1,69 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    A project of 18F -- @18F
+    Shawn Allen -- Designer Developer -- 18F
+    Isabelle Brantley -- Content -- Independent Administrator/Deloitte
+    Nicole Fenton -- Content Designer -- 18F
+    Brian Hedberg -- Developer -- 18F
+    Michelle Hertzfeld --  Product Manager and UX -- 18F
+    Robert Kronebusch -- Data Wrangler -- Department of the Interior, Office of Natural Resources Revenue
+    Corey Mahoney -- Content Designer -- 18F
+    Chris Mentasti -- Data Wrangler -- Department of the Interior, Office of Natural Resources Revenue
+    Eric Ronne -- Visual Designer -- 18F
+    Jon Swedin -- Data Wrangler -- Department of the Interior, Office of Natural Resources Revenue
+    Judy Wilson -- Product Owner -- Department of the Interior, Office of Natural Resources Revenue
+
+    Beta site (team emeritus)
+    Nick Bristow -- Developer -- 18F
+    Chris Cairns -- Product Manager -- 18F
+
+
+# CREDITS
+
+    ICONS
+
+    Airplane by Katie Wright from The Noun Project
+    Book by Danilo Gusmão Silveira from The Noun Project
+    Buildings by Stefan Parnarov from The Noun Project
+    Coal Trolley by David Chapman from The Noun Project
+    Dam by im icons from The Noun Project
+    Gas by the2ne from The Noun Project
+    Geothermal by Michelle Hertzfeld
+    Hospital by im icons from The Noun Project
+    Microphone by matthew hall from The Noun Project
+    Mountain by Chris Evans from The Noun Project
+    Oil Rig by hunotika from The Noun Project
+    More by Jardson A. from The Noun Project
+    school by iconoci from The Noun Project
+    Swamp by Katie Wright from The Noun Project
+    Swings by Rafael Farias Leão from The Noun Project
+    Wheat by Andrea Caldarelli from The Noun Project
+    Wind Turbine by im icons from The Noun Project
+
+    IMAGES
+
+    "Alaskan Pipeline" by U.S. Geological Survey.
+    Available: https://www.flickr.com/photos/usgeologicalsurvey/16204180932
+
+# THANKS
+
+    Many helpful instructions and blog posts on teh interwebz!
+    Based on work done by the 18F NotAlone.gov team: https://github.com/18F/notalone
+
+# TECHNOLOGY COLOPHON
+
+    Standards: HTML5, CSS3
+    Components:
+        Bourbon, a simple and lightwieght mixin library for Sass:
+            bourbon.io
+        Neat, a lightweight semantic grid framework for Sass and Bourbon:
+            neat.bourbon.io
+        Bitters, scaffold styles, variables and structure for Bourbon projects:
+            bitters.bourbon.io
+        All developed and maintained by Thoughtbot:
+            thoughtbot.com
+    Software: Sass, Jekyll, D3
+    Typography: Lato

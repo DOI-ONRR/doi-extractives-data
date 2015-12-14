@@ -1,9 +1,6 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    bourbon (4.2.5)
-      sass (~> 3.4)
-      thor (~> 0.19)
     colorator (0.1)
     ffi (1.9.10)
     jekyll (3.0.0.pre.beta9)
@@ -21,24 +18,27 @@ GEM
       listen (~> 3.0)
     kramdown (1.9.0)
     liquid (3.0.6)
-    listen (3.0.3)
+    listen (3.0.4)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
     mercenary (0.3.5)
+    rainbow (2.0.0)
     rb-fsevent (0.9.6)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
     rouge (1.10.1)
     safe_yaml (1.0.4)
     sass (3.4.19)
-    thor (0.19.1)
+    scss_lint (0.42.2)
+      rainbow (~> 2.0)
+      sass (~> 3.4.15)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  bourbon
   jekyll (= 3.0.0.pre.beta9)
+  scss_lint
 
 BUNDLED WITH
    1.10.6

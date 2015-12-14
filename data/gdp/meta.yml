@@ -1,0 +1,25 @@
+name: GDP (Gross Domestic Product)
+description: |
+  The contribution of natural resource extraction activities to national and
+  state-level economic "size", or gross domestic product, measured in US
+  dollars.
+
+source: |
+  Obtained from the <a href="http://www.bea.gov/API/signup/">Bureau of Economic Analysis API</a>.
+
+resources:
+  only:
+    - all
+  commodities: false
+
+geo:
+  national:
+    filename: US.tsv
+    columns:
+      value: GDP
+
+  regional:
+    filename: states.tsv
+    columns:
+      region: FIPS
+      value: GDP

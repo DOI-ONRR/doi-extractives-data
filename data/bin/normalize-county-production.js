@@ -1,14 +1,10 @@
 #!/usr/bin/env node
 var yargs = require('yargs')
   .usage('$0 [options]')
-  .describe('volume-field', 'the numeric volume field to parse as a number')
-  .default('volume-field', 'Sales Volumes')
   .describe('in-states', 'the states CSV file')
   .default('in-states', 'input/geo/states.csv')
-  .describe('fips-field', 'the county FIPS code field to fix')
-  .default('fips-field', 'FIPS')
   .describe('state-field', 'the state abbreviation field to match up with states')
-  .default('state-field', 'St')
+  .default('state-field', 'Region')
   .describe('if', 'input format')
   .default('if', 'ndjson')
   .describe('of', 'output format')
@@ -28,10 +24,11 @@ var async = require('async');
 var thru = require('through2').obj;
 
 var statesByAbbr;
-var yearField = 'Calendar Year';
-var fipsField = options['fips-field'];
+var yearField = 'Year';
 var stateField = options['state-field'];
-var volumeField = options['volume-field'];
+var volumeField = 'Production Volume';
+
+const WITHHELD = 'Withheld';
 
 async.series([
   options['in-states'] ? loadStates : noop,
@@ -40,40 +37,60 @@ async.series([
   if (error) return console.error('error:', error);
 });
 
+var keys;
+
 function main(done) {
+  var onError = function(error) {
+    // console.warn('error:', error);
+  };
   process.stdin
     .pipe(tito.createReadStream(options['if']))
+    .on('error', onError)
     .pipe(thru(function(d, enc, next) {
       d = normalize(d);
-      if (statesByAbbr) fixFIPS(d);
+      if (statesByAbbr) {
+        fixFIPS(d);
+      }
       if (!d.Volume) {
-        console.warn('No volumes for:', d);
-        return next();
+        /*
+        if (!keys) {
+          keys = Object.keys(d);
+          console.warn(keys.join('\t'));
+        }
+        console.warn('xxx', keys.map(function(k) { return d[k]; }).join('\t'));
+        */
+        // return next();
       }
       next(null, d);
     }))
+    .on('error', onError)
     .pipe(tito.createWriteStream(options['of']))
-    .pipe(process.stdout);
+    .on('error', onError)
+    .pipe(process.stdout)
+    .on('error', onError)
+    .on('end', done);
 }
 
 function normalize(d) {
   util.trimKeys(d);
-  var volume = parse.number(d[volumeField]);
-  var commodity;
-  if (d.Commodity.trim() === 'Other Products') {
+  var volume = isWithheld(d)
+    ? 'W'
+    : parse.number(d[volumeField]);
+  var commodity = (d.Commodity || '').trim();
+  if (commodity === 'Other Products') {
     commodity = util.normalizeCommodity(d.Product);
-    console.warn('Other Products ->', commodity);
+    // console.warn('Other Products ->', commodity);
   } else {
-    commodity = util.normalizeCommodity(d.Commodity);
+    commodity = util.normalizeCommodity(commodity);
   }
   return {
     Year:       d[yearField],
     State:      d[stateField],
-    County:     d['County Name'],
-    FIPS:       d[fipsField],
+    County:     d.Area,
+    FIPS:       d.FIPS,
     Commodity:  commodity,
     Product:    d.Product,
-    Type:       d['Volume Type'],
+    // Type:       d['Volume Type'],
     Volume:     volume
   };
 }
@@ -82,7 +99,8 @@ function fixFIPS(d) {
   var abbr = d.State;
   var state = statesByAbbr[abbr];
   if (!state) {
-    throw 'Unknown state abbreviation: "' + abbr + '"';
+    // console.warn('Unknown state abbreviation: "' + abbr + '"');
+    return false;
   }
   var fips = d.FIPS.substr(0, 2);
   if (state.FIPS !== fips) {
@@ -102,6 +120,10 @@ function loadStates(done) {
       statesByAbbr = util.map(states, 'abbr', true);
       done();
     });
+}
+
+function isWithheld(d) {
+  return d[volumeField].trim() === 'W';
 }
 
 function noop(done) {

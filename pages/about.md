@@ -1,34 +1,72 @@
 ---
-title: About
+title: About USEITI
 layout: default
 permalink: /about/
 ---
 
-<div class="communities">
+<section class="slab-delta">
+  <div class="container-outer landing-section_top">
+	  <div class="container-left-8 hero-left">
+			<h1>{{ page.title }}</h1>
+			<p class="hero-description">The <a href="https://eiti.org/">Extractive Industries Transparency Initiative</a> (EITI) is a global standard that promotes open and accountable management of natural resources.</p>
+      <p class="hero-description">The U.S. committed to join EITI as part of the <a href="https://www.whitehouse.gov/sites/default/files/us_national_action_plan_final_2.pdf">2011</a> and <a href="https://www.whitehouse.gov/sites/default/files/docs/us_national_action_plan_6p.pdf">2013</a> Open Government Partnership National Action Plans, with the goal of ensuring that taxpayers are receiving every dollar due for extraction of natural resources. The <a href="http://www.opengovpartnership.org/">Open Government Partnership</a> is an international effort dedicated to making governments more open, accountable, and responsive to citizens. It launched in 2011.</p>
+		</div>
+		<div class="container-right-4 hero-right">
+      <div class="hero-right_square about_intro-callout">
+        <h2 class="about_intro-header">The 2015 USEITI report is now available, and includes:</h2>
+        <ul class="list-bullet about_intro-list">
+          <li>Never-before-released federal production data</li>
+          <li>Narratives explaining how the system of leasing federal land works in the U.S.</li>
+        </ul>
+        <a href="{{ site.baseurl }}/about/whats-new/" class="carousel-button button-primary">See what's new</a>
+      </div>
+      <div class="about_intro-highlight">
+        <a href="{{ site.baseurl }}/about/report/">Executive Summary &#8594;</a>
+      </div>
+    </div>
+	</div>
+</section>
+
+
+<div class="communities u-padding-small_screen">
 
   <div class="communities-intro">
 
     <section class="container">
 
-      <div class="communities-left">
+      <div class="container-left-7">
 
-        <h1>About USEITI</h1>
+		<h2 id="initiative" class="h3">The initiative</h2>
 
-        <p><strong>EITI is an international standard.</strong> The <a href="http://eiti.org/" target="_blank" title="Extractive Industries Transparency Initiative"><strong>Extractive Industries Transparency Initiative</strong></a>, or EITI, is a voluntary, global effort designed to strengthen accountability and public trust for the revenues paid and received for a country's oil, gas and mineral resources. Countries that follow the standard publish a report in which governments and companies publicly disclose royalties, rents, bonuses, taxes and other payments from oil, gas, and mining resources. The Standard has two core elements:</p>
+		<p>The EITI International Board and implementing member countries believe that a nation’s natural resource wealth belongs to its citizens. Through increased transparency and accountability, EITI can increase public trust and dialogue, improve governance, attract investment, and manage and enhance growth so that citizens receive financial and societal benefits from a country’s natural resources.</p>
 
-        <h2>1 | Transparency</h2>
-
-        <p>Companies publish what they pay and governments publish what they receive in an EITI Report.</p>
-
-        <h2>2 | Accountability</h2>
-
-        <p>This process is overseen by a multi-stakeholder group of governments, companies and civil society.</p>
+		<p>Since 2003, international representatives from government, industry, and civil society have developed and adapted the <a href="https://eiti.org/eiti/principles">EITI Principles</a>. These principles are the cornerstone of the initiative and endorsed by every stakeholder.</p>
 
       </div>
 
-      <div class="communities-right">
+      <!-- <div class="container-right-5">
+		  <img src="{{ site.baseurl }}/img/nat-gas-well.jpg" alt="Natural gas well in Colorado" style="width:100%;">
+      </div> -->
 
-        <img src="{{ site.baseurl }}/img/eiti-report.jpg" alt="The EITI report process" class="u-img" style="padding-top:50px;">
+    </section>
+
+    <section class="container">
+
+      <div class="container-left-7">
+
+		  <h2 class="h3">Who’s involved</h2>
+
+		  <h3 class="h4">1 | Multi-Stakeholder Group</h3>
+
+		  <p>To increase transparency and accountability, EITI relies on a cross-sector partnership between government (agencies that oversee extraction in the U.S.), industry (companies operating in the extractive industries), and civil society (individuals and organizations that represent community and citizen interests). Together, all three sectors make up the <a href="https://www.doi.gov/eiti/FACA">Multi-Stakeholder Group</a> (MSG) responsible for overseeing EITI.</p>
+
+		  <p>An Independent Administrator (IA) also assists in implementing the EITI Standard. Later, a Validator commissioned by the EITI International Secretariat assesses whether or not the country successfully implemented the EITI Standard.</p>
+
+      </div>
+
+      <div class="container-right-5">
+
+          <img src="{{ site.baseurl }}/img/msg.svg" alt="The EITI multi-stakeholder group consists of civil society, companies and governments." class="article_img-60 u-margin-top">
 
       </div>
 
@@ -36,33 +74,15 @@ permalink: /about/
 
     <section class="container">
 
-      <div class="communities-left">
+      <div class="container-left-7">
 
-        <p><strong>The United States is committed to implementing the EITI Standard.</strong> In September 2011, the U.S. announced that it would begin the multi-year process of becoming an EITI Compliant country. The U.S. intends to implement EITI to provide accessible and useful information about public resources and their associated revenues. Doing so will bolster the social license to operate and strengthen the investment climate for extractive industries. Public policy will be better informed, and public trust will be strengthened. With this effort in participatory government and collaborative decision-making, public financial management will be enhanced and citizens will ensure that the government receives a fair return for the public resources it manages on their behalf. <a href="/docs/USEITI-Fact-Sheet-February-2015.pdf">Download factsheet.</a></p>
-
-        <p><strong>Initial Steps.</strong> In December 2012, following a comprehensive stakeholder assessment and call for nominations, the Secretary of the Interior formed the USEITI Multi-Stakeholder Group <a href="http://www.gsa.gov/portal/content/104514?utm_source=OGP&amp;utm_medium=print-radio&amp;utm_term=faca&amp;utm_campaign=shortcuts" target="_blank">Federal Advisory Committee</a>, also known as the MSG. The USEITI MSG is comprised of 21 members and 20 alternates who represent a variety of stakeholders. The USEITI MSG has met several times since February 2013 to oversee EITI implementation, define the scope and materiality for initial USEITI reporting, and prepare an application for EITI candidacy. On December 11, 2013, the MSG approved the U.S. Candidacy Application, and on December 19, 2013, Secretary of the Interior submitted the Application to the EITI International Board.</p>
+		<p>Government, industry, and civil society collaborate in a disclosure process regarding natural resource revenue, called reconciliation. Government and industry share with the IA the total amount of revenue the government received and industry paid in the year under review. The IA reconciles the reported revenue and investigates any discrepancies. The public can see the results for their respective country in an annual report, which includes a contextual narrative of the country’s legal and fiscal regime. There are currently 48 EITI-implementing countries, 31 of which are compliant with the EITI Standard.</p>
 
       </div>
 
-      <div class="communities-right">
+      <div class="container-right-5">
 
-        <img src="{{ site.baseurl }}/img/nat-gas-well.jpg" alt="Natural gas well in Colorado" class="u-img">
-
-      </div>
-
-    </section>
-
-    <section class="container">
-
-      <div class="communities-left">
-
-        <p><strong>Today.</strong> The USEITI Multi-Stakeholder Group meets regularly and is responsible for working collaboratively to oversee USEITI implementation. It is a consensus-based decision making body, and in accordance with EITI principles, is comprised of representatives from government, industry, and civil society (public) stakeholders. To see the latest from this process, visit the <a href="https://www.doi.gov/eiti/FACA">USEITI MSG homepage</a>.</p>
-
-      </div>
-
-      <div class="communities-right">
-
-        <img src="{{ site.baseurl }}/img/eiti-msg.jpg" alt="Multi-stakeholder group process" class="u-img" style="width:70%;">
+        <img src="{{ site.baseurl }}/img/eiti-report-process.svg" alt="The EITI report process involves companies disclosing payments, and government disclosing receipts, which are then reconciled by an independent administrator." class="article_img-60">
 
       </div>
 
@@ -72,123 +92,117 @@ permalink: /about/
 
   <section class="container communities-content">
 
-    <article class="communities-left bureaus">
+    <article class="container-left-7 bureaus">
 
-      <h3>
-        <a name="intro">Department of the Interior</a>
-      </h3>
+		<h3 class="h4">2 | Leadership</h3>
 
-      <h2>Contibuting Bureaus and Offices</h2>
+		<p>The Secretary of the U.S. Department of the Interior (DOI) leads USEITI.</p>
 
-      <article>
-        <div>
-          <img src="{{ site.baseurl }}/img/logos/BIA-mark.png" alt="U.S. Department of the Interior Bureau of Indian Affairs 1824 Seal">
+		<p><ul class="list-bullet">
+			<li>December 2012: The Secretary of the Interior formed the MSG with 22 members and 21 alternates from government, industry, and civil society organizations.</li>
+			<li>December 19, 2013: The U.S. submitted an application to participate to the EITI International Board. The MSG developed this application after engaging with stakeholders across the country.</li>
+			<li>March 19, 2014: The EITI International Board accepted the U.S. as a candidate country.</li>
+			<li>Summer of 2014: DOI selected an IA for the USEITI, Deloitte & Touche LLP.</li>
+		</ul></p>
+
+		<h3 class="h4">3 | Federal agencies</h3>
+
+		<p>Congress passes laws to govern the extraction of natural resources and the fiscal management of resulting revenue. Federal agencies, which are part of the executive branch, then develop regulations and rules to implement and enforce those laws. DOI has primary responsibility for implementing the relevant statutes and regulations. It does so in consultation with other federal agencies, including NOAA, EPA, the Department of Energy (DOE), and others.</p>
+
+      <article class="bureau">
+        <div class="bureau-left">
+          <img class="bureau-image" src="{{ site.baseurl }}/img/logos/DOI-mark.png" alt="U.S. Department of the Interior Seal">
         </div>
-        <div>
-          <h3>Bureau of Indian Affairs</h3>
-          <p>Indian Affairs fulfills Indian trust responsibilities; promotes self-determination on behalf of 566 federally recognized Indian tribes; and funds compacts and contracts to support natural resource education, law enforcement, and social service programs that are delivered by tribes.</p>
-          <p><a href="http://www.bia.gov/WhoWeAre/BIA/index.htm">Go to the BIA website &#8594;</a></p>
+        <div class="bureau-right">
+          <h4>Department of the Interior (DOI)</h4>
+          <p><a href="https://www.doi.gov/">DOI</a> protects and manages the nation’s natural resources and cultural heritage; provides scientific and other information about those resources; and honors its trust responsibilities or special commitments to American Indians, Alaska Natives, and affiliated island communities.</p>
+
+		  <p>Bureaus and offices within DOI fulfill this mission by serving three primary functions related to natural resource extraction: managing federal and Indian lands and natural resources; enforcing regulations and rules; and collecting, managing, and disbursing revenue from natural resource extraction on federal and Indian lands.</p>
         </div>
       </article>
 
-      <article>
-        <div>
-          <img src="{{ site.baseurl }}/img/logos/BLM-mark.png" alt="U.S. Department of the Interior Bureau of Land Management Seal">
+      <article class="bureau">
+        <div class="bureau-left">
+          <img class="bureau-image" src="{{ site.baseurl }}/img/logos/BLM-mark.png" alt="U.S. Department of the Interior Bureau of Land Management Seal">
         </div>
-        <div>
-          <h3>Bureau of Land Management</h3>
-          <p>Mission: to sustain the health, diversity, and productivity of the public lands for the use and enjoyment of present and future generations. BLM manages and conserves resources for multiple use and sustained yield on approximately 248 million acres of public land, and an additional 700 million acres of subsurface federal mineral estate, including the following: renewable and conventional energy and mineral development; forest management, timber and biomass production; wild horse and burro management; management of diverse landscapes for the benefit of wildlife, domestic grazing, and recreational uses; resource management at sites of natural, scenic, scientific, and historical value including the National Landscape Conservation System.</p>
-          <p><a href="http://www.blm.gov/">Go to the BLM website &#8594;</a></p>
-        </div>
-      </article>
-
-      <article>
-        <div>
-          <img src="{{ site.baseurl }}/img/logos/BOEM-mark.png" alt="BOEM Bureau of Ocean Energy Management Seal">
-        </div>
-        <div>
-          <h3>Bureau of Ocean Energy Management</h3>
-          <p>BOEM manages access to renewable and conventional energy resources of the Outer Continental Shelf (OCS); administers over 6,000 active fluid mineral leases on approximately 33 million OCS acres; issues leases that provide 21 percent of domestic crude oil and five percent of domestic natural gas supply; and oversees lease and grant issuance for off-shore renewable energy projects.</p>
-          <p><a href="http://www.boem.gov/">Go to the BOEM website &#8594;</a></p>
+        <div class="bureau-right">
+          <h4>Bureau of Land Management (BLM)</h4>
+		  <p><a href="http://www.blm.gov/">BLM</a> manages and conserves federal lands for the use and enjoyment of present and future generations under a mandate of multiple-use and sustained yield. BLM manages exploration, development, and production of natural resources on federal lands, including lease sales and the permitting and licensing processes. BLM also ensures that developers and operators comply with requirements and regulations. BLM collects revenue in the form of fees.</p>
         </div>
       </article>
 
-      <article>
-        <div>
-          <img src="{{ site.baseurl }}/img/logos/USBR-mark.png" alt="U.S. Department of the Interior Bureau of Reclamation Seal">
+      <article class="bureau">
+        <div class="bureau-left">
+          <img class="bureau-image" src="{{ site.baseurl }}/img/logos/OSMRE-mark.png" alt="U.S. Department of the Interior Office of Surface Mining Seal">
         </div>
-        <div>
-          <h3>Bureau of Reclamation</h3>
-          <p>USBR manages, develops, and protects water and related resources in an environmentally and economically sound manner in the interest of the American public. It manages 476 dams and 337 reservoirs and delivers water to 1 in every 5 western farmers and more than 31 million people. USBR is the largest wholesale supplier of water in the Nation and America’s second largest producer of hydroelectric power.</p>
-          <p><a href="http://www.usbr.gov/">Go to the USBR website &#8594;</a></p>
+        <div class="bureau-right">
+          <h4>Office of Surface Mining Reclamation and Enforcement (OSMRE)</h4>
+          <p><a href="http://www.osmre.gov/">OSMRE</a>’s mission is to establish a nationwide program to protect society and the environment from the adverse effects of surface coal mining operations, under which OSMRE is charged with balancing the nation’s need for continued domestic coal production with protection of the environment. OSMRE works with states and tribes to ensure that citizens and the environment are protected during coal mining and that land is restored to beneficial use when mining is finished.</p>
+
+		  <p>OSMRE and its partners are also responsible for reclaiming and restoring lands and water degraded by mining operations before 1977. OSMRE collects revenue in the form of reclamation fees from companies for the <a href="http://www.osmre.gov/programs/aml.shtm">Abandoned Mine Reclamation Fund</a>, a fund intended to pay for the cleanup of mines abandoned before 1977. Interest earnings on the fund are used to pay for certain United Mine Workers of America health and retirement funds authorized by Congress.</p>
         </div>
       </article>
 
-      <article>
-        <div>
-          <img src="{{ site.baseurl }}/img/logos/BSEE-mark.png" alt="BSEE Bureau of Safety and Environmental Enforcement Seal">
+      <article class="bureau">
+        <div class="bureau-left">
+          <img class="bureau-image" src="{{ site.baseurl }}/img/logos/BOEM-mark.png" alt="BOEM Bureau of Ocean Energy Management Seal">
         </div>
-        <div>
-          <h3>Bureau of Safety and Environmental Enforcement</h3>
-          <p>BSEE promotes safety, protects the environment, and conserves resources offshore through regulatory enforcement of offshore oil and gas facilities on the 1.7 billion acre US Outer Continental Shelf (OCS); oversees oil spill for US facilities in state and federal waters and operates the Ohmsett National Oil Spill Response Research test facility; and supports research to promote the use of best available safest technology for oil spill response.</p>
-          <p><a href="http://www.bsee.gov/">Go to the BSEE website &#8594;</a></p>
-        </div>
-      </article>
-
-      <article>
-        <div>
-          <img src="{{ site.baseurl }}/img/logos/NPS-mark.png" alt="National Park Service Seal">
-        </div>
-        <div>
-          <h3>National Park Service</h3>
-          <p>The National Park Service preserves unimpaired the natural and cultural resources and values of the national park system for the enjoyment, education, and inspiration of this and future generations. The Park Service cooperates with partners to extend the benefits of natural and cultural resource conservation and outdoor recreation throughout this country and the world. The NPS maintains and manages a network of 401 natural, cultural, and recreational sites; manages and protects over 26,000 historic structures, over 44 million acres of designated wilderness, and a wide range of museum collections and cultural and natural landscapes; provides outdoor recreation to over 286 million annual park visitors; provides technical assistance and support to state and local natural and cultural resource sites and programs; and fulfills responsibilities under the National Historic Preservation Act</p>
-          <p><a href="http://www.nps.gov/">Go to the NPS website &#8594;</a></p>
+        <div class="bureau-right">
+          <h4>Bureau of Ocean Energy Management (BOEM)</h4>
+          <p><a href="http://www.boem.gov/">BOEM</a> promotes energy independence, environmental protection, and economic development through responsible, science-based management of offshore conventional and renewable energy and marine mineral resources. BOEM manages the responsible exploration and development (including resource evaluation, planning, and leasing) of energy and mineral resources in federal submerged lands and updates <a href="http://www.boem.gov/National-Environmental-Policy-Act/">leasing regulations for the Outer Continental Shelf</a>. In FY 2013, BOEM collected $2 million in revenue in the form of cost recovery fees.</p>
         </div>
       </article>
 
-      <article>
-        <div>
-          <img src="{{ site.baseurl }}/img/logos/DOI-mark.png" alt="U.S. Department of the Interior March 3, 1849 Seal">
+      <article class="bureau">
+        <div class="bureau-left">
+          <img class="bureau-image" src="{{ site.baseurl }}/img/logos/BSEE-mark.png" alt="BSEE Bureau of Safety and Environmental Enforcement Seal">
         </div>
-        <div>
-          <h3>Office of Natural Resources Revenue</h3>
-          <p>ONRR is responsible for the efficient, timely, and accurate collection and disbursement of all royalty payments, rentals, bonuses, fines, penalties, assessments, and other revenue due the Federal Government, American Indian Tribes and allottees, States and the American people from the leasing and production of natural resources from Federal and Indian lands onshore and the Outer Continental Shelf. Every American benefits from these revenues, either directly through payments to tribes and Indian mineral owners or indirectly through contributions to the Historic Preservation Fund, the Land and Water Conservation Fund, the Reclamation Fund, and disbursements to States and the General Fund of the U.S. Treasury.</p>
-          <p><a href="http://www.onrr.gov/">Go to the ONRR website &#8594;</a></p>
-        </div>
-      </article>
-
-      <article>
-        <div>
-          <img src="{{ site.baseurl }}/img/logos/OSMRE-mark.png" alt="U.S. Department of the Interior Office of Surface Mining Seal">
-        </div>
-        <div>
-          <h3>Office of Surface Mining, Reclamation and Enforcement</h3>
-          <p>Since 1977, OSMRE has protected the environment and people while regulating surface coal mining in the United States, and funded the restoration of abandoned coal mines. OSM protects the environment during coal mining through Federal programs, provides grants to states and tribes, and oversight activities; ensures the land is reclaimed afterwards; and mitigates the effects of past mining by pursuing reclamation of abandoned coal mine lands.</p>
-          <p><a href="http://www.osmre.gov/">Go to the OSMRE website &#8594;</a></p>
+        <div class="bureau-right">
+          <h4>Bureau of Safety and Environmental Enforcement (BSEE)</h4>
+          <p><a href="http://www.bsee.gov/">BSEE</a> promotes safety, protects the environment, and conserves resources offshore through vigorous regulatory oversight and enforcement. BSEE enforces safety and environmental regulations, as well as updating rules governing operations on the Outer Continental Shelf. In FY 2013, BSEE collected $70 million in revenue in the form of fees.</p>
         </div>
       </article>
 
-      <article>
-        <div>
-          <img src="{{ site.baseurl }}/img/logos/USFWS-mark.png" alt="U.S. Fish and Wildlife Service Department of the Interior Seal">
+      <article class="bureau">
+        <div class="bureau-left">
+          <img class="bureau-image" src="{{ site.baseurl }}/img/logos/ONRR-mark.svg" alt="Office of Natural Resources Revenue">
         </div>
-        <div>
-          <h3>United States Fish and Wildlife Service</h3>
-          <p>Mission: to work with others to conserve, protect and enhance fish, wildlife, and plants and their habitats for the continuing benefit of the American people. USFWS manages the 150 million-acre National Wildlife Refuge System primarily for the benefit of fish and wildlife; manages 70 fish hatcheries and other related facilities for endangered species recovery and to restore native fisheries populations; protects and conserves migratory birds, threatened and endangered species, and certain marine mammals; and hosts approximately 47 million visitors annually at 561 refuges located in all 50 states and 38 wetland management districts.</p>
-          <p><a href="http://www.fws.gov/">Go to the USFWS website &#8594;</a></p>
+        <div class="bureau-right">
+          <h4>Office of Natural Resources Revenue (ONRR)</h4>
+          <p><a href="http://www.onrr.gov/">ONRR</a> collects, disburses, and verifies federal and Indian energy and other natural resource revenue on behalf of all Americans. ONRR collects revenue from energy and mineral leases for both onshore and offshore federal and Indian lands, manages and disburses revenue to funds and recipients, and advocates for the interests of Indian mineral owners. In FY 2013, ONRR collected $14.4 billion in revenue in the form of bonuses, rents, and royalties.</p>
         </div>
       </article>
 
-      <article>
-        <div>
-          <img src="{{ site.baseurl }}/img/logos/USGS-mark.png" alt="USGS Science for a changing world Seal">
+      <article class="bureau">
+        <div class="bureau-left">
+          <img class="bureau-image" src="{{ site.baseurl }}/img/logos/DoT-mark.png" alt="U.S. Department of the Treasury Seal">
         </div>
-        <div>
-          <h3>United States Geological Survey</h3>
-          <p>The USGS serves the Nation by providing reliable scientific information to describe and understand the Earth; minimize loss of life and property from natural disasters; manage water, biological, energy, and mineral resources; and enhance and protect our quality of life. It conducts scientific research in ecosystems, climate and land use change, mineral assessments, environmental health, and water resources to inform effective decision making and planning; produces information to increase understanding of natural hazards such as earthquakes, volcanoes, and landslides; conducts research on oil, gas, and alternative energy potential, production, consumption, and environmental effects; leads the effort on climate change science research for the Department of the Interior; and provides access to natural science information to support decisions about how to respond to natural risks and manage natural resources.</p>
-          <p><a href="http://www.usgs.gov/">Go to the USGS website &#8594;</a></p>
+        <div class="bureau-right">
+          <h4>Department of the Treasury</h4>
+          <p><a href="http://www.treasury.gov/Pages/default.aspx">The Treasury</a> supports economic growth and stability in the U.S. and overseas, protects the U.S. financial system, and manages the federal government’s finances and resources.</p>
         </div>
       </article>
+
+      <article class="bureau">
+        <div class="bureau-left">
+          <img class="bureau-image" src="{{ site.baseurl }}/img/logos/IRS-mark.svg" alt="Internal Revenue Service Seal">
+        </div>
+        <div class="bureau-right">
+          <h4>Internal Revenue Service (IRS)</h4>
+          <p><a href="https://www.irs.gov/">The IRS</a> assists U.S. taxpayers with understanding and meeting their tax obligations, and enforces the law when taxpayers do not meet these obligations. The IRS collects corporate income taxes from corporations in the extractive industries, as well as income taxes from all other companies operating in these industries. In the 2013 tax year, the IRS calculated <a href="https://www.irs.gov/uac/SOI-Tax-Stats-Table-7-Corporation-Returns-With-Net-Income">$11.8 billion in corporate income tax receipts</a> from mining and petroleum and coal products manufacturing industries.</p>
+        </div>
+      </article>
+
+      <h3 class="h4">Public comments</h3>
+
+      <p>Read public comments submitted during the USEITI process:</p>
+        <ul class="list-bullet">
+          <li><a href="https://www.doi.gov/eiti/
+FACA/outreach">Public comments from the USEITI application development process</a></li>
+          <li><a href="https://www.doi.gov/eiti/FACA/msg-meeting-minutes">Public comments from minute notes of MSG meetings</a></li>
+          <li><a href="https://www.doi.gov/sites/doi.gov/files/
+migrated/eiti/FACA/upload/2015-WORKPLAN-NARRATIVE-11_25_14-final.pdf">USEITI 2015 Workplan (PDF)</a></li>
+        </ul>
 
     </article>
 

@@ -1,0 +1,82 @@
+.map-wrapper {
+  padding: 0 $base-padding;
+
+  // @include respond-to(medium-up) {
+  //   padding: 0;
+  // }
+}
+
+eiti-slider {
+  margin-top: 1em;
+}
+
+.region-map {
+  display: block;
+  margin-bottom: 1em;
+  max-height: 50vh; // 50% of the viewport height
+  width: 100%;
+}
+
+.map-legend {
+  display: flex;
+  margin-bottom: $base-padding-large;
+
+  .step {
+    border-bottom-style: solid;
+    border-bottom-width: 0.5em;
+    display: block;
+    flex: 1;
+    margin-right: 0.2em;
+    padding-left: 0.1em;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  &.legend-invalid {
+    .step .label {
+      visibility: hidden;
+    }
+  }
+}
+
+.timeline {
+  shape-rendering: crispEdges;
+  width:100%;
+
+  line {
+    fill: none;
+    stroke: $dark-blue;
+    stroke-linecap: square;
+    stroke-width: 1;
+    vector-effect: non-scaling-stroke;
+  }
+
+  .area {
+    fill: $positive-fill;
+
+    &.negative {
+      fill: $negative-fill;
+    }
+  }
+
+  .mask {
+    fill: $mid-blue-opaque;
+    opacity: 0.5;
+
+    line {
+      stroke-width: 2;
+    }
+  }
+}
+
+.map-intro_text {
+  @include heading(para-md);
+  padding: $base-padding;
+  padding-top: 0;
+
+  @include respond-to(medium-up) {
+    padding-left: 0;
+  }
+}

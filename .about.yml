@@ -1,0 +1,116 @@
+---
+# .about.yml project metadata
+#
+# Short name that acts as the project identifier (required)
+name: useiti-report
+
+# Full proper name of the project (required)
+full_name: The United States Extractives Industries Transparency Initiative (USEITI)
+
+# The type of content in the repo
+# values: app, docs, policy
+type: app
+
+# Describes whether a project team, working group/guild, etc. owns the repo (required)
+# values: guild, working-group, project
+owner_type: project
+
+# Name of the main project repo if this is a sub-repo; name of the working group/guild repo if this is a working group/guild subproject
+#parent:
+
+# Maturity stage of the project (required)
+# values: discovery, alpha, beta, live
+stage: beta
+
+# Whether or not the project is actively maintained (required)
+# values: active, deprecated
+status: active
+
+# Description of the project
+description: |
+  This site and open data portal supports the President’s Open Gov Partnership National Action Plan commitment to the Extractive Industries Transparency Initiative.
+
+# Should be 'true' if the project has a continuous build (required)
+# values: true, false
+testable: true
+
+# Team members contributing to the project (required)
+# Items:
+# - github: GitHub user name
+#   id: Internal team identifier/user name
+#   role: Team member's role; leads should be designated as 'lead'
+team:
+- id: mhz
+  github: meiqimichelle
+  role: lead
+- id: shawn
+  github: shawnbot
+  role: Developer
+- id: brian
+  github: gemfarmer
+  role: Developer
+- id: ericronne
+  github: ericronne
+  role: UX Designer
+- id: nicole.fenton
+  github: nicoleslaw
+  role: Content Designer
+- id: corey.mahoney
+  github: coreycaitlin
+  role: Content Designer  
+
+# Partners for whom the project is developed
+partners:
+- U.S. Department of the Interior
+
+# Brief descriptions of significant project developments
+milestones:
+- July 2014 - 18F began work on project
+- September 2014 Alpha site launched
+- December 2014 Beta site launched
+- December 2015 First annual report due
+
+# Technologies used to build the project
+stack:
+- JavaScript
+- D3
+- Federalist
+- Jekyll
+
+# Brief description of the project's outcomes
+impact: >
+  Revenue from the sale of natural resources on Federal lands totaled $97.5 billion between 2003 to 2013.
+
+# Services used to supply project status information
+services:
+- name: Hound
+  category: Enforce SCSS and JavaScript formatting conventions
+
+# Licenses that apply to the project and/or its components (required)
+# Items by property name pattern:
+#   .*:
+#     name: Name of the license from the Software Package Data Exchange (SPDX): https://spdx.org/licenses/
+#     url: URL for the text of the license
+licenses:
+  doi-extractives-data:
+    name: CC0-1.0
+    url: https://github.com/18F/doi-extractives-data/blob/master/LICENSE.md
+
+# Blogs or websites associated with project development
+#blog:
+#-
+
+# Links to project artifacts
+# Items:
+# - url: URL for the link
+#   text: Anchor text for the link
+links:
+- url: https://useiti.doi.gov
+  text: U.S. EITI
+- url: https://eiti.org
+  text: Extractive Industries Transparency Initiative (Global site)
+
+# Email addresses of points-of-contact
+contact:
+- url: mailto:michelle.herzfeld@gsa.gov
+  text: Michelle Hertzfeld

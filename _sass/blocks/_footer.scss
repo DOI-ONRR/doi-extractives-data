@@ -1,0 +1,187 @@
+// Footer
+//
+// This is on the bottom of every page. Find in _includes/layout/footer.html
+//
+//
+// Styleguide blocks.footer
+
+footer,
+.footer,
+.footer-heading,
+.footer-para,
+.footer-para_callout,
+.footer-social {
+  @include heading(para-md);
+  color: $mid-gray;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+footer,
+.footer {
+  background-color: $light-black;
+  margin-bottom: 0;
+  padding-bottom: ($base-padding-extra * 1.5);
+  padding-top: ($base-padding-extra * 1.5);
+
+  .fa-circle {
+    color: $neutral-gray;
+  }
+
+  .fa-inverse {
+    color: $light-black;
+  }
+}
+
+
+
+.footer-para {
+  margin-bottom: $base-padding-large;
+}
+
+.footer-para_callout {
+  color: $white;
+  font-weight: $weight-book;
+  margin-bottom: 0;
+}
+
+.footer-para_last {
+  @include heading(para-sm);
+  color: $white;
+
+  @include respond-to(medium-up) {
+    margin-bottom: 0;
+  }
+}
+
+.footer-image {
+  margin-bottom: $base-padding-extra;
+  max-width: 260px;
+  width: $eiti-logo-width;
+
+  @include respond-to(huge-plus-up) {
+    width: 100%;
+  }
+}
+
+.footer-button {
+  height: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: auto;
+}
+
+.footer-col_left {
+  @include span-columns(12);
+  margin-bottom: $base-padding-extra;
+
+  @include respond-to(medium-up) {
+    @include span-columns(4);
+  }
+}
+
+.footer-col_right {
+  @include span-columns(12);
+
+  @include respond-to(medium-up) {
+    @include span-columns(8);
+  }
+}
+
+.footer-nav {
+  @include span-columns(12);
+  padding-bottom: $base-padding;
+
+  @include respond-to(medium-up) {
+    @include span-columns(2 of 8);
+    @include omega(4n);
+    padding-bottom: 0;
+  }
+
+  a {
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+}
+
+.footer-list_item_heading {
+  @include heading(para-sm);
+  font-weight: $weight-book;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.footer-list_item {
+  @include heading(para-sm);
+}
+
+.footer-downloads {
+  border-top: 1px $dark-gray solid;
+  font-weight: $weight-book;
+  margin-top: 33px;
+  padding-top: 29px;
+
+  icon {
+    @include heading(para-lg);
+    color: $mid-gray;
+  }
+}
+
+.footer-bottom {
+  @include span-columns(12);
+  @include heading(para-md);
+  border-top: 1px $dark-gray solid;
+  margin-top: 33px;
+  padding-top: 37px;
+
+  @include respond-to(medium-up) {
+    @include span-columns(8 of 8);
+    @include omega();
+
+    p {
+      padding-right: $base-padding-large;
+    }
+  }
+}
+
+.footer-bottom-left {
+  @include span-columns(12);
+
+  @include respond-to(medium-up) {
+    @include span-columns(6 of 8);
+  }
+}
+
+.footer-bottom-right {
+  @include span-columns(12);
+
+  @include respond-to(medium-up) {
+    @include span-columns(2 of 8);
+    @include omega();
+  }
+}
+
+.footer-social {
+  display: inline-block;
+}
+
+.footer-link_social {
+  display: block;
+  padding-bottom: $base-padding-lite;
+
+  i {
+    color: $dark-gray;
+  }
+
+  &:hover,
+  &:focus {
+    color: $white;
+    text-decoration: underline;
+  }
+}
+
+.footer-social_callout {
+  margin-bottom: $base-padding;
+}

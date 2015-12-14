@@ -1,0 +1,83 @@
+// Buttons
+//
+// Buttons suitable for clicking
+//
+// .button              - Standard class -- creates generic button
+// .button-primary      - primary style of button
+// .button-secondary     - primary style of button
+// .button-big           - larger button
+//
+// Markup:
+// <button class='button {{modifier_class}}'>{{modifier_class}}</button>
+//
+// Styleguide components.buttons
+
+button,
+.button,
+input[type='submit'] {
+  @extend %button;
+}
+
+.button-primary {
+  @extend %button;
+
+  background-color: $primary-button-bg-color;
+  color: $white;
+  padding-left: 0.7em;
+  padding-right: 0.7em;
+  -webkit-font-smoothing: antialiased;
+
+  &:hover,
+  &:focus {
+    background-color: $primary-hover-button-bg-color;
+    color: $primary-hover-button-color;
+
+    a {
+      border-bottom: none;
+      color: $primary-button-color;
+    }
+  }
+
+  a {
+    border-bottom: none;
+    color: $primary-button-color;
+  }
+}
+
+.button-secondary,
+.button-tertiary {
+  @extend %button;
+
+  background-color: $secondary-button-bg-color;
+  border: 1px solid $secondary-button-border-color;
+  color: $secondary-button-color;
+  padding-left: 0.7em;
+  padding-right: 0.7em;
+
+  &:hover,
+  &:focus {
+    background-color: $secondary-hover-button-bg-color;
+    color: $secondary-hover-button-color;
+
+    a {
+      border-bottom: none;
+      color: $secondary-button-color;
+    }
+  }
+
+  a {
+    border-bottom: none;
+    color: $secondary-button-color;
+  }
+}
+
+.button-tertiary {
+  background-color: $tertiary-button-bg-color;
+}
+
+.button-big {
+  font-size: $base-font-size;
+  -webkit-font-smoothing: antialiased;
+  height: 35px;
+  width: 150px;
+}

@@ -1,0 +1,136 @@
+// Glossary
+//
+// The site drawer
+//
+// Styleguide components.drawer
+
+// Glossary drawer
+// Markup:
+// <div class="drawer" id="glossary" aria-hidden="false">
+//   <button title="Close glossary"
+//       class="button button--close toggle"><span class="u-visually-hidden"><icon class="icon-close-x"></icon></span>
+//   </button>
+//   <label for="drawer-search" class="label">Filter glossary terms</label>
+//   <input id="drawer-search" type="search" placeholder="e.g. placeholder text">
+// </div>
+//
+// Styleguide components.drawer.drawer
+
+
+
+.drawer {
+  @include transition(right, 0.3s);
+
+  background-color: $light-black;
+  bottom: 0;
+  color: $white;
+  max-width: 30rem;
+  overflow-y: scroll;
+  padding: 2rem;
+  position: fixed;
+  top: 0;
+  width: 300px;
+  z-index: 5000;
+
+  h2,
+  p,
+  label,
+  i {
+    color: $white;
+  }
+
+  label {
+    @include font-size(0.875);
+  }
+
+  &[aria-hidden=true],
+  &[aria-expanded=false] {
+    display: block;
+    right: -100%;
+  }
+
+  &[aria-hidden=false],
+  &[aria-expanded=true] {
+    @include transition(right, 0.3s);
+    right: 0;
+  }
+
+  .button--close {
+    @include font-size(1.3);
+    background-color: transparent;
+    color: $white;
+    display: inline-block;
+    float: right;
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+}
+
+.drawer-icon {
+  padding-right: $base-padding-lite;
+}
+
+.drawer-header {
+  i:before {
+    padding-left: 0;
+    padding-right: $base-padding-lite;
+  }
+}
+
+.drawer-search {
+  border: none;
+  margin-top: 0;
+
+  @include placeholder() {
+    color: $neutral-gray;
+    font-style: italic;
+  }
+}
+
+.drawer-search_form {
+  width: 100%;
+}
+
+input.drawer-search_field {
+  border: 0;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  display: inline;
+  height: 34px;
+  margin-top: 0;
+  width: 86%;
+}
+
+.drawer-search_button {
+  background-color: $white;
+  border-radius: 0 $base-border-radius $base-border-radius 0;
+  float: right;
+  height: 34px;
+  position: relative;
+  width: 14%;
+}
+
+.drawer__item {
+  border-bottom: 1px solid $mid-gray;
+
+  &:first-child {
+    border-top: 1px solid $mid-gray;
+  }
+
+  .accordion__header {
+    padding: 1rem 4rem 1rem 0;
+    position: relative;
+  }
+
+  .accordion__button {
+    background-color: transparent;
+    background-size: 50%;
+    height: 2rem;
+    margin-top: -1rem;
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    width: 2rem;
+  }
+}

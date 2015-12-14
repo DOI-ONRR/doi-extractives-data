@@ -1,0 +1,241 @@
+// Header
+//
+// This is on the top of every page. Find in _includes/layout/header.html
+//
+// Markup:
+// <header class="header">
+//   <div>
+//     <a class="header-image_link" href="/">
+//       <img class="header-image" src="https://eiti-dev.18f.gov/img/USEITI_Logotype.png" alt="USEITI logo">
+//     </a>
+//   </div>
+//   <nav class="header-nav">
+//     <ul class="header-nav_inner">
+//       <li class="header-nav_item">
+//         <a class="header-nav_item_link" href="{{ site.baseurl }}/">Home</a>
+//       </li>
+//       <li class="header-nav_item">
+//         <a class="header-nav_item_link" href="{{ site.baseurl }}/about">About USEITI</a>
+//       </li>
+//     </ul>
+//   </nav>
+// </header>
+//
+// Styleguide blocks.header
+
+header,
+.header {
+  @include outer-container($max-width);
+
+  margin-bottom: $base-padding-large;
+  margin-top: $base-padding;
+  margin-left: $base-padding;
+  margin-right: $base-padding;
+
+  @include respond-to(huge-plus-up) {
+    @include outer-container($max-width);
+  }
+}
+
+.header-image_link {
+  &:hover,
+  &:focus {
+    border: none;
+    text-decoration: none;
+  }
+}
+
+.header-image {
+  margin-top: $base-padding / 2;
+  max-width: 280px;
+  width: $eiti-logo-width;
+
+  @include respond-to(huge-plus-up) {
+    width: 100%;
+  }
+}
+
+.header-left {
+  @include span-columns(6);
+
+  @include respond-to(medium-up) {
+    @include span-columns(3);
+  }
+}
+
+.header-right {
+  float: right;
+
+  &.header-bars {
+    display: inline-block;
+    padding-bottom: 0;
+    padding-top: 0;
+
+    icon {
+      @include font-size(1.87);
+    }
+  }
+
+  &.header-nav {
+    display: none;
+  }
+
+  @include respond-to(medium-up) {
+
+    &.header-bars {
+      display: none;
+    }
+
+    &.header-nav {
+      @include span-columns(9);
+      @include omega();
+      display: inline-block;
+    }
+  }
+}
+
+.header-bars {
+  background-color: transparent;
+}
+
+.header-nav_top,
+.header-nav_bottom {
+  @include heading('para-md');
+  display: inline-block;
+  float: right;
+
+  @include respond-to(huge-plus-up) {
+    padding-right: 0;
+  }
+}
+
+.header-nav_top {
+  margin-bottom: 0;
+
+  @include respond-to(huge-plus-up) {
+    margin-bottom: 1em;
+  }
+}
+
+.header-nav_item,
+.header-nav_item_top {
+  display: inline-block;
+  padding-right: $base-padding;
+  padding-top: 0;
+  font-weight: $weight-light;
+}
+
+.header-nav_item_top {
+  padding-top: $base-padding;
+}
+
+.header-nav_item:last-child,
+.header-nav_item_top:last-child {
+  padding-right: 0;
+}
+
+.header-nav_item.active {
+  font-weight: $weight-book;
+}
+
+.header-nav_item_link {
+  @include font-size(0.75);
+  color: $dark-gray;
+  letter-spacing: 1.1px;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  @include respond-to(huge-plus-up) {
+    @include font-size(0.875);
+  }
+
+  &:hover,
+  &:active {
+    text-decoration: underline;
+  }
+}
+
+.header-nav_item_top {
+  margin-bottom: 0.55rem;
+  padding-right: $base-padding-lite;
+
+  &:nth-child(2),
+  &:nth-child(3) {
+    padding-left: $base-padding-lite;
+
+  }
+
+  &:last-child {
+    vertical-align: top;
+    padding-top: 0.95rem;
+  }
+
+  .header-nav_search {
+    @include font-size(0.65);
+
+    border-bottom-right-radius: 0;
+    border-color: $neutral-gray;
+    border-right: none;
+    border-top-right-radius: 0;
+    color: $dark-gray;
+    display: inline-block;
+    float: left;
+    font-family: $base-font-family;
+    height: 30px;
+    margin: 0;
+    margin-left: $base-padding;
+    padding: 0.52rem;
+    width: 150px;
+
+    @include respond-to(huge-up) {
+      padding: 0.42rem;
+    }
+
+    @include respond-to(huge-plus-up) {
+      @include font-size(0.75);
+    }
+  }
+
+  .header-nav_search_icon {
+    background-color: $blue;
+    border-radius: 0 $base-border-radius $base-border-radius 0;
+    color: $white;
+    cursor: pointer;
+    float: right;
+    padding: 0.42rem;
+    width: 37px;
+  }
+}
+
+.header-nav_item_link_top {
+  @extend .header-nav_item_link;
+  @include font-size(0.75);
+
+  font-weight: $weight-light;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+
+  &.active {
+    font-weight: $weight-book;
+  }
+}
+
+.header-nav_item_link_spacer {
+  color: $dark-gray;
+}
+
+[eiti-drawer-toggle] {
+  display: inline-block;
+
+  @include respond-to(medium-up) {
+    display: none;
+  }
+}
+
+.header-nav {
+  display: none;
+
+  @include respond-to(medium-up) {
+    display: block;
+  }
+}

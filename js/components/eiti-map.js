@@ -1,25 +1,18 @@
 (function(exports) {
+  'use strict';
 
   // XXX requires d3, topojson
 
   exports.EITIMap = document.registerElement('eiti-map', {
-    'extends': 'svg',
+    // 'extends': 'svg',
     prototype: Object.create(
-      SVGSVGElement.prototype,
+      HTMLElement.prototype,
       {
 
         createdCallback: {value: function() {
         }},
 
         attachedCallback: {value: function() {
-          switch (typeof this.onload) {
-            case 'string':
-              this.onload = new Function('event', this.onload);
-            case 'function':
-              this.addEventListener('load', this.onload);
-              break;
-          }
-
           this.load();
         }},
 
@@ -27,7 +20,7 @@
           switch (attr) {
             case 'width':
             case 'height':
-              updateSize(this);
+              updateSize(this.querySelector('svg'));
               break;
 
             case 'zoom-to':
@@ -42,7 +35,7 @@
         load: {value: function() {
           this.loaded = false;
 
-          var map = this;
+          var map = this.querySelector('svg');
           var layers = getDataLayers(this);
 
           var q = queue();
@@ -60,24 +53,28 @@
           });
 
           if (len) {
-            var selection = d3.select(map)
+            var selection = d3.select(this)
               .classed('js-loading', true);
+
+            var self = this;
             q.await(function(error) {
               selection.classed('js-loading', false);
               if (error) {
                 selection.classed('js-error', true);
-                return map.dispatchEvent(new CustomEvent('error', error));
+                return self.dispatchEvent(new CustomEvent('error', error));
               }
               render(map);
-              updateBBox(map);
 
-              if (map.hasAttribute('zoom-to')) {
-                map.zoomTo(map.getAttribute('zoom-to'));
+              if (self.hasAttribute('zoom-to')) {
+                self.zoomTo(self.getAttribute('zoom-to'));
+              } else {
+                updateBBox(map);
               }
 
               selection.classed('js-loaded', true);
-              map.dispatchEvent(new CustomEvent('load'));
-              map.loaded = true;
+
+              self.dispatchEvent(new CustomEvent('load'));
+              self.loaded = true;
             });
 
           } else {
@@ -86,8 +83,11 @@
         }},
 
         zoomTo: {value: function(featureId, duration) {
+          var map = this.querySelector('svg');
+          var selection = d3.select(map);
+
           var feature;
-          d3.select(this)
+          selection
             .selectAll('path')
             .classed('zoomed', function(d) {
               if (!feature && d.id && d.id == featureId) {
@@ -99,14 +99,14 @@
 
           var viewBox;
           if (feature) {
-            var path = getSVGPath(this);
+            var path = getSVGPath(map);
             var bbox = path.bounds(feature);
-            var viewBox = bboxToViewBox(bbox)
+            viewBox = bboxToViewBox(bbox);
           } else {
-            viewBox = getViewBox(this);
+            console.warn('zoom to:', featureId, 'no such feature');
+            viewBox = getViewBox(map);
           }
 
-          var selection = d3.select(this);
           if (!isNaN(duration) && duration > 0) {
             selection = selection.transition()
               .duration(duration);
@@ -125,9 +125,14 @@
   }
 
   function getProjection(map) {
-    if (map.__projection) return map.__projection;
-    var proj = map.getAttribute('projection') || 'albersUsa';
-    if (!d3.geo[proj]) throw new Error('invalid projection: "' + proj + '"');
+    if (map.__projection) {
+      return map.__projection;
+    }
+    var proj = map.getAttribute('projection') ||
+      map.parentNode.getAttribute('projection') || 'albersUsa';
+    if (!d3.geo[proj]) {
+      throw new Error('invalid projection: "' + proj + '"');
+    }
     proj = d3.geo[proj]();
     // TODO: additional projection parameters?
     return map.__projection = proj;
@@ -154,7 +159,9 @@
         polygon: function(d) {
           skipped = 0;
           this.stream.polygon(d);
-          if (skipped) console.log('skipped %d points in polygon:', skipped, polygon);
+          if (skipped) {
+            console.log('skipped %d points in polygon:', skipped, polygon);
+          }
         }
       });
       return path.projection(simplify);
@@ -180,7 +187,6 @@
             layer.classed('topology', true);
             if (!d.bbox) {
               d.bbox = getBBox(features.map(path.bounds));
-              // console.warn('generated bbox for Topology:', features, '->', d.bbox);
             }
             break;
 
@@ -211,7 +217,9 @@
         if (this.hasAttribute('data-href')) {
 
           var link = layer.selectAll('a')
-            .data(features, function(d) { return d.id; });
+            .data(features, function(d, i) {
+              return d.id || i;
+            });
 
           link.exit().remove();
           link.enter().append('a')
@@ -238,9 +246,7 @@
 
         feature
           .attr('d', path)
-          .attr('id', function(d) {
-            return d.id;
-          })
+          .attr('id', evaluator(this.getAttribute('data-id') || 'id'))
           .attr('class', function(d) {
             var klass = [];
             if (d.mesh) klass.push('mesh');
@@ -270,14 +276,17 @@
   }
 
   function updateBBox(map) {
-    var viewBox = getViewBox(map);
-    d3.select(map)
-      .attr('viewBox', viewBox);
+    if (!map.hasAttribute('viewBox')) {
+      var viewBox = getViewBox(map);
+      d3.select(map)
+        .attr('viewBox', viewBox);
+    }
   }
 
   function getViewBox(map) {
     var bbox = map.getAttribute('bounds');
     var path = getSVGPath(map);
+    var proj = getProjection(map);
 
     var bounds = function(d) {
       if (d.type === 'Topology') {
@@ -290,9 +299,10 @@
     if (bbox) {
       // "xmin ymin xmax ymax"
       var parts = bbox.split(' ').map(Number);
-      var p0 = path.projection()([parts[0], parts[1]]);
-      var p1 = path.projection()([parts[2], parts[3]]);
-      bbox = [p0, p1];
+      bbox = [
+        proj([parts[0], parts[1]]),
+        proj([parts[2], parts[3]])
+      ];
     } else {
       var layers = getDataLayers(map);
 
@@ -410,7 +420,7 @@
         );
       }
 
-      features = topojson.feature(d, obj).features;
+      features = getFeatures(d, obj);
 
       if (mesh) {
         features.push(d.objects[mesh]
@@ -445,13 +455,13 @@
     }
     if (filter) {
       filter = evaluator(filter);
-      console.log('filtering %d geometries', object.geometries.length);
+      // console.log('filtering %d geometries', object.geometries.length);
       object = {
         type: 'GeometryCollection',
         geometries: object.geometries
           .filter(filter)
       };
-      console.log('filtered %d geometries', object.geometries.length);
+      // console.log('filtered %d geometries', object.geometries.length);
     }
     var mesh = topojson.mesh(topology, object);
     mesh.mesh = true;
@@ -489,6 +499,10 @@
           'return null; ',
         '} }'
       ].join(''));
+  }
+
+  function getFeatures(topology, obj) {
+    return topojson.feature(topology, obj).features;
   }
 
 })(this);

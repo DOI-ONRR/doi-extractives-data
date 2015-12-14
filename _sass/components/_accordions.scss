@@ -1,0 +1,117 @@
+// Accordions
+//
+// Togglable accordion. Button is visible only in
+// screen sizes smaller than medium
+//
+// Markup:
+// <ul accordion>
+//    <li accordion-item accordion-open="true">
+//        <h3>Heading</h3>
+//        <button class="accordion-button" accordion-button title="Title content"></button>
+//        <div class="accordion-content">Accordion Content</div
+//    </li>
+// </ul>
+// <ul accordion>
+//    <li accordion-item accordion-open="true">
+//        <h3>Heading</h3>
+//        <button class="accordion-button_more" accordion-button>more</button>
+//        <button class="accordion-button_more" accordion-button>less</button>
+//        <div class="accordion-content">Accordion Content</div
+//    </li>
+// </ul>
+//
+// Styleguide components.accordions
+
+[accordion-item] {
+  position: relative;
+
+  &[accordion-open=true] {
+
+    .accordion-button {
+      @include rotate(270deg, 3);
+
+      &:after {
+        content: $icon-chevron-sm;
+      }
+    }
+
+    .accordion-button_more {
+      display: none;
+    }
+
+    .accordion-button_less {
+      display: inline-block;
+
+      &::after {
+        content: $icon-dash-sm;
+      }
+
+    }
+
+    .accordion-content,
+    .accordion-more {
+      display: inline-block;
+    }
+
+  }
+
+  &[accordion-open=false] {
+    .accordion-button {
+      @include rotate(90deg, 1);
+
+      &:after {
+        content: $icon-chevron-sm;
+      }
+    }
+
+    .accordion-button_more {
+      &::after {
+        content: $icon-plus-sm;
+      }
+
+      display: inline-block;
+    }
+
+    .accordion-button_less {
+      display: none;
+    }
+
+    .accordion-content {
+      display: none;
+
+      @include respond-to(medium-up) {
+        display: inline-block;
+      }
+    }
+
+    .accordion-more {
+      display: none;
+    }
+  }
+}
+
+.accordion-button,
+.accordion-button_more,
+.accordion-button_less {
+
+  &:after {
+    font-family: 'eiti';
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+  }
+}
+
+.accordion-button {
+  background-color: transparent;
+  background-size: 50%;
+  height: 2rem;
+  margin: 0;
+  position: absolute;
+  right: $base-padding;
+  width: 2rem;
+
+  @include respond-to(medium-up) {
+    display: none;
+  }
+}

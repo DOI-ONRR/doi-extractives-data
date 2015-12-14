@@ -1,0 +1,73 @@
+// Revenues Forms
+//
+//
+//
+// Styleguide blocks.how-it-works.forms
+
+.revenues_page-forms {
+  padding-bottom: ($base-padding-extra * 1.5);
+  padding-top: ($base-padding-extra * 1.5);
+
+  h1 {
+    color: $light-black;
+  }
+
+  h2 {
+    border-bottom: 5px solid darken($mid-gray, 20%);
+    font-size: 36px;
+    font-size: 2.25rem;
+    margin-bottom: $base-padding-lite;
+    padding-bottom: $base-padding-lite;
+  }
+
+  @include respond-to(small-up) {
+    .revenues_page-forms_options > div {
+      @include span-columns(4 of 8);
+      @include omega(2n);
+    }
+  }
+
+  @include respond-to(medium-up) {
+    h1 {
+      @include span-columns(4);
+    }
+
+    .revenues_page-forms_options {
+      @include span-columns(8);
+      @include omega();
+
+      p {
+        @include heading(para-md);
+      }
+
+      > div {
+        @include omega-reset(2n);
+        @include span-columns(2 of 8);
+        @include omega(4n);
+      }
+    }
+  }
+}
+
+.revenues_page-forms_numbers,
+.revenues_page-forms_numbers_first,
+.revenues_page-forms_numbers_last {
+
+  span {
+    @include heading(h1);
+    font-weight: $weight-light;
+    line-height: 1.2;
+  }
+}
+
+.revenues_page-forms_numbers_first {
+  border-bottom: 2px solid darken($mid-gray, 20%);
+  margin-bottom: $base-padding-lite;
+  padding-bottom: ($base-padding-lite * 1.5);
+}
+
+.revenues_page-forms_numbers_last {
+  border-top: 2px solid darken($mid-gray, 20%);
+  margin-top: ($base-padding-lite * 1.5);
+  padding-top: $base-padding-lite;
+}

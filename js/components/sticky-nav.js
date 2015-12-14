@@ -33,10 +33,15 @@
       ? this.elems.sticky.parentNode
       : null;
 
+    this.determineScreen = function() {
+      var windowWidth = window.innerWidth || document.body.clientWidth;
+      this.wasMobile = this.isMobile;
+      this.isMobile = windowWidth < 768;
+    }
+
+    this.determineScreen();
 
     this.isAbsolute = function() {
-      var windowWidth = window.innerWidth || document.body.clientWidth;
-      this.isMobile = windowWidth < 768;
 
       var isAbsolute = (attrAbsolute === 'true' && !this.isMobile)
         ? true
@@ -44,25 +49,39 @@
       return isAbsolute;
     }
 
+      this.offset = this.attrStickyOffset
+        ? parseInt(this.attrStickyOffset)
+        : !this.elems.parent
+          ? this.elems.sticky.offsetTop
+          : this.attrParent === 'mobile' && this.isMobile
+            ? this.elems.parent.offsetTop - this.elems.sticky.offsetHeight
+            : this.elems.sticky.offsetTop
+
     this.status;
     this.lastStatus;
     this.lastWidth;
+    this.lastWindowWidth;
   };
 
   StickyNav.prototype = {
-    setPositions: function () {
-
+    setOffset: function() {
+      console.log('~~offset before~~~~', this.offset)
       this.offset = this.attrStickyOffset
         ? parseInt(this.attrStickyOffset)
-        : this.elems.parent
-          ? this.elems.parent.offsetTop - this.elems.sticky.offsetHeight - 50
-          : this.elems.sticky.offsetTop;
+        : !this.elems.parent
+          ? this.elems.sticky.offsetTop
+          : this.attrParent === 'mobile' && this.isMobile
+            ? this.elems.parent.offsetTop - this.elems.sticky.offsetHeight
+            : this.elems.sticky.offsetTop
+      console.log('~~offset after~~~~', this.offset)
+    },
+    setPositions: function (mutate) {
 
       this.height = this.elems.sticky.clientHeight;
 
       this.lastWidth = this.width || 'initial';
       var windowWidth = window.innerWidth || document.body.clientWidth;
-      windowBump = windowWidth > 1044 ? 0 : -20;
+      windowBump = windowWidth > 1044 || this.isMobile ? 0 : -20;
       this.width = this.elems.parent
         ? this.elems.parent.clientWidth + windowBump + 'px'
         : 'initial';
@@ -72,12 +91,11 @@
       // Todo diff bottom and diff top aren't working, and aren't
       // maintainable
       this.diffTop = scrollTop - this.mainOffset - this.offset;
+
       // this.diffBottom = distance from top of screen to bottom of stickyNav (scrollTop + this.height)
       // minus height of height of main and it
       this.diffBottom = scrollTop + this.height - this.mainHeight - this.mainOffset;
       this.lastStatus = this.status;
-
-
       if (this.diffTop >= 0){
         this.status = 'fixed';
         if (this.diffBottom >= 0){
@@ -89,46 +107,55 @@
         this.status = 'static';
       }
     },
-    needsUpdate : function() {
+    screenUpdate: function() {
+      var windowChange = this.isMobile !== this.wasMobile;
+      if (windowChange) {
+        console.log('======windowChange=====')
+        // debugger
+        this.setOffset();
+      }
+    },
+    needsUpdate: function(mutate) {
       var statusChange = this.status !== this.lastStatus;
       var sizeChange = this.width !== this.lastWidth;
+      // this.determineScreen();
+      // var windowChange = this.isMobile !== this.wasMobile;
       // return true;
       return statusChange || sizeChange;
     },
-    update: function(){
+    update: function() {
       if (this.diffTop >= 0){
         this.elems.sticky.style.position = 'fixed';
         this.elems.sticky.style.top = 0;
         this.elems.sticky.classList.remove('js-transparent');
         this.elems.sticky.classList.add('js-color');
         this.elems.sticky.style.width = this.width;
-        // this.elems.sticky.style.height = 'initial';
 
         // for bottom
         // console.log(this.diffBottom)
         if (this.diffBottom >= 0){
           this.elems.sticky.style.position = 'absolute';
-          console.log(this.mainHeight, this.height, this.offset)
-          this.elems.sticky.style.top = this.mainHeight - this.height - this.offset - 50 + 'px';
+          console.log(this.mainHeight, this.height, this.offset, this.mainOffset)
+
+      // this.diffBottom = scrollTop + this.height - this.mainHeight - this.mainOffset;
+          console.log(this.mainHeight - this.height - this.offset - this.mainOffset + 'px')
+          // this.elems.sticky.style.top = this.mainHeight - this.mainOffset - this.height + 'px';
+          this.elems.sticky.style.top = this.mainHeight - this.height - this.mainOffset - this.offset - 50 + 'px';
 
           this.elems.sticky.classList.remove('js-transparent');
           this.elems.sticky.classList.add('js-color');
           this.elems.sticky.style.width = this.width;
-          // this.elems.sticky.style['overflow-y'] = 'scroll';
-          // this.elems.sticky.style.height = this.mainOffset + this.mainHeight - scrollTop + 'px';
         } else {
           this.elems.sticky.style.position = 'fixed';
           this.elems.sticky.style.top = 0;
           this.elems.sticky.classList.remove('js-transparent');
           this.elems.sticky.classList.add('js-color');
           this.elems.sticky.style.width = this.width;
-          // this.elems.sticky.style.height = 'initial';
         }
       } else {
         this.elems.sticky.classList.remove('js-color');
         this.elems.sticky.classList.add('js-transparent');
         this.elems.sticky.style.width = this.width;
-        // this.elems.sticky.style.height = 'initial';
 
         if (this.isAbsolute()) {
           this.elems.sticky.style.position = 'absolute';
@@ -161,12 +188,24 @@
         }
       };
     },
-    run: function() {
-      findScrollPositions();
-      this.setPositions();
-      if (this.needsUpdate()) {
-        this.update();
+    run: function(mutate) {
+      if (mutate === 'mutate') {
+        console.log('------mutate event------')
+        this.setPositions();
+        this.setOffset();
+        if (this.needsUpdate()) {
+          this.update();
+        }
+      } else {
+        findScrollPositions();
+        this.determineScreen();
+        this.screenUpdate();
+        this.setPositions();
+        if (this.needsUpdate()) {
+          this.update();
+        }
       }
+
     }
   };
 
@@ -174,17 +213,13 @@
 
   stickyNav.run();
 
-  var observer = new MutationObserver(function (mutations) {
-        //your action here
-    });
-
-  window.addEventListener('scroll', stickyNav.throttle(stickyNav.run, 100, stickyNav));
+  window.addEventListener('scroll', stickyNav.throttle(stickyNav.run, 150, stickyNav));
 
   window.addEventListener('resize', stickyNav.throttle(stickyNav.run, 150, stickyNav));
 
   // documentation: https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver
   var observer = new MutationObserver(function (mutations) {
-    stickyNav.run();
+    stickyNav.run('mutate');
   });
 
   // set up your configuration

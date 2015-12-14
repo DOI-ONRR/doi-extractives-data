@@ -85,11 +85,19 @@ jobs/wage-salary.tsv:
 			> $@
 
 jobs/state-wage-salary.tsv: jobs/wage-salary.tsv
+	mkdir -p $(dir $@)
 	$(tito) --read tsv $< | \
 		$(datex) --filter '!County' | \
 		$(tito) --write csv | \
 		csvcut -C County,FIPS | \
 		tito --read csv --write tsv > $@
+
+jobs-wage-salary-by-state: jobs/wage-salary.tsv
+	mkdir -p $(dir $@)
+	cat $< | bin/divvy.js \
+		--if tsv \
+		--of tsv \
+		--path 'jobs/by-state/{{ State }}/wage-salary.tsv'
 
 # national revenues by commodity and revenue type
 national/revenues.tsv: state/revenues.tsv offshore/revenues.tsv

@@ -649,11 +649,15 @@
     function getDataURL(state) {
       var path = eiti.data.path + 'jobs/';
       var figure = state.get('figure');
+      var region = state.get('region');
       switch (figure) {
         case 'self':
           return path + 'self-employment.tsv';
         case 'wage':
-          return path + 'wage-salary.tsv';
+          if (region) {
+            return path + 'by-state/' + region + '/wage-salary.tsv';
+          }
+          return path + 'state-wage-salary.tsv';
       }
       throw new Error('invalid figure: "' + figure + '"');
     }
@@ -676,11 +680,9 @@
 
       var region = state.get('region');
       if (region) {
-        var field = state.get('figure') === 'self'
-          ? 'Region'
-          : 'State';
+        var fields = getFields(state);
         data = data.filter(function(d) {
-          return d[field] === region;
+          return d[fields.region] === region;
         });
       }
 

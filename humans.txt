@@ -5,6 +5,8 @@
 
     A project of 18F -- @18F
     Shawn Allen -- Designer Developer -- 18F
+    Isabelle Brantley -- Content -- Independent Administrator/Deloitte
+    Nicole Fenton -- Content Designer -- 18F
     Brian Hedberg -- Developer -- 18F
     Michelle Hertzfeld --  Product Manager and UX -- 18F
     Robert Kronebusch -- Data Wrangler -- Department of the Interior, Office of Natural Resources Revenue
@@ -69,5 +71,5 @@
             bitters.bourbon.io
         All developed and maintained by Thoughtbot:
             thoughtbot.com
-    Software: Sass, Jekyll
-    Typography: Lato and Raleway
+    Software: Sass, Jekyll, D3
+    Typography: Lato

@@ -38,7 +38,7 @@
       var windowWidth = window.innerWidth || document.body.clientWidth;
       this.wasMobile = this.isMobile;
       this.isMobile = windowWidth < 768;
-    }
+    };
 
     this.determineScreen();
 
@@ -65,13 +65,13 @@
   };
 
   StickyNav.prototype = {
-    getPositions: function (mutate) {
+    getPositions: function () {
 
       this.height = this.elems.sticky.clientHeight;
 
       this.lastWidth = this.width || 'initial';
-      var windowWidth = window.innerWidth || document.body.clientWidth;
-      windowBump = windowWidth > 1044 || this.isMobile ? 0 : -20;
+      var windowWidth = window.innerWidth || document.body.clientWidth,
+        windowBump = windowWidth > 1044 || this.isMobile ? 0 : -20;
       this.width = this.elems.parent
         ? this.elems.parent.clientWidth + windowBump + 'px'
         : '675px';
@@ -187,7 +187,7 @@
   window.addEventListener('resize', stickyNav.throttle(stickyNav.run, 150, stickyNav));
 
   // documentation: https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver
-  var observer = new MutationObserver(function (mutations) {
+  var observer = new MutationObserver(function () {
     stickyNav.run();
   });
 

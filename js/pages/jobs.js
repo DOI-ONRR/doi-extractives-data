@@ -184,21 +184,21 @@
       }
 
       if (regionId === 'US') {
-        console.log('before filter:', data.length);
         data = data.filter(function(d) {
           return !d.County;
         });
-        console.log('after filter:', data.length);
       }
 
       var value = getter(fields.value);
-      var aggregate = state.get('units') === 'percent'
-        ? function(d) {
-            return value(d[0]);
-          }
-        : function(data) {
-            return d3.sum(data, value);
-          };
+      var first = function(d) {
+        return value(d[0]);
+      };
+      var sum = function(data) {
+        return d3.sum(data, value);
+      };
+
+      var aggregate = (state.get('units') === 'percent' ||
+        state.get('figure') === 'self') ? first : sum;
 
       var total = aggregate(data);
       header
@@ -226,14 +226,13 @@
           .rollup(aggregate)
           .map(data);
 
-        console.log('data by feature id:', dataByFeatureId);
-        console.log('features:', features);
+        // console.log('data by feature id:', dataByFeatureId);
+        // console.log('features:', features);
 
         var featureId = getter(fields.featureId);
         features.forEach(function(f) {
           var id = featureId(f);
-          console.log(f.id, '->', id, id in dataByFeatureId);
-          f.value = dataByFeatureId[id];
+          f.value = +dataByFeatureId[id];
         });
 
         var value = getter('value');
@@ -677,8 +676,11 @@
 
       var region = state.get('region');
       if (region) {
+        var field = state.get('figure') === 'self'
+          ? 'Region'
+          : 'State';
         data = data.filter(function(d) {
-          return d.State === region;
+          return d[field] === region;
         });
       }
 

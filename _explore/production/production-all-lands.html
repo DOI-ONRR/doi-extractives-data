@@ -62,7 +62,7 @@ permalink: /explore/all-lands-production/
                 {% endfor %}
               </optgroup>
               <optgroup label="Offshore Areas">
-                {% for area in site.data.offshore_regions %}
+                {% for area in site.data.offshore_regions_oil %}
                 <option value="{{ area.id }}">{{ area.name }}</option>
                 {% endfor %}
               </optgroup>
@@ -165,7 +165,7 @@ permalink: /explore/all-lands-production/
         </section>
         {% endfor %}
 
-        {% for region in site.data.offshore_regions %}
+        {% for region in site.data.offshore_regions_oil %}
         <section id="{{ region.id }}" class="region offshore">
           <div class="map-wrapper">
             <eiti-map id="{{ region.id }}-map" class="region-map" simplify="1e-2"
@@ -207,7 +207,7 @@ permalink: /explore/all-lands-production/
     {% for state in site.data.states %}
     '{{ state.id }}': '{{ state.name }}',
     {% endfor %}
-    {% for area in site.data.offshore_regions %}
+    {% for area in site.data.offshore_regions_oil %}
     '{{ area.id }}': '{{ area.name }}',
     {% endfor %}
     'US': 'the entire U.S.'

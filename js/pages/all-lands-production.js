@@ -95,13 +95,9 @@
     var old = state;
     state = fn(state);
     if (!Immutable.is(old, state)) {
-      if (rendered && stateChanged(old, state, 'group')) {
-        console.warn('commodity group:', old.get('group'), '->', state.get('group'));
-        state = state.delete('commodity');
-      }
-      if (rendered && stateChanged(old, state, 'commodity')) {
-        console.warn('commodity:', old.get('commodity'), '->', state.get('commodity'));
-        state = state.delete('product');
+      if (state.has('product') && state.get('product').match(/Oil/)
+          && ['pacific', 'alaska'].indexOf(state.get('region')) > -1) {
+        state = state.set('region', 'pacific alaska');
       }
       render(state, old);
       location.hash = eiti.url.qs.format(state.toJS());
@@ -245,10 +241,8 @@
         var featureId = getter(fields.featureId);
         features.forEach(function(f) {
           var id = featureId(f);
-
           f.value = dataByFeatureId[id];
         });
-
 
         var value = getter('value');
         var values = features.map(value);
@@ -263,6 +257,22 @@
             ? NULL_FILL
             : scale(v);
         });
+
+        if (regionId === 'pacific alaska') {
+          features = features.filter(function(d) {
+            return featureId(d) === regionId;
+          });
+          features = [
+            {
+              id: regionId,
+              value: value(features[0]),
+              properties: {
+                name: REGION_ID_NAME[regionId]
+              }
+            }
+          ];
+        }
+        console.log('features:', features);
 
         selection.select('.map-legend')
           .call(updateLegend, scale);
@@ -464,6 +474,14 @@
       featureId: 'id'
     };
     if (!regionId) {
+      if (state.has('product') && state.get('product').match(/Oil/)) {
+        fields.featureId = function(d) {
+          if (d.id === 'pacific' || d.id === 'alaska') {
+            return 'pacific alaska';
+          }
+          return d.id;
+        };
+      }
       return fields;
     }
     switch (regionId.length) {
@@ -488,8 +506,16 @@
 
       // offshore
       default:
-        if (regionId.length > 3){
+        if (regionId.length > 3) {
           fields.region = 'Region';
+          if (regionId === 'pacific alaska') {
+            fields.featureId = function(d) {
+              if (d.id === 'pacific' || d.id === 'alaska') {
+                return 'pacific alaska';
+              }
+              return d.id;
+            };
+          }
         } else {
           fields.subregion = 'Area';
           fields.featureId = function(f) {

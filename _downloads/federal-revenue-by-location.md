@@ -16,27 +16,33 @@ permalink: /downloads/federal-revenue-by-location/
 
     <p class="case_studies_intro-para">There are two types of federal-revenue-by-location datasets available on this site. One includes offshore data, and the other includes onshore data. We have versions of these datasets available for both calendar year and fiscal year 2013, and they are both accounting year data. </p>
 
-    <p class="downloads-download_links-intro">Download calendar year data:
-      <ul class="downloads-download_links">
-        <li><a href="{{site.baseurl}}/downloads/federal_revenue_offshore_acct-year_CY04-13_2015-11-20.xlsx"><icon class="icon-cloud icon-padded"></icon>
-         Offshore dataset (xlsx, 321 KB)
-       </a></li>
-       <li><a href="{{site.baseurl}}/downloads/federal_revenue_onshore_acct-year_CY04-13_2015-11-20.xlsx"><icon class="icon-cloud icon-padded"></icon>
-         Onshore dataset (xlsx, 1.1 MB)
-       </a></li>
-      </ul>
-    </p>
+    <p class="downloads-download_links-intro">Download calendar year data:</p>
+    <ul class="downloads-download_links">
+      <li><a href="{{site.baseurl}}/downloads/federal_revenue_offshore_acct-year_CY04-13_2015-11-20.xlsx"><icon class="icon-cloud icon-padded"></icon>
+       Offshore dataset (xlsx, 321 KB)
+     </a></li>
+     <li><a href="#"><icon class="icon-cloud icon-padded"></icon>
+      Offshore dataset (tsv)
+    </a></li>
+     <li><a href="{{site.baseurl}}/downloads/federal_revenue_onshore_acct-year_CY04-13_2015-11-20.xlsx"><icon class="icon-cloud icon-padded"></icon>
+       Onshore dataset (xlsx, 1.1 MB)
+     </a></li>
+    <li><a href="#"><icon class="icon-cloud icon-padded"></icon>
+      Onshore dataset (tsv)
+    </a></li>
+    </ul>
 
-    <p class="downloads-download_links-intro">Download fiscal year data:
-      <ul class="downloads-download_links">
-        <li><a href="{{site.baseurl}}/downloads/federal_revenue_offshore_acct-year_FY04-14_2015-11-20.xlsx"><icon class="icon-cloud icon-padded"></icon>
-          Offshore dataset (xlsx, 348 KB)
-        </a></li>
-       <li><a href="{{site.baseurl}}/downloads/federal_revenue_onshore_acct-year_FY04-14_2015-11-20.xlsx"><icon class="icon-cloud icon-padded"></icon>
-         Onshore dataset (xlsx, 1.1 MB)
-       </a></li>
-      </ul>
-    </p>
+    <p class="downloads-download_links-intro">Download fiscal year data:</p>
+    <ul class="downloads-download_links">
+      <li><a href="{{site.baseurl}}/downloads/federal_revenue_offshore_acct-year_FY04-14_2015-11-20.xlsx"><icon class="icon-cloud icon-padded"></icon>
+        Offshore dataset (xlsx, 348 KB)
+      </a></li>
+     <li><a href="{{site.baseurl}}/downloads/federal_revenue_onshore_acct-year_FY04-14_2015-11-20.xlsx"><icon class="icon-cloud icon-padded"></icon>
+       Onshore dataset (xlsx, 1.1 MB)
+     </a></li>
+    </ul>
+
+    <p class="u-margin-top">We also have <a href="https://github.com/18F/doi-extractives-data/wiki/Data-Catalog#federal-revenue">notes on this data</a> from the web development team as they built the interactions on this site.</p>
 
     <h2 class="h3">Scope</h2>
 

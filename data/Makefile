@@ -84,6 +84,13 @@ jobs/wage-salary.tsv:
 			--field State \
 			> $@
 
+jobs/state-wage-salary.tsv: jobs/wage-salary.tsv
+	$(tito) --read tsv $< | \
+		$(datex) --filter '!County' | \
+		$(tito) --write csv | \
+		csvcut -C County,FIPS | \
+		tito --read csv --write tsv > $@
+
 # national revenues by commodity and revenue type
 national/revenues.tsv: state/revenues.tsv offshore/revenues.tsv
 	mkdir -p $(dir $@)

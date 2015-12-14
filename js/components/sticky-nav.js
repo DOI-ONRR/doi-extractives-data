@@ -26,6 +26,7 @@
 
     this.attrStickyOffset = this.elems.sticky.getAttribute('data-sticky-offset');
     this.attrOffsetBottom = parseInt(this.elems.sticky.getAttribute('data-offset-bottom')) || 0;
+    this.maxWidth = this.elems.sticky.getAttribute('data-max-width');
     var attrAbsolute = this.elems.sticky.getAttribute('data-absolute');
 
     this.attrParent = this.elems.sticky.getAttribute('data-offset-parent');
@@ -74,7 +75,7 @@
         windowBump = windowWidth > 1044 || this.isMobile ? 0 : -20;
       this.width = this.elems.parent
         ? this.elems.parent.clientWidth + windowBump + 'px'
-        : '675px';
+        : this.maxWidth
 
       this.mainOffset = this.elems.main.offsetTop;
       this.mainHeight = this.elems.main.clientHeight;

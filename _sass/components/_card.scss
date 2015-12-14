@@ -48,13 +48,17 @@
 
   background-color: $white;
   border-radius: 10px;
-  height: 339px;
+  height: 389px;
   margin-bottom: $base-padding;
   position: relative;
 
   @include respond-to(small-to-large) {
     @include span-columns(6);
     @include omega(2n);
+  }
+
+  @include respond-to(medium-up) {
+    height: 339px;  
   }
 
   @include respond-to(large-up) {
@@ -111,7 +115,7 @@ img.card-image {
   padding: $base-padding;
 
   p {
-    @include heading(para-sm);
+    @include heading(para-md);
     color: darken($neutral-gray, 20%);
     line-height: 1.6;
   }
@@ -120,6 +124,12 @@ img.card-image {
     color: $dark-gray;
     font-weight: $weight-bold;
     margin-bottom: $base-padding-lite;
+  }
+
+  @include respond-to(medium-up) {
+    p {
+      @include heading(para-sm);
+    }
   }
 }
 

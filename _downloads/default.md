@@ -82,34 +82,27 @@ permalink: /downloads/
     <h2 class="h3 downloads-section_heading">Economic impact</h2>
     <ul class="list-sections">
     	<li class="downloads-download_links">
-        <a id="gdp" class="link-no_under"><h3>Gross Domestic Product</h3></a>
-        <p>This data is from the <a href="http://www.bea.gov/">Bureau of Economic Analysis</a>. The data we used for the interactions is a subset of the data on their website. We access this data live via an Application Programming Interface (API).</p>
-        <a href="http://www.bea.gov/" class="button-tertiary">
-          Go to BEA &#8594;
-        </a>
-        <a href="http://www.bea.gov/API/signup/index.cfm" class="button-tertiary">
-          Go to BEA API docs &#8594;
+        <a href="http://www.bea.gov/API/signup/index.cfm" id="gdp" class="link-no_under"><h3>Gross Domestic Product</h3></a>
+        <p>This data is from the <a href="http://www.bea.gov/">Bureau of Economic Analysis</a>. The data we use for the interactions on this site is a subset of the data availebl on their website. We access this data live via an Application Programming Interface (API). Take a look at <a href="https://github.com/18F/doi-extractives-data/wiki/Data-Catalog#gdp">notes on using this data</a> from our web development team with information on the specific API calls we use on this site.</p>
+        <a href="http://www.bea.gov/API/signup/index.cfm">Go to BEA API docs &#8594;
         </a>
       </li>
 
       <li class="downloads-download_links">
-        <a id="exports" class="link-no_under"><h3>Exports</h3></a>
-        <p>This data is from the <a href="https://www.census.gov/foreign-trade/statistics/state/data/index.html">U.S. Census Bureau</a>. It arrives in Excel format, and lists the top 25 exports for each state from 2011-2014 by <a href="http://unstats.un.org/unsd/tradekb/Knowledgebase/Harmonized-Commodity-Description-and-Coding-Systems-HS">HS6 code</a>.</p>
-        <a href="https://www.census.gov/foreign-trade/statistics/state/data/index.html" class="button-tertiary">
-          Go to U.S. Census exports data page &#8594;
+        <a href="https://www.census.gov/foreign-trade/statistics/state/data/index.html" id="exports" class="link-no_under"><h3>Exports</h3></a>
+        <p>This data is from the <a href="https://www.census.gov/foreign-trade/statistics/state/data/index.html">U.S. Census Bureau</a>. It arrives in Excel format, and lists the top 25 exports for each state from 2011-2014 by <a href="http://unstats.un.org/unsd/tradekb/Knowledgebase/Harmonized-Commodity-Description-and-Coding-Systems-HS">HS6 code</a>. We also have <a href="https://github.com/18F/doi-extractives-data/wiki/Data-Catalog#exports">notes on using this data</a> from our web development team.</p>
+        <a href="https://www.census.gov/foreign-trade/statistics/state/data/index.html">Go to U.S. Census exports data page &#8594;
         </a>
       </li>
 
       <li class="downloads-download_links">
-        <a id="jobs" class="link-no_under"><h3>Jobs</h3></a>
-        <p>We use two types of jobs data on this site. One is <em>Wage and Salary</em> data, which describes the number of people (full-time and part-time) employed in natural resource extraction that receive wages or salaries from companies. This data is from the <a href="http://www.bls.gov/">Bureau of Labor Statistics</a>, specifically the Quarterly Census of Employment and Wages. The best way to get this data is from <a href="http://www.bls.gov/cew/datatoc.htm">this page</a> and to download CSVs single files annual averages (you will need to load titles).</p>
-        <a href="http://www.bls.gov/cew/datatoc.htm" class="button-tertiary">
-          Go to BLS quarterly census &#8594;
+        <a href="http://www.bls.gov/cew/datatoc.htm" id="jobs" class="link-no_under"><h3>Jobs</h3></a>
+        <p>We use two types of jobs data on this site. One is <em>Wage and Salary</em> data, which describes the number of people (full-time and part-time) employed in natural resource extraction that receive wages or salaries from companies. This data is from the <a href="http://www.bls.gov/">Bureau of Labor Statistics</a>, specifically the Quarterly Census of Employment and Wages. The best way to get this data is from <a href="http://www.bls.gov/cew/datatoc.htm">this page</a> and to download CSVs single files annual averages (you will need to load titles). We also have <a href="https://github.com/18F/doi-extractives-data/wiki/Data-Catalog#salary-employment">notes on using this data</a> from our web development team.</p>
+        <a href="http://www.bls.gov/cew/datatoc.htm">Go to BLS quarterly census &#8594;
         </a>
 
-        <p>The other type of jobs data we use is <em>Self-Employment</em>. This data describes the number of people (full-time and part-time) that are self-employed in natural resource extraction. Self-employed people don’t receive wages or salaries because they own their company, either as a sole proprietor, partnership, or small business. This data comes from comes from the <a href="http://www.bea.gov/">Bureau of Economic Analysis</a>, or BEA, but must be calculated, by subtracting SA27N Full- and Part-Time Wage and Salary Employment by NAICS Industry from SA25N Full- and Part-Time Employment by NAICS Industry.</p>
-        <a href="http://www.bea.gov/" class="button-tertiary">
-          Go to BEA &#8594;
+        <p class="u-margin-top">The other type of jobs data we use is <em>Self-Employment</em>. This data describes the number of people (full-time and part-time) that are self-employed in natural resource extraction. Self-employed people don’t receive wages or salaries because they own their company, either as a sole proprietor, partnership, or small business. This data comes from comes from the <a href="http://www.bea.gov/">Bureau of Economic Analysis</a>, or BEA, but must be calculated, by subtracting SA27N Full- and Part-Time Wage and Salary Employment by NAICS Industry from SA25N Full- and Part-Time Employment by NAICS Industry. We also have <a href="https://github.com/18F/doi-extractives-data/wiki/Data-Catalog#self-employment">notes on using this data</a> from our web development team.</p>
+        <a href="http://www.bea.gov/">Go to BEA &#8594;
         </a>
       </li>
     </ul>

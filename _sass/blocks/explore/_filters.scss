@@ -193,10 +193,10 @@
   float: left;
   letter-spacing: -0.5px;
   margin-bottom: $base-padding;
-  width: 65%;
 
   @include respond-to(medium-up) {
     float: left;
+    width: 65%;
   }
 
   &.filter-description_closed {

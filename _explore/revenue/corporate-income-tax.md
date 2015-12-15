@@ -9,7 +9,7 @@ permalink: /explore/corporate-income-tax/
   <article class="container-left-7">
 
     <div>
-      <a class="breadcrumb" href="{{ site.baseurl }}/explore/">Explore</a>
+      <a class="breadcrumb" href="{{ site.baseurl }}/explore/">Explore data</a>
       /
     </div>
     <h1>Corporate Income Tax</h1>
@@ -18,19 +18,22 @@ permalink: /explore/corporate-income-tax/
 
     <h3>Tax information from government sources</h3>
 
-    <p>As mandated by the <a href="http://legisworks.org/sal/39/stats/STATUTE-39-Pg756.pdf">Revenue Act of 1916</a>, the IRS publishes statistics related to “the operations of the internal revenue laws” as they affect individuals, corporations, and other entities. The IRS <a href="https://www.irs.gov/uac/SOI-Tax-Stats-Statistics-of-Income">Statistics of Income</a> (SOI) program is responsible for executing this function by collecting, processing, and presenting this data, and then sharing information about how the tax system works with other government agencies and the general public.</p>
+    <p>As mandated by the <a href="http://legisworks.org/sal/39/stats/STATUTE-39-Pg756.pdf">Revenue Act of 1916</a>, the Internal Revenue Service (IRS) publishes statistics related to “the operations of the internal revenue laws” as they affect individuals, corporations, and other entities. The IRS <a href="https://www.irs.gov/uac/SOI-Tax-Stats-Statistics-of-Income">Statistics of Income</a> (SOI) program is responsible for executing this function by collecting, processing, and presenting this data, and then sharing information about how the tax system works with other government agencies and the general public.</p>
 
     <p>SOI publishes data on <a href="https://www.irs.gov/uac/Tax-Stats-2">tax statistics</a> and <a href="https://www.irs.gov/uac/SOI-Tax-Stats-Corporation-Tax-Statistics">corporation tax statistics</a>.  SOI aggregates tax data separately for <a href="https://www.irs.gov/uac/SOI-Tax-Stats-S-Corporation-Statistics">S-corporations</a>.</p>
 
-    <p>SOI presents the data in various ways for corporations, including by size, type of return, and sector or industry. The data by sector or industry is aggregated by the NAICS industrial sectors, and then further by major and minor industry classifications. The total federal income tax liability reported by industry should be interpreted with care because industry classification of companies with multiple lines of business are classified into an industry category based on the taxpayer’s determination of the business activity from which it derives the highest percentage of its total receipts.</p>
+    <p>SOI presents the data in various ways for corporations, including by size, type of return, and sector or industry. The data by sector or industry is aggregated by <span class="term term-p" data-term="NAICS" title="Click to define" tabindex="0">NAICS<i class="icon-book"></i></span> industrial sectors, and then further by major and minor industry classifications. The total federal income tax liability reported by industry should be interpreted with care because industry classification of companies with multiple lines of business are classified into an industry category based on the taxpayer’s determination of the business activity from which it derives the highest percentage of its total receipts.</p>
 
     <h4>Corporate income tax receipts (in millions USD)</h4>
 
-    <p>SOI’s calculations of federal corporate income tax receipts from all returns in the mining and petroleum refining sectors for <a href="https://www.irs.gov/uac/SOI-Tax-Stats-Returns-of-Active-Corporations-Table-1">tax years 2009 to 2013</a> are presented below.</p>
+    <p>SOI’s calculations of federal corporate income tax receipts from all returns in the mining and petroleum refining sectors for <a href="https://www.irs.gov/uac/SOI-Tax-Stats-Returns-of-Active-Corporations-Table-1">tax years 2009 to 2013</a> are presented below.<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup></p>
 
-    <table>
+    <table class="article_table">
       <tr>
-  		<th>Industry</th>
+  		<th rowspan="2">Industry</th>
+      <th colspan="5">Total receipts (in millions USD)<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup></th>
+      </tr>
+      <tr>
   		<th>2009</th>
   		<th>2010</th>
   		<th>2011</th>
@@ -111,6 +114,13 @@ permalink: /explore/corporate-income-tax/
 
     <p>In 2010, the United States enacted the <a href="{{site.baseurl}}/how-it-works/federal-reforms/#dodd-frank">Dodd-Frank Act</a>, which requires listed extractive companies to separately disclose information about payments to governments around the world, including their federal corporate income tax payments. The Securities and Exchange Commission is rewriting the rule and has stated that it will be proposed in the spring of 2016. Once finalized, publicly traded companies will report according to the law and the rule.</p>
 
+    <h3>Notes</h3>
+    <div class="footnotes">
+      <ol>
+        <li id="fn:1"><p>Statistics on corporate income taxes relative to companies performing extractive activities are generally classified under the NAICS Mining major industry. In addition, integrated companies that operate in both the downstream extractive and refining spaces are classified under the NAICS Petroleum and Coal Products Manufacturing major industry. <a href="#fnref:1" class="reversefootnote">↩</a></p></li>
+        <li id="fn:2"><p>All figures are estimates based on samples. <a href="#fnref:2" class="reversefootnote">↩</a></p></li>
+      </ol>
+    </div>
   </article>
 
 </div>

@@ -16,27 +16,33 @@ permalink: /downloads/federal-revenue-by-location/
 
     <p class="case_studies_intro-para">There are two types of federal-revenue-by-location datasets available on this site. One includes offshore data, and the other includes onshore data. We have versions of these datasets available for both calendar year and fiscal year 2013, and they are both accounting year data. </p>
 
-    <p class="downloads-download_links-intro">Download calendar year data:
-      <ul class="downloads-download_links">
-        <li><a href="{{site.baseurl}}/downloads/federal_revenue_offshore_acct-year_CY04-13_2015-11-20.xlsx"><icon class="icon-cloud icon-padded"></icon>
-         Offshore dataset (xlsx, 321 KB)
-       </a></li>
-       <li><a href="{{site.baseurl}}/downloads/federal_revenue_onshore_acct-year_CY04-13_2015-11-20.xlsx"><icon class="icon-cloud icon-padded"></icon>
-         Onshore dataset (xlsx, 1.1 MB)
-       </a></li>
-      </ul>
-    </p>
+    <p class="downloads-download_links-intro">Download calendar year data:</p>
+    <ul class="downloads-download_links">
+      <li><a href="{{site.baseurl}}/downloads/federal_revenue_offshore_acct-year_CY04-13_2015-11-20.xlsx"><icon class="icon-cloud icon-padded"></icon>
+       Offshore dataset (xlsx, 321 KB)
+     </a></li>
+     <li><a href="{{site.baseurl}}/data/offshore/revenues.tsv"><icon class="icon-cloud icon-padded"></icon>
+      Offshore dataset (tsv)
+    </a></li>
+     <li><a href="{{site.baseurl}}/downloads/federal_revenue_onshore_acct-year_CY04-13_2015-11-20.xlsx"><icon class="icon-cloud icon-padded"></icon>
+       Onshore dataset (xlsx, 1.1 MB)
+     </a></li>
+    <li><a href="{{site.baseurl}}/data/county/revenues.tsv"><icon class="icon-cloud icon-padded"></icon>
+      Onshore dataset (tsv)
+    </a></li>
+    </ul>
 
-    <p class="downloads-download_links-intro">Download fiscal year data:
-      <ul class="downloads-download_links">
-        <li><a href="{{site.baseurl}}/downloads/federal_revenue_offshore_acct-year_FY04-14_2015-11-20.xlsx"><icon class="icon-cloud icon-padded"></icon>
-          Offshore dataset (xlsx, 348 KB)
-        </a></li>
-       <li><a href="{{site.baseurl}}/downloads/federal_revenue_onshore_acct-year_FY04-14_2015-11-20.xlsx"><icon class="icon-cloud icon-padded"></icon>
-         Onshore dataset (xlsx, 1.1 MB)
-       </a></li>
-      </ul>
-    </p>
+    <p class="downloads-download_links-intro">Download fiscal year data:</p>
+    <ul class="downloads-download_links">
+      <li><a href="{{site.baseurl}}/downloads/federal_revenue_offshore_acct-year_FY04-14_2015-11-20.xlsx"><icon class="icon-cloud icon-padded"></icon>
+        Offshore dataset (xlsx, 348 KB)
+      </a></li>
+     <li><a href="{{site.baseurl}}/downloads/federal_revenue_onshore_acct-year_FY04-14_2015-11-20.xlsx"><icon class="icon-cloud icon-padded"></icon>
+       Onshore dataset (xlsx, 1.1 MB)
+     </a></li>
+    </ul>
+
+    <p class="u-margin-top">We also have <a href="https://github.com/18F/doi-extractives-data/wiki/Data-Catalog#federal-revenue">notes on this data</a> from the web development team as they built the interactions on this site.</p>
 
     <h2 class="h3">Scope</h2>
 
@@ -50,6 +56,10 @@ permalink: /downloads/federal-revenue-by-location/
 
     <p>“Oil & Gas” is the commodity category used for offshore oil and gas rents and bonuses. At the time of lease sale, it isn’t known whether a lease will produce oil, gas or both oil and gas. After a lease starts producing a commodity (or commodities), the lease owner starts paying royalties. These can then be associated with either oil or gas. Hence, rent and bonus lines of data will be associated with an “Oil & Gas” commodity type, while royalty lines of data will be associated with either “Oil” or “Gas” commodity types.</p>
 
+    <h2 class="h3">Why is the calendar year revenue by location national total slightly different than the revenue by company total?</h2>
+
+    <p>Our site has two federal revenue datasets. The one on this page is organized by location. <a href="{{ site.baseurl }}/downloads/federal-revenue-by-company/">This one</a> is organized by the company that paid the revenue. However, the national revenue totals are slightly different (by about 90 million dollars). This is because the the company revenues dataset excludes revenue from offshore right-of-ways because they don't map to an offshore planning area.</p>
+
 
     <h2>Offshore data dictionary</h2>
 
@@ -57,27 +67,27 @@ permalink: /downloads/federal-revenue-by-location/
 
     <h3>Fields and definitions</h3>
 
-    <p><span>Revenue Type.</span> Revenues from U.S. natural resources fall into one of several types:
+    <p><strong>Revenue Type.</strong> Revenues from U.S. natural resources fall into one of several types:
       <ul class="list-bullet">
-        <li><span>Royalties. </span>
-          A natural resource lease owner pays royalties after the lease starts producing a commodity in paying quantities. The amount is based on a percentage of the revenue from the commodity sold. The exact percentage is set in the original lease document that went along with the lease sale.</li>
-        <li><span>Bonus. </span>
+        <li><strong>Royalties. </strong>
+          A natural resource lease owner pays royalties after the lease starts producing a commodity in <span class="term term-p" data-term="paying quantities" title="Click to define" tabindex="0">paying quantities<i class="icon-book"></i></span>. The amount is based on a percentage of the revenue from the commodity sold. The exact percentage is set in the original lease document that went along with the lease sale.</li>
+        <li><strong>Bonus. </strong>
           The amount paid by the highest successful bidder for a natural resource lease. The winning bid.</li>
-        <li><span>Other revenues. </span>
+        <li><strong>Other revenues. </strong>
           This category includes revenues that are not included in the royalty, rent, or bonus categories, such as minimum royalties, estimated royalties, settlement agreements, and interest.</li>
-        <li><span>Rents. </span>
+        <li><strong>Rents. </strong>
           A natural resource lease might not produce anything in paying quantities for some time after it is sold. Until it does, periodic payments are made for the right to continue exploration and development of the land for future natural resource production. These payments are called rent.</li>
       </ul>
     </p>
 
-    <p><span>Commodity Type. </span>The Department of the Interior collects revenues on over 60 different products. The majority of revenues come from Oil & Gas, Coal and Renewables (Geothermal and Wind), but you will find many other product categories in these datasets.
+    <p><strong>Commodity Type. </strong>The Department of the Interior collects revenues on over 60 different products. The majority of revenues come from Oil & Gas, Coal and Renewables (Geothermal and Wind), but you will find many other product categories in these datasets.
     </p>
 
-    <p><span>Region. </span>The Bureau of Ocean Energy Management separates offshore area into four regions: Gulf of Mexico, Atlantic, Pacific and Alaska. For a more information on offshore regions, including spatial boundaries, see the Bureau of Ocean Energy Management's <a href="http://www.boem.gov/Maps-and-GIS-Data/">maps and GIS data</a>.</p>
+    <p><strong>Region. </strong>The Bureau of Ocean Energy Management separates offshore area into four regions: Gulf of Mexico, Atlantic, Pacific and Alaska. For a more information on offshore regions, including spatial boundaries, see the Bureau of Ocean Energy Management's <a href="http://www.boem.gov/Maps-and-GIS-Data/">maps and GIS data</a>.</p>
 
-    <p><span>Planning Area. </span>Offshore regions are broken out into planning areas. For a more information on offshore planning areas, including spatial boundaries, see the Bureau of Ocean Energy Management's <a href="http://www.boem.gov/Maps-and-GIS-Data/">maps and GIS data</a>.</p>
+    <p><strong>Planning Area. </strong>Offshore regions are broken out into planning areas. For a more information on offshore planning areas, including spatial boundaries, see the Bureau of Ocean Energy Management's <a href="http://www.boem.gov/Maps-and-GIS-Data/">maps and GIS data</a>.</p>
 
-    <p><span>Revenue. </span>Total revenue.</p>
+    <p><strong>Revenue. </strong>Total revenue.</p>
 
 
     <h2>Onshore data dictionary</h2>

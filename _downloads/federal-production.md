@@ -18,11 +18,13 @@ permalink: /downloads/federal-production/
 
     <p class="downloads-download_links-intro">Download calendar year data:
       <ul class="downloads-download_links">
-        <li><a href="{{site.baseurl}}/downloads/production_federal_lands_waters_CY2013_oil_gas_solids-2015-11-25.xlsx"><icon class="icon-cloud icon-padded"></icon>
-        Full dataset (xlsx, 517 KB)
-       </a></li>
-     </ul>
-   </p>
+        <li><a href="{{site.baseurl}}/downloads/production_federal_lands_waters_CY2013_oil_gas_solids-2015-11-25.xlsx"><icon class="icon-cloud icon-padded"></icon>Full dataset (xlsx, 517 KB)</a></li>
+        <li><a href="{{site.baseurl}}/data/offshore/production.tsv"><icon class="icon-cloud icon-padded"></icon>Offshore dataset (tsv)</a></li>
+        <li><a href="{{site.baseurl}}/data/county/production.tsv"><icon class="icon-cloud icon-padded"></icon>Onshore dataset (tsv)</a></li>
+      </ul>
+    </p>
+
+    <p class="u-margin-top">We also have <a href="https://github.com/18F/doi-extractives-data/wiki/Data-Catalog#federal-production">notes on this data</a> from the web development team as they built the interactions on this site.</p>
 
     <h2 class="h3">Scope</h2>
     <p>This dataset includes natural resource production for U.S. federal lands and offshore areas. It does not include Indian lands, privately-owned lands, or U.S. state lands. The dataset currently include data tracked and managed by the Department of the Interior’s Office of Natural Resources Revenue (ONRR). The production data for Oil and Gas is collected on Form ONRR-4054 (Oil and Gas Operations Report). Coal and hardrock production is collected on Form ONRR-4430 (Solid Minerals Production and Royalty Report).</p>
@@ -31,7 +33,7 @@ permalink: /downloads/federal-production/
 
     <p>This dataset is updated six months after the end of the year. Fiscal year 2015 data will be published in March 2016 and calendar year 2015 data will be published in June 2016. </p>
 
-    <h2 class="h3">Why was some solids data withheld?</strong></h2>
+    <h2 class="h3">Why was some solids data withheld?</h2>
 
     <p>ONRR withheld some solids production information out of an abundance of caution to ensure that there were no violations of the Trade Secrets Act. </p>
 
@@ -39,6 +41,10 @@ permalink: /downloads/federal-production/
         <li>"W" is displayed in the Production Volume column for those products that reveal proprietary data at the county level </li>
         <li>All "W" volumes are accounted for in separate line totals where state and county have been "Withheld" (columns C, D and E)</li>
     </ul>
+
+    <h2 class="h3">A note about “Mixed Exploratory” versus “Federal” categories of production</h2>
+
+    <p>For the purposes of the visualizations on our site, we've aggregated production on two types of jurisdictions: “mixed exploratory” and “federal.” Federal production is production from federal lands and waters; this is straightforward. However, “mixed exploratory” is a temporary jurisdictional unit that is used until production is proven on that location. Then, BLM adjudicates a permanent unit with allocation schedules that may split that area between federal and other ownership. At that point, payors resubmit royalties based on the new unit allocations retroactive to the first production. This means that the federal government rarely gets 100% of “mixed exploratory” volumes. You can see these categories disaggregated in the federal production dataset, downloadable on this page.</p>
 
     <h2>Data dictionary</h2>
 

@@ -3,13 +3,22 @@
 // Styleguide blocks.explore-home
 
 .explore_home-heading {
-  margin-bottom: 0;
+  margin-bottom: $base-padding;
+
+  @include respond-to(medium-up) {
+    margin-bottom: 0;
+  }
 }
 
 .explore_home-subhead {
   @include heading(para-md);
   font-weight: $weight-bold;
-  margin-bottom: 0;
+  padding-bottom: 0;
+
+  + .explore_home-heading {
+    margin-top: 0;
+    padding-top: 0;
+  }
 }
 
 .explore_home-tabs {
@@ -17,9 +26,14 @@
   margin-bottom: 3px;
   text-align: right;
 
+  @include respond-to(tiny-down) {
+    font-size: 0.6rem;
+    line-height: 0.75rem;
+    text-align: center;
+  }
+
   a {
-    border: 1px solid $white;
-    border-bottom: 1px solid $neutral-gray;
+    border: 1px solid transparent;
     color: $black;
     margin-right: $base-padding-lite;
     padding: $base-padding-lite $base-padding;
@@ -34,6 +48,7 @@
     &:hover,
     &:focus {
       background-color: $mid-gray;
+      text-decoration: none;
     }
   }
 

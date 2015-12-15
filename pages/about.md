@@ -28,7 +28,7 @@ permalink: /about/
 </section>
 
 
-<div class="communities">
+<div class="communities u-padding-small_screen">
 
   <div class="communities-intro">
 
@@ -38,11 +38,9 @@ permalink: /about/
 
 		<h2 id="initiative" class="h3">The initiative</h2>
 
-		<p></p>
+		<p>The EITI International Board and implementing member countries believe that a nation’s natural resource wealth belongs to its citizens. Through increased transparency and accountability, EITI can increase public trust and dialogue, improve governance, attract investment, and manage and enhance growth so that citizens receive financial and societal benefits from a country’s natural resources.</p>
 
-		<p>The EITI International Board and implementing member countries believe that a nation’s natural resource wealth belongs to its citizens. Through increased transparency and accountability, the EITI can increase public trust and dialogue, improve governance, attract investment, and manage and enhance growth so that citizens receive financial and societal benefits from a country’s natural resources.</p>
-
-		<p>Since 2003, international representatives from government, industry, and civil society have developed and adapted the <a href="https://eiti.org/eiti/principles">EITI Principles</a>. These principles are the cornerstone of the initiative and endorsed by every stakeholder.</p>
+		<p>Since 2003, international representatives from government, industry, and <span class="term term-p" data-term="civil society" title="Click to define" tabindex="0">civil society<i class="icon-book"></i></span> have developed and adapted the <a href="https://eiti.org/eiti/principles">EITI Principles</a>. These principles are the cornerstone of the initiative and endorsed by every stakeholder.</p>
 
       </div>
 
@@ -58,11 +56,11 @@ permalink: /about/
 
 		  <h2 class="h3">Who’s involved</h2>
 
-		  <h3 class="h4">1 | Multi-stakeholder group</h3>
+		  <h3 class="h4">1 | Multi-Stakeholder Group</h3>
 
-		  <p>To increase transparency and accountability, the EITI relies on a cross-sector partnership between government (agencies that oversee extraction in the U.S.), industry (companies operating in the extractive industries), and civil society (individuals and organizations that represent community and citizen interests). Together, all three sectors make up the <a href="https://www.doi.gov/eiti/FACA">Multi-stakeholder Group</a> (MSG) responsible for overseeing the EITI.</p>
+		  <p>To increase transparency and accountability, EITI relies on a cross-sector partnership between government (agencies that oversee extraction in the U.S.), industry (companies operating in the extractive industries), and civil society (individuals and organizations that represent community and citizen interests). Together, all three sectors make up the <a href="https://www.doi.gov/eiti/FACA">Multi-Stakeholder Group</a> (MSG) responsible for overseeing EITI.</p>
 
-		  <p>An Independent Administrator (IA) also assists in implementing the EITI Standard. Later, a Validator commissioned by the EITI International Secretariat assesses whether or not the country successfully implemented the EITI Standard.</p>
+		  <p>An Independent Administrator (IA) also assists in implementing the <span class="term term-p" data-term="EITI Standard" title="Click to define" tabindex="0">EITI Standard<i class="icon-book"></i></span>. Later, a Validator commissioned by the EITI International Secretariat assesses whether or not the country successfully implemented the EITI Standard.</p>
 
       </div>
 
@@ -98,18 +96,18 @@ permalink: /about/
 
 		<h3 class="h4">2 | Leadership</h3>
 
-		<p>The Secretary of the U.S. Department of the Interior (DOI) leads the USEITI.</p>
+		<p>The Secretary of the U.S. Department of the Interior (DOI) leads USEITI.</p>
 
-		<ul class="list-bullet">
+		<p><ul class="list-bullet">
 			<li>December 2012: The Secretary of the Interior formed the MSG with 22 members and 21 alternates from government, industry, and civil society organizations.</li>
 			<li>December 19, 2013: The U.S. submitted an application to participate to the EITI International Board. The MSG developed this application after engaging with stakeholders across the country.</li>
 			<li>March 19, 2014: The EITI International Board accepted the U.S. as a candidate country.</li>
 			<li>Summer of 2014: DOI selected an IA for the USEITI, Deloitte & Touche LLP.</li>
-		</ul>
+		</ul></p>
 
 		<h3 class="h4">3 | Federal agencies</h3>
 
-		<p>Congress passes laws to govern the extraction of natural resources and the fiscal management of resulting revenue. Federal agencies, part of the executive branch, then develop regulations and rules to implement and enforce those laws. DOI has primary responsibility for implementing the relevant statutes and regulations. It does so in consultation with other federal agencies, including NOAA, EPA, the Department of Energy (DOE), and others.</p>
+		<p>Congress passes laws to govern the extraction of natural resources and the fiscal management of resulting revenue. Federal agencies, which are part of the executive branch, then develop regulations and rules to implement and enforce those laws. DOI has primary responsibility for implementing the relevant statutes and regulations. It does so in consultation with other federal agencies, including NOAA, EPA, the Department of Energy (DOE), and others.</p>
 
       <article class="bureau">
         <div class="bureau-left">
@@ -119,7 +117,7 @@ permalink: /about/
           <h4>Department of the Interior (DOI)</h4>
           <p><a href="https://www.doi.gov/">DOI</a> protects and manages the nation’s natural resources and cultural heritage; provides scientific and other information about those resources; and honors its trust responsibilities or special commitments to American Indians, Alaska Natives, and affiliated island communities.</p>
 
-		  <p>Bureaus and offices within DOI fulfill this mission by serving three primary functions related to natural resource extraction: managing federal and Indian lands and natural resources; enforcing regulations and rules; and collecting, managing, and disbursing revenue from natural resource extraction on federal and Indian lands.</p>
+		  <p>Bureaus and offices within DOI fulfill this mission by serving three primary functions related to natural resource extraction: managing federal and Indian lands and natural resources; enforcing regulations and rules; and collecting, managing, and disbursing revenue from extraction on federal and <span class="term term-p" data-term="Indian lands" title="Click to define" tabindex="0">Indian lands<i class="icon-book"></i></span>.</p>
         </div>
       </article>
 
@@ -129,7 +127,7 @@ permalink: /about/
         </div>
         <div class="bureau-right">
           <h4>Bureau of Land Management (BLM)</h4>
-		  <p><a href="http://www.blm.gov/">BLM</a> manages and conserves federal lands for the use and enjoyment of present and future generations under a mandate of multiple-use and sustained yield. BLM manages the exploration, development, and production of natural resources on federal lands, including lease sales and the permitting and licensing processes. BLM also ensures that developers and operators comply with requirements and regulations. BLM collects revenue in the form of fees.</p>
+		  <p><a href="http://www.blm.gov/">BLM</a> manages and conserves <span class="term term-p" data-term="federal land" title="Click to define" tabindex="0">federal lands<i class="icon-book"></i></span> for the use and enjoyment of present and future generations under a mandate of multiple-use and sustained yield. BLM manages exploration, development, and production of natural resources on federal lands, including lease sales and the permitting and licensing processes. BLM also ensures that developers and operators comply with requirements and regulations. BLM collects revenue in the form of fees.</p>
         </div>
       </article>
 
@@ -139,7 +137,7 @@ permalink: /about/
         </div>
         <div class="bureau-right">
           <h4>Office of Surface Mining Reclamation and Enforcement (OSMRE)</h4>
-          <p><a href="http://www.osmre.gov/">OSMRE</a>’s mission is to establish a nationwide program to protect society and the environment from the adverse effects of surface coal mining operations, under which OSMRE is charged with balancing the nation’s need for continued domestic coal production with protection of the environment. OSMRE works with states and tribes to ensure that citizens and the environment are protected during coal mining and that the land is restored to beneficial use when mining is finished.</p>
+          <p><a href="http://www.osmre.gov/">OSMRE</a>’s mission is to establish a nationwide program to protect society and the environment from the adverse effects of surface coal mining operations, under which OSMRE is charged with balancing the nation’s need for continued domestic coal production with protection of the environment. OSMRE works with states and tribes to ensure that citizens and the environment are protected during coal mining and that land is restored to beneficial use when mining is finished.</p>
 
 		  <p>OSMRE and its partners are also responsible for reclaiming and restoring lands and water degraded by mining operations before 1977. OSMRE collects revenue in the form of reclamation fees from companies for the <a href="http://www.osmre.gov/programs/aml.shtm">Abandoned Mine Reclamation Fund</a>, a fund intended to pay for the cleanup of mines abandoned before 1977. Interest earnings on the fund are used to pay for certain United Mine Workers of America health and retirement funds authorized by Congress.</p>
         </div>
@@ -151,7 +149,7 @@ permalink: /about/
         </div>
         <div class="bureau-right">
           <h4>Bureau of Ocean Energy Management (BOEM)</h4>
-          <p><a href="http://www.boem.gov/">BOEM</a> promotes energy independence, environmental protection, and economic development through responsible, science-based management of offshore conventional and renewable energy and marine mineral resources. BOEM manages the responsible exploration and development (including resource evaluation, planning, and leasing) of energy and mineral resources in federal submerged lands and updates <a href="http://www.boem.gov/National-Environmental-Policy-Act/">leasing regulations for the Outer Continental Shelf</a>. In FY 2013, BOEM collected $2 million in revenue in the form of cost recovery fees.</p>
+          <p><a href="http://www.boem.gov/">BOEM</a> promotes energy independence, environmental protection, and economic development through responsible, science-based management of offshore conventional and <span class="term term-p" data-term="renewable energy" title="Click to define" tabindex="0">renewable energy<i class="icon-book"></i></span> and marine mineral resources. BOEM manages the responsible exploration and development (including resource evaluation, planning, and leasing) of energy and mineral resources in federal submerged lands and updates <a href="http://www.boem.gov/National-Environmental-Policy-Act/">leasing regulations for the Outer Continental Shelf</a>. In FY 2013, BOEM collected $2 million in revenue in the form of cost recovery fees.</p>
         </div>
       </article>
 
@@ -161,7 +159,7 @@ permalink: /about/
         </div>
         <div class="bureau-right">
           <h4>Bureau of Safety and Environmental Enforcement (BSEE)</h4>
-          <p><a href="http://www.bsee.gov/">BSEE</a> promotes safety, protects the environment, and conserves resources offshore through vigorous regulatory oversight and enforcement. BSEE enforces safety and environmental regulations, as well as updates rules governing operations on the Outer Continental Shelf. In FY 2013, BSEE collected $70 million in revenue in the form of fees.</p>
+          <p><a href="http://www.bsee.gov/">BSEE</a> promotes safety, protects the environment, and conserves resources offshore through vigorous regulatory oversight and enforcement. BSEE enforces safety and environmental regulations, as well as updating rules governing operations on the <span class="term term-p" data-term="Outer Continental Shelf" title="Click to define" tabindex="0">Outer Continental Shelf<i class="icon-book"></i></span>. In FY 2013, BSEE collected $70 million in revenue in the form of fees.</p>
         </div>
       </article>
 
@@ -181,7 +179,7 @@ permalink: /about/
         </div>
         <div class="bureau-right">
           <h4>Department of the Treasury</h4>
-          <p><a href="http://www.treasury.gov/Pages/default.aspx">The Treasury</a> supports economic growth and stability in the United States and overseas, protects the U.S. financial system, and manages the federal government’s finances and resources.</p>
+          <p><a href="http://www.treasury.gov/Pages/default.aspx">The Treasury</a> supports economic growth and stability in the U.S. and overseas, protects the U.S. financial system, and manages the federal government’s finances and resources.</p>
         </div>
       </article>
 
@@ -191,9 +189,20 @@ permalink: /about/
         </div>
         <div class="bureau-right">
           <h4>Internal Revenue Service (IRS)</h4>
-          <p><a href="https://www.irs.gov/">The IRS</a> assists U.S. taxpayers with understanding and meeting their tax obligations, and to enforce the law when taxpayers do not meet these obligations. The IRS collects corporate income taxes from corporations in the extractive industries, as well as income taxes from all other companies operating in these industries. In the 2013 tax year, the IRS calculated <a href="https://www.irs.gov/uac/SOI-Tax-Stats-Table-7-Corporation-Returns-With-Net-Income">$11.8 billion in corporate income tax receipts</a> from Mining and Petroleum and Coal Products Manufacturing industries.</p>
+          <p><a href="https://www.irs.gov/">The IRS</a> assists U.S. taxpayers with understanding and meeting their tax obligations, and enforces the law when taxpayers do not meet these obligations. The IRS collects corporate income taxes from corporations in the extractive industries, as well as income taxes from all other companies operating in these industries. In the 2013 tax year, the IRS calculated <a href="https://www.irs.gov/uac/SOI-Tax-Stats-Table-7-Corporation-Returns-With-Net-Income">$11.8 billion in corporate income tax receipts</a> from mining and petroleum and coal products manufacturing industries.</p>
         </div>
       </article>
+
+      <h3 class="h4">Public comments</h3>
+
+      <p>Read public comments submitted during the USEITI process:</p>
+        <ul class="list-bullet">
+          <li><a href="https://www.doi.gov/eiti/
+FACA/outreach">Public comments from the USEITI application development process</a></li>
+          <li><a href="https://www.doi.gov/eiti/FACA/msg-meeting-minutes">Public comments from minute notes of MSG meetings</a></li>
+          <li><a href="https://www.doi.gov/sites/doi.gov/files/
+migrated/eiti/FACA/upload/2015-WORKPLAN-NARRATIVE-11_25_14-final.pdf">USEITI 2015 Workplan (PDF)</a></li>
+        </ul>
 
     </article>
 

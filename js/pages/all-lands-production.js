@@ -77,9 +77,6 @@
 
   function initialize() {
     var props = parseHash();
-    if (Object.keys(props).length) {
-      filterToggle.attr('aria-expanded', true);
-    }
     return mutateState(function(state) {
       return state.merge(props);
     }) || render(state);
@@ -426,7 +423,7 @@
       });
     } else {
       data = [
-        {color: NULL_FILL, value: 'no production on federal land'},
+        {color: NULL_FILL, value: 'no production'},
         {color: colorscheme[3][2], value: '1 or more products'},
       ];
     }

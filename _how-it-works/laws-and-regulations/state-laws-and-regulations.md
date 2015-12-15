@@ -30,11 +30,26 @@ nav_items:
   {% include hash_selector.html %}
 </nav>
 
-<p>While all 50 states have some natural resource extraction activity, the 2015 USEITI Report focuses on 18 states that led the country in oil, gas, coal, and nonenergy mineral production in 2013; had the most DOI revenue or state production taxes; or had the most significant tribal natural resource interests. These 18 states are highlighted on the map below:</p>
+<p>While all 50 states have some natural resource extraction activity, the 2015 USEITI Report focuses on 18 states that led the country in oil, gas, coal, and nonenergy mineral production in 2013; had the most DOI revenue or state production taxes; or had the most significant tribal natural resource interests.</p>
 
-<img src="{{site.baseurl}}/img/placeholders/map.png">
+<h2 class="h5">Map of 18 MSG Prioritized States for the 2015 USEITI Report</h2>
 
-<p>See <a href="{{site.baseurl}}/how-it-works/state-legal-fiscal-info/">State Legal and Fiscal Information</a> for more details about the individual states’ laws and statutes.</p>
+<eiti-map is="eiti-map" data-path="{{ site.baseurl }}/data/geo/"
+  simplify="1e-2"
+  projection="albersCustom"
+  preserveAspectRatio="xMidYMid meet">
+  <svg>
+    <g data-url="us-topology.json"
+      data-object="states"
+      data-mesh="true"></g>
+    <g data-url="us-topology.json"
+      data-object="states"
+      data-filter="properties.name.match(/Arizona|California|Nevada|Utah|Montana|Wyoming|Colorado|New Mexico|Texas|Oklahoma|Louisiana|North Dakota|Minnesota|Illinois|Kentucky|West Virginia|Pennsylvania|Alaska/)"
+      class="case_studies-selected_counties"></g>
+  </svg>
+</eiti-map>
+
+<p class="u-margin-top">See <a href="{{site.baseurl}}/how-it-works/state-legal-fiscal-info/">State Legal and Fiscal Information</a> for more details about the individual states’ laws and statutes.</p>
 
 <h2 class="h3" id="role-of-state-government-agencies" data-nav-header="role-of-state-government-agencies">Role of state government agencies</h2>
 
@@ -68,7 +83,7 @@ nav_items:
 
 <p>As an example, <a href="http://revenue.wyo.gov/mineral-tax-division/severance-tax-filing-information">Wyoming applies the following severance taxes</a> on the value of extracted resources before processing and transportation:</p>
 
-<table>
+<table class="article_table">
   <tr>
     <th>Natural resource</th>
     <th>Severance tax rate</th>
@@ -122,7 +137,7 @@ nav_items:
 
 <h4 class="h5">Select states with permanent natural resource trust funds</h4>
 
-<table>
+<table class="article_table">
   <tr>
     <th>State</th>
     <th>Natural resources</th>

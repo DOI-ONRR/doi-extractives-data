@@ -7,31 +7,25 @@ permalink: /explore/federal-production/
   <div class="container-left-4">
     <div class="container-outer">
       <div>
-        <a class="breadcrumb" href="{{ site.baseurl }}/explore/">Explore</a>
+        <a class="breadcrumb" href="{{ site.baseurl }}/explore/">Explore data</a>
         /
       </div>
       <h1>Federal Production</h1>
 
-      <!-- <p>In 2013, 40.3% of coal, 23.1% of crude oil and lease condensate, 15.9% of natural gas, and 11.7% of natural gas liquids extraction in the U.S. took place on federal lands.</p> -->
+      <p>Explore production on federal lands and waters from 2005 to 2014 by state and county for 55 individual products.</p>
 
-      <p>Explore production on federal lands and waters from 2005 to 2014 by state and county for 36 individual products.</p>
+      <p>This data comes from the Department of the Interior's Office of Natural Resources Revenue and is calendar year data.</p>
 
-      <p>At first, this map shows which states have production data for at least one product. Select a product in the filters to show production amounts in their respective units.</p>
-
-      <p>This data comes from the Department of the Interior's Office of Natural Resources Revenue. Visit our documentation page for data scope, definitions and clarifications.</p>
-
-      <a href="{{site.baseurl}}/downloads/#production-fed">
-        <icon class="icon-cloud icon-padded"></icon>Download full dataset
-      </a><br>
+      <p>At first, this map shows which states have production data for at least one product. Select a product to show production amounts in the appropriate unit of measure.</p>
 
       <a href="{{site.baseurl}}/downloads/federal-production/">
-        <i class="fa fa-file-text-o u-padding-right"></i>Documentation
+        <i class="fa fa-file-text-o u-padding-right"></i>Data and documentation
       </a>
 
     </div>
   </div>
   <section class="container-right-8 filters-wrapper_outer">
-    <div data-absolute="true" data-offset-parent="true" class="sticky_nav sticky_nav-show_mobile filters-wrapper container" data-toggler="filters">
+    <div data-absolute="true" data-offset-parent="mobile" class="sticky_nav sticky_nav-show_mobile filters-wrapper container" data-toggler="filters" data-max-width="675">
       <h1 data-toggler="filters" data-filter-description="" class="filter-description filter-description_closed">
         <a href="#commodity-group-selector" class="filter-part" data-key="commodity">All</a>
         production on federal lands and waters in
@@ -208,6 +202,7 @@ permalink: /explore/federal-production/
     </div>
   </section>
 </section>
+<script src="{{ site.baseurl }}/js/components/sticky-nav.js"></script>
 <script src="{{ site.baseurl }}/js/vendor/immutable.min.js"></script>
 <script src="{{ site.baseurl }}/js/components/eiti-bar.js"></script>
 <script>
@@ -224,5 +219,6 @@ permalink: /explore/federal-production/
     'US': 'the entire U.S.'
   };
 </script>
+
 <script src="{{ site.baseurl }}/js/pages/federal-production.js"></script>
-<script src="{{ site.baseurl }}/js/components/sticky-nav.js"></script>
+

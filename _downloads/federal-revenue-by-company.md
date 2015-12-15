@@ -20,8 +20,12 @@ permalink: /downloads/federal-revenue-by-company/
       <ul class="downloads-download_links">
         <li><a href="{{site.baseurl}}/downloads/federal_revenue_by_company_CY2013_2015-11-10.xlsx"><icon class="icon-cloud icon-padded"></icon>
         Full dataset (xlsx, 132 KB)</a></li>
-       </ul>
-     </p>
+        <li><a href="{{site.baseurl}}/data/company/revenue.tsv"><icon class="icon-cloud icon-padded"></icon>
+        Full dataset (tsv)</a></li>
+      </ul>
+    </p>
+
+    <p class="u-margin-top">We also have <a href="https://github.com/18F/doi-extractives-data/wiki/Data-Catalog#company-revenue">notes on this data</a> from the web development team as they built the interactions on this site.</p>
 
     <h2 class="h3">Scope</h2>
 
@@ -43,6 +47,10 @@ permalink: /downloads/federal-revenue-by-company/
 
     <p>“Oil & Gas” is the commodity category used for offshore oil and gas rents and bonuses. At the time of lease sale, it isn’t known whether a lease will produce oil, gas, or both oil and gas. After a lease starts producing a commodity (or commodities), the lease owner starts paying royalties, and these royalties can then be associated with either oil or gas. Hence, rent and bonus lines of data will be associated with an “Oil & Gas” commodity type, while royalty lines of data will be associated with either “Oil” or “Gas” commodity types.</p>
 
+    <h2 class="h3">Why is the calendar year revenue by location national total slightly different than the revenue by company total?</h2>
+
+    <p>Our site has two federal revenue datasets. The one on this page is organized by the company that paid the revenue. <a href="{{ site.baseurl }}/downloads/federal-revenue-by-location/">This one</a> is organized by location. However, the national revenue totals on these datasets are slightly different (by about 90 million dollars). This is because the the company revenues dataset excludes revenue from offshore right-of-ways because they don't map to an offshore planning area.</p>
+
     <h2>Data dictionary</h2>
 
     <h3>Fields and definitions</h3>
@@ -52,12 +60,12 @@ permalink: /downloads/federal-revenue-by-company/
     <p><strong>Revenue Type.</strong> Revenues from U.S. natural resources fall into one of several types:</p>
 
     <ul class="list-bullet">
-        <li><strong>Royalties.</strong> A natural resource lease owner pays royalties after the lease starts producing a commodity in paying quantities. The amount is based on a percentage of the revenue from the commodity sold. This royalty rate is set in the original lease document that went along with the lease sale, the onshore royalty rate is 12.5%, offshore leases can have a royalty rates of 12.5%, 16.67%, 18.75%.</li>
+        <li><strong>Royalties.</strong> A natural resource lease owner pays royalties after the lease starts producing a commodity in <span class="term term-p" data-term="paying quantities" title="Click to define" tabindex="0">paying quantities<i class="icon-book"></i></span>. The amount is based on a percentage of the revenue from the commodity sold. This royalty rate is set in the original lease document that went along with the lease sale, the onshore royalty rate is 12.5%, offshore leases can have a royalty rates of 12.5%, 16.67%, 18.75%.</li>
         <li><strong>Bonus.</strong> The amount paid by the highest successful bidder for a natural resource lease. The winning bid. Collected by BLM (Onshore) and ONRR (Offshore).</li>
         <li><strong>Rents.</strong> A natural resource lease might not produce a commodity in paying quantities for some time after it is sold. Until it does, periodic payments are made for the right to continue exploration and development of the land for future natural resource production. These payments are called rent. The first year rental is collected by BLM and the remaining rental payments are collected by ONRR.</li>
         <li><strong>Other revenues.</strong> This category includes revenues that are not included in the royalty, rent, or bonus categories, such as; minimum royalties, estimated royalties, settlement agreements, and interest.</li>
         <li><strong>Inspection fees.</strong> This category includes fees for annual inspections performed by the Bureau of Safety and Environmental Enforcement (BSEE) on each offshore permanent structure and drilling rig that conducts drilling, completion, or workover operations. ONRR collects these fees on behalf of BSEE.</li>
-        <li><strong>Civil penalties.</strong> Civil penalties are assessed for violations of laws applicable to extractive activities. These penalties are issued by ONRR, BOEM, and/or BSEE, and are collected by ONRR.</li>
+        <li><strong>Civil penalties.</strong> Civil penalties are assessed for violations of laws applicable to extractive activities. These penalties are issued by ONRR, BOEM, and/or BSEE, and are collected by ONRR. There are two lines for this data. "Civil penalties" are penalties collected by ONRR, and "Civil penalties including late charges" are penalties collected by BLM.</li>
         <li><strong>Permit Fees.</strong> Include mining claim fees  paid when mining hardrock minerals, applicants pay a set fee to stake a claim rather than bid on a lease. Also included in this category are Applications to Drill. </li>
         <li><strong>Abandoned mine lands (AML) fees.</strong> A fee paid by coal companies, $0.28 per ton of surface coal produced, and $0.12 per ton of subsurface coal produced. These fees are placed in the AML fund to address reclamation of abandoned mines from operations prior to 1977.</li>
     </ul>

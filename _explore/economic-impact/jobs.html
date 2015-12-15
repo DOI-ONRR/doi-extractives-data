@@ -7,26 +7,29 @@ permalink: /explore/jobs/
   <div class="container-left-4">
     <div class="container-outer">
       <div>
-        <a class="breadcrumb" href="{{ site.baseurl }}/explore/">Explore</a>
+        <a class="breadcrumb" href="{{ site.baseurl }}/explore/">Explore data</a>
         /
       </div>
       <h1>Jobs</h1>
 
-      <!-- <p>808,000 people drew wages or salaries from work in the extractive industries in 2013. In addition, there are thousands of self-employed people working across the extractive industries.</p> -->
+      <p>Explore <span class="term term-p" data-term="extractive industry" title="Click to define" tabindex="0">extractive industries<i class="icon-book"></i></span> jobs from 2004 to 2013 by state.</p>
 
-      <p>Explore extractive industries jobs from 2004 to 2013 by state for both salaried employees and self-employed.</p>
+      <p>There are two types of jobs data here:</p>
 
-      <p>There are two types of jobs data here. <em>Wage and Salary</em> data is from the Bureau of Labor Statistics and describes the number of people employed in natural resource extraction that receive wages or salaries from companies. <em>Self-Employed</em> data is from the Bureau of Economic Analysis and describes people who work in natural resource extraction, but don’t receive wages or salaries because they own their company.</p>
+      <p><em>Wage and salary</em> data is from the Bureau of Labor Statistics and describes the number of people employed in natural resource extraction that receive wages or salaries from companies.</p>
 
-      <p>Note: The Self-Employed data includes some double counting because people appear on multiple tax forms.</p>
+      <p><em>Self-employment</em> data is from the Bureau of Economic Analysis and describes people who work in natural resource extraction, but don’t receive wages or salaries because they own their company. This dataset includes some double counting, because people may appear on multiple tax forms.</p>
 
-      <a href="{{site.baseurl}}/downloads/#jobs">See data and documentation &#8594;
+      <p>Both datasets are calendar year data.</p>
+
+      <a href="{{site.baseurl}}/downloads/#jobs">
+        <i class="fa fa-file-text-o u-padding-right"></i>Data and documentation &#8594;
       </a>
 
     </div>
   </div>
   <section class="container-right-8 filters-wrapper_outer">
-    <div data-absolute="true" data-offset-parent="true" class="sticky_nav sticky_nav-show_mobile filters-wrapper container" data-toggler="filters">
+    <div data-absolute="true" data-offset-parent="mobile" class="sticky_nav sticky_nav-show_mobile filters-wrapper container" data-toggler="filters" data-max-width="675">
       <h1 data-toggler="filters" data-filter-description="" class="filter-description filter-description_closed">
           Extractive industries jobs
           (<a href="#figure-selector" class="filter-part" data-key="figure">wage and salary</a>)
@@ -158,7 +161,7 @@ permalink: /explore/jobs/
     </div>
   </section>
 </section>
-
+<script src="{{ site.baseurl }}/js/components/sticky-nav.js"></script>
 <script src="{{ site.baseurl }}/js/vendor/immutable.min.js"></script>
 <script src="{{ site.baseurl }}/js/components/eiti-bar.js"></script>
 <script>
@@ -173,4 +176,3 @@ permalink: /explore/jobs/
   };
 </script>
 <script src="{{ site.baseurl }}/js/pages/jobs.js"></script>
-<script src="{{ site.baseurl }}/js/components/sticky-nav.js"></script>

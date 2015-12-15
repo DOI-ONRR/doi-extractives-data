@@ -26,7 +26,7 @@ nav_items:
 </div>
 <h1 id="introduction" data-nav-header="introduction">Revenue</h1>
 
-<p class="case_studies_intro-para">Companies pay a wide range of fees, rates and taxes to extract natural resources in the U.S. The amounts differ depending on what the <a href="{{ site.baseurl }}/how-it-works/ownership/">ownership</a> of the natural resource looks like. We'll cover some of the major types of payments companies make here. They are usually called 'revenue' because they represent revenue to the American public.</p>
+<p class="case_studies_intro-para">Companies pay a wide range of fees, rates and taxes to extract natural resources in the U.S. The amounts differ depending on what the <a href="{{ site.baseurl }}/how-it-works/ownership/">ownership</a> of the natural resource looks like. We'll cover some of the major types of payments companies make here. They are usually called &#8216;revenue&#8217; because they represent revenue to the American public.</p>
 
 <nav class="hash_selector">
   {% include hash_selector.html %}
@@ -34,9 +34,10 @@ nav_items:
 
 <h2 id="federal-lands-and-waters" data-nav-header="federal-lands-and-waters">Payments to extract natural resources from federal land and waters</h2>
 
-<p>When companies extract natural resources on federal onshore lands and the Outer Continental Shelf, they pay revenue to the Department of the Interior (DOI). In general, companies pay bonuses, rents, royalties, or fees and penalties (if incurred) to ONRR, and in some cases bonuses and rents to BLM. Royalties, a percentage of the sales value of extracted resources, make up most of the revenue paid to DOI.</p>
+<p>When companies extract natural resources on federal onshore lands and the Outer Continental Shelf, they pay revenue to the Department of the Interior (DOI).</p>
+<p>In general, companies pay bonuses, rents, royalties, or fees and penalties (if incurred) to ONRR, and in some cases bonuses and rents to the Bureau of Land Management. Royalties, a percentage of the sales value of extracted resources, make up most of the revenue paid to DOI.</p>
 
-<p>Lease holders also pay different fees to BLM, BSEE, and BOEM, often to reimburse the federal government for costs associated with awarding, administering, and enforcing leases. For extracting locatable hardrock minerals on federal lands, companies pay fees, but not royalties under the Mining Law of 1872.</p>
+<p>Lease holders also pay different fees to the Bureau of Land Management, Bureau of Safety and Environmental Enforcement, and Bureau of Ocean Energy Management, often to reimburse the federal government for costs associated with awarding, administering, and enforcing leases. For extracting locatable hardrock minerals on federal lands, companies pay fees, but not royalties under the Mining Law of 1872.</p>
 
 <img src="{{site.baseurl}}/img/revenue-streams-chart.png" alt="Select federal revenue streams and statutory and regulatory rates" class="article_img-100">
 
@@ -90,6 +91,16 @@ nav_items:
 
 <h3 id="federal-budget-process" data-nav-header="federal-budget-process">Federal budget process</h3>
 
-<p>Once revenue is collected by the federal government, it passes through a series of budgetary gateways before ultimately funding public services and community development. These gateways are described below, and you can explore disbursement data on our site <a href="{{ site.baseurl }}/explore/disbursements/">here</a>.</p>
+<p>Once revenue is collected by the federal government, it passes through a series of budgetary gateways before ultimately funding public services and community development. These gateways are described below, and you can <a href="{{ site.baseurl }}/explore/disbursements/">explore disbursement data here</a>.</p>
 
 <img src="{{site.baseurl}}/img/federal-budget-process.png" alt="Federal budget process. First, statute (federal statutes determine the maximum amount of funds that can be appropriated). Second, appropriation (Congress determines the amount that a given entity or agency will receive). Third, grant (recipient entities determine how much the funding will be allocated for use in their budgets). Finally, disbursement (recipient entities disburse funds over the course of the fiscal year for budgeted purposes)." class="article_img-80 u-margin-top">
+
+<h2>Learn more</h2>
+
+<p>For more details about U.S. and international revenue standards, visit:</p>
+  
+<ul class="list-bullet">
+  <li>IRS, <a href="http://www.irs.gov/irm/part4/irm_04-001-005.html">Revenue Classification and Case Building System</a></li>
+  <li>International Monetary Fund, <a href="http://www.imf.org/external/np/sta/gfsm/">Government Finance Statistics Manual 2014</a></li>
+  <li>International Monetary Fund, <a href="https://www.imf.org/external/np/fad/trans/code.htm">Code of Good Practices on Fiscal Transparency</a></li>
+</ul>

@@ -57,7 +57,7 @@ nav_items:
 
 <h3 class="h5" id="fy-2013-production-and-revenue" data-nav-header="fy-2013-production-and-revenue">FY 2013 production and revenue</h3>
 
-<table>
+<table class="article_table">
   <tr>
     <th>Resource</th>
     <th>Production</th>
@@ -76,27 +76,29 @@ nav_items:
     <td>Oil</td>
     <td>46,421,857 bbl</td>
     <td>$729,744,651</td>
-  <td rowspan="3">$4,231,254</td>
-  <td>-</td>
+    <td></td>
+    <td>-</td>
   </tr>
   <tr>
     <td>Natural gas</td>
     <td>240,552,694 Mcf</td>
     <td>$126,043,575</td>
+    <td style="border-top:0;">$4,231,254</td>
   <td>-</td>
   </tr>
   <tr>
     <td>Natural gas liquids</td>
     <td>154,923,429 gal</td>
     <td>$15,317,988</td>
+    <td style="border-top:0;"></td>
   <td>-</td>
   </tr>
   <tr>
     <td>Copper</td>
     <td>3,967 tons</td>
     <td>$1,034,988</td>
-  <td>$6,174</td>
-  <td>-</td>
+    <td>$6,174</td>
+    <td>-</td>
   </tr>
 </table>
 

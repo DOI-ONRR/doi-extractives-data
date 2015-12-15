@@ -6,6 +6,16 @@
 
 .revenues_subpage-intro_wrapper {
   border-top: 1px solid $neutral-gray;
+
+  &.renewables {
+
+    background: $putty;
+
+    @include respond-to(medium-up) {
+      background: url('../img/how-it-works/renewables-bg-gradient.png') top left repeat-x;
+      background-size: cover;
+    }
+  }
 }
 
 .revenues_subpage-intro {
@@ -94,28 +104,23 @@
 }
 
 .revenues_subpage-office_text {
-
   @include span-columns(10);
-
-  @include respond-to(medium-up) {
-    @include span-columns(9);
-  }
 
   padding-left: $base-padding;
   padding-right: $base-padding-lite;
 
   p {
-    font-size: 12px;
+    font-size: 16px;
     line-height: 1.4;
+  }
 
-    // a {
-    //   text-decoration: none;
-    //
-    //   &:hover,
-    //   &:focus {
-    //     text-decoration: underline;
-    //   }
-    // }
+  @include respond-to(medium-up) {
+    @include span-columns(9);
+
+    p {
+      font-size: 12px;
+      line-height: 1.4;
+    }
   }
 }
 

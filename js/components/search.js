@@ -23,7 +23,7 @@ $( document ).ready(function() {
     $("input#q").val(query);
     $("#search-result-list").append('<div class="loading"><span class="glyphicon glyphicon-refresh"></span> Loading</div>');
     $.ajax({
-      url: "https://api.data.gov/beckley-federalist/v0/resources/eiti/?q=" + query + "&size=200&from=0&api_key=LXJh2PKSC6zxY0YNuBRYgIj2JxSPcDwSPCZuHBG1",
+      url: "https://api.data.gov/beckley-federalist/v0/resources/eiti/?q=" + query + "&size=50&from=0&api_key=LXJh2PKSC6zxY0YNuBRYgIj2JxSPcDwSPCZuHBG1",
       cache: false,
       dataType: "json"
     })

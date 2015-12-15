@@ -18,7 +18,7 @@
 }
 
 .regions {
-  @include respond-to(medium-up) {
+  @include respond-to(medium-to-huge-plus) {
     margin-right: $base-padding;
   }
 }

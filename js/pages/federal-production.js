@@ -77,9 +77,7 @@
 
   function initialize() {
     var props = parseHash();
-    if (Object.keys(props).length) {
-      filterToggle.attr('aria-expanded', true);
-    }
+
     return mutateState(function(state) {
       return state.merge(props);
     }) || render(state);

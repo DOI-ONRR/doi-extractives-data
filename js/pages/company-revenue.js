@@ -45,9 +45,6 @@
     .on('change', filterChange);
 
   var initialState = hash.read();
-  if (Object.keys(initialState).length) {
-    filterToggle.attr('aria-expanded', true);
-  }
 
   state.init(initialState);
 

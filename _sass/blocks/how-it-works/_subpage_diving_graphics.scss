@@ -210,6 +210,9 @@
       height: 100%;
       position: relative;
       z-index: 2;
+      // hack TODO: remove, or get more aligned photos.
+      // The images are off by less than a pixel :(
+      background-position-x: -1px, 0.5px;
 
       &:before {
         background: url('../img/how-it-works/coal-middle.png') top left repeat-y;
@@ -221,6 +224,9 @@
         right: 0;
         top: 377px;
         z-index: -1;
+        /// hack TODO: remove, or get more aligned photos.
+        // The images are off by less than a pixel :(
+        background-position-x: -1px;
       }
     }
 

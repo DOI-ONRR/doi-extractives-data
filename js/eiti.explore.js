@@ -415,7 +415,7 @@
 
     timeline.value = function(fn) {
       if (arguments.length) {
-        value = fn;
+        value = fn || identity;
         return timeline;
       }
       return value;
@@ -431,5 +431,9 @@
 
     return timeline;
   };
+
+  function identity(d) {
+    return d;
+  }
 
 })(eiti);

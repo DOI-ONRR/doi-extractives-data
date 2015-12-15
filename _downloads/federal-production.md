@@ -19,7 +19,8 @@ permalink: /downloads/federal-production/
     <p class="downloads-download_links-intro">Download calendar year data:
       <ul class="downloads-download_links">
         <li><a href="{{site.baseurl}}/downloads/production_federal_lands_waters_CY2013_oil_gas_solids-2015-11-25.xlsx"><icon class="icon-cloud icon-padded"></icon>Full dataset (xlsx, 517 KB)</a></li>
-        <li><a href="#"><icon class="icon-cloud icon-padded"></icon>Full dataset (tsv)</a></li>
+        <li><a href="{{site.baseurl}}/data/offshore/production.tsv"><icon class="icon-cloud icon-padded"></icon>Offshore dataset (tsv)</a></li>
+        <li><a href="{{site.baseurl}}/data/county/production.tsv"><icon class="icon-cloud icon-padded"></icon>Onshore dataset (tsv)</a></li>
       </ul>
     </p>
 
@@ -41,11 +42,9 @@ permalink: /downloads/federal-production/
         <li>All "W" volumes are accounted for in separate line totals where state and county have been "Withheld" (columns C, D and E)</li>
     </ul>
 
-    <h2 class="h3">A note about 'Mixed Exploratory' versus 'Federal' categories of production.</h2>
+    <h2 class="h3">A note about “Mixed Exploratory” versus “Federal” categories of production</h2>
 
-    <p>Coming soon!</p>
-
-    <!-- <p>For the purposes of the visualizations on our site, we've aggregated production on two types of jurisdictions: 'mixed exploratory' and 'federal.' Federal production is federal production; this is straightforward. However, 'mixed exploratory' ... [need explanation, the note I have is: One item I noticed from the Data Downloads page is that the "Download documentation" file, for the Production from Federal lands and waters "Download full dataset" file, should be revised to include an explanation of the difference between "Federal" and "Mixed Exploratory" in the Category column as some of the Mixed Exploratory volumes are very large, especially for gas.  Also when the Data Portal says “Gas production on federal lands in the entire U.S.” and then shows state & county production volumes that include “Mixed Exploratory” volumes, that statement is technically incorrect as “Mixed Exploratory” production may not be taking place on Federal lands though down the road we will get a unitization or communitization agreement allocation.  Bottom-line is that the Feds rarely get 100% of the “Mixed Exploratory” volumes once the exploratory becomes a regular agreement as adjudicated by BLM.]</p> -->
+    <p>For the purposes of the visualizations on our site, we've aggregated production on two types of jurisdictions: “mixed exploratory” and “federal.” Federal production is production from federal lands and waters; this is straightforward. However, “mixed exploratory” is a temporary jurisdictional unit that is used until production is proven on that location. Then, BLM adjudicates a permanent unit with allocation schedules that may split that area between federal and other ownership. At that point, payors resubmit royalties based on the new unit allocations retroactive to the first production. This means that the federal government rarely gets 100% of “mixed exploratory” volumes. You can see these categories disaggregated in the federal production dataset, downloadable on this page.</p>
 
     <h2>Data dictionary</h2>
 

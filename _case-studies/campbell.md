@@ -58,7 +58,7 @@ Local communities in Wyoming also benefit from federal mineral royalties and coa
 
 Campbell County and the Wyoming Department of Transportation (DOT) published the Campbell County Coal Belt Transportation Study in 2010.[^27] The report documents recommendations for roadway network improvements in the near and long term, discusses coal industry impacts to the system, and identifies funding options. While Campbell County is expected to be the primary funding source for new transportation improvements, the study includes a wide variety of collaborative funding efforts, including the Bureau of Land Management’s Abandoned Mine Lands program funds, road impact fees, a sinking fund account, and direct state and federal appropriations.[^28] The study estimates that it would require $43.9 million in investment in county roads between 2010 and 2015 to support coal extraction.[^29]
 
-No publicly available government data discussing the emergency services, reclamation, or water-infrastructure costs of coal mining in Campbell County was found.
+No publicly available government data discussing the emergency services, <span class="term term-p" data-term="reclamation" title="Click to define" tabindex="0">reclamation<i class="icon-book"></i></span>, or water-infrastructure costs of coal mining in Campbell County was found.
 
 <h2 class="h3"><a name="data" class="case_studies_content-heading" data-nav-header="data">Data availability</a></h2>
 

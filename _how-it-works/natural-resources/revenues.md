@@ -26,7 +26,7 @@ nav_items:
 </div>
 <h1 id="introduction" data-nav-header="introduction">Revenue</h1>
 
-<p class="case_studies_intro-para">Companies pay a wide range of fees, rates and taxes to extract natural resources in the U.S. The amounts differ depending on what the <a href="{{ site.baseurl }}/how-it-works/ownership/">ownership</a> of the natural resource looks like. We'll cover some of the major types of payments companies make here. They are usually called 'revenue' because they represent revenue to the American public.</p>
+<p class="case_studies_intro-para">Companies pay a wide range of fees, rates and taxes to extract natural resources in the U.S. The amounts differ depending on what the <a href="{{ site.baseurl }}/how-it-works/ownership/">ownership</a> of the natural resource looks like. We'll cover some of the major types of payments companies make here. They are usually called &#8216;revenue&#8217; because they represent revenue to the American public.</p>
 
 <nav class="hash_selector">
   {% include hash_selector.html %}
@@ -35,11 +35,11 @@ nav_items:
 <h2 id="federal-lands-and-waters" data-nav-header="federal-lands-and-waters">Payments to extract natural resources from federal land and waters</h2>
 
 <p>When companies extract natural resources on federal onshore lands and the Outer Continental Shelf, they pay revenue to the Department of the Interior (DOI).</p>
-<p>In general, companies pay bonuses, rents, royalties, or fees and penalties (if incurred) to ONRR, and in some cases bonuses and rents to BLM. Royalties, a percentage of the sales value of extracted resources, make up most of the revenue paid to DOI.</p>
+<p>In general, companies pay bonuses, rents, royalties, or fees and penalties (if incurred) to ONRR, and in some cases bonuses and rents to the Bureau of Land Management. Royalties, a percentage of the sales value of extracted resources, make up most of the revenue paid to DOI.</p>
 
-<p>Lease holders also pay different fees to BLM, BSEE, and BOEM, often to reimburse the federal government for costs associated with awarding, administering, and enforcing leases. For extracting locatable hardrock minerals on federal lands, companies pay fees, but not royalties under the Mining Law of 1872.</p>
+<p>Lease holders also pay different fees to the Bureau of Land Management, Bureau of Safety and Environmental Enforcement, and Bureau of Ocean Energy Management, often to reimburse the federal government for costs associated with awarding, administering, and enforcing leases. For extracting locatable hardrock minerals on federal lands, companies pay fees, but not royalties under the Mining Law of 1872.</p>
 
-<img src="{{site.baseurl}}/img/revenue-streams-chart.png" alt="Select federal revenue streams and statutory and regulatory rates" class="article_img-100">
+<img src="{{site.baseurl}}/img/revenue-streams-chart.png" alt="Select federal revenue streams and statutory and regulatory rates" class="article_img-100 u-margin-top">
 
 <h2 id="all-lands-and-waters" data-nav-header="all-lands-and-waters">Payments to extract natural resources from any land or water in the U.S.</h2>
 
@@ -98,7 +98,7 @@ nav_items:
 <h2>Learn more</h2>
 
 <p>For more details about U.S. and international revenue standards, visit:</p>
-  
+
 <ul class="list-bullet">
   <li>IRS, <a href="http://www.irs.gov/irm/part4/irm_04-001-005.html">Revenue Classification and Case Building System</a></li>
   <li>International Monetary Fund, <a href="http://www.imf.org/external/np/sta/gfsm/">Government Finance Statistics Manual 2014</a></li>

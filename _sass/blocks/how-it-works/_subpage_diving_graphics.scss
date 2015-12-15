@@ -206,17 +206,17 @@
 
     @include respond-to(medium-up) {
       background: url('../img/how-it-works/coal-top.png') top left no-repeat, url('../img/how-it-works/coal-bottom.png') bottom left no-repeat;
-      background-size: 100%, 100%;
+      background-size: 102%, 102%;
       height: 100%;
       position: relative;
       z-index: 2;
       // hack TODO: remove, or get more aligned photos.
       // The images are off by less than a pixel :(
-      background-position-x: -1px, 0.5px;
+      background-position-x: 0px, 3px;
 
       &:before {
         background: url('../img/how-it-works/coal-middle.png') top left repeat-y;
-        background-size: 100%;
+        background-size: 102%;
         bottom: 603px;
         content: '';
         left: 0;
@@ -226,7 +226,7 @@
         z-index: -1;
         /// hack TODO: remove, or get more aligned photos.
         // The images are off by less than a pixel :(
-        background-position-x: -1px;
+        background-position-x: 1px;
       }
     }
 

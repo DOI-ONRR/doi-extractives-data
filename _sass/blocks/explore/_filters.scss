@@ -42,12 +42,12 @@
     // }
   }
 
-  &.js-color {
-    background: $mid-blue-opaque;
-  }
-
   &.js-transparent {
     background: transparent;
+  }
+
+  &.js-color {
+    background: $mid-blue-opaque;
   }
 }
 

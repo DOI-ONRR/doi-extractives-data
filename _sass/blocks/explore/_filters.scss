@@ -142,11 +142,7 @@
     border-top-right-radius: 0;
     font-weight: $weight-bold;
 
-    &:before {
-      content: '$';
-    }
-
-    &[checked='true'] + label {
+    &:checked + label {
       background: $blue;
       color: $white;
     }
@@ -159,11 +155,7 @@
     border-top-left-radius: 0;
     font-weight: $weight-bold;
 
-    &:before {
-      content: '%';
-    }
-
-    &[checked='true'] + label {
+    &:checked + label {
       background: $blue;
       color: $white;
     }

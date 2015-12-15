@@ -50,7 +50,9 @@
   var filters = root.selectAll('.filters [name]')
     // intialize the state props
     .each(function() {
-      state = state.set(this.name, this.value);
+      if (this.type !== 'radio' || this.checked) {
+        state = state.set(this.name, this.value);
+      }
     })
     .on('change', function() {
       if (mutating) {
@@ -58,8 +60,19 @@
       }
       var prop = this.name;
       var value = this.value;
+      if (this.type !== 'radio' || this.checked) {
+        mutateState(function(state) {
+          return state.set(prop, value);
+        });
+      }
+    });
+
+  filters.filter('[type=radio]')
+    .on('click', function() {
+      var name = this.name;
+      var value = this.value;
       mutateState(function(state) {
-        return state.set(prop, value);
+        return state.set(name, value);
       });
     });
 
@@ -104,8 +117,8 @@
     var old = state;
     state = fn(state);
     if (!Immutable.is(old, state)) {
-      if (rendered && stateChanged(old, state, 'group')) {
-        state = state.delete('commodity');
+      if (!state.has('year')) {
+        state = state.set('year', slider.value);
       }
       render(state, old);
       location.hash = eiti.url.qs.format(state.toJS());
@@ -121,11 +134,15 @@
 
     // update the filters
     filters.each(function() {
-      this.value = state.get(this.name) || '';
+      if (this.type === 'radio') {
+        this.checked = state.get(this.name) === this.value;
+      } else {
+        this.value = state.get(this.name) || '';
+      }
     });
 
     formatNumber = state.get('units') === 'percent'
-      ? eiti.format('%.2')
+      ? eiti.format.percent
       : eiti.format(',');
 
     var region = state.get('region') || 'US';
@@ -172,6 +189,7 @@
     var fields = getFields(state);
     value = getter(fields.value);
     var first = function(d) {
+      // console.log('first of %d:', d.length, d[0]);
       return value(d[0]);
     };
     var sum = function(data) {
@@ -236,11 +254,14 @@
         .aggregate(aggregate);
 
       var total = aggregate(data);
+      var title = state.get('units') === 'percent'
+        ? state.has('region') ? 'State-wide' : 'Total'
+        : 'Total';
       header
         .datum({
           value: total,
           properties: {
-            name: 'Total'
+            name: title
           }
         })
         .call(updateRegionRow);
@@ -465,7 +486,9 @@
   function getFields(state) {
     var fields = {
       region: 'Region',
-      value: 'Value',
+      value: state.get('units') === 'percent'
+       ? 'Share'
+       : 'Jobs',
       featureId: function(d) {
         var id = d.id;
         return String(id).length === 4 ? '0' + id : id;
@@ -477,15 +500,6 @@
         fields.subregion = state.get('region')
           ? 'FIPS'
           : 'State';
-        fields.value = state.get('units') === 'percent'
-         ? 'Share'
-         : 'Jobs';
-        break;
-
-      case 'self':
-        if (state.get('units') === 'percent') {
-          fields.value = 'Share';
-        }
         break;
     }
     return fields;
@@ -589,6 +603,7 @@
     var data = {
       commodity: commodity.toLowerCase(),
       figure: figure.toLowerCase(),
+      units: state.get('units') === 'percent' ? 'Percentage' : 'Number',
       region: REGION_ID_NAME[state.get('region') || 'US'],
       year: state.get('year')
     };

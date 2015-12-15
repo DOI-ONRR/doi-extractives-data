@@ -28,12 +28,12 @@ permalink: /explore/jobs/
   <section class="container-right-8 filters-wrapper_outer">
     <div data-absolute="true" data-offset-parent="true" class="sticky_nav sticky_nav-show_mobile filters-wrapper container" data-toggler="filters">
       <h1 data-toggler="filters" data-filter-description="" class="filter-description filter-description_closed">
-          <a href="#units-selector" class="filter-part" data-key="units">Number</a>
-          of extractive industry
-          <a href="#figure-selector" class="filter-part" data-key="figure">wage and salary</a>
-          jobs in
-          <a href="#region-selector" class="filter-part" data-key="region">the entire U.S.</a>
-          (<a href="#year-selector" class="filter-part" data-key="year">2013</a>)
+        <a href="#units-selector" class="filter-part" data-key="units">Number</a>
+        of
+        <a href="#figure-selector" class="filter-part" data-key="figure">wage and salary</a>
+        extractive industry jobs in
+        <a href="#region-selector" class="filter-part" data-key="region">the entire U.S.</a>
+        (<a href="#year-selector" class="filter-part" data-key="year">2013</a>)
       </h1>
 
       <button class="toggle-filters toggle-desktop" is="eiti-toggle" aria-controls="filters" data-expanded-text="Hide filters" data-collapsed-text="Show filters" data-toggler="filters">Show filters</button>
@@ -86,9 +86,10 @@ permalink: /explore/jobs/
         </div>
 
         <h1 data-toggler="filters" data-filter-description="" class="filter-description">
-          Extractive industries jobs
-          (<a href="#figure-selector" class="filter-part" data-key="figure">wage and salary</a>)
-          in
+          <a href="#units-selector" class="filter-part" data-key="units">Number</a>
+          of
+          <a href="#figure-selector" class="filter-part" data-key="figure">wage and salary</a>
+          extractive industry jobs in
           <a href="#region-selector" class="filter-part" data-key="region">the entire U.S.</a>
           (<a href="#year-selector" class="filter-part" data-key="year">2013</a>)
         </h1>
@@ -149,6 +150,7 @@ permalink: /explore/jobs/
               <g class="onshore counties" data-url="us-topology.json"
                 data-object="counties"
                 data-filter="properties.state === '{{ region.id }}'"
+                data-title="properties.name"
                 data-mesh="true">
               </g>
             </svg>

@@ -1,6 +1,6 @@
 // globals d3, DOMTokenList
 (function(exports) {
-  'use strict';
+  // 'use strict';
 
   /*
    * @namespace eiti

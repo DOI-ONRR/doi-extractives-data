@@ -1,6 +1,6 @@
 // globals d3, eiti, EITIBar
 (function() {
-  'use strict';
+  // 'use strict';
 
   var root = d3.select('#companies');
   var filterToggle = root.select('button.toggle-filters');

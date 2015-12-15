@@ -51,13 +51,8 @@
       return isAbsolute;
     }
 
-    this.offset = this.attrStickyOffset
-      ? parseInt(this.attrStickyOffset)
-      : !this.elems.parent
-        ? this.elems.sticky.offsetTop
-        : ( this.attrParent === 'mobile' && this.isMobile )
-          ? this.elems.parent.offsetTop - this.elems.sticky.offsetHeight
-          : this.elems.sticky.offsetTop
+
+
 
     this.status;
     this.lastStatus;
@@ -66,6 +61,16 @@
   };
 
   StickyNav.prototype = {
+    setOffset: function () {
+      this.offset = this.attrStickyOffset
+        ? parseInt(this.attrStickyOffset)
+        : !this.elems.parent
+          ? this.elems.sticky.offsetTop
+          : ( this.attrParent === 'mobile' && this.isMobile )
+            ? this.elems.parent.offsetTop - this.elems.sticky.offsetHeight
+            : this.elems.sticky.offsetTop
+      console.log('offsetSet', this.offset)
+    },
     getPositions: function () {
 
       this.height = this.elems.sticky.clientHeight;
@@ -101,7 +106,7 @@
         updateNeeded = 'size';
       } else if (statusChange && !sizeChange) {
         updateNeeded = 'status';
-      } else if (statusChange && sizeChange || init) {
+      } else if (statusChange && sizeChange || init === 'init') {
         updateNeeded = 'both';
       }
       return updateNeeded;
@@ -174,6 +179,10 @@
     },
     run: function(init) {
       findScrollPositions();
+      if (init === 'init') {
+        console.log(init)
+        this.setOffset();
+      }
       this.getPositions();
       this.update(this.needsUpdate(init));
     }
@@ -181,7 +190,9 @@
 
   var stickyNav = new StickyNav();
 
-  stickyNav.run();
+  setTimeout(function() {
+    stickyNav.run('init');
+  },500);
 
   window.addEventListener('scroll', stickyNav.throttle(stickyNav.run, 150, stickyNav));
 

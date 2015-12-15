@@ -1,4 +1,6 @@
+// globals d3, DOMTokenList
 (function(exports) {
+  'use strict';
 
   /*
    * @namespace eiti
@@ -678,7 +680,7 @@
    */
   (function () {
     try {
-      new CustomEvent('foo');
+      var e = new CustomEvent('foo');
     } catch (error) {
       function CustomEvent(event, params) {
         params = params || {

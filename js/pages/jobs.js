@@ -189,7 +189,6 @@
         (state.get('figure') === 'wage' && state.get('region'))) {
       aggregate = first;
     } else {
-      console.info('aggregating by sum');
       aggregate = sum;
     }
 

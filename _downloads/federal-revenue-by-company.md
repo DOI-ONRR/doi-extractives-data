@@ -20,7 +20,7 @@ permalink: /downloads/federal-revenue-by-company/
       <ul class="downloads-download_links">
         <li><a href="{{site.baseurl}}/downloads/federal_revenue_by_company_CY2013_2015-11-10.xlsx"><icon class="icon-cloud icon-padded"></icon>
         Full dataset (xlsx, 132 KB)</a></li>
-        <li><a href="#"><icon class="icon-cloud icon-padded"></icon>
+        <li><a href="{{site.baseurl}}/data/company/revenue.tsv"><icon class="icon-cloud icon-padded"></icon>
         Full dataset (tsv)</a></li>
       </ul>
     </p>

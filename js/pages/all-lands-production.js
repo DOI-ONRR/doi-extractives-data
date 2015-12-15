@@ -272,7 +272,6 @@
             }
           ];
         }
-        console.log('features:', features);
 
         selection.select('.map-legend')
           .call(updateLegend, scale);

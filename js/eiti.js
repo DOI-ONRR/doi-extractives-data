@@ -695,4 +695,22 @@
     }
   })();
 
+
+  /**
+   * DOMTokenList::toggle() fix
+   *
+   * This addresses a bug in IE10+ in which DOMTokenList::toggle()
+   * doesn't respect the second argument, but just flips the class.
+   */
+  (function() {
+    var el = document.createElement('div');
+    el.classList.toggle('foo', false);
+    if (el.className === 'foo') {
+      DOMTokenList.prototype.toggle = function(klass, active) {
+        return this[active ? 'add' : 'remove'](klass);
+      };
+    }
+  })();
+
+
 })(this);

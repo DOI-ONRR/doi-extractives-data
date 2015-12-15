@@ -271,7 +271,7 @@
       .attr('class', 'bar')
       .append(function() {
         // XXX this is a document.registerElement() workaround
-        return new EITIBar();
+        return new EITIBar(); // jshint ignore:line
       });
   }
 

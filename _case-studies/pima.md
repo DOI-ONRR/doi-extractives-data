@@ -70,7 +70,7 @@ The table below highlights data sources used to compile this narrative, as well 
     </tr>
     <tr>
       <td>Employment</td>
-      <td>The Bureau of Labor Statistics (BLS) Quarterly Census of Employment and Wages publishes mining-industry data at the Pima County level using North American Industry Classification System (NAICS) codes 212 (Mining Except Oil and Gas) and 213 (Support Activities for Mining) from 2004–2013.</td>
+      <td>The Bureau of Labor Statistics (BLS) Quarterly Census of Employment and Wages publishes mining-industry data at the Pima County level using <span class="term term-p" data-term="north american industry classification system (naics)" title="Click to define" tabindex="0">NAICS<i class="icon-book"></i></span> codes 212 (Mining Except Oil and Gas) and 213 (Support Activities for Mining) from 2004–2013.</td>
       <td>BLS is missing data for NAICS codes specific to copper or metal mining prior to 2011.</td>
     </tr>
     <tr>

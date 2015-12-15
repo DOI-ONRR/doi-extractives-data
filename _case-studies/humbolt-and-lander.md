@@ -48,7 +48,7 @@ Gold-mining serves as a key driver of funding for local governments across the s
 
 <h2 class="h3"><a name="costs" class="case_studies_content-heading" data-nav-header="costs">Costs</a></h2>
 
-A number of state-level resources, which are listed below, shed light on Humboldt and Lander County transportation systems, reclamation procedures, and emergency services. While these government publications discuss costs to the state government, they do not specify the fiscal costs of gold extraction to Humboldt and Lander county governments.
+A number of state-level resources, which are listed below, shed light on Humboldt and Lander County transportation systems, <span class="term term-p" data-term="reclamation" title="Click to define" tabindex="0">reclamation<i class="icon-book"></i></span> procedures, and emergency services. While these government publications discuss costs to the state government, they do not specify the fiscal costs of gold extraction to Humboldt and Lander county governments.
 
 <ul>
 	<li><a href="http://www.nevadadot.com/Documents/Reports_and_Publications.aspx">Nevada Department of Transportation: Reports and Publications</a></li>

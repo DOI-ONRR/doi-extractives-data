@@ -81,7 +81,7 @@ The table below highlights the data sources used to compile this narrative, as w
     <tr>
       <td>Costs</td>
       <td></td>
-      <td>Data on connections between county transportation, emergency services, reclamation, and water-infrastructure investments and extractive industries was not found.</td>
+      <td>Data on connections between county transportation, emergency services, <span class="term term-p" data-term="reclamation" title="Click to define" tabindex="0">reclamation<i class="icon-book"></i></span>, and water-infrastructure investments and extractive industries was not found.</td>
     </tr>
   </tbody>
 </table>

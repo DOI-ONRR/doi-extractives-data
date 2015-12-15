@@ -27,9 +27,15 @@
     background-color: $mid-blue-opaque !important;
     overflow-y: scroll;
 
-    &.js-transparent {
+    &.js-transparent,
+    &.js-color {
       border-radius: $base-border-radius;
       border-bottom: none;
+    }
+
+    &.js-color {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
     }
   }
 

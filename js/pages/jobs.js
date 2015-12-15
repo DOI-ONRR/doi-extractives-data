@@ -23,17 +23,43 @@
   // buttons that expand and collapse other elements
   var filterToggle = root.select('button.toggle-filters');
 
+  // get the slider to determine the year range
+  var slider = root.select('#year-selector').node();
+
+  // XXX: d3.range() is exclusive, so we need to add two
+  // in order to include the last year *and* make the area render the right
+  // edge of the last year.
+  var years = d3.range(slider.min, slider.max + 2, 1);
+
+  // timeline renderer
+  var updateTimeline = eiti.explore.timeline()
+    .years(years);
+
+  // value accessor
+  var value;
+  // aggregation function
+  var aggregate;
+
   // FIXME: componentize these too
-  root.selectAll('a[data-key]')
-    .on('click', function() {
-      d3.event.preventDefault();
-    });
+  var filterParts = root.selectAll('a[data-key]');
+  filterParts.on('click', function(e, index) {
+    var key = filterParts[0][index].getAttribute('data-key');
+    if (key) {
+      root.select('.filters-wrapper').attr('aria-expanded', true);
+      filterToggle.attr('aria-expanded', true);
+      root.select('.filter-description_closed').attr('aria-expanded', true);
+      document.querySelector('#'+ key + '-selector').focus();
+    }
+    d3.event.preventDefault();
+  });
 
   // get the filters and add change event handlers
   var filters = root.selectAll('.filters [name]')
     // intialize the state props
     .each(function() {
-      state = state.set(this.name, this.value);
+      if (this.type !== 'radio' || this.checked) {
+        state = state.set(this.name, this.value);
+      }
     })
     .on('change', function() {
       if (mutating) {
@@ -41,8 +67,19 @@
       }
       var prop = this.name;
       var value = this.value;
+      if (this.type !== 'radio' || this.checked) {
+        mutateState(function(state) {
+          return state.set(prop, value);
+        });
+      }
+    });
+
+  filters.filter('[type=radio]')
+    .on('click', function() {
+      var name = this.name;
+      var value = this.value;
       mutateState(function(state) {
-        return state.set(prop, value);
+        return state.set(name, value);
       });
     });
 
@@ -85,8 +122,8 @@
     var old = state;
     state = fn(state);
     if (!Immutable.is(old, state)) {
-      if (rendered && stateChanged(old, state, 'group')) {
-        state = state.delete('commodity');
+      if (!state.has('year')) {
+        state = state.set('year', slider.value);
       }
       render(state, old);
       location.hash = eiti.url.qs.format(state.toJS());
@@ -102,8 +139,16 @@
 
     // update the filters
     filters.each(function() {
-      this.value = state.get(this.name) || '';
+      if (this.type === 'radio') {
+        this.checked = state.get(this.name) === this.value;
+      } else {
+        this.value = state.get(this.name) || '';
+      }
     });
+
+    formatNumber = state.get('units') === 'percent'
+      ? eiti.format.percent
+      : eiti.format(',');
 
     var region = state.get('region') || 'US';
     var selected = regionSections
@@ -146,6 +191,38 @@
 
     updateFilterDescription(state);
 
+    var fields = getFields(state);
+    value = getter(fields.value);
+    var first = function(d) {
+      // console.log('first of %d:', d.length, d[0]);
+      return value(d[0]);
+    };
+    var sum = function(data) {
+      return d3.sum(data, value);
+    };
+
+    /*
+     * cases in which we aggregate by the value of the first row:
+     * 1. if we're looking at % units
+     * 2. if we're looking at self-employment figures
+     * 3. if we're looking at wage & salary figures by state
+     */
+    if (state.get('units') === 'percent' ||
+        state.get('figure') === 'self' ||
+        (state.get('figure') === 'wage' && state.get('region'))) {
+      aggregate = first;
+    } else {
+      aggregate = sum;
+    }
+
+    updateTimeline
+      .value(value)
+      .aggregate(aggregate);
+
+    if (state.has('year')) {
+      updateTimeline.selected(state.get('year'));
+    }
+
     model.on('yearly', function(data) {
       timeline.call(updateTimeline, data, state);
     });
@@ -177,12 +254,19 @@
           .call(createRegionRow);
       }
 
-      var total = d3.sum(data, getter(fields.value));
+      updateTimeline
+        .value(fields.value)
+        .aggregate(aggregate);
+
+      var total = aggregate(data);
+      var title = state.get('units') === 'percent'
+        ? state.has('region') ? 'State-wide' : 'Total'
+        : 'Total';
       header
         .datum({
           value: total,
           properties: {
-            name: 'Total'
+            name: title
           }
         })
         .call(updateRegionRow);
@@ -199,18 +283,17 @@
 
         var features = subregions.data();
         var dataByFeatureId = d3.nest()
-          .key(getter(fields.region))
-          .rollup(function(d) {
-            return d3.sum(d, getter(fields.value));
-          })
+          .key(getter(fields.subregion || fields.region))
+          .rollup(aggregate)
           .map(data);
 
         // console.log('data by feature id:', dataByFeatureId);
+        // console.log('features:', features);
 
         var featureId = getter(fields.featureId);
         features.forEach(function(f) {
           var id = featureId(f);
-          f.value = dataByFeatureId[id];
+          f.value = +dataByFeatureId[id];
         });
 
         var value = getter('value');
@@ -380,6 +463,9 @@
       .append('span')
         .attr('class', 'label');
 
+    var format = state.get('units') === 'percent'
+      ? formatNumber
+      : eiti.format.si;
     steps
       .style('border-color', getter('color'))
       .attr('title', function(d) {
@@ -392,8 +478,8 @@
           return d.none
             ? d.range[0]
             : i === last
-              ? formatNumber(d.range[0]) + '+'
-              : formatNumber(d.range[0]);
+              ? format(d.range[0]) + '+'
+              : format(d.range[0]);
         });
   }
 
@@ -405,192 +491,23 @@
   function getFields(state) {
     var fields = {
       region: 'Region',
-      value: 'Value',
-      featureId: 'id'
+      value: state.get('units') === 'percent'
+       ? 'Share'
+       : 'Jobs',
+      featureId: function(d) {
+        var id = d.id;
+        return String(id).length === 4 ? '0' + id : id;
+      }
     };
     switch (state.get('figure')) {
       case 'wage':
         fields.region = 'State';
-        fields.value = 'Jobs';
+        fields.subregion = state.get('region')
+          ? 'FIPS'
+          : 'State';
         break;
     }
     return fields;
-  }
-
-  function updateTimeline(selection, data, state) {
-    var fields = getFields(state);
-
-    var value = getter(fields.value);
-    var dataByYearPolarity = d3.nest()
-      .key(function(d) {
-        return value(d) < 0 ? 'negative' : 'positive';
-      })
-      .key(getter('Year'))
-      .rollup(function(d) {
-        return d3.sum(d, value);
-      })
-      .map(data);
-
-    // console.log('data by year/polarity:', dataByYearPolarity);
-    var positiveYears = dataByYearPolarity.positive || {};
-    var positiveExtent = d3.extent(d3.values(positiveYears));
-    var negativeYears = dataByYearPolarity.negative || {};
-    var negativeExtent = d3.extent(d3.values(negativeYears));
-
-    // get the slider to determine the year range
-    var slider = root.select('#year-selector').node();
-
-    // XXX: d3.range() is exclusive, so we need to add two
-    // in order to include the last year *and* make the area render the right
-    // edge of the last year.
-    var years = d3.range(slider.min, slider.max + 2, 1);
-
-    var w = 500;
-    var h = 40;
-    var viewBox = selection.attr('viewBox');
-    // if there is a viewBox already, derive the dimensions from it
-    if (viewBox) {
-      viewBox = viewBox.split(' ').map(Number);
-      w = viewBox[2];
-      h = viewBox[3];
-    } else {
-      // otherwise, set up the viewBox with our default dimensions
-      selection.attr('viewBox', [0, 0, w, h].join(' '));
-    }
-
-    var left = 0; // XXX need to make room for axis labels
-    var right = w;
-
-    // the x-axis scale
-    var x = d3.scale.linear()
-      .domain(d3.extent(years))
-      .range([left, right + 2]);
-
-    // the y-axis domain sets a specific point for zero.
-    // the `|| -100` and `|| 100` bits here ensure that the domain has some
-    // size, even if there is no data from which to derive an extent.
-    var yDomain = [
-      negativeExtent[0] || 0,
-      positiveExtent[1] || 100
-    ];
-    // the y-axis scale, with the zero point at 3/4 the height
-    // XXX: note that this exaggerates the negative scale!
-    var y = d3.scale.linear()
-      .domain(yDomain)
-      .range([h, 0]);
-
-    var area = d3.svg.area()
-      .interpolate('step-after')
-      .x(function(d) { return x(d.year); })
-      .y0(y(0))
-      .y1(function(d) { return y(d.value); });
-
-    var areas = selection.selectAll('path.area')
-      .data([
-        {
-          polarity: 'positive',
-          values: years.map(function(year) {
-            return {
-              year: year,
-              value: positiveYears[year] || 0
-            };
-          })
-        },
-        {
-          polarity: 'negative',
-          values: years.map(function(year) {
-            return {
-              year: year,
-              value: negativeYears[year] || 0
-            };
-          })
-        }
-      ]);
-
-    areas.exit().remove();
-    areas.enter().append('path')
-      .attr('class', function(d) {
-        return 'area ' + d.polarity;
-      });
-
-    var zero = selection.select('g.zero');
-    if (zero.empty()) {
-      zero = selection.append('g')
-        .attr('class', 'zero');
-      zero.append('line');
-      zero.append('text')
-        .attr('class', 'label')
-        .attr('text-anchor', 'end')
-        .attr('dy', 0.5);
-        // .text(0);
-    }
-
-    var mask = selection.select('g.mask');
-    if (mask.empty()) {
-      mask = selection.append('g')
-        .attr('class', 'mask');
-      mask.append('rect')
-        .attr('class', 'before')
-        .attr('x', 0)
-        .attr('width', 0)
-        .attr('height', h);
-      mask.append('rect')
-        .attr('class', 'after')
-        .attr('x', w)
-        .attr('width', w)
-        .attr('height', h);
-      mask.append('line')
-        .attr('class', 'before')
-        .attr('y1', 0)
-        .attr('y2', h);
-      mask.append('line')
-        .attr('class', 'after')
-        .attr('y1', 0)
-        .attr('y2', h);
-    }
-
-    var updated = selection.property('updated');
-    var t = function(d) { return d; };
-    if (updated) {
-      t = function(d) {
-        return d.transition()
-          .duration(500);
-      };
-    }
-
-    var year1 = slider.value;
-    var year2 = slider.value + 1;
-    var beforeX = x(year1);
-    var afterX = Math.min(x(year2), w);
-    // don't transition these
-    mask.select('rect.before')
-      .attr('width', beforeX);
-    mask.select('rect.after')
-      .attr('x', afterX);
-    mask.select('line.before')
-      .attr('transform', 'translate(' + [beforeX, 0] + ')');
-    mask.select('line.after')
-      .attr('transform', 'translate(' + [afterX, 0] + ')');
-
-    // transition these
-    // mask = t(mask);
-    mask.selectAll('line')
-      .attr('y1', y(positiveYears[year1] || 0))
-      .attr('y2', y(negativeYears[year1] || 0));
-
-    zero.select('line')
-      .attr('x1', left)
-      .attr('x2', right);
-
-    zero.select('.label')
-      .attr('transform', 'translate(' + [left, 0] + ')');
-
-    t(zero).attr('transform', 'translate(' + [0, y(0)] + ')');
-
-    t(areas).attr('d', function(d) {
-      return area(d.values);
-    });
-    selection.property('updated', true);
   }
 
   function createModel() {
@@ -617,11 +534,15 @@
     function getDataURL(state) {
       var path = eiti.data.path + 'jobs/';
       var figure = state.get('figure');
+      var region = state.get('region');
       switch (figure) {
         case 'self':
           return path + 'self-employment.tsv';
         case 'wage':
-          return path + 'wage-salary.tsv';
+          if (region) {
+            return path + 'by-state/' + region + '/wage-salary.tsv';
+          }
+          return path + 'state-wage-salary.tsv';
       }
       throw new Error('invalid figure: "' + figure + '"');
     }
@@ -643,11 +564,10 @@
       }
 
       var region = state.get('region');
-      if (region && region.length === 3) {
+      if (region) {
         var fields = getFields(state);
-        var regionName = REGION_ID_NAME[region];
         data = data.filter(function(d) {
-          return d[fields.region] === regionName;
+          return d[fields.region] === region;
         });
       }
 
@@ -688,6 +608,7 @@
     var data = {
       commodity: commodity.toLowerCase(),
       figure: figure.toLowerCase(),
+      units: state.get('units') === 'percent' ? 'Percentage' : 'Number',
       region: REGION_ID_NAME[state.get('region') || 'US'],
       year: state.get('year')
     };

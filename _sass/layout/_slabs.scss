@@ -46,3 +46,10 @@
 .slab-foxtrot {
   background-color: $mid-blue;
 }
+
+.explore_home-img {
+  &:hover,
+  &:focus {
+    background-color: $blue;
+  }
+}

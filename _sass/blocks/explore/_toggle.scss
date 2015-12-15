@@ -22,17 +22,12 @@
 
 .toggle {
   display: block;
-  // font: inherit;
-  // margin: 0 auto;
-  // padding: 0;
-  // position: relative;
-  // text-align: right;
-  // width: 100%;
   background-color: $blue;
   color: $white;
-  float: right;
   font-weight: $weight-bold;
   margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
   padding: ($base-padding-lite * 1.5);
   padding-left: $base-padding;
   padding-right: $base-padding;
@@ -44,6 +39,7 @@
 
   @include respond-to(medium-up) {
     display: none;
+    float: right;
   }
 }
 

@@ -1,13 +1,10 @@
 
 .filters-wrapper_outer {
   position: relative;
-  // @include respond-to(medium-to-huge-plus) {
-  //   margin-right: $base-padding;
-  // }
 }
 
 .filters-wrapper {
-  background-color: transparent;
+  background-color: $white;
   margin-left: 0;
   padding: $base-padding;
   position: absolute;
@@ -19,11 +16,6 @@
     border-bottom-right-radius: $base-border-radius;
     margin-right: $base-padding;
     width: initial;
-    // max-width: 674.309px;
-  }
-
-  @include respond-to(huge-plus-up) {
-    // margin-right: 0;
   }
 
   select {
@@ -33,21 +25,26 @@
 
   &[aria-expanded=true] {
     background-color: $mid-blue-opaque !important;
-    // height: 100%;
     overflow-y: scroll;
 
-    // @include respond-to(medium-up) {
-    //   overflow-y: none;
-    //   height: initial;
-    // }
+    &.js-transparent {
+      border-radius: $base-border-radius;
+      border-bottom: none;
+    }
   }
 
   &.js-color {
-    background: $mid-blue-opaque;
+    background: $white;
+    border-bottom: 2px solid lighten($neutral-gray, 5%);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
   &.js-transparent {
     background: transparent;
+    border-bottom: 2px solid lighten($neutral-gray, 5%);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
   }
 }
 

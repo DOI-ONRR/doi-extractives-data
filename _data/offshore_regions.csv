@@ -1,6 +1,6 @@
 name,id,viewbox
-Alaska,alaska,75 415 202 173
-Atlantic,atlantic,730 125 230 440
-Gulf,gulf,470 440 295 135
-Pacific,pacific,20 60 161 341
-Pacific alaska,pacific alaska,20 60 180 530
+Offshore Alaska,alaska,75 415 202 173
+Atlantic Ocean,atlantic,730 125 230 440
+Gulf of Mexico,gulf,470 440 295 135
+Pacific Ocean,pacific,20 60 161 341
+Offshore Pacific-Alaska,pacific alaska,20 60 180 530

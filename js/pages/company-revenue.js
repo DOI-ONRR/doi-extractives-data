@@ -268,7 +268,9 @@
       .attr('class', 'value');
     selection.append('td')
       .attr('class', 'bar')
-      .append('eiti-bar');
+      .append(function() {
+        return new EITIBar();
+      });
   }
 
   function updateRevenueItem(selection, extent) {

@@ -481,6 +481,12 @@
          ? 'Share'
          : 'Jobs';
         break;
+
+      case 'self':
+        if (state.get('units') === 'percent') {
+          fields.value = 'Share';
+        }
+        break;
     }
     return fields;
   }

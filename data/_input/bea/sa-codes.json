@@ -1,0 +1,474 @@
+[
+  {
+    "Key": "10",
+    "Desc": "[SA25N] Total employment"
+  },
+  {
+    "Key": "20",
+    "Desc": "[SA25N] Wage and salary employment"
+  },
+  {
+    "Key": "40",
+    "Desc": "[SA25N] Proprietors employment"
+  },
+  {
+    "Key": "50",
+    "Desc": "[SA25N] Farm proprietors employment"
+  },
+  {
+    "Key": "60",
+    "Desc": "[SA25N] Nonfarm proprietors employment"
+  },
+  {
+    "Key": "70",
+    "Desc": "[SA25N] Farm employment"
+  },
+  {
+    "Key": "80",
+    "Desc": "[SA25N] Nonfarm employment"
+  },
+  {
+    "Key": "90",
+    "Desc": "[SA25N] Private nonfarm employment"
+  },
+  {
+    "Key": "100",
+    "Desc": "[SA25N] Forestry, fishing, and related activities"
+  },
+  {
+    "Key": "101",
+    "Desc": "[SA25N] Forestry and logging"
+  },
+  {
+    "Key": "102",
+    "Desc": "[SA25N] Fishing, hunting, and trapping"
+  },
+  {
+    "Key": "103",
+    "Desc": "[SA25N] Agriculture and forestry support activities"
+  },
+  {
+    "Key": "200",
+    "Desc": "[SA25N] Mining"
+  },
+  {
+    "Key": "201",
+    "Desc": "[SA25N] Oil and gas extraction"
+  },
+  {
+    "Key": "202",
+    "Desc": "[SA25N] Mining (except oil and gas)"
+  },
+  {
+    "Key": "203",
+    "Desc": "[SA25N] Support activities for mining"
+  },
+  {
+    "Key": "300",
+    "Desc": "[SA25N] Utilities"
+  },
+  {
+    "Key": "400",
+    "Desc": "[SA25N] Construction"
+  },
+  {
+    "Key": "401",
+    "Desc": "[SA25N] Construction of buildings"
+  },
+  {
+    "Key": "402",
+    "Desc": "[SA25N] Heavy and civil engineering construction"
+  },
+  {
+    "Key": "403",
+    "Desc": "[SA25N] Specialty trade contractors"
+  },
+  {
+    "Key": "500",
+    "Desc": "[SA25N] Manufacturing"
+  },
+  {
+    "Key": "510",
+    "Desc": "[SA25N] Durable goods manufacturing"
+  },
+  {
+    "Key": "511",
+    "Desc": "[SA25N] Wood product manufacturing"
+  },
+  {
+    "Key": "512",
+    "Desc": "[SA25N] Nonmetallic mineral product manufacturing"
+  },
+  {
+    "Key": "513",
+    "Desc": "[SA25N] Primary metal manufacturing"
+  },
+  {
+    "Key": "514",
+    "Desc": "[SA25N] Fabricated metal product manufacturing"
+  },
+  {
+    "Key": "515",
+    "Desc": "[SA25N] Machinery manufacturing"
+  },
+  {
+    "Key": "516",
+    "Desc": "[SA25N] Computer and electronic product manufacturing"
+  },
+  {
+    "Key": "517",
+    "Desc": "[SA25N] Electrical equipment and appliance manufacturing"
+  },
+  {
+    "Key": "518",
+    "Desc": "[SA25N] Motor vehicles, bodies and trailers, and parts manufacturing"
+  },
+  {
+    "Key": "519",
+    "Desc": "[SA25N] Other transportation equipment manufacturing"
+  },
+  {
+    "Key": "521",
+    "Desc": "[SA25N] Furniture and related product manufacturing"
+  },
+  {
+    "Key": "522",
+    "Desc": "[SA25N] Miscellaneous manufacturing"
+  },
+  {
+    "Key": "530",
+    "Desc": "[SA25N] Nondurable goods manufacturing"
+  },
+  {
+    "Key": "531",
+    "Desc": "[SA25N] Food manufacturing"
+  },
+  {
+    "Key": "532",
+    "Desc": "[SA25N] Beverage and tobacco product manufacturing"
+  },
+  {
+    "Key": "533",
+    "Desc": "[SA25N] Textile mills"
+  },
+  {
+    "Key": "534",
+    "Desc": "[SA25N] Textile product mills"
+  },
+  {
+    "Key": "535",
+    "Desc": "[SA25N] Apparel manufacturing"
+  },
+  {
+    "Key": "536",
+    "Desc": "[SA25N] Leather and allied product manufacturing"
+  },
+  {
+    "Key": "537",
+    "Desc": "[SA25N] Paper manufacturing"
+  },
+  {
+    "Key": "538",
+    "Desc": "[SA25N] Printing and related support activities"
+  },
+  {
+    "Key": "539",
+    "Desc": "[SA25N] Petroleum and coal products manufacturing"
+  },
+  {
+    "Key": "541",
+    "Desc": "[SA25N] Chemical manufacturing"
+  },
+  {
+    "Key": "542",
+    "Desc": "[SA25N] Plastics and rubber products manufacturing"
+  },
+  {
+    "Key": "600",
+    "Desc": "[SA25N] Wholesale trade"
+  },
+  {
+    "Key": "700",
+    "Desc": "[SA25N] Retail trade"
+  },
+  {
+    "Key": "701",
+    "Desc": "[SA25N] Motor vehicle and parts dealers"
+  },
+  {
+    "Key": "702",
+    "Desc": "[SA25N] Furniture and home furnishings stores"
+  },
+  {
+    "Key": "703",
+    "Desc": "[SA25N] Electronics and appliance stores"
+  },
+  {
+    "Key": "704",
+    "Desc": "[SA25N] Building material and garden supply stores"
+  },
+  {
+    "Key": "705",
+    "Desc": "[SA25N] Food and beverage stores"
+  },
+  {
+    "Key": "706",
+    "Desc": "[SA25N] Health and personal care stores"
+  },
+  {
+    "Key": "707",
+    "Desc": "[SA25N] Gasoline stations"
+  },
+  {
+    "Key": "708",
+    "Desc": "[SA25N] Clothing and clothing accessories stores"
+  },
+  {
+    "Key": "709",
+    "Desc": "[SA25N] Sporting goods, hobby, book and music stores"
+  },
+  {
+    "Key": "711",
+    "Desc": "[SA25N] General merchandise stores"
+  },
+  {
+    "Key": "712",
+    "Desc": "[SA25N] Miscellaneous store retailers"
+  },
+  {
+    "Key": "713",
+    "Desc": "[SA25N] Nonstore retailers"
+  },
+  {
+    "Key": "800",
+    "Desc": "[SA25N] Transportation and warehousing"
+  },
+  {
+    "Key": "801",
+    "Desc": "[SA25N] Air transportation"
+  },
+  {
+    "Key": "802",
+    "Desc": "[SA25N] Rail transportation"
+  },
+  {
+    "Key": "803",
+    "Desc": "[SA25N] Water transportation"
+  },
+  {
+    "Key": "804",
+    "Desc": "[SA25N] Truck transportation"
+  },
+  {
+    "Key": "805",
+    "Desc": "[SA25N] Transit and ground passenger transportation"
+  },
+  {
+    "Key": "806",
+    "Desc": "[SA25N] Pipeline transportation"
+  },
+  {
+    "Key": "807",
+    "Desc": "[SA25N] Scenic and sightseeing transportation"
+  },
+  {
+    "Key": "808",
+    "Desc": "[SA25N] Support activities for transportation"
+  },
+  {
+    "Key": "809",
+    "Desc": "[SA25N] Couriers and messengers"
+  },
+  {
+    "Key": "811",
+    "Desc": "[SA25N] Warehousing and storage"
+  },
+  {
+    "Key": "900",
+    "Desc": "[SA25N] Information"
+  },
+  {
+    "Key": "901",
+    "Desc": "[SA25N] Publishing industries, except Internet"
+  },
+  {
+    "Key": "902",
+    "Desc": "[SA25N] Motion picture and sound recording industries"
+  },
+  {
+    "Key": "903",
+    "Desc": "[SA25N] Broadcasting, except Internet"
+  },
+  {
+    "Key": "904",
+    "Desc": "[SA25N] Internet publishing and broadcasting"
+  },
+  {
+    "Key": "905",
+    "Desc": "[SA25N] Telecommunications"
+  },
+  {
+    "Key": "906",
+    "Desc": "[SA25N] Data processing, hosting, and related services"
+  },
+  {
+    "Key": "907",
+    "Desc": "[SA25N] Other information services"
+  },
+  {
+    "Key": "1000",
+    "Desc": "[SA25N] Finance and insurance"
+  },
+  {
+    "Key": "1001",
+    "Desc": "[SA25N] Monetary authorities - central bank"
+  },
+  {
+    "Key": "1002",
+    "Desc": "[SA25N] Credit intermediation and related activities"
+  },
+  {
+    "Key": "1003",
+    "Desc": "[SA25N] Securities, commodity contracts, investments"
+  },
+  {
+    "Key": "1004",
+    "Desc": "[SA25N] Insurance carriers and related activities"
+  },
+  {
+    "Key": "1005",
+    "Desc": "[SA25N] Funds, trusts, and other financial vehicles"
+  },
+  {
+    "Key": "1100",
+    "Desc": "[SA25N] Real estate and rental and leasing"
+  },
+  {
+    "Key": "1101",
+    "Desc": "[SA25N] Real estate"
+  },
+  {
+    "Key": "1102",
+    "Desc": "[SA25N] Rental and leasing services"
+  },
+  {
+    "Key": "1103",
+    "Desc": "[SA25N] Lessors of nonfinancial intangible assets"
+  },
+  {
+    "Key": "1200",
+    "Desc": "[SA25N] Professional, scientific, and technical services"
+  },
+  {
+    "Key": "1300",
+    "Desc": "[SA25N] Management of companies and enterprises"
+  },
+  {
+    "Key": "1400",
+    "Desc": "[SA25N] Administrative and waste management services"
+  },
+  {
+    "Key": "1401",
+    "Desc": "[SA25N] Administrative and support services"
+  },
+  {
+    "Key": "1402",
+    "Desc": "[SA25N] Waste management and remediation services"
+  },
+  {
+    "Key": "1500",
+    "Desc": "[SA25N] Educational services"
+  },
+  {
+    "Key": "1600",
+    "Desc": "[SA25N] Health care and social assistance"
+  },
+  {
+    "Key": "1601",
+    "Desc": "[SA25N] Ambulatory health care services"
+  },
+  {
+    "Key": "1602",
+    "Desc": "[SA25N] Hospitals"
+  },
+  {
+    "Key": "1603",
+    "Desc": "[SA25N] Nursing and residential care facilities"
+  },
+  {
+    "Key": "1604",
+    "Desc": "[SA25N] Social assistance"
+  },
+  {
+    "Key": "1700",
+    "Desc": "[SA25N] Arts, entertainment, and recreation"
+  },
+  {
+    "Key": "1701",
+    "Desc": "[SA25N] Performing arts and spectator sports"
+  },
+  {
+    "Key": "1702",
+    "Desc": "[SA25N] Museums, historical sites, zoos, and parks"
+  },
+  {
+    "Key": "1703",
+    "Desc": "[SA25N] Amusement, gambling, and recreation"
+  },
+  {
+    "Key": "1800",
+    "Desc": "[SA25N] Accommodation and food services"
+  },
+  {
+    "Key": "1801",
+    "Desc": "[SA25N] Accommodation"
+  },
+  {
+    "Key": "1802",
+    "Desc": "[SA25N] Food services and drinking places"
+  },
+  {
+    "Key": "1900",
+    "Desc": "[SA25N] Other services, except public administration"
+  },
+  {
+    "Key": "1901",
+    "Desc": "[SA25N] Repair and maintenance"
+  },
+  {
+    "Key": "1902",
+    "Desc": "[SA25N] Personal and laundry services"
+  },
+  {
+    "Key": "1903",
+    "Desc": "[SA25N] Membership associations and organizations"
+  },
+  {
+    "Key": "1904",
+    "Desc": "[SA25N] Private households"
+  },
+  {
+    "Key": "2000",
+    "Desc": "[SA25N] Government and government enterprises"
+  },
+  {
+    "Key": "2001",
+    "Desc": "[SA25N] Federal, civilian"
+  },
+  {
+    "Key": "2002",
+    "Desc": "[SA25N] Military"
+  },
+  {
+    "Key": "2010",
+    "Desc": "[SA25N] State and local"
+  },
+  {
+    "Key": "2011",
+    "Desc": "[SA25N] State government"
+  },
+  {
+    "Key": "2012",
+    "Desc": "[SA25N] Local government"
+  }
+]

@@ -8,14 +8,16 @@ permalink: /how-it-works/
   <div class="container-outer landing-section_top">
     <div class="container-left-8 hero-left">
       <h1>{{ page.title }}</h1>
-      <p class="hero-description">In the U.S., land and the resources beneath it can be owned by private individuals and corporations or by federal, state, local, and tribal governments. This makes the U.S. different from nearly every other country: in many places oil, gas, coal, and other minerals simply belong to the government, but in the U.S. there is widespread private ownership of these resources.</p>
+      <p class="hero-description">In the U.S., land and the resources beneath it can be owned by private individuals and corporations or by federal, state, local, and tribal governments. This makes the U.S. different from nearly every other country; in many places oil, gas, coal, and other minerals simply belong to the government, but in the U.S. there is widespread private ownership of these resources.</p>
       <p class="hero-description">Learn what the <a href="#process">extraction process</a> looks like, how <a href="#natural-resources">natural resources</a> are managed, and what <a href="#laws-governance">laws and governance</a> relate to the industry.</p>
     </div>
     <div class="container-right-4 hero-right">
       <div class="hero-right_square">
         <figure>
-          <img class="hero-right_image" src="{{ site.baseurl }}/img/landing-placeholders/placeholder.png"/>
-          <figcaption class="hero-right_caption">This is where a caption about a summary graphic will be perhaps with a <a href="#" class="link-alpha">number and figure</a>.</figcaption>
+          <a href="{{site.baseurl}}/how-it-works/production/">
+            <img class="hero-right_image" src="{{ site.baseurl }}/img/howitworks-landing-intro.png" alt="The U.S. ranks at or near the top worldwide in production of many natural resources. We are first in natural gas and oil, and second in coal and renewables.">
+          </a>
+          <figcaption class="hero-right_caption"><a href="{{site.baseurl}}/how-it-works/production/" class="link-alpha">What natural resources are produced in the U.S.?</a></figcaption>
         </figure>
       </div>
     </div>
@@ -26,7 +28,7 @@ permalink: /how-it-works/
   <section class="container">
     <h3 id="process" class="landing-section_category">The process</h3>
     <div class="container landing-section_open overview">
-      <p>How the federal government awards rights to extract natural resources from federal lands, and how those resources eventually result in revenue, differs depending on the resource and whether extraction is taking place onshore or offshore, though it follows five general steps:</p>
+      <p>The federal government awards rights to extract natural resources from federal lands, and those resources eventually result in revenue. That process differs depending on the resource and whether extraction takes place onshore or offshore, but it generally follows five steps:</p>
       <p class="para-lg landing-steps">
         <span>Plan <icon class="icon-chevron-lg"></icon></span>
         <span>Lease <icon class="icon-chevron-lg"></icon></span>
@@ -93,7 +95,7 @@ permalink: /how-it-works/
 			<h5 class="landing-heading"><a href="{{site.baseurl}}/how-it-works/revenues/">Revenues</a></h5>
 			<button class="accordion-button" accordion-button title="Toggle for revenues"></button>
 			<div class="accordion-content">
-				<p class="landing-description">When companies extract natural resources on federal onshore and offshore lands, they pay revenue to the federal government. The government distributes these funds for public use in a variety of ways.
+				<p class="landing-description">When companies extract natural resources on federal lands and offshore areas, they pay revenue to the federal government. The government distributes these funds for public use in a variety of ways.
         <a href="{{site.baseurl}}/how-it-works/revenues/">Learn how revenues work &#8594;</a></p>
 			</div>
 		</div>

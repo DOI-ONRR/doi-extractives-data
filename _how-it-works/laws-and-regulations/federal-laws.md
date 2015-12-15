@@ -32,7 +32,7 @@ nav_items:
 
 <p>The following table lists the laws that provide the backbone of the fiscal regime for the extractive industries, as well as the relevant lands and natural resources to which they apply.</p>
 
-<table>
+<table class="article_table">
   <tr>
     <th>Law name and code</th>
     <th>Description</th>
@@ -153,7 +153,7 @@ nav_items:
 
 <p>There are other laws governing natural resources and extractive companies’ operations. Some of these laws require companies to pay fees. Violating some of these laws can also result in companies paying fines.</p>
 
-<table>
+<table class="article_table">
   <tr>
     <th>Law name and code</th>
     <th>Description</th>

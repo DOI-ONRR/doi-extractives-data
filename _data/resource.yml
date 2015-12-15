@@ -1,0 +1,18 @@
+groups:
+  oilgas:
+    name: Oil & Gas
+    commodities:
+    - "Gas"
+    - "Oil"
+
+  coal:
+    name: Coal
+    commodities:
+    - "Coal"
+
+  minerals:
+    name: Hardrock Minerals
+    commodities:
+    - "Copper"
+    - "Gold"
+    - "Iron"

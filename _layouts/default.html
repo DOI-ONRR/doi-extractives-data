@@ -5,6 +5,7 @@
     ================================================== -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="OxyG3U-Vtui-uK6wHUeOw83OgdfcfxvsWWZcb5x7aZ0" />
     <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
 
     <!-- Mobile Specific Metas
@@ -44,9 +45,9 @@
 
     <!-- Favicons
     ================================================== -->
-    <!-- <link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/img/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/img/favicon.ico">
     <link rel="icon" type="image/png" href="{{ site.baseurl }}/img/favicon-16x16.png" sizes="16x16">
-    <link rel="icon" type="image/png" href="{{ site.baseurl }}/img/favicon-32x32.png" sizes="32x32"> -->
+    <link rel="icon" type="image/png" href="{{ site.baseurl }}/img/favicon-32x32.png" sizes="32x32">
 
     <!-- Styles
     ================================================== -->
@@ -71,6 +72,7 @@
     <script>
       eiti.data.path = '{{ site.baseurl }}/data/';
       eiti.commodities = ({{ site.data.commodities|jsonify }});
+      eiti.resource = ({{ site.data.resource|jsonify }});
     </script>
 
     <!-- custom elements -->

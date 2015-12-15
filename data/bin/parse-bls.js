@@ -71,27 +71,12 @@ var mapRow = function(d) {
 var loadFiles = function(done) {
   async.mapSeries(inputFiles, function(filename, next) {
     console.warn('reading:', filename);
-    var rows = [];
-    fs.createReadStream(filename)
-      .pipe(tito.createReadStream('csv'))
-      .pipe(thru(function(d, enc, next) {
-        if (isValidRow(d)) {
-          // console.warn('add:', d[areaAggrCode]);
-          rows.push(mapRow(d));
-        } else {
-          // console.warn('skip:', d[areaAggrCode]);
-        }
-        next();
-      }))
-      .on('finish', function() {
-        next(null, rows);
-      });
+    var type = filename.split('.').pop();
+    util.readData(filename, tito.createReadStream(type), next);
   }, function(error, years) {
     console.warn('loaded %d years', years.length);
     var rows = years.reduce(function(collection, set) {
-      return collection.concat(set.filter(function(d) {
-        return d.Jobs > 0;
-      }));
+      return collection.concat(set);
     }, []);
     console.warn('got %d rows', rows.length);
     done(null, rows);

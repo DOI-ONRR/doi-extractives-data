@@ -387,6 +387,8 @@
     };
   };
 
+  eiti.format.percent = eiti.format('.1%');
+
   /**
    * Create a range formatter that strips the preceding `$`
    * from the second value to produce strings like `$10m - 20m`

@@ -680,7 +680,7 @@
    */
   (function () {
     try {
-      var e = new CustomEvent('foo');
+      var e = new CustomEvent('foo'); // jshint ignore:line
     } catch (error) {
       function CustomEvent(event, params) {
         params = params || {

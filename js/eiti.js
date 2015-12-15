@@ -671,12 +671,15 @@
     return Array.prototype.forEach.call(list, fn, context);
   }
 
-  // CustomEvent polyfill via:
-  // <https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent/CustomEvent>
-  try {
-    var e = new CustomEvent('foo');
-  } catch (error) {
-    (function () {
+
+  /**
+   * CustomEvent polyfill via:
+   * <https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent/CustomEvent>
+   */
+  (function () {
+    try {
+      new CustomEvent('foo');
+    } catch (error) {
       function CustomEvent(event, params) {
         params = params || {
           bubbles: false,
@@ -689,7 +692,7 @@
       }
       CustomEvent.prototype = window.Event.prototype;
       window.CustomEvent = CustomEvent;
-    })();
-  }
+    }
+  })();
 
 })(this);

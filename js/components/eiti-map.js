@@ -342,6 +342,8 @@
   }
 
   function loadLayer(layer, done) {
+    var selection = d3.select(layer);
+
     if (layer.hasAttribute('data-feature')) {
       var feature = layer.getAttribute('data-feature');
       try {
@@ -349,7 +351,7 @@
       } catch (error) {
         throw new Error('Unable to parse data-feature="' + feature + '"');
       }
-      var selection = d3.select(layer)
+      selection
         .datum(feature)
         .classed('js-loaded', true);
       return done(null, selection);
@@ -364,8 +366,7 @@
     // console.log('url:', layer, path, '->', url);
     if (!url) return done('no URL');
 
-    var selection = d3.select(layer)
-      .classed('js-loading', true);
+    selection.classed('js-loading', true);
     eiti.load(url, function(error, data) {
       selection.classed('js-loading', false);
       if (error) {

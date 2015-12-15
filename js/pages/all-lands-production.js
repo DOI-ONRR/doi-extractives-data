@@ -29,7 +29,7 @@
   filterParts.on('click', function(e, index) {
     var key = filterParts[0][index].getAttribute('data-key');
     if (key) {
-      root.select('.filters-wrapper').classed('js-color', true);
+      root.select('.filters-wrapper').attr('aria-expanded', true);
       filterToggle.attr('aria-expanded', true);
       root.select('.filter-description_closed').attr('aria-expanded', true);
       document.querySelector('#'+ key + '-selector').focus();

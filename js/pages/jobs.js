@@ -375,7 +375,9 @@
 
     selection.append('td')
       .attr('class', 'bar')
-      .append('eiti-bar');
+      .append(function() {
+        return new EITIBar(); // jshint ignore:line
+      });
   }
 
   function updateRegionRow(selection) {

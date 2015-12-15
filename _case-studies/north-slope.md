@@ -62,7 +62,7 @@ In terms of transportation infrastructure in the borough, Dalton Highway is the 
 
 Unlike many Alaska municipalities, the North Slope Borough is responsible for its own airports, which serve the local population as well as a range of commercial and recreational visitors.[^23] Annual costs for airport maintenance across the North Slope are about $1.4 million per year, including spending on airports and landing strips that are labeled as “unrestricted,” or permissible for oil and gas industry use.[^24] It is unclear what percentage of the annual airport maintenance budget is spent specifically on support activities for the oil and gas industry.
 
-The state also spends public dollars on reclamation services, including managing contaminated drilling sites. The Oil and Hazardous Substance Release Prevention and Response Fund imposes a 4 cent surcharge per barrel of oil for prevention, and a 1 cent surcharge per barrel of oil for response.[^25] The operating budget, including expenditures and obligations, for the state’s Oil and Hazardous Substance Release Prevention and Response Fund was $21.5 million in FY 2012, with $8.1 million going to spill prevention and response for contaminated sites.[^26]
+The state also spends public dollars on <span class="term term-p" data-term="reclamation" title="Click to define" tabindex="0">reclamation<i class="icon-book"></i></span> services, including managing contaminated drilling sites. The Oil and Hazardous Substance Release Prevention and Response Fund imposes a 4 cent surcharge per barrel of oil for prevention, and a 1 cent surcharge per barrel of oil for response.[^25] The operating budget, including expenditures and obligations, for the state’s Oil and Hazardous Substance Release Prevention and Response Fund was $21.5 million in FY 2012, with $8.1 million going to spill prevention and response for contaminated sites.[^26]
 
 The North Slope Borough often responds to, and pays for, emergency services on oilfield roads, such as Kuparuk Oilfield roads.[^27] The Alaska state government also invests a significant amount of tax dollars to prevent and respond to oil and hazardous substance emergencies in the state. For example, the Office of Management and Budget appropriated $750,000 toward oil and hazardous substance first-responder equipment and preparedness in 2013.[^28]
 
@@ -86,7 +86,7 @@ The table below highlights the data sources used to compile this narrative, as w
     </tr>
     <tr>
       <td>Employment</td>
-      <td>The Bureau of Labor Statistics (BLS) publishes the Alaska North Slope Borough annual average employment for oil and gas extraction (North American Industry Classification System [NAICS] Code 211).</td>
+      <td>The Bureau of Labor Statistics (BLS) publishes the Alaska North Slope Borough annual average employment for oil and gas extraction (<span class="term term-p" data-term="north american industry classification system (naics)" title="Click to define" tabindex="0">NAICS<i class="icon-book"></i></span> Code 211).</td>
       <td>Neither BLS nor the U.S. Census Bureau has ten-year employment-trend data for the oil and gas industry at the North Slope Borough level for 2004–2013. There are several years and subindustries without data.</td>
     </tr>
     <tr>

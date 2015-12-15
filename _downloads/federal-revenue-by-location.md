@@ -67,27 +67,27 @@ permalink: /downloads/federal-revenue-by-location/
 
     <h3>Fields and definitions</h3>
 
-    <p><span>Revenue Type.</span> Revenues from U.S. natural resources fall into one of several types:
+    <p><strong>Revenue Type.</strong> Revenues from U.S. natural resources fall into one of several types:
       <ul class="list-bullet">
-        <li><span>Royalties. </span>
-          A natural resource lease owner pays royalties after the lease starts producing a commodity in paying quantities. The amount is based on a percentage of the revenue from the commodity sold. The exact percentage is set in the original lease document that went along with the lease sale.</li>
-        <li><span>Bonus. </span>
+        <li><strong>Royalties. </strong>
+          A natural resource lease owner pays royalties after the lease starts producing a commodity in <span class="term term-p" data-term="paying quantities" title="Click to define" tabindex="0">paying quantities<i class="icon-book"></i></span>. The amount is based on a percentage of the revenue from the commodity sold. The exact percentage is set in the original lease document that went along with the lease sale.</li>
+        <li><strong>Bonus. </strong>
           The amount paid by the highest successful bidder for a natural resource lease. The winning bid.</li>
-        <li><span>Other revenues. </span>
+        <li><strong>Other revenues. </strong>
           This category includes revenues that are not included in the royalty, rent, or bonus categories, such as minimum royalties, estimated royalties, settlement agreements, and interest.</li>
-        <li><span>Rents. </span>
+        <li><strong>Rents. </strong>
           A natural resource lease might not produce anything in paying quantities for some time after it is sold. Until it does, periodic payments are made for the right to continue exploration and development of the land for future natural resource production. These payments are called rent.</li>
       </ul>
     </p>
 
-    <p><span>Commodity Type. </span>The Department of the Interior collects revenues on over 60 different products. The majority of revenues come from Oil & Gas, Coal and Renewables (Geothermal and Wind), but you will find many other product categories in these datasets.
+    <p><strong>Commodity Type. </strong>The Department of the Interior collects revenues on over 60 different products. The majority of revenues come from Oil & Gas, Coal and Renewables (Geothermal and Wind), but you will find many other product categories in these datasets.
     </p>
 
-    <p><span>Region. </span>The Bureau of Ocean Energy Management separates offshore area into four regions: Gulf of Mexico, Atlantic, Pacific and Alaska. For a more information on offshore regions, including spatial boundaries, see the Bureau of Ocean Energy Management's <a href="http://www.boem.gov/Maps-and-GIS-Data/">maps and GIS data</a>.</p>
+    <p><strong>Region. </strong>The Bureau of Ocean Energy Management separates offshore area into four regions: Gulf of Mexico, Atlantic, Pacific and Alaska. For a more information on offshore regions, including spatial boundaries, see the Bureau of Ocean Energy Management's <a href="http://www.boem.gov/Maps-and-GIS-Data/">maps and GIS data</a>.</p>
 
-    <p><span>Planning Area. </span>Offshore regions are broken out into planning areas. For a more information on offshore planning areas, including spatial boundaries, see the Bureau of Ocean Energy Management's <a href="http://www.boem.gov/Maps-and-GIS-Data/">maps and GIS data</a>.</p>
+    <p><strong>Planning Area. </strong>Offshore regions are broken out into planning areas. For a more information on offshore planning areas, including spatial boundaries, see the Bureau of Ocean Energy Management's <a href="http://www.boem.gov/Maps-and-GIS-Data/">maps and GIS data</a>.</p>
 
-    <p><span>Revenue. </span>Total revenue.</p>
+    <p><strong>Revenue. </strong>Total revenue.</p>
 
 
     <h2>Onshore data dictionary</h2>

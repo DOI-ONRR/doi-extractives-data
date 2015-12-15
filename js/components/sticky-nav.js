@@ -190,11 +190,18 @@
 
   var stickyNav = new StickyNav();
 
-  setTimeout(function() {
+  var loadDelay = stickyNav.elems.sticky.getAttribute('data-load-delay');
+  if (loadDelay) {
+    setTimeout(function() {
+      stickyNav.run('init');
+    }, parseInt(loadDelay));
+  } else {
     stickyNav.run('init');
-  },500);
+  }
 
-  window.addEventListener('scroll', stickyNav.throttle(stickyNav.run, 150, stickyNav));
+
+
+  window.addEventListener('scroll', stickyNav.throttle(stickyNav.run, 130, stickyNav));
 
   window.addEventListener('resize', stickyNav.throttle(stickyNav.run, 150, stickyNav));
 

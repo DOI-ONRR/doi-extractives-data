@@ -29,6 +29,10 @@
     height: 100%;
     overflow-y: scroll;
 
+    @include respond-to(medium-up) {
+      height: inherit;
+    }
+
     &.js-transparent,
     &.js-color {
       border-radius: $base-border-radius;

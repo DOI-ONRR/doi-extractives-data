@@ -1,3 +1,4 @@
+// globals d3
 (function(exports) {
 
   exports.EITISlider = registerElement('eiti-slider', {

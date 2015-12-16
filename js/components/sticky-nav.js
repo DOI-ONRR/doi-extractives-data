@@ -69,7 +69,6 @@
           : ( this.attrParent === 'mobile' && this.isMobile )
             ? this.elems.parent.offsetTop - this.elems.sticky.offsetHeight
             : this.elems.sticky.offsetTop
-      console.log('offsetSet', this.offset)
     },
     getPositions: function () {
 
@@ -180,7 +179,6 @@
     run: function(init) {
       findScrollPositions();
       if (init === 'init') {
-        console.log(init)
         this.setOffset();
       }
       this.getPositions();

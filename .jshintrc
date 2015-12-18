@@ -22,7 +22,9 @@
     "Immutable",
     "jQuery",
     "module",
-    "topojson"
+    "topojson",
+    "DOMTokenList",
+    "queue"
   ],
   "quotmark": true,
   "trailing": true,

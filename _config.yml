@@ -5,6 +5,9 @@ description: USEITI is part of an international effort to promote open and accou
 # permanent url, for use in meta references
 url: https://useiti.doi.gov
 
+# app version number
+version: v1.1.0
+
 sass:
   style: nested
   sass_dir: _sass

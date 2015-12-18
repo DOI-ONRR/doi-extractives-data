@@ -46,10 +46,30 @@
   }
 }
 
-.case-studies-maps {
+.case_studies-maps {
   display: block;
 
   eiti-map {
     display: block;
+  }
+
+  &.desktop {
+    display: none;
+  }
+
+  &.mobile {
+    display: block;
+    width: 50vh;
+  }
+
+  @include respond-to(medium-up) {
+
+    &.desktop {
+      display: block;
+    }
+
+    &.mobile {
+      display: none;
+    }
   }
 }

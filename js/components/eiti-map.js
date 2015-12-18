@@ -1,7 +1,6 @@
+// globals d3, topojson, eiti
 (function(exports) {
   'use strict';
-
-  // XXX requires d3, topojson
 
   exports.EITIMap = document.registerElement('eiti-map', {
     // 'extends': 'svg',
@@ -343,6 +342,8 @@
   }
 
   function loadLayer(layer, done) {
+    var selection = d3.select(layer);
+
     if (layer.hasAttribute('data-feature')) {
       var feature = layer.getAttribute('data-feature');
       try {
@@ -350,9 +351,9 @@
       } catch (error) {
         throw new Error('Unable to parse data-feature="' + feature + '"');
       }
-      var selection = d3.select(layer)
-        .datum(feature);
-      layer.classList.add('js-loaded');
+      selection
+        .datum(feature)
+        .classed('js-loaded', true);
       return done(null, selection);
     }
 
@@ -365,15 +366,15 @@
     // console.log('url:', layer, path, '->', url);
     if (!url) return done('no URL');
 
-    layer.classList.add('js-loading');
+    selection.classed('js-loading', true);
     eiti.load(url, function(error, data) {
-      layer.classList.remove('js-loading');
+      selection.classed('js-loading', false);
       if (error) {
-        layer.classList.add('js-error');
+        selection.classed('js-error', true);
         return done(error);
       }
-      layer.classList.add('js-loaded');
-      var selection = d3.select(layer)
+      selection
+        .classed('js-loaded', true)
         .datum(data);
       done(null, selection);
     });

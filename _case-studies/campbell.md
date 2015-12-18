@@ -1,5 +1,5 @@
 ---
-title: Campbell County, Wyoming
+title: Campbell County, Wyoming | Case Studies
 layout: case-studies
 permalink: /case-studies/campbell/
 resource: coal
@@ -23,6 +23,10 @@ nav_items:
 <h2 class="h3"><a name="intro" class="case_studies_content-heading" data-nav-header="intro">{{ page.title }}</a></h2>
 
 Most of the coal consumed in the U.S. fuels the country’s electricity needs, and coal constitutes 39% of all electricity generated in the U.S.[^1] Wyoming leads domestic coal production, accounting for two-fifths of the nation’s output.[^2] More coal is extracted in Wyoming than in the next four largest-producing states combined, with nine of the nation’s ten largest mines located in the state.[^3] Campbell County, in the northeast corner of the state, supplies more coal for generating electricity than any other county in the nation.
+
+{% include case-studies/_selector.html screen="mobile" %}
+
+{% include case-studies/_maps.html screen="mobile" %}
 
 <h2 class="h3"><a name="geology" class="case_studies_content-heading" data-nav-header="geology">Geology and history</a></h2>
 

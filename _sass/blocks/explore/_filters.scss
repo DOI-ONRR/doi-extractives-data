@@ -27,10 +27,11 @@
   &[aria-expanded=true] {
     background-color: $mid-blue-opaque !important;
     height: 100%;
-    overflow-y: scroll;
+    overflow-y: auto;
 
     @include respond-to(medium-up) {
       height: inherit;
+      overflow-y: initial;
     }
 
     &.js-transparent,

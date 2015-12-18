@@ -13,6 +13,7 @@ var yargs = require('yargs')
   .alias('h', 'help')
   .wrap(120);
 var options = yargs.argv;
+var shouldParseCountyCoal;
 
 if (options.help) {
   return yargs.showHelp();
@@ -88,7 +89,7 @@ var stateKey = {
   'Refuse Recovery': false
 }
 
-async.parallel({
+var production = {
   naturalgas: function readNaturalGas(done) {
     return read(
       options.naturalgas,
@@ -117,13 +118,6 @@ async.parallel({
       done
     );
   },
-  countycoal: function readCountyCoal(done) {
-    return read(
-      options.countycoal,
-      tito.createReadStream(options['if']),
-      done
-    );
-  },
   renewables: function readRenewables(done) {
     return read(
       options.renewables,
@@ -131,7 +125,20 @@ async.parallel({
       done
     );
   }
-}, function(error, data) {
+};
+
+if (options.countycoal) {
+  production.countycoal = function readCountyCoal(done) {
+    return read(
+      options.countycoal,
+      tito.createReadStream(options['if']),
+      done
+    );
+  }
+  shouldParseCountyCoal = true;
+}
+
+async.parallel(production, function(error, data) {
   if (error) return console.error(error);
 
   var results = [];
@@ -161,7 +168,7 @@ async.parallel({
   ];
 
   // toggle to parse data for county coal
-  var shouldParseCountyCoal = data['countycoal'];
+  // var shouldParseCountyCoal = data['countycoal'];
   console.warn(shouldParseCountyCoal)
 
 

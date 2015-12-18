@@ -220,4 +220,220 @@
     return d3.rebind(model, dispatch, 'on');
   };
 
+
+  eiti.explore.timeline = function() {
+    var getter = eiti.data.getter;
+    var value = getter('value');
+    var aggregate;
+
+    var years = [];
+    var selected;
+
+    var timeline = function(selection, data) {
+      var rollup = aggregate || function(d) {
+        return d3.sum(d, value);
+      };
+
+      var dataByYearPolarity = d3.nest()
+        .key(function(d) {
+          return value(d) < 0 ? 'negative' : 'positive';
+        })
+        .key(getter('Year'))
+        .rollup(rollup)
+        .map(data);
+
+      // console.log('data by year/polarity:', dataByYearPolarity);
+      var positiveYears = dataByYearPolarity.positive || {};
+      var positiveExtent = d3.extent(d3.values(positiveYears));
+      var negativeYears = dataByYearPolarity.negative || {};
+      var negativeExtent = d3.extent(d3.values(negativeYears));
+
+      var w = 500;
+      var h = 40;
+      var viewBox = selection.attr('viewBox');
+      // if there is a viewBox already, derive the dimensions from it
+      if (viewBox) {
+        viewBox = viewBox.split(' ').map(Number);
+        w = viewBox[2];
+        h = viewBox[3];
+      } else {
+        // otherwise, set up the viewBox with our default dimensions
+        selection.attr('viewBox', [0, 0, w, h].join(' '));
+      }
+
+      var left = 0; // XXX need to make room for axis labels
+      var right = w;
+
+      // the x-axis scale
+      var x = d3.scale.linear()
+        .domain(d3.extent(years))
+        .range([left, right + 2]);
+
+      // the y-axis domain sets a specific point for zero.
+      // the `|| -100` and `|| 100` bits here ensure that the domain has some
+      // size, even if there is no data from which to derive an extent.
+      var yDomain = [
+        negativeExtent[0] || 0,
+        positiveExtent[1] || 100
+      ];
+      // the y-axis scale, with the zero point at 3/4 the height
+      // XXX: note that this exaggerates the negative scale!
+      var y = d3.scale.linear()
+        .domain(yDomain)
+        .range([h, 0]);
+
+      var area = d3.svg.area()
+        .interpolate('step-after')
+        .x(function(d) { return x(d.year); })
+        .y0(y(0))
+        .y1(function(d) { return y(d.value); });
+
+      var areas = selection.selectAll('path.area')
+        .data([
+          {
+            polarity: 'positive',
+            values: years.map(function(year) {
+              return {
+                year: year,
+                value: positiveYears[year] || 0
+              };
+            })
+          },
+          {
+            polarity: 'negative',
+            values: years.map(function(year) {
+              return {
+                year: year,
+                value: negativeYears[year] || 0
+              };
+            })
+          }
+        ]);
+
+      areas.exit().remove();
+      areas.enter().append('path')
+        .attr('class', function(d) {
+          return 'area ' + d.polarity;
+        });
+
+      var zero = selection.select('g.zero');
+      if (zero.empty()) {
+        zero = selection.append('g')
+          .attr('class', 'zero');
+        zero.append('line');
+        zero.append('text')
+          .attr('class', 'label')
+          .attr('text-anchor', 'end')
+          .attr('dy', 0.5);
+          // .text(0);
+      }
+
+      var mask = selection.select('g.mask');
+      if (mask.empty()) {
+        mask = selection.append('g')
+          .attr('class', 'mask');
+        mask.append('rect')
+          .attr('class', 'before')
+          .attr('x', 0)
+          .attr('width', 0)
+          .attr('height', h);
+        mask.append('rect')
+          .attr('class', 'after')
+          .attr('x', w)
+          .attr('width', w)
+          .attr('height', h);
+        mask.append('line')
+          .attr('class', 'before')
+          .attr('y1', 0)
+          .attr('y2', h);
+        mask.append('line')
+          .attr('class', 'after')
+          .attr('y1', 0)
+          .attr('y2', h);
+      }
+
+      var updated = selection.property('updated');
+      var t = function(d) { return d; };
+      if (updated) {
+        t = function(d) {
+          return d.transition()
+            .duration(500);
+        };
+      }
+
+      var year1 = selected || years[years.length - 1];
+      var year2 = year1 + 1;
+
+      var beforeX = x(year1);
+      var afterX = Math.min(x(year2), w);
+      // don't transition these
+      mask.select('rect.before')
+        .attr('width', beforeX);
+      mask.select('rect.after')
+        .attr('x', afterX);
+      mask.select('line.before')
+        .attr('transform', 'translate(' + [beforeX, 0] + ')');
+      mask.select('line.after')
+        .attr('transform', 'translate(' + [afterX, 0] + ')');
+
+      // transition these
+      // mask = t(mask);
+      mask.selectAll('line')
+        .attr('y1', y(positiveYears[year1] || 0))
+        .attr('y2', y(negativeYears[year1] || 0));
+
+      zero.select('line')
+        .attr('x1', left)
+        .attr('x2', right);
+
+      zero.select('.label')
+        .attr('transform', 'translate(' + [left, 0] + ')');
+
+      t(zero).attr('transform', 'translate(' + [0, y(0)] + ')');
+
+      t(areas).attr('d', function(d) {
+        return area(d.values);
+      });
+      selection.property('updated', true);
+    };
+
+    timeline.selected = function(year) {
+      if (arguments.length) {
+        selected = year;
+        return timeline;
+      }
+      return selected;
+    };
+
+    timeline.years = function(list) {
+      if (arguments.length) {
+        years = list;
+        return timeline;
+      }
+      return years;
+    };
+
+    timeline.value = function(fn) {
+      if (arguments.length) {
+        value = fn || identity;
+        return timeline;
+      }
+      return value;
+    };
+
+    timeline.aggregate = function(fn) {
+      if (arguments.length) {
+        aggregate = fn;
+        return timeline;
+      }
+      return aggregate;
+    };
+
+    return timeline;
+  };
+
+  function identity(d) {
+    return d;
+  }
+
 })(eiti);

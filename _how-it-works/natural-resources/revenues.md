@@ -39,7 +39,7 @@ nav_items:
 
 <p>Lease holders also pay different fees to the Bureau of Land Management, Bureau of Safety and Environmental Enforcement, and Bureau of Ocean Energy Management, often to reimburse the federal government for costs associated with awarding, administering, and enforcing leases. For extracting locatable hardrock minerals on federal lands, companies pay fees, but not royalties under the Mining Law of 1872.</p>
 
-<img src="{{site.baseurl}}/img/revenue-streams-chart.png" alt="Select federal revenue streams and statutory and regulatory rates" class="article_img-100">
+<img src="{{site.baseurl}}/img/revenue-streams-chart.png" alt="Select federal revenue streams and statutory and regulatory rates" class="article_img-100 u-margin-top">
 
 <h2 id="all-lands-and-waters" data-nav-header="all-lands-and-waters">Payments to extract natural resources from any land or water in the U.S.</h2>
 
@@ -98,7 +98,7 @@ nav_items:
 <h2>Learn more</h2>
 
 <p>For more details about U.S. and international revenue standards, visit:</p>
-  
+
 <ul class="list-bullet">
   <li>IRS, <a href="http://www.irs.gov/irm/part4/irm_04-001-005.html">Revenue Classification and Case Building System</a></li>
   <li>International Monetary Fund, <a href="http://www.imf.org/external/np/sta/gfsm/">Government Finance Statistics Manual 2014</a></li>

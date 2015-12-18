@@ -31,11 +31,12 @@ permalink: /explore/jobs/
   <section class="container-right-8 filters-wrapper_outer">
     <div data-absolute="true" data-offset-parent="mobile" class="sticky_nav sticky_nav-show_mobile filters-wrapper container" data-toggler="filters" data-max-width="675">
       <h1 data-toggler="filters" data-filter-description="" class="filter-description filter-description_closed">
-          Extractive industries jobs
-          (<a href="#figure-selector" class="filter-part" data-key="figure">wage and salary</a>)
-          in
-          <a href="#region-selector" class="filter-part" data-key="region">the entire U.S.</a>
-          (<a href="#year-selector" class="filter-part" data-key="year">2013</a>)
+        <a href="#units-selector" class="filter-part" data-key="units">Number</a>
+        of
+        <a href="#figure-selector" class="filter-part" data-key="figure">wage and salary</a>
+        extractive industry jobs in
+        <a href="#region-selector" class="filter-part" data-key="region">the entire U.S.</a>
+        (<a href="#year-selector" class="filter-part" data-key="year">2013</a>)
       </h1>
 
       <button class="toggle-filters toggle-desktop" is="eiti-toggle" aria-controls="filters" data-expanded-text="Hide filters" data-collapsed-text="Show filters" data-toggler="filters">Show filters</button>
@@ -54,19 +55,23 @@ permalink: /explore/jobs/
             {% endfor %}
           </select>
         </div>
+
         <div id="figure-filter" class="container-right-6 filter">
-          <!--
-          <label for="figure-selector">Units</label>
-          <div id="figure-selector" class="container">
-            <label class="figure-selector"><input type="radio" name="units" value="dollars">$</label>
-            <label class="figure-selector"><input type="radio" name="units" value="percent">%</label>
-          </div>
-          -->
           <label for="figure-selector">Job type</label>
           <select id="figure-selector" name="figure">
             <option value="wage" selected>Wage and salary</option>
             <option value="self">Self-employed</option>
           </select>
+        </div>
+
+        <div id="unit-filter" class="container-right-6 filter">
+          <label for="unit-selector">Show jobs as</label>
+          <div id="unit-selector" class="container unit-filter">
+            <input id="units-jobs" class="unit-selector" type="radio" name="units" value="jobs" checked>
+            <label class="unit-selector-label" for="units-jobs">#</label>
+            <input id="units-percent" class="unit-selector" type="radio" name="units" value="percent">
+            <label class="unit-selector-label" for="units-percent">%</label>
+          </div>
         </div>
 
 
@@ -84,9 +89,10 @@ permalink: /explore/jobs/
         </div>
 
         <h1 data-toggler="filters" data-filter-description="" class="filter-description">
-          Extractive industries jobs
-          (<a href="#figure-selector" class="filter-part" data-key="figure">wage and salary</a>)
-          in
+          <a href="#units-selector" class="filter-part" data-key="units">Number</a>
+          of
+          <a href="#figure-selector" class="filter-part" data-key="figure">wage and salary</a>
+          extractive industry jobs in
           <a href="#region-selector" class="filter-part" data-key="region">the entire U.S.</a>
           (<a href="#year-selector" class="filter-part" data-key="year">2013</a>)
         </h1>
@@ -144,6 +150,12 @@ permalink: /explore/jobs/
                 data-object="states"
                 data-filter="id === '{{ region.id }}'">
               </g>
+              <g class="onshore counties" data-url="us-topology.json"
+                data-object="counties"
+                data-filter="properties.state === '{{ region.id }}'"
+                data-title="properties.name"
+                data-mesh="true">
+              </g>
             </svg>
           </eiti-map>
 
@@ -152,6 +164,7 @@ permalink: /explore/jobs/
 
         <h3 class="region-header-category">Jobs in {{ region.name }}</h3>
         <table class="subregions">
+          <thead class="region-header"></thead>
           <tbody></tbody>
         </table>
 
@@ -175,4 +188,5 @@ permalink: /explore/jobs/
     'US': 'the entire U.S.'
   };
 </script>
+<script src="{{ site.baseurl }}/js/eiti.explore.js"></script>
 <script src="{{ site.baseurl }}/js/pages/jobs.js"></script>

@@ -31,7 +31,9 @@
 
         min: numericProperty('min', 0),
         max: numericProperty('max', 1),
-        value: numericProperty('value', 0)
+        value: numericProperty('value', 0),
+
+        render: {value: render}
       }
     )
   });
@@ -46,8 +48,10 @@
     return bar;
   }
 
-  function render() {
-    if (!this[renderId]) {
+  function render(force) {
+    if (force) {
+      _render.call(this);
+    } else if (!this[renderId]) {
       this[renderId] = requestAnimationFrame(_render.bind(this));
     }
   }

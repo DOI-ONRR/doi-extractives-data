@@ -21,13 +21,21 @@
   var NULL_FILL = '#f7f7f7';
 
   // buttons that expand and collapse other elements
+  // buttons that expand and collapse other elements
   var filterToggle = root.select('button.toggle-filters');
 
-  // FIXME: componentize the focus links too
-  root.selectAll('a[data-key]')
-    .on('click', function() {
-      d3.event.preventDefault();
-    });
+  // FIXME: componentize these too
+  var filterParts = root.selectAll('a[data-key]');
+  filterParts.on('click', function(e, index) {
+    var key = filterParts[0][index].getAttribute('data-key');
+    if (key) {
+      root.select('.filters-wrapper').attr('aria-expanded', true);
+      filterToggle.attr('aria-expanded', true);
+      root.select('.filter-description_closed').attr('aria-expanded', true);
+      document.querySelector('#'+ key + '-selector').focus();
+    }
+    d3.event.preventDefault();
+  });
 
   // get the filters and add change event handlers
   var filters = root.selectAll('.filters [name]')
@@ -95,13 +103,9 @@
     var old = state;
     state = fn(state);
     if (!Immutable.is(old, state)) {
-      if (rendered && stateChanged(old, state, 'group')) {
-        console.warn('commodity group:', old.get('group'), '->', state.get('group'));
-        state = state.delete('commodity');
-      }
-      if (rendered && stateChanged(old, state, 'commodity')) {
-        console.warn('commodity:', old.get('commodity'), '->', state.get('commodity'));
-        state = state.delete('product');
+      if (state.has('product') && state.get('product').match(/Oil/)
+          && ['pacific', 'alaska'].indexOf(state.get('region')) > -1) {
+        state = state.set('region', 'pacific alaska');
       }
       render(state, old);
       location.hash = eiti.url.qs.format(state.toJS());
@@ -245,10 +249,8 @@
         var featureId = getter(fields.featureId);
         features.forEach(function(f) {
           var id = featureId(f);
-
           f.value = dataByFeatureId[id];
         });
-
 
         var value = getter('value');
         var values = features.map(value);
@@ -263,6 +265,21 @@
             ? NULL_FILL
             : scale(v);
         });
+
+        if (regionId === 'pacific alaska') {
+          features = features.filter(function(d) {
+            return featureId(d) === regionId;
+          });
+          features = [
+            {
+              id: regionId,
+              value: value(features[0]),
+              properties: {
+                name: REGION_ID_NAME[regionId]
+              }
+            }
+          ];
+        }
 
         selection.select('.map-legend')
           .call(updateLegend, scale);
@@ -336,7 +353,9 @@
       .attr('class', 'value');
     selection.append('td')
       .attr('class', 'region-chart')
-      .append('eiti-bar');
+      .append(function() {
+        return new EITIBar(); // jshint ignore:line
+      });
   }
 
   function updateRegionRow(selection) {
@@ -463,13 +482,22 @@
       value: 'Volume',
       featureId: 'id'
     };
+
     if (!regionId) {
+      if (state.has('product') && state.get('product').match(/Oil/)) {
+        fields.featureId = function(d) {
+          if (d.id === 'pacific' || d.id === 'alaska') {
+            return 'pacific alaska';
+          }
+          return d.id;
+        };
+      }
       return fields;
     }
     switch (regionId.length) {
       case 2:
         if (regionId !== 'US') {
-          if (state.get('product') === 'Coal (short tons)'){
+          if (state.get('product').match(/Coal/)){
             // for coal county data
             if (regionId !== 'US') {
               fields.region = 'County';
@@ -488,8 +516,16 @@
 
       // offshore
       default:
-        if (regionId.length > 3){
+        if (regionId.length > 3) {
           fields.region = 'Region';
+          if (regionId === 'pacific alaska') {
+            fields.featureId = function(d) {
+              if (d.id === 'pacific' || d.id === 'alaska') {
+                return 'pacific alaska';
+              }
+              return d.id;
+            };
+          }
         } else {
           fields.subregion = 'Area';
           fields.featureId = function(f) {

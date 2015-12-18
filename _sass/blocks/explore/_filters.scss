@@ -1,29 +1,22 @@
 
 .filters-wrapper_outer {
   position: relative;
-  // @include respond-to(medium-to-huge-plus) {
-  //   margin-right: $base-padding;
-  // }
 }
 
 .filters-wrapper {
-  background-color: transparent;
+  background-color: $white;
   margin-left: 0;
   padding: $base-padding;
   position: absolute;
   width: 100%;
   z-index: 3000;
 
+
   @include respond-to(medium-up) {
     border-bottom-left-radius: $base-border-radius;
     border-bottom-right-radius: $base-border-radius;
     margin-right: $base-padding;
     width: initial;
-    // max-width: 674.309px;
-  }
-
-  @include respond-to(huge-plus-up) {
-    // margin-right: 0;
   }
 
   select {
@@ -33,21 +26,37 @@
 
   &[aria-expanded=true] {
     background-color: $mid-blue-opaque !important;
-    // height: 100%;
+    height: 100%;
     overflow-y: scroll;
 
-    // @include respond-to(medium-up) {
-    //   overflow-y: none;
-    //   height: initial;
-    // }
+    @include respond-to(medium-up) {
+      height: inherit;
+    }
+
+    &.js-transparent,
+    &.js-color {
+      border-radius: $base-border-radius;
+      border-bottom: none;
+    }
+
+    &.js-color {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
   }
 
   &.js-color {
-    background: $mid-blue-opaque;
+    background: $white;
+    border-bottom: 2px solid lighten($neutral-gray, 5%);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
   &.js-transparent {
     background: transparent;
+    border-bottom: 2px solid lighten($neutral-gray, 5%);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
   }
 }
 
@@ -154,11 +163,7 @@
     border-top-right-radius: 0;
     font-weight: $weight-bold;
 
-    &:before {
-      content: '$';
-    }
-
-    &[checked='true'] + label {
+    &:checked + label {
       background: $blue;
       color: $white;
     }
@@ -171,11 +176,7 @@
     border-top-left-radius: 0;
     font-weight: $weight-bold;
 
-    &:before {
-      content: '%';
-    }
-
-    &[checked='true'] + label {
+    &:checked + label {
       background: $blue;
       color: $white;
     }
@@ -193,14 +194,14 @@
   float: left;
   letter-spacing: -0.5px;
   margin-bottom: $base-padding;
-  width: 65%;
 
   @include respond-to(medium-up) {
     float: left;
+    width: 65%;
   }
 
   &.filter-description_closed {
-    margin-bottom: 0;
+    margin-bottom: $base-padding-lite;
 
     &[aria-expanded=true] {
       display: none;
@@ -208,6 +209,10 @@
 
     &[aria-expanded=false] {
       display: block;
+    }
+
+    @include respond-to(medium-up) {
+      margin-bottom: 0;
     }
   }
 

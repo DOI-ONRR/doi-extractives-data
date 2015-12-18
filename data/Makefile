@@ -312,6 +312,16 @@ production/all-production.tsv:
 		--naturalgas $(input)eia/commodity/naturalgas.tsv \
 		--oil $(input)eia/commodity/oil.tsv \
 		--coal $(input)eia/commodity/coal.tsv \
+		--renewables $(input)eia/commodity/renewables.tsv \
+		> $@
+
+production/coal-county-all-production.tsv:
+	mkdir -p $(dir $@)
+	bin/group-all-production.js \
+		--naturalgas2 $(input)eia/commodity/naturalgas2.tsv \
+		--naturalgas $(input)eia/commodity/naturalgas.tsv \
+		--oil $(input)eia/commodity/oil.tsv \
+		--coal $(input)eia/commodity/coal.tsv \
 		--countycoal $(input)eia/commodity/coal.tsv \
 		--renewables $(input)eia/commodity/renewables.tsv \
 		> $@

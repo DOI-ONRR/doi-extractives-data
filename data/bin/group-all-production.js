@@ -161,7 +161,8 @@ async.parallel({
   ];
 
   // toggle to parse data for county coal
-  var shouldParseCountyCoal = false;
+  var shouldParseCountyCoal = data['countycoal'];
+  console.warn(shouldParseCountyCoal)
 
 
   Object.keys(data).forEach(function(commodity) {

@@ -1,5 +1,5 @@
 ---
-title: Elko and Eureka Counties, Nevada
+title: Elko and Eureka Counties, Nevada | Case Studies
 layout: case-studies
 permalink: /case-studies/elko-and-eureka/
 resource: gold
@@ -23,6 +23,10 @@ nav_items:
 <h2 class="h3"><a name="intro" class="case_studies_content-heading" data-nav-header="intro">{{ page.title }}</a></h2>
 
 Gold is a precious mineral highly valued for its durability and beauty. Used to make jewelry and art, it also has technological uses, such as memory chip conductors and reflective satellite coverings. In 2013, the U.S. was the third-largest producer of gold, extracting 227 tons valued at $10.2 billion.[^1] The U.S. gold reserves, with an estimated size of 3,000 tons, are the fifth largest in the world.[^2] Nevada accounts for 74% of total U.S. gold production.[^3]
+
+{% include case-studies/_selector.html screen="mobile" %}
+
+{% include case-studies/_maps.html screen="mobile" %}
 
 <h2 class="h3"><a name="geology" class="case_studies_content-heading" data-nav-header="geology">Geology and history</a></h2>
 

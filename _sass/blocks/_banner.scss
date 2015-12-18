@@ -22,23 +22,6 @@
   text-align: center;
 }
 
-.banner-left {
-  display: none;
-  float: left;
-
-  @include respond-to(tiny-up) {
-    display: block;
-  }
-}
-
-.banner-right {
-  text-align: center;
-
-  @include respond-to(tiny-up) {
-    float: right;
-  }
-}
-
 .banner-image {
   padding-left: $base-padding-lite / 2;
   margin-bottom: -1px;

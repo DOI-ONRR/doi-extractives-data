@@ -29,6 +29,6 @@ permalink: /how-it-works/governance/
     <li><a href="{{ site.baseurl }}/how-it-works/state-laws-and-regulations/">Federal Laws and Reforms</a></li>
     <li><a href="{{ site.baseurl }}/how-it-works/state-laws-and-regulations/">State Laws and Regulations</a></li>
     <li><a href="{{ site.baseurl }}/how-it-works/state-laws-and-regulations/">Tribal Laws and Regulations</a></li>
-    <li><a href="{{ site.baseurl }}/how-it-works/governance/taxes/">Tax Expenditures</a></li>
+    <li><a href="{{ site.baseurl }}/how-it-works/revenues/tax-expenditures/">Tax Expenditures</a></li>
   </ul>
 </div>

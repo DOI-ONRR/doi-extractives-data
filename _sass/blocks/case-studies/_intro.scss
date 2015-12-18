@@ -34,11 +34,32 @@
 
 .case_studies_intro-select {
   max-width: 400px;
-  padding-top: $base-padding-lite;
   width: 100%;
+
+  label {
+    padding-bottom: $base-padding-lite;
+  }
 
   select {
     height: 40px;
+  }
+
+  &.desktop {
+    display: none;
+  }
+
+  &.mobile {
+    display: block;
+  }
+
+  @include respond-to(medium-up) {
+    &.desktop {
+      display: block;
+    }
+
+    &.mobile {
+      display: none;
+    }
   }
 }
 

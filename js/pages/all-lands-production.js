@@ -353,7 +353,9 @@
       .attr('class', 'value');
     selection.append('td')
       .attr('class', 'region-chart')
-      .append('eiti-bar');
+      .append(function() {
+        return new EITIBar(); // jshint ignore:line
+      });
   }
 
   function updateRegionRow(selection) {

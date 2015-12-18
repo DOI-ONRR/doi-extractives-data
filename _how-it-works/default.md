@@ -96,7 +96,7 @@ permalink: /how-it-works/
 			<button class="accordion-button" accordion-button title="Toggle for revenues"></button>
 			<div class="accordion-content">
 				<p class="landing-description">When companies extract natural resources on federal lands and offshore areas, they pay revenue to the federal government. The government distributes these funds for public use in a variety of ways.
-        <a href="{{site.baseurl}}/how-it-works/revenues/">Learn how revenues work &#8594;</a></p>
+        <a href="{{site.baseurl}}/how-it-works/revenues/">Learn how revenues work&nbsp;&#8594;</a></p>
 			</div>
 		</div>
 	</section>

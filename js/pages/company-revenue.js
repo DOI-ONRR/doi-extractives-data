@@ -1,5 +1,6 @@
+// globals d3, eiti, EITIBar
 (function() {
-  'use strict';
+  // 'use strict';
 
   var root = d3.select('#companies');
   var filterToggle = root.select('button.toggle-filters');
@@ -268,7 +269,10 @@
       .attr('class', 'value');
     selection.append('td')
       .attr('class', 'bar')
-      .append('eiti-bar');
+      .append(function() {
+        // XXX this is a document.registerElement() workaround
+        return new EITIBar(); // jshint ignore:line
+      });
   }
 
   function updateRevenueItem(selection, extent) {

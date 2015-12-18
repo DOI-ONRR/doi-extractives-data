@@ -1,4 +1,5 @@
 (function(exports) {
+  // 'use strict';
 
   /*
    * @namespace eiti
@@ -14,23 +15,17 @@
    *                              function
    * @param {Boolean?}  fresh     if truthy, don't load this file from the cache
    *
-   * @return Object a d3.xhr response (or -like) object with an `abort()` method.
+   * @return Object     a d3.xhr response (or -like) object with an
+   *                    `abort()` method.
    */
   eiti.load = (function() {
     var cache = d3.map();
 
     var loading = d3.map();
-    var loadIndex = 0;
 
     var loaders = {};
     ['csv', 'tsv', 'json'].forEach(function(type) {
-      var loader = loaders[type] = d3[type];
-      /*
-      d3[type] = function wrapped(url) {
-        console.info('d3.' + type + '(', url, ')', cache.get(url));
-        return loader.apply(this, arguments);
-      };
-      */
+      loaders[type] = d3[type];
     });
 
     var load = function(url, done, fresh) {
@@ -55,7 +50,9 @@
       req = loader.call(d3, url, function(error, data) {
         // console.log('loaded:', url);
         loading.remove(url);
-        if (!error) cache.set(url, data);
+        if (!error) {
+          cache.set(url, data);
+        }
         process(req.callbacks, error, data);
       });
 
@@ -82,8 +79,6 @@
         cb(error, data);
         if (callbacks.length) {
           window.requestAnimationFrame(next);
-        } else {
-          // console.log('all done!');
         }
       };
       return next();
@@ -104,7 +99,9 @@
     Object.keys(sources).forEach(function(key) {
       q.defer(function(next) {
         eiti.load(sources[key], function(error, data) {
-          if (error) return next(error);
+          if (error) {
+            return next(error);
+          }
           next(null, result[key] = data);
         });
       });
@@ -148,7 +145,9 @@
     keys.forEach(function(k) {
       nest.key(getter(k));
     });
-    if (rollup) nest.rollup(rollup);
+    if (rollup) {
+      nest.rollup(rollup);
+    }
     return nest.map(rows);
   };
 
@@ -239,7 +238,9 @@
      * });
      */
     tip.target = function(_) {
-      if (!arguments.length) return target;
+      if (!arguments.length) {
+        return target;
+      }
       target = d3.functor(_);
       return tip;
     };
@@ -249,7 +250,9 @@
       dispatch.show.apply(this, arguments);
       if (target) {
         var t = target ? target.apply(this, arguments) : null;
-        if (t) args = [].slice.call(args).concat([t]);
+        if (t) {
+          args = [].slice.call(args).concat([t]);
+        }
       }
       tip.attr('class', showClass);
       return show.apply(this, args);
@@ -301,7 +304,7 @@
    */
   eiti.util.extend = function(obj) {
     [].slice.call(arguments, 1).forEach(function(o) {
-      for (var key in o) {
+      for (var key in o) { /* jshint -W089 */
         obj[key] = o[key];
       }
     });
@@ -400,7 +403,9 @@
    */
   eiti.format.range = function(format, glue) {
     format = eiti.format(format);
-    if (!glue) glue = ' – ';
+    if (!glue) {
+      glue = ' – ';
+    }
     return function(range) {
       range = range.map(function(d, i) {
         var str = format(d);
@@ -507,8 +512,12 @@
   };
 
   function getter(key) {
-    if (typeof key === 'function') return key;
-    return function(d) { return d[key]; };
+    if (typeof key === 'function') {
+      return key;
+    }
+    return function(d) {
+      return d[key];
+    };
   }
 
   /*
@@ -520,7 +529,7 @@
     var add = [];
     var remove = [];
 
-    var classify = function() {
+    var classify = function() { // jshint ignore:line
       var classes = this.classList;
       if (add && add.length) {
         add.forEach(function(klass) {
@@ -533,16 +542,20 @@
         });
       }
       return this.className;
-    }
+    };
 
     classify.add = function(_) {
-      if (!arguments.length) return add;
+      if (!arguments.length) {
+        return add;
+      }
       add = Array.isArray(_) ? _ : [_];
       return classify;
     };
 
     classify.remove = function(_) {
-      if (!arguments.length) return remove;
+      if (!arguments.length) {
+        return remove;
+      }
       remove = Array.isArray(_) ? _ : [_];
       return classify;
     };
@@ -613,7 +626,9 @@
             break;
           default:
             var num = +value;
-            if (!isNaN(num)) value = num;
+            if (!isNaN(num)) {
+              value = num;
+            }
         }
         query[key] = value;
       });
@@ -624,7 +639,7 @@
     // querystring.format({foo: 'a', baz: 1}) -> '?foo=a&baz=1'
     qs.format = function(obj, separator, sortKeys) {
       var entries = [];
-      for (var key in obj) {
+      for (var key in obj) { /* jshint -W089 */
         var value = obj[key];
         if (obj.hasOwnProperty(key) &&
             (typeof value !== 'undefined') && value !== '') {
@@ -652,7 +667,7 @@
         if (typeof data === 'string') {
           data = qs.parse(data);
         }
-        for (var key in data) {
+        for (var key in data) { /* jshint -W089 */
           query[key] = data[key];
         }
         query = qs.format(query);
@@ -670,5 +685,48 @@
   function forEach(list, fn, context) {
     return Array.prototype.forEach.call(list, fn, context);
   }
+
+
+  /**
+   * CustomEvent polyfill via:
+   * <https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent/CustomEvent>
+   */
+  (function () {
+    try {
+      var e = new CustomEvent('foo'); // jshint ignore:line
+    } catch (error) {
+      function CustomEvent(event, params) {
+        params = params || {
+          bubbles: false,
+          cancelable: false,
+          detail: undefined
+        };
+        var evt = document.createEvent('CustomEvent');
+        evt.initCustomEvent(event, params.bubbles,
+                            params.cancelable, params.detail);
+        return evt;
+      }
+      CustomEvent.prototype = window.Event.prototype;
+      window.CustomEvent = CustomEvent;
+    }
+  })();
+
+
+  /**
+   * DOMTokenList::toggle() fix
+   *
+   * This addresses a bug in IE10+ in which DOMTokenList::toggle()
+   * doesn't respect the second argument, but just flips the class.
+   */
+  (function() {
+    var el = document.createElement('div');
+    el.classList.toggle('foo', false);
+    if (el.className === 'foo') {
+      DOMTokenList.prototype.toggle = function(klass, active) {
+        return this[active ? 'add' : 'remove'](klass);
+      };
+    }
+  })();
+
 
 })(this);

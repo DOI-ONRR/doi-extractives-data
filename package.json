@@ -13,6 +13,7 @@
     "d3": "^3.5.5",
     "data-expression": "^0.3.1",
     "datalib": "^1.1.16",
+    "document-register-element": "^0.5.3",
     "epipebomb": "^0.1.1",
     "express": "^4.12.4",
     "extend": "^2.0.0",

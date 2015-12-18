@@ -369,13 +369,17 @@
       .attr('class', 'value value_dollars');
     selection.append('td')
       .attr('class', 'bar bar_dollars')
-      .append('eiti-bar');
+      .append(function() {
+        return new EITIBar(); // jshint ignore:line
+      });
 
     selection.append('td')
       .attr('class', 'value value_share');
     selection.append('td')
       .attr('class', 'bar bar_share')
-      .append('eiti-bar')
+      .append(function() {
+          return new EITIBar(); // jshint ignore:line
+        })
         .attr('max', 1);
   }
 

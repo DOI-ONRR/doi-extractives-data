@@ -14,7 +14,7 @@ permalink: /about/report/
     </div>
 
     <h1>{{page.title}}</h1>
-    <p class="case_studies_intro-para">As part of fulfilling the international <a href="https://eiti.org/document/standard">EITI Standard</a>, the Independent Administrator worked with the <a href="https://www.doi.gov/eiti/FACA">Multi-stakeholder Group</a> to develop an Executive Summary of the USEITI 2015 Report.</p>
+    <p class="case_studies_intro-para">As part of fulfilling the international <a href="https://eiti.org/document/standard">EITI Standard</a>, the Independent Administrator worked with the <a href="https://www.doi.gov/eiti/FACA">Multi-Stakeholder Group</a> to develop an Executive Summary of the USEITI 2015 Report.</p>
 
     <p>This document, which you can download below, includes an overview of the contextual narrative and an account of the reporting and reconciliation process for the EITI Standard in the U.S.</p>
 

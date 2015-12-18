@@ -1,5 +1,6 @@
+// globals d3, eiti, EITIBar
 (function() {
-  'use strict';
+  // 'use strict';
 
   var root = d3.select('#companies');
   var filterToggle = root.select('button.toggle-filters');
@@ -16,6 +17,22 @@
 
   var hash = eiti.explore.hash()
     .on('change', state.merge);
+
+  // buttons that expand and collapse other elements
+  var filterToggle = root.select('button.toggle-filters');
+
+  // FIXME: componentize these too
+  var filterParts = root.selectAll('a[data-key]');
+  filterParts.on('click', function(e, index) {
+    var key = filterParts[0][index].getAttribute('data-key');
+    if (key) {
+      root.select('.filters-wrapper').attr('aria-expanded', true);
+      filterToggle.attr('aria-expanded', true);
+      root.select('.filter-description_closed').attr('aria-expanded', true);
+      document.querySelector('#'+ key + '-selector').focus();
+    }
+    d3.event.preventDefault();
+  });
 
   var model = eiti.explore.model(eiti.data.path + 'company/revenue.tsv')
     .transform(removeRevenueTypePrefix)
@@ -252,7 +269,10 @@
       .attr('class', 'value');
     selection.append('td')
       .attr('class', 'bar')
-      .append('eiti-bar');
+      .append(function() {
+        // XXX this is a document.registerElement() workaround
+        return new EITIBar(); // jshint ignore:line
+      });
   }
 
   function updateRevenueItem(selection, extent) {

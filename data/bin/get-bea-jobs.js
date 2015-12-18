@@ -37,7 +37,7 @@ var lineCodes = {
 
 var tables = {
   total:    'SA25N', // "Total Full-Time and Part-Time Employment by NAICS Industry"
-  subtotal: 'SA27N', // "Full-Time and Part-Time Wage and Salary Employment by NAICS Industry"
+  wageSalary: 'SA27N', // "Full-Time and Part-Time Wage and Salary Employment by NAICS Industry"
 };
 
 var params = {
@@ -64,10 +64,27 @@ var parser = function() {
   });
 };
 
-var tableIds = [tables.total, tables.subtotal];
+var configs = {
+  allTotal: {
+    TableName: tables.total,
+    LineCode: lineCodes.total
+  },
+  allMining: {
+    TableName: tables.total,
+    LineCode: lineCodes.mining
+  },
+  subMining: {
+    TableName: tables.wageSalary,
+    LineCode: lineCodes.mining
+  }
+};
 
-async.mapSeries(tableIds, function(table, next) {
-  params.TableName = table;
+async.mapSeries([
+  configs.allTotal,
+  configs.allMining,
+  configs.subMining
+], function(config, next) {
+  var p = extend({}, params, config);
 
   var rows = [];
   var done = function(error) {
@@ -75,7 +92,7 @@ async.mapSeries(tableIds, function(table, next) {
     next(null, rows);
   };
 
-  fetch(params)
+  fetch(p)
     .on('error', done)
     .pipe(parser())
     .on('data', function(row) {
@@ -92,8 +109,20 @@ async.mapSeries(tableIds, function(table, next) {
   console.warn('got %d sets', sets.length);
 
   sets[0].forEach(function(d) {
-    d.Total = d.Value;
+    d.Overall = d.Value;
+    d.Industry = 0;
     d.Value = 0;
+  });
+
+  sets[1].forEach(function(d) {
+    d.Overall = 0;
+    d.Industry = d.Value;
+    d.Value = 0;
+  });
+
+  sets[2].forEach(function(d) {
+    d.Overall = 0;
+    d.Industry = 0;
   });
 
   var rows = sets.reduce(function(list, set) {
@@ -102,18 +131,23 @@ async.mapSeries(tableIds, function(table, next) {
 
   var keys = ['Region', 'Year'];
   var result = util.group(rows, keys, function(group) {
-    var total = 0;
-    var actual = 0;
+    var overall = 0;
+    var industry = 0;
+    var wageSalary = 0;
 
     group.values.forEach(function(d) {
-      total += coerceNumber(d.Total);
-      actual += coerceNumber(d.Value);
+      overall += coerceNumber(d.Overall);
+      industry += coerceNumber(d.Industry);
+      wageSalary += coerceNumber(d.Value);
     });
 
+    var selfEmployed = industry - wageSalary;
     return {
-      Total: total,
-      Actual: actual,
-      Value: total - actual,
+      // Overall: overall,
+      // Industry: industry,
+      // WageSalary: wageSalary,
+      Jobs: selfEmployed,
+      Share: (selfEmployed / overall).toFixed(4)
     };
   })
   .map(function(entry) {

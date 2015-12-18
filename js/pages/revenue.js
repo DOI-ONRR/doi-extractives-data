@@ -24,10 +24,17 @@
   var filterToggle = root.select('button.toggle-filters');
 
   // FIXME: componentize these too
-  root.selectAll('a[data-key]')
-    .on('click', function() {
-      d3.event.preventDefault();
-    });
+  var filterParts = root.selectAll('a[data-key]');
+  filterParts.on('click', function(e, index) {
+    var key = filterParts[0][index].getAttribute('data-key');
+    if (key) {
+      root.select('.filters-wrapper').attr('aria-expanded', true);
+      filterToggle.attr('aria-expanded', true);
+      root.select('.filter-description_closed').attr('aria-expanded', true);
+      document.querySelector('#'+ key + '-selector').focus();
+    }
+    d3.event.preventDefault();
+  });
 
   // get the filters and add change event handlers
   var filters = root.selectAll('.filters [name]')
@@ -292,7 +299,9 @@
       .attr('class', 'value');
     selection.append('td')
       .attr('class', 'bar')
-      .append('eiti-bar');
+      .append(function() {
+        return new EITIBar(); // jshint ignore:line
+      });
   }
 
   function updateRegionRow(selection) {

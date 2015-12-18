@@ -24,7 +24,7 @@ permalink: /explore/corporate-income-tax/
 
     <p>SOI presents the data in various ways for corporations, including by size, type of return, and sector or industry. The data by sector or industry is aggregated by <span class="term term-p" data-term="NAICS" title="Click to define" tabindex="0">NAICS<i class="icon-book"></i></span> industrial sectors, and then further by major and minor industry classifications. The total federal income tax liability reported by industry should be interpreted with care because industry classification of companies with multiple lines of business are classified into an industry category based on the taxpayer’s determination of the business activity from which it derives the highest percentage of its total receipts.</p>
 
-    <h4>Corporate income tax receipts (in millions USD)</h4>
+    <h4>Corporate income tax receipts</h4>
 
     <p>SOI’s calculations of federal corporate income tax receipts from all returns in the mining and petroleum refining sectors for <a href="https://www.irs.gov/uac/SOI-Tax-Stats-Returns-of-Active-Corporations-Table-1">tax years 2009 to 2013</a> are presented below.<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup></p>
 

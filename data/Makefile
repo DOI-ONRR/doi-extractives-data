@@ -305,6 +305,10 @@ county/production.tsv: $(input)onrr/regional-production.tsv
 			--in-states $(input)geo/states.csv \
 		| tito --write tsv > $@
 
+# all lands production (state-level)
+# run
+# `make -B production/all-production.tsv`
+# will compile to production/all-production.tsv
 production/all-production.tsv:
 	mkdir -p $(dir $@)
 	bin/group-all-production.js \
@@ -315,6 +319,10 @@ production/all-production.tsv:
 		--renewables $(input)eia/commodity/renewables.tsv \
 		> $@
 
+# all lands production (county-level and state-level)
+# run
+# `make -B production/coal-county-all-production.tsv`
+# will compile to production/coal-county-all-production.tsv
 production/coal-county-all-production.tsv:
 	mkdir -p $(dir $@)
 	bin/group-all-production.js \
@@ -326,6 +334,11 @@ production/coal-county-all-production.tsv:
 		--renewables $(input)eia/commodity/renewables.tsv \
 		> $@
 
+# breaks all lands production data down by-state
+# run
+# `make -B county-all-lands-production-by-state.tsv`
+# will compile to county/by-state/{{ State }}/all-production.tsv
+# where State is the value in County, production/coal-county-all-production.tsv
 county-all-lands-production-by-state.tsv: production/coal-county-all-production.tsv
 	$(tito) --read tsv $< \
 		| bin/divvy.js \

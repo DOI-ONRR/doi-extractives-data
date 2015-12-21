@@ -1,5 +1,5 @@
 ---
-title: Case Studies – Home
+title: Overview | Case Studies
 layout: case-studies
 permalink: /case-studies/
 nav_items:
@@ -18,6 +18,10 @@ nav_items:
 <h1 class="case_studies_intro-heading">How do extractive industries impact communities like mine?</h1>
 
 <p class="case_studies_intro-para">This section includes twelve case studies that provide a snapshot of communities that have led the U.S. in producing oil, gas, coal, gold, iron, or copper over the last decade. These case studies shed light on the economic and fiscal effects of oil, gas, and mineral extraction on local communities.</p>
+
+{% include case-studies/_selector.html screen="mobile" %}
+
+{% include case-studies/_maps.html screen="mobile" %}
 
 <h2 class="h3"><a name="intro" class="case_studies_content-heading" data-nav-header="intro">Overview</a></h2>
 

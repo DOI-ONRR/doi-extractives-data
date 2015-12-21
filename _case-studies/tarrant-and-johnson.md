@@ -1,5 +1,5 @@
 ---
-title: Tarrant and Johnson Counties, Texas
+title: Tarrant and Johnson Counties, Texas | Case Studies
 layout: case-studies
 permalink: /case-studies/tarrant-and-johnson/
 resource: gas
@@ -23,6 +23,10 @@ nav_items:
 <h1 class="h3"><a name="intro" class="case_studies_content-heading" data-nav-header="intro">{{ page.title }}</a></h1>
 
 Texas leads the country in natural gas production, generating more gas annually than the next three highest-producing states combined (Louisiana, Oklahoma, and Wyoming).[^1] Tarrant and Johnson counties contribute significantly to Texas’s natural gas production due to their geographic positioning atop the rich reserves of the Barnett Shale field in the Bend Arch-Fort Worth Basin.
+
+{% include case-studies/_selector.html screen="mobile" %}
+
+{% include case-studies/_maps.html screen="mobile" %}
 
 <h2 class="h3"><a name="geology" class="case_studies_content-heading" data-nav-header="geology">Geology and history</a></h2>
 

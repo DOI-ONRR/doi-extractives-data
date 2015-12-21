@@ -1,5 +1,5 @@
 ---
-title: DeSoto Parish, Louisiana
+title: DeSoto Parish, Louisiana | Case Studies
 layout: case-studies
 permalink: /case-studies/desoto/
 resource: gas
@@ -23,6 +23,10 @@ nav_items:
 <h1 class="h3"><a name="intro" class="case_studies_content-heading" data-nav-header="intro">{{ page.title }}</a></h1>
 
 For years, natural gas production in the Haynesville Shale in the southern U.S. was too difficult and costly. However, in the mid- to late-2000s, advances in <span class="term term-p" data-term="hydraulic fracturing" title="Click to define" tabindex="0">hydraulic fracturing<i class="icon-book"></i></span> and horizontal drilling techniques, as well as rising natural gas prices, made extracting natural gas in the region both technically feasible and profitable for the extractive industries.
+
+{% include case-studies/_selector.html screen="mobile" %}
+
+{% include case-studies/_maps.html screen="mobile" %}
 
 <h2 class="h3"><a name="geology" class="case_studies_content-heading" data-nav-header="geology">Geology and history</a></h2>
 

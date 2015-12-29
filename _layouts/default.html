@@ -58,43 +58,17 @@
 
 
     <!-- 3rd party dependencies -->
-    <script src="{{ site.baseurl }}/js/vendor/d3.v3.min.js"></script>
-    <script src="{{ site.baseurl }}/js/vendor/queue.v1.min.js"></script>
-    <script src="{{ site.baseurl }}/js/vendor/topojson.v1.min.js"></script>
-    <script src="{{ site.baseurl }}/js/vendor/datalib.min.js"></script>
-    <script src="{{ site.baseurl }}/js/vendor/colorbrewer.js"></script>
-    <script src="{{ site.baseurl }}/js/vendor/jquery.min.js"></script>
 
-    <!-- custom map projection -->
-    <script src="{{ site.baseurl }}/js/albers-custom.js"></script>
-
-    <!-- EITI libs -->
 
 
     <script type="text/javascript" src="{{ site.baseurl }}/js/bundle.min.js" charset="utf-8"></script>
 
-<!-- <script src="{{ site.baseurl }}/js/eiti.js"></script> -->
     <script>
-    console.log('==', window)
+    console.log('==', window, '++', eiti)
+      eiti.data = eiti.data || {};
       eiti.data.path = '{{ site.baseurl }}/data/';
       eiti.commodities = ({{ site.data.commodities|jsonify }});
       eiti.resource = ({{ site.data.resource|jsonify }});
-    </script>
-    <!-- Glossary -->
-    <script src="{{ site.baseurl }}/js/vendor/lodash.min.js"></script>
-    <script src="{{ site.baseurl }}/js/vendor/list.min.js"></script>
-
-    <!-- Google Analytics -->
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-48605964-8', 'auto');
-      ga('set', 'anonymizeIp', true);
-      ga('set', 'forceSSL', true);
-      ga('send', 'pageview');
     </script>
 
   </head>
@@ -113,7 +87,6 @@
 
     {% include layout/footer.html %}
 
-    <script src="{{ site.baseurl }}/js/components/glossary.js"></script>
     {{ page.script }}
 
     <!-- Digital Analytics Program roll-up, see the data at https://analytics.usa.gov -->

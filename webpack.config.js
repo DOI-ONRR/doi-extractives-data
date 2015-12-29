@@ -1,5 +1,4 @@
 var webpack = require("webpack");
-// webpack.optimize.CommonsChunkPlugin;
 var minify = process.env.NODE_ENV !== 'dev';
 module.exports = {
 

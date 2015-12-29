@@ -213,8 +213,6 @@
           })
           .map(data);
 
-        // console.log('data by feature id:', dataByFeatureId);
-
         var featureId = getter(fields.featureId);
         features.forEach(function(f) {
           var id = featureId(f);

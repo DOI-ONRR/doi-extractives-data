@@ -1,10 +1,12 @@
+
 (function(exports) {
-  // 'use strict';
+  'use strict';
 
   /*
    * @namespace eiti
    */
-  var eiti = exports.eiti = {};
+
+  var eiti = window.eiti = exports.eiti = {};
 
   /**
    * Load a URL by inferring its data type based on the extension (.csv, .tsv,
@@ -728,5 +730,5 @@
     }
   })();
 
-
 })(this);
+

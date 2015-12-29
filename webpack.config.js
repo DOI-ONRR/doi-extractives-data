@@ -4,12 +4,12 @@ var minify = process.env.NODE_ENV !== 'dev';
 module.exports = {
 
   entry: {
-  	'bundle.min': "./js/main.js",
+  	'main.min': "./js/main.js",
   	'narrative.min': "./js/narrative.js"
   },
   devtool: "source-map",
   output: {
-    path: "./js",
+    path: "./js/lib",
     filename: "[name].js",
     chunkFilename: "[id].js"
   },

@@ -223,7 +223,6 @@
 
         var value = getter('value');
         var values = features.map(value);
-
         var scale = createScale(values);
 
         subregions.style('fill', function(d) {

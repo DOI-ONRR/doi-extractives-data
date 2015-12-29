@@ -1,6 +1,3 @@
----
-# Jekyll front matter lives here.
----
 /**
  * Utilities for setting or removing tabindex on all focusable elements
  * in a parent div. Useful for hiding elements off-canvas without setting

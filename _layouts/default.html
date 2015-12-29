@@ -56,6 +56,7 @@
     <!-- Scripts
     ================================================== -->
 
+
     <!-- 3rd party dependencies -->
     <script src="{{ site.baseurl }}/js/vendor/d3.v3.min.js"></script>
     <script src="{{ site.baseurl }}/js/vendor/queue.v1.min.js"></script>
@@ -68,20 +69,17 @@
     <script src="{{ site.baseurl }}/js/albers-custom.js"></script>
 
     <!-- EITI libs -->
-    <script src="{{ site.baseurl }}/js/eiti.js"></script>
+
+
+    <script type="text/javascript" src="{{ site.baseurl }}/js/bundle.min.js" charset="utf-8"></script>
+
+<!-- <script src="{{ site.baseurl }}/js/eiti.js"></script> -->
     <script>
+    console.log('==', window)
       eiti.data.path = '{{ site.baseurl }}/data/';
       eiti.commodities = ({{ site.data.commodities|jsonify }});
       eiti.resource = ({{ site.data.resource|jsonify }});
     </script>
-
-    <!-- custom elements -->
-    <script src="{{ site.baseurl }}/js/vendor/document-register-element.js"></script>
-    <script src="{{ site.baseurl }}/js/components/eiti-map.js"></script>
-    <script src="{{ site.baseurl }}/js/components/eiti-slider.js"></script>
-    <script src="{{ site.baseurl }}/js/components/eiti-toggle.js"></script>
-    <script src="{{ site.baseurl }}/js/components/search.js"></script>
-
     <!-- Glossary -->
     <script src="{{ site.baseurl }}/js/vendor/lodash.min.js"></script>
     <script src="{{ site.baseurl }}/js/vendor/list.min.js"></script>

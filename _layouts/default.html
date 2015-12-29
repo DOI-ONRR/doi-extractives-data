@@ -55,16 +55,9 @@
 
     <!-- Scripts
     ================================================== -->
-
-
-    <!-- 3rd party dependencies -->
-
-
-
     <script type="text/javascript" src="{{ site.baseurl }}/js/bundle.min.js" charset="utf-8"></script>
 
     <script>
-    console.log('==', window, '++', eiti)
       eiti.data = eiti.data || {};
       eiti.data.path = '{{ site.baseurl }}/data/';
       eiti.commodities = ({{ site.data.commodities|jsonify }});

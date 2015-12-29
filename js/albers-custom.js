@@ -171,7 +171,7 @@
   };
 
   if (typeof module === 'object') {
-    module.exports = albersCustom;
+    module.exports = d3.geo.albersCustom = albersCustom;
   } else {
     d3.geo.albersCustom = albersCustom;
   }

@@ -1,5 +1,5 @@
 var webpack = require("webpack");
-var minify = false;
+var minify = process.env.NODE_ENV !== 'dev';
 module.exports = {
 
   entry: "./js/main.js",
@@ -9,6 +9,6 @@ module.exports = {
     filename: "bundle.min.js"
   },
   plugins: minify ? [
-    new webpack.optimize.UglifyJsPlugin({minimize: false})
+    new webpack.optimize.UglifyJsPlugin({minimize: true})
   ] : []
 };

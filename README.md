@@ -22,12 +22,19 @@ The [data catalog](https://github.com/18F/doi-extractives-data/wiki/Data-Catalog
 This site is made with [Jekyll]. To run it locally, clone this repository then:
 
 1. Get [Jekyll] and the necessary dependencies: `bundle install`
+1. Install all node dependencies: `npm install`
+1. Set the $NODE_ENV to `dev`: `export NODE_ENV=dev`
+1. Package js files with webpack: `webpack --watch`
 1. Run the web server: `bundle exec jekyll serve` (or just `jekyll serve` if you have Jekyll installed globally)
 1. Visit the local site at [http://localhost:4000](http://localhost:4000)
 
 ## Deployment
 This site is deployed on [Federalist](https://federalist.18f.gov), and will one day be deployed automatically whenever commits are pushed to the `master` branch. For now, see the [preview URLs wiki page](https://github.com/18F/doi-extractives-data/wiki/Preview-urls) for more information.
 
+If deploying the site to a production environment, make sure to minify the JS files:
+1. Set the $NODE_ENV to `prod`: `export NODE_ENV=prod`
+1. Package js files with webpack: `webpack --watch`
+1. Re-run the web server: `bundle exec jekyll serve`
 
 ## Styleguide
 ```sh

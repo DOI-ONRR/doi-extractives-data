@@ -6,7 +6,7 @@
    * @namespace eiti
    */
 
-  var eiti = window.eiti = exports.eiti = {};
+  var eiti = module.exports = {};
 
   /**
    * Load a URL by inferring its data type based on the extension (.csv, .tsv,

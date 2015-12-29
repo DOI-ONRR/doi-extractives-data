@@ -1,6 +1,5 @@
 // globals d3
 (function(exports) {
-  console.log('eiti-sllider',exports)
 
   exports.EITISlider = registerElement('eiti-slider', {
     createdCallback: function() {
@@ -251,5 +250,4 @@
     else if (x > max) return max;
     return x;
   }
-  console.log('post-slide',exports)
 })(this);

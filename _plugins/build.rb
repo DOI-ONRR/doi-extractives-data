@@ -8,4 +8,5 @@ else
 	ENV["NODE_ENV"] = 'dev'
 end
 
-npm webpack
+# npm run webpack
+`npm run webpack`

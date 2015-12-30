@@ -6,5 +6,5 @@ if production
 	ENV["NODE_ENV"] = 'prod'
 else
 	ENV["NODE_ENV"] = 'dev'
-
+end
 npm run webpack

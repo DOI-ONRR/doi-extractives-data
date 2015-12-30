@@ -3,9 +3,9 @@ var webpack = require('webpack'),
 module.exports = {
 
   entry: {
-  	'main.min': './js/main.js',
-  	'narrative.min': './js/narrative.js',
-  	'explore.min': './js/explore.js',
+  	'main.min': './js/src/main.js',
+  	'narrative.min': './js/src/narrative.js',
+  	'explore.min': './js/src/explore.js',
   },
   devtool: 'source-map',
   output: {

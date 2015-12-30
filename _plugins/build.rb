@@ -1,4 +1,4 @@
-# npm install
+npm install
 
 # production = ENV["BRANCH"] === 'master' or ENV["BRANCH"] === 'staging'
 

@@ -1,4 +1,5 @@
 (function(exports) {
+  // 'use strict';
 
   var renderId = '__render_id';
   var EPSILON = .5;
@@ -141,5 +142,7 @@
   function identity(d) {
     return d;
   }
+
+  module.exports = exports.EITIBar;
 
 })(this);

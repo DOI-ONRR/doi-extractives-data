@@ -1,3 +1,4 @@
+$( document ).ready(function() {
 // ARIA Tab Interface
 // Thanks to Practical ARIA Examples
 // http://heydonworks.com/practical_aria_examples/#tab-interface
@@ -124,5 +125,7 @@ $('[role="tab"]').on('click', function(e) {
 
   $('#' + $(this).attr('href').substring(1))
     .attr('aria-hidden', null);
+
+});
 
 });

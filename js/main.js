@@ -2,30 +2,30 @@
 // http://webpack.github.io/docs/commonjs.html
 
 // 3rd party dependencies
-d3 = require("./vendor/d3.v3.min");
-queue = require("./vendor/queue.v1.min");
-topojson = require("./vendor/topojson.v1.min");
-datalib = require("./vendor/datalib.min");
-colorbrewer = require("./vendor/colorbrewer");
-$ = jQuery = require("./vendor/jquery.min");
+d3 = require('./vendor/d3.v3.min');
+queue = require('./vendor/queue.v1.min');
+topojson = require('./vendor/topojson.v1.min');
+datalib = require('./vendor/datalib.min');
+colorbrewer = require('./vendor/colorbrewer');
+$ = jQuery = require('./vendor/jquery.min');
 
 // Custom map projection
-albersCustom = require("./albers-custom");
+albersCustom = require('./albers-custom');
 
 // EITI
-eiti = require("./eiti");
+eiti = require('./eiti');
 
 // custom elements
-registerElement = require("./vendor/document-register-element");
-EITIMap = require("./components/eiti-map");
-EITISlider = require("./components/eiti-slider");
-EITIToggle = require("./components/eiti-toggle");
-require("./components/search");
+registerElement = require('./vendor/document-register-element');
+EITIMap = require('./components/eiti-map');
+EITISlider = require('./components/eiti-slider');
+EITIToggle = require('./components/eiti-toggle');
+require('./components/search');
 
 // Glossary
-_ = require("./vendor/lodash.min");
-List = require("./vendor/list.min");
-require("./components/glossary");
+_ = require('./vendor/lodash.min');
+List = require('./vendor/list.min');
+require('./components/glossary');
 
 // Google Analytics
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

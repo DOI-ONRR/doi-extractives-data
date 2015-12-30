@@ -6,6 +6,7 @@ module.exports = {
   	'main.min': './js/src/main.js',
   	'narrative.min': './js/src/narrative.js',
   	'explore.min': './js/src/explore.js',
+  	'homepage.min': './js/src/homepage.js',
   },
   devtool: 'source-map',
   output: {

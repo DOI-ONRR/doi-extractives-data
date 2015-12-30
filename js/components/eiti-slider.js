@@ -250,4 +250,8 @@
     else if (x > max) return max;
     return x;
   }
+
+  var module = module || {};
+  module.exports = exports.EITISlider;
+
 })(this);

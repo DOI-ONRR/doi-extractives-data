@@ -506,4 +506,6 @@
     return topojson.feature(topology, obj).features;
   }
 
+  module.exports = exports.EITIMap;
+
 })(this);

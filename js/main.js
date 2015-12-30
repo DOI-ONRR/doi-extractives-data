@@ -16,10 +16,10 @@ albersCustom = require("./albers-custom");
 eiti = require("./eiti");
 
 // custom elements
-require("./vendor/document-register-element");
-require("./components/eiti-map");
-require("./components/eiti-slider");
-require("./components/eiti-toggle");
+registerElement = require("./vendor/document-register-element");
+EITIMap = require("./components/eiti-map");
+EITISlider = require("./components/eiti-slider");
+EITIToggle = require("./components/eiti-toggle");
 require("./components/search");
 
 // Glossary

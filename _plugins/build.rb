@@ -1,4 +1,4 @@
-`npm install`
+
 
 production = ENV["BRANCH"] === 'master' or ENV["BRANCH"] === 'staging'
 
@@ -8,4 +8,4 @@ else
 	ENV["NODE_ENV"] = 'dev'
 end
 
-`npm webpack`
+`npm install`

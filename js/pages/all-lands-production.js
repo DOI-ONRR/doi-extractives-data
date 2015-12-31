@@ -859,8 +859,16 @@
          : 'All');
     }
 
+    var product = state.get('product');
+    if (product) {
+      product = product.replace(/\s+\(.+\)\s*$/, '');
+    } else {
+      product = 'All';
+    }
+
     var data = {
       commodity: commodity,
+      product: product,
       region: REGION_ID_NAME[state.get('region') || 'US'],
       year: state.get('year')
     };

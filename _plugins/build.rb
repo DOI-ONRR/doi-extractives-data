@@ -2,6 +2,7 @@
 
 production = ENV['BRANCH'] == 'master' or ENV['BRANCH'] == 'staging' or ENV['BRANCH'] == 'js-optimization'
 
-ENV['NODE_ENV'] = if production then 'prod' else 'dev' end
+# ENV['NODE_ENV'] = if production then 'prod' else 'dev' end
+ENV['NODE_ENV'] = 'prod'
 
 `npm webpack`

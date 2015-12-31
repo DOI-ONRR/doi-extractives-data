@@ -6,7 +6,10 @@
   "directories": {
     "test": "test"
   },
-  "dependencies": {},
+  "dependencies": {
+    "about-yml-validator": "git+https://github.com/18F/about-yml-npm.git",
+    "webpack": "*"
+    },
   "devDependencies": {
     "async": "^0.9.0",
     "cfenv": "*",
@@ -37,9 +40,12 @@
     "webpack-dev-server": "*",
     "yargs": "^3.7.1"
   },
+  "engines": {
+    "node": ">=0.12.7"
+  },
   "scripts": {
     "test": "mocha",
-    "install": "webpack",
+    "webpack": "webpack",
     "watch": "watchy -w '_sass' -- npm run build-styleguide",
     "build-styleguide": "rm -rf styleguide && kss-node --config kss-config.json && cd styleguide-template/ && npm run less",
     "init-styleguide": "npm-exec kss-node --config kss-config.json",

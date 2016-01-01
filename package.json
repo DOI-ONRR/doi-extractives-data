@@ -9,7 +9,7 @@
   "dependencies": {
     "about-yml-validator": "git+https://github.com/18F/about-yml-npm.git",
     "webpack": "*"
-    },
+  },
   "devDependencies": {
     "async": "^0.9.0",
     "colors": "^1.1.0",

@@ -4,4 +4,4 @@ production = ENV['BRANCH'] == 'master' or ENV['BRANCH'] == 'staging' or ENV['BRA
 
 ENV['NODE_ENV'] = if production then 'prod' else 'dev' end
 
-`webpack`
+`npm run webpack`

@@ -1,6 +1,6 @@
 var webpack = require('webpack'),
 	minify = process.env.NODE_ENV !== 'dev';
-  minify = true;
+
 module.exports = {
 
   entry: {

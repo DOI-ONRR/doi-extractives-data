@@ -1,7 +1,12 @@
-# `npm install`
+Jekyll::Hooks.register :site, :pre_render do |site|
+    # TODO: remove 'js-optimization'
+    production_branches = ['master', 'staging', 'js-optimization']
+    branch = ENV['BRANCH']
 
-# production = ENV['BRANCH'] == 'master' or ENV['BRANCH'] == 'staging' or ENV['BRANCH'] == 'js-optimization'
-
-# ENV['NODE_ENV'] = if production then 'prod' else 'dev' end
-
-
+    if production_branches.include?(branch)
+        puts '[build.rb] webpacking for production'
+        `npm install && npm run webpack`
+    else
+        puts '[build.rb] not webpacking'
+    end
+end

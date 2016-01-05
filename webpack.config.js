@@ -1,9 +1,11 @@
 var webpack = require('webpack');
-var minify = process.env.NODE_ENV !== 'dev';
+var branch = process.env.BRANCH;
+var minifyBranches = ['master', 'staging', 'js-optimization'];
 
 var plugins = [];
-if (minify) {
-  plugins.push(new webpack.optimize.UglifyJsPlugin({minimize: true}));
+if (minifyBranches.indexOf(branch) > -1) {
+  var uglify = new webpack.optimize.UglifyJsPlugin({minimize: true});
+  plugins.push(uglify);
 }
 
 module.exports = {

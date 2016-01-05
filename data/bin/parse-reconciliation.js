@@ -17,7 +17,6 @@ var tito = require('tito').formats;
 var util = require('../../lib/util');
 var async = require('async');
 var streamify = require('stream-array');
-var extend = require('extend');
 var parse = require('../../lib/parse');
 
 
@@ -33,13 +32,13 @@ var types = [
   'Renewables',
   'AML Fees',
   'OSMRE Civil Penalties',
-  'Corporate Income Tax Company'
+  'Corporate Income Tax',
 ];
 
 String.prototype.regex = function(str) {
   str = str || this.slice(0, this.length);
-  return new RegExp(str, "g");
-}
+  return new RegExp(str, 'g');
+};
 
 var parseValue = function (value, unit) {
   if (value.match(/DNP/) || value.match(/DNR/) || value.match('N/A'.regex())) {
@@ -47,7 +46,7 @@ var parseValue = function (value, unit) {
   } else {
     return parse[unit](value);
   }
-}
+};
 
 async.waterfall([
   function load(done) {
@@ -59,47 +58,49 @@ async.waterfall([
       if (!d['Reporting Companies'] || d['Reporting Companies'] === 'Total Revenue' || d['Reporting Companies'] === 'Key') {
         return false;
       }
-      return d
+      return d;
     });
     console.warn('matched commodities for %d rows', rows.length);
     return done(null, rows);
   },
   function tweak(rows, done) {
     if (!rows.length) {
-      // console.warn('WARNING: zero rows generated!');
       return done(null, rows);
     }
 
     var result = [];
 
-    rows.forEach(function(d, i) {
+    rows.forEach(function(d) {
       types.forEach(function(type) {
-        if (type === 'Corporate Income Tax Company') {
-          result.push({
-            'Company': d['Reporting Companies'],
-            'Type':  type,
-            'Government Reported': 0,
-            'Company Reported': parseValue(d[type],'dollars'),
-            'Variance Dollars': 0,
-            'Variance Percent': 0
-          });
-        } else {
+          var gov = parseValue(d[type + ' Government'], 'dollars');
+          var company = parseValue(d[type + ' Company'], 'dollars');
+
+          var isPos = typeof(company) == 'number'
+            ? (gov - company) >= 0
+            : true;
+
           result.push({
             'Company': d['Reporting Companies'],
             'Type': type,
-            'Government Reported': parseValue(d[type + ' Government'], 'dollars'),
-            'Company Reported': parseValue(d[type + ' Company'], 'dollars'),
-            'Variance Dollars': parseValue(d[type + ' Variance $'], 'dollars'),
-            'Variance Percent': parseValue(d[type + ' Variance %'], 'percent')
+            'Government Reported': gov,
+            'Company Reported': company,
+            'Variance Dollars': isPos
+               ? parseValue(d[type + ' Variance $'], 'dollars')
+               : -1 * parseValue(d[type + ' Variance $'], 'dollars'),
+            'Variance Percent': isPos
+             ? parseValue(d[type + ' Variance %'], 'percent')
+             : parseValue(d[type + ' Variance %'], 'percent')
+
           });
-        }
       });
     });
-    // console.warn(result)
+
     done(null, result);
   }
 ], function(error, rows) {
-  if (error) return console.error('error:', error);
+  if (error) {
+    return console.error('error:', error);
+  }
 
   var out = fs.createWriteStream(options.o);
   streamify(rows)

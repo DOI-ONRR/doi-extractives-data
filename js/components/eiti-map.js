@@ -469,23 +469,6 @@
     return mesh;
   }
 
-  function extend(parent, proto) {
-    var constructor = document.createElement(parent).constructor;
-    for (var key in proto) {
-      if (typeof proto[key] === 'function') {
-        proto[key] = {value: proto[key]};
-      }
-    }
-    return Object.create(constructor.prototype, proto);
-  }
-
-  function assign(obj, keys) {
-    for (var key in keys) {
-      obj[key] = keys[key];
-    }
-    return obj;
-  }
-
   function is(node, name) {
     return node.nodeName.toLowerCase() === name
         || node.getAttribute('is') === name;

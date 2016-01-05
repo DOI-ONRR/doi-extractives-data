@@ -1,5 +1,6 @@
 # Sprint-HautyHagfish interview script
 
+**This is a work in progress, and at the moment is copied from an earlier script. Do not use yet.**
 
 ## Introductory comments
 

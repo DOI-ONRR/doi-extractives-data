@@ -1,5 +1,7 @@
 # Sprint-HautyHagfish research plan
 
+**This is a work in progress, and at the moment is copied from an earlier plan. Do not use yet.**
+
 ## Goals / Questions
 Goals | Questions
 :----- | :---------

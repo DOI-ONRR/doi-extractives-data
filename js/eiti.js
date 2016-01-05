@@ -1,12 +1,13 @@
-
 (function(exports) {
   'use strict';
+
+  var d3 = require('d3');
+  var queue = require('queue-async');
 
   /*
    * @namespace eiti
    */
-
-  var eiti = module.exports = {};
+  var eiti = exports;
 
   /**
    * Load a URL by inferring its data type based on the extension (.csv, .tsv,
@@ -667,5 +668,4 @@
     }
   })();
 
-})(this);
-
+})(module.exports);

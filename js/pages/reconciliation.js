@@ -2,7 +2,7 @@
 (function() {
   // 'use strict';
 
-  var root = d3.select('#companies');
+  var root = d3.select('#reconciliation');
   var filterToggle = root.select('button.toggle-filters');
   var revenueTypeList = root.select('#revenue-types');
   var companyList = root.select('#companies');
@@ -57,10 +57,13 @@
   var filters = root.selectAll('.filters [name]')
     .on('change', filterChange);
 
-  var search = root.select('#company-name-filter')
+  var search = root.select('#company-name-filter');
+  console.log('root',root)
+  search
     .on('keyup', updateNameSearch)
     .on('clear', filterChange)
     .on('change', filterChange);
+  console.log('elem',search)
 
   var initialState = hash.read();
 
@@ -79,7 +82,7 @@
       .sortValues(function(a, b) {
         return d3.descending(+a['Government Reported'], +b['Government Reported']);
       });
-    console.log('~~',grouper)
+    // console.log('~~',grouper)
 
     var hasCommodity = !!query.commodity;
     var hasType = !!query.type;
@@ -96,12 +99,11 @@
       }
 
       filters.each(function() {
-        console.log('filter',this)
         this.value = state.get(this.name) || '';
       });
 
       search.property('value', state.get('search') || '');
-
+      console.log(search, state.get('search'), search.property('value'))
       render(data, state);
     });
   }
@@ -129,11 +131,11 @@
   // }
 
   function updateRevenueTypeSelector(data) {
-    console.log('data',data)
+    // console.log('data',data)
     var commodities = d3.nest()
       .key(getter('type'))
       .entries(data)
-    console.log(commodities)
+    // console.log(commodities)
     commodities.map(getter('key'))
       .sort(d3.ascending);
     var input = root.select('#type-selector');
@@ -146,7 +148,7 @@
   }
 
   function updateRevenueTypes(data) {
-    console.log('=',data)
+    // console.log('=',data)
     var types = grouper.entries(data)
     console.log(types)
     types.map(function(d) {
@@ -167,7 +169,7 @@
       .entries(data)
       .map(function(d) {
         var total = d3.sum(d.values, getter('Government Reported'));
-        console.log(d)
+        // console.log(d)
         var obj = {
           name: d.key,
           total: total,
@@ -185,14 +187,14 @@
             }])
             */
         };
-        console.log('==>', obj)
+        // console.log('==>', obj)
         return obj
 
       });
-    console.log('c',companies)
+    // console.log('c',companies)
     var items = companyList.selectAll('tbody.company')
       .data(companies, getter('name'));
-    console.log(items)
+    // console.log(items)
     items.exit().remove();
 
     var enter = items.enter().append('tbody')
@@ -228,7 +230,7 @@
   }
 
   function renderSubtypes(selection, types, extent) {
-    console.log('hit', selection, types, extent)
+    // console.log('hit', selection, types, extent)
     var items = selection.selectAll('.subtype')
       .data(types, getter('name'));
 
@@ -240,13 +242,14 @@
     items
       .call(updateRevenueItem, extent)
       .sort(function(a, b) {
-        console.log(a,b)
+        // console.log(a,b)
         return d3.descending(a.value, b.value);
       });
   }
 
   function updateNameSearch() {
-    var query = search.property('value').toLowerCase();
+    console.log(search.property('value'))
+    var query = search.property('value').toLowerCase() || '';
     var items = companyList.selectAll('.company');
     if (query) {
       items
@@ -298,10 +301,10 @@
 
     selection.select('.value')
       .text(function(d) {
-        console.log('val',d)
+        // console.log('val',d)
         return formatNumber(d.value);
       });
-    console.log('s',getter('value'))
+    // console.log('s',getter('value'))
     var bar = selection.select('eiti-bar')
       .attr('value', getter('value'));
 

@@ -36,12 +36,12 @@
 
   var model = eiti.explore.model(eiti.data.path + 'reconciliation/revenue.tsv')
     .transform(removeRevenueTypePrefix)
-    .filter('commodity', function(data, commodity) {
-      console.log('filter', data, commodity)
-      return data.filter(function(d) {
-        return d.Commodity === commodity;
-      });
-    })
+    // .filter('commodity', function(data, commodity) {
+    //   // console.log('filter', data, commodity)
+    //   return data.filter(function(d) {
+    //     return d.Commodity === commodity;
+    //   });
+    // })
     .filter('type', function(data, type) {
       return data.filter(function(d) {
         return d.revenueType === type;
@@ -152,13 +152,13 @@
     var types = grouper.entries(data)
     console.log(types)
     types.map(function(d) {
-        // console.log(d)
+        console.log(d)
         return {
           name: d.key,
           value: d.values
         };
       });
-    // console.log('==>',types)
+    console.log('==>',types)
     var extent = d3.extent(types, getter('value'));
     revenueTypeList.call(renderSubtypes, types, extent);
   }
@@ -216,7 +216,7 @@
     items.select('.subtotal-label')
       .text(function(d) {
         console.log(d)
-        return d.types.length > 1 ? 'total' : '';
+        return d.types.length > 1 ? 'Government Reported' : '';
       });
 
     items.select('.subtotal')

@@ -57,10 +57,13 @@
   var filters = root.selectAll('.filters [name]')
     .on('change', filterChange);
 
-  var search = root.select('#company-name-filter')
+  var search = root.select('#company-name-filter');
+  console.log('root',root)
+  search
     .on('keyup', updateNameSearch)
     .on('clear', filterChange)
     .on('change', filterChange);
+  console.log('elem',search)
 
   var initialState = hash.read();
 
@@ -143,7 +146,7 @@
   }
 
   function updateRevenueTypes(data) {
-    console.log('=',data)
+    // console.log('=',data)
     var types = grouper.entries(data)
     console.log(types)
     types.map(function(d) {
@@ -165,7 +168,7 @@
       .entries(data)
       .map(function(d) {
         var total = d3.sum(d.values, getter('Government Reported'));
-        console.log(d)
+        // console.log(d)
         var obj = {
           name: d.key,
           total: total,
@@ -183,14 +186,14 @@
             }])
             */
         };
-        console.log('==>', obj)
+        // console.log('==>', obj)
         return obj
 
       });
-    console.log('c',companies)
+    // console.log('c',companies)
     var items = companyList.selectAll('tbody.company')
       .data(companies, getter('name'));
-    console.log(items)
+    // console.log(items)
     items.exit().remove();
 
     var enter = items.enter().append('tbody')
@@ -242,7 +245,8 @@
   }
 
   function updateNameSearch() {
-    var query = search.property('value').toLowerCase();
+    console.log(search.property('value'))
+    var query = search.property('value').toLowerCase() || '';
     var items = companyList.selectAll('.company');
     if (query) {
       items
@@ -294,10 +298,10 @@
 
     selection.select('.value')
       .text(function(d) {
-        console.log('val',d)
+        // console.log('val',d)
         return formatNumber(d.value);
       });
-    console.log('s',getter('value'))
+    // console.log('s',getter('value'))
     var bar = selection.select('eiti-bar')
       .attr('value', getter('value'));
 

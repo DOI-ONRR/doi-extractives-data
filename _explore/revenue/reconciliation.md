@@ -1,7 +1,7 @@
 ---
-title: Reconciliation | Explore Data
-layout: default
-permalink: /explore/reconciliation/
+<!-- title: Reconciliation | Explore Data -->
+<!-- layout: default -->
+<!-- permalink: /explore/reconciliation/ -->
 ---
 
 <div class="container-outer container-margin">

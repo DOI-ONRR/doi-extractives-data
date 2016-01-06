@@ -36,12 +36,12 @@
 
   var model = eiti.explore.model(eiti.data.path + 'reconciliation/revenue.tsv')
     .transform(removeRevenueTypePrefix)
-    // .filter('commodity', function(data, commodity) {
-    //   // console.log('filter', data, commodity)
-    //   return data.filter(function(d) {
-    //     return d.Commodity === commodity;
-    //   });
-    // })
+    .filter('commodity', function(data, commodity) {
+      console.log('filter', data, commodity)
+      return data.filter(function(d) {
+        return d.Commodity === commodity;
+      });
+    })
     .filter('type', function(data, type) {
       return data.filter(function(d) {
         return d.revenueType === type;
@@ -57,13 +57,10 @@
   var filters = root.selectAll('.filters [name]')
     .on('change', filterChange);
 
-  var search = root.select('#company-name-filter');
-  console.log('root',root)
-  search
+  var search = root.select('#company-name-filter')
     .on('keyup', updateNameSearch)
     .on('clear', filterChange)
     .on('change', filterChange);
-  console.log('elem',search)
 
   var initialState = hash.read();
 
@@ -82,7 +79,6 @@
       .sortValues(function(a, b) {
         return d3.descending(+a['Government Reported'], +b['Government Reported']);
       });
-    // console.log('~~',grouper)
 
     var hasCommodity = !!query.commodity;
     var hasType = !!query.type;
@@ -103,7 +99,6 @@
       });
 
       search.property('value', state.get('search') || '');
-      console.log(search, state.get('search'), search.property('value'))
       render(data, state);
     });
   }
@@ -148,17 +143,18 @@
   }
 
   function updateRevenueTypes(data) {
-    // console.log('=',data)
+    console.log('=',data)
     var types = grouper.entries(data)
     console.log(types)
     types.map(function(d) {
-        console.log(d)
+        // console.log(d)
         return {
           name: d.key,
           value: d.values
         };
       });
-    console.log('==>',types)
+    // console.log('==>',types)
+
     var extent = d3.extent(types, getter('value'));
     revenueTypeList.call(renderSubtypes, types, extent);
   }
@@ -169,7 +165,7 @@
       .entries(data)
       .map(function(d) {
         var total = d3.sum(d.values, getter('Government Reported'));
-        // console.log(d)
+        console.log(d)
         var obj = {
           name: d.key,
           total: total,
@@ -187,14 +183,14 @@
             }])
             */
         };
-        // console.log('==>', obj)
+        console.log('==>', obj)
         return obj
 
       });
-    // console.log('c',companies)
+    console.log('c',companies)
     var items = companyList.selectAll('tbody.company')
       .data(companies, getter('name'));
-    // console.log(items)
+    console.log(items)
     items.exit().remove();
 
     var enter = items.enter().append('tbody')
@@ -230,7 +226,6 @@
   }
 
   function renderSubtypes(selection, types, extent) {
-    // console.log('hit', selection, types, extent)
     var items = selection.selectAll('.subtype')
       .data(types, getter('name'));
 
@@ -242,14 +237,12 @@
     items
       .call(updateRevenueItem, extent)
       .sort(function(a, b) {
-        // console.log(a,b)
         return d3.descending(a.value, b.value);
       });
   }
 
   function updateNameSearch() {
-    console.log(search.property('value'))
-    var query = search.property('value').toLowerCase() || '';
+    var query = search.property('value').toLowerCase();
     var items = companyList.selectAll('.company');
     if (query) {
       items
@@ -301,10 +294,10 @@
 
     selection.select('.value')
       .text(function(d) {
-        // console.log('val',d)
+        console.log('val',d)
         return formatNumber(d.value);
       });
-    // console.log('s',getter('value'))
+    console.log('s',getter('value'))
     var bar = selection.select('eiti-bar')
       .attr('value', getter('value'));
 

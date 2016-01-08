@@ -251,4 +251,7 @@
     return x;
   }
 
+  var module = module || {};
+  module.exports = exports.EITISlider;
+
 })(this);

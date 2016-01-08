@@ -131,4 +131,6 @@
 
   }
 
+  module.exports = exports.EITIToggle;
+
 })(this);

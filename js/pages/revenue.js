@@ -213,8 +213,6 @@
           })
           .map(data);
 
-        // console.log('data by feature id:', dataByFeatureId);
-
         var featureId = getter(fields.featureId);
         features.forEach(function(f) {
           var id = featureId(f);
@@ -223,7 +221,6 @@
 
         var value = getter('value');
         var values = features.map(value);
-
         var scale = createScale(values);
 
         subregions.style('fill', function(d) {

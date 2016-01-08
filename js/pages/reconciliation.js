@@ -77,12 +77,22 @@
 
     grouper = d3.nest()
       .rollup(function(d) {
-        return d3.sum(d, getter('Government Reported'));
+        // var valuesObj = {
+        //   company: getter('Company Reported'),
+        //   gov: getter('Company Reported'),
+        //   varianceDollars: getter('Variance Dollars'),
+        //   variancePercent: getter('Variance Percent')
+        // }
+        // return d3.sum(d, valuesObj)
+        return d3.sum(d, getter('Company Reported'));
+      })
+      .rollup(function(d) {
+        return d3.sum(d, getter('Variance Dollars'));
       })
       .sortValues(function(a, b) {
-        return d3.descending(+a['Government Reported'], +b['Government Reported']);
+        return d3.descending(+a['Company Reported'], +b['Company Reported']);
       });
-    // console.log('~~',grouper)
+    console.log('~~',grouper)
 
     var hasCommodity = !!query.commodity;
     var hasType = !!query.type;
@@ -103,7 +113,7 @@
       });
 
       search.property('value', state.get('search') || '');
-      console.log(search, state.get('search'), search.property('value'))
+      // console.log(search, state.get('search'), search.property('value'))
       render(data, state);
     });
   }
@@ -150,15 +160,15 @@
   function updateRevenueTypes(data) {
     // console.log('=',data)
     var types = grouper.entries(data)
-    console.log(types)
+    // console.log(types)
     types.map(function(d) {
-        console.log(d)
+        console.log('````',d)
         return {
           name: d.key,
           value: d.values
         };
       });
-    console.log('==>',types)
+    // console.log('==>',types)
     var extent = d3.extent(types, getter('value'));
     revenueTypeList.call(renderSubtypes, types, extent);
   }
@@ -168,13 +178,15 @@
       .key(getter('Company'))
       .entries(data)
       .map(function(d) {
-        var total = d3.sum(d.values, getter('Government Reported'));
+        var total = d3.sum(d.values, getter('Company Reported'));
+
         // console.log(d)
         var obj = {
           name: d.key,
           total: total,
           types: grouper.entries(d.values)
             .map(function(d) {
+              // console.log('===>', d)
               return {
                 name: d.key,
                 value: d.values
@@ -187,7 +199,7 @@
             }])
             */
         };
-        // console.log('==>', obj)
+        console.log('==>', obj)
         return obj
 
       });
@@ -215,13 +227,13 @@
 
     items.select('.subtotal-label')
       .text(function(d) {
-        console.log(d)
-        return d.types.length > 1 ? 'Government Reported' : '';
+        // console.log(d)
+        return d.types.length > 1 ? 'Company Reported' : '';
       });
 
     items.select('.subtotal')
       .text(function(d) {
-        console.log(d)
+        // console.log(d)
         return d.types.length > 1 ? formatNumber(d.total) : '';
       });
 
@@ -248,7 +260,7 @@
   }
 
   function updateNameSearch() {
-    console.log(search.property('value'))
+    // console.log(search.property('value'))
     var query = search.property('value').toLowerCase() || '';
     var items = companyList.selectAll('.company');
     if (query) {

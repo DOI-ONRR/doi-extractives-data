@@ -5,26 +5,34 @@
 ## Goals / Questions
 Goals | Questions
 :----- | :---------
-Evaluate global navigation | Do people understand the terms we've chosen for the global navigation?
- | What do people think they'll find if they click on those terms?
-Evaluate glossary indicator | Do people understand what the glossary icon means?
 Evaluate front page | Do people understand what the site is about?
+ | Can they figure out how to find and navigate stories?
+Test terms | Do people understand the term 'extractive resources'?
 Prioritize what to fix | What problems are most severe?
 
 
 ## Background
 
-We are continuing to fine-tune the global navigation micro-copy on our site based on the results from Sprint-MightyMoose research. Changes in this testing round include:
+We moved from broad research to usability testing in the last quarter, in particular around global navigation and information architecture, so that we'd have a usable and useful version one launch in December 2015. Now that we have a live site to test, we're going to zoom out again and do research on user needs and whether or not our site is addressing those needs, and think about what features to prioritize in the future.
 
-1. Changing 'local impact' to 'case studies' to more accurately reflect what's found under that link. Previously, people expected a much more robust set of content than we have for the December version of the site.
+With the first launch, we think we've met some of the outcomes we hoped to achieve. For example, see our [January 2016 research summary](https://github.com/18F/doi-extractives-data/blob/research/research/summary-jan2016.md) that discusses our March 2015 problem statement, its metrics, and where we stand in January 2016. We've updated our problem statement to remove those metrics and statements we think we've achieved to help us focus on our remaining challenges. This leaves us with the following work:
 
-1. Pulling 'utility'-type links into a separate global navigation chunk. This includes 'downloads', 'glossary', and search.
+The USEITI website was intended to meet these goals:
+- increase transparency and dialogue about the U.S. natural resource revenues system
+- increase trust and dialogue between natural resource sectors (industry, civil society and government)
+- meet the requirements of the international EITI standard in a modern (read: online) way
 
-1. Creating two options for the glossary icon to test. The icon itself is no longer in a tab on the upper right. It is instead used throughout the site to indicate when there is a word that is defined in the glossary, and when clicked will open the glossary drawer.
+We have observed that the USEITI website isn’t:
+- engaging audiences, and therefore is not inspiring dialogue
 
-1. Adding a 'Learn more about USEITI' text link to the intro block.
+which is causing these adverse effects:
+- our project is at risk of being irrelevant (not reaching target audiences)
 
-More information on the proposed information architecture writ large is [here](https://github.com/18F/doi-extractives-data/issues/622).
+Measurable criteria for success:
+- website views increase
+- our site becomes a generally-accepted source of information on this sector
+- congressional staffers call us or use our site’s information on this sector
+- both civil society and industry use our site
 
 
 ### Metrics

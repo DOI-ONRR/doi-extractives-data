@@ -64,8 +64,8 @@ measurable criteria for success:
 
 ## What do we know from our previous research about our project goals?
 
-###  How do people feel about transparency and dialogue in the U.S. natural resource revenues system
+###  How do people feel about transparency and dialogue in the U.S. natural resource revenues system?
 
-### How is trust and dialogue between natural resource sectors going (industry, civil society and government)?
+### How is trust and dialogue between natural resource sectors going? (industry, civil society and government)
 
 ### Are we meeting the requirements of the international EITI standard in a modern (read: online) way?

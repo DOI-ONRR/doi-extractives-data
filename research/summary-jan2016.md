@@ -1,17 +1,4 @@
-# Research focus, findings, and questions
-
-EITI is a really interesting case study on how to do policy in 2016.
-
-
-
-Our current wave of research aims to find out whether we are meeting the following goals:
-
-- increase transparency and dialogue about the U.S. natural resource revenues system
-- increase trust and dialogue between natural resource sectors (industry, civil society and government)
-- being useful as a generally-accepted source of information on this sector
-- being trustworthy and useful to both civil society and industry
-
-What do we already know about these goals from our previous research?
+# Research summary, January 2016
 
 ## Problem Statement from March 2015
 

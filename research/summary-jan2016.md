@@ -29,7 +29,7 @@ We were able to deliver the first version of the USEITI report online. We are no
 
 One of the remaining sticky wickets to international EITI approval of the USEITI report is around reconciliation data. The international EITI requirements in this area are hard to apply in the US context, both technically and politically. On top of that, the process is complicated and hard to explain (which makes for a confusing website).
 
-Recommend removing this metric and related hypotheses from focus because it is not anywhere near the most severe of our challenges anymore, and replacing it with something that deals with reconciliation content specifically. And truly, this metric can't be completely retired until international EITI officially approves the USEITI Report in 2016.
+For 2016, we should replace this metric and related hypotheses with one that deals with reconciliation content specifically. And truly, this metric can't be completely retired until international EITI officially approves the USEITI Report in 2016.
 
 ### Website views increase
 
@@ -37,9 +37,9 @@ We now have a launched website to baseline this metric against.
 
 ### Our site becomes a generally-accepted source of information on this sector; congressional staffers call us or use our site’s information on this sector; both civil society and industry use our site
 
-We have not made progress against these metrics yet, though we now have a live website to publicize (yay!). USEITI did not do a huge amount of outreach and publicity with the first launch. There was some, but a concerted outreach and feedback method is needed to (eventually) test these metrics. We will continue working with their related hypotheses in 2016.
+We have not made progress against these metrics yet, though we now have a live website to publicize (yay!). We will continue working with this in 2016.
 
-## Suggested revisions to Problem Statement for January 2016
+## Suggested revisions to problem statement for January 2016
 
 The USEITI website was intended to meet these goals:
 - increase transparency and dialogue about the U.S. natural resource revenues system
@@ -61,3 +61,11 @@ measurable criteria for success:
 - both civil society and industry use our site
 - the USEITI Report is approved by international EITI
 - non-specialists can get what they need from our site and not be turned away by complex content about the EITI process (ie, reconciliation)
+
+## What do we know from our previous research about our project goals?
+
+###  How do people feel about transparency and dialogue in the U.S. natural resource revenues system
+
+### How is trust and dialogue between natural resource sectors going (industry, civil society and government)?
+
+### Are we meeting the requirements of the international EITI standard in a modern (read: online) way?

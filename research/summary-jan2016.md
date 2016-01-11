@@ -1,5 +1,3 @@
-# Research summary, January 2016
-
 ## Problem Statement from March 2015
 
 The USEITI website was intended to meet these goals:
@@ -29,7 +27,9 @@ measurable criteria for success:
 
 We were able to deliver the first version of the USEITI report online. We are not in danger of not meeting the contextual narrative requirements of the international EITI standard and in fact likely have much more information than is required. Our executive summary is longer than we would have liked, but we expect now that a website exists, multi-stakeholder group participants will feel more comfortable making the executive summary a true executive summary in the future because they can see the breadth of what is available online.
 
-Recommend removing this metric and related hypotheses from focus because it is not anywhere near the most severe of our challenges anymore. Truly, however, it can't be completely retired until international EITI officially approves the USEITI Report in 2016.
+One of the remaining sticky wickets to international EITI approval of the USEITI report is around reconciliation data. The international EITI requirements in this area are hard to apply in the US context, both technically and politically. On top of that, the process is complicated and hard to explain (which makes for a confusing website).
+
+Recommend removing this metric and related hypotheses from focus because it is not anywhere near the most severe of our challenges anymore, and replacing it with something that deals with reconciliation content specifically. And truly, this metric can't be completely retired until international EITI officially approves the USEITI Report in 2016.
 
 ### Website views increase
 
@@ -48,12 +48,16 @@ The USEITI website was intended to meet these goals:
 
 We have observed that the USEITI website isn’t:
 - engaging audiences, and therefore is not inspiring dialogue
+- explaining and providing information about the EITI reconciliation requirement in a way that is both understandable to a non-specialist audience and meets the EITI standard.
 
 which is causing these adverse effects:
 - our project is at risk of being irrelevant (not reaching target audiences)
+- our project is at risk of either not being approved, or not reaching target audiences because in order to meet international EITI requirements we made content too complex
 
 measurable criteria for success:
 - website views increase
 - our site becomes a generally-accepted source of information on this sector
 - congressional staffers call us or use our site’s information on this sector
 - both civil society and industry use our site
+- the USEITI Report is approved by international EITI
+- non-specialists can get what they need from our site and not be turned away by complex content about the EITI process (ie, reconciliation)

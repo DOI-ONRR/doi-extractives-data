@@ -5,7 +5,7 @@ Jekyll::Hooks.register :site, :pre_render do |site|
 
     if production_branches.include?(branch)
         puts '[build.rb] webpacking for production'
-        `npm install --dev && npm run webpack`
+        `npm install && npm run webpack`
     else
         puts '[build.rb] not webpacking'
     end

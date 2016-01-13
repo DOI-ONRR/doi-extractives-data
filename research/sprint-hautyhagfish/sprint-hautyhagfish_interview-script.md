@@ -1,31 +1,32 @@
 # Sprint-HautyHagfish interview script
 
-**This is a work in progress, and at the moment is copied from an earlier script. Do not use yet.**
 
 ## Introductory comments
 
 Brief introduction – share your name and a description of your general duties on the USEITI team.
 
-Very brief discussion of the **purpose** of today's test:  "My goal today is to get feedback on a new page we're designing. I'm talking to people to get their sense of what this site is all about – what it does, whom it's targeting, where it's clear, where it's unclear, and so on. All feedback is anonymous, and the test should take less than 10 minutes of your time."
-
-"Please remember when I say 'test' I mean I'm testing our website and if it is clear or not. There are no wrong answers for you!"
+Very brief discussion of the **purpose** of today's test:  "My goal today is to get a general understanding of you and how you might (or might not!) be interested in natural resource extraction in the U.S. This isn't a test to see how much you know, and there are no right or wrong answers. We're designing a website that hopes to help people understand how mineral mining and oil and gas production works in the U.S. so we're talking to people to learn what they might be interested in. All feedback is anonymous, and the test should take about 15 to 30 minutes of your time."
 
 
 ## Main questions
 
-_Show the in-person participant the latest version of the site and give them computer control, or ask the remote participant to click on the InVision link to the 'live' mock and share their screen._
+1. "OK. First of all, can you tell me about your job?"
 
-"I’ve got a sample page from our new site here. This is just a picture of what it will look like, it's not clickable."
+1. "Walk me trough a typical week in your life."
 
-"Imagine somebody sent you a link to this site and this is what popped up in front of you when you clicked on the link. I'd like to ask you some general questions about what you see here. If you could, please talk out loud as you explore and walk me through what you're thinking. This will help us understand how to improve things later."
+1. "How often are you online?"
 
-1. "OK. First of all, can you tell me (in your own words) what you think this site is for?"
+1. "What computers or devices do you use?"
 
-1. "Who do you think the intended audience is for the site?"
+1. "Tell me about mining/oil/gas[choose appropriate resource based on participant location] in your state or county."
 
-1. _Draw the participant's attention to the global nav_ "Can you tell me what you think you'll see when you click on [nav item]?" _Ask this question for all nav items except HOME. Include the new 'utility' nav items._
+1. "Imagine there is a proposed new mine/oil field in a place you care about. What does this mean to you?" _Not sure if this is right. I don't want to assume people would even look for more info -- maybe this is not a big deal to them in the first place._
 
-1. _Draw the participant's attention to the underlined word with the book icon_ "Can you tell me what you think you'll see when you click on this?"
+1. What would you do or where would you go to find more information about the new mine/oil field?"
+
+1. "Now imagine you wanted to support or oppose something about that proposed mine/oil field. How would you do that?" _I'm not sure about this. I think it might be too leading. Might need to do a few interviews without this and see if people naturally offer insight to this end, or brainstorm other ways to learn about this topic without assuming that people feel empowered to comment on proposed mines in the first place._
+
+1. "Your state/county has a pretty big mining/oil-gas industry. How do you feel about this industry?"
 
 1. "What questions does this site leave you with? Can you walk me through things you think are confusing?"
 

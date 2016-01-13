@@ -90,8 +90,12 @@ In terms of dialogue, we didn't get much information that directly related to ho
 
 - _Information about talking with local officials somewhere?_
 
-We have a very interesting research problem in our future. The site is about a fairly complex policy area that people should be able to contribute to, but currently is too complicated for non-specialists to easily engage with. Our first version of the site attempts to make information about the policy area easier to understand, but the question still remains: what is the best way to promote dialogue in this area? How do people wish to be engaged?. This problem (complexity plus public engagement without intense time commitment or specialist background) is common to many areas of public policy. The research we do here will hopefully be of use to other projects as well.
+We have a very interesting research problem in our future. The site is about a fairly complex policy area that people should be able to contribute to, but currently is too complicated for non-specialists to easily engage with. Our first version of the site attempts to make information about the policy area easier to understand, but the question still remains: what is the best way to promote dialogue in this area? How do people wish to be engaged? This problem (complexity plus public engagement without intense time commitment or specialist background) is common to many areas of public policy. The research we do here will hopefully be of use to other projects as well.
 
 ### How is trust and dialogue between natural resource sectors going? (industry, civil society and government)
 
+Our previous research didn't reveal anything about this desired outcome.
+
 ### Are we meeting the requirements of the international EITI standard in a modern (read: online) way?
+
+In terms of research, the challenge here is that some of the requirements of the international EITI standard are very technical. Even the name of the initiative itself is confusing to non-specialists. We will continue to attempt to strike a balance between EITI requirements and user needs. Also, we have revised the metrics associated with this outcome (see above) to reflect the learnings from the past year.

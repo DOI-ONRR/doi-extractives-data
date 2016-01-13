@@ -20,7 +20,7 @@ With the first launch, we think we've met some of the outcomes we hoped to achie
 
 ## Script
 
-Script available [here](https://github.com/18F/doi-extractives-data/blob/research/research/sprint-pocketmouse/sprint-hautyhagfish_interview-script.md).
+Script available [here](https://github.com/18F/doi-extractives-data/blob/research/research/sprint-hautyhagfish/sprint-hautyhagfish_interview-script.md).
 
 
 ## Test asset(s)

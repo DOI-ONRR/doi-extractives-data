@@ -66,6 +66,32 @@ measurable criteria for success:
 
 ###  How do people feel about transparency and dialogue in the U.S. natural resource revenues system?
 
+We don't know much about this yet. We do know that people tend to come from a place of mistrust. They often want to find out who is sponsoring the site:
+
+_I always look for the owner._
+
+_Who are they [USEITI]?_
+
+_I still want to understand why this [site and initiative] exists._
+
+_This looks like an industry site._
+
+_[I expect that the site might] highlight the positive and leave out the negative._
+
+There is some understanding that the site exists to provide access to information that was previously inaccessible.
+
+_The site is for the public, to give them access to info that isn't easily accessible._
+
+_The government is trying to figure out what industry is doing with natural resources._
+
+_Primarily for lobbyists or people in industry to evaluate data available in one place, condensed information._
+
+In terms of dialogue, people expected the ability to contact local officials (though this was somewhat mitigated in the newest versions of the site to make sure our design wasn't insinuating abilities that it doesn't have).
+
+_Information about talking with local officials somewhere?_
+
+We have a very interesting research problem in our future. The site is about a fairly complex policy area that people should be able to contribute to, but currently is too complicated for non-specialists to easily engage with. This problem is common to many areas of public policy. What is the best way to promote dialogue in these areas? How do people wish to be engaged?
+
 ### How is trust and dialogue between natural resource sectors going? (industry, civil society and government)
 
 ### Are we meeting the requirements of the international EITI standard in a modern (read: online) way?

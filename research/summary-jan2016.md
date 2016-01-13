@@ -101,4 +101,6 @@ Our previous research didn't reveal anything about this desired outcome.
 
 ### Are we meeting the requirements of the international EITI standard in a modern (read: online) way?
 
-In terms of research, the challenge here is that some of the requirements of the international EITI standard are very technical. Even the name of the initiative itself is confusing to non-specialists. We will continue to attempt to strike a balance between EITI requirements and user needs. Also, we have revised the metrics associated with this outcome (see above) to reflect the learnings from the past year.
+This goal is addressed at some length above, and we have revised the metrics associated with this outcome to reflect the learnings from the past year. This has less to do with research and more to do with requirements from the international EITI standard.
+
+However, the challenge that *is* related to research and the one that we will continue to struggle with is the balance between those requirements and the user needs that research reveals. For example, some of the requirements are very technical and are not wholly relevant to the U.S. national situation, but they must be explained or addressed anyways on the site to make sure the United States is approved as an EITI country. We are working to creatively mitigate the impact of these situations on the end user.

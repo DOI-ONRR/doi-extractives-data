@@ -5,10 +5,10 @@
 
 Brief introduction – share your name and a description of your general duties on the USEITI team.
 
-Very brief discussion of the **purpose** of today's test:  "My goal today is to get a general understanding of you and how you might (or might not!) be interested in natural resource extraction in the U.S. This isn't a test to see how much you know, and there are no right or wrong answers. We're designing a website that hopes to help people understand how mineral mining and oil and gas production works in the U.S. so we're talking to people to learn what they might be interested in. All feedback is anonymous, and the test should take about 15 to 30 minutes of your time."
+Very brief discussion of the **purpose** of today's test:  "My goal today is to get a general understanding of you and how you might (or might not!) be interested in natural resource extraction in the U.S. This isn't a test to see how much you know, and there are no right or wrong answers. We're designing a website that hopes to help people understand how mineral mining and oil and gas production works in the U.S. All feedback is anonymous, and the test should take about 15 to 30 minutes of your time."
 
 
-## Main questions
+## Question outline
 
 1. "OK. First of all, can you tell me about your job?"
 
@@ -18,17 +18,17 @@ Very brief discussion of the **purpose** of today's test:  "My goal today is to 
 
 1. "What computers or devices do you use?"
 
-1. "Tell me about mining/oil/gas[choose appropriate resource based on participant location] in your state or county."
+1. "Tell me about _mining/oil/gas [choose appropriate resource based on participant location]_ in your state or county."
 
-1. "Imagine there is a proposed new mine/oil field in a place you care about. What does this mean to you?" _Not sure if this is right. I don't want to assume people would even look for more info -- maybe this is not a big deal to them in the first place._
+1. "Where do you think money from mining/oil production goes?"
 
-1. What would you do or where would you go to find more information about the new mine/oil field?"
+1. "Imagine you read a news article on a proposed change to a mine/oil field in a place you care about. Maybe this is a new mine, or maybe this is a mine that's closing. Where would you go to find more information?" _Not sure if this is right. I don't want to assume people would even look for more info -- maybe this is not a big deal to them in the first place._
+
+1. Do you trust that information?
 
 1. "Now imagine you wanted to support or oppose something about that proposed mine/oil field. How would you do that?" _I'm not sure about this. I think it might be too leading. Might need to do a few interviews without this and see if people naturally offer insight to this end, or brainstorm other ways to learn about this topic without assuming that people feel empowered to comment on proposed mines in the first place._
 
-1. "Your state/county has a pretty big mining/oil-gas industry. How do you feel about this industry?"
-
-1. "What questions does this site leave you with? Can you walk me through things you think are confusing?"
+1. "Is there anything else you'd like to tell me?"
 
 
 ## Wrap up

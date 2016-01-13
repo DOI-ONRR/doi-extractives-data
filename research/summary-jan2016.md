@@ -1,3 +1,6 @@
+# Research summary
+*January 2016*
+
 ## Problem Statement from March 2015
 
 The USEITI website was intended to meet these goals:

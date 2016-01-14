@@ -1,9 +1,0 @@
-Name: libecpg
-Description: PostgreSQL libecpg library
-Url: http://www.postgresql.org/
-Version: 9.4.4
-Requires: 
-Requires.private: libpq libpgtypes
-Cflags: -I/home/vcap/app/psql/include
-Libs: -L/home/vcap/app/psql/lib -lecpg
-Libs.private:  -lm -lpthread

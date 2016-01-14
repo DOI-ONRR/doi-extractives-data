@@ -1,0 +1,9 @@
+Name: libecpg_compat
+Description: PostgreSQL libecpg_compat library
+Url: http://www.postgresql.org/
+Version: 9.4.4
+Requires: 
+Requires.private: libecpg libpgtypes
+Cflags: -I/home/vcap/app/psql/include
+Libs: -L/home/vcap/app/psql/lib -lecpg_compat
+Libs.private:  -lpq -lm -lpthread

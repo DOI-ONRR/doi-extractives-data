@@ -10,6 +10,8 @@ Very brief discussion of the **purpose** of today's test:  "My goal today is to 
 
 ## Question outline
 
+*Core*
+
 1. "OK. First of all, can you tell me about your job?"
 
 1. "Walk me trough a typical week in your life."
@@ -20,15 +22,19 @@ Very brief discussion of the **purpose** of today's test:  "My goal today is to 
 
 1. "Tell me about _mining/oil/gas [choose appropriate resource based on participant location]_ in your state or county."
 
-1. "Where do you think money from mining/oil production goes?"
-
-1. "Imagine you read a news article on a proposed change to a mine/oil field in a place you care about. Maybe this is a new mine, or maybe this is a mine that's closing. Where would you go to find more information?" _Not sure if this is right. I don't want to assume people would even look for more info -- maybe this is not a big deal to them in the first place._
-
-1. Do you trust that information?
-
-1. "Now imagine you wanted to support or oppose something about that proposed mine/oil field. How would you do that?" _I'm not sure about this. I think it might be too leading. Might need to do a few interviews without this and see if people naturally offer insight to this end, or brainstorm other ways to learn about this topic without assuming that people feel empowered to comment on proposed mines in the first place._
+1. "What other locations are important to you with regard to _mining/oil/gas_ ?"
 
 1. "Is there anything else you'd like to tell me?"
+
+1. "Do you have any questions for me?"
+
+*Potential follow-up, depending on what people say*
+
+1. "Where do you think money from _mining/oil production_ goes?"
+
+1. "Imagine you read a news article on a proposed change to a mine/oil field in a place you care about. Maybe this is a new mine, or maybe this is a mine that's closing. Where would you go to find more information?"
+
+1. _Show the site_ Who do you think this site is for?
 
 
 ## Wrap up

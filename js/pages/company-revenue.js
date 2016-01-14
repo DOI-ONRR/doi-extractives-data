@@ -57,12 +57,10 @@
     .on('change', filterChange);
 
   var search = root.select('#company-name-filter');
-  console.log('elem',search)
   search
     .on('keyup', updateNameSearch)
     .on('clear', filterChange)
     .on('change', filterChange);
-  console.log('elem',search)
 
   var initialState = hash.read();
 
@@ -101,7 +99,6 @@
       });
 
       search.property('value', state.get('search') || '');
-      console.log(search, state.get('search'), search.property('value'))
       render(data, state);
     });
   }
@@ -129,7 +126,6 @@
   }
 
   function updateRevenueTypeSelector(data) {
-    debugger
     var commodities = d3.nest()
       .key(getter('revenueType'))
       .entries(data)
@@ -236,7 +232,6 @@
 
   function updateNameSearch() {
     var query = search.property('value').toLowerCase();
-    console.log(query)
     var items = companyList.selectAll('.company');
     if (query) {
       items

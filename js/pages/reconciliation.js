@@ -10,6 +10,7 @@
   var getter = eiti.data.getter;
   var grouper;
   var formatNumber = eiti.format.dollarsAndCents;
+  var formatPercent = eiti.format.percent;
   var REVENUE_TYPE_PREFIX = /^[A-Z]+(\/[A-Z]+)?\s+-\s+/;
 
   var state = eiti.explore.stateManager()
@@ -58,12 +59,10 @@
     .on('change', filterChange);
 
   var search = root.select('#company-name-filter');
-  console.log('root',root)
   search
     .on('keyup', updateNameSearch)
     .on('clear', filterChange)
     .on('change', filterChange);
-  console.log('elem',search)
 
   var initialState = hash.read();
 
@@ -76,31 +75,31 @@
     updateFilterDescription(state);
 
     grouper = d3.nest()
-      .rollup(function(d) {
-        // var valuesObj = {
-        //   company: getter('Company Reported'),
-        //   gov: getter('Company Reported'),
-        //   varianceDollars: getter('Variance Dollars'),
-        //   variancePercent: getter('Variance Percent')
-        // }
-        // return d3.sum(d, valuesObj)
-        return d3.sum(d, getter('Company Reported'));
-      })
-      .rollup(function(d) {
-        return d3.sum(d, getter('Variance Dollars'));
-      })
-      .sortValues(function(a, b) {
-        return d3.descending(+a['Company Reported'], +b['Company Reported']);
-      });
-    console.log('~~',grouper)
+      // .rollup(function(d) {
+      //   return d3.sum(d, getter('Government Reported'));
 
-    var hasCommodity = !!query.commodity;
+      // })
+      .rollup(function(leaves) {
+        console.log('leaves',leaves)
+        return leaves.map(function(d){
+          return {
+            value: d['Government Reported'],
+            variance: d['Variance Percent']
+          };
+        })
+      })
+      // .rollup(function(d) {
+      //   console.log('dddd', d['Variance Percent'])
+      // })
+      .sortValues(function(a, b) {
+        return d3.descending(+a['Government Reported'], +b['Government Reported']);
+      });
+
+    console.log('grouper', grouper)
+
     var hasType = !!query.type;
-    if (hasType && !hasCommodity) {
-      grouper.key(getter('Commodity'));
-    } else {
-      grouper.key(getter('revenueType'));
-    }
+
+    grouper.key(getter('revenueType'));
 
     model.load(state, function(error, data) {
       if (error) {
@@ -120,25 +119,11 @@
 
   function render(data /*, state */) {
     // console.log('rendering %d rows', data.length, data[0]);
+    console.log('=========',data)
     updateRevenueTypes(data);
     updateCompanyList(data);
     updateNameSearch();
   }
-
-  // function updateCommoditySelector(data) {
-  //   var commodities = d3.nest()
-  //     .key(getter('Commodity'))
-  //     .entries(data)
-  //     .map(getter('key'))
-  //     .sort(d3.ascending);
-  //   var input = root.select('#commodity-selector');
-  //   var options = input.selectAll('option.value')
-  //     .data(commodities, identity);
-  //   options.enter().append('option')
-  //     .attr('class', 'value')
-  //     .attr('value', identity)
-  //     .text(identity);
-  // }
 
   function updateRevenueTypeSelector(data) {
     // console.log('data',data)
@@ -177,19 +162,20 @@
     var companies = d3.nest()
       .key(getter('Company'))
       .entries(data)
-      .map(function(d) {
-        var total = d3.sum(d.values, getter('Company Reported'));
-
-        // console.log(d)
+      .map(function(data) {
+        var total = d3.sum(data.values, getter('Government Reported'));
+        console.log('total', d3.sum(data.values, getter('Variance Percent')))
+        console.log(data)
         var obj = {
-          name: d.key,
+          name: data.key,
           total: total,
-          types: grouper.entries(d.values)
+          types: grouper.entries(data.values)
             .map(function(d) {
-              // console.log('===>', d)
+              console.log('--->', d)
               return {
                 name: d.key,
-                value: d.values
+                value: d.values[0].value,
+                variance: d.values[0].variance
               };
             })
             /*
@@ -228,7 +214,7 @@
     items.select('.subtotal-label')
       .text(function(d) {
         // console.log(d)
-        return d.types.length > 1 ? 'Company Reported' : '';
+        return d.types.length > 1 ? 'Material Variance' : '';
       });
 
     items.select('.subtotal')
@@ -299,11 +285,13 @@
     selection.append('td')
       .attr('class', 'value');
     selection.append('td')
-      .attr('class', 'bar')
-      .append(function() {
-        // XXX this is a document.registerElement() workaround
-        return new EITIBar(); // jshint ignore:line
-      });
+      .attr('class', 'variance')
+    // selection.append('td')
+    //   .attr('class', 'bar')
+    //   .append(function() {
+    //     // XXX this is a document.registerElement() workaround
+    //     return new EITIBar(); // jshint ignore:line
+    //   });
   }
 
   function updateRevenueItem(selection, extent) {
@@ -313,18 +301,25 @@
 
     selection.select('.value')
       .text(function(d) {
-        // console.log('val',d)
+        console.log('val',d)
         return formatNumber(d.value);
       });
-    // console.log('s',getter('value'))
-    var bar = selection.select('eiti-bar')
-      .attr('value', getter('value'));
 
-    if (extent) {
-      bar
-        .attr('min', Math.min(0, extent[0]))
-        .attr('max', extent[1]);
-    }
+    selection.select('.variance')
+      .text(function(d) {
+        // console.log('val',d)
+        return formatPercent(d.variance / 100);
+      });
+    // console.log('s',getter('value'))
+    // var bar = selection.select('eiti-bar')
+    //   .attr('value', getter('value'));
+    // // console.log('bar val:',getter('value'))
+    // // console.log('extent:',extent)
+    // if (extent) {
+    //   bar
+    //     .attr('min', Math.min(0, extent[0]))
+    //     .attr('max', extent[1]);
+    // }
   }
 
   function updateFilterDescription(state) {
@@ -355,7 +350,7 @@
   }
 
   function filterChange() {
-    state.set(this.name, this.value);
+    state.set(this.name, this.value, this.variance);
   }
 
   function identity(d) {

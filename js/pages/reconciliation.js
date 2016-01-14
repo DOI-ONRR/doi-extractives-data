@@ -49,10 +49,8 @@
       });
     })
     .on('prefilter', function(key, data) {
-      if (key === 'commodity') {
         // updateCommoditySelector(data);
         updateRevenueTypeSelector(data);
-      }
     });
 
   var filters = root.selectAll('.filters [name]')
@@ -118,20 +116,19 @@
 
   function render(data /*, state */) {
     // console.log('rendering %d rows', data.length, data[0]);
-    console.log('=========',data)
+    // console.log('=========',data)
     updateRevenueTypes(data);
     updateCompanyList(data);
     updateNameSearch();
   }
 
   function updateRevenueTypeSelector(data) {
-    // console.log('data',data)
     var commodities = d3.nest()
-      .key(getter('type'))
+      .key(getter('revenueType'))
       .entries(data)
-    // console.log(commodities)
-    commodities.map(getter('key'))
+      .map(getter('key'))
       .sort(d3.ascending);
+
     var input = root.select('#type-selector');
     var options = input.selectAll('option.value')
       .data(commodities, identity);
@@ -297,7 +294,7 @@
 
     selection.select('.value')
       .text(function(d) {
-        console.log('val',d)
+        // console.log('val',d)
         return formatNumber(d.value);
       });
 
@@ -324,7 +321,6 @@
     var data = {
       type: state.get('type') || 'All revenue',
       government: state.get('government'),
-      commodity: (state.get('commodity') || 'all resource').toLowerCase(),
     };
 
     /*

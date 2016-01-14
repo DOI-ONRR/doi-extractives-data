@@ -129,6 +129,7 @@
   }
 
   function updateRevenueTypeSelector(data) {
+    debugger
     var commodities = d3.nest()
       .key(getter('revenueType'))
       .entries(data)
@@ -141,6 +142,7 @@
       .attr('class', 'value')
       .attr('value', identity)
       .text(identity);
+
   }
 
   function updateRevenueTypes(data) {

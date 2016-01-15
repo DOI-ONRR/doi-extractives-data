@@ -37,12 +37,7 @@
 
   var model = eiti.explore.model(eiti.data.path + 'reconciliation/revenue.tsv')
     .transform(removeRevenueTypePrefix)
-    // .filter('commodity', function(data, commodity) {
-    //   // console.log('filter', data, commodity)
-    //   return data.filter(function(d) {
-    //     return d.Commodity === commodity;
-    //   });
-    // })
+
     .filter('type', function(data, type) {
       return data.filter(function(d) {
         return d.revenueType === type;
@@ -78,7 +73,7 @@
 
       // })
       .rollup(function(leaves) {
-        console.log('leaves',leaves)
+        // console.log('leaves',leaves)
         return leaves.map(function(d){
           return {
             value: d['Government Reported'],
@@ -87,14 +82,11 @@
           };
         })
       })
-      // .rollup(function(d) {
-      //   console.log('dddd', d['Variance Percent'])
-      // })
       .sortValues(function(a, b) {
         return d3.descending(+a['Government Reported'], +b['Government Reported']);
       });
 
-    console.log('grouper', grouper)
+    // console.log('grouper', grouper)
 
     var hasType = !!query.type;
 
@@ -169,7 +161,7 @@
           total: total,
           types: grouper.entries(data.values)
             .map(function(d) {
-              console.log('--->', d)
+              // console.log('--->', d)
               return {
                 name: d.key,
                 value: d.values[0].value,
@@ -182,7 +174,7 @@
         return obj
 
       });
-    // console.log('c',companies)
+
     var heading = companyList
       .append('thead')
       .attr('class', 'list-heading')
@@ -199,7 +191,7 @@
       });
     var items = companyList.selectAll('tbody.company')
       .data(companies, getter('name'));
-    // console.log(items)
+
     items.exit().remove();
 
     var enter = items.enter().append('tbody')
@@ -316,7 +308,8 @@
     selection.select('.value')
       .html(function(d) {
         // console.log('val',d)
-        var multiLine = formatNumber(d.company) + ' <span>gov</span>' +
+        var multiLine = formatNumber(d.company) +
+          ' <span>gov</span>' +
           '</br>' +
           formatNumber(d.value) +
           ' <span>co</span>';
@@ -328,6 +321,8 @@
         // console.log('val',d)
         return formatPercent(d.variance / 100);
       });
+
+
     // console.log('s',getter('value'))
     // var bar = selection.select('eiti-bar')
     //   .attr('value', getter('value'));

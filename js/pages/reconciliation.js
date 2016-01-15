@@ -82,6 +82,7 @@
         return leaves.map(function(d){
           return {
             value: d['Government Reported'],
+            company: d['Company Reported'],
             variance: d['Variance Percent']
           };
         })
@@ -172,21 +173,30 @@
               return {
                 name: d.key,
                 value: d.values[0].value,
+                company: d.values[0].company,
                 variance: d.values[0].variance
               };
             })
-            /*
-            .concat([{
-              name: 'Total',
-              value: total
-            }])
-            */
         };
         console.log('==>', obj)
         return obj
 
       });
     // console.log('c',companies)
+    var heading = companyList
+      .append('thead')
+      .attr('class', 'list-heading')
+      .append('tr')
+    heading.append('th')
+      .text('')
+    heading.append('th')
+      .html(function(d) {
+        return 'variance (<span class="red">red</span> indicates <span class="term term-p" data-term="material variance" title="Click to define" tabindex="0">material var.<i class="icon-book"></i></span>)';
+      })
+    heading.append('th')
+      .html(function(d) {
+        return 'amount reported by company (<strong>co</strong>) and by government (<strong>gov</strong>)';
+      });
     var items = companyList.selectAll('tbody.company')
       .data(companies, getter('name'));
     // console.log(items)
@@ -207,18 +217,25 @@
     items.sort(function(a, b) {
       return d3.descending(a.total, b.total);
     });
+    // debugger
+    // items.select('.subtotal-label')
+    //   .html(function(d) {
+    //     // console.log(d)
+    //     return 'variance (<span class="red">red</span> indicates <span class="term term-p" data-term="material variance" title="Click to define" tabindex="0">material var.<i class="icon-book"></i></span>)';
+    //     // return d.types.length > 1 ? 'variance (<span class="red">red</span> indicates <span class="term term-p" data-term="material variance" title="Click to define" tabindex="0">material var.<i class="icon-book"></i></span>)' : '';
+    //   });
 
-    items.select('.subtotal-label')
-      .text(function(d) {
-        // console.log(d)
-        return d.types.length > 1 ? 'Material Variance' : '';
-      });
-
-    items.select('.subtotal')
-      .text(function(d) {
-        // console.log(d)
-        return d.types.length > 1 ? formatNumber(d.total) : '';
-      });
+    // items.select('.subtotal')
+    //   .html(function(d) {
+    //     // console.log(d)
+    //     return 'amount reported by company (<strong>co</strong>) and by government (<strong>gov</strong>)';
+    //     // return d.types.length > 1 ? 'amount reported by company (<strong>co</strong>) and by government (<strong>gov</strong>)' : '';
+    //   });
+    //   // Total Gov Reported Revenue
+    //   // .text(function(d) {
+    //   //   // console.log(d)
+    //   //   return d.types.length > 1 ? formatNumber(d.total) : '';
+    //   // });
 
     var extent = d3.extent(companies, getter('total'));
     items.call(renderSubtypes, getter('types'), extent);
@@ -297,9 +314,13 @@
       .text(getter('name'));
 
     selection.select('.value')
-      .text(function(d) {
+      .html(function(d) {
         // console.log('val',d)
-        return formatNumber(d.value);
+        var multiLine = formatNumber(d.company) + ' <span>gov</span>' +
+          '</br>' +
+          formatNumber(d.value) +
+          ' <span>co</span>';
+        return multiLine;
       });
 
     selection.select('.variance')
@@ -346,7 +367,7 @@
   }
 
   function filterChange() {
-    state.set(this.name, this.value, this.variance);
+    state.set(this.name, this.value, this.company, this.variance);
   }
 
   function identity(d) {

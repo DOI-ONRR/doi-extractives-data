@@ -151,6 +151,7 @@
       });
 
     var extent = d3.extent(types, getter('value'));
+    console.log('e',extent)
     revenueTypeList.call(renderSubtypes, types, extent);
   }
 
@@ -287,7 +288,7 @@
 
     var bar = selection.select('eiti-bar')
       .attr('value', getter('value'));
-
+    console.log('extent',extent)
     if (extent) {
       bar
         .attr('min', Math.min(0, extent[0]))

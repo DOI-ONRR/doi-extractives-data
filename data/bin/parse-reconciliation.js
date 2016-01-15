@@ -84,13 +84,25 @@ async.waterfall([
             'Variance Percent': 0
           });
         } else {
+          var gov = parseValue(d[type + ' Government'], 'dollars')
+          var company = parseValue(d[type + ' Company'], 'dollars')
+
+          var isPos = typeof(company) == 'number'
+            ? (gov - company) >= 0
+            : true;
+
           result.push({
             'Company': d['Reporting Companies'],
             'Type': type,
-            'Government Reported': parseValue(d[type + ' Government'], 'dollars'),
-            'Company Reported': parseValue(d[type + ' Company'], 'dollars'),
-            'Variance Dollars': parseValue(d[type + ' Variance $'], 'dollars'),
-            'Variance Percent': parseValue(d[type + ' Variance %'], 'percent')
+            'Government Reported': gov,
+            'Company Reported': company,
+            'Variance Dollars': isPos
+               ? parseValue(d[type + ' Variance $'], 'dollars')
+               : -1 * parseValue(d[type + ' Variance $'], 'dollars'),
+            'Variance Percent': isPos
+             ? parseValue(d[type + ' Variance %'], 'percent')
+             : -1 * parseValue(d[type + ' Variance %'], 'percent')
+
           });
         }
       });

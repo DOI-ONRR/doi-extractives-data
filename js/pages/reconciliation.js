@@ -78,7 +78,8 @@
           return {
             value: d['Government Reported'],
             company: d['Company Reported'],
-            variance: d['Variance Percent']
+            variance: d['Variance Percent'],
+            varianceDollars: d['Variance Dollars']
           };
         })
       })
@@ -134,18 +135,47 @@
 
   function updateRevenueTypes(data) {
     // console.log('=',data)
-    var types = grouper.entries(data)
-    // console.log(types)
-    types.map(function(d) {
-        console.log('````',d)
-        return {
-          name: d.key,
-          value: d.values
-        };
+
+    var types = d3.nest()
+      .key(getter('Type'))
+      .entries(data)
+      .map(function(data) {
+        console.log('~~~~~~~~',data)
+        var totalGov = d3.sum(data.values, getter('Government Reported'));
+        var totalCompany = d3.sum(data.values, getter('Company Reported'));
+        var obj = {
+          name: data.key,
+          totalGov: totalGov,
+          totalCompany: totalCompany,
+          // varianceD: d3.sum(data.values, getter('Variance Dollars')),
+          types: grouper.entries(data.values)
+            .map(function(d) {
+              console.log('--->', d)
+              return {
+                value: d.values[0].value,
+                company: d.values[0].company,
+                variance: (100 * d3.sum(data.values, getter('Variance Dollars')) / totalCompany),
+                varianceDollars: d3.sum(data.values, getter('Variance Dollars'))
+              };
+            })
+        }
+        return obj
       });
-    // console.log('==>',types)
-    var extent = d3.extent(types, getter('value'));
-    revenueTypeList.call(renderSubtypes, types, extent);
+
+    // var types = grouper.entries(data)
+    // // console.log(types)
+    // types.map(function(d) {
+    //     console.log('````',d)
+    //     return {
+    //       name: d.key,
+    //       value: d.values
+    //     };
+    //   });
+    console.log('=table=>',types)
+
+    var extent = d3.extent(types, getter('totalGov'));
+    console.log('extent', getter('types'), extent)
+    revenueTypeList.call(renderTotals, types, extent);
   }
 
   function updateCompanyList(data) {
@@ -154,14 +184,14 @@
       .entries(data)
       .map(function(data) {
         var total = d3.sum(data.values, getter('Government Reported'));
-        console.log('total', d3.sum(data.values, getter('Variance Percent')))
-        console.log(data)
+        // console.log('total', d3.sum(data.values, getter('Variance Percent')))
+        // console.log(data)
         var obj = {
           name: data.key,
           total: total,
           types: grouper.entries(data.values)
             .map(function(d) {
-              // console.log('--->', d)
+              // console.log('-list-->', d)
               return {
                 name: d.key,
                 value: d.values[0].value,
@@ -170,7 +200,7 @@
               };
             })
         };
-        console.log('==>', obj)
+        // console.log('=list=>', obj)
         return obj
 
       });
@@ -183,11 +213,11 @@
       .text('')
     heading.append('th')
       .html(function(d) {
-        return 'variance (<span class="red">red</span> indicates <span class="term term-p" data-term="material variance" title="Click to define" tabindex="0">material var.<i class="icon-book"></i></span>)';
-      })
+        return 'amount reported by company (<strong>co</strong>) and by government (<strong>gov</strong>)';
+      });
     heading.append('th')
       .html(function(d) {
-        return 'amount reported by company (<strong>co</strong>) and by government (<strong>gov</strong>)';
+        return 'variance (<span class="red">red</span> indicates <span class="term term-p" data-term="material variance" title="Click to define" tabindex="0">material var.<i class="icon-book"></i></span>)';
       });
     var items = companyList.selectAll('tbody.company')
       .data(companies, getter('name'));
@@ -230,6 +260,7 @@
     //   // });
 
     var extent = d3.extent(companies, getter('total'));
+    console.log(getter('types'))
     items.call(renderSubtypes, getter('types'), extent);
   }
 
@@ -307,7 +338,7 @@
 
     selection.select('.value')
       .html(function(d) {
-        // console.log('val',d)
+        // console.log('items',d)
         var multiLine = formatNumber(d.company) +
           ' <span>gov</span>' +
           '</br>' +
@@ -333,6 +364,74 @@
     //     .attr('min', Math.min(0, extent[0]))
     //     .attr('max', extent[1]);
     // }
+  }
+
+  function renderTotals(selection, types, extent) {
+    var items = selection.selectAll('.subtype')
+      .data(types, getter('name'));
+
+    items.exit().remove();
+    items.enter().append('tr')
+      .attr('class', 'subtype')
+      // .call(setupRevenueItem);
+      .call(setupTotals)
+
+    items
+      // .call(updateRevenueItem, extent)
+      .call(updateTotals, extent)
+      .sort(function(a, b) {
+        // console.log(a,b)
+        return d3.descending(a.value, b.value);
+      });
+  }
+
+  function setupTotals(selection) {
+    selection.append('td')
+      .attr('class', 'name');
+    // selection.append('td')
+      // .attr('class', 'value');
+    selection.append('td')
+      .attr('class', 'variance')
+    selection.append('td')
+      .attr('class', 'bar')
+      .append(function() {
+        // XXX this is a document.registerElement() workaround
+        return new EITIBar(); // jshint ignore:line
+      });
+  }
+
+  function updateTotals(selection, extent) {
+
+    selection.select('.name')
+      .text(getter('name'));
+
+    // selection.select('.value')
+    //   .html(function(d) {
+    //     console.log('val',d)
+    //     var multiLine = formatNumber(d.company) +
+    //       ' <span>gov</span>' +
+    //       '</br>' +
+    //       formatNumber(d.value) +
+    //       ' <span>co</span>';
+    //     return multiLine;
+    //   });
+        // console.log('s',getter('value'))
+    var bar = selection.select('eiti-bar')
+      .attr('value', function(d) {
+        return d.types[0].variance;
+      })
+    // console.log('bar val:',getter('value'))
+    console.log('extent:',extent)
+    if (extent) {
+      bar
+        .attr('min', Math.min(0, extent[0]))
+        .attr('max', extent[1]);
+    }
+    selection.select('.variance')
+      .text(function(d) {
+        console.log('val',d)
+        return formatPercent(d.types[0].variance / 100);
+      });
   }
 
   function updateFilterDescription(state) {

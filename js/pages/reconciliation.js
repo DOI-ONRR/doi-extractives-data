@@ -141,8 +141,42 @@
       .map(function(data) {
         console.log('~~~~~~~~',data)
         var totalGov = d3.sum(data.values, getter('Government Reported'));
+        console.log(totalGov)
         var totalCompany = d3.sum(data.values, getter('Company Reported'));
-        var variance = Math.abs(100 * d3.sum(data.values, getter('Variance Dollars')) / totalGov);
+        var variance = (totalGov === 0)
+          ? 0
+          : (100 * d3.sum(data.values, getter('Variance Dollars')) / totalGov);
+
+        // var variance = (100 * d3.sum(data.values, function(d) {
+
+
+        //   var val = d['Variance Dollars']
+        //   var isException = function(val) {
+
+
+
+        //     val = val.trim()
+        //     console.log('-', val)
+        //     // console.log(typeof(val), val)
+        //     return (val === 'DNP' || val === 'DNR' || val === 'N/A');
+        //     // if (!exception) {
+        //     //   return val;
+        //     // }
+
+        //   }
+        //   if (d['Type'] === 'Renewables') {
+        //     console.log(d)
+        //   if (!isException(val)) {
+        //     // console.log(val)
+        //     return val;
+        //   } else {
+        //     console.log('exception', val)
+        //   }
+        // }
+        // }) / totalGov);
+      // var variance = (100 * d3.sum(data.values, isException(getter('Variance Dollars'))) / totalGov);
+        console.log('--------',variance)
+        // console.log('----->', data.values, getter('Variance Dollars'))
         var obj = {
           name: data.key,
           totalGov: totalGov,
@@ -151,7 +185,7 @@
           variance: variance,
           types: grouper.entries(data.values)
             .map(function(d) {
-              console.log('--->', d)
+              // console.log('--->', d)
               return {
                 value: d.values[0].value,
                 company: d.values[0].company,
@@ -185,7 +219,7 @@
                 name: d.key,
                 value: d.values[0].value,
                 company: d.values[0].company,
-                variance: d.values[0].variance
+                variance: Math.abs(d.values[0].variance)
               };
             })
         };
@@ -199,6 +233,7 @@
       .attr('class', 'list-heading')
       .append('tr')
     heading.append('th')
+      .attr('class', 'narrow')
       .text('')
     heading.append('th')
       .html(function(d) {
@@ -218,7 +253,7 @@
       .append('tr')
         .attr('class', 'name');
     enter.append('th')
-      .attr('class', 'subregion-name')
+      .attr('class', 'subregion-name narrow')
       .text(getter('name'));
     enter.append('th')
       .attr('class', 'subtotal value');
@@ -226,7 +261,7 @@
       .attr('class', 'subtotal-label');
 
     items.sort(function(a, b) {
-      return d3.descending(a.total, b.total);
+      return d3.descending(Math.abs(a.total), Math.abs(b.total));
     });
     // debugger
     // items.select('.subtotal-label')
@@ -265,7 +300,7 @@
     items
       .call(updateRevenueItem, extent)
       .sort(function(a, b) {
-        return d3.descending(a.value, b.value);
+        return d3.descending(Math.abs(a.value), Math.abs(b.value));
       });
   }
 
@@ -305,7 +340,7 @@
 
   function setupRevenueItem(selection) {
     selection.append('td')
-      .attr('class', 'name');
+      .attr('class', 'name narrow');
     selection.append('td')
       .attr('class', 'value');
     selection.append('td')
@@ -374,7 +409,7 @@
 
   function setupTotals(selection) {
     selection.append('td')
-      .attr('class', 'name');
+      .attr('class', 'name narrow');
     // selection.append('td')
       // .attr('class', 'value');
     selection.append('td')

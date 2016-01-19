@@ -47,9 +47,6 @@
       : '';
   }
 
-  // buttons that expand and collapse other elements
-  var filterToggle = root.select('button.toggle-filters');
-
   // FIXME: componentize these too
   var filterParts = root.selectAll('a[data-key]');
   filterParts.on('click', function(e, index) {
@@ -169,7 +166,6 @@
           name: data.key,
           totalGov: totalGov,
           totalCompany: totalCompany,
-
           variance: variance,
           types: grouper.entries(data.values)
             .map(function(d) {
@@ -186,6 +182,7 @@
       });
 
     var extent = d3.extent(types, getter('variance'));
+
     revenueTypeList.call(renderTotals, types, extent);
   }
 
@@ -289,7 +286,7 @@
     if (query) {
       items
         .style('display', function(d) {
-          d.index = d.name.toLowerCase().indexOf(query)
+          d.index = d.name.toLowerCase().indexOf(query);
           return d.index > -1 ? null : 'none';
         })
         .filter(function(d) {

@@ -143,18 +143,20 @@
         console.log('~~~~~~~~',data)
         var totalGov = d3.sum(data.values, getter('Government Reported'));
         var totalCompany = d3.sum(data.values, getter('Company Reported'));
+        var variance = Math.abs(100 * d3.sum(data.values, getter('Variance Dollars')) / totalGov);
         var obj = {
           name: data.key,
           totalGov: totalGov,
           totalCompany: totalCompany,
           // varianceD: d3.sum(data.values, getter('Variance Dollars')),
+          variance: variance,
           types: grouper.entries(data.values)
             .map(function(d) {
               console.log('--->', d)
               return {
                 value: d.values[0].value,
                 company: d.values[0].company,
-                variance: (100 * d3.sum(data.values, getter('Variance Dollars')) / totalCompany),
+                variance: variance,
                 varianceDollars: d3.sum(data.values, getter('Variance Dollars'))
               };
             })
@@ -173,7 +175,7 @@
     //   });
     console.log('=table=>',types)
 
-    var extent = d3.extent(types, getter('totalGov'));
+    var extent = d3.extent(types, getter('variance'));
     console.log('extent', getter('types'), extent)
     revenueTypeList.call(renderTotals, types, extent);
   }
@@ -339,10 +341,10 @@
     selection.select('.value')
       .html(function(d) {
         // console.log('items',d)
-        var multiLine = formatNumber(d.company) +
+        var multiLine = formatNumber(d.value) +
           ' <span>gov</span>' +
           '</br>' +
-          formatNumber(d.value) +
+          formatNumber(d.company) +
           ' <span>co</span>';
         return multiLine;
       });
@@ -380,8 +382,8 @@
       // .call(updateRevenueItem, extent)
       .call(updateTotals, extent)
       .sort(function(a, b) {
-        // console.log(a,b)
-        return d3.descending(a.value, b.value);
+        console.log('>>>>>>',a,b)
+        return d3.descending(a.variance, b.variance);
       });
   }
 
@@ -430,7 +432,7 @@
     selection.select('.variance')
       .text(function(d) {
         console.log('val',d)
-        return formatPercent(d.types[0].variance / 100);
+        return formatPercent(Math.abs(d.types[0].variance / 100));
       });
   }
 

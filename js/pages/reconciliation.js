@@ -422,7 +422,7 @@
     }
     selection.select('.variance')
       .text(function(d) {
-        return formatPercent(Math.abs(d.types[0].variance / 100));
+        return formatPercent(d.types[0].variance / 100);
       });
   }
 

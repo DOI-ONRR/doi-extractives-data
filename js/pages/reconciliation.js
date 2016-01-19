@@ -21,7 +21,7 @@
 
   function isException (val, vart) {
     if (typeof(val) === 'string') {
-      val = val.trim()
+      val = val.trim();
       return (val === 'DNP' || val === 'DNR' || val === 'N/A');
     }
   }
@@ -62,7 +62,6 @@
 
   var model = eiti.explore.model(eiti.data.path + 'reconciliation/revenue.tsv')
     .transform(removeRevenueTypePrefix)
-
     .filter('type', function(data, type) {
       return data.filter(function(d) {
         return d.revenueType === type;
@@ -101,7 +100,7 @@
             variance: d['Variance Percent'],
             varianceDollars: d['Variance Dollars']
           };
-        })
+        });
       })
       .sortValues(function(a, b) {
         return d3.descending(+a['Government Reported'], +b['Government Reported']);
@@ -169,7 +168,6 @@
           variance: variance,
           types: grouper.entries(data.values)
             .map(function(d) {
-              // console.log('--->', d)
               return {
                 value: d.values[0].value,
                 company: d.values[0].company,
@@ -211,7 +209,7 @@
             })
         };
 
-        return obj
+        return obj;
 
       });
 
@@ -280,7 +278,6 @@
   }
 
   function updateNameSearch() {
-    // console.log(search.property('value'))
     var query = search.property('value').toLowerCase() || '';
     var items = companyList.selectAll('.company');
     if (query) {
@@ -332,7 +329,7 @@
       .html(function(d) {
         var company = isException(d.company)
           ? d.company
-          : formatNumber(d.company)
+          : formatNumber(d.company);
 
         var multiLine = formatNumber(d.value) +
           ' <span class="reportee">gov</span>' +

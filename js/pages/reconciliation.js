@@ -259,25 +259,6 @@
     items.sort(function(a, b) {
       return d3.descending(Math.abs(a.total), Math.abs(b.total));
     });
-    // debugger
-    // items.select('.subtotal-label')
-    //   .html(function(d) {
-    //     // console.log(d)
-    //     return 'variance (<span class="red">red</span> indicates <span class="term term-p" data-term="material variance" title="Click to define" tabindex="0">material var.<i class="icon-book"></i></span>)';
-    //     // return d.types.length > 1 ? 'variance (<span class="red">red</span> indicates <span class="term term-p" data-term="material variance" title="Click to define" tabindex="0">material var.<i class="icon-book"></i></span>)' : '';
-    //   });
-
-    // items.select('.subtotal')
-    //   .html(function(d) {
-    //     // console.log(d)
-    //     return 'amount reported by company (<strong>co</strong>) and by government (<strong>gov</strong>)';
-    //     // return d.types.length > 1 ? 'amount reported by company (<strong>co</strong>) and by government (<strong>gov</strong>)' : '';
-    //   });
-    //   // Total Gov Reported Revenue
-    //   // .text(function(d) {
-    //   //   // console.log(d)
-    //   //   return d.types.length > 1 ? formatNumber(d.total) : '';
-    //   // });
 
     var extent = d3.extent(companies, getter('total'));
 
@@ -285,6 +266,7 @@
   }
 
   function renderSubtypes(selection, types, extent) {
+
     var items = selection.selectAll('.subtype')
       .data(types, getter('name'));
 

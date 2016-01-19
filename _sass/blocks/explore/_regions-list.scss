@@ -86,6 +86,9 @@
   tr > *:first-child {
     padding-left: $base-padding;
     width: 80%;
+    &.narrow {
+      width: 50%;
+    }
   }
 
   tr > *:last-child {

@@ -33,7 +33,7 @@ var types = [
   'Renewables',
   'AML Fees',
   'OSMRE Civil Penalties',
-  'Corporate Income Tax Company'
+  'Corporate Income Tax',
 ];
 
 String.prototype.regex = function(str) {
@@ -74,16 +74,6 @@ async.waterfall([
 
     rows.forEach(function(d, i) {
       types.forEach(function(type) {
-        if (type === 'Corporate Income Tax Company') {
-          result.push({
-            'Company': d['Reporting Companies'],
-            'Type':  type,
-            'Government Reported': 0,
-            'Company Reported': parseValue(d[type],'dollars'),
-            'Variance Dollars': 0,
-            'Variance Percent': 0
-          });
-        } else {
           var gov = parseValue(d[type + ' Government'], 'dollars')
           var company = parseValue(d[type + ' Company'], 'dollars')
 
@@ -104,10 +94,9 @@ async.waterfall([
              : -1 * parseValue(d[type + ' Variance %'], 'percent')
 
           });
-        }
       });
     });
-    // console.warn(result)
+
     done(null, result);
   }
 ], function(error, rows) {

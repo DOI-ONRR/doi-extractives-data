@@ -10,7 +10,7 @@ Alpha Natural Resources, Inc.	Permit Fees	50749	50749	0	0
 Alpha Natural Resources, Inc.	Renewables	0	0	0	0
 Alpha Natural Resources, Inc.	AML Fees	19128754	19322861	-194107	-1
 Alpha Natural Resources, Inc.	OSMRE Civil Penalties	0	0	0	0
-Alpha Natural Resources, Inc.	Corporate Income Tax Company	0	 DNR 	0	0
+Alpha Natural Resources, Inc.	Corporate Income Tax	0	 DNR 	 N/A 	N/A
 Anadarko Petroleum Corporation	Royalties	384154902	382748703	1406199	0.4
 Anadarko Petroleum Corporation	Rents	19860986	20252345	-391359	-2
 Anadarko Petroleum Corporation	Bonus	49651028	49808312	-157284	-0.3
@@ -22,7 +22,7 @@ Anadarko Petroleum Corporation	Permit Fees	2696255	2704823	-8568	-0.3
 Anadarko Petroleum Corporation	Renewables	0	0	0	0
 Anadarko Petroleum Corporation	AML Fees	0	0	0	0
 Anadarko Petroleum Corporation	OSMRE Civil Penalties	0	0	0	0
-Anadarko Petroleum Corporation	Corporate Income Tax Company	0	 DNR 	0	0
+Anadarko Petroleum Corporation	Corporate Income Tax	0	 DNR 	 N/A 	N/A
 ANKOR Energy LLC	Royalties	58091785	56708700	1383085	2.4
 ANKOR Energy LLC	Rents	177490	193970	-16480	-9
 ANKOR Energy LLC	Bonus	0	0	0	0
@@ -34,7 +34,7 @@ ANKOR Energy LLC	Permit Fees	0	0	0	0
 ANKOR Energy LLC	Renewables	0	0	0	0
 ANKOR Energy LLC	AML Fees	0	0	0	0
 ANKOR Energy LLC	OSMRE Civil Penalties	0	0	0	0
-ANKOR Energy LLC	Corporate Income Tax Company	0	 N/A 	0	0
+ANKOR Energy LLC	Corporate Income Tax	0	 N/A 	 N/A 	N/A
 Apache Corporation	Royalties	438589423	 DNP 	 N/A 	N/A
 Apache Corporation	Rents	3500972	 DNP 	 N/A 	N/A
 Apache Corporation	Bonus	33478000	 DNP 	 N/A 	N/A
@@ -46,7 +46,7 @@ Apache Corporation	Permit Fees	450253	 DNP 	 N/A 	N/A
 Apache Corporation	Renewables	0	 DNP 	 N/A 	N/A
 Apache Corporation	AML Fees	0	 DNP 	 N/A 	N/A
 Apache Corporation	OSMRE Civil Penalties	0	 DNP 	 N/A 	N/A
-Apache Corporation	Corporate Income Tax Company	0	 DNP 	0	0
+Apache Corporation	Corporate Income Tax	0	 DNP 	 N/A 	N/A
 Arch Coal, Inc.	Royalties	182167078	182167078	0	0
 Arch Coal, Inc.	Rents	232049	250989	-18940	-8
 Arch Coal, Inc.	Bonus	60000202	60000202	0	0
@@ -58,7 +58,7 @@ Arch Coal, Inc.	Permit Fees	734	734	0	0
 Arch Coal, Inc.	Renewables	0	0	0	0
 Arch Coal, Inc.	AML Fees	34025339	34025339	0	0
 Arch Coal, Inc.	OSMRE Civil Penalties	0	0	0	0
-Arch Coal, Inc.	Corporate Income Tax Company	0	 DNR 	0	0
+Arch Coal, Inc.	Corporate Income Tax	0	 DNR 	 N/A 	N/A
 Arena Energy, LLC	Royalties	85536515	85549962	-13447	0
 Arena Energy, LLC	Rents	1182340	1180362	1978	0
 Arena Energy, LLC	Bonus	1307000	1307000	0	0
@@ -70,7 +70,7 @@ Arena Energy, LLC	Permit Fees	0	0	0	0
 Arena Energy, LLC	Renewables	0	0	0	0
 Arena Energy, LLC	AML Fees	0	0	0	0
 Arena Energy, LLC	OSMRE Civil Penalties	0	0	0	0
-Arena Energy, LLC	Corporate Income Tax Company	0	 N/A 	0	0
+Arena Energy, LLC	Corporate Income Tax	0	 N/A 	 N/A 	N/A
 BHP Billiton LTD	Royalties	290943513	290876410	67103	0
 BHP Billiton LTD	Rents	11531065	11715699	-184634	-2
 BHP Billiton LTD	Bonus	121705398	123566486	-1861088	-1.5
@@ -82,7 +82,7 @@ BHP Billiton LTD	Permit Fees	92644	92644	0	0
 BHP Billiton LTD	Renewables	0	0	0	0
 BHP Billiton LTD	AML Fees	2895555	2895555	0	0
 BHP Billiton LTD	OSMRE Civil Penalties	0	0	0	0
-BHP Billiton LTD	Corporate Income Tax Company	0	 DNR 	0	0
+BHP Billiton LTD	Corporate Income Tax	0	 DNR 	 N/A 	N/A
 BOPCO, LP	Royalties	78674576	 DNP 	 N/A 	N/A
 BOPCO, LP	Rents	52115	 DNP 	 N/A 	N/A
 BOPCO, LP	Bonus	0	 DNP 	 N/A 	N/A
@@ -94,7 +94,7 @@ BOPCO, LP	Permit Fees	378214	 DNP 	 N/A 	N/A
 BOPCO, LP	Renewables	0	 DNP 	 N/A 	N/A
 BOPCO, LP	AML Fees	0	 DNP 	 N/A 	N/A
 BOPCO, LP	OSMRE Civil Penalties	0	 DNP 	 N/A 	N/A
-BOPCO, LP	Corporate Income Tax Company	0	 DNP 	0	0
+BOPCO, LP	Corporate Income Tax	0	 DNP 	 N/A 	N/A
 BP America	Royalties	847156065	847036243	119822	0
 BP America	Rents	25739425	25199393	540032	2
 BP America	Bonus	0	0	0	0
@@ -106,7 +106,7 @@ BP America	Permit Fees	130935	130500	435	0.3
 BP America	Renewables	0	0	0	0
 BP America	AML Fees	0	0	0	0
 BP America	OSMRE Civil Penalties	0	0	0	0
-BP America	Corporate Income Tax Company	0	85000000	0	0
+BP America	Corporate Income Tax	85000000	85000000	0	0
 Chevron Corporation	Royalties	827397767	772842106	54555661	6.6
 Chevron Corporation	Rents	19149064	19003698	145366	1
 Chevron Corporation	Bonus	101636143	101636143	0	0
@@ -118,7 +118,7 @@ Chevron Corporation	Permit Fees	218878	215043	3835	1.8
 Chevron Corporation	Renewables	0	0	0	0
 Chevron Corporation	AML Fees	0	0	0	0
 Chevron Corporation	OSMRE Civil Penalties	13680	13680	0	0
-Chevron Corporation	Corporate Income Tax Company	0	 DNR 	0	0
+Chevron Corporation	Corporate Income Tax	0	 DNR 	 N/A 	 N/A
 Cimarex Energy Co.	Royalties	67020156	67020148	8	0
 Cimarex Energy Co.	Rents	45254	47972	-2718	-6
 Cimarex Energy Co.	Bonus	0	0	0	0
@@ -130,7 +130,7 @@ Cimarex Energy Co.	Permit Fees	1075805	1121342	-45537	-4.23
 Cimarex Energy Co.	Renewables	0	0	0	0
 Cimarex Energy Co.	AML Fees	0	0	0	0
 Cimarex Energy Co.	OSMRE Civil Penalties	0	0	0	0
-Cimarex Energy Co.	Corporate Income Tax Company	0	-427025	0	0
+Cimarex Energy Co.	Corporate Income Tax	-427025	-427025	0	0
 Cloud Peak Energy Resources, LLC	Royalties	120674727	120674728	-1	0
 Cloud Peak Energy Resources, LLC	Rents	100997	104484	-3487	-3
 Cloud Peak Energy Resources, LLC	Bonus	79026630	79026631	-1	0
@@ -142,7 +142,7 @@ Cloud Peak Energy Resources, LLC	Permit Fees	222366	218752	3614	1.6
 Cloud Peak Energy Resources, LLC	Renewables	0	0	0	0
 Cloud Peak Energy Resources, LLC	AML Fees	24335853	24335853	0	0
 Cloud Peak Energy Resources, LLC	OSMRE Civil Penalties	0	0	0	0
-Cloud Peak Energy Resources, LLC	Corporate Income Tax Company	0	9500000	0	0
+Cloud Peak Energy Resources, LLC	Corporate Income Tax	9500000	9500000	0	0
 Cobalt International Energy, Inc.	Royalties	0	0	0	0
 Cobalt International Energy, Inc.	Rents	9848675	9958115	-109440	-1
 Cobalt International Energy, Inc.	Bonus	54536650	54536650	0	0
@@ -154,7 +154,7 @@ Cobalt International Energy, Inc.	Permit Fees	0	0	0	0
 Cobalt International Energy, Inc.	Renewables	0	0	0	0
 Cobalt International Energy, Inc.	AML Fees	0	0	0	0
 Cobalt International Energy, Inc.	OSMRE Civil Penalties	0	0	0	0
-Cobalt International Energy, Inc.	Corporate Income Tax Company	0	 DNR 	0	0
+Cobalt International Energy, Inc.	Corporate Income Tax	0	 DNR 	 N/A 	N/A
 Concho Resources, Inc.	Royalties	89435693	 DNP 	 N/A 	N/A
 Concho Resources, Inc.	Rents	100167	 DNP 	 N/A 	N/A
 Concho Resources, Inc.	Bonus	0	 DNP 	 N/A 	N/A
@@ -166,7 +166,7 @@ Concho Resources, Inc.	Permit Fees	887802	 DNP 	 N/A 	N/A
 Concho Resources, Inc.	Renewables	0	 DNP 	 N/A 	N/A
 Concho Resources, Inc.	AML Fees	0	 DNP 	 N/A 	N/A
 Concho Resources, Inc.	OSMRE Civil Penalties	0	 DNP 	 N/A 	N/A
-Concho Resources, Inc.	Corporate Income Tax Company	0	 DNP 	0	0
+Concho Resources, Inc.	Corporate Income Tax	0	 DNP 	 N/A 	N/A
 ConocoPhillips	Royalties	261150468	262682834	-1532366	-0.6
 ConocoPhillips	Rents	24411479	24609486	-198007	-1
 ConocoPhillips	Bonus	131941971	131781972	159999	0.1
@@ -178,7 +178,7 @@ ConocoPhillips	Permit Fees	659300	851500	-192200	-29.2
 ConocoPhillips	Renewables	0	0	0	0
 ConocoPhillips	AML Fees	0	0	0	0
 ConocoPhillips	OSMRE Civil Penalties	0	0	0	0
-ConocoPhillips	Corporate Income Tax Company	0	 DNR 	0	0
+ConocoPhillips	Corporate Income Tax	0	 DNR 	 N/A 	N/A
 Continental Resources, Inc.	Royalties	25752648	 DNP 	 N/A 	N/A
 Continental Resources, Inc.	Rents	96131	 DNP 	 N/A 	N/A
 Continental Resources, Inc.	Bonus	0	 DNP 	 N/A 	N/A
@@ -190,7 +190,7 @@ Continental Resources, Inc.	Permit Fees	303460	 DNP 	 N/A 	N/A
 Continental Resources, Inc.	Renewables	0	 DNP 	 N/A 	N/A
 Continental Resources, Inc.	AML Fees	0	 DNP 	 N/A 	N/A
 Continental Resources, Inc.	OSMRE Civil Penalties	0	 DNP 	 N/A 	N/A
-Continental Resources, Inc.	Corporate Income Tax Company	0	 DNP 	0	0
+Continental Resources, Inc.	Corporate Income Tax	0	 DNP 	 N/A 	N/A
 Devon Energy Corporation	Royalties	122680600	122554109	126491	0.1
 Devon Energy Corporation	Rents	370479	379276	-8797	-2
 Devon Energy Corporation	Bonus	0	0	0	0
@@ -202,7 +202,7 @@ Devon Energy Corporation	Permit Fees	1605762	1602291	3471	0.2
 Devon Energy Corporation	Renewables	0	0	0	0
 Devon Energy Corporation	AML Fees	0	0	0	0
 Devon Energy Corporation	OSMRE Civil Penalties	0	0	0	0
-Devon Energy Corporation	Corporate Income Tax Company	0	 DNR 	0	0
+Devon Energy Corporation	Corporate Income Tax	0	 DNR 	 N/A 	N/A
 Encana Corporation	Royalties	158698597	 DNP 	 N/A 	N/A
 Encana Corporation	Rents	960140	 DNP 	 N/A 	N/A
 Encana Corporation	Bonus	0	 DNP 	 N/A 	N/A
@@ -214,7 +214,7 @@ Encana Corporation	Permit Fees	2041480	 DNP 	 N/A 	N/A
 Encana Corporation	Renewables	0	 DNP 	 N/A 	N/A
 Encana Corporation	AML Fees	0	 DNP 	 N/A 	N/A
 Encana Corporation	OSMRE Civil Penalties	0	 DNP 	 N/A 	N/A
-Encana Corporation	Corporate Income Tax Company	0	 DNP 	0	0
+Encana Corporation	Corporate Income Tax	0	 DNP 	 N/A 	N/A
 Energy XXI	Royalties	206116211	206116211	0	0
 Energy XXI	Rents	195740	185978	9762	5
 Energy XXI	Bonus	302242	302242	0	0
@@ -226,7 +226,7 @@ Energy XXI	Permit Fees	0	0	0	0
 Energy XXI	Renewables	0	0	0	0
 Energy XXI	AML Fees	0	0	0	0
 Energy XXI	OSMRE Civil Penalties	0	0	0	0
-Energy XXI	Corporate Income Tax Company	0	 DNR 	0	0
+Energy XXI	Corporate Income Tax	0	 DNR 	 N/A 	N/A
 EPL Oil & Gas, Inc.	Royalties	106133424	105996710	136714	0.1
 EPL Oil & Gas, Inc.	Rents	378149	349766	28383	8
 EPL Oil & Gas, Inc.	Bonus	2143100	2205358	-62258	-2.9
@@ -238,7 +238,7 @@ EPL Oil & Gas, Inc.	Permit Fees	0	0	0	0
 EPL Oil & Gas, Inc.	Renewables	0	0	0	0
 EPL Oil & Gas, Inc.	AML Fees	0	0	0	0
 EPL Oil & Gas, Inc.	OSMRE Civil Penalties	0	0	0	0
-EPL Oil & Gas, Inc.	Corporate Income Tax Company	0	196424	0	0
+EPL Oil & Gas, Inc.	Corporate Income Tax	 N/A 	196424	NaN	NaN
 ENI Petroleum	Royalties	105748539	105748539	0	0
 ENI Petroleum	Rents	6765903	6765903	0	0
 ENI Petroleum	Bonus	4023000	4023000	0	0
@@ -250,7 +250,7 @@ ENI Petroleum	Permit Fees	0	0	0	0
 ENI Petroleum	Renewables	0	0	0	0
 ENI Petroleum	AML Fees	0	0	0	0
 ENI Petroleum	OSMRE Civil Penalties	0	0	0	0
-ENI Petroleum	Corporate Income Tax Company	0	19674	0	0
+ENI Petroleum	Corporate Income Tax	 N/A 	19674	NaN	NaN
 EOG Resources, Inc.	Royalties	92398882	 DNP 	 N/A 	N/A
 EOG Resources, Inc.	Rents	500155	 DNP 	 N/A 	N/A
 EOG Resources, Inc.	Bonus	0	 DNP 	 N/A 	N/A
@@ -262,7 +262,7 @@ EOG Resources, Inc.	Permit Fees	809140	 DNP 	 N/A 	N/A
 EOG Resources, Inc.	Renewables	0	 DNP 	 N/A 	N/A
 EOG Resources, Inc.	AML Fees	0	 DNP 	 N/A 	N/A
 EOG Resources, Inc.	OSMRE Civil Penalties	0	 DNP 	 N/A 	N/A
-EOG Resources, Inc.	Corporate Income Tax Company	0	 DNP 	0	0
+EOG Resources, Inc.	Corporate Income Tax	0	 DNP 	 N/A 	N/A
 Exxon Mobil Corporation	Royalties	474509808	474364629	145179	0
 Exxon Mobil Corporation	Rents	16978503	17005977	-27474	0
 Exxon Mobil Corporation	Bonus	226166445	224984045	1182400	0.5
@@ -274,7 +274,7 @@ Exxon Mobil Corporation	Permit Fees	910679	887250	23429	2.6
 Exxon Mobil Corporation	Renewables	0	0	0	0
 Exxon Mobil Corporation	AML Fees	0	0	0	0
 Exxon Mobil Corporation	OSMRE Civil Penalties	0	0	0	0
-Exxon Mobil Corporation	Corporate Income Tax Company	0	 DNR 	0	0
+Exxon Mobil Corporation	Corporate Income Tax	0	 DNR 	 N/A 	N/A
 Fieldwood Energy LLC	Royalties	47608965	 DNP 	 N/A 	N/A
 Fieldwood Energy LLC	Rents	4482901	 DNP 	 N/A 	N/A
 Fieldwood Energy LLC	Bonus	26208867	 DNP 	 N/A 	N/A
@@ -286,7 +286,7 @@ Fieldwood Energy LLC	Permit Fees	0	 DNP 	 N/A 	N/A
 Fieldwood Energy LLC	Renewables	0	 DNP 	 N/A 	N/A
 Fieldwood Energy LLC	AML Fees	0	 DNP 	 N/A 	N/A
 Fieldwood Energy LLC	OSMRE Civil Penalties	0	 DNP 	 N/A 	N/A
-Fieldwood Energy LLC	Corporate Income Tax Company	0	 DNP 	0	0
+Fieldwood Energy LLC	Corporate Income Tax	0	 DNP 	 N/A 	N/A
 Freeport-McMoRan Inc.	Royalties	312946187	312946187	0	0
 Freeport-McMoRan Inc.	Rents	4285169	4066778	218391	5
 Freeport-McMoRan Inc.	Bonus	83880250	83873645	6605	0
@@ -298,7 +298,7 @@ Freeport-McMoRan Inc.	Permit Fees	2203711	2185400	18311	0.8
 Freeport-McMoRan Inc.	Renewables	0	0	0	0
 Freeport-McMoRan Inc.	AML Fees	0	0	0	0
 Freeport-McMoRan Inc.	OSMRE Civil Penalties	0	0	0	0
-Freeport-McMoRan Inc.	Corporate Income Tax Company	0	135071332	0	0
+Freeport-McMoRan Inc.	Corporate Income Tax	 N/A 	135071332	NaN	NaN
 Hess Corporation	Royalties	196061653	196096387	-34734	0
 Hess Corporation	Rents	7217114	7284097	-66983	-1
 Hess Corporation	Bonus	4000000	4000000	0	0
@@ -310,7 +310,7 @@ Hess Corporation	Permit Fees	76701	75000	1701	2.2
 Hess Corporation	Renewables	0	0	0	0
 Hess Corporation	AML Fees	0	0	0	0
 Hess Corporation	OSMRE Civil Penalties	0	0	0	0
-Hess Corporation	Corporate Income Tax Company	0	 DNR 	0	0
+Hess Corporation	Corporate Income Tax	0	 DNR 	 N/A 	N/A
 Linn Energy, LLC	Royalties	82821666	 DNP 	 N/A 	N/A
 Linn Energy, LLC	Rents	10157	 DNP 	 N/A 	N/A
 Linn Energy, LLC	Bonus	0	 DNP 	 N/A 	N/A
@@ -322,7 +322,7 @@ Linn Energy, LLC	Permit Fees	2488643	 DNP 	 N/A 	N/A
 Linn Energy, LLC	Renewables	0	 DNP 	 N/A 	N/A
 Linn Energy, LLC	AML Fees	0	 DNP 	 N/A 	N/A
 Linn Energy, LLC	OSMRE Civil Penalties	0	 DNP 	 N/A 	N/A
-Linn Energy, LLC	Corporate Income Tax Company	0	 DNP 	0	0
+Linn Energy, LLC	Corporate Income Tax	0	 DNP 	 N/A 	N/A
 LLOG Exploration Company LLC	Royalties	190596220	 DNP 	 N/A 	N/A
 LLOG Exploration Company LLC	Rents	3094544	 DNP 	 N/A 	N/A
 LLOG Exploration Company LLC	Bonus	125091801	 DNP 	 N/A 	N/A
@@ -334,7 +334,7 @@ LLOG Exploration Company LLC	Permit Fees	0	 DNP 	 N/A 	N/A
 LLOG Exploration Company LLC	Renewables	0	 DNP 	 N/A 	N/A
 LLOG Exploration Company LLC	AML Fees	0	 DNP 	 N/A 	N/A
 LLOG Exploration Company LLC	OSMRE Civil Penalties	0	 DNP 	 N/A 	N/A
-LLOG Exploration Company LLC	Corporate Income Tax Company	0	 DNP 	0	0
+LLOG Exploration Company LLC	Corporate Income Tax	0	 DNP 	 N/A 	N/A
 Marathon Oil Company	Royalties	126113758	126121724	-7966	0
 Marathon Oil Company	Rents	3086739	3085628	1111	0
 Marathon Oil Company	Bonus	32802916	32802916	0	0
@@ -346,7 +346,7 @@ Marathon Oil Company	Permit Fees	159515	156000	3515	2.2
 Marathon Oil Company	Renewables	0	0	0	0
 Marathon Oil Company	AML Fees	0	0	0	0
 Marathon Oil Company	OSMRE Civil Penalties	0	0	0	0
-Marathon Oil Company	Corporate Income Tax Company	0	 DNR 	0	0
+Marathon Oil Company	Corporate Income Tax	0	 DNR 	 N/A 	N/A
 Newfield Exploration Company	Royalties	56885635	56965192	-79557	-0.1
 Newfield Exploration Company	Rents	228598	240521	-11923	-5
 Newfield Exploration Company	Bonus	4180	0	4180	100
@@ -358,7 +358,7 @@ Newfield Exploration Company	Permit Fees	2307330	2073500	233830	10.1
 Newfield Exploration Company	Renewables	0	0	0	0
 Newfield Exploration Company	AML Fees	0	0	0	0
 Newfield Exploration Company	OSMRE Civil Penalties	0	0	0	0
-Newfield Exploration Company	Corporate Income Tax Company	0	 DNR 	0	0
+Newfield Exploration Company	Corporate Income Tax	0	 DNR 	 N/A 	N/A
 Noble Energy, Inc.	Royalties	96060667	95768855	291812	0.3
 Noble Energy, Inc.	Rents	4467818	4415783	52035	1
 Noble Energy, Inc.	Bonus	0	0	0	0
@@ -370,7 +370,7 @@ Noble Energy, Inc.	Permit Fees	62399	86115	-23716	-38
 Noble Energy, Inc.	Renewables	0	0	0	0
 Noble Energy, Inc.	AML Fees	0	0	0	0
 Noble Energy, Inc.	OSMRE Civil Penalties	0	0	0	0
-Noble Energy, Inc.	Corporate Income Tax Company	0	 DNR 	0	0
+Noble Energy, Inc.	Corporate Income Tax	0	 DNR 	 N/A 	N/A
 Oxy USA, Inc.	Royalties	74972292	 DNP 	 N/A 	N/A
 Oxy USA, Inc.	Rents	332555	 DNP 	 N/A 	N/A
 Oxy USA, Inc.	Bonus	190982	 DNP 	 N/A 	N/A
@@ -382,7 +382,7 @@ Oxy USA, Inc.	Permit Fees	803490	 DNP 	 N/A 	N/A
 Oxy USA, Inc.	Renewables	0	 DNP 	 N/A 	N/A
 Oxy USA, Inc.	AML Fees	0	 DNP 	 N/A 	N/A
 Oxy USA, Inc.	OSMRE Civil Penalties	0	 DNP 	 N/A 	N/A
-Oxy USA, Inc.	Corporate Income Tax Company	0	 DNP 	0	0
+Oxy USA, Inc.	Corporate Income Tax	0	 DNP 	 N/A 	N/A
 Peabody Energy Corporation	Royalties	188130401	196437152	-8306751	-4.4
 Peabody Energy Corporation	Rents	192199	192199	0	0
 Peabody Energy Corporation	Bonus	276773916	276773916	0	0
@@ -394,7 +394,7 @@ Peabody Energy Corporation	Permit Fees	3217	10305	-7088	-220.3
 Peabody Energy Corporation	Renewables	0	0	0	0
 Peabody Energy Corporation	AML Fees	48492478	48532180	-39702	-0.1
 Peabody Energy Corporation	OSMRE Civil Penalties	2760	2760	0	0
-Peabody Energy Corporation	Corporate Income Tax Company	0	 DNR 	0	0
+Peabody Energy Corporation	Corporate Income Tax	0	 DNR 	 N/A 	N/A
 QEP Resources, Inc.	Royalties	95653947	 DNP 	 N/A 	N/A
 QEP Resources, Inc.	Rents	463665	 DNP 	 N/A 	N/A
 QEP Resources, Inc.	Bonus	23710	 DNP 	 N/A 	N/A
@@ -406,7 +406,7 @@ QEP Resources, Inc.	Permit Fees	1967395	 DNP 	 N/A 	N/A
 QEP Resources, Inc.	Renewables	0	 DNP 	 N/A 	N/A
 QEP Resources, Inc.	AML Fees	0	 DNP 	 N/A 	N/A
 QEP Resources, Inc.	OSMRE Civil Penalties	0	 DNP 	 N/A 	N/A
-QEP Resources, Inc.	Corporate Income Tax Company	0	 DNP 	0	0
+QEP Resources, Inc.	Corporate Income Tax	0	 DNP 	 N/A 	N/A
 Repsol E&P USA Inc.	Royalties	43988033	43988033	0	0
 Repsol E&P USA Inc.	Rents	5699607	5699607	0	0
 Repsol E&P USA Inc.	Bonus	611351	611351	0	0
@@ -418,7 +418,7 @@ Repsol E&P USA Inc.	Permit Fees	0	0	0	0
 Repsol E&P USA Inc.	Renewables	0	0	0	0
 Repsol E&P USA Inc.	AML Fees	0	0	0	0
 Repsol E&P USA Inc.	OSMRE Civil Penalties	0	0	0	0
-Repsol E&P USA Inc.	Corporate Income Tax Company	0	 N/A 	0	0
+Repsol E&P USA Inc.	Corporate Income Tax	0	 N/A 	 N/A 	N/A
 SandRidge Energy, Inc.	Royalties	132997664	 DNP 	 N/A 	N/A
 SandRidge Energy, Inc.	Rents	261311	 DNP 	 N/A 	N/A
 SandRidge Energy, Inc.	Bonus	458360	 DNP 	 N/A 	N/A
@@ -430,7 +430,7 @@ SandRidge Energy, Inc.	Permit Fees	13000	 DNP 	 N/A 	N/A
 SandRidge Energy, Inc.	Renewables	0	 DNP 	 N/A 	N/A
 SandRidge Energy, Inc.	AML Fees	0	 DNP 	 N/A 	N/A
 SandRidge Energy, Inc.	OSMRE Civil Penalties	0	 DNP 	 N/A 	N/A
-SandRidge Energy, Inc.	Corporate Income Tax Company	0	 DNP 	0	0
+SandRidge Energy, Inc.	Corporate Income Tax	0	 DNP 	 N/A 	N/A
 Shell E&P Company	Royalties	737334054	737334054	0	0
 Shell E&P Company	Rents	26648489	26570830	77659	0
 Shell E&P Company	Bonus	142229840	142619480	-389640	-0.3
@@ -442,7 +442,7 @@ Shell E&P Company	Permit Fees	22247	19537	2710	12.2
 Shell E&P Company	Renewables	0	0	0	0
 Shell E&P Company	AML Fees	0	0	0	0
 Shell E&P Company	OSMRE Civil Penalties	0	0	0	0
-Shell E&P Company	Corporate Income Tax Company	0	-60000000	0	0
+Shell E&P Company	Corporate Income Tax	-66297360	-60000000	-6297360	-9.5
 Statoil Gulf of Mexico	Royalties	92607958	86991402	5616556	6.1
 Statoil Gulf of Mexico	Rents	10173404	10007698	165706	2
 Statoil Gulf of Mexico	Bonus	106091454	106091454	0	0
@@ -454,7 +454,7 @@ Statoil Gulf of Mexico	Permit Fees	104335	104335	0	0
 Statoil Gulf of Mexico	Renewables	0	0	0	0
 Statoil Gulf of Mexico	AML Fees	0	0	0	0
 Statoil Gulf of Mexico	OSMRE Civil Penalties	0	0	0	0
-Statoil Gulf of Mexico	Corporate Income Tax Company	0	0	0	0
+Statoil Gulf of Mexico	Corporate Income Tax	0	0	0	0
 Stone Energy Corporation	Royalties	124046998	124046998	0	0
 Stone Energy Corporation	Rents	3862272	3862032	240	0
 Stone Energy Corporation	Bonus	17802096	17802096	0	0
@@ -466,7 +466,7 @@ Stone Energy Corporation	Permit Fees	3315	1780	1535	46.3
 Stone Energy Corporation	Renewables	0	0	0	0
 Stone Energy Corporation	AML Fees	0	0	0	0
 Stone Energy Corporation	OSMRE Civil Penalties	0	0	0	0
-Stone Energy Corporation	Corporate Income Tax Company	0	-15102744	0	0
+Stone Energy Corporation	Corporate Income Tax	 N/A 	-15102744	NaN	NaN
 Talos Energy LLC	Royalties	65725741	 DNP 	 N/A 	N/A
 Talos Energy LLC	Rents	1664388	 DNP 	 N/A 	N/A
 Talos Energy LLC	Bonus	0	 DNP 	 N/A 	N/A
@@ -478,7 +478,7 @@ Talos Energy LLC	Permit Fees	0	 DNP 	 N/A 	N/A
 Talos Energy LLC	Renewables	0	 DNP 	 N/A 	N/A
 Talos Energy LLC	AML Fees	0	 DNP 	 N/A 	N/A
 Talos Energy LLC	OSMRE Civil Penalties	0	 DNP 	 N/A 	N/A
-Talos Energy LLC	Corporate Income Tax Company	0	 DNP 	0	0
+Talos Energy LLC	Corporate Income Tax	0	 DNP 	 N/A 	N/A
 Ultra Resources Inc.	Royalties	101631395	100592803	1038592	1
 Ultra Resources Inc.	Rents	8699	8021	678	8
 Ultra Resources Inc.	Bonus	0	0	0	0
@@ -490,7 +490,7 @@ Ultra Resources Inc.	Permit Fees	1079450	1072950	6500	0.6
 Ultra Resources Inc.	Renewables	0	0	0	0
 Ultra Resources Inc.	AML Fees	0	0	0	0
 Ultra Resources Inc.	OSMRE Civil Penalties	0	0	0	0
-Ultra Resources Inc.	Corporate Income Tax Company	0	7500000	0	0
+Ultra Resources Inc.	Corporate Income Tax	 N/A 	7500000	NaN	NaN
 Venari Offshore LLC	Royalties	0	0	0	0
 Venari Offshore LLC	Rents	633600	633600	0	0
 Venari Offshore LLC	Bonus	67811424	67811424	0	0
@@ -502,7 +502,7 @@ Venari Offshore LLC	Permit Fees	0	0	0	0
 Venari Offshore LLC	Renewables	0	0	0	0
 Venari Offshore LLC	AML Fees	0	0	0	0
 Venari Offshore LLC	OSMRE Civil Penalties	0	0	0	0
-Venari Offshore LLC	Corporate Income Tax Company	0	 N/A 	0	0
+Venari Offshore LLC	Corporate Income Tax	0	 N/A 	 N/A 	N/A
 W&T Offshore, Inc.	Royalties	112117802	112117802	0	0
 W&T Offshore, Inc.	Rents	2923574	2923574	0	0
 W&T Offshore, Inc.	Bonus	392000	392000	0	0
@@ -514,7 +514,7 @@ W&T Offshore, Inc.	Permit Fees	0	0	0	0
 W&T Offshore, Inc.	Renewables	0	0	0	0
 W&T Offshore, Inc.	AML Fees	0	0	0	0
 W&T Offshore, Inc.	OSMRE Civil Penalties	0	0	0	0
-W&T Offshore, Inc.	Corporate Income Tax Company	0	56125879	0	0
+W&T Offshore, Inc.	Corporate Income Tax	56125879	56125879	0	0
 Walter Oil & Gas Corporation	Royalties	84708541	 DNP 	 N/A 	N/A
 Walter Oil & Gas Corporation	Rents	1061006	 DNP 	 N/A 	N/A
 Walter Oil & Gas Corporation	Bonus	2822500	 DNP 	 N/A 	N/A
@@ -526,7 +526,7 @@ Walter Oil & Gas Corporation	Permit Fees	0	 DNP 	 N/A 	N/A
 Walter Oil & Gas Corporation	Renewables	0	 DNP 	 N/A 	N/A
 Walter Oil & Gas Corporation	AML Fees	0	 DNP 	 N/A 	N/A
 Walter Oil & Gas Corporation	OSMRE Civil Penalties	0	 DNP 	 N/A 	N/A
-Walter Oil & Gas Corporation	Corporate Income Tax Company	0	 DNP 	0	0
+Walter Oil & Gas Corporation	Corporate Income Tax	0	 DNP 	 N/A 	N/A
 WPX Energy, Inc.	Royalties	88077827	88116556	-38729	0
 WPX Energy, Inc.	Rents	154045	123452	30593	20
 WPX Energy, Inc.	Bonus	0	0	0	0
@@ -538,4 +538,4 @@ WPX Energy, Inc.	Permit Fees	1600395	1599000	1395	0.1
 WPX Energy, Inc.	Renewables	0	0	0	0
 WPX Energy, Inc.	AML Fees	0	0	0	0
 WPX Energy, Inc.	OSMRE Civil Penalties	0	0	0	0
-WPX Energy, Inc.	Corporate Income Tax Company	0	-27500000	0	0
+WPX Energy, Inc.	Corporate Income Tax	 N/A 	-27500000	NaN	NaN

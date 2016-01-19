@@ -72,7 +72,6 @@
       });
     })
     .on('prefilter', function(key, data) {
-        // updateCommoditySelector(data);
         updateRevenueTypeSelector(data);
     });
 
@@ -96,12 +95,8 @@
     updateFilterDescription(state);
 
     grouper = d3.nest()
-      // .rollup(function(d) {
-      //   return d3.sum(d, getter('Government Reported'));
-
-      // })
       .rollup(function(leaves) {
-        // console.log('leaves',leaves)
+
         return leaves.map(function(d){
           return {
             value: d['Government Reported'],
@@ -114,8 +109,6 @@
       .sortValues(function(a, b) {
         return d3.descending(+a['Government Reported'], +b['Government Reported']);
       });
-
-    // console.log('grouper', grouper)
 
     var hasType = !!query.type;
 
@@ -137,8 +130,6 @@
   }
 
   function render(data /*, state */) {
-    // console.log('rendering %d rows', data.length, data[0]);
-    // console.log('=========',data)
     updateRevenueTypes(data);
     updateCompanyList(data);
     updateNameSearch();
@@ -161,55 +152,24 @@
   }
 
   function updateRevenueTypes(data) {
-    // console.log('=',data)
 
     var types = d3.nest()
       .key(getter('Type'))
       .entries(data)
       .map(function(data) {
-        // console.log('~~~~~~~~',data)
+
         var totalGov = d3.sum(data.values, getter('Government Reported'));
-        // console.log(totalGov)
+
         var totalCompany = d3.sum(data.values, getter('Company Reported'));
         var variance = (totalGov === 0)
           ? 0
           : (100 * d3.sum(data.values, getter('Variance Dollars')) / totalGov);
 
-        // var variance = (100 * d3.sum(data.values, function(d) {
-
-
-        //   var val = d['Variance Dollars']
-        //   var isException = function(val) {
-
-
-
-        //     val = val.trim()
-        //     console.log('-', val)
-        //     // console.log(typeof(val), val)
-        //     return (val === 'DNP' || val === 'DNR' || val === 'N/A');
-        //     // if (!exception) {
-        //     //   return val;
-        //     // }
-
-        //   }
-        //   if (d['Type'] === 'Renewables') {
-        //     console.log(d)
-        //   if (!isException(val)) {
-        //     // console.log(val)
-        //     return val;
-        //   } else {
-        //     console.log('exception', val)
-        //   }
-        // }
-        // }) / totalGov);
-      // var variance = (100 * d3.sum(data.values, isException(getter('Variance Dollars'))) / totalGov);
-        // console.log('--------',variance)
-        // console.log('----->', data.values, getter('Variance Dollars'))
         var obj = {
           name: data.key,
           totalGov: totalGov,
           totalCompany: totalCompany,
-          // varianceD: d3.sum(data.values, getter('Variance Dollars')),
+
           variance: variance,
           types: grouper.entries(data.values)
             .map(function(d) {
@@ -235,9 +195,6 @@
       .entries(data)
       .map(function(data) {
         var total = d3.sum(data.values, getter('Government Reported'));
-        // console.log('total', d3.sum(data.values, getter('Variance Percent')))
-        // console.log(data)
-
 
         var obj = {
           name: data.key,
@@ -247,7 +204,7 @@
               var variance = isException(d.values[0].variance)
                 ? d.values[0].variance
                 : Math.abs(d.values[0].variance)
-              // var company = typeof(d.values[0].company) === 'number'
+
               return {
                 name: d.key,
                 value: d.values[0].value,
@@ -256,7 +213,7 @@
               };
             })
         };
-        // console.log('=list=>', obj)
+
         return obj
 
       });
@@ -383,13 +340,7 @@
     selection.append('td')
       .attr('class', 'value');
     selection.append('td')
-      .attr('class', 'variance')
-    // selection.append('td')
-    //   .attr('class', 'bar')
-    //   .append(function() {
-    //     // XXX this is a document.registerElement() workaround
-    //     return new EITIBar(); // jshint ignore:line
-    //   });
+      .attr('class', 'variance');
   }
 
   function updateRevenueItem(selection, extent) {
@@ -403,7 +354,7 @@
         var company = isException(d.company)
           ? d.company
           : formatNumber(d.company)
-        // console.log('items',d)
+
         var multiLine = formatNumber(d.value) +
           ' <span class="reportee">gov</span>' +
           '</br>' +
@@ -414,29 +365,15 @@
 
     selection.select('.variance')
       .html(function(d) {
-        console.log(d)
 
         var variance = isException(d.variance, 'var')
           ? d.variance
           : formatPercent(d.variance / 100)
-        // console.log('val',variance)
 
         var color = isMaterial(d);
 
         return '<span class="' + color + '">' + variance + '</span>';
       });
-
-
-    // console.log('s',getter('value'))
-    // var bar = selection.select('eiti-bar')
-    //   .attr('value', getter('value'));
-    // // console.log('bar val:',getter('value'))
-    // // console.log('extent:',extent)
-    // if (extent) {
-    //   bar
-    //     .attr('min', Math.min(0, extent[0]))
-    //     .attr('max', extent[1]);
-    // }
   }
 
   function renderTotals(selection, types, extent) {
@@ -446,14 +383,11 @@
     items.exit().remove();
     items.enter().append('tr')
       .attr('class', 'subtype')
-      // .call(setupRevenueItem);
       .call(setupTotals)
 
     items
-      // .call(updateRevenueItem, extent)
       .call(updateTotals, extent)
       .sort(function(a, b) {
-        // console.log('>>>>>>',a,b)
         return d3.descending(a.variance, b.variance);
       });
   }
@@ -461,8 +395,6 @@
   function setupTotals(selection) {
     selection.append('td')
       .attr('class', 'name narrow');
-    // selection.append('td')
-      // .attr('class', 'value');
     selection.append('td')
       .attr('class', 'variance')
     selection.append('td')
@@ -478,23 +410,11 @@
     selection.select('.name')
       .text(getter('name'));
 
-    // selection.select('.value')
-    //   .html(function(d) {
-    //     console.log('val',d)
-    //     var multiLine = formatNumber(d.company) +
-    //       ' <span>gov</span>' +
-    //       '</br>' +
-    //       formatNumber(d.value) +
-    //       ' <span>co</span>';
-    //     return multiLine;
-    //   });
-        // console.log('s',getter('value'))
     var bar = selection.select('eiti-bar')
       .attr('value', function(d) {
         return d.types[0].variance;
-      })
-    // console.log('bar val:',getter('value'))
-    console.log('extent:',extent)
+      });
+
     if (extent) {
       bar
         .attr('min', Math.min(0, extent[0]))
@@ -513,12 +433,6 @@
       type: state.get('type') || 'All revenue',
       government: state.get('government'),
     };
-
-    /*
-    if (data.commodity === 'N/A') {
-      data.commodity = 'no applicable';
-    }
-    */
 
     desc.selectAll('[data-key]')
       .text(function() {

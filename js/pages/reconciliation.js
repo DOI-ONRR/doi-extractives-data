@@ -19,6 +19,13 @@
   var hash = eiti.explore.hash()
     .on('change', state.merge);
 
+  function isException(val, vart) {
+    if (typeof(val) === 'string') {
+      val = val.trim()
+      return (val === 'DNP' || val === 'DNR' || val === 'N/A');
+    }
+  }
+
   // buttons that expand and collapse other elements
   var filterToggle = root.select('button.toggle-filters');
 
@@ -140,9 +147,9 @@
       .key(getter('Type'))
       .entries(data)
       .map(function(data) {
-        console.log('~~~~~~~~',data)
+        // console.log('~~~~~~~~',data)
         var totalGov = d3.sum(data.values, getter('Government Reported'));
-        console.log(totalGov)
+        // console.log(totalGov)
         var totalCompany = d3.sum(data.values, getter('Company Reported'));
         var variance = (totalGov === 0)
           ? 0
@@ -176,7 +183,7 @@
         // }
         // }) / totalGov);
       // var variance = (100 * d3.sum(data.values, isException(getter('Variance Dollars'))) / totalGov);
-        console.log('--------',variance)
+        // console.log('--------',variance)
         // console.log('----->', data.values, getter('Variance Dollars'))
         var obj = {
           name: data.key,
@@ -207,7 +214,6 @@
     //       value: d.values
     //     };
     //   });
-    console.log('=table=>',types)
 
     var extent = d3.extent(types, getter('variance'));
     console.log('extent', getter('types'), extent)
@@ -222,17 +228,22 @@
         var total = d3.sum(data.values, getter('Government Reported'));
         // console.log('total', d3.sum(data.values, getter('Variance Percent')))
         // console.log(data)
+
+
         var obj = {
           name: data.key,
           total: total,
           types: grouper.entries(data.values)
             .map(function(d) {
-              // console.log('-list-->', d)
+              var variance = isException(d.values[0].variance)
+                ? d.values[0].variance
+                : Math.abs(d.values[0].variance)
+              // var company = typeof(d.values[0].company) === 'number'
               return {
                 name: d.key,
                 value: d.values[0].value,
                 company: d.values[0].company,
-                variance: Math.abs(d.values[0].variance)
+                variance: variance
               };
             })
         };
@@ -241,21 +252,27 @@
 
       });
 
-    var heading = companyList
-      .append('thead')
-      .attr('class', 'list-heading')
-      .append('tr')
-    heading.append('th')
-      .attr('class', 'narrow')
-      .text('')
-    heading.append('th')
-      .html(function(d) {
-        return 'amount reported by company (<strong>co</strong>) and by government (<strong>gov</strong>)';
-      });
-    heading.append('th')
-      .html(function(d) {
-        return 'variance (<span class="red">red</span> indicates <span class="term term-p" data-term="material variance" title="Click to define" tabindex="0">material var.<i class="icon-book"></i></span>)';
-      });
+    var hasChildren = companyList.select('.list-heading')[0][0];
+
+    if (!hasChildren) {
+      var heading = companyList
+        .append('thead')
+        .attr('class', 'list-heading')
+        .append('tr')
+      heading.append('th')
+        .attr('class', 'narrow')
+        .text('')
+      heading.append('th')
+        .html(function(d) {
+          return 'amount reported by company (<strong>co</strong>) and by government (<strong>gov</strong>)';
+        });
+      heading.append('th')
+        .attr('class', 'centered')
+        .html(function(d) {
+          return 'variance (<span class="red">red</span> indicates <span class="term term-p" data-term="material variance" title="Click to define" tabindex="0">material var.<i class="icon-book"></i></span>)';
+        });
+    }
+
     var items = companyList.selectAll('tbody.company')
       .data(companies, getter('name'));
 
@@ -297,7 +314,7 @@
     //   // });
 
     var extent = d3.extent(companies, getter('total'));
-    console.log(getter('types'))
+
     items.call(renderSubtypes, getter('types'), extent);
   }
 
@@ -373,21 +390,29 @@
     selection.select('.name')
       .text(getter('name'));
 
+
     selection.select('.value')
       .html(function(d) {
+        var company = isException(d.company)
+          ? d.company
+          : formatNumber(d.company)
         // console.log('items',d)
         var multiLine = formatNumber(d.value) +
-          ' <span>gov</span>' +
+          ' <span class="reportee">gov</span>' +
           '</br>' +
-          formatNumber(d.company) +
-          ' <span>co</span>';
+          company +
+          ' <span class="reportee">co</span>';
         return multiLine;
       });
 
     selection.select('.variance')
       .text(function(d) {
-        // console.log('val',d)
-        return formatPercent(d.variance / 100);
+
+        var variance = isException(d.variance, 'var')
+          ? d.variance
+          : formatPercent(d.variance / 100)
+        // console.log('val',variance)
+        return variance;
       });
 
 
@@ -417,7 +442,7 @@
       // .call(updateRevenueItem, extent)
       .call(updateTotals, extent)
       .sort(function(a, b) {
-        console.log('>>>>>>',a,b)
+        // console.log('>>>>>>',a,b)
         return d3.descending(a.variance, b.variance);
       });
   }
@@ -466,7 +491,6 @@
     }
     selection.select('.variance')
       .text(function(d) {
-        console.log('val',d)
         return formatPercent(Math.abs(d.types[0].variance / 100));
       });
   }

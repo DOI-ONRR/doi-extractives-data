@@ -95,6 +95,21 @@
 
   }
 
+  tr {
+    .variance,
+    .centered {
+      text-align: center;
+    }
+  }
+
+  tr > td > .reportee {
+    color: $neutral-gray;
+    display: inline-block;
+    font-weight: $weight-book;
+    text-align: left;
+    width: 25px;
+  }
+
   .bar_negative {
     padding-right: 0;
 

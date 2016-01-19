@@ -39,7 +39,7 @@
       'Renewables': 'N/A',
       'AML Fees': 2,
       'Civil Penalties': 3,
-      'Corporate Income Tax Company': 1
+      'Corporate Income Tax': 1
     }
 
     return varianceKey[d.name] < d.variance

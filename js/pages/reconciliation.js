@@ -220,26 +220,26 @@
 
       });
 
-    var hasChildren = companyList.select('.list-heading')[0][0];
+    // var hasChildren = companyList.select('.list-heading')[0][0];
 
-    if (!hasChildren) {
-      var heading = companyList
-        .append('thead')
-        .attr('class', 'list-heading')
-        .append('tr')
-      heading.append('th')
-        .attr('class', 'narrow')
-        .text('')
-      heading.append('th')
-        .html(function(d) {
-          return 'amount reported by company (<strong>co</strong>) and by government (<strong>gov</strong>)';
-        });
-      heading.append('th')
-        .attr('class', 'centered')
-        .html(function(d) {
-          return 'variance (<span class="red">red</span> indicates <span class="term term-p" data-term="material variance" title="Click to define" tabindex="0">material var.<i class="icon-book"></i></span>)';
-        });
-    }
+    // if (!hasChildren) {
+    //   var heading = companyList
+    //     .append('thead')
+    //     .attr('class', 'list-heading')
+    //     .append('tr')
+    //   heading.append('th')
+    //     .attr('class', 'narrow')
+    //     .text('')
+    //   heading.append('th')
+    //     .html(function(d) {
+    //       return 'amount reported by company (<strong>co</strong>) and by government (<strong>gov</strong>)';
+    //     });
+    //   heading.append('th')
+    //     .attr('class', 'centered')
+    //     .html(function(d) {
+    //       return 'variance (<span class="red">red</span> indicates <span class="term term-p" data-term="material variance" title="Click to define" tabindex="0">material var.<i class="icon-book"></i></span>)';
+    //     });
+    // }
 
     var items = companyList.selectAll('tbody.company')
       .data(companies, getter('name'));

@@ -19,11 +19,32 @@
   var hash = eiti.explore.hash()
     .on('change', state.merge);
 
-  function isException(val, vart) {
+  function isException (val, vart) {
     if (typeof(val) === 'string') {
       val = val.trim()
       return (val === 'DNP' || val === 'DNR' || val === 'N/A');
     }
+  }
+
+  function isMaterial (d) {
+    var varianceKey = {
+      'Royalties': 1,
+      'Rents':  2,
+      'Bonus': 2,
+      'Other Revenue': 3,
+      'Offshore Inspection Fee': 2,
+      'Civil Penalties': 1,
+      'Bonus & 1st Year Rental': 2,
+      'Permit Fees': 3,
+      'Renewables': 'N/A',
+      'AML Fees': 2,
+      'Civil Penalties': 3,
+      'Corporate Income Tax Company': 1
+    }
+
+    return varianceKey[d.name] < d.variance
+      ? 'red'
+      : '';
   }
 
   // buttons that expand and collapse other elements
@@ -392,13 +413,17 @@
       });
 
     selection.select('.variance')
-      .text(function(d) {
+      .html(function(d) {
+        console.log(d)
 
         var variance = isException(d.variance, 'var')
           ? d.variance
           : formatPercent(d.variance / 100)
         // console.log('val',variance)
-        return variance;
+
+        var color = isMaterial(d);
+
+        return '<span class="' + color + '">' + variance + '</span>';
       });
 
 

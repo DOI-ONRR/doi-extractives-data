@@ -42,6 +42,7 @@
     "test": "mocha",
     "test-html": "bundle exec htmlproof --disable-external _site",
     "webpack": "webpack",
+    "webpack-watch": "webpack --watch",
     "watch": "watchy -w '_sass' -- npm run build-styleguide",
     "build-styleguide": "rm -rf styleguide && kss-node --config kss-config.json && cd styleguide-template/ && npm run less",
     "init-styleguide": "npm-exec kss-node --config kss-config.json",

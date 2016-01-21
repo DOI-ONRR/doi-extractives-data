@@ -38,7 +38,6 @@ label,
 select {
   display: block;
   font-size: $base-font-size;
-
 }
 
 label {
@@ -126,6 +125,11 @@ select {
 
   &::-ms-expand {
     display: none;
+  }
+
+  &.inline {
+    display: inline-block;
+    width: auto;
   }
 }
 

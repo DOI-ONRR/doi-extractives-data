@@ -34,13 +34,8 @@
     d3.event.preventDefault();
   });
 
-  var model = eiti.explore.model(eiti.data.path + 'company/revenue.tsv')
+  var model = eiti.explore.model(eiti.data.path + 'reconciliation/revenue.tsv')
     .transform(removeRevenueTypePrefix)
-    .filter('commodity', function(data, commodity) {
-      return data.filter(function(d) {
-        return d.Commodity === commodity;
-      });
-    })
     .filter('type', function(data, type) {
       return data.filter(function(d) {
         return d.revenueType === type;
@@ -56,8 +51,7 @@
   var filters = root.selectAll('.filters [name]')
     .on('change', filterChange);
 
-  var search = root.select('#company-name-filter');
-  search
+  var search = root.select('#company-name-filter')
     .on('keyup', updateNameSearch)
     .on('clear', filterChange)
     .on('change', filterChange);
@@ -99,6 +93,7 @@
       });
 
       search.property('value', state.get('search') || '');
+
       render(data, state);
     });
   }
@@ -108,21 +103,6 @@
     updateRevenueTypes(data);
     updateCompanyList(data);
     updateNameSearch();
-  }
-
-  function updateCommoditySelector(data) {
-    var commodities = d3.nest()
-      .key(getter('Commodity'))
-      .entries(data)
-      .map(getter('key'))
-      .sort(d3.ascending);
-    var input = root.select('#commodity-selector');
-    var options = input.selectAll('option.value')
-      .data(commodities, identity);
-    options.enter().append('option')
-      .attr('class', 'value')
-      .attr('value', identity)
-      .text(identity);
   }
 
   function updateRevenueTypeSelector(data) {
@@ -138,7 +118,6 @@
       .attr('class', 'value')
       .attr('value', identity)
       .text(identity);
-
   }
 
   function updateRevenueTypes(data) {
@@ -287,6 +266,7 @@
 
     var bar = selection.select('eiti-bar')
       .attr('value', getter('value'));
+
     if (extent) {
       bar
         .attr('min', Math.min(0, extent[0]))

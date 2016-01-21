@@ -368,6 +368,10 @@
     selection.select('.subregion-name .text')
       .text(function(f) {
         // XXX all features need a name!
+        console.log(f)
+        if (f.id === 'alaska') {
+          return 'Offshore Alaska'
+        }
         return f.properties.name || '(' + f.id + ')';
       });
 
@@ -828,15 +832,24 @@
       product = 'All';
     }
 
+    var isAlaska = function() {
+      return (state.get('region') === 'alaska')
+        ? 'Offshore Alaska'
+        : false;
+    }
+
     var data = {
       commodity: commodity,
       product: product,
-      region: REGION_ID_NAME[state.get('region') || 'US'],
+      region: isAlaska() || REGION_ID_NAME[state.get('region') || 'US'],
       year: state.get('year')
     };
 
     desc.selectAll('[data-key]')
       .text(function() {
+
+        console.log(state.get('region'), REGION_ID_NAME);
+
         return data[this.getAttribute('data-key')];
       });
   }

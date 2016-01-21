@@ -86,10 +86,28 @@
   tr > *:first-child {
     padding-left: $base-padding;
     width: 80%;
+    &.narrow {
+      width: 50%;
+    }
   }
 
   tr > *:last-child {
 
+  }
+
+  tr {
+    .variance,
+    .centered {
+      text-align: center;
+    }
+  }
+
+  tr > td > .reportee {
+    color: $neutral-gray;
+    display: inline-block;
+    font-weight: $weight-book;
+    text-align: left;
+    width: 25px;
   }
 
   .bar_negative {
@@ -140,4 +158,9 @@
   &:last-of-type {
     padding-bottom: $base-padding-lite;
   }
+}
+
+.red {
+  font-weight: $weight-bold;
+  color: $red;
 }

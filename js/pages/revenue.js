@@ -205,16 +205,19 @@
         }
 
         var features = subregions.data();
-
+        console.log(fields.subregion, fields.region)
+        // console.log(d3.nest().key(getter(fields.subregion || fields.region)).map(function(f){return f}))
         var dataByFeatureId = d3.nest()
           .key(getter(fields.subregion || fields.region))
           .rollup(function(d) {
+            console.log(d)
             return d3.sum(d, getter(fields.value));
           })
           .map(data);
-
+          console.log(dataByFeatureId)
         var featureId = getter(fields.featureId);
         features.forEach(function(f) {
+          // console.log(f)
           var id = featureId(f);
           f.value = dataByFeatureId[id];
         });
@@ -276,6 +279,7 @@
 
     items.select('.color-swatch')
       .style('background-color', function(d) {
+        // console.log(d)
         return scale(d.value);
       });
 

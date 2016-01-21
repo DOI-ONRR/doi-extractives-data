@@ -28,6 +28,22 @@ permalink: /downloads/reconciliation/
 
     <p>Through a unilateral disclosure, the Department of the Interior (DOI) published online all in-scope revenue from extraction on federal lands by revenue stream and company for CY 2013. DOI reported a total of $12.64 billion in revenue, disclosing to the public 100% of in-scope DOI revenue from extraction on federal lands during CY 2013. In addition to DOI’s unilateral disclosure, the <span class="term term-p" data-term="multi-stakeholder group" title="Click to define" tabindex="0">Multi-Stakeholder Group<i class="icon-book"></i></span> (MSG) asked companies to report to the IA that same nontax information, revenue payments to DOI, as well as federal corporate income tax payments and refunds from the Internal Revenue Service (IRS).</p>
 
+    <h2 class="h3">Reconciliation Results</h2>
+
+    <p>When the independent administrator compared company payments to government revenue, 17 discrepancies exceeded the margin of variance. The independent administrator worked with the companies and government entities to investigate these discrepancies, and was able to find explanations for all of them. Explanations included differences in when payments were recorded and how they were classified.</p>
+
+    <p>Of the 45 companies that were asked to participate, 31 reported DOI revenue and 12 reported federal corporate income taxes.<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup></p>
+
+    <img src="{{ site.baseurl }}/img/reconciliation-revenue-report.png" alt="Chart the scope of reconciliation reporting participation" class="article_img-60 u-margin-top">
+
+    <img src="{{ site.baseurl }}/img/reconciliation-revenue-rec.png" alt="Chart the scope of reconciliation reporting participation" class="article_img-60 u-margin-top">
+
+    <img src="{{ site.baseurl }}/img/reconciliation-taxes.png" alt="Chart the scope of reconciliation reporting participation" class="article_img-60 u-margin-top">
+
+    <p class="u-margin-top">Five companies also allowed for corporate income tax reconciliation: BP America; Cimarex Energy Co.; Could Peak Energy Resources, LLC; Shell E&P Company; and W&T Offshore, Inc.</p>
+
+    <p>After the independent administrator compared and reconciled the government revenue streams with company payments, 17 material variances remained, all of which were explained through the reconciliation process, leaving zero unexplained variances.</p>
+
     <h2 class="h3">Scope</h2>
 
     <p>Requirement 4 of the EITI Standard outlines the responsibility of the MSG to determine the scope of EITI reporting in the United States. In carrying out this responsibility, the MSG considered information from a variety of sources before coming to a consensus on the scope for the 2015 USEITI Report.</p>
@@ -261,11 +277,11 @@ permalink: /downloads/reconciliation/
     <p>After reviewing the data provided by both the government entity and the reporting company, if the IA was able to identify the potential source of the variance, the IA provided an explanation. If the IA was not able to identify the potential source of the variance, the IA provided an explanation that the source of the variance could not be resolved.</p>
     <p>Both reporting companies and government entities were given the opportunity to revise their reported amounts when the reconciliation process identified the explanation for a variance, but restatement was not required. If a reporting company or government entity resubmitted revised numbers for a revenue stream, only the final submitted numbers are shown in the reconciliation results. In many cases, neither the government nor company chose to resubmit the numbers because the variance resulted from different business systems rather than a mistake.</p>
 
-    <p></p>
-
-    <h3></h3>
-
-    <p></p>
+    <div class="footnotes">
+      <ol>
+        <li id="fn:1"><p>Out of the 45 companies invited to participate, a maximum of 41 are C-corporations. Only C-corporations are eligible to report taxes. <a href="#fnref:1" class="reversefootnote">↩</a></p></li>
+      </ol>
+    </div>
 
   </article>
 

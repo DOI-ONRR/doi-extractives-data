@@ -160,7 +160,7 @@
         var totalCompany = d3.sum(data.values, getter('Company Reported'));
         var variance = (totalGov === 0)
           ? 0
-          : (100 * d3.sum(data.values, getter('Variance Dollars')) / totalGov);
+          : d3.mean(data.values, getter('Variance Percent'));
 
         var obj = {
           name: data.key,

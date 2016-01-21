@@ -89,7 +89,7 @@ async.waterfall([
                : -1 * parseValue(d[type + ' Variance $'], 'dollars'),
             'Variance Percent': isPos
              ? parseValue(d[type + ' Variance %'], 'percent')
-             : -1 * parseValue(d[type + ' Variance %'], 'percent')
+             : parseValue(d[type + ' Variance %'], 'percent')
 
           });
       });

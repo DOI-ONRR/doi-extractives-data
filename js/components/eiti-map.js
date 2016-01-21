@@ -172,8 +172,6 @@
   function renderLayer(path) {
     return function(selection) {
       selection.each(function(d) {
-
-        // console.log(d)
         var layer = d3.select(this)
           .attr('data-type', d.type);
 
@@ -184,7 +182,6 @@
 
           case 'Topology':
             d = topojson.presimplify(d);
-            // console.log(d)
             features = getTopologyFeatures(this, d, filter);
             layer.classed('topology', true);
             if (!d.bbox) {

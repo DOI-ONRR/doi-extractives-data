@@ -305,7 +305,9 @@
     selection.select('.subregion-name .text')
       .text(function(f) {
         // XXX all features need a name!
-        return f.properties.name || '(' + f.id + ')';
+        return (f.id === 'alaska')
+          ? 'Offshore Alaska'
+          : f.properties.name || '(' + f.id + ')';
       });
 
     var value = getter('value');
@@ -702,9 +704,15 @@
        ? eiti.commodities.groups[state.get('group')].name
        : 'all commodities');
 
+    var isAlaska = function() {
+      return (state.get('region') === 'alaska')
+        ? 'Offshore Alaska'
+        : false;
+    }
+
     var data = {
       commodity: commodity.toLowerCase(),
-      region: REGION_ID_NAME[state.get('region') || 'US'],
+      region: isAlaska() || REGION_ID_NAME[state.get('region') || 'US'],
       year: state.get('year')
     };
 

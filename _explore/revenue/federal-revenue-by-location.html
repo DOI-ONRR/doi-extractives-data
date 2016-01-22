@@ -68,7 +68,7 @@ permalink: /explore/federal-revenue-by-location/
             </optgroup>
             <optgroup label="Offshore Areas">
               {% for area in site.data.offshore_regions %}
-              <option value="{{ area.id }}">{{ area.name }}</option>
+              <option value="{{ area.id }}">{{ area.display_name }}</option>
               {% endfor %}
             </optgroup>
           </select>

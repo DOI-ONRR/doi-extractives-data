@@ -175,7 +175,7 @@
               };
             })
         }
-        return obj
+        return obj;
       });
 
     var extent = d3.extent(types, getter('variance'));
@@ -197,7 +197,7 @@
             .map(function(d) {
               var variance = isException(d.values[0].variance)
                 ? d.values[0].variance
-                : Math.abs(d.values[0].variance)
+                : Math.abs(d.values[0].variance);
 
               return {
                 name: d.key,
@@ -342,7 +342,7 @@
       .html(function(d) {
         var variance = isException(d.variance, 'var')
           ? d.variance
-          : formatPercent(d.variance / 100)
+          : formatPercent(d.variance / 100);
 
         var color = isMaterial(d);
 
@@ -357,7 +357,7 @@
     items.exit().remove();
     items.enter().append('tr')
       .attr('class', 'subtype')
-      .call(setupTotals)
+      .call(setupTotals);
 
     items
       .call(updateTotals, extent)

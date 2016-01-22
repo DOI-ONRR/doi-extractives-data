@@ -33,12 +33,12 @@
       'Bonus': 2,
       'Other Revenue': 3,
       'Offshore Inspection Fee': 2,
-      'Civil Penalties': 1,
+      'ONRR Civil Penalties': 1,
       'Bonus & 1st Year Rental': 2,
       'Permit Fees': 3,
       'Renewables': 'N/A',
       'AML Fees': 2,
-      'Civil Penalties': 3,
+      'OSMRE Civil Penalties': 3,
       'Corporate Income Tax': 1
     }
 

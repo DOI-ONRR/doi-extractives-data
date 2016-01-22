@@ -83,22 +83,27 @@
     }
   }
 
-  tr > *:first-child {
-    padding-left: $base-padding;
-    width: 80%;
-    &.narrow {
-      width: 50%;
-    }
-  }
-
   tr > *:last-child {
 
   }
 
   tr {
+    > *:first-child {
+      padding-left: $base-padding;
+      width: 80%;
+
+      &.narrow {
+        width: 50%;
+      }
+    }
+
     .variance,
     .centered {
       text-align: center;
+    }
+
+    .variance {
+      vertical-align: middle;
     }
   }
 
@@ -161,6 +166,6 @@
 }
 
 .red {
-  font-weight: $weight-bold;
   color: $red;
+  font-weight: $weight-bold;
 }

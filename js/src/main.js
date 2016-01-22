@@ -18,7 +18,9 @@
   // EITI
   // TODO: require explicit dependencies (such as d3 and queue) in eiti.js
   // rather than here
+  require('custom-event');
   exports.eiti = require('../eiti');
+
 
   // custom elements
   require('document-register-element');

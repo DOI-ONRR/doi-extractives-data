@@ -1,28 +1,25 @@
 # Research summary
-*January 2016*
 
-## Problem Statement from March 2015
+*Updated January 2016*
 
-The USEITI website was intended to meet these goals:
-- increase transparency and dialogue about the U.S. natural resource revenues system
-- increase trust and dialogue between natural resource sectors (industry, civil society and government)
-- meet the requirements of the international EITI standard in a modern (read: online) way
+## Context
 
-We have observed that the USEITI website isn’t:
-- meeting the contextual requirements of the international EITI standard
-- explaining the relationship of EITI/USEITI, stakeholders, extractive revenues (leading to a ‘...this is cool, but what is it?’)
-- engaging audiences, and therefore is not inspiring dialogue
+- [Problem statement, March 2015](Problem-statement#problem-statement-from-march-2015)
+- [Revised problem statement, January 2016](Problem-statement#revised-problem-statement-january-2016)
 
-which is causing these adverse effects:
-- our project is at risk of being irrelevant (not reaching target audiences)
-- USEITI may revert to a paper EITI Report if EITI requirements cannot be met online
+## Contents
 
-measurable criteria for success:
-- USEITI 2015 Report is delivered as a wholly online experience with only a short executive summary PDF
-- website views increase
-- our site becomes a generally-accepted source of information on this sector
-- congressional staffers call us or use our site’s information on this sector
-- both civil society and industry use our site
+- [Status of our measurable criteria, January 2016](#status-of-our-measurable-criteria-january-2016)
+    + [USEITI 2015 Report is delivered as a wholly online experience with only a short executive summary PDF](#useiti-2015-report-is-delivered-as-a-wholly-online-experience-with-only-a-short-executive-summary-pdf)
+    + [Website views increase](#website-views-increase)
+    + [Our site becomes a generally-accepted source of information on this sector; congressional staffers call us or use our site’s information on this sector; both civil society and industry use our site](#our-site-becomes-a-generally-accepted-source-of-information-on-this-sector-congressional-staffers-call-us-or-use-our-sites-information-on-this-sector-both-civil-society-and-industry-use-our-site)
+- [Lessons from user research in 2015](#lessons-from-user-research-in-2015)
+    + [How do people feel about transparency and dialogue in the U.S. natural resource revenues system?](#how-do-people-feel-about-transparency-and-dialogue-in-the-us-natural-resource-revenues-system)
+    + [How is trust and dialogue between natural resource sectors going? (industry, civil society and government)](#how-is-trust-and-dialogue-between-natural-resource-sectors-going-industry-civil-society-and-government) (tl;dr: We don't know yet)
+    + [General user research notes](#general-user-research-notes)
+        * [Interest in local information](#interest-in-local-information)
+        * [Language and usability](#language-and-usability)
+        * [Risks highlighted by users](#risks-highlighted-by-users)
 
 ## Status of our measurable criteria, January 2016
 
@@ -34,6 +31,10 @@ One of the remaining sticky wickets to international EITI approval of the USEITI
 
 For 2016, we should replace this metric and related hypotheses with one that deals with reconciliation content specifically. And truly, this metric can't be completely retired until international EITI officially approves the USEITI Report in 2016.
 
+**Research challenge:**
+
+It can be tricky to balance the EITI requirements with the user needs that research reveals. For example, some of the requirements are very technical and may not register as relevant to users in the U.S., but they must be explained or addressed anyways on the site to make sure the U.S. is approved as an EITI country. We are working to creatively mitigate the impact of these situations on the end user.
+
 ### Website views increase
 
 We now have a launched website to baseline this metric against.
@@ -42,30 +43,7 @@ We now have a launched website to baseline this metric against.
 
 We have not made progress against these metrics yet, though we now have a live website to publicize (yay!). We will continue working with this in 2016.
 
-## Suggested revisions to problem statement for January 2016
-
-The USEITI website was intended to meet these goals:
-- increase transparency and dialogue about the U.S. natural resource revenues system
-- increase trust and dialogue between natural resource sectors (industry, civil society and government)
-- meet the requirements of the international EITI standard in a modern (read: online) way
-
-We have observed that the USEITI website isn’t:
-- engaging audiences, and therefore is not inspiring dialogue
-- explaining and providing information about the EITI reconciliation requirement in a way that is both understandable to a non-specialist audience and meets the EITI standard.
-
-which is causing these adverse effects:
-- our project is at risk of being irrelevant (not reaching target audiences)
-- our project is at risk of either not being approved, or not reaching target audiences because in order to meet international EITI requirements we made content too complex
-
-measurable criteria for success:
-- website views increase
-- our site becomes a generally-accepted source of information on this sector
-- congressional staffers call us or use our site’s information on this sector
-- both civil society and industry use our site
-- the USEITI Report is approved by international EITI
-- non-specialists can get what they need from our site and not be turned away by complex content about the EITI process (ie, reconciliation)
-
-## What do we know from our previous research about our project goals?
+## Lessons from user research in 2015
 
 ###  How do people feel about transparency and dialogue in the U.S. natural resource revenues system?
 
@@ -99,8 +77,35 @@ We have a very interesting research problem in our future. The site is about a f
 
 Our previous research didn't reveal anything about this desired outcome.
 
-### Are we meeting the requirements of the international EITI standard in a modern (read: online) way?
+### General user research notes
 
-This goal is addressed at some length above, and we have revised the metrics associated with this outcome to reflect the learnings from the past year. This has less to do with research and more to do with requirements from the international EITI standard.
+#### Interest in local information
 
-However, the challenge that *is* related to research and the one that we will continue to struggle with is the balance between EITI requirements and the user needs that research reveals. For example, some of those requirements are very technical and are not wholly relevant to the U.S. national situation, but they must be explained or addressed anyways on the site to make sure the United States is approved as an EITI country. We are working to creatively mitigate the impact of these situations on the end user.
+Local impact seems to be broadly interesting to folks (potentially because it gives them a place to start and/or relates to their concerns and priorities):
+
+> Are we talking about digging, like environmental impact? Or the money coming back to communities from extraction?
+
+> The view of the map makes me think that I can drill in and get specific. Of course the first thing I’d want to do it see where I am, see my local area.
+
+> I could click on a specific region. If I’m from MN, I could see what is happening in MN.
+
+> I would expect to see something where I might be involved. How can I find out what’s going on where I live, or where my parents live? In journalism speak, that’s where I would think the engagement might be. Maybe some call to action, how can I explore more, who should I contact in my local county.
+
+> I would want to learn more about the impact on my community.
+
+#### Language and usability
+
+- "Initiative" was a confusing word for several users
+- "Civil society" was a confusing term for many people
+- "Natural resources" was unclear, particularly as a navigation item
+- People expressed relief and comprehension when they saw familiar words like "oil," "gas," etc.
+- Users consistently look for the _who_ behind the site — they expect it to be biased based on who created it.
+- We need to spell out EITI on the homepage — people don't get the full name clearly from the logo alone.
+- Glossary icon was confusing as a stand-alone nav item; including the word "glossary" seemed to help clarify.
+
+#### Risks highlighted by users
+
+- Danger of people thinking the site was developed by/for industry (they expect bias as a result of industry, or "corporate" involvement)
+- Users are suspicious that the site might only "highlight the positive" — we need to build trust that it's neutral.
+- At least one user was confused about land ownership and property rights (before reading site content; we don't have data on whether the "How it works" content reduces this confusion).
+- Users were confused about what to do on the site or where to start.

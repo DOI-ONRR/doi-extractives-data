@@ -158,9 +158,7 @@
         var totalGov = d3.sum(data.values, getter('Government Reported'));
 
         var totalCompany = d3.sum(data.values, getter('Company Reported'));
-        var variance = (totalGov === 0)
-          ? 0
-          : d3.mean(data.values, getter('Variance Percent'));
+        var variance = d3.median(data.values, getter('Variance Percent'));
 
         var obj = {
           name: data.key,
@@ -342,7 +340,6 @@
 
     selection.select('.variance')
       .html(function(d) {
-
         var variance = isException(d.variance, 'var')
           ? d.variance
           : formatPercent(d.variance / 100)

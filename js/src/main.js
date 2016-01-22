@@ -21,7 +21,6 @@
   require('custom-event');
   exports.eiti = require('../eiti');
 
-
   // custom elements
   require('document-register-element');
 

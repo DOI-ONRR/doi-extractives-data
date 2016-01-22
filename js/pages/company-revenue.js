@@ -56,8 +56,7 @@
   var filters = root.selectAll('.filters [name]')
     .on('change', filterChange);
 
-  var search = root.select('#company-name-filter');
-  search
+  var search = root.select('#company-name-filter')
     .on('keyup', updateNameSearch)
     .on('clear', filterChange)
     .on('change', filterChange);
@@ -138,7 +137,6 @@
       .attr('class', 'value')
       .attr('value', identity)
       .text(identity);
-
   }
 
   function updateRevenueTypes(data) {
@@ -287,6 +285,7 @@
 
     var bar = selection.select('eiti-bar')
       .attr('value', getter('value'));
+
     if (extent) {
       bar
         .attr('min', Math.min(0, extent[0]))

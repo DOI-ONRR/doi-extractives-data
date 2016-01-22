@@ -72,8 +72,8 @@ async.waterfall([
 
     rows.forEach(function(d) {
       types.forEach(function(type) {
-          var gov = parseValue(d[type + ' Government'], 'dollars')
-          var company = parseValue(d[type + ' Company'], 'dollars')
+          var gov = parseValue(d[type + ' Government'], 'dollars');
+          var company = parseValue(d[type + ' Company'], 'dollars');
 
           var isPos = typeof(company) == 'number'
             ? (gov - company) >= 0
@@ -89,7 +89,7 @@ async.waterfall([
                : -1 * parseValue(d[type + ' Variance $'], 'dollars'),
             'Variance Percent': isPos
              ? parseValue(d[type + ' Variance %'], 'percent')
-             : parseValue(d[type + ' Variance %'], 'percent')
+             : parseValue(d[type + ' Variance %'], 'percent');
 
           });
       });

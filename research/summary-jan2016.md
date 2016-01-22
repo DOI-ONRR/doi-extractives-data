@@ -27,7 +27,7 @@
 
 We were able to deliver the first version of the USEITI report online. We are not in danger of not meeting the contextual narrative requirements of the international EITI standard and in fact likely have much more information than is required. Our executive summary is longer than we would have liked, but we expect now that a website exists, multi-stakeholder group participants will feel more comfortable making the executive summary a true executive summary in the future because they can see the breadth of what is available online.
 
-One of the remaining sticky wickets to international EITI approval of the USEITI report is around reconciliation data. The international EITI requirements in this area are hard to apply in the US context, both technically and politically. On top of that, the process is complicated and hard to explain (which makes for a confusing website).
+One of the remaining sticky wickets is around reconciliation of corporate tax data. The international EITI requirements in this area are hard to apply in the US context, both technically and politically. On top of that, the process is complicated and hard to explain (which makes for a confusing website).
 
 For 2016, we should replace this metric and related hypotheses with one that deals with reconciliation content specifically. And truly, this metric can't be completely retired until international EITI officially approves the USEITI Report in 2016.
 

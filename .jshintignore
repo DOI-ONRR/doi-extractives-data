@@ -1,2 +1,2 @@
 js/vendor/*.js
-js/*.min.js
+js/**/*.min.js

@@ -1,4 +1,7 @@
 (function(exports) {
+
+  var extend = require('extend');
+
   /**
    * Utilities for setting or removing tabindex on all focusable elements
    * in a parent div. Useful for hiding elements off-canvas without setting
@@ -38,7 +41,7 @@
   function Glossary(selectors) {
     var self = this;
 
-    self.selectors = _.extend({}, defaultSelectors, selectors);
+    self.selectors = $.extend({}, defaultSelectors, selectors);
 
     self.$body = $(self.selectors.body);
     self.$toggle = $(self.selectors.toggle);
@@ -111,7 +114,7 @@
 
     // Hack: Expand text for selected item
     this.list.search();
-    _.each(this.list.visibleItems, function(item) {
+    $.each(this.list.visibleItems, function(item) {
       var $elm = $(item.elm).find('div');
         $elm.find('.accordion__button').click();
     });

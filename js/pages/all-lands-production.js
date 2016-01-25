@@ -358,8 +358,8 @@
       });
   }
 
-  function isOffshore(regionObj, isBool) {
-    var region = isBool ? regionObj : regionObj.id;
+  function isOffshore(regionObj, returnBool) {
+    var region = returnBool ? regionObj : regionObj.id;
     switch (region) {
       case 'alaska':
         return 'Offshore Alaska';
@@ -370,7 +370,7 @@
       case 'gulf':
         return 'Gulf of Mexico';
       default:
-        return isBool
+        return returnBool
           ? false
           : regionObj.properties.name || '(' + regionObj.id + ')';
     }

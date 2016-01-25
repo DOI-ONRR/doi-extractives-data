@@ -4,7 +4,7 @@ layout: default
 permalink: /search-results/
 ---
 
-<div class="container-outer">
+<div class="container-outer container-margin">
 
   <div class="container-left-8">
 

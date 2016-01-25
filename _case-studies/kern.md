@@ -36,7 +36,7 @@ During the beginning of the twentieth century, many other large oil discoveries 
 
 <h2 class="h3"><a name="production" class="case_studies_content-heading" data-nav-header="production">Production</a></h2>
 
-In terms of oil production, Kern County has long been a leader both nationally and within California. Kern County produced 141,040,000 oil barrels (bbls) in 2013.[^3] In 2012, the largest-producing oil fields in the state were privately owned oil fields in Kern County, including the Midway-Sunset field (29.3 m bbls), the Kern River Field (26.2 m bbls), and the Belridge South Field (23.6 m bbls).[^4] As of 2009, the two top oil-producing companies in California, excluding offshore production, were Chevron Corporation and Aera Energy LLC, both of which have operations in Kern County.[^5]
+In terms of oil production, Kern County has long been a leader both nationally and within California. Kern County produced 141,040,000 <span class="term term-p" data-term="barrel" title="Click to define" tabindex="0">oil barrels<i class="icon-book"></i></span> (bbls) in 2013.[^3] In 2012, the largest-producing oil fields in the state were privately owned oil fields in Kern County, including the Midway-Sunset field (29.3 m bbls), the Kern River Field (26.2 m bbls), and the Belridge South Field (23.6 m bbls).[^4] As of 2009, the two top oil-producing companies in California, excluding offshore production, were Chevron Corporation and Aera Energy LLC, both of which have operations in Kern County.[^5]
 
 Since peaking in 1985, California’s oil production has trended downward; Kern County is no exception to this trend.[^6] However, as of December 31, 2009, the State of California estimated a total of 3 billion bbl of proved oil reserves remaining in the state.[^7]
 

@@ -30,7 +30,7 @@ Gold is a precious mineral highly valued for its durability and beauty. Used to 
 
 <h2 class="h3"><a name="geology" class="case_studies_content-heading" data-nav-header="geology">Geology and history</a></h2>
 
-Mineral mining in Nevada began shortly after the onset of the California Gold Rush in 1849. The 1859 discovery of the Comstock Lode silver deposit in the Virginia Range of western Nevada was the first major discovery of silver ore in the country.[^4] All told, the Great Basin geological region, which covers most of Nevada and crosses into Oregon, Utah, and California, has a total resource potential that exceeds 3,200 metric tons (100,000,000 ounces) of gold.[^5]
+Mineral mining in Nevada began shortly after the onset of the California Gold Rush in 1849. The 1859 discovery of the Comstock Lode silver deposit in the Virginia Range of western Nevada was the first major discovery of silver ore in the country.[^4] All told, the Great Basin geological region, which covers most of Nevada and crosses into Oregon, Utah, and California, has a total resource potential that exceeds 3,200 <span class="term term-p" data-term="metric ton" title="Click to define" tabindex="0">metric tons<i class="icon-book"></i></span> (100,000,000 ounces) of gold.[^5]
 
 In 1962, Newmont Mining Corporation discovered large deposits of gold ore along the Carlin Trend, a mineral-rich belt stretching 40 miles across Elko and Eureka counties that soon became one of the largest gold-producing regions in the world. This discovery marked the beginning of a robust gold-mining industry in the region: As of 2012, 87% of Nevada’s total historical gold output had been generated since the Carlin Trend discovery.[^6]
 

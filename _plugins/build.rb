@@ -1,5 +1,5 @@
 Jekyll::Hooks.register :site, :pre_render do |site|
-    # TODO: remove 'js-optimization'
+    # TODO: remove 'js-optimization' before merge
     production_branches = ['master', 'staging', 'js-optimization']
     branch = ENV['BRANCH']
 

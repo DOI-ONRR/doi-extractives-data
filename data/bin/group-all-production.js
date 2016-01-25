@@ -13,6 +13,7 @@ var yargs = require('yargs')
   .alias('h', 'help')
   .wrap(120);
 var options = yargs.argv;
+var shouldParseCountyCoal;
 
 if (options.help) {
   return yargs.showHelp();
@@ -88,7 +89,7 @@ var stateKey = {
   'Refuse Recovery': false
 }
 
-async.parallel({
+var production = {
   naturalgas: function readNaturalGas(done) {
     return read(
       options.naturalgas,
@@ -117,13 +118,6 @@ async.parallel({
       done
     );
   },
-  countycoal: function readCountyCoal(done) {
-    return read(
-      options.countycoal,
-      tito.createReadStream(options['if']),
-      done
-    );
-  },
   renewables: function readRenewables(done) {
     return read(
       options.renewables,
@@ -131,7 +125,20 @@ async.parallel({
       done
     );
   }
-}, function(error, data) {
+};
+
+if (options.countycoal) {
+  production.countycoal = function readCountyCoal(done) {
+    return read(
+      options.countycoal,
+      tito.createReadStream(options['if']),
+      done
+    );
+  }
+  shouldParseCountyCoal = true;
+}
+
+async.parallel(production, function(error, data) {
   if (error) return console.error(error);
 
   var results = [];
@@ -160,12 +167,22 @@ async.parallel({
     '2013'
   ];
 
-  // toggle to parse data for county coal
-  var shouldParseCountyCoal = false;
-
-
   Object.keys(data).forEach(function(commodity) {
 
+    /**
+    * This function takes the coal source data and places it in
+    * six columns:
+    * Year, Commodity, Volume, County, State, Product
+    * Because it breaks the data to the county level,
+    * The may be many rows for each year and state.
+    *
+    * @param String commodity
+    * @param Object data
+    * @param Array data
+    * @return void
+    * pushes to the results Array
+    *
+    */
     var parseCountyCoal = function(commodity, data, years) {
       var commodity = 'countycoal';
 
@@ -184,7 +201,7 @@ async.parallel({
 
       var states = getStates(data, commodity, 'Mine State');
 
-      // Reject states that non-complient statest
+      // Reject states that non-complient states
       states = _.filter(states, function(n){
         return n;
       });
@@ -192,21 +209,29 @@ async.parallel({
       _.forEach(states, function(state) {
         years.forEach(function(year){
 
-          // Get Production Numbers (only have data for 2013)
+          /**
+          * Find production data that matches year and state
+          * returns object with matching county and production
+          * for a given state, year
+          *
+          * @param String product
+          * @return Object
+          * example:
+          *   { Campbell: 343018222,
+          *     Converse: 31354248,
+          *     'Hot Springs': 26587,
+          *     Lincoln: 4639135,
+          *     Sweetwater: 8885636 }
+          *
+          */
           var getMatches = function(product) {
             var volumes = _.pluck(_.where(data[commodity], {'Year': year, 'Mine State': state}), product);
             volumes = _.map(volumes, trimCommas);
-
-            // volumes = _.reduce(volumes, function(total, n) {
-            //   return total + n;
-            // });
 
             var matches = {
               'county': _.pluck(_.where(data[commodity], {'Year': year, 'Mine State': state}), 'Mine County'),
               'volume': volumes
             }
-
-
 
             var zippedObj = _.zip(matches.county, matches.volume);
 
@@ -223,15 +248,15 @@ async.parallel({
             return zippedObj;
           }
 
-
           // terrible hack because of inconsistencies in the data
+          // this hack is present because 2012 has a different number
+          // of columns
           var productionByState = (year == '2012')
             ? getMatches('Coal Supply Region')
             : getMatches('Production (short tons)');
 
-
-
-          // console.warn(state, '->',productionByState, year)
+          // Louisiana and Alaska are Parishes, Boroughs, Census Areas,
+          // not Counties
           var countyKey = {
             'LA': 'Parish',
             'AK': {
@@ -245,29 +270,29 @@ async.parallel({
               ? 'McLean'
               : county;
           }
-          // console.warn(state, year, '==>', productionByState)
+
           // this conditional might need to be revisited
           if (productionByState){
             Object.keys(productionByState).forEach(function(county) {
 
               var volume = productionByState[county];
-              // console.warn(state, year, '==>', county, volume)
+
               if (volume) {
+                // consolidates results to be pushed
                 var newResults = {};
                 newResults.State = state;
                 newResults.County = formatCounty(county);
-                // console.warn(state)
                 newResults.County += !countyKey[state]
                   ? ' County'
                   : countyKey[state][county]
                     ? ' ' + countyKey[state][county]
                     : ' ' + countyKey[state]
-                // console.warn(newResults.County)
+
                 newResults.Year = year;
                 newResults.Volume = volume;
                 newResults.Commodity = '';
                 newResults.Product = 'Coal (short tons)';
-                // console.warn(newResults)
+
                 results.push(newResults)
               }
             });
@@ -276,10 +301,34 @@ async.parallel({
       });
     };
 
+    /**
+    * This function takes the renewables source data and places it in
+    * six columns:
+    * Year, Commodity, Volume, County, State, Product
+    * This breaks the data down to the State level,
+    * so, county is an empty row
+    *
+    * @param String commodity
+    * @param Object data
+    * @param Array data
+    * @return void
+    * pushes to the results Array
+    *
+    */
     var parseRenewables = function(commodity, data, years){
 
       var renewablesTotals = [];
 
+      // Takes source data and converts it to an Array, renewablesTotal
+      // The Array looks contains objects that looks
+      // something like the following:
+      // { Region: 'HI',
+      // Year: '2009',
+      // Volume: 284000,
+      // Commodity: '',
+      // Product: 'Total Biomass (Mwh)',
+      // County: '',
+      // State: 'HI' }
       _.forEach(data[commodity], function(d) {
 
         var productKey = {
@@ -296,6 +345,8 @@ async.parallel({
         if (stateKey[d.State]){
           years.forEach(function(year){
             var volume = d[year];
+            // ignore data if there is no production,
+            // or if production is marked with a '--'
             if (volume == '' || volume == '--'){ return; }
             var newResults = {};
             newResults.Region = stateKey[d.State];
@@ -313,10 +364,12 @@ async.parallel({
           });
         }
       });
-
       var regionsUsed = _.unique(_.map(renewablesTotals, 'Region'));
       var yearsUsed = _.unique(_.map(renewablesTotals, 'Year'));
 
+
+      // Combines Volumes for all the renewables Products
+      // into one Product, `All Renewables (Mwh)`
       _.forEach(regionsUsed, function(region){
         _.forEach(yearsUsed, function(year){
           var intersection = _.where(renewablesTotals, { Region: region, Year: year });
@@ -344,26 +397,22 @@ async.parallel({
 
         });
       });
-
-      _.forEach(data[commodity],function(d) {
-
-
-        if (stateKey[d.State]){
-          years.forEach(function(year){
-            var matches = _.where(renewablesTotals, { Region: stateKey[d.State], Year: year});
-
-            var stateYearMatch = {};
-            stateYearMatch.Region = stateKey[d.State];
-            stateYearMatch.Year = year;
-            stateYearMatch.Volume = d[year];
-            stateYearMatch.Commodity = '';
-            stateYearMatch.Product = d.Source + ' (Kwh)';
-
-          });
-        }
-      });
     }
 
+    /**
+    * This function takes the coal source data and places it in
+    * six columns:
+    * Year, Commodity, Volume, County, State, Product
+    * This breaks the data down to the State level,
+    * so, county is an empty row
+    *
+    * @param String commodity
+    * @param Object data
+    * @param Array data
+    * @return void
+    * pushes to the results Array
+    *
+    */
     var parseCoal = function(commodity, data, years){
 
       var getStates = function(data, commodity, column) {
@@ -378,8 +427,6 @@ async.parallel({
       data[commodity] = _.forEach(data[commodity], function(d){
         d['Mine State'] = stateKey[d['Mine State']];
       });
-
-      // console.warn(data[commodity])
 
       var states = getStates(data, commodity, 'Mine State');
 
@@ -406,8 +453,6 @@ async.parallel({
             return total + n;
           });
 
-          // console.warn(state, '->',productionByState, year)
-
           if (productionByState){
 
             var newResults = {};
@@ -428,6 +473,20 @@ async.parallel({
       });
     }
 
+    /**
+    * This function takes the oil and gas source data and places it in
+    * six columns:
+    * Year, Commodity, Volume, County, State, Product
+    * This breaks the data down to the State level,
+    * so, county is an empty row
+    *
+    * @param String commodity
+    * @param Object data
+    * @param Array data
+    * @return void
+    * pushes to the results Array
+    *
+    */
     var parseOther = function(commodity, data, years){
       data[commodity].forEach(function(d, index) {
 
@@ -440,8 +499,6 @@ async.parallel({
 
         _.forEach(keys, function(val, i){
           var inYearRange = years.indexOf(d['Year']) >= 0;
-
-          // console.warn(index,val,'->', d['Year'], '=====', inYearRange)
 
           var newResults = {};
 
@@ -461,7 +518,7 @@ async.parallel({
             newResults.Region = val;
           }
 
-
+          // determine which source dataset to draw from
           switch(commodity) {
             case 'naturalgas':
                 newResults.Product = 'Natural Gas (MMcf)';
@@ -484,9 +541,9 @@ async.parallel({
       });
     }
 
+    // runs a function based on the commodity
     switch(commodity) {
       case 'coal':
-        // console.warn(commodity, '--> done!')
         if (!shouldParseCountyCoal) {
           parseCoal(commodity, data, years);
         }
@@ -497,11 +554,9 @@ async.parallel({
         }
         break;
       case 'renewables':
-        // console.warn(commodity, '--> done!')
         parseRenewables(commodity, data, years);
         break;
       default:
-        // console.warn(commodity, '--> done!')
         parseOther(commodity, data, years);
         break;
     }

@@ -872,7 +872,7 @@
       return (state.get('region') === 'alaska')
         ? 'Offshore Alaska'
         : false;
-    }
+    };
 
     var data = {
       commodity: commodity,

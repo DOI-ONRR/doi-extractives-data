@@ -317,7 +317,7 @@
           ? false
           : regionObj.properties.name || '(' + regionObj.id + ')';
     }
-  };
+  }
 
   function updateRegionRow(selection) {
     selection.select('.subregion-name .text')

@@ -374,12 +374,12 @@
           ? false
           : regionObj.properties.name || '(' + regionObj.id + ')';
     }
-  };
+  }
 
   function updateRegionRow(selection) {
     selection.select('.subregion-name .text')
       .text(function(f) {
-        return isOffshore(f)
+        return isOffshore(f);
       });
 
     var values = selection.data()

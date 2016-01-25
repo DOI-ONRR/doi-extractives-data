@@ -166,8 +166,9 @@ header,
   }
 
   &:last-child {
+    margin-bottom: 0.35rem;
+    padding-top: 1.15rem;
     vertical-align: top;
-    padding-top: 0.95rem;
   }
 
   .header-nav_search {

@@ -44,6 +44,14 @@
 
 .article_img-60 {
   width: 60%;
+
+  .article_img-centered {
+    margin-left: 20%;
+  }
+
+  .article_img-margin_bottom {
+    margin-bottom: $base-padding;
+  }
 }
 
 .article_img-80 {

@@ -628,20 +628,6 @@
 
 
   /**
-   * CustomEvent polyfill via:
-   * <https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent/CustomEvent>
-   */
-  (function () {
-    try {
-      var e = new CustomEvent('foo'); // jshint ignore:line
-    } catch (error) {
-      CustomEvent.prototype = window.Event.prototype;
-      window.CustomEvent = CustomEvent;
-    }
-  })();
-
-
-  /**
    * DOMTokenList::toggle() fix
    *
    * This addresses a bug in IE10+ in which DOMTokenList::toggle()

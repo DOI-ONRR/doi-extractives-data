@@ -1,6 +1,8 @@
 // globals d3
 (function(exports) {
 
+  var CustomEvent = require('custom-event');
+
   exports.EITISlider = registerElement('eiti-slider', {
     createdCallback: function() {
       // console.log('eiti-slider created');

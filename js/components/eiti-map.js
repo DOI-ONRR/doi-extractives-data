@@ -2,6 +2,8 @@
 (function(exports) {
   'use strict';
 
+  var CustomEvent = require('custom-event');
+
   exports.EITIMap = document.registerElement('eiti-map', {
     // 'extends': 'svg',
     prototype: Object.create(

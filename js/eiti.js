@@ -31,6 +31,20 @@
       loaders[type] = d3[type];
     });
 
+    var process = function(callbacks, error, data) {
+      if (callbacks.length === 1) {
+        return callbacks[0](error, data);
+      }
+      var next = function() {
+        var cb = callbacks.shift();
+        cb(error, data);
+        if (callbacks.length) {
+          window.requestAnimationFrame(next);
+        }
+      };
+      return next();
+    };
+
     var load = function(url, done, fresh) {
       var req;
       if (loading.has(url)) {
@@ -71,20 +85,6 @@
       req.callbacks = [done];
       loading.set(url, req);
       return req;
-    };
-
-    var process = function(callbacks, error, data) {
-      if (callbacks.length === 1) {
-        return callbacks[0](error, data);
-      }
-      var next = function() {
-        var cb = callbacks.shift();
-        cb(error, data);
-        if (callbacks.length) {
-          window.requestAnimationFrame(next);
-        }
-      };
-      return next();
     };
 
     load.clearCache = function() {

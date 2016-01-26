@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "async": "^0.9.0",
+    "custom-event": "^1.0.0",
     "d3": "^3.5.5",
     "document-register-element": "^0.5.3",
     "immutable": "^3.7.6",
@@ -43,7 +44,8 @@
     "test": "mocha",
     "test-html": "bundle exec htmlproof --disable-external _site",
     "webpack": "webpack",
-    "watch": "watchy -w '_sass' -- npm run build-styleguide",
+    "watch-webpack": "webpack --watch",
+    "watch-styleguide": "watchy -w '_sass' -- npm run build-styleguide",
     "build-styleguide": "rm -rf styleguide && kss-node --config kss-config.json && cd styleguide-template/ && npm run less",
     "init-styleguide": "npm-exec kss-node --config kss-config.json",
     "lint": "(npm run lint-js; npm run lint-scss) || echo '(there were linting errors)'",

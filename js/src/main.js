@@ -20,7 +20,7 @@
   // rather than here
   exports.eiti = require('../eiti');
 
-  // custom elements
+  // custom elements polyfill
   require('document-register-element');
 
   exports.EITIMap = require('../components/eiti-map');

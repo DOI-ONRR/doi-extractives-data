@@ -63,7 +63,7 @@ permalink: /explore/all-lands-production/
               </optgroup>
               <optgroup label="Offshore Areas">
                 {% for area in site.data.offshore_regions_oil %}
-                <option value="{{ area.id }}">{{ area.name }}</option>
+                <option value="{{ area.id }}">{{ area.display_name }}</option>
                 {% endfor %}
               </optgroup>
             </select>

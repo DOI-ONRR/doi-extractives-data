@@ -364,11 +364,28 @@
       });
   }
 
+  function isOffshore(regionObj, returnBool) {
+    var region = returnBool ? regionObj : regionObj.id;
+    switch (region) {
+      case 'alaska':
+        return 'Offshore Alaska';
+      case 'pacific':
+        return 'Pacific Ocean';
+      case 'atlantic':
+        return 'Atlantic Ocean';
+      case 'gulf':
+        return 'Gulf of Mexico';
+      default:
+        return returnBool
+          ? false
+          : regionObj.properties.name || '(' + regionObj.id + ')';
+    }
+  }
+
   function updateRegionRow(selection) {
     selection.select('.subregion-name .text')
       .text(function(f) {
-        // XXX all features need a name!
-        return f.properties.name || '(' + f.id + ')';
+        return isOffshore(f);
       });
 
     var values = selection.data()
@@ -831,7 +848,7 @@
     var data = {
       commodity: commodity,
       product: product,
-      region: REGION_ID_NAME[state.get('region') || 'US'],
+      region: isOffshore(state.get('region'), true) || REGION_ID_NAME[state.get('region') || 'US'],
       year: state.get('year')
     };
 

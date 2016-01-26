@@ -30,9 +30,6 @@
   // FIXME: does this export anything?
   require('../components/search');
 
-  // Glossary
-  exports._ = require('lodash');
-
   // XXX List.js's node module isn't CommonJS compatible, so we have to use a
   // built version.
   exports.List = require('../vendor/list');

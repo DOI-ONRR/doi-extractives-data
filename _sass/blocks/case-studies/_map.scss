@@ -1,0 +1,19 @@
+.case_studies-map {
+  stroke: $mid-gray;
+  stroke-width: 0.5px;
+  fill: transparent;
+
+  path {
+    vector-effect: non-scaling-stroke;
+  }
+
+  g {
+	  &:first-child {
+      stroke-width: 2px;
+	  }
+
+	  &:last-child {
+      stroke-width: 0.5px;
+	  }
+  }
+}

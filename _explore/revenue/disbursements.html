@@ -4,7 +4,7 @@ layout: default
 permalink: /explore/disbursements/
 ---
 
-<div class="container-outer container-padded">
+<div id="disbursements" class="container-outer container-padded">
 
   <div class="container-left-7">
 
@@ -19,6 +19,26 @@ permalink: /explore/disbursements/
     <p>Federal corporate income taxes go to the General Fund of the Treasury, and Congress determines how to allocate these resources each year through the appropriations process.</p>
 
     <p>Other revenue from extraction on federal lands goes to many different funds and entities. In fiscal year (FY) 2013, ONRR disbursed $14.187 billion in DOI revenue. The recipient of these funds depends on whether the revenue is from onshore or offshore extraction.</p>
+
+    <figure id="tree-chart" class="disbursment-figure">
+      <figcaption>
+        <p>Federal revenue disbursements in
+          <select name="year" class="inline">
+            <option>2012</option>
+            <option selected>2013</option>
+          </select>
+          by:
+        </p>
+
+        <select name="groups">
+          <option selected value="Fund,Shore,State">Fund, Shore, and State</option>
+          <option value="State,Shore,Fund">State, Shore, and Fund</option>
+          <option value="Fund,State">Fund and State</option>
+          <option value="Shore,Fund">Shore and Fund</option>
+        </select>
+      </figcaption>
+      <svg id="tree"></svg>
+    </figure>
 
     <figure class="disbursment-figure">
       <figcaption>Federal revenue disbursements by fund <span>(2013)</span></figcaption>
@@ -87,7 +107,7 @@ permalink: /explore/disbursements/
       <tr>
         <td><span>States</span><br> States receive federal Outer Continental Shelf revenue in two ways: 27% of revenue from leases in the 8(g) Zone (the first three nautical miles of the Outer Continental Shelf) are shared with states; and 37.5% of revenue from certain leases in the Gulf of Mexico are shared with Alabama, Louisiana, Mississippi, and Texas.</td>
         <td>$41 million</td>
-        <td><1%</td>
+        <td>&lt;1%</td>
       </tr>
       <tr>
         <td><span>Historic Preservation Fund</span><br> This fund helps preserve historical and archaeological sites and cultural heritage through grants to state and tribal historic preservation offices.</td>
@@ -114,10 +134,14 @@ permalink: /explore/disbursements/
     <h3>Notes</h3>
 
     <div class="footnotes">
-        <ol>
-          <li id="fn:1"><p><a href="http://statistics.onrr.gov/ReportTool.aspx">ONRR Statistical Information Report Tool</a> <a href="#fnref:1" class="reversefootnote">↩</a></p></li>
-        </ol>
-      </div>
+      <ol>
+        <li id="fn:1"><p><a href="http://statistics.onrr.gov/ReportTool.aspx">ONRR Statistical Information Report Tool</a> <a href="#fnref:1" class="reversefootnote">↩</a></p></li>
+      </ol>
+    </div>
+
   </div>
 
 </div>
+<script src="{{ site.baseurl }}/js/lib/explore.min.js" charset="utf-8"></script>
+<script src="{{ site.baseurl }}/js/eiti.explore.js"></script>
+<script src="{{ site.baseurl }}/js/pages/disbursements.js"></script>

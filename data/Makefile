@@ -44,6 +44,9 @@ JOBS_FILES = \
 	jobs/wage-salary.tsv \
 	jobs/self-employment.tsv
 
+DISBURSEMENT_FILES = \
+	disbursements/funds.tsv
+
 ALL_LANDS_PRODUCTION_FILES = \
 	production/natural-gas.tsv \
 	production/coal-county-all-production.tsv \
@@ -58,6 +61,7 @@ FILES = \
 	$(EXPORT_FILES) \
 	$(GDP_FILES) \
 	$(JOBS_FILES) \
+	$(DISBURSEMENT_FILES) \
 	$(ALL_LANDS_PRODUCTION_FILES) \
 	geo svg
 
@@ -72,6 +76,8 @@ exports: $(EXPORT_FILES)
 gdp: $(GDP_FILES)
 
 jobs: $(JOBS_FILES)
+
+disbursements: $(DISBURSEMENT_FILES)
 
 all_production: $(ALL_LANDS_PRODUCTION_FILES)
 
@@ -304,6 +310,12 @@ county/production.tsv: $(input)onrr/regional-production.tsv
 		| bin/normalize-county-production.js \
 			--in-states $(input)geo/states.csv \
 		| tito --write tsv > $@
+
+disbursements/funds.tsv: $(input)onrr/disbursements.tsv
+	mkdir -p $(dir $@)
+	$(tito) --read tsv $< \
+		| $(datex) --require parse=../lib/parse --set 'Total = parse.dollars(Total)' \
+		| $(tito) --write tsv > $@
 
 # all lands production (state-level)
 # run

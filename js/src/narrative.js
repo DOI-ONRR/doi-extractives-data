@@ -1,2 +1,7 @@
-require('./../components/sticky-nav.js');
-require('./../components/open-list-nav.js');
+(function(exports) {
+  'use strict';
+
+  require('./../components/sticky-nav.js');
+	require('./../components/open-list-nav.js');
+
+})(window);

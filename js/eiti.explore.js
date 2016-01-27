@@ -23,6 +23,11 @@
     var manager = {};
     var dispatch = d3.dispatch('change');
 
+    // the default state validator is a noop
+    var validateState = function(state /*, previous, updated */) {
+      return state;
+    };
+
     /**
      * Raw state mutation with a function, which should take an
      * Immutable.Map and return either the same one or a mutated
@@ -119,11 +124,6 @@
       return mutateState(function(state) {
         return state.merge(keys);
       });
-    }
-
-    // the default state validator is a noop
-    function validateState(state /*, previous, updated */) {
-      return state;
     }
 
     return d3.rebind(manager, dispatch, 'on');

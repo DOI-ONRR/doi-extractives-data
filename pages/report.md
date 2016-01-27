@@ -4,7 +4,7 @@ layout: default
 permalink: /about/report/
 ---
 
-<div class="container-outer container-padded">
+<div class="container-outer container-margin">
 
   <div class="container-left-7">
 

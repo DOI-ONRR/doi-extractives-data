@@ -5,7 +5,7 @@ permalink: /downloads/
 ---
 
 
-<div class="container-outer container-padded">
+<div class="container-outer container-margin">
 
   <article class="container-left-7 downloads">
 
@@ -13,7 +13,7 @@ permalink: /downloads/
 
     <p class="case_studies_intro-para">We use many government datasets on this site to power our <a href="{{ site.baseurl }}/explore/">interactive visualizations</a>. Some of these were created through the USEITI process, and are available here for download. Others come from other government sources. For those, we provide links direct to the source here so you can find fresh data whenever you need it.</p>
 
-    <h2 class="h3 downloads-section_heading">Revenue</h2>
+    <h2 class="downloads-section_heading">Revenue</h2>
 
     <ul class="list-sections">
     	<li class="downloads-download_links">
@@ -59,7 +59,7 @@ permalink: /downloads/
 
     </ul>
 
-    <h2 class="h3 downloads-section_heading">Production</h2>
+    <h2 class="downloads-section_heading">Production</h2>
     <ul class="list-sections">
     	<li class="downloads-download_links">
         <a href="http://www.eia.gov/" id="production-all" class="link-no_under"><h3>All lands and waters</h3></a>
@@ -79,7 +79,7 @@ permalink: /downloads/
 
     </ul>
 
-    <h2 class="h3 downloads-section_heading">Economic impact</h2>
+    <h2 class="downloads-section_heading">Economic impact</h2>
     <ul class="list-sections">
     	<li class="downloads-download_links">
         <a href="http://www.bea.gov/API/signup/index.cfm" id="gdp" class="link-no_under"><h3>Gross Domestic Product</h3></a>

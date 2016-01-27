@@ -12,7 +12,7 @@
   var mutating = false;
 
   // create references for often-used elements
-  var root = d3.select('#gdp');
+  var root = d3.select('#exports');
   var regionSections = root.selectAll('.regions > .region');
   var timeline = root.select('#timeline');
 

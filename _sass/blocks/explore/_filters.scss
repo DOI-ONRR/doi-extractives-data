@@ -7,6 +7,7 @@
   background-color: $white;
   margin-left: 0;
   padding: $base-padding;
+  padding-left: 0;
   position: absolute;
   width: 100%;
   z-index: 3000;
@@ -28,6 +29,7 @@
     background-color: $mid-blue-opaque !important;
     height: 100%;
     overflow-y: auto;
+    padding-left: $base-padding;
 
     @include respond-to(medium-up) {
       height: inherit;

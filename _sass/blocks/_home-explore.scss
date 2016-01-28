@@ -37,7 +37,7 @@
 .explore_home-tabs {
   @include heading(para-sm);
   margin-bottom: 8px;
-  text-align: right;
+  text-align: center;
 
   @include respond-to(tiny-down) {
     line-height: 0.75rem;

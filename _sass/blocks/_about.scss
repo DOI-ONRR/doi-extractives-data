@@ -93,3 +93,21 @@
     line-height: 2;
   }
 }
+
+.article_table-head {
+  font-weight: $weight-book;
+}
+
+.article_table-indented {
+  tr {
+    &.article_table-head {
+      td:first-child {
+        text-indent: 0rem;
+      }
+    }
+
+    td:first-child {
+      text-indent: 1rem;
+    }
+  }
+}

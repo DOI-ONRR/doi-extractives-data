@@ -23,7 +23,8 @@
 
 .explore_home-tabs {
   @include heading(para-sm);
-  margin-bottom: 3px;
+  font-size: 0.85rem;
+  margin-bottom: 8px;
   text-align: right;
 
   @include respond-to(tiny-down) {
@@ -53,6 +54,22 @@
   }
 
   li {
+    display: inline-block;
+  }
+}
+
+.explore_home-tab_mobile {
+  display: inline-block;
+
+  @include respond-to(small-up) {
+    display: none;
+  }
+}
+
+.explore_home-tab_desktop {
+  display: none;
+
+  @include respond-to(small-up) {
     display: inline-block;
   }
 }

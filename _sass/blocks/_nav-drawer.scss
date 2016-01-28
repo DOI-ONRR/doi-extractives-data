@@ -26,10 +26,6 @@ $nav-drawer-height: 593px;
     bottom: initial;
     overflow: hidden;
   }
-
-  .drawer-search_field {
-    @include font-size(0.875);
-  }
 }
 
 .nav_drawer-nav {
@@ -43,7 +39,7 @@ $nav-drawer-height: 593px;
 
   font-weight: $weight-bold;
   letter-spacing: 2px;
-  padding-bottom: $base-padding-large;
+  padding-bottom: 1.6em;
   text-transform: uppercase;
 
   &:last-of-type {

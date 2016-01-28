@@ -23,12 +23,13 @@
 
 .explore_home-tabs {
   @include heading(para-sm);
-  margin-bottom: 8px;
+  margin-bottom: 4px;
   text-align: right;
 
   @include respond-to(tiny-down) {
     line-height: 0.75rem;
     font-size: 0.85rem;
+    margin-bottom: 8px;
     text-align: center;
   }
 

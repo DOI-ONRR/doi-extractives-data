@@ -85,6 +85,7 @@
   p {
     @include heading(para-md);
     color: $blue-alt;
+    font-weight: $weight-book;
   }
 }
 
@@ -94,7 +95,7 @@
   label {
     @include heading(para-sm);
     color: $blue-alt;
-    font-weight: $weight-light;
+    font-weight: $weight-book;
     letter-spacing: 0.7px;
     margin-bottom: 3px;
     text-transform: uppercase;

@@ -28,8 +28,8 @@
 
   @include respond-to(tiny-down) {
     line-height: 0.75rem;
-    font-size: 0.85rem;
-    margin-bottom: 8px;
+    font-size: 0.95rem;
+    margin-bottom: 9px;
     text-align: center;
   }
 
@@ -37,7 +37,7 @@
     border: 1px solid transparent;
     color: $black;
     margin-right: $base-padding-lite;
-    padding: ($base-padding-lite / 2) $base-padding;
+    padding: $base-padding-lite ($base-padding / 2);
 
     &[aria-selected="true"] {
       background-color: $white;

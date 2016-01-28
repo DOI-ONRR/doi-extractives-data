@@ -1,7 +1,6 @@
 eiti-map {
   display: block;
   position: relative;
-  // border: 1px solid #ccc;
 
   svg {
     display: block;
@@ -14,7 +13,7 @@ eiti-map {
 
   path {
     fill: transparent;
-    stroke: none;
+    stroke: $neutral-gray;
   }
 
   &.clickable path.feature {
@@ -38,7 +37,7 @@ eiti-map {
   }
 
   path.feature.zoomed {
-    stroke: lighten($neutral-gray, 10%);
+    stroke: $neutral-gray;
     stroke-width: 3;
   }
 

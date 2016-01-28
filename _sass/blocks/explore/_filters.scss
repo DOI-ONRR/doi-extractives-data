@@ -7,7 +7,6 @@
   background-color: $white;
   margin-left: 0;
   padding: $base-padding;
-  padding-left: 0;
   position: absolute;
   width: 100%;
   z-index: 3000;
@@ -17,6 +16,7 @@
     border-bottom-left-radius: $base-border-radius;
     border-bottom-right-radius: $base-border-radius;
     margin-right: $base-padding;
+    padding-left: 0;
     width: initial;
   }
 

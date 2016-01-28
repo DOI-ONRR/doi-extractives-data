@@ -118,7 +118,7 @@ permalink: /explore/corporate-income-tax/
     <div class="footnotes">
       <ol>
         <li id="fn:1"><p>Statistics on corporate income taxes relative to companies performing extractive activities are generally classified under the NAICS Mining major industry. In addition, integrated companies that operate in both the downstream extractive and refining spaces are classified under the NAICS Petroleum and Coal Products Manufacturing major industry. <a href="#fnref:1" class="reversefootnote">↩</a></p></li>
-        <li id="fn:2"><p>All figures are estimates based on samples. Internal Revenue Service, <a href="https://www.irs.gov/uac/SOI-Tax-Stats-Returns-of-Active-Corporations-Table-1">Tax Returns of Active Corporations</a>.<a href="#fnref:2" class="reversefootnote">↩</a></p></li>
+        <li id="fn:2"><p>Internal Revenue Service, <a href="https://www.irs.gov/uac/SOI-Tax-Stats-Returns-of-Active-Corporations-Table-1">Tax Returns of Active Corporations</a>. All figures are estimates based on samples.<a href="#fnref:2" class="reversefootnote">↩</a></p></li>
         <li id="fn:3"><p>Petroleum and coal products manufacturing encompasses an additional industry subcategory, <em>Asphalt paving, roofing, other petroleum and coal products</em>, which as exluded because it is outside the scope of EITI.<a href="#fnref:3" class="reversefootnote">↩</a></p></li>
       </ol>
     </div>

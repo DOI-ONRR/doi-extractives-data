@@ -1,10 +1,13 @@
 (function(exports) {
-  // 'use strict';
+  'use strict';
+
+  var d3 = require('d3');
+  var queue = require('queue-async');
 
   /*
    * @namespace eiti
    */
-  var eiti = exports.eiti = {};
+  var eiti = exports;
 
   /**
    * Load a URL by inferring its data type based on the extension (.csv, .tsv,
@@ -27,6 +30,20 @@
     ['csv', 'tsv', 'json'].forEach(function(type) {
       loaders[type] = d3[type];
     });
+
+    var process = function(callbacks, error, data) {
+      if (callbacks.length === 1) {
+        return callbacks[0](error, data);
+      }
+      var next = function() {
+        var cb = callbacks.shift();
+        cb(error, data);
+        if (callbacks.length) {
+          window.requestAnimationFrame(next);
+        }
+      };
+      return next();
+    };
 
     var load = function(url, done, fresh) {
       var req;
@@ -68,20 +85,6 @@
       req.callbacks = [done];
       loading.set(url, req);
       return req;
-    };
-
-    var process = function(callbacks, error, data) {
-      if (callbacks.length === 1) {
-        return callbacks[0](error, data);
-      }
-      var next = function() {
-        var cb = callbacks.shift();
-        cb(error, data);
-        if (callbacks.length) {
-          window.requestAnimationFrame(next);
-        }
-      };
-      return next();
     };
 
     load.clearCache = function() {
@@ -202,71 +205,7 @@
   // UI bits
   eiti.ui = {};
 
-  /**
-   * Create an augmented [d3-tip](https://github.com/Caged/d3-tip)
-   * instance with "show" and "hide" event dispatching capabilities.
-   * EITI tips also have a `.target()` accessor which allows you to
-   * override the element that's used to calculate tooltip
-   * positioning.
-   * @name eiti.ui.tip
-   *
-   * @example
-   * var tip = eiti.ui.tip()
-   *   .on('show', function() {
-   *     console.log('tip show:', this);
-   *   })
-   *   .target(function() {
-   *     return this.querySelector('circle');
-   *   });
-   */
-  eiti.ui.tip = function() {
-    var tip = d3.tip();
-    var show = tip.show;
-    var hide = tip.hide;
-    var dispatch = d3.dispatch('show', 'hide');
-
-    var target = null;
-
-    var showClass = classify('show', 'hide');
-    var hideClass = classify('hide', 'show');
-
-    /*
-     * Override the target of the tooltip for positioning purposes.
-     * @example
-     * tip.target(function() {
-     *   return this.querySelector('circle');
-     * });
-     */
-    tip.target = function(_) {
-      if (!arguments.length) {
-        return target;
-      }
-      target = d3.functor(_);
-      return tip;
-    };
-
-    tip.show = function() {
-      var args = arguments;
-      dispatch.show.apply(this, arguments);
-      if (target) {
-        var t = target ? target.apply(this, arguments) : null;
-        if (t) {
-          args = [].slice.call(args).concat([t]);
-        }
-      }
-      tip.attr('class', showClass);
-      return show.apply(this, args);
-    };
-
-    tip.hide = function() {
-      dispatch.hide.apply(this, arguments);
-      tip.attr('class', hideClass);
-      return hide.apply(this, arguments);
-    };
-
-    return d3.rebind(tip, dispatch, 'on');
-  };
-
+  // TODO: remove
   eiti.ui.expando = function(selection) {
     selection.datum(function(d) {
       var text = this.textContent;
@@ -278,6 +217,7 @@
     .on('click.expando', eiti.ui.expando.toggle);
   };
 
+  // TODO: remove
   eiti.ui.expando.toggle = function toggle(d) {
     var id = this.getAttribute('aria-controls');
     var hidden = 'aria-hidden';
@@ -688,31 +628,6 @@
 
 
   /**
-   * CustomEvent polyfill via:
-   * <https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent/CustomEvent>
-   */
-  (function () {
-    try {
-      var e = new CustomEvent('foo'); // jshint ignore:line
-    } catch (error) {
-      function CustomEvent(event, params) {
-        params = params || {
-          bubbles: false,
-          cancelable: false,
-          detail: undefined
-        };
-        var evt = document.createEvent('CustomEvent');
-        evt.initCustomEvent(event, params.bubbles,
-                            params.cancelable, params.detail);
-        return evt;
-      }
-      CustomEvent.prototype = window.Event.prototype;
-      window.CustomEvent = CustomEvent;
-    }
-  })();
-
-
-  /**
    * DOMTokenList::toggle() fix
    *
    * This addresses a bug in IE10+ in which DOMTokenList::toggle()
@@ -728,5 +643,4 @@
     }
   })();
 
-
-})(this);
+})(module.exports);

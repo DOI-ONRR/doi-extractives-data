@@ -36,7 +36,6 @@
         accordionStatus = accordionItem.getAttribute('accordion-open');
 
       accordionStatus = (accordionStatus == 'true') ? 'false' : 'true';
-
       accordionItem.setAttribute('accordion-open', accordionStatus);
     },
     /**

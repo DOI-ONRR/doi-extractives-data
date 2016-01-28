@@ -118,7 +118,7 @@ nav_items:
   <td>Oil and gas</td>
   </tr>
   <tr>
-    <td><a href="www.gpo.gov/fdsys/pkg/STATUTE-96/pdf/STATUTE-96-Pg1938.pdf">Indian Mineral Development Act of 1982</a> (25 USC §§ 2101–2108 et seq.)</td>
+    <td><a href="http://www.gpo.gov/fdsys/pkg/STATUTE-96/pdf/STATUTE-96-Pg1938.pdf">Indian Mineral Development Act of 1982</a> (25 USC §§ 2101–2108 et seq.)</td>
     <td>Provides Indian tribes with flexibility in the development and sale of mineral resources, including opportunities to enter into joint venture agreements with mineral developers.</td>
     <td>Indian (tribal)</td>
   <td>Oil and gas, coal, geothermal, and other mineral resources</td>

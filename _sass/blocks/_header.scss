@@ -166,8 +166,9 @@ header,
   }
 
   &:last-child {
+    margin-bottom: 0.4rem;
+    padding-top: 1.1rem;
     vertical-align: top;
-    padding-top: 0.95rem;
   }
 
   .header-nav_search {
@@ -222,7 +223,7 @@ header,
 }
 
 .header-nav_item_link_spacer {
-  color: $dark-gray;
+  color: $mid-gray;
 }
 
 [eiti-drawer-toggle] {

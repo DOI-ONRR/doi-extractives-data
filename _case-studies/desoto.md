@@ -66,7 +66,7 @@ Since 2008, Louisiana has invested $1.1 billion in transportation projects in th
 
 Louisiana completed a Hydraulic Fracturing State Review in March 2011, which explains the state’s policies around industrial water use and wastewater reuse and/or disposal. However, the review does not itemize public expenditures on water-related infrastructure for industrial activities.[^24]
 
-The DeSoto Parish Emergency Medical Services (EMS) Department formed in 2001, funded by a four percent millage tax.[^25] Since then, the DeSoto EMS Department has worked closely with gas companies on safety measures, including answering numerous calls related to gas-well site incidents. The parish is not bearing the full burden of these incidents; the parish has received donations from private companies to offset equipment costs. The frequency and value of the donations is not published.
+The DeSoto Parish Emergency Medical Services (EMS) Department formed in 2001, funded by a four percent <span class="term term-p" data-term="millage tax" title="Click to define" tabindex="0">millage tax<i class="icon-book"></i></span>.[^25] Since then, the DeSoto EMS Department has worked closely with gas companies on safety measures, including answering numerous calls related to gas-well site incidents. The parish is not bearing the full burden of these incidents; the parish has received donations from private companies to offset equipment costs. The frequency and value of the donations is not published.
 
 <h2 class="h3"><a name="data" class="case_studies_content-heading" data-nav-header="data">Data availability</a></h2>
 

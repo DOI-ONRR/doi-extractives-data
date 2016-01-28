@@ -116,14 +116,14 @@ img.card-image {
 
   p {
     @include heading(para-md);
-    color: darken($neutral-gray, 20%);
+    color: $dark-gray;
     line-height: 1.6;
   }
 
   .card-content-subhead {
     color: $dark-gray;
     font-weight: $weight-light;
-    margin-bottom: $base-padding-lite;
+    margin-bottom: ($base-padding-lite / 2);
   }
 
   @include respond-to(medium-up) {

@@ -186,9 +186,9 @@ permalink: /downloads/reconciliation/
 
     <p>The MSG and the IA scoped out the potential causes of differences between amounts reported by in-scope reporting companies and government entities for each revenue stream included in the USEITI reconciliation process.</p>
 
-    <p>Three anticipates reasons for variance were:</p>
+    <p>Three anticipated reasons for variance were:</p>
 
-    <ul>
+    <ul class="list-bullet">
         <li>Attributing payment information to different revenue streams</li>
         <li>Recording a payment and a receipt of payment in different reporting periods</li>
         <li>Reporting based on different sets of company payor entities</li>
@@ -201,7 +201,7 @@ permalink: /downloads/reconciliation/
         <li><strong>Variance floor threshold:</strong> This was the minimum dollar threshold for a variance and only applied if a variance exceeded the variance percentage threshold. If the variance exceeded the variance percentage threshold and exceeded the variance floor threshold, the IA performed further evaluation of the variance.</li>
     </ul>
 
-    <p>The table below outlines the Margin of Variance thresholds applied by the IA, which were approved by MSG.</p>
+    <p>The table below outlines the Margin of Variance thresholds applied by the IA, which were approved by the MSG.</p>
 
     <h4>Margin of variance thresholds</h4>
 

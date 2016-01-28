@@ -36,7 +36,7 @@
 
 .explore_home-tabs {
   @include heading(para-sm);
-  margin-bottom: 4px;
+  margin-bottom: 3px;
   text-align: right;
 
   @include respond-to(tiny-down) {
@@ -50,7 +50,7 @@
     border: 1px solid transparent;
     color: $black;
     margin-right: $base-padding-lite;
-    padding: $base-padding-lite ($base-padding / 2);
+    padding: $base-padding-lite;
 
     &[aria-selected="true"] {
       @include active-tab();

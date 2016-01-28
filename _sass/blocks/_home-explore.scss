@@ -10,9 +10,14 @@
   }
 }
 
+.explore_home-explore_heading {
+  margin-bottom: $base-padding-lite;
+}
+
 .explore_home-subhead {
   @include heading(para-md);
-  font-weight: $weight-bold;
+  font-weight: $weight-light;
+  margin-bottom: 0;
   padding-bottom: 0;
 
   + .explore_home-heading {

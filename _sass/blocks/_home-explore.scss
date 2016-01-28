@@ -23,13 +23,12 @@
 
 .explore_home-tabs {
   @include heading(para-sm);
-  font-size: 0.85rem;
   margin-bottom: 8px;
   text-align: right;
 
   @include respond-to(tiny-down) {
-    font-size: 0.6rem;
     line-height: 0.75rem;
+    font-size: 0.85rem;
     text-align: center;
   }
 
@@ -61,7 +60,7 @@
 .explore_home-tab_mobile {
   display: inline-block;
 
-  @include respond-to(small-up) {
+  @include respond-to(tiny-up) {
     display: none;
   }
 }
@@ -69,7 +68,7 @@
 .explore_home-tab_desktop {
   display: none;
 
-  @include respond-to(small-up) {
+  @include respond-to(tiny-up) {
     display: inline-block;
   }
 }

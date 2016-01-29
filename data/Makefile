@@ -20,7 +20,8 @@ REVENUE_FILES = \
 	regional/revenues.tsv \
 	county-revenues-by-state \
 	county-resource-revenues-by-state \
-	company/revenue.tsv
+	company/revenue.tsv \
+	reconciliation/revenue.tsv
 
 # production volume files
 PRODUCTION_FILES = \
@@ -106,6 +107,13 @@ national/revenues.tsv: state/revenues.tsv offshore/revenues.tsv
 		--group 'Year,Commodity,Type' \
 		--sum 'Revenue' \
 		-o $@ $^
+
+reconciliation/revenue.tsv: $(input)multiple-sources/reconciliation.tsv
+	mkdir -p $(dir $@)
+	bin/parse-reconciliation.js \
+		--if tsv \
+		--of tsv \
+		$< > $@
 
 company/revenue.tsv: $(input)onrr/company-revenues.tsv
 	mkdir -p $(dir $@)

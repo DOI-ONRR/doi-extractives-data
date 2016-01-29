@@ -1,0 +1,104 @@
+---
+title: Reconciliation | Explore Data
+layout: default
+permalink: /explore/reconciliation/
+---
+<section id="reconciliation" class="explore-subpage container">
+
+  <div class="container-left-4">
+    <div class="container-outer">
+      <div>
+        <a class="breadcrumb" href="{{ site.baseurl }}/explore/">Explore data</a>
+        /
+      </div>
+
+      <h1>Reconciliation</h1>
+
+      <p>During the USEITI process, companies report payments to the government (such as rents, taxes, and royalties), and those reports are compared with government records of revenue received.</p>
+
+      <p>The 2015 report looked at calendar year data for 2013. The independent administrator identified and investigated 17 <span class="term term-p" data-term="material variance" title="Click to define" tabindex="0">material variances<i class="icon-book"></i></span>.</p>
+
+      <p>The 45 companies invited to participate are listed here, along with reported payments and reconciliation results for each revenue type.</p>
+
+      <a href="{{site.baseurl}}/downloads/reconciliation/">
+        <i class="fa fa-file-text-o u-padding-right"></i>Data and documentation
+      </a>
+
+    </div>
+  </div>
+
+  <section class="container-right-8 filters-wrapper_outer">
+    <div data-absolute="true" data-offset-parent="mobile" class="sticky_nav sticky_nav-show_mobile filters-wrapper container" data-toggler="filters" data-max-width="675">
+      <h1 data-toggler="filters" data-filter-description="" class="filter-description filter-description_closed">
+        <a href="#type-selector" class="filter-part" data-key="type">All revenue</a>
+        from
+        extraction on federal lands (2013)
+      </h1>
+      <button class="toggle-filters toggle-desktop" is="eiti-toggle" aria-controls="filters" data-expanded-text="Hide filters" data-collapsed-text="Show filters" data-toggler="filters">Show filters</button>
+
+      <form id="filters" aria-hidden="true" class="filters">
+
+        <div class="filters-heading">
+          <h3>Filter revenue</h3>
+        </div>
+
+        <div class="container-left-6" style="margin-right: 0;">
+          <div id="type-filter" class="filter filters-last">
+            <label for="type-selector">Revenue Type</label>
+            <select id="type-selector" name="type">
+              <option value="">All</option>
+            </select>
+          </div>
+        </div>
+
+        <h1 data-toggler="filters" data-filter-description="" class="filter-description filter-description_closed">
+          <a href="#type-selector" class="filter-part" data-key="type">All revenue</a>
+          from extraction on federal lands (2013)
+        </h1>
+
+      </form>
+
+      <div class="container-outer">
+        <button class="toggle-filters toggle" is="eiti-toggle" aria-controls="filters" data-expanded-text="Hide filters" data-toggler="filters" data-collapsed-text="Show filters">Show filters</button>
+      </div>
+
+    </div>
+
+    <div class="explore-exploration slab-alpha">
+
+      <div class="container">
+        <!-- <div class="container">
+          <p class="para-sm container-left-6">As a part of USEITI, companies report payments to the government (e.g., rents, taxes, royalties) and the government reports what it received. These figures are compiled and reconciled by an independent administrator to make sure these numbers match, and any significant variances are explained.</p>
+          <p class="para-sm container-left-6">When the U.S. independent administrator compared company payments to government revenue, 17 discrepancies exceeded the margin of variance (highlighted in red below). The independent administrator worked with the companies and government entities to investigate these discrepancies, and was able to find explanations for all of them. Explanations included differences in when payments were recorded and how they were classified.</p>
+        </div> -->
+          <h2 class="h3 u-margin-top">Median payment discrepancies by revenue type</h2>
+
+        <table id="revenue-types" class="revenue-type-list subregions">
+        </table>
+      </div>
+
+      <div class="container">
+        <h2 class="h3 region-title">Discrepancies in payments by company and revenue type</h2>
+        <div>
+          <label for="company-name-filter">Search by company name:</label>
+          <input type="text" name="search" id="company-name-filter">
+        </div>
+        <table id="companies" class="company-list subregions">
+          <thead class="list-heading">
+            <tr>
+              <th class="narrow"></th><th>payments reported by government (<strong>gov</strong>) and by company (<strong>co</strong>)</th>
+              <th class="centered">variance (<span class="red">red</span> indicates <span class="term term-p" data-term="material variance" title="Click to define" tabindex="0">material variance<i class="icon-book"></i></span>)</th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+
+    </div>
+
+  </section>
+
+</section>
+
+<script type="text/javascript" src="{{ site.baseurl }}/js/lib/explore.min.js" charset="utf-8"></script>
+<script src="{{ site.baseurl }}/js/eiti.explore.js"></script>
+<script src="{{ site.baseurl }}/js/pages/reconciliation.js"></script>

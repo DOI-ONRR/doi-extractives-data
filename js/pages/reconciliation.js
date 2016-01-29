@@ -2,7 +2,7 @@
 (function() {
   // 'use strict';
 
-  var root = d3.select('#companies');
+  var root = d3.select('#reconciliation');
   var filterToggle = root.select('button.toggle-filters');
   var revenueTypeList = root.select('#revenue-types');
   var companyList = root.select('#companies');
@@ -10,6 +10,7 @@
   var getter = eiti.data.getter;
   var grouper;
   var formatNumber = eiti.format.dollarsAndCents;
+  var formatPercent = eiti.format.percent;
   var REVENUE_TYPE_PREFIX = /^[A-Z]+(\/[A-Z]+)?\s+-\s+/;
 
   var state = eiti.explore.stateManager()
@@ -18,8 +19,33 @@
   var hash = eiti.explore.hash()
     .on('change', state.merge);
 
-  // buttons that expand and collapse other elements
-  var filterToggle = root.select('button.toggle-filters');
+  function isException (val, vart) {
+    if (typeof(val) === 'string') {
+      val = val.trim();
+      return (val === 'DNP' || val === 'DNR' || val === 'N/A');
+    }
+  }
+
+  function isMaterial (d) {
+    var varianceKey = {
+      'Royalties': 1,
+      'Rents':  2,
+      'Bonus': 2,
+      'Other Revenue': 3,
+      'Offshore Inspection Fee': 2,
+      'ONRR Civil Penalties': 1,
+      'Bonus & 1st Year Rental': 2,
+      'Permit Fees': 3,
+      'Renewables': 'N/A',
+      'AML Fees': 2,
+      'OSMRE Civil Penalties': 3,
+      'Corporate Income Tax': 1
+    }
+
+    return varianceKey[d.name] < d.variance
+      ? 'red'
+      : '';
+  }
 
   // FIXME: componentize these too
   var filterParts = root.selectAll('a[data-key]');
@@ -34,29 +60,22 @@
     d3.event.preventDefault();
   });
 
-  var model = eiti.explore.model(eiti.data.path + 'company/revenue.tsv')
+  var model = eiti.explore.model(eiti.data.path + 'reconciliation/revenue.tsv')
     .transform(removeRevenueTypePrefix)
-    .filter('commodity', function(data, commodity) {
-      return data.filter(function(d) {
-        return d.Commodity === commodity;
-      });
-    })
     .filter('type', function(data, type) {
       return data.filter(function(d) {
         return d.revenueType === type;
       });
     })
     .on('prefilter', function(key, data) {
-      if (key === 'commodity') {
-        updateCommoditySelector(data);
         updateRevenueTypeSelector(data);
-      }
     });
 
   var filters = root.selectAll('.filters [name]')
     .on('change', filterChange);
 
-  var search = root.select('#company-name-filter')
+  var search = root.select('#company-name-filter');
+  search
     .on('keyup', updateNameSearch)
     .on('clear', filterChange)
     .on('change', filterChange);
@@ -72,20 +91,24 @@
     updateFilterDescription(state);
 
     grouper = d3.nest()
-      .rollup(function(d) {
-        return d3.sum(d, getter('Revenue'));
+      .rollup(function(leaves) {
+
+        return leaves.map(function(d){
+          return {
+            value: d['Government Reported'],
+            company: d['Company Reported'],
+            variance: d['Variance Percent'],
+            varianceDollars: d['Variance Dollars']
+          };
+        });
       })
       .sortValues(function(a, b) {
-        return d3.descending(+a.Revenue, +b.Revenue);
+        return d3.descending(+a['Government Reported'], +b['Government Reported']);
       });
 
-    var hasCommodity = !!query.commodity;
     var hasType = !!query.type;
-    if (hasType && !hasCommodity) {
-      grouper.key(getter('Commodity'));
-    } else {
-      grouper.key(getter('revenueType'));
-    }
+
+    grouper.key(getter('revenueType'));
 
     model.load(state, function(error, data) {
       if (error) {
@@ -98,30 +121,15 @@
       });
 
       search.property('value', state.get('search') || '');
+
       render(data, state);
     });
   }
 
   function render(data /*, state */) {
-    // console.log('rendering %d rows', data.length, data[0]);
     updateRevenueTypes(data);
     updateCompanyList(data);
     updateNameSearch();
-  }
-
-  function updateCommoditySelector(data) {
-    var commodities = d3.nest()
-      .key(getter('Commodity'))
-      .entries(data)
-      .map(getter('key'))
-      .sort(d3.ascending);
-    var input = root.select('#commodity-selector');
-    var options = input.selectAll('option.value')
-      .data(commodities, identity);
-    options.enter().append('option')
-      .attr('class', 'value')
-      .attr('value', identity)
-      .text(identity);
   }
 
   function updateRevenueTypeSelector(data) {
@@ -130,6 +138,7 @@
       .entries(data)
       .map(getter('key'))
       .sort(d3.ascending);
+
     var input = root.select('#type-selector');
     var options = input.selectAll('option.value')
       .data(commodities, identity);
@@ -140,41 +149,67 @@
   }
 
   function updateRevenueTypes(data) {
-    var types = grouper.entries(data)
-      .map(function(d) {
-        return {
-          name: d.key,
-          value: d.values
+
+    var types = d3.nest()
+      .key(getter('Type'))
+      .entries(data)
+      .map(function(data) {
+
+        var totalGov = d3.sum(data.values, getter('Government Reported'));
+
+        var totalCompany = d3.sum(data.values, getter('Company Reported'));
+        var variance = d3.median(data.values, getter('Variance Percent'));
+
+        var obj = {
+          name: data.key,
+          totalGov: totalGov,
+          totalCompany: totalCompany,
+          variance: variance,
+          types: grouper.entries(data.values)
+            .map(function(d) {
+              return {
+                value: d.values[0].value,
+                company: d.values[0].company,
+                variance: variance,
+                varianceDollars: d3.sum(data.values, getter('Variance Dollars'))
+              };
+            })
         };
+        return obj;
       });
 
-    var extent = d3.extent(types, getter('value'));
-    revenueTypeList.call(renderSubtypes, types, extent);
+    var extent = d3.extent(types, getter('variance'));
+
+    revenueTypeList.call(renderTotals, types, extent);
   }
 
   function updateCompanyList(data) {
     var companies = d3.nest()
       .key(getter('Company'))
       .entries(data)
-      .map(function(d) {
-        var total = d3.sum(d.values, getter('Revenue'));
-        return {
-          name: d.key,
+      .map(function(data) {
+        var total = d3.sum(data.values, getter('Government Reported'));
+
+        var obj = {
+          name: data.key,
           total: total,
-          types: grouper.entries(d.values)
+          types: grouper.entries(data.values)
             .map(function(d) {
+              var variance = isException(d.values[0].variance)
+                ? d.values[0].variance
+                : Math.abs(d.values[0].variance);
+
               return {
                 name: d.key,
-                value: d.values
+                value: d.values[0].value,
+                company: d.values[0].company,
+                variance: variance
               };
             })
-            /*
-            .concat([{
-              name: 'Total',
-              value: total
-            }])
-            */
         };
+
+        return obj;
+
       });
 
     var items = companyList.selectAll('tbody.company')
@@ -187,7 +222,7 @@
       .append('tr')
         .attr('class', 'name');
     enter.append('th')
-      .attr('class', 'subregion-name')
+      .attr('class', 'subregion-name narrow')
       .text(getter('name'));
     enter.append('th')
       .attr('class', 'subtotal value');
@@ -195,24 +230,16 @@
       .attr('class', 'subtotal-label');
 
     items.sort(function(a, b) {
-      return d3.descending(a.total, b.total);
+      return d3.descending(Math.abs(a.total), Math.abs(b.total));
     });
 
-    items.select('.subtotal-label')
-      .text(function(d) {
-        return d.types.length > 1 ? 'total' : '';
-      });
-
-    items.select('.subtotal')
-      .text(function(d) {
-        return d.types.length > 1 ? formatNumber(d.total) : '';
-      });
-
     var extent = d3.extent(companies, getter('total'));
+
     items.call(renderSubtypes, getter('types'), extent);
   }
 
   function renderSubtypes(selection, types, extent) {
+
     var items = selection.selectAll('.subtype')
       .data(types, getter('name'));
 
@@ -224,17 +251,17 @@
     items
       .call(updateRevenueItem, extent)
       .sort(function(a, b) {
-        return d3.descending(a.value, b.value);
+        return d3.descending(Math.abs(a.value), Math.abs(b.value));
       });
   }
 
   function updateNameSearch() {
-    var query = search.property('value').toLowerCase();
+    var query = search.property('value').toLowerCase() || '';
     var items = companyList.selectAll('.company');
     if (query) {
       items
         .style('display', function(d) {
-          d.index = d.name.toLowerCase().indexOf(query)
+          d.index = d.name.toLowerCase().indexOf(query);
           return d.index > -1 ? null : 'none';
         })
         .filter(function(d) {
@@ -263,9 +290,66 @@
 
   function setupRevenueItem(selection) {
     selection.append('td')
-      .attr('class', 'name');
+      .attr('class', 'name narrow');
     selection.append('td')
       .attr('class', 'value');
+    selection.append('td')
+      .attr('class', 'variance');
+  }
+
+  function updateRevenueItem(selection, extent) {
+
+    selection.select('.name')
+      .text(getter('name'));
+
+
+    selection.select('.value')
+      .html(function(d) {
+        var company = isException(d.company)
+          ? d.company
+          : formatNumber(d.company);
+
+        var multiLine = formatNumber(d.value) +
+          ' <span class="reportee">gov</span>' +
+          '</br>' +
+          company +
+          ' <span class="reportee">co</span>';
+        return multiLine;
+      });
+
+    selection.select('.variance')
+      .html(function(d) {
+        var variance = isException(d.variance, 'var')
+          ? d.variance
+          : formatPercent(d.variance / 100);
+
+        var color = isMaterial(d);
+
+        return '<span class="' + color + '">' + variance + '</span>';
+      });
+  }
+
+  function renderTotals(selection, types, extent) {
+    var items = selection.selectAll('.subtype')
+      .data(types, getter('name'));
+
+    items.exit().remove();
+    items.enter().append('tr')
+      .attr('class', 'subtype')
+      .call(setupTotals);
+
+    items
+      .call(updateTotals, extent)
+      .sort(function(a, b) {
+        return d3.descending(a.variance, b.variance);
+      });
+  }
+
+  function setupTotals(selection) {
+    selection.append('td')
+      .attr('class', 'name narrow');
+    selection.append('td')
+      .attr('class', 'variance')
     selection.append('td')
       .attr('class', 'bar')
       .append(function() {
@@ -274,23 +358,25 @@
       });
   }
 
-  function updateRevenueItem(selection, extent) {
+  function updateTotals(selection, extent) {
+
     selection.select('.name')
       .text(getter('name'));
 
-    selection.select('.value')
-      .text(function(d) {
-        return formatNumber(d.value);
-      });
-
     var bar = selection.select('eiti-bar')
-      .attr('value', getter('value'));
+      .attr('value', function(d) {
+        return d.types[0].variance;
+      });
 
     if (extent) {
       bar
         .attr('min', Math.min(0, extent[0]))
         .attr('max', extent[1]);
     }
+    selection.select('.variance')
+      .text(function(d) {
+        return formatPercent(d.types[0].variance / 100);
+      });
   }
 
   function updateFilterDescription(state) {
@@ -298,14 +384,8 @@
 
     var data = {
       type: state.get('type') || 'All revenue',
-      commodity: (state.get('commodity') || 'all resource').toLowerCase(),
+      government: state.get('government'),
     };
-
-    /*
-    if (data.commodity === 'N/A') {
-      data.commodity = 'no applicable';
-    }
-    */
 
     desc.selectAll('[data-key]')
       .text(function() {
@@ -315,12 +395,12 @@
 
   function removeRevenueTypePrefix(row) {
     if (!row.revenueType) {
-      row.revenueType = row['Revenue Type'].replace(REVENUE_TYPE_PREFIX, '');
+      row.revenueType = row['Type'];
     }
   }
 
   function filterChange() {
-    state.set(this.name, this.value);
+    state.set(this.name, this.value, this.company, this.variance);
   }
 
   function identity(d) {

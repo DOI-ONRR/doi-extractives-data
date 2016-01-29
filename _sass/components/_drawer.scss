@@ -62,7 +62,10 @@
     display: inline-block;
     float: right;
     margin-bottom: 0;
-    padding: 0;
+    padding: $base-padding-lite;
+    margin-bottom: (-1 * $base-padding-lite);
+    margin-right: (-1 * $base-padding-lite);
+    margin-top: (-1 * $base-padding-lite);
   }
 
 }

@@ -1,3 +1,4 @@
+// jshint node: true
 var webpack = require('webpack');
 var env = process.env.NODE_ENV;
 
@@ -14,14 +15,15 @@ var config = {
     path: './js/lib',
     filename: '[name].js',
     chunkFilename: '[id].js'
-  }
+  },
+
+  plugins: []
 
 };
 
-var plugins = [];
 if (env === 'production') {
   var uglify = new webpack.optimize.UglifyJsPlugin({minimize: true});
-  config.plugins = [uglify];
+  config.plugins.push(uglify);
   config.devtool = 'source-map';
 }
 

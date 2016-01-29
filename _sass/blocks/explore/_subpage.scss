@@ -32,7 +32,14 @@
 }
 
 .explore-exploration {
+
+
   @include respond-to(medium-up) {
     margin-top: 128px;
+    margin-right: $base-padding;
+  }
+
+  @include respond-to(large-up) {
+    margin-right: 0;
   }
 }

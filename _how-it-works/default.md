@@ -75,7 +75,7 @@ permalink: /how-it-works/
 
 	<section class="container">
 		<h3 id="natural-resources" class="landing-section_category">Natural resources</h3>
-		<div class="container landing-section" accordion-item accordion-open="true">
+		<div class="container landing-section" accordion-item accordion-open="false">
 			<h5 class="landing-heading"><a href="{{site.baseurl}}/how-it-works/ownership/">Ownership</a></h5>
 			<button class="accordion-button" accordion-button title="Toggle for ownership"></button>
 			<div class="accordion-content">

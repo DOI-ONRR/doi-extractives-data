@@ -28,7 +28,7 @@ permalink: /explore/
 
   <section class="container">
     <a id="revenue" class="link-no_under"><h3 class="landing-section_category">Revenue data</h3></a>
-    <div class="container-half landing-section" accordion-item accordion-open="true">
+    <div class="container-half landing-section" accordion-item accordion-open="false">
       <h5 class="landing-heading"><a href="{{site.baseurl}}/explore/federal-revenue-by-location/">Federal revenue by location</a></h5>
       <button class="accordion-button" accordion-button title="Toggle for federal revenue by location"></button>
       <div class="accordion-content">

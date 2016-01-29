@@ -4,7 +4,7 @@
 }
 
 .filters-wrapper {
-  background-color: $white;
+  background-color: $mid-blue;
   margin-left: 0;
   padding: $base-padding;
   position: absolute;
@@ -13,6 +13,7 @@
 
 
   @include respond-to(medium-up) {
+    background-color: $white;
     border-bottom-left-radius: $base-border-radius;
     border-bottom-right-radius: $base-border-radius;
     margin-right: $base-padding;
@@ -56,10 +57,14 @@
   }
 
   &.js-transparent {
-    background: transparent;
+    background: $mid-blue;
     border-bottom: 2px solid lighten($neutral-gray, 5%);
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+
+    @include respond-to(medium-up) {
+      background: transparent;
+    }
   }
 }
 
@@ -194,12 +199,15 @@
 
 .filter-description {
   @include heading(para-xl);
+  display: none;
   font-weight: $weight-bold;
   float: left;
   letter-spacing: -0.5px;
   margin-bottom: $base-padding;
 
+
   @include respond-to(medium-up) {
+    display: inline-block;
     float: left;
     width: 65%;
   }

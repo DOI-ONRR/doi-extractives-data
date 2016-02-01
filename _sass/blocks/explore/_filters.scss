@@ -237,10 +237,14 @@
 
 .filter-search {
   border-color: $dark-gray;
+  margin-left: $base-padding;
+  margin-right: $base-padding;
   padding-left: $base-padding;
   padding-right: $base-padding;
 
   @include respond-to(medium-up) {
+    margin-left: 0;
+    margin-right: 0;
     padding-left: 0;
     padding-right: 0;
     width: 50%;

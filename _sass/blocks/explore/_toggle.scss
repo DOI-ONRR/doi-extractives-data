@@ -41,6 +41,10 @@
     display: none;
     float: right;
   }
+
+  &:before {
+    vertical-align: text-top;
+  }
 }
 
 .toggle-desktop {
@@ -58,8 +62,10 @@
   @include respond-to(medium-up){
     display: inline-block;
   }
+}
 
-  &:before {
-    vertical-align: text-top;
-  }
+.toggle-filters:not(.toggle-desktop) {
+  background: transparent;
+  color: $blue-alt;
+  float: right;
 }

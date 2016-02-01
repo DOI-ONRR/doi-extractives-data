@@ -50,10 +50,14 @@
   }
 
   &.js-color {
-    background: $white;
+    background: $mid-blue;
     border-bottom: 2px solid lighten($neutral-gray, 5%);
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+
+    @include respond-to(medium-up) {
+      background: $white;
+    }
   }
 
   &.js-transparent {
@@ -203,13 +207,24 @@
   font-weight: $weight-bold;
   float: left;
   letter-spacing: -0.5px;
-  margin-bottom: $base-padding;
 
 
   @include respond-to(medium-up) {
     display: inline-block;
     float: left;
     width: 65%;
+  }
+
+  &.filter-description_open {
+    display: block;
+    margin-bottom: $base-padding;
+    margin-top: $base-padding;
+    padding-left: $base-padding;
+    padding-right: $base-padding;
+
+    @include respond-to(medium-up) {
+      display: none;
+    }
   }
 
   &.filter-description_closed {
@@ -232,5 +247,17 @@
     border-bottom: 2px dotted $light-black;
     color: inherit;
     text-decoration: none;
+  }
+}
+
+.filter-search {
+  border-color: $dark-gray;
+  padding-left: $base-padding;
+  padding-right: $base-padding;
+
+  @include respond-to(medium-up) {
+    padding-left: 0;
+    padding-right: 0;
+    width: 50%;
   }
 }

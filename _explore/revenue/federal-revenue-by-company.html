@@ -79,17 +79,21 @@ permalink: /explore/federal-revenue-by-company/
     <div class="explore-exploration slab-alpha">
 
       <div class="container">
-        <h2 class="h3 region-title">Total revenues by type</h2>
+        <div class="filter-summary_title">
+          <h2 class="h3 region-title">Total revenues by type</h2>
+        </div>
         <table id="revenue-types" class="revenue-type-list subregions">
         </table>
       </div>
 
       <div class="container">
-        <h2 class="h3 region-title">Companies</h2>
-        <div>
-          <label for="company-name-filter">Filter by company name:</label>
-          <input class="filter-search" type="text" name="search" id="company-name-filter">
-        </div>
+        <section class="filter-search_section">
+          <h2 class="h3 region-title">Companies</h2>
+          <div class="filter-search_form">
+            <label for="company-name-filter">Filter by company name:</label>
+            <input class="filter-search" type="text" name="search" id="company-name-filter">
+          </div>
+        </section>
         <table id="companies" class="company-list subregions">
         </table>
       </div>

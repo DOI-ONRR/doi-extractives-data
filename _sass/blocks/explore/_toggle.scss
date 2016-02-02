@@ -4,7 +4,7 @@
   background: transparent;
   color: $blue;
 
-  &:before {
+  &::before {
     content: $icon-plus-sm;
     font-family: eiti;
     font-style: normal;
@@ -42,7 +42,7 @@
     float: right;
   }
 
-  &:before {
+  &::before {
     vertical-align: text-top;
   }
 }

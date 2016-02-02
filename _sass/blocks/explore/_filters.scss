@@ -67,7 +67,7 @@
     border-bottom-right-radius: 0;
 
     @include respond-to(medium-up) {
-      background: transparent;
+      background: $white;
     }
   }
 }

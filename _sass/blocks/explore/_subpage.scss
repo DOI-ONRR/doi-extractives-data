@@ -17,12 +17,6 @@
   padding-top: $base-padding;
 }
 
-.regions {
-  @include respond-to(medium-to-huge-plus) {
-    margin-right: $base-padding;
-  }
-}
-
 .regions .region {
   display: none;
 
@@ -40,7 +34,8 @@
     margin-right: $base-padding;
   }
 
-  @include respond-to(large-up) {
+  @include respond-to(huge-plus-up) {
     margin-right: 0;
   }
+
 }

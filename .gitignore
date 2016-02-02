@@ -1,13 +1,9 @@
 *.css.map
-*.pem
+*.log
 .*.sw?
 .DS_Store
 .env
 .sass-cache
 .jekyll-metadata
 _site
-bower.json
-bower_components
 node_modules
-npm-debug.log
-styleguide-template/node_modules

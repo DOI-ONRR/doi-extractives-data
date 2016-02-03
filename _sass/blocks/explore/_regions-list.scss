@@ -93,10 +93,10 @@
       width: 80%;
 
       &.narrow {
-        width: 50%;
+        vertical-align: middle;
+        width: 35%;
       }
     }
-
     .variance,
     .centered {
       text-align: center;
@@ -113,6 +113,26 @@
     font-weight: $weight-book;
     text-align: left;
     width: 25px;
+  }
+
+  .bar { // specific to reconcilation
+    width: 100px;
+
+    @include respond-to(medium-up) {
+      width: 150px;
+    }
+
+    @include respond-to(large-up) {
+      width: 200px;
+    }
+
+    eiti-bar {
+      display: inline-block;
+    }
+  }
+
+  th.bar {
+    text-align: right;
   }
 
   .bar_negative {
@@ -165,7 +185,58 @@
   }
 }
 
-.red {
-  color: $red;
+.bold {
   font-weight: $weight-bold;
+}
+
+.material-variance {
+  border-right: 2px solid $neutral-gray;
+}
+
+.threshold {
+  display: inline-block;
+  font-weight: $weight-bold;
+  margin-left: $base-padding-lite;
+}
+
+.revenue-type-list {
+  tr .variance {
+    text-align: right;
+    width: 40px;
+  }
+
+  tr:first-of-type {
+    border-top: 1px solid $neutral-gray;
+  }
+}
+
+.detached-header {
+  position: relative;
+}
+
+.detached-table_title {
+  float: left;
+  width: 50%;
+
+  @include respond-to(small-up) {
+    width: 60%;
+  }
+
+  @include respond-to(medium-up) {
+    width: 75%;
+  }
+
+  @include respond-to(large-up) {
+    width: 100%;
+  }
+}
+
+.detached-table_header {
+  bottom: 0;
+  display: inline;
+  float: right;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  vertical-align: bottom;
 }

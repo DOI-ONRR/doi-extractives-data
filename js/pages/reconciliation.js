@@ -42,9 +42,7 @@
   }
 
   function isMaterial (d) {
-    return varianceKey[d.name] < d.variance
-      ? 'red'
-      : '';
+    return !!(varianceKey[d.name] < d.variance);
   }
 
   // FIXME: componentize these too
@@ -324,9 +322,9 @@
           ? d.variance
           : formatPercent(d.variance / 100);
 
-        var color = isMaterial(d);
-
-        return '<span class="' + color + '">' + variance + '</span>';
+        return isMaterial(d)
+          ? '<strong>' + variance + '</strong>'
+          : variance;
       });
   }
 

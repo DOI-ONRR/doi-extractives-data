@@ -13,6 +13,21 @@
   var formatPercent = eiti.format.percent;
   var REVENUE_TYPE_PREFIX = /^[A-Z]+(\/[A-Z]+)?\s+-\s+/;
 
+  var varianceKey = {
+    'Royalties': 1,
+    'Rents':  2,
+    'Bonus': 2,
+    'Other Revenue': 3,
+    'Offshore Inspection Fee': 2,
+    'ONRR Civil Penalties': 1,
+    'Bonus & 1st Year Rental': 2,
+    'Permit Fees': 3,
+    // 'Renewables': 'N/A',
+    'AML Fees': 2,
+    'OSMRE Civil Penalties': 3,
+    'Corporate Income Tax': 1
+  }
+
   var state = eiti.explore.stateManager()
     .on('change', update);
 
@@ -27,21 +42,6 @@
   }
 
   function isMaterial (d) {
-    var varianceKey = {
-      'Royalties': 1,
-      'Rents':  2,
-      'Bonus': 2,
-      'Other Revenue': 3,
-      'Offshore Inspection Fee': 2,
-      'ONRR Civil Penalties': 1,
-      'Bonus & 1st Year Rental': 2,
-      'Permit Fees': 3,
-      'Renewables': 'N/A',
-      'AML Fees': 2,
-      'OSMRE Civil Penalties': 3,
-      'Corporate Income Tax': 1
-    }
-
     return varianceKey[d.name] < d.variance
       ? 'red'
       : '';
@@ -234,6 +234,7 @@
     });
 
     var extent = d3.extent(companies, getter('total'));
+    console.log(extent)
 
     items.call(renderSubtypes, getter('types'), extent);
   }
@@ -355,7 +356,7 @@
       .append(function() {
         // XXX this is a document.registerElement() workaround
         return new EITIBar(); // jshint ignore:line
-      });
+      })
   }
 
   function updateTotals(selection, extent) {
@@ -371,7 +372,18 @@
     if (extent) {
       bar
         .attr('min', Math.min(0, extent[0]))
-        .attr('max', extent[1]);
+        .attr('max', function(d) {
+          return varianceKey[d.name];
+        })
+        .style('width', function(d) {
+
+          var relativeVariance = varianceKey[d.name] / 3
+
+          return !!relativeVariance
+            ? formatPercent(varianceKey[d.name] / 3)
+            : '0px';
+        })
+        .attr('class','material-variance');
     }
     selection.select('.variance')
       .text(function(d) {

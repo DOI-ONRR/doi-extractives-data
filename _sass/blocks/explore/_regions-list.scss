@@ -115,6 +115,18 @@
     width: 25px;
   }
 
+  .bar {
+    width: 50px;
+
+    @include respond-to(medium-up) {
+      width: 100px;
+    }
+
+    @include respond-to(large-up) {
+      width: 200px;
+    }
+  }
+
   .bar_negative {
     padding-right: 0;
 
@@ -165,7 +177,10 @@
   }
 }
 
-.red {
-  color: $red;
+.bold {
   font-weight: $weight-bold;
+}
+
+.material-variance {
+  background: $mid-gray;
 }

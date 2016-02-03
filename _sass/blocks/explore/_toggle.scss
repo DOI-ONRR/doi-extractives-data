@@ -12,7 +12,7 @@
     line-height: $base-line-height;
     padding-right: $base-padding-lite;
     text-decoration: inherit;
-    vertical-align: bottom;
+    vertical-align: text-top;
   }
 
   &[aria-expanded=true]:before {
@@ -40,10 +40,6 @@
   @include respond-to(medium-up) {
     display: none;
     float: right;
-  }
-
-  &::before {
-    vertical-align: text-top;
   }
 }
 

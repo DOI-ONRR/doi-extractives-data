@@ -356,8 +356,7 @@
         return new EITIBar(); // jshint ignore:line
       });
     selection.append('td')
-      .append('span')
-      .attr('class', 'threshhold');
+      .attr('class', 'threshold');
   }
 
   function updateTotals(selection, extent) {
@@ -387,7 +386,7 @@
       .text(function(d) {
         return formatPercent(d.types[0].variance / 100);
       });
-    selection.select('.threshhold')
+    selection.select('.threshold')
       .text(function(d) {
         return String(varianceKey[d.name]).match(/N\/A/)
           ? varianceKey[d.name]

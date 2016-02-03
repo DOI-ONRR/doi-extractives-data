@@ -93,10 +93,10 @@
       width: 80%;
 
       &.narrow {
+        vertical-align: middle;
         width: 50%;
       }
     }
-
     .variance,
     .centered {
       text-align: center;
@@ -115,15 +115,21 @@
     width: 25px;
   }
 
-  .bar {
-    width: 50px;
+  .bar { // specific to reconcilation
+    width: 100px;
+    padding-right: $base-padding;
 
     @include respond-to(medium-up) {
-      width: 100px;
+      width: 150px;
+      padding-right: 0;
     }
 
     @include respond-to(large-up) {
       width: 200px;
+    }
+
+    eiti-bar {
+      display: inline-block;
     }
   }
 
@@ -185,10 +191,14 @@
   background: $mid-gray;
 }
 
-.threshhold {
+td.threshold,
+th.threshold {
+  border-bottom: 0;
   display: none;
+  text-align: center;
 
   @include respond-to(medium-up) {
     display: inline-block;
+    padding-right: $base-padding;
   }
 }

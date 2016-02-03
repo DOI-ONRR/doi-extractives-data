@@ -14,18 +14,66 @@
   var REVENUE_TYPE_PREFIX = /^[A-Z]+(\/[A-Z]+)?\s+-\s+/;
 
   var varianceKey = {
-    'Royalties': 1,
-    'Rents':  2,
-    'Bonus': 2,
-    'Other Revenue': 3,
-    'Offshore Inspection Fee': 2,
-    'ONRR Civil Penalties': 1,
-    'Bonus & 1st Year Rental': 2,
-    'Permit Fees': 3,
-    'Renewables': 'N/A',
-    'AML Fees': 2,
-    'OSMRE Civil Penalties': 3,
-    'Corporate Income Tax': 1
+    'Royalties': {
+      threshold: 1,
+      floor: 100000,
+      name: 'ONRR royalties'
+    },
+    'Rents':  {
+      threshold: 2,
+      floor: 50000,
+      name: 'ONRR rents'
+    },
+    'Bonus': {
+      threshold: 2,
+      floor: 100000,
+      name: 'ONRR bonuses'
+    },
+    'Other Revenue': {
+      threshold: 3,
+      floor: 50000,
+      name: 'ONRR other revenue'
+    },
+    'Offshore Inspection Fee': {
+      threshold: 2,
+      floor: 20000,
+      name: 'Offshore inspection fees'
+    },
+    'ONRR Civil Penalties': {
+      threshold: 1,
+      floor: 1000,
+      name: 'ONRR civil penalties'
+    },
+    'Bonus & 1st Year Rental': {
+      threshold: 2,
+      floor: 10000,
+      name: 'BLM bonus & first year rentals'
+    },
+    'Permit Fees': {
+      threshold: 3,
+      floor: 10000,
+      name: 'BLM permit fees'
+    },
+    'Renewables': {
+      threshold: 'N/A',
+      floor: 'N/A',
+      name: 'BLM renewables'
+    },
+    'AML Fees': {
+      threshold: 2,
+      floor: 100000,
+      name: 'OSMRE AML fees'
+    },
+    'OSMRE Civil Penalties': {
+      threshold: 3,
+      floor: 0,
+      name: 'OSMRE civil penalties'
+    },
+    'Corporate Income Tax': {
+      threshold: 1,
+      floor: 100000,
+      name: 'Taxes'
+    }
   }
 
   var state = eiti.explore.stateManager()
@@ -42,7 +90,14 @@
   }
 
   function isMaterial (d) {
-    return !!(varianceKey[d.name] < d.variance);
+    var overThreshold = !!(varianceKey[d.name].threshold < d.variance);
+    if (overThreshold) {
+      var varianceVal = Math.abs(d.value - d.company);
+      if (varianceVal > varianceKey[d.name].floor) {
+        return true;
+      }
+    }
+    return false;
   }
 
   // FIXME: componentize these too
@@ -143,7 +198,9 @@
     options.enter().append('option')
       .attr('class', 'value')
       .attr('value', identity)
-      .text(identity);
+      .text(function(name) {
+        return varianceKey[name].name;
+      });
   }
 
   function updateRevenueTypes(data) {
@@ -299,7 +356,9 @@
   function updateRevenueItem(selection, extent) {
 
     selection.select('.name')
-      .text(getter('name'));
+      .text(function(d) {
+        return varianceKey[d.name].name;
+      });
 
 
     selection.select('.value')
@@ -362,7 +421,9 @@
   function updateTotals(selection, extent) {
 
     selection.select('.name')
-      .text(getter('name'));
+      .text(function(d) {
+        return varianceKey[d.name].name;
+      });
 
     var bar = selection.select('eiti-bar')
       .attr('value', function(d) {
@@ -373,12 +434,12 @@
       bar
         .attr('min', Math.min(0, extent[0]))
         .attr('max', function(d) {
-          return varianceKey[d.name];
+          return varianceKey[d.name].threshold;
         })
         .style('width', function(d) {
-          return String(varianceKey[d.name]).match(/N\/A/)
+          return String(varianceKey[d.name].threshold).match(/N\/A/)
             ? 0
-            : formatPercent(varianceKey[d.name] / 3);
+            : formatPercent(varianceKey[d.name].threshold / 3);
         })
         .attr('class','material-variance');
     }
@@ -388,9 +449,9 @@
       });
     selection.select('.threshold')
       .text(function(d) {
-        return String(varianceKey[d.name]).match(/N\/A/)
-          ? varianceKey[d.name]
-          : formatPercent(varianceKey[d.name] / 100);
+        return String(varianceKey[d.name].threshold).match(/N\/A/)
+          ? varianceKey[d.name].threshold
+          : formatPercent(varianceKey[d.name].threshold / 100);
       });
   }
 

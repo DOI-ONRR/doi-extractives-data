@@ -204,14 +204,39 @@
     text-align: right;
     width: 40px;
   }
+
+  tr:first-of-type {
+    border-top: 1px solid $neutral-gray;
+  }
 }
 
-.table-title_detached {
+.detached-header {
+  position: relative;
+}
+
+.detached-table_title {
   float: left;
+  width: 50%;
+
+  @include respond-to(small-up) {
+    width: 60%;
+  }
+
+  @include respond-to(medium-up) {
+    width: 75%;
+  }
+
+  @include respond-to(large-up) {
+    width: 100%;
+  }
 }
 
-.table-header_detached {
+.detached-table_header {
   display: inline;
   float: right;
   text-align: center;
+  bottom: 0px;
+  right: 0px;
+  position: absolute;
+  vertical-align: bottom;
 }

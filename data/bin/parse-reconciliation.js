@@ -35,18 +35,17 @@ var types = [
   'Corporate Income Tax',
 ];
 
-String.prototype.regex = function(str) {
-  str = str || this.slice(0, this.length);
-  return new RegExp(str, 'g');
-};
-
-var parseValue = function (value, unit) {
-  if (value.match(/DNP/) || value.match(/DNR/) || value.match('N/A'.regex())) {
-    return value;
+ var parseValue = function (value, unit) {
+  if (value.match(/DNP/)) {
+    return 'did not participate';
+  } else if (value.match(/DNR/)) {
+    return 'did not report';
+  } else if (value.match(/N\/A/)) {
+    return 'N/A'
   } else {
     return parse[unit](value);
-  }
-};
+   }
+ };
 
 async.waterfall([
   function load(done) {

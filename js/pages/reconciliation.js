@@ -11,6 +11,7 @@
   var grouper;
   var formatNumber = eiti.format.dollarsAndCents;
   var formatPercent = eiti.format.percent;
+  var roundedPercent = d3.format('%.1');
   var REVENUE_TYPE_PREFIX = /^[A-Z]+(\/[A-Z]+)?\s+-\s+/;
 
   var varianceKey = {
@@ -85,7 +86,7 @@
   function isException (val, vart) {
     if (typeof(val) === 'string') {
       val = val.trim();
-      return (val === 'DNP' || val === 'DNR' || val === 'N/A');
+      return (val === 'did not participate' || val === 'did not report' || val === 'N/A');
     }
   }
 
@@ -414,8 +415,12 @@
         // XXX this is a document.registerElement() workaround
         return new EITIBar(); // jshint ignore:line
       });
-    selection.append('td')
-      .attr('class', 'threshold');
+
+    selection.select('.bar')
+      .append('span')
+      .attr('class','threshold-span');
+    // selection.append('td')
+    //   .attr('class', 'threshold');
   }
 
   function updateTotals(selection, extent) {
@@ -439,7 +444,8 @@
         .style('width', function(d) {
           return String(varianceKey[d.name].threshold).match(/N\/A/)
             ? 0
-            : formatPercent(varianceKey[d.name].threshold / 3);
+            : formatPercent(0.75 * varianceKey[d.name].threshold / 3);
+            // 0.75 is magic number to fit bars on mobile
         })
         .attr('class','material-variance');
     }
@@ -448,10 +454,17 @@
         return formatPercent(d.types[0].variance / 100);
       });
     selection.select('.threshold')
+      // .text(function(d) {
+      //   return String(varianceKey[d.name].threshold).match(/N\/A/)
+      //     ? varianceKey[d.name].threshold
+      //     : roundedPercent(varianceKey[d.name].threshold / 100);
+      // });
+
+    selection.select('.threshold-span')
       .text(function(d) {
         return String(varianceKey[d.name].threshold).match(/N\/A/)
           ? varianceKey[d.name].threshold
-          : formatPercent(varianceKey[d.name].threshold / 100);
+          : roundedPercent(varianceKey[d.name].threshold / 100);
       });
   }
 

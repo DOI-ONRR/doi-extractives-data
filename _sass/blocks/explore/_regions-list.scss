@@ -94,7 +94,7 @@
 
       &.narrow {
         vertical-align: middle;
-        width: 50%;
+        width: 35%;
       }
     }
     .variance,
@@ -117,11 +117,11 @@
 
   .bar { // specific to reconcilation
     width: 100px;
-    padding-right: $base-padding;
+    // padding-right: $base-padding;
 
     @include respond-to(medium-up) {
       width: 150px;
-      padding-right: 0;
+      // padding-right: 0;
     }
 
     @include respond-to(large-up) {
@@ -131,6 +131,10 @@
     eiti-bar {
       display: inline-block;
     }
+  }
+
+  th.bar {
+    text-align: right;
   }
 
   .bar_negative {
@@ -188,17 +192,31 @@
 }
 
 .material-variance {
-  background: $mid-gray;
+  // background: $mid-gray;
+  border-right: 2px solid $neutral-gray;
 }
 
 td.threshold,
 th.threshold {
   border-bottom: 0;
-  display: none;
+  // display: none;
   text-align: center;
 
-  @include respond-to(medium-up) {
-    display: inline-block;
-    padding-right: $base-padding;
+  // @include respond-to(medium-up) {
+  //   display: inline-block;
+  //   padding-right: $base-padding;
+  // }
+}
+
+.threshold-span {
+  display: inline-block;
+  font-weight: $weight-bold;
+  margin-left: $base-padding-lite;
+}
+
+.revenue-type-list {
+  tr .variance {
+    text-align: right;
+    width: 40px;
   }
 }

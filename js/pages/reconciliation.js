@@ -75,7 +75,7 @@
       floor: 100000,
       name: 'Taxes'
     }
-  }
+  };
 
   var state = eiti.explore.stateManager()
     .on('change', update);
@@ -290,7 +290,6 @@
     });
 
     var extent = d3.extent(companies, getter('total'));
-    console.log(extent)
 
     items.call(renderSubtypes, getter('types'), extent);
   }
@@ -427,9 +426,7 @@
 
     selection.select('.bar')
       .append('span')
-      .attr('class','threshold-span');
-    // selection.append('td')
-    //   .attr('class', 'threshold');
+      .attr('class','threshold');
   }
 
   function updateTotals(selection, extent) {
@@ -463,13 +460,6 @@
         return formatPercent(d.types[0].variance / 100);
       });
     selection.select('.threshold')
-      // .text(function(d) {
-      //   return String(varianceKey[d.name].threshold).match(/N\/A/)
-      //     ? varianceKey[d.name].threshold
-      //     : roundedPercent(varianceKey[d.name].threshold / 100);
-      // });
-
-    selection.select('.threshold-span')
       .text(function(d) {
         return String(varianceKey[d.name].threshold).match(/N\/A/)
           ? varianceKey[d.name].threshold

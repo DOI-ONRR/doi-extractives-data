@@ -41,10 +41,10 @@ var types = [
   } else if (value.match(/DNR/)) {
     return 'did not report';
   } else if (value.match(/N\/A/)) {
-    return 'N/A'
+    return 'N/A';
   } else {
     return parse[unit](value);
-   }
+  }
  };
 
 async.waterfall([

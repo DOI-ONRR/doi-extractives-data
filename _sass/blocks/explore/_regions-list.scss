@@ -117,11 +117,9 @@
 
   .bar { // specific to reconcilation
     width: 100px;
-    // padding-right: $base-padding;
 
     @include respond-to(medium-up) {
       width: 150px;
-      // padding-right: 0;
     }
 
     @include respond-to(large-up) {
@@ -192,23 +190,10 @@
 }
 
 .material-variance {
-  // background: $mid-gray;
   border-right: 2px solid $neutral-gray;
 }
 
-td.threshold,
-th.threshold {
-  border-bottom: 0;
-  // display: none;
-  text-align: center;
-
-  // @include respond-to(medium-up) {
-  //   display: inline-block;
-  //   padding-right: $base-padding;
-  // }
-}
-
-.threshold-span {
+.threshold {
   display: inline-block;
   font-weight: $weight-bold;
   margin-left: $base-padding-lite;

@@ -376,14 +376,23 @@
         return multiLine;
       });
 
+    var refNumber = 0;
     selection.select('.variance')
       .html(function(d) {
         var variance = isException(d.variance, 'var')
           ? d.variance
           : formatPercent(d.variance / 100);
 
+        function returnFootnote () {
+          refNumber ++;
+          return '<strong>' + variance +
+            '<sup id="fnref:' + refNumber +
+            '"><a href="#fn:' + refNumber +
+            '" class="footnote">' + refNumber +
+            '</a></sup></strong>';
+        }
         return isMaterial(d)
-          ? '<strong>' + variance + '</strong>'
+          ? returnFootnote()
           : variance;
       });
   }

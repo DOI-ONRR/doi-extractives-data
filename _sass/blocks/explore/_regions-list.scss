@@ -184,3 +184,11 @@
 .material-variance {
   background: $mid-gray;
 }
+
+.threshhold {
+  display: none;
+
+  @include respond-to(medium-up) {
+    display: inline-block;
+  }
+}

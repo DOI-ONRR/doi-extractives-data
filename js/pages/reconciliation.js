@@ -22,7 +22,7 @@
     'ONRR Civil Penalties': 1,
     'Bonus & 1st Year Rental': 2,
     'Permit Fees': 3,
-    // 'Renewables': 'N/A',
+    'Renewables': 'N/A',
     'AML Fees': 2,
     'OSMRE Civil Penalties': 3,
     'Corporate Income Tax': 1
@@ -354,7 +354,10 @@
       .append(function() {
         // XXX this is a document.registerElement() workaround
         return new EITIBar(); // jshint ignore:line
-      })
+      });
+    selection.append('td')
+      .append('span')
+      .attr('class', 'threshhold');
   }
 
   function updateTotals(selection, extent) {
@@ -374,18 +377,21 @@
           return varianceKey[d.name];
         })
         .style('width', function(d) {
-
-          var relativeVariance = varianceKey[d.name] / 3
-
-          return !!relativeVariance
-            ? formatPercent(varianceKey[d.name] / 3)
-            : '0px';
+          return String(varianceKey[d.name]).match(/N\/A/)
+            ? 0
+            : formatPercent(varianceKey[d.name] / 3);
         })
         .attr('class','material-variance');
     }
     selection.select('.variance')
       .text(function(d) {
         return formatPercent(d.types[0].variance / 100);
+      });
+    selection.select('.threshhold')
+      .text(function(d) {
+        return String(varianceKey[d.name]).match(/N\/A/)
+          ? varianceKey[d.name]
+          : formatPercent(varianceKey[d.name] / 100);
       });
   }
 

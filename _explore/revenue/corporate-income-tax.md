@@ -28,9 +28,9 @@ permalink: /explore/corporate-income-tax/
 
     <p>SOI’s calculations of federal corporate income tax receipts from all returns in the mining and petroleum refining sectors for <a href="https://www.irs.gov/uac/SOI-Tax-Stats-Returns-of-Active-Corporations-Table-1">tax years 2009 to 2013</a> are presented below.<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup></p>
 
-    <table class="article_table article_table-indented">
+    <table class="article_table article_table-indented article_table-numbers">
       <tr>
-  		<th rowspan="2">Industry</th>
+  		<th rowspan="2" class="article_table-left">Industry</th>
       <th colspan="5">Total receipts (in millions USD)<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup></th>
       </tr>
       <tr>
@@ -50,43 +50,43 @@ permalink: /explore/corporate-income-tax/
       </tr>
       <tr>
   		<td>Oil and gas extraction</td>
-  		<td>$1,424</td>
-  		<td>$2,152</td>
-  		<td>$1,811</td>
-  		<td>$1,642</td>
-  		<td>$1,943</td>
+  		<td>1,424</td>
+  		<td>2,152</td>
+  		<td>1,811</td>
+  		<td>1,642</td>
+  		<td>1,943</td>
       </tr>
       <tr>
   		<td>Coal mining</td>
-  		<td>$207</td>
-  		<td>$344</td>
-  		<td>$325</td>
-  		<td>$245</td>
-  		<td>$32</td>
+  		<td>207</td>
+  		<td>344</td>
+  		<td>325</td>
+  		<td>245</td>
+  		<td>32</td>
       </tr>
       <tr>
   		<td>Metal ore mining</td>
-  		<td>$866</td>
-  		<td>$1,573</td>
-  		<td>$1,945</td>
-  		<td>$1,329</td>
-  		<td>$755</td>
+  		<td>866</td>
+  		<td>1,573</td>
+  		<td>1,945</td>
+  		<td>1,329</td>
+  		<td>755</td>
       </tr>
       <tr>
   		<td>Nonmetallic mineral mining and quarrying</td>
-  		<td>$181</td>
-  		<td>$158</td>
-  		<td>$183</td>
-  		<td>$233</td>
-  		<td>$222</td>
+  		<td>181</td>
+  		<td>158</td>
+  		<td>183</td>
+  		<td>233</td>
+  		<td>222</td>
       </tr>
       <tr>
   		<td>Support activities for mining</td>
-  		<td>$1,153</td>
-  		<td>$1,494</td>
-  		<td>$1,677</td>
-  		<td>$1,800</td>
-  		<td>$1,944</td>
+  		<td>1,153</td>
+  		<td>1,494</td>
+  		<td>1,677</td>
+  		<td>1,800</td>
+  		<td>1,944</td>
       </tr>
       <tr class="article_table-head">
   		<td>Petroleum and coal products manufacturing<sup id="fnref:3"><a href="#fn:3" class="footnote">3</a></sup></td>
@@ -98,11 +98,11 @@ permalink: /explore/corporate-income-tax/
       </tr>
       <tr>
   		<td>Petroleum refineries (including integrated)</td>
-  		<td>$1,772</td>
-  		<td>$4,865</td>
-  		<td>$7,402</td>
-  		<td>$9,064</td>
-  		<td>$6,631</td>
+  		<td>1,772</td>
+  		<td>4,865</td>
+  		<td>7,402</td>
+  		<td>9,064</td>
+  		<td>6,631</td>
       </tr>
     </table>
 

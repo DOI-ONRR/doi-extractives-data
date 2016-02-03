@@ -66,9 +66,10 @@
   border: none;
   border-bottom: 1px solid $light-green;
   margin-bottom: $base-padding-extra;
+  width: 100%;
 
   th {
-    border-bottom: 4px solid $light-green;
+    border-bottom: 1px solid $light-green;
     font-weight: $weight-book;
     line-height: 1.2;
     padding: $base-padding-lite;
@@ -91,6 +92,25 @@
   span {
     font-weight: $weight-book;
     line-height: 2;
+  }
+
+  &.article_table-numbers {
+    th {
+      text-align: center;
+    }
+
+    .article_table-left {
+      text-align: left;
+    }
+
+    td {
+      text-align: right;
+    }
+
+    td:first-child {
+      text-align: left;
+      text-indent: 1rem;
+    }
   }
 }
 

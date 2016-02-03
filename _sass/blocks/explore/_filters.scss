@@ -256,8 +256,6 @@
   padding-right: $base-padding;
 
   @include respond-to(medium-up) {
-    padding-left: 0;
-    padding-right: 0;
     width: 50%;
   }
 }

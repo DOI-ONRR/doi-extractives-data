@@ -61,8 +61,10 @@
     color: $white;
     display: inline-block;
     float: right;
-    margin-bottom: 0;
-    padding: 0;
+    margin-bottom: (-1 * $base-padding-lite);
+    margin-right: (-1 * $base-padding-lite);
+    margin-top: (-1 * $base-padding-lite);
+    padding: $base-padding-lite;
   }
 
 }
@@ -97,16 +99,19 @@ input.drawer-search_field {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
   display: inline;
-  height: 34px;
+  font-size: 1rem;
+  height: 40px;
   margin-top: 0;
+  padding-left: 0.5em;
   width: 86%;
 }
 
 .drawer-search_button {
   background-color: $white;
   border-radius: 0 $base-border-radius $base-border-radius 0;
+  color: $blue;
   float: right;
-  height: 34px;
+  height: 40px;
   padding: 0.5em;
   position: relative;
   width: 14%;

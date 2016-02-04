@@ -4,19 +4,20 @@
 }
 
 .filters-wrapper {
-  background-color: $white;
+  background-color: $mid-blue;
   margin-left: 0;
   padding: $base-padding;
-  padding-left: 0;
   position: absolute;
   width: 100%;
   z-index: 3000;
 
 
   @include respond-to(medium-up) {
+    background-color: $white;
     border-bottom-left-radius: $base-border-radius;
     border-bottom-right-radius: $base-border-radius;
     margin-right: $base-padding;
+    padding-left: 0;
     width: initial;
   }
 
@@ -49,17 +50,25 @@
   }
 
   &.js-color {
-    background: $white;
+    background: $mid-blue;
     border-bottom: 2px solid lighten($neutral-gray, 5%);
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+
+    @include respond-to(medium-up) {
+      background: $white;
+    }
   }
 
   &.js-transparent {
-    background: transparent;
+    background: $mid-blue;
     border-bottom: 2px solid lighten($neutral-gray, 5%);
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+
+    @include respond-to(medium-up) {
+      background: $white;
+    }
   }
 }
 
@@ -85,6 +94,7 @@
   p {
     @include heading(para-md);
     color: $blue-alt;
+    font-weight: $weight-book;
   }
 }
 
@@ -94,7 +104,7 @@
   label {
     @include heading(para-sm);
     color: $blue-alt;
-    font-weight: $weight-light;
+    font-weight: $weight-book;
     letter-spacing: 0.7px;
     margin-bottom: 3px;
     text-transform: uppercase;
@@ -193,14 +203,28 @@
 
 .filter-description {
   @include heading(para-xl);
+  display: none;
   font-weight: $weight-bold;
   float: left;
   letter-spacing: -0.5px;
-  margin-bottom: $base-padding;
+
 
   @include respond-to(medium-up) {
+    display: inline-block;
     float: left;
     width: 65%;
+  }
+
+  &.filter-description_open {
+    display: block;
+    margin-bottom: $base-padding;
+    margin-top: $base-padding;
+    padding-left: $base-padding;
+    padding-right: $base-padding;
+
+    @include respond-to(medium-up) {
+      display: none;
+    }
   }
 
   &.filter-description_closed {
@@ -223,5 +247,15 @@
     border-bottom: 2px dotted $light-black;
     color: inherit;
     text-decoration: none;
+  }
+}
+
+.filter-search {
+  border-color: $dark-gray;
+  padding-left: $base-padding;
+  padding-right: $base-padding;
+
+  @include respond-to(medium-up) {
+    width: 50%;
   }
 }

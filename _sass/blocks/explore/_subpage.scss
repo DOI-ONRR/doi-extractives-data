@@ -17,22 +17,25 @@
   padding-top: $base-padding;
 }
 
-.regions {
-  @include respond-to(medium-to-huge-plus) {
-    margin-right: $base-padding;
-  }
-}
-
 .regions .region {
   display: none;
 
   &.active {
-    display: block;
+    display: inline-block;
+    width: 100%;
   }
 }
 
 .explore-exploration {
+
+
   @include respond-to(medium-up) {
     margin-top: 128px;
+    margin-right: $base-padding;
   }
+
+  @include respond-to(huge-plus-up) {
+    margin-right: 0;
+  }
+
 }

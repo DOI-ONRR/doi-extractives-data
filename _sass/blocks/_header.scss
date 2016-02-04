@@ -68,8 +68,9 @@ header,
 
   &.header-bars {
     display: inline-block;
-    padding-bottom: 0;
-    padding-top: 0;
+    margin-right: (-1 * $base-padding-lite); // unfortunately necessary hack
+    margin-top: 1px; // for alignment with logo
+    padding: 0 $base-padding-lite;
 
     icon {
       @include font-size(1.87);

@@ -66,6 +66,7 @@
   border: none;
   border-bottom: 1px solid $light-green;
   margin-bottom: $base-padding-extra;
+  width: 100%;
 
   th {
     border-bottom: 4px solid $light-green;
@@ -74,6 +75,10 @@
     padding: $base-padding-lite;
     text-align: left;
     vertical-align: bottom;
+
+    &.article_table-thin {
+      border-bottom: 1px solid $light-green;
+    }
   }
 
   td {
@@ -91,5 +96,46 @@
   span {
     font-weight: $weight-book;
     line-height: 2;
+  }
+
+  &.article_table-numbers {
+    th {
+      text-align: center;
+    }
+
+    .article_table-left {
+      text-align: left;
+    }
+
+    td {
+      text-align: right;
+    }
+
+    td:first-child {
+      text-align: left;
+      text-indent: 1rem;
+    }
+  }
+}
+
+.article_table-enlarge {
+  @include font-size(1.1);
+}
+
+.article_table-head {
+  font-weight: $weight-book;
+}
+
+.article_table-indented {
+  tr {
+    &.article_table-head {
+      td:first-child {
+        text-indent: 0;
+      }
+    }
+
+    td:first-child {
+      text-indent: 1rem;
+    }
   }
 }

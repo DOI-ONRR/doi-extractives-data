@@ -132,7 +132,35 @@ $onshore-renewables-secondary-color: $blue;
 
   &:last-of-type {
     border-radius: 0 0 $base-border-radius $base-border-radius;
+
+    .accordion-button {
+      margin-top: 0;
+    }
   }
+
+  &.revenues_subpage-steps_long {
+
+
+    .revenues_subpage-steps_number {
+      vertical-align: text-bottom;
+
+      @include respond-to(tiny-up) {
+        vertical-align: baseline;
+      }
+    }
+
+    .break {
+      display: block;
+
+      @include respond-to(tiny-up) {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+.revenues_subpage-steps_heading {
+  padding-right: $base-padding;
 }
 
 .revenues_subpage-steps_heading,

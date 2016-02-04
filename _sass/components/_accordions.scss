@@ -105,10 +105,10 @@
 .accordion-button {
   background-color: transparent;
   background-size: 50%;
+  float: right;
   height: 2rem;
   margin: 0;
-  position: absolute;
-  right: $base-padding;
+  margin-top: 8px;
   width: 2rem;
 
   @include respond-to(medium-up) {

@@ -30,8 +30,8 @@ permalink: /explore/corporate-income-tax/
 
     <table class="article_table article_table-indented article_table-numbers">
       <tr>
-  		<th rowspan="2" class="article_table-left">Industry</th>
-      <th colspan="5">Total receipts (in millions USD)<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup></th>
+  		<th rowspan="2" class="article_table-left article_table-enlarge">Industry</th>
+      <th colspan="5" class="article_table-thin">Total receipts (in millions USD)<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup></th>
       </tr>
       <tr>
   		<th>2009</th>

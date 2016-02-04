@@ -75,6 +75,10 @@
     padding: $base-padding-lite;
     text-align: left;
     vertical-align: bottom;
+
+    &.article_table-thin {
+      border-bottom: 1px solid $light-green;
+    }
   }
 
   td {
@@ -112,6 +116,10 @@
       text-indent: 1rem;
     }
   }
+}
+
+.article_table-enlarge {
+  @include font-size(1.1);
 }
 
 .article_table-head {

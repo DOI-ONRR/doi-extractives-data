@@ -71,13 +71,13 @@ It seemed like even though people seemed to understand the words "material varia
 
   - _[Clicks Filter] Oh. [Pause] [Clicks revenue type drop-down]. Yeah, I don’t know what these are. but I could click on this to find out [tries to click on underlined word for definition, but it doesn’t do anything, participant looks deflated]._
 
-- Lists that are not in alphabetical order should be. This includes the company list on the reconciliation page and the drop-down filter menus, for example, the commodity menu under 'hardrock minerals'.
+- Lists that are not in alphabetical order should be. This includes the company list on the reconciliation page and the drop-down filter menus, for example, the commodity menu under 'hardrock minerals'. [#1256](https://github.com/18F/doi-extractives-data/issues/1256)
 
 - People don't know how to clear the filters. [#924](https://github.com/18F/doi-extractives-data/issues/924)
 
-- People don't know how to close the filters. We might consider making the filters close if you click anywhere outside the blue area.
+- People don't know how to close the filters. We might consider making the filters close if you click anywhere outside the blue area. [#1258](https://github.com/18F/doi-extractives-data/issues/1258)
 
-- People seem to want to 'dive into the counties' or whatever lowest-level information we have. For example, once they've filtered to a state, and it is displaying counties on the bar chart, they don't necessarily know that they might filter/dive into this data by playing with the filters. They say things like "hmm, I wish I knew more about this". Potential solution: clicking on a county name in the bar chart opens the filters?
+- People seem to want to 'dive into the counties' or whatever lowest-level information we have. For example, once they've filtered to a state, and it is displaying counties on the bar chart, they don't necessarily know that they might filter/dive into this data by playing with the filters. They say things like "hmm, I wish I knew more about this". Potential solution: clicking on a county name in the bar chart opens the filters? [#1257](https://github.com/18F/doi-extractives-data/issues/1257)
 
 - People do not like seeing words they don't understand or acronyms in the filter options.
 
@@ -91,7 +91,7 @@ It seemed like even though people seemed to understand the words "material varia
 
 ### Issues on the reconciliation page specifically
 
-Almost everyone commented on the first line of data on the summary chart -- the fact that it says "ONRR" and they don't know what that is. It seems to put a bad taste in everyone's mouth.
+Almost everyone commented on the first line of data on the summary chart -- the fact that it says "ONRR" and they don't know what that is. It seems to put a bad taste in everyone's mouth. [#1253](https://github.com/18F/doi-extractives-data/issues/1253)
 
 - _Ummm -- the first place my eyes go is to the charts here, they draw me in, but I don’t understand what’s going on. I’m reading the title of the chart, Median …, I don’t really know what that means. Then I’m looking down at ONRR, and I don’t know what that means._
 
@@ -101,7 +101,7 @@ Almost everyone commented on the first line of data on the summary chart -- the 
 
 - _[Finds the filters] Oh! Filters! [YAY] Oh. [sad] [The only thing here is] these words I don't understand again._
 
-The summary chart was hit-and-miss. In particular, no one was able to figure out what we were trying to communicate with the material variances on the right of the intro chart.
+The summary chart was hit-and-miss. In particular, no one was able to figure out what we were trying to communicate with the material variances on the right of the intro chart. [#1252](https://github.com/18F/doi-extractives-data/issues/1252)
 
 - _[Referring to the summary bars] I guess this means that this is the direction of the discrepancy, but I don't really know._
 
@@ -111,7 +111,7 @@ The summary chart was hit-and-miss. In particular, no one was able to figure out
 
 - _[Looking at the tick marks] I wonder why the threshold is considered different for different types?_
 
-Searching by company name didn't resonate with participants. Instead, they wanted to search by industry or location. This was either because they didn't know enough about the companies to know them by name, or because they were savvy enough to know that companies buy and sell each other a lot and often change names.
+Searching by company name didn't resonate with participants. Instead, they wanted to search by industry or location. This was either because they didn't know enough about the companies to know them by name, or because they were savvy enough to know that companies buy and sell each other a lot and often change names. [#1255](https://github.com/18F/doi-extractives-data/issues/1255)
 
 - _[Tries to search for a company] Oh gosh, I can't remember the name of the taconite companies [near me], and they keep renaming themselves anyways [implying that even if I did, searching by name wouldn’t be very useful]. It would be cool if I could search by industry, since I know there's an industry by me, but I can't find my personal interest here._
 
@@ -121,7 +121,7 @@ Searching by company name didn't resonate with participants. Instead, they wante
 
 - _Oh! [finds the option to sort by tax] By taxes, does this mean taxes to federal? local? I want to know what's coming to my county, and if I'm getting the amount they should._
 
-Directionality. Participants weren't always clear on who was making the money. This is a problem common to many of our datasets.
+Directionality. Participants weren't always clear on who was making the money. This is a problem common to many of our datasets. [#1254](https://github.com/18F/doi-extractives-data/issues/1254)
 
 - _Ooo, they’re making so much fucking money! [referring to the top entires on reconciliation, when really those numbers are amounts paid to government]_
 

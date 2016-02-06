@@ -73,7 +73,7 @@ It seemed like even though people seemed to understand the words "material varia
 
 - Lists that are not in alphabetical order should be. This includes the company list on the reconciliation page and the drop-down filter menus, for example, the commodity menu under 'hardrock minerals'.
 
-- People don't know how to clear the filters.
+- People don't know how to clear the filters. [#924](https://github.com/18F/doi-extractives-data/issues/924)
 
 - People don't know how to close the filters. We might consider making the filters close if you click anywhere outside the blue area.
 
@@ -83,9 +83,9 @@ It seemed like even though people seemed to understand the words "material varia
 
   - _Let’s look at oil and gas [chooses that, sees the next drop-down appear]. Then -- NGL? Natural...gas….um….nevermind. [chooses something else]_
 
-- BUG: the secondary commodity list doesn’t reset when after you’ve chosen a state, and after you’ve chosen, say, hardrock and you get a long list in the secondary commodity dropdown. At this point, if you go back and change the first commodity to coal, you still get the hardrock dropdown.
+- BUG: the secondary commodity list doesn’t reset when after you’ve chosen a state, and after you’ve chosen, say, hardrock and you get a long list in the secondary commodity dropdown. At this point, if you go back and change the first commodity to coal, you still get the hardrock dropdown. Maybe [#1213](https://github.com/18F/doi-extractives-data/issues/1213)
 
-- There's no indication of 'the combo of filters you've selected is not valid'. ie, if you’ve chosen a combination of filters that does not have data, there is nothing that really shows that this is the case and the user is confused. For example, we had a case where because of order the participant entered the filters, she never noticed the trend charts over the years. Then when she selected things that reduced those to zero (ie, no data), she couldn’t figure out why nothing seemed to be showing up. She kept clicking on different years to change that filter when the real problem was that she needed to pick a different commodity because the issue was that State X didn't produce Commodity Y.
+- There's no indication of 'the combo of filters you've selected is not valid'. ie, if you’ve chosen a combination of filters that does not have data, there is nothing that really shows that this is the case and the user is confused. For example, we had a case where because of order the participant entered the filters, she never noticed the trend charts over the years. Then when she selected things that reduced those to zero (ie, no data), she couldn’t figure out why nothing seemed to be showing up. She kept clicking on different years to change that filter when the real problem was that she needed to pick a different commodity because the issue was that State X didn't produce Commodity Y. [#1022](https://github.com/18F/doi-extractives-data/issues/1022)
 
 
 
@@ -132,7 +132,7 @@ There are several bugs and usability issues that need to be addressed.
 
 - When the user clicks on a glossary term, it should open the glossary and the term should be open. This is a bug that was introduced lately and is issued in [#1251](https://github.com/18F/doi-extractives-data/issues/1251).
 
-- Clicking a glossary term again should close the glossary.
+- Clicking a glossary term again should close the glossary. [#819](https://github.com/18F/doi-extractives-data/issues/819)
 
 - Almost everyone tries to click on a state from the middle-of-homepage graphic as their first exploration into our data. This sends them to the [federal revenue by location](https://useiti.doi.gov/explore/federal-revenue-by-location/) dataset and they don't know that there are more datasets available. Also, they are surprised when clicking on a state from the homepage doesn't send them to information on that state specifically.
 

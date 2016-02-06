@@ -44,7 +44,7 @@ That last quote leads us to our next question...
 
 ## Do people understand that the variances were all explained?
 
-**Nope nope nope.** People reacted very strongly to the companies who had highlighted material variance numbers, even after we changed the color from red to bold. Note: we don't have footnote text done yet that explains the variances. Maybe this will help, but I expect that we're going to more drastic design changes than just those notes because participants had strong assumptions about this part of the data. For example, they assumed that if the gov and company numbers differed, it was because a company had been 'bad' and they needed to pay the government, when really we're just talking about discrepancies in accounting.
+**Nope nope nope.** People reacted very strongly to the companies who had highlighted material variance numbers, even after we changed the color from red to bold. Note: we don't have footnote text done yet that explains the variances. Maybe this will help, but I expect that we're going to more than just those notes because participants had strong assumptions about this part of the data. For example, they assumed that if the gov and company numbers differed, it was because a company had been 'bad' and they needed to pay the government, when really we're just talking about discrepancies in accounting.
 
 - _[Gets to a company that has a red number] Chevron! Tsk tsk. Apparently only Chevron sucks. Ooooo. [Continues scrolling, finds more red] 220% difference?! You guys need to pay up!_
 
@@ -134,7 +134,7 @@ There are several bugs and usability issues that need to be addressed.
 
 - Clicking a glossary term again should close the glossary. [#819](https://github.com/18F/doi-extractives-data/issues/819)
 
-- Almost everyone tries to click on a state from the middle-of-homepage graphic as their first exploration into our data. This sends them to the [federal revenue by location](https://useiti.doi.gov/explore/federal-revenue-by-location/) dataset and they don't know that there are more datasets available. Also, they are surprised when clicking on a state from the homepage doesn't send them to information on that state specifically.
+- Almost everyone tries to click on a state from the middle-of-homepage graphic as their first exploration into our data. This sends them to the [federal revenue by location](https://useiti.doi.gov/explore/federal-revenue-by-location/) dataset and they don't know that there are more datasets available. Also, they are surprised when clicking on a state from the homepage doesn't send them to information on that state specifically. [#1259](https://github.com/18F/doi-extractives-data/issues/1259)
 
 - Very few people scroll down on our sub-page landing pages unless they have large computer screens. 4 out of 5 of our testing group did not have screens big enough to notice that they should scroll down. So, even if they, for example, make it to our explore data landing page, they don't see the full breadth of information available.
 

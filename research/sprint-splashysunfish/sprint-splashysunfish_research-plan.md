@@ -7,7 +7,7 @@ Goals | Questions
 Evaluate reconciliation page | What do people think this page is saying?
 Evaluate reconciliation page messaging | Do people see that reconciliation is not a problem in the US?
  | Do people understand that the variances were all explained?
-Evaluate general usability of visualization interactions | How to people interact with the maps, filters and options?
+Evaluate general usability of visualization interactions | How do people interact with the maps, filters and options?
 Prioritize what to fix | What problems are most severe?
 
 

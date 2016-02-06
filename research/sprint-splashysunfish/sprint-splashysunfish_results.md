@@ -5,7 +5,7 @@
 - What do people think this page is saying? (see below)
 - Do people see that reconciliation is not a problem in the US? YES!
 - Do people understand that the variances were all explained? NO!
-- How to people interact with the maps, filters and options? (see below)
+- How do people interact with the maps, filters and options? (see below)
 - What problems are most severe? (see below)
 
 
@@ -44,7 +44,7 @@ That last quote leads us to our next question...
 
 ## Do people understand that the variances were all explained?
 
-**Nope nope nope.** People reacted very strongly to the companies who had highlighted material variance numbers, even after we changed the color from red to bold. Note: we don't have footnote text done yet that explains the variances. Maybe this will help, but my thought is that we're going to need more than that because participants had strong assumptions about this part of the data. They assumed that if the gov and company numbers differed, it was because a company had been 'bad' and they needed to pay the government, when really we're just talking about discrepancies in accounting.
+**Nope nope nope.** People reacted very strongly to the companies who had highlighted material variance numbers, even after we changed the color from red to bold. Note: we don't have footnote text done yet that explains the variances. Maybe this will help, but I expect that we're going to more drastic design changes than just those notes because participants had strong assumptions about this part of the data. For example, they assumed that if the gov and company numbers differed, it was because a company had been 'bad' and they needed to pay the government, when really we're just talking about discrepancies in accounting.
 
 - _[Gets to a company that has a red number] Chevron! Tsk tsk. Apparently only Chevron sucks. Ooooo. [Continues scrolling, finds more red] 220% difference?! You guys need to pay up!_
 
@@ -69,7 +69,7 @@ It seemed like even though people seemed to understand the words "material varia
 
 - Participants expected the underlined summary sentence words to open the glossary, likely because the dashed underline motif there is similar to the one we use for the glossary, and they didn't understand the revenue type and commodity words. It seemed like a hope for a lifeline on those difficult acronyms and words. At the very least, those underlined words need to close the filters (right now, you can click to open the filters but not click to close even though they still look clickable)
 
-- _[Clicks Filter] Oh. [Pause] [Clicks revenue type drop-down]. Yeah, I don’t know what these are. but I could click on this to find out [tries to click on underlined word for definition, but it doesn’t do anything, participant looks deflated]._
+  - _[Clicks Filter] Oh. [Pause] [Clicks revenue type drop-down]. Yeah, I don’t know what these are. but I could click on this to find out [tries to click on underlined word for definition, but it doesn’t do anything, participant looks deflated]._
 
 - Lists that are not in alphabetical order should be. This includes the company list on the reconciliation page and the drop-down filter menus, for example, the commodity menu under 'hardrock minerals'
 

@@ -83,6 +83,11 @@ It seemed like even though people seemed to understand the words "material varia
 
   - _Let’s look at oil and gas [chooses that, sees the next drop-down appear]. Then -- NGL? Natural...gas….um….nevermind. [chooses something else]_
 
+- BUG: the secondary commodity list doesn’t reset when after you’ve chosen a state, and after you’ve chosen, say, hardrock and you get a long list in the secondary commodity dropdown. At this point, if you go back and change the first commodity to coal, you still get the hardrock dropdown.
+
+- There's no indication of 'the combo of filters you've selected is not valid'. ie, if you’ve chosen a combination of filters that does not have data, there is nothing that really shows that this is the case and the user is confused. For example, we had a case where because of order the participant entered the filters, she never noticed the trend charts over the years. Then when she selected things that reduced those to zero (ie, no data), she couldn’t figure out why nothing seemed to be showing up. She kept clicking on different years to change that filter when the real problem was that she needed to pick a different commodity because the issue was that State X didn't produce Commodity Y.
+
+
 
 ### Issues on the reconciliation page specifically
 

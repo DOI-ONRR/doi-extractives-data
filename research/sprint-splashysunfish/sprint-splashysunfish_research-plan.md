@@ -1,4 +1,4 @@
-# Sprint-HautyHagfish research plan
+# Sprint-SplashySunfish research plan
 
 
 ## Goals / Questions

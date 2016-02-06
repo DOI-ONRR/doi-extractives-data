@@ -31,7 +31,7 @@ Also, we want to use this opportunity to test our site's data visualizations in 
 
 ## Script
 
-Script available [here](https://github.com/18F/doi-extractives-data/blob/research/research/sprint-hautyhagfish/sprint-splashysunfish_interview-script.md).
+Script available [here](https://github.com/18F/doi-extractives-data/blob/research/research/sprint-splashysunfish/sprint-splashysunfish_interview-script.md).
 
 
 ## Test asset(s)

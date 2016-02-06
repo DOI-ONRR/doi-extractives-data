@@ -134,3 +134,14 @@ There are several bugs and usability issues that need to be addressed.
 - Very few people scroll down on our sub-page landing pages unless they have large computer screens. 4 out of 5 of our testing group did not have screens big enough to notice that they should scroll down. So, even if they, for example, make it to our explore data landing page, they don't see the full breadth of information available.
 
 - No one noticed the drop-down on the case studies page that navigates through the 12 case studies. They skimmed over the overview page and that was it.
+
+
+## What problems were most severe?
+
+### Reconciliation
+
+By far, the most severe problem is the fact that participants did not understand what we were trying to communicate with regard to material variances, ie, that the variances found were not significant. In a close second is the general confusion around the summary chart at the top of the reconciliation page.
+
+### Site
+
+The fact that many participants don't know that there is more than one dataset on the site, and that the map from the homepage doesn't link to specific states is a big deal. However, the user research that is happening in parallel with this usability work seems to indicate that more work in general in pulling together information by state will be an important next step. This usability issue should be taken into consideration for that work.

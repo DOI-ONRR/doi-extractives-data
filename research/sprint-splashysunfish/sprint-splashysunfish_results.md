@@ -71,7 +71,7 @@ It seemed like even though people seemed to understand the words "material varia
 
   - _[Clicks Filter] Oh. [Pause] [Clicks revenue type drop-down]. Yeah, I don’t know what these are. but I could click on this to find out [tries to click on underlined word for definition, but it doesn’t do anything, participant looks deflated]._
 
-- Lists that are not in alphabetical order should be. This includes the company list on the reconciliation page and the drop-down filter menus, for example, the commodity menu under 'hardrock minerals'
+- Lists that are not in alphabetical order should be. This includes the company list on the reconciliation page and the drop-down filter menus, for example, the commodity menu under 'hardrock minerals'.
 
 - People don't know how to clear the filters.
 
@@ -81,7 +81,7 @@ It seemed like even though people seemed to understand the words "material varia
 
 - People do not like seeing words they don't understand or acronyms in the filter options.
 
-- _Let’s look at oil and gas [chooses that, sees the next drop-down appear]. Then -- NGL? Natural...gas….um….nevermind. [chooses something else]_
+  - _Let’s look at oil and gas [chooses that, sees the next drop-down appear]. Then -- NGL? Natural...gas….um….nevermind. [chooses something else]_
 
 
 ### Issues on the reconciliation page specifically
@@ -104,7 +104,7 @@ The summary chart was hit-and-miss. In particular, no one was able to figure out
 
 - _I’m not entirely sure what’s going on with the bar charts. This part is clear -- I get that the bar goes with the 1%, but these tick marks -- these are separate? A different column? Oh, wait. These are all one chart. Something about these threw me off. It wasn’t clear that those marks are part of the bar._
 
-- _I wonder why the threshold is considered different for different types?_
+- _[Looking at the tick marks] I wonder why the threshold is considered different for different types?_
 
 Searching by company name didn't resonate with participants. Instead, they wanted to search by industry or location. This was either because they didn't know enough about the companies to know them by name, or because they were savvy enough to know that companies buy and sell each other a lot and often change names.
 

@@ -44,7 +44,7 @@ That last quote leads us to our next question...
 
 ## Do people understand that the variances were all explained?
 
-**Nope nope nope.** People reacted very strongly to the companies who had highlighted material variance numbers, even after we changed the color from red to bold. Note: we don't have footnote text done yet that explains the variances. Maybe this will help, but I expect that we're going to more than just those notes because participants had strong assumptions about this part of the data. For example, they assumed that if the gov and company numbers differed, it was because a company had been 'bad' and they needed to pay the government, when really we're just talking about discrepancies in accounting.
+**Nope nope nope, not yet.** People reacted very strongly to the companies who had highlighted material variance numbers, even after we changed the color from red to bold. Note: we don't have footnote text done yet that explains the variances. Maybe this will help, but I expect that we're going to more than just those notes because participants had strong assumptions about this part of the data. For example, they assumed that if the gov and company numbers differed, it was because a company had been 'bad' and they needed to pay the government, when really we're just talking about discrepancies in accounting.
 
 - _[Gets to a company that has a red number] Chevron! Tsk tsk. Apparently only Chevron sucks. Ooooo. [Continues scrolling, finds more red] 220% difference?! You guys need to pay up!_
 

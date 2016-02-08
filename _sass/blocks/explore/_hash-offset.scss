@@ -1,0 +1,14 @@
+$default-offset: 120px;
+
+// as reference for variable filter blocks
+// *[id^="#fn:"],
+// *[id^="#fnref:"],
+.hashoffset {
+	margin-top: -1 * $default-offset;
+	padding-top: $default-offset;
+}
+
+.footnotes {
+	padding-left: $base-padding;
+	padding-right: $base-padding;
+}

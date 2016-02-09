@@ -231,12 +231,11 @@
   }
 }
 
-.detached-table_header {
-  bottom: 0;
-  display: inline;
-  float: right;
-  position: absolute;
-  right: 0;
-  text-align: center;
-  vertical-align: bottom;
+.region-subtitle {
+  font-weight: $weight-light;
+  margin-bottom: $base-padding;
+}
+
+.region-title_collapsed {
+  margin-bottom: 0;
 }

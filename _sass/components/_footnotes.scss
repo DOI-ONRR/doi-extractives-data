@@ -56,3 +56,12 @@ body {
   @extend .link-charlie;
   vertical-align: super; // 2
 }
+
+// $default-offset: 130px;
+
+// *[id^="#fn:"],
+// *[id^="#fnref:"],
+// .hashoffset {
+//   margin-top: -1 * $default-offset;
+//   padding-top: $default-offset;
+// }

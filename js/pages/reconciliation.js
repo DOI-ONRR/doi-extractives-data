@@ -387,7 +387,7 @@
           return '<strong>' + variance +
             '<sup id="fnref:' + refNumber +
             '"><a href="#fn:' + refNumber +
-            '" class="footnote">' + refNumber +
+            '" class="footnote hashoffset">' + refNumber +
             '</a></sup></strong>';
         }
         return isMaterial(d)

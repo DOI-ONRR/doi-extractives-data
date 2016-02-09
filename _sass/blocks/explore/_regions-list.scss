@@ -232,6 +232,8 @@
 }
 
 .region-subtitle {
+  @include font-size(1);
+
   font-weight: $weight-light;
   margin-bottom: $base-padding;
 }

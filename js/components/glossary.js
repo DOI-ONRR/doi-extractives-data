@@ -114,8 +114,10 @@
     this.list.search();
 
     this.list.visibleItems.forEach(function(item){
-      var $elm = $(item.elm).find('div');
-      $elm.find('.js-accordion_button').click();
+      var $elm = $(item.elm);
+      // debugger
+      $elm.attr('accordion-open', true);
+      // $elm.find('.js-accordion_button').click();
     })
   };
 

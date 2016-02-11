@@ -4,24 +4,46 @@
 // //
 // // Styleguide components.glossary
 
+$drawer-width: 300px;
+$term-width: 200px;
+$term-width-max: 375px;
+
 #glossary {
   width: 100%;
 
   @include respond-to(tiny-up) {
-    width: 300px;
+    width: $drawer-width;
   }
 }
 
 .drawer__item {
+  padding-top: $base-padding;
+
 
   .glossary-term {
     color: $white;
+    display: inline-block;
     margin: 0;
+    max-width: $term-width-max;
+    padding-bottom: $base-padding;
+    width: 100%;
+
+    @include respond-to(tiny-up) {
+      width: $term-width;
+    }
   }
 
   .glossary-definition {
     font-family: $base-font-family;
-    padding-bottom: 1rem;
+    margin-bottom: $base-padding-lite;
+    padding-bottom: $base-padding;
+  }
+
+  .accordion-button {
+    color: $white;
+    margin: 0;
+    top: 0;
+
   }
 }
 

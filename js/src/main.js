@@ -35,6 +35,7 @@
 
   // FIXME: does this export anything?
   require('../components/glossary');
+  require('../components/accordion');
 
   // Google Analytics
   /* jshint ignore:start */

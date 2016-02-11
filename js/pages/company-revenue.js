@@ -9,7 +9,7 @@
 
   var getter = eiti.data.getter;
   var grouper;
-  var formatNumber = eiti.format.dollarsAndCents;
+  var formatNumber = eiti.format('$,');
   var REVENUE_TYPE_PREFIX = /^[A-Z]+(\/[A-Z]+)?\s+-\s+/;
 
   var state = eiti.explore.stateManager()

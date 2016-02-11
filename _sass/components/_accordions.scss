@@ -78,13 +78,21 @@
 
     .accordion-content {
       display: none;
-
-      @include respond-to(medium-up) {
-        display: inline-block;
-      }
     }
 
     .accordion-more {
+      display: none;
+    }
+  }
+}
+
+[accordion][accordion-desktop=false] {
+  @include respond-to(medium-up) {
+    .accordion-content {
+      display: inline-block;
+    }
+
+    .accordion-button {
       display: none;
     }
   }
@@ -110,8 +118,6 @@
   margin: 0;
   margin-top: 8px;
   width: 2rem;
-
-  @include respond-to(medium-up) {
-    display: none;
-  }
 }
+
+

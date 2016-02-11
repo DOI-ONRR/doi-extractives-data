@@ -24,7 +24,6 @@
     body: '#glossary',
     toggle: '.js-glossary-toggle',
     term: '.term',
-    accordionButton: '.accordion__button',
     navToggle: '[data-toggler="nav-drawer"]',
     navDrawer: '#nav-drawer'
   };
@@ -43,8 +42,7 @@
 
     self.$body = $(self.selectors.body);
     self.$toggle = $(self.selectors.toggle);
-    self.$search = this.$body.find('.glossary__search');
-    self.$accordionButton = $(self.selectors.accordionButton);
+    self.$search = this.$body.find('.js-glossary-search');
     self.$navToggle =  document.querySelector(self.selectors.navToggle);
     self.$navDrawer = $(self.selectors.navDrawer);
 
@@ -63,7 +61,6 @@
     self.$body.on('click', '.toggle', this.toggle.bind(this));
     self.$search.on('input', this.handleInput.bind(this));
     $(document.body).on('keyup', this.handleKeyup.bind(this));
-    self.$accordionButton.on('click', this.toggleAccordion.bind(this));
   }
 
   Glossary.prototype.isMobile = function() {
@@ -75,8 +72,8 @@
   Glossary.prototype.connectList = function() {
     var options = {
       valueNames: ['glossary-term'],
-      listClass: 'glossary__list',
-      searchClass: 'glossary__search'
+      listClass: 'js-glossary-list',
+      searchClass: 'js-glossary-search'
     };
     this.list = new List('glossary', options);
   };
@@ -112,10 +109,11 @@
 
     // Hack: Expand text for selected item
     this.list.search();
-    $.each(this.list.visibleItems, function(item) {
-      var $elm = $(item.elm).find('div');
-        $elm.find('.accordion__button').click();
-    });
+
+    this.list.visibleItems.forEach(function(item){
+      var $elm = $(item.elm);
+      $elm.attr('accordion-open', true);
+    })
   };
 
   Glossary.prototype.toggle = function() {
@@ -161,24 +159,6 @@
     }
   };
 
-  /** Toggles the state of an accordian nav item */
-  Glossary.prototype.toggleAccordion = function(e) {
-    var $thisButton = $(e.currentTarget);
-    var $thisHeader = $(e.currentTarget.offsetParent);
-    var $thisDefinition = $($thisHeader.siblings()[0]);
-
-    // toggleClass is more concise, but this couples the button text
-    // and hide/show logic
-    if ($thisDefinition.hasClass('hidden')){
-        $thisButton.find('i').removeClass('fa-chevron-down')
-          .addClass('fa-chevron-up');
-        $thisDefinition.removeClass('hidden');
-    } else {
-        $thisButton.find('i').removeClass('fa-chevron-up')
-          .addClass('fa-chevron-down');
-        $thisDefinition.addClass('hidden');
-    }
-  };
   $(function(){
     var glossary = new Glossary({body: '#glossary'});
   });

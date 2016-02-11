@@ -502,8 +502,10 @@
       featureId: 'id'
     };
 
+    var product = state.get('product');
+
     if (!regionId) {
-      if (state.has('product') && state.get('product').match(/Oil/)) {
+      if (product && product.match(/Oil/)) {
         fields.featureId = function(d) {
           if (d.id === 'pacific' || d.id === 'alaska') {
             return 'pacific alaska';
@@ -516,7 +518,7 @@
     switch (regionId.length) {
       case 2:
         if (regionId !== 'US') {
-          if (state.get('product').match(/Coal/)){
+          if (product && product.match(/Coal/)){
             // for coal county data
             if (regionId !== 'US') {
               fields.region = 'County';

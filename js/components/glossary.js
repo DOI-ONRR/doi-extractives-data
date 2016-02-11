@@ -112,10 +112,11 @@
 
     // Hack: Expand text for selected item
     this.list.search();
-    $.each(this.list.visibleItems, function(item) {
+
+    this.list.visibleItems.forEach(function(item){
       var $elm = $(item.elm).find('div');
-        $elm.find('.accordion__button').click();
-    });
+      $elm.find('.js-accordion_button').click();
+    })
   };
 
   Glossary.prototype.toggle = function() {

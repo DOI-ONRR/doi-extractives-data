@@ -116,27 +116,3 @@ input.drawer-search_field {
   position: relative;
   width: 14%;
 }
-
-.drawer__item {
-  border-bottom: 1px solid $mid-gray;
-
-  &:first-child {
-    border-top: 1px solid $mid-gray;
-  }
-
-  .accordion__header {
-    padding: 1rem 4rem 1rem 0;
-    position: relative;
-  }
-
-  .accordion__button {
-    background-color: transparent;
-    background-size: 50%;
-    height: 2rem;
-    margin-top: -1rem;
-    position: absolute;
-    right: 1rem;
-    top: 50%;
-    width: 2rem;
-  }
-}

@@ -16,37 +16,39 @@ $term-width-max: 375px;
   }
 }
 
-.drawer__item {
+.glossary-item {
+  border-bottom: 1px solid $mid-gray;
   padding-top: $base-padding;
 
-
-  .glossary-term {
-    color: $white;
-    display: inline-block;
-    margin: 0;
-    max-width: $term-width-max;
-    padding-bottom: $base-padding;
-    width: 100%;
-
-    @include respond-to(tiny-up) {
-      width: $term-width;
-    }
-  }
-
-  .glossary-definition {
-    font-family: $base-font-family;
-    margin-bottom: $base-padding-lite;
-    padding-bottom: $base-padding;
+  &:first-child {
+    border-top: 1px solid $mid-gray;
   }
 
   .accordion-button {
     color: $white;
     margin: 0;
     top: 0;
-
   }
 }
 
+.glossary-term {
+  color: $white;
+  display: inline-block;
+  margin: 0;
+  max-width: $term-width-max;
+  padding-bottom: $base-padding;
+  width: 100%;
+
+  @include respond-to(tiny-up) {
+    width: $term-width;
+  }
+}
+
+.glossary-definition {
+  font-family: $base-font-family;
+  margin-bottom: $base-padding-lite;
+  padding-bottom: $base-padding;
+}
 
 // Term classes
 //

@@ -84,16 +84,16 @@
       display: none;
     }
   }
+}
 
-  &[accordion-mobile=false] {
-    @include respond-to(medium-up) {
-      .accordion-content {
-        display: inline-block;
-      }
+[accordion][accordion-desktop=false] {
+  @include respond-to(medium-up) {
+    .accordion-content {
+      display: inline-block;
+    }
 
-      .accordion-button {
-        display: none;
-      }
+    .accordion-button {
+      display: none;
     }
   }
 }

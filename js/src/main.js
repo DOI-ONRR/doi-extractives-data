@@ -33,9 +33,8 @@
   // built version.
   exports.List = require('../vendor/list');
 
-  // FIXME: does this export anything?
-  require('../components/glossary');
-  require('../components/accordion');
+  exports.Glossary = require('../components/glossary');
+  exports.Accordion = require('../components/accordion');
 
   // Google Analytics
   /* jshint ignore:start */
@@ -49,5 +48,10 @@
   ga('set', 'forceSSL', true);
   ga('send', 'pageview');
   /* jshint ignore:end */
+
+  $(function () {
+    new exports.Glossary();
+    new exports.Accordion();
+  });
 
 })(window);

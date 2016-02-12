@@ -202,12 +202,10 @@
 }
 
 .filter-description {
-  @include heading(para-xl);
   display: none;
-  font-weight: $weight-bold;
+  font-weight: $weight-light;
   float: left;
   letter-spacing: -0.5px;
-
 
   @include respond-to(medium-up) {
     display: inline-block;
@@ -244,7 +242,8 @@
   }
 
   .filter-part {
-    border-bottom: 2px dotted $light-black;
+    // border-bottom: 2px dotted $light-black;
+    font-weight: $weight-book;
     color: inherit;
     text-decoration: none;
   }

@@ -79,7 +79,7 @@
     self.$body.on('click', function(event){
       event.stopPropagation();
     });
-  }
+  };
 
   exports.Glossary.prototype = {
 

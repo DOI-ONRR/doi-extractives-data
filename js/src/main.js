@@ -50,8 +50,8 @@
   /* jshint ignore:end */
 
   $(function () {
-    new exports.Glossary();
-    new exports.Accordion();
+    var glossary = new exports.Glossary(),
+      accordion = new exports.Accordion();
   });
 
 })(window);

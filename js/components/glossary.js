@@ -18,17 +18,6 @@
     }
   };
 
-  $.fn.extend({
-    hasClasses: function (classNames) {
-      var self = this;
-      for (var i in classNames) {
-        if ($(self).hasClass(classNames[i]))
-          return true;
-      }
-      return false;
-    }
-  });
-
   var KEYCODE_ESC = 27;
 
   var defaultSelectors = {
@@ -177,12 +166,11 @@
     var glossary = new Glossary({body: '#glossary'});
 
     $('html').click(function(event) {
-      var disallowedClasses = [
-        'js-glossary-toggle',
-        'term'
-      ];
+      var $target = $(event.target)
 
-      var hitsTriggers = $(event.target).hasClasses(disallowedClasses);
+      var hitsTriggers = $target.hasClass('js-glossary-toggle')
+        || $target.hasClass('term');
+
       if (!hitsTriggers) {
         glossary.hide();
       }

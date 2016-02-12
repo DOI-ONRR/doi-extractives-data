@@ -35,7 +35,7 @@ var types = [
   'Corporate Income Tax',
 ];
 
- var parseValue = function (value, unit) {
+var parseValue = function (value, unit) {
   if (value.match(/DNP/)) {
     return 'did not participate';
   } else if (value.match(/DNR/)) {
@@ -45,7 +45,13 @@ var types = [
   } else {
     return parse[unit](value);
   }
- };
+};
+
+roundTwoDecimal = function roundTwoDecimal(num) {
+  return typeof(num) == 'number'
+    ? Math.round( num * 100) / 100
+    : num;
+}
 
 async.waterfall([
   function load(done) {
@@ -73,10 +79,20 @@ async.waterfall([
       types.forEach(function(type) {
           var gov = parseValue(d[type + ' Government'], 'dollars');
           var company = parseValue(d[type + ' Company'], 'dollars');
+          var varianceDollars = parseValue(d[type + ' Variance $'], 'dollars');
 
           var isPos = typeof(company) == 'number'
             ? (gov - company) >= 0
             : true;
+
+          var precisePercent = !(typeof(varianceDollars) == 'number')
+
+            ? varianceDollars
+            : varianceDollars == 0
+              ? 0
+              : gov == 0
+                ? 100
+                : roundTwoDecimal(Math.abs( 100 * varianceDollars  / Math.abs(gov)));
 
           result.push({
             'Company': d['Reporting Companies'],
@@ -86,10 +102,7 @@ async.waterfall([
             'Variance Dollars': isPos
                ? parseValue(d[type + ' Variance $'], 'dollars')
                : -1 * parseValue(d[type + ' Variance $'], 'dollars'),
-            'Variance Percent': isPos
-             ? parseValue(d[type + ' Variance %'], 'percent')
-             : parseValue(d[type + ' Variance %'], 'percent')
-
+            'Variance Percent': precisePercent
           });
       });
     });

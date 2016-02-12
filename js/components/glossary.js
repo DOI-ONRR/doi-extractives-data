@@ -67,8 +67,11 @@
       var $target = $(event.target)
 
       var hitsTriggers = $target.hasClass('js-glossary-toggle')
-        || $target.hasClass('term');
+        || $target.hasClass('term')
+        || $target.hasClass('icon-bars');
 
+      // console.log($target)
+      // debugger
       if (!hitsTriggers) {
         self.hide();
       }
@@ -175,8 +178,6 @@
       }
     }
   };
-
-
 
   $(function(){
     var glossary = new Glossary({body: '#glossary'});

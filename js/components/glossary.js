@@ -18,6 +18,17 @@
     }
   };
 
+  $.fn.extend({
+    hasClasses: function (classNames) {
+      var self = this;
+      for (var i in classNames) {
+        if ($(self).hasClass(classNames[i]))
+          return true;
+      }
+      return false;
+    }
+  });
+
   var KEYCODE_ESC = 27;
 
   var defaultSelectors = {
@@ -93,6 +104,7 @@
         self.show();
         self.findTerm($(this).data('term'));
       }
+
     });
   };
 
@@ -159,8 +171,26 @@
     }
   };
 
+
+
   $(function(){
     var glossary = new Glossary({body: '#glossary'});
+
+    $('html').click(function(event) {
+      var disallowedClasses = [
+        'js-glossary-toggle',
+        'term'
+      ];
+
+      var hitsTriggers = $(event.target).hasClasses(disallowedClasses);
+      if (!hitsTriggers) {
+        glossary.hide();
+      }
+    });
+
+    glossary.$body.on('click',function(event){
+        event.stopPropagation();
+    });
   });
 
 })(this);

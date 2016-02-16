@@ -25,50 +25,52 @@
     border: 0;
     height: 50px;
   }
+}
 
-  &[aria-expanded=true] {
-    background-color: $mid-blue-opaque !important;
-    height: 100%;
-    overflow-y: auto;
-    padding-left: $base-padding;
+.filters-wrapper[aria-expanded=true] {
+  background-color: $mid-blue-opaque !important;
+  height: 100%;
+  overflow-y: auto;
+  padding-left: $base-padding;
 
-    @include respond-to(medium-up) {
-      height: inherit;
-      overflow-y: initial;
-    }
+  @include respond-to(medium-up) {
+    height: inherit;
+    overflow-y: initial;
+  }
 
-    &.js-transparent,
-    &.js-color {
-      border-radius: $base-border-radius;
-      border-bottom: none;
-    }
-
-    &.js-color {
-      border-top-left-radius: 0;
-      border-top-right-radius: 0;
-    }
+  &.js-transparent,
+  &.js-color {
+    border-bottom: none;
+    border-radius: 0;
   }
 
   &.js-color {
-    background: $mid-blue;
-    border-bottom: 2px solid lighten($neutral-gray, 5%);
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-
     @include respond-to(medium-up) {
-      background: $white;
+      border-bottom-left-radius: $base-border-radius;
+      border-bottom-right-radius: $base-border-radius;
     }
   }
+}
 
-  &.js-transparent {
-    background: $mid-blue;
-    border-bottom: 2px solid lighten($neutral-gray, 5%);
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
+.js-color {
+  background: $mid-blue;
+  border-bottom: 2px solid lighten($neutral-gray, 5%);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 
-    @include respond-to(medium-up) {
-      background: $white;
-    }
+  @include respond-to(medium-up) {
+    background: $white;
+  }
+}
+
+.js-transparent {
+  background: $mid-blue;
+  border-bottom: 2px solid lighten($neutral-gray, 5%);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+
+  @include respond-to(medium-up) {
+    background: $white;
   }
 }
 
@@ -126,7 +128,6 @@
 // Crazy checkbox magic
 // http://cssdeck.com/labs/css-checkbox-styles
 // for guide on firefox compatibility
-
 .unit-filter {
   position: relative;
 
@@ -215,10 +216,7 @@
 
   &.filter-description_open {
     display: block;
-    margin-bottom: $base-padding;
-    margin-top: $base-padding;
-    padding-left: $base-padding;
-    padding-right: $base-padding;
+    float: none;
 
     @include respond-to(medium-up) {
       display: none;
@@ -242,10 +240,21 @@
   }
 
   .filter-part {
-    // border-bottom: 2px dotted $light-black;
-    font-weight: $weight-book;
     color: inherit;
+    font-weight: $weight-book;
     text-decoration: none;
+  }
+}
+
+.filter-description_wrapper {
+  display: block;
+  margin-bottom: $base-padding-extra;
+  margin-top: $base-padding;
+  padding-left: $base-padding;
+  padding-right: $base-padding;
+
+  @include respond-to(medium-up) {
+    display: none;
   }
 }
 

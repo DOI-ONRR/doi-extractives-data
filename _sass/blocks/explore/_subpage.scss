@@ -30,8 +30,8 @@
 
 
   @include respond-to(medium-up) {
-    margin-top: 190px;
     margin-right: $base-padding;
+    margin-top: 190px;
   }
 
   @include respond-to(huge-plus-up) {

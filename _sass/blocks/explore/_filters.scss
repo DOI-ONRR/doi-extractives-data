@@ -44,6 +44,12 @@
     border-radius: 0;
   }
 
+  &.js-transparent {
+    @include respond-to(medium-up) {
+      border-radius: $base-border-radius;
+    }
+  }
+
   &.js-color {
     @include respond-to(medium-up) {
       border-bottom-left-radius: $base-border-radius;
@@ -220,22 +226,6 @@
 
     @include respond-to(medium-up) {
       display: none;
-    }
-  }
-
-  &.filter-description_closed {
-    margin-bottom: $base-padding-lite;
-
-    &[aria-expanded=true] {
-      display: none;
-    }
-
-    &[aria-expanded=false] {
-      display: block;
-    }
-
-    @include respond-to(medium-up) {
-      margin-bottom: 0;
     }
   }
 

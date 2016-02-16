@@ -174,7 +174,7 @@
 }
 
 .region-title {
-  padding-top: $base-padding-large;
+  padding-top: 0;
 }
 
 .region-notes {
@@ -212,6 +212,14 @@
 
 .detached-header {
   position: relative;
+  padding-left: $base-padding;
+  padding-right: $base-padding;
+
+  @include respond-to(medium-up) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
 }
 
 .detached-table_title {

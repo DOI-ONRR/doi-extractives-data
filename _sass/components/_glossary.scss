@@ -6,7 +6,7 @@
 
 $drawer-width: 300px;
 $term-width: 200px;
-$term-width-max: 375px;
+$term-width-max: 220px;
 
 #glossary {
   width: 100%;
@@ -27,7 +27,7 @@ $term-width-max: 375px;
   .accordion-button {
     color: $white;
     margin: 0;
-    top: 0;
+    margin-top: -2px;
   }
 }
 

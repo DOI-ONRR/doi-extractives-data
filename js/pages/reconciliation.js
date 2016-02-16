@@ -91,9 +91,11 @@
   }
 
   function isMaterial (d) {
+    var varianceVal = Math.abs(d.value - d.company);
+
     var overThreshold = !!(varianceKey[d.name].threshold < d.variance);
     if (overThreshold) {
-      var varianceVal = Math.abs(d.value - d.company);
+
       if (varianceVal > varianceKey[d.name].floor) {
         return true;
       }
@@ -341,7 +343,6 @@
   }
 
   function updateRevenueItem(selection, extent) {
-
     selection.select('.name')
       .text(function(d) {
         return varianceKey[d.name].name;

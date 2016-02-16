@@ -3,7 +3,7 @@ title: All Lands Production | Explore Data
 layout: default
 permalink: /explore/all-lands-production/
 ---
-<section id="all-lands-production" class="explore-subpage container">
+<section id="all-lands-production" class="explore-subpage container container-margin">
   <div class="container-left-4">
     <div class="container-outer">
       <div>
@@ -26,7 +26,7 @@ permalink: /explore/all-lands-production/
   <section class="container-right-8 filters-wrapper_outer">
     <div data-absolute="true" data-offset-parent="mobile" class="sticky_nav sticky_nav-show_mobile filters-wrapper container" data-toggler="filters" data-max-width="675">
       <h1 data-toggler="filters" data-filter-description="" class="filter-description filter-description_closed">
-        <a href="#commodity-group-selector" class="filter-part" data-key="commodity">All</a>
+        <a href="#product-selector" class="filter-part" data-key="product">All</a>
         production on all lands and waters in
         <a href="#region-selector" class="filter-part" data-key="region">the entire U.S.</a>
         (<a href="#year-selector" class="filter-part" data-key="year">2013</a>)
@@ -63,7 +63,7 @@ permalink: /explore/all-lands-production/
               </optgroup>
               <optgroup label="Offshore Areas">
                 {% for area in site.data.offshore_regions_oil %}
-                <option value="{{ area.id }}">{{ area.name }}</option>
+                <option value="{{ area.id }}">{{ area.display_name }}</option>
                 {% endfor %}
               </optgroup>
             </select>
@@ -81,7 +81,7 @@ permalink: /explore/all-lands-production/
           </eiti-slider>
         </div>
         <h1 data-toggler="filters" data-filter-description="" class="filter-description">
-          <a href="#commodity-group-selector" class="filter-part" data-key="commodity">All</a>
+          <a href="#product-selector" class="filter-part" data-key="product">All</a>
           production on all lands and waters in
           <a href="#region-selector" class="filter-part" data-key="region">the entire U.S.</a>
           (<a href="#year-selector" class="filter-part" data-key="year">2013</a>)
@@ -199,9 +199,7 @@ permalink: /explore/all-lands-production/
     </div>
   </section>
 </section>
-<script src="{{ site.baseurl }}/js/components/sticky-nav.js"></script>
-<script src="{{ site.baseurl }}/js/vendor/immutable.min.js"></script>
-<script src="{{ site.baseurl }}/js/components/eiti-bar.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/js/lib/explore.min.js" charset="utf-8"></script>
 <script>
   eiti.data.REGION_ID_NAME = {
     {% for state in site.data.states %}

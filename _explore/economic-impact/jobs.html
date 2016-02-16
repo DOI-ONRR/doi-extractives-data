@@ -3,7 +3,7 @@ title: Jobs | Explore Data
 layout: default
 permalink: /explore/jobs/
 ---
-<section id="jobs" class="explore-subpage container">
+<section id="jobs" class="explore-subpage container container-margin">
   <div class="container-left-4">
     <div class="container-outer">
       <div>
@@ -174,9 +174,7 @@ permalink: /explore/jobs/
     </div>
   </section>
 </section>
-<script src="{{ site.baseurl }}/js/components/sticky-nav.js"></script>
-<script src="{{ site.baseurl }}/js/vendor/immutable.min.js"></script>
-<script src="{{ site.baseurl }}/js/components/eiti-bar.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/js/lib/explore.min.js" charset="utf-8"></script>
 <script>
   eiti.data.REGION_ID_NAME = {
     {% for state in site.data.states %}

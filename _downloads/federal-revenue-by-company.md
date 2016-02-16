@@ -4,7 +4,7 @@ layout: default
 permalink: /downloads/federal-revenue-by-company/
 ---
 
-<div class="container-outer container-padded">
+<div class="container-outer container-margin">
 
   <article class="container-left-7">
 

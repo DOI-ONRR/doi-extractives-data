@@ -3,7 +3,7 @@ title: Explore | Gross Domestic Product
 layout: default
 permalink: /explore/gdp/
 ---
-<section id="gdp" class="explore-subpage container">
+<section id="gdp" class="explore-subpage container container-margin">
   <div class="container-left-4">
     <div class="container-outer">
       <div>
@@ -146,9 +146,7 @@ permalink: /explore/gdp/
     </div>
   </section>
 </section>
-<script src="{{ site.baseurl }}/js/components/sticky-nav.js"></script>
-<script src="{{ site.baseurl }}/js/vendor/immutable.min.js"></script>
-<script src="{{ site.baseurl }}/js/components/eiti-bar.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/js/lib/explore.min.js" charset="utf-8"></script>
 <script>
   eiti.data.REGION_ID_NAME = {
     {% for state in site.data.states %}

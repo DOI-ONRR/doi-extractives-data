@@ -120,5 +120,5 @@
 
     openListNav.registerEventHandlers();
 
-    exports.openListNav = openListNav;
+    module.exports = openListNav;
   })(this);

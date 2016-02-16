@@ -2,6 +2,8 @@
 (function(exports) {
   'use strict';
 
+  var CustomEvent = require('custom-event');
+
   exports.EITIMap = document.registerElement('eiti-map', {
     // 'extends': 'svg',
     prototype: Object.create(
@@ -469,23 +471,6 @@
     return mesh;
   }
 
-  function extend(parent, proto) {
-    var constructor = document.createElement(parent).constructor;
-    for (var key in proto) {
-      if (typeof proto[key] === 'function') {
-        proto[key] = {value: proto[key]};
-      }
-    }
-    return Object.create(constructor.prototype, proto);
-  }
-
-  function assign(obj, keys) {
-    for (var key in keys) {
-      obj[key] = keys[key];
-    }
-    return obj;
-  }
-
   function is(node, name) {
     return node.nodeName.toLowerCase() === name
         || node.getAttribute('is') === name;
@@ -505,5 +490,7 @@
   function getFeatures(topology, obj) {
     return topojson.feature(topology, obj).features;
   }
+
+  module.exports = exports.EITIMap;
 
 })(this);

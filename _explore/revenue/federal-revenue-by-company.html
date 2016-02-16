@@ -3,7 +3,7 @@ title: Federal Revenue By Company | Explore Data
 layout: default
 permalink: /explore/federal-revenue-by-company/
 ---
-<section id="companies" class="explore-subpage container">
+<section id="companies" class="explore-subpage container container-margin">
 
   <div class="container-left-4">
     <div class="container-outer">
@@ -29,7 +29,7 @@ permalink: /explore/federal-revenue-by-company/
   <section class="container-right-8 filters-wrapper_outer">
     <div data-absolute="true" data-offset-parent="mobile" class="sticky_nav sticky_nav-show_mobile filters-wrapper container" data-toggler="filters" data-max-width="675">
       <h1 data-toggler="filters" data-filter-description="" class="filter-description filter-description_closed">
-        <a href="#revenue-type-selector" class="filter-part" data-key="type">All revenue</a>
+        <a href="#type-selector" class="filter-part" data-key="type">All revenue</a>
         from
         <a href="#commodity-selector" class="filter-part" data-key="commodity">all commodities</a>
         extraction on federal lands (2013)
@@ -62,7 +62,7 @@ permalink: /explore/federal-revenue-by-company/
         </div>
 
         <h1 data-toggler="filters" data-filter-description="" class="filter-description filter-description_closed">
-          <a href="#revenue-type-selector" class="filter-part" data-key="type">All revenue</a>
+          <a href="#type-selector" class="filter-part" data-key="type">All revenue</a>
           from
           <a href="#commodity-selector" class="filter-part" data-key="commodity">all commodities</a>
           extraction on federal lands (2013)
@@ -99,8 +99,6 @@ permalink: /explore/federal-revenue-by-company/
   </section>
 
 </section>
-<script src="{{ site.baseurl }}/js/components/sticky-nav.js"></script>
-<script src="{{ site.baseurl }}/js/vendor/immutable.min.js"></script>
-<script src="{{ site.baseurl }}/js/components/eiti-bar.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/js/lib/explore.min.js" charset="utf-8"></script>
 <script src="{{ site.baseurl }}/js/eiti.explore.js"></script>
 <script src="{{ site.baseurl }}/js/pages/company-revenue.js"></script>

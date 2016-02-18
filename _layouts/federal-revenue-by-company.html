@@ -2,6 +2,17 @@
 layout: default
 ---
 <section id="companies" data-year="{{ page.year }}" class="explore-subpage container container-margin">
+  <section class="revenues_subpage-nav container">
+    <div class="revenues_subpage-tabs">
+      <ul>
+        {% for year in site.company_revenue_years %}
+        <li class="revenues_subpage-tab{% if year == page.year %} active{% endif %}">
+          <a href="{{ site.baseurl }}/explore/federal-revenue-by-company/{% if forloop.last %}{% else %}{{ year }}{% endif %}">{{ year }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
 
   <div class="container-left-4">
     <div class="container-outer">
@@ -25,6 +36,7 @@ layout: default
   </div>
 
   <section class="container-right-8 filters-wrapper_outer">
+
     <div data-absolute="true" data-offset-parent="mobile" class="sticky_nav sticky_nav-show_mobile filters-wrapper container" data-toggler="filters" data-max-width="675">
 
       <button class="toggle-filters toggle-desktop" is="eiti-toggle" aria-controls="filters" data-expanded-text="Hide filters" data-collapsed-text="Show filters" data-toggler="filters">Show filters</button>

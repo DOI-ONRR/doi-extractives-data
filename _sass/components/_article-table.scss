@@ -1,0 +1,140 @@
+@mixin column-numbers($column) {
+  th:nth-child(#{$column}),
+  td:nth-child(#{$column})
+   {
+    text-align: right;
+  }
+}
+
+@mixin column-centered($column) {
+  th:nth-child(#{$column}),
+  td:nth-child(#{$column})
+   {
+    text-align: center;
+  }
+}
+
+@mixin column-book($column) {
+  th:nth-child(#{$column}),
+  td:nth-child(#{$column})
+   {
+    font-weight: $weight-book;
+  }
+}
+
+$max-columns: 10;
+
+.article_table {
+  border: none;
+  border-bottom: 1px solid $light-green;
+  margin-bottom: $base-padding-extra;
+  width: 100%;
+
+  th {
+    border-bottom: 4px solid $light-green;
+    font-weight: $weight-book;
+    line-height: 1.2;
+    padding: $base-padding-lite;
+    text-align: left;
+    vertical-align: bottom;
+
+    &.article_table-thin {
+      border-bottom: 1px solid $light-green;
+    }
+  }
+
+  td {
+    border: none;
+    border-top: 1px solid $light-green;
+    line-height: 1.4;
+    padding: $base-padding-lite;
+    padding-bottom: ($base-padding-lite * 1.7);
+  }
+
+  td p {
+    @include heading(para-md);
+  }
+
+  span {
+    font-weight: $weight-book;
+    line-height: 2;
+  }
+
+}
+
+.article_table-numbers th {
+  text-align: center;
+}
+
+.article_table-numbers .article_table-left {
+  text-align: left;
+}
+
+.article_table-numbers td {
+  text-align: right;
+}
+
+.article_table-numbers td:first-child {
+  text-align: left;
+  text-indent: 1rem;
+}
+
+@for $i from 1 to $max-columns {
+  .article_table-numbers_#{$i}{
+     @include column-numbers($i);
+  }
+
+  .article_table-centered_#{$i}{
+     @include column-centered($i);
+  }
+
+  .article_table-book_#{$i}{
+     @include column-book($i);
+  }
+}
+
+.article_table-enlarge {
+  @include font-size(1.1);
+}
+
+.article_table-head,
+.article_table-head td,
+.article_table-head th {
+  font-weight: $weight-book;
+}
+
+.article_table-bold,
+.article_table-bold td,
+.article_table-bold th {
+  font-weight: $weight-bold !important; // ugly, but needed for now
+}
+
+.article_table-indented tr {
+  &.article_table-head,
+  &.article_table-bold {
+    td:first-child {
+      text-indent: 0;
+    }
+  }
+
+  td:first-child {
+    text-indent: 1rem;
+  }
+}
+
+.article_table-gray {
+  border-bottom: 1px solid $neutral-gray;
+}
+
+.article_table-gray th {
+  border-bottom: 2px solid $neutral-gray;
+}
+
+.article_table-gray.article_table-thin {
+  border-bottom: 1px solid $neutral-gray;
+}
+
+.article_table-gray td {
+  border-top: 1px solid $neutral-gray;
+}
+

@@ -34,3 +34,7 @@ collections:
   downloads:
     output: true
     permalink: /downloads/:subpage/
+
+company_revenue_years:
+  - 2013
+  - 2014

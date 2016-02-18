@@ -1,6 +1,8 @@
 # where our npm-installed executables reside
 BIN = ../node_modules/.bin
 
+SHELL = bash
+
 input ?= _input/
 
 # commonly used executables
@@ -20,7 +22,7 @@ REVENUE_FILES = \
 	regional/revenues.tsv \
 	county-revenues-by-state \
 	county-resource-revenues-by-state \
-	company/revenue.tsv
+	company/revenue
 
 # production volume files
 PRODUCTION_FILES = \
@@ -107,12 +109,30 @@ national/revenues.tsv: state/revenues.tsv offshore/revenues.tsv
 		--sum 'Revenue' \
 		-o $@ $^
 
+<<<<<<< HEAD
 company/revenue.tsv: $(input)onrr/company-revenues.tsv
 	mkdir -p $(dir $@)
 	bin/parse-company-revenue.js \
 		--if tsv \
 		--of tsv \
 		$< > $@
+=======
+reconciliation/revenue.tsv: $(input)multiple-sources/reconciliation.tsv
+	mkdir -p $(dir $@)
+	bin/parse-reconciliation.js \
+		--if tsv \
+		--of tsv \
+		$< > $@
+
+company/revenue:
+	mkdir -p $@
+	for file in $(input)onrr/company-revenue/*.tsv; do \
+		bin/parse-company-revenue.js \
+			--if tsv \
+			--of tsv \
+			$$file > "$@/$${file##*/}"; \
+	done
+>>>>>>> 239e321... put company revenue in company/revenue dir
 
 # national production volumes by commodity and product
 national/production.tsv: state/production.tsv offshore/production.tsv

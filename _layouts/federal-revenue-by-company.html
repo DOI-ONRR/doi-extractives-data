@@ -1,9 +1,7 @@
 ---
-title: Federal Revenue By Company | Explore Data
 layout: default
-permalink: /explore/federal-revenue-by-company/
 ---
-<section id="companies" class="explore-subpage container container-margin">
+<section id="companies" data-year="{{ page.year }}" class="explore-subpage container container-margin">
 
   <div class="container-left-4">
     <div class="container-outer">
@@ -14,7 +12,7 @@ permalink: /explore/federal-revenue-by-company/
 
       <h1>Federal Revenue by Company</h1>
 
-      <p>Explore revenues on federal lands and waters in 2013 by commodity, revenue type, and company.</p>
+      <p>Explore revenues on federal lands and waters in {{ page.year }} by commodity, revenue type, and company.</p>
 
       <p>This data comes from the Department of the Interior's Office of Natural Resources Revenue and is calendar year data.</p>
 
@@ -32,7 +30,7 @@ permalink: /explore/federal-revenue-by-company/
         <a href="#type-selector" class="filter-part" data-key="type">All revenue</a>
         from
         <a href="#commodity-selector" class="filter-part" data-key="commodity">all commodities</a>
-        extraction on federal lands (2013)
+        extraction on federal lands ({{ page.year }})
       </h1>
       <button class="toggle-filters toggle-desktop" is="eiti-toggle" aria-controls="filters" data-expanded-text="Hide filters" data-collapsed-text="Show filters" data-toggler="filters">Show filters</button>
 
@@ -60,13 +58,6 @@ permalink: /explore/federal-revenue-by-company/
             </select>
           </div>
         </div>
-
-        <h1 data-toggler="filters" data-filter-description="" class="filter-description filter-description_closed">
-          <a href="#type-selector" class="filter-part" data-key="type">All revenue</a>
-          from
-          <a href="#commodity-selector" class="filter-part" data-key="commodity">all commodities</a>
-          extraction on federal lands (2013)
-        </h1>
 
       </form>
 

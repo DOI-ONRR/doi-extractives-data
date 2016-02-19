@@ -1,23 +1,20 @@
 @mixin column-numbers($column) {
   th:nth-child(#{$column}),
-  td:nth-child(#{$column})
-   {
+  td:nth-child(#{$column}) {
     text-align: right;
   }
 }
 
 @mixin column-centered($column) {
   th:nth-child(#{$column}),
-  td:nth-child(#{$column})
-   {
+  td:nth-child(#{$column}) {
     text-align: center;
   }
 }
 
 @mixin column-book($column) {
   th:nth-child(#{$column}),
-  td:nth-child(#{$column})
-   {
+  td:nth-child(#{$column}) {
     font-weight: $weight-book;
   }
 }
@@ -80,16 +77,16 @@ $max-columns: 10;
 }
 
 @for $i from 1 to $max-columns {
-  .article_table-numbers_#{$i}{
-     @include column-numbers($i);
+  .article_table-numbers_#{$i} {
+    @include column-numbers($i);
   }
 
-  .article_table-centered_#{$i}{
-     @include column-centered($i);
+  .article_table-centered_#{$i} {
+    @include column-centered($i);
   }
 
-  .article_table-book_#{$i}{
-     @include column-book($i);
+  .article_table-book_#{$i} {
+    @include column-book($i);
   }
 }
 

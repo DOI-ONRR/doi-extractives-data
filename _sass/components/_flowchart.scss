@@ -7,36 +7,36 @@ $border-offset: ($border-thickness / 2);
 
 
 .flowchart {
-	margin-bottom: $base-padding-large;
-	ul {
-		margin: 0;
-	}
+  margin-bottom: $base-padding-large;
+
+  ul {
+    margin: 0;
+  }
 }
 
 .flowchart-dialog {
-	background: $mid-blue;
-	border-radius: $base-border-radius;
-	padding: $base-padding;
-	border: $border-thickness solid $mid-blue;
-	// margin-bottom: $base-padding;
-	margin-top: $base-padding-large + 1em;
-	position: relative;
+  background: $mid-blue;
+  border: $border-thickness solid $mid-blue;
+  border-radius: $base-border-radius;
+  margin-top: $base-padding-large + 1em;
+  padding: $base-padding;
+  position: relative;
 }
 
 .flowchart-dialog_transparent {
-	background: transparent;
+  background: transparent;
 }
 
 .flowchart-dialog_left:before,
 .flowchart-dialog_right:after {
-	border-color: $mid-blue transparent transparent transparent;
-	content: '';
-  position: absolute;
-  bottom: (-1 * $triangle-width );
+  border-color: $mid-blue transparent transparent transparent;
   border-style: solid;
   border-width: ( $triangle-width / 2 );
-  width: 0;
+  bottom: (-1 * $triangle-width );
+  content: '';
   height: 0;
+  position: absolute;
+  width: 0;
 }
 
 .flowchart-dialog_left:before {
@@ -44,15 +44,15 @@ $border-offset: ($border-thickness / 2);
 }
 
 .flowchart-dialog_right:after {
-	right: $triangle-padding;
+  right: $triangle-padding;
 }
 
 .flowchart-words_left,
 .flowchart-words_right {
-	position: absolute;
   bottom: (-1 * $triangle-width - 8px);
+  position: absolute;
   text-align: center;
-	width: $triangle-width;
+  width: $triangle-width;
 }
 
 .flowchart-words_left {
@@ -66,39 +66,39 @@ $border-offset: ($border-thickness / 2);
 
 .flowchart-stem_left,
 .flowchart-stem_right {
-	position: absolute;
-	height: $stem-height;
-	border: $border-offset solid $mid-blue;
-	top: -1 * ($stem-height + $border-thickness);
+  border: $border-offset solid $mid-blue;
+  height: $stem-height;
+  position: absolute;
+  top: -1 * ($stem-height + $border-thickness);
 }
 
 .flowchart-stem_left {
-	left: calc(#{$triangle-padding} + (#{$triangle-width} /2) - #{$border-offset});
+  left: calc(#{$triangle-padding} + (#{$triangle-width} /2) - #{$border-offset});
 }
 
 
 .flowchart-stem_right {
-	right: calc(#{$triangle-padding} + (#{$triangle-width} /2) - #{$border-offset});
+  right: calc(#{$triangle-padding} + (#{$triangle-width} /2) - #{$border-offset});
 }
 
 .flowchart-stem_long {
-	height: $stem-height-long;
-	top: -1 * ($stem-height-long + $border-thickness);
+  height: $stem-height-long;
+  top: -1 * ($stem-height-long + $border-thickness);
 }
 
 .flowchart-no_top {
-	margin-top: $stem-height;
+  margin-top: $stem-height;
 }
 
 .flowchart-join_to_top {
-	margin-top: 5px;
-	border-top-right-radius: 0;
-	border-top-left-radius: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  margin-top: 5px;
 }
 
 .flowchart-join_to_bottom {
-	border-bottom-right-radius: 0;
-	border-bottom-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 @for $i from 1 to 12 {
@@ -109,10 +109,10 @@ $border-offset: ($border-thickness / 2);
 }
 
 .flowchart-columns_left {
-	float: left;
+  float: left;
 }
 
 .flowchart-columns_right {
-	float: right;
-	@include omega();
+  float: right;
+  @include omega();
 }

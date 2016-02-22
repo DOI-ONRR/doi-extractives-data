@@ -1,0 +1,53 @@
+$triangle-width: 32px;
+$triangle-padding: 7%;
+
+.flowchart {
+	margin-bottom: $base-padding-large;
+
+}
+
+.flowchart-dialog {
+	background: $mid-blue;
+	border-radius: $base-border-radius;
+	padding: $base-padding;
+	// margin-bottom: $base-padding;
+	margin-top: $base-padding-large;
+	position: relative;
+}
+
+.flowchart-dialog_left:before,
+.flowchart-dialog_right:after {
+	border-color: $mid-blue transparent transparent transparent;
+	content: '';
+  position: absolute;
+  bottom: (-1 * $triangle-width );
+  border-style: solid;
+  border-width: ( $triangle-width / 2 );
+  width: 0;
+  height: 0;
+}
+
+.flowchart-dialog_left:before {
+  left: $triangle-padding;
+}
+
+.flowchart-dialog_right:after {
+	right: $triangle-padding;
+}
+
+.flowchart-words_left,
+.flowchart-words_right {
+	position: absolute;
+  bottom: (-1 * $triangle-width - 8px);
+  text-align: center;
+	width: $triangle-width;
+}
+
+.flowchart-words_left {
+  left: $triangle-padding;
+}
+
+
+.flowchart-words_right {
+  right: $triangle-padding;
+}

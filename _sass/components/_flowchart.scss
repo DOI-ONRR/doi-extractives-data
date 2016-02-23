@@ -2,12 +2,34 @@ $triangle-width: 32px;
 $triangle-padding: 40px;
 $stem-height: 10px;
 $stem-height-long: 140px;
+$stem-height-extra-long: 870px;
+$stem-height-extra-long-md: 700px;
 $border-thickness: 2px;
 $border-offset: ($border-thickness / 2);
+
+$dialog-top-padding: 3em;
+
+$offset_1_hack: 0.88em;
+
+
+@mixin center-of-column($column-number, $parent-columns, $direction) {
+  $column: ($column * 12 / $parent-columns);
+  #{$direction}: ($column * $column-number / 2);
+}
+
 
 
 .flowchart {
   margin-bottom: $base-padding-large;
+  padding-left: $base-padding;
+  padding-right: $base-padding;
+
+
+
+  @include respond-to(medium-up) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 
   ul {
     margin: 0;
@@ -18,9 +40,16 @@ $border-offset: ($border-thickness / 2);
   background: $mid-blue;
   border: $border-thickness solid $mid-blue;
   border-radius: $base-border-radius;
-  margin-top: $base-padding-large + 1em;
-  padding: $base-padding;
+  margin-top: $dialog-top-padding;
+  padding: ($base-padding-lite * 2);
   position: relative;
+  z-index: 5;
+
+  // @include font-size(0.8);
+
+  @include respond-to(medium-up) {
+    padding: $base-padding;
+  }
 }
 
 .flowchart-dialog_transparent {
@@ -49,10 +78,12 @@ $border-offset: ($border-thickness / 2);
 
 .flowchart-words_left,
 .flowchart-words_right {
-  bottom: (-1 * $triangle-width - 8px);
+  bottom: (-1 * $triangle-width - 12px);
   position: absolute;
   text-align: center;
   width: $triangle-width;
+
+  @include font-size(1.4);
 }
 
 .flowchart-words_left {
@@ -81,9 +112,22 @@ $border-offset: ($border-thickness / 2);
   right: calc(#{$triangle-padding} + (#{$triangle-width} /2) - #{$border-offset});
 }
 
+.flowchart-stem_left_offset_1 {
+  left: calc(#{$triangle-padding} + (#{$triangle-width} /2) - #{$border-offset} - #{$offset_1_hack});
+}
+
 .flowchart-stem_long {
   height: $stem-height-long;
   top: -1 * ($stem-height-long + $border-thickness);
+}
+
+.flowchart-stem_extra_long {
+  height: $stem-height-extra-long;
+  top: -1 * ($stem-height-extra-long + $border-thickness);
+
+  @include respond-to(medium-up) {
+
+  }
 }
 
 .flowchart-no_top {
@@ -101,10 +145,11 @@ $border-offset: ($border-thickness / 2);
   border-bottom-right-radius: 0;
 }
 
+
+
 @for $i from 1 to 12 {
   .flowchart-columns_#{$i} {
     @include span-columns($i);
-    float: none;
   }
 }
 
@@ -115,4 +160,14 @@ $border-offset: ($border-thickness / 2);
 .flowchart-columns_right {
   float: right;
   @include omega();
+}
+
+
+.flowchart-text_large {
+  @include font-size(1.2);
+}
+
+
+.flowchart-text_bold {
+  font-weight: $weight-book;
 }

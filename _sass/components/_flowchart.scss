@@ -1,5 +1,6 @@
 $triangle-width: 32px;
 $triangle-padding: 40px;
+$triangle-padding-sm: 6px;
 $stem-height: 10px;
 $stem-height-long: 140px;
 $stem-height-extra-long: 870px;
@@ -7,10 +8,8 @@ $stem-height-extra-long-md: 700px;
 $border-thickness: 2px;
 $border-offset: ($border-thickness / 2);
 
+
 $dialog-top-padding: 3em;
-
-$offset_1_hack: 0.88em;
-
 
 @mixin center-of-column($column-number, $parent-columns, $direction) {
   $column: ($column * 12 / $parent-columns);
@@ -73,7 +72,11 @@ $offset_1_hack: 0.88em;
 }
 
 .flowchart-dialog_right:after {
-  right: $triangle-padding;
+  right: $triangle-padding-sm;
+
+  @include respond-to(small-up) {
+    right: $triangle-padding;
+  }
 }
 
 .flowchart-words_left,
@@ -91,7 +94,11 @@ $offset_1_hack: 0.88em;
 }
 
 .flowchart-words_right {
-  right: $triangle-padding;
+  right: $triangle-padding-sm;
+
+  @include respond-to(small-up) {
+    right: $triangle-padding;
+  }
 }
 
 
@@ -109,11 +116,34 @@ $offset_1_hack: 0.88em;
 
 
 .flowchart-stem_right {
-  right: calc(#{$triangle-padding} + (#{$triangle-width} /2) - #{$border-offset});
+  right: calc(#{$triangle-padding-sm} + (#{$triangle-width} /2) - #{$border-offset});
+
+  @include respond-to(small-up) {
+    right: calc(#{$triangle-padding} + (#{$triangle-width} /2) - #{$border-offset});
+  }
 }
 
 .flowchart-stem_left_offset_1 {
-  left: calc(#{$triangle-padding} + (#{$triangle-width} /2) - #{$border-offset} - #{$offset_1_hack});
+  left: calc(#{$triangle-padding-sm} + (#{$triangle-width} /2) - #{$border-offset});
+
+  @include respond-to(small-up) {
+    left: calc(#{$triangle-padding} + (#{$triangle-width} /2) - #{$border-offset});
+  }
+}
+
+.flowchart-stem_bottom_right {
+  border: 1px solid $mid-blue;
+  width: 1px;
+  height: $stem-height;
+  margin-bottom: ($stem-height * -1);
+  position: absolute;
+  bottom: -46px;
+
+  right: calc(#{$triangle-padding-sm} + (#{$triangle-width} /2) - #{$border-offset});
+
+  @include respond-to(small-up) {
+    right: calc(#{$triangle-padding} + (#{$triangle-width} /2) - #{$border-offset});
+  }
 }
 
 .flowchart-stem_long {

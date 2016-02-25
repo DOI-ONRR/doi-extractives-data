@@ -1,29 +1,22 @@
 $triangle-width: 32px;
 $triangle-padding: 40px;
 $triangle-padding-sm: 6px;
-$stem-height: 10px;
-$stem-height-long: 140px;
-$stem-height-extra-long: 870px;
-$stem-height-extra-long-md: 700px;
+$stem-height: 12px;
 $border-thickness: 2px;
 $border-offset: ($border-thickness / 2);
 
 
-$dialog-top-padding: 3em;
+$dialog-top-padding: 3.8rem;
 
 @mixin center-of-column($column-number, $parent-columns, $direction) {
   $column: ($column * 12 / $parent-columns);
   #{$direction}: ($column * $column-number / 2);
 }
 
-
-
 .flowchart {
-  margin-bottom: $base-padding-large;
+  margin-bottom: $base-padding-extra;
   padding-left: $base-padding;
   padding-right: $base-padding;
-
-
 
   @include respond-to(medium-up) {
     padding-left: 0;
@@ -44,10 +37,12 @@ $dialog-top-padding: 3em;
   position: relative;
   z-index: 5;
 
-  // @include font-size(0.8);
-
   @include respond-to(medium-up) {
     padding: $base-padding;
+  }
+
+  &:first-of-type {
+    margin-top: 0;
   }
 }
 
@@ -101,7 +96,6 @@ $dialog-top-padding: 3em;
   }
 }
 
-
 .flowchart-stem_left,
 .flowchart-stem_right {
   border: $border-offset solid $mid-blue;
@@ -133,11 +127,11 @@ $dialog-top-padding: 3em;
 
 .flowchart-stem_bottom_right {
   border: 1px solid $mid-blue;
-  width: 1px;
+  bottom: -52px;
   height: $stem-height;
   margin-bottom: ($stem-height * -1);
   position: absolute;
-  bottom: -46px;
+  width: 1px;
 
   right: calc(#{$triangle-padding-sm} + (#{$triangle-width} /2) - #{$border-offset});
 
@@ -146,17 +140,98 @@ $dialog-top-padding: 3em;
   }
 }
 
-.flowchart-stem_long {
-  height: $stem-height-long;
-  top: -1 * ($stem-height-long + $border-thickness);
+
+.flowchart-stem_bottom_right_long,
+.flowchart-stem_bottom_right_extra_long {
+  border: $border-offset solid $mid-blue;
+  height: $stem-height;
+  position: absolute;
 }
 
-.flowchart-stem_extra_long {
-  height: $stem-height-extra-long;
-  top: -1 * ($stem-height-extra-long + $border-thickness);
+.flowchart-stem_bottom_right_long {
+  height: 250px;
+  bottom: -300px;
+
+  @media only screen and (min-width: 500px) {
+    height: 200px;
+    bottom: -250px;
+  }
+
+  right: calc(#{$triangle-padding-sm} + (#{$triangle-width} /2) - #{$border-offset});
+
+  @include respond-to(small-up) {
+    right: calc(#{$triangle-padding} + (#{$triangle-width} /2) - #{$border-offset});
+  }
+}
+
+.flowchart-stem_bottom_right_extra_long {
+  height: 1965px;
+  right: 50%;
+  top: 0px;
+  z-index: -1;
+
+  @media only screen and (min-width: 380px) {
+    height: 1700px;
+  }
+
+  @media only screen and (min-width: 400px) {
+    height: 1500px;
+  }
+
+  @media only screen and (min-width: 420px) {
+    height: 1400px;
+  }
+
+  @media only screen and (min-width: 460px) {
+    height: 1300px;
+  }
+
+  @include respond-to(tiny-up) {
+    height: 1250px;
+  }
+
+  @media only screen and (min-width: 490px) {
+    height: 1200px;
+  }
+
+  @media only screen and (min-width: 540px) {
+    height: 1100px;
+  }
+
+  @media only screen and (min-width: 580px) {
+    height: 1000px;
+  }
+
+  @include respond-to(small-up) {
+    height: 990px;
+  }
+
+  @media only screen and (min-width: 650px) {
+    height: 970px;
+  }
+
+  @media only screen and (min-width: 690px) {
+    height: 870px;
+  }
+
+  @media only screen and (min-width: 700px) {
+    height: 870px;
+  }
+
+  @media only screen and (min-width: 710px) {
+    height: 800px;
+  }
 
   @include respond-to(medium-up) {
+    height: 1100px;
+  }
 
+  @media only screen and (min-width: 930px) {
+    height: 1000px;
+  }
+
+  @media only screen and (min-width: 1080px) {
+    height: 900px;
   }
 }
 
@@ -176,7 +251,6 @@ $dialog-top-padding: 3em;
 }
 
 
-
 @for $i from 1 to 12 {
   .flowchart-columns_#{$i} {
     @include span-columns($i);
@@ -192,11 +266,9 @@ $dialog-top-padding: 3em;
   @include omega();
 }
 
-
 .flowchart-text_large {
   @include font-size(1.2);
 }
-
 
 .flowchart-text_bold {
   font-weight: $weight-book;

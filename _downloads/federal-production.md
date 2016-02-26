@@ -15,10 +15,10 @@ permalink: /downloads/federal-production/
     <h1>Federal Production by Location</h1>
 
     <p class="case_studies_intro-para">
-    This dataset contains information on production on federal lands and waters. We have versions of these datasets available for both calendar year and fiscal year 2005-2014, and they are both accounting year data. The data is current as of July 11, 2015 for coal and hardrock production and August 25, 2015 for oil and gas    production.
+    This dataset contains information on production on federal lands and waters. We have versions of these datasets available for both calendar and fiscal years 2005-2014. The data is current as of July 11, 2015, for coal and hardrock production and August 25, 2015, for oil and gas production.
     </p>
 
-    <p class="downloads-download_links-intro">Download calendar year data:
+    <p class="downloads-download_links-intro">Download <strong>calendar</strong> year data:
       <ul class="downloads-download_links">
         <li><a href="{{site.baseurl}}/downloads/production_federal_lands_waters_CY2013_oil_gas_solids-2015-11-25.xlsx"><icon class="icon-cloud icon-padded"></icon>Full dataset (xlsx, 508 KB)</a></li>
         <li><a href="{{site.baseurl}}/data/offshore/production.tsv"><icon class="icon-cloud icon-padded"></icon>Offshore production by area (tsv)</a></li>
@@ -27,7 +27,7 @@ permalink: /downloads/federal-production/
       </ul>
     </p>
 
-    <p class="downloads-download_links-intro">Download fiscal year data:
+    <p class="downloads-download_links-intro">Download <strong>fiscal</strong> year data:
       <ul class="downloads-download_links">
         <li><a href="{{site.baseurl}}/downloads/federal_production_acct-year_FY05-14_2016-02-25.xlsx"><icon class="icon-cloud icon-padded"></icon>Full dataset (xlsx, 2.9 MB)</a></li>
       </ul>

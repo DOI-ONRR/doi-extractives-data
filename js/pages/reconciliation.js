@@ -8,32 +8,48 @@
   var companyList = root.select('#companies');
 
   var getter = eiti.data.getter;
+  var throttle = eiti.util.throttle;
   var grouper;
   var formatNumber = eiti.format.dollarsAndCents;
   var formatPercent = eiti.format.percent;
   var roundedPercent = d3.format('%.1');
   var REVENUE_TYPE_PREFIX = /^[A-Z]+(\/[A-Z]+)?\s+-\s+/;
 
+  var dialogWithExtension = document.querySelector('.flowchart-dialog.flowchart-columns_right');
+  var extension = document.querySelector('.flowchart-stem_bottom_right_extra_long');
+  var dialogBottom = document.querySelector('.flowchart-dialog_bottom');
+
+  function setExtHeight () {
+    var newHeight = dialogBottom.getBoundingClientRect().bottom -
+      dialogWithExtension.getBoundingClientRect().bottom;
+    extension.style.height = newHeight + 'px';
+  };
+
+  // initialize height of extension path
+  setExtHeight();
+
+  window.addEventListener('resize', throttle(setExtHeight, 150, window));
+
   var varianceKey = {
     'Royalties': {
       threshold: 1,
       floor: 100000,
-      name: 'ONRR royalties'
+      name: 'Royalties'
     },
     'Rents':  {
       threshold: 2,
       floor: 50000,
-      name: 'ONRR rents'
+      name: 'Rents'
     },
     'Bonus': {
       threshold: 2,
       floor: 100000,
-      name: 'ONRR bonuses'
+      name: 'Bonuses'
     },
     'Other Revenue': {
       threshold: 3,
       floor: 50000,
-      name: 'ONRR other revenue'
+      name: 'Other revenue'
     },
     'Offshore Inspection Fee': {
       threshold: 2,
@@ -43,17 +59,17 @@
     'ONRR Civil Penalties': {
       threshold: 1,
       floor: 1000,
-      name: 'ONRR civil penalties'
+      name: 'Civil penalties'
     },
     'Bonus & 1st Year Rental': {
       threshold: 2,
       floor: 10000,
-      name: 'BLM bonus & first year rentals'
+      name: 'BLM bonus and first year rentals'
     },
     'Permit Fees': {
       threshold: 3,
       floor: 10000,
-      name: 'BLM permit fees'
+      name: 'Permit fees'
     },
     'Renewables': {
       threshold: 'N/A',
@@ -109,9 +125,6 @@
       return data.filter(function(d) {
         return d.revenueType === type;
       });
-    })
-    .on('prefilter', function(key, data) {
-        updateRevenueTypeSelector(data);
     });
 
   var filters = root.selectAll('.filters [name]')
@@ -170,62 +183,8 @@
   }
 
   function render(data /*, state */) {
-    updateRevenueTypes(data);
     updateCompanyList(data);
     updateNameSearch();
-  }
-
-  function updateRevenueTypeSelector(data) {
-    var commodities = d3.nest()
-      .key(getter('revenueType'))
-      .entries(data)
-      .map(getter('key'))
-      .sort(d3.ascending);
-
-    var input = root.select('#type-selector');
-    var options = input.selectAll('option.value')
-      .data(commodities, identity);
-    options.enter().append('option')
-      .attr('class', 'value')
-      .attr('value', identity)
-      .text(function(name) {
-        return varianceKey[name].name;
-      });
-  }
-
-  function updateRevenueTypes(data) {
-
-    var types = d3.nest()
-      .key(getter('Type'))
-      .entries(data)
-      .map(function(data) {
-
-        var totalGov = d3.sum(data.values, getter('Government Reported'));
-
-        var totalCompany = d3.sum(data.values, getter('Company Reported'));
-        var variance = d3.median(data.values, getter('Variance Percent'));
-
-        var obj = {
-          name: data.key,
-          totalGov: totalGov,
-          totalCompany: totalCompany,
-          variance: variance,
-          types: grouper.entries(data.values)
-            .map(function(d) {
-              return {
-                value: d.values[0].value,
-                company: d.values[0].company,
-                variance: variance,
-                varianceDollars: d3.sum(data.values, getter('Variance Dollars'))
-              };
-            })
-        };
-        return obj;
-      });
-
-    var extent = d3.extent(types, getter('variance'));
-
-    revenueTypeList.call(renderTotals, types, extent);
   }
 
   function updateCompanyList(data) {
@@ -381,77 +340,6 @@
         return isMaterial(d)
           ? returnFootnote()
           : variance;
-      });
-  }
-
-  function renderTotals(selection, types, extent) {
-    var items = selection.selectAll('.subtype')
-      .data(types, getter('name'));
-
-    items.exit().remove();
-    items.enter().append('tr')
-      .attr('class', 'subtype')
-      .call(setupTotals);
-
-    items
-      .call(updateTotals, extent)
-      .sort(function(a, b) {
-        return d3.descending(a.variance, b.variance);
-      });
-  }
-
-  function setupTotals(selection) {
-    selection.append('td')
-      .attr('class', 'name narrow');
-    selection.append('td')
-      .attr('class', 'variance')
-    selection.append('td')
-      .attr('class', 'bar')
-      .append(function() {
-        // XXX this is a document.registerElement() workaround
-        return new EITIBar(); // jshint ignore:line
-      });
-
-    selection.select('.bar')
-      .append('span')
-      .attr('class','threshold');
-  }
-
-  function updateTotals(selection, extent) {
-
-    selection.select('.name')
-      .text(function(d) {
-        return varianceKey[d.name].name;
-      });
-
-    var bar = selection.select('eiti-bar')
-      .attr('value', function(d) {
-        return d.types[0].variance;
-      });
-
-    if (extent) {
-      bar
-        .attr('min', Math.min(0, extent[0]))
-        .attr('max', function(d) {
-          return varianceKey[d.name].threshold;
-        })
-        .style('width', function(d) {
-          return String(varianceKey[d.name].threshold).match(/N\/A/)
-            ? 0
-            : formatPercent(0.75 * varianceKey[d.name].threshold / 3);
-            // 0.75 is magic number to fit bars on mobile
-        })
-        .attr('class','material-variance');
-    }
-    selection.select('.variance')
-      .text(function(d) {
-        return formatPercent(d.types[0].variance / 100);
-      });
-    selection.select('.threshold')
-      .text(function(d) {
-        return String(varianceKey[d.name].threshold).match(/N\/A/)
-          ? varianceKey[d.name].threshold
-          : roundedPercent(varianceKey[d.name].threshold / 100);
       });
   }
 

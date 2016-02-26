@@ -14,24 +14,51 @@ permalink: /downloads/federal-production/
     </div>
     <h1>Federal Production by Location</h1>
 
-    <p class="case_studies_intro-para">This dataset contains information on production on federal lands and waters for calendar years 2005-2014. The data is current as of July 11, 2015 for coal and hardrock production and August 25, 2015 for Oil and Gas production. If you are looking for datasets organized by the U.S. government’s fiscal year, please visit <a href="http://statistics.onrr.gov/">statistics.onrr.gov</a>.</p>
+    <p class="case_studies_intro-para">
+    This dataset contains information on production on federal lands and waters
+    for calendar years 2005-2014. The data is current as of July 11, 2015 for
+    coal and hardrock production and August 25, 2015 for oil and gas
+    production.
+    </p>
 
     <p class="downloads-download_links-intro">Download calendar year data:
       <ul class="downloads-download_links">
-        <li><a href="{{site.baseurl}}/downloads/production_federal_lands_waters_CY2013_oil_gas_solids-2015-11-25.xlsx"><icon class="icon-cloud icon-padded"></icon>Full dataset (xlsx, 517 KB)</a></li>
-        <li><a href="{{site.baseurl}}/data/offshore/production.tsv"><icon class="icon-cloud icon-padded"></icon>Offshore dataset (tsv)</a></li>
-        <li><a href="{{site.baseurl}}/data/county/production.tsv"><icon class="icon-cloud icon-padded"></icon>Onshore dataset (tsv)</a></li>
+        <li><a href="{{site.baseurl}}/downloads/production_federal_lands_waters_CY2013_oil_gas_solids-2015-11-25.xlsx"><icon class="icon-cloud icon-padded"></icon>Full dataset (xlsx, 508 KB)</a></li>
+        <li><a href="{{site.baseurl}}/data/offshore/production.tsv"><icon class="icon-cloud icon-padded"></icon>Offshore production by area (tsv)</a></li>
+        <li><a href="{{site.baseurl}}/data/state/production.tsv"><icon class="icon-cloud icon-padded"></icon>Onshore production by state (tsv)</a></li>
+        <li><a href="{{site.baseurl}}/data/county/production.tsv"><icon class="icon-cloud icon-padded"></icon>Onshore production by county (tsv)</a></li>
       </ul>
     </p>
 
-    <p class="u-margin-top">We also have <a href="https://github.com/18F/doi-extractives-data/wiki/Data-Catalog#federal-production">notes on this data</a> from the web development team as they built the interactions on this site.</p>
+    <p class="case_studies_intro-para">
+    This dataset contains information on production on federal lands and waters
+    for the Federal government fiscal years 2005-2014. The data is current as
+    of July 11, 2015 for coal and hardrock production and August 25, 2015 for
+    oil and gas production.
+    </p>
+
+    <p class="downloads-download_links-intro">Download fiscal year data:
+      <ul class="downloads-download_links">
+        <li><a href="{{site.baseurl}}/downloads/federal_production_acct-year_FY05-14_2016-02-25.xlsx"><icon class="icon-cloud icon-padded"></icon>Full dataset (xlsx, 2.9 MB)</a></li>
+      </ul>
+    </p>
+
+    <p class="u-margin-top">
+    If you are looking for additional information on Federal production data
+    please visit the <a href="http://statistics.onrr.gov/">ONRR Statistical
+    Information Site</a>. We also have <a
+    href="https://github.com/18F/doi-extractives-data/wiki/Data-Catalog#federal-production">notes
+    on this data</a> from the web development team as they built the
+    interactions on this site.
+    </p>
 
     <h2 class="h3">Scope</h2>
     <p>This dataset includes natural resource production for U.S. federal lands and offshore areas. It does not include Indian lands, privately-owned lands, or U.S. state lands. The dataset currently include data tracked and managed by the Department of the Interior’s Office of Natural Resources Revenue (ONRR). The production data for Oil and Gas is collected on Form ONRR-4054 (Oil and Gas Operations Report). Coal and hardrock production is collected on Form ONRR-4430 (Solid Minerals Production and Royalty Report).</p>
 
     <h2 class="h3">Data Publication</h2>
 
-    <p>This dataset is updated six months after the end of the year. Fiscal year 2015 data will be published in March 2016 and calendar year 2015 data will be published in June 2016. </p>
+    <p>The Federal production datasets are updated annually in July for the
+    most recent completed fiscal and calendar year.</p>
 
     <h2 class="h3">Why was some solids data withheld?</h2>
 

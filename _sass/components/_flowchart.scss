@@ -60,8 +60,8 @@ $dialog-top-padding: 3.8rem;
 .flowchart-dialog_right:after {
   border-color: $mid-blue transparent transparent transparent;
   border-style: solid;
-  border-width: ( $triangle-width / 2 );
-  bottom: (-1 * $triangle-width );
+  border-width: ($triangle-width / 2);
+  bottom: (-1 * $triangle-width);
   content: '';
   height: 0;
   position: absolute;
@@ -137,9 +137,8 @@ $dialog-top-padding: 3.8rem;
   height: $stem-height;
   margin-bottom: ($stem-height * -1);
   position: absolute;
-  width: 1px;
-
   right: calc(#{$triangle-padding-sm} + (#{$triangle-width} /2) - #{$border-offset});
+  width: 1px;
 
   @include respond-to(small-up) {
     right: calc(#{$triangle-padding} + (#{$triangle-width} /2) - #{$border-offset});
@@ -176,7 +175,10 @@ $dialog-top-padding: 3.8rem;
   top: 0px;
   z-index: -1;
 
-  @media only screen and (min-width: 380px) { //380 -60
+  // This long string of media queries is a fallback
+  // for a no-js envrironment
+
+  @media only screen and (min-width: 380px) {
     height: 1700px;
   }
 
@@ -272,8 +274,9 @@ $dialog-top-padding: 3.8rem;
 }
 
 .flowchart-columns_right {
-  float: right;
   @include omega();
+
+  float: right;
 }
 
 .flowchart-text_large {

@@ -301,6 +301,36 @@
   // TODO: document
   eiti.util.classify = classify;
 
+  /**
+   * 'throttles' the execution of a funtion.
+   * will only call the function passed to throttle
+   * once every @threshold milliseconds
+   *
+   * @example
+   * window.addEventListener('resize', throttle(someFunction, 150, window));
+   */
+  eiti.util.throttle = function throttle(fn, threshhold, scope) {
+    threshhold || (threshhold = 250);
+    var last,
+        deferTimer;
+    return function () {
+      var context = scope || this;
+
+      var now = +new Date,
+          args = arguments;
+      if (last && now < last + threshhold) {
+        // hold on to it
+        clearTimeout(deferTimer);
+        deferTimer = setTimeout(function () {
+          last = now;
+          fn.apply(context, args);
+        }, threshhold);
+      } else {
+        last = now;
+        fn.apply(context, args);
+      }
+    };
+  }
 
   /**
    * Coerce a d3-style format string or function into a number

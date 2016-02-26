@@ -8,11 +8,27 @@
   var companyList = root.select('#companies');
 
   var getter = eiti.data.getter;
+  var throttle = eiti.util.throttle;
   var grouper;
   var formatNumber = eiti.format.dollarsAndCents;
   var formatPercent = eiti.format.percent;
   var roundedPercent = d3.format('%.1');
   var REVENUE_TYPE_PREFIX = /^[A-Z]+(\/[A-Z]+)?\s+-\s+/;
+
+  var dialogWithExtension = document.querySelector('.flowchart-dialog.flowchart-columns_right');
+  var extension = document.querySelector('.flowchart-stem_bottom_right_extra_long');
+  var dialogBottom = document.querySelector('.flowchart-dialog_bottom');
+
+  function setExtHeight () {
+    var newHeight = var dialogBottom.getBoundingClientRect().bottom -
+    var dialogWithExtension.getBoundingClientRect().bottom;
+    var extension.style.height = newHeight + 'px';
+  };
+
+  // initialize height of extension path
+  setExtHeight();
+
+  window.addEventListener('resize', throttle(setExtHeight, 150, window));
 
   var varianceKey = {
     'Royalties': {

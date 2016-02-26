@@ -1,7 +1,7 @@
 $triangle-width: 32px;
 $triangle-padding: 40px;
 $triangle-padding-sm: 6px;
-$stem-height: 12px;
+$stem-height: 13px;
 $border-thickness: 2px;
 $border-offset: ($border-thickness / 2);
 
@@ -40,10 +40,16 @@ $dialog-top-padding: 3.8rem;
   @include respond-to(medium-up) {
     padding: $base-padding;
   }
+}
 
-  &:first-of-type {
-    margin-top: 0;
+.flowchart-dialog.para-sm {
+  @include respond-to(small-up) {
+    font-size: 1em;
   }
+}
+
+.flowchart-dialog_top {
+  margin-top: 0;
 }
 
 .flowchart-dialog_transparent {
@@ -152,7 +158,7 @@ $dialog-top-padding: 3.8rem;
   height: 250px;
   bottom: -300px;
 
-  @media only screen and (min-width: 500px) {
+  @media only screen and (min-width: em(460)) {
     height: 200px;
     bottom: -250px;
   }
@@ -165,29 +171,33 @@ $dialog-top-padding: 3.8rem;
 }
 
 .flowchart-stem_bottom_right_extra_long {
-  height: 1965px;
+  height: 1600px;
   right: 50%;
   top: 0px;
   z-index: -1;
 
-  @media only screen and (min-width: 380px) {
+  @media only screen and (min-width: 380px) { //380 -60
     height: 1700px;
   }
 
   @media only screen and (min-width: 400px) {
-    height: 1500px;
+    height: 1450px;
   }
 
   @media only screen and (min-width: 420px) {
     height: 1400px;
   }
 
-  @media only screen and (min-width: 460px) {
+  @media only screen and (min-width: 430px) {
     height: 1300px;
   }
 
-  @include respond-to(tiny-up) {
+  @media only screen and (min-width: 450px) {
     height: 1250px;
+  }
+
+  @include respond-to(tiny-up) {
+    height: 1225px;
   }
 
   @media only screen and (min-width: 490px) {
@@ -226,7 +236,7 @@ $dialog-top-padding: 3.8rem;
     height: 1100px;
   }
 
-  @media only screen and (min-width: 930px) {
+  @media only screen and (min-width: 830px) {
     height: 1000px;
   }
 

@@ -20,9 +20,9 @@
   var dialogBottom = document.querySelector('.flowchart-dialog_bottom');
 
   function setExtHeight () {
-    var newHeight = var dialogBottom.getBoundingClientRect().bottom -
-    var dialogWithExtension.getBoundingClientRect().bottom;
-    var extension.style.height = newHeight + 'px';
+    var newHeight = dialogBottom.getBoundingClientRect().bottom -
+      dialogWithExtension.getBoundingClientRect().bottom;
+    extension.style.height = newHeight + 'px';
   };
 
   // initialize height of extension path

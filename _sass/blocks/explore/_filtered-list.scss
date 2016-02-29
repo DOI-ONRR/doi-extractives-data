@@ -1,0 +1,12 @@
+.filter-search {
+  border-color: $dark-gray;
+
+  @include respond-to(medium-up) {
+    width: 50%;
+  }
+}
+
+.filter-search_section,
+.filter-summary_title {
+  @include padded-in-mobile();
+}

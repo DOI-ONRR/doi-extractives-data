@@ -128,6 +128,3 @@ permalink: /how-it-works/process-overview/
 
 	</div>
 </section>
-
-<!-- Accordion -->
-<script src="{{ site.baseurl }}/js/components/accordion.js"></script>

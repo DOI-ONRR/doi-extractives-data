@@ -61,35 +61,3 @@
 .article_img-margin_bottom {
   margin-bottom: $base-padding;
 }
-
-.article_table {
-  border: none;
-  border-bottom: 1px solid $light-green;
-  margin-bottom: $base-padding-extra;
-
-  th {
-    border-bottom: 4px solid $light-green;
-    font-weight: $weight-book;
-    line-height: 1.2;
-    padding: $base-padding-lite;
-    text-align: left;
-    vertical-align: bottom;
-  }
-
-  td {
-    border: none;
-    border-top: 1px solid $light-green;
-    line-height: 1.4;
-    padding: $base-padding-lite;
-    padding-bottom: ($base-padding-lite * 1.7);
-  }
-
-  td p {
-    @include heading(para-md);
-  }
-
-  span {
-    font-weight: $weight-book;
-    line-height: 2;
-  }
-}

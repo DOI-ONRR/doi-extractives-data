@@ -1,0 +1,288 @@
+$triangle-width: 32px;
+$triangle-padding: 40px;
+$triangle-padding-sm: 6px;
+$stem-height: 13px;
+$border-thickness: 2px;
+$border-offset: ($border-thickness / 2);
+
+
+$dialog-top-padding: 3.8rem;
+
+@mixin center-of-column($column-number, $parent-columns, $direction) {
+  $column: ($column * 12 / $parent-columns);
+  #{$direction}: ($column * $column-number / 2);
+}
+
+.flowchart {
+  margin-bottom: $base-padding-extra;
+  padding-left: $base-padding;
+  padding-right: $base-padding;
+
+  @include respond-to(medium-up) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  ul {
+    margin: 0;
+  }
+}
+
+.flowchart-dialog {
+  background: $mid-blue;
+  border: $border-thickness solid $mid-blue;
+  border-radius: $base-border-radius;
+  margin-top: $dialog-top-padding;
+  padding: ($base-padding-lite * 2);
+  position: relative;
+  z-index: 5;
+
+  @include respond-to(medium-up) {
+    padding: $base-padding;
+  }
+}
+
+.flowchart-dialog.para-sm {
+  @include respond-to(small-up) {
+    font-size: 1em;
+  }
+}
+
+.flowchart-dialog_top {
+  margin-top: 0;
+}
+
+.flowchart-dialog_transparent {
+  background: transparent;
+}
+
+.flowchart-dialog_left:before,
+.flowchart-dialog_right:after {
+  border-color: $mid-blue transparent transparent transparent;
+  border-style: solid;
+  border-width: ($triangle-width / 2);
+  bottom: (-1 * $triangle-width);
+  content: '';
+  height: 0;
+  position: absolute;
+  width: 0;
+}
+
+.flowchart-dialog_left:before {
+  left: $triangle-padding;
+}
+
+.flowchart-dialog_right:after {
+  right: $triangle-padding-sm;
+
+  @include respond-to(small-up) {
+    right: $triangle-padding;
+  }
+}
+
+.flowchart-words_left,
+.flowchart-words_right {
+  bottom: (-1 * $triangle-width - 12px);
+  position: absolute;
+  text-align: center;
+  width: $triangle-width;
+
+  @include font-size(1.4);
+}
+
+.flowchart-words_left {
+  left: $triangle-padding;
+}
+
+.flowchart-words_right {
+  right: $triangle-padding-sm;
+
+  @include respond-to(small-up) {
+    right: $triangle-padding;
+  }
+}
+
+.flowchart-stem_left,
+.flowchart-stem_right {
+  border: $border-offset solid $mid-blue;
+  height: $stem-height;
+  position: absolute;
+  top: -1 * ($stem-height + $border-thickness);
+}
+
+.flowchart-stem_left {
+  left: calc(#{$triangle-padding} + (#{$triangle-width} /2) - #{$border-offset});
+}
+
+
+.flowchart-stem_right {
+  right: calc(#{$triangle-padding-sm} + (#{$triangle-width} /2) - #{$border-offset});
+
+  @include respond-to(small-up) {
+    right: calc(#{$triangle-padding} + (#{$triangle-width} /2) - #{$border-offset});
+  }
+}
+
+.flowchart-stem_left_offset_1 {
+  left: calc(#{$triangle-padding-sm} + (#{$triangle-width} /2) - #{$border-offset});
+
+  @include respond-to(small-up) {
+    left: calc(#{$triangle-padding} + (#{$triangle-width} /2) - #{$border-offset});
+  }
+}
+
+.flowchart-stem_bottom_right {
+  border: 1px solid $mid-blue;
+  bottom: -52px;
+  height: $stem-height;
+  margin-bottom: ($stem-height * -1);
+  position: absolute;
+  right: calc(#{$triangle-padding-sm} + (#{$triangle-width} /2) - #{$border-offset});
+  width: 1px;
+
+  @include respond-to(small-up) {
+    right: calc(#{$triangle-padding} + (#{$triangle-width} /2) - #{$border-offset});
+  }
+}
+
+
+.flowchart-stem_bottom_right_long,
+.flowchart-stem_bottom_right_extra_long {
+  border: $border-offset solid $mid-blue;
+  height: $stem-height;
+  position: absolute;
+}
+
+.flowchart-stem_bottom_right_long {
+  height: 250px;
+  bottom: -300px;
+
+  @media only screen and (min-width: em(460)) {
+    height: 200px;
+    bottom: -250px;
+  }
+
+  right: calc(#{$triangle-padding-sm} + (#{$triangle-width} /2) - #{$border-offset});
+
+  @include respond-to(small-up) {
+    right: calc(#{$triangle-padding} + (#{$triangle-width} /2) - #{$border-offset});
+  }
+}
+
+.flowchart-stem_bottom_right_extra_long {
+  height: 1600px;
+  right: 50%;
+  top: 0px;
+  z-index: -1;
+
+  // This long string of media queries is a fallback
+  // for a no-js envrironment
+
+  @media only screen and (min-width: 380px) {
+    height: 1700px;
+  }
+
+  @media only screen and (min-width: 400px) {
+    height: 1450px;
+  }
+
+  @media only screen and (min-width: 420px) {
+    height: 1400px;
+  }
+
+  @media only screen and (min-width: 430px) {
+    height: 1300px;
+  }
+
+  @media only screen and (min-width: 450px) {
+    height: 1250px;
+  }
+
+  @include respond-to(tiny-up) {
+    height: 1225px;
+  }
+
+  @media only screen and (min-width: 490px) {
+    height: 1200px;
+  }
+
+  @media only screen and (min-width: 540px) {
+    height: 1100px;
+  }
+
+  @media only screen and (min-width: 580px) {
+    height: 1000px;
+  }
+
+  @include respond-to(small-up) {
+    height: 990px;
+  }
+
+  @media only screen and (min-width: 650px) {
+    height: 970px;
+  }
+
+  @media only screen and (min-width: 690px) {
+    height: 870px;
+  }
+
+  @media only screen and (min-width: 700px) {
+    height: 870px;
+  }
+
+  @media only screen and (min-width: 710px) {
+    height: 800px;
+  }
+
+  @include respond-to(medium-up) {
+    height: 1100px;
+  }
+
+  @media only screen and (min-width: 830px) {
+    height: 1000px;
+  }
+
+  @media only screen and (min-width: 1080px) {
+    height: 900px;
+  }
+}
+
+.flowchart-no_top {
+  margin-top: $stem-height;
+}
+
+.flowchart-join_to_top {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  margin-top: 5px;
+}
+
+.flowchart-join_to_bottom {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+
+@for $i from 1 to 12 {
+  .flowchart-columns_#{$i} {
+    @include span-columns($i);
+  }
+}
+
+.flowchart-columns_left {
+  float: left;
+}
+
+.flowchart-columns_right {
+  @include omega();
+
+  float: right;
+}
+
+.flowchart-text_large {
+  @include font-size(1.2);
+}
+
+.flowchart-text_bold {
+  font-weight: $weight-book;
+}

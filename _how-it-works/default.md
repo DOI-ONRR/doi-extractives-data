@@ -24,7 +24,7 @@ permalink: /how-it-works/
   </div>
 </section>
 
-<section accordion class="container-outer landing-wrapper">
+<section accordion accordion-desktop="false" class="container-outer landing-wrapper">
   <section class="container">
     <h3 id="process" class="landing-section_category">The process</h3>
     <div class="container landing-section_open overview">
@@ -75,7 +75,7 @@ permalink: /how-it-works/
 
 	<section class="container">
 		<h3 id="natural-resources" class="landing-section_category">Natural resources</h3>
-		<div class="container landing-section" accordion-item accordion-open="true">
+		<div class="container landing-section" accordion-item accordion-open="false">
 			<h5 class="landing-heading"><a href="{{site.baseurl}}/how-it-works/ownership/">Ownership</a></h5>
 			<button class="accordion-button" accordion-button title="Toggle for ownership"></button>
 			<div class="accordion-content">
@@ -83,7 +83,7 @@ permalink: /how-it-works/
         <a href="{{site.baseurl}}/how-it-works/ownership/">Learn about land and resource ownership &#8594;</a></p>
 			</div>
 		</div>
-		<div class="container landing-section" accordion-item accordion-open="true">
+		<div class="container landing-section" accordion-item accordion-open="false">
 			<h5 class="landing-heading"><a href="{{site.baseurl}}/how-it-works/production/">Production</a></h5>
 			<button class="accordion-button" accordion-button title="Toggle for production"></button>
 			<div class="accordion-content">
@@ -91,7 +91,7 @@ permalink: /how-it-works/
         <a href="{{site.baseurl}}/how-it-works/production/">Learn about production &#8594;</a></p>
 			</div>
 		</div>
-		<div class="container landing-section" accordion-item accordion-open="true">
+		<div class="container landing-section" accordion-item accordion-open="false">
 			<h5 class="landing-heading"><a href="{{site.baseurl}}/how-it-works/revenues/">Revenues</a></h5>
 			<button class="accordion-button" accordion-button title="Toggle for revenues"></button>
 			<div class="accordion-content">
@@ -103,7 +103,7 @@ permalink: /how-it-works/
 
 	<section class="container">
 		<h3 id="laws-governance" class="landing-section_category">Laws and governance</h3>
-		<div class="container landing-section" accordion-item accordion-open="true">
+		<div class="container landing-section" accordion-item accordion-open="false">
 			<h5 class="landing-heading"><a href="{{site.baseurl}}/how-it-works/federal-laws/">Federal laws and regulations</a></h5>
 			<button class="accordion-button" accordion-button title="Toggle for federal laws"></button>
 			<div class="accordion-content">
@@ -111,7 +111,7 @@ permalink: /how-it-works/
         <a href="{{site.baseurl}}/how-it-works/federal-laws/">Learn about federal laws &#8594;</a></p>
 			</div>
 		</div>
-		<div class="container landing-section" accordion-item accordion-open="true">
+		<div class="container landing-section" accordion-item accordion-open="false">
 			<h5 class="landing-heading"><a href="{{site.baseurl}}/how-it-works/federal-reforms/">Federal reforms</a></h5>
 			<button class="accordion-button" accordion-button title="Toggle for federal reforms"></button>
 			<div class="accordion-content">
@@ -119,7 +119,7 @@ permalink: /how-it-works/
         <a href="{{site.baseurl}}/how-it-works/federal-reforms/">Learn about reforms &#8594;</a></p>
 			</div>
 		</div>
-		<div class="container landing-section" accordion-item accordion-open="true">
+		<div class="container landing-section" accordion-item accordion-open="false">
 			<h5 class="landing-heading"><a href="{{site.baseurl}}/how-it-works/state-laws-and-regulations/" id="state-laws-and-regulations">State laws and regulations</a></h5>
 			<button class="accordion-button" accordion-button title="Toggle for state laws and regulations"></button>
 			<div class="accordion-content">
@@ -127,7 +127,7 @@ permalink: /how-it-works/
         <a href="{{site.baseurl}}/how-it-works/state-laws-and-regulations/">Learn about state laws &#8594;</a></p>
 			</div>
 		</div>
-		<div class="container landing-section" accordion-item accordion-open="true">
+		<div class="container landing-section" accordion-item accordion-open="false">
 			<h5 class="landing-heading"><a href="{{site.baseurl}}/how-it-works/state-legal-fiscal-info/">Regulations in 18 states</a></h5>
 			<button class="accordion-button" accordion-button title="Toggle for regulations in 18 states"></button>
 			<div class="accordion-content">
@@ -135,7 +135,7 @@ permalink: /how-it-works/
         <a href="{{site.baseurl}}/how-it-works/state-legal-fiscal-info/">Learn about 18 states &#8594;</a></p>
 			</div>
 		</div>
-		<div class="container landing-section" accordion-item accordion-open="true">
+		<div class="container landing-section" accordion-item accordion-open="false">
 			<h5 class="landing-heading"><a href="{{site.baseurl}}/how-it-works/tribal-laws-and-regulations/">Tribal laws and regulations</a></h5>
 			<button class="accordion-button" accordion-button title="Toggle for tribal laws and regulations"></button>
 			<div class="accordion-content">
@@ -145,6 +145,3 @@ permalink: /how-it-works/
 		</div>
 	</section>
 </section>
-
-<!-- Accordion -->
-<script src="{{ site.baseurl }}/js/components/accordion.js"></script>

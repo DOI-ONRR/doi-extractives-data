@@ -29,7 +29,7 @@ permalink: /downloads/federal-production/
 
     <p class="downloads-download_links-intro">Download <strong>fiscal</strong> year data:
       <ul class="downloads-download_links">
-        <li><a href="{{site.baseurl}}/downloads/federal_production_acct-year_FY05-14_2016-02-25.xlsx"><icon class="icon-cloud icon-padded"></icon>Full dataset (xlsx, 2.9 MB)</a></li>
+        <li><a href="{{site.baseurl}}/downloads/federal_production_FY05-14_2016-02-25.xlsx"><icon class="icon-cloud icon-padded"></icon>Full dataset (xlsx, 2.9 MB)</a></li>
       </ul>
     </p>
 

@@ -2,11 +2,11 @@
 layout: default
 ---
 <section id="companies" data-year="{{ page.year }}" class="explore-subpage container container-margin">
-  <section class="revenues_subpage-nav container">
-    <div class="revenues_subpage-tabs">
+  <section class="explore-subpage-nav container">
+    <div class="explore-subpage-tabs">
       <ul>
         {% for year in site.company_revenue_years %}
-        <li class="revenues_subpage-tab{% if year == page.year %} active{% endif %}">
+        <li class="explore-subpage-tab{% if year == page.year %} active{% endif %}">
           <a href="{{ site.baseurl }}/explore/federal-revenue-by-company/{% if forloop.last %}{% else %}{{ year }}/{% endif %}">{{ year }}</a>
         </li>
         {% endfor %}

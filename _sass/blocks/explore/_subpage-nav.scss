@@ -37,16 +37,9 @@
 }
 
 @include respond-to(medium-up) {
-
   .explore-subpage-nav {
     @include shift(4);
     text-align: left;
-  }
-
-  // this shifts the first tab to the left so that the text aligns with the
-  // outer box, but only if it's not active
-  .explore-subpage-tab:first-child:not(.active) {
-    margin-left: -10px;
   }
 }
 

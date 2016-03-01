@@ -34,7 +34,13 @@ collections:
   downloads:
     output: true
     permalink: /downloads/:subpage/
+  federal-revenue-by-company:
+    output: true
+    permalink: /explore/federal-revenue-by-company/:path/
 
-company_revenue_years:
-  - 2013
-  - 2014
+defaults:
+  - scope:
+      path: ''
+      collection: company-data
+    values:
+      layout: federal-revenue-by-company

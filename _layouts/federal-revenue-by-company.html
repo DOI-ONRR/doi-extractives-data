@@ -5,9 +5,9 @@ layout: default
   <section class="explore-subpage-nav container">
     <div class="explore-subpage-tabs">
       <ul>
-        {% for year in site.company_revenue_years %}
-        <li class="explore-subpage-tab{% if year == page.year %} active{% endif %}">
-          <a href="{{ site.baseurl }}/explore/federal-revenue-by-company/{% if forloop.last %}{% else %}{{ year }}/{% endif %}">{{ year }}</a>
+        {% for doc in site.federal-revenue-by-company %}
+        <li class="explore-subpage-tab{% if doc.year == page.year %} active{% endif %}">
+          <a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.year }}</a>
         </li>
         {% endfor %}
       </ul>

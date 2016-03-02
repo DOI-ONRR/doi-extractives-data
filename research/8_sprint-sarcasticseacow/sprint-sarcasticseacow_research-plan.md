@@ -1,39 +1,25 @@
-# Sprint-SplashySunfish research plan
+# Sprint-SarcasticSeacow research plan
 
-
-## Goals / Questions
-Goals | Questions
-:----- | :---------
-Evaluate reconciliation page | What do people think this page is saying?
-Evaluate reconciliation page messaging | Do people see that reconciliation is not a problem in the US?
- | Do people understand that the variances were all explained?
-Evaluate general usability of visualization interactions | How do people interact with the maps, filters and options?
-Prioritize what to fix | What problems are most severe?
+## Goals
+For this round of research, we're zooming back out to a more general level of inquiry. We want insight into how people feel about transparency and dialogue in the U.S. natural resource revenues system so that we can understand how USEITI might fit into their already-existing mental models. We will be conducting interviews with participants in the states and counties that USEITI has identified as focus areas.
 
 
 ## Background
 
-We launched version one of our site last December, but didn't yet have a dataset about one of the core pieces of the international EITI process ('reconciliation') ready for view. It is a complex concept and a complex dataset about a concept that is not familiar to those outside the EITI process. We now have a prototype of a visualization using this data and we need to see if we're hitting the mark.
-
-Also, we want to use this opportunity to test our site's data visualizations in general, since they all use similar layouts and interactions.
+This sprint is a continuation of our [HaughtyHagfish sprint]((https://github.com/18F/doi-extractives-data/blob/research/research/sprint-hautyhagfish/sprint-hautyhagfish_research-plan.md)). It turned out that recruiting the right people to talk to took much longer than expected and so we didn't have enough data at the end of that original sprint to make any conclusions. Now, we've talked to enough of that match our intended audiences, in particular the journalist persona type, to be able to draw some insight into whether our site is meeting their needs or not. This will influence which features we choose to prioritize in the future.
 
 
 ## Methods
-* 20 - 30 min usability tests
+* 30 min interviews with people unfamiliar with USEITI who live in USEITI focus states and counties and meet one of the persona types we identified before we started building the site.
 * Notes, no recording
 * In-person and remote
 
 
-## Participants
-
-5 people unfamiliar with USEITI who live or grew up in USEITI focus states and counties. Specifically, Pima County, Arizona; Tucker County, West Virgina; St. Louis County, Minnesota; and Colorado.
-
-
 ## Script
 
-Script available [here](https://github.com/18F/doi-extractives-data/blob/research/research/sprint-splashysunfish/sprint-splashysunfish_interview-script.md).
+Script available [here](https://github.com/18F/doi-extractives-data/blob/research/research/sprint-hautyhagfish/sprint-hautyhagfish_interview-script.md).
 
 
 ## Test asset(s)
 
-The latest version of the reconciliation interaction.
+None.

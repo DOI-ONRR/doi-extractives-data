@@ -1,4 +1,4 @@
-# Sprint-SplashySunfish research results
+# Sprint-SarcasticSeacow research results
 
 ## Hypotheses tested
 

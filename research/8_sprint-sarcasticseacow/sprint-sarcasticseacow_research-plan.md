@@ -6,7 +6,7 @@ For this round of research, we're zooming back out to a more general level of in
 
 ## Background
 
-This sprint is a continuation of our [HaughtyHagfish sprint]((https://github.com/18F/doi-extractives-data/blob/research/research/sprint-hautyhagfish/sprint-hautyhagfish_research-plan.md)). It turned out that recruiting the right people to talk to took much longer than expected and so we didn't have enough data at the end of that original sprint to make any conclusions. Now, we've talked to enough of that match our intended audiences, in particular the journalist persona type, to be able to draw some insight into whether our site is meeting their needs or not. This will influence which features we choose to prioritize in the future.
+This sprint is a continuation of our [HaughtyHagfish sprint](https://github.com/18F/doi-extractives-data/blob/research/research/sprint-hautyhagfish/sprint-hautyhagfish_research-plan.md). It turned out that recruiting the right people to talk to took much longer than expected and so we didn't have enough data at the end of that original sprint to make any conclusions. Now, we've talked to enough of that match our intended audiences, in particular the journalist persona type, to be able to draw some insight into whether our site is meeting their needs or not. This will influence which features we choose to prioritize in the future.
 
 
 ## Methods

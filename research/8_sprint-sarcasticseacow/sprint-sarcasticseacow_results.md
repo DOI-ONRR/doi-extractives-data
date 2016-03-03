@@ -17,7 +17,7 @@ For this round of research, we zoomed back out to a more general level of inquir
 
 ### How do journalists find stories?
 
-None of the people was talked to knew about USEITI or our website, even though several, after looking at the site, said something to the effect of 'oh, this could have been useful for X story I did, if only I had known about it'. This means that our work is not being promoted in places that journalists usually find leads.
+None of the people we talked to knew about USEITI or our website, even though several, after looking at the site, said something to the effect of 'oh, this could have been useful for X story I did, if only I had known about it'. This means that our work is not being promoted in places that journalists usually find leads.
 
 Where do journalists find information then?
 
@@ -25,7 +25,7 @@ Where do journalists find information then?
 
 - _Northern Arizona University does media release emails. I also just have a contact with the person there who publishes it, and she told me that that report is coming out soon [which is how I knew about a story about uranium]. I sign up for Eureka alert, which has a good list of papers coming out, and that comes up daily. Then kinda environmental non-profits. They’re always sending out their news release blasts. ADEQ [Arizona Department of Environmental Quality] has stuff. EIA has emails, I’m on their list for wind and something else, I forget, I had to pare it down because I got too many emails from EIA._
 
-**Design Mandate:** We should focus outreach to journalists in the places that they are used to finding information. We likely need to consistently maintain outreach campaigns if we hope to be effective.
+**Design Mandate:** We should focus outreach to journalists in the places that they are used to finding information. We probably need to consistently maintain outreach campaigns to be effective.
 
 
 ### How do journalists decide if something is interesting and worth writing about?
@@ -120,7 +120,7 @@ People prefer using government sources of information because they perceive them
 
 - _Preferred sources are government sources, or something from a research institution. I’ll use company numbers if I can’t get it anywhere else._
 
-_Did I miss a “who we are” on the website? That is an interesting story! How all these groups came together to create this. The site seems very neutral. [this was prompted after our talk about the Sonoran Desert Conservation Plan -- it had a vision, but EITI somewhat intentionally doesn’t have an opinion]_
+- _Did I miss a “who we are” on the website? That is an interesting story! How all these groups came together to create this. The site seems very neutral. [this was prompted after our talk about the Sonoran Desert Conservation Plan -- it had a vision, but EITI somewhat intentionally doesn’t have an opinion]_
 
 **Design Mandate:** We decided early on to use government datasets and to make sure our design and content emphasized the collaborative and neutral nature of USEITI. This data further supports that choice. We could consider telling the MSG story in a more engaging way to build the USEITI (hopefully trusted!) brand.
 

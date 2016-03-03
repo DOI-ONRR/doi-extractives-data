@@ -35,11 +35,17 @@ permalink: /explore/
         <p class="landing-description">Revenue from extractive industries on federal lands and waters in fiscal year 2013 totaled about $13.4 billion, or 0.4% of total $3.4 trillion in revenue collected across the federal government. <a href="{{site.baseurl}}/explore/federal-revenue-by-location/">Explore revenue on federal lands and waters</a> from 2004 to 2013 by state, county, or offshore area.</p>
       </div>
     </div>
-    <div class="container-half landing-section" accordion-item accordion-open="false">
-      <h5 class="landing-heading"><a href="{{site.baseurl}}/explore/federal-revenue-by-company/">Federal revenue by company</a></h5>
+    <div class="container-half landing-section" accordion-item accordion-open="true">
+      <h5 class="landing-heading"><a href="{{site.baseurl}}/explore/federal-revenue-by-company/2015/">Federal revenue by company</a></h5>
       <button class="accordion-button" accordion-button title="Toggle for federal revenue by company"></button>
       <div class="accordion-content">
-        <p class="landing-description">In 2013, the federal government collected over $9.8 billion in royalties from resources extracted on federal lands. Some of the companies that paid the most include Chevron, Shell, BP, and Exxon Mobile. <a href="{{site.baseurl}}/explore/federal-revenue-by-company/">Explore revenues on federal lands and waters in 2013 by company</a> and revenue type.</p>
+        <p class="landing-description">In 2015, the federal government
+        collected over $6.1 billion in royalties from resources extracted on
+        federal lands. Some of the companies that paid the most include Shell,
+        Peabody Energy, Chevron, and BP. <a
+        href="{{site.baseurl}}/explore/federal-revenue-by-company/2015/">Explore
+        revenues on federal lands and waters in 2015 by company</a> and revenue
+        type.</p>
       </div>
     </div>
     <div class="container-half landing-section" accordion-item accordion-open="false">

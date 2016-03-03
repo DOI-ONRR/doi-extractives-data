@@ -34,3 +34,13 @@ collections:
   downloads:
     output: true
     permalink: /downloads/:subpage/
+  federal-revenue-by-company:
+    output: true
+    permalink: /explore/federal-revenue-by-company/:path/
+
+defaults:
+  - scope:
+      path: ''
+      collection: company-data
+    values:
+      layout: federal-revenue-by-company

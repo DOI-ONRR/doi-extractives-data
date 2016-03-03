@@ -9,7 +9,7 @@
 
   var getter = eiti.data.getter;
   var grouper;
-  var formatNumber = eiti.format.dollarsAndCents;
+  var formatNumber = eiti.format('$,.0f');
   var REVENUE_TYPE_PREFIX = /^[A-Z]+(\/[A-Z]+)?\s+-\s+/;
 
   var state = eiti.explore.stateManager()
@@ -21,7 +21,26 @@
   // buttons that expand and collapse other elements
   var filterToggle = root.select('button.toggle-filters');
 
-  var model = eiti.explore.model(eiti.data.path + 'company/revenue.tsv')
+  // FIXME: componentize these too
+  var filterParts = root.selectAll('a[data-key]');
+  filterParts.on('click', function(e, index) {
+    var key = filterParts[0][index].getAttribute('data-key');
+    if (key) {
+      root.select('.filters-wrapper').attr('aria-expanded', true);
+      filterToggle.attr('aria-expanded', true);
+      root.select('.filter-description_closed').attr('aria-expanded', true);
+      document.querySelector('#'+ key + '-selector').focus();
+    }
+    d3.event.preventDefault();
+  });
+
+  var year = root.attr('data-year');
+  if (!year) {
+    throw new Error('No year found in', root.node());
+  }
+  var dataUrl = eiti.data.path + 'company/revenue/' + year + '.tsv';
+
+  var model = eiti.explore.model(dataUrl)
     .transform(removeRevenueTypePrefix)
     .filter('commodity', function(data, commodity) {
       return data.filter(function(d) {

@@ -249,7 +249,7 @@
     items
       .call(updateRevenueItem, extent)
 
-    selection.each(function(d) {
+    selection.each(function() {
       d3.select(this)
         .selectAll('tr.subtype')
           .sort(withheldComparator('value'));

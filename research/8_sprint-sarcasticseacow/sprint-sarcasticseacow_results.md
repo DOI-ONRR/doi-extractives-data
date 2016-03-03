@@ -1,144 +1,145 @@
 # Sprint-SarcasticSeacow research results
 
+
 ## Hypotheses tested
 
-- What do people think this page is saying? (see below)
-- Do people see that reconciliation is not a problem in the US? YES!
-- Do people understand that the variances were all explained? NO!
-- How do people interact with the maps, filters and options? (see below)
-- What problems are most severe? (see below)
+For this round of research, we're zoomed back out to a more general level of inquiry. We wanted insight into how people feel about transparency and dialogue in the U.S. natural resource revenues system so that we can understand how USEITI might fit into their already-existing mental models. We did not test any specific hypotheses.
 
 
 ## Participants
 
-- 5 people unfamiliar with USEITI who live or grew up in USEITI focus states and counties. Specifically, Pima County, Arizona; Tucker County, West Virgina; St. Louis County, Minnesota; and Colorado.
+- 7 people unfamiliar with USEITI who match our intended audiences (personas) and live in areas with extractive resources. We interviewed one person twice because during the course of the first interview, we realized that they also fit into another category, and we wanted more time to ask about use cases specific to the second persona.
 
+- We talked to 4 people in Arizona, Wyoming and Alaska who work in journalism; 3 people in California, Arizona and Alaska who are expert data users; and 1 person who is a concerned citizen in a southern Illinois community that is impacted by mining. Since we only have talked to one person of our 'concerned citizen' persona type, we will save analysis of that until we talk to more people. These results will focus on the journalists and advanced data users.
 
-## What do people think this page is saying?
 
-People in general did not feel very comfortable on this page, but when pressed, were able to at a very high level report what the page is about.
+## Let's talk about journalists first
 
-- _I think this is showing the difference between government and company reported revenue._
+### How do journalists find stories?
 
-- _Ok, I guess this means that reconciliation refers to the difference between reported and received payments. [pause] ok._
+None of the people was talked to knew about USEITI or our website, even though several, after looking at the site, said something to the effect of 'oh, this could have been useful for X story I did, if only I had known about it'. This means that our work is not being promoted in places that journalists usually find leads.
 
-- _For aligning the costs and money that companies reported on Federal land versus what government is reporting and making sure that these are OK, and it’s out there in the open._
+Where do journalists find information then?
 
-But, people were also overwhelmed.
+- _I spend most of day hunting for news and subscribe to lots of listservs and watch Twitter and Facebook. I use Google Scholar to find new studies, and I’m plugged into Northern Arizona University and their public affairs and press, as well as several clearinghouse sites. I use a Eureka alert [a popular online media service] to gather press releases. Sometimes people call with tips, which makes my life way easier._
 
-- _Even I [a lawyer]...this is a lot of information that’s making me feel stupid._
+- _Northern Arizona University does media release emails. I also just have a contact with the person there who publishes it, and she told me that that report is coming out soon [which is how I knew about a story about uranium]. I sign up for Eureka alert, which has a good list of papers coming out, and that comes up daily. Then kinda environmental non-profits. They’re always sending out their news release blasts. ADEQ [Arizona Department of Environmental Quality] has stuff. EIA has emails, I’m on their list for wind and something else, I forget, I had to pare it down because I got too many emails from EIA._
 
 
-## Do people see that reconciliation is not a problem in the US?
+### How do journalists decide if something is interesting?
 
-Yes! The summary chart, and scrolling through the by-company data where mostly percentages are close to zero, and the nice words in the intro combined to make this clear to all participants.
+Journalists are definitely looking for stories that have local impact, but often also are interested in connecting local issues to our national story.
 
-- _Actually, most people are honest about what they report._
+- _There are standards for that — news spots have to be timely and local (I'm a science reporter, so I can stretch a little...but it has to be at least interesting to local folks)._
 
-- _In looking down the list, I see that most of the time, there’s not a problem._
+- _Definitely we want to serve our local audience, but the reality is that there is a finite audience in Wyoming. We’ve got a half million people in the whole state. So one of the goals is do content that is appealing beyond the state. Something of interest to those not in Wyoming but has some sort of infatuation for something with the west. Our things may or may not confirm that._
 
-- _So, overall, I think what I’m supposed to get out of this is that the report is very accurate but there are some individual companies that have large discrepancies._
+- _One of the fun parts about working in Alaska is that data reporting is still kinda new. We’re just getting to the point where we can do this. The documentation doesn’t go that far back, so that in-depth analysis is still nascent. Alaska is the state that makes the US an arctic nation, but it gets cut off the map and dropped from stories all the time. I think there’s a ton of untapped potential._
 
-That last quote leads us to our next question...
 
+### What data is needed?
 
-## Do people understand that the variances were all explained?
+Across the board, people want long-term data to spot trends. If there is no long-term data, then even more contextual information is needed to understand what a single data point means.
 
-**Nope nope nope, not yet.** People reacted very strongly to the companies who had highlighted material variance numbers, even after we changed the color from red to bold. Note: we don't have footnote text done yet that explains the variances. Maybe this will help, but I expect that we're going to more than just those notes because participants had strong assumptions about this part of the data. For example, they assumed that if the gov and company numbers differed, it was because a company had been 'bad' and they needed to pay the government, when really we're just talking about discrepancies in accounting.
+This also speaks to the previous question about deciding what's interesting. Even those journalists that said they were mostly interested in local news still searched for national data to put their local news stories in context.
 
-- _[Gets to a company that has a red number] Chevron! Tsk tsk. Apparently only Chevron sucks. Ooooo. [Continues scrolling, finds more red] 220% difference?! You guys need to pay up!_
+- _I used the Energy Information Administration (EIA) website — looking for info about whether nuclear power plants were on the rise nationally and all over the world. That was tricky to find, and I wound up having to pull things into a spreadsheet and play with it. Turned out the trend WASN’T really true._
 
-- _Chevron! OOOOO! Now we’re getting to the good stuff. Pay it, Chevron! [continues looking through data] Exxon, jeez louise! [laughing]_
+- _I’m usually trying to find numbers to put it in context. So how does this wind farm compare to generation state-wide? What is the status of the wind industry across the nation? I was looking at numbers and thinking about how can I put this local event or place or whatever into a broader picture._
 
-- _In looking down the list, I see that most of the time, there’s not a problem. But sometimes there’s a big gap, and I want to find those. [Participant wanted a way to filter to the 'problem' companies]_
+- _I feel like the long-term data is more important. How the numbers change over time. Long-term comparisons. You can’t really notice stories without seeing how things change over time. It’s harder on the short term. [Pause] Let me rephrase. If you’re looking at one kind of data, like financial data, you need to look at it over time. If you’re looking at a short time frame, you need context so you can learn something._
 
-Only one participant noticed that one of the discrepancies included a negative number, and so mused about that, yet still wasn't able to feel confident in what was going on.
 
-- _Oh -- hold on -- here’s one that’s like 50% off, but it’s negative [The company side shows in parentheses]. Huh. [thinking] So this must mean that it’s not always the company that owes money to the government? Wha -- so the, um, government has to pay them back? I’m not sure about that._
+### How do people want to use our data? What were they trying to do, and what did they expect?
 
-It seemed like even though people seemed to understand the words "material variance" when they read it in the intro paragraph and clicked on the glossary definition, the use of that concept in the summary chart and company listings is one mental leap too far; we're not connecting the dots enough for folks. In particular, our attempt to use material variance in the summary chart was not well understood.
+People generally wanted to easily search for the specific state or county that they are interested in. They didn't want to use our search feature, however. They tended to scan the website, get to a block of information that might be relevant, and use control-F to try to find the term they're looking for. They tended to want data or information in big pieces because they felt that this would make things easier easier.
 
-- _Not knowing anything about this -- [I go through the page and see] oh, something material, something is bolded, that’s what is important and what I should look at._
+- _I guess with energy though -- the terms are a struggle for me. It’s just always and kind of… and how to compare data, and making sure I’m comparing apples to apples. I guess it’s always helpful to be able to see visuals to get a general sense, and then be able to see the data. *I need to be able to download the data and control-F Coconino County because I’m trying to find local.*_
 
-- _Kinda the meta question is -- these material variances -- should I think of that as an ethical question? Am I supposed to think this is this sloppy bookkeeping? Citizenship-wise, I don't see what I should make of these big variances._
+- _Honestly, because we’re always so pressed for time, reading through tons of text is bad. I want to be able to keyword search and skip to exactly what I need. I mean, I can skim, but that takes a while. Big PDFs that aren’t searchable, that’s terrible. Anything where I can’t trace back the data and do my own back-checking or manipulate it on my own is annoying._
 
+- _It doesn’t really matter what file type is there, as long as I can download it and get to it._
 
-## Usability issues with the data visualization interactions
+-	_The ability to download everything [in one file] is more useful than having to download several files to make everything work._
 
-### Issues on all data viz pages
 
-- Participants expected the underlined summary sentence words to open the glossary, likely because the dashed underline motif there is similar to the one we use for the glossary, and they didn't understand the revenue type and commodity words. It seemed like a hope for a lifeline on those difficult acronyms and words. At the very least, those underlined words need to close the filters (right now, you can click to open the filters but not click to close even though they still look clickable)
+### What data/information would be useful?
 
-  - _[Clicks Filter] Oh. [Pause] [Clicks revenue type drop-down]. Yeah, I don’t know what these are. but I could click on this to find out [tries to click on underlined word for definition, but it doesn’t do anything, participant looks deflated]._
+People generally felt that basic revenue information was already available elsewhere and not particularly interesting or value-add. They were excited about the possibility of connected contextual information, for example, clear explanations of relevant processes and links to further information and who they could contact for more information. We do have some of this already on the site, but the current structure doesn't link related pieces of information together across sections. In addition, people were interested in lease terms, and who to contact (ie, a journalistic source) for more information.
 
-- Lists that are not in alphabetical order should be. This includes the company list on the reconciliation page and the drop-down filter menus, for example, the commodity menu under 'hardrock minerals'. [#1256](https://github.com/18F/doi-extractives-data/issues/1256)
+Note: these responses came up in general conversation about energy reporting and data in the US. To a large extent, the participants didn't know what was available on the site. These responses reflect what they hope based on what they need to do their work.
 
-- People don't know how to clear the filters. [#924](https://github.com/18F/doi-extractives-data/issues/924)
+- _There’s huge concern about native rights, subsistence rights, access, scope, — what’s most important is often about the impact on the people, as much as about the ownership/money. Protected impacts, and scope, the stories tend to focus around that rather than revenue._
 
-- People don't know how to close the filters. We might consider making the filters close if you click anywhere outside the blue area. [#1258](https://github.com/18F/doi-extractives-data/issues/1258)
+- _The one thing that is important, working as a journalist, that other data beyond revenue/financial is really important to the stories — transparency around contracts, lease terms, terms/commitments for the company and government. It’s that other data beyond revenues, obligations on the government and on the companies. A clear picture on what things are supposed to happen and when._
 
-- People seem to want to 'dive into the counties' or whatever lowest-level information we have. For example, once they've filtered to a state, and it is displaying counties on the bar chart, they don't necessarily know that they might filter/dive into this data by playing with the filters. They say things like "hmm, I wish I knew more about this". Potential solution: clicking on a county name in the bar chart opens the filters? [#1257](https://github.com/18F/doi-extractives-data/issues/1257)
+- _Right now people use FOIA, and try to track things down through BLM, Interior, BOEM, a wonderfully complex nest of international and national websites. Not clear where things are._
 
-- People do not like seeing words they don't understand or acronyms in the filter options.
+- _One thing that’s really helpful to me on the front end is if a site leads me to a source, i.e. a list of mines in my area or plants in my area; this helps me find who to call and talk to for the story._
 
-  - _Let’s look at oil and gas [chooses that, sees the next drop-down appear]. Then -- NGL? Natural...gas….um….nevermind. [chooses something else]_
+- _Disbursement data would be super interesting. And also useful. I know the details of federal laws, but I don’t necessarily remember it off the top of my head all the time. It would be nice to have someplace easy to go to to understand, like, how LWCF gets appropriated but not allocated every year._
 
-- BUG: the secondary commodity list doesn’t reset when after you’ve chosen a state, and after you’ve chosen, say, hardrock and you get a long list in the secondary commodity dropdown. At this point, if you go back and change the first commodity to coal, you still get the hardrock dropdown. Maybe [#1213](https://github.com/18F/doi-extractives-data/issues/1213)
 
-- There's no indication of 'the combo of filters you've selected is not valid'. ie, if you’ve chosen a combination of filters that does not have data, there is nothing that really shows that this is the case and the user is confused. For example, we had a case where because of order the participant entered the filters, she never noticed the trend charts over the years. Then when she selected things that reduced those to zero (ie, no data), she couldn’t figure out why nothing seemed to be showing up. She kept clicking on different years to change that filter when the real problem was that she needed to pick a different commodity because the issue was that State X didn't produce Commodity Y. [#1022](https://github.com/18F/doi-extractives-data/issues/1022)
 
+Where to go?
 
+_I guess the hardest part is not knowing what resources to go to. Once you start covering a topic you get a good idea of where to go to. If, for example, I wanted royalties information, that’s the annoying part. Who do I call? Where is it? Maybe after two hours of work, I figure out it could have been done in five minutes._
 
-### Issues on the reconciliation page specifically
 
-Almost everyone commented on the first line of data on the summary chart -- the fact that it says "ONRR" and they don't know what that is. It seems to put a bad taste in everyone's mouth. [#1253](https://github.com/18F/doi-extractives-data/issues/1253)
 
-- _Ummm -- the first place my eyes go is to the charts here, they draw me in, but I don’t understand what’s going on. I’m reading the title of the chart, Median …, I don’t really know what that means. Then I’m looking down at ONRR, and I don’t know what that means._
+### Across the board, people prefer government sources of information
 
-- _This would be really cool if this had one of those glossary plugins so I could hover and see what ONRR is. All the acronyms._
+People prefer using government sources of information because they perceive them to be more trustworthy.
 
-- _I think I don’t know what ONRR is so I think this is for insiders._
+- _It was difficult to find specifics on the Arizona mines. I was trying to track down whether certain mines were open or closed, or temporarily closed. I never found that from an ‘outside, unbiased source.’ I had to rely on industry information._
 
-- _[Finds the filters] Oh! Filters! [YAY] Oh. [sad] [The only thing here is] these words I don't understand again._
+- _I usually try to go to Arizona government sources because I can’t necessarily trust industry or nonprofit data. I usually use state or local sources. I only occasionally need national data._
 
-The summary chart was hit-and-miss. In particular, no one was able to figure out what we were trying to communicate with the material variances on the right of the intro chart. [#1252](https://github.com/18F/doi-extractives-data/issues/1252)
+- _I do need to find law/policy regularly as background info. Today I’m working on a spot that involves the 1971 Wild Horse and Burro Act. Usually easy to find the actual language of the legislation, but harder to find follow-up reports or data. It’s usually out there, but just a matter of whether the research has been done._
 
-- _[Referring to the summary bars] I guess this means that this is the direction of the discrepancy, but I don't really know._
+_Preferred sources are government sources, or something from a research institution. I’ll use company numbers if I can’t get it anywhere else._
 
-- _So now I have a sense of what the percentages [in the chart] mean [after reading the intro paragraphs]. But what are these? [the 1%, 2%, 3%] They line up, so I guess these are tick marks -- it looks like -- I don’t know. [pause] I’m gonna start scrolling._
 
-- _I’m not entirely sure what’s going on with the bar charts. This part is clear -- I get that the bar goes with the 1%, but these tick marks -- these are separate? A different column? Oh, wait. These are all one chart. Something about these threw me off. It wasn’t clear that those marks are part of the bar._
+### What we're doing is important
 
-- _[Looking at the tick marks] I wonder why the threshold is considered different for different types?_
+People really appreciate what we're trying to do, and feel that it has and will have a positive impact on their work, and on the lives of people in their communities.
 
-Searching by company name didn't resonate with participants. Instead, they wanted to search by industry or location. This was either because they didn't know enough about the companies to know them by name, or because they were savvy enough to know that companies buy and sell each other a lot and often change names. [#1255](https://github.com/18F/doi-extractives-data/issues/1255)
+- _We have two dedicated energy reporters on staff. We only have seven full-time reporters in the new room, so that’s big deal. Two of them focus on energy._
 
-- _[Tries to search for a company] Oh gosh, I can't remember the name of the taconite companies [near me], and they keep renaming themselves anyways [implying that even if I did, searching by name wouldn’t be very useful]. It would be cool if I could search by industry, since I know there's an industry by me, but I can't find my personal interest here._
+- _I don’t think there’s any such thing as too much information about these industries. Even if it's just a journalistic resource, with such a large amount of information that it needs journalistic interpretation, that would be very important._
 
-- _I also don’t know what these companies do. ["I don't know company names, but I know what's being mined near me"]_
+- _The more information [we have], the better we can wrap our heads around the changes [that will be coming because of moving away from fossil fuels]. Hopefully, get ahead of the changes instead of being so reactive. Oil is up! Get the party hats! Hopefully, information in the right hands would lead to more proactive approach. How do we adapt to it changing? These are critical questions to the livelihood of the state._
 
-- _Oh my gosh, this is [Company X]. They’re evil. They would keep changing names and buying other companies._
+- _I spent like two hours this weekend downloading all the state spending data off the website, because they’re all in PDF, so I have a fun time ahead of me. What can I do to help? I want to help anyone who’s trying to make data more available._
 
-- _Oh! [finds the option to sort by tax] By taxes, does this mean taxes to federal? local? I want to know what's coming to my county, and if I'm getting the amount they should._
+- _Overall I think this is an interesting site and I would want to spend more time on it. It would at least be a starting point to get into the data or revenues without the need to FOIA._
 
-Directionality. Participants weren't always clear on who was making the money. This is a problem common to many of our datasets. [#1254](https://github.com/18F/doi-extractives-data/issues/1254)
+- _Yes [this is useful]! If you ask our folks here in Arizona, we’d say that we must be a top revenue-generator for the country [because of our copper mines]. But when you go on the site, we don’t even register because of the 1872 Mining Law, but I mean even rock salt is higher than us [at providing federal revenue]!_
 
-- _Ooo, they’re making so much fucking money! [referring to the top entires on reconciliation, when really those numbers are amounts paid to government]_
+- _The labor statistics are also interesting. I mean, I guess it was a coincidence, but the EITI stuff came out at the same time as Sierrita announced that they’d have to lay off workers because of the downturn in the market. This could not have been on the site, since the county case study data is a few years old. This shows how hard it is to find this information in the counties, with each one on a different system, not to mention the states, too. It’s so hard to pull all this together!_
 
 
-## Usability issues on the site in general
 
-There are several bugs and usability issues that need to be addressed.
+_Did I miss a “who we are” on the website? That is an interesting story! How all these groups came together to create this. The site seems very neutral. [this was prompted after our talk about the SDCP -- it had a vision, but EITI somewhat intentionally doesn’t have an opinion]_
 
-- When the user clicks on a glossary term, it should open the glossary and the term should be open. This is a bug that was introduced lately and is issued in [#1251](https://github.com/18F/doi-extractives-data/issues/1251).
+## Sharing informatiom
 
-- Clicking a glossary term again should close the glossary. [#819](https://github.com/18F/doi-extractives-data/issues/819)
+_Also, the site didn’t print well. Lots of white space, not as impactful. I went to print this so I could send it to our board in the way that we usually send emails (attachments with more information). I would have liked the list of state rankings and amount of revenue per state. And the case study. Since it didn’t work, we provided the link, but I’m not sure anyone clicked on it. Our board members aren’t going to go surfing the internet. Data people, sure._
 
-- Almost everyone tries to click on a state from the middle-of-homepage graphic as their first exploration into our data. This sends them to the [federal revenue by location](https://useiti.doi.gov/explore/federal-revenue-by-location/) dataset and they don't know that there are more datasets available. Also, they are surprised when clicking on a state from the homepage doesn't send them to information on that state specifically. [#1259](https://github.com/18F/doi-extractives-data/issues/1259)
 
-- Very few people scroll down on our sub-page landing pages unless they have large computer screens. 4 out of 5 of our testing group did not have screens big enough to notice that they should scroll down. So, even if they, for example, make it to our explore data landing page, they don't see the full breadth of information available.
+## Advanced data users
 
-- No one noticed the drop-down on the case studies page that navigates through the 12 case studies. They skimmed over the overview page and that was it.
+_-	“This is for reported revenue? For companies based on government? That’s interesting and useful!”
+-	“Usually this isn’t the kind of thing that’s easy to find.”
+-	“We’d usually have to dig for numbers and verify them. This is great that they’re being highlighted where they’re different.”_
+
+_-	“I feel like Alaska is more aware of this sort of thing. People know companies, how they operate.”_
+
+## What do people want to know?
+
+_In general, I literally spent like 10 minute on this, I wanted to know where the revenue comes in Coconino County. I’d be sweet if -- maybe I didn’t click the right spot -- I’d like to know what industry that revenue is coming from in my county. And how Coconino County compares to other counties. It sounded like the site ranked states, but could counties be ranked, too? And is there a way to follow that money to county coffers? Or is there a way to compare costs to counties to the revenue? What sort of impacts these counties have? Revenues coming in versus how much the county estimated they would spend. Because that’s where the interesting things are, right? Is the county getting a benefit for the spend._
+
+
 
 
 ## What problems were most severe?

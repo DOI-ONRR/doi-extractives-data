@@ -10,7 +10,7 @@
   var getter = eiti.data.getter;
   var throttle = eiti.util.throttle;
   var grouper;
-  var formatNumber = eiti.format.dollarsAndCents;
+  var formatNumber = eiti.format.commaSeparatedDollars;
   var formatPercent = eiti.format.percent;
   var roundedPercent = d3.format('%.1');
   var REVENUE_TYPE_PREFIX = /^[A-Z]+(\/[A-Z]+)?\s+-\s+/;

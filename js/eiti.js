@@ -449,6 +449,21 @@
   );
 
   /**
+   * Produces dollar strings with thousands separators
+   * e.g. `$1,234,567`.
+   *
+   * @name eiti.format.commaSeparatedDollars
+   * @function
+   *
+   * @param {Number} num
+   * @return {String}
+   */
+  eiti.format.commaSeparatedDollars = eiti.format.transform(
+    ',',
+    eiti.format.transformDollars
+  );
+
+  /**
    * Produces dollar strings with thousands separators and 2-decimal
    * cents, e.g. `$1,234,567.89`.
    *

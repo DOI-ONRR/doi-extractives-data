@@ -9,7 +9,7 @@
 
   var getter = eiti.data.getter;
   var grouper;
-  var formatNumber = eiti.format('$,.0f');
+  var formatNumber = eiti.format.commaSeparatedDollars;
   var REVENUE_TYPE_PREFIX = /^[A-Z]+(\/[A-Z]+)?\s+-\s+/;
 
   var state = eiti.explore.stateManager()

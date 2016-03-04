@@ -33,10 +33,6 @@
   margin: 0;
   width: 86%;
 
-  // @include respond-to(tiny-up) {
-  //   @include heading(para-md);
-  // }
-
   .color-swatch {
     display: inline-block;
     height: 0.7em;
@@ -60,6 +56,10 @@
     text-align: left;
   }
 
+  &.exception thead .subregion-name {
+    min-width: initial;
+  }
+
   td.value,
   th.value {
     text-align: right;
@@ -80,6 +80,8 @@
       min-width: 200px;
       padding: 0;
       padding-left: ($base-padding * 0.9);
+
+
     }
   }
 

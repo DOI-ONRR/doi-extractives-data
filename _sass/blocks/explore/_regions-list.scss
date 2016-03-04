@@ -65,6 +65,11 @@
     text-align: right;
   }
 
+  .value.subtotal,
+  .subtotal-label {
+    font-weight: $weight-book;
+  }
+
   thead {
     background: none;
     border: 0;

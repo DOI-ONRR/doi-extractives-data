@@ -246,14 +246,36 @@
   @include respond-to(medium-up) {
     display: none;
   }
+
+
 }
 
 .filter-search {
   border-color: $dark-gray;
-  padding-left: $base-padding;
-  padding-right: $base-padding;
+  padding-left: $base-padding-lite;
+  padding-right: $base-padding-lite;
 
   @include respond-to(medium-up) {
     width: 50%;
   }
+
+  &.filter-search_embed {
+    display: none;
+
+    @include respond-to(medium-up) {
+      display: block;
+      margin-bottom: ($base-padding-lite * 2);
+      width: 100%;
+    }
+  }
 }
+
+.filter-search_above {
+  display: block;
+
+  @include respond-to(medium-up) {
+    display: none;
+  }
+}
+
+

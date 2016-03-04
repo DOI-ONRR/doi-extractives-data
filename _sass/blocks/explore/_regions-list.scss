@@ -107,6 +107,10 @@
         vertical-align: middle;
         width: 35%;
       }
+
+      &.no_padding {
+        padding-left: 0;
+      }
     }
     .variance,
     .centered {

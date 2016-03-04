@@ -459,7 +459,7 @@
    * @return {String}
    */
   eiti.format.commaSeparatedDollars = eiti.format.transform(
-    ',',
+    ',.0f',
     eiti.format.transformDollars
   );
 

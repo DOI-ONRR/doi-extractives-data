@@ -7,10 +7,21 @@
   var revenueTypeList = root.select('#revenue-types');
   var companyList = root.select('#companies');
 
+  var WITHHELD = 'Withheld';
+
   var getter = eiti.data.getter;
   var grouper;
-  var formatNumber = eiti.format('$,.0f');
+  var formatDollars = eiti.format('$,.0f');
+  var formatNumber = function(n) {
+    return n === WITHHELD ? n : formatDollars(n);
+  };
   var REVENUE_TYPE_PREFIX = /^[A-Z]+(\/[A-Z]+)?\s+-\s+/;
+
+  var sumRevenue = function(data) {
+    return d3.sum(data.filter(function(d) {
+      return d.Revenue !== WITHHELD;
+    }), getter('Revenue'));
+  };
 
   var state = eiti.explore.stateManager()
     .on('change', update);
@@ -68,6 +79,22 @@
     .on('change', filterChange);
 
   var initialState = hash.read();
+  var outerKey = 'Commodity';
+  var innerKey = 'revenueType';
+
+  var withheldComparator = function(key) {
+    var get = getter(key);
+    return function(a, b) {
+      var aa = get(a);
+      var bb = get(b);
+      if (aa === WITHHELD) {
+        return 1;
+      } else if (bb === WITHHELD) {
+        return -1;
+      }
+      return d3.descending(+aa, +bb);
+    };
+  };
 
   state.init(initialState);
 
@@ -78,19 +105,17 @@
     updateFilterDescription(state);
 
     grouper = d3.nest()
-      .rollup(function(d) {
-        return d3.sum(d, getter('Revenue'));
-      })
-      .sortValues(function(a, b) {
-        return d3.descending(+a.Revenue, +b.Revenue);
-      });
+      .rollup(sumRevenue)
+      .sortValues(withheldComparator('Revenue'));
 
     var hasCommodity = !!query.commodity;
     var hasType = !!query.type;
     if (hasType && !hasCommodity) {
-      grouper.key(getter('Commodity'));
+      outerKey = 'revenueType';
+      grouper.key(getter(innerKey = 'Commodity'));
     } else {
-      grouper.key(getter('revenueType'));
+      outerKey = 'Commodity';
+      grouper.key(getter(innerKey = 'revenueType'));
     }
 
     model.load(state, function(error, data) {
@@ -164,23 +189,16 @@
       .key(getter('Company'))
       .entries(data)
       .map(function(d) {
-        var total = d3.sum(d.values, getter('Revenue'));
+        var total = sumRevenue(d.values);
         return {
           name: d.key,
           total: total,
-          types: grouper.entries(d.values)
-            .map(function(d) {
-              return {
-                name: d.key,
-                value: d.values
-              };
-            })
-            /*
-            .concat([{
-              name: 'Total',
-              value: total
-            }])
-            */
+          types: d.values.map(function(d) {
+            return {
+              name: d[innerKey],
+              value: d.Revenue
+            };
+          })
         };
       });
 
@@ -230,9 +248,12 @@
 
     items
       .call(updateRevenueItem, extent)
-      .sort(function(a, b) {
-        return d3.descending(a.value, b.value);
-      });
+
+    selection.each(function() {
+      d3.select(this)
+        .selectAll('tr.subtype')
+          .sort(withheldComparator('value'));
+    });
   }
 
   function updateNameSearch() {

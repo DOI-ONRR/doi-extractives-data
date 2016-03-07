@@ -27,7 +27,7 @@ permalink: /downloads/federal-revenue-by-company/
         <li><a href="{{site.baseurl}}/downloads/federal_revenue_by_company_CY2013-CY2015_2016-03-04.xlsx"><icon class="icon-cloud icon-padded"></icon>
         Full dataset (xlsx, 128 KB)</a></li>
         {% for doc in site.federal-revenue-by-company %}
-        <li><a href="{{ site.baseurl }}/data/company/{{ doc.year }}.tsv"><icon class="icon-cloud icon-padded"></icon>
+        <li><a href="{{ site.baseurl }}/data/company/revenue/{{ doc.year }}.tsv"><icon class="icon-cloud icon-padded"></icon>
         {{ doc.year }} dataset (tsv)</a></li>
         {% endfor %}
       </ul>

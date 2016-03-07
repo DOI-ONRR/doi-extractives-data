@@ -30,12 +30,10 @@ input
     d.Company = d.Company.trim();
     // parse revenue $$$
     var revenue = d.Revenue.trim();
-    if (revenue.toLowerCase() === 'withheld') {
-      next();
-    } else {
+    if (revenue !== 'Withheld') {
       d.Revenue = parse.dollars(d.Revenue);
-      next(null, d);
     }
+    next(null, d);
   }))
   .pipe(tito.createWriteStream(options['of'])) // jshint ignore:line
   .pipe(process.stdout);

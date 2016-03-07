@@ -14,14 +14,22 @@ permalink: /downloads/federal-revenue-by-company/
     </div>
     <h1>Federal Revenue by Company</h1>
 
-    <p class="case_studies_intro-para">This dataset provides calendar year 2013 natural resource revenues data by company. This new dataset is a product of USEITI and represents cooperation between government, industry, and civil society to create and confirm this information, and provide it in a way that adds to the national dialogue on natural resource extraction. This data set will be updated in the first quarter of the calendar year.</p>
+    <p class="case_studies_intro-para">This dataset provides natural resource
+    revenues data by company for calendar years 2013-2015. This new dataset is
+    a product of USEITI and represents cooperation between government,
+    industry, and civil society to create and confirm this information, and
+    provide it in a way that adds to the national dialogue on natural resource
+    extraction. This data set will be updated in the first quarter of the
+    calendar year.</p>
 
     <p class="downloads-download_links-intro">Download calendar year data:
       <ul class="downloads-download_links">
-        <li><a href="{{site.baseurl}}/downloads/federal_revenue_by_company_CY2013_2015-11-10.xlsx"><icon class="icon-cloud icon-padded"></icon>
-        Full dataset (xlsx, 132 KB)</a></li>
-        <li><a href="{{site.baseurl}}/data/company/revenue.tsv"><icon class="icon-cloud icon-padded"></icon>
-        Full dataset (tsv)</a></li>
+        <li><a href="{{site.baseurl}}/downloads/federal_revenue_by_company_CY2013-CY2015_2016-03-04.xlsx"><icon class="icon-cloud icon-padded"></icon>
+        Full dataset (xlsx, 128 KB)</a></li>
+        {% for doc in site.federal-revenue-by-company %}
+        <li><a href="{{ site.baseurl }}/data/company/revenue/{{ doc.year }}.tsv"><icon class="icon-cloud icon-padded"></icon>
+        {{ doc.year }} dataset (tsv)</a></li>
+        {% endfor %}
       </ul>
     </p>
 

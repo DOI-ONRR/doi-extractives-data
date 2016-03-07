@@ -6,7 +6,7 @@ description: USEITI is part of an international effort to promote open and accou
 url: https://useiti.doi.gov
 
 # app version number
-version: v1.1.0
+version: v1.2.0
 
 sass:
   style: nested
@@ -34,3 +34,13 @@ collections:
   downloads:
     output: true
     permalink: /downloads/:subpage/
+  federal-revenue-by-company:
+    output: true
+    permalink: /explore/federal-revenue-by-company/:path/
+
+defaults:
+  - scope:
+      path: ''
+      collection: company-data
+    values:
+      layout: federal-revenue-by-company

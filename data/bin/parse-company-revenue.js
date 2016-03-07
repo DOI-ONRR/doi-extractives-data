@@ -29,7 +29,10 @@ input
     // trim whitespace
     d.Company = d.Company.trim();
     // parse revenue $$$
-    d.Revenue = parse.dollars(d.Revenue);
+    var revenue = d.Revenue.trim();
+    if (revenue !== 'Withheld') {
+      d.Revenue = parse.dollars(d.Revenue);
+    }
     next(null, d);
   }))
   .pipe(tito.createWriteStream(options['of'])) // jshint ignore:line

@@ -193,12 +193,13 @@
         return {
           name: d.key,
           total: total,
-          types: d.values.map(function(d) {
-            return {
-              name: d[innerKey],
-              value: d.Revenue
-            };
-          })
+          types: grouper.entries(d.values)
+            .map(function(d) {
+              return {
+                name: d.key,
+                value: d.values
+              };
+            })
         };
       });
 

@@ -221,14 +221,20 @@ permalink: /explore/reconciliation/
         <section class="filter-search_section">
           <h2 class="h3 region-title">Discrepancies in payments by company and revenue type</h2>
           <div class="filter-search_form">
-            <label for="company-name-filter">Search by company name:</label>
-            <input class="filter-search" type="text" name="search" id="company-name-filter">
+            <label classfor="company-name-filter">Search by company name:</label>
+            <input class="filter-search filter-search_above" type="search" name="search" id="company-name-filter">
           </div>
+
         </section>
         <table id="companies" class="company-list subregions">
           <thead class="list-heading">
             <tr>
-              <th class="narrow"></th><th>payments reported by government (<strong>gov</strong>) and by company (<strong>co</strong>)</th>
+              <th class="narrow no_padding">
+                <div class="filter-search_form">
+                  <input class="filter-search filter-search_embed" type="search" name="search" id="company-name-filter" >
+                </div>
+              </th>
+              <th class="centered">payments reported by government (<strong>gov</strong>) and by company (<strong>co</strong>)</th>
               <th class="centered">variance (<strong>bold</strong> indicates material variance)</th>
             </tr>
           </thead>

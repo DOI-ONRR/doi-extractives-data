@@ -4,41 +4,22 @@
 //
 // Markup:
 // <div class="carousel">
-//   <h3 class="carousel-header_text">How do natural resources become federal revenues?</h3>
+//   <h3>How do natural resources become federal revenues?</h3>
 //   <button class="carousel-button button-big button-primary">See how it works</button>
 //   <h2>Step 1: Plan</h2>
 //   <img class="carousel-image" src="https://eiti-dev.18f.gov/img/revenues.png" alt="revenues">
-//   <ul class="carousel-pagination">
-//     <li class="carousel-pagination_item active"></li>
-//     <li class="carousel-pagination_item"></li>
-//     <li class="carousel-pagination_item"></li>
-//     <li class="carousel-pagination_item"></li>
-//   </ul>
 // </div>
 //
 // Styleguide components.carousel
 
 .carousel {
-  // @include span-columns(4 of 12);
-
   background-color: $pale-blue;
   border-left: 4px solid $white;
   border-right: 4px solid $white;
   padding-bottom: 0;
   padding-top: $base-padding-extra;
   text-align: center;
-
-
 }
-
-// .carousel-header_text {
-//   @include font-size(1);
-//   line-height: 1.3;
-//   padding-bottom: 0;
-//   padding-left: $base-padding-extra;
-//   padding-right: $base-padding-extra;
-//   padding-top: $base-padding-jumbo;
-// }
 
 .carousel-button {
   margin-bottom: $base-padding-large;
@@ -46,28 +27,6 @@
 }
 
 .carousel-image {
-  //position: absolute;
-  //bottom: 0;
   width: 100%;
+  float: left;
 }
-
-// .carousel-pagination {
-//   background-color: $mid-blue;
-//   width: 100%;
-// }
-
-// .carousel-pagination_item {
-//   background-color: $white;
-//   border: 2px solid $white;
-//   border-radius: 50%;
-//   cursor: pointer;
-//   display: inline-block;
-//   height: 1em;
-//   margin: 0.5em;
-//   width: 1em;
-//
-//   &.active {
-//     background-color: $mid-blue;
-//     border: 2px solid $white;
-//   }
-// }

@@ -3,273 +3,47 @@ title: Reconciliation | Explore Data
 layout: default
 permalink: /explore/reconciliation/
 ---
+
 <section id="reconciliation" class="explore-subpage container container-margin">
 
-  <div class="container-left-4">
-    <div class="container-outer">
-      <div>
-        <a class="breadcrumb" href="{{ site.baseurl }}/explore/">Explore data</a>
-        /
-      </div>
+  <div class="container-left-7">
 
-      <h1>Reconciliation</h1>
-
-      <p>During the USEITI process, companies report payments to the government (such as rents, taxes, and royalties), and those reports are compared with government records of revenue received.</p>
-
-      <p>The 2015 report looked at calendar year data for 2013. The independent administrator identified and investigated 17 <span class="term term-p" data-term="material variance" title="Click to define" tabindex="0">material variances<i class="icon-book"></i></span>.</p>
-
-      <p>The 45 companies invited to participate are listed here, along with reported payments and reconciliation results for each revenue type.</p>
-
-      <a href="{{site.baseurl}}/downloads/reconciliation/">
-        <i class="fa fa-file-text-o u-padding-right"></i>Data and documentation
-      </a>
+    <div>
+      <a class="breadcrumb" href="{{ site.baseurl }}/explore/">Explore data</a>
+      /
     </div>
+    <h1>Reconciliation</h1>
+
+    <p>As a part of USEITI, companies report payments to the government (e.g., rents, taxes, royalties) and the government reports what it received. These figures are compiled and reconciled by an independent administrator and published. In the future, this dataset will be interactive. For now, you can learn about reconciliation results here, and <a href="{{site.baseurl}}/downloads/reconciliation/">download the dataset</a>.</p>
+
+    <h2 class="h3">Background</h2>
+
+    <p>To implement the <span class="term term-p" data-term="EITI Standard" title="Click to define" tabindex="0">EITI Standard<i class="icon-book"></i></span>, government, industry, and civil society collaborate in a disclosure process called reconciliation. The three sectors in a participating country develop a framework for reconciliation. Government and industry share the total amount of revenue the government received and industry paid in the year under review with the Independent Administrator (IA). The IA reconciles reported revenue and investigates any discrepancies. The public can see the results for their respective country in an annual EITI report.</p>
+
+    <p>Through a unilateral disclosure, the Department of the Interior (DOI) published online all in-scope revenue from extraction on federal lands by revenue stream and company for calendar year (CY) 2013. DOI reported a total of $12.64 billion in revenue, disclosing to the public 100% of in-scope DOI revenue from extraction on federal lands during CY 2013. In addition to DOI’s unilateral disclosure, the Multi-Stakeholder Group (MSG) asked companies to report to the IA that same nontax information, revenue payments to DOI, as well as federal corporate income tax payments and refunds from the Internal Revenue Service (IRS).</p>
+
+    <h2 class="h3">Reconciliation results</h2>
+
+    <p>When the independent administrator compared company payments to government revenue, 17 discrepancies exceeded the margin of variance. The independent administrator worked with the companies and government entities to investigate these discrepancies, and was able to find explanations for all of them. Explanations included differences in when payments were recorded and how they were classified. For more details on the reporting and reconciliation process, see <a href="{{site.baseurl}}/downloads/reconciliation/">our documentation</a>.</p>
+
+    <p>Of the 45 companies that were asked to participate, 31 reported DOI revenue and 12 reported federal corporate income taxes.<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup></p>
+
+    <img src="{{ site.baseurl }}/img/reconciliation-revenue-report.png" alt="Chart the scope of reconciliation reporting participation" class="article_img-60 u-margin-top">
+
+    <img src="{{ site.baseurl }}/img/reconciliation-revenue-rec.png" alt="Chart the scope of reconciliation reporting participation" class="article_img-60 u-margin-top">
+
+    <img src="{{ site.baseurl }}/img/reconciliation-taxes.png" alt="Chart the scope of reconciliation reporting participation" class="article_img-60 u-margin-top">
+
+    <p class="u-margin-top">Five companies also allowed for corporate income tax reconciliation: BP America; Cimarex Energy Co.; Could Peak Energy Resources, LLC; Shell E&P Company; and W&T Offshore, Inc.</p>
+
+    <p>After the independent administrator compared and reconciled the government revenue streams with company payments, 17 material variances remained, all of which were explained through the reconciliation process, leaving zero unexplained variances.</p>
+
+    <div class="footnotes">
+      <ol>
+        <li id="fn:1"><p>Out of the 45 companies invited to participate, a maximum of 41 are C-corporations. Only C-corporations are eligible to report taxes. <a href="#fnref:1" class="reversefootnote">↩</a></p></li>
+      </ol>
+    </div>
+
   </div>
 
-  <section class="container-right-8 filters-wrapper_outer">
-    <div data-absolute="true" data-offset-parent="mobile" class="sticky_nav sticky_nav-show_mobile filters-wrapper container" data-toggler="filters" data-max-width="675">
-
-      <button class="toggle-filters toggle-desktop" is="eiti-toggle" aria-controls="filters" data-expanded-text="Hide filters" data-collapsed-text="Show filters" data-toggler="filters">Show filters</button>
-
-      <form id="filters" aria-hidden="true" class="filters">
-
-        <div class="filters-heading">
-          <h3>Filter revenue</h3>
-        </div>
-
-        <div class="container-left-6" style="margin-right: 0;">
-          <div id="type-filter" class="filter filters-last">
-            <label for="type-selector">Revenue Type</label>
-            <select id="type-selector" name="type">
-              <option value="">All</option>
-            </select>
-          </div>
-        </div>
-
-      </form>
-
-      <h1 class="filter-description" data-filter-description="">
-        <span href="#type-selector" class="filter-part" data-key="type">All revenue</span>
-        from
-        extraction on federal lands (2013)
-      </h1>
-
-      <div class="container">
-        <button class="toggle-filters toggle" is="eiti-toggle" aria-controls="filters" data-expanded-text="Hide filters" data-toggler="filters" data-collapsed-text="Show filters">Show filters</button>
-      </div>
-
-    </div>
-
-    <div class="filter-description_wrapper">
-      <h1 class="filter-description filter-description_open" data-filter-description="">
-        <span href="#type-selector" class="filter-part" data-key="type">All revenue</span>
-        from
-        extraction on federal lands (2013)
-      </h1>
-    </div>
-
-    <div class="explore-exploration slab-alpha">
-
-      <div class="container flowchart">
-        <h2>How are the numbers verified?</h2>
-        <ul>
-
-
-          <li class="flowchart-dialog flowchart-dialog_top flowchart-join_to_bottom">
-            <span class="flowchart-text_large">Every country that participates in EITI reconciles its data. An independent adminstrator compares company-reported payments (such as rents, taxes, and royalties) to government reconrds of revenue recieved.</span>
-            <span class="flowchart-text_bold flowchart-text_large">Here's how it works...</span>
-          </li>
-
-          <li class="flowchart-dialog flowchart-dialog_left flowchart-dialog_left_1 flowchart-dialog_right flowchart-join_to_top">
-            <span class="flowchart-text_bold">Did the amount reported by the government differ from what was reported by the company?</span>
-            <div class="flowchart-words_left">yes</div>
-            <div class="flowchart-words_right">no</div>
-            <div class="flowchart-stem_bottom_right_long"></div>
-          </li>
-
-          <li class="flowchart-dialog flowchart-dialog_left flowchart-dialog_right flowchart-columns_10">
-            <span class="flowchart-text_bold">Is the percentage difference greater than the <span class="term term-p" data-term="variance percentage threshold" title="Click to define" tabindex="0">variance percentage threshold<i class="icon-book"></i></span>?</span>
-            <div class="flowchart-words_left">yes</div>
-            <div class="flowchart-words_right">no</div>
-            <div class="flowchart-stem_left"></div>
-            <div class="flowchart-stem_bottom_right"></div>
-          </li>
-          <li class="container">
-            <ul>
-              <li class="flowchart-dialog flowchart-no_dialog flowchart-columns_8 flowchart-columns_left">
-                <span class="flowchart-text_bold">Is the dollar amount of the discrepancy greater than the <span class="term term-p" data-term="material variance threshold" title="Click to define" tabindex="0">material variance threshold<i class="icon-book"></i></span>?</span>
-                <div class="flowchart-stem_left"></div>
-              </li>
-              <li class="para-sm flowchart-dialog flowchart-no_dialog flowchart-columns_4 flowchart-columns_right">
-                <span class="flowchart-text_bold">There is no further reason to investigate.</span>
-
-                <path class="flowchart-stem_bottom_right_extra_long"></path>
-              </li>
-              <li class="flowchart-dialog flowchart-no_top flowchart-columns_8">
-                <span class="flowchart-text_bold">Then we have a <span class="term term-p" data-term="material variance" title="Click to define" tabindex="0">material variance<i class="icon-book"></i></span> that warrants a second look, so the independent administrator will review extra details about this transaction to understand what happened.</span>
-                <div class="flowchart-stem_left"></div>
-              </li>
-              <li class="flowchart-dialog flowchart-no_top flowchart-dialog_transparent flowchart-columns_8">
-                <p><span class="flowchart-text_bold flowchart-text_large">In the 2015 USEITI Report, out of the 540 transactions reviewed, the independent administrator identified and investigated only 17 material variances.</span> It turned out that all of these were due to one of the following reasons, and were not significant errors:</p>
-                <ul class="list-bullet">
-                  <li>Differences in accounting systems. For example, some companies record transactions in their accounting systems differently than government does and so revenue categories (such as rents, taxes, and royalties) get lumped differently.</li>
-                  <li>Differences in accounting years. For example, companies and government sometimes run on different accounting years, resulting in payments getting recorded in different years.</li>
-                </ul>
-                <div class="flowchart-stem_left"></div>
-              </li>
-
-            </ul>
-          </li>
-          <li class="flowchart-dialog flowchart-no_top flowchart-dialog_bottom">
-            <span>
-              <span class="flowchart-text_large">This means that our accounting systems in the United States are doing their jobs</span>
-              and we don't have issues with fees and taxes getting to where they're supposed to go.
-            </span>
-            <div class="flowchart-stem_left"></div>
-
-          </li>
-
-
-        </ul>
-
-      </div>
-
-
-      <div class="container">
-        <!-- <div class="container">
-          <p class="para-sm container-left-6">As a part of USEITI, companies report payments to the government (e.g., rents, taxes, royalties) and the government reports what it received. These figures are compiled and reconciled by an independent administrator to make sure these numbers match, and any significant variances are explained.</p>
-          <p class="para-sm container-left-6">When the U.S. independent administrator compared company payments to government revenue, 17 discrepancies exceeded the margin of variance (highlighted in red below). The independent administrator worked with the companies and government entities to investigate these discrepancies, and was able to find explanations for all of them. Explanations included differences in when payments were recorded and how they were classified.</p>
-        </div> -->
-          <div class="container detached-header">
-            <h2 class="h3 region-title region-title_compact">Median payment discrepancies by revenue type</h2>
-            <p class="region-subtitle">
-              The percentage on the right is the
-              <span class="term term-p" data-term="material variance" title="Click to define" tabindex="0">material variance<i class="icon-book"></i></span>
-              <strong>threshold</strong>.
-            </p>
-          </div>
-            <table class="article_table article_table-gray article_table-centered_1 article_table-numbers_3 article_table-book_1 article_table-book_3">
-              <tr class="article_table-bold">
-                  <th>Threshold</th>
-                  <th>Revenue stream</th>
-                  <th>Variance floor</th>
-              </tr>
-              <tr>
-                  <td>1%</td>
-                  <td>Royalties</td>
-                  <td>$100,000</td>
-              </tr>
-              <tr>
-                  <td></td>
-                  <td>Civil penalties</td>
-                  <td>$1,000</td>
-              </tr>
-              <tr>
-                  <td></td>
-                  <td>Taxes</td>
-                  <td>$100,000</td>
-              </tr>
-              <tr>
-                  <td>2%</td>
-                  <td>Rents</td>
-                  <td>$50,000</td>
-              </tr>
-              <tr>
-                  <td></td>
-                  <td>Bonuses</td>
-                  <td>$100,000</td>
-              </tr>
-              <tr>
-                  <td></td>
-                  <td>Offshore inspection fees</td>
-                  <td>$20,000</td>
-              </tr>
-              <tr>
-                  <td></td>
-                  <td>BLM bonus and first year rentals</td>
-                  <td>$10,000</td>
-              </tr>
-              <tr>
-                  <td></td>
-                  <td>OSMRE AML fees including audits and late charges</td>
-                  <td>$100,000</td>
-              </tr>
-              <tr>
-                  <td>3%</td>
-                  <td>BLM permit fees</td>
-                  <td>$10,000</td>
-              </tr>
-              <tr>
-                  <td></td>
-                  <td>OSMRE civil penalties including late charges</td>
-                  <td>$0</td>
-              </tr>
-              <tr>
-                  <td></td>
-                  <td>Other revenue</td>
-                  <td>$50,000</td>
-              </tr>
-              <tr>
-                  <td>N/A</td>
-                  <td>BLM renewables</td>
-                  <td>N/A</td>
-              </tr>
-          </table>
-      </div>
-
-      <div class="container">
-        <section class="filter-search_section">
-          <h2 class="h3 region-title">Discrepancies in payments by company and revenue type</h2>
-          <div class="filter-search_form">
-            <label classfor="company-name-filter">Search by company name:</label>
-            <input class="filter-search filter-search_above" type="search" name="search" id="company-name-filter">
-          </div>
-
-        </section>
-        <table id="companies" class="company-list subregions">
-          <thead class="list-heading">
-            <tr>
-              <th class="narrow no_padding">
-                <div class="filter-search_form">
-                  <input class="filter-search filter-search_embed" type="search" name="search" id="company-name-filter" >
-                </div>
-              </th>
-              <th class="centered">payments reported by government (<strong>gov</strong>) and by company (<strong>co</strong>)</th>
-              <th class="centered">variance (<strong>bold</strong> indicates material variance)</th>
-            </tr>
-          </thead>
-        </table>
-        <div class="footnotes container-padded">
-          <h3>Footnotes</h3>
-          <ol>
-
-            <li id="fn:1" class="hashoffset"><p>This material variance was explained by a difference in accounting years: $711,360 was paid by BP America in 2012 and recorded by ONRR in 2013. <a href="#fnref:2" class="reversefootnote">↩</a></p></li>
-            <li id="fn:2" class="hashoffset"><p>This material variance was explained by a difference in accounting years: $54,318,974 was paid by Chevron Corporation in 2012 and recorded by ONRR in 2013. <a href="#fnref:2" class="reversefootnote">↩</a></p></li>
-            <li id="fn:3" class="hashoffset"><p>This material variance was explained by a difference in accounting years: $6,345,527 was shown as paid by the IRS in 2013 and recorded by Shell E&amp;P Company in January 2014. <a href="#fnref:3" class="reversefootnote">↩</a></p></li>
-            <li id="fn:4" class="hashoffset"><p>This material variance was explained by a difference in accounting years: $11,232,000 was paid by Exxon Mobil Corporation in 2012 and recorded by ONRR in 2013. <a href="#fnref:4" class="reversefootnote">↩</a></p></li>
-            <li id="fn:5" class="hashoffset"><p>This material variance was explained by a difference in accounting years: $8,300,214 was paid by Peabody Energy Corporation in 2013 and recorded by ONRR in 2014. <a href="#fnref:5" class="reversefootnote">↩</a></p></li>
-            <li id="fn:6" class="hashoffset"><p>This material variance was explained by a difference in accounting years: $91,500 was paid by Anadarko Petroleum Corporation in 2012 and recorded by ONRR in 2013. <a href="#fnref:6" class="reversefootnote">↩</a></p></li>
-            <li id="fn:7" class="hashoffset"><p>This material variance was explained by a difference in accounting years: $280,655 was paid by ConocoPhillips in 2013 and recorded by ONRR in 2014. <a href="#fnref:7" class="reversefootnote">↩</a></p></li>
-            <li id="fn:8" class="hashoffset"><p>This material variance was explained by a difference in accounting years: $17,000 was paid by ConocoPhillips in 2013 and recorded by ONRR in 2014. <a href="#fnref:8" class="reversefootnote">↩</a></p></li>
-            <li id="fn:9" class="hashoffset"><p>This material variance was explained by a difference in accounting years: $240,500 was paid by ConocoPhillips in 2013 and recorded by BLM in 2014. <a href="#fnref:9" class="reversefootnote">↩</a></p></li>
-            <li id="fn:10" class="hashoffset"><p>The IA investigated this material variance and found that Freeport McMoRan Inc. records rental payment transactions in their accounting system differently from how ONRR records transactions, including different lumping of rents and bonuses. This variance was fully explained by this difference in categorization. <a href="#fnref:10" class="reversefootnote">↩</a></p></li>
-            <li id="fn:11" class="hashoffset"><p>This material variance was explained by the difference in accounting years: $5,520,487 was paid by Statoil Gulf of Mexico in 2013 and recorded by ONRR in 2014. <a href="#fnref:11" class="reversefootnote">↩</a></p></li>
-            <li id="fn:12" class="hashoffset"><p>This material variance was explained by a difference in accounting years: $1,086,317 was paid by Ultra Resources in 2012 and recorded by ONRR in 2013; $47,724 was paid in 2013 and recorded in 2014. <a href="#fnref:12" class="reversefootnote">↩</a></p></li>
-            <li id="fn:13" class="hashoffset"><p>This material variance was explained by a difference in accounting years: $31,500 was paid by Noble Energy, Inc. in 2012 and recorded in 2013. <a href="#fnref:13" class="reversefootnote">↩</a></p></li>
-            <li id="fn:14" class="hashoffset"><p>This material variance was explained by a difference in accounting years: $19,500 was paid by Noble Energy, Inc. in 2013 and recorded by BLM in 2014. <a href="#fnref:14" class="reversefootnote">↩</a></p></li>
-            <li id="fn:15" class="hashoffset"><p>This material variance was explained by a difference in accounting years: $32,500 was paid by Cimarex Energy in 2013 and recorded by BLM in 2014. <a href="#fnref:15" class="reversefootnote">↩</a></p></li>
-            <li id="fn:16" class="hashoffset"><p>The IA investigated this material variance and found that BLM included revenue for permit fees collected for activity they administered on multiple tribal leases. However, Newfield Exploration Company did not include this revenue, as it was not for federal leases. This variance was fully explained by this difference in categorization. <a href="#fnref:16" class="reversefootnote">↩</a></p></li>
-            <li id="fn:17" class="hashoffset"><p>This material variance was explained by a difference in accounting years: $1,383,084 was paid by ANKOR Energy LLC in 2012 and recorded in 2013. <a href="#fnref:17" class="reversefootnote">↩</a></p></li>
-          </ol>
-        </div>
-      </div>
-
-    </div>
-
-  </section>
-
 </section>
-
-<script type="text/javascript" src="{{ site.baseurl }}/js/lib/explore.min.js" charset="utf-8"></script>
-<script src="{{ site.baseurl }}/js/eiti.explore.js"></script>
-<script src="{{ site.baseurl }}/js/pages/reconciliation.js"></script>

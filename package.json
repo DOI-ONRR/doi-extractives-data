@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "async": "^0.9.0",
+    "colorbrewer": "0.0.2",
     "custom-event": "^1.0.0",
     "d3": "^3.5.5",
     "document-register-element": "^0.5.3",
@@ -21,7 +22,6 @@
   },
   "devDependencies": {
     "about-yml-validator": "git+https://github.com/18F/about-yml-npm.git",
-    "colorbrewer": "0.0.2",
     "colors": "^1.1.0",
     "data-expression": "^0.3.1",
     "epipebomb": "^0.1.1",
@@ -37,7 +37,6 @@
     "stream-array": "^1.0.1",
     "through2": "^0.6.5",
     "tito": "^0.3.0",
-    "webpack-dev-server": "*",
     "yargs": "^3.7.1"
   },
   "scripts": {

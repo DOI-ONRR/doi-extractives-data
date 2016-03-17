@@ -33,10 +33,6 @@
   margin: 0;
   width: 86%;
 
-  // @include respond-to(tiny-up) {
-  //   @include heading(para-md);
-  // }
-
   .color-swatch {
     display: inline-block;
     height: 0.7em;
@@ -60,10 +56,23 @@
     text-align: left;
   }
 
+  .bar_dollars {
+    padding-right: $base-padding;
+  }
+
+  &.exception thead .subregion-name {
+    min-width: initial;
+  }
+
   td.value,
   th.value {
     text-align: right;
     white-space: nowrap;
+  }
+
+  .value.subtotal,
+  .subtotal-label {
+    font-weight: $weight-book;
   }
 
   thead {
@@ -78,19 +87,68 @@
     .subregion-name {
       @include heading(para-lg);
       font-weight: $weight-bold;
-      min-width: 200px;
+      min-width: 150px;
       padding: 0;
       padding-left: ($base-padding * 0.9);
-    }
-  }
+      padding-right: $base-padding;
 
-  tr > *:first-child {
-    padding-left: $base-padding;
-    width: 80%;
+    }
   }
 
   tr > *:last-child {
 
+  }
+
+  tr {
+    > *:first-child {
+      padding-left: $base-padding;
+      width: 80%;
+
+      &.narrow {
+        vertical-align: middle;
+        width: 35%;
+      }
+
+      &.no_padding {
+        padding-left: 0;
+      }
+    }
+    .variance,
+    .centered {
+      text-align: center;
+    }
+
+    .variance {
+      vertical-align: middle;
+    }
+  }
+
+  tr > td > .reportee {
+    color: $neutral-gray;
+    display: inline-block;
+    font-weight: $weight-book;
+    text-align: left;
+    width: 25px;
+  }
+
+  .bar { // specific to reconcilation
+    width: 100px;
+
+    @include respond-to(medium-up) {
+      width: 150px;
+    }
+
+    @include respond-to(large-up) {
+      width: 200px;
+    }
+
+    eiti-bar {
+      display: inline-block;
+    }
+  }
+
+  th.bar {
+    text-align: right;
   }
 
   .bar_negative {
@@ -132,7 +190,7 @@
 }
 
 .region-title {
-  padding-top: $base-padding-large;
+  padding-top: 0;
 }
 
 .region-notes {
@@ -141,4 +199,69 @@
   &:last-of-type {
     padding-bottom: $base-padding-lite;
   }
+}
+
+.bold {
+  font-weight: $weight-bold;
+}
+
+.material-variance {
+  border-right: 2px solid $neutral-gray;
+}
+
+.threshold {
+  display: inline-block;
+  font-weight: $weight-bold;
+  margin-left: $base-padding-lite;
+}
+
+.revenue-type-list {
+  tr .variance {
+    text-align: right;
+    width: 40px;
+  }
+
+  tr:first-of-type {
+    border-top: 1px solid $neutral-gray;
+  }
+}
+
+.detached-header {
+  position: relative;
+  padding-left: $base-padding;
+  padding-right: $base-padding;
+
+  @include respond-to(medium-up) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+}
+
+.detached-table_title {
+  float: left;
+  width: 50%;
+
+  @include respond-to(small-up) {
+    width: 60%;
+  }
+
+  @include respond-to(medium-up) {
+    width: 75%;
+  }
+
+  @include respond-to(large-up) {
+    width: 100%;
+  }
+}
+
+.region-subtitle {
+  @include font-size(1);
+
+  font-weight: $weight-light;
+  margin-bottom: $base-padding;
+}
+
+.region-title_compact {
+  margin-bottom: 0;
 }

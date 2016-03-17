@@ -27,8 +27,12 @@
   background-color: $light-gray;
 }
 
-.slab-beta-alt {
-  background-color: $light-gray-alt; //slightly lighter, for contrast
+.slab-beta-light {
+  background-color: $light-gray-light; //slightly lighter, for contrast
+}
+
+.slab-beta-dark {
+  background-color: $light-gray-dark; //slightly darker, for contrast
 }
 
 .slab-charlie {

@@ -7,6 +7,10 @@
   ul {
     display: block;
     list-style: none;
+
+    @include respond-to(medium-up) {
+      margin-bottom: 0;
+    }
   }
 }
 

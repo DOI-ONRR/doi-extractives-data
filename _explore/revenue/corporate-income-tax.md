@@ -28,10 +28,10 @@ permalink: /explore/corporate-income-tax/
 
     <p>SOI’s calculations of federal corporate income tax receipts from all returns in the mining and petroleum refining sectors for <a href="https://www.irs.gov/uac/SOI-Tax-Stats-Returns-of-Active-Corporations-Table-1">tax years 2009 to 2013</a> are presented below.<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup></p>
 
-    <table class="article_table">
+    <table class="article_table article_table-indented article_table-numbers">
       <tr>
-  		<th rowspan="2">Industry</th>
-      <th colspan="5">Total receipts (in millions USD)<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup></th>
+  		<th rowspan="2" class="article_table-left article_table-enlarge">Industry</th>
+      <th colspan="5" class="article_table-thin">Total receipts (in millions USD)<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup></th>
       </tr>
       <tr>
   		<th>2009</th>
@@ -40,7 +40,7 @@ permalink: /explore/corporate-income-tax/
   		<th>2012</th>
   		<th>2013</th>
       </tr>
-      <tr>
+      <tr class="article_table-head">
   		<td>Mining</td>
   		<td>$3,831</td>
   		<td>$5,722</td>
@@ -50,46 +50,46 @@ permalink: /explore/corporate-income-tax/
       </tr>
       <tr>
   		<td>Oil and gas extraction</td>
-  		<td>$1,424</td>
-  		<td>$2,152</td>
-  		<td>$1,811</td>
-  		<td>$1,642</td>
-  		<td>$1,943</td>
+  		<td>1,424</td>
+  		<td>2,152</td>
+  		<td>1,811</td>
+  		<td>1,642</td>
+  		<td>1,943</td>
       </tr>
       <tr>
   		<td>Coal mining</td>
-  		<td>$207</td>
-  		<td>$344</td>
-  		<td>$325</td>
-  		<td>$245</td>
-  		<td>$32</td>
+  		<td>207</td>
+  		<td>344</td>
+  		<td>325</td>
+  		<td>245</td>
+  		<td>32</td>
       </tr>
       <tr>
   		<td>Metal ore mining</td>
-  		<td>$866</td>
-  		<td>$1,573</td>
-  		<td>$1,945</td>
-  		<td>$1,329</td>
-  		<td>$755</td>
+  		<td>866</td>
+  		<td>1,573</td>
+  		<td>1,945</td>
+  		<td>1,329</td>
+  		<td>755</td>
       </tr>
       <tr>
   		<td>Nonmetallic mineral mining and quarrying</td>
-  		<td>$181</td>
-  		<td>$158</td>
-  		<td>$183</td>
-  		<td>$233</td>
-  		<td>$222</td>
+  		<td>181</td>
+  		<td>158</td>
+  		<td>183</td>
+  		<td>233</td>
+  		<td>222</td>
       </tr>
       <tr>
   		<td>Support activities for mining</td>
-  		<td>$1,153</td>
-  		<td>$1,494</td>
-  		<td>$1,677</td>
-  		<td>$1,800</td>
-  		<td>$1,944</td>
+  		<td>1,153</td>
+  		<td>1,494</td>
+  		<td>1,677</td>
+  		<td>1,800</td>
+  		<td>1,944</td>
       </tr>
-      <tr>
-  		<td>Petroleum and coal products manufacturing</td>
+      <tr class="article_table-head">
+  		<td>Petroleum and coal products manufacturing<sup id="fnref:3"><a href="#fn:3" class="footnote">3</a></sup></td>
   		<td>$1,897</td>
   		<td>$5,126</td>
   		<td>$7,630</td>
@@ -98,11 +98,11 @@ permalink: /explore/corporate-income-tax/
       </tr>
       <tr>
   		<td>Petroleum refineries (including integrated)</td>
-  		<td>$1,772</td>
-  		<td>$4,865</td>
-  		<td>$7,402</td>
-  		<td>$9,064</td>
-  		<td>$6,631</td>
+  		<td>1,772</td>
+  		<td>4,865</td>
+  		<td>7,402</td>
+  		<td>9,064</td>
+  		<td>6,631</td>
       </tr>
     </table>
 
@@ -118,7 +118,8 @@ permalink: /explore/corporate-income-tax/
     <div class="footnotes">
       <ol>
         <li id="fn:1"><p>Statistics on corporate income taxes relative to companies performing extractive activities are generally classified under the NAICS Mining major industry. In addition, integrated companies that operate in both the downstream extractive and refining spaces are classified under the NAICS Petroleum and Coal Products Manufacturing major industry. <a href="#fnref:1" class="reversefootnote">↩</a></p></li>
-        <li id="fn:2"><p>All figures are estimates based on samples. <a href="#fnref:2" class="reversefootnote">↩</a></p></li>
+        <li id="fn:2"><p>Internal Revenue Service, <a href="https://www.irs.gov/uac/SOI-Tax-Stats-Returns-of-Active-Corporations-Table-1">Tax Returns of Active Corporations</a>. All figures are estimates based on samples.<a href="#fnref:2" class="reversefootnote">↩</a></p></li>
+        <li id="fn:3"><p>Petroleum and coal products manufacturing encompasses an additional industry subcategory, <em>Asphalt paving, roofing, other petroleum and coal products</em>, which as exluded because it is outside the scope of EITI.<a href="#fnref:3" class="reversefootnote">↩</a></p></li>
       </ol>
     </div>
   </article>

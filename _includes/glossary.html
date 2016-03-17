@@ -8,19 +8,14 @@
 
   <h2 class="drawer-header"><i class="icon-book"></i> Glossary </h2>
   <label for="drawer-search" class="label">Filter glossary terms</label>
-  <input class="glossary__search drawer-search" type="search" placeholder="e.g. Fossil fuel">
-  <div class="drawer__content" id="glossary-result">
-    <ul class="glossary__list js-accordion">
+  <input class="js-glossary-search drawer-search" type="search" placeholder="e.g. Fossil fuel">
+  <div id="glossary-result">
+    <ul class="js-glossary-list" accordion>
       {% for term in site.data.terms %}
-      <li class="drawer__item">
-        <div class="js-accordion_header accordion__header">
-          <h5 class="glossary-term">{{term[0]}}</h5>
-          <button class="button button--secondary accordion__button js-accordion_button" title="Toggle for {{term[0]}}">
-          <i class="fa fa-chevron-down"></i>
-            <span class="js-accordion_text u-visually-hidden" data-show="Show definition" data-hide="Hide definition"></span>
-          </button>
-        </div>
-        <p class="glossary-definition js-accordion_item hidden">{{term[1]}}</p>
+      <li class="glossary-item" accordion-item accordion-open="false">
+        <h5 class="glossary-term">{{term[0]}}</h5>
+        <button accordion-button class="accordion-button" title="Toggle for {{term[0]}}"></button>
+        <p class="glossary-definition accordion-content">{{term[1]}}</p>
       </li>
       {% endfor %}
     </ul>

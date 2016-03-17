@@ -24,11 +24,11 @@ permalink: /explore/
 	</div>
 </section>
 
-<section accordion class="container-outer landing-wrapper">
+<section accordion accordion-desktop="false" class="container-outer landing-wrapper">
 
   <section class="container">
     <a id="revenue" class="link-no_under"><h3 class="landing-section_category">Revenue data</h3></a>
-    <div class="container-half landing-section" accordion-item accordion-open="true">
+    <div class="container-half landing-section" accordion-item accordion-open="false">
       <h5 class="landing-heading"><a href="{{site.baseurl}}/explore/federal-revenue-by-location/">Federal revenue by location</a></h5>
       <button class="accordion-button" accordion-button title="Toggle for federal revenue by location"></button>
       <div class="accordion-content">
@@ -48,21 +48,21 @@ permalink: /explore/
         type.</p>
       </div>
     </div>
-    <div class="container-half landing-section" accordion-item accordion-open="true">
+    <div class="container-half landing-section" accordion-item accordion-open="false">
       <h5 class="landing-heading"><a href="{{site.baseurl}}/explore/reconciliation/">Reconciliation</a></h5>
       <button class="accordion-button" accordion-button title="Toggle for reconciliation"></button>
       <div class="accordion-content">
         <p class="landing-description">As part of USEITI, companies report payments to the government and the government reports what it received. These figures are compiled, reconciled, and published. In the future, this dataset will be interactive. For now, you can <a href="{{site.baseurl}}/explore/reconciliation/">learn about the reconciliation process</a> or <a href="{{site.baseurl}}/downloads/#reconciliation">download the dataset</a>.</p>
       </div>
     </div>
-    <div class="container-half landing-section" accordion-item accordion-open="true">
+    <div class="container-half landing-section" accordion-item accordion-open="false">
       <h5 class="landing-heading"><a href="{{site.baseurl}}/explore/corporate-income-tax/">Corporate income tax</a></h5>
       <button class="accordion-button" accordion-button title="Toggle for corporate income tax"></button>
       <div class="accordion-content">
         <p class="landing-description">Publicly listed companies are required to report tax information in their annual financial statement filings, including cash flows, income statements, and balance sheets. <a href="{{site.baseurl}}/explore/corporate-income-tax/">See information on federal corporate income taxes</a> and data from 2009 to 2013.</p>
       </div>
     </div>
-    <div class="container-half landing-section" accordion-item accordion-open="true">
+    <div class="container-half landing-section" accordion-item accordion-open="false">
       <h5 class="landing-heading"><a href="{{site.baseurl}}/explore/disbursements/">Disbursements</a></h5>
       <button class="accordion-button" accordion-button title="Toggle for disbursements"></button>
       <div class="accordion-content">
@@ -73,14 +73,14 @@ permalink: /explore/
 
 	<section class="container">
 		<a id="production" class="link-no_under"><h3 class="landing-section_category">Production data</h3></a>
-		<div class="container-half landing-section" accordion-item accordion-open="true">
+		<div class="container-half landing-section" accordion-item accordion-open="false">
 			<h5 class="landing-heading"><a href="{{site.baseurl}}/explore/all-lands-production/">All lands and waters</a></h5>
 			<button class="accordion-button" accordion-button title="Toggle for all lands production"></button>
 			<div class="accordion-content">
 				<p class="landing-description">In 2013, total U.S. energy production from oil, gas, mining, and renewables reached 73.67 quadrillion British thermal units (Btus). <a href="{{site.baseurl}}/explore/all-lands-production/">Explore production on all U.S. lands and waters</a> from 2004 to 2013 by state and county.</p>
 			</div>
 		</div>
-		<div class="container-half landing-section" accordion-item accordion-open="true">
+		<div class="container-half landing-section" accordion-item accordion-open="false">
 			<h5 class="landing-heading"><a href="{{site.baseurl}}/explore/federal-production/">Federal lands and waters</a></h5>
 			<button class="accordion-button" accordion-button title="Toggle for federal production"></button>
 			<div class="accordion-content">
@@ -91,21 +91,21 @@ permalink: /explore/
 
 	<section class="container">
 		<a id="economic-impact" name="economic-impact" class="link-no_under"><h3 class="landing-section_category">Economic impact</h3></a>
-		<div class="container-half landing-section" accordion-item accordion-open="true">
+		<div class="container-half landing-section" accordion-item accordion-open="false">
 			<h5 class="landing-heading"><a href="{{site.baseurl}}/explore/gdp/">Gross Domestic Product</a></h5>
 			<button class="accordion-button" accordion-button title="Toggle for GDP"></button>
 			<div class="accordion-content">
 				<p class="landing-description">Extractive industries account for 2.6% of the economy, outpacing utilities, agriculture, and education services in contributions to the national GDP. <a href="{{site.baseurl}}/explore/gdp/">Explore GDP from extractive insustries</a> by state from 2004 to 2013.</p>
 			</div>
 		</div>
-		<div class="container-half landing-section" accordion-item accordion-open="true">
+		<div class="container-half landing-section" accordion-item accordion-open="false">
 			<h5 class="landing-heading"><a href="{{site.baseurl}}/explore/exports/">Exports</a></h5>
 			<button class="accordion-button" accordion-button title="Toggle for exports"></button>
 			<div class="accordion-content">
 				<p class="landing-description">Commodities from extractive industries are among the top exports in 22 states — and, for a few states, these industries accounted for more than 40% of all exports in 2013. <a href="{{site.baseurl}}/explore/exports/">Explore extractive industries exports</a> by state from 2011 to 2013.</p>
 			</div>
 		</div>
-		<div class="container-half landing-section" accordion-item accordion-open="true">
+		<div class="container-half landing-section" accordion-item accordion-open="false">
 			<h5 class="landing-heading"><a href="{{site.baseurl}}/explore/jobs/">Jobs</a></h5>
 			<button class="accordion-button" accordion-button title="Toggle for jobs"></button>
 			<div class="accordion-content">
@@ -119,6 +119,3 @@ permalink: /explore/
     <h3>Not sure where to go? Start here &#8230;</h3>
     <h2><a href="{{ site.baseurl }}/how-it-works/">Learn how natural resources result in federal revenues</a></h2>
 </section> -->
-
-<!-- Accordion -->
-<script src="{{ site.baseurl }}/js/components/accordion.js"></script>

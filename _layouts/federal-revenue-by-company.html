@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+
 <section id="companies" data-year="{{ page.year }}" class="explore-subpage container container-margin">
   <section class="explore-subpage-nav container">
     <div class="explore-subpage-tabs">
@@ -38,12 +39,6 @@ layout: default
   <section class="container-right-8 filters-wrapper_outer">
 
     <div data-absolute="true" data-offset-parent="mobile" class="sticky_nav sticky_nav-show_mobile filters-wrapper container" data-toggler="filters" data-max-width="675">
-      <h1 data-toggler="filters" data-filter-description="" class="filter-description filter-description_closed">
-        <a href="#type-selector" class="filter-part" data-key="type">All revenue</a>
-        from
-        <a href="#commodity-selector" class="filter-part" data-key="commodity">all commodities</a>
-        extraction on federal lands ({{ page.year }})
-      </h1>
       <button class="toggle-filters toggle-desktop" is="eiti-toggle" aria-controls="filters" data-expanded-text="Hide filters" data-collapsed-text="Show filters" data-toggler="filters">Show filters</button>
 
       <form id="filters" aria-hidden="true" class="filters">
@@ -73,26 +68,46 @@ layout: default
 
       </form>
 
-      <div class="container-outer">
+      <h1 data-filter-description="" class="filter-description">
+        <span href="#type-selector" class="filter-part" data-key="type">All revenue</span>
+        from
+        <span href="#commodity-selector" class="filter-part" data-key="commodity">all commodities</span>
+        extraction on federal lands (2013)
+      </h1>
+
+      <div class="container">
         <button class="toggle-filters toggle" is="eiti-toggle" aria-controls="filters" data-expanded-text="Hide filters" data-toggler="filters" data-collapsed-text="Show filters">Show filters</button>
       </div>
 
     </div>
 
+    <div class="filter-description_wrapper">
+      <h1 data-filter-description="" class="filter-description filter-description_open">
+        <span href="#type-selector" class="filter-part" data-key="type">All revenue</span>
+        from
+        <span href="#commodity-selector" class="filter-part" data-key="commodity">all commodities</span>
+        extraction on federal lands (2013)
+      </h1>
+    </div>
+
     <div class="explore-exploration slab-alpha">
 
       <div class="container">
-        <h2 class="h3 region-title">Total revenues by type</h2>
+        <div class="filter-summary_title">
+          <h2 class="h3 region-title">Total revenues by type</h2>
+        </div>
         <table id="revenue-types" class="revenue-type-list subregions">
         </table>
       </div>
 
       <div class="container">
-        <h2 class="h3 region-title">Companies</h2>
-        <div>
-          <label for="company-name-filter">Filter by company name:</label>
-          <input type="text" name="search" id="company-name-filter">
-        </div>
+        <section class="filter-search_section">
+          <h2 class="h3 region-title">Companies</h2>
+          <div class="filter-search_form">
+            <label for="company-name-filter">Filter by company name:</label>
+            <input class="filter-search" type="search" name="search" id="company-name-filter">
+          </div>
+        </section>
         <table id="companies" class="company-list subregions">
         </table>
       </div>

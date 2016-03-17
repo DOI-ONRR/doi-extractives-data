@@ -13,6 +13,8 @@ permalink: /downloads/
 
     <p class="case_studies_intro-para">We use many government datasets on this site to power our <a href="{{ site.baseurl }}/explore/">interactive visualizations</a>. Some of these were created through the USEITI process, and are available here for download. Others come from other government sources. For those, we provide links direct to the source here so you can find fresh data whenever you need it.</p>
 
+    <p class="case_studies_intro-para">The <span class="term term-p" data-term="Independent Administrator" title="Click to define" tabindex="0">Independent Administrator<i class="icon-book"></i></span> also worked with the Multi-Stakeholder Group to develop a PDF that offers an overview of the contextual narrative and reporting and reconciliation processes. <a href="{{site.baseurl}}/about/report/">Download the Executive Summary.</a></p>
+
     <h2 class="downloads-section_heading">Revenue</h2>
 
     <ul class="list-sections">

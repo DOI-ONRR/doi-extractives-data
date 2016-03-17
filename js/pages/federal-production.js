@@ -4,6 +4,8 @@
   // local alias for region id => name lookups
   var REGION_ID_NAME = eiti.data.REGION_ID_NAME;
   var colorscheme = colorbrewer.GnBu;
+  var lightestGreen = '#e6f2e1';
+  colorscheme[3][0] = colorscheme[5][0] = colorscheme[7][0] = lightestGreen;
 
   // our state is immutable!
   var state = new Immutable.Map();
@@ -22,19 +24,6 @@
 
   // buttons that expand and collapse other elements
   var filterToggle = root.select('button.toggle-filters');
-
-  // FIXME: componentize these too
-  var filterParts = root.selectAll('a[data-key]');
-  filterParts.on('click', function(e, index) {
-    var key = filterParts[0][index].getAttribute('data-key');
-    if (key) {
-      root.select('.filters-wrapper').attr('aria-expanded', true);
-      filterToggle.attr('aria-expanded', true);
-      root.select('.filter-description_closed').attr('aria-expanded', true);
-      document.querySelector('#'+ key + '-selector').focus();
-    }
-    d3.event.preventDefault();
-  });
 
   // get the filters and add change event handlers
   var filters = root.selectAll('.filters [name]')

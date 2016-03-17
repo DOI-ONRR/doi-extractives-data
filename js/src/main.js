@@ -10,14 +10,13 @@
   // Custom map projection
   d3.geo.albersCustom = require('../albers-custom');
 
+  // common 3rd-party dependencies
   exports.queue = require('queue-async');
   exports.topojson = require('topojson');
   exports.colorbrewer = require('colorbrewer');
   exports.$ = exports.jQuery = require('jquery');
 
-  // EITI
-  // TODO: require explicit dependencies (such as d3 and queue) in eiti.js
-  // rather than here
+  // EITI site-wide common code
   exports.eiti = require('../eiti');
 
   // custom elements polyfill
@@ -34,8 +33,8 @@
   // built version.
   exports.List = require('../vendor/list');
 
-  // FIXME: does this export anything?
-  require('../components/glossary');
+  exports.Glossary = require('../components/glossary');
+  exports.Accordion = require('../components/accordion');
 
   // Google Analytics
   /* jshint ignore:start */
@@ -49,5 +48,10 @@
   ga('set', 'forceSSL', true);
   ga('send', 'pageview');
   /* jshint ignore:end */
+
+  $(function () {
+    var glossary = new exports.Glossary(),
+      accordion = new exports.Accordion();
+  });
 
 })(window);

@@ -129,7 +129,6 @@
       });
 
       search.property('value', state.get('search') || '');
-
       render(data, state);
     });
   }

@@ -23,7 +23,7 @@ permalink: /downloads/
         Federal revenue by location</h3></a>
         <p>Federal revenue from natural resources extracted from federal land and waters by location. This dataset is from the <a href="http://www.onrr.gov/">Office of Natural Resources Revenue</a>, which is part of the Department of the Interior. It is separated into onshore and offshore data, and is available by calendar year (CY) and fiscal year (FY).</p>
         <a href="{{site.baseurl}}/downloads/federal-revenue-by-location/">
-          <i class="fa fa-file-text-o u-padding-right"></i>Data and documentation
+          <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
         </a>
       </li>
 
@@ -31,7 +31,7 @@ permalink: /downloads/
         <a href="{{site.baseurl}}/downloads/federal-revenue-by-company/" id="revenue-fed-company" class="link-no_under"><h3>Federal revenue by company</h3></a>
         <p>Federal revenue from natural resources extracted from federal land and waters by company. This dataset is from the <a href="http://www.onrr.gov/">Office of Natural Resources Revenue</a>, which is part of the Department of the Interior. It is available for calendar years 2013-2015.</p>
         <a href="{{site.baseurl}}/downloads/federal-revenue-by-company/">
-          <i class="fa fa-file-text-o u-padding-right"></i>Data and documentation
+          <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
         </a>
       </li>
 
@@ -55,7 +55,7 @@ permalink: /downloads/
         <a href="{{site.baseurl}}/downloads/disbursements/" id="disbursements" class="link-no_under"><h3>Disbursements</h3></a>
         <p>The amount of money earned from extraction of natural resources on federal lands that is disbursed to various legislated funds. Our fund overview dataset is from the <a href="http://www.onrr.gov/">Office of Natural Resources Revenue</a>, which is part of the Department of the Interior. In addition, we have more detailed datasets on two of the funds: <a href="https://www.doi.gov/lwcf">Land and Water Conservation Fund</a> (LWCF) and <a href="http://www.nps.gov/subjects/historicpreservation/NHPA-50.htm">National Historic Preservation Act</a> (NHPA).</p>
         <a href="{{site.baseurl}}/downloads/disbursements/">
-          <i class="fa fa-file-text-o u-padding-right"></i>Data and documentation
+          <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
         </a>
       </li>
 
@@ -75,7 +75,7 @@ permalink: /downloads/
         <a href="{{site.baseurl}}/downloads/federal-production/" id="production-fed" class="link-no_under"><h3>Federal lands and waters</h3></a>
         <p>Commodity volumes of natural resources extracted from federal land and waters. This dataset is from the <a href="http://www.onrr.gov/">Office of Natural Resources Revenue</a> (ONRR), which is part of the Department of the Interior. It has data from 2005 to 2014 by state and county for 55 individual products.</p>
         <a href="{{site.baseurl}}/downloads/federal-production/">
-          <i class="fa fa-file-text-o u-padding-right"></i>Data and documentation
+          <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation
         </a>
       </li>
 

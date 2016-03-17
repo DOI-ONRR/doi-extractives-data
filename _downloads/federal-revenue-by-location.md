@@ -70,7 +70,7 @@ permalink: /downloads/federal-revenue-by-location/
     <p><strong>Revenue Type.</strong> Revenues from U.S. natural resources fall into one of several types:
       <ul class="list-bullet">
         <li><strong>Royalties. </strong>
-          A natural resource lease owner pays royalties after the lease starts producing a commodity in <span class="term term-p" data-term="paying quantities" title="Click to define" tabindex="0">paying quantities<i class="icon-book"></i></span>. The amount is based on a percentage of the revenue from the commodity sold. The exact percentage is set in the original lease document that went along with the lease sale.</li>
+          A natural resource lease owner pays royalties after the lease starts producing a commodity in <span class="term term-p" data-term="paying quantities" title="Click to define" tabindex="0">paying quantities<icon class="icon-book"></icon></span>. The amount is based on a percentage of the revenue from the commodity sold. The exact percentage is set in the original lease document that went along with the lease sale.</li>
         <li><strong>Bonus. </strong>
           The amount paid by the highest successful bidder for a natural resource lease. The winning bid.</li>
         <li><strong>Other revenues. </strong>

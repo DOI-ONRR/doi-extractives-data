@@ -13,7 +13,7 @@ permalink: /downloads/
 
     <p class="case_studies_intro-para">We use many government datasets on this site to power our <a href="{{ site.baseurl }}/explore/">interactive visualizations</a>. Some of these were created through the USEITI process, and are available here for download. Others come from other government sources. For those, we provide links direct to the source here so you can find fresh data whenever you need it.</p>
 
-    <p class="case_studies_intro-para">The <span class="term term-p" data-term="Independent Administrator" title="Click to define" tabindex="0">Independent Administrator<i class="icon-book"></i></span> also worked with the Multi-Stakeholder Group to develop a PDF that offers an overview of the contextual narrative and reporting and reconciliation processes. <a href="{{site.baseurl}}/about/report/">Download the Executive Summary.</a></p>
+    <p class="case_studies_intro-para">The <span class="term term-p" data-term="Independent Administrator" title="Click to define" tabindex="0">Independent Administrator<icon class="icon-book"></icon></span> also worked with the Multi-Stakeholder Group to develop a PDF that offers an overview of the contextual narrative and reporting and reconciliation processes. <a href="{{site.baseurl}}/about/report/">Download the Executive Summary.</a></p>
 
     <h2 class="downloads-section_heading">Revenue</h2>
 
@@ -103,7 +103,7 @@ permalink: /downloads/
         <a href="http://www.bls.gov/cew/datatoc.htm">Go to BLS quarterly census &#8594;
         </a>
 
-        <p class="u-margin-top">The other type of jobs data we use is <em>Self-Employment</em>. This data describes the number of people (full-time and part-time) that are self-employed in natural resource extraction. Self-employed people don’t receive wages or salaries because they own their company, either as a sole proprietor, partnership, or small business. This data comes from comes from the <a href="http://www.bea.gov/">Bureau of Economic Analysis</a>, or BEA, but must be calculated, by subtracting SA27N Full- and Part-Time Wage and Salary Employment by <span class="term term-p" data-term="north american industry classification system (naics)" title="Click to define" tabindex="0">NAICS<i class="icon-book"></i></span> Industry from SA25N Full- and Part-Time Employment by NAICS Industry. We also have <a href="https://github.com/18F/doi-extractives-data/wiki/Data-Catalog#self-employment">notes on using this data</a> from our web development team.</p>
+        <p class="u-margin-top">The other type of jobs data we use is <em>Self-Employment</em>. This data describes the number of people (full-time and part-time) that are self-employed in natural resource extraction. Self-employed people don’t receive wages or salaries because they own their company, either as a sole proprietor, partnership, or small business. This data comes from comes from the <a href="http://www.bea.gov/">Bureau of Economic Analysis</a>, or BEA, but must be calculated, by subtracting SA27N Full- and Part-Time Wage and Salary Employment by <span class="term term-p" data-term="north american industry classification system (naics)" title="Click to define" tabindex="0">NAICS<icon class="icon-book"></icon></span> Industry from SA25N Full- and Part-Time Employment by NAICS Industry. We also have <a href="https://github.com/18F/doi-extractives-data/wiki/Data-Catalog#self-employment">notes on using this data</a> from our web development team.</p>
         <a href="http://www.bea.gov/">Go to BEA &#8594;
         </a>
       </li>

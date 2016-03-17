@@ -84,7 +84,7 @@ permalink: /explore/
 			<h5 class="landing-heading"><a href="{{site.baseurl}}/explore/federal-production/">Federal lands and waters</a></h5>
 			<button class="accordion-button" accordion-button title="Toggle for federal production"></button>
 			<div class="accordion-content">
-				<p class="landing-description">In 2013, 40.3% of coal, 23.1% of crude oil and <span class="term term-p" data-term="lease condensate" title="Click to define" tabindex="0">lease condensate<i class="icon-book"></i></span>, and 15.9% of natural gas extraction in the U.S. took place on federal lands. <a href="{{site.baseurl}}/explore/federal-production/">Explore production on federal lands and waters</a> from 2005 to 2014 by state and county for 36 individual products.</p>
+				<p class="landing-description">In 2013, 40.3% of coal, 23.1% of crude oil and <span class="term term-p" data-term="lease condensate" title="Click to define" tabindex="0">lease condensate<icon class="icon-book"></icon></span>, and 15.9% of natural gas extraction in the U.S. took place on federal lands. <a href="{{site.baseurl}}/explore/federal-production/">Explore production on federal lands and waters</a> from 2005 to 2014 by state and county for 36 individual products.</p>
 			</div>
 		</div>
 	</section>

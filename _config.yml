@@ -6,7 +6,7 @@ description: USEITI is part of an international effort to promote open and accou
 url: https://useiti.doi.gov
 
 # app version number
-version: v1.2.1
+version: v1.3.0
 
 sass:
   style: nested

@@ -172,6 +172,7 @@
   }
 
   function renderLayer(path) {
+
     return function(selection) {
       selection.each(function(d) {
         var layer = d3.select(this)

@@ -3,6 +3,8 @@
 
   // local alias for region id => name lookups
   var REGION_ID_NAME = eiti.data.REGION_ID_NAME;
+
+  console.log(REGION_ID_NAME)
   var colorscheme = colorbrewer.GnBu;
   var lightestGreen = '#e6f2e1';
   colorscheme[3][0] = colorscheme[5][0] = colorscheme[7][0] = lightestGreen;

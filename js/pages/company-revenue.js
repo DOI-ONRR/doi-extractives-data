@@ -211,12 +211,12 @@
       .attr('class', 'company subgroup')
       .append('tr')
         .attr('class', 'name');
-    enter.append('th')
+    enter.append('td')
       .attr('class', 'subregion-name')
       .text(getter('name'));
-    enter.append('th')
+    enter.append('td')
       .attr('class', 'subtotal value');
-    enter.append('th')
+    enter.append('td')
       .attr('class', 'subtotal-label');
 
     items.sort(function(a, b) {

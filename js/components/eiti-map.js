@@ -232,9 +232,9 @@
           link
             .filter(function(d) { return !d.mesh; })
             .attr('xlink:data-href', href)
-            .attr('xlink:href', evaluator("'#' + id"))
-            .attr('xlink:name', evaluator("id"))
-            .attr('xlink:title', evaluator("id"));
+            .attr('xlink:href', evaluator('"#" + id'))
+            .attr('xlink:name', evaluator('id'))
+            .attr('xlink:title', evaluator('id'));
 
           feature = link.select('path');
 

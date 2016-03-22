@@ -6,14 +6,14 @@
     </button>
   </div>
 
-  <h2 class="drawer-header"><i class="icon-book"></i> Glossary </h2>
+  <h1 class="h2 drawer-header"><icon class="icon-book"></icon> Glossary </h1>
   <label for="drawer-search" class="label">Filter glossary terms</label>
   <input class="js-glossary-search drawer-search" type="search" placeholder="e.g. Fossil fuel">
   <div id="glossary-result">
     <ul class="js-glossary-list" accordion>
       {% for term in site.data.terms %}
       <li class="glossary-item" accordion-item accordion-open="false">
-        <h5 class="glossary-term">{{term[0]}}</h5>
+        <h2 class="h5 glossary-term">{{term[0]}}</h2>
         <button accordion-button class="accordion-button" title="Toggle for {{term[0]}}"></button>
         <p class="glossary-definition accordion-content">{{term[1]}}</p>
       </li>

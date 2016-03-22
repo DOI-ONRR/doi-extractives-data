@@ -60,7 +60,7 @@ $term-width-max: 220px;
 // Markup:
 // <p>What are <span class="term {{modifier_class}}" data-term="extractive industry" title="Click to define" tabindex="0">
 //     extractive industries
-//     <i class="icon-book"></i>
+//     <icon class="icon-book"></icon>
 // </span>, Brian asked inquisitively</p>
 //
 // Styleguide components.drawer.term
@@ -79,7 +79,7 @@ $term-width-max: 220px;
     text-decoration: none;
   }
 
-  i {
+  icon {
     font-size: 0.75em;
 
     &:before {

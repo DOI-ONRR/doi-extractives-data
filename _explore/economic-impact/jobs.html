@@ -12,7 +12,7 @@ permalink: /explore/jobs/
       </div>
       <h1>Jobs</h1>
 
-      <p>Explore <span class="term term-p" data-term="extractive industry" title="Click to define" tabindex="0">extractive industries<i class="icon-book"></i></span> jobs from 2004 to 2013 by state.</p>
+      <p>Explore <span class="term term-p" data-term="extractive industry" title="Click to define" tabindex="0">extractive industries<icon class="icon-book"></icon></span> jobs from 2004 to 2013 by state.</p>
 
       <p>There are two types of jobs data here:</p>
 
@@ -23,27 +23,19 @@ permalink: /explore/jobs/
       <p>Both datasets are calendar year data.</p>
 
       <a href="{{site.baseurl}}/downloads/#jobs">
-        <i class="fa fa-file-text-o u-padding-right"></i>Data and documentation &#8594;
+        <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation &#8594;
       </a>
 
     </div>
   </div>
   <section class="container-right-8 filters-wrapper_outer">
     <div data-absolute="true" data-offset-parent="mobile" class="sticky_nav sticky_nav-show_mobile filters-wrapper container" data-toggler="filters" data-max-width="675">
-      <h1 data-toggler="filters" data-filter-description="" class="filter-description filter-description_closed">
-        <a href="#units-selector" class="filter-part" data-key="units">Number</a>
-        of
-        <a href="#figure-selector" class="filter-part" data-key="figure">wage and salary</a>
-        extractive industry jobs in
-        <a href="#region-selector" class="filter-part" data-key="region">the entire U.S.</a>
-        (<a href="#year-selector" class="filter-part" data-key="year">2013</a>)
-      </h1>
 
       <button class="toggle-filters toggle-desktop" is="eiti-toggle" aria-controls="filters" data-expanded-text="Hide filters" data-collapsed-text="Show filters" data-toggler="filters">Show filters</button>
 
       <form id="filters" aria-hidden="true" class="filters">
         <div class="filters-heading">
-          <h3>Filter jobs</h3>
+          <h2 class="h3">Filter jobs</hz>
         </div>
 
         <div class="container-left-6 filter">
@@ -87,25 +79,34 @@ permalink: /explore/jobs/
             min="2004" max="2013" snap="1" value="2013">
           </eiti-slider>
         </div>
-
-        <h1 data-toggler="filters" data-filter-description="" class="filter-description">
-          <a href="#units-selector" class="filter-part" data-key="units">Number</a>
-          of
-          <a href="#figure-selector" class="filter-part" data-key="figure">wage and salary</a>
-          extractive industry jobs in
-          <a href="#region-selector" class="filter-part" data-key="region">the entire U.S.</a>
-          (<a href="#year-selector" class="filter-part" data-key="year">2013</a>)
-        </h1>
-
       </form>
 
-      <div class="container-outer">
+      <h1 data-filter-description="" class="filter-description">
+        <span href="#units-selector" class="filter-part" data-key="units">Number</span>
+        of
+        <span href="#figure-selector" class="filter-part" data-key="figure">wage and salary</span>
+        extractive industry jobs in
+        <span href="#region-selector" class="filter-part" data-key="region">the entire U.S.</span>
+        (<span href="#year-selector" class="filter-part" data-key="year">2013</span>)
+      </h1>
+
+      <div class="container">
         <button class="toggle-filters toggle" is="eiti-toggle" aria-controls="filters" data-expanded-text="Hide filters" data-collapsed-text="Show Filters" data-toggler="filters">Show filters</button>
       </div>
 
     </div>
 
+  </div>
 
+  <div class="filter-description_wrapper">
+    <h1 data-filter-description="" class="filter-description filter-description_open">
+      <span href="#units-selector" class="filter-part" data-key="units">Number</span>
+      of
+      <span href="#figure-selector" class="filter-part" data-key="figure">wage and salary</span>
+      extractive industry jobs in
+      <span href="#region-selector" class="filter-part" data-key="region">the entire U.S.</span>
+      (<span href="#year-selector" class="filter-part" data-key="year">2013</span>)
+    </h1>
   </div>
 
   <div class="explore-exploration slab-alpha">
@@ -132,7 +133,7 @@ permalink: /explore/jobs/
           <div class="map-legend"></div>
         </div>
 
-        <h3 class="region-header-category">Jobs by state</h3>
+        <h2 class="region-header-category">Jobs by state</h2>
         <table class="subregions">
           <thead class="region-header"></thead>
           <tbody></tbody>
@@ -162,7 +163,7 @@ permalink: /explore/jobs/
           <div class="map-legend"></div>
         </div>
 
-        <h3 class="region-header-category">Jobs in {{ region.name }}</h3>
+        <h2 class="region-header-category">Jobs in {{ region.name }}</h2>
         <table class="subregions">
           <thead class="region-header"></thead>
           <tbody></tbody>

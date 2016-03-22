@@ -12,33 +12,28 @@ permalink: /explore/all-lands-production/
       </div>
       <h1>All Lands Production</h1>
 
-      <p>Explore production of natural gas, crude oil, coal, and <span class="term term-p" data-term="renewable energy" title="Click to define" tabindex="0">renewable energy<i class="icon-book"></i></span> on all lands and waters from 2004 to 2013.</p>
+      <p>Explore production of natural gas, crude oil, coal, and <span class="term term-p" data-term="renewable energy" title="Click to define" tabindex="0">renewable energy<icon class="icon-book"></icon></span> on all lands and waters from 2004 to 2013.</p>
 
       <p>This data comes from the Energy Information Administration and is calendar year data.</p>
 
       <p>At first, this map shows which states have production data for at least one product. Select a product to show production amounts in the appropriate unit of measure.</p>
 
       <a href="{{site.baseurl}}/downloads/#production-all">
-        <i class="fa fa-file-text-o u-padding-right"></i>Data and documentation</a>
+        <icon class="fa fa-file-text-o u-padding-right"></icon>Data and documentation</a>
 
     </div>
   </div>
   <section class="container-right-8 filters-wrapper_outer">
     <div data-absolute="true" data-offset-parent="mobile" class="sticky_nav sticky_nav-show_mobile filters-wrapper container" data-toggler="filters" data-max-width="675">
-      <h1 data-toggler="filters" data-filter-description="" class="filter-description filter-description_closed">
-        <a href="#product-selector" class="filter-part" data-key="product">All</a>
-        production on all lands and waters in
-        <a href="#region-selector" class="filter-part" data-key="region">the entire U.S.</a>
-        (<a href="#year-selector" class="filter-part" data-key="year">2013</a>)
-      </h1>
+
       <button class="toggle-filters toggle-desktop" is="eiti-toggle"
         aria-controls="filters" aria-expanded="false"
         data-expanded-text="Hide filters" data-collapsed-text="Show filters" data-toggler="filters">Show filters</button>
 
-      <form id="filters" aria-hidden="true" class="filters container-outer">
+      <form id="filters" aria-hidden="true" class="filters">
 
         <div class="filters-heading">
-          <h3>Filter all lands production</h3>
+          <h2 class="h3">Filter all lands production</h2>
 
           <p>Select a product to see production levels in the appropriate unit of measure.</p>
         </div>
@@ -80,19 +75,29 @@ permalink: /explore/all-lands-production/
             min="2004" max="2013" snap="1" value="2013">
           </eiti-slider>
         </div>
-        <h1 data-toggler="filters" data-filter-description="" class="filter-description">
-          <a href="#product-selector" class="filter-part" data-key="product">All</a>
-          production on all lands and waters in
-          <a href="#region-selector" class="filter-part" data-key="region">the entire U.S.</a>
-          (<a href="#year-selector" class="filter-part" data-key="year">2013</a>)
-        </h1>
 
       </form>
 
-      <div class="container-outer">
+      <h1 data-filter-description="" class="filter-description">
+        <span href="#product-selector" class="filter-part" data-key="product">All</span>
+        production on all lands and waters in
+        <span href="#region-selector" class="filter-part" data-key="region">the entire U.S.</span>
+        (<span href="#year-selector" class="filter-part" data-key="year">2013</span>)
+      </h1>
+
+      <div class="container">
         <button class="toggle-filters toggle" is="eiti-toggle" aria-controls="filters" data-expanded-text="Hide filters" data-collapsed-text="Show filters" data-toggler="filters">Show filters</button>
       </div>
 
+    </div>
+
+    <div class="filter-description_wrapper">
+      <h1 data-filter-description="" class="filter-description filter-description_open">
+        <span href="#product-selector" class="filter-part" data-key="product">All</span>
+        production on all lands and waters in
+        <span href="#region-selector" class="filter-part" data-key="region">the entire U.S.</span>
+        (<span href="#year-selector" class="filter-part" data-key="year">2013</span>)
+      </h1>
     </div>
 
     <div class="explore-exploration slab-alpha">
@@ -126,7 +131,7 @@ permalink: /explore/all-lands-production/
             <div class="map-legend"></div>
           </div>
 
-          <h3 class="region-header-category">Production by state or offshore area <span class="units"></span></h3>
+          <h2 class="region-header-category">Production by state or offshore area <span class="units"></span></h2>
           <table class="subregions">
             <thead class="region-header"></thead>
             <tbody></tbody>
@@ -156,7 +161,7 @@ permalink: /explore/all-lands-production/
             <div class="map-legend"></div>
           </div>
 
-          <h3 class="region-header-category">Production in {{ region.name }}<span class="units"></span></h3>
+          <h2 class="region-header-category">Production in {{ region.name }}<span class="units"></span></h2>
           <table class="subregions">
             <thead class="region-header"></thead>
             <tbody></tbody>
@@ -186,7 +191,7 @@ permalink: /explore/all-lands-production/
             <div class="map-legend"></div>
           </div>
 
-          <h3 class="region-header-category">Production by offshore area <span class="units"></span></h3>
+          <h2 class="region-header-category">Production by offshore area <span class="units"></span></h2>
           <table class="subregions">
             <thead class="region-header"></thead>
             <tbody></tbody>

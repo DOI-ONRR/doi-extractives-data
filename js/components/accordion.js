@@ -1,10 +1,12 @@
-(function() {
+(function(exports) {
+  'use strict';
 
-  var Accordion = function() {
+  exports.Accordion = function() {
     this.accordionButtons = document.querySelectorAll('[accordion-button]');
+    this.registerEventListeners();
   };
 
-  Accordion.prototype = {
+  exports.Accordion.prototype = {
     /**
      * Used to traverse up the DOM tree to find a parent with
      * the a specific attribute
@@ -28,7 +30,6 @@
      * @return void
      */
     toggleAccordion: function (e) {
-
       var e = e || window.event;
       var target = e.target || e.srcElement;
 
@@ -45,24 +46,13 @@
      * @return void
      */
     registerEventListeners: function () {
-      var nextStep = false;
       for (var i = 0; i < this.accordionButtons.length; i++) {
         this.accordionButtons[i].addEventListener('click',
           this.toggleAccordion.bind(this));
-
-        if (this.accordionButtons[i].classList.contains('accordion-button')) {
-          if (nextStep) {
-            this.accordionButtons[i].click();
-          } else {
-            nextStep = true;
-          }
-        }
       }
     }
   };
 
-  var accordion = new Accordion();
-
-  accordion.registerEventListeners();
+  module.exports = exports.Accordion;
 
 })(this);

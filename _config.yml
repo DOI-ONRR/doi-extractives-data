@@ -44,3 +44,6 @@ defaults:
       collection: company-data
     values:
       layout: federal-revenue-by-company
+
+shruggie:
+  - d8394cf27efbf8ae2f96ee12788eb257f4358a42

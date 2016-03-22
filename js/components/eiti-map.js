@@ -228,10 +228,8 @@
             .append('path')
               .append('title');
 
-          var href = evaluator(this.getAttribute('data-href'));
           link
             .filter(function(d) { return !d.mesh; })
-            .attr('xlink:data-href', href)
             .attr('xlink:href', evaluator('"#" + id'))
             .attr('xlink:name', evaluator('id'))
             .attr('xlink:title', evaluator('id'));

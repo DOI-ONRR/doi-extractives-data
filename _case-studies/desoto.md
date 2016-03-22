@@ -22,7 +22,7 @@ nav_items:
 
 <h1 class="h3"><a name="intro" class="case_studies_content-heading" data-nav-header="intro">{{ page.title }}</a></h1>
 
-For years, natural gas production in the Haynesville Shale in the southern U.S. was too difficult and costly. However, in the mid- to late-2000s, advances in <span class="term term-p" data-term="hydraulic fracturing" title="Click to define" tabindex="0">hydraulic fracturing<i class="icon-book"></i></span> and horizontal drilling techniques, as well as rising natural gas prices, made extracting natural gas in the region both technically feasible and profitable for the extractive industries.
+For years, natural gas production in the Haynesville Shale in the southern U.S. was too difficult and costly. However, in the mid- to late-2000s, advances in <span class="term term-p" data-term="hydraulic fracturing" title="Click to define" tabindex="0">hydraulic fracturing<icon class="icon-book"></icon></span> and horizontal drilling techniques, as well as rising natural gas prices, made extracting natural gas in the region both technically feasible and profitable for the extractive industries.
 
 {% include case-studies/_selector.html screen="mobile" %}
 
@@ -36,7 +36,7 @@ The Haynesville sedimentary rock formation rests 10,000 feet to 13,000 feet belo
 
 From 2007 to 2011, natural gas production quadrupled in northern Louisiana, where DeSoto Parish is located.[^2] More recently, declining natural gas prices have resulted in lower production numbers. In 2013, northern Louisiana produced a total of 1,858,222,187 thousand cubic feet (or Mcf) of natural gas.[^3]
 
-In 2013, the U.S. Energy Information Administration estimated that there were 16.1 trillion cubic feet of <span class="term term-p" data-term="proved reserves" title="Click to define" tabindex="0">proved reserves<i class="icon-book"></i></span> in the Haneysville/Bossier Shale in Texas and Louisiana.[^4]
+In 2013, the U.S. Energy Information Administration estimated that there were 16.1 trillion cubic feet of <span class="term term-p" data-term="proved reserves" title="Click to define" tabindex="0">proved reserves<icon class="icon-book"></icon></span> in the Haneysville/Bossier Shale in Texas and Louisiana.[^4]
 
 <img src="{{ site.baseurl }}/img/counties/la-production.png" alt="Northern Louisiana Natural Gas Production" class="case_studies_content-graph">
 
@@ -66,7 +66,7 @@ Since 2008, Louisiana has invested $1.1 billion in transportation projects in th
 
 Louisiana completed a Hydraulic Fracturing State Review in March 2011, which explains the state’s policies around industrial water use and wastewater reuse and/or disposal. However, the review does not itemize public expenditures on water-related infrastructure for industrial activities.[^24]
 
-The DeSoto Parish Emergency Medical Services (EMS) Department formed in 2001, funded by a four percent <span class="term term-p" data-term="millage tax" title="Click to define" tabindex="0">millage tax<i class="icon-book"></i></span>.[^25] Since then, the DeSoto EMS Department has worked closely with gas companies on safety measures, including answering numerous calls related to gas-well site incidents. The parish is not bearing the full burden of these incidents; the parish has received donations from private companies to offset equipment costs. The frequency and value of the donations is not published.
+The DeSoto Parish Emergency Medical Services (EMS) Department formed in 2001, funded by a four percent <span class="term term-p" data-term="millage tax" title="Click to define" tabindex="0">millage tax<icon class="icon-book"></icon></span>.[^25] Since then, the DeSoto EMS Department has worked closely with gas companies on safety measures, including answering numerous calls related to gas-well site incidents. The parish is not bearing the full burden of these incidents; the parish has received donations from private companies to offset equipment costs. The frequency and value of the donations is not published.
 
 <h2 class="h3"><a name="data" class="case_studies_content-heading" data-nav-header="data">Data availability</a></h2>
 
@@ -88,7 +88,7 @@ The table below highlights data sources used to compile this narrative, as well 
     </tr>
     <tr>
       <td>Employment</td>
-      <td>The Bureau of Labor Statistics (BLS) Quarterly Census of Employment and Wages published employment data for extractive industries support activities for 2013. U.S. Census Bureau Censtats data on County Business Patterns provided historical employment data for the complete mining industry (<span class="term term-p" data-term="north american industry classification system (naics)" title="Click to define" tabindex="0">NAICS<i class="icon-book"></i></span> code: 21) for the parish. For any employment estimates identified using the letter-coded ranges (e.g., “a” = 0–19 employees), the average number was used (e.g., “a” = 9.5 employees).</td>
+      <td>The Bureau of Labor Statistics (BLS) Quarterly Census of Employment and Wages published employment data for extractive industries support activities for 2013. U.S. Census Bureau Censtats data on County Business Patterns provided historical employment data for the complete mining industry (<span class="term term-p" data-term="north american industry classification system (naics)" title="Click to define" tabindex="0">NAICS<icon class="icon-book"></icon></span> code: 21) for the parish. For any employment estimates identified using the letter-coded ranges (e.g., “a” = 0–19 employees), the average number was used (e.g., “a” = 9.5 employees).</td>
       <td>BLS data does not include employment in the oil and gas industry more broadly, only in support activities. For DeSoto Parish, Censtats did not have employment data specifically for the oil and gas industry (NAICS codes: 211, 213111, 213112), only for the mining industry at large (NAICS code: 21). In addition, the data did not separate employment related to natural gas extraction from the broader oil and gas sector.</td>
     </tr>
     <tr>

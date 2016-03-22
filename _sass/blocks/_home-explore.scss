@@ -116,15 +116,15 @@
 }
 
 .explore_home-img {
-  h4 {
-    @include heading(para-lg);
-    color: $blue;
-    font-weight: $weight-bold;
-  }
-
   img {
     width: 100%;
   }
+}
+
+.explore_home-main_link {
+  @include heading(para-lg);
+  color: $blue;
+  font-weight: $weight-bold;
 }
 
 .explore_home-links {

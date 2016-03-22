@@ -14,12 +14,12 @@
   border-right: 4px $white solid;
   padding: $base-padding;
   text-align: center;
+}
 
-  a {
-    @include heading(para-sm);
-    color: $blue;
-    font-weight: $weight-bold;
-  }
+.about_intro-highlight a {
+  @include heading(para-sm);
+  color: $blue-contrast;
+  font-weight: $weight-bold;
 }
 
 .about_intro-header {

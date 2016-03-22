@@ -18,9 +18,14 @@
   var REVENUE_TYPE_PREFIX = /^[A-Z]+(\/[A-Z]+)?\s+-\s+/;
 
   var sumRevenue = function(data) {
-    return d3.sum(data.filter(function(d) {
-      return d.Revenue !== WITHHELD;
-    }), getter('Revenue'));
+    var withheld = 0;
+    return d3.sum(data, function(d) {
+      if (d.Revenue === WITHHELD) {
+        withheld++;
+        return 0;
+      }
+      return d.Revenue;
+    }) || (withheld === data.length ? WITHHELD : 0);
   };
 
   var state = eiti.explore.stateManager()
@@ -211,12 +216,12 @@
       .attr('class', 'company subgroup')
       .append('tr')
         .attr('class', 'name');
-    enter.append('th')
+    enter.append('td')
       .attr('class', 'subregion-name')
       .text(getter('name'));
-    enter.append('th')
+    enter.append('td')
       .attr('class', 'subtotal value');
-    enter.append('th')
+    enter.append('td')
       .attr('class', 'subtotal-label');
 
     items.sort(function(a, b) {

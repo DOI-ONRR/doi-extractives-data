@@ -81,9 +81,7 @@
     {% include layout/footer.html %}
 
     {% assign ga_id = site.google_analytics[site.branch]|default:site.google_analytics.default %}
-    {% if ga_id %}
-    {% include google_analytics.html id=ga_id %}
-    {% endif %}
+    {% if ga_id %}{% include google_analytics.html id=ga_id %}{% endif %}
 
   </body>
 

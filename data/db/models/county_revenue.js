@@ -1,25 +1,23 @@
-/* jshint node: true */
+/* jshint node: true, esnext: true */
 /* jshint -W106 */
 var sequelize = require('sequelize');
-var REVENUE_COLUMN = 'Royalty/Revenue';
 var parse = require('../../../lib/parse');
+var util = require('../../../lib/util');
 var parserHelper = require('../parser-helper');
+
+const REVENUE_COLUMN = 'Royalty/Revenue';
 
 module.exports = {
   autoparse: false,
   parser: parserHelper(function(input) {
     input.Revenue = parse.dollars(input[REVENUE_COLUMN]);
+    input.Commodity = util.normalizeCommodity(input.Commodity);
     return input;
   }),
 
   models: {
     county_revenue: {
       tableName: 'county_revenue',
-
-      transform: function(row) {
-        row.Revenue = parse.dollars(row[REVENUE_COLUMN]);
-        return row;
-      },
 
       fields: {
         year: {

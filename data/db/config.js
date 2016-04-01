@@ -1,4 +1,5 @@
-/* jshint node */
+/* jshint node: true */
+/* jshint -W106 */
 var getModel = function(name) {
   return require('./models/' + name).models[name];
 };

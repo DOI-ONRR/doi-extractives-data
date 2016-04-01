@@ -1,4 +1,5 @@
-/* jshint node */
+/* jshint node: true */
+/* jshint -W106 */
 var sequelize = require('sequelize');
 var parse = require('../../../lib/parse');
 var parserHelper = require('../parser-helper');

@@ -1,4 +1,5 @@
-/* jshint node */
+/* jshint node: true */
+/* jshint -W106 */
 var sequelize = require('sequelize');
 var REVENUE_COLUMN = 'Royalty/Revenue';
 var parse = require('../../../lib/parse');

@@ -16,11 +16,11 @@
     "immutable": "^3.7.6",
     "jquery": "^1.11.3",
     "list.js": "^1.1.1",
-    "topojson": "git://github.com/mbostock/topojson.git#oversize",
+    "topojson": "github:mbostock/topojson#oversize",
     "webpack": "*"
   },
   "devDependencies": {
-    "about-yml-validator": "git+https://github.com/18F/about-yml-npm.git",
+    "about-yml-validator": "github:18F/about-yml-npm",
     "colors": "^1.1.0",
     "data-expression": "^0.3.1",
     "epipebomb": "^0.1.1",
@@ -36,7 +36,7 @@
     "sequelize": "^3.20.0",
     "sqlite3": "^3.1.2",
     "stream-array": "^1.0.1",
-    "tables": "git://github.com/shawnbot/tables#use-tito",
+    "tables": "github:shawnbot/tables#use-tito",
     "through2": "^0.6.5",
     "tito": "^0.3.0",
     "yargs": "^3.7.1"

@@ -7,7 +7,8 @@ var db = new Sequelize('sqlite://data.db', models);
 
 var out = tito.formats.createWriteStream('tsv');
 var query = process.argv[2];
-console.warn('executing:', query);
+
+// console.warn('executing:', query);
 
 db.query(query).spread(function(results, meta) {
   streamify(results)

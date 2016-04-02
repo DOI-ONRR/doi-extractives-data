@@ -6,12 +6,17 @@ SET
 WHERE
     commodity IN ('Clay', 'Copper', 'Gilsonite', 'Gold', 'Limestone');
 
+-- fill in the product field for rows without it
+UPDATE county_revenue
+SET product = commodity
+WHERE product IS NULL;
+
 -- create "all commodity" rows by county
 DELETE FROM county_revenue WHERE commodity = 'All';
 INSERT INTO county_revenue
-    (year, state, county, fips, commodity, revenue)
+    (year, state, county, fips, commodity, product, revenue)
 SELECT
-    year, state, county, fips, 'All', SUM(revenue)
+    year, state, county, fips, 'All', 'All', SUM(revenue)
 FROM county_revenue
 GROUP BY
     year, state, county, fips;
@@ -28,12 +33,17 @@ GROUP BY
 -- create "all commodity" rows by offshore region
 DELETE FROM offshore_revenue WHERE commodity = 'All';
 INSERT INTO offshore_revenue
-    (year, region, planning_area, offshore_area, protraction, commodity, revenue)
+    (year, region, planning_area, offshore_area, protraction, commodity, product, revenue)
 SELECT
-    year, region, planning_area, offshore_area, protraction, 'All', SUM(revenue)
+    year, region, planning_area, offshore_area, protraction, 'All', 'All', SUM(revenue)
 FROM offshore_revenue
 GROUP BY
     year, region, planning_area, offshore_area, protraction;
+
+-- fill in the product field for rows without it
+UPDATE offshore_revenue
+SET product = commodity
+WHERE product IS NULL;
 
 -- create regional revenue view as an aggregate view
 -- on state and offshore revenue

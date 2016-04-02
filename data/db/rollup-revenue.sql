@@ -1,4 +1,4 @@
--- fix badly categorized commodities
+-- fix mis-categorized commodities
 UPDATE county_revenue
 SET
     product = commodity,

@@ -1,3 +1,11 @@
+-- fix badly categorized commodities
+UPDATE county_revenue
+SET
+    product = commodity,
+    commodity = 'Other'
+WHERE
+    commodity IN ('Clay', 'Copper', 'Gilsonite', 'Gold', 'Limestone');
+
 -- create "all commodity" rows by county
 DELETE FROM county_revenue WHERE commodity = 'All';
 INSERT INTO county_revenue

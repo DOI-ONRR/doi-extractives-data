@@ -21,18 +21,16 @@ $tables -d "sqlite://${db}" -i _input/geo/offshore/areas.tsv \
 
 # Federal Revenue
 load _input/onrr/county-revenues.tsv county_revenue
+# Offshore Revenue
+load _input/onrr/offshore-revenues.tsv offshore_revenue
+# update revenue rollups
+load_sql db/rollup-revenue.sql
 
 # Federal Production
 load _input/onrr/county-production.tsv county_production
-
-# Offshore Revenue
-load _input/onrr/offshore-revenues.tsv offshore_revenue
-
 # Offshore Production
 load _input/onrr/offshore-production.tsv offshore_production
-
-# update revenue and production views
-load_sql db/rollup-revenue.sql
+# update production rollups
 load_sql db/rollup-production.sql
 
 # output some rows for debugging purposes
@@ -50,4 +48,11 @@ load_sql db/rollup-production.sql
 for company_filename in _input/onrr/company-revenue/*.tsv; do
     filename=${company_filename##*/}
     COMPANY_YEAR="${filename%%.*}" load $company_filename company_revenue
+done
+
+# Bureau of Labor Statistics (BLS) data comes in one file per year, too, but
+# each row contains a year
+for bls_filename in _input/bls/????/extractives.csv; do
+    filename=${bls_filename##*/}
+    LABOR_YEAR="${filename%%.*}" load $bls_filename bls_employment
 done

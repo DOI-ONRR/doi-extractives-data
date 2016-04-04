@@ -27,11 +27,11 @@ load _input/onrr/offshore-revenues.tsv offshore_revenue
 load_sql db/rollup-revenue.sql
 
 # Federal Production
-load _input/onrr/county-production.tsv county_production
+load _input/onrr/county-production.tsv federal_county_production
 # Offshore Production
-load _input/onrr/offshore-production.tsv offshore_production
+load _input/onrr/offshore-production.tsv federal_offshore_production
 # update production rollups
-load_sql db/rollup-production.sql
+load_sql db/rollup-federal-production.sql
 
 # output some rows for debugging purposes
 ./bin/query.js "
@@ -40,7 +40,7 @@ load_sql db/rollup-production.sql
 
 # output some rows for debugging purposes
 ./bin/query.js "
-    SELECT * FROM national_production
+    SELECT * FROM federal_national_production
     WHERE commodity LIKE 'Oil%'"
 
 # company data comes in one file per year; the model definition

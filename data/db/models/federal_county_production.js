@@ -6,46 +6,38 @@ var util = require('../../../lib/util');
 var parserHelper = require('../parser-helper');
 
 const VOLUME_COLUMN = 'Sales Volumes';
-const REGION_COLUMN = 'Offshore Region';
 
 module.exports = {
   autoparse: false,
   parser: parserHelper(function(input) {
     input.Volume = parse.number(input[VOLUME_COLUMN]);
-    input.Region = util.normalizeOffshoreRegion(input[REGION_COLUMN]);
     input.Commodity = util.normalizeCommodity(input.Commodity);
     return input;
   }),
 
   models: {
-    offshore_production: {
-      tableName: 'offshore_production',
-
+    federal_county_production: {
+      tableName: 'federal_county_production',
       fields: {
         year: {
           input: 'Calendar Year',
           name: 'year',
           type: new sequelize.INTEGER(4).UNSIGNED
         },
-        region: {
-          input: REGION_COLUMN,
-          name: 'region',
+        state: {
+          input: 'St',
+          name: 'state',
+          type: new sequelize.STRING(2)
+        },
+        county: {
+          input: 'County Name',
+          name: 'county',
           type: new sequelize.STRING(32)
         },
-        planning_area: {
-          input: 'Planning Area',
-          name: 'planning_area',
-          type: new sequelize.STRING(32)
-        },
-        offshore_area: {
-          input: 'Offshore Area',
-          name: 'offshore_area',
-          type: new sequelize.STRING(32)
-        },
-        protraction: {
-          input: 'Protraction',
-          name: 'protraction',
-          type: new sequelize.STRING(8)
+        fips: {
+          input: 'FIPS',
+          name: 'fips',
+          type: new sequelize.INTEGER(5).UNSIGNED.ZEROFILL
         },
         commodity: {
           input: 'Commodity',

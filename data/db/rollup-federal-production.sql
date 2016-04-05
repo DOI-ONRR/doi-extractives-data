@@ -4,6 +4,7 @@ CREATE VIEW federal_state_production AS
     SELECT
         year, state, commodity, product, SUM(volume) AS volume
     FROM federal_county_production
+    WHERE state != 'Withheld'
     GROUP BY
         year, state, commodity, product;
 

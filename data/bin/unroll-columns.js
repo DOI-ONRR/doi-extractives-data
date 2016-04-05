@@ -1,5 +1,8 @@
 #!/usr/bin/env node
+/* jshint node: true */
 var yargs = require('yargs')
+  .describe('i', 'the input file (defaults to stdin)')
+  .describe('o', 'the output file (defaults to stdout)')
   .describe('columns', 'Column(s) to unroll, separated by commas')
   .describe('destkey', 'Destination column for the unrolled key(s)')
   .default('destkey', 'Year')
@@ -17,7 +20,10 @@ if (options.help) {
   return yargs.showHelp();
 }
 
+const NODATA = '--';
+
 var tito = require('tito');
+var fs = require('fs');
 var through2 = require('through2');
 var extend = require('extend');
 
@@ -27,41 +33,51 @@ var keys = options.columns
 var destkey = options.destkey;
 var valkey = options.valkey;
 var skip = options.skip ? options.skip.split(/\s*,\s*/) : null;
-var NODATA = '--';
 
-process.stdin
-  .pipe(tito.formats.createReadStream(options['if']))
-  .pipe(through2.obj(function(row, enc, next) {
+var input = options.i ? fs.createReadStream(options.i) : process.stdin;
+var inputFormat = options['if'];
+var output = options.o ? fs.createWriteStream(options.o) : process.stdout;
+var outputFormat = options['of'];
 
-    if (!keys) {
-      keys = Object.keys(row).filter(function(key) {
-        return key.match(/^\d+$/);
-      });
-      // console.warn('keys:', keys);
-    }
+var parse = tito.formats.createReadStream(inputFormat);
+var format = tito.formats.createWriteStream(outputFormat);
 
-    if (skip) {
-      skip.forEach(function(key) {
-        delete row[key];
-      });
-    }
+var isNumeric = function(key) {
+  return key.match(/^\d+$/);
+};
 
-    var unrolled = extend({}, row);
+var unroll = through2.obj(function(row, enc, next) {
+  if (!keys) {
+    keys = Object.keys(row).filter(isNumeric);
+    // console.warn('keys:', keys);
+  }
 
-    keys.forEach(function(key) {
-      delete unrolled[key];
+  if (skip) {
+    skip.forEach(function(key) {
+      delete row[key];
     });
+  }
 
-    keys.forEach(function(key) {
-      var value = row[key];
-      if (value && value !== NODATA) {
-        unrolled[destkey] = key;
-        unrolled[valkey] = row[key];
-        this.push(unrolled);
-      }
-    }, this);
+  var unrolled = extend({}, row);
 
-    next();
-  }))
-  .pipe(tito.formats.createWriteStream(options['of']))
-  .pipe(process.stdout);
+  keys.forEach(function(key) {
+    delete unrolled[key];
+  });
+
+  keys.forEach(function(key) {
+    var value = row[key];
+    if (value && value !== NODATA) {
+      unrolled[destkey] = key;
+      unrolled[valkey] = row[key];
+      this.push(unrolled);
+    }
+  }, this);
+
+  next();
+});
+
+input
+  .pipe(parse)
+  .pipe(unroll)
+  .pipe(format)
+  .pipe(output);

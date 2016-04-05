@@ -16,6 +16,7 @@ if (options.help || !args.length) {
 }
 
 var tito = require('tito');
+var fs = require('fs');
 var streamify = require('stream-array');
 var Sequelize = require('sequelize');
 var models = require('../db/config').models;

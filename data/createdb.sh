@@ -27,7 +27,7 @@ load _input/onrr/offshore-revenues.tsv offshore_revenue
 load_sql db/rollup-revenue.sql
 
 # Federal Production
-load _input/onrr/county-production.tsv federal_county_production
+load _input/onrr/regional-production.tsv federal_county_production
 # Offshore Production
 load _input/onrr/offshore-production.tsv federal_offshore_production
 # update production rollups

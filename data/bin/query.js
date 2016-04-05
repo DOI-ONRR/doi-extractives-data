@@ -39,7 +39,6 @@ db.query(query).spread(function(results) {
     // write an extra line break at the end
     .on('end', function() {
       out.write('\n');
-      process.exit(0);
     })
     .pipe(format)
     .pipe(out);

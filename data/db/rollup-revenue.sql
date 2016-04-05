@@ -78,3 +78,38 @@ CREATE VIEW national_revenue AS
     GROUP BY
         year, commodity, product;
 
+-- create regional rankings views
+DROP TABLE IF EXISTS state_revenue_rank;
+CREATE TABLE state_revenue_rank AS
+    SELECT
+        state.year,
+        state.state,
+        state.product,
+        state.revenue,
+        national.revenue AS total,
+        100 * (state.revenue / national.revenue) AS percent,
+        0 AS rank
+    FROM
+        state_revenue AS state
+    INNER JOIN
+        national_revenue AS national
+    ON
+        national.year = state.year AND
+        national.product = state.product
+    WHERE
+        state.revenue IS NOT NULL AND
+        national.revenue IS NOT NULL
+    ORDER BY
+        state.year,
+        state.product,
+        percent DESC;
+
+UPDATE state_revenue_rank
+SET rank = (
+    SELECT COUNT(distinct inner.percent) AS rank
+    FROM state_revenue_rank AS inner
+    WHERE
+        inner.year = state_revenue_rank.year AND
+        inner.product = state_revenue_rank.product AND
+        inner.percent > state_revenue_rank.percent
+) + 1;

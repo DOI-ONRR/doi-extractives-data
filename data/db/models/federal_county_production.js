@@ -5,13 +5,13 @@ var parse = require('../../../lib/parse');
 var util = require('../../../lib/util');
 var parserHelper = require('../parser-helper');
 
-const VOLUME_COLUMN = 'Sales Volumes';
+const VOLUME_COLUMN = 'Production Volume';
 
 module.exports = {
   autoparse: false,
   parser: parserHelper(function(input) {
     input.Volume = parse.number(input[VOLUME_COLUMN]);
-    input.Commodity = util.normalizeCommodity(input.Commodity);
+    input.Commodity = util.normalizeCommodity(input.Commodity || '');
     return input;
   }),
 
@@ -20,17 +20,17 @@ module.exports = {
       tableName: 'federal_county_production',
       fields: {
         year: {
-          input: 'Calendar Year',
+          input: 'Year',
           name: 'year',
           type: new sequelize.INTEGER(4).UNSIGNED
         },
         state: {
-          input: 'St',
+          input: 'Region',
           name: 'state',
           type: new sequelize.STRING(2)
         },
         county: {
-          input: 'County Name',
+          input: 'Area',
           name: 'county',
           type: new sequelize.STRING(32)
         },
@@ -40,7 +40,6 @@ module.exports = {
           type: new sequelize.INTEGER(5).UNSIGNED.ZEROFILL
         },
         commodity: {
-          input: 'Commodity',
           name: 'commodity',
           type: new sequelize.STRING(32)
         },

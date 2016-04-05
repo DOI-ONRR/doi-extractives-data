@@ -42,7 +42,7 @@ process.stdin
 
     if (skip) {
       skip.forEach(function(key) {
-        delete row[key]
+        delete row[key];
       });
     }
 

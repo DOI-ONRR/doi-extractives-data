@@ -1,5 +1,6 @@
 #!/bin/bash
 db=data.db
+db_url="sqlite://${db}"
 tables=../node_modules/.bin/tables
 
 echo "Dropping: ${db}"
@@ -7,7 +8,7 @@ rm -f $db
 
 load() {
     # echo "loading $1 -> $2..."
-    $tables -d "sqlite://${db}" --config "db/models/${2}.js" -i $1 -n $2
+    $tables -d $db_url --config "db/models/${2}.js" -i $1 -n $2
 }
 
 load_sql() {

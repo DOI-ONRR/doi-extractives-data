@@ -2,7 +2,6 @@
 /* jshint -W106 */
 var sequelize = require('sequelize');
 var parse = require('../../../lib/parse');
-var util = require('../../../lib/util');
 var parserHelper = require('../parser-helper');
 
 const VOLUME_COLUMN = 'Production (short tons)';

@@ -1,5 +1,6 @@
 #!/usr/bin/env node
-/* jshint node: true */
+/* jshint node: true, esnext: true */
+/* jshint -W069 */
 var yargs = require('yargs')
   .describe('i', 'the input file (defaults to stdin)')
   .describe('o', 'the output file (defaults to stdout)')

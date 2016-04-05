@@ -20,18 +20,25 @@ $tables -d $db_url -i _input/geo/states.csv -n states
 $tables -d $db_url -i _input/geo/offshore/areas.tsv \
     -n offshore_planning_areas
 
+# Federal Production
+load _input/onrr/regional-production.tsv federal_county_production
+# Offshore Production
+load _input/onrr/offshore-production.tsv federal_offshore_production
+# update production rollups
+load_sql db/rollup-federal-production.sql
+
 # All Lands Production: Coal
 load _input/eia/commodity/coal.tsv all_production_coal
 # All Lands Production: Oil
 cat _input/eia/commodity/oil.tsv \
     | ./bin/unroll-columns.js \
-        --columns 'US,FL,NY,PA,VA,WV,IL,IN,KS,KY,MI,MO,NE,ND,OH,OK,SD,TN,AL,AR,LA,MS,NM,TX,gulf,CO,MT,UT,WY,AK,,AZ,CA,NV,pacific alaska' \
+        --columns 'FL,NY,PA,VA,WV,IL,IN,KS,KY,MI,MO,NE,ND,OH,OK,SD,TN,AL,AR,LA,MS,NM,TX,gulf,CO,MT,UT,WY,AK,,AZ,CA,NV,pacific alaska' \
         --destkey region --valkey volume --skip ',undefined' --of csv \
     | $tables -d $db_url -n all_production_oil
 # All Lands Production: Natural Gas (part 1)
 cat _input/eia/commodity/naturalgas.tsv \
     | ./bin/unroll-columns.js \
-        --columns US,AK,AR,CA,pacific,CO,gulf,KS,LA,MT,NM,ND,OH,OK,PA,TX,UT,WV,WY \
+        --columns AK,AR,CA,pacific,CO,gulf,KS,LA,MT,NM,ND,OH,OK,PA,TX,UT,WV,WY \
         --destkey region --valkey volume --skip ',undefined' --of csv \
     | $tables -d $db_url -n all_production_naturalgas
 # All Lands Production: Natural Gas (part 2)
@@ -46,20 +53,12 @@ cat _input/eia/commodity/renewables.tsv \
         --destkey year --valkey volume \
         --skip ELEC.GEN.ALL-US-99.A,ELEC.GEN.ALL --of csv \
     | $tables -d $db_url -n all_production_renewables
-
 load_sql db/rollup-all-production.sql
 
 # output some rows for debugging purposes
 ./bin/query.js "
     SELECT * FROM all_national_production
     WHERE year = 2013"
-
-# Federal Production
-load _input/onrr/regional-production.tsv federal_county_production
-# Offshore Production
-load _input/onrr/offshore-production.tsv federal_offshore_production
-# update production rollups
-load_sql db/rollup-federal-production.sql
 
 # Federal Revenue
 load _input/onrr/county-revenues.tsv county_revenue
@@ -76,11 +75,11 @@ load_sql db/rollup-revenue.sql
 # output some rows for debugging purposes
 ./bin/query.js "
     SELECT * FROM federal_national_production
-    WHERE commodity LIKE 'Oil%'"
+    WHERE product LIKE 'Oil%'"
 
 # company data comes in one file per year; the model definition
 # in db/models/company_revenue.js sets the year to $COMPANY_YEAR
-for company_filename in _input/onrr/company-revenue/*.tsv; do
+for company_filename in _input/onrr/company-revenue/????.tsv; do
     filename=${company_filename##*/}
     COMPANY_YEAR="${filename%%.*}" load $company_filename company_revenue
 done
@@ -88,6 +87,5 @@ done
 # Bureau of Labor Statistics (BLS) data comes in one file per year, too, but
 # each row contains a year
 for bls_filename in _input/bls/????/extractives.csv; do
-    filename=${bls_filename##*/}
-    LABOR_YEAR="${filename%%.*}" load $bls_filename bls_employment
+    load $bls_filename bls_employment
 done

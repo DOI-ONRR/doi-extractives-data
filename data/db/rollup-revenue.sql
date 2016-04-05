@@ -22,8 +22,8 @@ GROUP BY
     year, state, county, fips;
 
 -- create state revenue rollups
-DROP VIEW IF EXISTS state_revenue;
-CREATE VIEW state_revenue AS
+DROP TABLE IF EXISTS state_revenue;
+CREATE TABLE state_revenue AS
 SELECT
     year, state, commodity, product, SUM(revenue) AS revenue
 FROM county_revenue
@@ -47,8 +47,8 @@ WHERE product IS NULL;
 
 -- create regional revenue view as an aggregate view
 -- on state and offshore revenue
-DROP VIEW IF EXISTS regional_revenue;
-CREATE VIEW regional_revenue AS
+DROP TABLE IF EXISTS regional_revenue;
+CREATE TABLE regional_revenue AS
     SELECT
         year, state AS region_id, 'state' AS region_type,
         commodity, product, SUM(revenue) AS revenue
@@ -70,8 +70,8 @@ UNION
 
 -- then create national revenue as an aggregate view
 -- on regional revenue
-DROP VIEW IF EXISTS national_revenue;
-CREATE VIEW national_revenue AS
+DROP TABLE IF EXISTS national_revenue;
+CREATE TABLE national_revenue AS
     SELECT
         year, commodity, product, SUM(revenue) AS revenue
     FROM regional_revenue

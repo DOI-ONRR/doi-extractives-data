@@ -1,6 +1,6 @@
 -- create state production rollups
-DROP VIEW IF EXISTS federal_state_production;
-CREATE VIEW federal_state_production AS
+DROP TABLE IF EXISTS federal_state_production;
+CREATE TABLE federal_state_production AS
     SELECT
         year, state, product, SUM(volume) AS volume
     FROM federal_county_production
@@ -14,8 +14,8 @@ CREATE VIEW federal_state_production AS
 
 -- create regional production rollups as an aggregate view on
 -- state and offshore production
-DROP VIEW IF EXISTS federal_regional_production;
-CREATE VIEW federal_regional_production AS
+DROP TABLE IF EXISTS federal_regional_production;
+CREATE TABLE federal_regional_production AS
     SELECT
         year, state AS region_id, 'state' AS region_type,
         product, SUM(volume) AS volume
@@ -37,8 +37,8 @@ ORDER BY
 
 -- then create national revenue rollups as an aggregate view on
 -- regional revenue
-DROP VIEW IF EXISTS federal_national_production;
-CREATE VIEW federal_national_production AS
+DROP TABLE IF EXISTS federal_national_production;
+CREATE TABLE federal_national_production AS
     SELECT
         year, product, SUM(volume) AS volume
     FROM federal_regional_production

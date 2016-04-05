@@ -1,7 +1,7 @@
 -- our regional production view combines all of the commodity-specific
 -- tables into one
-DROP VIEW IF EXISTS all_regional_production;
-CREATE VIEW all_regional_production AS
+DROP TABLE IF EXISTS all_regional_production;
+CREATE TABLE all_regional_production AS
     SELECT
         year, states.abbr AS region,
         'Coal' AS commodity,
@@ -36,8 +36,8 @@ UNION
         volume
     FROM all_production_oil;
 
-DROP VIEW IF EXISTS all_national_production;
-CREATE VIEW all_national_production AS
+DROP TABLE IF EXISTS all_national_production;
+CREATE TABLE all_national_production AS
     SELECT
         year, commodity, product,
         SUM(volume) AS volume

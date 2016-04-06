@@ -20,6 +20,8 @@ exclude:
   - test
   - styleguide-template
   - 'Gemfile*'
+  - '**/*.sh'
+  - data/db
 
 collections:
   case-studies:

@@ -1,0 +1,90 @@
+---
+layout: default
+---
+
+{% assign state_name = page.data.name %}
+{% assign state_id = page.data.id %}
+{% assign year = '2013' %}
+
+{% assign revenue_products = site.data.state_revenues[state_id].products %}
+{% assign revenue_total = revenue_products.All[year] %}
+
+{% assign federal_products = site.data.state_federal_production[state_id].products %}
+{% assign federal_products_num = federal_products | size %}
+
+<main id="state-{{ state_id }}" class="container-outer">
+  <h1>{{ state_name }}</h1>
+
+  <section id="intro-revenue" class="revenue">
+    <h2>Key Facts</h2>
+    <ul>
+
+    {% if revenue_total %}
+      <li>{{ state_name }} generated
+        <strong>${{ revenue_total | intcomma }}
+          in federal revenue</strong> from
+        <a href="#revenue">{{ revenue_products | size }} products</a>
+        in {{ year }}.</li>
+    {% else %}
+      <li>{{ state_name }} generated no federal revenue in {{ year }}.</li>
+    {% endif %}
+
+    {% if federal_products_num > 0 %}
+      <li>{{ state_name }} produced
+        <a href="#federal-production">{{ federal_products | size }} products</a>
+        on federal lands in {{ year }}.</li>
+    {% else %}
+      <li>We have no record of federal production in {{ state_name }} in {{ year }}.</li>
+    {% endif %}
+
+    </ul>
+  </section>
+
+
+  <section id="revenue" class="federal revenue">
+    <h2>Revenue</h2>
+
+    {% for product in revenue_products %}
+    <section id="revenue-{{ product[0] | slugify }}">
+      {% assign revenue = product[1][year] %}
+      {% if product[0] == 'All' %}
+        {% assign product_name = 'All products' %}
+      {% else %}
+        {% assign product_name = product[0] %}
+      {% endif %}
+      <h3>{{ product_name }}</h3>
+      <p>{{ state_name }} generated
+        {% if revenue %}${{ revenue | intcomma }} in
+        {% else %}no{% endif %}
+        federal revenue from {{ product_name | downcase }} in {{ year }}.
+        Historically:</p>
+      <ul>
+        {% for year in product[1] %}
+        <li>{{ year[0] }}: ${{ year[1] | intcomma }}</li>
+        {% endfor %}
+      </ul>
+    </section>
+    {% endfor %}
+  </section>
+
+  <section id="federal-production" class="federal production">
+    <h2>Production on Federal Lands</h2>
+
+    {% for product in federal_products %}
+    <section id="federal-production-{{ product[0] | slugify }}">
+      {% assign product_name = product[0] %}
+      {% assign volume = product[1][year] %}
+      <h3>{{ product[0] }}</h3>
+      <p>{{ state_name }} produced
+        {% if volume %}{{ volume | intcomma }} <i>units</i>
+        {% else %}no{% endif %}
+        {{ product[0] | downcase }} in {{ year }}. Historically:</p>
+      <ul>
+        {% for year in product[1] %}
+        <li>{{ year[0] }}: {{ year[1] | intcomma }}</li>
+        {% endfor %}
+      </ul>
+    </section>
+    {% endfor %}
+  </section>
+</main>

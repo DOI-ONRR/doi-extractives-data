@@ -6,7 +6,7 @@ AK:
         rank: 5
       '2005':
         revenue: 22692079
-        rank: 10
+        rank: 8
       '2006':
         revenue: 25147305
         rank: 9
@@ -15,102 +15,102 @@ AK:
         rank: 8
       '2008':
         revenue: 28812707
-        rank: 12
+        rank: 8
       '2009':
         revenue: 51691695
         rank: 8
       '2010':
         revenue: 22957199
-        rank: 10
+        rank: 9
       '2011':
         revenue: 16666363
-        rank: 11
+        rank: 9
       '2012':
         revenue: 21464041
-        rank: 9
+        rank: 8
       '2013':
         revenue: 19902173
         rank: 9
     Coal:
       '2004':
         revenue: 2560
-        rank: 11
+        rank: 7
       '2005':
         revenue: 7680
-        rank: 10
+        rank: 7
       '2006':
         revenue: 5120
-        rank: 11
+        rank: 8
       '2007':
         revenue: 5120
-        rank: 10
+        rank: 8
       '2008':
         revenue: 5120
-        rank: 10
+        rank: 7
     Coal Bed Methane:
       '2011':
         revenue: 197
-        rank: 9
+        rank: 6
       '2012':
         revenue: -197
-        rank: 8
+        rank: 5
     Gas Plant Products:
       '2004':
         revenue: 371340
         rank: 5
       '2005':
         revenue: 337028
-        rank: 8
+        rank: 6
       '2006':
         revenue: 139228
-        rank: 12
+        rank: 8
       '2007':
         revenue: 34630
-        rank: 13
+        rank: 7
       '2008':
         revenue: 40380
-        rank: 13
+        rank: 6
       '2009':
         revenue: 3851
-        rank: 13
+        rank: 9
       '2010':
         revenue: 529
-        rank: 14
+        rank: 8
     Geothermal:
       '2013':
         revenue: 7680
-        rank: 9
+        rank: 8
     Oil:
       '2004':
         revenue: 944071
-        rank: 12
+        rank: 6
       '2005':
         revenue: 1440869
-        rank: 12
+        rank: 8
       '2006':
         revenue: 1810081
-        rank: 13
+        rank: 9
       '2007':
         revenue: 1587415
-        rank: 13
+        rank: 8
       '2008':
         revenue: 2061166
-        rank: 14
+        rank: 9
       '2009':
         revenue: 961364
-        rank: 15
+        rank: 8
       '2010':
         revenue: 1767764
-        rank: 13
+        rank: 9
       '2011':
         revenue: 2022989
-        rank: 13
+        rank: 8
       '2012':
         revenue: 2309160
-        rank: 14
+        rank: 9
       '2013':
         revenue: 6598211
-        rank: 8
+        rank: 7
     'Oil & Gas':
       '2004':
         revenue: 63074946
@@ -126,7 +126,7 @@ AK:
         rank: 5
       '2008':
         revenue: 11968097
-        rank: 7
+        rank: 6
       '2009':
         revenue: 31872635
         rank: 3
@@ -135,45 +135,45 @@ AK:
         rank: 8
       '2011':
         revenue: 4519277
-        rank: 11
+        rank: 10
       '2012':
         revenue: 10148088
-        rank: 7
+        rank: 6
       '2013':
         revenue: 6312681
-        rank: 8
+        rank: 6
     Processed (Residue) Gas:
       '2004':
         revenue: 159656
-        rank: 11
+        rank: 6
       '2005':
         revenue: -38044
-        rank: 19
+        rank: 7
       '2006':
         revenue: 97492
-        rank: 14
+        rank: 7
       '2007':
         revenue: 86545
-        rank: 14
+        rank: 6
       '2008':
         revenue: 47703
-        rank: 14
+        rank: 7
       '2009':
         revenue: 111564
-        rank: 13
+        rank: 6
     Unprocessed (Wet) Gas:
       '2004':
         revenue: 10468686
-        rank: 8
+        rank: 7
       '2005':
         revenue: 11852203
         rank: 8
       '2006':
         revenue: 14076455
-        rank: 8
+        rank: 7
       '2007':
         revenue: 15413945
-        rank: 8
+        rank: 7
       '2008':
         revenue: 14690242
         rank: 7
@@ -182,49 +182,49 @@ AK:
         rank: 4
       '2010':
         revenue: 12672381
-        rank: 5
+        rank: 6
       '2011':
         revenue: 10123901
         rank: 6
       '2012':
         revenue: 9006991
-        rank: 5
+        rank: 7
       '2013':
         revenue: 6983601
-        rank: 5
+        rank: 6
 AL:
   products:
     All:
       '2004':
         revenue: 1585266
-        rank: 19
+        rank: 11
       '2005':
         revenue: 2559774
-        rank: 18
+        rank: 10
       '2006':
         revenue: 1754298
-        rank: 21
+        rank: 11
       '2007':
         revenue: 2437672
-        rank: 20
+        rank: 12
       '2008':
         revenue: 3332952
-        rank: 18
+        rank: 9
       '2009':
         revenue: 5169970
-        rank: 15
+        rank: 11
       '2010':
         revenue: 11314013
-        rank: 14
+        rank: 10
       '2011':
         revenue: 11023430
-        rank: 14
+        rank: 10
       '2012':
         revenue: 8087793
-        rank: 16
+        rank: 9
       '2013':
         revenue: 4338710
-        rank: 18
+        rank: 11
     Clay:
       '2004':
         revenue: 11441
@@ -241,16 +241,16 @@ AL:
     Coal:
       '2004':
         revenue: 8165
-        rank: 10
+        rank: 7
       '2005':
         revenue: 822575
         rank: 6
       '2006':
         revenue: 70724
-        rank: 9
+        rank: 8
       '2007':
         revenue: 84221
-        rank: 9
+        rank: 8
       '2008':
         revenue: 1501927
         rank: 6
@@ -265,7 +265,7 @@ AL:
         rank: 5
       '2012':
         revenue: 6567766
-        rank: 6
+        rank: 5
       '2013':
         revenue: 3690557
         rank: 6
@@ -284,7 +284,7 @@ AL:
         rank: 6
       '2008':
         revenue: 77328
-        rank: 6
+        rank: 5
       '2009':
         revenue: 46198
         rank: 7
@@ -303,104 +303,104 @@ AL:
     Condensate:
       '2004':
         revenue: 1
-        rank: 14
+        rank: 6
       '2005':
         revenue: 4
-        rank: 14
+        rank: 7
       '2006':
         revenue: 248
-        rank: 13
+        rank: 7
       '2007':
         revenue: 7
-        rank: 14
+        rank: 7
       '2008':
         revenue: 15
-        rank: 14
+        rank: 7
       '2009':
         revenue: 9
-        rank: 14
+        rank: 8
       '2010':
         revenue: 6
-        rank: 14
+        rank: 6
       '2011':
         revenue: 29
-        rank: 14
+        rank: 6
       '2012':
         revenue: 246
-        rank: 13
+        rank: 7
       '2013':
         revenue: 10399
-        rank: 12
+        rank: 7
     Drip or Scrubber Condensate:
       '2004':
         revenue: 4
-        rank: 8
+        rank: 3
       '2006':
         revenue: 1
-        rank: 10
+        rank: 5
     Fuel Gas:
       '2004':
         revenue: 3034
-        rank: 3
+        rank: 2
       '2006':
         revenue: 569
-        rank: 4
+        rank: 3
       '2008':
         revenue: -6057
-        rank: 5
+        rank: 4
     Gas Plant Products:
       '2004':
         revenue: 0
-        rank: 15
+        rank: 6
       '2005':
         revenue: 5
-        rank: 14
+        rank: 7
       '2006':
         revenue: 9
-        rank: 14
+        rank: 8
       '2007':
         revenue: 418
-        rank: 14
+        rank: 7
       '2008':
         revenue: 906
-        rank: 15
+        rank: 6
       '2009':
         revenue: 727
-        rank: 15
+        rank: 9
       '2010':
         revenue: 357
-        rank: 15
+        rank: 8
       '2011':
         revenue: 8645
-        rank: 12
+        rank: 9
       '2012':
         revenue: 6771
-        rank: 12
+        rank: 9
       '2013':
         revenue: 4107
-        rank: 13
+        rank: 9
     Hardrock:
       '2004':
         revenue: 123
-        rank: 8
+        rank: 6
       '2005':
         revenue: 41
         rank: 8
       '2006':
         revenue: 82
-        rank: 9
+        rank: 8
       '2007':
         revenue: 123
         rank: 7
       '2008':
         revenue: 123
-        rank: 9
+        rank: 10
       '2009':
         revenue: 123
-        rank: 9
+        rank: 10
       '2010':
         revenue: 123
-        rank: 6
+        rank: 7
       '2011':
         revenue: 41
         rank: 10
@@ -409,69 +409,69 @@ AL:
         rank: 10
       '2013':
         revenue: -615
-        rank: 9
+        rank: 6
     Oil:
       '2004':
         revenue: 823390
-        rank: 13
+        rank: 6
       '2005':
         revenue: 877276
-        rank: 15
+        rank: 9
       '2006':
         revenue: 647954
-        rank: 16
+        rank: 9
       '2007':
         revenue: 552424
-        rank: 16
+        rank: 8
       '2008':
         revenue: 704943
-        rank: 16
+        rank: 9
       '2009':
         revenue: 249980
-        rank: 16
+        rank: 8
       '2010':
         revenue: 315058
-        rank: 17
+        rank: 9
       '2011':
         revenue: 391652
-        rank: 16
+        rank: 8
       '2012':
         revenue: 335036
-        rank: 17
+        rank: 9
       '2013':
         revenue: 307651
-        rank: 16
+        rank: 8
     'Oil & Gas':
       '2004':
         revenue: 216903
-        rank: 16
+        rank: 11
       '2005':
         revenue: 48322
-        rank: 20
+        rank: 13
       '2006':
         revenue: 233306
-        rank: 17
+        rank: 11
       '2007':
         revenue: 1163830
-        rank: 14
+        rank: 12
       '2008':
         revenue: 327415
-        rank: 21
+        rank: 7
       '2009':
         revenue: 218975
-        rank: 18
+        rank: 11
       '2010':
         revenue: 230958
-        rank: 19
+        rank: 13
       '2011':
         revenue: 617924
-        rank: 15
+        rank: 13
       '2012':
         revenue: 1021245
-        rank: 15
+        rank: 9
       '2013':
         revenue: 127418
-        rank: 19
+        rank: 8
     Other Liquid Hydrocarbons:
       '2004':
         revenue: 91
@@ -506,34 +506,34 @@ AL:
     Processed (Residue) Gas:
       '2004':
         revenue: 114911
-        rank: 12
+        rank: 6
       '2005':
         revenue: 204288
-        rank: 13
+        rank: 7
       '2006':
         revenue: 252420
-        rank: 13
+        rank: 7
       '2007':
         revenue: 202531
-        rank: 13
+        rank: 6
       '2008':
         revenue: 274555
-        rank: 13
+        rank: 7
       '2009':
         revenue: 127767
-        rank: 11
+        rank: 6
       '2010':
         revenue: 108165
-        rank: 12
+        rank: 7
       '2011':
         revenue: 85888
-        rank: 13
+        rank: 8
       '2012':
         revenue: 48278
-        rank: 13
+        rank: 8
       '2013':
         revenue: 59219
-        rank: 12
+        rank: 8
     Sulfur:
       '2004':
         revenue: 704
@@ -552,7 +552,7 @@ AL:
         rank: 3
       '2009':
         revenue: 2878
-        rank: 2
+        rank: 3
       '2010':
         revenue: 1448
         rank: 3
@@ -561,126 +561,126 @@ AL:
         rank: 4
       '2012':
         revenue: 4039
-        rank: 3
+        rank: 2
       '2013':
         revenue: 2680
         rank: 3
     Unprocessed (Wet) Gas:
       '2004':
         revenue: 400417
-        rank: 17
+        rank: 11
       '2005':
         revenue: 498645
-        rank: 18
+        rank: 12
       '2006':
         revenue: 477338
-        rank: 17
+        rank: 11
       '2007':
         revenue: 204393
-        rank: 19
+        rank: 14
       '2008':
         revenue: 439478
-        rank: 16
+        rank: 13
       '2009':
         revenue: 171995
-        rank: 19
+        rank: 14
       '2010':
         revenue: 147908
-        rank: 17
+        rank: 13
       '2011':
         revenue: 87372
-        rank: 19
+        rank: 12
       '2012':
         revenue: 56056
-        rank: 17
+        rank: 15
       '2013':
         revenue: 68357
-        rank: 16
+        rank: 13
 AR:
   products:
     All:
       '2004':
         revenue: 5846121
-        rank: 14
+        rank: 10
       '2005':
         revenue: 21095897
-        rank: 11
+        rank: 8
       '2006':
         revenue: 16854739
-        rank: 11
+        rank: 10
       '2007':
         revenue: 27764707
-        rank: 11
+        rank: 10
       '2008':
         revenue: 31699651
-        rank: 11
+        rank: 8
       '2009':
         revenue: 9096877
-        rank: 14
+        rank: 11
       '2010':
         revenue: 12811307
-        rank: 13
+        rank: 10
       '2011':
         revenue: 9560512
-        rank: 16
+        rank: 10
       '2012':
         revenue: 4553983
-        rank: 18
+        rank: 10
       '2013':
         revenue: 5567964
-        rank: 17
+        rank: 11
     Coal Bed Methane:
       '2004':
         revenue: 4098
-        rank: 7
+        rank: 6
       '2005':
         revenue: 4594
-        rank: 8
+        rank: 6
       '2006':
         revenue: 1600
-        rank: 8
+        rank: 6
       '2007':
         revenue: 826
-        rank: 8
+        rank: 7
       '2009':
         revenue: 99609
         rank: 6
       '2010':
         revenue: 39853
-        rank: 7
+        rank: 6
       '2011':
         revenue: 25137
-        rank: 7
+        rank: 6
       '2012':
         revenue: 14339
-        rank: 6
+        rank: 5
       '2013':
         revenue: 14616
-        rank: 7
+        rank: 6
     Condensate:
       '2009':
         revenue: 34
-        rank: 13
+        rank: 8
       '2010':
         revenue: 25
-        rank: 13
+        rank: 6
       '2012':
         revenue: -35
-        rank: 15
+        rank: 7
       '2013':
         revenue: 8
-        rank: 14
+        rank: 7
     Drip or Scrubber Condensate:
       '2009':
         revenue: 21
-        rank: 9
+        rank: 6
       '2012':
         revenue: -21
-        rank: 12
+        rank: 8
     Fuel Gas:
       '2013':
         revenue: 3322
-        rank: 9
+        rank: 7
     Hardrock:
       '2004':
         revenue: 1707
@@ -696,10 +696,10 @@ AR:
         rank: 3
       '2008':
         revenue: 958
-        rank: 5
+        rank: 6
       '2009':
         revenue: 916
-        rank: 6
+        rank: 7
       '2010':
         revenue: 954
         rank: 4
@@ -711,97 +711,97 @@ AR:
         rank: 6
       '2013':
         revenue: 1270
-        rank: 3
+        rank: 4
     Oil:
       '2004':
         revenue: 243
-        rank: 25
+        rank: 7
       '2005':
         revenue: 252
-        rank: 23
+        rank: 9
       '2006':
         revenue: 244
-        rank: 23
+        rank: 9
       '2007':
         revenue: 193
-        rank: 24
+        rank: 8
       '2008':
         revenue: 151
-        rank: 23
+        rank: 9
       '2009':
         revenue: 48
-        rank: 24
+        rank: 8
       '2010':
         revenue: 47
-        rank: 25
+        rank: 9
       '2011':
         revenue: 83
-        rank: 24
+        rank: 8
       '2012':
         revenue: -63
-        rank: 25
+        rank: 9
     'Oil & Gas':
       '2004':
         revenue: 1959209
-        rank: 10
+        rank: 9
       '2005':
         revenue: 13497288
         rank: 7
       '2006':
         revenue: 8578527
-        rank: 8
+        rank: 7
       '2007':
         revenue: 21091873
         rank: 6
       '2008':
         revenue: 22775029
-        rank: 6
+        rank: 5
       '2009':
         revenue: 3542744
-        rank: 11
+        rank: 9
       '2010':
         revenue: 2652455
         rank: 12
       '2011':
         revenue: 2902790
-        rank: 13
+        rank: 11
       '2012':
         revenue: 653482
-        rank: 16
+        rank: 9
       '2013':
         revenue: 482793
-        rank: 13
+        rank: 8
     Processed (Residue) Gas:
       '2004':
         revenue: 5227
-        rank: 16
+        rank: 6
       '2005':
         revenue: 6170
-        rank: 18
+        rank: 7
       '2006':
         revenue: 4569
-        rank: 18
+        rank: 7
       '2007':
         revenue: 3324
-        rank: 18
+        rank: 6
       '2008':
         revenue: 4838
-        rank: 18
+        rank: 7
       '2009':
         revenue: 1782
-        rank: 17
+        rank: 6
       '2010':
         revenue: 1711
-        rank: 16
+        rank: 7
       '2011':
         revenue: 2149
-        rank: 17
+        rank: 8
       '2012':
         revenue: 1420
-        rank: 17
+        rank: 8
       '2013':
         revenue: -307
-        rank: 17
+        rank: 8
     Quartz:
       '2004':
         revenue: 20
@@ -843,34 +843,34 @@ AR:
     Unprocessed (Wet) Gas:
       '2004':
         revenue: 3875381
-        rank: 11
+        rank: 9
       '2005':
         revenue: 7586141
-        rank: 10
+        rank: 9
       '2006':
         revenue: 8268232
-        rank: 10
+        rank: 9
       '2007':
         revenue: 6666654
-        rank: 10
+        rank: 9
       '2008':
         revenue: 8915741
         rank: 9
       '2009':
         revenue: 5450755
-        rank: 10
+        rank: 9
       '2010':
         revenue: 10116143
-        rank: 6
+        rank: 7
       '2011':
         revenue: 6629181
         rank: 7
       '2012':
         revenue: 3883966
-        rank: 7
+        rank: 9
       '2013':
         revenue: 5066259
-        rank: 7
+        rank: 8
     Wavellite:
       '2008':
         revenue: 467
@@ -886,44 +886,44 @@ AZ:
     All:
       '2004':
         revenue: 100407
-        rank: 28
+        rank: 11
       '2005':
         revenue: 170339
-        rank: 29
+        rank: 10
       '2006':
         revenue: 66202
-        rank: 30
+        rank: 11
       '2007':
         revenue: 532158
-        rank: 27
+        rank: 12
       '2008':
         revenue: 529904
-        rank: 27
+        rank: 9
       '2009':
         revenue: 89551
-        rank: 31
+        rank: 12
       '2010':
         revenue: 42990
-        rank: 33
+        rank: 11
       '2011':
         revenue: 30229
-        rank: 32
+        rank: 11
       '2012':
         revenue: 16566
-        rank: 32
+        rank: 10
       '2013':
         revenue: 63828
-        rank: 31
+        rank: 11
     Geothermal:
       '2006':
         revenue: 4168
-        rank: 3
+        rank: 4
       '2007':
         revenue: 2084
-        rank: 7
+        rank: 6
       '2008':
         revenue: 2084
-        rank: 7
+        rank: 4
       '2009':
         revenue: 2084
         rank: 6
@@ -932,41 +932,41 @@ AZ:
         rank: 7
       '2011':
         revenue: 2084
-        rank: 9
+        rank: 8
       '2012':
         revenue: 2084
         rank: 8
     'Oil & Gas':
       '2004':
         revenue: 100249
-        rank: 18
+        rank: 11
       '2005':
         revenue: 170081
-        rank: 18
+        rank: 13
       '2006':
         revenue: 61946
-        rank: 22
+        rank: 11
       '2007':
         revenue: 529234
-        rank: 19
+        rank: 13
       '2008':
         revenue: 527492
-        rank: 17
+        rank: 7
       '2009':
         revenue: 85553
-        rank: 21
+        rank: 11
       '2010':
         revenue: 36056
-        rank: 26
+        rank: 13
       '2011':
         revenue: 20804
-        rank: 25
+        rank: 14
       '2012':
         revenue: 16520
-        rank: 26
+        rank: 9
       '2013':
         revenue: 59603
-        rank: 21
+        rank: 8
     Potassium:
       '2009':
         revenue: 1634
@@ -979,7 +979,7 @@ AZ:
         rank: 3
       '2012':
         revenue: -3268
-        rank: 4
+        rank: 3
     Salt:
       '2004':
         revenue: 119
@@ -992,7 +992,7 @@ AZ:
         rank: 5
       '2007':
         revenue: 824
-        rank: 4
+        rank: 3
       '2008':
         revenue: 312
         rank: 5
@@ -1014,28 +1014,28 @@ AZ:
     Sodium:
       '2004':
         revenue: 40
-        rank: 4
+        rank: 3
       '2005':
         revenue: 32
-        rank: 4
+        rank: 6
       '2006':
         revenue: 16
-        rank: 4
+        rank: 5
       '2007':
         revenue: 16
-        rank: 5
+        rank: 6
       '2008':
         revenue: 16
-        rank: 5
+        rank: 6
       '2009':
         revenue: 16
-        rank: 4
+        rank: 5
       '2010':
         revenue: 16
-        rank: 4
+        rank: 5
       '2011':
         revenue: 16
-        rank: 3
+        rank: 5
       '2012':
         revenue: -148
         rank: 5
@@ -1047,7 +1047,7 @@ CA:
         rank: 7
       '2005':
         revenue: 47953296
-        rank: 7
+        rank: 6
       '2006':
         revenue: 117889438
         rank: 5
@@ -1062,7 +1062,7 @@ CA:
         rank: 6
       '2010':
         revenue: 138166106
-        rank: 5
+        rank: 4
       '2011':
         revenue: 196688593
         rank: 6
@@ -1216,44 +1216,44 @@ CA:
     Condensate:
       '2004':
         revenue: 104513
-        rank: 11
+        rank: 6
       '2005':
         revenue: 124549
-        rank: 9
+        rank: 7
       '2006':
         revenue: 324513
-        rank: 7
+        rank: 6
       '2007':
         revenue: 271278
-        rank: 7
+        rank: 6
       '2008':
         revenue: 478558
-        rank: 7
+        rank: 6
       '2009':
         revenue: -131744
-        rank: 15
+        rank: 7
       '2010':
         revenue: 175759
-        rank: 7
+        rank: 6
       '2011':
         revenue: 440144
-        rank: 7
+        rank: 5
       '2012':
         revenue: 564757
-        rank: 7
+        rank: 6
       '2013':
         revenue: 656045
-        rank: 7
+        rank: 6
     Drip or Scrubber Condensate:
       '2006':
         revenue: 378
-        rank: 9
+        rank: 5
       '2007':
         revenue: 902
-        rank: 7
+        rank: 6
       '2008':
         revenue: 45
-        rank: 8
+        rank: 5
       '2009':
         revenue: 508934
         rank: 2
@@ -1268,7 +1268,7 @@ CA:
         rank: 5
       '2013':
         revenue: -111124
-        rank: 8
+        rank: 4
     Flash Gas:
       '2007':
         revenue: 5370
@@ -1287,11 +1287,11 @@ CA:
         rank: 1
       '2012':
         revenue: -1336
-        rank: 2
+        rank: 1
     Fuel Gas:
       '2010':
         revenue: 563
-        rank: 6
+        rank: 5
       '2011':
         revenue: 3774
         rank: 3
@@ -1344,32 +1344,32 @@ CA:
         rank: 2
       '2012':
         revenue: 11056
-        rank: 1
+        rank: 2
       '2013':
         revenue: 21521
         rank: 2
     Gas Plant Products:
       '2004':
         revenue: 95701
-        rank: 12
+        rank: 6
       '2005':
         revenue: 76935
-        rank: 12
+        rank: 7
       '2006':
         revenue: 294589
-        rank: 10
+        rank: 7
       '2007':
         revenue: 181131
-        rank: 10
+        rank: 7
       '2008':
         revenue: 286771
-        rank: 10
+        rank: 5
       '2009':
         revenue: 177798
-        rank: 10
+        rank: 8
       '2010':
         revenue: 228022
-        rank: 11
+        rank: 7
       '2011':
         revenue: 785385
         rank: 8
@@ -1388,7 +1388,7 @@ CA:
         rank: 2
       '2006':
         revenue: -17261
-        rank: 6
+        rank: 3
       '2007':
         revenue: 8191628
         rank: 2
@@ -1403,7 +1403,7 @@ CA:
         rank: 4
       '2011':
         revenue: 206189
-        rank: 5
+        rank: 4
       '2012':
         revenue: 76111
         rank: 5
@@ -1541,13 +1541,13 @@ CA:
         rank: 9
       '2008':
         revenue: 21
-        rank: 10
+        rank: 11
       '2009':
         revenue: 21
-        rank: 10
+        rank: 11
       '2013':
         revenue: 105
-        rank: 6
+        rank: 8
     Hot Springs:
       '2008':
         revenue: 33
@@ -1590,34 +1590,34 @@ CA:
     'Oil & Gas':
       '2004':
         revenue: 538141
-        rank: 13
+        rank: 10
       '2005':
         revenue: 452396
-        rank: 15
+        rank: 13
       '2006':
         revenue: 3024350
-        rank: 12
+        rank: 9
       '2007':
         revenue: 774914
-        rank: 17
+        rank: 12
       '2008':
         revenue: 2696669
-        rank: 13
+        rank: 7
       '2009':
         revenue: 380282
-        rank: 16
+        rank: 11
       '2010':
         revenue: 4784644
         rank: 11
       '2011':
         revenue: 6019513
-        rank: 10
+        rank: 9
       '2012':
         revenue: 4212163
-        rank: 12
+        rank: 7
       '2013':
         revenue: 279962
-        rank: 18
+        rank: 8
     Potassium:
       '2004':
         revenue: 3996
@@ -1628,22 +1628,22 @@ CA:
         rank: 5
       '2005':
         revenue: 553203
-        rank: 10
+        rank: 7
       '2006':
         revenue: 1470300
         rank: 6
       '2007':
         revenue: 1097495
-        rank: 7
+        rank: 6
       '2008':
         revenue: 1912882
-        rank: 7
+        rank: 6
       '2009':
         revenue: 1188169
         rank: 5
       '2010':
         revenue: 1186100
-        rank: 8
+        rank: 6
       '2011':
         revenue: 2115557
         rank: 6
@@ -1725,7 +1725,7 @@ CA:
     Soda Ash-Granular:
       '2004':
         revenue: 260287
-        rank: 3
+        rank: 2
       '2005':
         revenue: -726947
         rank: 1
@@ -1741,28 +1741,28 @@ CA:
         rank: 2
       '2006':
         revenue: 9021
-        rank: 2
+        rank: 3
       '2007':
         revenue: 720
-        rank: 4
+        rank: 5
       '2008':
         revenue: 1209
-        rank: 3
+        rank: 4
       '2009':
         revenue: 48206
-        rank: 2
+        rank: 3
       '2010':
         revenue: -10777
-        rank: 5
+        rank: 3
       '2011':
         revenue: -14390
-        rank: 5
+        rank: 3
       '2012':
         revenue: 10563
         rank: 3
       '2013':
         revenue: 2533
-        rank: 3
+        rank: 4
     Sodium Bi-Carbonate:
       '2004':
         revenue: 37811
@@ -1797,34 +1797,34 @@ CA:
     Unprocessed (Wet) Gas:
       '2004':
         revenue: 3148139
-        rank: 12
+        rank: 10
       '2005':
         revenue: 3867359
-        rank: 13
+        rank: 11
       '2006':
         revenue: 3729571
-        rank: 13
+        rank: 10
       '2007':
         revenue: 3241512
-        rank: 13
+        rank: 12
       '2008':
         revenue: 3554309
-        rank: 12
+        rank: 11
       '2009':
         revenue: 1315149
-        rank: 13
+        rank: 12
       '2010':
         revenue: 2071154
         rank: 12
       '2011':
         revenue: 2194053
-        rank: 12
+        rank: 10
       '2012':
         revenue: 1747264
-        rank: 10
+        rank: 11
       '2013':
         revenue: 481743
-        rank: 11
+        rank: 12
 CO:
   products:
     All:
@@ -1920,7 +1920,7 @@ CO:
         rank: 2
       '2012':
         revenue: 56040182
-        rank: 3
+        rank: 2
       '2013':
         revenue: 28694452
         rank: 4
@@ -1939,7 +1939,7 @@ CO:
         rank: 4
       '2008':
         revenue: 7941865
-        rank: 4
+        rank: 3
       '2009':
         revenue: 2932744
         rank: 4
@@ -2028,23 +2028,23 @@ CO:
         rank: 2
       '2011':
         revenue: -676574
-        rank: 9
+        rank: 1
       '2012':
         revenue: 690468
         rank: 1
       '2013':
         revenue: 162019
-        rank: 4
+        rank: 3
     Fuel Gas:
       '2005':
         revenue: 19
-        rank: 5
+        rank: 4
       '2010':
         revenue: 109160
         rank: 3
       '2011':
         revenue: 59902
-        rank: 1
+        rank: 2
       '2012':
         revenue: 59587
         rank: 1
@@ -2095,7 +2095,7 @@ CO:
     Geothermal:
       '2011':
         revenue: 32800
-        rank: 6
+        rank: 5
       '2012':
         revenue: 33416
         rank: 6
@@ -2128,14 +2128,14 @@ CO:
         rank: 2
       '2011':
         revenue: -381
-        rank: 3
+        rank: 2
       '2013':
         revenue: 283
         rank: 1
     Oil:
       '2004':
         revenue: 15768675
-        rank: 5
+        rank: 4
       '2005':
         revenue: 22405865
         rank: 6
@@ -2144,7 +2144,7 @@ CO:
         rank: 6
       '2007':
         revenue: 31937433
-        rank: 6
+        rank: 5
       '2008':
         revenue: 41778746
         rank: 6
@@ -2162,7 +2162,7 @@ CO:
         rank: 6
       '2013':
         revenue: 34719972
-        rank: 6
+        rank: 5
     'Oil & Gas':
       '2004':
         revenue: 20731619
@@ -2232,7 +2232,7 @@ CO:
         rank: 3
       '2009':
         revenue: -367308
-        rank: 19
+        rank: 6
       '2010':
         revenue: 53887700
         rank: 4
@@ -2252,26 +2252,26 @@ CO:
     Soda Ash-Granular:
       '2004':
         revenue: -127124
-        rank: 2
+        rank: 3
     Sodium:
       '2004':
         revenue: 94740
         rank: 2
       '2005':
         revenue: -2107
-        rank: 5
+        rank: 4
       '2006':
         revenue: -26255
-        rank: 5
+        rank: 2
       '2007':
         revenue: 6561
-        rank: 3
+        rank: 4
       '2008':
         revenue: 313481
         rank: 1
       '2009':
         revenue: -142029
-        rank: 5
+        rank: 2
       '2010':
         revenue: 20079
         rank: 2
@@ -2346,75 +2346,75 @@ CO:
         rank: 3
       '2012':
         revenue: 39437764
-        rank: 2
+        rank: 3
       '2013':
         revenue: -56885652
-        rank: 23
+        rank: 3
 FL:
   products:
     All:
       '2004':
         revenue: 11380
-        rank: 32
+        rank: 11
       '2005':
         revenue: 842404
-        rank: 23
+        rank: 10
       '2006':
         revenue: 13515
-        rank: 32
+        rank: 11
       '2007':
         revenue: 9974
-        rank: 34
+        rank: 12
       '2008':
         revenue: 12262
-        rank: 32
+        rank: 9
       '2009':
         revenue: 966
-        rank: 36
+        rank: 12
       '2010':
         revenue: 95535
-        rank: 30
+        rank: 11
       '2011':
         revenue: 526326
-        rank: 25
+        rank: 11
       '2012':
         revenue: 2174551
-        rank: 20
+        rank: 10
       '2013':
         revenue: 286720
-        rank: 27
+        rank: 11
     Oil:
       '2004':
         revenue: 1936
-        rank: 22
+        rank: 7
     'Oil & Gas':
       '2004':
         revenue: 8081
-        rank: 28
+        rank: 11
       '2005':
         revenue: 5054
-        rank: 28
+        rank: 13
       '2006':
         revenue: 12117
-        rank: 27
+        rank: 11
       '2007':
         revenue: 9090
-        rank: 28
+        rank: 13
       '2008':
         revenue: 10774
-        rank: 28
+        rank: 7
       '2009':
         revenue: -8397
-        rank: 29
+        rank: 11
       '2010':
         revenue: 3200
-        rank: 32
+        rank: 13
       '2011':
         revenue: 3200
-        rank: 31
+        rank: 14
       '2012':
         revenue: 3200
-        rank: 31
+        rank: 9
     Phosphate:
       '2004':
         revenue: 1364
@@ -2439,10 +2439,10 @@ FL:
         rank: 3
       '2012':
         revenue: 1366
-        rank: 4
+        rank: 3
       '2013':
         revenue: 989
-        rank: 3
+        rank: 4
     Phosphate Concentrate:
       '2008':
         revenue: 1570
@@ -2474,34 +2474,34 @@ ID:
     All:
       '2004':
         revenue: 4142232
-        rank: 15
+        rank: 10
       '2005':
         revenue: 3080437
-        rank: 17
+        rank: 10
       '2006':
         revenue: 2191025
-        rank: 20
+        rank: 11
       '2007':
         revenue: 8153040
-        rank: 16
+        rank: 11
       '2008':
         revenue: 2726747
-        rank: 19
+        rank: 9
       '2009':
         revenue: 3832461
-        rank: 17
+        rank: 12
       '2010':
         revenue: 9284314
-        rank: 16
+        rank: 10
       '2011':
         revenue: 9630222
-        rank: 15
+        rank: 10
       '2012':
         revenue: 10527504
-        rank: 14
+        rank: 9
       '2013':
         revenue: 10100829
-        rank: 13
+        rank: 10
     Garnet:
       '2008':
         revenue: 120
@@ -2528,7 +2528,7 @@ ID:
     Geothermal:
       '2004':
         revenue: 2467
-        rank: 4
+        rank: 5
       '2005':
         revenue: 2467
         rank: 5
@@ -2537,7 +2537,7 @@ ID:
         rank: 3
       '2008':
         revenue: 30875
-        rank: 4
+        rank: 3
       '2009':
         revenue: 108271
         rank: 5
@@ -2584,7 +2584,7 @@ ID:
     Hardrock:
       '2004':
         revenue: 42
-        rank: 10
+        rank: 7
       '2005':
         revenue: 159
         rank: 7
@@ -2596,53 +2596,53 @@ ID:
         rank: 6
       '2008':
         revenue: 562
-        rank: 8
+        rank: 9
       '2009':
         revenue: 236
-        rank: 7
+        rank: 8
       '2010':
         revenue: 59
-        rank: 7
+        rank: 8
       '2011':
         revenue: 101
-        rank: 9
+        rank: 8
       '2012':
         revenue: 123
         rank: 9
       '2013':
         revenue: 43
-        rank: 7
+        rank: 9
     'Oil & Gas':
       '2004':
         revenue: 7606
-        rank: 29
+        rank: 11
       '2005':
         revenue: 1731
-        rank: 29
+        rank: 13
       '2006':
         revenue: 2713
-        rank: 29
+        rank: 11
       '2007':
         revenue: 115238
-        rank: 21
+        rank: 13
       '2008':
         revenue: 80769
-        rank: 24
+        rank: 7
       '2009':
         revenue: 38609
-        rank: 23
+        rank: 11
       '2010':
         revenue: 10415
-        rank: 29
+        rank: 13
       '2011':
         revenue: 18228
-        rank: 26
+        rank: 14
       '2012':
         revenue: 14718
-        rank: 27
+        rank: 9
       '2013':
         revenue: 8274
-        rank: 28
+        rank: 8
     Phosphate:
       '2004':
         revenue: 680089
@@ -2714,215 +2714,215 @@ IL:
     All:
       '2004':
         revenue: 174423
-        rank: 25
+        rank: 11
       '2005':
         revenue: 187636
-        rank: 28
+        rank: 10
       '2006':
         revenue: 272020
-        rank: 28
+        rank: 11
       '2007':
         revenue: 259428
-        rank: 29
+        rank: 12
       '2008':
         revenue: 416673
-        rank: 29
+        rank: 9
       '2009':
         revenue: 207441
-        rank: 27
+        rank: 12
       '2010':
         revenue: 347622
-        rank: 27
+        rank: 11
       '2011':
         revenue: 293369
-        rank: 28
+        rank: 11
       '2012':
         revenue: 312501
-        rank: 27
+        rank: 10
       '2013':
         revenue: 302425
-        rank: 26
+        rank: 11
     Hardrock:
       '2004':
         revenue: -366
-        rank: 12
+        rank: 5
       '2005':
         revenue: -1147
-        rank: 10
+        rank: 4
       '2008':
         revenue: 1267
-        rank: 4
+        rank: 5
       '2010':
         revenue: -60
         rank: 8
       '2011':
         revenue: -60
-        rank: 11
+        rank: 9
     Oil:
       '2004':
         revenue: 174745
-        rank: 17
+        rank: 7
       '2005':
         revenue: 188608
-        rank: 18
+        rank: 9
       '2006':
         revenue: 271845
-        rank: 18
+        rank: 9
       '2007':
         revenue: 259428
-        rank: 18
+        rank: 8
       '2008':
         revenue: 415406
-        rank: 18
+        rank: 9
       '2009':
         revenue: 207441
-        rank: 19
+        rank: 8
       '2010':
         revenue: 347507
-        rank: 16
+        rank: 9
       '2011':
         revenue: 293429
-        rank: 18
+        rank: 8
       '2012':
         revenue: 312501
-        rank: 18
+        rank: 9
       '2013':
         revenue: 302425
-        rank: 18
+        rank: 8
     'Oil & Gas':
       '2004':
         revenue: 44
-        rank: 30
+        rank: 11
       '2005':
         revenue: 175
-        rank: 30
+        rank: 13
       '2006':
         revenue: 175
-        rank: 30
+        rank: 11
       '2010':
         revenue: 175
-        rank: 33
+        rank: 13
 IN:
   products:
     All:
       '2009':
         revenue: 156857
-        rank: 29
+        rank: 12
       '2010':
         revenue: 79494
-        rank: 31
+        rank: 11
       '2011':
         revenue: 26648
-        rank: 33
+        rank: 11
       '2012':
         revenue: 48382
-        rank: 31
+        rank: 10
       '2013':
         revenue: 43691
-        rank: 32
+        rank: 11
     Oil:
       '2009':
         revenue: 40119
-        rank: 22
+        rank: 8
       '2010':
         revenue: 34815
-        rank: 23
+        rank: 9
       '2011':
         revenue: 20846
-        rank: 23
+        rank: 8
       '2012':
         revenue: 30715
-        rank: 23
+        rank: 9
       '2013':
         revenue: 17820
-        rank: 23
+        rank: 8
     'Oil & Gas':
       '2009':
         revenue: 116738
-        rank: 20
+        rank: 11
       '2010':
         revenue: 44679
-        rank: 23
+        rank: 13
       '2011':
         revenue: 5802
-        rank: 30
+        rank: 14
       '2012':
         revenue: 17667
-        rank: 25
+        rank: 9
       '2013':
         revenue: 25871
-        rank: 27
+        rank: 8
 KS:
   products:
     All:
       '2004':
         revenue: 7741660
-        rank: 12
+        rank: 10
       '2005':
         revenue: 8230085
-        rank: 14
+        rank: 9
       '2006':
         revenue: 9436353
-        rank: 15
+        rank: 10
       '2007':
         revenue: 8263664
-        rank: 15
+        rank: 11
       '2008':
         revenue: 12066208
-        rank: 15
+        rank: 8
       '2009':
         revenue: 4604991
-        rank: 16
+        rank: 11
       '2010':
         revenue: 6666861
-        rank: 17
+        rank: 10
       '2011':
         revenue: 7656510
-        rank: 17
+        rank: 10
       '2012':
         revenue: 5633031
-        rank: 17
+        rank: 10
       '2013':
         revenue: 5751514
-        rank: 16
+        rank: 11
     Condensate:
       '2004':
         revenue: 529
-        rank: 13
+        rank: 6
       '2005':
         revenue: 2461
-        rank: 12
+        rank: 7
       '2006':
         revenue: 696
-        rank: 12
+        rank: 7
       '2007':
         revenue: 3624
-        rank: 13
+        rank: 7
       '2008':
         revenue: 2720
-        rank: 13
+        rank: 7
       '2009':
         revenue: 2376
-        rank: 12
+        rank: 8
       '2010':
         revenue: 2439
-        rank: 12
+        rank: 6
       '2011':
         revenue: 2300
-        rank: 13
+        rank: 6
       '2012':
         revenue: 1714
-        rank: 12
+        rank: 7
       '2013':
         revenue: 1781
-        rank: 13
+        rank: 7
     Drip or Scrubber Condensate:
       '2006':
         revenue: -24
-        rank: 11
+        rank: 5
       '2012':
         revenue: 970
-        rank: 10
+        rank: 8
     Flash Gas:
       '2013':
         revenue: 34
@@ -2930,19 +2930,19 @@ KS:
     Fuel Gas:
       '2004':
         revenue: 4850
-        rank: 2
+        rank: 1
       '2005':
         revenue: 367
         rank: 4
       '2006':
         revenue: 265
-        rank: 5
+        rank: 3
       '2007':
         revenue: 210
-        rank: 4
+        rank: 2
       '2008':
         revenue: 2207
-        rank: 4
+        rank: 5
       '2009':
         revenue: 2459
         rank: 4
@@ -2951,44 +2951,44 @@ KS:
         rank: 5
       '2011':
         revenue: 737
-        rank: 5
+        rank: 4
       '2012':
         revenue: 12
-        rank: 7
+        rank: 5
       '2013':
         revenue: 37756
-        rank: 6
+        rank: 5
     Gas Plant Products:
       '2004':
         revenue: 278926
-        rank: 8
+        rank: 5
       '2005':
         revenue: 374697
-        rank: 7
+        rank: 6
       '2006':
         revenue: 456079
-        rank: 7
+        rank: 6
       '2007':
         revenue: 495736
         rank: 6
       '2008':
         revenue: 772345
-        rank: 7
+        rank: 5
       '2009':
         revenue: 465442
-        rank: 8
+        rank: 7
       '2010':
         revenue: 680608
-        rank: 7
+        rank: 6
       '2011':
         revenue: 1084902
         rank: 7
       '2012':
         revenue: 816169
-        rank: 9
+        rank: 8
       '2013':
         revenue: 704648
-        rank: 8
+        rank: 7
     Helium:
       '2004':
         revenue: 57
@@ -3011,7 +3011,7 @@ KS:
     Nitrogen:
       '2011':
         revenue: 144
-        rank: 2
+        rank: 3
       '2012':
         revenue: 100
         rank: 2
@@ -3021,65 +3021,65 @@ KS:
     Oil:
       '2004':
         revenue: 467758
-        rank: 15
+        rank: 7
       '2005':
         revenue: 1168348
-        rank: 13
+        rank: 9
       '2006':
         revenue: 3939589
         rank: 8
       '2007':
         revenue: 2511604
-        rank: 11
+        rank: 7
       '2008':
         revenue: 4464527
         rank: 8
       '2009':
         revenue: 1692439
-        rank: 10
+        rank: 7
       '2010':
         revenue: 2213411
-        rank: 11
+        rank: 9
       '2011':
         revenue: 3792084
-        rank: 9
+        rank: 7
       '2012':
         revenue: 3004348
-        rank: 12
+        rank: 8
       '2013':
         revenue: 2626843
-        rank: 13
+        rank: 8
     'Oil & Gas':
       '2004':
         revenue: 68886
-        rank: 20
+        rank: 11
       '2005':
         revenue: -28055
-        rank: 31
+        rank: 13
       '2006':
         revenue: 104459
-        rank: 20
+        rank: 11
       '2007':
         revenue: 134867
-        rank: 20
+        rank: 13
       '2008':
         revenue: 391542
-        rank: 20
+        rank: 7
       '2009':
         revenue: -351181
-        rank: 30
+        rank: 11
       '2010':
         revenue: 305814
-        rank: 17
+        rank: 13
       '2011':
         revenue: 201260
-        rank: 21
+        rank: 14
       '2012':
         revenue: 17971
-        rank: 24
+        rank: 9
       '2013':
         revenue: 32531
-        rank: 25
+        rank: 8
     Other Liquid Hydrocarbons:
       '2011':
         revenue: 1
@@ -3090,102 +3090,102 @@ KS:
         rank: 6
       '2005':
         revenue: 1142026
-        rank: 8
+        rank: 6
       '2006':
         revenue: 1081716
-        rank: 8
+        rank: 7
       '2007':
         revenue: 803786
-        rank: 9
+        rank: 6
       '2008':
         revenue: 1333244
-        rank: 9
+        rank: 7
       '2009':
         revenue: 795624
-        rank: 8
+        rank: 5
       '2010':
         revenue: 1041190
-        rank: 9
+        rank: 6
       '2011':
         revenue: 1113379
         rank: 7
       '2012':
         revenue: 688813
-        rank: 10
+        rank: 7
       '2013':
         revenue: 1568520
-        rank: 8
+        rank: 6
     Unprocessed (Wet) Gas:
       '2004':
         revenue: 6010439
-        rank: 10
+        rank: 9
       '2005':
         revenue: 5570242
-        rank: 11
+        rank: 10
       '2006':
         revenue: 3853631
-        rank: 12
+        rank: 10
       '2007':
         revenue: 4313837
-        rank: 12
+        rank: 11
       '2008':
         revenue: 5099622
-        rank: 11
+        rank: 10
       '2009':
         revenue: 1997810
-        rank: 12
+        rank: 11
       '2010':
         revenue: 2422359
-        rank: 11
+        rank: 12
       '2011':
         revenue: 1461668
-        rank: 13
+        rank: 10
       '2012':
         revenue: 1102930
-        rank: 11
+        rank: 12
       '2013':
         revenue: 779289
-        rank: 10
+        rank: 11
 KY:
   products:
     All:
       '2004':
         revenue: 146583
-        rank: 26
+        rank: 11
       '2005':
         revenue: 247736
-        rank: 26
+        rank: 10
       '2006':
         revenue: 2249796
-        rank: 19
+        rank: 11
       '2007':
         revenue: 2968945
-        rank: 18
+        rank: 12
       '2008':
         revenue: 1374366
-        rank: 22
+        rank: 9
       '2009':
         revenue: 1562655
-        rank: 21
+        rank: 12
       '2010':
         revenue: 489024
-        rank: 26
+        rank: 11
       '2011':
         revenue: 1968053
-        rank: 20
+        rank: 11
       '2012':
         revenue: 1612436
-        rank: 21
+        rank: 10
       '2013':
         revenue: 1766186
-        rank: 20
+        rank: 11
     Coal:
       '2004':
         revenue: 9996
-        rank: 9
+        rank: 7
       '2005':
         revenue: 16489
-        rank: 9
+        rank: 7
       '2006':
         revenue: 1982492
         rank: 6
@@ -3194,19 +3194,19 @@ KY:
         rank: 6
       '2008':
         revenue: 1258529
-        rank: 7
+        rank: 6
       '2009':
         revenue: 1350572
-        rank: 7
+        rank: 6
       '2010':
         revenue: 148781
-        rank: 9
+        rank: 8
       '2011':
         revenue: 1703681
-        rank: 7
+        rank: 6
       '2012':
         revenue: 1351028
-        rank: 8
+        rank: 6
       '2013':
         revenue: 1507762
         rank: 8
@@ -3220,85 +3220,85 @@ KY:
     Fuel Gas:
       '2013':
         revenue: -64
-        rank: 12
+        rank: 8
     Gas Plant Products:
       '2009':
         revenue: 3078
-        rank: 14
+        rank: 9
       '2010':
         revenue: 6975
-        rank: 13
+        rank: 8
       '2011':
         revenue: 6175
-        rank: 13
+        rank: 9
       '2012':
         revenue: 538
-        rank: 13
+        rank: 9
       '2013':
         revenue: 0
-        rank: 15
+        rank: 9
     Oil:
       '2004':
         revenue: 6302
-        rank: 21
+        rank: 7
       '2005':
         revenue: 5921
-        rank: 21
+        rank: 9
       '2006':
         revenue: 6002
-        rank: 21
+        rank: 9
       '2007':
         revenue: 153985
-        rank: 21
+        rank: 8
       '2008':
         revenue: 158808
-        rank: 21
+        rank: 9
       '2009':
         revenue: 86949
-        rank: 21
+        rank: 8
       '2010':
         revenue: 219859
-        rank: 20
+        rank: 9
       '2011':
         revenue: 138009
-        rank: 21
+        rank: 8
       '2012':
         revenue: 171819
-        rank: 21
+        rank: 9
       '2013':
         revenue: 160773
-        rank: 21
+        rank: 8
     'Oil & Gas':
       '2004':
         revenue: 48856
-        rank: 23
+        rank: 11
       '2005':
         revenue: 16385
-        rank: 25
+        rank: 13
       '2006':
         revenue: 79866
-        rank: 21
+        rank: 11
       '2007':
         revenue: 17891
-        rank: 26
+        rank: 13
       '2008':
         revenue: 27099
-        rank: 26
+        rank: 7
       '2009':
         revenue: 19268
-        rank: 24
+        rank: 11
       '2010':
         revenue: 16842
-        rank: 28
+        rank: 13
       '2011':
         revenue: 23385
-        rank: 24
+        rank: 14
       '2012':
         revenue: 13768
-        rank: 28
+        rank: 9
       '2013':
         revenue: 51226
-        rank: 23
+        rank: 8
     Oil Lost:
       '2005':
         revenue: 286
@@ -3306,87 +3306,87 @@ KY:
     Processed (Residue) Gas:
       '2009':
         revenue: 6085
-        rank: 16
+        rank: 6
       '2010':
         revenue: 30047
-        rank: 15
+        rank: 7
       '2011':
         revenue: 22559
-        rank: 15
+        rank: 8
       '2012':
         revenue: -46210
-        rank: 19
+        rank: 8
       '2013':
         revenue: 7771
-        rank: 14
+        rank: 8
     Unprocessed (Wet) Gas:
       '2004':
         revenue: 81428
-        rank: 20
+        rank: 11
       '2005':
         revenue: 208655
-        rank: 20
+        rank: 12
       '2006':
         revenue: 181436
-        rank: 20
+        rank: 11
       '2007':
         revenue: 166058
-        rank: 20
+        rank: 14
       '2008':
         revenue: 213082
-        rank: 19
+        rank: 13
       '2009':
         revenue: 96703
-        rank: 20
+        rank: 14
       '2010':
         revenue: 66520
-        rank: 20
+        rank: 13
       '2011':
         revenue: 74245
-        rank: 20
+        rank: 12
       '2012':
         revenue: 121494
         rank: 15
       '2013':
         revenue: 38717
-        rank: 20
+        rank: 13
 LA:
   products:
     All:
       '2004':
         revenue: 12800274
-        rank: 10
+        rank: 9
       '2005':
         revenue: 42976859
-        rank: 8
+        rank: 7
       '2006':
         revenue: 38600548
         rank: 8
       '2007':
         revenue: 39791057
-        rank: 9
+        rank: 8
       '2008':
         revenue: 51903932
-        rank: 8
+        rank: 7
       '2009':
         revenue: 15489392
-        rank: 12
+        rank: 10
       '2010':
         revenue: 56286094
-        rank: 9
+        rank: 8
       '2011':
         revenue: 27820282
-        rank: 9
+        rank: 8
       '2012':
         revenue: 18433793
-        rank: 11
+        rank: 9
       '2013':
         revenue: 13863775
-        rank: 11
+        rank: 10
     Condensate:
       '2004':
         revenue: 223046
-        rank: 6
+        rank: 5
       '2005':
         revenue: 941208
         rank: 5
@@ -3404,10 +3404,10 @@ LA:
         rank: 6
       '2010':
         revenue: 684195
-        rank: 6
+        rank: 5
       '2011':
         revenue: 880268
-        rank: 6
+        rank: 5
       '2012':
         revenue: 742185
         rank: 6
@@ -3417,28 +3417,28 @@ LA:
     Drip or Scrubber Condensate:
       '2004':
         revenue: 937
-        rank: 7
+        rank: 3
       '2005':
         revenue: 13949
         rank: 5
       '2006':
         revenue: 786
-        rank: 8
+        rank: 5
       '2007':
         revenue: 694
-        rank: 8
+        rank: 6
       '2008':
         revenue: 1173
-        rank: 6
+        rank: 5
       '2009':
         revenue: 298
-        rank: 7
+        rank: 6
       '2010':
         revenue: 343
-        rank: 7
+        rank: 4
       '2011':
         revenue: 381
-        rank: 7
+        rank: 6
       '2012':
         revenue: 79437
         rank: 4
@@ -3448,24 +3448,24 @@ LA:
     Flash Gas:
       '2004':
         revenue: -28188
-        rank: 3
+        rank: 1
       '2010':
         revenue: 753
-        rank: 2
+        rank: 1
     Fuel Gas:
       '2004':
         revenue: -1564
-        rank: 6
+        rank: 2
       '2012':
         revenue: 0
-        rank: 8
+        rank: 5
       '2013':
         revenue: 8657
-        rank: 8
+        rank: 7
     Gas Plant Products:
       '2004':
         revenue: 326755
-        rank: 6
+        rank: 5
       '2005':
         revenue: 653959
         rank: 5
@@ -3477,7 +3477,7 @@ LA:
         rank: 5
       '2008':
         revenue: 1337106
-        rank: 5
+        rank: 4
       '2009':
         revenue: 1857115
         rank: 5
@@ -3489,73 +3489,73 @@ LA:
         rank: 5
       '2012':
         revenue: 1230426
-        rank: 8
+        rank: 7
       '2013':
         revenue: 912125
         rank: 7
     Inlet Scrubber:
       '2004':
         revenue: -262
-        rank: 2
+        rank: 1
       '2011':
         revenue: 1
-        rank: 4
+        rank: 3
       '2012':
         revenue: 1
-        rank: 4
+        rank: 3
       '2013':
         revenue: 0
         rank: 5
     Oil:
       '2004':
         revenue: 1593364
-        rank: 10
+        rank: 6
       '2005':
         revenue: 1901458
-        rank: 10
+        rank: 8
       '2006':
         revenue: 2602372
-        rank: 10
+        rank: 8
       '2007':
         revenue: 3264259
-        rank: 8
+        rank: 7
       '2008':
         revenue: 4304052
-        rank: 10
+        rank: 8
       '2009':
         revenue: 1841354
-        rank: 9
+        rank: 7
       '2010':
         revenue: 2287463
-        rank: 10
+        rank: 9
       '2011':
         revenue: 3561441
-        rank: 10
+        rank: 7
       '2012':
         revenue: 3673399
-        rank: 9
+        rank: 8
       '2013':
         revenue: 3371522
-        rank: 12
+        rank: 7
     'Oil & Gas':
       '2004':
         revenue: -41693
-        rank: 31
+        rank: 11
       '2005':
         revenue: 1781427
-        rank: 12
+        rank: 11
       '2006':
         revenue: -79714
-        rank: 31
+        rank: 11
       '2007':
         revenue: 1541182
-        rank: 13
+        rank: 12
       '2008':
         revenue: 4816230
-        rank: 12
+        rank: 7
       '2009':
         revenue: -1438066
-        rank: 31
+        rank: 10
       '2010':
         revenue: 37220483
         rank: 3
@@ -3564,10 +3564,10 @@ LA:
         rank: 5
       '2012':
         revenue: 4857231
-        rank: 11
+        rank: 7
       '2013':
         revenue: 343267
-        rank: 17
+        rank: 8
     Other Liquid Hydrocarbons:
       '2013':
         revenue: 3
@@ -3575,7 +3575,7 @@ LA:
     Processed (Residue) Gas:
       '2004':
         revenue: -1308088
-        rank: 17
+        rank: 5
       '2005':
         revenue: 4184012
         rank: 5
@@ -3615,22 +3615,22 @@ LA:
         rank: 5
       '2007':
         revenue: 16592486
-        rank: 7
+        rank: 6
       '2008':
         revenue: -12368803
-        rank: 23
+        rank: 8
       '2009':
         revenue: 10584466
         rank: 6
       '2010':
         revenue: -13834019
-        rank: 24
+        rank: 5
       '2011':
         revenue: 5315758
-        rank: 10
+        rank: 8
       '2012':
         revenue: -18340573
-        rank: 22
+        rank: 6
       '2013':
         revenue: 450029
         rank: 12
@@ -3639,161 +3639,161 @@ MD:
     All:
       '2004':
         revenue: 10541
-        rank: 33
+        rank: 11
       '2005':
         revenue: 10551
-        rank: 34
+        rank: 10
       '2006':
         revenue: 7656
-        rank: 34
+        rank: 11
       '2007':
         revenue: 12037
-        rank: 32
+        rank: 12
       '2008':
         revenue: 10882
-        rank: 34
+        rank: 9
       '2009':
         revenue: 9418
-        rank: 33
+        rank: 12
       '2010':
         revenue: 8360
-        rank: 34
+        rank: 11
       '2011':
         revenue: 10045
-        rank: 35
+        rank: 11
       '2012':
         revenue: 6193
-        rank: 34
+        rank: 10
       '2013':
         revenue: 7532
-        rank: 34
+        rank: 11
     'Oil & Gas':
       '2004':
         revenue: 10541
-        rank: 27
+        rank: 11
       '2005':
         revenue: 10551
-        rank: 27
+        rank: 13
       '2006':
         revenue: 7656
-        rank: 28
+        rank: 11
       '2007':
         revenue: 12037
-        rank: 27
+        rank: 13
       '2008':
         revenue: 10882
-        rank: 27
+        rank: 7
       '2009':
         revenue: 9418
-        rank: 26
+        rank: 11
       '2010':
         revenue: 8360
-        rank: 30
+        rank: 13
       '2011':
         revenue: 10045
-        rank: 28
+        rank: 14
       '2012':
         revenue: 6193
-        rank: 30
+        rank: 9
       '2013':
         revenue: 7532
-        rank: 29
+        rank: 8
 MI:
   products:
     All:
       '2004':
         revenue: 1704872
-        rank: 18
+        rank: 11
       '2005':
         revenue: 2477053
-        rank: 19
+        rank: 10
       '2006':
         revenue: 2486058
-        rank: 18
+        rank: 11
       '2007':
         revenue: 2863023
-        rank: 19
+        rank: 12
       '2008':
         revenue: 4005528
-        rank: 16
+        rank: 9
       '2009':
         revenue: 2430584
-        rank: 18
+        rank: 12
       '2010':
         revenue: 1696222
-        rank: 19
+        rank: 11
       '2011':
         revenue: 1417841
-        rank: 21
+        rank: 11
       '2012':
         revenue: 1385375
-        rank: 22
+        rank: 10
       '2013':
         revenue: 1499036
-        rank: 21
+        rank: 11
     Condensate:
       '2004':
         revenue: 589
-        rank: 12
+        rank: 6
       '2005':
         revenue: 673
-        rank: 13
+        rank: 7
       '2007':
         revenue: 7777
-        rank: 12
+        rank: 7
       '2008':
         revenue: 105879
-        rank: 10
+        rank: 7
       '2009':
         revenue: 57005
-        rank: 9
+        rank: 8
       '2010':
         revenue: 72391
-        rank: 10
+        rank: 6
       '2011':
         revenue: 68373
-        rank: 10
+        rank: 6
       '2012':
         revenue: 69512
-        rank: 10
+        rank: 7
       '2013':
         revenue: 65290
-        rank: 10
+        rank: 7
     Gas Plant Products:
       '2004':
         revenue: 24138
-        rank: 13
+        rank: 6
       '2005':
         revenue: 64065
-        rank: 13
+        rank: 7
       '2006':
         revenue: 102904
-        rank: 13
+        rank: 8
       '2007':
         revenue: 134440
-        rank: 12
+        rank: 7
       '2008':
         revenue: 207501
-        rank: 12
+        rank: 6
       '2009':
         revenue: 90274
-        rank: 12
+        rank: 9
       '2010':
         revenue: 181567
-        rank: 12
+        rank: 8
       '2011':
         revenue: 76775
-        rank: 11
+        rank: 9
       '2012':
         revenue: -109142
-        rank: 16
+        rank: 9
       '2013':
         revenue: 57279
-        rank: 11
+        rank: 9
     Hardrock:
       '2004':
         revenue: -294
-        rank: 11
+        rank: 6
       '2005':
         revenue: 966
         rank: 6
@@ -3802,69 +3802,69 @@ MI:
         rank: 6
       '2012':
         revenue: 923
-        rank: 5
+        rank: 6
     Oil:
       '2004':
         revenue: 95294
-        rank: 20
+        rank: 7
       '2005':
         revenue: 136591
-        rank: 19
+        rank: 9
       '2006':
         revenue: 214632
-        rank: 19
+        rank: 9
       '2007':
         revenue: 199683
-        rank: 20
+        rank: 8
       '2008':
         revenue: 292533
-        rank: 20
+        rank: 9
       '2009':
         revenue: 112652
-        rank: 20
+        rank: 8
       '2010':
         revenue: 205236
-        rank: 21
+        rank: 9
       '2011':
         revenue: 235399
-        rank: 20
+        rank: 8
       '2012':
         revenue: 339024
-        rank: 16
+        rank: 9
       '2013':
         revenue: 303805
-        rank: 17
+        rank: 8
     'Oil & Gas':
       '2004':
         revenue: 51306
-        rank: 22
+        rank: 11
       '2005':
         revenue: 44244
-        rank: 21
+        rank: 13
       '2006':
         revenue: 44488
-        rank: 23
+        rank: 11
       '2007':
         revenue: 104262
-        rank: 22
+        rank: 13
       '2008':
         revenue: 492210
-        rank: 18
+        rank: 7
       '2009':
         revenue: 813220
-        rank: 13
+        rank: 10
       '2010':
         revenue: 78811
-        rank: 22
+        rank: 13
       '2011':
         revenue: 209069
-        rank: 20
+        rank: 14
       '2012':
         revenue: 94539
-        rank: 19
+        rank: 9
       '2013':
         revenue: 419937
-        rank: 15
+        rank: 8
     Other Liquid Hydrocarbons:
       '2011':
         revenue: 2731
@@ -3878,98 +3878,98 @@ MI:
     Processed (Residue) Gas:
       '2004':
         revenue: 897584
-        rank: 7
+        rank: 6
       '2005':
         revenue: 1472206
         rank: 6
       '2006':
         revenue: 1375958
-        rank: 7
+        rank: 6
       '2007':
         revenue: 1212825
         rank: 6
       '2008':
         revenue: 1697981
-        rank: 8
+        rank: 6
       '2009':
         revenue: 829472
-        rank: 7
+        rank: 5
       '2010':
         revenue: 1654391
         rank: 6
       '2011':
         revenue: 648437
-        rank: 10
+        rank: 7
       '2012':
         revenue: 716366
-        rank: 9
+        rank: 7
       '2013':
         revenue: 484158
-        rank: 10
+        rank: 7
     Unprocessed (Wet) Gas:
       '2004':
         revenue: 636252
-        rank: 15
+        rank: 11
       '2005':
         revenue: 758308
-        rank: 15
+        rank: 12
       '2006':
         revenue: 748077
-        rank: 14
+        rank: 11
       '2007':
         revenue: 1204036
-        rank: 14
+        rank: 13
       '2008':
         revenue: 1209423
-        rank: 13
+        rank: 12
       '2009':
         revenue: 527962
-        rank: 14
+        rank: 13
       '2010':
         revenue: -496174
-        rank: 23
+        rank: 13
       '2011':
         revenue: 176134
-        rank: 17
+        rank: 12
       '2012':
         revenue: 270236
-        rank: 12
+        rank: 13
       '2013':
         revenue: 165419
-        rank: 14
+        rank: 13
 MN:
   products:
     All:
       '2004':
         revenue: 37930
-        rank: 31
+        rank: 11
       '2005':
         revenue: 37701
-        rank: 32
+        rank: 10
       '2006':
         revenue: 55791
-        rank: 31
+        rank: 11
       '2007':
         revenue: 47503
-        rank: 31
+        rank: 12
       '2008':
         revenue: 50410
-        rank: 31
+        rank: 9
       '2009':
         revenue: 49183
-        rank: 32
+        rank: 12
       '2010':
         revenue: 49777
-        rank: 32
+        rank: 11
       '2011':
         revenue: 44825
-        rank: 31
+        rank: 11
       '2012':
         revenue: 58591
-        rank: 30
+        rank: 10
       '2013':
         revenue: 65620
-        rank: 30
+        rank: 11
     Copper:
       '2004':
         revenue: 13723
@@ -4037,34 +4037,34 @@ MO:
     All:
       '2004':
         revenue: 989139
-        rank: 20
+        rank: 11
       '2005':
         revenue: 5126297
-        rank: 15
+        rank: 9
       '2006':
         revenue: 10379050
-        rank: 14
+        rank: 10
       '2007':
         revenue: 17781944
-        rank: 14
+        rank: 10
       '2008':
         revenue: 14143710
-        rank: 14
+        rank: 8
       '2009':
         revenue: 9319938
-        rank: 13
+        rank: 11
       '2010':
         revenue: 13277036
-        rank: 12
+        rank: 10
       '2011':
         revenue: 14848332
-        rank: 13
+        rank: 10
       '2012':
         revenue: 11536512
-        rank: 13
+        rank: 9
       '2013':
         revenue: 9363146
-        rank: 14
+        rank: 10
     Copper:
       '2006':
         revenue: -10648
@@ -4115,7 +4115,7 @@ MO:
         rank: 2
       '2008':
         revenue: -17297
-        rank: 11
+        rank: 2
       '2009':
         revenue: 13003
         rank: 3
@@ -4165,7 +4165,7 @@ MO:
     'Oil & Gas':
       '2010':
         revenue: 7037
-        rank: 31
+        rank: 13
     Zinc Concentrate:
       '2004':
         revenue: 62744
@@ -4202,184 +4202,184 @@ MS:
     All:
       '2004':
         revenue: 2745759
-        rank: 17
+        rank: 11
       '2005':
         revenue: 3269836
-        rank: 16
+        rank: 10
       '2006':
         revenue: 3907080
-        rank: 17
+        rank: 11
       '2007':
         revenue: 6167053
-        rank: 17
+        rank: 11
       '2008':
         revenue: 3952799
-        rank: 17
+        rank: 9
       '2009':
         revenue: 2332045
-        rank: 19
+        rank: 12
       '2010':
         revenue: 2760707
-        rank: 18
+        rank: 11
       '2011':
         revenue: 6307993
-        rank: 18
+        rank: 10
       '2012':
         revenue: 9507600
-        rank: 15
+        rank: 9
       '2013':
         revenue: 6095779
-        rank: 15
+        rank: 11
     Condensate:
       '2004':
         revenue: 596958
-        rank: 5
+        rank: 4
       '2005':
         revenue: 118123
-        rank: 11
+        rank: 7
       '2006':
         revenue: 44304
-        rank: 11
+        rank: 7
       '2007':
         revenue: 22636
-        rank: 11
+        rank: 7
       '2008':
         revenue: 15139
-        rank: 12
+        rank: 7
       '2009':
         revenue: 118561
-        rank: 8
+        rank: 7
       '2010':
         revenue: 161319
-        rank: 8
+        rank: 6
       '2011':
         revenue: 134459
-        rank: 9
+        rank: 6
       '2012':
         revenue: 146839
-        rank: 9
+        rank: 7
       '2013':
         revenue: 85041
-        rank: 9
+        rank: 7
     Gas Plant Products:
       '2004':
         revenue: 331
-        rank: 14
+        rank: 6
     Oil:
       '2004':
         revenue: 1021415
-        rank: 11
+        rank: 6
       '2005':
         revenue: 1867635
-        rank: 11
+        rank: 8
       '2006':
         revenue: 1964861
-        rank: 12
+        rank: 9
       '2007':
         revenue: 2195712
-        rank: 12
+        rank: 7
       '2008':
         revenue: 2749117
-        rank: 12
+        rank: 8
       '2009':
         revenue: 1393938
-        rank: 12
+        rank: 7
       '2010':
         revenue: 1852643
-        rank: 12
+        rank: 9
       '2011':
         revenue: 3533747
-        rank: 11
+        rank: 7
       '2012':
         revenue: 3652289
-        rank: 10
+        rank: 8
       '2013':
         revenue: 4674201
-        rank: 9
+        rank: 7
     'Oil & Gas':
       '2004':
         revenue: 790276
-        rank: 12
+        rank: 10
       '2005':
         revenue: 735196
-        rank: 14
+        rank: 12
       '2006':
         revenue: 1472780
-        rank: 14
+        rank: 10
       '2007':
         revenue: 3690120
-        rank: 12
+        rank: 11
       '2008':
         revenue: 776560
-        rank: 16
+        rank: 7
       '2009':
         revenue: 457826
-        rank: 14
+        rank: 11
       '2010':
         revenue: 388020
-        rank: 16
+        rank: 13
       '2011':
         revenue: 2261278
-        rank: 14
+        rank: 12
       '2012':
         revenue: 5517505
-        rank: 10
+        rank: 7
       '2013':
         revenue: 1062317
-        rank: 11
+        rank: 7
     Processed (Residue) Gas:
       '2004':
         revenue: 109043
-        rank: 14
+        rank: 6
       '2005':
         revenue: 118208
-        rank: 14
+        rank: 7
       '2006':
         revenue: 4810
-        rank: 17
+        rank: 7
       '2007':
         revenue: 47433
-        rank: 15
+        rank: 6
       '2011':
         revenue: 135727
-        rank: 11
+        rank: 8
       '2012':
         revenue: 138505
-        rank: 12
+        rank: 8
       '2013':
         revenue: 223434
-        rank: 11
+        rank: 8
     Unprocessed (Wet) Gas:
       '2004':
         revenue: 227736
-        rank: 18
+        rank: 11
       '2005':
         revenue: 430674
-        rank: 19
+        rank: 12
       '2006':
         revenue: 420324
-        rank: 18
+        rank: 11
       '2007':
         revenue: 211152
-        rank: 18
+        rank: 14
       '2008':
         revenue: 411984
-        rank: 18
+        rank: 13
       '2009':
         revenue: 361720
-        rank: 17
+        rank: 13
       '2010':
         revenue: 358725
-        rank: 14
+        rank: 13
       '2011':
         revenue: 242782
-        rank: 16
+        rank: 12
       '2012':
         revenue: 52462
-        rank: 18
+        rank: 15
       '2013':
         revenue: 50786
-        rank: 18
+        rank: 13
 MT:
   products:
     All:
@@ -4388,7 +4388,7 @@ MT:
         rank: 6
       '2005':
         revenue: 78377752
-        rank: 6
+        rank: 5
       '2006':
         revenue: 76650057
         rank: 6
@@ -4397,13 +4397,13 @@ MT:
         rank: 6
       '2008':
         revenue: 108773425
-        rank: 7
+        rank: 6
       '2009':
         revenue: 87249866
         rank: 7
       '2010':
         revenue: 94481135
-        rank: 7
+        rank: 6
       '2011':
         revenue: 92827117
         rank: 7
@@ -4459,7 +4459,7 @@ MT:
         rank: 5
       '2008':
         revenue: 3133495
-        rank: 5
+        rank: 4
       '2009':
         revenue: 1841017
         rank: 5
@@ -4482,98 +4482,98 @@ MT:
     Condensate:
       '2004':
         revenue: 172866
-        rank: 9
+        rank: 5
       '2005':
         revenue: 164268
-        rank: 8
+        rank: 6
       '2006':
         revenue: 132928
-        rank: 9
+        rank: 7
       '2007':
         revenue: 168833
-        rank: 9
+        rank: 7
       '2008':
         revenue: 107842
-        rank: 9
+        rank: 7
       '2009':
         revenue: 32374
-        rank: 11
+        rank: 8
       '2010':
         revenue: -75374
-        rank: 15
+        rank: 6
       '2011':
         revenue: 2595
-        rank: 12
+        rank: 6
       '2013':
         revenue: -74896
-        rank: 15
+        rank: 7
     Drip or Scrubber Condensate:
       '2004':
         revenue: 2695
-        rank: 5
+        rank: 3
       '2005':
         revenue: 2443
-        rank: 8
+        rank: 6
       '2006':
         revenue: 1015
-        rank: 7
+        rank: 5
       '2007':
         revenue: 469
-        rank: 9
+        rank: 6
       '2010':
         revenue: -405
-        rank: 10
+        rank: 4
       '2012':
         revenue: 10654
         rank: 7
     Fuel Gas:
       '2004':
         revenue: 996
-        rank: 5
+        rank: 2
       '2005':
         revenue: 835
-        rank: 3
+        rank: 4
       '2006':
         revenue: 813
         rank: 3
       '2011':
         revenue: 15
-        rank: 6
+        rank: 4
     Gas Lost - Flared or Vented:
       '2011':
         revenue: 268
-        rank: 4
+        rank: 3
     Gas Plant Products:
       '2004':
         revenue: 236812
-        rank: 9
+        rank: 5
       '2005':
         revenue: 316364
-        rank: 9
+        rank: 6
       '2006':
         revenue: 422626
-        rank: 8
+        rank: 7
       '2007':
         revenue: 349342
-        rank: 8
+        rank: 6
       '2008':
         revenue: 659548
-        rank: 8
+        rank: 5
       '2009':
         revenue: 283046
-        rank: 9
+        rank: 8
       '2010':
         revenue: 367384
-        rank: 9
+        rank: 7
       '2011':
         revenue: 460265
-        rank: 10
+        rank: 8
       '2012':
         revenue: 209937
-        rank: 11
+        rank: 9
       '2013':
         revenue: 47536
-        rank: 12
+        rank: 9
     Gemstones:
       '2004':
         revenue: 240
@@ -4584,7 +4584,7 @@ MT:
     Hardrock:
       '2004':
         revenue: 119
-        rank: 9
+        rank: 6
       '2006':
         revenue: 2211
         rank: 3
@@ -4593,26 +4593,26 @@ MT:
         rank: 8
       '2008':
         revenue: 3650
-        rank: 2
+        rank: 3
       '2009':
         revenue: 147
-        rank: 8
+        rank: 9
       '2010':
         revenue: 220
-        rank: 5
+        rank: 6
       '2011':
         revenue: 122
         rank: 8
       '2012':
         revenue: -3259
-        rank: 11
+        rank: 4
       '2013':
         revenue: 20
-        rank: 8
+        rank: 10
     Oil:
       '2004':
         revenue: 14039321
-        rank: 7
+        rank: 5
       '2005':
         revenue: 19814255
         rank: 7
@@ -4621,25 +4621,25 @@ MT:
         rank: 7
       '2007':
         revenue: 24287986
-        rank: 7
+        rank: 6
       '2008':
         revenue: 37216860
         rank: 7
       '2009':
         revenue: 18173689
-        rank: 7
+        rank: 6
       '2010':
         revenue: 23988752
         rank: 7
       '2011':
         revenue: 27437896
-        rank: 7
+        rank: 6
       '2012':
         revenue: 26578696
         rank: 7
       '2013':
         revenue: 25320142
-        rank: 7
+        rank: 6
     'Oil & Gas':
       '2004':
         revenue: 5212970
@@ -4649,16 +4649,16 @@ MT:
         rank: 10
       '2006':
         revenue: 4817117
-        rank: 10
+        rank: 8
       '2007':
         revenue: 5105255
         rank: 10
       '2008':
         revenue: 4816698
-        rank: 11
+        rank: 7
       '2009':
         revenue: 5079421
-        rank: 10
+        rank: 8
       '2010':
         revenue: 5916672
         rank: 10
@@ -4667,10 +4667,10 @@ MT:
         rank: 7
       '2012':
         revenue: 9639279
-        rank: 8
+        rank: 6
       '2013':
         revenue: 2622770
-        rank: 9
+        rank: 7
     Phosphate:
       '2004':
         revenue: 4227
@@ -4692,44 +4692,44 @@ MT:
         rank: 3
       '2011':
         revenue: 1409
-        rank: 4
+        rank: 3
       '2012':
         revenue: 1409
         rank: 3
       '2013':
         revenue: -1409
-        rank: 4
+        rank: 3
     Processed (Residue) Gas:
       '2004':
         revenue: 110262
-        rank: 13
+        rank: 6
       '2005':
         revenue: 235445
-        rank: 12
+        rank: 7
       '2006':
         revenue: 419397
-        rank: 12
+        rank: 7
       '2007':
         revenue: 649893
-        rank: 11
+        rank: 6
       '2008':
         revenue: 394098
-        rank: 12
+        rank: 7
       '2009':
         revenue: 127235
-        rank: 12
+        rank: 6
       '2010':
         revenue: 71788
-        rank: 13
+        rank: 7
       '2011':
         revenue: 83643
-        rank: 14
+        rank: 8
       '2012':
         revenue: 23172
-        rank: 14
+        rank: 8
       '2013':
         revenue: -31671
-        rank: 18
+        rank: 8
     Sulfur:
       '2004':
         revenue: 986
@@ -4748,7 +4748,7 @@ MT:
         rank: 2
       '2009':
         revenue: -9594
-        rank: 4
+        rank: 2
       '2010':
         revenue: 3906
         rank: 2
@@ -4779,34 +4779,34 @@ MT:
         rank: 6
       '2009':
         revenue: 8577784
-        rank: 8
+        rank: 7
       '2010':
         revenue: 8289760
-        rank: 8
+        rank: 9
       '2011':
         revenue: 5912730
-        rank: 9
+        rank: 7
       '2012':
         revenue: 3810506
-        rank: 9
+        rank: 10
       '2013':
         revenue: 4461472
-        rank: 8
+        rank: 9
 NC:
   products:
     All:
       '2004':
         revenue: 474
-        rank: 35
+        rank: 11
       '2011':
         revenue: 158
-        rank: 37
+        rank: 11
       '2012':
         revenue: 158
-        rank: 37
+        rank: 10
       '2013':
         revenue: 158
-        rank: 37
+        rank: 11
     Hardrock:
       '2004':
         revenue: 474
@@ -4819,7 +4819,7 @@ NC:
         rank: 8
       '2013':
         revenue: 158
-        rank: 5
+        rank: 7
 ND:
   products:
     All:
@@ -4843,7 +4843,7 @@ ND:
         rank: 5
       '2010':
         revenue: 100100198
-        rank: 6
+        rank: 5
       '2011':
         revenue: 215013533
         rank: 5
@@ -4856,10 +4856,10 @@ ND:
     Coal:
       '2004':
         revenue: 482014
-        rank: 7
+        rank: 6
       '2005':
         revenue: 567955
-        rank: 7
+        rank: 6
       '2006':
         revenue: 904580
         rank: 7
@@ -4868,19 +4868,19 @@ ND:
         rank: 7
       '2008':
         revenue: 1139261
-        rank: 8
+        rank: 6
       '2009':
         revenue: 347487
-        rank: 9
+        rank: 7
       '2010':
         revenue: 264870
         rank: 8
       '2011':
         revenue: 1097273
-        rank: 9
+        rank: 7
       '2012':
         revenue: 1441457
-        rank: 7
+        rank: 6
       '2013':
         revenue: 1941034
         rank: 7
@@ -4891,38 +4891,38 @@ ND:
     Condensate:
       '2004':
         revenue: 133470
-        rank: 10
+        rank: 5
       '2005':
         revenue: 123393
-        rank: 10
+        rank: 7
       '2006':
         revenue: 64928
-        rank: 10
+        rank: 7
       '2007':
         revenue: 36405
-        rank: 10
+        rank: 7
       '2008':
         revenue: 52611
-        rank: 11
+        rank: 7
       '2009':
         revenue: 49589
-        rank: 10
+        rank: 8
       '2010':
         revenue: 24435
-        rank: 11
+        rank: 6
       '2011':
         revenue: 8107
-        rank: 11
+        rank: 6
       '2012':
         revenue: 2035
-        rank: 11
+        rank: 7
       '2013':
         revenue: 27240
-        rank: 11
+        rank: 7
     Drip or Scrubber Condensate:
       '2004':
         revenue: 30495
-        rank: 3
+        rank: 2
       '2005':
         revenue: 36307
         rank: 3
@@ -4940,10 +4940,10 @@ ND:
         rank: 6
       '2010':
         revenue: 2980
-        rank: 5
+        rank: 4
       '2011':
         revenue: 53215
-        rank: 3
+        rank: 4
       '2012':
         revenue: 49905
         rank: 6
@@ -4953,7 +4953,7 @@ ND:
     Fuel Gas:
       '2013':
         revenue: 286
-        rank: 11
+        rank: 8
     Gas Lost - Flared or Vented:
       '2004':
         revenue: 1032
@@ -4982,19 +4982,19 @@ ND:
     Gas Plant Products:
       '2004':
         revenue: 312713
-        rank: 7
+        rank: 5
       '2005':
         revenue: 479619
-        rank: 6
+        rank: 5
       '2006':
         revenue: 478298
         rank: 6
       '2007':
         revenue: 426090
-        rank: 7
+        rank: 6
       '2008':
         revenue: 1089791
-        rank: 6
+        rank: 4
       '2009':
         revenue: 702268
         rank: 6
@@ -5006,7 +5006,7 @@ ND:
         rank: 6
       '2012':
         revenue: 1517103
-        rank: 7
+        rank: 6
       '2013':
         revenue: 2172658
         rank: 5
@@ -5016,11 +5016,11 @@ ND:
         rank: 2
       '2012':
         revenue: 2726
-        rank: 4
+        rank: 5
     Inlet Scrubber:
       '2008':
         revenue: -18655
-        rank: 3
+        rank: 1
     Leonardite:
       '2006':
         revenue: 13539
@@ -5074,7 +5074,7 @@ ND:
     Oil:
       '2004':
         revenue: 22637652
-        rank: 4
+        rank: 3
       '2005':
         revenue: 35559101
         rank: 3
@@ -5101,7 +5101,7 @@ ND:
         rank: 4
       '2013':
         revenue: 180459111
-        rank: 4
+        rank: 3
     'Oil & Gas':
       '2004':
         revenue: 4234916
@@ -5136,34 +5136,34 @@ ND:
     Processed (Residue) Gas:
       '2004':
         revenue: 882443
-        rank: 8
+        rank: 6
       '2005':
         revenue: 1168853
-        rank: 7
+        rank: 6
       '2006':
         revenue: 855283
-        rank: 10
+        rank: 7
       '2007':
         revenue: 634709
-        rank: 12
+        rank: 6
       '2008':
         revenue: 2613514
         rank: 6
       '2009':
         revenue: 620003
-        rank: 9
+        rank: 6
       '2010':
         revenue: 692035
-        rank: 10
+        rank: 6
       '2011':
         revenue: 982065
-        rank: 8
+        rank: 7
       '2012':
         revenue: 349468
-        rank: 11
+        rank: 8
       '2013':
         revenue: 1177310
-        rank: 9
+        rank: 7
     Sulfur:
       '2004':
         revenue: 299
@@ -5183,156 +5183,156 @@ ND:
     Unprocessed (Wet) Gas:
       '2004':
         revenue: 2634033
-        rank: 13
+        rank: 10
       '2005':
         revenue: 4013931
-        rank: 12
+        rank: 10
       '2006':
         revenue: 4596965
-        rank: 11
+        rank: 10
       '2007':
         revenue: 5591377
-        rank: 11
+        rank: 10
       '2008':
         revenue: 5266035
         rank: 10
       '2009':
         revenue: 2451550
-        rank: 11
+        rank: 10
       '2010':
         revenue: 3536211
-        rank: 10
+        rank: 11
       '2011':
         revenue: 3344499
-        rank: 11
+        rank: 9
       '2012':
         revenue: 5078735
-        rank: 6
+        rank: 8
       '2013':
         revenue: 6538435
-        rank: 6
+        rank: 7
 NE:
   products:
     All:
       '2004':
         revenue: 177259
-        rank: 24
+        rank: 11
       '2005':
         revenue: 245469
-        rank: 27
+        rank: 10
       '2006':
         revenue: 320933
-        rank: 27
+        rank: 11
       '2007':
         revenue: 670375
-        rank: 26
+        rank: 12
       '2008':
         revenue: 696269
-        rank: 26
+        rank: 9
       '2009':
         revenue: 261748
-        rank: 26
+        rank: 12
       '2010':
         revenue: 573928
-        rank: 24
+        rank: 11
       '2011':
         revenue: 387341
-        rank: 27
+        rank: 11
       '2012':
         revenue: 318278
-        rank: 26
+        rank: 10
       '2013':
         revenue: 367214
-        rank: 25
+        rank: 11
     Gas Plant Products:
       '2008':
         revenue: 11101
-        rank: 14
+        rank: 6
     Oil:
       '2004':
         revenue: 147231
-        rank: 18
+        rank: 7
       '2005':
         revenue: 209691
-        rank: 17
+        rank: 9
       '2006':
         revenue: 280934
-        rank: 17
+        rank: 9
       '2007':
         revenue: 507967
-        rank: 17
+        rank: 8
       '2008':
         revenue: 631893
-        rank: 17
+        rank: 9
       '2009':
         revenue: 237831
-        rank: 17
+        rank: 8
       '2010':
         revenue: 302763
-        rank: 18
+        rank: 9
       '2011':
         revenue: 349883
-        rank: 17
+        rank: 8
       '2012':
         revenue: 266252
-        rank: 20
+        rank: 9
       '2013':
         revenue: 292938
-        rank: 19
+        rank: 8
     'Oil & Gas':
       '2004':
         revenue: 30028
-        rank: 24
+        rank: 11
       '2005':
         revenue: 35778
-        rank: 22
+        rank: 13
       '2006':
         revenue: 39999
-        rank: 24
+        rank: 11
       '2007':
         revenue: 38416
-        rank: 24
+        rank: 13
       '2008':
         revenue: 45157
-        rank: 25
+        rank: 7
       '2009':
         revenue: 15743
-        rank: 25
+        rank: 11
       '2010':
         revenue: 38608
-        rank: 25
+        rank: 13
       '2011':
         revenue: 37457
-        rank: 23
+        rank: 14
       '2012':
         revenue: 41945
-        rank: 20
+        rank: 9
       '2013':
         revenue: 68987
-        rank: 20
+        rank: 8
     Processed (Residue) Gas:
       '2008':
         revenue: 8118
-        rank: 17
+        rank: 7
       '2009':
         revenue: 8173
-        rank: 15
+        rank: 6
       '2010':
         revenue: 0
-        rank: 18
+        rank: 7
       '2012':
         revenue: 10081
-        rank: 16
+        rank: 8
       '2013':
         revenue: 5288
-        rank: 15
+        rank: 8
     Unprocessed (Wet) Gas:
       '2007':
         revenue: 123992
-        rank: 21
+        rank: 14
       '2010':
         revenue: 232557
-        rank: 16
+        rank: 13
 NM:
   products:
     All:
@@ -5443,10 +5443,10 @@ NM:
         rank: 6
       '2011':
         revenue: 9156087
-        rank: 6
+        rank: 5
       '2012':
         revenue: 15602807
-        rank: 5
+        rank: 4
       '2013':
         revenue: 14929296
         rank: 5
@@ -5515,7 +5515,7 @@ NM:
     Drip or Scrubber Condensate:
       '2004':
         revenue: 208602
-        rank: 2
+        rank: 1
       '2005':
         revenue: 141343
         rank: 2
@@ -5533,10 +5533,10 @@ NM:
         rank: 4
       '2010':
         revenue: 137178
-        rank: 4
+        rank: 3
       '2011':
         revenue: 187632
-        rank: 1
+        rank: 2
       '2012':
         revenue: 169028
         rank: 3
@@ -5546,7 +5546,7 @@ NM:
     Flash Gas:
       '2004':
         revenue: 3856
-        rank: 1
+        rank: 2
       '2005':
         revenue: 383
         rank: 1
@@ -5559,7 +5559,7 @@ NM:
     Fuel Gas:
       '2005':
         revenue: -116825
-        rank: 6
+        rank: 1
       '2007':
         revenue: 4471
         rank: 1
@@ -5574,7 +5574,7 @@ NM:
         rank: 4
       '2011':
         revenue: 5643
-        rank: 2
+        rank: 3
       '2012':
         revenue: 834
         rank: 5
@@ -5603,7 +5603,7 @@ NM:
         rank: 1
       '2012':
         revenue: 33431
-        rank: 2
+        rank: 1
       '2013':
         revenue: 3418139
         rank: 1
@@ -5641,28 +5641,28 @@ NM:
     Geothermal:
       '2004':
         revenue: 56000
-        rank: 3
+        rank: 4
       '2005':
         revenue: 6560
         rank: 3
       '2006':
         revenue: 3280
-        rank: 4
+        rank: 5
       '2007':
         revenue: 18286
         rank: 5
       '2008':
         revenue: 3280
-        rank: 6
+        rank: 4
       '2009':
         revenue: 640
-        rank: 7
+        rank: 6
       '2010':
         revenue: 15646
         rank: 6
       '2011':
         revenue: 24107
-        rank: 7
+        rank: 6
       '2012':
         revenue: 13145
         rank: 7
@@ -5867,7 +5867,7 @@ NM:
         rank: 3
       '2009':
         revenue: 6187620
-        rank: 9
+        rank: 7
       '2010':
         revenue: 25904729
         rank: 5
@@ -5890,7 +5890,7 @@ NM:
     Other Liquid Hydrocarbons:
       '2005':
         revenue: 29
-        rank: 4
+        rank: 3
       '2013':
         revenue: 4190
         rank: 2
@@ -6039,22 +6039,22 @@ NM:
     Sodium:
       '2005':
         revenue: 1400
-        rank: 3
+        rank: 5
       '2006':
         revenue: 7160
-        rank: 3
+        rank: 4
       '2007':
         revenue: 20120
         rank: 2
       '2008':
         revenue: 537
-        rank: 4
+        rank: 5
       '2009':
         revenue: 1760
-        rank: 3
+        rank: 4
       '2010':
         revenue: 2800
-        rank: 3
+        rank: 4
       '2011':
         revenue: -8892
         rank: 4
@@ -6063,14 +6063,14 @@ NM:
         rank: 4
       '2013':
         revenue: -12160
-        rank: 4
+        rank: 3
     Sulfur:
       '2011':
         revenue: 65190
         rank: 2
       '2012':
         revenue: 0
-        rank: 4
+        rank: 3
     Sylvite-Raw Ore:
       '2006':
         revenue: 168
@@ -6123,7 +6123,7 @@ NM:
         rank: 2
       '2012':
         revenue: 62277441
-        rank: 1
+        rank: 2
       '2013':
         revenue: 105090556
         rank: 2
@@ -6132,31 +6132,31 @@ NV:
     All:
       '2004':
         revenue: 6154386
-        rank: 13
+        rank: 10
       '2005':
         revenue: 15470685
-        rank: 12
+        rank: 8
       '2006':
         revenue: 15405054
-        rank: 13
+        rank: 10
       '2007':
         revenue: 25966607
-        rank: 12
+        rank: 10
       '2008':
         revenue: 45437977
-        rank: 9
+        rank: 7
       '2009':
         revenue: 21717657
-        rank: 10
+        rank: 9
       '2010':
         revenue: 18032797
-        rank: 11
+        rank: 9
       '2011':
         revenue: 17671051
-        rank: 10
+        rank: 9
       '2012':
         revenue: 20130592
-        rank: 10
+        rank: 8
       '2013':
         revenue: 15720981
         rank: 10
@@ -6260,34 +6260,34 @@ NV:
     Oil:
       '2004':
         revenue: 1665411
-        rank: 9
+        rank: 6
       '2005':
         revenue: 2158747
-        rank: 9
+        rank: 8
       '2006':
         revenue: 2732321
-        rank: 9
+        rank: 8
       '2007':
         revenue: 2886796
-        rank: 9
+        rank: 7
       '2008':
         revenue: 4318251
-        rank: 9
+        rank: 8
       '2009':
         revenue: 2514108
-        rank: 8
+        rank: 7
       '2010':
         revenue: 3397208
         rank: 8
       '2011':
         revenue: 4396705
-        rank: 8
+        rank: 7
       '2012':
         revenue: 3980599
         rank: 8
       '2013':
         revenue: 3613729
-        rank: 10
+        rank: 7
     'Oil & Gas':
       '2004':
         revenue: 2918035
@@ -6303,22 +6303,22 @@ NV:
         rank: 8
       '2008':
         revenue: 9757015
-        rank: 10
+        rank: 6
       '2009':
         revenue: 6789131
-        rank: 8
+        rank: 7
       '2010':
         revenue: 6984395
         rank: 9
       '2011':
         revenue: 6841870
-        rank: 9
+        rank: 8
       '2012':
         revenue: 11611274
         rank: 6
       '2013':
         revenue: 7796944
-        rank: 6
+        rank: 5
     Potash:
       '2004':
         revenue: 1736
@@ -6380,256 +6380,256 @@ NV:
     Sodium:
       '2005':
         revenue: -19836
-        rank: 6
+        rank: 3
       '2008':
         revenue: -15357
-        rank: 6
+        rank: 3
 NY:
   products:
     All:
       '2004':
         revenue: 8640
-        rank: 34
+        rank: 11
       '2005':
         revenue: 20150
-        rank: 33
+        rank: 10
       '2006':
         revenue: 13365
-        rank: 33
+        rank: 11
       '2007':
         revenue: 10451
-        rank: 33
+        rank: 12
       '2008':
         revenue: 11517
-        rank: 33
+        rank: 9
       '2009':
         revenue: 6749
-        rank: 34
+        rank: 12
       '2010':
         revenue: 6474
-        rank: 35
+        rank: 11
       '2011':
         revenue: 21546
-        rank: 34
+        rank: 11
       '2012':
         revenue: 4469
-        rank: 36
+        rank: 10
       '2013':
         revenue: 5223
-        rank: 35
+        rank: 11
     Unprocessed (Wet) Gas:
       '2004':
         revenue: 8640
-        rank: 23
+        rank: 11
       '2005':
         revenue: 20150
-        rank: 23
+        rank: 12
       '2006':
         revenue: 13365
-        rank: 23
+        rank: 11
       '2007':
         revenue: 10451
-        rank: 24
+        rank: 14
       '2008':
         revenue: 11517
-        rank: 22
+        rank: 13
       '2009':
         revenue: 6749
-        rank: 23
+        rank: 14
       '2010':
         revenue: 6474
-        rank: 22
+        rank: 13
       '2011':
         revenue: 21546
-        rank: 22
+        rank: 12
       '2012':
         revenue: 4469
-        rank: 21
+        rank: 16
       '2013':
         revenue: 5223
-        rank: 21
+        rank: 13
 OH:
   products:
     All:
       '2004':
         revenue: 576173
-        rank: 23
+        rank: 11
       '2005':
         revenue: 680402
-        rank: 24
+        rank: 10
       '2006':
         revenue: 815228
-        rank: 25
+        rank: 11
       '2007':
         revenue: 852131
-        rank: 25
+        rank: 12
       '2008':
         revenue: 1049058
-        rank: 24
+        rank: 9
       '2009':
         revenue: 596725
-        rank: 25
+        rank: 12
       '2010':
         revenue: 751158
-        rank: 21
+        rank: 11
       '2011':
         revenue: 646377
-        rank: 24
+        rank: 11
       '2012':
         revenue: 521190
-        rank: 24
+        rank: 10
       '2013':
         revenue: 483191
-        rank: 24
+        rank: 11
     Coal:
       '2010':
         revenue: 3373
-        rank: 10
+        rank: 8
     Oil:
       '2004':
         revenue: 95931
-        rank: 19
+        rank: 7
       '2005':
         revenue: 124543
-        rank: 20
+        rank: 9
       '2006':
         revenue: 191104
-        rank: 20
+        rank: 9
       '2007':
         revenue: 233140
-        rank: 19
+        rank: 8
       '2008':
         revenue: 362989
-        rank: 19
+        rank: 9
       '2009':
         revenue: 226733
-        rank: 18
+        rank: 8
       '2010':
         revenue: 224093
-        rank: 19
+        rank: 9
       '2011':
         revenue: 250634
-        rank: 19
+        rank: 8
       '2012':
         revenue: 285827
-        rank: 19
+        rank: 9
       '2013':
         revenue: 235423
-        rank: 20
+        rank: 8
     'Oil & Gas':
       '2004':
         revenue: 60450
-        rank: 21
+        rank: 11
       '2005':
         revenue: 13768
-        rank: 26
+        rank: 13
       '2006':
         revenue: 27993
-        rank: 25
+        rank: 11
       '2007':
         revenue: 5609
-        rank: 29
+        rank: 13
       '2008':
         revenue: 8723
-        rank: 29
+        rank: 7
       '2009':
         revenue: 6812
-        rank: 27
+        rank: 11
       '2010':
         revenue: 184356
-        rank: 20
+        rank: 13
       '2011':
         revenue: 82253
-        rank: 22
+        rank: 14
       '2012':
         revenue: 41104
-        rank: 21
+        rank: 9
       '2013':
         revenue: 36242
-        rank: 24
+        rank: 8
     Processed (Residue) Gas:
       '2004':
         revenue: 11657
-        rank: 15
+        rank: 6
       '2005':
         revenue: 7379
-        rank: 16
+        rank: 7
       '2006':
         revenue: 6178
-        rank: 16
+        rank: 7
       '2007':
         revenue: 3343
-        rank: 17
+        rank: 6
       '2008':
         revenue: 1122
-        rank: 19
+        rank: 7
       '2013':
         revenue: 402
-        rank: 16
+        rank: 8
     Unprocessed (Wet) Gas:
       '2004':
         revenue: 408134
-        rank: 16
+        rank: 11
       '2005':
         revenue: 534712
-        rank: 17
+        rank: 12
       '2006':
         revenue: 589953
-        rank: 16
+        rank: 11
       '2007':
         revenue: 610039
-        rank: 16
+        rank: 14
       '2008':
         revenue: 676224
-        rank: 15
+        rank: 13
       '2009':
         revenue: 363181
-        rank: 16
+        rank: 13
       '2010':
         revenue: 339337
-        rank: 15
+        rank: 13
       '2011':
         revenue: 313490
-        rank: 15
+        rank: 12
       '2012':
         revenue: 194259
-        rank: 13
+        rank: 14
       '2013':
         revenue: 211124
-        rank: 13
+        rank: 12
 OK:
   products:
     All:
       '2004':
         revenue: 11903973
-        rank: 11
+        rank: 10
       '2005':
         revenue: 12806684
-        rank: 13
+        rank: 9
       '2006':
         revenue: 15978170
-        rank: 12
+        rank: 10
       '2007':
         revenue: 20297059
-        rank: 13
+        rank: 10
       '2008':
         revenue: 25913840
-        rank: 13
+        rank: 8
       '2009':
         revenue: 17770050
-        rank: 11
+        rank: 10
       '2010':
         revenue: 10343920
-        rank: 15
+        rank: 10
       '2011':
         revenue: 14913040
-        rank: 12
+        rank: 10
       '2012':
         revenue: 17045600
-        rank: 12
+        rank: 9
       '2013':
         revenue: 13299437
-        rank: 12
+        rank: 10
     Asphalt:
       '2006':
         revenue: 959
@@ -6649,62 +6649,62 @@ OK:
         rank: 6
       '2005':
         revenue: 306076
-        rank: 8
+        rank: 7
       '2006':
         revenue: 661032
-        rank: 8
+        rank: 7
       '2007':
         revenue: 714270
-        rank: 8
+        rank: 7
       '2008':
         revenue: 903765
-        rank: 9
+        rank: 6
       '2009':
         revenue: 972476
-        rank: 8
+        rank: 6
       '2010':
         revenue: 832965
         rank: 7
       '2011':
         revenue: 1145326
-        rank: 8
+        rank: 7
       '2012':
         revenue: 725947
-        rank: 9
+        rank: 6
       '2013':
         revenue: 996293
-        rank: 9
+        rank: 8
     Coal Bed Methane:
       '2004':
         revenue: 347
-        rank: 8
+        rank: 6
       '2005':
         revenue: 6832
-        rank: 7
+        rank: 6
       '2006':
         revenue: 6113
-        rank: 7
+        rank: 6
       '2007':
         revenue: 4530
         rank: 7
       '2008':
         revenue: 11139
-        rank: 7
+        rank: 5
       '2009':
         revenue: -19975
-        rank: 8
+        rank: 7
       '2010':
         revenue: 1259
-        rank: 8
+        rank: 6
       '2011':
         revenue: 1216
-        rank: 8
+        rank: 6
       '2012':
         revenue: 757
-        rank: 7
+        rank: 5
       '2013':
         revenue: 633
-        rank: 8
+        rank: 6
     Coal-Bituminous-Raw:
       '2004':
         revenue: -58468
@@ -6716,91 +6716,91 @@ OK:
     Condensate:
       '2004':
         revenue: 188969
-        rank: 8
+        rank: 5
       '2005':
         revenue: 216616
-        rank: 7
+        rank: 6
       '2006':
         revenue: 228757
-        rank: 8
+        rank: 6
       '2007':
         revenue: 241969
-        rank: 8
+        rank: 6
       '2008':
         revenue: 249493
-        rank: 8
+        rank: 7
       '2009':
         revenue: 143702
         rank: 7
       '2010':
         revenue: 151336
-        rank: 9
+        rank: 6
       '2011':
         revenue: 272789
-        rank: 8
+        rank: 6
       '2012':
         revenue: 417964
-        rank: 8
+        rank: 7
       '2013':
         revenue: 1405710
         rank: 5
     Drip or Scrubber Condensate:
       '2007':
         revenue: 5
-        rank: 10
+        rank: 6
       '2008':
         revenue: 396
-        rank: 7
+        rank: 5
       '2009':
         revenue: 89
-        rank: 8
+        rank: 6
       '2010':
         revenue: 78
-        rank: 9
+        rank: 4
       '2011':
         revenue: 54
-        rank: 8
+        rank: 6
       '2012':
         revenue: 21
-        rank: 11
+        rank: 8
     Fuel Gas:
       '2007':
         revenue: 77
-        rank: 5
+        rank: 2
       '2013':
         revenue: 15296
-        rank: 7
+        rank: 6
     Gas Plant Products:
       '2004':
         revenue: 102686
-        rank: 11
+        rank: 6
       '2005':
         revenue: 181266
-        rank: 11
+        rank: 6
       '2006':
         revenue: 359716
-        rank: 9
+        rank: 7
       '2007':
         revenue: 305578
-        rank: 9
+        rank: 6
       '2008':
         revenue: 500880
-        rank: 9
+        rank: 5
       '2009':
         revenue: 168705
-        rank: 11
+        rank: 8
       '2010':
         revenue: 242206
-        rank: 10
+        rank: 7
       '2011':
         revenue: 472945
-        rank: 9
+        rank: 8
       '2012':
         revenue: 1710870
         rank: 6
       '2013':
         revenue: 564486
-        rank: 9
+        rank: 8
     Helium:
       '2013':
         revenue: 1
@@ -6808,10 +6808,10 @@ OK:
     Inlet Scrubber:
       '2004':
         revenue: 6
-        rank: 1
+        rank: 2
       '2005':
         revenue: 44
-        rank: 3
+        rank: 4
       '2006':
         revenue: 67
         rank: 2
@@ -6820,7 +6820,7 @@ OK:
         rank: 2
       '2008':
         revenue: 1243
-        rank: 2
+        rank: 3
       '2009':
         revenue: 595
         rank: 2
@@ -6833,50 +6833,50 @@ OK:
     Oil:
       '2004':
         revenue: 351996
-        rank: 16
+        rank: 7
       '2005':
         revenue: 524288
-        rank: 16
+        rank: 9
       '2006':
         revenue: 753790
-        rank: 15
+        rank: 9
       '2007':
         revenue: 1508377
-        rank: 14
+        rank: 8
       '2008':
         revenue: 1219080
-        rank: 15
+        rank: 9
       '2009':
         revenue: 1063546
-        rank: 14
+        rank: 8
       '2010':
         revenue: 1176113
-        rank: 15
+        rank: 9
       '2011':
         revenue: 1514735
-        rank: 15
+        rank: 8
       '2012':
         revenue: 3038187
-        rank: 11
+        rank: 8
       '2013':
         revenue: 3593270
-        rank: 11
+        rank: 7
     'Oil & Gas':
       '2004':
         revenue: 1460322
-        rank: 11
+        rank: 10
       '2005':
         revenue: 2201809
         rank: 11
       '2006':
         revenue: 3076312
-        rank: 11
+        rank: 9
       '2007':
         revenue: 7196670
         rank: 9
       '2008':
         revenue: 10756759
-        rank: 9
+        rank: 6
       '2009':
         revenue: 9592572
         rank: 6
@@ -6885,121 +6885,121 @@ OK:
         rank: 13
       '2011':
         revenue: 4252980
-        rank: 12
+        rank: 10
       '2012':
         revenue: 6271939
-        rank: 9
+        rank: 7
       '2013':
         revenue: 1550012
-        rank: 10
+        rank: 7
     Other Liquid Hydrocarbons:
       '2004':
         revenue: 904
         rank: 1
       '2005':
         revenue: 84
-        rank: 3
+        rank: 2
       '2009':
         revenue: 1
-        rank: 3
+        rank: 2
       '2011':
         revenue: 0
-        rank: 5
+        rank: 4
     Processed (Residue) Gas:
       '2004':
         revenue: 490464
-        rank: 9
+        rank: 6
       '2005':
         revenue: 723127
-        rank: 9
+        rank: 7
       '2006':
         revenue: 1022388
-        rank: 9
+        rank: 7
       '2007':
         revenue: 760738
-        rank: 10
+        rank: 6
       '2008':
         revenue: 1008624
-        rank: 11
+        rank: 7
       '2009':
         revenue: 316443
-        rank: 10
+        rank: 6
       '2010':
         revenue: 491821
-        rank: 11
+        rank: 7
       '2011':
         revenue: 919189
-        rank: 9
+        rank: 7
       '2012':
         revenue: 1025143
         rank: 7
       '2013':
         revenue: 1613307
-        rank: 7
+        rank: 6
     Unprocessed (Wet) Gas:
       '2004':
         revenue: 8609775
-        rank: 9
+        rank: 8
       '2005':
         revenue: 8646541
         rank: 9
       '2006':
         revenue: 9869035
-        rank: 9
+        rank: 8
       '2007':
         revenue: 9564533
-        rank: 9
+        rank: 8
       '2008':
         revenue: 11261503
         rank: 8
       '2009':
         revenue: 5530937
-        rank: 9
+        rank: 8
       '2010':
         revenue: 6860678
-        rank: 9
+        rank: 10
       '2011':
         revenue: 6333352
-        rank: 8
+        rank: 7
       '2012':
         revenue: 3854774
-        rank: 8
+        rank: 9
       '2013':
         revenue: 3560429
-        rank: 9
+        rank: 10
 OR:
   products:
     All:
       '2004':
         revenue: 71549
-        rank: 29
+        rank: 11
       '2005':
         revenue: 52179
-        rank: 31
+        rank: 10
       '2006':
         revenue: 1318016
-        rank: 23
+        rank: 11
       '2007':
         revenue: 1154263
-        rank: 22
+        rank: 12
       '2008':
         revenue: 440710
-        rank: 28
+        rank: 9
       '2009':
         revenue: 1382900
-        rank: 22
+        rank: 12
       '2010':
         revenue: 674977
-        rank: 22
+        rank: 11
       '2011':
         revenue: 757976
-        rank: 23
+        rank: 11
       '2012':
         revenue: 681409
-        rank: 23
+        rank: 10
       '2013':
         revenue: 616336
-        rank: 22
+        rank: 11
     Geothermal:
       '2006':
         revenue: 3111
@@ -7028,223 +7028,223 @@ OR:
     'Oil & Gas':
       '2004':
         revenue: 71549
-        rank: 19
+        rank: 11
       '2005':
         revenue: 52179
-        rank: 19
+        rank: 13
       '2006':
         revenue: 1314905
-        rank: 15
+        rank: 10
       '2007':
         revenue: 953494
-        rank: 16
+        rank: 12
       '2008':
         revenue: 409116
-        rank: 19
+        rank: 7
       '2009':
         revenue: 407516
-        rank: 15
+        rank: 11
       '2010':
         revenue: 391906
-        rank: 15
+        rank: 13
       '2011':
         revenue: 492137
-        rank: 16
+        rank: 13
       '2012':
         revenue: 427987
-        rank: 17
+        rank: 9
       '2013':
         revenue: 377474
-        rank: 16
+        rank: 8
 PA:
   products:
     All:
       '2004':
         revenue: 59320
-        rank: 30
+        rank: 11
       '2005':
         revenue: 74193
-        rank: 30
+        rank: 10
       '2006':
         revenue: 196979
-        rank: 29
+        rank: 11
       '2007':
         revenue: 72178
-        rank: 30
+        rank: 12
       '2008':
         revenue: 96167
-        rank: 30
+        rank: 9
       '2009':
         revenue: 104756
-        rank: 30
+        rank: 12
       '2010':
         revenue: 218067
-        rank: 29
+        rank: 11
       '2011':
         revenue: 104472
-        rank: 29
+        rank: 11
       '2012':
         revenue: 141853
-        rank: 29
+        rank: 10
       '2013':
         revenue: 86450
-        rank: 29
+        rank: 11
     Condensate:
       '2012':
         revenue: 101
-        rank: 14
+        rank: 7
     Gas Plant Products:
       '2012':
         revenue: 323
-        rank: 14
+        rank: 9
       '2013':
         revenue: 2094
-        rank: 14
+        rank: 9
     Oil:
       '2004':
         revenue: 739
-        rank: 24
+        rank: 7
       '2007':
         revenue: 374
-        rank: 23
+        rank: 8
       '2008':
         revenue: 630
-        rank: 22
+        rank: 9
       '2009':
         revenue: 36882
-        rank: 23
+        rank: 8
       '2010':
         revenue: 64678
-        rank: 22
+        rank: 9
       '2011':
         revenue: 29968
-        rank: 22
+        rank: 8
       '2012':
         revenue: 46754
-        rank: 22
+        rank: 9
       '2013':
         revenue: 20670
-        rank: 22
+        rank: 8
     'Oil & Gas':
       '2004':
         revenue: 19675
-        rank: 25
+        rank: 11
       '2005':
         revenue: 19835
-        rank: 23
+        rank: 13
       '2006':
         revenue: 129737
-        rank: 19
+        rank: 11
       '2007':
         revenue: 3618
-        rank: 30
+        rank: 13
       '2008':
         revenue: 2050
-        rank: 30
+        rank: 7
       '2009':
         revenue: 3025
-        rank: 28
+        rank: 11
       '2010':
         revenue: 38768
-        rank: 24
+        rank: 13
       '2011':
         revenue: 9388
-        rank: 29
+        rank: 14
       '2012':
         revenue: 23572
-        rank: 23
+        rank: 9
       '2013':
         revenue: 53530
-        rank: 22
+        rank: 8
     Processed (Residue) Gas:
       '2005':
         revenue: 19204
-        rank: 15
+        rank: 7
       '2006':
         revenue: 17093
-        rank: 15
+        rank: 7
       '2007':
         revenue: 13010
-        rank: 16
+        rank: 6
       '2008':
         revenue: 20747
-        rank: 15
+        rank: 7
       '2009':
         revenue: 25511
-        rank: 14
+        rank: 6
       '2010':
         revenue: 54904
-        rank: 14
+        rank: 7
       '2011':
         revenue: 21634
-        rank: 16
+        rank: 8
       '2012':
         revenue: 13046
-        rank: 15
+        rank: 8
       '2013':
         revenue: 8630
-        rank: 13
+        rank: 8
     Unprocessed (Wet) Gas:
       '2004':
         revenue: 38906
-        rank: 21
+        rank: 11
       '2005':
         revenue: 35154
-        rank: 22
+        rank: 12
       '2006':
         revenue: 50149
-        rank: 22
+        rank: 11
       '2007':
         revenue: 55175
-        rank: 23
+        rank: 14
       '2008':
         revenue: 72740
-        rank: 21
+        rank: 13
       '2009':
         revenue: 39337
-        rank: 21
+        rank: 14
       '2010':
         revenue: 59717
-        rank: 21
+        rank: 13
       '2011':
         revenue: 43482
-        rank: 21
+        rank: 12
       '2012':
         revenue: 58057
-        rank: 16
+        rank: 15
       '2013':
         revenue: 1527
-        rank: 22
+        rank: 13
 SC:
   products:
     All:
       '2004':
         revenue: 408
-        rank: 36
+        rank: 11
       '2005':
         revenue: 1110
-        rank: 35
+        rank: 10
       '2006':
         revenue: 1110
-        rank: 35
+        rank: 11
       '2008':
         revenue: 2220
-        rank: 35
+        rank: 9
       '2009':
         revenue: 5651
-        rank: 35
+        rank: 12
       '2010':
         revenue: 3353
-        rank: 36
+        rank: 11
       '2011':
         revenue: 3400
-        rank: 36
+        rank: 11
       '2012':
         revenue: 5516
-        rank: 35
+        rank: 10
       '2013':
         revenue: 1110
-        rank: 36
+        rank: 11
     Gold Placer:
       '2009':
         revenue: 101
@@ -7255,16 +7255,16 @@ SC:
     Hardrock:
       '2004':
         revenue: 408
-        rank: 6
+        rank: 5
       '2005':
         revenue: 1110
-        rank: 4
+        rank: 5
       '2006':
         revenue: 1110
         rank: 6
       '2008':
         revenue: 2220
-        rank: 3
+        rank: 4
       '2009':
         revenue: 5550
         rank: 4
@@ -7279,133 +7279,133 @@ SC:
         rank: 3
       '2013':
         revenue: 1110
-        rank: 4
+        rank: 5
 SD:
   products:
     All:
       '2004':
         revenue: 918508
-        rank: 22
+        rank: 11
       '2005':
         revenue: 1480483
-        rank: 20
+        rank: 10
       '2006':
         revenue: 1656501
-        rank: 22
+        rank: 11
       '2007':
         revenue: 2125347
-        rank: 21
+        rank: 12
       '2008':
         revenue: 2597533
-        rank: 20
+        rank: 9
       '2009':
         revenue: 1678116
-        rank: 20
+        rank: 12
       '2010':
         revenue: 1539020
-        rank: 20
+        rank: 11
       '2011':
         revenue: 2499906
-        rank: 19
+        rank: 11
       '2012':
         revenue: 3587776
-        rank: 19
+        rank: 10
       '2013':
         revenue: 2778710
-        rank: 19
+        rank: 11
     Oil:
       '2004':
         revenue: 659640
-        rank: 14
+        rank: 7
       '2005':
         revenue: 1135530
-        rank: 14
+        rank: 9
       '2006':
         revenue: 1308522
-        rank: 14
+        rank: 9
       '2007':
         revenue: 1374578
-        rank: 15
+        rank: 8
       '2008':
         revenue: 2309915
-        rank: 13
+        rank: 9
       '2009':
         revenue: 1071240
-        rank: 13
+        rank: 8
       '2010':
         revenue: 1275227
-        rank: 14
+        rank: 9
       '2011':
         revenue: 1916529
-        rank: 14
+        rank: 8
       '2012':
         revenue: 2047914
-        rank: 15
+        rank: 9
       '2013':
         revenue: 2004621
-        rank: 15
+        rank: 8
     'Oil & Gas':
       '2004':
         revenue: 136741
-        rank: 17
+        rank: 11
       '2005':
         revenue: 200303
-        rank: 17
+        rank: 13
       '2006':
         revenue: 217948
-        rank: 18
+        rank: 11
       '2007':
         revenue: 665871
-        rank: 18
+        rank: 12
       '2008':
         revenue: 169735
-        rank: 23
+        rank: 7
       '2009':
         revenue: 372781
-        rank: 17
+        rank: 11
       '2010':
         revenue: 123721
-        rank: 21
+        rank: 13
       '2011':
         revenue: 492107
-        rank: 17
+        rank: 13
       '2012':
         revenue: 1494999
-        rank: 14
+        rank: 8
       '2013':
         revenue: 726801
-        rank: 12
+        rank: 8
     Unprocessed (Wet) Gas:
       '2004':
         revenue: 122127
-        rank: 19
+        rank: 11
       '2005':
         revenue: 144650
-        rank: 21
+        rank: 12
       '2006':
         revenue: 130031
-        rank: 21
+        rank: 11
       '2007':
         revenue: 84898
-        rank: 22
+        rank: 14
       '2008':
         revenue: 117883
-        rank: 20
+        rank: 13
       '2009':
         revenue: 234095
-        rank: 18
+        rank: 13
       '2010':
         revenue: 140072
-        rank: 18
+        rank: 13
       '2011':
         revenue: 91270
-        rank: 18
+        rank: 12
       '2012':
         revenue: 44863
-        rank: 19
+        rank: 16
       '2013':
         revenue: 47288
-        rank: 19
+        rank: 13
 TX:
   products:
     All:
@@ -7414,22 +7414,22 @@ TX:
         rank: 9
       '2005':
         revenue: 37197008
-        rank: 9
+        rank: 7
       '2006':
         revenue: 24936513
-        rank: 10
+        rank: 9
       '2007':
         revenue: 28623888
-        rank: 10
+        rank: 9
       '2008':
         revenue: 40576686
-        rank: 10
+        rank: 7
       '2009':
         revenue: 25714503
         rank: 9
       '2010':
         revenue: 58468677
-        rank: 8
+        rank: 7
       '2011':
         revenue: 38037381
         rank: 8
@@ -7442,7 +7442,7 @@ TX:
     Condensate:
       '2004':
         revenue: 204025
-        rank: 7
+        rank: 5
       '2005':
         revenue: 282711
         rank: 6
@@ -7469,17 +7469,17 @@ TX:
         rank: 5
       '2013':
         revenue: 589531
-        rank: 8
+        rank: 6
     Drip or Scrubber Condensate:
       '2004':
         revenue: 4056
-        rank: 4
+        rank: 3
       '2005':
         revenue: 2632
-        rank: 7
+        rank: 6
       '2006':
         revenue: 4044
-        rank: 6
+        rank: 5
       '2007':
         revenue: 2444
         rank: 6
@@ -7488,23 +7488,23 @@ TX:
         rank: 5
       '2010':
         revenue: 113
-        rank: 8
+        rank: 4
       '2011':
         revenue: 951
         rank: 6
       '2012':
         revenue: 1017
-        rank: 9
+        rank: 8
       '2013':
         revenue: -189
-        rank: 7
+        rank: 6
     Flash Gas:
       '2004':
         revenue: -43
-        rank: 2
+        rank: 3
       '2006':
         revenue: 2964
-        rank: 2
+        rank: 1
       '2007':
         revenue: 536
         rank: 3
@@ -7517,16 +7517,16 @@ TX:
     Fuel Gas:
       '2004':
         revenue: 1377
-        rank: 4
+        rank: 2
       '2005':
         revenue: 4314
-        rank: 2
+        rank: 3
       '2006':
         revenue: 3322
         rank: 2
       '2007':
         revenue: 3026
-        rank: 3
+        rank: 1
       '2008':
         revenue: 303439
         rank: 1
@@ -7535,7 +7535,7 @@ TX:
         rank: 3
       '2010':
         revenue: -1
-        rank: 7
+        rank: 5
       '2011':
         revenue: 1218
         rank: 4
@@ -7544,89 +7544,89 @@ TX:
         rank: 4
       '2013':
         revenue: 2838
-        rank: 10
+        rank: 8
     Gas Plant Products:
       '2004':
         revenue: 142022
-        rank: 10
+        rank: 5
       '2005':
         revenue: 182089
-        rank: 10
+        rank: 6
       '2006':
         revenue: 143345
-        rank: 11
+        rank: 8
       '2007':
         revenue: 151746
-        rank: 11
+        rank: 7
       '2008':
         revenue: 258099
-        rank: 11
+        rank: 6
       '2009':
         revenue: 563469
         rank: 7
       '2010':
         revenue: 541799
-        rank: 8
+        rank: 7
       '2011':
         revenue: -1283627
-        rank: 15
+        rank: 7
       '2012':
         revenue: 455172
-        rank: 10
+        rank: 8
       '2013':
         revenue: 258039
-        rank: 10
+        rank: 8
     Inlet Scrubber:
       '2005':
         revenue: -405
-        rank: 4
+        rank: 3
     Oil:
       '2004':
         revenue: 1717294
-        rank: 8
+        rank: 6
       '2005':
         revenue: 2429447
         rank: 8
       '2006':
         revenue: 2229674
-        rank: 11
+        rank: 8
       '2007':
         revenue: 2859317
-        rank: 10
+        rank: 7
       '2008':
         revenue: 3140443
-        rank: 11
+        rank: 8
       '2009':
         revenue: 1474830
-        rank: 11
+        rank: 7
       '2010':
         revenue: 2504741
-        rank: 9
+        rank: 8
       '2011':
         revenue: 2669550
-        rank: 12
+        rank: 8
       '2012':
         revenue: 2896993
-        rank: 13
+        rank: 8
       '2013':
         revenue: 2577712
-        rank: 14
+        rank: 8
     'Oil & Gas':
       '2004':
         revenue: 414560
-        rank: 14
+        rank: 11
       '2005':
         revenue: 13812185
         rank: 6
       '2006':
         revenue: 2982552
-        rank: 13
+        rank: 9
       '2007':
         revenue: 4614747
-        rank: 11
+        rank: 10
       '2008':
         revenue: 11119123
-        rank: 8
+        rank: 6
       '2009':
         revenue: 12989118
         rank: 5
@@ -7638,41 +7638,41 @@ TX:
         rank: 4
       '2012':
         revenue: 3562711
-        rank: 13
+        rank: 8
       '2013':
         revenue: 6719140
-        rank: 7
+        rank: 6
     Processed (Residue) Gas:
       '2004':
         revenue: 258431
-        rank: 10
+        rank: 6
       '2005':
         revenue: 285511
-        rank: 11
+        rank: 7
       '2006':
         revenue: 798960
-        rank: 11
+        rank: 7
       '2007':
         revenue: 896380
-        rank: 8
+        rank: 6
       '2008':
         revenue: 1149461
-        rank: 10
+        rank: 7
       '2009':
         revenue: 969810
-        rank: 6
+        rank: 5
       '2010':
         revenue: 1373103
-        rank: 7
+        rank: 6
       '2011':
         revenue: 131459
-        rank: 12
+        rank: 8
       '2012':
         revenue: 1006015
-        rank: 8
+        rank: 7
       '2013':
         revenue: -800941
-        rank: 19
+        rank: 7
     Unprocessed (Wet) Gas:
       '2004':
         revenue: 15109682
@@ -7694,16 +7694,16 @@ TX:
         rank: 7
       '2010':
         revenue: 9378924
-        rank: 7
+        rank: 8
       '2011':
         revenue: 18100209
         rank: 4
       '2012':
         revenue: 19366338
-        rank: 4
+        rank: 5
       '2013':
         revenue: 21797863
-        rank: 3
+        rank: 4
 UT:
   products:
     All:
@@ -7727,7 +7727,7 @@ UT:
         rank: 3
       '2010':
         revenue: 299361181
-        rank: 4
+        rank: 3
       '2011':
         revenue: 309003829
         rank: 4
@@ -7814,7 +7814,7 @@ UT:
         rank: 4
       '2012':
         revenue: 37646972
-        rank: 4
+        rank: 3
       '2013':
         revenue: 39709449
         rank: 3
@@ -7845,7 +7845,7 @@ UT:
         rank: 3
       '2012':
         revenue: -5414990
-        rank: 9
+        rank: 3
       '2013':
         revenue: 13286283
         rank: 3
@@ -7868,7 +7868,7 @@ UT:
     Condensate:
       '2004':
         revenue: 1942326
-        rank: 4
+        rank: 3
       '2005':
         revenue: 4731397
         rank: 3
@@ -7899,7 +7899,7 @@ UT:
     Drip or Scrubber Condensate:
       '2004':
         revenue: 2173
-        rank: 6
+        rank: 3
       '2005':
         revenue: 3275
         rank: 6
@@ -7911,19 +7911,19 @@ UT:
         rank: 4
       '2008':
         revenue: -31065
-        rank: 10
+        rank: 4
       '2009':
         revenue: 18438
         rank: 5
       '2010':
         revenue: 594
-        rank: 6
+        rank: 4
       '2011':
         revenue: 31449
         rank: 5
       '2012':
         revenue: 9095
-        rank: 8
+        rank: 7
       '2013':
         revenue: 1711
         rank: 6
@@ -7933,17 +7933,17 @@ UT:
         rank: 2
       '2011':
         revenue: -2599
-        rank: 7
+        rank: 3
       '2012':
         revenue: 16
-        rank: 6
+        rank: 5
       '2013':
         revenue: 44448
-        rank: 5
+        rank: 4
     Gas Lost - Flared or Vented:
       '2005':
         revenue: -1463
-        rank: 4
+        rank: 3
       '2011':
         revenue: 321
         rank: 3
@@ -7965,7 +7965,7 @@ UT:
         rank: 4
       '2008':
         revenue: 10848455
-        rank: 4
+        rank: 3
       '2009':
         revenue: 10106510
         rank: 3
@@ -7984,7 +7984,7 @@ UT:
     Geothermal:
       '2004':
         revenue: -75013
-        rank: 5
+        rank: 3
       '2005':
         revenue: 3329
         rank: 4
@@ -7996,7 +7996,7 @@ UT:
         rank: 6
       '2008':
         revenue: 19933
-        rank: 5
+        rank: 3
       '2009':
         revenue: 8986604
         rank: 2
@@ -8089,10 +8089,10 @@ UT:
         rank: 4
       '2008':
         revenue: 928
-        rank: 6
+        rank: 7
       '2009':
         revenue: 1088
-        rank: 5
+        rank: 6
     Inlet Scrubber:
       '2013':
         revenue: 154495
@@ -8174,7 +8174,7 @@ UT:
     Oil:
       '2004':
         revenue: 14390902
-        rank: 6
+        rank: 5
       '2005':
         revenue: 27382435
         rank: 5
@@ -8183,7 +8183,7 @@ UT:
         rank: 4
       '2007':
         revenue: 51431803
-        rank: 5
+        rank: 4
       '2008':
         revenue: 92814360
         rank: 4
@@ -8201,7 +8201,7 @@ UT:
         rank: 5
       '2013':
         revenue: 111710147
-        rank: 5
+        rank: 4
     'Oil & Gas':
       '2004':
         revenue: 8413813
@@ -8217,10 +8217,10 @@ UT:
         rank: 2
       '2008':
         revenue: 26853127
-        rank: 5
+        rank: 4
       '2009':
         revenue: 9068846
-        rank: 7
+        rank: 6
       '2010':
         revenue: 12861704
         rank: 6
@@ -8398,7 +8398,7 @@ UT:
     Sodium:
       '2007':
         revenue: -7683
-        rank: 6
+        rank: 3
     Tar Sands:
       '2004':
         revenue: 12190
@@ -8445,59 +8445,59 @@ UT:
         rank: 5
       '2012':
         revenue: 28027938
-        rank: 3
+        rank: 4
       '2013':
         revenue: 8832682
-        rank: 4
+        rank: 5
 VA:
   products:
     All:
       '2004':
         revenue: 109544
-        rank: 27
+        rank: 11
       '2005':
         revenue: 612004
-        rank: 25
+        rank: 10
       '2006':
         revenue: 394288
-        rank: 26
+        rank: 11
       '2007':
         revenue: 456872
-        rank: 28
+        rank: 12
       '2008':
         revenue: 704746
-        rank: 25
+        rank: 9
       '2009':
         revenue: 181925
-        rank: 28
+        rank: 12
       '2010':
         revenue: 257167
-        rank: 28
+        rank: 11
       '2011':
         revenue: 73162
-        rank: 30
+        rank: 11
       '2012':
         revenue: 203257
-        rank: 28
+        rank: 10
       '2013':
         revenue: 144738
-        rank: 28
+        rank: 11
     Hardrock:
       '2006':
         revenue: 710
-        rank: 8
+        rank: 7
       '2007':
         revenue: 710
         rank: 5
       '2008':
         revenue: 888
-        rank: 7
+        rank: 8
       '2009':
         revenue: -3018
-        rank: 11
+        rank: 5
       '2010':
         revenue: -355
-        rank: 9
+        rank: 5
       '2011':
         revenue: 1420
         rank: 4
@@ -8506,7 +8506,7 @@ VA:
         rank: 7
       '2013':
         revenue: -2840
-        rank: 10
+        rank: 3
     Limestone:
       '2004':
         revenue: 59665
@@ -8541,137 +8541,137 @@ VA:
     Oil:
       '2013':
         revenue: 92
-        rank: 24
+        rank: 8
     'Oil & Gas':
       '2004':
         revenue: 18521
-        rank: 26
+        rank: 11
       '2005':
         revenue: 17859
-        rank: 24
+        rank: 13
       '2006':
         revenue: 19255
-        rank: 26
+        rank: 11
       '2007':
         revenue: 18991
-        rank: 25
+        rank: 13
       '2008':
         revenue: 170845
-        rank: 22
+        rank: 7
       '2009':
         revenue: 43506
-        rank: 22
+        rank: 11
       '2010':
         revenue: 28516
-        rank: 27
+        rank: 13
       '2011':
         revenue: 12238
-        rank: 27
+        rank: 14
       '2012':
         revenue: 35299
-        rank: 22
+        rank: 9
       '2013':
         revenue: 31367
-        rank: 26
+        rank: 8
     Processed (Residue) Gas:
       '2011':
         revenue: 16
-        rank: 19
+        rank: 8
     Unprocessed (Wet) Gas:
       '2004':
         revenue: 31358
-        rank: 22
+        rank: 11
       '2005':
         revenue: 572725
-        rank: 16
+        rank: 12
       '2006':
         revenue: 342675
-        rank: 19
+        rank: 11
       '2007':
         revenue: 361355
-        rank: 17
+        rank: 14
       '2008':
         revenue: 426356
-        rank: 17
+        rank: 13
       '2009':
         revenue: 27922
-        rank: 22
+        rank: 14
       '2010':
         revenue: 111609
-        rank: 19
+        rank: 13
       '2011':
         revenue: -52947
-        rank: 23
+        rank: 12
       '2012':
         revenue: 39176
-        rank: 20
+        rank: 16
       '2013':
         revenue: 55417
-        rank: 17
+        rank: 13
 WA:
   products:
     All:
       '2004':
         revenue: 2867508
-        rank: 16
+        rank: 11
       '2005':
         revenue: 946933
-        rank: 22
+        rank: 10
       '2006':
         revenue: 5623465
-        rank: 16
+        rank: 11
       '2007':
         revenue: 990530
-        rank: 23
+        rank: 12
       '2008':
         revenue: 1195894
-        rank: 23
+        rank: 9
       '2009':
         revenue: 1051969
-        rank: 23
+        rank: 12
       '2010':
         revenue: 540757
-        rank: 25
+        rank: 11
       '2011':
         revenue: 398079
-        rank: 26
+        rank: 11
       '2012':
         revenue: 11122
-        rank: 33
+        rank: 10
       '2013':
         revenue: 10843
-        rank: 33
+        rank: 11
     Coal:
       '2004':
         revenue: 25518
-        rank: 8
+        rank: 7
       '2005':
         revenue: 5219
-        rank: 11
+        rank: 7
       '2006':
         revenue: 12235
-        rank: 10
+        rank: 8
       '2007':
         revenue: -45938
-        rank: 11
+        rank: 8
       '2008':
         revenue: 2992
-        rank: 11
+        rank: 7
       '2009':
         revenue: 2406
-        rank: 10
+        rank: 7
       '2010':
         revenue: 726
-        rank: 11
+        rank: 8
       '2011':
         revenue: 1566
-        rank: 10
+        rank: 8
       '2012':
         revenue: 1566
-        rank: 10
+        rank: 7
       '2013':
         revenue: 2406
-        rank: 10
+        rank: 9
     Coal-Subbituminous-Processed:
       '2008':
         revenue: 204873
@@ -8679,171 +8679,171 @@ WA:
     Geothermal:
       '2011':
         revenue: 16874
-        rank: 8
+        rank: 7
       '2013':
         revenue: 8437
         rank: 8
     'Oil & Gas':
       '2004':
         revenue: 2841990
-        rank: 9
+        rank: 8
       '2005':
         revenue: 941715
-        rank: 13
+        rank: 12
       '2006':
         revenue: 5611230
-        rank: 9
+        rank: 8
       '2007':
         revenue: 1036468
-        rank: 15
+        rank: 12
       '2008':
         revenue: 988029
-        rank: 15
+        rank: 7
       '2009':
         revenue: 1049563
-        rank: 12
+        rank: 10
       '2010':
         revenue: 540031
-        rank: 14
+        rank: 13
       '2011':
         revenue: 379639
-        rank: 19
+        rank: 13
       '2012':
         revenue: 9556
-        rank: 29
+        rank: 9
 WV:
   products:
     All:
       '2004':
         revenue: 941015
-        rank: 21
+        rank: 11
       '2005':
         revenue: 1123590
-        rank: 21
+        rank: 10
       '2006':
         revenue: 1046552
-        rank: 24
+        rank: 11
       '2007':
         revenue: 938147
-        rank: 24
+        rank: 12
       '2008':
         revenue: 2225379
-        rank: 21
+        rank: 9
       '2009':
         revenue: 676163
-        rank: 24
+        rank: 12
       '2010':
         revenue: 615872
-        rank: 23
+        rank: 11
       '2011':
         revenue: 951280
-        rank: 22
+        rank: 11
       '2012':
         revenue: 471795
-        rank: 25
+        rank: 10
       '2013':
         revenue: 548299
-        rank: 23
+        rank: 11
     Oil:
       '2004':
         revenue: 922
-        rank: 23
+        rank: 7
       '2005':
         revenue: 263
-        rank: 22
+        rank: 9
       '2006':
         revenue: 996
-        rank: 22
+        rank: 9
       '2007':
         revenue: 606
-        rank: 22
+        rank: 8
       '2010':
         revenue: 174
-        rank: 24
+        rank: 9
       '2012':
         revenue: 1
-        rank: 24
+        rank: 9
     'Oil & Gas':
       '2004':
         revenue: 275477
-        rank: 15
+        rank: 11
       '2005':
         revenue: 202988
-        rank: 16
+        rank: 13
       '2006':
         revenue: 343300
-        rank: 16
+        rank: 11
       '2007':
         revenue: 89486
-        rank: 23
+        rank: 13
       '2008':
         revenue: 1171381
-        rank: 14
+        rank: 7
       '2009':
         revenue: 168324
-        rank: 19
+        rank: 11
       '2010':
         revenue: 232933
-        rank: 18
+        rank: 13
       '2011':
         revenue: 449492
-        rank: 18
+        rank: 13
       '2012':
         revenue: 322361
-        rank: 18
+        rank: 9
       '2013':
         revenue: 477140
-        rank: 14
+        rank: 8
     Processed (Residue) Gas:
       '2005':
         revenue: 7023
-        rank: 17
+        rank: 7
       '2008':
         revenue: 10746
-        rank: 16
+        rank: 7
       '2009':
         revenue: 1178
-        rank: 18
+        rank: 6
       '2010':
         revenue: 911
-        rank: 17
+        rank: 7
       '2011':
         revenue: 706
-        rank: 18
+        rank: 8
       '2012':
         revenue: 291
-        rank: 18
+        rank: 8
     Unprocessed (Wet) Gas:
       '2004':
         revenue: 664615
-        rank: 14
+        rank: 11
       '2005':
         revenue: 913316
-        rank: 14
+        rank: 12
       '2006':
         revenue: 702256
-        rank: 15
+        rank: 11
       '2007':
         revenue: 848055
-        rank: 15
+        rank: 13
       '2008':
         revenue: 1043252
-        rank: 14
+        rank: 12
       '2009':
         revenue: 506661
-        rank: 15
+        rank: 13
       '2010':
         revenue: 381853
         rank: 13
       '2011':
         revenue: 501082
-        rank: 14
+        rank: 11
       '2012':
         revenue: 149143
         rank: 14
       '2013':
         revenue: 71159
-        rank: 15
+        rank: 13
 WY:
   products:
     All:
@@ -8906,7 +8906,7 @@ WY:
         rank: 3
       '2010':
         revenue: -86581
-        rank: 4
+        rank: 3
       '2011':
         revenue: 287738
         rank: 3
@@ -9050,7 +9050,7 @@ WY:
         rank: 1
       '2011':
         revenue: 165018
-        rank: 2
+        rank: 3
       '2012':
         revenue: 539111
         rank: 2
@@ -9060,7 +9060,7 @@ WY:
     Flash Gas:
       '2012':
         revenue: 218
-        rank: 3
+        rank: 2
       '2013':
         revenue: 9604
         rank: 1
@@ -9070,13 +9070,13 @@ WY:
         rank: 1
       '2005':
         revenue: 18464
-        rank: 1
+        rank: 2
       '2006':
         revenue: 28453
         rank: 1
       '2007':
         revenue: 3456
-        rank: 2
+        rank: 1
       '2008':
         revenue: 28296
         rank: 3
@@ -9088,7 +9088,7 @@ WY:
         rank: 1
       '2011':
         revenue: -302866
-        rank: 8
+        rank: 1
       '2012':
         revenue: 11062
         rank: 3
@@ -9108,7 +9108,7 @@ WY:
         rank: 4
       '2005':
         revenue: 679
-        rank: 3
+        rank: 4
       '2013':
         revenue: 13739
         rank: 3
@@ -9146,7 +9146,7 @@ WY:
     Hardrock:
       '2004':
         revenue: 320
-        rank: 7
+        rank: 5
     Helium:
       '2004':
         revenue: -21423
@@ -9169,7 +9169,7 @@ WY:
         rank: 1
       '2008':
         revenue: 7872
-        rank: 1
+        rank: 2
       '2009':
         revenue: -1087305
         rank: 1
@@ -9347,7 +9347,7 @@ WY:
         rank: 4
       '2007':
         revenue: 355
-        rank: 5
+        rank: 4
       '2008':
         revenue: 458
         rank: 4
@@ -9649,7 +9649,7 @@ WY:
         rank: 1
       '2012':
         revenue: -132500520
-        rank: 23
+        rank: 1
       '2013':
         revenue: 187520719
         rank: 1

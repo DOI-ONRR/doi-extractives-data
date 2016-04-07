@@ -1,0 +1,375 @@
+'38001':
+  name: Adams County
+  employment:
+    '2011':
+      count: 30
+      percent: 3.16
+    '2012':
+      count: 37
+      percent: 3.8699999999999997
+'38007':
+  name: Billings County
+  employment:
+    '2010':
+      count: 79
+      percent: 15.860000000000001
+'38009':
+  name: Bottineau County
+  employment:
+    '2004':
+      count: 147
+      percent: 6.5699999999999985
+    '2005':
+      count: 157
+      percent: 7.02
+    '2006':
+      count: 152
+      percent: 6.92
+    '2007':
+      count: 167
+      percent: 7.539999999999999
+    '2008':
+      count: 220
+      percent: 9.1
+    '2009':
+      count: 242
+      percent: 9.78
+    '2010':
+      count: 314
+      percent: 12.25
+    '2011':
+      count: 418
+      percent: 15.660000000000002
+    '2012':
+      count: 341
+      percent: 12.120000000000001
+    '2013':
+      count: 328
+      percent: 12.31
+'38011':
+  name: Bowman County
+  employment:
+    '2004':
+      count: 116
+      percent: 8.67
+    '2005':
+      count: 89
+      percent: 6.5600000000000005
+    '2006':
+      count: 93
+      percent: 6.609999999999999
+    '2007':
+      count: 94
+      percent: 6.460000000000001
+    '2008':
+      count: 100
+      percent: 6.890000000000001
+    '2009':
+      count: 94
+      percent: 6.5
+    '2010':
+      count: 112
+      percent: 7.55
+    '2011':
+      count: 171
+      percent: 10.41
+    '2012':
+      count: 236
+      percent: 13.270000000000001
+    '2013':
+      count: 227
+      percent: 11.97
+'38013':
+  name: Burke County
+  employment:
+    '2004':
+      count: 33
+      percent: 5.6899999999999995
+    '2005':
+      count: 37
+      percent: 6.41
+    '2006':
+      count: 41
+      percent: 7.1099999999999985
+    '2007':
+      count: 48
+      percent: 8.15
+    '2008':
+      count: 70
+      percent: 11.16
+    '2009':
+      count: 63
+      percent: 9.63
+    '2010':
+      count: 75
+      percent: 10.850000000000001
+    '2011':
+      count: 120
+      percent: 14.850000000000001
+'38015':
+  name: Burleigh County
+  employment:
+    '2006':
+      count: 14
+      percent: 0.03
+    '2007':
+      count: 57
+      percent: 0.12000000000000001
+    '2008':
+      count: 60
+      percent: 0.12000000000000001
+    '2009':
+      count: 42
+      percent: 0.08
+    '2010':
+      count: 64
+      percent: 0.13
+    '2011':
+      count: 120
+      percent: 0.23
+    '2012':
+      count: 140
+      percent: 0.26
+    '2013':
+      count: 141
+      percent: 0.25
+'38017':
+  name: Cass County
+  employment:
+    '2013':
+      count: 19
+      percent: 0.02
+'38025':
+  name: Dunn County
+  employment:
+    '2012':
+      count: 997
+      percent: 37.61
+    '2013':
+      count: 1111
+      percent: 35.95
+'38027':
+  name: Eddy County
+  employment:
+    '2013':
+      count: 26
+      percent: 3.4899999999999998
+'38033':
+  name: Golden Valley County
+  employment:
+    '2012':
+      count: 11
+      percent: 1.55
+    '2013':
+      count: 18
+      percent: 2.51
+'38035':
+  name: Grand Forks County
+  employment:
+    '2013':
+      count: 166
+      percent: 0.4100000000000001
+'38053':
+  name: McKenzie County
+  employment:
+    '2004':
+      count: 132
+      percent: 5.29
+    '2005':
+      count: 126
+      percent: 5.119999999999999
+    '2006':
+      count: 243
+      percent: 9.2
+    '2007':
+      count: 281
+      percent: 9.9
+    '2008':
+      count: 445
+      percent: 14.27
+    '2009':
+      count: 254
+      percent: 8.94
+    '2010':
+      count: 582
+      percent: 16.17
+    '2011':
+      count: 1053
+      percent: 21.09
+    '2012':
+      count: 1410
+      percent: 19.54
+    '2013':
+      count: 1731
+      percent: 18.830000000000002
+'38059':
+  name: Morton County
+  employment:
+    '2005':
+      count: 88
+      percent: 1.01
+    '2006':
+      count: 86
+      percent: 0.97
+    '2007':
+      count: 71
+      percent: 0.7799999999999999
+    '2013':
+      count: 47
+      percent: 0.45
+'38061':
+  name: Mountrail County
+  employment:
+    '2004':
+      count: 41
+      percent: 1.7500000000000004
+    '2005':
+      count: 39
+      percent: 1.7300000000000002
+    '2006':
+      count: 50
+      percent: 2.34
+    '2007':
+      count: 38
+      percent: 1.7100000000000002
+    '2008':
+      count: 70
+      percent: 3.0700000000000003
+    '2011':
+      count: 968
+      percent: 18.419999999999998
+    '2012':
+      count: 962
+      percent: 14.96
+    '2013':
+      count: 1317
+      percent: 18.66
+'38067':
+  name: Pembina County
+  employment:
+    '2013':
+      count: 9
+      percent: 0.24000000000000002
+'38075':
+  name: Renville County
+  employment:
+    '2005':
+      count: 31
+      percent: 4.08
+    '2008':
+      count: 93
+      percent: 11.15
+    '2009':
+      count: 96
+      percent: 11.81
+    '2010':
+      count: 138
+      percent: 15.47
+    '2011':
+      count: 116
+      percent: 13.14
+    '2012':
+      count: 128
+      percent: 13.62
+    '2013':
+      count: 150
+      percent: 16.650000000000006
+'38089':
+  name: Stark County
+  employment:
+    '2004':
+      count: 380
+      percent: 3.4099999999999997
+    '2005':
+      count: 417
+      percent: 3.5900000000000003
+    '2006':
+      count: 413
+      percent: 3.4499999999999997
+    '2007':
+      count: 490
+      percent: 4.02
+    '2008':
+      count: 698
+      percent: 5.489999999999999
+    '2009':
+      count: 805
+      percent: 6.23
+    '2010':
+      count: 1229
+      percent: 8.71
+    '2011':
+      count: 2541
+      percent: 15.57
+    '2012':
+      count: 3790
+      percent: 19.12
+    '2013':
+      count: 4332
+      percent: 20.07
+'38101':
+  name: Ward County
+  employment:
+    '2004':
+      count: 331
+      percent: 1.24
+    '2005':
+      count: 420
+      percent: 1.5599999999999996
+    '2006':
+      count: 370
+      percent: 1.35
+    '2007':
+      count: 372
+      percent: 1.3299999999999996
+    '2008':
+      count: 379
+      percent: 1.32
+    '2009':
+      count: 391
+      percent: 1.35
+    '2010':
+      count: 596
+      percent: 2.02
+    '2011':
+      count: 1067
+      percent: 3.4299999999999997
+    '2012':
+      count: 1626
+      percent: 4.72
+    '2013':
+      count: 1754
+      percent: 4.96
+'38105':
+  name: Williams County
+  employment:
+    '2004':
+      count: 1012
+      percent: 10.9
+    '2005':
+      count: 1401
+      percent: 14.070000000000002
+    '2006':
+      count: 1832
+      percent: 16.91
+    '2007':
+      count: 2045
+      percent: 18.240000000000002
+    '2008':
+      count: 3091
+      percent: 24.05
+    '2009':
+      count: 3069
+      percent: 23.51
+    '2010':
+      count: 4797
+      percent: 29.959999999999994
+    '2011':
+      count: 8047
+      percent: 33.849999999999994
+    '2012':
+      count: 12652
+      percent: 36.91
+    '2013':
+      count: 12937
+      percent: 34.56

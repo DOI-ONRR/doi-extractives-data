@@ -1,0 +1,1086 @@
+08001:
+  name: Adams County
+  employment:
+    '2004':
+      count: 231
+      percent: 0.16
+    '2005':
+      count: 236
+      percent: 0.16
+    '2006':
+      count: 238
+      percent: 0.16
+    '2007':
+      count: 238
+      percent: 0.15000000000000002
+    '2008':
+      count: 232
+      percent: 0.15000000000000002
+    '2009':
+      count: 241
+      percent: 0.16
+    '2010':
+      count: 272
+      percent: 0.18
+    '2011':
+      count: 352
+      percent: 0.23
+    '2012':
+      count: 339
+      percent: 0.21000000000000002
+    '2013':
+      count: 568
+      percent: 0.33000000000000007
+08003:
+  name: Alamosa County
+  employment:
+    '2004':
+      count: 67
+      percent: 0.88
+    '2005':
+      count: 65
+      percent: 0.8600000000000001
+08005:
+  name: Arapahoe County
+  employment:
+    '2004':
+      count: 481
+      percent: 0.18
+    '2005':
+      count: 493
+      percent: 0.18
+    '2006':
+      count: 578
+      percent: 0.21000000000000002
+    '2007':
+      count: 662
+      percent: 0.23
+    '2008':
+      count: 948
+      percent: 0.3400000000000001
+    '2009':
+      count: 1003
+      percent: 0.37000000000000005
+    '2010':
+      count: 1105
+      percent: 0.4100000000000001
+    '2011':
+      count: 1338
+      percent: 0.48000000000000004
+    '2012':
+      count: 1446
+      percent: 0.51
+    '2013':
+      count: 873
+      percent: 0.29000000000000004
+08007:
+  name: Archuleta County
+  employment:
+    '2004':
+      count: 28
+      percent: 0.8600000000000001
+    '2005':
+      count: 28
+      percent: 0.79
+    '2006':
+      count: 28
+      percent: 0.76
+    '2007':
+      count: 44
+      percent: 1.1600000000000001
+    '2008':
+      count: 49
+      percent: 1.3299999999999996
+    '2009':
+      count: 44
+      percent: 1.32
+    '2010':
+      count: 37
+      percent: 1.1400000000000001
+    '2011':
+      count: 41
+      percent: 1.25
+    '2012':
+      count: 26
+      percent: 0.79
+    '2013':
+      count: 22
+      percent: 0.6400000000000001
+08009:
+  name: Baca County
+  employment:
+    '2004':
+      count: 8
+      percent: 0.6900000000000001
+    '2005':
+      count: 7
+      percent: 0.6100000000000001
+    '2006':
+      count: 3
+      percent: 0.25
+    '2007':
+      count: 7
+      percent: 0.59
+    '2008':
+      count: 9
+      percent: 0.7500000000000001
+    '2009':
+      count: 5
+      percent: 0.42000000000000004
+    '2012':
+      count: 9
+      percent: 0.79
+    '2013':
+      count: 8
+      percent: 0.7200000000000001
+08013:
+  name: Boulder County
+  employment:
+    '2004':
+      count: 368
+      percent: 0.24000000000000002
+    '2005':
+      count: 496
+      percent: 0.32000000000000006
+    '2006':
+      count: 630
+      percent: 0.4
+    '2007':
+      count: 892
+      percent: 0.5599999999999999
+    '2008':
+      count: 822
+      percent: 0.51
+    '2009':
+      count: 485
+      percent: 0.32000000000000006
+    '2010':
+      count: 545
+      percent: 0.36000000000000004
+    '2011':
+      count: 251
+      percent: 0.16
+    '2012':
+      count: 251
+      percent: 0.16
+    '2013':
+      count: 212
+      percent: 0.13
+08014:
+  name: Broomfield County
+  employment:
+    '2009':
+      count: 17
+      percent: 0.06
+    '2010':
+      count: 21
+      percent: 0.06999999999999998
+    '2011':
+      count: 16
+      percent: 0.05
+    '2012':
+      count: 25
+      percent: 0.08
+08015:
+  name: Chaffee County
+  employment:
+    '2005':
+      count: 17
+      percent: 0.26
+    '2006':
+      count: 20
+      percent: 0.30000000000000004
+    '2007':
+      count: 18
+      percent: 0.27
+    '2008':
+      count: 14
+      percent: 0.21000000000000002
+    '2011':
+      count: 12
+      percent: 0.18
+    '2012':
+      count: 10
+      percent: 0.15000000000000002
+    '2013':
+      count: 19
+      percent: 0.28
+08017:
+  name: Cheyenne County
+  employment:
+    '2004':
+      count: 131
+      percent: 17.080000000000002
+    '2005':
+      count: 148
+      percent: 18.360000000000003
+    '2006':
+      count: 95
+      percent: 12.43
+    '2007':
+      count: 105
+      percent: 13.64
+    '2008':
+      count: 126
+      percent: 16.979999999999997
+    '2009':
+      count: 87
+      percent: 11.89
+    '2010':
+      count: 97
+      percent: 12.9
+    '2011':
+      count: 113
+      percent: 14.97
+    '2012':
+      count: 91
+      percent: 12.590000000000002
+    '2013':
+      count: 105
+      percent: 14.709999999999999
+08019:
+  name: Clear Creek County
+  employment:
+    '2011':
+      count: 738
+      percent: 23.24
+08021:
+  name: Conejos County
+  employment:
+    '2004':
+      count: 66
+      percent: 4.78
+    '2005':
+      count: 58
+      percent: 4.319999999999999
+    '2006':
+      count: 48
+      percent: 3.64
+    '2007':
+      count: 33
+      percent: 2.48
+    '2008':
+      count: 29
+      percent: 2.2800000000000002
+    '2009':
+      count: 25
+      percent: 2.02
+08029:
+  name: Delta County
+  employment:
+    '2007':
+      count: 472
+      percent: 5.29
+    '2008':
+      count: 509
+      percent: 5.63
+    '2009':
+      count: 516
+      percent: 5.98
+    '2010':
+      count: 430
+      percent: 5.24
+    '2011':
+      count: 649
+      percent: 7.85
+    '2012':
+      count: 713
+      percent: 8.42
+    '2013':
+      count: 678
+      percent: 8.04
+08031:
+  name: Denver County
+  employment:
+    '2004':
+      count: 4051
+      percent: 0.96
+    '2005':
+      count: 3958
+      percent: 0.9299999999999999
+    '2006':
+      count: 4772
+      percent: 1.0999999999999996
+    '2007':
+      count: 5921
+      percent: 1.34
+    '2008':
+      count: 6637
+      percent: 1.48
+    '2009':
+      count: 6317
+      percent: 1.49
+    '2010':
+      count: 6300
+      percent: 1.5
+    '2011':
+      count: 6971
+      percent: 1.6500000000000001
+    '2012':
+      count: 7716
+      percent: 1.7800000000000002
+    '2013':
+      count: 8219
+      percent: 1.8599999999999997
+08033:
+  name: Dolores County
+  employment:
+    '2004':
+      count: 28
+      percent: 6.38
+08035:
+  name: Douglas County
+  employment:
+    '2004':
+      count: 101
+      percent: 0.14
+    '2005':
+      count: 117
+      percent: 0.14
+    '2006':
+      count: 211
+      percent: 0.24000000000000002
+    '2007':
+      count: 279
+      percent: 0.31000000000000005
+    '2008':
+      count: 334
+      percent: 0.36000000000000004
+    '2009':
+      count: 300
+      percent: 0.33000000000000007
+    '2010':
+      count: 270
+      percent: 0.30000000000000004
+    '2011':
+      count: 330
+      percent: 0.36000000000000004
+    '2012':
+      count: 425
+      percent: 0.45
+    '2013':
+      count: 456
+      percent: 0.44
+08037:
+  name: Eagle County
+  employment:
+    '2004':
+      count: 10
+      percent: 0.04
+    '2005':
+      count: 8
+      percent: 0.03
+    '2006':
+      count: 9
+      percent: 0.03
+    '2007':
+      count: 14
+      percent: 0.04
+    '2008':
+      count: 14
+      percent: 0.04
+    '2009':
+      count: 16
+      percent: 0.06
+    '2010':
+      count: 14
+      percent: 0.05
+    '2011':
+      count: 16
+      percent: 0.06
+    '2012':
+      count: 16
+      percent: 0.06
+    '2013':
+      count: 9
+      percent: 0.03
+08041:
+  name: El Paso County
+  employment:
+    '2004':
+      count: 143
+      percent: 0.06
+    '2005':
+      count: 188
+      percent: 0.08
+    '2006':
+      count: 163
+      percent: 0.06999999999999998
+    '2007':
+      count: 135
+      percent: 0.05
+    '2008':
+      count: 133
+      percent: 0.05
+    '2009':
+      count: 126
+      percent: 0.05
+    '2010':
+      count: 143
+      percent: 0.06
+    '2011':
+      count: 156
+      percent: 0.06999999999999998
+    '2012':
+      count: 183
+      percent: 0.08
+    '2013':
+      count: 149
+      percent: 0.06
+08043:
+  name: Fremont County
+  employment:
+    '2004':
+      count: 97
+      percent: 0.7400000000000001
+    '2005':
+      count: 149
+      percent: 1.1199999999999997
+    '2006':
+      count: 97
+      percent: 0.7200000000000001
+    '2007':
+      count: 78
+      percent: 0.5599999999999999
+    '2008':
+      count: 69
+      percent: 0.51
+    '2009':
+      count: 64
+      percent: 0.49
+    '2010':
+      count: 64
+      percent: 0.49
+    '2011':
+      count: 61
+      percent: 0.46
+    '2012':
+      count: 59
+      percent: 0.45
+    '2013':
+      count: 76
+      percent: 0.59
+08045:
+  name: Garfield County
+  employment:
+    '2004':
+      count: 432
+      percent: 2.08
+    '2005':
+      count: 1544
+      percent: 6.72
+    '2006':
+      count: 2172
+      percent: 8.53
+    '2007':
+      count: 2339
+      percent: 8.6
+    '2008':
+      count: 2821
+      percent: 9.84
+    '2009':
+      count: 1812
+      percent: 7.22
+    '2010':
+      count: 1896
+      percent: 8.209999999999999
+    '2011':
+      count: 2343
+      percent: 9.860000000000001
+    '2012':
+      count: 2263
+      percent: 9.360000000000001
+    '2013':
+      count: 2058
+      percent: 8.4
+08049:
+  name: Grand County
+  employment:
+    '2008':
+      count: 34
+      percent: 0.46
+    '2009':
+      count: 25
+      percent: 0.37000000000000005
+    '2010':
+      count: 25
+      percent: 0.39000000000000007
+    '2011':
+      count: 25
+      percent: 0.39000000000000007
+    '2012':
+      count: 25
+      percent: 0.38000000000000006
+    '2013':
+      count: 24
+      percent: 0.3500000000000001
+08051:
+  name: Gunnison County
+  employment:
+    '2004':
+      count: 655
+      percent: 8.719999999999999
+    '2005':
+      count: 720
+      percent: 9.120000000000001
+    '2006':
+      count: 806
+      percent: 9.610000000000001
+    '2010':
+      count: 750
+      percent: 9.83
+    '2013':
+      count: 657
+      percent: 8.67
+08055:
+  name: Huerfano County
+  employment:
+    '2005':
+      count: 13
+      percent: 0.68
+    '2006':
+      count: 30
+      percent: 1.49
+    '2008':
+      count: 29
+      percent: 1.3900000000000001
+08059:
+  name: Jefferson County
+  employment:
+    '2004':
+      count: 271
+      percent: 0.13
+    '2005':
+      count: 280
+      percent: 0.14
+    '2006':
+      count: 380
+      percent: 0.18
+    '2007':
+      count: 592
+      percent: 0.28
+    '2008':
+      count: 570
+      percent: 0.27
+    '2009':
+      count: 433
+      percent: 0.21000000000000002
+    '2010':
+      count: 402
+      percent: 0.2
+    '2011':
+      count: 404
+      percent: 0.2
+    '2012':
+      count: 428
+      percent: 0.2
+    '2013':
+      count: 424
+      percent: 0.2
+08061:
+  name: Kiowa County
+  employment:
+    '2013':
+      count: 22
+      percent: 4.8599999999999985
+08067:
+  name: La Plata County
+  employment:
+    '2004':
+      count: 385
+      percent: 1.6800000000000002
+    '2005':
+      count: 412
+      percent: 1.7500000000000004
+    '2006':
+      count: 492
+      percent: 1.9800000000000002
+    '2007':
+      count: 630
+      percent: 2.4699999999999998
+    '2008':
+      count: 682
+      percent: 2.64
+    '2009':
+      count: 636
+      percent: 2.62
+    '2010':
+      count: 631
+      percent: 2.68
+    '2011':
+      count: 667
+      percent: 2.86
+    '2012':
+      count: 637
+      percent: 2.69
+    '2013':
+      count: 598
+      percent: 2.44
+08069:
+  name: Larimer County
+  employment:
+    '2004':
+      count: 336
+      percent: 0.27
+    '2005':
+      count: 383
+      percent: 0.31000000000000005
+    '2006':
+      count: 398
+      percent: 0.31000000000000005
+    '2007':
+      count: 404
+      percent: 0.31000000000000005
+    '2008':
+      count: 362
+      percent: 0.28
+    '2009':
+      count: 304
+      percent: 0.24000000000000002
+    '2010':
+      count: 308
+      percent: 0.24000000000000002
+    '2011':
+      count: 333
+      percent: 0.26
+    '2012':
+      count: 360
+      percent: 0.27
+    '2013':
+      count: 437
+      percent: 0.32000000000000006
+08071:
+  name: Las Animas County
+  employment:
+    '2004':
+      count: 159
+      percent: 2.9499999999999997
+    '2005':
+      count: 257
+      percent: 4.609999999999999
+    '2006':
+      count: 321
+      percent: 5.5
+    '2007':
+      count: 399
+      percent: 6.58
+    '2008':
+      count: 458
+      percent: 7.41
+    '2009':
+      count: 272
+      percent: 4.930000000000001
+    '2010':
+      count: 245
+      percent: 4.68
+    '2011':
+      count: 268
+      percent: 5.28
+    '2012':
+      count: 303
+      percent: 6.05
+    '2013':
+      count: 481
+      percent: 9.56
+08075:
+  name: Logan County
+  employment:
+    '2004':
+      count: 115
+      percent: 1.41
+    '2005':
+      count: 122
+      percent: 1.4500000000000002
+    '2006':
+      count: 149
+      percent: 1.7900000000000003
+    '2007':
+      count: 158
+      percent: 1.8599999999999997
+    '2008':
+      count: 158
+      percent: 1.8599999999999997
+    '2009':
+      count: 142
+      percent: 1.6900000000000002
+    '2010':
+      count: 170
+      percent: 2.12
+    '2011':
+      count: 183
+      percent: 2.29
+    '2012':
+      count: 193
+      percent: 2.3899999999999997
+    '2013':
+      count: 212
+      percent: 2.6
+08077:
+  name: Mesa County
+  employment:
+    '2004':
+      count: 809
+      percent: 1.5
+    '2005':
+      count: 1214
+      percent: 2.19
+    '2006':
+      count: 1859
+      percent: 3.2099999999999995
+    '2007':
+      count: 3013
+      percent: 4.9
+    '2008':
+      count: 3921
+      percent: 6.08
+    '2009':
+      count: 3087
+      percent: 5.119999999999999
+    '2010':
+      count: 2762
+      percent: 4.819999999999999
+    '2011':
+      count: 3423
+      percent: 5.930000000000001
+    '2012':
+      count: 3509
+      percent: 6.02
+    '2013':
+      count: 2707
+      percent: 4.63
+08081:
+  name: Moffat County
+  employment:
+    '2004':
+      count: 499
+      percent: 10.530000000000001
+    '2005':
+      count: 555
+      percent: 11.229999999999999
+    '2006':
+      count: 628
+      percent: 12.14
+    '2007':
+      count: 639
+      percent: 12.16
+    '2008':
+      count: 660
+      percent: 12.030000000000001
+    '2009':
+      count: 619
+      percent: 11.28
+    '2010':
+      count: 591
+      percent: 11.67
+    '2011':
+      count: 588
+      percent: 11.84
+    '2012':
+      count: 541
+      percent: 10.92
+    '2013':
+      count: 529
+      percent: 10.67
+08083:
+  name: Montezuma County
+  employment:
+    '2004':
+      count: 77
+      percent: 0.8500000000000002
+    '2005':
+      count: 94
+      percent: 1.02
+    '2006':
+      count: 85
+      percent: 0.91
+    '2007':
+      count: 88
+      percent: 0.9400000000000002
+    '2008':
+      count: 131
+      percent: 1.44
+    '2009':
+      count: 130
+      percent: 1.48
+    '2010':
+      count: 135
+      percent: 1.54
+    '2011':
+      count: 173
+      percent: 1.96
+    '2012':
+      count: 210
+      percent: 2.3800000000000003
+    '2013':
+      count: 213
+      percent: 2.3800000000000003
+08085:
+  name: Montrose County
+  employment:
+    '2004':
+      count: 110
+      percent: 0.79
+    '2005':
+      count: 151
+      percent: 1.05
+    '2006':
+      count: 109
+      percent: 0.7300000000000001
+    '2007':
+      count: 131
+      percent: 0.8600000000000001
+    '2008':
+      count: 179
+      percent: 1.1800000000000002
+    '2009':
+      count: 143
+      percent: 1
+    '2010':
+      count: 150
+      percent: 1.0999999999999996
+    '2011':
+      count: 149
+      percent: 1.1199999999999997
+    '2012':
+      count: 197
+      percent: 1.47
+    '2013':
+      count: 89
+      percent: 0.6600000000000001
+08087:
+  name: Morgan County
+  employment:
+    '2004':
+      count: 216
+      percent: 1.9300000000000002
+    '2005':
+      count: 236
+      percent: 2.1
+    '2006':
+      count: 283
+      percent: 2.53
+    '2007':
+      count: 298
+      percent: 2.68
+    '2008':
+      count: 294
+      percent: 2.6100000000000003
+    '2009':
+      count: 242
+      percent: 2.16
+    '2010':
+      count: 302
+      percent: 2.6599999999999997
+    '2011':
+      count: 402
+      percent: 3.36
+    '2012':
+      count: 433
+      percent: 3.62
+    '2013':
+      count: 486
+      percent: 4.05
+08091:
+  name: Ouray County
+  employment:
+    '2004':
+      count: 7
+      percent: 0.46
+    '2009':
+      count: 11
+      percent: 0.7000000000000002
+    '2011':
+      count: 5
+      percent: 0.36000000000000004
+    '2012':
+      count: 43
+      percent: 2.9099999999999997
+08093:
+  name: Park County
+  employment:
+    '2004':
+      count: 10
+      percent: 0.48000000000000004
+    '2006':
+      count: 8
+      percent: 0.3400000000000001
+08097:
+  name: Pitkin County
+  employment:
+    '2010':
+      count: 11
+      percent: 0.06999999999999998
+08101:
+  name: Pueblo County
+  employment:
+    '2004':
+      count: 55
+      percent: 0.1
+    '2005':
+      count: 66
+      percent: 0.12000000000000001
+    '2006':
+      count: 87
+      percent: 0.16
+    '2007':
+      count: 65
+      percent: 0.11
+    '2008':
+      count: 66
+      percent: 0.12000000000000001
+    '2009':
+      count: 54
+      percent: 0.1
+    '2010':
+      count: 53
+      percent: 0.1
+    '2011':
+      count: 32
+      percent: 0.06
+    '2012':
+      count: 32
+      percent: 0.06
+    '2013':
+      count: 28
+      percent: 0.05
+08103:
+  name: Rio Blanco County
+  employment:
+    '2004':
+      count: 608
+      percent: 21.759999999999994
+    '2005':
+      count: 742
+      percent: 23.87
+    '2006':
+      count: 982
+      percent: 27.07
+    '2007':
+      count: 868
+      percent: 21.01
+    '2008':
+      count: 955
+      percent: 23.799999999999994
+    '2009':
+      count: 812
+      percent: 24.529999999999994
+    '2010':
+      count: 805
+      percent: 25.779999999999994
+    '2011':
+      count: 785
+      percent: 24.88
+    '2012':
+      count: 775
+      percent: 24.77
+    '2013':
+      count: 715
+      percent: 22.39
+08107:
+  name: Routt County
+  employment:
+    '2004':
+      count: 573
+      percent: 4.22
+    '2005':
+      count: 583
+      percent: 4.09
+    '2009':
+      count: 589
+      percent: 4.279999999999999
+    '2010':
+      count: 519
+      percent: 4.05
+    '2011':
+      count: 498
+      percent: 3.8600000000000003
+    '2012':
+      count: 548
+      percent: 4.14
+    '2013':
+      count: 513
+      percent: 3.6799999999999997
+08119:
+  name: Teller County
+  employment:
+    '2011':
+      count: 471
+      percent: 7.02
+08121:
+  name: Washington County
+  employment:
+    '2010':
+      count: 16
+      percent: 1.48
+    '2011':
+      count: 22
+      percent: 2
+    '2012':
+      count: 28
+      percent: 2.3899999999999997
+08123:
+  name: Weld County
+  employment:
+    '2004':
+      count: 1486
+      percent: 1.9900000000000002
+    '2005':
+      count: 1748
+      percent: 2.27
+    '2006':
+      count: 2240
+      percent: 2.79
+    '2007':
+      count: 2912
+      percent: 3.51
+    '2008':
+      count: 3365
+      percent: 4.03
+    '2009':
+      count: 2752
+      percent: 3.4699999999999998
+    '2010':
+      count: 3133
+      percent: 3.9800000000000004
+    '2011':
+      count: 4116
+      percent: 5.01
+    '2012':
+      count: 5101
+      percent: 5.9700000000000015
+    '2013':
+      count: 6052
+      percent: 6.6899999999999995
+08125:
+  name: Yuma County
+  employment:
+    '2004':
+      count: 162
+      percent: 4.48
+    '2005':
+      count: 215
+      percent: 5.96
+    '2006':
+      count: 268
+      percent: 7.06
+    '2007':
+      count: 364
+      percent: 9.15
+    '2008':
+      count: 403
+      percent: 9.82
+    '2009':
+      count: 295
+      percent: 7.55
+    '2010':
+      count: 227
+      percent: 5.96
+    '2011':
+      count: 291
+      percent: 7.539999999999999
+    '2012':
+      count: 249
+      percent: 6.419999999999999
+    '2013':
+      count: 228
+      percent: 5.81

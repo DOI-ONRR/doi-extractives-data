@@ -1,0 +1,564 @@
+'13015':
+  name: Bartow County
+  employment:
+    '2005':
+      count: 89
+      percent: 0.27
+    '2010':
+      count: 64
+      percent: 0.21000000000000002
+    '2011':
+      count: 74
+      percent: 0.24000000000000002
+    '2012':
+      count: 86
+      percent: 0.27
+    '2013':
+      count: 90
+      percent: 0.29000000000000004
+'13021':
+  name: Bibb County
+  employment:
+    '2008':
+      count: 145
+      percent: 0.17
+    '2010':
+      count: 163
+      percent: 0.21000000000000002
+'13057':
+  name: Cherokee County
+  employment:
+    '2004':
+      count: 70
+      percent: 0.18
+    '2005':
+      count: 63
+      percent: 0.15000000000000002
+    '2006':
+      count: 61
+      percent: 0.13
+    '2007':
+      count: 59
+      percent: 0.12000000000000001
+    '2008':
+      count: 49
+      percent: 0.1
+    '2009':
+      count: 40
+      percent: 0.09
+    '2010':
+      count: 30
+      percent: 0.06999999999999998
+    '2011':
+      count: 31
+      percent: 0.06999999999999998
+    '2012':
+      count: 21
+      percent: 0.05
+    '2013':
+      count: 24
+      percent: 0.05
+'13067':
+  name: Cobb County
+  employment:
+    '2004':
+      count: 154
+      percent: 0.05
+    '2008':
+      count: 74
+      percent: 0.02
+    '2009':
+      count: 69
+      percent: 0.02
+    '2010':
+      count: 65
+      percent: 0.02
+    '2011':
+      count: 76
+      percent: 0.03
+    '2012':
+      count: 73
+      percent: 0.02
+    '2013':
+      count: 59
+      percent: 0.02
+'13087':
+  name: Decatur County
+  employment:
+    '2004':
+      count: 324
+      percent: 3.16
+    '2005':
+      count: 318
+      percent: 2.98
+    '2006':
+      count: 320
+      percent: 3.1300000000000003
+    '2007':
+      count: 315
+      percent: 3.19
+    '2008':
+      count: 168
+      percent: 1.6900000000000002
+'13089':
+  name: DeKalb County
+  employment:
+    '2004':
+      count: 252
+      percent: 0.09
+    '2005':
+      count: 233
+      percent: 0.08
+    '2006':
+      count: 165
+      percent: 0.06
+    '2008':
+      count: 151
+      percent: 0.05
+    '2009':
+      count: 116
+      percent: 0.04
+    '2010':
+      count: 113
+      percent: 0.04
+'13097':
+  name: Douglas County
+  employment:
+    '2004':
+      count: 102
+      percent: 0.30000000000000004
+    '2005':
+      count: 108
+      percent: 0.30000000000000004
+    '2006':
+      count: 117
+      percent: 0.32000000000000006
+'13105':
+  name: Elbert County
+  employment:
+    '2004':
+      count: 165
+      percent: 2.3099999999999996
+    '2005':
+      count: 196
+      percent: 2.77
+    '2006':
+      count: 189
+      percent: 2.71
+    '2009':
+      count: 161
+      percent: 2.4699999999999998
+    '2010':
+      count: 153
+      percent: 2.56
+    '2011':
+      count: 145
+      percent: 2.53
+    '2012':
+      count: 178
+      percent: 3.1
+    '2013':
+      count: 179
+      percent: 3.09
+'13117':
+  name: Forsyth County
+  employment:
+    '2004':
+      count: 61
+      percent: 0.14
+    '2005':
+      count: 67
+      percent: 0.15000000000000002
+    '2006':
+      count: 63
+      percent: 0.13
+    '2007':
+      count: 100
+      percent: 0.18
+    '2008':
+      count: 79
+      percent: 0.14
+    '2010':
+      count: 49
+      percent: 0.09
+    '2011':
+      count: 52
+      percent: 0.09
+    '2012':
+      count: 37
+      percent: 0.06
+    '2013':
+      count: 44
+      percent: 0.06999999999999998
+'13121':
+  name: Fulton County
+  employment:
+    '2006':
+      count: 180
+      percent: 0.02
+    '2007':
+      count: 678
+      percent: 0.09
+    '2010':
+      count: 105
+      percent: 0.01
+    '2011':
+      count: 116
+      percent: 0.02
+    '2012':
+      count: 96
+      percent: 0.01
+    '2013':
+      count: 82
+      percent: 0.01
+'13133':
+  name: Greene County
+  employment:
+    '2008':
+      count: 26
+      percent: 0.46
+    '2013':
+      count: 17
+      percent: 0.33000000000000007
+'13135':
+  name: Gwinnett County
+  employment:
+    '2006':
+      count: 186
+      percent: 0.06
+'13139':
+  name: Hall County
+  employment:
+    '2006':
+      count: 59
+      percent: 0.08
+    '2007':
+      count: 63
+      percent: 0.09
+    '2008':
+      count: 56
+      percent: 0.08
+    '2009':
+      count: 49
+      percent: 0.06999999999999998
+    '2010':
+      count: 46
+      percent: 0.06999999999999998
+    '2011':
+      count: 52
+      percent: 0.06999999999999998
+    '2012':
+      count: 39
+      percent: 0.05
+'13151':
+  name: Henry County
+  employment:
+    '2004':
+      count: 95
+      percent: 0.23
+    '2005':
+      count: 92
+      percent: 0.22
+    '2007':
+      count: 84
+      percent: 0.17
+    '2008':
+      count: 77
+      percent: 0.16
+    '2009':
+      count: 68
+      percent: 0.15000000000000002
+    '2010':
+      count: 66
+      percent: 0.14
+    '2011':
+      count: 69
+      percent: 0.14
+    '2012':
+      count: 60
+      percent: 0.12000000000000001
+    '2013':
+      count: 86
+      percent: 0.17
+'13163':
+  name: Jefferson County
+  employment:
+    '2004':
+      count: 260
+      percent: 4.49
+    '2005':
+      count: 276
+      percent: 5.08
+    '2006':
+      count: 281
+      percent: 5.07
+    '2007':
+      count: 371
+      percent: 6.81
+    '2008':
+      count: 386
+      percent: 7.28
+    '2009':
+      count: 372
+      percent: 7.539999999999999
+    '2010':
+      count: 338
+      percent: 7.119999999999999
+'13187':
+  name: Lumpkin County
+  employment:
+    '2005':
+      count: 27
+      percent: 0.44
+    '2006':
+      count: 20
+      percent: 0.31000000000000005
+'13189':
+  name: McDuffie County
+  employment:
+    '2013':
+      count: 23
+      percent: 0.3500000000000001
+'13195':
+  name: Madison County
+  employment:
+    '2013':
+      count: 33
+      percent: 1.08
+'13215':
+  name: Muscogee County
+  employment:
+    '2006':
+      count: 82
+      percent: 0.08
+    '2010':
+      count: 77
+      percent: 0.08
+    '2011':
+      count: 79
+      percent: 0.08
+    '2012':
+      count: 70
+      percent: 0.06999999999999998
+'13221':
+  name: Oglethorpe County
+  employment:
+    '2004':
+      count: 85
+      percent: 5.159999999999999
+    '2005':
+      count: 85
+      percent: 4.98
+    '2006':
+      count: 94
+      percent: 5.33
+    '2007':
+      count: 91
+      percent: 5.159999999999999
+    '2008':
+      count: 94
+      percent: 5.24
+    '2009':
+      count: 95
+      percent: 5.48
+    '2010':
+      count: 93
+      percent: 5.220000000000001
+    '2011':
+      count: 111
+      percent: 6.17
+    '2012':
+      count: 99
+      percent: 5.7
+    '2013':
+      count: 97
+      percent: 5.390000000000001
+'13227':
+  name: Pickens County
+  employment:
+    '2004':
+      count: 252
+      percent: 4.1099999999999985
+    '2005':
+      count: 241
+      percent: 3.66
+    '2006':
+      count: 233
+      percent: 3.32
+    '2007':
+      count: 224
+      percent: 2.88
+    '2008':
+      count: 196
+      percent: 2.4899999999999998
+    '2009':
+      count: 187
+      percent: 2.6599999999999997
+    '2010':
+      count: 177
+      percent: 2.5700000000000003
+    '2011':
+      count: 179
+      percent: 2.5700000000000003
+    '2012':
+      count: 152
+      percent: 2.17
+    '2013':
+      count: 149
+      percent: 2.13
+'13245':
+  name: Richmond County
+  employment:
+    '2004':
+      count: 132
+      percent: 0.13
+    '2005':
+      count: 130
+      percent: 0.12000000000000001
+    '2006':
+      count: 126
+      percent: 0.12000000000000001
+    '2013':
+      count: 91
+      percent: 0.09
+'13261':
+  name: Sumter County
+  employment:
+    '2005':
+      count: 123
+      percent: 0.97
+'13263':
+  name: Talbot County
+  employment:
+    '2011':
+      count: 106
+      percent: 12.9
+    '2012':
+      count: 104
+      percent: 12.78
+    '2013':
+      count: 90
+      percent: 11.460000000000003
+'13275':
+  name: Thomas County
+  employment:
+    '2005':
+      count: 297
+      percent: 1.26
+    '2006':
+      count: 311
+      percent: 1.31
+    '2007':
+      count: 326
+      percent: 1.41
+    '2008':
+      count: 322
+      percent: 1.5
+'13297':
+  name: Walton County
+  employment:
+    '2013':
+      count: 9
+      percent: 0.05
+'13301':
+  name: Warren County
+  employment:
+    '2012':
+      count: 45
+      percent: 4.09
+'13303':
+  name: Washington County
+  employment:
+    '2004':
+      count: 1009
+      percent: 12.540000000000001
+    '2005':
+      count: 979
+      percent: 12.17
+    '2006':
+      count: 962
+      percent: 11.91
+    '2007':
+      count: 431
+      percent: 5.45
+    '2008':
+      count: 398
+      percent: 5.28
+    '2009':
+      count: 260
+      percent: 3.8099999999999996
+    '2010':
+      count: 221
+      percent: 3.36
+    '2011':
+      count: 211
+      percent: 3.1399999999999997
+    '2012':
+      count: 216
+      percent: 3.19
+    '2013':
+      count: 213
+      percent: 3.25
+'13313':
+  name: Whitfield County
+  employment:
+    '2004':
+      count: 111
+      percent: 0.18
+    '2005':
+      count: 118
+      percent: 0.19
+    '2006':
+      count: 120
+      percent: 0.19
+    '2007':
+      count: 120
+      percent: 0.19
+    '2009':
+      count: 73
+      percent: 0.14
+    '2010':
+      count: 70
+      percent: 0.13
+    '2011':
+      count: 69
+      percent: 0.13
+    '2012':
+      count: 65
+      percent: 0.13
+    '2013':
+      count: 72
+      percent: 0.14
+'13319':
+  name: Wilkinson County
+  employment:
+    '2004':
+      count: 1029
+      percent: 33.61
+    '2005':
+      count: 988
+      percent: 33.17
+    '2006':
+      count: 976
+      percent: 32.86
+    '2007':
+      count: 965
+      percent: 32.15
+    '2008':
+      count: 1086
+      percent: 34.74
+    '2009':
+      count: 896
+      percent: 31.009999999999994
+    '2010':
+      count: 985
+      percent: 33.730000000000004
+    '2011':
+      count: 1043
+      percent: 36.05
+    '2012':
+      count: 1018
+      percent: 35.879999999999995
+    '2013':
+      count: 1075
+      percent: 36.64

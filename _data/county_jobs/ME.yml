@@ -1,0 +1,129 @@
+'23005':
+  name: Cumberland County
+  employment:
+    '2004':
+      count: 5
+      percent: 0
+    '2005':
+      count: 9
+      percent: 0.01
+    '2008':
+      count: 18
+      percent: 0.01
+    '2009':
+      count: 9
+      percent: 0.01
+'23009':
+  name: Hancock County
+  employment:
+    '2004':
+      count: 16
+      percent: 0.06999999999999998
+    '2005':
+      count: 14
+      percent: 0.06
+    '2006':
+      count: 12
+      percent: 0.05
+    '2007':
+      count: 13
+      percent: 0.06
+    '2008':
+      count: 11
+      percent: 0.05
+    '2009':
+      count: 10
+      percent: 0.05
+    '2010':
+      count: 8
+      percent: 0.04
+    '2011':
+      count: 6
+      percent: 0.03
+'23011':
+  name: Kennebec County
+  employment:
+    '2013':
+      count: 17
+      percent: 0.03
+'23017':
+  name: Oxford County
+  employment:
+    '2004':
+      count: 19
+      percent: 0.11
+    '2005':
+      count: 20
+      percent: 0.11
+    '2006':
+      count: 21
+      percent: 0.12000000000000001
+    '2007':
+      count: 19
+      percent: 0.11
+    '2008':
+      count: 19
+      percent: 0.11
+    '2009':
+      count: 18
+      percent: 0.11
+    '2010':
+      count: 15
+      percent: 0.09
+    '2011':
+      count: 12
+      percent: 0.06999999999999998
+    '2012':
+      count: 12
+      percent: 0.06999999999999998
+    '2013':
+      count: 11
+      percent: 0.06999999999999998
+'23019':
+  name: Penobscot County
+  employment:
+    '2010':
+      count: 7
+      percent: 0.01
+    '2011':
+      count: 10
+      percent: 0.01
+'23029':
+  name: Washington County
+  employment:
+    '2009':
+      count: 8
+      percent: 0.08
+'23031':
+  name: York County
+  employment:
+    '2004':
+      count: 36
+      percent: 0.05
+    '2005':
+      count: 36
+      percent: 0.05
+    '2006':
+      count: 41
+      percent: 0.06
+    '2007':
+      count: 26
+      percent: 0.04
+    '2008':
+      count: 26
+      percent: 0.04
+    '2009':
+      count: 21
+      percent: 0.03
+    '2010':
+      count: 38
+      percent: 0.06
+    '2011':
+      count: 63
+      percent: 0.1
+    '2012':
+      count: 68
+      percent: 0.1
+    '2013':
+      count: 66
+      percent: 0.1

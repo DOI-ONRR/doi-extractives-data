@@ -1,0 +1,417 @@
+'34003':
+  name: Bergen County
+  employment:
+    '2004':
+      count: 29
+      percent: 0.01
+    '2005':
+      count: 34
+      percent: 0.01
+    '2006':
+      count: 39
+      percent: 0.01
+    '2007':
+      count: 42
+      percent: 0.01
+    '2008':
+      count: 29
+      percent: 0.01
+    '2009':
+      count: 37
+      percent: 0.01
+    '2010':
+      count: 39
+      percent: 0.01
+    '2011':
+      count: 24
+      percent: 0.01
+    '2012':
+      count: 41
+      percent: 0.01
+    '2013':
+      count: 22
+      percent: 0.01
+'34005':
+  name: Burlington County
+  employment:
+    '2009':
+      count: 6
+      percent: 0
+    '2010':
+      count: 19
+      percent: 0.01
+'34007':
+  name: Camden County
+  employment:
+    '2004':
+      count: 63
+      percent: 0.03
+    '2005':
+      count: 76
+      percent: 0.04
+    '2009':
+      count: 6
+      percent: 0
+    '2012':
+      count: 21
+      percent: 0.01
+'34009':
+  name: Cape May County
+  employment:
+    '2004':
+      count: 43
+      percent: 0.1
+    '2005':
+      count: 45
+      percent: 0.1
+    '2007':
+      count: 39
+      percent: 0.09
+    '2008':
+      count: 37
+      percent: 0.09
+    '2009':
+      count: 17
+      percent: 0.04
+    '2010':
+      count: 21
+      percent: 0.05
+    '2011':
+      count: 17
+      percent: 0.04
+    '2012':
+      count: 18
+      percent: 0.05
+    '2013':
+      count: 22
+      percent: 0.06
+'34011':
+  name: Cumberland County
+  employment:
+    '2004':
+      count: 168
+      percent: 0.28
+    '2005':
+      count: 154
+      percent: 0.25
+    '2006':
+      count: 181
+      percent: 0.29000000000000004
+    '2007':
+      count: 169
+      percent: 0.27
+    '2008':
+      count: 160
+      percent: 0.26
+    '2009':
+      count: 157
+      percent: 0.26
+    '2010':
+      count: 133
+      percent: 0.23
+    '2011':
+      count: 134
+      percent: 0.23
+    '2012':
+      count: 131
+      percent: 0.23
+    '2013':
+      count: 130
+      percent: 0.22
+'34013':
+  name: Essex County
+  employment:
+    '2009':
+      count: 18
+      percent: 0.01
+'34015':
+  name: Gloucester County
+  employment:
+    '2005':
+      count: 122
+      percent: 0.12000000000000001
+    '2006':
+      count: 163
+      percent: 0.16
+    '2007':
+      count: 171
+      percent: 0.16
+    '2008':
+      count: 160
+      percent: 0.16
+    '2009':
+      count: 161
+      percent: 0.16
+    '2010':
+      count: 153
+      percent: 0.16
+    '2011':
+      count: 155
+      percent: 0.16
+    '2012':
+      count: 64
+      percent: 0.06999999999999998
+    '2013':
+      count: 71
+      percent: 0.06999999999999998
+'34017':
+  name: Hudson County
+  employment:
+    '2013':
+      count: 80
+      percent: 0.03
+'34019':
+  name: Hunterdon County
+  employment:
+    '2011':
+      count: 49
+      percent: 0.11
+    '2012':
+      count: 44
+      percent: 0.1
+    '2013':
+      count: 40
+      percent: 0.08
+'34021':
+  name: Mercer County
+  employment:
+    '2005':
+      count: 28
+      percent: 0.01
+    '2006':
+      count: 30
+      percent: 0.01
+    '2009':
+      count: 14
+      percent: 0.01
+    '2010':
+      count: 16
+      percent: 0.01
+    '2011':
+      count: 20
+      percent: 0.01
+    '2013':
+      count: 12
+      percent: 0.01
+'34023':
+  name: Middlesex County
+  employment:
+    '2004':
+      count: 69
+      percent: 0.02
+    '2005':
+      count: 65
+      percent: 0.02
+    '2006':
+      count: 68
+      percent: 0.02
+    '2007':
+      count: 76
+      percent: 0.02
+    '2008':
+      count: 99
+      percent: 0.02
+    '2009':
+      count: 65
+      percent: 0.02
+    '2010':
+      count: 51
+      percent: 0.01
+    '2011':
+      count: 84
+      percent: 0.02
+    '2012':
+      count: 79
+      percent: 0.02
+    '2013':
+      count: 69
+      percent: 0.02
+'34025':
+  name: Monmouth County
+  employment:
+    '2004':
+      count: 36
+      percent: 0.01
+    '2005':
+      count: 40
+      percent: 0.02
+    '2006':
+      count: 40
+      percent: 0.02
+    '2007':
+      count: 24
+      percent: 0.01
+    '2008':
+      count: 21
+      percent: 0.01
+    '2009':
+      count: 15
+      percent: 0.01
+    '2010':
+      count: 12
+      percent: 0
+    '2011':
+      count: 17
+      percent: 0.01
+    '2012':
+      count: 11
+      percent: 0
+'34027':
+  name: Morris County
+  employment:
+    '2004':
+      count: 72
+      percent: 0.03
+    '2009':
+      count: 70
+      percent: 0.03
+    '2010':
+      count: 67
+      percent: 0.03
+'34029':
+  name: Ocean County
+  employment:
+    '2004':
+      count: 116
+      percent: 0.08
+    '2005':
+      count: 118
+      percent: 0.08
+    '2006':
+      count: 121
+      percent: 0.08
+    '2007':
+      count: 115
+      percent: 0.08
+    '2008':
+      count: 107
+      percent: 0.06999999999999998
+    '2009':
+      count: 100
+      percent: 0.06999999999999998
+    '2010':
+      count: 100
+      percent: 0.06999999999999998
+    '2011':
+      count: 92
+      percent: 0.06
+    '2012':
+      count: 95
+      percent: 0.06
+    '2013':
+      count: 98
+      percent: 0.06
+'34031':
+  name: Passaic County
+  employment:
+    '2004':
+      count: 152
+      percent: 0.09
+    '2005':
+      count: 202
+      percent: 0.11
+    '2006':
+      count: 183
+      percent: 0.1
+    '2007':
+      count: 155
+      percent: 0.09
+    '2008':
+      count: 155
+      percent: 0.09
+    '2009':
+      count: 124
+      percent: 0.06999999999999998
+    '2010':
+      count: 97
+      percent: 0.06
+    '2011':
+      count: 103
+      percent: 0.06
+    '2012':
+      count: 110
+      percent: 0.06999999999999998
+    '2013':
+      count: 128
+      percent: 0.08
+'34035':
+  name: Somerset County
+  employment:
+    '2010':
+      count: 311
+      percent: 0.19
+    '2011':
+      count: 306
+      percent: 0.18
+    '2013':
+      count: 337
+      percent: 0.19
+'34037':
+  name: Sussex County
+  employment:
+    '2004':
+      count: 57
+      percent: 0.14
+    '2005':
+      count: 54
+      percent: 0.13
+    '2006':
+      count: 38
+      percent: 0.09
+    '2007':
+      count: 60
+      percent: 0.15000000000000002
+    '2008':
+      count: 30
+      percent: 0.08
+    '2009':
+      count: 39
+      percent: 0.1
+    '2010':
+      count: 36
+      percent: 0.09
+    '2011':
+      count: 34
+      percent: 0.09
+    '2012':
+      count: 29
+      percent: 0.08
+    '2013':
+      count: 57
+      percent: 0.15000000000000002
+'34039':
+  name: Union County
+  employment:
+    '2008':
+      count: 15
+      percent: 0.01
+    '2009':
+      count: 13
+      percent: 0.01
+'34041':
+  name: Warren County
+  employment:
+    '2004':
+      count: 147
+      percent: 0.4
+    '2005':
+      count: 147
+      percent: 0.38000000000000006
+    '2006':
+      count: 153
+      percent: 0.4100000000000001
+    '2007':
+      count: 157
+      percent: 0.42000000000000004
+    '2008':
+      count: 145
+      percent: 0.39000000000000007
+    '2009':
+      count: 136
+      percent: 0.38000000000000006
+    '2010':
+      count: 134
+      percent: 0.38000000000000006
+    '2012':
+      count: 60
+      percent: 0.17

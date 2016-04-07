@@ -1,0 +1,228 @@
+'50001':
+  name: Addison County
+  employment:
+    '2004':
+      count: 45
+      percent: 0.32000000000000006
+    '2005':
+      count: 19
+      percent: 0.14
+    '2006':
+      count: 19
+      percent: 0.13
+    '2007':
+      count: 19
+      percent: 0.13
+    '2008':
+      count: 18
+      percent: 0.12000000000000001
+    '2009':
+      count: 16
+      percent: 0.12000000000000001
+    '2010':
+      count: 15
+      percent: 0.11
+    '2011':
+      count: 16
+      percent: 0.12000000000000001
+    '2012':
+      count: 18
+      percent: 0.13
+    '2013':
+      count: 19
+      percent: 0.13
+'50005':
+  name: Caledonia County
+  employment:
+    '2004':
+      count: 14
+      percent: 0.12000000000000001
+    '2005':
+      count: 14
+      percent: 0.12000000000000001
+    '2006':
+      count: 16
+      percent: 0.14
+    '2007':
+      count: 16
+      percent: 0.14
+    '2012':
+      count: 17
+      percent: 0.16
+    '2013':
+      count: 16
+      percent: 0.15000000000000002
+'50007':
+  name: Chittenden County
+  employment:
+    '2004':
+      count: 41
+      percent: 0.04
+    '2006':
+      count: 40
+      percent: 0.04
+    '2007':
+      count: 41
+      percent: 0.04
+    '2008':
+      count: 42
+      percent: 0.04
+    '2009':
+      count: 40
+      percent: 0.04
+    '2010':
+      count: 39
+      percent: 0.04
+    '2011':
+      count: 41
+      percent: 0.04
+    '2012':
+      count: 42
+      percent: 0.04
+    '2013':
+      count: 42
+      percent: 0.04
+'50011':
+  name: Franklin County
+  employment:
+    '2004':
+      count: 21
+      percent: 0.14
+    '2012':
+      count: 25
+      percent: 0.15000000000000002
+    '2013':
+      count: 25
+      percent: 0.15000000000000002
+'50015':
+  name: Lamoille County
+  employment:
+    '2004':
+      count: 9
+      percent: 0.08
+    '2006':
+      count: 10
+      percent: 0.09
+    '2007':
+      count: 9
+      percent: 0.08
+    '2009':
+      count: 7
+      percent: 0.06999999999999998
+'50017':
+  name: Orange County
+  employment:
+    '2006':
+      count: 11
+      percent: 0.14
+    '2007':
+      count: 10
+      percent: 0.13
+    '2008':
+      count: 7
+      percent: 0.09
+    '2009':
+      count: 9
+      percent: 0.12000000000000001
+    '2010':
+      count: 11
+      percent: 0.15000000000000002
+    '2011':
+      count: 14
+      percent: 0.19
+    '2012':
+      count: 13
+      percent: 0.17
+    '2013':
+      count: 11
+      percent: 0.14
+'50021':
+  name: Rutland County
+  employment:
+    '2004':
+      count: 431
+      percent: 1.47
+    '2005':
+      count: 379
+      percent: 1.28
+    '2006':
+      count: 394
+      percent: 1.3299999999999996
+    '2007':
+      count: 396
+      percent: 1.34
+    '2008':
+      count: 491
+      percent: 1.6900000000000002
+    '2009':
+      count: 423
+      percent: 1.53
+    '2010':
+      count: 363
+      percent: 1.32
+    '2011':
+      count: 350
+      percent: 1.28
+    '2012':
+      count: 366
+      percent: 1.3299999999999996
+    '2013':
+      count: 363
+      percent: 1.32
+'50023':
+  name: Washington County
+  employment:
+    '2004':
+      count: 139
+      percent: 0.43000000000000005
+    '2005':
+      count: 146
+      percent: 0.45
+    '2006':
+      count: 143
+      percent: 0.44
+    '2007':
+      count: 144
+      percent: 0.44
+    '2008':
+      count: 73
+      percent: 0.22
+    '2009':
+      count: 67
+      percent: 0.21000000000000002
+    '2010':
+      count: 71
+      percent: 0.22
+    '2011':
+      count: 91
+      percent: 0.29000000000000004
+    '2012':
+      count: 103
+      percent: 0.32000000000000006
+    '2013':
+      count: 91
+      percent: 0.28
+'50027':
+  name: Windsor County
+  employment:
+    '2004':
+      count: 54
+      percent: 0.23
+    '2005':
+      count: 60
+      percent: 0.25
+    '2006':
+      count: 60
+      percent: 0.25
+    '2010':
+      count: 45
+      percent: 0.2
+    '2011':
+      count: 50
+      percent: 0.22
+    '2012':
+      count: 48
+      percent: 0.21000000000000002
+    '2013':
+      count: 40
+      percent: 0.18

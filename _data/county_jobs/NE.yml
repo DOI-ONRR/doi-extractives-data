@@ -1,0 +1,462 @@
+'31019':
+  name: Buffalo County
+  employment:
+    '2004':
+      count: 72
+      percent: 0.30000000000000004
+    '2005':
+      count: 65
+      percent: 0.26
+    '2006':
+      count: 58
+      percent: 0.23
+    '2007':
+      count: 46
+      percent: 0.18
+    '2008':
+      count: 51
+      percent: 0.2
+    '2009':
+      count: 46
+      percent: 0.18
+    '2010':
+      count: 47
+      percent: 0.19
+    '2011':
+      count: 51
+      percent: 0.2
+    '2012':
+      count: 47
+      percent: 0.18
+    '2013':
+      count: 40
+      percent: 0.15000000000000002
+'31025':
+  name: Cass County
+  employment:
+    '2004':
+      count: 108
+      percent: 2.21
+    '2005':
+      count: 138
+      percent: 2.77
+    '2007':
+      count: 143
+      percent: 2.8899999999999997
+    '2008':
+      count: 139
+      percent: 2.8499999999999996
+    '2009':
+      count: 134
+      percent: 2.74
+    '2010':
+      count: 132
+      percent: 2.75
+    '2011':
+      count: 140
+      percent: 2.9099999999999997
+    '2012':
+      count: 153
+      percent: 3.05
+    '2013':
+      count: 157
+      percent: 3.04
+'31027':
+  name: Cedar County
+  employment:
+    '2004':
+      count: 11
+      percent: 0.42000000000000004
+    '2005':
+      count: 11
+      percent: 0.43000000000000005
+    '2006':
+      count: 10
+      percent: 0.39000000000000007
+    '2007':
+      count: 10
+      percent: 0.4
+    '2008':
+      count: 10
+      percent: 0.39000000000000007
+    '2009':
+      count: 9
+      percent: 0.36000000000000004
+    '2010':
+      count: 8
+      percent: 0.31000000000000005
+    '2011':
+      count: 4
+      percent: 0.15000000000000002
+    '2012':
+      count: 4
+      percent: 0.15000000000000002
+'31033':
+  name: Cheyenne County
+  employment:
+    '2004':
+      count: 18
+      percent: 0.33000000000000007
+    '2005':
+      count: 25
+      percent: 0.43000000000000005
+    '2006':
+      count: 19
+      percent: 0.32000000000000006
+    '2007':
+      count: 9
+      percent: 0.15000000000000002
+    '2008':
+      count: 5
+      percent: 0.08
+    '2009':
+      count: 3
+      percent: 0.05
+    '2010':
+      count: 3
+      percent: 0.06
+    '2011':
+      count: 3
+      percent: 0.05
+    '2012':
+      count: 3
+      percent: 0.05
+    '2013':
+      count: 4
+      percent: 0.06999999999999998
+'31053':
+  name: Dodge County
+  employment:
+    '2005':
+      count: 9
+      percent: 0.06
+    '2007':
+      count: 10
+      percent: 0.06
+    '2008':
+      count: 10
+      percent: 0.06
+    '2009':
+      count: 11
+      percent: 0.06999999999999998
+    '2010':
+      count: 11
+      percent: 0.06999999999999998
+    '2011':
+      count: 11
+      percent: 0.06999999999999998
+    '2012':
+      count: 10
+      percent: 0.06
+    '2013':
+      count: 10
+      percent: 0.06
+'31055':
+  name: Douglas County
+  employment:
+    '2007':
+      count: 34
+      percent: 0.01
+    '2008':
+      count: 50
+      percent: 0.02
+    '2009':
+      count: 49
+      percent: 0.02
+    '2010':
+      count: 49
+      percent: 0.02
+'31079':
+  name: Hall County
+  employment:
+    '2007':
+      count: 23
+      percent: 0.06999999999999998
+    '2008':
+      count: 24
+      percent: 0.06999999999999998
+    '2009':
+      count: 22
+      percent: 0.06999999999999998
+    '2010':
+      count: 20
+      percent: 0.06
+    '2011':
+      count: 18
+      percent: 0.05
+    '2012':
+      count: 17
+      percent: 0.05
+    '2013':
+      count: 17
+      percent: 0.05
+'31087':
+  name: Hitchcock County
+  employment:
+    '2004':
+      count: 30
+      percent: 4.06
+    '2005':
+      count: 32
+      percent: 4.18
+    '2006':
+      count: 33
+      percent: 4.3
+    '2007':
+      count: 35
+      percent: 4.54
+    '2008':
+      count: 37
+      percent: 4.78
+    '2009':
+      count: 35
+      percent: 4.7700000000000005
+    '2010':
+      count: 35
+      percent: 4.6499999999999995
+    '2011':
+      count: 41
+      percent: 5.76
+    '2012':
+      count: 46
+      percent: 6.48
+    '2013':
+      count: 52
+      percent: 7.42
+'31089':
+  name: Holt County
+  employment:
+    '2004':
+      count: 13
+      percent: 0.31000000000000005
+    '2005':
+      count: 14
+      percent: 0.3400000000000001
+    '2006':
+      count: 15
+      percent: 0.36000000000000004
+    '2007':
+      count: 18
+      percent: 0.43000000000000005
+    '2008':
+      count: 15
+      percent: 0.3500000000000001
+    '2009':
+      count: 15
+      percent: 0.3500000000000001
+    '2010':
+      count: 16
+      percent: 0.37000000000000005
+    '2011':
+      count: 16
+      percent: 0.36000000000000004
+    '2012':
+      count: 16
+      percent: 0.3500000000000001
+    '2013':
+      count: 13
+      percent: 0.29000000000000004
+'31093':
+  name: Howard County
+  employment:
+    '2008':
+      count: 13
+      percent: 0.9199999999999999
+    '2009':
+      count: 14
+      percent: 0.98
+    '2010':
+      count: 14
+      percent: 0.98
+    '2011':
+      count: 19
+      percent: 1.32
+    '2012':
+      count: 19
+      percent: 1.3
+    '2013':
+      count: 12
+      percent: 0.8
+'31095':
+  name: Jefferson County
+  employment:
+    '2010':
+      count: 10
+      percent: 0.32000000000000006
+    '2011':
+      count: 10
+      percent: 0.31000000000000005
+    '2012':
+      count: 11
+      percent: 0.3400000000000001
+    '2013':
+      count: 11
+      percent: 0.3400000000000001
+'31101':
+  name: Keith County
+  employment:
+    '2004':
+      count: 5
+      percent: 0.14
+'31105':
+  name: Kimball County
+  employment:
+    '2004':
+      count: 57
+      percent: 3.52
+    '2005':
+      count: 61
+      percent: 3.8099999999999996
+    '2006':
+      count: 54
+      percent: 3.5700000000000003
+    '2007':
+      count: 72
+      percent: 4.87
+    '2008':
+      count: 64
+      percent: 4.44
+    '2009':
+      count: 49
+      percent: 3.5000000000000004
+    '2010':
+      count: 45
+      percent: 3.19
+    '2011':
+      count: 57
+      percent: 3.8699999999999997
+    '2012':
+      count: 66
+      percent: 4.33
+    '2013':
+      count: 62
+      percent: 4.1000000000000005
+'31109':
+  name: Lancaster County
+  employment:
+    '2004':
+      count: 15
+      percent: 0.01
+    '2005':
+      count: 15
+      percent: 0.01
+    '2006':
+      count: 12
+      percent: 0.01
+    '2007':
+      count: 12
+      percent: 0.01
+'31119':
+  name: Madison County
+  employment:
+    '2004':
+      count: 8
+      percent: 0.04
+    '2005':
+      count: 15
+      percent: 0.06999999999999998
+'31139':
+  name: Pierce County
+  employment:
+    '2013':
+      count: 12
+      percent: 0.6000000000000001
+'31145':
+  name: Red Willow County
+  employment:
+    '2004':
+      count: 40
+      percent: 0.7799999999999999
+    '2005':
+      count: 36
+      percent: 0.7100000000000002
+    '2006':
+      count: 38
+      percent: 0.7400000000000001
+    '2007':
+      count: 38
+      percent: 0.7500000000000001
+    '2008':
+      count: 48
+      percent: 0.9299999999999999
+    '2009':
+      count: 49
+      percent: 0.9500000000000001
+    '2010':
+      count: 52
+      percent: 1.02
+    '2011':
+      count: 61
+      percent: 1.1800000000000002
+    '2012':
+      count: 67
+      percent: 1.26
+    '2013':
+      count: 53
+      percent: 0.98
+'31147':
+  name: Richardson County
+  employment:
+    '2009':
+      count: 5
+      percent: 0.21000000000000002
+    '2010':
+      count: 5
+      percent: 0.21000000000000002
+    '2012':
+      count: 5
+      percent: 0.2
+    '2013':
+      count: 5
+      percent: 0.21000000000000002
+'31153':
+  name: Sarpy County
+  employment:
+    '2009':
+      count: 16
+      percent: 0.03
+    '2010':
+      count: 12
+      percent: 0.02
+    '2011':
+      count: 17
+      percent: 0.03
+    '2012':
+      count: 19
+      percent: 0.03
+    '2013':
+      count: 21
+      percent: 0.03
+'31155':
+  name: Saunders County
+  employment:
+    '2011':
+      count: 31
+      percent: 0.6500000000000001
+'31157':
+  name: Scotts Bluff County
+  employment:
+    '2004':
+      count: 18
+      percent: 0.11
+    '2005':
+      count: 16
+      percent: 0.1
+    '2007':
+      count: 14
+      percent: 0.08
+    '2009':
+      count: 12
+      percent: 0.06999999999999998
+    '2011':
+      count: 10
+      percent: 0.06
+    '2012':
+      count: 8
+      percent: 0.05
+'31177':
+  name: Washington County
+  employment:
+    '2009':
+      count: 55
+      percent: 0.6900000000000001

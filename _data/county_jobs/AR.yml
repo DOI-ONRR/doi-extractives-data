@@ -1,0 +1,777 @@
+'05007':
+  name: Benton County
+  employment:
+    '2004':
+      count: 61
+      percent: 0.06999999999999998
+    '2011':
+      count: 34
+      percent: 0.04
+    '2012':
+      count: 40
+      percent: 0.04
+    '2013':
+      count: 43
+      percent: 0.04
+'05013':
+  name: Calhoun County
+  employment:
+    '2004':
+      count: 20
+      percent: 0.54
+    '2011':
+      count: 27
+      percent: 0.9400000000000002
+'05015':
+  name: Carroll County
+  employment:
+    '2004':
+      count: 15
+      percent: 0.15000000000000002
+    '2005':
+      count: 17
+      percent: 0.17
+    '2006':
+      count: 16
+      percent: 0.16
+    '2007':
+      count: 17
+      percent: 0.17
+    '2008':
+      count: 17
+      percent: 0.17
+    '2009':
+      count: 16
+      percent: 0.16
+    '2010':
+      count: 13
+      percent: 0.13
+'05023':
+  name: Cleburne County
+  employment:
+    '2007':
+      count: 37
+      percent: 0.54
+    '2008':
+      count: 84
+      percent: 1.1800000000000002
+    '2009':
+      count: 171
+      percent: 2.5
+    '2010':
+      count: 250
+      percent: 3.63
+    '2011':
+      count: 326
+      percent: 4.63
+    '2012':
+      count: 252
+      percent: 3.56
+    '2013':
+      count: 225
+      percent: 3.2600000000000002
+'05027':
+  name: Columbia County
+  employment:
+    '2004':
+      count: 346
+      percent: 3.7199999999999998
+    '2005':
+      count: 395
+      percent: 4.2299999999999995
+    '2006':
+      count: 439
+      percent: 4.64
+    '2007':
+      count: 494
+      percent: 5.2
+    '2008':
+      count: 535
+      percent: 5.770000000000001
+    '2009':
+      count: 419
+      percent: 4.819999999999999
+    '2010':
+      count: 399
+      percent: 4.619999999999999
+    '2011':
+      count: 355
+      percent: 4.1499999999999995
+    '2012':
+      count: 341
+      percent: 4.02
+    '2013':
+      count: 327
+      percent: 3.9800000000000004
+05029:
+  name: Conway County
+  employment:
+    '2006':
+      count: 23
+      percent: 0.3400000000000001
+    '2007':
+      count: 76
+      percent: 1.0999999999999996
+    '2008':
+      count: 126
+      percent: 1.81
+    '2009':
+      count: 107
+      percent: 1.55
+    '2010':
+      count: 123
+      percent: 1.7800000000000002
+    '2011':
+      count: 170
+      percent: 2.4699999999999998
+    '2012':
+      count: 158
+      percent: 2.3699999999999997
+    '2013':
+      count: 151
+      percent: 2.25
+'05031':
+  name: Craighead County
+  employment:
+    '2004':
+      count: 23
+      percent: 0.06
+    '2005':
+      count: 24
+      percent: 0.06
+    '2007':
+      count: 26
+      percent: 0.06
+    '2008':
+      count: 23
+      percent: 0.05
+    '2009':
+      count: 22
+      percent: 0.05
+    '2011':
+      count: 24
+      percent: 0.05
+    '2012':
+      count: 18
+      percent: 0.04
+    '2013':
+      count: 17
+      percent: 0.04
+'05033':
+  name: Crawford County
+  employment:
+    '2004':
+      count: 188
+      percent: 1.05
+    '2005':
+      count: 200
+      percent: 1.08
+    '2006':
+      count: 153
+      percent: 0.8
+    '2007':
+      count: 418
+      percent: 2.09
+    '2008':
+      count: 227
+      percent: 1.1300000000000001
+    '2009':
+      count: 199
+      percent: 1.02
+    '2010':
+      count: 209
+      percent: 1.0699999999999996
+    '2011':
+      count: 212
+      percent: 1.09
+    '2012':
+      count: 175
+      percent: 0.91
+    '2013':
+      count: 180
+      percent: 0.9400000000000002
+'05045':
+  name: Faulkner County
+  employment:
+    '2004':
+      count: 35
+      percent: 0.1
+    '2005':
+      count: 38
+      percent: 0.11
+    '2006':
+      count: 173
+      percent: 0.46
+    '2007':
+      count: 609
+      percent: 1.55
+    '2008':
+      count: 784
+      percent: 2
+    '2009':
+      count: 805
+      percent: 2.1
+    '2010':
+      count: 825
+      percent: 2.09
+    '2011':
+      count: 1482
+      percent: 3.66
+    '2012':
+      count: 1665
+      percent: 4.08
+    '2013':
+      count: 1337
+      percent: 3.32
+'05047':
+  name: Franklin County
+  employment:
+    '2004':
+      count: 114
+      percent: 2.56
+    '2009':
+      count: 178
+      percent: 4.130000000000001
+    '2011':
+      count: 258
+      percent: 5.87
+    '2012':
+      count: 246
+      percent: 5.53
+    '2013':
+      count: 227
+      percent: 5.1899999999999995
+'05051':
+  name: Garland County
+  employment:
+    '2004':
+      count: 139
+      percent: 0.39000000000000007
+    '2005':
+      count: 152
+      percent: 0.42000000000000004
+    '2006':
+      count: 163
+      percent: 0.44
+    '2007':
+      count: 198
+      percent: 0.53
+    '2008':
+      count: 206
+      percent: 0.5599999999999999
+    '2009':
+      count: 172
+      percent: 0.48000000000000004
+    '2010':
+      count: 183
+      percent: 0.51
+    '2011':
+      count: 182
+      percent: 0.51
+    '2012':
+      count: 185
+      percent: 0.52
+    '2013':
+      count: 146
+      percent: 0.4100000000000001
+'05053':
+  name: Grant County
+  employment:
+    '2004':
+      count: 33
+      percent: 0.9400000000000002
+    '2005':
+      count: 38
+      percent: 1.0699999999999996
+    '2006':
+      count: 41
+      percent: 1.11
+    '2007':
+      count: 45
+      percent: 1.1600000000000001
+    '2009':
+      count: 34
+      percent: 0.91
+'05055':
+  name: Greene County
+  employment:
+    '2007':
+      count: 13
+      percent: 0.09
+    '2008':
+      count: 13
+      percent: 0.09
+    '2009':
+      count: 10
+      percent: 0.06999999999999998
+    '2010':
+      count: 10
+      percent: 0.06999999999999998
+05059:
+  name: Hot Spring County
+  employment:
+    '2004':
+      count: 107
+      percent: 1.41
+    '2005':
+      count: 71
+      percent: 0.9199999999999999
+    '2006':
+      count: 74
+      percent: 0.91
+    '2007':
+      count: 75
+      percent: 0.9299999999999999
+    '2008':
+      count: 72
+      percent: 0.9500000000000001
+    '2009':
+      count: 65
+      percent: 0.87
+    '2010':
+      count: 66
+      percent: 0.8500000000000002
+'05063':
+  name: Independence County
+  employment:
+    '2004':
+      count: 45
+      percent: 0.28
+    '2005':
+      count: 44
+      percent: 0.27
+    '2006':
+      count: 56
+      percent: 0.3400000000000001
+    '2007':
+      count: 61
+      percent: 0.38000000000000006
+    '2008':
+      count: 56
+      percent: 0.36000000000000004
+    '2009':
+      count: 81
+      percent: 0.54
+    '2010':
+      count: 176
+      percent: 1.1400000000000001
+    '2011':
+      count: 151
+      percent: 1.01
+    '2012':
+      count: 171
+      percent: 1.1700000000000002
+    '2013':
+      count: 113
+      percent: 0.77
+'05071':
+  name: Johnson County
+  employment:
+    '2004':
+      count: 22
+      percent: 0.26
+    '2005':
+      count: 23
+      percent: 0.27
+    '2006':
+      count: 27
+      percent: 0.31000000000000005
+    '2009':
+      count: 81
+      percent: 0.9400000000000002
+    '2010':
+      count: 70
+      percent: 0.8200000000000002
+'05073':
+  name: Lafayette County
+  employment:
+    '2004':
+      count: 48
+      percent: 2.74
+    '2005':
+      count: 65
+      percent: 4.03
+    '2006':
+      count: 72
+      percent: 4.95
+    '2007':
+      count: 80
+      percent: 5.57
+    '2008':
+      count: 81
+      percent: 5.7
+    '2009':
+      count: 75
+      percent: 5.510000000000001
+    '2010':
+      count: 68
+      percent: 5.01
+    '2011':
+      count: 72
+      percent: 5.5
+    '2012':
+      count: 73
+      percent: 5.659999999999999
+    '2013':
+      count: 82
+      percent: 6.49
+'05075':
+  name: Lawrence County
+  employment:
+    '2004':
+      count: 67
+      percent: 1.51
+    '2005':
+      count: 60
+      percent: 1.3900000000000001
+    '2006':
+      count: 83
+      percent: 1.9900000000000002
+    '2007':
+      count: 80
+      percent: 1.9300000000000002
+    '2008':
+      count: 78
+      percent: 1.92
+    '2009':
+      count: 64
+      percent: 1.59
+    '2010':
+      count: 57
+      percent: 1.41
+    '2011':
+      count: 35
+      percent: 0.8600000000000001
+    '2012':
+      count: 33
+      percent: 0.8099999999999999
+    '2013':
+      count: 36
+      percent: 0.87
+05083:
+  name: Logan County
+  employment:
+    '2004':
+      count: 64
+      percent: 1.08
+    '2005':
+      count: 72
+      percent: 1.24
+    '2006':
+      count: 76
+      percent: 1.28
+    '2007':
+      count: 138
+      percent: 2.22
+    '2008':
+      count: 142
+      percent: 2.4099999999999997
+    '2009':
+      count: 86
+      percent: 1.55
+    '2010':
+      count: 143
+      percent: 2.5700000000000003
+    '2011':
+      count: 98
+      percent: 1.7999999999999998
+    '2012':
+      count: 170
+      percent: 3.01
+    '2013':
+      count: 145
+      percent: 2.65
+05085:
+  name: Lonoke County
+  employment:
+    '2011':
+      count: 52
+      percent: 0.4
+    '2013':
+      count: 40
+      percent: 0.30000000000000004
+05091:
+  name: Miller County
+  employment:
+    '2004':
+      count: 17
+      percent: 0.13
+    '2005':
+      count: 18
+      percent: 0.14
+    '2006':
+      count: 19
+      percent: 0.15000000000000002
+    '2008':
+      count: 20
+      percent: 0.15000000000000002
+    '2009':
+      count: 30
+      percent: 0.24000000000000002
+    '2010':
+      count: 45
+      percent: 0.3500000000000001
+    '2011':
+      count: 61
+      percent: 0.46
+    '2012':
+      count: 54
+      percent: 0.4100000000000001
+    '2013':
+      count: 42
+      percent: 0.33000000000000007
+'05103':
+  name: Ouachita County
+  employment:
+    '2004':
+      count: 80
+      percent: 1.05
+    '2005':
+      count: 79
+      percent: 1.06
+    '2006':
+      count: 95
+      percent: 1.1900000000000004
+    '2007':
+      count: 96
+      percent: 1.24
+    '2008':
+      count: 93
+      percent: 1.2
+    '2009':
+      count: 87
+      percent: 1.11
+    '2010':
+      count: 100
+      percent: 1.28
+    '2011':
+      count: 100
+      percent: 1.3299999999999996
+    '2012':
+      count: 101
+      percent: 1.41
+    '2013':
+      count: 98
+      percent: 1.35
+05109:
+  name: Pike County
+  employment:
+    '2008':
+      count: 56
+      percent: 2.04
+'05113':
+  name: Polk County
+  employment:
+    '2013':
+      count: 44
+      percent: 0.7300000000000001
+'05115':
+  name: Pope County
+  employment:
+    '2007':
+      count: 44
+      percent: 0.16
+    '2008':
+      count: 90
+      percent: 0.33000000000000007
+    '2009':
+      count: 122
+      percent: 0.4700000000000001
+    '2010':
+      count: 133
+      percent: 0.51
+    '2011':
+      count: 163
+      percent: 0.6200000000000001
+    '2012':
+      count: 109
+      percent: 0.42000000000000004
+    '2013':
+      count: 122
+      percent: 0.4700000000000001
+05119:
+  name: Pulaski County
+  employment:
+    '2004':
+      count: 540
+      percent: 0.22
+    '2005':
+      count: 534
+      percent: 0.22
+    '2006':
+      count: 594
+      percent: 0.24000000000000002
+    '2007':
+      count: 577
+      percent: 0.23
+    '2008':
+      count: 635
+      percent: 0.25
+    '2009':
+      count: 621
+      percent: 0.25
+    '2010':
+      count: 637
+      percent: 0.26
+    '2011':
+      count: 685
+      percent: 0.28
+    '2012':
+      count: 652
+      percent: 0.27
+    '2013':
+      count: 577
+      percent: 0.24000000000000002
+'05125':
+  name: Saline County
+  employment:
+    '2013':
+      count: 18
+      percent: 0.08
+'05131':
+  name: Sebastian County
+  employment:
+    '2004':
+      count: 827
+      percent: 1.1500000000000001
+    '2006':
+      count: 1220
+      percent: 1.6400000000000001
+    '2007':
+      count: 1581
+      percent: 2.1399999999999997
+    '2008':
+      count: 1828
+      percent: 2.5
+    '2009':
+      count: 1560
+      percent: 2.29
+    '2010':
+      count: 1327
+      percent: 1.97
+    '2011':
+      count: 1448
+      percent: 2.21
+    '2012':
+      count: 1337
+      percent: 2.04
+    '2013':
+      count: 1123
+      percent: 1.7500000000000004
+05139:
+  name: Union County
+  employment:
+    '2004':
+      count: 221
+      percent: 1.0999999999999996
+    '2005':
+      count: 241
+      percent: 1.2
+    '2006':
+      count: 273
+      percent: 1.37
+    '2007':
+      count: 305
+      percent: 1.55
+    '2008':
+      count: 347
+      percent: 1.7900000000000003
+    '2009':
+      count: 344
+      percent: 1.8800000000000001
+    '2010':
+      count: 372
+      percent: 2.16
+    '2011':
+      count: 362
+      percent: 2.11
+    '2012':
+      count: 400
+      percent: 2.29
+    '2013':
+      count: 391
+      percent: 2.22
+'05141':
+  name: Van Buren County
+  employment:
+    '2007':
+      count: 28
+      percent: 0.7500000000000001
+    '2008':
+      count: 30
+      percent: 0.8099999999999999
+    '2009':
+      count: 20
+      percent: 0.5700000000000002
+    '2011':
+      count: 187
+      percent: 4.88
+    '2012':
+      count: 203
+      percent: 5.3199999999999985
+    '2013':
+      count: 269
+      percent: 7.01
+'05143':
+  name: Washington County
+  employment:
+    '2004':
+      count: 59
+      percent: 0.06999999999999998
+    '2005':
+      count: 68
+      percent: 0.08
+    '2006':
+      count: 81
+      percent: 0.09
+    '2007':
+      count: 120
+      percent: 0.13
+    '2008':
+      count: 108
+      percent: 0.12000000000000001
+    '2009':
+      count: 76
+      percent: 0.09
+    '2010':
+      count: 84
+      percent: 0.09
+    '2011':
+      count: 81
+      percent: 0.09
+    '2012':
+      count: 58
+      percent: 0.06
+    '2013':
+      count: 33
+      percent: 0.04
+'05145':
+  name: White County
+  employment:
+    '2004':
+      count: 47
+      percent: 0.2
+    '2006':
+      count: 62
+      percent: 0.26
+    '2007':
+      count: 317
+      percent: 1.35
+    '2008':
+      count: 1045
+      percent: 4.2299999999999995
+    '2009':
+      count: 1319
+      percent: 5.29
+    '2010':
+      count: 1537
+      percent: 6.08
+    '2011':
+      count: 1480
+      percent: 5.83
+    '2012':
+      count: 1329
+      percent: 5.21
+    '2013':
+      count: 985
+      percent: 3.9800000000000004

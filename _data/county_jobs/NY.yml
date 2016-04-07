@@ -1,0 +1,1218 @@
+'36001':
+  name: Albany County
+  employment:
+    '2004':
+      count: 122
+      percent: 0.05
+    '2005':
+      count: 128
+      percent: 0.06
+    '2006':
+      count: 119
+      percent: 0.05
+    '2007':
+      count: 113
+      percent: 0.05
+    '2008':
+      count: 94
+      percent: 0.04
+    '2009':
+      count: 93
+      percent: 0.04
+    '2010':
+      count: 94
+      percent: 0.04
+    '2011':
+      count: 83
+      percent: 0.04
+    '2013':
+      count: 112
+      percent: 0.05
+'36003':
+  name: Allegany County
+  employment:
+    '2004':
+      count: 100
+      percent: 0.7200000000000001
+    '2005':
+      count: 88
+      percent: 0.6300000000000001
+    '2006':
+      count: 100
+      percent: 0.7300000000000001
+    '2007':
+      count: 128
+      percent: 0.9199999999999999
+    '2009':
+      count: 115
+      percent: 0.8400000000000001
+    '2010':
+      count: 34
+      percent: 0.25
+    '2011':
+      count: 32
+      percent: 0.24000000000000002
+    '2012':
+      count: 27
+      percent: 0.2
+    '2013':
+      count: 32
+      percent: 0.24000000000000002
+'36007':
+  name: Broome County
+  employment:
+    '2006':
+      count: 34
+      percent: 0.04
+    '2007':
+      count: 47
+      percent: 0.05
+    '2008':
+      count: 39
+      percent: 0.04
+    '2009':
+      count: 31
+      percent: 0.03
+    '2010':
+      count: 33
+      percent: 0.04
+    '2011':
+      count: 28
+      percent: 0.03
+    '2012':
+      count: 33
+      percent: 0.04
+    '2013':
+      count: 34
+      percent: 0.04
+'36009':
+  name: Cattaraugus County
+  employment:
+    '2004':
+      count: 136
+      percent: 0.42000000000000004
+    '2005':
+      count: 150
+      percent: 0.4700000000000001
+    '2006':
+      count: 161
+      percent: 0.51
+    '2007':
+      count: 148
+      percent: 0.4700000000000001
+    '2008':
+      count: 135
+      percent: 0.43000000000000005
+    '2009':
+      count: 127
+      percent: 0.4100000000000001
+    '2010':
+      count: 122
+      percent: 0.4
+    '2011':
+      count: 128
+      percent: 0.42000000000000004
+    '2012':
+      count: 123
+      percent: 0.4100000000000001
+    '2013':
+      count: 122
+      percent: 0.4100000000000001
+'36013':
+  name: Chautauqua County
+  employment:
+    '2004':
+      count: 139
+      percent: 0.26
+    '2005':
+      count: 149
+      percent: 0.27
+    '2006':
+      count: 170
+      percent: 0.31000000000000005
+    '2007':
+      count: 194
+      percent: 0.3500000000000001
+    '2008':
+      count: 258
+      percent: 0.4700000000000001
+    '2009':
+      count: 246
+      percent: 0.4700000000000001
+    '2010':
+      count: 253
+      percent: 0.49
+    '2011':
+      count: 164
+      percent: 0.32000000000000006
+    '2012':
+      count: 141
+      percent: 0.28
+    '2013':
+      count: 135
+      percent: 0.27
+'36015':
+  name: Chemung County
+  employment:
+    '2006':
+      count: 175
+      percent: 0.46
+    '2007':
+      count: 180
+      percent: 0.46
+    '2008':
+      count: 176
+      percent: 0.45
+    '2009':
+      count: 181
+      percent: 0.48000000000000004
+    '2010':
+      count: 258
+      percent: 0.6900000000000001
+    '2011':
+      count: 421
+      percent: 1.11
+    '2012':
+      count: 517
+      percent: 1.37
+    '2013':
+      count: 371
+      percent: 1.01
+'36017':
+  name: Chenango County
+  employment:
+    '2004':
+      count: 15
+      percent: 0.1
+    '2005':
+      count: 12
+      percent: 0.08
+    '2006':
+      count: 13
+      percent: 0.08
+    '2007':
+      count: 20
+      percent: 0.12000000000000001
+'36019':
+  name: Clinton County
+  employment:
+    '2007':
+      count: 5
+      percent: 0.01
+    '2008':
+      count: 7
+      percent: 0.02
+    '2009':
+      count: 6
+      percent: 0.02
+    '2010':
+      count: 6
+      percent: 0.02
+'36023':
+  name: Cortland County
+  employment:
+    '2004':
+      count: 8
+      percent: 0.05
+    '2005':
+      count: 9
+      percent: 0.05
+    '2006':
+      count: 9
+      percent: 0.05
+    '2007':
+      count: 9
+      percent: 0.05
+    '2008':
+      count: 9
+      percent: 0.05
+    '2009':
+      count: 21
+      percent: 0.12000000000000001
+    '2010':
+      count: 22
+      percent: 0.13
+    '2011':
+      count: 19
+      percent: 0.11
+    '2012':
+      count: 16
+      percent: 0.09
+    '2013':
+      count: 7
+      percent: 0.04
+'36025':
+  name: Delaware County
+  employment:
+    '2004':
+      count: 73
+      percent: 0.42000000000000004
+    '2005':
+      count: 90
+      percent: 0.52
+    '2006':
+      count: 90
+      percent: 0.52
+    '2007':
+      count: 96
+      percent: 0.5599999999999999
+    '2008':
+      count: 90
+      percent: 0.54
+    '2009':
+      count: 118
+      percent: 0.7500000000000001
+    '2010':
+      count: 109
+      percent: 0.7000000000000002
+    '2011':
+      count: 113
+      percent: 0.7400000000000001
+    '2012':
+      count: 116
+      percent: 0.76
+    '2013':
+      count: 108
+      percent: 0.7100000000000002
+'36027':
+  name: Dutchess County
+  employment:
+    '2004':
+      count: 136
+      percent: 0.12000000000000001
+    '2005':
+      count: 155
+      percent: 0.13
+    '2006':
+      count: 157
+      percent: 0.13
+    '2007':
+      count: 146
+      percent: 0.13
+    '2008':
+      count: 140
+      percent: 0.12000000000000001
+    '2009':
+      count: 120
+      percent: 0.11
+    '2010':
+      count: 189
+      percent: 0.17
+    '2011':
+      count: 183
+      percent: 0.17
+    '2012':
+      count: 195
+      percent: 0.18
+    '2013':
+      count: 189
+      percent: 0.17
+'36029':
+  name: Erie County
+  employment:
+    '2004':
+      count: 292
+      percent: 0.06
+    '2005':
+      count: 199
+      percent: 0.04
+    '2006':
+      count: 212
+      percent: 0.05
+    '2007':
+      count: 229
+      percent: 0.05
+    '2008':
+      count: 263
+      percent: 0.06
+    '2009':
+      count: 268
+      percent: 0.06
+    '2010':
+      count: 298
+      percent: 0.06999999999999998
+    '2011':
+      count: 312
+      percent: 0.06999999999999998
+    '2012':
+      count: 273
+      percent: 0.06
+    '2013':
+      count: 273
+      percent: 0.06
+'36031':
+  name: Essex County
+  employment:
+    '2004':
+      count: 145
+      percent: 0.9500000000000001
+    '2005':
+      count: 138
+      percent: 0.91
+    '2006':
+      count: 147
+      percent: 0.98
+    '2007':
+      count: 145
+      percent: 0.96
+    '2008':
+      count: 141
+      percent: 0.9500000000000001
+    '2009':
+      count: 118
+      percent: 0.8200000000000002
+    '2010':
+      count: 126
+      percent: 0.88
+    '2011':
+      count: 130
+      percent: 0.9199999999999999
+    '2012':
+      count: 135
+      percent: 0.9500000000000001
+    '2013':
+      count: 138
+      percent: 0.9500000000000001
+'36035':
+  name: Fulton County
+  employment:
+    '2005':
+      count: 25
+      percent: 0.14
+'36037':
+  name: Genesee County
+  employment:
+    '2004':
+      count: 62
+      percent: 0.26
+    '2005':
+      count: 70
+      percent: 0.30000000000000004
+    '2006':
+      count: 73
+      percent: 0.31000000000000005
+    '2007':
+      count: 71
+      percent: 0.30000000000000004
+    '2008':
+      count: 70
+      percent: 0.29000000000000004
+    '2009':
+      count: 67
+      percent: 0.29000000000000004
+    '2010':
+      count: 67
+      percent: 0.29000000000000004
+    '2011':
+      count: 61
+      percent: 0.27
+    '2012':
+      count: 62
+      percent: 0.27
+    '2013':
+      count: 59
+      percent: 0.26
+'36043':
+  name: Herkimer County
+  employment:
+    '2004':
+      count: 35
+      percent: 0.2
+    '2005':
+      count: 43
+      percent: 0.25
+    '2006':
+      count: 44
+      percent: 0.26
+    '2007':
+      count: 40
+      percent: 0.24000000000000002
+    '2008':
+      count: 39
+      percent: 0.23
+    '2009':
+      count: 37
+      percent: 0.22
+    '2010':
+      count: 42
+      percent: 0.26
+    '2011':
+      count: 35
+      percent: 0.22
+    '2012':
+      count: 37
+      percent: 0.23
+    '2013':
+      count: 34
+      percent: 0.2
+'36045':
+  name: Jefferson County
+  employment:
+    '2004':
+      count: 39
+      percent: 0.1
+    '2005':
+      count: 45
+      percent: 0.11
+    '2006':
+      count: 75
+      percent: 0.18
+    '2007':
+      count: 76
+      percent: 0.18
+    '2008':
+      count: 75
+      percent: 0.18
+    '2009':
+      count: 70
+      percent: 0.17
+    '2010':
+      count: 62
+      percent: 0.15000000000000002
+    '2011':
+      count: 61
+      percent: 0.15000000000000002
+    '2012':
+      count: 51
+      percent: 0.12000000000000001
+    '2013':
+      count: 49
+      percent: 0.12000000000000001
+'36047':
+  name: Kings County
+  employment:
+    '2004':
+      count: 27
+      percent: 0.01
+    '2005':
+      count: 22
+      percent: 0
+    '2006':
+      count: 18
+      percent: 0
+    '2007':
+      count: 17
+      percent: 0
+    '2008':
+      count: 17
+      percent: 0
+    '2009':
+      count: 15
+      percent: 0
+    '2010':
+      count: 14
+      percent: 0
+'36053':
+  name: Madison County
+  employment:
+    '2004':
+      count: 65
+      percent: 0.30000000000000004
+    '2005':
+      count: 50
+      percent: 0.24000000000000002
+    '2006':
+      count: 21
+      percent: 0.1
+'36055':
+  name: Monroe County
+  employment:
+    '2004':
+      count: 155
+      percent: 0.04
+    '2005':
+      count: 157
+      percent: 0.04
+    '2006':
+      count: 148
+      percent: 0.04
+    '2007':
+      count: 141
+      percent: 0.04
+    '2008':
+      count: 114
+      percent: 0.03
+    '2009':
+      count: 113
+      percent: 0.03
+    '2010':
+      count: 106
+      percent: 0.03
+    '2011':
+      count: 102
+      percent: 0.03
+    '2012':
+      count: 105
+      percent: 0.03
+    '2013':
+      count: 103
+      percent: 0.03
+'36057':
+  name: Montgomery County
+  employment:
+    '2004':
+      count: 75
+      percent: 0.4
+    '2009':
+      count: 53
+      percent: 0.28
+    '2010':
+      count: 55
+      percent: 0.30000000000000004
+    '2011':
+      count: 53
+      percent: 0.29000000000000004
+    '2012':
+      count: 55
+      percent: 0.30000000000000004
+    '2013':
+      count: 45
+      percent: 0.24000000000000002
+'36059':
+  name: Nassau County
+  employment:
+    '2007':
+      count: 4
+      percent: 0
+    '2008':
+      count: 7
+      percent: 0
+    '2009':
+      count: 7
+      percent: 0
+    '2010':
+      count: 6
+      percent: 0
+    '2012':
+      count: 6
+      percent: 0
+    '2013':
+      count: 3
+      percent: 0
+'36061':
+  name: New York County
+  employment:
+    '2004':
+      count: 25
+      percent: 0
+    '2005':
+      count: 23
+      percent: 0
+    '2006':
+      count: 20
+      percent: 0
+    '2007':
+      count: 25
+      percent: 0
+    '2008':
+      count: 23
+      percent: 0
+    '2009':
+      count: 20
+      percent: 0
+    '2010':
+      count: 20
+      percent: 0
+    '2011':
+      count: 23
+      percent: 0
+    '2012':
+      count: 21
+      percent: 0
+    '2013':
+      count: 23
+      percent: 0
+'36065':
+  name: Oneida County
+  employment:
+    '2004':
+      count: 68
+      percent: 0.06
+    '2005':
+      count: 125
+      percent: 0.11
+    '2006':
+      count: 130
+      percent: 0.12000000000000001
+    '2007':
+      count: 134
+      percent: 0.12000000000000001
+    '2008':
+      count: 138
+      percent: 0.12000000000000001
+    '2009':
+      count: 139
+      percent: 0.13
+    '2010':
+      count: 141
+      percent: 0.13
+    '2011':
+      count: 113
+      percent: 0.11
+    '2012':
+      count: 128
+      percent: 0.12000000000000001
+    '2013':
+      count: 122
+      percent: 0.12000000000000001
+'36067':
+  name: Onondaga County
+  employment:
+    '2004':
+      count: 159
+      percent: 0.06
+    '2005':
+      count: 169
+      percent: 0.06999999999999998
+    '2006':
+      count: 196
+      percent: 0.08
+    '2007':
+      count: 204
+      percent: 0.08
+    '2008':
+      count: 180
+      percent: 0.06999999999999998
+    '2009':
+      count: 170
+      percent: 0.06999999999999998
+    '2010':
+      count: 180
+      percent: 0.08
+    '2011':
+      count: 122
+      percent: 0.05
+    '2012':
+      count: 122
+      percent: 0.05
+    '2013':
+      count: 128
+      percent: 0.05
+'36069':
+  name: Ontario County
+  employment:
+    '2004':
+      count: 82
+      percent: 0.17
+    '2005':
+      count: 87
+      percent: 0.18
+    '2006':
+      count: 86
+      percent: 0.17
+    '2007':
+      count: 82
+      percent: 0.16
+    '2008':
+      count: 61
+      percent: 0.12000000000000001
+    '2009':
+      count: 57
+      percent: 0.12000000000000001
+    '2010':
+      count: 58
+      percent: 0.12000000000000001
+    '2011':
+      count: 49
+      percent: 0.1
+    '2012':
+      count: 54
+      percent: 0.11
+    '2013':
+      count: 43
+      percent: 0.08
+'36071':
+  name: Orange County
+  employment:
+    '2004':
+      count: 87
+      percent: 0.06999999999999998
+    '2005':
+      count: 71
+      percent: 0.06
+    '2006':
+      count: 68
+      percent: 0.05
+    '2007':
+      count: 58
+      percent: 0.04
+    '2008':
+      count: 40
+      percent: 0.03
+    '2009':
+      count: 39
+      percent: 0.03
+    '2010':
+      count: 57
+      percent: 0.04
+    '2011':
+      count: 58
+      percent: 0.04
+    '2012':
+      count: 52
+      percent: 0.04
+    '2013':
+      count: 59
+      percent: 0.04
+'36073':
+  name: Orleans County
+  employment:
+    '2004':
+      count: 35
+      percent: 0.28
+    '2005':
+      count: 40
+      percent: 0.31000000000000005
+    '2006':
+      count: 40
+      percent: 0.31000000000000005
+    '2007':
+      count: 42
+      percent: 0.32000000000000006
+    '2008':
+      count: 38
+      percent: 0.29000000000000004
+    '2009':
+      count: 41
+      percent: 0.32000000000000006
+    '2010':
+      count: 40
+      percent: 0.31000000000000005
+    '2011':
+      count: 41
+      percent: 0.31000000000000005
+    '2012':
+      count: 44
+      percent: 0.3400000000000001
+    '2013':
+      count: 42
+      percent: 0.33000000000000007
+'36075':
+  name: Oswego County
+  employment:
+    '2004':
+      count: 50
+      percent: 0.15000000000000002
+    '2006':
+      count: 50
+      percent: 0.15000000000000002
+    '2008':
+      count: 43
+      percent: 0.13
+    '2009':
+      count: 40
+      percent: 0.12000000000000001
+    '2011':
+      count: 38
+      percent: 0.12000000000000001
+    '2012':
+      count: 56
+      percent: 0.17
+    '2013':
+      count: 58
+      percent: 0.18
+'36077':
+  name: Otsego County
+  employment:
+    '2005':
+      count: 38
+      percent: 0.16
+    '2007':
+      count: 38
+      percent: 0.16
+    '2010':
+      count: 28
+      percent: 0.12000000000000001
+    '2011':
+      count: 29
+      percent: 0.12000000000000001
+    '2012':
+      count: 30
+      percent: 0.13
+'36081':
+  name: Queens County
+  employment:
+    '2005':
+      count: 18
+      percent: 0
+    '2006':
+      count: 12
+      percent: 0
+    '2007':
+      count: 15
+      percent: 0
+'36083':
+  name: Rensselaer County
+  employment:
+    '2004':
+      count: 161
+      percent: 0.33000000000000007
+    '2005':
+      count: 168
+      percent: 0.3400000000000001
+    '2006':
+      count: 169
+      percent: 0.33000000000000007
+    '2007':
+      count: 169
+      percent: 0.33000000000000007
+    '2008':
+      count: 168
+      percent: 0.32000000000000006
+    '2009':
+      count: 163
+      percent: 0.31000000000000005
+    '2010':
+      count: 135
+      percent: 0.26
+    '2011':
+      count: 98
+      percent: 0.19
+    '2012':
+      count: 96
+      percent: 0.19
+    '2013':
+      count: 101
+      percent: 0.2
+'36089':
+  name: St. Lawrence County
+  employment:
+    '2004':
+      count: 151
+      percent: 0.4100000000000001
+    '2005':
+      count: 163
+      percent: 0.44
+    '2006':
+      count: 289
+      percent: 0.79
+    '2007':
+      count: 378
+      percent: 1.02
+    '2008':
+      count: 355
+      percent: 0.96
+    '2009':
+      count: 88
+      percent: 0.25
+    '2010':
+      count: 70
+      percent: 0.2
+    '2011':
+      count: 52
+      percent: 0.15000000000000002
+    '2012':
+      count: 50
+      percent: 0.15000000000000002
+    '2013':
+      count: 54
+      percent: 0.16
+'36091':
+  name: Saratoga County
+  employment:
+    '2011':
+      count: 142
+      percent: 0.19
+    '2012':
+      count: 146
+      percent: 0.19
+'36093':
+  name: Schenectady County
+  employment:
+    '2005':
+      count: 142
+      percent: 0.22
+    '2006':
+      count: 116
+      percent: 0.18
+    '2008':
+      count: 118
+      percent: 0.18
+    '2010':
+      count: 63
+      percent: 0.1
+    '2011':
+      count: 68
+      percent: 0.11
+'36097':
+  name: Schuyler County
+  employment:
+    '2006':
+      count: 65
+      percent: 1.37
+    '2007':
+      count: 66
+      percent: 1.37
+    '2008':
+      count: 69
+      percent: 1.41
+    '2011':
+      count: 44
+      percent: 0.8999999999999999
+    '2012':
+      count: 45
+      percent: 0.9199999999999999
+'36101':
+  name: Steuben County
+  employment:
+    '2004':
+      count: 81
+      percent: 0.22
+    '2005':
+      count: 83
+      percent: 0.23
+    '2006':
+      count: 90
+      percent: 0.25
+    '2007':
+      count: 93
+      percent: 0.25
+    '2008':
+      count: 118
+      percent: 0.31000000000000005
+    '2009':
+      count: 103
+      percent: 0.28
+    '2010':
+      count: 140
+      percent: 0.38000000000000006
+    '2011':
+      count: 133
+      percent: 0.36000000000000004
+    '2012':
+      count: 128
+      percent: 0.3500000000000001
+    '2013':
+      count: 100
+      percent: 0.27
+'36103':
+  name: Suffolk County
+  employment:
+    '2004':
+      count: 176
+      percent: 0.03
+    '2006':
+      count: 182
+      percent: 0.03
+    '2007':
+      count: 212
+      percent: 0.03
+    '2008':
+      count: 204
+      percent: 0.03
+    '2009':
+      count: 183
+      percent: 0.03
+    '2010':
+      count: 168
+      percent: 0.03
+    '2011':
+      count: 182
+      percent: 0.03
+    '2012':
+      count: 177
+      percent: 0.03
+    '2013':
+      count: 183
+      percent: 0.03
+'36105':
+  name: Sullivan County
+  employment:
+    '2004':
+      count: 106
+      percent: 0.4100000000000001
+    '2005':
+      count: 100
+      percent: 0.39000000000000007
+    '2006':
+      count: 132
+      percent: 0.52
+    '2007':
+      count: 142
+      percent: 0.5499999999999999
+    '2008':
+      count: 134
+      percent: 0.52
+    '2009':
+      count: 120
+      percent: 0.48000000000000004
+    '2010':
+      count: 96
+      percent: 0.38000000000000006
+    '2011':
+      count: 93
+      percent: 0.37000000000000005
+    '2012':
+      count: 93
+      percent: 0.37000000000000005
+    '2013':
+      count: 92
+      percent: 0.37000000000000005
+'36107':
+  name: Tioga County
+  employment:
+    '2004':
+      count: 47
+      percent: 0.3500000000000001
+    '2005':
+      count: 44
+      percent: 0.32000000000000006
+    '2007':
+      count: 25
+      percent: 0.17
+    '2008':
+      count: 11
+      percent: 0.06999999999999998
+    '2009':
+      count: 21
+      percent: 0.15000000000000002
+    '2010':
+      count: 54
+      percent: 0.4100000000000001
+    '2011':
+      count: 41
+      percent: 0.31000000000000005
+    '2012':
+      count: 31
+      percent: 0.24000000000000002
+    '2013':
+      count: 25
+      percent: 0.2
+'36109':
+  name: Tompkins County
+  employment:
+    '2004':
+      count: 279
+      percent: 0.5700000000000002
+    '2005':
+      count: 291
+      percent: 0.59
+    '2006':
+      count: 281
+      percent: 0.5700000000000002
+    '2007':
+      count: 266
+      percent: 0.53
+    '2008':
+      count: 279
+      percent: 0.5499999999999999
+    '2009':
+      count: 283
+      percent: 0.5700000000000002
+    '2010':
+      count: 267
+      percent: 0.54
+    '2011':
+      count: 280
+      percent: 0.5700000000000002
+    '2012':
+      count: 262
+      percent: 0.53
+    '2013':
+      count: 253
+      percent: 0.51
+'36111':
+  name: Ulster County
+  employment:
+    '2004':
+      count: 139
+      percent: 0.23
+    '2005':
+      count: 144
+      percent: 0.23
+    '2006':
+      count: 160
+      percent: 0.26
+    '2007':
+      count: 138
+      percent: 0.22
+    '2008':
+      count: 129
+      percent: 0.21000000000000002
+    '2009':
+      count: 109
+      percent: 0.19
+    '2010':
+      count: 95
+      percent: 0.16
+    '2011':
+      count: 81
+      percent: 0.14
+    '2012':
+      count: 88
+      percent: 0.15000000000000002
+    '2013':
+      count: 83
+      percent: 0.14
+'36113':
+  name: Warren County
+  employment:
+    '2013':
+      count: 182
+      percent: 0.49
+'36115':
+  name: Washington County
+  employment:
+    '2004':
+      count: 167
+      percent: 1.09
+    '2005':
+      count: 191
+      percent: 1.24
+    '2006':
+      count: 205
+      percent: 1.31
+    '2007':
+      count: 85
+      percent: 0.54
+    '2008':
+      count: 59
+      percent: 0.37000000000000005
+    '2009':
+      count: 53
+      percent: 0.3400000000000001
+    '2010':
+      count: 44
+      percent: 0.29000000000000004
+    '2013':
+      count: 43
+      percent: 0.28
+'36117':
+  name: Wayne County
+  employment:
+    '2012':
+      count: 44
+      percent: 0.15000000000000002
+    '2013':
+      count: 44
+      percent: 0.15000000000000002
+'36119':
+  name: Westchester County
+  employment:
+    '2010':
+      count: 6
+      percent: 0
+    '2012':
+      count: 5
+      percent: 0
+    '2013':
+      count: 6
+      percent: 0
+'36121':
+  name: Wyoming County
+  employment:
+    '2004':
+      count: 12
+      percent: 0.09
+    '2005':
+      count: 9
+      percent: 0.06
+    '2006':
+      count: 12
+      percent: 0.08
+    '2007':
+      count: 11
+      percent: 0.08
+    '2008':
+      count: 12
+      percent: 0.08

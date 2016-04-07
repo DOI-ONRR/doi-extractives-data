@@ -1,0 +1,78 @@
+'44005':
+  name: Newport County
+  employment:
+    '2004':
+      count: 44
+      percent: 0.11
+    '2007':
+      count: 38
+      percent: 0.1
+    '2008':
+      count: 26
+      percent: 0.06999999999999998
+'44007':
+  name: Providence County
+  employment:
+    '2004':
+      count: 71
+      percent: 0.02
+    '2005':
+      count: 73
+      percent: 0.03
+    '2006':
+      count: 75
+      percent: 0.03
+    '2007':
+      count: 80
+      percent: 0.03
+    '2008':
+      count: 78
+      percent: 0.03
+    '2009':
+      count: 107
+      percent: 0.04
+    '2010':
+      count: 91
+      percent: 0.03
+    '2011':
+      count: 83
+      percent: 0.03
+    '2012':
+      count: 91
+      percent: 0.03
+    '2013':
+      count: 91
+      percent: 0.03
+'44009':
+  name: Washington County
+  employment:
+    '2004':
+      count: 63
+      percent: 0.13
+    '2005':
+      count: 128
+      percent: 0.26
+    '2006':
+      count: 133
+      percent: 0.27
+    '2007':
+      count: 123
+      percent: 0.25
+    '2008':
+      count: 104
+      percent: 0.21000000000000002
+    '2009':
+      count: 75
+      percent: 0.16
+    '2010':
+      count: 73
+      percent: 0.15000000000000002
+    '2011':
+      count: 86
+      percent: 0.18
+    '2012':
+      count: 82
+      percent: 0.17
+    '2013':
+      count: 88
+      percent: 0.18

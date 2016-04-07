@@ -25,21 +25,20 @@ layout: default
 
   <section id="key-facts" class="revenue">
     <h2>Key Facts</h2>
-    <ul>
+    <ul class="list-bullet">
 
     {% if revenue_total %}
       <li>{{ state_name }} generated
         <strong>${{ revenue_total | intcomma }}
           in federal revenue</strong> from
-        <a href="#revenue">{{ revenue_products | size }} products</a>
+        <a href="#revenue">{{ revenue_products | size }} product{{ revenue_products | size | plural }}</a>
         in {{ year }}.
         {% if top_revenue_products %}
         Among them, these are the most notable in terms of revenue:
-        <ul>
+        <ul class="list-bullet">
           {% for product in top_revenue_products %}
           <li><a href="#revenue-{{ product.product | slugify }}">{{ product.product }}</a>:
             #{{ product.rank }} ({{ product.percent | floor }}%)</li>
-          {% if forloop.index > 10 %}{% break %}{% endif %}
           {% endfor %}
         </ul>
         {% endif %}
@@ -50,11 +49,11 @@ layout: default
 
     {% if all_products_num > 0 %}
       <li>{{ state_name }} produced
-        <a href="#all-production">{{ all_products | size }} products</a>
+        <a href="#all-production">{{ all_products | size }} product{{ all_products | size | plural }}</a>
         on all lands and waters in {{ year }}.
         {% if top_all_products %}
         Among them, these are the most notable:
-        <ul>
+        <ul class="list-bullet">
           {% for product in top_all_products %}
           <li><a href="#all-production-{{ product.product | slugify }}">{{ product.product }}</a>:
             #{{ product.rank }} ({{ product.percent | floor }}%)</li>
@@ -69,11 +68,11 @@ layout: default
 
     {% if federal_products_num > 0 %}
       <li>{{ state_name }} produced
-        <a href="#federal-production">{{ federal_products | size }} products</a>
+        <a href="#federal-production">{{ federal_products | size }} product{{ federal_products | size | plural }}</a>
         on federal lands in {{ year }}.
         {% if top_federal_products %}
         Among them, these are the most notable:
-        <ul>
+        <ul class="list-bullet">
           {% for product in top_federal_products %}
           <li><a href="#federal-production-{{ product.product | slugify }}">{{ product.product }}</a>:
             #{{ product.rank }} ({{ product.percent | floor }}%)</li>
@@ -91,9 +90,7 @@ layout: default
         The extractives industry created
         <a href="#employment">{{ jobs[year].count | intcomma }} jobs</a>
         on average in {{ state_name }} in {{ year }}, or
-        {% assign percent = jobs[year].percent %}
-        {% include format_percent.html percent=percent %}
-        of state-wide employment.
+        {{ jobs[year].percent | percent }}% of state-wide employment.
       {% else %}
         The extractives industry did not create any jobs in {{ state_name }} in {{ year }}.
       {% endif %}
@@ -121,11 +118,24 @@ layout: default
         {% else %}no{% endif %}
         federal revenue from {{ product_name | downcase }} in {{ year }}.
         Historically:</p>
-      <ul>
+
+      <table>
+        <thead>
+          <th>Year</th>
+          <th>Revenue</th>
+          <th>Rank</th>
+        </thead>
+        <tbody>
         {% for year in product[1] %}
-        <li>{{ year[0] }}: ${{ year[1].revenue | intcomma }} ({{ year[1].rank | ordinal:'super' }})</li>
+          <tr>
+            <td>{{ year[0] }}</td>
+            <td>${{ year[1].revenue | intcomma }}</td>
+            <td>{{ year[1].rank | ordinal:'super' }}</td>
+          </tr>
         {% endfor %}
-      </ul>
+        </tbody>
+      </table>
+
     </section>
     {% endfor %}
   </section>
@@ -141,31 +151,59 @@ layout: default
         {% if volume %}{{ volume | intcomma }} (units) of
         {% else %}no{% endif %}
         {{ product[0] | downcase }} in {{ year }}. Historically:</p>
-      <ul>
+
+      <table>
+        <thead>
+          <th>Year</th>
+          <th>Volume</th>
+          <th>Rank</th>
+        </thead>
+        <tbody>
         {% for year in product[1] %}
-        <li>{{ year[0] }}: {{ year[1].volume | intcomma }} ({{ year[1].rank | ordinal:'super' }})</li>
+          <tr>
+            <td>{{ year[0] }}</td>
+            <td>${{ year[1].volume | intcomma }}</td>
+            <td>{{ year[1].rank | ordinal:'super' }}</td>
+          </tr>
         {% endfor %}
-      </ul>
+        </tbody>
+      </table>
+
     </section>
     {% endfor %}
   </section>
 
   <section id="all-production" class="all-lands production">
     <h2>Production on All Lands &amp; Waters</h2>
+
     {% for product in all_products %}
     <section id="all-production-{{ product[0] | slugify }}">
       {% assign product_name = product[0] %}
       {% assign volume = product[1][year].volume %}
       <h3>{{ product[0] }}</h3>
+
       <p>{{ state_name }} produced
         {% if volume %}{{ volume | intcomma }} (units) of
         {% else %}no{% endif %}
         {{ product[0] | downcase }} in {{ year }}. Historically:</p>
-      <ul>
+
+      <table>
+        <thead>
+          <th>Year</th>
+          <th>Volume</th>
+          <th>Rank</th>
+        </thead>
+        <tbody>
         {% for year in product[1] %}
-        <li>{{ year[0] }}: {{ year[1].volume | intcomma }} ({{ year[1].rank | ordinal:'super' }})</li>
+          <tr>
+            <td>{{ year[0] }}</td>
+            <td>{{ year[1].volume | intcomma }}</td>
+            <td>{{ year[1].rank | ordinal:'super' }}</td>
+          </tr>
         {% endfor %}
-      </ul>
+        </tbody>
+      </table>
+
     </section>
     {% endfor %}
   </section>
@@ -173,24 +211,45 @@ layout: default
   <section id="employment" class="economic employment">
     <h2>Employment</h2>
     <p>{{ jobs_summary | strip_html }} Historically:</p>
-    <ul>
-    {% for year in jobs %}
-      <li>{{ year[0] }}: {{ year[1].count | intcomma }} jobs
-        {% assign percent = year[1].percent %}
-        ({% include format_percent.html percent=percent %})</li>
-    {% endfor %}
-    </ul>
+
+    <table>
+      <thead>
+        <th>Year</th>
+        <th>Jobs</th>
+        <th>%</th>
+      </thead>
+      <tbody>
+      {% for year in jobs %}
+        <tr>
+          <td>{{ year[0] }}</td>
+          <td>{{ year[1].count | intcomma }}</td>
+          <td>{{ year[1].percent | percent }}%</td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
 
     <h3>County-Level Employment</h3>
-    <ul>
-    {% for county in site.data.county_jobs[state_id] %}
-      {% if county[1].employment[year].count >= 1 %}
-      <li>{{ county[1].name }}: {{ county[1].employment[year].count | intcomma }} jobs
-        {% assign percent=county[1].employment[year].percent %}
-        ({% include format_percent.html percent=percent %})</li>
-      {% endif %}
-    {% endfor %}
-    </ul>
+    <table>
+      <thead>
+        <tr>
+          <th>County</th>
+          <th>Jobs</th>
+          <th>%</th>
+        </tr>
+      </thead>
+      <tbody>
+      {% for county in site.data.county_jobs[state_id] %}
+        {% if county[1].employment[year].count > 0 %}
+        <tr>
+          <td>{{ county[1].name }}</td>
+          <td>{{ county[1].employment[year].count | intcomma }}</td>
+          <td>{{ county[1].employment[year].percent | percent }}%</td>
+        </tr>
+        {% endif %}
+      {% endfor %}
+      </tbody>
+    </table>
   </section>
 
 </main>

@@ -9,9 +9,9 @@ CREATE TABLE all_regional_production AS
         SUM(volume) AS volume
     FROM all_production_coal
     INNER JOIN states ON
-        states.name LIKE (region || '%')
+        states.name LIKE (all_production_coal.state || '%')
     GROUP BY
-        year, region, state
+        year, region
 UNION
     SELECT
         year, region,

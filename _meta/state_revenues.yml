@@ -1,7 +1,6 @@
 '{state}':
-    products:
-        '{product}':
-            '{year}': '{revenue}'
-    commodities:
-        '{commodity}':
-            '{year}': '{revenue}'
+  products:
+    '{product}':
+      '{year}':
+        revenue: '{revenue}'
+        rank: '{rank}'

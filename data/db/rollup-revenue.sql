@@ -87,7 +87,7 @@ CREATE TABLE state_revenue_rank AS
         state.product,
         state.revenue,
         national.revenue AS total,
-        100 * (state.revenue / national.revenue) AS percent,
+        100 * (ABS(state.revenue) / ABS(national.revenue)) AS percent,
         0 AS rank
     FROM
         state_revenue AS state

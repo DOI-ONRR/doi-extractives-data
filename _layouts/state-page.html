@@ -7,6 +7,7 @@ layout: default
 {% assign year = '2013' %}
 
 {% assign jobs = site.data.state_jobs[state_id] %}
+{% assign gdp = site.data.state_gdp[state_id] %}
 
 {% assign revenue_products = site.data.state_revenues[state_id].products %}
 {% assign revenue_total = revenue_products.All[year].revenue %}
@@ -19,6 +20,8 @@ layout: default
 {% assign all_products = site.data.state_all_production[state_id].products %}
 {% assign all_products_num = all_products | size %}
 {% assign top_all_products = site.data.top_state_products[state_id].all_production[year] %}
+
+
 
 <main id="state-{{ state_id }}" class="container-outer">
   <h1>{{ state_name }}</h1>
@@ -97,6 +100,20 @@ layout: default
     {% endcapture %}
 
       <li class="employment">{{ jobs_summary }}</li>
+
+
+    {% capture gdp_summary %}
+      {% if gdp[year].dollars %}
+        The extractives industry created
+        <a href="#gdp">${{ gdp[year].dollars | intcomma }}</a>
+        on average in {{ state_name }} in {{ year }}, or
+        {{ gdp[year].percent | percent }}% of state-wide GDP.
+      {% else %}
+        The extractives industry did not have any effect on GDP in {{ state_name }} in {{ year }}.
+      {% endif %}
+    {% endcapture %}
+
+      <li class="gdp">{{ gdp_summary }}</li>
 
     </ul>
   </section>
@@ -247,6 +264,29 @@ layout: default
           <td>{{ county[1].employment[year].percent | percent }}%</td>
         </tr>
         {% endif %}
+      {% endfor %}
+      </tbody>
+    </table>
+  </section>
+
+
+  <section id="gdp" class="economic gdp">
+    <h2>GDP</h2>
+    <p>{{ gdp_summary | strip_html }} Historically:</p>
+
+    <table>
+      <thead>
+        <th>Year</th>
+        <th>Dollars</th>
+        <th>%</th>
+      </thead>
+      <tbody>
+      {% for year in gdp %}
+        <tr>
+          <td>{{ year[0] }}</td>
+          <td>${{ year[1].dollars | intcomma }}</td>
+          <td>{{ year[1].percent | percent }}%</td>
+        </tr>
       {% endfor %}
       </tbody>
     </table>

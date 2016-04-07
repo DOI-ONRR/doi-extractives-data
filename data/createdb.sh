@@ -90,3 +90,8 @@ for jobs_filename in _input/bls/????/joined.tsv; do
     load $jobs_filename bls_employment
 done
 load_sql db/rollup-employment.sql
+
+# Load GDP table
+$tables -d $db_url -i gdp/regional.tsv -n gdp
+
+

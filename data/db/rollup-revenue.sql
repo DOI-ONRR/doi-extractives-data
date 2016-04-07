@@ -106,10 +106,10 @@ CREATE TABLE state_revenue_rank AS
 
 UPDATE state_revenue_rank
 SET rank = (
-    SELECT COUNT(distinct inner.percent) AS rank
+    SELECT COUNT(distinct inner.revenue) AS rank
     FROM state_revenue_rank AS inner
     WHERE
         inner.year = state_revenue_rank.year AND
         inner.product = state_revenue_rank.product AND
-        inner.percent > state_revenue_rank.percent
+        inner.revenue > state_revenue_rank.revenue
 ) + 1;

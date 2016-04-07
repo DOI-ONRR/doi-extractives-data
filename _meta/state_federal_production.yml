@@ -1,4 +1,6 @@
 '{state}':
-    products:
-        '{product}':
-            '{year}': '{volume}'
+  products:
+    '{product}':
+      '{year}':
+        volume: '{volume}'
+        rank: '{rank}'

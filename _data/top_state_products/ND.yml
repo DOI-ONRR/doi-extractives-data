@@ -1,0 +1,80 @@
+revenue:
+  '2004':
+    - product: Coal-Lignite-Raw
+      rank: 1
+      percent: 100
+    - product: Nitrogen
+      rank: 1
+      percent: 100
+  '2005':
+    - product: Nitrogen
+      rank: 1
+      percent: 100
+  '2006':
+    - product: Leonardite
+      rank: 1
+      percent: 100
+    - product: Nitrogen
+      rank: 1
+      percent: 100
+  '2007':
+    - product: Nitrogen
+      rank: 1
+      percent: 100
+  '2008':
+    - product: Nitrogen
+      rank: 1
+      percent: 97.03164825828377
+    - product: Inlet Scrubber
+      rank: 1
+      percent: 10.259689519165434
+  '2009':
+    - product: Leonardite
+      rank: 1
+      percent: 100
+    - product: Nitrogen
+      rank: 1
+      percent: 100
+    - product: Hardrock
+      rank: 2
+      percent: 29.01458097009299
+  '2010':
+    - product: Leonardite
+      rank: 1
+      percent: 100
+    - product: Nitrogen
+      rank: 1
+      percent: 91.8809539670908
+  '2011':
+    - product: Nitrogen
+      rank: 1
+      percent: 127.48551591217824
+    - product: Leonardite
+      rank: 1
+      percent: 100
+    - product: 'Oil & Gas'
+      rank: 2
+      percent: 15.904776286057833
+  '2012':
+    - product: Leonardite
+      rank: 1
+      percent: 100
+    - product: Nitrogen
+      rank: 1
+      percent: 92.79177274071296
+  '2013':
+    - product: Leonardite
+      rank: 1
+      percent: 100
+    - product: Nitrogen
+      rank: 2
+      percent: 40.66945985049434
+all_production:
+  '2012':
+    - product: Oil (bbl)
+      rank: 2
+      percent: 10.26262871743722
+  '2013':
+    - product: Oil (bbl)
+      rank: 2
+      percent: 11.534289945210624

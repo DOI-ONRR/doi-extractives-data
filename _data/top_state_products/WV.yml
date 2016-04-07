@@ -1,0 +1,17 @@
+all_production:
+  '2004':
+    - product: Wind
+      rank: 9
+      percent: 2.191967324710687
+  '2005':
+    - product: Wind
+      rank: 10
+      percent: 1.4265863825845295
+  '2012':
+    - product: Natural Gas (MMcf)
+      rank: 10
+      percent: 1.8274128307899529
+  '2013':
+    - product: Natural Gas (MMcf)
+      rank: 10
+      percent: 2.512834763550606

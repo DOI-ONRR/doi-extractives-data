@@ -1,0 +1,41 @@
+all_production:
+  '2004':
+    - product: Other biomass
+      rank: 6
+      percent: 5.963048132582667
+  '2005':
+    - product: Other biomass
+      rank: 5
+      percent: 5.943749502031712
+  '2006':
+    - product: Other biomass
+      rank: 6
+      percent: 5.755011814924917
+  '2007':
+    - product: Other biomass
+      rank: 7
+      percent: 5.381033335797177
+  '2008':
+    - product: Other biomass
+      rank: 9
+      percent: 4.986715716329449
+  '2009':
+    - product: Other biomass
+      rank: 8
+      percent: 4.970165890761262
+  '2010':
+    - product: Other biomass
+      rank: 9
+      percent: 4.730811087638435
+  '2011':
+    - product: Other biomass
+      rank: 10
+      percent: 4.1835957338750625
+  '2012':
+    - product: Other biomass
+      rank: 10
+      percent: 4.081882814415296
+  '2013':
+    - product: Other biomass
+      rank: 10
+      percent: 3.111495246326707

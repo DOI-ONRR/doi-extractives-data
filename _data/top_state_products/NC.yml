@@ -1,0 +1,124 @@
+all_production:
+  '2004':
+    - product: Conventional Hydroelectric
+      rank: 5
+      percent: 5.036371218088311
+    - product: Wood and wood-derived fuels
+      rank: 10
+      percent: 5.086926504738591
+  '2005':
+    - product: Conventional Hydroelectric
+      rank: 5
+      percent: 5.16365445517083
+    - product: Wood and wood-derived fuels
+      rank: 9
+      percent: 5.271274791030507
+  '2006':
+    - product: Conventional Hydroelectric
+      rank: 6
+      percent: 4.05043258071323
+    - product: Wood and wood-derived fuels
+      rank: 8
+      percent: 5.320876091285036
+  '2007':
+    - product: Conventional Hydroelectric
+      rank: 8
+      percent: 3.533242555206915
+    - product: Wood and wood-derived fuels
+      rank: 9
+      percent: 4.795328714488853
+  '2008':
+    - product: Solar
+      rank: 4
+      percent: 5.263157894736842
+    - product: Wood and wood-derived fuels
+      rank: 7
+      percent: 5.728470498376932
+    - product: Conventional Hydroelectric
+      rank: 8
+      percent: 3.1911648698396
+    - product: Biomass (total)
+      rank: 10
+      percent: 4.160977829789998
+  '2009':
+    - product: Solar
+      rank: 5
+      percent: 7.246376811594203
+    - product: Conventional Hydroelectric
+      rank: 5
+      percent: 4.5486532608504415
+    - product: Wood and wood-derived fuels
+      rank: 6
+      percent: 5.903302758458489
+    - product: Biomass (total)
+      rank: 10
+      percent: 4.190793122573489
+  '2010':
+    - product: Wood and wood-derived fuels
+      rank: 6
+      percent: 6.103591879229567
+    - product: Conventional Hydroelectric
+      rank: 6
+      percent: 4.583955673331727
+    - product: Solar
+      rank: 7
+      percent: 5.140186915887849
+    - product: Biomass (total)
+      rank: 10
+      percent: 4.463593278759156
+  '2011':
+    - product: Wood and wood-derived fuels
+      rank: 7
+      percent: 6.209067209257965
+    - product: Biomass (total)
+      rank: 7
+      percent: 4.924899513433467
+    - product: Conventional Hydroelectric
+      rank: 7
+      percent: 3.526747293563437
+    - product: Solar
+      rank: 7
+      percent: 3.3663366336633667
+  '2012':
+    - product: Wood and wood-derived fuels
+      rank: 5
+      percent: 7.165030091859361
+    - product: Solar
+      rank: 5
+      percent: 6.547338671691004
+    - product: Biomass (total)
+      rank: 6
+      percent: 5.354718793726375
+    - product: Conventional Hydroelectric
+      rank: 7
+      percent: 4.038653204489319
+  '2013':
+    - product: Wood and wood-derived fuels
+      rank: 6
+      percent: 5.49615269311482
+    - product: Solar
+      rank: 6
+      percent: 3.819751992914083
+    - product: Biomass (total)
+      rank: 9
+      percent: 4.288671990535346
+    - product: Conventional Hydroelectric
+      rank: 9
+      percent: 2.5695827825666044
+revenue:
+  '2004':
+    - product: Hardrock
+      rank: 5
+      percent: 0.22891767241533365
+  '2011':
+    - product: Hardrock
+      rank: 7
+      percent: 0.404821475010601
+  '2012':
+    - product: Hardrock
+      rank: 9
+      percent: 0.27835543381518185
+  '2013':
+    - product: Hardrock
+      rank: 7
+      percent: 0.27115698049883624

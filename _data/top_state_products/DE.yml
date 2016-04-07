@@ -1,0 +1,5 @@
+all_production:
+  '2011':
+    - product: Solar
+      rank: 10
+      percent: 1.5841584158415845

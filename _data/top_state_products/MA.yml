@@ -1,0 +1,53 @@
+all_production:
+  '2004':
+    - product: Other biomass
+      rank: 4
+      percent: 8.849417175481722
+  '2005':
+    - product: Other biomass
+      rank: 3
+      percent: 9.067006613018885
+  '2006':
+    - product: Other biomass
+      rank: 4
+      percent: 8.796402164799147
+  '2007':
+    - product: Other biomass
+      rank: 4
+      percent: 8.285904353610762
+  '2008':
+    - product: Other biomass
+      rank: 4
+      percent: 7.6912596225900955
+    - product: Solar
+      rank: 5
+      percent: 0
+  '2009':
+    - product: Other biomass
+      rank: 4
+      percent: 7.2650973706642175
+    - product: Solar
+      rank: 7
+      percent: 0
+  '2010':
+    - product: Other biomass
+      rank: 4
+      percent: 7.201843671980028
+    - product: Solar
+      rank: 9
+      percent: 0.46728971962616817
+  '2011':
+    - product: Other biomass
+      rank: 4
+      percent: 6.595987811071609
+  '2012':
+    - product: Other biomass
+      rank: 4
+      percent: 6.527335131159597
+  '2013':
+    - product: Other biomass
+      rank: 5
+      percent: 5.094593296840487
+    - product: Solar
+      rank: 10
+      percent: 1.1736049601417187

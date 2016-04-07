@@ -1,0 +1,62 @@
+all_production:
+  '2004':
+    - product: Oil (bbl)
+      rank: 2
+      percent: 16.693883781913577
+    - product: Natural Gas (MMcf)
+      rank: 2
+      percent: 15.202890919102042
+  '2005':
+    - product: Oil (bbl)
+      rank: 2
+      percent: 16.668648594654503
+    - product: Natural Gas (MMcf)
+      rank: 2
+      percent: 15.530442083349659
+  '2006':
+    - product: Oil (bbl)
+      rank: 2
+      percent: 14.56858867049732
+    - product: Natural Gas (MMcf)
+      rank: 2
+      percent: 13.621195716901694
+  '2007':
+    - product: Oil (bbl)
+      rank: 2
+      percent: 14.223445063599325
+    - product: Natural Gas (MMcf)
+      rank: 2
+      percent: 14.106950396409164
+  '2008':
+    - product: Oil (bbl)
+      rank: 2
+      percent: 13.651213713166843
+    - product: Natural Gas (MMcf)
+      rank: 2
+      percent: 13.324426676205245
+  '2009':
+    - product: Natural Gas (MMcf)
+      rank: 2
+      percent: 12.71213005756788
+    - product: Oil (bbl)
+      rank: 2
+      percent: 12.050241448990732
+  '2010':
+    - product: Natural Gas (MMcf)
+      rank: 2
+      percent: 11.922321549833931
+    - product: Oil (bbl)
+      rank: 2
+      percent: 10.952960172282063
+  '2011':
+    - product: Natural Gas (MMcf)
+      rank: 2
+      percent: 11.106146053319804
+  '2012':
+    - product: Natural Gas (MMcf)
+      rank: 2
+      percent: 10.712739747654144
+  '2013':
+    - product: Natural Gas (MMcf)
+      rank: 3
+      percent: 10.891191866394758

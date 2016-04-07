@@ -1,0 +1,77 @@
+all_production:
+  '1967':
+    - product: Natural Gas (MMcf)
+      rank: 10
+      percent: 0.058303715242299055
+  '1968':
+    - product: Natural Gas (MMcf)
+      rank: 10
+      percent: 0.07105593985145059
+  '1969':
+    - product: Natural Gas (MMcf)
+      rank: 10
+      percent: 0.054903068792582006
+  '1970':
+    - product: Natural Gas (MMcf)
+      rank: 10
+      percent: 0.05162866504469424
+  '2002':
+    - product: Natural Gas (MMcf)
+      rank: 10
+      percent: 0.12633257218521568
+  '2004':
+    - product: Coal (short tons)
+      rank: 5
+      percent: 4.484697948755717
+  '2005':
+    - product: Coal (short tons)
+      rank: 5
+      percent: 4.36210863804206
+  '2006':
+    - product: Coal (short tons)
+      rank: 5
+      percent: 4.2685129318698625
+  '2007':
+    - product: Coal (short tons)
+      rank: 5
+      percent: 4.312468566427536
+  '2008':
+    - product: Coal (short tons)
+      rank: 4
+      percent: 4.340753376159062
+  '2009':
+    - product: Coal (short tons)
+      rank: 3
+      percent: 4.631811927074534
+    - product: Wind
+      rank: 10
+      percent: 2.5197557471264376
+  '2010':
+    - product: Coal (short tons)
+      rank: 4
+      percent: 4.459391973830943
+    - product: Wind
+      rank: 9
+      percent: 4.033655035882209
+  '2011':
+    - product: Coal (short tons)
+      rank: 5
+      percent: 4.729242597346145
+    - product: Wind
+      rank: 9
+      percent: 3.6030798929495904
+  '2012':
+    - product: Coal (short tons)
+      rank: 5
+      percent: 9.442791322710693
+    - product: Wind
+      rank: 9
+      percent: 2.9963036254340434
+  '2013':
+    - product: Coal (short tons)
+      rank: 5
+      percent: 5.314910562487762
+  '2014':
+    - product: Natural Gas (MMcf)
+      rank: 9
+      percent: 1.0437718405629046

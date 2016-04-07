@@ -1,0 +1,610 @@
+revenue:
+  '2004':
+    - product: Brine Barrels
+      rank: 1
+      percent: 100
+    - product: Langbeinite
+      rank: 1
+      percent: 100
+    - product: Muriate Of Potash-Granular
+      rank: 1
+      percent: 100
+    - product: Muriate Of Potash-Standard
+      rank: 1
+      percent: 100
+    - product: Potassium Sulphate-Standard
+      rank: 1
+      percent: 100
+    - product: Potassium
+      rank: 1
+      percent: 95.63491873083939
+    - product: Potash
+      rank: 1
+      percent: 91.7051431835331
+    - product: Salt
+      rank: 1
+      percent: 77.69415340817828
+    - product: Coal Bed Methane
+      rank: 1
+      percent: 76.24021620350537
+    - product: Gas Plant Products
+      rank: 1
+      percent: 29.835200864467854
+  '2005':
+    - product: Brine Barrels
+      rank: 1
+      percent: 100
+    - product: Granulated Langeinite
+      rank: 1
+      percent: 100
+    - product: Langbeinite
+      rank: 1
+      percent: 100
+    - product: Langbeinite-Coarse
+      rank: 1
+      percent: 100
+    - product: Langbeinite-Granular
+      rank: 1
+      percent: 100
+    - product: Langbeinite-Special Std
+      rank: 1
+      percent: 100
+    - product: Langbeinite-Standard
+      rank: 1
+      percent: 100
+    - product: Muriate Of Potash-Granular
+      rank: 1
+      percent: 100
+    - product: Muriate Of Potash-Standard
+      rank: 1
+      percent: 100
+    - product: Potassium Sulphate Special Std
+      rank: 1
+      percent: 100
+    - product: Potassium Sulphate-Granular
+      rank: 1
+      percent: 100
+    - product: Potassium Sulphate-Standard
+      rank: 1
+      percent: 100
+    - product: Potash
+      rank: 1
+      percent: 93.55742783828691
+    - product: Potassium
+      rank: 1
+      percent: 89.45770540453596
+    - product: Salt
+      rank: 1
+      percent: 70.78888145291121
+    - product: Coal Bed Methane
+      rank: 1
+      percent: 66.0071841206893
+    - product: Gas Plant Products
+      rank: 1
+      percent: 35.17052321402773
+    - product: 'Oil & Gas'
+      rank: 1
+      percent: 10.727092241779827
+    - product: Processed (Residue) Gas
+      rank: 1
+      percent: 10.627286676899283
+    - product: All
+      rank: 2
+      percent: 10.148486667967257
+  '2006':
+    - product: Brine Barrels
+      rank: 1
+      percent: 100
+    - product: Geothermal - Commercially Demineralized H2O
+      rank: 1
+      percent: 100
+    - product: Granulated Langeinite
+      rank: 1
+      percent: 100
+    - product: Langbeinite
+      rank: 1
+      percent: 100
+    - product: Langbeinite-Special Std
+      rank: 1
+      percent: 100
+    - product: Muriate Of Potash-Granular
+      rank: 1
+      percent: 100
+    - product: Muriate Of Potash-Standard
+      rank: 1
+      percent: 100
+    - product: Oil Lost
+      rank: 1
+      percent: 100
+    - product: Potassium Sulphate Special Std
+      rank: 1
+      percent: 100
+    - product: Sylvite-Raw Ore
+      rank: 1
+      percent: 100
+    - product: Potassium
+      rank: 1
+      percent: 94.93528333161471
+    - product: Potash
+      rank: 1
+      percent: 92.95212974485116
+    - product: Salt
+      rank: 1
+      percent: 75.88579331022198
+    - product: Coal Bed Methane
+      rank: 1
+      percent: 56.72157654331375
+    - product: Gas Plant Products
+      rank: 1
+      percent: 36.45024211784629
+    - product: Unprocessed (Wet) Gas
+      rank: 2
+      percent: 11.753732566232527
+    - product: Sodium
+      rank: 4
+      percent: 11.201836600561752
+  '2007':
+    - product: Muriate Of Potash-Standard
+      rank: 1
+      percent: 100.06903074700013
+    - product: Brine Barrels
+      rank: 1
+      percent: 100
+    - product: Granulated Langeinite
+      rank: 1
+      percent: 100
+    - product: Langbeinite
+      rank: 1
+      percent: 100
+    - product: Langbeinite-Special Std
+      rank: 1
+      percent: 100
+    - product: Langbeinite-Standard
+      rank: 1
+      percent: 100
+    - product: Muriate Of Potash-Granular
+      rank: 1
+      percent: 100
+    - product: Oil Lost
+      rank: 1
+      percent: 100
+    - product: Sylvite-Raw Ore
+      rank: 1
+      percent: 100
+    - product: Potash
+      rank: 1
+      percent: 93.60081213107281
+    - product: Salt
+      rank: 1
+      percent: 90.24131420141518
+    - product: Potassium
+      rank: 1
+      percent: 84.55169707973383
+    - product: Gas Lost - Flared or Vented
+      rank: 1
+      percent: 57.88140853201457
+    - product: Coal Bed Methane
+      rank: 1
+      percent: 50.59911590912833
+    - product: Gas Plant Products
+      rank: 1
+      percent: 27.659681972579378
+    - product: 'Oil & Gas'
+      rank: 1
+      percent: 12.317486952844808
+    - product: Sodium
+      rank: 2
+      percent: 26.517340126271037
+    - product: Unprocessed (Wet) Gas
+      rank: 2
+      percent: 17.360014153734546
+  '2008':
+    - product: Brine Barrels
+      rank: 1
+      percent: 100
+    - product: Langbeinite
+      rank: 1
+      percent: 100
+    - product: Muriate Of Potash-Granular
+      rank: 1
+      percent: 100
+    - product: Muriate Of Potash-Standard
+      rank: 1
+      percent: 100
+    - product: Sylvite-Raw Ore
+      rank: 1
+      percent: 100
+    - product: Potassium
+      rank: 1
+      percent: 97.47090890556048
+    - product: Salt
+      rank: 1
+      percent: 77.34757369841643
+    - product: Gas Lost - Flared or Vented
+      rank: 1
+      percent: 46.37435125844954
+    - product: Gas Plant Products
+      rank: 1
+      percent: 30.037592549428926
+    - product: Unprocessed (Wet) Gas
+      rank: 1
+      percent: 16.346484908133025
+    - product: Coal Bed Methane
+      rank: 2
+      percent: 41.08553830092846
+    - product: Potash
+      rank: 2
+      percent: 33.932188760864236
+  '2009':
+    - product: Brine Barrels
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Direct Use, Millions of Gallons'
+      rank: 1
+      percent: 100
+    - product: Langbeinite
+      rank: 1
+      percent: 100
+    - product: Muriate Of Potash-Granular
+      rank: 1
+      percent: 100
+    - product: Muriate Of Potash-Standard
+      rank: 1
+      percent: 100
+    - product: Sylvite-Raw Ore
+      rank: 1
+      percent: 100
+    - product: Potash
+      rank: 1
+      percent: 95.899174185209
+    - product: Potassium
+      rank: 1
+      percent: 94.68897408356916
+    - product: Salt
+      rank: 1
+      percent: 78.4406048636068
+    - product: Gas Plant Products
+      rank: 1
+      percent: 32.782333353959864
+    - product: Coal Bed Methane
+      rank: 2
+      percent: 33.888972280675866
+    - product: Unprocessed (Wet) Gas
+      rank: 2
+      percent: 21.767709915500127
+    - product: Gas Lost - Flared or Vented
+      rank: 2
+      percent: 13.79690792971959
+    - product: Condensate
+      rank: 2
+      percent: 10.980689437520333
+    - product: Processed (Residue) Gas
+      rank: 2
+      percent: 10.474481324131379
+  '2010':
+    - product: Langbeinite
+      rank: 1
+      percent: 100
+    - product: Muriate Of Potash-Granular
+      rank: 1
+      percent: 100
+    - product: Muriate Of Potash-Standard
+      rank: 1
+      percent: 100
+    - product: Sylvite-Raw Ore
+      rank: 1
+      percent: 100
+    - product: Potash
+      rank: 1
+      percent: 94.93678705114897
+    - product: Salt
+      rank: 1
+      percent: 84.29853956208308
+    - product: Potassium
+      rank: 1
+      percent: 69.34460483055551
+    - product: Gas Plant Products
+      rank: 1
+      percent: 25.590048403469577
+    - product: Processed (Residue) Gas
+      rank: 1
+      percent: 13.389542333784034
+    - product: Coal Bed Methane
+      rank: 2
+      percent: 27.411388842331753
+    - product: Unprocessed (Wet) Gas
+      rank: 2
+      percent: 14.822618567026177
+  '2011':
+    - product: Brine Barrels
+      rank: 1
+      percent: 100
+    - product: Fuel Oil
+      rank: 1
+      percent: 100
+    - product: Langbeinite
+      rank: 1
+      percent: 100
+    - product: Muriate Of Potash-Granular
+      rank: 1
+      percent: 100
+    - product: Muriate Of Potash-Standard
+      rank: 1
+      percent: 100
+    - product: Sylvite-Raw Ore
+      rank: 1
+      percent: 100
+    - product: Potash
+      rank: 1
+      percent: 93.5192704998754
+    - product: Salt
+      rank: 1
+      percent: 74.3007677355367
+    - product: Gas Plant Products
+      rank: 1
+      percent: 28.24777151014844
+    - product: Gas Lost - Flared or Vented
+      rank: 1
+      percent: 25.829958682213974
+    - product: Processed (Residue) Gas
+      rank: 1
+      percent: 17.133664078430076
+    - product: Coal Bed Methane
+      rank: 2
+      percent: 33.32315939281353
+    - product: Unprocessed (Wet) Gas
+      rank: 2
+      percent: 11.146982944613113
+  '2012':
+    - product: 'Geothermal - Direct Use, Millions of Gallons'
+      rank: 1
+      percent: 100
+    - product: Langbeinite
+      rank: 1
+      percent: 100
+    - product: Muriate Of Potash-Granular
+      rank: 1
+      percent: 100
+    - product: Muriate Of Potash-Standard
+      rank: 1
+      percent: 100
+    - product: Sylvite-Raw Ore
+      rank: 1
+      percent: 100
+    - product: Potassium
+      rank: 1
+      percent: 97.12590317382244
+    - product: Potash
+      rank: 1
+      percent: 92.52266891548514
+    - product: Salt
+      rank: 1
+      percent: 63.765098996705454
+    - product: Coal Bed Methane
+      rank: 1
+      percent: 52.04142668739693
+    - product: Gas Lost - Flared or Vented
+      rank: 1
+      percent: 12.580754913107596
+    - product: Unprocessed (Wet) Gas
+      rank: 2
+      percent: 62.88094663796693
+    - product: Gas Plant Products
+      rank: 2
+      percent: 22.14323076905457
+  '2013':
+    - product: 'Geothermal - Direct Use, Millions of Gallons'
+      rank: 1
+      percent: 100
+    - product: Langbeinite
+      rank: 1
+      percent: 100
+    - product: Muriate Of Potash-Granular
+      rank: 1
+      percent: 100
+    - product: Muriate Of Potash-Standard
+      rank: 1
+      percent: 100
+    - product: Sylvite-Raw Ore
+      rank: 1
+      percent: 100
+    - product: Gas Lost - Flared or Vented
+      rank: 1
+      percent: 93.97154020026282
+    - product: Potash
+      rank: 1
+      percent: 92.75032584952078
+    - product: Potassium
+      rank: 1
+      percent: 86.76671178208724
+    - product: Salt
+      rank: 1
+      percent: 70.67177643055135
+    - product: Coal Bed Methane
+      rank: 1
+      percent: 47.50101663022023
+    - product: Fuel Gas
+      rank: 1
+      percent: 33.20937938789681
+    - product: Gas Plant Products
+      rank: 1
+      percent: 22.707957310235717
+    - product: Unprocessed (Wet) Gas
+      rank: 2
+      percent: 25.60160173798475
+    - product: Sodium
+      rank: 3
+      percent: 16.75150791123023
+    - product: Processed (Residue) Gas
+      rank: 3
+      percent: 10.284487012612496
+federal_production:
+  '2005':
+    - product: Langbeinite (tons)
+      rank: 1
+      percent: 100
+    - product: Muriate Of Potash-Granular (tons)
+      rank: 1
+      percent: 100
+    - product: Muriate Of Potash-Standard (tons)
+      rank: 1
+      percent: 100
+    - product: Gas (mcf)
+      rank: 3
+      percent: 15.790371971503719
+  '2006':
+    - product: Brine Barrels (barrels)
+      rank: 1
+      percent: 100
+    - product: Langbeinite (tons)
+      rank: 1
+      percent: 100
+    - product: Muriate Of Potash-Granular (tons)
+      rank: 1
+      percent: 100
+    - product: Muriate Of Potash-Standard (tons)
+      rank: 1
+      percent: 100
+    - product: Potash (tons)
+      rank: 1
+      percent: 100
+    - product: Gas (mcf)
+      rank: 3
+      percent: 15.791874678512078
+  '2007':
+    - product: Langbeinite (tons)
+      rank: 1
+      percent: 100
+    - product: Muriate Of Potash-Granular (tons)
+      rank: 1
+      percent: 100
+    - product: Muriate Of Potash-Standard (tons)
+      rank: 1
+      percent: 100
+    - product: Gas (mcf)
+      rank: 3
+      percent: 14.950457686266143
+  '2008':
+    - product: Langbeinite (tons)
+      rank: 1
+      percent: 100
+    - product: Muriate Of Potash-Granular (tons)
+      rank: 1
+      percent: 100
+    - product: Muriate Of Potash-Standard (tons)
+      rank: 1
+      percent: 100
+    - product: Salt (tons)
+      rank: 1
+      percent: 100
+    - product: Gas (mcf)
+      rank: 3
+      percent: 14.637343319392413
+  '2009':
+    - product: Langbeinite (tons)
+      rank: 1
+      percent: 100
+    - product: Muriate Of Potash-Granular (tons)
+      rank: 1
+      percent: 100
+    - product: Muriate Of Potash-Standard (tons)
+      rank: 1
+      percent: 100
+    - product: Salt (tons)
+      rank: 1
+      percent: 100
+    - product: Gas (mcf)
+      rank: 3
+      percent: 13.700916538666664
+  '2010':
+    - product: Langbeinite (tons)
+      rank: 1
+      percent: 100
+    - product: Muriate Of Potash-Granular (tons)
+      rank: 1
+      percent: 100
+    - product: Muriate Of Potash-Standard (tons)
+      rank: 1
+      percent: 100
+    - product: Salt (tons)
+      rank: 1
+      percent: 100
+    - product: Gas (mcf)
+      rank: 3
+      percent: 13.416119907464665
+  '2011':
+    - product: 'Geothermal - Direct Use, Millions of Gallons'
+      rank: 1
+      percent: 100
+    - product: Langbeinite (tons)
+      rank: 1
+      percent: 100
+    - product: Muriate Of Potash-Granular (tons)
+      rank: 1
+      percent: 100
+    - product: Muriate Of Potash-Standard (tons)
+      rank: 1
+      percent: 100
+    - product: Salt (tons)
+      rank: 1
+      percent: 100
+    - product: Gas (mcf)
+      rank: 3
+      percent: 14.210057263582405
+  '2012':
+    - product: 'Geothermal - Direct Use, Millions of Gallons'
+      rank: 1
+      percent: 100
+    - product: Langbeinite (tons)
+      rank: 1
+      percent: 100
+    - product: Muriate Of Potash-Granular (tons)
+      rank: 1
+      percent: 100
+    - product: Muriate Of Potash-Standard (tons)
+      rank: 1
+      percent: 100
+    - product: Salt (tons)
+      rank: 1
+      percent: 100
+    - product: Gas (mcf)
+      rank: 3
+      percent: 14.887870905422696
+  '2013':
+    - product: 'Geothermal - Direct Use, Millions of Gallons'
+      rank: 1
+      percent: 100
+    - product: Langbeinite (tons)
+      rank: 1
+      percent: 100
+    - product: Muriate Of Potash-Granular (tons)
+      rank: 1
+      percent: 100
+    - product: Muriate Of Potash-Standard (tons)
+      rank: 1
+      percent: 100
+    - product: Salt (tons)
+      rank: 1
+      percent: 100
+    - product: Gas (mcf)
+      rank: 3
+      percent: 15.691147443019771
+  '2014':
+    - product: 'Geothermal - Direct Use, Millions of Gallons'
+      rank: 1
+      percent: 100
+    - product: Langbeinite (tons)
+      rank: 1
+      percent: 100
+    - product: Muriate Of Potash-Granular (tons)
+      rank: 1
+      percent: 100
+    - product: Muriate Of Potash-Standard (tons)
+      rank: 1
+      percent: 100
+    - product: Salt (tons)
+      rank: 1
+      percent: 100
+    - product: Gas (mcf)
+      rank: 3
+      percent: 16.015836505875754

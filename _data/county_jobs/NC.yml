@@ -1,0 +1,648 @@
+'37001':
+  name: Alamance County
+  employment:
+    '2010':
+      count: 41
+      percent: 0.06999999999999998
+    '2011':
+      count: 47
+      percent: 0.08
+    '2012':
+      count: 41
+      percent: 0.06999999999999998
+    '2013':
+      count: 46
+      percent: 0.08
+'37003':
+  name: Alexander County
+  employment:
+    '2004':
+      count: 5
+      percent: 0.05
+'37021':
+  name: Buncombe County
+  employment:
+    '2004':
+      count: 96
+      percent: 0.09
+    '2005':
+      count: 103
+      percent: 0.09
+    '2007':
+      count: 94
+      percent: 0.08
+    '2008':
+      count: 87
+      percent: 0.08
+    '2009':
+      count: 106
+      percent: 0.1
+    '2010':
+      count: 114
+      percent: 0.1
+    '2011':
+      count: 114
+      percent: 0.1
+    '2012':
+      count: 119
+      percent: 0.1
+    '2013':
+      count: 107
+      percent: 0.09
+'37023':
+  name: Burke County
+  employment:
+    '2013':
+      count: 24
+      percent: 0.08
+'37027':
+  name: Caldwell County
+  employment:
+    '2004':
+      count: 17
+      percent: 0.06
+    '2005':
+      count: 21
+      percent: 0.06999999999999998
+    '2006':
+      count: 23
+      percent: 0.08
+    '2007':
+      count: 24
+      percent: 0.09
+    '2008':
+      count: 21
+      percent: 0.08
+    '2009':
+      count: 11
+      percent: 0.04
+    '2010':
+      count: 7
+      percent: 0.03
+    '2011':
+      count: 9
+      percent: 0.04
+    '2012':
+      count: 8
+      percent: 0.03
+'37037':
+  name: Chatham County
+  employment:
+    '2005':
+      count: 14
+      percent: 0.08
+    '2006':
+      count: 51
+      percent: 0.30000000000000004
+    '2007':
+      count: 51
+      percent: 0.30000000000000004
+    '2008':
+      count: 39
+      percent: 0.24000000000000002
+'37045':
+  name: Cleveland County
+  employment:
+    '2004':
+      count: 99
+      percent: 0.30000000000000004
+    '2005':
+      count: 104
+      percent: 0.31000000000000005
+    '2006':
+      count: 101
+      percent: 0.30000000000000004
+    '2007':
+      count: 101
+      percent: 0.29000000000000004
+    '2008':
+      count: 99
+      percent: 0.30000000000000004
+    '2010':
+      count: 70
+      percent: 0.23
+    '2011':
+      count: 66
+      percent: 0.21000000000000002
+'37049':
+  name: Craven County
+  employment:
+    '2005':
+      count: 56
+      percent: 0.14
+    '2006':
+      count: 57
+      percent: 0.14
+    '2007':
+      count: 51
+      percent: 0.12000000000000001
+    '2011':
+      count: 53
+      percent: 0.14
+    '2012':
+      count: 52
+      percent: 0.14
+'37057':
+  name: Davidson County
+  employment:
+    '2004':
+      count: 63
+      percent: 0.14
+    '2005':
+      count: 60
+      percent: 0.13
+    '2006':
+      count: 59
+      percent: 0.13
+    '2007':
+      count: 62
+      percent: 0.14
+    '2008':
+      count: 67
+      percent: 0.16
+    '2009':
+      count: 68
+      percent: 0.17
+    '2010':
+      count: 56
+      percent: 0.14
+    '2011':
+      count: 36
+      percent: 0.09
+    '2012':
+      count: 43
+      percent: 0.11
+    '2013':
+      count: 49
+      percent: 0.12000000000000001
+'37059':
+  name: Davie County
+  employment:
+    '2008':
+      count: 35
+      percent: 0.33000000000000007
+    '2009':
+      count: 25
+      percent: 0.26
+    '2010':
+      count: 28
+      percent: 0.30000000000000004
+    '2011':
+      count: 25
+      percent: 0.26
+    '2012':
+      count: 22
+      percent: 0.23
+    '2013':
+      count: 20
+      percent: 0.2
+'37067':
+  name: Forsyth County
+  employment:
+    '2004':
+      count: 34
+      percent: 0.02
+    '2006':
+      count: 49
+      percent: 0.03
+    '2007':
+      count: 55
+      percent: 0.03
+    '2008':
+      count: 39
+      percent: 0.02
+    '2009':
+      count: 31
+      percent: 0.02
+    '2010':
+      count: 29
+      percent: 0.02
+    '2011':
+      count: 27
+      percent: 0.02
+    '2013':
+      count: 33
+      percent: 0.02
+'37081':
+  name: Guilford County
+  employment:
+    '2004':
+      count: 493
+      percent: 0.18
+    '2006':
+      count: 170
+      percent: 0.06
+    '2007':
+      count: 175
+      percent: 0.06
+    '2008':
+      count: 202
+      percent: 0.06999999999999998
+    '2009':
+      count: 179
+      percent: 0.06999999999999998
+    '2010':
+      count: 123
+      percent: 0.05
+    '2011':
+      count: 118
+      percent: 0.05
+    '2012':
+      count: 120
+      percent: 0.05
+    '2013':
+      count: 129
+      percent: 0.05
+'37089':
+  name: Henderson County
+  employment:
+    '2011':
+      count: 20
+      percent: 0.06
+'37097':
+  name: Iredell County
+  employment:
+    '2006':
+      count: 37
+      percent: 0.06
+    '2012':
+      count: 31
+      percent: 0.05
+    '2013':
+      count: 39
+      percent: 0.06
+'37101':
+  name: Johnston County
+  employment:
+    '2005':
+      count: 42
+      percent: 0.1
+    '2006':
+      count: 75
+      percent: 0.17
+    '2007':
+      count: 80
+      percent: 0.18
+    '2008':
+      count: 59
+      percent: 0.13
+    '2009':
+      count: 57
+      percent: 0.14
+    '2010':
+      count: 59
+      percent: 0.14
+    '2011':
+      count: 52
+      percent: 0.12000000000000001
+    '2012':
+      count: 52
+      percent: 0.12000000000000001
+    '2013':
+      count: 50
+      percent: 0.12000000000000001
+'37105':
+  name: Lee County
+  employment:
+    '2004':
+      count: 63
+      percent: 0.23
+    '2005':
+      count: 61
+      percent: 0.22
+    '2006':
+      count: 63
+      percent: 0.23
+    '2007':
+      count: 66
+      percent: 0.24000000000000002
+    '2008':
+      count: 64
+      percent: 0.24000000000000002
+    '2009':
+      count: 59
+      percent: 0.24000000000000002
+    '2010':
+      count: 56
+      percent: 0.23
+    '2011':
+      count: 55
+      percent: 0.22
+    '2012':
+      count: 57
+      percent: 0.23
+    '2013':
+      count: 59
+      percent: 0.24000000000000002
+'37109':
+  name: Lincoln County
+  employment:
+    '2007':
+      count: 49
+      percent: 0.22
+'37111':
+  name: McDowell County
+  employment:
+    '2004':
+      count: 33
+      percent: 0.19
+    '2005':
+      count: 38
+      percent: 0.23
+    '2006':
+      count: 43
+      percent: 0.26
+    '2007':
+      count: 81
+      percent: 0.49
+    '2008':
+      count: 78
+      percent: 0.49
+    '2009':
+      count: 56
+      percent: 0.39000000000000007
+    '2010':
+      count: 60
+      percent: 0.42000000000000004
+    '2011':
+      count: 63
+      percent: 0.43000000000000005
+    '2012':
+      count: 68
+      percent: 0.46
+    '2013':
+      count: 72
+      percent: 0.48000000000000004
+'37113':
+  name: Macon County
+  employment:
+    '2008':
+      count: 3
+      percent: 0.03
+    '2009':
+      count: 10
+      percent: 0.09
+    '2011':
+      count: 10
+      percent: 0.1
+    '2012':
+      count: 10
+      percent: 0.09
+    '2013':
+      count: 12
+      percent: 0.11
+'37119':
+  name: Mecklenburg County
+  employment:
+    '2006':
+      count: 198
+      percent: 0.04
+    '2007':
+      count: 228
+      percent: 0.04
+    '2008':
+      count: 226
+      percent: 0.04
+    '2009':
+      count: 224
+      percent: 0.04
+    '2010':
+      count: 173
+      percent: 0.03
+    '2011':
+      count: 175
+      percent: 0.03
+    '2012':
+      count: 198
+      percent: 0.03
+    '2013':
+      count: 205
+      percent: 0.03
+'37123':
+  name: Montgomery County
+  employment:
+    '2008':
+      count: 18
+      percent: 0.19
+'37125':
+  name: Moore County
+  employment:
+    '2013':
+      count: 42
+      percent: 0.13
+'37135':
+  name: Orange County
+  employment:
+    '2006':
+      count: 38
+      percent: 0.06
+    '2007':
+      count: 49
+      percent: 0.08
+    '2008':
+      count: 42
+      percent: 0.06999999999999998
+    '2009':
+      count: 38
+      percent: 0.06
+    '2010':
+      count: 37
+      percent: 0.06
+    '2011':
+      count: 41
+      percent: 0.06999999999999998
+    '2012':
+      count: 34
+      percent: 0.06
+'37141':
+  name: Pender County
+  employment:
+    '2008':
+      count: 38
+      percent: 0.36000000000000004
+    '2009':
+      count: 39
+      percent: 0.4
+    '2010':
+      count: 38
+      percent: 0.39000000000000007
+    '2011':
+      count: 52
+      percent: 0.5499999999999999
+    '2013':
+      count: 20
+      percent: 0.2
+'37151':
+  name: Randolph County
+  employment:
+    '2004':
+      count: 36
+      percent: 0.08
+    '2005':
+      count: 37
+      percent: 0.08
+    '2012':
+      count: 38
+      percent: 0.09
+    '2013':
+      count: 33
+      percent: 0.08
+'37153':
+  name: Richmond County
+  employment:
+    '2004':
+      count: 122
+      percent: 0.8099999999999999
+    '2005':
+      count: 126
+      percent: 0.8400000000000001
+    '2006':
+      count: 135
+      percent: 0.8999999999999999
+    '2007':
+      count: 143
+      percent: 0.9400000000000002
+    '2008':
+      count: 140
+      percent: 0.9400000000000002
+    '2009':
+      count: 123
+      percent: 0.88
+    '2010':
+      count: 126
+      percent: 0.89
+    '2011':
+      count: 122
+      percent: 0.8999999999999999
+    '2012':
+      count: 109
+      percent: 0.8099999999999999
+    '2013':
+      count: 117
+      percent: 0.88
+'37159':
+  name: Rowan County
+  employment:
+    '2004':
+      count: 288
+      percent: 0.6100000000000001
+    '2005':
+      count: 236
+      percent: 0.49
+    '2006':
+      count: 247
+      percent: 0.51
+    '2007':
+      count: 288
+      percent: 0.6000000000000001
+    '2008':
+      count: 267
+      percent: 0.5499999999999999
+    '2009':
+      count: 223
+      percent: 0.49
+    '2010':
+      count: 215
+      percent: 0.49
+    '2011':
+      count: 204
+      percent: 0.46
+    '2012':
+      count: 180
+      percent: 0.4
+    '2013':
+      count: 207
+      percent: 0.4700000000000001
+'37161':
+  name: Rutherford County
+  employment:
+    '2004':
+      count: 64
+      percent: 0.29000000000000004
+    '2005':
+      count: 62
+      percent: 0.28
+'37171':
+  name: Surry County
+  employment:
+    '2004':
+      count: 44
+      percent: 0.14
+    '2011':
+      count: 57
+      percent: 0.21000000000000002
+    '2012':
+      count: 55
+      percent: 0.2
+    '2013':
+      count: 48
+      percent: 0.18
+'37183':
+  name: Wake County
+  employment:
+    '2004':
+      count: 241
+      percent: 0.06
+    '2005':
+      count: 216
+      percent: 0.05
+    '2006':
+      count: 553
+      percent: 0.13
+    '2007':
+      count: 596
+      percent: 0.13
+    '2008':
+      count: 571
+      percent: 0.13
+    '2009':
+      count: 548
+      percent: 0.13
+    '2010':
+      count: 262
+      percent: 0.06
+    '2011':
+      count: 258
+      percent: 0.06
+    '2012':
+      count: 240
+      percent: 0.05
+    '2013':
+      count: 245
+      percent: 0.05
+'37189':
+  name: Watauga County
+  employment:
+    '2004':
+      count: 36
+      percent: 0.17
+    '2005':
+      count: 45
+      percent: 0.21000000000000002
+    '2006':
+      count: 42
+      percent: 0.19
+    '2007':
+      count: 36
+      percent: 0.16
+    '2008':
+      count: 36
+      percent: 0.17
+    '2009':
+      count: 33
+      percent: 0.16
+    '2010':
+      count: 39
+      percent: 0.18
+    '2011':
+      count: 38
+      percent: 0.18
+    '2012':
+      count: 40
+      percent: 0.19
+'37195':
+  name: Wilson County
+  employment:
+    '2012':
+      count: 33
+      percent: 0.09

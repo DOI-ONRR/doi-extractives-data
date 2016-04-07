@@ -1,0 +1,306 @@
+'19005':
+  name: Allamakee County
+  employment:
+    '2011':
+      count: 10
+      percent: 0.2
+    '2013':
+      count: 12
+      percent: 0.23
+'19013':
+  name: Black Hawk County
+  employment:
+    '2005':
+      count: 65
+      percent: 0.09
+    '2006':
+      count: 57
+      percent: 0.08
+    '2007':
+      count: 67
+      percent: 0.09
+    '2008':
+      count: 59
+      percent: 0.08
+    '2009':
+      count: 59
+      percent: 0.08
+    '2010':
+      count: 56
+      percent: 0.08
+'19033':
+  name: Cerro Gordo County
+  employment:
+    '2007':
+      count: 23
+      percent: 0.09
+    '2008':
+      count: 25
+      percent: 0.1
+'19049':
+  name: Dallas County
+  employment:
+    '2006':
+      count: 19
+      percent: 0.06999999999999998
+'19057':
+  name: Des Moines County
+  employment:
+    '2010':
+      count: 50
+      percent: 0.24000000000000002
+'19065':
+  name: Fayette County
+  employment:
+    '2005':
+      count: 12
+      percent: 0.16
+    '2006':
+      count: 17
+      percent: 0.23
+    '2007':
+      count: 10
+      percent: 0.14
+    '2008':
+      count: 9
+      percent: 0.12000000000000001
+'19083':
+  name: Hardin County
+  employment:
+    '2007':
+      count: 136
+      percent: 1.82
+    '2008':
+      count: 152
+      percent: 1.9800000000000002
+    '2009':
+      count: 153
+      percent: 2.04
+    '2010':
+      count: 147
+      percent: 2.04
+'19111':
+  name: Lee County
+  employment:
+    '2009':
+      count: 8
+      percent: 0.05
+    '2010':
+      count: 4
+      percent: 0.03
+    '2013':
+      count: 8
+      percent: 0.05
+'19113':
+  name: Linn County
+  employment:
+    '2004':
+      count: 112
+      percent: 0.1
+    '2005':
+      count: 111
+      percent: 0.09
+    '2006':
+      count: 110
+      percent: 0.09
+    '2007':
+      count: 114
+      percent: 0.09
+    '2008':
+      count: 114
+      percent: 0.09
+    '2009':
+      count: 107
+      percent: 0.09
+    '2010':
+      count: 95
+      percent: 0.08
+    '2011':
+      count: 85
+      percent: 0.06999999999999998
+    '2012':
+      count: 86
+      percent: 0.06999999999999998
+    '2013':
+      count: 87
+      percent: 0.06999999999999998
+'19121':
+  name: Madison County
+  employment:
+    '2010':
+      count: 47
+      percent: 1.28
+    '2011':
+      count: 55
+      percent: 1.52
+    '2012':
+      count: 66
+      percent: 1.7999999999999998
+    '2013':
+      count: 50
+      percent: 1.41
+'19139':
+  name: Muscatine County
+  employment:
+    '2004':
+      count: 58
+      percent: 0.26
+    '2005':
+      count: 58
+      percent: 0.25
+    '2006':
+      count: 57
+      percent: 0.24000000000000002
+    '2007':
+      count: 59
+      percent: 0.25
+    '2008':
+      count: 58
+      percent: 0.25
+    '2009':
+      count: 56
+      percent: 0.26
+    '2010':
+      count: 53
+      percent: 0.25
+    '2011':
+      count: 47
+      percent: 0.22
+    '2012':
+      count: 47
+      percent: 0.22
+    '2013':
+      count: 45
+      percent: 0.2
+'19153':
+  name: Polk County
+  employment:
+    '2004':
+      count: 164
+      percent: 0.06
+    '2005':
+      count: 160
+      percent: 0.06
+'19155':
+  name: Pottawattamie County
+  employment:
+    '2012':
+      count: 50
+      percent: 0.13
+    '2013':
+      count: 61
+      percent: 0.16
+'19163':
+  name: Scott County
+  employment:
+    '2004':
+      count: 16
+      percent: 0.02
+    '2005':
+      count: 15
+      percent: 0.02
+    '2007':
+      count: 14
+      percent: 0.02
+    '2008':
+      count: 14
+      percent: 0.02
+    '2009':
+      count: 14
+      percent: 0.02
+    '2010':
+      count: 15
+      percent: 0.02
+    '2011':
+      count: 15
+      percent: 0.02
+    '2012':
+      count: 16
+      percent: 0.02
+    '2013':
+      count: 17
+      percent: 0.02
+'19167':
+  name: Sioux County
+  employment:
+    '2004':
+      count: 44
+      percent: 0.26
+    '2005':
+      count: 42
+      percent: 0.23
+    '2006':
+      count: 46
+      percent: 0.25
+    '2007':
+      count: 47
+      percent: 0.25
+    '2008':
+      count: 46
+      percent: 0.24000000000000002
+    '2009':
+      count: 42
+      percent: 0.23
+    '2010':
+      count: 40
+      percent: 0.21000000000000002
+    '2011':
+      count: 42
+      percent: 0.22
+    '2012':
+      count: 45
+      percent: 0.23
+    '2013':
+      count: 44
+      percent: 0.22
+'19179':
+  name: Wapello County
+  employment:
+    '2012':
+      count: 9
+      percent: 0.06
+'19183':
+  name: Washington County
+  employment:
+    '2012':
+      count: 19
+      percent: 0.23
+'19187':
+  name: Webster County
+  employment:
+    '2011':
+      count: 50
+      percent: 0.28
+    '2012':
+      count: 57
+      percent: 0.32000000000000006
+    '2013':
+      count: 57
+      percent: 0.31000000000000005
+'19191':
+  name: Winneshiek County
+  employment:
+    '2004':
+      count: 125
+      percent: 1.2
+    '2005':
+      count: 133
+      percent: 1.27
+    '2006':
+      count: 131
+      percent: 1.24
+    '2007':
+      count: 134
+      percent: 1.28
+    '2008':
+      count: 144
+      percent: 1.3900000000000001
+'19195':
+  name: Worth County
+  employment:
+    '2012':
+      count: 25
+      percent: 1.06
+    '2013':
+      count: 24
+      percent: 1.03

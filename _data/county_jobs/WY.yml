@@ -1,0 +1,651 @@
+'56001':
+  name: Albany County
+  employment:
+    '2004':
+      count: 25
+      percent: 0.15000000000000002
+    '2005':
+      count: 15
+      percent: 0.1
+    '2007':
+      count: 17
+      percent: 0.11
+    '2008':
+      count: 22
+      percent: 0.14
+    '2009':
+      count: 21
+      percent: 0.13
+    '2010':
+      count: 25
+      percent: 0.16
+    '2011':
+      count: 27
+      percent: 0.18
+    '2012':
+      count: 31
+      percent: 0.2
+    '2013':
+      count: 39
+      percent: 0.25
+'56003':
+  name: Big Horn County
+  employment:
+    '2004':
+      count: 863
+      percent: 19.779999999999998
+    '2005':
+      count: 979
+      percent: 21.97
+    '2006':
+      count: 1117
+      percent: 24.01
+    '2007':
+      count: 669
+      percent: 15.76
+    '2008':
+      count: 727
+      percent: 16.939999999999994
+    '2009':
+      count: 512
+      percent: 12.540000000000001
+    '2010':
+      count: 580
+      percent: 13.96
+    '2011':
+      count: 638
+      percent: 14.92
+    '2012':
+      count: 633
+      percent: 14.900000000000002
+    '2013':
+      count: 625
+      percent: 14.67
+'56005':
+  name: Campbell County
+  employment:
+    '2004':
+      count: 6233
+      percent: 29.17
+    '2005':
+      count: 6765
+      percent: 29.24
+    '2006':
+      count: 7673
+      percent: 29.959999999999994
+    '2007':
+      count: 7726
+      percent: 28.34
+    '2008':
+      count: 8254
+      percent: 28.349999999999994
+    '2009':
+      count: 7979
+      percent: 27.650000000000006
+    '2010':
+      count: 7885
+      percent: 28.299999999999994
+    '2011':
+      count: 8248
+      percent: 30.04
+    '2012':
+      count: 8275
+      percent: 29.830000000000005
+    '2013':
+      count: 7862
+      percent: 28.759999999999998
+'56007':
+  name: Carbon County
+  employment:
+    '2004':
+      count: 174
+      percent: 2.75
+    '2006':
+      count: 221
+      percent: 3.11
+    '2007':
+      count: 250
+      percent: 3.25
+    '2008':
+      count: 455
+      percent: 5.91
+    '2009':
+      count: 290
+      percent: 4.2299999999999995
+    '2010':
+      count: 281
+      percent: 4.17
+    '2011':
+      count: 260
+      percent: 3.9099999999999997
+    '2012':
+      count: 251
+      percent: 3.65
+    '2013':
+      count: 229
+      percent: 3.2
+'56009':
+  name: Converse County
+  employment:
+    '2004':
+      count: 609
+      percent: 13.470000000000002
+    '2005':
+      count: 692
+      percent: 14.66
+    '2006':
+      count: 749
+      percent: 15.65
+    '2007':
+      count: 796
+      percent: 16.009999999999994
+    '2008':
+      count: 882
+      percent: 16.3
+    '2009':
+      count: 896
+      percent: 16.689999999999994
+    '2010':
+      count: 1036
+      percent: 19.05
+    '2011':
+      count: 1166
+      percent: 21.099999999999994
+    '2012':
+      count: 1277
+      percent: 21.64
+    '2013':
+      count: 1331
+      percent: 21.790000000000003
+'56011':
+  name: Crook County
+  employment:
+    '2004':
+      count: 202
+      percent: 9.790000000000001
+    '2005':
+      count: 254
+      percent: 11.900000000000002
+    '2006':
+      count: 289
+      percent: 12.63
+    '2007':
+      count: 307
+      percent: 13.14
+    '2008':
+      count: 304
+      percent: 12.950000000000003
+    '2009':
+      count: 264
+      percent: 11.39
+    '2010':
+      count: 262
+      percent: 11.22
+    '2011':
+      count: 280
+      percent: 12.09
+    '2012':
+      count: 313
+      percent: 13.34
+    '2013':
+      count: 307
+      percent: 13.34
+'56013':
+  name: Fremont County
+  employment:
+    '2004':
+      count: 420
+      percent: 2.86
+    '2005':
+      count: 497
+      percent: 3.29
+    '2006':
+      count: 632
+      percent: 4.09
+    '2007':
+      count: 761
+      percent: 4.72
+    '2008':
+      count: 822
+      percent: 4.94
+    '2009':
+      count: 721
+      percent: 4.3999999999999995
+    '2010':
+      count: 748
+      percent: 4.55
+    '2011':
+      count: 882
+      percent: 5.3
+    '2012':
+      count: 959
+      percent: 5.71
+    '2013':
+      count: 987
+      percent: 5.8999999999999995
+'56017':
+  name: Hot Springs County
+  employment:
+    '2004':
+      count: 110
+      percent: 5.88
+    '2005':
+      count: 133
+      percent: 7.090000000000001
+    '2006':
+      count: 143
+      percent: 7.37
+    '2007':
+      count: 168
+      percent: 8.34
+'56019':
+  name: Johnson County
+  employment:
+    '2004':
+      count: 179
+      percent: 5.88
+    '2005':
+      count: 210
+      percent: 6.59
+    '2006':
+      count: 279
+      percent: 8.34
+    '2007':
+      count: 321
+      percent: 9.34
+    '2008':
+      count: 360
+      percent: 10.07
+    '2009':
+      count: 231
+      percent: 6.87
+    '2010':
+      count: 170
+      percent: 5.2
+    '2011':
+      count: 187
+      percent: 5.74
+    '2012':
+      count: 224
+      percent: 6.75
+    '2013':
+      count: 219
+      percent: 6.49
+'56021':
+  name: Laramie County
+  employment:
+    '2004':
+      count: 73
+      percent: 0.18
+    '2005':
+      count: 77
+      percent: 0.19
+    '2006':
+      count: 87
+      percent: 0.21000000000000002
+    '2007':
+      count: 87
+      percent: 0.2
+    '2008':
+      count: 105
+      percent: 0.24000000000000002
+    '2009':
+      count: 97
+      percent: 0.23
+    '2010':
+      count: 56
+      percent: 0.13
+    '2011':
+      count: 142
+      percent: 0.33000000000000007
+    '2012':
+      count: 212
+      percent: 0.48000000000000004
+    '2013':
+      count: 245
+      percent: 0.54
+'56023':
+  name: Lincoln County
+  employment:
+    '2004':
+      count: 607
+      percent: 10.239999999999998
+    '2005':
+      count: 620
+      percent: 10.57
+    '2006':
+      count: 672
+      percent: 10.6
+    '2007':
+      count: 679
+      percent: 9.4
+    '2008':
+      count: 758
+      percent: 11.360000000000003
+    '2009':
+      count: 707
+      percent: 11.29
+    '2010':
+      count: 698
+      percent: 11.600000000000001
+    '2011':
+      count: 699
+      percent: 11.48
+    '2012':
+      count: 623
+      percent: 10.96
+    '2013':
+      count: 646
+      percent: 11.44
+'56025':
+  name: Natrona County
+  employment:
+    '2004':
+      count: 3006
+      percent: 8.52
+    '2005':
+      count: 3554
+      percent: 9.739999999999998
+    '2006':
+      count: 4170
+      percent: 10.89
+    '2007':
+      count: 3653
+      percent: 9.32
+    '2008':
+      count: 3732
+      percent: 9.29
+    '2009':
+      count: 3012
+      percent: 7.88
+    '2010':
+      count: 3168
+      percent: 8.350000000000001
+    '2011':
+      count: 3779
+      percent: 9.63
+    '2012':
+      count: 3963
+      percent: 9.68
+    '2013':
+      count: 4075
+      percent: 9.76
+'56027':
+  name: Niobrara County
+  employment:
+    '2009':
+      count: 18
+      percent: 2.0500000000000003
+    '2010':
+      count: 17
+      percent: 1.95
+    '2011':
+      count: 19
+      percent: 2.12
+    '2012':
+      count: 28
+      percent: 3.02
+    '2013':
+      count: 60
+      percent: 6.319999999999999
+'56029':
+  name: Park County
+  employment:
+    '2004':
+      count: 385
+      percent: 3.03
+    '2005':
+      count: 408
+      percent: 3.17
+    '2006':
+      count: 444
+      percent: 3.3899999999999997
+    '2007':
+      count: 505
+      percent: 3.7800000000000002
+    '2008':
+      count: 538
+      percent: 3.9299999999999997
+    '2009':
+      count: 519
+      percent: 3.8699999999999997
+    '2010':
+      count: 546
+      percent: 4.07
+    '2011':
+      count: 634
+      percent: 4.6499999999999995
+    '2012':
+      count: 682
+      percent: 4.88
+    '2013':
+      count: 663
+      percent: 4.84
+'56031':
+  name: Platte County
+  employment:
+    '2008':
+      count: 52
+      percent: 1.55
+    '2011':
+      count: 70
+      percent: 1.9900000000000002
+    '2012':
+      count: 75
+      percent: 2.19
+'56033':
+  name: Sheridan County
+  employment:
+    '2004':
+      count: 211
+      percent: 1.7800000000000002
+    '2005':
+      count: 282
+      percent: 2.32
+    '2006':
+      count: 474
+      percent: 3.6900000000000004
+    '2007':
+      count: 530
+      percent: 3.9600000000000004
+    '2008':
+      count: 542
+      percent: 3.94
+    '2009':
+      count: 349
+      percent: 2.64
+    '2010':
+      count: 319
+      percent: 2.4699999999999998
+    '2011':
+      count: 330
+      percent: 2.58
+    '2012':
+      count: 295
+      percent: 2.3
+    '2013':
+      count: 236
+      percent: 1.83
+'56035':
+  name: Sublette County
+  employment:
+    '2004':
+      count: 583
+      percent: 18.75
+    '2005':
+      count: 680
+      percent: 18.89
+    '2006':
+      count: 946
+      percent: 22.18
+    '2007':
+      count: 1570
+      percent: 30.25
+    '2008':
+      count: 1769
+      percent: 31.759999999999994
+    '2009':
+      count: 1703
+      percent: 30.830000000000005
+    '2010':
+      count: 1597
+      percent: 28.759999999999998
+    '2011':
+      count: 1867
+      percent: 31.7
+    '2012':
+      count: 1607
+      percent: 29.09
+    '2013':
+      count: 1249
+      percent: 24.779999999999994
+'56037':
+  name: Sweetwater County
+  employment:
+    '2005':
+      count: 4803
+      percent: 21.979999999999997
+    '2006':
+      count: 5542
+      percent: 23.200000000000003
+    '2007':
+      count: 5583
+      percent: 22.55
+    '2008':
+      count: 6028
+      percent: 23.54
+    '2009':
+      count: 5446
+      percent: 22.770000000000003
+    '2010':
+      count: 5313
+      percent: 22.45
+    '2011':
+      count: 5882
+      percent: 23.93
+    '2012':
+      count: 6116
+      percent: 24.58
+    '2013':
+      count: 5800
+      percent: 23.549999999999994
+'56039':
+  name: Teton County
+  employment:
+    '2005':
+      count: 4
+      percent: 0.02
+    '2006':
+      count: 19
+      percent: 0.11
+    '2008':
+      count: 8
+      percent: 0.04
+    '2009':
+      count: 7
+      percent: 0.04
+    '2010':
+      count: 3
+      percent: 0.02
+    '2013':
+      count: 4
+      percent: 0.02
+'56041':
+  name: Uinta County
+  employment:
+    '2004':
+      count: 593
+      percent: 6.87
+    '2005':
+      count: 687
+      percent: 7.75
+    '2006':
+      count: 803
+      percent: 8.560000000000002
+    '2007':
+      count: 924
+      percent: 9.51
+    '2008':
+      count: 992
+      percent: 9.729999999999999
+    '2009':
+      count: 861
+      percent: 8.99
+    '2010':
+      count: 750
+      percent: 8.02
+    '2011':
+      count: 580
+      percent: 6.460000000000001
+    '2012':
+      count: 612
+      percent: 6.710000000000001
+    '2013':
+      count: 582
+      percent: 6.58
+'56043':
+  name: Washakie County
+  employment:
+    '2004':
+      count: 213
+      percent: 5.76
+    '2005':
+      count: 223
+      percent: 5.83
+    '2006':
+      count: 232
+      percent: 6.01
+    '2007':
+      count: 238
+      percent: 6
+    '2008':
+      count: 206
+      percent: 5.050000000000001
+    '2009':
+      count: 171
+      percent: 4.3
+    '2010':
+      count: 146
+      percent: 3.6999999999999997
+    '2011':
+      count: 164
+      percent: 4.14
+    '2012':
+      count: 183
+      percent: 4.6899999999999995
+    '2013':
+      count: 172
+      percent: 4.51
+'56045':
+  name: Weston County
+  employment:
+    '2004':
+      count: 178
+      percent: 8.229999999999999
+    '2005':
+      count: 206
+      percent: 9.3
+    '2006':
+      count: 187
+      percent: 8.639999999999999
+    '2007':
+      count: 259
+      percent: 11.29
+    '2008':
+      count: 240
+      percent: 10.25
+    '2009':
+      count: 146
+      percent: 6.430000000000001
+    '2010':
+      count: 140
+      percent: 6.08
+    '2011':
+      count: 136
+      percent: 6.02
+    '2012':
+      count: 138
+      percent: 6.02
+    '2013':
+      count: 139
+      percent: 6.02

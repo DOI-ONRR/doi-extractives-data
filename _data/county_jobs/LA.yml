@@ -1,0 +1,1521 @@
+'22001':
+  name: Acadia Parish
+  employment:
+    '2004':
+      count: 579
+      percent: 4.14
+    '2005':
+      count: 484
+      percent: 3.3000000000000003
+    '2006':
+      count: 519
+      percent: 3.4099999999999997
+    '2007':
+      count: 604
+      percent: 3.8600000000000003
+    '2008':
+      count: 502
+      percent: 3.1199999999999997
+    '2009':
+      count: 512
+      percent: 3.38
+    '2010':
+      count: 429
+      percent: 2.86
+    '2011':
+      count: 398
+      percent: 2.67
+    '2012':
+      count: 319
+      percent: 2.1399999999999997
+    '2013':
+      count: 348
+      percent: 2.36
+'22005':
+  name: Ascension Parish
+  employment:
+    '2004':
+      count: 240
+      percent: 0.8099999999999999
+    '2005':
+      count: 279
+      percent: 0.8999999999999999
+    '2006':
+      count: 325
+      percent: 0.98
+    '2007':
+      count: 322
+      percent: 0.9199999999999999
+    '2008':
+      count: 288
+      percent: 0.8200000000000002
+    '2009':
+      count: 168
+      percent: 0.49
+    '2010':
+      count: 241
+      percent: 0.7000000000000002
+    '2011':
+      count: 198
+      percent: 0.54
+    '2012':
+      count: 157
+      percent: 0.43000000000000005
+    '2013':
+      count: 172
+      percent: 0.43000000000000005
+'22007':
+  name: Assumption Parish
+  employment:
+    '2004':
+      count: 31
+      percent: 0.5700000000000002
+    '2005':
+      count: 32
+      percent: 0.7200000000000001
+    '2006':
+      count: 31
+      percent: 0.6600000000000001
+    '2007':
+      count: 34
+      percent: 0.68
+    '2008':
+      count: 34
+      percent: 0.6900000000000001
+    '2009':
+      count: 31
+      percent: 0.6500000000000001
+    '2010':
+      count: 30
+      percent: 0.68
+    '2011':
+      count: 32
+      percent: 0.7300000000000001
+    '2012':
+      count: 49
+      percent: 1.08
+    '2013':
+      count: 58
+      percent: 1.29
+'22009':
+  name: Avoyelles Parish
+  employment:
+    '2004':
+      count: 6
+      percent: 0.06
+    '2005':
+      count: 16
+      percent: 0.15000000000000002
+    '2006':
+      count: 7
+      percent: 0.06
+    '2007':
+      count: 7
+      percent: 0.06
+    '2010':
+      count: 157
+      percent: 1.41
+    '2011':
+      count: 333
+      percent: 2.9699999999999998
+    '2013':
+      count: 254
+      percent: 2.3299999999999996
+'22011':
+  name: Beauregard Parish
+  employment:
+    '2004':
+      count: 174
+      percent: 2.07
+    '2005':
+      count: 63
+      percent: 0.76
+    '2006':
+      count: 43
+      percent: 0.51
+    '2007':
+      count: 36
+      percent: 0.42000000000000004
+    '2008':
+      count: 42
+      percent: 0.48000000000000004
+    '2009':
+      count: 34
+      percent: 0.4
+    '2010':
+      count: 34
+      percent: 0.4100000000000001
+    '2011':
+      count: 56
+      percent: 0.7000000000000002
+    '2012':
+      count: 35
+      percent: 0.42000000000000004
+    '2013':
+      count: 13
+      percent: 0.15000000000000002
+'22013':
+  name: Bienville Parish
+  employment:
+    '2004':
+      count: 58
+      percent: 1.43
+    '2005':
+      count: 84
+      percent: 1.97
+    '2006':
+      count: 129
+      percent: 2.9899999999999998
+    '2007':
+      count: 129
+      percent: 2.8000000000000003
+    '2008':
+      count: 196
+      percent: 4.95
+    '2009':
+      count: 143
+      percent: 3.56
+    '2010':
+      count: 142
+      percent: 3.4000000000000004
+    '2011':
+      count: 108
+      percent: 2.58
+    '2012':
+      count: 132
+      percent: 2.9699999999999998
+    '2013':
+      count: 158
+      percent: 3.479999999999999
+'22015':
+  name: Bossier Parish
+  employment:
+    '2004':
+      count: 621
+      percent: 1.6700000000000002
+    '2005':
+      count: 815
+      percent: 2.07
+    '2006':
+      count: 1083
+      percent: 2.6599999999999997
+    '2007':
+      count: 1359
+      percent: 3.2300000000000004
+    '2008':
+      count: 1626
+      percent: 3.73
+    '2009':
+      count: 1736
+      percent: 4.08
+    '2010':
+      count: 2201
+      percent: 5.109999999999999
+    '2011':
+      count: 2983
+      percent: 6.7299999999999995
+    '2012':
+      count: 2341
+      percent: 5.37
+    '2013':
+      count: 1569
+      percent: 3.61
+'22017':
+  name: Caddo Parish
+  employment:
+    '2004':
+      count: 2068
+      percent: 1.7200000000000002
+    '2005':
+      count: 2203
+      percent: 1.7999999999999998
+    '2006':
+      count: 2044
+      percent: 1.6500000000000001
+    '2007':
+      count: 1880
+      percent: 1.51
+    '2008':
+      count: 2135
+      percent: 1.7200000000000002
+    '2009':
+      count: 2283
+      percent: 1.8900000000000001
+    '2010':
+      count: 2789
+      percent: 2.32
+    '2011':
+      count: 3160
+      percent: 2.63
+    '2012':
+      count: 2573
+      percent: 2.16
+    '2013':
+      count: 2294
+      percent: 1.9800000000000002
+'22019':
+  name: Calcasieu Parish
+  employment:
+    '2004':
+      count: 1055
+      percent: 1.29
+    '2005':
+      count: 1099
+      percent: 1.31
+    '2006':
+      count: 1039
+      percent: 1.23
+    '2007':
+      count: 1271
+      percent: 1.47
+    '2008':
+      count: 1250
+      percent: 1.4200000000000002
+    '2009':
+      count: 1084
+      percent: 1.28
+    '2010':
+      count: 903
+      percent: 1.0999999999999996
+    '2011':
+      count: 998
+      percent: 1.21
+    '2012':
+      count: 619
+      percent: 0.7300000000000001
+    '2013':
+      count: 529
+      percent: 0.6200000000000001
+'22021':
+  name: Caldwell Parish
+  employment:
+    '2004':
+      count: 24
+      percent: 0.9900000000000001
+    '2005':
+      count: 23
+      percent: 0.9299999999999999
+    '2006':
+      count: 20
+      percent: 0.79
+    '2007':
+      count: 34
+      percent: 1.28
+    '2008':
+      count: 24
+      percent: 0.8999999999999999
+    '2011':
+      count: 20
+      percent: 0.8
+    '2012':
+      count: 22
+      percent: 0.91
+    '2013':
+      count: 24
+      percent: 1
+'22023':
+  name: Cameron Parish
+  employment:
+    '2004':
+      count: 262
+      percent: 8.98
+    '2005':
+      count: 169
+      percent: 6.17
+    '2006':
+      count: 166
+      percent: 6.7
+    '2007':
+      count: 200
+      percent: 6.94
+    '2008':
+      count: 193
+      percent: 6.02
+    '2009':
+      count: 166
+      percent: 5.84
+    '2010':
+      count: 187
+      percent: 6.75
+    '2011':
+      count: 241
+      percent: 8.99
+    '2012':
+      count: 363
+      percent: 13.370000000000003
+    '2013':
+      count: 257
+      percent: 9.77
+'22025':
+  name: Catahoula Parish
+  employment:
+    '2005':
+      count: 36
+      percent: 1.49
+    '2006':
+      count: 41
+      percent: 1.7100000000000002
+    '2007':
+      count: 55
+      percent: 2.27
+    '2008':
+      count: 66
+      percent: 2.75
+    '2009':
+      count: 72
+      percent: 2.96
+    '2010':
+      count: 92
+      percent: 3.71
+    '2011':
+      count: 108
+      percent: 4.470000000000001
+    '2012':
+      count: 30
+      percent: 1.28
+    '2013':
+      count: 59
+      percent: 2.51
+'22027':
+  name: Claiborne Parish
+  employment:
+    '2004':
+      count: 249
+      percent: 5.619999999999999
+    '2005':
+      count: 288
+      percent: 6.6000000000000005
+    '2006':
+      count: 383
+      percent: 8.92
+    '2007':
+      count: 460
+      percent: 11.05
+    '2008':
+      count: 401
+      percent: 9.92
+    '2009':
+      count: 347
+      percent: 8.690000000000001
+    '2010':
+      count: 359
+      percent: 9.1
+    '2011':
+      count: 508
+      percent: 12.590000000000002
+    '2012':
+      count: 765
+      percent: 18.04
+    '2013':
+      count: 404
+      percent: 10.56
+'22029':
+  name: Concordia Parish
+  employment:
+    '2004':
+      count: 121
+      percent: 2.29
+    '2005':
+      count: 147
+      percent: 2.7199999999999998
+    '2006':
+      count: 182
+      percent: 3.4000000000000004
+    '2007':
+      count: 243
+      percent: 4.31
+    '2008':
+      count: 345
+      percent: 5.99
+    '2009':
+      count: 224
+      percent: 3.9800000000000004
+    '2010':
+      count: 227
+      percent: 3.9899999999999998
+    '2011':
+      count: 256
+      percent: 4.390000000000001
+    '2012':
+      count: 258
+      percent: 4.29
+    '2013':
+      count: 240
+      percent: 3.9699999999999998
+'22031':
+  name: De Soto Parish
+  employment:
+    '2004':
+      count: 457
+      percent: 7.41
+    '2005':
+      count: 465
+      percent: 7.51
+    '2006':
+      count: 440
+      percent: 7.4300000000000015
+    '2007':
+      count: 447
+      percent: 7.28
+    '2008':
+      count: 525
+      percent: 8.48
+    '2009':
+      count: 553
+      percent: 9.030000000000001
+    '2010':
+      count: 641
+      percent: 10
+    '2011':
+      count: 695
+      percent: 9.14
+    '2012':
+      count: 765
+      percent: 10.139999999999999
+    '2013':
+      count: 852
+      percent: 11.629999999999999
+'22033':
+  name: East Baton Rouge Parish
+  employment:
+    '2004':
+      count: 869
+      percent: 0.3500000000000001
+    '2005':
+      count: 703
+      percent: 0.28
+    '2006':
+      count: 540
+      percent: 0.21000000000000002
+    '2007':
+      count: 898
+      percent: 0.3400000000000001
+    '2008':
+      count: 764
+      percent: 0.29000000000000004
+    '2009':
+      count: 664
+      percent: 0.26
+    '2010':
+      count: 869
+      percent: 0.3400000000000001
+    '2011':
+      count: 792
+      percent: 0.31000000000000005
+    '2012':
+      count: 668
+      percent: 0.26
+    '2013':
+      count: 511
+      percent: 0.19
+'22037':
+  name: East Feliciana Parish
+  employment:
+    '2004':
+      count: 15
+      percent: 0.29000000000000004
+    '2012':
+      count: 26
+      percent: 0.52
+    '2013':
+      count: 29
+      percent: 0.6200000000000001
+'22039':
+  name: Evangeline Parish
+  employment:
+    '2004':
+      count: 27
+      percent: 0.3500000000000001
+    '2005':
+      count: 23
+      percent: 0.29000000000000004
+    '2006':
+      count: 19
+      percent: 0.24000000000000002
+    '2007':
+      count: 12
+      percent: 0.15000000000000002
+    '2008':
+      count: 14
+      percent: 0.17
+    '2009':
+      count: 9
+      percent: 0.11
+    '2010':
+      count: 7
+      percent: 0.09
+    '2011':
+      count: 9
+      percent: 0.11
+    '2012':
+      count: 12
+      percent: 0.15000000000000002
+    '2013':
+      count: 22
+      percent: 0.27
+'22041':
+  name: Franklin Parish
+  employment:
+    '2012':
+      count: 5
+      percent: 0.1
+'22043':
+  name: Grant Parish
+  employment:
+    '2007':
+      count: 4
+      percent: 0.13
+    '2008':
+      count: 7
+      percent: 0.22
+    '2009':
+      count: 8
+      percent: 0.24000000000000002
+    '2010':
+      count: 6
+      percent: 0.18
+    '2012':
+      count: 4
+      percent: 0.12000000000000001
+'22045':
+  name: Iberia Parish
+  employment:
+    '2004':
+      count: 3179
+      percent: 10.3
+    '2005':
+      count: 3237
+      percent: 10.21
+    '2006':
+      count: 3353
+      percent: 9.84
+    '2007':
+      count: 3133
+      percent: 9.07
+    '2008':
+      count: 3934
+      percent: 11.32
+    '2009':
+      count: 3292
+      percent: 9.99
+    '2010':
+      count: 3420
+      percent: 10.92
+    '2011':
+      count: 3372
+      percent: 10.57
+    '2012':
+      count: 3791
+      percent: 11.470000000000002
+    '2013':
+      count: 4228
+      percent: 12.74
+'22047':
+  name: Iberville Parish
+  employment:
+    '2004':
+      count: 99
+      percent: 0.7100000000000002
+    '2005':
+      count: 104
+      percent: 0.7500000000000001
+    '2006':
+      count: 110
+      percent: 0.8
+    '2007':
+      count: 140
+      percent: 0.9900000000000001
+    '2008':
+      count: 144
+      percent: 0.97
+    '2009':
+      count: 135
+      percent: 0.98
+    '2010':
+      count: 326
+      percent: 2.3699999999999997
+    '2011':
+      count: 359
+      percent: 2.64
+    '2012':
+      count: 341
+      percent: 2.54
+    '2013':
+      count: 116
+      percent: 0.8500000000000002
+'22049':
+  name: Jackson Parish
+  employment:
+    '2013':
+      count: 40
+      percent: 1.0999999999999996
+'22051':
+  name: Jefferson Parish
+  employment:
+    '2004':
+      count: 2087
+      percent: 0.98
+    '2005':
+      count: 1981
+      percent: 1
+    '2006':
+      count: 1940
+      percent: 1.02
+    '2007':
+      count: 2129
+      percent: 1.0699999999999996
+    '2008':
+      count: 2257
+      percent: 1.1300000000000001
+    '2009':
+      count: 2057
+      percent: 1.06
+    '2010':
+      count: 1956
+      percent: 1.01
+    '2011':
+      count: 1879
+      percent: 0.98
+    '2012':
+      count: 1674
+      percent: 0.87
+    '2013':
+      count: 1369
+      percent: 0.7100000000000002
+'22053':
+  name: Jefferson Davis Parish
+  employment:
+    '2004':
+      count: 92
+      percent: 1.1500000000000001
+    '2005':
+      count: 202
+      percent: 2.42
+    '2006':
+      count: 257
+      percent: 3.03
+    '2007':
+      count: 260
+      percent: 2.9899999999999998
+    '2008':
+      count: 237
+      percent: 2.6599999999999997
+    '2009':
+      count: 229
+      percent: 2.63
+    '2010':
+      count: 273
+      percent: 3.2099999999999995
+    '2011':
+      count: 281
+      percent: 3.3000000000000003
+    '2012':
+      count: 329
+      percent: 3.8
+    '2013':
+      count: 354
+      percent: 4.02
+'22055':
+  name: Lafayette Parish
+  employment:
+    '2004':
+      count: 12488
+      percent: 10.530000000000001
+    '2005':
+      count: 13055
+      percent: 10.61
+    '2006':
+      count: 14795
+      percent: 11.4
+    '2007':
+      count: 15890
+      percent: 11.81
+    '2008':
+      count: 16650
+      percent: 12.25
+    '2009':
+      count: 14594
+      percent: 11.15
+    '2010':
+      count: 14524
+      percent: 11.1
+    '2011':
+      count: 15053
+      percent: 11.27
+    '2012':
+      count: 16393
+      percent: 11.92
+    '2013':
+      count: 15973
+      percent: 11.4
+'22057':
+  name: Lafourche Parish
+  employment:
+    '2004':
+      count: 754
+      percent: 2.29
+    '2005':
+      count: 666
+      percent: 2
+    '2006':
+      count: 695
+      percent: 2
+    '2007':
+      count: 899
+      percent: 2.4299999999999997
+    '2008':
+      count: 978
+      percent: 2.55
+    '2009':
+      count: 908
+      percent: 2.4299999999999997
+    '2010':
+      count: 1060
+      percent: 2.88
+    '2011':
+      count: 1076
+      percent: 2.9099999999999997
+    '2012':
+      count: 1285
+      percent: 3.4000000000000004
+    '2013':
+      count: 1563
+      percent: 3.94
+'22059':
+  name: LaSalle Parish
+  employment:
+    '2004':
+      count: 243
+      percent: 6.710000000000001
+    '2005':
+      count: 242
+      percent: 6.6000000000000005
+    '2006':
+      count: 364
+      percent: 9.3
+    '2007':
+      count: 343
+      percent: 8.51
+    '2008':
+      count: 374
+      percent: 9.14
+    '2009':
+      count: 397
+      percent: 9.850000000000001
+    '2010':
+      count: 409
+      percent: 9.31
+    '2011':
+      count: 331
+      percent: 7.049999999999999
+    '2012':
+      count: 360
+      percent: 7.55
+    '2013':
+      count: 396
+      percent: 7.98
+'22061':
+  name: Lincoln Parish
+  employment:
+    '2004':
+      count: 92
+      percent: 0.52
+    '2005':
+      count: 115
+      percent: 0.6500000000000001
+    '2006':
+      count: 158
+      percent: 0.88
+    '2007':
+      count: 121
+      percent: 0.6600000000000001
+    '2008':
+      count: 165
+      percent: 0.88
+    '2009':
+      count: 131
+      percent: 0.7200000000000001
+    '2010':
+      count: 96
+      percent: 0.53
+    '2011':
+      count: 119
+      percent: 0.6600000000000001
+    '2012':
+      count: 114
+      percent: 0.6500000000000001
+    '2013':
+      count: 206
+      percent: 1.1700000000000002
+'22063':
+  name: Livingston Parish
+  employment:
+    '2004':
+      count: 105
+      percent: 0.59
+    '2005':
+      count: 88
+      percent: 0.45
+    '2006':
+      count: 130
+      percent: 0.6400000000000001
+    '2007':
+      count: 133
+      percent: 0.6000000000000001
+    '2008':
+      count: 98
+      percent: 0.43000000000000005
+    '2009':
+      count: 99
+      percent: 0.45
+    '2010':
+      count: 121
+      percent: 0.5499999999999999
+    '2011':
+      count: 143
+      percent: 0.6500000000000001
+    '2012':
+      count: 114
+      percent: 0.5
+    '2013':
+      count: 113
+      percent: 0.48000000000000004
+'22069':
+  name: Natchitoches Parish
+  employment:
+    '2006':
+      count: 18
+      percent: 0.12000000000000001
+    '2013':
+      count: 13
+      percent: 0.1
+'22071':
+  name: Orleans Parish
+  employment:
+    '2004':
+      count: 4217
+      percent: 1.7100000000000002
+    '2005':
+      count: 4146
+      percent: 1.95
+    '2006':
+      count: 3706
+      percent: 2.44
+    '2007':
+      count: 3659
+      percent: 2.21
+    '2008':
+      count: 3819
+      percent: 2.22
+    '2009':
+      count: 3618
+      percent: 2.15
+    '2010':
+      count: 3253
+      percent: 1.91
+    '2011':
+      count: 2868
+      percent: 1.6500000000000001
+    '2012':
+      count: 2391
+      percent: 1.35
+    '2013':
+      count: 2431
+      percent: 1.35
+'22073':
+  name: Ouachita Parish
+  employment:
+    '2004':
+      count: 118
+      percent: 0.17
+    '2005':
+      count: 123
+      percent: 0.17
+    '2006':
+      count: 123
+      percent: 0.17
+    '2007':
+      count: 150
+      percent: 0.21000000000000002
+    '2008':
+      count: 154
+      percent: 0.22
+    '2009':
+      count: 124
+      percent: 0.18
+    '2010':
+      count: 107
+      percent: 0.16
+    '2011':
+      count: 105
+      percent: 0.15000000000000002
+    '2012':
+      count: 112
+      percent: 0.16
+    '2013':
+      count: 96
+      percent: 0.14
+'22075':
+  name: Plaquemines Parish
+  employment:
+    '2004':
+      count: 1757
+      percent: 11.51
+    '2005':
+      count: 1676
+      percent: 11.460000000000003
+    '2006':
+      count: 1867
+      percent: 13.350000000000003
+    '2007':
+      count: 1640
+      percent: 11.34
+    '2008':
+      count: 1555
+      percent: 10.729999999999999
+    '2009':
+      count: 1415
+      percent: 9.82
+    '2010':
+      count: 1144
+      percent: 7.920000000000001
+    '2011':
+      count: 1164
+      percent: 7.99
+    '2012':
+      count: 1701
+      percent: 11.600000000000001
+    '2013':
+      count: 1478
+      percent: 10.15
+'22077':
+  name: Pointe Coupee Parish
+  employment:
+    '2005':
+      count: 128
+      percent: 2.34
+    '2008':
+      count: 82
+      percent: 1.49
+    '2009':
+      count: 120
+      percent: 2.18
+    '2010':
+      count: 144
+      percent: 2.62
+    '2011':
+      count: 142
+      percent: 2.5700000000000003
+    '2012':
+      count: 125
+      percent: 2.27
+    '2013':
+      count: 123
+      percent: 2.3499999999999996
+'22079':
+  name: Rapides Parish
+  employment:
+    '2004':
+      count: 74
+      percent: 0.13
+    '2005':
+      count: 93
+      percent: 0.16
+    '2006':
+      count: 87
+      percent: 0.14
+    '2007':
+      count: 119
+      percent: 0.2
+    '2008':
+      count: 172
+      percent: 0.27
+    '2009':
+      count: 210
+      percent: 0.3500000000000001
+    '2010':
+      count: 195
+      percent: 0.33000000000000007
+    '2011':
+      count: 217
+      percent: 0.37000000000000005
+    '2012':
+      count: 212
+      percent: 0.37000000000000005
+    '2013':
+      count: 190
+      percent: 0.33000000000000007
+'22081':
+  name: Red River Parish
+  employment:
+    '2004':
+      count: 43
+      percent: 1.81
+    '2005':
+      count: 48
+      percent: 2.2600000000000002
+    '2006':
+      count: 55
+      percent: 2.7199999999999998
+    '2007':
+      count: 52
+      percent: 2.27
+    '2008':
+      count: 52
+      percent: 2.29
+    '2009':
+      count: 106
+      percent: 4.58
+    '2011':
+      count: 114
+      percent: 4.35
+    '2012':
+      count: 93
+      percent: 3.62
+    '2013':
+      count: 78
+      percent: 3.16
+'22083':
+  name: Richland Parish
+  employment:
+    '2005':
+      count: 15
+      percent: 0.25
+    '2007':
+      count: 29
+      percent: 0.48000000000000004
+    '2008':
+      count: 32
+      percent: 0.51
+    '2009':
+      count: 29
+      percent: 0.4700000000000001
+    '2011':
+      count: 45
+      percent: 0.68
+    '2012':
+      count: 40
+      percent: 0.6100000000000001
+    '2013':
+      count: 45
+      percent: 0.6900000000000001
+'22085':
+  name: Sabine Parish
+  employment:
+    '2004':
+      count: 35
+      percent: 0.6300000000000001
+    '2005':
+      count: 44
+      percent: 0.79
+    '2006':
+      count: 46
+      percent: 0.8200000000000002
+    '2007':
+      count: 39
+      percent: 0.7000000000000002
+    '2008':
+      count: 42
+      percent: 0.7500000000000001
+    '2009':
+      count: 42
+      percent: 0.77
+    '2010':
+      count: 42
+      percent: 0.77
+    '2011':
+      count: 42
+      percent: 0.77
+    '2012':
+      count: 51
+      percent: 0.96
+    '2013':
+      count: 46
+      percent: 0.87
+'22089':
+  name: St. Charles Parish
+  employment:
+    '2005':
+      count: 45
+      percent: 0.2
+    '2009':
+      count: 85
+      percent: 0.3500000000000001
+'22093':
+  name: St. James Parish
+  employment:
+    '2008':
+      count: 7
+      percent: 0.09
+    '2009':
+      count: 13
+      percent: 0.16
+    '2010':
+      count: 6
+      percent: 0.08
+    '2011':
+      count: 9
+      percent: 0.12000000000000001
+    '2012':
+      count: 4
+      percent: 0.05
+'22095':
+  name: St. John the Baptist Parish
+  employment:
+    '2004':
+      count: 283
+      percent: 2.23
+    '2005':
+      count: 264
+      percent: 2.03
+    '2006':
+      count: 413
+      percent: 2.88
+    '2007':
+      count: 434
+      percent: 2.9299999999999997
+    '2008':
+      count: 410
+      percent: 2.68
+    '2009':
+      count: 309
+      percent: 2.02
+    '2010':
+      count: 404
+      percent: 2.6599999999999997
+    '2011':
+      count: 529
+      percent: 3.53
+    '2012':
+      count: 505
+      percent: 3.4299999999999997
+    '2013':
+      count: 570
+      percent: 3.9800000000000004
+'22097':
+  name: St. Landry Parish
+  employment:
+    '2004':
+      count: 584
+      percent: 2.5700000000000003
+    '2005':
+      count: 531
+      percent: 2.1999999999999997
+    '2006':
+      count: 566
+      percent: 2.29
+    '2007':
+      count: 422
+      percent: 1.7100000000000002
+    '2008':
+      count: 372
+      percent: 1.51
+    '2009':
+      count: 336
+      percent: 1.37
+    '2011':
+      count: 286
+      percent: 1.1800000000000002
+    '2012':
+      count: 430
+      percent: 1.7900000000000003
+    '2013':
+      count: 437
+      percent: 1.7999999999999998
+'22101':
+  name: St. Mary Parish
+  employment:
+    '2004':
+      count: 1047
+      percent: 4.17
+    '2005':
+      count: 1112
+      percent: 4.38
+    '2006':
+      count: 1274
+      percent: 4.71
+    '2007':
+      count: 1193
+      percent: 4.3
+    '2008':
+      count: 2343
+      percent: 8.44
+    '2009':
+      count: 2197
+      percent: 8.28
+    '2010':
+      count: 2408
+      percent: 9.3
+    '2011':
+      count: 2326
+      percent: 8.81
+    '2012':
+      count: 2552
+      percent: 9.44
+    '2013':
+      count: 2622
+      percent: 9.739999999999998
+'22103':
+  name: St. Tammany Parish
+  employment:
+    '2004':
+      count: 205
+      percent: 0.31000000000000005
+    '2005':
+      count: 193
+      percent: 0.29000000000000004
+    '2006':
+      count: 267
+      percent: 0.38000000000000006
+    '2007':
+      count: 289
+      percent: 0.38000000000000006
+    '2008':
+      count: 321
+      percent: 0.43000000000000005
+    '2009':
+      count: 469
+      percent: 0.6200000000000001
+    '2010':
+      count: 546
+      percent: 0.7300000000000001
+    '2011':
+      count: 609
+      percent: 0.79
+    '2012':
+      count: 1368
+      percent: 1.7300000000000002
+    '2013':
+      count: 1501
+      percent: 1.8599999999999997
+'22105':
+  name: Tangipahoa Parish
+  employment:
+    '2004':
+      count: 55
+      percent: 0.15000000000000002
+    '2005':
+      count: 94
+      percent: 0.25
+    '2006':
+      count: 127
+      percent: 0.31000000000000005
+    '2007':
+      count: 126
+      percent: 0.30000000000000004
+    '2008':
+      count: 126
+      percent: 0.30000000000000004
+    '2009':
+      count: 126
+      percent: 0.30000000000000004
+    '2010':
+      count: 120
+      percent: 0.29000000000000004
+    '2011':
+      count: 108
+      percent: 0.26
+    '2012':
+      count: 104
+      percent: 0.25
+    '2013':
+      count: 97
+      percent: 0.24000000000000002
+'22107':
+  name: Tensas Parish
+  employment:
+    '2004':
+      count: 91
+      percent: 5.800000000000001
+'22109':
+  name: Terrebonne Parish
+  employment:
+    '2004':
+      count: 4640
+      percent: 9.46
+    '2005':
+      count: 5126
+      percent: 10.139999999999999
+    '2006':
+      count: 5723
+      percent: 10.51
+    '2007':
+      count: 5924
+      percent: 10.27
+    '2008':
+      count: 6125
+      percent: 10.6
+    '2009':
+      count: 5300
+      percent: 9.65
+    '2010':
+      count: 4610
+      percent: 8.540000000000001
+    '2011':
+      count: 4172
+      percent: 7.79
+    '2012':
+      count: 4638
+      percent: 8.39
+    '2013':
+      count: 5507
+      percent: 9.639999999999999
+'22111':
+  name: Union Parish
+  employment:
+    '2009':
+      count: 14
+      percent: 0.30000000000000004
+'22113':
+  name: Vermilion Parish
+  employment:
+    '2004':
+      count: 1325
+      percent: 9.970000000000002
+    '2005':
+      count: 1040
+      percent: 7.85
+    '2006':
+      count: 1088
+      percent: 8.09
+    '2007':
+      count: 1035
+      percent: 7.539999999999999
+    '2008':
+      count: 1038
+      percent: 7.5200000000000005
+    '2009':
+      count: 1030
+      percent: 7.42
+    '2010':
+      count: 1022
+      percent: 7.609999999999999
+    '2011':
+      count: 1276
+      percent: 9.520000000000001
+    '2012':
+      count: 1314
+      percent: 9.43
+    '2013':
+      count: 1363
+      percent: 10.01
+'22115':
+  name: Vernon Parish
+  employment:
+    '2004':
+      count: 44
+      percent: 0.31000000000000005
+    '2005':
+      count: 51
+      percent: 0.3400000000000001
+    '2006':
+      count: 64
+      percent: 0.42000000000000004
+    '2008':
+      count: 8
+      percent: 0.05
+    '2012':
+      count: 62
+      percent: 0.42000000000000004
+    '2013':
+      count: 49
+      percent: 0.3500000000000001
+'22117':
+  name: Washington Parish
+  employment:
+    '2004':
+      count: 86
+      percent: 0.8
+    '2005':
+      count: 90
+      percent: 0.8500000000000002
+    '2006':
+      count: 82
+      percent: 0.77
+    '2007':
+      count: 87
+      percent: 0.8
+    '2008':
+      count: 79
+      percent: 0.7300000000000001
+    '2009':
+      count: 69
+      percent: 0.6600000000000001
+    '2010':
+      count: 47
+      percent: 0.46
+    '2011':
+      count: 51
+      percent: 0.51
+    '2012':
+      count: 52
+      percent: 0.53
+    '2013':
+      count: 56
+      percent: 0.5700000000000002
+'22119':
+  name: Webster Parish
+  employment:
+    '2004':
+      count: 312
+      percent: 2.48
+    '2005':
+      count: 323
+      percent: 2.4899999999999998
+    '2006':
+      count: 375
+      percent: 2.82
+    '2007':
+      count: 528
+      percent: 3.92
+    '2008':
+      count: 651
+      percent: 4.78
+    '2009':
+      count: 724
+      percent: 5.67
+    '2010':
+      count: 970
+      percent: 7.449999999999999
+    '2011':
+      count: 1006
+      percent: 7.84
+    '2012':
+      count: 844
+      percent: 6.74
+    '2013':
+      count: 635
+      percent: 5.29
+'22127':
+  name: Winn Parish
+  employment:
+    '2004':
+      count: 49
+      percent: 1
+    '2005':
+      count: 48
+      percent: 0.9299999999999999
+    '2006':
+      count: 44
+      percent: 0.8600000000000001
+    '2007':
+      count: 67
+      percent: 1.29
+    '2008':
+      count: 95
+      percent: 1.7999999999999998
+    '2009':
+      count: 99
+      percent: 1.8900000000000001
+    '2010':
+      count: 86
+      percent: 1.6800000000000002
+    '2011':
+      count: 77
+      percent: 1.52
+    '2012':
+      count: 81
+      percent: 1.5599999999999996
+    '2013':
+      count: 82
+      percent: 1.6700000000000002

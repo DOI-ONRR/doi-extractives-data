@@ -6,6 +6,7 @@ var parserHelper = require('../parser-helper');
 module.exports = {
   autoparse: false,
   parser: parserHelper(function(input) {
+    input.Percent = Number(input.Share) * 100;
     return input;
   }),
 
@@ -14,40 +15,44 @@ module.exports = {
       tableName: 'bls_employment',
 
       fields: {
-        fips: {
-          input: 'area_fips',
-          name: 'fips',
-          type: new sequelize.STRING(5)
-        },
         year: {
-          input: 'year',
+          input: 'Year',
           name: 'year',
           type: new sequelize.INTEGER(4).UNSIGNED
         },
-        region: {
-          input: 'area_title',
-          name: 'region',
+        fips: {
+          input: 'FIPS',
+          name: 'fips',
+          type: new sequelize.STRING(5)
+        },
+        state: {
+          input: 'State',
+          name: 'state',
+          type: new sequelize.STRING(32)
+        },
+        region_id: {
+          name: 'region_id',
+          type: new sequelize.STRING(2)
+        },
+        county: {
+          input: 'County',
+          name: 'county',
           type: new sequelize.STRING(64)
         },
-        annual_avg_empl: {
-          input: 'annual_avg_emplvl',
-          name: 'annual_avg_empl',
+        extractive_jobs: {
+          input: 'Jobs',
+          name: 'extractive_jobs',
           type: new sequelize.INTEGER()
         },
-        annual_total_wages: {
-          input: 'total_annual_wages',
-          name: 'annual_total_wages',
+        total_jobs: {
+          input: 'Total',
+          name: 'total_jobs',
           type: new sequelize.INTEGER()
         },
-        annual_taxable_wages: {
-          input: 'taxable_annual_wages',
-          name: 'annual_taxable_wages',
-          type: new sequelize.INTEGER()
-        },
-        annual_avg_wages: {
-          input: 'avg_annual_pay',
-          name: 'annual_avg_wages',
-          type: new sequelize.INTEGER()
+        percent: {
+          input: 'Percent',
+          name: 'percent',
+          type: new sequelize.DECIMAL(3, 2)
         },
       },
 

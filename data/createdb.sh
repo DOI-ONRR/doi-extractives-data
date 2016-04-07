@@ -86,6 +86,7 @@ done
 
 # Bureau of Labor Statistics (BLS) data comes in one file per year, too, but
 # each row contains a year
-for bls_filename in _input/bls/????/extractives.csv; do
-    load $bls_filename bls_employment
+for jobs_filename in _input/bls/????/joined.tsv; do
+    load $jobs_filename bls_employment
 done
+load_sql db/rollup-employment.sql

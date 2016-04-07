@@ -11,7 +11,7 @@
   d3.geo.albersCustom = require('../albers-custom');
 
   // common 3rd-party dependencies
-  exports.queue = require('queue-async');
+  exports.queue = require('d3-queue');
   exports.topojson = require('topojson');
   exports.colorbrewer = require('colorbrewer');
   exports.$ = exports.jQuery = require('jquery');

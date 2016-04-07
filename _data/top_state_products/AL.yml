@@ -1,0 +1,169 @@
+all_production:
+  '1975':
+    - product: Natural Gas (MMcf)
+      rank: 5
+      percent: 10.771146688068189
+  '1976':
+    - product: Natural Gas (MMcf)
+      rank: 5
+      percent: 11.179343854565968
+  '1977':
+    - product: Natural Gas (MMcf)
+      rank: 3
+      percent: 14.227162741446332
+  '1978':
+    - product: Natural Gas (MMcf)
+      rank: 3
+      percent: 16.64518491259669
+  '1979':
+    - product: Natural Gas (MMcf)
+      rank: 3
+      percent: 15.379071778610548
+  '1980':
+    - product: Natural Gas (MMcf)
+      rank: 3
+      percent: 17.87745576034657
+  '1981':
+    - product: Natural Gas (MMcf)
+      rank: 3
+      percent: 19.26278714239932
+  '1982':
+    - product: Natural Gas (MMcf)
+      rank: 3
+      percent: 21.25754710060568
+  '1983':
+    - product: Natural Gas (MMcf)
+      rank: 3
+      percent: 21.777880804554556
+  '1984':
+    - product: Natural Gas (MMcf)
+      rank: 3
+      percent: 21.911795174898295
+  '1985':
+    - product: Natural Gas (MMcf)
+      rank: 2
+      percent: 22.99351814294715
+  '1986':
+    - product: Natural Gas (MMcf)
+      rank: 2
+      percent: 22.67860619038349
+  '1987':
+    - product: Natural Gas (MMcf)
+      rank: 2
+      percent: 23.020332700734034
+  '1988':
+    - product: Natural Gas (MMcf)
+      rank: 2
+      percent: 24.8133548221573
+  '1989':
+    - product: Natural Gas (MMcf)
+      rank: 2
+      percent: 26.4779482600625
+  '1990':
+    - product: Natural Gas (MMcf)
+      rank: 2
+      percent: 26.58319664713871
+  '1991':
+    - product: Natural Gas (MMcf)
+      rank: 1
+      percent: 30.1798176614672
+  '1992':
+    - product: Natural Gas (MMcf)
+      rank: 1
+      percent: 44.51990949934018
+  '1993':
+    - product: Natural Gas (MMcf)
+      rank: 1
+      percent: 45.931644003799484
+  '1994':
+    - product: Natural Gas (MMcf)
+      rank: 1
+      percent: 52.67797584975853
+  '1995':
+    - product: Natural Gas (MMcf)
+      rank: 1
+      percent: 52.277831045619706
+  '1996':
+    - product: Natural Gas (MMcf)
+      rank: 1
+      percent: 51.373803551782615
+  '1997':
+    - product: Natural Gas (MMcf)
+      rank: 1
+      percent: 41.44010972264554
+  '1998':
+    - product: Natural Gas (MMcf)
+      rank: 1
+      percent: 42.395920342859846
+  '1999':
+    - product: Natural Gas (MMcf)
+      rank: 1
+      percent: 41.34338600202915
+  '2000':
+    - product: Natural Gas (MMcf)
+      rank: 1
+      percent: 39.656962962157834
+  '2001':
+    - product: Natural Gas (MMcf)
+      rank: 1
+      percent: 38.65126194598815
+  '2002':
+    - product: Natural Gas (MMcf)
+      rank: 1
+      percent: 37.301598025004004
+  '2003':
+    - product: Natural Gas (MMcf)
+      rank: 1
+      percent: 34.86520529402919
+  '2004':
+    - product: Wood and wood-derived fuels
+      rank: 1
+      percent: 11.786857465637356
+  '2005':
+    - product: Wood and wood-derived fuels
+      rank: 2
+      percent: 11.196446747478486
+  '2006':
+    - product: Wood and wood-derived fuels
+      rank: 1
+      percent: 11.839485372951449
+  '2007':
+    - product: Wood and wood-derived fuels
+      rank: 2
+      percent: 11.448280035095149
+  '2008':
+    - product: Wood and wood-derived fuels
+      rank: 2
+      percent: 10.578575520336068
+  '2009':
+    - product: Conventional Hydroelectric
+      rank: 2
+      percent: 11.026371809081471
+    - product: Wood and wood-derived fuels
+      rank: 2
+      percent: 10.197224742129487
+  '2012':
+    - product: Coal (short tons)
+      rank: 2
+      percent: 12.096851602994814
+  '2014':
+    - product: Natural Gas (MMcf)
+      rank: 1
+      percent: 28.56394601288938
+revenue:
+  '2004':
+    - product: Clay
+      rank: 1
+      percent: 83.6964926745085
+  '2005':
+    - product: Clay
+      rank: 1
+      percent: 79.33597573384759
+  '2006':
+    - product: Clay
+      rank: 1
+      percent: 84.47420037128656
+  '2007':
+    - product: Clay
+      rank: 1
+      percent: 67.94635248435176

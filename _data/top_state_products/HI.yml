@@ -1,0 +1,5 @@
+all_production:
+  '2013':
+    - product: Geothermal
+      rank: 4
+      percent: 1.74315415821501

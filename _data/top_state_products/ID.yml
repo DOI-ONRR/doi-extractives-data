@@ -1,0 +1,160 @@
+revenue:
+  '2004':
+    - product: Phosphate Raw Ore
+      rank: 1
+      percent: 100.00000057938941
+    - product: Gold
+      rank: 1
+      percent: 100
+    - product: Phosphate
+      rank: 1
+      percent: 93.656428918168
+  '2005':
+    - product: Gemstones
+      rank: 1
+      percent: 100
+    - product: Gold
+      rank: 1
+      percent: 100
+    - product: Phosphate
+      rank: 1
+      percent: 83.61448290869181
+    - product: Phosphate Raw Ore
+      rank: 1
+      percent: 78.1055310555786
+  '2006':
+    - product: Gemstones
+      rank: 1
+      percent: 100
+    - product: Gold
+      rank: 1
+      percent: 100
+    - product: Phosphate Raw Ore
+      rank: 1
+      percent: 99.93232469423842
+    - product: Phosphate
+      rank: 1
+      percent: 83.28189981261015
+  '2007':
+    - product: Gemstones
+      rank: 1
+      percent: 100
+    - product: Gold
+      rank: 1
+      percent: 100
+    - product: Phosphate Raw Ore
+      rank: 1
+      percent: 100
+    - product: Phosphate
+      rank: 1
+      percent: 86.65974221136898
+    - product: Geothermal
+      rank: 3
+      percent: 21.57989506698345
+  '2008':
+    - product: Garnet
+      rank: 1
+      percent: 100
+    - product: Gold
+      rank: 1
+      percent: 100
+    - product: Phosphate Raw Ore
+      rank: 1
+      percent: 100
+    - product: Phosphate
+      rank: 1
+      percent: 76.04461283953252
+  '2009':
+    - product: Gold
+      rank: 1
+      percent: 100
+    - product: Phosphate Raw Ore
+      rank: 1
+      percent: 100
+    - product: Phosphate
+      rank: 1
+      percent: 88.56045749187862
+  '2010':
+    - product: Garnet
+      rank: 1
+      percent: 100
+    - product: Phosphate Raw Ore
+      rank: 1
+      percent: 99.00954084815938
+    - product: Phosphate
+      rank: 1
+      percent: 83.22805595968151
+  '2011':
+    - product: Gold
+      rank: 1
+      percent: 100
+    - product: Phosphate
+      rank: 1
+      percent: 95.28427447281096
+    - product: Phosphate Raw Ore
+      rank: 1
+      percent: 94.24305966918594
+  '2012':
+    - product: Gold
+      rank: 1
+      percent: 100
+    - product: Phosphate
+      rank: 1
+      percent: 97.05129276082958
+    - product: Phosphate Raw Ore
+      rank: 1
+      percent: 81.29534188181745
+  '2013':
+    - product: Gold
+      rank: 1
+      percent: 100
+    - product: Silver
+      rank: 1
+      percent: 100
+    - product: Phosphate Raw Ore
+      rank: 1
+      percent: 97.1719494820334
+    - product: Phosphate
+      rank: 1
+      percent: 82.5893441549941
+federal_production:
+  '2005':
+    - product: Phosphate Raw Ore (tons)
+      rank: 1
+      percent: 100
+  '2006':
+    - product: Phosphate Raw Ore (tons)
+      rank: 1
+      percent: 100
+  '2007':
+    - product: Phosphate Raw Ore (tons)
+      rank: 1
+      percent: 100
+  '2008':
+    - product: Phosphate Raw Ore (tons)
+      rank: 1
+      percent: 100
+  '2009':
+    - product: Phosphate Raw Ore (tons)
+      rank: 1
+      percent: 100
+  '2010':
+    - product: Phosphate Raw Ore (tons)
+      rank: 1
+      percent: 100
+  '2011':
+    - product: Phosphate Raw Ore (tons)
+      rank: 1
+      percent: 100
+  '2012':
+    - product: Phosphate Raw Ore (tons)
+      rank: 1
+      percent: 100
+  '2013':
+    - product: Phosphate Raw Ore (tons)
+      rank: 1
+      percent: 100
+  '2014':
+    - product: Phosphate Raw Ore (tons)
+      rank: 1
+      percent: 100

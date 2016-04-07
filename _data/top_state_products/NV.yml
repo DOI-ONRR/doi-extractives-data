@@ -1,0 +1,189 @@
+revenue:
+  '2004':
+    - product: 'Geothermal - Direct Utilization, Hundreds of Gallons'
+      rank: 1
+      percent: 100
+    - product: 'Sand & Gravel'
+      rank: 1
+      percent: 100
+    - product: Sand/Gravel
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      rank: 2
+      percent: 11.180668126671497
+  '2005':
+    - product: 'Geothermal - Direct Utilization, Hundreds of Gallons'
+      rank: 1
+      percent: 100
+    - product: 'Sand & Gravel'
+      rank: 1
+      percent: 100
+    - product: Sand/Gravel
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      rank: 1
+      percent: 95.97591832324935
+    - product: Geothermal
+      rank: 1
+      percent: 84.45542883929534
+    - product: Sodium
+      rank: 3
+      percent: 11.713625593291649
+  '2006':
+    - product: 'Geothermal - Direct Utilization, Hundreds of Gallons'
+      rank: 1
+      percent: 100
+    - product: Sand/Gravel
+      rank: 1
+      percent: 100
+    - product: Geothermal
+      rank: 1
+      percent: 96.81138694353254
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      rank: 2
+      percent: 31.5831212059241
+  '2007':
+    - product: 'Geothermal - Direct Utilization, Hundreds of Gallons'
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      rank: 1
+      percent: 67.33614207961799
+    - product: Geothermal
+      rank: 1
+      percent: 46.70552013565241
+  '2008':
+    - product: 'Geothermal - Direct Utilization, Hundreds of Gallons'
+      rank: 1
+      percent: 100
+    - product: Geothermal
+      rank: 1
+      percent: 96.52691759120128
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      rank: 1
+      percent: 56.74834559579962
+  '2009':
+    - product: 'Geothermal - Direct Utilization, Hundreds of Gallons'
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      rank: 1
+      percent: 77.4786428195759
+    - product: Geothermal
+      rank: 1
+      percent: 49.309155799228336
+  '2010':
+    - product: 'Geothermal - Direct Utilization, Hundreds of Gallons'
+      rank: 1
+      percent: 100
+    - product: Geothermal
+      rank: 1
+      percent: 76.99195379053818
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      rank: 1
+      percent: 71.26110434299481
+  '2011':
+    - product: 'Geothermal - Direct Utilization, Hundreds of Gallons'
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      rank: 1
+      percent: 93.84750276484138
+    - product: Geothermal
+      rank: 1
+      percent: 68.89284058611075
+  '2012':
+    - product: 'Geothermal - Direct Utilization, Hundreds of Gallons'
+      rank: 1
+      percent: 100
+    - product: Geothermal
+      rank: 1
+      percent: 68.16387182677796
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      rank: 1
+      percent: 63.2200467453736
+  '2013':
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      rank: 1
+      percent: 73.28592924287862
+    - product: Geothermal
+      rank: 1
+      percent: 58.59389196531364
+federal_production:
+  '2005':
+    - product: 'Geothermal - Direct Utilization, Hundreds of Gallons'
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      rank: 2
+      percent: 40.82823767474222
+  '2006':
+    - product: 'Geothermal - Direct Utilization, Hundreds of Gallons'
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      rank: 2
+      percent: 38.57307341965395
+  '2007':
+    - product: 'Geothermal - Direct Utilization, Hundreds of Gallons'
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      rank: 2
+      percent: 34.90800360388379
+  '2008':
+    - product: 'Geothermal - Direct Utilization, Hundreds of Gallons'
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      rank: 2
+      percent: 34.72315254148249
+  '2009':
+    - product: 'Geothermal - Direct Utilization, Hundreds of Gallons'
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      rank: 2
+      percent: 40.03326293877734
+  '2010':
+    - product: 'Geothermal - Direct Utilization, Hundreds of Gallons'
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      rank: 1
+      percent: 50.20577941008748
+  '2011':
+    - product: 'Geothermal - Direct Utilization, Hundreds of Gallons'
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      rank: 1
+      percent: 51.060968169472666
+  '2012':
+    - product: 'Geothermal - Direct Utilization, Hundreds of Gallons'
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      rank: 1
+      percent: 56.90144549129376
+  '2013':
+    - product: 'Geothermal - Direct Utilization, Hundreds of Gallons'
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      rank: 1
+      percent: 60.739092586165505
+  '2014':
+    - product: 'Geothermal - Direct Utilization, Hundreds of Gallons'
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      rank: 1
+      percent: 59.75997811042193
+all_production:
+  '2013':
+    - product: Geothermal
+      rank: 2
+      percent: 16.924442190669364

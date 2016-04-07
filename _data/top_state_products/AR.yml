@@ -1,0 +1,69 @@
+revenue:
+  '2004':
+    - product: Quartz
+      rank: 1
+      percent: 100
+    - product: Quartz Crystal
+      rank: 1
+      percent: 100
+  '2005':
+    - product: Quartz Crystal
+      rank: 1
+      percent: 100
+  '2006':
+    - product: Quartz
+      rank: 1
+      percent: 100
+    - product: Quartz Crystal
+      rank: 1
+      percent: 100
+  '2007':
+    - product: Quartz Crystal
+      rank: 1
+      percent: 100
+  '2008':
+    - product: Quartz Crystal
+      rank: 1
+      percent: 100
+    - product: Wavellite
+      rank: 1
+      percent: 100
+  '2009':
+    - product: Quartz Crystal
+      rank: 1
+      percent: 100
+    - product: Wavellite
+      rank: 1
+      percent: 100
+  '2010':
+    - product: Quartz Crystal
+      rank: 1
+      percent: 100
+    - product: Wavellite
+      rank: 1
+      percent: 100
+  '2011':
+    - product: Quartz Crystal
+      rank: 1
+      percent: 100
+  '2012':
+    - product: Quartz Crystal
+      rank: 1
+      percent: 100
+  '2013':
+    - product: Quartz Crystal
+      rank: 1
+      percent: 100
+federal_production:
+  '2005':
+    - product: Quartz Crystal (tickets/pounds)
+      rank: 1
+      percent: 100
+  '2006':
+    - product: Quartz Crystal (tickets/pounds)
+      rank: 1
+      percent: 100
+  '2007':
+    - product: Quartz Crystal (tickets/pounds)
+      rank: 1
+      percent: 100

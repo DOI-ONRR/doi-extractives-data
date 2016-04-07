@@ -1,0 +1,13 @@
+revenue:
+  '2008':
+    - product: Hardrock
+      rank: 4
+      percent: 12.600098416984936
+  '2009':
+    - product: Gold Placer
+      rank: 1
+      percent: 100
+  '2010':
+    - product: Gold Placer
+      rank: 1
+      percent: 100

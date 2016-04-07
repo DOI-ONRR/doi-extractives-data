@@ -1,0 +1,130 @@
+all_production:
+  '2004':
+    - product: Wind
+      rank: 1
+      percent: 42.72294077603813
+    - product: Natural Gas (MMcf)
+      rank: 1
+      percent: 23.921547882286937
+    - product: Oil (bbl)
+      rank: 1
+      percent: 19.720557559177134
+  '2005':
+    - product: Wind
+      rank: 1
+      percent: 39.2496526169523
+    - product: Natural Gas (MMcf)
+      rank: 1
+      percent: 25.608060870652505
+    - product: Oil (bbl)
+      rank: 1
+      percent: 20.749517598727753
+  '2006':
+    - product: Wind
+      rank: 1
+      percent: 39.15595468685801
+    - product: Natural Gas (MMcf)
+      rank: 1
+      percent: 26.88093432174412
+    - product: Oil (bbl)
+      rank: 1
+      percent: 21.139726080521203
+    - product: All Other Renewables
+      rank: 1
+      percent: 12.439536659877803
+  '2007':
+    - product: Wind
+      rank: 1
+      percent: 40.70324505107114
+    - product: Natural Gas (MMcf)
+      rank: 1
+      percent: 28.22313705452775
+    - product: Oil (bbl)
+      rank: 1
+      percent: 21.112719702704933
+    - product: All Other Renewables
+      rank: 1
+      percent: 14.962840147185016
+  '2008':
+    - product: Wind
+      rank: 1
+      percent: 40.487597943803955
+    - product: Natural Gas (MMcf)
+      rank: 1
+      percent: 30.428215821694703
+    - product: Oil (bbl)
+      rank: 1
+      percent: 22.181132594994796
+    - product: All Other Renewables
+      rank: 1
+      percent: 20.45006608389176
+  '2009':
+    - product: Wind
+      rank: 1
+      percent: 35.96623563218392
+    - product: Natural Gas (MMcf)
+      rank: 1
+      percent: 29.372831571777624
+    - product: All Other Renewables
+      rank: 1
+      percent: 20.932354691529454
+    - product: Oil (bbl)
+      rank: 1
+      percent: 20.434715641811177
+  '2010':
+    - product: Wind
+      rank: 1
+      percent: 36.089801754241236
+    - product: Natural Gas (MMcf)
+      rank: 1
+      percent: 28.317693342719743
+    - product: All Other Renewables
+      rank: 1
+      percent: 23.208376963350787
+    - product: Oil (bbl)
+      rank: 1
+      percent: 21.34842535936711
+  '2011':
+    - product: Wind
+      rank: 1
+      percent: 33.50590093449743
+    - product: Natural Gas (MMcf)
+      rank: 1
+      percent: 27.86152011389154
+    - product: Oil (bbl)
+      rank: 1
+      percent: 25.701845489745146
+    - product: All Other Renewables
+      rank: 1
+      percent: 23.16156890967974
+  '2012':
+    - product: Oil (bbl)
+      rank: 1
+      percent: 30.468154696356372
+    - product: Wind
+      rank: 1
+      percent: 30.069447037299774
+    - product: Natural Gas (MMcf)
+      rank: 1
+      percent: 27.565581190801854
+    - product: All Other Renewables
+      rank: 1
+      percent: 21.640276602647702
+  '2013':
+    - product: Oil (bbl)
+      rank: 1
+      percent: 33.94467695512651
+    - product: Natural Gas (MMcf)
+      rank: 1
+      percent: 28.112310337377988
+    - product: Wind
+      rank: 1
+      percent: 21.373800203764276
+    - product: All Other Renewables
+      rank: 1
+      percent: 14.894993451883174
+revenue:
+  '2012':
+    - product: Unprocessed (Wet) Gas
+      rank: 5
+      percent: 19.554009419224226

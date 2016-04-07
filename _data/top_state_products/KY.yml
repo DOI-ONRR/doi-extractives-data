@@ -1,0 +1,98 @@
+all_production:
+  '1967':
+    - product: Natural Gas (MMcf)
+      rank: 2
+      percent: 26.258462136448358
+  '1968':
+    - product: Natural Gas (MMcf)
+      rank: 2
+      percent: 27.03739242920217
+  '1969':
+    - product: Natural Gas (MMcf)
+      rank: 2
+      percent: 26.104322252117463
+  '1970':
+    - product: Natural Gas (MMcf)
+      rank: 2
+      percent: 26.28405214157727
+  '1971':
+    - product: Natural Gas (MMcf)
+      rank: 2
+      percent: 28.575526338538424
+  '1972':
+    - product: Natural Gas (MMcf)
+      rank: 2
+      percent: 24.97469099470276
+  '1973':
+    - product: Natural Gas (MMcf)
+      rank: 2
+      percent: 21.51415577385243
+  '1974':
+    - product: Natural Gas (MMcf)
+      rank: 2
+      percent: 21.909473600785223
+  '1975':
+    - product: Natural Gas (MMcf)
+      rank: 3
+      percent: 16.746046022499268
+  '1976':
+    - product: Natural Gas (MMcf)
+      rank: 3
+      percent: 16.95798771810618
+  '1977':
+    - product: Natural Gas (MMcf)
+      rank: 4
+      percent: 14.142403990395554
+  '1978':
+    - product: Natural Gas (MMcf)
+      rank: 4
+      percent: 12.9526655559028
+  '1979':
+    - product: Natural Gas (MMcf)
+      rank: 4
+      percent: 10.092754311295002
+  '1985':
+    - product: Natural Gas (MMcf)
+      rank: 4
+      percent: 11.723776375130061
+  '1986':
+    - product: Natural Gas (MMcf)
+      rank: 4
+      percent: 12.489001362663032
+  '1987':
+    - product: Natural Gas (MMcf)
+      rank: 4
+      percent: 10.405244391554726
+  '1988':
+    - product: Natural Gas (MMcf)
+      rank: 4
+      percent: 10.436679551456239
+  '1989':
+    - product: Natural Gas (MMcf)
+      rank: 4
+      percent: 10.634795225451725
+  '1990':
+    - product: Natural Gas (MMcf)
+      rank: 4
+      percent: 10.735340850955282
+  '1991':
+    - product: Natural Gas (MMcf)
+      rank: 4
+      percent: 10.636728960497807
+  '2014':
+    - product: Natural Gas (MMcf)
+      rank: 4
+      percent: 12.421926150302513
+revenue:
+  '2005':
+    - product: Oil Lost
+      rank: 1
+      percent: 100
+  '2007':
+    - product: Coal-Bituminous-Processed
+      rank: 1
+      percent: 100
+  '2008':
+    - product: Coal-Bituminous-Processed
+      rank: 1
+      percent: 100

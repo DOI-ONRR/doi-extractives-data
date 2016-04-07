@@ -1,0 +1,523 @@
+revenue:
+  '2004':
+    - product: Anhydrous Sodium Sulfate
+      rank: 1
+      percent: 100
+    - product: Borax-Anhydrous
+      rank: 1
+      percent: 100
+    - product: Borax-Decahydrate
+      rank: 1
+      percent: 100
+    - product: Borax-Pentahydrate
+      rank: 1
+      percent: 100
+    - product: Boric Acid
+      rank: 1
+      percent: 100
+    - product: Boric Oxide
+      rank: 1
+      percent: 100
+    - product: Fuel Oil
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Other'
+      rank: 1
+      percent: 100
+    - product: Salt-Waste
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      rank: 1
+      percent: 96.60865997786206
+    - product: Geothermal
+      rank: 1
+      percent: 92.69611107879503
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      rank: 1
+      percent: 88.81933187332848
+    - product: Soda Ash-Granular
+      rank: 2
+      percent: 57.844938228496865
+    - product: Soda Ash
+      rank: 2
+      percent: 26.68827814716236
+    - product: Salt
+      rank: 2
+      percent: 19.97983528989144
+  '2005':
+    - product: Soda Ash-Granular
+      rank: 1
+      percent: 101.09586422787366
+    - product: Anhydrous Sodium Sulfate
+      rank: 1
+      percent: 100
+    - product: Borax-Anhydrous
+      rank: 1
+      percent: 100
+    - product: Borax-Decahydrate
+      rank: 1
+      percent: 100
+    - product: Borax-Pentahydrate
+      rank: 1
+      percent: 100
+    - product: Boric Acid
+      rank: 1
+      percent: 100
+    - product: Fuel Oil
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Other'
+      rank: 1
+      percent: 100
+    - product: Salt-Waste
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      rank: 1
+      percent: 96.55940474539065
+    - product: Salt
+      rank: 2
+      percent: 27.347491059857692
+    - product: Soda Ash
+      rank: 2
+      percent: 17.84445144921199
+    - product: Sodium
+      rank: 2
+      percent: 15.572195197567046
+    - product: Geothermal
+      rank: 2
+      percent: 13.903385208929043
+  '2006':
+    - product: Anhydrous Sodium Sulfate
+      rank: 1
+      percent: 100
+    - product: Borax-Anhydrous
+      rank: 1
+      percent: 100
+    - product: Borax-Decahydrate
+      rank: 1
+      percent: 100
+    - product: Borax-Pentahydrate
+      rank: 1
+      percent: 100
+    - product: Boric Acid
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Other'
+      rank: 1
+      percent: 100
+    - product: Soda Ash-Granular
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      rank: 1
+      percent: 97.67295854784862
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      rank: 1
+      percent: 68.4168787940759
+    - product: Gas Lost - Flared or Vented
+      rank: 1
+      percent: 43.414664159562264
+    - product: Salt
+      rank: 2
+      percent: 22.531821477515624
+    - product: Soda Ash
+      rank: 2
+      percent: 16.461943670979437
+    - product: Sodium
+      rank: 3
+      percent: 14.113375415316698
+  '2007':
+    - product: Anhydrous Sodium Sulfate
+      rank: 1
+      percent: 100
+    - product: Borax-Decahydrate
+      rank: 1
+      percent: 100
+    - product: Borax-Pentahydrate
+      rank: 1
+      percent: 100
+    - product: Boric Acid
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Other'
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
+      rank: 1
+      percent: 97.18978771050699
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      rank: 1
+      percent: 96.8280083888677
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      rank: 2
+      percent: 32.663857920382014
+    - product: Geothermal
+      rank: 2
+      percent: 30.86679064694219
+    - product: Gas Lost - Flared or Vented
+      rank: 2
+      percent: 12.903004682553684
+  '2008':
+    - product: Anhydrous Sodium Sulfate
+      rank: 1
+      percent: 100
+    - product: Borax-Decahydrate
+      rank: 1
+      percent: 100
+    - product: Borax-Pentahydrate
+      rank: 1
+      percent: 100
+    - product: Boric Acid
+      rank: 1
+      percent: 100
+    - product: Fuel Oil
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Other'
+      rank: 1
+      percent: 100
+    - product: Hot Springs
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      rank: 1
+      percent: 97.45862856386978
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      rank: 2
+      percent: 43.25165440420038
+    - product: Salt
+      rank: 2
+      percent: 20.906091377759264
+    - product: Gas Lost - Flared or Vented
+      rank: 2
+      percent: 19.979030038538383
+  '2009':
+    - product: Anhydrous Sodium Sulfate
+      rank: 1
+      percent: 100
+    - product: Borax-Decahydrate
+      rank: 1
+      percent: 100
+    - product: Borax-Pentahydrate
+      rank: 1
+      percent: 100
+    - product: Boric Acid
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Other'
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      rank: 1
+      percent: 96.07258382553918
+    - product: Gas Lost - Flared or Vented
+      rank: 1
+      percent: 54.25877754296406
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      rank: 2
+      percent: 22.521357180424097
+    - product: Salt
+      rank: 2
+      percent: 19.257278564099646
+    - product: Soda Ash
+      rank: 2
+      percent: 11.771824536957833
+    - product: Sodium
+      rank: 3
+      percent: 74.7024766531903
+  '2010':
+    - product: Anhydrous Sodium Sulfate
+      rank: 1
+      percent: 100
+    - product: Borax-Decahydrate
+      rank: 1
+      percent: 100
+    - product: Borax-Pentahydrate
+      rank: 1
+      percent: 100
+    - product: Boric Acid
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Other'
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      rank: 1
+      percent: 96.46857861283505
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      rank: 2
+      percent: 28.738895657005184
+    - product: Salt
+      rank: 2
+      percent: 13.736343612008412
+    - product: Soda Ash
+      rank: 2
+      percent: 12.274784952235288
+  '2011':
+    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
+      rank: 1
+      percent: 103.86864826707887
+    - product: Anhydrous Sodium Sulfate
+      rank: 1
+      percent: 100
+    - product: Borax-Anhydrous
+      rank: 1
+      percent: 100
+    - product: Borax-Decahydrate
+      rank: 1
+      percent: 100
+    - product: Borax-Pentahydrate
+      rank: 1
+      percent: 100
+    - product: Boric Acid
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Other'
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      rank: 1
+      percent: 96.2638289247286
+    - product: Salt
+      rank: 2
+      percent: 21.009550498214068
+  '2012':
+    - product: Anhydrous Sodium Sulfate
+      rank: 1
+      percent: 100
+    - product: Borax-Decahydrate
+      rank: 1
+      percent: 100
+    - product: Borax-Pentahydrate
+      rank: 1
+      percent: 100
+    - product: Boric Acid
+      rank: 1
+      percent: 100
+    - product: Fuel Oil
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
+      rank: 1
+      percent: 100
+    - product: Geothermal - sulfur
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      rank: 1
+      percent: 96.23576650716106
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      rank: 2
+      percent: 36.7799532546264
+    - product: Salt
+      rank: 2
+      percent: 34.25518226695526
+    - product: Soda Ash
+      rank: 2
+      percent: 12.375235899893102
+  '2013':
+    - product: Anhydrous Sodium Sulfate
+      rank: 1
+      percent: 100
+    - product: Borax-Decahydrate
+      rank: 1
+      percent: 100
+    - product: Borax-Pentahydrate
+      rank: 1
+      percent: 100
+    - product: Boric Acid
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
+      rank: 1
+      percent: 100
+    - product: Geothermal - sulfur
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      rank: 1
+      percent: 96.44631109160372
+    - product: Salt
+      rank: 2
+      percent: 27.46782694670524
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      rank: 2
+      percent: 26.714070757121373
+    - product: Soda Ash
+      rank: 2
+      percent: 11.021959751922937
+all_production:
+  '2004':
+    - product: Oil (bbl)
+      rank: 3
+      percent: 12.058788968933321
+  '2005':
+    - product: Oil (bbl)
+      rank: 3
+      percent: 12.167980817051134
+  '2006':
+    - product: Oil (bbl)
+      rank: 3
+      percent: 12.011985323741627
+  '2007':
+    - product: Oil (bbl)
+      rank: 3
+      percent: 11.79111427913123
+  '2008':
+    - product: Oil (bbl)
+      rank: 3
+      percent: 11.720450433125585
+  '2009':
+    - product: Oil (bbl)
+      rank: 3
+      percent: 10.605743502727144
+  '2010':
+    - product: Oil (bbl)
+      rank: 3
+      percent: 10.009591795787317
+  '2013':
+    - product: Geothermal
+      rank: 1
+      percent: 78.01090263691684
+    - product: Solar
+      rank: 1
+      percent: 42.227635075287864
+    - product: Other biomass
+      rank: 1
+      percent: 13.651205224238932
+    - product: Biomass (total)
+      rank: 1
+      percent: 10.902428604291961
+    - product: All Other Renewables
+      rank: 2
+      percent: 14.034271107815135
+federal_production:
+  '2005':
+    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Other'
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      rank: 1
+      percent: 59.17176232525778
+  '2006':
+    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Other'
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      rank: 1
+      percent: 61.426926580346034
+  '2007':
+    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Other'
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      rank: 1
+      percent: 65.09199639611622
+  '2008':
+    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Other'
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      rank: 1
+      percent: 65.27684745851751
+  '2009':
+    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Other'
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      rank: 1
+      percent: 59.96673706122266
+  '2010':
+    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Other'
+      rank: 1
+      percent: 100
+    - product: Geothermal - sulfur
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      rank: 2
+      percent: 49.7942205899125
+  '2011':
+    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Other'
+      rank: 1
+      percent: 100
+    - product: Geothermal - sulfur
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      rank: 2
+      percent: 48.939031830527334
+  '2012':
+    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
+      rank: 1
+      percent: 100
+    - product: Geothermal - sulfur
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      rank: 2
+      percent: 43.09855450870623
+  '2013':
+    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
+      rank: 1
+      percent: 100
+    - product: Geothermal - sulfur
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      rank: 2
+      percent: 38.71051720408335
+  '2014':
+    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Other'
+      rank: 1
+      percent: 100
+    - product: Geothermal - sulfur
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      rank: 2
+      percent: 34.77920964913066

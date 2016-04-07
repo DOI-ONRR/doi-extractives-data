@@ -1,0 +1,25 @@
+all_production:
+  '1967':
+    - product: Natural Gas (MMcf)
+      rank: 9
+      percent: 0.182861652350847
+  '1968':
+    - product: Natural Gas (MMcf)
+      rank: 9
+      percent: 0.2623603932976638
+  '1969':
+    - product: Natural Gas (MMcf)
+      rank: 9
+      percent: 0.3140070250242409
+  '1970':
+    - product: Natural Gas (MMcf)
+      rank: 9
+      percent: 0.27434055347278696
+  '2005':
+    - product: Other biomass
+      rank: 9
+      percent: 3.3224444267389046
+  '2010':
+    - product: Solar
+      rank: 10
+      percent: 0

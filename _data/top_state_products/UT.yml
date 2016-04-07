@@ -1,0 +1,280 @@
+revenue:
+  '2004':
+    - product: Gilsonite
+      rank: 1
+      percent: 100
+    - product: Magnesium Chloride Brine
+      rank: 1
+      percent: 100
+    - product: Manure Salts
+      rank: 1
+      percent: 100
+    - product: Tar Sands
+      rank: 1
+      percent: 100
+    - product: Clay
+      rank: 2
+      percent: 16.303507325491488
+    - product: Coal-Bituminous-Raw
+      rank: 2
+      percent: 12.429431533777919
+  '2005':
+    - product: Coal-Bituminous-Raw
+      rank: 1
+      percent: 100
+    - product: Gilsonite
+      rank: 1
+      percent: 100
+    - product: Magnesium Chloride Brine
+      rank: 1
+      percent: 100
+    - product: Manure Salts
+      rank: 1
+      percent: 100
+    - product: Tar Sands
+      rank: 1
+      percent: 100
+    - product: Clay
+      rank: 2
+      percent: 20.664024266152403
+    - product: Phosphate
+      rank: 2
+      percent: 14.937037001996273
+    - product: Potassium
+      rank: 2
+      percent: 10.347763707287829
+  '2006':
+    - product: Gilsonite
+      rank: 1
+      percent: 100
+    - product: Magnesium Chloride Brine
+      rank: 1
+      percent: 100
+    - product: Manure Salts
+      rank: 1
+      percent: 100
+    - product: Clay
+      rank: 2
+      percent: 15.525799628713445
+  '2007':
+    - product: Gilsonite
+      rank: 1
+      percent: 100
+    - product: Magnesium Chloride Brine
+      rank: 1
+      percent: 100
+    - product: Manure Salts
+      rank: 1
+      percent: 100
+    - product: Muriate Of Potash-Coarse
+      rank: 1
+      percent: 100
+    - product: Tar Sands
+      rank: 1
+      percent: 100
+    - product: Coal-Bituminous-Raw
+      rank: 1
+      percent: 79.28023332271188
+    - product: Clay
+      rank: 2
+      percent: 32.05364751564823
+    - product: Potassium
+      rank: 2
+      percent: 14.49109832735649
+    - product: Phosphate
+      rank: 2
+      percent: 12.851862696891178
+    - product: Sodium
+      rank: 3
+      percent: 10.125880923963242
+  '2008':
+    - product: Clay
+      rank: 1
+      percent: 100
+    - product: Gilsonite
+      rank: 1
+      percent: 100
+    - product: Magnesium Chloride Brine
+      rank: 1
+      percent: 100
+    - product: Manure Salts
+      rank: 1
+      percent: 100
+    - product: Tar Sands
+      rank: 1
+      percent: 100
+    - product: Potash
+      rank: 1
+      percent: 66.06781123913576
+    - product: Phosphate
+      rank: 2
+      percent: 20.662195895666194
+  '2009':
+    - product: Clay
+      rank: 1
+      percent: 100
+    - product: Gilsonite
+      rank: 1
+      percent: 100
+    - product: Magnesium Chloride Brine
+      rank: 1
+      percent: 100
+    - product: Manure Salts
+      rank: 1
+      percent: 100
+    - product: Tar Sands
+      rank: 1
+      percent: 100
+    - product: Geothermal
+      rank: 2
+      percent: 43.84938497032058
+  '2010':
+    - product: Clay
+      rank: 1
+      percent: 100
+    - product: Gilsonite
+      rank: 1
+      percent: 100
+    - product: Magnesium Chloride Brine
+      rank: 1
+      percent: 100
+    - product: Manure Salts
+      rank: 1
+      percent: 100
+    - product: Tar Sands
+      rank: 1
+      percent: 100
+    - product: Potassium
+      rank: 2
+      percent: 19.40084903774445
+    - product: Phosphate
+      rank: 2
+      percent: 13.956771821267871
+    - product: Geothermal
+      rank: 2
+      percent: 13.121560237279299
+  '2011':
+    - product: Clay
+      rank: 1
+      percent: 100
+    - product: Gilsonite
+      rank: 1
+      percent: 100
+    - product: Magnesium Chloride Brine
+      rank: 1
+      percent: 100
+    - product: Manure Salts
+      rank: 1
+      percent: 100
+    - product: Potassium
+      rank: 1
+      percent: 98.57692055479215
+    - product: Geothermal
+      rank: 2
+      percent: 11.331782680847564
+  '2012':
+    - product: Clay
+      rank: 1
+      percent: 100
+    - product: Gilsonite
+      rank: 1
+      percent: 100
+    - product: Magnesium Chloride Brine
+      rank: 1
+      percent: 100
+    - product: Manure Salts
+      rank: 1
+      percent: 100
+    - product: Coal-Bituminous-Raw
+      rank: 2
+      percent: 17.34115333925811
+    - product: Geothermal
+      rank: 2
+      percent: 13.288414981403982
+    - product: Unprocessed (Wet) Gas
+      rank: 4
+      percent: 28.299545116698596
+  '2013':
+    - product: Clay
+      rank: 1
+      percent: 100
+    - product: Gilsonite
+      rank: 1
+      percent: 100
+    - product: Magnesium Chloride Brine
+      rank: 1
+      percent: 100
+    - product: Phosphate
+      rank: 2
+      percent: 17.716105947549853
+    - product: Geothermal
+      rank: 2
+      percent: 13.657965895493751
+    - product: Potassium
+      rank: 2
+      percent: 12.049562260862777
+federal_production:
+  '2005':
+    - product: Gilsonite (tons)
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      rank: 1
+      percent: 97.72991355934059
+  '2006':
+    - product: Gilsonite (tons)
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      rank: 1
+      percent: 97.78129252853327
+  '2007':
+    - product: Gilsonite (tons)
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      rank: 1
+      percent: 97.59784541031087
+  '2008':
+    - product: Gilsonite (tons)
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      rank: 1
+      percent: 98.02016656660777
+  '2009':
+    - product: Gilsonite (tons)
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      rank: 1
+      percent: 98.31285539811361
+  '2010':
+    - product: Gilsonite (tons)
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      rank: 1
+      percent: 98.21542246596754
+  '2011':
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      rank: 1
+      percent: 98.12984841122906
+  '2012':
+    - product: Gilsonite (tons)
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      rank: 1
+      percent: 98.07311997714339
+  '2013':
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      rank: 1
+      percent: 98.04671481217153
+  '2014':
+    - product: Clay (tons)
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      rank: 1
+      percent: 98.18407875858603

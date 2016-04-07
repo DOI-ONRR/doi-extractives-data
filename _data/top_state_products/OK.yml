@@ -1,0 +1,26 @@
+revenue:
+  '2004':
+    - product: Coal-Fines Circuit
+      rank: 1
+      percent: 100
+  '2006':
+    - product: Asphalt
+      rank: 1
+      percent: 100
+  '2008':
+    - product: Asphalt
+      rank: 1
+      percent: 100
+  '2009':
+    - product: Asphalt
+      rank: 1
+      percent: 100
+  '2010':
+    - product: Asphalt
+      rank: 1
+      percent: 100
+all_production:
+  '2006':
+    - product: Wind
+      rank: 4
+      percent: 10.04871749721195

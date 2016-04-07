@@ -1,7 +1,7 @@
 #!/bin/bash
 ./bin/query.js --format json "
     SELECT
-      state, product, year,
+      state, product, year, percent,
       ROUND(revenue) AS revenue,
       rank
     FROM state_revenue_rank

@@ -7,8 +7,9 @@ module EITI
     end
 
     def percent(num, precision=1, small="&lt;1")
+      num = num.to_f
       # if it's less than 1, return the "small" representation
-      if num.to_f < 1.0
+      if num < 1.0
         return small
       end
       # if it has decimal precision, format it

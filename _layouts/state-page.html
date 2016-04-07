@@ -10,12 +10,15 @@ layout: default
 
 {% assign revenue_products = site.data.state_revenues[state_id].products %}
 {% assign revenue_total = revenue_products.All[year].revenue %}
+{% assign top_revenue_products = site.data.top_state_products[state_id].revenue[year] %}
 
 {% assign federal_products = site.data.state_federal_production[state_id].products %}
 {% assign federal_products_num = federal_products | size %}
+{% assign top_federal_products = site.data.top_state_products[state_id].federal_production[year] %}
 
 {% assign all_products = site.data.state_all_production[state_id].products %}
 {% assign all_products_num = all_products | size %}
+{% assign top_all_products = site.data.top_state_products[state_id].all_production[year] %}
 
 <main id="state-{{ state_id }}" class="container-outer">
   <h1>{{ state_name }}</h1>
@@ -29,7 +32,18 @@ layout: default
         <strong>${{ revenue_total | intcomma }}
           in federal revenue</strong> from
         <a href="#revenue">{{ revenue_products | size }} products</a>
-        in {{ year }}.</li>
+        in {{ year }}.
+        {% if top_revenue_products %}
+        Among them, these are the most notable in terms of revenue:
+        <ul>
+          {% for product in top_revenue_products %}
+          <li><a href="#revenue-{{ product.product | slugify }}">{{ product.product }}</a>:
+            #{{ product.rank }} ({{ product.percent | floor }}%)</li>
+          {% if forloop.index > 10 %}{% break %}{% endif %}
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </li>
     {% else %}
       <li>{{ state_name }} generated no federal revenue in {{ year }}.</li>
     {% endif %}
@@ -37,7 +51,18 @@ layout: default
     {% if all_products_num > 0 %}
       <li>{{ state_name }} produced
         <a href="#all-production">{{ all_products | size }} products</a>
-        on all lands and waters in {{ year }}.</li>
+        on all lands and waters in {{ year }}.
+        {% if top_all_products %}
+        Among them, these are the most notable:
+        <ul>
+          {% for product in top_all_products %}
+          <li><a href="#all-production-{{ product.product | slugify }}">{{ product.product }}</a>:
+            #{{ product.rank }} ({{ product.percent | floor }}%)</li>
+          {% if forloop.index > 10 %}{% break %}{% endif %}
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </li>
     {% else %}
       <li>We have no record of production on all lands and waters in {{ state_name }} in {{ year }}.</li>
     {% endif %}
@@ -45,7 +70,18 @@ layout: default
     {% if federal_products_num > 0 %}
       <li>{{ state_name }} produced
         <a href="#federal-production">{{ federal_products | size }} products</a>
-        on federal lands in {{ year }}.</li>
+        on federal lands in {{ year }}.
+        {% if top_federal_products %}
+        Among them, these are the most notable:
+        <ul>
+          {% for product in top_federal_products %}
+          <li><a href="#federal-production-{{ product.product | slugify }}">{{ product.product }}</a>:
+            #{{ product.rank }} ({{ product.percent | floor }}%)</li>
+          {% if forloop.index > 10 %}{% break %}{% endif %}
+          {% endfor %}
+        </ul>
+        {% endif %}
+        </li>
     {% else %}
       <li>We have no record of federal production in {{ state_name }} in {{ year }}.</li>
     {% endif %}

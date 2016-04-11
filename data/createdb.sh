@@ -35,6 +35,7 @@ cat _input/eia/commodity/oil.tsv \
         --columns 'FL,NY,PA,VA,WV,IL,IN,KS,KY,MI,MO,NE,ND,OH,OK,SD,TN,AL,AR,LA,MS,NM,TX,gulf,CO,MT,UT,WY,AK,,AZ,CA,NV,pacific alaska' \
         --destkey region --valkey volume --skip ',undefined' --of csv \
     | $tables -d $db_url -n all_production_oil
+
 # All Lands Production: Natural Gas (part 1)
 cat _input/eia/commodity/naturalgas.tsv \
     | ./bin/unroll-columns.js \
@@ -53,7 +54,11 @@ cat _input/eia/commodity/renewables.tsv \
         --destkey year --valkey volume \
         --skip ELEC.GEN.ALL-US-99.A,ELEC.GEN.ALL --of csv \
     | $tables -d $db_url -n all_production_renewables
+
+
 load_sql db/rollup-all-production.sql
+
+
 
 # output some rows for debugging purposes
 ./bin/query.js "
@@ -93,5 +98,9 @@ load_sql db/rollup-employment.sql
 
 # Load GDP table
 $tables -d $db_url -i gdp/regional.tsv -n gdp
+
+# Load GDP table
+$tables -d $db_url -i 'state/exports-by-industry.tsv' -n exports
+
 
 

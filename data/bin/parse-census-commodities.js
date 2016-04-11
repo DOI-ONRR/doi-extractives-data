@@ -29,6 +29,7 @@ var HS6 = {
   270900: 'Oil',
   271111: 'Gas', // NGL
   271121: 'Gas',
+  0: 'Total'
 };
 
 if (options.liberal) {
@@ -47,12 +48,17 @@ if (options.liberal) {
     2715: 'Oil',
     // see: <http://www.foreign-trade.com/reference/hscode.cfm?code=28>
     28: 'Mining',
+    0: 'Total'
   };
   extend(HS6, liberal);
 }
 
 function getCommodity(code) {
   // test the more specific codes first
+  if (code === '0') {
+    return HS6['0'];
+  }
+
   for (var len = 6; len > 0; len -= 2) {
     var key = code.substr(0, len);
     if (key in HS6) return HS6[key];
@@ -68,7 +74,7 @@ async.waterfall([
   function categorize(rows, done) {
     rows = rows.filter(function(d) {
       // skip summary rows
-      if (d.HS6 === '0' || d.HS6 === '25' || d.State === 'Unidentified') {
+      if (d === '0' || d.HS6 === '25' || d.State === 'Unidentified') {
         console.warn('skipping row:', d);
         return false;
       }
@@ -94,20 +100,60 @@ async.waterfall([
 
     rows.forEach(function(d, i) {
       if (i === 0) console.warn(d, years);
+
+
       years.forEach(function(year) {
         var value = +d['val' + year] * 1e6;
         var share = +d['share' + year.substr(-2)] / 100
         if (!value) return;
         result.push({
-          State:  d.State,
-          Commodity: d.Commodity,
-          HS6:    d.HS6,
-          Year:   year,
-          Value:  value,
-          Share:  share
+          State:      d.State,
+          Commodity:  d.Commodity,
+          HS6:        d.HS6,
+          Year:       year,
+          Value:      value,
+          Share:      share
         });
       });
     });
+
+    done(null, result);
+  },
+  function consolidate(result, done) {
+
+    var matched = {};
+
+    // Create 'All' commodity
+    result.forEach(function(value){
+      var keyString = value.State + '-' + value.Year;
+
+      // Don't include 'Total' in the sum of all
+      if (value.Commodity !== 'Total') {
+
+        if (matched[keyString]) {
+          matched[keyString].Value += value.Value;
+          matched[keyString].Share += value.Share;
+
+        } else {
+          matched[keyString] = {
+            Value:      value.Value,
+            Share:      value.Share,
+            Commodity:  'All',
+            Resource:   'All',
+            State:      value.State,
+            HS6:        '0',
+            Resource:   'other',
+            Year:       value.Year
+          }
+        }
+      }
+    });
+
+    var matches = Object.keys(matched).map(function (key) {
+      return matched[key];
+    });
+
+    result = result.concat(matches);
 
     done(null, result);
   }

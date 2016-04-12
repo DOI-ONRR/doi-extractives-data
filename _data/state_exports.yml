@@ -3,329 +3,329 @@ AK:
     Total:
       '2011':
         dollars: 5258940000
-        percent: 0.4
+        percent: 0.35
       '2012':
         dollars: 4543390000
-        percent: 0.30000000000000004
+        percent: 0.29
       '2013':
         dollars: 4527640000
-        percent: 0.30000000000000004
+        percent: 0.29
       '2014':
         dollars: 5153120000
-        percent: 0.30000000000000004
+        percent: 0.32
     Gas:
       '2011':
         dollars: 210190000
         percent: 4
       '2012':
         dollars: 144920000
-        percent: 3.2
+        percent: 3.19
       '2014':
         dollars: 216980000
-        percent: 4.2
+        percent: 4.21
     Copper:
       '2011':
         dollars: 199280000
-        percent: 3.8
+        percent: 3.79
       '2012':
         dollars: 169490000
-        percent: 3.7
+        percent: 3.73
       '2013':
         dollars: 150200000
-        percent: 3.3
+        percent: 3.32
       '2014':
         dollars: 186230000
-        percent: 3.6
+        percent: 3.61
     Gold:
       '2011':
         dollars: 142120000
         percent: 2.7
       '2012':
         dollars: 107990000
-        percent: 2.4
+        percent: 2.38
       '2013':
         dollars: 140290000
         percent: 3.1
       '2014':
         dollars: 139940000
-        percent: 2.7
+        percent: 2.72
     Oil:
       '2011':
         dollars: 20000
         percent: 0
       '2013':
         dollars: 50440000
-        percent: 1.1
+        percent: 1.11
       '2014':
         dollars: 85000000
-        percent: 1.6
+        percent: 1.65
     Coal:
       '2011':
         dollars: 30860000
-        percent: 0.6000000000000001
+        percent: 0.59
       '2012':
         dollars: 30630000
-        percent: 0.7000000000000001
+        percent: 0.67
       '2013':
         dollars: 26710000
-        percent: 0.6000000000000001
+        percent: 0.59
       '2014':
         dollars: 17080000
-        percent: 0.30000000000000004
+        percent: 0.33
     All:
       '2011':
         dollars: 582470000
-        percent: 11.1
+        percent: 11.08
       '2012':
         dollars: 453030000
-        percent: 10
+        percent: 9.97
       '2013':
         dollars: 367640000
-        percent: 8.1
+        percent: 8.12
       '2014':
         dollars: 645230000
-        percent: 12.5
+        percent: 12.52
 AL:
   commodities:
     Total:
       '2011':
         dollars: 17927680000
-        percent: 1.2
+        percent: 1.21
       '2012':
         dollars: 19577450000
-        percent: 1.3
+        percent: 1.27
       '2013':
         dollars: 19291040000
-        percent: 1.2
+        percent: 1.22
       '2014':
         dollars: 19517560000
         percent: 1.2
     Coal:
       '2011':
         dollars: 2195160000
-        percent: 12.2
+        percent: 12.24
       '2012':
         dollars: 1671930000
-        percent: 8.5
+        percent: 8.54
       '2013':
         dollars: 1238480000
-        percent: 6.4
+        percent: 6.42
       '2014':
         dollars: 1122260000
-        percent: 5.8
+        percent: 5.75
     All:
       '2011':
         dollars: 2195160000
-        percent: 12.2
+        percent: 12.24
       '2012':
         dollars: 1671930000
-        percent: 8.5
+        percent: 8.54
       '2013':
         dollars: 1238480000
-        percent: 6.4
+        percent: 6.42
       '2014':
         dollars: 1122260000
-        percent: 5.8
+        percent: 5.75
 AR:
   commodities:
     Total:
       '2011':
         dollars: 5610950000
-        percent: 0.4
+        percent: 0.38
       '2012':
         dollars: 7615390000
-        percent: 0.5
+        percent: 0.49
       '2013':
         dollars: 7153970000
-        percent: 0.5
+        percent: 0.45
       '2014':
         dollars: 6856920000
-        percent: 0.4
+        percent: 0.42
 AZ:
   commodities:
     Total:
       '2011':
         dollars: 17884510000
-        percent: 1.2
+        percent: 1.21
       '2012':
         dollars: 18405180000
-        percent: 1.2
+        percent: 1.19
       '2013':
         dollars: 19410150000
-        percent: 1.2
+        percent: 1.23
       '2014':
         dollars: 21123580000
         percent: 1.3
     Copper:
       '2011':
         dollars: 757030000
-        percent: 4.2
+        percent: 4.23
       '2012':
         dollars: 889670000
-        percent: 4.8
+        percent: 4.83
       '2013':
         dollars: 1547690000
-        percent: 8
+        percent: 7.97
       '2014':
         dollars: 2177730000
-        percent: 10.3
+        percent: 10.31
     Gas:
       '2011':
         dollars: 376980000
-        percent: 2.1
+        percent: 2.11
       '2012':
         dollars: 372750000
-        percent: 2
+        percent: 2.03
       '2013':
         dollars: 540040000
-        percent: 2.8
+        percent: 2.78
       '2014':
         dollars: 643100000
-        percent: 3
+        percent: 3.04
     All:
       '2011':
         dollars: 1134010000
-        percent: 6.3
+        percent: 6.34
       '2012':
         dollars: 1262420000
-        percent: 6.9
+        percent: 6.86
       '2013':
         dollars: 2087730000
-        percent: 10.8
+        percent: 10.76
       '2014':
         dollars: 2820830000
-        percent: 13.4
+        percent: 13.35
 CA:
   commodities:
     Total:
       '2011':
         dollars: 159421390000
-        percent: 10.8
+        percent: 10.75
       '2012':
         dollars: 161746030000
-        percent: 10.5
+        percent: 10.46
       '2013':
         dollars: 168044750000
-        percent: 10.6
+        percent: 10.64
       '2014':
         dollars: 174128620000
-        percent: 10.7
+        percent: 10.73
 CO:
   commodities:
     Total:
       '2011':
         dollars: 7338210000
-        percent: 0.5
+        percent: 0.49
       '2012':
         dollars: 8167100000
-        percent: 0.5
+        percent: 0.53
       '2013':
-        dollars: 8546540000.000001
-        percent: 0.5
+        dollars: 8546540000
+        percent: 0.54
       '2014':
         dollars: 8367660000
-        percent: 0.5
+        percent: 0.52
     Oil:
       '2011':
         dollars: 46810000
-        percent: 0.6000000000000001
+        percent: 0.64
       '2012':
         dollars: 84610000
-        percent: 1
+        percent: 1.04
       '2013':
         dollars: 111880000
-        percent: 1.3
+        percent: 1.31
       '2014':
         dollars: 93970000
-        percent: 1.1
+        percent: 1.12
     All:
       '2011':
         dollars: 46810000
-        percent: 0.6000000000000001
+        percent: 0.64
       '2012':
         dollars: 84610000
-        percent: 1
+        percent: 1.04
       '2013':
         dollars: 111880000
-        percent: 1.3
+        percent: 1.31
       '2014':
         dollars: 93970000
-        percent: 1.1
+        percent: 1.12
 CT:
   commodities:
     Total:
       '2011':
         dollars: 16232750000
-        percent: 1.1
+        percent: 1.09
       '2012':
         dollars: 15871700000
-        percent: 1
+        percent: 1.03
       '2013':
-        dollars: 16423650000.000002
-        percent: 1
+        dollars: 16423650000
+        percent: 1.04
       '2014':
         dollars: 15941190000
-        percent: 1
+        percent: 0.98
 DE:
   commodities:
     Total:
       '2011':
         dollars: 5516260000
-        percent: 0.4
+        percent: 0.37
       '2012':
         dollars: 5113540000
-        percent: 0.30000000000000004
+        percent: 0.33
       '2013':
         dollars: 5342690000
-        percent: 0.30000000000000004
+        percent: 0.34
       '2014':
         dollars: 5292470000
-        percent: 0.30000000000000004
+        percent: 0.33
 FL:
   commodities:
     Total:
       '2011':
         dollars: 65009790000
-        percent: 4.4
+        percent: 4.39
       '2012':
         dollars: 66231810000
-        percent: 4.3
+        percent: 4.28
       '2013':
         dollars: 61344300000
-        percent: 3.9
+        percent: 3.88
       '2014':
         dollars: 58637060000
-        percent: 3.6
+        percent: 3.61
 GA:
   commodities:
     Total:
       '2011':
         dollars: 34863070000
-        percent: 2.4
+        percent: 2.35
       '2012':
         dollars: 36071950000
-        percent: 2.3
+        percent: 2.33
       '2013':
         dollars: 37516580000
-        percent: 2.4
+        percent: 2.38
       '2014':
         dollars: 39365290000
-        percent: 2.4
+        percent: 2.43
 HI:
   commodities:
     Total:
       '2011':
         dollars: 884370000
-        percent: 0.1
+        percent: 0.06
       '2012':
         dollars: 731690000
-        percent: 0
+        percent: 0.05
       '2013':
         dollars: 597990000
-        percent: 0
+        percent: 0.04
       '2014':
         dollars: 1452110000
-        percent: 0.1
+        percent: 0.09
 IA:
   commodities:
     Total:
@@ -334,13 +334,13 @@ IA:
         percent: 0.9
       '2012':
         dollars: 14624870000
-        percent: 0.9
+        percent: 0.95
       '2013':
         dollars: 13888030000
-        percent: 0.9
+        percent: 0.88
       '2014':
         dollars: 15100590000
-        percent: 0.9
+        percent: 0.93
 ID:
   commodities:
     Total:
@@ -352,24 +352,24 @@ ID:
         percent: 0.4
       '2013':
         dollars: 5781910000
-        percent: 0.4
+        percent: 0.37
       '2014':
         dollars: 5135520000
-        percent: 0.30000000000000004
+        percent: 0.32
 IL:
   commodities:
     Total:
       '2011':
         dollars: 64902900000
-        percent: 4.4
+        percent: 4.38
       '2012':
         dollars: 68156580000
-        percent: 4.4
+        percent: 4.41
       '2013':
-        dollars: 66088539999.99999
-        percent: 4.2
+        dollars: 66088540000
+        percent: 4.18
       '2014':
-        dollars: 68182149999.99999
+        dollars: 68182150000
         percent: 4.2
     Oil:
       '2011':
@@ -380,10 +380,10 @@ IL:
         percent: 0
       '2013':
         dollars: 215270000
-        percent: 0.30000000000000004
+        percent: 0.33
       '2014':
         dollars: 1129220000
-        percent: 1.7000000000000002
+        percent: 1.66
     All:
       '2011':
         dollars: 700000
@@ -393,74 +393,74 @@ IL:
         percent: 0
       '2013':
         dollars: 215270000
-        percent: 0.30000000000000004
+        percent: 0.33
       '2014':
         dollars: 1129220000
-        percent: 1.7000000000000002
+        percent: 1.66
 IN:
   commodities:
     Total:
       '2011':
         dollars: 32332050000
-        percent: 2.2
+        percent: 2.18
       '2012':
         dollars: 34399340000
-        percent: 2.2
+        percent: 2.23
       '2013':
         dollars: 34161590000
-        percent: 2.2
+        percent: 2.16
       '2014':
         dollars: 35452470000
-        percent: 2.2
+        percent: 2.18
 KS:
   commodities:
     Total:
       '2011':
         dollars: 11623400000
-        percent: 0.8
+        percent: 0.78
       '2012':
         dollars: 11700900000
-        percent: 0.8
+        percent: 0.76
       '2013':
         dollars: 12464810000
-        percent: 0.8
+        percent: 0.79
       '2014':
         dollars: 12003560000
-        percent: 0.7000000000000001
+        percent: 0.74
 KY:
   commodities:
     Total:
       '2011':
         dollars: 20118880000
-        percent: 1.4
+        percent: 1.36
       '2012':
         dollars: 22132160000
-        percent: 1.4
+        percent: 1.43
       '2013':
         dollars: 25365590000
-        percent: 1.6
+        percent: 1.61
       '2014':
         dollars: 27541230000
-        percent: 1.7000000000000002
+        percent: 1.7
 LA:
   commodities:
     Total:
       '2011':
         dollars: 54971150000
-        percent: 3.7
+        percent: 3.71
       '2012':
         dollars: 62877210000
-        percent: 4.1
+        percent: 4.07
       '2013':
         dollars: 63338560000
-        percent: 4
+        percent: 4.01
       '2014':
         dollars: 65085100000
-        percent: 4
+        percent: 4.01
     Coal:
       '2011':
         dollars: 1585420000
-        percent: 2.9
+        percent: 2.88
       '2012':
         dollars: 1003150000
         percent: 1.6
@@ -469,162 +469,162 @@ LA:
         percent: 0.8
       '2014':
         dollars: 287240000
-        percent: 0.4
+        percent: 0.44
     All:
       '2011':
         dollars: 1585420000
-        percent: 2.9
+        percent: 2.88
       '2012':
         dollars: 1003210000
         percent: 1.6
       '2013':
         dollars: 898800000
-        percent: 1.4
+        percent: 1.42
       '2014':
         dollars: 685960000
-        percent: 1.1
+        percent: 1.05
     Oil:
       '2012':
         dollars: 60000
         percent: 0
       '2013':
         dollars: 392250000
-        percent: 0.6000000000000001
+        percent: 0.62
       '2014':
         dollars: 398720000
-        percent: 0.6000000000000001
+        percent: 0.61
 MA:
   commodities:
     Total:
       '2011':
         dollars: 27870980000
-        percent: 1.9
+        percent: 1.88
       '2012':
         dollars: 25614610000
-        percent: 1.7000000000000002
+        percent: 1.66
       '2013':
         dollars: 26823290000
-        percent: 1.7000000000000002
+        percent: 1.7
       '2014':
         dollars: 27363930000
-        percent: 1.7000000000000002
+        percent: 1.69
 MD:
   commodities:
     Total:
       '2011':
         dollars: 10862560000
-        percent: 0.7000000000000001
+        percent: 0.73
       '2012':
         dollars: 11743360000
-        percent: 0.8
+        percent: 0.76
       '2013':
         dollars: 11752280000
-        percent: 0.7000000000000001
+        percent: 0.74
       '2014':
         dollars: 12241250000
-        percent: 0.8
+        percent: 0.75
 ME:
   commodities:
     Total:
       '2011':
         dollars: 3422090000
-        percent: 0.2
+        percent: 0.23
       '2012':
         dollars: 3047900000
         percent: 0.2
       '2013':
         dollars: 2686650000
-        percent: 0.2
+        percent: 0.17
       '2014':
         dollars: 2751870000
-        percent: 0.2
+        percent: 0.17
     Gas:
       '2011':
         dollars: 5110000
-        percent: 0.1
+        percent: 0.15
       '2012':
         dollars: 22160000
-        percent: 0.7000000000000001
+        percent: 0.73
       '2013':
-        dollars: 133860000.00000001
-        percent: 5
+        dollars: 133860000
+        percent: 4.98
       '2014':
         dollars: 210230000
-        percent: 7.6
+        percent: 7.64
     All:
       '2011':
         dollars: 5110000
-        percent: 0.1
+        percent: 0.15
       '2012':
         dollars: 22160000
-        percent: 0.7000000000000001
+        percent: 0.73
       '2013':
         dollars: 197270000
-        percent: 7.3
+        percent: 7.34
       '2014':
         dollars: 278120000
-        percent: 10.1
+        percent: 10.11
     Oil:
       '2013':
         dollars: 63410000
-        percent: 2.4
+        percent: 2.36
       '2014':
         dollars: 67890000
-        percent: 2.5
+        percent: 2.47
 MI:
   commodities:
     Total:
       '2011':
         dollars: 51063990000
-        percent: 3.4
+        percent: 3.44
       '2012':
         dollars: 57050740000
-        percent: 3.7
+        percent: 3.69
       '2013':
         dollars: 58652790000
-        percent: 3.7
+        percent: 3.71
       '2014':
         dollars: 55751140000
-        percent: 3.4
+        percent: 3.43
     Gas:
       '2011':
         dollars: 1645730000
-        percent: 3.2
+        percent: 3.22
       '2012':
         dollars: 1651360000
-        percent: 2.9
+        percent: 2.89
       '2013':
         dollars: 1931510000
-        percent: 3.3
+        percent: 3.29
       '2014':
-        dollars: 2060719999.9999998
+        dollars: 2060720000
         percent: 3.7
     Iron:
       '2011':
         dollars: 582680000
-        percent: 1.1
+        percent: 1.14
       '2012':
         dollars: 511080000
         percent: 0.9
       '2013':
         dollars: 607470000
-        percent: 1
+        percent: 1.04
       '2014':
         dollars: 433980000
-        percent: 0.8
+        percent: 0.78
     All:
       '2011':
         dollars: 2228410000
-        percent: 4.4
+        percent: 4.36
       '2012':
         dollars: 2162440000
-        percent: 3.8
+        percent: 3.79
       '2013':
         dollars: 2538980000
-        percent: 4.3
+        percent: 4.33
       '2014':
         dollars: 2494700000
-        percent: 4.5
+        percent: 4.47
 MN:
   commodities:
     Total:
@@ -633,101 +633,101 @@ MN:
         percent: 1.4
       '2012':
         dollars: 20827310000
-        percent: 1.3
+        percent: 1.35
       '2013':
         dollars: 20771680000
-        percent: 1.3
+        percent: 1.31
       '2014':
         dollars: 21371630000
-        percent: 1.3
+        percent: 1.32
     Iron:
       '2011':
         dollars: 394540000
         percent: 1.9
       '2012':
         dollars: 664580000
-        percent: 3.2
+        percent: 3.19
       '2013':
         dollars: 314000000
-        percent: 1.5
+        percent: 1.51
       '2014':
         dollars: 374140000
-        percent: 1.8
+        percent: 1.75
     All:
       '2011':
         dollars: 394540000
         percent: 1.9
       '2012':
         dollars: 664580000
-        percent: 3.2
+        percent: 3.19
       '2013':
         dollars: 314000000
-        percent: 1.5
+        percent: 1.51
       '2014':
         dollars: 374140000
-        percent: 1.8
+        percent: 1.75
 MO:
   commodities:
     Total:
       '2011':
         dollars: 14161090000
-        percent: 1
+        percent: 0.96
       '2012':
         dollars: 13903490000
         percent: 0.9
       '2013':
         dollars: 12932260000
-        percent: 0.8
+        percent: 0.82
       '2014':
         dollars: 14141190000
-        percent: 0.9
+        percent: 0.87
     Coal:
       '2011':
         dollars: 550250000
-        percent: 3.9
+        percent: 3.89
       '2012':
         dollars: 683350000
-        percent: 4.9
+        percent: 4.92
       '2013':
-        dollars: 515539999.9999999
-        percent: 4
+        dollars: 515540000
+        percent: 3.99
       '2014':
         dollars: 392850000
-        percent: 2.8
+        percent: 2.78
     All:
       '2011':
         dollars: 550250000
-        percent: 3.9
+        percent: 3.89
       '2012':
         dollars: 683350000
-        percent: 4.9
+        percent: 4.92
       '2013':
-        dollars: 515539999.9999999
-        percent: 4
+        dollars: 515540000
+        percent: 3.99
       '2014':
         dollars: 392850000
-        percent: 2.8
+        percent: 2.78
 MS:
   commodities:
     Total:
       '2011':
         dollars: 10938940000
-        percent: 0.7000000000000001
+        percent: 0.74
       '2012':
         dollars: 11793480000
-        percent: 0.8
+        percent: 0.76
       '2013':
         dollars: 12390740000
-        percent: 0.8
+        percent: 0.78
       '2014':
         dollars: 11414180000
-        percent: 0.7000000000000001
+        percent: 0.7
 MT:
   commodities:
     Total:
       '2011':
         dollars: 1591810000
-        percent: 0.1
+        percent: 0.11
       '2012':
         dollars: 1575980000
         percent: 0.1
@@ -736,403 +736,403 @@ MT:
         percent: 0.1
       '2014':
         dollars: 1529390000
-        percent: 0.1
+        percent: 0.09
     Coal:
       '2011':
         dollars: 152340000
-        percent: 9.6
+        percent: 9.57
       '2012':
         dollars: 150790000
-        percent: 9.6
+        percent: 9.57
       '2013':
         dollars: 144750000
-        percent: 9.6
+        percent: 9.61
       '2014':
         dollars: 137940000
-        percent: 9
+        percent: 9.02
     All:
       '2011':
         dollars: 174170000
-        percent: 10.9
+        percent: 10.94
       '2012':
         dollars: 221130000
-        percent: 14
+        percent: 14.03
       '2013':
         dollars: 218960000
-        percent: 14.5
+        percent: 14.54
       '2014':
         dollars: 223130000
-        percent: 14.6
+        percent: 14.59
 NC:
   commodities:
     Total:
       '2011':
         dollars: 27067050000
-        percent: 1.8
+        percent: 1.83
       '2012':
         dollars: 28838530000
-        percent: 1.9
+        percent: 1.87
       '2013':
         dollars: 29340100000
-        percent: 1.9
+        percent: 1.86
       '2014':
         dollars: 31290510000
-        percent: 1.9
+        percent: 1.93
 ND:
   commodities:
     Total:
       '2011':
         dollars: 3392770000
-        percent: 0.2
+        percent: 0.23
       '2012':
         dollars: 4308770000
-        percent: 0.30000000000000004
+        percent: 0.28
       '2013':
         dollars: 3729110000
-        percent: 0.2
+        percent: 0.24
       '2014':
         dollars: 5289470000
-        percent: 0.30000000000000004
+        percent: 0.33
     Oil:
       '2011':
         dollars: 697830000
-        percent: 20.6
+        percent: 20.57
       '2012':
         dollars: 1128190000
-        percent: 26.2
+        percent: 26.18
       '2013':
         dollars: 720470000
-        percent: 19.3
+        percent: 19.32
       '2014':
         dollars: 2155720000
-        percent: 40.8
+        percent: 40.76
     All:
       '2011':
         dollars: 697830000
-        percent: 20.6
+        percent: 20.57
       '2012':
         dollars: 1130850000
-        percent: 26.2
+        percent: 26.25
       '2013':
         dollars: 723080000
-        percent: 19.4
+        percent: 19.39
       '2014':
         dollars: 2264360000
-        percent: 42.8
+        percent: 42.81
     Gas:
       '2012':
         dollars: 2660000
-        percent: 0.1
+        percent: 0.06
       '2013':
         dollars: 2610000
-        percent: 0.1
+        percent: 0.07
       '2014':
         dollars: 108640000
-        percent: 2.1
+        percent: 2.05
 NE:
   commodities:
     Total:
       '2011':
         dollars: 7587580000
-        percent: 0.5
+        percent: 0.51
       '2012':
         dollars: 7455430000
-        percent: 0.5
+        percent: 0.48
       '2013':
         dollars: 7393350000
-        percent: 0.5
+        percent: 0.47
       '2014':
         dollars: 7863220000
-        percent: 0.5
+        percent: 0.48
     Gas:
       '2011':
         dollars: 419660000
-        percent: 5.5
+        percent: 5.53
       '2012':
         dollars: 245540000
-        percent: 3.3
+        percent: 3.29
       '2013':
         dollars: 404590000
-        percent: 5.5
+        percent: 5.47
       '2014':
         dollars: 476520000
-        percent: 6.1
+        percent: 6.06
     All:
       '2011':
         dollars: 419660000
-        percent: 5.5
+        percent: 5.53
       '2012':
         dollars: 245540000
-        percent: 3.3
+        percent: 3.29
       '2013':
         dollars: 404590000
-        percent: 5.5
+        percent: 5.47
       '2014':
         dollars: 476520000
-        percent: 6.1
+        percent: 6.06
 NH:
   commodities:
     Total:
       '2011':
         dollars: 4306550000
-        percent: 0.30000000000000004
+        percent: 0.29
       '2012':
         dollars: 3489250000
-        percent: 0.2
+        percent: 0.23
       '2013':
         dollars: 4184130000
-        percent: 0.30000000000000004
+        percent: 0.26
       '2014':
         dollars: 4424340000
-        percent: 0.30000000000000004
+        percent: 0.27
     Oil:
       '2012':
         dollars: 1520000
-        percent: 0
+        percent: 0.04
       '2013':
         dollars: 673040000
-        percent: 16.1
+        percent: 16.09
       '2014':
         dollars: 199970000
-        percent: 4.5
+        percent: 4.52
     All:
       '2012':
         dollars: 1520000
-        percent: 0
+        percent: 0.04
       '2013':
         dollars: 673040000
-        percent: 16.1
+        percent: 16.09
       '2014':
         dollars: 199970000
-        percent: 4.5
+        percent: 4.52
 NJ:
   commodities:
     Total:
       '2011':
         dollars: 38172320000
-        percent: 2.6
+        percent: 2.57
       '2012':
         dollars: 37300580000
-        percent: 2.4
+        percent: 2.41
       '2013':
         dollars: 36725660000
-        percent: 2.3
+        percent: 2.33
       '2014':
         dollars: 36836020000
-        percent: 2.3
+        percent: 2.27
 NM:
   commodities:
     Total:
       '2011':
-        dollars: 2095860000.0000002
-        percent: 0.1
+        dollars: 2095860000
+        percent: 0.14
       '2012':
         dollars: 2957810000
-        percent: 0.2
+        percent: 0.19
       '2013':
         dollars: 2727520000
-        percent: 0.2
+        percent: 0.17
       '2014':
         dollars: 3788920000
-        percent: 0.2
+        percent: 0.23
 NV:
   commodities:
     Total:
       '2011':
         dollars: 7989590000
-        percent: 0.5
+        percent: 0.54
       '2012':
         dollars: 10261530000
-        percent: 0.7000000000000001
+        percent: 0.66
       '2013':
         dollars: 8700600000
-        percent: 0.6000000000000001
+        percent: 0.55
       '2014':
         dollars: 7701390000
-        percent: 0.5
+        percent: 0.47
     Copper:
       '2011':
         dollars: 835450000
-        percent: 10.5
+        percent: 10.46
       '2012':
         dollars: 906910000
-        percent: 8.8
+        percent: 8.84
       '2013':
         dollars: 604390000
-        percent: 6.9
+        percent: 6.95
       '2014':
         dollars: 574950000
-        percent: 7.5
+        percent: 7.47
     All:
       '2011':
         dollars: 835450000
-        percent: 10.5
+        percent: 10.46
       '2012':
         dollars: 906910000
-        percent: 8.8
+        percent: 8.84
       '2013':
         dollars: 604390000
-        percent: 6.9
+        percent: 6.95
       '2014':
         dollars: 574950000
-        percent: 7.5
+        percent: 7.47
 NY:
   commodities:
     Total:
       '2011':
         dollars: 84999350000
-        percent: 5.7
+        percent: 5.73
       '2012':
         dollars: 81341090000
-        percent: 5.3
+        percent: 5.26
       '2013':
         dollars: 86522550000
-        percent: 5.5
+        percent: 5.48
       '2014':
         dollars: 86006570000
         percent: 5.3
     Gas:
       '2011':
         dollars: 370380000
-        percent: 0.4
+        percent: 0.44
       '2012':
         dollars: 63460000
-        percent: 0.1
+        percent: 0.08
       '2013':
         dollars: 550250000
-        percent: 0.6000000000000001
+        percent: 0.64
       '2014':
         dollars: 908640000
-        percent: 1.1
+        percent: 1.06
     All:
       '2011':
         dollars: 370380000
-        percent: 0.4
+        percent: 0.44
       '2012':
         dollars: 63460000
-        percent: 0.1
+        percent: 0.08
       '2013':
         dollars: 550250000
-        percent: 0.6000000000000001
+        percent: 0.64
       '2014':
         dollars: 908640000
-        percent: 1.1
+        percent: 1.06
 OH:
   commodities:
     Total:
       '2011':
         dollars: 46457640000
-        percent: 3.1
+        percent: 3.13
       '2012':
         dollars: 48645040000
-        percent: 3.1
+        percent: 3.15
       '2013':
         dollars: 50799280000
-        percent: 3.2
+        percent: 3.22
       '2014':
         dollars: 52129530000
-        percent: 3.2
+        percent: 3.21
 OK:
   commodities:
     Total:
       '2011':
         dollars: 6227680000
-        percent: 0.4
+        percent: 0.42
       '2012':
         dollars: 6578520000
-        percent: 0.4
+        percent: 0.43
       '2013':
         dollars: 6919240000
-        percent: 0.4
+        percent: 0.44
       '2014':
         dollars: 6299740000
-        percent: 0.4
+        percent: 0.39
 OR:
   commodities:
     Total:
       '2011':
         dollars: 18316970000
-        percent: 1.2
+        percent: 1.24
       '2012':
         dollars: 18388440000
-        percent: 1.2
+        percent: 1.19
       '2013':
         dollars: 18640280000
-        percent: 1.2
+        percent: 1.18
       '2014':
         dollars: 20919800000
-        percent: 1.3
+        percent: 1.29
 PA:
   commodities:
     Total:
       '2011':
         dollars: 41103130000
-        percent: 2.8
+        percent: 2.77
       '2012':
         dollars: 38850310000
-        percent: 2.5
+        percent: 2.51
       '2013':
         dollars: 41161470000
-        percent: 2.6
+        percent: 2.61
       '2014':
         dollars: 40226860000
-        percent: 2.5
+        percent: 2.48
     Coal:
       '2011':
         dollars: 2597810000
-        percent: 6.3
+        percent: 6.32
       '2012':
         dollars: 1204440000
         percent: 3.1
       '2013':
         dollars: 1999120000
-        percent: 4.9
+        percent: 4.86
       '2014':
         dollars: 1580020000
-        percent: 3.9
+        percent: 3.93
     All:
       '2011':
         dollars: 2597810000
-        percent: 6.3
+        percent: 6.32
       '2012':
         dollars: 1204440000
         percent: 3.1
       '2013':
         dollars: 1999120000
-        percent: 4.9
+        percent: 4.86
       '2014':
         dollars: 1580020000
-        percent: 3.9
+        percent: 3.93
 RI:
   commodities:
     Total:
       '2011':
         dollars: 2288560000
-        percent: 0.2
+        percent: 0.15
       '2012':
         dollars: 2370060000
-        percent: 0.2
+        percent: 0.15
       '2013':
         dollars: 2162790000
-        percent: 0.1
+        percent: 0.14
       '2014':
         dollars: 2393840000
-        percent: 0.1
+        percent: 0.15
 SC:
   commodities:
     Total:
       '2011':
         dollars: 24732580000
-        percent: 1.7000000000000002
+        percent: 1.67
       '2012':
         dollars: 25102900000
-        percent: 1.6
+        percent: 1.62
       '2013':
         dollars: 26253430000
-        percent: 1.7000000000000002
+        percent: 1.66
       '2014':
         dollars: 29703980000
-        percent: 1.8
+        percent: 1.83
 SD:
   commodities:
     Total:
@@ -1154,80 +1154,80 @@ SD:
         percent: 0.2
       '2014':
         dollars: 19890000
-        percent: 1.3
+        percent: 1.25
     All:
       '2012':
         dollars: 3070000
         percent: 0.2
       '2014':
         dollars: 19890000
-        percent: 1.3
+        percent: 1.25
 TN:
   commodities:
     Total:
       '2011':
         dollars: 30016120000
-        percent: 2
+        percent: 2.02
       '2012':
         dollars: 31142460000
-        percent: 2
+        percent: 2.01
       '2013':
         dollars: 32314580000
-        percent: 2
+        percent: 2.05
       '2014':
         dollars: 32956890000
-        percent: 2
+        percent: 2.03
 TX:
   commodities:
     Total:
       '2011':
         dollars: 251104280000
-        percent: 16.9
+        percent: 16.94
       '2012':
         dollars: 264666800000
-        percent: 17.1
+        percent: 17.12
       '2013':
         dollars: 279490890000
-        percent: 17.7
+        percent: 17.69
       '2014':
         dollars: 289023270000
         percent: 17.8
     Oil:
       '2011':
         dollars: 723260000
-        percent: 0.30000000000000004
+        percent: 0.29
       '2012':
         dollars: 659510000
-        percent: 0.2
+        percent: 0.25
       '2013':
         dollars: 1837170000
-        percent: 0.7000000000000001
+        percent: 0.66
       '2014':
         dollars: 7355690000
-        percent: 2.5
+        percent: 2.54
     Gas:
       '2011':
         dollars: 2176580000
-        percent: 0.9
+        percent: 0.87
       '2012':
         dollars: 1531190000
-        percent: 0.6000000000000001
+        percent: 0.58
       '2013':
         dollars: 1997250000
-        percent: 0.7000000000000001
+        percent: 0.71
       '2014':
         dollars: 2769360000
-        percent: 1
+        percent: 0.96
     All:
       '2011':
         dollars: 2899840000
-        percent: 1.2
+        percent: 1.15
       '2012':
         dollars: 2190700000
-        percent: 0.8
+        percent: 0.83
       '2013':
         dollars: 3834420000
-        percent: 1.4
+        percent: 1.37
       '2014':
         dollars: 10125050000
         percent: 3.5
@@ -1236,181 +1236,181 @@ UT:
     Total:
       '2011':
         dollars: 18968260000
-        percent: 1.3
+        percent: 1.28
       '2012':
         dollars: 19256170000
-        percent: 1.2
+        percent: 1.25
       '2013':
         dollars: 16111380000
-        percent: 1
+        percent: 1.02
       '2014':
         dollars: 12265690000
-        percent: 0.8
+        percent: 0.76
 VA:
   commodities:
     Total:
       '2011':
         dollars: 18124710000
-        percent: 1.2
+        percent: 1.22
       '2012':
         dollars: 18285660000
-        percent: 1.2
+        percent: 1.18
       '2013':
         dollars: 17944930000
-        percent: 1.1
+        percent: 1.14
       '2014':
         dollars: 19194380000
-        percent: 1.2
+        percent: 1.18
     Coal:
       '2011':
         dollars: 1281310000
-        percent: 7.1
+        percent: 7.07
       '2012':
         dollars: 356900000
-        percent: 2
+        percent: 1.95
       '2013':
         dollars: 67230000
-        percent: 0.4
+        percent: 0.37
       '2014':
         dollars: 507730000
-        percent: 2.6
+        percent: 2.65
     All:
       '2011':
         dollars: 1281310000
-        percent: 7.1
+        percent: 7.07
       '2012':
         dollars: 356900000
-        percent: 2
+        percent: 1.95
       '2013':
         dollars: 67230000
-        percent: 0.4
+        percent: 0.37
       '2014':
         dollars: 507730000
-        percent: 2.6
+        percent: 2.65
 VT:
   commodities:
     Total:
       '2011':
         dollars: 4274550000
-        percent: 0.30000000000000004
+        percent: 0.29
       '2012':
-        dollars: 4139180000.0000005
-        percent: 0.30000000000000004
+        dollars: 4139180000
+        percent: 0.27
       '2013':
         dollars: 4026060000
-        percent: 0.30000000000000004
+        percent: 0.25
       '2014':
         dollars: 3642580000
-        percent: 0.2
+        percent: 0.22
 WA:
   commodities:
     Total:
       '2011':
         dollars: 64800270000
-        percent: 4.4
+        percent: 4.37
       '2012':
         dollars: 75655120000
-        percent: 4.9
+        percent: 4.89
       '2013':
         dollars: 81636900000
-        percent: 5.2
+        percent: 5.17
       '2014':
         dollars: 90645900000
-        percent: 5.6
+        percent: 5.58
 WI:
   commodities:
     Total:
       '2011':
         dollars: 22068880000
-        percent: 1.5
+        percent: 1.49
       '2012':
         dollars: 23119170000
         percent: 1.5
       '2013':
         dollars: 23109310000
-        percent: 1.5
+        percent: 1.46
       '2014':
         dollars: 23432550000
-        percent: 1.4
+        percent: 1.44
 WV:
   commodities:
     Total:
       '2011':
         dollars: 9039170000
-        percent: 0.6000000000000001
+        percent: 0.61
       '2012':
         dollars: 11407170000
-        percent: 0.7000000000000001
+        percent: 0.74
       '2013':
         dollars: 8630600000
-        percent: 0.5
+        percent: 0.55
       '2014':
         dollars: 7496040000
-        percent: 0.5
+        percent: 0.46
     Coal:
       '2011':
         dollars: 5294510000
-        percent: 58.6
+        percent: 58.57
       '2012':
         dollars: 7431290000
-        percent: 65.1
+        percent: 65.15
       '2013':
         dollars: 4548080000
         percent: 52.7
       '2014':
         dollars: 3113800000
-        percent: 41.5
+        percent: 41.54
     All:
       '2011':
         dollars: 5294510000
-        percent: 58.6
+        percent: 58.57
       '2012':
         dollars: 7431290000
-        percent: 65.1
+        percent: 65.15
       '2013':
         dollars: 4548080000
         percent: 52.7
       '2014':
         dollars: 3113800000
-        percent: 41.5
+        percent: 41.54
 WY:
   commodities:
     Total:
       '2011':
         dollars: 1218710000
-        percent: 0.1
+        percent: 0.08
       '2012':
         dollars: 1420960000
-        percent: 0.1
+        percent: 0.09
       '2013':
         dollars: 1335650000
-        percent: 0.1
+        percent: 0.08
       '2014':
         dollars: 1757150000
-        percent: 0.1
+        percent: 0.11
     Oil:
       '2011':
         dollars: 11230000
-        percent: 0.9
+        percent: 0.92
       '2012':
         dollars: 55340000
-        percent: 3.9
+        percent: 3.89
       '2013':
         dollars: 43910000
-        percent: 3.3
+        percent: 3.29
       '2014':
         dollars: 421940000
-        percent: 24
+        percent: 24.01
     All:
       '2011':
         dollars: 11230000
-        percent: 0.9
+        percent: 0.92
       '2012':
         dollars: 55340000
-        percent: 3.9
+        percent: 3.89
       '2013':
         dollars: 43910000
-        percent: 3.3
+        percent: 3.29
       '2014':
         dollars: 421940000
-        percent: 24
+        percent: 24.01

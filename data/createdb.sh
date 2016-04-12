@@ -108,4 +108,4 @@ $tito --read tsv _input/onrr/disbursements/state.tsv \
     --filter State \
     --map ./_input/onrr/disbursements/state.js \
     | $tables -t ndjson -d $db_url -n state_disbursements
-
+load_sql db/rollup-state-disbursements.sql

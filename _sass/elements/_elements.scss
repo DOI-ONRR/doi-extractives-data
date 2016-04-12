@@ -65,9 +65,17 @@ thead {
   text-align: center;
 }
 
+td,
+th {
+  padding: 5px;
+}
+
 td {
   border: 1px solid $mid-gray;
-  padding: 5px;
+}
+
+table .numeric {
+  text-align: right;
 }
 
 .hidden {

@@ -108,10 +108,10 @@ layout: default
 
     {% capture gdp_summary %}
       {% if gdp[year].dollars %}
-        The extractives industry created
+        The extractives industry contributed
         <a href="#gdp">${{ gdp[year].dollars | intcomma }}</a>
-        on average in {{ state_name }} in {{ year }}, or
-        {{ gdp[year].percent | percent }}% of state-wide GDP.
+        toward {{ state_name }}'s GDP in {{ year }}, or
+        {{ gdp[year].percent | percent }}%.
       {% else %}
         The extractives industry did not have any effect on GDP in {{ state_name }} in {{ year }}.
       {% endif %}
@@ -155,15 +155,17 @@ layout: default
       <table>
         <thead>
           <th>Year</th>
-          <th>Revenue</th>
-          <th>Rank</th>
+          <th class="numeric">Revenue</th>
+          <th class="numeric">US %</th>
+          <th class="numeric">Rank</th>
         </thead>
         <tbody>
         {% for year in product[1] %}
           <tr>
             <td>{{ year[0] }}</td>
-            <td>${{ year[1].revenue | intcomma }}</td>
-            <td>{{ year[1].rank | ordinal:'super' }}</td>
+            <td class="numeric">${{ year[1].revenue | intcomma }}</td>
+            <td class="numeric">{{ year[1].percent | percent }}%</td>
+            <td class="numeric">{{ year[1].rank | ordinal:'super' }}</td>
           </tr>
         {% endfor %}
         </tbody>
@@ -188,15 +190,17 @@ layout: default
       <table>
         <thead>
           <th>Year</th>
-          <th>Volume</th>
-          <th>Rank</th>
+          <th class="numeric">Production (units)</th>
+          <th class="numeric">US %</th>
+          <th class="numeric">Rank</th>
         </thead>
         <tbody>
         {% for year in product[1] %}
           <tr>
             <td>{{ year[0] }}</td>
-            <td>${{ year[1].volume | intcomma }}</td>
-            <td>{{ year[1].rank | ordinal:'super' }}</td>
+            <td class="numeric">${{ year[1].volume | intcomma }}</td>
+            <td class="numeric">{{ year[1].percent | percent }}%</td>
+            <td class="numeric">{{ year[1].rank | ordinal:'super' }}</td>
           </tr>
         {% endfor %}
         </tbody>
@@ -223,15 +227,17 @@ layout: default
       <table>
         <thead>
           <th>Year</th>
-          <th>Volume</th>
-          <th>Rank</th>
+          <th class="numeric">Production (units)</th>
+          <th class="numeric">US %</th>
+          <th class="numeric">Rank</th>
         </thead>
         <tbody>
         {% for year in product[1] %}
           <tr>
             <td>{{ year[0] }}</td>
-            <td>{{ year[1].volume | intcomma }}</td>
-            <td>{{ year[1].rank | ordinal:'super' }}</td>
+            <td class="numeric">{{ year[1].volume | intcomma }}</td>
+            <td class="numeric">{{ year[1].percent | percent }}%</td>
+            <td class="numeric">{{ year[1].rank | ordinal:'super' }}</td>
           </tr>
         {% endfor %}
         </tbody>
@@ -248,15 +254,15 @@ layout: default
     <table>
       <thead>
         <th>Year</th>
-        <th>Jobs</th>
-        <th>%</th>
+        <th class="numeric">Jobs</th>
+        <th class="numeric">State %</th>
       </thead>
       <tbody>
       {% for year in jobs %}
         <tr>
           <td>{{ year[0] }}</td>
-          <td>{{ year[1].count | intcomma }}</td>
-          <td>{{ year[1].percent | percent }}%</td>
+          <td class="numeric">{{ year[1].count | intcomma }}</td>
+          <td class="numeric">{{ year[1].percent | percent }}%</td>
         </tr>
       {% endfor %}
       </tbody>
@@ -267,8 +273,8 @@ layout: default
       <thead>
         <tr>
           <th>County</th>
-          <th>Jobs</th>
-          <th>%</th>
+          <th class="numeric">Jobs</th>
+          <th class="numeric">County %</th>
         </tr>
       </thead>
       <tbody>
@@ -276,8 +282,8 @@ layout: default
         {% if county[1].employment[year].count > 0 %}
         <tr>
           <td>{{ county[1].name }}</td>
-          <td>{{ county[1].employment[year].count | intcomma }}</td>
-          <td>{{ county[1].employment[year].percent | percent }}%</td>
+          <td class="numeric">{{ county[1].employment[year].count | intcomma }}</td>
+          <td class="numeric">{{ county[1].employment[year].percent | percent }}%</td>
         </tr>
         {% endif %}
       {% endfor %}
@@ -293,15 +299,15 @@ layout: default
     <table>
       <thead>
         <th>Year</th>
-        <th>Dollars</th>
-        <th>%</th>
+        <th class="numeric">Dollars</th>
+        <th class="numeric">State %</th>
       </thead>
       <tbody>
       {% for year in gdp %}
         <tr>
           <td>{{ year[0] }}</td>
-          <td>${{ year[1].dollars | intcomma }}</td>
-          <td>{{ year[1].percent | percent }}%</td>
+          <td class="numeric">${{ year[1].dollars | intcomma }}</td>
+          <td class="numeric">{{ year[1].percent | percent }}%</td>
         </tr>
       {% endfor %}
       </tbody>
@@ -310,28 +316,28 @@ layout: default
 
   <section id="exports" class="economic exports">
     <h2>Exports</h2>
-    <p>{{ exports_summary | strip_html }} Historically:</p>
+    <p>{{ exports_summary | strip_html }}{% if exports_commodities_num > 0 %} Historically:{% endif %}</p>
 
     {% for commodity in exports_commodities %}
       {% if commodity[0] != 'Total' %}
         <h3>{{commodity[0]}}</h3>
         {% if commodity[0] != 'All' %}
-          <th>{{commodity[0]}} commodities</th>
+          <th>{{ commodity[0] }} commodities</th>
         {% else %}
-          <th>{{commodity[0]}}</th>
+          <th>{{ commodity[0] }}</th>
         {% endif %}
         <table>
           <thead>
             <th>Year</th>
-            <th>Dollars</th>
-            <th>% of {{state_id}}'s Exports</th>=
+            <th class="numeric">Dollars</th>
+            <th class="numeric">State %</th>
           </thead>
           <tbody>
             {% for commodity_year in commodity[1] %}
               <tr>
                 <td>{{ commodity_year[0] }}</td>
-                <td>${{ commodity_year[1].dollars | intcomma }}</td>
-                <td>{{ commodity_year[1].percent | percent }}%</td>
+                <td class="numeric">${{ commodity_year[1].dollars | intcomma }}</td>
+                <td class="numeric">{{ commodity_year[1].percent | percent }}%</td>
               </tr>
             {% endfor %}
           </tbody>

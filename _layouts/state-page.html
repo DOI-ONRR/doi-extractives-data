@@ -25,6 +25,7 @@ layout: default
 {% assign all_products_num = all_products | size %}
 {% assign top_all_products = site.data.top_state_products[state_id].all_production[year] %}
 
+{% assign disbursements = site.data.state_disbursements[state_id] %}
 
 
 <main id="state-{{ state_id }}" class="container-outer">
@@ -105,7 +106,6 @@ layout: default
 
       <li class="employment">{{ jobs_summary }}</li>
 
-
     {% capture gdp_summary %}
       {% if gdp[year].dollars %}
         The extractives industry contributed
@@ -134,6 +134,20 @@ layout: default
     {% endcapture %}
 
       <li class="exports">{{ exports_summary }}</li>
+
+    {% capture disbursements_summary %}
+    {% assign disbursement_funds_num = disbursements | size | minus: 1 %}
+      {% if disbursements %}
+        {{ state_name }} received
+        <a href="#disbursements">${{ disbursements.All[year] | round | intcomma }}</a>
+        in federal disbursements in {{ year }}.
+      {% else %}
+        {{ state_name }} did not receive any federal disbursements in {{ year }}.
+      {% endif %}
+    {% endcapture %}
+
+      <li class="disbursements">{{ disbursements_summary }}</li>
+
     </ul>
   </section>
 
@@ -344,6 +358,34 @@ layout: default
       {% endif %}
     </section>
     {% endfor %}
+  </section>
+
+  <section id="disbursements" class="disbursements">
+    <h2>Disbursements</h2>
+    <p>{{ disbursements_summary | strip_html }}</p>
+
+    {% if disbursements %}
+    <table>
+      <thead>
+        <th>Year</th>
+        <th class="numeric">Total</th>
+        <th class="numeric">Onshore</th>
+        <th class="numeric">Offshore</th>
+      </thead>
+      <tbody>
+      {% for _year in disbursements.All %}
+        {% assign year = _year[0] %}
+        <tr>
+          <td>{{ year }}</td>
+          <td class="numeric">${{ disbursements.All[year] | round | intcomma }}</td>
+          <td class="numeric">${{ disbursements.Onshore[year] | round | intcomma }}</td>
+          <td class="numeric">${{ disbursements.Offshore[year] | round | intcomma }}</td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+    {% endif %}
+
   </section>
 
 </main>

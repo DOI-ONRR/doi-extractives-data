@@ -120,13 +120,16 @@ layout: default
       <li class="gdp">{{ gdp_summary }}</li>
 
     {% capture exports_summary %}
-      {% if exports_commodities and exports_commodities['All'] and exports_commodities_num > 0 %}
-        The extractives industry exported
-        <strong>${{ exports_commodities.All[year].dollars | intcomma }}</strong>
-        from <a href="#exports">{{exports_commodities_num}}</a> commodit{{ exports_commodities_num | plural:'ies' | default: 'y' }} in {{ state_name }} in {{ year }}, or
-        {{ exports_commodities['All'][year].percent | percent }}% of state-wide exports.
+      {% if exports_commodities_num > 0 %}
+        {{ state_name }} exported
+        {{ exports_commodities_num }} extractives
+        product{{ exports_commodities_num | plural }} in {{ year }},
+        generating
+        <a href="#exports">${{ exports_commodities.All[year].dollars | intcomma }}</a>
+        in export revenue, or
+        {{ exports_commodities.All[year].percent | percent }}%.
       {% else %}
-        The extractives industry did not have any exports in {{ state_name }} in {{ year }}.
+        {{ state_name }} did not generate any export revenue from extractives in {{ year }}.
       {% endif %}
     {% endcapture %}
 

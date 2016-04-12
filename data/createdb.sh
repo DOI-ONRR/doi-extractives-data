@@ -2,6 +2,7 @@
 db=data.db
 db_url="sqlite://${db}"
 tables=../node_modules/.bin/tables
+tito=../node_modules/.bin/tito
 
 echo "Dropping: ${db}"
 rm -f $db
@@ -102,5 +103,9 @@ $tables -d $db_url -i gdp/regional.tsv -n gdp
 # Load GDP table
 $tables -d $db_url -i 'state/exports-by-industry.tsv' -n exports
 
-
+# Disbursements
+$tito --read tsv _input/onrr/disbursements/state.tsv \
+    --filter State \
+    --map ./_input/onrr/disbursements/state.js \
+    | $tables -t ndjson -d $db_url -n state_disbursements
 

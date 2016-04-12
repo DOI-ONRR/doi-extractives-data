@@ -323,29 +323,26 @@ layout: default
 
     {% for commodity in exports_commodities %}
       {% if commodity[0] != 'Total' %}
-        <h3>{{commodity[0]}}</h3>
-        {% if commodity[0] != 'All' %}
-          <th>{{ commodity[0] }} commodities</th>
-        {% else %}
-          <th>{{ commodity[0] }}</th>
-        {% endif %}
-        <table>
-          <thead>
-            <th>Year</th>
-            <th class="numeric">Dollars</th>
-            <th class="numeric">State %</th>
-          </thead>
-          <tbody>
-            {% for commodity_year in commodity[1] %}
-              <tr>
-                <td>{{ commodity_year[0] }}</td>
-                <td class="numeric">${{ commodity_year[1].dollars | intcomma }}</td>
-                <td class="numeric">{{ commodity_year[1].percent | percent }}%</td>
-              </tr>
-            {% endfor %}
-          </tbody>
-        </table>
+    <section id="exports-{{ commodity[0] | slugify }}">
+      <h3>{{ commodity[0] }}</h3>
+      <table>
+        <thead>
+          <th>Year</th>
+          <th class="numeric">Dollars</th>
+          <th class="numeric">State %</th>
+        </thead>
+        <tbody>
+          {% for commodity_year in commodity[1] %}
+            <tr>
+              <td>{{ commodity_year[0] }}</td>
+              <td class="numeric">${{ commodity_year[1].dollars | intcomma }}</td>
+              <td class="numeric">{{ commodity_year[1].percent | percent }}%</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
       {% endif %}
+    </section>
     {% endfor %}
   </section>
 

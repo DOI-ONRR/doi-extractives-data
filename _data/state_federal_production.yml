@@ -3,2584 +3,3393 @@ AK:
     Gas (mcf):
       '2005':
         volume: 42741893
+        percent: 0.7000000000000001
         rank: 7
       '2006':
         volume: 39875346
+        percent: 0.6000000000000001
         rank: 7
       '2007':
         volume: 36868361
-        rank: 8
+        percent: 0.6000000000000001
+        rank: 7
       '2008':
         volume: 34102133
+        percent: 0.5
         rank: 8
       '2009':
         volume: 28155124
-        rank: 9
+        percent: 0.4
+        rank: 8
       '2010':
         volume: 22767536
-        rank: 9
+        percent: 0.4
+        rank: 8
       '2011':
         volume: 14054084
-        rank: 14
+        percent: 0.2
+        rank: 9
       '2012':
         volume: 14393798
-        rank: 16
+        percent: 0.30000000000000004
+        rank: 9
       '2013':
         volume: 13576976
-        rank: 14
+        percent: 0.30000000000000004
+        rank: 9
       '2014':
         volume: 15358615
-        rank: 11
+        percent: 0.30000000000000004
+        rank: 9
     Oil (bbl):
       '2005':
         volume: 390683
-        rank: 14
+        percent: 0
+        rank: 9
       '2006':
         volume: 343676
-        rank: 14
+        percent: 0
+        rank: 10
       '2007':
         volume: 272400
-        rank: 16
+        percent: 0
+        rank: 10
       '2008':
         volume: 229529
-        rank: 16
+        percent: 0
+        rank: 10
       '2009':
         volume: 203120
-        rank: 17
+        percent: 0
+        rank: 10
       '2010':
         volume: 237163
-        rank: 15
+        percent: 0
+        rank: 10
       '2011':
         volume: 241755
-        rank: 16
+        percent: 0
+        rank: 11
       '2012':
         volume: 317736
-        rank: 15
+        percent: 0
+        rank: 11
       '2013':
         volume: 902649
-        rank: 10
+        percent: 0.1
+        rank: 9
       '2014':
         volume: 894026
+        percent: 0.1
         rank: 10
 AL:
   products:
     Coal (tons):
       '2012':
         volume: 1760930
+        percent: 0.4
         rank: 6
     Gas (mcf):
       '2005':
         volume: 28415351
-        rank: 10
+        percent: 0.4
+        rank: 9
       '2006':
         volume: 28745824
-        rank: 10
+        percent: 0.4
+        rank: 9
       '2007':
         volume: 22393741
-        rank: 12
+        percent: 0.30000000000000004
+        rank: 10
       '2008':
         volume: 22960756
-        rank: 12
+        percent: 0.4
+        rank: 9
       '2009':
         volume: 20576935
-        rank: 11
+        percent: 0.30000000000000004
+        rank: 9
       '2010':
         volume: 18777684
-        rank: 12
+        percent: 0.30000000000000004
+        rank: 9
       '2011':
         volume: 16790163
-        rank: 12
+        percent: 0.30000000000000004
+        rank: 8
       '2012':
         volume: 18000307
-        rank: 12
+        percent: 0.30000000000000004
+        rank: 9
       '2013':
         volume: 12236339
-        rank: 16
+        percent: 0.2
+        rank: 10
       '2014':
         volume: 15177273
-        rank: 13
+        percent: 0.30000000000000004
+        rank: 9
     Oil (bbl):
       '2005':
         volume: 140218
-        rank: 19
+        percent: 0
+        rank: 9
       '2006':
         volume: 74848
-        rank: 19
+        percent: 0
+        rank: 10
       '2007':
         volume: 53081
-        rank: 20
+        percent: 0
+        rank: 10
       '2008':
         volume: 44460
-        rank: 21
+        percent: 0
+        rank: 10
       '2009':
         volume: 32909
-        rank: 21
+        percent: 0
+        rank: 10
       '2010':
         volume: 35789
-        rank: 20
+        percent: 0
+        rank: 10
       '2011':
         volume: 33755
-        rank: 20
+        percent: 0
+        rank: 11
       '2012':
         volume: 30455
-        rank: 20
+        percent: 0
+        rank: 11
       '2013':
         volume: 26607
-        rank: 21
+        percent: 0
+        rank: 10
       '2014':
         volume: 23112
-        rank: 21
+        percent: 0
+        rank: 11
 AR:
   products:
     Gas (mcf):
       '2005':
         volume: 8785746
-        rank: 16
+        percent: 0.1
+        rank: 12
       '2006':
         volume: 9921923
-        rank: 15
+        percent: 0.2
+        rank: 11
       '2007':
         volume: 9861548
-        rank: 16
+        percent: 0.2
+        rank: 11
       '2008':
         volume: 12040946
-        rank: 15
+        percent: 0.2
+        rank: 10
       '2009':
         volume: 17902901
-        rank: 13
+        percent: 0.30000000000000004
+        rank: 9
       '2010':
         volume: 18909309
-        rank: 11
+        percent: 0.30000000000000004
+        rank: 9
       '2011':
         volume: 18507184
-        rank: 11
+        percent: 0.30000000000000004
+        rank: 8
       '2012':
         volume: 17037008
-        rank: 13
+        percent: 0.30000000000000004
+        rank: 9
       '2013':
         volume: 16207330
-        rank: 11
+        percent: 0.30000000000000004
+        rank: 9
       '2014':
         volume: 17724822
-        rank: 10
+        percent: 0.4
+        rank: 8
     Oil (bbl):
       '2005':
         volume: 32
-        rank: 25
+        percent: 0
+        rank: 9
       '2006':
         volume: 23
-        rank: 26
+        percent: 0
+        rank: 10
       '2007':
         volume: 21
-        rank: 25
+        percent: 0
+        rank: 10
       '2008':
         volume: 8
-        rank: 25
+        percent: 0
+        rank: 10
       '2009':
         volume: 6
-        rank: 27
+        percent: 0
+        rank: 10
       '2010':
         volume: 2
-        rank: 27
+        percent: 0
+        rank: 10
       '2011':
         volume: 2
-        rank: 27
+        percent: 0
+        rank: 11
       '2012':
         volume: 2
-        rank: 26
+        percent: 0
+        rank: 11
       '2013':
         volume: 1
-        rank: 26
+        percent: 0
+        rank: 10
       '2014':
         volume: 1
-        rank: 26
+        percent: 0
+        rank: 11
     Quartz Crystal (tickets/pounds):
       '2005':
         volume: 8065
+        percent: 100
         rank: 1
       '2006':
         volume: 6350
+        percent: 100
         rank: 1
       '2007':
         volume: 2400
+        percent: 100
         rank: 1
 CA:
   products:
     Gas (mcf):
       '2005':
         volume: 18044542
-        rank: 13
+        percent: 0.30000000000000004
+        rank: 10
       '2006':
         volume: 17147134
-        rank: 13
+        percent: 0.30000000000000004
+        rank: 10
       '2007':
         volume: 15547453
-        rank: 13
+        percent: 0.2
+        rank: 11
       '2008':
         volume: 13696926
-        rank: 14
+        percent: 0.2
+        rank: 10
       '2009':
         volume: 10922713
-        rank: 15
+        percent: 0.2
+        rank: 10
       '2010':
         volume: 11203439
-        rank: 15
+        percent: 0.2
+        rank: 10
       '2011':
         volume: 15720378
-        rank: 13
+        percent: 0.30000000000000004
+        rank: 8
       '2012':
         volume: 14658577
-        rank: 15
+        percent: 0.30000000000000004
+        rank: 9
       '2013':
         volume: 12360114
-        rank: 15
+        percent: 0.2
+        rank: 10
       '2014':
         volume: 12767378
-        rank: 16
+        percent: 0.30000000000000004
+        rank: 9
     'Geothermal - Direct Utilization, Millions of BTUs':
       '2005':
         volume: 260242
+        percent: 100
         rank: 1
       '2006':
         volume: 238147
+        percent: 100
         rank: 1
       '2007':
         volume: 217500
+        percent: 100
         rank: 1
       '2008':
         volume: 219089
+        percent: 100
         rank: 1
       '2009':
         volume: 179171
+        percent: 100
         rank: 1
       '2010':
         volume: 224486
+        percent: 100
         rank: 1
       '2011':
         volume: 228011
+        percent: 100
         rank: 1
       '2012':
         volume: 271470
+        percent: 100
         rank: 1
       '2013':
         volume: 276337
+        percent: 100
         rank: 1
       '2014':
         volume: 243504
+        percent: 100
         rank: 1
     'Geothermal - Electrical Generation, Kilowatt Hours':
       '2005':
         volume: 988196802
+        percent: 59.2
         rank: 1
       '2006':
         volume: 1015891686
+        percent: 61.4
         rank: 1
       '2007':
         volume: 1092826809
+        percent: 65.1
         rank: 1
       '2008':
         volume: 1070470822
+        percent: 65.3
         rank: 1
       '2009':
         volume: 1088756553
+        percent: 60
         rank: 1
       '2010':
         volume: 1003412405
+        percent: 49.8
         rank: 2
       '2011':
         volume: 980959057
+        percent: 48.9
         rank: 2
       '2012':
         volume: 918939268
+        percent: 43.1
         rank: 2
       '2013':
         volume: 918278007
+        percent: 38.7
         rank: 2
       '2014':
         volume: 896841861
+        percent: 34.8
         rank: 2
     'Geothermal - Electrical Generation, Other':
       '2005':
         volume: 204030
+        percent: 100
         rank: 1
       '2006':
         volume: 227562
+        percent: 100
         rank: 1
       '2007':
         volume: 207155
+        percent: 100
         rank: 1
       '2008':
         volume: 237416
+        percent: 100
         rank: 1
       '2009':
         volume: 233954
+        percent: 100
         rank: 1
       '2010':
         volume: 223938
+        percent: 100
         rank: 1
       '2011':
         volume: 19883
+        percent: 100
         rank: 1
       '2014':
         volume: 691756
+        percent: 100
         rank: 1
     'Geothermal - Electrical Generation, Thousands of Pounds':
       '2005':
         volume: 53196739
+        percent: 2.3
         rank: 2
       '2006':
         volume: 53343899
+        percent: 2.2
         rank: 2
       '2007':
         volume: 50375440
+        percent: 2.4
         rank: 2
       '2008':
         volume: 49867136
+        percent: 2
         rank: 2
       '2009':
         volume: 48517752
+        percent: 1.7000000000000002
         rank: 2
       '2010':
         volume: 48523237
+        percent: 1.8
         rank: 2
       '2011':
         volume: 48685683
+        percent: 1.9
         rank: 2
       '2012':
         volume: 48207756
+        percent: 1.9
         rank: 2
       '2013':
         volume: 46144622
+        percent: 2
         rank: 2
       '2014':
         volume: 45564161
+        percent: 1.8
         rank: 2
     Geothermal - sulfur:
       '2010':
         volume: 4670
+        percent: 100
         rank: 1
       '2011':
         volume: 3470
+        percent: 100
         rank: 1
       '2012':
         volume: 2598
+        percent: 100
         rank: 1
       '2013':
         volume: 2448
+        percent: 100
         rank: 1
       '2014':
         volume: 2090
+        percent: 100
         rank: 1
     Oil (bbl):
       '2005':
         volume: 14553533
+        percent: 1.4
         rank: 5
       '2006':
         volume: 14463849
+        percent: 1.3
         rank: 5
       '2007':
         volume: 13429378
+        percent: 1.2
         rank: 5
       '2008':
         volume: 13470153
+        percent: 1.4
         rank: 5
       '2009':
         volume: 14033417
+        percent: 1.1
         rank: 5
       '2010':
         volume: 13944826
+        percent: 1.1
         rank: 5
       '2011':
         volume: 14918597
+        percent: 1.4
         rank: 5
       '2012':
         volume: 15203507
+        percent: 1.4
         rank: 6
       '2013':
         volume: 15301739
+        percent: 1.4
         rank: 6
       '2014':
         volume: 14604580
+        percent: 2.1
         rank: 6
 CO:
   products:
     Coal (tons):
       '2005':
         volume: 20602881
+        percent: 5
         rank: 2
       '2006':
         volume: 20811927
+        percent: 4.9
         rank: 2
       '2007':
         volume: 21776477
+        percent: 5
         rank: 2
       '2008':
         volume: 21138286
+        percent: 4.5
         rank: 2
       '2009':
         volume: 16946752
+        percent: 3.9
         rank: 3
       '2010':
         volume: 16137065
+        percent: 3.7
         rank: 3
       '2011':
         volume: 18017066
+        percent: 4.1
         rank: 2
       '2012':
         volume: 19192211
+        percent: 4.8
         rank: 2
       '2013':
         volume: 15479428
+        percent: 4.1
         rank: 3
       '2014':
         volume: 5881523
+        percent: 1.6
         rank: 4
     Gas (mcf):
       '2005':
         volume: 493289026
+        percent: 7.6
         rank: 4
       '2006':
         volume: 528393035
+        percent: 8.2
         rank: 4
       '2007':
         volume: 539790993
+        percent: 8.3
         rank: 4
       '2008':
         volume: 624576287
+        percent: 9.9
         rank: 4
       '2009':
         volume: 673583662
+        percent: 10.3
         rank: 4
       '2010':
         volume: 697822855
+        percent: 11.1
         rank: 4
       '2011':
         volume: 730268740
+        percent: 12.7
         rank: 4
       '2012':
         volume: 741299228
+        percent: 13.7
         rank: 4
       '2013':
         volume: 731118407
+        percent: 14.7
         rank: 4
       '2014':
         volume: 743328197
+        percent: 15.3
         rank: 4
     Oil (bbl):
       '2005':
         volume: 4046909
-        rank: 9
+        percent: 0.4
+        rank: 8
       '2006':
         volume: 4082649
-        rank: 9
+        percent: 0.4
+        rank: 8
       '2007':
         volume: 4122014
-        rank: 9
+        percent: 0.4
+        rank: 8
       '2008':
         volume: 4171876
-        rank: 9
+        percent: 0.4
+        rank: 8
       '2009':
         volume: 3959462
+        percent: 0.30000000000000004
         rank: 8
       '2010':
         volume: 3865141
+        percent: 0.30000000000000004
         rank: 8
       '2011':
         volume: 4153296
+        percent: 0.4
         rank: 8
       '2012':
         volume: 4429464
+        percent: 0.4
         rank: 8
       '2013':
         volume: 4384038
+        percent: 0.4
         rank: 8
       '2014':
         volume: 5267965
+        percent: 0.8
         rank: 8
     Sodium Bi-Carbonate (tons):
       '2008':
         volume: 102512
+        percent: 100
         rank: 1
 FL:
   products:
     Oil (bbl):
       '2006':
         volume: 77
-        rank: 25
+        percent: 0
+        rank: 10
 ID:
   products:
     Phosphate Raw Ore (tons):
       '2005':
         volume: 2621832
+        percent: 100
         rank: 1
       '2006':
         volume: 2381392
+        percent: 100
         rank: 1
       '2007':
         volume: 2324385
+        percent: 100
         rank: 1
       '2008':
         volume: 2424258
+        percent: 100
         rank: 1
       '2009':
         volume: 3423741
+        percent: 100
         rank: 1
       '2010':
         volume: 3523585
+        percent: 100
         rank: 1
       '2011':
         volume: 4690032
+        percent: 100
         rank: 1
       '2012':
         volume: 4467766
+        percent: 100
         rank: 1
       '2013':
         volume: 4960123
+        percent: 100
         rank: 1
       '2014':
         volume: 5777094
+        percent: 100
         rank: 1
 IL:
   products:
     Gas (mcf):
       '2005':
         volume: 7836
-        rank: 27
+        percent: 0
+        rank: 13
       '2006':
         volume: 8211
-        rank: 27
+        percent: 0
+        rank: 13
       '2007':
         volume: 8079
-        rank: 27
+        percent: 0
+        rank: 13
       '2008':
         volume: 6965
-        rank: 27
+        percent: 0
+        rank: 12
       '2009':
         volume: 12213
-        rank: 27
+        percent: 0
+        rank: 12
       '2010':
         volume: 14074
-        rank: 26
+        percent: 0
+        rank: 12
       '2011':
         volume: 14336
-        rank: 26
+        percent: 0
+        rank: 11
       '2012':
         volume: 14461
-        rank: 27
+        percent: 0
+        rank: 11
       '2013':
         volume: 14385
-        rank: 26
+        percent: 0
+        rank: 12
       '2014':
         volume: 26223
-        rank: 25
+        percent: 0
+        rank: 11
     Oil (bbl):
       '2005':
         volume: 34906
-        rank: 21
+        percent: 0
+        rank: 9
       '2006':
         volume: 37056
-        rank: 22
+        percent: 0
+        rank: 10
       '2007':
         volume: 38792
-        rank: 22
+        percent: 0
+        rank: 10
       '2008':
         volume: 34386
-        rank: 22
+        percent: 0
+        rank: 10
       '2009':
         volume: 34242
-        rank: 20
+        percent: 0
+        rank: 10
       '2010':
         volume: 31995
-        rank: 22
+        percent: 0
+        rank: 10
       '2011':
         volume: 27142
-        rank: 22
+        percent: 0
+        rank: 11
       '2012':
         volume: 27871
-        rank: 21
+        percent: 0
+        rank: 11
       '2013':
         volume: 26276
-        rank: 22
+        percent: 0
+        rank: 10
       '2014':
         volume: 19079
-        rank: 22
+        percent: 0
+        rank: 11
 KS:
   products:
     Gas (mcf):
       '2005':
         volume: 9484098
-        rank: 15
+        percent: 0.1
+        rank: 12
       '2006':
         volume: 8796164
-        rank: 16
+        percent: 0.1
+        rank: 12
       '2007':
         volume: 8054336
-        rank: 17
+        percent: 0.1
+        rank: 12
       '2008':
         volume: 7908716
-        rank: 17
+        percent: 0.1
+        rank: 11
       '2009':
         volume: 7369922
-        rank: 17
+        percent: 0.1
+        rank: 11
       '2010':
         volume: 7115092
-        rank: 17
+        percent: 0.1
+        rank: 11
       '2011':
         volume: 6321743
-        rank: 17
+        percent: 0.1
+        rank: 10
       '2012':
         volume: 5682402
-        rank: 17
+        percent: 0.1
+        rank: 10
       '2013':
         volume: 5151120
-        rank: 17
+        percent: 0.1
+        rank: 11
       '2014':
         volume: 4617252
-        rank: 17
+        percent: 0.1
+        rank: 10
     Oil (bbl):
       '2005':
         volume: 270765
-        rank: 16
+        percent: 0
+        rank: 9
       '2006':
         volume: 444652
-        rank: 12
+        percent: 0
+        rank: 10
       '2007':
         volume: 311079
-        rank: 14
+        percent: 0
+        rank: 10
       '2008':
         volume: 279467
-        rank: 14
+        percent: 0
+        rank: 10
       '2009':
         volume: 230259
-        rank: 15
+        percent: 0
+        rank: 10
       '2010':
         volume: 220062
-        rank: 16
+        percent: 0
+        rank: 10
       '2011':
         volume: 241119
-        rank: 17
+        percent: 0
+        rank: 11
       '2012':
         volume: 225589
-        rank: 17
+        percent: 0
+        rank: 11
       '2013':
         volume: 199640
-        rank: 18
+        percent: 0
+        rank: 10
       '2014':
         volume: 169814
-        rank: 17
+        percent: 0
+        rank: 11
 KY:
   products:
     Gas (mcf):
       '2005':
         volume: 198301
-        rank: 24
+        percent: 0
+        rank: 13
       '2006':
         volume: 212385
-        rank: 24
+        percent: 0
+        rank: 13
       '2007':
         volume: 207549
-        rank: 24
+        percent: 0
+        rank: 13
       '2008':
         volume: 205519
-        rank: 24
+        percent: 0
+        rank: 12
       '2009':
         volume: 189885
-        rank: 24
+        percent: 0
+        rank: 12
       '2010':
         volume: 191034
-        rank: 23
+        percent: 0
+        rank: 12
       '2011':
         volume: 173874
-        rank: 24
+        percent: 0
+        rank: 11
       '2012':
         volume: 145703
-        rank: 24
+        percent: 0
+        rank: 11
       '2013':
         volume: 131149
-        rank: 24
+        percent: 0
+        rank: 12
       '2014':
         volume: 126830
-        rank: 24
+        percent: 0
+        rank: 11
     Oil (bbl):
       '2005':
         volume: 12976
-        rank: 24
+        percent: 0
+        rank: 9
       '2006':
         volume: 11057
-        rank: 24
+        percent: 0
+        rank: 10
       '2007':
         volume: 13104
-        rank: 24
+        percent: 0
+        rank: 10
       '2008':
         volume: 13178
-        rank: 24
+        percent: 0
+        rank: 10
       '2009':
         volume: 13157
-        rank: 24
+        percent: 0
+        rank: 10
       '2010':
         volume: 13047
-        rank: 24
+        percent: 0
+        rank: 10
       '2011':
         volume: 12408
-        rank: 24
+        percent: 0
+        rank: 11
       '2012':
         volume: 11835
-        rank: 24
+        percent: 0
+        rank: 11
       '2013':
         volume: 11749
-        rank: 24
+        percent: 0
+        rank: 10
       '2014':
         volume: 10786
-        rank: 24
+        percent: 0
+        rank: 11
 LA:
   products:
     Gas (mcf):
       '2005':
         volume: 32362046
-        rank: 9
+        percent: 0.5
+        rank: 8
       '2006':
         volume: 31498176
-        rank: 9
+        percent: 0.5
+        rank: 8
       '2007':
         volume: 30582604
-        rank: 9
+        percent: 0.5
+        rank: 8
       '2008':
         volume: 29461755
-        rank: 10
+        percent: 0.5
+        rank: 8
       '2009':
         volume: 20519548
-        rank: 12
+        percent: 0.30000000000000004
+        rank: 9
       '2010':
         volume: 16590302
-        rank: 13
+        percent: 0.30000000000000004
+        rank: 9
       '2011':
         volume: 20733556
-        rank: 10
+        percent: 0.4
+        rank: 7
       '2012':
         volume: 20661363
-        rank: 9
+        percent: 0.4
+        rank: 8
       '2013':
         volume: 17123843
-        rank: 10
+        percent: 0.30000000000000004
+        rank: 9
       '2014':
         volume: 12865873
-        rank: 15
+        percent: 0.30000000000000004
+        rank: 9
     Oil (bbl):
       '2005':
         volume: 391662
-        rank: 13
+        percent: 0
+        rank: 9
       '2006':
         volume: 482038
-        rank: 11
+        percent: 0
+        rank: 10
       '2007':
         volume: 407947
-        rank: 11
+        percent: 0
+        rank: 10
       '2008':
         volume: 357252
-        rank: 12
+        percent: 0
+        rank: 10
       '2009':
         volume: 324011
-        rank: 12
+        percent: 0
+        rank: 10
       '2010':
         volume: 301030
-        rank: 12
+        percent: 0
+        rank: 10
       '2011':
         volume: 332266
-        rank: 13
+        percent: 0
+        rank: 11
       '2012':
         volume: 353877
-        rank: 13
+        percent: 0
+        rank: 11
       '2013':
         volume: 305414
-        rank: 15
+        percent: 0
+        rank: 10
       '2014':
         volume: 286040
-        rank: 15
+        percent: 0
+        rank: 11
 MI:
   products:
     Gas (mcf):
       '2005':
         volume: 2621450
-        rank: 18
+        percent: 0
+        rank: 13
       '2006':
         volume: 2969319
-        rank: 18
+        percent: 0
+        rank: 13
       '2007':
         volume: 2993431
-        rank: 18
+        percent: 0
+        rank: 13
       '2008':
         volume: 2780867
-        rank: 18
+        percent: 0
+        rank: 12
       '2009':
         volume: 2578661
-        rank: 18
+        percent: 0
+        rank: 12
       '2010':
         volume: 2199776
-        rank: 18
+        percent: 0
+        rank: 12
       '2011':
         volume: 1999970
-        rank: 18
+        percent: 0
+        rank: 11
       '2012':
         volume: 1914593
-        rank: 19
+        percent: 0
+        rank: 11
       '2013':
         volume: 1632825
-        rank: 19
+        percent: 0
+        rank: 12
       '2014':
         volume: 1429120
-        rank: 19
+        percent: 0
+        rank: 11
     Oil (bbl):
       '2005':
         volume: 22429
-        rank: 22
+        percent: 0
+        rank: 9
       '2006':
         volume: 39852
-        rank: 21
+        percent: 0
+        rank: 10
       '2007':
         volume: 40480
-        rank: 21
+        percent: 0
+        rank: 10
       '2008':
         volume: 50168
-        rank: 20
+        percent: 0
+        rank: 10
       '2009':
         volume: 28093
-        rank: 22
+        percent: 0
+        rank: 10
       '2010':
         volume: 33235
-        rank: 21
+        percent: 0
+        rank: 10
       '2011':
         volume: 39395
-        rank: 19
+        percent: 0
+        rank: 11
       '2012':
         volume: 44874
-        rank: 19
+        percent: 0
+        rank: 11
       '2013':
         volume: 43011
-        rank: 19
+        percent: 0
+        rank: 10
       '2014':
         volume: 32900
-        rank: 19
+        percent: 0
+        rank: 11
 MO:
   products:
     Copper Concentrate (tons):
       '2005':
         volume: 13141
+        percent: 100
         rank: 1
       '2006':
         volume: 19002
+        percent: 100
         rank: 1
       '2007':
         volume: 10960
+        percent: 100
         rank: 1
       '2008':
         volume: 11909
+        percent: 100
         rank: 1
       '2009':
         volume: 8726
+        percent: 100
         rank: 1
       '2010':
         volume: 8974
+        percent: 100
         rank: 1
       '2011':
         volume: 8386
+        percent: 100
         rank: 1
       '2012':
         volume: 21424
+        percent: 100
         rank: 1
       '2013':
         volume: 15448
+        percent: 100
         rank: 1
       '2014':
         volume: 20282
+        percent: 100
         rank: 1
     Lead Concentrate (tons):
       '2005':
         volume: 207576
+        percent: 100
         rank: 1
       '2006':
         volume: 223123
+        percent: 100
         rank: 1
       '2007':
         volume: 221198
+        percent: 100
         rank: 1
       '2008':
         volume: 203433
+        percent: 100
         rank: 1
       '2009':
         volume: 194150
+        percent: 100
         rank: 1
       '2010':
         volume: 184361
+        percent: 100
         rank: 1
       '2011':
         volume: 176582
+        percent: 100
         rank: 1
       '2012':
         volume: 155035
+        percent: 100
         rank: 1
       '2013':
         volume: 145983
+        percent: 100
         rank: 1
       '2014':
         volume: 143272
+        percent: 100
         rank: 1
     Zinc Concentrate (tons):
       '2005':
         volume: 49449
+        percent: 100
         rank: 1
       '2006':
         volume: 54880
+        percent: 100
         rank: 1
       '2007':
         volume: 55968
+        percent: 100
         rank: 1
       '2008':
         volume: 45452
+        percent: 100
         rank: 1
       '2009':
         volume: 50276
+        percent: 100
         rank: 1
       '2010':
         volume: 43522
+        percent: 100
         rank: 1
       '2011':
         volume: 43763
+        percent: 100
         rank: 1
       '2012':
         volume: 32595
+        percent: 100
         rank: 1
       '2013':
         volume: 40418
+        percent: 100
         rank: 1
       '2014':
         volume: 44651
+        percent: 100
         rank: 1
 MS:
   products:
     Gas (mcf):
       '2005':
         volume: 700095
-        rank: 21
+        percent: 0
+        rank: 13
       '2006':
         volume: 696287
-        rank: 20
+        percent: 0
+        rank: 13
       '2007':
         volume: 651005
-        rank: 20
+        percent: 0
+        rank: 13
       '2008':
         volume: 690703
-        rank: 20
+        percent: 0
+        rank: 12
       '2009':
         volume: 771367
-        rank: 20
+        percent: 0
+        rank: 12
       '2010':
         volume: 850446
-        rank: 20
+        percent: 0
+        rank: 12
       '2011':
         volume: 774814
-        rank: 20
+        percent: 0
+        rank: 11
       '2012':
         volume: 647642
-        rank: 20
+        percent: 0
+        rank: 11
       '2013':
         volume: 433935
-        rank: 20
+        percent: 0
+        rank: 12
       '2014':
         volume: 379239
-        rank: 20
+        percent: 0
+        rank: 11
     Oil (bbl):
       '2005':
         volume: 381045
-        rank: 15
+        percent: 0
+        rank: 9
       '2006':
         volume: 299920
-        rank: 16
+        percent: 0
+        rank: 10
       '2007':
         volume: 292826
-        rank: 15
+        percent: 0
+        rank: 10
       '2008':
         volume: 239320
-        rank: 15
+        percent: 0
+        rank: 10
       '2009':
         volume: 235696
-        rank: 14
+        percent: 0
+        rank: 10
       '2010':
         volume: 239546
-        rank: 14
+        percent: 0
+        rank: 10
       '2011':
         volume: 267678
-        rank: 15
+        percent: 0
+        rank: 11
       '2012':
         volume: 322497
-        rank: 14
+        percent: 0
+        rank: 11
       '2013':
         volume: 424327
-        rank: 13
+        percent: 0
+        rank: 10
       '2014':
         volume: 398706
-        rank: 13
+        percent: 0.1
+        rank: 10
 MT:
   products:
     Coal (tons):
       '2005':
         volume: 16886195
+        percent: 4.1
         rank: 3
       '2006':
         volume: 18072165
+        percent: 4.3
         rank: 3
       '2007':
         volume: 18777497
+        percent: 4.3
         rank: 3
       '2008':
         volume: 19316074
+        percent: 4.1
         rank: 3
       '2009':
         volume: 17319320
+        percent: 4
         rank: 2
       '2010':
         volume: 17741873
+        percent: 4
         rank: 2
       '2011':
         volume: 17214337
+        percent: 3.9
         rank: 3
       '2012':
         volume: 16004122
+        percent: 4
         rank: 3
       '2013':
         volume: 16480119
+        percent: 4.4
         rank: 2
       '2014':
         volume: 15703781
+        percent: 4.2
         rank: 2
     Gas (mcf):
       '2005':
         volume: 32959061
+        percent: 0.5
         rank: 8
       '2006':
         volume: 36339636
-        rank: 8
+        percent: 0.6000000000000001
+        rank: 7
       '2007':
         volume: 38644629
+        percent: 0.6000000000000001
         rank: 7
       '2008':
         volume: 39425891
+        percent: 0.6000000000000001
         rank: 7
       '2009':
         volume: 36968723
-        rank: 7
+        percent: 0.6000000000000001
+        rank: 6
       '2010':
         volume: 31081703
+        percent: 0.5
         rank: 7
       '2011':
         volume: 25088381
-        rank: 9
+        percent: 0.4
+        rank: 7
       '2012':
         volume: 18262091
-        rank: 10
+        percent: 0.30000000000000004
+        rank: 9
       '2013':
         volume: 15951288
-        rank: 12
+        percent: 0.30000000000000004
+        rank: 9
       '2014':
         volume: 15284709
-        rank: 12
+        percent: 0.30000000000000004
+        rank: 9
     Oil (bbl):
       '2005':
         volume: 4319044
+        percent: 0.4
         rank: 8
       '2006':
         volume: 4619213
+        percent: 0.4
         rank: 8
       '2007':
         volume: 4648540
+        percent: 0.4
         rank: 8
       '2008':
         volume: 4249381
+        percent: 0.4
         rank: 8
       '2009':
         volume: 3892916
-        rank: 9
+        percent: 0.30000000000000004
+        rank: 8
       '2010':
         volume: 3618482
-        rank: 9
+        percent: 0.30000000000000004
+        rank: 8
       '2011':
         volume: 3348465
+        percent: 0.30000000000000004
         rank: 9
       '2012':
         volume: 3451514
+        percent: 0.30000000000000004
         rank: 9
       '2013':
         volume: 3829119
-        rank: 9
+        percent: 0.4
+        rank: 8
       '2014':
         volume: 3895056
+        percent: 0.6000000000000001
         rank: 9
 ND:
   products:
     Coal (tons):
       '2005':
         volume: 2169980
+        percent: 0.5
         rank: 5
       '2006':
         volume: 3196317
+        percent: 0.8
         rank: 5
       '2007':
         volume: 3532980
+        percent: 0.8
         rank: 5
       '2010':
         volume: 338405
-        rank: 6
+        percent: 0.1
+        rank: 5
       '2011':
         volume: 2923257
+        percent: 0.7000000000000001
         rank: 5
       '2012':
         volume: 3859278
+        percent: 1
         rank: 5
       '2013':
         volume: 4489551
+        percent: 1.2
         rank: 5
       '2014':
         volume: 5051711
+        percent: 1.3
         rank: 5
     Gas (mcf):
       '2005':
         volume: 7292825
-        rank: 17
+        percent: 0.1
+        rank: 12
       '2006':
         volume: 8245892
-        rank: 17
+        percent: 0.1
+        rank: 12
       '2007':
         volume: 10083370
-        rank: 15
+        percent: 0.2
+        rank: 11
       '2008':
         volume: 10856785
-        rank: 16
+        percent: 0.2
+        rank: 10
       '2009':
         volume: 9982673
-        rank: 16
+        percent: 0.2
+        rank: 10
       '2010':
         volume: 11158132
-        rank: 16
+        percent: 0.2
+        rank: 10
       '2011':
         volume: 13996029
-        rank: 15
+        percent: 0.2
+        rank: 9
       '2012':
         volume: 18154691
-        rank: 11
+        percent: 0.30000000000000004
+        rank: 9
       '2013':
         volume: 23241494
-        rank: 9
+        percent: 0.5
+        rank: 8
       '2014':
         volume: 28604214
-        rank: 8
+        percent: 0.6000000000000001
+        rank: 7
     Oil (bbl):
       '2005':
         volume: 5802114
+        percent: 0.5
         rank: 7
       '2006':
         volume: 6690483
+        percent: 0.6000000000000001
         rank: 7
       '2007':
         volume: 7118096
+        percent: 0.7000000000000001
         rank: 7
       '2008':
         volume: 7345394
+        percent: 0.7000000000000001
         rank: 7
       '2009':
         volume: 7494450
+        percent: 0.6000000000000001
         rank: 7
       '2010':
         volume: 9832347
+        percent: 0.8
         rank: 7
       '2011':
         volume: 12534766
+        percent: 1.2
         rank: 6
       '2012':
         volume: 16281618
+        percent: 1.5
         rank: 5
       '2013':
         volume: 19185120
+        percent: 1.8
         rank: 4
       '2014':
         volume: 22211700
+        percent: 3.2
         rank: 4
 NE:
   products:
     Gas (mcf):
       '2005':
         volume: 2913
-        rank: 29
+        percent: 0
+        rank: 13
       '2006':
         volume: 3733
-        rank: 29
+        percent: 0
+        rank: 13
       '2007':
         volume: 5971
-        rank: 28
+        percent: 0
+        rank: 13
       '2008':
         volume: 5352
-        rank: 28
+        percent: 0
+        rank: 12
       '2009':
         volume: 2207
-        rank: 29
+        percent: 0
+        rank: 12
       '2010':
         volume: 2432
-        rank: 29
+        percent: 0
+        rank: 12
       '2011':
         volume: 1163
-        rank: 29
+        percent: 0
+        rank: 11
       '2012':
         volume: 1125
-        rank: 29
+        percent: 0
+        rank: 11
       '2013':
         volume: 958
-        rank: 29
+        percent: 0
+        rank: 12
       '2014':
         volume: 994
-        rank: 29
+        percent: 0
+        rank: 11
     Oil (bbl):
       '2005':
         volume: 40773
-        rank: 20
+        percent: 0
+        rank: 9
       '2006':
         volume: 50528
-        rank: 20
+        percent: 0
+        rank: 10
       '2007':
         volume: 67712
-        rank: 19
+        percent: 0
+        rank: 10
       '2008':
         volume: 54506
-        rank: 19
+        percent: 0
+        rank: 10
       '2009':
         volume: 40912
-        rank: 19
+        percent: 0
+        rank: 10
       '2010':
         volume: 39478
-        rank: 19
+        percent: 0
+        rank: 10
       '2011':
         volume: 33074
-        rank: 21
+        percent: 0
+        rank: 11
       '2012':
         volume: 27325
-        rank: 22
+        percent: 0
+        rank: 11
       '2013':
         volume: 29249
-        rank: 20
+        percent: 0
+        rank: 10
       '2014':
         volume: 27270
-        rank: 20
+        percent: 0
+        rank: 11
 NM:
   products:
     Brine Barrels (barrels):
       '2006':
         volume: 66862
+        percent: 100
         rank: 1
     Gas (mcf):
       '2005':
         volume: 1028343137
+        percent: 15.8
         rank: 3
       '2006':
         volume: 1022053891
+        percent: 15.8
         rank: 3
       '2007':
         volume: 975632728
+        percent: 15
         rank: 3
       '2008':
         volume: 926364691
+        percent: 14.6
         rank: 3
       '2009':
         volume: 894821784
+        percent: 13.7
         rank: 3
       '2010':
         volume: 840725100
+        percent: 13.4
         rank: 3
       '2011':
         volume: 819458627
+        percent: 14.2
         rank: 3
       '2012':
         volume: 803628864
+        percent: 14.9
         rank: 3
       '2013':
         volume: 779441301
+        percent: 15.7
         rank: 3
       '2014':
         volume: 776068532
+        percent: 16
         rank: 3
     'Geothermal - Direct Use, Millions of Gallons':
       '2011':
         volume: 71606330
+        percent: 100
         rank: 1
       '2012':
         volume: 113448300
+        percent: 100
         rank: 1
       '2013':
         volume: 69920725
+        percent: 100
         rank: 1
       '2014':
         volume: 63624483
+        percent: 100
         rank: 1
     'Geothermal - Electrical Generation, Kilowatt Hours':
       '2013':
         volume: 69407
+        percent: 0
         rank: 4
       '2014':
         volume: 8736455
+        percent: 0.30000000000000004
         rank: 4
     Langbeinite (tons):
       '2005':
         volume: 551675
+        percent: 100
         rank: 1
       '2006':
         volume: 734349
+        percent: 100
         rank: 1
       '2007':
         volume: 966101
+        percent: 100
         rank: 1
       '2008':
         volume: 974982
+        percent: 100
         rank: 1
       '2009':
         volume: 648073
+        percent: 100
         rank: 1
       '2010':
         volume: 830346
+        percent: 100
         rank: 1
       '2011':
         volume: 745606
+        percent: 100
         rank: 1
       '2012':
         volume: 859349
+        percent: 100
         rank: 1
       '2013':
         volume: 707765
+        percent: 100
         rank: 1
       '2014':
         volume: 363289
+        percent: 100
         rank: 1
     Muriate Of Potash-Granular (tons):
       '2005':
         volume: 424981
+        percent: 100
         rank: 1
       '2006':
         volume: 327424
+        percent: 100
         rank: 1
       '2007':
         volume: 429446
+        percent: 100
         rank: 1
       '2008':
         volume: 398253
+        percent: 100
         rank: 1
       '2009':
         volume: 233928
+        percent: 100
         rank: 1
       '2010':
         volume: 364751
+        percent: 100
         rank: 1
       '2011':
         volume: 454506
+        percent: 100
         rank: 1
       '2012':
         volume: 424920
+        percent: 100
         rank: 1
       '2013':
         volume: 342439
+        percent: 100
         rank: 1
       '2014':
         volume: 467320
+        percent: 100
         rank: 1
     Muriate Of Potash-Standard (tons):
       '2005':
         volume: 476837
+        percent: 100
         rank: 1
       '2006':
         volume: 469892
+        percent: 100
         rank: 1
       '2007':
         volume: 251708
+        percent: 100
         rank: 1
       '2008':
         volume: 177001
+        percent: 100
         rank: 1
       '2009':
         volume: 112839
+        percent: 100
         rank: 1
       '2010':
         volume: 155054
+        percent: 100
         rank: 1
       '2011':
         volume: 170449
+        percent: 100
         rank: 1
       '2012':
         volume: 146453
+        percent: 100
         rank: 1
       '2013':
         volume: 132492
+        percent: 100
         rank: 1
       '2014':
         volume: 127433
+        percent: 100
         rank: 1
     Oil (bbl):
       '2005':
         volume: 25723178
+        percent: 2.4
         rank: 4
       '2006':
         volume: 24547286
+        percent: 2.3
         rank: 4
       '2007':
         volume: 25308750
+        percent: 2.4
         rank: 3
       '2008':
         volume: 25756010
+        percent: 2.6
         rank: 3
       '2009':
         volume: 28545972
+        percent: 2.2
         rank: 3
       '2010':
         volume: 31575274
+        percent: 2.5
         rank: 3
       '2011':
         volume: 35643027
+        percent: 3.3
         rank: 2
       '2012':
         volume: 44528783
+        percent: 4.2
         rank: 2
       '2013':
         volume: 52650333
+        percent: 5
         rank: 2
       '2014':
         volume: 64993326
+        percent: 9.3
         rank: 2
     Potash (tons):
       '2006':
         volume: 492294
+        percent: 100
         rank: 1
     Salt (tons):
       '2008':
         volume: 314483
+        percent: 100
         rank: 1
       '2009':
         volume: 372956
+        percent: 100
         rank: 1
       '2010':
         volume: 434018
+        percent: 100
         rank: 1
       '2011':
         volume: 439367
+        percent: 100
         rank: 1
       '2012':
         volume: 409345
+        percent: 100
         rank: 1
       '2013':
         volume: 425125
+        percent: 100
         rank: 1
       '2014':
         volume: 457529
+        percent: 100
         rank: 1
 NV:
   products:
     Gas (mcf):
       '2005':
         volume: 5281
-        rank: 28
+        percent: 0
+        rank: 13
       '2006':
         volume: 4999
-        rank: 28
+        percent: 0
+        rank: 13
       '2007':
         volume: 4573
-        rank: 29
+        percent: 0
+        rank: 13
       '2008':
         volume: 4227
-        rank: 29
+        percent: 0
+        rank: 12
       '2009':
         volume: 4440
-        rank: 28
+        percent: 0
+        rank: 12
       '2010':
         volume: 4010
-        rank: 28
+        percent: 0
+        rank: 12
       '2011':
         volume: 3836
-        rank: 28
+        percent: 0
+        rank: 11
       '2012':
         volume: 3631
-        rank: 28
+        percent: 0
+        rank: 11
       '2013':
         volume: 3422
-        rank: 28
+        percent: 0
+        rank: 12
       '2014':
         volume: 3341
-        rank: 28
+        percent: 0
+        rank: 11
     'Geothermal - Direct Utilization, Hundreds of Gallons':
       '2005':
         volume: 90021493
+        percent: 100
         rank: 1
       '2006':
         volume: 85859889
+        percent: 100
         rank: 1
       '2007':
         volume: 106272414
+        percent: 100
         rank: 1
       '2008':
         volume: 123838519
+        percent: 100
         rank: 1
       '2009':
         volume: 198988743
+        percent: 100
         rank: 1
       '2010':
         volume: 163346106
+        percent: 100
         rank: 1
       '2011':
         volume: 131014604
+        percent: 100
         rank: 1
       '2012':
         volume: 123103803
+        percent: 100
         rank: 1
       '2013':
         volume: 57238368
+        percent: 100
         rank: 1
       '2014':
         volume: 46536535
+        percent: 100
         rank: 1
     'Geothermal - Electrical Generation, Kilowatt Hours':
       '2005':
         volume: 681851145
+        percent: 40.8
         rank: 2
       '2006':
         volume: 637929761
+        percent: 38.6
         rank: 2
       '2007':
         volume: 586069015
+        percent: 34.9
         rank: 2
       '2008':
         volume: 569422745
+        percent: 34.7
         rank: 2
       '2009':
         volume: 726844239
+        percent: 40
         rank: 2
       '2010':
         volume: 1011705802
+        percent: 50.2
         rank: 1
       '2011':
         volume: 1023492237
+        percent: 51.1
         rank: 1
       '2012':
         volume: 1213241911
+        percent: 56.9
         rank: 1
       '2013':
         volume: 1440832542
+        percent: 60.7
         rank: 1
       '2014':
         volume: 1541014028
+        percent: 59.8
         rank: 1
     Oil (bbl):
       '2005':
         volume: 444146
-        rank: 11
+        percent: 0
+        rank: 9
       '2006':
         volume: 422869
-        rank: 13
+        percent: 0
+        rank: 10
       '2007':
         volume: 405154
-        rank: 12
+        percent: 0
+        rank: 10
       '2008':
         volume: 435454
-        rank: 11
+        percent: 0
+        rank: 10
       '2009':
         volume: 454522
-        rank: 11
+        percent: 0
+        rank: 10
       '2010':
         volume: 427527
-        rank: 11
+        percent: 0
+        rank: 10
       '2011':
         volume: 405174
+        percent: 0
         rank: 11
       '2012':
         volume: 356297
-        rank: 12
+        percent: 0
+        rank: 11
       '2013':
         volume: 330809
-        rank: 14
+        percent: 0
+        rank: 10
       '2014':
         volume: 311307
-        rank: 14
+        percent: 0
+        rank: 11
 NY:
   products:
     Gas (mcf):
       '2005':
         volume: 18178
-        rank: 25
+        percent: 0
+        rank: 13
       '2006':
         volume: 13508
-        rank: 26
+        percent: 0
+        rank: 13
       '2007':
         volume: 12691
-        rank: 26
+        percent: 0
+        rank: 13
       '2008':
         volume: 11163
-        rank: 26
+        percent: 0
+        rank: 12
       '2009':
         volume: 13790
-        rank: 26
+        percent: 0
+        rank: 12
       '2010':
         volume: 12542
-        rank: 27
+        percent: 0
+        rank: 12
       '2011':
         volume: 13067
-        rank: 27
+        percent: 0
+        rank: 11
       '2012':
         volume: 15642
-        rank: 26
+        percent: 0
+        rank: 11
       '2013':
         volume: 13882
-        rank: 27
+        percent: 0
+        rank: 12
       '2014':
         volume: 10959
-        rank: 27
+        percent: 0
+        rank: 11
 OH:
   products:
     Gas (mcf):
       '2005':
         volume: 544842
-        rank: 22
+        percent: 0
+        rank: 13
       '2006':
         volume: 548408
-        rank: 22
+        percent: 0
+        rank: 13
       '2007':
         volume: 544501
-        rank: 21
+        percent: 0
+        rank: 13
       '2008':
         volume: 505371
-        rank: 22
+        percent: 0
+        rank: 12
       '2009':
         volume: 455499
-        rank: 22
+        percent: 0
+        rank: 12
       '2010':
         volume: 471800
-        rank: 21
+        percent: 0
+        rank: 12
       '2011':
         volume: 442443
-        rank: 21
+        percent: 0
+        rank: 11
       '2012':
         volume: 392755
-        rank: 21
+        percent: 0
+        rank: 11
       '2013':
         volume: 394152
-        rank: 21
+        percent: 0
+        rank: 12
       '2014':
         volume: 362881
-        rank: 21
+        percent: 0
+        rank: 11
     Oil (bbl):
       '2005':
         volume: 21075
-        rank: 23
+        percent: 0
+        rank: 9
       '2006':
         volume: 20346
-        rank: 23
+        percent: 0
+        rank: 10
       '2007':
         volume: 19407
-        rank: 23
+        percent: 0
+        rank: 10
       '2008':
         volume: 21026
-        rank: 23
+        percent: 0
+        rank: 10
       '2009':
         volume: 18826
-        rank: 23
+        percent: 0
+        rank: 10
       '2010':
         volume: 17730
-        rank: 23
+        percent: 0
+        rank: 10
       '2011':
         volume: 16927
-        rank: 23
+        percent: 0
+        rank: 11
       '2012':
         volume: 15759
-        rank: 23
+        percent: 0
+        rank: 11
       '2013':
         volume: 15038
-        rank: 23
+        percent: 0
+        rank: 10
       '2014':
         volume: 13783
-        rank: 23
+        percent: 0
+        rank: 11
 OK:
   products:
     Coal (tons):
       '2005':
         volume: 714616
+        percent: 0.2
         rank: 6
       '2006':
         volume: 725099
+        percent: 0.2
         rank: 6
       '2007':
         volume: 890762
+        percent: 0.2
         rank: 6
       '2008':
         volume: 664925
+        percent: 0.1
         rank: 5
       '2009':
         volume: 566793
+        percent: 0.1
         rank: 5
       '2010':
         volume: 516450
+        percent: 0.1
         rank: 5
       '2011':
         volume: 544641
+        percent: 0.1
         rank: 6
       '2012':
         volume: 266370
+        percent: 0.1
         rank: 7
       '2013':
         volume: 598961
+        percent: 0.2
         rank: 6
       '2014':
         volume: 495799
+        percent: 0.1
         rank: 6
     Gas (mcf):
       '2005':
         volume: 14609535
-        rank: 14
+        percent: 0.2
+        rank: 11
       '2006':
         volume: 14191890
-        rank: 14
+        percent: 0.2
+        rank: 11
       '2007':
         volume: 14225421
-        rank: 14
+        percent: 0.2
+        rank: 11
       '2008':
         volume: 15077374
-        rank: 13
+        percent: 0.2
+        rank: 10
       '2009':
         volume: 15757784
-        rank: 14
+        percent: 0.2
+        rank: 10
       '2010':
         volume: 15230392
-        rank: 14
+        percent: 0.2
+        rank: 10
       '2011':
         volume: 12725034
-        rank: 16
+        percent: 0.2
+        rank: 9
       '2012':
         volume: 15808060
-        rank: 14
+        percent: 0.30000000000000004
+        rank: 9
       '2013':
         volume: 14492680
-        rank: 13
+        percent: 0.30000000000000004
+        rank: 9
       '2014':
         volume: 15102203
-        rank: 14
+        percent: 0.30000000000000004
+        rank: 9
     Oil (bbl):
       '2005':
         volume: 197805
-        rank: 17
+        percent: 0
+        rank: 9
       '2006':
         volume: 165194
-        rank: 18
+        percent: 0
+        rank: 10
       '2007':
         volume: 176963
-        rank: 18
+        percent: 0
+        rank: 10
       '2008':
         volume: 184513
-        rank: 17
+        percent: 0
+        rank: 10
       '2009':
         volume: 211490
-        rank: 16
+        percent: 0
+        rank: 10
       '2010':
         volume: 209723
-        rank: 17
+        percent: 0
+        rank: 10
       '2011':
         volume: 359177
-        rank: 12
+        percent: 0
+        rank: 11
       '2012':
         volume: 561333
-        rank: 11
+        percent: 0.1
+        rank: 10
       '2013':
         volume: 539800
-        rank: 12
+        percent: 0.1
+        rank: 9
       '2014':
         volume: 548687
-        rank: 12
+        percent: 0.1
+        rank: 10
 Offshore Alaska:
   products:
     Gas (mcf):
       '2005':
         volume: 25218516
-        rank: 12
+        percent: 0.4
+        rank: 9
       '2006':
         volume: 25229357
-        rank: 12
+        percent: 0.4
+        rank: 9
       '2007':
         volume: 26817788
-        rank: 11
+        percent: 0.4
+        rank: 9
       '2008':
         volume: 32926351
-        rank: 9
+        percent: 0.5
+        rank: 8
       '2009':
         volume: 30708137
-        rank: 8
+        percent: 0.5
+        rank: 7
       '2010':
         volume: 30919154
-        rank: 8
+        percent: 0.5
+        rank: 7
       '2011':
         volume: 34305968
-        rank: 8
+        percent: 0.6000000000000001
+        rank: 6
       '2012':
         volume: 23913986
+        percent: 0.4
         rank: 8
       '2013':
         volume: 31750055
+        percent: 0.6000000000000001
         rank: 7
       '2014':
         volume: 34766101
-        rank: 7
+        percent: 0.7000000000000001
+        rank: 6
     Oil (bbl):
       '2005':
         volume: 4000051
-        rank: 10
+        percent: 0.4
+        rank: 8
       '2006':
         volume: 3367689
-        rank: 10
+        percent: 0.30000000000000004
+        rank: 9
       '2007':
         volume: 2475709
-        rank: 10
+        percent: 0.2
+        rank: 9
       '2008':
         volume: 2985742
-        rank: 10
+        percent: 0.30000000000000004
+        rank: 9
       '2009':
         volume: 1872793
-        rank: 10
+        percent: 0.1
+        rank: 9
       '2010':
         volume: 1383388
-        rank: 10
+        percent: 0.1
+        rank: 9
       '2011':
         volume: 1154070
+        percent: 0.1
         rank: 10
       '2012':
         volume: 695587
+        percent: 0.1
         rank: 10
       '2013':
         volume: 752690
-        rank: 11
+        percent: 0.1
+        rank: 9
       '2014':
         volume: 740073
-        rank: 11
+        percent: 0.1
+        rank: 10
 Offshore Gulf:
   products:
     Gas (mcf):
       '2005':
         volume: 3153662713
+        percent: 48.4
         rank: 1
       '2006':
         volume: 2921271143
+        percent: 45.1
         rank: 1
       '2007':
         volume: 2813193096
+        percent: 43.1
         rank: 1
       '2008':
         volume: 2330333631
+        percent: 36.8
         rank: 1
       '2009':
         volume: 2450685347
+        percent: 37.5
         rank: 1
       '2010':
         volume: 2250045081
+        percent: 35.9
         rank: 1
       '2011':
         volume: 1826116735
+        percent: 31.7
         rank: 2
       '2012':
         volume: 1534777801
+        percent: 28.4
         rank: 2
       '2013':
         volume: 1327284618
+        percent: 26.7
         rank: 2
       '2014':
         volume: 1276235649
+        percent: 26.3
         rank: 2
     Oil (bbl):
       '2005':
         volume: 466800584
+        percent: 44.1
         rank: 1
       '2006':
         volume: 471814983
+        percent: 43.6
         rank: 1
       '2007':
         volume: 467914463
+        percent: 43.5
         rank: 1
       '2008':
         volume: 423340091
+        percent: 43
         rank: 1
       '2009':
         volume: 570211541
+        percent: 44.3
         rank: 1
       '2010':
         volume: 566580952
+        percent: 45.1
         rank: 1
       '2011':
         volume: 481675326
+        percent: 44.3
         rank: 1
       '2012':
         volume: 464522816
+        percent: 44
         rank: 1
       '2013':
         volume: 458890600
+        percent: 43.2
         rank: 1
       '2014':
         volume: 510277927
+        percent: 73.3
         rank: 1
 Offshore Pacific:
   products:
     Gas (mcf):
       '2005':
         volume: 54185608
+        percent: 0.8
         rank: 6
       '2006':
         volume: 47153866
+        percent: 0.7000000000000001
         rank: 6
       '2007':
         volume: 45563230
+        percent: 0.7000000000000001
         rank: 6
       '2008':
         volume: 46906273
+        percent: 0.7000000000000001
         rank: 6
       '2009':
         volume: 41233098
+        percent: 0.6000000000000001
         rank: 6
       '2010':
         volume: 41257256
+        percent: 0.7000000000000001
         rank: 6
       '2011':
         volume: 36596806
+        percent: 0.6000000000000001
         rank: 6
       '2012':
         volume: 27267648
+        percent: 0.5
         rank: 7
       '2013':
         volume: 27494558
-        rank: 8
+        percent: 0.6000000000000001
+        rank: 7
       '2014':
         volume: 28313384
-        rank: 9
+        percent: 0.6000000000000001
+        rank: 7
     Oil (bbl):
       '2005':
         volume: 26542513
+        percent: 2.5
         rank: 3
       '2006':
         volume: 25992104
+        percent: 2.4
         rank: 3
       '2007':
         volume: 24624090
+        percent: 2.3
         rank: 4
       '2008':
         volume: 24031967
+        percent: 2.4
         rank: 4
       '2009':
         volume: 22306733
+        percent: 1.7000000000000002
         rank: 4
       '2010':
         volume: 21710971
+        percent: 1.7000000000000002
         rank: 4
       '2011':
         volume: 19820268
+        percent: 1.8
         rank: 4
       '2012':
         volume: 17685001
+        percent: 1.7000000000000002
         rank: 4
       '2013':
         volume: 18571781
+        percent: 1.7000000000000002
         rank: 5
       '2014':
         volume: 18506540
+        percent: 2.7
         rank: 5
 PA:
   products:
     Gas (mcf):
       '2005':
         volume: 11224
-        rank: 26
+        percent: 0
+        rank: 13
       '2006':
         volume: 15449
-        rank: 25
+        percent: 0
+        rank: 13
       '2007':
         volume: 19912
-        rank: 25
+        percent: 0
+        rank: 13
       '2008':
         volume: 17144
-        rank: 25
+        percent: 0
+        rank: 12
       '2009':
         volume: 59564
-        rank: 25
+        percent: 0
+        rank: 12
       '2010':
         volume: 64629
-        rank: 25
+        percent: 0
+        rank: 12
       '2011':
         volume: 37307
-        rank: 25
+        percent: 0
+        rank: 11
       '2012':
         volume: 24786
-        rank: 25
+        percent: 0
+        rank: 11
       '2013':
         volume: 27160
-        rank: 25
+        percent: 0
+        rank: 12
       '2014':
         volume: 18674
-        rank: 26
+        percent: 0
+        rank: 11
     Oil (bbl):
       '2009':
         volume: 6310
-        rank: 25
+        percent: 0
+        rank: 10
       '2010':
         volume: 5986
-        rank: 25
+        percent: 0
+        rank: 10
       '2011':
         volume: 2551
-        rank: 25
+        percent: 0
+        rank: 11
       '2012':
         volume: 1769
-        rank: 25
+        percent: 0
+        rank: 11
       '2013':
         volume: 1498
-        rank: 25
+        percent: 0
+        rank: 10
       '2014':
         volume: 1158
-        rank: 25
+        percent: 0
+        rank: 11
 SD:
   products:
     Gas (mcf):
       '2005':
         volume: 1497966
-        rank: 19
+        percent: 0
+        rank: 13
       '2006':
         volume: 1529466
-        rank: 19
+        percent: 0
+        rank: 13
       '2007':
         volume: 1669759
-        rank: 19
+        percent: 0
+        rank: 13
       '2008':
         volume: 1718266
-        rank: 19
+        percent: 0
+        rank: 12
       '2009':
         volume: 1882515
-        rank: 19
+        percent: 0
+        rank: 12
       '2010':
         volume: 1737524
-        rank: 19
+        percent: 0
+        rank: 12
       '2011':
         volume: 1879134
-        rank: 19
+        percent: 0
+        rank: 11
       '2012':
         volume: 2527278
-        rank: 18
+        percent: 0
+        rank: 11
       '2013':
         volume: 2707941
-        rank: 18
+        percent: 0.1
+        rank: 11
       '2014':
         volume: 2500311
-        rank: 18
+        percent: 0.1
+        rank: 10
     Oil (bbl):
       '2005':
         volume: 173641
-        rank: 18
+        percent: 0
+        rank: 9
       '2006':
         volume: 178907
-        rank: 17
+        percent: 0
+        rank: 10
       '2007':
         volume: 188629
-        rank: 17
+        percent: 0
+        rank: 10
       '2008':
         volume: 179654
-        rank: 18
+        percent: 0
+        rank: 10
       '2009':
         volume: 166707
-        rank: 18
+        percent: 0
+        rank: 10
       '2010':
         volume: 149640
-        rank: 18
+        percent: 0
+        rank: 10
       '2011':
         volume: 159344
-        rank: 18
+        percent: 0
+        rank: 11
       '2012':
         volume: 214458
-        rank: 18
+        percent: 0
+        rank: 11
       '2013':
         volume: 202589
-        rank: 17
+        percent: 0
+        rank: 10
       '2014':
         volume: 188896
-        rank: 16
+        percent: 0
+        rank: 11
 TX:
   products:
     Gas (mcf):
       '2005':
         volume: 25333624
-        rank: 11
+        percent: 0.4
+        rank: 9
       '2006':
         volume: 25387515
-        rank: 11
+        percent: 0.4
+        rank: 9
       '2007':
         volume: 27473536
-        rank: 10
+        percent: 0.4
+        rank: 9
       '2008':
         volume: 25139618
-        rank: 11
+        percent: 0.4
+        rank: 9
       '2009':
         volume: 23532176
-        rank: 10
+        percent: 0.4
+        rank: 8
       '2010':
         volume: 21233776
-        rank: 10
+        percent: 0.30000000000000004
+        rank: 9
       '2011':
         volume: 35099259
-        rank: 7
+        percent: 0.6000000000000001
+        rank: 6
       '2012':
         volume: 54217766
+        percent: 1
         rank: 6
       '2013':
         volume: 45631803
+        percent: 0.9
         rank: 6
       '2014':
         volume: 35831688
+        percent: 0.7000000000000001
         rank: 6
     Oil (bbl):
       '2005':
         volume: 413938
-        rank: 12
+        percent: 0
+        rank: 9
       '2006':
         volume: 335041
-        rank: 15
+        percent: 0
+        rank: 10
       '2007':
         volume: 318488
-        rank: 13
+        percent: 0
+        rank: 10
       '2008':
         volume: 308419
-        rank: 13
+        percent: 0
+        rank: 10
       '2009':
         volume: 318508
-        rank: 13
+        percent: 0
+        rank: 10
       '2010':
         volume: 274136
-        rank: 13
+        percent: 0
+        rank: 10
       '2011':
         volume: 292551
-        rank: 14
+        percent: 0
+        rank: 11
       '2012':
         volume: 289953
-        rank: 16
+        percent: 0
+        rank: 11
       '2013':
         volume: 228941
-        rank: 16
+        percent: 0
+        rank: 10
       '2014':
         volume: 147501
-        rank: 18
+        percent: 0
+        rank: 11
 UT:
   products:
     Clay (tons):
       '2014':
         volume: 33520
+        percent: 100
         rank: 1
     Coal (tons):
       '2005':
         volume: 12469841
+        percent: 3
         rank: 4
       '2006':
         volume: 10097980
+        percent: 2.4
         rank: 4
       '2007':
         volume: 6659941
+        percent: 1.5
         rank: 4
       '2008':
         volume: 8580347
+        percent: 1.8
         rank: 4
       '2009':
         volume: 6683745
+        percent: 1.6
         rank: 4
       '2010':
         volume: 6219884
+        percent: 1.4
         rank: 4
       '2011':
         volume: 7213622
+        percent: 1.7000000000000002
         rank: 4
       '2012':
         volume: 8792809
+        percent: 2.2
         rank: 4
       '2013':
         volume: 8108509
+        percent: 2.2
         rank: 4
       '2014':
         volume: 8084545
+        percent: 2.2
         rank: 3
     Gas (mcf):
       '2005':
         volume: 167700675
+        percent: 2.6
         rank: 5
       '2006':
         volume: 209502233
+        percent: 3.2
         rank: 5
       '2007':
         volume: 240998482
+        percent: 3.7
         rank: 5
       '2008':
         volume: 296532890
+        percent: 4.7
         rank: 5
       '2009':
         volume: 304908019
+        percent: 4.7
         rank: 5
       '2010':
         volume: 288585049
+        percent: 4.6
         rank: 5
       '2011':
         volume: 300698257
+        percent: 5.2
         rank: 5
       '2012':
         volume: 327420789
+        percent: 6.1
         rank: 5
       '2013':
         volume: 297166939
+        percent: 6
         rank: 5
       '2014':
         volume: 278297384
+        percent: 5.7
         rank: 5
     'Geothermal - Electrical Generation, Kilowatt Hours':
       '2013':
         volume: 12986766
+        percent: 0.5
         rank: 3
       '2014':
         volume: 132080000
+        percent: 5.1
         rank: 3
     'Geothermal - Electrical Generation, Thousands of Pounds':
       '2005':
         volume: 2290182691
+        percent: 97.7
         rank: 1
       '2006':
         volume: 2350934233
+        percent: 97.8
         rank: 1
       '2007':
         volume: 2046718554
+        percent: 97.6
         rank: 1
       '2008':
         volume: 2468886992
+        percent: 98
         rank: 1
       '2009':
         volume: 2827213958
+        percent: 98.3
         rank: 1
       '2010':
         volume: 2670508903
+        percent: 98.2
         rank: 1
       '2011':
         volume: 2554615747
+        percent: 98.1
         rank: 1
       '2012':
         volume: 2453647854
+        percent: 98.1
         rank: 1
       '2013':
         volume: 2316266258
+        percent: 98
         rank: 1
       '2014':
         volume: 2463584337
+        percent: 98.2
         rank: 1
     Gilsonite (tons):
       '2005':
         volume: 8041
+        percent: 100
         rank: 1
       '2006':
         volume: 8776
+        percent: 100
         rank: 1
       '2007':
         volume: 10879
+        percent: 100
         rank: 1
       '2008':
         volume: 16957
+        percent: 100
         rank: 1
       '2009':
         volume: 13016
+        percent: 100
         rank: 1
       '2010':
         volume: 28082
+        percent: 100
         rank: 1
       '2012':
         volume: 35927
+        percent: 100
         rank: 1
     Oil (bbl):
       '2005':
         volume: 5905425
+        percent: 0.6000000000000001
         rank: 6
       '2006':
         volume: 7150406
+        percent: 0.7000000000000001
         rank: 6
       '2007':
         volume: 8345663
+        percent: 0.8
         rank: 6
       '2008':
         volume: 10157219
+        percent: 1
         rank: 6
       '2009':
         volume: 10973361
+        percent: 0.9
         rank: 6
       '2010':
         volume: 10835316
+        percent: 0.9
         rank: 6
       '2011':
         volume: 10661298
+        percent: 1
         rank: 7
       '2012':
         volume: 11192960
+        percent: 1.1
         rank: 7
       '2013':
         volume: 11807888
+        percent: 1.1
         rank: 7
       '2014':
         volume: 12256151
+        percent: 1.8
         rank: 7
 VA:
   products:
     Gas (mcf):
       '2005':
         volume: 258463
-        rank: 23
+        percent: 0
+        rank: 13
       '2006':
         volume: 245907
-        rank: 23
+        percent: 0
+        rank: 13
       '2007':
         volume: 208357
-        rank: 23
+        percent: 0
+        rank: 13
       '2008':
         volume: 211001
-        rank: 23
+        percent: 0
+        rank: 12
       '2009':
         volume: 198315
-        rank: 23
+        percent: 0
+        rank: 12
       '2010':
         volume: 189294
-        rank: 24
+        percent: 0
+        rank: 12
       '2011':
         volume: 181632
-        rank: 23
+        percent: 0
+        rank: 11
       '2012':
         volume: 173949
-        rank: 23
+        percent: 0
+        rank: 11
       '2013':
         volume: 162733
-        rank: 23
+        percent: 0
+        rank: 12
       '2014':
         volume: 149379
-        rank: 23
+        percent: 0
+        rank: 11
     Oil (bbl):
       '2005':
         volume: 21
-        rank: 26
+        percent: 0
+        rank: 9
 WV:
   products:
     Gas (mcf):
       '2005':
         volume: 721008
-        rank: 20
+        percent: 0
+        rank: 13
       '2006':
         volume: 574301
-        rank: 21
+        percent: 0
+        rank: 13
       '2007':
         volume: 519848
-        rank: 22
+        percent: 0
+        rank: 13
       '2008':
         volume: 596922
-        rank: 21
+        percent: 0
+        rank: 12
       '2009':
         volume: 467669
-        rank: 21
+        percent: 0
+        rank: 12
       '2010':
         volume: 379408
-        rank: 22
+        percent: 0
+        rank: 12
       '2011':
         volume: 432472
-        rank: 22
+        percent: 0
+        rank: 11
       '2012':
         volume: 201584
-        rank: 22
+        percent: 0
+        rank: 11
       '2013':
         volume: 197982
-        rank: 22
+        percent: 0
+        rank: 12
       '2014':
         volume: 172623
-        rank: 22
+        percent: 0
+        rank: 11
     Oil (bbl):
       '2009':
         volume: 193
-        rank: 26
+        percent: 0
+        rank: 10
       '2010':
         volume: 8
-        rank: 26
+        percent: 0
+        rank: 10
       '2011':
         volume: 14
-        rank: 26
+        percent: 0
+        rank: 11
 WY:
   products:
     Coal (tons):
       '2005':
         volume: 362573504
+        percent: 87.3
         rank: 1
       '2006':
         volume: 369856067
+        percent: 87.5
         rank: 1
       '2007':
         volume: 384201780
+        percent: 88.2
         rank: 1
       '2008':
         volume: 418915511
+        percent: 89.4
         rank: 1
       '2009':
         volume: 387746736
+        percent: 90.3
         rank: 1
       '2010':
         volume: 397535690
+        percent: 90.7
         rank: 1
       '2011':
         volume: 390112610
+        percent: 89.5
         rank: 1
       '2012':
         volume: 353311864
+        percent: 87.6
         rank: 1
       '2013':
         volume: 331529668
+        percent: 88
         rank: 1
       '2014':
         volume: 340049300
+        percent: 90.6
         rank: 1
     Gas (mcf):
       '2005':
         volume: 1363453405
+        percent: 20.9
         rank: 2
       '2006':
         volume: 1491448824
+        percent: 23
         rank: 2
       '2007':
         volume: 1663194651
+        percent: 25.5
         rank: 2
       '2008':
         volume: 1853711613
+        percent: 29.3
         rank: 2
       '2009':
         volume: 1936844263
+        percent: 29.7
         rank: 2
       '2010':
         volume: 1936990585
+        percent: 30.9
         rank: 2
       '2011':
         volume: 1834316065
+        percent: 31.8
         rank: 1
       '2012':
         volume: 1736628829
+        percent: 32.2
         rank: 1
       '2013':
         volume: 1591445784
+        percent: 32
         rank: 1
       '2014':
         volume: 1530108360
+        percent: 31.6
         rank: 1
     Oil (bbl):
       '2005':
         volume: 30506324
+        percent: 2.9
         rank: 2
       '2006':
         volume: 31881551
+        percent: 2.9
         rank: 2
       '2007':
         volume: 33058880
+        percent: 3.1
         rank: 2
       '2008':
         volume: 32610960
+        percent: 3.3
         rank: 2
       '2009':
         volume: 31935377
+        percent: 2.5
         rank: 2
       '2010':
         volume: 32433495
+        percent: 2.6
         rank: 2
       '2011':
         volume: 32408834
+        percent: 3
         rank: 3
       '2012':
         volume: 33168536
+        percent: 3.1
         rank: 3
       '2013':
         volume: 35695519
+        percent: 3.4
         rank: 3
       '2014':
         volume: 40604914
+        percent: 5.8
         rank: 3
     Purge Liquor (tons- equivalent):
       '2005':
         volume: 61925
+        percent: 100
         rank: 1
       '2006':
         volume: 69814
+        percent: 100
         rank: 1
       '2007':
         volume: 97711
+        percent: 100
         rank: 1
       '2008':
         volume: 116333
+        percent: 100
         rank: 1
       '2009':
         volume: 118021
+        percent: 100
         rank: 1
       '2010':
         volume: 104405
+        percent: 100
         rank: 1
       '2011':
         volume: 88407
+        percent: 100
         rank: 1
       '2012':
         volume: 73594
+        percent: 100
         rank: 1
       '2013':
         volume: 88213
+        percent: 100
         rank: 1
       '2014':
         volume: 91878
+        percent: 100
         rank: 1
     Soda Ash (tons):
       '2005':
         volume: 3416753
+        percent: 100
         rank: 1
       '2006':
         volume: 4755332
+        percent: 100
         rank: 1
       '2007':
         volume: 5662599
+        percent: 100
         rank: 1
       '2008':
         volume: 7069757
+        percent: 100
         rank: 1
       '2009':
         volume: 5545300
+        percent: 100
         rank: 1
       '2010':
         volume: 4990309
+        percent: 100
         rank: 1
       '2011':
         volume: 5705147
+        percent: 100
         rank: 1
       '2012':
         volume: 4740200
+        percent: 100
         rank: 1
       '2013':
         volume: 5232597
+        percent: 100
         rank: 1
       '2014':
         volume: 6075994
+        percent: 100
         rank: 1
     Sodium Bi-Carbonate (tons):
       '2010':
         volume: 46904
+        percent: 100
         rank: 1
       '2011':
         volume: 34297
+        percent: 100
         rank: 1
       '2012':
         volume: 69262
+        percent: 100
         rank: 1
       '2013':
         volume: 71539
+        percent: 100
         rank: 1
       '2014':
         volume: 107022
+        percent: 100
         rank: 1
     Sodium Sesquicarbonate:
       '2013':
         volume: 121115
+        percent: 100
         rank: 1
     Trona Ore (tons):
       '2009':
         volume: 139699
+        percent: 100
         rank: 1

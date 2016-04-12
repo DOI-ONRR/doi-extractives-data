@@ -3,7 +3,7 @@
     SELECT
       state, product, year,
       ROUND(volume) AS volume,
-      rank
+      percent, rank
     FROM all_production_state_rank
     ORDER BY
         state, product, year" | \

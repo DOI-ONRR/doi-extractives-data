@@ -4,3 +4,4 @@
       '{year}':
         revenue: '{revenue}'
         rank: '{rank}'
+        percent: '{percent}'

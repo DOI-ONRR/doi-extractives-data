@@ -3,4 +3,5 @@
     '{product}':
       '{year}':
         volume: '{volume}'
+        percent: '{percent}'
         rank: '{rank}'

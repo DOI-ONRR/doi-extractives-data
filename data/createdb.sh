@@ -100,8 +100,8 @@ load_sql db/rollup-employment.sql
 # Load GDP table
 $tables -d $db_url -i gdp/regional.tsv -n gdp
 
-# Load GDP table
-$tables -d $db_url -i 'state/exports-by-industry.tsv' -n exports
+# Load exports table
+$tables -d $db_url -i state/exports-by-industry.tsv -n exports
 
 # Disbursements
 $tito --read tsv _input/onrr/disbursements/state.tsv \

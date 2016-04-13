@@ -36,7 +36,7 @@ Although increased production costs and a diversified global supply of iron drov
 
 <h2 class="h3"><a name="production" class="case_studies_content-heading" data-nav-header="production">Production</a></h2>
 
-Today’s iron mining along the Marquette Iron Range is centered on the Empire and Tilden Mines, operated by Cliffs Natural Resources Inc. In 2012, these two mines generated a combined 10.8 million <span class="term term-p" data-term="metric ton" title="Click to define" tabindex="0">metric tons<icon class="icon-book"></icon></span> of usable iron ore, which produced a total of 6.6 million metric tons of iron.[^3] Marquette County’s usable iron ore output had remained relatively constant over the preceding ten years, averaging 12 million metric tons out of a total annual capacity of 13 million metric tons.[^4] As shown in the chart below, the 2009 economic crisis drove down iron-ore production, but it rebounded the following year.
+Today’s iron mining along the Marquette Iron Range is centered on the Empire and Tilden Mines, operated by Cliffs Natural Resources Inc. In 2012, these two mines generated a combined 10.8 million {{ "metric tons" | term:"metric ton" }} of usable iron ore, which produced a total of 6.6 million metric tons of iron.[^3] Marquette County’s usable iron ore output had remained relatively constant over the preceding ten years, averaging 12 million metric tons out of a total annual capacity of 13 million metric tons.[^4] As shown in the chart below, the 2009 economic crisis drove down iron-ore production, but it rebounded the following year.
 
 Major corporate landowners own a significant portion of the land used for natural resource extraction in Marquette County; lands in public ownership make up only 25% of the county.[^5]
 
@@ -85,7 +85,7 @@ The table below highlights the data sources used to compile this narrative, as w
     <tr>
       <td>Costs</td>
       <td></td>
-      <td>Data on connections between county transportation, emergency services, <span class="term term-p" data-term="reclamation" title="Click to define" tabindex="0">reclamation<icon class="icon-book"></icon></span>, and water-infrastructure investments and extractive industries was not found.</td>
+      <td>Data on connections between county transportation, emergency services, {{ "reclamation" | term_end }}, and water-infrastructure investments and extractive industries was not found.</td>
     </tr>
   </tbody>
 </table>

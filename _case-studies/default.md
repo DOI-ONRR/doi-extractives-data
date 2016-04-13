@@ -63,7 +63,7 @@ There are additional fiscal benefits and burdens associated with extractive acti
 
 We used a range of information publicly available online to compile the case studies, including government databases, documents, and reports, as well as information produced by councils of governments. The case studies integrate data and analysis already reported elsewhere by government bodies. Local data sources were prioritized, and data was collected and presented at the most granular level available. We used state information when county information was not available.
 
-County and state budget documents and state agency websites were the primary data sources. Federal agency websites and reports also provided critical information on employment in extractive industries, <span class="term term-p" data-term="proved reserves" title="Click to define" tabindex="0">proved reserves<icon class="icon-book"></icon></span> of various natural resources, and production estimates.
+County and state budget documents and state agency websites were the primary data sources. Federal agency websites and reports also provided critical information on employment in extractive industries, {{ "proved reserves" | term }} of various natural resources, and production estimates.
 
 This year’s data collection process was the first step in bringing information about extractive industries’ impacts on local communities and governments to the public in a clear, digestible way. We reached out to each county we profiled to communicate the purpose and status of USEITI, verify content, and lay the foundation for future collaboration.
 

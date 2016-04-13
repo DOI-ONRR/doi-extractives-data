@@ -1,5 +1,6 @@
 all_production:
   '2013':
     - product: Conventional Hydroelectric
+      value: 33098
       rank: 2
       percent: 12.324018394057305

@@ -1,80 +1,83 @@
 revenue:
   '2004':
     - product: Coal-Lignite-Raw
+      value: 21957.37
       rank: 1
       percent: 100
     - product: Nitrogen
+      value: 3830.72
       rank: 1
       percent: 100
   '2005':
     - product: Nitrogen
+      value: 2621.3500000000004
       rank: 1
       percent: 100
   '2006':
     - product: Leonardite
+      value: 13538.710000000001
       rank: 1
       percent: 100
     - product: Nitrogen
+      value: 1894.3899999999999
       rank: 1
       percent: 100
   '2007':
     - product: Nitrogen
+      value: 959.6
       rank: 1
       percent: 100
   '2008':
     - product: Nitrogen
+      value: 913.65
       rank: 1
       percent: 97.03164825828377
-    - product: Inlet Scrubber
-      rank: 1
-      percent: 10.259689519165434
   '2009':
     - product: Leonardite
+      value: 15526.55
       rank: 1
       percent: 100
     - product: Nitrogen
+      value: 1042.37
       rank: 1
       percent: 100
     - product: Hardrock
+      value: 16815
       rank: 2
       percent: 29.01458097009299
   '2010':
     - product: Leonardite
+      value: 15925.630000000001
       rank: 1
       percent: 100
     - product: Nitrogen
+      value: 1103.3799999999999
       rank: 1
       percent: 91.8809539670908
   '2011':
     - product: Nitrogen
+      value: 1098.02
       rank: 1
       percent: 127.48551591217824
     - product: Leonardite
+      value: 897.98
       rank: 1
       percent: 100
-    - product: 'Oil & Gas'
-      rank: 2
-      percent: 15.904776286057833
   '2012':
     - product: Leonardite
+      value: 20100.829999999998
       rank: 1
       percent: 100
     - product: Nitrogen
+      value: 1286.6599999999999
       rank: 1
       percent: 92.79177274071296
   '2013':
     - product: Leonardite
+      value: 49709.67
       rank: 1
       percent: 100
     - product: Nitrogen
+      value: 269.85
       rank: 2
       percent: 40.66945985049434
-all_production:
-  '2012':
-    - product: Oil (bbl)
-      rank: 2
-      percent: 10.26262871743722
-  '2013':
-    - product: Oil (bbl)
-      rank: 2
-      percent: 11.534289945210624

@@ -1,747 +1,848 @@
 revenue:
   '2004':
-    - product: Soda Ash-Granular
-      rank: 1
-      percent: 129.5935782847062
-    - product: Helium
-      rank: 1
-      percent: 100.26860847331257
     - product: Purge Liquor
+      value: 37024.87
       rank: 1
       percent: 100
     - product: Sodium Sesquicarbonate
+      value: 207108.66
       rank: 1
       percent: 100
     - product: Trona Ore
+      value: 18046.05
       rank: 1
       percent: 100
     - product: Coal
+      value: 478522415.17
       rank: 1
       percent: 78.60196439241265
     - product: Sodium
+      value: 266434
       rank: 1
       percent: 73.74592567005014
     - product: Soda Ash
+      value: 6091944.319999999
       rank: 1
       percent: 67.14796257458005
     - product: Sulfur
+      value: 57320.39
       rank: 1
       percent: 63.01928022840705
-    - product: Unprocessed (Wet) Gas
-      rank: 1
-      percent: 15.963121168967168
-    - product: All
-      rank: 1
-      percent: 14.98515290808403
-    - product: Coal Bed Methane
+    - product: Helium
+      value: -21423.06
       rank: 2
-      percent: 18.883831908135523
+      percent: 100.26860847331257
+    - product: Soda Ash-Granular
+      value: -583138.03
+      rank: 3
+      percent: 129.5935782847062
   '2005':
     - product: Coal-Subbituminous-Raw
+      value: 180987.06
       rank: 1
       percent: 100
     - product: Helium
+      value: 9562.66
       rank: 1
       percent: 100
     - product: Purge Liquor
+      value: 69151.97
       rank: 1
       percent: 100
     - product: Sodium Bisulfite
+      value: 3458.54
       rank: 1
       percent: 100
     - product: Sodium Decahydrate
+      value: 273.44
       rank: 1
       percent: 100
     - product: Sodium Sesquicarbonate
+      value: 280365.88
       rank: 1
       percent: 100
     - product: Sulfide
+      value: 45802.5
       rank: 1
       percent: 100
     - product: Trona Ore
+      value: 75834.23
       rank: 1
       percent: 100
     - product: Sodium
+      value: 163481.62
       rank: 1
       percent: 96.5397503561595
     - product: Coal
+      value: 766724582.0500001
       rank: 1
       percent: 86.1008701553112
     - product: Soda Ash
+      value: 14862717.97
       rank: 1
       percent: 82.15554855078797
     - product: Sodium Bi-Carbonate
+      value: 808209.9500000001
       rank: 1
       percent: 63.86956124822692
     - product: Inlet Scrubber
+      value: 202341.04
       rank: 1
       percent: 58.988910089427776
     - product: Sulfur
+      value: 29519.33000000001
       rank: 1
       percent: 45.371209316187176
     - product: Unprocessed (Wet) Gas
+      value: 581978689.2800001
       rank: 1
       percent: 22.04783895518833
-    - product: All
-      rank: 1
-      percent: 18.837197329426544
-    - product: Condensate
-      rank: 1
-      percent: 13.912740901597273
-    - product: Other Liquid Hydrocarbons
-      rank: 1
-      percent: 12.216756831484824
     - product: Coal Bed Methane
+      value: 79275028.31
       rank: 2
       percent: 26.8934520951983
-    - product: 'Oil & Gas'
-      rank: 2
-      percent: 10.359797692430167
   '2006':
     - product: Sodium
+      value: 73976.09
       rank: 1
       percent: 115.73576431961594
     - product: Inlet Scrubber
+      value: 637064.2
       rank: 1
       percent: 115.01163043969822
     - product: Asbestos
+      value: 715.53
       rank: 1
       percent: 100
     - product: 'Borrow Sand & Gravel'
+      value: 19284.43
       rank: 1
       percent: 100
     - product: Purge Liquor
+      value: 99589.28
       rank: 1
       percent: 100
     - product: Sodium Bisulfite
+      value: 16996.93
       rank: 1
       percent: 100
     - product: Sodium Decahydrate
+      value: 1842.91
       rank: 1
       percent: 100
     - product: Sodium Sesquicarbonate
+      value: 299799.37
       rank: 1
       percent: 100
     - product: Sulfide
+      value: 271208.22000000003
       rank: 1
       percent: 100
     - product: Trona Ore
+      value: 371513.16
       rank: 1
       percent: 100
     - product: Coal
+      value: 824611914.6799998
       rank: 1
       percent: 86.83670656667668
     - product: Soda Ash
+      value: 22887841.130000003
       rank: 1
       percent: 83.53805632902055
-    - product: Helium
-      rank: 1
-      percent: 80.31622993551929
     - product: Sodium Bi-Carbonate
+      value: 883257.92
       rank: 1
       percent: 68.13872245249246
     - product: Other Liquid Hydrocarbons
+      value: 24816.920000000006
       rank: 1
       percent: 59.477995443448854
     - product: Sulfur
+      value: 15499.790000000006
       rank: 1
       percent: 43.34276820309075
     - product: Unprocessed (Wet) Gas
+      value: 585022160.5999999
       rank: 1
       percent: 27.97267209458313
     - product: Drip or Scrubber Condensate
+      value: 2055191.78
       rank: 1
       percent: 20.304237553115954
-    - product: All
-      rank: 1
-      percent: 16.53726404069677
-    - product: Condensate
-      rank: 1
-      percent: 15.244794303962776
+    - product: Helium
+      value: -234.17
+      rank: 2
+      percent: 80.31622993551929
     - product: Coal Bed Methane
+      value: 128276958.38000001
       rank: 2
       percent: 38.2187503868584
   '2007':
     - product: Coal-Subbituminous-Raw
+      value: -27620.47
       rank: 1
       percent: 100
     - product: Purge Liquor
+      value: 43998.91
       rank: 1
       percent: 100
     - product: Soda Ash-Granular
+      value: 7508.38
       rank: 1
       percent: 100
     - product: Sodium Bisulfite
+      value: 3378.06
       rank: 1
       percent: 100
     - product: Sodium Sesquicarbonate
+      value: 248473.5
       rank: 1
       percent: 100
     - product: Sulfide
+      value: 65909.39
       rank: 1
       percent: 100
     - product: Trona Ore
+      value: 93528.53
       rank: 1
       percent: 100
     - product: Inlet Scrubber
+      value: 468205.61
       rank: 1
       percent: 95.74454540740065
     - product: Soda Ash
+      value: 10977807.7
       rank: 1
       percent: 92.17896166836485
     - product: Coal
+      value: 807936086.12
       rank: 1
       percent: 85.96173943019934
     - product: Sodium
+      value: 56140.88000000001
       rank: 1
       percent: 73.99139214454111
     - product: Sulfur
+      value: 65834.88
       rank: 1
       percent: 63.52038763571736
     - product: Other Liquid Hydrocarbons
+      value: 35916.689999999995
       rank: 1
       percent: 25.874204764937627
-    - product: Unprocessed (Wet) Gas
-      rank: 1
-      percent: 19.59786168706619
-    - product: All
-      rank: 1
-      percent: 16.247902850150588
-    - product: Condensate
-      rank: 1
-      percent: 14.243624462038467
-    - product: Processed (Residue) Gas
-      rank: 1
-      percent: 10.691938603537526
     - product: Coal Bed Methane
+      value: 152837245.48000002
       rank: 2
       percent: 44.42697648865387
     - product: Sodium Bi-Carbonate
+      value: 134178.91999999998
       rank: 2
       percent: 34.49527666961644
-    - product: Gas Plant Products
-      rank: 2
-      percent: 14.477914496897341
   '2008':
     - product: Purge Liquor
+      value: 57995.71
       rank: 1
       percent: 100
     - product: Sodium Bisulfite
+      value: 6094.650000000001
       rank: 1
       percent: 100
     - product: Sodium Sesquicarbonate
+      value: 186506.81
       rank: 1
       percent: 100
     - product: Sulfide
+      value: 111794.17000000001
       rank: 1
       percent: 100
     - product: Trona Ore
+      value: 211259.44999999998
       rank: 1
       percent: 100
     - product: Soda Ash
+      value: 16934238.58
       rank: 1
       percent: 90.65921113035729
     - product: Coal
+      value: 991221909.55
       rank: 1
       percent: 86.8830053734691
     - product: Sulfur
+      value: 1119707.8400000003
       rank: 1
       percent: 78.08330231269166
     - product: Coal Bed Methane
+      value: 221728286.8
       rank: 1
       percent: 54.23391457976202
     - product: Other Liquid Hydrocarbons
+      value: 70127.15000000001
       rank: 1
       percent: 48.84109978775229
     - product: Processed (Residue) Gas
+      value: 750932333.4200002
       rank: 1
       percent: 22.806746575231593
-    - product: Condensate
-      rank: 1
-      percent: 16.859089831428413
-    - product: All
-      rank: 1
-      percent: 12.05833998112405
     - product: Sodium
+      value: 113012.4
       rank: 2
       percent: 27.370511180728986
     - product: Sodium Bi-Carbonate
+      value: 102376.34
       rank: 2
       percent: 25.38863445752693
-    - product: Gas Plant Products
-      rank: 2
-      percent: 16.737517882307184
-    - product: Unprocessed (Wet) Gas
-      rank: 2
-      percent: 14.291419866559295
   '2009':
     - product: Sodium
+      value: 156577.55
       rank: 1
       percent: 242.642169414242
-    - product: Inlet Scrubber
-      rank: 1
-      percent: 127.99279410934116
     - product: Purge Liquor
+      value: 72155.56
       rank: 1
       percent: 100
     - product: Sodium Bisulfite
+      value: 2683.8500000000004
       rank: 1
       percent: 100
     - product: Sodium Sesquicarbonate
+      value: 199927.52
       rank: 1
       percent: 100
     - product: Sulfide
+      value: 128436.70999999999
       rank: 1
       percent: 100
     - product: Trona Ore
+      value: 206833.44
       rank: 1
       percent: 100
     - product: Sulfur
+      value: 7096365.819999999
       rank: 1
       percent: 99.79938839657646
     - product: Soda Ash
+      value: 13768536.9
       rank: 1
       percent: 88.22817546304216
     - product: Coal
+      value: 956391867.99
       rank: 1
       percent: 88.03003706014898
     - product: Other Liquid Hydrocarbons
+      value: 52785.82
       rank: 1
       percent: 78.53594081203278
     - product: Coal Bed Methane
+      value: 112062257.61999999
       rank: 1
       percent: 60.95234892262204
     - product: Processed (Residue) Gas
+      value: 331844656.88
       rank: 1
       percent: 26.457242151066254
     - product: Unprocessed (Wet) Gas
+      value: 107486222.06
       rank: 1
       percent: 24.480075585637188
     - product: Condensate
+      value: 41086293.48
       rank: 1
       percent: 24.42098672951585
     - product: All
+      value: 1801155891.3799999
       rank: 1
       percent: 22.942657048903467
-    - product: Fuel Gas
-      rank: 1
-      percent: 13.204326500329053
+    - product: Inlet Scrubber
+      value: -1087305.1600000001
+      rank: 2
+      percent: 127.99279410934116
     - product: Sodium Bi-Carbonate
+      value: 101382.97
       rank: 2
       percent: 24.197149197260774
-    - product: Gas Plant Products
-      rank: 2
-      percent: 15.457950809391782
   '2010':
     - product: Coal-Bituminous-Raw
+      value: 199776.97
       rank: 1
       percent: 100
     - product: Gas Hydrates
+      value: 3394.67
       rank: 1
       percent: 100
     - product: Purge Liquor
+      value: 71710.16
       rank: 1
       percent: 100
     - product: Sodium Bisulfite
+      value: 2659.48
       rank: 1
       percent: 100
     - product: Sodium Sesquicarbonate
+      value: 319044.16
       rank: 1
       percent: 100
     - product: Sulfide
+      value: 105133.2
       rank: 1
       percent: 100
     - product: Trona Ore
+      value: 248907.91999999998
       rank: 1
       percent: 100
     - product: Sulfur
+      value: 371502.86
       rank: 1
       percent: 98.00652568063822
     - product: Sodium
+      value: 129283.13999999998
       rank: 1
       percent: 91.43028125939044
     - product: Other Liquid Hydrocarbons
+      value: 51085.1
       rank: 1
       percent: 89.33611947460636
     - product: Soda Ash
+      value: 12545243.06
       rank: 1
       percent: 87.7252150477647
     - product: Coal
+      value: 716835132.5500001
       rank: 1
       percent: 81.77430292486714
     - product: Coal Bed Methane
+      value: 166246845.35999998
       rank: 1
       percent: 64.77427315151246
     - product: Unprocessed (Wet) Gas
+      value: 458473156.42999995
       rank: 1
       percent: 43.536750694087125
-    - product: All
-      rank: 1
-      percent: 17.73174042717085
-    - product: Condensate
-      rank: 1
-      percent: 11.875661147373972
     - product: Sodium Bi-Carbonate
+      value: 193637
       rank: 2
       percent: 32.68787564882996
-    - product: Gas Plant Products
-      rank: 2
-      percent: 12.764886462222915
-    - product: Processed (Residue) Gas
-      rank: 2
-      percent: 11.516305693144103
   '2011':
     - product: Purge Liquor
+      value: 115060.79
       rank: 1
       percent: 100
     - product: Sodium Bisulfite
+      value: 6161.120000000001
       rank: 1
       percent: 100
     - product: Sodium Sesquicarbonate
+      value: 386564.96
       rank: 1
       percent: 100
     - product: Sulfide
+      value: 282746.32
       rank: 1
       percent: 100
     - product: Trona Ore
+      value: 564757.97
       rank: 1
       percent: 100
     - product: Sodium
+      value: 167425.15
       rank: 1
       percent: 93.73834045577985
     - product: Sulfur
+      value: 1810389.1700000002
       rank: 1
       percent: 92.54804690451411
     - product: Soda Ash
+      value: 23777162.73
       rank: 1
       percent: 90.97593222530209
     - product: Coal
+      value: 878951512.5100001
       rank: 1
       percent: 84.59190999102577
     - product: Coal Bed Methane
+      value: 149516796.93
       rank: 1
       percent: 62.23005037060748
     - product: Other Liquid Hydrocarbons
+      value: 27321.69
       rank: 1
       percent: 44.96154889866652
     - product: Unprocessed (Wet) Gas
+      value: 400433969.4199999
       rank: 1
       percent: 44.414394916876645
     - product: 'Oil & Gas'
+      value: 132318011.15999997
       rank: 1
       percent: 20.358814655483318
-    - product: All
-      rank: 1
-      percent: 19.147672400647973
     - product: Sodium Bi-Carbonate
+      value: 293474.26
       rank: 2
       percent: 34.23464474760426
-    - product: Processed (Residue) Gas
-      rank: 2
-      percent: 13.045403741732219
-    - product: Gas Plant Products
-      rank: 2
-      percent: 12.034535823792092
   '2012':
-    - product: Unprocessed (Wet) Gas
-      rank: 1
-      percent: 133.78452891824858
     - product: Gas Hydrates
+      value: -3394.67
       rank: 1
       percent: 100
     - product: Purge Liquor
+      value: 182763.31
       rank: 1
       percent: 100
     - product: Sodium Bisulfite
+      value: 281.17
       rank: 1
       percent: 100
     - product: Sodium Sesquicarbonate
+      value: 1162130.74
       rank: 1
       percent: 100
     - product: Sulfide
+      value: 271163.13
       rank: 1
       percent: 100
     - product: Trona Ore
+      value: 501657.01
       rank: 1
       percent: 100
     - product: Sulfur
+      value: 2025396.5900000003
       rank: 1
       percent: 97.09670906991697
     - product: Soda Ash
+      value: 38532552.449999996
       rank: 1
       percent: 87.6247641001069
     - product: Coal
+      value: 1171956164.76
       rank: 1
       percent: 86.95510799245606
     - product: Coal-Bituminous-Raw
+      value: 54308.16
       rank: 1
       percent: 82.65884666074189
     - product: Sodium
+      value: 108153
       rank: 1
       percent: 73.6228066849424
     - product: Processed (Residue) Gas
+      value: 395231335.86999995
       rank: 1
       percent: 39.77697155851803
     - product: Other Liquid Hydrocarbons
+      value: 25960.109999999997
       rank: 1
       percent: 30.388668960868788
     - product: Gas Plant Products
+      value: 132172213.43000002
       rank: 1
       percent: 24.00246624205094
-    - product: All
-      rank: 1
-      percent: 16.598277898723584
-    - product: Inlet Scrubber
-      rank: 1
-      percent: 11.306846120848729
     - product: Coal Bed Methane
+      value: 97728061.86999999
       rank: 2
       percent: 47.755817621400496
     - product: Sodium Bi-Carbonate
+      value: 680297.59
       rank: 2
       percent: 34.9681899884674
     - product: Drip or Scrubber Condensate
+      value: 539111.2799999999
       rank: 2
       percent: 22.63017645325133
   '2013':
     - product: Purge Liquor
+      value: 195962.63
       rank: 1
       percent: 100
     - product: Sodium Sesquicarbonate
+      value: 1083657.47
       rank: 1
       percent: 100
     - product: Sulfide
+      value: 462235.38
       rank: 1
       percent: 100
     - product: Trona Ore
+      value: 719916.39
       rank: 1
       percent: 100
     - product: Sulfur
+      value: 476174.83999999997
       rank: 1
       percent: 94.09139622490589
     - product: Sodium
+      value: 64739.98
       rank: 1
       percent: 89.18522098214532
     - product: Soda Ash
+      value: 39052238.53
       rank: 1
       percent: 88.97804024807706
     - product: Coal
+      value: 996347415.4899999
       rank: 1
       percent: 87.95285720334793
     - product: Unprocessed (Wet) Gas
+      value: 187520718.81
       rank: 1
       percent: 45.68279923365608
     - product: Processed (Residue) Gas
+      value: 233722229.11999995
       rank: 1
       percent: 24.265450095467024
     - product: Other Liquid Hydrocarbons
+      value: 10777.130000000001
       rank: 1
       percent: 23.429944181445627
-    - product: All
-      rank: 1
-      percent: 16.309210250180985
-    - product: Drip or Scrubber Condensate
-      rank: 1
-      percent: 11.300617425079833
     - product: Coal Bed Methane
+      value: 78804440.36999999
       rank: 2
       percent: 40.966760393657005
     - product: Sodium Bi-Carbonate
+      value: 696294.58
       rank: 2
       percent: 35.736642350796494
-    - product: Gas Plant Products
-      rank: 2
-      percent: 15.064503212815135
 all_production:
   '2004':
     - product: Coal (short tons)
+      value: 396493092
       rank: 1
       percent: 50.645683229521275
   '2005':
     - product: Coal (short tons)
+      value: 404318534
       rank: 1
       percent: 51.18446311762795
   '2006':
     - product: Coal (short tons)
+      value: 446742253
       rank: 1
       percent: 54.29886460922295
   '2007':
     - product: Coal (short tons)
+      value: 453568259
       rank: 1
       percent: 55.88073386492904
   '2008':
     - product: Coal (short tons)
+      value: 467644168
       rank: 1
       percent: 56.55480642322394
   '2009':
     - product: Coal (short tons)
+      value: 431106631
       rank: 1
       percent: 56.003073971970274
   '2010':
     - product: Coal (short tons)
+      value: 442522372
       rank: 1
       percent: 56.46301757627971
   '2011':
     - product: Coal (short tons)
+      value: 438673388
       rank: 1
       percent: 55.43233166517637
-  '2012':
-    - product: Coal (short tons)
-      rank: 1
-      percent: 16.807448646573235
   '2013':
     - product: Coal (short tons)
+      value: 387923828
       rank: 1
       percent: 52.72848457384087
 federal_production:
   '2005':
     - product: Purge Liquor (tons- equivalent)
+      value: 61925
       rank: 1
       percent: 100
     - product: Soda Ash (tons)
+      value: 3416753
       rank: 1
       percent: 100
     - product: Coal (tons)
+      value: 362573504
       rank: 1
       percent: 87.27940579285413
     - product: Gas (mcf)
+      value: 1363453405.1599996
       rank: 2
       percent: 20.936043299853388
   '2006':
     - product: Purge Liquor (tons- equivalent)
+      value: 69814
       rank: 1
       percent: 100
     - product: Soda Ash (tons)
+      value: 4755332
       rank: 1
       percent: 100
     - product: Coal (tons)
+      value: 369856067
       rank: 1
       percent: 87.4861518292905
     - product: Gas (mcf)
+      value: 1491448824.3400002
       rank: 2
       percent: 23.044550907009427
   '2007':
     - product: Purge Liquor (tons- equivalent)
+      value: 97711
       rank: 1
       percent: 100
     - product: Soda Ash (tons)
+      value: 5662599
       rank: 1
       percent: 100
     - product: Coal (tons)
+      value: 384201780
       rank: 1
       percent: 88.15213755777239
     - product: Gas (mcf)
+      value: 1663194650.81
       rank: 2
       percent: 25.486559165127666
   '2008':
     - product: Purge Liquor (tons- equivalent)
+      value: 116333
       rank: 1
       percent: 100
     - product: Soda Ash (tons)
+      value: 7069757
       rank: 1
       percent: 100
     - product: Coal (tons)
+      value: 418915511
       rank: 1
       percent: 89.39436065129462
     - product: Gas (mcf)
+      value: 1853711613.48
       rank: 2
       percent: 29.290206712151583
   '2009':
     - product: Purge Liquor (tons- equivalent)
+      value: 118021
       rank: 1
       percent: 100
     - product: Soda Ash (tons)
+      value: 5545300
       rank: 1
       percent: 100
     - product: Trona Ore (tons)
+      value: 139699
       rank: 1
       percent: 100
     - product: Coal (tons)
+      value: 387746736
       rank: 1
       percent: 90.3284054557314
     - product: Gas (mcf)
+      value: 1936844262.79
       rank: 2
       percent: 29.655672302288966
   '2010':
     - product: Purge Liquor (tons- equivalent)
+      value: 104405
       rank: 1
       percent: 100
     - product: Soda Ash (tons)
+      value: 4990309
       rank: 1
       percent: 100
     - product: Sodium Bi-Carbonate (tons)
+      value: 46904
       rank: 1
       percent: 100
     - product: Coal (tons)
+      value: 397535690
       rank: 1
       percent: 90.66028052819777
     - product: Gas (mcf)
+      value: 1936990584.8799999
       rank: 2
       percent: 30.91010122119367
   '2011':
     - product: Purge Liquor (tons- equivalent)
+      value: 88407
       rank: 1
       percent: 100
     - product: Soda Ash (tons)
+      value: 5705147
       rank: 1
       percent: 100
     - product: Sodium Bi-Carbonate (tons)
+      value: 34297
       rank: 1
       percent: 100
     - product: Coal (tons)
+      value: 390112610
       rank: 1
       percent: 89.47012966337839
     - product: Gas (mcf)
+      value: 1834316065.36
       rank: 1
       percent: 31.808483624369686
   '2012':
     - product: Purge Liquor (tons- equivalent)
+      value: 73594
       rank: 1
       percent: 100
     - product: Soda Ash (tons)
+      value: 4740200
       rank: 1
       percent: 100
     - product: Sodium Bi-Carbonate (tons)
+      value: 69262
       rank: 1
       percent: 100
     - product: Coal (tons)
+      value: 353311864
       rank: 1
       percent: 87.62964881406994
     - product: Gas (mcf)
+      value: 1736628829.3400002
       rank: 1
       percent: 32.17244550157898
   '2013':
     - product: Purge Liquor (tons- equivalent)
+      value: 88213
       rank: 1
       percent: 100
     - product: Soda Ash (tons)
+      value: 5232597
       rank: 1
       percent: 100
     - product: Sodium Bi-Carbonate (tons)
+      value: 71539
       rank: 1
       percent: 100
     - product: Sodium Sesquicarbonate
+      value: 121115
       rank: 1
       percent: 100
     - product: Coal (tons)
+      value: 331529668
       rank: 1
       percent: 88.01215351060475
     - product: Gas (mcf)
+      value: 1591445783.74
       rank: 1
       percent: 32.037833268577394
   '2014':
     - product: Purge Liquor (tons- equivalent)
+      value: 91878
       rank: 1
       percent: 100
     - product: Soda Ash (tons)
+      value: 6075994
       rank: 1
       percent: 100
     - product: Sodium Bi-Carbonate (tons)
+      value: 107022
       rank: 1
       percent: 100
     - product: Coal (tons)
+      value: 340049300
       rank: 1
       percent: 90.61537767824983
     - product: Gas (mcf)
+      value: 1530108359.84
       rank: 1
       percent: 31.577063516883406

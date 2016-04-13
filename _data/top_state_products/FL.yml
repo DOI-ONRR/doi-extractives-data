@@ -1,86 +1,22 @@
-all_production:
-  '1973':
-    - product: Natural Gas (MMcf)
-      rank: 4
-      percent: 11.673901725035599
-  '1974':
-    - product: Natural Gas (MMcf)
-      rank: 4
-      percent: 11.62504305627951
-  '1975':
-    - product: Natural Gas (MMcf)
-      rank: 4
-      percent: 12.282721498844595
-  '1976':
-    - product: Natural Gas (MMcf)
-      rank: 4
-      percent: 11.926257355674927
-  '1977':
-    - product: Natural Gas (MMcf)
-      rank: 5
-      percent: 11.32702016097196
-  '2004':
-    - product: Other biomass
-      rank: 1
-      percent: 18.119102370946
-    - product: Biomass (total)
-      rank: 1
-      percent: 10.113672103158555
-  '2005':
-    - product: Other biomass
-      rank: 1
-      percent: 18.36507051230977
-  '2006':
-    - product: Other biomass
-      rank: 1
-      percent: 17.928195746627026
-  '2007':
-    - product: Other biomass
-      rank: 1
-      percent: 17.54009904649272
-  '2008':
-    - product: Other biomass
-      rank: 1
-      percent: 15.90026568567341
-  '2009':
-    - product: Other biomass
-      rank: 1
-      percent: 15.5858632220838
-    - product: Solar
-      rank: 4
-      percent: 13.043478260869565
-  '2010':
-    - product: Solar
-      rank: 1
-      percent: 37.383177570093444
-    - product: Other biomass
-      rank: 1
-      percent: 15.28071186223673
-  '2011':
-    - product: Solar
-      rank: 1
-      percent: 24.950495049504948
-    - product: Other biomass
-      rank: 1
-      percent: 14.823514474352464
-  '2012':
-    - product: Other biomass
-      rank: 1
-      percent: 13.931110566315272
-  '2013':
-    - product: Other biomass
-      rank: 2
-      percent: 11.087102660136368
 revenue:
   '2005':
     - product: Phosphate Raw Ore
+      value: 837228.4
       rank: 2
       percent: 21.894468944421394
   '2008':
     - product: Phosphate Concentrate
+      value: 1570.27
       rank: 1
       percent: 100
-  '2012':
-    - product: Phosphate Raw Ore
-      rank: 2
-      percent: 18.704658118182568
+all_production:
+  '2010':
+    - product: Solar
+      value: 80
+      rank: 1
+      percent: 37.383177570093444
+  '2011':
+    - product: Solar
+      value: 126
+      rank: 1
+      percent: 24.950495049504948

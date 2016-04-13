@@ -1,92 +1,87 @@
 revenue:
   '2004':
     - product: Copper
+      value: 13722.5
       rank: 1
       percent: 100
-    - product: Hardrock
-      rank: 2
-      percent: 11.6909800738274
   '2005':
     - product: Copper
+      value: 18944.5
       rank: 1
       percent: 100
     - product: Hardrock
+      value: 18757
       rank: 2
       percent: 40.50431182943143
   '2006':
     - product: Copper
+      value: 28720.999999999996
       rank: 1
       percent: 158.91960563635897
     - product: Hardrock
+      value: 27070
       rank: 2
       percent: 41.20902750196416
   '2007':
     - product: Copper
+      value: 26110
       rank: 1
       percent: 100
     - product: Hardrock
+      value: 21393
       rank: 1
       percent: 47.06837488366567
   '2008':
     - product: Hardrock
+      value: 24299.5
       rank: 1
       percent: 137.91715832591234
     - product: Copper
+      value: 26110
       rank: 1
       percent: 100
   '2009':
     - product: Copper
+      value: 26110
       rank: 1
       percent: 100
     - product: Hardrock
+      value: 23072.5
       rank: 1
       percent: 39.81200829214811
   '2010':
     - product: Copper
+      value: 26110
       rank: 1
       percent: 100
     - product: Hardrock
+      value: 23666.5
       rank: 1
       percent: 57.80819107125845
   '2011':
     - product: Copper
+      value: 26110
       rank: 1
       percent: 100
     - product: Hardrock
+      value: 18715
       rank: 1
       percent: 47.95084749888224
   '2012':
     - product: Copper
+      value: 26110
       rank: 1
       percent: 100
     - product: Hardrock
+      value: 32481
       rank: 1
       percent: 57.2231825680438
   '2013':
     - product: Copper
+      value: 23499.000000000004
       rank: 1
       percent: 100
     - product: Hardrock
+      value: 42121
       rank: 1
       percent: 72.28736187083213
-all_production:
-  '2004':
-    - product: Wind
-      rank: 3
-      percent: 11.055139550714774
-  '2005':
-    - product: Wind
-      rank: 3
-      percent: 14.654932839277446
-  '2006':
-    - product: Wind
-      rank: 3
-      percent: 12.06198274344075
-  '2007':
-    - product: Wind
-      rank: 3
-      percent: 11.92714453584019
-  '2008':
-    - product: Wind
-      rank: 2
-      percent: 10.86739531866048

@@ -1,13 +1,16 @@
 all_production:
   '2009':
     - product: Solar
+      value: 11
       rank: 3
       percent: 15.942028985507244
   '2011':
     - product: Solar
+      value: 69
       rank: 4
       percent: 13.663366336633667
   '2012':
     - product: Solar
+      value: 304
       rank: 2
       percent: 14.319359397079605

@@ -1,10 +1,12 @@
 revenue:
   '2008':
     - product: Coal-Subbituminous-Processed
+      value: 204873.3
       rank: 1
       percent: 100
 all_production:
   '2013':
     - product: Conventional Hydroelectric
+      value: 78155
       rank: 1
       percent: 29.100962523039115

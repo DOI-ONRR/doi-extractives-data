@@ -1,235 +1,302 @@
 revenue:
   '2004':
     - product: Copper Concentrate
+      value: 33259.1
       rank: 1
       percent: 100
     - product: Lead Concentrate
+      value: 715383.02
       rank: 1
       percent: 100
     - product: Zinc Concentrate
+      value: 62744.170000000006
       rank: 1
       percent: 100
     - product: Hardrock
+      value: 177752.66999999998
       rank: 1
       percent: 85.84541662871496
   '2005':
     - product: Copper Concentrate
+      value: 495341.78
       rank: 1
       percent: 100
     - product: Lead Concentrate
+      value: 3604181.9200000004
       rank: 1
       percent: 100
     - product: Zinc Concentrate
+      value: 1005243.5
       rank: 1
       percent: 100
     - product: Hardrock
+      value: 21530
       rank: 1
       percent: 46.49239396959315
   '2006':
     - product: Copper Concentrate
+      value: 1370471.54
       rank: 1
       percent: 100
     - product: Lead Concentrate
+      value: 5887501.159999999
       rank: 1
       percent: 100
     - product: Zinc Concentrate
+      value: 3100687.25
       rank: 1
       percent: 100
     - product: Hardrock
+      value: 31037.99
       rank: 1
       percent: 47.249552401761676
     - product: Copper
+      value: -10648.34
       rank: 2
       percent: 58.919605636359016
   '2007':
     - product: Copper Concentrate
+      value: 1084225.76
       rank: 1
       percent: 100
     - product: Lead Concentrate
+      value: 12989839.069999997
       rank: 1
       percent: 100
     - product: Zinc Concentrate
+      value: 3687687.9
       rank: 1
       percent: 100
     - product: Hardrock
+      value: 20191.5
       rank: 2
       percent: 44.424862874002486
   '2008':
     - product: Copper Concentrate
+      value: 1055500.81
       rank: 1
       percent: 100
     - product: Lead Concentrate
+      value: 11452791.34
       rank: 1
       percent: 100
     - product: Zinc Concentrate
+      value: 1652714.3900000001
       rank: 1
       percent: 100
-    - product: Hardrock
-      rank: 2
-      percent: 98.17065868433406
   '2009':
     - product: Copper Concentrate
+      value: 448324.49000000005
       rank: 1
       percent: 100
     - product: Lead Concentrate
+      value: 7641660.51
       rank: 1
       percent: 100
     - product: Zinc Concentrate
+      value: 1216949.6900000002
       rank: 1
       percent: 100
     - product: Hardrock
+      value: 13003
       rank: 3
       percent: 22.43690730622177
   '2010':
     - product: Copper Concentrate
+      value: 518826.8
       rank: 1
       percent: 100
     - product: Lead Concentrate
+      value: 10773530.65
       rank: 1
       percent: 100
     - product: Zinc Concentrate
+      value: 1964638.26
       rank: 1
       percent: 100
     - product: Hardrock
+      value: 13003
       rank: 2
       percent: 31.761346565802874
   '2011':
     - product: Copper Concentrate
+      value: 1283873.51
       rank: 1
       percent: 100
     - product: Lead Concentrate
+      value: 11376686.360000001
       rank: 1
       percent: 100
     - product: Zinc Concentrate
+      value: 2174729.25
       rank: 1
       percent: 100
     - product: Hardrock
+      value: 13043
       rank: 2
       percent: 33.41826897824852
   '2012':
     - product: Copper Concentrate
+      value: 1588286.1500000001
       rank: 1
       percent: 100
     - product: Lead Concentrate
+      value: 8484118.41
       rank: 1
       percent: 100
     - product: Zinc Concentrate
+      value: 1447209.99
       rank: 1
       percent: 100
     - product: Hardrock
+      value: 16897
       rank: 2
       percent: 29.76817572895651
   '2013':
     - product: Copper Concentrate
+      value: 1316533.3500000003
       rank: 1
       percent: 100
     - product: Lead Concentrate
+      value: 7330636.819999999
       rank: 1
       percent: 100
     - product: Zinc Concentrate
+      value: 699078.75
       rank: 1
       percent: 100
     - product: Hardrock
+      value: 16897
       rank: 2
       percent: 28.998351262587562
 federal_production:
   '2005':
     - product: Copper Concentrate (tons)
+      value: 13141
       rank: 1
       percent: 100
     - product: Lead Concentrate (tons)
+      value: 207576
       rank: 1
       percent: 100
     - product: Zinc Concentrate (tons)
+      value: 49449
       rank: 1
       percent: 100
   '2006':
     - product: Copper Concentrate (tons)
+      value: 19002
       rank: 1
       percent: 100
     - product: Lead Concentrate (tons)
+      value: 223123
       rank: 1
       percent: 100
     - product: Zinc Concentrate (tons)
+      value: 54880.01
       rank: 1
       percent: 100
   '2007':
     - product: Copper Concentrate (tons)
+      value: 10960
       rank: 1
       percent: 100
     - product: Lead Concentrate (tons)
+      value: 221198
       rank: 1
       percent: 100
     - product: Zinc Concentrate (tons)
+      value: 55968.01
       rank: 1
       percent: 100
   '2008':
     - product: Copper Concentrate (tons)
+      value: 11909.01
       rank: 1
       percent: 100
     - product: Lead Concentrate (tons)
+      value: 203433
       rank: 1
       percent: 100
     - product: Zinc Concentrate (tons)
+      value: 45452
       rank: 1
       percent: 100
   '2009':
     - product: Copper Concentrate (tons)
+      value: 8726.01
       rank: 1
       percent: 100
     - product: Lead Concentrate (tons)
+      value: 194150.01
       rank: 1
       percent: 100
     - product: Zinc Concentrate (tons)
+      value: 50275.990000000005
       rank: 1
       percent: 100
   '2010':
     - product: Copper Concentrate (tons)
+      value: 8973.99
       rank: 1
       percent: 100
     - product: Lead Concentrate (tons)
+      value: 184361
       rank: 1
       percent: 100
     - product: Zinc Concentrate (tons)
+      value: 43522
       rank: 1
       percent: 100
   '2011':
     - product: Copper Concentrate (tons)
+      value: 8386.01
       rank: 1
       percent: 100
     - product: Lead Concentrate (tons)
+      value: 176582
       rank: 1
       percent: 100
     - product: Zinc Concentrate (tons)
+      value: 43763
       rank: 1
       percent: 100
   '2012':
     - product: Copper Concentrate (tons)
+      value: 21424.34
       rank: 1
       percent: 100
     - product: Lead Concentrate (tons)
+      value: 155035.01
       rank: 1
       percent: 100
     - product: Zinc Concentrate (tons)
+      value: 32595.01
       rank: 1
       percent: 100
   '2013':
     - product: Copper Concentrate (tons)
+      value: 15448
       rank: 1
       percent: 100
     - product: Lead Concentrate (tons)
+      value: 145983.47999999998
       rank: 1
       percent: 100
     - product: Zinc Concentrate (tons)
+      value: 40418.39
       rank: 1
       percent: 100
   '2014':
     - product: Copper Concentrate (tons)
+      value: 20282
       rank: 1
       percent: 100
     - product: Lead Concentrate (tons)
+      value: 143271.71000000002
       rank: 1
       percent: 100
     - product: Zinc Concentrate (tons)
+      value: 44650.71
       rank: 1
       percent: 100

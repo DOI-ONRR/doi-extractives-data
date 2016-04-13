@@ -42,10 +42,11 @@ layout: default
         <a href="#revenue">{{ revenue_products | size }} product{{ revenue_products | size | plural }}</a>
         in {{ year }}.
         {% if top_revenue_products %}
-        Among them, these are the most notable in terms of revenue:
+        These are the most notable in terms of revenue:
         <ul class="list-bullet">
           {% for product in top_revenue_products %}
           <li><a href="#revenue-{{ product.product | slugify }}">{{ product.product }}</a>:
+            ${{ product.value | intcomma }},
             #{{ product.rank }} ({{ product.percent | floor }}%)</li>
           {% endfor %}
         </ul>
@@ -60,7 +61,7 @@ layout: default
         <a href="#all-production">{{ all_products | size }} product{{ all_products | size | plural }}</a>
         on all lands and waters in {{ year }}.
         {% if top_all_products %}
-        Among them, these are the most notable:
+        These are the most notable:
         <ul class="list-bullet">
           {% for product in top_all_products %}
           <li><a href="#all-production-{{ product.product | slugify }}">{{ product.product }}</a>:
@@ -79,7 +80,7 @@ layout: default
         <a href="#federal-production">{{ federal_products | size }} product{{ federal_products | size | plural }}</a>
         on federal lands in {{ year }}.
         {% if top_federal_products %}
-        Among them, these are the most notable:
+        These are the most notable:
         <ul class="list-bullet">
           {% for product in top_federal_products %}
           <li><a href="#federal-production-{{ product.product | slugify }}">{{ product.product }}</a>:

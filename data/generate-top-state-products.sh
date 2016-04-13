@@ -1,8 +1,11 @@
 #!/bin/bash
+
 # top N states for each product category in each year
 top=3
+
 # minimum percent of nation-wide total
 percent=20
+
 ./bin/query.js --format json "
     SELECT
         state, product, percent, rank, year,

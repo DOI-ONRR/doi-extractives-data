@@ -1,14 +1,11 @@
 all_production:
   '2011':
     - product: Natural Gas (MMcf)
+      value: 3040523
       rank: 3
       percent: 10.67635955501846
   '2012':
     - product: Natural Gas (MMcf)
+      value: 2955437
       rank: 3
       percent: 10.004081603362662
-revenue:
-  '2012':
-    - product: Unprocessed (Wet) Gas
-      rank: 6
-      percent: 18.51830424011131

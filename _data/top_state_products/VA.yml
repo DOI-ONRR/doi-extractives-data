@@ -1,54 +1,57 @@
-all_production:
-  '2003':
-    - product: Natural Gas (MMcf)
-      rank: 4
-      percent: 13.502406376898785
-  '2012':
-    - product: Coal (short tons)
-      rank: 3
-      percent: 11.993664810904209
-  '2014':
-    - product: Natural Gas (MMcf)
-      rank: 2
-      percent: 20.806809128270665
 revenue:
   '2004':
     - product: Limestone
+      value: 59664.729999999996
       rank: 1
       percent: 100
   '2005':
     - product: Limestone
+      value: 21419.75
       rank: 1
       percent: 100
   '2006':
     - product: Limestone
+      value: 31648.77
       rank: 1
       percent: 100
   '2007':
     - product: Limestone
+      value: 75816.59
       rank: 1
       percent: 100
   '2008':
     - product: Limestone
+      value: 106657.16
       rank: 1
       percent: 100
   '2009':
     - product: Limestone
+      value: 113515.27
       rank: 1
       percent: 99.78902076360946
   '2010':
     - product: Limestone
+      value: 117397.69
       rank: 1
       percent: 100.17065182769385
   '2011':
     - product: Limestone
+      value: 112434.95999999999
       rank: 1
       percent: 100
   '2012':
     - product: Limestone
+      value: 128426.76
       rank: 1
       percent: 100
   '2013':
     - product: Limestone
+      value: 60702.52
       rank: 1
       percent: 100
+all_production:
+  '2014':
+    - product: Natural Gas (MMcf)
+      value: 131885
+      rank: 2
+      percent: 20.806809128270665

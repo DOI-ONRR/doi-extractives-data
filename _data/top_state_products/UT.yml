@@ -1,280 +1,298 @@
 revenue:
   '2004':
     - product: Gilsonite
+      value: 361540.96
       rank: 1
       percent: 100
     - product: Magnesium Chloride Brine
+      value: 39046.77
       rank: 1
       percent: 100
     - product: Manure Salts
+      value: 6944.7
       rank: 1
       percent: 100
     - product: Tar Sands
+      value: 12190
       rank: 1
       percent: 100
-    - product: Clay
-      rank: 2
-      percent: 16.303507325491488
-    - product: Coal-Bituminous-Raw
-      rank: 2
-      percent: 12.429431533777919
   '2005':
     - product: Coal-Bituminous-Raw
+      value: 90649.93
       rank: 1
       percent: 100
     - product: Gilsonite
+      value: 360976.04
       rank: 1
       percent: 100
     - product: Magnesium Chloride Brine
+      value: 14362.42
       rank: 1
       percent: 100
     - product: Manure Salts
+      value: 11421.28
       rank: 1
       percent: 100
     - product: Tar Sands
+      value: 12190
       rank: 1
       percent: 100
     - product: Clay
+      value: 3198.4500000000003
       rank: 2
       percent: 20.664024266152403
-    - product: Phosphate
-      rank: 2
-      percent: 14.937037001996273
-    - product: Potassium
-      rank: 2
-      percent: 10.347763707287829
   '2006':
     - product: Gilsonite
+      value: 511866.09
       rank: 1
       percent: 100
     - product: Magnesium Chloride Brine
+      value: 20113.91
       rank: 1
       percent: 100
     - product: Manure Salts
+      value: 11526.75
       rank: 1
       percent: 100
-    - product: Clay
-      rank: 2
-      percent: 15.525799628713445
   '2007':
     - product: Gilsonite
+      value: 618462.5
       rank: 1
       percent: 100
     - product: Magnesium Chloride Brine
+      value: 18755.5
       rank: 1
       percent: 100
     - product: Manure Salts
+      value: 10140.98
       rank: 1
       percent: 100
     - product: Muriate Of Potash-Coarse
+      value: -1873.1499999999999
       rank: 1
       percent: 100
     - product: Tar Sands
+      value: 24380
       rank: 1
       percent: 100
     - product: Coal-Bituminous-Raw
+      value: 103776.66
       rank: 1
       percent: 79.28023332271188
     - product: Clay
+      value: 6082.17
       rank: 2
       percent: 32.05364751564823
-    - product: Potassium
-      rank: 2
-      percent: 14.49109832735649
-    - product: Phosphate
-      rank: 2
-      percent: 12.851862696891178
-    - product: Sodium
-      rank: 3
-      percent: 10.125880923963242
   '2008':
     - product: Clay
+      value: 5002.92
       rank: 1
       percent: 100
     - product: Gilsonite
+      value: 1179009.49
       rank: 1
       percent: 100
     - product: Magnesium Chloride Brine
+      value: 26788.93
       rank: 1
       percent: 100
     - product: Manure Salts
+      value: 11779.82
       rank: 1
       percent: 100
     - product: Tar Sands
+      value: 7679.67
       rank: 1
       percent: 100
     - product: Potash
+      value: 394106.33999999997
       rank: 1
       percent: 66.06781123913576
     - product: Phosphate
+      value: 34847
       rank: 2
       percent: 20.662195895666194
   '2009':
     - product: Clay
+      value: 2271.94
       rank: 1
       percent: 100
     - product: Gilsonite
+      value: 1423775.11
       rank: 1
       percent: 100
     - product: Magnesium Chloride Brine
+      value: 35922.41
       rank: 1
       percent: 100
     - product: Manure Salts
+      value: 2690.58
       rank: 1
       percent: 100
     - product: Tar Sands
+      value: 7732
       rank: 1
       percent: 100
     - product: Geothermal
+      value: 8986604
       rank: 2
       percent: 43.84938497032058
   '2010':
     - product: Clay
+      value: 3073.02
       rank: 1
       percent: 100
     - product: Gilsonite
+      value: 1882318.6900000002
       rank: 1
       percent: 100
     - product: Magnesium Chloride Brine
+      value: 42871.87
       rank: 1
       percent: 100
     - product: Manure Salts
+      value: 2174.01
       rank: 1
       percent: 100
     - product: Tar Sands
+      value: 7732
       rank: 1
       percent: 100
-    - product: Potassium
-      rank: 2
-      percent: 19.40084903774445
-    - product: Phosphate
-      rank: 2
-      percent: 13.956771821267871
-    - product: Geothermal
-      rank: 2
-      percent: 13.121560237279299
   '2011':
     - product: Clay
+      value: 4537.280000000001
       rank: 1
       percent: 100
     - product: Gilsonite
+      value: 2364457.5
       rank: 1
       percent: 100
     - product: Magnesium Chloride Brine
+      value: 40897.75
       rank: 1
       percent: 100
     - product: Manure Salts
+      value: 2462.34
       rank: 1
       percent: 100
     - product: Potassium
+      value: 21074811.479999997
       rank: 1
       percent: 98.57692055479215
-    - product: Geothermal
-      rank: 2
-      percent: 11.331782680847564
   '2012':
     - product: Clay
+      value: 4641.31
       rank: 1
       percent: 100
     - product: Gilsonite
+      value: 3400992
       rank: 1
       percent: 100
     - product: Magnesium Chloride Brine
+      value: 37623.64
       rank: 1
       percent: 100
     - product: Manure Salts
+      value: 1907.52
       rank: 1
       percent: 100
-    - product: Coal-Bituminous-Raw
-      rank: 2
-      percent: 17.34115333925811
-    - product: Geothermal
-      rank: 2
-      percent: 13.288414981403982
     - product: Unprocessed (Wet) Gas
-      rank: 4
+      value: 28027937.81000001
+      rank: 3
       percent: 28.299545116698596
   '2013':
     - product: Clay
+      value: 5400.610000000001
       rank: 1
       percent: 100
     - product: Gilsonite
+      value: 2901827.59
       rank: 1
       percent: 100
     - product: Magnesium Chloride Brine
+      value: 53547.59
       rank: 1
       percent: 100
-    - product: Phosphate
-      rank: 2
-      percent: 17.716105947549853
-    - product: Geothermal
-      rank: 2
-      percent: 13.657965895493751
-    - product: Potassium
-      rank: 2
-      percent: 12.049562260862777
 federal_production:
   '2005':
     - product: Gilsonite (tons)
+      value: 8041
       rank: 1
       percent: 100
     - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      value: 2290182691.15
       rank: 1
       percent: 97.72991355934059
   '2006':
     - product: Gilsonite (tons)
+      value: 8776
       rank: 1
       percent: 100
     - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      value: 2350934232.59
       rank: 1
       percent: 97.78129252853327
   '2007':
     - product: Gilsonite (tons)
+      value: 10879
       rank: 1
       percent: 100
     - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      value: 2046718554.09
       rank: 1
       percent: 97.59784541031087
   '2008':
     - product: Gilsonite (tons)
+      value: 16957
       rank: 1
       percent: 100
     - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      value: 2468886992.11
       rank: 1
       percent: 98.02016656660777
   '2009':
     - product: Gilsonite (tons)
+      value: 13016
       rank: 1
       percent: 100
     - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      value: 2827213957.69
       rank: 1
       percent: 98.31285539811361
   '2010':
     - product: Gilsonite (tons)
+      value: 28082
       rank: 1
       percent: 100
     - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      value: 2670508902.54
       rank: 1
       percent: 98.21542246596754
   '2011':
     - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      value: 2554615747.2799997
       rank: 1
       percent: 98.12984841122906
   '2012':
     - product: Gilsonite (tons)
+      value: 35927
       rank: 1
       percent: 100
     - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      value: 2453647854.06
       rank: 1
       percent: 98.07311997714339
   '2013':
     - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      value: 2316266257.9700003
       rank: 1
       percent: 98.04671481217153
   '2014':
     - product: Clay (tons)
+      value: 33520
       rank: 1
       percent: 100
     - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      value: 2463584336.7
       rank: 1
       percent: 98.18407875858603

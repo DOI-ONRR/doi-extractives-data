@@ -1,9 +1,11 @@
 all_production:
   '2006':
     - product: Wood and wood-derived fuels
+      value: 3362
       rank: 3
       percent: 10.298667483534997
   '2007':
     - product: Wood and wood-derived fuels
+      value: 3362
       rank: 3
       percent: 10.171542673887396

@@ -1,37 +1,46 @@
 all_production:
   '2004':
     - product: Wind
+      value: 1050
       rank: 2
       percent: 14.295439074200138
   '2005':
     - product: Wind
+      value: 1647
       rank: 2
       percent: 15.257063455303383
   '2006':
     - product: Wind
+      value: 2318
       rank: 2
       percent: 13.60568175148207
   '2007':
     - product: Wind
+      value: 2757
       rank: 2
       percent: 12.46045376480159
   '2008':
     - product: Wind
+      value: 4084
       rank: 3
       percent: 10.191146379198484
   '2009':
     - product: Wind
+      value: 7421
       rank: 2
       percent: 13.32794540229885
   '2010':
     - product: Wind
+      value: 9170
       rank: 2
       percent: 12.60689048365366
   '2011':
     - product: Wind
+      value: 10709
       rank: 2
       percent: 11.745930768218313
   '2012':
     - product: Wind
+      value: 14032
       rank: 2
       percent: 13.097860583205764

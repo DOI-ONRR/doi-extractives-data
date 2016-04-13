@@ -1,9 +1,11 @@
 revenue:
   '2004':
     - product: Coal-Subbituminous-Raw
+      value: -671286.55
       rank: 2
       percent: 23.85297273122415
   '2008':
     - product: Hardrock
-      rank: 3
+      value: 3649.5
+      rank: 2
       percent: 20.71354016792185

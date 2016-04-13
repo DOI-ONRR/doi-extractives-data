@@ -1,33 +1,41 @@
 all_production:
   '2004':
     - product: Wood and wood-derived fuels
+      value: 3187
       rank: 2
       percent: 10.001255256386116
   '2005':
     - product: Wood and wood-derived fuels
+      value: 3778
       rank: 1
       percent: 11.652940995034085
   '2006':
     - product: Wood and wood-derived fuels
+      value: 3685
       rank: 2
       percent: 11.28809924950222
   '2007':
     - product: Wood and wood-derived fuels
+      value: 3848
       rank: 1
       percent: 11.641908450065046
   '2008':
     - product: Wood and wood-derived fuels
+      value: 3669
       rank: 1
       percent: 11.676532365858318
   '2009':
     - product: Wood and wood-derived fuels
+      value: 3367
       rank: 1
       percent: 11.312703692504117
   '2010':
     - product: Wood and wood-derived fuels
+      value: 3390
       rank: 1
       percent: 11.02941176470588
   '2011':
     - product: Wood and wood-derived fuels
+      value: 3511
       rank: 1
       percent: 11.16233229477968

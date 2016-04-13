@@ -1,20 +1,11 @@
 revenue:
-  '2006':
-    - product: Helium
-      rank: 2
-      percent: 19.68377006448073
   '2009':
     - product: Helium
+      value: 20.06
       rank: 1
       percent: 100
   '2011':
     - product: Helium
+      value: 32.65
       rank: 2
       percent: 35.93045009354021
-    - product: Nitrogen
-      rank: 3
-      percent: 16.74000626966527
-  '2013':
-    - product: Nitrogen
-      rank: 3
-      percent: 16.617434289848088

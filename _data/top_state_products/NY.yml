@@ -1,64 +1,46 @@
 all_production:
   '2004':
     - product: Conventional Hydroelectric
+      value: 23990
       rank: 1
       percent: 22.23045915767039
-    - product: Other biomass
-      rank: 2
-      percent: 10.29260169693125
   '2005':
     - product: Conventional Hydroelectric
+      value: 25783
       rank: 1
       percent: 24.668242137793122
-    - product: Other biomass
-      rank: 2
-      percent: 10.819854991634132
   '2006':
     - product: Conventional Hydroelectric
+      value: 27345
       rank: 1
       percent: 28.851023422663012
-    - product: Other biomass
-      rank: 3
-      percent: 10.816373199176764
   '2007':
     - product: Conventional Hydroelectric
+      value: 25253
       rank: 1
       percent: 29.901130779705166
-    - product: Other biomass
-      rank: 3
-      percent: 10.710325966442452
   '2008':
     - product: Conventional Hydroelectric
+      value: 26723
       rank: 1
       percent: 28.107283723376284
-    - product: Other biomass
-      rank: 2
-      percent: 10.30724163771374
   '2009':
     - product: Conventional Hydroelectric
+      value: 27615
       rank: 1
       percent: 24.291444555866363
-    - product: Other biomass
-      rank: 2
-      percent: 10.917316897252642
   '2010':
     - product: Conventional Hydroelectric
+      value: 25472
       rank: 1
       percent: 24.545410744398936
-    - product: Other biomass
-      rank: 3
-      percent: 10.697138467447667
   '2011':
     - product: Conventional Hydroelectric
+      value: 27997
       rank: 1
       percent: 25.363047515513877
-    - product: Other biomass
-      rank: 3
-      percent: 10.27805992889792
   '2012':
     - product: Conventional Hydroelectric
+      value: 24652
       rank: 1
       percent: 26.70624431251895
-    - product: Other biomass
-      rank: 3
-      percent: 10.174062270164256

@@ -17,7 +17,7 @@ permalink: /downloads/
 
     <h2 class="downloads-section_heading">Revenue</h2>
 
-    <ul class="list-unstyled">
+    <ul class="list-sections">
     	<li class="downloads-download_links">
         <a href="{{site.baseurl}}/downloads/federal-revenue-by-location/" id="revenue-fed-location" class="link-no_under"><h3>
         Federal revenue by location</h3></a>
@@ -64,6 +64,7 @@ permalink: /downloads/
     <h2 class="downloads-section_heading">Production</h2>
 
     <ul class="list-unstyled">
+
     	<li class="downloads-download_links">
         <a href="http://www.eia.gov/" id="production-all" class="link-no_under"><h3>All lands and waters</h3></a>
         <p>This data is from the <a href="http://www.eia.gov/">Energy Information Agency</a>. The specific data we used for the interactions is a subset of the huge amount of data available on their website. We also have <a href="https://github.com/18F/doi-extractives-data/wiki/Data-Catalog#all-production">notes on using this data</a> from our web development team with links to the specific tables we used on this site. <em>Tip: to find data on the EIA site, click 'Sources & Uses' in the navigation near the top of the site.</em></p>

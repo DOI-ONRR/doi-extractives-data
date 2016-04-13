@@ -17,7 +17,6 @@ However, many parts of the report are primarily available online. Explore this s
 
 In many parts of this site, you'll also find invitations to discuss and participate in USEITI actitivies both online and in person.
 
-
 ## USEITI 2015 Executive Summary
 
 <a href="{{site.baseurl}}/downloads/USEITI_executive-summary_2015-12-22.pdf" class="button-tertiary"><icon class="icon-cloud icon-padded"></icon>Download Executive Summary (pdf, 4 MB)</a>

@@ -35,7 +35,11 @@ title_display: Federal Revenue by Location
   </a></li>
 </ul>
 
+<<<<<<< 46dfb6b3accca1a5cfbd8411970f4ad1f94aab6e
 <p class="u-margin-top" markdown="1">We also have [notes on this data](https://github.com/18F/doi-extractives-data/wiki/Data-Catalog#federal-revenue) from the web development team as they built the interactions on this site.</p>
+=======
+<p class="u-margin-top" markdown="1">We also have [notes on this data][~1] from the web development team as they built the interactions on this site.</p>
+>>>>>>> downloadz
 
 <h2 class="h3">Scope</h2>
 

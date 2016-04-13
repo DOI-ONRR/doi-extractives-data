@@ -79,3 +79,4 @@ Offshore regions are broken out into planning areas. For more information on off
 * Gold Products (tons) includes: Gold Ore
 * Other Potassium Products include: Manure Salts and Sylvite-Raw Ore
 * Other Sodium Products include: Anhydrous Sodium Sulfate, Sodium Bisulfite, Sodium Decahydrate, Sodium Sesquicarbonate, Sulfide and Trona Ore
+

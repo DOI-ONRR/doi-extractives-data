@@ -16,6 +16,7 @@ load_sql() {
     cat $1 | sqlite3 $db
 }
 
+
 # lookup tables
 $tables -d $db_url -i _input/geo/states.csv -n states
 $tables -d $db_url -i _input/geo/offshore/areas.tsv \
@@ -29,37 +30,35 @@ load _input/onrr/offshore-production.tsv federal_offshore_production
 load_sql db/rollup-federal-production.sql
 
 # All Lands Production: Coal
+# FIXME: this shouldn't need a model anymore; we should be able to
+# do this with a streaming transform
 load _input/eia/commodity/coal.tsv all_production_coal
+
 # All Lands Production: Oil
-cat _input/eia/commodity/oil.tsv \
-    | ./bin/unroll-columns.js \
-        --columns 'FL,NY,PA,VA,WV,IL,IN,KS,KY,MI,MO,NE,ND,OH,OK,SD,TN,AL,AR,LA,MS,NM,TX,gulf,CO,MT,UT,WY,AK,,AZ,CA,NV,pacific alaska' \
-        --destkey region --valkey volume --skip ',undefined' --of csv \
-    | $tables -d $db_url -n all_production_oil
+$tito --multiple --map ./transform/all_production_oil.js \
+    -r tsv _input/eia/commodity/oil.tsv \
+    | $tables -t ndjson -d $db_url -n all_production_oil
 
 # All Lands Production: Natural Gas (part 1)
-cat _input/eia/commodity/naturalgas.tsv \
-    | ./bin/unroll-columns.js \
-        --columns AK,AR,CA,pacific,CO,gulf,KS,LA,MT,NM,ND,OH,OK,PA,TX,UT,WV,WY \
-        --destkey region --valkey volume --skip ',undefined' --of csv \
-    | $tables -d $db_url -n all_production_naturalgas
-# All Lands Production: Natural Gas (part 2)
-cat _input/eia/commodity/naturalgas2.tsv \
-    | ./bin/unroll-columns.js \
-        --columns AL,AZ,FL,IL,IN,KY,MD,MI,MS,MO,NE,NV,NY,OR,SD,TN,VA \
-        --destkey region --valkey volume --skip ',undefined' --of csv \
-    | $tables -d $db_url -n all_production_naturalgas
-# All Lands Production: Renewables
-cat _input/eia/commodity/renewables.tsv \
-    | ./bin/unroll-columns.js \
-        --destkey year --valkey volume \
-        --skip ELEC.GEN.ALL-US-99.A,ELEC.GEN.ALL --of csv \
-    | $tables -d $db_url -n all_production_renewables
+$tito --multiple --map ./transform/all_production_naturalgas.js \
+    -r tsv _input/eia/commodity/naturalgas.tsv \
+    | $tables -t ndjson -d $db_url -n all_production_naturalgas
 
+# All Lands Production: Natural Gas (part 2)
+$tito --multiple --map ./transform/all_production_naturalgas2.js \
+    -r tsv _input/eia/commodity/naturalgas2.tsv \
+    | $tables -t ndjson -d $db_url -n all_production_naturalgas
+
+# All Lands Production: Renewables
+# XXX I ended up having to write to a temp file here for some reason;
+# streaming this right into tables should work...
+renewables_tmp=_input/eia/commodity/renewables.ndjson
+$tito --multiple --map ./transform/all_production_renewables.js \
+    -r tsv _input/eia/commodity/renewables.tsv > $renewables_tmp
+$tables -t ndjson -d $db_url -n all_production_renewables -i $renewables_tmp
+rm $renewables_tmp
 
 load_sql db/rollup-all-production.sql
-
-
 
 # output some rows for debugging purposes
 ./bin/query.js "

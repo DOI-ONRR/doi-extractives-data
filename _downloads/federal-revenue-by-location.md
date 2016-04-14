@@ -35,11 +35,7 @@ title_display: Federal Revenue by Location
   </a></li>
 </ul>
 
-<<<<<<< 46dfb6b3accca1a5cfbd8411970f4ad1f94aab6e
 <p class="u-margin-top" markdown="1">We also have [notes on this data](https://github.com/18F/doi-extractives-data/wiki/Data-Catalog#federal-revenue) from the web development team as they built the interactions on this site.</p>
-=======
-<p class="u-margin-top" markdown="1">We also have [notes on this data][~1] from the web development team as they built the interactions on this site.</p>
->>>>>>> downloadz
 
 <h2 class="h3">Scope</h2>
 
@@ -65,7 +61,10 @@ The offshore dataset is organized by offshore planning areas. There are more off
 ### Fields and definitions
 
 **Revenue Type.** Revenues from U.S. natural resources fall into one of several types:
+<<<<<<< e4ac0a2cfea1228062a14e2f94f1d12a6a8e3510
 
+=======
+>>>>>>> first wave icon changse
 * **Royalties.** A natural resource lease owner pays royalties after the lease starts producing a commodity in {{"paying quantities" | term_end }}. The amount is based on a percentage of the revenue from the commodity sold. The exact percentage is set in the original lease document that went along with the lease sale.
 * **Bonus.** The amount paid by the highest successful bidder for a natural resource lease. The winning bid.
 * **Other revenues.** This category includes revenues that are not included in the royalty, rent, or bonus categories, such as minimum royalties, estimated royalties, settlement agreements, and interest.

@@ -16,7 +16,6 @@ load_sql() {
     cat $1 | sqlite3 $db
 }
 
-
 # lookup tables
 $tables -d $db_url -i _input/geo/states.csv -n states
 $tables -d $db_url -i _input/geo/offshore/areas.tsv \
@@ -107,5 +106,10 @@ $tito --read tsv _input/onrr/disbursements/state.tsv \
     --filter State \
     --map ./transform/state_disbursements.js \
     | $tables -t ndjson -d $db_url -n state_disbursements
+
+$tito --read tsv _input/onrr/disbursements/historic-preservation.tsv \
+    --multiple --map ./transform/disbursements_historic_preservation.js \
+    -w tsv \
+    | $tables -t tsv -d $db_url -n disbursements_historic_preservation
 
 load_sql db/rollup-state-disbursements.sql

@@ -146,4 +146,3 @@ In 2013, Arizona accounted for the most copper production out of all U.S. states
 Iron is found in underground rocks. Miners extract iron by drilling holes in the ground in carefully engineered patterns and blasting out rocks with explosives. Next, miners crush the rocks and separate out the iron ore from other materials. Almost all iron is used to make steel, which in turn is used to make buildings, infrastructure, machines, and vehicles.
 
 In 2013, 99% of the iron ore shipped in the U.S. came from [Minnesota and Michigan](http://minerals.usgs.gov/minerals/pubs/commodity/iron_ore/mcs-2014-feore.pdf). Exploration continues on the [Mesabi Iron Range](http://files.dnr.state.mn.us/lands_minerals/mineral_faq/mn_expdrilling_map_2013.pdf) in Minnesota; in 2013, companies drilled nearly 200 exploratory holes for iron along the Mesabi Range.
-

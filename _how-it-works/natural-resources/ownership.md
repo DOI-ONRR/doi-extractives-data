@@ -57,7 +57,7 @@ There are four main types of land owners: citizens and corporations; the federal
 State and local lands are owned by state or local governments, including:
 
 * Lands owned by a particular state<
-* [State submerged lands](http://www.boem.gov/uploadedfiles/submergedla.pdf) under the ocean stretching from a state’s coast to three miles out into the ocean, or in the case of Texas and western Florida, from the coast out to three marine leagues into the Gulf of Mexico<
+* [State submerged lands](http://www.boem.gov/uploadedfiles/submergedla.pdf) under the ocean stretching from a state’s coast to three miles out into the ocean, or in the case of Texas and western Florida, from the coast out to three marine leagues into the Gulf of Mexico
 * Lands owned by a local government, such as a county
 
 <h3 id="indian-lands" data-nav-header="indian-lands">Indian lands</h3>
@@ -67,7 +67,6 @@ Indian lands are owned by Native Americans, and include:
 * Tribal lands held in trust by the federal government for a tribe’s use
 * Allotments held in trust by the federal government for individual Indians’ use
 * [Alaska Native Corporation](http://www.gao.gov/assets/660/650857.pdf) lands in Alaska, held by 12 regional Alaska Native Corporations that received rights to some surface lands, as well as rights to natural resources below the surface. Along with these 12 regional Alaska Native Corporations, certain village-level Alaska Native Corporations hold additional surface land rights.
-
 ## Natural resource ownership
 
 Private individuals and corporations, as well as federal, state, local, and tribal governments, can own both land and the oil, gas, coal, and other minerals found below the surface. In fact, widespread private ownership of these resources makes the U.S. different from nearly every other country in which these resources simply belong to the national government.
@@ -76,11 +75,6 @@ Natural resource ownership has historical roots in the 19th century, when the fe
 
 <h3 id="split-ownership" data-nav-header="split-ownership">Split ownership</h3>
 
-<<<<<<< e4ac0a2cfea1228062a14e2f94f1d12a6a8e3510
 Sometimes the land’s surface owner is different from the owner of the minerals in the ground below. The party that owns the land’s surface has {{ "surface rights" | term_end }}, while the party that owns the natural resources in the ground has {{ "subsurface rights" | term_end }}. When ownership is divided in this way, it is referred to as a [split estate](http://www.blm.gov/wo/st/en/prog/energy/oil_and_gas/best_management_practices/split_estate.html). There are 57 million acres of land in the U.S. where the federal government owns oil, gas, coal, and other minerals below the surface, but another party, mostly citizens or corporations, owns the surface land above. Land and mineral ownership can become quite complicated. Often, a combination of private landholders, the federal government, a state government, or Indian tribes own the span of a single mine or field.
 
 When it comes to the natural resources found off the coast, the federal government and state governments split ownership. In general, states have primary authority and natural resource ownership in the three-mile area extending outward from their coasts. The federal government owns oil, gas, and minerals located in the submerged lands on the Outer Continental Shelf, which extend from the states’ offshore boundaries out to at least 200 nautical miles from the shore.
-=======
-<p>Sometimes the land’s surface owner is different from the owner of the minerals in the ground below. The party that owns the land’s surface has {{ "surface rights" | term_end }}, while the party that owns the natural resources in the ground has {{ "subsurface rights" | term_end }}. When ownership is divided in this way, it is referred to as a <a href="http://www.blm.gov/wo/st/en/prog/energy/oil_and_gas/best_management_practices/split_estate.html">split estate</a>. There are 57 million acres of land in the U.S. where the federal government owns oil, gas, coal, and other minerals below the surface, but another party, mostly citizens or corporations, owns the surface land above. Land and mineral ownership can become quite complicated. Often, a combination of private landholders, the federal government, a state government, or Indian tribes own the span of a single mine or field.</p>
->>>>>>> first wave icon changse
-

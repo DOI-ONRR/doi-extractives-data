@@ -1,4 +1,4 @@
-var parse = require('../../../../lib/parse');
+var parse = require('../../lib/parse');
 
 module.exports = {
   year:   'Fiscal Year',

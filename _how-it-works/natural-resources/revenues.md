@@ -96,7 +96,6 @@ Once revenue is collected by the federal government, it passes through a series 
 
 For more details about U.S. and international revenue standards, visit:
 
-
 * IRS, [Revenue Classification and Case Building System](http://www.irs.gov/irm/part4/irm_04-001-005.html)
 * International Monetary Fund, [Government Finance Statistics Manual 2014](http://www.imf.org/external/np/sta/gfsm/)
 * International Monetary Fund, [Code of Good Practices on Fiscal Transparency](https://www.imf.org/external/np/fad/trans/code.htm)

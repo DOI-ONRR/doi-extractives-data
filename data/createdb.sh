@@ -103,7 +103,6 @@ $tables -d $db_url -i state/exports-by-industry.tsv -n exports
 
 # Disbursements
 $tito --read tsv _input/onrr/disbursements/state.tsv \
-    --filter State \
     --map ./transform/state_disbursements.js \
     | $tables -t ndjson -d $db_url -n state_disbursements
 

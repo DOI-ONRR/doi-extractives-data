@@ -3,8 +3,11 @@
     SELECT
         state, source, fund, year,
         ROUND(dollars, 2) AS dollars
-    FROM state_disbursements
-    WHERE dollars > 0
+    FROM all_disbursements
+    WHERE
+        LENGTH(state) = 2 AND
+        source IS NOT NULL AND
+        dollars > 0
     ORDER BY state, source, fund, year
     " | \
   ../node_modules/.bin/nestly --if ndjson \

@@ -42,7 +42,7 @@
     "stream-array": "^1.0.1",
     "tables": "github:shawnbot/tables#use-tito",
     "through2": "^0.6.5",
-    "tito": "^0.5.5",
+    "tito": "^0.6.1",
     "yargs": "^3.7.1"
   },
   "scripts": {

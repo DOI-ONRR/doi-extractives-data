@@ -21,10 +21,14 @@ module.exports = function(d) {
 
   var source = d[SOURCE_COLUMN];
   var match = source.match(sourcePattern);
+  var note = d.Notes;
   var year;
+
   if (match) {
     year = match[1];
     source = match[2];
+  } else {
+    return [];
   }
 
   return regions.map(function(region) {
@@ -32,7 +36,8 @@ module.exports = function(d) {
       year: year,
       source: source,
       state: region.trim(),
-      dollars: parse.dollars(d[region])
+      dollars: parse.dollars(d[region]),
+      note: note
     };
   })
   .filter(function(d) {

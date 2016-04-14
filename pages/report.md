@@ -5,7 +5,12 @@ permalink: /about/report/
 breadcrumb: About
 ---
 
+<<<<<<< 76f48196be7a023f763d51bb89aeaa2c012fbf58
 <p class="case_studies_intro-para" markdown="1">As part of fulfilling the international [EITI Standard](https://eiti.org/document/standard), the {{ "Independent Administrator" | term:"independent administrator (IA)" }} worked with the [Multi-Stakeholder Group](https://www.doi.gov/eiti/FACA) to develop an Executive Summary of the USEITI 2015 Report.</p>
+=======
+
+<p class="case_studies_intro-para">As part of fulfilling the international <a href="https://eiti.org/document/standard">EITI Standard</a>, the {{ "Independent Administrator" | term:"independent administrator (IA)" }} worked with the <a href="https://www.doi.gov/eiti/FACA">Multi-Stakeholder Group</a> to develop an Executive Summary of the USEITI 2015 Report.</p>
+>>>>>>> remaining definitions
 
 This document, which you can download below, includes an overview of the contextual narrative and an account of the reporting and reconciliation process for the EITI Standard in the U.S.
 

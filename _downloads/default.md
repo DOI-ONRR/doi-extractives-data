@@ -17,7 +17,7 @@ permalink: /downloads/
 
     <h2 class="downloads-section_heading">Revenue</h2>
 
-    <ul class="list-sections">
+    <ul class="list-sections list-unstyled">
     	<li class="downloads-download_links">
         <a href="{{site.baseurl}}/downloads/federal-revenue-by-location/" id="revenue-fed-location" class="link-no_under"><h3>
         Federal revenue by location</h3></a>

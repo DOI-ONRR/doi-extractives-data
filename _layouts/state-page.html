@@ -15,6 +15,8 @@ layout: default
 
 {% assign revenue_products = site.data.state_revenues[state_id].products %}
 {% assign revenue_total = revenue_products.All[year].revenue %}
+{% assign revenue_types = site.data.revenue_types[state_id] %}
+{% assign revenue_type_names = 'Bonus;Rents;Royalties;Other Revenues' | split: ';' %}
 {% assign top_revenue_products = site.data.top_state_products[state_id].revenue[year] %}
 
 {% assign federal_products = site.data.state_federal_production[state_id].products %}
@@ -155,8 +157,10 @@ layout: default
 
   <section id="revenue" class="federal revenue">
     <h2>Revenue</h2>
+
+    <h3>Products</h3>
     {% for product in revenue_products %}
-    <section id="revenue-{{ product[0] | slugify }}">
+    <section id="revenue-{{ product[0] | slugify }}" class="product">
       {% assign revenue = product[1][year].revenue %}
       {% if product[0] == 'All' %}
         {% assign product_name = 'All products' %}
@@ -191,12 +195,43 @@ layout: default
 
     </section>
     {% endfor %}
+
+    <section id="revenue-types">
+      <h3>Revenue Types</h3>
+      <table>
+        <thead>
+          <th>Year</th>
+          {% for type in revenue_type_names %}
+          <th class="numeric">
+            {% if type == 'Other Revenues' %}Other{% else %}{{ type }}{% endif %}
+          </th>
+          {% endfor %}
+        </thead>
+        <tbody>
+          {% for row in site.data.state_revenues[state_id].products.All %}
+          {% assign year = row[0] %}
+          <tr>
+            <td>{{ year }}</td>
+            {% for type in revenue_type_names %}
+            {% assign type_revenue = revenue_types[type] %}
+            <td class="numeric">
+              ${{ type_revenue[year] | default: 0 | intcomma }}
+            </td>
+            {% endfor %}
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </section>
+
   </section>
 
   <section id="federal-production" class="federal production">
     <h2>Production on Federal Lands</h2>
+
+    <h3>Products</h3>
     {% for product in federal_products %}
-    <section id="federal-production-{{ product[0] | slugify }}">
+    <section id="federal-production-{{ product[0] | slugify }}" class="product">
       {% assign product_name = product[0] %}
       {% assign volume = product[1][year].volume %}
       <h3>{{ product[0] }}</h3>

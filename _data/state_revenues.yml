@@ -7,7 +7,7 @@ AK:
         percent: 0.9
       '2005':
         revenue: 22692079
-        rank: 8
+        rank: 10
         percent: 0.2
       '2006':
         revenue: 25147305
@@ -19,23 +19,23 @@ AK:
         percent: 0.4
       '2008':
         revenue: 28812707
-        rank: 8
+        rank: 12
         percent: 0.1
       '2009':
         revenue: 51691695
         rank: 8
-        percent: 0.7000000000000001
+        percent: 0.7
       '2010':
         revenue: 22957199
-        rank: 9
+        rank: 10
         percent: 0.2
       '2011':
         revenue: 16666363
-        rank: 9
+        rank: 11
         percent: 0.2
       '2012':
         revenue: 21464041
-        rank: 8
+        rank: 9
         percent: 0.2
       '2013':
         revenue: 19902173
@@ -44,32 +44,32 @@ AK:
     Coal:
       '2004':
         revenue: 2560
-        rank: 7
+        rank: 11
         percent: 0
       '2005':
         revenue: 7680
-        rank: 7
+        rank: 10
         percent: 0
       '2006':
         revenue: 5120
-        rank: 8
+        rank: 11
         percent: 0
       '2007':
         revenue: 5120
-        rank: 8
+        rank: 10
         percent: 0
       '2008':
         revenue: 5120
-        rank: 7
+        rank: 10
         percent: 0
     Coal Bed Methane:
       '2011':
         revenue: 197
-        rank: 6
+        rank: 9
         percent: 0
       '2012':
         revenue: -197
-        rank: 5
+        rank: 8
         percent: 0
     Gas Plant Products:
       '2004':
@@ -78,73 +78,73 @@ AK:
         percent: 0.1
       '2005':
         revenue: 337028
-        rank: 6
+        rank: 8
         percent: 0.1
       '2006':
         revenue: 139228
-        rank: 8
+        rank: 12
         percent: 0
       '2007':
         revenue: 34630
-        rank: 7
+        rank: 13
         percent: 0
       '2008':
         revenue: 40380
-        rank: 6
+        rank: 13
         percent: 0
       '2009':
         revenue: 3851
-        rank: 9
+        rank: 13
         percent: 0
       '2010':
         revenue: 529
-        rank: 8
+        rank: 14
         percent: 0
     Geothermal:
       '2013':
         revenue: 7680
-        rank: 8
-        percent: 0.30000000000000004
+        rank: 9
+        percent: 0.3
     Oil:
       '2004':
         revenue: 944071
-        rank: 6
+        rank: 12
         percent: 0.1
       '2005':
         revenue: 1440869
-        rank: 8
+        rank: 12
         percent: 0.1
       '2006':
         revenue: 1810081
-        rank: 9
+        rank: 13
         percent: 0
       '2007':
         revenue: 1587415
-        rank: 8
+        rank: 13
         percent: 0
       '2008':
         revenue: 2061166
-        rank: 9
+        rank: 14
         percent: 0
       '2009':
         revenue: 961364
-        rank: 8
+        rank: 15
         percent: 0
       '2010':
         revenue: 1767764
-        rank: 9
+        rank: 13
         percent: 0
       '2011':
         revenue: 2022989
-        rank: 8
+        rank: 13
         percent: 0
       '2012':
         revenue: 2309160
-        rank: 9
+        rank: 14
         percent: 0
       '2013':
         revenue: 6598211
-        rank: 7
+        rank: 8
         percent: 0.1
     'Oil & Gas':
       '2004':
@@ -165,7 +165,7 @@ AK:
         percent: 2.2
       '2008':
         revenue: 11968097
-        rank: 6
+        rank: 7
         percent: 0.1
       '2009':
         revenue: 31872635
@@ -174,48 +174,48 @@ AK:
       '2010':
         revenue: 8516526
         rank: 8
-        percent: 0.6000000000000001
+        percent: 0.6
       '2011':
         revenue: 4519277
-        rank: 10
-        percent: 0.7000000000000001
+        rank: 11
+        percent: 0.7
       '2012':
         revenue: 10148088
-        rank: 6
+        rank: 7
         percent: 0.4
       '2013':
         revenue: 6312681
-        rank: 6
-        percent: 0.30000000000000004
+        rank: 8
+        percent: 0.3
     Processed (Residue) Gas:
       '2004':
         revenue: 159656
-        rank: 6
+        rank: 11
         percent: 0
       '2005':
         revenue: -38044
-        rank: 7
+        rank: 19
         percent: 0
       '2006':
         revenue: 97492
-        rank: 7
+        rank: 14
         percent: 0
       '2007':
         revenue: 86545
-        rank: 6
+        rank: 14
         percent: 0
       '2008':
         revenue: 47703
-        rank: 7
+        rank: 14
         percent: 0
       '2009':
         revenue: 111564
-        rank: 6
+        rank: 13
         percent: 0
     Unprocessed (Wet) Gas:
       '2004':
         revenue: 10468686
-        rank: 7
+        rank: 8
         percent: 0.4
       '2005':
         revenue: 11852203
@@ -223,11 +223,11 @@ AK:
         percent: 0.4
       '2006':
         revenue: 14076455
-        rank: 7
-        percent: 0.7000000000000001
+        rank: 8
+        percent: 0.7
       '2007':
         revenue: 15413945
-        rank: 7
+        rank: 8
         percent: 1.1
       '2008':
         revenue: 14690242
@@ -239,7 +239,7 @@ AK:
         percent: 4.3
       '2010':
         revenue: 12672381
-        rank: 6
+        rank: 5
         percent: 1.2
       '2011':
         revenue: 10123901
@@ -247,54 +247,54 @@ AK:
         percent: 1.1
       '2012':
         revenue: 9006991
-        rank: 7
+        rank: 5
         percent: 9.1
       '2013':
         revenue: 6983601
-        rank: 6
-        percent: 1.7000000000000002
+        rank: 5
+        percent: 1.7
 AL:
   products:
     All:
       '2004':
         revenue: 1585266
-        rank: 11
+        rank: 19
         percent: 0
       '2005':
         revenue: 2559774
-        rank: 10
+        rank: 18
         percent: 0
       '2006':
         revenue: 1754298
-        rank: 11
+        rank: 21
         percent: 0
       '2007':
         revenue: 2437672
-        rank: 12
+        rank: 20
         percent: 0
       '2008':
         revenue: 3332952
-        rank: 9
+        rank: 18
         percent: 0
       '2009':
         revenue: 5169970
-        rank: 11
+        rank: 15
         percent: 0.1
       '2010':
         revenue: 11314013
-        rank: 10
+        rank: 14
         percent: 0.1
       '2011':
         revenue: 11023430
-        rank: 10
+        rank: 14
         percent: 0.1
       '2012':
         revenue: 8087793
-        rank: 9
+        rank: 16
         percent: 0.1
       '2013':
         revenue: 4338710
-        rank: 11
+        rank: 18
         percent: 0
     Clay:
       '2004':
@@ -316,7 +316,7 @@ AL:
     Coal:
       '2004':
         revenue: 8165
-        rank: 7
+        rank: 10
         percent: 0
       '2005':
         revenue: 822575
@@ -324,11 +324,11 @@ AL:
         percent: 0.1
       '2006':
         revenue: 70724
-        rank: 8
+        rank: 9
         percent: 0
       '2007':
         revenue: 84221
-        rank: 8
+        rank: 9
         percent: 0
       '2008':
         revenue: 1501927
@@ -348,12 +348,12 @@ AL:
         percent: 0.9
       '2012':
         revenue: 6567766
-        rank: 5
+        rank: 6
         percent: 0.5
       '2013':
         revenue: 3690557
         rank: 6
-        percent: 0.30000000000000004
+        percent: 0.3
     Coal Bed Methane:
       '2004':
         revenue: 6081
@@ -373,7 +373,7 @@ AL:
         percent: 0.1
       '2008':
         revenue: 77328
-        rank: 5
+        rank: 6
         percent: 0
       '2009':
         revenue: 46198
@@ -398,111 +398,111 @@ AL:
     Condensate:
       '2004':
         revenue: 1
-        rank: 6
+        rank: 14
         percent: 0
       '2005':
         revenue: 4
-        rank: 7
+        rank: 14
         percent: 0
       '2006':
         revenue: 248
-        rank: 7
+        rank: 13
         percent: 0
       '2007':
         revenue: 7
-        rank: 7
+        rank: 14
         percent: 0
       '2008':
         revenue: 15
-        rank: 7
+        rank: 14
         percent: 0
       '2009':
         revenue: 9
-        rank: 8
+        rank: 14
         percent: 0
       '2010':
         revenue: 6
-        rank: 6
+        rank: 14
         percent: 0
       '2011':
         revenue: 29
-        rank: 6
+        rank: 14
         percent: 0
       '2012':
         revenue: 246
-        rank: 7
+        rank: 13
         percent: 0
       '2013':
         revenue: 10399
-        rank: 7
+        rank: 12
         percent: 0
     Drip or Scrubber Condensate:
       '2004':
         revenue: 4
-        rank: 3
+        rank: 8
         percent: 0
       '2006':
         revenue: 1
-        rank: 5
+        rank: 10
         percent: 0
     Fuel Gas:
       '2004':
         revenue: 3034
-        rank: 2
+        rank: 3
         percent: 0
       '2006':
         revenue: 569
-        rank: 3
+        rank: 4
         percent: 0
       '2008':
         revenue: -6057
-        rank: 4
+        rank: 5
         percent: 0.1
     Gas Plant Products:
       '2004':
         revenue: 0
-        rank: 6
+        rank: 15
         percent: 0
       '2005':
         revenue: 5
-        rank: 7
+        rank: 14
         percent: 0
       '2006':
         revenue: 9
-        rank: 8
+        rank: 14
         percent: 0
       '2007':
         revenue: 418
-        rank: 7
+        rank: 14
         percent: 0
       '2008':
         revenue: 906
-        rank: 6
+        rank: 15
         percent: 0
       '2009':
         revenue: 727
-        rank: 9
+        rank: 15
         percent: 0
       '2010':
         revenue: 357
-        rank: 8
+        rank: 15
         percent: 0
       '2011':
         revenue: 8645
-        rank: 9
+        rank: 12
         percent: 0
       '2012':
         revenue: 6771
-        rank: 9
+        rank: 12
         percent: 0
       '2013':
         revenue: 4107
-        rank: 9
+        rank: 13
         percent: 0
     Hardrock:
       '2004':
         revenue: 123
-        rank: 6
+        rank: 8
         percent: 0.1
       '2005':
         revenue: 41
@@ -510,24 +510,24 @@ AL:
         percent: 0.1
       '2006':
         revenue: 82
-        rank: 8
+        rank: 9
         percent: 0.1
       '2007':
         revenue: 123
         rank: 7
-        percent: 0.30000000000000004
+        percent: 0.3
       '2008':
         revenue: 123
-        rank: 10
-        percent: 0.7000000000000001
+        rank: 9
+        percent: 0.7
       '2009':
         revenue: 123
-        rank: 10
+        rank: 9
         percent: 0.2
       '2010':
         revenue: 123
-        rank: 7
-        percent: 0.30000000000000004
+        rank: 6
+        percent: 0.3
       '2011':
         revenue: 41
         rank: 10
@@ -538,89 +538,89 @@ AL:
         percent: 0.1
       '2013':
         revenue: -615
-        rank: 6
+        rank: 9
         percent: 1.1
     Oil:
       '2004':
         revenue: 823390
-        rank: 6
+        rank: 13
         percent: 0.1
       '2005':
         revenue: 877276
-        rank: 9
+        rank: 15
         percent: 0
       '2006':
         revenue: 647954
-        rank: 9
+        rank: 16
         percent: 0
       '2007':
         revenue: 552424
-        rank: 8
+        rank: 16
         percent: 0
       '2008':
         revenue: 704943
-        rank: 9
+        rank: 16
         percent: 0
       '2009':
         revenue: 249980
-        rank: 8
+        rank: 16
         percent: 0
       '2010':
         revenue: 315058
-        rank: 9
+        rank: 17
         percent: 0
       '2011':
         revenue: 391652
-        rank: 8
+        rank: 16
         percent: 0
       '2012':
         revenue: 335036
-        rank: 9
+        rank: 17
         percent: 0
       '2013':
         revenue: 307651
-        rank: 8
+        rank: 16
         percent: 0
     'Oil & Gas':
       '2004':
         revenue: 216903
-        rank: 11
+        rank: 16
         percent: 0
       '2005':
         revenue: 48322
-        rank: 13
+        rank: 20
         percent: 0
       '2006':
         revenue: 233306
-        rank: 11
+        rank: 17
         percent: 0
       '2007':
         revenue: 1163830
-        rank: 12
+        rank: 14
         percent: 0.1
       '2008':
         revenue: 327415
-        rank: 7
+        rank: 21
         percent: 0
       '2009':
         revenue: 218975
-        rank: 11
+        rank: 18
         percent: 0
       '2010':
         revenue: 230958
-        rank: 13
+        rank: 19
         percent: 0
       '2011':
         revenue: 617924
-        rank: 13
+        rank: 15
         percent: 0.1
       '2012':
         revenue: 1021245
-        rank: 9
+        rank: 15
         percent: 0
       '2013':
         revenue: 127418
-        rank: 8
+        rank: 19
         percent: 0
     Other Liquid Hydrocarbons:
       '2004':
@@ -630,7 +630,7 @@ AL:
       '2005':
         revenue: 84
         rank: 2
-        percent: 0.30000000000000004
+        percent: 0.3
       '2006':
         revenue: 25
         rank: 2
@@ -658,7 +658,7 @@ AL:
       '2012':
         revenue: 268
         rank: 3
-        percent: 0.30000000000000004
+        percent: 0.3
       '2013':
         revenue: 113
         rank: 4
@@ -666,43 +666,43 @@ AL:
     Processed (Residue) Gas:
       '2004':
         revenue: 114911
-        rank: 6
+        rank: 12
         percent: 0
       '2005':
         revenue: 204288
-        rank: 7
+        rank: 13
         percent: 0
       '2006':
         revenue: 252420
-        rank: 7
+        rank: 13
         percent: 0
       '2007':
         revenue: 202531
-        rank: 6
+        rank: 13
         percent: 0
       '2008':
         revenue: 274555
-        rank: 7
+        rank: 13
         percent: 0
       '2009':
         revenue: 127767
-        rank: 6
+        rank: 11
         percent: 0
       '2010':
         revenue: 108165
-        rank: 7
+        rank: 12
         percent: 0
       '2011':
         revenue: 85888
-        rank: 8
+        rank: 13
         percent: 0
       '2012':
         revenue: 48278
-        rank: 8
+        rank: 13
         percent: 0
       '2013':
         revenue: 59219
-        rank: 8
+        rank: 12
         percent: 0
     Sulfur:
       '2004':
@@ -727,7 +727,7 @@ AL:
         percent: 0.9
       '2009':
         revenue: 2878
-        rank: 3
+        rank: 2
         percent: 0
       '2010':
         revenue: 1448
@@ -739,7 +739,7 @@ AL:
         percent: 0.2
       '2012':
         revenue: 4039
-        rank: 2
+        rank: 3
         percent: 0.2
       '2013':
         revenue: 2680
@@ -748,103 +748,103 @@ AL:
     Unprocessed (Wet) Gas:
       '2004':
         revenue: 400417
-        rank: 11
+        rank: 17
         percent: 0
       '2005':
         revenue: 498645
-        rank: 12
+        rank: 18
         percent: 0
       '2006':
         revenue: 477338
-        rank: 11
+        rank: 17
         percent: 0
       '2007':
         revenue: 204393
-        rank: 14
+        rank: 19
         percent: 0
       '2008':
         revenue: 439478
-        rank: 13
+        rank: 16
         percent: 0
       '2009':
         revenue: 171995
-        rank: 14
+        rank: 19
         percent: 0
       '2010':
         revenue: 147908
-        rank: 13
+        rank: 17
         percent: 0
       '2011':
         revenue: 87372
-        rank: 12
+        rank: 19
         percent: 0
       '2012':
         revenue: 56056
-        rank: 15
+        rank: 17
         percent: 0.1
       '2013':
         revenue: 68357
-        rank: 13
+        rank: 16
         percent: 0
 AR:
   products:
     All:
       '2004':
         revenue: 5846121
-        rank: 10
+        rank: 14
         percent: 0.1
       '2005':
         revenue: 21095897
-        rank: 8
+        rank: 11
         percent: 0.2
       '2006':
         revenue: 16854739
-        rank: 10
+        rank: 11
         percent: 0.1
       '2007':
         revenue: 27764707
-        rank: 10
+        rank: 11
         percent: 0.2
       '2008':
         revenue: 31699651
-        rank: 8
+        rank: 11
         percent: 0.1
       '2009':
         revenue: 9096877
-        rank: 11
+        rank: 14
         percent: 0.1
       '2010':
         revenue: 12811307
-        rank: 10
+        rank: 13
         percent: 0.1
       '2011':
         revenue: 9560512
-        rank: 10
+        rank: 16
         percent: 0.1
       '2012':
         revenue: 4553983
-        rank: 10
+        rank: 18
         percent: 0
       '2013':
         revenue: 5567964
-        rank: 11
+        rank: 17
         percent: 0
     Coal Bed Methane:
       '2004':
         revenue: 4098
-        rank: 6
+        rank: 7
         percent: 0
       '2005':
         revenue: 4594
-        rank: 6
+        rank: 8
         percent: 0
       '2006':
         revenue: 1600
-        rank: 6
+        rank: 8
         percent: 0
       '2007':
         revenue: 826
-        rank: 7
+        rank: 8
         percent: 0
       '2009':
         revenue: 99609
@@ -852,50 +852,50 @@ AR:
         percent: 0.1
       '2010':
         revenue: 39853
-        rank: 6
+        rank: 7
         percent: 0
       '2011':
         revenue: 25137
-        rank: 6
+        rank: 7
         percent: 0
       '2012':
         revenue: 14339
-        rank: 5
+        rank: 6
         percent: 0
       '2013':
         revenue: 14616
-        rank: 6
+        rank: 7
         percent: 0
     Condensate:
       '2009':
         revenue: 34
-        rank: 8
+        rank: 13
         percent: 0
       '2010':
         revenue: 25
-        rank: 6
+        rank: 13
         percent: 0
       '2012':
         revenue: -35
-        rank: 7
+        rank: 15
         percent: 0
       '2013':
         revenue: 8
-        rank: 7
+        rank: 14
         percent: 0
     Drip or Scrubber Condensate:
       '2009':
         revenue: 21
-        rank: 6
+        rank: 9
         percent: 0
       '2012':
         revenue: -21
-        rank: 8
+        rank: 12
         percent: 0
     Fuel Gas:
       '2013':
         revenue: 3322
-        rank: 7
+        rank: 9
         percent: 0.1
     Hardrock:
       '2004':
@@ -916,11 +916,11 @@ AR:
         percent: 3.3
       '2008':
         revenue: 958
-        rank: 6
+        rank: 5
         percent: 5.4
       '2009':
         revenue: 916
-        rank: 7
+        rank: 6
         percent: 1.6
       '2010':
         revenue: 954
@@ -936,49 +936,49 @@ AR:
         percent: 1.6
       '2013':
         revenue: 1270
-        rank: 4
+        rank: 3
         percent: 2.2
     Oil:
       '2004':
         revenue: 243
-        rank: 7
+        rank: 25
         percent: 0
       '2005':
         revenue: 252
-        rank: 9
+        rank: 23
         percent: 0
       '2006':
         revenue: 244
-        rank: 9
+        rank: 23
         percent: 0
       '2007':
         revenue: 193
-        rank: 8
+        rank: 24
         percent: 0
       '2008':
         revenue: 151
-        rank: 9
+        rank: 23
         percent: 0
       '2009':
         revenue: 48
-        rank: 8
+        rank: 24
         percent: 0
       '2010':
         revenue: 47
-        rank: 9
+        rank: 25
         percent: 0
       '2011':
         revenue: 83
-        rank: 8
+        rank: 24
         percent: 0
       '2012':
         revenue: -63
-        rank: 9
+        rank: 25
         percent: 0
     'Oil & Gas':
       '2004':
         revenue: 1959209
-        rank: 9
+        rank: 10
         percent: 0.2
       '2005':
         revenue: 13497288
@@ -986,7 +986,7 @@ AR:
         percent: 1.4
       '2006':
         revenue: 8578527
-        rank: 7
+        rank: 8
         percent: 0.5
       '2007':
         revenue: 21091873
@@ -994,11 +994,11 @@ AR:
         percent: 1.8
       '2008':
         revenue: 22775029
-        rank: 5
+        rank: 6
         percent: 0.2
       '2009':
         revenue: 3542744
-        rank: 9
+        rank: 11
         percent: 0.2
       '2010':
         revenue: 2652455
@@ -1006,56 +1006,56 @@ AR:
         percent: 0.2
       '2011':
         revenue: 2902790
-        rank: 11
+        rank: 13
         percent: 0.4
       '2012':
         revenue: 653482
-        rank: 9
+        rank: 16
         percent: 0
       '2013':
         revenue: 482793
-        rank: 8
+        rank: 13
         percent: 0
     Processed (Residue) Gas:
       '2004':
         revenue: 5227
-        rank: 6
+        rank: 16
         percent: 0
       '2005':
         revenue: 6170
-        rank: 7
+        rank: 18
         percent: 0
       '2006':
         revenue: 4569
-        rank: 7
+        rank: 18
         percent: 0
       '2007':
         revenue: 3324
-        rank: 6
+        rank: 18
         percent: 0
       '2008':
         revenue: 4838
-        rank: 7
+        rank: 18
         percent: 0
       '2009':
         revenue: 1782
-        rank: 6
+        rank: 17
         percent: 0
       '2010':
         revenue: 1711
-        rank: 7
+        rank: 16
         percent: 0
       '2011':
         revenue: 2149
-        rank: 8
+        rank: 17
         percent: 0
       '2012':
         revenue: 1420
-        rank: 8
+        rank: 17
         percent: 0
       '2013':
         revenue: -307
-        rank: 8
+        rank: 17
         percent: 0
     Quartz:
       '2004':
@@ -1110,19 +1110,19 @@ AR:
     Unprocessed (Wet) Gas:
       '2004':
         revenue: 3875381
-        rank: 9
+        rank: 11
         percent: 0.2
       '2005':
         revenue: 7586141
-        rank: 9
-        percent: 0.30000000000000004
+        rank: 10
+        percent: 0.3
       '2006':
         revenue: 8268232
-        rank: 9
+        rank: 10
         percent: 0.4
       '2007':
         revenue: 6666654
-        rank: 9
+        rank: 10
         percent: 0.5
       '2008':
         revenue: 8915741
@@ -1130,23 +1130,23 @@ AR:
         percent: 0.5
       '2009':
         revenue: 5450755
-        rank: 9
+        rank: 10
         percent: 1.2
       '2010':
         revenue: 10116143
-        rank: 7
+        rank: 6
         percent: 1
       '2011':
         revenue: 6629181
         rank: 7
-        percent: 0.7000000000000001
+        percent: 0.7
       '2012':
         revenue: 3883966
-        rank: 9
+        rank: 7
         percent: 3.9
       '2013':
         revenue: 5066259
-        rank: 8
+        rank: 7
         percent: 1.2
     Wavellite:
       '2008':
@@ -1166,56 +1166,56 @@ AZ:
     All:
       '2004':
         revenue: 100407
-        rank: 11
+        rank: 28
         percent: 0
       '2005':
         revenue: 170339
-        rank: 10
+        rank: 29
         percent: 0
       '2006':
         revenue: 66202
-        rank: 11
+        rank: 30
         percent: 0
       '2007':
         revenue: 532158
-        rank: 12
+        rank: 27
         percent: 0
       '2008':
         revenue: 529904
-        rank: 9
+        rank: 27
         percent: 0
       '2009':
         revenue: 89551
-        rank: 12
+        rank: 31
         percent: 0
       '2010':
         revenue: 42990
-        rank: 11
+        rank: 33
         percent: 0
       '2011':
         revenue: 30229
-        rank: 11
+        rank: 32
         percent: 0
       '2012':
         revenue: 16566
-        rank: 10
+        rank: 32
         percent: 0
       '2013':
         revenue: 63828
-        rank: 11
+        rank: 31
         percent: 0
     Geothermal:
       '2006':
         revenue: 4168
-        rank: 4
+        rank: 3
         percent: 0.8
       '2007':
         revenue: 2084
-        rank: 6
+        rank: 7
         percent: 0
       '2008':
         revenue: 2084
-        rank: 4
+        rank: 7
         percent: 0
       '2009':
         revenue: 2084
@@ -1227,7 +1227,7 @@ AZ:
         percent: 0
       '2011':
         revenue: 2084
-        rank: 8
+        rank: 9
         percent: 0.1
       '2012':
         revenue: 2084
@@ -1236,49 +1236,49 @@ AZ:
     'Oil & Gas':
       '2004':
         revenue: 100249
-        rank: 11
+        rank: 18
         percent: 0
       '2005':
         revenue: 170081
-        rank: 13
+        rank: 18
         percent: 0
       '2006':
         revenue: 61946
-        rank: 11
+        rank: 22
         percent: 0
       '2007':
         revenue: 529234
-        rank: 13
+        rank: 19
         percent: 0
       '2008':
         revenue: 527492
-        rank: 7
+        rank: 17
         percent: 0
       '2009':
         revenue: 85553
-        rank: 11
+        rank: 21
         percent: 0
       '2010':
         revenue: 36056
-        rank: 13
+        rank: 26
         percent: 0
       '2011':
         revenue: 20804
-        rank: 14
+        rank: 25
         percent: 0
       '2012':
         revenue: 16520
-        rank: 9
+        rank: 26
         percent: 0
       '2013':
         revenue: 59603
-        rank: 8
+        rank: 21
         percent: 0
     Potassium:
       '2009':
         revenue: 1634
         rank: 3
-        percent: 0.30000000000000004
+        percent: 0.3
       '2010':
         revenue: 3268
         rank: 4
@@ -1289,7 +1289,7 @@ AZ:
         percent: 0
       '2012':
         revenue: -3268
-        rank: 3
+        rank: 4
         percent: 0.1
     Salt:
       '2004':
@@ -1306,7 +1306,7 @@ AZ:
         percent: 0
       '2007':
         revenue: 824
-        rank: 3
+        rank: 4
         percent: 0.4
       '2008':
         revenue: 312
@@ -1319,7 +1319,7 @@ AZ:
       '2010':
         revenue: 1566
         rank: 4
-        percent: 0.6000000000000001
+        percent: 0.6
       '2011':
         revenue: 8959
         rank: 3
@@ -1327,43 +1327,43 @@ AZ:
       '2012':
         revenue: 1378
         rank: 5
-        percent: 0.30000000000000004
+        percent: 0.3
       '2013':
         revenue: 4225
         rank: 3
-        percent: 0.6000000000000001
+        percent: 0.6
     Sodium:
       '2004':
         revenue: 40
-        rank: 3
+        rank: 4
         percent: 0
       '2005':
         revenue: 32
-        rank: 6
+        rank: 4
         percent: 0
       '2006':
         revenue: 16
-        rank: 5
+        rank: 4
         percent: 0
       '2007':
         revenue: 16
-        rank: 6
+        rank: 5
         percent: 0
       '2008':
         revenue: 16
-        rank: 6
+        rank: 5
         percent: 0
       '2009':
         revenue: 16
-        rank: 5
+        rank: 4
         percent: 0
       '2010':
         revenue: 16
-        rank: 5
+        rank: 4
         percent: 0
       '2011':
         revenue: 16
-        rank: 5
+        rank: 3
         percent: 0
       '2012':
         revenue: -148
@@ -1375,10 +1375,10 @@ CA:
       '2004':
         revenue: 49140598
         rank: 7
-        percent: 0.6000000000000001
+        percent: 0.6
       '2005':
         revenue: 47953296
-        rank: 6
+        rank: 7
         percent: 0.5
       '2006':
         revenue: 117889438
@@ -1398,7 +1398,7 @@ CA:
         percent: 1.3
       '2010':
         revenue: 138166106
-        rank: 4
+        rank: 5
         percent: 1.3
       '2011':
         revenue: 196688593
@@ -1407,11 +1407,11 @@ CA:
       '2012':
         revenue: 215245302
         rank: 5
-        percent: 1.7000000000000002
+        percent: 1.7
       '2013':
         revenue: 206842957
         rank: 6
-        percent: 1.7000000000000002
+        percent: 1.7
     Anhydrous Sodium Sulfate:
       '2004':
         revenue: 191938
@@ -1601,56 +1601,56 @@ CA:
     Condensate:
       '2004':
         revenue: 104513
-        rank: 6
+        rank: 11
         percent: 0
       '2005':
         revenue: 124549
-        rank: 7
+        rank: 9
         percent: 0
       '2006':
         revenue: 324513
-        rank: 6
+        rank: 7
         percent: 0.1
       '2007':
         revenue: 271278
-        rank: 6
+        rank: 7
         percent: 0.1
       '2008':
         revenue: 478558
-        rank: 6
+        rank: 7
         percent: 0.1
       '2009':
         revenue: -131744
-        rank: 7
+        rank: 15
         percent: 0.1
       '2010':
         revenue: 175759
-        rank: 6
+        rank: 7
         percent: 0
       '2011':
         revenue: 440144
-        rank: 5
+        rank: 7
         percent: 0.1
       '2012':
         revenue: 564757
-        rank: 6
+        rank: 7
         percent: 0.1
       '2013':
         revenue: 656045
-        rank: 6
+        rank: 7
         percent: 0.1
     Drip or Scrubber Condensate:
       '2006':
         revenue: 378
-        rank: 5
+        rank: 9
         percent: 0
       '2007':
         revenue: 902
-        rank: 6
+        rank: 7
         percent: 0
       '2008':
         revenue: 45
-        rank: 5
+        rank: 8
         percent: 0
       '2009':
         revenue: 508934
@@ -1670,7 +1670,7 @@ CA:
         percent: 2.7
       '2013':
         revenue: -111124
-        rank: 4
+        rank: 8
         percent: 1.2
     Flash Gas:
       '2007':
@@ -1680,7 +1680,7 @@ CA:
       '2008':
         revenue: 8108
         rank: 1
-        percent: 0.30000000000000004
+        percent: 0.3
       '2009':
         revenue: 7875
         rank: 1
@@ -1695,12 +1695,12 @@ CA:
         percent: 0.1
       '2012':
         revenue: -1336
-        rank: 1
+        rank: 2
         percent: 0.1
     Fuel Gas:
       '2010':
         revenue: 563
-        rank: 5
+        rank: 6
         percent: 0
       '2011':
         revenue: 3774
@@ -1709,11 +1709,11 @@ CA:
       '2012':
         revenue: 23101
         rank: 2
-        percent: 0.6000000000000001
+        percent: 0.6
       '2013':
         revenue: 46326
         rank: 4
-        percent: 0.7000000000000001
+        percent: 0.7
     Fuel Oil:
       '2004':
         revenue: 222
@@ -1775,35 +1775,35 @@ CA:
       '2013':
         revenue: 21521
         rank: 2
-        percent: 0.6000000000000001
+        percent: 0.6
     Gas Plant Products:
       '2004':
         revenue: 95701
-        rank: 6
+        rank: 12
         percent: 0
       '2005':
         revenue: 76935
-        rank: 7
+        rank: 12
         percent: 0
       '2006':
         revenue: 294589
-        rank: 7
+        rank: 10
         percent: 0.1
       '2007':
         revenue: 181131
-        rank: 7
+        rank: 10
         percent: 0
       '2008':
         revenue: 286771
-        rank: 5
+        rank: 10
         percent: 0.1
       '2009':
         revenue: 177798
-        rank: 8
+        rank: 10
         percent: 0.1
       '2010':
         revenue: 228022
-        rank: 7
+        rank: 11
         percent: 0.1
       '2011':
         revenue: 785385
@@ -1828,7 +1828,7 @@ CA:
         percent: 13.9
       '2006':
         revenue: -17261
-        rank: 3
+        rank: 6
         percent: 3.3
       '2007':
         revenue: 8191628
@@ -1848,7 +1848,7 @@ CA:
         percent: 3.5
       '2011':
         revenue: 206189
-        rank: 4
+        rank: 5
         percent: 5.4
       '2012':
         revenue: 76111
@@ -2030,15 +2030,15 @@ CA:
         percent: 0
       '2008':
         revenue: 21
-        rank: 11
+        rank: 10
         percent: 0.1
       '2009':
         revenue: 21
-        rank: 11
+        rank: 10
         percent: 0
       '2013':
         revenue: 105
-        rank: 8
+        rank: 6
         percent: 0.2
     Hot Springs:
       '2008':
@@ -2049,12 +2049,12 @@ CA:
       '2005':
         revenue: 1024
         rank: 2
-        percent: 0.30000000000000004
+        percent: 0.3
     Oil:
       '2004':
         revenue: 23109707
         rank: 3
-        percent: 1.7000000000000002
+        percent: 1.7
       '2005':
         revenue: 31794334
         rank: 4
@@ -2094,43 +2094,43 @@ CA:
     'Oil & Gas':
       '2004':
         revenue: 538141
-        rank: 10
+        rank: 13
         percent: 0.1
       '2005':
         revenue: 452396
-        rank: 13
+        rank: 15
         percent: 0
       '2006':
         revenue: 3024350
-        rank: 9
+        rank: 12
         percent: 0.2
       '2007':
         revenue: 774914
-        rank: 12
+        rank: 17
         percent: 0.1
       '2008':
         revenue: 2696669
-        rank: 7
+        rank: 13
         percent: 0
       '2009':
         revenue: 380282
-        rank: 11
+        rank: 16
         percent: 0
       '2010':
         revenue: 4784644
         rank: 11
-        percent: 0.30000000000000004
+        percent: 0.3
       '2011':
         revenue: 6019513
-        rank: 9
+        rank: 10
         percent: 0.9
       '2012':
         revenue: 4212163
-        rank: 7
+        rank: 12
         percent: 0.2
       '2013':
         revenue: 279962
-        rank: 8
+        rank: 18
         percent: 0
     Potassium:
       '2004':
@@ -2144,7 +2144,7 @@ CA:
         percent: 0.1
       '2005':
         revenue: 553203
-        rank: 7
+        rank: 10
         percent: 0
       '2006':
         revenue: 1470300
@@ -2152,11 +2152,11 @@ CA:
         percent: 0.1
       '2007':
         revenue: 1097495
-        rank: 6
+        rank: 7
         percent: 0
       '2008':
         revenue: 1912882
-        rank: 6
+        rank: 7
         percent: 0.1
       '2009':
         revenue: 1188169
@@ -2164,7 +2164,7 @@ CA:
         percent: 0.1
       '2010':
         revenue: 1186100
-        rank: 6
+        rank: 8
         percent: 0.1
       '2011':
         revenue: 2115557
@@ -2173,7 +2173,7 @@ CA:
       '2012':
         revenue: 3154444
         rank: 6
-        percent: 0.30000000000000004
+        percent: 0.3
       '2013':
         revenue: 2322998
         rank: 6
@@ -2272,11 +2272,11 @@ CA:
     Soda Ash-Granular:
       '2004':
         revenue: 260287
-        rank: 2
+        rank: 1
         percent: 57.8
       '2005':
         revenue: -726947
-        rank: 1
+        rank: 2
         percent: 101.1
       '2006':
         revenue: -165563
@@ -2293,27 +2293,27 @@ CA:
         percent: 15.6
       '2006':
         revenue: 9021
-        rank: 3
+        rank: 2
         percent: 14.1
       '2007':
         revenue: 720
-        rank: 5
+        rank: 4
         percent: 0.9
       '2008':
         revenue: 1209
-        rank: 4
-        percent: 0.30000000000000004
+        rank: 3
+        percent: 0.3
       '2009':
         revenue: 48206
-        rank: 3
+        rank: 2
         percent: 74.7
       '2010':
         revenue: -10777
-        rank: 3
+        rank: 5
         percent: 7.6
       '2011':
         revenue: -14390
-        rank: 3
+        rank: 5
         percent: 8.1
       '2012':
         revenue: 10563
@@ -2321,7 +2321,7 @@ CA:
         percent: 7.2
       '2013':
         revenue: 2533
-        rank: 4
+        rank: 3
         percent: 3.5
     Sodium Bi-Carbonate:
       '2004':
@@ -2367,43 +2367,43 @@ CA:
     Unprocessed (Wet) Gas:
       '2004':
         revenue: 3148139
-        rank: 10
+        rank: 12
         percent: 0.1
       '2005':
         revenue: 3867359
-        rank: 11
+        rank: 13
         percent: 0.1
       '2006':
         revenue: 3729571
-        rank: 10
+        rank: 13
         percent: 0.2
       '2007':
         revenue: 3241512
-        rank: 12
+        rank: 13
         percent: 0.2
       '2008':
         revenue: 3554309
-        rank: 11
+        rank: 12
         percent: 0.2
       '2009':
         revenue: 1315149
-        rank: 12
-        percent: 0.30000000000000004
+        rank: 13
+        percent: 0.3
       '2010':
         revenue: 2071154
         rank: 12
         percent: 0.2
       '2011':
         revenue: 2194053
-        rank: 10
+        rank: 12
         percent: 0.2
       '2012':
         revenue: 1747264
-        rank: 11
+        rank: 10
         percent: 1.8
       '2013':
         revenue: 481743
-        rank: 12
+        rank: 11
         percent: 0.1
 CO:
   products:
@@ -2529,7 +2529,7 @@ CO:
         percent: 6
       '2012':
         revenue: 56040182
-        rank: 2
+        rank: 3
         percent: 4.2
       '2013':
         revenue: 28694452
@@ -2543,7 +2543,7 @@ CO:
       '2005':
         revenue: 5102176
         rank: 4
-        percent: 1.7000000000000002
+        percent: 1.7
       '2006':
         revenue: 6162649
         rank: 4
@@ -2554,7 +2554,7 @@ CO:
         percent: 1.6
       '2008':
         revenue: 7941865
-        rank: 3
+        rank: 4
         percent: 1.9
       '2009':
         revenue: 2932744
@@ -2579,7 +2579,7 @@ CO:
     Coal-Bituminous-Raw:
       '2004':
         revenue: -2179083
-        rank: 1
+        rank: 3
         percent: 85.3
       '2007':
         revenue: 27122
@@ -2597,7 +2597,7 @@ CO:
     Coal-Subbituminous-Raw:
       '2004':
         revenue: -2100588
-        rank: 1
+        rank: 3
         percent: 74.6
       '2006':
         revenue: 0
@@ -2627,7 +2627,7 @@ CO:
       '2009':
         revenue: 2790423
         rank: 4
-        percent: 1.7000000000000002
+        percent: 1.7
       '2010':
         revenue: 6744634
         rank: 4
@@ -2671,7 +2671,7 @@ CO:
         percent: 4.8
       '2011':
         revenue: -676574
-        rank: 1
+        rank: 9
         percent: 6
       '2012':
         revenue: 690468
@@ -2679,12 +2679,12 @@ CO:
         percent: 29
       '2013':
         revenue: 162019
-        rank: 3
-        percent: 1.7000000000000002
+        rank: 4
+        percent: 1.7
     Fuel Gas:
       '2005':
         revenue: 19
-        rank: 4
+        rank: 5
         percent: 0
       '2010':
         revenue: 109160
@@ -2692,7 +2692,7 @@ CO:
         percent: 1.4
       '2011':
         revenue: 59902
-        rank: 2
+        rank: 1
         percent: 1.2
       '2012':
         revenue: 59587
@@ -2714,7 +2714,7 @@ CO:
       '2013':
         revenue: 9634
         rank: 4
-        percent: 0.30000000000000004
+        percent: 0.3
     Gas Plant Products:
       '2004':
         revenue: 2204206
@@ -2759,7 +2759,7 @@ CO:
     Geothermal:
       '2011':
         revenue: 32800
-        rank: 5
+        rank: 6
         percent: 0.9
       '2012':
         revenue: 33416
@@ -2802,7 +2802,7 @@ CO:
         percent: 8.1
       '2011':
         revenue: -381
-        rank: 2
+        rank: 3
         percent: 44.2
       '2013':
         revenue: 283
@@ -2811,7 +2811,7 @@ CO:
     Oil:
       '2004':
         revenue: 15768675
-        rank: 4
+        rank: 5
         percent: 1.1
       '2005':
         revenue: 22405865
@@ -2823,7 +2823,7 @@ CO:
         percent: 0.8
       '2007':
         revenue: 31937433
-        rank: 5
+        rank: 6
         percent: 0.8
       '2008':
         revenue: 41778746
@@ -2832,11 +2832,11 @@ CO:
       '2009':
         revenue: 19163241
         rank: 6
-        percent: 0.7000000000000001
+        percent: 0.7
       '2010':
         revenue: 27002693
         rank: 6
-        percent: 0.6000000000000001
+        percent: 0.6
       '2011':
         revenue: 30428992
         rank: 6
@@ -2844,11 +2844,11 @@ CO:
       '2012':
         revenue: 32291892
         rank: 6
-        percent: 0.6000000000000001
+        percent: 0.6
       '2013':
         revenue: 34719972
-        rank: 5
-        percent: 0.6000000000000001
+        rank: 6
+        percent: 0.6
     'Oil & Gas':
       '2004':
         revenue: 20731619
@@ -2885,7 +2885,7 @@ CO:
       '2012':
         revenue: 15208870
         rank: 5
-        percent: 0.6000000000000001
+        percent: 0.6
       '2013':
         revenue: 7848716
         rank: 5
@@ -2939,7 +2939,7 @@ CO:
         percent: 3.5
       '2009':
         revenue: -367308
-        rank: 6
+        rank: 19
         percent: 0
       '2010':
         revenue: 53887700
@@ -2965,7 +2965,7 @@ CO:
     Soda Ash-Granular:
       '2004':
         revenue: -127124
-        rank: 3
+        rank: 2
         percent: 28.3
     Sodium:
       '2004':
@@ -2974,15 +2974,15 @@ CO:
         percent: 26.2
       '2005':
         revenue: -2107
-        rank: 4
+        rank: 5
         percent: 1.2
       '2006':
         revenue: -26255
-        rank: 2
+        rank: 5
         percent: 41.1
       '2007':
         revenue: 6561
-        rank: 4
+        rank: 3
         percent: 8.6
       '2008':
         revenue: 313481
@@ -2990,7 +2990,7 @@ CO:
         percent: 75.9
       '2009':
         revenue: -142029
-        rank: 2
+        rank: 5
         percent: 220.1
       '2010':
         revenue: 20079
@@ -3089,96 +3089,96 @@ CO:
         percent: 6.8
       '2012':
         revenue: 39437764
-        rank: 3
+        rank: 2
         percent: 39.8
       '2013':
         revenue: -56885652
-        rank: 3
+        rank: 23
         percent: 13.9
 FL:
   products:
     All:
       '2004':
         revenue: 11380
-        rank: 11
+        rank: 32
         percent: 0
       '2005':
         revenue: 842404
-        rank: 10
+        rank: 23
         percent: 0
       '2006':
         revenue: 13515
-        rank: 11
+        rank: 32
         percent: 0
       '2007':
         revenue: 9974
-        rank: 12
+        rank: 34
         percent: 0
       '2008':
         revenue: 12262
-        rank: 9
+        rank: 32
         percent: 0
       '2009':
         revenue: 966
-        rank: 12
+        rank: 36
         percent: 0
       '2010':
         revenue: 95535
-        rank: 11
+        rank: 30
         percent: 0
       '2011':
         revenue: 526326
-        rank: 11
+        rank: 25
         percent: 0
       '2012':
         revenue: 2174551
-        rank: 10
+        rank: 20
         percent: 0
       '2013':
         revenue: 286720
-        rank: 11
+        rank: 27
         percent: 0
     Oil:
       '2004':
         revenue: 1936
-        rank: 7
+        rank: 22
         percent: 0
     'Oil & Gas':
       '2004':
         revenue: 8081
-        rank: 11
+        rank: 28
         percent: 0
       '2005':
         revenue: 5054
-        rank: 13
+        rank: 28
         percent: 0
       '2006':
         revenue: 12117
-        rank: 11
+        rank: 27
         percent: 0
       '2007':
         revenue: 9090
-        rank: 13
+        rank: 28
         percent: 0
       '2008':
         revenue: 10774
-        rank: 7
+        rank: 28
         percent: 0
       '2009':
         revenue: -8397
-        rank: 11
+        rank: 29
         percent: 0
       '2010':
         revenue: 3200
-        rank: 13
+        rank: 32
         percent: 0
       '2011':
         revenue: 3200
-        rank: 14
+        rank: 31
         percent: 0
       '2012':
         revenue: 3200
-        rank: 9
+        rank: 31
         percent: 0
     Phosphate:
       '2004':
@@ -3211,12 +3211,12 @@ FL:
         percent: 0.2
       '2012':
         revenue: 1366
-        rank: 3
+        rank: 4
         percent: 0.1
       '2013':
         revenue: 989
-        rank: 4
-        percent: 0.7000000000000001
+        rank: 3
+        percent: 0.7
     Phosphate Concentrate:
       '2008':
         revenue: 1570
@@ -3256,43 +3256,43 @@ ID:
     All:
       '2004':
         revenue: 4142232
-        rank: 10
+        rank: 15
         percent: 0.1
       '2005':
         revenue: 3080437
-        rank: 10
+        rank: 17
         percent: 0
       '2006':
         revenue: 2191025
-        rank: 11
+        rank: 20
         percent: 0
       '2007':
         revenue: 8153040
-        rank: 11
+        rank: 16
         percent: 0.1
       '2008':
         revenue: 2726747
-        rank: 9
+        rank: 19
         percent: 0
       '2009':
         revenue: 3832461
-        rank: 12
+        rank: 17
         percent: 0
       '2010':
         revenue: 9284314
-        rank: 10
+        rank: 16
         percent: 0.1
       '2011':
         revenue: 9630222
-        rank: 10
+        rank: 15
         percent: 0.1
       '2012':
         revenue: 10527504
-        rank: 9
+        rank: 14
         percent: 0.1
       '2013':
         revenue: 10100829
-        rank: 10
+        rank: 13
         percent: 0.1
     Garnet:
       '2008':
@@ -3306,7 +3306,7 @@ ID:
     Gemstones:
       '2004':
         revenue: 80
-        rank: 1
+        rank: 2
         percent: 0
       '2005':
         revenue: 80
@@ -3322,24 +3322,24 @@ ID:
         percent: 100
       '2008':
         revenue: 80
-        rank: 1
+        rank: 2
         percent: 0
     Geothermal:
       '2004':
         revenue: 2467
-        rank: 5
+        rank: 4
         percent: 0
       '2005':
         revenue: 2467
         rank: 5
-        percent: 0.30000000000000004
+        percent: 0.3
       '2007':
         revenue: 5727012
         rank: 3
         percent: 21.6
       '2008':
         revenue: 30875
-        rank: 3
+        rank: 4
         percent: 0.1
       '2009':
         revenue: 108271
@@ -3401,12 +3401,12 @@ ID:
     Hardrock:
       '2004':
         revenue: 42
-        rank: 7
+        rank: 10
         percent: 0
       '2005':
         revenue: 159
         rank: 7
-        percent: 0.30000000000000004
+        percent: 0.3
       '2006':
         revenue: 720
         rank: 7
@@ -3414,71 +3414,71 @@ ID:
       '2007':
         revenue: 338
         rank: 6
-        percent: 0.7000000000000001
+        percent: 0.7
       '2008':
         revenue: 562
-        rank: 9
+        rank: 8
         percent: 3.2
       '2009':
         revenue: 236
-        rank: 8
+        rank: 7
         percent: 0.4
       '2010':
         revenue: 59
-        rank: 8
+        rank: 7
         percent: 0.1
       '2011':
         revenue: 101
-        rank: 8
-        percent: 0.30000000000000004
+        rank: 9
+        percent: 0.3
       '2012':
         revenue: 123
         rank: 9
         percent: 0.2
       '2013':
         revenue: 43
-        rank: 9
+        rank: 7
         percent: 0.1
     'Oil & Gas':
       '2004':
         revenue: 7606
-        rank: 11
+        rank: 29
         percent: 0
       '2005':
         revenue: 1731
-        rank: 13
+        rank: 29
         percent: 0
       '2006':
         revenue: 2713
-        rank: 11
+        rank: 29
         percent: 0
       '2007':
         revenue: 115238
-        rank: 13
+        rank: 21
         percent: 0
       '2008':
         revenue: 80769
-        rank: 7
+        rank: 24
         percent: 0
       '2009':
         revenue: 38609
-        rank: 11
+        rank: 23
         percent: 0
       '2010':
         revenue: 10415
-        rank: 13
+        rank: 29
         percent: 0
       '2011':
         revenue: 18228
-        rank: 14
+        rank: 26
         percent: 0
       '2012':
         revenue: 14718
-        rank: 9
+        rank: 27
         percent: 0
       '2013':
         revenue: 8274
-        rank: 8
+        rank: 28
         percent: 0
     Phosphate:
       '2004':
@@ -3572,56 +3572,56 @@ IL:
     All:
       '2004':
         revenue: 174423
-        rank: 11
+        rank: 25
         percent: 0
       '2005':
         revenue: 187636
-        rank: 10
+        rank: 28
         percent: 0
       '2006':
         revenue: 272020
-        rank: 11
+        rank: 28
         percent: 0
       '2007':
         revenue: 259428
-        rank: 12
+        rank: 29
         percent: 0
       '2008':
         revenue: 416673
-        rank: 9
+        rank: 29
         percent: 0
       '2009':
         revenue: 207441
-        rank: 12
+        rank: 27
         percent: 0
       '2010':
         revenue: 347622
-        rank: 11
+        rank: 27
         percent: 0
       '2011':
         revenue: 293369
-        rank: 11
+        rank: 28
         percent: 0
       '2012':
         revenue: 312501
-        rank: 10
+        rank: 27
         percent: 0
       '2013':
         revenue: 302425
-        rank: 11
+        rank: 26
         percent: 0
     Hardrock:
       '2004':
         revenue: -366
-        rank: 5
+        rank: 12
         percent: 0.2
       '2005':
         revenue: -1147
-        rank: 4
+        rank: 10
         percent: 2.5
       '2008':
         revenue: 1267
-        rank: 5
+        rank: 4
         percent: 7.2
       '2010':
         revenue: -60
@@ -3629,223 +3629,223 @@ IL:
         percent: 0.1
       '2011':
         revenue: -60
-        rank: 9
+        rank: 11
         percent: 0.2
     Oil:
       '2004':
         revenue: 174745
-        rank: 7
+        rank: 17
         percent: 0
       '2005':
         revenue: 188608
-        rank: 9
+        rank: 18
         percent: 0
       '2006':
         revenue: 271845
-        rank: 9
+        rank: 18
         percent: 0
       '2007':
         revenue: 259428
-        rank: 8
+        rank: 18
         percent: 0
       '2008':
         revenue: 415406
-        rank: 9
+        rank: 18
         percent: 0
       '2009':
         revenue: 207441
-        rank: 8
+        rank: 19
         percent: 0
       '2010':
         revenue: 347507
-        rank: 9
+        rank: 16
         percent: 0
       '2011':
         revenue: 293429
-        rank: 8
+        rank: 18
         percent: 0
       '2012':
         revenue: 312501
-        rank: 9
+        rank: 18
         percent: 0
       '2013':
         revenue: 302425
-        rank: 8
+        rank: 18
         percent: 0
     'Oil & Gas':
       '2004':
         revenue: 44
-        rank: 11
+        rank: 30
         percent: 0
       '2005':
         revenue: 175
-        rank: 13
+        rank: 30
         percent: 0
       '2006':
         revenue: 175
-        rank: 11
+        rank: 30
         percent: 0
       '2010':
         revenue: 175
-        rank: 13
+        rank: 33
         percent: 0
 IN:
   products:
     All:
       '2009':
         revenue: 156857
-        rank: 12
+        rank: 29
         percent: 0
       '2010':
         revenue: 79494
-        rank: 11
+        rank: 31
         percent: 0
       '2011':
         revenue: 26648
-        rank: 11
+        rank: 33
         percent: 0
       '2012':
         revenue: 48382
-        rank: 10
+        rank: 31
         percent: 0
       '2013':
         revenue: 43691
-        rank: 11
+        rank: 32
         percent: 0
     Oil:
       '2009':
         revenue: 40119
-        rank: 8
+        rank: 22
         percent: 0
       '2010':
         revenue: 34815
-        rank: 9
+        rank: 23
         percent: 0
       '2011':
         revenue: 20846
-        rank: 8
+        rank: 23
         percent: 0
       '2012':
         revenue: 30715
-        rank: 9
+        rank: 23
         percent: 0
       '2013':
         revenue: 17820
-        rank: 8
+        rank: 23
         percent: 0
     'Oil & Gas':
       '2009':
         revenue: 116738
-        rank: 11
+        rank: 20
         percent: 0
       '2010':
         revenue: 44679
-        rank: 13
+        rank: 23
         percent: 0
       '2011':
         revenue: 5802
-        rank: 14
+        rank: 30
         percent: 0
       '2012':
         revenue: 17667
-        rank: 9
+        rank: 25
         percent: 0
       '2013':
         revenue: 25871
-        rank: 8
+        rank: 27
         percent: 0
 KS:
   products:
     All:
       '2004':
         revenue: 7741660
-        rank: 10
+        rank: 12
         percent: 0.1
       '2005':
         revenue: 8230085
-        rank: 9
+        rank: 14
         percent: 0.1
       '2006':
         revenue: 9436353
-        rank: 10
+        rank: 15
         percent: 0.1
       '2007':
         revenue: 8263664
-        rank: 11
+        rank: 15
         percent: 0.1
       '2008':
         revenue: 12066208
-        rank: 8
+        rank: 15
         percent: 0.1
       '2009':
         revenue: 4604991
-        rank: 11
+        rank: 16
         percent: 0.1
       '2010':
         revenue: 6666861
-        rank: 10
+        rank: 17
         percent: 0.1
       '2011':
         revenue: 7656510
-        rank: 10
+        rank: 17
         percent: 0.1
       '2012':
         revenue: 5633031
-        rank: 10
+        rank: 17
         percent: 0
       '2013':
         revenue: 5751514
-        rank: 11
+        rank: 16
         percent: 0
     Condensate:
       '2004':
         revenue: 529
-        rank: 6
+        rank: 13
         percent: 0
       '2005':
         revenue: 2461
-        rank: 7
+        rank: 12
         percent: 0
       '2006':
         revenue: 696
-        rank: 7
+        rank: 12
         percent: 0
       '2007':
         revenue: 3624
-        rank: 7
+        rank: 13
         percent: 0
       '2008':
         revenue: 2720
-        rank: 7
+        rank: 13
         percent: 0
       '2009':
         revenue: 2376
-        rank: 8
+        rank: 12
         percent: 0
       '2010':
         revenue: 2439
-        rank: 6
+        rank: 12
         percent: 0
       '2011':
         revenue: 2300
-        rank: 6
+        rank: 13
         percent: 0
       '2012':
         revenue: 1714
-        rank: 7
+        rank: 12
         percent: 0
       '2013':
         revenue: 1781
-        rank: 7
+        rank: 13
         percent: 0
     Drip or Scrubber Condensate:
       '2006':
         revenue: -24
-        rank: 5
+        rank: 11
         percent: 0
       '2012':
         revenue: 970
-        rank: 8
+        rank: 10
         percent: 0
     Flash Gas:
       '2013':
@@ -3855,7 +3855,7 @@ KS:
     Fuel Gas:
       '2004':
         revenue: 4850
-        rank: 1
+        rank: 2
         percent: 0.1
       '2005':
         revenue: 367
@@ -3863,15 +3863,15 @@ KS:
         percent: 0
       '2006':
         revenue: 265
-        rank: 3
+        rank: 5
         percent: 0
       '2007':
         revenue: 210
-        rank: 2
+        rank: 4
         percent: 0
       '2008':
         revenue: 2207
-        rank: 5
+        rank: 4
         percent: 0
       '2009':
         revenue: 2459
@@ -3883,28 +3883,28 @@ KS:
         percent: 0
       '2011':
         revenue: 737
-        rank: 4
+        rank: 5
         percent: 0
       '2012':
         revenue: 12
-        rank: 5
+        rank: 7
         percent: 0
       '2013':
         revenue: 37756
-        rank: 5
-        percent: 0.6000000000000001
+        rank: 6
+        percent: 0.6
     Gas Plant Products:
       '2004':
         revenue: 278926
-        rank: 5
+        rank: 8
         percent: 0.1
       '2005':
         revenue: 374697
-        rank: 6
+        rank: 7
         percent: 0.1
       '2006':
         revenue: 456079
-        rank: 6
+        rank: 7
         percent: 0.2
       '2007':
         revenue: 495736
@@ -3912,15 +3912,15 @@ KS:
         percent: 0.1
       '2008':
         revenue: 772345
-        rank: 5
+        rank: 7
         percent: 0.1
       '2009':
         revenue: 465442
-        rank: 7
+        rank: 8
         percent: 0.2
       '2010':
         revenue: 680608
-        rank: 6
+        rank: 7
         percent: 0.2
       '2011':
         revenue: 1084902
@@ -3928,20 +3928,20 @@ KS:
         percent: 0.2
       '2012':
         revenue: 816169
-        rank: 8
+        rank: 9
         percent: 0.1
       '2013':
         revenue: 704648
-        rank: 7
+        rank: 8
         percent: 0.2
     Helium:
       '2004':
         revenue: 57
-        rank: 2
-        percent: 0.30000000000000004
+        rank: 1
+        percent: 0.3
       '2006':
         revenue: -57
-        rank: 2
+        rank: 1
         percent: 19.7
       '2009':
         revenue: 20
@@ -3958,11 +3958,11 @@ KS:
       '2013':
         revenue: 0
         rank: 3
-        percent: 0.30000000000000004
+        percent: 0.3
     Nitrogen:
       '2011':
         revenue: 144
-        rank: 3
+        rank: 2
         percent: 16.7
       '2012':
         revenue: 100
@@ -3975,11 +3975,11 @@ KS:
     Oil:
       '2004':
         revenue: 467758
-        rank: 7
+        rank: 15
         percent: 0
       '2005':
         revenue: 1168348
-        rank: 9
+        rank: 13
         percent: 0
       '2006':
         revenue: 3939589
@@ -3987,7 +3987,7 @@ KS:
         percent: 0.1
       '2007':
         revenue: 2511604
-        rank: 7
+        rank: 11
         percent: 0.1
       '2008':
         revenue: 4464527
@@ -3995,64 +3995,64 @@ KS:
         percent: 0.1
       '2009':
         revenue: 1692439
-        rank: 7
+        rank: 10
         percent: 0.1
       '2010':
         revenue: 2213411
-        rank: 9
+        rank: 11
         percent: 0
       '2011':
         revenue: 3792084
-        rank: 7
+        rank: 9
         percent: 0.1
       '2012':
         revenue: 3004348
-        rank: 8
+        rank: 12
         percent: 0.1
       '2013':
         revenue: 2626843
-        rank: 8
+        rank: 13
         percent: 0
     'Oil & Gas':
       '2004':
         revenue: 68886
-        rank: 11
+        rank: 20
         percent: 0
       '2005':
         revenue: -28055
-        rank: 13
+        rank: 31
         percent: 0
       '2006':
         revenue: 104459
-        rank: 11
+        rank: 20
         percent: 0
       '2007':
         revenue: 134867
-        rank: 13
+        rank: 20
         percent: 0
       '2008':
         revenue: 391542
-        rank: 7
+        rank: 20
         percent: 0
       '2009':
         revenue: -351181
-        rank: 11
+        rank: 30
         percent: 0
       '2010':
         revenue: 305814
-        rank: 13
+        rank: 17
         percent: 0
       '2011':
         revenue: 201260
-        rank: 14
+        rank: 21
         percent: 0
       '2012':
         revenue: 17971
-        rank: 9
+        rank: 24
         percent: 0
       '2013':
         revenue: 32531
-        rank: 8
+        rank: 25
         percent: 0
     Other Liquid Hydrocarbons:
       '2011':
@@ -4066,27 +4066,27 @@ KS:
         percent: 0
       '2005':
         revenue: 1142026
-        rank: 6
+        rank: 8
         percent: 0.1
       '2006':
         revenue: 1081716
-        rank: 7
+        rank: 8
         percent: 0
       '2007':
         revenue: 803786
-        rank: 6
+        rank: 9
         percent: 0
       '2008':
         revenue: 1333244
-        rank: 7
+        rank: 9
         percent: 0
       '2009':
         revenue: 795624
-        rank: 5
+        rank: 8
         percent: 0.1
       '2010':
         revenue: 1041190
-        rank: 6
+        rank: 9
         percent: 0.1
       '2011':
         revenue: 1113379
@@ -4094,104 +4094,104 @@ KS:
         percent: 0.1
       '2012':
         revenue: 688813
-        rank: 7
+        rank: 10
         percent: 0.1
       '2013':
         revenue: 1568520
-        rank: 6
+        rank: 8
         percent: 0.2
     Unprocessed (Wet) Gas:
       '2004':
         revenue: 6010439
-        rank: 9
+        rank: 10
         percent: 0.2
       '2005':
         revenue: 5570242
-        rank: 10
+        rank: 11
         percent: 0.2
       '2006':
         revenue: 3853631
-        rank: 10
+        rank: 12
         percent: 0.2
       '2007':
         revenue: 4313837
-        rank: 11
-        percent: 0.30000000000000004
+        rank: 12
+        percent: 0.3
       '2008':
         revenue: 5099622
-        rank: 10
-        percent: 0.30000000000000004
+        rank: 11
+        percent: 0.3
       '2009':
         revenue: 1997810
-        rank: 11
+        rank: 12
         percent: 0.5
       '2010':
         revenue: 2422359
-        rank: 12
+        rank: 11
         percent: 0.2
       '2011':
         revenue: 1461668
-        rank: 10
+        rank: 13
         percent: 0.2
       '2012':
         revenue: 1102930
-        rank: 12
+        rank: 11
         percent: 1.1
       '2013':
         revenue: 779289
-        rank: 11
+        rank: 10
         percent: 0.2
 KY:
   products:
     All:
       '2004':
         revenue: 146583
-        rank: 11
+        rank: 26
         percent: 0
       '2005':
         revenue: 247736
-        rank: 10
+        rank: 26
         percent: 0
       '2006':
         revenue: 2249796
-        rank: 11
+        rank: 19
         percent: 0
       '2007':
         revenue: 2968945
-        rank: 12
+        rank: 18
         percent: 0
       '2008':
         revenue: 1374366
-        rank: 9
+        rank: 22
         percent: 0
       '2009':
         revenue: 1562655
-        rank: 12
+        rank: 21
         percent: 0
       '2010':
         revenue: 489024
-        rank: 11
+        rank: 26
         percent: 0
       '2011':
         revenue: 1968053
-        rank: 11
+        rank: 20
         percent: 0
       '2012':
         revenue: 1612436
-        rank: 10
+        rank: 21
         percent: 0
       '2013':
         revenue: 1766186
-        rank: 11
+        rank: 20
         percent: 0
     Coal:
       '2004':
         revenue: 9996
-        rank: 7
+        rank: 9
         percent: 0
       '2005':
         revenue: 16489
-        rank: 7
+        rank: 9
         percent: 0
       '2006':
         revenue: 1982492
@@ -4203,23 +4203,23 @@ KY:
         percent: 0.2
       '2008':
         revenue: 1258529
-        rank: 6
+        rank: 7
         percent: 0.1
       '2009':
         revenue: 1350572
-        rank: 6
+        rank: 7
         percent: 0.1
       '2010':
         revenue: 148781
-        rank: 8
+        rank: 9
         percent: 0
       '2011':
         revenue: 1703681
-        rank: 6
+        rank: 7
         percent: 0.2
       '2012':
         revenue: 1351028
-        rank: 6
+        rank: 8
         percent: 0.1
       '2013':
         revenue: 1507762
@@ -4237,110 +4237,110 @@ KY:
     Fuel Gas:
       '2013':
         revenue: -64
-        rank: 8
+        rank: 12
         percent: 0
     Gas Plant Products:
       '2009':
         revenue: 3078
-        rank: 9
+        rank: 14
         percent: 0
       '2010':
         revenue: 6975
-        rank: 8
+        rank: 13
         percent: 0
       '2011':
         revenue: 6175
-        rank: 9
+        rank: 13
         percent: 0
       '2012':
         revenue: 538
-        rank: 9
+        rank: 13
         percent: 0
       '2013':
         revenue: 0
-        rank: 9
+        rank: 15
         percent: 0
     Oil:
       '2004':
         revenue: 6302
-        rank: 7
+        rank: 21
         percent: 0
       '2005':
         revenue: 5921
-        rank: 9
+        rank: 21
         percent: 0
       '2006':
         revenue: 6002
-        rank: 9
+        rank: 21
         percent: 0
       '2007':
         revenue: 153985
-        rank: 8
+        rank: 21
         percent: 0
       '2008':
         revenue: 158808
-        rank: 9
+        rank: 21
         percent: 0
       '2009':
         revenue: 86949
-        rank: 8
+        rank: 21
         percent: 0
       '2010':
         revenue: 219859
-        rank: 9
+        rank: 20
         percent: 0
       '2011':
         revenue: 138009
-        rank: 8
+        rank: 21
         percent: 0
       '2012':
         revenue: 171819
-        rank: 9
+        rank: 21
         percent: 0
       '2013':
         revenue: 160773
-        rank: 8
+        rank: 21
         percent: 0
     'Oil & Gas':
       '2004':
         revenue: 48856
-        rank: 11
+        rank: 23
         percent: 0
       '2005':
         revenue: 16385
-        rank: 13
+        rank: 25
         percent: 0
       '2006':
         revenue: 79866
-        rank: 11
+        rank: 21
         percent: 0
       '2007':
         revenue: 17891
-        rank: 13
+        rank: 26
         percent: 0
       '2008':
         revenue: 27099
-        rank: 7
+        rank: 26
         percent: 0
       '2009':
         revenue: 19268
-        rank: 11
+        rank: 24
         percent: 0
       '2010':
         revenue: 16842
-        rank: 13
+        rank: 28
         percent: 0
       '2011':
         revenue: 23385
-        rank: 14
+        rank: 24
         percent: 0
       '2012':
         revenue: 13768
-        rank: 9
+        rank: 28
         percent: 0
       '2013':
         revenue: 51226
-        rank: 8
+        rank: 23
         percent: 0
     Oil Lost:
       '2005':
@@ -4350,56 +4350,56 @@ KY:
     Processed (Residue) Gas:
       '2009':
         revenue: 6085
-        rank: 6
+        rank: 16
         percent: 0
       '2010':
         revenue: 30047
-        rank: 7
+        rank: 15
         percent: 0
       '2011':
         revenue: 22559
-        rank: 8
+        rank: 15
         percent: 0
       '2012':
         revenue: -46210
-        rank: 8
+        rank: 19
         percent: 0
       '2013':
         revenue: 7771
-        rank: 8
+        rank: 14
         percent: 0
     Unprocessed (Wet) Gas:
       '2004':
         revenue: 81428
-        rank: 11
+        rank: 20
         percent: 0
       '2005':
         revenue: 208655
-        rank: 12
+        rank: 20
         percent: 0
       '2006':
         revenue: 181436
-        rank: 11
+        rank: 20
         percent: 0
       '2007':
         revenue: 166058
-        rank: 14
+        rank: 20
         percent: 0
       '2008':
         revenue: 213082
-        rank: 13
+        rank: 19
         percent: 0
       '2009':
         revenue: 96703
-        rank: 14
+        rank: 20
         percent: 0
       '2010':
         revenue: 66520
-        rank: 13
+        rank: 20
         percent: 0
       '2011':
         revenue: 74245
-        rank: 12
+        rank: 20
         percent: 0
       '2012':
         revenue: 121494
@@ -4407,55 +4407,55 @@ KY:
         percent: 0.1
       '2013':
         revenue: 38717
-        rank: 13
+        rank: 20
         percent: 0
 LA:
   products:
     All:
       '2004':
         revenue: 12800274
-        rank: 9
+        rank: 10
         percent: 0.2
       '2005':
         revenue: 42976859
-        rank: 7
+        rank: 8
         percent: 0.4
       '2006':
         revenue: 38600548
         rank: 8
-        percent: 0.30000000000000004
+        percent: 0.3
       '2007':
         revenue: 39791057
-        rank: 8
+        rank: 9
         percent: 0.4
       '2008':
         revenue: 51903932
-        rank: 7
+        rank: 8
         percent: 0.2
       '2009':
         revenue: 15489392
-        rank: 10
+        rank: 12
         percent: 0.2
       '2010':
         revenue: 56286094
-        rank: 8
+        rank: 9
         percent: 0.5
       '2011':
         revenue: 27820282
-        rank: 8
-        percent: 0.30000000000000004
+        rank: 9
+        percent: 0.3
       '2012':
         revenue: 18433793
-        rank: 9
+        rank: 11
         percent: 0.1
       '2013':
         revenue: 13863775
-        rank: 10
+        rank: 11
         percent: 0.1
     Condensate:
       '2004':
         revenue: 223046
-        rank: 5
+        rank: 6
         percent: 0.1
       '2005':
         revenue: 941208
@@ -4476,14 +4476,14 @@ LA:
       '2009':
         revenue: 576813
         rank: 6
-        percent: 0.30000000000000004
+        percent: 0.3
       '2010':
         revenue: 684195
-        rank: 5
+        rank: 6
         percent: 0.1
       '2011':
         revenue: 880268
-        rank: 5
+        rank: 6
         percent: 0.1
       '2012':
         revenue: 742185
@@ -4496,7 +4496,7 @@ LA:
     Drip or Scrubber Condensate:
       '2004':
         revenue: 937
-        rank: 3
+        rank: 7
         percent: 0
       '2005':
         revenue: 13949
@@ -4504,27 +4504,27 @@ LA:
         percent: 0.1
       '2006':
         revenue: 786
-        rank: 5
+        rank: 8
         percent: 0
       '2007':
         revenue: 694
-        rank: 6
+        rank: 8
         percent: 0
       '2008':
         revenue: 1173
-        rank: 5
+        rank: 6
         percent: 0
       '2009':
         revenue: 298
-        rank: 6
+        rank: 7
         percent: 0
       '2010':
         revenue: 343
-        rank: 4
+        rank: 7
         percent: 0
       '2011':
         revenue: 381
-        rank: 6
+        rank: 7
         percent: 0
       '2012':
         revenue: 79437
@@ -4537,29 +4537,29 @@ LA:
     Flash Gas:
       '2004':
         revenue: -28188
-        rank: 1
+        rank: 3
         percent: 1.2
       '2010':
         revenue: 753
-        rank: 1
+        rank: 2
         percent: 0
     Fuel Gas:
       '2004':
         revenue: -1564
-        rank: 2
+        rank: 6
         percent: 0
       '2012':
         revenue: 0
-        rank: 5
+        rank: 8
         percent: 0
       '2013':
         revenue: 8657
-        rank: 7
+        rank: 8
         percent: 0.1
     Gas Plant Products:
       '2004':
         revenue: 326755
-        rank: 5
+        rank: 6
         percent: 0.1
       '2005':
         revenue: 653959
@@ -4572,10 +4572,10 @@ LA:
       '2007':
         revenue: 1362133
         rank: 5
-        percent: 0.30000000000000004
+        percent: 0.3
       '2008':
         revenue: 1337106
-        rank: 4
+        rank: 5
         percent: 0.2
       '2009':
         revenue: 1857115
@@ -4591,7 +4591,7 @@ LA:
         percent: 0.4
       '2012':
         revenue: 1230426
-        rank: 7
+        rank: 8
         percent: 0.2
       '2013':
         revenue: 912125
@@ -4600,15 +4600,15 @@ LA:
     Inlet Scrubber:
       '2004':
         revenue: -262
-        rank: 1
+        rank: 2
         percent: 0.1
       '2011':
         revenue: 1
-        rank: 3
+        rank: 4
         percent: 0
       '2012':
         revenue: 1
-        rank: 3
+        rank: 4
         percent: 0
       '2013':
         revenue: 0
@@ -4617,68 +4617,68 @@ LA:
     Oil:
       '2004':
         revenue: 1593364
-        rank: 6
+        rank: 10
         percent: 0.1
       '2005':
         revenue: 1901458
-        rank: 8
+        rank: 10
         percent: 0.1
       '2006':
         revenue: 2602372
-        rank: 8
+        rank: 10
         percent: 0.1
       '2007':
         revenue: 3264259
-        rank: 7
+        rank: 8
         percent: 0.1
       '2008':
         revenue: 4304052
-        rank: 8
+        rank: 10
         percent: 0.1
       '2009':
         revenue: 1841354
-        rank: 7
+        rank: 9
         percent: 0.1
       '2010':
         revenue: 2287463
-        rank: 9
+        rank: 10
         percent: 0
       '2011':
         revenue: 3561441
-        rank: 7
+        rank: 10
         percent: 0.1
       '2012':
         revenue: 3673399
-        rank: 8
+        rank: 9
         percent: 0.1
       '2013':
         revenue: 3371522
-        rank: 7
+        rank: 12
         percent: 0.1
     'Oil & Gas':
       '2004':
         revenue: -41693
-        rank: 11
+        rank: 31
         percent: 0
       '2005':
         revenue: 1781427
-        rank: 11
+        rank: 12
         percent: 0.2
       '2006':
         revenue: -79714
-        rank: 11
+        rank: 31
         percent: 0
       '2007':
         revenue: 1541182
-        rank: 12
+        rank: 13
         percent: 0.1
       '2008':
         revenue: 4816230
-        rank: 7
+        rank: 12
         percent: 0
       '2009':
         revenue: -1438066
-        rank: 10
+        rank: 31
         percent: 0.1
       '2010':
         revenue: 37220483
@@ -4690,11 +4690,11 @@ LA:
         percent: 1.6
       '2012':
         revenue: 4857231
-        rank: 7
+        rank: 11
         percent: 0.2
       '2013':
         revenue: 343267
-        rank: 8
+        rank: 17
         percent: 0
     Other Liquid Hydrocarbons:
       '2013':
@@ -4704,7 +4704,7 @@ LA:
     Processed (Residue) Gas:
       '2004':
         revenue: -1308088
-        rank: 5
+        rank: 17
         percent: 0.1
       '2005':
         revenue: 4184012
@@ -4717,7 +4717,7 @@ LA:
       '2007':
         revenue: 16433042
         rank: 4
-        percent: 0.7000000000000001
+        percent: 0.7
       '2008':
         revenue: 52806175
         rank: 5
@@ -4757,27 +4757,27 @@ LA:
         percent: 1.1
       '2007':
         revenue: 16592486
-        rank: 6
+        rank: 7
         percent: 1.2
       '2008':
         revenue: -12368803
-        rank: 8
-        percent: 0.7000000000000001
+        rank: 23
+        percent: 0.7
       '2009':
         revenue: 10584466
         rank: 6
         percent: 2.4
       '2010':
         revenue: -13834019
-        rank: 5
+        rank: 24
         percent: 1.3
       '2011':
         revenue: 5315758
-        rank: 8
-        percent: 0.6000000000000001
+        rank: 10
+        percent: 0.6
       '2012':
         revenue: -18340573
-        rank: 6
+        rank: 22
         percent: 18.5
       '2013':
         revenue: 450029
@@ -4788,210 +4788,210 @@ MD:
     All:
       '2004':
         revenue: 10541
-        rank: 11
+        rank: 33
         percent: 0
       '2005':
         revenue: 10551
-        rank: 10
+        rank: 34
         percent: 0
       '2006':
         revenue: 7656
-        rank: 11
+        rank: 34
         percent: 0
       '2007':
         revenue: 12037
-        rank: 12
+        rank: 32
         percent: 0
       '2008':
         revenue: 10882
-        rank: 9
+        rank: 34
         percent: 0
       '2009':
         revenue: 9418
-        rank: 12
+        rank: 33
         percent: 0
       '2010':
         revenue: 8360
-        rank: 11
+        rank: 34
         percent: 0
       '2011':
         revenue: 10045
-        rank: 11
+        rank: 35
         percent: 0
       '2012':
         revenue: 6193
-        rank: 10
+        rank: 34
         percent: 0
       '2013':
         revenue: 7532
-        rank: 11
+        rank: 34
         percent: 0
     'Oil & Gas':
       '2004':
         revenue: 10541
-        rank: 11
+        rank: 27
         percent: 0
       '2005':
         revenue: 10551
-        rank: 13
+        rank: 27
         percent: 0
       '2006':
         revenue: 7656
-        rank: 11
+        rank: 28
         percent: 0
       '2007':
         revenue: 12037
-        rank: 13
+        rank: 27
         percent: 0
       '2008':
         revenue: 10882
-        rank: 7
+        rank: 27
         percent: 0
       '2009':
         revenue: 9418
-        rank: 11
+        rank: 26
         percent: 0
       '2010':
         revenue: 8360
-        rank: 13
+        rank: 30
         percent: 0
       '2011':
         revenue: 10045
-        rank: 14
+        rank: 28
         percent: 0
       '2012':
         revenue: 6193
-        rank: 9
+        rank: 30
         percent: 0
       '2013':
         revenue: 7532
-        rank: 8
+        rank: 29
         percent: 0
 MI:
   products:
     All:
       '2004':
         revenue: 1704872
-        rank: 11
+        rank: 18
         percent: 0
       '2005':
         revenue: 2477053
-        rank: 10
+        rank: 19
         percent: 0
       '2006':
         revenue: 2486058
-        rank: 11
+        rank: 18
         percent: 0
       '2007':
         revenue: 2863023
-        rank: 12
+        rank: 19
         percent: 0
       '2008':
         revenue: 4005528
-        rank: 9
+        rank: 16
         percent: 0
       '2009':
         revenue: 2430584
-        rank: 12
+        rank: 18
         percent: 0
       '2010':
         revenue: 1696222
-        rank: 11
+        rank: 19
         percent: 0
       '2011':
         revenue: 1417841
-        rank: 11
+        rank: 21
         percent: 0
       '2012':
         revenue: 1385375
-        rank: 10
+        rank: 22
         percent: 0
       '2013':
         revenue: 1499036
-        rank: 11
+        rank: 21
         percent: 0
     Condensate:
       '2004':
         revenue: 589
-        rank: 6
+        rank: 12
         percent: 0
       '2005':
         revenue: 673
-        rank: 7
+        rank: 13
         percent: 0
       '2007':
         revenue: 7777
-        rank: 7
+        rank: 12
         percent: 0
       '2008':
         revenue: 105879
-        rank: 7
+        rank: 10
         percent: 0
       '2009':
         revenue: 57005
-        rank: 8
+        rank: 9
         percent: 0
       '2010':
         revenue: 72391
-        rank: 6
+        rank: 10
         percent: 0
       '2011':
         revenue: 68373
-        rank: 6
+        rank: 10
         percent: 0
       '2012':
         revenue: 69512
-        rank: 7
+        rank: 10
         percent: 0
       '2013':
         revenue: 65290
-        rank: 7
+        rank: 10
         percent: 0
     Gas Plant Products:
       '2004':
         revenue: 24138
-        rank: 6
+        rank: 13
         percent: 0
       '2005':
         revenue: 64065
-        rank: 7
+        rank: 13
         percent: 0
       '2006':
         revenue: 102904
-        rank: 8
+        rank: 13
         percent: 0
       '2007':
         revenue: 134440
-        rank: 7
+        rank: 12
         percent: 0
       '2008':
         revenue: 207501
-        rank: 6
+        rank: 12
         percent: 0
       '2009':
         revenue: 90274
-        rank: 9
+        rank: 12
         percent: 0
       '2010':
         revenue: 181567
-        rank: 8
+        rank: 12
         percent: 0
       '2011':
         revenue: 76775
-        rank: 9
+        rank: 11
         percent: 0
       '2012':
         revenue: -109142
-        rank: 9
+        rank: 16
         percent: 0
       '2013':
         revenue: 57279
-        rank: 9
+        rank: 11
         percent: 0
     Hardrock:
       '2004':
         revenue: -294
-        rank: 6
+        rank: 11
         percent: 0.1
       '2005':
         revenue: 966
@@ -5003,89 +5003,89 @@ MI:
         percent: 2.4
       '2012':
         revenue: 923
-        rank: 6
+        rank: 5
         percent: 1.6
     Oil:
       '2004':
         revenue: 95294
-        rank: 7
+        rank: 20
         percent: 0
       '2005':
         revenue: 136591
-        rank: 9
+        rank: 19
         percent: 0
       '2006':
         revenue: 214632
-        rank: 9
+        rank: 19
         percent: 0
       '2007':
         revenue: 199683
-        rank: 8
+        rank: 20
         percent: 0
       '2008':
         revenue: 292533
-        rank: 9
+        rank: 20
         percent: 0
       '2009':
         revenue: 112652
-        rank: 8
+        rank: 20
         percent: 0
       '2010':
         revenue: 205236
-        rank: 9
+        rank: 21
         percent: 0
       '2011':
         revenue: 235399
-        rank: 8
+        rank: 20
         percent: 0
       '2012':
         revenue: 339024
-        rank: 9
+        rank: 16
         percent: 0
       '2013':
         revenue: 303805
-        rank: 8
+        rank: 17
         percent: 0
     'Oil & Gas':
       '2004':
         revenue: 51306
-        rank: 11
+        rank: 22
         percent: 0
       '2005':
         revenue: 44244
-        rank: 13
+        rank: 21
         percent: 0
       '2006':
         revenue: 44488
-        rank: 11
+        rank: 23
         percent: 0
       '2007':
         revenue: 104262
-        rank: 13
+        rank: 22
         percent: 0
       '2008':
         revenue: 492210
-        rank: 7
+        rank: 18
         percent: 0
       '2009':
         revenue: 813220
-        rank: 10
+        rank: 13
         percent: 0.1
       '2010':
         revenue: 78811
-        rank: 13
+        rank: 22
         percent: 0
       '2011':
         revenue: 209069
-        rank: 14
+        rank: 20
         percent: 0
       '2012':
         revenue: 94539
-        rank: 9
+        rank: 19
         percent: 0
       '2013':
         revenue: 419937
-        rank: 8
+        rank: 15
         percent: 0
     Other Liquid Hydrocarbons:
       '2011':
@@ -5103,7 +5103,7 @@ MI:
     Processed (Residue) Gas:
       '2004':
         revenue: 897584
-        rank: 6
+        rank: 7
         percent: 0
       '2005':
         revenue: 1472206
@@ -5111,7 +5111,7 @@ MI:
         percent: 0.1
       '2006':
         revenue: 1375958
-        rank: 6
+        rank: 7
         percent: 0.1
       '2007':
         revenue: 1212825
@@ -5119,11 +5119,11 @@ MI:
         percent: 0
       '2008':
         revenue: 1697981
-        rank: 6
+        rank: 8
         percent: 0.1
       '2009':
         revenue: 829472
-        rank: 5
+        rank: 7
         percent: 0.1
       '2010':
         revenue: 1654391
@@ -5131,99 +5131,99 @@ MI:
         percent: 0.1
       '2011':
         revenue: 648437
-        rank: 7
+        rank: 10
         percent: 0.1
       '2012':
         revenue: 716366
-        rank: 7
+        rank: 9
         percent: 0.1
       '2013':
         revenue: 484158
-        rank: 7
+        rank: 10
         percent: 0.1
     Unprocessed (Wet) Gas:
       '2004':
         revenue: 636252
-        rank: 11
+        rank: 15
         percent: 0
       '2005':
         revenue: 758308
-        rank: 12
+        rank: 15
         percent: 0
       '2006':
         revenue: 748077
-        rank: 11
+        rank: 14
         percent: 0
       '2007':
         revenue: 1204036
-        rank: 13
+        rank: 14
         percent: 0.1
       '2008':
         revenue: 1209423
-        rank: 12
+        rank: 13
         percent: 0.1
       '2009':
         revenue: 527962
-        rank: 13
+        rank: 14
         percent: 0.1
       '2010':
         revenue: -496174
-        rank: 13
+        rank: 23
         percent: 0
       '2011':
         revenue: 176134
-        rank: 12
+        rank: 17
         percent: 0
       '2012':
         revenue: 270236
-        rank: 13
-        percent: 0.30000000000000004
+        rank: 12
+        percent: 0.3
       '2013':
         revenue: 165419
-        rank: 13
+        rank: 14
         percent: 0
 MN:
   products:
     All:
       '2004':
         revenue: 37930
-        rank: 11
+        rank: 31
         percent: 0
       '2005':
         revenue: 37701
-        rank: 10
+        rank: 32
         percent: 0
       '2006':
         revenue: 55791
-        rank: 11
+        rank: 31
         percent: 0
       '2007':
         revenue: 47503
-        rank: 12
+        rank: 31
         percent: 0
       '2008':
         revenue: 50410
-        rank: 9
+        rank: 31
         percent: 0
       '2009':
         revenue: 49183
-        rank: 12
+        rank: 32
         percent: 0
       '2010':
         revenue: 49777
-        rank: 11
+        rank: 32
         percent: 0
       '2011':
         revenue: 44825
-        rank: 11
+        rank: 31
         percent: 0
       '2012':
         revenue: 58591
-        rank: 10
+        rank: 30
         percent: 0
       '2013':
         revenue: 65620
-        rank: 11
+        rank: 30
         percent: 0
     Copper:
       '2004':
@@ -5312,43 +5312,43 @@ MO:
     All:
       '2004':
         revenue: 989139
-        rank: 11
+        rank: 20
         percent: 0
       '2005':
         revenue: 5126297
-        rank: 9
+        rank: 15
         percent: 0.1
       '2006':
         revenue: 10379050
-        rank: 10
+        rank: 14
         percent: 0.1
       '2007':
         revenue: 17781944
-        rank: 10
+        rank: 14
         percent: 0.2
       '2008':
         revenue: 14143710
-        rank: 8
+        rank: 14
         percent: 0.1
       '2009':
         revenue: 9319938
-        rank: 11
+        rank: 13
         percent: 0.1
       '2010':
         revenue: 13277036
-        rank: 10
+        rank: 12
         percent: 0.1
       '2011':
         revenue: 14848332
-        rank: 10
+        rank: 13
         percent: 0.1
       '2012':
         revenue: 11536512
-        rank: 9
+        rank: 13
         percent: 0.1
       '2013':
         revenue: 9363146
-        rank: 10
+        rank: 14
         percent: 0.1
     Copper:
       '2006':
@@ -5415,7 +5415,7 @@ MO:
         percent: 44.4
       '2008':
         revenue: -17297
-        rank: 2
+        rank: 11
         percent: 98.2
       '2009':
         revenue: 13003
@@ -5481,7 +5481,7 @@ MO:
     'Oil & Gas':
       '2010':
         revenue: 7037
-        rank: 13
+        rank: 31
         percent: 0
     Zinc Concentrate:
       '2004':
@@ -5529,241 +5529,241 @@ MS:
     All:
       '2004':
         revenue: 2745759
-        rank: 11
+        rank: 17
         percent: 0
       '2005':
         revenue: 3269836
-        rank: 10
+        rank: 16
         percent: 0
       '2006':
         revenue: 3907080
-        rank: 11
+        rank: 17
         percent: 0
       '2007':
         revenue: 6167053
-        rank: 11
+        rank: 17
         percent: 0.1
       '2008':
         revenue: 3952799
-        rank: 9
+        rank: 17
         percent: 0
       '2009':
         revenue: 2332045
-        rank: 12
+        rank: 19
         percent: 0
       '2010':
         revenue: 2760707
-        rank: 11
+        rank: 18
         percent: 0
       '2011':
         revenue: 6307993
-        rank: 10
+        rank: 18
         percent: 0.1
       '2012':
         revenue: 9507600
-        rank: 9
+        rank: 15
         percent: 0.1
       '2013':
         revenue: 6095779
-        rank: 11
+        rank: 15
         percent: 0
     Condensate:
       '2004':
         revenue: 596958
-        rank: 4
+        rank: 5
         percent: 0.2
       '2005':
         revenue: 118123
-        rank: 7
+        rank: 11
         percent: 0
       '2006':
         revenue: 44304
-        rank: 7
+        rank: 11
         percent: 0
       '2007':
         revenue: 22636
-        rank: 7
+        rank: 11
         percent: 0
       '2008':
         revenue: 15139
-        rank: 7
+        rank: 12
         percent: 0
       '2009':
         revenue: 118561
-        rank: 7
+        rank: 8
         percent: 0.1
       '2010':
         revenue: 161319
-        rank: 6
+        rank: 8
         percent: 0
       '2011':
         revenue: 134459
-        rank: 6
+        rank: 9
         percent: 0
       '2012':
         revenue: 146839
-        rank: 7
+        rank: 9
         percent: 0
       '2013':
         revenue: 85041
-        rank: 7
+        rank: 9
         percent: 0
     Gas Plant Products:
       '2004':
         revenue: 331
-        rank: 6
+        rank: 14
         percent: 0
     Oil:
       '2004':
         revenue: 1021415
-        rank: 6
+        rank: 11
         percent: 0.1
       '2005':
         revenue: 1867635
-        rank: 8
+        rank: 11
         percent: 0.1
       '2006':
         revenue: 1964861
-        rank: 9
+        rank: 12
         percent: 0
       '2007':
         revenue: 2195712
-        rank: 7
+        rank: 12
         percent: 0.1
       '2008':
         revenue: 2749117
-        rank: 8
+        rank: 12
         percent: 0.1
       '2009':
         revenue: 1393938
-        rank: 7
+        rank: 12
         percent: 0.1
       '2010':
         revenue: 1852643
-        rank: 9
+        rank: 12
         percent: 0
       '2011':
         revenue: 3533747
-        rank: 7
+        rank: 11
         percent: 0.1
       '2012':
         revenue: 3652289
-        rank: 8
+        rank: 10
         percent: 0.1
       '2013':
         revenue: 4674201
-        rank: 7
+        rank: 9
         percent: 0.1
     'Oil & Gas':
       '2004':
         revenue: 790276
-        rank: 10
+        rank: 12
         percent: 0.1
       '2005':
         revenue: 735196
-        rank: 12
+        rank: 14
         percent: 0.1
       '2006':
         revenue: 1472780
-        rank: 10
+        rank: 14
         percent: 0.1
       '2007':
         revenue: 3690120
-        rank: 11
-        percent: 0.30000000000000004
+        rank: 12
+        percent: 0.3
       '2008':
         revenue: 776560
-        rank: 7
+        rank: 16
         percent: 0
       '2009':
         revenue: 457826
-        rank: 11
+        rank: 14
         percent: 0
       '2010':
         revenue: 388020
-        rank: 13
+        rank: 16
         percent: 0
       '2011':
         revenue: 2261278
-        rank: 12
-        percent: 0.30000000000000004
+        rank: 14
+        percent: 0.3
       '2012':
         revenue: 5517505
-        rank: 7
+        rank: 10
         percent: 0.2
       '2013':
         revenue: 1062317
-        rank: 7
+        rank: 11
         percent: 0.1
     Processed (Residue) Gas:
       '2004':
         revenue: 109043
-        rank: 6
+        rank: 14
         percent: 0
       '2005':
         revenue: 118208
-        rank: 7
+        rank: 14
         percent: 0
       '2006':
         revenue: 4810
-        rank: 7
+        rank: 17
         percent: 0
       '2007':
         revenue: 47433
-        rank: 6
+        rank: 15
         percent: 0
       '2011':
         revenue: 135727
-        rank: 8
+        rank: 11
         percent: 0
       '2012':
         revenue: 138505
-        rank: 8
+        rank: 12
         percent: 0
       '2013':
         revenue: 223434
-        rank: 8
+        rank: 11
         percent: 0
     Unprocessed (Wet) Gas:
       '2004':
         revenue: 227736
-        rank: 11
+        rank: 18
         percent: 0
       '2005':
         revenue: 430674
-        rank: 12
+        rank: 19
         percent: 0
       '2006':
         revenue: 420324
-        rank: 11
+        rank: 18
         percent: 0
       '2007':
         revenue: 211152
-        rank: 14
+        rank: 18
         percent: 0
       '2008':
         revenue: 411984
-        rank: 13
+        rank: 18
         percent: 0
       '2009':
         revenue: 361720
-        rank: 13
+        rank: 17
         percent: 0.1
       '2010':
         revenue: 358725
-        rank: 13
+        rank: 14
         percent: 0
       '2011':
         revenue: 242782
-        rank: 12
+        rank: 16
         percent: 0
       '2012':
         revenue: 52462
-        rank: 15
+        rank: 18
         percent: 0.1
       '2013':
         revenue: 50786
-        rank: 13
+        rank: 18
         percent: 0
 MT:
   products:
@@ -5774,19 +5774,19 @@ MT:
         percent: 0.8
       '2005':
         revenue: 78377752
-        rank: 5
+        rank: 6
         percent: 0.8
       '2006':
         revenue: 76650057
         rank: 6
-        percent: 0.6000000000000001
+        percent: 0.6
       '2007':
         revenue: 90498905
         rank: 6
         percent: 0.8
       '2008':
         revenue: 108773425
-        rank: 6
+        rank: 7
         percent: 0.5
       '2009':
         revenue: 87249866
@@ -5794,7 +5794,7 @@ MT:
         percent: 1.1
       '2010':
         revenue: 94481135
-        rank: 6
+        rank: 7
         percent: 0.9
       '2011':
         revenue: 92827117
@@ -5807,7 +5807,7 @@ MT:
       '2013':
         revenue: 77493829
         rank: 7
-        percent: 0.6000000000000001
+        percent: 0.6
     Coal:
       '2004':
         revenue: 34390434
@@ -5853,7 +5853,7 @@ MT:
       '2004':
         revenue: 1140176
         rank: 5
-        percent: 0.7000000000000001
+        percent: 0.7
       '2005':
         revenue: 2931795
         rank: 5
@@ -5865,10 +5865,10 @@ MT:
       '2007':
         revenue: 2032388
         rank: 5
-        percent: 0.6000000000000001
+        percent: 0.6
       '2008':
         revenue: 3133495
-        rank: 4
+        rank: 5
         percent: 0.8
       '2009':
         revenue: 1841017
@@ -5877,15 +5877,15 @@ MT:
       '2010':
         revenue: 1738196
         rank: 5
-        percent: 0.7000000000000001
+        percent: 0.7
       '2011':
         revenue: 1327322
         rank: 5
-        percent: 0.6000000000000001
+        percent: 0.6
       '2012':
         revenue: 538845
         rank: 4
-        percent: 0.30000000000000004
+        percent: 0.3
       '2013':
         revenue: 143378
         rank: 5
@@ -5898,60 +5898,60 @@ MT:
     Condensate:
       '2004':
         revenue: 172866
-        rank: 5
+        rank: 9
         percent: 0.1
       '2005':
         revenue: 164268
-        rank: 6
+        rank: 8
         percent: 0.1
       '2006':
         revenue: 132928
-        rank: 7
+        rank: 9
         percent: 0
       '2007':
         revenue: 168833
-        rank: 7
+        rank: 9
         percent: 0
       '2008':
         revenue: 107842
-        rank: 7
+        rank: 9
         percent: 0
       '2009':
         revenue: 32374
-        rank: 8
+        rank: 11
         percent: 0
       '2010':
         revenue: -75374
-        rank: 6
+        rank: 15
         percent: 0
       '2011':
         revenue: 2595
-        rank: 6
+        rank: 12
         percent: 0
       '2013':
         revenue: -74896
-        rank: 7
+        rank: 15
         percent: 0
     Drip or Scrubber Condensate:
       '2004':
         revenue: 2695
-        rank: 3
+        rank: 5
         percent: 0
       '2005':
         revenue: 2443
-        rank: 6
+        rank: 8
         percent: 0
       '2006':
         revenue: 1015
-        rank: 5
+        rank: 7
         percent: 0
       '2007':
         revenue: 469
-        rank: 6
+        rank: 9
         percent: 0
       '2010':
         revenue: -405
-        rank: 4
+        rank: 10
         percent: 0
       '2012':
         revenue: 10654
@@ -5960,11 +5960,11 @@ MT:
     Fuel Gas:
       '2004':
         revenue: 996
-        rank: 2
+        rank: 5
         percent: 0
       '2005':
         revenue: 835
-        rank: 4
+        rank: 3
         percent: 0
       '2006':
         revenue: 813
@@ -5972,53 +5972,53 @@ MT:
         percent: 0
       '2011':
         revenue: 15
-        rank: 4
+        rank: 6
         percent: 0
     Gas Lost - Flared or Vented:
       '2011':
         revenue: 268
-        rank: 3
+        rank: 4
         percent: 0.1
     Gas Plant Products:
       '2004':
         revenue: 236812
-        rank: 5
+        rank: 9
         percent: 0.1
       '2005':
         revenue: 316364
-        rank: 6
+        rank: 9
         percent: 0.1
       '2006':
         revenue: 422626
-        rank: 7
+        rank: 8
         percent: 0.1
       '2007':
         revenue: 349342
-        rank: 6
+        rank: 8
         percent: 0.1
       '2008':
         revenue: 659548
-        rank: 5
+        rank: 8
         percent: 0.1
       '2009':
         revenue: 283046
-        rank: 8
+        rank: 9
         percent: 0.1
       '2010':
         revenue: 367384
-        rank: 7
+        rank: 9
         percent: 0.1
       '2011':
         revenue: 460265
-        rank: 8
+        rank: 10
         percent: 0.1
       '2012':
         revenue: 209937
-        rank: 9
+        rank: 11
         percent: 0
       '2013':
         revenue: 47536
-        rank: 9
+        rank: 12
         percent: 0
     Gemstones:
       '2004':
@@ -6032,7 +6032,7 @@ MT:
     Hardrock:
       '2004':
         revenue: 119
-        rank: 6
+        rank: 9
         percent: 0.1
       '2006':
         revenue: 2211
@@ -6044,32 +6044,32 @@ MT:
         percent: 0
       '2008':
         revenue: 3650
-        rank: 3
+        rank: 2
         percent: 20.7
       '2009':
         revenue: 147
-        rank: 9
-        percent: 0.30000000000000004
+        rank: 8
+        percent: 0.3
       '2010':
         revenue: 220
-        rank: 6
+        rank: 5
         percent: 0.5
       '2011':
         revenue: 122
         rank: 8
-        percent: 0.30000000000000004
+        percent: 0.3
       '2012':
         revenue: -3259
-        rank: 4
+        rank: 11
         percent: 5.7
       '2013':
         revenue: 20
-        rank: 10
+        rank: 8
         percent: 0
     Oil:
       '2004':
         revenue: 14039321
-        rank: 5
+        rank: 7
         percent: 1
       '2005':
         revenue: 19814255
@@ -6078,26 +6078,26 @@ MT:
       '2006':
         revenue: 22387428
         rank: 7
-        percent: 0.6000000000000001
+        percent: 0.6
       '2007':
         revenue: 24287986
-        rank: 6
-        percent: 0.6000000000000001
+        rank: 7
+        percent: 0.6
       '2008':
         revenue: 37216860
         rank: 7
-        percent: 0.7000000000000001
+        percent: 0.7
       '2009':
         revenue: 18173689
-        rank: 6
-        percent: 0.7000000000000001
+        rank: 7
+        percent: 0.7
       '2010':
         revenue: 23988752
         rank: 7
         percent: 0.5
       '2011':
         revenue: 27437896
-        rank: 6
+        rank: 7
         percent: 0.5
       '2012':
         revenue: 26578696
@@ -6105,7 +6105,7 @@ MT:
         percent: 0.5
       '2013':
         revenue: 25320142
-        rank: 6
+        rank: 7
         percent: 0.4
     'Oil & Gas':
       '2004':
@@ -6118,20 +6118,20 @@ MT:
         percent: 0.5
       '2006':
         revenue: 4817117
-        rank: 8
-        percent: 0.30000000000000004
+        rank: 10
+        percent: 0.3
       '2007':
         revenue: 5105255
         rank: 10
         percent: 0.4
       '2008':
         revenue: 4816698
-        rank: 7
+        rank: 11
         percent: 0
       '2009':
         revenue: 5079421
-        rank: 8
-        percent: 0.30000000000000004
+        rank: 10
+        percent: 0.3
       '2010':
         revenue: 5916672
         rank: 10
@@ -6142,17 +6142,17 @@ MT:
         percent: 1.3
       '2012':
         revenue: 9639279
-        rank: 6
+        rank: 8
         percent: 0.4
       '2013':
         revenue: 2622770
-        rank: 7
+        rank: 9
         percent: 0.1
     Phosphate:
       '2004':
         revenue: 4227
         rank: 3
-        percent: 0.6000000000000001
+        percent: 0.6
       '2005':
         revenue: 1409
         rank: 3
@@ -6172,10 +6172,10 @@ MT:
       '2010':
         revenue: 2818
         rank: 3
-        percent: 1.7000000000000002
+        percent: 1.7
       '2011':
         revenue: 1409
-        rank: 3
+        rank: 4
         percent: 0.2
       '2012':
         revenue: 1409
@@ -6183,48 +6183,48 @@ MT:
         percent: 0.1
       '2013':
         revenue: -1409
-        rank: 3
+        rank: 4
         percent: 1
     Processed (Residue) Gas:
       '2004':
         revenue: 110262
-        rank: 6
+        rank: 13
         percent: 0
       '2005':
         revenue: 235445
-        rank: 7
+        rank: 12
         percent: 0
       '2006':
         revenue: 419397
-        rank: 7
+        rank: 12
         percent: 0
       '2007':
         revenue: 649893
-        rank: 6
+        rank: 11
         percent: 0
       '2008':
         revenue: 394098
-        rank: 7
+        rank: 12
         percent: 0
       '2009':
         revenue: 127235
-        rank: 6
+        rank: 12
         percent: 0
       '2010':
         revenue: 71788
-        rank: 7
+        rank: 13
         percent: 0
       '2011':
         revenue: 83643
-        rank: 8
+        rank: 14
         percent: 0
       '2012':
         revenue: 23172
-        rank: 8
+        rank: 14
         percent: 0
       '2013':
         revenue: -31671
-        rank: 8
+        rank: 18
         percent: 0
     Sulfur:
       '2004':
@@ -6249,7 +6249,7 @@ MT:
         percent: 1.9
       '2009':
         revenue: -9594
-        rank: 2
+        rank: 4
         percent: 0.1
       '2010':
         revenue: 3906
@@ -6275,11 +6275,11 @@ MT:
       '2005':
         revenue: 17011178
         rank: 7
-        percent: 0.6000000000000001
+        percent: 0.6
       '2006':
         revenue: 15319031
         rank: 7
-        percent: 0.7000000000000001
+        percent: 0.7
       '2007':
         revenue: 17467753
         rank: 6
@@ -6290,42 +6290,42 @@ MT:
         percent: 1.2
       '2009':
         revenue: 8577784
-        rank: 7
+        rank: 8
         percent: 2
       '2010':
         revenue: 8289760
-        rank: 9
+        rank: 8
         percent: 0.8
       '2011':
         revenue: 5912730
-        rank: 7
-        percent: 0.7000000000000001
+        rank: 9
+        percent: 0.7
       '2012':
         revenue: 3810506
-        rank: 10
+        rank: 9
         percent: 3.8
       '2013':
         revenue: 4461472
-        rank: 9
+        rank: 8
         percent: 1.1
 NC:
   products:
     All:
       '2004':
         revenue: 474
-        rank: 11
+        rank: 35
         percent: 0
       '2011':
         revenue: 158
-        rank: 11
+        rank: 37
         percent: 0
       '2012':
         revenue: 158
-        rank: 10
+        rank: 37
         percent: 0
       '2013':
         revenue: 158
-        rank: 11
+        rank: 37
         percent: 0
     Hardrock:
       '2004':
@@ -6339,11 +6339,11 @@ NC:
       '2012':
         revenue: 158
         rank: 8
-        percent: 0.30000000000000004
+        percent: 0.3
       '2013':
         revenue: 158
-        rank: 7
-        percent: 0.30000000000000004
+        rank: 5
+        percent: 0.3
 ND:
   products:
     All:
@@ -6362,7 +6362,7 @@ ND:
       '2007':
         revenue: 69954026
         rank: 7
-        percent: 0.6000000000000001
+        percent: 0.6
       '2008':
         revenue: 121566128
         rank: 6
@@ -6373,7 +6373,7 @@ ND:
         percent: 1.8
       '2010':
         revenue: 100100198
-        rank: 5
+        rank: 6
         percent: 1
       '2011':
         revenue: 215013533
@@ -6390,11 +6390,11 @@ ND:
     Coal:
       '2004':
         revenue: 482014
-        rank: 6
+        rank: 7
         percent: 0.1
       '2005':
         revenue: 567955
-        rank: 6
+        rank: 7
         percent: 0.1
       '2006':
         revenue: 904580
@@ -6406,11 +6406,11 @@ ND:
         percent: 0.1
       '2008':
         revenue: 1139261
-        rank: 6
+        rank: 8
         percent: 0.1
       '2009':
         revenue: 347487
-        rank: 7
+        rank: 9
         percent: 0
       '2010':
         revenue: 264870
@@ -6418,11 +6418,11 @@ ND:
         percent: 0
       '2011':
         revenue: 1097273
-        rank: 7
+        rank: 9
         percent: 0.1
       '2012':
         revenue: 1441457
-        rank: 6
+        rank: 7
         percent: 0.1
       '2013':
         revenue: 1941034
@@ -6436,57 +6436,57 @@ ND:
     Condensate:
       '2004':
         revenue: 133470
-        rank: 5
+        rank: 10
         percent: 0.1
       '2005':
         revenue: 123393
-        rank: 7
+        rank: 10
         percent: 0
       '2006':
         revenue: 64928
-        rank: 7
+        rank: 10
         percent: 0
       '2007':
         revenue: 36405
-        rank: 7
+        rank: 10
         percent: 0
       '2008':
         revenue: 52611
-        rank: 7
+        rank: 11
         percent: 0
       '2009':
         revenue: 49589
-        rank: 8
+        rank: 10
         percent: 0
       '2010':
         revenue: 24435
-        rank: 6
+        rank: 11
         percent: 0
       '2011':
         revenue: 8107
-        rank: 6
+        rank: 11
         percent: 0
       '2012':
         revenue: 2035
-        rank: 7
+        rank: 11
         percent: 0
       '2013':
         revenue: 27240
-        rank: 7
+        rank: 11
         percent: 0
     Drip or Scrubber Condensate:
       '2004':
         revenue: 30495
-        rank: 2
-        percent: 0.30000000000000004
+        rank: 3
+        percent: 0.3
       '2005':
         revenue: 36307
         rank: 3
-        percent: 0.30000000000000004
+        percent: 0.3
       '2006':
         revenue: 26202
         rank: 4
-        percent: 0.30000000000000004
+        percent: 0.3
       '2007':
         revenue: 7459
         rank: 5
@@ -6501,11 +6501,11 @@ ND:
         percent: 0
       '2010':
         revenue: 2980
-        rank: 4
+        rank: 5
         percent: 0
       '2011':
         revenue: 53215
-        rank: 4
+        rank: 3
         percent: 0.5
       '2012':
         revenue: 49905
@@ -6514,11 +6514,11 @@ ND:
       '2013':
         revenue: 162909
         rank: 3
-        percent: 1.7000000000000002
+        percent: 1.7
     Fuel Gas:
       '2013':
         revenue: 286
-        rank: 8
+        rank: 11
         percent: 0
     Gas Lost - Flared or Vented:
       '2004':
@@ -6548,7 +6548,7 @@ ND:
       '2010':
         revenue: 1046
         rank: 3
-        percent: 0.30000000000000004
+        percent: 0.3
       '2013':
         revenue: 384
         rank: 6
@@ -6556,11 +6556,11 @@ ND:
     Gas Plant Products:
       '2004':
         revenue: 312713
-        rank: 5
+        rank: 7
         percent: 0.1
       '2005':
         revenue: 479619
-        rank: 5
+        rank: 6
         percent: 0.2
       '2006':
         revenue: 478298
@@ -6568,16 +6568,16 @@ ND:
         percent: 0.2
       '2007':
         revenue: 426090
-        rank: 6
+        rank: 7
         percent: 0.1
       '2008':
         revenue: 1089791
-        rank: 4
+        rank: 6
         percent: 0.2
       '2009':
         revenue: 702268
         rank: 6
-        percent: 0.30000000000000004
+        percent: 0.3
       '2010':
         revenue: 1023319
         rank: 6
@@ -6585,11 +6585,11 @@ ND:
       '2011':
         revenue: 1639730
         rank: 6
-        percent: 0.30000000000000004
+        percent: 0.3
       '2012':
         revenue: 1517103
-        rank: 6
-        percent: 0.30000000000000004
+        rank: 7
+        percent: 0.3
       '2013':
         revenue: 2172658
         rank: 5
@@ -6601,12 +6601,12 @@ ND:
         percent: 29
       '2012':
         revenue: 2726
-        rank: 5
+        rank: 4
         percent: 4.8
     Inlet Scrubber:
       '2008':
         revenue: -18655
-        rank: 1
+        rank: 3
         percent: 10.3
     Leonardite:
       '2006':
@@ -6677,8 +6677,8 @@ ND:
     Oil:
       '2004':
         revenue: 22637652
-        rank: 3
-        percent: 1.7000000000000002
+        rank: 4
+        percent: 1.7
       '2005':
         revenue: 35559101
         rank: 3
@@ -6713,7 +6713,7 @@ ND:
         percent: 2.4
       '2013':
         revenue: 180459111
-        rank: 3
+        rank: 4
         percent: 2.9
     'Oil & Gas':
       '2004':
@@ -6735,7 +6735,7 @@ ND:
       '2008':
         revenue: 29245982
         rank: 4
-        percent: 0.30000000000000004
+        percent: 0.3
       '2009':
         revenue: 94405078
         rank: 1
@@ -6759,19 +6759,19 @@ ND:
     Processed (Residue) Gas:
       '2004':
         revenue: 882443
-        rank: 6
+        rank: 8
         percent: 0
       '2005':
         revenue: 1168853
-        rank: 6
+        rank: 7
         percent: 0.1
       '2006':
         revenue: 855283
-        rank: 7
+        rank: 10
         percent: 0
       '2007':
         revenue: 634709
-        rank: 6
+        rank: 12
         percent: 0
       '2008':
         revenue: 2613514
@@ -6779,29 +6779,29 @@ ND:
         percent: 0.1
       '2009':
         revenue: 620003
-        rank: 6
+        rank: 9
         percent: 0
       '2010':
         revenue: 692035
-        rank: 6
+        rank: 10
         percent: 0.1
       '2011':
         revenue: 982065
-        rank: 7
+        rank: 8
         percent: 0.1
       '2012':
         revenue: 349468
-        rank: 8
+        rank: 11
         percent: 0
       '2013':
         revenue: 1177310
-        rank: 7
+        rank: 9
         percent: 0.1
     Sulfur:
       '2004':
         revenue: 299
         rank: 4
-        percent: 0.30000000000000004
+        percent: 0.3
       '2005':
         revenue: 35
         rank: 4
@@ -6809,7 +6809,7 @@ ND:
       '2006':
         revenue: 92
         rank: 4
-        percent: 0.30000000000000004
+        percent: 0.3
       '2007':
         revenue: 1
         rank: 4
@@ -6821,203 +6821,203 @@ ND:
     Unprocessed (Wet) Gas:
       '2004':
         revenue: 2634033
-        rank: 10
+        rank: 13
         percent: 0.1
       '2005':
         revenue: 4013931
-        rank: 10
+        rank: 12
         percent: 0.2
       '2006':
         revenue: 4596965
-        rank: 10
+        rank: 11
         percent: 0.2
       '2007':
         revenue: 5591377
-        rank: 10
+        rank: 11
         percent: 0.4
       '2008':
         revenue: 5266035
         rank: 10
-        percent: 0.30000000000000004
+        percent: 0.3
       '2009':
         revenue: 2451550
-        rank: 10
-        percent: 0.6000000000000001
+        rank: 11
+        percent: 0.6
       '2010':
         revenue: 3536211
-        rank: 11
-        percent: 0.30000000000000004
+        rank: 10
+        percent: 0.3
       '2011':
         revenue: 3344499
-        rank: 9
+        rank: 11
         percent: 0.4
       '2012':
         revenue: 5078735
-        rank: 8
+        rank: 6
         percent: 5.1
       '2013':
         revenue: 6538435
-        rank: 7
+        rank: 6
         percent: 1.6
 NE:
   products:
     All:
       '2004':
         revenue: 177259
-        rank: 11
+        rank: 24
         percent: 0
       '2005':
         revenue: 245469
-        rank: 10
+        rank: 27
         percent: 0
       '2006':
         revenue: 320933
-        rank: 11
+        rank: 27
         percent: 0
       '2007':
         revenue: 670375
-        rank: 12
+        rank: 26
         percent: 0
       '2008':
         revenue: 696269
-        rank: 9
+        rank: 26
         percent: 0
       '2009':
         revenue: 261748
-        rank: 12
+        rank: 26
         percent: 0
       '2010':
         revenue: 573928
-        rank: 11
+        rank: 24
         percent: 0
       '2011':
         revenue: 387341
-        rank: 11
+        rank: 27
         percent: 0
       '2012':
         revenue: 318278
-        rank: 10
+        rank: 26
         percent: 0
       '2013':
         revenue: 367214
-        rank: 11
+        rank: 25
         percent: 0
     Gas Plant Products:
       '2008':
         revenue: 11101
-        rank: 6
+        rank: 14
         percent: 0
     Oil:
       '2004':
         revenue: 147231
-        rank: 7
+        rank: 18
         percent: 0
       '2005':
         revenue: 209691
-        rank: 9
+        rank: 17
         percent: 0
       '2006':
         revenue: 280934
-        rank: 9
+        rank: 17
         percent: 0
       '2007':
         revenue: 507967
-        rank: 8
+        rank: 17
         percent: 0
       '2008':
         revenue: 631893
-        rank: 9
+        rank: 17
         percent: 0
       '2009':
         revenue: 237831
-        rank: 8
+        rank: 17
         percent: 0
       '2010':
         revenue: 302763
-        rank: 9
+        rank: 18
         percent: 0
       '2011':
         revenue: 349883
-        rank: 8
+        rank: 17
         percent: 0
       '2012':
         revenue: 266252
-        rank: 9
+        rank: 20
         percent: 0
       '2013':
         revenue: 292938
-        rank: 8
+        rank: 19
         percent: 0
     'Oil & Gas':
       '2004':
         revenue: 30028
-        rank: 11
+        rank: 24
         percent: 0
       '2005':
         revenue: 35778
-        rank: 13
+        rank: 22
         percent: 0
       '2006':
         revenue: 39999
-        rank: 11
+        rank: 24
         percent: 0
       '2007':
         revenue: 38416
-        rank: 13
+        rank: 24
         percent: 0
       '2008':
         revenue: 45157
-        rank: 7
+        rank: 25
         percent: 0
       '2009':
         revenue: 15743
-        rank: 11
+        rank: 25
         percent: 0
       '2010':
         revenue: 38608
-        rank: 13
+        rank: 25
         percent: 0
       '2011':
         revenue: 37457
-        rank: 14
+        rank: 23
         percent: 0
       '2012':
         revenue: 41945
-        rank: 9
+        rank: 20
         percent: 0
       '2013':
         revenue: 68987
-        rank: 8
+        rank: 20
         percent: 0
     Processed (Residue) Gas:
       '2008':
         revenue: 8118
-        rank: 7
+        rank: 17
         percent: 0
       '2009':
         revenue: 8173
-        rank: 6
+        rank: 15
         percent: 0
       '2010':
         revenue: 0
-        rank: 7
+        rank: 18
         percent: 0
       '2012':
         revenue: 10081
-        rank: 8
+        rank: 16
         percent: 0
       '2013':
         revenue: 5288
-        rank: 8
+        rank: 15
         percent: 0
     Unprocessed (Wet) Gas:
       '2007':
         revenue: 123992
-        rank: 14
+        rank: 21
         percent: 0
       '2010':
         revenue: 232557
-        rank: 13
+        rank: 16
         percent: 0
 NM:
   products:
@@ -7160,14 +7160,14 @@ NM:
       '2010':
         revenue: 6523310
         rank: 6
-        percent: 0.7000000000000001
+        percent: 0.7
       '2011':
         revenue: 9156087
-        rank: 5
+        rank: 6
         percent: 0.9
       '2012':
         revenue: 15602807
-        rank: 4
+        rank: 5
         percent: 1.2
       '2013':
         revenue: 14929296
@@ -7258,7 +7258,7 @@ NM:
     Drip or Scrubber Condensate:
       '2004':
         revenue: 208602
-        rank: 1
+        rank: 2
         percent: 2.2
       '2005':
         revenue: 141343
@@ -7282,12 +7282,12 @@ NM:
         percent: 0.8
       '2010':
         revenue: 137178
-        rank: 3
+        rank: 4
         percent: 1.1
       '2011':
         revenue: 187632
-        rank: 2
-        percent: 1.7000000000000002
+        rank: 1
+        percent: 1.7
       '2012':
         revenue: 169028
         rank: 3
@@ -7299,7 +7299,7 @@ NM:
     Flash Gas:
       '2004':
         revenue: 3856
-        rank: 2
+        rank: 1
         percent: 0.2
       '2005':
         revenue: 383
@@ -7316,8 +7316,8 @@ NM:
     Fuel Gas:
       '2005':
         revenue: -116825
-        rank: 1
-        percent: 1.7000000000000002
+        rank: 6
+        percent: 1.7
       '2007':
         revenue: 4471
         rank: 1
@@ -7329,14 +7329,14 @@ NM:
       '2009':
         revenue: 32642
         rank: 2
-        percent: 0.7000000000000001
+        percent: 0.7
       '2010':
         revenue: 44232
         rank: 4
-        percent: 0.6000000000000001
+        percent: 0.6
       '2011':
         revenue: 5643
-        rank: 3
+        rank: 2
         percent: 0.1
       '2012':
         revenue: 834
@@ -7424,36 +7424,36 @@ NM:
     Geothermal:
       '2004':
         revenue: 56000
-        rank: 4
-        percent: 0.7000000000000001
+        rank: 3
+        percent: 0.7
       '2005':
         revenue: 6560
         rank: 3
         percent: 0.9
       '2006':
         revenue: 3280
-        rank: 5
-        percent: 0.6000000000000001
+        rank: 4
+        percent: 0.6
       '2007':
         revenue: 18286
         rank: 5
         percent: 0.1
       '2008':
         revenue: 3280
-        rank: 4
+        rank: 6
         percent: 0
       '2009':
         revenue: 640
-        rank: 6
+        rank: 7
         percent: 0
       '2010':
         revenue: 15646
         rank: 6
-        percent: 0.30000000000000004
+        percent: 0.3
       '2011':
         revenue: 24107
-        rank: 6
-        percent: 0.6000000000000001
+        rank: 7
+        percent: 0.6
       '2012':
         revenue: 13145
         rank: 7
@@ -7718,10 +7718,10 @@ NM:
       '2008':
         revenue: 64377922
         rank: 3
-        percent: 0.7000000000000001
+        percent: 0.7
       '2009':
         revenue: 6187620
-        rank: 7
+        rank: 9
         percent: 0.4
       '2010':
         revenue: 25904729
@@ -7751,7 +7751,7 @@ NM:
     Other Liquid Hydrocarbons:
       '2005':
         revenue: 29
-        rank: 3
+        rank: 4
         percent: 0.1
       '2013':
         revenue: 4190
@@ -7947,11 +7947,11 @@ NM:
     Sodium:
       '2005':
         revenue: 1400
-        rank: 5
+        rank: 3
         percent: 0.8
       '2006':
         revenue: 7160
-        rank: 4
+        rank: 3
         percent: 11.2
       '2007':
         revenue: 20120
@@ -7959,15 +7959,15 @@ NM:
         percent: 26.5
       '2008':
         revenue: 537
-        rank: 5
+        rank: 4
         percent: 0.1
       '2009':
         revenue: 1760
-        rank: 4
+        rank: 3
         percent: 2.7
       '2010':
         revenue: 2800
-        rank: 4
+        rank: 3
         percent: 2
       '2011':
         revenue: -8892
@@ -7979,7 +7979,7 @@ NM:
         percent: 0.8
       '2013':
         revenue: -12160
-        rank: 3
+        rank: 4
         percent: 16.8
     Sulfur:
       '2011':
@@ -7988,7 +7988,7 @@ NM:
         percent: 3.3
       '2012':
         revenue: 0
-        rank: 3
+        rank: 4
         percent: 0
     Sylvite-Raw Ore:
       '2006':
@@ -8058,7 +8058,7 @@ NM:
         percent: 11.1
       '2012':
         revenue: 62277441
-        rank: 2
+        rank: 1
         percent: 62.9
       '2013':
         revenue: 105090556
@@ -8069,39 +8069,39 @@ NV:
     All:
       '2004':
         revenue: 6154386
-        rank: 10
+        rank: 13
         percent: 0.1
       '2005':
         revenue: 15470685
-        rank: 8
+        rank: 12
         percent: 0.2
       '2006':
         revenue: 15405054
-        rank: 10
+        rank: 13
         percent: 0.1
       '2007':
         revenue: 25966607
-        rank: 10
+        rank: 12
         percent: 0.2
       '2008':
         revenue: 45437977
-        rank: 7
+        rank: 9
         percent: 0.2
       '2009':
         revenue: 21717657
-        rank: 9
-        percent: 0.30000000000000004
+        rank: 10
+        percent: 0.3
       '2010':
         revenue: 18032797
-        rank: 9
+        rank: 11
         percent: 0.2
       '2011':
         revenue: 17671051
-        rank: 9
+        rank: 10
         percent: 0.2
       '2012':
         revenue: 20130592
-        rank: 8
+        rank: 10
         percent: 0.2
       '2013':
         revenue: 15720981
@@ -8238,27 +8238,27 @@ NV:
     Oil:
       '2004':
         revenue: 1665411
-        rank: 6
+        rank: 9
         percent: 0.1
       '2005':
         revenue: 2158747
-        rank: 8
+        rank: 9
         percent: 0.1
       '2006':
         revenue: 2732321
-        rank: 8
+        rank: 9
         percent: 0.1
       '2007':
         revenue: 2886796
-        rank: 7
+        rank: 9
         percent: 0.1
       '2008':
         revenue: 4318251
-        rank: 8
+        rank: 9
         percent: 0.1
       '2009':
         revenue: 2514108
-        rank: 7
+        rank: 8
         percent: 0.1
       '2010':
         revenue: 3397208
@@ -8266,7 +8266,7 @@ NV:
         percent: 0.1
       '2011':
         revenue: 4396705
-        rank: 7
+        rank: 8
         percent: 0.1
       '2012':
         revenue: 3980599
@@ -8274,13 +8274,13 @@ NV:
         percent: 0.1
       '2013':
         revenue: 3613729
-        rank: 7
+        rank: 10
         percent: 0.1
     'Oil & Gas':
       '2004':
         revenue: 2918035
         rank: 8
-        percent: 0.30000000000000004
+        percent: 0.3
       '2005':
         revenue: 8762451
         rank: 9
@@ -8288,18 +8288,18 @@ NV:
       '2006':
         revenue: 10857213
         rank: 6
-        percent: 0.6000000000000001
+        percent: 0.6
       '2007':
         revenue: 8330060
         rank: 8
-        percent: 0.7000000000000001
+        percent: 0.7
       '2008':
         revenue: 9757015
-        rank: 6
+        rank: 10
         percent: 0.1
       '2009':
         revenue: 6789131
-        rank: 7
+        rank: 8
         percent: 0.4
       '2010':
         revenue: 6984395
@@ -8307,7 +8307,7 @@ NV:
         percent: 0.5
       '2011':
         revenue: 6841870
-        rank: 8
+        rank: 9
         percent: 1.1
       '2012':
         revenue: 11611274
@@ -8315,7 +8315,7 @@ NV:
         percent: 0.4
       '2013':
         revenue: 7796944
-        rank: 5
+        rank: 6
         percent: 0.4
     Potash:
       '2004':
@@ -8338,7 +8338,7 @@ NV:
       '2004':
         revenue: 1160
         rank: 4
-        percent: 0.6000000000000001
+        percent: 0.6
       '2005':
         revenue: 1160
         rank: 3
@@ -8370,7 +8370,7 @@ NV:
       '2013':
         revenue: 2501
         rank: 4
-        percent: 0.30000000000000004
+        percent: 0.3
     'Sand & Gravel':
       '2004':
         revenue: -320
@@ -8396,334 +8396,334 @@ NV:
     Sodium:
       '2005':
         revenue: -19836
-        rank: 3
+        rank: 6
         percent: 11.7
       '2008':
         revenue: -15357
-        rank: 3
+        rank: 6
         percent: 3.7
 NY:
   products:
     All:
       '2004':
         revenue: 8640
-        rank: 11
+        rank: 34
         percent: 0
       '2005':
         revenue: 20150
-        rank: 10
+        rank: 33
         percent: 0
       '2006':
         revenue: 13365
-        rank: 11
+        rank: 33
         percent: 0
       '2007':
         revenue: 10451
-        rank: 12
+        rank: 33
         percent: 0
       '2008':
         revenue: 11517
-        rank: 9
+        rank: 33
         percent: 0
       '2009':
         revenue: 6749
-        rank: 12
+        rank: 34
         percent: 0
       '2010':
         revenue: 6474
-        rank: 11
+        rank: 35
         percent: 0
       '2011':
         revenue: 21546
-        rank: 11
+        rank: 34
         percent: 0
       '2012':
         revenue: 4469
-        rank: 10
+        rank: 36
         percent: 0
       '2013':
         revenue: 5223
-        rank: 11
+        rank: 35
         percent: 0
     Unprocessed (Wet) Gas:
       '2004':
         revenue: 8640
-        rank: 11
+        rank: 23
         percent: 0
       '2005':
         revenue: 20150
-        rank: 12
+        rank: 23
         percent: 0
       '2006':
         revenue: 13365
-        rank: 11
+        rank: 23
         percent: 0
       '2007':
         revenue: 10451
-        rank: 14
+        rank: 24
         percent: 0
       '2008':
         revenue: 11517
-        rank: 13
+        rank: 22
         percent: 0
       '2009':
         revenue: 6749
-        rank: 14
+        rank: 23
         percent: 0
       '2010':
         revenue: 6474
-        rank: 13
+        rank: 22
         percent: 0
       '2011':
         revenue: 21546
-        rank: 12
+        rank: 22
         percent: 0
       '2012':
         revenue: 4469
-        rank: 16
+        rank: 21
         percent: 0
       '2013':
         revenue: 5223
-        rank: 13
+        rank: 21
         percent: 0
 OH:
   products:
     All:
       '2004':
         revenue: 576173
-        rank: 11
+        rank: 23
         percent: 0
       '2005':
         revenue: 680402
-        rank: 10
+        rank: 24
         percent: 0
       '2006':
         revenue: 815228
-        rank: 11
+        rank: 25
         percent: 0
       '2007':
         revenue: 852131
-        rank: 12
+        rank: 25
         percent: 0
       '2008':
         revenue: 1049058
-        rank: 9
+        rank: 24
         percent: 0
       '2009':
         revenue: 596725
-        rank: 12
+        rank: 25
         percent: 0
       '2010':
         revenue: 751158
-        rank: 11
+        rank: 21
         percent: 0
       '2011':
         revenue: 646377
-        rank: 11
+        rank: 24
         percent: 0
       '2012':
         revenue: 521190
-        rank: 10
+        rank: 24
         percent: 0
       '2013':
         revenue: 483191
-        rank: 11
+        rank: 24
         percent: 0
     Coal:
       '2010':
         revenue: 3373
-        rank: 8
+        rank: 10
         percent: 0
     Oil:
       '2004':
         revenue: 95931
-        rank: 7
+        rank: 19
         percent: 0
       '2005':
         revenue: 124543
-        rank: 9
+        rank: 20
         percent: 0
       '2006':
         revenue: 191104
-        rank: 9
+        rank: 20
         percent: 0
       '2007':
         revenue: 233140
-        rank: 8
+        rank: 19
         percent: 0
       '2008':
         revenue: 362989
-        rank: 9
+        rank: 19
         percent: 0
       '2009':
         revenue: 226733
-        rank: 8
+        rank: 18
         percent: 0
       '2010':
         revenue: 224093
-        rank: 9
+        rank: 19
         percent: 0
       '2011':
         revenue: 250634
-        rank: 8
+        rank: 19
         percent: 0
       '2012':
         revenue: 285827
-        rank: 9
+        rank: 19
         percent: 0
       '2013':
         revenue: 235423
-        rank: 8
+        rank: 20
         percent: 0
     'Oil & Gas':
       '2004':
         revenue: 60450
-        rank: 11
+        rank: 21
         percent: 0
       '2005':
         revenue: 13768
-        rank: 13
+        rank: 26
         percent: 0
       '2006':
         revenue: 27993
-        rank: 11
+        rank: 25
         percent: 0
       '2007':
         revenue: 5609
-        rank: 13
+        rank: 29
         percent: 0
       '2008':
         revenue: 8723
-        rank: 7
+        rank: 29
         percent: 0
       '2009':
         revenue: 6812
-        rank: 11
+        rank: 27
         percent: 0
       '2010':
         revenue: 184356
-        rank: 13
+        rank: 20
         percent: 0
       '2011':
         revenue: 82253
-        rank: 14
+        rank: 22
         percent: 0
       '2012':
         revenue: 41104
-        rank: 9
+        rank: 21
         percent: 0
       '2013':
         revenue: 36242
-        rank: 8
+        rank: 24
         percent: 0
     Processed (Residue) Gas:
       '2004':
         revenue: 11657
-        rank: 6
+        rank: 15
         percent: 0
       '2005':
         revenue: 7379
-        rank: 7
+        rank: 16
         percent: 0
       '2006':
         revenue: 6178
-        rank: 7
+        rank: 16
         percent: 0
       '2007':
         revenue: 3343
-        rank: 6
+        rank: 17
         percent: 0
       '2008':
         revenue: 1122
-        rank: 7
+        rank: 19
         percent: 0
       '2013':
         revenue: 402
-        rank: 8
+        rank: 16
         percent: 0
     Unprocessed (Wet) Gas:
       '2004':
         revenue: 408134
-        rank: 11
+        rank: 16
         percent: 0
       '2005':
         revenue: 534712
-        rank: 12
+        rank: 17
         percent: 0
       '2006':
         revenue: 589953
-        rank: 11
+        rank: 16
         percent: 0
       '2007':
         revenue: 610039
-        rank: 14
+        rank: 16
         percent: 0
       '2008':
         revenue: 676224
-        rank: 13
+        rank: 15
         percent: 0
       '2009':
         revenue: 363181
-        rank: 13
+        rank: 16
         percent: 0.1
       '2010':
         revenue: 339337
-        rank: 13
+        rank: 15
         percent: 0
       '2011':
         revenue: 313490
-        rank: 12
+        rank: 15
         percent: 0
       '2012':
         revenue: 194259
-        rank: 14
+        rank: 13
         percent: 0.2
       '2013':
         revenue: 211124
-        rank: 12
+        rank: 13
         percent: 0.1
 OK:
   products:
     All:
       '2004':
         revenue: 11903973
-        rank: 10
+        rank: 11
         percent: 0.1
       '2005':
         revenue: 12806684
-        rank: 9
+        rank: 13
         percent: 0.1
       '2006':
         revenue: 15978170
-        rank: 10
+        rank: 12
         percent: 0.1
       '2007':
         revenue: 20297059
-        rank: 10
+        rank: 13
         percent: 0.2
       '2008':
         revenue: 25913840
-        rank: 8
+        rank: 13
         percent: 0.1
       '2009':
         revenue: 17770050
-        rank: 10
+        rank: 11
         percent: 0.2
       '2010':
         revenue: 10343920
-        rank: 10
+        rank: 15
         percent: 0.1
       '2011':
         revenue: 14913040
-        rank: 10
+        rank: 12
         percent: 0.1
       '2012':
         revenue: 17045600
-        rank: 9
+        rank: 12
         percent: 0.1
       '2013':
         revenue: 13299437
-        rank: 10
+        rank: 12
         percent: 0.1
     Asphalt:
       '2006':
@@ -8749,23 +8749,23 @@ OK:
         percent: 0.1
       '2005':
         revenue: 306076
-        rank: 7
+        rank: 8
         percent: 0
       '2006':
         revenue: 661032
-        rank: 7
+        rank: 8
         percent: 0.1
       '2007':
         revenue: 714270
-        rank: 7
+        rank: 8
         percent: 0.1
       '2008':
         revenue: 903765
-        rank: 6
+        rank: 9
         percent: 0.1
       '2009':
         revenue: 972476
-        rank: 6
+        rank: 8
         percent: 0.1
       '2010':
         revenue: 832965
@@ -8773,28 +8773,28 @@ OK:
         percent: 0.1
       '2011':
         revenue: 1145326
-        rank: 7
+        rank: 8
         percent: 0.1
       '2012':
         revenue: 725947
-        rank: 6
+        rank: 9
         percent: 0.1
       '2013':
         revenue: 996293
-        rank: 8
+        rank: 9
         percent: 0.1
     Coal Bed Methane:
       '2004':
         revenue: 347
-        rank: 6
+        rank: 8
         percent: 0
       '2005':
         revenue: 6832
-        rank: 6
+        rank: 7
         percent: 0
       '2006':
         revenue: 6113
-        rank: 6
+        rank: 7
         percent: 0
       '2007':
         revenue: 4530
@@ -8802,32 +8802,32 @@ OK:
         percent: 0
       '2008':
         revenue: 11139
-        rank: 5
+        rank: 7
         percent: 0
       '2009':
         revenue: -19975
-        rank: 7
+        rank: 8
         percent: 0
       '2010':
         revenue: 1259
-        rank: 6
+        rank: 8
         percent: 0
       '2011':
         revenue: 1216
-        rank: 6
+        rank: 8
         percent: 0
       '2012':
         revenue: 757
-        rank: 5
+        rank: 7
         percent: 0
       '2013':
         revenue: 633
-        rank: 6
+        rank: 8
         percent: 0
     Coal-Bituminous-Raw:
       '2004':
         revenue: -58468
-        rank: 3
+        rank: 1
         percent: 2.3
     Coal-Fines Circuit:
       '2004':
@@ -8837,23 +8837,23 @@ OK:
     Condensate:
       '2004':
         revenue: 188969
-        rank: 5
+        rank: 8
         percent: 0.1
       '2005':
         revenue: 216616
-        rank: 6
+        rank: 7
         percent: 0.1
       '2006':
         revenue: 228757
-        rank: 6
+        rank: 8
         percent: 0.1
       '2007':
         revenue: 241969
-        rank: 6
+        rank: 8
         percent: 0.1
       '2008':
         revenue: 249493
-        rank: 7
+        rank: 8
         percent: 0
       '2009':
         revenue: 143702
@@ -8861,15 +8861,15 @@ OK:
         percent: 0.1
       '2010':
         revenue: 151336
-        rank: 6
+        rank: 9
         percent: 0
       '2011':
         revenue: 272789
-        rank: 6
+        rank: 8
         percent: 0
       '2012':
         revenue: 417964
-        rank: 7
+        rank: 8
         percent: 0
       '2013':
         revenue: 1405710
@@ -8878,77 +8878,77 @@ OK:
     Drip or Scrubber Condensate:
       '2007':
         revenue: 5
-        rank: 6
+        rank: 10
         percent: 0
       '2008':
         revenue: 396
-        rank: 5
+        rank: 7
         percent: 0
       '2009':
         revenue: 89
-        rank: 6
+        rank: 8
         percent: 0
       '2010':
         revenue: 78
-        rank: 4
+        rank: 9
         percent: 0
       '2011':
         revenue: 54
-        rank: 6
+        rank: 8
         percent: 0
       '2012':
         revenue: 21
-        rank: 8
+        rank: 11
         percent: 0
     Fuel Gas:
       '2007':
         revenue: 77
-        rank: 2
+        rank: 5
         percent: 0
       '2013':
         revenue: 15296
-        rank: 6
+        rank: 7
         percent: 0.2
     Gas Plant Products:
       '2004':
         revenue: 102686
-        rank: 6
+        rank: 11
         percent: 0
       '2005':
         revenue: 181266
-        rank: 6
+        rank: 11
         percent: 0.1
       '2006':
         revenue: 359716
-        rank: 7
+        rank: 9
         percent: 0.1
       '2007':
         revenue: 305578
-        rank: 6
+        rank: 9
         percent: 0.1
       '2008':
         revenue: 500880
-        rank: 5
+        rank: 9
         percent: 0.1
       '2009':
         revenue: 168705
-        rank: 8
+        rank: 11
         percent: 0.1
       '2010':
         revenue: 242206
-        rank: 7
+        rank: 10
         percent: 0.1
       '2011':
         revenue: 472945
-        rank: 8
+        rank: 9
         percent: 0.1
       '2012':
         revenue: 1710870
         rank: 6
-        percent: 0.30000000000000004
+        percent: 0.3
       '2013':
         revenue: 564486
-        rank: 8
+        rank: 9
         percent: 0.1
     Helium:
       '2013':
@@ -8958,11 +8958,11 @@ OK:
     Inlet Scrubber:
       '2004':
         revenue: 6
-        rank: 2
+        rank: 1
         percent: 0
       '2005':
         revenue: 44
-        rank: 4
+        rank: 3
         percent: 0
       '2006':
         revenue: 67
@@ -8974,11 +8974,11 @@ OK:
         percent: 0.1
       '2008':
         revenue: 1243
-        rank: 3
-        percent: 0.7000000000000001
+        rank: 2
+        percent: 0.7
       '2009':
         revenue: 595
-        rank: 2
+        rank: 1
         percent: 0.1
       '2010':
         revenue: 792
@@ -8991,48 +8991,48 @@ OK:
     Oil:
       '2004':
         revenue: 351996
-        rank: 7
+        rank: 16
         percent: 0
       '2005':
         revenue: 524288
-        rank: 9
+        rank: 16
         percent: 0
       '2006':
         revenue: 753790
-        rank: 9
+        rank: 15
         percent: 0
       '2007':
         revenue: 1508377
-        rank: 8
+        rank: 14
         percent: 0
       '2008':
         revenue: 1219080
-        rank: 9
+        rank: 15
         percent: 0
       '2009':
         revenue: 1063546
-        rank: 8
+        rank: 14
         percent: 0
       '2010':
         revenue: 1176113
-        rank: 9
+        rank: 15
         percent: 0
       '2011':
         revenue: 1514735
-        rank: 8
+        rank: 15
         percent: 0
       '2012':
         revenue: 3038187
-        rank: 8
+        rank: 11
         percent: 0.1
       '2013':
         revenue: 3593270
-        rank: 7
+        rank: 11
         percent: 0.1
     'Oil & Gas':
       '2004':
         revenue: 1460322
-        rank: 10
+        rank: 11
         percent: 0.1
       '2005':
         revenue: 2201809
@@ -9040,35 +9040,35 @@ OK:
         percent: 0.2
       '2006':
         revenue: 3076312
-        rank: 9
+        rank: 11
         percent: 0.2
       '2007':
         revenue: 7196670
         rank: 9
-        percent: 0.6000000000000001
+        percent: 0.6
       '2008':
         revenue: 10756759
-        rank: 6
+        rank: 9
         percent: 0.1
       '2009':
         revenue: 9592572
         rank: 6
-        percent: 0.6000000000000001
+        percent: 0.6
       '2010':
         revenue: 589070
         rank: 13
         percent: 0
       '2011':
         revenue: 4252980
-        rank: 10
-        percent: 0.7000000000000001
+        rank: 12
+        percent: 0.7
       '2012':
         revenue: 6271939
-        rank: 7
+        rank: 9
         percent: 0.2
       '2013':
         revenue: 1550012
-        rank: 7
+        rank: 10
         percent: 0.1
     Other Liquid Hydrocarbons:
       '2004':
@@ -9077,48 +9077,48 @@ OK:
         percent: 2.3
       '2005':
         revenue: 84
-        rank: 2
-        percent: 0.30000000000000004
+        rank: 3
+        percent: 0.3
       '2009':
         revenue: 1
-        rank: 2
+        rank: 3
         percent: 0
       '2011':
         revenue: 0
-        rank: 4
+        rank: 5
         percent: 0
     Processed (Residue) Gas:
       '2004':
         revenue: 490464
-        rank: 6
+        rank: 9
         percent: 0
       '2005':
         revenue: 723127
-        rank: 7
+        rank: 9
         percent: 0
       '2006':
         revenue: 1022388
-        rank: 7
+        rank: 9
         percent: 0
       '2007':
         revenue: 760738
-        rank: 6
+        rank: 10
         percent: 0
       '2008':
         revenue: 1008624
-        rank: 7
+        rank: 11
         percent: 0
       '2009':
         revenue: 316443
-        rank: 6
+        rank: 10
         percent: 0
       '2010':
         revenue: 491821
-        rank: 7
+        rank: 11
         percent: 0
       '2011':
         revenue: 919189
-        rank: 7
+        rank: 9
         percent: 0.1
       '2012':
         revenue: 1025143
@@ -9126,97 +9126,97 @@ OK:
         percent: 0.1
       '2013':
         revenue: 1613307
-        rank: 6
+        rank: 7
         percent: 0.2
     Unprocessed (Wet) Gas:
       '2004':
         revenue: 8609775
-        rank: 8
-        percent: 0.30000000000000004
+        rank: 9
+        percent: 0.3
       '2005':
         revenue: 8646541
         rank: 9
-        percent: 0.30000000000000004
+        percent: 0.3
       '2006':
         revenue: 9869035
-        rank: 8
+        rank: 9
         percent: 0.5
       '2007':
         revenue: 9564533
-        rank: 8
-        percent: 0.7000000000000001
+        rank: 9
+        percent: 0.7
       '2008':
         revenue: 11261503
         rank: 8
-        percent: 0.7000000000000001
+        percent: 0.7
       '2009':
         revenue: 5530937
-        rank: 8
+        rank: 9
         percent: 1.3
       '2010':
         revenue: 6860678
-        rank: 10
-        percent: 0.7000000000000001
+        rank: 9
+        percent: 0.7
       '2011':
         revenue: 6333352
-        rank: 7
-        percent: 0.7000000000000001
+        rank: 8
+        percent: 0.7
       '2012':
         revenue: 3854774
-        rank: 9
+        rank: 8
         percent: 3.9
       '2013':
         revenue: 3560429
-        rank: 10
+        rank: 9
         percent: 0.9
 OR:
   products:
     All:
       '2004':
         revenue: 71549
-        rank: 11
+        rank: 29
         percent: 0
       '2005':
         revenue: 52179
-        rank: 10
+        rank: 31
         percent: 0
       '2006':
         revenue: 1318016
-        rank: 11
+        rank: 23
         percent: 0
       '2007':
         revenue: 1154263
-        rank: 12
+        rank: 22
         percent: 0
       '2008':
         revenue: 440710
-        rank: 9
+        rank: 28
         percent: 0
       '2009':
         revenue: 1382900
-        rank: 12
+        rank: 22
         percent: 0
       '2010':
         revenue: 674977
-        rank: 11
+        rank: 22
         percent: 0
       '2011':
         revenue: 757976
-        rank: 11
+        rank: 23
         percent: 0
       '2012':
         revenue: 681409
-        rank: 10
+        rank: 23
         percent: 0
       '2013':
         revenue: 616336
-        rank: 11
+        rank: 22
         percent: 0
     Geothermal:
       '2006':
         revenue: 3111
         rank: 5
-        percent: 0.6000000000000001
+        percent: 0.6
       '2007':
         revenue: 200769
         rank: 4
@@ -9248,291 +9248,291 @@ OR:
     'Oil & Gas':
       '2004':
         revenue: 71549
-        rank: 11
+        rank: 19
         percent: 0
       '2005':
         revenue: 52179
-        rank: 13
+        rank: 19
         percent: 0
       '2006':
         revenue: 1314905
-        rank: 10
+        rank: 15
         percent: 0.1
       '2007':
         revenue: 953494
-        rank: 12
+        rank: 16
         percent: 0.1
       '2008':
         revenue: 409116
-        rank: 7
+        rank: 19
         percent: 0
       '2009':
         revenue: 407516
-        rank: 11
+        rank: 15
         percent: 0
       '2010':
         revenue: 391906
-        rank: 13
+        rank: 15
         percent: 0
       '2011':
         revenue: 492137
-        rank: 13
+        rank: 16
         percent: 0.1
       '2012':
         revenue: 427987
-        rank: 9
+        rank: 17
         percent: 0
       '2013':
         revenue: 377474
-        rank: 8
+        rank: 16
         percent: 0
 PA:
   products:
     All:
       '2004':
         revenue: 59320
-        rank: 11
+        rank: 30
         percent: 0
       '2005':
         revenue: 74193
-        rank: 10
+        rank: 30
         percent: 0
       '2006':
         revenue: 196979
-        rank: 11
+        rank: 29
         percent: 0
       '2007':
         revenue: 72178
-        rank: 12
+        rank: 30
         percent: 0
       '2008':
         revenue: 96167
-        rank: 9
+        rank: 30
         percent: 0
       '2009':
         revenue: 104756
-        rank: 12
+        rank: 30
         percent: 0
       '2010':
         revenue: 218067
-        rank: 11
+        rank: 29
         percent: 0
       '2011':
         revenue: 104472
-        rank: 11
+        rank: 29
         percent: 0
       '2012':
         revenue: 141853
-        rank: 10
+        rank: 29
         percent: 0
       '2013':
         revenue: 86450
-        rank: 11
+        rank: 29
         percent: 0
     Condensate:
       '2012':
         revenue: 101
-        rank: 7
+        rank: 14
         percent: 0
     Gas Plant Products:
       '2012':
         revenue: 323
-        rank: 9
+        rank: 14
         percent: 0
       '2013':
         revenue: 2094
-        rank: 9
+        rank: 14
         percent: 0
     Oil:
       '2004':
         revenue: 739
-        rank: 7
+        rank: 24
         percent: 0
       '2007':
         revenue: 374
-        rank: 8
+        rank: 23
         percent: 0
       '2008':
         revenue: 630
-        rank: 9
+        rank: 22
         percent: 0
       '2009':
         revenue: 36882
-        rank: 8
+        rank: 23
         percent: 0
       '2010':
         revenue: 64678
-        rank: 9
+        rank: 22
         percent: 0
       '2011':
         revenue: 29968
-        rank: 8
+        rank: 22
         percent: 0
       '2012':
         revenue: 46754
-        rank: 9
+        rank: 22
         percent: 0
       '2013':
         revenue: 20670
-        rank: 8
+        rank: 22
         percent: 0
     'Oil & Gas':
       '2004':
         revenue: 19675
-        rank: 11
+        rank: 25
         percent: 0
       '2005':
         revenue: 19835
-        rank: 13
+        rank: 23
         percent: 0
       '2006':
         revenue: 129737
-        rank: 11
+        rank: 19
         percent: 0
       '2007':
         revenue: 3618
-        rank: 13
+        rank: 30
         percent: 0
       '2008':
         revenue: 2050
-        rank: 7
+        rank: 30
         percent: 0
       '2009':
         revenue: 3025
-        rank: 11
+        rank: 28
         percent: 0
       '2010':
         revenue: 38768
-        rank: 13
+        rank: 24
         percent: 0
       '2011':
         revenue: 9388
-        rank: 14
+        rank: 29
         percent: 0
       '2012':
         revenue: 23572
-        rank: 9
+        rank: 23
         percent: 0
       '2013':
         revenue: 53530
-        rank: 8
+        rank: 22
         percent: 0
     Processed (Residue) Gas:
       '2005':
         revenue: 19204
-        rank: 7
+        rank: 15
         percent: 0
       '2006':
         revenue: 17093
-        rank: 7
+        rank: 15
         percent: 0
       '2007':
         revenue: 13010
-        rank: 6
+        rank: 16
         percent: 0
       '2008':
         revenue: 20747
-        rank: 7
+        rank: 15
         percent: 0
       '2009':
         revenue: 25511
-        rank: 6
+        rank: 14
         percent: 0
       '2010':
         revenue: 54904
-        rank: 7
+        rank: 14
         percent: 0
       '2011':
         revenue: 21634
-        rank: 8
+        rank: 16
         percent: 0
       '2012':
         revenue: 13046
-        rank: 8
+        rank: 15
         percent: 0
       '2013':
         revenue: 8630
-        rank: 8
+        rank: 13
         percent: 0
     Unprocessed (Wet) Gas:
       '2004':
         revenue: 38906
-        rank: 11
+        rank: 21
         percent: 0
       '2005':
         revenue: 35154
-        rank: 12
+        rank: 22
         percent: 0
       '2006':
         revenue: 50149
-        rank: 11
+        rank: 22
         percent: 0
       '2007':
         revenue: 55175
-        rank: 14
+        rank: 23
         percent: 0
       '2008':
         revenue: 72740
-        rank: 13
+        rank: 21
         percent: 0
       '2009':
         revenue: 39337
-        rank: 14
+        rank: 21
         percent: 0
       '2010':
         revenue: 59717
-        rank: 13
+        rank: 21
         percent: 0
       '2011':
         revenue: 43482
-        rank: 12
+        rank: 21
         percent: 0
       '2012':
         revenue: 58057
-        rank: 15
+        rank: 16
         percent: 0.1
       '2013':
         revenue: 1527
-        rank: 13
+        rank: 22
         percent: 0
 SC:
   products:
     All:
       '2004':
         revenue: 408
-        rank: 11
+        rank: 36
         percent: 0
       '2005':
         revenue: 1110
-        rank: 10
+        rank: 35
         percent: 0
       '2006':
         revenue: 1110
-        rank: 11
+        rank: 35
         percent: 0
       '2008':
         revenue: 2220
-        rank: 9
+        rank: 35
         percent: 0
       '2009':
         revenue: 5651
-        rank: 12
+        rank: 35
         percent: 0
       '2010':
         revenue: 3353
-        rank: 11
+        rank: 36
         percent: 0
       '2011':
         revenue: 3400
-        rank: 11
+        rank: 36
         percent: 0
       '2012':
         revenue: 5516
-        rank: 10
+        rank: 35
         percent: 0
       '2013':
         revenue: 1110
-        rank: 11
+        rank: 36
         percent: 0
     Gold Placer:
       '2009':
@@ -9546,19 +9546,19 @@ SC:
     Hardrock:
       '2004':
         revenue: 408
-        rank: 5
+        rank: 6
         percent: 0.2
       '2005':
         revenue: 1110
-        rank: 5
+        rank: 4
         percent: 2.4
       '2006':
         revenue: 1110
         rank: 6
-        percent: 1.7000000000000002
+        percent: 1.7
       '2008':
         revenue: 2220
-        rank: 4
+        rank: 3
         percent: 12.6
       '2009':
         revenue: 5550
@@ -9578,173 +9578,173 @@ SC:
         percent: 9.7
       '2013':
         revenue: 1110
-        rank: 5
+        rank: 4
         percent: 1.9
 SD:
   products:
     All:
       '2004':
         revenue: 918508
-        rank: 11
+        rank: 22
         percent: 0
       '2005':
         revenue: 1480483
-        rank: 10
+        rank: 20
         percent: 0
       '2006':
         revenue: 1656501
-        rank: 11
+        rank: 22
         percent: 0
       '2007':
         revenue: 2125347
-        rank: 12
+        rank: 21
         percent: 0
       '2008':
         revenue: 2597533
-        rank: 9
+        rank: 20
         percent: 0
       '2009':
         revenue: 1678116
-        rank: 12
+        rank: 20
         percent: 0
       '2010':
         revenue: 1539020
-        rank: 11
+        rank: 20
         percent: 0
       '2011':
         revenue: 2499906
-        rank: 11
+        rank: 19
         percent: 0
       '2012':
         revenue: 3587776
-        rank: 10
+        rank: 19
         percent: 0
       '2013':
         revenue: 2778710
-        rank: 11
+        rank: 19
         percent: 0
     Oil:
       '2004':
         revenue: 659640
-        rank: 7
+        rank: 14
         percent: 0
       '2005':
         revenue: 1135530
-        rank: 9
+        rank: 14
         percent: 0
       '2006':
         revenue: 1308522
-        rank: 9
+        rank: 14
         percent: 0
       '2007':
         revenue: 1374578
-        rank: 8
+        rank: 15
         percent: 0
       '2008':
         revenue: 2309915
-        rank: 9
+        rank: 13
         percent: 0
       '2009':
         revenue: 1071240
-        rank: 8
+        rank: 13
         percent: 0
       '2010':
         revenue: 1275227
-        rank: 9
+        rank: 14
         percent: 0
       '2011':
         revenue: 1916529
-        rank: 8
+        rank: 14
         percent: 0
       '2012':
         revenue: 2047914
-        rank: 9
+        rank: 15
         percent: 0
       '2013':
         revenue: 2004621
-        rank: 8
+        rank: 15
         percent: 0
     'Oil & Gas':
       '2004':
         revenue: 136741
-        rank: 11
+        rank: 17
         percent: 0
       '2005':
         revenue: 200303
-        rank: 13
+        rank: 17
         percent: 0
       '2006':
         revenue: 217948
-        rank: 11
+        rank: 18
         percent: 0
       '2007':
         revenue: 665871
-        rank: 12
+        rank: 18
         percent: 0.1
       '2008':
         revenue: 169735
-        rank: 7
+        rank: 23
         percent: 0
       '2009':
         revenue: 372781
-        rank: 11
+        rank: 17
         percent: 0
       '2010':
         revenue: 123721
-        rank: 13
+        rank: 21
         percent: 0
       '2011':
         revenue: 492107
-        rank: 13
+        rank: 17
         percent: 0.1
       '2012':
         revenue: 1494999
-        rank: 8
+        rank: 14
         percent: 0.1
       '2013':
         revenue: 726801
-        rank: 8
+        rank: 12
         percent: 0
     Unprocessed (Wet) Gas:
       '2004':
         revenue: 122127
-        rank: 11
+        rank: 19
         percent: 0
       '2005':
         revenue: 144650
-        rank: 12
+        rank: 21
         percent: 0
       '2006':
         revenue: 130031
-        rank: 11
+        rank: 21
         percent: 0
       '2007':
         revenue: 84898
-        rank: 14
+        rank: 22
         percent: 0
       '2008':
         revenue: 117883
-        rank: 13
+        rank: 20
         percent: 0
       '2009':
         revenue: 234095
-        rank: 13
+        rank: 18
         percent: 0.1
       '2010':
         revenue: 140072
-        rank: 13
+        rank: 18
         percent: 0
       '2011':
         revenue: 91270
-        rank: 12
+        rank: 18
         percent: 0
       '2012':
         revenue: 44863
-        rank: 16
+        rank: 19
         percent: 0
       '2013':
         revenue: 47288
-        rank: 13
+        rank: 19
         percent: 0
 TX:
   products:
@@ -9755,32 +9755,32 @@ TX:
         percent: 0.2
       '2005':
         revenue: 37197008
-        rank: 7
+        rank: 9
         percent: 0.4
       '2006':
         revenue: 24936513
-        rank: 9
+        rank: 10
         percent: 0.2
       '2007':
         revenue: 28623888
-        rank: 9
-        percent: 0.30000000000000004
+        rank: 10
+        percent: 0.3
       '2008':
         revenue: 40576686
-        rank: 7
+        rank: 10
         percent: 0.2
       '2009':
         revenue: 25714503
         rank: 9
-        percent: 0.30000000000000004
+        percent: 0.3
       '2010':
         revenue: 58468677
-        rank: 7
-        percent: 0.6000000000000001
+        rank: 8
+        percent: 0.6
       '2011':
         revenue: 38037381
         rank: 8
-        percent: 0.30000000000000004
+        percent: 0.3
       '2012':
         revenue: 29126382
         rank: 8
@@ -9788,11 +9788,11 @@ TX:
       '2013':
         revenue: 31143993
         rank: 8
-        percent: 0.30000000000000004
+        percent: 0.3
     Condensate:
       '2004':
         revenue: 204025
-        rank: 5
+        rank: 7
         percent: 0.1
       '2005':
         revenue: 282711
@@ -9828,20 +9828,20 @@ TX:
         percent: 0.2
       '2013':
         revenue: 589531
-        rank: 6
+        rank: 8
         percent: 0.1
     Drip or Scrubber Condensate:
       '2004':
         revenue: 4056
-        rank: 3
+        rank: 4
         percent: 0
       '2005':
         revenue: 2632
-        rank: 6
+        rank: 7
         percent: 0
       '2006':
         revenue: 4044
-        rank: 5
+        rank: 6
         percent: 0
       '2007':
         revenue: 2444
@@ -9853,7 +9853,7 @@ TX:
         percent: 0
       '2010':
         revenue: 113
-        rank: 4
+        rank: 8
         percent: 0
       '2011':
         revenue: 951
@@ -9861,20 +9861,20 @@ TX:
         percent: 0
       '2012':
         revenue: 1017
-        rank: 8
+        rank: 9
         percent: 0
       '2013':
         revenue: -189
-        rank: 6
+        rank: 7
         percent: 0
     Flash Gas:
       '2004':
         revenue: -43
-        rank: 3
+        rank: 2
         percent: 0
       '2006':
         revenue: 2964
-        rank: 1
+        rank: 2
         percent: 0.2
       '2007':
         revenue: 536
@@ -9886,16 +9886,16 @@ TX:
         percent: 0
       '2012':
         revenue: -1921
-        rank: 1
+        rank: 3
         percent: 0.1
     Fuel Gas:
       '2004':
         revenue: 1377
-        rank: 2
+        rank: 4
         percent: 0
       '2005':
         revenue: 4314
-        rank: 3
+        rank: 2
         percent: 0.1
       '2006':
         revenue: 3322
@@ -9903,7 +9903,7 @@ TX:
         percent: 0.1
       '2007':
         revenue: 3026
-        rank: 1
+        rank: 3
         percent: 0.1
       '2008':
         revenue: 303439
@@ -9912,10 +9912,10 @@ TX:
       '2009':
         revenue: 12674
         rank: 3
-        percent: 0.30000000000000004
+        percent: 0.3
       '2010':
         revenue: -1
-        rank: 5
+        rank: 7
         percent: 0
       '2011':
         revenue: 1218
@@ -9927,28 +9927,28 @@ TX:
         percent: 0.1
       '2013':
         revenue: 2838
-        rank: 8
+        rank: 10
         percent: 0
     Gas Plant Products:
       '2004':
         revenue: 142022
-        rank: 5
+        rank: 10
         percent: 0.1
       '2005':
         revenue: 182089
-        rank: 6
+        rank: 10
         percent: 0.1
       '2006':
         revenue: 143345
-        rank: 8
+        rank: 11
         percent: 0
       '2007':
         revenue: 151746
-        rank: 7
+        rank: 11
         percent: 0
       '2008':
         revenue: 258099
-        rank: 6
+        rank: 11
         percent: 0
       '2009':
         revenue: 563469
@@ -9956,29 +9956,29 @@ TX:
         percent: 0.2
       '2010':
         revenue: 541799
-        rank: 7
+        rank: 8
         percent: 0.1
       '2011':
         revenue: -1283627
-        rank: 7
+        rank: 15
         percent: 0.2
       '2012':
         revenue: 455172
-        rank: 8
+        rank: 10
         percent: 0.1
       '2013':
         revenue: 258039
-        rank: 8
+        rank: 10
         percent: 0.1
     Inlet Scrubber:
       '2005':
         revenue: -405
-        rank: 3
+        rank: 4
         percent: 0.1
     Oil:
       '2004':
         revenue: 1717294
-        rank: 6
+        rank: 8
         percent: 0.1
       '2005':
         revenue: 2429447
@@ -9986,40 +9986,40 @@ TX:
         percent: 0.1
       '2006':
         revenue: 2229674
-        rank: 8
+        rank: 11
         percent: 0.1
       '2007':
         revenue: 2859317
-        rank: 7
+        rank: 10
         percent: 0.1
       '2008':
         revenue: 3140443
-        rank: 8
+        rank: 11
         percent: 0.1
       '2009':
         revenue: 1474830
-        rank: 7
+        rank: 11
         percent: 0.1
       '2010':
         revenue: 2504741
-        rank: 8
+        rank: 9
         percent: 0.1
       '2011':
         revenue: 2669550
-        rank: 8
+        rank: 12
         percent: 0
       '2012':
         revenue: 2896993
-        rank: 8
+        rank: 13
         percent: 0.1
       '2013':
         revenue: 2577712
-        rank: 8
+        rank: 14
         percent: 0
     'Oil & Gas':
       '2004':
         revenue: 414560
-        rank: 11
+        rank: 14
         percent: 0
       '2005':
         revenue: 13812185
@@ -10027,15 +10027,15 @@ TX:
         percent: 1.5
       '2006':
         revenue: 2982552
-        rank: 9
+        rank: 13
         percent: 0.2
       '2007':
         revenue: 4614747
-        rank: 10
+        rank: 11
         percent: 0.4
       '2008':
         revenue: 11119123
-        rank: 6
+        rank: 8
         percent: 0.1
       '2009':
         revenue: 12989118
@@ -10051,58 +10051,58 @@ TX:
         percent: 2.7
       '2012':
         revenue: 3562711
-        rank: 8
+        rank: 13
         percent: 0.1
       '2013':
         revenue: 6719140
-        rank: 6
-        percent: 0.30000000000000004
+        rank: 7
+        percent: 0.3
     Processed (Residue) Gas:
       '2004':
         revenue: 258431
-        rank: 6
+        rank: 10
         percent: 0
       '2005':
         revenue: 285511
-        rank: 7
+        rank: 11
         percent: 0
       '2006':
         revenue: 798960
-        rank: 7
+        rank: 11
         percent: 0
       '2007':
         revenue: 896380
-        rank: 6
+        rank: 8
         percent: 0
       '2008':
         revenue: 1149461
-        rank: 7
+        rank: 10
         percent: 0
       '2009':
         revenue: 969810
-        rank: 5
+        rank: 6
         percent: 0.1
       '2010':
         revenue: 1373103
-        rank: 6
+        rank: 7
         percent: 0.1
       '2011':
         revenue: 131459
-        rank: 8
+        rank: 12
         percent: 0
       '2012':
         revenue: 1006015
-        rank: 7
+        rank: 8
         percent: 0.1
       '2013':
         revenue: -800941
-        rank: 7
+        rank: 19
         percent: 0.1
     Unprocessed (Wet) Gas:
       '2004':
         revenue: 15109682
         rank: 5
-        percent: 0.6000000000000001
+        percent: 0.6
       '2005':
         revenue: 20198525
         rank: 6
@@ -10125,7 +10125,7 @@ TX:
         percent: 2
       '2010':
         revenue: 9378924
-        rank: 8
+        rank: 7
         percent: 0.9
       '2011':
         revenue: 18100209
@@ -10133,11 +10133,11 @@ TX:
         percent: 2
       '2012':
         revenue: 19366338
-        rank: 5
+        rank: 4
         percent: 19.6
       '2013':
         revenue: 21797863
-        rank: 4
+        rank: 3
         percent: 5.3
 UT:
   products:
@@ -10145,7 +10145,7 @@ UT:
       '2004':
         revenue: 138905458
         rank: 4
-        percent: 1.7000000000000002
+        percent: 1.7
       '2005':
         revenue: 210246269
         rank: 4
@@ -10161,14 +10161,14 @@ UT:
       '2008':
         revenue: 397845150
         rank: 4
-        percent: 1.7000000000000002
+        percent: 1.7
       '2009':
         revenue: 223320597
         rank: 3
         percent: 2.8
       '2010':
         revenue: 299361181
-        rank: 3
+        rank: 4
         percent: 2.9
       '2011':
         revenue: 309003829
@@ -10283,7 +10283,7 @@ UT:
         percent: 2.4
       '2012':
         revenue: 37646972
-        rank: 3
+        rank: 4
         percent: 2.8
       '2013':
         revenue: 39709449
@@ -10324,7 +10324,7 @@ UT:
         percent: 2
       '2012':
         revenue: -5414990
-        rank: 3
+        rank: 9
         percent: 2.6
       '2013':
         revenue: 13286283
@@ -10354,7 +10354,7 @@ UT:
     Condensate:
       '2004':
         revenue: 1942326
-        rank: 3
+        rank: 4
         percent: 0.8
       '2005':
         revenue: 4731397
@@ -10395,7 +10395,7 @@ UT:
     Drip or Scrubber Condensate:
       '2004':
         revenue: 2173
-        rank: 3
+        rank: 6
         percent: 0
       '2005':
         revenue: 3275
@@ -10408,10 +10408,10 @@ UT:
       '2007':
         revenue: 37207
         rank: 4
-        percent: 0.30000000000000004
+        percent: 0.3
       '2008':
         revenue: -31065
-        rank: 4
+        rank: 10
         percent: 0.2
       '2009':
         revenue: 18438
@@ -10419,15 +10419,15 @@ UT:
         percent: 0.2
       '2010':
         revenue: 594
-        rank: 4
+        rank: 6
         percent: 0
       '2011':
         revenue: 31449
         rank: 5
-        percent: 0.30000000000000004
+        percent: 0.3
       '2012':
         revenue: 9095
-        rank: 7
+        rank: 8
         percent: 0.4
       '2013':
         revenue: 1711
@@ -10440,20 +10440,20 @@ UT:
         percent: 1.9
       '2011':
         revenue: -2599
-        rank: 3
+        rank: 7
         percent: 0.1
       '2012':
         revenue: 16
-        rank: 5
+        rank: 6
         percent: 0
       '2013':
         revenue: 44448
-        rank: 4
-        percent: 0.7000000000000001
+        rank: 5
+        percent: 0.7
     Gas Lost - Flared or Vented:
       '2005':
         revenue: -1463
-        rank: 3
+        rank: 4
         percent: 0.5
       '2011':
         revenue: 321
@@ -10471,18 +10471,18 @@ UT:
       '2005':
         revenue: 1698274
         rank: 4
-        percent: 0.6000000000000001
+        percent: 0.6
       '2006':
         revenue: 2076105
         rank: 4
-        percent: 0.7000000000000001
+        percent: 0.7
       '2007':
         revenue: 2879773
         rank: 4
-        percent: 0.7000000000000001
+        percent: 0.7
       '2008':
         revenue: 10848455
-        rank: 3
+        rank: 4
         percent: 2
       '2009':
         revenue: 10106510
@@ -10507,7 +10507,7 @@ UT:
     Geothermal:
       '2004':
         revenue: -75013
-        rank: 3
+        rank: 5
         percent: 0.9
       '2005':
         revenue: 3329
@@ -10523,7 +10523,7 @@ UT:
         percent: 0
       '2008':
         revenue: 19933
-        rank: 3
+        rank: 5
         percent: 0.1
       '2009':
         revenue: 8986604
@@ -10646,11 +10646,11 @@ UT:
         percent: 2.6
       '2008':
         revenue: 928
-        rank: 7
+        rank: 6
         percent: 5.3
       '2009':
         revenue: 1088
-        rank: 6
+        rank: 5
         percent: 1.9
     Inlet Scrubber:
       '2013':
@@ -10757,7 +10757,7 @@ UT:
     Oil:
       '2004':
         revenue: 14390902
-        rank: 5
+        rank: 6
         percent: 1
       '2005':
         revenue: 27382435
@@ -10769,7 +10769,7 @@ UT:
         percent: 1.2
       '2007':
         revenue: 51431803
-        rank: 4
+        rank: 5
         percent: 1.3
       '2008':
         revenue: 92814360
@@ -10790,10 +10790,10 @@ UT:
       '2012':
         revenue: 99568624
         rank: 5
-        percent: 1.7000000000000002
+        percent: 1.7
       '2013':
         revenue: 111710147
-        rank: 4
+        rank: 5
         percent: 1.8
     'Oil & Gas':
       '2004':
@@ -10814,12 +10814,12 @@ UT:
         percent: 4
       '2008':
         revenue: 26853127
-        rank: 4
-        percent: 0.30000000000000004
+        rank: 5
+        percent: 0.3
       '2009':
         revenue: 9068846
-        rank: 6
-        percent: 0.6000000000000001
+        rank: 7
+        percent: 0.6
       '2010':
         revenue: 12861704
         rank: 6
@@ -10835,15 +10835,15 @@ UT:
       '2013':
         revenue: 11456402
         rank: 4
-        percent: 0.6000000000000001
+        percent: 0.6
     Oil Shale:
       '2012':
         revenue: 320
-        rank: 1
+        rank: 2
         percent: 0
       '2013':
         revenue: 320
-        rank: 1
+        rank: 2
         percent: 0
     Phosphate:
       '2004':
@@ -10931,7 +10931,7 @@ UT:
       '2004':
         revenue: 3395
         rank: 3
-        percent: 1.7000000000000002
+        percent: 1.7
       '2005':
         revenue: 61704
         rank: 2
@@ -10947,7 +10947,7 @@ UT:
       '2008':
         revenue: 23816
         rank: 2
-        percent: 1.7000000000000002
+        percent: 1.7
       '2009':
         revenue: 23816
         rank: 2
@@ -10976,7 +10976,7 @@ UT:
       '2005':
         revenue: 13088860
         rank: 4
-        percent: 0.6000000000000001
+        percent: 0.6
       '2006':
         revenue: 21623658
         rank: 4
@@ -10984,7 +10984,7 @@ UT:
       '2007':
         revenue: 7857711
         rank: 5
-        percent: 0.30000000000000004
+        percent: 0.3
       '2008':
         revenue: 107166786
         rank: 4
@@ -11053,7 +11053,7 @@ UT:
     Sodium:
       '2007':
         revenue: -7683
-        rank: 3
+        rank: 6
         percent: 10.1
     Tar Sands:
       '2004':
@@ -11115,59 +11115,59 @@ UT:
         percent: 1.4
       '2012':
         revenue: 28027938
-        rank: 4
+        rank: 3
         percent: 28.3
       '2013':
         revenue: 8832682
-        rank: 5
+        rank: 4
         percent: 2.2
 VA:
   products:
     All:
       '2004':
         revenue: 109544
-        rank: 11
+        rank: 27
         percent: 0
       '2005':
         revenue: 612004
-        rank: 10
+        rank: 25
         percent: 0
       '2006':
         revenue: 394288
-        rank: 11
+        rank: 26
         percent: 0
       '2007':
         revenue: 456872
-        rank: 12
+        rank: 28
         percent: 0
       '2008':
         revenue: 704746
-        rank: 9
+        rank: 25
         percent: 0
       '2009':
         revenue: 181925
-        rank: 12
+        rank: 28
         percent: 0
       '2010':
         revenue: 257167
-        rank: 11
+        rank: 28
         percent: 0
       '2011':
         revenue: 73162
-        rank: 11
+        rank: 30
         percent: 0
       '2012':
         revenue: 203257
-        rank: 10
+        rank: 28
         percent: 0
       '2013':
         revenue: 144738
-        rank: 11
+        rank: 28
         percent: 0
     Hardrock:
       '2006':
         revenue: 710
-        rank: 7
+        rank: 8
         percent: 1.1
       '2007':
         revenue: 710
@@ -11175,15 +11175,15 @@ VA:
         percent: 1.6
       '2008':
         revenue: 888
-        rank: 8
+        rank: 7
         percent: 5
       '2009':
         revenue: -3018
-        rank: 5
+        rank: 11
         percent: 5.2
       '2010':
         revenue: -355
-        rank: 5
+        rank: 9
         percent: 0.9
       '2011':
         revenue: 1420
@@ -11192,10 +11192,10 @@ VA:
       '2012':
         revenue: 355
         rank: 7
-        percent: 0.6000000000000001
+        percent: 0.6
       '2013':
         revenue: -2840
-        rank: 3
+        rank: 10
         percent: 4.9
     Limestone:
       '2004':
@@ -11241,178 +11241,178 @@ VA:
     Oil:
       '2013':
         revenue: 92
-        rank: 8
+        rank: 24
         percent: 0
     'Oil & Gas':
       '2004':
         revenue: 18521
-        rank: 11
+        rank: 26
         percent: 0
       '2005':
         revenue: 17859
-        rank: 13
+        rank: 24
         percent: 0
       '2006':
         revenue: 19255
-        rank: 11
+        rank: 26
         percent: 0
       '2007':
         revenue: 18991
-        rank: 13
+        rank: 25
         percent: 0
       '2008':
         revenue: 170845
-        rank: 7
+        rank: 22
         percent: 0
       '2009':
         revenue: 43506
-        rank: 11
+        rank: 22
         percent: 0
       '2010':
         revenue: 28516
-        rank: 13
+        rank: 27
         percent: 0
       '2011':
         revenue: 12238
-        rank: 14
+        rank: 27
         percent: 0
       '2012':
         revenue: 35299
-        rank: 9
+        rank: 22
         percent: 0
       '2013':
         revenue: 31367
-        rank: 8
+        rank: 26
         percent: 0
     Processed (Residue) Gas:
       '2011':
         revenue: 16
-        rank: 8
+        rank: 19
         percent: 0
     Unprocessed (Wet) Gas:
       '2004':
         revenue: 31358
-        rank: 11
+        rank: 22
         percent: 0
       '2005':
         revenue: 572725
-        rank: 12
+        rank: 16
         percent: 0
       '2006':
         revenue: 342675
-        rank: 11
+        rank: 19
         percent: 0
       '2007':
         revenue: 361355
-        rank: 14
+        rank: 17
         percent: 0
       '2008':
         revenue: 426356
-        rank: 13
+        rank: 17
         percent: 0
       '2009':
         revenue: 27922
-        rank: 14
+        rank: 22
         percent: 0
       '2010':
         revenue: 111609
-        rank: 13
+        rank: 19
         percent: 0
       '2011':
         revenue: -52947
-        rank: 12
+        rank: 23
         percent: 0
       '2012':
         revenue: 39176
-        rank: 16
+        rank: 20
         percent: 0
       '2013':
         revenue: 55417
-        rank: 13
+        rank: 17
         percent: 0
 WA:
   products:
     All:
       '2004':
         revenue: 2867508
-        rank: 11
+        rank: 16
         percent: 0
       '2005':
         revenue: 946933
-        rank: 10
+        rank: 22
         percent: 0
       '2006':
         revenue: 5623465
-        rank: 11
+        rank: 16
         percent: 0
       '2007':
         revenue: 990530
-        rank: 12
+        rank: 23
         percent: 0
       '2008':
         revenue: 1195894
-        rank: 9
+        rank: 23
         percent: 0
       '2009':
         revenue: 1051969
-        rank: 12
+        rank: 23
         percent: 0
       '2010':
         revenue: 540757
-        rank: 11
+        rank: 25
         percent: 0
       '2011':
         revenue: 398079
-        rank: 11
+        rank: 26
         percent: 0
       '2012':
         revenue: 11122
-        rank: 10
+        rank: 33
         percent: 0
       '2013':
         revenue: 10843
-        rank: 11
+        rank: 33
         percent: 0
     Coal:
       '2004':
         revenue: 25518
-        rank: 7
+        rank: 8
         percent: 0
       '2005':
         revenue: 5219
-        rank: 7
+        rank: 11
         percent: 0
       '2006':
         revenue: 12235
-        rank: 8
+        rank: 10
         percent: 0
       '2007':
         revenue: -45938
-        rank: 8
+        rank: 11
         percent: 0
       '2008':
         revenue: 2992
-        rank: 7
+        rank: 11
         percent: 0
       '2009':
         revenue: 2406
-        rank: 7
+        rank: 10
         percent: 0
       '2010':
         revenue: 726
-        rank: 8
+        rank: 11
         percent: 0
       '2011':
         revenue: 1566
-        rank: 8
+        rank: 10
         percent: 0
       '2012':
         revenue: 1566
-        rank: 7
+        rank: 10
         percent: 0
       '2013':
         revenue: 2406
-        rank: 9
+        rank: 10
         percent: 0
     Coal-Subbituminous-Processed:
       '2008':
@@ -11422,207 +11422,207 @@ WA:
     Geothermal:
       '2011':
         revenue: 16874
-        rank: 7
+        rank: 8
         percent: 0.4
       '2013':
         revenue: 8437
         rank: 8
-        percent: 0.30000000000000004
+        percent: 0.3
     'Oil & Gas':
       '2004':
         revenue: 2841990
-        rank: 8
-        percent: 0.30000000000000004
+        rank: 9
+        percent: 0.3
       '2005':
         revenue: 941715
-        rank: 12
+        rank: 13
         percent: 0.1
       '2006':
         revenue: 5611230
-        rank: 8
-        percent: 0.30000000000000004
+        rank: 9
+        percent: 0.3
       '2007':
         revenue: 1036468
-        rank: 12
+        rank: 15
         percent: 0.1
       '2008':
         revenue: 988029
-        rank: 7
+        rank: 15
         percent: 0
       '2009':
         revenue: 1049563
-        rank: 10
+        rank: 12
         percent: 0.1
       '2010':
         revenue: 540031
-        rank: 13
+        rank: 14
         percent: 0
       '2011':
         revenue: 379639
-        rank: 13
+        rank: 19
         percent: 0.1
       '2012':
         revenue: 9556
-        rank: 9
+        rank: 29
         percent: 0
 WV:
   products:
     All:
       '2004':
         revenue: 941015
-        rank: 11
+        rank: 21
         percent: 0
       '2005':
         revenue: 1123590
-        rank: 10
+        rank: 21
         percent: 0
       '2006':
         revenue: 1046552
-        rank: 11
+        rank: 24
         percent: 0
       '2007':
         revenue: 938147
-        rank: 12
+        rank: 24
         percent: 0
       '2008':
         revenue: 2225379
-        rank: 9
+        rank: 21
         percent: 0
       '2009':
         revenue: 676163
-        rank: 12
+        rank: 24
         percent: 0
       '2010':
         revenue: 615872
-        rank: 11
+        rank: 23
         percent: 0
       '2011':
         revenue: 951280
-        rank: 11
+        rank: 22
         percent: 0
       '2012':
         revenue: 471795
-        rank: 10
+        rank: 25
         percent: 0
       '2013':
         revenue: 548299
-        rank: 11
+        rank: 23
         percent: 0
     Oil:
       '2004':
         revenue: 922
-        rank: 7
+        rank: 23
         percent: 0
       '2005':
         revenue: 263
-        rank: 9
+        rank: 22
         percent: 0
       '2006':
         revenue: 996
-        rank: 9
+        rank: 22
         percent: 0
       '2007':
         revenue: 606
-        rank: 8
+        rank: 22
         percent: 0
       '2010':
         revenue: 174
-        rank: 9
+        rank: 24
         percent: 0
       '2012':
         revenue: 1
-        rank: 9
+        rank: 24
         percent: 0
     'Oil & Gas':
       '2004':
         revenue: 275477
-        rank: 11
+        rank: 15
         percent: 0
       '2005':
         revenue: 202988
-        rank: 13
+        rank: 16
         percent: 0
       '2006':
         revenue: 343300
-        rank: 11
+        rank: 16
         percent: 0
       '2007':
         revenue: 89486
-        rank: 13
+        rank: 23
         percent: 0
       '2008':
         revenue: 1171381
-        rank: 7
+        rank: 14
         percent: 0
       '2009':
         revenue: 168324
-        rank: 11
+        rank: 19
         percent: 0
       '2010':
         revenue: 232933
-        rank: 13
+        rank: 18
         percent: 0
       '2011':
         revenue: 449492
-        rank: 13
+        rank: 18
         percent: 0.1
       '2012':
         revenue: 322361
-        rank: 9
+        rank: 18
         percent: 0
       '2013':
         revenue: 477140
-        rank: 8
+        rank: 14
         percent: 0
     Processed (Residue) Gas:
       '2005':
         revenue: 7023
-        rank: 7
+        rank: 17
         percent: 0
       '2008':
         revenue: 10746
-        rank: 7
+        rank: 16
         percent: 0
       '2009':
         revenue: 1178
-        rank: 6
+        rank: 18
         percent: 0
       '2010':
         revenue: 911
-        rank: 7
+        rank: 17
         percent: 0
       '2011':
         revenue: 706
-        rank: 8
+        rank: 18
         percent: 0
       '2012':
         revenue: 291
-        rank: 8
+        rank: 18
         percent: 0
     Unprocessed (Wet) Gas:
       '2004':
         revenue: 664615
-        rank: 11
+        rank: 14
         percent: 0
       '2005':
         revenue: 913316
-        rank: 12
+        rank: 14
         percent: 0
       '2006':
         revenue: 702256
-        rank: 11
+        rank: 15
         percent: 0
       '2007':
         revenue: 848055
-        rank: 13
+        rank: 15
         percent: 0.1
       '2008':
         revenue: 1043252
-        rank: 12
+        rank: 14
         percent: 0.1
       '2009':
         revenue: 506661
-        rank: 13
+        rank: 15
         percent: 0.1
       '2010':
         revenue: 381853
@@ -11630,7 +11630,7 @@ WV:
         percent: 0
       '2011':
         revenue: 501082
-        rank: 11
+        rank: 14
         percent: 0.1
       '2012':
         revenue: 149143
@@ -11638,7 +11638,7 @@ WV:
         percent: 0.2
       '2013':
         revenue: 71159
-        rank: 13
+        rank: 15
         percent: 0
 WY:
   products:
@@ -11697,7 +11697,7 @@ WY:
       '2004':
         revenue: 95124
         rank: 3
-        percent: 0.7000000000000001
+        percent: 0.7
       '2005':
         revenue: 88213
         rank: 3
@@ -11720,12 +11720,12 @@ WY:
         percent: 0.2
       '2010':
         revenue: -86581
-        rank: 3
+        rank: 4
         percent: 0.2
       '2011':
         revenue: 287738
         rank: 3
-        percent: 0.6000000000000001
+        percent: 0.6
       '2012':
         revenue: 656148
         rank: 3
@@ -11828,7 +11828,7 @@ WY:
     Coal-Subbituminous-Raw:
       '2004':
         revenue: -42393
-        rank: 3
+        rank: 1
         percent: 1.5
       '2005':
         revenue: 180987
@@ -11910,7 +11910,7 @@ WY:
         percent: 5.7
       '2011':
         revenue: 165018
-        rank: 3
+        rank: 2
         percent: 1.5
       '2012':
         revenue: 539111
@@ -11923,12 +11923,12 @@ WY:
     Flash Gas:
       '2012':
         revenue: 218
-        rank: 2
+        rank: 1
         percent: 0
       '2013':
         revenue: 9604
         rank: 1
-        percent: 0.6000000000000001
+        percent: 0.6
     Fuel Gas:
       '2004':
         revenue: 5443
@@ -11936,15 +11936,15 @@ WY:
         percent: 0.1
       '2005':
         revenue: 18464
-        rank: 2
-        percent: 0.30000000000000004
+        rank: 1
+        percent: 0.3
       '2006':
         revenue: 28453
         rank: 1
-        percent: 0.6000000000000001
+        percent: 0.6
       '2007':
         revenue: 3456
-        rank: 1
+        rank: 2
         percent: 0.1
       '2008':
         revenue: 28296
@@ -11960,12 +11960,12 @@ WY:
         percent: 2.6
       '2011':
         revenue: -302866
-        rank: 1
+        rank: 8
         percent: 5.8
       '2012':
         revenue: 11062
         rank: 3
-        percent: 0.30000000000000004
+        percent: 0.3
       '2013':
         revenue: 440475
         rank: 2
@@ -11986,7 +11986,7 @@ WY:
         percent: 0.1
       '2005':
         revenue: 679
-        rank: 4
+        rank: 3
         percent: 0.2
       '2013':
         revenue: 13739
@@ -12036,12 +12036,12 @@ WY:
     Hardrock:
       '2004':
         revenue: 320
-        rank: 5
+        rank: 7
         percent: 0.2
     Helium:
       '2004':
         revenue: -21423
-        rank: 1
+        rank: 2
         percent: 100.3
       '2005':
         revenue: 9563
@@ -12049,7 +12049,7 @@ WY:
         percent: 100
       '2006':
         revenue: -234
-        rank: 1
+        rank: 2
         percent: 80.3
     Inlet Scrubber:
       '2005':
@@ -12066,11 +12066,11 @@ WY:
         percent: 95.7
       '2008':
         revenue: 7872
-        rank: 2
+        rank: 1
         percent: 4.3
       '2009':
         revenue: -1087305
-        rank: 1
+        rank: 2
         percent: 128
       '2010':
         revenue: 18465
@@ -12301,12 +12301,12 @@ WY:
         percent: 0.2
       '2007':
         revenue: 355
-        rank: 4
+        rank: 5
         percent: 0.2
       '2008':
         revenue: 458
         rank: 4
-        percent: 0.30000000000000004
+        percent: 0.3
       '2009':
         revenue: 432
         rank: 4
@@ -12318,7 +12318,7 @@ WY:
       '2011':
         revenue: 1691
         rank: 5
-        percent: 0.6000000000000001
+        percent: 0.6
       '2012':
         revenue: 2374
         rank: 4
@@ -12371,11 +12371,11 @@ WY:
     Soda Ash-Granular:
       '2004':
         revenue: -583138
-        rank: 1
+        rank: 3
         percent: 129.6
       '2005':
         revenue: 7880
-        rank: 2
+        rank: 1
         percent: 1.1
       '2007':
         revenue: 7508
@@ -12700,7 +12700,7 @@ WY:
         percent: 44.4
       '2012':
         revenue: -132500520
-        rank: 1
+        rank: 23
         percent: 133.8
       '2013':
         revenue: 187520719

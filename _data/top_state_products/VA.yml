@@ -1,7 +1,7 @@
 revenue:
   '2004':
     - product: Limestone
-      value: 59664.729999999996
+      value: 59664.73
       rank: 1
       percent: 100
   '2005':
@@ -28,15 +28,15 @@ revenue:
     - product: Limestone
       value: 113515.27
       rank: 1
-      percent: 99.78902076360946
+      percent: 99.79
   '2010':
     - product: Limestone
       value: 117397.69
       rank: 1
-      percent: 100.17065182769385
+      percent: 100.17
   '2011':
     - product: Limestone
-      value: 112434.95999999999
+      value: 112434.96
       rank: 1
       percent: 100
   '2012':
@@ -54,4 +54,4 @@ all_production:
     - product: Natural Gas (MMcf)
       value: 131885
       rank: 2
-      percent: 20.806809128270665
+      percent: 20.81

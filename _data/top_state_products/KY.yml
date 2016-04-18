@@ -3,42 +3,42 @@ all_production:
     - product: Natural Gas (MMcf)
       value: 89174
       rank: 2
-      percent: 26.258462136448358
+      percent: 26.26
   '1968':
     - product: Natural Gas (MMcf)
       value: 89039
       rank: 2
-      percent: 27.03739242920217
+      percent: 27.04
   '1969':
     - product: Natural Gas (MMcf)
       value: 81304
       rank: 2
-      percent: 26.104322252117463
+      percent: 26.1
   '1970':
     - product: Natural Gas (MMcf)
       value: 77892
       rank: 2
-      percent: 26.28405214157727
+      percent: 26.28
   '1971':
     - product: Natural Gas (MMcf)
       value: 72723
       rank: 2
-      percent: 28.575526338538424
+      percent: 28.58
   '1972':
     - product: Natural Gas (MMcf)
       value: 63648
       rank: 2
-      percent: 24.97469099470276
+      percent: 24.97
   '1973':
     - product: Natural Gas (MMcf)
       value: 62396
       rank: 2
-      percent: 21.51415577385243
+      percent: 21.51
   '1974':
     - product: Natural Gas (MMcf)
       value: 71876
       rank: 2
-      percent: 21.909473600785223
+      percent: 21.91
 revenue:
   '2005':
     - product: Oil Lost

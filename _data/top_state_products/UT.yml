@@ -38,9 +38,9 @@ revenue:
       rank: 1
       percent: 100
     - product: Clay
-      value: 3198.4500000000003
+      value: 3198.45
       rank: 2
-      percent: 20.664024266152403
+      percent: 20.66
   '2006':
     - product: Gilsonite
       value: 511866.09
@@ -68,7 +68,7 @@ revenue:
       rank: 1
       percent: 100
     - product: Muriate Of Potash-Coarse
-      value: -1873.1499999999999
+      value: -1873.15
       rank: 1
       percent: 100
     - product: Tar Sands
@@ -78,11 +78,11 @@ revenue:
     - product: Coal-Bituminous-Raw
       value: 103776.66
       rank: 1
-      percent: 79.28023332271188
+      percent: 79.28
     - product: Clay
       value: 6082.17
       rank: 2
-      percent: 32.05364751564823
+      percent: 32.05
   '2008':
     - product: Clay
       value: 5002.92
@@ -105,13 +105,13 @@ revenue:
       rank: 1
       percent: 100
     - product: Potash
-      value: 394106.33999999997
+      value: 394106.34
       rank: 1
-      percent: 66.06781123913576
+      percent: 66.07
     - product: Phosphate
       value: 34847
       rank: 2
-      percent: 20.662195895666194
+      percent: 20.66
   '2009':
     - product: Clay
       value: 2271.94
@@ -136,14 +136,14 @@ revenue:
     - product: Geothermal
       value: 8986604
       rank: 2
-      percent: 43.84938497032058
+      percent: 43.85
   '2010':
     - product: Clay
       value: 3073.02
       rank: 1
       percent: 100
     - product: Gilsonite
-      value: 1882318.6900000002
+      value: 1882318.69
       rank: 1
       percent: 100
     - product: Magnesium Chloride Brine
@@ -160,7 +160,7 @@ revenue:
       percent: 100
   '2011':
     - product: Clay
-      value: 4537.280000000001
+      value: 4537.28
       rank: 1
       percent: 100
     - product: Gilsonite
@@ -176,9 +176,9 @@ revenue:
       rank: 1
       percent: 100
     - product: Potassium
-      value: 21074811.479999997
+      value: 21074811.48
       rank: 1
-      percent: 98.57692055479215
+      percent: 98.58
   '2012':
     - product: Clay
       value: 4641.31
@@ -197,12 +197,12 @@ revenue:
       rank: 1
       percent: 100
     - product: Unprocessed (Wet) Gas
-      value: 28027937.81000001
+      value: 28027937.81
       rank: 3
-      percent: 28.299545116698596
+      percent: 28.3
   '2013':
     - product: Clay
-      value: 5400.610000000001
+      value: 5400.61
       rank: 1
       percent: 100
     - product: Gilsonite
@@ -222,7 +222,7 @@ federal_production:
     - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
       value: 2290182691.15
       rank: 1
-      percent: 97.72991355934059
+      percent: 97.73
   '2006':
     - product: Gilsonite (tons)
       value: 8776
@@ -231,7 +231,7 @@ federal_production:
     - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
       value: 2350934232.59
       rank: 1
-      percent: 97.78129252853327
+      percent: 97.78
   '2007':
     - product: Gilsonite (tons)
       value: 10879
@@ -240,7 +240,7 @@ federal_production:
     - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
       value: 2046718554.09
       rank: 1
-      percent: 97.59784541031087
+      percent: 97.6
   '2008':
     - product: Gilsonite (tons)
       value: 16957
@@ -249,7 +249,7 @@ federal_production:
     - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
       value: 2468886992.11
       rank: 1
-      percent: 98.02016656660777
+      percent: 98.02
   '2009':
     - product: Gilsonite (tons)
       value: 13016
@@ -258,7 +258,7 @@ federal_production:
     - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
       value: 2827213957.69
       rank: 1
-      percent: 98.31285539811361
+      percent: 98.31
   '2010':
     - product: Gilsonite (tons)
       value: 28082
@@ -267,12 +267,12 @@ federal_production:
     - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
       value: 2670508902.54
       rank: 1
-      percent: 98.21542246596754
+      percent: 98.22
   '2011':
     - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
-      value: 2554615747.2799997
+      value: 2554615747.28
       rank: 1
-      percent: 98.12984841122906
+      percent: 98.13
   '2012':
     - product: Gilsonite (tons)
       value: 35927
@@ -281,12 +281,12 @@ federal_production:
     - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
       value: 2453647854.06
       rank: 1
-      percent: 98.07311997714339
+      percent: 98.07
   '2013':
     - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
-      value: 2316266257.9700003
+      value: 2316266257.97
       rank: 1
-      percent: 98.04671481217153
+      percent: 98.05
   '2014':
     - product: Clay (tons)
       value: 33520
@@ -295,4 +295,4 @@ federal_production:
     - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
       value: 2463584336.7
       rank: 1
-      percent: 98.18407875858603
+      percent: 98.18

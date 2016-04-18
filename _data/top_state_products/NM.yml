@@ -9,7 +9,7 @@ revenue:
       rank: 1
       percent: 100
     - product: Muriate Of Potash-Granular
-      value: 947720.3400000001
+      value: 947720.34
       rank: 1
       percent: 100
     - product: Muriate Of Potash-Standard
@@ -17,29 +17,29 @@ revenue:
       rank: 1
       percent: 100
     - product: Potassium Sulphate-Standard
-      value: 31802.329999999998
+      value: 31802.33
       rank: 1
       percent: 100
     - product: Potassium
       value: 187352
       rank: 1
-      percent: 95.63491873083939
+      percent: 95.63
     - product: Potash
-      value: 763333.2899999999
+      value: 763333.29
       rank: 1
-      percent: 91.7051431835331
+      percent: 91.71
     - product: Salt
       value: 155506.13
       rank: 1
-      percent: 77.69415340817828
+      percent: 77.69
     - product: Coal Bed Methane
-      value: 120974724.41000001
+      value: 120974724.41
       rank: 1
-      percent: 76.24021620350537
+      percent: 76.24
     - product: Gas Plant Products
       value: 76809845.6
       rank: 1
-      percent: 29.835200864467854
+      percent: 29.84
   '2005':
     - product: Brine Barrels
       value: 166.67
@@ -62,15 +62,15 @@ revenue:
       rank: 1
       percent: 100
     - product: Langbeinite-Special Std
-      value: 106115.93999999999
+      value: 106115.94
       rank: 1
       percent: 100
     - product: Langbeinite-Standard
-      value: 67215.95999999999
+      value: 67215.96
       rank: 1
       percent: 100
     - product: Muriate Of Potash-Granular
-      value: 1073853.1300000001
+      value: 1073853.13
       rank: 1
       percent: 100
     - product: Muriate Of Potash-Standard
@@ -92,34 +92,34 @@ revenue:
     - product: Potash
       value: 1141030.6
       rank: 1
-      percent: 93.55742783828691
+      percent: 93.56
     - product: Potassium
-      value: 533441.9600000001
+      value: 533441.96
       rank: 1
-      percent: 89.45770540453596
+      percent: 89.46
     - product: Salt
       value: 160260.23
       rank: 1
-      percent: 70.78888145291121
+      percent: 70.79
     - product: Coal Bed Methane
-      value: 194572320.85000002
+      value: 194572320.85
       rank: 1
-      percent: 66.0071841206893
+      percent: 66.01
     - product: Gas Plant Products
       value: 93442934.5
       rank: 1
-      percent: 35.17052321402773
+      percent: 35.17
   '2006':
     - product: Brine Barrels
       value: 2061.3
       rank: 1
       percent: 100
     - product: Geothermal - Commercially Demineralized H2O
-      value: -7956.860000000001
+      value: -7956.86
       rank: 1
       percent: 100
     - product: Granulated Langeinite
-      value: 277.14000000000004
+      value: 277.14
       rank: 1
       percent: 100
     - product: Langbeinite
@@ -127,7 +127,7 @@ revenue:
       rank: 1
       percent: 100
     - product: Langbeinite-Special Std
-      value: 1001.6700000000001
+      value: 1001.67
       rank: 1
       percent: 100
     - product: Muriate Of Potash-Granular
@@ -143,7 +143,7 @@ revenue:
       rank: 1
       percent: 100
     - product: Potassium Sulphate Special Std
-      value: 114.86999999999999
+      value: 114.87
       rank: 1
       percent: 100
     - product: Sylvite-Raw Ore
@@ -151,36 +151,36 @@ revenue:
       rank: 1
       percent: 100
     - product: Potassium
-      value: 500375.9199999999
+      value: 500375.92
       rank: 1
-      percent: 94.93528333161471
+      percent: 94.94
     - product: Potash
       value: 1251313.27
       rank: 1
-      percent: 92.95212974485116
+      percent: 92.95
     - product: Salt
-      value: 236317.11000000002
+      value: 236317.11
       rank: 1
-      percent: 75.88579331022198
+      percent: 75.89
     - product: Coal Bed Methane
-      value: 190379623.60999998
+      value: 190379623.61
       rank: 1
-      percent: 56.72157654331375
+      percent: 56.72
     - product: Gas Plant Products
       value: 109336368.8
       rank: 1
-      percent: 36.45024211784629
+      percent: 36.45
   '2007':
     - product: Muriate Of Potash-Standard
       value: 1452920.5
       rank: 1
-      percent: 100.06903074700013
+      percent: 100.07
     - product: Brine Barrels
       value: 625.37
       rank: 1
       percent: 100
     - product: Granulated Langeinite
-      value: -277.14000000000004
+      value: -277.14
       rank: 1
       percent: 100
     - product: Langbeinite
@@ -192,7 +192,7 @@ revenue:
       rank: 1
       percent: 100
     - product: Langbeinite-Standard
-      value: -0.36000000000000004
+      value: -0.36
       rank: 1
       percent: 100
     - product: Muriate Of Potash-Granular
@@ -208,36 +208,36 @@ revenue:
       rank: 1
       percent: 100
     - product: Potash
-      value: 2224499.9499999997
+      value: 2224499.95
       rank: 1
-      percent: 93.60081213107281
+      percent: 93.6
     - product: Salt
       value: 199135.49
       rank: 1
-      percent: 90.24131420141518
+      percent: 90.24
     - product: Potassium
       value: 153697.5
       rank: 1
-      percent: 84.55169707973383
+      percent: 84.55
     - product: Gas Lost - Flared or Vented
-      value: 68057.62000000001
+      value: 68057.62
       rank: 1
-      percent: 57.88140853201457
+      percent: 57.88
     - product: Coal Bed Methane
-      value: 174070578.51999998
+      value: 174070578.52
       rank: 1
-      percent: 50.59911590912833
+      percent: 50.6
     - product: Gas Plant Products
       value: 112025760.26
       rank: 1
-      percent: 27.659681972579378
+      percent: 27.66
     - product: Sodium
       value: 20120
       rank: 2
-      percent: 26.517340126271037
+      percent: 26.52
   '2008':
     - product: Brine Barrels
-      value: 19444.600000000002
+      value: 19444.6
       rank: 1
       percent: 100
     - product: Langbeinite
@@ -249,7 +249,7 @@ revenue:
       rank: 1
       percent: 100
     - product: Muriate Of Potash-Standard
-      value: 1916491.6900000002
+      value: 1916491.69
       rank: 1
       percent: 100
     - product: Sylvite-Raw Ore
@@ -259,30 +259,30 @@ revenue:
     - product: Potassium
       value: 1404479
       rank: 1
-      percent: 97.47090890556048
+      percent: 97.47
     - product: Salt
       value: 125407.04
       rank: 1
-      percent: 77.34757369841643
+      percent: 77.35
     - product: Gas Lost - Flared or Vented
       value: 48793.78
       rank: 1
-      percent: 46.37435125844954
+      percent: 46.37
     - product: Gas Plant Products
       value: 164599129.22
       rank: 1
-      percent: 30.037592549428926
+      percent: 30.04
     - product: Coal Bed Methane
-      value: 167972865.14000002
+      value: 167972865.14
       rank: 2
-      percent: 41.08553830092846
+      percent: 41.09
     - product: Potash
       value: 202411.59
       rank: 2
-      percent: 33.932188760864236
+      percent: 33.93
   '2009':
     - product: Brine Barrels
-      value: -31.300000000000004
+      value: -31.3
       rank: 1
       percent: 100
     - product: 'Geothermal - Direct Use, Millions of Gallons'
@@ -308,27 +308,27 @@ revenue:
     - product: Potash
       value: 6549784.67
       rank: 1
-      percent: 95.899174185209
+      percent: 95.9
     - product: Potassium
       value: 452912.75
       rank: 1
-      percent: 94.68897408356916
+      percent: 94.69
     - product: Salt
       value: 151889.03
       rank: 1
-      percent: 78.4406048636068
+      percent: 78.44
     - product: Gas Plant Products
       value: 76820999.77
       rank: 1
-      percent: 32.782333353959864
+      percent: 32.78
     - product: Coal Bed Methane
-      value: 62305633.980000004
+      value: 62305633.98
       rank: 2
-      percent: 33.888972280675866
+      percent: 33.89
     - product: Unprocessed (Wet) Gas
-      value: 95576865.91000003
+      value: 95576865.91
       rank: 2
-      percent: 21.767709915500127
+      percent: 21.77
   '2010':
     - product: Langbeinite
       value: 8173603.14
@@ -349,30 +349,30 @@ revenue:
     - product: Potash
       value: 4200890.52
       rank: 1
-      percent: 94.93678705114897
+      percent: 94.94
     - product: Salt
       value: 216177.08
       rank: 1
-      percent: 84.29853956208308
+      percent: 84.3
     - product: Potassium
       value: 85089.97
       rank: 1
-      percent: 69.34460483055551
+      percent: 69.34
     - product: Gas Plant Products
       value: 109577592.95
       rank: 1
-      percent: 25.590048403469577
+      percent: 25.59
     - product: Coal Bed Methane
       value: 70352883.95
       rank: 2
-      percent: 27.411388842331753
+      percent: 27.41
   '2011':
     - product: Brine Barrels
-      value: 17.810000000000002
+      value: 17.81
       rank: 1
       percent: 100
     - product: Fuel Oil
-      value: 16.650000000000002
+      value: 16.65
       rank: 1
       percent: 100
     - product: Langbeinite
@@ -394,23 +394,23 @@ revenue:
     - product: Potash
       value: 4654730.33
       rank: 1
-      percent: 93.5192704998754
+      percent: 93.52
     - product: Salt
       value: 227867.4
       rank: 1
-      percent: 74.3007677355367
+      percent: 74.3
     - product: Gas Plant Products
-      value: 160960169.82000002
+      value: 160960169.82
       rank: 1
-      percent: 28.24777151014844
+      percent: 28.25
     - product: Gas Lost - Flared or Vented
-      value: 94524.45999999999
+      value: 94524.46
       rank: 1
-      percent: 25.829958682213974
+      percent: 25.83
     - product: Coal Bed Methane
-      value: 80063763.83000001
+      value: 80063763.83
       rank: 2
-      percent: 33.32315939281353
+      percent: 33.32
   '2012':
     - product: 'Geothermal - Direct Use, Millions of Gallons'
       value: 2892.23
@@ -433,29 +433,29 @@ revenue:
       rank: 1
       percent: 100
     - product: Potassium
-      value: 2742970.8699999996
+      value: 2742970.87
       rank: 1
-      percent: 97.12590317382244
+      percent: 97.13
     - product: Potash
       value: 3968666.5
       rank: 1
-      percent: 92.52266891548514
+      percent: 92.52
     - product: Salt
       value: 299029.62
       rank: 1
-      percent: 63.765098996705454
+      percent: 63.77
     - product: Unprocessed (Wet) Gas
       value: 62277441.37
       rank: 1
-      percent: 62.88094663796693
+      percent: 62.88
     - product: Coal Bed Methane
       value: 106498182.22
       rank: 1
-      percent: 52.04142668739693
+      percent: 52.04
     - product: Gas Plant Products
       value: 121934129.34
       rank: 2
-      percent: 22.14323076905457
+      percent: 22.14
   '2013':
     - product: 'Geothermal - Direct Use, Millions of Gallons'
       value: 5607.81
@@ -474,41 +474,41 @@ revenue:
       rank: 1
       percent: 100
     - product: Sylvite-Raw Ore
-      value: 1513.1899999999998
+      value: 1513.19
       rank: 1
       percent: 100
     - product: Gas Lost - Flared or Vented
-      value: 3418138.7800000003
+      value: 3418138.78
       rank: 1
-      percent: 93.97154020026282
+      percent: 93.97
     - product: Potash
       value: 4218246.05
       rank: 1
-      percent: 92.75032584952078
+      percent: 92.75
     - product: Potassium
       value: 822495.5
       rank: 1
-      percent: 86.76671178208724
+      percent: 86.77
     - product: Salt
-      value: 479907.97000000003
+      value: 479907.97
       rank: 1
-      percent: 70.67177643055135
+      percent: 70.67
     - product: Coal Bed Methane
-      value: 91373860.08999999
+      value: 91373860.09
       rank: 1
-      percent: 47.50101663022023
+      percent: 47.5
     - product: Fuel Gas
       value: 2168014.5
       rank: 1
-      percent: 33.20937938789681
+      percent: 33.21
     - product: Gas Plant Products
-      value: 90428259.66999999
+      value: 90428259.67
       rank: 1
-      percent: 22.707957310235717
+      percent: 22.71
     - product: Unprocessed (Wet) Gas
       value: 105090555.77
       rank: 2
-      percent: 25.60160173798475
+      percent: 25.6
 federal_production:
   '2005':
     - product: Langbeinite (tons)

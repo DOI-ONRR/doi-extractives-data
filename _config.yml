@@ -22,6 +22,7 @@ exclude:
   - 'Gemfile*'
   # shell scripts
   - '**/*.sh'
+  - '**/Makefile'
   # data tools and SQLite databases
   - '**/*.sql'
   - '**/*.db'

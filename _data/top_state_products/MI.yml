@@ -3,149 +3,149 @@ all_production:
     - product: Natural Gas (MMcf)
       value: 70464
       rank: 3
-      percent: 21.47906321728713
+      percent: 21.48
   '1975':
     - product: Natural Gas (MMcf)
       value: 103901
       rank: 1
-      percent: 28.753960896096533
+      percent: 28.75
   '1976':
     - product: Natural Gas (MMcf)
       value: 121631
       rank: 1
-      percent: 31.18703606364021
+      percent: 31.19
   '1977':
     - product: Natural Gas (MMcf)
       value: 133226
       rank: 1
-      percent: 30.93717634928965
+      percent: 30.94
   '1978':
     - product: Natural Gas (MMcf)
       value: 152184
       rank: 1
-      percent: 28.142145722110556
+      percent: 28.14
   '1979':
     - product: Natural Gas (MMcf)
       value: 164860
       rank: 2
-      percent: 27.955165923388673
+      percent: 27.96
   '1980':
     - product: Natural Gas (MMcf)
       value: 164110
       rank: 2
-      percent: 26.23367488850168
+      percent: 26.23
   '1981':
     - product: Natural Gas (MMcf)
       value: 158293
       rank: 2
-      percent: 24.272148356459084
+      percent: 24.27
   '1982':
     - product: Natural Gas (MMcf)
       value: 158771
       rank: 2
-      percent: 25.319824833907973
+      percent: 25.32
   '1983':
     - product: Natural Gas (MMcf)
       value: 144574
       rank: 2
-      percent: 25.010249818790122
+      percent: 25.01
   '1984':
     - product: Natural Gas (MMcf)
       value: 150201
       rank: 2
-      percent: 24.124063030521068
+      percent: 24.12
   '1985':
     - product: Natural Gas (MMcf)
       value: 137519
       rank: 3
-      percent: 22.047452388090573
+      percent: 22.05
   '1986':
     - product: Natural Gas (MMcf)
       value: 132951
       rank: 3
-      percent: 20.704847187074172
+      percent: 20.7
   '1987':
     - product: Natural Gas (MMcf)
       value: 153307
       rank: 3
-      percent: 22.747904483936974
+      percent: 22.75
   '1988':
     - product: Natural Gas (MMcf)
       value: 151809
       rank: 3
-      percent: 21.51844906255714
+      percent: 21.52
   '1989':
     - product: Natural Gas (MMcf)
       value: 162826
       rank: 3
-      percent: 23.911804788646354
+      percent: 23.91
   '1990':
     - product: Natural Gas (MMcf)
       value: 177815
       rank: 3
-      percent: 25.339554158371683
+      percent: 25.34
   '1991':
     - product: Natural Gas (MMcf)
       value: 201413
       rank: 2
-      percent: 27.151671526421296
+      percent: 27.15
   '1992':
     - product: Natural Gas (MMcf)
       value: 200479
       rank: 2
-      percent: 21.578831800950212
+      percent: 21.58
   '1993':
     - product: Natural Gas (MMcf)
       value: 210299
       rank: 2
-      percent: 21.64222342743234
+      percent: 21.64
   '1994':
     - product: Natural Gas (MMcf)
       value: 228321
       rank: 2
-      percent: 20.777780103397028
+      percent: 20.78
   '1995':
     - product: Natural Gas (MMcf)
       value: 243867
       rank: 2
-      percent: 21.97601865736202
+      percent: 21.98
   '1996':
     - product: Natural Gas (MMcf)
       value: 251404
       rank: 2
-      percent: 22.180246484433926
+      percent: 22.18
   '1997':
     - product: Natural Gas (MMcf)
       value: 311614
       rank: 2
-      percent: 29.67978512648583
+      percent: 29.68
   '1998':
     - product: Natural Gas (MMcf)
       value: 283740
       rank: 2
-      percent: 27.687569770255816
+      percent: 27.69
   '1999':
     - product: Natural Gas (MMcf)
       value: 283028
       rank: 2
-      percent: 27.824879863465124
+      percent: 27.82
   '2000':
     - product: Natural Gas (MMcf)
       value: 302220
       rank: 2
-      percent: 29.863075693242916
+      percent: 29.86
   '2001':
     - product: Natural Gas (MMcf)
       value: 280700
       rank: 2
-      percent: 27.678405913140885
+      percent: 27.68
   '2002':
     - product: Natural Gas (MMcf)
       value: 280140
       rank: 2
-      percent: 27.036521598140816
+      percent: 27.04
   '2003':
     - product: Natural Gas (MMcf)
       value: 242651
       rank: 2
-      percent: 22.80897503383968
+      percent: 22.81

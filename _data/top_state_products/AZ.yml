@@ -1,41 +1,11 @@
 all_production:
-  '2004':
-    - product: Solar
-      value: 4
-      rank: 1
-      percent: 100
-  '2005':
-    - product: Solar
-      value: 14
-      rank: 1
-      percent: 100
-  '2006':
-    - product: Solar
-      value: 13
-      rank: 1
-      percent: 100
-  '2007':
-    - product: Solar
-      value: 9
-      rank: 1
-      percent: 81.8181818181818
-  '2008':
-    - product: Solar
-      value: 15
-      rank: 2
-      percent: 39.47368421052631
-  '2009':
-    - product: Solar
-      value: 14
-      rank: 2
-      percent: 20.28985507246377
   '2012':
     - product: Solar
       value: 955
-      rank: 1
-      percent: 44.983513895431
+      rank: 2
+      percent: 22.08
   '2013':
     - product: Solar
       value: 2111
       rank: 2
-      percent: 23.372453498671387
+      percent: 23.37

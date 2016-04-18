@@ -3,20 +3,9 @@ revenue:
     - product: Phosphate Raw Ore
       value: 837228.4
       rank: 2
-      percent: 21.894468944421394
+      percent: 21.89
   '2008':
     - product: Phosphate Concentrate
       value: 1570.27
       rank: 1
       percent: 100
-all_production:
-  '2010':
-    - product: Solar
-      value: 80
-      rank: 1
-      percent: 37.383177570093444
-  '2011':
-    - product: Solar
-      value: 126
-      rank: 1
-      percent: 24.950495049504948

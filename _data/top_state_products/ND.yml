@@ -10,16 +10,16 @@ revenue:
       percent: 100
   '2005':
     - product: Nitrogen
-      value: 2621.3500000000004
+      value: 2621.35
       rank: 1
       percent: 100
   '2006':
     - product: Leonardite
-      value: 13538.710000000001
+      value: 13538.71
       rank: 1
       percent: 100
     - product: Nitrogen
-      value: 1894.3899999999999
+      value: 1894.39
       rank: 1
       percent: 100
   '2007':
@@ -31,7 +31,7 @@ revenue:
     - product: Nitrogen
       value: 913.65
       rank: 1
-      percent: 97.03164825828377
+      percent: 97.03
   '2009':
     - product: Leonardite
       value: 15526.55
@@ -44,34 +44,34 @@ revenue:
     - product: Hardrock
       value: 16815
       rank: 2
-      percent: 29.01458097009299
+      percent: 29.01
   '2010':
     - product: Leonardite
-      value: 15925.630000000001
+      value: 15925.63
       rank: 1
       percent: 100
     - product: Nitrogen
-      value: 1103.3799999999999
+      value: 1103.38
       rank: 1
-      percent: 91.8809539670908
+      percent: 91.88
   '2011':
     - product: Nitrogen
       value: 1098.02
       rank: 1
-      percent: 127.48551591217824
+      percent: 127.49
     - product: Leonardite
       value: 897.98
       rank: 1
       percent: 100
   '2012':
     - product: Leonardite
-      value: 20100.829999999998
+      value: 20100.83
       rank: 1
       percent: 100
     - product: Nitrogen
-      value: 1286.6599999999999
+      value: 1286.66
       rank: 1
-      percent: 92.79177274071296
+      percent: 92.79
   '2013':
     - product: Leonardite
       value: 49709.67
@@ -80,4 +80,4 @@ revenue:
     - product: Nitrogen
       value: 269.85
       rank: 2
-      percent: 40.66945985049434
+      percent: 40.67

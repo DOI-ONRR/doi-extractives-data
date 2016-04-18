@@ -3,135 +3,135 @@ all_production:
     - product: Natural Gas (MMcf)
       value: 133298
       rank: 3
-      percent: 21.25754710060568
+      percent: 21.26
   '1983':
     - product: Natural Gas (MMcf)
       value: 125889
       rank: 3
-      percent: 21.777880804554556
+      percent: 21.78
   '1984':
     - product: Natural Gas (MMcf)
       value: 136427
       rank: 3
-      percent: 21.911795174898295
+      percent: 21.91
   '1985':
     - product: Natural Gas (MMcf)
       value: 143420
       rank: 2
-      percent: 22.99351814294715
+      percent: 22.99
   '1986':
     - product: Natural Gas (MMcf)
       value: 145625
       rank: 2
-      percent: 22.67860619038349
+      percent: 22.68
   '1987':
     - product: Natural Gas (MMcf)
       value: 155143
       rank: 2
-      percent: 23.020332700734034
+      percent: 23.02
   '1988':
     - product: Natural Gas (MMcf)
       value: 175054
       rank: 2
-      percent: 24.8133548221573
+      percent: 24.81
   '1989':
     - product: Natural Gas (MMcf)
       value: 180300
       rank: 2
-      percent: 26.4779482600625
+      percent: 26.48
   '1990':
     - product: Natural Gas (MMcf)
       value: 186542
       rank: 2
-      percent: 26.58319664713871
+      percent: 26.58
   '1991':
     - product: Natural Gas (MMcf)
       value: 223876
       rank: 1
-      percent: 30.1798176614672
+      percent: 30.18
   '1992':
     - product: Natural Gas (MMcf)
       value: 413614
       rank: 1
-      percent: 44.51990949934018
+      percent: 44.52
   '1993':
     - product: Natural Gas (MMcf)
       value: 446321
       rank: 1
-      percent: 45.931644003799484
+      percent: 45.93
   '1994':
     - product: Natural Gas (MMcf)
       value: 578863
       rank: 1
-      percent: 52.67797584975853
+      percent: 52.68
   '1995':
     - product: Natural Gas (MMcf)
       value: 580125
       rank: 1
-      percent: 52.277831045619706
+      percent: 52.28
   '1996':
     - product: Natural Gas (MMcf)
       value: 582301
       rank: 1
-      percent: 51.373803551782615
+      percent: 51.37
   '1997':
     - product: Natural Gas (MMcf)
       value: 435088
       rank: 1
-      percent: 41.44010972264554
+      percent: 41.44
   '1998':
     - product: Natural Gas (MMcf)
       value: 434470
       rank: 1
-      percent: 42.395920342859846
+      percent: 42.4
   '1999':
     - product: Natural Gas (MMcf)
       value: 420535
       rank: 1
-      percent: 41.34338600202915
+      percent: 41.34
   '2000':
     - product: Natural Gas (MMcf)
       value: 401336
       rank: 1
-      percent: 39.656962962157834
+      percent: 39.66
   '2001':
     - product: Natural Gas (MMcf)
       value: 391981
       rank: 1
-      percent: 38.65126194598815
+      percent: 38.65
   '2002':
     - product: Natural Gas (MMcf)
       value: 386502
       rank: 1
-      percent: 37.301598025004004
+      percent: 37.3
   '2003':
     - product: Natural Gas (MMcf)
       value: 370910
       rank: 1
-      percent: 34.86520529402919
+      percent: 34.87
   '2014':
     - product: Natural Gas (MMcf)
       value: 181054
       rank: 1
-      percent: 28.56394601288938
+      percent: 28.56
 revenue:
   '2004':
     - product: Clay
       value: 11440.8
       rank: 1
-      percent: 83.6964926745085
+      percent: 83.7
   '2005':
     - product: Clay
       value: 12279.9
       rank: 1
-      percent: 79.33597573384759
+      percent: 79.34
   '2006':
     - product: Clay
       value: 20117.1
       rank: 1
-      percent: 84.47420037128656
+      percent: 84.47
   '2007':
     - product: Clay
       value: 12892.8
       rank: 1
-      percent: 67.94635248435176
+      percent: 67.95

@@ -1,12 +1,57 @@
+all_production:
+  '2004':
+    - product: Conventional Hydroelectric
+      value: 71576
+      rank: 1
+      percent: 26.67
+  '2005':
+    - product: Conventional Hydroelectric
+      value: 72075
+      rank: 1
+      percent: 26.66
+  '2006':
+    - product: Conventional Hydroelectric
+      value: 82008
+      rank: 1
+      percent: 28.35
+  '2007':
+    - product: Conventional Hydroelectric
+      value: 78829
+      rank: 1
+      percent: 31.85
+  '2008':
+    - product: Conventional Hydroelectric
+      value: 77637
+      rank: 1
+      percent: 30.47
+  '2009':
+    - product: Conventional Hydroelectric
+      value: 72933
+      rank: 1
+      percent: 26.67
+  '2010':
+    - product: Conventional Hydroelectric
+      value: 68288
+      rank: 1
+      percent: 26.24
+  '2011':
+    - product: Conventional Hydroelectric
+      value: 91818
+      rank: 1
+      percent: 28.75
+  '2012':
+    - product: Conventional Hydroelectric
+      value: 89464
+      rank: 1
+      percent: 32.39
+  '2013':
+    - product: Conventional Hydroelectric
+      value: 78155
+      rank: 1
+      percent: 29.1
 revenue:
   '2008':
     - product: Coal-Subbituminous-Processed
       value: 204873.3
       rank: 1
       percent: 100
-all_production:
-  '2013':
-    - product: Conventional Hydroelectric
-      value: 78155
-      rank: 1
-      percent: 29.100962523039115

@@ -3,10 +3,10 @@
   employment:
     '2012':
       count: 42
-      percent: 0.31000000000000005
+      percent: 0.31
     '2013':
       count: 40
-      percent: 0.29000000000000004
+      percent: 0.29
 '27017':
   name: Carlton County
   employment:
@@ -36,7 +36,7 @@
       percent: 0.09
     '2005':
       count: 113
-      percent: 0.06999999999999998
+      percent: 0.07
     '2006':
       count: 136
       percent: 0.08
@@ -117,7 +117,7 @@
       percent: 1.03
     '2012':
       count: 603
-      percent: 3.7800000000000002
+      percent: 3.78
     '2013':
       count: 611
       percent: 3.9
@@ -129,13 +129,13 @@
       percent: 0.27
     '2006':
       count: 28
-      percent: 0.7500000000000001
+      percent: 0.75
     '2007':
       count: 26
-      percent: 0.6900000000000001
+      percent: 0.69
     '2008':
       count: 26
-      percent: 0.6900000000000001
+      percent: 0.69
     '2009':
       count: 16
       percent: 0.45
@@ -150,19 +150,19 @@
       percent: 0.46
     '2013':
       count: 16
-      percent: 0.43000000000000005
+      percent: 0.43
 '27089':
   name: Marshall County
   employment:
     '2004':
       count: 16
-      percent: 0.6700000000000002
+      percent: 0.67
     '2005':
       count: 16
       percent: 0.68
     '2006':
       count: 15
-      percent: 0.6400000000000001
+      percent: 0.64
 '27093':
   name: Meeker County
   employment:
@@ -177,13 +177,13 @@
       percent: 0.19
     '2009':
       count: 14
-      percent: 0.21000000000000002
+      percent: 0.21
     '2010':
       count: 12
       percent: 0.19
     '2011':
       count: 10
-      percent: 0.15000000000000002
+      percent: 0.15
     '2012':
       count: 13
       percent: 0.2
@@ -195,10 +195,10 @@
   employment:
     '2004':
       count: 39
-      percent: 0.4100000000000001
+      percent: 0.41
     '2005':
       count: 33
-      percent: 0.3500000000000001
+      percent: 0.35
     '2007':
       count: 14
       percent: 0.14
@@ -207,10 +207,10 @@
   employment:
     '2004':
       count: 13
-      percent: 0.12000000000000001
+      percent: 0.12
     '2005':
       count: 14
-      percent: 0.12000000000000001
+      percent: 0.12
     '2006':
       count: 15
       percent: 0.13
@@ -222,7 +222,7 @@
       percent: 0.19
     '2012':
       count: 46
-      percent: 0.42000000000000004
+      percent: 0.42
     '2013':
       count: 29
       percent: 0.27
@@ -234,28 +234,28 @@
       percent: 0.58
     '2005':
       count: 15
-      percent: 0.5499999999999999
+      percent: 0.55
     '2006':
       count: 19
       percent: 0.68
     '2007':
       count: 18
-      percent: 0.6500000000000001
+      percent: 0.65
     '2008':
       count: 16
       percent: 0.58
     '2009':
       count: 16
-      percent: 0.5599999999999999
+      percent: 0.56
     '2010':
       count: 16
-      percent: 0.5599999999999999
+      percent: 0.56
     '2011':
       count: 18
-      percent: 0.6200000000000001
+      percent: 0.62
     '2012':
       count: 20
-      percent: 0.6700000000000002
+      percent: 0.67
     '2013':
       count: 20
       percent: 0.68
@@ -318,10 +318,10 @@
   employment:
     '2009':
       count: 41
-      percent: 0.9199999999999999
+      percent: 0.92
     '2010':
       count: 35
-      percent: 0.8200000000000002
+      percent: 0.82
 '27119':
   name: Polk County
   employment:
@@ -330,16 +330,16 @@
       percent: 0.5
     '2005':
       count: 53
-      percent: 0.43000000000000005
+      percent: 0.43
     '2006':
       count: 62
       percent: 0.5
     '2007':
       count: 53
-      percent: 0.43000000000000005
+      percent: 0.43
     '2008':
       count: 47
-      percent: 0.38000000000000006
+      percent: 0.38
     '2009':
       count: 21
       percent: 0.17
@@ -354,7 +354,7 @@
       percent: 0.22
     '2013':
       count: 25
-      percent: 0.21000000000000002
+      percent: 0.21
 '27131':
   name: Rice County
   employment:
@@ -378,13 +378,13 @@
       percent: 0.14
     '2010':
       count: 33
-      percent: 0.15000000000000002
+      percent: 0.15
     '2011':
       count: 33
-      percent: 0.15000000000000002
+      percent: 0.15
     '2012':
       count: 35
-      percent: 0.15000000000000002
+      percent: 0.15
     '2013':
       count: 36
       percent: 0.16
@@ -393,16 +393,16 @@
   employment:
     '2004':
       count: 2756
-      percent: 2.9499999999999997
+      percent: 2.95
     '2005':
       count: 2769
-      percent: 2.9299999999999997
+      percent: 2.93
     '2006':
       count: 2757
       percent: 2.88
     '2007':
       count: 2840
-      percent: 2.9299999999999997
+      percent: 2.93
     '2008':
       count: 2973
       percent: 3.06
@@ -417,16 +417,16 @@
       percent: 3.32
     '2012':
       count: 3261
-      percent: 3.479999999999999
+      percent: 3.48
     '2013':
       count: 3290
-      percent: 3.4499999999999997
+      percent: 3.45
 '27139':
   name: Scott County
   employment:
     '2004':
       count: 96
-      percent: 0.24000000000000002
+      percent: 0.24
     '2005':
       count: 92
       percent: 0.22
@@ -444,10 +444,10 @@
       percent: 0.17
     '2010':
       count: 62
-      percent: 0.15000000000000002
+      percent: 0.15
     '2011':
       count: 61
-      percent: 0.15000000000000002
+      percent: 0.15
     '2012':
       count: 60
       percent: 0.14
@@ -468,19 +468,19 @@
       percent: 0.16
     '2007':
       count: 120
-      percent: 0.15000000000000002
+      percent: 0.15
     '2008':
       count: 120
-      percent: 0.15000000000000002
+      percent: 0.15
     '2009':
       count: 115
-      percent: 0.15000000000000002
+      percent: 0.15
     '2010':
       count: 112
-      percent: 0.15000000000000002
+      percent: 0.15
     '2011':
       count: 116
-      percent: 0.15000000000000002
+      percent: 0.15
     '2012':
       count: 115
       percent: 0.14
@@ -507,10 +507,10 @@
       percent: 0.08
     '2007':
       count: 53
-      percent: 0.06999999999999998
+      percent: 0.07
     '2008':
       count: 49
-      percent: 0.06999999999999998
+      percent: 0.07
     '2009':
       count: 37
       percent: 0.05

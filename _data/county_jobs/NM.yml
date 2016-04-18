@@ -39,7 +39,7 @@
       percent: 1.23
     '2010':
       count: 5
-      percent: 0.8099999999999999
+      percent: 0.81
     '2011':
       count: 6
       percent: 1
@@ -48,25 +48,25 @@
   employment:
     '2004':
       count: 477
-      percent: 2.3099999999999996
+      percent: 2.31
     '2005':
       count: 526
-      percent: 2.4899999999999998
+      percent: 2.49
     '2006':
       count: 483
       percent: 2.18
     '2007':
       count: 420
-      percent: 1.8800000000000001
+      percent: 1.88
     '2008':
       count: 434
       percent: 1.95
     '2009':
       count: 379
-      percent: 1.7300000000000002
+      percent: 1.73
     '2010':
       count: 411
-      percent: 1.9300000000000002
+      percent: 1.93
     '2011':
       count: 448
       percent: 2.1
@@ -75,13 +75,13 @@
       percent: 2.15
     '2013':
       count: 563
-      percent: 2.7199999999999998
+      percent: 2.72
 '35006':
   name: Cibola County
   employment:
     '2004':
       count: 86
-      percent: 0.9900000000000001
+      percent: 0.99
 '35007':
   name: Colfax County
   employment:
@@ -96,13 +96,13 @@
       percent: 0.97
     '2007':
       count: 62
-      percent: 1.1600000000000001
+      percent: 1.16
     '2008':
       count: 51
-      percent: 0.9500000000000001
+      percent: 0.95
     '2012':
       count: 58
-      percent: 1.1700000000000002
+      percent: 1.17
     '2013':
       count: 52
       percent: 1.03
@@ -111,7 +111,7 @@
   employment:
     '2008':
       count: 138
-      percent: 0.8200000000000002
+      percent: 0.82
 '35013':
   name: Dona Ana County
   employment:
@@ -135,7 +135,7 @@
       percent: 0.06
     '2011':
       count: 45
-      percent: 0.06999999999999998
+      percent: 0.07
     '2012':
       count: 24
       percent: 0.03
@@ -147,7 +147,7 @@
   employment:
     '2004':
       count: 2699
-      percent: 13.670000000000002
+      percent: 13.67
     '2005':
       count: 2821
       percent: 13.94
@@ -171,7 +171,7 @@
       percent: 19.74
     '2012':
       count: 5570
-      percent: 22.110000000000003
+      percent: 22.11
     '2013':
       count: 6605
       percent: 25
@@ -183,10 +183,10 @@
       percent: 13.8
     '2009':
       count: 729
-      percent: 8.139999999999999
+      percent: 8.14
     '2010':
       count: 786
-      percent: 8.850000000000001
+      percent: 8.85
     '2011':
       count: 1245
       percent: 13.25
@@ -201,10 +201,10 @@
   employment:
     '2004':
       count: 4594
-      percent: 19.259999999999994
+      percent: 19.26
     '2005':
       count: 5435
-      percent: 21.419999999999998
+      percent: 21.42
     '2006':
       count: 6246
       percent: 23.41
@@ -222,13 +222,13 @@
       percent: 21.93
     '2011':
       count: 6292
-      percent: 22.040000000000003
+      percent: 22.04
     '2012':
       count: 7481
       percent: 24.8
     '2013':
       count: 8033
-      percent: 25.290000000000003
+      percent: 25.29
 '35027':
   name: Lincoln County
   employment:
@@ -237,10 +237,10 @@
       percent: 0.25
     '2008':
       count: 22
-      percent: 0.31000000000000005
+      percent: 0.31
     '2009':
       count: 20
-      percent: 0.29000000000000004
+      percent: 0.29
     '2010':
       count: 18
       percent: 0.27
@@ -261,7 +261,7 @@
   employment:
     '2004':
       count: 534
-      percent: 2.4899999999999998
+      percent: 2.49
     '2005':
       count: 569
       percent: 2.64
@@ -270,16 +270,16 @@
       percent: 2.68
     '2007':
       count: 438
-      percent: 1.9800000000000002
+      percent: 1.98
     '2008':
       count: 151
-      percent: 0.6900000000000001
+      percent: 0.69
     '2009':
       count: 118
-      percent: 0.5499999999999999
+      percent: 0.55
     '2010':
       count: 75
-      percent: 0.3500000000000001
+      percent: 0.35
 '35035':
   name: Otero County
   employment:
@@ -309,7 +309,7 @@
       percent: 0.04
     '2012':
       count: 54
-      percent: 0.31000000000000005
+      percent: 0.31
 '35039':
   name: Rio Arriba County
   employment:
@@ -321,19 +321,19 @@
       percent: 1.29
     '2006':
       count: 144
-      percent: 1.1800000000000002
+      percent: 1.18
     '2007':
       count: 87
       percent: 0.77
     '2008':
       count: 80
-      percent: 0.6900000000000001
+      percent: 0.69
     '2009':
       count: 69
-      percent: 0.6300000000000001
+      percent: 0.63
     '2010':
       count: 76
-      percent: 0.7200000000000001
+      percent: 0.72
     '2011':
       count: 83
       percent: 0.88
@@ -348,7 +348,7 @@
   employment:
     '2006':
       count: 22
-      percent: 0.33000000000000007
+      percent: 0.33
     '2009':
       count: 11
       percent: 0.17
@@ -360,7 +360,7 @@
       percent: 0.27
     '2005':
       count: 58
-      percent: 0.21000000000000002
+      percent: 0.21
     '2006':
       count: 41
       percent: 0.14
@@ -381,10 +381,10 @@
       percent: 0.25
     '2012':
       count: 95
-      percent: 0.32000000000000006
+      percent: 0.32
     '2013':
       count: 94
-      percent: 0.32000000000000006
+      percent: 0.32
 '35045':
   name: San Juan County
   employment:
@@ -402,7 +402,7 @@
       percent: 11.34
     '2008':
       count: 5988
-      percent: 11.460000000000003
+      percent: 11.46
     '2009':
       count: 5408
       percent: 10.97
@@ -417,7 +417,7 @@
       percent: 13.16
     '2013':
       count: 6480
-      percent: 13.129999999999999
+      percent: 13.13
 '35047':
   name: San Miguel County
   employment:
@@ -429,13 +429,13 @@
       percent: 0.28
     '2006':
       count: 21
-      percent: 0.24000000000000002
+      percent: 0.24
     '2007':
       count: 18
-      percent: 0.21000000000000002
+      percent: 0.21
     '2012':
       count: 19
-      percent: 0.24000000000000002
+      percent: 0.24
     '2013':
       count: 22
       percent: 0.27
@@ -453,10 +453,10 @@
       percent: 0.25
     '2007':
       count: 155
-      percent: 0.24000000000000002
+      percent: 0.24
     '2008':
       count: 155
-      percent: 0.24000000000000002
+      percent: 0.24
     '2009':
       count: 120
       percent: 0.19
@@ -465,7 +465,7 @@
       percent: 0.17
     '2011':
       count: 92
-      percent: 0.15000000000000002
+      percent: 0.15
     '2012':
       count: 99
       percent: 0.16
@@ -483,7 +483,7 @@
   employment:
     '2004':
       count: 235
-      percent: 2.1999999999999997
+      percent: 2.2
     '2005':
       count: 299
       percent: 2.75
@@ -495,16 +495,16 @@
       percent: 3.64
     '2008':
       count: 618
-      percent: 5.489999999999999
+      percent: 5.49
     '2009':
       count: 485
       percent: 4.48
     '2010':
       count: 337
-      percent: 3.2300000000000004
+      percent: 3.23
     '2011':
       count: 347
-      percent: 3.3699999999999997
+      percent: 3.37
     '2012':
       count: 301
       percent: 2.96
@@ -531,7 +531,7 @@
       percent: 0.2
     '2008':
       count: 33
-      percent: 0.21000000000000002
+      percent: 0.21
     '2009':
       count: 41
       percent: 0.27
@@ -540,7 +540,7 @@
       percent: 0.19
     '2011':
       count: 30
-      percent: 0.21000000000000002
+      percent: 0.21
     '2012':
       count: 29
       percent: 0.22

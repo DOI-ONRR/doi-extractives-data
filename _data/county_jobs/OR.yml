@@ -3,10 +3,10 @@
   employment:
     '2008':
       count: 18
-      percent: 0.33000000000000007
+      percent: 0.33
     '2009':
       count: 16
-      percent: 0.30000000000000004
+      percent: 0.3
 '41003':
   name: Benton County
   employment:
@@ -21,10 +21,10 @@
       percent: 0.06
     '2011':
       count: 23
-      percent: 0.06999999999999998
+      percent: 0.07
     '2012':
       count: 25
-      percent: 0.06999999999999998
+      percent: 0.07
     '2013':
       count: 21
       percent: 0.06
@@ -66,10 +66,10 @@
   employment:
     '2004':
       count: 73
-      percent: 0.7300000000000001
+      percent: 0.73
     '2005':
       count: 74
-      percent: 0.7200000000000001
+      percent: 0.72
     '2006':
       count: 82
       percent: 0.77
@@ -78,19 +78,19 @@
       percent: 0.76
     '2008':
       count: 71
-      percent: 0.6600000000000001
+      percent: 0.66
     '2009':
       count: 56
       percent: 0.58
     '2010':
       count: 55
-      percent: 0.5700000000000002
+      percent: 0.57
     '2011':
       count: 55
-      percent: 0.5700000000000002
+      percent: 0.57
     '2012':
       count: 54
-      percent: 0.5599999999999999
+      percent: 0.56
     '2013':
       count: 53
       percent: 0.54
@@ -99,13 +99,13 @@
   employment:
     '2004':
       count: 150
-      percent: 0.6700000000000002
+      percent: 0.67
     '2005':
       count: 165
-      percent: 0.7000000000000002
+      percent: 0.7
     '2006':
       count: 72
-      percent: 0.30000000000000004
+      percent: 0.3
     '2007':
       count: 63
       percent: 0.27
@@ -120,7 +120,7 @@
       percent: 0.22
     '2011':
       count: 81
-      percent: 0.38000000000000006
+      percent: 0.38
     '2012':
       count: 104
       percent: 0.49
@@ -135,19 +135,19 @@
       percent: 0.44
     '2007':
       count: 30
-      percent: 0.43000000000000005
+      percent: 0.43
     '2008':
       count: 26
-      percent: 0.39000000000000007
+      percent: 0.39
     '2009':
       count: 16
-      percent: 0.31000000000000005
+      percent: 0.31
     '2010':
       count: 15
       percent: 0.27
     '2011':
       count: 16
-      percent: 0.29000000000000004
+      percent: 0.29
     '2012':
       count: 13
       percent: 0.23
@@ -159,7 +159,7 @@
   employment:
     '2006':
       count: 40
-      percent: 0.5700000000000002
+      percent: 0.57
 '41017':
   name: Deschutes County
   employment:
@@ -168,10 +168,10 @@
       percent: 0.2
     '2005':
       count: 135
-      percent: 0.21000000000000002
+      percent: 0.21
     '2006':
       count: 139
-      percent: 0.21000000000000002
+      percent: 0.21
     '2007':
       count: 131
       percent: 0.19
@@ -198,10 +198,10 @@
   employment:
     '2004':
       count: 81
-      percent: 0.21000000000000002
+      percent: 0.21
     '2005':
       count: 82
-      percent: 0.21000000000000002
+      percent: 0.21
     '2006':
       count: 109
       percent: 0.28
@@ -213,19 +213,19 @@
       percent: 0.25
     '2009':
       count: 114
-      percent: 0.33000000000000007
+      percent: 0.33
     '2010':
       count: 122
-      percent: 0.36000000000000004
+      percent: 0.36
     '2011':
       count: 124
-      percent: 0.36000000000000004
+      percent: 0.36
     '2012':
       count: 148
-      percent: 0.43000000000000005
+      percent: 0.43
     '2013':
       count: 149
-      percent: 0.43000000000000005
+      percent: 0.43
 '41029':
   name: Jackson County
   employment:
@@ -240,7 +240,7 @@
       percent: 0.23
     '2007':
       count: 175
-      percent: 0.21000000000000002
+      percent: 0.21
     '2008':
       count: 148
       percent: 0.18
@@ -264,13 +264,13 @@
   employment:
     '2005':
       count: 53
-      percent: 0.21000000000000002
+      percent: 0.21
     '2006':
       count: 69
       percent: 0.27
     '2007':
       count: 76
-      percent: 0.30000000000000004
+      percent: 0.3
     '2008':
       count: 48
       percent: 0.2
@@ -282,10 +282,10 @@
   employment:
     '2007':
       count: 16
-      percent: 0.06999999999999998
+      percent: 0.07
     '2010':
       count: 15
-      percent: 0.06999999999999998
+      percent: 0.07
     '2011':
       count: 7
       percent: 0.03
@@ -294,19 +294,19 @@
   employment:
     '2004':
       count: 165
-      percent: 0.12000000000000001
+      percent: 0.12
     '2005':
       count: 171
-      percent: 0.12000000000000001
+      percent: 0.12
     '2006':
       count: 219
-      percent: 0.15000000000000002
+      percent: 0.15
     '2007':
       count: 324
-      percent: 0.21000000000000002
+      percent: 0.21
     '2008':
       count: 304
-      percent: 0.21000000000000002
+      percent: 0.21
     '2009':
       count: 240
       percent: 0.18
@@ -318,10 +318,10 @@
       percent: 0.14
     '2012':
       count: 209
-      percent: 0.15000000000000002
+      percent: 0.15
     '2013':
       count: 211
-      percent: 0.15000000000000002
+      percent: 0.15
 '41043':
   name: Linn County
   employment:
@@ -366,7 +366,7 @@
   employment:
     '2013':
       count: 7
-      percent: 0.15000000000000002
+      percent: 0.15
 '41051':
   name: Multnomah County
   employment:
@@ -378,16 +378,16 @@
   employment:
     '2004':
       count: 56
-      percent: 0.3400000000000001
+      percent: 0.34
     '2005':
       count: 55
-      percent: 0.32000000000000006
+      percent: 0.32
     '2006':
       count: 58
-      percent: 0.32000000000000006
+      percent: 0.32
     '2007':
       count: 56
-      percent: 0.30000000000000004
+      percent: 0.3
     '2008':
       count: 52
       percent: 0.28
@@ -408,7 +408,7 @@
       percent: 0.06
     '2009':
       count: 20
-      percent: 0.06999999999999998
+      percent: 0.07
     '2010':
       count: 33
       percent: 0.11
@@ -426,7 +426,7 @@
   employment:
     '2004':
       count: 274
-      percent: 0.12000000000000001
+      percent: 0.12
     '2005':
       count: 250
       percent: 0.11
@@ -435,13 +435,13 @@
       percent: 0.1
     '2007':
       count: 313
-      percent: 0.12000000000000001
+      percent: 0.12
     '2008':
       count: 293
-      percent: 0.12000000000000001
+      percent: 0.12
     '2009':
       count: 285
-      percent: 0.12000000000000001
+      percent: 0.12
     '2010':
       count: 249
       percent: 0.11

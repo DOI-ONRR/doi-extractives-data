@@ -9,7 +9,7 @@
       percent: 0.2
     '2006':
       count: 57
-      percent: 0.21000000000000002
+      percent: 0.21
     '2009':
       count: 56
       percent: 0.22
@@ -24,19 +24,19 @@
       percent: 0.18
     '2006':
       count: 43
-      percent: 0.21000000000000002
+      percent: 0.21
     '2007':
       count: 39
       percent: 0.19
     '2008':
       count: 30
-      percent: 0.15000000000000002
+      percent: 0.15
 '33007':
   name: Coos County
   employment:
     '2004':
       count: 30
-      percent: 0.21000000000000002
+      percent: 0.21
     '2005':
       count: 24
       percent: 0.17
@@ -114,13 +114,13 @@
   employment:
     '2004':
       count: 210
-      percent: 0.29000000000000004
+      percent: 0.29
     '2005':
       count: 213
-      percent: 0.29000000000000004
+      percent: 0.29
     '2006':
       count: 226
-      percent: 0.31000000000000005
+      percent: 0.31
     '2007':
       count: 209
       percent: 0.28
@@ -132,7 +132,7 @@
       percent: 0.23
     '2010':
       count: 150
-      percent: 0.21000000000000002
+      percent: 0.21
     '2011':
       count: 142
       percent: 0.2

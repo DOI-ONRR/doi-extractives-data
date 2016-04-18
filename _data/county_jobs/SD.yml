@@ -6,7 +6,7 @@
       percent: 0.08
     '2005':
       count: 10
-      percent: 0.06999999999999998
+      percent: 0.07
     '2006':
       count: 12
       percent: 0.08
@@ -36,28 +36,28 @@
   employment:
     '2004':
       count: 38
-      percent: 1.5699999999999996
+      percent: 1.57
     '2005':
       count: 41
-      percent: 1.6400000000000001
+      percent: 1.64
     '2006':
       count: 43
-      percent: 1.7200000000000002
+      percent: 1.72
     '2007':
       count: 41
-      percent: 1.6800000000000002
+      percent: 1.68
     '2008':
       count: 53
       percent: 2.06
     '2009':
       count: 43
-      percent: 1.6400000000000001
+      percent: 1.64
     '2010':
       count: 54
-      percent: 2.1399999999999997
+      percent: 2.14
     '2011':
       count: 68
-      percent: 2.7199999999999998
+      percent: 2.72
     '2012':
       count: 37
       percent: 1.49
@@ -78,25 +78,25 @@
       percent: 0.52
     '2007':
       count: 14
-      percent: 0.5599999999999999
+      percent: 0.56
     '2008':
       count: 19
       percent: 0.76
     '2009':
       count: 20
-      percent: 0.8200000000000002
+      percent: 0.82
     '2010':
       count: 12
-      percent: 0.48000000000000004
+      percent: 0.48
     '2011':
       count: 10
       percent: 0.4
     '2012':
       count: 22
-      percent: 0.8999999999999999
+      percent: 0.9
     '2013':
       count: 18
-      percent: 0.7500000000000001
+      percent: 0.75
 '46051':
   name: Grant County
   employment:
@@ -111,7 +111,7 @@
       percent: 1.05
     '2013':
       count: 31
-      percent: 0.8200000000000002
+      percent: 0.82
 '46063':
   name: Harding County
   employment:
@@ -120,7 +120,7 @@
       percent: 9.63
     '2007':
       count: 36
-      percent: 9.570000000000002
+      percent: 9.57
 '46081':
   name: Lawrence County
   employment:
@@ -147,7 +147,7 @@
       percent: 0.06
     '2006':
       count: 37
-      percent: 0.06999999999999998
+      percent: 0.07
     '2007':
       count: 43
       percent: 0.08

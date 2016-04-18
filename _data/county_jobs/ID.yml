@@ -3,13 +3,13 @@
   employment:
     '2004':
       count: 124
-      percent: 0.06999999999999998
+      percent: 0.07
     '2005':
       count: 141
-      percent: 0.06999999999999998
+      percent: 0.07
     '2006':
       count: 143
-      percent: 0.06999999999999998
+      percent: 0.07
     '2007':
       count: 109
       percent: 0.05
@@ -36,22 +36,22 @@
   employment:
     '2006':
       count: 25
-      percent: 0.06999999999999998
+      percent: 0.07
     '2007':
       count: 26
-      percent: 0.06999999999999998
+      percent: 0.07
 '16009':
   name: Benewah County
   employment:
     '2007':
       count: 65
-      percent: 1.7900000000000003
+      percent: 1.79
 '16013':
   name: Blaine County
   employment:
     '2004':
       count: 37
-      percent: 0.29000000000000004
+      percent: 0.29
     '2005':
       count: 33
       percent: 0.25
@@ -81,16 +81,16 @@
   employment:
     '2007':
       count: 16
-      percent: 0.9400000000000002
+      percent: 0.94
 '16017':
   name: Bonner County
   employment:
     '2004':
       count: 90
-      percent: 0.6900000000000001
+      percent: 0.69
     '2005':
       count: 102
-      percent: 0.7400000000000001
+      percent: 0.74
     '2006':
       count: 131
       percent: 0.91
@@ -102,13 +102,13 @@
       percent: 0.98
     '2009':
       count: 151
-      percent: 1.1300000000000001
+      percent: 1.13
     '2010':
       count: 148
-      percent: 1.1500000000000001
+      percent: 1.15
     '2011':
       count: 182
-      percent: 1.4500000000000002
+      percent: 1.45
     '2012':
       count: 163
       percent: 1.3
@@ -138,13 +138,13 @@
       percent: 0.13
     '2007':
       count: 68
-      percent: 0.12000000000000001
+      percent: 0.12
     '2008':
       count: 57
       percent: 0.1
     '2009':
       count: 35
-      percent: 0.06999999999999998
+      percent: 0.07
     '2010':
       count: 22
       percent: 0.04
@@ -162,10 +162,10 @@
   employment:
     '2004':
       count: 358
-      percent: 11.950000000000001
+      percent: 11.95
     '2005':
       count: 344
-      percent: 11.350000000000001
+      percent: 11.35
     '2006':
       count: 347
       percent: 10.96
@@ -177,7 +177,7 @@
       percent: 10.54
     '2009':
       count: 317
-      percent: 9.880000000000003
+      percent: 9.88
     '2010':
       count: 333
       percent: 10.99
@@ -189,7 +189,7 @@
   employment:
     '2004':
       count: 151
-      percent: 1.7500000000000004
+      percent: 1.75
     '2005':
       count: 196
       percent: 2.23
@@ -207,16 +207,16 @@
       percent: 1.02
     '2010':
       count: 92
-      percent: 0.9400000000000002
+      percent: 0.94
     '2011':
       count: 92
-      percent: 0.9299999999999999
+      percent: 0.93
     '2012':
       count: 102
       percent: 1.03
     '2013':
       count: 119
-      percent: 1.1500000000000001
+      percent: 1.15
 '16041':
   name: Franklin County
   employment:
@@ -237,25 +237,25 @@
       percent: 1.83
     '2006':
       count: 79
-      percent: 1.7600000000000002
+      percent: 1.76
     '2007':
       count: 85
-      percent: 1.8599999999999997
+      percent: 1.86
     '2008':
       count: 84
-      percent: 1.8599999999999997
+      percent: 1.86
     '2009':
       count: 67
       percent: 1.58
     '2010':
       count: 74
-      percent: 1.7399999999999998
+      percent: 1.74
     '2011':
       count: 78
-      percent: 1.8599999999999997
+      percent: 1.86
     '2012':
       count: 77
-      percent: 1.8399999999999996
+      percent: 1.84
     '2013':
       count: 67
       percent: 1.59
@@ -303,16 +303,16 @@
       percent: 0.51
     '2010':
       count: 75
-      percent: 0.37000000000000005
+      percent: 0.37
     '2011':
       count: 77
-      percent: 0.39000000000000007
+      percent: 0.39
 '16073':
   name: Owyhee County
   employment:
     '2011':
       count: 34
-      percent: 1.1800000000000002
+      percent: 1.18
     '2012':
       count: 38
       percent: 1.26
@@ -348,7 +348,7 @@
       percent: 14.59
     '2013':
       count: 844
-      percent: 18.130000000000003
+      percent: 18.13
 '16083':
   name: Twin Falls County
   employment:
@@ -372,7 +372,7 @@
       percent: 0.1
     '2010':
       count: 24
-      percent: 0.06999999999999998
+      percent: 0.07
     '2011':
       count: 19
       percent: 0.06
@@ -393,13 +393,13 @@
       percent: 0.59
     '2007':
       count: 27
-      percent: 0.5700000000000002
+      percent: 0.57
     '2008':
       count: 13
-      percent: 0.30000000000000004
+      percent: 0.3
     '2009':
       count: 11
-      percent: 0.29000000000000004
+      percent: 0.29
     '2010':
       count: 18
       percent: 0.5

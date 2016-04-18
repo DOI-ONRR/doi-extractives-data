@@ -6,19 +6,19 @@
       percent: 3.16
     '2012':
       count: 37
-      percent: 3.8699999999999997
+      percent: 3.87
 '38007':
   name: Billings County
   employment:
     '2010':
       count: 79
-      percent: 15.860000000000001
+      percent: 15.86
 '38009':
   name: Bottineau County
   employment:
     '2004':
       count: 147
-      percent: 6.5699999999999985
+      percent: 6.57
     '2005':
       count: 157
       percent: 7.02
@@ -27,7 +27,7 @@
       percent: 6.92
     '2007':
       count: 167
-      percent: 7.539999999999999
+      percent: 7.54
     '2008':
       count: 220
       percent: 9.1
@@ -39,10 +39,10 @@
       percent: 12.25
     '2011':
       count: 418
-      percent: 15.660000000000002
+      percent: 15.66
     '2012':
       count: 341
-      percent: 12.120000000000001
+      percent: 12.12
     '2013':
       count: 328
       percent: 12.31
@@ -54,16 +54,16 @@
       percent: 8.67
     '2005':
       count: 89
-      percent: 6.5600000000000005
+      percent: 6.56
     '2006':
       count: 93
-      percent: 6.609999999999999
+      percent: 6.61
     '2007':
       count: 94
-      percent: 6.460000000000001
+      percent: 6.46
     '2008':
       count: 100
-      percent: 6.890000000000001
+      percent: 6.89
     '2009':
       count: 94
       percent: 6.5
@@ -75,7 +75,7 @@
       percent: 10.41
     '2012':
       count: 236
-      percent: 13.270000000000001
+      percent: 13.27
     '2013':
       count: 227
       percent: 11.97
@@ -84,13 +84,13 @@
   employment:
     '2004':
       count: 33
-      percent: 5.6899999999999995
+      percent: 5.69
     '2005':
       count: 37
       percent: 6.41
     '2006':
       count: 41
-      percent: 7.1099999999999985
+      percent: 7.11
     '2007':
       count: 48
       percent: 8.15
@@ -102,10 +102,10 @@
       percent: 9.63
     '2010':
       count: 75
-      percent: 10.850000000000001
+      percent: 10.85
     '2011':
       count: 120
-      percent: 14.850000000000001
+      percent: 14.85
 '38015':
   name: Burleigh County
   employment:
@@ -114,10 +114,10 @@
       percent: 0.03
     '2007':
       count: 57
-      percent: 0.12000000000000001
+      percent: 0.12
     '2008':
       count: 60
-      percent: 0.12000000000000001
+      percent: 0.12
     '2009':
       count: 42
       percent: 0.08
@@ -153,7 +153,7 @@
   employment:
     '2013':
       count: 26
-      percent: 3.4899999999999998
+      percent: 3.49
 '38033':
   name: Golden Valley County
   employment:
@@ -168,7 +168,7 @@
   employment:
     '2013':
       count: 166
-      percent: 0.4100000000000001
+      percent: 0.41
 '38053':
   name: McKenzie County
   employment:
@@ -177,7 +177,7 @@
       percent: 5.29
     '2005':
       count: 126
-      percent: 5.119999999999999
+      percent: 5.12
     '2006':
       count: 243
       percent: 9.2
@@ -201,7 +201,7 @@
       percent: 19.54
     '2013':
       count: 1731
-      percent: 18.830000000000002
+      percent: 18.83
 '38059':
   name: Morton County
   employment:
@@ -213,7 +213,7 @@
       percent: 0.97
     '2007':
       count: 71
-      percent: 0.7799999999999999
+      percent: 0.78
     '2013':
       count: 47
       percent: 0.45
@@ -222,22 +222,22 @@
   employment:
     '2004':
       count: 41
-      percent: 1.7500000000000004
+      percent: 1.75
     '2005':
       count: 39
-      percent: 1.7300000000000002
+      percent: 1.73
     '2006':
       count: 50
       percent: 2.34
     '2007':
       count: 38
-      percent: 1.7100000000000002
+      percent: 1.71
     '2008':
       count: 70
-      percent: 3.0700000000000003
+      percent: 3.07
     '2011':
       count: 968
-      percent: 18.419999999999998
+      percent: 18.42
     '2012':
       count: 962
       percent: 14.96
@@ -249,7 +249,7 @@
   employment:
     '2013':
       count: 9
-      percent: 0.24000000000000002
+      percent: 0.24
 '38075':
   name: Renville County
   employment:
@@ -273,25 +273,25 @@
       percent: 13.62
     '2013':
       count: 150
-      percent: 16.650000000000006
+      percent: 16.65
 '38089':
   name: Stark County
   employment:
     '2004':
       count: 380
-      percent: 3.4099999999999997
+      percent: 3.41
     '2005':
       count: 417
-      percent: 3.5900000000000003
+      percent: 3.59
     '2006':
       count: 413
-      percent: 3.4499999999999997
+      percent: 3.45
     '2007':
       count: 490
       percent: 4.02
     '2008':
       count: 698
-      percent: 5.489999999999999
+      percent: 5.49
     '2009':
       count: 805
       percent: 6.23
@@ -315,13 +315,13 @@
       percent: 1.24
     '2005':
       count: 420
-      percent: 1.5599999999999996
+      percent: 1.56
     '2006':
       count: 370
       percent: 1.35
     '2007':
       count: 372
-      percent: 1.3299999999999996
+      percent: 1.33
     '2008':
       count: 379
       percent: 1.32
@@ -333,7 +333,7 @@
       percent: 2.02
     '2011':
       count: 1067
-      percent: 3.4299999999999997
+      percent: 3.43
     '2012':
       count: 1626
       percent: 4.72
@@ -348,13 +348,13 @@
       percent: 10.9
     '2005':
       count: 1401
-      percent: 14.070000000000002
+      percent: 14.07
     '2006':
       count: 1832
       percent: 16.91
     '2007':
       count: 2045
-      percent: 18.240000000000002
+      percent: 18.24
     '2008':
       count: 3091
       percent: 24.05
@@ -363,10 +363,10 @@
       percent: 23.51
     '2010':
       count: 4797
-      percent: 29.959999999999994
+      percent: 29.96
     '2011':
       count: 8047
-      percent: 33.849999999999994
+      percent: 33.85
     '2012':
       count: 12652
       percent: 36.91

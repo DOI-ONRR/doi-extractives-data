@@ -9,22 +9,22 @@
       percent: 0.08
     '2006':
       count: 135
-      percent: 0.06999999999999998
+      percent: 0.07
     '2007':
       count: 144
       percent: 0.08
     '2008':
       count: 131
-      percent: 0.06999999999999998
+      percent: 0.07
     '2009':
       count: 122
-      percent: 0.06999999999999998
+      percent: 0.07
     '2010':
       count: 119
-      percent: 0.06999999999999998
+      percent: 0.07
     '2011':
       count: 113
-      percent: 0.06999999999999998
+      percent: 0.07
     '2012':
       count: 105
       percent: 0.06
@@ -45,13 +45,13 @@
       percent: 0.09
     '2007':
       count: 52
-      percent: 0.12000000000000001
+      percent: 0.12
     '2008':
       count: 51
       percent: 0.11
     '2009':
       count: 47
-      percent: 0.12000000000000001
+      percent: 0.12
     '2010':
       count: 46
       percent: 0.11
@@ -63,25 +63,25 @@
   employment:
     '2004':
       count: 167
-      percent: 0.38000000000000006
+      percent: 0.38
     '2005':
       count: 149
-      percent: 0.33000000000000007
+      percent: 0.33
     '2006':
       count: 132
-      percent: 0.29000000000000004
+      percent: 0.29
     '2007':
       count: 152
-      percent: 0.32000000000000006
+      percent: 0.32
     '2008':
       count: 165
-      percent: 0.3400000000000001
+      percent: 0.34
     '2009':
       count: 111
-      percent: 0.24000000000000002
+      percent: 0.24
     '2010':
       count: 100
-      percent: 0.21000000000000002
+      percent: 0.21
     '2011':
       count: 94
       percent: 0.2
@@ -96,13 +96,13 @@
   employment:
     '2008':
       count: 194
-      percent: 2.8099999999999996
+      percent: 2.81
     '2012':
       count: 41
       percent: 0.54
     '2013':
       count: 56
-      percent: 0.7400000000000001
+      percent: 0.74
 '18027':
   name: Daviess County
   employment:
@@ -117,13 +117,13 @@
       percent: 4.54
     '2007':
       count: 526
-      percent: 4.6899999999999995
+      percent: 4.69
     '2008':
       count: 534
       percent: 4.81
     '2009':
       count: 541
-      percent: 5.050000000000001
+      percent: 5.05
     '2010':
       count: 239
       percent: 2.29
@@ -135,13 +135,13 @@
       percent: 2.42
     '2013':
       count: 250
-      percent: 2.3099999999999996
+      percent: 2.31
 '18033':
   name: DeKalb County
   employment:
     '2013':
       count: 14
-      percent: 0.06999999999999998
+      percent: 0.07
 '18035':
   name: Delaware County
   employment:
@@ -204,7 +204,7 @@
   employment:
     '2013':
       count: 16
-      percent: 0.39000000000000007
+      percent: 0.39
 '18051':
   name: Gibson County
   employment:
@@ -213,7 +213,7 @@
       percent: 3.25
     '2005':
       count: 659
-      percent: 4.1099999999999985
+      percent: 4.11
     '2006':
       count: 657
       percent: 4.05
@@ -228,13 +228,13 @@
       percent: 3.9
     '2010':
       count: 848
-      percent: 5.109999999999999
+      percent: 5.11
     '2011':
       count: 933
       percent: 5.42
     '2012':
       count: 976
-      percent: 5.470000000000001
+      percent: 5.47
     '2013':
       count: 1051
       percent: 5.55
@@ -243,13 +243,13 @@
   employment:
     '2006':
       count: 89
-      percent: 0.33000000000000007
+      percent: 0.33
     '2010':
       count: 64
-      percent: 0.24000000000000002
+      percent: 0.24
     '2011':
       count: 63
-      percent: 0.24000000000000002
+      percent: 0.24
 '18055':
   name: Greene County
   employment:
@@ -258,16 +258,16 @@
       percent: 6.81
     '2005':
       count: 531
-      percent: 7.290000000000001
+      percent: 7.29
     '2006':
       count: 589
       percent: 7.99
     '2010':
       count: 21
-      percent: 0.32000000000000006
+      percent: 0.32
     '2011':
       count: 25
-      percent: 0.38000000000000006
+      percent: 0.38
     '2012':
       count: 80
       percent: 1.25
@@ -279,7 +279,7 @@
   employment:
     '2004':
       count: 330
-      percent: 0.37000000000000005
+      percent: 0.37
     '2005':
       count: 261
       percent: 0.27
@@ -300,25 +300,25 @@
       percent: 0.18
     '2011':
       count: 169
-      percent: 0.15000000000000002
+      percent: 0.15
     '2012':
       count: 185
       percent: 0.16
     '2013':
       count: 183
-      percent: 0.15000000000000002
+      percent: 0.15
 '18061':
   name: Harrison County
   employment:
     '2004':
       count: 135
-      percent: 1.1300000000000001
+      percent: 1.13
     '2005':
       count: 151
       percent: 1.32
     '2006':
       count: 132
-      percent: 1.1500000000000001
+      percent: 1.15
     '2007':
       count: 143
       percent: 1.24
@@ -351,10 +351,10 @@
   employment:
     '2004':
       count: 63
-      percent: 0.4100000000000001
+      percent: 0.41
     '2005':
       count: 57
-      percent: 0.37000000000000005
+      percent: 0.37
 '18071':
   name: Jackson County
   employment:
@@ -378,7 +378,7 @@
       percent: 1.29
     '2005':
       count: 112
-      percent: 0.6900000000000001
+      percent: 0.69
     '2006':
       count: 41
       percent: 0.25
@@ -399,7 +399,7 @@
       percent: 6.01
     '2012':
       count: 1081
-      percent: 6.270000000000001
+      percent: 6.27
     '2013':
       count: 935
       percent: 5.37
@@ -489,16 +489,16 @@
       percent: 1.37
     '2006':
       count: 167
-      percent: 1.1600000000000001
+      percent: 1.16
     '2007':
       count: 168
       percent: 1.2
     '2008':
       count: 150
-      percent: 1.1199999999999997
+      percent: 1.12
     '2009':
       count: 121
-      percent: 0.9900000000000001
+      percent: 0.99
     '2010':
       count: 122
       percent: 1
@@ -510,7 +510,7 @@
       percent: 1.05
     '2013':
       count: 128
-      percent: 0.9900000000000001
+      percent: 0.99
 '18097':
   name: Marion County
   employment:
@@ -549,31 +549,31 @@
   employment:
     '2004':
       count: 98
-      percent: 0.9299999999999999
+      percent: 0.93
     '2005':
       count: 98
-      percent: 0.9199999999999999
+      percent: 0.92
     '2006':
       count: 104
       percent: 1
     '2007':
       count: 93
-      percent: 0.8999999999999999
+      percent: 0.9
     '2008':
       count: 79
-      percent: 0.7799999999999999
+      percent: 0.78
     '2009':
       count: 72
       percent: 0.79
     '2010':
       count: 73
-      percent: 0.8200000000000002
+      percent: 0.82
     '2011':
       count: 76
-      percent: 0.8400000000000001
+      percent: 0.84
     '2012':
       count: 68
-      percent: 0.7400000000000001
+      percent: 0.74
     '2013':
       count: 48
       percent: 0.52
@@ -588,37 +588,37 @@
       percent: 0.22
     '2006':
       count: 147
-      percent: 0.24000000000000002
+      percent: 0.24
     '2007':
       count: 154
       percent: 0.25
     '2008':
       count: 152
-      percent: 0.24000000000000002
+      percent: 0.24
     '2009':
       count: 138
       percent: 0.22
     '2010':
       count: 195
-      percent: 0.32000000000000006
+      percent: 0.32
     '2011':
       count: 167
       percent: 0.27
     '2012':
       count: 179
-      percent: 0.29000000000000004
+      percent: 0.29
     '2013':
       count: 178
-      percent: 0.29000000000000004
+      percent: 0.29
 '18107':
   name: Montgomery County
   employment:
     '2004':
       count: 71
-      percent: 0.42000000000000004
+      percent: 0.42
     '2005':
       count: 65
-      percent: 0.39000000000000007
+      percent: 0.39
     '2007':
       count: 72
       percent: 0.44
@@ -627,13 +627,13 @@
   employment:
     '2004':
       count: 72
-      percent: 0.48000000000000004
+      percent: 0.48
     '2005':
       count: 69
       percent: 0.46
     '2006':
       count: 83
-      percent: 0.5499999999999999
+      percent: 0.55
     '2007':
       count: 78
       percent: 0.52
@@ -645,13 +645,13 @@
       percent: 0.45
     '2010':
       count: 60
-      percent: 0.43000000000000005
+      percent: 0.43
     '2011':
       count: 59
-      percent: 0.42000000000000004
+      percent: 0.42
     '2012':
       count: 57
-      percent: 0.39000000000000007
+      percent: 0.39
     '2013':
       count: 58
       percent: 0.4
@@ -669,10 +669,10 @@
       percent: 0.11
     '2007':
       count: 23
-      percent: 0.12000000000000001
+      percent: 0.12
     '2008':
       count: 22
-      percent: 0.12000000000000001
+      percent: 0.12
     '2013':
       count: 14
       percent: 0.08
@@ -681,28 +681,28 @@
   employment:
     '2004':
       count: 66
-      percent: 1.0699999999999996
+      percent: 1.07
     '2005':
       count: 58
-      percent: 0.9199999999999999
+      percent: 0.92
     '2006':
       count: 62
-      percent: 0.9400000000000002
+      percent: 0.94
     '2007':
       count: 62
       percent: 0.8
     '2008':
       count: 49
-      percent: 0.6400000000000001
+      percent: 0.64
 '18125':
   name: Pike County
   employment:
     '2004':
       count: 537
-      percent: 17.740000000000002
+      percent: 17.74
     '2005':
       count: 441
-      percent: 15.190000000000001
+      percent: 15.19
     '2006':
       count: 522
       percent: 17.18
@@ -711,7 +711,7 @@
       percent: 15.27
     '2012':
       count: 502
-      percent: 16.110000000000003
+      percent: 16.11
     '2013':
       count: 529
       percent: 16.49
@@ -729,13 +729,13 @@
   employment:
     '2004':
       count: 119
-      percent: 1.3900000000000001
+      percent: 1.39
     '2005':
       count: 34
-      percent: 0.39000000000000007
+      percent: 0.39
     '2006':
       count: 28
-      percent: 0.32000000000000006
+      percent: 0.32
     '2007':
       count: 23
       percent: 0.26
@@ -744,25 +744,25 @@
       percent: 0.22
     '2009':
       count: 20
-      percent: 0.24000000000000002
+      percent: 0.24
     '2010':
       count: 18
-      percent: 0.21000000000000002
+      percent: 0.21
     '2011':
       count: 72
-      percent: 0.8300000000000001
+      percent: 0.83
     '2012':
       count: 75
       percent: 0.87
     '2013':
       count: 96
-      percent: 1.1199999999999997
+      percent: 1.12
 '18133':
   name: Putnam County
   employment:
     '2004':
       count: 53
-      percent: 0.42000000000000004
+      percent: 0.42
     '2005':
       count: 49
       percent: 0.4
@@ -771,19 +771,19 @@
       percent: 0.4
     '2007':
       count: 51
-      percent: 0.4100000000000001
+      percent: 0.41
     '2008':
       count: 51
-      percent: 0.42000000000000004
+      percent: 0.42
     '2009':
       count: 51
       percent: 0.45
     '2010':
       count: 48
-      percent: 0.42000000000000004
+      percent: 0.42
     '2011':
       count: 50
-      percent: 0.43000000000000005
+      percent: 0.43
     '2012':
       count: 62
       percent: 0.5
@@ -846,7 +846,7 @@
   employment:
     '2013':
       count: 17
-      percent: 0.24000000000000002
+      percent: 0.24
 '18145':
   name: Shelby County
   employment:
@@ -855,16 +855,16 @@
       percent: 0.98
     '2005':
       count: 162
-      percent: 0.9500000000000001
+      percent: 0.95
     '2006':
       count: 177
       percent: 1.03
     '2007':
       count: 194
-      percent: 1.1500000000000001
+      percent: 1.15
     '2008':
       count: 190
-      percent: 1.1500000000000001
+      percent: 1.15
     '2009':
       count: 194
       percent: 1.22
@@ -879,7 +879,7 @@
       percent: 0.4
     '2013':
       count: 63
-      percent: 0.37000000000000005
+      percent: 0.37
 '18147':
   name: Spencer County
   employment:
@@ -909,7 +909,7 @@
       percent: 0.08
     '2010':
       count: 10
-      percent: 0.06999999999999998
+      percent: 0.07
     '2011':
       count: 9
       percent: 0.06
@@ -924,13 +924,13 @@
   employment:
     '2007':
       count: 20
-      percent: 0.37000000000000005
+      percent: 0.37
     '2008':
       count: 28
       percent: 0.53
     '2009':
       count: 37
-      percent: 0.6900000000000001
+      percent: 0.69
     '2011':
       count: 372
       percent: 6.38
@@ -945,16 +945,16 @@
       percent: 0.4
     '2005':
       count: 458
-      percent: 0.42000000000000004
+      percent: 0.42
     '2006':
       count: 496
       percent: 0.46
     '2007':
       count: 508
-      percent: 0.48000000000000004
+      percent: 0.48
     '2008':
       count: 518
-      percent: 0.48000000000000004
+      percent: 0.48
     '2009':
       count: 544
       percent: 0.52
@@ -966,16 +966,16 @@
       percent: 0.09
     '2012':
       count: 127
-      percent: 0.12000000000000001
+      percent: 0.12
     '2013':
       count: 120
-      percent: 0.12000000000000001
+      percent: 0.12
 '18165':
   name: Vermillion County
   employment:
     '2004':
       count: 18
-      percent: 0.37000000000000005
+      percent: 0.37
 '18167':
   name: Vigo County
   employment:
@@ -999,7 +999,7 @@
       percent: 0.03
     '2010':
       count: 147
-      percent: 0.30000000000000004
+      percent: 0.3
     '2011':
       count: 70
       percent: 0.14
@@ -1029,22 +1029,22 @@
   employment:
     '2004':
       count: 81
-      percent: 0.5700000000000002
+      percent: 0.57
     '2005':
       count: 74
       percent: 0.53
     '2006':
       count: 67
-      percent: 0.4700000000000001
+      percent: 0.47
     '2007':
       count: 154
-      percent: 1.0699999999999996
+      percent: 1.07
     '2008':
       count: 147
       percent: 1.02
     '2009':
       count: 163
-      percent: 1.1500000000000001
+      percent: 1.15
     '2010':
       count: 208
       percent: 1.44
@@ -1074,7 +1074,7 @@
       percent: 0.08
     '2008':
       count: 21
-      percent: 0.06999999999999998
+      percent: 0.07
     '2009':
       count: 18
       percent: 0.06
@@ -1086,7 +1086,7 @@
       percent: 0.06
     '2012':
       count: 19
-      percent: 0.06999999999999998
+      percent: 0.07
     '2013':
       count: 18
       percent: 0.06
@@ -1095,4 +1095,4 @@
   employment:
     '2013':
       count: 26
-      percent: 0.29000000000000004
+      percent: 0.29

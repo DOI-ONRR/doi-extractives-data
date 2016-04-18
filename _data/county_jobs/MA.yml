@@ -6,13 +6,13 @@
       percent: 0.1
     '2008':
       count: 66
-      percent: 0.06999999999999998
+      percent: 0.07
     '2011':
       count: 65
-      percent: 0.06999999999999998
+      percent: 0.07
     '2012':
       count: 65
-      percent: 0.06999999999999998
+      percent: 0.07
 '25003':
   name: Berkshire County
   employment:
@@ -255,10 +255,10 @@
       percent: 0.25
     '2006':
       count: 373
-      percent: 0.21000000000000002
+      percent: 0.21
     '2007':
       count: 271
-      percent: 0.15000000000000002
+      percent: 0.15
     '2008':
       count: 185
       percent: 0.1
@@ -300,19 +300,19 @@
       percent: 0.09
     '2007':
       count: 234
-      percent: 0.06999999999999998
+      percent: 0.07
     '2008':
       count: 199
       percent: 0.06
     '2009':
       count: 203
-      percent: 0.06999999999999998
+      percent: 0.07
     '2010':
       count: 206
-      percent: 0.06999999999999998
+      percent: 0.07
     '2011':
       count: 204
-      percent: 0.06999999999999998
+      percent: 0.07
     '2012':
       count: 202
       percent: 0.06

@@ -96,7 +96,7 @@
       percent: 0.25
     '2006':
       count: 181
-      percent: 0.29000000000000004
+      percent: 0.29
     '2007':
       count: 169
       percent: 0.27
@@ -129,7 +129,7 @@
   employment:
     '2005':
       count: 122
-      percent: 0.12000000000000001
+      percent: 0.12
     '2006':
       count: 163
       percent: 0.16
@@ -150,10 +150,10 @@
       percent: 0.16
     '2012':
       count: 64
-      percent: 0.06999999999999998
+      percent: 0.07
     '2013':
       count: 71
-      percent: 0.06999999999999998
+      percent: 0.07
 '34017':
   name: Hudson County
   employment:
@@ -285,13 +285,13 @@
       percent: 0.08
     '2008':
       count: 107
-      percent: 0.06999999999999998
+      percent: 0.07
     '2009':
       count: 100
-      percent: 0.06999999999999998
+      percent: 0.07
     '2010':
       count: 100
-      percent: 0.06999999999999998
+      percent: 0.07
     '2011':
       count: 92
       percent: 0.06
@@ -321,7 +321,7 @@
       percent: 0.09
     '2009':
       count: 124
-      percent: 0.06999999999999998
+      percent: 0.07
     '2010':
       count: 97
       percent: 0.06
@@ -330,7 +330,7 @@
       percent: 0.06
     '2012':
       count: 110
-      percent: 0.06999999999999998
+      percent: 0.07
     '2013':
       count: 128
       percent: 0.08
@@ -360,7 +360,7 @@
       percent: 0.09
     '2007':
       count: 60
-      percent: 0.15000000000000002
+      percent: 0.15
     '2008':
       count: 30
       percent: 0.08
@@ -378,7 +378,7 @@
       percent: 0.08
     '2013':
       count: 57
-      percent: 0.15000000000000002
+      percent: 0.15
 '34039':
   name: Union County
   employment:
@@ -396,22 +396,22 @@
       percent: 0.4
     '2005':
       count: 147
-      percent: 0.38000000000000006
+      percent: 0.38
     '2006':
       count: 153
-      percent: 0.4100000000000001
+      percent: 0.41
     '2007':
       count: 157
-      percent: 0.42000000000000004
+      percent: 0.42
     '2008':
       count: 145
-      percent: 0.39000000000000007
+      percent: 0.39
     '2009':
       count: 136
-      percent: 0.38000000000000006
+      percent: 0.38
     '2010':
       count: 134
-      percent: 0.38000000000000006
+      percent: 0.38
     '2012':
       count: 60
       percent: 0.17

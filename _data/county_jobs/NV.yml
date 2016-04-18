@@ -3,10 +3,10 @@
   employment:
     '2004':
       count: 17
-      percent: 0.21000000000000002
+      percent: 0.21
     '2005':
       count: 10
-      percent: 0.12000000000000001
+      percent: 0.12
     '2012':
       count: 11
       percent: 0.14
@@ -57,10 +57,10 @@
       percent: 8.05
     '2006':
       count: 2100
-      percent: 10.239999999999998
+      percent: 10.24
     '2007':
       count: 2114
-      percent: 9.970000000000002
+      percent: 9.97
     '2008':
       count: 2191
       percent: 10.25
@@ -72,19 +72,19 @@
       percent: 9.33
     '2011':
       count: 2541
-      percent: 11.450000000000003
+      percent: 11.45
     '2012':
       count: 3143
       percent: 13.83
     '2013':
       count: 2791
-      percent: 12.370000000000003
+      percent: 12.37
 '32009':
   name: Esmeralda County
   employment:
     '2004':
       count: 59
-      percent: 27.700000000000003
+      percent: 27.7
 '32011':
   name: Eureka County
   employment:
@@ -99,13 +99,13 @@
       percent: 89.45
     '2011':
       count: 3949
-      percent: 89.49000000000002
+      percent: 89.49
     '2012':
       count: 4244
-      percent: 89.64999999999999
+      percent: 89.65
     '2013':
       count: 4243
-      percent: 89.88000000000001
+      percent: 89.88
 '32013':
   name: Humboldt County
   employment:
@@ -114,37 +114,37 @@
       percent: 22.02
     '2005':
       count: 1811
-      percent: 24.130000000000003
+      percent: 24.13
     '2006':
       count: 1841
       percent: 23.64
     '2007':
       count: 1455
-      percent: 19.259999999999994
+      percent: 19.26
     '2008':
       count: 1476
-      percent: 19.419999999999998
+      percent: 19.42
     '2009':
       count: 1540
-      percent: 20.880000000000003
+      percent: 20.88
     '2010':
       count: 1766
       percent: 22.8
     '2011':
       count: 1835
-      percent: 22.869999999999994
+      percent: 22.87
     '2012':
       count: 2072
-      percent: 24.650000000000002
+      percent: 24.65
     '2013':
       count: 2115
-      percent: 25.040000000000003
+      percent: 25.04
 '32015':
   name: Lander County
   employment:
     '2005':
       count: 618
-      percent: 30.409999999999993
+      percent: 30.41
     '2006':
       count: 636
       percent: 30.8
@@ -162,10 +162,10 @@
       percent: 53.85
     '2011':
       count: 1780
-      percent: 55.349999999999994
+      percent: 55.35
     '2012':
       count: 1937
-      percent: 55.010000000000005
+      percent: 55.01
     '2013':
       count: 2018
       percent: 54.64
@@ -174,7 +174,7 @@
   employment:
     '2007':
       count: 16
-      percent: 1.1500000000000001
+      percent: 1.15
     '2008':
       count: 14
       percent: 0.97
@@ -195,31 +195,31 @@
       percent: 1.53
     '2005':
       count: 138
-      percent: 1.1300000000000001
+      percent: 1.13
     '2006':
       count: 145
-      percent: 1.1300000000000001
+      percent: 1.13
     '2007':
       count: 140
       percent: 1.06
     '2008':
       count: 150
-      percent: 1.1700000000000002
+      percent: 1.17
     '2009':
       count: 92
-      percent: 0.8099999999999999
+      percent: 0.81
     '2010':
       count: 103
-      percent: 0.9299999999999999
+      percent: 0.93
     '2011':
       count: 159
-      percent: 1.4200000000000002
+      percent: 1.42
     '2012':
       count: 222
-      percent: 1.9900000000000002
+      percent: 1.99
     '2013':
       count: 275
-      percent: 2.3899999999999997
+      percent: 2.39
 '32021':
   name: Mineral County
   employment:
@@ -231,10 +231,10 @@
       percent: 1.53
     '2011':
       count: 43
-      percent: 2.7600000000000002
+      percent: 2.76
     '2012':
       count: 76
-      percent: 5.680000000000001
+      percent: 5.68
     '2013':
       count: 146
       percent: 11.12
@@ -252,13 +252,13 @@
       percent: 7.46
     '2007':
       count: 979
-      percent: 7.670000000000001
+      percent: 7.67
     '2008':
       count: 977
       percent: 8.27
     '2009':
       count: 943
-      percent: 8.629999999999999
+      percent: 8.63
     '2010':
       count: 941
       percent: 8.93
@@ -276,16 +276,16 @@
   employment:
     '2006':
       count: 426
-      percent: 23.110000000000003
+      percent: 23.11
     '2007':
       count: 420
       percent: 22.85
     '2008':
       count: 406
-      percent: 22.310000000000002
+      percent: 22.31
     '2009':
       count: 330
-      percent: 20.150000000000006
+      percent: 20.15
     '2010':
       count: 335
       percent: 20.72
@@ -294,22 +294,22 @@
       percent: 28.51
     '2012':
       count: 569
-      percent: 31.369999999999994
+      percent: 31.37
     '2013':
       count: 607
-      percent: 32.790000000000006
+      percent: 32.79
 '32029':
   name: Storey County
   employment:
     '2004':
       count: 78
-      percent: 7.3599999999999985
+      percent: 7.36
     '2005':
       count: 84
-      percent: 6.5299999999999985
+      percent: 6.53
     '2006':
       count: 83
-      percent: 3.8699999999999997
+      percent: 3.87
 '32031':
   name: Washoe County
   employment:
@@ -321,16 +321,16 @@
       percent: 0.14
     '2006':
       count: 317
-      percent: 0.15000000000000002
+      percent: 0.15
     '2007':
       count: 335
-      percent: 0.15000000000000002
+      percent: 0.15
     '2008':
       count: 264
       percent: 0.13
     '2009':
       count: 222
-      percent: 0.12000000000000001
+      percent: 0.12
     '2010':
       count: 248
       percent: 0.13
@@ -339,7 +339,7 @@
       percent: 0.13
     '2012':
       count: 217
-      percent: 0.12000000000000001
+      percent: 0.12
     '2013':
       count: 183
       percent: 0.1
@@ -354,13 +354,13 @@
       percent: 16.57
     '2006':
       count: 682
-      percent: 17.479999999999997
+      percent: 17.48
     '2011':
       count: 1155
-      percent: 26.590000000000003
+      percent: 26.59
     '2012':
       count: 1105
-      percent: 25.490000000000002
+      percent: 25.49
     '2013':
       count: 1075
       percent: 25.72

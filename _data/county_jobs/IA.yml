@@ -42,13 +42,13 @@
   employment:
     '2006':
       count: 19
-      percent: 0.06999999999999998
+      percent: 0.07
 '19057':
   name: Des Moines County
   employment:
     '2010':
       count: 50
-      percent: 0.24000000000000002
+      percent: 0.24
 '19065':
   name: Fayette County
   employment:
@@ -63,7 +63,7 @@
       percent: 0.14
     '2008':
       count: 9
-      percent: 0.12000000000000001
+      percent: 0.12
 '19083':
   name: Hardin County
   employment:
@@ -72,7 +72,7 @@
       percent: 1.82
     '2008':
       count: 152
-      percent: 1.9800000000000002
+      percent: 1.98
     '2009':
       count: 153
       percent: 2.04
@@ -117,13 +117,13 @@
       percent: 0.08
     '2011':
       count: 85
-      percent: 0.06999999999999998
+      percent: 0.07
     '2012':
       count: 86
-      percent: 0.06999999999999998
+      percent: 0.07
     '2013':
       count: 87
-      percent: 0.06999999999999998
+      percent: 0.07
 '19121':
   name: Madison County
   employment:
@@ -135,7 +135,7 @@
       percent: 1.52
     '2012':
       count: 66
-      percent: 1.7999999999999998
+      percent: 1.8
     '2013':
       count: 50
       percent: 1.41
@@ -150,7 +150,7 @@
       percent: 0.25
     '2006':
       count: 57
-      percent: 0.24000000000000002
+      percent: 0.24
     '2007':
       count: 59
       percent: 0.25
@@ -237,13 +237,13 @@
       percent: 0.25
     '2008':
       count: 46
-      percent: 0.24000000000000002
+      percent: 0.24
     '2009':
       count: 42
       percent: 0.23
     '2010':
       count: 40
-      percent: 0.21000000000000002
+      percent: 0.21
     '2011':
       count: 42
       percent: 0.22
@@ -273,10 +273,10 @@
       percent: 0.28
     '2012':
       count: 57
-      percent: 0.32000000000000006
+      percent: 0.32
     '2013':
       count: 57
-      percent: 0.31000000000000005
+      percent: 0.31
 '19191':
   name: Winneshiek County
   employment:
@@ -294,7 +294,7 @@
       percent: 1.28
     '2008':
       count: 144
-      percent: 1.3900000000000001
+      percent: 1.39
 '19195':
   name: Worth County
   employment:

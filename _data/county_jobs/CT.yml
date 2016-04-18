@@ -63,19 +63,19 @@
       percent: 0.16
     '2007':
       count: 92
-      percent: 0.15000000000000002
+      percent: 0.15
     '2008':
       count: 98
       percent: 0.16
     '2009':
       count: 89
-      percent: 0.15000000000000002
+      percent: 0.15
     '2010':
       count: 74
       percent: 0.13
     '2011':
       count: 71
-      percent: 0.12000000000000001
+      percent: 0.12
     '2012':
       count: 81
       percent: 0.13
@@ -93,7 +93,7 @@
       percent: 0.06
     '2007':
       count: 253
-      percent: 0.06999999999999998
+      percent: 0.07
     '2011':
       count: 173
       percent: 0.05
@@ -114,13 +114,13 @@
       percent: 0.05
     '2006':
       count: 89
-      percent: 0.06999999999999998
+      percent: 0.07
     '2007':
       count: 89
-      percent: 0.06999999999999998
+      percent: 0.07
     '2008':
       count: 90
-      percent: 0.06999999999999998
+      percent: 0.07
     '2009':
       count: 76
       percent: 0.06
@@ -150,4 +150,4 @@
       percent: 0.17
     '2007':
       count: 81
-      percent: 0.21000000000000002
+      percent: 0.21

@@ -3,7 +3,7 @@
   employment:
     '2010':
       count: 29
-      percent: 0.15000000000000002
+      percent: 0.15
     '2011':
       count: 165
       percent: 0.88
@@ -27,7 +27,7 @@
       percent: 0.1
     '2007':
       count: 59
-      percent: 0.15000000000000002
+      percent: 0.15
     '2008':
       count: 96
       percent: 0.25
@@ -36,10 +36,10 @@
       percent: 0.28
     '2010':
       count: 117
-      percent: 0.31000000000000005
+      percent: 0.31
     '2011':
       count: 107
-      percent: 0.29000000000000004
+      percent: 0.29
     '2012':
       count: 102
       percent: 0.28
@@ -51,16 +51,16 @@
   employment:
     '2004':
       count: 172
-      percent: 0.32000000000000006
+      percent: 0.32
     '2005':
       count: 123
       percent: 0.22
     '2006':
       count: 124
-      percent: 0.21000000000000002
+      percent: 0.21
     '2007':
       count: 91
-      percent: 0.15000000000000002
+      percent: 0.15
     '2008':
       count: 63
       percent: 0.11
@@ -72,22 +72,22 @@
       percent: 0.08
     '2011':
       count: 67
-      percent: 0.12000000000000001
+      percent: 0.12
     '2012':
       count: 85
-      percent: 0.15000000000000002
+      percent: 0.15
 '04007':
   name: Gila County
   employment:
     '2005':
       count: 467
-      percent: 3.3699999999999997
+      percent: 3.37
     '2006':
       count: 665
-      percent: 4.619999999999999
+      percent: 4.62
     '2007':
       count: 751
-      percent: 5.119999999999999
+      percent: 5.12
     '2008':
       count: 959
       percent: 6.5
@@ -99,19 +99,19 @@
       percent: 7.01
     '2011':
       count: 992
-      percent: 7.090000000000001
+      percent: 7.09
 '04012':
   name: La Paz County
   employment:
     '2011':
       count: 22
-      percent: 0.42000000000000004
+      percent: 0.42
 '04013':
   name: Maricopa County
   employment:
     '2004':
       count: 1127
-      percent: 0.06999999999999998
+      percent: 0.07
     '2005':
       count: 1366
       percent: 0.08
@@ -144,7 +144,7 @@
   employment:
     '2004':
       count: 114
-      percent: 0.24000000000000002
+      percent: 0.24
     '2005':
       count: 99
       percent: 0.19
@@ -153,25 +153,25 @@
       percent: 0.22
     '2007':
       count: 153
-      percent: 0.29000000000000004
+      percent: 0.29
     '2008':
       count: 250
       percent: 0.5
     '2009':
       count: 279
-      percent: 0.6100000000000001
+      percent: 0.61
     '2010':
       count: 404
-      percent: 0.8999999999999999
+      percent: 0.9
     '2011':
       count: 558
       percent: 1.25
     '2012':
       count: 525
-      percent: 1.1900000000000004
+      percent: 1.19
     '2013':
       count: 505
-      percent: 1.1300000000000001
+      percent: 1.13
 '04017':
   name: Navajo County
   employment:
@@ -180,10 +180,10 @@
       percent: 2.86
     '2005':
       count: 763
-      percent: 2.7600000000000002
+      percent: 2.76
     '2006':
       count: 563
-      percent: 1.9900000000000002
+      percent: 1.99
     '2007':
       count: 557
       percent: 1.94
@@ -210,16 +210,16 @@
   employment:
     '2004':
       count: 1300
-      percent: 0.38000000000000006
+      percent: 0.38
     '2005':
       count: 1340
-      percent: 0.38000000000000006
+      percent: 0.38
     '2006':
       count: 1557
-      percent: 0.42000000000000004
+      percent: 0.42
     '2007':
       count: 1802
-      percent: 0.48000000000000004
+      percent: 0.48
     '2008':
       count: 1936
       percent: 0.52
@@ -231,22 +231,22 @@
       percent: 0.53
     '2011':
       count: 1919
-      percent: 0.5599999999999999
+      percent: 0.56
     '2012':
       count: 2096
-      percent: 0.6000000000000001
+      percent: 0.6
     '2013':
       count: 2255
-      percent: 0.6400000000000001
+      percent: 0.64
 '04021':
   name: Pinal County
   employment:
     '2004':
       count: 907
-      percent: 2.2800000000000002
+      percent: 2.28
     '2005':
       count: 766
-      percent: 1.6700000000000002
+      percent: 1.67
     '2006':
       count: 974
       percent: 2.01
@@ -261,16 +261,16 @@
       percent: 2.46
     '2010':
       count: 1257
-      percent: 2.4099999999999997
+      percent: 2.41
     '2011':
       count: 1391
       percent: 2.63
     '2012':
       count: 1384
-      percent: 2.4699999999999998
+      percent: 2.47
     '2013':
       count: 1840
-      percent: 3.2399999999999998
+      percent: 3.24
 '04023':
   name: Santa Cruz County
   employment:
@@ -282,7 +282,7 @@
   employment:
     '2004':
       count: 1086
-      percent: 1.9800000000000002
+      percent: 1.98
     '2005':
       count: 1128
       percent: 1.91
@@ -294,22 +294,22 @@
       percent: 1.96
     '2008':
       count: 1246
-      percent: 2.0500000000000003
+      percent: 2.05
     '2009':
       count: 1495
       percent: 2.68
     '2010':
       count: 1205
-      percent: 2.2399999999999998
+      percent: 2.24
     '2011':
       count: 932
-      percent: 1.7600000000000002
+      percent: 1.76
     '2012':
       count: 998
-      percent: 1.8399999999999996
+      percent: 1.84
     '2013':
       count: 1071
-      percent: 1.9300000000000002
+      percent: 1.93
 '04027':
   name: Yuma County
   employment:

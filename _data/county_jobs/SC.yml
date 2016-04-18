@@ -3,7 +3,7 @@
   employment:
     '2004':
       count: 169
-      percent: 0.30000000000000004
+      percent: 0.3
     '2005':
       count: 157
       percent: 0.28
@@ -15,7 +15,7 @@
       percent: 0.2
     '2008':
       count: 135
-      percent: 0.24000000000000002
+      percent: 0.24
     '2009':
       count: 108
       percent: 0.2
@@ -27,7 +27,7 @@
       percent: 0.19
     '2012':
       count: 117
-      percent: 0.21000000000000002
+      percent: 0.21
     '2013':
       count: 108
       percent: 0.2
@@ -42,7 +42,7 @@
       percent: 0.11
     '2006':
       count: 70
-      percent: 0.12000000000000001
+      percent: 0.12
     '2007':
       count: 69
       percent: 0.11
@@ -102,22 +102,22 @@
   employment:
     '2007':
       count: 107
-      percent: 0.7500000000000001
+      percent: 0.75
     '2008':
       count: 130
-      percent: 0.9199999999999999
+      percent: 0.92
     '2009':
       count: 124
       percent: 0.96
     '2010':
       count: 112
-      percent: 0.8600000000000001
+      percent: 0.86
     '2011':
       count: 95
-      percent: 0.7300000000000001
+      percent: 0.73
     '2012':
       count: 79
-      percent: 0.6000000000000001
+      percent: 0.6
     '2013':
       count: 78
       percent: 0.58
@@ -129,13 +129,13 @@
       percent: 0.2
     '2008':
       count: 16
-      percent: 0.15000000000000002
+      percent: 0.15
 '45035':
   name: Dorchester County
   employment:
     '2004':
       count: 70
-      percent: 0.24000000000000002
+      percent: 0.24
     '2005':
       count: 75
       percent: 0.25
@@ -150,7 +150,7 @@
       percent: 0.08
     '2009':
       count: 20
-      percent: 0.06999999999999998
+      percent: 0.07
 '45041':
   name: Florence County
   employment:
@@ -171,7 +171,7 @@
       percent: 0.25
     '2005':
       count: 47
-      percent: 0.21000000000000002
+      percent: 0.21
     '2006':
       count: 47
       percent: 0.2
@@ -180,7 +180,7 @@
       percent: 0.2
     '2010':
       count: 47
-      percent: 0.21000000000000002
+      percent: 0.21
     '2011':
       count: 48
       percent: 0.22
@@ -189,7 +189,7 @@
       percent: 0.2
     '2013':
       count: 45
-      percent: 0.21000000000000002
+      percent: 0.21
 '45045':
   name: Greenville County
   employment:
@@ -267,19 +267,19 @@
       percent: 0.23
     '2009':
       count: 48
-      percent: 0.30000000000000004
+      percent: 0.3
     '2010':
       count: 78
       percent: 0.5
     '2011':
       count: 146
-      percent: 0.9299999999999999
+      percent: 0.93
     '2012':
       count: 153
       percent: 0.97
     '2013':
       count: 134
-      percent: 0.8600000000000001
+      percent: 0.86
 '45063':
   name: Lexington County
   employment:
@@ -288,10 +288,10 @@
       percent: 0.16
     '2005':
       count: 133
-      percent: 0.15000000000000002
+      percent: 0.15
     '2006':
       count: 135
-      percent: 0.15000000000000002
+      percent: 0.15
     '2007':
       count: 134
       percent: 0.14
@@ -303,10 +303,10 @@
       percent: 0.13
     '2010':
       count: 108
-      percent: 0.12000000000000001
+      percent: 0.12
     '2011':
       count: 112
-      percent: 0.12000000000000001
+      percent: 0.12
     '2012':
       count: 110
       percent: 0.11
@@ -357,7 +357,7 @@
       percent: 0.13
     '2009':
       count: 162
-      percent: 0.15000000000000002
+      percent: 0.15
     '2010':
       count: 159
       percent: 0.14
@@ -384,10 +384,10 @@
       percent: 0.08
     '2007':
       count: 49
-      percent: 0.06999999999999998
+      percent: 0.07
     '2008':
       count: 55
-      percent: 0.06999999999999998
+      percent: 0.07
     '2009':
       count: 43
       percent: 0.06

@@ -64,7 +64,7 @@
         contentElem = accordionItem.querySelector(contentSelector);
 
       this.toggleAttribute(accordionItem, 'aria-expanded');
-      this.toggleAttribute(contentElem, 'aria-hidden')
+      this.toggleAttribute(contentElem, 'aria-hidden');
     },
 
     // sets [accordion-item], [accordion-button], [accordion-content]

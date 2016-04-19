@@ -16,6 +16,7 @@
       }
     },
 
+    // determine truthiness an attribute of an element
     elemStatus: function (elem, attr) {
       if (elem.getAttribute(attr) === 'true' || elem.getAttribute(attr) === true) {
         return true;
@@ -70,19 +71,23 @@
 
         var accordion = this.accordions[i],
           accordionName = accordion.getAttribute('accordion'),
+          accordionItems;
+
+        if (accordion.hasAttribute('accordion-item')) {
+          accordionItems = [accordion];
+        } else {
           accordionItems = accordion.querySelectorAll('[accordion-item]');
-
-        // check if node list is different than list of children
-        if (accordionItems.length !== accordion.children.length) {
-          this.forEach(accordion.children, function(index, item) {
-            // add [accordion-item] attribute to list items
-            if (item.tagName.toLowerCase() === 'li' && !item.hasAttribute('accordion-item')) {
-              item.setAttribute('accordion-item', true);
-            }
-          })
-         }
-
-        accordionItems = accordion.querySelectorAll('[accordion-item]');
+          // check if node list is different than list of children
+          if (accordionItems.length !== accordion.children.length) {
+            this.forEach(accordion.children, function(index, item) {
+              // add [accordion-item] attribute to list items
+              if (item.tagName.toLowerCase() === 'li' && !item.hasAttribute('accordion-item')) {
+                item.setAttribute('accordion-item', true);
+              }
+            });
+          }
+          accordionItems = accordion.querySelectorAll('[accordion-item]');
+        }
 
         for (var j = 0; j < accordionItems.length; j++) {
           var accordionItem = accordionItems[j];
@@ -94,7 +99,7 @@
           var itemContent = this.setItemContent(accordionItem,
             accordionName,
             j,
-            this.elemStatus(accordionItem,'aria-expanded'))
+            this.elemStatus(accordionItem,'aria-expanded'));
 
           this.setButton(accordionItem, itemContent.id);
         }
@@ -112,7 +117,7 @@
         itemContent = accordionItem.querySelector('div');
       }
 
-      itemContent.setAttribute('accordion-content', this.EMPTY_STRING)
+      itemContent.setAttribute('accordion-content', this.EMPTY_STRING);
       itemContent.id = accordionName + '--content--' + iteration;
       itemContent.setAttribute('role', 'content');
       itemContent.setAttribute('aria-hidden', !expanded);
@@ -132,6 +137,7 @@
       this.registerButton(itemButton);
     },
 
+    // add click handler to each button
     registerButton: function(button) {
       button.addEventListener('click', this.toggleAccordion.bind(this));
     }

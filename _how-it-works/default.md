@@ -24,7 +24,7 @@ permalink: /how-it-works/
   </div>
 </section>
 
-<section accordion accordion-desktop="false" class="container-outer landing-wrapper">
+<section accordion="how-it-works-landing" accordion-desktop="false" class="container-outer landing-wrapper">
   <section class="container">
     <h2 id="process" class="h3 landing-section_category">The process</h2>
     <div class="container landing-section_open overview">

@@ -32,7 +32,7 @@ $onshore-renewables-secondary-color: $blue;
 
     @include span-columns(2);
 
-    &[accordion-open=true] {
+    &[aria-expanded=true] {
       @include span-columns(3);
     }
   }
@@ -64,7 +64,7 @@ $onshore-renewables-secondary-color: $blue;
 }
 
 .revenues_subpage_dyk-link {
-  bottom: $base-padding;
+  bottom: $base-padding-lite;
   font-size: 12px;
   position: absolute;
   right: $base-padding;

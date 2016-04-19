@@ -174,20 +174,20 @@ layout: default
         federal revenue from {{ product_name | downcase }} in {{ year }}.
         Historically:</p>
 
-      <table>
+      <table is="bar-chart-table" data-percent-max="100">
         <thead>
           <th>Year</th>
-          <th class="numeric">Revenue</th>
-          <th class="numeric">US %</th>
-          <th class="numeric">Rank</th>
+          <th class="numeric" data-series="revenue">Revenue</th>
+          <th class="numeric" data-series="percent">US %</th>
+          <th class="numeric" data-series="rank">Rank</th>
         </thead>
         <tbody>
         {% for year in product[1] %}
           <tr>
             <td>{{ year[0] }}</td>
-            <td class="numeric">${{ year[1].revenue | intcomma }}</td>
-            <td class="numeric">{{ year[1].percent | percent }}%</td>
-            <td class="numeric">{{ year[1].rank | ordinal:'super' }}</td>
+            <td data-series="revenue" data-value="{{ year[1].revenue }}" class="numeric">${{ year[1].revenue | intcomma }}</td>
+            <td data-series="percent" data-value="{{ year[1].percent }}" class="numeric">{{ year[1].percent | percent }}%</td>
+            <td data-series="rank" class="numeric">{{ year[1].rank | ordinal:'super' }}</td>
           </tr>
         {% endfor %}
         </tbody>
@@ -198,11 +198,11 @@ layout: default
 
     <section id="revenue-types">
       <h3>Revenue Types</h3>
-      <table>
+      <table is="bar-chart-table" data-percent-max="100">
         <thead>
           <th>Year</th>
           {% for type in revenue_type_names %}
-          <th class="numeric">
+          <th class="numeric" data-series="revenue-{{ type | slugify }}">
             {% if type == 'Other Revenues' %}Other{% else %}{{ type }}{% endif %}
           </th>
           {% endfor %}
@@ -214,7 +214,7 @@ layout: default
             <td>{{ year }}</td>
             {% for type in revenue_type_names %}
             {% assign type_revenue = revenue_types[type] %}
-            <td class="numeric">
+            <td class="numeric" data-series="revenue-{{ type | slugify }}" data-value="{{ type_revenue[year] | default: 0 }}">
               ${{ type_revenue[year] | default: 0 | intcomma }}
             </td>
             {% endfor %}
@@ -240,20 +240,20 @@ layout: default
         {% else %}no{% endif %}
         {{ product[0] | downcase }} in {{ year }}. Historically:</p>
 
-      <table>
+      <table is="bar-chart-table" data-percent-max="100">
         <thead>
           <th>Year</th>
-          <th class="numeric">Production (units)</th>
-          <th class="numeric">US %</th>
-          <th class="numeric">Rank</th>
+          <th class="numeric" data-series="volume">Production (units)</th>
+          <th class="numeric" data-series="percent">US %</th>
+          <th class="numeric" data-series="rank">Rank</th>
         </thead>
         <tbody>
         {% for year in product[1] %}
           <tr>
             <td>{{ year[0] }}</td>
-            <td class="numeric">${{ year[1].volume | intcomma }}</td>
-            <td class="numeric">{{ year[1].percent | percent }}%</td>
-            <td class="numeric">{{ year[1].rank | ordinal:'super' }}</td>
+            <td data-series="volume" data-value="{{ year[1].volume }}" class="numeric">${{ year[1].volume | intcomma }}</td>
+            <td data-series="percent" data-value="{{ year[1].percent }}" class="numeric">{{ year[1].percent | percent }}%</td>
+            <td data-series="rank" class="numeric">{{ year[1].rank | ordinal:'super' }}</td>
           </tr>
         {% endfor %}
         </tbody>
@@ -277,19 +277,19 @@ layout: default
         {% else %}no{% endif %}
         {{ product[0] | downcase }} in {{ year }}. Historically:</p>
 
-      <table>
+      <table is="bar-chart-table" data-percent-max="100">
         <thead>
           <th>Year</th>
-          <th class="numeric">Production (units)</th>
-          <th class="numeric">US %</th>
-          <th class="numeric">Rank</th>
+          <th class="numeric" data-series="volume">Production (units)</th>
+          <th class="numeric" data-series="percent">US %</th>
+          <th class="numeric" data-series="rank">Rank</th>
         </thead>
         <tbody>
         {% for year in product[1] %}
           <tr>
             <td>{{ year[0] }}</td>
-            <td class="numeric">{{ year[1].volume | intcomma }}</td>
-            <td class="numeric">{{ year[1].percent | percent }}%</td>
+            <td data-series="volume" data-value="{{ year[1].volume }}" class="numeric">{{ year[1].volume | intcomma }}</td>
+            <td data-series="percent" data-value="{{ year[1].percent }}" class="numeric">{{ year[1].percent | percent }}%</td>
             <td class="numeric">{{ year[1].rank | ordinal:'super' }}</td>
           </tr>
         {% endfor %}
@@ -304,30 +304,30 @@ layout: default
     <h2>Employment</h2>
     <p>{{ jobs_summary | strip_html }} Historically:</p>
 
-    <table>
+    <table is="bar-chart-table" data-percent-max="100">
       <thead>
         <th>Year</th>
-        <th class="numeric">Jobs</th>
-        <th class="numeric">State %</th>
+        <th class="numeric" data-series="jobs">Jobs</th>
+        <th class="numeric" data-series="percent">State %</th>
       </thead>
       <tbody>
       {% for year in jobs %}
         <tr>
           <td>{{ year[0] }}</td>
-          <td class="numeric">{{ year[1].count | intcomma }}</td>
-          <td class="numeric">{{ year[1].percent | percent }}%</td>
+          <td class="numeric" data-series="jobs" data-value="{{ year[1].count }}">{{ year[1].count | intcomma }}</td>
+          <td class="numeric" data-series="percent" data-value="{{ year[1].percent }}">{{ year[1].percent | percent }}%</td>
         </tr>
       {% endfor %}
       </tbody>
     </table>
 
     <h3>County-Level Employment</h3>
-    <table>
+    <table is="bar-chart-table" data-percent-max="100">
       <thead>
         <tr>
           <th>County</th>
-          <th class="numeric">Jobs</th>
-          <th class="numeric">County %</th>
+          <th class="numeric" data-series="jobs">Jobs</th>
+          <th class="numeric" data-series="percent">County %</th>
         </tr>
       </thead>
       <tbody>
@@ -335,8 +335,8 @@ layout: default
         {% if county[1].employment[year].count > 0 %}
         <tr>
           <td>{{ county[1].name }}</td>
-          <td class="numeric">{{ county[1].employment[year].count | intcomma }}</td>
-          <td class="numeric">{{ county[1].employment[year].percent | percent }}%</td>
+          <td class="numeric" data-series="jobs" data-value="{{ county[1].employment[year].count }}">{{ county[1].employment[year].count | intcomma }}</td>
+          <td class="numeric" data-series="percent" data-value="{{ county[1].employment[year].percent }}">{{ county[1].employment[year].percent | percent }}%</td>
         </tr>
         {% endif %}
       {% endfor %}
@@ -349,18 +349,18 @@ layout: default
     <h2>GDP</h2>
     <p>{{ gdp_summary | strip_html }} Historically:</p>
 
-    <table>
+    <table is="bar-chart-table" data-percent-max="100">
       <thead>
         <th>Year</th>
-        <th class="numeric">Dollars</th>
-        <th class="numeric">State %</th>
+        <th class="numeric" data-series="gdp">Dollars</th>
+        <th class="numeric" data-series="percent">State %</th>
       </thead>
       <tbody>
       {% for year in gdp %}
         <tr>
           <td>{{ year[0] }}</td>
-          <td class="numeric">${{ year[1].dollars | intcomma }}</td>
-          <td class="numeric">{{ year[1].percent | percent }}%</td>
+          <td class="numeric" data-series="gdp" data-value="{{ year[1].dollars }}">${{ year[1].dollars | intcomma }}</td>
+          <td class="numeric" data-series="percent" data-value="{{ year[1].percent }}">{{ year[1].percent | percent }}%</td>
         </tr>
       {% endfor %}
       </tbody>
@@ -375,18 +375,18 @@ layout: default
       {% if commodity[0] != 'Total' %}
     <section id="exports-{{ commodity[0] | slugify }}">
       <h3>{{ commodity[0] }}</h3>
-      <table>
+      <table is="bar-chart-table" data-percent-max="100">
         <thead>
           <th>Year</th>
-          <th class="numeric">Dollars</th>
-          <th class="numeric">State %</th>
+          <th class="numeric" data-series="exports">Dollars</th>
+          <th class="numeric" data-series="percent">State %</th>
         </thead>
         <tbody>
           {% for commodity_year in commodity[1] %}
             <tr>
               <td>{{ commodity_year[0] }}</td>
-              <td class="numeric">${{ commodity_year[1].dollars | intcomma }}</td>
-              <td class="numeric">{{ commodity_year[1].percent | percent }}%</td>
+              <td class="numeric" data-series="exports" data-value="{{ commodity_year[1].dollars }}">${{ commodity_year[1].dollars | intcomma }}</td>
+              <td class="numeric" data-series="percent" data-value="{{ commodity_year[1].percent }}">{{ commodity_year[1].percent | percent }}%</td>
             </tr>
           {% endfor %}
         </tbody>
@@ -401,21 +401,21 @@ layout: default
     <p>{{ disbursements_summary | strip_html }}</p>
 
     {% if disbursements %}
-    <table>
+    <table is="bar-chart-table">
       <thead>
         <th>Year</th>
-        <th class="numeric">Total</th>
-        <th class="numeric">Onshore</th>
-        <th class="numeric">Offshore</th>
+        <th class="numeric" data-series="total">Total</th>
+        <th class="numeric" data-series="onshore">Onshore</th>
+        <th class="numeric" data-series="offshore">Offshore</th>
       </thead>
       <tbody>
       {% for _year in disbursements.All %}
         {% assign year = _year[0] %}
         <tr>
           <td>{{ year }}</td>
-          <td class="numeric">${{ disbursements.All[year] | round | intcomma }}</td>
-          <td class="numeric">${{ disbursements.Onshore[year] | round | intcomma }}</td>
-          <td class="numeric">${{ disbursements.Offshore[year] | round | intcomma }}</td>
+          <td class="numeric" data-series="total" data-value="{{ disbursements.All[year] }}">${{ disbursements.All[year] | round | intcomma }}</td>
+          <td class="numeric" data-series="onshore" data-value="{{ disbursements.Onshore[year] }}">${{ disbursements.Onshore[year] | round | intcomma }}</td>
+          <td class="numeric" data-series="offshore" data-value="{{ disbursements.Offshore[year] }}">${{ disbursements.Offshore[year] | round | intcomma }}</td>
         </tr>
       {% endfor %}
       </tbody>
@@ -425,3 +425,5 @@ layout: default
   </section>
 
 </main>
+
+<script src="{{ site.baseurl }}/js/components/bar-chart-table.js"></script>

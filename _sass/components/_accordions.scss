@@ -4,19 +4,20 @@
 // screen sizes smaller than medium
 //
 // Markup:
-// <ul accordion>
+// <ul accordion="primary">
 //    <li>
 //        <h3>Heading</h3>
 //        <button accordion-button title="Title content"></button>
 //        <div>Accordion Content</div
 //    </li>
 // </ul>
-// <ul accordion>
+// <ul accordion="secondary">
 //    <li aria-expanded="false">
 //        <h3>Heading</h3>
-//        <button class="accordion-button_more" accordion-button>more</button>
-//        <button class="accordion-button_more" accordion-button>less</button>
-//        <div class="accordion-content">Accordion Content</div
+//        <button accordion-text>
+//          <span class='accordion-more'>more</span>
+//          <span class='accordion-less'>less</span>
+//        </button>
 //    </li>
 // </ul>
 //
@@ -27,7 +28,7 @@
 
   &[aria-expanded=true] {
 
-    [accordion-button] {
+    [accordion-button]:not([accordion-text]) {
       @include rotate(270deg, 3);
 
       &:after {
@@ -35,28 +36,30 @@
       }
     }
 
-    .accordion-button_more {
-      display: none;
-    }
-
-    .accordion-button_less {
-      display: inline-block;
-
+    [accordion-text] {
       &::after {
         content: $icon-dash-sm;
       }
 
+
+      .accordion-more {
+        display: none;
+      }
+
+      .accordion-less {
+        display: inline-block;
+      }
+
     }
 
-    [accordion-content],
-    .accordion-more {
+    [accordion-content] {
       display: inline-block;
     }
 
   }
 
   &[aria-expanded=false] {
-    [accordion-button] {
+    [accordion-button]:not([accordion-text]) {
       @include rotate(90deg, 1);
 
       &:after {
@@ -64,23 +67,26 @@
       }
     }
 
-    .accordion-button_more {
+    [accordion-text] {
       &::after {
         content: $icon-plus-sm;
       }
 
-      display: inline-block;
-    }
+      .accordion-more {
+        display: inline-block;
 
-    .accordion-button_less {
-      display: none;
+        &:hover,
+        &:focus {
+          text-decoration: underline;
+        }
+      }
+
+      .accordion-less {
+        display: none;
+      }
     }
 
     [accordion-content] {
-      display: none;
-    }
-
-    .accordion-more {
       display: none;
     }
   }
@@ -99,8 +105,8 @@
 }
 
 [accordion-button],
-.accordion-button_more,
-.accordion-button_less {
+[accordion-text] {
+  cursor: pointer;
 
   &:after {
     font-family: 'eiti';
@@ -120,4 +126,25 @@
   width: 2rem;
 }
 
+[accordion-text] {
+  color: $blue;
+  display: inline-block;
+  padding: 0;
+  width: initial;
 
+  &:hover &::after,
+  &:hover .accordion-less,
+  &:hover .accordion-more,
+  &:focus &::after,
+  &:focus .accordion-less,
+  &:hover .accordion-more {
+    text-decoration: underline;
+  }
+}
+
+
+.accordion-more,
+.accordion-less {
+  cursor: pointer;
+  margin: 0;
+}

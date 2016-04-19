@@ -19,7 +19,8 @@
 
     // determine truthiness an attribute of an element
     elemStatus: function (elem, attr) {
-      if (elem.getAttribute(attr) === 'true' || elem.getAttribute(attr) === true) {
+      if (elem.getAttribute(attr) === 'true' ||
+        elem.getAttribute(attr) === true) {
         return true;
       } else if (elem.getAttribute(attr) === 'false' ||
           elem.getAttribute(attr) ||
@@ -60,7 +61,7 @@
 
       var accordionItem = this.findParentNode('accordion-item', target),
         contentSelector = '#' + target.getAttribute('aria-controls'),
-        contentElem = accordionItem.querySelector(contentSelector)
+        contentElem = accordionItem.querySelector(contentSelector);
 
       this.toggleAttribute(accordionItem, 'aria-expanded');
       this.toggleAttribute(contentElem, 'aria-hidden')
@@ -82,7 +83,8 @@
           if (accordionItems.length !== accordion.children.length) {
             this.forEach(accordion.children, function(index, item) {
               // add [accordion-item] attribute to list items
-              if (item.tagName.toLowerCase() === 'li' && !item.hasAttribute('accordion-item')) {
+              if (item.tagName.toLowerCase() === 'li' &&
+                !item.hasAttribute('accordion-item')) {
                 item.setAttribute('accordion-item', true);
               }
             });
@@ -93,7 +95,7 @@
         for (var j = 0; j < accordionItems.length; j++) {
           var accordionItem = accordionItems[j];
 
-          // default to setting [accordion-expanded="false"]
+          // default to setting [accordion-expanded='false']
           if (!accordionItem.hasAttribute('aria-expanded')) {
             accordionItem.setAttribute('aria-expanded', false);
           }
@@ -109,7 +111,8 @@
     },
 
     // sets new attributes on [accordion-content] and returns the DOM node
-    setItemContent: function (accordionItem, accordionName, iteration, expanded) {
+    setItemContent: function (accordionItem, accordionName,
+      iteration, expanded) {
       var itemContent = accordionItem.querySelector('[accordion-content]');
       if (!itemContent) {
         itemContent = accordionItem.querySelector('.accordion-content');

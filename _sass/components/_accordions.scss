@@ -74,11 +74,6 @@
 
       .accordion-more {
         display: inline-block;
-
-        &:hover,
-        &:focus {
-          text-decoration: underline;
-        }
       }
 
       .accordion-less {
@@ -147,4 +142,9 @@
 .accordion-less {
   cursor: pointer;
   margin: 0;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
 }

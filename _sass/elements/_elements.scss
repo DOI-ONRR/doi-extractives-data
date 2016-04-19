@@ -44,10 +44,6 @@ a img {
   outline: 0;
 }
 
-[aria-hidden="true"] {
-  display: none;
-}
-
 table {
   @include font-size(0.9);
 

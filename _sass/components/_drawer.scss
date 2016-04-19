@@ -8,7 +8,7 @@
 // Markup:
 // <div class="drawer" id="glossary" aria-hidden="false">
 //   <button title="Close glossary"
-//       class="button button--close toggle"><span class="u-visually-hidden"><icon class="icon-close-x"></icon></span>
+//       class="button button--close toggle"><label class="sr-only">Close glossary</label><icon class="icon-close-x"></icon>
 //   </button>
 //   <label for="drawer-search" class="label">Filter glossary terms</label>
 //   <input id="drawer-search" type="search" placeholder="e.g. placeholder text">

@@ -24,7 +24,7 @@ $term-width-max: 220px;
     border-top: 1px solid $mid-gray;
   }
 
-  .accordion-button {
+  [accordion-button] {
     color: $white;
     margin: 0;
     margin-top: -2px;

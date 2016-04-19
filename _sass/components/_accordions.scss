@@ -5,14 +5,14 @@
 //
 // Markup:
 // <ul accordion>
-//    <li accordion-item accordion-open="true">
+//    <li>
 //        <h3>Heading</h3>
-//        <button class="accordion-button" accordion-button title="Title content"></button>
-//        <div class="accordion-content">Accordion Content</div
+//        <button accordion-button title="Title content"></button>
+//        <div>Accordion Content</div
 //    </li>
 // </ul>
 // <ul accordion>
-//    <li accordion-item accordion-open="true">
+//    <li aria-expanded="false">
 //        <h3>Heading</h3>
 //        <button class="accordion-button_more" accordion-button>more</button>
 //        <button class="accordion-button_more" accordion-button>less</button>
@@ -25,9 +25,9 @@
 [accordion-item] {
   position: relative;
 
-  &[accordion-open=true] {
+  &[aria-expanded=true] {
 
-    .accordion-button {
+    [accordion-button] {
       @include rotate(270deg, 3);
 
       &:after {
@@ -48,15 +48,15 @@
 
     }
 
-    .accordion-content,
+    [accordion-content],
     .accordion-more {
       display: inline-block;
     }
 
   }
 
-  &[accordion-open=false] {
-    .accordion-button {
+  &[aria-expanded=false] {
+    [accordion-button] {
       @include rotate(90deg, 1);
 
       &:after {
@@ -76,7 +76,7 @@
       display: none;
     }
 
-    .accordion-content {
+    [accordion-content] {
       display: none;
     }
 
@@ -88,17 +88,17 @@
 
 [accordion][accordion-desktop=false] {
   @include respond-to(medium-up) {
-    .accordion-content {
+    [accordion-content] {
       display: inline-block;
     }
 
-    .accordion-button {
+    [accordion-button] {
       display: none;
     }
   }
 }
 
-.accordion-button,
+[accordion-button],
 .accordion-button_more,
 .accordion-button_less {
 
@@ -110,7 +110,7 @@
   }
 }
 
-.accordion-button {
+[accordion-button] {
   background-color: transparent;
   background-size: 50%;
   float: right;

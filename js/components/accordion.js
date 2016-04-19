@@ -4,7 +4,7 @@
   // for instructions on use: http://jsfiddle.net/brianhedberg/b84u31m1/
   exports.Accordion = function() {
     this.accordions = document.querySelectorAll('[accordion]');
-    this.EMPTY_STRING = "";
+    this.EMPTY_STRING = '';
     this.setAttributes();
   };
 

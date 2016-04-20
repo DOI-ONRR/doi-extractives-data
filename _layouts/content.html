@@ -2,9 +2,9 @@
 layout: default
 ---
 
-<div class="container-outer container-padded">
+<div class="layout-content container-outer container-margin">
 
-  <div class="container-left-7">
+  <article class="container-left-7">
 
     {% if page.breadcrumb %}
       <div>
@@ -13,12 +13,14 @@ layout: default
       </div>
     {% endif %}
 
-    {% if page.title %}
+    {% if page.title_display %}
+      <h1>{{page.title_display}}</h1>
+    {% elsif page.title %}
       <h1>{{page.title}}</h1>
     {% endif %}
 
     {{ content | markdownify }}
 
-  </div>
+  </article>
 
 </div>

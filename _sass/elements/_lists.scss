@@ -24,10 +24,13 @@
 //
 // Styleguide elements.lists
 
-ul,
-ol {
-  list-style-type: square;
+ol,
+ul {
   padding-left: $base-padding;
+}
+
+ul {
+  list-style-type: disc;
 }
 
 .list-unstyled {

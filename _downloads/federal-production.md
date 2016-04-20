@@ -1,14 +1,14 @@
 ---
 title: Federal Production | Documentation
-layout: downloads
+layout: content
 permalink: /downloads/federal-production/
 title_display: Federal Production by Location
+breadcrumb: Downloads
 ---
 
 
-<p class="case_studies_intro-para">
-This dataset contains information on production on federal lands and waters. We have versions of these datasets available for both calendar and fiscal years 2005-2014. The data is current as of July 11, 2015, for coal and hardrock production and August 25, 2015, for oil and gas production.
-</p>
+> This dataset contains information on production on federal lands and waters. We have versions of these datasets available for both calendar and fiscal years 2005-2014. The data is current as of July 11, 2015, for coal and hardrock production and August 25, 2015, for oil and gas production.
+
 
 <p class="downloads-download_links-intro">Download <strong>calendar</strong> year data:
   <ul class="downloads-download_links">
@@ -25,21 +25,20 @@ This dataset contains information on production on federal lands and waters. We 
   </ul>
 </p>
 
-<p class="u-margin-top" markdown="1">
-If you are looking for additional information on Federal production data
-please visit the [ONRR Statistical Information Site](http://statistics.onrr.gov/). We also have [notes
-on this data](https://github.com/18F/doi-extractives-data/wiki/Data-Catalog#federal-production) from the web development team as they built the interactions on this site.
-</p>
+If you are looking for additional information on Federal production data please visit the [ONRR Statistical Information Site](http://statistics.onrr.gov/). We also have [notes on this data](https://github.com/18F/doi-extractives-data/wiki/Data-Catalog#federal-production) from the web development team as they built the interactions on this site.
 
-<h2 class="h3">Scope</h2>
-<p>This dataset includes natural resource production for U.S. federal lands and offshore areas. It does not include Indian lands, privately-owned lands, or U.S. state lands. The dataset currently include data tracked and managed by the Department of the Interior’s Office of Natural Resources Revenue (ONRR). The production data for Oil and Gas is collected on Form ONRR-4054 (Oil and Gas Operations Report). Coal and hardrock production is collected on Form ONRR-4430 (Solid Minerals Production and Royalty Report).</p>
 
-<h2 class="h3">Data Publication</h2>
+
+## Scope
+
+This dataset includes natural resource production for U.S. federal lands and offshore areas. It does not include Indian lands, privately-owned lands, or U.S. state lands. The dataset currently include data tracked and managed by the Department of the Interior’s Office of Natural Resources Revenue (ONRR). The production data for Oil and Gas is collected on Form ONRR-4054 (Oil and Gas Operations Report). Coal and hardrock production is collected on Form ONRR-4430 (Solid Minerals Production and Royalty Report).
+
+## Data Publication
 
 The Federal production datasets are updated annually in July for the
 most recent completed fiscal and calendar year.
 
-<h2 class="h3">Why was some solids data withheld?</h2>
+## Why was some solids data withheld?
 
 ONRR withheld some solids production information out of an abundance of caution to ensure that there were no violations of the Trade Secrets Act.
 
@@ -47,7 +46,7 @@ ONRR withheld some solids production information out of an abundance of caution 
 * "W" is displayed in the Production Volume column for those products that reveal proprietary data at the county level
 * All "W" volumes are accounted for in separate line totals where state and county have been "Withheld" (columns C, D and E)
 
-<h2 class="h3">A note about “Mixed Exploratory” versus “Federal” categories of production</h2>
+## A note about “Mixed Exploratory” versus “Federal” categories of production
 
 For the purposes of the visualizations on our site, we've aggregated production on two types of jurisdictions: “mixed exploratory” and “federal.” Federal production is production from federal lands and waters; this is straightforward. However, “mixed exploratory” is a temporary jurisdictional unit that is used until production is proven on that location. Then, BLM adjudicates a permanent unit with allocation schedules that may split that area between federal and other ownership. At that point, payors resubmit royalties based on the new unit allocations retroactive to the first production. This means that the federal government rarely gets 100% of “mixed exploratory” volumes. You can see these categories disaggregated in the federal production dataset, downloadable on this page.
 

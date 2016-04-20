@@ -1,18 +1,19 @@
 ---
 title: Federal Revenue by Company | Documentation
-layout: downloads
+layout: content
 permalink: /downloads/federal-revenue-by-company/
 title_display: Federal Revenue by Company
+breadcrumb: Downloads
 ---
 
 
-<p class="case_studies_intro-para">This dataset provides natural resource
+> This dataset provides natural resource
 revenues data by company for calendar years 2013-2015. This new dataset is
 a product of USEITI and represents cooperation between government,
 industry, and civil society to create and confirm this information, and
 provide it in a way that adds to the national dialogue on natural resource
 extraction. This data set will be updated in the first quarter of the
-calendar year.</p>
+calendar year.
 
 <p class="downloads-download_links-intro">Download calendar year data:
   <ul class="downloads-download_links list-unstyled">
@@ -27,27 +28,27 @@ calendar year.</p>
 
 <p class="u-margin-top" markdown="1">We also have [notes on this data](https://github.com/18F/doi-extractives-data/wiki/Data-Catalog#company-revenue) from the web development team as they built the interactions on this site.</p>
 
-<h2 class="h3">Scope</h2>
+## Scope
 
 This dataset includes revenues for U.S. federal lands and offshore areas. It does not include Indian lands, privately-owned lands, or U.S. state lands. The datasets currently include data tracked and managed by the Department of the Interior’s (DOI) Office of Natural Resources Revenue (ONRR), Bureau of Land Management (BLM), and Office of Surface Mining, Reclamation, and Enforcement.
 
-<h2 class="h3">Why is there a line in the data called 'companies below threshold'?</h2>
+## Why is there a line in the data called 'companies below threshold'?
 
 The USEITI Multi-Stakeholder Group agreed to an annual reporting threshold of $100,000 because these aggregated payments make up less than one quarter of one percent of total payments. Many of the companies that fall below this threshold are small companies, individuals, and family trusts. Payments made by entities that reported less than $100,000 are aggregated (rolled-up) into this category.
 
-<h2 class="h3">Why is there a line in the data called 'one mine one product'?</h2>
+## Why is there a line in the data called 'one mine one product'?
 
 Disclosing payments of solid mineral companies who only produce and sell only one product from one mine can reveal proprietary sales price and contracting information and cause competitive harm to these small companies. The Department of the Interior is legally obligated through the Trades Secrets Act to safeguard this data, so payments from these companies are aggregated (rolled-up) in this category. These aggregated payments make up less than three thousandths of one percent of all payments.
 
-<h2 class="h3">Why are some values negative?</h2>
+## Why are some values negative?
 
 Companies can adjust and correct their payments for up to seven years after a transaction takes place. If a company overpays their royalty, rent, or bonus, they are entitled to recoup their overpayment. If the overpayment and recoupment happen in different years, the recoupment will appear as a negative amount in ONRR’s revenue summaries.
 
-<h2 class="h3">Why is there a Gas value, an Oil value and an Oil & Gas value?</p></h2>
+## Why is there a Gas value, an Oil value and an Oil & Gas value?
 
 “Oil & Gas” is the commodity category used for offshore oil and gas rents and bonuses. At the time of lease sale, it isn’t known whether a lease will produce oil, gas, or both oil and gas. After a lease starts producing a commodity (or commodities), the lease owner starts paying royalties, and these royalties can then be associated with either oil or gas. Hence, rent and bonus lines of data will be associated with an “Oil & Gas” commodity type, while royalty lines of data will be associated with either “Oil” or “Gas” commodity types.
 
-<h2 class="h3">Why is the calendar year revenue by location national total slightly different than the revenue by company total?</h2>
+## Why is the calendar year revenue by location national total slightly different than the revenue by company total?
 
 Our site has two federal revenue datasets. The one on this page is organized by the company that paid the revenue. [This one]({{ site.baseurl }}/downloads/federal-revenue-by-location/) is organized by location. However, the national revenue totals on these datasets are slightly different (by about 90 million dollars). This is because the the company revenues dataset excludes revenue from offshore right-of-ways because they don't map to an offshore planning area.
 

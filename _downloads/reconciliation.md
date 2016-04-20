@@ -1,26 +1,27 @@
 ---
 title: Reconciliation | Documentation
-layout: downloads
+layout: content
 permalink: /downloads/reconciliation/
 title_display: Reconciliation
+breadcrumb: Downloads
 ---
 
-<p class="case_studies_intro-para">As a part of USEITI, companies report payments to the government (e.g., rents, taxes, royalties) and the government reports what it received. These figures are compiled and reconciled by an Independent Administrator (IA) and published.</p>
+> As a part of USEITI, companies report payments to the government (e.g., rents, taxes, royalties) and the government reports what it received. These figures are compiled and reconciled by an Independent Administrator (IA) and published.
 
-<p class="downloads-download_links-intro">Download calendar year data:</p>
+Download calendar year data:
 
 <ul class="downloads-download_links list-unstyled">
   <li><a href="{{site.baseurl}}/downloads/reconciliation_2015-12-10.xlsx"><icon class="icon-cloud icon-padded"></icon>
   Full dataset (xlsx, 39 KB)</a></li>
 </ul>
 
-<h2 class="h3">Background</h2>
+## Background
 
 To implement the EITI Standard, government, industry, and civil society collaborate in a disclosure process called reconciliation. The three sectors in a participating country develop a framework for reconciliation. Government and industry share the total amount of revenue the government received and industry paid in the year under review with the {{ "IA" | term_end:"independent administrator (IA)" }}. The IA reconciles reported revenue and investigates any discrepancies. The public can see the results for their respective country in an annual EITI report.
 
 Through a unilateral disclosure, the Department of the Interior (DOI) published online all in-scope revenue from extraction on federal lands by revenue stream and company for CY 2013. DOI reported a total of $12.64 billion in revenue, disclosing to the public 100% of in-scope DOI revenue from extraction on federal lands during CY 2013. In addition to DOI’s unilateral disclosure, the {{ "Multi-Stakeholder Group" | term:"multi-stakeholder group"}} (MSG) asked companies to report to the IA that same nontax information, revenue payments to DOI, as well as federal corporate income tax payments and refunds from the Internal Revenue Service (IRS).
 
-<h2 class="h3">Reconciliation Results</h2>
+## Reconciliation Results
 
 When the independent administrator compared company payments to government revenue, 17 discrepancies exceeded the margin of variance. The independent administrator worked with the companies and government entities to investigate these discrepancies, and was able to find explanations for all of them. Explanations included differences in when payments were recorded and how they were classified.
 
@@ -32,17 +33,17 @@ Of the 45 companies that were asked to participate, 31 reported DOI revenue and 
 
 <img src="{{ site.baseurl }}/img/reconciliation-taxes.png" alt="Chart the scope of reconciliation reporting participation" class="article_img-60 u-margin-top">
 
-<p class="u-margin-top">Five companies also allowed for corporate income tax reconciliation: BP America; Cimarex Energy Co.; Could Peak Energy Resources, LLC; Shell E&P Company; and W&T Offshore, Inc.</p>
+Five companies also allowed for corporate income tax reconciliation: BP America; Cimarex Energy Co.; Could Peak Energy Resources, LLC; Shell E&P Company; and W&T Offshore, Inc.
 
 After the independent administrator compared and reconciled the government revenue streams with company payments, 17 material variances remained, all of which were explained through the reconciliation process, leaving zero unexplained variances.
 
-<h2 class="h3">Scope</h2>
+## Scope
 
 Requirement 4 of the EITI Standard outlines the responsibility of the MSG to determine the scope of EITI reporting in the United States. In carrying out this responsibility, the MSG considered information from a variety of sources before coming to a consensus on the scope for the 2015 USEITI Report.
 
 The MSG publishes meeting minutes and materials for all subcommittee and full MSG meetings on the [MSG website](https://www.doi.gov/eiti/FACA/meetings). These minutes and materials document the MSG’s historical considerations and decisions around scoping. Please refer to *Appendix A: Revenue Reporting Considerations* within the [Extractive Revenue Appendix (PDF)]({{site.baseurl}}/downloads/USEITI_extractive-revenue-appendix_2015-12-10.pdf) for additional background on the scoping process for USEITI.
 
-<h3 class="h4">In-scope government entities and revenue streams</h3>
+### In-scope government entities and revenue streams
 
 <table class="article_table">
   <tr>
@@ -91,11 +92,11 @@ The MSG publishes meeting minutes and materials for all subcommittee and full MS
   </tr>
 </table>
 
-<h3 class="h4">In-scope reporting entities</h3>
+### In-scope reporting entities
 
 The MSG identified that ONRR collects a majority of DOI’s extractive industries-related revenue. The MSG decided to use ONRR’s reported revenue as a proxy for DOI revenue to establish the materiality threshold for reporting. The MSG decided on a materiality threshold for the 2015 USEITI Report of $50 million total annual revenue reported to ONRR by a parent company, including its subsidiaries, which was presented and approved as part of the [USEITI candidacy application (PDF)](http://www.cbuilding.org/sites/default/files/USEITI_Candidacy_Application_Approved_0.pdf). The MSG agreed on this threshold because it would allow at least 80% of ONRR’s revenue to be in-scope for the reconciliation. A more detailed analysis of ONRR revenue data revealed that the $50 million threshold resulted in 84% of ONRR revenue being in-scope for the reconciliation. DOI’s unilateral disclosure covers 100% of revenue from all companies operating within the U.S.
 
-<h3 class="h4">In-scope companies</h3>
+### In-scope companies
 
 
 * Alpha Natural Resources, Inc.
@@ -148,15 +149,15 @@ The MSG identified that ONRR collects a majority of DOI’s extractive industrie
 * WPX Energy, Inc.
 
 
-<h2 class="h3">Basis and period of reporting</h2>
+## Basis and period of reporting
 
 The period of the reconciliation was CY 2013 (January 1, 2013 through December 31, 2013). Reporting companies and government entities reported data for payments made or reported in CY 2013. The reporting currency for the 2015 USEITI Report was US dollars (USD). Companies reported data at the consolidated entity level, including data for all identified subsidiary entities.
 
-<h2 class="h3">How did the Independent Administrator perform the reconciliation?</h2>
+## How did the Independent Administrator perform the reconciliation?
 
 Based upon Requirement 5.1 of the EITI Standard, the IA performed the reconciliation of company payments and government revenue as follows:
 
-<h3 class="h4">Data collection</h3>
+### Data collection
 
 The IA distributed the 2015 USEITI reporting and reconciliation package to reporting companies on March 4, 2015. The package included a cover letter summarizing the USEITI process, a [Data Reporting Template (PDF)](https://www.doi.gov/sites/doi.gov/files/migrated/eiti/upload/USEITI-Reporting-Template-03042015-1.pdf), a [reporting template guidelines document (PDF)](https://www.doi.gov/sites/doi.gov/files/migrated/eiti/upload/USEITI-Reporting-Template-Guidelines-030415-1.pdf) with detailed reporting instructions, and [IRS Form 8821 (PDF)](https://www.doi.gov/sites/doi.gov/files/migrated/eiti/upload/Form-8821-IRS-USEITI.pdf), which is required to authorize the IRS to disclose tax data to the IA for the reporting companies participating in reconciliation of taxes.
 
@@ -167,11 +168,11 @@ The reporting process included the following steps:
 * For reporting companies that made the decision to allow for tax reconciliation, the IRS provided the data directly to the IA for reconciliation. Due to federal tax confidentiality laws, these reporting companies have to authorize the IRS to release corporate tax payment data to the IA through the use of IRS Form 8821.
 
 
-<h3 class="h4">Data reconciliation</h3>
+### Data reconciliation
 
 The IA reconciled the data by comparing the reported amounts from reporting companies to the reported amounts from government entities and identifying any variance amounts. The IA then compared any variance amounts to an investigation threshold known as the Margin of Variance.
 
-<h3 class="h4">Margin of variance</h3>
+### Margin of variance
 
 The MSG considered and approved a Margin of Variance for the IA to apply during the reconciliation. The purpose of the Margin of Variance was to establish a threshold above which variances in reported payments required further evaluation. The MSG determined that variances below the Margin of Variance did not require further evaluation. Variances that were below the respective threshold were presented as-is, with no further consideration. Variances that exceeded the respective threshold were subject to further evaluation and explanation.
 
@@ -186,12 +187,12 @@ Three anticipated reasons for variance were:
 Based upon the type, magnitude, and likelihood of variances for in-scope revenue streams, a variance percentage threshold and a variance floor threshold were assigned to each revenue stream.
 
 
-* **Variance percentage threshold:** If the variance amount when divided by the amount reported by the government was greater than the variance percentage for that revenue stream, the IA considered the variance to exceed the threshold, and then assessed whether the variance floor threshold applied.
-* **Variance floor threshold:** This was the minimum dollar threshold for a variance and only applied if a variance exceeded the variance percentage threshold. If the variance exceeded the variance percentage threshold and exceeded the variance floor threshold, the IA performed further evaluation of the variance.
+* _Variance percentage threshold:_ If the variance amount when divided by the amount reported by the government was greater than the variance percentage for that revenue stream, the IA considered the variance to exceed the threshold, and then assessed whether the variance floor threshold applied.
+* _Variance floor threshold:_ This was the minimum dollar threshold for a variance and only applied if a variance exceeded the variance percentage threshold. If the variance exceeded the variance percentage threshold and exceeded the variance floor threshold, the IA performed further evaluation of the variance.
 
 The table below outlines the Margin of Variance thresholds applied by the IA, which were approved by the MSG.
 
-#### Margin of variance thresholds
+### Margin of variance thresholds
 
 <table class="article_table">
   <tr>

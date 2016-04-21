@@ -1,10 +1,10 @@
 -- fix mis-categorized commodities
-UPDATE county_revenue
-SET
-    product = commodity,
-    commodity = 'Other'
-WHERE
-    commodity IN ('Clay', 'Copper', 'Gilsonite', 'Gold', 'Limestone');
+-- UPDATE county_revenue
+-- SET
+--     product = commodity,
+--     commodity = 'Other'
+-- WHERE
+--     commodity IN ('Clay', 'Copper', 'Gilsonite', 'Gold', 'Limestone');
 
 -- fill in the product field for rows without it
 UPDATE county_revenue
@@ -18,8 +18,20 @@ INSERT INTO county_revenue
 SELECT
     year, state, county, fips, 'All', 'All', SUM(revenue)
 FROM county_revenue
+WHERE revenue_type != 'All'
 GROUP BY
     year, state, county, fips;
+
+-- create summary revenue type rows by county
+-- DELETE FROM county_revenue WHERE revenue_type = 'All';
+-- INSERT INTO county_revenue
+--     (year, state, county, fips, commodity, product, revenue_type, revenue)
+-- SELECT
+--     year, state, county, fips, commodity, product, 'All', SUM(revenue)
+-- FROM county_revenue
+-- WHERE commodity != 'All'
+-- GROUP BY
+--     year, state, county, fips, commodity, product;
 
 -- create state revenue rollups
 DROP TABLE IF EXISTS state_revenue;
@@ -87,7 +99,10 @@ CREATE TABLE state_revenue_rank AS
         state.product,
         state.revenue,
         national.revenue AS total,
-        100 * (ABS(state.revenue) / ABS(national.revenue)) AS percent,
+        (CASE WHEN state.revenue * national.revenue >= 0
+         THEN 100 * (state.revenue / national.revenue)
+         ELSE NULL
+         END) AS percent,
         0 AS rank
     FROM
         state_revenue AS state

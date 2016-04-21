@@ -7,6 +7,11 @@ module EITI
     end
 
     def percent(num, precision=1, small="&lt;1")
+      if num == nil
+        # FIXME what should we represent null % as?
+        return '--'
+      end
+
       num = num.to_f
       # if it's less than 1, return the "small" representation
       if num < 1.0

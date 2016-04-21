@@ -251,7 +251,7 @@ layout: default
         {% for year in product[1] %}
           <tr>
             <td>{{ year[0] }}</td>
-            <td data-series="volume" data-value="{{ year[1].volume }}" class="numeric">${{ year[1].volume | intcomma }}</td>
+            <td data-series="volume" data-value="{{ year[1].volume }}" class="numeric">{{ year[1].volume | intcomma }}</td>
             <td data-series="percent" data-value="{{ year[1].percent }}" class="numeric">{{ year[1].percent | percent }}%</td>
             <td data-series="rank" class="numeric">{{ year[1].rank | ordinal:'super' }}</td>
           </tr>

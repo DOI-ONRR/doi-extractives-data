@@ -70,6 +70,14 @@ th {
   padding: 5px;
 }
 
+th:first-child {
+  text-align: left;
+}
+
+th[scope=row] {
+  font-weight: $weight-bold;
+}
+
 td {
   border: 1px solid $mid-gray;
 }

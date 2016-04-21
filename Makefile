@@ -169,6 +169,21 @@ data/state_revenues.yml:
 		  -c _meta/state_revenues.yml \
 		  -o _$@
 
+data/state_revenues_by_type.yml:
+	$(query) --format ndjson " \
+		SELECT \
+		  state, commodity, revenue_type, year, \
+		  ROUND(SUM(revenue)) AS revenue \
+		FROM county_revenue \
+		WHERE revenue != 0 \
+		GROUP BY \
+		  state, commodity, revenue_type, year \
+		ORDER BY \
+			state, commodity, revenue_type, year" \
+	  | $(nestly) --if ndjson \
+		  -c _meta/state_revenues_by_type.yml \
+		  -o _$@
+
 data/top_state_products:
 	# top N states for each product category in each year
 	top=3 percent=20; \

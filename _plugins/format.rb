@@ -13,8 +13,11 @@ module EITI
       end
 
       num = num.to_f
+      # zero is zero
+      if num == 0
+        return '0'
       # if it's less than 1, return the "small" representation
-      if num < 1.0
+      elsif num < 1.0
         return small
       end
       # if it has decimal precision, format it

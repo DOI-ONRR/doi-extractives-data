@@ -18,6 +18,7 @@ layout: default
 {% assign revenue_types = site.data.revenue_types[state_id] %}
 {% assign revenue_type_names = 'Bonus;Rents;Royalties;Other Revenues' | split: ';' %}
 {% assign top_revenue_products = site.data.top_state_products[state_id].revenue[year] %}
+{% assign revenue_commodities_by_type = site.data.state_revenues_by_type[state_id] %}
 
 {% assign federal_products = site.data.state_federal_production[state_id].products %}
 {% assign federal_products_num = federal_products | size %}
@@ -156,9 +157,35 @@ layout: default
 
 
   <section id="revenue" class="federal revenue">
-    <h2>Revenue</h2>
+    <h2>Federal Revenue</h2>
 
-    <h3>Products</h3>
+    {% assign oilgas = 'Oil & Gas (Non-Royalty)' %}
+
+    <table is="bar-chart-table" class="revenue">
+      <thead>
+        <tr>
+          <th>Commodity</th>
+          <th data-series="Bonus">Securing a lease</th>
+          <th data-series="Rents">Before production</th>
+          <th data-series="Royalties">During production</th>
+          <th data-series="Other Revenues">Other revenues</th>
+        </tr>
+      </thead>
+      {% for commodity in revenue_commodities_by_type %}
+        {% assign commodity_name = commodity[0] %}
+        {% assign revenue_type_values = commodity[1] %}
+      <tbody id="revenue-{{ commodity_name | slugify }}">
+        <tr>
+          <th scope="row">{{ commodity_name | replace: ' (Non-Royalty)', '' }}</th>
+          {% for revenue_type in revenue_type_names %}
+          <td data-series="{{ revenue_type }}" data-value="{{ revenue_type_values[revenue_type][year] | default: 0 }}">${{ commodity[1][revenue_type][year] | default: 0 | intcomma }}</td>
+          {% endfor %}
+        </tr>
+      </tbody>
+      {% endfor %}
+    </table>
+
+    <!--
     {% for product in revenue_products %}
     <section id="revenue-{{ product[0] | slugify }}" class="product">
       {% assign revenue = product[1][year].revenue %}
@@ -184,7 +211,7 @@ layout: default
         <tbody>
         {% for year in product[1] %}
           <tr>
-            <td>{{ year[0] }}</td>
+            <td class="label">{{ year[0] }}</td>
             <td data-series="revenue" data-value="{{ year[1].revenue }}" class="numeric">${{ year[1].revenue | intcomma }}</td>
             <td data-series="percent" data-value="{{ year[1].percent }}" class="numeric">{{ year[1].percent | percent }}%</td>
             <td data-series="rank" class="numeric">{{ year[1].rank | ordinal:'super' }}</td>
@@ -223,6 +250,7 @@ layout: default
         </tbody>
       </table>
     </section>
+    -->
 
   </section>
 

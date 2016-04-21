@@ -224,12 +224,19 @@ tables/offshore_planning_areas: data/_input/geo/offshore/areas.tsv
 	@$(call drop-table,offshore_planning_areas)
 	$(call load-table,$^,offshore_planning_areas)
 
-tables/revenue:
-	@$(call drop-table,county_revenue)
-	$(call load-model,data/_input/onrr/county-revenues.tsv,county_revenue)
+tables/revenue: \
+	tables/county_revenue
 	@$(call drop-table,offshore_revenue)
 	$(call load-model,data/_input/onrr/offshore-revenues.tsv,offshore_revenue)
-	@$(call load-sql,data/db/rollup-revenue.sql)
+	@$(call load-sql,data/revenue/rollup.sql)
+
+tables/county_revenue: data/revenue/onshore.tsv
+	@$(call drop-table,county_revenue)
+	# $(call load-model,data/_input/onrr/county-revenues.tsv,county_revenue)
+	tmp=$^.ndjson; \
+	$(tito) --map ./data/revenue/transform-onshore.js -r tsv $^ > $$tmp; \
+	$(tables) -t ndjson -n county_revenue -i $$tmp; \
+	rm $$tmp
 
 tables/federal-production: \
 	tables/federal_county_production \

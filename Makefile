@@ -179,7 +179,7 @@ data/state_revenues_by_type.yml:
 		GROUP BY \
 		  state, commodity, revenue_type, year \
 		ORDER BY \
-			state, commodity, revenue_type, year" \
+			state, revenue DESC, year" \
 	  | $(nestly) --if ndjson \
 		  -c _meta/state_revenues_by_type.yml \
 		  -o _$@

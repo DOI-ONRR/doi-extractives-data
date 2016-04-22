@@ -11,17 +11,6 @@ UPDATE county_revenue
 SET product = commodity
 WHERE product IS NULL;
 
--- create summary revenue type rows by county
-DELETE FROM county_revenue WHERE revenue_type = 'All';
-INSERT INTO county_revenue
-    (year, state, county, fips, commodity, product, revenue_type, revenue)
-SELECT
-    year, state, county, fips, commodity, product, 'All', SUM(revenue)
-FROM county_revenue
-WHERE commodity != 'All'
-GROUP BY
-    year, state, county, fips, commodity, product;
-
 -- create "all commodity" rows by county
 DELETE FROM county_revenue WHERE commodity = 'All';
 INSERT INTO county_revenue
@@ -29,9 +18,18 @@ INSERT INTO county_revenue
 SELECT
     year, state, county, fips, 'All', 'All', revenue_type, SUM(revenue)
 FROM county_revenue
-WHERE revenue_type != 'All'
 GROUP BY
     year, state, county, fips, revenue_type;
+
+-- create summary revenue type rows by county
+DELETE FROM county_revenue WHERE revenue_type = 'All';
+INSERT INTO county_revenue
+    (year, state, county, fips, commodity, product, revenue_type, revenue)
+SELECT
+    year, state, county, fips, commodity, product, 'All', SUM(revenue)
+FROM county_revenue
+GROUP BY
+    year, state, county, fips, commodity, product;
 
 -- create state revenue rollups
 DROP TABLE IF EXISTS state_revenue;

@@ -269,3 +269,4 @@ Both reporting companies and government entities were given the opportunity to r
 
 
 [^1]: Out of the 45 companies invited to participate, a maximum of 41 are C-corporations. Only C-corporations are eligible to report taxes.
+

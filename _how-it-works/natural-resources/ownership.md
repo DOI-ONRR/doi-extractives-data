@@ -56,7 +56,7 @@ There are four main types of land owners: citizens and corporations; the federal
 
 State and local lands are owned by state or local governments, including:
 
-* Lands owned by a particular state<
+* Lands owned by a particular state
 * [State submerged lands](http://www.boem.gov/uploadedfiles/submergedla.pdf) under the ocean stretching from a state’s coast to three miles out into the ocean, or in the case of Texas and western Florida, from the coast out to three marine leagues into the Gulf of Mexico
 * Lands owned by a local government, such as a county
 
@@ -67,6 +67,7 @@ Indian lands are owned by Native Americans, and include:
 * Tribal lands held in trust by the federal government for a tribe’s use
 * Allotments held in trust by the federal government for individual Indians’ use
 * [Alaska Native Corporation](http://www.gao.gov/assets/660/650857.pdf) lands in Alaska, held by 12 regional Alaska Native Corporations that received rights to some surface lands, as well as rights to natural resources below the surface. Along with these 12 regional Alaska Native Corporations, certain village-level Alaska Native Corporations hold additional surface land rights.
+
 ## Natural resource ownership
 
 Private individuals and corporations, as well as federal, state, local, and tribal governments, can own both land and the oil, gas, coal, and other minerals found below the surface. In fact, widespread private ownership of these resources makes the U.S. different from nearly every other country in which these resources simply belong to the national government.

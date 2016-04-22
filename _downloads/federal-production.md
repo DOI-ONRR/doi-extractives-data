@@ -27,10 +27,8 @@ This dataset contains information on production on federal lands and waters. We 
 
 <p class="u-margin-top" markdown="1">
 If you are looking for additional information on Federal production data
-please visit the [ONRR Statistical
-Information Site](http://statistics.onrr.gov/). We also have [notes
-on this data](https://github.com/18F/doi-extractives-data/wiki/Data-Catalog#federal-production) from the web development team as they built the
-interactions on this site.
+please visit the [ONRR Statistical Information Site](http://statistics.onrr.gov/). We also have [notes
+on this data](https://github.com/18F/doi-extractives-data/wiki/Data-Catalog#federal-production) from the web development team as they built the interactions on this site.
 </p>
 
 <h2 class="h3">Scope</h2>

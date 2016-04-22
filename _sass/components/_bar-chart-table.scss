@@ -6,8 +6,8 @@ table[is=bar-chart-table] {
   border-spacing: 0;
   margin: 0 0 2em 0;
 
-  tr:focus,
-  tr:hover {
+  tbody tr:focus,
+  tbody tr:hover {
     background: #fff;
   }
 

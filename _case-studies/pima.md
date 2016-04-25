@@ -22,7 +22,7 @@ nav_items:
 
 <h1 class="h3"><a name="intro" class="case_studies_content-heading" data-nav-header="intro">{{ page.title }}</a></h1>
 
-Copper is a major industrial metal used in construction, electronics, transportation, industrial machinery, and consumer products. In 2012, the U.S. was the world’s fourth-largest copper producer, mining 1.15 million tons of copper worth approximately $9 billion.[^1] Of the five major copper-producing states (Arizona, Utah, New Mexico, Nevada, and Montana), Arizona was the most productive in 2011; its copper output totaled 751,000 <span class="term term-p" data-term="metric ton" title="Click to define" tabindex="0">metric tons<icon class="icon-book"></icon></span>, representing 68% of the national total.[^2] Greenlee and Pima counties generated the majority of that production.
+Copper is a major industrial metal used in construction, electronics, transportation, industrial machinery, and consumer products. In 2012, the U.S. was the world’s fourth-largest copper producer, mining 1.15 million tons of copper worth approximately $9 billion.[^1] Of the five major copper-producing states (Arizona, Utah, New Mexico, Nevada, and Montana), Arizona was the most productive in 2011; its copper output totaled 751,000 {{ "metric tons" | term_end:"metric ton" }}, representing 68% of the national total.[^2] Greenlee and Pima counties generated the majority of that production.
 
 {% include case-studies/_selector.html screen="mobile" %}
 
@@ -74,7 +74,7 @@ The table below highlights data sources used to compile this narrative, as well 
     </tr>
     <tr>
       <td>Employment</td>
-      <td>The Bureau of Labor Statistics (BLS) Quarterly Census of Employment and Wages publishes mining-industry data at the Pima County level using <span class="term term-p" data-term="north american industry classification system (naics)" title="Click to define" tabindex="0">NAICS<icon class="icon-book"></icon></span> codes 212 (Mining Except Oil and Gas) and 213 (Support Activities for Mining) from 2004–2013.</td>
+      <td>The Bureau of Labor Statistics (BLS) Quarterly Census of Employment and Wages publishes mining-industry data at the Pima County level using {{ "NAICS" | term:"north american industry classification system (naics)" }} codes 212 (Mining Except Oil and Gas) and 213 (Support Activities for Mining) from 2004–2013.</td>
       <td>BLS is missing data for NAICS codes specific to copper or metal mining prior to 2011.</td>
     </tr>
     <tr>

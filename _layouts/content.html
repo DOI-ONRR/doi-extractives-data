@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<div class="container-outer container-padded">
+
+  <div class="container-left-7">
+
+    {% if page.breadcrumb %}
+      <div>
+        <a class="breadcrumb" href="{{ site.baseurl }}{{ page.permalink }}">{{ page.breadcrumb }}</a>
+        /
+      </div>
+    {% endif %}
+
+    {% if page.title %}
+      <h1>{{page.title}}</h1>
+    {% endif %}
+
+    {{ content | markdownify }}
+
+  </div>
+
+</div>

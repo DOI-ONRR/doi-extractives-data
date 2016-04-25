@@ -36,7 +36,7 @@ During the beginning of the twentieth century, many other large oil discoveries 
 
 <h2 class="h3"><a name="production" class="case_studies_content-heading" data-nav-header="production">Production</a></h2>
 
-In terms of oil production, Kern County has long been a leader both nationally and within California. Kern County produced 141,040,000 <span class="term term-p" data-term="barrel" title="Click to define" tabindex="0">oil barrels<icon class="icon-book"></icon></span> (bbls) in 2013.[^3] In 2012, the largest-producing oil fields in the state were privately owned oil fields in Kern County, including the Midway-Sunset field (29.3 m bbls), the Kern River Field (26.2 m bbls), and the Belridge South Field (23.6 m bbls).[^4] As of 2009, the two top oil-producing companies in California, excluding offshore production, were Chevron Corporation and Aera Energy LLC, both of which have operations in Kern County.[^5]
+In terms of oil production, Kern County has long been a leader both nationally and within California. Kern County produced 141,040,000 {{ "oil barrels" | term:"barrel" }} (bbls) in 2013.[^3] In 2012, the largest-producing oil fields in the state were privately owned oil fields in Kern County, including the Midway-Sunset field (29.3 m bbls), the Kern River Field (26.2 m bbls), and the Belridge South Field (23.6 m bbls).[^4] As of 2009, the two top oil-producing companies in California, excluding offshore production, were Chevron Corporation and Aera Energy LLC, both of which have operations in Kern County.[^5]
 
 Since peaking in 1985, California’s oil production has trended downward; Kern County is no exception to this trend.[^6] However, as of December 31, 2009, the State of California estimated a total of 3 billion bbl of proved oil reserves remaining in the state.[^7]
 
@@ -44,7 +44,7 @@ Since peaking in 1985, California’s oil production has trended downward; Kern 
 
 <h2 class="h3"><a name="employment" class="case_studies_content-heading" data-nav-header="employment">Employment</a></h2>
 
-In 2013, oil and gas extraction employed over 10,000 of Kern County’s 865,923 residents, or between 1% to 2% of the population and 3.3% of total employment.[^8] [^9] In particular, 3,309 people were employed in oil and gas extraction, and 8,039 in support activities (1,748 in drilling for oil and gas, and 6,289 in support activities for oil and gas operations).[^10] Although oil production in the county has decreased, oil and gas industry employment increased from 2010 to 2013, because of the introduction of <span class="term term-p" data-term="hydraulic fracturing" title="Click to define" tabindex="0">hydraulic fracturing<icon class="icon-book"></icon></span> methods used to extract natural gas.
+In 2013, oil and gas extraction employed over 10,000 of Kern County’s 865,923 residents, or between 1% to 2% of the population and 3.3% of total employment.[^8] [^9] In particular, 3,309 people were employed in oil and gas extraction, and 8,039 in support activities (1,748 in drilling for oil and gas, and 6,289 in support activities for oil and gas operations).[^10] Although oil production in the county has decreased, oil and gas industry employment increased from 2010 to 2013, because of the introduction of {{ "hydraulic fracturing" | term }} methods used to extract natural gas.
 
 <img src="{{ site.baseurl }}/img/counties/ca-wage.png" alt="Kern County Oil and Gas Industry vs. All Other Industries Wage and Salary Employment from 2004–2013" class="case_studies_content-graph">
 
@@ -58,7 +58,7 @@ According to the Kern County Treasurer-Tax Collector, the top payer of property 
 
 <h2 class="h3"><a name="costs" class="case_studies_content-heading" data-nav-header="costs">Costs</a></h2>
 
-A number of resources shed light on Kern County’s transportation systems, water infrastructure, <span class="term term-p" data-term="reclamation" title="Click to define" tabindex="0">reclamation<icon class="icon-book"></icon></span> procedures, and emergency services. However, these government publications do not explicitly discuss the fiscal costs of oil extraction to the Kern County government.
+A number of resources shed light on Kern County’s transportation systems, water infrastructure, {{ "reclamation" | term }} procedures, and emergency services. However, these government publications do not explicitly discuss the fiscal costs of oil extraction to the Kern County government.
 
 <ul>
 	<li><a href="http://www.co.kern.ca.us/cao/budget/fy1314/adopt/finalbudget.pdf">County of Kern Adopted Budget, 2013–2014 (PDF)</a></li>
@@ -87,7 +87,7 @@ The table below highlights the data sources used to compile this narrative, as w
     </tr>
     <tr>
       <td>Employment</td>
-      <td>U.S. Census Bureau Censtats data on County Business Patterns provides annual county-level employment data for the following industries (<span class="term term-p" data-term="north american industry classification system (naics)" title="Click to define" tabindex="0">NAICS<icon class="icon-book"></icon></span> codes): 211, 21311, and 213112. For any employment estimates identified using the letter-coded ranges (e.g., “a” = 0–19 employees), the average number was used (e.g., “a” = 9.5 employees).</td>
+      <td>U.S. Census Bureau Censtats data on County Business Patterns provides annual county-level employment data for the following industries ({{ "NAICS" | term:"north american industry classification system (naics)" }} codes): 211, 21311, and 213112. For any employment estimates identified using the letter-coded ranges (e.g., “a” = 0–19 employees), the average number was used (e.g., “a” = 9.5 employees).</td>
       <td>Censtats employment data is collected in March each year, and therefore does not take seasonal employment trends into account. Also, the data does not separate employment related to oil extraction from the broader oil and gas sector.</td>
     </tr>
     <tr>

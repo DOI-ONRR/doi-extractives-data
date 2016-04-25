@@ -3,6 +3,12 @@
 // Default list markup
 //
 // Markup:
+// <ul>
+//  <li>Default list</li>
+// </ul>
+// <ul class="list-unstyled">
+//  <li>Unstyled list</li>
+// </ul>
 // <ul class="list-bullet">
 // 	<li>Bulleted list</li>
 // </ul>
@@ -17,6 +23,17 @@
 // </ul>
 //
 // Styleguide elements.lists
+
+ul,
+ol {
+  list-style-type: square;
+  padding-left: $base-padding;
+}
+
+.list-unstyled {
+  list-style-type: none;
+  padding-left: 0;
+}
 
 %list-indented {
   margin-bottom: 1em;

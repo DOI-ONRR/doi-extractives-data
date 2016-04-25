@@ -24,7 +24,7 @@ nav_items:
 
 The U.S. possesses the largest estimated recoverable coal reserves in the world. This resource abundance allowed coal to serve as the single largest source of domestic electricity generation for more than six decades.[^1] However, coal production has declined since 2007 due to increased competition from natural gas, as well as the effects of recent federal regulations.
 
-One of the most productive coal deposits in the country is the Central Appalachian Coal Basin, which supplies the numerous surface and underground mines of West Virginia. The counties in the southern half of the state maintain estimated recoverable coal reserves of 1.2 billion <span class="term term-p" data-term="ton" title="Click to define" tabindex="0">tons<icon class="icon-book"></icon></span>.[^2] In particular, the contiguous Boone, Logan, and Mingo counties have long been a center of coal exploration and extraction.
+One of the most productive coal deposits in the country is the Central Appalachian Coal Basin, which supplies the numerous surface and underground mines of West Virginia. The counties in the southern half of the state maintain estimated recoverable coal reserves of 1.2 billion {{ "tons" | term_end:"ton" }}.[^2] In particular, the contiguous Boone, Logan, and Mingo counties have long been a center of coal exploration and extraction.
 
 {% include case-studies/_selector.html screen="mobile" %}
 

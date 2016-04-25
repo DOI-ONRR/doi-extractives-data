@@ -6,12 +6,12 @@ permalink: /explore/
 
 <section class="slab-delta">
   <div class="container-outer landing-section_top">
-	  <div class="container-left-8 hero-left">
-			<h1>{{ page.title }}</h1>
-			<p class="hero-description">Interacting with the data helps shed light on where natural resources in the U.S. are extracted, how they contribute to national revenues, and how they affect state and local economies.</p>
+    <div class="container-left-8 hero-left">
+      <h1>{{ page.title }}</h1>
+      <p class="hero-description">Interacting with the data helps shed light on where natural resources in the U.S. are extracted, how they contribute to national revenues, and how they affect state and local economies.</p>
       <p class="hero-description">We have information from government sources on <a href="#revenue">revenue</a>, <a href="#production">production</a>, and <a href="#economic-impact">economic impact</a>. Several datasets are new in 2015, including <a href="{{ site.baseurl }}/explore/federal-production/">federal production</a> and <a href="{{ site.baseurl }}/explore/federal-revenue-by-company/">federal revenue by company</a> information.</p>
-		</div>
-		<div class="container-right-4 hero-right">
+    </div>
+    <div class="container-right-4 hero-right">
       <div class="hero-right_square">
         <figure>
           <a href="{{site.baseurl}}/explore/federal-revenue-by-location/">
@@ -21,11 +21,10 @@ permalink: /explore/
         </figure>
       </div>
     </div>
-	</div>
+  </div>
 </section>
 
 <section accordion="explore-landing" accordion-desktop="false" class="container-outer landing-wrapper">
-
   <section class="container">
     <a id="revenue" class="link-no_under"><h2 class="h3 landing-section_category">Revenue data</h2></a>
     <div class="container-half landing-section" accordion-item aria-expanded="true">
@@ -70,49 +69,47 @@ permalink: /explore/
       </div>
     </div>
   </section>
-
-	<section class="container">
-		<a id="production" class="link-no_under"><h2 class="h3 landing-section_category">Production data</h2></a>
-		<div class="container-half landing-section" accordion-item>
-			<h3 class="h5 landing-heading"><a href="{{site.baseurl}}/explore/all-lands-production/">All lands and waters</a></h3>
-			<button><label class="sr-only">Toggle for all lands production section</label></button>
-			<div>
-				<p class="landing-description">In 2013, total U.S. energy production from oil, gas, mining, and renewables reached 73.67 quadrillion British thermal units (Btus). <a href="{{site.baseurl}}/explore/all-lands-production/">Explore production on all U.S. lands and waters</a> from 2004 to 2013 by state and county.</p>
-			</div>
-		</div>
-		<div class="container-half landing-section" accordion-item>
-			<h3 class="h5 landing-heading"><a href="{{site.baseurl}}/explore/federal-production/">Federal lands and waters</a></h3>
-			<button><label class="sr-only">Toggle for federal production section</label></button>
-			<div>
-				<p class="landing-description">In 2013, 40.3% of coal, 23.1% of crude oil and <span class="term term-p" data-term="lease condensate" title="Click to define" tabindex="0">lease condensate<icon class="icon-book"></icon></span>, and 15.9% of natural gas extraction in the U.S. took place on federal lands. <a href="{{site.baseurl}}/explore/federal-production/">Explore production on federal lands and waters</a> from 2005 to 2014 by state and county for 36 individual products.</p>
-			</div>
-		</div>
-	</section>
-
-	<section class="container">
-		<a id="economic-impact" name="economic-impact" class="link-no_under"><h2 class="h3 landing-section_category">Economic impact</h2></a>
-		<div class="container-half landing-section" accordion-item>
-			<h3 class="h5 landing-heading"><a href="{{site.baseurl}}/explore/gdp/">Gross Domestic Product</a></h3>
-			<button><label class="sr-only">Toggle for GDP section</label></button>
-			<div>
-				<p class="landing-description">Extractive industries account for 2.6% of the economy, outpacing utilities, agriculture, and education services in contributions to the national GDP. <a href="{{site.baseurl}}/explore/gdp/">Explore GDP from extractive insustries</a> by state from 2004 to 2013.</p>
-			</div>
-		</div>
-		<div class="container-half landing-section" accordion-item>
-			<h3 class="h5 landing-heading"><a href="{{site.baseurl}}/explore/exports/">Exports</a></h3>
-			<button><label class="sr-only">Toggle for exports section</label></button>
-			<div>
-				<p class="landing-description">Commodities from extractive industries are among the top exports in 22 states — and, for a few states, these industries accounted for more than 40% of all exports in 2013. <a href="{{site.baseurl}}/explore/exports/">Explore extractive industries exports</a> by state from 2011 to 2013.</p>
-			</div>
-		</div>
-		<div class="container-half landing-section" accordion-item>
-			<h3 class="h5 landing-heading"><a href="{{site.baseurl}}/explore/jobs/">Jobs</a></h3>
-			<button><label class="sr-only">Toggle for jobs section</label></button>
-			<div>
-				<p class="landing-description">Over 800,000 people worked in the extractive industries in 2013, along with thousands of self-employed people. Texas and Oklahoma are the states with the most jobs in these industries. <a href="{{site.baseurl}}/explore/jobs/">Explore jobs in extractive industries</a> from 2004 to 2013 by state.</p>
-			</div>
-		</div>
-	</section>
+  <section class="container">
+    <a id="production" class="link-no_under"><h2 class="h3 landing-section_category">Production data</h2></a>
+    <div class="container-half landing-section" accordion-item>
+      <h3 class="h5 landing-heading"><a href="{{site.baseurl}}/explore/all-lands-production/">All lands and waters</a></h3>
+      <button><label class="sr-only">Toggle for all lands production section</label></button>
+      <div>
+        <p class="landing-description">In 2013, total U.S. energy production from oil, gas, mining, and renewables reached 73.67 quadrillion British thermal units (Btus). <a href="{{site.baseurl}}/explore/all-lands-production/">Explore production on all U.S. lands and waters</a> from 2004 to 2013 by state and county.</p>
+      </div>
+    </div>
+    <div class="container-half landing-section" accordion-item>
+      <h3 class="h5 landing-heading"><a href="{{site.baseurl}}/explore/federal-production/">Federal lands and waters</a></h3>
+      <button><label class="sr-only">Toggle for federal production section</label></button>
+      <div>
+        <p class="landing-description">In 2013, 40.3% of coal, 23.1% of crude oil and {{ "lease condensate" | term_end }}, and 15.9% of natural gas extraction in the U.S. took place on federal lands. <a href="{{site.baseurl}}/explore/federal-production/">Explore production on federal lands and waters</a> from 2005 to 2014 by state and county for 36 individual products.</p>
+      </div>
+    </div>
+  </section>
+  <section class="container">
+    <a id="economic-impact" name="economic-impact" class="link-no_under"><h2 class="h3 landing-section_category">Economic impact</h2></a>
+    <div class="container-half landing-section" accordion-item>
+      <h3 class="h5 landing-heading"><a href="{{site.baseurl}}/explore/gdp/">Gross Domestic Product</a></h3>
+      <button><label class="sr-only">Toggle for GDP section</label></button>
+      <div>
+        <p class="landing-description">Extractive industries account for 2.6% of the economy, outpacing utilities, agriculture, and education services in contributions to the national GDP. <a href="{{site.baseurl}}/explore/gdp/">Explore GDP from extractive insustries</a> by state from 2004 to 2013.</p>
+      </div>
+    </div>
+    <div class="container-half landing-section" accordion-item>
+      <h3 class="h5 landing-heading"><a href="{{site.baseurl}}/explore/exports/">Exports</a></h3>
+      <button><label class="sr-only">Toggle for exports section</label></button>
+      <div>
+        <p class="landing-description">Commodities from extractive industries are among the top exports in 22 states — and, for a few states, these industries accounted for more than 40% of all exports in 2013. <a href="{{site.baseurl}}/explore/exports/">Explore extractive industries exports</a> by state from 2011 to 2013.</p>
+      </div>
+    </div>
+    <div class="container-half landing-section" accordion-item>
+      <h3 class="h5 landing-heading"><a href="{{site.baseurl}}/explore/jobs/">Jobs</a></h3>
+      <button><label class="sr-only">Toggle for jobs section</label></button>
+      <div>
+        <p class="landing-description">Over 800,000 people worked in the extractive industries in 2013, along with thousands of self-employed people. Texas and Oklahoma are the states with the most jobs in these industries. <a href="{{site.baseurl}}/explore/jobs/">Explore jobs in extractive industries</a> from 2004 to 2013 by state.</p>
+      </div>
+    </div>
+  </section>
 
 </section>
 <!-- <section class="slab-alpha container-outer container-padded u-centered">

@@ -1,0 +1,29 @@
+---
+layout: default
+states:
+- AL
+- CA
+- FL
+- TX
+- WY
+---
+<main>
+  <style scoped>
+    svg {
+      display: inline-block;
+      width: 12em;
+      height: 10em;
+      margin: 0 1em 1em 0;
+    }
+  </style>
+
+  {% for state in page.states %}
+  <svg class="state">
+    {% capture svg %}states/{{ state }}.svg{% endcapture %}
+    <use xlink:href="{{ svg }}#states-mesh"></use>
+    <use xlink:href="{{ svg }}#counties"></use>
+    <use xlink:href="{{ svg }}#counties-mesh"></use>
+    <use xlink:href="{{ svg }}#{{ state }}"></use>
+  </svg>
+  {% endfor %}
+</main>

@@ -1,20 +1,20 @@
 <div id="glossary" class="drawer"
       aria-describedby="glossary-result" aria-hidden="true">
   <div class="container">
-    <button title="Close glossary"
-      class="button button--close toggle"><span class="u-visually-hidden"><icon class="icon-close-x"></icon></span>
+    <button id="glossary-toggle" class="button button--close toggle">
+      <label for="glossary-toggle" class="sr-only">Close glossary</label><icon class="icon-close-x"></icon>
     </button>
   </div>
 
   <h1 class="h2 drawer-header"><icon class="icon-book"></icon> Glossary </h1>
-  <label for="drawer-search" class="label">Filter glossary terms</label>
-  <input class="js-glossary-search drawer-search" type="search" placeholder="e.g. Fossil fuel">
+  <label for="drawer-search-bar" class="label">Filter glossary terms</label>
+  <input id="drawer-search-bar" class="js-glossary-search drawer-search" type="search" placeholder="e.g. Fossil fuel">
   <div id="glossary-result">
-    <ul class="js-glossary-list" accordion>
+    <ul class="js-glossary-list" accordion="glossary-accordion">
       {% for term in site.data.terms %}
-      <li class="glossary-item" accordion-item accordion-open="false">
+      <li class="glossary-item">
         <h2 class="h5 glossary-term">{{term[0]}}</h2>
-        <button accordion-button class="accordion-button" title="Toggle for {{term[0]}}"></button>
+        <button><span class="sr-only">Toggle for {{term[0]}}</span></button>
         <p class="glossary-definition accordion-content">{{term[1]}}</p>
       </li>
       {% endfor %}

@@ -27,10 +27,19 @@
 ol,
 ul {
   padding-left: $base-padding;
+  margin-bottom: $base-padding;
 }
 
 ul {
   list-style-type: disc;
+
+  ul {
+    list-style-type: square;
+
+    ul {
+      list-style-type: circle;
+    }
+  }
 }
 
 .list-unstyled {

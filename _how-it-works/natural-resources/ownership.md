@@ -1,6 +1,6 @@
 ---
 title: Ownership | How it Works
-layout: narrative
+layout: content
 permalink: /how-it-works/ownership/
 nav_description: Jump to a section
 nav_items:
@@ -24,21 +24,20 @@ breadcrumb:
   - title: How it works
     permalink: /how-it-works/
 title_display: Ownership
+selector: hash
 ---
 
-<p class="case_studies_intro-para">Natural resource ownership in the United States is closely tied to land ownership. We'll talk about both these types of ownership here.</p>
+> Natural resource ownership in the United States is closely tied to land ownership. We'll talk about both these types of ownership here.
 
-<nav class="hash_selector">
-  {% include hash_selector.html %}
-</nav>
+{% include selector.html %}
 
-<h2>Land ownership</h2>
+## Land ownership
 
 There are four main types of land owners: citizens and corporations; the federal government; state and local governments; and Indian tribes and individuals. There are two types of owners for submerged lands under the ocean: states and the federal government.
 
 <h3 id="private-lands" data-nav-header="private-lands">Private lands</h3>
 
-<p>Private lands are owned by private citizens or corporations.</p>
+Private lands are owned by private citizens or corporations.
 
 <h3 id="federal-lands" data-nav-header="federal-lands">Federal lands</h3>
 

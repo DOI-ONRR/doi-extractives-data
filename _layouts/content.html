@@ -2,25 +2,95 @@
 layout: default
 ---
 
-<div class="layout-content container-outer container-margin">
+<section class="layout-content container-outer container-margin {% if page.resource %}case_studies_content{% endif %}">
 
   <article class="container-left-7">
 
+    {% if page.resource == 'oil' %}
+      <h3 class="case_studies_content-icon"><i class="icon-oil"></i>Oil</h3>
+    {% elsif page.resource == 'gas' %}
+      <h3 class="case_studies_content-icon"><i class="icon-gas"></i>Natural Gas</h3>
+    {% elsif page.resource == 'coal' %}
+      <h3 class="case_studies_content-icon"><i class="icon-coal"></i>Coal</h3>
+    {% elsif page.resource == 'gold' %}
+      <h3 class="case_studies_content-icon"><i class="icon-gold"></i>Gold</h3>
+    {% elsif page.resource == 'copper' %}
+      <h3 class="case_studies_content-icon"><i class="icon-copper"></i>Copper</h3>
+    {% elsif page.resource == 'iron' %}
+      <h3 class="case_studies_content-icon"><i class="icon-iron"></i>Iron</h3>
+    {% endif %}
+
     {% if page.breadcrumb %}
       <div>
-        <a class="breadcrumb" href="{{ site.baseurl }}{{ page.permalink }}">{{ page.breadcrumb }}</a>
+        <a class="breadcrumb" href="{{ site.baseurl }}{{ page.breadcrumb[0].permalink }}">{{ page.breadcrumb[0].title }}</a>
         /
       </div>
     {% endif %}
 
+    {% assign nav_slug = page.nav_items[0].name %}
+
     {% if page.title_display %}
-      <h1>{{page.title_display}}</h1>
+      {% if page.nav_items %}
+        {% if page.selector == 'hash' %}
+          <h1 id="{{nav_slug}}" data-nav-header="{{nav_slug}}">{{page.title_display}}</h1>
+        {% elsif page.selector == 'list' %}
+          <h1><a name="{{nav_slug}}" class="case_studies_content-heading" data-nav-header="{{nav_slug}}">{{ page.title_display }}</a></h1>
+        {% endif %}
+      {% else %}
+        <h1>{{page.title_display}}</h1>
+      {% endif %}
     {% elsif page.title %}
-      <h1>{{page.title}}</h1>
+      {% if page.nav_items %}
+        {% if page.selector == 'hash' %}
+          <h1 id="{{nav_slug}}" data-nav-header="{{nav_slug}}">{{page.title_display}}</h1>
+        {% elsif page.selector == 'list' %}
+          <h1><a name="{{nav_slug}}" class="case_studies_content-heading" data-nav-header="{{nav_slug}}">{{ page.title_display }}</a></h1>
+        {% endif %}
+      {% else %}
+        <h1>{{page.title}}</h1>
+      {% endif %}
     {% endif %}
+
+
+
+
 
     {{ content | markdownify }}
 
   </article>
 
-</div>
+  {% if page.selector %}
+    <div class="container-right-5">
+
+      {% if page.resource %}
+
+        {% include case-studies/_selector.html screen="desktop" %}
+
+        {% include case-studies/_maps.html screen="desktop" %}
+
+      {% endif %}
+
+
+      {% if page.selector == 'list' %}
+        <div class="sticky_nav" data-offset-bottom="100" data-load-delay="1200">
+          <nav class="sticky_nav-nav">
+            {% include case-studies/_nav-list.html %}
+          </nav>
+        </div>
+      {% elsif page.selector == 'hash' %}
+        <div class="sticky_nav" data-sticky-offset="50" data-offset-bottom="50">
+          <nav class="sticky_nav-nav">
+            {% include hash_selector.html %}
+
+          </nav>
+        </div>
+      {% endif %}
+
+    </div>
+  {% endif %}
+
+</section>
+
+{% if page.selector %}
+  <script type="text/javascript" src="{{ site.baseurl }}/js/lib/narrative.min.js" charset="utf-8"></script>
+{% endif %}

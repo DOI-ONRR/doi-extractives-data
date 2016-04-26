@@ -5,12 +5,18 @@ layout: default
 <section class="container-outer container-margin">
 
   <article class="container-left-7">
-    {% if page.breadcrumb and page.title_display %}
+
+    {% if page.breadcrumb %}
       <div>
-        <a class="revenues_subpage-breadcrumb" href="{{ site.baseurl }}{{page.breadcrumb.permalink}}">{{page.breadcrumb.title}}</a>
+        <a class="breadcrumb" href="{{ site.baseurl }}{{ page.breadcrumb.permalink }}">{{ page.breadcrumb.title }}</a>
         /
       </div>
+    {% endif %}
+
+    {% if page.title_display %}
       <h1 id="introduction" data-nav-header="introduction">{{page.title_display}}</h1>
+    {% elsif page.title %}
+      <h1 id="introduction" data-nav-header="introduction">{{page.title}}</h1>
     {% endif %}
 
     {{content | markdownify}}

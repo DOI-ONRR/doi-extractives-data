@@ -1,6 +1,6 @@
 ---
 title: Revenues | How It Works
-layout: narrative
+layout: content
 permalink: /how-it-works/revenues/
 nav_description: Jump to a section
 nav_items:
@@ -18,19 +18,17 @@ nav_items:
     title: Tax expenditures
   - name: federal-budget-process
     title: Federal budget process
+breadcrumb:
+  - title: How it works
+    permalink: /how-it-works/
+title_display: Revenue
+selector: hash
 ---
 
-<div>
-  <a class="revenues_subpage-breadcrumb" href="{{ site.baseurl }}/how-it-works/">How it works</a>
-  /
-</div>
-<h1 id="introduction" data-nav-header="introduction">Revenue</h1>
 
-<p class="case_studies_intro-para" markdown="1">Companies pay a wide range of fees, rates and taxes to extract natural resources in the U.S. The amounts differ depending on what the [ownership]({{ site.baseurl }}/how-it-works/ownership/) of the natural resource looks like. We'll cover some of the major types of payments companies make here. They are usually called &#8216;revenue&#8217; because they represent revenue to the American public.</p>
+> Companies pay a wide range of fees, rates and taxes to extract natural resources in the U.S. The amounts differ depending on what the [ownership]({{ site.baseurl }}/how-it-works/ownership/) of the natural resource looks like. We'll cover some of the major types of payments companies make here. They are usually called &#8216;revenue&#8217; because they represent revenue to the American public.
 
-<nav class="hash_selector">
-  {% include hash_selector.html %}
-</nav>
+{% include selector.html %}
 
 <h2 id="federal-lands-and-waters" data-nav-header="federal-lands-and-waters">Payments to extract natural resources from federal land and waters</h2>
 

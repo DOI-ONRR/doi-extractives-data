@@ -3,7 +3,9 @@ title: Reconciliation | Documentation
 layout: content
 permalink: /downloads/reconciliation/
 title_display: Reconciliation
-breadcrumb: Downloads
+breadcrumb:
+  - title: Downloads
+    permalink: /downloads/
 ---
 
 > As a part of USEITI, companies report payments to the government (e.g., rents, taxes, royalties) and the government reports what it received. These figures are compiled and reconciled by an Independent Administrator (IA) and published.

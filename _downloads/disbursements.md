@@ -1,10 +1,10 @@
 ---
 title: Disbursements | Documentation
+title_display: Disbursements
 layout: content
 permalink: /downloads/disbursements/
-title_display: Disbursements
 breadcrumb:
-  - name: Downloads
+  - title: Downloads
     permalink: /downloads/
 ---
 

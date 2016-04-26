@@ -3,7 +3,9 @@ title: Federal Revenue by Company | Documentation
 layout: content
 permalink: /downloads/federal-revenue-by-company/
 title_display: Federal Revenue by Company
-breadcrumb: Downloads
+breadcrumb:
+  - title: Downloads
+    permalink: /downloads/
 ---
 
 

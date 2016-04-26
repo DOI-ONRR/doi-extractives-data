@@ -4,9 +4,13 @@ var yargs = require('yargs')
   .describe('width', 'The output width in pixels')
   .describe('height', 'The output height in pixels')
   .describe('gutter', 'Gutter around the selected state, in pixels')
-  .default('gutter', 20)
+  .default('gutter', 100)
   .describe('counties', 'Whether to include counties')
-  .boolean('counties');
+  .boolean('counties')
+  .describe('css', 'URI of a stylesheet to link')
+  .describe('debug', 'Output debugging shapes')
+  .boolean('debug')
+  .alias('h', 'help');
 
 var argv = yargs.argv;
 
@@ -35,6 +39,16 @@ var size = (typeof proj.size === 'function')
 var path = d3.geo.path()
   .projection(proj);
 
+var zerofill = function(d, len) {
+  if (typeof d !== 'string') {
+    d = String(d);
+  }
+  while (d.length < len) {
+    d = '0' + d;
+  }
+  return d;
+};
+
 var scripts = [];
 
 var load = function(done) {
@@ -51,29 +65,50 @@ var load = function(done) {
 
 var render = function(objects, done) {
   vectorize(function(svg, next) {
+
     svg = d3.select(svg)
       .attr('xmlns', 'http://www.w3.org/2000/svg')
-      .attr('width', size[0])
-      .attr('height', size[1]);
+      .attr('version', '1.2')
+      .attr('baseProfile', 'tiny')
+      .attr('id', 'root');
+
+    if (argv.css) {
+      var css = argv.css;
+      if (!Array.isArray(css)) {
+        css = [css];
+      }
+      svg.append('style')
+        .text(css.map(function(uri) {
+          return '\n@import url("' + encodeURI(uri) + '");';
+        }).join('\n'));
+    }
 
     var topology = objects[0];
+    if (!topology) {
+      console.error('got %d objects:', objects.length);
+      process.exit(1);
+    }
     var states = topology.objects.states;
-    var counties = topology.objects.counties;
 
     var id = function(d) { return d.id; };
+    var isCurrentState = function(d) {
+      return d.properties.state === argv.state;
+    };
 
     var stateFeatures = topojson.feature(topology, states).features;
 
-    var currentState = stateFeatures.filter(function(d) {
-      return d.id === argv.state;
-    })[0];
+    var currentState = argv.state
+      ? stateFeatures.filter(function(d) {
+          return d.id === argv.state;
+        })[0]
+      : null;
 
     if (currentState) {
       var bbox = path.bounds(currentState);
       // console.warn('bbox:', bbox);
 
-      var w = bbox[1][0] - bbox[0][0];
-      var h = bbox[1][1] - bbox[0][1];
+      var w = Math.abs(bbox[1][0] - bbox[0][0]);
+      var h = Math.abs(bbox[1][1] - bbox[0][1]);
 
       if (argv.gutter) {
         var scale = Math.max(w, h) / Math.min(size[0], size[1]);
@@ -86,12 +121,21 @@ var render = function(objects, done) {
         h += gutter * 2;
       }
 
-      svg.attr('viewBox', [
-        bbox[0][0],
-        bbox[0][1],
-        w, h
-      ].join(' '));
+      var left = Math.min(bbox[0][0], bbox[1][0]);
+      var top = Math.min(bbox[0][1], bbox[1][1]);
+      svg.attr('viewBox', [left, top, w, h].join(' '));
 
+      if (argv.debug) {
+        svg.append('rect')
+          .attr('id', 'bbox')
+          .attr('class', 'bbox')
+          .attr('x', left)
+          .attr('y', top)
+          .attr('width', w)
+          .attr('height', h);
+      }
+
+      /*
       var extent = proj.invert(bbox[0])
         .concat(proj.invert(bbox[1]));
       // console.warn('clip extent:', extent);
@@ -102,40 +146,53 @@ var render = function(objects, done) {
           return proj.stream(clip.stream(s));
         }
       });
+      */
 
-    } else {
+    } else if (argv.state) {
       console.warn('no state found:', argv.state);
+    } else {
+      svg
+        .attr('width', size[0])
+        .attr('height', size[1]);
     }
 
-    // 1. state polygons
-    svg.append('g')
-      .attr('id', 'states')
-      .selectAll('path')
-        .data(stateFeatures)
-        .enter()
-        .append('path')
-          .attr('id', id)
-          .attr('class', 'state')
-          .attr('d', path);
+    if (!argv.state) {
+      // 1. state polygons
+      svg.append('g')
+        .attr('id', 'states')
+        .selectAll('path')
+          .data(stateFeatures)
+          .enter()
+          .append('path')
+            .attr('id', id)
+            .attr('class', 'state feature')
+            .attr('d', path);
+    }
 
     // 2. county polygons
     if (argv.counties) {
+      var counties = topology.objects.counties;
       var countyFeatures = topojson.feature(topology, counties).features;
-      if (argv.state) {
-        countyFeatures = countyFeatures
-          .filter(function(d) {
-            return d.properties.state === argv.state;
-          });
+      if (currentState) {
+        counties.geometries = counties.geometries.filter(isCurrentState);
+        countyFeatures = countyFeatures.filter(isCurrentState);
       }
+
       svg.append('g')
         .attr('id', 'counties')
         .selectAll('path')
           .data(countyFeatures)
           .enter()
           .append('path')
-            .attr('id', id)
-            .attr('class', 'county')
-            .attr('d', path);
+            .attr('id', function(d, i) {
+              return 'county-' + zerofill(d.id, 5);
+            })
+            .attr('class', 'county feature')
+            .attr('d', path)
+            .append('title')
+              .text(function(d) {
+                return d.properties.name;
+              });
     }
 
     // TODO: land ownership
@@ -144,17 +201,25 @@ var render = function(objects, done) {
     if (argv.counties) {
       var countyMesh = topojson.mesh(topology, counties);
       svg.append('path')
+        .datum(countyMesh)
         .attr('id', 'counties-mesh')
         .attr('class', 'counties mesh')
         .attr('d', path);
     }
 
-    // state boundaries (mesh)
-    var stateMesh = topojson.mesh(topology, states);
-    svg.append('path')
-      .attr('id', 'states-mesh')
-      .attr('class', 'states mesh')
-      .attr('d', path);
+    if (!argv.state) {
+      // state boundaries (mesh)
+      var stateMesh = topojson.mesh(topology, states);
+      svg.append('path')
+        .datum(stateMesh)
+        .attr('id', 'states-mesh')
+        .attr('class', 'states mesh')
+        .attr('d', path);
+    }
+
+    // ensure that all paths have non-scaling stroke
+    svg.selectAll('path')
+      .attr('vector-effect', 'non-scaling-stroke');
 
     next(null, svg.property('outerHTML'));
   }, done);
@@ -165,6 +230,17 @@ var writeSVG = function(svg, done) {
     ? fs.createWriteStream(argv.o)
     : process.stdout;
   out.write('<?xml version="1.0" standalone="yes"?>' + os.EOL);
+  /*
+  if (argv.css) {
+    var uris = argv.css;
+    if (!Array.isArray(uris)) {
+      uris = [uris];
+    }
+    uris.forEach(function(uri) {
+      out.write('<?xml-stylesheet type="text/css" href="' + encodeURI(uri) + '"?>' + os.EOL);
+    });
+  }
+  */
   out.write(svg);
   if (out !== process.stdout) {
     out.end();

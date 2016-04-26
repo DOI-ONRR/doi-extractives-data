@@ -1,29 +1,82 @@
 ---
+title: Maps
 layout: default
-states:
-- AL
-- CA
-- FL
-- TX
-- WY
 ---
-<main>
-  <style scoped>
-    svg {
-      display: inline-block;
-      width: 12em;
-      height: 10em;
-      margin: 0 1em 1em 0;
-    }
-  </style>
 
-  {% for state in page.states %}
-  <svg class="state">
-    {% capture svg %}states/{{ state }}.svg{% endcapture %}
-    <use xlink:href="{{ svg }}#states-mesh"></use>
-    <use xlink:href="{{ svg }}#counties"></use>
-    <use xlink:href="{{ svg }}#counties-mesh"></use>
-    <use xlink:href="{{ svg }}#{{ state }}"></use>
-  </svg>
-  {% endfor %}
-</main>
+<section id="state-maps" class="slab-alpha container-padded">
+  <div class="container-outer">
+    <h2>State Maps</h2>
+
+    <table is="bar-chart-table" data-max="100">
+      <thead>
+        <tr>
+          <th>State</th>
+          <th>Map</th>
+          <th>County</th>
+          <th>%</th>
+          <th>Bar</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for state in site.data.states %}
+          {% if state.id == 'DC' %}{% continue %}{% endif %}
+          {% assign viewbox = site.data.viewboxes[state.id] %}
+          {% capture svg %}states/{{ state.id }}.svg{% endcapture %}
+          {% assign counties = site.data.county_jobs[state.id] %}
+        <tr id="{{ state.id }}">
+          <th scope="row" rowspan="{{ counties | size | plus: 1 }}">{{ state.name }}</td>
+          <td rowspan="{{ counties | size | plus: 1 }}">
+            <svg class="state map" viewBox="{{ viewbox }}">
+              <use class="states features" xlink:href="states/all.svg#states"></use>
+              <use class="states mesh" xlink:href="states/all.svg#states-mesh"></use>
+              <use class="counties features" xlink:href="{{ svg }}#counties"></use>
+              {% for county in counties %}
+              {% assign value = county[1].employment['2013'].percent %}
+              <use xlink:href="{{ svg }}#county-{{ county[0] }}"
+                data-title="{{ county[1].name }}: {{ value | default: 0 | percent }}%"
+                data-value="{{ value | default: 0 }}">
+              </use>
+              {% endfor %}
+              <use class="counties mesh" xlink:href="{{ svg }}#counties-mesh"></use>
+              <use class="state feature" xlink:href="states/all.svg#{{ state.id }}"></use>
+            </svg>
+          </td>
+        </tr>
+          {% for county in counties %}
+            {% assign value = county[1].employment['2013'].percent %}
+        <tr>
+            <th>{{ county[1].name }}</th>
+            <td>{{ value | default: 0 | percent }}%</td>
+            <td data-value="{{ value | default: 0}}"></td>
+        </tr>
+          {% endfor %}
+        {% endfor %}
+      </tbody>
+    </table>
+
+  </div><!-- /.container-outer -->
+</section><!-- /.container-padded -->
+
+<script src="{{ site.baseurl }}/js/components/bar-chart-table.js"></script>
+<script>
+
+  var scale = d3.scale.quantize()
+    .domain([0, 100])
+    .range(colorbrewer.Blues[7]);
+
+  d3.selectAll('.map use[data-value]')
+    .datum(function() {
+      return {
+        value: this.getAttribute('data-value'),
+        title: this.getAttribute('data-title')
+      };
+    })
+    .attr('fill', function(d) {
+      return scale(d.value);
+    })
+    .append('title')
+      .text(function(d) {
+        return d.title;
+      });
+
+</script>

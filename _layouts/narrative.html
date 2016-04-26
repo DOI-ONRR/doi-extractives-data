@@ -4,20 +4,28 @@ layout: default
 
 <section class="container-outer container-margin">
 
-	<article class="container-left-7">
-		  {{content | markdownify}}
+  <article class="container-left-7">
+    {% if page.breadcrumb and page.title_display %}
+      <div>
+        <a class="revenues_subpage-breadcrumb" href="{{ site.baseurl }}{{page.breadcrumb.permalink}}">{{page.breadcrumb.title}}</a>
+        /
+      </div>
+      <h1 id="introduction" data-nav-header="introduction">{{page.title_display}}</h1>
+    {% endif %}
 
-	</article>
+    {{content | markdownify}}
 
-	<div class="container-right-5">
+  </article>
 
-	<div class="sticky_nav" data-sticky-offset="50" data-offset-bottom="50">
-	  <nav class="sticky_nav-nav">
-		  {% include hash_selector.html %}
-	  </nav>
+  <div class="container-right-5">
+
+  <div class="sticky_nav" data-sticky-offset="50" data-offset-bottom="50">
+    <nav class="sticky_nav-nav">
+      {% include hash_selector.html %}
+    </nav>
   </div>
 
-	</div>
+  </div>
 
 </section>
 

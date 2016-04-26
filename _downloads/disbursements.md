@@ -3,10 +3,12 @@ title: Disbursements | Documentation
 layout: content
 permalink: /downloads/disbursements/
 title_display: Disbursements
-breadcrumb: Downloads
+breadcrumb:
+  - name: Downloads
+    permalink: /downloads/
 ---
 
-<p class="case_studies_intro-para" markdown="1">The amount of money earned from extraction of natural resources on federal lands that is disbursed to various legislated funds. Our fund overview dataset is from the [Office of Natural Resources Revenue](http://www.onrr.gov/), which is part of the Department of the Interior. In addition, we have more detailed datasets on two of the funds: [Land and Water Conservation Fund](https://www.doi.gov/lwcf) (LWCF) and [National Historic Preservation Act](http://www.nps.gov/subjects/historicpreservation/NHPA-50.htm) (NHPA).</p>
+> The amount of money earned from extraction of natural resources on federal lands that is disbursed to various legislated funds. Our fund overview dataset is from the [Office of Natural Resources Revenue](http://www.onrr.gov/), which is part of the Department of the Interior. In addition, we have more detailed datasets on two of the funds: [Land and Water Conservation Fund](https://www.doi.gov/lwcf) (LWCF) and [National Historic Preservation Act](http://www.nps.gov/subjects/historicpreservation/NHPA-50.htm) (NHPA).
 
 Download fiscal year data:
 

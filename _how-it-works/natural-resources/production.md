@@ -54,7 +54,7 @@ Besides creating energy, these natural resources are also used to make many prod
 
 <h3 id="oil" data-nav-header="oil">Oil</h3>
 
-Oil forms in underground reservoirs on land and under the ocean. Crude oil occurs naturally, while petroleum products (e.g., jet fuel, diesel fuel, and heating oil) come from refining and otherwise processing crude oil and other liquids. Petroleum is a broad term that can mean both crude oil and {{ "petroleum products" | term_end }}. In 2013, [five states](http://www.eia.gov/todayinenergy/detail.cfm?id=15631) — Texas, North Dakota, California, Alaska, and Oklahoma — and federal submerged lands in the Gulf of Mexico supplied more than 80% of the {{ "crude oil" | term }} produced here.</p>
+Oil forms in underground reservoirs on land and under the ocean. Crude oil occurs naturally, while petroleum products (e.g., jet fuel, diesel fuel, and heating oil) come from refining and otherwise processing crude oil and other liquids. Petroleum is a broad term that can mean both crude oil and {{ "petroleum products" | term_end }}. In 2013, [five states](http://www.eia.gov/todayinenergy/detail.cfm?id=15631) — Texas, North Dakota, California, Alaska, and Oklahoma — and federal submerged lands in the Gulf of Mexico supplied more than 80% of the {{ "crude oil" | term }} produced here.
 
 <h3 id="gas" data-nav-header="gas">Gas</h3>
 

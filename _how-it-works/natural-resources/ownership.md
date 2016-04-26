@@ -20,13 +20,11 @@ nav_items:
   - name: split-ownership
     title: Split Ownership
   - nav_group_close: true
+breadcrumb:
+  - title: How it works
+    permalink: /how-it-works/
+title_display: Ownership
 ---
-
-<div>
-  <a class="revenues_subpage-breadcrumb" href="{{ site.baseurl }}/how-it-works/">How it works</a>
-  /
-</div>
-<h1 id="introduction" data-nav-header="introduction">Ownership</h1>
 
 <p class="case_studies_intro-para">Natural resource ownership in the United States is closely tied to land ownership. We'll talk about both these types of ownership here.</p>
 

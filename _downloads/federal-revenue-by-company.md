@@ -7,13 +7,7 @@ breadcrumb: Downloads
 ---
 
 
-> This dataset provides natural resource
-revenues data by company for calendar years 2013-2015. This new dataset is
-a product of USEITI and represents cooperation between government,
-industry, and civil society to create and confirm this information, and
-provide it in a way that adds to the national dialogue on natural resource
-extraction. This data set will be updated in the first quarter of the
-calendar year.
+> This dataset provides natural resource revenues data by company for calendar years 2013-2015. This new dataset is a product of USEITI and represents cooperation between government, industry, and civil society to create and confirm this information, and provide it in a way that adds to the national dialogue on natural resource extraction. This data set will be updated in the first quarter of the calendar year.
 
 <p class="downloads-download_links-intro">Download calendar year data:
   <ul class="downloads-download_links list-unstyled">
@@ -56,41 +50,41 @@ Our site has two federal revenue datasets. The one on this page is organized by 
 
 ### Fields and definitions
 
-**Company Name.** Name of company.
+_Company Name._ Name of company.
 
-**Revenue Type.** Revenues from U.S. natural resources fall into one of several types:
+_Revenue Type._ Revenues from U.S. natural resources fall into one of several types:
 
-* **Royalties.** A natural resource lease owner pays royalties after the lease starts producing a commodity in {{ "paying quantities" | term_end }}. The amount is based on a percentage of the revenue from the commodity sold. This royalty rate is set in the original lease document that went along with the lease sale, the onshore royalty rate is 12.5%, offshore leases can have a royalty rates of 12.5%, 16.67%, 18.75%.
-* **Bonus.** The amount paid by the highest successful bidder for a natural resource lease. The winning bid. Collected by BLM (Onshore) and ONRR (Offshore).
-* **Rents.** A natural resource lease might not produce a commodity in paying quantities for some time after it is sold. Until it does, periodic payments are made for the right to continue exploration and development of the land for future natural resource production. These payments are called rent. The first year rental is collected by BLM and the remaining rental payments are collected by ONRR.
-* **Other revenues.** This category includes revenues that are not included in the royalty, rent, or bonus categories, such as; minimum royalties, estimated royalties, settlement agreements, and interest.
-* **Inspection fees.** This category includes fees for annual inspections performed by the Bureau of Safety and Environmental Enforcement (BSEE) on each offshore permanent structure and drilling rig that conducts drilling, completion, or workover operations. ONRR collects these fees on behalf of BSEE.
-* **Civil penalties.** Civil penalties are assessed for violations of laws applicable to extractive activities. These penalties are issued by ONRR, BOEM, and/or BSEE, and are collected by ONRR. There are two lines for this data. "Civil penalties" are penalties collected by ONRR, and "Civil penalties including late charges" are penalties collected by BLM.
-* **Permit Fees.** Include mining claim fees  paid when mining hardrock minerals, applicants pay a set fee to stake a claim rather than bid on a lease. Also included in this category are Applications to Drill.
-* **Abandoned mine lands (AML) fees.** A fee paid by coal companies, $0.28 per ton of surface coal produced, and $0.12 per ton of subsurface coal produced. These fees are placed in the AML fund to address reclamation of abandoned mines from operations prior to 1977.
+* _Royalties._ A natural resource lease owner pays royalties after the lease starts producing a commodity in {{ "paying quantities" | term_end }}. The amount is based on a percentage of the revenue from the commodity sold. This royalty rate is set in the original lease document that went along with the lease sale, the onshore royalty rate is 12.5%, offshore leases can have a royalty rates of 12.5%, 16.67%, 18.75%.
+* _Bonus._ The amount paid by the highest successful bidder for a natural resource lease. The winning bid. Collected by BLM (Onshore) and ONRR (Offshore).
+* _Rents._ A natural resource lease might not produce a commodity in paying quantities for some time after it is sold. Until it does, periodic payments are made for the right to continue exploration and development of the land for future natural resource production. These payments are called rent. The first year rental is collected by BLM and the remaining rental payments are collected by ONRR.
+* _Other revenues._ This category includes revenues that are not included in the royalty, rent, or bonus categories, such as; minimum royalties, estimated royalties, settlement agreements, and interest.
+* _Inspection fees._ This category includes fees for annual inspections performed by the Bureau of Safety and Environmental Enforcement (BSEE) on each offshore permanent structure and drilling rig that conducts drilling, completion, or workover operations. ONRR collects these fees on behalf of BSEE.
+* _Civil penalties._ Civil penalties are assessed for violations of laws applicable to extractive activities. These penalties are issued by ONRR, BOEM, and/or BSEE, and are collected by ONRR. There are two lines for this data. "Civil penalties" are penalties collected by ONRR, and "Civil penalties including late charges" are penalties collected by BLM.
+* _Permit Fees._ Include mining claim fees  paid when mining hardrock minerals, applicants pay a set fee to stake a claim rather than bid on a lease. Also included in this category are Applications to Drill.
+* _Abandoned mine lands (AML) fees._ A fee paid by coal companies, $0.28 per ton of surface coal produced, and $0.12 per ton of subsurface coal produced. These fees are placed in the AML fund to address reclamation of abandoned mines from operations prior to 1977.
 
 
-**Commodity Type.** The DOI collects revenues on over 60 different products. The majority of revenues come from Oil, Gas, Coal, and Renewables (Geothermal and Wind), but you will find many other product categories in these datasets.
+_Commodity Type._ The DOI collects revenues on over 60 different products. The majority of revenues come from Oil, Gas, Coal, and Renewables (Geothermal and Wind), but you will find many other product categories in these datasets.
 
-**Revenue.** Total revenue.
+_Revenue._ Total revenue.
 
 ### Advanced information
 
 Commodities can be further broken down into products. These are the products that could fall into the commodity categories found in these datasets.
 
-**Coal.** Coal (ton), Coal-Bituminous-Raw (ton).
+_Coal._ Coal (ton), Coal-Bituminous-Raw (ton).
 
-**Gas.** Coal Bed Methane (mcf), Flash Gas (mcf), Fuel Gas (mcf), Gas Hydrate (mcf), Gas Lost - Flared or Vented (mcf), Nitrogen (mcf), Processed (Residue) Gas (mcf), Unprocessed (Wet) Gas (mcf), NGL (Gas Plant Products).
+_Gas._ Coal Bed Methane (mcf), Flash Gas (mcf), Fuel Gas (mcf), Gas Hydrate (mcf), Gas Lost - Flared or Vented (mcf), Nitrogen (mcf), Processed (Residue) Gas (mcf), Unprocessed (Wet) Gas (mcf), NGL (Gas Plant Products).
 
-**Oil.** Asphaltic Crude (bbl), Black Wax Crude (bbl), Condensate (bbl), Drip or Scrubber Condensate (bbl), Drip or Scrubber Condensate (bbl), Fuel Oil (bbl), Inlet Scrubber (bbl), Oil (bbl), Oil Lost (bbl), Other Liquid Hydrocarbons (bbl), Sour Crude (bbl), Sweet Crude (bbl), Yellow Wax Crude (bbl).
+_Oil._ Asphaltic Crude (bbl), Black Wax Crude (bbl), Condensate (bbl), Drip or Scrubber Condensate (bbl), Drip or Scrubber Condensate (bbl), Fuel Oil (bbl), Inlet Scrubber (bbl), Oil (bbl), Oil Lost (bbl), Other Liquid Hydrocarbons (bbl), Sour Crude (bbl), Sweet Crude (bbl), Yellow Wax Crude (bbl).
 
-**Geothermal.** Geothermal - Direct Utilization, Hundreds of Gallons (cgal), Geothermal - Direct Utilization, Millions of BTUs (mmbtu), Geothermal - Electrical Generation, Kilowatt Hours (kwh), Geothermal - Electrical Generation, Thousands of Pounds (klb), Geothermal - sulfur (lton).
+_Geothermal._ Geothermal - Direct Utilization, Hundreds of Gallons (cgal), Geothermal - Direct Utilization, Millions of BTUs (mmbtu), Geothermal - Electrical Generation, Kilowatt Hours (kwh), Geothermal - Electrical Generation, Thousands of Pounds (klb), Geothermal - sulfur (lton).
 
-**Wind.** Wind.
+_Wind._ Wind.
 
-**Locatable Minerals.**  The federal law governing locatable minerals is the General Mining Law of 1872 (May 10, 1872), which declared all valuable mineral deposits belonging to the United States ... to be free and open to citizens of the United States to explore for, discover, and purchase.  Mineral deposits subject to acquisition in this manner are generally referred to as “locatable minerals.” Locatable minerals include metallic minerals (gold, silver, lead, copper, zinc, nickel, etc.), nonmetallic minerals (fluorspar, mica, certain limestones and gypsum, tantalum, heavy minerals in placer form and gemstones) and certain uncommon variety minerals. It is very difficult to prepare a complete list of locatable minerals because the history of the law has resulted in a definition of minerals that includes economics.
+_Locatable Minerals._  The federal law governing locatable minerals is the General Mining Law of 1872 (May 10, 1872), which declared all valuable mineral deposits belonging to the United States ... to be free and open to citizens of the United States to explore for, discover, and purchase.  Mineral deposits subject to acquisition in this manner are generally referred to as “locatable minerals.” Locatable minerals include metallic minerals (gold, silver, lead, copper, zinc, nickel, etc.), nonmetallic minerals (fluorspar, mica, certain limestones and gypsum, tantalum, heavy minerals in placer form and gemstones) and certain uncommon variety minerals. It is very difficult to prepare a complete list of locatable minerals because the history of the law has resulted in a definition of minerals that includes economics.
 
-**Mineral Materials.**  The BLM makes mineral materials located on public lands, such as sand, gravel, crushed stone, decorative stone, clay, and pumice available for sale under the authority of the Materials Act of 1947.  This law authorizes the BLM to sell these mineral materials at fair market value and to grant free-use permits to Government agencies and nonprofit organizations, so long as public land resources, the environment and the public are protected.  Mineral materials are among our most basic natural resources.  In particular, sand, gravel, and crushed stone, also known as construction aggregate, extracted on BLM administered public lands are necessary for making ready-mixed concrete, asphalt, and many other building materials.  By making locally available aggregate supplies available on public lands, BLM can help reduce consumer costs (fuel and energy costs), and reduce environmental impacts (air quality emissions and greenhouse gases). 
+_Mineral Materials._  The BLM makes mineral materials located on public lands, such as sand, gravel, crushed stone, decorative stone, clay, and pumice available for sale under the authority of the Materials Act of 1947.  This law authorizes the BLM to sell these mineral materials at fair market value and to grant free-use permits to Government agencies and nonprofit organizations, so long as public land resources, the environment and the public are protected.  Mineral materials are among our most basic natural resources.  In particular, sand, gravel, and crushed stone, also known as construction aggregate, extracted on BLM administered public lands are necessary for making ready-mixed concrete, asphalt, and many other building materials.  By making locally available aggregate supplies available on public lands, BLM can help reduce consumer costs (fuel and energy costs), and reduce environmental impacts (air quality emissions and greenhouse gases). 
 
-**Other Commodities.** Anhydrous Sodium Sulfate (ton), Borax-Decahydrate (ton), Borax-Pentahydrate (ton), Boric Acid (ton), Carbon Dioxide Gas (CO2) (mcf), Cinders (ton), Clay (ton), Copper Concentrate (ton), Gilsonite (ton), Gold (ton), Gypsum (ton), Helium (bbl), Langbeinite (ton), Lead Concentrate (ton), Leonardite (ton), Limestone (ton), Magnesium Chloride Brine (ton), Manure Salts (ton), Muriate Of Potash-Granular (ton), Muriate Of Potash-Standard (ton), Other (ton), Phosphate Raw Ore (ton), Potash (ton), Purge Liquor (ton), Quartz Crystal (lb), Salt (ton), Sand/Gravel (ton), Sand/Gravel-Cubic Yards (cyd), Silver (oz), Soda Ash (ton), Sodium Bi-Carbonate (ton), Sodium Bisulfite (ton), Sodium Sesquicarbonate (ton), Sulfide (ton), Sulfur (lton), Sylvite-Raw Ore (ton), Trona Ore (ton), Zinc Concentrate (ton).
+_Other Commodities._ Anhydrous Sodium Sulfate (ton), Borax-Decahydrate (ton), Borax-Pentahydrate (ton), Boric Acid (ton), Carbon Dioxide Gas (CO2) (mcf), Cinders (ton), Clay (ton), Copper Concentrate (ton), Gilsonite (ton), Gold (ton), Gypsum (ton), Helium (bbl), Langbeinite (ton), Lead Concentrate (ton), Leonardite (ton), Limestone (ton), Magnesium Chloride Brine (ton), Manure Salts (ton), Muriate Of Potash-Granular (ton), Muriate Of Potash-Standard (ton), Other (ton), Phosphate Raw Ore (ton), Potash (ton), Purge Liquor (ton), Quartz Crystal (lb), Salt (ton), Sand/Gravel (ton), Sand/Gravel-Cubic Yards (cyd), Silver (oz), Soda Ash (ton), Sodium Bi-Carbonate (ton), Sodium Bisulfite (ton), Sodium Sesquicarbonate (ton), Sulfide (ton), Sulfur (lton), Sylvite-Raw Ore (ton), Trona Ore (ton), Zinc Concentrate (ton).
 

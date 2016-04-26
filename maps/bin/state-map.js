@@ -4,7 +4,7 @@ var yargs = require('yargs')
   .describe('width', 'The output width in pixels')
   .describe('height', 'The output height in pixels')
   .describe('gutter', 'Gutter around the selected state, in pixels')
-  .default('gutter', 100)
+  .default('gutter', 0)
   .describe('counties', 'Whether to include counties')
   .boolean('counties')
   .describe('css', 'URI of a stylesheet to link')
@@ -49,6 +49,14 @@ var zerofill = function(d, len) {
   return d;
 };
 
+var inherit = function(selection, props) {
+  selection.each(function() {
+    props.forEach(function(prop) {
+      this.setProperty(prop, 'inherit');
+    }, this.style);
+  });
+};
+
 var scripts = [];
 
 var load = function(done) {
@@ -68,8 +76,7 @@ var render = function(objects, done) {
 
     svg = d3.select(svg)
       .attr('xmlns', 'http://www.w3.org/2000/svg')
-      .attr('version', '1.2')
-      .attr('baseProfile', 'tiny')
+      .attr('version', '1.2') // TinySVG!
       .attr('id', 'root');
 
     if (argv.css) {
@@ -217,8 +224,10 @@ var render = function(objects, done) {
         .attr('d', path);
     }
 
-    // ensure that all paths have non-scaling stroke
+    // ensure that all paths inherit fill and stroke styles, and get
+    // non-scaling strokes
     svg.selectAll('path')
+      .call(inherit, ['fill', 'stroke', 'stroke-width'])
       .attr('vector-effect', 'non-scaling-stroke');
 
     next(null, svg.property('outerHTML'));

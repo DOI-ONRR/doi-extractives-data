@@ -1,0 +1,44 @@
+svg.map {
+  background: none;
+  display: block;
+  height: 15em;
+  width: 15em;
+
+  [data-value] {
+    cursor: pointer;
+  }
+
+  .mesh {
+    fill: none;
+    stroke: #999;
+    stroke-width: 0.5;
+  }
+
+  .states.features {
+    fill: #f5f5f5;
+  }
+
+  .counties.features {
+    fill: #fff;
+  }
+
+  .states.mesh {
+    stroke: #888;
+  }
+
+  .counties.mesh {
+    stroke-width: 1;
+  }
+
+  .state.feature {
+    pointer-events: none;
+    fill: none;
+    stroke: #000;
+    stroke-width: 1;
+  }
+
+  .debug {
+    fill: none;
+    stroke: none;
+  }
+}

@@ -1,5 +1,6 @@
 ---
 title: Humbolt and Lander Counties, Nevada | Case Studies
+title_display: Humbolt and Lander Counties, Nevada
 layout: case-studies
 permalink: /case-studies/humboldt-and-lander/
 resource: gold

@@ -1,5 +1,6 @@
 ---
 title: Greenlee County, Arizona | Case Studies
+title_display: Greenlee County, Arizona
 layout: case-studies
 permalink: /case-studies/greenlee/
 resource: copper

@@ -1,5 +1,6 @@
 ---
 title: St. Louis County, Minnesota | Case Studies
+title_display: St. Louis County, Minnesota
 layout: case-studies
 permalink: /case-studies/st-louis/
 resource: iron

@@ -1,5 +1,6 @@
 ---
 title: Elko and Eureka Counties, Nevada | Case Studies
+title_display: Elko and Eureka Counties, Nevada
 layout: case-studies
 permalink: /case-studies/elko-and-eureka/
 resource: gold

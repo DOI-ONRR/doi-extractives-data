@@ -1,5 +1,6 @@
 ---
 title: Tarrant and Johnson Counties, Texas | Case Studies
+title_display: Tarrant and Johnson Counties, Texas
 layout: case-studies
 permalink: /case-studies/tarrant-and-johnson/
 resource: gas

@@ -1,5 +1,6 @@
 ---
 title: DeSoto Parish, Louisiana | Case Studies
+title_display: DeSoto Parish, Louisiana
 layout: case-studies
 permalink: /case-studies/desoto/
 resource: gas

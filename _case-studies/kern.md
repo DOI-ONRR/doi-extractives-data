@@ -1,5 +1,6 @@
 ---
 title: Kern County, California | Case Studies
+title_display: Kern County, California
 layout: case-studies
 permalink: /case-studies/kern/
 resource: oil

@@ -1,5 +1,6 @@
 ---
 title: North Slope Borough, Alaska | Case Studies
+title_display: North Slope Borough, Alaska
 layout: case-studies
 permalink: /case-studies/north-slope/
 resource: oil

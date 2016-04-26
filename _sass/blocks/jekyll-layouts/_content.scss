@@ -1,10 +1,10 @@
 .layout-content {
   blockquote {
+    margin-bottom: $base-padding-extra;
+
     p {
       @include heading('para-xl');
     }
-
-    margin-bottom: $base-padding-extra;
   }
 }
 

@@ -1,5 +1,6 @@
 ---
 title: Pima County, Arizona | Case Studies
+title_display: Pima County, Arizona
 layout: case-studies
 permalink: /case-studies/pima/
 resource: copper

@@ -1,7 +1,7 @@
 ---
 title: Marquette County, Michigan | Case Studies
 title_display: Marquette County, Michigan
-layout: case-studies
+layout: content
 permalink: /case-studies/marquette/
 resource: iron
 nav_items:

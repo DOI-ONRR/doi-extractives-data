@@ -1,0 +1,20 @@
+---
+# this is CSS for our standalone SVGs
+---
+
+* {
+  fill: inherit;
+  stroke: inherit;
+  stroke-width: inherit;
+}
+
+path {
+  fill: none;
+  stroke: black;
+  stroke-width: 1;
+}
+
+.bbox {
+  fill: none;
+  stroke: red;
+}

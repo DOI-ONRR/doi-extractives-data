@@ -1,17 +1,23 @@
 (function(exports) {
 
-  document.registerElement('data-map', {
+  exports.EITIDataMap = document.registerElement('data-map', {
     'extends': 'figure',
     prototype: Object.create(
       HTMLElement.prototype,
       {
         attachedCallback: {value: function() {
+          this.update();
+        }},
+
+        update: {value: function() {
           var type = this.getAttribute('scale-type') || 'quantize';
           var scheme = this.getAttribute('color-scheme') || 'Blues';
           var steps = this.getAttribute('steps') || 5;
           var colors = colorbrewer[scheme][steps];
           if (!colors) {
-            return console.error('bad # steps for color scheme:', scheme, steps);
+            return console.error(
+              'bad # of steps (%d) for color scheme:', steps, scheme
+            );
           }
 
           var marks = d3.select(this)

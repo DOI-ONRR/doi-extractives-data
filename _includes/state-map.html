@@ -1,0 +1,18 @@
+<svg class="states map" viewBox="{{ site.data.viewboxes.all }}">
+  {% capture states_svg %}{{ site.baseurl }}/maps/states/all.svg{% endcapture %}
+  <use class="states features" xlink:href="{{ states_svg }}#states"></use>
+  {% assign keys = include.value | split: '.' %}
+  {% for state in include.states %}
+  {% assign _state = site.data.states | filter: 'id', state[0] | first %}
+  {% if include.href %}<a xlink:href="{{ include.href | replace: '%s', state[0] }}">{% endif %}
+    <use class="state feature" xlink:href="{{ states_svg }}#{{ state[0] }}"
+    {% if include.value %}
+      {% assign value = state[1] %}
+      {% if keys %}
+        {% for _key in keys %}{% assign value = value[_key] %}{% endfor %}
+      {% endif %}
+      data-value="{{ value | default: 0 }}"{% endif %}><title>{{ _state.name }}: {{ value }}</title></use>
+  {% if include.href %}</a>{% endif %}
+  {% endfor %}
+  <use class="states mesh" xlink:href="{{ states_svg }}#states-mesh"></use>
+</svg>

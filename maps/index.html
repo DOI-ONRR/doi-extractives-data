@@ -66,7 +66,14 @@ layout: default
         </tr>
           {% for county in counties %}
           <tr id="county-{{ county[0] }}">
-            <td>{{ county[1].name }}</td>
+            <td>
+              <map-thumbnail zoom-to=".overlay">
+                <svg class="county map thumbnail">
+                  <use class="feature overlay" xlink:href="states/{{ state_id }}.svg#county-{{ county[0] }}"></use>
+                </svg>
+              </map-thumbnail>
+              {{ county[1].name }}
+            </td>
 
             {% assign value = county[1].employment['2013'].count %}
             <td>{{ value | default: 0 | intcomma }}</td>
@@ -86,3 +93,4 @@ layout: default
 
 <script src="{{ site.baseurl }}/js/components/bar-chart-table.js"></script>
 <script src="{{ site.baseurl }}/js/components/data-map.js"></script>
+<script src="{{ site.baseurl }}/js/components/map-thumbnail.js"></script>

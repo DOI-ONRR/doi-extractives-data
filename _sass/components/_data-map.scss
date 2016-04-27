@@ -1,0 +1,15 @@
+[is="data-map"] {
+  display: block;
+  margin-bottom: 1em;
+
+  svg {
+    border: 1px solid #999;
+
+    [data-value] {
+      cursor: pointer;
+    }
+  }
+
+  figcaption {
+  }
+}

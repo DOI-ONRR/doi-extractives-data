@@ -5,14 +5,15 @@ svg.map {
   padding: 0;
 
   &.county {
+    padding: 1em;
     width: 25em;
   }
 
   .mesh {
     fill: none;
+    pointer-events: none;
     stroke: #999;
     stroke-width: 0.5;
-    pointer-events: none;
   }
 
   .states.features {
@@ -45,5 +46,14 @@ svg.map {
   .debug {
     fill: none;
     stroke: none;
+  }
+
+  &.thumbnail {
+    display: inline-block;
+    height: 1em;
+    margin-right: 0.5em;
+    padding: 1px;
+    vertical-align: baseline;
+    width: 1em;
   }
 }

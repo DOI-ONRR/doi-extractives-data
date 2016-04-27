@@ -1,6 +1,6 @@
 (function(exports) {
 
-  document.registerElement('map-thumbnail', {
+  exports.EITIMapThumbnail = document.registerElement('map-thumbnail', {
     prototype: Object.create(
       HTMLElement.prototype,
       {
@@ -9,17 +9,20 @@
           if (zoom) {
             this.target = this.querySelector(zoom);
             if (this.target) {
-              this.__interval = setInterval(this.wait.bind(this), 100);
+              this.wait();
             }
           }
         }},
 
         wait: {value: function() {
-          var bbox = this.target.getBBox();
-          if (bbox.width && bbox.height) {
-            clearInterval(this.__interval);
-            requestAnimationFrame(this.zoom.bind(this));
-          }
+          var bbox;
+          var interval = setInterval((function() {
+            bbox = this.target.getBBox();
+            if (bbox.width && bbox.height) {
+              clearInterval(interval);
+              requestAnimationFrame(this.zoom.bind(this));
+            }
+          }).bind(this), 250);
         }},
 
         zoom: {value: function() {

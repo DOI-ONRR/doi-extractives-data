@@ -4,7 +4,7 @@ var yargs = require('yargs')
   .describe('width', 'The output width in pixels')
   .describe('height', 'The output height in pixels')
   .describe('gutter', 'Gutter around the selected state, in pixels')
-  .default('gutter', 0)
+  .default('gutter', 40)
   .describe('counties', 'Whether to include counties')
   .boolean('counties')
   .describe('css', 'URI of a stylesheet to link')
@@ -142,25 +142,10 @@ var render = function(objects, done) {
           .attr('height', h);
       }
 
-      /*
-      var extent = proj.invert(bbox[0])
-        .concat(proj.invert(bbox[1]));
-      // console.warn('clip extent:', extent);
-
-      var clip = d3.geo.clipExtent(extent);
-      path.projection({
-        stream: function(s) {
-          return proj.stream(clip.stream(s));
-        }
-      });
-      */
-
     } else if (argv.state) {
       console.warn('no state found:', argv.state);
     } else {
-      svg
-        .attr('width', size[0])
-        .attr('height', size[1]);
+      svg.attr('viewBox', [0, 0].concat(size).join(' '));
     }
 
     if (!argv.state) {

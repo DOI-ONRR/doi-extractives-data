@@ -23,7 +23,6 @@ table[is=bar-chart-table] {
     .bar {
       display: block;
       height: 1em;
-      color: $blue;
       background: currentColor;
     }
 
@@ -32,10 +31,6 @@ table[is=bar-chart-table] {
         min-width: 1px;
       }
     }
-  }
-
-  [data-series=percent] .bar {
-    color: $green;
   }
 
   // negative values

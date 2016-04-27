@@ -1,3 +1,4 @@
+// scss-lint:disable QualifyingElement
 svg.map {
   background: none;
   display: block;
@@ -12,24 +13,28 @@ svg.map {
   .mesh {
     fill: none;
     pointer-events: none;
-    stroke: #999;
+    stroke: $neutral-gray;
     stroke-width: 0.5;
   }
 
   .states.features {
-    fill: #f5f5f5;
+    fill: $light-gray;
   }
 
   .feature:not([fill]) {
-    fill: #f5f5f5;
+    fill-opacity: 0;
+  }
+
+  .feature[fill] {
+    fill-opacity: 1;
   }
 
   .counties.features {
-    fill: #fff;
+    fill: $white;
   }
 
   .states.mesh {
-    stroke: #888;
+    stroke: $another-gray;
   }
 
   .counties.mesh {
@@ -37,9 +42,9 @@ svg.map {
   }
 
   .feature.overlay {
-    pointer-events: none;
     fill: none;
-    stroke: #333;
+    pointer-events: none;
+    stroke: $dark-gray;
     stroke-width: 1;
   }
 

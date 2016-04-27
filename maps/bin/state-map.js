@@ -3,8 +3,6 @@ var yargs = require('yargs')
   .describe('state', 'The state to zoom into and render')
   .describe('width', 'The output width in pixels')
   .describe('height', 'The output height in pixels')
-  .describe('gutter', 'Gutter around the selected state, in pixels')
-  .default('gutter', 40)
   .describe('counties', 'Whether to include counties')
   .boolean('counties')
   .describe('css', 'URI of a stylesheet to link')
@@ -116,17 +114,6 @@ var render = function(objects, done) {
 
       var w = Math.abs(bbox[1][0] - bbox[0][0]);
       var h = Math.abs(bbox[1][1] - bbox[0][1]);
-
-      if (argv.gutter) {
-        var scale = Math.max(w, h) / Math.min(size[0], size[1]);
-        var gutter = argv.gutter * scale;
-        bbox[0][0] -= gutter;
-        bbox[0][1] -= gutter;
-        bbox[1][0] += gutter;
-        bbox[1][1] += gutter;
-        w += gutter * 2;
-        h += gutter * 2;
-      }
 
       var left = Math.min(bbox[0][0], bbox[1][0]);
       var top = Math.min(bbox[0][1], bbox[1][1]);

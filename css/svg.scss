@@ -2,19 +2,20 @@
 # this is CSS for our standalone SVGs
 ---
 
-* {
-  fill: inherit;
-  stroke: inherit;
-  stroke-width: inherit;
+@import 'variables';
+
+.feature {
+  fill: $light-gray !important;
+  stroke: none !important;
 }
 
-path {
-  fill: none;
-  stroke: black;
-  stroke-width: 1;
+.mesh {
+  fill: none !important;
+  stroke: $another-gray !important;
+  stroke-width: 1 !important;
 }
 
 .bbox {
   fill: none;
-  stroke: red;
+  stroke: $red;
 }

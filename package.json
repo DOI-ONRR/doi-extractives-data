@@ -47,6 +47,7 @@
     "yargs": "^3.7.1"
   },
   "scripts": {
+    "start": "bundle exec jekyll serve --incremental",
     "test": "mocha",
     "test-html": "bundle exec htmlproof --disable-external _site",
     "webpack": "webpack",

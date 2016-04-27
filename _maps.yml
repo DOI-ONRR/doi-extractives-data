@@ -1,0 +1,69 @@
+title: USEITI
+
+description: >
+    USEITI is part of an international effort to promote open and accountable
+    management of natural resources. This site provides data about how the U.S.
+    manages extractive industries.
+
+# permanent url, for use in meta references
+url: https://useiti.doi.gov
+
+# app version number
+version: v1.3.1
+
+sass:
+  style: nested
+  sass_dir: _sass
+
+exclude:
+  - lib
+  - node_modules
+  - package.json
+  - show
+  - test
+  - styleguide-template
+  - 'Gemfile*'
+  - pages
+  - img
+  - _case-studies
+  - _downloads
+  - _explore
+  - _how-it-works
+  - _federal-revenue-by-company
+  - _meta
+  - _sass/blocks
+  - _includes/case-studies
+  - _includes/how-it-works
+  - _includes/layout
+  - _includes/glossary.html
+  - _includes/hash_selector.html
+
+
+collections:
+  case-studies:
+    output: true
+    permalink: /case-studies/:case-study/
+  explore:
+    output: true
+    permalink: /explore/:explore/
+  how-it-works:
+    output: true
+    permalink: /how-it-works/:subpage/
+  downloads:
+    output: true
+    permalink: /downloads/:subpage/
+  federal-revenue-by-company:
+    output: true
+    permalink: /explore/federal-revenue-by-company/:path/
+
+defaults:
+  - scope:
+      path: ''
+      collection: company-data
+    values:
+      layout: federal-revenue-by-company
+
+shruggie:
+  - d8394cf27efbf8ae2f96ee12788eb257f4358a42
+  - 11652cb6b75c1e914857a215e8f8eca7a599e0e0
+  - 85f41ebb92208a3508c75114999a560ebd741690

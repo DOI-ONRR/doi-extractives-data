@@ -11,7 +11,7 @@ viewboxes: ../_data/viewboxes.yml
 
 ../_data/viewboxes.yml:
 	echo "# viewboxes:" > $@
-	for state in $(states); do \
+	for state in all $(states); do \
 		echo "$${state}: \c" >> $@; \
 		xpath states/$${state}.svg '//@viewBox' \
 			| perl -p -e 's/^.*="([^"]+)"/"$$1"\n/' >> $@; \

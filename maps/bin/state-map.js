@@ -19,7 +19,6 @@ if (argv.help) {
 var async = require('async');
 var d3 = require('d3');
 var fs = require('fs');
-var jsdom = require('jsdom');
 var os = require('os');
 var topojson = require('topojson');
 var util = require('../../lib/util');
@@ -54,8 +53,6 @@ var inherit = function(selection, props) {
     }, this.style);
   });
 };
-
-var scripts = [];
 
 var load = function(done) {
   async.map(argv._, function load(filename, next) {
@@ -148,9 +145,9 @@ var render = function(objects, done) {
             .attr('d', path);
     }
 
+    var counties = topology.objects.counties;
     // 2. county polygons
     if (argv.counties) {
-      var counties = topology.objects.counties;
       var countyFeatures = topojson.feature(topology, counties).features;
       if (currentState) {
         counties.geometries = counties.geometries.filter(isCurrentState);
@@ -163,7 +160,8 @@ var render = function(objects, done) {
           .data(countyFeatures)
           .enter()
           .append('path')
-            .attr('id', function(d, i) {
+            .attr('id', function(d) {
+              // XXX ensure county FIPS codes have 5 digits
               return 'county-' + zerofill(d.id, 5);
             })
             .attr('class', 'county feature')
@@ -210,19 +208,10 @@ var writeSVG = function(svg, done) {
   var out = argv.o
     ? fs.createWriteStream(argv.o)
     : process.stdout;
+
   out.write('<?xml version="1.0" standalone="yes"?>' + os.EOL);
-  /*
-  if (argv.css) {
-    var uris = argv.css;
-    if (!Array.isArray(uris)) {
-      uris = [uris];
-    }
-    uris.forEach(function(uri) {
-      out.write('<?xml-stylesheet type="text/css" href="' + encodeURI(uri) + '"?>' + os.EOL);
-    });
-  }
-  */
   out.write(svg);
+
   if (out !== process.stdout) {
     out.end();
   }

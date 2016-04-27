@@ -12,7 +12,7 @@ module.exports = function(generate, done) {
       generate.call(window, svg, done);
     } else {
       generate.call(window, svg);
-      done(error, svg);
+      done(null, svg);
     }
   });
 };

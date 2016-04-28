@@ -163,35 +163,35 @@ nav_items:
     <td>Montana</td>
     <td>Coal</td>
     <td>Coal Severance Tax Trust Fund</td>
-    <td>25% of mineral-related (oil) income and legislative appropriations</td>
-  <td>Citizen dividends, inflation proofing, and General Fund</td>
+    <td>50% of coal severence tax collections</td>
+    <td>General Fund, education, infrastructure, reclamation, and economic development</td>
   </tr>
   <tr>
     <td>New Mexico</td>
-    <td>Oil, gas, and coal</td>
+    <td>Oil, gas, and other natural resources</td>
     <td>Severance Tax Permanent Fund</td>
-    <td>50% of coal severance tax collections</td>
-  <td>General Fund, education, infrastructure, reclamation, and economic development</td>
+    <td>Historically, 50% of severence tax revenues, but varies</td>
+    <td>General Fund</td>
   </tr>
   <tr>
     <td>North Dakota</td>
     <td>Oil</td>
     <td>Legacy Fund</td>
     <td>30% of oil production tax revenue</td>
-  <td>General Fund</td>
+    <td>General Fund</td>
   </tr>
   <tr>
     <td>Utah</td>
     <td>Coal, oil, and gas</td>
     <td>State Endowment Fund</td>
     <td>Severance tax revenue in excess of $71 million from oil and gas tax; revenue in excess of $27.6 million from coal mining</td>
-  <td>Economic diversification, capital, and infrastructure</td>
+    <td>Economic diversification, capital, and infrastructure</td>
   </tr>
   <tr>
     <td>Wyoming</td>
     <td>Coal, oil, and gas</td>
     <td>Wyoming Permanent Mineral Trust Fund</td>
     <td>A 1.5%–2.5% severance tax on natural gas, oil, and coal (30%–40% of mineral revenue)</td>
-  <td>General Fund</td>
+    <td>General Fund</td>
   </tr>
 </table>

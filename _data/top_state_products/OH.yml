@@ -1,47 +1,6 @@
-all_production:
-  '2004':
-    - product: Coal (short tons)
-      rank: 10
-      percent: 2.966221815293211
-  '2005':
-    - product: Coal (short tons)
-      rank: 10
-      percent: 3.1291906901013182
-  '2008':
-    - product: Coal (short tons)
-      rank: 8
-      percent: 3.174670030848677
-  '2009':
-    - product: Coal (short tons)
-      rank: 8
-      percent: 3.572471294137501
-  '2010':
-    - product: Solar
-      rank: 6
-      percent: 6.074766355140188
-    - product: Coal (short tons)
-      rank: 7
-      percent: 3.4075853250418224
-  '2011':
-    - product: Coal (short tons)
-      rank: 7
-      percent: 3.5591199346574025
-    - product: Solar
-      rank: 8
-      percent: 2.9702970297029707
-  '2012':
-    - product: Coal (short tons)
-      rank: 6
-      percent: 7.657419850259166
-    - product: Solar
-      rank: 8
-      percent: 1.742816768723505
-  '2013':
-    - product: Coal (short tons)
-      rank: 7
-      percent: 3.4134583719355347
 revenue:
-  '2010':
-    - product: Coal
-      rank: 10
-      percent: 0.00038476528679895456
+  '2014':
+    - product: Oil- Yellow Wax
+      value: 1629.2
+      rank: 1
+      percent: 100

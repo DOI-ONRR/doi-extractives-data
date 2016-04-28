@@ -1,218 +1,3 @@
-revenue:
-  '2004':
-    - product: Gilsonite
-      value: 361540.96
-      rank: 1
-      percent: 100
-    - product: Magnesium Chloride Brine
-      value: 39046.77
-      rank: 1
-      percent: 100
-    - product: Manure Salts
-      value: 6944.7
-      rank: 1
-      percent: 100
-    - product: Tar Sands
-      value: 12190
-      rank: 1
-      percent: 100
-  '2005':
-    - product: Coal-Bituminous-Raw
-      value: 90649.93
-      rank: 1
-      percent: 100
-    - product: Gilsonite
-      value: 360976.04
-      rank: 1
-      percent: 100
-    - product: Magnesium Chloride Brine
-      value: 14362.42
-      rank: 1
-      percent: 100
-    - product: Manure Salts
-      value: 11421.28
-      rank: 1
-      percent: 100
-    - product: Tar Sands
-      value: 12190
-      rank: 1
-      percent: 100
-    - product: Clay
-      value: 3198.45
-      rank: 2
-      percent: 20.66
-  '2006':
-    - product: Gilsonite
-      value: 511866.09
-      rank: 1
-      percent: 100
-    - product: Magnesium Chloride Brine
-      value: 20113.91
-      rank: 1
-      percent: 100
-    - product: Manure Salts
-      value: 11526.75
-      rank: 1
-      percent: 100
-  '2007':
-    - product: Gilsonite
-      value: 618462.5
-      rank: 1
-      percent: 100
-    - product: Magnesium Chloride Brine
-      value: 18755.5
-      rank: 1
-      percent: 100
-    - product: Manure Salts
-      value: 10140.98
-      rank: 1
-      percent: 100
-    - product: Muriate Of Potash-Coarse
-      value: -1873.15
-      rank: 1
-      percent: 100
-    - product: Tar Sands
-      value: 24380
-      rank: 1
-      percent: 100
-    - product: Coal-Bituminous-Raw
-      value: 103776.66
-      rank: 1
-      percent: 79.28
-    - product: Clay
-      value: 6082.17
-      rank: 2
-      percent: 32.05
-  '2008':
-    - product: Clay
-      value: 5002.92
-      rank: 1
-      percent: 100
-    - product: Gilsonite
-      value: 1179009.49
-      rank: 1
-      percent: 100
-    - product: Magnesium Chloride Brine
-      value: 26788.93
-      rank: 1
-      percent: 100
-    - product: Manure Salts
-      value: 11779.82
-      rank: 1
-      percent: 100
-    - product: Tar Sands
-      value: 7679.67
-      rank: 1
-      percent: 100
-    - product: Potash
-      value: 394106.34
-      rank: 1
-      percent: 66.07
-    - product: Phosphate
-      value: 34847
-      rank: 2
-      percent: 20.66
-  '2009':
-    - product: Clay
-      value: 2271.94
-      rank: 1
-      percent: 100
-    - product: Gilsonite
-      value: 1423775.11
-      rank: 1
-      percent: 100
-    - product: Magnesium Chloride Brine
-      value: 35922.41
-      rank: 1
-      percent: 100
-    - product: Manure Salts
-      value: 2690.58
-      rank: 1
-      percent: 100
-    - product: Tar Sands
-      value: 7732
-      rank: 1
-      percent: 100
-    - product: Geothermal
-      value: 8986604
-      rank: 2
-      percent: 43.85
-  '2010':
-    - product: Clay
-      value: 3073.02
-      rank: 1
-      percent: 100
-    - product: Gilsonite
-      value: 1882318.69
-      rank: 1
-      percent: 100
-    - product: Magnesium Chloride Brine
-      value: 42871.87
-      rank: 1
-      percent: 100
-    - product: Manure Salts
-      value: 2174.01
-      rank: 1
-      percent: 100
-    - product: Tar Sands
-      value: 7732
-      rank: 1
-      percent: 100
-  '2011':
-    - product: Clay
-      value: 4537.28
-      rank: 1
-      percent: 100
-    - product: Gilsonite
-      value: 2364457.5
-      rank: 1
-      percent: 100
-    - product: Magnesium Chloride Brine
-      value: 40897.75
-      rank: 1
-      percent: 100
-    - product: Manure Salts
-      value: 2462.34
-      rank: 1
-      percent: 100
-    - product: Potassium
-      value: 21074811.48
-      rank: 1
-      percent: 98.58
-  '2012':
-    - product: Clay
-      value: 4641.31
-      rank: 1
-      percent: 100
-    - product: Gilsonite
-      value: 3400992
-      rank: 1
-      percent: 100
-    - product: Magnesium Chloride Brine
-      value: 37623.64
-      rank: 1
-      percent: 100
-    - product: Manure Salts
-      value: 1907.52
-      rank: 1
-      percent: 100
-    - product: Unprocessed (Wet) Gas
-      value: 28027937.81
-      rank: 3
-      percent: 28.3
-  '2013':
-    - product: Clay
-      value: 5400.61
-      rank: 1
-      percent: 100
-    - product: Gilsonite
-      value: 2901827.59
-      rank: 1
-      percent: 100
-    - product: Magnesium Chloride Brine
-      value: 53547.59
-      rank: 1
-      percent: 100
 federal_production:
   '2005':
     - product: Gilsonite (tons)
@@ -296,3 +81,274 @@ federal_production:
       value: 2463584336.7
       rank: 1
       percent: 98.18
+revenue:
+  '2006':
+    - product: Gilsonite
+      value: 1023750.66
+      rank: 1
+      percent: 100
+    - product: Magnesium Chloride Brine
+      value: 40227.82
+      rank: 1
+      percent: 100
+    - product: Manure Salts
+      value: 23053.5
+      rank: 1
+      percent: 100
+    - product: Oil & Gas (Non-Royalty)
+      value: 206044779.56
+      rank: 2
+      percent: 27.42
+    - product: Salt
+      value: 2687.7
+      rank: 3
+      percent: 95.02
+  '2007':
+    - product: Gilsonite
+      value: 1237828.86
+      rank: 1
+      percent: 100
+    - product: Magnesium Chloride Brine
+      value: 37511
+      rank: 1
+      percent: 100
+    - product: Manure Salts
+      value: 20281.96
+      rank: 1
+      percent: 100
+    - product: Muriate Of Potash-Coarse
+      value: -3746.3
+      rank: 1
+      percent: 100
+    - product: Tar Sands
+      value: 49005.82
+      rank: 1
+      percent: 100
+    - product: Coal-Bituminous-Raw
+      value: 207553.32
+      rank: 1
+      percent: 79.28
+    - product: Clay
+      value: 12164.34
+      rank: 2
+      percent: 32.05
+    - product: Salt
+      value: 1679.46
+      rank: 3
+      percent: 178.83
+  '2008':
+    - product: Clay
+      value: 10005.84
+      rank: 1
+      percent: 100
+    - product: Gilsonite
+      value: 2438723.82
+      rank: 1
+      percent: 100
+    - product: Magnesium Chloride Brine
+      value: 53577.86
+      rank: 1
+      percent: 100
+    - product: Manure Salts
+      value: 23559.64
+      rank: 1
+      percent: 100
+    - product: Tar Sands
+      value: 15589.06
+      rank: 1
+      percent: 100
+    - product: Potash
+      value: 788212.68
+      rank: 1
+      percent: 66.07
+    - product: Salt
+      value: 2517.34
+      rank: 3
+      percent: 313.44
+  '2009':
+    - product: Clay
+      value: 4543.88
+      rank: 1
+      percent: 100
+    - product: Gilsonite
+      value: 2887833.34
+      rank: 1
+      percent: 100
+    - product: Magnesium Chloride Brine
+      value: 71844.82
+      rank: 1
+      percent: 100
+    - product: Manure Salts
+      value: 5381.16
+      rank: 1
+      percent: 100
+    - product: Tar Sands
+      value: 15464
+      rank: 1
+      percent: 100
+    - product: Geothermal
+      value: 17977326.66
+      rank: 2
+      percent: 43.06
+    - product: Salt
+      value: 5201.32
+      rank: 3
+      percent: 448.08
+  '2010':
+    - product: Clay
+      value: 6146.04
+      rank: 1
+      percent: 100
+    - product: Gilsonite
+      value: 3772308.48
+      rank: 1
+      percent: 100
+    - product: Magnesium Chloride Brine
+      value: 85743.74
+      rank: 1
+      percent: 100
+    - product: Manure Salts
+      value: 4348.02
+      rank: 1
+      percent: 100
+    - product: Tar Sands
+      value: 15464
+      rank: 1
+      percent: 100
+    - product: Limestone
+      value: 80
+      rank: 2
+      percent: 100
+    - product: Salt
+      value: 3970.34
+      rank: 3
+      percent: 381.82
+  '2011':
+    - product: Clay
+      value: 9074.56
+      rank: 1
+      percent: 100
+    - product: Gilsonite
+      value: 4743041
+      rank: 1
+      percent: 100
+    - product: Magnesium Chloride Brine
+      value: 81795.5
+      rank: 1
+      percent: 100
+    - product: Manure Salts
+      value: 4924.68
+      rank: 1
+      percent: 100
+    - product: Potassium
+      value: 42150422.96
+      rank: 1
+      percent: 98.5
+  '2012':
+    - product: Clay
+      value: 9282.62
+      rank: 1
+      percent: 100
+    - product: Gilsonite
+      value: 6809666.54
+      rank: 1
+      percent: 100
+    - product: Magnesium Chloride Brine
+      value: 75247.28
+      rank: 1
+      percent: 100
+    - product: Manure Salts
+      value: 3815.04
+      rank: 1
+      percent: 100
+    - product: Salt
+      value: 7153.86
+      rank: 3
+      percent: 365.95
+    - product: Unprocessed (Wet) Gas
+      value: 56055875.62
+      rank: 3
+      percent: 44.21
+  '2013':
+    - product: Clay
+      value: 10801.22
+      rank: 1
+      percent: 100
+    - product: Gilsonite
+      value: 5806055.18
+      rank: 1
+      percent: 100
+    - product: Magnesium Chloride Brine
+      value: 107095.18
+      rank: 1
+      percent: 100
+  '2014':
+    - product: Clay
+      value: 1504.3
+      rank: 1
+      percent: 100
+    - product: Coal-Subbituminous-Raw
+      value: -55.58
+      rank: 1
+      percent: 100
+    - product: Gilsonite
+      value: 3910359.34
+      rank: 1
+      percent: 100
+    - product: Magnesium Chloride Brine
+      value: 60060.7
+      rank: 1
+      percent: 100
+    - product: Oil- Black Wax
+      value: 889384.02
+      rank: 1
+      percent: 100
+    - product: Inlet Scrubber
+      value: 4328369.86
+      rank: 1
+      percent: 78.18
+    - product: Coal-Bituminous-Raw
+      value: -124127.32
+      rank: 2
+      percent: 58.69
+    - product: Drip or Scrubber Condensate
+      value: 1485036.8
+      rank: 2
+      percent: 22.37
+  '2015':
+    - product: Clay
+      value: 17399.14
+      rank: 1
+      percent: 100
+    - product: Coal Waste (Sub-Econ)
+      value: 13895.86
+      rank: 1
+      percent: 100
+    - product: Gilsonite
+      value: 3917963.02
+      rank: 1
+      percent: 100
+    - product: Gold
+      value: 5208
+      rank: 1
+      percent: 100
+    - product: Magnesium Chloride Brine
+      value: 132979.76
+      rank: 1
+      percent: 100
+    - product: Oil- Black Wax
+      value: 835335.46
+      rank: 1
+      percent: 100
+    - product: Inlet Scrubber
+      value: 1211223.66
+      rank: 1
+      percent: 65.19
+    - product: Potassium
+      value: 1163358
+      rank: 1
+      percent: 65.13
+    - product: Potash
+      value: 479946.28
+      rank: 2
+      percent: 28.9

@@ -115,23 +115,28 @@ all_production:
       rank: 1
       percent: 28.56
 revenue:
-  '2004':
-    - product: Clay
-      value: 11440.8
-      rank: 1
-      percent: 83.7
-  '2005':
-    - product: Clay
-      value: 12279.9
-      rank: 1
-      percent: 79.34
   '2006':
     - product: Clay
-      value: 20117.1
+      value: 40234.2
       rank: 1
       percent: 84.47
   '2007':
     - product: Clay
-      value: 12892.8
+      value: 25785.6
       rank: 1
       percent: 67.95
+  '2009':
+    - product: Sulfur
+      value: 5755.08
+      rank: 2
+      percent: 27.43
+  '2010':
+    - product: Sulfur
+      value: 2896.88
+      rank: 3
+      percent: 131.56
+  '2013':
+    - product: Sulfur
+      value: 5359.36
+      rank: 3
+      percent: 24.46

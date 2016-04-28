@@ -1,158 +1,3 @@
-revenue:
-  '2004':
-    - product: Gold
-      value: 39
-      rank: 1
-      percent: 100
-    - product: Phosphate Raw Ore
-      value: 3451909.95
-      rank: 1
-      percent: 100
-    - product: Phosphate
-      value: 680088.5
-      rank: 1
-      percent: 93.66
-  '2005':
-    - product: Gemstones
-      value: 80
-      rank: 1
-      percent: 100
-    - product: Gold
-      value: 924.81
-      rank: 1
-      percent: 100
-    - product: Phosphate
-      value: 88378
-      rank: 1
-      percent: 83.61
-    - product: Phosphate Raw Ore
-      value: 2986698.1
-      rank: 1
-      percent: 78.11
-  '2006':
-    - product: Gemstones
-      value: 80
-      rank: 1
-      percent: 100
-    - product: Gold
-      value: 3464.85
-      rank: 1
-      percent: 100
-    - product: Phosphate Raw Ore
-      value: 2064495.78
-      rank: 1
-      percent: 99.93
-    - product: Phosphate
-      value: 119552
-      rank: 1
-      percent: 83.28
-  '2007':
-    - product: Gemstones
-      value: 80
-      rank: 1
-      percent: 100
-    - product: Gold
-      value: 1445.4
-      rank: 1
-      percent: 100
-    - product: Phosphate Raw Ore
-      value: 2152071.29
-      rank: 1
-      percent: 100
-    - product: Phosphate
-      value: 156855
-      rank: 1
-      percent: 86.66
-    - product: Geothermal
-      value: 5727012
-      rank: 3
-      percent: 21.58
-  '2008':
-    - product: Garnet
-      value: 120
-      rank: 1
-      percent: 100
-    - product: Gold
-      value: 731.3
-      rank: 1
-      percent: 100
-    - product: Phosphate Raw Ore
-      value: 2485359.85
-      rank: 1
-      percent: 100
-    - product: Phosphate
-      value: 128250
-      rank: 1
-      percent: 76.04
-  '2009':
-    - product: Gold
-      value: 292.88
-      rank: 1
-      percent: 100
-    - product: Phosphate Raw Ore
-      value: 3566737.1
-      rank: 1
-      percent: 100
-    - product: Phosphate
-      value: 118315
-      rank: 1
-      percent: 88.56
-  '2010':
-    - product: Garnet
-      value: 80
-      rank: 1
-      percent: 100
-    - product: Phosphate Raw Ore
-      value: 9053379.95
-      rank: 1
-      percent: 99.01
-    - product: Phosphate
-      value: 135581
-      rank: 1
-      percent: 83.23
-  '2011':
-    - product: Gold
-      value: 620
-      rank: 1
-      percent: 100
-    - product: Phosphate
-      value: 870196.5
-      rank: 1
-      percent: 95.28
-    - product: Phosphate Raw Ore
-      value: 8534799.04
-      rank: 1
-      percent: 94.24
-  '2012':
-    - product: Gold
-      value: 796.8
-      rank: 1
-      percent: 100
-    - product: Phosphate
-      value: 912254.24
-      rank: 1
-      percent: 97.05
-    - product: Phosphate Raw Ore
-      value: 9431323.92
-      rank: 1
-      percent: 81.3
-  '2013':
-    - product: Gold
-      value: 363.09
-      rank: 1
-      percent: 100
-    - product: Silver
-      value: 2.35
-      rank: 1
-      percent: 100
-    - product: Phosphate Raw Ore
-      value: 9817743.38
-      rank: 1
-      percent: 97.17
-    - product: Phosphate
-      value: 113562
-      rank: 1
-      percent: 82.59
 federal_production:
   '2005':
     - product: Phosphate Raw Ore (tons)
@@ -204,3 +49,130 @@ federal_production:
       value: 5777094
       rank: 1
       percent: 100
+revenue:
+  '2006':
+    - product: Gold
+      value: 6929.7
+      rank: 1
+      percent: 100
+    - product: Phosphate Raw Ore
+      value: 4128991.56
+      rank: 1
+      percent: 99.93
+    - product: Phosphate
+      value: 216014
+      rank: 1
+      percent: 81.82
+  '2007':
+    - product: Gold
+      value: 2890.8
+      rank: 1
+      percent: 100
+    - product: Phosphate Raw Ore
+      value: 4304142.58
+      rank: 1
+      percent: 100
+    - product: Phosphate
+      value: 354550.36
+      rank: 1
+      percent: 87.58
+    - product: Geothermal
+      value: 11454024
+      rank: 3
+      percent: 21.52
+  '2008':
+    - product: Gold
+      value: 1462.6
+      rank: 1
+      percent: 100
+    - product: Phosphate Raw Ore
+      value: 4970719.7
+      rank: 1
+      percent: 100
+    - product: Phosphate
+      value: 263990.62
+      rank: 1
+      percent: 76.53
+  '2009':
+    - product: Gold
+      value: 585.76
+      rank: 1
+      percent: 100
+    - product: Phosphate Raw Ore
+      value: 7133474.2
+      rank: 1
+      percent: 100
+    - product: Phosphate
+      value: 254043.24
+      rank: 1
+      percent: 84.72
+  '2010':
+    - product: Phosphate Raw Ore
+      value: 18106759.9
+      rank: 1
+      percent: 99.01
+    - product: Phosphate
+      value: 267094.44
+      rank: 1
+      percent: 81.86
+  '2011':
+    - product: Gold
+      value: 1240
+      rank: 1
+      percent: 100
+    - product: Phosphate
+      value: 1761677.24
+      rank: 1
+      percent: 94.87
+    - product: Phosphate Raw Ore
+      value: 17069598.08
+      rank: 1
+      percent: 94.24
+  '2012':
+    - product: Gold
+      value: 1593.6
+      rank: 1
+      percent: 100
+    - product: Phosphate
+      value: 1840289.52
+      rank: 1
+      percent: 96.63
+    - product: Phosphate Raw Ore
+      value: 18862647.84
+      rank: 1
+      percent: 81.3
+  '2013':
+    - product: Gold
+      value: 726.18
+      rank: 1
+      percent: 100
+    - product: Silver
+      value: 4.7
+      rank: 1
+      percent: 100
+    - product: Phosphate Raw Ore
+      value: 19635486.76
+      rank: 1
+      percent: 97.17
+    - product: Phosphate
+      value: 231937.94
+      rank: 1
+      percent: 82.89
+  '2014':
+    - product: Phosphate Raw Ore
+      value: 22557786.78
+      rank: 1
+      percent: 100
+    - product: Phosphate
+      value: 232040.82
+      rank: 1
+      percent: 78.35
+  '2015':
+    - product: Phosphate Raw Ore
+      value: 20877114.44
+      rank: 1
+      percent: 99.24
+    - product: Phosphate
+      value: 223618
+      rank: 1
+      percent: 78.86

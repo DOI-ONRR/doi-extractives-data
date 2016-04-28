@@ -1,11 +1,11 @@
 revenue:
   '2009':
     - product: Gold Placer
-      value: 101.16
+      value: 202.32
       rank: 1
       percent: 100
   '2010':
     - product: Gold Placer
-      value: 22.6
+      value: 45.2
       rank: 1
       percent: 100

@@ -266,7 +266,7 @@
       count: 63
       percent: 0.01
 '24033':
-  name: "Prince George's County"
+  name: Prince George's County
   employment:
     '2004':
       count: 78
@@ -299,7 +299,7 @@
       count: 88
       percent: 0.03
 '24035':
-  name: "Queen Anne's County"
+  name: Queen Anne's County
   employment:
     '2006':
       count: 17

@@ -101,3 +101,14 @@ all_production:
       value: 35874
       rank: 1
       percent: 21.37
+revenue:
+  '2014':
+    - product: Flash Gas
+      value: 5200.32
+      rank: 2
+      percent: 31.22
+  '2015':
+    - product: Unprocessed (Wet) Gas
+      value: 19787093.5
+      rank: 3
+      percent: 26.49

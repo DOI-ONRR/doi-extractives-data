@@ -160,47 +160,60 @@ layout: default
     <h2>Federal Revenue</h2>
 
     {% assign oilgas = 'Oil & Gas (Non-Royalty)' %}
+    <section class="county-map-table">
+      <figure is="data-map" color-scheme="Blues" steps="9">
+        {% assign county_revenue = site.data.county_revenue[state_id] %}
+        {% capture value_key %}revenue.{{ year }}{% endcapture %}
+        {%
+          include county-map.html
+          state=state_id
+          counties=county_revenue
+          value=value_key
+        %}
+        <figcaption>County extractives revenue (dollars, {{ year }})</figcaption>
+      </figure>
 
-    <table is="bar-chart-table" class="revenue">
-      <thead>
-        <tr>
-          <th>Commodity</th>
-          <th>Securing a lease</th>
-          <th>Before production</th>
-          <th>During production</th>
-          <th>Other revenues</th>
-        </tr>
-      </thead>
-      {% for commodity in revenue_commodities %}
-        {% assign commodity_name = commodity[0] %}
-        {% assign values = commodity[1] %}
-      <tbody id="revenue-{{ commodity_name | slugify }}">
-        {% if commodity_name == oilgas %}
-        <tr>
-          {% assign total = values.All[year] | default: 0 | plus: revenue_commodities.Oil.All[year] | plus: revenue_commodities.Gas.All[year] %}
-          <th scope="row" rowspan="2" data-value="{{ total }}"><strong>Oil &amp; Gas</strong> ${{ total | intcomma }}</th>
-          <td rowspan="2" data-value="{{ values.Bonus[year] | default: 0 }}">${{ values.Bonus[year] | default: 0 | intcomma }}</td>
-          <td rowspan="2" data-value="{{ values.Rents[year] | default: 0 }}">${{ values.Bonus[year] | default: 0 | intcomma }}</td>
-          <td data-value="{{ revenue_commodities.Oil.Royalties[year] | default: 0 }}"><strong>Oil</strong> ${{ revenue_commodities.Oil.Royalties[year] | default: 0 | intcomma }}</td>
-          <td rowspan="2" data-value="{{ values['Other Revenues'][year] | default: 0 }}">${{ values.Bonus[year] | default: 0 | intcomma }}</td>
-        </tr>
-        <tr>
-          <td data-value="{{ revenue_commodities.Gas.Royalties[year] | default: 0 }}"><strong>Gas</strong> ${{ revenue_commodities.Gas.Royalties[year] | default: 0 | intcomma }}</td>
-        </tr>
-        {% elsif commodity_name != 'Oil' and commodity_name != 'Gas' %}
-          {% assign total = values.All[year] | default: 0 %}
-          {% if total != 0 %}
-        <tr>
-          <th scope="row" data-value="{{ total }}"><strong>{{ commodity_name }}</strong> ${{ total | intcomma }}</th>
-          {% for revenue_type in revenue_type_names %}
-          <td data-value="{{ values[revenue_type][year] | default: 0 }}">${{ commodity[1][revenue_type][year] | default: 0 | intcomma }}</td>
-          {% endfor %}
-        </tr>
+      <table is="bar-chart-table" class="revenue">
+        <thead>
+          <tr>
+            <th>Commodity</th>
+            <th>Securing a lease</th>
+            <th>Before production</th>
+            <th>During production</th>
+            <th>Other revenues</th>
+          </tr>
+        </thead>
+        {% for commodity in revenue_commodities %}
+          {% assign commodity_name = commodity[0] %}
+          {% assign values = commodity[1] %}
+        <tbody id="revenue-{{ commodity_name | slugify }}">
+          {% if commodity_name == oilgas %}
+          <tr>
+            {% assign total = values.All[year] | default: 0 | plus: revenue_commodities.Oil.All[year] | plus: revenue_commodities.Gas.All[year] %}
+            <th scope="row" rowspan="2" data-value="{{ total }}"><strong>Oil &amp; Gas</strong> ${{ total | intcomma }}</th>
+            <td rowspan="2" data-value="{{ values.Bonus[year] | default: 0 }}">${{ values.Bonus[year] | default: 0 | intcomma }}</td>
+            <td rowspan="2" data-value="{{ values.Rents[year] | default: 0 }}">${{ values.Bonus[year] | default: 0 | intcomma }}</td>
+            <td data-value="{{ revenue_commodities.Oil.Royalties[year] | default: 0 }}"><strong>Oil</strong> ${{ revenue_commodities.Oil.Royalties[year] | default: 0 | intcomma }}</td>
+            <td rowspan="2" data-value="{{ values['Other Revenues'][year] | default: 0 }}">${{ values.Bonus[year] | default: 0 | intcomma }}</td>
+          </tr>
+          <tr>
+            <td data-value="{{ revenue_commodities.Gas.Royalties[year] | default: 0 }}"><strong>Gas</strong> ${{ revenue_commodities.Gas.Royalties[year] | default: 0 | intcomma }}</td>
+          </tr>
+          {% elsif commodity_name != 'Oil' and commodity_name != 'Gas' %}
+            {% assign total = values.All[year] | default: 0 %}
+            {% if total != 0 %}
+          <tr>
+            <th scope="row" data-value="{{ total }}"><strong>{{ commodity_name }}</strong> ${{ total | intcomma }}</th>
+            {% for revenue_type in revenue_type_names %}
+            <td data-value="{{ values[revenue_type][year] | default: 0 }}">${{ commodity[1][revenue_type][year] | default: 0 | intcomma }}</td>
+            {% endfor %}
+          </tr>
+            {% endif %}
           {% endif %}
-        {% endif %}
-      </tbody>
-      {% endfor %}
-    </table>
+        </tbody>
+        {% endfor %}
+      </table>
+    </section>
 
     <!--
     {% for product in revenue_products %}

@@ -1,52 +1,56 @@
 revenue:
-  '2004':
-    - product: Limestone
-      value: 59664.73
-      rank: 1
-      percent: 100
-  '2005':
-    - product: Limestone
-      value: 21419.75
-      rank: 1
-      percent: 100
   '2006':
     - product: Limestone
-      value: 31648.77
+      value: 63297.54
       rank: 1
       percent: 100
   '2007':
     - product: Limestone
-      value: 75816.59
+      value: 151633.18
       rank: 1
       percent: 100
   '2008':
     - product: Limestone
-      value: 106657.16
+      value: 213314.32
       rank: 1
       percent: 100
   '2009':
     - product: Limestone
-      value: 113515.27
+      value: 227030.54
       rank: 1
-      percent: 99.79
+      percent: 100
   '2010':
     - product: Limestone
-      value: 117397.69
+      value: 234795.38
       rank: 1
-      percent: 100.17
+      percent: 293494.22
+    - product: Limestone
+      value: 234795.38
+      rank: 1
+      percent: 100
   '2011':
     - product: Limestone
-      value: 112434.96
+      value: 224869.92
       rank: 1
       percent: 100
   '2012':
     - product: Limestone
-      value: 128426.76
+      value: 256853.52
       rank: 1
       percent: 100
   '2013':
     - product: Limestone
-      value: 60702.52
+      value: 121405.04
+      rank: 1
+      percent: 100
+  '2014':
+    - product: Limestone
+      value: 44445.78
+      rank: 1
+      percent: 100
+  '2015':
+    - product: Limestone
+      value: 11969.8
       rank: 1
       percent: 100
 all_production:

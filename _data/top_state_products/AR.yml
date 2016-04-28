@@ -1,74 +1,3 @@
-revenue:
-  '2004':
-    - product: Quartz
-      value: 20
-      rank: 1
-      percent: 100
-    - product: Quartz Crystal
-      value: 235.5
-      rank: 1
-      percent: 100
-  '2005':
-    - product: Quartz Crystal
-      value: 345.85
-      rank: 1
-      percent: 100
-  '2006':
-    - product: Quartz
-      value: 40
-      rank: 1
-      percent: 100
-    - product: Quartz Crystal
-      value: 267
-      rank: 1
-      percent: 100
-  '2007':
-    - product: Quartz Crystal
-      value: 323.8
-      rank: 1
-      percent: 100
-  '2008':
-    - product: Quartz Crystal
-      value: 2467.07
-      rank: 1
-      percent: 100
-    - product: Wavellite
-      value: 466.8
-      rank: 1
-      percent: 100
-  '2009':
-    - product: Quartz Crystal
-      value: 191.55
-      rank: 1
-      percent: 100
-    - product: Wavellite
-      value: 777.36
-      rank: 1
-      percent: 100
-  '2010':
-    - product: Quartz Crystal
-      value: 50.25
-      rank: 1
-      percent: 100
-    - product: Wavellite
-      value: 69.1
-      rank: 1
-      percent: 100
-  '2011':
-    - product: Quartz Crystal
-      value: 7.35
-      rank: 1
-      percent: 100
-  '2012':
-    - product: Quartz Crystal
-      value: 11.3
-      rank: 1
-      percent: 100
-  '2013':
-    - product: Quartz Crystal
-      value: 4.45
-      rank: 1
-      percent: 100
 federal_production:
   '2005':
     - product: Quartz Crystal (tickets/pounds)
@@ -83,5 +12,63 @@ federal_production:
   '2007':
     - product: Quartz Crystal (tickets/pounds)
       value: 2400
+      rank: 1
+      percent: 100
+revenue:
+  '2006':
+    - product: Quartz Crystal
+      value: 534
+      rank: 1
+      percent: 100
+  '2007':
+    - product: Quartz Crystal
+      value: 647.6
+      rank: 1
+      percent: 100
+  '2008':
+    - product: Quartz Crystal
+      value: 4934.14
+      rank: 1
+      percent: 100
+    - product: Wavellite
+      value: 933.6
+      rank: 1
+      percent: 100
+  '2009':
+    - product: Quartz Crystal
+      value: 383.1
+      rank: 1
+      percent: 100
+    - product: Wavellite
+      value: 1554.72
+      rank: 1
+      percent: 100
+  '2010':
+    - product: Quartz Crystal
+      value: 100.5
+      rank: 1
+      percent: 100
+    - product: Wavellite
+      value: 138.2
+      rank: 1
+      percent: 100
+  '2011':
+    - product: Quartz Crystal
+      value: 14.7
+      rank: 1
+      percent: 100
+  '2012':
+    - product: Quartz Crystal
+      value: 22.6
+      rank: 1
+      percent: 100
+  '2013':
+    - product: Quartz Crystal
+      value: 8.9
+      rank: 1
+      percent: 100
+  '2015':
+    - product: Quartz Crystal
+      value: 205.4
       rank: 1
       percent: 100

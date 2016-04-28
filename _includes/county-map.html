@@ -27,5 +27,5 @@
     {% endfor %}
   {% endif %}
   <use class="counties mesh" xlink:href="{{ state_svg }}#counties-mesh"></use>
-  <use class="state feature overlay" xlink:href="{{ states_svg }}#{{ state.id }}"></use>
+  <use class="state feature overlay" xlink:href="{{ states_svg }}#{{ include.state }}"></use>
 </svg>

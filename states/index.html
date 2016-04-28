@@ -1,0 +1,21 @@
+---
+layout: default
+permalink: /states/
+---
+
+<main id="states" class="container-outer">
+  <h1>States</h1>
+
+  <figure is="data-map" color-scheme="Reds" steps="9">
+    {%
+      include state-map.html
+      states=site.data.state_revenues
+      value='products.All.2013.revenue'
+      href='%s/'
+    %}
+    <figcaption>State revenue (2013)</figcaption>
+  </figure>
+
+</main>
+
+<script src="{{ site.baseurl }}/js/components/data-map.js"></script>

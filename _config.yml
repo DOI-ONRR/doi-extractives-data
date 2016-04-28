@@ -20,13 +20,13 @@ exclude:
   - test
   - styleguide-template
   - 'Gemfile*'
-  # shell scripts
+  # shell and other scripts
   - '**/*.sh'
+  - '**/bin/*'
   - '**/Makefile'
   # data tools and SQLite databases
   - '**/*.sql'
-  - '**/*.db'
-  - '**/*.db-journal'
+  - '**/*.db*'
   - 'data/db/**/*'
 
 collections:

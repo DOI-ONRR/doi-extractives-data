@@ -1,0 +1,12 @@
+[is="data-map"] {
+  display: block;
+  margin-bottom: 1em;
+
+  svg {
+    border: 1px solid $another-gray;
+
+    [data-value] {
+      cursor: pointer;
+    }
+  }
+}

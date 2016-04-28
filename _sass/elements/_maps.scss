@@ -1,0 +1,64 @@
+// scss-lint:disable QualifyingElement
+svg.map {
+  background: none;
+  display: block;
+  height: auto;
+  padding: 0;
+
+  &.county {
+    padding: 1em;
+    width: 25em;
+  }
+
+  .mesh {
+    fill: none;
+    pointer-events: none;
+    stroke: $neutral-gray;
+    stroke-width: 0.5;
+  }
+
+  .states.features {
+    fill: $light-gray;
+  }
+
+  .feature:not([fill]) {
+    fill-opacity: 0;
+  }
+
+  .feature[fill] {
+    fill-opacity: 1;
+  }
+
+  .counties.features {
+    fill: $white;
+  }
+
+  .states.mesh {
+    stroke: $another-gray;
+  }
+
+  .counties.mesh {
+    stroke-width: 1;
+  }
+
+  .feature.overlay {
+    fill: none;
+    pointer-events: none;
+    stroke: $dark-gray;
+    stroke-width: 1;
+  }
+
+  .debug {
+    fill: none;
+    stroke: none;
+  }
+
+  &.thumbnail {
+    display: inline-block;
+    height: 1em;
+    margin-right: 0.5em;
+    padding: 1px;
+    vertical-align: baseline;
+    width: 1em;
+  }
+}

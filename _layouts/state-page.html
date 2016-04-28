@@ -253,13 +253,13 @@ layout: default
         </thead>
         <tbody>
           {% for row in site.data.state_revenues[state_id].products.All %}
-          {% assign year = row[0] %}
+          {% assign _year = row[0] %}
           <tr>
-            <td>{{ year }}</td>
+            <td>{{ _year }}</td>
             {% for type in revenue_type_names %}
             {% assign type_revenue = revenue_types[type] %}
-            <td class="numeric" data-series="revenue-{{ type | slugify }}" data-value="{{ type_revenue[year] | default: 0 }}">
-              ${{ type_revenue[year] | default: 0 | intcomma }}
+            <td class="numeric" data-series="revenue-{{ type | slugify }}" data-value="{{ type_revenue[_year] | default: 0 }}">
+              ${{ type_revenue[_year] | default: 0 | intcomma }}
             </td>
             {% endfor %}
           </tr>
@@ -347,6 +347,7 @@ layout: default
 
   <section id="employment" class="economic employment">
     <h2>Employment</h2>
+
     <p>{{ jobs_summary | strip_html }} Historically:</p>
 
     <table is="bar-chart-table" data-percent-max="100">
@@ -367,26 +368,42 @@ layout: default
     </table>
 
     <h3>County-Level Employment</h3>
-    <table is="bar-chart-table" data-percent-max="100">
-      <thead>
-        <tr>
-          <th>County</th>
-          <th class="numeric" data-series="jobs">Jobs</th>
-          <th class="numeric" data-series="percent">County %</th>
-        </tr>
-      </thead>
-      <tbody>
-      {% for county in site.data.county_jobs[state_id] %}
-        {% if county[1].employment[year].count > 0 %}
-        <tr>
-          <td>{{ county[1].name }}</td>
-          <td class="numeric" data-series="jobs" data-value="{{ county[1].employment[year].count }}">{{ county[1].employment[year].count | intcomma }}</td>
-          <td class="numeric" data-series="percent" data-value="{{ county[1].employment[year].percent }}">{{ county[1].employment[year].percent | percent }}%</td>
-        </tr>
-        {% endif %}
-      {% endfor %}
-      </tbody>
-    </table>
+
+    <section class="county-map-table">
+      <figure is="data-map" color-scheme="Reds" steps="9">
+        {% assign county_jobs = site.data.county_jobs[state_id] %}
+        {% capture value_key %}employment.{{ year }}.count{% endcapture %}
+        {%
+          include county-map.html
+          state=state_id
+          counties=county_jobs
+          value=value_key
+        %}
+        <figcaption>County extractives employment (jobs, {{ year }})</figcaption>
+      </figure>
+
+      <table is="bar-chart-table" data-percent-max="100">
+        <thead>
+          <tr>
+            <th>County</th>
+            <th class="numeric" data-series="jobs">Jobs</th>
+            <th class="numeric" data-series="percent">County %</th>
+          </tr>
+        </thead>
+        <tbody>
+        {% for county in site.data.county_jobs[state_id] %}
+          {% if county[1].employment[year].count > 0 %}
+          <tr>
+            <td>{{ county[1].name }}</td>
+            <td class="numeric" data-series="jobs" data-value="{{ county[1].employment[year].count }}">{{ county[1].employment[year].count | intcomma }}</td>
+            <td class="numeric" data-series="percent" data-value="{{ county[1].employment[year].percent }}">{{ county[1].employment[year].percent | percent }}%</td>
+          </tr>
+          {% endif %}
+        {% endfor %}
+        </tbody>
+      </table>
+    </section>
+
   </section>
 
 
@@ -455,12 +472,12 @@ layout: default
       </thead>
       <tbody>
       {% for _year in disbursements.All %}
-        {% assign year = _year[0] %}
+        {% assign y = _year[0] %}
         <tr>
-          <td>{{ year }}</td>
-          <td class="numeric" data-series="total" data-value="{{ disbursements.All[year] }}">${{ disbursements.All[year] | round | intcomma }}</td>
-          <td class="numeric" data-series="onshore" data-value="{{ disbursements.Onshore[year] }}">${{ disbursements.Onshore[year] | round | intcomma }}</td>
-          <td class="numeric" data-series="offshore" data-value="{{ disbursements.Offshore[year] }}">${{ disbursements.Offshore[year] | round | intcomma }}</td>
+          <td>{{ y }}</td>
+          <td class="numeric" data-series="total" data-value="{{ disbursements.All[y] }}">${{ disbursements.All[y] | round | intcomma }}</td>
+          <td class="numeric" data-series="onshore" data-value="{{ disbursements.Onshore[y] }}">${{ disbursements.Onshore[y] | round | intcomma }}</td>
+          <td class="numeric" data-series="offshore" data-value="{{ disbursements.Offshore[y] }}">${{ disbursements.Offshore[y] | round | intcomma }}</td>
         </tr>
       {% endfor %}
       </tbody>
@@ -472,3 +489,4 @@ layout: default
 </main>
 
 <script src="{{ site.baseurl }}/js/components/bar-chart-table.js"></script>
+<script src="{{ site.baseurl }}/js/components/data-map.js"></script>

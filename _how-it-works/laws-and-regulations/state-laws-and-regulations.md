@@ -164,7 +164,7 @@ nav_items:
     <td>Coal</td>
     <td>Coal Severance Tax Trust Fund</td>
     <td>50% of coal severence tax collections</td>
-    <td>General Fund, education, infrastructure, relamation, and economic development</td>
+    <td>General Fund, education, infrastructure, reclamation, and economic development</td>
   </tr>
   <tr>
     <td>New Mexico</td>

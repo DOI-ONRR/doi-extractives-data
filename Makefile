@@ -22,7 +22,7 @@ clean:
 
 site-data: \
 	data/jobs \
-	data/revenue_types.yml \
+	data/revenue \
 	data/state_all_production.yml \
 	data/state_disbursements.yml \
 	data/state_exports.yml \
@@ -111,6 +111,10 @@ data/county_jobs:
 		  -c _meta/county_jobs.yml \
 		  -o '_$@/{state}.yml'
 
+data/revenue: \
+	data/revenue_types.yml \
+	data/county_revenue
+
 data/revenue_types.yml:
 	$(query) --format ndjson " \
 		SELECT \
@@ -125,6 +129,23 @@ data/revenue_types.yml:
 		| $(nestly) --if ndjson \
 			-c _meta/revenue_types.yml \
 			-o _$@
+
+data/county_revenue:
+	$(query) --format ndjson " \
+		SELECT \
+		  state, \
+		  fips, \
+		  county, \
+		  year, \
+		  ROUND(revenue) AS revenue \
+		FROM county_revenue \
+		WHERE \
+		  state IS NOT NULL AND \
+		  county IS NOT NULL \
+		ORDER BY state, fips, year" \
+	  | $(nestly) --if ndjson \
+		  -c _meta/county_revenue.yml \
+		  -o '_$@/{state}.yml'
 
 data/state_disbursements.yml:
 	$(query) --format ndjson " \
@@ -335,7 +356,7 @@ tables/state_disbursements: data/_input/onrr/disbursements/state.tsv
 	$(tito) -r tsv --map ./data/transform/state_disbursements.js $^ \
 		| $(tables) -t ndjson -n state_disbursements
 
-tables/disbursements_historic_preservation: data/_input/onrr/disbursements/historic-preservation.tsv 
+tables/disbursements_historic_preservation: data/_input/onrr/disbursements/historic-preservation.tsv
 	@$(call drop-table,disbursements_historic_preservation)
 	$(tito) -r tsv --multiple \
 		--map ./data/transform/disbursements_historic_preservation.js \

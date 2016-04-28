@@ -1,26 +1,20 @@
 revenue:
-  '2004':
-    - product: Coal-Fines Circuit
-      value: -1385.92
-      rank: 1
-      percent: 100
   '2006':
     - product: Asphalt
-      value: 959
+      value: 1918
       rank: 1
       percent: 100
-  '2008':
+  '2014':
     - product: Asphalt
-      value: 959
+      value: 2125.04
       rank: 1
       percent: 100
-  '2009':
+  '2015':
     - product: Asphalt
-      value: 959
+      value: 1127.9
       rank: 1
       percent: 100
-  '2010':
-    - product: Asphalt
-      value: -2397.5
+    - product: Oil- Sour
+      value: 12005.5
       rank: 1
       percent: 100

@@ -149,3 +149,9 @@ all_production:
       value: 242651
       rank: 2
       percent: 22.81
+revenue:
+  '2014':
+    - product: Other Liquid Hydrocarbons
+      value: 9448.56
+      rank: 2
+      percent: 41.15

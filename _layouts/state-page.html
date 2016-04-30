@@ -163,7 +163,7 @@ layout: default
     <section class="county-map-table">
       <figure is="data-map" color-scheme="Blues" steps="9">
         {% assign county_revenue = site.data.county_revenue[state_id] %}
-        {% capture value_key %}revenue.{{ year }}{% endcapture %}
+        {% capture value_key %}revenue.{{year}}{% endcapture %}
         {%
           include county-map.html
           state=state_id
@@ -286,39 +286,58 @@ layout: default
 
   <section id="federal-production" class="federal production">
     <h2>Production on Federal Lands</h2>
+    <section class="county-map-table">
+      <h3>Products</h3>
+      {% for product in federal_products %}
+      <section id="federal-production-{{ product[0] | slugify }}" class="product">
 
-    <h3>Products</h3>
-    {% for product in federal_products %}
-    <section id="federal-production-{{ product[0] | slugify }}" class="product">
-      {% assign product_name = product[0] %}
-      {% assign volume = product[1][year].volume %}
-      <h3>{{ product[0] }}</h3>
-      <p>{{ state_name }} produced
-        {% if volume %}{{ volume | intcomma }} (units) of
-        {% else %}no{% endif %}
-        {{ product[0] | downcase }} in {{ year }}. Historically:</p>
 
-      <table is="bar-chart-table" data-percent-max="100">
-        <thead>
-          <th>Year</th>
-          <th class="numeric" data-series="volume">Production (units)</th>
-          <th class="numeric" data-series="percent">US %</th>
-          <th class="numeric" data-series="rank">Rank</th>
-        </thead>
-        <tbody>
-        {% for year in product[1] %}
-          <tr>
-            <td>{{ year[0] }}</td>
-            <td data-series="volume" data-value="{{ year[1].volume }}" class="numeric">{{ year[1].volume | intcomma }}</td>
-            <td data-series="percent" data-value="{{ year[1].percent }}" class="numeric">{{ year[1].percent | percent }}%</td>
-            <td data-series="rank" class="numeric">{{ year[1].rank | ordinal:'super' }}</td>
-          </tr>
-        {% endfor %}
-        </tbody>
-      </table>
 
+        {% assign product_name = product[0] %}
+        {% assign volume = product[1][year].volume %}
+
+
+        <figure is="data-map" color-scheme="Blues" steps="9">
+          {% assign federal_county_production = site.data.federal_county_production[state_id] %}
+          {% capture value_key %}production.{{product_name}}.{{year}}{% endcapture %}
+          {%
+            include county-map.html
+            state=state_id
+            counties=federal_county_production
+            value=value_key
+          %}
+          <figcaption>County production for {{ product_name }}, {{ year }})</figcaption>
+        </figure>
+
+
+        <h3>{{ product[0] }}</h3>
+        <p>{{ state_name }} produced
+          {% if volume %}{{ volume | intcomma }} (units) of
+          {% else %}no{% endif %}
+          {{ product[0] | downcase }} in {{ year }}. Historically:</p>
+
+        <table is="bar-chart-table" data-percent-max="100">
+          <thead>
+            <th>Year</th>
+            <th class="numeric" data-series="volume">Production (units)</th>
+            <th class="numeric" data-series="percent">US %</th>
+            <th class="numeric" data-series="rank">Rank</th>
+          </thead>
+          <tbody>
+          {% for year in product[1] %}
+            <tr>
+              <td>{{ year[0] }}</td>
+              <td data-series="volume" data-value="{{ year[1].volume }}" class="numeric">{{ year[1].volume | intcomma }}</td>
+              <td data-series="percent" data-value="{{ year[1].percent }}" class="numeric">{{ year[1].percent | percent }}%</td>
+              <td data-series="rank" class="numeric">{{ year[1].rank | ordinal:'super' }}</td>
+            </tr>
+          {% endfor %}
+          </tbody>
+        </table>
+
+      </section>
+      {% endfor %}
     </section>
-    {% endfor %}
   </section>
 
   <section id="all-production" class="all-lands production">

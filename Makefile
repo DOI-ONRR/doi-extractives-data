@@ -24,6 +24,7 @@ site-data: \
 	data/jobs \
 	data/revenue \
 	data/state_all_production.yml \
+	data/federal_county_production \
 	data/state_disbursements.yml \
 	data/state_exports.yml \
 	data/state_federal_production.yml \
@@ -174,6 +175,28 @@ data/state_federal_production.yml:
 	  | $(nestly) --if ndjson \
 		  -c _meta/state_federal_production.yml \
 		  -o _$@
+
+data/federal_county_production:
+	$(query) --format ndjson " \
+		SELECT \
+		  state, \
+		  fips, \
+		  county, \
+		  year, \
+		  product, \
+		  ROUND(volume) AS value, \
+		  volume_type AS units \
+		FROM federal_county_production \
+		WHERE \
+		  state IS NOT NULL AND \
+		  county IS NOT NULL AND \
+		  product IS NOT NULL AND \
+		  value IS NOT NULL \
+		ORDER BY state, fips, year" \
+	  | $(nestly) --if ndjson \
+		  -c _meta/county_production.yml \
+		  -o '_$@/{state}.yml'
+
 
 data/state_revenues.yml:
 	$(query) --format ndjson " \

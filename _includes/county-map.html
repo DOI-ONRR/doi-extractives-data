@@ -28,6 +28,7 @@
       {% if include.href %}</a>{% endif %}
     {% endfor %}
   {% endif %}
+  {% include maps/federal_land_ownership.svg %}
   <use class="counties mesh" xlink:href="{{ state_svg }}#counties-mesh"></use>
   <use class="state feature overlay" xlink:href="{{ states_svg }}#{{ include.state }}"></use>
 </svg>

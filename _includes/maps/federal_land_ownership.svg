@@ -1,0 +1,4 @@
+<image class="federal ownership"
+  xlink:href="{{ site.baseurl }}/maps/fedland-crushed.png"
+  width="3840" height="2680" transform="scale(0.25)"/>
+

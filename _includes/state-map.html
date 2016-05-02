@@ -14,5 +14,6 @@
       data-value="{{ value | default: 0 }}"{% endif %}><title>{{ _state.name }}: {{ value }}</title></use>
   {% if include.href %}</a>{% endif %}
   {% endfor %}
+  {% include maps/federal_land_ownership.svg %}
   <use class="states mesh" xlink:href="{{ states_svg }}#states-mesh"></use>
 </svg>

@@ -15,6 +15,13 @@ data/fedland.json: _data/shp/fedlanp010g.shp
 		-k 'd.properties.FEATURE1' -- _$@.tmp > _$@
 	rm _$@.tmp
 
+
+fedland.png: _data/fedland.json
+	./bin/land-ownership.js --scale 4 $^ > $@
+
+fedland-crushed.png: fedland.png
+	pngcrush $^ $@
+
 _data/shp/fedlanp010g.shp: data/shp/fedlanp010g.shp
 
 data/shp/fedlanp010g.shp:

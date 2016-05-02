@@ -1,40 +1,38 @@
 (function(exports) {
 
+  var svg = d3.select('body').append('svg').node();
+  var loadEvent = 'onload' in svg ? 'load' : 'SVGLoad';
+  svg.parentNode.removeChild(svg);
+
   exports.EITIMapThumbnail = document.registerElement('map-thumbnail', {
     prototype: Object.create(
       HTMLElement.prototype,
       {
         attachedCallback: {value: function() {
-          var zoom = this.getAttribute('zoom-to') || 'svg *';
-          if (zoom) {
-            this.target = this.querySelector(zoom);
-            if (this.target) {
-              this.wait();
-            }
-          }
-        }},
-
-        wait: {value: function() {
-          var bbox;
-          var interval = setInterval((function() {
-            bbox = this.target.getBBox();
-            if (bbox.width && bbox.height) {
-              clearInterval(interval);
-              requestAnimationFrame(this.zoom.bind(this));
-            }
-          }).bind(this), 250);
+          this.svg = this.querySelector('svg');
+          var self = this;
+          this.svg.addEventListener(loadEvent, function() {
+            requestAnimationFrame(function() {
+              self.zoom();
+            });
+          });
         }},
 
         zoom: {value: function() {
-          var bbox = this.target.getBBox();
-          var svg = this.querySelector('svg');
+          var target = this.getAttribute('zoom-to') || '*';
+          target = this.svg.querySelector(target);
+          if (!target) {
+            console.error('no such target found:', target);
+            return;
+          }
+          var bbox = target.getBBox();
           var viewbox = [
             bbox.x,
             bbox.y,
             bbox.width,
             bbox.height
           ].join(' ');
-          svg.setAttribute('viewBox', viewbox);
+          this.svg.setAttribute('viewBox', viewbox);
         }}
       }
     )

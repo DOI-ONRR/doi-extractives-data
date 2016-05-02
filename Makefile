@@ -22,8 +22,9 @@ clean:
 
 site-data: \
 	data/jobs \
-	data/revenue_types.yml \
+	data/revenue \
 	data/state_all_production.yml \
+	data/federal_county_production \
 	data/state_disbursements.yml \
 	data/state_exports.yml \
 	data/state_federal_production.yml \
@@ -111,6 +112,10 @@ data/county_jobs:
 		  -c _meta/county_jobs.yml \
 		  -o '_$@/{state}.yml'
 
+data/revenue: \
+	data/revenue_types.yml \
+	data/county_revenue
+
 data/revenue_types.yml:
 	$(query) --format ndjson " \
 		SELECT \
@@ -125,6 +130,23 @@ data/revenue_types.yml:
 		| $(nestly) --if ndjson \
 			-c _meta/revenue_types.yml \
 			-o _$@
+
+data/county_revenue:
+	$(query) --format ndjson " \
+		SELECT \
+		  state, \
+		  fips, \
+		  county, \
+		  year, \
+		  ROUND(revenue) AS revenue \
+		FROM county_revenue \
+		WHERE \
+		  state IS NOT NULL AND \
+		  county IS NOT NULL \
+		ORDER BY state, fips, year" \
+	  | $(nestly) --if ndjson \
+		  -c _meta/county_revenue.yml \
+		  -o '_$@/{state}.yml'
 
 data/state_disbursements.yml:
 	$(query) --format ndjson " \
@@ -153,6 +175,28 @@ data/state_federal_production.yml:
 	  | $(nestly) --if ndjson \
 		  -c _meta/state_federal_production.yml \
 		  -o _$@
+
+data/federal_county_production:
+	$(query) --format ndjson " \
+		SELECT \
+		  state, \
+		  fips, \
+		  county, \
+		  year, \
+		  product, \
+		  ROUND(volume) AS value, \
+		  volume_type AS units \
+		FROM federal_county_production \
+		WHERE \
+		  state IS NOT NULL AND \
+		  county IS NOT NULL AND \
+		  product IS NOT NULL AND \
+		  value IS NOT NULL \
+		ORDER BY state, fips, year" \
+	  | $(nestly) --if ndjson \
+		  -c _meta/county_production.yml \
+		  -o '_$@/{state}.yml'
+
 
 data/state_revenues.yml:
 	$(query) --format ndjson " \
@@ -335,7 +379,7 @@ tables/state_disbursements: data/_input/onrr/disbursements/state.tsv
 	$(tito) -r tsv --map ./data/transform/state_disbursements.js $^ \
 		| $(tables) -t ndjson -n state_disbursements
 
-tables/disbursements_historic_preservation: data/_input/onrr/disbursements/historic-preservation.tsv 
+tables/disbursements_historic_preservation: data/_input/onrr/disbursements/historic-preservation.tsv
 	@$(call drop-table,disbursements_historic_preservation)
 	$(tito) -r tsv --multiple \
 		--map ./data/transform/disbursements_historic_preservation.js \

@@ -52,6 +52,6 @@ all_production:
 revenue:
   '2008':
     - product: Coal-Subbituminous-Processed
-      value: 204873.3
+      value: 409746.6
       rank: 1
       percent: 100

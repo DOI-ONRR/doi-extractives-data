@@ -1,434 +1,3 @@
-revenue:
-  '2004':
-    - product: Anhydrous Sodium Sulfate
-      value: 191938.2
-      rank: 1
-      percent: 100
-    - product: Borax-Anhydrous
-      value: 30980.53
-      rank: 1
-      percent: 100
-    - product: Borax-Decahydrate
-      value: 109756.82
-      rank: 1
-      percent: 100
-    - product: Borax-Pentahydrate
-      value: 100538.21
-      rank: 1
-      percent: 100
-    - product: Boric Acid
-      value: 300944.95
-      rank: 1
-      percent: 100
-    - product: Boric Oxide
-      value: -328.08
-      rank: 1
-      percent: 100
-    - product: Fuel Oil
-      value: 221.85
-      rank: 1
-      percent: 100
-    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
-      value: 39865.28
-      rank: 1
-      percent: 100
-    - product: 'Geothermal - Electrical Generation, Other'
-      value: 992.16
-      rank: 1
-      percent: 100
-    - product: Salt-Waste
-      value: -52.69
-      rank: 1
-      percent: 100
-    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
-      value: 6056241.47
-      rank: 1
-      percent: 96.61
-    - product: Geothermal
-      value: 7720831.97
-      rank: 1
-      percent: 92.7
-    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
-      value: 3764864.62
-      rank: 1
-      percent: 88.82
-    - product: Soda Ash-Granular
-      value: 260287.46
-      rank: 1
-      percent: 57.84
-    - product: Soda Ash
-      value: 2421272.34
-      rank: 2
-      percent: 26.69
-  '2005':
-    - product: Anhydrous Sodium Sulfate
-      value: 301048.67
-      rank: 1
-      percent: 100
-    - product: Borax-Anhydrous
-      value: 1541.81
-      rank: 1
-      percent: 100
-    - product: Borax-Decahydrate
-      value: 103261.53
-      rank: 1
-      percent: 100
-    - product: Borax-Pentahydrate
-      value: 150787.69
-      rank: 1
-      percent: 100
-    - product: Boric Acid
-      value: 336003.36
-      rank: 1
-      percent: 100
-    - product: Fuel Oil
-      value: 69.11
-      rank: 1
-      percent: 100
-    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
-      value: 64200.46
-      rank: 1
-      percent: 100
-    - product: 'Geothermal - Electrical Generation, Other'
-      value: 835.92
-      rank: 1
-      percent: 100
-    - product: Salt-Waste
-      value: 28436.93
-      rank: 1
-      percent: 100
-    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
-      value: 7158633.84
-      rank: 1
-      percent: 96.56
-    - product: Soda Ash-Granular
-      value: -726947.18
-      rank: 2
-      percent: 101.1
-    - product: Salt
-      value: 61912.48
-      rank: 2
-      percent: 27.35
-  '2006':
-    - product: Anhydrous Sodium Sulfate
-      value: 206974.13
-      rank: 1
-      percent: 100
-    - product: Borax-Anhydrous
-      value: -1956.91
-      rank: 1
-      percent: 100
-    - product: Borax-Decahydrate
-      value: 32320.2
-      rank: 1
-      percent: 100
-    - product: Borax-Pentahydrate
-      value: 23191.6
-      rank: 1
-      percent: 100
-    - product: Boric Acid
-      value: 157340.05
-      rank: 1
-      percent: 100
-    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
-      value: 60541.56
-      rank: 1
-      percent: 100
-    - product: 'Geothermal - Electrical Generation, Other'
-      value: 819.62
-      rank: 1
-      percent: 100
-    - product: Soda Ash-Granular
-      value: -165563.39
-      rank: 1
-      percent: 100
-    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
-      value: 8529685.03
-      rank: 1
-      percent: 97.67
-    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
-      value: 2796499.76
-      rank: 1
-      percent: 68.42
-    - product: Gas Lost - Flared or Vented
-      value: 28930.36
-      rank: 1
-      percent: 43.41
-    - product: Salt
-      value: 70166.69
-      rank: 2
-      percent: 22.53
-  '2007':
-    - product: Anhydrous Sodium Sulfate
-      value: 436978.36
-      rank: 1
-      percent: 100
-    - product: Borax-Decahydrate
-      value: 64234.9
-      rank: 1
-      percent: 100
-    - product: Borax-Pentahydrate
-      value: 85558.19
-      rank: 1
-      percent: 100
-    - product: Boric Acid
-      value: 270336.55
-      rank: 1
-      percent: 100
-    - product: 'Geothermal - Electrical Generation, Other'
-      value: 898.43
-      rank: 1
-      percent: 100
-    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
-      value: 61940.84
-      rank: 1
-      percent: 97.19
-    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
-      value: 7799277.99
-      rank: 1
-      percent: 96.83
-    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
-      value: 1139340.13
-      rank: 2
-      percent: 32.66
-    - product: Geothermal
-      value: 8191628.36
-      rank: 2
-      percent: 30.87
-  '2008':
-    - product: Anhydrous Sodium Sulfate
-      value: 226717.42
-      rank: 1
-      percent: 100
-    - product: Borax-Decahydrate
-      value: 39894.95
-      rank: 1
-      percent: 100
-    - product: Borax-Pentahydrate
-      value: 53841.33
-      rank: 1
-      percent: 100
-    - product: Boric Acid
-      value: 173771.61
-      rank: 1
-      percent: 100
-    - product: Fuel Oil
-      value: 121.46
-      rank: 1
-      percent: 100
-    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
-      value: 67163.45
-      rank: 1
-      percent: 100
-    - product: 'Geothermal - Electrical Generation, Other'
-      value: 876.91
-      rank: 1
-      percent: 100
-    - product: Hot Springs
-      value: 33
-      rank: 1
-      percent: 100
-    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
-      value: 10448240
-      rank: 1
-      percent: 97.46
-    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
-      value: 1741423.68
-      rank: 2
-      percent: 43.25
-    - product: Salt
-      value: 33895.97
-      rank: 2
-      percent: 20.91
-  '2009':
-    - product: Anhydrous Sodium Sulfate
-      value: 161151.56
-      rank: 1
-      percent: 100
-    - product: Borax-Decahydrate
-      value: 31562.63
-      rank: 1
-      percent: 100
-    - product: Borax-Pentahydrate
-      value: 60315.42
-      rank: 1
-      percent: 100
-    - product: Boric Acid
-      value: 166837
-      rank: 1
-      percent: 100
-    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
-      value: 49341.89
-      rank: 1
-      percent: 100
-    - product: 'Geothermal - Electrical Generation, Other'
-      value: 934.03
-      rank: 1
-      percent: 100
-    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
-      value: 7045581.88
-      rank: 1
-      percent: 96.07
-    - product: Gas Lost - Flared or Vented
-      value: 41010.07
-      rank: 1
-      percent: 54.26
-    - product: Sodium
-      value: 48205.68
-      rank: 2
-      percent: 74.7
-    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
-      value: 669345.12
-      rank: 2
-      percent: 22.52
-  '2010':
-    - product: Anhydrous Sodium Sulfate
-      value: 179316.58
-      rank: 1
-      percent: 100
-    - product: Borax-Decahydrate
-      value: 166462.79
-      rank: 1
-      percent: 100
-    - product: Borax-Pentahydrate
-      value: 303415.38
-      rank: 1
-      percent: 100
-    - product: Boric Acid
-      value: 255007.83
-      rank: 1
-      percent: 100
-    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
-      value: 51388.25
-      rank: 1
-      percent: 100
-    - product: 'Geothermal - Electrical Generation, Other'
-      value: 893.38
-      rank: 1
-      percent: 100
-    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
-      value: 7716558.57
-      rank: 1
-      percent: 96.47
-    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
-      value: 1101563.25
-      rank: 2
-      percent: 28.74
-  '2011':
-    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
-      value: 48086.24
-      rank: 1
-      percent: 103.87
-    - product: Anhydrous Sodium Sulfate
-      value: 220610.49
-      rank: 1
-      percent: 100
-    - product: Borax-Anhydrous
-      value: 23155.59
-      rank: 1
-      percent: 100
-    - product: Borax-Decahydrate
-      value: 436534.22
-      rank: 1
-      percent: 100
-    - product: Borax-Pentahydrate
-      value: 621695.4
-      rank: 1
-      percent: 100
-    - product: Boric Acid
-      value: 499953.51
-      rank: 1
-      percent: 100
-    - product: 'Geothermal - Electrical Generation, Other'
-      value: 128.91
-      rank: 1
-      percent: 100
-    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
-      value: 7310851.76
-      rank: 1
-      percent: 96.26
-    - product: Salt
-      value: 64432.6
-      rank: 2
-      percent: 21.01
-  '2012':
-    - product: Anhydrous Sodium Sulfate
-      value: 450260.24
-      rank: 1
-      percent: 100
-    - product: Borax-Decahydrate
-      value: 965736.02
-      rank: 1
-      percent: 100
-    - product: Borax-Pentahydrate
-      value: 1210501.48
-      rank: 1
-      percent: 100
-    - product: Boric Acid
-      value: 971223.98
-      rank: 1
-      percent: 100
-    - product: Fuel Oil
-      value: 67.03
-      rank: 1
-      percent: 100
-    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
-      value: 76071.14
-      rank: 1
-      percent: 100
-    - product: Geothermal - sulfur
-      value: 514.96
-      rank: 1
-      percent: 100
-    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
-      value: 7514494.35
-      rank: 1
-      percent: 96.24
-    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
-      value: 1440694.15
-      rank: 2
-      percent: 36.78
-    - product: Salt
-      value: 160641.39
-      rank: 2
-      percent: 34.26
-  '2013':
-    - product: Anhydrous Sodium Sulfate
-      value: 446414.04
-      rank: 1
-      percent: 100
-    - product: Borax-Decahydrate
-      value: 840118.62
-      rank: 1
-      percent: 100
-    - product: Borax-Pentahydrate
-      value: 1303076.65
-      rank: 1
-      percent: 100
-    - product: Boric Acid
-      value: 965147.97
-      rank: 1
-      percent: 100
-    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
-      value: 67132.07
-      rank: 1
-      percent: 100
-    - product: Geothermal - sulfur
-      value: 123.84
-      rank: 1
-      percent: 100
-    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
-      value: 8243797.85
-      rank: 1
-      percent: 96.45
-    - product: Salt
-      value: 186524.66
-      rank: 2
-      percent: 27.47
-    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
-      value: 995406.62
-      rank: 2
-      percent: 26.71
 all_production:
   '2004':
     - product: Solar
@@ -687,3 +256,446 @@ federal_production:
       value: 896841860.67
       rank: 2
       percent: 34.78
+revenue:
+  '2006':
+    - product: Borax-Anhydrous
+      value: -3913.82
+      rank: 1
+      percent: 100
+    - product: Borax-Decahydrate
+      value: 64640.4
+      rank: 1
+      percent: 100
+    - product: Borax-Pentahydrate
+      value: 46383.2
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
+      value: 121083.12
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Other'
+      value: 1639.24
+      rank: 1
+      percent: 100
+    - product: Soda Ash-Granular
+      value: -331126.78
+      rank: 1
+      percent: 100
+    - product: Anhydrous Sodium Sulfate
+      value: 413948.26
+      rank: 1
+      percent: 99.66
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      value: 17059370.06
+      rank: 1
+      percent: 97.67
+    - product: Boric Acid
+      value: 314680.1
+      rank: 1
+      percent: 89.08
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      value: 5592999.52
+      rank: 1
+      percent: 68.42
+    - product: Gas Lost - Flared or Vented
+      value: 57860.72
+      rank: 1
+      percent: 58.6
+    - product: Salt
+      value: 140333.38
+      rank: 2
+      percent: 4961.27
+    - product: Salt
+      value: 140333.38
+      rank: 2
+      percent: 22.74
+    - product: Geothermal
+      value: 285168.84
+      rank: 2
+      percent: 22.37
+  '2007':
+    - product: Anhydrous Sodium Sulfate
+      value: 873956.72
+      rank: 1
+      percent: 100
+    - product: Borax-Decahydrate
+      value: 128469.8
+      rank: 1
+      percent: 100
+    - product: Borax-Pentahydrate
+      value: 171116.38
+      rank: 1
+      percent: 100
+    - product: Boric Acid
+      value: 540673.1
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Other'
+      value: 1796.86
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
+      value: 123881.68
+      rank: 1
+      percent: 97.19
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      value: 15598555.98
+      rank: 1
+      percent: 96.83
+    - product: Salt
+      value: 37153.62
+      rank: 2
+      percent: 3956.05
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      value: 2278680.26
+      rank: 2
+      percent: 32.66
+    - product: Geothermal
+      value: 16458111.12
+      rank: 2
+      percent: 30.92
+  '2008':
+    - product: Anhydrous Sodium Sulfate
+      value: 453434.84
+      rank: 1
+      percent: 100
+    - product: Borax-Decahydrate
+      value: 79789.9
+      rank: 1
+      percent: 100
+    - product: Borax-Pentahydrate
+      value: 107682.66
+      rank: 1
+      percent: 100
+    - product: Boric Acid
+      value: 347543.22
+      rank: 1
+      percent: 100
+    - product: Fuel Oil
+      value: 242.92
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
+      value: 134326.9
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Other'
+      value: 1753.82
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      value: 20896480
+      rank: 1
+      percent: 97.46
+    - product: Salt
+      value: 67791.94
+      rank: 2
+      percent: 8440.97
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      value: 3482847.36
+      rank: 2
+      percent: 43.25
+    - product: Gas Lost - Flared or Vented
+      value: 42042.74
+      rank: 2
+      percent: 23.21
+    - product: Salt
+      value: 67791.94
+      rank: 2
+      percent: 21.01
+  '2009':
+    - product: Anhydrous Sodium Sulfate
+      value: 322303.12
+      rank: 1
+      percent: 100
+    - product: Borax-Decahydrate
+      value: 63125.26
+      rank: 1
+      percent: 100
+    - product: Borax-Pentahydrate
+      value: 120630.84
+      rank: 1
+      percent: 100
+    - product: Boric Acid
+      value: 333674
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
+      value: 98683.78
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Other'
+      value: 1868.06
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      value: 14091163.76
+      rank: 1
+      percent: 96.07
+    - product: Gas Lost - Flared or Vented
+      value: 82020.14
+      rank: 1
+      percent: 63.83
+    - product: Salt
+      value: 74577.94
+      rank: 2
+      percent: 6424.7
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      value: 1338690.24
+      rank: 2
+      percent: 22.52
+    - product: Sodium
+      value: 36789.64
+      rank: 2
+      percent: 22.16
+  '2010':
+    - product: Anhydrous Sodium Sulfate
+      value: 358633.16
+      rank: 1
+      percent: 100
+    - product: Borax-Decahydrate
+      value: 332925.58
+      rank: 1
+      percent: 100
+    - product: Borax-Pentahydrate
+      value: 606830.76
+      rank: 1
+      percent: 100
+    - product: Boric Acid
+      value: 510015.66
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
+      value: 102776.5
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Other'
+      value: 1786.76
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      value: 15433117.14
+      rank: 1
+      percent: 96.47
+    - product: Salt
+      value: 70451.58
+      rank: 2
+      percent: 6775.23
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      value: 2203126.5
+      rank: 2
+      percent: 28.74
+  '2011':
+    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
+      value: 96172.48
+      rank: 1
+      percent: 103.87
+    - product: Anhydrous Sodium Sulfate
+      value: 441220.98
+      rank: 1
+      percent: 100
+    - product: Borax-Anhydrous
+      value: 46311.18
+      rank: 1
+      percent: 100
+    - product: Borax-Decahydrate
+      value: 873068.44
+      rank: 1
+      percent: 100
+    - product: Borax-Pentahydrate
+      value: 1243390.8
+      rank: 1
+      percent: 100
+    - product: Boric Acid
+      value: 999907.02
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Other'
+      value: 257.82
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      value: 14621703.52
+      rank: 1
+      percent: 96.26
+    - product: Salt
+      value: 128865.2
+      rank: 2
+      percent: 12685.83
+    - product: Salt
+      value: 128865.2
+      rank: 2
+      percent: 21.08
+  '2012':
+    - product: Anhydrous Sodium Sulfate
+      value: 900520.48
+      rank: 1
+      percent: 100
+    - product: Borax-Decahydrate
+      value: 1931472.04
+      rank: 1
+      percent: 100
+    - product: Borax-Pentahydrate
+      value: 2421002.96
+      rank: 1
+      percent: 100
+    - product: Boric Acid
+      value: 1942447.96
+      rank: 1
+      percent: 100
+    - product: Fuel Oil
+      value: 134.06
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
+      value: 152142.28
+      rank: 1
+      percent: 100
+    - product: Geothermal - sulfur
+      value: 1029.92
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      value: 15028988.7
+      rank: 1
+      percent: 96.24
+    - product: Salt
+      value: 321282.78
+      rank: 2
+      percent: 16434.74
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      value: 2881388.3
+      rank: 2
+      percent: 36.78
+    - product: Salt
+      value: 321282.78
+      rank: 2
+      percent: 34.4
+  '2013':
+    - product: Anhydrous Sodium Sulfate
+      value: 892828.08
+      rank: 1
+      percent: 100
+    - product: Borax-Decahydrate
+      value: 1680237.24
+      rank: 1
+      percent: 100
+    - product: Borax-Pentahydrate
+      value: 2606153.3
+      rank: 1
+      percent: 100
+    - product: Boric Acid
+      value: 1930295.94
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
+      value: 134264.14
+      rank: 1
+      percent: 100
+    - product: Geothermal - sulfur
+      value: 247.68
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      value: 16487595.7
+      rank: 1
+      percent: 96.45
+    - product: Salt
+      value: 373049.32
+      rank: 2
+      percent: 14030.21
+    - product: Salt
+      value: 373049.32
+      rank: 2
+      percent: 27.58
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      value: 1990813.24
+      rank: 2
+      percent: 26.71
+  '2014':
+    - product: Anhydrous Sodium Sulfate
+      value: 703026.62
+      rank: 1
+      percent: 100
+    - product: Borax-Decahydrate
+      value: 1459552.52
+      rank: 1
+      percent: 100
+    - product: Borax-Pentahydrate
+      value: 2258933.44
+      rank: 1
+      percent: 100
+    - product: Boric Acid
+      value: 1458616.4
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
+      value: 112070.16
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Other'
+      value: 2292.76
+      rank: 1
+      percent: 100
+    - product: Geothermal - sulfur
+      value: 231.96
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      value: 19044140.22
+      rank: 1
+      percent: 96.84
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      value: 2856098.32
+      rank: 2
+      percent: 30.15
+    - product: Salt
+      value: 361697.74
+      rank: 2
+      percent: 23.73
+  '2015':
+    - product: Anhydrous Sodium Sulfate
+      value: 551468.56
+      rank: 1
+      percent: 100
+    - product: Borax-Decahydrate
+      value: 1395910.26
+      rank: 1
+      percent: 100
+    - product: Borax-Pentahydrate
+      value: 2105822.44
+      rank: 1
+      percent: 100
+    - product: Boric Acid
+      value: 1382924.08
+      rank: 1
+      percent: 100
+    - product: Flash Gas
+      value: 70741.08
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Direct Utilization, Millions of BTUs'
+      value: 94510.1
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Other'
+      value: 2271.22
+      rank: 1
+      percent: 100
+    - product: Geothermal - sulfur
+      value: 223.38
+      rank: 1
+      percent: 100
+    - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      value: 14975757.98
+      rank: 1
+      percent: 96.03
+    - product: Salt
+      value: 516990.58
+      rank: 2
+      percent: 31.81
+    - product: Geothermal
+      value: 834303.18
+      rank: 2
+      percent: 20.61

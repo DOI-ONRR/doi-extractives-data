@@ -1,11 +1,6 @@
 revenue:
-  '2005':
-    - product: Phosphate Raw Ore
-      value: 837228.4
-      rank: 2
-      percent: 21.89
   '2008':
     - product: Phosphate Concentrate
-      value: 1570.27
+      value: 3140.54
       rank: 1
       percent: 100

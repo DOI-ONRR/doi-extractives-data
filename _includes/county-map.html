@@ -15,7 +15,9 @@
     {% if include.href %}<a xlink:href="{{ include.href | replace: '%s', fips }}">{% endif %}
       {% assign value = county[1] %}
       {% if keys %}
-        {% for _key in keys %}{% assign value = value[_key] %}{% endfor %}
+        {% for _key in keys %}
+          {% assign value = value[_key] %}
+        {% endfor %}
       {% endif %}
       {% if value != nil %}
       <use class="county feature" xlink:href="{{ state_svg }}#county-{{ fips }}"

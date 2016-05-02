@@ -30,6 +30,14 @@
             ? JSON.parse(this.getAttribute('domain'))
             : d3.extent(marks.data());
 
+          if (domain[0] > 0) {
+            domain[0] = 0;
+          } else if (domain[0] < 0) {
+            domain[1] = Math.max(0, domain[1]);
+          }
+
+          // FIXME: do something with divergent scales??
+
           var scale = d3.scale[type]()
             .domain(domain)
             .range(colors);

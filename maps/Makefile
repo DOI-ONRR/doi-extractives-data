@@ -9,6 +9,32 @@ state-maps: $(foreach state,$(states),states/$(state).svg) states/all.svg
 
 viewboxes: ../_data/viewboxes.yml
 
+data/fedland.json: _data/shp/fedlanp010g.shp
+	topojson -p FEATURE1 fedland=$^ > _$@.tmp
+	topojson-merge --io fedland --oo fedland \
+		-k 'd.properties.FEATURE1' -- _$@.tmp > _$@
+	rm _$@.tmp
+
+_data/shp/fedlanp010g.shp: data/shp/fedlanp010g.shp
+
+data/shp/fedlanp010g.shp:
+	mkdir -p _$(dir $@)
+	cd _$(dir $@); \
+		curl -s "ftp://rockyftp.cr.usgs.gov/vdelivery/Datasets/Staged/SmallScale/Data/Boundaries/fedlanp010g.shp_nt00966.tar.gz" \
+			| tar -xzvf -
+
+data/shp/indlanp010g.shp:
+	mkdir -p _$(dir $@)
+	cd _$(dir $@); \
+		curl -s "ftp://rockyftp.cr.usgs.gov/vdelivery/Datasets/Staged/SmallScale/Data/Boundaries/indlanp010g.shp_nt00968.tar.gz" \
+		| tar -xzvf -
+
+states/all.svg: _data/us-topology.json
+	$(state-map) $^ > $@
+
+states/%.svg: _data/us-topology.json
+	$(state-map) --state $* --counties -- $^ > $@
+
 ../_data/viewboxes.yml:
 	echo "# viewboxes:" > $@
 	for state in all $(states); do \
@@ -16,12 +42,6 @@ viewboxes: ../_data/viewboxes.yml
 		xpath states/$${state}.svg '//@viewBox' \
 			| perl -p -e 's/^.*="([^"]+)"/"$$1"\n/' >> $@; \
 	done
-
-states/all.svg: _data/us-topology.json
-	$(state-map) $^ > $@
-
-states/%.svg: _data/us-topology.json
-	$(state-map) --state $* --counties -- $^ > $@
 
 .PHONY: state-maps viewboxes
 

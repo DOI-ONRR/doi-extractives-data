@@ -78,30 +78,20 @@ var render = function(objects, done) {
   var object = topology.objects.fedland;
   var features = topojson.feature(topology, object).features;
 
-  var fill = d3.functor('#000'); // d3.scale.category20();
-  var category = function(d) {
-    var type = d.properties.FEATURE1;
-    return type.match(/^National /)
-      ? 'National'
-      : type;
-  };
-
   ctx.lineWidth = 0.5;
+  ctx.fillStyle = ctx.strokeStyle = '#000';
 
   features.forEach(function(d) {
-    var cat = category(d);
-    var color = fill(cat);
-    console.warn(cat, '->', color);
     ctx.beginPath();
-    ctx.fillStyle = color;
-    ctx.strokeStyle = color;
     path(d);
     ctx.closePath();
     ctx.fill('evenodd');
-    // ctx.stroke();
+    ctx.stroke();
   });
 
-  console.warn('dropped %d points', dropped);
+  if (dropped) {
+    console.warn('dropped %d points', dropped);
+  }
 
   var out = argv.o
     ? fs.createWriteStream(argv.o)

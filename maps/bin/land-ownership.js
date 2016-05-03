@@ -78,7 +78,7 @@ var render = function(objects, done) {
   var object = topology.objects.fedland;
   var features = topojson.feature(topology, object).features;
 
-  var fill = d3.functor('#666'); // d3.scale.category20();
+  var fill = d3.functor('#000'); // d3.scale.category20();
   var category = function(d) {
     var type = d.properties.FEATURE1;
     return type.match(/^National /)

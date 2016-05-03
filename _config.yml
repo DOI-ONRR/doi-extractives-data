@@ -13,18 +13,24 @@ sass:
   sass_dir: _sass
 
 exclude:
+  # top-level log and markdown files
+  - /*.log
   - /*.md
-  - kss-config.json
-  - lib
-  - node_modules
-  - npm-debug.log
-  - package.json
-  - show
-  - styleguide-template
-  - test
-  - webpack.config.js
+  # ruby dependency files
   - Gemfile*
-  # ignore all of the source (unbuilt) JS files
+  # KSS (style guide) config and template
+  - kss-config.json
+  - styleguide-template
+  # just ignore the whole JS lib directory
+  - lib
+  # Node depenencies
+  - node_modules
+  - package.json
+  # unit tests
+  - test
+  # webpack configuration
+  - webpack.config.js
+  # all of the source (unbuilt) JS files
   - js/src
   # shell and other scripts
   - /*.sh

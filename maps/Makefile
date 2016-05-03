@@ -17,10 +17,11 @@ data/fedland.json: _data/shp/fedlanp010g.shp
 
 
 fedland.png: _data/fedland.json
-	./bin/land-ownership.js --scale 4 $^ > $@
+	# the 2x scale is for retina
+	./bin/land-ownership.js --scale 2 $^ > $@
 
-fedland-crushed.png: fedland.png
-	pngcrush $^ $@
+fedland.gif: fedland.png
+	convert -posterize 2 -transparent-color white $^ $@
 
 _data/shp/fedlanp010g.shp: data/shp/fedlanp010g.shp
 

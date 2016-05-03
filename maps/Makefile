@@ -3,44 +3,47 @@ states = AL AK AZ AR CA CO CT DE DC FL GA HI ID IL IN IA KS KY LA ME MD MA MI MN
 
 state-map ?= ./bin/state-map.js --css ../../css/svg.css --debug
 
-all: state-maps viewboxes
+all: \
+	state-maps \
+	viewboxes \
+	fedland.gif
 
-state-maps: $(foreach state,$(states),states/$(state).svg) states/all.svg
+state-maps: \
+	$(foreach state,$(states),states/$(state).svg) \
+	states/all.svg
 
 viewboxes: ../_data/viewboxes.yml
 
-data/fedland.json: _data/shp/fedlanp010g.shp
-	topojson -p FEATURE1 fedland=$^ > _$@.tmp
+data/fedland.json: data/shp/fedlanp010g.shp
+	topojson -p FEATURE1 fedland=$^ > $@.tmp
 	topojson-merge --io fedland --oo fedland \
-		-k 'd.properties.FEATURE1' -- _$@.tmp > _$@
-	rm _$@.tmp
+		-k 'd.properties.FEATURE1' -- $@.tmp > $@
+	rm $@.tmp
 
 
-fedland.png: _data/fedland.json
+fedland.png: data/fedland.json
 	# the 2x scale is for retina
-	./bin/land-ownership.js --scale 2 $^ > $@
+	./bin/rasterize.js --scale 2 $^ > $@
 
 fedland.gif: fedland.png
 	convert -posterize 2 -transparent-color white $^ $@
 
-_data/shp/fedlanp010g.shp: data/shp/fedlanp010g.shp
-
 data/shp/fedlanp010g.shp:
-	mkdir -p _$(dir $@)
-	cd _$(dir $@); \
+	mkdir -p $(dir $@)
+	cd $(dir $@); \
 		curl -s "ftp://rockyftp.cr.usgs.gov/vdelivery/Datasets/Staged/SmallScale/Data/Boundaries/fedlanp010g.shp_nt00966.tar.gz" \
 			| tar -xzvf -
 
 data/shp/indlanp010g.shp:
-	mkdir -p _$(dir $@)
-	cd _$(dir $@); \
+	mkdir -p $(dir $@)
+	cd $(dir $@); \
 		curl -s "ftp://rockyftp.cr.usgs.gov/vdelivery/Datasets/Staged/SmallScale/Data/Boundaries/indlanp010g.shp_nt00968.tar.gz" \
 		| tar -xzvf -
 
-states/all.svg: _data/us-topology.json
+states/all.svg: data/us-topology.json
 	$(state-map) $^ > $@
 
-states/%.svg: _data/us-topology.json
+states/%.svg: data/us-topology.json
 	$(state-map) --state $* --counties -- $^ > $@
 
 ../_data/viewboxes.yml:
@@ -51,5 +54,10 @@ states/%.svg: _data/us-topology.json
 			| perl -p -e 's/^.*="([^"]+)"/"$$1"\n/' >> $@; \
 	done
 
-.PHONY: state-maps viewboxes
+.PHONY: \
+	state-maps \
+	viewboxes
 
+.PRECIOUS: \
+	data/shp/fedlanp010g.shp \
+	data/shp/indlanp010g.shp

@@ -1,8 +1,6 @@
 node_bin ?= ../node_modules/.bin/
 states = AL AK AZ AR CA CO CT DE DC FL GA HI ID IL IN IA KS KY LA ME MD MA MI MN MS MO MT NE NV NH NJ NM NY NC ND OH OK OR PA RI SC SD TN TX UT VT VA WA WV WI WY
 
-state-map ?= ./bin/state-map.js --css ../../css/svg.css --debug
-
 all: \
 	state-maps \
 	viewboxes \
@@ -41,10 +39,10 @@ data/shp/indlanp010g.shp:
 		| tar -xzvf -
 
 states/all.svg: data/us-topology.json
-	$(state-map) $^ > $@
+	./bin/state-map.js $^ > $@
 
 states/%.svg: data/us-topology.json
-	$(state-map) --state $* --counties -- $^ > $@
+	./bin/state-map.js --state $* --counties -- $^ > $@
 
 ../_data/viewboxes.yml:
 	echo "# viewboxes:" > $@

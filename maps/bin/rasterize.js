@@ -74,19 +74,24 @@ var render = function(objects, done) {
   path.projection(transform);
   path.context(ctx);
 
-  var topology = objects[0];
-  var object = topology.objects.fedland;
-  var features = topojson.feature(topology, object).features;
-
   ctx.lineWidth = 0.5;
   ctx.fillStyle = ctx.strokeStyle = '#000';
 
-  features.forEach(function(d) {
-    ctx.beginPath();
-    path(d);
-    ctx.closePath();
-    ctx.fill('evenodd');
-    ctx.stroke();
+  objects.forEach(function(topology) {
+    console.warn('drawing topology:', topology.filename);
+    Object.keys(topology.objects).forEach(function(name) {
+      console.warn('drawing objects:', name);
+      var object = topology.objects[name];
+      var features = topojson.feature(topology, object).features;
+
+      features.forEach(function(d) {
+        ctx.beginPath();
+        path(d);
+        ctx.closePath();
+        ctx.fill('evenodd');
+        ctx.stroke();
+      });
+    });
   });
 
   if (dropped) {

@@ -13,21 +13,34 @@ sass:
   sass_dir: _sass
 
 exclude:
+  - /*.md
+  - kss-config.json
   - lib
   - node_modules
+  - npm-debug.log
   - package.json
   - show
-  - test
   - styleguide-template
-  - 'Gemfile*'
+  - test
+  - webpack.config.js
+  - Gemfile*
+  # ignore all of the source (unbuilt) JS files
+  - js/src
   # shell and other scripts
-  - '**/*.sh'
-  - '**/bin/*'
-  - '**/Makefile'
+  - /*.sh
+  - /**/bin/*.js
+  - /lib/*.js
+  - data/lib/*.js
+  - maps/lib/*.js
+  - /Makefile
+  - /**/Makefile
   # data tools and SQLite databases
-  - '**/*.sql'
-  - '**/*.db*'
-  - 'data/db/**/*'
+  - /*.sql
+  - /*.db*
+  - data/db
+  - data/**/*.js
+  - data/**/*.svg
+  - maps/data
 
 collections:
   case-studies:

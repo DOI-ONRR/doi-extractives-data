@@ -42,6 +42,7 @@
     "sequelize": "^3.20.0",
     "sqlite3": "^3.1.2",
     "stream-array": "^1.0.1",
+    "svgo": "^0.6.6",
     "tables": "github:shawnbot/tables#use-tito",
     "through2": "^0.6.5",
     "tito": "^0.6.1",

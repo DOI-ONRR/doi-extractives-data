@@ -161,13 +161,16 @@ retina-resolution (2x) images of the land ownership data in pure black, then
 scaling them down in SVG and reducing their opacity in CSS. The build process
 for a single layer looks like this:
 
-1. ### TopoJSON to PNG
+1. **TopoJSON to PNG**
+
   The first step in generating these layers is to output an unoptimized PNG
   with 8-bit transparency. The [rasterize.js](bin/rasterize.js) script takes
   one or more TopoJSON filenames and draws every polygon in each with a black
   fill and half-pixel stroke (to fill in the thin gaps between adjacent
   polygons). As of this writing, the federal land PNG weighed 380K.
-1. ### PNG to GIF
+
+1. **PNG to GIF**
+
   Next, we use [ImageMagick][ImageMagick] to posterize the PNG down to 2
   colors, treat white as transparent, and convert to GIF. The 8-bit GIF version
   of the federal land PNG is much slimmer at 88K.

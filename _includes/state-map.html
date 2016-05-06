@@ -4,7 +4,7 @@
   {% assign keys = include.value %}
   {% for state in include.states %}
   {% assign _state = site.data.states | where: 'id', state[0] | first %}
-  {% if include.href %}<a xlink:href="{{ include.href | replace: '%s', state[0] }}">{% endif %}
+  {% if include.href %}<a xlink:href="{{ include.href | replace: '%', state[0] }}">{% endif %}
     <use class="state feature" xlink:href="{{ states_svg }}#{{ state[0] }}"
     {% if include.value %}
       {% assign value = state[1] | get: keys %}

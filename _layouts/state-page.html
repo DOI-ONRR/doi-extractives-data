@@ -161,15 +161,17 @@ layout: default
 
     {% assign oilgas = 'Oil & Gas (Non-Royalty)' %}
     <section class="county-map-table">
-      <figure is="data-map" color-scheme="Blues" steps="9">
-        {% assign county_revenue = site.data.county_revenue[state_id] %}
-        {% capture value_key %}revenue.{{ year }}{% endcapture %}
-        {%
-          include county-map.html
-          state=state_id
-          counties=county_revenue
-          value=value_key
-        %}
+      <figure>
+        <data-map color-scheme="Blues" steps="9">
+          {% assign county_revenue = site.data.county_revenue[state_id] %}
+          {% capture value_key %}revenue.{{ year }}{% endcapture %}
+          {%
+            include county-map.html
+            state=state_id
+            counties=county_revenue
+            value=value_key
+          %}
+        </data-map>
         <figcaption>County extractives revenue (dollars, {{ year }})</figcaption>
       </figure>
 
@@ -301,15 +303,17 @@ layout: default
           {{ product[0] | downcase }} in {{ year }}. Historically:</p>
 
         {% if volume %}
-        <figure is="data-map" color-scheme="Blues" steps="9">
-          {% assign federal_county_production = site.data.federal_county_production[state_id] %}
-          {% capture value_key %}production.{{ product_name }}.{{ year }}{% endcapture %}
-          {%
-            include county-map.html
-            state=state_id
-            counties=federal_county_production
-            value=value_key
-          %}
+        <figure>
+          <data-map color-scheme="Blues" steps="9">
+            {% assign federal_county_production = site.data.federal_county_production[state_id] %}
+            {% capture value_key %}production.{{ product_name }}.{{ year }}{% endcapture %}
+            {%
+              include county-map.html
+              state=state_id
+              counties=federal_county_production
+              value=value_key
+            %}
+          </data-map>
           <figcaption>County production for {{ product_name }}, {{ year }})</figcaption>
         </figure>
         {% endif %}
@@ -400,15 +404,17 @@ layout: default
     <h3>County-Level Employment</h3>
 
     <section class="county-map-table">
-      <figure is="data-map" color-scheme="Reds" steps="9">
-        {% assign county_jobs = site.data.county_jobs[state_id] %}
-        {% capture value_key %}employment.{{ year }}.count{% endcapture %}
-        {%
-          include county-map.html
-          state=state_id
-          counties=county_jobs
-          value=value_key
-        %}
+      <figure>
+        <data-map color-scheme="Reds" steps="9">
+          {% assign county_jobs = site.data.county_jobs[state_id] %}
+          {% capture value_key %}employment.{{ year }}.count{% endcapture %}
+          {%
+            include county-map.html
+            state=state_id
+            counties=county_jobs
+            value=value_key
+          %}
+        </data-map>
         <figcaption>County extractives employment (jobs, {{ year }})</figcaption>
       </figure>
 

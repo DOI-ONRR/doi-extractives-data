@@ -1,7 +1,6 @@
 (function(exports) {
 
   exports.EITIDataMap = document.registerElement('data-map', {
-    'extends': 'figure',
     prototype: Object.create(
       HTMLElement.prototype,
       {

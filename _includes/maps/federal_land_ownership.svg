@@ -1,4 +1,4 @@
 <image class="federal ownership"
-  xlink:href="{{ site.baseurl }}/maps/fedland.gif"
+  xlink:href="{{ site.baseurl }}/maps/land/combined.gif"
   image-rendering="pixelated"
   width="960" height="670"/>

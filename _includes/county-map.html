@@ -5,24 +5,15 @@
   <use class="states mesh" xlink:href="{{ states_svg }}#states-mesh"></use>
   <use class="counties features" xlink:href="{{ state_svg }}#counties"></use>
   {% if include.counties %}
-    {% if include.value %}
-      {% assign keys = include.value | split: '.' %}
-    {% else %}
-      {% assign keys = nil %}
-    {% endif %}
+    {% assign keys = include.value %}
     {% for county in include.counties %}
-      {% assign fips = county[0] %}
-    {% if include.href %}<a xlink:href="{{ include.href | replace: '%s', fips }}">{% endif %}
-      {% assign value = county[1] %}
-      {% if keys %}
-        {% for _key in keys %}
-          {% assign value = value[_key] %}
-        {% endfor %}
-      {% endif %}
+      {% assign fips = county[0] | pad_left: 5, '0' %}
+      {% if include.href %}<a xlink:href="{{ include.href | replace: '%s', fips }}">{% endif %}
+      {% assign value = county[1] | get: keys %}
       {% if value != nil %}
       <use class="county feature" xlink:href="{{ state_svg }}#county-{{ fips }}"
-        data-value="{{ value | default: 0 }}">
-        <title>{{ county[1].name }}: {{ value }}</title>
+        data-value='{{ value | default: 0 | jsonify }}'>
+        <title>{{ county[1].name }}</title>
       </use>
       {% endif %}
       {% if include.href %}</a>{% endif %}

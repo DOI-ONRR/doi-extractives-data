@@ -370,7 +370,7 @@ layout: default
             <td>{{ year[0] }}</td>
             <td data-series="volume" data-value="{{ year[1].volume }}" class="numeric">{{ year[1].volume | intcomma }}</td>
             <td data-series="percent" data-value="{{ year[1].percent }}" class="numeric">{{ year[1].percent | percent }}%</td>
-            <td class="numeric">{{ year[1].rank | ordinal:'super' }}</td>
+            <td class="numeric">{{ year[1].rank | ordinal: 'super' }}</td>
           </tr>
         {% endfor %}
         </tbody>

@@ -1,23 +1,5 @@
 // Styleguide blocks.downloads
 
-.downloads {
-  h3 {
-    font-size: 1.2rem;
-    padding-top: $base-padding;
-  }
-}
-
-.downloads-section_heading {
-  border-bottom: 2px solid $mid-gray;
-  margin-bottom: $base-padding;
-  margin-top: $base-padding-jumbo;
-  padding-bottom: $base-padding-lite;
-}
-
-.downloads-download_links-intro {
-  margin-bottom: 0;
-}
-
 .downloads-download_links {
   a {
     font-size: 1rem;
@@ -44,11 +26,5 @@
     &:focus {
       text-decoration: none;
     }
-  }
-}
-
-.downloads-docs {
-  span {
-    font-weight: $weight-book;
   }
 }

@@ -1,0 +1,4 @@
+'{region_id}':
+    total_acres: '{state_acres}'
+    federal_acres: '{federal_acres}'
+    federal_percent: '{federal_percent}'

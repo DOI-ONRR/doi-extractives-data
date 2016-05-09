@@ -1,6 +1,6 @@
 '31033':
   name: Cheyenne County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -31,7 +31,7 @@
         '2014': 21668
 '31057':
   name: Dundy County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -48,7 +48,7 @@
         '2014': 149
 '31087':
   name: Hitchcock County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -65,7 +65,7 @@
         '2014': 3424
 '31105':
   name: Kimball County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -96,7 +96,7 @@
         '2014': 2027
 '31145':
   name: Red Willow County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl

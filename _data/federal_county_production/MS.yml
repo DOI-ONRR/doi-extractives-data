@@ -1,6 +1,6 @@
 '28001':
   name: Adams County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -17,7 +17,7 @@
         '2014': 1974
 '28017':
   name: Chickasaw County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -34,7 +34,7 @@
         '2014': 16697
 '28023':
   name: Clarke County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -44,7 +44,7 @@
         '2007': 0
 '28031':
   name: Covington County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -75,7 +75,7 @@
         '2014': 962
 '28035':
   name: Forrest County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -106,7 +106,7 @@
         '2014': 77073
 '28037':
   name: Franklin County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -137,7 +137,7 @@
         '2014': 133271
 '28045':
   name: Hancock County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -150,7 +150,7 @@
         '2005': 18
 '28061':
   name: Jasper County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -181,7 +181,7 @@
         '2014': 3270
 '28065':
   name: Jefferson Davis County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -212,7 +212,7 @@
         '2014': 9312
 '28067':
   name: Jones County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -243,7 +243,7 @@
         '2014': 6832
 '28073':
   name: Lamar County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -268,7 +268,7 @@
         '2014': 33161
 '28077':
   name: Lawrence County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -293,7 +293,7 @@
         '2013': 12
 '28087':
   name: Lowndes County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -324,7 +324,7 @@
         '2014': 33240
 '28095':
   name: Monroe County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -355,7 +355,7 @@
         '2014': 22024
 '28109':
   name: Pearl River County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -386,7 +386,7 @@
         '2014': 85374
 '28111':
   name: Perry County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -417,7 +417,7 @@
         '2014': 153375
 '28123':
   name: Scott County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -430,7 +430,7 @@
         '2010': 53
 '28129':
   name: Smith County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -447,7 +447,7 @@
         '2014': 20561
 '28131':
   name: Stone County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -463,7 +463,7 @@
         '2013': 19872
 '28153':
   name: Wayne County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -494,7 +494,7 @@
         '2014': 41133
 '28157':
   name: Wilkinson County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl

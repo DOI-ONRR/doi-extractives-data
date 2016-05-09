@@ -1,7 +1,10 @@
 '{state}':
   products:
     '{product}':
-      '{year}':
-        volume: '{volume}'
-        percent: '{percent}'
-        rank: '{rank}'
+      name: '{product_name}'
+      units: '{units}'
+      volume:
+        '{year}':
+          volume: '{volume}'
+          percent: '{percent}'
+          rank: '{rank}'

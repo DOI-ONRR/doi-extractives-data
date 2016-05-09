@@ -1,6 +1,6 @@
 '2122':
   name: Kenai Peninsula Borough
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -31,7 +31,7 @@
         '2014': 15358615
 '2185':
   name: North Slope Borough
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl

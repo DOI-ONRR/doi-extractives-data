@@ -1,6 +1,6 @@
 '5023':
   name: Cleburne County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -14,7 +14,7 @@
         '2014': 996189
 '5027':
   name: Columbia County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -45,7 +45,7 @@
         '2014': 2348
 '5029':
   name: Conway County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -62,7 +62,7 @@
         '2014': 3376360
 '5033':
   name: Crawford County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -79,7 +79,7 @@
         '2014': 89568
 '5045':
   name: Faulkner County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -94,7 +94,7 @@
         '2014': 298942
 '5047':
   name: Franklin County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -111,7 +111,7 @@
         '2014': 132575
 '5071':
   name: Johnson County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -128,7 +128,7 @@
         '2014': 336601
 '5083':
   name: Logan County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -145,7 +145,7 @@
         '2014': 3847836
 '5097':
   name: Montgomery County
-  production:
+  products:
     Quartz Crystal (tickets/pounds):
       name: Quartz Crystal
       units: tickets/pounds
@@ -155,7 +155,7 @@
         '2007': 2400
 '5115':
   name: Pope County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -172,7 +172,7 @@
         '2014': 141081
 '5127':
   name: Scott County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -185,7 +185,7 @@
         '2014': 7289
 '5131':
   name: Sebastian County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -202,7 +202,7 @@
         '2014': 2365
 '5135':
   name: Sharp County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -219,7 +219,7 @@
         '2014': 29093
 '5141':
   name: Van Buren County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -235,7 +235,7 @@
         '2014': 3875036
 '5145':
   name: White County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -249,7 +249,7 @@
         '2014': 1654977
 '5149':
   name: Yell County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf

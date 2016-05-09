@@ -1,6 +1,6 @@
 '17027':
   name: Clinton County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -25,7 +25,7 @@
         '2014': 11250
 '17055':
   name: Franklin County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf

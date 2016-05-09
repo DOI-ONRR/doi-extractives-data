@@ -1,6 +1,6 @@
 '26001':
   name: Alcona County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -17,7 +17,7 @@
         '2014': 2999
 '26005':
   name: Allegan County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -34,7 +34,7 @@
         '2014': 116
 '26025':
   name: Calhoun County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -60,7 +60,7 @@
         '2014': 22319
 '26035':
   name: Clare County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -91,7 +91,7 @@
         '2014': 4089
 '26039':
   name: Crawford County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -108,7 +108,7 @@
         '2014': 45850
 '26055':
   name: Grand Traverse County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -136,7 +136,7 @@
         '2014': 15
 '26075':
   name: Jackson County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -157,7 +157,7 @@
         '2014': 15657
 '26079':
   name: Kalkaska County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -188,7 +188,7 @@
         '2014': 25423
 '26085':
   name: Lake County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -211,7 +211,7 @@
         '2010': 764
 '26119':
   name: Montmorency County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -228,7 +228,7 @@
         '2014': 425439
 '26123':
   name: Newaygo County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -236,7 +236,7 @@
         '2014': 308
 '26135':
   name: Oscoda County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -267,7 +267,7 @@
         '2014': 857421
 '26137':
   name: Otsego County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -284,7 +284,7 @@
         '2014': 8010
 '26143':
   name: Roscommon County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl

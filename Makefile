@@ -166,12 +166,12 @@ data/state_disbursements.yml:
 data/state_federal_production.yml:
 	$(query) --format ndjson " \
 		SELECT \
-		  state, product, year, \
+		  state, product, product_name, units, year, \
 		  ROUND(volume) AS volume, \
 		  ROUND(percent, 2) AS percent, rank \
 		FROM federal_production_state_rank \
 		ORDER BY \
-			state, product, year" \
+			state, product, product_name, units, year" \
 	  | $(nestly) --if ndjson \
 		  -c _meta/state_federal_production.yml \
 		  -o _$@

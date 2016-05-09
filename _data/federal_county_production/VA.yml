@@ -1,6 +1,6 @@
 '51051':
   name: Dickenson County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -22,7 +22,7 @@
         '2014': 131549
 '51091':
   name: Highland County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -33,7 +33,7 @@
         '2008': 183
 '51195':
   name: Wise County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf

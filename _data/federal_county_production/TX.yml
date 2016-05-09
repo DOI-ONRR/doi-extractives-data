@@ -1,6 +1,6 @@
 '48037':
   name: Bowie County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -31,7 +31,7 @@
         '2014': 572
 '48041':
   name: Brazos County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -54,7 +54,7 @@
         '2010': 0
 '48051':
   name: Burleson County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -79,7 +79,7 @@
         '2014': 4890
 '48071':
   name: Chambers County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -102,7 +102,7 @@
         '2007': 850
 '48121':
   name: Denton County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -119,7 +119,7 @@
         '2014': 574962
 '48161':
   name: Freestone County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -148,7 +148,7 @@
         '2014': 64596
 '48167':
   name: Galveston County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -179,7 +179,7 @@
         '2014': 31546
 '48179':
   name: Gray County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -196,7 +196,7 @@
         '2014': 1434
 '48181':
   name: Grayson County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -227,7 +227,7 @@
         '2014': 9327
 '48203':
   name: Harrison County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -250,7 +250,7 @@
         '2014': 4215
 '48211':
   name: Hemphill County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -281,7 +281,7 @@
         '2014': 7185
 '48215':
   name: Hidalgo County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -312,7 +312,7 @@
         '2014': 14739
 '48217':
   name: Hill County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -321,7 +321,7 @@
         '2009': 110043
 '48225':
   name: Houston County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -352,7 +352,7 @@
         '2014': 60476
 '48239':
   name: Jackson County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -375,7 +375,7 @@
         '2014': 82847
 '48241':
   name: Jasper County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -400,7 +400,7 @@
         '2012': 1624
 '48251':
   name: Johnson County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -415,7 +415,7 @@
         '2014': 1218518
 '48253':
   name: Jones County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -436,7 +436,7 @@
         '2009': 129
 '48287':
   name: Lee County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -467,7 +467,7 @@
         '2014': 11533
 '48297':
   name: Live Oak County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -494,7 +494,7 @@
         '2010': 18420
 '48311':
   name: McMullen County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -525,7 +525,7 @@
         '2014': 12016
 '48337':
   name: Montague County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -544,7 +544,7 @@
         '2014': 31531
 '48339':
   name: Montgomery County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -567,7 +567,7 @@
         '2014': 145116
 '48347':
   name: Nacogdoches County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -597,7 +597,7 @@
         '2014': 103
 '48351':
   name: Newton County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -618,7 +618,7 @@
         '2009': 9
 '48355':
   name: Nueces County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -649,7 +649,7 @@
         '2014': 27950
 '48357':
   name: Ochiltree County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -679,7 +679,7 @@
         '2014': 3060
 '48367':
   name: Parker County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -707,7 +707,7 @@
         '2014': 71
 '48403':
   name: Sabine County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -738,7 +738,7 @@
         '2014': 399599
 '48405':
   name: San Augustine County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -761,7 +761,7 @@
         '2014': 52895
 '48407':
   name: San Jacinto County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -792,7 +792,7 @@
         '2014': 55713
 '48419':
   name: Shelby County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -823,7 +823,7 @@
         '2014': 122166
 '48427':
   name: Starr County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -850,7 +850,7 @@
         '2012': 17
 '48439':
   name: Tarrant County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -878,7 +878,7 @@
         '2014': 801
 '48441':
   name: Taylor County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -895,7 +895,7 @@
         '2014': 2268
 '48471':
   name: Walker County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -909,7 +909,7 @@
         '2012': 1989
 '48477':
   name: Washington County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -940,7 +940,7 @@
         '2014': 9301
 '48483':
   name: Wheeler County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -971,7 +971,7 @@
         '2014': 2725
 '48487':
   name: Wilbarger County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -997,7 +997,7 @@
         '2012': 423
 '48497':
   name: Wise County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -1028,7 +1028,7 @@
         '2014': 2003904
 '48505':
   name: Zapata County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl

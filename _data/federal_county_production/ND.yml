@@ -1,6 +1,6 @@
 '38007':
   name: Billings County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -31,7 +31,7 @@
         '2014': 2314539
 '38009':
   name: Bottineau County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -62,7 +62,7 @@
         '2014': 25416
 '38011':
   name: Bowman County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -93,7 +93,7 @@
         '2014': 926938
 '38013':
   name: Burke County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -124,7 +124,7 @@
         '2014': 108939
 '38023':
   name: Divide County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -150,7 +150,7 @@
         '2014': 48790
 '38025':
   name: Dunn County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -181,7 +181,7 @@
         '2014': 3102377
 '38033':
   name: Golden Valley County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -212,7 +212,7 @@
         '2014': 368248
 '38053':
   name: McKenzie County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -243,7 +243,7 @@
         '2014': 16490196
 '38057':
   name: Mercer County
-  production:
+  products:
     Coal (tons):
       name: Coal
       units: tons
@@ -257,7 +257,7 @@
         '2014': 3449725
 '38061':
   name: Mountrail County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -288,7 +288,7 @@
         '2014': 2882820
 '38065':
   name: Oliver County
-  production:
+  products:
     Coal (tons):
       name: Coal
       units: tons
@@ -300,7 +300,7 @@
         '2014': 1601986
 '38075':
   name: Renville County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -331,7 +331,7 @@
         '2014': 19830
 '38087':
   name: Slope County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -362,7 +362,7 @@
         '2014': 406320
 '38089':
   name: Stark County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -393,7 +393,7 @@
         '2014': 588800
 '38105':
   name: Williams County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl

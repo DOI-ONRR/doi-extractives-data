@@ -1,6 +1,6 @@
 '54023':
   name: Grant County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -15,7 +15,7 @@
         '2012': 16000
 '54041':
   name: Lewis County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -36,7 +36,7 @@
         '2011': 14
 '54059':
   name: Mingo County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -53,7 +53,7 @@
         '2014': 55206
 '54071':
   name: Pendleton County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -70,7 +70,7 @@
         '2014': 25109
 '54075':
   name: Pocahontas County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -84,7 +84,7 @@
         '2011': 35218
 '54077':
   name: Preston County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -101,7 +101,7 @@
         '2014': 22118
 '54083':
   name: Randolph County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -115,7 +115,7 @@
         '2014': 23197
 '54093':
   name: Tucker County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -132,7 +132,7 @@
         '2014': 45255
 '54109':
   name: Wyoming County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf

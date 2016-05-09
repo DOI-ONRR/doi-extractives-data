@@ -1,6 +1,6 @@
 '29055':
   name: Crawford County
-  production:
+  products:
     Lead Concentrate (tons):
       name: Lead Concentrate
       units: tons
@@ -31,7 +31,7 @@
         '2012': 68
 '29065':
   name: Dent County
-  production:
+  products:
     Zinc Concentrate (tons):
       name: Zinc Concentrate
       units: tons
@@ -73,7 +73,7 @@
         '2014': 335
 '29093':
   name: Iron County
-  production:
+  products:
     Zinc Concentrate (tons):
       name: Zinc Concentrate
       units: tons
@@ -118,7 +118,7 @@
         '2014': 51865
 '29179':
   name: Reynolds County
-  production:
+  products:
     Copper Concentrate (tons):
       name: Copper Concentrate
       units: tons
@@ -163,7 +163,7 @@
         '2014': 80897
 '29221':
   name: Washington County
-  production:
+  products:
     Lead Concentrate (tons):
       name: Lead Concentrate
       units: tons

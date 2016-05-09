@@ -1,6 +1,6 @@
 '21051':
   name: Clay County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -29,7 +29,7 @@
         '2014': 860
 '21071':
   name: Floyd County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -46,7 +46,7 @@
         '2014': 11158
 '21101':
   name: Henderson County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -63,7 +63,7 @@
         '2014': 8762
 '21115':
   name: Johnson County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -75,7 +75,7 @@
         '2014': 310
 '21127':
   name: Lawrence County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -90,7 +90,7 @@
         '2014': 1330
 '21131':
   name: Leslie County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -121,7 +121,7 @@
         '2014': 29641
 '21133':
   name: Letcher County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -138,7 +138,7 @@
         '2014': 827
 '21147':
   name: McCreary County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -155,7 +155,7 @@
         '2014': 743
 '21175':
   name: Morgan County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -167,7 +167,7 @@
         '2014': 45
 '21195':
   name: Pike County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -184,7 +184,7 @@
         '2014': 36806
 '21235':
   name: Whitley County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf

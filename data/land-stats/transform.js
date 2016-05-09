@@ -1,3 +1,5 @@
+/* jshint node: true */
+/* jshint -W106 */
 var parse = require('../../lib/parse');
 
 module.exports = {

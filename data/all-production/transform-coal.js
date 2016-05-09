@@ -16,7 +16,7 @@ module.exports = {
   company_address:  'Operating Company Address',
 
   volume: function(d) {
-    return parse.number(d[VOLUME_COLUMN]) * 1000;
+    return parse.number(d[VOLUME_COLUMN]);
   },
   units: function() { return 'short tons'; },
   average_employees: function(d) {

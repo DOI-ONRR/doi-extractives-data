@@ -18,10 +18,10 @@ UNION
     SELECT
         year, region,
         'Gas' AS commodity,
-        'Natural Gas (MMcf)' AS product,
+        'Natural Gas (mcf)' AS product,
         'Natural Gas' AS product_name,
-        'MMcf' AS units,
-        volume
+        'mcf' AS units,
+        volume * 1000 AS volume
     FROM all_production_naturalgas
 UNION
     SELECT
@@ -30,7 +30,7 @@ UNION
         source AS product,
         source AS product_name,
         NULL AS units,
-        volume
+        volume * 1000 AS volume
     FROM all_production_renewables
     INNER JOIN states ON
         states.name = state

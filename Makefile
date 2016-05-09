@@ -258,6 +258,19 @@ data/top_state_products:
 			-c _meta/top_state_products.yml \
 			-o '_$@/{state}.yml'
 
+data/land_stats.yml:
+	$(query) --format ndjson " \
+		SELECT \
+			s.state AS state, \
+			COALESCE(state.abbr, 'US') AS region_id, \
+			state_acres, federal_acres, federal_percent \
+		FROM land_stats AS s \
+		LEFT JOIN states AS state ON \
+			state.name = s.state" \
+		| $(nestly) --if ndjson \
+			-c _meta/land_stats.yml \
+			-o _$@
+
 db: $(db)
 
 $(db): \
@@ -269,7 +282,8 @@ $(db): \
 	tables/jobs \
 	tables/gdp \
 	tables/exports \
-	tables/disbursements
+	tables/disbursements \
+	tables/land_stats
 
 tables/geo: \
 	tables/states \
@@ -385,3 +399,9 @@ tables/disbursements_historic_preservation: data/_input/onrr/disbursements/histo
 		--map ./data/transform/disbursements_historic_preservation.js \
 		 $^ \
 		| $(tables) -t ndjson -n disbursements_historic_preservation
+
+tables/land_stats: data/land-stats/land-stats.tsv
+	@$(call drop-table,land_stats)
+	$(tito) --map ./data/land-stats/transform.js -r tsv $^ \
+		| $(tables) -t ndjson -n land_stats
+

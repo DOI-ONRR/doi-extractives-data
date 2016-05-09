@@ -12,8 +12,8 @@ query ?= ./data/bin/query.js --db $(db_url)
 
 load-table = $(tables) -i $(1) -n $(2)
 load-model = $(call load-table,$(1),$(2)) --config data/db/models/$(2).js
-load-sql = echo "--- loading SQL: $(1) ---"; cat $(1) | $(sqlite)
-drop-table = echo "--- dropping: $(1) ---"; $(sqlite) "DROP TABLE IF EXISTS $(1);"
+load-sql = echo "-- loading SQL: $(1) --"; cat $(1) | $(sqlite)
+drop-table = echo "-- dropping: $(1) --"; $(sqlite) "DROP TABLE IF EXISTS $(1);"
 
 all: db
 
@@ -183,9 +183,8 @@ data/federal_county_production:
 		  fips, \
 		  county, \
 		  year, \
-		  product, \
-		  ROUND(volume) AS value, \
-		  volume_type AS units \
+		  product, product_name, units, \
+		  ROUND(volume) AS value \
 		FROM federal_county_production \
 		WHERE \
 		  state IS NOT NULL AND \
@@ -293,22 +292,28 @@ tables/county_revenue: data/revenue/onshore.tsv
 	@$(call drop-table,county_revenue)
 	# $(call load-model,data/_input/onrr/county-revenues.tsv,county_revenue)
 	tmp=$^.ndjson; \
-	$(tito) --map ./data/revenue/transform-onshore.js -r tsv $^ > $$tmp; \
-	$(tables) -t ndjson -n county_revenue -i $$tmp; \
+	$(tito) --map ./data/revenue/transform-onshore.js -r tsv $^ > $$tmp && \
+	$(tables) -t ndjson -n county_revenue -i $$tmp && \
 	rm $$tmp
 
 tables/federal-production: \
 	tables/federal_county_production \
 	tables/federal_offshore_production
-	@$(call load-sql,data/db/rollup-federal-production.sql)
+	@$(call load-sql,data/federal-production/rollup.sql)
 
-tables/federal_county_production: data/_input/onrr/regional-production.tsv
+tables/federal_county_production: data/federal-production/onshore.tsv
 	@$(call drop-table,federal_county_production)
-	$(call load-model,$^,federal_county_production)
+	tmp=$^.ndjson; \
+	$(tito) --map ./data/federal-production/transform-onshore.js -r tsv $^ > $$tmp && \
+	$(tables) -t ndjson -n federal_county_production -i $$tmp && \
+	rm $$tmp
 
-tables/federal_offshore_production: data/_input/onrr/offshore-production.tsv
+tables/federal_offshore_production: data/federal-production/offshore.tsv
 	@$(call drop-table,federal_offshore_production)
-	$(call load-model,$^,federal_offshore_production)
+	tmp=$^.ndjson; \
+	$(tito) --map ./data/federal-production/transform-offshore.js -r tsv $^ > $$tmp && \
+	$(tables) -t ndjson -n federal_offshore_production -i $$tmp && \
+	rm $$tmp
 
 tables/all-production: \
 	tables/all_production_coal \

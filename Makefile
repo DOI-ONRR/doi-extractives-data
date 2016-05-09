@@ -337,30 +337,30 @@ tables/all-production: \
 	tables/all_production_renewables
 	@$(call load-sql,data/all-production/rollup.sql)
 
-tables/all_production_coal: data/_input/eia/commodity/coal.tsv
+tables/all_production_coal: data/all-production/input/coal.tsv
 	@$(call drop-table,all_production_coal)
 	tmp=$^.ndjson; \
 	$(tito) --map ./data/all-production/transform-coal.js -r tsv $^ > $$tmp && \
 	$(tables) -t ndjson -n all_production_coal -i $$tmp; \
 	rm $$tmp
 
-tables/all_production_oil: data/_input/eia/commodity/oil.tsv
+tables/all_production_oil: data/all-production/input/oil.tsv
 	@$(call drop-table,all_production_oil)
 	$(tito) -r tsv --multiple --map ./data/transform/all_production_oil.js $^ \
 		| $(tables) -t ndjson -n all_production_oil
 
 tables/all_production_naturalgas:
 	@$(call drop-table,all_production_naturalgas)
-	$(tito) -r tsv data/_input/eia/commodity/naturalgas.tsv \
+	$(tito) -r tsv data/all-production/input/naturalgas.tsv \
 		--multiple --map ./data/transform/all_production_naturalgas.js \
 		| $(tables) -t ndjson -n all_production_naturalgas
-	$(tito) -r tsv data/_input/eia/commodity/naturalgas2.tsv \
+	$(tito) -r tsv data/all-production/input/naturalgas2.tsv \
 		--multiple --map ./data/transform/all_production_naturalgas2.js \
 		| $(tables) -t ndjson -n all_production_naturalgas
 
-tables/all_production_renewables: data/_input/eia/commodity/renewables.tsv
+tables/all_production_renewables: data/all-production/input/renewables.tsv
 	@$(call drop-table,all_production_renewables)
-	renewables_tmp=data/_input/eia/commodity/renewables.ndjson; \
+	renewables_tmp=data/all-production/input/renewables.ndjson; \
 	$(tito) --multiple --map ./data/transform/all_production_renewables.js -r tsv $^ \
 		> $$renewables_tmp; \
 	$(tables) -t ndjson -n all_production_renewables -i $$renewables_tmp; \

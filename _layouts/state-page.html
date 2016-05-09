@@ -295,11 +295,12 @@ layout: default
 
         {% assign product_name = product[0] %}
         {% assign volume = product[1].volume[year].volume %}
+        {% assign units = product[1].units | downcase %}
 
-        <h4>{{ product[1].name }} ({{ product[1].units }})</h4>
+        <h4>{{ product[1].name }} ({{ units | default: 'units' }})</h4>
         <p>{{ state_name }} produced
           {% if volume %}{{ volume | intcomma }}
-          <span class="units">{{ product[1].units | downcase }}</span>
+          <span class="units">{{ units | default: 'units' }}</span>
           of {% else %}no{% endif %}
           {{ product[1].name | downcase }} in {{ year }}. Historically:</p>
 
@@ -322,7 +323,7 @@ layout: default
         <table is="bar-chart-table" data-percent-max="100">
           <thead>
             <th>Year</th>
-            <th class="numeric" data-series="volume">Production (units)</th>
+            <th class="numeric" data-series="volume">Production ({{ units | default: 'units' }})</th>
             <th class="numeric" data-series="percent">US %</th>
             <th class="numeric" data-series="rank">Rank</th>
           </thead>
@@ -349,28 +350,30 @@ layout: default
     {% for product in all_products %}
     <section id="all-production-{{ product[0] | slugify }}">
       {% assign product_name = product[0] %}
-      {% assign volume = product[1][year].volume %}
+      {% assign volume = product[1].volume[year].volume %}
+      {% assign units = product[1].units | downcase %}
+
       <h3>{{ product[0] }}</h3>
 
       <p>{{ state_name }} produced
-        {% if volume %}{{ volume | intcomma }} (units) of
+        {% if volume %}{{ volume | intcomma }} {{ units | default: 'units' }} of
         {% else %}no{% endif %}
         {{ product[0] | downcase }} in {{ year }}. Historically:</p>
 
       <table is="bar-chart-table" data-percent-max="100">
         <thead>
           <th>Year</th>
-          <th class="numeric" data-series="volume">Production (units)</th>
+          <th class="numeric" data-series="volume">Production ({{ units | default: 'units' }})</th>
           <th class="numeric" data-series="percent">US %</th>
           <th class="numeric" data-series="rank">Rank</th>
         </thead>
         <tbody>
-        {% for year in product[1] %}
+        {% for _year in product[1].volume %}
           <tr>
-            <td>{{ year[0] }}</td>
-            <td data-series="volume" data-value="{{ year[1].volume }}" class="numeric">{{ year[1].volume | intcomma }}</td>
-            <td data-series="percent" data-value="{{ year[1].percent }}" class="numeric">{{ year[1].percent | percent }}%</td>
-            <td class="numeric">{{ year[1].rank | ordinal: 'super' }}</td>
+            <td>{{ _year[0] }}</td>
+            <td data-series="volume" data-value="{{ _year[1].volume }}" class="numeric">{{ _year[1].volume | intcomma }}</td>
+            <td data-series="percent" data-value="{{ _year[1].percent }}" class="numeric">{{ _year[1].percent | percent }}%</td>
+            <td class="numeric">{{ _year[1].rank | ordinal: 'super' }}</td>
           </tr>
         {% endfor %}
         </tbody>

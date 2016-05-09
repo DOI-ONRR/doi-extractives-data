@@ -2,6 +2,9 @@
   name: '{county}'
   production:
     '{product}':
-      '{year}': '{value}'
+      name: '{product_name}'
+      units: '{units}'
+      volume:
+        '{year}': '{value}'
 
 

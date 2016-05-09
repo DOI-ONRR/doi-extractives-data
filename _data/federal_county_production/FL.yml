@@ -2,4 +2,7 @@
   name: Santa Rosa County
   production:
     Oil (bbl):
-      '2006': 77
+      name: Oil
+      units: bbl
+      volume:
+        '2006': 77

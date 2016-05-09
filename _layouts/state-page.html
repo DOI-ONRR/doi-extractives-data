@@ -217,7 +217,6 @@ layout: default
       </table>
     </section>
 
-    <!--
     {% for product in revenue_products %}
     <section id="revenue-{{ product[0] | slugify }}" class="product">
       {% assign revenue = product[1][year].revenue %}
@@ -255,6 +254,7 @@ layout: default
     </section>
     {% endfor %}
 
+    <!--
     <section id="revenue-types">
       <h3>Revenue Types</h3>
       <table is="bar-chart-table" data-percent-max="100">

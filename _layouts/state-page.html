@@ -294,19 +294,20 @@ layout: default
       <section id="federal-production-{{ product[0] | slugify }}" class="product">
 
         {% assign product_name = product[0] %}
-        {% assign volume = product[1][year].volume %}
+        {% assign volume = product[1].volume[year].volume %}
 
-        <h4>{{ product[0] }}</h4>
+        <h4>{{ product[1].name }} ({{ product[1].units }})</h4>
         <p>{{ state_name }} produced
-          {% if volume %}{{ volume | intcomma }} (units) of
-          {% else %}no{% endif %}
-          {{ product[0] | downcase }} in {{ year }}. Historically:</p>
+          {% if volume %}{{ volume | intcomma }}
+          <span class="units">{{ product[1].units | downcase }}</span>
+          of {% else %}no{% endif %}
+          {{ product[1].name | downcase }} in {{ year }}. Historically:</p>
 
         {% if volume %}
         <figure>
           <data-map color-scheme="Blues" steps="9">
             {% assign federal_county_production = site.data.federal_county_production[state_id] %}
-            {% capture value_key %}production.{{ product_name }}.{{ year }}{% endcapture %}
+            {% capture value_key %}products.{{ product_name }}.volume.{{ year }}{% endcapture %}
             {%
               include county-map.html
               state=state_id
@@ -326,12 +327,12 @@ layout: default
             <th class="numeric" data-series="rank">Rank</th>
           </thead>
           <tbody>
-          {% for year in product[1] %}
+          {% for _year in product[1].volume %}
             <tr>
-              <td>{{ year[0] }}</td>
-              <td data-series="volume" data-value="{{ year[1].volume }}" class="numeric">{{ year[1].volume | intcomma }}</td>
-              <td data-series="percent" data-value="{{ year[1].percent }}" class="numeric">{{ year[1].percent | percent }}%</td>
-              <td data-series="rank" class="numeric">{{ year[1].rank | ordinal:'super' }}</td>
+              <td>{{ _year[0] }}</td>
+              <td data-series="volume" data-value="{{ _year[1].volume }}" class="numeric">{{ _year[1].volume | intcomma }}</td>
+              <td data-series="percent" data-value="{{ _year[1].percent }}" class="numeric">{{ _year[1].percent | percent }}%</td>
+              <td data-series="rank" class="numeric">{{ _year[1].rank | ordinal: 'super' }}</td>
             </tr>
           {% endfor %}
           </tbody>

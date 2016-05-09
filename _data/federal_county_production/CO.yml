@@ -1,6 +1,6 @@
 '8001':
   name: Adams County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -13,7 +13,7 @@
         '2014': 3216
 '8005':
   name: Arapahoe County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -42,7 +42,7 @@
         '2014': 8
 '8007':
   name: Archuleta County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -59,7 +59,7 @@
         '2014': 202763
 '8009':
   name: Baca County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -90,7 +90,7 @@
         '2014': 48584
 '8011':
   name: Bent County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -121,7 +121,7 @@
         '2014': 10172
 '8014':
   name: Broomfield County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -152,7 +152,7 @@
         '2014': 966
 '8017':
   name: Cheyenne County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -183,7 +183,7 @@
         '2014': 113798
 '8029':
   name: Delta County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -227,7 +227,7 @@
         '2013': 3335958
 '8033':
   name: Dolores County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -258,7 +258,7 @@
         '2014': 207615758
 '8043':
   name: Fremont County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -287,7 +287,7 @@
         '2014': 108
 '8045':
   name: Garfield County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -323,7 +323,7 @@
         '2006': 262976
 '8051':
   name: Gunnison County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -367,7 +367,7 @@
         '2013': 6045511
 '8055':
   name: Huerfano County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -384,7 +384,7 @@
         '2014': 4037516
 '8057':
   name: Jackson County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -415,7 +415,7 @@
         '2014': 18600
 '8061':
   name: Kiowa County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -446,7 +446,7 @@
         '2014': 6166
 '8063':
   name: Kit Carson County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -477,7 +477,7 @@
         '2014': 3
 '8067':
   name: La Plata County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -513,7 +513,7 @@
         '2008': 212605
 '8069':
   name: Larimer County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -544,7 +544,7 @@
         '2014': 1282
 '8071':
   name: Las Animas County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -561,7 +561,7 @@
         '2014': 3066334
 '8075':
   name: Logan County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -592,7 +592,7 @@
         '2014': 1427
 '8077':
   name: Mesa County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -623,7 +623,7 @@
         '2014': 5301093
 '8081':
   name: Moffat County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -668,7 +668,7 @@
         '2014': 2399674
 '8083':
   name: Montezuma County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -699,7 +699,7 @@
         '2014': 151861228
 '8087':
   name: Morgan County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -724,7 +724,7 @@
         '2014': 778
 '8095':
   name: Phillips County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -734,7 +734,7 @@
         '2014': 49049
 '8099':
   name: Prowers County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -751,7 +751,7 @@
         '2014': 744
 '8103':
   name: Rio Blanco County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -799,7 +799,7 @@
         '2008': 102512
 '8107':
   name: Routt County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -830,7 +830,7 @@
         '2014': 31519
 '8113':
   name: San Miguel County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -861,7 +861,7 @@
         '2014': 480821
 '8121':
   name: Washington County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -892,7 +892,7 @@
         '2014': 80132
 '8123':
   name: Weld County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -923,7 +923,7 @@
         '2014': 4612455
 '8125':
   name: Yuma County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf

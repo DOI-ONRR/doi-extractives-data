@@ -1,6 +1,6 @@
 '46047':
   name: Fall River County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -30,7 +30,7 @@
         '2014': 12931
 '46063':
   name: Harding County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl

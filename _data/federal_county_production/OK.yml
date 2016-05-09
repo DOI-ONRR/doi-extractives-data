@@ -1,6 +1,6 @@
 '40003':
   name: Alfalfa County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -31,7 +31,7 @@
         '2014': 176063
 '40005':
   name: Atoka County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -51,7 +51,7 @@
         '2014': 4362
 '40007':
   name: Beaver County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -82,7 +82,7 @@
         '2014': 155126
 '40009':
   name: Beckham County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -113,7 +113,7 @@
         '2014': 343160
 '40011':
   name: Blaine County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -144,7 +144,7 @@
         '2014': 196561
 '40015':
   name: Caddo County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -175,7 +175,7 @@
         '2014': 56439
 '40017':
   name: Canadian County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -206,7 +206,7 @@
         '2014': 195241
 '40029':
   name: Coal County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -236,7 +236,7 @@
         '2014': 3064518
 '40031':
   name: Comanche County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -253,7 +253,7 @@
         '2014': 3816
 '40037':
   name: Creek County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -274,7 +274,7 @@
         '2009': 124
 '40039':
   name: Custer County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -305,7 +305,7 @@
         '2014': 154739
 '40043':
   name: Dewey County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -336,7 +336,7 @@
         '2014': 442565
 '40045':
   name: Ellis County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -367,7 +367,7 @@
         '2014': 584751
 '40047':
   name: Garfield County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -398,7 +398,7 @@
         '2014': 52574
 '40049':
   name: Garvin County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -428,7 +428,7 @@
         '2014': 6416
 '40051':
   name: Grady County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -459,7 +459,7 @@
         '2014': 17693
 '40055':
   name: Greer County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -476,7 +476,7 @@
         '2014': 2514
 '40059':
   name: Harper County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -507,7 +507,7 @@
         '2014': 37711
 '40061':
   name: Haskell County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -524,7 +524,7 @@
         '2014': 213528
 '40063':
   name: Hughes County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -541,7 +541,7 @@
         '2014': 626
 '40073':
   name: Kingfisher County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -572,7 +572,7 @@
         '2014': 33612
 '40077':
   name: Latimer County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -589,7 +589,7 @@
         '2014': 219036
 '40079':
   name: Le Flore County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -620,7 +620,7 @@
         '2014': 495799
 '40081':
   name: Lincoln County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -651,7 +651,7 @@
         '2014': 35276
 '40083':
   name: Logan County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -678,7 +678,7 @@
         '2012': 0
 '40087':
   name: McClain County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -693,7 +693,7 @@
         '2012': 18
 '40091':
   name: McIntosh County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -710,7 +710,7 @@
         '2014': 11135
 '40093':
   name: Major County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -741,7 +741,7 @@
         '2014': 3893
 '40109':
   name: Oklahoma County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -772,7 +772,7 @@
         '2014': 1023
 '40119':
   name: Payne County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -803,7 +803,7 @@
         '2014': 17120
 '40121':
   name: Pittsburg County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -820,7 +820,7 @@
         '2014': 1232741
 '40129':
   name: Roger Mills County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -851,7 +851,7 @@
         '2014': 5648993
 '40135':
   name: Sequoyah County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -868,7 +868,7 @@
         '2014': 26912
 '40139':
   name: Texas County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -899,7 +899,7 @@
         '2014': 114564
 '40141':
   name: Tillman County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -916,7 +916,7 @@
         '2014': 15243
 '40149':
   name: Washita County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -947,7 +947,7 @@
         '2014': 96498
 '40151':
   name: Woods County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -978,7 +978,7 @@
         '2014': 862327
 '40153':
   name: Woodward County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl

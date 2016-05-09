@@ -53,6 +53,7 @@ CREATE TABLE federal_production_state_rank AS
         state.year AS year,
         state.state AS state,
         state.product AS product,
+        state.product_name AS product_name,
         state.units AS units,
         state.volume AS volume,
         national.volume AS total,

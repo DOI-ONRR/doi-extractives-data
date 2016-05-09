@@ -1,6 +1,6 @@
 '1003':
   name: Baldwin County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -31,7 +31,7 @@
         '2014': 40642
 '1023':
   name: Choctaw County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -41,7 +41,7 @@
         '2007': 9
 '1035':
   name: Conecuh County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -50,7 +50,7 @@
         '2014': 2411
 '1039':
   name: Covington County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -67,7 +67,7 @@
         '2014': 6431
 '1053':
   name: Escambia County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -95,7 +95,7 @@
         '2014': 8669
 '1057':
   name: Fayette County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -115,7 +115,7 @@
         '2012': 1760930
 '1075':
   name: Lamar County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -146,7 +146,7 @@
         '2014': 434
 '1097':
   name: Mobile County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -177,7 +177,7 @@
         '2014': 14735738
 '1125':
   name: Tuscaloosa County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf

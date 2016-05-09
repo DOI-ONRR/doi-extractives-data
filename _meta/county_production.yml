@@ -1,6 +1,6 @@
 '{fips}':
   name: '{county}'
-  production:
+  products:
     '{product}':
       name: '{product_name}'
       units: '{units}'

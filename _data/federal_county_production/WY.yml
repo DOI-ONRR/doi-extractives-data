@@ -1,6 +1,6 @@
 '56001':
   name: Albany County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -31,7 +31,7 @@
         '2014': 14543
 '56003':
   name: Big Horn County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -62,7 +62,7 @@
         '2014': 1411338
 '56005':
   name: Campbell County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -107,7 +107,7 @@
         '2014': 306733811
 '56007':
   name: Carbon County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -138,7 +138,7 @@
         '2014': 195075
 '56009':
   name: Converse County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -183,7 +183,7 @@
         '2014': 29704239
 '56011':
   name: Crook County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -214,7 +214,7 @@
         '2014': 373
 '56013':
   name: Fremont County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -245,7 +245,7 @@
         '2014': 912383
 '56017':
   name: Hot Springs County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -276,7 +276,7 @@
         '2014': 1582
 '56019':
   name: Johnson County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -307,7 +307,7 @@
         '2014': 17589827
 '56021':
   name: Laramie County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -338,7 +338,7 @@
         '2014': 12917
 '56023':
   name: Lincoln County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -369,7 +369,7 @@
         '2014': 328154
 '56025':
   name: Natrona County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -400,7 +400,7 @@
         '2014': 412863
 '56027':
   name: Niobrara County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -431,7 +431,7 @@
         '2014': 96243
 '56029':
   name: Park County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -462,7 +462,7 @@
         '2014': 33293
 '56033':
   name: Sheridan County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -492,7 +492,7 @@
         '2014': 9257
 '56035':
   name: Sublette County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -523,7 +523,7 @@
         '2014': 1084504
 '56037':
   name: Sweetwater County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -615,7 +615,7 @@
         '2013': 121115
 '56041':
   name: Uinta County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -646,7 +646,7 @@
         '2014': 414592
 '56043':
   name: Washakie County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -677,7 +677,7 @@
         '2014': 610754
 '56045':
   name: Weston County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl

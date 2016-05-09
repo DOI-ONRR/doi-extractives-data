@@ -1,6 +1,6 @@
 '20033':
   name: Comanche County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -30,7 +30,7 @@
         '2014': 4306
 '20053':
   name: Ellsworth County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -46,7 +46,7 @@
         '2014': 13365
 '20055':
   name: Finney County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -77,7 +77,7 @@
         '2014': 719960
 '20063':
   name: Gove County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -94,7 +94,7 @@
         '2014': 1151
 '20067':
   name: Grant County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -111,7 +111,7 @@
         '2014': 79003
 '20075':
   name: Hamilton County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -128,7 +128,7 @@
         '2014': 21930
 '20081':
   name: Haskell County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -159,7 +159,7 @@
         '2014': 236909
 '20093':
   name: Kearny County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -190,7 +190,7 @@
         '2014': 1318144
 '20101':
   name: Lane County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -207,7 +207,7 @@
         '2014': 3382
 '20119':
   name: Meade County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -232,7 +232,7 @@
         '2009': 3
 '20129':
   name: Morton County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -263,7 +263,7 @@
         '2014': 1910437
 '20175':
   name: Seward County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -294,7 +294,7 @@
         '2014': 79225
 '20187':
   name: Stanton County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -311,7 +311,7 @@
         '2014': 26642
 '20189':
   name: Stevens County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -339,7 +339,7 @@
         '2014': 1571
 '20195':
   name: Trego County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl

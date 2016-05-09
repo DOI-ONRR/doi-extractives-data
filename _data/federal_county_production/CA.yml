@@ -1,6 +1,6 @@
 '6013':
   name: Contra Costa County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -29,7 +29,7 @@
         '2014': 1195
 '6019':
   name: Fresno County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -60,7 +60,7 @@
         '2014': 10934
 '6021':
   name: Glenn County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -77,7 +77,7 @@
         '2014': 6874
 '6025':
   name: Imperial County
-  production:
+  products:
     'Geothermal - Electrical Generation, Other':
       name: Geothermal
       units: 'Electrical Generation, Other'
@@ -105,7 +105,7 @@
         '2014': 363631895
 '6027':
   name: Inyo County
-  production:
+  products:
     'Geothermal - Electrical Generation, Kilowatt Hours':
       name: Geothermal
       units: 'Electrical Generation, Kilowatt Hours'
@@ -131,7 +131,7 @@
         '2014': 2090
 '6029':
   name: Kern County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -162,7 +162,7 @@
         '2014': 20023
 '6031':
   name: Kings County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -193,7 +193,7 @@
         '2014': 66303
 '6033':
   name: Lake County
-  production:
+  products:
     'Geothermal - Electrical Generation, Thousands of Pounds':
       name: Geothermal
       units: 'Electrical Generation, Thousands of Pounds'
@@ -210,7 +210,7 @@
         '2014': 19550547
 '6035':
   name: Lassen County
-  production:
+  products:
     'Geothermal - Direct Utilization, Millions of BTUs':
       name: Geothermal
       units: 'Direct Utilization, Millions of BTUs'
@@ -232,7 +232,7 @@
         '2014': 691756
 '6037':
   name: Los Angeles County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -263,7 +263,7 @@
         '2014': 443802
 '6051':
   name: Mono County
-  production:
+  products:
     'Geothermal - Electrical Generation, Kilowatt Hours':
       name: Geothermal
       units: 'Electrical Generation, Kilowatt Hours'
@@ -280,7 +280,7 @@
         '2014': 195815991
 '6053':
   name: Monterey County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -311,7 +311,7 @@
         '2014': 14464
 '6067':
   name: Sacramento County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -342,7 +342,7 @@
         '2014': 356105
 '6069':
   name: San Benito County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -372,7 +372,7 @@
         '2014': 127
 '6077':
   name: San Joaquin County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -389,7 +389,7 @@
         '2014': 3468
 '6079':
   name: San Luis Obispo County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -420,7 +420,7 @@
         '2014': 5673
 '6083':
   name: Santa Barbara
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -451,7 +451,7 @@
         '2014': 59323
 '6095':
   name: Solano County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -482,7 +482,7 @@
         '2014': 2035149
 '6097':
   name: Sonoma County
-  production:
+  products:
     'Geothermal - Electrical Generation, Thousands of Pounds':
       name: Geothermal
       units: 'Electrical Generation, Thousands of Pounds'
@@ -499,7 +499,7 @@
         '2014': 26013613
 '6103':
   name: Tehama County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -512,7 +512,7 @@
         '2013': 1
 '6111':
   name: Ventura County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl

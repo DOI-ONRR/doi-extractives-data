@@ -1,6 +1,6 @@
 '36013':
   name: Chautauqua County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -17,7 +17,7 @@
         '2014': 7919
 '36099':
   name: Seneca County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -34,7 +34,7 @@
         '2014': 3040
 '36101':
   name: Steuben County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf

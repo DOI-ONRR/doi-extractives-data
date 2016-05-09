@@ -1,6 +1,6 @@
 '35001':
   name: Bernalillo County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -28,7 +28,7 @@
         '2014': 14355
 '35005':
   name: Chaves County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -59,7 +59,7 @@
         '2014': 6131356
 '35007':
   name: Colfax County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -75,7 +75,7 @@
         '2014': 231177
 '35013':
   name: Dona Ana County
-  production:
+  products:
     'Geothermal - Direct Use, Millions of Gallons':
       name: Geothermal
       units: 'Direct Use, Millions of Gallons'
@@ -86,7 +86,7 @@
         '2014': 63624483
 '35015':
   name: Eddy County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -175,7 +175,7 @@
         '2014': 457529
 '35021':
   name: Harding County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -192,7 +192,7 @@
         '2014': 4535777
 '35023':
   name: Hidalgo County
-  production:
+  products:
     'Geothermal - Electrical Generation, Kilowatt Hours':
       name: Geothermal
       units: 'Electrical Generation, Kilowatt Hours'
@@ -201,7 +201,7 @@
         '2014': 8736455
 '35025':
   name: Lea County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -237,7 +237,7 @@
         '2006': 66862
 '35031':
   name: McKinley County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -267,7 +267,7 @@
         '2014': 53860
 '35035':
   name: Otero County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -275,7 +275,7 @@
         '2014': 14638
 '35037':
   name: Quay County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -292,7 +292,7 @@
         '2014': 2476467
 '35039':
   name: Rio Arriba County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -323,7 +323,7 @@
         '2014': 54967
 '35041':
   name: Roosevelt County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -354,7 +354,7 @@
         '2014': 856313
 '35043':
   name: Sandoval County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -385,7 +385,7 @@
         '2014': 277911
 '35045':
   name: San Juan County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -416,7 +416,7 @@
         '2014': 56327
 '35059':
   name: Union County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf

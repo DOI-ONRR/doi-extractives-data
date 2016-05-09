@@ -1,6 +1,6 @@
 '30003':
   name: Big Horn County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -31,7 +31,7 @@
         '2014': 15703781
 '30005':
   name: Blaine County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -62,7 +62,7 @@
         '2014': 1265355
 '30009':
   name: Carbon County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -93,7 +93,7 @@
         '2014': 1417428
 '30011':
   name: Carter County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -121,7 +121,7 @@
         '2012': 20169
 '30015':
   name: Chouteau County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -138,7 +138,7 @@
         '2014': 104016
 '30017':
   name: Custer County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -155,7 +155,7 @@
         '2014': 24609
 '30021':
   name: Dawson County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -186,7 +186,7 @@
         '2014': 1754
 '30025':
   name: Fallon County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -217,7 +217,7 @@
         '2014': 38635
 '30027':
   name: Fergus County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -234,7 +234,7 @@
         '2014': 14614
 '30033':
   name: Garfield County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -251,7 +251,7 @@
         '2014': 1667
 '30035':
   name: Glacier County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -282,7 +282,7 @@
         '2014': 3817
 '30041':
   name: Hill County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -299,7 +299,7 @@
         '2014': 197535
 '30051':
   name: Liberty County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -330,7 +330,7 @@
         '2014': 17569
 '30065':
   name: Musselshell County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -347,7 +347,7 @@
         '2014': 6097
 '30069':
   name: Petroleum County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -364,7 +364,7 @@
         '2014': 8677
 '30071':
   name: Phillips County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -381,7 +381,7 @@
         '2014': 3846
 '30073':
   name: Pondera County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -398,7 +398,7 @@
         '2014': 2264
 '30075':
   name: Powder River County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -429,7 +429,7 @@
         '2014': 100713
 '30079':
   name: Prairie County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -460,7 +460,7 @@
         '2014': 1754
 '30083':
   name: Richland County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -491,7 +491,7 @@
         '2014': 934059
 '30085':
   name: Roosevelt County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -522,7 +522,7 @@
         '2014': 218583
 '30087':
   name: Rosebud County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -553,7 +553,7 @@
         '2014': 12792
 '30091':
   name: Sheridan County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -584,7 +584,7 @@
         '2014': 39937
 '30095':
   name: Stillwater County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -605,7 +605,7 @@
         '2013': 3260
 '30101':
   name: Toole County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -636,7 +636,7 @@
         '2014': 173274
 '30105':
   name: Valley County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -653,7 +653,7 @@
         '2014': 1240772
 '30109':
   name: Wibaux County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -684,7 +684,7 @@
         '2014': 1754
 '30111':
   name: Yellowstone County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl

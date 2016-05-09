@@ -1,6 +1,6 @@
 '49001':
   name: Beaver County
-  production:
+  products:
     'Geothermal - Electrical Generation, Thousands of Pounds':
       name: Geothermal
       units: 'Electrical Generation, Thousands of Pounds'
@@ -23,7 +23,7 @@
         '2014': 100770007
 '49007':
   name: Carbon County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -68,7 +68,7 @@
         '2014': 4956871
 '49009':
   name: Daggett County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -99,7 +99,7 @@
         '2014': 174630
 '49013':
   name: Duchesne County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -130,7 +130,7 @@
         '2014': 12681
 '49015':
   name: Emery County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -175,7 +175,7 @@
         '2014': 5191820
 '49017':
   name: Garfield County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -206,7 +206,7 @@
         '2014': 153002
 '49019':
   name: Grand County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -237,7 +237,7 @@
         '2014': 57473
 '49027':
   name: Millard County
-  production:
+  products:
     'Geothermal - Electrical Generation, Kilowatt Hours':
       name: Geothermal
       units: 'Electrical Generation, Kilowatt Hours'
@@ -246,7 +246,7 @@
         '2014': 31309993
 '49031':
   name: Piute County
-  production:
+  products:
     Clay (tons):
       name: Clay
       units: tons
@@ -254,7 +254,7 @@
         '2014': 33520
 '49035':
   name: Salt Lake County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -271,7 +271,7 @@
         '2014': 2194
 '49037':
   name: San Juan County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -302,7 +302,7 @@
         '2014': 346543
 '49039':
   name: Sanpete County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -317,7 +317,7 @@
         '2009': 66297
 '49041':
   name: Sevier County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -334,7 +334,7 @@
         '2014': 1251918
 '49043':
   name: Summit County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -365,7 +365,7 @@
         '2014': 123285
 '49047':
   name: Uintah County
-  production:
+  products:
     Gilsonite (tons):
       name: Gilsonite
       units: tons
@@ -407,7 +407,7 @@
         '2014': 256147
 '49049':
   name: Utah County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -424,7 +424,7 @@
         '2014': 20441
 '49053':
   name: Washington County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf

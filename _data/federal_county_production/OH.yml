@@ -1,6 +1,6 @@
 '39009':
   name: Athens County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -23,7 +23,7 @@
         '2012': 14
 '39073':
   name: Hocking County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -46,7 +46,7 @@
         '2014': 1080
 '39087':
   name: Lawrence County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -59,7 +59,7 @@
         '2012': 4122
 '39089':
   name: Licking County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -73,7 +73,7 @@
         '2014': 428
 '39099':
   name: Mahoning County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -104,7 +104,7 @@
         '2014': 54233
 '39111':
   name: Monroe County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -135,7 +135,7 @@
         '2014': 11443
 '39119':
   name: Muskingum County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -166,7 +166,7 @@
         '2014': 3268
 '39127':
   name: Perry County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -197,7 +197,7 @@
         '2014': 2129
 '39133':
   name: Portage County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -228,7 +228,7 @@
         '2014': 152111
 '39151':
   name: Stark County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -259,7 +259,7 @@
         '2014': 19409
 '39155':
   name: Trumbull County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -290,7 +290,7 @@
         '2014': 87256
 '39167':
   name: Washington County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl

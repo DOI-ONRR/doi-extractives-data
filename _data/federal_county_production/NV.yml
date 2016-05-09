@@ -1,6 +1,6 @@
 '32001':
   name: Churchill County
-  production:
+  products:
     'Geothermal - Direct Utilization, Hundreds of Gallons':
       name: Geothermal
       units: 'Direct Utilization, Hundreds of Gallons'
@@ -31,7 +31,7 @@
         '2014': 800554841
 '32007':
   name: Elko County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -39,7 +39,7 @@
         '2014': 2247
 '32011':
   name: Eureka County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -70,7 +70,7 @@
         '2014': 3010668
 '32013':
   name: Humboldt County
-  production:
+  products:
     'Geothermal - Electrical Generation, Kilowatt Hours':
       name: Geothermal
       units: 'Electrical Generation, Kilowatt Hours'
@@ -83,7 +83,7 @@
         '2014': 85422511
 '32015':
   name: Lander County
-  production:
+  products:
     'Geothermal - Electrical Generation, Kilowatt Hours':
       name: Geothermal
       units: 'Electrical Generation, Kilowatt Hours'
@@ -100,7 +100,7 @@
         '2014': 331291678
 '32019':
   name: Lyon County
-  production:
+  products:
     'Geothermal - Electrical Generation, Kilowatt Hours':
       name: Geothermal
       units: 'Electrical Generation, Kilowatt Hours'
@@ -109,7 +109,7 @@
         '2014': 11135
 '32021':
   name: Mineral County
-  production:
+  products:
     'Geothermal - Electrical Generation, Kilowatt Hours':
       name: Geothermal
       units: 'Electrical Generation, Kilowatt Hours'
@@ -118,7 +118,7 @@
         '2014': 150459000
 '32023':
   name: Nye County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -149,7 +149,7 @@
         '2014': 276842
 '32027':
   name: Pershing County
-  production:
+  products:
     'Geothermal - Electrical Generation, Kilowatt Hours':
       name: Geothermal
       units: 'Electrical Generation, Kilowatt Hours'
@@ -160,7 +160,7 @@
         '2014': 70194551
 '32031':
   name: Washoe County
-  production:
+  products:
     'Geothermal - Electrical Generation, Kilowatt Hours':
       name: Geothermal
       units: 'Electrical Generation, Kilowatt Hours'

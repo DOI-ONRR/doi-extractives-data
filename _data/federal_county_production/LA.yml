@@ -1,6 +1,6 @@
 '22011':
   name: Beauregard Parish
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -31,7 +31,7 @@
         '2014': 57
 '22013':
   name: Bienville Parish
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -62,7 +62,7 @@
         '2014': 173020
 '22015':
   name: Bossier Parish
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -93,7 +93,7 @@
         '2014': 9046614
 '22017':
   name: Caddo Parish
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -124,7 +124,7 @@
         '2014': 237508
 '22021':
   name: Caldwell Parish
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -140,7 +140,7 @@
         '2014': 1351
 '22023':
   name: Cameron Parish
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -157,7 +157,7 @@
         '2007': 2214
 '22027':
   name: Claiborne Parish
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -188,7 +188,7 @@
         '2014': 139446
 '22031':
   name: De Soto Parish
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -219,7 +219,7 @@
         '2014': 816388
 '22033':
   name: East Baton Rouge Parish
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -250,7 +250,7 @@
         '2014': 6906
 '22043':
   name: Grant Parish
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -258,7 +258,7 @@
         '2014': 3404
 '22057':
   name: Lafourche Parish
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -283,7 +283,7 @@
         '2014': 1
 '22059':
   name: La Salle Parish
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -310,7 +310,7 @@
         '2012': 37
 '22061':
   name: Lincoln Parish
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -340,7 +340,7 @@
         '2014': 1281
 '22067':
   name: Morehouse Parish
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -357,7 +357,7 @@
         '2014': 1378
 '22069':
   name: Natchitoches Parish
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -383,7 +383,7 @@
         '2009': 2696
 '22073':
   name: Ouachita Parish
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -400,7 +400,7 @@
         '2014': 393
 '22075':
   name: Plaquemines Parish
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -431,7 +431,7 @@
         '2014': 2253316
 '22079':
   name: Rapides Parish
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -462,7 +462,7 @@
         '2014': 6241
 '22081':
   name: Red River Parish
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -481,7 +481,7 @@
         '2014': 24364
 '22099':
   name: St. Martin Parish
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -512,7 +512,7 @@
         '2014': 2009
 '22101':
   name: St. Mary Parish
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -529,7 +529,7 @@
         '2008': 166
 '22109':
   name: Terrebonne Parish
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -548,7 +548,7 @@
         '2014': 60321
 '22111':
   name: Union Parish
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -565,7 +565,7 @@
         '2014': 3216
 '22113':
   name: Vermilion Parish
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -596,7 +596,7 @@
         '2014': 5293
 '22115':
   name: Vernon Parish
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -627,7 +627,7 @@
         '2014': 2699
 '22119':
   name: Webster Parish
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -658,7 +658,7 @@
         '2014': 26829
 '22127':
   name: Winn Parish
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl

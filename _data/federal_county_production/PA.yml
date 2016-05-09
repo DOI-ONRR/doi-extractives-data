@@ -1,6 +1,6 @@
 '42053':
   name: Forest County
-  production:
+  products:
     Oil (bbl):
       name: Oil
       units: bbl
@@ -23,7 +23,7 @@
         '2014': 10914
 '42063':
   name: Indiana County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf
@@ -40,7 +40,7 @@
         '2014': 3379
 '42129':
   name: Westmoreland County
-  production:
+  products:
     Gas (mcf):
       name: Gas
       units: mcf

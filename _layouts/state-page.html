@@ -30,7 +30,6 @@ layout: default
 
 {% assign disbursements = site.data.state_disbursements[state_id] %}
 
-
 <main id="state-{{ state_id }}" class="container-outer">
   <h1>{{ state_name }}</h1>
 
@@ -133,7 +132,7 @@ layout: default
         in export revenue, or
         {{ exports_commodities.All[year].percent | percent }}%.
       {% else %}
-        {{ state_name }} did not generate any export revenue from extractives in {{ year }}.
+        Extractive industries did not account for any of {{ state_name }}'s top 25 exports in {{ year }}.
       {% endif %}
     {% endcapture %}
 
@@ -155,9 +154,34 @@ layout: default
     </ul>
   </section>
 
+  <section id="ownership">
+    <h2>Land ownership</h2>
+    <p>In the United States, land can be owned by four main types of landowners:</p>
+      <ul class="list-bullet">
+        <li>Citizens or corporations</li>
+        <li>State or local governments</li>
+        <li>Indian tribes or individuals</li>
+        <li>The federal government</li>
+      </ul>
+    <p>When companies extract natural resources on federal land, they pay royalties, rents, bonuses, and other fees — much like they would to any landowner. They also have to report more data about their activities on government-owned land than on private land.</p>
+    <p>In {{ state_name }}, [#] percent of land is owned by the federal government.</p>
+  </section>
+
+  <section id="process">
+    <h2>Process</h2>
+    <p>When companies extract natural resources on federal land [or offshore areas], they must follow specific processes laid out in law or policy. The specifics of the process depend on the kind of resource, and often affect how much revenue the federal government ultimately collects.</p>
+    <p>For details, read more about the specific processes for coal, oil and gas, renewable resources, and hardrock minerals.</p>
+  </section>
 
   <section id="revenue" class="federal revenue">
-    <h2>Federal Revenue</h2>
+    <h2>Revenue</h2>
+
+    <p>The federal government collects revenue from companies that extract natural resources on federal land. Companies pay different fees depending on where they are in the process of using the land — for instance, they might pay for the right to explore for resources, pay rent while exploring where to extract, and then pay a percentage of production value once they start producing resources on the land.</p>
+
+    <h3>Revenue from federal lands</h3>
+
+    <p>[#] percent of land in Utah is owned by the federal government.</p>
+    <p>In {{ year }}, companies paid the federal government ${{ revenue_total | intcomma }} to extract natural resources on federal land (or explore federal land for resources).</p>
 
     {% assign oilgas = 'Oil & Gas (Non-Royalty)' %}
     <section class="county-map-table">

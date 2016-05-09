@@ -35,7 +35,8 @@ site-data: \
 data/state_all_production.yml:
 	$(query) --format ndjson " \
 		SELECT \
-		  state, product, year, \
+		  state, year, \
+		  product, product_name, units, \
 		  ROUND(volume) AS volume, \
 		  ROUND(percent, 2) AS percent, \
 		  rank \
@@ -320,11 +321,14 @@ tables/all-production: \
 	tables/all_production_oil \
 	tables/all_production_naturalgas \
 	tables/all_production_renewables
-	@$(call load-sql,data/db/rollup-all-production.sql)
+	@$(call load-sql,data/all-production/rollup.sql)
 
 tables/all_production_coal: data/_input/eia/commodity/coal.tsv
 	@$(call drop-table,all_production_coal)
-	$(call load-model,$^,all_production_coal)
+	tmp=$^.ndjson; \
+	$(tito) --map ./data/all-production/transform-coal.js -r tsv $^ > $$tmp && \
+	$(tables) -t ndjson -n all_production_coal -i $$tmp; \
+	rm $$tmp
 
 tables/all_production_oil: data/_input/eia/commodity/oil.tsv
 	@$(call drop-table,all_production_oil)

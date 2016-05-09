@@ -2,7 +2,8 @@
 DROP TABLE IF EXISTS federal_state_production;
 CREATE TABLE federal_state_production AS
     SELECT
-        year, state, product, SUM(volume) AS volume
+        year, state, product, product_name, units,
+        SUM(volume) AS volume
     FROM federal_county_production
     WHERE
         state != 'Withheld' AND
@@ -10,7 +11,7 @@ CREATE TABLE federal_state_production AS
     GROUP BY
         year, state, product
     ORDER BY
-        year, product, volume DESC;
+        year, product, product_name, units, volume DESC;
 
 -- create regional production rollups as an aggregate view on
 -- state and offshore production
@@ -18,32 +19,32 @@ DROP TABLE IF EXISTS federal_regional_production;
 CREATE TABLE federal_regional_production AS
     SELECT
         year, state AS region_id, 'state' AS region_type,
-        product, SUM(volume) AS volume
+        product, product_name, units, SUM(volume) AS volume
     FROM federal_state_production
     GROUP BY
-        year, product
+        year, product, product_name, units
 UNION
     SELECT
         year, area.id AS region_id, 'offshore' AS region_type,
-        product, SUM(volume) AS volume
+        product, product_name, units, SUM(volume) AS volume
     FROM federal_offshore_production AS offshore
     INNER JOIN offshore_planning_areas AS area
     ON
         offshore.planning_area = area.name
     GROUP BY
-        year, product
+        year, product, product_name, units
 ORDER BY
-    year, product, volume DESC;
+    year, product, product_name, units, volume DESC;
 
 -- then create national revenue rollups as an aggregate view on
 -- regional revenue
 DROP TABLE IF EXISTS federal_national_production;
 CREATE TABLE federal_national_production AS
     SELECT
-        year, product, SUM(volume) AS volume
+        year, product, product_name, units, SUM(volume) AS volume
     FROM federal_regional_production
     GROUP BY
-        year, product;
+        year, product, product_name, units;
 
 -- create regional rankings views
 DROP TABLE IF EXISTS federal_production_state_rank;
@@ -52,6 +53,7 @@ CREATE TABLE federal_production_state_rank AS
         state.year AS year,
         state.state AS state,
         state.product AS product,
+        state.units AS units,
         state.volume AS volume,
         national.volume AS total,
         100 * (state.volume / national.volume) AS percent,

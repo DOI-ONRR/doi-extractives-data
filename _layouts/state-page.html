@@ -194,9 +194,9 @@ layout: default
             {% assign total = values.All[year] | default: 0 | plus: revenue_commodities.Oil.All[year] | plus: revenue_commodities.Gas.All[year] %}
             <th scope="row" rowspan="2" data-value="{{ total }}"><strong>Oil &amp; Gas</strong> ${{ total | intcomma }}</th>
             <td rowspan="2" data-value="{{ values.Bonus[year] | default: 0 }}">${{ values.Bonus[year] | default: 0 | intcomma }}</td>
-            <td rowspan="2" data-value="{{ values.Rents[year] | default: 0 }}">${{ values.Bonus[year] | default: 0 | intcomma }}</td>
+            <td rowspan="2" data-value="{{ values.Rents[year] | default: 0 }}">${{ values.Rents[year] | default: 0 | intcomma }}</td>
             <td data-value="{{ revenue_commodities.Oil.Royalties[year] | default: 0 }}"><strong>Oil</strong> ${{ revenue_commodities.Oil.Royalties[year] | default: 0 | intcomma }}</td>
-            <td rowspan="2" data-value="{{ values['Other Revenues'][year] | default: 0 }}">${{ values.Bonus[year] | default: 0 | intcomma }}</td>
+            <td rowspan="2" data-value="{{ values['Other Revenues'][year] | default: 0 }}">${{ values['Other Revenues'][year] | default: 0 | intcomma }}</td>
           </tr>
           <tr>
             <td data-value="{{ revenue_commodities.Gas.Royalties[year] | default: 0 }}"><strong>Gas</strong> ${{ revenue_commodities.Gas.Royalties[year] | default: 0 | intcomma }}</td>

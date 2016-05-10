@@ -156,32 +156,30 @@ layout: default
 
   <section id="ownership">
     <h2>Land ownership</h2>
-    <p>In the United States, land can be owned by four main types of landowners:</p>
-      <ul class="list-bullet">
-        <li>Citizens or corporations</li>
-        <li>State or local governments</li>
-        <li>Indian tribes or individuals</li>
-        <li>The federal government</li>
-      </ul>
+    <p><strong>In {{ state_name }}, {{ site.data.land_stats[state_id].federal_percent | percent }} percent of land is owned by the federal government.</strong></p>
+
+    [LAND OWNERSHIP MAP?]
+
     <p>When companies extract natural resources on federal land, they pay royalties, rents, bonuses, and other fees — much like they would to any landowner. They also have to report more data about their activities on government-owned land than on private land.</p>
-    <p>In {{ state_name }}, [#] percent of land is owned by the federal government.</p>
   </section>
 
   <section id="process">
     <h2>Process</h2>
-    <p>When companies extract natural resources on federal land [or offshore areas], they must follow specific processes laid out in law or policy. The specifics of the process depend on the kind of resource, and often affect how much revenue the federal government ultimately collects.</p>
-    <p>For details, read more about the specific processes for coal, oil and gas, renewable resources, and hardrock minerals.</p>
+    <p>When companies extract natural resources on federal land, they follow laws or policies that govern how rights are awarded and what fees they pay to the government. The specifics of the process depend on the kind of resource, and often affect how much revenue the federal government ultimately collects.</p>
+    <p>For details, read more about the different processes for awarding rights and extracting resources: <a href="{{ site.baseurl }}/how-it-works/coal/">coal</a>, <a href="{{ site.baseurl }}/how-it-works/onshore-oil-gas/">oil and gas</a>, <a href="{{ site.baseurl }}/how-it-works/onshore-renewables/">renewable resources</a>, and <a href="{{ site.baseurl }}/how-it-works/minerals/">hardrock minerals</a>.</p>
   </section>
 
   <section id="revenue" class="federal revenue">
     <h2>Revenue</h2>
 
-    <p>The federal government collects revenue from companies that extract natural resources on federal land. Companies pay different fees depending on where they are in the process of using the land — for instance, they might pay for the right to explore for resources, pay rent while exploring where to extract, and then pay a percentage of production value once they start producing resources on the land.</p>
+    <p>When companies want to extract natural resources on federal land, they pay fees depending on where they are in the process of using the land. For instance, a company might pay for the right to explore for resources, pay rent while exploring the land, and then pay a percentage of production value once they start producing resources on the land.</p>
+
+    [TABLE OR GRAPHIC SHOWING RATES FOR RELEVANT COMMODITIES?]
 
     <h3>Revenue from federal lands</h3>
 
-    <p>[#] percent of land in Utah is owned by the federal government.</p>
-    <p>In {{ year }}, companies paid the federal government ${{ revenue_total | intcomma }} to extract natural resources on federal land (or explore federal land for resources).</p>
+    <p>{{ site.data.land_stats[state_id].federal_percent | percent }} percent of land in {{ state_name }} is owned by the federal government.</p>
+    <p>In {{ year }}, companies paid the federal government a total of ${{ revenue_total | intcomma }} to extract natural resources on federal land (or lease federal land for that purpose).</p>
 
     {% assign oilgas = 'Oil & Gas (Non-Royalty)' %}
     <section class="county-map-table">
@@ -310,8 +308,21 @@ layout: default
 
   </section>
 
+  <section id="state-local-revenue" class="state revenue">
+    <h3>Revenue from state land</h3>
+    <p>The State of {{ state_name }} owns [#] percent of land in the state. Natural resource extraction on state land is governed by <a href="{{ site.baseurl }}/how-it-works/state-laws-and-regulations/#role-of-state-government-agencies/</a>">state laws and regulations</a>.</p>
+    <p>We don't have detailed data about state revenue from natural resource extraction on land owned by the state. To learn more about regulations and state revenues in {{ state_name }}, see <a href="{{ site.baseurl }}/how-it-works/state-legal-fiscal-info/">{{ state_name }} legal and fiscal information</a>.</p>
+  </section>
+
+  <section id="" class="private-lands revenue">
+    <h3>Revenue from private lands</h3>
+    <p>[#] percent of land in {{ state_name }} is privately owned by individuals or corporations.</p>
+    <p>Companies that extract natural resources on private land must pay income taxes, like any other company. Learn more about <a href="{{ site.baseurl }}/how-it-works/revenues/#all-lands-and-waters">revenue from extraction on all lands and waters</a>.</p>
+  </section>
+
+
   <section id="federal-production" class="federal production">
-    <h2>Production on Federal Lands</h2>
+    <h2>Production on federal land</h2>
     <section class="county-map-table">
       <h3>Products</h3>
       {% for product in federal_products %}

@@ -158,7 +158,16 @@ layout: default
     <h2>Land ownership</h2>
     <p><strong>In {{ state_name }}, {{ site.data.land_stats[state_id].federal_percent | percent }} percent of land is owned by the federal government.</strong></p>
 
-    [LAND OWNERSHIP MAP?]
+    <svg class="county ownership map" viewBox="{{ site.data.viewboxes[state_id] }}">
+      {% capture states_svg %}{{ site.baseurl }}/maps/states/all.svg{% endcapture %}
+      {% capture state_svg %}{{ site.baseurl }}/maps/states/{{ state_id }}.svg{% endcapture %}
+      <use class="states features" xlink:href="{{ states_svg }}#states"></use>
+      <use class="states mesh" xlink:href="{{ states_svg }}#states-mesh"></use>
+      <use class="counties features" xlink:href="{{ state_svg }}#counties"></use>
+      {% include maps/federal_land_ownership.svg %}
+      <use class="counties mesh" xlink:href="{{ state_svg }}#counties-mesh"></use>
+      <use id="state-outline" class="state feature overlay" xlink:href="{{ states_svg }}#{{ state_id }}"></use>
+    </svg>
 
     <p>When companies extract natural resources on federal land, they pay royalties, rents, bonuses, and other fees — much like they would to any landowner. They also have to report more data about their activities on government-owned land than on private land.</p>
   </section>

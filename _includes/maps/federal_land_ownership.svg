@@ -1,4 +1,5 @@
 <image class="federal ownership"
   xlink:href="{{ site.baseurl }}/maps/land/combined.gif"
   image-rendering="pixelated"
+  {% if include.clip %}clip-path="url({{ include.clip }})"{% endif %}
   width="960" height="670"/>

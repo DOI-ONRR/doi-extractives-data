@@ -66,4 +66,8 @@ svg.map {
     opacity: 0.05;
     pointer-events: none;
   }
+
+  &.ownership .ownership {
+    opacity: 0.15;
+  }
 }

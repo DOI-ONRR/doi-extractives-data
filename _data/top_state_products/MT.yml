@@ -1,21 +1,11 @@
 revenue:
-  '2006':
-    - product: Sulfur
-      value: 4642.98
+  '2004':
+    - product: Coal-Subbituminous-Raw
+      value: -671286.55
       rank: 2
-      percent: 27.88
-  '2010':
-    - product: Sulfur
-      value: 7812.02
+      percent: 23.85
+  '2008':
+    - product: Hardrock
+      value: 3649.5
       rank: 2
-      percent: 354.77
-  '2011':
-    - product: Sulfur
-      value: 19578.08
-      rank: 3
-      percent: 29.51
-  '2013':
-    - product: Sulfur
-      value: 10629.92
-      rank: 2
-      percent: 48.52
+      percent: 20.71

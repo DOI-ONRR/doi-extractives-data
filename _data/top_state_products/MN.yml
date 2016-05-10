@@ -1,51 +1,87 @@
 revenue:
-  '2006':
-    - product: Hardrock
-      value: 105510.32
-      rank: 2
-      percent: 25.15
-  '2007':
-    - product: Hardrock
-      value: 101128
+  '2004':
+    - product: Copper
+      value: 13722.5
       rank: 1
-      percent: 123.99
+      percent: 100
+  '2005':
+    - product: Copper
+      value: 18944.5
+      rank: 1
+      percent: 100
+    - product: Hardrock
+      value: 18757
+      rank: 2
+      percent: 40.5
+  '2006':
+    - product: Copper
+      value: 28721
+      rank: 1
+      percent: 158.92
+    - product: Hardrock
+      value: 27070
+      rank: 2
+      percent: 41.21
+  '2007':
+    - product: Copper
+      value: 26110
+      rank: 1
+      percent: 100
+    - product: Hardrock
+      value: 21393
+      rank: 1
+      percent: 47.07
   '2008':
     - product: Hardrock
-      value: 100819
+      value: 24299.5
       rank: 1
-      percent: 120.36
+      percent: 137.92
+    - product: Copper
+      value: 26110
+      rank: 1
+      percent: 100
   '2009':
-    - product: Hardrock
-      value: 98942.34
+    - product: Copper
+      value: 26110
       rank: 1
-      percent: 51.91
+      percent: 100
+    - product: Hardrock
+      value: 23072.5
+      rank: 1
+      percent: 39.81
   '2010':
-    - product: Hardrock
-      value: 99374
+    - product: Copper
+      value: 26110
       rank: 1
-      percent: 73.01
+      percent: 100
+    - product: Hardrock
+      value: 23666.5
+      rank: 1
+      percent: 57.81
   '2011':
-    - product: Hardrock
-      value: 89829
+    - product: Copper
+      value: 26110
       rank: 1
-      percent: 64.53
+      percent: 100
+    - product: Hardrock
+      value: 18715
+      rank: 1
+      percent: 47.95
   '2012':
-    - product: Hardrock
-      value: 117249.24
+    - product: Copper
+      value: 26110
       rank: 1
-      percent: 67.53
+      percent: 100
+    - product: Hardrock
+      value: 32481
+      rank: 1
+      percent: 57.22
   '2013':
-    - product: Hardrock
-      value: 131240
+    - product: Copper
+      value: 23499
       rank: 1
-      percent: 79.9
-  '2014':
+      percent: 100
     - product: Hardrock
-      value: 115582
+      value: 42121
       rank: 1
-      percent: 59.39
-  '2015':
-    - product: Hardrock
-      value: 99716
-      rank: 1
-      percent: 54.26
+      percent: 72.29

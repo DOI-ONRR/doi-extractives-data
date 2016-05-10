@@ -22,11 +22,11 @@ GROUP BY
     year, state, county, fips, revenue_type;
 
 -- create summary revenue type rows by county
-DELETE FROM county_revenue WHERE revenue_type = 'All';
-INSERT INTO county_revenue
-    (year, state, county, fips, commodity, product, revenue_type, revenue)
+DROP TABLE IF EXISTS county_revenue_type;
+CREATE TABLE county_revenue_type AS
 SELECT
-    year, state, county, fips, commodity, product, 'All', SUM(revenue)
+    year, state, county, fips, commodity, product, revenue_type,
+    SUM(revenue) AS revenue
 FROM county_revenue
 GROUP BY
     year, state, county, fips, commodity, product;

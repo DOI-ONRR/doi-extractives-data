@@ -1,22 +1,11 @@
-revenue:
-  '2011':
-    - product: Salt
-      value: 17918.56
-      rank: 3
-      percent: 1763.95
-  '2013':
-    - product: Salt
-      value: 8449.3
-      rank: 3
-      percent: 317.77
 all_production:
   '2012':
     - product: Solar
-      value: 955
+      value: 955000
       rank: 2
       percent: 22.08
   '2013':
     - product: Solar
-      value: 2111
+      value: 2111000
       rank: 2
       percent: 23.37

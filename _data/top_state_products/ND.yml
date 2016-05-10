@@ -1,99 +1,83 @@
 revenue:
-  '2006':
-    - product: Leonardite
-      value: 27077.42
+  '2004':
+    - product: Coal-Lignite-Raw
+      value: 21957.37
       rank: 1
       percent: 100
     - product: Nitrogen
-      value: 3788.78
+      value: 3830.72
+      rank: 1
+      percent: 100
+  '2005':
+    - product: Nitrogen
+      value: 2621.35
+      rank: 1
+      percent: 100
+  '2006':
+    - product: Leonardite
+      value: 13538.71
+      rank: 1
+      percent: 100
+    - product: Nitrogen
+      value: 1894.39
       rank: 1
       percent: 100
   '2007':
     - product: Nitrogen
-      value: 1919.2
+      value: 959.6
       rank: 1
       percent: 100
   '2008':
     - product: Nitrogen
-      value: 1827.3
+      value: 913.65
       rank: 1
       percent: 97.03
   '2009':
     - product: Leonardite
-      value: 31053.1
+      value: 15526.55
       rank: 1
       percent: 100
     - product: Nitrogen
-      value: 2084.74
+      value: 1042.37
       rank: 1
       percent: 100
-    - product: Oil & Gas (Non-Royalty)
-      value: 189798781.42
-      rank: 1
-      percent: 36.71
+    - product: Hardrock
+      value: 16815
+      rank: 2
+      percent: 29.01
   '2010':
     - product: Leonardite
-      value: 31851.26
+      value: 15925.63
       rank: 1
       percent: 100
     - product: Nitrogen
-      value: 2206.76
+      value: 1103.38
       rank: 1
       percent: 91.88
   '2011':
     - product: Nitrogen
-      value: 2196.04
+      value: 1098.02
       rank: 1
       percent: 127.49
     - product: Leonardite
-      value: 1795.96
+      value: 897.98
       rank: 1
       percent: 100
-    - product: Oil & Gas (Non-Royalty)
-      value: 207405924.7
-      rank: 2
-      percent: 26.8
   '2012':
     - product: Leonardite
-      value: 40201.66
+      value: 20100.83
       rank: 1
       percent: 100
     - product: Nitrogen
-      value: 2573.32
+      value: 1286.66
       rank: 1
       percent: 92.79
   '2013':
     - product: Leonardite
-      value: 99419.34
+      value: 49709.67
       rank: 1
       percent: 100
     - product: Nitrogen
-      value: 539.7
+      value: 269.85
       rank: 2
       percent: 40.67
-    - product: Oil & Gas (Non-Royalty)
-      value: 127952670.92
-      rank: 2
-      percent: 24.65
-  '2014':
-    - product: Leonardite
-      value: 251202.16
-      rank: 1
-      percent: 100
-    - product: Nitrogen
-      value: 3878.92
-      rank: 1
-      percent: 97.55
-    - product: Oil- Sweet
-      value: 3062012.04
-      rank: 1
-      percent: 88.61
-  '2015':
-    - product: Leonardite
-      value: 200219.56
-      rank: 1
-      percent: 100
-    - product: Oil- Sweet
-      value: 511109.22
-      rank: 1
-      percent: 93.82

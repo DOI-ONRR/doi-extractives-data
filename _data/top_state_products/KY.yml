@@ -1,52 +1,57 @@
 all_production:
   '1967':
-    - product: Natural Gas (MMcf)
-      value: 89174
+    - product: Natural Gas (mcf)
+      value: 89174000
       rank: 2
       percent: 26.26
   '1968':
-    - product: Natural Gas (MMcf)
-      value: 89039
+    - product: Natural Gas (mcf)
+      value: 89039000
       rank: 2
       percent: 27.04
   '1969':
-    - product: Natural Gas (MMcf)
-      value: 81304
+    - product: Natural Gas (mcf)
+      value: 81304000
       rank: 2
       percent: 26.1
   '1970':
-    - product: Natural Gas (MMcf)
-      value: 77892
+    - product: Natural Gas (mcf)
+      value: 77892000
       rank: 2
       percent: 26.28
   '1971':
-    - product: Natural Gas (MMcf)
-      value: 72723
+    - product: Natural Gas (mcf)
+      value: 72723000
       rank: 2
       percent: 28.58
   '1972':
-    - product: Natural Gas (MMcf)
-      value: 63648
+    - product: Natural Gas (mcf)
+      value: 63648000
       rank: 2
       percent: 24.97
   '1973':
-    - product: Natural Gas (MMcf)
-      value: 62396
+    - product: Natural Gas (mcf)
+      value: 62396000
       rank: 2
       percent: 21.51
   '1974':
-    - product: Natural Gas (MMcf)
-      value: 71876
+    - product: Natural Gas (mcf)
+      value: 71876000
       rank: 2
       percent: 21.91
 revenue:
+  '2005':
+    - product: Oil Lost
+      value: 286.06
+      rank: 1
+      percent: 100
   '2007':
     - product: Coal-Bituminous-Processed
-      value: 566304.64
+      value: 283152.32
       rank: 1
       percent: 100
   '2008':
     - product: Coal-Bituminous-Processed
-      value: -566304.64
+      value: -283152.32
       rank: 1
       percent: 100

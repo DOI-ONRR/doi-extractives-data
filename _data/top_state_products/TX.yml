@@ -1,74 +1,74 @@
 all_production:
   '2004':
-    - product: Natural Gas (MMcf)
-      value: 5733918
+    - product: Natural Gas (mcf)
+      value: 5733918000
       rank: 1
       percent: 23.92
     - product: Wind
-      value: 3138
+      value: 3138000
       rank: 2
       percent: 22.19
   '2005':
-    - product: Natural Gas (MMcf)
-      value: 6006837
+    - product: Natural Gas (mcf)
+      value: 6006837000
       rank: 1
       percent: 25.61
     - product: Wind
-      value: 4237
+      value: 4237000
       rank: 2
       percent: 23.79
   '2006':
-    - product: Natural Gas (MMcf)
-      value: 6326433
+    - product: Natural Gas (mcf)
+      value: 6326433000
       rank: 1
       percent: 26.88
     - product: Wind
-      value: 6671
+      value: 6671000
       rank: 1
       percent: 25.09
   '2007':
-    - product: Natural Gas (MMcf)
-      value: 6960858
+    - product: Natural Gas (mcf)
+      value: 6960858000
       rank: 1
       percent: 28.22
     - product: Wind
-      value: 9006
+      value: 9006000
       rank: 1
       percent: 26.14
   '2008':
-    - product: Natural Gas (MMcf)
-      value: 7800655
+    - product: Natural Gas (mcf)
+      value: 7800655000
       rank: 1
       percent: 30.43
     - product: Wind
-      value: 16225
+      value: 16225000
       rank: 1
       percent: 29.31
   '2009':
-    - product: Natural Gas (MMcf)
-      value: 7653647
+    - product: Natural Gas (mcf)
+      value: 7653647000
       rank: 1
       percent: 29.37
     - product: Wind
-      value: 20026
+      value: 20026000
       rank: 1
       percent: 27.1
   '2010':
-    - product: Natural Gas (MMcf)
-      value: 7593697
+    - product: Natural Gas (mcf)
+      value: 7593697000
       rank: 1
       percent: 28.32
     - product: Wind
-      value: 26251
+      value: 26251000
       rank: 1
       percent: 27.73
   '2011':
-    - product: Natural Gas (MMcf)
-      value: 7934689
+    - product: Natural Gas (mcf)
+      value: 7934689000
       rank: 1
       percent: 27.86
     - product: Wind
-      value: 30548
+      value: 30548000
       rank: 1
       percent: 25.42
     - product: Oil (bbl)
@@ -80,12 +80,12 @@ all_production:
       value: 722130
       rank: 1
       percent: 28.23
-    - product: Natural Gas (MMcf)
-      value: 8143510
+    - product: Natural Gas (mcf)
+      value: 8143510000
       rank: 1
       percent: 27.57
     - product: Wind
-      value: 32214
+      value: 32214000
       rank: 1
       percent: 22.88
   '2013':
@@ -93,22 +93,11 @@ all_production:
       value: 923561
       rank: 1
       percent: 31.81
-    - product: Natural Gas (MMcf)
-      value: 8299472
+    - product: Natural Gas (mcf)
+      value: 8299472000
       rank: 1
       percent: 28.11
     - product: Wind
-      value: 35874
+      value: 35874000
       rank: 1
       percent: 21.37
-revenue:
-  '2014':
-    - product: Flash Gas
-      value: 5200.32
-      rank: 2
-      percent: 31.22
-  '2015':
-    - product: Unprocessed (Wet) Gas
-      value: 19787093.5
-      rank: 3
-      percent: 26.49

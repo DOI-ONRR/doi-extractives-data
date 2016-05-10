@@ -121,11 +121,11 @@ data/revenue_types.yml:
 	$(query) --format ndjson " \
 		SELECT \
 			state, year, revenue_type, \
-			ROUND(SUM(revenue)) AS revenue \
-		FROM county_revenue \
-		WHERE revenue_type IS NOT NULL \
-		GROUP BY \
-			state, revenue_type, year \
+			ROUND(revenue) AS revenue \
+		FROM state_revenue_type \
+		WHERE \
+			state IS NOT NULL \
+			AND revenue_type IS NOT NULL \
 		ORDER BY \
 			state, revenue_type, year" \
 		| $(nestly) --if ndjson \

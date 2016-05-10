@@ -21,15 +21,24 @@ FROM county_revenue
 GROUP BY
     year, state, county, fips, revenue_type;
 
--- create summary revenue type rows by county
-DROP TABLE IF EXISTS county_revenue_type;
-CREATE TABLE county_revenue_type AS
+-- create summary revenue type rows by state
+DROP TABLE IF EXISTS state_revenue_type;
+CREATE TABLE state_revenue_type AS
+    SELECT
+        year, state, commodity, product, revenue_type,
+        SUM(revenue) AS revenue
+    FROM county_revenue
+    GROUP BY
+        year, state, commodity, product;
+
+-- create a county-level
+INSERT INTO state_revenue_type
+    (year, state, commodity, product, revenue_type, revenue)
 SELECT
-    year, state, county, fips, commodity, product, revenue_type,
-    SUM(revenue) AS revenue
+    year, state, commodity, product, 'All', SUM(revenue)
 FROM county_revenue
 GROUP BY
-    year, state, county, fips, commodity, product;
+    year, state, commodity, product;
 
 -- create state revenue rollups
 DROP TABLE IF EXISTS state_revenue;

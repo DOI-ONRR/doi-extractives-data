@@ -6,6 +6,8 @@ CREATE TABLE all_regional_production AS
         year, states.abbr AS region,
         'Coal' AS commodity,
         'Coal (short tons)' AS product,
+        'Coal' AS product_name,
+        'short tons' AS units,
         SUM(volume) AS volume
     FROM all_production_coal
     INNER JOIN states ON
@@ -16,15 +18,19 @@ UNION
     SELECT
         year, region,
         'Gas' AS commodity,
-        'Natural Gas (MMcf)' AS product,
-        volume
+        'Natural Gas (mcf)' AS product,
+        'Natural Gas' AS product_name,
+        'mcf' AS units,
+        volume * 1000 AS volume
     FROM all_production_naturalgas
 UNION
     SELECT
         year, states.abbr AS region,
         'Renewables' AS commodity,
         source AS product,
-        volume
+        source AS product_name,
+        NULL AS units,
+        volume * 1000 AS volume
     FROM all_production_renewables
     INNER JOIN states ON
         states.name = state
@@ -33,17 +39,19 @@ UNION
         year, region,
         'Oil' AS commodity,
         'Oil (bbl)' AS product,
+        'Oil' AS product_name,
+        'bbl' AS units,
         volume
     FROM all_production_oil;
 
 DROP TABLE IF EXISTS all_national_production;
 CREATE TABLE all_national_production AS
     SELECT
-        year, commodity, product,
+        year, commodity, product, product_name, units,
         SUM(volume) AS volume
     FROM all_regional_production
     GROUP BY
-        year, commodity, product;
+        year, commodity, product, product_name, units;
 
 -- create state rankings views
 DROP TABLE IF EXISTS all_production_state_rank;
@@ -52,6 +60,8 @@ CREATE TABLE all_production_state_rank AS
         state.year AS year,
         state.region AS state,
         state.product AS product,
+        state.product_name AS product_name,
+        state.units AS units,
         state.volume AS volume,
         national.volume AS total,
         -- these numbers are both integers, so we need to explicitly cast one

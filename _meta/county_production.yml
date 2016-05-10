@@ -1,7 +1,10 @@
 '{fips}':
   name: '{county}'
-  production:
+  products:
     '{product}':
-      '{year}': '{value}'
+      name: '{product_name}'
+      units: '{units}'
+      volume:
+        '{year}': '{value}'
 
 

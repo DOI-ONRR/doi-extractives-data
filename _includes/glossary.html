@@ -10,7 +10,7 @@
   <label for="drawer-search-bar" class="label">Filter glossary terms</label>
   <input id="drawer-search-bar" class="js-glossary-search drawer-search" type="search" placeholder="e.g. Fossil fuel">
   <div id="glossary-result">
-    <ul class="js-glossary-list" accordion="glossary-accordion">
+    <ul class="js-glossary-list list-unstyled" accordion="glossary-accordion">
       {% for term in site.data.terms %}
       <li class="glossary-item">
         <h2 class="h5 glossary-term">{{term[0]}}</h2>

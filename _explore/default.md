@@ -110,7 +110,6 @@ permalink: /explore/
       </div>
     </div>
   </section>
-
 </section>
 <!-- <section class="slab-alpha container-outer container-padded u-centered">
     <h3>Not sure where to go? Start here &#8230;</h2>

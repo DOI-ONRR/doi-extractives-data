@@ -6,6 +6,12 @@
 // <ul>
 //  <li>Default list</li>
 // </ul>
+// <ul>
+//  <li>List</li>
+//  <ul>
+//    <li>Nested List</li>
+//  </ul>
+// </ul>
 // <ul class="list-unstyled">
 //  <li>Unstyled list</li>
 // </ul>
@@ -24,10 +30,28 @@
 //
 // Styleguide elements.lists
 
-ul,
-ol {
-  list-style-type: square;
+ol,
+ul {
   padding-left: $base-padding;
+  margin-bottom: $base-padding;
+}
+
+ul {
+  list-style-type: disc;
+
+  ul {
+    list-style-type: square;
+    margin-bottom: 0;
+
+    ul {
+      list-style-type: circle;
+      margin-bottom: 0;
+    }
+  }
+}
+
+li {
+  padding-bottom: $base-padding-lite;
 }
 
 .list-unstyled {

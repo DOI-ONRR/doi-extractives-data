@@ -1,6 +1,6 @@
 ---
 title: Ownership | How it Works
-layout: narrative
+layout: content
 permalink: /how-it-works/ownership/
 nav_description: Jump to a section
 nav_items:
@@ -20,27 +20,24 @@ nav_items:
   - name: split-ownership
     title: Split Ownership
   - nav_group_close: true
+breadcrumb:
+  - title: How it works
+    permalink: /how-it-works/
+title_display: Ownership
+selector: hash
 ---
 
-<div>
-  <a class="revenues_subpage-breadcrumb" href="{{ site.baseurl }}/how-it-works/">How it works</a>
-  /
-</div>
-<h1 id="introduction" data-nav-header="introduction">Ownership</h1>
+> Natural resource ownership in the United States is closely tied to land ownership. We'll talk about both these types of ownership here.
 
-<p class="case_studies_intro-para">Natural resource ownership in the United States is closely tied to land ownership. We'll talk about both these types of ownership here.</p>
+{% include selector.html %}
 
-<nav class="hash_selector">
-  {% include hash_selector.html %}
-</nav>
-
-<h2>Land ownership</h2>
+## Land ownership
 
 There are four main types of land owners: citizens and corporations; the federal government; state and local governments; and Indian tribes and individuals. There are two types of owners for submerged lands under the ocean: states and the federal government.
 
 <h3 id="private-lands" data-nav-header="private-lands">Private lands</h3>
 
-<p>Private lands are owned by private citizens or corporations.</p>
+Private lands are owned by private citizens or corporations.
 
 <h3 id="federal-lands" data-nav-header="federal-lands">Federal lands</h3>
 
@@ -56,8 +53,8 @@ There are four main types of land owners: citizens and corporations; the federal
 
 State and local lands are owned by state or local governments, including:
 
-* Lands owned by a particular state<
-* [State submerged lands](http://www.boem.gov/uploadedfiles/submergedla.pdf) under the ocean stretching from a state’s coast to three miles out into the ocean, or in the case of Texas and western Florida, from the coast out to three marine leagues into the Gulf of Mexico<
+* Lands owned by a particular state
+* [State submerged lands](http://www.boem.gov/uploadedfiles/submergedla.pdf) under the ocean stretching from a state’s coast to three miles out into the ocean, or in the case of Texas and western Florida, from the coast out to three marine leagues into the Gulf of Mexico
 * Lands owned by a local government, such as a county
 
 <h3 id="indian-lands" data-nav-header="indian-lands">Indian lands</h3>
@@ -79,4 +76,3 @@ Natural resource ownership has historical roots in the 19th century, when the fe
 Sometimes the land’s surface owner is different from the owner of the minerals in the ground below. The party that owns the land’s surface has {{ "surface rights" | term_end }}, while the party that owns the natural resources in the ground has {{ "subsurface rights" | term_end }}. When ownership is divided in this way, it is referred to as a [split estate](http://www.blm.gov/wo/st/en/prog/energy/oil_and_gas/best_management_practices/split_estate.html). There are 57 million acres of land in the U.S. where the federal government owns oil, gas, coal, and other minerals below the surface, but another party, mostly citizens or corporations, owns the surface land above. Land and mineral ownership can become quite complicated. Often, a combination of private landholders, the federal government, a state government, or Indian tribes own the span of a single mine or field.
 
 When it comes to the natural resources found off the coast, the federal government and state governments split ownership. In general, states have primary authority and natural resource ownership in the three-mile area extending outward from their coasts. The federal government owns oil, gas, and minerals located in the submerged lands on the Outer Continental Shelf, which extend from the states’ offshore boundaries out to at least 200 nautical miles from the shore.
-

@@ -50,6 +50,7 @@ exclude:
   - data/**/*.js
   - data/**/*.svg
   - maps/data
+  - maps/land/*.json
 
 collections:
   case-studies:

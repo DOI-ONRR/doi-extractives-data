@@ -67,7 +67,3 @@ distclean:
 .PHONY: \
 	state-maps \
 	viewboxes
-
-.PRECIOUS: \
-	data/shp/*.shp \
-	land/*.png

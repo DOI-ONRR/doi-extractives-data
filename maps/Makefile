@@ -1,6 +1,7 @@
 node_bin ?= ../node_modules/.bin/
 svgo ?= $(node_bin)svgo --disable=cleanupIDs
 topojson ?= $(node_nin)topojson
+raster_scale ?= 4
 states = AL AK AZ AR CA CO CT DE DC FL GA HI ID IL IN IA KS KY LA ME MD MA MI MN MS MO MT NE NV NH NJ NM NY NC ND OH OK OR PA RI SC SD TN TX UT VT VA WA WV WI WY
 
 all: \
@@ -24,8 +25,7 @@ land/%.gif: land/%.png
 	convert -posterize 2 -transparent-color white $^ $@
 
 land/%.png: land/%.json
-	# the 2x scale is for retina
-	./bin/rasterize.js --scale 2 $^ > $@
+	./bin/rasterize.js --scale $(raster_scale) $^ > $@
 
 land/federal.json: data/shp/fedlanp010g.shp
 	$(topojson) -p FEATURE1 federal=$^ > $@.tmp

@@ -44,15 +44,15 @@ Download fiscal year data:
 
 These datasets include natural resource revenues for U.S. Federal lands and offshore areas. It does not include Indian lands, privately-owned lands or U.S. state lands. The datasets currently include data tracked and managed by the Department of the Interior’s Office of Natural Resource Revenues.
 
-## Why are some values negative?
+### Why are some values negative?
 
 Companies can adjust and correct their payments for up to seven years after a transaction takes place. If a company overpays their royalty, rent, or bonus, they are entitled to recoup their overpayment. If the overpayment and recoupment happen in different years, the recoupment will appear as a negative amount in the Office of Natural Resource Revenue's revenue summaries.
 
-## Why is there a Gas value, an Oil value and an Oil & Gas value?
+### Why is there a Gas value, an Oil value and an Oil & Gas value?
 
 “Oil & Gas” is the commodity category used for offshore oil and gas rents and bonuses. At the time of lease sale, it isn’t known whether a lease will produce oil, gas or both oil and gas. After a lease starts producing a commodity (or commodities), the lease owner starts paying royalties. These can then be associated with either oil or gas. Hence, rent and bonus lines of data will be associated with an “Oil & Gas” commodity type, while royalty lines of data will be associated with either “Oil” or “Gas” commodity types.
 
-## Why is the calendar year revenue by location national total slightly different than the revenue by company total?
+### Why is the calendar year revenue by location national total slightly different than the revenue by company total?
 
 Our site has two federal revenue datasets. The one on this page is organized by location. [This one]({{ site.baseurl }}/downloads/federal-revenue-by-company/) is organized by the company that paid the revenue. However, the national revenue totals are slightly different (by about 90 million dollars). This is because the the company revenues dataset excludes revenue from offshore right-of-ways because they don't map to an offshore planning area.
 

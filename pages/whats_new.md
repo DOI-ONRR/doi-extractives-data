@@ -2,7 +2,9 @@
 title: What's New
 layout: content
 permalink: /about/whats-new/
-breadcrumb: About
+breadcrumb:
+  - title: About
+    permalink: /about/
 ---
 
 > The initial USEITI beta site launched in early 2015, offering visualizations that showed how natural resources generate revenue across the country and where the money goes.

@@ -42,6 +42,14 @@ ul {
   }
 }
 
+ul ul {
+  margin-bottom: 0;
+}
+
+li {
+  padding-bottom: $base-padding-lite;
+}
+
 .list-unstyled {
   list-style-type: none;
   padding-left: 0;

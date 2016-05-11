@@ -79,7 +79,7 @@ Learn more about natural resource regulation, production, and revenue in Arizona
 
 * [Arizona State Land Department Minerals Section](https://land.az.gov/divisions/natural-resources/minerals)
 * [Arizona Geological Survey, Mineral Resources](http://www.azgs.az.gov/minerals.shtml)
-  - [Laws and Regulations: Mineral Rights in Arizona](http://repository.azgs.az.gov/sites/default/files/dlio/files/nid1639/lawregs9thed5thprintverforprintingaugust2014.pdf, 9th edition
+  - [Laws and Regulations: Mineral Rights in Arizona](http://repository.azgs.az.gov/sites/default/files/dlio/files/nid1639/lawregs9thed5thprintverforprintingaugust2014.pdf), 9th edition
 * [Arizona State Treasurer revenue distribution reports](http://www.aztreasury.gov/local-govt/revenue-distributions/)
 
 <h2 class="h3" id="ca" data-nav-header="ca">California</h2>
@@ -94,8 +94,8 @@ Learn more about natural resource regulation, production, and revenue in Califor
   - [Division of Oil, Gas, and Geothermal Resources](http://www.conservation.ca.gov/dog/Pages/Index.aspx)
   - [Oil, gas, and geothermal laws and regulations](http://www.conservation.ca.gov/dog/pubs_stats/Pages/law_regulations.aspx)
   - [Oil and gas production reports](http://www.conservation.ca.gov/dog/pubs_stats/Pages/stats_prod.aspx)
-  - California Geological Survey](http://www.conservation.ca.gov/cgs/Pages/Index.aspx)
-* California Natural Resources Agency, information on renewable energy programs](http://resources.ca.gov/developing_renewable_energy_sources/)
+  - [California Geological Survey](http://www.conservation.ca.gov/cgs/Pages/Index.aspx)
+* California Natural Resources Agency, [information on renewable energy programs](http://resources.ca.gov/developing_renewable_energy_sources/)
 
 <h2 class="h3" id="co" data-nav-header="co">Colorado</h2>
 
@@ -112,7 +112,7 @@ Learn more about natural resource regulation, production, and revenue in Colorad
   - [Resource Extraction Group](http://trustlands.state.co.us/Sections/Minerals/Pages/Minerals.aspx)
   - [Renewable energy](http://trustlands.state.co.us/Projects/Pages/RenewableEnergy.aspx)
 * [Division of Reclamation Mining and Safety](http://mining.state.co.us/Pages/Home.aspx)
-  - Rules and regulations](http://mining.state.co.us/Rules/Pages/home.aspx)
+  - [Rules and regulations](http://mining.state.co.us/Rules/Pages/home.aspx)
 * [Colorado Department of Revenue Annual Report](https://www.colorado.gov/pacific/revenue/annual-report)
 * [Energy / Mineral Impact Assistance Fund supported by state severance taxes](https://www.colorado.gov/pacific/dola/energymineral-impact-assistance-fund-eiaf)
 

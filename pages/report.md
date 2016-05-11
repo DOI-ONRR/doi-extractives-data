@@ -2,7 +2,9 @@
 title: Executive Summary
 layout: content
 permalink: /about/report/
-breadcrumb: About
+breadcrumb:
+  - title: About
+    permalink: /about/
 ---
 
 > As part of fulfilling the international [EITI Standard](https://eiti.org/document/standard), the {{ "Independent Administrator" | term:"independent administrator (IA)" }} worked with the [Multi-Stakeholder Group](https://www.doi.gov/eiti/FACA) to develop an Executive Summary of the USEITI 2015 Report.

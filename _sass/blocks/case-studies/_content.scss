@@ -4,16 +4,6 @@
 //
 // Styleguide blocks.case-studies.content
 
-.case_studies_content {
-  position: relative;
-
-  ul {
-    font-weight: $weight-light;
-    list-style-type: square;
-    padding-left: $base-padding;
-  }
-}
-
 .case_studies_content-icon {
   @include heading('para-md');
 

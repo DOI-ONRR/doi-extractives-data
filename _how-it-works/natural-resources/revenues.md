@@ -21,7 +21,7 @@ nav_items:
 breadcrumb:
   - title: How it works
     permalink: /how-it-works/
-title_display: Revenue
+title_display: Revenues
 selector: hash
 ---
 

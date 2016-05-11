@@ -6,6 +6,12 @@
 // <ul>
 //  <li>Default list</li>
 // </ul>
+// <ul>
+//  <li>List</li>
+//  <ul>
+//    <li>Nested List</li>
+//  </ul>
+// </ul>
 // <ul class="list-unstyled">
 //  <li>Unstyled list</li>
 // </ul>
@@ -35,15 +41,13 @@ ul {
 
   ul {
     list-style-type: square;
+    margin-bottom: 0;
 
     ul {
       list-style-type: circle;
+      margin-bottom: 0;
     }
   }
-}
-
-ul ul {
-  margin-bottom: 0;
 }
 
 li {

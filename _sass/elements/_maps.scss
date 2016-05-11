@@ -67,11 +67,7 @@ svg.map {
     pointer-events: none;
   }
 
-  &.ownership .ownership {
+  &.ownership .federal.ownership {
     opacity: 0.15;
-  }
-
-  &.ownership .tribal.ownership {
-    opacity: 0.05;
   }
 }

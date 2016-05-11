@@ -1,25 +1,39 @@
 # Sprint-SarcasticSeacow research plan
 
 ## Goals
-For this round of research, we're zooming back out to a more general level of inquiry. We want insight into how people feel about transparency and dialogue in the U.S. natural resource revenues system so that we can understand how USEITI might fit into their already-existing mental models. We will be conducting interviews with participants in the states and counties that USEITI has identified as focus areas.
 
+This round of research will have two prongs:
+
+1. Begin usability testing the new state profile prototypes. We'll hope to find out:
+    * Do users find it useful to see how much land is federally owned?
+    * Do users understand how each map or visual is different?
+    * Are users quicker to understand concepts like federal revenue?
+    * Do users find the state pages more compelling?
+2. Follow up with people who gave feedback at the USEITI outreach webinar on May 3rd to get more detail or ask further questions. These will be relatively unstructured conversations that help us inform our broader questions about framing and narrative. Questions may include:
+    * How did you use the paper Executive Summary, and what did you find useful about it?
+    * How have you navigated working with the data as an academic? What would make the data easier to use?
+    * How do you see community groups or civil society groups using the site, and what would make it easier for them to use?
 
 ## Background
 
-This sprint is a continuation of our [HaughtyHagfish sprint](https://github.com/18F/doi-extractives-data/blob/research/research/sprint-hautyhagfish/sprint-hautyhagfish_research-plan.md). It turned out that recruiting the right people to talk to took much longer than expected and so we didn't have enough data at the end of that original sprint to make any conclusions. Now, we've talked to enough of that match our intended audiences, in particular the journalist persona type, to be able to draw some insight into whether our site is meeting their needs or not. This will influence which features we choose to prioritize in the future.
+We've spent the last few sprints addressing some of the big issues raised by earlier research, including [confusion about revenues](https://github.com/18F/doi-extractives-data/issues/1260), [desire for more local stories/data](https://github.com/18F/doi-extractives-data/blob/research/research/8_sprint-sarcasticseacow/sprint-sarcasticseacow_results.md#how-do-journalists-decide-if-something-is-interesting-and-worth-writing-about), [preferences for consolidated information about single states](https://github.com/18F/doi-extractives-data/blob/research/research/8_sprint-sarcasticseacow/sprint-sarcasticseacow_results.md#how-do-people-want-to-use-our-data-what-were-they-trying-to-do-and-what-did-they-expect), and [the general need for data and context to be pulled together across the site](https://github.com/18F/doi-extractives-data/blob/research/research/8_sprint-sarcasticseacow/sprint-sarcasticseacow_results.md#linking-related-information-and-data-across-the-site). Our hope is that the new state pages will solve many of these issues by providing a clearer, more focused narrative with links to relevant contextual information.
+
+Also, ONRR held an outreach webinar in early May, and several attendees asked questions or offered feedback. Most of them work in or with civil society, which offers a chance to consider our "concerned citizen" persona. We'll be following up with them to gather more feedback and ask about how they've used the existing report/data.
 
 
 ## Methods
-* 30 min interviews with people unfamiliar with USEITI who live in USEITI focus states and counties and meet one of the persona types we identified before we started building the site.
+
+* 30 min usability tests
+* 30 min interviews with contacts from the webinar
 * Notes, no recording
 * In-person and remote
 
 
 ## Script
 
-Script available [here](https://github.com/18F/doi-extractives-data/blob/research/research/sprint-hautyhagfish/sprint-hautyhagfish_interview-script.md).
+Script available [here](https://github.com/18F/doi-extractives-data/blob/research/research/9_sprint-nefariousnumbat/sprint-nefariousnumbat_interview-script.md).
 
 
 ## Test asset(s)
 
-None.
+State profile prototype page: https://federalist.18f.gov/preview/18F/doi-extractives-data/state-pages/states/UT/ (sub the state code for the user's state).

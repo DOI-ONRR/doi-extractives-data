@@ -70,4 +70,8 @@ svg.map {
   &.ownership .ownership {
     opacity: 0.15;
   }
+
+  &.ownership .tribal.ownership {
+    opacity: 0.05;
+  }
 }

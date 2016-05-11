@@ -1,4 +1,4 @@
-# Sprint-SarcasticSeacow research plan
+# Sprint-NefariousNumbat research plan
 
 ## Goals
 

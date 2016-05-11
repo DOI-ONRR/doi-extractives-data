@@ -17,13 +17,13 @@ viewboxes: ../_data/viewboxes.yml
 optimize-svg:
 	$(svgo) -f states
 
-land/combined.gif: land/federal.gif land/indian.gif
+land/combined.gif: land/federal.gif land/tribal.gif
 	composite $^ $@
 
-land/federal.gif: land/federal.png
+land/%.gif: land/%.png
 	convert -posterize 2 -transparent-color white $^ $@
 
-land/federal.png: land/federal.json
+land/%.png: land/%.json
 	# the 2x scale is for retina
 	./bin/rasterize.js --scale 2 $^ > $@
 
@@ -33,27 +33,14 @@ land/federal.json: data/shp/fedlanp010g.shp
 		-k d.properties.FEATURE1 -- $@.tmp > $@
 	rm $@.tmp
 
-data/shp/fedlanp010g.shp:
+land/tribal.json: data/shp/indlanp010g.shp
+	$(topojson) tribal=$^ > $@
+
+data/shp/%.shp:
 	mkdir -p $(dir $@)
 	cd $(dir $@); \
-		curl -s "ftp://rockyftp.cr.usgs.gov/vdelivery/Datasets/Staged/SmallScale/Data/Boundaries/fedlanp010g.shp_nt00966.tar.gz" \
+		curl -s "ftp://rockyftp.cr.usgs.gov/vdelivery/Datasets/Staged/SmallScale/Data/Boundaries/$*.shp_nt00966.tar.gz" \
 			| tar -xzvf -
-
-land/indian.gif: land/indian.png
-	convert -posterize 2 -transparent-color white $^ $@
-
-land/indian.png: land/indian.json
-	# the 2x scale is for retina
-	./bin/rasterize.js --scale 2 $^ > $@
-
-land/indian.json: data/shp/indlanp010g.shp
-	$(topojson) indian=$^ > $@
-
-data/shp/indlanp010g.shp:
-	mkdir -p $(dir $@)
-	cd $(dir $@); \
-		curl -s "ftp://rockyftp.cr.usgs.gov/vdelivery/Datasets/Staged/SmallScale/Data/Boundaries/indlanp010g.shp_nt00968.tar.gz" \
-		| tar -xzvf -
 
 states/all.svg: data/us-topology.json
 	./bin/state-map.js $^ | $(svgo) -i - -o $@
@@ -82,5 +69,5 @@ distclean:
 	viewboxes
 
 .PRECIOUS: \
-	data/shp/fedlanp010g.shp \
-	data/shp/indlanp010g.shp
+	data/shp/*.shp \
+	land/*.png

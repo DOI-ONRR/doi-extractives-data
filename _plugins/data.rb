@@ -36,6 +36,13 @@ module EITI
       str
     end
 
+
+    # attempt to look up a term in a dictionary (hash),
+    # and return the value if that key exists; otherwise, return the key
+    def lookup(term, dict)
+      (dict.has_key? term) ? dict[term] : term
+    end
+
   end
 
 end

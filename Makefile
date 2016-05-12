@@ -233,16 +233,18 @@ data/top_state_products:
 	top=3 percent=20; \
 	$(query) --format ndjson " \
 		SELECT \
-			state, product, \
+			state, commodity AS product, \
 			ROUND(percent, 2) AS percent, rank, year, \
-			ROUND(revenue, 2) AS value, 'revenue' AS category \
+			ROUND(revenue, 2) AS value, \
+			'revenue' AS category \
 		FROM state_revenue_rank \
 		WHERE rank <= $${top} AND percent >= $${percent} \
 	UNION \
 		SELECT \
 			state, product, \
 			ROUND(percent, 2), rank, year, \
-			ROUND(volume, 2) AS value, 'federal_production' AS category \
+			ROUND(volume, 2) AS value, \
+			'federal_production' AS category \
 		FROM federal_production_state_rank \
 		WHERE rank <= $${top} AND percent >= $${percent} \
 			AND LENGTH(state) = 2 \
@@ -250,7 +252,8 @@ data/top_state_products:
 		SELECT \
 			state, product, \
 			ROUND(percent, 2), rank, year, \
-			ROUND(volume, 2) AS value, 'all_production' AS category \
+			ROUND(volume, 2) AS value, \
+			'all_production' AS category \
 		FROM all_production_state_rank \
 		WHERE rank <= $${top} AND percent >= $${percent} \
 	ORDER BY state, year, rank, percent DESC" \

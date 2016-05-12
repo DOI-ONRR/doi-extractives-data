@@ -272,11 +272,7 @@ layout: default
     {% for commodity in revenue_commodities %}
     <section id="revenue-{{ commodity[0] | slugify }}" class="commodity">
       {% assign revenue = commodity[1][year].revenue %}
-      {% if commodity[0] == 'All' %}
-        {% assign commodity_name = 'All commodities' %}
-      {% else %}
-        {% assign commodity_name = commodity[0] | lookup: commodity_names %}
-      {% endif %}
+      {% assign commodity_name = commodity[0] | lookup: commodity_names %}
       <h3>{{ commodity_name }}</h3>
       <p>In {{ year }}, 
         {% if revenue %}

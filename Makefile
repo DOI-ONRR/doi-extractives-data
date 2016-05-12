@@ -201,14 +201,14 @@ data/federal_county_production:
 data/state_revenues.yml:
 	$(query) --format ndjson " \
 		SELECT \
-		  state, product, year, \
+		  state, commodity, year, \
 		  ROUND(percent, 1) AS percent, \
 		  ROUND(revenue) AS revenue, \
 		  rank \
 		FROM state_revenue_rank \
 		WHERE revenue != 0 \
 		ORDER BY \
-			state, product, year" \
+			state, commodity, year" \
 	  | $(nestly) --if ndjson \
 		  -c _meta/state_revenues.yml \
 		  -o _$@

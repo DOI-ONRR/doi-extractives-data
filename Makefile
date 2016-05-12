@@ -114,23 +114,9 @@ data/county_jobs:
 		  -o '_$@/{state}.yml'
 
 data/revenue: \
-	data/revenue_types.yml \
+	data/state_revenues.yml \
+	data/top_state_products.yml \
 	data/county_revenue
-
-data/revenue_types.yml:
-	$(query) --format ndjson " \
-		SELECT \
-			state, year, revenue_type, \
-			ROUND(revenue) AS revenue \
-		FROM state_revenue_type \
-		WHERE \
-			state IS NOT NULL \
-			AND revenue_type IS NOT NULL \
-		ORDER BY \
-			state, revenue_type, year" \
-		| $(nestly) --if ndjson \
-			-c _meta/revenue_types.yml \
-			-o _$@
 
 data/county_revenue:
 	$(query) --format ndjson " \

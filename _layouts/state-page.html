@@ -13,12 +13,11 @@ layout: default
 {% assign exports_total = site.data.state_exports[state_id].commodities.All[year].dollars %}
 {% assign exports_commodities_num = site.data.state_exports[state_id].commodities | size | minus:2 %}
 
-{% assign revenue_products = site.data.state_revenues[state_id].products %}
-{% assign revenue_total = revenue_products.All[year].revenue %}
-{% assign revenue_types = site.data.revenue_types[state_id] %}
+{% assign revenue_commodities = site.data.state_revenues[state_id].commodities %}
+{% assign revenue_total = revenue_commodities.All[year].revenue %}
 {% assign revenue_type_names = 'Bonus;Rents;Royalties;Other Revenues' | split: ';' %}
 {% assign top_revenue_products = site.data.top_state_products[state_id].revenue[year] %}
-{% assign revenue_commodities = site.data.state_revenues_by_type[state_id] %}
+{% assign revenue_types = site.data.state_revenues_by_type[state_id] %}
 
 {% assign federal_products = site.data.state_federal_production[state_id].products %}
 {% assign federal_products_num = federal_products | size %}
@@ -44,7 +43,7 @@ layout: default
       <li>{{ state_name }} generated
         <strong>${{ revenue_total | intcomma }}
           in federal revenue</strong> from
-        <a href="#revenue">{{ revenue_products | size }} product{{ revenue_products | size | plural }}</a>
+        <a href="#revenue">{{ revenue_commodities | size }} commodit{{ revenue_commodities | size | plural: 'ies', 'y' }}</a>
         in {{ year }}.
         {% if top_revenue_products %}
         These are the most notable in terms of revenue:
@@ -223,7 +222,7 @@ layout: default
             <th>Other revenues</th>
           </tr>
         </thead>
-        {% for commodity in revenue_commodities %}
+        {% for commodity in revenue_types %}
           {% assign commodity_name = commodity[0] %}
           {% assign values = commodity[1] %}
         <tbody id="revenue-{{ commodity_name | slugify }}">
@@ -255,18 +254,22 @@ layout: default
       </table>
     </section>
 
-    {% for product in revenue_products %}
-    <section id="revenue-{{ product[0] | slugify }}" class="product">
-      {% assign revenue = product[1][year].revenue %}
-      {% if product[0] == 'All' %}
-        {% assign product_name = 'All products' %}
+    {% for commodity in revenue_commodities %}
+    <section id="revenue-{{ commodity[0] | slugify }}" class="commodity">
+      {% assign revenue = commodity[1][year].revenue %}
+      {% if commodity[0] == 'All' %}
+        {% assign commodity_name = 'All commodities' %}
       {% else %}
-        {% assign product_name = product[0] %}
+        {% assign commodity_name = commodity[0] %}
       {% endif %}
-      <h3>{{ product_name }}</h3>
+      <h3>{{ commodity_name }}</h3>
       <p>In {{ year }}, 
-        {% if revenue %}companies paid ${{ revenue | intcomma }} to extract{% else %}the federal government did not collect any revenue from extraction of{% endif %} 
-        {{ product_name | downcase }} on federal land in {{ state_name }}.
+        {% if revenue %}
+          companies paid ${{ revenue | intcomma }} to extract
+        {% else %}
+          the federal government did not collect any revenue from extraction of
+        {% endif %}
+        {{ commodity_name | downcase }} on federal land in {{ state_name }}.
       </p>
 
       <table is="bar-chart-table" data-percent-max="100">
@@ -277,7 +280,7 @@ layout: default
           <th class="numeric" data-series="rank">Rank</th>
         </thead>
         <tbody>
-        {% for year in product[1] %}
+        {% for year in commodity[1] %}
           <tr>
             <td class="label">{{ year[0] }}</td>
             <td data-series="revenue" data-value="{{ year[1].revenue }}" class="numeric">${{ year[1].revenue | intcomma }}</td>
@@ -304,7 +307,7 @@ layout: default
           {% endfor %}
         </thead>
         <tbody>
-          {% for row in site.data.state_revenues[state_id].products.All %}
+          {% for row in site.data.state_revenues[state_id].commodities.All %}
           {% assign _year = row[0] %}
           <tr>
             <td>{{ _year }}</td>

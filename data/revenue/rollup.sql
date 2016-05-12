@@ -92,10 +92,10 @@ UNION
 DROP TABLE IF EXISTS national_revenue;
 CREATE TABLE national_revenue AS
     SELECT
-        year, commodity, product, SUM(revenue) AS revenue
+        year, commodity, SUM(revenue) AS revenue
     FROM regional_revenue
     GROUP BY
-        year, commodity, product;
+        year, commodity;
 
 -- create regional rankings views
 DROP TABLE IF EXISTS state_revenue_rank;
@@ -103,7 +103,7 @@ CREATE TABLE state_revenue_rank AS
     SELECT
         state.year,
         state.state,
-        state.product,
+        state.commodity,
         state.revenue,
         national.revenue AS total,
         (CASE WHEN state.revenue * national.revenue >= 0
@@ -117,13 +117,13 @@ CREATE TABLE state_revenue_rank AS
         national_revenue AS national
     ON
         national.year = state.year AND
-        national.product = state.product
+        national.commodity = state.commodity
     WHERE
         state.revenue IS NOT NULL AND
         national.revenue IS NOT NULL
     ORDER BY
         state.year,
-        state.product,
+        state.commodity,
         percent DESC;
 
 UPDATE state_revenue_rank
@@ -132,6 +132,6 @@ SET rank = (
     FROM state_revenue_rank AS inner
     WHERE
         inner.year = state_revenue_rank.year AND
-        inner.product = state_revenue_rank.product AND
+        inner.commodity = state_revenue_rank.commodity AND
         inner.revenue > state_revenue_rank.revenue
 ) + 1;

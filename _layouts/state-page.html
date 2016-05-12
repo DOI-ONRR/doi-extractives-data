@@ -6,6 +6,7 @@ layout: default
 {% assign state_id = page.data.id %}
 {% assign year = '2013' %}
 {% assign oilgas = 'Oil & Gas (Non-Royalty)' %}
+{% assign commodity_names = site.data.commodity_names %}
 
 {% assign jobs = site.data.state_jobs[state_id] %}
 {% assign gdp = site.data.state_gdp[state_id] %}
@@ -254,7 +255,7 @@ layout: default
             {% if total != 0 %}
           <tr>
             <th scope="row" data-value="{{ total }}">
-              <a href="#revenue-{{ commodity_name | slugify }}"><strong>{{ commodity_name }}</strong></a>
+              <a href="#revenue-{{ commodity_name | slugify }}"><strong>{{ commodity_name | lookup: commodity_names }}</strong></a>
               ${{ total | intcomma }}
             </th>
             {% for revenue_type in revenue_type_names %}
@@ -271,11 +272,7 @@ layout: default
     {% for commodity in revenue_commodities %}
     <section id="revenue-{{ commodity[0] | slugify }}" class="commodity">
       {% assign revenue = commodity[1][year].revenue %}
-      {% if commodity[0] == 'All' %}
-        {% assign commodity_name = 'All commodities' %}
-      {% else %}
-        {% assign commodity_name = commodity[0] %}
-      {% endif %}
+      {% assign commodity_name = commodity[0] | lookup: commodity_names %}
       <h3>{{ commodity_name }}</h3>
       <p>In {{ year }}, 
         {% if revenue %}
@@ -352,6 +349,48 @@ layout: default
     <p>Companies that extract natural resources on private land must pay income taxes, like any other company. Learn more about <a href="{{ site.baseurl }}/how-it-works/revenues/#all-lands-and-waters">revenue from extraction on all lands and waters</a>.</p>
   </section>
 
+  <section id="all-production" class="all-lands production">
+    <h2>Natural resource production in {{ state_name }}</h2>
+
+    <p>The federal government collects data about what natural resources are produced each state. (For coal, there is also data about mining in each county.)</p>
+    <p>In some cases, the specific amount of a resource produced in a state or county is withheld to protect trade secrets.</p>
+
+    {% for product in all_products %}
+    <section id="all-production-{{ product[0] | slugify }}">
+      {% assign product_name = product[0] %}
+      {% assign volume = product[1].volume[year].volume %}
+      {% assign units = product[1].units | downcase | default: 'units' %}
+
+      <h3>{{ product[0] }}</h3>
+
+      <p>{{ state_name }} produced
+        {% if volume %}{{ volume | intcomma }} {{ units }} of
+        {% else %}no{% endif %}
+        {{ product[0] | downcase }} in {{ year }}. Historically:</p>
+
+      <table is="bar-chart-table" data-percent-max="100">
+        <thead>
+          <th>Year</th>
+          <th class="numeric" data-series="volume">Production ({{ units }})</th>
+          <th class="numeric" data-series="percent">US %</th>
+          <th class="numeric" data-series="rank">Rank</th>
+        </thead>
+        <tbody>
+        {% for _year in site.data.years.production %}
+          {% assign value = product[1].volume | get: _year %}
+          <tr>
+            <td>{{ _year }}</td>
+            <td data-series="volume" data-value="{{ value.volume | default: 0 }}" class="numeric">{{ value.volume | default: 0 | intcomma }}</td>
+            <td data-series="percent" data-value="{{ value.percent | default: 0 }}" class="numeric">{{ value.percent | default: 0 | percent }}%</td>
+            <td class="numeric">{% if value.rank %}{{ value.rank | ordinal: 'super' }}{% endif %}</td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+
+    </section>
+    {% endfor %}
+  </section>
 
   <section id="federal-production" class="federal production">
     <h2>Natural resource production on federal land</h2>
@@ -419,44 +458,10 @@ layout: default
     </section>
   </section>
 
-  <section id="all-production" class="all-lands production">
-    <h2>Natural resource production in {{ state_name }}</h2>
-
-    {% for product in all_products %}
-    <section id="all-production-{{ product[0] | slugify }}">
-      {% assign product_name = product[0] %}
-      {% assign volume = product[1].volume[year].volume %}
-      {% assign units = product[1].units | downcase | default: 'units' %}
-
-      <h3>{{ product[0] }}</h3>
-
-      <p>{{ state_name }} produced
-        {% if volume %}{{ volume | intcomma }} {{ units }} of
-        {% else %}no{% endif %}
-        {{ product[0] | downcase }} in {{ year }}. Historically:</p>
-
-      <table is="bar-chart-table" data-percent-max="100">
-        <thead>
-          <th>Year</th>
-          <th class="numeric" data-series="volume">Production ({{ units }})</th>
-          <th class="numeric" data-series="percent">US %</th>
-          <th class="numeric" data-series="rank">Rank</th>
-        </thead>
-        <tbody>
-        {% for _year in site.data.years.production %}
-          {% assign value = product[1].volume | get: _year %}
-          <tr>
-            <td>{{ _year }}</td>
-            <td data-series="volume" data-value="{{ value.volume | default: 0 }}" class="numeric">{{ value.volume | default: 0 | intcomma }}</td>
-            <td data-series="percent" data-value="{{ value.percent | default: 0 }}" class="numeric">{{ value.percent | default: 0 | percent }}%</td>
-            <td class="numeric">{% if value.rank %}{{ value.rank | ordinal: 'super' }}{% endif %}</td>
-          </tr>
-        {% endfor %}
-        </tbody>
-      </table>
-
-    </section>
-    {% endfor %}
+  <section id="state-local-production" class="state production">
+    <h3>Natural resource production on state land</h3>
+    <p>Natural resource extraction on land owned by the State of {{ state_name }} is governed by <a href="{{ site.baseurl }}/how-it-works/state-laws-and-regulations/#role-of-state-government-agencies/</a>">state laws and regulations</a>.</p>
+    <p>We don't have detailed data about natural resource extraction on land owned by the state.</p>
   </section>
 
   <section id="employment" class="economic employment">

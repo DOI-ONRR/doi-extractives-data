@@ -190,7 +190,7 @@ layout: default
 
     [TABLE OR GRAPHIC SHOWING RATES FOR RELEVANT COMMODITIES?]
 
-    <h3>Revenue from federal lands</h3>
+    <h3>Revenue from federal land</h3>
 
     <p>{{ site.data.land_stats[state_id].federal_percent | percent }} percent of land in {{ state_name }} is owned by the federal government.</p>
     <p>In {{ year }}, companies paid the federal government a total of ${{ revenue_total | intcomma }} to extract natural resources on federal land (or lease federal land for that purpose).</p>
@@ -264,11 +264,10 @@ layout: default
         {% assign product_name = product[0] %}
       {% endif %}
       <h3>{{ product_name }}</h3>
-      <p>{{ state_name }} generated
-        {% if revenue %}${{ revenue | intcomma }} in
-        {% else %}no{% endif %}
-        federal revenue from {{ product_name | downcase }} in {{ year }}.
-        Historically:</p>
+      <p>In {{ year }}, 
+        {% if revenue %}companies paid ${{ revenue | intcomma }} to extract{% else %}the federal government did not collect any revenue from extraction of{% endif %} 
+        {{ product_name | downcase }} on federal land in {{ state_name }}.
+      </p>
 
       <table is="bar-chart-table" data-percent-max="100">
         <thead>
@@ -331,14 +330,16 @@ layout: default
   </section>
 
   <section id="" class="private-lands revenue">
-    <h3>Revenue from private lands</h3>
+    <h3>Revenue from private land</h3>
     <p>[#] percent of land in {{ state_name }} is privately owned by individuals or corporations.</p>
     <p>Companies that extract natural resources on private land must pay income taxes, like any other company. Learn more about <a href="{{ site.baseurl }}/how-it-works/revenues/#all-lands-and-waters">revenue from extraction on all lands and waters</a>.</p>
   </section>
 
 
   <section id="federal-production" class="federal production">
-    <h2>Production on federal land</h2>
+    <h2>Natural resource production on federal land</h2>
+    <p>When companies extract natural resources on federal land, they report how much of each resource was extracted in each county.</p>
+    <p>In a few cases, usually where one company is extracting a resource in a county, production data is withheld to ensure there are no violations of the Trade Secrets Act.</p>
     <section class="county-map-table">
       <h3>Products</h3>
       {% for product in federal_products %}
@@ -349,11 +350,9 @@ layout: default
         {% assign units = product[1].units | downcase %}
 
         <h4>{{ product[1].name }} ({{ units | default: 'units' }})</h4>
-        <p>{{ state_name }} produced
-          {% if volume %}{{ volume | intcomma }}
+        <p>{% if volume %}{{ volume | intcomma }}
           <span class="units">{{ units | default: 'units' }}</span>
-          of {% else %}no{% endif %}
-          {{ product[1].name | downcase }} in {{ year }}. Historically:</p>
+          of {{ product[1].name | downcase }} were {% else %}No {{ product[1].name | downcase }} was {% endif %} produced on federal land in {{ state_name }} in {{ year }}.</p>
 
         {% if volume %}
         <figure>
@@ -396,7 +395,7 @@ layout: default
   </section>
 
   <section id="all-production" class="all-lands production">
-    <h2>Production on All Lands &amp; Waters</h2>
+    <h2>Natural resource production in {{ state_name }}</h2>
 
     {% for product in all_products %}
     <section id="all-production-{{ product[0] | slugify }}">

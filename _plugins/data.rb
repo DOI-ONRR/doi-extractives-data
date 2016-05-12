@@ -7,6 +7,9 @@ module EITI
     # get({'a' => 1000}, 'a') == 1000
     # get({'2001' => 5}, 2001) === 5
     def get(data, *keys)
+      # bail if there's no data
+      return nil if data == nil
+
       # coerce all of the keys to strings,
       # and filter out any empty ones
       keys = keys

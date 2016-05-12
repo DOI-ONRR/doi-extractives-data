@@ -6,6 +6,7 @@ layout: default
 {% assign state_id = page.data.id %}
 {% assign year = '2013' %}
 {% assign oilgas = 'Oil & Gas (Non-Royalty)' %}
+{% assign commodity_names = site.data.commodity_names %}
 
 {% assign jobs = site.data.state_jobs[state_id] %}
 {% assign gdp = site.data.state_gdp[state_id] %}
@@ -252,7 +253,7 @@ layout: default
             {% if total != 0 %}
           <tr>
             <th scope="row" data-value="{{ total }}">
-              <a href="#revenue-{{ commodity_name | slugify }}"><strong>{{ commodity_name }}</strong></a>
+              <a href="#revenue-{{ commodity_name | slugify }}"><strong>{{ commodity_name | lookup: commodity_names }}</strong></a>
               ${{ total | intcomma }}
             </th>
             {% for revenue_type in revenue_type_names %}
@@ -272,7 +273,7 @@ layout: default
       {% if commodity[0] == 'All' %}
         {% assign commodity_name = 'All commodities' %}
       {% else %}
-        {% assign commodity_name = commodity[0] %}
+        {% assign commodity_name = commodity[0] | lookup: commodity_names %}
       {% endif %}
       <h3>{{ commodity_name }}</h3>
       <p>In {{ year }}, 

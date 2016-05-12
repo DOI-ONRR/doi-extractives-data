@@ -174,7 +174,7 @@ layout: default
       <figcaption>Federally owned land (gray)</figcaption>
     </figure>
 
-    <p>When companies extract natural resources on federal land, they pay royalties, rents, bonuses, and other fees — much like they would to any landowner. They also have to report more data about their activities on government-owned land than on private land.</p>
+    <p>When companies extract natural resources on federal land, they pay royalties, rents, bonuses, and other fees — much like they would to any landowner. They also have to report more data about their activities on government-owned land than on private land. Learn more about <a href="{{ site.baseurl }}/how-it-works/ownership/">natural resources and land ownership in the U.S.</a></p>
   </section>
 
   <section id="process">
@@ -210,7 +210,9 @@ layout: default
         <figcaption>County extractives revenue (dollars, {{ year }})</figcaption>
       </figure>
 
-      <p>[EXPLAIN PROCESS BETTER TO BE CLEARER ABOUT WHY OIL AND GAS ARE IN THE SAME ROW]</p>
+      <p>At each phase of natural resource extraction, the federal government collects different fees. This chart shows how much federal revenue was collected for each kind of resource during each phase of production.</p>
+
+      <p>Companies may not know whether they’ll produce oil or gas until they explore the land, so fees are not differentiated by product until production begins.</p>
 
       <table id="revenue-types" is="bar-chart-table" class="revenue">
         <thead>
@@ -277,7 +279,7 @@ layout: default
       <h3>{{ commodity_name }}</h3>
       <p>In {{ year }}, 
         {% if revenue %}
-          companies paid ${{ revenue | intcomma }} to extract
+          companies paid ${{ revenue | intcomma }} to produce
         {% else %}
           the federal government did not collect any revenue from extraction of
         {% endif %}
@@ -340,13 +342,12 @@ layout: default
 
   <section id="state-local-revenue" class="state revenue">
     <h3>Revenue from state land</h3>
-    <p>The State of {{ state_name }} owns [#] percent of land in the state. Natural resource extraction on state land is governed by <a href="{{ site.baseurl }}/how-it-works/state-laws-and-regulations/#role-of-state-government-agencies/</a>">state laws and regulations</a>.</p>
-    <p>We don't have detailed data about state revenue from natural resource extraction on land owned by the state. To learn more about regulations and state revenues in {{ state_name }}, see <a href="{{ site.baseurl }}/how-it-works/state-legal-fiscal-info/">{{ state_name }} legal and fiscal information</a>.</p>
+    <p>Natural resource extraction on land owned by the State of {{ state_name }} is governed by <a href="{{ site.baseurl }}/how-it-works/state-laws-and-regulations/#role-of-state-government-agencies/</a>">state laws and regulations</a>.</p>
+    <p>We don't have detailed data about state revenue from natural resource extraction on land owned by the state. To learn more about regulations and state revenues in {{ state_name }}, see <a href="{{ site.baseurl }}/how-it-works/state-legal-fiscal-info/">state legal and fiscal information</a>.</p>
   </section>
 
   <section id="" class="private-lands revenue">
     <h3>Revenue from private land</h3>
-    <p>[#] percent of land in {{ state_name }} is privately owned by individuals or corporations.</p>
     <p>Companies that extract natural resources on private land must pay income taxes, like any other company. Learn more about <a href="{{ site.baseurl }}/how-it-works/revenues/#all-lands-and-waters">revenue from extraction on all lands and waters</a>.</p>
   </section>
 
@@ -365,9 +366,16 @@ layout: default
         {% assign units = product[1].units | downcase %}
 
         <h4>{{ product[1].name }} ({{ units | default: 'units' }})</h4>
-        <p>{% if volume %}{{ volume | intcomma }}
-          <span class="units">{{ units | default: 'units' }}</span>
-          of {{ product[1].name | downcase }} were {% else %}No {{ product[1].name | downcase }} was {% endif %} produced on federal land in {{ state_name }} in {{ year }}.</p>
+        <p>
+          {% if volume %}
+            {{ volume | intcomma }}
+            <span class="units">{{ units | default: 'units' }}</span>
+            of {{ product[1].name | downcase }} were 
+          {% else %}
+            No {{ product[1].name | downcase }} was 
+          {% endif %}
+          produced on federal land in {{ state_name }} in {{ year }}.
+        </p>
 
         {% if volume %}
         <figure>

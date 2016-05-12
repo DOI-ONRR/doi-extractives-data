@@ -9,3 +9,13 @@ revenue:
       value: 32.65
       rank: 2
       percent: 35.93
+  '2014':
+    - product: Helium
+      value: 2865.72
+      rank: 1
+      percent: 97.66
+  '2015':
+    - product: Helium
+      value: -2642.34
+      rank: 2
+      percent: 102.18

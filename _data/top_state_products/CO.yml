@@ -1,125 +1,35 @@
 revenue:
-  '2004':
-    - product: Carbon Dioxide
-      value: 241
-      rank: 1
-      percent: 100
-    - product: Coal-Subbituminous-Processed
-      value: -467815.28
-      rank: 1
-      percent: 100
-    - product: Sodium Bicarbonate Animal Feed
-      value: -28843.19
-      rank: 1
-      percent: 100
-    - product: Carbon Dioxide Gas (CO2)
-      value: 13124605.98
-      rank: 1
-      percent: 95.66
-    - product: Sodium Bi-Carbonate
-      value: 704432.51
-      rank: 1
-      percent: 88.73
-    - product: Soda Ash-Granular
-      value: -127123.91
-      rank: 2
-      percent: 28.25
-    - product: Sodium
-      value: 94740.01
-      rank: 2
-      percent: 26.22
-    - product: Coal-Bituminous-Raw
-      value: -2179083.05
-      rank: 3
-      percent: 85.28
-    - product: Coal-Subbituminous-Raw
-      value: -2100588.06
-      rank: 3
-      percent: 74.64
-  '2005':
-    - product: Oil Shale
-      value: 30000
-      rank: 1
-      percent: 100
-    - product: Carbon Dioxide Gas (CO2)
-      value: 19203622.31
-      rank: 1
-      percent: 96.88
-    - product: Sodium Bi-Carbonate
-      value: 409652.18
-      rank: 2
-      percent: 32.37
   '2006':
-    - product: Coal-Subbituminous-Raw
-      value: -0.1
-      rank: 1
-      percent: 100
-    - product: Oil Shale
-      value: 35264
-      rank: 1
-      percent: 100
-    - product: Carbon Dioxide Gas (CO2)
+    - product: CO2
       value: 24279648.79
       rank: 1
       percent: 97.11
-    - product: Sodium Bi-Carbonate
-      value: 361867.12
-      rank: 2
-      percent: 27.92
   '2007':
-    - product: Carbon Dioxide Gas (CO2)
+    - product: CO2
       value: 22749872.26
       rank: 1
       percent: 96.15
-    - product: Sodium Bi-Carbonate
-      value: 245418.56
-      rank: 1
-      percent: 63.09
-    - product: Coal-Bituminous-Raw
-      value: 27121.87
-      rank: 2
-      percent: 20.72
   '2008':
-    - product: Coal-Bituminous-Raw
-      value: 217534.49
-      rank: 1
-      percent: 99.97
-    - product: Carbon Dioxide Gas (CO2)
+    - product: CO2
       value: 57278855.03
       rank: 1
       percent: 96.96
-    - product: Sodium
-      value: 313480.99
+    - product: 'Oil & Gas (Non-Royalty)'
+      value: 152655930.02
       rank: 1
-      percent: 75.92
-    - product: Sodium Bi-Carbonate
-      value: 282035.96
-      rank: 1
-      percent: 69.94
+      percent: 33.24
   '2009':
-    - product: Carbon Dioxide Gas (CO2)
+    - product: CO2
       value: 38714984.72
       rank: 1
       percent: 97.68
-    - product: Sodium Bi-Carbonate
-      value: 295578.5
-      rank: 1
-      percent: 70.55
   '2010':
-    - product: Carbon Dioxide Gas (CO2)
+    - product: CO2
       value: 42234863.74
       rank: 1
       percent: 96.14
-    - product: Sodium Bi-Carbonate
-      value: 369823.6
-      rank: 1
-      percent: 62.43
   '2011':
-    - product: Oil Shale
-      value: 1252
-      rank: 1
-      percent: 100
-    - product: Carbon Dioxide Gas (CO2)
+    - product: CO2
       value: 49744663.24
       rank: 1
       percent: 96.82
@@ -127,16 +37,8 @@ revenue:
       value: 58.22
       rank: 1
       percent: 64.07
-    - product: Sodium Bi-Carbonate
-      value: 513414.2
-      rank: 1
-      percent: 59.89
-    - product: Nitrogen
-      value: -380.91
-      rank: 3
-      percent: 44.23
   '2012':
-    - product: Carbon Dioxide Gas (CO2)
+    - product: CO2
       value: 60658090.31
       rank: 1
       percent: 96.51
@@ -144,39 +46,25 @@ revenue:
       value: 55.43
       rank: 1
       percent: 93.7
-    - product: Sodium Bi-Carbonate
-      value: 1108450.12
-      rank: 1
-      percent: 56.98
-    - product: Drip or Scrubber Condensate
-      value: 690468.36
-      rank: 1
-      percent: 28.98
-    - product: Unprocessed (Wet) Gas
-      value: 39437763.81
-      rank: 2
-      percent: 39.82
   '2013':
     - product: Helium
       value: 66.23
       rank: 1
       percent: 98.54
-    - product: Carbon Dioxide Gas (CO2)
+    - product: CO2
       value: 61659766.89
       rank: 1
       percent: 97.06
-    - product: Sodium Bi-Carbonate
-      value: 1088703.02
+  '2014':
+    - product: CO2
+      value: 77734843.51
       rank: 1
-      percent: 55.88
-    - product: Nitrogen
-      value: 283.41
+      percent: 96.75
+  '2015':
+    - product: CO2
+      value: 55903924.65
       rank: 1
-      percent: 42.71
-    - product: Sodium
-      value: 17478
-      rank: 2
-      percent: 24.08
+      percent: 98.14
 federal_production:
   '2008':
     - product: Sodium Bi-Carbonate (tons)

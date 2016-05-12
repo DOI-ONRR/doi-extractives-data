@@ -115,16 +115,6 @@ all_production:
       rank: 1
       percent: 28.56
 revenue:
-  '2004':
-    - product: Clay
-      value: 11440.8
-      rank: 1
-      percent: 83.7
-  '2005':
-    - product: Clay
-      value: 12279.9
-      rank: 1
-      percent: 79.34
   '2006':
     - product: Clay
       value: 20117.1

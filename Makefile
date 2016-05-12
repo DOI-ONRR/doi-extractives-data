@@ -114,23 +114,9 @@ data/county_jobs:
 		  -o '_$@/{state}.yml'
 
 data/revenue: \
-	data/revenue_types.yml \
+	data/state_revenues.yml \
+	data/top_state_products.yml \
 	data/county_revenue
-
-data/revenue_types.yml:
-	$(query) --format ndjson " \
-		SELECT \
-			state, year, revenue_type, \
-			ROUND(revenue) AS revenue \
-		FROM state_revenue_type \
-		WHERE \
-			state IS NOT NULL \
-			AND revenue_type IS NOT NULL \
-		ORDER BY \
-			state, revenue_type, year" \
-		| $(nestly) --if ndjson \
-			-c _meta/revenue_types.yml \
-			-o _$@
 
 data/county_revenue:
 	$(query) --format ndjson " \
@@ -201,14 +187,14 @@ data/federal_county_production:
 data/state_revenues.yml:
 	$(query) --format ndjson " \
 		SELECT \
-		  state, product, year, \
+		  state, commodity, year, \
 		  ROUND(percent, 1) AS percent, \
 		  ROUND(revenue) AS revenue, \
 		  rank \
 		FROM state_revenue_rank \
 		WHERE revenue != 0 \
 		ORDER BY \
-			state, product, year" \
+			state, commodity, year" \
 	  | $(nestly) --if ndjson \
 		  -c _meta/state_revenues.yml \
 		  -o _$@
@@ -233,16 +219,18 @@ data/top_state_products:
 	top=3 percent=20; \
 	$(query) --format ndjson " \
 		SELECT \
-			state, product, \
+			state, commodity AS product, \
 			ROUND(percent, 2) AS percent, rank, year, \
-			ROUND(revenue, 2) AS value, 'revenue' AS category \
+			ROUND(revenue, 2) AS value, \
+			'revenue' AS category \
 		FROM state_revenue_rank \
 		WHERE rank <= $${top} AND percent >= $${percent} \
 	UNION \
 		SELECT \
 			state, product, \
 			ROUND(percent, 2), rank, year, \
-			ROUND(volume, 2) AS value, 'federal_production' AS category \
+			ROUND(volume, 2) AS value, \
+			'federal_production' AS category \
 		FROM federal_production_state_rank \
 		WHERE rank <= $${top} AND percent >= $${percent} \
 			AND LENGTH(state) = 2 \
@@ -250,7 +238,8 @@ data/top_state_products:
 		SELECT \
 			state, product, \
 			ROUND(percent, 2), rank, year, \
-			ROUND(volume, 2) AS value, 'all_production' AS category \
+			ROUND(volume, 2) AS value, \
+			'all_production' AS category \
 		FROM all_production_state_rank \
 		WHERE rank <= $${top} AND percent >= $${percent} \
 	ORDER BY state, year, rank, percent DESC" \

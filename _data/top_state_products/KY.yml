@@ -39,19 +39,3 @@ all_production:
       value: 71876000
       rank: 2
       percent: 21.91
-revenue:
-  '2005':
-    - product: Oil Lost
-      value: 286.06
-      rank: 1
-      percent: 100
-  '2007':
-    - product: Coal-Bituminous-Processed
-      value: 283152.32
-      rank: 1
-      percent: 100
-  '2008':
-    - product: Coal-Bituminous-Processed
-      value: -283152.32
-      rank: 1
-      percent: 100

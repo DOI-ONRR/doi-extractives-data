@@ -2,8 +2,8 @@ module EITI
 
   module Format
 
-    def plural(num, plural="s")
-      (num.to_i == 1) ? "" : plural
+    def plural(num, plural="s", singular="")
+      (num.to_i == 1) ? singular : plural
     end
 
     def percent(num, precision=1, small="&lt;1")

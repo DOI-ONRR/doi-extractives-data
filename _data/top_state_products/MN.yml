@@ -1,87 +1,10 @@
-revenue:
-  '2004':
-    - product: Copper
-      value: 13722.5
-      rank: 1
-      percent: 100
-  '2005':
-    - product: Copper
-      value: 18944.5
-      rank: 1
-      percent: 100
-    - product: Hardrock
-      value: 18757
-      rank: 2
-      percent: 40.5
-  '2006':
-    - product: Copper
-      value: 28721
-      rank: 1
-      percent: 158.92
-    - product: Hardrock
-      value: 27070
-      rank: 2
-      percent: 41.21
-  '2007':
-    - product: Copper
-      value: 26110
-      rank: 1
-      percent: 100
-    - product: Hardrock
-      value: 21393
-      rank: 1
-      percent: 47.07
+all_production:
   '2008':
-    - product: Hardrock
-      value: 24299.5
-      rank: 1
-      percent: 137.92
-    - product: Copper
-      value: 26110
-      rank: 1
-      percent: 100
-  '2009':
-    - product: Copper
-      value: 26110
-      rank: 1
-      percent: 100
-    - product: Hardrock
-      value: 23072.5
-      rank: 1
-      percent: 39.81
-  '2010':
-    - product: Copper
-      value: 26110
-      rank: 1
-      percent: 100
-    - product: Hardrock
-      value: 23666.5
-      rank: 1
-      percent: 57.81
-  '2011':
-    - product: Copper
-      value: 26110
-      rank: 1
-      percent: 100
-    - product: Hardrock
-      value: 18715
-      rank: 1
-      percent: 47.95
-  '2012':
-    - product: Copper
-      value: 26110
-      rank: 1
-      percent: 100
-    - product: Hardrock
-      value: 32481
-      rank: 1
-      percent: 57.22
-  '2013':
-    - product: Copper
-      value: 23499
-      rank: 1
-      percent: 100
-    - product: Hardrock
-      value: 42121
-      rank: 1
-      percent: 72.29
+    - product: Wind
+      value: 4355000
+      rank: 3
+      percent: 7.87
+    - product: All Other Renewables
+      value: 5851000
+      rank: 3
+      percent: 4.64

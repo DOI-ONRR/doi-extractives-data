@@ -1,4 +1,9 @@
 all_production:
+  '2012':
+    - product: Coal (short tons)
+      value: 4998
+      rank: 3
+      percent: 11.99
   '2014':
     - product: Natural Gas (mcf)
       value: 131885000

@@ -39,3 +39,13 @@ all_production:
       value: 71876000
       rank: 2
       percent: 21.91
+  '1975':
+    - product: Natural Gas (mcf)
+      value: 60511000
+      rank: 3
+      percent: 16.75
+  '1976':
+    - product: Natural Gas (mcf)
+      value: 66137000
+      rank: 3
+      percent: 16.96

@@ -1,6 +1,6 @@
 all_production:
-  '2012':
+  '2013':
     - product: Coal (short tons)
-      value: 4512
-      rank: 4
-      percent: 10.827414090996355
+      value: 52147193
+      rank: 2
+      percent: 7.09

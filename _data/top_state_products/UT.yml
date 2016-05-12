@@ -72,6 +72,10 @@ federal_production:
       value: 2316266257.97
       rank: 1
       percent: 98.05
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      value: 12986766.4
+      rank: 3
+      percent: 0.55
   '2014':
     - product: Clay (tons)
       value: 33520
@@ -81,17 +85,41 @@ federal_production:
       value: 2463584336.7
       rank: 1
       percent: 98.18
+    - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      value: 132080000
+      rank: 3
+      percent: 5.12
+    - product: Coal (tons)
+      value: 8084545
+      rank: 3
+      percent: 2.15
 revenue:
   '2006':
-    - product: Gilsonite
-      value: 511875.33
-      rank: 1
-      percent: 100
+    - product: All
+      value: 343414435.78
+      rank: 3
+      percent: 2.75
     - product: 'Oil & Gas (Non-Royalty)'
       value: 103022389.78
       rank: 2
       percent: 27.42
+    - product: Coal
+      value: 31189191.98
+      rank: 3
+      percent: 3.28
+    - product: Gilsonite
+      value: 511875.33
+      rank: 1
+      percent: 100
+    - product: Clay
+      value: 3697.39
+      rank: 2
+      percent: 15.53
   '2007':
+    - product: 'Oil & Gas (Non-Royalty)'
+      value: 46994077.87
+      rank: 2
+      percent: 13.37
     - product: Gilsonite
       value: 618914.43
       rank: 1
@@ -100,28 +128,44 @@ revenue:
       value: 24502.91
       rank: 1
       percent: 100
+    - product: Phosphate
+      value: 23262
+      rank: 3
+      percent: 0.99
     - product: Clay
       value: 6082.17
       rank: 2
       percent: 32.05
   '2008':
-    - product: Clay
-      value: 5002.92
-      rank: 1
-      percent: 100
     - product: Gilsonite
       value: 1219361.91
       rank: 1
       percent: 100
+    - product: Phosphate
+      value: 29227.99
+      rank: 3
+      percent: 1.1
     - product: Tar Sands
       value: 7794.53
       rank: 1
       percent: 100
-  '2009':
     - product: Clay
-      value: 2271.94
+      value: 5002.92
       rank: 1
       percent: 100
+  '2009':
+    - product: All
+      value: 224421173.91
+      rank: 3
+      percent: 2.86
+    - product: NGL
+      value: 10106510.27
+      rank: 3
+      percent: 4.31
+    - product: Geothermal
+      value: 8988663.33
+      rank: 2
+      percent: 28.82
     - product: Gilsonite
       value: 1443916.67
       rank: 1
@@ -130,77 +174,160 @@ revenue:
       value: 7732
       rank: 1
       percent: 100
-    - product: Geothermal
-      value: 8988663.33
-      rank: 2
-      percent: 28.82
-  '2010':
     - product: Clay
-      value: 3073.02
+      value: 2271.94
       rank: 1
       percent: 100
+  '2010':
+    - product: NGL
+      value: 20620897.63
+      rank: 3
+      percent: 4.82
     - product: Gilsonite
       value: 1886154.24
+      rank: 1
+      percent: 100
+    - product: CO2
+      value: 78833.31
+      rank: 3
+      percent: 0.18
+    - product: Tar Sands
+      value: 7732
+      rank: 1
+      percent: 100
+    - product: Clay
+      value: 3073.02
       rank: 1
       percent: 100
     - product: Limestone
       value: 40
       rank: 1
       percent: 100
-    - product: Tar Sands
-      value: 7732
-      rank: 1
-      percent: 100
   '2011':
-    - product: Clay
-      value: 4537.28
-      rank: 1
-      percent: 100
-    - product: Gilsonite
-      value: 2371520.5
-      rank: 1
-      percent: 100
+    - product: NGL
+      value: 31603987.71
+      rank: 3
+      percent: 5.55
     - product: Potassium
       value: 21075211.48
       rank: 1
       percent: 48.7
-  '2012':
-    - product: Clay
-      value: 4641.31
+    - product: Gilsonite
+      value: 2371520.5
       rank: 1
       percent: 100
+    - product: Clay
+      value: 4537.28
+      rank: 1
+      percent: 100
+  '2012':
+    - product: All
+      value: 341548770.97
+      rank: 3
+      percent: 2.7
+    - product: 'Oil & Gas (Non-Royalty)'
+      value: 52438848.72
+      rank: 3
+      percent: 15.95
+    - product: NGL
+      value: 33235428.97
+      rank: 3
+      percent: 6.04
     - product: Gilsonite
       value: 3404833.27
       rank: 1
       percent: 100
-  '2013':
     - product: Clay
-      value: 5400.61
+      value: 4641.31
       rank: 1
       percent: 100
+  '2013':
+    - product: All
+      value: 318875835.68
+      rank: 3
+      percent: 2.6
+    - product: Coal
+      value: 39710077.44
+      rank: 3
+      percent: 3.51
     - product: Gilsonite
       value: 2903027.59
       rank: 1
       percent: 100
-  '2014':
     - product: Clay
-      value: 752.15
+      value: 5400.61
       rank: 1
       percent: 100
+  '2014':
+    - product: Gas
+      value: 180429269.86
+      rank: 2
+      percent: 14.95
+    - product: Coal
+      value: 41514177.92
+      rank: 3
+      percent: 3.53
+    - product: NGL
+      value: 38758939.5
+      rank: 3
+      percent: 13.25
     - product: Gilsonite
       value: 1955179.67
       rank: 1
       percent: 100
-  '2015':
+    - product: Phosphate
+      value: 25804.84
+      rank: 3
+      percent: 0.23
     - product: Clay
-      value: 8699.57
+      value: 752.15
       rank: 1
       percent: 100
+  '2015':
+    - product: NGL
+      value: 8339714.75
+      rank: 3
+      percent: 7.89
     - product: Gilsonite
       value: 1958981.51
+      rank: 1
+      percent: 100
+    - product: Clay
+      value: 8699.57
       rank: 1
       percent: 100
     - product: Gold
       value: 2604
       rank: 1
       percent: 100
+all_production:
+  '2008':
+    - product: Geothermal
+      value: 254000
+      rank: 3
+      percent: 1.71
+  '2009':
+    - product: Geothermal
+      value: 279000
+      rank: 3
+      percent: 1.86
+  '2010':
+    - product: Geothermal
+      value: 277000
+      rank: 3
+      percent: 1.82
+  '2011':
+    - product: Geothermal
+      value: 330000
+      rank: 3
+      percent: 2.15
+  '2012':
+    - product: Geothermal
+      value: 335000
+      rank: 3
+      percent: 2.15
+  '2013':
+    - product: Geothermal
+      value: 319000
+      rank: 3
+      percent: 2.02

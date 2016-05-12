@@ -222,27 +222,31 @@ data/top_state_products:
 			state, commodity AS product, \
 			ROUND(percent, 2) AS percent, rank, year, \
 			ROUND(revenue, 2) AS value, \
+			revenue AS order_value, \
 			'revenue' AS category \
 		FROM state_revenue_rank \
-		WHERE rank <= $${top} AND percent >= $${percent} \
+		WHERE rank <= $${top} OR percent >= $${percent} \
 	UNION \
 		SELECT \
 			state, product, \
 			ROUND(percent, 2), rank, year, \
 			ROUND(volume, 2) AS value, \
+			(100 - rank) AS order_value, \
 			'federal_production' AS category \
 		FROM federal_production_state_rank \
-		WHERE rank <= $${top} AND percent >= $${percent} \
+		WHERE rank <= $${top} OR percent >= $${percent} \
 			AND LENGTH(state) = 2 \
 	UNION \
 		SELECT \
 			state, product, \
 			ROUND(percent, 2), rank, year, \
 			ROUND(volume, 2) AS value, \
+			(100 - rank) AS order_value, \
 			'all_production' AS category \
 		FROM all_production_state_rank \
-		WHERE rank <= $${top} AND percent >= $${percent} \
-	ORDER BY state, year, rank, percent DESC" \
+		WHERE rank <= $${top} OR percent >= $${percent} \
+			AND year > 2004 \
+	ORDER BY state, year, order_value DESC, percent DESC" \
 		| $(nestly) --if ndjson \
 			-c _meta/top_state_products.yml \
 			-o '_$@/{state}.yml'

@@ -1,46 +1,66 @@
 all_production:
   '2004':
     - product: Wind
-      value: 1050
-      rank: 2
-      percent: 14.295439074200138
+      value: 1050000
+      rank: 3
+      percent: 7.42
   '2005':
     - product: Wind
-      value: 1647
-      rank: 2
-      percent: 15.257063455303383
+      value: 1647000
+      rank: 3
+      percent: 9.25
   '2006':
     - product: Wind
-      value: 2318
-      rank: 2
-      percent: 13.60568175148207
+      value: 2318000
+      rank: 3
+      percent: 8.72
   '2007':
     - product: Wind
-      value: 2757
-      rank: 2
-      percent: 12.46045376480159
-  '2008':
-    - product: Wind
-      value: 4084
+      value: 2757000
       rank: 3
-      percent: 10.191146379198484
+      percent: 8
   '2009':
     - product: Wind
-      value: 7421
+      value: 7421000
       rank: 2
-      percent: 13.32794540229885
+      percent: 10.04
+    - product: All Other Renewables
+      value: 7589000
+      rank: 3
+      percent: 5.26
   '2010':
     - product: Wind
-      value: 9170
+      value: 9170000
       rank: 2
-      percent: 12.60689048365366
+      percent: 9.69
+    - product: All Other Renewables
+      value: 9360000
+      rank: 3
+      percent: 5.6
   '2011':
     - product: Wind
-      value: 10709
+      value: 10709000
       rank: 2
-      percent: 11.745930768218313
+      percent: 8.91
+    - product: All Other Renewables
+      value: 10870000
+      rank: 3
+      percent: 5.6
   '2012':
     - product: Wind
-      value: 14032
+      value: 14032000
       rank: 2
-      percent: 13.097860583205764
+      percent: 9.96
+    - product: All Other Renewables
+      value: 14183000
+      rank: 3
+      percent: 6.5
+  '2013':
+    - product: Wind
+      value: 15568000
+      rank: 2
+      percent: 9.28
+    - product: All Other Renewables
+      value: 15727000
+      rank: 3
+      percent: 6.2

@@ -55,48 +55,92 @@ revenue:
       value: 2064495.78
       rank: 1
       percent: 93.93
+    - product: Phosphate
+      value: 108007
+      rank: 2
+      percent: 4.91
   '2007':
     - product: Phosphate
       value: 2152071.29
       rank: 1
       percent: 91.4
+    - product: Phosphate
+      value: 177275.18
+      rank: 2
+      percent: 7.53
   '2008':
     - product: Phosphate
       value: 2485359.85
       rank: 1
       percent: 93.46
+    - product: Phosphate
+      value: 131995.31
+      rank: 2
+      percent: 4.96
   '2009':
     - product: Phosphate
       value: 3566737.1
       rank: 1
       percent: 95.97
+    - product: Phosphate
+      value: 127021.62
+      rank: 2
+      percent: 3.42
   '2010':
     - product: Phosphate
       value: 9053379.95
       rank: 1
       percent: 97.27
+    - product: Phosphate
+      value: 133547.22
+      rank: 2
+      percent: 1.43
   '2011':
     - product: Phosphate
       value: 8534799.04
       rank: 1
       percent: 85.48
+    - product: Phosphate
+      value: 880838.62
+      rank: 2
+      percent: 8.82
   '2012':
     - product: Phosphate
       value: 9431323.92
       rank: 1
       percent: 75.13
+    - product: Phosphate
+      value: 920144.76
+      rank: 3
+      percent: 7.33
   '2013':
     - product: Phosphate
       value: 9817743.38
       rank: 1
       percent: 95.84
+    - product: Phosphate
+      value: 115968.97
+      rank: 3
+      percent: 1.13
   '2014':
     - product: Phosphate
       value: 11278893.39
       rank: 1
       percent: 98.7
+    - product: Phosphate
+      value: 116020.41
+      rank: 2
+      percent: 1.02
   '2015':
     - product: Phosphate
       value: 10438557.22
       rank: 1
       percent: 97.92
+    - product: 'Oil & Gas (Non-Royalty)'
+      value: 3877908
+      rank: 3
+      percent: 4.63
+    - product: Phosphate
+      value: 111809
+      rank: 2
+      percent: 1.05

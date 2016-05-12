@@ -1,46 +1,40 @@
 all_production:
-  '2004':
-    - product: Other biomass
-      value: 1289
-      rank: 3
-      percent: 10.221235429387043
   '2005':
     - product: Other biomass
-      value: 1358
-      rank: 2
-      percent: 10.819854991634132
+      value: 1358000
+      rank: 3
+      percent: 8.81
   '2006':
     - product: Other biomass
-      value: 1429
-      rank: 2
-      percent: 10.892598521228754
+      value: 1429000
+      rank: 3
+      percent: 8.88
   '2007':
     - product: Other biomass
-      value: 1457
-      rank: 2
-      percent: 10.769458200901768
-  '2009':
-    - product: Other biomass
-      value: 1579
+      value: 1457000
       rank: 3
-      percent: 10.353419447905058
+      percent: 8.82
   '2010':
     - product: Other biomass
-      value: 1708
-      rank: 2
-      percent: 10.933999103770564
+      value: 1708000
+      rank: 3
+      percent: 9.03
   '2011':
     - product: Other biomass
-      value: 1653
-      rank: 2
-      percent: 10.493905535804979
+      value: 1653000
+      rank: 3
+      percent: 8.6
   '2012':
     - product: Other biomass
-      value: 1765
-      rank: 2
-      percent: 10.817602353518021
+      value: 1765000
+      rank: 3
+      percent: 8.9
   '2013':
-    - product: Natural Gas (MMcf)
-      value: 3259042
+    - product: Natural Gas (mcf)
+      value: 3259042000
       rank: 2
-      percent: 11.039160094346851
+      percent: 11.04
+    - product: Other biomass
+      value: 1847000
+      rank: 3
+      percent: 8.87

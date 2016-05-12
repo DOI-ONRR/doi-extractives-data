@@ -12,6 +12,10 @@ federal_production:
       value: 476837
       rank: 1
       percent: 100
+    - product: Gas (mcf)
+      value: 1028343136.52
+      rank: 3
+      percent: 15.79
   '2006':
     - product: Brine Barrels (barrels)
       value: 66862
@@ -33,6 +37,10 @@ federal_production:
       value: 492294
       rank: 1
       percent: 100
+    - product: Gas (mcf)
+      value: 1022053891.11
+      rank: 3
+      percent: 15.79
   '2007':
     - product: Langbeinite (tons)
       value: 966101
@@ -46,6 +54,14 @@ federal_production:
       value: 251708
       rank: 1
       percent: 100
+    - product: Gas (mcf)
+      value: 975632728.21
+      rank: 3
+      percent: 14.95
+    - product: Oil (bbl)
+      value: 25308750.26
+      rank: 3
+      percent: 2.35
   '2008':
     - product: Langbeinite (tons)
       value: 974982
@@ -63,6 +79,14 @@ federal_production:
       value: 314483
       rank: 1
       percent: 100
+    - product: Gas (mcf)
+      value: 926364691.39
+      rank: 3
+      percent: 14.64
+    - product: Oil (bbl)
+      value: 25756010.39
+      rank: 3
+      percent: 2.62
   '2009':
     - product: Langbeinite (tons)
       value: 648073
@@ -80,6 +104,14 @@ federal_production:
       value: 372956
       rank: 1
       percent: 100
+    - product: Gas (mcf)
+      value: 894821783.92
+      rank: 3
+      percent: 13.7
+    - product: Oil (bbl)
+      value: 28545971.78
+      rank: 3
+      percent: 2.22
   '2010':
     - product: Langbeinite (tons)
       value: 830346
@@ -97,6 +129,14 @@ federal_production:
       value: 434018
       rank: 1
       percent: 100
+    - product: Gas (mcf)
+      value: 840725100.2
+      rank: 3
+      percent: 13.42
+    - product: Oil (bbl)
+      value: 31575274.29
+      rank: 3
+      percent: 2.51
   '2011':
     - product: 'Geothermal - Direct Use, Millions of Gallons'
       value: 71606330
@@ -118,6 +158,14 @@ federal_production:
       value: 439367
       rank: 1
       percent: 100
+    - product: Oil (bbl)
+      value: 35643027.27
+      rank: 2
+      percent: 3.28
+    - product: Gas (mcf)
+      value: 819458627.33
+      rank: 3
+      percent: 14.21
   '2012':
     - product: 'Geothermal - Direct Use, Millions of Gallons'
       value: 113448300
@@ -139,6 +187,14 @@ federal_production:
       value: 409345
       rank: 1
       percent: 100
+    - product: Oil (bbl)
+      value: 44528783.07
+      rank: 2
+      percent: 4.22
+    - product: Gas (mcf)
+      value: 803628863.73
+      rank: 3
+      percent: 14.89
   '2013':
     - product: 'Geothermal - Direct Use, Millions of Gallons'
       value: 69920724.5
@@ -160,6 +216,14 @@ federal_production:
       value: 425125
       rank: 1
       percent: 100
+    - product: Oil (bbl)
+      value: 52650332.97
+      rank: 2
+      percent: 4.96
+    - product: Gas (mcf)
+      value: 779441300.88
+      rank: 3
+      percent: 15.69
   '2014':
     - product: 'Geothermal - Direct Use, Millions of Gallons'
       value: 63624483
@@ -181,16 +245,40 @@ federal_production:
       value: 457529
       rank: 1
       percent: 100
+    - product: Oil (bbl)
+      value: 64993325.68
+      rank: 2
+      percent: 9.33
+    - product: Gas (mcf)
+      value: 776068531.97
+      rank: 3
+      percent: 16.02
 revenue:
   '2006':
-    - product: NGL
-      value: 109336368.8
+    - product: All
+      value: 1102112963.06
+      rank: 2
+      percent: 8.83
+    - product: Gas
+      value: 245818275.7
+      rank: 2
+      percent: 4.82
+    - product: Gas
+      value: 244410574.88
+      rank: 3
+      percent: 4.79
+    - product: Oil
+      value: 148819002.62
       rank: 1
-      percent: 36.45
+      percent: 3.48
     - product: 'Oil & Gas (Non-Royalty)'
       value: 119888752.87
       rank: 1
       percent: 31.91
+    - product: NGL
+      value: 109336368.8
+      rank: 1
+      percent: 36.45
     - product: Potassium
       value: 1845334.99
       rank: 1
@@ -199,19 +287,39 @@ revenue:
       value: 1702932.25
       rank: 2
       percent: 25.77
+    - product: Potassium
+      value: 1251313.27
+      rank: 3
+      percent: 18.93
+    - product: CO2
+      value: 661304.77
+      rank: 2
+      percent: 2.65
   '2007':
+    - product: All
+      value: 1110519571.24
+      rank: 2
+      percent: 9.8
+    - product: Gas
+      value: 249071593.26
+      rank: 3
+      percent: 5.79
+    - product: Oil
+      value: 173412125.33
+      rank: 1
+      percent: 3.93
     - product: 'Oil & Gas (Non-Royalty)'
       value: 133919564.78
       rank: 1
       percent: 38.1
-    - product: Potassium
-      value: 3073318.3
-      rank: 1
-      percent: 32.07
     - product: NGL
       value: 112025760.26
       rank: 1
       percent: 27.66
+    - product: Potassium
+      value: 3073318.3
+      rank: 1
+      percent: 32.07
     - product: Potassium
       value: 2435926.59
       rank: 2
@@ -220,37 +328,105 @@ revenue:
       value: 2224499.95
       rank: 3
       percent: 23.21
+    - product: CO2
+      value: 824195.02
+      rank: 2
+      percent: 3.48
   '2008':
-    - product: Potassium
-      value: 6861890.4
+    - product: All
+      value: 1328898765.78
+      rank: 2
+      percent: 5.8
+    - product: Gas
+      value: 305242709.12
+      rank: 2
+      percent: 5.65
+    - product: Oil
+      value: 277044605.14
       rank: 1
-      percent: 54.42
+      percent: 4.75
+    - product: Gas
+      value: 276191945.32
+      rank: 3
+      percent: 5.11
     - product: NGL
       value: 164599129.22
       rank: 1
       percent: 30.04
-  '2009':
+    - product: 'Oil & Gas (Non-Royalty)'
+      value: 69379138.84
+      rank: 3
+      percent: 15.11
     - product: Potassium
-      value: 13392891.32
+      value: 6861890.4
       rank: 1
-      percent: 49.74
+      percent: 54.42
+    - product: Potassium
+      value: 1916491.69
+      rank: 2
+      percent: 15.2
+    - product: Potassium
+      value: 1701323.24
+      rank: 3
+      percent: 13.49
+    - product: CO2
+      value: 1167084.72
+      rank: 2
+      percent: 1.98
+  '2009':
+    - product: All
+      value: 586606790.68
+      rank: 2
+      percent: 7.46
+    - product: Oil
+      value: 163175673.1
+      rank: 1
+      percent: 5.5
+    - product: Gas
+      value: 131378041.64
+      rank: 2
+      percent: 6.97
     - product: NGL
       value: 76820999.77
       rank: 1
       percent: 32.78
     - product: Potassium
+      value: 13392891.32
+      rank: 1
+      percent: 49.74
+    - product: Potassium
       value: 6549784.67
       rank: 2
       percent: 24.33
-  '2010':
     - product: Potassium
-      value: 8173603.14
+      value: 4196106.51
+      rank: 3
+      percent: 15.58
+    - product: CO2
+      value: 805270.17
+      rank: 2
+      percent: 2.03
+  '2010':
+    - product: All
+      value: 824281783.39
+      rank: 2
+      percent: 7.89
+    - product: Oil
+      value: 253928591.79
       rank: 1
-      percent: 39.79
+      percent: 4.98
+    - product: Gas
+      value: 156092786.27
+      rank: 3
+      percent: 6.31
     - product: NGL
       value: 109577592.95
       rank: 1
       percent: 25.59
+    - product: Potassium
+      value: 8173603.14
+      rank: 1
+      percent: 39.79
     - product: Potassium
       value: 6189818.3
       rank: 2
@@ -259,96 +435,198 @@ revenue:
       value: 4200890.52
       rank: 3
       percent: 20.45
+    - product: CO2
+      value: 1703269.41
+      rank: 2
+      percent: 3.88
   '2011':
+    - product: All
+      value: 977296752.2
+      rank: 2
+      percent: 8.83
+    - product: Oil
+      value: 335328178.74
+      rank: 1
+      percent: 5.22
+    - product: Gas
+      value: 180313332.94
+      rank: 2
+      percent: 8.24
     - product: NGL
       value: 160960169.82
       rank: 1
       percent: 28.25
-  '2012':
+    - product: 'Oil & Gas (Non-Royalty)'
+      value: 56992111.04
+      rank: 3
+      percent: 14.73
     - product: Potassium
-      value: 10943964.43
+      value: 8237791.78
+      rank: 2
+      percent: 19.03
+    - product: Potassium
+      value: 7046699.45
+      rank: 3
+      percent: 16.28
+    - product: CO2
+      value: 1254302.49
+      rank: 2
+      percent: 2.44
+    - product: Sulfur
+      value: 65189.6
+      rank: 2
+      percent: 3.45
+  '2012':
+    - product: All
+      value: 967419227.55
+      rank: 2
+      percent: 7.66
+    - product: Oil
+      value: 440738466.12
       rank: 1
-      percent: 37.87
+      percent: 6.64
+    - product: NGL
+      value: 121934129.34
+      rank: 2
+      percent: 22.14
+    - product: Gas
+      value: 106498182.22
+      rank: 2
+      percent: 8.2
     - product: 'Oil & Gas (Non-Royalty)'
       value: 85769258.6
       rank: 1
       percent: 26.09
     - product: Potassium
+      value: 10943964.43
+      rank: 1
+      percent: 37.87
+    - product: Potassium
       value: 8426159.34
       rank: 2
       percent: 29.16
-    - product: NGL
-      value: 121934129.34
-      rank: 2
-      percent: 22.14
-  '2013':
     - product: Potassium
-      value: 10026132.55
+      value: 3968666.5
+      rank: 3
+      percent: 13.73
+    - product: CO2
+      value: 1486259.14
+      rank: 2
+      percent: 2.36
+  '2013':
+    - product: All
+      value: 1074590499.4
+      rank: 2
+      percent: 8.75
+    - product: Oil
+      value: 548463746.1
       rank: 1
-      percent: 46.07
-    - product: 'Oil & Gas (Non-Royalty)'
-      value: 76474927.03
-      rank: 1
-      percent: 29.46
+      percent: 7.79
     - product: NGL
       value: 90428259.67
       rank: 1
       percent: 22.71
+    - product: 'Oil & Gas (Non-Royalty)'
+      value: 76474927.03
+      rank: 1
+      percent: 29.46
+    - product: Potassium
+      value: 10026132.55
+      rank: 1
+      percent: 46.07
     - product: Potassium
       value: 4507770.64
       rank: 2
       percent: 20.71
-  '2014':
-    - product: 'Oil & Gas (Non-Royalty)'
-      value: 154012670.35
-      rank: 1
-      percent: 51.77
     - product: Potassium
-      value: 8830201.37
-      rank: 1
-      percent: 40.88
+      value: 4218246.05
+      rank: 3
+      percent: 19.38
+    - product: CO2
+      value: 1535253.91
+      rank: 2
+      percent: 2.42
+  '2014':
+    - product: All
+      value: 1304111700.72
+      rank: 2
+      percent: 26.98
     - product: Oil
       value: 629930696.28
       rank: 1
       percent: 37.62
+    - product: 'Oil & Gas (Non-Royalty)'
+      value: 154012670.35
+      rank: 1
+      percent: 51.77
+    - product: Gas
+      value: 133673883.34
+      rank: 3
+      percent: 11.07
     - product: NGL
       value: 95871804.19
       rank: 2
       percent: 32.78
     - product: Potassium
+      value: 8830201.37
+      rank: 1
+      percent: 40.88
+    - product: Potassium
       value: 6144082.82
       rank: 2
       percent: 28.44
-    - product: All
-      value: 1304111700.72
-      rank: 2
-      percent: 26.98
     - product: Potassium
       value: 4533469.77
       rank: 3
       percent: 20.99
+    - product: CO2
+      value: 1518194.33
+      rank: 2
+      percent: 1.89
   '2015':
-    - product: 'Oil & Gas (Non-Royalty)'
-      value: 73019949.76
-      rank: 1
-      percent: 87.13
-    - product: Potassium
-      value: 8294511.02
-      rank: 1
-      percent: 53.87
+    - product: All
+      value: 859715451.47
+      rank: 2
+      percent: 25.97
     - product: Oil
       value: 460811984.55
       rank: 1
       percent: 43.24
+    - product: Gas
+      value: 95209371.36
+      rank: 2
+      percent: 12.36
+    - product: Gas
+      value: 74911576.7
+      rank: 3
+      percent: 9.72
+    - product: 'Oil & Gas (Non-Royalty)'
+      value: 73019949.76
+      rank: 1
+      percent: 87.13
     - product: NGL
       value: 43933670.17
       rank: 1
       percent: 41.57
     - product: Potassium
+      value: 8294511.02
+      rank: 1
+      percent: 53.87
+    - product: Potassium
       value: 4515552.32
       rank: 2
       percent: 29.33
-    - product: All
-      value: 859715451.47
+    - product: Potassium
+      value: 792664.1
+      rank: 3
+      percent: 5.15
+    - product: CO2
+      value: 784354.12
       rank: 2
-      percent: 25.97
+      percent: 1.38
+all_production:
+  '2011':
+    - product: Solar
+      value: 128000
+      rank: 3
+      percent: 7.04

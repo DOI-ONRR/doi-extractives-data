@@ -1,3 +1,82 @@
+all_production:
+  '2004':
+    - product: Geothermal
+      value: 1298000
+      rank: 2
+      percent: 8.76
+  '2005':
+    - product: Geothermal
+      value: 1263000
+      rank: 2
+      percent: 8.6
+  '2006':
+    - product: Geothermal
+      value: 1344000
+      rank: 2
+      percent: 9.23
+  '2007':
+    - product: Geothermal
+      value: 1253000
+      rank: 2
+      percent: 8.56
+    - product: Solar
+      value: 44000
+      rank: 2
+      percent: 7.19
+  '2008':
+    - product: Solar
+      value: 156000
+      rank: 2
+      percent: 18.06
+    - product: Geothermal
+      value: 1383000
+      rank: 2
+      percent: 9.32
+  '2009':
+    - product: Solar
+      value: 174000
+      rank: 2
+      percent: 19.53
+    - product: Geothermal
+      value: 1633000
+      rank: 2
+      percent: 10.88
+  '2010':
+    - product: Solar
+      value: 217000
+      rank: 2
+      percent: 17.92
+    - product: Geothermal
+      value: 2070000
+      rank: 2
+      percent: 13.6
+  '2011':
+    - product: Solar
+      value: 291000
+      rank: 2
+      percent: 16.01
+    - product: Geothermal
+      value: 2146000
+      rank: 2
+      percent: 14.01
+  '2012':
+    - product: Geothermal
+      value: 2347000
+      rank: 2
+      percent: 15.08
+    - product: Solar
+      value: 473000
+      rank: 3
+      percent: 10.93
+  '2013':
+    - product: Geothermal
+      value: 2670000
+      rank: 2
+      percent: 16.92
+    - product: Solar
+      value: 745000
+      rank: 3
+      percent: 8.25
 federal_production:
   '2005':
     - product: 'Geothermal - Direct Utilization, Hundreds of Gallons'
@@ -91,6 +170,10 @@ federal_production:
       percent: 59.76
 revenue:
   '2006':
+    - product: Geothermal
+      value: 1290941.54
+      rank: 3
+      percent: 9.55
     - product: 'Sand & Gravel'
       value: 2.4
       rank: 1
@@ -101,14 +184,18 @@ revenue:
       rank: 1
       percent: 32.51
   '2008':
-    - product: 'Sand & Gravel'
-      value: 320.59
-      rank: 1
-      percent: 100
     - product: Geothermal
       value: 29184887.64
       rank: 1
       percent: 65.77
+    - product: Geothermal
+      value: 2284835.44
+      rank: 3
+      percent: 5.15
+    - product: 'Sand & Gravel'
+      value: 320.59
+      rank: 1
+      percent: 100
   '2009':
     - product: Geothermal
       value: 10392825.02
@@ -119,8 +206,52 @@ revenue:
       value: 4824221.86
       rank: 2
       percent: 26.01
+    - product: Geothermal
+      value: 2731441.55
+      rank: 3
+      percent: 14.73
+  '2011':
+    - product: Geothermal
+      value: 2963858.92
+      rank: 2
+      percent: 18.84
+    - product: Geothermal
+      value: 2730895.73
+      rank: 3
+      percent: 17.36
+  '2012':
+    - product: Geothermal
+      value: 2476369.42
+      rank: 2
+      percent: 16.39
+    - product: Geothermal
+      value: 2237790.87
+      rank: 3
+      percent: 14.82
+  '2013':
+    - product: Geothermal
+      value: 2730744.4
+      rank: 2
+      percent: 18.03
+    - product: Geothermal
+      value: 1628708.45
+      rank: 3
+      percent: 10.76
+  '2014':
+    - product: Geothermal
+      value: 3087462.18
+      rank: 2
+      percent: 17.97
+    - product: Geothermal
+      value: 1480576.4
+      rank: 3
+      percent: 8.62
   '2015':
     - product: Geothermal
       value: 3012658.97
       rank: 2
       percent: 21.5
+    - product: Geothermal
+      value: 1155606.73
+      rank: 3
+      percent: 8.25

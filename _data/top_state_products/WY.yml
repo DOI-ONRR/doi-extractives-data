@@ -4,41 +4,74 @@ all_production:
       value: 396493092
       rank: 1
       percent: 50.65
+    - product: Natural Gas (mcf)
+      value: 1929040000
+      rank: 3
+      percent: 8.05
   '2005':
     - product: Coal (short tons)
       value: 404318534
       rank: 1
       percent: 51.18
+    - product: Natural Gas (mcf)
+      value: 2003826000
+      rank: 3
+      percent: 8.54
   '2006':
     - product: Coal (short tons)
       value: 446742253
       rank: 1
       percent: 54.3
+    - product: Natural Gas (mcf)
+      value: 2111766000
+      rank: 3
+      percent: 8.97
   '2007':
     - product: Coal (short tons)
       value: 453568259
       rank: 1
       percent: 55.88
+    - product: Natural Gas (mcf)
+      value: 2257884000
+      rank: 3
+      percent: 9.15
   '2008':
     - product: Coal (short tons)
       value: 467644168
       rank: 1
       percent: 56.55
+    - product: Natural Gas (mcf)
+      value: 2488267000
+      rank: 3
+      percent: 9.71
   '2009':
     - product: Coal (short tons)
       value: 431106631
       rank: 1
       percent: 56
+    - product: Natural Gas (mcf)
+      value: 2536336000
+      rank: 3
+      percent: 9.73
   '2010':
     - product: Coal (short tons)
       value: 442522372
       rank: 1
       percent: 56.46
+    - product: Natural Gas (mcf)
+      value: 2514657000
+      rank: 3
+      percent: 9.38
   '2011':
     - product: Coal (short tons)
       value: 438673388
       rank: 1
       percent: 55.43
+  '2012':
+    - product: Coal (short tons)
+      value: 7004
+      rank: 1
+      percent: 16.81
   '2013':
     - product: Coal (short tons)
       value: 387923828
@@ -62,6 +95,10 @@ federal_production:
       value: 1363453405.16
       rank: 2
       percent: 20.94
+    - product: Oil (bbl)
+      value: 30506323.7
+      rank: 2
+      percent: 2.88
   '2006':
     - product: Purge Liquor (tons- equivalent)
       value: 69814
@@ -79,6 +116,10 @@ federal_production:
       value: 1491448824.34
       rank: 2
       percent: 23.04
+    - product: Oil (bbl)
+      value: 31881550.63
+      rank: 2
+      percent: 2.95
   '2007':
     - product: Purge Liquor (tons- equivalent)
       value: 97711
@@ -96,6 +137,10 @@ federal_production:
       value: 1663194650.81
       rank: 2
       percent: 25.49
+    - product: Oil (bbl)
+      value: 33058880.24
+      rank: 2
+      percent: 3.07
   '2008':
     - product: Purge Liquor (tons- equivalent)
       value: 116333
@@ -113,6 +158,10 @@ federal_production:
       value: 1853711613.48
       rank: 2
       percent: 29.29
+    - product: Oil (bbl)
+      value: 32610960.23
+      rank: 2
+      percent: 3.31
   '2009':
     - product: Purge Liquor (tons- equivalent)
       value: 118021
@@ -134,6 +183,10 @@ federal_production:
       value: 1936844262.79
       rank: 2
       percent: 29.66
+    - product: Oil (bbl)
+      value: 31935377.18
+      rank: 2
+      percent: 2.48
   '2010':
     - product: Purge Liquor (tons- equivalent)
       value: 104405
@@ -155,6 +208,10 @@ federal_production:
       value: 1936990584.88
       rank: 2
       percent: 30.91
+    - product: Oil (bbl)
+      value: 32433494.77
+      rank: 2
+      percent: 2.58
   '2011':
     - product: Purge Liquor (tons- equivalent)
       value: 88407
@@ -176,6 +233,10 @@ federal_production:
       value: 1834316065.36
       rank: 1
       percent: 31.81
+    - product: Oil (bbl)
+      value: 32408833.51
+      rank: 3
+      percent: 2.98
   '2012':
     - product: Purge Liquor (tons- equivalent)
       value: 73594
@@ -197,6 +258,10 @@ federal_production:
       value: 1736628829.34
       rank: 1
       percent: 32.17
+    - product: Oil (bbl)
+      value: 33168536.3
+      rank: 3
+      percent: 3.14
   '2013':
     - product: Purge Liquor (tons- equivalent)
       value: 88213
@@ -222,6 +287,10 @@ federal_production:
       value: 1591445783.74
       rank: 1
       percent: 32.04
+    - product: Oil (bbl)
+      value: 35695518.7
+      rank: 3
+      percent: 3.36
   '2014':
     - product: Purge Liquor (tons- equivalent)
       value: 91878
@@ -243,168 +312,352 @@ federal_production:
       value: 1530108359.84
       rank: 1
       percent: 31.58
+    - product: Oil (bbl)
+      value: 40604913.8
+      rank: 3
+      percent: 5.83
 revenue:
   '2006':
+    - product: All
+      value: 2058583547.08
+      rank: 1
+      percent: 16.5
     - product: Coal
       value: 824749734.35
       rank: 1
       percent: 86.85
-    - product: Sulfur
-      value: 15499.79
+    - product: Gas
+      value: 585022160.6
       rank: 1
-      percent: 81.13
+      percent: 11.47
+    - product: Oil
+      value: 146041546.09
+      rank: 2
+      percent: 3.42
+    - product: 'Oil & Gas (Non-Royalty)'
+      value: 49661556.5
+      rank: 3
+      percent: 13.22
+    - product: NGL
+      value: 27267737.06
+      rank: 2
+      percent: 9.09
     - product: Sodium
       value: 22887841.13
       rank: 1
       percent: 74.56
+    - product: Sodium
+      value: 883257.92
+      rank: 3
+      percent: 2.88
+    - product: CO2
+      value: 60733.7
+      rank: 3
+      percent: 0.24
+    - product: Sulfur
+      value: 15499.79
+      rank: 1
+      percent: 81.13
     - product: Helium
       value: -234.17
       rank: 2
       percent: 80.32
   '2007':
-    - product: Sulfur
-      value: 65834.88
+    - product: All
+      value: 1848969321.07
       rank: 1
-      percent: 96.69
+      percent: 16.31
     - product: Coal
       value: 807822687.62
       rank: 1
       percent: 86.09
+    - product: Gas
+      value: 281178954.79
+      rank: 1
+      percent: 6.53
+    - product: Gas
+      value: 269112673.73
+      rank: 2
+      percent: 6.25
+    - product: Oil
+      value: 170699099.12
+      rank: 2
+      percent: 3.87
+    - product: NGL
+      value: 58637672.7
+      rank: 2
+      percent: 14.48
+    - product: 'Oil & Gas (Non-Royalty)'
+      value: 41243505.95
+      rank: 3
+      percent: 11.73
     - product: Sodium
       value: 10977807.7
       rank: 1
       percent: 77.75
-  '2008':
+    - product: CO2
+      value: 85873.69
+      rank: 3
+      percent: 0.36
     - product: Sulfur
-      value: 1119707.84
+      value: 65834.88
       rank: 1
-      percent: 96.59
+      percent: 96.69
+  '2008':
+    - product: All
+      value: 2766468482.78
+      rank: 1
+      percent: 12.07
     - product: Coal
       value: 991442346.6
       rank: 1
       percent: 86.85
-    - product: Sodium
-      value: 16934238.58
+    - product: Gas
+      value: 750932333.42
       rank: 1
-      percent: 81.16
+      percent: 13.91
+    - product: Oil
+      value: 263722760.63
+      rank: 2
+      percent: 4.52
     - product: 'Oil & Gas (Non-Royalty)'
       value: 95350185.3
       rank: 2
       percent: 20.76
-  '2009':
-    - product: Sulfur
-      value: 7096365.82
-      rank: 1
-      percent: 100.09
-    - product: Coal
-      value: 956698236.98
-      rank: 1
-      percent: 88.39
+    - product: NGL
+      value: 91717765.47
+      rank: 2
+      percent: 16.74
     - product: Sodium
-      value: 13768536.9
+      value: 16934238.58
       rank: 1
-      percent: 79.45
+      percent: 81.16
+    - product: Sulfur
+      value: 1119707.84
+      rank: 1
+      percent: 96.59
+    - product: CO2
+      value: 560395.03
+      rank: 3
+      percent: 0.95
+  '2009':
     - product: All
       value: 1805880487.35
       rank: 1
       percent: 22.98
+    - product: Coal
+      value: 956698236.98
+      rank: 1
+      percent: 88.39
+    - product: Gas
+      value: 331844656.88
+      rank: 1
+      percent: 17.6
+    - product: Oil
+      value: 143241523.41
+      rank: 2
+      percent: 4.83
+    - product: Gas
+      value: 112062257.62
+      rank: 3
+      percent: 5.94
     - product: 'Oil & Gas (Non-Royalty)'
       value: 55443027.47
       rank: 2
       percent: 21.44
-  '2010':
-    - product: Sulfur
-      value: 371502.86
+    - product: NGL
+      value: 36223633.71
+      rank: 2
+      percent: 15.46
+    - product: Sodium
+      value: 13768536.9
       rank: 1
-      percent: 98.58
+      percent: 79.45
+    - product: Sulfur
+      value: 7096365.82
+      rank: 1
+      percent: 100.09
+    - product: CO2
+      value: 70188.83
+      rank: 3
+      percent: 0.18
+  '2010':
+    - product: All
+      value: 1864030625.29
+      rank: 1
+      percent: 17.83
     - product: Coal
       value: 716920555.45
       rank: 1
       percent: 81.75
-    - product: Sodium
-      value: 12545243.06
+    - product: Gas
+      value: 458473156.43
       rank: 1
-      percent: 72.67
+      percent: 18.54
+    - product: Oil
+      value: 198146652.13
+      rank: 2
+      percent: 3.88
+    - product: Gas
+      value: 166246845.36
+      rank: 2
+      percent: 6.72
     - product: 'Oil & Gas (Non-Royalty)'
       value: 65210661.5
       rank: 1
       percent: 24.6
-  '2011':
-    - product: Sulfur
-      value: 1810389.17
+    - product: NGL
+      value: 54659745.49
+      rank: 2
+      percent: 12.76
+    - product: Sodium
+      value: 12545243.06
       rank: 1
-      percent: 95.8
+      percent: 72.67
+    - product: Sulfur
+      value: 371502.86
+      rank: 1
+      percent: 98.58
+  '2011':
+    - product: All
+      value: 2118589204.83
+      rank: 1
+      percent: 19.15
     - product: Coal
       value: 878951875.97
       rank: 1
       percent: 84.59
-    - product: Sodium
-      value: 23784442.2
+    - product: Gas
+      value: 400433969.42
       rank: 1
-      percent: 77.42
+      percent: 18.29
+    - product: Oil
+      value: 250438937.93
+      rank: 2
+      percent: 3.9
+    - product: Gas
+      value: 149516796.93
+      rank: 3
+      percent: 6.83
     - product: 'Oil & Gas (Non-Royalty)'
       value: 136313735.74
       rank: 1
       percent: 35.23
-  '2012':
-    - product: Sulfur
-      value: 2025396.59
+    - product: NGL
+      value: 68574645.94
+      rank: 2
+      percent: 12.03
+    - product: Sodium
+      value: 23784442.2
       rank: 1
-      percent: 99.55
+      percent: 77.42
+    - product: Sulfur
+      value: 1810389.17
+      rank: 1
+      percent: 95.8
+    - product: CO2
+      value: 287737.81
+      rank: 3
+      percent: 0.56
+  '2012':
+    - product: All
+      value: 2099793381.16
+      rank: 1
+      percent: 16.62
     - product: Coal
       value: 1172039070.57
       rank: 1
       percent: 86.95
-    - product: Sodium
-      value: 38532552.45
-      rank: 1
-      percent: 73.8
     - product: Gas
       value: 395231335.87
       rank: 1
       percent: 30.42
+    - product: Oil
+      value: 255928465.26
+      rank: 2
+      percent: 3.85
     - product: NGL
       value: 132172213.43
       rank: 1
       percent: 24
-  '2013':
-    - product: Sulfur
-      value: 476174.84
+    - product: Gas
+      value: 97728061.87
+      rank: 3
+      percent: 7.52
+    - product: 'Oil & Gas (Non-Royalty)'
+      value: 61028635.86
+      rank: 2
+      percent: 18.57
+    - product: Sodium
+      value: 38532552.45
       rank: 1
-      percent: 98.32
+      percent: 73.8
+    - product: Sulfur
+      value: 2025396.59
+      rank: 1
+      percent: 99.55
+    - product: CO2
+      value: 656148.07
+      rank: 3
+      percent: 1.04
+  '2013':
+    - product: All
+      value: 2004924663.31
+      rank: 1
+      percent: 16.32
     - product: Coal
       value: 996347754.68
       rank: 1
       percent: 87.95
-    - product: Sodium
-      value: 39052238.53
+    - product: Oil
+      value: 274227695.37
+      rank: 2
+      percent: 3.9
+    - product: Gas
+      value: 233722229.12
       rank: 1
-      percent: 74.24
+      percent: 14.81
+    - product: Gas
+      value: 187520718.82
+      rank: 2
+      percent: 11.89
     - product: 'Oil & Gas (Non-Royalty)'
       value: 63327416.67
       rank: 3
       percent: 24.4
-  '2014':
-    - product: Sulfur
-      value: 428276
-      rank: 1
-      percent: 98.91
-    - product: Coal
-      value: 1026104598.38
-      rank: 1
-      percent: 87.37
+    - product: NGL
+      value: 59990284.01
+      rank: 2
+      percent: 15.06
     - product: Sodium
-      value: 31312973.76
+      value: 39052238.53
       rank: 1
-      percent: 70.67
-    - product: Gas
-      value: 567054347.14
+      percent: 74.24
+    - product: Sulfur
+      value: 476174.84
       rank: 1
-      percent: 46.97
+      percent: 98.32
+    - product: CO2
+      value: 306677.66
+      rank: 3
+      percent: 0.48
+  '2014':
     - product: All
       value: 2144741216.67
       rank: 1
       percent: 44.37
+    - product: Coal
+      value: 1026104598.38
+      rank: 1
+      percent: 87.37
+    - product: Gas
+      value: 567054347.14
+      rank: 1
+      percent: 46.97
+    - product: Oil
+      value: 316283815.63
+      rank: 2
+      percent: 18.89
     - product: NGL
       value: 121439972.42
       rank: 1
@@ -413,24 +666,48 @@ revenue:
       value: 68752649.15
       rank: 2
       percent: 23.11
-  '2015':
-    - product: Coal
-      value: 990842539.47
-      rank: 1
-      percent: 87.54
     - product: Sodium
-      value: 32152811.46
+      value: 31312973.76
       rank: 1
-      percent: 72.19
+      percent: 70.67
+    - product: CO2
+      value: 1064886.82
+      rank: 3
+      percent: 1.33
+    - product: Sulfur
+      value: 428276
+      rank: 1
+      percent: 98.91
+  '2015':
     - product: All
       value: 1636162227.93
       rank: 1
       percent: 49.43
+    - product: Coal
+      value: 990842539.47
+      rank: 1
+      percent: 87.54
     - product: Gas
       value: 364651173.99
       rank: 1
       percent: 47.33
+    - product: Oil
+      value: 199634878.49
+      rank: 2
+      percent: 18.73
     - product: NGL
       value: 42804513.37
       rank: 2
       percent: 40.51
+    - product: Sodium
+      value: 32152811.46
+      rank: 1
+      percent: 72.19
+    - product: CO2
+      value: 246840.67
+      rank: 3
+      percent: 0.43
+    - product: Sulfur
+      value: -257513.23
+      rank: 4
+      percent: 104.23

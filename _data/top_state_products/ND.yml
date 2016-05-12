@@ -4,6 +4,10 @@ revenue:
       value: 94899390.71
       rank: 1
       percent: 36.71
+    - product: Sulfur
+      value: 0.01
+      rank: 3
+      percent: 0
   '2011':
     - product: 'Oil & Gas (Non-Royalty)'
       value: 103702962.35
@@ -14,3 +18,28 @@ revenue:
       value: 63976335.46
       rank: 2
       percent: 24.65
+  '2014':
+    - product: Oil
+      value: 204382309.29
+      rank: 3
+      percent: 12.21
+    - product: 'Oil & Gas (Non-Royalty)'
+      value: 27746136.27
+      rank: 3
+      percent: 9.33
+  '2015':
+    - product: Oil
+      value: 134992263.65
+      rank: 3
+      percent: 12.67
+all_production:
+  '2012':
+    - product: Oil (bbl)
+      value: 243236
+      rank: 2
+      percent: 9.51
+  '2013':
+    - product: Oil (bbl)
+      value: 313823
+      rank: 2
+      percent: 10.81

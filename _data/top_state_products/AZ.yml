@@ -1,4 +1,24 @@
 all_production:
+  '2004':
+    - product: Solar
+      value: 4000
+      rank: 2
+      percent: 0.7
+  '2005':
+    - product: Solar
+      value: 14000
+      rank: 2
+      percent: 2.54
+  '2006':
+    - product: Solar
+      value: 13000
+      rank: 2
+      percent: 2.56
+  '2007':
+    - product: Solar
+      value: 9000
+      rank: 3
+      percent: 1.47
   '2012':
     - product: Solar
       value: 955000

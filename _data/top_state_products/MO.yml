@@ -139,6 +139,10 @@ revenue:
       value: 3100687.25
       rank: 2
       percent: 29.27
+    - product: Hardrock
+      value: 1370471.54
+      rank: 3
+      percent: 12.94
   '2007':
     - product: Hardrock
       value: 12998522.33
@@ -148,43 +152,111 @@ revenue:
       value: 3687687.9
       rank: 2
       percent: 20.61
+    - product: Hardrock
+      value: 1084225.76
+      rank: 3
+      percent: 6.06
   '2008':
     - product: Hardrock
       value: 11452791.34
       rank: 1
       percent: 80.02
+    - product: Hardrock
+      value: 1652714.39
+      rank: 2
+      percent: 11.55
+    - product: Hardrock
+      value: 1055500.81
+      rank: 3
+      percent: 7.37
   '2009':
     - product: Hardrock
       value: 7641660.51
       rank: 1
       percent: 80.29
+    - product: Hardrock
+      value: 1216949.69
+      rank: 2
+      percent: 12.79
+    - product: Hardrock
+      value: 448324.49
+      rank: 3
+      percent: 4.71
   '2010':
     - product: Hardrock
       value: 10773530.65
       rank: 1
       percent: 80.14
+    - product: Hardrock
+      value: 1964638.26
+      rank: 2
+      percent: 14.62
+    - product: Hardrock
+      value: 518826.8
+      rank: 3
+      percent: 3.86
   '2011':
     - product: Hardrock
       value: 11376686.36
       rank: 1
       percent: 75.75
+    - product: Hardrock
+      value: 2174729.25
+      rank: 2
+      percent: 14.48
+    - product: Hardrock
+      value: 1283873.51
+      rank: 3
+      percent: 8.55
   '2012':
     - product: Hardrock
       value: 8484118.41
       rank: 1
       percent: 72.29
+    - product: Hardrock
+      value: 1588286.15
+      rank: 2
+      percent: 13.53
+    - product: Hardrock
+      value: 1447209.99
+      rank: 3
+      percent: 12.33
   '2013':
     - product: Hardrock
       value: 7341303.62
       rank: 1
       percent: 77.28
+    - product: Hardrock
+      value: 1316533.35
+      rank: 2
+      percent: 13.86
+    - product: Hardrock
+      value: 699078.75
+      rank: 3
+      percent: 7.36
   '2014':
     - product: Hardrock
       value: 7871886.41
       rank: 1
       percent: 72.33
+    - product: Hardrock
+      value: 1826454.66
+      rank: 2
+      percent: 16.78
+    - product: Hardrock
+      value: 1064756.71
+      rank: 3
+      percent: 9.78
   '2015':
     - product: Hardrock
       value: 6778729.25
       rank: 1
       percent: 72.84
+    - product: Hardrock
+      value: 1272801.9
+      rank: 2
+      percent: 13.68
+    - product: Hardrock
+      value: 1157090.24
+      rank: 3
+      percent: 12.43

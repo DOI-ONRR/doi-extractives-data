@@ -4,11 +4,25 @@ revenue:
       value: 959
       rank: 1
       percent: 100
+  '2010':
+    - product: Asphalt
+      value: 0
+      rank: 1
+      percent: null
+  '2013':
+    - product: Helium
+      value: 1.2
+      rank: 2
+      percent: 1.79
   '2014':
     - product: Asphalt
       value: 1062.52
       rank: 1
       percent: 100
+    - product: Helium
+      value: 0.16
+      rank: 3
+      percent: 0.01
   '2015':
     - product: Asphalt
       value: 563.95

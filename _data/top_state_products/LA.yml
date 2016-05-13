@@ -1,17 +1,23 @@
 revenue:
   '2010':
     - product: 'Oil & Gas (Non-Royalty)'
+      name: null
+      units: null
       value: 38249065.09
       rank: 3
       percent: 14.43
 all_production:
   '2011':
     - product: Natural Gas (mcf)
+      name: Natural Gas
+      units: mcf
       value: 3040523000
       rank: 3
       percent: 10.68
   '2012':
     - product: Natural Gas (mcf)
+      name: Natural Gas
+      units: mcf
       value: 2955437000
       rank: 3
       percent: 10

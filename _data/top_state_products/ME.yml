@@ -1,83 +1,119 @@
 all_production:
   '2004':
     - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: null
       value: 3187000
       rank: 3
       percent: 8.36
   '2005':
     - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: null
       value: 3778000
       rank: 1
       percent: 9.72
     - product: Biomass (total)
+      name: Biomass (total)
+      units: null
       value: 4068000
       rank: 3
       percent: 7.49
   '2006':
     - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: null
       value: 3685000
       rank: 2
       percent: 9.51
     - product: Biomass (total)
+      name: Biomass (total)
+      units: null
       value: 3968000
       rank: 3
       percent: 7.23
   '2007':
     - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: null
       value: 3848000
       rank: 1
       percent: 9.86
     - product: Biomass (total)
+      name: Biomass (total)
+      units: null
       value: 4108000
       rank: 3
       percent: 7.4
   '2008':
     - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: null
       value: 3669000
       rank: 1
       percent: 9.84
     - product: Biomass (total)
+      name: Biomass (total)
+      units: null
       value: 3926000
       rank: 3
       percent: 7.13
   '2009':
     - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: null
       value: 3367000
       rank: 2
       percent: 9.34
     - product: Biomass (total)
+      name: Biomass (total)
+      units: null
       value: 3640000
       rank: 3
       percent: 6.68
   '2010':
     - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: null
       value: 3390000
       rank: 2
       percent: 9.12
     - product: Biomass (total)
+      name: Biomass (total)
+      units: null
       value: 3653000
       rank: 3
       percent: 6.51
   '2011':
     - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: null
       value: 3511000
       rank: 1
       percent: 9.38
     - product: Biomass (total)
+      name: Biomass (total)
+      units: null
       value: 3788000
       rank: 3
       percent: 6.68
   '2012':
     - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: null
       value: 2945000
       rank: 3
       percent: 7.79
   '2013':
     - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: null
       value: 3625000
       rank: 2
       percent: 9.06
     - product: Biomass (total)
+      name: Biomass (total)
+      units: null
       value: 3846000
       rank: 3
       percent: 6.32

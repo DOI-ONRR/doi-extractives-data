@@ -1,36 +1,50 @@
 revenue:
   '2006':
     - product: Helium
+      name: null
+      units: null
       value: -57.39
       rank: 1
       percent: 19.68
   '2009':
     - product: Helium
+      name: null
+      units: null
       value: 20.06
       rank: 1
       percent: 100
   '2011':
     - product: Helium
+      name: null
+      units: null
       value: 32.65
       rank: 2
       percent: 35.93
   '2012':
     - product: Helium
+      name: null
+      units: null
       value: 3.73
       rank: 2
       percent: 6.3
   '2013':
     - product: Helium
+      name: null
+      units: null
       value: -0.22
       rank: 3
       percent: null
   '2014':
     - product: Helium
+      name: null
+      units: null
       value: 2865.72
       rank: 1
       percent: 97.66
   '2015':
     - product: Helium
+      name: null
+      units: null
       value: -2642.34
       rank: 2
       percent: 102.18

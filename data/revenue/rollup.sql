@@ -25,29 +25,29 @@ GROUP BY
 DROP TABLE IF EXISTS state_revenue_type;
 CREATE TABLE state_revenue_type AS
     SELECT
-        year, state, commodity, product, revenue_type,
+        year, state, commodity, revenue_type,
         SUM(revenue) AS revenue
     FROM county_revenue
     GROUP BY
-        year, state, commodity, product;
+        year, state, commodity;
 
 -- create a county-level
 INSERT INTO state_revenue_type
-    (year, state, commodity, product, revenue_type, revenue)
+    (year, state, commodity, revenue_type, revenue)
 SELECT
-    year, state, commodity, product, 'All', SUM(revenue)
+    year, state, commodity, revenue_type, SUM(revenue)
 FROM county_revenue
 GROUP BY
-    year, state, commodity, product;
+    year, state, commodity;
 
 -- create state revenue rollups
 DROP TABLE IF EXISTS state_revenue;
 CREATE TABLE state_revenue AS
 SELECT
-    year, state, commodity, product, SUM(revenue) AS revenue
+    year, state, commodity, SUM(revenue) AS revenue
 FROM county_revenue
 GROUP BY
-    year, state, commodity, product;
+    year, state, commodity;
 
 -- create "all commodity" rows by offshore region
 DELETE FROM offshore_revenue WHERE commodity = 'All';
@@ -69,23 +69,25 @@ WHERE product IS NULL;
 DROP TABLE IF EXISTS regional_revenue;
 CREATE TABLE regional_revenue AS
     SELECT
-        year, state AS region_id, 'state' AS region_type,
-        commodity, product, SUM(revenue) AS revenue
+        year, commodity,
+        state AS region_id, 'state' AS region_type,
+        SUM(revenue) AS revenue
     FROM state_revenue
     GROUP BY
-        year, commodity, product
+        year, commodity
 UNION
     -- NOTE: we're normalizing region_id to the 3-letter planning area
     -- identifier here, e.g. "Central Gulf of Mexico" becomes "CGM"
     SELECT
-        year, area.id AS region_id, 'offshore' AS region_type,
-        commodity, product, SUM(revenue) AS revenue
+        year, commodity,
+        area.id AS region_id, 'offshore' AS region_type,
+        SUM(revenue) AS revenue
     FROM offshore_revenue AS offshore
     INNER JOIN offshore_planning_areas AS area
     ON
         offshore.planning_area = area.name
     GROUP BY
-        year, commodity, product;
+        year, commodity;
 
 -- then create national revenue as an aggregate view
 -- on regional revenue

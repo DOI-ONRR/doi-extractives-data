@@ -1,6 +1,6 @@
 ---
 title: Federal Laws | How It Works
-layout: narrative
+layout: content
 permalink: /how-it-works/federal-laws/
 nav_description: Jump to a section
 nav_items:
@@ -14,23 +14,22 @@ nav_items:
     title: Other laws
   - name: regulations
     title: Regulations
+breadcrumb:
+  - title: How it works
+    permalink: /how-it-works/
+title_display: Federal laws and regulations
+selector: hash
 ---
 
-<div>
-  <a class="revenues_subpage-breadcrumb" href="{{ site.baseurl }}/how-it-works/">How it works</a>
-  /
-</div>
-<h1 id="introduction" data-nav-header="introduction">Federal laws and regulations</h1>
+> The legislative branch of the federal government has passed many laws that govern natural resource extraction on federal lands.
 
-<p class="case_studies_intro-para">The legislative branch of the federal government has passed many laws that govern natural resource extraction on federal lands.</p>
 
-<nav class="hash_selector">
-  {% include hash_selector.html %}
-</nav>
+{% include selector.html %}
+
 
 <h2 class="h3" id="fiscal-regime" data-nav-header="fiscal-regime">Fiscal regime</h2>
 
-<p>The following table lists the laws that provide the backbone of the fiscal regime for the extractive industries, as well as the relevant lands and natural resources to which they apply.</p>
+The following table lists the laws that provide the backbone of the fiscal regime for the extractive industries, as well as the relevant lands and natural resources to which they apply.
 
 <table class="article_table">
   <tr>
@@ -151,7 +150,7 @@ nav_items:
 
 <h2 class="h3" id="fees-and-fines" data-nav-header="fees-and-fines">Fees and fines for extractive industries companies</h2>
 
-<p>There are other laws governing natural resources and extractive companies’ operations. Some of these laws require companies to pay fees. Violating some of these laws can also result in companies paying fines.</p>
+There are other laws governing natural resources and extractive companies’ operations. Some of these laws require companies to pay fees. Violating some of these laws can also result in companies paying fines.
 
 <table class="article_table">
   <tr>
@@ -206,26 +205,24 @@ nav_items:
 
 <h2 class="h3" id="other-laws" data-nav-header="other-laws">Other laws</h2>
 
-<p>There are many other laws with which extractive industries companies must comply. DOI, EPA, the National Oceanic and Atmospheric Administration (NOAA), and other federal agencies’ websites contain more comprehensive lists of laws they enforce:</p>
+There are many other laws with which extractive industries companies must comply. DOI, EPA, the National Oceanic and Atmospheric Administration (NOAA), and other federal agencies’ websites contain more comprehensive lists of laws they enforce:
 
-<ul class="list-bullet">
-	<li><a href="http://www.boem.gov/Regulations/BOEM-Governing-Statutes.aspx">DOI BOEM</a></li>
-<li><a href="http://www.bsee.gov/Regulations-and-Guidance/BSEE-Governing-Statutes/">DOI Bureau of Safety and Environmental Enforcement</a> (BSEE)</li>
-<li><a href="http://www.blm.gov/wo/st/en/info/regulations.html">DOI BLM</a></li>
-<li><a href="http://www2.epa.gov/laws-regulations/laws-and-executive-orders#majorlaws">EPA</a></li>
-<li><a href="http://www.osmre.gov/lrg.shtm">OSMRE</a></li>
-<li><a href="http://www.nmfs.noaa.gov/ole/about/what_we_do/laws.html">NOAA</a></li>
-</ul>
+
+* [DOI BOEM](http://www.boem.gov/Regulations/BOEM-Governing-Statutes.aspx)
+* [DOI Bureau of Safety and Environmental Enforcement](http://www.bsee.gov/Regulations-and-Guidance/BSEE-Governing-Statutes/) (BSEE)
+* [DOI BLM](http://www.blm.gov/wo/st/en/info/regulations.html)
+* [EPA](http://www2.epa.gov/laws-regulations/laws-and-executive-orders#majorlaws)
+* [OSMRE](http://www.osmre.gov/lrg.shtm)
+* [NOAA](http://www.nmfs.noaa.gov/ole/about/what_we_do/laws.html)
+
 
 <h2 class="h3" id="regulations" data-nav-header="regulations">Regulations</h2>
 
-<p>Federal agencies, such as DOI and relevant bureaus, implement these laws by developing and enforcing regulations and rules. These key regulations relate to natural resource extraction, particularly on federal and Indian lands:</p>
+Federal agencies, such as DOI and relevant bureaus, implement these laws by developing and enforcing regulations and rules. These key regulations relate to natural resource extraction, particularly on federal and Indian lands:
 
-<ul class="list-bullet">
-  <li><a href="http://www.gpo.gov/fdsys/search/pagedetails.action?collectionCode=CFR&searchPath=Title+25%2FChapter+I%2FSubchapter+I&granuleId=&packageId=CFR-2008-title25-vol1&oldPath=Title+25%2FChapter+I%2FSubchapter+A&fromPageDetails=true&collapse=true&ycord=435">Title 25</a> in the Code of Federal Regulations relates to sovereign Indian nations. Subchapter I deals with energy and minerals (Parts 200–227).</li>
-  <li><a href="http://www.ecfr.gov/cgi-bin/text-idx?SID=784ea268c892a669424da1512740a933&mc=true&tpl=/ecfrbrowse/Title30/30tab_02.tpl">Title 30</a> governs mineral resources. <a href="http://www.ecfr.gov/cgi-bin/text-idx?SID=050aa7804f2ee861c64ba348d17a79c1&mc=true&tpl=/ecfrbrowse/Title30/30cfrv2_02.tpl#0">Chapter II</a> deals with the BSEE; <a href="http://www.ecfr.gov/cgi-bin/text-idx?SID=050aa7804f2ee861c64ba348d17a79c1&mc=true&tpl=/ecfrbrowse/Title30/30cfrv2_02.tpl#500">Chapter V</a> deals with BOEM; <a href="http://www.ecfr.gov/cgi-bin/text-idx?SID=050aa7804f2ee861c64ba348d17a79c1&mc=true&tpl=/ecfrbrowse/Title30/30cfrv3_02.tpl#0">Chapter VII</a> deals with OSMRE; <a href="http://www.ecfr.gov/cgi-bin/text-idx?SID=050aa7804f2ee861c64ba348d17a79c1&mc=true&tpl=/ecfrbrowse/Title30/30cfrv3_02.tpl#1200">Chapter XII</a> deals with ONRR.</li>
-  <li><a href="http://www.ecfr.gov/cgi-bin/text-idx?tpl=/ecfrbrowse/Title43/43tab_02.tpl">Title 43</a> in the Code of Federal Regulations governs public lands. Subchapter C focuses on minerals management (Parts 3000–3870).</li>
-</ul>
 
-<p>Implementing laws includes complying with the <a href="http://www.gpo.gov/fdsys/pkg/USCODE-2010-title42/pdf/USCODE-2010-title42-chap55-sec4321.pdf">National Environmental Policy Act (NEPA) of 1969</a> (42 USC § 4321 et seq.). NEPA is intended to ensure that decision makers and the public have information about the potential impacts to the environment of proposed federal actions and alternatives to those actions. When taking any major action, such as leasing natural resources on federal lands for extraction, federal agencies must prepare Environmental Assessments (EAs) and/or EISs to document environmental impacts of agency actions and alternatives to those actions. The public has legally mandated opportunities to comment on these impact statements.
-</p>
+* [Title 25](http://www.gpo.gov/fdsys/search/pagedetails.action?collectionCode=CFR&searchPath=Title+25%2FChapter+I%2FSubchapter+I&granuleId=&packageId=CFR-2008-title25-vol1&oldPath=Title+25%2FChapter+I%2FSubchapter+A&fromPageDetails=true&collapse=true&ycord=435) in the Code of Federal Regulations relates to sovereign Indian nations. Subchapter I deals with energy and minerals (Parts 200–227).
+* [Title 30](http://www.ecfr.gov/cgi-bin/text-idx?SID=784ea268c892a669424da1512740a933&mc=true&tpl=/ecfrbrowse/Title30/30tab_02.tpl) governs mineral resources. [Chapter II](http://www.ecfr.gov/cgi-bin/text-idx?SID=050aa7804f2ee861c64ba348d17a79c1&mc=true&tpl=/ecfrbrowse/Title30/30cfrv2_02.tpl#0) deals with the BSEE; [Chapter V](http://www.ecfr.gov/cgi-bin/text-idx?SID=050aa7804f2ee861c64ba348d17a79c1&mc=true&tpl=/ecfrbrowse/Title30/30cfrv2_02.tpl#500) deals with BOEM; [Chapter VII](http://www.ecfr.gov/cgi-bin/text-idx?SID=050aa7804f2ee861c64ba348d17a79c1&mc=true&tpl=/ecfrbrowse/Title30/30cfrv3_02.tpl#0) deals with OSMRE; [Chapter XII](http://www.ecfr.gov/cgi-bin/text-idx?SID=050aa7804f2ee861c64ba348d17a79c1&mc=true&tpl=/ecfrbrowse/Title30/30cfrv3_02.tpl#1200) deals with ONRR.
+* [Title 43](http://www.ecfr.gov/cgi-bin/text-idx?tpl=/ecfrbrowse/Title43/43tab_02.tpl) in the Code of Federal Regulations governs public lands. Subchapter C focuses on minerals management (Parts 3000–3870).
+
+Implementing laws includes complying with the [National Environmental Policy Act (NEPA) of 1969](http://www.gpo.gov/fdsys/pkg/USCODE-2010-title42/pdf/USCODE-2010-title42-chap55-sec4321.pdf) (42 USC § 4321 et seq.). NEPA is intended to ensure that decision makers and the public have information about the potential impacts to the environment of proposed federal actions and alternatives to those actions. When taking any major action, such as leasing natural resources on federal lands for extraction, federal agencies must prepare Environmental Assessments (EAs) and/or EISs to document environmental impacts of agency actions and alternatives to those actions. The public has legally mandated opportunities to comment on these impact statements.

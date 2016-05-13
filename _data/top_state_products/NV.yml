@@ -1,116 +1,3 @@
-all_production:
-  '2004':
-    - product: Geothermal
-      name: Geothermal
-      units: null
-      value: 1298000
-      rank: 2
-      percent: 8.76
-  '2005':
-    - product: Geothermal
-      name: Geothermal
-      units: null
-      value: 1263000
-      rank: 2
-      percent: 8.6
-  '2006':
-    - product: Geothermal
-      name: Geothermal
-      units: null
-      value: 1344000
-      rank: 2
-      percent: 9.23
-  '2007':
-    - product: Geothermal
-      name: Geothermal
-      units: null
-      value: 1253000
-      rank: 2
-      percent: 8.56
-    - product: Solar
-      name: Solar
-      units: null
-      value: 44000
-      rank: 2
-      percent: 7.19
-  '2008':
-    - product: Solar
-      name: Solar
-      units: null
-      value: 156000
-      rank: 2
-      percent: 18.06
-    - product: Geothermal
-      name: Geothermal
-      units: null
-      value: 1383000
-      rank: 2
-      percent: 9.32
-  '2009':
-    - product: Solar
-      name: Solar
-      units: null
-      value: 174000
-      rank: 2
-      percent: 19.53
-    - product: Geothermal
-      name: Geothermal
-      units: null
-      value: 1633000
-      rank: 2
-      percent: 10.88
-  '2010':
-    - product: Solar
-      name: Solar
-      units: null
-      value: 217000
-      rank: 2
-      percent: 17.92
-    - product: Geothermal
-      name: Geothermal
-      units: null
-      value: 2070000
-      rank: 2
-      percent: 13.6
-  '2011':
-    - product: Solar
-      name: Solar
-      units: null
-      value: 291000
-      rank: 2
-      percent: 16.01
-    - product: Geothermal
-      name: Geothermal
-      units: null
-      value: 2146000
-      rank: 2
-      percent: 14.01
-  '2012':
-    - product: Geothermal
-      name: Geothermal
-      units: null
-      value: 2347000
-      rank: 2
-      percent: 15.08
-    - product: Solar
-      name: Solar
-      units: null
-      value: 473000
-      rank: 3
-      percent: 10.93
-  '2013':
-    - product: Geothermal
-      name: Geothermal
-      units: null
-      value: 2670000
-      rank: 2
-      percent: 16.92
-    - product: Solar
-      name: Solar
-      units: null
-      value: 745000
-      rank: 3
-      percent: 8.25
 federal_production:
   '2005':
     - product: 'Geothermal - Direct Utilization, Hundreds of Gallons'
@@ -242,6 +129,112 @@ federal_production:
       value: 1541014028.29
       rank: 1
       percent: 59.76
+all_production:
+  '2005':
+    - product: Geothermal
+      name: Geothermal
+      units: null
+      value: 1263000
+      rank: 2
+      percent: 8.6
+  '2006':
+    - product: Geothermal
+      name: Geothermal
+      units: null
+      value: 1344000
+      rank: 2
+      percent: 9.23
+  '2007':
+    - product: Geothermal
+      name: Geothermal
+      units: null
+      value: 1253000
+      rank: 2
+      percent: 8.56
+    - product: Solar
+      name: Solar
+      units: null
+      value: 44000
+      rank: 2
+      percent: 7.19
+  '2008':
+    - product: Solar
+      name: Solar
+      units: null
+      value: 156000
+      rank: 2
+      percent: 18.06
+    - product: Geothermal
+      name: Geothermal
+      units: null
+      value: 1383000
+      rank: 2
+      percent: 9.32
+  '2009':
+    - product: Solar
+      name: Solar
+      units: null
+      value: 174000
+      rank: 2
+      percent: 19.53
+    - product: Geothermal
+      name: Geothermal
+      units: null
+      value: 1633000
+      rank: 2
+      percent: 10.88
+  '2010':
+    - product: Solar
+      name: Solar
+      units: null
+      value: 217000
+      rank: 2
+      percent: 17.92
+    - product: Geothermal
+      name: Geothermal
+      units: null
+      value: 2070000
+      rank: 2
+      percent: 13.6
+  '2011':
+    - product: Solar
+      name: Solar
+      units: null
+      value: 291000
+      rank: 2
+      percent: 16.01
+    - product: Geothermal
+      name: Geothermal
+      units: null
+      value: 2146000
+      rank: 2
+      percent: 14.01
+  '2012':
+    - product: Geothermal
+      name: Geothermal
+      units: null
+      value: 2347000
+      rank: 2
+      percent: 15.08
+    - product: Solar
+      name: Solar
+      units: null
+      value: 473000
+      rank: 3
+      percent: 10.93
+  '2013':
+    - product: Geothermal
+      name: Geothermal
+      units: null
+      value: 2670000
+      rank: 2
+      percent: 16.92
+    - product: Solar
+      name: Solar
+      units: null
+      value: 745000
+      rank: 3
+      percent: 8.25
 revenue:
   '2006':
     - product: Geothermal

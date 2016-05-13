@@ -1,116 +1,3 @@
-all_production:
-  '2004':
-    - product: Coal (short tons)
-      name: Coal
-      units: short tons
-      value: 396493092
-      rank: 1
-      percent: 50.65
-    - product: Natural Gas (mcf)
-      name: Natural Gas
-      units: mcf
-      value: 1929040000
-      rank: 3
-      percent: 8.05
-  '2005':
-    - product: Coal (short tons)
-      name: Coal
-      units: short tons
-      value: 404318534
-      rank: 1
-      percent: 51.18
-    - product: Natural Gas (mcf)
-      name: Natural Gas
-      units: mcf
-      value: 2003826000
-      rank: 3
-      percent: 8.54
-  '2006':
-    - product: Coal (short tons)
-      name: Coal
-      units: short tons
-      value: 446742253
-      rank: 1
-      percent: 54.3
-    - product: Natural Gas (mcf)
-      name: Natural Gas
-      units: mcf
-      value: 2111766000
-      rank: 3
-      percent: 8.97
-  '2007':
-    - product: Coal (short tons)
-      name: Coal
-      units: short tons
-      value: 453568259
-      rank: 1
-      percent: 55.88
-    - product: Natural Gas (mcf)
-      name: Natural Gas
-      units: mcf
-      value: 2257884000
-      rank: 3
-      percent: 9.15
-  '2008':
-    - product: Coal (short tons)
-      name: Coal
-      units: short tons
-      value: 467644168
-      rank: 1
-      percent: 56.55
-    - product: Natural Gas (mcf)
-      name: Natural Gas
-      units: mcf
-      value: 2488267000
-      rank: 3
-      percent: 9.71
-  '2009':
-    - product: Coal (short tons)
-      name: Coal
-      units: short tons
-      value: 431106631
-      rank: 1
-      percent: 56
-    - product: Natural Gas (mcf)
-      name: Natural Gas
-      units: mcf
-      value: 2536336000
-      rank: 3
-      percent: 9.73
-  '2010':
-    - product: Coal (short tons)
-      name: Coal
-      units: short tons
-      value: 442522372
-      rank: 1
-      percent: 56.46
-    - product: Natural Gas (mcf)
-      name: Natural Gas
-      units: mcf
-      value: 2514657000
-      rank: 3
-      percent: 9.38
-  '2011':
-    - product: Coal (short tons)
-      name: Coal
-      units: short tons
-      value: 438673388
-      rank: 1
-      percent: 55.43
-  '2012':
-    - product: Coal (short tons)
-      name: Coal
-      units: short tons
-      value: 7004
-      rank: 1
-      percent: 16.81
-  '2013':
-    - product: Coal (short tons)
-      name: Coal
-      units: short tons
-      value: 387923828
-      rank: 1
-      percent: 52.73
 federal_production:
   '2005':
     - product: Purge Liquor (tons- equivalent)
@@ -464,6 +351,106 @@ federal_production:
       value: 40604913.8
       rank: 3
       percent: 5.83
+all_production:
+  '2005':
+    - product: Coal (short tons)
+      name: Coal
+      units: short tons
+      value: 404318534
+      rank: 1
+      percent: 51.18
+    - product: Natural Gas (mcf)
+      name: Natural Gas
+      units: mcf
+      value: 2003826000
+      rank: 3
+      percent: 8.54
+  '2006':
+    - product: Coal (short tons)
+      name: Coal
+      units: short tons
+      value: 446742253
+      rank: 1
+      percent: 54.3
+    - product: Natural Gas (mcf)
+      name: Natural Gas
+      units: mcf
+      value: 2111766000
+      rank: 3
+      percent: 8.97
+  '2007':
+    - product: Coal (short tons)
+      name: Coal
+      units: short tons
+      value: 453568259
+      rank: 1
+      percent: 55.88
+    - product: Natural Gas (mcf)
+      name: Natural Gas
+      units: mcf
+      value: 2257884000
+      rank: 3
+      percent: 9.15
+  '2008':
+    - product: Coal (short tons)
+      name: Coal
+      units: short tons
+      value: 467644168
+      rank: 1
+      percent: 56.55
+    - product: Natural Gas (mcf)
+      name: Natural Gas
+      units: mcf
+      value: 2488267000
+      rank: 3
+      percent: 9.71
+  '2009':
+    - product: Coal (short tons)
+      name: Coal
+      units: short tons
+      value: 431106631
+      rank: 1
+      percent: 56
+    - product: Natural Gas (mcf)
+      name: Natural Gas
+      units: mcf
+      value: 2536336000
+      rank: 3
+      percent: 9.73
+  '2010':
+    - product: Coal (short tons)
+      name: Coal
+      units: short tons
+      value: 442522372
+      rank: 1
+      percent: 56.46
+    - product: Natural Gas (mcf)
+      name: Natural Gas
+      units: mcf
+      value: 2514657000
+      rank: 3
+      percent: 9.38
+  '2011':
+    - product: Coal (short tons)
+      name: Coal
+      units: short tons
+      value: 438673388
+      rank: 1
+      percent: 55.43
+  '2012':
+    - product: Coal (short tons)
+      name: Coal
+      units: short tons
+      value: 7004
+      rank: 1
+      percent: 16.81
+  '2013':
+    - product: Coal (short tons)
+      name: Coal
+      units: short tons
+      value: 387923828
+      rank: 1
+      percent: 52.73
 revenue:
   '2006':
     - product: All

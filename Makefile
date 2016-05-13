@@ -234,7 +234,7 @@ data/top_state_products:
 			(100 - rank) AS order_value, \
 			'federal_production' AS category \
 		FROM federal_production_state_rank \
-		WHERE rank <= $${top} OR percent >= $${percent} \
+		WHERE (rank <= $${top} OR percent >= $${percent}) \
 			AND LENGTH(state) = 2 \
 	UNION \
 		SELECT \
@@ -245,7 +245,7 @@ data/top_state_products:
 			(100 - rank) AS order_value, \
 			'all_production' AS category \
 		FROM all_production_state_rank \
-		WHERE rank <= $${top} OR percent >= $${percent} \
+		WHERE (rank <= $${top} OR percent >= $${percent}) \
 			AND year > 2004 \
 	ORDER BY state, year, order_value DESC, percent DESC" \
 		| $(nestly) --if ndjson \

@@ -1,17 +1,4 @@
 all_production:
-  '2004':
-    - product: Natural Gas (mcf)
-      name: Natural Gas
-      units: mcf
-      value: 3644084000
-      rank: 2
-      percent: 15.2
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 332441
-      rank: 2
-      percent: 14.36
   '2005':
     - product: Natural Gas (mcf)
       name: Natural Gas

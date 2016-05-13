@@ -1,23 +1,4 @@
 all_production:
-  '2004':
-    - product: Other biomass
-      name: Other biomass
-      units: null
-      value: 2285000
-      rank: 1
-      percent: 14.82
-    - product: Biomass (total)
-      name: Biomass (total)
-      units: null
-      value: 4502000
-      rank: 2
-      percent: 8.41
-    - product: All Other Renewables
-      name: All Other Renewables
-      units: null
-      value: 4502000
-      rank: 2
-      percent: 5.42
   '2005':
     - product: Other biomass
       name: Other biomass

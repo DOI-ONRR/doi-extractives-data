@@ -1,11 +1,4 @@
 all_production:
-  '2004':
-    - product: Other biomass
-      name: Other biomass
-      units: null
-      value: 1298000
-      rank: 3
-      percent: 8.42
   '2005':
     - product: Other biomass
       name: Other biomass

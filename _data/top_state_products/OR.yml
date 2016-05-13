@@ -1,11 +1,4 @@
 all_production:
-  '2004':
-    - product: Conventional Hydroelectric
-      name: Conventional Hydroelectric
-      units: null
-      value: 33081000
-      rank: 3
-      percent: 12.32
   '2005':
     - product: Conventional Hydroelectric
       name: Conventional Hydroelectric

@@ -30,132 +30,67 @@ layout: default
 {% assign all_products_num = all_products | size %}
 {% assign top_all_products = site.data.top_state_products[state_id].all_production[year] %}
 
-{% assign disbursements = site.data.state_disbursements[state_id] %}
-
 {% capture states_svg %}{{ site.baseurl }}/maps/states/all.svg{% endcapture %}
 {% capture state_svg %}{{ site.baseurl }}/maps/states/{{ state_id }}.svg{% endcapture %}
 
 <main id="state-{{ state_id }}" class="container-outer">
   <h1>{{ state_name }}</h1>
 
-  <section id="key-facts" class="revenue">
+  <section id="key-facts">
     <h2>Key Facts</h2>
-    <ul class="list-bullet">
+    <ul class="list-bullet key-facts">
 
-    {% if revenue_total %}
-      <li>{{ state_name }} generated
-        <strong>${{ revenue_total | intcomma }}
-          in federal revenue</strong> from
-        <a href="#revenue">{{ revenue_commodities | size }} commodit{{ revenue_commodities | size | plural: 'ies', 'y' }}</a>
-        in {{ year }}.
-        {% if top_revenue_products %}
-        These are the most notable in terms of revenue:
-        <ul class="list-bullet">
-          {% for commodity in top_revenue_products %}
-          <li><a href="#revenue-{{ commodity.product | slugify }}">{{ commodity.product | lookup: commodity_names }}</a>:
-            ${{ commodity.value | intcomma }},
-            #{{ commodity.rank }} ({{ commodity.percent | floor }}%)</li>
-            {% if forloop.index == top_max_count %}{% break %}{% endif %}
-          {% endfor %}
-        </ul>
-        {% endif %}
-      </li>
-    {% else %}
-      <li>{{ state_name }} generated no federal revenue in {{ year }}.</li>
-    {% endif %}
+      <li class="revenue">{%
+        include location/key-revenue.html
+        location_id=state_id
+        location_name=state_name
+        year=year
+        top=top_max_count
+      %}</li>
 
-    {% if all_products_num > 0 %}
-      <li>{{ state_name }} produced
-        <a href="#all-production">{{ all_products | size }} product{{ all_products | size | plural }}</a>
-        on all lands and waters in {{ year }}.
-        {% if top_all_products %}
-        These are some of the most notable:
-        <ul class="list-bullet">
-          {% for product in top_all_products %}
-          <li><a href="#all-production-{{ product.product | slugify }}">{{ product.product }}</a>:
-            #{{ product.rank }} ({{ product.percent | floor }}%)</li>
-          {% if forloop.index == top_max_count %}{% break %}{% endif %}
-          {% endfor %}
-        </ul>
-        {% endif %}
-      </li>
-    {% else %}
-      <li>We have no record of production on all lands and waters in {{ state_name }} in {{ year }}.</li>
-    {% endif %}
+      <li class="production all-production">{%
+        include location/key-all-production.html
+        location_id=state_id
+        location_name=state_name
+        year=year
+        top=top_max_count
+      %}</li>
 
-    {% if federal_products_num > 0 %}
-      <li>{{ state_name }} produced
-        <a href="#federal-production">{{ federal_products | size }} product{{ federal_products | size | plural }}</a>
-        on federal lands in {{ year }}.
-        {% if top_federal_products %}
-        These are some of the most notable:
-        <ul class="list-bullet">
-          {% for product in top_federal_products %}
-          <li><a href="#federal-production-{{ product.product | slugify }}">{{ product.product }}</a>:
-            #{{ product.rank }} ({{ product.percent | floor }}%)</li>
-          {% if forloop.index == top_max_count %}{% break %}{% endif %}
-          {% endfor %}
-        </ul>
-        {% endif %}
-        </li>
-    {% else %}
-      <li>We have no record of federal production in {{ state_name }} in {{ year }}.</li>
-    {% endif %}
+      <li class="production federal-production">{%
+        include location/key-federal-production.html
+        location_id=state_id
+        location_name=state_name
+        year=year
+        top=top_max_count
+      %}</li>
 
-    {% capture jobs_summary %}
-      {% if jobs[year].count %}
-        The extractives industry created
-        <a href="#employment">{{ jobs[year].count | intcomma }} jobs</a>
-        on average in {{ state_name }} in {{ year }}, or
-        {{ jobs[year].percent | percent }}% of state-wide employment.
-      {% else %}
-        The extractives industry did not create any jobs in {{ state_name }} in {{ year }}.
-      {% endif %}
-    {% endcapture %}
+      <li class="employment">{%
+        include location/key-jobs.html
+        location_id=state_id
+        location_name=state_name
+        year=year
+      %}</li>
 
-      <li class="employment">{{ jobs_summary }}</li>
+      <li class="gdp">{%
+        include location/key-gdp.html
+        location_id=state_id
+        location_name=state_name
+        year=year
+      %}</li>
 
-    {% capture gdp_summary %}
-      {% if gdp[year].dollars %}
-        The extractives industry contributed
-        <a href="#gdp">${{ gdp[year].dollars | intcomma }}</a>
-        toward {{ state_name }}'s GDP in {{ year }}, or
-        {{ gdp[year].percent | percent }}%.
-      {% else %}
-        The extractives industry did not have any effect on GDP in {{ state_name }} in {{ year }}.
-      {% endif %}
-    {% endcapture %}
+      <li class="exports">{%
+        include location/key-exports.html
+        location_id=state_id
+        location_name=state_name
+        year=year
+      %}</li>
 
-      <li class="gdp">{{ gdp_summary }}</li>
-
-    {% capture exports_summary %}
-      {% if exports_commodities_num > 0 %}
-        {{ state_name }} exported
-        {{ exports_commodities_num }} extractives
-        product{{ exports_commodities_num | plural }} in {{ year }},
-        generating
-        <a href="#exports">${{ exports_commodities.All[year].dollars | intcomma }}</a>
-        in export revenue, or
-        {{ exports_commodities.All[year].percent | percent }}%.
-      {% else %}
-        Extractive industries did not account for any of {{ state_name }}'s top 25 exports in {{ year }}.
-      {% endif %}
-    {% endcapture %}
-
-      <li class="exports">{{ exports_summary }}</li>
-
-    {% capture disbursements_summary %}
-    {% assign disbursement_funds_num = disbursements | size | minus: 1 %}
-      {% if disbursements %}
-        {{ state_name }} received
-        <a href="#disbursements">${{ disbursements.All[year] | round | intcomma }}</a>
-        in federal disbursements in {{ year }}.
-      {% else %}
-        {{ state_name }} did not receive any federal disbursements in {{ year }}.
-      {% endif %}
-    {% endcapture %}
-
-      <li class="disbursements">{{ disbursements_summary }}</li>
+      <li class="disbursements">{%
+        include location/key-disbursements.html
+        location_id=state_id
+        location_name=state_name
+        year=year
+      %}</li>
 
     </ul>
   </section>

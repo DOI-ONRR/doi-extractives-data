@@ -476,7 +476,16 @@ layout: default
   <section id="employment" class="economic employment">
     <h2>Employment</h2>
 
-    <p>{{ jobs_summary | strip_html }} Historically:</p>
+    <p>One measure of the role of extractive industries is how many people are employed in jobs related to natural resource extraction. In {{ state_name }}, in {{ year }},
+      {% if jobs[year].count %}
+        there were
+        {{ jobs[year].count | intcomma }}
+        jobs in the extractive industries, which represented
+        {{ jobs[year].percent | percent }}% of state-wide employment.
+      {% else %}
+        there were no jobs in the extractive industries.
+      {% endif %}
+    </p>
 
     <table is="bar-chart-table" data-percent-max="100">
       <thead>
@@ -496,6 +505,7 @@ layout: default
     </table>
 
     <h3>County-Level Employment</h3>
+    <p>County-level employment data shows how many jobs in each county (and what percentage of the county's total employment) are related to extractive industries.</p>
 
     <section class="county-map-table">
       <figure>
@@ -538,8 +548,15 @@ layout: default
 
 
   <section id="gdp" class="economic gdp">
-    <h2>GDP</h2>
-    <p>{{ gdp_summary | strip_html }} Historically:</p>
+    <h2>Gross Domestic Product (GDP)</h2>
+    <p>Extractive industries accounted for
+      {% if gdp[year].dollars %}
+        {{ gdp[year].percent | percent }} percent (or 
+        ${{ gdp[year].dollars | intcomma }}) of {{ state_name }}'s GDP in {{ year }}.
+      {% else %}
+        The extractives industry did not contribute to {{ state_name }}'s GDP in {{ year }}.
+      {% endif %}
+    </p>
 
     <table is="bar-chart-table" data-percent-max="100">
       <thead>

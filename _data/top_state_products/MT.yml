@@ -1,11 +1,4 @@
 all_production:
-  '2004':
-    - product: Coal (short tons)
-      name: Coal
-      units: short tons
-      value: 39988503
-      rank: 3
-      percent: 5.11
   '2005':
     - product: Coal (short tons)
       name: Coal

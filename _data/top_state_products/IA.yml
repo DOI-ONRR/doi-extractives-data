@@ -1,11 +1,4 @@
 all_production:
-  '2004':
-    - product: Wind
-      name: Wind
-      units: null
-      value: 1050000
-      rank: 3
-      percent: 7.42
   '2005':
     - product: Wind
       name: Wind

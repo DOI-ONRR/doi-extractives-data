@@ -1,35 +1,4 @@
 all_production:
-  '2004':
-    - product: Natural Gas (mcf)
-      name: Natural Gas
-      units: mcf
-      value: 5733918000
-      rank: 1
-      percent: 23.92
-    - product: Oil (bbl)
-      name: Oil
-      units: bbl
-      value: 392714
-      rank: 1
-      percent: 16.96
-    - product: Wind
-      name: Wind
-      units: null
-      value: 3138000
-      rank: 2
-      percent: 22.19
-    - product: Coal (short tons)
-      name: Coal
-      units: short tons
-      value: 45862826
-      rank: 2
-      percent: 5.86
-    - product: All Other Renewables
-      name: All Other Renewables
-      units: null
-      value: 4247000
-      rank: 3
-      percent: 5.11
   '2005':
     - product: Natural Gas (mcf)
       name: Natural Gas

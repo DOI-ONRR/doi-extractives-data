@@ -1,11 +1,4 @@
 all_production:
-  '2004':
-    - product: Wood and wood-derived fuels
-      name: Wood and wood-derived fuels
-      units: null
-      value: 3187000
-      rank: 3
-      percent: 8.36
   '2005':
     - product: Wood and wood-derived fuels
       name: Wood and wood-derived fuels

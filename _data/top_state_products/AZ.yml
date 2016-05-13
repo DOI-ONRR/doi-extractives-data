@@ -1,11 +1,4 @@
 all_production:
-  '2004':
-    - product: Solar
-      name: Solar
-      units: null
-      value: 4000
-      rank: 2
-      percent: 0.7
   '2005':
     - product: Solar
       name: Solar

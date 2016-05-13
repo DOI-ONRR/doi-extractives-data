@@ -1,11 +1,4 @@
 all_production:
-  '2004':
-    - product: Geothermal
-      name: Geothermal
-      units: null
-      value: 213000
-      rank: 3
-      percent: 1.44
   '2005':
     - product: Geothermal
       name: Geothermal

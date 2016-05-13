@@ -203,13 +203,11 @@ data/state_revenues_by_type.yml:
 	$(query) --format ndjson " \
 		SELECT \
 		  state, commodity, revenue_type, year, \
-		  ROUND(SUM(revenue)) AS revenue \
-		FROM county_revenue \
-		WHERE revenue != 0 \
-		GROUP BY \
-		  state, commodity, revenue_type, year \
+		  ROUND(revenue) AS revenue \
+		FROM state_revenue_type \
+		WHERE revenue IS NOT NULL \
 		ORDER BY \
-			state, revenue DESC, year" \
+			state, revenue DESC, commodity, year" \
 	  | $(nestly) --if ndjson \
 		  -c _meta/state_revenues_by_type.yml \
 		  -o _$@

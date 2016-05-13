@@ -1,697 +1,999 @@
 all_production:
   '2004':
     - product: Solar
+      name: Solar
+      units: null
       value: 571000
       rank: 1
       percent: 99.3
     - product: Geothermal
+      name: Geothermal
+      units: null
       value: 13105000
       rank: 1
       percent: 88.48
     - product: Wind
+      name: Wind
+      units: null
       value: 4306000
       rank: 1
       percent: 30.44
     - product: All Other Renewables
+      name: All Other Renewables
+      units: null
       value: 23971000
       rank: 1
       percent: 28.86
     - product: Biomass (total)
+      name: Biomass (total)
+      units: null
       value: 5989000
       rank: 1
       percent: 11.19
     - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: null
       value: 3827000
       rank: 1
       percent: 10.04
     - product: Other biomass
+      name: Other biomass
+      units: null
       value: 2162000
       rank: 2
       percent: 14.02
     - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: null
       value: 34141000
       rank: 2
       percent: 12.72
     - product: Oil (bbl)
+      name: Oil
+      units: bbl
       value: 240138
       rank: 3
       percent: 10.37
   '2005':
     - product: Solar
+      name: Solar
+      units: null
       value: 537000
       rank: 1
       percent: 97.46
     - product: Geothermal
+      name: Geothermal
+      units: null
       value: 13023000
       rank: 1
       percent: 88.63
     - product: All Other Renewables
+      name: All Other Renewables
+      units: null
       value: 23654000
       rank: 1
       percent: 27.09
     - product: Wind
+      name: Wind
+      units: null
       value: 4262000
       rank: 1
       percent: 23.93
     - product: Biomass (total)
+      name: Biomass (total)
+      units: null
       value: 5833000
       rank: 1
       percent: 10.75
     - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: null
       value: 39632000
       rank: 2
       percent: 14.66
     - product: Other biomass
+      name: Other biomass
+      units: null
       value: 2224000
       rank: 2
       percent: 14.42
     - product: Oil (bbl)
+      name: Oil
+      units: bbl
       value: 230230
       rank: 3
       percent: 10.46
     - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: null
       value: 3609000
       rank: 3
       percent: 9.29
   '2006':
     - product: Solar
+      name: Solar
+      units: null
       value: 495000
       rank: 1
       percent: 97.44
     - product: Geothermal
+      name: Geothermal
+      units: null
       value: 12821000
       rank: 1
       percent: 88.01
     - product: All Other Renewables
+      name: All Other Renewables
+      units: null
       value: 23915000
       rank: 1
       percent: 24.78
     - product: Biomass (total)
+      name: Biomass (total)
+      units: null
       value: 5717000
       rank: 1
       percent: 10.42
     - product: Wind
+      name: Wind
+      units: null
       value: 4883000
       rank: 2
       percent: 18.36
     - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: null
       value: 48047000
       rank: 2
       percent: 16.61
     - product: Other biomass
+      name: Other biomass
+      units: null
       value: 2294000
       rank: 2
       percent: 14.25
     - product: Oil (bbl)
+      name: Oil
+      units: bbl
       value: 223015
       rank: 3
       percent: 10.52
     - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: null
       value: 3422000
       rank: 3
       percent: 8.83
   '2007':
     - product: Solar
+      name: Solar
+      units: null
       value: 557000
       rank: 1
       percent: 91.01
     - product: Geothermal
+      name: Geothermal
+      units: null
       value: 12991000
       rank: 1
       percent: 88.75
     - product: All Other Renewables
+      name: All Other Renewables
+      units: null
       value: 24845000
       rank: 1
       percent: 23.61
     - product: Biomass (total)
+      name: Biomass (total)
+      units: null
       value: 5713000
       rank: 1
       percent: 10.29
     - product: Wind
+      name: Wind
+      units: null
       value: 5585000
       rank: 2
       percent: 16.21
     - product: Other biomass
+      name: Other biomass
+      units: null
       value: 2305000
       rank: 2
       percent: 13.95
     - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: null
       value: 27328000
       rank: 3
       percent: 11.04
     - product: Oil (bbl)
+      name: Oil
+      units: bbl
       value: 218518
       rank: 3
       percent: 10.35
     - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: null
       value: 3407000
       rank: 3
       percent: 8.73
   '2008':
     - product: Geothermal
+      name: Geothermal
+      units: null
       value: 12883000
       rank: 1
       percent: 86.81
     - product: Solar
+      name: Solar
+      units: null
       value: 670000
       rank: 1
       percent: 77.55
     - product: All Other Renewables
+      name: All Other Renewables
+      units: null
       value: 24784000
       rank: 1
       percent: 19.65
     - product: Other biomass
+      name: Other biomass
+      units: null
       value: 2362000
       rank: 1
       percent: 13.32
     - product: Biomass (total)
+      name: Biomass (total)
+      units: null
       value: 5846000
       rank: 1
       percent: 10.62
     - product: Wind
+      name: Wind
+      units: null
       value: 5385000
       rank: 2
       percent: 9.73
     - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: null
       value: 3484000
       rank: 2
       percent: 9.34
     - product: Oil (bbl)
+      name: Oil
+      units: bbl
       value: 214533
       rank: 3
       percent: 10.34
   '2009':
     - product: Geothermal
+      name: Geothermal
+      units: null
       value: 12853000
       rank: 1
       percent: 85.64
     - product: Solar
+      name: Solar
+      units: null
       value: 647000
       rank: 1
       percent: 72.62
     - product: All Other Renewables
+      name: All Other Renewables
+      units: null
       value: 25540000
       rank: 1
       percent: 17.7
     - product: Other biomass
+      name: Other biomass
+      units: null
       value: 2468000
       rank: 1
       percent: 13.38
     - product: Biomass (total)
+      name: Biomass (total)
+      units: null
       value: 6200000
       rank: 1
       percent: 11.38
     - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: null
       value: 3732000
       rank: 1
       percent: 10.35
     - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: null
       value: 27888000
       rank: 3
       percent: 10.2
     - product: Oil (bbl)
+      name: Oil
+      units: bbl
       value: 207262
       rank: 3
       percent: 9.48
     - product: Wind
+      name: Wind
+      units: null
       value: 5840000
       rank: 3
       percent: 7.9
   '2010':
     - product: Geothermal
+      name: Geothermal
+      units: null
       value: 12600000
       rank: 1
       percent: 82.79
     - product: Solar
+      name: Solar
+      units: null
       value: 769000
       rank: 1
       percent: 63.5
     - product: Other biomass
+      name: Other biomass
+      units: null
       value: 2451000
       rank: 1
       percent: 12.96
     - product: Biomass (total)
+      name: Biomass (total)
+      units: null
       value: 6002000
       rank: 1
       percent: 10.7
     - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: null
       value: 3551000
       rank: 1
       percent: 9.55
     - product: All Other Renewables
+      name: All Other Renewables
+      units: null
       value: 25450000
       rank: 2
       percent: 15.22
     - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: null
       value: 33431000
       rank: 2
       percent: 12.85
     - product: Oil (bbl)
+      name: Oil
+      units: bbl
       value: 200050
       rank: 3
       percent: 9.04
     - product: Wind
+      name: Wind
+      units: null
       value: 6079000
       rank: 3
       percent: 6.42
   '2011':
     - product: Geothermal
+      name: Geothermal
+      units: null
       value: 12552000
       rank: 1
       percent: 81.96
     - product: Solar
+      name: Solar
+      units: null
       value: 889000
       rank: 1
       percent: 48.9
     - product: Other biomass
+      name: Other biomass
+      units: null
       value: 2585000
       rank: 1
       percent: 13.45
     - product: Biomass (total)
+      name: Biomass (total)
+      units: null
       value: 6029000
       rank: 1
       percent: 10.64
     - product: All Other Renewables
+      name: All Other Renewables
+      units: null
       value: 27222000
       rank: 2
       percent: 14.03
     - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: null
       value: 42557000
       rank: 2
       percent: 13.33
     - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: null
       value: 3445000
       rank: 2
       percent: 9.2
     - product: Oil (bbl)
+      name: Oil
+      units: bbl
       value: 193996
       rank: 3
       percent: 8.59
     - product: Wind
+      name: Wind
+      units: null
       value: 7752000
       rank: 3
       percent: 6.45
   '2012':
     - product: Geothermal
+      name: Geothermal
+      units: null
       value: 12519000
       rank: 1
       percent: 80.44
     - product: Solar
+      name: Solar
+      units: null
       value: 1382000
       rank: 1
       percent: 31.95
     - product: Other biomass
+      name: Other biomass
+      units: null
       value: 2514000
       rank: 1
       percent: 12.68
     - product: Biomass (total)
+      name: Biomass (total)
+      units: null
       value: 6311000
       rank: 1
       percent: 10.95
     - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: null
       value: 3798000
       rank: 1
       percent: 10.05
     - product: All Other Renewables
+      name: All Other Renewables
+      units: null
       value: 29967000
       rank: 2
       percent: 13.73
     - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: null
       value: 26837000
       rank: 3
       percent: 9.72
     - product: Oil (bbl)
+      name: Oil
+      units: bbl
       value: 197211
       rank: 3
       percent: 7.71
     - product: Wind
+      name: Wind
+      units: null
       value: 9754000
       rank: 3
       percent: 6.93
   '2013':
     - product: Geothermal
+      name: Geothermal
+      units: null
       value: 12307000
       rank: 1
       percent: 78.01
     - product: Solar
+      name: Solar
+      units: null
       value: 3814000
       rank: 1
       percent: 42.23
     - product: Other biomass
+      name: Other biomass
+      units: null
       value: 2843000
       rank: 1
       percent: 13.65
     - product: Biomass (total)
+      name: Biomass (total)
+      units: null
       value: 6635000
       rank: 1
       percent: 10.9
     - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: null
       value: 3792000
       rank: 1
       percent: 9.47
     - product: All Other Renewables
+      name: All Other Renewables
+      units: null
       value: 35578000
       rank: 2
       percent: 14.03
     - product: Wind
+      name: Wind
+      units: null
       value: 12822000
       rank: 3
       percent: 7.64
     - product: Oil (bbl)
+      name: Oil
+      units: bbl
       value: 198928
       rank: 3
       percent: 6.85
 federal_production:
   '2005':
     - product: 'Geothermal - Direct Utilization, Millions of BTUs'
+      name: Geothermal
+      units: 'Direct Utilization, Millions of BTUs'
       value: 260242.35
       rank: 1
       percent: 100
     - product: 'Geothermal - Electrical Generation, Other'
+      name: Geothermal
+      units: 'Electrical Generation, Other'
       value: 204030.26
       rank: 1
       percent: 100
     - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
       value: 988196801.68
       rank: 1
       percent: 59.17
     - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
       value: 53196738.69
       rank: 2
       percent: 2.27
   '2006':
     - product: 'Geothermal - Direct Utilization, Millions of BTUs'
+      name: Geothermal
+      units: 'Direct Utilization, Millions of BTUs'
       value: 238146.66
       rank: 1
       percent: 100
     - product: 'Geothermal - Electrical Generation, Other'
+      name: Geothermal
+      units: 'Electrical Generation, Other'
       value: 227562
       rank: 1
       percent: 100
     - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
       value: 1015891685.73
       rank: 1
       percent: 61.43
     - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
       value: 53343898.53
       rank: 2
       percent: 2.22
   '2007':
     - product: 'Geothermal - Direct Utilization, Millions of BTUs'
+      name: Geothermal
+      units: 'Direct Utilization, Millions of BTUs'
       value: 217499.73
       rank: 1
       percent: 100
     - product: 'Geothermal - Electrical Generation, Other'
+      name: Geothermal
+      units: 'Electrical Generation, Other'
       value: 207155.08
       rank: 1
       percent: 100
     - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
       value: 1092826808.81
       rank: 1
       percent: 65.09
     - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
       value: 50375439.62
       rank: 2
       percent: 2.4
   '2008':
     - product: 'Geothermal - Direct Utilization, Millions of BTUs'
+      name: Geothermal
+      units: 'Direct Utilization, Millions of BTUs'
       value: 219089.01
       rank: 1
       percent: 100
     - product: 'Geothermal - Electrical Generation, Other'
+      name: Geothermal
+      units: 'Electrical Generation, Other'
       value: 237415.56
       rank: 1
       percent: 100
     - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
       value: 1070470821.71
       rank: 1
       percent: 65.28
     - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
       value: 49867136.34
       rank: 2
       percent: 1.98
   '2009':
     - product: 'Geothermal - Direct Utilization, Millions of BTUs'
+      name: Geothermal
+      units: 'Direct Utilization, Millions of BTUs'
       value: 179170.56
       rank: 1
       percent: 100
     - product: 'Geothermal - Electrical Generation, Other'
+      name: Geothermal
+      units: 'Electrical Generation, Other'
       value: 233953.69
       rank: 1
       percent: 100
     - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
       value: 1088756553.23
       rank: 1
       percent: 59.97
     - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
       value: 48517752.31
       rank: 2
       percent: 1.69
   '2010':
     - product: 'Geothermal - Direct Utilization, Millions of BTUs'
+      name: Geothermal
+      units: 'Direct Utilization, Millions of BTUs'
       value: 224486.3
       rank: 1
       percent: 100
     - product: 'Geothermal - Electrical Generation, Other'
+      name: Geothermal
+      units: 'Electrical Generation, Other'
       value: 223938.12
       rank: 1
       percent: 100
     - product: Geothermal - sulfur
+      name: Geothermal
+      units: sulfur
       value: 4669.79
       rank: 1
       percent: 100
     - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
       value: 1003412405.4
       rank: 2
       percent: 49.79
     - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
       value: 48523236.7
       rank: 2
       percent: 1.78
   '2011':
     - product: 'Geothermal - Direct Utilization, Millions of BTUs'
+      name: Geothermal
+      units: 'Direct Utilization, Millions of BTUs'
       value: 228010.63
       rank: 1
       percent: 100
     - product: 'Geothermal - Electrical Generation, Other'
+      name: Geothermal
+      units: 'Electrical Generation, Other'
       value: 19883.37
       rank: 1
       percent: 100
     - product: Geothermal - sulfur
+      name: Geothermal
+      units: sulfur
       value: 3469.89
       rank: 1
       percent: 100
     - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
       value: 980959056.94
       rank: 2
       percent: 48.94
     - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
       value: 48685683.06
       rank: 2
       percent: 1.87
   '2012':
     - product: 'Geothermal - Direct Utilization, Millions of BTUs'
+      name: Geothermal
+      units: 'Direct Utilization, Millions of BTUs'
       value: 271469.64
       rank: 1
       percent: 100
     - product: Geothermal - sulfur
+      name: Geothermal
+      units: sulfur
       value: 2598.09
       rank: 1
       percent: 100
     - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
       value: 918939267.66
       rank: 2
       percent: 43.1
     - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
       value: 48207755.95
       rank: 2
       percent: 1.93
   '2013':
     - product: 'Geothermal - Direct Utilization, Millions of BTUs'
+      name: Geothermal
+      units: 'Direct Utilization, Millions of BTUs'
       value: 276337.16
       rank: 1
       percent: 100
     - product: Geothermal - sulfur
+      name: Geothermal
+      units: sulfur
       value: 2448.04
       rank: 1
       percent: 100
     - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
       value: 918278007.25
       rank: 2
       percent: 38.71
     - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
       value: 46144621.79
       rank: 2
       percent: 1.95
   '2014':
     - product: 'Geothermal - Direct Utilization, Millions of BTUs'
+      name: Geothermal
+      units: 'Direct Utilization, Millions of BTUs'
       value: 243504.1
       rank: 1
       percent: 100
     - product: 'Geothermal - Electrical Generation, Other'
+      name: Geothermal
+      units: 'Electrical Generation, Other'
       value: 691756
       rank: 1
       percent: 100
     - product: Geothermal - sulfur
+      name: Geothermal
+      units: sulfur
       value: 2089.89
       rank: 1
       percent: 100
     - product: 'Geothermal - Electrical Generation, Kilowatt Hours'
+      name: Geothermal
+      units: 'Electrical Generation, Kilowatt Hours'
       value: 896841860.67
       rank: 2
       percent: 34.78
     - product: 'Geothermal - Electrical Generation, Thousands of Pounds'
+      name: Geothermal
+      units: 'Electrical Generation, Thousands of Pounds'
       value: 45564160.54
       rank: 2
       percent: 1.82
 revenue:
   '2006':
     - product: Oil
-      value: 92753628.84
+      name: null
+      units: null
+      value: 93078519.83
       rank: 3
-      percent: 2.17
+      percent: 2.18
     - product: Geothermal
-      value: 8529685.03
+      name: null
+      units: null
+      value: 11530130.39
       rank: 1
-      percent: 63.11
+      percent: 85.31
     - product: Sodium
-      value: 4510259.97
+      name: null
+      units: null
+      value: 4886819.35
       rank: 2
-      percent: 14.69
-    - product: Geothermal
-      value: 2796499.76
-      rank: 2
-      percent: 20.69
+      percent: 15.92
   '2007':
     - product: Oil
-      value: 105845173.19
+      name: null
+      units: null
+      value: 106117353.1
       rank: 3
       percent: 2.4
     - product: Geothermal
-      value: 8229055.56
-      rank: 2
-      percent: 21.53
-    - product: Geothermal
-      value: 7799277.99
-      rank: 3
-      percent: 20.41
+      name: null
+      units: null
+      value: 17230512.95
+      rank: 1
+      percent: 45.08
     - product: Sodium
-      value: 931425.71
+      name: null
+      units: null
+      value: 1829249.93
       rank: 2
-      percent: 6.6
-    - product: Sodium
-      value: 436978.36
+      percent: 12.96
+    - product: Potassium
+      name: null
+      units: null
+      value: 3459.76
       rank: 3
-      percent: 3.09
+      percent: 0.04
   '2008':
     - product: Oil
-      value: 162512280.6
+      name: null
+      units: null
+      value: 162991005.13
       rank: 3
       percent: 2.79
     - product: Geothermal
-      value: 10448240
+      name: null
+      units: null
+      value: 12442621.18
       rank: 2
-      percent: 23.55
+      percent: 28.04
     - product: Sodium
-      value: 1744766.42
+      name: null
+      units: null
+      value: 2294657.68
       rank: 2
-      percent: 8.36
+      percent: 11
   '2009':
     - product: Oil
-      value: 84801335.56
+      name: null
+      units: null
+      value: 85178526.2
       rank: 3
-      percent: 2.86
+      percent: 2.87
     - product: Geothermal
-      value: 7045581.88
+      name: null
+      units: null
+      value: 8144363.62
       rank: 3
-      percent: 22.59
+      percent: 26.11
     - product: Sodium
-      value: 1837063.95
+      name: null
+      units: null
+      value: 2334640.13
       rank: 2
-      percent: 10.6
+      percent: 13.47
   '2010':
     - product: Oil
-      value: 117751888.01
+      name: null
+      units: null
+      value: 118066622.83
       rank: 3
       percent: 2.31
     - product: Geothermal
-      value: 7716558.57
+      name: null
+      units: null
+      value: 9242587.56
       rank: 1
-      percent: 41.61
+      percent: 49.84
     - product: Sodium
-      value: 1755369.43
+      name: null
+      units: null
+      value: 2779733.38
       rank: 2
-      percent: 10.17
+      percent: 16.1
   '2011':
     - product: Oil
-      value: 173045520.75
+      name: null
+      units: null
+      value: 173536665.82
       rank: 3
-      percent: 2.69
+      percent: 2.7
     - product: Geothermal
-      value: 7310851.76
+      name: null
+      units: null
+      value: 7877984.03
       rank: 1
-      percent: 46.46
+      percent: 50.07
     - product: Sodium
-      value: 2358499.91
+      name: null
+      units: null
+      value: 4292524.93
       rank: 2
-      percent: 7.68
-    - product: Sodium
-      value: 621695.4
-      rank: 3
-      percent: 2.02
+      percent: 13.97
   '2012':
     - product: Oil
-      value: 184129444.99
+      name: null
+      units: null
+      value: 184759238.51
       rank: 3
-      percent: 2.77
-    - product: Geothermal
-      value: 7514494.35
-      rank: 1
-      percent: 49.75
+      percent: 2.78
     - product: Sodium
-      value: 5441948.19
+      name: null
+      units: null
+      value: 9377847.36
       rank: 2
-      percent: 10.42
-    - product: Sodium
-      value: 1210501.48
-      rank: 3
-      percent: 2.32
+      percent: 17.96
+    - product: Geothermal
+      name: null
+      units: null
+      value: 9137139.17
+      rank: 1
+      percent: 60.49
   '2013':
     - product: Oil
-      value: 183217642.04
+      name: null
+      units: null
+      value: 183762630.38
       rank: 3
-      percent: 2.6
+      percent: 2.61
     - product: Geothermal
-      value: 8243797.85
+      name: null
+      units: null
+      value: 9487250.27
       rank: 1
-      percent: 54.44
+      percent: 62.65
     - product: Sodium
-      value: 4837510.47
+      name: null
+      units: null
+      value: 8742905.04
       rank: 2
-      percent: 9.2
-    - product: Sodium
-      value: 1303076.65
-      rank: 3
-      percent: 2.48
+      percent: 16.62
   '2014':
     - product: Geothermal
-      value: 9522070.11
+      name: null
+      units: null
+      value: 11185009.69
       rank: 1
-      percent: 55.41
+      percent: 65.09
     - product: Sodium
-      value: 4588059.6
+      name: null
+      units: null
+      value: 7868551.95
       rank: 2
-      percent: 10.35
+      percent: 17.76
   '2015':
     - product: Geothermal
-      value: 7487878.99
+      name: null
+      units: null
+      value: 8673011.13
       rank: 1
-      percent: 53.43
+      percent: 61.89
     - product: Sodium
-      value: 4877235.5
+      name: null
+      units: null
+      value: 7991051.23
       rank: 2
-      percent: 10.95
+      percent: 17.94
     - product: Sulfur
+      name: null
+      units: null
       value: 111.69
       rank: 3
       percent: null

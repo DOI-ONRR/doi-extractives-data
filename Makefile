@@ -220,6 +220,7 @@ data/top_state_products:
 	$(query) --format ndjson " \
 		SELECT \
 			state, commodity AS product, \
+			NULL AS name, NULL AS units, \
 			ROUND(percent, 2) AS percent, rank, year, \
 			ROUND(revenue, 2) AS value, \
 			revenue AS order_value, \
@@ -229,6 +230,7 @@ data/top_state_products:
 	UNION \
 		SELECT \
 			state, product, \
+			product_name AS name, units, \
 			ROUND(percent, 2), rank, year, \
 			ROUND(volume, 2) AS value, \
 			(100 - rank) AS order_value, \
@@ -239,6 +241,7 @@ data/top_state_products:
 	UNION \
 		SELECT \
 			state, product, \
+			product_name AS name, units, \
 			ROUND(percent, 2), rank, year, \
 			ROUND(volume, 2) AS value, \
 			(100 - rank) AS order_value, \

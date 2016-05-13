@@ -1,10 +1,85 @@
+revenue:
+  '2006':
+    - product: Hardrock
+      name: null
+      units: null
+      value: 52755.16
+      rank: 2
+      percent: 0.5
+  '2007':
+    - product: Hardrock
+      name: null
+      units: null
+      value: 50564
+      rank: 3
+      percent: 0.28
+  '2008':
+    - product: Hardrock
+      name: null
+      units: null
+      value: 50409.5
+      rank: 3
+      percent: 0.35
+  '2009':
+    - product: Hardrock
+      name: null
+      units: null
+      value: 49471.17
+      rank: 3
+      percent: 0.52
+  '2010':
+    - product: Hardrock
+      name: null
+      units: null
+      value: 49687
+      rank: 3
+      percent: 0.37
+  '2011':
+    - product: Hardrock
+      name: null
+      units: null
+      value: 44914.5
+      rank: 3
+      percent: 0.3
+  '2012':
+    - product: Hardrock
+      name: null
+      units: null
+      value: 58624.62
+      rank: 3
+      percent: 0.5
+  '2013':
+    - product: Hardrock
+      name: null
+      units: null
+      value: 65620
+      rank: 2
+      percent: 0.69
+  '2014':
+    - product: Hardrock
+      name: null
+      units: null
+      value: 57791
+      rank: 2
+      percent: 0.53
+  '2015':
+    - product: Hardrock
+      name: null
+      units: null
+      value: 49858
+      rank: 2
+      percent: 0.54
 all_production:
   '2008':
     - product: Wind
+      name: Wind
+      units: null
       value: 4355000
       rank: 3
       percent: 7.87
     - product: All Other Renewables
+      name: All Other Renewables
+      units: null
       value: 5851000
       rank: 3
       percent: 4.64

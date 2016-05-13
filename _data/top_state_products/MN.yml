@@ -1,87 +1,85 @@
 revenue:
-  '2004':
-    - product: Copper
-      value: 13722.5
-      rank: 1
-      percent: 100
-  '2005':
-    - product: Copper
-      value: 18944.5
-      rank: 1
-      percent: 100
-    - product: Hardrock
-      value: 18757
-      rank: 2
-      percent: 40.5
   '2006':
-    - product: Copper
-      value: 28721
-      rank: 1
-      percent: 158.92
     - product: Hardrock
-      value: 27070
+      name: null
+      units: null
+      value: 52755.16
       rank: 2
-      percent: 41.21
+      percent: 0.5
   '2007':
-    - product: Copper
-      value: 26110
-      rank: 1
-      percent: 100
     - product: Hardrock
-      value: 21393
-      rank: 1
-      percent: 47.07
+      name: null
+      units: null
+      value: 50564
+      rank: 3
+      percent: 0.28
   '2008':
     - product: Hardrock
-      value: 24299.5
-      rank: 1
-      percent: 137.92
-    - product: Copper
-      value: 26110
-      rank: 1
-      percent: 100
+      name: null
+      units: null
+      value: 50409.5
+      rank: 3
+      percent: 0.35
   '2009':
-    - product: Copper
-      value: 26110
-      rank: 1
-      percent: 100
     - product: Hardrock
-      value: 23072.5
-      rank: 1
-      percent: 39.81
+      name: null
+      units: null
+      value: 49471.17
+      rank: 3
+      percent: 0.52
   '2010':
-    - product: Copper
-      value: 26110
-      rank: 1
-      percent: 100
     - product: Hardrock
-      value: 23666.5
-      rank: 1
-      percent: 57.81
+      name: null
+      units: null
+      value: 49687
+      rank: 3
+      percent: 0.37
   '2011':
-    - product: Copper
-      value: 26110
-      rank: 1
-      percent: 100
     - product: Hardrock
-      value: 18715
-      rank: 1
-      percent: 47.95
+      name: null
+      units: null
+      value: 44914.5
+      rank: 3
+      percent: 0.3
   '2012':
-    - product: Copper
-      value: 26110
-      rank: 1
-      percent: 100
     - product: Hardrock
-      value: 32481
-      rank: 1
-      percent: 57.22
+      name: null
+      units: null
+      value: 58624.62
+      rank: 3
+      percent: 0.5
   '2013':
-    - product: Copper
-      value: 23499
-      rank: 1
-      percent: 100
     - product: Hardrock
-      value: 42121
-      rank: 1
-      percent: 72.29
+      name: null
+      units: null
+      value: 65620
+      rank: 2
+      percent: 0.69
+  '2014':
+    - product: Hardrock
+      name: null
+      units: null
+      value: 57791
+      rank: 2
+      percent: 0.53
+  '2015':
+    - product: Hardrock
+      name: null
+      units: null
+      value: 49858
+      rank: 2
+      percent: 0.54
+all_production:
+  '2008':
+    - product: Wind
+      name: Wind
+      units: null
+      value: 4355000
+      rank: 3
+      percent: 7.87
+    - product: All Other Renewables
+      name: All Other Renewables
+      units: null
+      value: 5851000
+      rank: 3
+      percent: 4.64

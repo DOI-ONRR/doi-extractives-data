@@ -203,13 +203,11 @@ data/state_revenues_by_type.yml:
 	$(query) --format ndjson " \
 		SELECT \
 		  state, commodity, revenue_type, year, \
-		  ROUND(SUM(revenue)) AS revenue \
-		FROM county_revenue \
-		WHERE revenue != 0 \
-		GROUP BY \
-		  state, commodity, revenue_type, year \
+		  ROUND(revenue) AS revenue \
+		FROM state_revenue_type \
+		WHERE revenue IS NOT NULL \
 		ORDER BY \
-			state, revenue DESC, year" \
+			state, revenue DESC, commodity, year" \
 	  | $(nestly) --if ndjson \
 		  -c _meta/state_revenues_by_type.yml \
 		  -o _$@
@@ -220,29 +218,36 @@ data/top_state_products:
 	$(query) --format ndjson " \
 		SELECT \
 			state, commodity AS product, \
+			NULL AS name, NULL AS units, \
 			ROUND(percent, 2) AS percent, rank, year, \
 			ROUND(revenue, 2) AS value, \
+			revenue AS order_value, \
 			'revenue' AS category \
 		FROM state_revenue_rank \
-		WHERE rank <= $${top} AND percent >= $${percent} \
+		WHERE rank <= $${top} OR percent >= $${percent} \
 	UNION \
 		SELECT \
 			state, product, \
+			product_name AS name, units, \
 			ROUND(percent, 2), rank, year, \
 			ROUND(volume, 2) AS value, \
+			(100 - rank) AS order_value, \
 			'federal_production' AS category \
 		FROM federal_production_state_rank \
-		WHERE rank <= $${top} AND percent >= $${percent} \
+		WHERE (rank <= $${top} OR percent >= $${percent}) \
 			AND LENGTH(state) = 2 \
 	UNION \
 		SELECT \
 			state, product, \
+			product_name AS name, units, \
 			ROUND(percent, 2), rank, year, \
 			ROUND(volume, 2) AS value, \
+			(100 - rank) AS order_value, \
 			'all_production' AS category \
 		FROM all_production_state_rank \
-		WHERE rank <= $${top} AND percent >= $${percent} \
-	ORDER BY state, year, rank, percent DESC" \
+		WHERE (rank <= $${top} OR percent >= $${percent}) \
+			AND year > 2004 \
+	ORDER BY state, year, order_value DESC, percent DESC" \
 		| $(nestly) --if ndjson \
 			-c _meta/top_state_products.yml \
 			-o '_$@/{state}.yml'

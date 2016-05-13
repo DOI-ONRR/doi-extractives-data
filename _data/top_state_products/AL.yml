@@ -1,127 +1,126 @@
 all_production:
-  '1982':
-    - product: Natural Gas (mcf)
-      value: 133298000
+  '2005':
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: null
+      value: 3630000
+      rank: 2
+      percent: 9.34
+  '2006':
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: null
+      value: 3865000
+      rank: 1
+      percent: 9.97
+  '2007':
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: null
+      value: 3784000
+      rank: 2
+      percent: 9.7
+  '2008':
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: null
+      value: 3324000
       rank: 3
-      percent: 21.26
-  '1983':
-    - product: Natural Gas (mcf)
-      value: 125889000
+      percent: 8.91
+  '2009':
+    - product: Wood and wood-derived fuels
+      name: Wood and wood-derived fuels
+      units: null
+      value: 3035000
       rank: 3
-      percent: 21.78
-  '1984':
-    - product: Natural Gas (mcf)
-      value: 136427000
-      rank: 3
-      percent: 21.91
-  '1985':
-    - product: Natural Gas (mcf)
-      value: 143420000
+      percent: 8.42
+  '2012':
+    - product: Coal (short tons)
+      name: Coal
+      units: short tons
+      value: 5041
       rank: 2
-      percent: 22.99
-  '1986':
-    - product: Natural Gas (mcf)
-      value: 145625000
-      rank: 2
-      percent: 22.68
-  '1987':
-    - product: Natural Gas (mcf)
-      value: 155143000
-      rank: 2
-      percent: 23.02
-  '1988':
-    - product: Natural Gas (mcf)
-      value: 175054000
-      rank: 2
-      percent: 24.81
-  '1989':
-    - product: Natural Gas (mcf)
-      value: 180300000
-      rank: 2
-      percent: 26.48
-  '1990':
-    - product: Natural Gas (mcf)
-      value: 186542000
-      rank: 2
-      percent: 26.58
-  '1991':
-    - product: Natural Gas (mcf)
-      value: 223876000
-      rank: 1
-      percent: 30.18
-  '1992':
-    - product: Natural Gas (mcf)
-      value: 413614000
-      rank: 1
-      percent: 44.52
-  '1993':
-    - product: Natural Gas (mcf)
-      value: 446321000
-      rank: 1
-      percent: 45.93
-  '1994':
-    - product: Natural Gas (mcf)
-      value: 578863000
-      rank: 1
-      percent: 52.68
-  '1995':
-    - product: Natural Gas (mcf)
-      value: 580125000
-      rank: 1
-      percent: 52.28
-  '1996':
-    - product: Natural Gas (mcf)
-      value: 582301000
-      rank: 1
-      percent: 51.37
-  '1997':
-    - product: Natural Gas (mcf)
-      value: 435088000
-      rank: 1
-      percent: 41.44
-  '1998':
-    - product: Natural Gas (mcf)
-      value: 434470000
-      rank: 1
-      percent: 42.4
-  '1999':
-    - product: Natural Gas (mcf)
-      value: 420535000
-      rank: 1
-      percent: 41.34
-  '2000':
-    - product: Natural Gas (mcf)
-      value: 401336000
-      rank: 1
-      percent: 39.66
-  '2001':
-    - product: Natural Gas (mcf)
-      value: 391981000
-      rank: 1
-      percent: 38.65
-  '2002':
-    - product: Natural Gas (mcf)
-      value: 386502000
-      rank: 1
-      percent: 37.3
-  '2003':
-    - product: Natural Gas (mcf)
-      value: 370910000
-      rank: 1
-      percent: 34.87
+      percent: 12.1
   '2014':
     - product: Natural Gas (mcf)
+      name: Natural Gas
+      units: mcf
       value: 181054000
       rank: 1
       percent: 28.56
 revenue:
   '2006':
     - product: Clay
+      name: null
+      units: null
       value: 20117.1
       rank: 1
       percent: 84.47
+    - product: Sulfur
+      name: null
+      units: null
+      value: 1193.1
+      rank: 3
+      percent: 6.24
   '2007':
     - product: Clay
+      name: null
+      units: null
       value: 12892.8
       rank: 1
       percent: 67.95
+    - product: Sulfur
+      name: null
+      units: null
+      value: 369.54
+      rank: 3
+      percent: 0.54
+  '2008':
+    - product: Sulfur
+      name: null
+      units: null
+      value: 12259.8
+      rank: 3
+      percent: 1.06
+  '2009':
+    - product: Sulfur
+      name: null
+      units: null
+      value: 2877.54
+      rank: 2
+      percent: 0.04
+  '2010':
+    - product: Sulfur
+      name: null
+      units: null
+      value: 1448.44
+      rank: 3
+      percent: 0.38
+  '2012':
+    - product: Sulfur
+      name: null
+      units: null
+      value: 4038.52
+      rank: 3
+      percent: 0.2
+  '2013':
+    - product: Sulfur
+      name: null
+      units: null
+      value: 2679.68
+      rank: 3
+      percent: 0.55
+  '2014':
+    - product: Sulfur
+      name: null
+      units: null
+      value: 1609.3
+      rank: 3
+      percent: 0.37
+  '2015':
+    - product: Sulfur
+      name: null
+      units: null
+      value: 1161.64
+      rank: 2
+      percent: null

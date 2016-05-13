@@ -7,6 +7,7 @@ layout: default
 {% assign year = '2013' %}
 {% assign oilgas = 'Oil & Gas (Non-Royalty)' %}
 {% assign commodity_names = site.data.commodity_names %}
+{% assign top_max_count = 10 %}
 
 {% assign jobs = site.data.state_jobs[state_id] %}
 {% assign gdp = site.data.state_gdp[state_id] %}
@@ -50,10 +51,11 @@ layout: default
         {% if top_revenue_products %}
         These are the most notable in terms of revenue:
         <ul class="list-bullet">
-          {% for product in top_revenue_products %}
-          <li><a href="#revenue-{{ product.product | slugify }}">{{ product.product }}</a>:
-            ${{ product.value | intcomma }},
-            #{{ product.rank }} ({{ product.percent | floor }}%)</li>
+          {% for commodity in top_revenue_products %}
+          <li><a href="#revenue-{{ commodity.product | slugify }}">{{ commodity.product | lookup: commodity_names }}</a>:
+            ${{ commodity.value | intcomma }},
+            #{{ commodity.rank }} ({{ commodity.percent | floor }}%)</li>
+            {% if forloop.index == top_max_count %}{% break %}{% endif %}
           {% endfor %}
         </ul>
         {% endif %}
@@ -67,12 +69,12 @@ layout: default
         <a href="#all-production">{{ all_products | size }} product{{ all_products | size | plural }}</a>
         on all lands and waters in {{ year }}.
         {% if top_all_products %}
-        These are the most notable:
+        These are some of the most notable:
         <ul class="list-bullet">
           {% for product in top_all_products %}
           <li><a href="#all-production-{{ product.product | slugify }}">{{ product.product }}</a>:
             #{{ product.rank }} ({{ product.percent | floor }}%)</li>
-          {% if forloop.index > 10 %}{% break %}{% endif %}
+          {% if forloop.index == top_max_count %}{% break %}{% endif %}
           {% endfor %}
         </ul>
         {% endif %}
@@ -86,12 +88,12 @@ layout: default
         <a href="#federal-production">{{ federal_products | size }} product{{ federal_products | size | plural }}</a>
         on federal lands in {{ year }}.
         {% if top_federal_products %}
-        These are the most notable:
+        These are some of the most notable:
         <ul class="list-bullet">
           {% for product in top_federal_products %}
           <li><a href="#federal-production-{{ product.product | slugify }}">{{ product.product }}</a>:
             #{{ product.rank }} ({{ product.percent | floor }}%)</li>
-          {% if forloop.index > 10 %}{% break %}{% endif %}
+          {% if forloop.index == top_max_count %}{% break %}{% endif %}
           {% endfor %}
         </ul>
         {% endif %}

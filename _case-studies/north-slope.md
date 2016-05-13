@@ -84,7 +84,7 @@ The table below highlights the data sources used to compile this narrative, as w
   <tbody>
     <tr>
       <td>Production</td>
-      <td>The U.S. Energy Information Agency publishes Alaska North Slope Crude Oil Production on a monthly and annual basis.</td>
+      <td>The U.S. Energy Information Administration publishes Alaska North Slope Crude Oil Production on a monthly and annual basis.</td>
       <td></td>
     </tr>
     <tr>

@@ -2,18 +2,19 @@
 title: Downloads
 layout: content
 permalink: /downloads/
-title_display: Download Data & Documentation
+title_display: 'Download Data & Documentation'
 ---
 
-> We use many government datasets on this site to power our <a href="{{ site.baseurl }}/explore/">interactive visualizations</a>. Some of these were created through the USEITI process, and are available here for download. Others come from other government sources. For those, we provide links direct to the source here so you can find fresh data whenever you need it.
+> We use many government datasets on this site to power our [interactive visualizations]({{ site.baseurl }}/explore/). Some of these were created through the USEITI process, and are available here for download. Others come from other government sources. For those, we provide links direct to the source here so you can find fresh data whenever you need it.
 
-> The {{ "Independent Administrator" | term }} also worked with the Multi-Stakeholder Group to develop a PDF that offers an overview of the contextual narrative and reporting and reconciliation processes. <a href="{{site.baseurl}}/about/report/">Download the Executive Summary.</a>
+> The {{ "Independent Administrator" | term }} also worked with the Multi-Stakeholder Group to develop a PDF that offers an overview of the contextual narrative and reporting and reconciliation processes. [Download the Executive Summary.]({{site.baseurl}}/about/report/)
 
-## Revenue
----
+# Revenue
+
+--------------------------------------------------------------------------------
 
 <ul class="list-sections list-unstyled">
-	<li class="downloads-download_links">
+    <li class="downloads-download_links">
     <a href="{{site.baseurl}}/downloads/federal-revenue-by-location/" id="revenue-fed-location" class="link-no_under"><h3>
     Federal revenue by location</h3></a>
     <p>Federal revenue from natural resources extracted from federal land and waters by location. This dataset is from the <a href="http://www.onrr.gov/">Office of Natural Resources Revenue</a>, which is part of the Department of the Interior. It is separated into onshore and offshore data, and is available by calendar year (CY) and fiscal year (FY).</p>
@@ -56,13 +57,14 @@ title_display: Download Data & Documentation
 
 </ul>
 
-## Production
----
+# Production
+
+--------------------------------------------------------------------------------
 
 <ul class="list-sections list-unstyled">
-	<li class="downloads-download_links">
+    <li class="downloads-download_links">
     <a href="http://www.eia.gov/" id="production-all" class="link-no_under"><h3>All lands and waters</h3></a>
-    <p>This data is from the <a href="http://www.eia.gov/">Energy Information Agency</a>. The specific data we used for the interactions is a subset of the huge amount of data available on their website. We also have <a href="https://github.com/18F/doi-extractives-data/wiki/Data-Catalog#all-production">notes on using this data</a> from our web development team with links to the specific tables we used on this site. <em>Tip: to find data on the EIA site, click 'Sources & Uses' in the navigation near the top of the site.</em></p>
+    <p>This data is from the <a href="http://www.eia.gov/">Energy Information Administration</a>. The specific data we used for the interactions is a subset of the huge amount of data available on their website. We also have <a href="https://github.com/18F/doi-extractives-data/wiki/Data-Catalog#all-production">notes on using this data</a> from our web development team with links to the specific tables we used on this site. <em>Tip: to find data on the EIA site, click 'Sources & Uses' in the navigation near the top of the site.</em></p>
     <a href="http://www.eia.gov/">
       Go to EIA &#8594;
     </a>
@@ -78,11 +80,12 @@ title_display: Download Data & Documentation
 
 </ul>
 
-## Economic impact
----
+# Economic impact
+
+--------------------------------------------------------------------------------
 
 <ul class="list-sections list-unstyled">
-	<li class="downloads-download_links">
+    <li class="downloads-download_links">
     <a href="http://www.bea.gov/API/signup/index.cfm" id="gdp" class="link-no_under"><h3>Gross Domestic Product</h3></a>
     <p>This data is from the <a href="http://www.bea.gov/">Bureau of Economic Analysis</a>. The data we use for the interactions on this site is a subset of the data availebl on their website. We access this data live via an Application Programming Interface (API). Take a look at <a href="https://github.com/18F/doi-extractives-data/wiki/Data-Catalog#gdp">notes on using this data</a> from our web development team with information on the specific API calls we use on this site.</p>
     <a href="http://www.bea.gov/API/signup/index.cfm">Go to BEA API docs &#8594;
@@ -107,4 +110,3 @@ title_display: Download Data & Documentation
     </a>
   </li>
 </ul>
-

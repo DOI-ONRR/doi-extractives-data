@@ -29,13 +29,13 @@ CREATE TABLE state_revenue_type AS
         SUM(revenue) AS revenue
     FROM county_revenue
     GROUP BY
-        year, state, commodity;
+        year, state, commodity, revenue_type;
 
--- create a county-level
+-- create all revenue type by commodity rollups
 INSERT INTO state_revenue_type
     (year, state, commodity, revenue_type, revenue)
 SELECT
-    year, state, commodity, revenue_type, SUM(revenue)
+    year, state, commodity, 'All', SUM(revenue)
 FROM county_revenue
 GROUP BY
     year, state, commodity;

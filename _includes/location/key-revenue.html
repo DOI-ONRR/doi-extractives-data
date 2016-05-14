@@ -1,4 +1,4 @@
-{% assign revenue_commodities = site.data.state_revenues[location_id].commodities %}
+{% assign revenue_commodities = site.data.state_revenues[include.location_id].commodities %}
 {% assign revenue_total = revenue_commodities.All[include.year].revenue %}
 
 {% if revenue_total %}

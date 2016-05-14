@@ -314,22 +314,11 @@ layout: default
       {% endif %}
     </p>
 
-    <table is="bar-chart-table" data-percent-max="100">
-      <thead>
-        <th>Year</th>
-        <th class="numeric" data-series="jobs">Jobs</th>
-        <th class="numeric" data-series="percent">State %</th>
-      </thead>
-      <tbody>
-      {% for year in jobs %}
-        <tr>
-          <td>{{ year[0] }}</td>
-          <td class="numeric" data-series="jobs" data-value="{{ year[1].count }}">{{ year[1].count | intcomma }}</td>
-          <td class="numeric" data-series="percent" data-value="{{ year[1].percent }}">{{ year[1].percent | percent }}%</td>
-        </tr>
-      {% endfor %}
-      </tbody>
-    </table>
+    {%
+      include location/jobs-display.html
+      values=jobs
+      percent=true
+    %}
 
     <h3>County-Level Employment</h3>
     <p>County-level employment data shows how many jobs in each county (and what percentage of the county's total employment) are related to extractive industries.</p>

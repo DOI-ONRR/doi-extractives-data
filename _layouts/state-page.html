@@ -7,28 +7,19 @@ layout: default
 {% assign year = '2013' %}
 {% assign oilgas = 'Oil & Gas (Non-Royalty)' %}
 {% assign commodity_names = site.data.commodity_names %}
-{% assign top_max_count = 10 %}
+{% assign top_products = 10 %}
 
 {% assign jobs = site.data.state_jobs[state_id] %}
 {% assign gdp = site.data.state_gdp[state_id] %}
 
-{% assign exports_commodities = site.data.state_exports[state_id].commodities %}
-{% assign exports_total = site.data.state_exports[state_id].commodities.All[year].dollars %}
-{% assign exports_commodities_num = site.data.state_exports[state_id].commodities | size | minus:2 %}
-
 {% assign revenue_commodities = site.data.state_revenues[state_id].commodities %}
 {% assign revenue_total = revenue_commodities.All[year].revenue %}
 {% assign revenue_type_names = 'Bonus;Rents;Royalties;Other Revenues' | split: ';' %}
-{% assign top_revenue_products = site.data.top_state_products[state_id].revenue[year] %}
 {% assign revenue_types = site.data.state_revenues_by_type[state_id] %}
 
 {% assign federal_products = site.data.state_federal_production[state_id].products %}
-{% assign federal_products_num = federal_products | size %}
-{% assign top_federal_products = site.data.top_state_products[state_id].federal_production[year] %}
 
 {% assign all_products = site.data.state_all_production[state_id].products %}
-{% assign all_products_num = all_products | size %}
-{% assign top_all_products = site.data.top_state_products[state_id].all_production[year] %}
 
 {% capture states_svg %}{{ site.baseurl }}/maps/states/all.svg{% endcapture %}
 {% capture state_svg %}{{ site.baseurl }}/maps/states/{{ state_id }}.svg{% endcapture %}
@@ -45,7 +36,7 @@ layout: default
         location_id=state_id
         location_name=state_name
         year=year
-        top=top_max_count
+        top=top_products
       %}</li>
 
       <li class="production all-production">{%
@@ -53,7 +44,7 @@ layout: default
         location_id=state_id
         location_name=state_name
         year=year
-        top=top_max_count
+        top=top_products
       %}</li>
 
       <li class="production federal-production">{%
@@ -61,7 +52,7 @@ layout: default
         location_id=state_id
         location_name=state_name
         year=year
-        top=top_max_count
+        top=top_products
       %}</li>
 
       <li class="employment">{%
@@ -78,19 +69,27 @@ layout: default
         year=year
       %}</li>
 
-      <li class="exports">{%
-        include location/key-exports.html
-        location_id=state_id
-        location_name=state_name
-        year=year
-      %}</li>
+      <li class="exports">
+        {% capture exports_summary %}
+        {%
+          include location/key-exports.html
+          location_id=state_id
+          location_name=state_name
+          year=year
+        %}
+        {% endcapture %}{{ exports_summary }}
+      </li>
 
-      <li class="disbursements">{%
-        include location/key-disbursements.html
-        location_id=state_id
-        location_name=state_name
-        year=year
-      %}</li>
+      <li class="disbursements">
+        {% capture disbursements_summary %}
+        {%
+          include location/key-disbursements.html
+          location_id=state_id
+          location_name=state_name
+          year=year
+        %}
+        {% endcapture %}{{ disbursements_summary }}
+      </li>
 
     </ul>
   </section>
@@ -506,9 +505,9 @@ layout: default
 
   <section id="exports" class="economic exports">
     <h2>Exports</h2>
-    <p>{{ exports_summary | strip_html }}{% if exports_commodities_num > 0 %} Historically:{% endif %}</p>
+    <p>{{ exports_summary | strip_html }}</p>
 
-    {% for commodity in exports_commodities %}
+    {% for commodity in site.data.state_exports[state_id].commodities %}
       {% if commodity[0] != 'Total' %}
     <section id="exports-{{ commodity[0] | slugify }}">
       <h3>{{ commodity[0] }}</h3>

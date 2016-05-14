@@ -14,8 +14,6 @@ layout: default
 
 {% assign revenue_commodities = site.data.state_revenues[state_id].commodities %}
 {% assign revenue_total = revenue_commodities.All[year].revenue %}
-{% assign revenue_type_names = 'Bonus;Rents;Royalties;Other Revenues' | split: ';' %}
-{% assign revenue_types = site.data.state_revenues_by_type[state_id] %}
 
 {% assign federal_products = site.data.state_federal_production[state_id].products %}
 
@@ -151,58 +149,14 @@ layout: default
 
       <p>Companies may not know whether they’ll produce oil or gas until they explore the land, so fees are not differentiated by product until production begins.</p>
 
-      <table id="revenue-types" is="bar-chart-table" class="revenue">
-        <thead>
-          <tr>
-            <th>Commodity</th>
-            <th>Securing a lease</th>
-            <th>Before production</th>
-            <th>During production</th>
-            <th>Other revenues</th>
-          </tr>
-        </thead>
-        {% for commodity in revenue_types %}
-          {% assign commodity_name = commodity[0] %}
-          {% assign values = commodity[1] %}
-        <tbody id="revenue-types-{{ commodity_name | slugify }}">
-          {% if commodity_name == oilgas %}
-          <tr>
-            {% assign total = values.All[year] | default: 0 | plus: revenue_types.Oil.All[year] | plus: revenue_types.Gas.All[year] %}
-            <th scope="row" rowspan="2" data-value="{{ total }}">
-              <a href="#revenue-{{ commodity_name | slugify }}"><strong>Oil &amp; Gas</strong></a>
-              ${{ total | intcomma }}
-            </th>
-            <td rowspan="2" data-value="{{ values.Bonus[year] | default: 0 }}">${{ values.Bonus[year] | default: 0 | intcomma }}</td>
-            <td rowspan="2" data-value="{{ values.Rents[year] | default: 0 }}">${{ values.Rents[year] | default: 0 | intcomma }}</td>
-            <td data-value="{{ revenue_types.Oil.Royalties[year] | default: 0 }}">
-              <a href="#revenue-oil"><strong>Oil</strong></a>
-              ${{ revenue_types.Oil.Royalties[year] | default: 0 | intcomma }}
-            </td>
-            <td rowspan="2" data-value="{{ values['Other Revenues'][year] | default: 0 }}">${{ values['Other Revenues'][year] | default: 0 | intcomma }}</td>
-          </tr>
-          <tr>
-            <td data-value="{{ revenue_types.Gas.Royalties[year] | default: 0 }}">
-              <a href="#revenue-gas"><strong>Gas</strong></a>
-              ${{ revenue_types.Gas.Royalties[year] | default: 0 | intcomma }}
-            </td>
-          </tr>
-          {% elsif commodity_name != 'Oil' and commodity_name != 'Gas' %}
-            {% assign total = values.All[year] | default: 0 %}
-            {% if total != 0 %}
-          <tr>
-            <th scope="row" data-value="{{ total }}">
-              <a href="#revenue-{{ commodity_name | slugify }}"><strong>{{ commodity_name | lookup: commodity_names }}</strong></a>
-              ${{ total | intcomma }}
-            </th>
-            {% for revenue_type in revenue_type_names %}
-            <td data-value="{{ values[revenue_type][year] | default: 0 }}">${{ commodity[1][revenue_type][year] | default: 0 | intcomma }}</td>
-            {% endfor %}
-          </tr>
-            {% endif %}
-          {% endif %}
-        </tbody>
-        {% endfor %}
-      </table>
+      {%
+        include location/revenue-type-table.html
+        id='revenue-types'
+        location_id=state_id
+        location_name=state_name
+        year=year
+      %}
+
     </section>
 
     {% for commodity in revenue_commodities %}
@@ -241,36 +195,6 @@ layout: default
 
     </section>
     {% endfor %}
-
-    <!--
-    <section id="revenue-types">
-      <h3>Revenue Types</h3>
-      <table is="bar-chart-table" data-percent-max="100">
-        <thead>
-          <th>Year</th>
-          {% for type in revenue_type_names %}
-          <th class="numeric" data-series="revenue-{{ type | slugify }}">
-            {% if type == 'Other Revenues' %}Other{% else %}{{ type }}{% endif %}
-          </th>
-          {% endfor %}
-        </thead>
-        <tbody>
-          {% for row in site.data.state_revenues[state_id].commodities.All %}
-          {% assign _year = row[0] %}
-          <tr>
-            <td>{{ _year }}</td>
-            {% for type in revenue_type_names %}
-            {% assign type_revenue = revenue_types[type] %}
-            <td class="numeric" data-series="revenue-{{ type | slugify }}" data-value="{{ type_revenue[_year] | default: 0 }}">
-              ${{ type_revenue[_year] | default: 0 | intcomma }}
-            </td>
-            {% endfor %}
-          </tr>
-          {% endfor %}
-        </tbody>
-      </table>
-    </section>
-    -->
 
   </section>
 

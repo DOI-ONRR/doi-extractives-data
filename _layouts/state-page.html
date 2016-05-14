@@ -178,6 +178,8 @@ layout: default
         include location/revenue-display.html
         year=year
         values=revenue_values
+        percent=true
+        rank=true
       %}
 
     </section>
@@ -215,25 +217,15 @@ layout: default
         {% else %}no{% endif %}
         {{ product[0] | downcase }} in {{ year }}. Historically:</p>
 
-      <table is="bar-chart-table" data-percent-max="100">
-        <thead>
-          <th>Year</th>
-          <th class="numeric" data-series="volume">Production ({{ units }})</th>
-          <th class="numeric" data-series="percent">US %</th>
-          <th class="numeric" data-series="rank">Rank</th>
-        </thead>
-        <tbody>
-        {% for _year in site.data.years.production %}
-          {% assign value = product[1].volume | get: _year %}
-          <tr>
-            <td>{{ _year }}</td>
-            <td data-series="volume" data-value="{{ value.volume | default: 0 }}" class="numeric">{{ value.volume | default: 0 | intcomma }}</td>
-            <td data-series="percent" data-value="{{ value.percent | default: 0 }}" class="numeric">{{ value.percent | default: 0 | percent }}%</td>
-            <td class="numeric">{% if value.rank %}{{ value.rank | ordinal: 'super' }}{% endif %}</td>
-          </tr>
-        {% endfor %}
-        </tbody>
-      </table>
+      {% assign production_values = product[1].volume %}
+      {%
+        include location/production-display.html
+        units=units
+        year=year
+        values=production_values
+        percent=true
+        rank=true
+      %}
 
     </section>
     {% endfor %}
@@ -287,25 +279,15 @@ layout: default
         </figure>
         {% endif %}
 
-        <table is="bar-chart-table" data-percent-max="100">
-          <thead>
-            <th>Year</th>
-            <th class="numeric" data-series="volume">Production ({{ units }})</th>
-            <th class="numeric" data-series="percent">US %</th>
-            <th class="numeric" data-series="rank">Rank</th>
-          </thead>
-          <tbody>
-          {% for _year in site.data.years.production %}
-            {% assign value = product[1].volume | get: _year %}
-            <tr>
-              <td>{{ _year }}</td>
-              <td data-series="volume" data-value="{{ value.volume | default: 0 }}" class="numeric">{{ value.volume | default: 0 | intcomma }}</td>
-              <td data-series="percent" data-value="{{ value.percent | default: 0 }}" class="numeric">{{ value.percent | default: 0 | percent }}%</td>
-              <td data-series="rank" class="numeric">{% if value.rank %}{{ value.rank | ordinal: 'super' }}{% endif %}</td>
-            </tr>
-          {% endfor %}
-          </tbody>
-        </table>
+        {% assign production_values = product[1].volume %}
+        {%
+          include location/production-display.html
+          units=units
+          year=year
+          values=production_values
+          percent=true
+          rank=true
+        %}
 
       </section>
       {% endfor %}

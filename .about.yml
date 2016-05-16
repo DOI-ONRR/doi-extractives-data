@@ -20,7 +20,7 @@ owner_type: project
 
 # Maturity stage of the project (required)
 # values: discovery, alpha, beta, live
-stage: beta
+stage: live
 
 # Whether or not the project is actively maintained (required)
 # values: active, deprecated
@@ -57,7 +57,7 @@ team:
   role: Content Designer
 - id: corey.mahoney
   github: coreycaitlin
-  role: Content Designer  
+  role: Content Designer
 
 # Partners for whom the project is developed
 partners:

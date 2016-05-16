@@ -50,7 +50,7 @@ The Office of the Special Trustee for American Indians (OST) receives the paymen
 
 Natural resources are increasingly a key source of income for many American Indian tribes. In FY 2013, ONRR and OST disbursed [$933 million to American Indian tribes and allottees](http://statistics.onrr.gov/ReportTool.aspx), an increase of more than 171% from 10 years prior.
 
-<h3 class="h5" id="fy-2013-production-and-revenue" data-nav-header="fy-2013-production-and-revenue">FY 2013 production and revenue</h3>
+<h3 id="fy-2013-production-and-revenue" data-nav-header="fy-2013-production-and-revenue">FY 2013 production and revenue</h3>
 
 <table class="article_table">
   <tr>

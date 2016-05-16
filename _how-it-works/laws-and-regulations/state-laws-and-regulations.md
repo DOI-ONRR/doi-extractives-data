@@ -29,7 +29,7 @@ selector: hash
 
 While all 50 states have some natural resource extraction activity, the 2015 USEITI Report focuses on 18 states that led the country in oil, gas, coal, and nonenergy mineral production in 2013; had the most DOI revenue or state production taxes; or had the most significant tribal natural resource interests.
 
-**Map of 18 MSG Prioritized States for the 2015 USEITI Report**
+### Map of 18 MSG Prioritized States for the 2015 USEITI Report
 
 <eiti-map is="eiti-map" data-path="{{ site.baseurl }}/data/geo/"
   simplify="1e-2"
@@ -50,7 +50,7 @@ See [State Legal and Fiscal Information]({{site.baseurl}}/how-it-works/state-leg
 
 <h2 id="role-of-state-government-agencies" data-nav-header="role-of-state-government-agencies">Role of state government agencies</h2>
 
-State government agencies create regulations and rules related to natural resource extraction based on applicable state laws and statutes (federal laws and regulations apply to all states and localities). Specifically, state government agencies manage state-owned land and natural resources, including leasing natural resources for extraction; enforce regulations and rules related to natural resource extraction; and collect, manage, and disburse revenue from natural resource extraction.</p>
+State government agencies create regulations and rules related to natural resource extraction based on applicable state laws and statutes (federal laws and regulations apply to all states and localities). Specifically, state government agencies manage state-owned land and natural resources, including leasing natural resources for extraction; enforce regulations and rules related to natural resource extraction; and collect, manage, and disburse revenue from natural resource extraction.
 
 Each state has unique agencies that fulfill these functions. For example:
 
@@ -75,7 +75,7 @@ The revenue a state receives from extractive activities varies by the local lega
 * [Transfer payments](http://www.onrr.gov/about/pdfdocs/20131119.pdf) from the federal government for natural resource production on federal lands within a state’s borders or off its coast
 
 
-**Wyoming severance tax rates**
+### Wyoming severance tax rates
 
 As an example, <a href="http://revenue.wyo.gov/mineral-tax-division/severance-tax-filing-information">Wyoming applies the following severance taxes</a> on the value of extracted resources before processing and transportation:
 
@@ -131,7 +131,7 @@ In comparison, Alaska, another leading oil and gas producer, levies its own Oil 
 
 Many states choose to establish permanent mineral trust funds through legislation. These funds allow states to invest and hold revenue from natural resource extraction over time. Permanent mineral trust funds can help governments dependent on revenue from natural resources smooth revenue and investments across boom and bust cycles.
 
-**Select states with permanent natural resource trust funds**
+### Select states with permanent natural resource trust funds
 
 <table class="article_table">
   <tr>

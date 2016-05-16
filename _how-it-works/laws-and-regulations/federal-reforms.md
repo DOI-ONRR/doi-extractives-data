@@ -27,7 +27,7 @@ selector: hash
 
 {% include selector.html %}
 
-<h2 class="h3" id="deepwater-horizon-oil-spill" data-nav-header="deepwater-horizon-oil-spill">Reforms following the Deepwater Horizon oil spill</h2>
+<h2 id="deepwater-horizon-oil-spill" data-nav-header="deepwater-horizon-oil-spill">Reforms following the Deepwater Horizon oil spill</h2>
 
 In the aftermath of the [Deep Water Horizon oil spill](http://www.gpo.gov/fdsys/pkg/GPO-OILCOMMISSION/pdf/GPO-OILCOMMISSION.pdf) in the Gulf of Mexico in 2010, the federal government overhauled the oversight of DOI’s leasing, regulation, and collection of revenue for oil and gas extraction on the Outer Continental Shelf. DOI’s post Deepwater Horizon reorganization separated and established [independent oversight for offshore leasing](http://www.boem.gov/Reforms-since-the-Deepwater-Horizon-Tragedy/) (i.e., BOEM), offshore safety and environmental enforcement (i.e., BSEE), and the collection and accountability of the revenue generated from natural resource development on federal and Indian lands through the creation of the Office of Natural Resources Revenue (i.e., ONRR).
 
@@ -41,7 +41,7 @@ When the Secretary of the Interior announced the creation of ONRR in May 2010 an
 
 While the federal government made regulatory reforms following the spill, Congress did not change any laws related to offshore fossil fuel management in response to the accident.
 
-<h2 class="h3" id="oig-reports" data-nav-header="oig-reports">Office of Inspector General (OIG) reports</h2>
+<h2 id="oig-reports" data-nav-header="oig-reports">Office of Inspector General (OIG) reports</h2>
 
 [DOI’s OIG](https://www.doioig.gov/sites/doioig.gov/files/99-I-387.pdf) is responsible for the independent oversight and promotion of excellence, integrity, and accountability within the programs, operations, and management of DOI. OIG also identifies and prevents fraud, waste, and mismanagement within the agency. In recent years, OIG has published numerous reports related to DOI revenue from natural resource extraction, including:
 
@@ -52,7 +52,7 @@ While the federal government made regulatory reforms following the spill, Congre
 * May 2010: <a [Minerals Management Service: Royalty-In-Kind Program’s Oil Volume Verification Process](https://www.doioig.gov/sites/doioig.gov/files/2010-I-0021.pdf). OIG found several areas where the Royalty-In-Kind Program could be improved to ensure proper accounting of royalties that are paid in oil and gas volumes to the federal government, rather than in dollars.
 
 
-<h2 class="h3" id="gao-reports" data-nav-header="gao-reports">Government Accountability Office (GAO) reports</h2>
+<h2 id="gao-reports" data-nav-header="gao-reports">Government Accountability Office (GAO) reports</h2>
 
 The GAO is an independent, nonpartisan agency that investigates how the federal government spends taxpayer funds, including those for natural resource management on federal and Indian lands. GAO publishes its reports on the [GAO Summary Page](http://www.gao.gov/key_issues/oil_and_natural_gas/issue_summary). Some recent GAO findings related to natural resource extraction include:
 
@@ -62,7 +62,7 @@ The GAO is an independent, nonpartisan agency that investigates how the federal 
 * March 1989: [The Mining Law of 1872 Needs Revision(http://archive.gao.gov/d15t6/138159.pdf). This report critiques the foundational mining law on three major points: that the law’s annual work requirements need to be replaced, that the law forces the federal government to sell valuable land at nominal prices, and that the patent provision runs counter to other natural resource policies.
 
 
-<h2 class="h3" id="proposed-rules" data-nav-header="proposed-rules">Proposed rules</h2>
+<h2 id="proposed-rules" data-nav-header="proposed-rules">Proposed rules</h2>
 
 Per the Administrative Procedures Act, agencies propose rules to implement federal laws. The public has an opportunity to comment on all proposed rules before an agency finalizes any regulations. Recently, DOI bureaus and offices proposed new rules intended to go into effect in 2015, including:
 
@@ -74,7 +74,7 @@ Per the Administrative Procedures Act, agencies propose rules to implement feder
 
 For more details, search the [Federal Registrar for DOI proposed rules](https://www.federalregister.gov/articles/search?conditions%5Bpublication_date%5D%5Bis%5D=11%2F04%2F2015&conditions%5Bterm%5D=Department+of+the+Interior&conditions%5Btype%5D%5B%5D=PRORULE).
 
-<h2 class="h3" id="dodd-frank" data-nav-header="dodd-frank">The 2010 Dodd-Frank Act</h2>
+<h2 id="dodd-frank" data-nav-header="dodd-frank">The 2010 Dodd-Frank Act</h2>
 
 In 2010, the U.S. enacted the [Dodd-Frank Wall Street Reform and Consumer Protection Act](http://www.gpo.gov/fdsys/pkg/PLAW-111publ203/pdf/PLAW-111publ203.pdf) (124 Stat. 1376) to improve transparency and accountability across the financial system. Section 1504 of the act requires extractive industries companies registered with the Securities and Exchange Commission (SEC) to separately disclose information about payments to governments around the world in an interactive data format.
 

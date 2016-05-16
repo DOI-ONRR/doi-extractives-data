@@ -132,7 +132,7 @@
 
       this.list.visibleItems.forEach(function(item){
         var $elm = $(item.elm);
-        $elm.attr('accordion-open', true);
+        $elm.attr('aria-expanded', true);
       });
     },
 

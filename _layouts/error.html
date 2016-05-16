@@ -1,91 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- Basic Page Needs
-    ================================================== -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="google-site-verification" content="OxyG3U-Vtui-uK6wHUeOw83OgdfcfxvsWWZcb5x7aZ0" />
-    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+---
+layout: default
+---
 
-    <!-- Mobile Specific Metas
-    ================================================== -->
-    <meta name="HandheldFriendly" content="True">
-    <meta name="MobileOptimized" content="320">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<section class="slab-delta">
+  <div class="error_page-wrapper container-outer">
+    <h1 class="error_page-header">{{page.title}}</h1>
+    <h2>{{page.subtitle}}. <a href="{{ site.baseurl }}/">Return to homepage</a></h2>
 
-    <!-- Twitter and OpenGraph data
-    ================================================== -->
-    <!-- type -->
-    <meta property="og:type" content="website">
-
-    <!-- title -->
-    {% if page.title %}
-      <title>{{ page.title }}</title>
-      <meta property="og:title" content="{{ page.title | xml_escape }}" />
-      <meta name="twitter:title" content="{{ page.title | xml_escape }}">
-    {% else %}
-      <title>{{ site.title }}</title>
-      <meta property="og:title" content="{{ site.title | xml_escape }}" />
-      <meta name="twitter:title" content="{{ site.title | xml_escape }}">
-    {% endif %}
-
-    <!-- url -->
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
-    <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
-
-    <!-- img -->
-    <meta property="og:img" content="{{ site.url }}/img/explore-home-revenue.png">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="{{ site.url }}/img/explore-home-revenue.png">
-
-    <!-- description -->
-    <meta property="og:description" content="{{ site.description }}">
-    <meta name="twitter:description" content="{{ site.description }}">
-
-    <!-- Favicons
-    ================================================== -->
-    <link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/img/favicon.ico">
-    <link rel="icon" type="image/png" href="{{ site.baseurl }}/img/favicon-16x16.png" sizes="16x16">
-    <link rel="icon" type="image/png" href="{{ site.baseurl }}/img/favicon-32x32.png" sizes="32x32">
-
-    <!-- Styles
-    ================================================== -->
-    <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
-
-    <!-- Scripts
-    ================================================== -->
-    <script src="{{ site.baseurl }}/js/lib/main.min.js" charset="utf-8"></script>
-
-  </head>
-
-  <body class="{{ page.body_class }}">
-    {% include layout/banner.html %}
-
-    {% include layout/header.html %}
-
-    <main>
-      {% include glossary.html %}
-      {% include layout/nav-drawer.html %}
-
-      <section class="slab-delta">
-        <div class="error_page-wrapper container-outer">
-          <h1 class="error_page-header">{{page.title}}</h1>
-          <h2>{{page.subtitle}}. <a href="{{ site.baseurl }}/">Return to homepage</a></h2>
-
-          {{ content }}
-        </div>
-      </section>
-
-    </main>
-
-    {% include layout/footer.html %}
-
-    {{ page.script }}
-
-    <!-- Digital Analytics Program roll-up, see the data at https://analytics.usa.gov -->
-    <script src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js" id="_fed_an_ua_tag"></script>
-
-  </body>
-
-</html>
+    {{ content }}
+  </div>
+</section>

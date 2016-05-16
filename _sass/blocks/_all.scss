@@ -58,9 +58,17 @@
 @import 'disbursements';
 
 
-// Error pages
+// Error page layout
 //
 // Styles for invalid pages
 //
-// Styleguide blocks.error-pages
-@import 'error-pages';
+// Styleguide blocks.layout-error
+@import 'jekyll-layouts/error';
+
+
+// Content page layout
+//
+// Styles for invalid pages
+//
+// Styleguide blocks.layout-content
+@import 'jekyll-layouts/content';

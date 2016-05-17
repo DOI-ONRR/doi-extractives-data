@@ -368,55 +368,35 @@ layout: default
     <h2>Exports</h2>
     <p>{{ exports_summary | strip_html }}</p>
 
-    {% for commodity in site.data.state_exports[state_id].commodities %}
-      {% if commodity[0] != 'Total' %}
+    {% assign export_commodities = site.data.state_exports[state_id].commodities %}
+
+    {% for commodity in export_commodities %}
+      {% if commodity[0] == 'Total' %}{% continue %}{% endif %}
     <section id="exports-{{ commodity[0] | slugify }}">
       <h3>{{ commodity[0] }}</h3>
-      <table is="bar-chart-table" data-percent-max="100">
-        <thead>
-          <th>Year</th>
-          <th class="numeric" data-series="exports">Dollars</th>
-          <th class="numeric" data-series="percent">State %</th>
-        </thead>
-        <tbody>
-          {% for commodity_year in commodity[1] %}
-            <tr>
-              <td>{{ commodity_year[0] }}</td>
-              <td class="numeric" data-series="exports" data-value="{{ commodity_year[1].dollars }}">${{ commodity_year[1].dollars | intcomma }}</td>
-              <td class="numeric" data-series="percent" data-value="{{ commodity_year[1].percent }}">{{ commodity_year[1].percent | percent }}%</td>
-            </tr>
-          {% endfor %}
-        </tbody>
-      </table>
-      {% endif %}
+
+      {% assign exports = commodity[1] %}
+      {%
+        include location/exports-display.html
+        values=exports
+        percent=true
+      %}
+
     </section>
     {% endfor %}
+
   </section>
 
   <section id="disbursements" class="disbursements">
     <h2>Disbursements</h2>
     <p>{{ disbursements_summary | strip_html }}</p>
 
+    {% assign disbursements = site.data.state_disbursements[state_id] %}
     {% if disbursements %}
-    <table is="bar-chart-table">
-      <thead>
-        <th>Year</th>
-        <th class="numeric" data-series="total">Total</th>
-        <th class="numeric" data-series="onshore">Onshore</th>
-        <th class="numeric" data-series="offshore">Offshore</th>
-      </thead>
-      <tbody>
-      {% for _year in disbursements.All %}
-        {% assign y = _year[0] %}
-        <tr>
-          <td>{{ y }}</td>
-          <td class="numeric" data-series="total" data-value="{{ disbursements.All[y] }}">${{ disbursements.All[y] | round | intcomma }}</td>
-          <td class="numeric" data-series="onshore" data-value="{{ disbursements.Onshore[y] }}">${{ disbursements.Onshore[y] | round | intcomma }}</td>
-          <td class="numeric" data-series="offshore" data-value="{{ disbursements.Offshore[y] }}">${{ disbursements.Offshore[y] | round | intcomma }}</td>
-        </tr>
-      {% endfor %}
-      </tbody>
-    </table>
+      {%
+        include location/disbursements-display.html
+        values=disbursements
+      %}
     {% endif %}
 
   </section>

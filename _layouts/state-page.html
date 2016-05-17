@@ -175,7 +175,7 @@ layout: default
 
       {% assign revenue_values = commodity[1] %}
       {%
-        include location/revenue-display.html
+        include location/display-revenue.html
         year=year
         values=revenue_values
         percent=true
@@ -219,7 +219,7 @@ layout: default
 
       {% assign production_values = product[1].volume %}
       {%
-        include location/production-display.html
+        include location/display-production.html
         units=units
         year=year
         values=production_values
@@ -274,7 +274,7 @@ layout: default
 
         {% assign production_values = product[1].volume %}
         {%
-          include location/production-display.html
+          include location/display-production.html
           units=units
           year=year
           values=production_values
@@ -308,7 +308,7 @@ layout: default
     </p>
 
     {%
-      include location/jobs-display.html
+      include location/display-jobs.html
       values=jobs
       percent=true
     %}
@@ -333,7 +333,7 @@ layout: default
       </figure>
 
       {%
-        include location/jobs-county-display.html
+        include location/display-jobs-county.html
         year=year
         values=county_jobs
         percent=true
@@ -357,7 +357,7 @@ layout: default
     </p>
 
     {%
-      include location/gdp-display.html
+      include location/display-gdp.html
       values=gdp
       percent=true
     %}
@@ -377,7 +377,7 @@ layout: default
 
       {% assign exports = commodity[1] %}
       {%
-        include location/exports-display.html
+        include location/display-exports.html
         values=exports
         percent=true
       %}
@@ -394,7 +394,7 @@ layout: default
     {% assign disbursements = site.data.state_disbursements[state_id] %}
     {% if disbursements %}
       {%
-        include location/disbursements-display.html
+        include location/display-disbursements.html
         values=disbursements
       %}
     {% endif %}

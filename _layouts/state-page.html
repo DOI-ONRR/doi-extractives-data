@@ -7,30 +7,17 @@ layout: default
 {% assign year = '2013' %}
 {% assign oilgas = 'Oil & Gas (Non-Royalty)' %}
 {% assign commodity_names = site.data.commodity_names %}
-{% assign top_max_count = 10 %}
+{% assign top_products = 10 %}
 
 {% assign jobs = site.data.state_jobs[state_id] %}
 {% assign gdp = site.data.state_gdp[state_id] %}
 
-{% assign exports_commodities = site.data.state_exports[state_id].commodities %}
-{% assign exports_total = site.data.state_exports[state_id].commodities.All[year].dollars %}
-{% assign exports_commodities_num = site.data.state_exports[state_id].commodities | size | minus:2 %}
-
 {% assign revenue_commodities = site.data.state_revenues[state_id].commodities %}
 {% assign revenue_total = revenue_commodities.All[year].revenue %}
-{% assign revenue_type_names = 'Bonus;Rents;Royalties;Other Revenues' | split: ';' %}
-{% assign top_revenue_products = site.data.top_state_products[state_id].revenue[year] %}
-{% assign revenue_types = site.data.state_revenues_by_type[state_id] %}
 
 {% assign federal_products = site.data.state_federal_production[state_id].products %}
-{% assign federal_products_num = federal_products | size %}
-{% assign top_federal_products = site.data.top_state_products[state_id].federal_production[year] %}
 
 {% assign all_products = site.data.state_all_production[state_id].products %}
-{% assign all_products_num = all_products | size %}
-{% assign top_all_products = site.data.top_state_products[state_id].all_production[year] %}
-
-{% assign disbursements = site.data.state_disbursements[state_id] %}
 
 {% capture states_svg %}{{ site.baseurl }}/maps/states/all.svg{% endcapture %}
 {% capture state_svg %}{{ site.baseurl }}/maps/states/{{ state_id }}.svg{% endcapture %}
@@ -38,124 +25,69 @@ layout: default
 <main id="state-{{ state_id }}" class="container-outer">
   <h1>{{ state_name }}</h1>
 
-  <section id="key-facts" class="revenue">
+  <section id="key-facts">
     <h2>Key Facts</h2>
-    <ul class="list-bullet">
+    <ul class="list-bullet key-facts">
 
-    {% if revenue_total %}
-      <li>{{ state_name }} generated
-        <strong>${{ revenue_total | intcomma }}
-          in federal revenue</strong> from
-        <a href="#revenue">{{ revenue_commodities | size }} commodit{{ revenue_commodities | size | plural: 'ies', 'y' }}</a>
-        in {{ year }}.
-        {% if top_revenue_products %}
-        These are the most notable in terms of revenue:
-        <ul class="list-bullet">
-          {% for commodity in top_revenue_products %}
-          <li><a href="#revenue-{{ commodity.product | slugify }}">{{ commodity.product | lookup: commodity_names }}</a>:
-            ${{ commodity.value | intcomma }},
-            #{{ commodity.rank }} ({{ commodity.percent | floor }}%)</li>
-            {% if forloop.index == top_max_count %}{% break %}{% endif %}
-          {% endfor %}
-        </ul>
-        {% endif %}
+      <li class="revenue">{%
+        include location/key-revenue.html
+        location_id=state_id
+        location_name=state_name
+        year=year
+        top=top_products
+      %}</li>
+
+      <li class="production all-production">{%
+        include location/key-all-production.html
+        location_id=state_id
+        location_name=state_name
+        year=year
+        top=top_products
+      %}</li>
+
+      <li class="production federal-production">{%
+        include location/key-federal-production.html
+        location_id=state_id
+        location_name=state_name
+        year=year
+        top=top_products
+      %}</li>
+
+      <li class="employment">{%
+        include location/key-jobs.html
+        location_id=state_id
+        location_name=state_name
+        year=year
+      %}</li>
+
+      <li class="gdp">{%
+        include location/key-gdp.html
+        location_id=state_id
+        location_name=state_name
+        year=year
+      %}</li>
+
+      <li class="exports">
+        {% capture exports_summary %}
+        {%
+          include location/key-exports.html
+          location_id=state_id
+          location_name=state_name
+          year=year
+        %}
+        {% endcapture %}{{ exports_summary }}
       </li>
-    {% else %}
-      <li>{{ state_name }} generated no federal revenue in {{ year }}.</li>
-    {% endif %}
 
-    {% if all_products_num > 0 %}
-      <li>{{ state_name }} produced
-        <a href="#all-production">{{ all_products | size }} product{{ all_products | size | plural }}</a>
-        on all lands and waters in {{ year }}.
-        {% if top_all_products %}
-        These are some of the most notable:
-        <ul class="list-bullet">
-          {% for product in top_all_products %}
-          <li><a href="#all-production-{{ product.product | slugify }}">{{ product.product }}</a>:
-            #{{ product.rank }} ({{ product.percent | floor }}%)</li>
-          {% if forloop.index == top_max_count %}{% break %}{% endif %}
-          {% endfor %}
-        </ul>
-        {% endif %}
+      <li class="disbursements">
+        {% capture disbursements_summary %}
+        {%
+          include location/key-disbursements.html
+          location_id=state_id
+          location_name=state_name
+          year=year
+        %}
+        {% endcapture %}{{ disbursements_summary }}
       </li>
-    {% else %}
-      <li>We have no record of production on all lands and waters in {{ state_name }} in {{ year }}.</li>
-    {% endif %}
-
-    {% if federal_products_num > 0 %}
-      <li>{{ state_name }} produced
-        <a href="#federal-production">{{ federal_products | size }} product{{ federal_products | size | plural }}</a>
-        on federal lands in {{ year }}.
-        {% if top_federal_products %}
-        These are some of the most notable:
-        <ul class="list-bullet">
-          {% for product in top_federal_products %}
-          <li><a href="#federal-production-{{ product.product | slugify }}">{{ product.product }}</a>:
-            #{{ product.rank }} ({{ product.percent | floor }}%)</li>
-          {% if forloop.index == top_max_count %}{% break %}{% endif %}
-          {% endfor %}
-        </ul>
-        {% endif %}
-        </li>
-    {% else %}
-      <li>We have no record of federal production in {{ state_name }} in {{ year }}.</li>
-    {% endif %}
-
-    {% capture jobs_summary %}
-      {% if jobs[year].count %}
-        The extractives industry created
-        <a href="#employment">{{ jobs[year].count | intcomma }} jobs</a>
-        on average in {{ state_name }} in {{ year }}, or
-        {{ jobs[year].percent | percent }}% of state-wide employment.
-      {% else %}
-        The extractives industry did not create any jobs in {{ state_name }} in {{ year }}.
-      {% endif %}
-    {% endcapture %}
-
-      <li class="employment">{{ jobs_summary }}</li>
-
-    {% capture gdp_summary %}
-      {% if gdp[year].dollars %}
-        The extractives industry contributed
-        <a href="#gdp">${{ gdp[year].dollars | intcomma }}</a>
-        toward {{ state_name }}'s GDP in {{ year }}, or
-        {{ gdp[year].percent | percent }}%.
-      {% else %}
-        The extractives industry did not have any effect on GDP in {{ state_name }} in {{ year }}.
-      {% endif %}
-    {% endcapture %}
-
-      <li class="gdp">{{ gdp_summary }}</li>
-
-    {% capture exports_summary %}
-      {% if exports_commodities_num > 0 %}
-        {{ state_name }} exported
-        {{ exports_commodities_num }} extractives
-        product{{ exports_commodities_num | plural }} in {{ year }},
-        generating
-        <a href="#exports">${{ exports_commodities.All[year].dollars | intcomma }}</a>
-        in export revenue, or
-        {{ exports_commodities.All[year].percent | percent }}%.
-      {% else %}
-        Extractive industries did not account for any of {{ state_name }}'s top 25 exports in {{ year }}.
-      {% endif %}
-    {% endcapture %}
-
-      <li class="exports">{{ exports_summary }}</li>
-
-    {% capture disbursements_summary %}
-    {% assign disbursement_funds_num = disbursements | size | minus: 1 %}
-      {% if disbursements %}
-        {{ state_name }} received
-        <a href="#disbursements">${{ disbursements.All[year] | round | intcomma }}</a>
-        in federal disbursements in {{ year }}.
-      {% else %}
-        {{ state_name }} did not receive any federal disbursements in {{ year }}.
-      {% endif %}
-    {% endcapture %}
-
-      <li class="disbursements">{{ disbursements_summary }}</li>
 
     </ul>
   </section>
@@ -217,58 +149,14 @@ layout: default
 
       <p>Companies may not know whether they’ll produce oil or gas until they explore the land, so fees are not differentiated by product until production begins.</p>
 
-      <table id="revenue-types" is="bar-chart-table" class="revenue">
-        <thead>
-          <tr>
-            <th>Commodity</th>
-            <th>Securing a lease</th>
-            <th>Before production</th>
-            <th>During production</th>
-            <th>Other revenues</th>
-          </tr>
-        </thead>
-        {% for commodity in revenue_types %}
-          {% assign commodity_name = commodity[0] %}
-          {% assign values = commodity[1] %}
-        <tbody id="revenue-types-{{ commodity_name | slugify }}">
-          {% if commodity_name == oilgas %}
-          <tr>
-            {% assign total = values.All[year] | default: 0 | plus: revenue_types.Oil.All[year] | plus: revenue_types.Gas.All[year] %}
-            <th scope="row" rowspan="2" data-value="{{ total }}">
-              <a href="#revenue-{{ commodity_name | slugify }}"><strong>Oil &amp; Gas</strong></a>
-              ${{ total | intcomma }}
-            </th>
-            <td rowspan="2" data-value="{{ values.Bonus[year] | default: 0 }}">${{ values.Bonus[year] | default: 0 | intcomma }}</td>
-            <td rowspan="2" data-value="{{ values.Rents[year] | default: 0 }}">${{ values.Rents[year] | default: 0 | intcomma }}</td>
-            <td data-value="{{ revenue_types.Oil.Royalties[year] | default: 0 }}">
-              <a href="#revenue-oil"><strong>Oil</strong></a>
-              ${{ revenue_types.Oil.Royalties[year] | default: 0 | intcomma }}
-            </td>
-            <td rowspan="2" data-value="{{ values['Other Revenues'][year] | default: 0 }}">${{ values['Other Revenues'][year] | default: 0 | intcomma }}</td>
-          </tr>
-          <tr>
-            <td data-value="{{ revenue_types.Gas.Royalties[year] | default: 0 }}">
-              <a href="#revenue-gas"><strong>Gas</strong></a>
-              ${{ revenue_types.Gas.Royalties[year] | default: 0 | intcomma }}
-            </td>
-          </tr>
-          {% elsif commodity_name != 'Oil' and commodity_name != 'Gas' %}
-            {% assign total = values.All[year] | default: 0 %}
-            {% if total != 0 %}
-          <tr>
-            <th scope="row" data-value="{{ total }}">
-              <a href="#revenue-{{ commodity_name | slugify }}"><strong>{{ commodity_name | lookup: commodity_names }}</strong></a>
-              ${{ total | intcomma }}
-            </th>
-            {% for revenue_type in revenue_type_names %}
-            <td data-value="{{ values[revenue_type][year] | default: 0 }}">${{ commodity[1][revenue_type][year] | default: 0 | intcomma }}</td>
-            {% endfor %}
-          </tr>
-            {% endif %}
-          {% endif %}
-        </tbody>
-        {% endfor %}
-      </table>
+      {%
+        include location/revenue-type-table.html
+        id='revenue-types'
+        location_id=state_id
+        location_name=state_name
+        year=year
+      %}
+
     </section>
 
     {% for commodity in revenue_commodities %}
@@ -285,58 +173,17 @@ layout: default
         {{ commodity_name | downcase }} on federal land in {{ state_name }}.
       </p>
 
-      <table is="bar-chart-table" data-percent-max="100">
-        <thead>
-          <th>Year</th>
-          <th class="numeric" data-series="revenue">Revenue</th>
-          <th class="numeric" data-series="percent">US %</th>
-          <th class="numeric" data-series="rank">Rank</th>
-        </thead>
-        <tbody>
-        {% for _year in site.data.years.revenue %}
-          {% assign value = commodity[1] | get: _year %}
-          <tr>
-            <td class="label">{{ _year }}</td>
-            <td data-series="revenue" data-value="{{ value.revenue | default: 0 }}" class="numeric">${{ value.revenue | default: 0 | intcomma }}</td>
-            <td data-series="percent" data-value="{{ value.percent | default: 0 }}" class="numeric">{{ value.percent | default: 0 | percent }}%</td>
-            <td data-series="rank" class="numeric">{% if value.rank %}{{ value.rank | ordinal:'super' }}{% endif %}</td>
-          </tr>
-        {% endfor %}
-        </tbody>
-      </table>
+      {% assign revenue_values = commodity[1] %}
+      {%
+        include location/display-revenue.html
+        year=year
+        values=revenue_values
+        percent=true
+        rank=true
+      %}
 
     </section>
     {% endfor %}
-
-    <!--
-    <section id="revenue-types">
-      <h3>Revenue Types</h3>
-      <table is="bar-chart-table" data-percent-max="100">
-        <thead>
-          <th>Year</th>
-          {% for type in revenue_type_names %}
-          <th class="numeric" data-series="revenue-{{ type | slugify }}">
-            {% if type == 'Other Revenues' %}Other{% else %}{{ type }}{% endif %}
-          </th>
-          {% endfor %}
-        </thead>
-        <tbody>
-          {% for row in site.data.state_revenues[state_id].commodities.All %}
-          {% assign _year = row[0] %}
-          <tr>
-            <td>{{ _year }}</td>
-            {% for type in revenue_type_names %}
-            {% assign type_revenue = revenue_types[type] %}
-            <td class="numeric" data-series="revenue-{{ type | slugify }}" data-value="{{ type_revenue[_year] | default: 0 }}">
-              ${{ type_revenue[_year] | default: 0 | intcomma }}
-            </td>
-            {% endfor %}
-          </tr>
-          {% endfor %}
-        </tbody>
-      </table>
-    </section>
-    -->
 
   </section>
 
@@ -370,25 +217,15 @@ layout: default
         {% else %}no{% endif %}
         {{ product[0] | downcase }} in {{ year }}. Historically:</p>
 
-      <table is="bar-chart-table" data-percent-max="100">
-        <thead>
-          <th>Year</th>
-          <th class="numeric" data-series="volume">Production ({{ units }})</th>
-          <th class="numeric" data-series="percent">US %</th>
-          <th class="numeric" data-series="rank">Rank</th>
-        </thead>
-        <tbody>
-        {% for _year in site.data.years.production %}
-          {% assign value = product[1].volume | get: _year %}
-          <tr>
-            <td>{{ _year }}</td>
-            <td data-series="volume" data-value="{{ value.volume | default: 0 }}" class="numeric">{{ value.volume | default: 0 | intcomma }}</td>
-            <td data-series="percent" data-value="{{ value.percent | default: 0 }}" class="numeric">{{ value.percent | default: 0 | percent }}%</td>
-            <td class="numeric">{% if value.rank %}{{ value.rank | ordinal: 'super' }}{% endif %}</td>
-          </tr>
-        {% endfor %}
-        </tbody>
-      </table>
+      {% assign production_values = product[1].volume %}
+      {%
+        include location/display-production.html
+        units=units
+        year=year
+        values=production_values
+        percent=true
+        rank=true
+      %}
 
     </section>
     {% endfor %}
@@ -435,25 +272,15 @@ layout: default
         </figure>
         {% endif %}
 
-        <table is="bar-chart-table" data-percent-max="100">
-          <thead>
-            <th>Year</th>
-            <th class="numeric" data-series="volume">Production ({{ units }})</th>
-            <th class="numeric" data-series="percent">US %</th>
-            <th class="numeric" data-series="rank">Rank</th>
-          </thead>
-          <tbody>
-          {% for _year in site.data.years.production %}
-            {% assign value = product[1].volume | get: _year %}
-            <tr>
-              <td>{{ _year }}</td>
-              <td data-series="volume" data-value="{{ value.volume | default: 0 }}" class="numeric">{{ value.volume | default: 0 | intcomma }}</td>
-              <td data-series="percent" data-value="{{ value.percent | default: 0 }}" class="numeric">{{ value.percent | default: 0 | percent }}%</td>
-              <td data-series="rank" class="numeric">{% if value.rank %}{{ value.rank | ordinal: 'super' }}{% endif %}</td>
-            </tr>
-          {% endfor %}
-          </tbody>
-        </table>
+        {% assign production_values = product[1].volume %}
+        {%
+          include location/display-production.html
+          units=units
+          year=year
+          values=production_values
+          percent=true
+          rank=true
+        %}
 
       </section>
       {% endfor %}
@@ -480,30 +307,20 @@ layout: default
       {% endif %}
     </p>
 
-    <table is="bar-chart-table" data-percent-max="100">
-      <thead>
-        <th>Year</th>
-        <th class="numeric" data-series="jobs">Jobs</th>
-        <th class="numeric" data-series="percent">State %</th>
-      </thead>
-      <tbody>
-      {% for year in jobs %}
-        <tr>
-          <td>{{ year[0] }}</td>
-          <td class="numeric" data-series="jobs" data-value="{{ year[1].count }}">{{ year[1].count | intcomma }}</td>
-          <td class="numeric" data-series="percent" data-value="{{ year[1].percent }}">{{ year[1].percent | percent }}%</td>
-        </tr>
-      {% endfor %}
-      </tbody>
-    </table>
+    {%
+      include location/display-jobs.html
+      values=jobs
+      percent=true
+    %}
 
+    {% assign county_jobs = site.data.county_jobs[state_id] %}
+    {% if county_jobs %}
     <h3>County-Level Employment</h3>
     <p>County-level employment data shows how many jobs in each county (and what percentage of the county's total employment) are related to extractive industries.</p>
 
     <section class="county-map-table">
       <figure>
         <data-map color-scheme="Reds" steps="9">
-          {% assign county_jobs = site.data.county_jobs[state_id] %}
           {% capture value_key %}employment.{{ year }}.count{% endcapture %}
           {%
             include county-map.html
@@ -515,26 +332,14 @@ layout: default
         <figcaption>County extractives employment (jobs, {{ year }})</figcaption>
       </figure>
 
-      <table is="bar-chart-table" data-percent-max="100">
-        <thead>
-          <tr>
-            <th>County</th>
-            <th class="numeric" data-series="jobs">Jobs</th>
-            <th class="numeric" data-series="percent">County %</th>
-          </tr>
-        </thead>
-        <tbody>
-        {% for county in site.data.county_jobs[state_id] %}
-          {% if county[1].employment[year].count > 0 %}
-          <tr>
-            <td>{{ county[1].name }}</td>
-            <td class="numeric" data-series="jobs" data-value="{{ county[1].employment[year].count }}">{{ county[1].employment[year].count | intcomma }}</td>
-            <td class="numeric" data-series="percent" data-value="{{ county[1].employment[year].percent }}">{{ county[1].employment[year].percent | percent }}%</td>
-          </tr>
-          {% endif %}
-        {% endfor %}
-        </tbody>
-      </table>
+      {%
+        include location/display-jobs-county.html
+        year=year
+        values=county_jobs
+        percent=true
+      %}
+
+      {% endif %}
     </section>
 
   </section>
@@ -551,77 +356,47 @@ layout: default
       {% endif %}
     </p>
 
-    <table is="bar-chart-table" data-percent-max="100">
-      <thead>
-        <th>Year</th>
-        <th class="numeric" data-series="gdp">Dollars</th>
-        <th class="numeric" data-series="percent">State %</th>
-      </thead>
-      <tbody>
-      {% for _year in gdp %}
-        <tr>
-          <td>{{ _year[0] }}</td>
-          <td class="numeric" data-series="gdp" data-value="{{ _year[1].dollars }}">${{ _year[1].dollars | intcomma }}</td>
-          <td class="numeric" data-series="percent" data-value="{{ _year[1].percent }}">{{ _year[1].percent | percent }}%</td>
-        </tr>
-      {% endfor %}
-      </tbody>
-    </table>
+    {%
+      include location/display-gdp.html
+      values=gdp
+      percent=true
+    %}
+
   </section>
 
   <section id="exports" class="economic exports">
     <h2>Exports</h2>
-    <p>{{ exports_summary | strip_html }}{% if exports_commodities_num > 0 %} Historically:{% endif %}</p>
+    <p>{{ exports_summary | strip_html }}</p>
 
-    {% for commodity in exports_commodities %}
-      {% if commodity[0] != 'Total' %}
+    {% assign export_commodities = site.data.state_exports[state_id].commodities %}
+
+    {% for commodity in export_commodities %}
+      {% if commodity[0] == 'Total' %}{% continue %}{% endif %}
     <section id="exports-{{ commodity[0] | slugify }}">
       <h3>{{ commodity[0] }}</h3>
-      <table is="bar-chart-table" data-percent-max="100">
-        <thead>
-          <th>Year</th>
-          <th class="numeric" data-series="exports">Dollars</th>
-          <th class="numeric" data-series="percent">State %</th>
-        </thead>
-        <tbody>
-          {% for commodity_year in commodity[1] %}
-            <tr>
-              <td>{{ commodity_year[0] }}</td>
-              <td class="numeric" data-series="exports" data-value="{{ commodity_year[1].dollars }}">${{ commodity_year[1].dollars | intcomma }}</td>
-              <td class="numeric" data-series="percent" data-value="{{ commodity_year[1].percent }}">{{ commodity_year[1].percent | percent }}%</td>
-            </tr>
-          {% endfor %}
-        </tbody>
-      </table>
-      {% endif %}
+
+      {% assign exports = commodity[1] %}
+      {%
+        include location/display-exports.html
+        values=exports
+        percent=true
+      %}
+
     </section>
     {% endfor %}
+
   </section>
 
   <section id="disbursements" class="disbursements">
     <h2>Disbursements</h2>
     <p>{{ disbursements_summary | strip_html }}</p>
 
+    {% assign disbursements = site.data.state_disbursements[state_id] %}
     {% if disbursements %}
-    <table is="bar-chart-table">
-      <thead>
-        <th>Year</th>
-        <th class="numeric" data-series="total">Total</th>
-        <th class="numeric" data-series="onshore">Onshore</th>
-        <th class="numeric" data-series="offshore">Offshore</th>
-      </thead>
-      <tbody>
-      {% for _year in disbursements.All %}
-        {% assign y = _year[0] %}
-        <tr>
-          <td>{{ y }}</td>
-          <td class="numeric" data-series="total" data-value="{{ disbursements.All[y] }}">${{ disbursements.All[y] | round | intcomma }}</td>
-          <td class="numeric" data-series="onshore" data-value="{{ disbursements.Onshore[y] }}">${{ disbursements.Onshore[y] | round | intcomma }}</td>
-          <td class="numeric" data-series="offshore" data-value="{{ disbursements.Offshore[y] }}">${{ disbursements.Offshore[y] | round | intcomma }}</td>
-        </tr>
-      {% endfor %}
-      </tbody>
-    </table>
+      {%
+        include location/display-disbursements.html
+        values=disbursements
+      %}
     {% endif %}
 
   </section>

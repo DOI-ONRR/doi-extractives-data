@@ -1,0 +1,20 @@
+<table is="bar-chart-table" data-percent-max="100">
+  <thead>
+    <th>Year</th>
+    <th class="numeric" data-series="jobs">Jobs</th>
+    {% if include.percent %}
+    <th class="numeric" data-series="percent">State %</th>
+    {% endif %}
+  </thead>
+  <tbody>
+  {% for _year in include.values %}
+    <tr>
+      <td>{{ _year[0] }}</td>
+      <td class="numeric" data-series="jobs" data-value="{{ _year[1].count }}">{{ _year[1].count | intcomma }}</td>
+      {% if include.percent %}
+      <td class="numeric" data-series="percent" data-value="{{ _year[1].percent }}">{{ _year[1].percent | percent }}%</td>
+      {% endif %}
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>

@@ -1,0 +1,22 @@
+<section id="exports" class="economic exports">
+  <h2>Exports</h2>
+  <p>{{ exports_summary | strip_html }}</p>
+
+  {% assign export_commodities = site.data.state_exports[state_id].commodities %}
+
+  {% for commodity in export_commodities %}
+    {% if commodity[0] == 'Total' %}{% continue %}{% endif %}
+  <section id="exports-{{ commodity[0] | slugify }}">
+    <h3>{{ commodity[0] }}</h3>
+
+    {% assign exports = commodity[1] %}
+    {%
+      include location/display-exports.html
+      values=exports
+      percent=true
+    %}
+
+  </section>
+  {% endfor %}
+
+</section>

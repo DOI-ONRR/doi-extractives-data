@@ -1,0 +1,21 @@
+// the svg-container class implements the well-known SVG padding hack, which
+// requires that the container have its padding-bottom set for non-square aspect
+// ratios, using the following formula:
+//
+// (viewBox.height / viewBox.width) * width
+//
+// where `width` is the percentage width of the container.
+//
+// <http://tympanus.net/codrops/2014/08/19/making-svgs-responsive-with-css/>
+.svg-container {
+  height: 0;
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+
+  svg {
+    left: 0;
+    position: absolute;
+    top: 0;
+  }
+}

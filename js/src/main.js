@@ -42,8 +42,6 @@
   });
 
   var svg4everybody = require('svg4everybody');
-  svg4everybody({
-    polyfill: true
-  });
+  svg4everybody();
 
 })(window);

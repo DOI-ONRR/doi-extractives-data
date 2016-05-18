@@ -1,25 +1,45 @@
-<svg class="county map" viewBox="{{ site.data.viewboxes[include.state] }}">
-  {% capture states_svg %}{{ site.baseurl }}/maps/states/all.svg{% endcapture %}
-  {% capture state_svg %}{{ site.baseurl }}/maps/states/{{ include.state }}.svg{% endcapture %}
-  <use class="states features" xlink:href="{{ states_svg }}#states"></use>
-  <use class="states mesh" xlink:href="{{ states_svg }}#states-mesh"></use>
-  <use class="counties features" xlink:href="{{ state_svg }}#counties"></use>
-  {% if include.counties %}
-    {% assign keys = include.value %}
-    {% for county in include.counties %}
-      {% assign fips = county[0] | pad_left: 5, '0' %}
-      {% if include.href %}<a xlink:href="{{ include.href | replace: '%', fips }}">{% endif %}
-      {% assign value = county[1] | get: keys %}
-      {% if value != nil %}
-      <use class="county feature" xlink:href="{{ state_svg }}#county-{{ fips }}"
-        data-value='{{ value | default: 0 | jsonify }}'>
-        <title>{{ county[1].name }}</title>
-      </use>
-      {% endif %}
-      {% if include.href %}</a>{% endif %}
-    {% endfor %}
-  {% endif %}
-  {% include maps/federal_land_ownership.svg %}
-  <use class="counties mesh" xlink:href="{{ state_svg }}#counties-mesh"></use>
-  <use class="state feature overlay" xlink:href="{{ states_svg }}#{{ include.state }}"></use>
-</svg>
+{% assign _width = 50 %}
+{% assign _viewbox = include.viewbox | default: site.data.viewboxes[include.state] %}
+<div class="svg-container county map-container"{% if _viewbox %}
+  style="width: {{ _width }}%; padding-bottom: {{ _viewbox | svg_viewbox_padding: _width }}%;"{% endif %}>
+  <svg class="county map"{% if _viewbox %} viewBox="{{ _viewbox }}"{% endif %}>
+    {% capture states_svg %}{{ site.baseurl }}/maps/states/all.svg{% endcapture %}
+    {% capture state_svg %}{{ site.baseurl }}/maps/states/{{ include.state }}.svg{% endcapture %}
+    <g class="states features">
+      <use xlink:href="{{ states_svg }}#states"></use>
+    </g>
+    <g class="states mesh">
+      <use xlink:href="{{ states_svg }}#states-mesh"></use>
+    </g>
+    <g class="counties features">
+      <use xlink:href="{{ state_svg }}#counties"></use>
+    </g>
+
+    {% if include.counties %}
+      {% assign keys = include.value %}
+      {% for county in include.counties %}
+        {% assign fips = county[0] | pad_left: 5, '0' %}
+        {% if include.href %}<a xlink:href="{{ include.href | replace: '%', fips }}">{% endif %}
+        {% assign value = county[1] | get: keys %}
+        {% if value != nil %}
+        <g class="county feature"
+          data-value='{{ value | default: 0 | jsonify }}'>
+          <title>{{ county[1].name }}</title>
+          <use xlink:href="{{ state_svg }}#county-{{ fips }}"></use>
+        </g>
+        {% endif %}
+        {% if include.href %}</a>{% endif %}
+      {% endfor %}
+    {% endif %}
+
+    {%
+      include maps/federal_land_ownership.svg
+    %}
+    <g class="counties mesh">
+      <use xlink:href="{{ state_svg }}#counties-mesh"></use>
+    </g>
+    <g class="state feature overlay">
+      <use xlink:href="{{ states_svg }}#state-{{ include.state }}"></use>
+    </g>
+  </svg>
+</div>

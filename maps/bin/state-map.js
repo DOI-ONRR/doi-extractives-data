@@ -140,7 +140,9 @@ var render = function(objects, done) {
           .data(stateFeatures)
           .enter()
           .append('path')
-            .attr('id', id)
+            .attr('id', function(d) {
+              return d.id ? 'state-' + d.id : null;
+            })
             .attr('class', 'state feature')
             .attr('d', path);
     }

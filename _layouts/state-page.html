@@ -1,0 +1,49 @@
+---
+layout: default
+---
+
+{% assign state_name = page.data.name %}
+{% assign state_id = page.data.id %}
+{% assign year = '2013' %}
+{% assign oilgas = 'Oil & Gas (Non-Royalty)' %}
+{% assign commodity_names = site.data.commodity_names %}
+{% assign top_products = 10 %}
+
+<main id="state-{{ state_id }}" class="container-outer">
+  <h1>{{ state_name }}</h1>
+
+  {% include location/section-key-facts.html %}
+
+  {% include location/section-ownership.html %}
+
+  {% include location/section-process.html %}
+
+  {% include location/section-revenue.html %}
+
+  {% include location/section-all-production.html %}
+
+  {% include location/section-federal-production.html %}
+
+  {% include location/section-state-production.html %}
+
+  {% include location/section-jobs.html %}
+
+  {% include location/section-gdp.html %}
+
+  {% include location/section-exports.html %}
+
+  {% include location/section-disbursements.html %}
+
+  <!-- XXX setting display: none on this prevents the mask from working -->
+  <svg width="0" height="0">
+    <defs>
+      <clipPath id="state-outline">
+        <use xlink:href="{{ states_svg }}#{{ state_id }}"></use>
+      </clipPath>
+    </defs>
+  </svg>
+
+</main>
+
+<script src="{{ site.baseurl }}/js/components/bar-chart-table.js"></script>
+<script src="{{ site.baseurl }}/js/components/data-map.js"></script>

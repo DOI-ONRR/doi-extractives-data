@@ -66,9 +66,22 @@ thead {
   text-align: center;
 }
 
+td,
+th {
+  padding: 5px;
+  vertical-align: top;
+}
+
+th:first-child {
+  text-align: left;
+}
+
 td {
   border: 1px solid $mid-gray;
-  padding: 5px;
+}
+
+table .numeric {
+  text-align: right;
 }
 
 .hidden {

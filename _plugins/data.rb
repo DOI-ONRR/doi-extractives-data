@@ -36,13 +36,11 @@ module EITI
       str
     end
 
-
     # attempt to look up a term in a dictionary (hash),
     # and return the value if that key exists; otherwise, return the key
     def lookup(term, dict)
       (dict.key? term) ? dict[term] : term
     end
-
 
     # create an integer range array from either a start and end number, or
     # a 2-element array
@@ -51,6 +49,14 @@ module EITI
         (start, finish) = start
       end
       (start..finish).to_a
+    end
+
+    def to_f(x)
+      return (x.is_a? Array) ? x.map{ |d| d.to_f } : x.to_f
+    end
+
+    def to_i(x)
+      return (x.is_a? Array) ? x.map{ |d| d.to_i } : x.to_i
     end
 
   end

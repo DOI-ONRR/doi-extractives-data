@@ -1,0 +1,13 @@
+{% if page.selector == 'hash' %}
+  <nav class="hash_selector">
+    {% include hash_selector.html %}
+  </nav>
+{% elsif page.selector == 'location' %}
+  {% include location_selector.html %}
+{% elsif page.selector == 'list' %}
+  {% include location_selector.html %}
+{% else %}
+
+  {% include hash_selector.html %}
+
+{% endif %}

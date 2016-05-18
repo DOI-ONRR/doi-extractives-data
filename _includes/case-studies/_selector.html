@@ -1,6 +1,6 @@
 <div class="case_studies_intro-select {{include.screen}}">
-  <label>Choose a community page</label>
-  <select onchange="window.location = '{{ site.baseurl }}/case-studies/' + this.value + '/'">
+  <label for="case_studies-selector">Choose a community page</label>
+  <select id="case_studies-selector" onchange="window.location = '{{ site.baseurl }}/case-studies/' + this.value + '/'">
     <option
     {% if page.permalink == '/case-studies/' %}selected{% endif %}
     value="#">Overview</option>

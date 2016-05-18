@@ -144,7 +144,7 @@
 .landing-wrapper {
   margin-bottom: ($base-padding-extra * 1.4);
 
-  .accordion-button {
+  [accordion-button] {
     margin-top: -1px;
   }
 }

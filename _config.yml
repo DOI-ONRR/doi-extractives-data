@@ -1,12 +1,15 @@
 title: USEITI
 
-description: USEITI is part of an international effort to promote open and accountable management of natural resources. This site provides data about how the U.S. manages extractive industries.
+description: >
+    USEITI is part of an international effort to promote open and accountable
+    management of natural resources. This site provides data about how the U.S.
+    manages extractive industries.
 
 # permanent url, for use in meta references
 url: https://useiti.doi.gov
 
 # app version number
-version: v1.2.1
+version: v1.3.2
 
 sass:
   style: nested
@@ -84,3 +87,5 @@ page_gen_dirs: true
 
 shruggie:
   - d8394cf27efbf8ae2f96ee12788eb257f4358a42
+  - 11652cb6b75c1e914857a215e8f8eca7a599e0e0
+  - 85f41ebb92208a3508c75114999a560ebd741690

@@ -3,6 +3,18 @@
 // Default list markup
 //
 // Markup:
+// <ul>
+//  <li>Default list</li>
+// </ul>
+// <ul>
+//  <li>List</li>
+//  <ul>
+//    <li>Nested List</li>
+//  </ul>
+// </ul>
+// <ul class="list-unstyled">
+//  <li>Unstyled list</li>
+// </ul>
 // <ul class="list-bullet">
 // 	<li>Bulleted list</li>
 // </ul>
@@ -17,6 +29,35 @@
 // </ul>
 //
 // Styleguide elements.lists
+
+ol,
+ul {
+  padding-left: $base-padding;
+  margin-bottom: $base-padding;
+}
+
+ul {
+  list-style-type: disc;
+
+  ul {
+    list-style-type: square;
+    margin-bottom: 0;
+
+    ul {
+      list-style-type: circle;
+      margin-bottom: 0;
+    }
+  }
+}
+
+li {
+  padding-bottom: $base-padding-lite;
+}
+
+.list-unstyled {
+  list-style-type: none;
+  padding-left: 0;
+}
 
 %list-indented {
   margin-bottom: 1em;

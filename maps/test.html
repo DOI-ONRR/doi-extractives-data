@@ -17,6 +17,19 @@ permalink: /maps/test/
       </data-map>
       <figcaption>State employment (number of extractives jobs)</figcaption>
     </figure>
+
+    <figure>
+      <data-map color-scheme="Greens" steps="9">
+        {%
+          include county-map.html
+          state='CA'
+          counties=site.data.county_jobs.CA
+          href='#%'
+          value='employment.2013.count'
+        %}
+      </data-map>
+      <figcaption>California county-level employment (number of extractives jobs)</figcaption>
+    </figure>
   </div>
 </section>
 

@@ -9,9 +9,10 @@
 // <http://tympanus.net/codrops/2014/08/19/making-svgs-responsive-with-css/>
 .svg-container {
   height: 0;
+  overflow: hidden;
+  padding-bottom: 100%;
   position: relative;
   width: 100%;
-  padding-bottom: 100%;
 
   svg {
     left: 0;

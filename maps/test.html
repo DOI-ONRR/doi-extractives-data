@@ -7,10 +7,14 @@ permalink: /maps/test/
   <div class="container-outer">
     <h2>US Map</h2>
     <figure>
-      <data-map color-scheme="Greens" steps="9">
+      {% assign viewbox = site.data.viewboxes.all | split: ' ' | to_f %}
+      {% assign padding = viewbox[3] | divided_by: viewbox[2] | times: 100 %}
+      <data-map color-scheme="Greens" steps="9"
+        style="position: relative; height: 0; width: 100%; padding-bottom: {{ padding | percent }}%;">
         {%
           include state-map.html
           states=site.data.state_jobs
+          style='position: absolute; left: 0; top: 0'
           href='#%'
           value='2013.count'
         %}

@@ -1,4 +1,4 @@
-<svg class="states map" viewBox="{{ site.data.viewboxes.all }}">
+<svg class="states map" viewBox="{{ site.data.viewboxes.all }}"{% if include.style %} style="{{ include.style }}"{% endif %}>
   {% capture states_svg %}{{ site.baseurl }}/maps/states/all.svg{% endcapture %}
   <use class="states features" xlink:href="{{ states_svg }}#states"></use>
   {% assign keys = include.value %}
@@ -8,7 +8,9 @@
     <use class="state feature" xlink:href="{{ states_svg }}#{{ state[0] }}"
     {% if include.value %}
       {% assign value = state[1] | get: keys %}
-      data-value='{{ value | default: 0 | jsonify }}'{% endif %}><title>{{ _state.name }}: {{ value }}</title></use>
+      data-value='{{ value | default: 0 | jsonify }}'{% endif %}>
+      <title>{{ _state.name }}: {{ value }}</title>
+    </use>
   {% if include.href %}</a>{% endif %}
   {% endfor %}
   {% include maps/federal_land_ownership.svg %}

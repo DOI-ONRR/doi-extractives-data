@@ -8,13 +8,21 @@ module EITI
     # usage:
     #
     # style="padding-bottom: {{ viewbox | svg_viewbox_padding }}%;"
-    def svg_viewbox_padding(viewBox, width=100)
+    def svg_viewbox_padding(viewBox, width=nil)
+      if not width
+        width = 100
+      end
+
       # if we get a string, split it into 4 parts and map its strings to floats
       # (otherwise we'll get integer precision in the division below)
       if viewBox.is_a? String
         viewBox = viewBox.split(" ").map{ |n| n.to_f }
+      elsif not viewBox.is_a? Array
+        # FIXME: throw an error here?
+        return width
       end
-      return viewBox[3] / viewBox[2] * width
+
+      viewBox[3] / viewBox[2] * width
     end
 
   end

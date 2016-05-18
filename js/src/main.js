@@ -41,4 +41,9 @@
       accordion = new exports.Accordion();
   });
 
+  var svg4everybody = require('svg4everybody');
+  svg4everybody({
+    polyfill: true
+  });
+
 })(window);

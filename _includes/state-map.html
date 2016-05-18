@@ -1,18 +1,22 @@
 <svg class="states map" viewBox="{{ site.data.viewboxes.all }}"{% if include.style %} style="{{ include.style }}"{% endif %}>
   {% capture states_svg %}{{ site.baseurl }}/maps/states/all.svg{% endcapture %}
-  <use class="states features" xlink:href="{{ states_svg }}#states"></use>
+  <g class="states features">
+    <use xlink:href="{{ states_svg }}#states"></use>
+  </g>
   {% assign keys = include.value %}
   {% for state in include.states %}
   {% assign _state = site.data.states | where: 'id', state[0] | first %}
   {% if include.href %}<a xlink:href="{{ include.href | replace: '%', state[0] }}">{% endif %}
-    <use class="state feature" xlink:href="{{ states_svg }}#{{ state[0] }}"
-    {% if include.value %}
+    <g class="state feature" {% if include.value %}
       {% assign value = state[1] | get: keys %}
       data-value='{{ value | default: 0 | jsonify }}'{% endif %}>
       <title>{{ _state.name }}: {{ value }}</title>
-    </use>
+      <use xlink:href="{{ states_svg }}#state-{{ state[0] }}"></use>
+    </g>
   {% if include.href %}</a>{% endif %}
   {% endfor %}
   {% include maps/federal_land_ownership.svg %}
-  <use class="states mesh" xlink:href="{{ states_svg }}#states-mesh"></use>
+  <g class="states mesh">
+    <use xlink:href="{{ states_svg }}#states-mesh"></use>
+  </g>
 </svg>

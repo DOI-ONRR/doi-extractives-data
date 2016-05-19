@@ -1,19 +1,19 @@
 (function(exports) {
 
   var initialize = function() {
-    this.cells = [].slice.call(this.querySelectorAll('tr > [data-value]'));
+    this._cells = [].slice.call(this.querySelectorAll('tr > [data-value]'));
     this.update();
   };
 
   var update = function() {
-    if (!this.cells.length) {
+    if (!this._cells.length) {
       return;
     }
 
     var series = {};
     var autolabel = this.getAttribute('autolabel') === 'true';
 
-    this.cells.forEach(function(cell) {
+    this._cells.forEach(function(cell) {
       var key = cell.dataset.series || 'default';
       if (key in series) {
         series[key].push(cell);

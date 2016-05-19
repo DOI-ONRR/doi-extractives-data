@@ -1,19 +1,36 @@
 {% capture states_svg %}{{ site.baseurl }}/maps/states/all.svg{% endcapture %}
 {% capture state_svg %}{{ site.baseurl }}/maps/states/{{ state_id }}.svg{% endcapture %}
-
 <section id="ownership">
   <h2>Land ownership</h2>
   <p><strong>In {{ state_name }}, {{ site.data.land_stats[state_id].federal_percent | percent }} percent of land is owned by the federal government.</strong></p>
 
   <figure>
-    <svg class="county ownership map" viewBox="{{ site.data.viewboxes[state_id] }}">
-      <use class="states features" xlink:href="{{ states_svg }}#states"></use>
-      <use class="states mesh" xlink:href="{{ states_svg }}#states-mesh"></use>
-      <use class="counties features" xlink:href="{{ state_svg }}#counties"></use>
-      {% include maps/federal_land_ownership.svg clip='#state-outline' %}
-      <use class="counties mesh" xlink:href="{{ state_svg }}#counties-mesh"></use>
-      <use class="state feature overlay" xlink:href="{{ states_svg }}#{{ state_id }}"></use>
-    </svg>
+    {% assign _width = 50 %}
+    {% assign _viewbox = site.data.viewboxes[state_id] %}
+    <div class="svg-container county map-container"{% if _viewbox %}
+      style="width: {{ _width }}%; padding-bottom: {{ _viewbox | svg_viewbox_padding: _width }}%;"{% endif %}>
+      <svg class="county ownership map"{% if _viewbox %} viewBox="{{ _viewbox }}"{% endif %}>
+        <g class="states features">
+          <use xlink:href="{{ states_svg }}#states"></use>
+        </g>
+        <g class="states mesh">
+          <use xlink:href="{{ states_svg }}#states-mesh"></use>
+        </g>
+        <g class="counties features">
+          <use xlink:href="{{ state_svg }}#counties"></use>
+        </g>
+        {%
+          include maps/federal_land_ownership.svg
+          clip='#state-outline'
+        %}
+        <g class="counties mesh">
+          <use xlink:href="{{ state_svg }}#counties-mesh"></use>
+        </g>
+        <g class="state feature overlay">
+          <use xlink:href="{{ states_svg }}#state-{{ state_id }}"></use>
+        </g>
+      </svg>
+    </div>
 
     <figcaption>Federally owned land (gray)</figcaption>
   </figure>

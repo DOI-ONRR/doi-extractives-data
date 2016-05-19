@@ -17,9 +17,20 @@ permalink: /maps/test/
       </data-map>
       <figcaption>State employment (number of extractives jobs)</figcaption>
     </figure>
+
+    <figure>
+      <data-map color-scheme="Greens" steps="9">
+        {%
+          include county-map.html
+          state='CA'
+          counties=site.data.county_jobs.CA
+          href='#%'
+          value='employment.2013.count'
+        %}
+      </data-map>
+      <figcaption>California county-level employment (number of extractives jobs)</figcaption>
+    </figure>
   </div>
 </section>
 
 <script src="{{ site.baseurl }}/js/components/data-map.js"></script>
-<script src="{{ site.baseurl }}/js/vendor/svg4everybody.js"></script>
-<script>svg4everybody();</script>

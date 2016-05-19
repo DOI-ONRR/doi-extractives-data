@@ -6,9 +6,10 @@ svg.map {
   padding: 0;
   width: 100%;
 
-  &.county {
-    padding: 1em;
-    width: 25em;
+  use {
+    fill: inherit;
+    stroke: inherit;
+    stroke-width: inherit;
   }
 
   .mesh {

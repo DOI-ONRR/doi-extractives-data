@@ -11,7 +11,7 @@ module EITI
     # format a number as a percentage with fixed precision, with an
     # additionally configurable "small" placeholder to indicate values
     # less than 1.
-    def percent(num, precision=1, small = "&lt;1")
+    def percent(num, precision = 1, small = "&lt;1")
       if num == nil
         # FIXME what should we represent null % as?
         return "--"

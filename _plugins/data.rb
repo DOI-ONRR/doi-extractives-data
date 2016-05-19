@@ -14,7 +14,7 @@ module EITI
       # and filter out any empty ones
       keys = keys.map(&:to_s).select { |k| !k.empty? }
       for key in keys
-        for k in key.split(".")
+        key.split(".").each do |k|
           data = data[k]
           if not data
             return nil

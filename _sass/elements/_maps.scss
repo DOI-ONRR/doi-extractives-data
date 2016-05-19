@@ -1,9 +1,10 @@
 // scss-lint:disable QualifyingElement
 svg.map {
   background: none;
+  box-sizing: border-box;
   display: block;
   height: auto;
-  padding: 0;
+  padding: 1em;
   width: 100%;
 
   use {

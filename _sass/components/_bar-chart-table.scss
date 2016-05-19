@@ -1,14 +1,15 @@
-table[is=bar-chart-table] {
+// scss-lint:disable NestingDepth SelectorDepth
+[is=bar-chart-table] {
   $cell-padding: 5px;
   $border-radius: 3px;
 
   border-collapse: collapse;
   border-spacing: 0;
-  margin: 0 0 2em 0;
+  margin: 0 0 2em;
 
   tbody tr:focus,
   tbody tr:hover {
-    background: #fff;
+    background: $white;
   }
 
   .numeric,
@@ -17,13 +18,13 @@ table[is=bar-chart-table] {
   }
 
   [data-value] {
-    position: relative;
     min-width: 120px;
+    position: relative;
 
     .bar {
+      background: currentColor;
       display: block;
       height: 1em;
-      background: currentColor;
     }
 
     &:not([data-value="0"]) {
@@ -35,14 +36,14 @@ table[is=bar-chart-table] {
 
   // negative values
   [data-value^="-"] .bar {
-    border: 1px solid;
     background: transparent;
+    border: 1px solid;
   }
 
   &[orient=vertical] {
     display: block;
-    position: relative;
     height: 6em;
+    position: relative;
 
     thead {
       display: none;
@@ -54,58 +55,58 @@ table[is=bar-chart-table] {
 
       td,
       th {
+        border: 0;
         display: none;
         padding: 0;
         width: auto;
-        border: 0;
       }
 
 
       tr {
-        display: flex;
-        width: 100%;
-        height: 100%;
-        position: relative;
-        padding: 0 0 1.5em 0;
         border-radius: $border-radius;
-      }
+        display: flex;
+        height: 100%;
+        padding: 0 0 1.5em;
+        position: relative;
+        width: 100%;
 
-      tr + tr {
-        margin-left: 10px;
+        + tr {
+          margin-left: 10px;
+        }
       }
 
       .label {
-        position: absolute;
-        display: block;
         bottom: 0;
-        width: 100%;
+        display: block;
+        position: absolute;
         text-align: center;
+        width: 100%;
       }
 
       [data-value] {
         display: flex;
         height: 100%;
-        width: 100%;
-        min-width: auto;
         margin: $border-radius;
         margin-bottom: 0;
+        min-width: auto;
+        width: 100%;
 
         .bar {
-          display: block;
           align-self: flex-end;
-          width: 100%;
           border-radius: $border-radius;
+          display: block;
           position: relative;
+          width: 100%;
         }
 
         // hide text in vertical
         .text {
           display: none;
         }
-      }
 
-      [data-value] + [data-value] {
-        margin-left: 2px;
+        + [data-value] {
+          margin-left: 2px;
+        }
       }
 
       tr:hover,
@@ -116,16 +117,16 @@ table[is=bar-chart-table] {
 
         [aria-label]::after,
         [data-value] .text {
-          display: block;
-          background: #000;
-          color: #fff;
-          position: absolute;
-          bottom: 100%;
-          left: 0;
-          width: 100%;
-          text-align: center;
-          margin-bottom: $border-radius * 2;
+          background: $black;
           border-radius: $border-radius;
+          bottom: 100%;
+          color: $white;
+          display: block;
+          left: 0;
+          margin-bottom: $border-radius * 2;
+          position: absolute;
+          text-align: center;
+          width: 100%;
         }
       }
 

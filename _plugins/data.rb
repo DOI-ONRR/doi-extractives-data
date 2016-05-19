@@ -13,8 +13,8 @@ module EITI
       # coerce all of the keys to strings,
       # and filter out any empty ones
       keys = keys
-        .map{ |k| k.to_s }
-        .select{ |k| not k.empty? }
+        .map(&:to_s)
+        .select { |k| not k.empty? }
       for key in keys
         for k in key.split('.')
           data = data[k]
@@ -28,7 +28,7 @@ module EITI
 
     # pad the provided string with the provided padding character (or a
     # space, by default) if its length is less than a given length
-    def pad_left(str, len, pad=' ')
+    def pad_left(str, len, pad = ' ')
       pad_by = len - str.size
       if pad_by > 0
         return pad * pad_by + str
@@ -44,7 +44,7 @@ module EITI
 
     # create an integer range array from either a start and end number, or
     # a 2-element array
-    def range(start, finish=nil)
+    def range(start, finish = nil)
       if start.is_a? Array
         (start, finish) = start
       end
@@ -52,11 +52,11 @@ module EITI
     end
 
     def to_f(x)
-      return (x.is_a? Array) ? x.map{ |d| d.to_f } : x.to_f
+      (x.is_a? Array) ? x.map(&:to_f) : x.to_f
     end
 
     def to_i(x)
-      return (x.is_a? Array) ? x.map{ |d| d.to_i } : x.to_i
+      (x.is_a? Array) ? x.map(&:to_i) : x.to_i
     end
 
   end

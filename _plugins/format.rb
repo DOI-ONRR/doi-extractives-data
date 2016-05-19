@@ -2,11 +2,11 @@ module EITI
 
   module Format
 
-    def plural(num, plural="s", singular="")
+    def plural(num, plural = 's', singular = '')
       (num.to_i == 1) ? singular : plural
     end
 
-    def percent(num, precision=1, small="&lt;1")
+    def percent(num, precision=1, small = '&lt;1')
       if num == nil
         # FIXME what should we represent null % as?
         return '--'
@@ -16,7 +16,7 @@ module EITI
       # zero is zero
       if num == 0
         return '0'
-      # if it's less than 1, return the "small" representation
+      # if it's less than 1, return the 'small' representation
       elsif num < 1.0
         return small
       end
@@ -25,7 +25,7 @@ module EITI
         return num.round(precision)
       end
 
-      # puts "percent(#{num}, #{precision}, '#{small}')"
+      # puts 'percent(#{num}, #{precision}, '#{small}')'
       num.to_i
     end
 

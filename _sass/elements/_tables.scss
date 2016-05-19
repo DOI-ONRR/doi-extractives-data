@@ -6,6 +6,11 @@ table {
   color: $dark-gray;
   font-weight: $weight-light;
   margin-bottom: $base-padding;
+
+  .numeric {
+    text-align: right;
+  }
+
 }
 
 thead {
@@ -28,8 +33,3 @@ th:first-child {
 td {
   border: 1px solid $mid-gray;
 }
-
-table .numeric {
-  text-align: right;
-}
-

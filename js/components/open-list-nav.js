@@ -49,7 +49,6 @@
       },
 
       addActive: function(el, name){
-        console.log('addActive', el, name)
         if (!el){
           el = document.querySelector('[data-nav-item="' + name + '"]');
           this.active = name;
@@ -110,7 +109,6 @@
          Array.prototype.forEach.call(this.navHeaders, function(header){
            var inViewPort = isElementInViewport(header);
            if (inViewPort && !self.navIsSelect && !updated) {
-              console.log('detectNavChange')
               var newName = header.name || header.id;
               self.update(null, newName);
               updated = true;

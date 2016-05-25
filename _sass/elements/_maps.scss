@@ -70,7 +70,18 @@ svg.map {
     pointer-events: none;
   }
 
-  &.ownership .federal.ownership {
-    opacity: 0.15;
+  // To make land ownership more green!
+  &.ownership {
+    .ownership {
+      opacity: 0.25;
+    }
+
+    .federal.ownership {
+      opacity: 0.5;
+    }
+
+    .counties.features {
+      fill: $green-land;
+    }
   }
 }

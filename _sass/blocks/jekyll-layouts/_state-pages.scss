@@ -1,0 +1,11 @@
+.layout-state-pages {
+
+  section + section {
+    margin-top: $base-padding-extra;
+  }
+
+  hr {
+    margin-bottom: $base-padding;
+    margin-top: $base-padding;
+  }
+}

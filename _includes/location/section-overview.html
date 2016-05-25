@@ -1,66 +1,80 @@
 <section id="overview" data-nav-header="overview">
-  <h2>Key Facts</h2>
-  <ul class="list-bullet key-facts">
 
-    <li class="revenue">{%
-      include location/key-revenue.html
-      location_id=state_id
-      location_name=state_name
-      year=year
-      top=top_products
-    %}</li>
+  <p>This is where an introduction to this page will go with a few nice words on what a regional profile is and what to expect here. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
 
-    <li class="production all-production">{%
-      include location/key-all-production.html
-      location_id=state_id
-      location_name=state_name
-      year=year
-      top=top_products
-    %}</li>
+  <section class="panel-gray">
 
-    <li class="production federal-production">{%
-      include location/key-federal-production.html
-      location_id=state_id
-      location_name=state_name
-      year=year
-      top=top_products
-    %}</li>
-
-    <li class="employment">{%
-      include location/key-jobs.html
-      location_id=state_id
-      location_name=state_name
-      year=year
-    %}</li>
-
-    <li class="gdp">{%
-      include location/key-gdp.html
-      location_id=state_id
-      location_name=state_name
-      year=year
-    %}</li>
-
-    <li class="exports">
-      {% capture exports_summary %}
-      {%
-        include location/key-exports.html
+    <p>{%
+        include location/key-gdp.html
         location_id=state_id
         location_name=state_name
         year=year
-      %}
-      {% endcapture %}{{ exports_summary }}
-    </li>
+      %}</p>
 
-    <li class="disbursements">
-      {% capture disbursements_summary %}
-      {%
-        include location/key-disbursements.html
+    <hr/>
+
+    <ul class="list-bullet key-facts">
+
+      <li class="revenue">{%
+        include location/key-revenue.html
         location_id=state_id
         location_name=state_name
         year=year
-      %}
-      {% endcapture %}{{ disbursements_summary }}
-    </li>
+        top=top_products
+      %}</li>
 
-  </ul>
+      <li class="production all-production">{%
+        include location/key-all-production.html
+        location_id=state_id
+        location_name=state_name
+        year=year
+        top=top_products
+      %}</li>
+
+      <li class="production federal-production">{%
+        include location/key-federal-production.html
+        location_id=state_id
+        location_name=state_name
+        year=year
+        top=top_products
+      %}</li>
+
+      <li class="employment">{%
+        include location/key-jobs.html
+        location_id=state_id
+        location_name=state_name
+        year=year
+      %}</li>
+
+      <li class="gdp">{%
+        include location/key-gdp.html
+        location_id=state_id
+        location_name=state_name
+        year=year
+      %}</li>
+
+      <li class="exports">
+        {% capture exports_summary %}
+        {%
+          include location/key-exports.html
+          location_id=state_id
+          location_name=state_name
+          year=year
+        %}
+        {% endcapture %}{{ exports_summary }}
+      </li>
+
+      <li class="disbursements">
+        {% capture disbursements_summary %}
+        {%
+          include location/key-disbursements.html
+          location_id=state_id
+          location_name=state_name
+          year=year
+        %}
+        {% endcapture %}{{ disbursements_summary }}
+      </li>
+
+    </ul>
+  </section>
 </section>

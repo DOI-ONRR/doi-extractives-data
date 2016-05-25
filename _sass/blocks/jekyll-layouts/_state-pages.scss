@@ -1,0 +1,21 @@
+.layout-state-pages {
+
+  section + section {
+    border-top: 1px solid $neutral-gray;
+    margin-top: $base-padding-extra;
+    padding-top: $base-padding-extra;
+  }
+
+  hr {
+    border-top: 1px solid $neutral-gray;
+    margin-bottom: $base-padding;
+    margin-top: $base-padding;
+  }
+
+  p + [class*='panel-'],
+  section + [class*='panel-'],
+  h3 + [class*='panel-'] {
+    margin-bottom: $base-padding;
+    margin-top: $base-padding;
+  }
+}

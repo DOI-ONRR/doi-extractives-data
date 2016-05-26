@@ -51,7 +51,7 @@
   },
   "scripts": {
     "start": "bundle exec jekyll serve --incremental",
-    "test": "mocha",
+    "test": "mocha test/*.js test/**/*.js",
     "test-html": "bundle exec htmlproof --disable-external _site",
     "webpack": "webpack",
     "watch-webpack": "webpack --watch",

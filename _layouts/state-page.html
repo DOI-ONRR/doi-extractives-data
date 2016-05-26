@@ -1,5 +1,24 @@
 ---
 layout: default
+nav_items:
+  - name: overview
+    title: Overview
+  - name: ownership
+    title: Land Ownership
+  - name: process
+    title: Process
+  - name: revenue
+    title: Revenue
+  - name: all-production
+    title: Production
+  - name: employment
+    title: Employment
+  - name: gdp
+    title: GDP
+  - name: exports
+    title: Exports
+  - name: disbursements
+    title: Disbursements
 ---
 
 {% assign state_name = page.data.name %}
@@ -9,41 +28,58 @@ layout: default
 {% assign commodity_names = site.data.commodity_names %}
 {% assign top_products = 10 %}
 
-<main id="state-{{ state_id }}" class="container-outer">
-  <h1>{{ state_name }}</h1>
+<main id="state-{{ state_id }}" class="container-outer layout-state-pages">
 
-  {% include location/section-key-facts.html %}
+  <div>
+    <a class="breadcrumb" href="{{ site.baseurl }}/states/">State Profiles</a>
+    /
+  </div>
+  <h1 id="title">{{ state_name }}</h1>
 
-  {% include location/section-ownership.html %}
+  <div class="container-left-7">
 
-  {% include location/section-process.html %}
+    {% include location/section-overview.html %}
 
-  {% include location/section-revenue.html %}
+    {% include location/section-ownership.html %}
 
-  {% include location/section-all-production.html %}
+    {% include location/section-process.html %}
 
-  {% include location/section-federal-production.html %}
+    {% include location/section-revenue.html %}
 
-  {% include location/section-state-production.html %}
+    {% include location/section-all-production.html %}
 
-  {% include location/section-jobs.html %}
+    {% include location/section-federal-production.html %}
 
-  {% include location/section-gdp.html %}
+    {% include location/section-state-production.html %}
 
-  {% include location/section-exports.html %}
+    {% include location/section-jobs.html %}
 
-  {% include location/section-disbursements.html %}
+    {% include location/section-gdp.html %}
 
-  <!-- XXX setting display: none on this prevents the mask from working -->
-  <svg width="0" height="0">
-    <defs>
-      <clipPath id="state-outline">
-        <use xlink:href="{{ states_svg }}#state-{{ state_id }}"></use>
-      </clipPath>
-    </defs>
-  </svg>
+    {% include location/section-exports.html %}
+
+    {% include location/section-disbursements.html %}
+
+    <!-- XXX setting display: none on this prevents the mask from working -->
+    <svg width="0" height="0">
+      <defs>
+        <clipPath id="state-outline">
+          <use xlink:href="{{ states_svg }}#state-{{ state_id }}"></use>
+        </clipPath>
+      </defs>
+    </svg>
+  </div>
+
+  <div class="container-right-5">
+    <div class="sticky_nav">
+      <nav class="sticky_nav-nav">
+        {% include case-studies/_nav-list.html %}
+      </nav>
+    </div>
+  </div>
 
 </main>
 
 <script src="{{ site.baseurl }}/js/components/bar-chart-table.js"></script>
 <script src="{{ site.baseurl }}/js/components/data-map.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/js/lib/narrative.min.js" charset="utf-8"></script>

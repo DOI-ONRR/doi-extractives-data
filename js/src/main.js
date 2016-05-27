@@ -1,5 +1,5 @@
-// CommonJS/RequireJS module requirements:
-// http://webpack.github.io/docs/commonjs.html
+/* jshint node: true */
+/* jshint -W098 */
 (function(exports) {
   'use strict';
 
@@ -36,9 +36,10 @@
   exports.Glossary = require('../components/glossary');
   exports.Accordion = require('../components/accordion');
 
+  // create a new glossary and accordion when the page loads
   $(function () {
-    var glossary = new exports.Glossary(),
-      accordion = new exports.Accordion();
+    var glossary = new exports.Glossary();
+    var accordion = new exports.Accordion();
   });
 
   var svg4everybody = require('svg4everybody');

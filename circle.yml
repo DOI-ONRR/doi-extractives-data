@@ -1,0 +1,15 @@
+## Customize dependencies
+dependencies:
+  pre:
+    - npm install # install from a different package manager
+    - bundle exec jekyll build
+
+  override:
+    - bundle install: # note ':' here
+        timeout: 180 # fail if command has no output for 3 minutes
+
+## Customize test commands
+test:
+  pre:
+    - npm run test-html
+    - npm run test

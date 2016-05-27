@@ -1,0 +1,36 @@
+---
+title: Maps Test
+layout: default
+permalink: /maps/test/
+---
+<section id="us-map" class="slab-alpha container-padded">
+  <div class="container-outer">
+    <h2>US Map</h2>
+    <figure>
+      <data-map color-scheme="Greens" steps="9">
+        {%
+          include state-map.html
+          states=site.data.state_jobs
+          href='#%'
+          value='2013.count'
+        %}
+      </data-map>
+      <figcaption>State employment (number of extractives jobs)</figcaption>
+    </figure>
+
+    <figure>
+      <data-map color-scheme="Greens" steps="9">
+        {%
+          include county-map.html
+          state='CA'
+          counties=site.data.county_jobs.CA
+          href='#%'
+          value='employment.2013.count'
+        %}
+      </data-map>
+      <figcaption>California county-level employment (number of extractives jobs)</figcaption>
+    </figure>
+  </div>
+</section>
+
+<script src="{{ site.baseurl }}/js/components/data-map.js"></script>

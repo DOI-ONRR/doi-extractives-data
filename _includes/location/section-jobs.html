@@ -1,0 +1,52 @@
+{% assign jobs = site.data.state_jobs[state_id] %}
+
+<section id="employment" class="economic employment" data-nav-header="employment">
+  <h2>Employment</h2>
+
+  <p>One measure of the role of extractive industries is how many people are employed in jobs related to natural resource extraction. In {{ state_name }}, in {{ year }},
+    {% if jobs[year].count %}
+      there were
+      {{ jobs[year].count | intcomma }}
+      jobs in the extractive industries, which represented
+      {{ jobs[year].percent | percent }}% of state-wide employment.
+    {% else %}
+      there were no jobs in the extractive industries.
+    {% endif %}
+  </p>
+
+  {%
+    include location/display-jobs.html
+    values=jobs
+    percent=true
+  %}
+
+  {% assign county_jobs = site.data.county_jobs[state_id] %}
+  {% if county_jobs %}
+  <h3>County-Level Employment</h3>
+  <p>County-level employment data shows how many jobs in each county (and what percentage of the county's total employment) are related to extractive industries.</p>
+
+  <section class="county-map-table">
+    <figure>
+      <data-map color-scheme="Reds" steps="9">
+        {% capture value_key %}employment.{{ year }}.count{% endcapture %}
+        {%
+          include county-map.html
+          state=state_id
+          counties=county_jobs
+          value=value_key
+        %}
+      </data-map>
+      <figcaption>County extractives employment (jobs, {{ year }})</figcaption>
+    </figure>
+
+    {%
+      include location/display-jobs-county.html
+      year=year
+      values=county_jobs
+      percent=true
+    %}
+
+    {% endif %}
+  </section>
+
+</section>

@@ -1,0 +1,35 @@
+table {
+  @include font-size(0.9);
+
+  border: 1px solid $mid-gray;
+  border-spacing: 2px;
+  color: $dark-gray;
+  font-weight: $weight-light;
+  margin-bottom: $base-padding;
+
+  .numeric {
+    text-align: right;
+  }
+
+}
+
+thead {
+  background-color: $mid-gray;
+  border-bottom: 2px solid $mid-gray;
+  font-weight: $weight-book;
+  text-align: center;
+}
+
+td,
+th {
+  padding: 5px;
+  vertical-align: top;
+}
+
+th:first-child {
+  text-align: left;
+}
+
+td {
+  border: 1px solid $mid-gray;
+}

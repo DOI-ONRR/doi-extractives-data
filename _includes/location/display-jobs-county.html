@@ -1,0 +1,24 @@
+<table is="bar-chart-table" data-percent-max="100">
+  <thead>
+    <tr>
+      <th>County</th>
+      <th class="numeric" data-series="jobs">Jobs</th>
+      {% if include.percent %}
+      <th class="numeric" data-series="percent">County %</th>
+      {% endif %}
+    </tr>
+  </thead>
+  <tbody>
+  {% for county in include.values %}
+    {% if county[1].employment[include.year].count > 0 %}
+    <tr>
+      <td>{{ county[1].name }}</td>
+      <td class="numeric" data-series="jobs" data-value="{{ county[1].employment[year].count }}">{{ county[1].employment[year].count | intcomma }}</td>
+      {% if include.percent %}
+      <td class="numeric" data-series="percent" data-value="{{ county[1].employment[year].percent }}">{{ county[1].employment[year].percent | percent }}%</td>
+      {% endif %}
+    </tr>
+    {% endif %}
+  {% endfor %}
+  </tbody>
+</table>

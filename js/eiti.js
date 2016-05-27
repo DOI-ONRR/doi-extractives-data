@@ -1,3 +1,4 @@
+/* jshint node: true */
 (function(exports) {
   'use strict';
 
@@ -310,14 +311,15 @@
    * window.addEventListener('resize', throttle(someFunction, 150, window));
    */
   eiti.util.throttle = function throttle(fn, threshhold, scope) {
-    threshhold || (threshhold = 250);
-    var last,
-        deferTimer;
+    threshhold = threshhold || 250;
+
+    var last;
+    var deferTimer;
     return function () {
       var context = scope || this;
 
-      var now = +new Date,
-          args = arguments;
+      var now = +new Date();
+      var args = arguments;
       if (last && now < last + threshhold) {
         // hold on to it
         clearTimeout(deferTimer);
@@ -330,7 +332,7 @@
         fn.apply(context, args);
       }
     };
-  }
+  };
 
   /**
    * Coerce a d3-style format string or function into a number
@@ -595,11 +597,11 @@
 
       var query = {};
       forEach(str.split(separator || '&'), function(bit) {
-        var parts = bit.split('=', 2),
-            key = qs.decode(parts[0]),
-            value = parts.length > 1
-              ? qs.decode(parts[1])
-              : true;
+        var parts = bit.split('=', 2);
+        var key = qs.decode(parts[0]);
+        var value = parts.length > 1
+            ? qs.decode(parts[1])
+            : true;
         switch (value) {
           case 'true':
             value = true;

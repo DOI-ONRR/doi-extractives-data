@@ -3,6 +3,7 @@
 
   require('./../components/bar-chart-table.js');
   require('./../components/data-map.js');
+  require('./../components/eiti-line-chart.js');
 
   require('./../components/aria-tabs.js');
   require('./../components/sticky-nav.js');

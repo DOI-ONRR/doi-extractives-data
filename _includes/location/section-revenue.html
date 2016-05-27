@@ -1,17 +1,26 @@
 {% assign revenue_commodities = site.data.state_revenues[state_id].commodities %}
 {% assign revenue_total = revenue_commodities.All[year].revenue %}
 
+{% capture year_range %}[2006, 2015]{% endcapture %}
+
 <section id="revenue" class="federal revenue" data-nav-header="revenue">
   <h2>Revenue</h2>
 
   <p>When companies want to extract natural resources on federal land, they pay fees depending on where they are in the process of using the land. For instance, a company might pay for the right to explore for resources, pay rent while exploring the land, and then pay a percentage of production value once they start producing resources on the land.</p>
 
-  <p>[TABLE OR GRAPHIC SHOWING RATES FOR RELEVANT COMMODITIES?]</p>
-
   <h3>Revenue from federal land</h3>
 
   <p>{{ site.data.land_stats[state_id].federal_percent | percent }} percent of land in {{ state_name }} is owned by the federal government.</p>
   <p>In {{ year }}, companies paid the federal government a total of ${{ revenue_total | intcomma }} to extract natural resources on federal land (or lease federal land for that purpose).</p>
+
+  <figure class="chart">
+    {% assign all_revenue_by_year = site.data.state_revenues_by_type[state_id].All.All %}
+    <eiti-line-chart
+      data='{{ all_revenue_by_year | jsonify }}'
+      x-range="{{ year_range }}"
+      selected="{{ year }}">
+    </eiti-line-chart>
+  </figure>
 
   <section class="county-map-table">
     <figure>
@@ -55,6 +64,20 @@
       {% endif %}
       {{ commodity_name | downcase }} on federal land in {{ state_name }}.
     </p>
+
+    <figure class="chart">
+      {% assign annual_revenue = commodity[1] %}
+      {% capture commodity_revenue %}{
+        {% for x in annual_revenue %}
+        "{{ x[0] }}": {{ x[1].revenue | jsonify }}{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+      }{% endcapture %}
+      <eiti-line-chart
+        data='{{ commodity_revenue }}'
+        x-range="{{ year_range }}"
+        selected="{{ year }}">
+      </eiti-line-chart>
+    </figure>
 
     {% assign revenue_values = commodity[1] %}
     {%

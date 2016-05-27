@@ -16,14 +16,17 @@ $( document ).ready(function() {
     }
   }
 
-  var query = GetURLParameter('q') || '';
+  var query = GetURLParameter('q') || '',
+    apiKEY = eiti.beckleyApiKey;
+
   $(".search-string").append(query.replace(/%20/g,' '));
-  $("#site-search-text").attr('value',query.replace(/%20/g,' '));
+  $(".site-search-text").attr('value',query.replace(/%20/g,' '));
   if(query) {
-    $("input#q").val(query);
-    $("#search-result-list").append('<div class="loading"><span class="glyphicon glyphicon-refresh"></span> Loading</div>');
+    $("input.q").val(query);
+    $(".search-result-list").append('<div class="loading"><span class="glyphicon glyphicon-refresh"></span> Loading</div>');
+    var url = "https://api.data.gov/beckley-federalist/v0/resources/eiti/?q=" + query + "&size=50&from=0&api_key=" + apiKEY;
     $.ajax({
-      url: "https://api.data.gov/beckley-federalist/v0/resources/eiti/?q=" + query + "&size=50&from=0&api_key=LXJh2PKSC6zxY0YNuBRYgIj2JxSPcDwSPCZuHBG1",
+      url: url,
       cache: false,
       dataType: "json"
     })
@@ -31,10 +34,10 @@ $( document ).ready(function() {
         $(".loading").remove();
         $("#search-results-count").append( json.hits.total + ' search results');
         if (json.hits.total == 0){
-          $("#search-no-results").show();
+          $(".search-no-results").show();
         }
         else{
-          $("#search-no-results").remove();
+          $(".search-no-results").remove();
         }
 
         $.each(json.hits.hits, function(i, hit){
@@ -62,7 +65,7 @@ $( document ).ready(function() {
           else {
             content_type = '<span class="glyphicon glyphicon-file"></span> ' + hit._source.content_type + '';
           }
-          $("#search-results-container").append('<article class="search-result-list"><h1><a href="'
+          $(".search-results-container").append('<article class="search-result-list"><h1><a href="'
             + hit._source.url
             + '" target="_blank">'
             + hit._source.title
@@ -78,9 +81,9 @@ $( document ).ready(function() {
       });
   }
   else {
-    $("#search-no-results").show();
+    $(".search-no-results").show();
     $(".loading").remove();
-    $("#search-results-count").append( 0 + ' search results');
+    $(".search-results-count").append( 0 + ' search results');
 
   }
 });

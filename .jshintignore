@@ -1,2 +1,3 @@
+node_modules/**/*.js
 js/vendor/*.js
 js/**/*.min.js

@@ -8,6 +8,7 @@ eiti-line-chart {
   path {
     fill: none;
     stroke: $green;
+    stroke-linecap: round;
     stroke-width: 2;
   }
 

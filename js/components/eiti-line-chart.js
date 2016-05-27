@@ -4,7 +4,7 @@
   var DATA = '__es_data__';
   var SELECTED = '__es_selected__';
 
-  var observedAttributes = ['data', 'selected'];
+  var observedAttributes = ['x-range', 'data', 'selected'];
 
   // global dimensions
   var width = 600;
@@ -36,6 +36,9 @@
 
   var attributeChanged = function(name, previous, value) {
     switch (name) {
+      case 'x-range':
+        this.xrange = JSON.parse(value);
+        break;
       case 'data':
         this.data = JSON.parse(value);
         break;
@@ -69,11 +72,14 @@
 
     // console.log('data:', data, 'values:', values);
 
-    var extent = d3.extent(data, function(d) { return +d.x; });
-    var xdomain = d3.range(extent[0], extent[1] + 1);
+    var xrange = this.xrange;
+    if (!xrange) {
+      xrange = d3.extent(data, function(d) { return +d.x; });
+    }
 
+    var xdomain = d3.range(xrange[0], xrange[1] + 1);
     var x = d3.scale.linear()
-      .domain(extent)
+      .domain(xrange)
       .range([left, right]);
 
     xdomain.forEach(function(x) {

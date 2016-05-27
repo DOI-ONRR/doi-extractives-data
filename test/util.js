@@ -1,3 +1,4 @@
+/* jshint node: true, mocha: true */
 var assert = require('assert');
 var util = require('../lib/util');
 

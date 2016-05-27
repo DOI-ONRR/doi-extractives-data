@@ -53,7 +53,7 @@
     "start": "bundle exec jekyll serve --incremental",
     "start-states": "bundle exec jekyll serve --incremental --config _config.yml,_maps.yml",
     "rebuild": "rm -rf _site && npm run start",
-    "test": "mocha",
+    "test": "mocha test/*.js test/**/*.js",
     "test-html": "bundle exec htmlproof --disable-external _site",
     "webpack": "webpack",
     "watch-webpack": "webpack --watch",

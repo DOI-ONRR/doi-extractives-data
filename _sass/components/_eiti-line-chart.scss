@@ -1,0 +1,29 @@
+eiti-line-chart {
+  svg {
+    display: block;
+    height: auto;
+    width: 100%;
+  }
+
+  path {
+    fill: none;
+    stroke: $green;
+    stroke-width: 2;
+  }
+
+  circle {
+    fill: $green;
+  }
+
+  .axis {
+    line,
+    path {
+      fill: none;
+      stroke: none;
+    }
+
+    text {
+      font-size: 1rem;
+    }
+  }
+}

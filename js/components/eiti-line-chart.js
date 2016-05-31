@@ -8,24 +8,34 @@
 
   // global dimensions
   var width = 600;
-  var height = 200;
-  var margin = 20;
-  var left = margin;
-  var right = width - margin;
-  var top = margin;
-  var bottom = height - margin;
+  var height = 150;
+  var dotRadius = 6;
+  var baseMargin = 24;
+  var margin = {
+    top: dotRadius + 1,
+    right: baseMargin,
+    bottom: baseMargin,
+    left: baseMargin
+  };
+
+  var left = margin.left;
+  var right = width - margin.right;
+  var top = margin.top;
+  var bottom = height - margin.bottom;
 
   var attached = function() {
     var svg = d3.select(this)
       .append('svg')
         .attr('viewBox', [0, 0, width, height].join(' '));
     svg.append('path')
+      .attr('class', 'data area');
+    svg.append('g')
+      .attr('class', 'axis x-axis');
+    svg.append('path')
       .attr('class', 'data line');
     svg.append('circle')
       .attr('class', 'data point selected')
-      .attr('r', 6);
-    svg.append('g')
-      .attr('class', 'axis x-axis');
+      .attr('r', dotRadius);
 
     observedAttributes.forEach(function(attr) {
       if (this.hasAttribute(attr)) {
@@ -88,17 +98,26 @@
       }
     });
 
-    var ymax = d3.max(data, function(d) { return d.y; });
-    // console.log('y-max:', ymax);
+    var extent = d3.extent(data, function(d) { return d.y; });
+    var ymax = extent[1];
+    var ymin = 0;
+    if (/\bscale=relative\b/.test(location.search)) {
+      ymin = extent[0];
+    }
 
     var y = d3.scale.linear()
-      .domain([0, ymax])
+      .domain([ymin, ymax])
       .range([bottom, top]);
 
     var svg = d3.select(this).select('svg');
     var line = d3.svg.line()
       .x(function(d) { return x(d.x); })
       .y(function(d) { return y(d.y); });
+
+    var area = d3.svg.area()
+      .x(line.x())
+      .y0(bottom)
+      .y1(line.y());
 
     data.sort(function(a, b) {
       return d3.ascending(+a.x, +b.x);
@@ -107,6 +126,10 @@
     svg.select('.line')
       .datum(data)
       .attr('d', line(data));
+
+    svg.select('.area')
+      .datum(data)
+      .attr('d', area(data));
 
     var x1 = xdomain[xdomain.length - 1];
     var selected = this.selected || x1;
@@ -120,6 +143,9 @@
     var axis = d3.svg.axis()
       .orient('bottom')
       .scale(x)
+      .innerTickSize(-height)
+      .outerTickSize(0)
+      .tickPadding(dotRadius + 2)
       .tickFormat(function(x) {
         return String(x).substr(2);
       });
@@ -134,10 +160,10 @@
   var updateSelected = function(circle, value, x, y) {
     circle
       .attr('cx', function(d) {
-        return d[value] ? x(d[value].x) : -100;
+        return d[value] ? x(d[value].x) : x(value);
       })
       .attr('cy', function(d) {
-        return d[value] ? y(d[value].y) : -100;
+        return d[value] ? y(d[value].y) : y(0);
       });
   };
 

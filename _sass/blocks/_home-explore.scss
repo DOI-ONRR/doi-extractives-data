@@ -1,15 +1,6 @@
 // Explore data callout on homepage
 //
 // Styleguide blocks.explore-home
-
-@mixin active-tab() {
-  background-color: $white;
-  border: 1px solid $neutral-gray;
-  border-bottom: 1px solid $white;
-  font-weight: $weight-bold;
-  text-decoration: none;
-}
-
 .explore_home-heading {
   margin-bottom: $base-padding;
 
@@ -64,6 +55,7 @@
 
   li {
     display: inline-block;
+    padding-bottom: 3px;
   }
 }
 

@@ -1,0 +1,37 @@
+.info-tabs {
+  @include heading(para-sm);
+
+  border-bottom: 5px solid $green-dark;
+  margin: 0;
+  margin-bottom: $base-padding-lite;
+  padding: 0;
+  text-align: left;
+
+
+  li {
+    display: inline-block;
+    padding-bottom: 3px;
+  }
+
+  a {
+    background-color: $mid-gray;
+    border: 0;
+    color: $base-font-color;
+    padding: $base-padding-lite;
+
+
+    &[aria-selected="true"] {
+      @include active-tab('green');
+    }
+
+    &:hover,
+    &:focus {
+      @include active-tab('green');
+    }
+  }
+
+}
+
+.info-tab-panel {
+  padding: 0;
+}

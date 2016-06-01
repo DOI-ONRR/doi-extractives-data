@@ -1,0 +1,90 @@
+table#revenue-types {
+  width: 100%;
+}
+
+#revenue-types {
+  thead th {
+    background-color: $green-mint;
+    height: 70px;
+    padding-left: 30px;
+    padding-right: 30px;
+    z-index: 100;
+    text-align: left;
+    font-size: 12px;
+    vertical-align: middle;
+    line-height: 1rem;
+  }
+
+  th:nth-child(1) {
+    padding-left: 15px;
+  }
+
+  th:nth-child(2) {
+    z-index: 50;
+  }
+
+  th:nth-child(3) {
+    z-index: 40;
+  }
+
+  th:nth-child(4) {
+    z-index: 30;
+  }
+
+  th:nth-child(5) {
+    z-index: 20;
+  }
+
+  th:last-child {
+    padding-left: 15px;
+    z-index: 0;
+  }
+
+
+  .arrow_box,
+  .arrow_box-last {
+    position: relative;
+    background: $green-mint;
+  }
+
+  .arrow_box-last {
+    border-right: 2px solid $white;
+  }
+
+  .arrow_box:first-of-type {
+    background: $green-sea;
+    font-weight: $weight-bold;
+
+    &::after {
+      border-left-color: $green-sea;
+    }
+  }
+
+  .arrow_box:after, .arrow_box:before {
+    left: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: "";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+
+  .arrow_box:after {
+    border-color: rgba(136, 183, 213, 0);
+    border-left-color: $green-mint;
+    border-width: 36px 0 36px 16px;
+    margin-top: -36px;
+  }
+
+  .arrow_box:before {
+    border-color: transparent;
+    border-left-color: white;
+    border-width: 40px 0 40px 18px;
+    margin-top: -40px;
+  }
+
+
+
+}

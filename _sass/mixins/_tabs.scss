@@ -1,0 +1,18 @@
+@mixin active-tab($color:"") {
+
+	@if $color == 'green' {
+		background-color: $green-dark;
+		color: $white;
+	  border-bottom: 1px solid $green-dark;
+	}
+
+	@else {
+		background-color: $white;
+    color: $base-font-color;
+    border: 1px solid $neutral-gray;
+	  border-bottom: 1px solid $white;
+	}
+
+  font-weight: $weight-bold;
+  text-decoration: none;
+}

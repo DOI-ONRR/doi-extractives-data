@@ -1,7 +1,7 @@
 {% assign revenue_types = site.data.state_revenues_by_type[include.location_id] %}
 {% assign revenue_type_names = 'Bonus;Rents;Royalties;Other Revenues' | split: ';' %}
 
-<table is="bar-chart-table" class="revenue"
+<table is="bar-chart-table" class="revenue table-basic"
   {% if include.id %}id="{{ include.id }}"{% endif %}>
   <thead>
     <tr>

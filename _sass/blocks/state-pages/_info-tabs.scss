@@ -1,18 +1,11 @@
 .info-tabs {
-  @include heading(para-sm);
-
   border-bottom: 5px solid $green-dark;
-  margin: 0;
   margin-bottom: $base-padding-lite;
   padding: 0;
-  text-align: left;
-
 
   li {
-    display: inline-block;
     padding-bottom: $base-padding-lite;
     padding-top: $base-padding-lite;
-
   }
 
   a {

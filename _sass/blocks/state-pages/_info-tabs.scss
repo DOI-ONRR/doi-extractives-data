@@ -10,23 +10,25 @@
 
   li {
     display: inline-block;
-    padding-bottom: 3px;
+    padding-bottom: $base-padding-lite;
+    padding-top: $base-padding-lite;
+
   }
 
   a {
     background-color: $mid-gray;
     border: 0;
+    border-bottom: 2px solid $mid-gray;
     color: $base-font-color;
     padding: $base-padding-lite;
 
-
     &[aria-selected="true"] {
-      @include active-tab('green');
+      @include active-tab('info');
     }
 
     &:hover,
     &:focus {
-      @include active-tab('green');
+      @include active-tab('info');
     }
   }
 

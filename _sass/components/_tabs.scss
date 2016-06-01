@@ -16,6 +16,7 @@
 
   a {
     padding: $base-padding-lite;
+    text-decoration: none;
 
     &[aria-selected="true"] {
       @include active-tab();

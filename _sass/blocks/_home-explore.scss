@@ -27,7 +27,7 @@
 
 .explore_home-tabs {
   @include heading(para-sm);
-  margin-bottom: 3px;
+  margin: 0;
   text-align: right;
 
   @include respond-to(tiny-down) {

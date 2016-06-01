@@ -1,9 +1,9 @@
 @mixin active-tab($color:"") {
 
-	@if $color == 'green' {
+	@if $color == 'info' {
 		background-color: $green-dark;
 		color: $white;
-	  border-bottom: 1px solid $green-dark;
+	  border-bottom: 2px solid $green-dark;
 	}
 
 	@else {

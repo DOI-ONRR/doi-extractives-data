@@ -83,7 +83,7 @@ $ab-padding-half: $ab-padding / 2;
 
   .arrow_box::before {
     border-color: transparent;
-    border-left-color: white;
+    border-left-color: $white;
     border-width: $ab-wrap 0 $ab-wrap $ab-w-indent;
     margin-top: -$ab-wrap;
   }

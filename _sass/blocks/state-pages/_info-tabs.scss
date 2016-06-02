@@ -13,7 +13,8 @@
     border: 0;
     border-bottom: 2px solid $mid-gray;
     color: $base-font-color;
-    padding: $base-padding-lite;
+    padding: $base-padding-lite $base-padding;
+
 
     &[aria-selected="true"] {
       @include active-tab('info');

@@ -69,8 +69,8 @@ $ab-padding-half: $ab-padding / 2;
     }
   }
 
-  .arrow_box:before,
-  .arrow_box:after {
+  .arrow_box::before,
+  .arrow_box::after {
     border: solid transparent;
     content: '';
     height: 0;
@@ -81,14 +81,14 @@ $ab-padding-half: $ab-padding / 2;
     width: 0;
   }
 
-  .arrow_box:before {
+  .arrow_box::before {
     border-color: transparent;
     border-left-color: $white;
     border-width: $ab-wrap 0 $ab-wrap $ab-w-indent;
     margin-top: -$ab-wrap;
   }
 
-  .arrow_box:after {
+  .arrow_box::after {
     border-color: transparent;
     border-left-color: $green-mint;
     border-width: $ab-height-half 0 $ab-height-half $ab-h-indent;

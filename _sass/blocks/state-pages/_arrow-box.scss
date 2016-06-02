@@ -23,27 +23,27 @@ $ab-padding-half: $ab-padding / 2;
       z-index: 100;
     }
 
-    th::nth-child(1) {
+    th:nth-child(1) {
       padding-left: $ab-padding-half;
     }
 
-    th::nth-child(2) {
+    th:nth-child(2) {
       z-index: 50;
     }
 
-    th::nth-child(3) {
+    th:nth-child(3) {
       z-index: 40;
     }
 
-    th::nth-child(4) {
+    th:nth-child(4) {
       z-index: 30;
     }
 
-    th::nth-child(5) {
+    th:nth-child(5) {
       z-index: 20;
     }
 
-    th::last-child {
+    th:last-child {
       padding-left: $ab-padding-half;
       z-index: 0;
     }
@@ -59,7 +59,7 @@ $ab-padding-half: $ab-padding / 2;
     border-right: $ab-gutter solid $white;
   }
 
-  .arrow_box::first-of-type {
+  .arrow_box:first-of-type {
     background: $green-sea;
     color: $white;
     font-weight: $weight-bold;
@@ -69,8 +69,8 @@ $ab-padding-half: $ab-padding / 2;
     }
   }
 
-  .arrow_box::before,
-  .arrow_box::after {
+  .arrow_box:before,
+  .arrow_box:after {
     border: solid transparent;
     content: '';
     height: 0;
@@ -81,14 +81,14 @@ $ab-padding-half: $ab-padding / 2;
     width: 0;
   }
 
-  .arrow_box::before {
+  .arrow_box:before {
     border-color: transparent;
     border-left-color: $white;
     border-width: $ab-wrap 0 $ab-wrap $ab-w-indent;
     margin-top: -$ab-wrap;
   }
 
-  .arrow_box::after {
+  .arrow_box:after {
     border-color: transparent;
     border-left-color: $green-mint;
     border-width: $ab-height-half 0 $ab-height-half $ab-h-indent;

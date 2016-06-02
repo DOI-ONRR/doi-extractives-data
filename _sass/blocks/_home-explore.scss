@@ -26,8 +26,6 @@
 }
 
 .explore_home-tabs {
-  @include heading(para-sm);
-  margin: 0;
   text-align: right;
 
   @include respond-to(tiny-down) {
@@ -41,16 +39,6 @@
     border: 1px solid transparent;
     color: $black;
     margin-right: $base-padding-lite;
-    padding: $base-padding-lite;
-
-    &[aria-selected="true"] {
-      @include active-tab();
-    }
-
-    &:hover,
-    &:focus {
-      @include active-tab();
-    }
   }
 
   li {
@@ -93,7 +81,6 @@
 }
 
 .explore_home-main {
-  border-top: 1px solid $neutral-gray;
   padding-top: $base-padding-large;
 }
 

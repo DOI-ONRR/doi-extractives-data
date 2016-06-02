@@ -11,6 +11,8 @@ url: https://useiti.doi.gov
 # app version number
 version: v1.3.2
 
+beckley_api_key: LXJh2PKSC6zxY0YNuBRYgIj2JxSPcDwSPCZuHBG1
+
 sass:
   style: nested
   sass_dir: _sass

@@ -69,7 +69,9 @@
 
       var hitsTriggers = $target.hasClass('js-glossary-toggle')
         || $target.hasClass('term')
-        || $target.hasClass('icon-bars');
+        || $target.hasClass('icon-bars')
+        || $target.hasClass('drawer-search_button')
+        || $target.hasClass('drawer-search_field');
 
       if (!hitsTriggers) {
         self.hide();

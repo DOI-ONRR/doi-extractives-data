@@ -12,25 +12,25 @@ permalink: /search-results/
 
     <p class="search-intro">This is a curated search.<br/> Results are drawn from related websites across the U.S. government so  you can find extractive industries resources in one place.</p>
 
-    <div id="search-results-container">
+    <div class="search-results-container">
 
       <div class="search-header">
         <p>Search results for <strong class='search-string'></strong></p>
-        <p id="search-results-count"></p>
+        <p class="search-results-count"></p>
       </div>
 
-      <div id="search-results-container">
+      <div class="search-results-container">
         <h1 class="loading">Loading...</h1>
       </div>
 
-      <div class="search-no-results" id="search-no-results" style="display:none;">
+      <div class="search-no-results" style="display:none;">
         <h1>Sorry, no results were found for your search.</h1>
         <h2 class="h3">Try a new search:</h2>
 
         <div class="search-container">
           <form action='{{ site.baseurl }}/search-results/'>
             <label for='q' class='sr-only'>Search</label>
-            <input type="search" placeholder="Search related resources..." name="q" id="q"/>
+            <input type="search" placeholder="Search related resources..." name="q" class="q"/>
             <button type="submit" class="search-icon icon-search"></button>
           </form>
         </div>

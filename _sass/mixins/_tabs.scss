@@ -6,6 +6,7 @@
     background-color: $green-dark;
     border-bottom: 2px solid $green-dark;
     color: $white;
+    padding-bottom: 6px;
   } @else {
     background-color: $white;
     border: 1px solid $neutral-gray;

@@ -33,3 +33,25 @@ th:first-child {
 td {
   border: 1px solid $mid-gray;
 }
+
+
+.table-basic {
+  border: 0;
+
+  thead {
+    border: 0;
+
+    tr {
+      border: 0;
+    }
+  }
+
+  tr {
+    border: 0;
+    border-bottom: 2px solid $mid-gray;
+  }
+
+  td {
+    border: 0;
+  }
+}

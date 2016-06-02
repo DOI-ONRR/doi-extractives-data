@@ -1,7 +1,12 @@
 (function(exports) {
   'use strict';
 
+  require('./../components/bar-chart-table.js');
+  require('./../components/data-map.js');
+
+  require('./../components/aria-tabs.js');
   require('./../components/sticky-nav.js');
+
   var OpenListNav = require('./../components/open-list-nav.js');
 
   // exporting instance of OpenListNav because openListNav is
@@ -10,3 +15,4 @@
   exports.openListNav = new OpenListNav();
 
 })(window);
+

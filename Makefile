@@ -140,7 +140,7 @@ data/state_disbursements.yml:
 		SELECT \
 			state, source, fund, year, \
 			ROUND(dollars, 2) AS dollars \
-		FROM all_disbursements \
+		FROM state_disbursements \
 		WHERE \
 			LENGTH(state) = 2 AND \
 			source IS NOT NULL AND \

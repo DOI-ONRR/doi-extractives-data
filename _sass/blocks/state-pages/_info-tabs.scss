@@ -1,0 +1,29 @@
+.info-tabs {
+  border-bottom: 5px solid $green-dark;
+  margin-bottom: $base-padding-lite;
+  padding: 0;
+
+  li {
+    padding-bottom: $base-padding-lite;
+    padding-top: $base-padding-lite;
+  }
+
+  a {
+    background-color: $mid-gray;
+    border: 0;
+    border-bottom: 2px solid $mid-gray;
+    color: $base-font-color;
+    padding: $base-padding-lite $base-padding;
+
+
+    &[aria-selected="true"] {
+      @include active-tab('info');
+    }
+
+    &:hover,
+    &:focus {
+      @include active-tab('info');
+    }
+  }
+
+}

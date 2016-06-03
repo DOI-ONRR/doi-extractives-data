@@ -1,0 +1,26 @@
+{% assign revenue_commodities = site.data.state_revenues[include.location_id].commodities %}
+{% assign revenue_total = revenue_commodities.All[include.year].revenue %}
+
+{% if revenue_total %}
+  {{ include.location_name }} generated
+  <strong>${{ revenue_total | intcomma }} in federal revenue</strong>
+  from
+  <a href="#revenue">{{ revenue_commodities | size }} commodit{{ revenue_commodities | size | plural: 'ies', 'y' }}</a>
+  in {{ include.year }}.
+  {% if include.top %}
+    {% assign top_revenue_products = site.data.top_state_products[include.location_id].revenue[include.year] %}
+    {% if top_revenue_products %}
+      These are the most notable in terms of revenue:
+      <ul class="top-products list-bullet">
+        {% for commodity in top_revenue_products %}
+        <li><a href="#revenue-{{ commodity.product | slugify }}">{{ commodity.product | lookup: commodity_names }}</a>:
+          ${{ commodity.value | intcomma }},
+          #{{ commodity.rank }} ({{ commodity.percent | floor }}%)</li>
+          {% if forloop.index == include.top %}{% break %}{% endif %}
+        {% endfor %}
+      </ul>
+    {% endif %}
+  {% endif %}
+{% else %}
+  {{ include.location_name }} generated no federal revenue in {{ include.year }}.
+{% endif %}

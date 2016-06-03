@@ -1,0 +1,19 @@
+{% assign gdp = site.data.state_gdp[state_id] %}
+
+<section id="gdp" class="economic gdp" data-nav-header="gdp">
+  <h2>Gross Domestic Product (GDP)</h2>
+  <p>Extractive industries accounted for
+    {% if gdp[year].dollars %}
+      {{ gdp[year].percent | percent }} percent (or
+      ${{ gdp[year].dollars | intcomma }}) of {{ state_name }}'s GDP in {{ year }}.
+    {% else %}
+      The extractives industry did not contribute to {{ state_name }}'s GDP in {{ year }}.
+    {% endif %}
+  </p>
+
+  {%
+    include location/display-gdp.html
+    values=gdp
+    percent=true
+  %}
+</section>

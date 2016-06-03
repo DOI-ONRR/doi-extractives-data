@@ -1,6 +1,17 @@
 {% assign revenue_types = site.data.state_revenues_by_type[include.location_id] %}
 {% assign revenue_type_names = 'Bonus;Rents;Royalties;Other Revenues' | split: ';' %}
 
+{% assign commodity_groups = site.data.commodities.groups %}
+
+{% assign oilgas_list = commodity_groups.oilgas.commodities %}
+{% assign minerals_list = commodity_groups.minerals.commodities %}
+
+{% assign oilgas_checked = false %}
+{% assign coal_checked = false %}
+{% assign minerals_checked = false %}
+{% assign geothermal_checked = false %}
+
+
 <table is="bar-chart-table" class="revenue table-basic"
   {% if include.id %}id="{{ include.id }}"{% endif %}>
   <thead>
@@ -15,70 +26,34 @@
   {% for commodity in revenue_types %}
     {% assign commodity_name = commodity[0] %}
     {% assign values = commodity[1] %}
+
+
+  {% if oilgas_list contains commodity_name and oilgas_checked != true %}
+    {% assign oilgas_checked = true %}
+    <tr><td colspan="5"><icon class="icon-oil"></icon><strong>Oil and Gas</strong></td></tr>
+  {% endif %}
+
+   {% if commodity_name == 'Coal' and coal_checked != true %}
+    {% assign coal_checked = true %}
+    <tr><td colspan="5"><icon class="icon-coal"></icon><strong>Coal</strong></td></tr>
+  {% endif %}
+
+
+  {% if minerals_list contains commodity_name and minerals_checked != true %}
+    {% assign minerals_checked = true %}
+    <tr><td colspan="5"><icon class="icon-minerals"></icon><strong>Hardrock Minerals</strong></td></tr>
+  {% endif %}
+
+  {% if commodity_name == 'Geothermal' and geothermal_checked != true %}
+    {% assign geothermal_checked = true %}
+    <tr><td colspan="4"><icon class="icon-wind"></icon><strong>Geothermal</strong></td></tr>
+  {% endif %}
+
   <tbody id="revenue-types-{{ commodity_name | slugify }}">
     {% if commodity_name == oilgas %}
-    <tr>
-      {%
-        assign total = values.All[include.year]
-        | default: 0
-        | plus: revenue_types.Oil.All[include.year]
-        | plus: revenue_types.Gas.All[include.year]
-      %}
-      <th scope="row" rowspan="2" data-value="{{ total }}">
-        <a href="#revenue-{{ commodity_name | slugify }}">
-          <strong>Oil &amp; Gas</strong>
-        </a>
-        ${{ total | intcomma }}
-      </th>
-      <td rowspan="2" data-value="{{
-        values.Bonus[include.year] | default: 0
-      }}">${{ values.Bonus[include.year] | default: 0 | intcomma }}</td>
-      <td rowspan="2" data-value="{{
-        values.Rents[include.year] | default: 0
-      }}">${{ values.Rents[include.year] | default: 0 | intcomma }}</td>
-      <td data-value="{{
-        revenue_types.Oil.Royalties[include.year] | default: 0
-      }}">
-        <a href="#revenue-oil"><strong>Oil</strong></a>
-        ${{
-          revenue_types.Oil.Royalties[include.year]
-          | default: 0
-          | intcomma
-        }}
-      </td>
-      <td rowspan="2" data-value="{{
-        values['Other Revenues'][include.year] | default: 0
-      }}">${{ values['Other Revenues'][include.year] | default: 0 | intcomma }}</td>
-    </tr>
-    <tr>
-      <td data-value="{{
-        revenue_types.Gas.Royalties[include.year] | default: 0
-      }}">
-        <a href="#revenue-gas"><strong>Gas</strong></a>
-        ${{ revenue_types.Gas.Royalties[include.year] | default: 0 | intcomma }}
-      </td>
-    </tr>
+        {% include location/revenue-type-row-oilgas.html %}
     {% elsif commodity_name != 'Oil' and commodity_name != 'Gas' %}
-      {% assign total = values.All[include.year] | default: 0 %}
-      {% if total != 0 %}
-    <tr>
-      <th scope="row" data-value="{{ total }}">
-        <a href="#revenue-{{ commodity_name | slugify }}">
-          <strong>{{ commodity_name | lookup: site.data.commodity_names }}</strong>
-        </a>
-        ${{ total | intcomma }}
-      </th>
-      {% for revenue_type in revenue_type_names %}
-      <td data-value="{{
-        values[revenue_type][include.year] | default: 0
-      }}">${{
-        commodity[1][revenue_type][include.year]
-        | default: 0
-        | intcomma
-      }}</td>
-      {% endfor %}
-    </tr>
-      {% endif %}
+        {% include location/revenue-type-row.html %}
     {% endif %}
   </tbody>
   {% endfor %}

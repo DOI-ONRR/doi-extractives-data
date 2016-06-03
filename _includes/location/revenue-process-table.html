@@ -3,12 +3,12 @@
 {% assign commodity_groups = site.data.commodities.groups %}
 
 {% assign oilgas_list = commodity_groups.oilgas.commodities %}
-{% assign coal_list = commodity_groups.coal.commodities %}
 {% assign minerals_list = commodity_groups.minerals.commodities %}
 
 {% assign oilgas_checked = false %}
 {% assign coal_checked = false %}
 {% assign minerals_checked = false %}
+{% assign geothermal_checked = false %}
 
 <table is="bar-chart-table" class="revenue table-basic"
   {% if include.id %}id="{{ include.id }}"{% endif %}>
@@ -58,7 +58,7 @@
         </tr>
       {% endif %}
 
-      {% if coal_list contains commodity_name and coal_checked != true %}
+      {% if commodity_name == 'Coal' and coal_checked != true %}
 
         {% assign coal_checked = true %}
         <tr><td colspan="4"><icon class="icon-coal"></icon><strong>Coal</strong></td></tr>
@@ -122,13 +122,18 @@
           </td>
         </tr>
       {% endif %}
+
+      {% if commodity_name == 'Geothermal' and geothermal_checked != true %}
+        {% assign geothermal_checked = true %}
+        <tr><td colspan="4"><icon class="icon-wind"></icon><strong>Geothermal</strong></td></tr>
+        <tr>
+          <td colspan="4">There is a bit of confusion with what is supposed to exist here. The <a href="{{site.baseurl}}/img/revenue-streams-chart.png">image that we are basing this table on</a> has a Solar and Wind category, but none of the states have solar and wind as a federal revenue commodity. For renewables we only have data Geothermal. We do have production data for solar and wind in our state_all_production data, but it is in Mwh and for a production on non-federal land. What to do?
+          </td>
+        </tr>
+      {% endif %}
     {% endfor %}
 
-    <tr><td colspan="4"><icon class="icon-wind"></icon><strong>Renewable Energy</strong></td></tr>
-    <tr>
-      <td colspan="4">There is a bit of confusion with what is supposed to exist here. The <a href="{{site.baseurl}}/img/revenue-streams-chart.png">image that we are basing this table on</a> has a Solar and Wind category, but none of the states have solar and wind as a federal revenue commodity. For renewables we only have data Geothermal. We do have production data for solar and wind in our state_all_production data, but it is in Mwh and for a production on non-federal land. What to do?
-      </td>
-    </tr>
+
 
     <tr><td colspan="4"><strong>Income Tax</strong></td></tr>
     <tr>

@@ -1,0 +1,20 @@
+{% assign total = values.All[include.year] | default: 0 %}
+{% if total != 0 %}
+  <tr>
+    <th scope="row" data-value="{{ total }}">
+      <a href="#revenue-{{ commodity_name | slugify }}">
+        <strong>{{ commodity_name | lookup: site.data.commodity_names }}</strong>
+      </a>
+      ${{ total | intcomma }}
+    </th>
+    {% for revenue_type in revenue_type_names %}
+    <td data-value="{{
+      values[revenue_type][include.year] | default: 0
+    }}">${{
+      commodity[1][revenue_type][include.year]
+      | default: 0
+      | intcomma
+    }}</td>
+    {% endfor %}
+  </tr>
+{% endif %}

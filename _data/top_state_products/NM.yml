@@ -1,0 +1,810 @@
+federal_production:
+  '2005':
+    - product: Langbeinite (tons)
+      name: Langbeinite
+      units: tons
+      value: 551675
+      rank: 1
+      percent: 100
+    - product: Muriate Of Potash-Granular (tons)
+      name: Muriate Of Potash-Granular
+      units: tons
+      value: 424981
+      rank: 1
+      percent: 100
+    - product: Muriate Of Potash-Standard (tons)
+      name: Muriate Of Potash-Standard
+      units: tons
+      value: 476837
+      rank: 1
+      percent: 100
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 1028343136.52
+      rank: 3
+      percent: 15.79
+  '2006':
+    - product: Brine Barrels (barrels)
+      name: Brine Barrels
+      units: barrels
+      value: 66862
+      rank: 1
+      percent: 100
+    - product: Langbeinite (tons)
+      name: Langbeinite
+      units: tons
+      value: 734349
+      rank: 1
+      percent: 100
+    - product: Muriate Of Potash-Granular (tons)
+      name: Muriate Of Potash-Granular
+      units: tons
+      value: 327424
+      rank: 1
+      percent: 100
+    - product: Muriate Of Potash-Standard (tons)
+      name: Muriate Of Potash-Standard
+      units: tons
+      value: 469892
+      rank: 1
+      percent: 100
+    - product: Potash (tons)
+      name: Potash
+      units: tons
+      value: 492294
+      rank: 1
+      percent: 100
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 1022053891.11
+      rank: 3
+      percent: 15.79
+  '2007':
+    - product: Langbeinite (tons)
+      name: Langbeinite
+      units: tons
+      value: 966101
+      rank: 1
+      percent: 100
+    - product: Muriate Of Potash-Granular (tons)
+      name: Muriate Of Potash-Granular
+      units: tons
+      value: 429446
+      rank: 1
+      percent: 100
+    - product: Muriate Of Potash-Standard (tons)
+      name: Muriate Of Potash-Standard
+      units: tons
+      value: 251708
+      rank: 1
+      percent: 100
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 975632728.21
+      rank: 3
+      percent: 14.95
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 25308750.26
+      rank: 3
+      percent: 2.35
+  '2008':
+    - product: Langbeinite (tons)
+      name: Langbeinite
+      units: tons
+      value: 974982
+      rank: 1
+      percent: 100
+    - product: Muriate Of Potash-Granular (tons)
+      name: Muriate Of Potash-Granular
+      units: tons
+      value: 398253
+      rank: 1
+      percent: 100
+    - product: Muriate Of Potash-Standard (tons)
+      name: Muriate Of Potash-Standard
+      units: tons
+      value: 177001
+      rank: 1
+      percent: 100
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: 314483
+      rank: 1
+      percent: 100
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 926364691.39
+      rank: 3
+      percent: 14.64
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 25756010.39
+      rank: 3
+      percent: 2.62
+  '2009':
+    - product: Langbeinite (tons)
+      name: Langbeinite
+      units: tons
+      value: 648073
+      rank: 1
+      percent: 100
+    - product: Muriate Of Potash-Granular (tons)
+      name: Muriate Of Potash-Granular
+      units: tons
+      value: 233928
+      rank: 1
+      percent: 100
+    - product: Muriate Of Potash-Standard (tons)
+      name: Muriate Of Potash-Standard
+      units: tons
+      value: 112839
+      rank: 1
+      percent: 100
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: 372956
+      rank: 1
+      percent: 100
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 894821783.92
+      rank: 3
+      percent: 13.7
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 28545971.78
+      rank: 3
+      percent: 2.22
+  '2010':
+    - product: Langbeinite (tons)
+      name: Langbeinite
+      units: tons
+      value: 830346
+      rank: 1
+      percent: 100
+    - product: Muriate Of Potash-Granular (tons)
+      name: Muriate Of Potash-Granular
+      units: tons
+      value: 364751
+      rank: 1
+      percent: 100
+    - product: Muriate Of Potash-Standard (tons)
+      name: Muriate Of Potash-Standard
+      units: tons
+      value: 155054
+      rank: 1
+      percent: 100
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: 434018
+      rank: 1
+      percent: 100
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 840725100.2
+      rank: 3
+      percent: 13.42
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 31575274.29
+      rank: 3
+      percent: 2.51
+  '2011':
+    - product: 'Geothermal - Direct Use, Millions of Gallons'
+      name: Geothermal
+      units: 'Direct Use, Millions of Gallons'
+      value: 71606330
+      rank: 1
+      percent: 100
+    - product: Langbeinite (tons)
+      name: Langbeinite
+      units: tons
+      value: 745606
+      rank: 1
+      percent: 100
+    - product: Muriate Of Potash-Granular (tons)
+      name: Muriate Of Potash-Granular
+      units: tons
+      value: 454506
+      rank: 1
+      percent: 100
+    - product: Muriate Of Potash-Standard (tons)
+      name: Muriate Of Potash-Standard
+      units: tons
+      value: 170449
+      rank: 1
+      percent: 100
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: 439367
+      rank: 1
+      percent: 100
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 35643027.27
+      rank: 2
+      percent: 3.28
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 819458627.33
+      rank: 3
+      percent: 14.21
+  '2012':
+    - product: 'Geothermal - Direct Use, Millions of Gallons'
+      name: Geothermal
+      units: 'Direct Use, Millions of Gallons'
+      value: 113448300
+      rank: 1
+      percent: 100
+    - product: Langbeinite (tons)
+      name: Langbeinite
+      units: tons
+      value: 859349
+      rank: 1
+      percent: 100
+    - product: Muriate Of Potash-Granular (tons)
+      name: Muriate Of Potash-Granular
+      units: tons
+      value: 424920
+      rank: 1
+      percent: 100
+    - product: Muriate Of Potash-Standard (tons)
+      name: Muriate Of Potash-Standard
+      units: tons
+      value: 146453
+      rank: 1
+      percent: 100
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: 409345
+      rank: 1
+      percent: 100
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 44528783.07
+      rank: 2
+      percent: 4.22
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 803628863.73
+      rank: 3
+      percent: 14.89
+  '2013':
+    - product: 'Geothermal - Direct Use, Millions of Gallons'
+      name: Geothermal
+      units: 'Direct Use, Millions of Gallons'
+      value: 69920724.5
+      rank: 1
+      percent: 100
+    - product: Langbeinite (tons)
+      name: Langbeinite
+      units: tons
+      value: 707765
+      rank: 1
+      percent: 100
+    - product: Muriate Of Potash-Granular (tons)
+      name: Muriate Of Potash-Granular
+      units: tons
+      value: 342439
+      rank: 1
+      percent: 100
+    - product: Muriate Of Potash-Standard (tons)
+      name: Muriate Of Potash-Standard
+      units: tons
+      value: 132492
+      rank: 1
+      percent: 100
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: 425125
+      rank: 1
+      percent: 100
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 52650332.97
+      rank: 2
+      percent: 4.96
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 779441300.88
+      rank: 3
+      percent: 15.69
+  '2014':
+    - product: 'Geothermal - Direct Use, Millions of Gallons'
+      name: Geothermal
+      units: 'Direct Use, Millions of Gallons'
+      value: 63624483
+      rank: 1
+      percent: 100
+    - product: Langbeinite (tons)
+      name: Langbeinite
+      units: tons
+      value: 363289
+      rank: 1
+      percent: 100
+    - product: Muriate Of Potash-Granular (tons)
+      name: Muriate Of Potash-Granular
+      units: tons
+      value: 467320
+      rank: 1
+      percent: 100
+    - product: Muriate Of Potash-Standard (tons)
+      name: Muriate Of Potash-Standard
+      units: tons
+      value: 127433
+      rank: 1
+      percent: 100
+    - product: Salt (tons)
+      name: Salt
+      units: tons
+      value: 457529
+      rank: 1
+      percent: 100
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 64993325.68
+      rank: 2
+      percent: 9.33
+    - product: Gas (mcf)
+      name: Gas
+      units: mcf
+      value: 776068531.97
+      rank: 3
+      percent: 16.02
+revenue:
+  '2006':
+    - product: All
+      name: null
+      units: null
+      value: 1102112963.06
+      rank: 2
+      percent: 8.83
+    - product: Gas
+      name: null
+      units: null
+      value: 680611624.27
+      rank: 2
+      percent: 13.34
+    - product: Oil
+      name: null
+      units: null
+      value: 174693712.76
+      rank: 2
+      percent: 4.09
+    - product: 'Oil & Gas (Non-Royalty)'
+      name: null
+      units: null
+      value: 119888752.87
+      rank: 1
+      percent: 31.91
+    - product: NGL
+      name: null
+      units: null
+      value: 109336368.8
+      rank: 1
+      percent: 36.45
+    - product: Potassium
+      name: null
+      units: null
+      value: 6455455.06
+      rank: 1
+      percent: 97.68
+    - product: CO2
+      name: null
+      units: null
+      value: 661304.77
+      rank: 2
+      percent: 2.65
+  '2007':
+    - product: All
+      name: null
+      units: null
+      value: 1110519571.24
+      rank: 2
+      percent: 9.8
+    - product: Gas
+      name: null
+      units: null
+      value: 642727417.43
+      rank: 2
+      percent: 14.93
+    - product: Oil
+      name: null
+      units: null
+      value: 199231130.08
+      rank: 2
+      percent: 4.51
+    - product: 'Oil & Gas (Non-Royalty)'
+      name: null
+      units: null
+      value: 133919564.78
+      rank: 1
+      percent: 38.1
+    - product: NGL
+      name: null
+      units: null
+      value: 112025760.26
+      rank: 1
+      percent: 27.66
+    - product: Potassium
+      name: null
+      units: null
+      value: 9376608.66
+      rank: 1
+      percent: 97.83
+    - product: CO2
+      name: null
+      units: null
+      value: 824195.02
+      rank: 2
+      percent: 3.48
+  '2008':
+    - product: All
+      name: null
+      units: null
+      value: 1328898765.78
+      rank: 2
+      percent: 5.8
+    - product: Gas
+      name: null
+      units: null
+      value: 749580717.6
+      rank: 2
+      percent: 13.88
+    - product: Oil
+      name: null
+      units: null
+      value: 316312387.76
+      rank: 2
+      percent: 5.42
+    - product: NGL
+      name: null
+      units: null
+      value: 164599129.22
+      rank: 1
+      percent: 30.04
+    - product: 'Oil & Gas (Non-Royalty)'
+      name: null
+      units: null
+      value: 69379138.84
+      rank: 3
+      percent: 15.11
+    - product: Potassium
+      name: null
+      units: null
+      value: 12135940.2
+      rank: 1
+      percent: 96.25
+    - product: CO2
+      name: null
+      units: null
+      value: 1167084.72
+      rank: 2
+      percent: 1.98
+  '2009':
+    - product: All
+      name: null
+      units: null
+      value: 586606790.68
+      rank: 2
+      percent: 7.46
+    - product: Gas
+      name: null
+      units: null
+      value: 289303611.19
+      rank: 2
+      percent: 15.34
+    - product: Oil
+      name: null
+      units: null
+      value: 181738797.3
+      rank: 2
+      percent: 6.13
+    - product: NGL
+      name: null
+      units: null
+      value: 76820999.77
+      rank: 1
+      percent: 32.78
+    - product: Potassium
+      name: null
+      units: null
+      value: 26579855.96
+      rank: 1
+      percent: 98.72
+    - product: CO2
+      name: null
+      units: null
+      value: 805270.17
+      rank: 2
+      percent: 2.03
+  '2010':
+    - product: All
+      name: null
+      units: null
+      value: 824281783.39
+      rank: 2
+      percent: 7.89
+    - product: Gas
+      name: null
+      units: null
+      value: 378888656.61
+      rank: 2
+      percent: 15.33
+    - product: Oil
+      name: null
+      units: null
+      value: 277772156.38
+      rank: 1
+      percent: 5.44
+    - product: NGL
+      name: null
+      units: null
+      value: 109577592.95
+      rank: 1
+      percent: 25.59
+    - product: Potassium
+      name: null
+      units: null
+      value: 20230868.09
+      rank: 1
+      percent: 98.48
+    - product: CO2
+      name: null
+      units: null
+      value: 1703269.41
+      rank: 2
+      percent: 3.88
+  '2011':
+    - product: All
+      name: null
+      units: null
+      value: 977296752.2
+      rank: 2
+      percent: 8.83
+    - product: Oil
+      name: null
+      units: null
+      value: 365797822.51
+      rank: 1
+      percent: 5.69
+    - product: Gas
+      name: null
+      units: null
+      value: 360976902.22
+      rank: 2
+      percent: 16.49
+    - product: NGL
+      name: null
+      units: null
+      value: 160960169.82
+      rank: 1
+      percent: 28.25
+    - product: 'Oil & Gas (Non-Royalty)'
+      name: null
+      units: null
+      value: 56992111.04
+      rank: 3
+      percent: 14.73
+    - product: Potassium
+      name: null
+      units: null
+      value: 21837932.32
+      rank: 1
+      percent: 50.46
+    - product: CO2
+      name: null
+      units: null
+      value: 1254302.49
+      rank: 2
+      percent: 2.44
+    - product: Sulfur
+      name: null
+      units: null
+      value: 65189.6
+      rank: 2
+      percent: 3.45
+  '2012':
+    - product: All
+      name: null
+      units: null
+      value: 967419227.55
+      rank: 2
+      percent: 7.66
+    - product: Oil
+      name: null
+      units: null
+      value: 469615124.92
+      rank: 1
+      percent: 7.07
+    - product: Gas
+      name: null
+      units: null
+      value: 244246120.89
+      rank: 2
+      percent: 18.8
+    - product: NGL
+      name: null
+      units: null
+      value: 121934129.34
+      rank: 2
+      percent: 22.14
+    - product: 'Oil & Gas (Non-Royalty)'
+      name: null
+      units: null
+      value: 85769258.6
+      rank: 1
+      percent: 26.09
+    - product: Potassium
+      name: null
+      units: null
+      value: 28448543.62
+      rank: 1
+      percent: 98.45
+    - product: CO2
+      name: null
+      units: null
+      value: 1486259.14
+      rank: 2
+      percent: 2.36
+  '2013':
+    - product: All
+      name: null
+      units: null
+      value: 1074590499.4
+      rank: 2
+      percent: 8.75
+    - product: Oil
+      name: null
+      units: null
+      value: 568253428.8
+      rank: 1
+      percent: 8.08
+    - product: Gas
+      name: null
+      units: null
+      value: 301109651.93
+      rank: 2
+      percent: 19.09
+    - product: NGL
+      name: null
+      units: null
+      value: 90428259.67
+      rank: 1
+      percent: 22.71
+    - product: 'Oil & Gas (Non-Royalty)'
+      name: null
+      units: null
+      value: 76474927.03
+      rank: 1
+      percent: 29.46
+    - product: Potassium
+      name: null
+      units: null
+      value: 21248568.81
+      rank: 1
+      percent: 97.63
+    - product: CO2
+      name: null
+      units: null
+      value: 1535253.91
+      rank: 2
+      percent: 2.42
+  '2014':
+    - product: All
+      name: null
+      units: null
+      value: 1304111700.72
+      rank: 2
+      percent: 26.98
+    - product: Oil
+      name: null
+      units: null
+      value: 662018698.58
+      rank: 1
+      percent: 39.54
+    - product: Gas
+      name: null
+      units: null
+      value: 350157717.03
+      rank: 2
+      percent: 29.01
+    - product: 'Oil & Gas (Non-Royalty)'
+      name: null
+      units: null
+      value: 154012670.35
+      rank: 1
+      percent: 51.77
+    - product: NGL
+      name: null
+      units: null
+      value: 95871804.19
+      rank: 2
+      percent: 32.78
+    - product: Potassium
+      name: null
+      units: null
+      value: 21187994.42
+      rank: 1
+      percent: 98.09
+    - product: CO2
+      name: null
+      units: null
+      value: 1518194.33
+      rank: 2
+      percent: 1.89
+  '2015':
+    - product: All
+      name: null
+      units: null
+      value: 859715451.47
+      rank: 2
+      percent: 25.97
+    - product: Oil
+      name: null
+      units: null
+      value: 477323945.55
+      rank: 1
+      percent: 44.79
+    - product: Gas
+      name: null
+      units: null
+      value: 230104991.93
+      rank: 2
+      percent: 29.87
+    - product: 'Oil & Gas (Non-Royalty)'
+      name: null
+      units: null
+      value: 73019949.76
+      rank: 1
+      percent: 87.13
+    - product: NGL
+      name: null
+      units: null
+      value: 43933670.17
+      rank: 1
+      percent: 41.57
+    - product: Potassium
+      name: null
+      units: null
+      value: 14493228.36
+      rank: 1
+      percent: 94.13
+    - product: CO2
+      name: null
+      units: null
+      value: 784354.12
+      rank: 2
+      percent: 1.38
+all_production:
+  '2011':
+    - product: Solar
+      name: Solar
+      units: null
+      value: 128000
+      rank: 3
+      percent: 7.04

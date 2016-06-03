@@ -1,0 +1,64 @@
+all_production:
+  '2005':
+    - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: null
+      value: 30948000
+      rank: 3
+      percent: 11.45
+  '2006':
+    - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: null
+      value: 37850000
+      rank: 3
+      percent: 13.09
+  '2007':
+    - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: null
+      value: 33587000
+      rank: 2
+      percent: 13.57
+  '2008':
+    - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: null
+      value: 33805000
+      rank: 2
+      percent: 13.27
+  '2009':
+    - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: null
+      value: 33034000
+      rank: 2
+      percent: 12.08
+  '2010':
+    - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: null
+      value: 30542000
+      rank: 3
+      percent: 11.74
+  '2011':
+    - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: null
+      value: 42315000
+      rank: 3
+      percent: 13.25
+  '2012':
+    - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: null
+      value: 39410000
+      rank: 2
+      percent: 14.27
+  '2013':
+    - product: Conventional Hydroelectric
+      name: Conventional Hydroelectric
+      units: null
+      value: 33098000
+      rank: 2
+      percent: 12.32

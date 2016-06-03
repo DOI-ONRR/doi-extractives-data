@@ -1,0 +1,13 @@
+<section id="disbursements" class="disbursements" data-nav-header="disbursements">
+  <h2>Disbursements</h2>
+  <p>{{ disbursements_summary | strip_html }}</p>
+
+  {% assign disbursements = site.data.state_disbursements[state_id] %}
+  {% if disbursements %}
+    {%
+      include location/display-disbursements.html
+      values=disbursements
+    %}
+  {% endif %}
+
+</section>

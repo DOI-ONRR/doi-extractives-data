@@ -1,0 +1,20 @@
+<table is="bar-chart-table">
+  <thead>
+    <th>Year</th>
+    <th class="numeric" data-series="total">Total</th>
+    <th class="numeric" data-series="onshore">Onshore</th>
+    <th class="numeric" data-series="offshore">Offshore</th>
+  </thead>
+  <tbody>
+  {% for _year in include.values.All %}
+    {% assign y = _year[0] %}
+    <tr>
+      <td>{{ y }}</td>
+      <td class="numeric" data-series="total" data-value="{{ include.values.All[y] }}">${{ include.values.All[y] | round | intcomma }}</td>
+      <td class="numeric" data-series="onshore" data-value="{{ include.values.Onshore[y] }}">${{ include.values.Onshore[y] | round | intcomma }}</td>
+      <td class="numeric" data-series="offshore" data-value="{{ include.values.Offshore[y] }}">${{ include.values.Offshore[y] | round | intcomma }}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+

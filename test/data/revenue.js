@@ -20,9 +20,9 @@ var load = function(filename, format, done) {
     });
 };
 
-describe('state rollups', function() {
+describe('revenues by type', function() {
 
-  describe('revenues by type', function() {
+  describe('state rollups', function() {
 
     var dataSource = path.join(
       __dirname,

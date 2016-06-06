@@ -9,6 +9,8 @@ $ab-padding-half: $ab-padding / 2;
 
 $ab-color-dark: $green-mint;
 $ab-color-primary: $green-sea;
+$ab-border-thin: 2px;
+$ab-border-thick: 5px;
 
 // Table arrow box
 
@@ -32,6 +34,8 @@ $ab-color-primary: $green-sea;
 
 .table-arrow_box {
   width: 100%;
+  border-collapse: separate;
+  border-spacing: $ab-gutter;
 
   thead {
     th {
@@ -69,34 +73,37 @@ $ab-color-primary: $green-sea;
     }
   }
 
-  tr {
-    border-top: 2px solid $ab-color-primary;
+  td,
+  tbody th {
+    border-top: $ab-border-thin solid $ab-color-primary;
+  }
+
+  .table-arrow_box-subcategory,
+  .table-arrow_box-category {
+    @include heading('para-lg');
+  }
+
+  .table-arrow_box-category {
+    font-weight: $weight-bold;
+
+    td {
+      border-top: $ab-border-thick solid $ab-color-primary;
+    }
+
+    icon {
+      color: $ab-color-dark;
+    }
   }
 }
 
 
 // FIXME
-#revenue-types tbody:first-of-type tr,
-#revenue-process tr:first-of-type {
-   border-top: 0;
+#revenue-types tbody:first-of-type tr td,
+#revenue-types tbody:first-of-type tr th,
+#revenue-process tr:first-of-type td,
+#revenue-process tr:first-of-type th {
+  border-top: 0;
 }
-
-.table-arrow_box .table-arrow_box-subcategory,
-.table-arrow_box .table-arrow_box-category {
-  @include heading('para-lg');
-}
-
-.table-arrow_box .table-arrow_box-category {
-
-  border-top: 5px solid $ab-color-primary;
-  font-weight: $weight-bold;
-
-  icon {
-    color: $ab-color-dark;
-  }
-}
-
-
 
 // Arrow box
 

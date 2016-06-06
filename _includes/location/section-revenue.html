@@ -51,45 +51,68 @@
 
   </section>
 
-  {% for commodity in revenue_commodities %}
-  <section id="revenue-{{ commodity[0] | slugify }}" class="commodity">
-    {% assign revenue = commodity[1][year].revenue %}
-    {% assign commodity_name = commodity[0] | lookup: commodity_names %}
-    <h3>{{ commodity_name }}</h3>
-    <p>In {{ year }},
-      {% if revenue %}
-        companies paid ${{ revenue | intcomma }} to produce
-      {% else %}
-        the federal government did not collect any revenue from extraction of
-      {% endif %}
-      {{ commodity_name | downcase }} on federal land in {{ state_name }}.
-    </p>
+  <section id="revenue-commodities" class="chart-list">
+    <div class="chart-list-intro">
+      <h2>Federal fees assessed for commodities</h2>
+      <p>Duis posuere porta elit in aliquam. Fusce sollicitudin commodo metus
+        in pellentesque. Aliquam eget viverra sem, eu porttitor ante. Fusce
+        lobortis egestas ipsum et gravida. Maecenas quis quam a purus
+        interdum lacinia ut rhoncus nisi. Vivamus eu luctus elit. In hac
+        habitasse platea dictumst. Aliquam id augue nisi. Mauris vitae mauris
+        enim. Proin vehicula, metus a bibendum vehicula, sapien mi venenatis
+        lorem, quis varius velit massa eu risus. Sed non neque ut mauris
+        dapibus eleifend ac eget leo.
+      </p>
+    </div>
 
-    <figure class="chart">
-      {% assign annual_revenue = commodity[1] %}
-      {% capture commodity_revenue %}{
-        {% for x in annual_revenue %}
-        "{{ x[0] }}": {{ x[1].revenue | jsonify }}{% unless forloop.last %},{% endunless %}
-        {% endfor %}
-      }{% endcapture %}
-      <eiti-line-chart
-        data='{{ commodity_revenue }}'
-        x-range="{{ year_range }}"
-        selected="{{ year }}">
-      </eiti-line-chart>
-    </figure>
+    {% for commodity in revenue_commodities %}
+      {% assign revenue = commodity[1][year].revenue %}
+      {% assign commodity_name = commodity[0] | lookup: commodity_names %}
+      {% assign commodity_slug = commodity[0] | slugify %}
+    <div id="revenue-{{ commodity_slug }}" class="chart-item">
 
-    {% assign revenue_values = commodity[1] %}
-    {%
-      include location/display-revenue.html
-      year=year
-      values=revenue_values
-      percent=true
-      rank=true
-    %}
+      <h3>{{ commodity_name }}</h3>
 
+      <figure class="chart">
+        {% assign annual_revenue = commodity[1] %}
+        {% capture commodity_revenue %}{
+          {% for x in annual_revenue %}
+          "{{ x[0] }}": {{ x[1].revenue | jsonify }}{% unless forloop.last %},{% endunless %}
+          {% endfor %}
+        }{% endcapture %}
+        <eiti-line-chart
+          data='{{ commodity_revenue }}'
+          x-range="{{ year_range }}"
+          selected="{{ year }}">
+        </eiti-line-chart>
+      </figure>
+
+      <h4>
+        <button aria-controls="revenue-detail-{{ commodity_slug }}">&plus; Details</button>
+      </h4>
+      <div id="revenue-detail-{{ commodity_slug }}" aria-hidden="true">
+        <p>In {{ year }},
+          {% if revenue %}
+            companies paid ${{ revenue | intcomma }} to produce
+          {% else %}
+            the federal government did not collect any revenue from extraction of
+          {% endif %}
+          {{ commodity_name | downcase }} on federal land in {{ state_name }}.
+        </p>
+
+        {% assign revenue_values = commodity[1] %}
+        {%
+          include location/display-revenue.html
+          year=year
+          values=revenue_values
+          percent=true
+          rank=true
+        %}
+      </div>
+
+    </div>
+    {% endfor %}
   </section>
-  {% endfor %}
 
 </section>
 

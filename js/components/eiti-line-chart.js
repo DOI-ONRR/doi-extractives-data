@@ -7,14 +7,14 @@
   var observedAttributes = ['x-range', 'data', 'selected'];
 
   // global dimensions
-  var width = 600;
-  var height = 150;
-  var dotRadius = 6;
-  var baseMargin = 24;
+  var width = 300;
+  var height = 100;
+  var dotRadius = 7;
+  var baseMargin = 16;
   var margin = {
     top: dotRadius + 1,
     right: baseMargin,
-    bottom: baseMargin,
+    bottom: baseMargin + dotRadius,
     left: baseMargin
   };
 
@@ -27,8 +27,10 @@
     var svg = d3.select(this)
       .append('svg')
         .attr('viewBox', [0, 0, width, height].join(' '));
+    /*
     svg.append('path')
       .attr('class', 'data area');
+    */
     svg.append('g')
       .attr('class', 'axis x-axis');
     svg.append('path')
@@ -100,10 +102,7 @@
 
     var extent = d3.extent(data, function(d) { return d.y; });
     var ymax = extent[1];
-    var ymin = 0;
-    if (/\bscale=relative\b/.test(location.search)) {
-      ymin = extent[0];
-    }
+    var ymin = extent[0]; // XXX 0?
 
     var y = d3.scale.linear()
       .domain([ymin, ymax])
@@ -114,11 +113,6 @@
       .x(function(d) { return x(d.x); })
       .y(function(d) { return y(d.y); });
 
-    var area = d3.svg.area()
-      .x(line.x())
-      .y0(bottom)
-      .y1(line.y());
-
     data.sort(function(a, b) {
       return d3.ascending(+a.x, +b.x);
     });
@@ -127,9 +121,16 @@
       .datum(data)
       .attr('d', line(data));
 
+    /*
+    var area = d3.svg.area()
+      .x(line.x())
+      .y0(bottom)
+      .y1(line.y());
+
     svg.select('.area')
       .datum(data)
       .attr('d', area(data));
+    */
 
     var x1 = xdomain[xdomain.length - 1];
     var selected = this.selected || x1;
@@ -145,7 +146,7 @@
       .scale(x)
       .innerTickSize(-height)
       .outerTickSize(0)
-      .tickPadding(dotRadius + 2)
+      .tickPadding(dotRadius + 4)
       .tickFormat(function(x) {
         return String(x).substr(2);
       });

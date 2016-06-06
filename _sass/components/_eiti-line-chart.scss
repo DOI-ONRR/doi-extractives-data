@@ -12,6 +12,7 @@ eiti-line-chart {
     stroke: $green;
     stroke-linecap: round;
     stroke-width: 2;
+    vector-effect: non-scaling-stroke;
   }
 
   .area {
@@ -40,7 +41,7 @@ eiti-line-chart {
     }
 
     text {
-      font-size: inherit;
+      @include font-size(1);
     }
   }
 }

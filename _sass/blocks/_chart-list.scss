@@ -1,0 +1,11 @@
+.chart-list {
+  @include outer-container();
+
+  .chart-list-intro {
+    @include span-columns(8);
+  }
+
+  .chart-item {
+    @include span-columns(4);
+  }
+}

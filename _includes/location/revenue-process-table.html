@@ -10,7 +10,7 @@
 {% assign minerals_checked = false %}
 {% assign geothermal_checked = false %}
 
-<table is="bar-chart-table" class="revenue table-basic"
+<table is="bar-chart-table" class="revenue table-arrow_box"
   {% if include.id %}id="{{ include.id }}"{% endif %}>
   <thead>
     <tr>
@@ -27,9 +27,9 @@
       {% if oilgas_list contains commodity_name and oilgas_checked != true %}
 
         {% assign oilgas_checked = true %}
-        <tr><td colspan="4"><icon class="icon-oil"></icon><strong>Oil and Gas</strong></td></tr>
+        <tr class="table-arrow_box-category"><td colspan="4"><icon class="icon-padded icon-oil"></icon>Oil and Gas</td></tr>
         <tr>
-          <td>Onshore</td>
+          <th class="table-arrow_box-subcategory">Onshore</th>
           <td>
             <strong>Bonus</strong><br/>
             Amount paid for the lease by the highest bidder
@@ -43,7 +43,7 @@
           </td>
         </tr>
         <tr>
-          <td>Offshore</td>
+          <th class="table-arrow_box-subcategory">Offshore</th>
           <td>
             <strong>Bonus</strong>
           </td>
@@ -61,9 +61,9 @@
       {% if commodity_name == 'Coal' and coal_checked != true %}
 
         {% assign coal_checked = true %}
-        <tr><td colspan="4"><icon class="icon-coal"></icon><strong>Coal</strong></td></tr>
+        <tr class="table-arrow_box-category"><td colspan="4"><icon class="icon-padded icon-coal"></icon>Coal</td></tr>
         <tr>
-          <td>Surface</td>
+          <th class="table-arrow_box-subcategory">Surface</th>
           <td>
             <strong>Bonus</strong>
           </td>
@@ -76,7 +76,7 @@
           </td>
         </tr>
         <tr>
-          <td>Subsurface</td>
+          <th class="table-arrow_box-subcategory">Subsurface</th>
           <td>
             <strong>Bonus</strong>
           </td>
@@ -93,9 +93,9 @@
       {% if minerals_list contains commodity_name and minerals_checked != true %}
 
         {% assign minerals_checked = true %}
-        <tr><td colspan="4"><icon class="icon-minerals"></icon><strong>Hardrock Minerals</strong></td></tr>
+        <tr class="table-arrow_box-category"><td colspan="4"><icon class="icon-padded icon-minerals"></icon>Hardrock Minerals</td></tr>
         <tr>
-          <td>Public Domain Lands</td>
+          <th class="table-arrow_box-subcategory">Public Domain Lands</th>
           <td>
             <strong>$20</strong> processing fee<br/>
             <strong>$37</strong> location fee<br/>
@@ -109,7 +109,7 @@
           </td>
         </tr>
         <tr>
-          <td>Acquired Lands</td>
+          <th class="table-arrow_box-subcategory">Acquired Lands</th>
           <td>
             <strong>$6,500</strong> prospecting permit fee
           </td>
@@ -125,7 +125,7 @@
 
       {% if commodity_name == 'Geothermal' and geothermal_checked != true %}
         {% assign geothermal_checked = true %}
-        <tr><td colspan="4"><icon class="icon-wind"></icon><strong>Geothermal</strong></td></tr>
+        <tr class="table-arrow_box-category"><td colspan="4"><icon class="icon-padded icon-wind"></icon>Geothermal</td></tr>
         <tr>
           <td colspan="4">There is a bit of confusion with what is supposed to exist here. The <a href="{{site.baseurl}}/img/revenue-streams-chart.png">image that we are basing this table on</a> has a Solar and Wind category, but none of the states have solar and wind as a federal revenue commodity. For renewables we only have data Geothermal. We do have production data for solar and wind in our state_all_production data, but it is in Mwh and for a production on non-federal land. What to do?
           </td>
@@ -135,7 +135,7 @@
 
 
 
-    <tr><td colspan="4"><strong>Income Tax</strong></td></tr>
+    <tr class="table-arrow_box-category"><td colspan="4">Income Tax</td></tr>
     <tr>
       <td colspan="4"><strong>C-corporations pay income taxes to the IRS</strong>. Depending on company income, federal corporate income tax rates can range from <strong>15–35%</strong>. Public policy provisions, such as tax expenditures, can decrease corporate income tax and other revenue payments in order to romote other policy goals.
       </td>

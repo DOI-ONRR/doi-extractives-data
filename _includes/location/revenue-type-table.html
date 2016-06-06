@@ -12,7 +12,7 @@
 {% assign geothermal_checked = false %}
 
 
-<table is="bar-chart-table" class="revenue table-basic"
+<table is="bar-chart-table" class="revenue table-arrow_box"
   {% if include.id %}id="{{ include.id }}"{% endif %}>
   <thead>
     <tr>
@@ -44,7 +44,7 @@
 
       {% if oilgas_list contains commodity_name and oilgas_checked != true %}
         {% assign oilgas_checked = true %}
-        <tr><td colspan="5"><icon class="icon-oil"></icon><strong>Oil and Gas</strong></td></tr>
+        <tr class="table-arrow_box-category"><td colspan="5"><icon class="icon-padded icon-oil"></icon>Oil and Gas</td></tr>
       {% endif %}
 
       {% if oilgas_list contains commodity_name %}
@@ -65,7 +65,7 @@
 
       {% if commodity_name == 'Coal' and coal_checked != true %}
         {% assign coal_checked = true %}
-        <tr><td colspan="5"><icon class="icon-coal"></icon><strong>Coal</strong></td></tr>
+        <tr class="table-arrow_box-category"><td colspan="5"><icon class="icon-padded icon-coal"></icon>Coal</td></tr>
       {% endif %}
 
 
@@ -82,7 +82,7 @@
 
       {% if minerals_list contains commodity_name and minerals_checked != true %}
         {% assign minerals_checked = true %}
-        <tr><td colspan="5"><icon class="icon-minerals"></icon><strong>Hardrock Minerals</strong></td></tr>
+        <tr class="table-arrow_box-category"><td colspan="5"><icon class="icon-padded icon-minerals"></icon>Hardrock Minerals</td></tr>
       {% endif %}
 
       {% if minerals_list contains commodity_name %}
@@ -99,7 +99,7 @@
 
       {% if commodity_name == 'Geothermal' and geothermal_checked != true %}
         {% assign geothermal_checked = true %}
-        <tr><td colspan="4"><icon class="icon-wind"></icon><strong>Geothermal</strong></td></tr>
+        <tr class="table-arrow_box-category"><td colspan="5"><icon class="icon-padded icon-wind"></icon>Geothermal</td></tr>
       {% endif %}
 
       {% if commodity_name == 'Geothermal' %}

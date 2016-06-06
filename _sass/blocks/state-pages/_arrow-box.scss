@@ -22,16 +22,6 @@ $ab-border-thick: 5px;
   border: 0;
 }
 
-.table-arrow_box td,
-.table-arrow_box tbody th {
-  padding: $base-padding $base-padding-lite;
-}
-
-.table-arrow_box tbody th,
-.table-arrow_box .table-arrow_box-category td {
-  padding-left: 0;
-}
-
 .table-arrow_box {
   width: 100%;
   border-collapse: separate;
@@ -76,6 +66,11 @@ $ab-border-thick: 5px;
   td,
   tbody th {
     border-top: $ab-border-thin solid $ab-color-primary;
+    padding: $base-padding $base-padding-lite;
+  }
+
+  tbody th {
+    padding-left: 0;
   }
 
   .table-arrow_box-subcategory,
@@ -88,6 +83,7 @@ $ab-border-thick: 5px;
 
     td {
       border-top: $ab-border-thick solid $ab-color-primary;
+      padding-left: 0;
     }
 
     icon {

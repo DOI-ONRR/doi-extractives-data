@@ -94,8 +94,8 @@ $ab-border-thick: 5px;
 
 
 // FIXME
-#revenue-types tbody:first-of-type tr td,
-#revenue-types tbody:first-of-type tr th,
+#revenue-types tbody:first-of-type td,
+#revenue-types tbody:first-of-type th,
 #revenue-process tr:first-of-type td,
 #revenue-process tr:first-of-type th {
   border-top: 0;
@@ -107,10 +107,6 @@ $ab-border-thick: 5px;
 .arrow_box-last {
   background: $ab-color-dark;
   position: relative;
-}
-
-.table-arrow_box .arrow_box-last {
-  border-right: $ab-gutter solid $white;
 }
 
 .arrow_box:first-of-type {

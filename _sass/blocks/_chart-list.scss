@@ -1,5 +1,14 @@
 .chart-list {
+  @include font-size(0.8);
   @include outer-container();
+
+  .chart-title {
+    border-bottom: 1px solid #ddd;
+    font-size: inherit;
+    font-weight: $weight-book;
+    margin-bottom: 0;
+    text-transform: uppercase;
+  }
 
   .chart-list-intro {
     @include span-columns(8);
@@ -14,6 +23,21 @@
     &:first-of-type,
     &:nth-of-type(3n + 1) {
       @include omega();
+    }
+  }
+
+  figcaption {
+    padding: 5px; // XXX
+    font-weight: $weight-bold;
+    display: flex;
+
+    & > * {
+      flex: 1;
+      width: 50%;
+    }
+
+    & > :last-child {
+      text-align: right;
     }
   }
 }

@@ -28,7 +28,10 @@
       {% if oilgas_list contains commodity_name and oilgas_checked != true %}
 
         {% assign oilgas_checked = true %}
-        <tr class="table-arrow_box-category"><td colspan="4"><icon class="icon-padded icon-oil"></icon>Oil and Gas</td></tr>
+        <tr class="table-arrow_box-category"><td colspan="4">
+          <icon class="icon-padded icon-oil"></icon>
+          Oil and Gas
+        </td></tr>
         <tr>
           <th class="table-arrow_box-subcategory">Onshore</th>
           <td>
@@ -64,7 +67,10 @@
       {% if commodity_name == 'Coal' and coal_checked != true %}
 
         {% assign coal_checked = true %}
-        <tr class="table-arrow_box-category"><td colspan="4"><icon class="icon-padded icon-coal"></icon>Coal</td></tr>
+        <tr class="table-arrow_box-category"><td colspan="4">
+          <icon class="icon-padded icon-coal"></icon>
+          Coal</td>
+        </tr>
         <tr>
           <th class="table-arrow_box-subcategory">Surface</th>
           <td>
@@ -97,7 +103,10 @@
 
       {% if commodity_name == 'Geothermal' and geothermal_checked != true %}
         {% assign geothermal_checked = true %}
-        <tr class="table-arrow_box-category"><td colspan="5"><icon class="icon-padded icon-wind"></icon>Geothermal</td></tr>
+        <tr class="table-arrow_box-category"><td colspan="5">
+          <icon class="icon-padded icon-geo"></icon>
+          Geothermal
+        </td></tr>
         <tr>
           <th class="table-arrow_box-subcategory">Before August 8, 2005</th>
           <td>
@@ -126,7 +135,10 @@
       {% if minerals_list contains commodity_name and minerals_checked != true %}
 
         {% assign minerals_checked = true %}
-        <tr class="table-arrow_box-category"><td colspan="4"><icon class="icon-padded icon-minerals"></icon>Hardrock Minerals</td></tr>
+        <tr class="table-arrow_box-category"><td colspan="4">
+          <icon class="icon-padded icon-minerals"></icon>
+          Hardrock Minerals
+        </td></tr>
         <tr>
           <th class="table-arrow_box-subcategory">Public Domain Lands</th>
           <td>

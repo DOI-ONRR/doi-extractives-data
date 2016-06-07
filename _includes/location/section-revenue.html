@@ -6,21 +6,38 @@
 <section id="revenue" class="federal revenue" data-nav-header="revenue">
   <h2>Revenue</h2>
 
-  <p>When companies want to extract natural resources on federal land, they pay fees depending on where they are in the process of using the land. For instance, a company might pay for the right to explore for resources, pay rent while exploring the land, and then pay a percentage of production value once they start producing resources on the land.</p>
+  <p>When companies want to extract natural resources on federal land, they pay
+    fees depending on where they are in the process of using the land. For
+    instance, a company might pay for the right to explore for resources, pay
+    rent while exploring the land, and then pay a percentage of production
+    value once they start producing resources on the land.</p>
 
-  <h3>Revenue from federal land</h3>
+  <div class="chart-list">
 
-  <p>{{ site.data.land_stats[state_id].federal_percent | percent }} percent of land in {{ state_name }} is owned by the federal government.</p>
-  <p>In {{ year }}, companies paid the federal government a total of ${{ revenue_total | intcomma }} to extract natural resources on federal land (or lease federal land for that purpose).</p>
+    <div class="chart-list-intro">
+      <h3>Revenue from federal land</h3>
 
-  <figure class="chart">
-    {% assign all_revenue_by_year = site.data.state_revenues_by_type[state_id].All.All %}
-    <eiti-line-chart
-      data='{{ all_revenue_by_year | jsonify }}'
-      x-range="{{ year_range }}"
-      selected="{{ year }}">
-    </eiti-line-chart>
-  </figure>
+      <p>{{ site.data.land_stats[state_id].federal_percent | percent }} percent of land in {{ state_name }} is owned by the federal government.</p>
+      <p>In {{ year }}, companies paid the federal government a total of ${{ revenue_total | intcomma }} to extract natural resources on federal land (or lease federal land for that purpose).</p>
+    </div>
+
+    <div class="chart-item">
+      <h3 class="chart-title">All commodities</h3>
+      <figure class="chart">
+        {% assign all_revenue_by_year = site.data.state_revenues_by_type[state_id].All.All %}
+        <eiti-line-chart
+          data='{{ all_revenue_by_year | jsonify }}'
+          x-range="{{ year_range }}"
+          selected="{{ year }}">
+        </eiti-line-chart>
+        <figcaption>
+          <span class="eiti-line-chart-x-value">{{ year }}</span>
+          <span class="eiti-line-chart-y-value">${{ all_revenue_by_year[year] | default: 0 | intcomma }}</span>
+        </figcaption>
+      </figure>
+    </div>
+
+  </div>
 
   <section class="county-map-table">
     <figure>

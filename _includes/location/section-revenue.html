@@ -71,7 +71,7 @@
       {% assign commodity_slug = commodity[0] | slugify %}
     <section id="revenue-{{ commodity_slug }}" class="chart-item">
 
-      <h3>{{ commodity_name }}</h3>
+      <h3 class="chart-title">{{ commodity_name }}</h3>
 
       <figure class="chart">
         {% assign annual_revenue = commodity[1] %}
@@ -85,6 +85,10 @@
           x-range="{{ year_range }}"
           selected="{{ year }}">
         </eiti-line-chart>
+        <figcaption>
+          <span class="eiti-line-chart-x-value">{{ year }}</span>
+          <span class="eiti-line-chart-y-value">${{ annual_revenue[year].revenue | default: 0 | intcomma }}</span>
+        </figcaption>
       </figure>
 
       <h4>

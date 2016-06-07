@@ -21,6 +21,12 @@
     </article>
 
     <article class="eiti-tab-panel" id="story" role="tabpanel" aria-hidden="true">
-      <img src="{{site.baseurl}}/img/revenue-streams-chart.png" alt="Select federal revenue streams and statutory and regulatory rates" class="article_img-100">
+      {%
+        include location/revenue-process-table.html
+        id='revenue-process'
+        location_id=state_id
+        location_name=state_name
+        year=year
+      %}
     </article>
 </div>

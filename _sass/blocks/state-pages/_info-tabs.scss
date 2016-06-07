@@ -1,5 +1,8 @@
 .info-tabs {
+  @include heading('para-md');
+
   border-bottom: 5px solid $green-dark;
+  font-weight: $weight-bold;
   margin-bottom: $base-padding-lite;
   padding: 0;
 
@@ -14,16 +17,22 @@
     border-bottom: 2px solid $mid-gray;
     color: $base-font-color;
     padding: $base-padding-lite $base-padding;
+    padding-bottom: 7px;
 
 
     &[aria-selected="true"] {
       @include active-tab('info');
     }
-
-    &:hover,
-    &:focus {
-      @include active-tab('info');
-    }
   }
 
+  a:not([aria-selected="true"]):focus,
+  a:not([aria-selected="true"]):hover {
+    background-color: $mid-gray;
+    border: 0;
+    color: $base-font-color;
+    padding-bottom: 7px;
+    text-decoration: underline;
+  }
 }
+
+

@@ -1,34 +1,58 @@
 {% assign all_products = site.data.state_all_production[state_id].products %}
 
 <section id="all-production" class="all-lands production" data-nav-header="all-production">
+
   <h2>Natural resource production in {{ state_name }}</h2>
 
   <p>The federal government collects data about what natural resources are produced each state. (For coal, there is also data about mining in each county.)</p>
   <p>In some cases, the specific amount of a resource produced in a state or county is withheld to protect trade secrets.</p>
 
+  <h3>Production in all of {{ state_name }}</h3>
+
+  <div class="chart-list">
+
   {% for product in all_products %}
-  <section id="all-production-{{ product[0] | slugify }}">
-    {% assign product_name = product[0] %}
-    {% assign volume = product[1].volume[year].volume %}
-    {% assign units = product[1].units | downcase | default: 'units' %}
-
-    <h3>{{ product[0] }}</h3>
-
-    <p>{{ state_name }} produced
-      {% if volume %}{{ volume | intcomma }} {{ units }} of
-      {% else %}no{% endif %}
-      {{ product[0] | downcase }} in {{ year }}. Historically:</p>
-
+    {% assign product_slug = product[0] | slugify %}
+    {% assign product_name = product[1].name | default: product[0] %}
     {% assign production_values = product[1].volume %}
-    {%
-      include location/display-production.html
-      units=units
-      year=year
-      values=production_values
-      percent=true
-      rank=true
-    %}
+    {% assign volume = production_values[year].volume %}
+    {% assign units = product[1].units | downcase | default: 'units' %}
+    <section id="all-production-{{ product_slug }}" class="chart-item">
 
-  </section>
+      <h3 class="chart-title">{{ product_name }}</h3>
+
+      <figure class="chart">
+        <eiti-line-chart
+          data='{% include/location/line-chart-data.json values=production_values key="volume" %}'
+          x-range="{{ year_range }}"
+          selected="{{ year }}">
+        </eiti-line-chart>
+        <figcaption>
+          <span class="eiti-line-chart-x-value">{{ year }}</span>
+          <span class="eiti-line-chart-y-value">{{ volume | default: 0 | intcomma }}</span>
+        </figcaption>
+      </figure>
+
+      <h4>
+        <button aria-controls="all-production-detail-{{ product_slug }}">&plus; Details</button>
+      </h4>
+      <div id="all-production-detail-{{ product_slug }}" aria-hidden="true">
+        <p>{{ state_name }} produced
+          {% if volume %}{{ volume | intcomma }} {{ units }} of
+          {% else %}no{% endif %}
+          {{ product[0] | downcase }} in {{ year }}. Historically:</p>
+
+        {%
+          include location/display-production.html
+          units=units
+          year=year
+          values=production_values
+          percent=true
+          rank=true
+        %}
+      </div>
+    </section>
   {% endfor %}
+
+  </div>
 </section>

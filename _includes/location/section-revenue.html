@@ -75,13 +75,8 @@
 
       <figure class="chart">
         {% assign annual_revenue = commodity[1] %}
-        {% capture commodity_revenue %}{
-          {% for x in annual_revenue %}
-          "{{ x[0] }}": {{ x[1].revenue | jsonify }}{% unless forloop.last %},{% endunless %}
-          {% endfor %}
-        }{% endcapture %}
         <eiti-line-chart
-          data='{{ commodity_revenue }}'
+          data='{% include location/line-chart-data.json values=annual_revenue key="revenue" %}'
           x-range="{{ year_range }}"
           selected="{{ year }}">
         </eiti-line-chart>

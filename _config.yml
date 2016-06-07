@@ -18,7 +18,6 @@ sass:
 exclude:
   # top-level log and markdown files
   - /*.log
-  - /*.md
   # ruby dependency files
   - Gemfile*
   # KSS (style guide) config and template
@@ -55,16 +54,16 @@ exclude:
 collections:
   case-studies:
     output: true
-    permalink: /case-studies/:case-study/
+    permalink: /case-studies/:path/
   explore:
     output: true
-    permalink: /explore/:explore/
+    permalink: /explore/:path/
   how-it-works:
     output: true
-    permalink: /how-it-works/:subpage/
+    permalink: /how-it-works/:path/
   downloads:
     output: true
-    permalink: /downloads/:subpage/
+    permalink: /downloads/:path/
   federal-revenue-by-company:
     output: true
     permalink: /explore/federal-revenue-by-company/:path/

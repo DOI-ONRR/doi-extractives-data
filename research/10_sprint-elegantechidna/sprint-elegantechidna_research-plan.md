@@ -8,6 +8,7 @@ Evaluate prototype state pages | Do people find state pages interesting?
  | Do people understand key concepts (like federal revenue) more quickly in this context?
  | Do people understand what data they're seeing on the state pages?
  | Can people find data that's relevant to their area (region or county)?
+ | Do people understand the direction money is moving? Who is making the money-- 'revenue' to company or goverment.
 
 
 ## Background

@@ -9,9 +9,10 @@ eiti-line-chart {
 
   .line {
     fill: none;
-    stroke: $green;
+    opacity: 0.666;
+    stroke: $chart-green;
     stroke-linecap: round;
-    stroke-width: 2;
+    stroke-width: 3;
     vector-effect: non-scaling-stroke;
   }
 
@@ -21,7 +22,7 @@ eiti-line-chart {
   }
 
   circle {
-    fill: $green;
+    fill: $chart-green;
   }
 
   .axis {
@@ -42,6 +43,7 @@ eiti-line-chart {
 
     text {
       @include font-size(1);
+      font-weight: $weight-book;
     }
   }
 }

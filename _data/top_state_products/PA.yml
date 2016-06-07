@@ -1,0 +1,56 @@
+all_production:
+  '2005':
+    - product: Other biomass
+      name: Other biomass
+      units: null
+      value: 1358000
+      rank: 3
+      percent: 8.81
+  '2006':
+    - product: Other biomass
+      name: Other biomass
+      units: null
+      value: 1429000
+      rank: 3
+      percent: 8.88
+  '2007':
+    - product: Other biomass
+      name: Other biomass
+      units: null
+      value: 1457000
+      rank: 3
+      percent: 8.82
+  '2010':
+    - product: Other biomass
+      name: Other biomass
+      units: null
+      value: 1708000
+      rank: 3
+      percent: 9.03
+  '2011':
+    - product: Other biomass
+      name: Other biomass
+      units: null
+      value: 1653000
+      rank: 3
+      percent: 8.6
+  '2012':
+    - product: Other biomass
+      name: Other biomass
+      units: null
+      value: 1765000
+      rank: 3
+      percent: 8.9
+  '2013':
+    - product: Natural Gas (mcf)
+      name: Natural Gas
+      units: mcf
+      value: 3259042000
+      rank: 2
+      percent: 11.04
+    - product: Other biomass
+      name: Other biomass
+      units: null
+      value: 1847000
+      rank: 3
+      percent: 8.87

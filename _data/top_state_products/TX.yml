@@ -1,0 +1,276 @@
+all_production:
+  '2005':
+    - product: Natural Gas (mcf)
+      name: Natural Gas
+      units: mcf
+      value: 6006837000
+      rank: 1
+      percent: 25.61
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 392601
+      rank: 1
+      percent: 17.84
+    - product: Wind
+      name: Wind
+      units: null
+      value: 4237000
+      rank: 2
+      percent: 23.79
+    - product: All Other Renewables
+      name: All Other Renewables
+      units: null
+      value: 5336000
+      rank: 2
+      percent: 6.11
+    - product: Coal (short tons)
+      name: Coal
+      units: short tons
+      value: 45938679
+      rank: 2
+      percent: 5.82
+  '2006':
+    - product: Natural Gas (mcf)
+      name: Natural Gas
+      units: mcf
+      value: 6326433000
+      rank: 1
+      percent: 26.88
+    - product: Wind
+      name: Wind
+      units: null
+      value: 6671000
+      rank: 1
+      percent: 25.09
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 392481
+      rank: 1
+      percent: 18.51
+    - product: All Other Renewables
+      name: All Other Renewables
+      units: null
+      value: 7818000
+      rank: 2
+      percent: 8.1
+    - product: Coal (short tons)
+      name: Coal
+      units: short tons
+      value: 45547617
+      rank: 2
+      percent: 5.54
+  '2007':
+    - product: Natural Gas (mcf)
+      name: Natural Gas
+      units: mcf
+      value: 6960858000
+      rank: 1
+      percent: 28.22
+    - product: Wind
+      name: Wind
+      units: null
+      value: 9006000
+      rank: 1
+      percent: 26.14
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 391270
+      rank: 1
+      percent: 18.53
+    - product: All Other Renewables
+      name: All Other Renewables
+      units: null
+      value: 10288000
+      rank: 2
+      percent: 9.78
+    - product: Coal (short tons)
+      name: Coal
+      units: short tons
+      value: 41948406
+      rank: 3
+      percent: 5.17
+  '2008':
+    - product: Natural Gas (mcf)
+      name: Natural Gas
+      units: mcf
+      value: 7800655000
+      rank: 1
+      percent: 30.43
+    - product: Wind
+      name: Wind
+      units: null
+      value: 16225000
+      rank: 1
+      percent: 29.31
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 406007
+      rank: 1
+      percent: 19.56
+    - product: All Other Renewables
+      name: All Other Renewables
+      units: null
+      value: 17639000
+      rank: 2
+      percent: 13.99
+    - product: Coal (short tons)
+      name: Coal
+      units: short tons
+      value: 39016927
+      rank: 3
+      percent: 4.72
+  '2009':
+    - product: Natural Gas (mcf)
+      name: Natural Gas
+      units: mcf
+      value: 7653647000
+      rank: 1
+      percent: 29.37
+    - product: Wind
+      name: Wind
+      units: null
+      value: 20026000
+      rank: 1
+      percent: 27.1
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 399344
+      rank: 1
+      percent: 18.26
+    - product: All Other Renewables
+      name: All Other Renewables
+      units: null
+      value: 21104000
+      rank: 2
+      percent: 14.63
+  '2010':
+    - product: Natural Gas (mcf)
+      name: Natural Gas
+      units: mcf
+      value: 7593697000
+      rank: 1
+      percent: 28.32
+    - product: Wind
+      name: Wind
+      units: null
+      value: 26251000
+      rank: 1
+      percent: 27.73
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 426666
+      rank: 1
+      percent: 19.27
+    - product: All Other Renewables
+      name: All Other Renewables
+      units: null
+      value: 27705000
+      rank: 1
+      percent: 16.57
+    - product: Coal (short tons)
+      name: Coal
+      units: short tons
+      value: 40982001
+      rank: 3
+      percent: 5.23
+  '2011':
+    - product: Natural Gas (mcf)
+      name: Natural Gas
+      units: mcf
+      value: 7934689000
+      rank: 1
+      percent: 27.86
+    - product: Wind
+      name: Wind
+      units: null
+      value: 30548000
+      rank: 1
+      percent: 25.42
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 528844
+      rank: 1
+      percent: 23.41
+    - product: All Other Renewables
+      name: All Other Renewables
+      units: null
+      value: 32183000
+      rank: 1
+      percent: 16.59
+    - product: Coal (short tons)
+      name: Coal
+      units: short tons
+      value: 45903597
+      rank: 2
+      percent: 5.8
+  '2012':
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 722130
+      rank: 1
+      percent: 28.23
+    - product: Natural Gas (mcf)
+      name: Natural Gas
+      units: mcf
+      value: 8143510000
+      rank: 1
+      percent: 27.57
+    - product: Wind
+      name: Wind
+      units: null
+      value: 32214000
+      rank: 1
+      percent: 22.88
+    - product: All Other Renewables
+      name: All Other Renewables
+      units: null
+      value: 34017000
+      rank: 1
+      percent: 15.58
+  '2013':
+    - product: Oil (bbl)
+      name: Oil
+      units: bbl
+      value: 923561
+      rank: 1
+      percent: 31.81
+    - product: Natural Gas (mcf)
+      name: Natural Gas
+      units: mcf
+      value: 8299472000
+      rank: 1
+      percent: 28.11
+    - product: Wind
+      name: Wind
+      units: null
+      value: 35874000
+      rank: 1
+      percent: 21.37
+    - product: All Other Renewables
+      name: All Other Renewables
+      units: null
+      value: 37760000
+      rank: 1
+      percent: 14.89
+    - product: Coal (short tons)
+      name: Coal
+      units: short tons
+      value: 42850619
+      rank: 3
+      percent: 5.82
+revenue:
+  '2010':
+    - product: 'Oil & Gas (Non-Royalty)'
+      name: null
+      units: null
+      value: 43706522.92
+      rank: 2
+      percent: 16.48

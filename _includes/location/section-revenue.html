@@ -69,7 +69,7 @@
       {% assign revenue = commodity[1][year].revenue %}
       {% assign commodity_name = commodity[0] | lookup: commodity_names %}
       {% assign commodity_slug = commodity[0] | slugify %}
-    <div id="revenue-{{ commodity_slug }}" class="chart-item">
+    <section id="revenue-{{ commodity_slug }}" class="chart-item">
 
       <h3>{{ commodity_name }}</h3>
 
@@ -110,7 +110,7 @@
         %}
       </div>
 
-    </div>
+    </section>
     {% endfor %}
   </section>
 

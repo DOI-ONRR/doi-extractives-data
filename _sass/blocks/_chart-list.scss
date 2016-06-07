@@ -7,5 +7,13 @@
 
   .chart-item {
     @include span-columns(4);
+
+    border-top: none;
+    margin-top: 0;
+
+    &:first-of-type,
+    &:nth-of-type(3n + 1) {
+      @include omega();
+    }
   }
 }

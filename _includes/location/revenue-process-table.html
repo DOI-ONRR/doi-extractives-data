@@ -15,9 +15,10 @@
   <thead>
     <tr>
       <th class="arrow_box">Phase:</th>
-      <th class="arrow_box">Securing a lease or claim</th>
+      <th class="arrow_box">Securing a lease</th>
       <th class="arrow_box">Before production</th>
       <th class="arrow_box-last">During production</th>
+      <th></th>
     </tr>
   </thead>
   <tbody>
@@ -41,6 +42,7 @@
           <td>
             <strong>12.5%</strong> of production value in royalties
           </td>
+          <td></td>
         </tr>
         <tr>
           <th class="table-arrow_box-subcategory">Offshore</th>
@@ -55,6 +57,7 @@
             <strong>12.5%</strong>, <strong>16.67%</strong>, or
             <strong>18.75%</strong> of production value in royalties
           </td>
+          <td></td>
         </tr>
       {% endif %}
 
@@ -74,6 +77,7 @@
             <strong>12.5%</strong> of production value in royalties<br/>
             <strong>$0.28</strong> per ton Abandoned Mine Land Fee
           </td>
+          <td></td>
         </tr>
         <tr>
           <th class="table-arrow_box-subcategory">Subsurface</th>
@@ -87,6 +91,35 @@
             <strong>8%</strong> of production value in royalties<br/>
             <strong>$0.12</strong> per ton Abandoned Mine Land Fee
           </td>
+          <td></td>
+        </tr>
+      {% endif %}
+
+      {% if commodity_name == 'Geothermal' and geothermal_checked != true %}
+        {% assign geothermal_checked = true %}
+        <tr class="table-arrow_box-category"><td colspan="5"><icon class="icon-padded icon-wind"></icon>Geothermal</td></tr>
+        <tr>
+          <th class="table-arrow_box-subcategory">Before August 8, 2005</th>
+          <td>
+          </td>
+          <td>
+          </td>
+          <td>
+            <strong>Royalty rates</strong> are established on a case-by-case basis
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <th class="table-arrow_box-subcategory">After August 8, 2005</th>
+          <td>
+          </td>
+          <td>
+          </td>
+          <td>
+            <strong>Royalty rates</strong> are <strong>1.75%</strong> for the first
+            10 years of production, and <strong>3.5%</strong> thereafter
+          </td>
+          <td></td>
         </tr>
       {% endif %}
 
@@ -107,6 +140,7 @@
           <td>
             <strong>No royalties</strong> are required to be paid
           </td>
+          <td></td>
         </tr>
         <tr>
           <th class="table-arrow_box-subcategory">Acquired Lands</th>
@@ -120,27 +154,16 @@
           <td>
             <strong>Royalty rates</strong> are exempt from minimums and determined on an individual case basis by the authorized leasing officers
           </td>
-        </tr>
-      {% endif %}
-
-      {% if commodity_name == 'Geothermal' and geothermal_checked != true %}
-        {% assign geothermal_checked = true %}
-        <tr class="table-arrow_box-category"><td colspan="4"><icon class="icon-padded icon-wind"></icon>Geothermal</td></tr>
-        <tr>
-          <td colspan="4">There is a bit of confusion with what is supposed to exist here. The <a href="{{site.baseurl}}/img/revenue-streams-chart.png">image that we are basing this table on</a> has a Solar and Wind category, but none of the states have solar and wind as a federal revenue commodity. For renewables we only have data Geothermal. We do have production data for solar and wind in our state_all_production data, but it is in Mwh and for a production on non-federal land. What to do?
-          </td>
+          <td></td>
         </tr>
       {% endif %}
     {% endfor %}
 
-
-
-    <tr class="table-arrow_box-category"><td colspan="4">Income Tax</td></tr>
+    <tr class="table-arrow_box-category"><td colspan="5">Income Tax</td></tr>
     <tr>
       <td colspan="4"><strong>C-corporations pay income taxes to the IRS</strong>. Depending on company income, federal corporate income tax rates can range from <strong>15–35%</strong>. Public policy provisions, such as tax expenditures, can decrease corporate income tax and other revenue payments in order to romote other policy goals.
       </td>
     </tr>
-
   </tbody>
 </table>
 

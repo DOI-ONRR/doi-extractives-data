@@ -29,19 +29,6 @@
       {% assign values = commodity[1] %}
 
 
-      {% if commodity_name == 'All' %}
-        <tbody id="revenue-types-{{ commodity_name | slugify }}">
-          {% include location/revenue-type-row.html %}
-        </tbody>
-      {% endif %}
-    {% endfor %}
-
-
-    {% for commodity in revenue_types %}
-      {% assign commodity_name = commodity[0] %}
-      {% assign values = commodity[1] %}
-
-
       {% if oilgas_list contains commodity_name and oilgas_checked != true %}
         {% assign oilgas_checked = true %}
         <tr class="table-arrow_box-category"><td colspan="5"><icon class="icon-padded icon-oil"></icon>Oil and Gas</td></tr>
@@ -80,6 +67,22 @@
       {% assign commodity_name = commodity[0] %}
       {% assign values = commodity[1] %}
 
+      {% if commodity_name == 'Geothermal' and geothermal_checked != true %}
+        {% assign geothermal_checked = true %}
+        <tr class="table-arrow_box-category"><td colspan="5"><icon class="icon-padded icon-wind"></icon>Geothermal</td></tr>
+      {% endif %}
+
+      {% if commodity_name == 'Geothermal' %}
+        <tbody id="revenue-types-{{ commodity_name | slugify }}">
+          {% include location/revenue-type-row.html %}
+        </tbody>
+      {% endif %}
+    {% endfor %}
+
+    {% for commodity in revenue_types %}
+      {% assign commodity_name = commodity[0] %}
+      {% assign values = commodity[1] %}
+
       {% if minerals_list contains commodity_name and minerals_checked != true %}
         {% assign minerals_checked = true %}
         <tr class="table-arrow_box-category"><td colspan="5"><icon class="icon-padded icon-minerals"></icon>Hardrock Minerals</td></tr>
@@ -97,12 +100,8 @@
       {% assign commodity_name = commodity[0] %}
       {% assign values = commodity[1] %}
 
-      {% if commodity_name == 'Geothermal' and geothermal_checked != true %}
-        {% assign geothermal_checked = true %}
-        <tr class="table-arrow_box-category"><td colspan="5"><icon class="icon-padded icon-wind"></icon>Geothermal</td></tr>
-      {% endif %}
 
-      {% if commodity_name == 'Geothermal' %}
+      {% if commodity_name == 'All' %}
         <tbody id="revenue-types-{{ commodity_name | slugify }}">
           {% include location/revenue-type-row.html %}
         </tbody>

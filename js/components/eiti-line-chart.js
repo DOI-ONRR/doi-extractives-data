@@ -9,7 +9,7 @@
   // global dimensions
   var width = 300;
   var height = 100;
-  var dotRadius = 7;
+  var dotRadius = 8;
   var baseMargin = 16;
   var margin = {
     top: dotRadius + 1,
@@ -205,11 +205,7 @@
     )
   });
 
-  Object.defineProperty(EITILineChart, 'observedAttributes', {
-    get: function() {
-      return observedAttributes;
-    }
-  });
+  EITILineChart.observedAttributes = observedAttributes;
 
   exports.EITILineChart = EITILineChart;
 

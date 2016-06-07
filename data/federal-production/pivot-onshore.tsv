@@ -1,4 +1,4 @@
-Shore	Region	Product	Year	Sum of Production Volume
+Shore	Region	Product	Year	Production Volume
 Offshore	Offshore Alaska	Gas (mcf)	2005	25218516.42
 Offshore	Offshore Alaska	Gas (mcf)	2006	25229357.44
 Offshore	Offshore Alaska	Gas (mcf)	2007	26817788.22
@@ -1279,4 +1279,3 @@ Onshore	WY	Trona Ore (tons)	2011	0
 Onshore	WY	Trona Ore (tons)	2012	0
 Onshore	WY	Trona Ore (tons)	2013	0
 Onshore	WY	Trona Ore (tons)	2014	0
-Grand Total				1.16397E+11

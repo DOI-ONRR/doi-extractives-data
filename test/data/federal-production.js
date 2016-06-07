@@ -40,7 +40,8 @@ describe('state rollups', function() {
 
     it('match values in the pivot table', function(done) {
       var testRow = function(d, i) {
-        if (d['Production Volume'] && d.Shore !== 'Offshore') {
+        console.log(d['Production Volume'])
+        if (+d['Production Volume'] !== 0 && d.Region !== 'Withheld') {
           var expected = +d['Production Volume'];
           var actual;
           try {
@@ -59,6 +60,7 @@ describe('state rollups', function() {
             ];
           } catch (error) {
             assert.ok(false, 'no data for: ' + JSON.stringify(d));
+
           }
           var difference = expected - actual;
           assert.ok(
@@ -74,65 +76,66 @@ describe('state rollups', function() {
         done();
       });
     });
+
+
+    it("doesn't contain values that aren't in the pivot table", function(done) {
+
+
+      load(pivotSource, 'tsv', function(error, rows) {
+        var state;
+        var product;
+        var year;
+        var actual;
+        var expected;
+        var difference;
+        var found;
+
+        var filter = function(d) {
+          return d.Region === state &&
+                 d.Product === product &&
+                 d.Year === year;
+        };
+
+        for (state in federalProduction) {
+          if (state === 'Withheld') {
+            continue;
+          }
+          for (product in federalProduction[state].products) {
+            if (product === 'All') {
+              continue;
+            }
+            for (year in federalProduction[state].products[product].volume) {
+              try {
+                actual = federalProduction[state].products[product].volume[year].volume;
+              } catch (err) {
+                assert.ok(false, 'no data for: ' + JSON.stringify(federalProduction));
+              }
+              found = rows.filter(filter);
+              assert.equal(
+                found.length, 1,
+                'wrong row count: ' + found.length +
+                ' for: ' + [state, product, year].join('/')
+              );
+
+              expected = found[0]['Production Volume'];
+
+              difference = expected - actual;
+
+              assert.ok(
+                Math.abs(difference) <= 1,
+                actual,
+                (actual + ' != ' + expected)
+              );
+            }
+          }
+        }
+
+        done();
+      });
+    });
   });
 
 });
-
-  //   it("doesn't contain values that aren't in the pivot table", function(done) {
-  //     load(pivotSource, 'tsv', function(error, rows) {
-  //       var state;
-  //       var commodity;
-  //       var type;
-  //       var year;
-  //       var actual;
-  //       var expected;
-  //       var difference;
-  //       var found;
-
-  //       var filter = function(d) {
-  //         return d.St === state &&
-  //                d.Commodity.trim() === commodity &&
-  //                d['Revenue Type'] === type &&
-  //                d.CY === year;
-  //       };
-
-  //       for (state in stateRevenueByType) {
-  //         for (commodity in stateRevenueByType[state]) {
-  //           if (commodity === 'All') {
-  //             continue;
-  //           }
-  //           for (type in stateRevenueByType[state][commodity]) {
-  //             if (type === 'All') {
-  //               continue;
-  //             }
-  //             for (year in stateRevenueByType[state][commodity][type]) {
-  //               actual = stateRevenueByType[state][commodity][type][year];
-  //               found = rows.filter(filter);
-
-  //               assert.equal(
-  //                 found.length, 1,
-  //                 'wrong row count: ' + found.length +
-  //                 ' for: ' + [state, commodity, type, year].join('/')
-  //               );
-
-  //               expected = found[0].Total;
-  //               difference = expected - actual;
-
-  //               assert.ok(
-  //                 Math.abs(difference) <= 1,
-  //                 actual,
-  //                 (actual + ' != ' + expected)
-  //               );
-  //             }
-  //           }
-  //         }
-  //       }
-
-  //       done();
-  //     });
-  //   });
-
-  // });
 
   // it('properly sums up "All" revenues (by commodity)', function() {
   //   var dataSource = path.join(

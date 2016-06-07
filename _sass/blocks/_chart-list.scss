@@ -18,10 +18,19 @@
     @include span-columns(4);
 
     border-top: none;
+    padding-top: 0;
     margin-top: 0;
+  }
 
-    &:first-of-type,
-    &:nth-of-type(3n + 1) {
+  &.has-intro {
+    .chart-item:first-of-type,
+    .chart-item:nth-of-type(3n + 1) {
+      @include omega();
+    }
+  }
+
+  &:not(.has-intro) {
+    .chart-item:nth-of-type(3n) {
       @include omega();
     }
   }

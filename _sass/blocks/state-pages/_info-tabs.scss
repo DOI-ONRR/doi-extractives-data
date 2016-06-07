@@ -24,13 +24,13 @@
     }
   }
 
-   a:not([aria-selected="true"]):focus,
-   a:not([aria-selected="true"]):hover {
-    border: 0;
+  a:not([aria-selected="true"]):focus,
+  a:not([aria-selected="true"]):hover {
     background-color: $mid-gray;
+    border: 0;
     color: $base-font-color;
-    text-decoration: underline;
     padding-bottom: 7px;
+    text-decoration: underline;
   }
 }
 

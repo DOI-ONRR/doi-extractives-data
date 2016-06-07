@@ -92,6 +92,10 @@ $ab-border-thick: 4px;
       color: $ab-color-dark;
     }
   }
+
+  .arrow_box-last {
+    border-right: $ab-gutter solid $white;
+  }
 }
 
 
@@ -109,10 +113,6 @@ $ab-border-thick: 4px;
 .arrow_box-last {
   background: $ab-color-primary;
   position: relative;
-}
-
-.table-arrow_box .arrow_box-last {
-  border-right: $ab-gutter solid $white;
 }
 
 .arrow_box:first-of-type {

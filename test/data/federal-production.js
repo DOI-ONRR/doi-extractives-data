@@ -40,24 +40,17 @@ describe('state rollups', function() {
 
     it('match values in the pivot table', function(done) {
       var testRow = function(d, i) {
-        console.log(d['Production Volume'])
         if (+d['Production Volume'] !== 0 && d.Region !== 'Withheld') {
           var expected = +d['Production Volume'];
           var actual;
           try {
             actual = federalProduction[
               d.Region
-            ][
-              'products'
-            ][
+            ].products[
               d.Product
-            ][
-              'volume'
-            ][
-              d['Year']
-            ][
-              'volume'
-            ];
+            ].volume[
+              d.Year
+            ].volume;
           } catch (error) {
             assert.ok(false, 'no data for: ' + JSON.stringify(d));
 
@@ -68,8 +61,8 @@ describe('state rollups', function() {
             actual,
             (actual + ' != ' + expected + ' @ ' + (i + 1))
           );
-        };
-      }
+        }
+      };
 
       load(pivotSource, 'tsv', function(error, rows) {
         rows.forEach(testRow);
@@ -104,9 +97,14 @@ describe('state rollups', function() {
             if (product === 'All') {
               continue;
             }
-            for (year in federalProduction[state].products[product].volume) {
+            for (year in federalProduction
+              [state].products
+              [product].volume) {
               try {
-                actual = federalProduction[state].products[product].volume[year].volume;
+                actual = federalProduction
+                  [state].products
+                  [product].volume
+                  [year].volume;
               } catch (err) {
                 assert.ok(false, 'no data for: ' + JSON.stringify(federalProduction));
               }

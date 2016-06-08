@@ -3,3 +3,30 @@
   <p>When companies extract natural resources on federal land, they follow laws or policies that govern how rights are awarded and what fees they pay to the government. The specifics of the process depend on the kind of resource, and often affect how much revenue the federal government ultimately collects.</p>
   <p>For details, read more about the different processes for awarding rights and extracting resources: <a href="{{ site.baseurl }}/how-it-works/coal/">coal</a>, <a href="{{ site.baseurl }}/how-it-works/onshore-oil-gas/">oil and gas</a>, <a href="{{ site.baseurl }}/how-it-works/onshore-renewables/">renewable resources</a>, and <a href="{{ site.baseurl }}/how-it-works/minerals/">hardrock minerals</a>.</p>
 </section>
+
+<div class="tab-interface">
+    <ul class="eiti-tabs info-tabs" role="tablist">
+      <li role="presentation"><a href="#revenues" tabindex="0" role="tab" aria-controls="revenues" aria-selected="true">Commodity Revenues</a></li>
+      <li role="presentation"><a href="#story" tabindex="-1" role="tab" aria-controls="story" class="link-charlie">The story behind the numbers</a></li>
+    </ul>
+
+    <article class="eiti-tab-panel" id="revenues" role="tabpanel">
+      {%
+        include location/revenue-type-table.html
+        id='revenue-types'
+        location_id=state_id
+        location_name=state_name
+        year=year
+      %}
+    </article>
+
+    <article class="eiti-tab-panel" id="story" role="tabpanel" aria-hidden="true">
+      {%
+        include location/revenue-process-table.html
+        id='revenue-process'
+        location_id=state_id
+        location_name=state_name
+        year=year
+      %}
+    </article>
+</div>

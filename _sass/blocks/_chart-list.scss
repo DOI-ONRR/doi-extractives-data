@@ -3,7 +3,7 @@
   @include outer-container();
 
   .chart-title {
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid $mid-gray;
     font-size: inherit;
     font-weight: $weight-book;
     margin-bottom: $base-padding;
@@ -57,9 +57,9 @@
   }
 
   figcaption {
-    padding: 5px; // XXX
     font-weight: $weight-bold;
     display: flex;
+    padding: 5px; // FIXME this is an approximation
 
     > * {
       flex: 1;

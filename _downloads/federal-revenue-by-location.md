@@ -38,7 +38,7 @@ Download fiscal year data:
 
 <p class="u-margin-top" markdown="1">We also have [notes on this data](https://github.com/18F/doi-extractives-data/wiki/Data-Catalog#federal-revenue) from the web development team as they built the interactions on this site.</p>
 
-<p class="u-margin-top" markdown="1">Our team is working on new revenue data interactions for this website that use updated revenue datasets. The interactions are not ready for release yet, but in the meantime, here are the updated data files. They cover calendar and fiscal years 2006 through 2015, and are accounting year data.</p>
+<p class="u-margin-top" markdown="1">In 2016, USEITI updated its procedure for organizing revenue data for this site. This new data includes types of revenue and better groupings of commodities to help with understanding which commodities are related. Our team is working on new revenue data interactions for this website that use these revenue datasets, but they're not ready for release yet. In the meantime, here are the updated data files. They cover calendar and fiscal years 2006 through 2015, and are accounting year data.</p>
 
 Download new calendar year data:
 <ul class="downloads-download_links list-unstyled">

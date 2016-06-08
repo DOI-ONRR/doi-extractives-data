@@ -20,6 +20,18 @@ all: db
 clean:
 	rm -f $(db)
 
+collections/states: data/_input/geo/states.csv
+	$(tito) -r csv --map 'd => {{id: d.abbr, title: d.name, FIPS: d.FIPS}}' $^ \
+		| $(node_bin)to-jekyll-collection --format ndjson -i /dev/stdin -o _states
+
+collections/offshore_areas: data/_input/geo/offshore/areas.tsv
+	$(tito) -r tsv --map 'd => {{id: d.id, title: d.name, region: d.region.toLowerCase(), permalink: ["/offshore", d.region.toLowerCase(), d.id, ""].join("/")}}' $^ \
+		| $(node_bin)to-jekyll-collection --format ndjson -i /dev/stdin -o _offshore_areas
+
+collections/offshore_regions: data/_input/geo/offshore/regions.tsv
+	$(tito) -r tsv --map 'd => {{id: d.id, title: d.region}}' $^ \
+		| $(node_bin)to-jekyll-collection --format ndjson -i /dev/stdin -o _offshore_regions
+
 site-data: \
 	data/jobs \
 	data/revenue \

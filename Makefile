@@ -20,6 +20,11 @@ all: db
 clean:
 	rm -f $(db)
 
+collections/regional: \
+	collections/states \
+	collections/offshore_areas \
+	collections/offshore_regions
+
 collections/states: data/_input/geo/states.csv
 	$(tito) -r csv --map 'd => {{id: d.abbr, title: d.name, FIPS: d.FIPS}}' $^ \
 		| $(node_bin)to-jekyll-collection --format ndjson -i /dev/stdin -o _states

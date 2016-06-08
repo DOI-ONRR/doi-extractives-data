@@ -104,7 +104,8 @@
       </figure>
 
       <h4>
-        <button aria-controls="revenue-detail-{{ commodity_slug }}">&plus; Details</button>
+        <button is="aria-toggle"
+          aria-controls="revenue-detail-{{ commodity_slug }}">&plus; Details</button>
       </h4>
       <div id="revenue-detail-{{ commodity_slug }}" aria-hidden="true">
         <p>In {{ year }},

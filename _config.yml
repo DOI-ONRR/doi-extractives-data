@@ -55,18 +55,26 @@ collections:
   case-studies:
     output: true
     permalink: /case-studies/:path/
-  explore:
-    output: true
-    permalink: /explore/:path/
-  how-it-works:
-    output: true
-    permalink: /how-it-works/:path/
   downloads:
     output: true
     permalink: /downloads/:path/
+  explore:
+    output: true
+    permalink: /explore/:path/
   federal-revenue-by-company:
     output: true
     permalink: /explore/federal-revenue-by-company/:path/
+  how-it-works:
+    output: true
+    permalink: /how-it-works/:path/
+  offshore_areas:
+    output: false
+  offshore_regions:
+    output: false
+    permalink: /offshore/:path/
+  states:
+    output: true
+    permalink: /states/:path/
 
 defaults:
   - scope:
@@ -75,14 +83,19 @@ defaults:
     values:
       layout: federal-revenue-by-company
 
-page_gen:
-  - data: 'states'
-    template: 'state-page'
-    name: 'id'
-    dir: 'states'
-    extension: 'html'
+  - scope:
+      path: ''
+      collection: states
+    values:
+      layout: state-page
+      offshore: false
 
-page_gen_dirs: true
+  - scope:
+      path: ''
+      collection: offshore_regions
+    values:
+      layout: state-page
+      offshore: true
 
 shruggie:
   - d8394cf27efbf8ae2f96ee12788eb257f4358a42

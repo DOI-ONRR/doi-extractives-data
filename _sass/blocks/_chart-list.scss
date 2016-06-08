@@ -61,12 +61,12 @@
     font-weight: $weight-bold;
     display: flex;
 
-    & > * {
+    > * {
       flex: 1;
       width: 50%;
     }
 
-    & > :last-child {
+    > :last-child {
       text-align: right;
     }
   }

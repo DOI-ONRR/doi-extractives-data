@@ -68,9 +68,9 @@ collections:
     output: true
     permalink: /how-it-works/:path/
   offshore_areas:
-    output: true
+    output: false
   offshore_regions:
-    output: true
+    output: false
     permalink: /offshore/:path/
   states:
     output: true

@@ -1,4 +1,4 @@
-{% assign _width = 50 %}
+{% assign _width = include.width | default: 100 %}
 {% assign _viewbox = include.viewbox | default: site.data.viewboxes[include.state] %}
 <div class="svg-container county map-container"{% if _viewbox %}
   style="width: {{ _width }}%; padding-bottom: {{ _viewbox | svg_viewbox_padding: _width }}%;"{% endif %}>

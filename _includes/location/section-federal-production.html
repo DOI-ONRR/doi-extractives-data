@@ -1,57 +1,112 @@
 {% assign federal_products = site.data.state_federal_production[state_id].products %}
 
 <section id="federal-production" class="federal production">
+
   <h2>Natural resource production on federal land</h2>
+
   <p>When companies extract natural resources on federal land, they report how much of each resource was extracted in each county.</p>
   <p>In a few cases, usually where one company is extracting a resource in a county, production data is withheld to ensure there are no violations of the Trade Secrets Act.</p>
+
   <section class="county-map-table">
+
     <h3>Products</h3>
+
+    <div class="chart-list">
+
     {% for product in federal_products %}
-    <section id="federal-production-{{ product[0] | slugify }}" class="product">
-
-      {% assign product_name = product[0] %}
-      {% assign volume = product[1].volume[year].volume %}
-      {% assign units = product[1].units | downcase | default: 'units' %}
-
-      <h4>{{ product[1].name }} ({{ units }})</h4>
-      <p>
-        {% if volume %}
-          {{ volume | intcomma }}
-          <span class="units">{{ units | default: 'units' }}</span>
-          of {{ product[1].name | downcase }} were
-        {% else %}
-          No {{ product[1].name | downcase }} was
-        {% endif %}
-        produced on federal land in {{ state_name }} in {{ year }}.
-      </p>
-
-      {% if volume %}
-      <figure>
-        <data-map color-scheme="Blues" steps="9">
-          {% assign federal_county_production = site.data.federal_county_production[state_id] %}
-          {% capture value_key %}products.{{ product_name }}.volume.{{ year }}{% endcapture %}
-          {%
-            include county-map.html
-            state=state_id
-            counties=federal_county_production
-            value=value_key
-          %}
-        </data-map>
-        <figcaption>County production for {{ product_name }} in {{ year }})</figcaption>
-      </figure>
-      {% endif %}
-
+      {% assign product_slug = product[0] | slugify %}
+      {% assign product_name = product[1].name | default: product[0] %}
       {% assign production_values = product[1].volume %}
-      {%
-        include location/display-production.html
-        units=units
-        year=year
-        values=production_values
-        percent=true
-        rank=true
-      %}
+      {% assign volume = production_values[year].volume %}
+      {% assign units = product[1].units | downcase | default: 'units' %}
+      <section id="federal-production-{{ product_slug }}" class="product chart-item full-width">
 
-    </section>
+        <h4 class="chart-title">{{ product_name }} ({{ units }})</h4>
+
+        <div class="row-container">
+
+          <div class="chart-container">
+            <figure class="chart">
+              <eiti-line-chart
+                data='{% include location/line-chart-data.json values=production_values key="volume" %}'
+                x-range="{{ year_range }}"
+                selected="{{ year }}">
+              </eiti-line-chart>
+              <figcaption>
+                <span class="eiti-line-chart-x-value">{{ year }}</span>
+                <span class="eiti-line-chart-y-value">{{ volume | default: 0 | intcomma }}</span>
+              </figcaption>
+            </figure>
+
+            <h4>
+              <button is="aria-toggle"
+                aria-controls="federal-production-{{ product_slug }}-years">&plus; Details</button>
+            </h4>
+            <div id="federal-production-{{ product_slug }}-years" aria-hidden="true">
+              {%
+                include location/display-production.html
+                units=units
+                year=year
+                values=production_values
+                percent=true
+                rank=true
+              %}
+            </div>
+
+          </div><!-- /.chart-container -->
+
+          <div class="map-container">
+            <figure>
+              <data-map color-scheme="Blues" steps="9">
+                {% assign federal_county_production = site.data.federal_county_production[state_id] %}
+                {% capture value_key %}products.{{ product[0] }}.volume.{{ year }}{% endcapture %}
+                {%
+                  include county-map.html
+                  state=state_id
+                  counties=federal_county_production
+                  value=value_key
+                %}
+              </data-map>
+              <figcaption>
+                County production for {{ product_name }} in {{ year }}
+              </figcaption>
+            </figure>
+
+            <h4>
+              <button is="aria-toggle"
+                aria-controls="federal-production-{{ product_slug }}-counties">&plus; Details</button>
+            </h4>
+            <div id="federal-production-{{ product_slug }}-counties" aria-hidden="true">
+              {%
+                include location/display-production.html
+                units=units
+                year=year
+                values=production_values
+                percent=true
+                rank=true
+              %}
+            </div>
+
+          </div><!-- /.map-container -->
+
+          <div class="text-container">
+            <p>
+              {% if volume %}
+                {{ volume | intcomma }} {{ units }}
+                of {{ product_name | downcase }} were
+              {% else %}
+                No {{ product_name | downcase }} was
+              {% endif %}
+              produced on federal land in {{ state_name }} in {{ year }}.
+            </p>
+          </div>
+
+        </div><!-- /.row-container -->
+
+      </section>
     {% endfor %}
+
+    </div><!-- /.chart-list -->
+
   </section>
 </section>

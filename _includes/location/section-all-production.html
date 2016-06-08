@@ -34,7 +34,8 @@
       </figure>
 
       <h4>
-        <button aria-controls="all-production-detail-{{ product_slug }}">&plus; Details</button>
+        <button is="aria-toggle"
+          aria-controls="all-production-detail-{{ product_slug }}">&plus; Details</button>
       </h4>
       <div id="all-production-detail-{{ product_slug }}" aria-hidden="true">
         <p>{{ state_name }} produced

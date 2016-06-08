@@ -45,14 +45,14 @@ h5,
   @include heading('para-xl');
 }
 
-.para-lg {
-  @include heading('para-lg');
-}
-
 // default p
 p,
 ol,
 ul,
+.para-lg {
+  @include heading('para-lg');
+}
+
 .para-md {
   @include heading('para-md');
 }

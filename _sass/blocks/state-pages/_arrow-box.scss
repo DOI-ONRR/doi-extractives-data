@@ -7,8 +7,8 @@ $ab-w-indent: ($ab-height-half / 2) + $ab-gutter;
 $ab-padding: 30px;
 $ab-padding-half: $ab-padding / 2;
 
-$ab-color-dark: $green-sea;
-$ab-color-primary: $green-mint;
+$ab-color-dark: $neutral-gray;
+$ab-color-primary: $mid-gray;
 $ab-border-thin: 1px;
 $ab-border-thick: 4px;
 
@@ -117,7 +117,6 @@ $ab-border-thick: 4px;
 
 .arrow_box:first-of-type {
   background: $ab-color-dark;
-  color: $white;
   font-weight: $weight-bold;
   padding-left: $ab-padding-half;
 
@@ -150,4 +149,10 @@ $ab-border-thick: 4px;
   border-left-color: $ab-color-primary;
   border-width: $ab-height-half 0 $ab-height-half $ab-h-indent;
   margin-top: -$ab-height-half;
+}
+
+// FIXME
+#revenue-types tbody th .bar,
+#revenue-process tbody th .bar {
+  display: none;
 }

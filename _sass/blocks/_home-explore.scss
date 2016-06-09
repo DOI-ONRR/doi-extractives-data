@@ -51,6 +51,7 @@
     color: $black;
     margin-right: $base-padding-lite;
     padding: $base-padding-lite;
+    padding-bottom: 5px;
 
     &[aria-selected="true"] {
       @include active-tab();
@@ -64,6 +65,7 @@
 
   li {
     display: inline-block;
+    padding: 0;
   }
 }
 

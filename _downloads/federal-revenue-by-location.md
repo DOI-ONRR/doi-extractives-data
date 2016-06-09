@@ -8,7 +8,7 @@ breadcrumb:
     permalink: /downloads/
 ---
 
-> There are two types of federal-revenue-by-location datasets available on this site. One includes offshore data, and the other includes onshore data. We have versions of these datasets available for both calendar year and fiscal year 2013, and they are both accounting year data.
+> There are two types of federal-revenue-by-location datasets available on this site. One includes offshore data, and the other includes onshore data. We have versions of these datasets available for calendar years 2004 through 2013, and fiscal years 2004 through 2014. They are both accounting year data.
 
 Download calendar year data:
 
@@ -90,7 +90,7 @@ Our site has two federal revenue datasets. The one on this page is organized by 
 
 ## Offshore data dictionary
 
-The offshore dataset is organized by offshore planning areas. There are more offshore planning areas than are represented in our data. Those not represented had no revenues for calendar year 2013. For a more information on offshore planning areas, including spatial boundaries, see the Bureau of Ocean Energy Management's [maps and GIS data](http://www.boem.gov/Maps-and-GIS-Data/).
+The offshore dataset is organized by offshore planning areas. There are more offshore planning areas than are represented in our data. Those not represented had no revenues for the years in the data. For a more information on offshore planning areas, including spatial boundaries, see the Bureau of Ocean Energy Management's [maps and GIS data](http://www.boem.gov/Maps-and-GIS-Data/).
 
 ### Fields and definitions
 
@@ -114,7 +114,7 @@ _Revenue._ Total revenue.
 
 ## Onshore data dictionary
 
-The onshore dataset is organized by state. There are more states than are listed in this dataset. Those states without natural resource revenues in calendar year 2013 are not included.
+The onshore dataset is organized by state. There are more states than are listed in this dataset. Those states without natural resource revenues in the data are not included.
 
 ### Fields and definitions
 

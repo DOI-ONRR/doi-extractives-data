@@ -5,9 +5,10 @@
 {% assign jobs_percent = jobs[year].percent | default: 0 %}
 
 <section id="employment" class="economic employment" data-nav-header="employment">
+
   <h2>Employment</h2>
 
-  <div class="chart-list has-intro">
+  <div class="chart-list">
 
     <div class="chart-list-intro">
       <p>One measure of the role of extractive industries is how many people are employed in jobs related to natural resource extraction. In {{ state_name }}, in {{ year }},
@@ -22,37 +23,48 @@
       </p>
     </div>
 
-    <div class="chart-item">
+    {% assign _metrics = 'count' | split: ' ' %}
+    {% for _metric in _metrics %}
+    <section class="chart-item">
 
-      <h3 class="chart-title">Extractives employment</h3>
+      <h3 class="chart-title">Extractives employment ({{ _metric }})</h3>
 
       <figure class="chart">
         <eiti-line-chart
-          data='{% include location/line-chart-data.json values=jobs key="count" %}'
+          data='{% include location/line-chart-data.json values=jobs key=_metric %}'
           x-range="{{ year_range }}"
           selected="{{ year }}">
         </eiti-line-chart>
         <figcaption>
           <span class="eiti-line-chart-x-value">{{ year }}</span>
-          <span class="eiti-line-chart-y-value">{{ jobs_count | intcomma }}</span>
+          <span class="eiti-line-chart-y-value">
+            {% if _metric == 'count' %}
+              {{ jobs[year].jobs | intcomma }}
+            {% elsif _metric == 'percent' %}
+              {{ jobs[year].percent | percent }}%
+            {% endif %}
+          </span>
         </figcaption>
       </figure>
 
+      {% if forloop.last %}
       <h4>
         <button is="aria-toggle"
-          aria-controls="employment-year-detail">&plus; Detail</button>
+          aria-controls="employment-detail-{{ _metric }}">&plus; Detail</button>
       </h4>
-      <div id="employment-year-detail" aria-hidden="true">
+      <div id="employment-detail-{{ _metric }}" aria-hidden="true">
         {%
           include location/display-jobs.html
           values=jobs
           percent=true
         %}
       </div>
+      {% endif %}
 
-    </div><!-- /.chart-list -->
+    </section><!-- /.chart-item -->
+    {% endfor %}
 
-  </div>
+  </div><!-- /.chart-list.has-intro -->
 
   <div class="chart-list">
 

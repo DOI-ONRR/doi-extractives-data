@@ -147,6 +147,7 @@
     var axis = d3.svg.axis()
       .orient('bottom')
       .scale(x)
+      .ticks(xdomain.length)
       .innerTickSize(-height)
       .outerTickSize(0)
       .tickPadding(dotRadius + 4)

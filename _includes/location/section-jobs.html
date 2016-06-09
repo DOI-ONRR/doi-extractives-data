@@ -32,7 +32,7 @@
       <figure class="chart">
         <eiti-line-chart
           data='{% include location/line-chart-data.json values=jobs key=_metric %}'
-          x-range="{{ year_range }}"
+          data-x-range="{{ year_range }}"
           selected="{{ year }}">
         </eiti-line-chart>
         <figcaption>

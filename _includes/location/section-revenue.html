@@ -27,7 +27,7 @@
         {% assign all_revenue_by_year = site.data.state_revenues_by_type[state_id].All.All %}
         <eiti-line-chart
           data='{{ all_revenue_by_year | jsonify }}'
-          x-range="{{ year_range }}"
+          data-x-range="{{ year_range }}"
           selected="{{ year }}">
         </eiti-line-chart>
         <figcaption>
@@ -94,7 +94,7 @@
         {% assign annual_revenue = commodity[1] %}
         <eiti-line-chart
           data='{% include location/line-chart-data.json values=annual_revenue key="revenue" %}'
-          x-range="{{ year_range }}"
+          data-x-range="{{ year_range }}"
           selected="{{ year }}">
         </eiti-line-chart>
         <figcaption>

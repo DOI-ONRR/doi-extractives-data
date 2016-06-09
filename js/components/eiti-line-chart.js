@@ -96,7 +96,7 @@
 
     xdomain.forEach(function(x) {
       if (!values[x]) {
-        data.push({x: x, y: 0});
+        data.push({x: x, y: NaN});
       }
     });
 
@@ -111,7 +111,10 @@
     var svg = d3.select(this).select('svg');
     var line = d3.svg.line()
       .x(function(d) { return x(d.x); })
-      .y(function(d) { return y(d.y); });
+      .y(function(d) { return y(d.y); })
+      .defined(function(d) {
+        return !isNaN(d.y);
+      });
 
     data.sort(function(a, b) {
       return d3.ascending(+a.x, +b.x);

@@ -8,7 +8,7 @@ breadcrumb:
     permalink: /downloads/
 ---
 
-> There are two types of federal-revenue-by-location datasets available on this site. One includes offshore data, and the other includes onshore data. We have versions of these datasets available for both calendar year and fiscal year 2013, and they are both accounting year data.
+> There are two types of federal-revenue-by-location datasets available on this site. One includes offshore data, and the other includes onshore data. We have versions of these datasets available for calendar years 2004 through 2013, and fiscal years 2004 through 2014. They are both accounting year data.
 
 Download calendar year data:
 
@@ -40,6 +40,37 @@ Download fiscal year data:
 
 <p class="u-margin-top" markdown="1">We also have [notes on this data](https://github.com/18F/doi-extractives-data/wiki/Data-Catalog#federal-revenue) from the web development team as they built the interactions on this site.</p>
 
+In 2016, USEITI updated its procedure for organizing revenue data for this site. This new data includes types of revenue and better groupings of commodities to help with understanding which commodities are related. Our team is working on new revenue data interactions for this website that use these revenue datasets, but they're not ready for release yet. In the meantime, here are the updated data files. They cover calendar and fiscal years 2006 through 2015, and are accounting year data.
+
+
+<p class="u-margin-top">Download new calendar year data:</p>
+
+<ul class="downloads-download_links list-unstyled">
+  <li><a href="{{site.baseurl}}/downloads/federal_revenue_offshore_acct-year_CY06-15_2016-05-01.xlsx"><icon class="icon-cloud icon-padded"></icon>
+   Offshore dataset (xlsx, 475 KB)
+  </a></li>
+  <li><a href="{{site.baseurl}}/downloads/federal_revenue_onshore_acct-year_CY06-15_2016-05-01.xlsx"><icon class="icon-cloud icon-padded"></icon>
+    Onshore dataset (xlsx, 1.2 MB)
+  </a></li>
+  <li><a href="{{site.baseurl}}/downloads/federal_civil_pentalties_other_revenues_acct-year_CY06-15_2016-05-01.xlsx"><icon class="icon-cloud icon-padded"></icon>
+    Civil penalties and other revenues not associated with a lease (xlsx, 11 KB)
+  </a></li>
+</ul>
+
+Download new fiscal year data:
+
+<ul class="downloads-download_links list-unstyled">
+  <li><a href="{{site.baseurl}}/downloads/federal_revenue_offshore_acct-year_FY06-15_2016-05-01.xlsx"><icon class="icon-cloud icon-padded"></icon>
+    Offshore dataset (xlsx, 437 KB)
+  </a></li>
+  <li><a href="{{site.baseurl}}/downloads/federal_revenue_onshore_acct-year_FY06-15_2016-05-01.xlsx"><icon class="icon-cloud icon-padded"></icon>
+    Onshore dataset (xlsx, 1.2 MB)
+  </a></li>
+  <li><a href="{{site.baseurl}}/downloads/federal_civil_pentalties_other_revenues_acct-year_FY06-15_2016-05-01.xlsx"><icon class="icon-cloud icon-padded"></icon>
+    Civil penalties and other revenues not associated with a lease (xlsx, 10 KB)
+  </a></li>
+</ul>
+
 ## Scope
 
 These datasets include natural resource revenues for U.S. Federal lands and offshore areas. It does not include Indian lands, privately-owned lands or U.S. state lands. The datasets currently include data tracked and managed by the Department of the Interior’s Office of Natural Resource Revenues.
@@ -59,7 +90,7 @@ Our site has two federal revenue datasets. The one on this page is organized by 
 
 ## Offshore data dictionary
 
-The offshore dataset is organized by offshore planning areas. There are more offshore planning areas than are represented in our data. Those not represented had no revenues for calendar year 2013. For a more information on offshore planning areas, including spatial boundaries, see the Bureau of Ocean Energy Management's [maps and GIS data](http://www.boem.gov/Maps-and-GIS-Data/).
+The offshore dataset is organized by offshore planning areas. There are more offshore planning areas than are represented in our data. Those not represented had no revenues for the years in the data. For a more information on offshore planning areas, including spatial boundaries, see the Bureau of Ocean Energy Management's [maps and GIS data](http://www.boem.gov/Maps-and-GIS-Data/).
 
 ### Fields and definitions
 
@@ -83,7 +114,7 @@ _Revenue._ Total revenue.
 
 ## Onshore data dictionary
 
-The onshore dataset is organized by state. There are more states than are listed in this dataset. Those states without natural resource revenues in calendar year 2013 are not included.
+The onshore dataset is organized by state. There are more states than are listed in this dataset. Those states without natural resource revenues in the data are not included.
 
 ### Fields and definitions
 

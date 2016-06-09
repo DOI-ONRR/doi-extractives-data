@@ -1,52 +1,107 @@
 {% assign jobs = site.data.state_jobs[state_id] %}
+{% assign county_jobs = site.data.county_jobs[state_id] %}
+
+{% assign jobs_count = jobs[year].count | default: 0 %}
+{% assign jobs_percent = jobs[year].percent | default: 0 %}
 
 <section id="employment" class="economic employment" data-nav-header="employment">
+
   <h2>Employment</h2>
 
-  <p>One measure of the role of extractive industries is how many people are employed in jobs related to natural resource extraction. In {{ state_name }}, in {{ year }},
-    {% if jobs[year].count %}
-      there were
-      {{ jobs[year].count | intcomma }}
-      jobs in the extractive industries, which represented
-      {{ jobs[year].percent | percent }}% of state-wide employment.
-    {% else %}
-      there were no jobs in the extractive industries.
-    {% endif %}
-  </p>
+  <div class="chart-list">
 
-  {%
-    include location/display-jobs.html
-    values=jobs
-    percent=true
-  %}
+    <div class="chart-list-intro">
+      <p>One measure of the role of extractive industries is how many people are employed in jobs related to natural resource extraction. In {{ state_name }}, in {{ year }},
+        {% if jobs_count %}
+          there were
+          {{ jobs_count | intcomma }}
+          jobs in the extractive industries, which represented
+          {{ jobs_percent | percent }}% of state-wide employment.
+        {% else %}
+          there were no jobs in the extractive industries.
+        {% endif %}
+      </p>
+    </div>
 
-  {% assign county_jobs = site.data.county_jobs[state_id] %}
-  {% if county_jobs %}
-  <h3>County-Level Employment</h3>
-  <p>County-level employment data shows how many jobs in each county (and what percentage of the county's total employment) are related to extractive industries.</p>
+    {% assign _metrics = 'count' | split: ' ' %}
+    {% for _metric in _metrics %}
+    <section class="chart-item">
 
-  <section class="county-map-table">
-    <figure>
-      <data-map color-scheme="Reds" steps="9">
-        {% capture value_key %}employment.{{ year }}.count{% endcapture %}
+      <h3 class="chart-title">Extractives employment ({{ _metric }})</h3>
+
+      <figure class="chart">
+        <eiti-line-chart
+          data='{% include location/line-chart-data.json values=jobs key=_metric %}'
+          data-x-range="{{ year_range }}"
+          selected="{{ year }}">
+        </eiti-line-chart>
+        <figcaption>
+          <span class="eiti-line-chart-x-value">{{ year }}</span>
+          <span class="eiti-line-chart-y-value">
+            {% if _metric == 'count' %}
+              {{ jobs[year].jobs | intcomma }}
+            {% elsif _metric == 'percent' %}
+              {{ jobs[year].percent | percent }}%
+            {% endif %}
+          </span>
+        </figcaption>
+      </figure>
+
+      {% if forloop.last %}
+      <h4>
+        <button is="aria-toggle"
+          aria-controls="employment-detail-{{ _metric }}">&plus; Detail</button>
+      </h4>
+      <div id="employment-detail-{{ _metric }}" aria-hidden="true">
         {%
-          include county-map.html
-          state=state_id
-          counties=county_jobs
-          value=value_key
+          include location/display-jobs.html
+          values=jobs
+          percent=true
         %}
-      </data-map>
-      <figcaption>County extractives employment (jobs, {{ year }})</figcaption>
-    </figure>
+      </div>
+      {% endif %}
 
-    {%
-      include location/display-jobs-county.html
-      year=year
-      values=county_jobs
-      percent=true
-    %}
+    </section><!-- /.chart-item -->
+    {% endfor %}
 
-    {% endif %}
-  </section>
+  </div><!-- /.chart-list.has-intro -->
+
+  <div class="chart-list">
+
+    <h3 class="chart-title">County-Level Employment</h3>
+
+    <div class="row-container">
+
+      <div class="table-container">
+        {%
+          include location/display-jobs-county.html
+          year=year
+          values=county_jobs
+          percent=true
+        %}
+      </div><!-- /.table-container -->
+
+      <div class="map-container">
+        <figure>
+          <data-map color-scheme="Reds" steps="9">
+            {% capture value_key %}employment.{{ year }}.count{% endcapture %}
+            {%
+              include county-map.html
+              state=state_id
+              counties=county_jobs
+              value=value_key
+            %}
+          </data-map>
+          <figcaption>County extractives employment (jobs, {{ year }})</figcaption>
+        </figure>
+      </div><!-- /.map-container -->
+
+      <div class="text-container">
+        <p>County-level employment data shows how many jobs in each county (and what percentage of the county's total employment) are related to extractive industries.</p>
+      </div>
+
+    </div><!-- /.row-container -->
+
+  </div><!-- /.chart-list -->
 
 </section>

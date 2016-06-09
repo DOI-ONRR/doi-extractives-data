@@ -1,19 +1,63 @@
 {% assign gdp = site.data.state_gdp[state_id] %}
 
 <section id="gdp" class="economic gdp" data-nav-header="gdp">
-  <h2>Gross Domestic Product (GDP)</h2>
-  <p>Extractive industries accounted for
-    {% if gdp[year].dollars %}
-      {{ gdp[year].percent | percent }} percent (or
-      ${{ gdp[year].dollars | intcomma }}) of {{ state_name }}'s GDP in {{ year }}.
-    {% else %}
-      The extractives industry did not contribute to {{ state_name }}'s GDP in {{ year }}.
-    {% endif %}
-  </p>
 
-  {%
-    include location/display-gdp.html
-    values=gdp
-    percent=true
-  %}
+  <h2>Gross Domestic Product (GDP)</h2>
+
+  <div class="chart-list has-intro">
+
+    <div class="chart-list-intro">
+      <p>Extractive industries accounted for
+        {% if gdp[year].dollars %}
+          {{ gdp[year].percent | percent }} percent (or
+          ${{ gdp[year].dollars | intcomma }}) of {{ state_name }}'s GDP in {{ year }}.
+        {% else %}
+          The extractives industry did not contribute to {{ state_name }}'s GDP in {{ year }}.
+        {% endif %}
+      </p>
+    </div>
+
+    {% assign _metrics = 'dollars' | split: ' ' %}
+    {% for _metric in _metrics %}
+    <section class="chart-item">
+      <h3 class="chart-title">GDP ({{ _metric }})</h3>
+
+      <figure class="chart chart-{{ _metric }}">
+        <eiti-line-chart
+          data='{% include location/line-chart-data.json values=gdp key=_metric %}'
+          data-x-range="{{ year_range }}"
+          selected="{{ year }}">
+        </eiti-line-chart>
+        <figcaption>
+          <span class="eiti-line-chart-x-value">{{ year }}</span>
+          <span class="eiti-line-chart-y-value">
+            {% if _metric == 'dollars' %}
+              ${{ gdp[year].dollars | intcomma }}
+            {% elsif _metric == 'percent' %}
+              {{ gdp[year].percent | percent }}%
+            {% endif %}
+          </span>
+        </figcaption>
+      </figure>
+
+      {% if forloop.last %}
+      <h4>
+        <button is="aria-toggle" aria-controls="gdp-detail-{{ _metric }}">
+          &plus; Details
+        </button>
+      </h4>
+      <div id="gdp-detail-{{ _metric }}" aria-hidden="true">
+        {%
+          include location/display-gdp.html
+          values=gdp
+          percent=true
+        %}
+      </div><!-- /#gdp-years -->
+      {% endif %}
+
+    </section><!-- /.chart-item -->
+    {% endfor %}
+
+  </div><!-- /.chart-list.has-intro -->
+
 </section>

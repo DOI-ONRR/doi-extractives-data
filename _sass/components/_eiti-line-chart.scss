@@ -1,3 +1,6 @@
+// XXX reducing the selector depth here would require going overboard on the
+// classes. -- @shawnbot
+// scss-lint:disable SelectorDepth
 eiti-line-chart {
   svg {
     display: block;

@@ -1,0 +1,16 @@
+@mixin active-tab($color:'') {
+  font-weight: $weight-bold;
+  text-decoration: none;
+
+  @if $color == 'info' {
+    background-color: $green-dark;
+    border-bottom: 2px solid $green-dark;
+    color: $white;
+    padding-bottom: 7px;
+  } @else {
+    background-color: $white;
+    border: 1px solid $neutral-gray;
+    border-bottom: 1px solid $white;
+    color: $base-font-color;
+  }
+}

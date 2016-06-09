@@ -1,0 +1,87 @@
+// scss-lint:disable QualifyingElement
+svg.map {
+  background: none;
+  box-sizing: border-box;
+  display: block;
+  height: auto;
+  padding: 1em;
+  width: 100%;
+
+  use {
+    fill: inherit;
+    stroke: inherit;
+    stroke-width: inherit;
+  }
+
+  .mesh {
+    fill: none;
+    pointer-events: none;
+    stroke: $neutral-gray;
+    stroke-width: 0.5;
+  }
+
+  .states.features {
+    fill: $light-gray;
+  }
+
+  .feature:not([fill]) {
+    fill-opacity: 0;
+  }
+
+  .feature[fill] {
+    fill-opacity: 1;
+  }
+
+  .counties.features {
+    fill: $white;
+  }
+
+  .states.mesh {
+    stroke: $another-gray;
+  }
+
+  .counties.mesh {
+    stroke-width: 1;
+  }
+
+  .feature.overlay {
+    fill: none;
+    pointer-events: none;
+    stroke: $dark-gray;
+    stroke-width: 1;
+  }
+
+  .debug {
+    fill: none;
+    stroke: none;
+  }
+
+  &.thumbnail {
+    display: inline-block;
+    height: 1em;
+    margin-right: 0.5em;
+    padding: 1px;
+    vertical-align: baseline;
+    width: 1em;
+  }
+
+  .ownership {
+    opacity: 0.05;
+    pointer-events: none;
+  }
+
+  // To make land ownership more green!
+  &.ownership {
+    .ownership {
+      opacity: 0.25;
+    }
+
+    .federal.ownership {
+      opacity: 0.5;
+    }
+
+    .counties.features {
+      fill: $green-land;
+    }
+  }
+}

@@ -1,0 +1,135 @@
+all_production:
+  '1982':
+    - product: Natural Gas (MMcf)
+      rank: 9
+      percent: 0.3803451652308704
+  '1983':
+    - product: Natural Gas (MMcf)
+      rank: 9
+      percent: 0.3684744982778576
+  '1984':
+    - product: Natural Gas (MMcf)
+      rank: 10
+      percent: 0.39879926568254426
+  '1985':
+    - product: Natural Gas (MMcf)
+      rank: 10
+      percent: 0.5043760150447061
+  '1986':
+    - product: Natural Gas (MMcf)
+      rank: 10
+      percent: 0.38357017714619435
+  '1987':
+    - product: Natural Gas (MMcf)
+      rank: 9
+      percent: 0.5433726197771608
+  '1988':
+    - product: Natural Gas (MMcf)
+      rank: 8
+      percent: 0.6071018011773496
+  '1989':
+    - product: Natural Gas (MMcf)
+      rank: 8
+      percent: 0.6908057050212645
+  '1990':
+    - product: Natural Gas (MMcf)
+      rank: 8
+      percent: 0.6814596518029039
+  '1991':
+    - product: Natural Gas (MMcf)
+      rank: 8
+      percent: 0.7824137545210545
+  '1992':
+    - product: Natural Gas (MMcf)
+      rank: 8
+      percent: 0.7494720436056461
+  '1993':
+    - product: Natural Gas (MMcf)
+      rank: 8
+      percent: 0.7262477269382642
+  '1994':
+    - product: Natural Gas (MMcf)
+      rank: 8
+      percent: 0.6610421059432818
+  '1995':
+    - product: Natural Gas (MMcf)
+      rank: 7
+      percent: 0.754621085414384
+  '1996':
+    - product: Natural Gas (MMcf)
+      rank: 7
+      percent: 0.79094171028683
+  '1997':
+    - product: Natural Gas (MMcf)
+      rank: 7
+      percent: 0.9329282231027126
+  '1998':
+    - product: Natural Gas (MMcf)
+      rank: 7
+      percent: 0.9028173522041546
+  '1999':
+    - product: Natural Gas (MMcf)
+      rank: 7
+      percent: 0.9182285071610027
+  '2000':
+    - product: Natural Gas (MMcf)
+      rank: 7
+      percent: 1.0553161551314745
+  '2001':
+    - product: Natural Gas (MMcf)
+      rank: 7
+      percent: 1.1155176562000813
+  '2002':
+    - product: Natural Gas (MMcf)
+      rank: 7
+      percent: 1.0060280614657668
+  '2003':
+    - product: Natural Gas (MMcf)
+      rank: 7
+      percent: 1.0908595277485342
+  '2004':
+    - product: Conventional Hydroelectric
+      rank: 9
+      percent: 3.334105546031599
+    - product: Wind
+      rank: 10
+      percent: 2.1511232130701154
+  '2005':
+    - product: Conventional Hydroelectric
+      rank: 9
+      percent: 2.9420488140912173
+    - product: Wind
+      rank: 9
+      percent: 1.463640574339972
+  '2006':
+    - product: Conventional Hydroelectric
+      rank: 7
+      percent: 3.584089470352396
+  '2007':
+    - product: Conventional Hydroelectric
+      rank: 9
+      percent: 3.4539103664673494
+  '2008':
+    - product: Conventional Hydroelectric
+      rank: 9
+      percent: 3.148041020247174
+  '2009':
+    - product: Conventional Hydroelectric
+      rank: 6
+      percent: 3.898594324519273
+  '2010':
+    - product: Conventional Hydroelectric
+      rank: 5
+      percent: 5.0484220669718125
+  '2011':
+    - product: Conventional Hydroelectric
+      rank: 5
+      percent: 5.986320605154688
+  '2012':
+    - product: Conventional Hydroelectric
+      rank: 5
+      percent: 6.479395068683106
+  '2014':
+    - product: Natural Gas (MMcf)
+      rank: 8
+      percent: 2.414905617215293

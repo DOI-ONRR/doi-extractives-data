@@ -40,6 +40,37 @@ Download fiscal year data:
 
 <p class="u-margin-top" markdown="1">We also have [notes on this data](https://github.com/18F/doi-extractives-data/wiki/Data-Catalog#federal-revenue) from the web development team as they built the interactions on this site.</p>
 
+In 2016, USEITI updated its procedure for organizing revenue data for this site. This new data includes types of revenue and better groupings of commodities to help with understanding which commodities are related. Our team is working on new revenue data interactions for this website that use these revenue datasets, but they're not ready for release yet. In the meantime, here are the updated data files. They cover calendar and fiscal years 2006 through 2015, and are accounting year data.
+
+
+<p class="u-margin-top">Download new calendar year data:</p>
+
+<ul class="downloads-download_links list-unstyled">
+  <li><a href="{{site.baseurl}}/downloads/federal_revenue_offshore_acct-year_CY06-15_2016-05-01.xlsx"><icon class="icon-cloud icon-padded"></icon>
+   Offshore dataset (xlsx, 475 KB)
+  </a></li>
+  <li><a href="{{site.baseurl}}/downloads/federal_revenue_onshore_acct-year_CY06-15_2016-05-01.xlsx"><icon class="icon-cloud icon-padded"></icon>
+    Onshore dataset (xlsx, 1.2 MB)
+  </a></li>
+  <li><a href="{{site.baseurl}}/downloads/federal_civil_pentalties_other_revenues_acct-year_CY06-15_2016-05-01.xlsx"><icon class="icon-cloud icon-padded"></icon>
+    Civil penalties and other revenues not associated with a lease (xlsx, 11 KB)
+  </a></li>
+</ul>
+
+Download new fiscal year data:
+
+<ul class="downloads-download_links list-unstyled">
+  <li><a href="{{site.baseurl}}/downloads/federal_revenue_offshore_acct-year_FY06-15_2016-05-01.xlsx"><icon class="icon-cloud icon-padded"></icon>
+    Offshore dataset (xlsx, 437 KB)
+  </a></li>
+  <li><a href="{{site.baseurl}}/downloads/federal_revenue_onshore_acct-year_FY06-15_2016-05-01.xlsx"><icon class="icon-cloud icon-padded"></icon>
+    Onshore dataset (xlsx, 1.2 MB)
+  </a></li>
+  <li><a href="{{site.baseurl}}/downloads/federal_civil_pentalties_other_revenues_acct-year_FY06-15_2016-05-01.xlsx"><icon class="icon-cloud icon-padded"></icon>
+    Civil penalties and other revenues not associated with a lease (xlsx, 10 KB)
+  </a></li>
+</ul>
+
 ## Scope
 
 These datasets include natural resource revenues for U.S. Federal lands and offshore areas. It does not include Indian lands, privately-owned lands or U.S. state lands. The datasets currently include data tracked and managed by the Department of the Interior’s Office of Natural Resource Revenues.

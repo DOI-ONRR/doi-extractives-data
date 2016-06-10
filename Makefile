@@ -184,7 +184,7 @@ data/federal_county_production:
 	$(query) --format ndjson " \
 		SELECT \
 		  state, \
-		  fips, \
+		  case when fips = 0 then 'Withheld' else fips end, \
 		  county, \
 		  year, \
 		  product, product_name, units, \

@@ -153,23 +153,31 @@ describe('county rollups – federal production', function(done) {
     '../../data/federal-production/pivot-counties.tsv'
   );
 
+  var volumeKey = 'Sum of Production Volume';
+
   var testCountyData = function(county, next) {
-    var volume = +county['Production Volume'];
+    var volume = +county[volumeKey];
+    var path = [county.Region, county.FIPS, county.Product, county.Year].join('/');
 
     var stateData = dataByRegion[county.Region];
     assert.ok(stateData, 'no data for state: ' + county.Region + ' in: ' + Object.keys(dataByRegion).join(', '));
     var countyData = stateData[county.FIPS];
-    assert.ok(countyData, 'no county data for: ' + county.Region + ' FIPS: ' + county.FIPS);
+    assert.ok(countyData, 'no county data for ' + path);
 
+    assert.ok(countyData.products[county.Product], 'no product data for ' + path);
+
+    var expected = countyData.products[county.Product].volume[county.Year];
+    var difference = Math.abs(expected - volume);
+    assert.ok(difference < 1, volume + ' != ' + expected + ' for ' + path);
     next();
   };
 
-  it('asdfadsf', function(done) {
+  it('match the values from the pivot table', function(done) {
     async.parallel([
       function loadPivotTable(next) {
         load(pivotSource, 'tsv', function(error, _counties) {
           counties = _counties.filter(function(row) {
-            return row['Production Volume'] !== '0' && !row.Region.match(/^Offshore/);
+            return row[volumeKey] !== '0' && !row.Region.match(/^Offshore/);
           });
           next();
         });

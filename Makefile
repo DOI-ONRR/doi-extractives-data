@@ -184,17 +184,19 @@ data/federal_county_production:
 	$(query) --format ndjson " \
 		SELECT \
 		  state, \
-		  case when fips = 0 then 'Withheld' else fips end, \
+		  fips_str AS fips, \
 		  county, \
 		  year, \
 		  product, product_name, units, \
-		  ROUND(volume) AS value \
+		  ROUND(SUM(volume)) AS value \
 		FROM federal_county_production \
 		WHERE \
 		  state IS NOT NULL AND \
 		  county IS NOT NULL AND \
 		  product IS NOT NULL AND \
-		  value IS NOT NULL \
+		  volume IS NOT NULL \
+    GROUP BY \
+      state, fips, county, year, product, product_name, units \
 		ORDER BY state, fips, year" \
 	  | $(nestly) --if ndjson \
 		  -c _meta/county_production.yml \

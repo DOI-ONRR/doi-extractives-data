@@ -1,11 +1,6 @@
 '51051':
   name: Dickenson County
   products:
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2005': 21
     Gas (mcf):
       name: Gas
       units: mcf
@@ -20,6 +15,11 @@
         '2012': 153659
         '2013': 143227
         '2014': 131549
+    Oil (bbl):
+      name: Oil
+      units: bbl
+      volume:
+        '2005': 21
 '51091':
   name: Highland County
   products:

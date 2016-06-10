@@ -42,4 +42,16 @@
       <use xlink:href="{{ states_svg }}#state-{{ include.state }}"></use>
     </g>
   </svg>
+
 </div>
+
+ <dl>
+    {% for step in (1...include.steps) %}
+      <dt class="legend-swatch" style="display: inline-block;
+      height: 0.7em;
+      margin-right: 0.41667em;
+      width: 0.7em;
+      background-color: red"></dt>
+      <dd>Swatch {{step}}</dd>
+    {% endfor %}
+  </dl>

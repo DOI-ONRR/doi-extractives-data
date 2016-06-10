@@ -83,3 +83,12 @@ SET rank = (
         inner.product = federal_production_state_rank.product AND
         inner.percent > federal_production_state_rank.percent
 ) + 1;
+
+
+UPDATE federal_county_production
+SET fips = (
+    SELECT 'Withheld' AS fips
+    FROM federal_county_production AS inner
+    WHERE
+        inner.fips = '0'
+)

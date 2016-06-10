@@ -1,3 +1,7 @@
+-- reinstead Withheld fips values
+ALTER TABLE federal_county_production ADD fips_str VARCHAR(8);
+UPDATE federal_county_production SET fips_str = CASE WHEN fips = 0 THEN 'Withheld' ELSE fips END;
+
 -- create state production rollups
 DROP TABLE IF EXISTS federal_state_production;
 CREATE TABLE federal_state_production AS
@@ -84,11 +88,3 @@ SET rank = (
         inner.percent > federal_production_state_rank.percent
 ) + 1;
 
-
-UPDATE federal_county_production
-SET fips = (
-    SELECT 'Withheld' AS fips
-    FROM federal_county_production AS inner
-    WHERE
-        inner.fips = '0'
-)

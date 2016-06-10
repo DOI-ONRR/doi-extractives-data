@@ -1,16 +1,6 @@
 '42053':
   name: Forest County
   products:
-    Oil (bbl):
-      name: Oil
-      units: bbl
-      volume:
-        '2009': 6310
-        '2010': 5986
-        '2011': 2551
-        '2012': 1769
-        '2013': 1498
-        '2014': 1158
     Gas (mcf):
       name: Gas
       units: mcf
@@ -21,6 +11,16 @@
         '2012': 15649
         '2013': 12847
         '2014': 10914
+    Oil (bbl):
+      name: Oil
+      units: bbl
+      volume:
+        '2009': 6310
+        '2010': 5986
+        '2011': 2551
+        '2012': 1769
+        '2013': 1498
+        '2014': 1158
 '42063':
   name: Indiana County
   products:

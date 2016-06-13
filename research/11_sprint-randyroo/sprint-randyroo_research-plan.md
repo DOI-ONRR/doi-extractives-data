@@ -26,7 +26,7 @@ These pages are still in prototype form, but it's time to evaluate whether they 
 
 ## Methods
 
-* 30 min interviews with contacts from the webinar
+* 30 min interviews with people unfamiliar with the USEITI site
 * Notes, no recording
 * In-person and remote
 

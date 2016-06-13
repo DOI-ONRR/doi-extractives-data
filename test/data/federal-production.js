@@ -138,11 +138,6 @@ describe('county rollups – federal production', function(done) {
   var counties;
   var dataByRegion = {};
 
-  var statesPath = path.join(
-    __dirname,
-    '../../_data/states.csv'
-  );
-
   var dataPath = path.join(
     __dirname,
     '../../_data/federal_county_production'
@@ -172,6 +167,58 @@ describe('county rollups – federal production', function(done) {
     next();
   };
 
+  var testPivotData = function(done) {
+
+
+
+    load(pivotSource, 'tsv', function(error, _rows) {
+
+      var filter = function(d) {
+        var fipsIsBlank = d.FIPS === '(blank)' && fips === 'null';
+        var fipsMatches = d.FIPS === fips;
+        var fipsPasses = fipsMatches || fipsIsBlank;
+
+        return d.Region === region &&
+               fipsPasses &&
+               d.Product === product &&
+               d.Year === year;
+      };
+
+      var rows = _rows.filter(function(row) {
+        return row[volumeKey] !== '0';
+      });
+
+
+      var actual,
+      expected;
+
+      for (region in dataByRegion) {
+        for (fips in dataByRegion[region]) {
+          for (product in dataByRegion[region][fips].products) {
+            for (year in dataByRegion[region][fips].products[product].volume) {
+
+              actual = dataByRegion[region][fips].products[product].volume[year];
+
+              var path = [region, fips, product, year].join(' | ');
+              if (rows.filter(filter)[0] === undefined || rows.filter(filter)[0] === 'undefined') {
+                console.log('---------------', counties.filter(filter), path)
+              }
+
+              expected = rows.filter(filter)[0][volumeKey];
+
+              var difference = Math.abs(expected - actual);
+
+              assert.ok(difference < 1, actual + ' != ' + expected + ' for ' + path);
+
+            }
+          }
+        }
+      }
+
+      done();
+    })
+  }
+
   it('match the values from the pivot table', function(done) {
     async.parallel([
       function loadPivotTable(next) {
@@ -199,49 +246,39 @@ describe('county rollups – federal production', function(done) {
     });
   });
 
-  return;
 
-  var pivotSource = path.join(
-    __dirname,
-    '../../data/federal-production/pivot-counties.tsv'
-  );
+  it("doesn't contain values that aren't in the pivot table", function(done) {
+    var dataByRegion = {};
 
+    function loadYAMLData(next) {
+      fs.readdir(dataPath, function(error, filenames) {
+        filenames.forEach(function(filename) {
+          var region = path.basename(filename, '.yml');
+          filename = path.join(dataPath, filename);
+          dataByRegion[region] = yaml.safeLoad(fs.readFileSync(filename, 'utf8'));
+        });
+        next();
+      });
+    }
 
-  it('match values in the pivot table', function(done) {
-    var testRow = function(d, i) {
-      if (+d['Production Volume'] !== 0 && d.Region !== 'Withheld') {
-        var expected = +d['Production Volume'];
-        var actual;
-        try {
-          actual = federalProduction[
-            d.Region
-          ].products[
-            d.Product
-          ].volume[
-            d.Year
-          ].volume;
-        } catch (error) {
-          assert.ok(false, 'no data for: ' + JSON.stringify(d));
-
-        }
-        var difference = expected - actual;
-        assert.ok(
-          Math.abs(difference) <= 1,
-          actual,
-          (actual + ' != ' + expected + ' @ ' + (i + 1))
-        );
-      }
-    };
-
-    load(pivotSource, 'tsv', function(error, rows) {
-      rows.forEach(testRow);
-      done();
-    });
+    testPivotData(done);
   });
 
 
+  return;
+
   it("doesn't contain values that aren't in the pivot table", function(done) {
 
+    var dataByRegion = {}
+
+    fs.readdir(dataPath, function(error, filenames) {
+      filenames.forEach(function(filename) {
+        var region = path.basename(filename, '.yml');
+        filename = path.join(dataPath, filename);
+        dataByRegion[region] = yaml.safeLoad(fs.readFileSync(filename, 'utf8'));
+      });
+      next();
+    });
 
     load(pivotSource, 'tsv', function(error, rows) {
       var state;

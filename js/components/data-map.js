@@ -1,27 +1,12 @@
 (function(exports) {
 
+  var eiti = require('./../eiti');
+  var format = eiti.format;
+
   exports.EITIDataMap = document.registerElement('data-map', {
     prototype: Object.create(
       HTMLElement.prototype,
       {
-        createdCallback: function() {
-          var svg = d3.select(this).append('svg');
-
-          var legend = d3.select(this).append('svg')
-          // for (step in steps.length) {
-          var swatch = legend.append('rect')
-
-          swatch.attr('class', 'swatch')
-            .attr('height', 10)
-            .attr('width', 10)
-            .attr('fill', '#ccc');
-          // }
-
-
-          this.values = this.getAttribute('values') || [];
-          this.dot = this.getAttribute('dot');
-          this.line = this.getAttribute('line');
-        },
         attachedCallback: {value: function() {
           this.update();
         }},
@@ -55,7 +40,7 @@
             domain[1] = Math.max(0, domain[1]);
           }
 
-          console.log('domain:', domain)
+          // console.log('domain:', domain)
 
           // FIXME: do something with divergent scales??
 
@@ -63,28 +48,73 @@
             .domain(domain)
             .range(colors);
 
-          // console.log('scale  :',scale)
 
-          marks.attr('fill', scale);
+          function createIntervals (steps) {
+            var interval = [];
+            steps = +steps
+            for (var i = 0; i < steps; i++) {
+              interval.unshift((steps - i) / steps)
+            }
+            return interval;
+          }
+
+          function createDomains (interval, domain) {
+            var domainStart = [],
+              domainEnd = [];
+            interval.forEach(function (step, i) {
+              if (i === 0) {
+                domainStart.push(domain[0]);
+              } else {
+                // console.log(interval[i-1])
+                domainStart.push(Math.round(interval[i - 1] * domain[1]))
+              }
+
+              domainEnd.push(Math.round(step * domain[1]))
+            })
+
+            return domains = [domainStart, domainEnd];
+          }
+
+          var intervals = createIntervals(steps)
+          var domains = createDomains(intervals, domain)
+
+          var textScaleStart = d3.scale[type]()
+            .domain(domain)
+            .range(domains[0]);
+
+          var textScaleEnd = d3.scale[type]()
+            .domain(domain)
+            .range(domains[1]);
+
+          // console.log(domain[0], colors)
+
+          var leg = d3.select(this)
+            .selectAll('dl [data-step]')
+            .datum(function() {
+              return +this.getAttribute('data-step') * domain[1] || 0;
+            });
+          // console.log(leg, marks)
+
+          leg.style('background-color', scale)
 
 
-          // var quantize = d3.scale.quantize()
-          //   .domain(domain)
-          //   .range(d3.range(steps).map(function(i) { return "q" + i + "-" + steps; }));
+        var threshold = d3.select(this)
+            .selectAll('dl [swatch-threshold]')
+            .datum(function() {
+              return Math.floor(+this.getAttribute('swatch-threshold') * domain[1]) || 0;
+            });
 
-          // var svgLegend = d3.select("svg");
+        d3.select(this).selectAll('.start')
+          .text(function (d) {
+            return format.commaSeparatedDollars(textScaleStart(d));
+          });
+        end = d3.select(this).selectAll('.end')
+          .text(function (d) {
+            return format.commaSeparatedDollars(textScaleEnd(d));
+          })
 
-          // svgLegend.append("g")
-          //   .attr("class", "legendQuant")
-          //   .attr("transform", "translate(20,20)");
+        marks.attr('fill', scale);
 
-          // var legend = d3.legend.color()
-          //   .labelFormat(d3.format(".2f"))
-          //   .useClass(true)
-          //   .scale(quantize);
-
-          // svg:egend.select(".legendQuant")
-          //   .call(legend);
         }}
       }
     )

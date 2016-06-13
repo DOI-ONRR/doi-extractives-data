@@ -9,3 +9,14 @@ data-map {
     }
   }
 }
+
+.legend-swatch {
+	display: inline-block;
+  height: $base-padding;
+  margin-right: $base-padding-lite;
+  width: $base-padding;
+}
+
+.legend-swatch-thresholds {
+
+}

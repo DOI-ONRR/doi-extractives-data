@@ -46,12 +46,19 @@
 </div>
 
  <dl>
-    {% for step in (1...include.steps) %}
-      <dt class="legend-swatch" style="display: inline-block;
-      height: 0.7em;
-      margin-right: 0.41667em;
-      width: 0.7em;
-      background-color: red"></dt>
-      <dd>Swatch {{step}}</dd>
-    {% endfor %}
-  </dl>
+  {% for step in (1...include.steps) %}
+    <dt data-step="{{step | threshold:steps}}" class="legend-swatch"></dt>
+    <dd swatch-threshold="{{step | threshold:steps}}" class="legend-swatch-thresholds start"></dd>
+    <dd swatch-threshold="{{step | threshold:steps}}" class="legend-swatch-thresholds end"></dd>
+  {% endfor %}
+</dl>
+
+<!-- <svg>
+  {% for step in (1...include.steps) %}
+  <g>
+    <rect data-step="{{step | threshold:steps }}" class="legend-swatch"></rect>
+    <title swatch-threshold class="legend-swatch-thresholds">Swatch {{step}}</title>
+  </g>
+  {% endfor %}
+</svg>
+ -->

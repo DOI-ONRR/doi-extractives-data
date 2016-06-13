@@ -57,6 +57,9 @@ module EITI
       (x.is_a? Array) ? x.map(&:to_i) : x.to_i
     end
 
+    def threshold(step, steps=9)
+      step.to_f / steps.to_f
+    end
   end
 
 end

@@ -28,7 +28,7 @@ These pages are still in prototype form, but it's time to evaluate whether they 
 
 * 30 min interviews with people unfamiliar with the USEITI site
 * Notes, no recording
-* In-person and remote
+* In-person or remote
 
 
 ## Script
@@ -38,5 +38,5 @@ Script available [here](https://github.com/18F/doi-extractives-data/blob/researc
 
 ## Test asset(s)
 
-State profile prototype page: https://federalist.18f.gov/preview/18F/doi-extractives-data/state-pages/states/UT/ (sub the state code for the user's state).
+State profile prototype page — get the latest from the `state-pages` branch and serve locally to test.
 

@@ -6,9 +6,7 @@
 <section id="revenue" class="federal revenue" data-nav-header="revenue">
   <h2>Revenue</h2>
 
-  <p>When companies want to extract natural resources on federal land, they pay fees depending on where they are in the process of using the land. For instance, a company might pay for the right to explore for resources, pay
-    rent while exploring the land, and then pay a percentage of production
-    value once they start producing resources on the land.</p>
+  <p>When companies want to extract natural resources on federal land, they pay fees depending on where they are in the process of using the land. For instance, a company might pay for the right to explore for resources, pay rent while exploring the land, and then pay a percentage of production value once they start producing resources on the land.</p>
 
   <div class="chart-list">
 
@@ -49,7 +47,7 @@
           value=value_key
         %}
       </data-map>
-      <figcaption>County extractives revenue (dollars, {{ year }})</figcaption>
+      <figcaption>Revenue from extraction on federal land by county (dollars, {{ year }})</figcaption>
     </figure>
 
 <!--     {%
@@ -64,7 +62,7 @@
 
   <section id="revenue-commodities" class="chart-list has-intro">
     <div class="chart-list-intro">
-      <h2>Federal revenue by commodity over time</h2>
+      <h4>Revenue from extraction on federal land over time</h2>
       <p>WORDS WORDS WORDS
       </p>
     </div>
@@ -97,7 +95,7 @@
       <div id="revenue-detail-{{ commodity_slug }}" aria-hidden="true">
         <p>In {{ year }},
           {% if revenue %}
-            companies paid ${{ revenue | intcomma }} to produce
+            companies paid the federal government ${{ revenue | intcomma }} to extract
           {% else %}
             the federal government did not collect any revenue from extraction of
           {% endif %}
@@ -122,7 +120,7 @@
 
 <section id="state-local-revenue" class="state revenue">
   <h3>Revenue from state land</h3>
-  <p>Natural resource extraction on land owned by the State of {{ state_name }} is governed by <a href="{{ site.baseurl }}/how-it-works/state-laws-and-regulations/#role-of-state-government-agencies/</a>">state laws and regulations</a>.</p>
+  <p>Natural resource extraction on land owned by the state of {{ state_name }} is governed by <a href="{{ site.baseurl }}/how-it-works/state-laws-and-regulations/#role-of-state-government-agencies/</a>">state laws and regulations</a>.</p>
   <p>We don't have detailed data about state revenue from natural resource extraction on land owned by the state. To learn more about regulations and state revenues in {{ state_name }}, see <a href="{{ site.baseurl }}/how-it-works/state-legal-fiscal-info/">state legal and fiscal information</a>.</p>
 </section>
 

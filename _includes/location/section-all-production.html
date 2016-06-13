@@ -4,7 +4,7 @@
 
   <h2>Natural resource production in {{ state_name }}</h2>
 
-  <p>The federal government collects data about what natural resources are produced in each state, WORDS THAT CLARIFY WE MEAN ALL LANDS. (For coal, there is also data about mining in each county.)</p>
+  <p>The federal government collects data about all energy-related natural resources produced in each state on all lands, including federal, state, and privately owned property. (For coal, there is also data about mining in each county.)</p>
   <p>In some cases, the specific amount of a resource produced in a state or county is withheld to protect trade secrets.</p>
 
   <h3>Production in all of {{ state_name }}</h3>
@@ -32,17 +32,16 @@
           <span class="eiti-line-chart-y-value">{{ volume | default: 0 | intcomma }}</span>
         </figcaption>
       </figure>
-
+      <p>
+        {% if volume %}{{ volume | intcomma }} {{ units }} of
+        {% else %}No{% endif %}
+        {{ product[0] | downcase }} was extracted in {{ state_name }} in {{ year }}.
+      </p>
       <h4>
         <button is="aria-toggle"
-          aria-controls="all-production-detail-{{ product_slug }}">&plus; Details</button>
+          aria-controls="all-production-detail-{{ product_slug }}">&plus; Historical details</button>
       </h4>
       <div id="all-production-detail-{{ product_slug }}" aria-hidden="true">
-        <p>{{ state_name }} produced
-          {% if volume %}{{ volume | intcomma }} {{ units }} of
-          {% else %}no{% endif %}
-          {{ product[0] | downcase }} in {{ year }}. Historically:</p>
-
         {%
           include location/display-production.html
           units=units

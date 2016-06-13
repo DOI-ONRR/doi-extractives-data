@@ -8,7 +8,6 @@ Very brief discussion of the **purpose** of today's test:  "My goal today is to 
 
 "Please remember when I say 'test' I mean I'm testing our website and if it is clear or not. There are no wrong answers for you!"
 
-
 ## Main questions
 
 _Show or send the participant the latest prototype state page for the state the user lives in. Either give them mouse control or confirm they've reached the page._
@@ -17,7 +16,10 @@ _Show or send the participant the latest prototype state page for the state the 
 
 "Imagine somebody sent you a link to this page and this is what popped up in front of you when you clicked on the link. I'd like to ask you some questions about what you see here and how you might navigate this page. If you could, please talk out loud as you explore and walk me through what you're thinking. This will help us understand how to improve things later."
 
-1. 
+1. Take a minute to get to know this page. (And remember to think out loud!)
+2. What questions do you have?
+3. Did you learn anything that surprised you?
+4. What did you think was most interesting?
 
 
 ## Wrap up

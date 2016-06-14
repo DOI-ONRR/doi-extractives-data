@@ -1,9 +1,12 @@
 .layout-state-pages {
 
   section + section {
-    border-top: 1px solid $mid-light-gray;
-    margin-top: $base-padding-extra;
     padding-top: $base-padding-extra;
+  }
+
+  h2 {
+    border-top: 1px solid $mid-light-gray;
+    padding-top: $base-padding;
   }
 
   hr {
@@ -24,8 +27,10 @@
   }
 
   section[data-nav-header='ownership'] {
-    border-top: none;
-    margin-top: 0;
+    h2 {
+      border-top: none;
+      margin-top: 0;
+    }
   }
 
   svg.ownership {

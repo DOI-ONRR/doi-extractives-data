@@ -36,9 +36,9 @@
     </figure>
   </aside>
 
-  <section id="revenue-commodities" class="chart-list has-intro">
-    <div class="chart-list-intro">
-      <h3>Revenue from extraction on federal land over time</h3>
+  <section>
+    <div>
+      <h3>Revenues during phases of production on federal lands</h3>
       <p>Laws and policies govern how rights are awarded to companies and what fees they pay to the government in order to extract natural resources on federal land. The specifics of the process depend on the kind of resource, and often affect how much revenue the federal government ultimately collects.</p>
 
       <p>For details, read more about the different processes for awarding rights and extracting resources: <a href="{{ site.baseurl }}/how-it-works/coal/">coal</a>, <a href="{{ site.baseurl }}/how-it-works/onshore-oil-gas/">oil and gas</a>, <a href="{{ site.baseurl }}/how-it-works/onshore-renewables/">renewable resources</a>, and <a href="{{ site.baseurl }}/how-it-works/minerals/">hardrock minerals</a>.</p>
@@ -47,6 +47,40 @@
 
       <p>PUT THIS IN THE CHART: Companies may not know whether they’ll produce oil or gas until they explore the land, so fees are not differentiated by product until production begins.</p>
     </div>
+  </section>
+
+  <div class="tab-interface">
+    <ul class="eiti-tabs info-tabs" role="tablist">
+      <li role="presentation"><a href="#revenues" tabindex="0" role="tab" aria-controls="revenues" aria-selected="true">Commodity Revenues</a></li>
+      <li role="presentation"><a href="#story" tabindex="-1" role="tab" aria-controls="story" class="link-charlie">The story behind the numbers</a></li>
+    </ul>
+
+    <article class="eiti-tab-panel" id="revenues" role="tabpanel">
+      {%
+        include location/revenue-type-table.html
+        id='revenue-types'
+        location_id=state_id
+        location_name=state_name
+        year=year
+      %}
+    </article>
+
+    <article class="eiti-tab-panel" id="story" role="tabpanel" aria-hidden="true">
+      {%
+        include location/revenue-process-table.html
+        id='revenue-process'
+        location_id=state_id
+        location_name=state_name
+        year=year
+      %}
+    </article>
+  </div>
+
+  <section id="revenue-commodities" class="chart-list has-intro">
+
+    <h3>Revenue from extraction on federal land over time</h3>
+
+    <p class="chart-list-intro">At each phase of natural resource extraction, the federal government collects different fees. This chart shows how much federal revenue was collected for each kind of resource during each phase of production.</p>
 
     {% for commodity in revenue_commodities %}
       {% assign revenue = commodity[1][year].revenue %}

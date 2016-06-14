@@ -58,7 +58,6 @@
           <div class="map-container">
             <figure>
               {% capture value_key %}products.{{ product[0] }}.volume.{{ year }}{% endcapture %}
-              {% assign steps="9" %}
 
               <data-map color-scheme="Blues" steps="{{steps}}">
                 {% assign federal_county_production = site.data.federal_county_production[state_id] %}

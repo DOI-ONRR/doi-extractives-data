@@ -98,7 +98,10 @@
         if (!bar) {
           bar = document.createElement('div');
           bar.className = 'bar';
-          cell.appendChild(bar);
+          var span = cell.querySelector('span');
+          if (span) {
+            cell.insertBefore(bar,span);
+          }
         }
 
         var value = +cell.dataset.value;

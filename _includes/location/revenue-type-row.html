@@ -10,11 +10,11 @@
     {% for revenue_type in revenue_type_names %}
     <td data-value="{{
       values[revenue_type][include.year] | default: 0
-    }}">${{
+    }}"><span class="text">${{
       commodity[1][revenue_type][include.year]
       | default: 0
       | intcomma
-    }}</td>
+    }}</span></td>
     {% endfor %}
   </tr>
 {% endif %}

@@ -12,6 +12,10 @@
     background: $white;
   }
 
+  .bar {
+    background: $light-gray;
+  }
+
   .numeric,
   [data-value] {
     text-align: left;
@@ -22,9 +26,13 @@
     position: relative;
 
     .bar {
-      background: currentColor;
+      background: $mid-gray;
       display: block;
       height: 1em;
+    }
+
+    .bar .bar {
+      background: $green-dark;
     }
 
     &:not([data-value="0"]) {

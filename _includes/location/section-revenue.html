@@ -4,42 +4,23 @@
 {% capture year_range %}[2006, 2015]{% endcapture %}
 
 <section id="revenue" class="federal revenue" data-nav-header="revenue">
+
   <h2>Revenue</h2>
 
-  <p>When companies want to extract natural resources on federal land, they pay
-    fees depending on where they are in the process of using the land. For
-    instance, a company might pay for the right to explore for resources, pay
-    rent while exploring the land, and then pay a percentage of production
-    value once they start producing resources on the land.</p>
+  <p>When companies want to extract natural resources on federal land, they pay fees depending on where they are in the process of using the land. For instance, a company might pay for the right to explore for resources, pay rent while exploring the land, and then pay a percentage of production value once they start producing resources on the land.</p>
 
-  <div class="chart-list">
+  <section class="container-half">
 
-    <div class="chart-list-intro">
-      <h3>Revenue from federal land</h3>
+    <h3>Revenue from federal land</h3>
 
-      <p>{{ site.data.land_stats[state_id].federal_percent | percent }} percent of land in {{ state_name }} is owned by the federal government.</p>
-      <p>In {{ year }}, companies paid the federal government a total of ${{ revenue_total | intcomma }} to extract natural resources on federal land (or lease federal land for that purpose).</p>
-    </div>
+    <p>{{ site.data.land_stats[state_id].federal_percent | percent }} percent of land in {{ state_name }} is owned by the federal government.</p>
 
-    <div class="chart-item">
-      <h3 class="chart-title">All commodities</h3>
-      <figure class="chart">
-        {% assign all_revenue_by_year = site.data.state_revenues_by_type[state_id].All.All %}
-        <eiti-line-chart
-          data='{{ all_revenue_by_year | jsonify }}'
-          data-x-range="{{ year_range }}"
-          selected="{{ year }}">
-        </eiti-line-chart>
-        <figcaption>
-          <span class="eiti-line-chart-x-value">{{ year }}</span>
-          <span class="eiti-line-chart-y-value">${{ all_revenue_by_year[year] | default: 0 | intcomma }}</span>
-        </figcaption>
-      </figure>
-    </div>
+    <p>In {{ year }}, companies paid the federal government a total of ${{ revenue_total | intcomma }} to extract natural resources on federal land (or lease federal land for that purpose).</p>
 
-  </div>
+  </section>
 
-  <section class="county-map-table">
+  <aside class="container-half county-map-table">
+
     <figure>
       <data-map color-scheme="Blues" steps="9">
         {% assign county_revenue = site.data.county_revenue[state_id] %}
@@ -51,36 +32,55 @@
           value=value_key
         %}
       </data-map>
-      <figcaption>County extractives revenue (dollars, {{ year }})</figcaption>
+      <figcaption>Revenue from extraction on federal land by county (dollars, {{ year }})</figcaption>
     </figure>
+  </aside>
 
-    <p>At each phase of natural resource extraction, the federal government collects different fees. This chart shows how much federal revenue was collected for each kind of resource during each phase of production.</p>
+  <section>
+    <div>
+      <h3>Revenues during phases of production on federal lands</h3>
+      <p>Laws and policies govern how rights are awarded to companies and what fees they pay to the government in order to extract natural resources on federal land. The specifics of the process depend on the kind of resource, and often affect how much revenue the federal government ultimately collects.</p>
 
-    <p>Companies may not know whether they’ll produce oil or gas until they explore the land, so fees are not differentiated by product until production begins.</p>
+      <p>For details, read more about the different processes for awarding rights and extracting resources: <a href="{{ site.baseurl }}/how-it-works/coal/">coal</a>, <a href="{{ site.baseurl }}/how-it-works/onshore-oil-gas/">oil and gas</a>, <a href="{{ site.baseurl }}/how-it-works/onshore-renewables/">renewable resources</a>, and <a href="{{ site.baseurl }}/how-it-works/minerals/">hardrock minerals</a>.</p>
 
-    {%
-      include location/revenue-type-table.html
-      id='revenue-types'
-      location_id=state_id
-      location_name=state_name
-      year=year
-    %}
+      <p>At each phase of natural resource extraction, the federal government collects different fees. This chart shows how much federal revenue was collected for each kind of resource during each phase of production.</p>
 
+      <p>PUT THIS IN THE CHART: Companies may not know whether they’ll produce oil or gas until they explore the land, so fees are not differentiated by product until production begins.</p>
+    </div>
   </section>
 
+  <div class="tab-interface">
+    <ul class="eiti-tabs info-tabs" role="tablist">
+      <li role="presentation"><a href="#revenues" tabindex="0" role="tab" aria-controls="revenues" aria-selected="true">Commodity Revenues</a></li>
+      <li role="presentation"><a href="#story" tabindex="-1" role="tab" aria-controls="story" class="link-charlie">The story behind the numbers</a></li>
+    </ul>
+
+    <article class="eiti-tab-panel" id="revenues" role="tabpanel">
+      {%
+        include location/revenue-type-table.html
+        id='revenue-types'
+        location_id=state_id
+        location_name=state_name
+        year=year
+      %}
+    </article>
+
+    <article class="eiti-tab-panel" id="story" role="tabpanel" aria-hidden="true">
+      {%
+        include location/revenue-process-table.html
+        id='revenue-process'
+        location_id=state_id
+        location_name=state_name
+        year=year
+      %}
+    </article>
+  </div>
+
   <section id="revenue-commodities" class="chart-list has-intro">
-    <div class="chart-list-intro">
-      <h2>Federal fees assessed for commodities</h2>
-      <p>Duis posuere porta elit in aliquam. Fusce sollicitudin commodo metus
-        in pellentesque. Aliquam eget viverra sem, eu porttitor ante. Fusce
-        lobortis egestas ipsum et gravida. Maecenas quis quam a purus
-        interdum lacinia ut rhoncus nisi. Vivamus eu luctus elit. In hac
-        habitasse platea dictumst. Aliquam id augue nisi. Mauris vitae mauris
-        enim. Proin vehicula, metus a bibendum vehicula, sapien mi venenatis
-        lorem, quis varius velit massa eu risus. Sed non neque ut mauris
-        dapibus eleifend ac eget leo.
-      </p>
-    </div>
+
+    <h3>Revenue from extraction on federal land over time</h3>
+
+    <p class="chart-list-intro">At each phase of natural resource extraction, the federal government collects different fees. This chart shows how much federal revenue was collected for each kind of resource during each phase of production.</p>
 
     {% for commodity in revenue_commodities %}
       {% assign revenue = commodity[1][year].revenue %}
@@ -110,7 +110,7 @@
       <div id="revenue-detail-{{ commodity_slug }}" aria-hidden="true">
         <p>In {{ year }},
           {% if revenue %}
-            companies paid ${{ revenue | intcomma }} to produce
+            companies paid the federal government ${{ revenue | intcomma }} to extract
           {% else %}
             the federal government did not collect any revenue from extraction of
           {% endif %}
@@ -122,8 +122,8 @@
           include location/display-revenue.html
           year=year
           values=revenue_values
-          percent=true
-          rank=true
+          percent=false
+          rank=false
         %}
       </div>
 
@@ -135,7 +135,7 @@
 
 <section id="state-local-revenue" class="state revenue">
   <h3>Revenue from state land</h3>
-  <p>Natural resource extraction on land owned by the State of {{ state_name }} is governed by <a href="{{ site.baseurl }}/how-it-works/state-laws-and-regulations/#role-of-state-government-agencies/</a>">state laws and regulations</a>.</p>
+  <p>Natural resource extraction on land owned by the state of {{ state_name }} is governed by <a href="{{ site.baseurl }}/how-it-works/state-laws-and-regulations/#role-of-state-government-agencies/</a>">state laws and regulations</a>.</p>
   <p>We don't have detailed data about state revenue from natural resource extraction on land owned by the state. To learn more about regulations and state revenues in {{ state_name }}, see <a href="{{ site.baseurl }}/how-it-works/state-legal-fiscal-info/">state legal and fiscal information</a>.</p>
 </section>
 

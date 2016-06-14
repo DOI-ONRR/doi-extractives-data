@@ -3,18 +3,18 @@
   <tr>
     <th scope="row" data-value="{{ total }}">
       <a href="#revenue-{{ commodity_name | slugify }}">
-        <strong>{{ commodity_name | lookup: site.data.commodity_names }}</strong>
+        <strong>{{ commodity_name | lookup: site.data.commodity_names }}</strong><br>
       </a>
-      ${{ total | intcomma }}
+      <strong>${{ total | intcomma }}</strong>
     </th>
     {% for revenue_type in revenue_type_names %}
     <td data-value="{{
       values[revenue_type][include.year] | default: 0
-    }}">${{
+    }}"><span class="text">${{
       commodity[1][revenue_type][include.year]
       | default: 0
       | intcomma
-    }}</td>
+    }}</span></td>
     {% endfor %}
   </tr>
 {% endif %}

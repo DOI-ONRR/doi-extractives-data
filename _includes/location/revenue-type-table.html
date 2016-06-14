@@ -32,8 +32,8 @@
       {% if oilgas_list contains commodity_name and oilgas_checked != true %}
         {% assign oilgas_checked = true %}
         <tr class="table-arrow_box-category"><td colspan="5">
-          <icon class="icon-padded icon-oil"></icon>
           Oil and Gas
+          <icon class="icon-padded icon-oil"></icon>
         </td></tr>
       {% endif %}
 
@@ -56,8 +56,8 @@
       {% if commodity_name == 'Coal' and coal_checked != true %}
         {% assign coal_checked = true %}
         <tr class="table-arrow_box-category"><td colspan="5">
-          <icon class="icon-padded icon-coal"></icon>
           Coal
+          <icon class="icon-padded icon-coal"></icon>
         </td></tr>
       {% endif %}
 
@@ -76,8 +76,8 @@
       {% if commodity_name == 'Geothermal' and geothermal_checked != true %}
         {% assign geothermal_checked = true %}
         <tr class="table-arrow_box-category"><td colspan="5">
-          <icon class="icon-padded icon-geo"></icon>
           Geothermal
+          <icon class="icon-padded icon-geo"></icon>
         </td></tr>
       {% endif %}
 
@@ -95,8 +95,8 @@
       {% if minerals_list contains commodity_name and minerals_checked != true %}
         {% assign minerals_checked = true %}
         <tr class="table-arrow_box-category"><td colspan="5">
-          <icon class="icon-padded icon-minerals"></icon>
           Hardrock Minerals
+          <icon class="icon-padded icon-minerals"></icon>
         </td></tr>
       {% endif %}
 
@@ -115,12 +115,14 @@
       {% if commodity_name == 'All' %}
         <tbody id="revenue-types-{{ commodity_name | slugify }}">
           <tr class="table-arrow_box-category"><td colspan="5">
-            <icon class="icon-padded icon-map"></icon>
             All commodities
+            <icon class="icon-oil"></icon>
+            <icon class="icon-coal"></icon>
+            <icon class="icon-minerals"></icon>
+            <icon class="icon-geo"></icon>
           </td></tr>
           {% include location/revenue-type-row.html %}
         </tbody>
       {% endif %}
     {% endfor %}
 </table>
-

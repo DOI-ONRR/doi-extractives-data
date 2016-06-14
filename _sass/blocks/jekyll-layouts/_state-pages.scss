@@ -18,4 +18,14 @@
     margin-bottom: $base-padding;
     margin-top: $base-padding;
   }
+
+  figure {
+    border: 1px solid $neutral-gray;
+    margin-top: 0;
+  }
+
+  section[data-nav-header='ownership'] {
+    border-top: none;
+    margin-top: 0;
+  }
 }

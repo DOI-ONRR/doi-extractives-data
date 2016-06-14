@@ -26,10 +26,13 @@
     position: relative;
 
     .bar {
-      //background: currentColor;
-      background: $green-dark;
+      background: $mid-gray;
       display: block;
       height: 1em;
+    }
+
+    .bar .bar {
+      background: $green-dark;
     }
 
     &:not([data-value="0"]) {

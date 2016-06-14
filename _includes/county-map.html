@@ -1,5 +1,7 @@
 {% assign _width = include.width | default: 100 %}
 {% assign _viewbox = include.viewbox | default: site.data.viewboxes[include.state] %}
+{% assign steps = include.steps | default: 9 %}
+
 <div class="svg-container county map-container"{% if _viewbox %}
   style="width: {{ _width }}%; padding-bottom: {{ _viewbox | svg_viewbox_padding: _width }}%;"{% endif %}>
   <svg class="county map"{% if _viewbox %} viewBox="{{ _viewbox }}"{% endif %}>
@@ -46,10 +48,10 @@
 </div>
 
  <dl>
-  {% for step in (1...include.steps) %}
+  {% for step in (1...steps) %}
     <dt data-step="{{step | threshold:steps}}" class="legend-swatch"></dt>
-    <dd swatch-threshold="{{step | threshold:steps}}" class="legend-swatch-thresholds start"></dd>
-    <dd swatch-threshold="{{step | threshold:steps}}" class="legend-swatch-thresholds end"></dd>
+    <dd step-threshold="{{step | threshold:steps}}" threshold-start class="legend-swatch-thresholds"></dd>
+    <dd step-threshold="{{step | threshold:steps}}" threshold-end class="legend-swatch-thresholds"></dd>
   {% endfor %}
 </dl>
 

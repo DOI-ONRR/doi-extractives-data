@@ -48,6 +48,8 @@
             .domain(domain)
             .range(colors);
 
+          marks.attr('fill', scale);
+
 
           function createIntervals (steps) {
             var interval = [];
@@ -65,13 +67,10 @@
               if (i === 0) {
                 domainStart.push(domain[0]);
               } else {
-                // console.log(interval[i-1])
                 domainStart.push(Math.round(interval[i - 1] * domain[1]))
               }
-
               domainEnd.push(Math.round(step * domain[1]))
             })
-
             return domains = [domainStart, domainEnd];
           }
 
@@ -86,34 +85,33 @@
             .domain(domain)
             .range(domains[1]);
 
-          // console.log(domain[0], colors)
-
-          var leg = d3.select(this)
+          var legend = d3.select(this)
             .selectAll('dl [data-step]')
             .datum(function() {
               return +this.getAttribute('data-step') * domain[1] || 0;
             });
-          // console.log(leg, marks)
 
-          leg.style('background-color', scale)
+          legend.style('background-color', scale);
 
+          var threshold = d3.select(this)
+              .selectAll('dl [step-threshold]')
+              .datum(function() {
+                return Math.floor(+this.getAttribute('step-threshold') * domain[1]) || 0;
+              });
 
-        var threshold = d3.select(this)
-            .selectAll('dl [swatch-threshold]')
-            .datum(function() {
-              return Math.floor(+this.getAttribute('swatch-threshold') * domain[1]) || 0;
+          d3.select(this).selectAll('[threshold-start]')
+            .text(function (d) {
+              console.log(d)
+              return format.commaSeparatedDollars(textScaleStart(d));
+            });
+          end = d3.select(this).selectAll('[threshold-end]')
+            .text(function (d) {
+              return format.commaSeparatedDollars(textScaleEnd(d));
             });
 
-        d3.select(this).selectAll('.start')
-          .text(function (d) {
-            return format.commaSeparatedDollars(textScaleStart(d));
-          });
-        end = d3.select(this).selectAll('.end')
-          .text(function (d) {
-            return format.commaSeparatedDollars(textScaleEnd(d));
-          })
 
-        marks.attr('fill', scale);
+          console.log(this, domains[0])
+
 
         }}
       }

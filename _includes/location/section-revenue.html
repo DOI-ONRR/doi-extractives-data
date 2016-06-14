@@ -41,7 +41,7 @@
 
   <section class="county-map-table">
     <figure>
-      <data-map color-scheme="Blues" steps="9">
+      <data-map color-scheme="Blues" steps="{{steps}}">
         {% assign county_revenue = site.data.county_revenue[state_id] %}
         {% capture value_key %}revenue.{{ year }}{% endcapture %}
         {%
@@ -49,6 +49,7 @@
           state=state_id
           counties=county_revenue
           value=value_key
+          steps=steps
         %}
       </data-map>
       <figcaption>County extractives revenue (dollars, {{ year }})</figcaption>

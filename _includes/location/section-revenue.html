@@ -4,38 +4,23 @@
 {% capture year_range %}[2006, 2015]{% endcapture %}
 
 <section id="revenue" class="federal revenue" data-nav-header="revenue">
+
   <h2>Revenue</h2>
 
   <p>When companies want to extract natural resources on federal land, they pay fees depending on where they are in the process of using the land. For instance, a company might pay for the right to explore for resources, pay rent while exploring the land, and then pay a percentage of production value once they start producing resources on the land.</p>
 
-  <div class="chart-list">
+  <section class="container-half">
 
-    <div class="chart-list-intro">
-      <h3>Revenue from federal land</h3>
+    <h3>Revenue from federal land</h3>
 
-      <p>{{ site.data.land_stats[state_id].federal_percent | percent }} percent of land in {{ state_name }} is owned by the federal government.</p>
-      <p>In {{ year }}, companies paid the federal government a total of ${{ revenue_total | intcomma }} to extract natural resources on federal land (or lease federal land for that purpose).</p>
-    </div>
+    <p>{{ site.data.land_stats[state_id].federal_percent | percent }} percent of land in {{ state_name }} is owned by the federal government.</p>
 
-    <div class="chart-item">
-      <h3 class="chart-title">All commodities</h3>
-      <figure class="chart">
-        {% assign all_revenue_by_year = site.data.state_revenues_by_type[state_id].All.All %}
-        <eiti-line-chart
-          data='{{ all_revenue_by_year | jsonify }}'
-          data-x-range="{{ year_range }}"
-          selected="{{ year }}">
-        </eiti-line-chart>
-        <figcaption>
-          <span class="eiti-line-chart-x-value">{{ year }}</span>
-          <span class="eiti-line-chart-y-value">${{ all_revenue_by_year[year] | default: 0 | intcomma }}</span>
-        </figcaption>
-      </figure>
-    </div>
+    <p>In {{ year }}, companies paid the federal government a total of ${{ revenue_total | intcomma }} to extract natural resources on federal land (or lease federal land for that purpose).</p>
 
-  </div>
+  </section>
 
-  <section class="county-map-table">
+  <aside class="container-half county-map-table">
+
     <figure>
       <data-map color-scheme="Blues" steps="9">
         {% assign county_revenue = site.data.county_revenue[state_id] %}
@@ -49,22 +34,18 @@
       </data-map>
       <figcaption>Revenue from extraction on federal land by county (dollars, {{ year }})</figcaption>
     </figure>
-
-<!--     {%
-      include location/revenue-type-table.html
-      id='revenue-types'
-      location_id=state_id
-      location_name=state_name
-      year=year
-    %} -->
-
-  </section>
+  </aside>
 
   <section id="revenue-commodities" class="chart-list has-intro">
     <div class="chart-list-intro">
-      <h4>Revenue from extraction on federal land over time</h2>
-      <p>WORDS WORDS WORDS
-      </p>
+      <h3>Revenue from extraction on federal land over time</h3>
+      <p>Laws and policies govern how rights are awarded to companies and what fees they pay to the government in order to extract natural resources on federal land. The specifics of the process depend on the kind of resource, and often affect how much revenue the federal government ultimately collects.</p>
+
+      <p>For details, read more about the different processes for awarding rights and extracting resources: <a href="{{ site.baseurl }}/how-it-works/coal/">coal</a>, <a href="{{ site.baseurl }}/how-it-works/onshore-oil-gas/">oil and gas</a>, <a href="{{ site.baseurl }}/how-it-works/onshore-renewables/">renewable resources</a>, and <a href="{{ site.baseurl }}/how-it-works/minerals/">hardrock minerals</a>.</p>
+
+      <p>At each phase of natural resource extraction, the federal government collects different fees. This chart shows how much federal revenue was collected for each kind of resource during each phase of production.</p>
+
+      <p>PUT THIS IN THE CHART: Companies may not know whether they’ll produce oil or gas until they explore the land, so fees are not differentiated by product until production begins.</p>
     </div>
 
     {% for commodity in revenue_commodities %}

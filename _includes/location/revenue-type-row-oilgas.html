@@ -7,9 +7,9 @@
   %}
   <th scope="row" rowspan="2" data-value="{{ total }}">
     <a href="#revenue-{{ commodity_name | slugify }}">
-      <strong>Oil &amp; Gas</strong>
+      <strong>Oil &amp; Gas</strong><br>
     </a>
-    ${{ total | intcomma }}
+    <strong>${{ total | intcomma }}</strong>
   </th>
   <td rowspan="2" data-value="{{
     values.Bonus[include.year] | default: 0

@@ -17,10 +17,16 @@ _Show or send the participant the latest prototype state page for the state the 
 "Imagine somebody sent you a link to this page and this is what popped up in front of you when you clicked on the link. I'd like to ask you some questions about what you see here and how you might navigate this page. If you could, please talk out loud as you explore and walk me through what you're thinking. This will help us understand how to improve things later."
 
 1. Take a minute to get to know this page. (And remember to think out loud!)
-2. What questions do you have?
+2. What is this page about?
+2. What questions does this page leave you with?
 3. Did you learn anything that surprised you?
-4. What did you think was most interesting?
+4. What stuck out to you? Or what did you think was interesting?
 
+[SKIP FOR THE FIRST FEW INTERVIEWS] If there's time — or if conversation dies down — we may ask a few specific questions that should be answerable based on this page:
+
+* Can you tell from this page what resources exist or are being extracted in [state]?
+* Can you find out on this page how many jobs in [state] are in the extractive industries?
+* Can you find out on this page how much money is going to the federal government?
 
 ## Wrap up
 
